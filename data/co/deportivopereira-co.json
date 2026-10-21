@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "CO",
     "reporting_currency": "COP",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -32,35 +33,48 @@
       "management_id": "actual",
       "fx": {"ref":"COP@2025-12-31","source":"market_close"},
       "revenue": [
-        {"label":"Comercio al por mayor y al detal","category":"sponsorship_commercial","amount":0.955336,"disclosure":"detailed"},
-        {"label":"Patrocinio","category":"sponsorship_commercial","amount":0,"disclosure":"detailed"},
-        {"label":"Publicidad","category":"sponsorship_commercial","amount":5645.558637,"disclosure":"detailed"},
-        {"label":"Taquillas","category":"matchday_competition","amount":5715.718653,"disclosure":"detailed"},
-        {"label":"Regalías","category":"sponsorship_commercial","amount":573.459243,"disclosure":"detailed"},
-        {"label":"Derechos de TV","category":"broadcasting","amount":6192.158245,"disclosure":"detailed"},
-        {"label":"Escuelas de formación","category":"youth_football","amount":819.645,"disclosure":"detailed"},
-        {"label":"Mecanismo de solidaridad","category":"player_sales","amount":12.295209,"disclosure":"detailed"},
-        {"label":"Auxilio arbitraje (DIMAYOR)","category":"competition_bonus","amount":294.254251,"disclosure":"detailed"},
-        {"label":"Auxilio hotelero (DIMAYOR)","category":"competition_bonus","amount":659.547071,"disclosure":"detailed"},
-        {"label":"Auxilio tiquetes (DIMAYOR)","category":"competition_bonus","amount":16.40408,"disclosure":"detailed"},
-        {"label":"Auxilio transporte terrestre (DIMAYOR)","category":"competition_bonus","amount":26.544,"disclosure":"detailed"},
-        {"label":"Auxilio logístico (DIMAYOR)","category":"competition_bonus","amount":175.56,"disclosure":"detailed"},
-        {"label":"Auxilio fondo equipos no clasificados (DIMAYOR)","category":"competition_bonus","amount":0,"disclosure":"detailed"},
-        {"label":"Auxilio divisiones menores (DIMAYOR)","category":"youth_football","amount":40.815,"disclosure":"detailed"},
-        {"label":"Auxilio infraestructura","category":"other_income","amount":144,"disclosure":"detailed"},
-        {"label":"Videos oficiales","category":"broadcasting","amount":175.15455,"disclosure":"detailed"},
-        {"label":"Fomento al deporte","category":"other_income","amount":0,"disclosure":"detailed"},
-        {"label":"Premios","category":"competition_bonus","amount":0,"disclosure":"detailed"},
-        {"label":"Otros academia","category":"youth_football","amount":158.212311,"disclosure":"detailed"},
-        {"label":"Venta y préstamo jugadores","category":"player_sales","amount":1649.95314,"disclosure":"detailed"},
-        {"label":"Devoluciones en ventas y servicios","category":"other_income","amount":-1640.93047,"disclosure":"detailed"},
-        {"label":"Descuentos comerciales","category":"other_income","amount":0.69438,"disclosure":"detailed"},
-        {"label":"Reintegro de costos y gastos","category":"other_income","amount":1045.200787,"disclosure":"detailed"},
-        {"label":"Ajuste al peso","category":"other_income","amount":0.093946,"disclosure":"detailed"},
-        {"label":"Aprovechamientos","category":"other_income","amount":23.684258,"disclosure":"detailed"},
+        {"label":"Comercio al por mayor y al detal","category":"commercial","subcategory":"sponsorship_commercial","amount":0.955336,"disclosure":"detailed"},
+        {"label":"Patrocinio","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"detailed"},
+        {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":5645.558637,"disclosure":"detailed"},
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":5715.718653,"disclosure":"detailed"},
+        {"label":"Regalías","category":"commercial","subcategory":"sponsorship_commercial","amount":573.459243,"disclosure":"detailed"},
+        {"label":"Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":6192.158245,"disclosure":"detailed"},
+        {"label":"Escuelas de formación","category":"other_sporting_sections","subcategory":"youth_football","amount":819.645,"disclosure":"detailed"},
+        {"label":"Mecanismo de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":12.295209,"disclosure":"detailed"},
+        {"label":"Auxilio arbitraje (DIMAYOR)","category":"prize_money","subcategory":"competition_bonus","amount":294.254251,"disclosure":"detailed"},
+        {"label":"Auxilio hotelero (DIMAYOR)","category":"prize_money","subcategory":"competition_bonus","amount":659.547071,"disclosure":"detailed"},
+        {"label":"Auxilio tiquetes (DIMAYOR)","category":"prize_money","subcategory":"competition_bonus","amount":16.40408,"disclosure":"detailed"},
+        {"label":"Auxilio transporte terrestre (DIMAYOR)","category":"prize_money","subcategory":"competition_bonus","amount":26.544,"disclosure":"detailed"},
+        {"label":"Auxilio logístico (DIMAYOR)","category":"prize_money","subcategory":"competition_bonus","amount":175.56,"disclosure":"detailed"},
+        {
+          "label": "Auxilio fondo equipos no clasificados (DIMAYOR)",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 0,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Auxilio divisiones menores (DIMAYOR)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 40.815,
+          "disclosure": "detailed"
+        },
+        {"label":"Auxilio infraestructura","category":"other_revenue","subcategory":"other_income","amount":144,"disclosure":"detailed"},
+        {"label":"Videos oficiales","category":"media_rights","subcategory":"broadcasting","amount":175.15455,"disclosure":"detailed"},
+        {"label":"Fomento al deporte","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"detailed"},
+        {"label":"Premios","category":"prize_money","subcategory":"competition_bonus","amount":0,"disclosure":"detailed"},
+        {"label":"Otros academia","category":"other_sporting_sections","subcategory":"youth_football","amount":158.212311,"disclosure":"detailed"},
+        {"label":"Venta y préstamo jugadores","category":"player_transfers","subcategory":"player_sales","amount":1649.95314,"disclosure":"detailed"},
+        {"label":"Devoluciones en ventas y servicios","category":"other_revenue","subcategory":"other_income","amount":-1640.93047,"disclosure":"detailed"},
+        {"label":"Descuentos comerciales","category":"other_revenue","subcategory":"other_income","amount":0.69438,"disclosure":"detailed"},
+        {"label":"Reintegro de costos y gastos","category":"other_revenue","subcategory":"other_income","amount":1045.200787,"disclosure":"detailed"},
+        {"label":"Ajuste al peso","category":"other_revenue","subcategory":"other_income","amount":0.093946,"disclosure":"detailed"},
+        {"label":"Aprovechamientos","category":"other_revenue","subcategory":"other_income","amount":23.684258,"disclosure":"detailed"},
         {
           "label": "Ingreso por actualización derecho DIMAYOR (revaluación estatutaria, no-cash — ver caveat en cabecera)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 4428.43,
           "disclosure": "detailed"
         }
@@ -68,7 +82,8 @@
       "expenses": [
         {
           "label": "Gastos administrativos",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -3458.523458,
           "disclosure": "detailed",
           "items": [
@@ -88,19 +103,22 @@
         },
         {
           "label": "Gastos de personal (planta deportiva: jugadores, cuerpo técnico y médico)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -16652.322362,
           "disclosure": "detailed"
         },
         {
           "label": "Trayectoria deportiva (bonos de fichaje ligados al prestigio del jugador/DT — ver caveat en cabecera)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -2854.78952,
           "disclosure": "detailed"
         },
         {
           "label": "Gastos de ventas: organización de partidos (arbitrajes/médicos, impuesto a espectáculos, estadio, afiliaciones, seguros, servicios del estadio, mantenimiento, viajes, combustibles, casino/restaurante)",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -6561.425695,
           "disclosure": "detailed",
           "items": [
@@ -118,23 +136,38 @@
             ["Útiles, papelería y fotocopias",-0.9393]
           ]
         },
-        {"label":"Gastos de ventas: gastos legales","category":"admin_general_expense","amount":-3.062535,"disclosure":"detailed"},
-        {"label":"Gastos de ventas: otros diversos","category":"other_expenses","amount":-795.060905,"disclosure":"detailed"},
+        {
+          "label": "Gastos de ventas: gastos legales",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.062535,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de ventas: otros diversos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -795.060905,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gastos financieros (GMF, comisiones bancarias y diferencia en cambio sin discriminar — ver caveat en cabecera)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -852.554333,
           "disclosure": "detailed"
         },
         {
           "label": "Gastos extraordinarios (costos y gastos de ejercicios anteriores, impuestos asumidos)",
-          "category": "exceptional_items",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
           "amount": -50.042287,
           "disclosure": "detailed"
         },
         {
           "label": "Gastos diversos (no deducibles fiscalmente, incl. multas y sanciones)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -838.472778,
           "disclosure": "detailed"
         }

@@ -8,8 +8,12 @@
 // `disclosure` es una lista cerrada (DISCLOSURE de json-datos.mjs, los valores que hoy usan los clubes): un valor nuevo hace fallar el schema a propósito,
 // igual que una categoría desconocida.
 //
-// USO: node tools/generar-schema-json.mjs            escribe data/schema/club-v1.json
-//      node tools/generar-schema-json.mjs --stdout   lo imprime
+// Esquema 2.0 (to-do 248, Admin/mediciones/248-plan.md): cada línea lleva `category` (la genérica, igual para cualquier deporte) y `subcategory` (la
+// del deporte); el par se valida con un `oneOf` por genérica, así un validador externo también lo exige. Escribe además la tabla pública del mapa de cada
+// deporte (data/schema/taxonomy-<versión>.json). data/schema/club-v1.json queda publicado y congelado: este script ya no lo toca.
+//
+// USO: node tools/generar-schema-json.mjs            escribe data/schema/club-v2.json y data/schema/taxonomy-<versión>.json
+//      node tools/generar-schema-json.mjs --stdout   imprime el schema
 // ============================================================================
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
@@ -17,23 +21,35 @@ import { CAMPOS as C, SCHEMA_VERSION, UNIT, DISCLOSURE, categoriasDelSitio } fro
 
 const ROOT = resolve(import.meta.dirname, '..');
 const cat = categoriasDelSitio();
-const categorias = [...new Set([...cat.revenue, ...cat.expense])].sort();
+const subcategorias = [...new Set([...cat.revenue, ...cat.expense])].sort();
 const disclosure = new Set(DISCLOSURE);
+// genérica -> subcategorías que la dan, por lado y para todos los deportes (una subcategoría del otro lado va a la catch-all: genericCategoryOf)
+const pares = (lado) => {
+  const m = new Map(cat.genericas[lado].map((g) => [g.id, new Set()]));
+  for (const dep of Object.keys(cat.deportes)) for (const sub of subcategorias) { const g = cat.genericCategoryOf(dep, lado, sub); if (g) m.get(g).add(sub); }
+  return [...m].filter(([, subs]) => subs.size).map(([g, subs]) => [g, [...subs].sort()]);
+};
 
 const num = { type: 'number' }; const numONull = { type: ['number', 'null'] }; const texto = { type: 'string' };
 const objeto = (props, required = [], extra = {}) => ({ type: 'object', properties: props, required, additionalProperties: false, ...extra });
 const solo = (dic, tipo) => Object.fromEntries(Object.values(dic).map((n) => [n, tipo]));
 
+function linea(lado) {
+  const p = pares(lado);
+  return objeto({ label: texto, category: { enum: p.map(([g]) => g) }, subcategory: { enum: subcategorias }, amount: num, disclosure: { enum: [...disclosure].sort() }, items: { $ref: '#/$defs/items' } },
+    ['label', 'category', 'subcategory', 'amount'], { oneOf: p.map(([g, subs]) => ({ properties: { category: { const: g }, subcategory: { enum: subs } } })) });
+}
+
 const schema = {
   $schema: 'https://json-schema.org/draft/2020-12/schema',
-  $id: 'https://financeofsports.com/data/schema/club-v1.json',
-  title: 'Finance of Sports: datos de un club (schema_version 1.0)',
-  description: 'Un archivo por club. Importes en millones de la moneda del club (unit.scale); gastos en negativo. Se genera con tools/generar-schema-json.mjs; la propuesta y el diccionario de campos: Admin/mediciones/245-esquema.md.',
+  $id: 'https://financeofsports.com/data/schema/club-v2.json',
+  title: `Finance of Sports: datos de un club (schema_version ${SCHEMA_VERSION})`,
+  description: 'Un archivo por club. Importes en millones de la moneda del club (unit.scale); gastos en negativo. Cada línea lleva category (genérica, la misma para cualquier deporte) y subcategory (la del deporte); el mapa de cada deporte está en data/schema/taxonomy-<club.taxonomy>.json. Se genera con tools/generar-schema-json.mjs; el diccionario de campos: Admin/mediciones/245-esquema.md.',
   ...objeto({
     schema_version: { const: SCHEMA_VERSION },
     exported_at: { $ref: '#/$defs/fecha' },
     unit: objeto({ scale: { const: UNIT.scale }, label: texto }, ['scale', 'label']),
-    club: objeto({ id: { type: 'string', pattern: '^[a-z0-9][a-z0-9-]*$' }, name: texto, display_name: texto, country: { type: 'string', pattern: '^[A-Z]{2}$' }, reporting_currency: { $ref: '#/$defs/moneda' }, fiscal_year_start: { type: 'string', pattern: '^\\d{2}-\\d{2}$' }, sport: texto }, ['id']),
+    club: objeto({ id: { type: 'string', pattern: '^[a-z0-9][a-z0-9-]*$' }, name: texto, display_name: texto, country: { type: 'string', pattern: '^[A-Z]{2}$' }, reporting_currency: { $ref: '#/$defs/moneda' }, fiscal_year_start: { type: 'string', pattern: '^\\d{2}-\\d{2}$' }, sport: { enum: Object.values(C.DEPORTE) }, taxonomy: { enum: Object.values(cat.deportes).map((t) => t.version) } }, ['id', 'taxonomy']),
     sources: { type: 'array', items: { $ref: '#/$defs/fuente' } },
     management: { type: 'array', items: objeto({ id: texto, name: texto, first_year: { type: 'integer' }, last_year: { type: 'integer' } }, ['id', 'name', 'first_year', 'last_year']) },
     members: numONull,
@@ -50,12 +66,12 @@ const schema = {
     fuente: objeto({ id: texto, club_id: texto, title: texto, type: texto, reliability: texto, url: texto, public_note: texto }, ['id', 'club_id', 'title', 'type', 'reliability']),
     items: { type: 'array', items: { $ref: '#/$defs/item' }, description: 'Desglose de una línea: [rótulo, importe] o [rótulo, importe, subitems].' },
     item: { oneOf: [{ type: 'array', prefixItems: [texto, num], minItems: 2, maxItems: 2, items: false }, { type: 'array', prefixItems: [texto, num, { $ref: '#/$defs/items' }], minItems: 3, maxItems: 3, items: false }] },
-    linea: objeto({ label: texto, category: { enum: categorias }, amount: num, disclosure: { enum: [...disclosure].sort() }, items: { $ref: '#/$defs/items' } }, ['label', 'category', 'amount']),
+    linea_ingreso: linea('revenue'), linea_gasto: linea('expense'),
     fx: objeto({ ref: texto, rate: num, source: texto }),
     anio: objeto({
       fiscal_year: { type: 'integer' }, period_end: { $ref: '#/$defs/fecha' }, currency: { $ref: '#/$defs/moneda' }, fx: { $ref: '#/$defs/fx' },
       source_id: { type: ['string', 'null'] }, report_type: texto, management_id: { type: ['string', 'null'] },
-      revenue: { type: 'array', items: { $ref: '#/$defs/linea' } }, expenses: { type: 'array', items: { $ref: '#/$defs/linea' } },
+      revenue: { type: 'array', items: { $ref: '#/$defs/linea_ingreso' } }, expenses: { type: 'array', items: { $ref: '#/$defs/linea_gasto' } },
       financial: objeto(solo(C.FINANCIERO, numONull)), official_totals: objeto(solo(C.TOTALES, numONull)),
       adjustments: objeto({
         extra_rows: { type: 'array', items: objeto({ label: texto, amount: numONull }, ['label', 'amount']) }, // amount null = la fuente no lo informa (103 filas)
@@ -63,9 +79,23 @@ const schema = {
         included_in: { type: 'object', additionalProperties: { oneOf: [texto, objeto({ in: texto, possible: { type: 'boolean' }, by: texto }, ['in'])] } },
       }),
     }, ['fiscal_year', 'period_end']),
-    overlay: objeto({ currency: { $ref: '#/$defs/moneda' }, fx: { $ref: '#/$defs/fx' }, source_id: texto, revenue: { type: 'array', items: { $ref: '#/$defs/linea' } }, expenses: { type: 'array', items: { $ref: '#/$defs/linea' } } }),
+    overlay: objeto({ currency: { $ref: '#/$defs/moneda' }, fx: { $ref: '#/$defs/fx' }, source_id: texto, revenue: { type: 'array', items: { $ref: '#/$defs/linea_ingreso' } }, expenses: { type: 'array', items: { $ref: '#/$defs/linea_gasto' } } }),
   },
 };
 
 if (process.argv.includes('--stdout')) console.log(JSON.stringify(schema, null, 2));
-else { const dest = resolve(ROOT, 'data', 'schema', 'club-v1.json'); mkdirSync(dirname(dest), { recursive: true }); writeFileSync(dest, JSON.stringify(schema, null, 2) + '\n'); console.log(`escrito ${dest} (${categorias.length} categorías, ${disclosure.size} valores de disclosure)`); }
+else {
+  const dest = resolve(ROOT, 'data', 'schema', 'club-v2.json'); mkdirSync(dirname(dest), { recursive: true }); writeFileSync(dest, JSON.stringify(schema, null, 2) + '\n');
+  console.log(`escrito ${dest} (${subcategorias.length} subcategorías, ${cat.genericas.revenue.length}+${cat.genericas.expense.length} genéricas, ${disclosure.size} valores de disclosure)`);
+  // la tabla pública del mapa, una por deporte: qué genérica da cada subcategoría y en qué bloque de la cascada del resultado está
+  for (const [dep, t] of Object.entries(cat.deportes)) {
+    const lado = (l) => Object.fromEntries([...cat.revenue, ...cat.expense].filter((sub, i, a) => a.indexOf(sub) === i).map((sub) => [sub, cat.genericCategoryOf(dep, l, sub)]).filter(([, g]) => g));
+    const tabla = {
+      taxonomy: t.version, sport: C.DEPORTE[dep],
+      description: 'Mapa de las subcategorías de este deporte a las categorías genéricas de Finance of Sports. La genérica no se elige: se deriva de esta tabla. Una subcategoría del otro lado (un gasto usado en una línea de ingreso, o al revés) va a la genérica catch-all de su lado. block: la parte del resultado (revenue; operating = gasto operativo en efectivo; non_cash = amortizaciones y depreciación; exceptional). Resultado operativo = ingresos + operating + non_cash + exceptional.',
+      generic: { revenue: cat.genericas.revenue.map((g) => ({ id: g.id, block: g.block, label_en: g.en, label_es: g.label })), expense: cat.genericas.expense.map((g) => ({ id: g.id, block: g.block, label_en: g.en, label_es: g.label })) },
+      subcategories: { revenue: lado('revenue'), expense: lado('expense') },
+    };
+    const f = resolve(ROOT, 'data', 'schema', `taxonomy-${t.version}.json`); writeFileSync(f, JSON.stringify(tabla, null, 2) + '\n'); console.log(`escrito ${f}`);
+  }
+}

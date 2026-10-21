@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "ES",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -41,24 +42,27 @@
       "revenue": [
         {
           "label": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 23.73237,
           "disclosure": "summary",
           "items": [["Ventas",1.414299],["Prestaciones de servicios",22.318072]]
         },
         {
           "label": "Otros ingresos de explotación (ingresos accesorios y de gestión corriente, subvenciones)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 19.268946,
           "disclosure": "summary",
           "items": [["Ingresos accesorios y otros de gestión corriente",18.825139],["Subvenciones de explotación incorporadas al resultado del ejercicio",0.443807]]
         },
-        {"label":"Exceso de provisiones","category":"other_income","amount":0.062304,"disclosure":"detailed"}
+        {"label":"Exceso de provisiones","category":"other_revenue","subcategory":"other_income","amount":0.062304,"disclosure":"detailed"}
       ],
       "expenses": [
         {
           "label": "Aprovisionamientos",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -2.260991,
           "disclosure": "detailed",
           "items": [
@@ -69,27 +73,36 @@
         },
         {
           "label": "Gastos de personal (sin separar plantel deportivo/no deportivo)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -44.498181,
           "disclosure": "summary",
           "items": [["Sueldos, salarios y asimilados",-41.574489],["Cargas sociales",-2.923691]]
         },
-        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-11.858471,"disclosure":"detailed"},
-        {"label":"Tributos","category":"admin_general_expense","amount":-0.554577,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-11.858471,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.554577,"disclosure":"detailed"},
         {
           "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.597187,
           "disclosure": "detailed"
         },
-        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-3.888957,"disclosure":"detailed"},
+        {
+          "label": "Otros gastos de gestión corriente",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.888957,
+          "disclosure": "detailed"
+        },
         {
           "label": "Amortización del inmovilizado (sin separar jugadores del resto)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -13.940683,
           "disclosure": "summary"
         },
-        {"label":"Otros resultados","category":"other_expenses","amount":-0.071425,"disclosure":"detailed"}
+        {"label":"Otros resultados","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.071425,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":17.856025,"asset_sales":0,"net_interest":-1.679707,"tax":4.669345,"gross_debt":0.425716,"cash":3.174782},
       "official_totals": {"revenue":43.063621,"expenses":77.670472,"net_result":-13.761188}
@@ -105,24 +118,27 @@
       "revenue": [
         {
           "label": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 68.557925,
           "disclosure": "summary",
           "items": [["Ventas",1.589385],["Prestaciones de servicios",66.96854]]
         },
         {
           "label": "Otros ingresos de explotación (ingresos accesorios y de gestión corriente, subvenciones)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 3.428051,
           "disclosure": "summary",
           "items": [["Ingresos accesorios y otros de gestión corriente",2.212119],["Subvenciones de explotación incorporadas al resultado del ejercicio",1.215933]]
         },
-        {"label":"Exceso de provisiones","category":"other_income","amount":0.01089,"disclosure":"detailed"}
+        {"label":"Exceso de provisiones","category":"other_revenue","subcategory":"other_income","amount":0.01089,"disclosure":"detailed"}
       ],
       "expenses": [
         {
           "label": "Aprovisionamientos",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -2.477044,
           "disclosure": "detailed",
           "items": [
@@ -133,27 +149,36 @@
         },
         {
           "label": "Gastos de personal (sin separar plantel deportivo/no deportivo)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -51.467612,
           "disclosure": "summary",
           "items": [["Sueldos, salarios y asimilados",-47.744971],["Cargas sociales",-3.72264]]
         },
-        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-15.892378,"disclosure":"detailed"},
-        {"label":"Tributos","category":"admin_general_expense","amount":-0.603953,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-15.892378,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.603953,"disclosure":"detailed"},
         {
           "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.017128,
           "disclosure": "detailed"
         },
-        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-7.442544,"disclosure":"detailed"},
+        {
+          "label": "Otros gastos de gestión corriente",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -7.442544,
+          "disclosure": "detailed"
+        },
         {
           "label": "Amortización del inmovilizado (sin separar jugadores del resto)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -11.130548,
           "disclosure": "summary"
         },
-        {"label":"Otros resultados","category":"other_expenses","amount":-0.126776,"disclosure":"detailed"}
+        {"label":"Otros resultados","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.126776,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":22.620529,"asset_sales":0,"net_interest":-2.909888,"tax":-0.252534,"gross_debt":0.0417,"cash":13.950791},
       "official_totals": {"revenue":71.996866,"expenses":89.157983,"net_result":2.296991}

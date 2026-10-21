@@ -10,9 +10,8 @@
 // ============================================================================
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { generarJs, clubes, CAMPOS } from './json-datos.mjs';
+import { generarJs, clubes, clubDeFicha } from './json-datos.mjs';
 import { serializar } from './club-json.mjs';
-const CLUB = CAMPOS.CLUB;
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2); const flag = (f) => { const i = A.indexOf(f); return i >= 0 ? A[i + 1] : null; };
@@ -25,7 +24,7 @@ for (const d of readdirSync(resolve(ROOT, 'data'), { withFileTypes: true })) {
     const id = f.replace(/\.json$/, ''); if (solo && id !== solo) continue;
     const rj = `data/${d.name}/${f}`; const rd = `data/${d.name}/${id}-data.js`;
     const j = JSON.parse(readFileSync(resolve(ROOT, rj), 'utf8')); n++;
-    if (identidad) { const c = clubes()[id]; if (c) { j.club = { id, ...Object.fromEntries(Object.entries(CLUB).filter(([k]) => Object.prototype.hasOwnProperty.call(c, k)).map(([k, nombre]) => [nombre, c[k]])) }; writeFileSync(resolve(ROOT, rj), serializar(j) + '\n'); } }
+    if (identidad) { const c = clubes()[id]; if (c) { j.club = { id, ...clubDeFicha(id, c) }; writeFileSync(resolve(ROOT, rj), serializar(j) + '\n'); } }
     const txt = generarJs(j, { ruta: rj });
     const actual = existsSync(resolve(ROOT, rd)) ? readFileSync(resolve(ROOT, rd), 'utf8') : null;
     if (actual === txt) continue;
@@ -40,7 +39,7 @@ if (check) {
   for (const d of readdirSync(resolve(ROOT, 'data'), { withFileTypes: true })) if (d.isDirectory() && /^[a-z]{2}$/.test(d.name)) for (const f of readdirSync(resolve(ROOT, 'data', d.name))) if (f.endsWith('.json')) {
     const id = f.replace(/\.json$/, ''); const j = JSON.parse(readFileSync(resolve(ROOT, 'data', d.name, f), 'utf8')); const c = cl[id];
     if (!c) { console.log(`  data/${d.name}/${f}: el club no está en data/clubs.js`); desfasados++; continue; }
-    const mapa = { name: c.name, display_name: c.displayName, country: c.country, reporting_currency: c.reportingCurrency, fiscal_year_start: c.fiscalYearStart, sport: c.sport };
+    const mapa = clubDeFicha(id, c);
     for (const [k, v] of Object.entries(mapa)) if (v !== undefined && j.club[k] !== v) { console.log(`  data/${d.name}/${f}: club.${k} = ${JSON.stringify(j.club[k])} y data/clubs.js dice ${JSON.stringify(v)} (regenerá el JSON con tools/generar-data.mjs --identidad)`); desfasados++; break; }
   }
   // El camino inverso: un -data.js sin su JSON (quedó huérfano, o alguien lo escribió a mano) y un id de clubs.js sin JSON.

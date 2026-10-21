@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "GR",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -80,14 +81,14 @@
       "management_id": null,
       "fx": {"ref":"EUR@2016-06-30"},
       "revenue": [
-        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":4.214679,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":0.878168,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.109951,"disclosure":"aggregated"}
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"undisclosed","subcategory":"lump_football_operations","amount":4.214679,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.878168,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.109951,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-4.938658,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.653858,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.111137,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-4.938658,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.653858,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.111137,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000859,"tax":0,"gross_debt":0.50325,"cash":0.08901},
       "official_totals": {"revenue":5.202798,"expenses":5.703653,"net_result":-0.501714},
@@ -122,21 +123,27 @@
       "management_id": null,
       "fx": {"ref":"EUR@2019-06-30"},
       "revenue": [
-        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.155532,"disclosure":"aggregated"},
-        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":2.352325,"disclosure":"aggregated"},
-        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":0.234735,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.201512,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από συμμετοχή UEFA","category":"competition_bonus","amount":0.377719,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από UEFA Ακαδημιών","category":"youth_football","amount":0.331917,"disclosure":"aggregated"},
-        {"label":"Έσοδα από αποζημιώσεις","category":"other_income","amount":0.001588,"disclosure":"aggregated"},
-        {"label":"Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.064189,"disclosure":"aggregated"},
-        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.024,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.019555,"disclosure":"aggregated"}
+        {"label":"Από εισιτήρια αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.155532,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"media_rights","subcategory":"broadcasting","amount":2.352325,"disclosure":"aggregated"},
+        {"label":"Από χορηγίες-διαφήμιση","category":"commercial","subcategory":"sponsorship_commercial","amount":0.234735,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"prize_money","subcategory":"competition_bonus","amount":0.201512,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από συμμετοχή UEFA","category":"prize_money","subcategory":"competition_bonus","amount":0.377719,"disclosure":"aggregated"},
+        {
+          "label": "Επιχορήγηση από UEFA Ακαδημιών",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 0.331917,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έσοδα από αποζημιώσεις","category":"other_revenue","subcategory":"other_income","amount":0.001588,"disclosure":"aggregated"},
+        {"label":"Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος","category":"prize_money","subcategory":"competition_bonus","amount":0.064189,"disclosure":"aggregated"},
+        {"label":"Ενοίκια Κυλικείου","category":"other_revenue","subcategory":"other_income","amount":0.024,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.019555,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-5.233558,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.304293,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.038471,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-5.233558,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.304293,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.038471,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.135736,"tax":0,"gross_debt":2.86172,"cash":0.037404},
       "official_totals": {"revenue":3.763073,"expenses":5.576322,"net_result":-1.948985},
@@ -165,20 +172,26 @@
       "management_id": null,
       "fx": {"ref":"EUR@2020-06-30"},
       "revenue": [
-        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.140609,"disclosure":"aggregated"},
-        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":2.187,"disclosure":"aggregated"},
-        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":0.480736,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.263893,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από συμμετοχή UEFA","category":"competition_bonus","amount":0.625816,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από UEFA Ακαδημιών","category":"youth_football","amount":0.349805,"disclosure":"aggregated"},
-        {"label":"Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.02027,"disclosure":"aggregated"},
-        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.0208,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.023731,"disclosure":"aggregated"}
+        {"label":"Από εισιτήρια αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.140609,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"media_rights","subcategory":"broadcasting","amount":2.187,"disclosure":"aggregated"},
+        {"label":"Από χορηγίες-διαφήμιση","category":"commercial","subcategory":"sponsorship_commercial","amount":0.480736,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"prize_money","subcategory":"competition_bonus","amount":0.263893,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από συμμετοχή UEFA","category":"prize_money","subcategory":"competition_bonus","amount":0.625816,"disclosure":"aggregated"},
+        {
+          "label": "Επιχορήγηση από UEFA Ακαδημιών",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 0.349805,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος","category":"prize_money","subcategory":"competition_bonus","amount":0.02027,"disclosure":"aggregated"},
+        {"label":"Ενοίκια Κυλικείου","category":"other_revenue","subcategory":"other_income","amount":0.0208,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.023731,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-5.065443,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.290308,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.041713,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-5.065443,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.290308,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.041713,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.186933,"tax":0,"gross_debt":1.252979,"cash":0.275174},
       "official_totals": {"revenue":4.112661,"expenses":5.397464,"net_result":-1.471737},
@@ -207,20 +220,32 @@
       "management_id": null,
       "fx": {"ref":"EUR@2021-06-30"},
       "revenue": [
-        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":0.365,"disclosure":"aggregated"},
-        {"label":"Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό","category":"player_sales","amount":0.492266,"disclosure":"aggregated"},
-        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":1.714093,"disclosure":"aggregated"},
-        {"label":"Κέρδη από πωλήσεις παγίων","category":"other_income","amount":0.001532,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.009653,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από UEFA Ακαδημιών","category":"youth_football","amount":0.33311,"disclosure":"aggregated"},
-        {"label":"Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.803089,"disclosure":"aggregated"},
-        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.0088,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.012234,"disclosure":"aggregated"}
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"media_rights","subcategory":"broadcasting","amount":0.365,"disclosure":"aggregated"},
+        {
+          "label": "Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.492266,
+          "disclosure": "aggregated"
+        },
+        {"label":"Από χορηγίες-διαφήμιση","category":"commercial","subcategory":"sponsorship_commercial","amount":1.714093,"disclosure":"aggregated"},
+        {"label":"Κέρδη από πωλήσεις παγίων","category":"other_revenue","subcategory":"other_income","amount":0.001532,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"prize_money","subcategory":"competition_bonus","amount":0.009653,"disclosure":"aggregated"},
+        {
+          "label": "Επιχορήγηση από UEFA Ακαδημιών",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 0.33311,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος","category":"prize_money","subcategory":"competition_bonus","amount":0.803089,"disclosure":"aggregated"},
+        {"label":"Ενοίκια Κυλικείου","category":"other_revenue","subcategory":"other_income","amount":0.0088,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.012234,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-5.66824,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.238059,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.0231,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-5.66824,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.238059,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.0231,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.08789,"tax":0,"gross_debt":1.780686,"cash":0.120113},
       "official_totals": {"revenue":3.739776,"expenses":5.929399,"net_result":-2.277513},
@@ -249,20 +274,32 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
-        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.111603,"disclosure":"aggregated"},
-        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":0.365,"disclosure":"aggregated"},
-        {"label":"Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό","category":"player_sales","amount":0.32,"disclosure":"aggregated"},
-        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":2.541299,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.009653,"disclosure":"aggregated"},
-        {"label":"Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.789816,"disclosure":"aggregated"},
-        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.016409,"disclosure":"aggregated"},
-        {"label":"Λοιπά έκτακτα και ανόργανα","category":"other_income","amount":0.069231,"disclosure":"aggregated"},
-        {"label":"Μη επιστρέω ποσό επιστρεπτέας προκαταβολής","category":"other_income","amount":0.1,"disclosure":"aggregated"}
+        {"label":"Από εισιτήρια αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.111603,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"media_rights","subcategory":"broadcasting","amount":0.365,"disclosure":"aggregated"},
+        {
+          "label": "Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.32,
+          "disclosure": "aggregated"
+        },
+        {"label":"Από χορηγίες-διαφήμιση","category":"commercial","subcategory":"sponsorship_commercial","amount":2.541299,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"prize_money","subcategory":"competition_bonus","amount":0.009653,"disclosure":"aggregated"},
+        {
+          "label": "Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 0.789816,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ενοίκια Κυλικείου","category":"other_revenue","subcategory":"other_income","amount":0.016409,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα και ανόργανα","category":"other_revenue","subcategory":"other_income","amount":0.069231,"disclosure":"aggregated"},
+        {"label":"Μη επιστρέω ποσό επιστρεπτέας προκαταβολής","category":"other_revenue","subcategory":"other_income","amount":0.1,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-6.766095,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.365355,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.030874,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-6.766095,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.365355,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.030874,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.147452,"tax":0,"gross_debt":5.435877,"cash":0.049776},
       "official_totals": {"revenue":4.323011,"expenses":7.162324,"net_result":-2.986765},
@@ -291,21 +328,33 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
-        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.124447,"disclosure":"aggregated"},
-        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":0.365,"disclosure":"aggregated"},
-        {"label":"Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό","category":"player_sales","amount":1.3,"disclosure":"aggregated"},
-        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":2.208817,"disclosure":"aggregated"},
-        {"label":"Κέρδη από πωλήσεις παγίων","category":"other_income","amount":0.006048,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.120656,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από συμμετοχή UEFA","category":"competition_bonus","amount":0.058118,"disclosure":"aggregated"},
-        {"label":"Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.758012,"disclosure":"aggregated"},
-        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.023588,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.008189,"disclosure":"aggregated"}
+        {"label":"Από εισιτήρια αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.124447,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"media_rights","subcategory":"broadcasting","amount":0.365,"disclosure":"aggregated"},
+        {
+          "label": "Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1.3,
+          "disclosure": "aggregated"
+        },
+        {"label":"Από χορηγίες-διαφήμιση","category":"commercial","subcategory":"sponsorship_commercial","amount":2.208817,"disclosure":"aggregated"},
+        {"label":"Κέρδη από πωλήσεις παγίων","category":"other_revenue","subcategory":"other_income","amount":0.006048,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"prize_money","subcategory":"competition_bonus","amount":0.120656,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από συμμετοχή UEFA","category":"prize_money","subcategory":"competition_bonus","amount":0.058118,"disclosure":"aggregated"},
+        {
+          "label": "Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 0.758012,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ενοίκια Κυλικείου","category":"other_revenue","subcategory":"other_income","amount":0.023588,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.008189,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-6.612663,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.445239,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.214128,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-6.612663,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.445239,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.214128,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.361907,"tax":0,"gross_debt":6.915224,"cash":0.04637},
       "official_totals": {"revenue":4.972875,"expenses":7.272031,"net_result":-2.661063},
@@ -330,20 +379,26 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.107661,"disclosure":"aggregated"},
-        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":0.365,"disclosure":"aggregated"},
-        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":2.562379,"disclosure":"aggregated"},
-        {"label":"Κέρδη από πωλήσεις παγίων","category":"other_income","amount":0.000403,"disclosure":"aggregated"},
-        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.177536,"disclosure":"aggregated"},
-        {"label":"Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος","category":"competition_bonus","amount":1.516468,"disclosure":"aggregated"},
-        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.023166,"disclosure":"aggregated"},
-        {"label":"Λοιπά έκτακτα και ανόργανα","category":"other_income","amount":0.074992,"disclosure":"aggregated"},
-        {"label":"Ληφθείσες αποζημιώσεις","category":"other_income","amount":0.00247,"disclosure":"aggregated"}
+        {"label":"Από εισιτήρια αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.107661,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"media_rights","subcategory":"broadcasting","amount":0.365,"disclosure":"aggregated"},
+        {"label":"Από χορηγίες-διαφήμιση","category":"commercial","subcategory":"sponsorship_commercial","amount":2.562379,"disclosure":"aggregated"},
+        {"label":"Κέρδη από πωλήσεις παγίων","category":"other_revenue","subcategory":"other_income","amount":0.000403,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"prize_money","subcategory":"competition_bonus","amount":0.177536,"disclosure":"aggregated"},
+        {
+          "label": "Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 1.516468,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ενοίκια Κυλικείου","category":"other_revenue","subcategory":"other_income","amount":0.023166,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα και ανόργανα","category":"other_revenue","subcategory":"other_income","amount":0.074992,"disclosure":"aggregated"},
+        {"label":"Ληφθείσες αποζημιώσεις","category":"other_revenue","subcategory":"other_income","amount":0.00247,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-6.619201,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.490468,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.201521,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-6.619201,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.490468,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.201521,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.650137,"tax":0,"gross_debt":7.950943,"cash":0.028118},
       "official_totals": {"revenue":4.830076,"expenses":7.31119,"net_result":-3.131251},
@@ -368,14 +423,14 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":6.283402,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":1.785142,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.011197,"disclosure":"aggregated"}
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"undisclosed","subcategory":"lump_football_operations","amount":6.283402,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":1.785142,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.011197,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-6.312663,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.533264,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.119211,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-6.312663,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.533264,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.119211,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.021063,"tax":0,"gross_debt":5.525265,"cash":0.013885},
       "official_totals": {"revenue":8.079741,"expenses":6.965137,"net_result":0.093541},

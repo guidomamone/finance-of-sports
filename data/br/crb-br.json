@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -65,12 +66,26 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"BRL@2020-12-31"},
-      "revenue": [{"label":"Receita operacional líquida","category":"lump_football_operations","amount":14.902901,"disclosure":"aggregated"}],
+      "revenue": [
+        {"label":"Receita operacional líquida","category":"undisclosed","subcategory":"lump_football_operations","amount":14.902901,"disclosure":"aggregated"}
+      ],
       "expenses": [
-        {"label":"Custo das atividades sociais e esportivas","category":"lump_football_operations_expense","amount":-2.969625,"disclosure":"aggregated"},
-        {"label":"Despesas com pessoal","category":"wages_squad","amount":-4.08824,"disclosure":"aggregated"},
-        {"label":"Despesas gerais e administrativas","category":"admin_general_expense","amount":-6.384108,"disclosure":"aggregated"},
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-0.013794,"disclosure":"aggregated"}
+        {
+          "label": "Custo das atividades sociais e esportivas",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -2.969625,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-4.08824,"disclosure":"aggregated"},
+        {
+          "label": "Despesas gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.384108,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.013794,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.227878,"tax":0,"gross_debt":0,"cash":1.136312},
       "official_totals": {"revenue":14.902901,"expenses":13.455767,"net_result":1.219256},
@@ -95,12 +110,26 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"BRL@2021-12-31"},
-      "revenue": [{"label":"Receita operacional líquida","category":"lump_football_operations","amount":23.41935,"disclosure":"aggregated"}],
+      "revenue": [
+        {"label":"Receita operacional líquida","category":"undisclosed","subcategory":"lump_football_operations","amount":23.41935,"disclosure":"aggregated"}
+      ],
       "expenses": [
-        {"label":"Custo das atividades sociais e esportivas","category":"lump_football_operations_expense","amount":-6.628417,"disclosure":"aggregated"},
-        {"label":"Despesas com pessoal","category":"wages_squad","amount":-13.029931,"disclosure":"aggregated"},
-        {"label":"Despesas gerais e administrativas","category":"admin_general_expense","amount":-2.5048,"disclosure":"aggregated"},
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-0.0687,"disclosure":"aggregated"}
+        {
+          "label": "Custo das atividades sociais e esportivas",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -6.628417,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-13.029931,"disclosure":"aggregated"},
+        {
+          "label": "Despesas gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.5048,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.0687,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.027842,"tax":0,"gross_debt":0,"cash":1.381437},
       "official_totals": {"revenue":23.41935,"expenses":22.231848,"net_result":1.215344},
@@ -125,12 +154,26 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"BRL@2022-12-31"},
-      "revenue": [{"label":"Receita operacional líquida","category":"lump_football_operations","amount":28.583332,"disclosure":"aggregated"}],
+      "revenue": [
+        {"label":"Receita operacional líquida","category":"undisclosed","subcategory":"lump_football_operations","amount":28.583332,"disclosure":"aggregated"}
+      ],
       "expenses": [
-        {"label":"Custo das atividades sociais e esportivas","category":"lump_football_operations_expense","amount":-6.974826,"disclosure":"aggregated"},
-        {"label":"Despesas com pessoal","category":"admin_general_expense","amount":-18.425275,"disclosure":"aggregated"},
-        {"label":"Despesas gerais e administrativas","category":"admin_general_expense","amount":-3.217749,"disclosure":"aggregated"},
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-0.070314,"disclosure":"aggregated"}
+        {
+          "label": "Custo das atividades sociais e esportivas",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -6.974826,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas com pessoal","category":"admin_general","subcategory":"admin_general_expense","amount":-18.425275,"disclosure":"aggregated"},
+        {
+          "label": "Despesas gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.217749,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.070314,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.129574,"tax":0,"gross_debt":1,"cash":1.674113},
       "official_totals": {"revenue":28.583332,"expenses":28.688164,"net_result":0.024743},
@@ -155,12 +198,26 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"BRL@2023-12-31"},
-      "revenue": [{"label":"Receita operacional líquida","category":"lump_football_operations","amount":45.563569,"disclosure":"aggregated"}],
+      "revenue": [
+        {"label":"Receita operacional líquida","category":"undisclosed","subcategory":"lump_football_operations","amount":45.563569,"disclosure":"aggregated"}
+      ],
       "expenses": [
-        {"label":"Custo das atividades sociais e esportivas","category":"lump_football_operations_expense","amount":-8.358054,"disclosure":"aggregated"},
-        {"label":"Despesas com pessoal","category":"admin_general_expense","amount":-27.068659,"disclosure":"aggregated"},
-        {"label":"Despesas gerais e administrativas","category":"admin_general_expense","amount":-5.038184,"disclosure":"aggregated"},
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-0.050353,"disclosure":"aggregated"}
+        {
+          "label": "Custo das atividades sociais e esportivas",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -8.358054,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas com pessoal","category":"admin_general","subcategory":"admin_general_expense","amount":-27.068659,"disclosure":"aggregated"},
+        {
+          "label": "Despesas gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.038184,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.050353,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.252817,"tax":0,"gross_debt":0,"cash":4.38869},
       "official_totals": {"revenue":45.563569,"expenses":40.51525,"net_result":4.795503},
@@ -185,12 +242,26 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"BRL@2024-12-31"},
-      "revenue": [{"label":"Receita operacional líquida","category":"lump_football_operations","amount":60.144551,"disclosure":"aggregated"}],
+      "revenue": [
+        {"label":"Receita operacional líquida","category":"undisclosed","subcategory":"lump_football_operations","amount":60.144551,"disclosure":"aggregated"}
+      ],
       "expenses": [
-        {"label":"Custo das atividades sociais e esportivas","category":"lump_football_operations_expense","amount":-16.557833,"disclosure":"aggregated"},
-        {"label":"Despesas com pessoal","category":"wages_squad","amount":-31.531998,"disclosure":"aggregated"},
-        {"label":"Despesas gerais e administrativas","category":"admin_general_expense","amount":-7.923325,"disclosure":"aggregated"},
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-0.071413,"disclosure":"aggregated"}
+        {
+          "label": "Custo das atividades sociais e esportivas",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -16.557833,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-31.531998,"disclosure":"aggregated"},
+        {
+          "label": "Despesas gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -7.923325,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.071413,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.140106,"tax":0,"gross_debt":0,"cash":6.653358},
       "official_totals": {"revenue":60.144551,"expenses":56.084569,"net_result":4.20009},
@@ -215,12 +286,26 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"BRL@2025-12-31"},
-      "revenue": [{"label":"Receita operacional líquida","category":"lump_football_operations","amount":47.471422,"disclosure":"aggregated"}],
+      "revenue": [
+        {"label":"Receita operacional líquida","category":"undisclosed","subcategory":"lump_football_operations","amount":47.471422,"disclosure":"aggregated"}
+      ],
       "expenses": [
-        {"label":"Custo das atividades sociais e esportivas","category":"lump_football_operations_expense","amount":-43.365002,"disclosure":"aggregated"},
-        {"label":"Despesas com pessoal","category":"admin_general_expense","amount":-0.754228,"disclosure":"aggregated"},
-        {"label":"Despesas gerais e administrativas","category":"admin_general_expense","amount":-4.349905,"disclosure":"aggregated"},
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-0.189484,"disclosure":"aggregated"}
+        {
+          "label": "Custo das atividades sociais e esportivas",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -43.365002,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas com pessoal","category":"admin_general","subcategory":"admin_general_expense","amount":-0.754228,"disclosure":"aggregated"},
+        {
+          "label": "Despesas gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.349905,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.189484,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.080129,"tax":0,"gross_debt":0,"cash":2.036909},
       "official_totals": {"revenue":47.471422,"expenses":48.658619,"net_result":-1.267325},

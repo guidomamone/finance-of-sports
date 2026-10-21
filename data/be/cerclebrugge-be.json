@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,21 +32,41 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Omzet","category":"lump_football_operations","amount":19.306482,"disclosure":"aggregated"},
+        {"label":"Omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":19.306482,"disclosure":"aggregated"},
         {
           "label": "Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 0.001619,
           "disclosure": "detailed"
         },
-        {"label":"Andere bedrijfsopbrengsten — resto sin desglosar","category":"other_income","amount":24.415131,"disclosure":"aggregated"}
+        {
+          "label": "Andere bedrijfsopbrengsten — resto sin desglosar",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 24.415131,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Handelsgoederen, grond- en hulpstoffen","category":"other_expenses","amount":-0.793617,"disclosure":"aggregated"},
-        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-14.011456,"disclosure":"aggregated"},
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.793617,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Diensten en diverse goederen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -14.011456,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Bezoldigingen, sociale lasten en pensioenen",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -19.290772,
           "disclosure": "detailed",
           "items": [
@@ -57,25 +78,40 @@
         },
         {
           "label": "Afschrijvingen op immateriële vaste activa (spelersregistratierechten)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -2.820298,
           "disclosure": "detailed"
         },
         {
           "label": "Afschrijvingen op materiële vaste activa (incl. diferencia sin explicar contra el total impreso)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.527259,
           "disclosure": "aggregated"
         },
-        {"label":"Waardeverminderingen op handelsvorderingen","category":"other_expenses","amount":-0.0035,"disclosure":"detailed"},
+        {
+          "label": "Waardeverminderingen op handelsvorderingen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.0035,
+          "disclosure": "detailed"
+        },
         {
           "label": "Voorzieningen voor risico's en kosten (netto terugneming recurrente)",
-          "category": "exceptional_items",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
           "amount": 0.089665,
           "disclosure": "detailed"
         },
-        {"label":"Andere bedrijfskosten — Bedrijfsbelastingen en -taksen","category":"admin_general_expense","amount":-0.269439,"disclosure":"detailed"},
-        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-6.012965,"disclosure":"aggregated"}
+        {
+          "label": "Andere bedrijfskosten — Bedrijfsbelastingen en -taksen",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.269439,
+          "disclosure": "detailed"
+        },
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional","subcategory":"exceptional_items","amount":-6.012965,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.169022,"tax":-0.162946,"gross_debt":19.177608,"cash":6.900418},
       "official_totals": {"revenue":43.723231,"expenses":37.716341,"net_result":0.089666}

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "GR",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -80,15 +81,15 @@
       "management_id": null,
       "fx": {"ref":"EUR@2017-06-30"},
       "revenue": [
-        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":0.712062,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.575265,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.030629,"disclosure":"aggregated"}
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"undisclosed","subcategory":"lump_football_operations","amount":0.712062,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":2.575265,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.030629,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-3.807846,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.385561,"disclosure":"aggregated"},
-        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.035004,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.058673,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-3.807846,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.385561,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.035004,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.058673,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.004497,"tax":0,"gross_debt":0,"cash":0.157712},
       "official_totals": {"revenue":3.317956,"expenses":4.287083,"net_result":-0.973625},
@@ -124,15 +125,15 @@
       "management_id": null,
       "fx": {"ref":"EUR@2018-06-30"},
       "revenue": [
-        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":0.377138,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.122479,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.009284,"disclosure":"aggregated"}
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"undisclosed","subcategory":"lump_football_operations","amount":0.377138,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":2.122479,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.009284,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-3.850553,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.331746,"disclosure":"aggregated"},
-        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.045497,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.040496,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-3.850553,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.331746,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.045497,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.040496,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.008301,"tax":0,"gross_debt":0,"cash":0.227821},
       "official_totals": {"revenue":2.508901,"expenses":4.268291,"net_result":-1.767691},
@@ -168,15 +169,15 @@
       "management_id": null,
       "fx": {"ref":"EUR@2020-06-30"},
       "revenue": [
-        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":1.111543,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.521303,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.013314,"disclosure":"aggregated"}
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"undisclosed","subcategory":"lump_football_operations","amount":1.111543,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":2.521303,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.013314,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-4.428104,"disclosure":"aggregated"},
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.555211,"disclosure":"aggregated"},
-        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.029052,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.029196,"disclosure":"aggregated"}
+        {"label":"Κόστος πωλήσεων","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-4.428104,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.555211,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.029052,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.029196,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.005408,"tax":0,"gross_debt":0,"cash":0.375066},
       "official_totals": {"revenue":3.64616,"expenses":5.041563,"net_result":-1.400811},
@@ -212,17 +213,23 @@
       "management_id": null,
       "fx": {"ref":"EUR@2021-06-30"},
       "revenue": [
-        {"label":"Ευρωπαϊκή αγορά","category":"player_sales","amount":0.6,"disclosure":"aggregated"},
-        {"label":"Αγορές τρίτων χωρών","category":"lump_football_operations","amount":0.004192,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":3.839185,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.036941,"disclosure":"aggregated"}
+        {"label":"Ευρωπαϊκή αγορά","category":"player_transfers","subcategory":"player_sales","amount":0.6,"disclosure":"aggregated"},
+        {"label":"Αγορές τρίτων χωρών","category":"undisclosed","subcategory":"lump_football_operations","amount":0.004192,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":3.839185,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.036941,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.274993,"disclosure":"aggregated"},
-        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.021783,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.02477,"disclosure":"aggregated"},
-        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-3.210043,"disclosure":"aggregated"},
-        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.288535,"disclosure":"aggregated"}
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.274993,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.021783,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.02477,"disclosure":"aggregated"},
+        {
+          "label": "Κόστος πωλήσεων (sin el costo de personal)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -3.210043,
+          "disclosure": "aggregated"
+        },
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"first_team_staff","subcategory":"wages_squad","amount":-1.288535,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.004455,"tax":0,"gross_debt":0,"cash":0.339471,"staff_cost":1.288535},
       "official_totals": {"revenue":4.480318,"expenses":4.820124,"net_result":-0.344261},
@@ -257,16 +264,22 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
-        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":0.224781,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.674408,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.083695,"disclosure":"aggregated"}
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"undisclosed","subcategory":"lump_football_operations","amount":0.224781,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":2.674408,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.083695,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.451573,"disclosure":"aggregated"},
-        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.092175,"disclosure":"aggregated"},
-        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.314804,"disclosure":"aggregated"},
-        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-3.614795,"disclosure":"aggregated"},
-        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.566222,"disclosure":"aggregated"}
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.451573,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.092175,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.314804,"disclosure":"aggregated"},
+        {
+          "label": "Κόστος πωλήσεων (sin el costo de personal)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -3.614795,
+          "disclosure": "aggregated"
+        },
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"first_team_staff","subcategory":"wages_squad","amount":-1.566222,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.020549,"tax":0,"gross_debt":0.675224,"cash":0.222422,"staff_cost":1.566222},
       "official_totals": {"revenue":2.982884,"expenses":6.039569,"net_result":-3.077233},
@@ -297,21 +310,33 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":0.300214,"disclosure":"aggregated"},
-        {"label":"Έσοδα από μεταγραφές","category":"player_sales","amount":0.1425,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα","category":"other_income","amount":0.001698,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":4.254506,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.052396,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":0.300214,"disclosure":"aggregated"},
+        {"label":"Έσοδα από μεταγραφές","category":"player_transfers","subcategory":"player_sales","amount":0.1425,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.001698,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":4.254506,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.052396,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.570216,"disclosure":"aggregated"},
-        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.088709,"disclosure":"aggregated"},
-        {"label":"Παροχές τρίτων","category":"admin_general_expense","amount":-0.018375,"disclosure":"aggregated"},
-        {"label":"Φόροι και τέλη","category":"admin_general_expense","amount":-0.0008,"disclosure":"aggregated"},
-        {"label":"Διάφορα έξοδα","category":"other_expenses","amount":-0.046825,"disclosure":"aggregated"},
-        {"label":"Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις","category":"other_expenses","amount":-0.089651,"disclosure":"aggregated"},
-        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-5.090619,"disclosure":"aggregated"},
-        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.716652,"disclosure":"aggregated"}
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.570216,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.088709,"disclosure":"aggregated"},
+        {"label":"Παροχές τρίτων","category":"admin_general","subcategory":"admin_general_expense","amount":-0.018375,"disclosure":"aggregated"},
+        {"label":"Φόροι και τέλη","category":"admin_general","subcategory":"admin_general_expense","amount":-0.0008,"disclosure":"aggregated"},
+        {"label":"Διάφορα έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.046825,"disclosure":"aggregated"},
+        {
+          "label": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.089651,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Κόστος πωλήσεων (sin el costo de personal)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -5.090619,
+          "disclosure": "aggregated"
+        },
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"first_team_staff","subcategory":"wages_squad","amount":-1.716652,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.005245,"tax":0,"gross_debt":0,"cash":0.254909,"staff_cost":1.716652},
       "official_totals": {"revenue":4.751314,"expenses":7.621847,"net_result":-2.875778},
@@ -334,20 +359,32 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":0.258358,"disclosure":"aggregated"},
-        {"label":"Έσοδα από μεταγραφές","category":"player_sales","amount":0.031448,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":4.412163,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.152163,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":0.258358,"disclosure":"aggregated"},
+        {"label":"Έσοδα από μεταγραφές","category":"player_transfers","subcategory":"player_sales","amount":0.031448,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":4.412163,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.152163,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.58242,"disclosure":"aggregated"},
-        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.054834,"disclosure":"aggregated"},
-        {"label":"Παροχές τρίτων","category":"admin_general_expense","amount":-0.017595,"disclosure":"aggregated"},
-        {"label":"Φόροι και τέλη","category":"admin_general_expense","amount":-0.000944,"disclosure":"aggregated"},
-        {"label":"Διάφορα έξοδα","category":"other_expenses","amount":-0.110904,"disclosure":"aggregated"},
-        {"label":"Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις","category":"other_expenses","amount":-0.051238,"disclosure":"aggregated"},
-        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-4.869717,"disclosure":"aggregated"},
-        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.850317,"disclosure":"aggregated"}
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.58242,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.054834,"disclosure":"aggregated"},
+        {"label":"Παροχές τρίτων","category":"admin_general","subcategory":"admin_general_expense","amount":-0.017595,"disclosure":"aggregated"},
+        {"label":"Φόροι και τέλη","category":"admin_general","subcategory":"admin_general_expense","amount":-0.000944,"disclosure":"aggregated"},
+        {"label":"Διάφορα έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.110904,"disclosure":"aggregated"},
+        {
+          "label": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.051238,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Κόστος πωλήσεων (sin el costo de personal)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -4.869717,
+          "disclosure": "aggregated"
+        },
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"first_team_staff","subcategory":"wages_squad","amount":-1.850317,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01714,"tax":0,"gross_debt":0,"cash":0.298815,"staff_cost":1.850317},
       "official_totals": {"revenue":4.854132,"expenses":7.537969,"net_result":-2.700977},
@@ -370,19 +407,31 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":0.371845,"disclosure":"aggregated"},
-        {"label":"Έσοδα από μεταγραφές","category":"player_sales","amount":0.028379,"disclosure":"aggregated"},
-        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":5.266495,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.126265,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":0.371845,"disclosure":"aggregated"},
+        {"label":"Έσοδα από μεταγραφές","category":"player_transfers","subcategory":"player_sales","amount":0.028379,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":5.266495,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.126265,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.587996,"disclosure":"aggregated"},
-        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.075774,"disclosure":"aggregated"},
-        {"label":"Διάφορα έξοδα","category":"other_expenses","amount":-0.042041,"disclosure":"aggregated"},
-        {"label":"Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις","category":"other_expenses","amount":-0.073712,"disclosure":"aggregated"},
-        {"label":"Έξοδα προηγούμενων χρήσεων","category":"exceptional_items","amount":-0.153205,"disclosure":"aggregated"},
-        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-4.314462,"disclosure":"aggregated"},
-        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.959575,"disclosure":"aggregated"}
+        {"label":"Έξοδα διοίκησης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.587996,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.075774,"disclosure":"aggregated"},
+        {"label":"Διάφορα έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.042041,"disclosure":"aggregated"},
+        {
+          "label": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.073712,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα προηγούμενων χρήσεων","category":"exceptional","subcategory":"exceptional_items","amount":-0.153205,"disclosure":"aggregated"},
+        {
+          "label": "Κόστος πωλήσεων (sin el costo de personal)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -4.314462,
+          "disclosure": "aggregated"
+        },
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"first_team_staff","subcategory":"wages_squad","amount":-1.959575,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.012857,"tax":0,"gross_debt":0,"cash":0.222825,"staff_cost":1.959575},
       "official_totals": {"revenue":5.792984,"expenses":7.05356,"net_result":-1.426639},

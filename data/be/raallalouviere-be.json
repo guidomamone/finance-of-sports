@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -73,16 +74,29 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"EUR@2018-06-30"},
-      "revenue": [{"label":"Marge brute d'exploitation","category":"lump_football_operations","amount":0.430494,"disclosure":"aggregated"}],
+      "revenue": [{"label":"Marge brute d'exploitation","category":"undisclosed","subcategory":"lump_football_operations","amount":0.430494,"disclosure":"aggregated"}],
       "expenses": [
-        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-0.578307,"disclosure":"aggregated"},
+        {
+          "label": "Rémunérations, charges sociales et pensions",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.578307,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.086931,
           "disclosure": "aggregated"
         },
-        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.002507,"disclosure":"aggregated"}
+        {
+          "label": "Autres charges d'exploitation",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.002507,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.001578,"tax":-0.000178,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":0.430494,"expenses":0.667745,"net_result":-0.239007},
@@ -106,16 +120,29 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"EUR@2019-06-30"},
-      "revenue": [{"label":"Marge brute d'exploitation","category":"lump_football_operations","amount":0.496957,"disclosure":"aggregated"}],
+      "revenue": [{"label":"Marge brute d'exploitation","category":"undisclosed","subcategory":"lump_football_operations","amount":0.496957,"disclosure":"aggregated"}],
       "expenses": [
-        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-0.518027,"disclosure":"aggregated"},
+        {
+          "label": "Rémunérations, charges sociales et pensions",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.518027,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.157759,
           "disclosure": "aggregated"
         },
-        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.004676,"disclosure":"aggregated"}
+        {
+          "label": "Autres charges d'exploitation",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.004676,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.006669,"tax":0.000047,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":0.496957,"expenses":0.680462,"net_result":-0.190128},
@@ -143,22 +170,36 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"EUR@2021-06-30"},
-      "revenue": [{"label":"Marge brute","category":"lump_football_operations","amount":0.480032,"disclosure":"aggregated"}],
+      "revenue": [{"label":"Marge brute","category":"undisclosed","subcategory":"lump_football_operations","amount":0.480032,"disclosure":"aggregated"}],
       "expenses": [
-        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-0.306132,"disclosure":"aggregated"},
+        {
+          "label": "Rémunérations, charges sociales et pensions",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.306132,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.104875,
           "disclosure": "aggregated"
         },
         {
           "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
-          "category": "exceptional_items",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
           "amount": -0.03,
           "disclosure": "aggregated"
         },
-        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.055883,"disclosure":"aggregated"}
+        {
+          "label": "Autres charges d'exploitation",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.055883,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.012096,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":0.480032,"expenses":0.46689,"net_result":-0.028954},
@@ -182,29 +223,50 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
-      "revenue": [{"label":"Marge brute","category":"lump_football_operations","amount":0.836649,"disclosure":"aggregated"}],
+      "revenue": [{"label":"Marge brute","category":"undisclosed","subcategory":"lump_football_operations","amount":0.836649,"disclosure":"aggregated"}],
       "expenses": [
-        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-0.772848,"disclosure":"aggregated"},
+        {
+          "label": "Rémunérations, charges sociales et pensions",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.772848,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.105582,
           "disclosure": "aggregated"
         },
         {
           "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": 0.044386,
           "disclosure": "aggregated"
         },
         {
           "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
-          "category": "exceptional_items",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
           "amount": 0.003,
           "disclosure": "aggregated"
         },
-        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.005082,"disclosure":"aggregated"},
-        {"label":"Charges d'exploitation non récurrentes","category":"exceptional_items","amount":-0.123236,"disclosure":"aggregated"}
+        {
+          "label": "Autres charges d'exploitation",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.005082,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Charges d'exploitation non récurrentes",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.123236,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.016968,"tax":-0.003753,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":0.836649,"expenses":0.836649,"net_result":-0.143433},
@@ -232,17 +294,36 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
-      "revenue": [{"label":"Marge brute","category":"lump_football_operations","amount":1.098287,"disclosure":"aggregated"}],
+      "revenue": [{"label":"Marge brute","category":"undisclosed","subcategory":"lump_football_operations","amount":1.098287,"disclosure":"aggregated"}],
       "expenses": [
-        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-1.479328,"disclosure":"aggregated"},
+        {
+          "label": "Rémunérations, charges sociales et pensions",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -1.479328,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.076505,
           "disclosure": "aggregated"
         },
-        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.03234,"disclosure":"aggregated"},
-        {"label":"Charges d'exploitation non récurrentes","category":"exceptional_items","amount":-0.003702,"disclosure":"aggregated"}
+        {
+          "label": "Autres charges d'exploitation",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.03234,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Charges d'exploitation non récurrentes",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.003702,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.018068,"tax":-0.000709,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":1.098287,"expenses":1.591875,"net_result":-0.512364},
@@ -266,23 +347,43 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
-      "revenue": [{"label":"Marge brute","category":"lump_football_operations","amount":1.045134,"disclosure":"aggregated"}],
+      "revenue": [{"label":"Marge brute","category":"undisclosed","subcategory":"lump_football_operations","amount":1.045134,"disclosure":"aggregated"}],
       "expenses": [
-        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-1.912837,"disclosure":"aggregated"},
+        {
+          "label": "Rémunérations, charges sociales et pensions",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -1.912837,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.090519,
           "disclosure": "aggregated"
         },
         {
           "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.010642,
           "disclosure": "aggregated"
         },
-        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.007208,"disclosure":"aggregated"},
-        {"label":"Charges d'exploitation non récurrentes","category":"exceptional_items","amount":-0.001182,"disclosure":"aggregated"}
+        {
+          "label": "Autres charges d'exploitation",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.007208,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Charges d'exploitation non récurrentes",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.001182,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.022726,"tax":-0.001974,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":1.045134,"expenses":2.022388,"net_result":-1.001954},
@@ -311,29 +412,55 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Chiffre d'affaires","category":"lump_football_operations","amount":4.615173,"disclosure":"aggregated"},
-        {"label":"Autres produits d'exploitation","category":"other_income","amount":1.536293,"disclosure":"aggregated"},
-        {"label":"Produits d'exploitation non récurrents","category":"other_income","amount":0.145299,"disclosure":"aggregated"}
+        {"label":"Chiffre d'affaires","category":"undisclosed","subcategory":"lump_football_operations","amount":4.615173,"disclosure":"aggregated"},
+        {"label":"Autres produits d'exploitation","category":"other_revenue","subcategory":"other_income","amount":1.536293,"disclosure":"aggregated"},
+        {"label":"Produits d'exploitation non récurrents","category":"other_revenue","subcategory":"other_income","amount":0.145299,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Achats","category":"other_expenses","amount":-0.511554,"disclosure":"aggregated"},
-        {"label":"Stocks: réduction (augmentation)","category":"other_expenses","amount":-0.013739,"disclosure":"aggregated"},
-        {"label":"Services et biens divers","category":"other_expenses","amount":-3.72582,"disclosure":"aggregated"},
-        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-3.535934,"disclosure":"aggregated"},
+        {"label":"Achats","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.511554,"disclosure":"aggregated"},
+        {
+          "label": "Stocks: réduction (augmentation)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.013739,
+          "disclosure": "aggregated"
+        },
+        {"label":"Services et biens divers","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.72582,"disclosure":"aggregated"},
+        {
+          "label": "Rémunérations, charges sociales et pensions",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -3.535934,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.558871,
           "disclosure": "aggregated"
         },
         {
           "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.017902,
           "disclosure": "aggregated"
         },
-        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.09718,"disclosure":"aggregated"},
-        {"label":"Charges d'exploitation non récurrentes","category":"exceptional_items","amount":-0.003193,"disclosure":"aggregated"}
+        {
+          "label": "Autres charges d'exploitation",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.09718,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Charges d'exploitation non récurrentes",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.003193,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.029283,"tax":-0.010503,"gross_debt":null,"cash":1.630864},
       "official_totals": {"revenue":6.296765,"expenses":8.464193,"net_result":-2.148648},

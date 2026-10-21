@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -41,42 +42,94 @@
       "management_id": "aguirrezegarra",
       "fx": {"ref":"BRL@2024-12-31","source":"market_close"},
       "revenue": [
-        {"label":"Receitas de transmissão de imagem e de luvas","category":"broadcasting","amount":112.788,"disclosure":"detailed"},
-        {"label":"Receitas com negociação de direitos contratuais","category":"player_sales","amount":35.693,"disclosure":"detailed"},
+        {
+          "label": "Receitas de transmissão de imagem e de luvas",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 112.788,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Receitas com negociação de direitos contratuais",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 35.693,
+          "disclosure": "detailed"
+        },
         {
           "label": "Receitas de sócios e bilheteria (cifra combinada, el documento no separa sócio-torcedor de recaudación de entradas — ver comentario de cabecera)",
-          "category": "matchday_competition",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
           "amount": 83.183,
           "disclosure": "detailed"
         },
-        {"label":"Receitas de patrocínio, publicidade e marketing","category":"sponsorship_commercial","amount":57.09,"disclosure":"detailed"},
-        {"label":"Receitas - Filiais","category":"other_income","amount":6.986,"disclosure":"detailed"},
-        {"label":"Loterias (Timemania)","category":"other_income","amount":1.136,"disclosure":"detailed"},
-        {"label":"Outras (receita bruta)","category":"other_income","amount":1.399,"disclosure":"detailed"},
-        {"label":"Impostos e contribuições incidentes (dedução da receita)","category":"other_income","amount":-19.573,"disclosure":"detailed"},
-        {"label":"Custo e deduções de venda (dedução da receita)","category":"other_income","amount":-5.355,"disclosure":"detailed"},
-        {"label":"Reversão de provisões (Nota 19)","category":"other_income","amount":5.209,"disclosure":"detailed"}
+        {
+          "label": "Receitas de patrocínio, publicidade e marketing",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 57.09,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas - Filiais","category":"other_revenue","subcategory":"other_income","amount":6.986,"disclosure":"detailed"},
+        {"label":"Loterias (Timemania)","category":"other_revenue","subcategory":"other_income","amount":1.136,"disclosure":"detailed"},
+        {"label":"Outras (receita bruta)","category":"other_revenue","subcategory":"other_income","amount":1.399,"disclosure":"detailed"},
+        {
+          "label": "Impostos e contribuições incidentes (dedução da receita)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -19.573,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custo e deduções de venda (dedução da receita)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -5.355,
+          "disclosure": "detailed"
+        },
+        {"label":"Reversão de provisões (Nota 19)","category":"other_revenue","subcategory":"other_income","amount":5.209,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Custo de pessoal / encargos / benefícios (Custo das Atividades)","category":"wages_squad","amount":-293.677,"disclosure":"detailed"},
+        {
+          "label": "Custo de pessoal / encargos / benefícios (Custo das Atividades)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -293.677,
+          "disclosure": "detailed"
+        },
         {
           "label": "Custos com negociação (Custo das Atividades — incluye amortização de direitos de jogadores no separada por la fuente, ver comentario de cabecera)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -97.272,
           "disclosure": "detailed"
         },
-        {"label":"Custos de viagens (Custo das Atividades)","category":"match_organisation_expense","amount":-30.952,"disclosure":"detailed"},
-        {"label":"Outros custos (Custo das Atividades)","category":"other_expenses","amount":-23.564,"disclosure":"detailed"},
+        {
+          "label": "Custos de viagens (Custo das Atividades)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -30.952,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros custos (Custo das Atividades)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -23.564,
+          "disclosure": "detailed"
+        },
         {
           "label": "Despesas gerais e administrativas (Nota 17)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -37.41,
           "disclosure": "detailed",
           "items": [["Pessoal",-13.663],["Gerais",-12.593],["Consumo",-6.426],["Manutenção",-1.862],["Aluguéis",-2.866]]
         },
         {
           "label": "Despesas de serviços (Nota 18)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -17.322,
           "disclosure": "detailed",
           "items": [
@@ -90,12 +143,30 @@
             ["Médico",-1.071]
           ]
         },
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-1.595,"disclosure":"detailed"},
-        {"label":"Depreciação e amortização (imobilizado)","category":"depreciation","amount":-2.499,"disclosure":"detailed"},
-        {"label":"Perda na recuperação de créditos de sócios","category":"other_expenses","amount":-5.511,"disclosure":"detailed"},
-        {"label":"Processos cíveis (Nota 19)","category":"other_expenses","amount":-8.823,"disclosure":"detailed"},
-        {"label":"Processos trabalhistas (Nota 19)","category":"other_expenses","amount":-7.226,"disclosure":"detailed"},
-        {"label":"Partes relacionadas (Nota 19 — acordo anual com a Associação)","category":"other_expenses","amount":-2.59,"disclosure":"detailed"}
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-1.595,"disclosure":"detailed"},
+        {"label":"Depreciação e amortização (imobilizado)","category":"depreciation","subcategory":"depreciation","amount":-2.499,"disclosure":"detailed"},
+        {
+          "label": "Perda na recuperação de créditos de sócios",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -5.511,
+          "disclosure": "detailed"
+        },
+        {"label":"Processos cíveis (Nota 19)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-8.823,"disclosure":"detailed"},
+        {
+          "label": "Processos trabalhistas (Nota 19)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7.226,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Partes relacionadas (Nota 19 — acordo anual com a Associação)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.59,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.34,"tax":0,"gross_debt":679.901,"cash":134.387},
       "official_totals": {"revenue":278.556,"expenses":528.441,"net_result":-246.545},
@@ -110,42 +181,82 @@
       "management_id": "aguirrezegarra",
       "fx": {"ref":"BRL@2025-12-31","source":"market_close"},
       "revenue": [
-        {"label":"Transmissão de imagem e de luvas","category":"broadcasting","amount":185.757,"disclosure":"detailed"},
+        {"label":"Transmissão de imagem e de luvas","category":"media_rights","subcategory":"broadcasting","amount":185.757,"disclosure":"detailed"},
         {
           "label": "Sócios e bilheteria (cifra combinada, el documento no separa sócio-torcedor de recaudación de entradas — ver comentario de cabecera)",
-          "category": "matchday_competition",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
           "amount": 116.81,
           "disclosure": "detailed"
         },
-        {"label":"Patrocínio, publicidade e marketing","category":"sponsorship_commercial","amount":85.628,"disclosure":"detailed"},
-        {"label":"Filiais","category":"other_income","amount":1.96,"disclosure":"detailed"},
-        {"label":"Loterias (Timemania)","category":"other_income","amount":1.92,"disclosure":"detailed"},
-        {"label":"Outras (receita bruta)","category":"other_income","amount":1.263,"disclosure":"detailed"},
-        {"label":"Impostos e contribuições incidentes (dedução da receita)","category":"other_income","amount":-25.42,"disclosure":"detailed"},
-        {"label":"Custo e deduções de venda (dedução da receita)","category":"other_income","amount":-0.348,"disclosure":"detailed"},
-        {"label":"Reversão de provisões (Nota 21)","category":"other_income","amount":8.89,"disclosure":"detailed"},
-        {"label":"Receitas com negociação de direitos contratuais (Nota 21)","category":"player_sales","amount":168.944,"disclosure":"detailed"}
+        {"label":"Patrocínio, publicidade e marketing","category":"commercial","subcategory":"sponsorship_commercial","amount":85.628,"disclosure":"detailed"},
+        {"label":"Filiais","category":"other_revenue","subcategory":"other_income","amount":1.96,"disclosure":"detailed"},
+        {"label":"Loterias (Timemania)","category":"other_revenue","subcategory":"other_income","amount":1.92,"disclosure":"detailed"},
+        {"label":"Outras (receita bruta)","category":"other_revenue","subcategory":"other_income","amount":1.263,"disclosure":"detailed"},
+        {
+          "label": "Impostos e contribuições incidentes (dedução da receita)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -25.42,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custo e deduções de venda (dedução da receita)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -0.348,
+          "disclosure": "detailed"
+        },
+        {"label":"Reversão de provisões (Nota 21)","category":"other_revenue","subcategory":"other_income","amount":8.89,"disclosure":"detailed"},
+        {
+          "label": "Receitas com negociação de direitos contratuais (Nota 21)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 168.944,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Pessoal / encargos / benefícios (Custo das Atividades, Nota 18)","category":"wages_squad","amount":-295.606,"disclosure":"detailed"},
+        {
+          "label": "Pessoal / encargos / benefícios (Custo das Atividades, Nota 18)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -295.606,
+          "disclosure": "detailed"
+        },
         {
           "label": "Negociações (Custo das Atividades, Nota 18 — agentes/intermediação, ya SIN amortização, que en 2025 tiene línea propia)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -16.801,
           "disclosure": "detailed"
         },
-        {"label":"Viagens (Custo das Atividades, Nota 18)","category":"match_organisation_expense","amount":-40.872,"disclosure":"detailed"},
-        {"label":"Outros custos (Custo das Atividades, Nota 18)","category":"other_expenses","amount":-42.059,"disclosure":"detailed"},
+        {
+          "label": "Viagens (Custo das Atividades, Nota 18)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -40.872,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros custos (Custo das Atividades, Nota 18)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -42.059,
+          "disclosure": "detailed"
+        },
         {
           "label": "Despesas gerais e administrativas (Nota 19)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -41.13,
           "disclosure": "detailed",
           "items": [["Pessoal",-15.969],["Gerais",-12.92],["Consumo",-7.368],["Manutenção",-1.44],["Aluguéis",-3.433]]
         },
         {
           "label": "Despesas de serviços (Nota 20)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -26.02,
           "disclosure": "detailed",
           "items": [
@@ -159,27 +270,48 @@
             ["Médico",-1.504]
           ]
         },
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-1.576,"disclosure":"detailed"},
-        {"label":"Perda na recuperação de créditos de sócios","category":"other_expenses","amount":-8.434,"disclosure":"detailed"},
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-1.576,"disclosure":"detailed"},
+        {
+          "label": "Perda na recuperação de créditos de sócios",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -8.434,
+          "disclosure": "detailed"
+        },
         {
           "label": "Custos/baixas por negociação de direitos contratuais (Nota 21 — baixa de direitos federativos por venda/rescisão de atletas)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -70.72,
           "disclosure": "detailed"
         },
-        {"label":"Processos cíveis (Nota 21)","category":"other_expenses","amount":-2.464,"disclosure":"detailed"},
-        {"label":"Processos trabalhistas (Nota 21)","category":"other_expenses","amount":-1.382,"disclosure":"detailed"},
+        {"label":"Processos cíveis (Nota 21)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.464,"disclosure":"detailed"},
+        {
+          "label": "Processos trabalhistas (Nota 21)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.382,
+          "disclosure": "detailed"
+        },
         {
           "label": "Contingência fiscal (Nota 21 — parcelamento de ICMS reembolsado à Associação)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.475,
           "disclosure": "detailed"
         },
-        {"label":"Partes relacionadas (Nota 21 — acordo anual com a Associação)","category":"other_expenses","amount":-2.679,"disclosure":"detailed"},
-        {"label":"Depreciação (imobilizado, Nota 7)","category":"depreciation","amount":-3.165,"disclosure":"detailed"},
+        {
+          "label": "Partes relacionadas (Nota 21 — acordo anual com a Associação)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.679,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação (imobilizado, Nota 7)","category":"depreciation","subcategory":"depreciation","amount":-3.165,"disclosure":"detailed"},
         {
           "label": "Amortização (direitos de jogadores, Nota 8 — linha própria desde 2025)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -144.833,
           "disclosure": "detailed"
         }

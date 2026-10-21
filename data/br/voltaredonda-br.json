@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -41,24 +42,84 @@
       "management_id": "hortajardim",
       "fx": {"ref":"BRL@2024-12-31"},
       "revenue": [
-        {"label":"Receita Líquida de Direitos de Transmissão e cota de TV","category":"broadcasting","amount":5.83544192,"disclosure":"detailed"},
-        {"label":"Patrocínio e Publicidade","category":"sponsorship_commercial","amount":2.6831708,"disclosure":"detailed"},
-        {"label":"Direitos Federativos","category":"player_sales","amount":2.15495715,"disclosure":"detailed"},
-        {"label":"Premiações, Bilheterias e Outros","category":"matchday_competition","amount":1.36359741,"disclosure":"detailed"},
-        {"label":"Contribuições associados","category":"member_dues","amount":0.05095031,"disclosure":"detailed"},
-        {"label":"Receita Repasse Timemania","category":"other_income","amount":0.48623513,"disclosure":"detailed"},
-        {"label":"Doações recebidas, Franquias e Outros","category":"other_income","amount":0.06908416,"disclosure":"detailed"}
+        {
+          "label": "Receita Líquida de Direitos de Transmissão e cota de TV",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 5.83544192,
+          "disclosure": "detailed"
+        },
+        {"label":"Patrocínio e Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":2.6831708,"disclosure":"detailed"},
+        {"label":"Direitos Federativos","category":"player_transfers","subcategory":"player_sales","amount":2.15495715,"disclosure":"detailed"},
+        {"label":"Premiações, Bilheterias e Outros","category":"matchday","subcategory":"matchday_competition","amount":1.36359741,"disclosure":"detailed"},
+        {"label":"Contribuições associados","category":"membership","subcategory":"member_dues","amount":0.05095031,"disclosure":"detailed"},
+        {"label":"Receita Repasse Timemania","category":"other_revenue","subcategory":"other_income","amount":0.48623513,"disclosure":"detailed"},
+        {"label":"Doações recebidas, Franquias e Outros","category":"other_revenue","subcategory":"other_income","amount":0.06908416,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Despesas com pessoal e encargos (Futebol Profissional)","category":"wages_squad","amount":-5.57307949,"disclosure":"detailed"},
-        {"label":"Despesas gerais e administrativas (Futebol Profissional)","category":"admin_general_expense","amount":-2.11388681,"disclosure":"detailed"},
-        {"label":"Despesas com jogos (Futebol Profissional)","category":"match_organisation_expense","amount":-0.96620401,"disclosure":"detailed"},
-        {"label":"Despesas com pessoal e encargos (Administrativo)","category":"admin_general_expense","amount":-1.46905202,"disclosure":"detailed"},
-        {"label":"Despesas gerais e administrativas (Administrativo)","category":"admin_general_expense","amount":-0.64985277,"disclosure":"detailed"},
-        {"label":"Despesas com pessoal e encargos (Futebol Amador)","category":"youth_other_sports_expense","amount":-0.53681976,"disclosure":"detailed"},
-        {"label":"Despesas gerais e administrativas (Futebol Amador)","category":"youth_other_sports_expense","amount":-0.47456737,"disclosure":"detailed"},
-        {"label":"Despesas com jogos (Futebol Amador)","category":"youth_other_sports_expense","amount":-0.1357095,"disclosure":"detailed"},
-        {"label":"Ganho Mensuração a Valor Justo (reavaliação de imóveis, Nota 9)","category":"exceptional_items","amount":6.82475897,"disclosure":"detailed"}
+        {
+          "label": "Despesas com pessoal e encargos (Futebol Profissional)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -5.57307949,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas gerais e administrativas (Futebol Profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.11388681,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas com jogos (Futebol Profissional)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.96620401,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas com pessoal e encargos (Administrativo)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.46905202,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas gerais e administrativas (Administrativo)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.64985277,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas com pessoal e encargos (Futebol Amador)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.53681976,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas gerais e administrativas (Futebol Amador)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.47456737,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas com jogos (Futebol Amador)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.1357095,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Ganho Mensuração a Valor Justo (reavaliação de imóveis, Nota 9)",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": 6.82475897,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.28533224,"tax":0,"gross_debt":1.84648686,"cash":0.06612846},
       "official_totals": {"revenue":12.64343688,"expenses":11.91917173,"net_result":7.26369188}
@@ -72,23 +133,77 @@
       "management_id": "hortajardim",
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"Receita Líquida de Direitos de Transmissão e cota de TV","category":"broadcasting","amount":12.26938381,"disclosure":"detailed"},
-        {"label":"Patrocínio e Publicidade","category":"sponsorship_commercial","amount":1.37052755,"disclosure":"detailed"},
-        {"label":"Direitos Federativos","category":"player_sales","amount":4.98046552,"disclosure":"detailed"},
-        {"label":"Premiações, Bilheterias e Outros","category":"matchday_competition","amount":7.01597715,"disclosure":"detailed"},
-        {"label":"Contribuições associados","category":"member_dues","amount":0.07220813,"disclosure":"detailed"},
-        {"label":"Receita Repasse Timemania","category":"other_income","amount":0.65985353,"disclosure":"detailed"},
-        {"label":"Doações recebidas, Franquias e Outros","category":"other_income","amount":0.02851055,"disclosure":"detailed"}
+        {
+          "label": "Receita Líquida de Direitos de Transmissão e cota de TV",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 12.26938381,
+          "disclosure": "detailed"
+        },
+        {"label":"Patrocínio e Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":1.37052755,"disclosure":"detailed"},
+        {"label":"Direitos Federativos","category":"player_transfers","subcategory":"player_sales","amount":4.98046552,"disclosure":"detailed"},
+        {"label":"Premiações, Bilheterias e Outros","category":"matchday","subcategory":"matchday_competition","amount":7.01597715,"disclosure":"detailed"},
+        {"label":"Contribuições associados","category":"membership","subcategory":"member_dues","amount":0.07220813,"disclosure":"detailed"},
+        {"label":"Receita Repasse Timemania","category":"other_revenue","subcategory":"other_income","amount":0.65985353,"disclosure":"detailed"},
+        {"label":"Doações recebidas, Franquias e Outros","category":"other_revenue","subcategory":"other_income","amount":0.02851055,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Despesas com pessoal e encargos (Futebol Profissional)","category":"wages_squad","amount":-13.4661176,"disclosure":"detailed"},
-        {"label":"Despesas gerais e administrativas (Futebol Profissional)","category":"admin_general_expense","amount":-5.26560713,"disclosure":"detailed"},
-        {"label":"Despesas com jogos (Futebol Profissional)","category":"match_organisation_expense","amount":-2.16276302,"disclosure":"detailed"},
-        {"label":"Despesas com pessoal e encargos (Administrativo)","category":"admin_general_expense","amount":-1.08872313,"disclosure":"detailed"},
-        {"label":"Despesas gerais e administrativas (Administrativo)","category":"admin_general_expense","amount":-0.95719786,"disclosure":"detailed"},
-        {"label":"Despesas com pessoal e encargos (Futebol Amador)","category":"youth_other_sports_expense","amount":-0.74612937,"disclosure":"detailed"},
-        {"label":"Despesas gerais e administrativas (Futebol Amador)","category":"youth_other_sports_expense","amount":-1.70213927,"disclosure":"detailed"},
-        {"label":"Despesas com jogos (Futebol Amador)","category":"youth_other_sports_expense","amount":-0.25472726,"disclosure":"detailed"}
+        {
+          "label": "Despesas com pessoal e encargos (Futebol Profissional)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -13.4661176,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas gerais e administrativas (Futebol Profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.26560713,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas com jogos (Futebol Profissional)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.16276302,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas com pessoal e encargos (Administrativo)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.08872313,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas gerais e administrativas (Administrativo)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.95719786,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas com pessoal e encargos (Futebol Amador)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.74612937,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas gerais e administrativas (Futebol Amador)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -1.70213927,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas com jogos (Futebol Amador)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.25472726,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.71628018,"tax":0,"gross_debt":1.73506244,"cash":1.12316442},
       "official_totals": {"revenue":26.39692624,"expenses":25.64340464,"net_result":0.03724142}

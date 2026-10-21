@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "NO",
     "reporting_currency": "NOK",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,17 +32,23 @@
       "management_id": null,
       "fx": {"ref":"NOK@2025-12-31"},
       "revenue": [
-        {"label":"Salgsinntekter","category":"lump_football_operations","amount":69.990515,"disclosure":"aggregated"},
-        {"label":"Andre driftsinntekter","category":"other_income","amount":0.440395,"disclosure":"aggregated"}
+        {"label":"Salgsinntekter","category":"undisclosed","subcategory":"lump_football_operations","amount":69.990515,"disclosure":"aggregated"},
+        {"label":"Andre driftsinntekter","category":"other_revenue","subcategory":"other_income","amount":0.440395,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Varekostnad","category":"other_expenses","amount":-6.366043,"disclosure":"aggregated"},
-        {"label":"Lønninger","category":"wages_squad","amount":-5.45678,"disclosure":"aggregated"},
-        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-0.854926,"disclosure":"aggregated"},
-        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.151065,"disclosure":"aggregated"},
-        {"label":"Andre ytelser","category":"wages_squad","amount":-0.43456,"disclosure":"aggregated"},
-        {"label":"Avskrivning varige driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-6.632698,"disclosure":"aggregated"},
-        {"label":"Annen driftskostnad","category":"other_expenses","amount":-49.677946,"disclosure":"aggregated"}
+        {"label":"Varekostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-6.366043,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-5.45678,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"first_team_staff","subcategory":"wages_squad","amount":-0.854926,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"first_team_staff","subcategory":"wages_squad","amount":-0.151065,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"first_team_staff","subcategory":"wages_squad","amount":-0.43456,"disclosure":"aggregated"},
+        {
+          "label": "Avskrivning varige driftsmidler og immaterielle eiendeler",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -6.632698,
+          "disclosure": "aggregated"
+        },
+        {"label":"Annen driftskostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-49.677946,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.657928,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":70.43091,"expenses":69.574018,"net_result":1.51482},

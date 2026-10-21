@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DK",
     "reporting_currency": "DKK",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,39 +32,55 @@
       "management_id": null,
       "fx": {"ref":"DKK@2024-12-31"},
       "revenue": [
-        {"label":"Entréindtægter","category":"matchday_competition","amount":85.544,"disclosure":"detailed"},
+        {"label":"Entréindtægter","category":"matchday","subcategory":"matchday_competition","amount":85.544,"disclosure":"detailed"},
         {
           "label": "TV- og præmie-indtægter (TV y premios por competencia, combinados por la fuente)",
-          "category": "broadcasting",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
           "amount": 110.836,
           "disclosure": "detailed"
         },
-        {"label":"Samarbejdspartnere","category":"sponsorship_commercial","amount":127.594,"disclosure":"detailed"},
-        {"label":"Merchandiseindtægter","category":"sponsorship_commercial","amount":57.327,"disclosure":"detailed"},
-        {"label":"Food & Beverage, konferencecenter m.v.","category":"stadium_other","amount":30.869,"disclosure":"detailed"},
-        {"label":"Ejendomsudlejning","category":"other_income","amount":32.19,"disclosure":"detailed"},
-        {"label":"Øvrige indtægter","category":"other_income","amount":22.199,"disclosure":"detailed"},
+        {"label":"Samarbejdspartnere","category":"commercial","subcategory":"sponsorship_commercial","amount":127.594,"disclosure":"detailed"},
+        {"label":"Merchandiseindtægter","category":"commercial","subcategory":"sponsorship_commercial","amount":57.327,"disclosure":"detailed"},
+        {"label":"Food & Beverage, konferencecenter m.v.","category":"venue","subcategory":"stadium_other","amount":30.869,"disclosure":"detailed"},
+        {"label":"Ejendomsudlejning","category":"other_revenue","subcategory":"other_income","amount":32.19,"disclosure":"detailed"},
+        {"label":"Øvrige indtægter","category":"other_revenue","subcategory":"other_income","amount":22.199,"disclosure":"detailed"},
         {
           "label": "Andre driftsindtægter (fortjeneste ved afhændelse af kontraktrettigheder — venta de Orri Oskarsson y Elias Jelert)",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 287.954,
           "disclosure": "detailed"
         }
       ],
       "expenses": [
-        {"label":"Vareforbrug","category":"other_expenses","amount":-106.193,"disclosure":"detailed"},
+        {"label":"Vareforbrug","category":"other_operating_expenses","subcategory":"other_expenses","amount":-106.193,"disclosure":"detailed"},
         {
           "label": "Andre eksterne omkostninger (distribution, salg, reklame, administration, lokaler, tab på debitorer, leasing)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -181.906,
           "disclosure": "detailed"
         },
-        {"label":"Personaleomkostninger","category":"wages_squad","amount":-293.556,"disclosure":"detailed"},
-        {"label":"Amortiseringer af kontraktrettigheder","category":"player_amortisation","amount":-113.241,"disclosure":"detailed"},
-        {"label":"Nedskrivninger af kontraktrettigheder","category":"player_impairment","amount":-7.128,"disclosure":"detailed"},
+        {"label":"Personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-293.556,"disclosure":"detailed"},
+        {
+          "label": "Amortiseringer af kontraktrettigheder",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -113.241,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Nedskrivninger af kontraktrettigheder",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -7.128,
+          "disclosure": "detailed"
+        },
         {
           "label": "Afskrivning på materielle anlægsaktiver (bygninger, indretning af lejede lokaler, produktionsanlæg og maskiner)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -16.873,
           "disclosure": "detailed",
           "items": [["Afskrivning på bygninger",4.683],["Afskrivning på indretning af lejede lokaler",2.409],["Afskrivning på produktionsanlæg og maskiner",9.781]]

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,21 +32,41 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Omzet","category":"lump_football_operations","amount":20.890688,"disclosure":"aggregated"},
+        {"label":"Omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":20.890688,"disclosure":"aggregated"},
         {
           "label": "Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 4.059643,
           "disclosure": "detailed"
         },
-        {"label":"Andere bedrijfsopbrengsten — resto sin desglosar","category":"other_income","amount":8.5361,"disclosure":"aggregated"}
+        {
+          "label": "Andere bedrijfsopbrengsten — resto sin desglosar",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 8.5361,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Handelsgoederen, grond- en hulpstoffen","category":"other_expenses","amount":-2.728544,"disclosure":"aggregated"},
-        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-10.72811,"disclosure":"aggregated"},
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.728544,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Diensten en diverse goederen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -10.72811,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Bezoldigingen, sociale lasten en pensioenen",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -17.73975,
           "disclosure": "detailed",
           "items": [
@@ -57,12 +78,14 @@
         {
           "label": "Afschrijvingen op immateriële vaste activa (concessies, octrooien, licenties, knowhow, merken)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -1.112255,
           "disclosure": "detailed"
         },
         {
           "label": "Afschrijvingen op materiële vaste activa",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -1.527367,
           "disclosure": "detailed",
           "items": [
@@ -72,8 +95,20 @@
             ["Overige materiële vaste activa",1.078702]
           ]
         },
-        {"label":"Andere bedrijfskosten — Bedrijfsbelastingen en -taksen","category":"admin_general_expense","amount":-0.499055,"disclosure":"detailed"},
-        {"label":"Andere bedrijfskosten — Andere","category":"other_expenses","amount":-0.105779,"disclosure":"detailed"}
+        {
+          "label": "Andere bedrijfskosten — Bedrijfsbelastingen en -taksen",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.499055,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Andere bedrijfskosten — Andere",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.105779,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.440798,"tax":-0.358728,"gross_debt":27.9558,"cash":3.134613},
       "official_totals": {"revenue":33.486431,"expenses":34.440862,"net_result":-2.753957}

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -44,82 +45,195 @@
       "management_id": "landim",
       "fx": {"ref":"BRL@2024-12-31"},
       "revenue": [
-        {"label":"Direitos de transmissão fixos","category":"broadcasting","amount":141.948,"disclosure":"detailed"},
-        {"label":"Participação, exposição e performance","category":"competition_bonus","amount":132.374,"disclosure":"detailed"},
-        {"label":"Mídias digitais e serviços \"on demand\"","category":"broadcasting","amount":179.221,"disclosure":"detailed"},
-        {"label":"Licenciamento e royalties","category":"sponsorship_commercial","amount":97.72,"disclosure":"detailed"},
-        {"label":"Patrocínio e publicidade","category":"sponsorship_commercial","amount":320.022,"disclosure":"detailed"},
-        {"label":"Bilheteria","category":"matchday_competition","amount":118.062,"disclosure":"detailed"},
-        {"label":"Estádio (operação em dia de jogo)","category":"matchday_competition","amount":47.711,"disclosure":"detailed"},
-        {"label":"Sócio Torcedor","category":"member_dues","amount":77.766,"disclosure":"detailed"},
-        {"label":"Quadro social","category":"member_dues","amount":25.298,"disclosure":"detailed"},
-        {"label":"Escolas esportivas","category":"other_sports","amount":7.75,"disclosure":"detailed"},
-        {"label":"Visitação (Museu e Tour Maracanã)","category":"stadium_other","amount":7.709,"disclosure":"detailed"},
-        {"label":"Aluguel do Maracanã","category":"stadium_other","amount":7.25,"disclosure":"detailed"},
-        {"label":"Outros (receita operacional bruta)","category":"other_income","amount":47.498,"disclosure":"detailed"},
-        {"label":"Impostos e contribuições + Direito de arena (deduções sobre a receita)","category":"other_income","amount":-68.178,"disclosure":"detailed"},
-        {"label":"Vendas de direitos federativos","category":"player_sales","amount":102.085,"disclosure":"detailed"},
-        {"label":"Empréstimos de atletas","category":"player_sales","amount":1.902,"disclosure":"detailed"},
-        {"label":"Mecanismo de solidariedade (recebido)","category":"youth_football","amount":3.397,"disclosure":"detailed"}
+        {"label":"Direitos de transmissão fixos","category":"media_rights","subcategory":"broadcasting","amount":141.948,"disclosure":"detailed"},
+        {"label":"Participação, exposição e performance","category":"prize_money","subcategory":"competition_bonus","amount":132.374,"disclosure":"detailed"},
+        {"label":"Mídias digitais e serviços \"on demand\"","category":"media_rights","subcategory":"broadcasting","amount":179.221,"disclosure":"detailed"},
+        {"label":"Licenciamento e royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":97.72,"disclosure":"detailed"},
+        {"label":"Patrocínio e publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":320.022,"disclosure":"detailed"},
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":118.062,"disclosure":"detailed"},
+        {"label":"Estádio (operação em dia de jogo)","category":"matchday","subcategory":"matchday_competition","amount":47.711,"disclosure":"detailed"},
+        {"label":"Sócio Torcedor","category":"membership","subcategory":"member_dues","amount":77.766,"disclosure":"detailed"},
+        {"label":"Quadro social","category":"membership","subcategory":"member_dues","amount":25.298,"disclosure":"detailed"},
+        {"label":"Escolas esportivas","category":"other_sporting_sections","subcategory":"other_sports","amount":7.75,"disclosure":"detailed"},
+        {"label":"Visitação (Museu e Tour Maracanã)","category":"venue","subcategory":"stadium_other","amount":7.709,"disclosure":"detailed"},
+        {"label":"Aluguel do Maracanã","category":"venue","subcategory":"stadium_other","amount":7.25,"disclosure":"detailed"},
+        {"label":"Outros (receita operacional bruta)","category":"other_revenue","subcategory":"other_income","amount":47.498,"disclosure":"detailed"},
+        {
+          "label": "Impostos e contribuições + Direito de arena (deduções sobre a receita)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -68.178,
+          "disclosure": "detailed"
+        },
+        {"label":"Vendas de direitos federativos","category":"player_transfers","subcategory":"player_sales","amount":102.085,"disclosure":"detailed"},
+        {"label":"Empréstimos de atletas","category":"player_transfers","subcategory":"player_sales","amount":1.902,"disclosure":"detailed"},
+        {
+          "label": "Mecanismo de solidariedade (recebido)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 3.397,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Salários, encargos e benefícios a funcionários (custo das atividades)","category":"wages_squad","amount":-386.02,"disclosure":"detailed"},
-        {"label":"Amortizações de direitos sobre atletas","category":"player_amortisation","amount":-213.309,"disclosure":"detailed"},
-        {"label":"Gastos com jogos e competições","category":"match_organisation_expense","amount":-124.586,"disclosure":"detailed"},
-        {"label":"Direito de imagem","category":"wages_squad","amount":-138.02,"disclosure":"detailed"},
-        {"label":"Materiais (custo das atividades)","category":"admin_general_expense","amount":-28.396,"disclosure":"detailed"},
-        {"label":"Manutenção (custo das atividades)","category":"admin_general_expense","amount":-22.422,"disclosure":"detailed"},
-        {"label":"Luz, telefone e gás","category":"admin_general_expense","amount":-11.689,"disclosure":"detailed"},
-        {"label":"Serviços profissionais (custo das atividades)","category":"admin_general_expense","amount":-13.547,"disclosure":"detailed"},
+        {
+          "label": "Salários, encargos e benefícios a funcionários (custo das atividades)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -386.02,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizações de direitos sobre atletas",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -213.309,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos com jogos e competições",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -124.586,
+          "disclosure": "detailed"
+        },
+        {"label":"Direito de imagem","category":"first_team_staff","subcategory":"wages_squad","amount":-138.02,"disclosure":"detailed"},
+        {"label":"Materiais (custo das atividades)","category":"admin_general","subcategory":"admin_general_expense","amount":-28.396,"disclosure":"detailed"},
+        {
+          "label": "Manutenção (custo das atividades)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -22.422,
+          "disclosure": "detailed"
+        },
+        {"label":"Luz, telefone e gás","category":"admin_general","subcategory":"admin_general_expense","amount":-11.689,"disclosure":"detailed"},
+        {
+          "label": "Serviços profissionais (custo das atividades)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -13.547,
+          "disclosure": "detailed"
+        },
         {
           "label": "Depreciação de imobilizado/amortização de outros ativos (custo das atividades)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -9.731,
           "disclosure": "detailed"
         },
-        {"label":"Água e esgoto","category":"admin_general_expense","amount":-7.106,"disclosure":"detailed"},
-        {"label":"Assessorias e consultorias (custo das atividades)","category":"admin_general_expense","amount":-6.151,"disclosure":"detailed"},
-        {"label":"Frete e transportes (custo das atividades)","category":"admin_general_expense","amount":-0.188,"disclosure":"detailed"},
-        {"label":"Outros (custo das atividades)","category":"other_expenses","amount":-21.281,"disclosure":"detailed"},
+        {"label":"Água e esgoto","category":"admin_general","subcategory":"admin_general_expense","amount":-7.106,"disclosure":"detailed"},
+        {
+          "label": "Assessorias e consultorias (custo das atividades)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.151,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Frete e transportes (custo das atividades)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.188,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros (custo das atividades)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -21.281,
+          "disclosure": "detailed"
+        },
         {
           "label": "Salários, encargos e benefícios a funcionários (despesas administrativas)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -59.54,
           "disclosure": "detailed"
         },
-        {"label":"Acordos diversos","category":"admin_general_expense","amount":-7.814,"disclosure":"detailed"},
-        {"label":"Assessorias e consultorias (despesas administrativas)","category":"admin_general_expense","amount":-19.024,"disclosure":"detailed"},
-        {"label":"Honorários de advogados","category":"admin_general_expense","amount":-4.922,"disclosure":"detailed"},
-        {"label":"Provisão para contingências (despesas administrativas)","category":"admin_general_expense","amount":-7.423,"disclosure":"detailed"},
-        {"label":"Serviços de terceiros","category":"admin_general_expense","amount":-4.888,"disclosure":"detailed"},
-        {"label":"Outros gastos (despesas administrativas)","category":"other_expenses","amount":-9.51,"disclosure":"detailed"},
-        {"label":"Anúncios e publicações","category":"admin_general_expense","amount":-16.008,"disclosure":"detailed"},
-        {"label":"Fretes e transportes (despesas comerciais)","category":"admin_general_expense","amount":-0.424,"disclosure":"detailed"},
-        {"label":"Manutenção (despesas comerciais)","category":"admin_general_expense","amount":-9.929,"disclosure":"detailed"},
-        {"label":"Materiais (despesas comerciais)","category":"admin_general_expense","amount":-5.608,"disclosure":"detailed"},
-        {"label":"Outros gastos (despesas comerciais)","category":"other_expenses","amount":-2.866,"disclosure":"detailed"},
-        {"label":"Serviços profissionais (despesas comerciais)","category":"admin_general_expense","amount":-2.924,"disclosure":"detailed"},
+        {"label":"Acordos diversos","category":"admin_general","subcategory":"admin_general_expense","amount":-7.814,"disclosure":"detailed"},
+        {
+          "label": "Assessorias e consultorias (despesas administrativas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -19.024,
+          "disclosure": "detailed"
+        },
+        {"label":"Honorários de advogados","category":"admin_general","subcategory":"admin_general_expense","amount":-4.922,"disclosure":"detailed"},
+        {
+          "label": "Provisão para contingências (despesas administrativas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -7.423,
+          "disclosure": "detailed"
+        },
+        {"label":"Serviços de terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-4.888,"disclosure":"detailed"},
+        {
+          "label": "Outros gastos (despesas administrativas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -9.51,
+          "disclosure": "detailed"
+        },
+        {"label":"Anúncios e publicações","category":"admin_general","subcategory":"admin_general_expense","amount":-16.008,"disclosure":"detailed"},
+        {
+          "label": "Fretes e transportes (despesas comerciais)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.424,
+          "disclosure": "detailed"
+        },
+        {"label":"Manutenção (despesas comerciais)","category":"admin_general","subcategory":"admin_general_expense","amount":-9.929,"disclosure":"detailed"},
+        {"label":"Materiais (despesas comerciais)","category":"admin_general","subcategory":"admin_general_expense","amount":-5.608,"disclosure":"detailed"},
+        {
+          "label": "Outros gastos (despesas comerciais)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.866,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços profissionais (despesas comerciais)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.924,
+          "disclosure": "detailed"
+        },
         {
           "label": "Depreciação e amortização de outros ativos (outras despesas operacionais)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -1.466,
           "disclosure": "detailed"
         },
         {
           "label": "Constituição de provisão para perdas esperadas de créditos de liquidação duvidosa",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.621,
           "disclosure": "detailed"
         },
         {
           "label": "Baixa do saldo de custo de aquisição de direitos federativos de atletas",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -29.05,
           "disclosure": "detailed"
         },
-        {"label":"Gastos com negociação de atletas","category":"other_expenses","amount":-31.101,"disclosure":"detailed"},
-        {"label":"Outros gastos (outras despesas operacionais)","category":"other_expenses","amount":-5.757,"disclosure":"detailed"},
-        {"label":"Resultado de equivalência patrimonial","category":"exceptional_items","amount":-3.465,"disclosure":"detailed"}
+        {
+          "label": "Gastos com negociação de atletas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -31.101,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros gastos (outras despesas operacionais)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -5.757,
+          "disclosure": "detailed"
+        },
+        {"label":"Resultado de equivalência patrimonial","category":"exceptional","subcategory":"exceptional_items","amount":-3.465,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-45.483,"tax":0,"gross_debt":912.581,"cash":70.557},
       "official_totals": {"revenue":1249.535,"expenses":1201.321,"net_result":-0.734}
@@ -133,74 +247,186 @@
       "management_id": "bap",
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"Direitos de transmissão fixos","category":"broadcasting","amount":203.368,"disclosure":"detailed"},
-        {"label":"Participação, exposição e performance","category":"competition_bonus","amount":378.797,"disclosure":"detailed"},
-        {"label":"Mídias digitais e serviços on demand","category":"broadcasting","amount":29.388,"disclosure":"detailed"},
-        {"label":"Licenciamento e royalties","category":"sponsorship_commercial","amount":131.044,"disclosure":"detailed"},
-        {"label":"Patrocínio e publicidade","category":"sponsorship_commercial","amount":401.401,"disclosure":"detailed"},
-        {"label":"Bilheteria","category":"matchday_competition","amount":142.49,"disclosure":"detailed"},
-        {"label":"Estádio (operação em dia de jogo)","category":"matchday_competition","amount":11.398,"disclosure":"detailed"},
-        {"label":"Sócio Torcedor","category":"member_dues","amount":87.699,"disclosure":"detailed"},
-        {"label":"Quadro social","category":"member_dues","amount":35.183,"disclosure":"detailed"},
-        {"label":"Escolas esportivas","category":"other_sports","amount":9.02,"disclosure":"detailed"},
-        {"label":"Outros (receita operacional bruta)","category":"other_income","amount":24.511,"disclosure":"detailed"},
-        {"label":"Impostos e contribuições + Direito de arena (deduções sobre a receita)","category":"other_income","amount":-60.544,"disclosure":"detailed"},
-        {"label":"Vendas de direitos federativos","category":"player_sales","amount":503.811,"disclosure":"detailed"},
-        {"label":"Empréstimos de atletas","category":"player_sales","amount":1.44,"disclosure":"detailed"},
-        {"label":"Mecanismo de solidariedade (recebido)","category":"youth_football","amount":13.49,"disclosure":"detailed"}
+        {"label":"Direitos de transmissão fixos","category":"media_rights","subcategory":"broadcasting","amount":203.368,"disclosure":"detailed"},
+        {"label":"Participação, exposição e performance","category":"prize_money","subcategory":"competition_bonus","amount":378.797,"disclosure":"detailed"},
+        {"label":"Mídias digitais e serviços on demand","category":"media_rights","subcategory":"broadcasting","amount":29.388,"disclosure":"detailed"},
+        {"label":"Licenciamento e royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":131.044,"disclosure":"detailed"},
+        {"label":"Patrocínio e publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":401.401,"disclosure":"detailed"},
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":142.49,"disclosure":"detailed"},
+        {"label":"Estádio (operação em dia de jogo)","category":"matchday","subcategory":"matchday_competition","amount":11.398,"disclosure":"detailed"},
+        {"label":"Sócio Torcedor","category":"membership","subcategory":"member_dues","amount":87.699,"disclosure":"detailed"},
+        {"label":"Quadro social","category":"membership","subcategory":"member_dues","amount":35.183,"disclosure":"detailed"},
+        {"label":"Escolas esportivas","category":"other_sporting_sections","subcategory":"other_sports","amount":9.02,"disclosure":"detailed"},
+        {"label":"Outros (receita operacional bruta)","category":"other_revenue","subcategory":"other_income","amount":24.511,"disclosure":"detailed"},
+        {
+          "label": "Impostos e contribuições + Direito de arena (deduções sobre a receita)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -60.544,
+          "disclosure": "detailed"
+        },
+        {"label":"Vendas de direitos federativos","category":"player_transfers","subcategory":"player_sales","amount":503.811,"disclosure":"detailed"},
+        {"label":"Empréstimos de atletas","category":"player_transfers","subcategory":"player_sales","amount":1.44,"disclosure":"detailed"},
+        {
+          "label": "Mecanismo de solidariedade (recebido)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 13.49,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Salários, encargos e benefícios a funcionários (custo das atividades)","category":"wages_squad","amount":-525.089,"disclosure":"detailed"},
-        {"label":"Amortizações de direitos sobre atletas","category":"player_amortisation","amount":-243.716,"disclosure":"detailed"},
-        {"label":"Gastos com jogos e competições","category":"match_organisation_expense","amount":-131.954,"disclosure":"detailed"},
-        {"label":"Direito de imagem","category":"wages_squad","amount":-171.094,"disclosure":"detailed"},
-        {"label":"Materiais (custo das atividades)","category":"admin_general_expense","amount":-25.814,"disclosure":"detailed"},
-        {"label":"Manutenção (custo das atividades)","category":"admin_general_expense","amount":-12.07,"disclosure":"detailed"},
-        {"label":"Luz, telefone e gás","category":"admin_general_expense","amount":-5.854,"disclosure":"detailed"},
-        {"label":"Serviços profissionais (custo das atividades)","category":"admin_general_expense","amount":-10.414,"disclosure":"detailed"},
+        {
+          "label": "Salários, encargos e benefícios a funcionários (custo das atividades)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -525.089,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizações de direitos sobre atletas",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -243.716,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos com jogos e competições",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -131.954,
+          "disclosure": "detailed"
+        },
+        {"label":"Direito de imagem","category":"first_team_staff","subcategory":"wages_squad","amount":-171.094,"disclosure":"detailed"},
+        {"label":"Materiais (custo das atividades)","category":"admin_general","subcategory":"admin_general_expense","amount":-25.814,"disclosure":"detailed"},
+        {"label":"Manutenção (custo das atividades)","category":"admin_general","subcategory":"admin_general_expense","amount":-12.07,"disclosure":"detailed"},
+        {"label":"Luz, telefone e gás","category":"admin_general","subcategory":"admin_general_expense","amount":-5.854,"disclosure":"detailed"},
+        {
+          "label": "Serviços profissionais (custo das atividades)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -10.414,
+          "disclosure": "detailed"
+        },
         {
           "label": "Depreciação de imobilizado/amortização de outros ativos (custo das atividades)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -10.195,
           "disclosure": "detailed"
         },
-        {"label":"Água e esgoto","category":"admin_general_expense","amount":-4.68,"disclosure":"detailed"},
-        {"label":"Assessorias e consultorias (custo das atividades)","category":"admin_general_expense","amount":-6.716,"disclosure":"detailed"},
-        {"label":"Frete e transportes (custo das atividades)","category":"admin_general_expense","amount":-0.353,"disclosure":"detailed"},
-        {"label":"Outros (custo das atividades)","category":"other_expenses","amount":-23.748,"disclosure":"detailed"},
+        {"label":"Água e esgoto","category":"admin_general","subcategory":"admin_general_expense","amount":-4.68,"disclosure":"detailed"},
+        {
+          "label": "Assessorias e consultorias (custo das atividades)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.716,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Frete e transportes (custo das atividades)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.353,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros (custo das atividades)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -23.748,
+          "disclosure": "detailed"
+        },
         {
           "label": "Salários, encargos e benefícios a funcionários (despesas administrativas)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -76.691,
           "disclosure": "detailed"
         },
-        {"label":"Acordos diversos e provisão para contingências","category":"admin_general_expense","amount":-10.875,"disclosure":"detailed"},
-        {"label":"Assessorias e consultorias (despesas administrativas)","category":"admin_general_expense","amount":-18.445,"disclosure":"detailed"},
-        {"label":"Honorários de advogados","category":"admin_general_expense","amount":-3.888,"disclosure":"detailed"},
-        {"label":"Serviços de terceiros","category":"admin_general_expense","amount":-3.545,"disclosure":"detailed"},
-        {"label":"Outras despesas (despesas administrativas)","category":"other_expenses","amount":-8.048,"disclosure":"detailed"},
-        {"label":"Anúncios e publicações","category":"admin_general_expense","amount":-14.931,"disclosure":"detailed"},
-        {"label":"Manutenção (despesas comerciais)","category":"admin_general_expense","amount":-10.116,"disclosure":"detailed"},
-        {"label":"Serviços profissionais (despesas comerciais)","category":"admin_general_expense","amount":-6.023,"disclosure":"detailed"},
-        {"label":"Materiais (despesas comerciais)","category":"admin_general_expense","amount":-4.382,"disclosure":"detailed"},
-        {"label":"Fretes e transportes (despesas comerciais)","category":"admin_general_expense","amount":-0.471,"disclosure":"detailed"},
-        {"label":"Outras despesas (despesas comerciais)","category":"other_expenses","amount":-1.84,"disclosure":"detailed"},
+        {
+          "label": "Acordos diversos e provisão para contingências",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -10.875,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Assessorias e consultorias (despesas administrativas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -18.445,
+          "disclosure": "detailed"
+        },
+        {"label":"Honorários de advogados","category":"admin_general","subcategory":"admin_general_expense","amount":-3.888,"disclosure":"detailed"},
+        {"label":"Serviços de terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-3.545,"disclosure":"detailed"},
+        {
+          "label": "Outras despesas (despesas administrativas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -8.048,
+          "disclosure": "detailed"
+        },
+        {"label":"Anúncios e publicações","category":"admin_general","subcategory":"admin_general_expense","amount":-14.931,"disclosure":"detailed"},
+        {"label":"Manutenção (despesas comerciais)","category":"admin_general","subcategory":"admin_general_expense","amount":-10.116,"disclosure":"detailed"},
+        {
+          "label": "Serviços profissionais (despesas comerciais)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.023,
+          "disclosure": "detailed"
+        },
+        {"label":"Materiais (despesas comerciais)","category":"admin_general","subcategory":"admin_general_expense","amount":-4.382,"disclosure":"detailed"},
+        {
+          "label": "Fretes e transportes (despesas comerciais)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.471,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras despesas (despesas comerciais)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.84,
+          "disclosure": "detailed"
+        },
         {
           "label": "Depreciação e amortização de outros ativos (outras despesas operacionais)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -1.913,
           "disclosure": "detailed"
         },
         {
           "label": "Constituição de provisão de perdas de crédito esperadas e realização efetiva de perdas",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -14.647,
           "disclosure": "detailed"
         },
-        {"label":"Baixa dos custos com aquisição de direitos federativos","category":"player_amortisation","amount":-184.14,"disclosure":"detailed"},
-        {"label":"Gastos com negociação de atletas","category":"other_expenses","amount":-67.241,"disclosure":"detailed"},
-        {"label":"Outras despesas (outras despesas operacionais)","category":"other_expenses","amount":-14.082,"disclosure":"detailed"},
-        {"label":"Resultado de equivalência patrimonial","category":"exceptional_items","amount":13.939,"disclosure":"detailed"}
+        {
+          "label": "Baixa dos custos com aquisição de direitos federativos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -184.14,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos com negociação de atletas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -67.241,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras despesas (outras despesas operacionais)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -14.082,
+          "disclosure": "detailed"
+        },
+        {"label":"Resultado de equivalência patrimonial","category":"exceptional","subcategory":"exceptional_items","amount":13.939,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":22.205,"tax":0,"gross_debt":1038.223,"cash":143.941},
       "official_totals": {"revenue":1912.496,"expenses":1612.975,"net_result":335.665}

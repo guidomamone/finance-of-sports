@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "MX",
     "reporting_currency": "MXN",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -36,7 +37,8 @@
       "revenue": [
         {
           "label": "Ingresos del Segmento de Fútbol (incluye Estadio Banorte; Ollamani no desglosa Club América por separado, ver comentario de cabecera de este archivo)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 2795.643,
           "disclosure": "detailed"
         }
@@ -44,7 +46,8 @@
       "expenses": [
         {
           "label": "Costos y gastos del Segmento de Fútbol (cifra IMPLÍCITA: Ingresos del segmento menos Utilidad operativa del segmento antes de D&A informada por Ollamani; el documento no desglosa costos por rubro a nivel segmento)",
-          "category": "lump_football_operations_expense",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
           "amount": -2751.732,
           "disclosure": "detailed"
         }

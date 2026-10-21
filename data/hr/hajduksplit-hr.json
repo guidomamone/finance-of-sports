@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "HR",
     "reporting_currency": "EUR",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -41,15 +42,23 @@
       "revenue": [
         {
           "label": "Prihodi od ulaznica — Nacionalna natjecanja + UEFA klupska natjecanja",
-          "category": "matchday_competition",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
           "amount": 3.485465,
           "disclosure": "detailed",
           "items": [["Nacionalna natjecanja",2.71737],["UEFA klupska natjecanja",0.768095]]
         },
-        {"label":"Prihodi od ulaznica - Godišnje ulaznice","category":"season_tickets","amount":2.951759,"disclosure":"detailed"},
+        {
+          "label": "Prihodi od ulaznica - Godišnje ulaznice",
+          "category": "season_tickets",
+          "subcategory": "season_tickets",
+          "amount": 2.951759,
+          "disclosure": "detailed"
+        },
         {
           "label": "Prihod od sponzorstva i oglašavanja",
-          "category": "sponsorship_commercial",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
           "amount": 4.176713,
           "disclosure": "detailed",
           "items": [
@@ -59,10 +68,11 @@
             ["Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",2.244816]
           ]
         },
-        {"label":"Prihodi od prava emitiranja","category":"broadcasting","amount":1.0906,"disclosure":"detailed"},
+        {"label":"Prihodi od prava emitiranja","category":"media_rights","subcategory":"broadcasting","amount":1.0906,"disclosure":"detailed"},
         {
           "label": "Komercijalni prihodi — Nacionalna natjecanja + Prodaja proizvoda + Ostali nerazvrstani",
-          "category": "sponsorship_commercial",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
           "amount": 9.180247,
           "disclosure": "detailed",
           "items": [
@@ -73,14 +83,16 @@
         },
         {
           "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
-          "category": "stadium_other",
+          "category": "venue",
+          "subcategory": "stadium_other",
           "amount": 0.092895,
           "disclosure": "detailed"
         },
-        {"label":"Uefine nagrade i solidarne uplate","category":"competition_bonus","amount":1.734229,"disclosure":"detailed"},
+        {"label":"Uefine nagrade i solidarne uplate","category":"prize_money","subcategory":"competition_bonus","amount":1.734229,"disclosure":"detailed"},
         {
           "label": "Ostali poslovni prihodi",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 2.703091,
           "disclosure": "detailed",
           "items": [
@@ -93,7 +105,8 @@
         },
         {
           "label": "Prihod od raspolaganja registracijama igrača (uključujući prihod od ustupanja)",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 1.990492,
           "disclosure": "detailed"
         }
@@ -101,42 +114,71 @@
       "expenses": [
         {
           "label": "Troškovi prodaje robe/proizvoda - izravni + ostali nerazvrstani",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -5.490518,
           "disclosure": "detailed",
           "items": [["Troškovi prodaje robe/proizvoda - izravni",-4.299304],["Troškovi prodaje robe/proizvoda - ostali nerazvrstani",-1.191214]]
         },
         {
           "label": "Troškovi primanja igrača + Troškovi primanja stručnog stožera",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -15.41311,
           "disclosure": "detailed",
           "items": [["Troškovi primanja igrača",-14.043603],["Troškovi primanja stručnog stožera",-1.369507]]
         },
-        {"label":"Trošak primanja ostalih zaposlenika","category":"admin_general_expense","amount":-4.791301,"disclosure":"detailed"},
-        {"label":"Amortizacija dugotrajne materijalne imovine","category":"depreciation","amount":-0.386805,"disclosure":"detailed"},
+        {
+          "label": "Trošak primanja ostalih zaposlenika",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.791301,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizacija dugotrajne materijalne imovine",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.386805,
+          "disclosure": "detailed"
+        },
         {
           "label": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -1.16521,
           "disclosure": "detailed"
         },
-        {"label":"Troškovi utakmica","category":"match_organisation_expense","amount":-2.329584,"disclosure":"detailed"},
+        {"label":"Troškovi utakmica","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.329584,"disclosure":"detailed"},
         {
           "label": "Troškovi sponzorstva i oglašavanja + Troškovi komercijalnih aktivnosti + Troškovi imovine i objekata",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -1.929165,
           "disclosure": "detailed",
           "items": [["Troškovi sponzorstva i oglašavanja",-0.298428],["Troškovi komercijalnih aktivnosti",-1.076187],["Troškovi imovine i objekata",-0.55455]]
         },
-        {"label":"Ostali nerazvrstani poslovni rashodi","category":"other_expenses","amount":-3.509629,"disclosure":"detailed"},
+        {
+          "label": "Ostali nerazvrstani poslovni rashodi",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -3.509629,
+          "disclosure": "detailed"
+        },
         {
           "label": "Troškovi stjecanja registracija igrača (uključujući troškove ustupanja)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -1.802429,
           "disclosure": "detailed"
         },
-        {"label":"Nekapitalizirani troškovi za naknade agentima/posrednicima","category":"other_expenses","amount":-0.59233,"disclosure":"detailed"}
+        {
+          "label": "Nekapitalizirani troškovi za naknade agentima/posrednicima",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.59233,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"asset_sales":0,"net_interest":-0.732257,"tax":0,"gross_debt":5.124513,"cash":1.414039},
       "official_totals": {"revenue":27.405491,"expenses":37.410081,"net_result":-10.736847}
@@ -150,124 +192,327 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-12-31"},
       "revenue": [
-        {"label":"Prihodi od ulaznica - Nacionalna natjecanja","category":"matchday_competition","amount":3.460389,"disclosure":"aggregated"},
-        {"label":"Prihodi od ulaznica - UEFA klupska natjecanja","category":"matchday_competition","amount":0.69901,"disclosure":"aggregated"},
-        {"label":"Prihodi od ulaznica - Godišnje ulaznice","category":"season_tickets","amount":3.544162,"disclosure":"aggregated"},
+        {
+          "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 3.460389,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Prihodi od ulaznica - UEFA klupska natjecanja",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.69901,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Prihodi od ulaznica - Godišnje ulaznice",
+          "category": "season_tickets",
+          "subcategory": "season_tickets",
+          "amount": 3.544162,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)",
-          "category": "sponsorship_commercial",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
           "amount": 1.416692,
           "disclosure": "aggregated"
         },
         {
           "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi",
-          "category": "sponsorship_commercial",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
           "amount": 0.680891,
           "disclosure": "aggregated"
         },
         {
           "label": "Prihod od sponzorstva i oglašavanja - Reklamiranje na panoima oko terena za igru",
-          "category": "sponsorship_commercial",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
           "amount": 0.896044,
           "disclosure": "aggregated"
         },
-        {"label":"Ostali nerazvrstani prihodi od sponzorstva i oglašavanja","category":"sponsorship_commercial","amount":2.086672,"disclosure":"aggregated"},
-        {"label":"Prava emitiranja - Nacionalna natjecanja","category":"broadcasting","amount":1.0596,"disclosure":"aggregated"},
-        {"label":"Komercijalni prihodi - Nacionalna natjecanja","category":"sponsorship_commercial","amount":0.380301,"disclosure":"aggregated"},
-        {"label":"Komercijalni prihodi - Prodaja proizvoda","category":"sponsorship_commercial","amount":8.456689,"disclosure":"aggregated"},
+        {
+          "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 2.086672,
+          "disclosure": "aggregated"
+        },
+        {"label":"Prava emitiranja - Nacionalna natjecanja","category":"media_rights","subcategory":"broadcasting","amount":1.0596,"disclosure":"aggregated"},
+        {
+          "label": "Komercijalni prihodi - Nacionalna natjecanja",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.380301,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Komercijalni prihodi - Prodaja proizvoda",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 8.456689,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
-          "category": "stadium_other",
+          "category": "venue",
+          "subcategory": "stadium_other",
           "amount": 0.09278,
           "disclosure": "aggregated"
         },
-        {"label":"Ostali nerazvrstani komercijalni prihodi","category":"sponsorship_commercial","amount":0.429555,"disclosure":"aggregated"},
+        {
+          "label": "Ostali nerazvrstani komercijalni prihodi",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.429555,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
-          "category": "competition_bonus",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
           "amount": 1.008605,
           "disclosure": "aggregated"
         },
-        {"label":"Uefina klupska natjecanja - solidarne uplate","category":"competition_bonus","amount":1.271361,"disclosure":"aggregated"},
+        {
+          "label": "Uefina klupska natjecanja - solidarne uplate",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 1.271361,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 0.182748,
           "disclosure": "aggregated"
         },
-        {"label":"Donacije nepovezanih strana","category":"other_income","amount":0.443602,"disclosure":"aggregated"},
-        {"label":"Donacije i doprinosi povezanih strana","category":"other_income","amount":6.303267,"disclosure":"aggregated"},
-        {"label":"Prihodi od refundacije","category":"other_income","amount":0.142382,"disclosure":"aggregated"},
-        {"label":"Prihod od otpisa obveza","category":"other_income","amount":0.000971,"disclosure":"aggregated"},
-        {"label":"Prihod od naplačenih vrijednosnih usklađenja","category":"other_income","amount":0.00066,"disclosure":"aggregated"},
-        {"label":"Inventurni viškovi na robi","category":"other_income","amount":0.000406,"disclosure":"aggregated"},
-        {"label":"Ostali poslovni prihodi","category":"other_income","amount":0.007291,"disclosure":"aggregated"},
+        {"label":"Donacije nepovezanih strana","category":"other_revenue","subcategory":"other_income","amount":0.443602,"disclosure":"aggregated"},
+        {"label":"Donacije i doprinosi povezanih strana","category":"other_revenue","subcategory":"other_income","amount":6.303267,"disclosure":"aggregated"},
+        {"label":"Prihodi od refundacije","category":"other_revenue","subcategory":"other_income","amount":0.142382,"disclosure":"aggregated"},
+        {"label":"Prihod od otpisa obveza","category":"other_revenue","subcategory":"other_income","amount":0.000971,"disclosure":"aggregated"},
+        {
+          "label": "Prihod od naplačenih vrijednosnih usklađenja",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.00066,
+          "disclosure": "aggregated"
+        },
+        {"label":"Inventurni viškovi na robi","category":"other_revenue","subcategory":"other_income","amount":0.000406,"disclosure":"aggregated"},
+        {"label":"Ostali poslovni prihodi","category":"other_revenue","subcategory":"other_income","amount":0.007291,"disclosure":"aggregated"},
         {
           "label": "Prihod od raspolaganja registracijama igrača (uključujući prihode od ustupanja, solidarnih doprinosa i naknada za treniranje)",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 17.306868,
           "disclosure": "aggregated"
         },
-        {"label":"Dobit /(gubitak) od raspolaganja dugotrajnom imovinom","category":"other_income","amount":0.002825,"disclosure":"aggregated"},
-        {"label":"Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom","category":"other_income","amount":0.009492,"disclosure":"aggregated"}
+        {
+          "label": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.002825,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.009492,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Troškovi prodaje robe/proizvoda - izravni","category":"other_expenses","amount":-3.866286,"disclosure":"aggregated"},
-        {"label":"Troškovi prodaje robe/proizvoda - ostali nerazvrstani","category":"other_expenses","amount":-1.843197,"disclosure":"aggregated"},
-        {"label":"Plaće igrača","category":"wages_squad","amount":-11.029615,"disclosure":"aggregated"},
-        {"label":"Ostali nerazvrstani troškovi primanja igrača","category":"wages_squad","amount":-1.924043,"disclosure":"aggregated"},
-        {"label":"Plaće stručnog stožera","category":"wages_squad","amount":-1.759902,"disclosure":"aggregated"},
-        {"label":"Ostali nerazvrstani troškovi primanja stručnog stožera","category":"wages_squad","amount":-1.022599,"disclosure":"aggregated"},
-        {"label":"Plaće ostalih zaposlenika","category":"admin_general_expense","amount":-3.139304,"disclosure":"aggregated"},
-        {"label":"Porezi i doprinosi - ostali zaposlenici","category":"admin_general_expense","amount":-1.20381,"disclosure":"aggregated"},
+        {
+          "label": "Troškovi prodaje robe/proizvoda - izravni",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -3.866286,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Troškovi prodaje robe/proizvoda - ostali nerazvrstani",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.843197,
+          "disclosure": "aggregated"
+        },
+        {"label":"Plaće igrača","category":"first_team_staff","subcategory":"wages_squad","amount":-11.029615,"disclosure":"aggregated"},
+        {
+          "label": "Ostali nerazvrstani troškovi primanja igrača",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -1.924043,
+          "disclosure": "aggregated"
+        },
+        {"label":"Plaće stručnog stožera","category":"first_team_staff","subcategory":"wages_squad","amount":-1.759902,"disclosure":"aggregated"},
+        {
+          "label": "Ostali nerazvrstani troškovi primanja stručnog stožera",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -1.022599,
+          "disclosure": "aggregated"
+        },
+        {"label":"Plaće ostalih zaposlenika","category":"admin_general","subcategory":"admin_general_expense","amount":-3.139304,"disclosure":"aggregated"},
+        {
+          "label": "Porezi i doprinosi - ostali zaposlenici",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.20381,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.909281,
           "disclosure": "aggregated"
         },
-        {"label":"Amortizacija dugotrajne materijalne imovine","category":"depreciation","amount":-0.429267,"disclosure":"aggregated"},
+        {
+          "label": "Amortizacija dugotrajne materijalne imovine",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.429267,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -1.194598,
           "disclosure": "aggregated"
         },
-        {"label":"Troškovi utakmica","category":"match_organisation_expense","amount":-3.826371,"disclosure":"aggregated"},
-        {"label":"Troškovi sponzorstva i oglašavanja","category":"admin_general_expense","amount":-0.199801,"disclosure":"aggregated"},
-        {"label":"Troškovi komercijalnih aktivnosti","category":"admin_general_expense","amount":-1.070835,"disclosure":"aggregated"},
-        {"label":"Troškovi imovine i objekata","category":"admin_general_expense","amount":-0.542854,"disclosure":"aggregated"},
-        {"label":"Kazne, penali naknada štete","category":"other_expenses","amount":-0.936777,"disclosure":"aggregated"},
-        {"label":"Usluge konzult., stručnog nadzora i savjetovanja","category":"admin_general_expense","amount":-0.619159,"disclosure":"aggregated"},
-        {"label":"Usluge pripreme i analitike sportaša","category":"other_expenses","amount":-0.398678,"disclosure":"aggregated"},
-        {"label":"Troškovi zakupa i lizinga","category":"admin_general_expense","amount":-0.35739,"disclosure":"aggregated"},
+        {"label":"Troškovi utakmica","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.826371,"disclosure":"aggregated"},
+        {
+          "label": "Troškovi sponzorstva i oglašavanja",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.199801,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Troškovi komercijalnih aktivnosti",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.070835,
+          "disclosure": "aggregated"
+        },
+        {"label":"Troškovi imovine i objekata","category":"admin_general","subcategory":"admin_general_expense","amount":-0.542854,"disclosure":"aggregated"},
+        {
+          "label": "Kazne, penali naknada štete",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.936777,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Usluge konzult., stručnog nadzora i savjetovanja",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.619159,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Usluge pripreme i analitike sportaša",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.398678,
+          "disclosure": "aggregated"
+        },
+        {"label":"Troškovi zakupa i lizinga","category":"admin_general","subcategory":"admin_general_expense","amount":-0.35739,"disclosure":"aggregated"},
         {
           "label": "Odvjetničke i bilježničke usluge, autorski honorari, ostale intelektualne usluge",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.335955,
           "disclosure": "aggregated"
         },
-        {"label":"Bankovne usluge i troškovi platnog prometa","category":"admin_general_expense","amount":-0.271858,"disclosure":"aggregated"},
-        {"label":"Naknade za korištenje prava intelekt. vlasništva","category":"admin_general_expense","amount":-0.257652,"disclosure":"aggregated"},
-        {"label":"Troškovi reprezentacije","category":"admin_general_expense","amount":-0.240772,"disclosure":"aggregated"},
-        {"label":"Vrijednosno usklađenje od kupaca","category":"other_expenses","amount":-0.1875,"disclosure":"aggregated"},
-        {"label":"Troškovi telekomunikacijskih i prijevoznih usluga","category":"admin_general_expense","amount":-0.186709,"disclosure":"aggregated"},
-        {"label":"Premije osiguranja","category":"admin_general_expense","amount":-0.179027,"disclosure":"aggregated"},
-        {"label":"Darovanje za općekorisne namjene","category":"other_expenses","amount":-0.163918,"disclosure":"aggregated"},
-        {"label":"Članarine, naknade i slična davanja","category":"admin_general_expense","amount":-0.132596,"disclosure":"aggregated"},
-        {"label":"Troškovi službenog puta, obrazovanja i ostalo","category":"admin_general_expense","amount":-0.119825,"disclosure":"aggregated"},
-        {"label":"Troškovi promidžbe","category":"admin_general_expense","amount":-0.077597,"disclosure":"aggregated"},
-        {"label":"Troškovi komunalnih usluga","category":"admin_general_expense","amount":-0.066461,"disclosure":"aggregated"},
-        {"label":"Troškovi usklađenja","category":"other_expenses","amount":-0.051813,"disclosure":"aggregated"},
-        {"label":"Troškovi koji će se prefakturirati","category":"other_expenses","amount":-0.011045,"disclosure":"aggregated"},
-        {"label":"Rashodi i otpisi potraživanja","category":"other_expenses","amount":-0.007667,"disclosure":"aggregated"},
+        {
+          "label": "Bankovne usluge i troškovi platnog prometa",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.271858,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Naknade za korištenje prava intelekt. vlasništva",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.257652,
+          "disclosure": "aggregated"
+        },
+        {"label":"Troškovi reprezentacije","category":"admin_general","subcategory":"admin_general_expense","amount":-0.240772,"disclosure":"aggregated"},
+        {
+          "label": "Vrijednosno usklađenje od kupaca",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.1875,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Troškovi telekomunikacijskih i prijevoznih usluga",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.186709,
+          "disclosure": "aggregated"
+        },
+        {"label":"Premije osiguranja","category":"admin_general","subcategory":"admin_general_expense","amount":-0.179027,"disclosure":"aggregated"},
+        {
+          "label": "Darovanje za općekorisne namjene",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.163918,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Članarine, naknade i slična davanja",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.132596,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Troškovi službenog puta, obrazovanja i ostalo",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.119825,
+          "disclosure": "aggregated"
+        },
+        {"label":"Troškovi promidžbe","category":"admin_general","subcategory":"admin_general_expense","amount":-0.077597,"disclosure":"aggregated"},
+        {"label":"Troškovi komunalnih usluga","category":"admin_general","subcategory":"admin_general_expense","amount":-0.066461,"disclosure":"aggregated"},
+        {"label":"Troškovi usklađenja","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.051813,"disclosure":"aggregated"},
+        {
+          "label": "Troškovi koji će se prefakturirati",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.011045,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Rashodi i otpisi potraživanja",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.007667,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Troškovi stjecanja registracija igrača (uključujući troškove ustupanja, solidarne doprinose i naknade za treniranje)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -3.039704,
           "disclosure": "aggregated"
         },
-        {"label":"Nekapitalizirani troškovi za naknade agentima/posrednicima","category":"other_expenses","amount":-0.6128,"disclosure":"aggregated"}
+        {
+          "label": "Nekapitalizirani troškovi za naknade agentima/posrednicima",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.6128,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.139278,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":49.883263,"expenses":42.216666,"net_result":6.527319},

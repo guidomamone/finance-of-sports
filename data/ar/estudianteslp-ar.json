@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "AR",
     "reporting_currency": "ARS",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -56,56 +57,183 @@
       "management_id": "gorostegui",
       "fx": {"rate":125.03,"source":"document_close"},
       "revenue": [
-        {"label":"Transferencias y préstamos de jugadores","category":"player_sales","amount":956.625854,"disclosure":"detailed"},
-        {"label":"Cuotas sociales","category":"member_dues","amount":756.244108,"disclosure":"detailed"},
-        {"label":"Participación en campeonatos internacionales","category":"competition_bonus","amount":744.663742,"disclosure":"detailed"},
-        {"label":"Derechos de televisación","category":"broadcasting","amount":587.976172,"disclosure":"detailed"},
-        {"label":"Otros","category":"other_income","amount":437.584455,"disclosure":"detailed"},
-        {"label":"Cuotas colegio","category":"education","amount":249.808934,"disclosure":"detailed"},
-        {"label":"Publicidad","category":"sponsorship_commercial","amount":151.662867,"disclosure":"detailed"},
-        {"label":"Aranceles deportivos y recreativos","category":"other_sports","amount":147.605277,"disclosure":"detailed"},
-        {"label":"Recursos por subvención provincial","category":"other_income","amount":86.637846,"disclosure":"detailed"},
-        {"label":"Abonos a plateas","category":"season_tickets","amount":84.81457,"disclosure":"detailed"},
-        {"label":"Recursos fútbol infantil/amateur","category":"youth_football","amount":25.072719,"disclosure":"detailed"},
-        {"label":"Colonia de vacaciones","category":"other_sports","amount":16.333259,"disclosure":"detailed"},
-        {"label":"Subvenciones a la explotación","category":"other_income","amount":9.690346,"disclosure":"detailed"},
-        {"label":"Recursos por temporada de verano","category":"other_sports","amount":6.81975,"disclosure":"detailed"},
-        {"label":"Participación en campeonatos nacionales","category":"competition_bonus","amount":2.644952,"disclosure":"detailed"},
-        {"label":"Recuperos de cargas sociales Dto 1212","category":"other_income","amount":68.756627,"disclosure":"detailed"}
+        {
+          "label": "Transferencias y préstamos de jugadores",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 956.625854,
+          "disclosure": "detailed"
+        },
+        {"label":"Cuotas sociales","category":"membership","subcategory":"member_dues","amount":756.244108,"disclosure":"detailed"},
+        {
+          "label": "Participación en campeonatos internacionales",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 744.663742,
+          "disclosure": "detailed"
+        },
+        {"label":"Derechos de televisación","category":"media_rights","subcategory":"broadcasting","amount":587.976172,"disclosure":"detailed"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":437.584455,"disclosure":"detailed"},
+        {"label":"Cuotas colegio","category":"non_sporting_activities","subcategory":"education","amount":249.808934,"disclosure":"detailed"},
+        {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":151.662867,"disclosure":"detailed"},
+        {
+          "label": "Aranceles deportivos y recreativos",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 147.605277,
+          "disclosure": "detailed"
+        },
+        {"label":"Recursos por subvención provincial","category":"other_revenue","subcategory":"other_income","amount":86.637846,"disclosure":"detailed"},
+        {"label":"Abonos a plateas","category":"season_tickets","subcategory":"season_tickets","amount":84.81457,"disclosure":"detailed"},
+        {
+          "label": "Recursos fútbol infantil/amateur",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 25.072719,
+          "disclosure": "detailed"
+        },
+        {"label":"Colonia de vacaciones","category":"other_sporting_sections","subcategory":"other_sports","amount":16.333259,"disclosure":"detailed"},
+        {"label":"Subvenciones a la explotación","category":"other_revenue","subcategory":"other_income","amount":9.690346,"disclosure":"detailed"},
+        {
+          "label": "Recursos por temporada de verano",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 6.81975,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Participación en campeonatos nacionales",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 2.644952,
+          "disclosure": "detailed"
+        },
+        {"label":"Recuperos de cargas sociales Dto 1212","category":"other_revenue","subcategory":"other_income","amount":68.756627,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Sueldos y jornales (Fútbol - Exhibición y espectáculos)","category":"wages_squad","amount":-659.86099,"disclosure":"detailed"},
-        {"label":"Sueldos y jornales (resto de sectores)","category":"youth_other_sports_expense","amount":-677.104281,"disclosure":"detailed"},
-        {"label":"Salario complementario DNU 332/20 y REPRO (Fútbol - Exhibición)","category":"wages_squad","amount":10.817976,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y jornales (Fútbol - Exhibición y espectáculos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -659.86099,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sueldos y jornales (resto de sectores)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -677.104281,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Salario complementario DNU 332/20 y REPRO (Fútbol - Exhibición)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": 10.817976,
+          "disclosure": "detailed"
+        },
         {
           "label": "Salario complementario DNU 332/20 y REPRO (resto de sectores)",
-          "category": "youth_other_sports_expense",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
           "amount": 21.630126,
           "disclosure": "detailed"
         },
-        {"label":"Gastos por transferencias y préstamos jugadores","category":"player_amortisation","amount":-434.068466,"disclosure":"detailed"},
-        {"label":"Amortización acelerada por libertad de acción","category":"player_amortisation","amount":-428.885403,"disclosure":"detailed"},
-        {"label":"Otros gastos","category":"other_expenses","amount":-364.350711,"disclosure":"detailed"},
-        {"label":"Reconocimientos y premios","category":"wages_squad","amount":-352.503491,"disclosure":"detailed"},
-        {"label":"Gastos de partidos internacionales","category":"match_organisation_expense","amount":-233.409423,"disclosure":"detailed"},
-        {"label":"Cargas sociales (Fútbol - Exhibición y espectáculos)","category":"wages_squad","amount":-75.742867,"disclosure":"detailed"},
-        {"label":"Cargas sociales (resto de sectores)","category":"youth_other_sports_expense","amount":-153.323695,"disclosure":"detailed"},
-        {"label":"Gastos de partidos nacionales","category":"match_organisation_expense","amount":-99.548976,"disclosure":"detailed"},
-        {"label":"Honorarios por servicios profesionales","category":"admin_general_expense","amount":-85.897314,"disclosure":"detailed"},
-        {"label":"Gastos de mantenimiento","category":"other_expenses","amount":-57.745883,"disclosure":"detailed"},
-        {"label":"Gastos estadio","category":"match_organisation_expense","amount":-55.647963,"disclosure":"detailed"},
-        {"label":"Gastos y comisiones bancarias","category":"admin_general_expense","amount":-48.651233,"disclosure":"detailed"},
-        {"label":"Servicios impuestos y tasas","category":"admin_general_expense","amount":-25.399025,"disclosure":"detailed"},
-        {"label":"Gastos de marketing y comunicación","category":"admin_general_expense","amount":-25.202786,"disclosure":"detailed"},
-        {"label":"Gastos de comedor","category":"other_expenses","amount":-13.024333,"disclosure":"detailed"},
-        {"label":"Gastos de colonia de vacaciones","category":"youth_other_sports_expense","amount":-8.618492,"disclosure":"detailed"},
-        {"label":"Gastos de temporada de verano","category":"youth_other_sports_expense","amount":-4.668394,"disclosure":"detailed"},
-        {"label":"Alquileres","category":"other_expenses","amount":-4.112301,"disclosure":"detailed"},
-        {"label":"Viáticos y traslados","category":"match_organisation_expense","amount":-3.84004,"disclosure":"detailed"},
-        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-200.405775,"disclosure":"detailed"},
-        {"label":"Amortización de activos intangibles","category":"player_amortisation","amount":-439.641672,"disclosure":"detailed"},
-        {"label":"Indemnizaciones y juicios","category":"other_expenses","amount":-29.218628,"disclosure":"detailed"},
-        {"label":"Diversos (Otros ingresos y egresos)","category":"other_expenses","amount":-0.024121,"disclosure":"detailed"}
+        {
+          "label": "Gastos por transferencias y préstamos jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -434.068466,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortización acelerada por libertad de acción",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -428.885403,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-364.350711,"disclosure":"detailed"},
+        {"label":"Reconocimientos y premios","category":"first_team_staff","subcategory":"wages_squad","amount":-352.503491,"disclosure":"detailed"},
+        {
+          "label": "Gastos de partidos internacionales",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -233.409423,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Cargas sociales (Fútbol - Exhibición y espectáculos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -75.742867,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Cargas sociales (resto de sectores)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -153.323695,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de partidos nacionales",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -99.548976,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Honorarios por servicios profesionales",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -85.897314,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos de mantenimiento","category":"other_operating_expenses","subcategory":"other_expenses","amount":-57.745883,"disclosure":"detailed"},
+        {"label":"Gastos estadio","category":"match_operations","subcategory":"match_organisation_expense","amount":-55.647963,"disclosure":"detailed"},
+        {"label":"Gastos y comisiones bancarias","category":"admin_general","subcategory":"admin_general_expense","amount":-48.651233,"disclosure":"detailed"},
+        {"label":"Servicios impuestos y tasas","category":"admin_general","subcategory":"admin_general_expense","amount":-25.399025,"disclosure":"detailed"},
+        {
+          "label": "Gastos de marketing y comunicación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -25.202786,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos de comedor","category":"other_operating_expenses","subcategory":"other_expenses","amount":-13.024333,"disclosure":"detailed"},
+        {
+          "label": "Gastos de colonia de vacaciones",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -8.618492,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de temporada de verano",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -4.668394,
+          "disclosure": "detailed"
+        },
+        {"label":"Alquileres","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4.112301,"disclosure":"detailed"},
+        {"label":"Viáticos y traslados","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.84004,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-200.405775,"disclosure":"detailed"},
+        {
+          "label": "Amortización de activos intangibles",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -439.641672,
+          "disclosure": "detailed"
+        },
+        {"label":"Indemnizaciones y juicios","category":"other_operating_expenses","subcategory":"other_expenses","amount":-29.218628,"disclosure":"detailed"},
+        {
+          "label": "Diversos (Otros ingresos y egresos)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.024121,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":690.331357,"tax":0,"gross_debt":1153.353229,"cash":12.545548},
       "official_totals": {"revenue":4332.941478,"expenses":4448.448161,"net_result":574.824674}
@@ -119,51 +247,165 @@
       "management_id": "gorostegui",
       "fx": {"rate":256.3,"source":"document_close"},
       "revenue": [
-        {"label":"Transferencias y préstamos de jugadores","category":"player_sales","amount":419.096447,"disclosure":"detailed"},
-        {"label":"Derechos de televisación","category":"broadcasting","amount":932.721572,"disclosure":"detailed"},
-        {"label":"Cuotas sociales","category":"member_dues","amount":1750.947647,"disclosure":"detailed"},
-        {"label":"Cuotas colegio","category":"education","amount":526.665093,"disclosure":"detailed"},
-        {"label":"Aranceles deportivos y recreativos","category":"other_sports","amount":303.085543,"disclosure":"detailed"},
-        {"label":"Publicidad","category":"sponsorship_commercial","amount":203.502078,"disclosure":"detailed"},
-        {"label":"Recursos por subvención provincial","category":"other_income","amount":184.271364,"disclosure":"detailed"},
-        {"label":"Otros","category":"other_income","amount":954.851714,"disclosure":"detailed"},
-        {"label":"Recursos fútbol infantil/amateur","category":"youth_football","amount":59.50888,"disclosure":"detailed"},
-        {"label":"Recursos por temporada de verano","category":"other_sports","amount":25.452195,"disclosure":"detailed"},
-        {"label":"Colonia de vacaciones","category":"other_sports","amount":42.957615,"disclosure":"detailed"},
-        {"label":"Abonos a plateas","category":"season_tickets","amount":295.434548,"disclosure":"detailed"},
-        {"label":"Resarcimiento por rescisión de contratos","category":"other_income","amount":0.005287,"disclosure":"detailed"},
-        {"label":"Participación en campeonatos nacionales","category":"competition_bonus","amount":5.695584,"disclosure":"detailed"},
-        {"label":"Subvenciones a la explotación","category":"other_income","amount":22.379121,"disclosure":"detailed"},
-        {"label":"Resultado por revaluación de jugadores","category":"other_income","amount":291.226786,"disclosure":"detailed"},
-        {"label":"Participación en campeonatos internacionales","category":"competition_bonus","amount":1386.95025,"disclosure":"detailed"},
-        {"label":"Licitaciones de palco","category":"stadium_other","amount":9.14876,"disclosure":"detailed"},
-        {"label":"Recuperos de cargas sociales Dto 1212","category":"other_income","amount":236.542911,"disclosure":"detailed"}
+        {
+          "label": "Transferencias y préstamos de jugadores",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 419.096447,
+          "disclosure": "detailed"
+        },
+        {"label":"Derechos de televisación","category":"media_rights","subcategory":"broadcasting","amount":932.721572,"disclosure":"detailed"},
+        {"label":"Cuotas sociales","category":"membership","subcategory":"member_dues","amount":1750.947647,"disclosure":"detailed"},
+        {"label":"Cuotas colegio","category":"non_sporting_activities","subcategory":"education","amount":526.665093,"disclosure":"detailed"},
+        {
+          "label": "Aranceles deportivos y recreativos",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 303.085543,
+          "disclosure": "detailed"
+        },
+        {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":203.502078,"disclosure":"detailed"},
+        {"label":"Recursos por subvención provincial","category":"other_revenue","subcategory":"other_income","amount":184.271364,"disclosure":"detailed"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":954.851714,"disclosure":"detailed"},
+        {
+          "label": "Recursos fútbol infantil/amateur",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 59.50888,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Recursos por temporada de verano",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 25.452195,
+          "disclosure": "detailed"
+        },
+        {"label":"Colonia de vacaciones","category":"other_sporting_sections","subcategory":"other_sports","amount":42.957615,"disclosure":"detailed"},
+        {"label":"Abonos a plateas","category":"season_tickets","subcategory":"season_tickets","amount":295.434548,"disclosure":"detailed"},
+        {"label":"Resarcimiento por rescisión de contratos","category":"other_revenue","subcategory":"other_income","amount":0.005287,"disclosure":"detailed"},
+        {
+          "label": "Participación en campeonatos nacionales",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 5.695584,
+          "disclosure": "detailed"
+        },
+        {"label":"Subvenciones a la explotación","category":"other_revenue","subcategory":"other_income","amount":22.379121,"disclosure":"detailed"},
+        {"label":"Resultado por revaluación de jugadores","category":"other_revenue","subcategory":"other_income","amount":291.226786,"disclosure":"detailed"},
+        {
+          "label": "Participación en campeonatos internacionales",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 1386.95025,
+          "disclosure": "detailed"
+        },
+        {"label":"Licitaciones de palco","category":"venue","subcategory":"stadium_other","amount":9.14876,"disclosure":"detailed"},
+        {"label":"Recuperos de cargas sociales Dto 1212","category":"other_revenue","subcategory":"other_income","amount":236.542911,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Sueldos y jornales (Fútbol - Exhibición y espectáculos)","category":"wages_squad","amount":-1293.963095,"disclosure":"detailed"},
-        {"label":"Sueldos y jornales (resto de sectores)","category":"youth_other_sports_expense","amount":-1501.533091,"disclosure":"detailed"},
-        {"label":"Reconocimientos y premios","category":"wages_squad","amount":-1217.864742,"disclosure":"detailed"},
-        {"label":"Gastos de partidos internacionales","category":"match_organisation_expense","amount":-737.833743,"disclosure":"detailed"},
-        {"label":"Otros gastos","category":"other_expenses","amount":-727.116735,"disclosure":"detailed"},
-        {"label":"Gastos por transferencias y préstamos jugadores","category":"player_amortisation","amount":-560.143316,"disclosure":"detailed"},
-        {"label":"Cargas sociales (Fútbol - Exhibición y espectáculos)","category":"wages_squad","amount":-150.21593,"disclosure":"detailed"},
-        {"label":"Cargas sociales (resto de sectores)","category":"youth_other_sports_expense","amount":-334.469688,"disclosure":"detailed"},
-        {"label":"Gastos de partidos nacionales","category":"match_organisation_expense","amount":-241.882925,"disclosure":"detailed"},
-        {"label":"Honorarios por servicios profesionales","category":"admin_general_expense","amount":-208.38576,"disclosure":"detailed"},
-        {"label":"Gastos de mantenimiento","category":"other_expenses","amount":-113.303308,"disclosure":"detailed"},
-        {"label":"Gastos y comisiones bancarias","category":"admin_general_expense","amount":-93.775341,"disclosure":"detailed"},
-        {"label":"Amortización acelerada por libertad de acción","category":"player_amortisation","amount":-87.622187,"disclosure":"detailed"},
-        {"label":"Servicios impuestos y tasas","category":"admin_general_expense","amount":-83.667921,"disclosure":"detailed"},
-        {"label":"Gastos estadio","category":"match_organisation_expense","amount":-78.096124,"disclosure":"detailed"},
-        {"label":"Gastos de marketing y comunicación","category":"admin_general_expense","amount":-56.738148,"disclosure":"detailed"},
-        {"label":"Gastos de comedor","category":"other_expenses","amount":-43.441508,"disclosure":"detailed"},
-        {"label":"Gastos de colonia de vacaciones","category":"youth_other_sports_expense","amount":-23.254275,"disclosure":"detailed"},
-        {"label":"Gastos de temporada de verano","category":"youth_other_sports_expense","amount":-16.033463,"disclosure":"detailed"},
-        {"label":"Viáticos y traslados","category":"match_organisation_expense","amount":-4.548742,"disclosure":"detailed"},
-        {"label":"Alquileres","category":"other_expenses","amount":-2.490227,"disclosure":"detailed"},
-        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-425.249147,"disclosure":"detailed"},
-        {"label":"Amortización de activos intangibles","category":"player_amortisation","amount":-1107.860171,"disclosure":"detailed"},
-        {"label":"Indemnizaciones y juicios","category":"other_expenses","amount":-61.980949,"disclosure":"detailed"}
+        {
+          "label": "Sueldos y jornales (Fútbol - Exhibición y espectáculos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -1293.963095,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sueldos y jornales (resto de sectores)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -1501.533091,
+          "disclosure": "detailed"
+        },
+        {"label":"Reconocimientos y premios","category":"first_team_staff","subcategory":"wages_squad","amount":-1217.864742,"disclosure":"detailed"},
+        {
+          "label": "Gastos de partidos internacionales",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -737.833743,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-727.116735,"disclosure":"detailed"},
+        {
+          "label": "Gastos por transferencias y préstamos jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -560.143316,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Cargas sociales (Fútbol - Exhibición y espectáculos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -150.21593,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Cargas sociales (resto de sectores)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -334.469688,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de partidos nacionales",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -241.882925,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Honorarios por servicios profesionales",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -208.38576,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos de mantenimiento","category":"other_operating_expenses","subcategory":"other_expenses","amount":-113.303308,"disclosure":"detailed"},
+        {"label":"Gastos y comisiones bancarias","category":"admin_general","subcategory":"admin_general_expense","amount":-93.775341,"disclosure":"detailed"},
+        {
+          "label": "Amortización acelerada por libertad de acción",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -87.622187,
+          "disclosure": "detailed"
+        },
+        {"label":"Servicios impuestos y tasas","category":"admin_general","subcategory":"admin_general_expense","amount":-83.667921,"disclosure":"detailed"},
+        {"label":"Gastos estadio","category":"match_operations","subcategory":"match_organisation_expense","amount":-78.096124,"disclosure":"detailed"},
+        {
+          "label": "Gastos de marketing y comunicación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -56.738148,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos de comedor","category":"other_operating_expenses","subcategory":"other_expenses","amount":-43.441508,"disclosure":"detailed"},
+        {
+          "label": "Gastos de colonia de vacaciones",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -23.254275,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de temporada de verano",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -16.033463,
+          "disclosure": "detailed"
+        },
+        {"label":"Viáticos y traslados","category":"match_operations","subcategory":"match_organisation_expense","amount":-4.548742,"disclosure":"detailed"},
+        {"label":"Alquileres","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.490227,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-425.249147,"disclosure":"detailed"},
+        {
+          "label": "Amortización de activos intangibles",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1107.860171,
+          "disclosure": "detailed"
+        },
+        {"label":"Indemnizaciones y juicios","category":"other_operating_expenses","subcategory":"other_expenses","amount":-61.980949,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1535.101326,"tax":0,"gross_debt":2410.436335,"cash":36.433986},
       "official_totals": {"revenue":7650.443395,"expenses":9171.470536,"net_result":14.074185}
@@ -177,49 +419,175 @@
       "management_id": "veron",
       "fx": {"rate":909,"source":"document_close"},
       "revenue": [
-        {"label":"Transferencias y préstamos de jugadores","category":"player_sales","amount":20177.21083,"disclosure":"detailed"},
-        {"label":"Cuotas sociales","category":"member_dues","amount":5965.397318,"disclosure":"detailed"},
-        {"label":"Participación en campeonatos internacionales","category":"competition_bonus","amount":5528.364085,"disclosure":"detailed"},
-        {"label":"Otros","category":"other_income","amount":5410.733442,"disclosure":"detailed"},
-        {"label":"Resultado por revaluación de jugadores","category":"other_income","amount":4052.863235,"disclosure":"detailed"},
-        {"label":"Derechos de televisación","category":"broadcasting","amount":2983.862729,"disclosure":"detailed"},
-        {"label":"Cuotas colegio","category":"education","amount":1387.863255,"disclosure":"detailed"},
-        {"label":"Abonos a plateas","category":"season_tickets","amount":1119.900205,"disclosure":"detailed"},
-        {"label":"Aranceles deportivos y recreativos","category":"other_sports","amount":1002.218944,"disclosure":"detailed"},
-        {"label":"Publicidad","category":"sponsorship_commercial","amount":641.959977,"disclosure":"detailed"},
-        {"label":"Recursos por subvención provincial","category":"other_income","amount":608.276048,"disclosure":"detailed"},
-        {"label":"Participación en campeonatos nacionales","category":"competition_bonus","amount":292.389415,"disclosure":"detailed"},
-        {"label":"Recursos fútbol infantil/amateur","category":"youth_football","amount":195.536742,"disclosure":"detailed"},
-        {"label":"Colonia de vacaciones","category":"other_sports","amount":152.193791,"disclosure":"detailed"},
-        {"label":"Recursos por temporada de verano","category":"other_sports","amount":68.693469,"disclosure":"detailed"},
-        {"label":"Subvenciones a la explotación","category":"other_income","amount":60.588771,"disclosure":"detailed"},
-        {"label":"Licitaciones de palco","category":"stadium_other","amount":9.707725,"disclosure":"detailed"},
-        {"label":"Recuperos de cargas sociales Dto 1212","category":"other_income","amount":172.145497,"disclosure":"detailed"}
+        {
+          "label": "Transferencias y préstamos de jugadores",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 20177.21083,
+          "disclosure": "detailed"
+        },
+        {"label":"Cuotas sociales","category":"membership","subcategory":"member_dues","amount":5965.397318,"disclosure":"detailed"},
+        {
+          "label": "Participación en campeonatos internacionales",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 5528.364085,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":5410.733442,"disclosure":"detailed"},
+        {
+          "label": "Resultado por revaluación de jugadores",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 4052.863235,
+          "disclosure": "detailed"
+        },
+        {"label":"Derechos de televisación","category":"media_rights","subcategory":"broadcasting","amount":2983.862729,"disclosure":"detailed"},
+        {"label":"Cuotas colegio","category":"non_sporting_activities","subcategory":"education","amount":1387.863255,"disclosure":"detailed"},
+        {"label":"Abonos a plateas","category":"season_tickets","subcategory":"season_tickets","amount":1119.900205,"disclosure":"detailed"},
+        {
+          "label": "Aranceles deportivos y recreativos",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 1002.218944,
+          "disclosure": "detailed"
+        },
+        {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":641.959977,"disclosure":"detailed"},
+        {"label":"Recursos por subvención provincial","category":"other_revenue","subcategory":"other_income","amount":608.276048,"disclosure":"detailed"},
+        {
+          "label": "Participación en campeonatos nacionales",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 292.389415,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Recursos fútbol infantil/amateur",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 195.536742,
+          "disclosure": "detailed"
+        },
+        {"label":"Colonia de vacaciones","category":"other_sporting_sections","subcategory":"other_sports","amount":152.193791,"disclosure":"detailed"},
+        {
+          "label": "Recursos por temporada de verano",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 68.693469,
+          "disclosure": "detailed"
+        },
+        {"label":"Subvenciones a la explotación","category":"other_revenue","subcategory":"other_income","amount":60.588771,"disclosure":"detailed"},
+        {"label":"Licitaciones de palco","category":"venue","subcategory":"stadium_other","amount":9.707725,"disclosure":"detailed"},
+        {"label":"Recuperos de cargas sociales Dto 1212","category":"other_revenue","subcategory":"other_income","amount":172.145497,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Sueldos y jornales (Fútbol - Exhibición y espectáculos)","category":"wages_squad","amount":-4761.049974,"disclosure":"detailed"},
-        {"label":"Sueldos y jornales (resto de sectores)","category":"youth_other_sports_expense","amount":-5455.670716,"disclosure":"detailed"},
-        {"label":"Gastos por transferencias y préstamos jugadores","category":"player_amortisation","amount":-4667.951256,"disclosure":"detailed"},
-        {"label":"Reconocimientos y premios","category":"wages_squad","amount":-4402.027264,"disclosure":"detailed"},
-        {"label":"Gastos de partidos internacionales","category":"match_organisation_expense","amount":-2759.110986,"disclosure":"detailed"},
-        {"label":"Cargas sociales (Fútbol - Exhibición y espectáculos)","category":"wages_squad","amount":-531.866624,"disclosure":"detailed"},
-        {"label":"Cargas sociales (resto de sectores)","category":"youth_other_sports_expense","amount":-1306.134631,"disclosure":"detailed"},
-        {"label":"Otros gastos","category":"other_expenses","amount":-1782.873275,"disclosure":"detailed"},
-        {"label":"Gastos de partidos nacionales","category":"match_organisation_expense","amount":-1708.811261,"disclosure":"detailed"},
-        {"label":"Gastos y comisiones bancarias","category":"admin_general_expense","amount":-622.034925,"disclosure":"detailed"},
-        {"label":"Honorarios por servicios profesionales","category":"admin_general_expense","amount":-583.197186,"disclosure":"detailed"},
-        {"label":"Gastos de mantenimiento","category":"other_expenses","amount":-402.378762,"disclosure":"detailed"},
-        {"label":"Servicios impuestos y tasas","category":"admin_general_expense","amount":-382.924638,"disclosure":"detailed"},
-        {"label":"Gastos de comedor","category":"other_expenses","amount":-231.175888,"disclosure":"detailed"},
-        {"label":"Gastos estadio","category":"match_organisation_expense","amount":-226.992462,"disclosure":"detailed"},
-        {"label":"Gastos de marketing y comunicación","category":"admin_general_expense","amount":-154.542784,"disclosure":"detailed"},
-        {"label":"Gastos de colonia de vacaciones","category":"youth_other_sports_expense","amount":-76.234688,"disclosure":"detailed"},
-        {"label":"Gastos de temporada de verano","category":"youth_other_sports_expense","amount":-48.456594,"disclosure":"detailed"},
-        {"label":"Viáticos y traslados","category":"match_organisation_expense","amount":-17.551509,"disclosure":"detailed"},
-        {"label":"Alquileres","category":"other_expenses","amount":-1.829612,"disclosure":"detailed"},
-        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-1625.574475,"disclosure":"detailed"},
-        {"label":"Amortización de activos intangibles","category":"player_amortisation","amount":-8878.189862,"disclosure":"detailed"},
-        {"label":"Indemnizaciones y juicios","category":"other_expenses","amount":-172.697275,"disclosure":"detailed"}
+        {
+          "label": "Sueldos y jornales (Fútbol - Exhibición y espectáculos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -4761.049974,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sueldos y jornales (resto de sectores)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -5455.670716,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos por transferencias y préstamos jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -4667.951256,
+          "disclosure": "detailed"
+        },
+        {"label":"Reconocimientos y premios","category":"first_team_staff","subcategory":"wages_squad","amount":-4402.027264,"disclosure":"detailed"},
+        {
+          "label": "Gastos de partidos internacionales",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2759.110986,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Cargas sociales (Fútbol - Exhibición y espectáculos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -531.866624,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Cargas sociales (resto de sectores)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -1306.134631,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1782.873275,"disclosure":"detailed"},
+        {
+          "label": "Gastos de partidos nacionales",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1708.811261,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos y comisiones bancarias",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -622.034925,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Honorarios por servicios profesionales",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -583.197186,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos de mantenimiento","category":"other_operating_expenses","subcategory":"other_expenses","amount":-402.378762,"disclosure":"detailed"},
+        {"label":"Servicios impuestos y tasas","category":"admin_general","subcategory":"admin_general_expense","amount":-382.924638,"disclosure":"detailed"},
+        {"label":"Gastos de comedor","category":"other_operating_expenses","subcategory":"other_expenses","amount":-231.175888,"disclosure":"detailed"},
+        {"label":"Gastos estadio","category":"match_operations","subcategory":"match_organisation_expense","amount":-226.992462,"disclosure":"detailed"},
+        {
+          "label": "Gastos de marketing y comunicación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -154.542784,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de colonia de vacaciones",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -76.234688,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de temporada de verano",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -48.456594,
+          "disclosure": "detailed"
+        },
+        {"label":"Viáticos y traslados","category":"match_operations","subcategory":"match_organisation_expense","amount":-17.551509,"disclosure":"detailed"},
+        {"label":"Alquileres","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.829612,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-1625.574475,"disclosure":"detailed"},
+        {
+          "label": "Amortización de activos intangibles",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -8878.189862,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Indemnizaciones y juicios",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -172.697275,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":534.909348,"tax":0,"gross_debt":12029.051057,"cash":67.946816},
       "official_totals": {"revenue":49829.905478,"expenses":40799.276647,"net_result":9565.538179}
@@ -233,47 +601,161 @@
       "management_id": "veron",
       "fx": {"rate":1196,"source":"document_close"},
       "revenue": [
-        {"label":"Transferencias y préstamos de jugadores","category":"player_sales","amount":15047.007896,"disclosure":"detailed"},
-        {"label":"Cuotas sociales","category":"member_dues","amount":11204.094875,"disclosure":"detailed"},
-        {"label":"Otros","category":"other_income","amount":8467.914089,"disclosure":"detailed"},
-        {"label":"Participación en campeonatos internacionales","category":"competition_bonus","amount":7347.724761,"disclosure":"detailed"},
-        {"label":"Derechos de televisación","category":"broadcasting","amount":6123.550259,"disclosure":"detailed"},
-        {"label":"Cuotas colegio","category":"education","amount":2141.150911,"disclosure":"detailed"},
-        {"label":"Abonos a plateas","category":"season_tickets","amount":1971.109249,"disclosure":"detailed"},
-        {"label":"Aranceles deportivos y recreativos","category":"other_sports","amount":1500.756697,"disclosure":"detailed"},
-        {"label":"Publicidad","category":"sponsorship_commercial","amount":1061.054904,"disclosure":"detailed"},
-        {"label":"Participación en campeonatos nacionales","category":"competition_bonus","amount":958.849774,"disclosure":"detailed"},
-        {"label":"Recursos marketing","category":"sponsorship_commercial","amount":882.744685,"disclosure":"detailed"},
-        {"label":"Recursos por subvención provincial","category":"other_income","amount":753.533291,"disclosure":"detailed"},
-        {"label":"Colonia de vacaciones","category":"other_sports","amount":251.677071,"disclosure":"detailed"},
-        {"label":"Recursos fútbol infantil/amateur","category":"youth_football","amount":217.990839,"disclosure":"detailed"},
-        {"label":"Recursos por temporada de verano","category":"other_sports","amount":106.711574,"disclosure":"detailed"},
-        {"label":"Subvenciones a la explotación","category":"other_income","amount":77.052581,"disclosure":"detailed"},
-        {"label":"Otros ingresos y egresos","category":"other_income","amount":1404.273084,"disclosure":"detailed"}
+        {
+          "label": "Transferencias y préstamos de jugadores",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 15047.007896,
+          "disclosure": "detailed"
+        },
+        {"label":"Cuotas sociales","category":"membership","subcategory":"member_dues","amount":11204.094875,"disclosure":"detailed"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":8467.914089,"disclosure":"detailed"},
+        {
+          "label": "Participación en campeonatos internacionales",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 7347.724761,
+          "disclosure": "detailed"
+        },
+        {"label":"Derechos de televisación","category":"media_rights","subcategory":"broadcasting","amount":6123.550259,"disclosure":"detailed"},
+        {"label":"Cuotas colegio","category":"non_sporting_activities","subcategory":"education","amount":2141.150911,"disclosure":"detailed"},
+        {"label":"Abonos a plateas","category":"season_tickets","subcategory":"season_tickets","amount":1971.109249,"disclosure":"detailed"},
+        {
+          "label": "Aranceles deportivos y recreativos",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 1500.756697,
+          "disclosure": "detailed"
+        },
+        {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":1061.054904,"disclosure":"detailed"},
+        {
+          "label": "Participación en campeonatos nacionales",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 958.849774,
+          "disclosure": "detailed"
+        },
+        {"label":"Recursos marketing","category":"commercial","subcategory":"sponsorship_commercial","amount":882.744685,"disclosure":"detailed"},
+        {"label":"Recursos por subvención provincial","category":"other_revenue","subcategory":"other_income","amount":753.533291,"disclosure":"detailed"},
+        {"label":"Colonia de vacaciones","category":"other_sporting_sections","subcategory":"other_sports","amount":251.677071,"disclosure":"detailed"},
+        {
+          "label": "Recursos fútbol infantil/amateur",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 217.990839,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Recursos por temporada de verano",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 106.711574,
+          "disclosure": "detailed"
+        },
+        {"label":"Subvenciones a la explotación","category":"other_revenue","subcategory":"other_income","amount":77.052581,"disclosure":"detailed"},
+        {"label":"Otros ingresos y egresos","category":"other_revenue","subcategory":"other_income","amount":1404.273084,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Gastos por transferencias y préstamos jugadores","category":"player_amortisation","amount":-17020.954487,"disclosure":"detailed"},
-        {"label":"Sueldos y jornales (Fútbol - Exhibición y espectáculos)","category":"wages_squad","amount":-6901.258217,"disclosure":"detailed"},
-        {"label":"Sueldos y jornales (resto de sectores)","category":"youth_other_sports_expense","amount":-7981.851536,"disclosure":"detailed"},
-        {"label":"Reconocimientos y premios","category":"wages_squad","amount":-9322.519329,"disclosure":"detailed"},
-        {"label":"Otros gastos","category":"other_expenses","amount":-4422.669636,"disclosure":"detailed"},
-        {"label":"Gastos de partidos internacionales","category":"match_organisation_expense","amount":-3486.276784,"disclosure":"detailed"},
-        {"label":"Cargas sociales (Fútbol - Exhibición y espectáculos)","category":"wages_squad","amount":-779.431141,"disclosure":"detailed"},
-        {"label":"Cargas sociales (resto de sectores)","category":"youth_other_sports_expense","amount":-1893.841472,"disclosure":"detailed"},
-        {"label":"Gastos de partidos nacionales","category":"match_organisation_expense","amount":-1939.656547,"disclosure":"detailed"},
-        {"label":"Honorarios por servicios profesionales","category":"admin_general_expense","amount":-1107.346382,"disclosure":"detailed"},
-        {"label":"Servicios impuestos y tasas","category":"admin_general_expense","amount":-1000.513145,"disclosure":"detailed"},
-        {"label":"Gastos y comisiones bancarias","category":"admin_general_expense","amount":-929.445512,"disclosure":"detailed"},
-        {"label":"Gastos de mantenimiento","category":"other_expenses","amount":-553.379576,"disclosure":"detailed"},
-        {"label":"Gastos de marketing y comunicación","category":"admin_general_expense","amount":-488.739224,"disclosure":"detailed"},
-        {"label":"Gastos estadio","category":"match_organisation_expense","amount":-365.377142,"disclosure":"detailed"},
-        {"label":"Gastos de comedor","category":"other_expenses","amount":-310.357487,"disclosure":"detailed"},
-        {"label":"Gastos de colonia de vacaciones","category":"youth_other_sports_expense","amount":-134.560481,"disclosure":"detailed"},
-        {"label":"Gastos de temporada de verano","category":"youth_other_sports_expense","amount":-54.26169,"disclosure":"detailed"},
-        {"label":"Viáticos y traslados","category":"match_organisation_expense","amount":-33.08059,"disclosure":"detailed"},
-        {"label":"Alquileres","category":"other_expenses","amount":-3.475727,"disclosure":"detailed"},
-        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-2300.800056,"disclosure":"detailed"},
-        {"label":"Amortización de activos intangibles","category":"player_amortisation","amount":-15240.011382,"disclosure":"detailed"}
+        {
+          "label": "Gastos por transferencias y préstamos jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -17020.954487,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sueldos y jornales (Fútbol - Exhibición y espectáculos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -6901.258217,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sueldos y jornales (resto de sectores)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -7981.851536,
+          "disclosure": "detailed"
+        },
+        {"label":"Reconocimientos y premios","category":"first_team_staff","subcategory":"wages_squad","amount":-9322.519329,"disclosure":"detailed"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4422.669636,"disclosure":"detailed"},
+        {
+          "label": "Gastos de partidos internacionales",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -3486.276784,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Cargas sociales (Fútbol - Exhibición y espectáculos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -779.431141,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Cargas sociales (resto de sectores)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -1893.841472,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de partidos nacionales",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1939.656547,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Honorarios por servicios profesionales",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1107.346382,
+          "disclosure": "detailed"
+        },
+        {"label":"Servicios impuestos y tasas","category":"admin_general","subcategory":"admin_general_expense","amount":-1000.513145,"disclosure":"detailed"},
+        {
+          "label": "Gastos y comisiones bancarias",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -929.445512,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos de mantenimiento","category":"other_operating_expenses","subcategory":"other_expenses","amount":-553.379576,"disclosure":"detailed"},
+        {
+          "label": "Gastos de marketing y comunicación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -488.739224,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos estadio","category":"match_operations","subcategory":"match_organisation_expense","amount":-365.377142,"disclosure":"detailed"},
+        {"label":"Gastos de comedor","category":"other_operating_expenses","subcategory":"other_expenses","amount":-310.357487,"disclosure":"detailed"},
+        {
+          "label": "Gastos de colonia de vacaciones",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -134.560481,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de temporada de verano",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -54.26169,
+          "disclosure": "detailed"
+        },
+        {"label":"Viáticos y traslados","category":"match_operations","subcategory":"match_organisation_expense","amount":-33.08059,"disclosure":"detailed"},
+        {"label":"Alquileres","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.475727,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-2300.800056,"disclosure":"detailed"},
+        {
+          "label": "Amortización de activos intangibles",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -15240.011382,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2475.498214,"tax":0,"gross_debt":35762.837696,"cash":1364.903809},
       "official_totals": {"revenue":59517.19654,"expenses":76269.807543,"net_result":-14277.112789}

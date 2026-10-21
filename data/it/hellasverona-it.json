@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "IT",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -66,63 +67,226 @@
       "management_id": null,
       "fx": {"ref":"EUR@2020-06-30"},
       "revenue": [
-        {"label":"Gare Campionato","category":"matchday_competition","amount":1.738,"disclosure":"aggregated"},
-        {"label":"Gare Coppa Italia","category":"matchday_competition","amount":0.038,"disclosure":"aggregated"},
-        {"label":"Ricavi diversi","category":"other_income","amount":0.074,"disclosure":"aggregated"},
-        {"label":"Percentuali su incassi da squadre ospitanti","category":"matchday_competition","amount":0,"disclosure":"aggregated"},
-        {"label":"Abbonamenti","category":"season_tickets","amount":1.463043,"disclosure":"aggregated"},
-        {"label":"1a) Proventi da sponsorizzazioni","category":"sponsorship_commercial","amount":1.709749,"disclosure":"aggregated"},
-        {"label":"1b) Proventi pubblicitari","category":"sponsorship_commercial","amount":0.15,"disclosure":"aggregated"},
-        {"label":"1c) Proventi commerciali e royalties","category":"sponsorship_commercial","amount":0.802368,"disclosure":"aggregated"},
-        {"label":"1d) Proventi da cessioni diritti audiovisivi","category":"broadcasting","amount":29.161904,"disclosure":"aggregated"},
-        {"label":"1e) Ricavi da cessione temporanea prestazione calciatori","category":"player_sales","amount":0.35,"disclosure":"aggregated"},
-        {"label":"1f) Plusvalenze da cessione pluriennale diritti calciatori","category":"player_sales","amount":15.03626,"disclosure":"aggregated"},
-        {"label":"1g) Altri proventi da gestione calciatori","category":"player_sales","amount":12.149652,"disclosure":"aggregated"},
-        {"label":"1h) Ricavi e proventi diversi","category":"other_income","amount":2.008318,"disclosure":"aggregated"},
-        {"label":"b) Contributi in conto esercizio","category":"other_income","amount":0.909502,"disclosure":"aggregated"}
+        {"label":"Gare Campionato","category":"matchday","subcategory":"matchday_competition","amount":1.738,"disclosure":"aggregated"},
+        {"label":"Gare Coppa Italia","category":"matchday","subcategory":"matchday_competition","amount":0.038,"disclosure":"aggregated"},
+        {"label":"Ricavi diversi","category":"other_revenue","subcategory":"other_income","amount":0.074,"disclosure":"aggregated"},
+        {
+          "label": "Percentuali su incassi da squadre ospitanti",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":1.463043,"disclosure":"aggregated"},
+        {
+          "label": "1a) Proventi da sponsorizzazioni",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1.709749,
+          "disclosure": "aggregated"
+        },
+        {"label":"1b) Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.15,"disclosure":"aggregated"},
+        {
+          "label": "1c) Proventi commerciali e royalties",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.802368,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "1d) Proventi da cessioni diritti audiovisivi",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 29.161904,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "1e) Ricavi da cessione temporanea prestazione calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.35,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "1f) Plusvalenze da cessione pluriennale diritti calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 15.03626,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "1g) Altri proventi da gestione calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 12.149652,
+          "disclosure": "aggregated"
+        },
+        {"label":"1h) Ricavi e proventi diversi","category":"other_revenue","subcategory":"other_income","amount":2.008318,"disclosure":"aggregated"},
+        {"label":"b) Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.909502,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"6) Per materie prime, sussidiarie, di consumo e di merci","category":"other_expenses","amount":-0.731918,"disclosure":"aggregated"},
-        {"label":"Costi per attività sportiva settore giovanile","category":"youth_other_sports_expense","amount":-0.496,"disclosure":"aggregated"},
-        {"label":"Costi per attività sportiva prima squadra","category":"lump_football_operations_expense","amount":-0.765,"disclosure":"aggregated"},
-        {"label":"Costi per competenze procuratori e consulenze sportive","category":"other_expenses","amount":-1.512,"disclosure":"aggregated"},
-        {"label":"Costi accessori campagna trasferimenti","category":"other_expenses","amount":-4.028,"disclosure":"aggregated"},
-        {"label":"Costi per servizio stadio “Bentegodi”","category":"match_organisation_expense","amount":-0.14,"disclosure":"aggregated"},
-        {"label":"Assicurative e previdenziali","category":"admin_general_expense","amount":-0.182,"disclosure":"aggregated"},
+        {
+          "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.731918,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi per attività sportiva settore giovanile",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.496,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi per attività sportiva prima squadra",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -0.765,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi per competenze procuratori e consulenze sportive",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.512,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi accessori campagna trasferimenti",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -4.028,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi per servizio stadio “Bentegodi”",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.14,
+          "disclosure": "aggregated"
+        },
+        {"label":"Assicurative e previdenziali","category":"admin_general","subcategory":"admin_general_expense","amount":-0.182,"disclosure":"aggregated"},
         {
           "label": "Costi pubblicitari e promozionali (di cui con HVMC S.r.l. Euro 947= migliaia)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.98,
           "disclosure": "aggregated"
         },
-        {"label":"Costi amministrative e generali","category":"admin_general_expense","amount":-5.243,"disclosure":"aggregated"},
-        {"label":"Affitto campi sportivi","category":"match_organisation_expense","amount":-0.072,"disclosure":"aggregated"},
-        {"label":"Affitto impianti sportivi","category":"match_organisation_expense","amount":-0.76,"disclosure":"aggregated"},
-        {"label":"Locazioni finanziarie","category":"admin_general_expense","amount":-0.022,"disclosure":"aggregated"},
-        {"label":"Canoni di noleggio","category":"admin_general_expense","amount":-0.507,"disclosure":"aggregated"},
-        {"label":"Canoni affitto altri locali","category":"admin_general_expense","amount":-0.034,"disclosure":"aggregated"},
-        {"label":"Altre spese su beni di terzi","category":"other_expenses","amount":-0.009,"disclosure":"aggregated"},
-        {"label":"a) Salari e stipendi","category":"wages_squad","amount":-22.858689,"disclosure":"aggregated"},
-        {"label":"b) Oneri sociali","category":"wages_squad","amount":-1.630264,"disclosure":"aggregated"},
-        {"label":"c) Trattamento di fine rapporto","category":"wages_squad","amount":-0.395427,"disclosure":"aggregated"},
-        {"label":"d) altri costi","category":"other_expenses","amount":-2.516431,"disclosure":"aggregated"},
-        {"label":"a) Ammortamento delle immobilizzazioni immateriali","category":"player_amortisation","amount":-4.992463,"disclosure":"aggregated"},
-        {"label":"b) Ammortamento delle immobilizzazioni materiali","category":"depreciation","amount":-0.254953,"disclosure":"aggregated"},
-        {"label":"c) Atre svalutazioni delle immobilizzazioni","category":"player_impairment","amount":-0.385871,"disclosure":"aggregated"},
-        {"label":"d) Svalutazioni cred. incl. nell'attivo circolante","category":"other_expenses","amount":-0.184718,"disclosure":"aggregated"},
-        {"label":"12) Accantonamenti per rischi","category":"other_amortisation","amount":0,"disclosure":"aggregated"},
-        {"label":"13) Altri accantonamenti","category":"other_amortisation","amount":0,"disclosure":"aggregated"},
-        {"label":"a) Spese varie organizzazione gare","category":"match_organisation_expense","amount":-1.390318,"disclosure":"aggregated"},
-        {"label":"b) Tasse iscrizione gare","category":"match_organisation_expense","amount":-0.008765,"disclosure":"aggregated"},
-        {"label":"c) Oneri specifici verso squadre ospitate","category":"match_organisation_expense","amount":-0.017172,"disclosure":"aggregated"},
-        {"label":"d) Costi per acquisizione temporanea prestazioni calciatori","category":"other_expenses","amount":-2.269105,"disclosure":"aggregated"},
-        {"label":"e) Minusvalenze da cessione diritti prestazioni calciatori","category":"exceptional_items","amount":-0.737206,"disclosure":"aggregated"},
-        {"label":"Costi di valorizzazione calciatori","category":"player_amortisation","amount":-0.39,"disclosure":"aggregated"},
-        {"label":"Premi di rendimento","category":"wages_squad","amount":-0.18,"disclosure":"aggregated"},
-        {"label":"Altri costi da gestione calciatori","category":"other_expenses","amount":-0.795,"disclosure":"aggregated"},
-        {"label":"- Ammende e multe gara","category":"other_expenses","amount":-0.009,"disclosure":"aggregated"},
-        {"label":"- Contribuzione e Servizi Lega","category":"match_organisation_expense","amount":-1.171,"disclosure":"aggregated"},
-        {"label":"- Altre spese","category":"other_expenses","amount":-0.135,"disclosure":"aggregated"}
+        {"label":"Costi amministrative e generali","category":"admin_general","subcategory":"admin_general_expense","amount":-5.243,"disclosure":"aggregated"},
+        {"label":"Affitto campi sportivi","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.072,"disclosure":"aggregated"},
+        {
+          "label": "Affitto impianti sportivi",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.76,
+          "disclosure": "aggregated"
+        },
+        {"label":"Locazioni finanziarie","category":"admin_general","subcategory":"admin_general_expense","amount":-0.022,"disclosure":"aggregated"},
+        {"label":"Canoni di noleggio","category":"admin_general","subcategory":"admin_general_expense","amount":-0.507,"disclosure":"aggregated"},
+        {"label":"Canoni affitto altri locali","category":"admin_general","subcategory":"admin_general_expense","amount":-0.034,"disclosure":"aggregated"},
+        {
+          "label": "Altre spese su beni di terzi",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.009,
+          "disclosure": "aggregated"
+        },
+        {"label":"a) Salari e stipendi","category":"first_team_staff","subcategory":"wages_squad","amount":-22.858689,"disclosure":"aggregated"},
+        {"label":"b) Oneri sociali","category":"first_team_staff","subcategory":"wages_squad","amount":-1.630264,"disclosure":"aggregated"},
+        {"label":"c) Trattamento di fine rapporto","category":"first_team_staff","subcategory":"wages_squad","amount":-0.395427,"disclosure":"aggregated"},
+        {"label":"d) altri costi","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.516431,"disclosure":"aggregated"},
+        {
+          "label": "a) Ammortamento delle immobilizzazioni immateriali",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -4.992463,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Ammortamento delle immobilizzazioni materiali",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.254953,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "c) Atre svalutazioni delle immobilizzazioni",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -0.385871,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "d) Svalutazioni cred. incl. nell'attivo circolante",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.184718,
+          "disclosure": "aggregated"
+        },
+        {"label":"12) Accantonamenti per rischi","category":"other_amortisation","subcategory":"other_amortisation","amount":0,"disclosure":"aggregated"},
+        {"label":"13) Altri accantonamenti","category":"other_amortisation","subcategory":"other_amortisation","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "a) Spese varie organizzazione gare",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.390318,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Tasse iscrizione gare",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.008765,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "c) Oneri specifici verso squadre ospitate",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.017172,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "d) Costi per acquisizione temporanea prestazioni calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.269105,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "e) Minusvalenze da cessione diritti prestazioni calciatori",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.737206,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi di valorizzazione calciatori",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.39,
+          "disclosure": "aggregated"
+        },
+        {"label":"Premi di rendimento","category":"first_team_staff","subcategory":"wages_squad","amount":-0.18,"disclosure":"aggregated"},
+        {
+          "label": "Altri costi da gestione calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.795,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Ammende e multe gara","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.009,"disclosure":"aggregated"},
+        {
+          "label": "- Contribuzione e Servizi Lega",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.171,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Altre spese","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.135,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.027588,"tax":-1.484095,"gross_debt":4.530032,"cash":6.206891},
       "official_totals": {"revenue":65.590796,"expenses":55.066094,"net_result":8.275111},
@@ -150,54 +314,192 @@
       "management_id": null,
       "fx": {"ref":"EUR@2021-06-30"},
       "revenue": [
-        {"label":"Ricavi da gare","category":"matchday_competition","amount":0.006244,"disclosure":"aggregated"},
-        {"label":"Abbonamenti","category":"season_tickets","amount":0,"disclosure":"aggregated"},
-        {"label":"a) Contributi in conto esercizio","category":"other_income","amount":1.40173,"disclosure":"aggregated"},
-        {"label":"b) Proventi da sponsorizzazioni","category":"sponsorship_commercial","amount":3.361284,"disclosure":"aggregated"},
-        {"label":"c) Proventi pubblicitari","category":"sponsorship_commercial","amount":0.15,"disclosure":"aggregated"},
-        {"label":"d) Proventi commerciali e royalties","category":"sponsorship_commercial","amount":0.907632,"disclosure":"aggregated"},
-        {"label":"e) Proventi da cessioni diritti audiovisivi","category":"broadcasting","amount":51.319316,"disclosure":"aggregated"},
-        {"label":"f) Ricavi da cessione temporanea prestazione calciatori","category":"player_sales","amount":3.525,"disclosure":"aggregated"},
-        {"label":"g) Plusvalenze da cessione pluriennale diritti calciatori","category":"player_sales","amount":26.509877,"disclosure":"aggregated"},
-        {"label":"g) Altri proventi da trasferimento calciatori","category":"player_sales","amount":8.817702,"disclosure":"aggregated"},
-        {"label":"i) Ricavi e proventi diversi","category":"other_income","amount":3.199543,"disclosure":"aggregated"}
+        {"label":"Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":0.006244,"disclosure":"aggregated"},
+        {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":0,"disclosure":"aggregated"},
+        {"label":"a) Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.40173,"disclosure":"aggregated"},
+        {"label":"b) Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":3.361284,"disclosure":"aggregated"},
+        {"label":"c) Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.15,"disclosure":"aggregated"},
+        {
+          "label": "d) Proventi commerciali e royalties",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.907632,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "e) Proventi da cessioni diritti audiovisivi",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 51.319316,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "f) Ricavi da cessione temporanea prestazione calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 3.525,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "g) Plusvalenze da cessione pluriennale diritti calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 26.509877,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "g) Altri proventi da trasferimento calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 8.817702,
+          "disclosure": "aggregated"
+        },
+        {"label":"i) Ricavi e proventi diversi","category":"other_revenue","subcategory":"other_income","amount":3.199543,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Per materie prime, sussidiarie, di consumo e di merci","category":"other_expenses","amount":-0.711881,"disclosure":"aggregated"},
-        {"label":"Costi per tesserati","category":"wages_squad","amount":-2.174,"disclosure":"aggregated"},
-        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-1.12,"disclosure":"aggregated"},
-        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-4.468,"disclosure":"aggregated"},
-        {"label":"Costi vitto, alloggio, locomozione gare","category":"match_organisation_expense","amount":-0.509,"disclosure":"aggregated"},
-        {"label":"Servizio stewarding, biglietteria, controllo","category":"match_organisation_expense","amount":-0.008,"disclosure":"aggregated"},
-        {"label":"Assicurative e previdenziali","category":"admin_general_expense","amount":-0.169,"disclosure":"aggregated"},
-        {"label":"Amministrative, pubblicitarie e generali","category":"admin_general_expense","amount":-6.9,"disclosure":"aggregated"},
-        {"label":"Affitto campi sportivi","category":"match_organisation_expense","amount":-0.06,"disclosure":"aggregated"},
-        {"label":"Affitto impianti sportivi","category":"match_organisation_expense","amount":-0.731,"disclosure":"aggregated"},
-        {"label":"Costi di noleggio","category":"admin_general_expense","amount":-0.514,"disclosure":"aggregated"},
-        {"label":"Canoni affitto altri locali","category":"admin_general_expense","amount":-0.012,"disclosure":"aggregated"},
-        {"label":"Altre spese su beni di terzi","category":"other_expenses","amount":-0.011,"disclosure":"aggregated"},
-        {"label":"Locazioni finanziarie","category":"admin_general_expense","amount":-0.019,"disclosure":"aggregated"},
-        {"label":"a) Salari e stipendi","category":"wages_squad","amount":-48.925992,"disclosure":"aggregated"},
-        {"label":"b) Oneri sociali","category":"wages_squad","amount":-2.344918,"disclosure":"aggregated"},
-        {"label":"c) Trattamento di fine rapporto","category":"wages_squad","amount":-0.482883,"disclosure":"aggregated"},
-        {"label":"d) altri costi","category":"other_expenses","amount":-3.718924,"disclosure":"aggregated"},
-        {"label":"a) Ammortamento delle immobilizzazioni immateriali","category":"player_amortisation","amount":-6.31514,"disclosure":"aggregated"},
-        {"label":"b) Ammortamento delle immobilizzazioni materiali","category":"depreciation","amount":-0.338056,"disclosure":"aggregated"},
-        {"label":"c) Altre svalutazioni delle immobilizzazioni","category":"player_impairment","amount":-0.01417,"disclosure":"aggregated"},
-        {"label":"d) Svalutazioni cred. incl. nell'attivo circolante","category":"other_expenses","amount":-0.771053,"disclosure":"aggregated"},
-        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":0,"disclosure":"aggregated"},
-        {"label":"Altri accantonamenti","category":"other_amortisation","amount":0,"disclosure":"aggregated"},
-        {"label":"Spese varie organizzazione gare","category":"match_organisation_expense","amount":-1.194,"disclosure":"aggregated"},
-        {"label":"Tasse iscrizioni gare","category":"match_organisation_expense","amount":-0.008,"disclosure":"aggregated"},
-        {"label":"b) Costi per acquisizione temporanea prestazioni calciatori","category":"other_expenses","amount":-4.577107,"disclosure":"aggregated"},
-        {"label":"c) Minusvalenze da cessione diritti prestazioni calciatori","category":"exceptional_items","amount":-1.441969,"disclosure":"aggregated"},
-        {"label":"Costi di valorizzazione calciatori","category":"player_amortisation","amount":-0.178,"disclosure":"aggregated"},
-        {"label":"Premi di rendimento","category":"wages_squad","amount":-1.503,"disclosure":"aggregated"},
-        {"label":"Altri costi da gestione calciatori","category":"other_expenses","amount":-0.632,"disclosure":"aggregated"},
-        {"label":"- Ammende e multe gara","category":"other_expenses","amount":-0.001,"disclosure":"aggregated"},
-        {"label":"- Devoluzione e Servizi Lega","category":"match_organisation_expense","amount":-4.633,"disclosure":"aggregated"},
-        {"label":"- Oneri precedenti esercizi e sopravvenienze passive","category":"exceptional_items","amount":-0.109,"disclosure":"aggregated"},
-        {"label":"- Altre spese","category":"other_expenses","amount":-0.133,"disclosure":"aggregated"}
+        {
+          "label": "Per materie prime, sussidiarie, di consumo e di merci",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.711881,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi per tesserati","category":"first_team_staff","subcategory":"wages_squad","amount":-2.174,"disclosure":"aggregated"},
+        {
+          "label": "Costi per attività sportiva",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.12,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi specifici tecnici","category":"match_operations","subcategory":"match_organisation_expense","amount":-4.468,"disclosure":"aggregated"},
+        {
+          "label": "Costi vitto, alloggio, locomozione gare",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.509,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servizio stewarding, biglietteria, controllo",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.008,
+          "disclosure": "aggregated"
+        },
+        {"label":"Assicurative e previdenziali","category":"admin_general","subcategory":"admin_general_expense","amount":-0.169,"disclosure":"aggregated"},
+        {
+          "label": "Amministrative, pubblicitarie e generali",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.9,
+          "disclosure": "aggregated"
+        },
+        {"label":"Affitto campi sportivi","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.06,"disclosure":"aggregated"},
+        {
+          "label": "Affitto impianti sportivi",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.731,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi di noleggio","category":"admin_general","subcategory":"admin_general_expense","amount":-0.514,"disclosure":"aggregated"},
+        {"label":"Canoni affitto altri locali","category":"admin_general","subcategory":"admin_general_expense","amount":-0.012,"disclosure":"aggregated"},
+        {
+          "label": "Altre spese su beni di terzi",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.011,
+          "disclosure": "aggregated"
+        },
+        {"label":"Locazioni finanziarie","category":"admin_general","subcategory":"admin_general_expense","amount":-0.019,"disclosure":"aggregated"},
+        {"label":"a) Salari e stipendi","category":"first_team_staff","subcategory":"wages_squad","amount":-48.925992,"disclosure":"aggregated"},
+        {"label":"b) Oneri sociali","category":"first_team_staff","subcategory":"wages_squad","amount":-2.344918,"disclosure":"aggregated"},
+        {"label":"c) Trattamento di fine rapporto","category":"first_team_staff","subcategory":"wages_squad","amount":-0.482883,"disclosure":"aggregated"},
+        {"label":"d) altri costi","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.718924,"disclosure":"aggregated"},
+        {
+          "label": "a) Ammortamento delle immobilizzazioni immateriali",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -6.31514,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Ammortamento delle immobilizzazioni materiali",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.338056,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "c) Altre svalutazioni delle immobilizzazioni",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -0.01417,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "d) Svalutazioni cred. incl. nell'attivo circolante",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.771053,
+          "disclosure": "aggregated"
+        },
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","subcategory":"other_amortisation","amount":0,"disclosure":"aggregated"},
+        {"label":"Altri accantonamenti","category":"other_amortisation","subcategory":"other_amortisation","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "Spese varie organizzazione gare",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.194,
+          "disclosure": "aggregated"
+        },
+        {"label":"Tasse iscrizioni gare","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.008,"disclosure":"aggregated"},
+        {
+          "label": "b) Costi per acquisizione temporanea prestazioni calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -4.577107,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "c) Minusvalenze da cessione diritti prestazioni calciatori",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -1.441969,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi di valorizzazione calciatori",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.178,
+          "disclosure": "aggregated"
+        },
+        {"label":"Premi di rendimento","category":"first_team_staff","subcategory":"wages_squad","amount":-1.503,"disclosure":"aggregated"},
+        {
+          "label": "Altri costi da gestione calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.632,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Ammende e multe gara","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.001,"disclosure":"aggregated"},
+        {
+          "label": "- Devoluzione e Servizi Lega",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -4.633,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "- Oneri precedenti esercizi e sopravvenienze passive",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.109,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Altre spese","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.133,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.577757,"tax":-2.790442,"gross_debt":28.642564,"cash":8.972},
       "official_totals": {"revenue":99.198328,"expenses":93.177124,"net_result":1.102784},
@@ -220,55 +522,194 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
-        {"label":"Ricavi da gare","category":"matchday_competition","amount":2.696165,"disclosure":"aggregated"},
-        {"label":"Abbonamenti","category":"season_tickets","amount":1.29878,"disclosure":"aggregated"},
-        {"label":"Corrispettivi","category":"matchday_competition","amount":1.320626,"disclosure":"aggregated"},
-        {"label":"a) Contributi in conto esercizio","category":"other_income","amount":1.952128,"disclosure":"aggregated"},
-        {"label":"b) Proventi da sponsorizzazioni","category":"sponsorship_commercial","amount":9.073346,"disclosure":"aggregated"},
-        {"label":"c) Proventi pubblicitari","category":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
-        {"label":"d) Proventi commerciali e royalties","category":"sponsorship_commercial","amount":1.06995,"disclosure":"aggregated"},
-        {"label":"e) Proventi da cessioni diritti audiovisivi","category":"broadcasting","amount":37.199488,"disclosure":"aggregated"},
-        {"label":"f) Ricavi da cessione temporanea prestazione calciatori","category":"player_sales","amount":0.29,"disclosure":"aggregated"},
-        {"label":"g) Plusvalenze da cessione pluriennale diritti calciatori","category":"player_sales","amount":23.310496,"disclosure":"aggregated"},
-        {"label":"di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF","category":"player_sales","amount":0.2085,"disclosure":"aggregated"},
-        {"label":"di cui proventi diversi da trasferimento calciatori","category":"player_sales","amount":1.094565,"disclosure":"aggregated"},
-        {"label":"i) Ricavi e proventi diversi","category":"other_income","amount":5.034942,"disclosure":"aggregated"}
+        {"label":"Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":2.696165,"disclosure":"aggregated"},
+        {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":1.29878,"disclosure":"aggregated"},
+        {"label":"Corrispettivi","category":"matchday","subcategory":"matchday_competition","amount":1.320626,"disclosure":"aggregated"},
+        {"label":"a) Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.952128,"disclosure":"aggregated"},
+        {"label":"b) Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":9.073346,"disclosure":"aggregated"},
+        {"label":"c) Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "d) Proventi commerciali e royalties",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1.06995,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "e) Proventi da cessioni diritti audiovisivi",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 37.199488,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "f) Ricavi da cessione temporanea prestazione calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.29,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "g) Plusvalenze da cessione pluriennale diritti calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 23.310496,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.2085,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui proventi diversi da trasferimento calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1.094565,
+          "disclosure": "aggregated"
+        },
+        {"label":"i) Ricavi e proventi diversi","category":"other_revenue","subcategory":"other_income","amount":5.034942,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Per materie prime, sussidiarie, di consumo e di merci","category":"other_expenses","amount":-2.036217,"disclosure":"aggregated"},
-        {"label":"Costi per tesserati","category":"wages_squad","amount":-1.885,"disclosure":"aggregated"},
-        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-1.049,"disclosure":"aggregated"},
-        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-3.035,"disclosure":"aggregated"},
-        {"label":"Costi vitto, alloggio, locomozione gare","category":"match_organisation_expense","amount":-0.461,"disclosure":"aggregated"},
-        {"label":"Servizio biglietteria e controllo ingressi","category":"match_organisation_expense","amount":-0.246,"disclosure":"aggregated"},
-        {"label":"Assicurative e previdenziali","category":"admin_general_expense","amount":-0.264,"disclosure":"aggregated"},
-        {"label":"Amministrative, pubblicitarie e generali","category":"admin_general_expense","amount":-6.881,"disclosure":"aggregated"},
-        {"label":"Per godimento di beni di terzi","category":"admin_general_expense","amount":-2.085756,"disclosure":"aggregated"},
-        {"label":"a) Salari e stipendi","category":"wages_squad","amount":-32.804689,"disclosure":"aggregated"},
-        {"label":"b) Oneri sociali","category":"wages_squad","amount":-2.132719,"disclosure":"aggregated"},
-        {"label":"c) Trattamento di fine rapporto","category":"wages_squad","amount":-0.562555,"disclosure":"aggregated"},
-        {"label":"e) altri costi","category":"other_expenses","amount":-3.387299,"disclosure":"aggregated"},
-        {"label":"a) Ammortamento delle immobilizzazioni immateriali","category":"player_amortisation","amount":-19.643692,"disclosure":"aggregated"},
-        {"label":"b) Ammortamento delle immobilizzazioni materiali","category":"depreciation","amount":-0.420344,"disclosure":"aggregated"},
-        {"label":"c) Altre svalutazioni delle immobilizzazioni","category":"player_impairment","amount":-0.012099,"disclosure":"aggregated"},
-        {"label":"d) Svalutazioni cred. incl. nell'attivo circolante","category":"other_expenses","amount":-0.98679,"disclosure":"aggregated"},
+        {
+          "label": "Per materie prime, sussidiarie, di consumo e di merci",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.036217,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi per tesserati","category":"first_team_staff","subcategory":"wages_squad","amount":-1.885,"disclosure":"aggregated"},
+        {
+          "label": "Costi per attività sportiva",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.049,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi specifici tecnici","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.035,"disclosure":"aggregated"},
+        {
+          "label": "Costi vitto, alloggio, locomozione gare",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.461,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servizio biglietteria e controllo ingressi",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.246,
+          "disclosure": "aggregated"
+        },
+        {"label":"Assicurative e previdenziali","category":"admin_general","subcategory":"admin_general_expense","amount":-0.264,"disclosure":"aggregated"},
+        {
+          "label": "Amministrative, pubblicitarie e generali",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.881,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Per godimento di beni di terzi",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.085756,
+          "disclosure": "aggregated"
+        },
+        {"label":"a) Salari e stipendi","category":"first_team_staff","subcategory":"wages_squad","amount":-32.804689,"disclosure":"aggregated"},
+        {"label":"b) Oneri sociali","category":"first_team_staff","subcategory":"wages_squad","amount":-2.132719,"disclosure":"aggregated"},
+        {"label":"c) Trattamento di fine rapporto","category":"first_team_staff","subcategory":"wages_squad","amount":-0.562555,"disclosure":"aggregated"},
+        {"label":"e) altri costi","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.387299,"disclosure":"aggregated"},
+        {
+          "label": "a) Ammortamento delle immobilizzazioni immateriali",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -19.643692,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Ammortamento delle immobilizzazioni materiali",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.420344,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "c) Altre svalutazioni delle immobilizzazioni",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -0.012099,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "d) Svalutazioni cred. incl. nell'attivo circolante",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.98679,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.15235,
           "disclosure": "aggregated"
         },
-        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":0,"disclosure":"aggregated"},
-        {"label":"Altri accantonamenti","category":"other_amortisation","amount":0,"disclosure":"aggregated"},
-        {"label":"a) Oneri da organizzazione competizioni","category":"match_organisation_expense","amount":-1.486523,"disclosure":"aggregated"},
-        {"label":"b) Costi per acquisizione temporanea prestazioni calciatori","category":"other_expenses","amount":-1.951056,"disclosure":"aggregated"},
-        {"label":"c) Minusvalenze da cessione diritti prestazioni calciatori","category":"exceptional_items","amount":-0.593586,"disclosure":"aggregated"},
-        {"label":"di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF","category":"player_amortisation","amount":-1.535685,"disclosure":"aggregated"},
-        {"label":"di cui proventi diversi da trasferimento calciatori","category":"other_expenses","amount":-2.552867,"disclosure":"aggregated"},
-        {"label":"- Ammende e multe gara","category":"other_expenses","amount":-0.05,"disclosure":"aggregated"},
-        {"label":"- Devoluzione e Servizi Lega","category":"match_organisation_expense","amount":-1.931,"disclosure":"aggregated"},
-        {"label":"- Oneri precedenti esercizi e sopravvenienze passive","category":"exceptional_items","amount":-0.189,"disclosure":"aggregated"},
-        {"label":"- Altre spese","category":"other_expenses","amount":-0.283,"disclosure":"aggregated"}
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","subcategory":"other_amortisation","amount":0,"disclosure":"aggregated"},
+        {"label":"Altri accantonamenti","category":"other_amortisation","subcategory":"other_amortisation","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "a) Oneri da organizzazione competizioni",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.486523,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Costi per acquisizione temporanea prestazioni calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.951056,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "c) Minusvalenze da cessione diritti prestazioni calciatori",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.593586,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1.535685,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui proventi diversi da trasferimento calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.552867,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Ammende e multe gara","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.05,"disclosure":"aggregated"},
+        {
+          "label": "- Devoluzione e Servizi Lega",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.931,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "- Oneri precedenti esercizi e sopravvenienze passive",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.189,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Altre spese","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.283,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.129603,"tax":0.141121,"gross_debt":44.071284,"cash":12.002952},
       "official_totals": {"revenue":84.548986,"expenses":87.835641,"net_result":-5.057437},
@@ -292,53 +733,203 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
-        {"label":"a) Ricavi da gare","category":"matchday_competition","amount":2.502149,"disclosure":"aggregated"},
-        {"label":"b) Abbonamenti","category":"season_tickets","amount":1.953526,"disclosure":"aggregated"},
-        {"label":"c) Corrispettivi Store","category":"sponsorship_commercial","amount":1.473301,"disclosure":"aggregated"},
-        {"label":"a) Contributi in conto esercizio","category":"other_income","amount":1.324461,"disclosure":"aggregated"},
-        {"label":"b) Proventi da sponsorizzazioni","category":"sponsorship_commercial","amount":9.066377,"disclosure":"aggregated"},
-        {"label":"c) Proventi pubblicitari","category":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
-        {"label":"d) Proventi commerciali e royalties","category":"sponsorship_commercial","amount":1.845,"disclosure":"aggregated"},
-        {"label":"e) Proventi da cessioni diritti audiovisivi","category":"broadcasting","amount":34.134013,"disclosure":"aggregated"},
-        {"label":"f) Ricavi da cessione temporanea prestazioni calciatori","category":"player_sales","amount":8.1445,"disclosure":"aggregated"},
-        {"label":"g) Plusvalenze da cessione pluriennale diritti calciatori","category":"player_sales","amount":30.912273,"disclosure":"aggregated"},
-        {"label":"di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF","category":"player_sales","amount":4.773504,"disclosure":"aggregated"},
-        {"label":"di cui proventi diversi da trasferimento calciatori","category":"player_sales","amount":0.166703,"disclosure":"aggregated"},
-        {"label":"i) Ricavi e proventi diversi","category":"other_income","amount":2.14917,"disclosure":"aggregated"}
+        {"label":"a) Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":2.502149,"disclosure":"aggregated"},
+        {"label":"b) Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":1.953526,"disclosure":"aggregated"},
+        {"label":"c) Corrispettivi Store","category":"commercial","subcategory":"sponsorship_commercial","amount":1.473301,"disclosure":"aggregated"},
+        {"label":"a) Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.324461,"disclosure":"aggregated"},
+        {"label":"b) Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":9.066377,"disclosure":"aggregated"},
+        {"label":"c) Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "d) Proventi commerciali e royalties",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1.845,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "e) Proventi da cessioni diritti audiovisivi",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 34.134013,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "f) Ricavi da cessione temporanea prestazioni calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 8.1445,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "g) Plusvalenze da cessione pluriennale diritti calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 30.912273,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 4.773504,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui proventi diversi da trasferimento calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.166703,
+          "disclosure": "aggregated"
+        },
+        {"label":"i) Ricavi e proventi diversi","category":"other_revenue","subcategory":"other_income","amount":2.14917,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"6) Per materie prime, sussidiarie, di consumo e di merci","category":"other_expenses","amount":-1.998446,"disclosure":"aggregated"},
-        {"label":"Costi per tesserati","category":"wages_squad","amount":-1.357,"disclosure":"aggregated"},
-        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-1.035,"disclosure":"aggregated"},
-        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-5.889,"disclosure":"aggregated"},
-        {"label":"Costi vitto, alloggio, locomozione gare","category":"match_organisation_expense","amount":-0.567,"disclosure":"aggregated"},
-        {"label":"Servizio biglietteria e controllo ingressi","category":"match_organisation_expense","amount":-0.25,"disclosure":"aggregated"},
-        {"label":"Assicurative e previdenziali","category":"admin_general_expense","amount":-0.268,"disclosure":"aggregated"},
-        {"label":"Amministrative, pubblicitarie e generali","category":"admin_general_expense","amount":-5.629,"disclosure":"aggregated"},
-        {"label":"Affitto campi sportivi","category":"match_organisation_expense","amount":-0.068,"disclosure":"aggregated"},
-        {"label":"Affitto impianti sportivi","category":"match_organisation_expense","amount":-0.94,"disclosure":"aggregated"},
-        {"label":"Costi di noleggio","category":"admin_general_expense","amount":-0.918,"disclosure":"aggregated"},
-        {"label":"Canoni affitto altri locali","category":"admin_general_expense","amount":-0.174,"disclosure":"aggregated"},
-        {"label":"Altre spese su beni di terzi","category":"other_expenses","amount":-0.037,"disclosure":"aggregated"},
-        {"label":"Locazioni finanziarie","category":"admin_general_expense","amount":-0.064,"disclosure":"aggregated"},
-        {"label":"a) Salari e stipendi","category":"wages_squad","amount":-49.183265,"disclosure":"aggregated"},
-        {"label":"b) Oneri sociali","category":"wages_squad","amount":-2.949636,"disclosure":"aggregated"},
-        {"label":"c) Trattamento di fine rapporto","category":"wages_squad","amount":-0.560313,"disclosure":"aggregated"},
-        {"label":"d) altri costi","category":"other_expenses","amount":-1.672547,"disclosure":"aggregated"},
-        {"label":"a) Ammortamento delle immobilizzazioni immateriali","category":"player_amortisation","amount":-23.841826,"disclosure":"aggregated"},
-        {"label":"b) Ammortamento delle immobilizzazioni materiali","category":"depreciation","amount":-0.414622,"disclosure":"aggregated"},
-        {"label":"d) Svalutazioni cred. incl. nell'attivo circolante","category":"other_expenses","amount":-1.025542,"disclosure":"aggregated"},
-        {"label":"a) Oneri da organizzazione competizioni","category":"match_organisation_expense","amount":-1.871434,"disclosure":"aggregated"},
-        {"label":"b) Costi per acquisizione temporanea prestazioni calciatori","category":"other_expenses","amount":-0.547,"disclosure":"aggregated"},
-        {"label":"c) Minusvalenze da cessione diritti prestazioni calciatori","category":"exceptional_items","amount":-0.699186,"disclosure":"aggregated"},
-        {"label":"di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF","category":"player_amortisation","amount":-0.120596,"disclosure":"aggregated"},
-        {"label":"di cui costi diversi da trasferimento calciatori","category":"other_expenses","amount":-2.69664,"disclosure":"aggregated"},
-        {"label":"- Ammende e multe gara","category":"other_expenses","amount":-0.092,"disclosure":"aggregated"},
-        {"label":"- Devoluzione e Servizi Lega","category":"match_organisation_expense","amount":-1.191,"disclosure":"aggregated"},
-        {"label":"- Oneri precedenti esercizi e sopravvenienze passive","category":"exceptional_items","amount":-0.142,"disclosure":"aggregated"},
-        {"label":"- Altre spese","category":"other_expenses","amount":-0.795,"disclosure":"aggregated"},
-        {"label":"12) Accantonamenti per rischi","category":"other_amortisation","amount":-8.21724,"disclosure":"aggregated"},
-        {"label":"11) Variazioni delle rimanenze (a favor)","category":"other_expenses","amount":0.025971,"disclosure":"aggregated"}
+        {
+          "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.998446,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi per tesserati","category":"first_team_staff","subcategory":"wages_squad","amount":-1.357,"disclosure":"aggregated"},
+        {
+          "label": "Costi per attività sportiva",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.035,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi specifici tecnici","category":"match_operations","subcategory":"match_organisation_expense","amount":-5.889,"disclosure":"aggregated"},
+        {
+          "label": "Costi vitto, alloggio, locomozione gare",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.567,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servizio biglietteria e controllo ingressi",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.25,
+          "disclosure": "aggregated"
+        },
+        {"label":"Assicurative e previdenziali","category":"admin_general","subcategory":"admin_general_expense","amount":-0.268,"disclosure":"aggregated"},
+        {
+          "label": "Amministrative, pubblicitarie e generali",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.629,
+          "disclosure": "aggregated"
+        },
+        {"label":"Affitto campi sportivi","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.068,"disclosure":"aggregated"},
+        {
+          "label": "Affitto impianti sportivi",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.94,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi di noleggio","category":"admin_general","subcategory":"admin_general_expense","amount":-0.918,"disclosure":"aggregated"},
+        {"label":"Canoni affitto altri locali","category":"admin_general","subcategory":"admin_general_expense","amount":-0.174,"disclosure":"aggregated"},
+        {
+          "label": "Altre spese su beni di terzi",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.037,
+          "disclosure": "aggregated"
+        },
+        {"label":"Locazioni finanziarie","category":"admin_general","subcategory":"admin_general_expense","amount":-0.064,"disclosure":"aggregated"},
+        {"label":"a) Salari e stipendi","category":"first_team_staff","subcategory":"wages_squad","amount":-49.183265,"disclosure":"aggregated"},
+        {"label":"b) Oneri sociali","category":"first_team_staff","subcategory":"wages_squad","amount":-2.949636,"disclosure":"aggregated"},
+        {"label":"c) Trattamento di fine rapporto","category":"first_team_staff","subcategory":"wages_squad","amount":-0.560313,"disclosure":"aggregated"},
+        {"label":"d) altri costi","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.672547,"disclosure":"aggregated"},
+        {
+          "label": "a) Ammortamento delle immobilizzazioni immateriali",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -23.841826,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Ammortamento delle immobilizzazioni materiali",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.414622,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "d) Svalutazioni cred. incl. nell'attivo circolante",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.025542,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "a) Oneri da organizzazione competizioni",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.871434,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Costi per acquisizione temporanea prestazioni calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.547,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "c) Minusvalenze da cessione diritti prestazioni calciatori",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.699186,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.120596,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui costi diversi da trasferimento calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.69664,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Ammende e multe gara","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.092,"disclosure":"aggregated"},
+        {
+          "label": "- Devoluzione e Servizi Lega",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.191,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "- Oneri precedenti esercizi e sopravvenienze passive",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.142,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Altre spese","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.795,"disclosure":"aggregated"},
+        {
+          "label": "12) Accantonamenti per rischi",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -8.21724,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "11) Variazioni delle rimanenze (a favor)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": 0.025971,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.525718,"tax":1.341981,"gross_debt":70.132617,"cash":4.57734},
       "official_totals": {"revenue":98.444977,"expenses":114.347136,"net_result":-19.9277},
@@ -364,64 +955,227 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Ricavi da gare","category":"matchday_competition","amount":3.096307,"disclosure":"aggregated"},
-        {"label":"Abbonamenti","category":"season_tickets","amount":2.140199,"disclosure":"aggregated"},
-        {"label":"Corrispettivi Store","category":"sponsorship_commercial","amount":1.694135,"disclosure":"aggregated"},
-        {"label":"Contributi in conto esercizio","category":"other_income","amount":1.907003,"disclosure":"aggregated"},
-        {"label":"Proventi da sponsorizzazioni","category":"sponsorship_commercial","amount":11.303402,"disclosure":"aggregated"},
-        {"label":"Proventi pubblicitari","category":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
-        {"label":"Proventi commerciali e royalties","category":"sponsorship_commercial","amount":1.02,"disclosure":"aggregated"},
-        {"label":"Proventi da cessioni diritti audiovisivi","category":"broadcasting","amount":38.391245,"disclosure":"aggregated"},
-        {"label":"Ricavi da cessione temporanea prestazioni calciatori","category":"player_sales","amount":0.2,"disclosure":"aggregated"},
-        {"label":"Plusvalenze da cessione pluriennale diritti calciatori","category":"player_sales","amount":45.424013,"disclosure":"aggregated"},
-        {"label":"di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF","category":"player_sales","amount":4.492,"disclosure":"aggregated"},
-        {"label":"di cui proventi diversi da trasferimento calciatori","category":"player_sales","amount":1.399619,"disclosure":"aggregated"},
-        {"label":"Ricavi e proventi diversi","category":"other_income","amount":4.224478,"disclosure":"aggregated"}
+        {"label":"Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":3.096307,"disclosure":"aggregated"},
+        {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":2.140199,"disclosure":"aggregated"},
+        {"label":"Corrispettivi Store","category":"commercial","subcategory":"sponsorship_commercial","amount":1.694135,"disclosure":"aggregated"},
+        {"label":"Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.907003,"disclosure":"aggregated"},
+        {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":11.303402,"disclosure":"aggregated"},
+        {"label":"Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
+        {"label":"Proventi commerciali e royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":1.02,"disclosure":"aggregated"},
+        {
+          "label": "Proventi da cessioni diritti audiovisivi",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 38.391245,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ricavi da cessione temporanea prestazioni calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.2,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Plusvalenze da cessione pluriennale diritti calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 45.424013,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 4.492,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui proventi diversi da trasferimento calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1.399619,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ricavi e proventi diversi","category":"other_revenue","subcategory":"other_income","amount":4.224478,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Per materie prime, sussidiarie, di consumo e di merci","category":"other_expenses","amount":-3.768163,"disclosure":"aggregated"},
-        {"label":"Costi per tesserati","category":"wages_squad","amount":-1.577,"disclosure":"aggregated"},
-        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-1.3,"disclosure":"aggregated"},
-        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-2.238,"disclosure":"aggregated"},
-        {"label":"Costi vitto, alloggio, locomozione gare","category":"match_organisation_expense","amount":-0.751,"disclosure":"aggregated"},
-        {"label":"Servizio biglietteria e controllo ingressi","category":"match_organisation_expense","amount":-0.284,"disclosure":"aggregated"},
-        {"label":"Assicurative e previdenziali","category":"admin_general_expense","amount":-0.257,"disclosure":"aggregated"},
-        {"label":"Amministrative, pubblicitarie e generali","category":"admin_general_expense","amount":-5.438,"disclosure":"aggregated"},
-        {"label":"Affitto campi sportivi","category":"match_organisation_expense","amount":-0.087,"disclosure":"aggregated"},
-        {"label":"Affitto impianti sportivi","category":"match_organisation_expense","amount":-0.977,"disclosure":"aggregated"},
-        {"label":"Costi di noleggio","category":"admin_general_expense","amount":-0.911,"disclosure":"aggregated"},
-        {"label":"Canoni affitto altri locali","category":"admin_general_expense","amount":-0.216,"disclosure":"aggregated"},
-        {"label":"Altre spese su beni di terzi","category":"other_expenses","amount":-0.057,"disclosure":"aggregated"},
-        {"label":"Locazioni finanziarie","category":"admin_general_expense","amount":-0.048,"disclosure":"aggregated"},
-        {"label":"Salari e stipendi","category":"wages_squad","amount":-36.920605,"disclosure":"aggregated"},
-        {"label":"Oneri sociali","category":"wages_squad","amount":-3.453521,"disclosure":"aggregated"},
-        {"label":"Trattamento di fine rapporto","category":"wages_squad","amount":-0.590814,"disclosure":"aggregated"},
-        {"label":"altri costi","category":"other_expenses","amount":-2.698679,"disclosure":"aggregated"},
-        {"label":"Ammortamento delle immobilizzazioni immateriali","category":"player_amortisation","amount":-18.837198,"disclosure":"aggregated"},
-        {"label":"Ammortamento delle immobilizzazioni materiali","category":"depreciation","amount":-0.426036,"disclosure":"aggregated"},
-        {"label":"Atre svalutazioni delle immobilizzazioni","category":"player_impairment","amount":-2.874196,"disclosure":"aggregated"},
-        {"label":"Svalutazioni cred. incl. nell'attivo circolante","category":"other_expenses","amount":-1.291524,"disclosure":"aggregated"},
+        {
+          "label": "Per materie prime, sussidiarie, di consumo e di merci",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -3.768163,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi per tesserati","category":"first_team_staff","subcategory":"wages_squad","amount":-1.577,"disclosure":"aggregated"},
+        {
+          "label": "Costi per attività sportiva",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.3,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi specifici tecnici","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.238,"disclosure":"aggregated"},
+        {
+          "label": "Costi vitto, alloggio, locomozione gare",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.751,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servizio biglietteria e controllo ingressi",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.284,
+          "disclosure": "aggregated"
+        },
+        {"label":"Assicurative e previdenziali","category":"admin_general","subcategory":"admin_general_expense","amount":-0.257,"disclosure":"aggregated"},
+        {
+          "label": "Amministrative, pubblicitarie e generali",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.438,
+          "disclosure": "aggregated"
+        },
+        {"label":"Affitto campi sportivi","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.087,"disclosure":"aggregated"},
+        {
+          "label": "Affitto impianti sportivi",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.977,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi di noleggio","category":"admin_general","subcategory":"admin_general_expense","amount":-0.911,"disclosure":"aggregated"},
+        {"label":"Canoni affitto altri locali","category":"admin_general","subcategory":"admin_general_expense","amount":-0.216,"disclosure":"aggregated"},
+        {
+          "label": "Altre spese su beni di terzi",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.057,
+          "disclosure": "aggregated"
+        },
+        {"label":"Locazioni finanziarie","category":"admin_general","subcategory":"admin_general_expense","amount":-0.048,"disclosure":"aggregated"},
+        {"label":"Salari e stipendi","category":"first_team_staff","subcategory":"wages_squad","amount":-36.920605,"disclosure":"aggregated"},
+        {"label":"Oneri sociali","category":"first_team_staff","subcategory":"wages_squad","amount":-3.453521,"disclosure":"aggregated"},
+        {"label":"Trattamento di fine rapporto","category":"first_team_staff","subcategory":"wages_squad","amount":-0.590814,"disclosure":"aggregated"},
+        {"label":"altri costi","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.698679,"disclosure":"aggregated"},
+        {
+          "label": "Ammortamento delle immobilizzazioni immateriali",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -18.837198,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ammortamento delle immobilizzazioni materiali",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.426036,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Atre svalutazioni delle immobilizzazioni",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -2.874196,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Svalutazioni cred. incl. nell'attivo circolante",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.291524,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": 0.55266,
           "disclosure": "aggregated"
         },
-        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-0.056927,"disclosure":"aggregated"},
-        {"label":"Altri accantonamenti","category":"other_amortisation","amount":0,"disclosure":"aggregated"},
-        {"label":"Oneri da organizzazione competizioni","category":"match_organisation_expense","amount":-2.656706,"disclosure":"aggregated"},
-        {"label":"Costi per acquisizione temporanea prestazioni calciatori","category":"other_expenses","amount":-1.102929,"disclosure":"aggregated"},
-        {"label":"Minusvalenze da cessione diritti prestazioni calciatori","category":"exceptional_items","amount":-0.857397,"disclosure":"aggregated"},
-        {"label":"di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF","category":"player_amortisation","amount":-0.344546,"disclosure":"aggregated"},
-        {"label":"Sell On/mandati trasferimenti","category":"other_expenses","amount":-7.972,"disclosure":"aggregated"},
-        {"label":"Costi per acquisizione vivaio","category":"player_amortisation","amount":-0.064,"disclosure":"aggregated"},
-        {"label":"Costi di valorizzazione calciatori","category":"player_amortisation","amount":-0.7,"disclosure":"aggregated"},
-        {"label":"Contributi di solidarietà","category":"player_amortisation","amount":-2.468,"disclosure":"aggregated"},
-        {"label":"Altri costi di preparazione, addestramento, formazione","category":"player_amortisation","amount":-0.041,"disclosure":"aggregated"},
-        {"label":"- Ammende e multe gara","category":"other_expenses","amount":-0.041,"disclosure":"aggregated"},
-        {"label":"- Devoluzione e Servizi Lega","category":"match_organisation_expense","amount":-1.488,"disclosure":"aggregated"},
-        {"label":"- Oneri precedenti esercizi e sopravvenienze passive","category":"exceptional_items","amount":-0.109,"disclosure":"aggregated"},
-        {"label":"- Altre spese","category":"other_expenses","amount":-0.686,"disclosure":"aggregated"}
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","subcategory":"other_amortisation","amount":-0.056927,"disclosure":"aggregated"},
+        {"label":"Altri accantonamenti","category":"other_amortisation","subcategory":"other_amortisation","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "Oneri da organizzazione competizioni",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.656706,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi per acquisizione temporanea prestazioni calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.102929,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Minusvalenze da cessione diritti prestazioni calciatori",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.857397,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.344546,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Sell On/mandati trasferimenti",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7.972,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi per acquisizione vivaio",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.064,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi di valorizzazione calciatori",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.7,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Contributi di solidarietà",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.468,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Altri costi di preparazione, addestramento, formazione",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.041,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Ammende e multe gara","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.041,"disclosure":"aggregated"},
+        {
+          "label": "- Devoluzione e Servizi Lega",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.488,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "- Oneri precedenti esercizi e sopravvenienze passive",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.109,
+          "disclosure": "aggregated"
+        },
+        {"label":"- Altre spese","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.686,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.118932,"tax":-4.224898,"gross_debt":89.756114,"cash":0.773766},
       "official_totals": {"revenue":115.292401,"expenses":102.070184,"net_result":3.913439},
@@ -446,42 +1200,145 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Ricavi da gare","category":"matchday_competition","amount":2.882969,"disclosure":"aggregated"},
-        {"label":"Abbonamenti","category":"season_tickets","amount":2.631439,"disclosure":"aggregated"},
-        {"label":"Corrispettivi Store","category":"sponsorship_commercial","amount":2.126867,"disclosure":"aggregated"},
-        {"label":"Contributi in conto esercizio","category":"other_income","amount":1.530688,"disclosure":"aggregated"},
-        {"label":"Proventi da sponsorizzazioni","category":"sponsorship_commercial","amount":11.482452,"disclosure":"aggregated"},
-        {"label":"Proventi commerciali e royalties","category":"sponsorship_commercial","amount":1.406566,"disclosure":"aggregated"},
-        {"label":"Proventi da cessioni diritti audiovisivi","category":"broadcasting","amount":33.453625,"disclosure":"aggregated"},
-        {"label":"Ricavi da cessione temporanea prestazioni calciatori","category":"player_sales","amount":0.46,"disclosure":"aggregated"},
-        {"label":"Plusvalenze da cessione pluriennale diritti calciatori","category":"player_sales","amount":31.550568,"disclosure":"aggregated"},
-        {"label":"Altri proventi da trasferimento calciatori","category":"player_sales","amount":9.481347,"disclosure":"aggregated"},
-        {"label":"Ricavi e proventi diversi","category":"other_income","amount":4.586882,"disclosure":"aggregated"}
+        {"label":"Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":2.882969,"disclosure":"aggregated"},
+        {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":2.631439,"disclosure":"aggregated"},
+        {"label":"Corrispettivi Store","category":"commercial","subcategory":"sponsorship_commercial","amount":2.126867,"disclosure":"aggregated"},
+        {"label":"Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.530688,"disclosure":"aggregated"},
+        {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":11.482452,"disclosure":"aggregated"},
+        {
+          "label": "Proventi commerciali e royalties",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1.406566,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Proventi da cessioni diritti audiovisivi",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 33.453625,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ricavi da cessione temporanea prestazioni calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.46,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Plusvalenze da cessione pluriennale diritti calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 31.550568,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Altri proventi da trasferimento calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 9.481347,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ricavi e proventi diversi","category":"other_revenue","subcategory":"other_income","amount":4.586882,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Per materie prime, sussidiarie, di consumo e di merci","category":"other_expenses","amount":-3.074386,"disclosure":"aggregated"},
-        {"label":"Per servizi","category":"admin_general_expense","amount":-16.770981,"disclosure":"aggregated"},
-        {"label":"Per godimento di beni di terzi","category":"admin_general_expense","amount":-2.371282,"disclosure":"aggregated"},
-        {"label":"Salari e stipendi","category":"wages_squad","amount":-37.560681,"disclosure":"aggregated"},
-        {"label":"Oneri sociali","category":"wages_squad","amount":-3.703567,"disclosure":"aggregated"},
-        {"label":"Trattamento di fine rapporto","category":"wages_squad","amount":-0.636719,"disclosure":"aggregated"},
-        {"label":"altri costi","category":"other_expenses","amount":-1.439552,"disclosure":"aggregated"},
-        {"label":"Ammortamento delle immobilizzazioni immateriali","category":"player_amortisation","amount":-16.009055,"disclosure":"aggregated"},
-        {"label":"Ammortamento delle immobilizzazioni materiali","category":"depreciation","amount":-0.389553,"disclosure":"aggregated"},
-        {"label":"Atre svalutazioni delle immobilizzazioni","category":"player_impairment","amount":-4.31625,"disclosure":"aggregated"},
-        {"label":"Svalutazioni cred. incl. nell'attivo circolante","category":"other_expenses","amount":-0.78918,"disclosure":"aggregated"},
+        {
+          "label": "Per materie prime, sussidiarie, di consumo e di merci",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -3.074386,
+          "disclosure": "aggregated"
+        },
+        {"label":"Per servizi","category":"admin_general","subcategory":"admin_general_expense","amount":-16.770981,"disclosure":"aggregated"},
+        {
+          "label": "Per godimento di beni di terzi",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.371282,
+          "disclosure": "aggregated"
+        },
+        {"label":"Salari e stipendi","category":"first_team_staff","subcategory":"wages_squad","amount":-37.560681,"disclosure":"aggregated"},
+        {"label":"Oneri sociali","category":"first_team_staff","subcategory":"wages_squad","amount":-3.703567,"disclosure":"aggregated"},
+        {"label":"Trattamento di fine rapporto","category":"first_team_staff","subcategory":"wages_squad","amount":-0.636719,"disclosure":"aggregated"},
+        {"label":"altri costi","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.439552,"disclosure":"aggregated"},
+        {
+          "label": "Ammortamento delle immobilizzazioni immateriali",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -16.009055,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ammortamento delle immobilizzazioni materiali",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.389553,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Atre svalutazioni delle immobilizzazioni",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -4.31625,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Svalutazioni cred. incl. nell'attivo circolante",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.78918,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.232175,
           "disclosure": "aggregated"
         },
-        {"label":"Oneri da organizzazione competizioni","category":"match_organisation_expense","amount":-2.632394,"disclosure":"aggregated"},
-        {"label":"Costi per acquisizione temporanea prestazioni calciatori","category":"other_expenses","amount":-2.210526,"disclosure":"aggregated"},
-        {"label":"Minusvalenze da cessione diritti prestazioni calciatori","category":"exceptional_items","amount":-0.433931,"disclosure":"aggregated"},
-        {"label":"Altri oneri da trasferimento diritti calciatori","category":"other_expenses","amount":-7.649607,"disclosure":"aggregated"},
-        {"label":"Altri oneri diversi di gestione","category":"other_expenses","amount":-2.181055,"disclosure":"aggregated"},
-        {"label":"Svalutazioni a) di partecipazioni","category":"other_expenses","amount":-0.3,"disclosure":"aggregated"}
+        {
+          "label": "Oneri da organizzazione competizioni",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.632394,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi per acquisizione temporanea prestazioni calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.210526,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Minusvalenze da cessione diritti prestazioni calciatori",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.433931,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Altri oneri da trasferimento diritti calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7.649607,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Altri oneri diversi di gestione",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.181055,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Svalutazioni a) di partecipazioni",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.3,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.697382,"tax":-1.91949,"gross_debt":91.309222,"cash":2.041636},
       "official_totals": {"revenue":101.593403,"expenses":102.266963,"net_result":-4.724361},

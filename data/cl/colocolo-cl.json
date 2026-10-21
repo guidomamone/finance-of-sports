@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "CL",
     "reporting_currency": "CLP",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -56,30 +57,80 @@
       "management_id": "stohwing",
       "fx": {"rate":859.51,"source":"market_approx"},
       "revenue": [
-        {"label":"Ingresos por recaudaciones","category":"matchday_competition","amount":5032.509,"disclosure":"detailed"},
-        {"label":"Ingresos por venta de jugadores comprado a terceros","category":"player_sales","amount":4830.583,"disclosure":"detailed"},
-        {"label":"Ingresos por venta de jugadores formados por el Club","category":"player_sales","amount":694.804,"disclosure":"detailed"},
-        {"label":"Ingresos por publicidad","category":"sponsorship_commercial","amount":8641.046,"disclosure":"detailed"},
-        {"label":"Ingresos por derechos de televisión","category":"broadcasting","amount":8812.894,"disclosure":"detailed"},
-        {"label":"Otros (ingresos de actividades ordinarias)","category":"other_income","amount":835.099,"disclosure":"detailed"},
+        {"label":"Ingresos por recaudaciones","category":"matchday","subcategory":"matchday_competition","amount":5032.509,"disclosure":"detailed"},
+        {
+          "label": "Ingresos por venta de jugadores comprado a terceros",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 4830.583,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Ingresos por venta de jugadores formados por el Club",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 694.804,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingresos por publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":8641.046,"disclosure":"detailed"},
+        {"label":"Ingresos por derechos de televisión","category":"media_rights","subcategory":"broadcasting","amount":8812.894,"disclosure":"detailed"},
+        {
+          "label": "Otros (ingresos de actividades ordinarias)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 835.099,
+          "disclosure": "detailed"
+        },
         {
           "label": "Otros ingresos, por función",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 108.593,
           "disclosure": "detailed",
           "items": [["Dividendos",99.545],["Otros ingresos",9.048]]
         }
       ],
       "expenses": [
-        {"label":"Costo de ventas jugadores","category":"player_amortisation","amount":-2614.37,"disclosure":"detailed"},
-        {"label":"Remuneración plantel profesional y cuerpo técnico","category":"wages_squad","amount":-11057.918,"disclosure":"detailed"},
-        {"label":"Amortización Activos en concesión","category":"depreciation","amount":-228.204,"disclosure":"detailed"},
-        {"label":"Amortización pases jugadores profesionales","category":"player_amortisation","amount":-2537.55,"disclosure":"detailed"},
-        {"label":"Costos de concentración traslados y otros","category":"match_organisation_expense","amount":-4167.757,"disclosure":"detailed"},
-        {"label":"Otros costos (costo de ventas)","category":"other_expenses","amount":-695.903,"disclosure":"detailed"},
+        {
+          "label": "Costo de ventas jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2614.37,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Remuneración plantel profesional y cuerpo técnico",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -11057.918,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortización Activos en concesión","category":"depreciation","subcategory":"depreciation","amount":-228.204,"disclosure":"detailed"},
+        {
+          "label": "Amortización pases jugadores profesionales",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2537.55,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Costos de concentración traslados y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -4167.757,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Otros costos (costo de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -695.903,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gastos de administración",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -4998.15,
           "disclosure": "detailed",
           "items": [
@@ -91,9 +142,21 @@
             ["Otros gastos de administración",1367.625]
           ]
         },
-        {"label":"Depreciaciones (gastos de administración)","category":"depreciation","amount":-543.459,"disclosure":"detailed"},
-        {"label":"Otros gastos (otros gastos por función)","category":"other_expenses","amount":-27.731,"disclosure":"detailed"},
-        {"label":"Intereses y Multas (otros gastos por función)","category":"other_expenses","amount":-376.828,"disclosure":"detailed"}
+        {"label":"Depreciaciones (gastos de administración)","category":"depreciation","subcategory":"depreciation","amount":-543.459,"disclosure":"detailed"},
+        {
+          "label": "Otros gastos (otros gastos por función)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -27.731,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Intereses y Multas (otros gastos por función)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -376.828,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2539.4610000000002,"tax":1623.264,"gross_debt":410.88,"cash":1293.536},
       "official_totals": {"revenue":28955.528,"expenses":27247.87,"net_result":791.461}
@@ -107,30 +170,80 @@
       "management_id": "stohwing",
       "fx": {"rate":884.59,"source":"market_approx"},
       "revenue": [
-        {"label":"Ingresos por recaudaciones","category":"matchday_competition","amount":8197.538,"disclosure":"detailed"},
-        {"label":"Ingresos por venta de jugadores comprado a terceros","category":"player_sales","amount":827.026,"disclosure":"detailed"},
-        {"label":"Ingresos por venta de jugadores formados por el Club","category":"player_sales","amount":996.125,"disclosure":"detailed"},
-        {"label":"Ingresos por publicidad","category":"sponsorship_commercial","amount":10192.754,"disclosure":"detailed"},
-        {"label":"Ingresos por derechos de televisión","category":"broadcasting","amount":8367.46,"disclosure":"detailed"},
-        {"label":"Otros (ingresos de actividades ordinarias)","category":"other_income","amount":1079.122,"disclosure":"detailed"},
+        {"label":"Ingresos por recaudaciones","category":"matchday","subcategory":"matchday_competition","amount":8197.538,"disclosure":"detailed"},
+        {
+          "label": "Ingresos por venta de jugadores comprado a terceros",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 827.026,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Ingresos por venta de jugadores formados por el Club",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 996.125,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingresos por publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":10192.754,"disclosure":"detailed"},
+        {"label":"Ingresos por derechos de televisión","category":"media_rights","subcategory":"broadcasting","amount":8367.46,"disclosure":"detailed"},
+        {
+          "label": "Otros (ingresos de actividades ordinarias)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 1079.122,
+          "disclosure": "detailed"
+        },
         {
           "label": "Otros ingresos, por función",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 2260.264,
           "disclosure": "detailed",
           "items": [["Condonación Intereses y Multas TGR",1270.4],["Provisión PPUA",983.882],["Otros Ingresos",5.982]]
         }
       ],
       "expenses": [
-        {"label":"Costo de ventas jugadores","category":"player_amortisation","amount":-173.974,"disclosure":"detailed"},
-        {"label":"Remuneración plantel profesional y cuerpo técnico","category":"wages_squad","amount":-12347.555,"disclosure":"detailed"},
-        {"label":"Amortización Activos en concesión","category":"depreciation","amount":-228.205,"disclosure":"detailed"},
-        {"label":"Amortización pases jugadores profesionales","category":"player_amortisation","amount":-3249.301,"disclosure":"detailed"},
-        {"label":"Costos de concentración traslados y otros","category":"match_organisation_expense","amount":-5090.641,"disclosure":"detailed"},
-        {"label":"Otros costos (costo de ventas)","category":"other_expenses","amount":-1373.57,"disclosure":"detailed"},
+        {
+          "label": "Costo de ventas jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -173.974,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Remuneración plantel profesional y cuerpo técnico",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -12347.555,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortización Activos en concesión","category":"depreciation","subcategory":"depreciation","amount":-228.205,"disclosure":"detailed"},
+        {
+          "label": "Amortización pases jugadores profesionales",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3249.301,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Costos de concentración traslados y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -5090.641,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Otros costos (costo de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1373.57,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gastos de administración",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -6080.22,
           "disclosure": "detailed",
           "items": [
@@ -142,9 +255,21 @@
             ["Otros gastos de administración",1271.105]
           ]
         },
-        {"label":"Depreciaciones (gastos de administración)","category":"depreciation","amount":-507.507,"disclosure":"detailed"},
-        {"label":"Otros gastos (otros gastos por función)","category":"other_expenses","amount":-30.963,"disclosure":"detailed"},
-        {"label":"Intereses y Multas (otros gastos por función)","category":"other_expenses","amount":-701.853,"disclosure":"detailed"}
+        {"label":"Depreciaciones (gastos de administración)","category":"depreciation","subcategory":"depreciation","amount":-507.507,"disclosure":"detailed"},
+        {
+          "label": "Otros gastos (otros gastos por función)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -30.963,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Intereses y Multas (otros gastos por función)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -701.853,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1284.447,"tax":-34.283,"gross_debt":2804.415,"cash":43.523},
       "official_totals": {"revenue":31920.289,"expenses":29783.789,"net_result":817.77}
@@ -158,30 +283,80 @@
       "management_id": "mosa3",
       "fx": {"rate":992.12,"source":"market_approx"},
       "revenue": [
-        {"label":"Ingresos por recaudaciones","category":"matchday_competition","amount":11552.069,"disclosure":"detailed"},
-        {"label":"Ingresos por venta de jugadores comprado a terceros","category":"player_sales","amount":2271.929,"disclosure":"detailed"},
-        {"label":"Ingresos por venta de jugadores formados por el Club","category":"player_sales","amount":4651.549,"disclosure":"detailed"},
-        {"label":"Ingresos por publicidad","category":"sponsorship_commercial","amount":12259.949,"disclosure":"detailed"},
-        {"label":"Ingresos por derechos de televisión","category":"broadcasting","amount":12057.231,"disclosure":"detailed"},
-        {"label":"Otros (ingresos de actividades ordinarias)","category":"other_income","amount":4541.052,"disclosure":"detailed"},
+        {"label":"Ingresos por recaudaciones","category":"matchday","subcategory":"matchday_competition","amount":11552.069,"disclosure":"detailed"},
+        {
+          "label": "Ingresos por venta de jugadores comprado a terceros",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 2271.929,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Ingresos por venta de jugadores formados por el Club",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 4651.549,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingresos por publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":12259.949,"disclosure":"detailed"},
+        {"label":"Ingresos por derechos de televisión","category":"media_rights","subcategory":"broadcasting","amount":12057.231,"disclosure":"detailed"},
+        {
+          "label": "Otros (ingresos de actividades ordinarias)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 4541.052,
+          "disclosure": "detailed"
+        },
         {
           "label": "Otros ingresos, por función",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 274.716,
           "disclosure": "detailed",
           "items": [["Devolución seguros",222.779],["Dividendos",51.937]]
         }
       ],
       "expenses": [
-        {"label":"Costo de ventas jugadores","category":"player_amortisation","amount":-1603.044,"disclosure":"detailed"},
-        {"label":"Remuneración plantel profesional y cuerpo técnico","category":"wages_squad","amount":-18468.781,"disclosure":"detailed"},
-        {"label":"Amortización Activos en concesión","category":"depreciation","amount":-228.205,"disclosure":"detailed"},
-        {"label":"Amortización pases jugadores profesionales","category":"player_amortisation","amount":-4588.745,"disclosure":"detailed"},
-        {"label":"Costos de concentración traslados y otros","category":"match_organisation_expense","amount":-8362.036,"disclosure":"detailed"},
-        {"label":"Otros costos (costo de ventas)","category":"other_expenses","amount":-2289.846,"disclosure":"detailed"},
+        {
+          "label": "Costo de ventas jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1603.044,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Remuneración plantel profesional y cuerpo técnico",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -18468.781,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortización Activos en concesión","category":"depreciation","subcategory":"depreciation","amount":-228.205,"disclosure":"detailed"},
+        {
+          "label": "Amortización pases jugadores profesionales",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -4588.745,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Costos de concentración traslados y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -8362.036,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Otros costos (costo de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2289.846,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gastos de administración",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -7857.352,
           "disclosure": "detailed",
           "items": [
@@ -193,9 +368,21 @@
             ["Otros gastos de administración",2195.165]
           ]
         },
-        {"label":"Depreciaciones (gastos de administración)","category":"depreciation","amount":-522.938,"disclosure":"detailed"},
-        {"label":"Otros gastos (otros gastos por función)","category":"other_expenses","amount":-39.86,"disclosure":"detailed"},
-        {"label":"Intereses y Multas (otros gastos por función)","category":"other_expenses","amount":-855.267,"disclosure":"detailed"}
+        {"label":"Depreciaciones (gastos de administración)","category":"depreciation","subcategory":"depreciation","amount":-522.938,"disclosure":"detailed"},
+        {
+          "label": "Otros gastos (otros gastos por función)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -39.86,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Intereses y Multas (otros gastos por función)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -855.267,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2494.529,"tax":370.515,"gross_debt":1872.558,"cash":3435.024},
       "official_totals": {"revenue":47608.495,"expenses":44816.074,"net_result":668.407}
@@ -209,26 +396,62 @@
       "management_id": null,
       "fx": {"ref":"CLP@2025-12-31"},
       "revenue": [
-        {"label":"Ingresos por recaudaciones","category":"matchday_competition","amount":9706.043,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de jugadores comprado a terceros","category":"player_sales","amount":5179.121,"disclosure":"aggregated"},
-        {"label":"Ingresos por publicidad","category":"sponsorship_commercial","amount":14590.645,"disclosure":"aggregated"},
-        {"label":"Ingresos por derechos de televisión","category":"broadcasting","amount":9046.906,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":2563.401,"disclosure":"aggregated"},
-        {"label":"Condonación","category":"other_income","amount":2137.102,"disclosure":"aggregated"},
-        {"label":"Condonación Intereses y Multas TGR","category":"other_income","amount":3067.963,"disclosure":"aggregated"},
-        {"label":"Dividendos","category":"other_income","amount":8.095,"disclosure":"aggregated"},
-        {"label":"Otros Ingresos","category":"other_income","amount":466.92,"disclosure":"aggregated"}
+        {"label":"Ingresos por recaudaciones","category":"matchday","subcategory":"matchday_competition","amount":9706.043,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por venta de jugadores comprado a terceros",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 5179.121,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":14590.645,"disclosure":"aggregated"},
+        {"label":"Ingresos por derechos de televisión","category":"media_rights","subcategory":"broadcasting","amount":9046.906,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":2563.401,"disclosure":"aggregated"},
+        {"label":"Condonación","category":"other_revenue","subcategory":"other_income","amount":2137.102,"disclosure":"aggregated"},
+        {"label":"Condonación Intereses y Multas TGR","category":"other_revenue","subcategory":"other_income","amount":3067.963,"disclosure":"aggregated"},
+        {"label":"Dividendos","category":"other_revenue","subcategory":"other_income","amount":8.095,"disclosure":"aggregated"},
+        {"label":"Otros Ingresos","category":"other_revenue","subcategory":"other_income","amount":466.92,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas jugadores","category":"player_amortisation","amount":-513.66,"disclosure":"aggregated"},
-        {"label":"Remuneración plantel profesional y cuerpo técnico","category":"wages_squad","amount":-14394.745,"disclosure":"aggregated"},
-        {"label":"Amortización Activos en concesión","category":"depreciation","amount":-228.205,"disclosure":"aggregated"},
-        {"label":"Amortización Otros Intangibles","category":"other_amortisation","amount":-68.556,"disclosure":"aggregated"},
-        {"label":"Amortización pases jugadores profesionales","category":"player_amortisation","amount":-4859.862,"disclosure":"aggregated"},
-        {"label":"Costos de concentración traslados y otros","category":"match_organisation_expense","amount":-6345.375,"disclosure":"aggregated"},
-        {"label":"Otros costos","category":"other_expenses","amount":-3278.958,"disclosure":"aggregated"},
-        {"label":"Gasto de administración","category":"admin_general_expense","amount":-10838.114,"disclosure":"aggregated"},
-        {"label":"Otros gastos, por función","category":"other_expenses","amount":-592.508,"disclosure":"aggregated"}
+        {
+          "label": "Costo de ventas jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -513.66,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Remuneración plantel profesional y cuerpo técnico",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -14394.745,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Activos en concesión","category":"depreciation","subcategory":"depreciation","amount":-228.205,"disclosure":"aggregated"},
+        {
+          "label": "Amortización Otros Intangibles",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -68.556,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortización pases jugadores profesionales",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -4859.862,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costos de concentración traslados y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -6345.375,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros costos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3278.958,"disclosure":"aggregated"},
+        {"label":"Gasto de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-10838.114,"disclosure":"aggregated"},
+        {"label":"Otros gastos, por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-592.508,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-365.543,"tax":-185.78,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":46766.196,"expenses":41119.983,"net_result":5094.89},

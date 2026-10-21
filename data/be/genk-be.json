@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,27 +32,53 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Omzet","category":"lump_football_operations","amount":33.51509,"disclosure":"aggregated"},
-        {"label":"Lidgeld, schenkingen, legaten en subsidies","category":"member_dues","amount":13.483361,"disclosure":"aggregated"},
-        {"label":"Andere bedrijfsopbrengsten","category":"player_sales","amount":55.955475,"disclosure":"aggregated"}
+        {"label":"Omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":33.51509,"disclosure":"aggregated"},
+        {
+          "label": "Lidgeld, schenkingen, legaten en subsidies",
+          "category": "membership",
+          "subcategory": "member_dues",
+          "amount": 13.483361,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfsopbrengsten","category":"player_transfers","subcategory":"player_sales","amount":55.955475,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Handelsgoederen, grond- en hulpstoffen","category":"other_expenses","amount":-1.332069,"disclosure":"aggregated"},
-        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-18.864068,"disclosure":"aggregated"},
-        {"label":"Bezoldigingen, sociale lasten en pensioenen","category":"wages_squad","amount":-53.540132,"disclosure":"aggregated"},
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.332069,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Diensten en diverse goederen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -18.864068,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Bezoldigingen, sociale lasten en pensioenen",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -53.540132,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -16.300826,
           "disclosure": "aggregated"
         },
         {
           "label": "Andere bedrijfskosten (netto de una reversión de waardeverminderingen op voorraden/vorderingen de +0,452 M)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -1.878734,
           "disclosure": "aggregated"
         },
-        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.231,"disclosure":"aggregated"}
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional","subcategory":"exceptional_items","amount":-0.231,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.439869,"tax":-0.199845,"gross_debt":34.505065,"cash":3.500316},
       "official_totals": {"revenue":102.953926,"expenses":91.915829,"net_result":9.167383}

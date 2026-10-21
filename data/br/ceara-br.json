@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,45 +32,71 @@
       "report_type": "official_balance_sheet",
       "fx": {"ref":"BRL@2024-12-31"},
       "revenue": [
-        {"label":"Direitos de Transmissão","category":"broadcasting","amount":17.857,"disclosure":"detailed"},
-        {"label":"Premiações","category":"competition_bonus","amount":4.26,"disclosure":"detailed"},
-        {"label":"Bilheteria — jogos","category":"matchday_competition","amount":12.545,"disclosure":"detailed"},
-        {"label":"Estacionamento, bares, camarotes","category":"stadium_other","amount":4.657,"disclosure":"detailed"},
-        {"label":"Patrocínio","category":"sponsorship_commercial","amount":16.464,"disclosure":"detailed"},
-        {"label":"Royalties e Licenciamento","category":"sponsorship_commercial","amount":2.092,"disclosure":"detailed"},
-        {"label":"Outras receitas com publicidade","category":"sponsorship_commercial","amount":1.672,"disclosure":"detailed"},
-        {"label":"Programa de Sócio Torcedor","category":"member_dues","amount":22.852,"disclosure":"detailed"},
-        {"label":"Negociação de atletas","category":"player_sales","amount":19.043,"disclosure":"detailed"},
-        {"label":"Escolinha/Fábrica de craques","category":"youth_football","amount":0.494,"disclosure":"detailed"},
-        {"label":"Outras receitas patrimoniais","category":"other_income","amount":0.173,"disclosure":"detailed"},
-        {"label":"Timemania","category":"other_income","amount":0.434,"disclosure":"detailed"},
-        {"label":"Convênio Enel","category":"other_income","amount":0.021,"disclosure":"detailed"},
-        {"label":"Receitas com Eventos","category":"other_income","amount":0.102,"disclosure":"detailed"},
-        {"label":"Outras receitas","category":"other_income","amount":0.22,"disclosure":"detailed"},
-        {"label":"Fomento CBF","category":"other_income","amount":1.911,"disclosure":"detailed"},
-        {"label":"Venda de direitos de participação (LFF)","category":"other_income","amount":60.119,"disclosure":"detailed"},
-        {"label":"(-) Impostos (dedução da receita bruta)","category":"other_income","amount":-1.298,"disclosure":"detailed"},
-        {"label":"(-) Direito de arena (dedução da receita bruta)","category":"broadcasting","amount":-0.733,"disclosure":"detailed"},
-        {"label":"(-) Outras deduções da receita bruta","category":"other_income","amount":-0.959,"disclosure":"detailed"}
+        {"label":"Direitos de Transmissão","category":"media_rights","subcategory":"broadcasting","amount":17.857,"disclosure":"detailed"},
+        {"label":"Premiações","category":"prize_money","subcategory":"competition_bonus","amount":4.26,"disclosure":"detailed"},
+        {"label":"Bilheteria — jogos","category":"matchday","subcategory":"matchday_competition","amount":12.545,"disclosure":"detailed"},
+        {"label":"Estacionamento, bares, camarotes","category":"venue","subcategory":"stadium_other","amount":4.657,"disclosure":"detailed"},
+        {"label":"Patrocínio","category":"commercial","subcategory":"sponsorship_commercial","amount":16.464,"disclosure":"detailed"},
+        {"label":"Royalties e Licenciamento","category":"commercial","subcategory":"sponsorship_commercial","amount":2.092,"disclosure":"detailed"},
+        {"label":"Outras receitas com publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":1.672,"disclosure":"detailed"},
+        {"label":"Programa de Sócio Torcedor","category":"membership","subcategory":"member_dues","amount":22.852,"disclosure":"detailed"},
+        {"label":"Negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":19.043,"disclosure":"detailed"},
+        {"label":"Escolinha/Fábrica de craques","category":"other_sporting_sections","subcategory":"youth_football","amount":0.494,"disclosure":"detailed"},
+        {"label":"Outras receitas patrimoniais","category":"other_revenue","subcategory":"other_income","amount":0.173,"disclosure":"detailed"},
+        {"label":"Timemania","category":"other_revenue","subcategory":"other_income","amount":0.434,"disclosure":"detailed"},
+        {"label":"Convênio Enel","category":"other_revenue","subcategory":"other_income","amount":0.021,"disclosure":"detailed"},
+        {"label":"Receitas com Eventos","category":"other_revenue","subcategory":"other_income","amount":0.102,"disclosure":"detailed"},
+        {"label":"Outras receitas","category":"other_revenue","subcategory":"other_income","amount":0.22,"disclosure":"detailed"},
+        {"label":"Fomento CBF","category":"other_revenue","subcategory":"other_income","amount":1.911,"disclosure":"detailed"},
+        {"label":"Venda de direitos de participação (LFF)","category":"other_revenue","subcategory":"other_income","amount":60.119,"disclosure":"detailed"},
+        {"label":"(-) Impostos (dedução da receita bruta)","category":"other_revenue","subcategory":"other_income","amount":-1.298,"disclosure":"detailed"},
+        {
+          "label": "(-) Direito de arena (dedução da receita bruta)",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": -0.733,
+          "disclosure": "detailed"
+        },
+        {"label":"(-) Outras deduções da receita bruta","category":"other_revenue","subcategory":"other_income","amount":-0.959,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Pessoal e Encargos — Futebol Profissional","category":"wages_squad","amount":-64.872,"disclosure":"detailed"},
+        {
+          "label": "Pessoal e Encargos — Futebol Profissional",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -64.872,
+          "disclosure": "detailed"
+        },
         {
           "label": "Pessoal e Encargos — Administração, Clube Social e esportes amadores",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -15.561,
           "disclosure": "detailed"
         },
-        {"label":"Materiais e Manutenção","category":"admin_general_expense","amount":-6.642,"disclosure":"detailed"},
-        {"label":"Serviços de Terceiros","category":"admin_general_expense","amount":-15.594,"disclosure":"detailed"},
-        {"label":"Gerais","category":"admin_general_expense","amount":-6.623,"disclosure":"detailed"},
-        {"label":"Custos gerais com negociação de atletas","category":"player_amortisation","amount":-8.557,"disclosure":"detailed"},
-        {"label":"Depreciação","category":"depreciation","amount":-1.204,"disclosure":"detailed"},
-        {"label":"Amortizações — Direitos Econômicos","category":"player_amortisation","amount":-11.087,"disclosure":"detailed"},
-        {"label":"Jogos e Competições","category":"match_organisation_expense","amount":-15.2,"disclosure":"detailed"},
+        {"label":"Materiais e Manutenção","category":"admin_general","subcategory":"admin_general_expense","amount":-6.642,"disclosure":"detailed"},
+        {"label":"Serviços de Terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-15.594,"disclosure":"detailed"},
+        {"label":"Gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-6.623,"disclosure":"detailed"},
+        {
+          "label": "Custos gerais com negociação de atletas",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -8.557,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação","category":"depreciation","subcategory":"depreciation","amount":-1.204,"disclosure":"detailed"},
+        {
+          "label": "Amortizações — Direitos Econômicos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -11.087,
+          "disclosure": "detailed"
+        },
+        {"label":"Jogos e Competições","category":"match_operations","subcategory":"match_organisation_expense","amount":-15.2,"disclosure":"detailed"},
         {
           "label": "Despesas programa de Sócio Torcedor + Despesas com Tributos + Outros Resultados Operacionais (combinado, ver nota de extração)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -2.963,
           "disclosure": "aggregated"
         }
@@ -85,45 +112,88 @@
       "report_type": "official_balance_sheet",
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"Direitos de Transmissão","category":"broadcasting","amount":100.159,"disclosure":"detailed"},
-        {"label":"Premiações","category":"competition_bonus","amount":5.935,"disclosure":"detailed"},
-        {"label":"Bilheteria — jogos","category":"matchday_competition","amount":17.936,"disclosure":"detailed"},
-        {"label":"Estacionamento, bares, camarotes","category":"stadium_other","amount":5.99,"disclosure":"detailed"},
-        {"label":"Patrocínio","category":"sponsorship_commercial","amount":22.502,"disclosure":"detailed"},
-        {"label":"Royalties e Licenciamento","category":"sponsorship_commercial","amount":3.223,"disclosure":"detailed"},
-        {"label":"Outras receitas com publicidade","category":"sponsorship_commercial","amount":15.012,"disclosure":"detailed"},
-        {"label":"Programa de Sócio Torcedor","category":"member_dues","amount":23.172,"disclosure":"detailed"},
-        {"label":"Negociação de atletas","category":"player_sales","amount":56.583,"disclosure":"detailed"},
-        {"label":"Escolinha/Fábrica de craques","category":"youth_football","amount":0.541,"disclosure":"detailed"},
-        {"label":"Outras receitas patrimoniais","category":"other_income","amount":0.352,"disclosure":"detailed"},
-        {"label":"Timemania","category":"other_income","amount":0.043,"disclosure":"detailed"},
-        {"label":"Convênio Enel","category":"other_income","amount":0.019,"disclosure":"detailed"},
-        {"label":"Receitas com Eventos","category":"other_income","amount":0.785,"disclosure":"detailed"},
-        {"label":"Outras receitas","category":"other_income","amount":2.014,"disclosure":"detailed"},
-        {"label":"Lei do incentivo ao esporte","category":"other_income","amount":0.677,"disclosure":"detailed"},
-        {"label":"(-) Impostos (dedução da receita bruta)","category":"other_income","amount":-5.351,"disclosure":"detailed"},
-        {"label":"(-) Direito de arena (dedução da receita bruta)","category":"broadcasting","amount":-4.162,"disclosure":"detailed"},
-        {"label":"(-) Outras deduções da receita bruta","category":"other_income","amount":-23.884,"disclosure":"detailed"}
+        {"label":"Direitos de Transmissão","category":"media_rights","subcategory":"broadcasting","amount":100.159,"disclosure":"detailed"},
+        {"label":"Premiações","category":"prize_money","subcategory":"competition_bonus","amount":5.935,"disclosure":"detailed"},
+        {"label":"Bilheteria — jogos","category":"matchday","subcategory":"matchday_competition","amount":17.936,"disclosure":"detailed"},
+        {"label":"Estacionamento, bares, camarotes","category":"venue","subcategory":"stadium_other","amount":5.99,"disclosure":"detailed"},
+        {"label":"Patrocínio","category":"commercial","subcategory":"sponsorship_commercial","amount":22.502,"disclosure":"detailed"},
+        {"label":"Royalties e Licenciamento","category":"commercial","subcategory":"sponsorship_commercial","amount":3.223,"disclosure":"detailed"},
+        {"label":"Outras receitas com publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":15.012,"disclosure":"detailed"},
+        {"label":"Programa de Sócio Torcedor","category":"membership","subcategory":"member_dues","amount":23.172,"disclosure":"detailed"},
+        {"label":"Negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":56.583,"disclosure":"detailed"},
+        {"label":"Escolinha/Fábrica de craques","category":"other_sporting_sections","subcategory":"youth_football","amount":0.541,"disclosure":"detailed"},
+        {"label":"Outras receitas patrimoniais","category":"other_revenue","subcategory":"other_income","amount":0.352,"disclosure":"detailed"},
+        {"label":"Timemania","category":"other_revenue","subcategory":"other_income","amount":0.043,"disclosure":"detailed"},
+        {"label":"Convênio Enel","category":"other_revenue","subcategory":"other_income","amount":0.019,"disclosure":"detailed"},
+        {"label":"Receitas com Eventos","category":"other_revenue","subcategory":"other_income","amount":0.785,"disclosure":"detailed"},
+        {"label":"Outras receitas","category":"other_revenue","subcategory":"other_income","amount":2.014,"disclosure":"detailed"},
+        {"label":"Lei do incentivo ao esporte","category":"other_revenue","subcategory":"other_income","amount":0.677,"disclosure":"detailed"},
+        {"label":"(-) Impostos (dedução da receita bruta)","category":"other_revenue","subcategory":"other_income","amount":-5.351,"disclosure":"detailed"},
+        {
+          "label": "(-) Direito de arena (dedução da receita bruta)",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": -4.162,
+          "disclosure": "detailed"
+        },
+        {"label":"(-) Outras deduções da receita bruta","category":"other_revenue","subcategory":"other_income","amount":-23.884,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Pessoal e Encargos — Futebol Profissional","category":"wages_squad","amount":-137.214,"disclosure":"detailed"},
+        {
+          "label": "Pessoal e Encargos — Futebol Profissional",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -137.214,
+          "disclosure": "detailed"
+        },
         {
           "label": "Pessoal e Encargos — Administração, Clube Social e esportes amadores",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -14.793,
           "disclosure": "detailed"
         },
-        {"label":"Materiais e Manutenção","category":"admin_general_expense","amount":-11.797,"disclosure":"detailed"},
-        {"label":"Serviços de Terceiros","category":"admin_general_expense","amount":-17.346,"disclosure":"detailed"},
-        {"label":"Gerais","category":"admin_general_expense","amount":-13.388,"disclosure":"detailed"},
-        {"label":"Custos gerais com negociação de atletas","category":"player_amortisation","amount":-39.776,"disclosure":"detailed"},
-        {"label":"Depreciação","category":"depreciation","amount":-1.213,"disclosure":"detailed"},
-        {"label":"Amortizações — Direitos Econômicos","category":"player_amortisation","amount":-4.518,"disclosure":"detailed"},
-        {"label":"Amortizações — Recompra dos Direitos (LFF)","category":"other_amortisation","amount":-0.475,"disclosure":"detailed"},
-        {"label":"Jogos e Competições","category":"match_organisation_expense","amount":-24.677,"disclosure":"detailed"},
-        {"label":"Despesas programa de Sócio Torcedor","category":"admin_general_expense","amount":-5.176,"disclosure":"detailed"},
-        {"label":"Despesas com Tributos","category":"admin_general_expense","amount":-0.395,"disclosure":"detailed"},
-        {"label":"Outros Resultados Operacionais","category":"other_expenses","amount":-0.0001,"disclosure":"detailed"}
+        {"label":"Materiais e Manutenção","category":"admin_general","subcategory":"admin_general_expense","amount":-11.797,"disclosure":"detailed"},
+        {"label":"Serviços de Terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-17.346,"disclosure":"detailed"},
+        {"label":"Gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-13.388,"disclosure":"detailed"},
+        {
+          "label": "Custos gerais com negociação de atletas",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -39.776,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação","category":"depreciation","subcategory":"depreciation","amount":-1.213,"disclosure":"detailed"},
+        {
+          "label": "Amortizações — Direitos Econômicos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -4.518,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizações — Recompra dos Direitos (LFF)",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -0.475,
+          "disclosure": "detailed"
+        },
+        {"label":"Jogos e Competições","category":"match_operations","subcategory":"match_organisation_expense","amount":-24.677,"disclosure":"detailed"},
+        {
+          "label": "Despesas programa de Sócio Torcedor",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.176,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas com Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.395,"disclosure":"detailed"},
+        {
+          "label": "Outros Resultados Operacionais",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.0001,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-36.613,"tax":0,"gross_debt":84.732,"cash":2.11},
       "official_totals": {"revenue":221.546,"expenses":270.769,"net_result":-85.837}

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "NL",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -30,13 +31,13 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
-      "revenue": [{"label":"netto-omzet","category":"lump_football_operations","amount":10.082985,"disclosure":"aggregated"}],
+      "revenue": [{"label":"netto-omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":10.082985,"disclosure":"aggregated"}],
       "expenses": [
-        {"label":"lonen en salarissen","category":"wages_squad","amount":-4.879159,"disclosure":"aggregated"},
-        {"label":"sociale lasten","category":"wages_squad","amount":-0.690253,"disclosure":"aggregated"},
-        {"label":"pensioenen","category":"wages_squad","amount":-0.052281,"disclosure":"aggregated"},
-        {"label":"afschrijving vaste activa","category":"depreciation","amount":-0.402815,"disclosure":"aggregated"},
-        {"label":"overige bedrijfskosten","category":"other_expenses","amount":-4.101825,"disclosure":"aggregated"}
+        {"label":"lonen en salarissen","category":"first_team_staff","subcategory":"wages_squad","amount":-4.879159,"disclosure":"aggregated"},
+        {"label":"sociale lasten","category":"first_team_staff","subcategory":"wages_squad","amount":-0.690253,"disclosure":"aggregated"},
+        {"label":"pensioenen","category":"first_team_staff","subcategory":"wages_squad","amount":-0.052281,"disclosure":"aggregated"},
+        {"label":"afschrijving vaste activa","category":"depreciation","subcategory":"depreciation","amount":-0.402815,"disclosure":"aggregated"},
+        {"label":"overige bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4.101825,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.090304,"tax":0.409864,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":10.082985,"expenses":10.126333,"net_result":0.45682},

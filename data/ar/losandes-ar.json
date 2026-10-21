@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "AR",
     "reporting_currency": "ARS",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -39,49 +40,175 @@
       "management_id": "grosi",
       "fx": {"ref":"ARS@2020-06-30"},
       "revenue": [
-        {"label":"cuotas sociales","category":"member_dues","amount":8.271273,"disclosure":"detailed"},
-        {"label":"futbol","category":"matchday_competition","amount":0.805561,"disclosure":"detailed"},
-        {"label":"Ingresos Afa","category":"broadcasting","amount":13.727357,"disclosure":"detailed"},
-        {"label":"colegio","category":"education","amount":13.397354,"disclosure":"detailed"},
-        {"label":"Sponsors planteles","category":"sponsorship_commercial","amount":57.769495,"disclosure":"detailed"},
-        {"label":"otros ingresos","category":"other_income","amount":2.880368,"disclosure":"detailed"}
+        {"label":"cuotas sociales","category":"membership","subcategory":"member_dues","amount":8.271273,"disclosure":"detailed"},
+        {"label":"futbol","category":"matchday","subcategory":"matchday_competition","amount":0.805561,"disclosure":"detailed"},
+        {"label":"Ingresos Afa","category":"media_rights","subcategory":"broadcasting","amount":13.727357,"disclosure":"detailed"},
+        {"label":"colegio","category":"non_sporting_activities","subcategory":"education","amount":13.397354,"disclosure":"detailed"},
+        {"label":"Sponsors planteles","category":"commercial","subcategory":"sponsorship_commercial","amount":57.769495,"disclosure":"detailed"},
+        {"label":"otros ingresos","category":"other_revenue","subcategory":"other_income","amount":2.880368,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Sueldos y Jornales (Estadio)","category":"admin_general_expense","amount":-6.510399,"disclosure":"detailed"},
-        {"label":"Sueldos y Jornales (Fútbol)","category":"wages_squad","amount":-20.833278,"disclosure":"detailed"},
-        {"label":"Sueldos y Jornales (Admin/Sede)","category":"admin_general_expense","amount":-5.642346,"disclosure":"detailed"},
-        {"label":"Sueldos y Jornales (Otros Dptos)","category":"youth_other_sports_expense","amount":-10.416639,"disclosure":"detailed"},
-        {"label":"Cargas Sociales (Estadio)","category":"admin_general_expense","amount":-3.300246,"disclosure":"detailed"},
-        {"label":"Cargas Sociales (Fútbol)","category":"wages_squad","amount":-0.660049,"disclosure":"detailed"},
-        {"label":"Cargas Sociales (Admin/Sede)","category":"admin_general_expense","amount":-1.861974,"disclosure":"detailed"},
-        {"label":"Cargas Sociales (Otros Dptos)","category":"youth_other_sports_expense","amount":-3.607004,"disclosure":"detailed"},
-        {"label":"Honorarios (Estadio)","category":"admin_general_expense","amount":-0.384,"disclosure":"detailed"},
-        {"label":"Honorarios (Admin/Sede)","category":"admin_general_expense","amount":-1.43758,"disclosure":"detailed"},
-        {"label":"Honorarios (Otros Dptos)","category":"youth_other_sports_expense","amount":-1.6625,"disclosure":"detailed"},
-        {"label":"Seguridad Deportiva Pol. Ad (Fútbol)","category":"match_organisation_expense","amount":-1.21541,"disclosure":"detailed"},
-        {"label":"Conservación y Mantenimiento (Estadio)","category":"admin_general_expense","amount":-1.715926,"disclosure":"detailed"},
-        {"label":"Conservación y Mantenimiento (Admin/Sede)","category":"admin_general_expense","amount":-1.354824,"disclosure":"detailed"},
-        {"label":"Conservación y Mantenimiento (Otros Dptos)","category":"youth_other_sports_expense","amount":-1.815302,"disclosure":"detailed"},
-        {"label":"Gastos y Comisiones Bancarias (Estadio)","category":"admin_general_expense","amount":-0.13999,"disclosure":"detailed"},
-        {"label":"Gastos y Comisiones Bancarias (Otros Dptos)","category":"youth_other_sports_expense","amount":-1.81523,"disclosure":"detailed"},
-        {"label":"Gastos Funcionamiento Adm (Estadio)","category":"admin_general_expense","amount":-2.715358,"disclosure":"detailed"},
-        {"label":"Gastos Funcionamiento Adm (Admin/Sede)","category":"admin_general_expense","amount":-2.312924,"disclosure":"detailed"},
-        {"label":"Egresos Varios (Fútbol)","category":"other_expenses","amount":-3.870405,"disclosure":"detailed"},
-        {"label":"Egresos Varios (Otros Dptos)","category":"other_expenses","amount":-5.135288,"disclosure":"detailed"},
-        {"label":"Gastos Otros Dptos (Estadio)","category":"other_expenses","amount":-0.244154,"disclosure":"detailed"},
-        {"label":"Gastos Otros Dptos (Admin/Sede)","category":"other_expenses","amount":-1.428312,"disclosure":"detailed"},
-        {"label":"Gastos Otros Dptos (Otros Dptos)","category":"other_expenses","amount":-0.13845,"disclosure":"detailed"},
-        {"label":"Servicios Públicos (Estadio)","category":"admin_general_expense","amount":-0.614315,"disclosure":"detailed"},
-        {"label":"Servicios Públicos (Admin/Sede)","category":"admin_general_expense","amount":-0.415218,"disclosure":"detailed"},
-        {"label":"Servicios Públicos (Otros Dptos)","category":"youth_other_sports_expense","amount":-0.32952,"disclosure":"detailed"},
-        {"label":"Gastos Plantel Profesional (Fútbol)","category":"wages_squad","amount":-5.31584,"disclosure":"detailed"},
-        {"label":"Egresos por Encuentros AFA (Fútbol)","category":"match_organisation_expense","amount":-0.506325,"disclosure":"detailed"},
-        {"label":"Amortización del Ejercicio (Estadio)","category":"depreciation","amount":-9.327397,"disclosure":"detailed"},
-        {"label":"Seguros (Fútbol)","category":"wages_squad","amount":-0.832018,"disclosure":"detailed"},
-        {"label":"Juicios Honorarios (Admin/Sede)","category":"admin_general_expense","amount":-0.53,"disclosure":"detailed"},
-        {"label":"Gastos Plantel Inferiores (Fútbol)","category":"youth_other_sports_expense","amount":-0.117452,"disclosure":"detailed"},
-        {"label":"Comisiones Tarjetas de Crédito (Admin/Sede)","category":"admin_general_expense","amount":-2.351895,"disclosure":"detailed"},
-        {"label":"Impuestos Varios (Admin/Sede)","category":"admin_general_expense","amount":-0.15572,"disclosure":"detailed"}
+        {"label":"Sueldos y Jornales (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-6.510399,"disclosure":"detailed"},
+        {"label":"Sueldos y Jornales (Fútbol)","category":"first_team_staff","subcategory":"wages_squad","amount":-20.833278,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y Jornales (Admin/Sede)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.642346,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sueldos y Jornales (Otros Dptos)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -10.416639,
+          "disclosure": "detailed"
+        },
+        {"label":"Cargas Sociales (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-3.300246,"disclosure":"detailed"},
+        {"label":"Cargas Sociales (Fútbol)","category":"first_team_staff","subcategory":"wages_squad","amount":-0.660049,"disclosure":"detailed"},
+        {"label":"Cargas Sociales (Admin/Sede)","category":"admin_general","subcategory":"admin_general_expense","amount":-1.861974,"disclosure":"detailed"},
+        {
+          "label": "Cargas Sociales (Otros Dptos)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -3.607004,
+          "disclosure": "detailed"
+        },
+        {"label":"Honorarios (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.384,"disclosure":"detailed"},
+        {"label":"Honorarios (Admin/Sede)","category":"admin_general","subcategory":"admin_general_expense","amount":-1.43758,"disclosure":"detailed"},
+        {
+          "label": "Honorarios (Otros Dptos)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -1.6625,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Seguridad Deportiva Pol. Ad (Fútbol)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.21541,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Conservación y Mantenimiento (Estadio)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.715926,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Conservación y Mantenimiento (Admin/Sede)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.354824,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Conservación y Mantenimiento (Otros Dptos)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -1.815302,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos y Comisiones Bancarias (Estadio)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.13999,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos y Comisiones Bancarias (Otros Dptos)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -1.81523,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Funcionamiento Adm (Estadio)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.715358,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Funcionamiento Adm (Admin/Sede)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.312924,
+          "disclosure": "detailed"
+        },
+        {"label":"Egresos Varios (Fútbol)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.870405,"disclosure":"detailed"},
+        {
+          "label": "Egresos Varios (Otros Dptos)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -5.135288,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Otros Dptos (Estadio)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.244154,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Otros Dptos (Admin/Sede)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.428312,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Otros Dptos (Otros Dptos)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.13845,
+          "disclosure": "detailed"
+        },
+        {"label":"Servicios Públicos (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.614315,"disclosure":"detailed"},
+        {
+          "label": "Servicios Públicos (Admin/Sede)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.415218,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Servicios Públicos (Otros Dptos)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.32952,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos Plantel Profesional (Fútbol)","category":"first_team_staff","subcategory":"wages_squad","amount":-5.31584,"disclosure":"detailed"},
+        {
+          "label": "Egresos por Encuentros AFA (Fútbol)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.506325,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortización del Ejercicio (Estadio)","category":"depreciation","subcategory":"depreciation","amount":-9.327397,"disclosure":"detailed"},
+        {"label":"Seguros (Fútbol)","category":"first_team_staff","subcategory":"wages_squad","amount":-0.832018,"disclosure":"detailed"},
+        {"label":"Juicios Honorarios (Admin/Sede)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.53,"disclosure":"detailed"},
+        {
+          "label": "Gastos Plantel Inferiores (Fútbol)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.117452,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Comisiones Tarjetas de Crédito (Admin/Sede)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.351895,
+          "disclosure": "detailed"
+        },
+        {"label":"Impuestos Varios (Admin/Sede)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.15572,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":8.067147,"tax":0,"gross_debt":59.358045,"cash":2.476216},
       "official_totals": {"revenue":96.851408,"expenses":100.71329,"net_result":4.205265}
@@ -95,46 +222,142 @@
       "management_id": "grosi",
       "fx": {"ref":"ARS@2021-06-30"},
       "revenue": [
-        {"label":"cuotas sociales","category":"member_dues","amount":12.546372,"disclosure":"detailed"},
-        {"label":"futbol","category":"matchday_competition","amount":9.797831,"disclosure":"detailed"},
-        {"label":"Ingresos Afa","category":"broadcasting","amount":16.310609,"disclosure":"detailed"},
-        {"label":"ingresos otras actividades","category":"other_income","amount":3.39162,"disclosure":"detailed"},
-        {"label":"colegio","category":"education","amount":22.448725,"disclosure":"detailed"},
-        {"label":"Sponsors planteles","category":"sponsorship_commercial","amount":40.672385,"disclosure":"detailed"},
-        {"label":"concesiones","category":"stadium_other","amount":2.019331,"disclosure":"detailed"},
-        {"label":"ingresos por ATP","category":"other_income","amount":16.003398,"disclosure":"detailed"},
-        {"label":"otros ingresos","category":"other_income","amount":2.254461,"disclosure":"detailed"}
+        {"label":"cuotas sociales","category":"membership","subcategory":"member_dues","amount":12.546372,"disclosure":"detailed"},
+        {"label":"futbol","category":"matchday","subcategory":"matchday_competition","amount":9.797831,"disclosure":"detailed"},
+        {"label":"Ingresos Afa","category":"media_rights","subcategory":"broadcasting","amount":16.310609,"disclosure":"detailed"},
+        {"label":"ingresos otras actividades","category":"other_revenue","subcategory":"other_income","amount":3.39162,"disclosure":"detailed"},
+        {"label":"colegio","category":"non_sporting_activities","subcategory":"education","amount":22.448725,"disclosure":"detailed"},
+        {"label":"Sponsors planteles","category":"commercial","subcategory":"sponsorship_commercial","amount":40.672385,"disclosure":"detailed"},
+        {"label":"concesiones","category":"venue","subcategory":"stadium_other","amount":2.019331,"disclosure":"detailed"},
+        {"label":"ingresos por ATP","category":"other_revenue","subcategory":"other_income","amount":16.003398,"disclosure":"detailed"},
+        {"label":"otros ingresos","category":"other_revenue","subcategory":"other_income","amount":2.254461,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Sueldos y Jornales (Estadio)","category":"admin_general_expense","amount":-7.746312,"disclosure":"detailed"},
-        {"label":"Sueldos y Jornales (Fútbol)","category":"wages_squad","amount":-24.788199,"disclosure":"detailed"},
-        {"label":"Sueldos y Jornales (Admin/Sede)","category":"admin_general_expense","amount":-6.71347,"disclosure":"detailed"},
-        {"label":"Sueldos y Jornales (Otros Dptos)","category":"youth_other_sports_expense","amount":-12.394099,"disclosure":"detailed"},
-        {"label":"Cargas Sociales (Estadio)","category":"admin_general_expense","amount":-2.733153,"disclosure":"detailed"},
-        {"label":"Cargas Sociales (Fútbol)","category":"wages_squad","amount":-0.546631,"disclosure":"detailed"},
-        {"label":"Cargas Sociales (Admin/Sede)","category":"admin_general_expense","amount":-2.215445,"disclosure":"detailed"},
-        {"label":"Cargas Sociales (Otros Dptos)","category":"youth_other_sports_expense","amount":-2.313779,"disclosure":"detailed"},
-        {"label":"Honorarios (Estadio)","category":"admin_general_expense","amount":-0.24,"disclosure":"detailed"},
-        {"label":"Honorarios (Fútbol)","category":"wages_squad","amount":-9.209105,"disclosure":"detailed"},
-        {"label":"Honorarios (Otros Dptos)","category":"youth_other_sports_expense","amount":-9.73653,"disclosure":"detailed"},
-        {"label":"Seguridad Deportiva Pol. Ad. (Fútbol)","category":"match_organisation_expense","amount":-0.764518,"disclosure":"detailed"},
-        {"label":"Conservación y Mantenimiento (Admin/Sede)","category":"admin_general_expense","amount":-2.011749,"disclosure":"detailed"},
-        {"label":"Gastos y Comisiones Bancarias (Estadio)","category":"admin_general_expense","amount":-0.450567,"disclosure":"detailed"},
-        {"label":"Gastos Funcionamiento Adm (Estadio)","category":"admin_general_expense","amount":-0.114447,"disclosure":"detailed"},
-        {"label":"Gastos Funcionamiento Adm (Admin/Sede)","category":"admin_general_expense","amount":-0.534593,"disclosure":"detailed"},
-        {"label":"Egresos Varios (Otros Dptos)","category":"other_expenses","amount":-8.525557,"disclosure":"detailed"},
-        {"label":"Gastos Otros Dptos (Estadio)","category":"other_expenses","amount":-0.049236,"disclosure":"detailed"},
-        {"label":"Gastos Otros Dptos (Fútbol)","category":"other_expenses","amount":-1.597084,"disclosure":"detailed"},
-        {"label":"Gastos Otros Dptos (Otros Dptos)","category":"other_expenses","amount":-1.85224,"disclosure":"detailed"},
-        {"label":"Servicios Públicos (Estadio)","category":"admin_general_expense","amount":-0.09754,"disclosure":"detailed"},
-        {"label":"Servicios Públicos (Admin/Sede)","category":"admin_general_expense","amount":-0.528981,"disclosure":"detailed"},
-        {"label":"Gastos Plantel Profesional (Fútbol)","category":"wages_squad","amount":-1.182661,"disclosure":"detailed"},
-        {"label":"Egresos por Encuentros AFA (Fútbol)","category":"match_organisation_expense","amount":-0.886767,"disclosure":"detailed"},
-        {"label":"Amortización del Ejercicio (Estadio)","category":"depreciation","amount":-14.839652,"disclosure":"detailed"},
-        {"label":"Seguros (Estadio)","category":"admin_general_expense","amount":-0.033637,"disclosure":"detailed"},
-        {"label":"Juicios Honorarios (Estadio)","category":"admin_general_expense","amount":-0.4979,"disclosure":"detailed"},
-        {"label":"Gastos Plantel Inferiores (Fútbol)","category":"youth_other_sports_expense","amount":-0.136203,"disclosure":"detailed"},
-        {"label":"Comisiones Tarjetas de Crédito (Admin/Sede)","category":"admin_general_expense","amount":-2.011045,"disclosure":"detailed"}
+        {"label":"Sueldos y Jornales (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-7.746312,"disclosure":"detailed"},
+        {"label":"Sueldos y Jornales (Fútbol)","category":"first_team_staff","subcategory":"wages_squad","amount":-24.788199,"disclosure":"detailed"},
+        {"label":"Sueldos y Jornales (Admin/Sede)","category":"admin_general","subcategory":"admin_general_expense","amount":-6.71347,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y Jornales (Otros Dptos)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -12.394099,
+          "disclosure": "detailed"
+        },
+        {"label":"Cargas Sociales (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-2.733153,"disclosure":"detailed"},
+        {"label":"Cargas Sociales (Fútbol)","category":"first_team_staff","subcategory":"wages_squad","amount":-0.546631,"disclosure":"detailed"},
+        {"label":"Cargas Sociales (Admin/Sede)","category":"admin_general","subcategory":"admin_general_expense","amount":-2.215445,"disclosure":"detailed"},
+        {
+          "label": "Cargas Sociales (Otros Dptos)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -2.313779,
+          "disclosure": "detailed"
+        },
+        {"label":"Honorarios (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.24,"disclosure":"detailed"},
+        {"label":"Honorarios (Fútbol)","category":"first_team_staff","subcategory":"wages_squad","amount":-9.209105,"disclosure":"detailed"},
+        {
+          "label": "Honorarios (Otros Dptos)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -9.73653,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Seguridad Deportiva Pol. Ad. (Fútbol)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.764518,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Conservación y Mantenimiento (Admin/Sede)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.011749,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos y Comisiones Bancarias (Estadio)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.450567,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Funcionamiento Adm (Estadio)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.114447,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Funcionamiento Adm (Admin/Sede)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.534593,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Egresos Varios (Otros Dptos)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -8.525557,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Otros Dptos (Estadio)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.049236,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Otros Dptos (Fútbol)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.597084,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Otros Dptos (Otros Dptos)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.85224,
+          "disclosure": "detailed"
+        },
+        {"label":"Servicios Públicos (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.09754,"disclosure":"detailed"},
+        {
+          "label": "Servicios Públicos (Admin/Sede)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.528981,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos Plantel Profesional (Fútbol)","category":"first_team_staff","subcategory":"wages_squad","amount":-1.182661,"disclosure":"detailed"},
+        {
+          "label": "Egresos por Encuentros AFA (Fútbol)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.886767,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortización del Ejercicio (Estadio)","category":"depreciation","subcategory":"depreciation","amount":-14.839652,"disclosure":"detailed"},
+        {"label":"Seguros (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.033637,"disclosure":"detailed"},
+        {"label":"Juicios Honorarios (Estadio)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.4979,"disclosure":"detailed"},
+        {
+          "label": "Gastos Plantel Inferiores (Fútbol)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.136203,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Comisiones Tarjetas de Crédito (Admin/Sede)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.011045,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":27.021637,"tax":0,"gross_debt":67.996953,"cash":8.159819},
       "official_totals": {"revenue":125.444731,"expenses":114.751101,"net_result":37.715267}

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "PT",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,17 +32,29 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Subsídios à exploração","category":"other_income","amount":0.219358,"disclosure":"aggregated"},
-        {"label":"Outros rendimentos","category":"other_income","amount":5.282976,"disclosure":"aggregated"},
-        {"label":"Bilhetes e Camarotes","category":"matchday_competition","amount":0.507075,"disclosure":"aggregated"},
-        {"label":"Direitos Televisivos","category":"broadcasting","amount":3.463889,"disclosure":"aggregated"},
-        {"label":"Publicidade","category":"sponsorship_commercial","amount":0.453304,"disclosure":"aggregated"}
+        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.219358,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"other_revenue","subcategory":"other_income","amount":5.282976,"disclosure":"aggregated"},
+        {"label":"Bilhetes e Camarotes","category":"matchday","subcategory":"matchday_competition","amount":0.507075,"disclosure":"aggregated"},
+        {"label":"Direitos Televisivos","category":"media_rights","subcategory":"broadcasting","amount":3.463889,"disclosure":"aggregated"},
+        {"label":"Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":0.453304,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Fornecimentos e serviços externos","category":"admin_general_expense","amount":-3.886821,"disclosure":"aggregated"},
-        {"label":"Gastos com o pessoal","category":"wages_squad","amount":-10.608358,"disclosure":"aggregated"},
-        {"label":"Outros gastos","category":"other_expenses","amount":-0.618006,"disclosure":"aggregated"},
-        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-2.200963,"disclosure":"aggregated"}
+        {
+          "label": "Fornecimentos e serviços externos",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.886821,
+          "disclosure": "aggregated"
+        },
+        {"label":"Gastos com o pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-10.608358,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.618006,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/reversões de depreciação e de amortização",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -2.200963,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.931493,"tax":1.649761,"gross_debt":0,"cash":0.051557},
       "official_totals": {"revenue":9.926602,"expenses":17.314147,"net_result":-6.669278},

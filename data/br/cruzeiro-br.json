@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -53,37 +54,116 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2022-12-31"},
       "revenue": [
-        {"label":"Bilheteria e outras receitas em jogos","category":"matchday_competition","amount":31.937,"disclosure":"detailed"},
-        {"label":"Programa sócio-torcedor","category":"member_dues","amount":30.324,"disclosure":"detailed"},
-        {"label":"Patrocínio e publicidade","category":"sponsorship_commercial","amount":28.817,"disclosure":"detailed"},
-        {"label":"Direitos de transmissão fixos e premiações por performance","category":"broadcasting","amount":28.71,"disclosure":"detailed"},
-        {"label":"Rescisão contratual (transferência de atletas)","category":"player_sales","amount":10.8,"disclosure":"detailed"},
-        {"label":"Venda de direitos econômicos de atletas","category":"player_sales","amount":4.431,"disclosure":"detailed"},
-        {"label":"Mecanismo de solidariedade (recebido)","category":"player_sales","amount":0.962,"disclosure":"detailed"},
-        {"label":"Outros (transferência de atletas e mecanismo de solidariedade)","category":"other_income","amount":0.04,"disclosure":"detailed"},
-        {"label":"Receitas com royalties e licenciamento","category":"sponsorship_commercial","amount":14.153,"disclosure":"detailed"},
-        {"label":"Outros (receita operacional bruta)","category":"other_income","amount":0.18,"disclosure":"detailed"},
-        {"label":"Impostos e contribuições","category":"other_income","amount":-4.226,"disclosure":"detailed"},
-        {"label":"Outras despesas (receitas) — Nota 18, efecto neto positivo","category":"other_income","amount":0.604,"disclosure":"detailed"}
+        {"label":"Bilheteria e outras receitas em jogos","category":"matchday","subcategory":"matchday_competition","amount":31.937,"disclosure":"detailed"},
+        {"label":"Programa sócio-torcedor","category":"membership","subcategory":"member_dues","amount":30.324,"disclosure":"detailed"},
+        {"label":"Patrocínio e publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":28.817,"disclosure":"detailed"},
+        {
+          "label": "Direitos de transmissão fixos e premiações por performance",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 28.71,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Rescisão contratual (transferência de atletas)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 10.8,
+          "disclosure": "detailed"
+        },
+        {"label":"Venda de direitos econômicos de atletas","category":"player_transfers","subcategory":"player_sales","amount":4.431,"disclosure":"detailed"},
+        {"label":"Mecanismo de solidariedade (recebido)","category":"player_transfers","subcategory":"player_sales","amount":0.962,"disclosure":"detailed"},
+        {
+          "label": "Outros (transferência de atletas e mecanismo de solidariedade)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.04,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Receitas com royalties e licenciamento",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 14.153,
+          "disclosure": "detailed"
+        },
+        {"label":"Outros (receita operacional bruta)","category":"other_revenue","subcategory":"other_income","amount":0.18,"disclosure":"detailed"},
+        {"label":"Impostos e contribuições","category":"other_revenue","subcategory":"other_income","amount":-4.226,"disclosure":"detailed"},
+        {
+          "label": "Outras despesas (receitas) — Nota 18, efecto neto positivo",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.604,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Salários, direitos de imagem, encargos e beneficios","category":"wages_squad","amount":-57.4,"disclosure":"detailed"},
-        {"label":"Custos diretos e indiretos com jogos","category":"match_organisation_expense","amount":-22.032,"disclosure":"detailed"},
-        {"label":"Amortizações (Nota 16)","category":"player_amortisation","amount":-9.431,"disclosure":"detailed"},
-        {"label":"Serviços de assessoria e consultoria (Nota 16)","category":"admin_general_expense","amount":-4.823,"disclosure":"detailed"},
-        {"label":"Baixa do ativo intangivel (Nota 16)","category":"player_impairment","amount":-3.386,"disclosure":"detailed"},
-        {"label":"Custos com viagens e hospedagens","category":"match_organisation_expense","amount":-2.649,"disclosure":"detailed"},
-        {"label":"Custos com alimentação","category":"match_organisation_expense","amount":-1.878,"disclosure":"detailed"},
-        {"label":"Depreciação (Nota 16)","category":"depreciation","amount":-1.777,"disclosure":"detailed"},
-        {"label":"Manutenção geral (Nota 16)","category":"admin_general_expense","amount":-1.124,"disclosure":"detailed"},
-        {"label":"Taxas de legalização jogadores","category":"other_expenses","amount":-0.808,"disclosure":"detailed"},
-        {"label":"Outros custos (Nota 16)","category":"other_expenses","amount":-3.395,"disclosure":"detailed"},
-        {"label":"Salários, encargos e benefícios (G&A)","category":"admin_general_expense","amount":-26.89,"disclosure":"detailed"},
-        {"label":"Despesas comerciais (G&A)","category":"admin_general_expense","amount":-7.41,"disclosure":"detailed"},
-        {"label":"Outras despesas (G&A)","category":"admin_general_expense","amount":-3.092,"disclosure":"detailed"},
+        {
+          "label": "Salários, direitos de imagem, encargos e beneficios",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -57.4,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos diretos e indiretos com jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -22.032,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizações (Nota 16)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -9.431,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de assessoria e consultoria (Nota 16)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.823,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Baixa do ativo intangivel (Nota 16)",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -3.386,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos com viagens e hospedagens",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.649,
+          "disclosure": "detailed"
+        },
+        {"label":"Custos com alimentação","category":"match_operations","subcategory":"match_organisation_expense","amount":-1.878,"disclosure":"detailed"},
+        {"label":"Depreciação (Nota 16)","category":"depreciation","subcategory":"depreciation","amount":-1.777,"disclosure":"detailed"},
+        {"label":"Manutenção geral (Nota 16)","category":"admin_general","subcategory":"admin_general_expense","amount":-1.124,"disclosure":"detailed"},
+        {
+          "label": "Taxas de legalização jogadores",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.808,
+          "disclosure": "detailed"
+        },
+        {"label":"Outros custos (Nota 16)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.395,"disclosure":"detailed"},
+        {
+          "label": "Salários, encargos e benefícios (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -26.89,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas comerciais (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-7.41,"disclosure":"detailed"},
+        {"label":"Outras despesas (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-3.092,"disclosure":"detailed"},
         {
           "label": "Pagamento de dívidas do Cruzeiro Associação, sem ressarcimento (Nota 18)",
-          "category": "exceptional_items",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
           "amount": -25.568,
           "disclosure": "detailed"
         }
@@ -100,43 +180,157 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2023-12-31"},
       "revenue": [
-        {"label":"Bilheteria","category":"matchday_competition","amount":28.624,"disclosure":"detailed"},
-        {"label":"Programa sócio torcedor","category":"member_dues","amount":31.045,"disclosure":"detailed"},
-        {"label":"Patrocínio e publicidade","category":"sponsorship_commercial","amount":48.58,"disclosure":"detailed"},
-        {"label":"Direitos de transmissão fixos e premiações por performance","category":"broadcasting","amount":101.728,"disclosure":"detailed"},
-        {"label":"Rescisão contratual (transferência de atletas)","category":"player_sales","amount":0.108,"disclosure":"detailed"},
-        {"label":"Venda de direitos econômicos de atletas","category":"player_sales","amount":16.809,"disclosure":"detailed"},
-        {"label":"Mecanismo de solidariedade (recebido)","category":"player_sales","amount":2.401,"disclosure":"detailed"},
-        {"label":"Cessão temporária (empréstimo de atletas)","category":"player_sales","amount":1.148,"disclosure":"detailed"},
-        {"label":"Outros (transferência de atletas e mecanismo de solidariedade)","category":"other_income","amount":0.248,"disclosure":"detailed"},
-        {"label":"Receitas com royalties e licenciamento","category":"sponsorship_commercial","amount":11.813,"disclosure":"detailed"},
-        {"label":"Outros (receita operacional bruta)","category":"other_income","amount":0.865,"disclosure":"detailed"},
-        {"label":"Impostos e contribuições","category":"other_income","amount":-18.877,"disclosure":"detailed"},
-        {"label":"Receita pela venda de direitos intangíveis (participação na LFU)","category":"other_income","amount":192.78,"disclosure":"detailed"},
-        {"label":"Outras receitas (Nota 18)","category":"other_income","amount":0.032,"disclosure":"detailed"}
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":28.624,"disclosure":"detailed"},
+        {"label":"Programa sócio torcedor","category":"membership","subcategory":"member_dues","amount":31.045,"disclosure":"detailed"},
+        {"label":"Patrocínio e publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":48.58,"disclosure":"detailed"},
+        {
+          "label": "Direitos de transmissão fixos e premiações por performance",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 101.728,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Rescisão contratual (transferência de atletas)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.108,
+          "disclosure": "detailed"
+        },
+        {"label":"Venda de direitos econômicos de atletas","category":"player_transfers","subcategory":"player_sales","amount":16.809,"disclosure":"detailed"},
+        {"label":"Mecanismo de solidariedade (recebido)","category":"player_transfers","subcategory":"player_sales","amount":2.401,"disclosure":"detailed"},
+        {
+          "label": "Cessão temporária (empréstimo de atletas)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1.148,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros (transferência de atletas e mecanismo de solidariedade)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.248,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Receitas com royalties e licenciamento",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 11.813,
+          "disclosure": "detailed"
+        },
+        {"label":"Outros (receita operacional bruta)","category":"other_revenue","subcategory":"other_income","amount":0.865,"disclosure":"detailed"},
+        {"label":"Impostos e contribuições","category":"other_revenue","subcategory":"other_income","amount":-18.877,"disclosure":"detailed"},
+        {
+          "label": "Receita pela venda de direitos intangíveis (participação na LFU)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 192.78,
+          "disclosure": "detailed"
+        },
+        {"label":"Outras receitas (Nota 18)","category":"other_revenue","subcategory":"other_income","amount":0.032,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Salários, direito de imagem, encargos e benefícios","category":"wages_squad","amount":-94.709,"disclosure":"detailed"},
-        {"label":"Custos diretos e indiretos com jogos","category":"match_organisation_expense","amount":-21.216,"disclosure":"detailed"},
-        {"label":"Amortizações (Nota 16)","category":"player_amortisation","amount":-30.665,"disclosure":"detailed"},
-        {"label":"Serviços de assessoria e consultoria (Nota 16)","category":"admin_general_expense","amount":-4.22,"disclosure":"detailed"},
-        {"label":"Baixa do ativo intangível (Nota 16)","category":"player_impairment","amount":-15.186,"disclosure":"detailed"},
-        {"label":"Custos com viagens e hospedagens","category":"match_organisation_expense","amount":-4.604,"disclosure":"detailed"},
-        {"label":"Custos com alimentação","category":"match_organisation_expense","amount":-3.316,"disclosure":"detailed"},
-        {"label":"Depreciação (Nota 16)","category":"depreciation","amount":-3.32,"disclosure":"detailed"},
-        {"label":"Direito de Arena (custo)","category":"match_organisation_expense","amount":-4.947,"disclosure":"detailed"},
-        {"label":"Manutenção geral (Nota 16)","category":"admin_general_expense","amount":-2.274,"disclosure":"detailed"},
-        {"label":"Taxas de legalização de jogadores","category":"other_expenses","amount":-0.564,"disclosure":"detailed"},
-        {"label":"Outros custos (atividades esportivas)","category":"other_expenses","amount":-5.167,"disclosure":"detailed"},
-        {"label":"Salários, encargos e benefícios (G&A)","category":"admin_general_expense","amount":-25.056,"disclosure":"detailed"},
-        {"label":"Despesas comerciais (G&A)","category":"admin_general_expense","amount":-8.522,"disclosure":"detailed"},
-        {"label":"Serviços contratados de terceiros (G&A)","category":"admin_general_expense","amount":-10.488,"disclosure":"detailed"},
-        {"label":"Rescisão de contratos comerciais (G&A)","category":"admin_general_expense","amount":-5,"disclosure":"detailed"},
-        {"label":"Assessores – Venda de Direitos (G&A)","category":"admin_general_expense","amount":-4.409,"disclosure":"detailed"},
-        {"label":"Amortizações (G&A, Nota 17)","category":"other_amortisation","amount":-51.216,"disclosure":"detailed"},
-        {"label":"Outras despesas (G&A)","category":"admin_general_expense","amount":-10.137,"disclosure":"detailed"},
-        {"label":"Provisão para demandas judiciais (Nota 18)","category":"exceptional_items","amount":-25.54,"disclosure":"detailed"},
-        {"label":"Outras despesas (Nota 18)","category":"other_expenses","amount":-0.025,"disclosure":"detailed"}
+        {
+          "label": "Salários, direito de imagem, encargos e benefícios",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -94.709,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos diretos e indiretos com jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -21.216,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizações (Nota 16)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -30.665,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de assessoria e consultoria (Nota 16)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.22,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Baixa do ativo intangível (Nota 16)",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -15.186,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos com viagens e hospedagens",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -4.604,
+          "disclosure": "detailed"
+        },
+        {"label":"Custos com alimentação","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.316,"disclosure":"detailed"},
+        {"label":"Depreciação (Nota 16)","category":"depreciation","subcategory":"depreciation","amount":-3.32,"disclosure":"detailed"},
+        {"label":"Direito de Arena (custo)","category":"match_operations","subcategory":"match_organisation_expense","amount":-4.947,"disclosure":"detailed"},
+        {"label":"Manutenção geral (Nota 16)","category":"admin_general","subcategory":"admin_general_expense","amount":-2.274,"disclosure":"detailed"},
+        {
+          "label": "Taxas de legalização de jogadores",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.564,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros custos (atividades esportivas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -5.167,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Salários, encargos e benefícios (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -25.056,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas comerciais (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-8.522,"disclosure":"detailed"},
+        {
+          "label": "Serviços contratados de terceiros (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -10.488,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Rescisão de contratos comerciais (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Assessores – Venda de Direitos (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.409,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortizações (G&A, Nota 17)","category":"other_amortisation","subcategory":"other_amortisation","amount":-51.216,"disclosure":"detailed"},
+        {"label":"Outras despesas (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-10.137,"disclosure":"detailed"},
+        {
+          "label": "Provisão para demandas judiciais (Nota 18)",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -25.54,
+          "disclosure": "detailed"
+        },
+        {"label":"Outras despesas (Nota 18)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.025,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":173.393,"tax":0,"gross_debt":16.514,"cash":67.239},
       "official_totals": {"revenue":417.304,"expenses":305.041,"net_result":260.116}
@@ -150,38 +344,134 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2024-12-31"},
       "revenue": [
-        {"label":"Bilheteria","category":"matchday_competition","amount":51.069,"disclosure":"detailed"},
-        {"label":"Programa sócio torcedor","category":"member_dues","amount":32.439,"disclosure":"detailed"},
-        {"label":"Patrocínio e publicidade","category":"sponsorship_commercial","amount":57.86,"disclosure":"detailed"},
-        {"label":"Direitos de transmissão fixos e premiações por performance","category":"broadcasting","amount":138.072,"disclosure":"detailed"},
-        {"label":"Mecanismo de solidariedade (recebido)","category":"player_sales","amount":7.684,"disclosure":"detailed"},
-        {"label":"Cessão temporária (empréstimo de atletas)","category":"player_sales","amount":3.182,"disclosure":"detailed"},
-        {"label":"Receitas com royalties e licenciamento","category":"sponsorship_commercial","amount":15.365,"disclosure":"detailed"},
-        {"label":"Outros (receita operacional bruta)","category":"other_income","amount":1.92,"disclosure":"detailed"},
-        {"label":"Impostos e contribuições / Vendas canceladas","category":"other_income","amount":-24.878,"disclosure":"detailed"},
-        {"label":"Receita de transferência de atletas","category":"player_sales","amount":63.978,"disclosure":"detailed"},
-        {"label":"Outras receitas (Nota 28)","category":"other_income","amount":0.007,"disclosure":"detailed"}
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":51.069,"disclosure":"detailed"},
+        {"label":"Programa sócio torcedor","category":"membership","subcategory":"member_dues","amount":32.439,"disclosure":"detailed"},
+        {"label":"Patrocínio e publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":57.86,"disclosure":"detailed"},
+        {
+          "label": "Direitos de transmissão fixos e premiações por performance",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 138.072,
+          "disclosure": "detailed"
+        },
+        {"label":"Mecanismo de solidariedade (recebido)","category":"player_transfers","subcategory":"player_sales","amount":7.684,"disclosure":"detailed"},
+        {
+          "label": "Cessão temporária (empréstimo de atletas)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 3.182,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Receitas com royalties e licenciamento",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 15.365,
+          "disclosure": "detailed"
+        },
+        {"label":"Outros (receita operacional bruta)","category":"other_revenue","subcategory":"other_income","amount":1.92,"disclosure":"detailed"},
+        {
+          "label": "Impostos e contribuições / Vendas canceladas",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -24.878,
+          "disclosure": "detailed"
+        },
+        {"label":"Receita de transferência de atletas","category":"player_transfers","subcategory":"player_sales","amount":63.978,"disclosure":"detailed"},
+        {"label":"Outras receitas (Nota 28)","category":"other_revenue","subcategory":"other_income","amount":0.007,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Salários, direito de imagem, encargos e benefícios","category":"wages_squad","amount":-200.355,"disclosure":"detailed"},
-        {"label":"Custos diretos e indiretos com jogos","category":"match_organisation_expense","amount":-20.788,"disclosure":"detailed"},
-        {"label":"Amortizações do intangível (atletas)","category":"player_amortisation","amount":-82.317,"disclosure":"detailed"},
-        {"label":"Serviços de assessoria e consultoria","category":"admin_general_expense","amount":-0.331,"disclosure":"detailed"},
-        {"label":"Baixa do ativo intangível (Nota 26)","category":"player_impairment","amount":-8.375,"disclosure":"detailed"},
-        {"label":"Custos com viagens e hospedagens","category":"match_organisation_expense","amount":-47.867,"disclosure":"detailed"},
-        {"label":"Custos com alimentação","category":"match_organisation_expense","amount":-5.707,"disclosure":"detailed"},
-        {"label":"Depreciação","category":"depreciation","amount":-4.601,"disclosure":"detailed"},
-        {"label":"Direito de Arena (custo)","category":"match_organisation_expense","amount":-6.881,"disclosure":"detailed"},
-        {"label":"Manutenção geral","category":"admin_general_expense","amount":-15.787,"disclosure":"detailed"},
-        {"label":"Taxas de legalização de jogadores","category":"other_expenses","amount":-0.874,"disclosure":"detailed"},
-        {"label":"Outros custos (atividades esportivas)","category":"other_expenses","amount":-1.206,"disclosure":"detailed"},
-        {"label":"Salários, encargos e benefícios (G&A)","category":"admin_general_expense","amount":-13.367,"disclosure":"detailed"},
-        {"label":"Serviços contratados de terceiros (G&A)","category":"admin_general_expense","amount":-12.358,"disclosure":"detailed"},
-        {"label":"Amortizações (G&A)","category":"other_amortisation","amount":-26.644,"disclosure":"detailed"},
-        {"label":"Outros (G&A)","category":"admin_general_expense","amount":-12.549,"disclosure":"detailed"},
-        {"label":"Baixa do custo de atletas pela venda de direitos intangíveis","category":"player_amortisation","amount":-32.886,"disclosure":"detailed"},
-        {"label":"Outras despesas (Nota 28)","category":"other_expenses","amount":-0.228,"disclosure":"detailed"},
-        {"label":"Baixa de ativo imobilizado (Nota 28)","category":"other_expenses","amount":-0.016,"disclosure":"detailed"}
+        {
+          "label": "Salários, direito de imagem, encargos e benefícios",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -200.355,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos diretos e indiretos com jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -20.788,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizações do intangível (atletas)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -82.317,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de assessoria e consultoria",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.331,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Baixa do ativo intangível (Nota 26)",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -8.375,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos com viagens e hospedagens",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -47.867,
+          "disclosure": "detailed"
+        },
+        {"label":"Custos com alimentação","category":"match_operations","subcategory":"match_organisation_expense","amount":-5.707,"disclosure":"detailed"},
+        {"label":"Depreciação","category":"depreciation","subcategory":"depreciation","amount":-4.601,"disclosure":"detailed"},
+        {"label":"Direito de Arena (custo)","category":"match_operations","subcategory":"match_organisation_expense","amount":-6.881,"disclosure":"detailed"},
+        {"label":"Manutenção geral","category":"admin_general","subcategory":"admin_general_expense","amount":-15.787,"disclosure":"detailed"},
+        {
+          "label": "Taxas de legalização de jogadores",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.874,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros custos (atividades esportivas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.206,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Salários, encargos e benefícios (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -13.367,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços contratados de terceiros (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -12.358,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortizações (G&A)","category":"other_amortisation","subcategory":"other_amortisation","amount":-26.644,"disclosure":"detailed"},
+        {"label":"Outros (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-12.549,"disclosure":"detailed"},
+        {
+          "label": "Baixa do custo de atletas pela venda de direitos intangíveis",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -32.886,
+          "disclosure": "detailed"
+        },
+        {"label":"Outras despesas (Nota 28)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.228,"disclosure":"detailed"},
+        {
+          "label": "Baixa de ativo imobilizado (Nota 28)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.016,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-23.469,"tax":0,"gross_debt":37.329,"cash":7.024},
       "official_totals": {"revenue":346.698,"expenses":493.137,"net_result":-169.908}
@@ -195,43 +485,151 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"Bilheteria","category":"matchday_competition","amount":69.43,"disclosure":"detailed"},
-        {"label":"Programa sócio torcedor","category":"member_dues","amount":51.008,"disclosure":"detailed"},
-        {"label":"Patrocínio","category":"sponsorship_commercial","amount":280.01,"disclosure":"detailed"},
-        {"label":"Publicidade","category":"sponsorship_commercial","amount":26.403,"disclosure":"detailed"},
-        {"label":"Direitos de transmissão fixos e premiações por performance","category":"broadcasting","amount":176.486,"disclosure":"detailed"},
-        {"label":"Mecanismo de solidariedade (recebido)","category":"player_sales","amount":1.855,"disclosure":"detailed"},
-        {"label":"Cessão temporária (empréstimo de atletas)","category":"player_sales","amount":1.449,"disclosure":"detailed"},
-        {"label":"Outros (mecanismo de solidariedade e outros)","category":"other_income","amount":3.596,"disclosure":"detailed"},
-        {"label":"Royalties e licenciamento","category":"sponsorship_commercial","amount":25.47,"disclosure":"detailed"},
-        {"label":"Outros (receita operacional bruta)","category":"other_income","amount":13.137,"disclosure":"detailed"},
-        {"label":"Impostos e contribuições / Vendas canceladas","category":"other_income","amount":-49.669,"disclosure":"detailed"},
-        {"label":"Receita de transferência de atletas","category":"player_sales","amount":28.364,"disclosure":"detailed"},
-        {"label":"Outras receitas (Nota 29)","category":"other_income","amount":0.36,"disclosure":"detailed"}
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":69.43,"disclosure":"detailed"},
+        {"label":"Programa sócio torcedor","category":"membership","subcategory":"member_dues","amount":51.008,"disclosure":"detailed"},
+        {"label":"Patrocínio","category":"commercial","subcategory":"sponsorship_commercial","amount":280.01,"disclosure":"detailed"},
+        {"label":"Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":26.403,"disclosure":"detailed"},
+        {
+          "label": "Direitos de transmissão fixos e premiações por performance",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 176.486,
+          "disclosure": "detailed"
+        },
+        {"label":"Mecanismo de solidariedade (recebido)","category":"player_transfers","subcategory":"player_sales","amount":1.855,"disclosure":"detailed"},
+        {
+          "label": "Cessão temporária (empréstimo de atletas)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1.449,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros (mecanismo de solidariedade e outros)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 3.596,
+          "disclosure": "detailed"
+        },
+        {"label":"Royalties e licenciamento","category":"commercial","subcategory":"sponsorship_commercial","amount":25.47,"disclosure":"detailed"},
+        {"label":"Outros (receita operacional bruta)","category":"other_revenue","subcategory":"other_income","amount":13.137,"disclosure":"detailed"},
+        {
+          "label": "Impostos e contribuições / Vendas canceladas",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -49.669,
+          "disclosure": "detailed"
+        },
+        {"label":"Receita de transferência de atletas","category":"player_transfers","subcategory":"player_sales","amount":28.364,"disclosure":"detailed"},
+        {"label":"Outras receitas (Nota 29)","category":"other_revenue","subcategory":"other_income","amount":0.36,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Salários, direito de imagem, encargos e benefícios","category":"wages_squad","amount":-362.276,"disclosure":"detailed"},
-        {"label":"Custos diretos e indiretos com jogos","category":"match_organisation_expense","amount":-28.384,"disclosure":"detailed"},
-        {"label":"Amortizações do intangível (atletas)","category":"player_amortisation","amount":-186.647,"disclosure":"detailed"},
-        {"label":"Serviços de assessoria e consultoria","category":"admin_general_expense","amount":-2.593,"disclosure":"detailed"},
-        {"label":"Baixa do ativo intangível (Nota 27)","category":"player_impairment","amount":-5.704,"disclosure":"detailed"},
-        {"label":"Custos com viagens e hospedagens","category":"match_organisation_expense","amount":-11.29,"disclosure":"detailed"},
-        {"label":"Custos com Fretamentos e Passagens","category":"match_organisation_expense","amount":-18.288,"disclosure":"detailed"},
-        {"label":"Custos com alimentação","category":"match_organisation_expense","amount":-8.053,"disclosure":"detailed"},
-        {"label":"Depreciação","category":"depreciation","amount":-5.459,"disclosure":"detailed"},
-        {"label":"Direito de Arena (custo)","category":"match_organisation_expense","amount":-8.904,"disclosure":"detailed"},
-        {"label":"Manutenção campos de futebol","category":"match_organisation_expense","amount":-1.666,"disclosure":"detailed"},
-        {"label":"Serviço de segurança e vigilância","category":"match_organisation_expense","amount":-9.249,"disclosure":"detailed"},
-        {"label":"Manutenção geral","category":"admin_general_expense","amount":-26.552,"disclosure":"detailed"},
-        {"label":"Taxas de legalização de jogadores","category":"other_expenses","amount":-0.798,"disclosure":"detailed"},
-        {"label":"Outros custos (atividades esportivas)","category":"other_expenses","amount":-4.361,"disclosure":"detailed"},
-        {"label":"Salários, encargos e benefícios (G&A)","category":"admin_general_expense","amount":-4.601,"disclosure":"detailed"},
-        {"label":"Serviços contratados de terceiros (G&A)","category":"admin_general_expense","amount":-0.587,"disclosure":"detailed"},
-        {"label":"Amortizações (G&A)","category":"other_amortisation","amount":-1.608,"disclosure":"detailed"},
-        {"label":"Despesas Comerciais (G&A)","category":"admin_general_expense","amount":-0.367,"disclosure":"detailed"},
-        {"label":"Outros (G&A)","category":"admin_general_expense","amount":-3.061,"disclosure":"detailed"},
-        {"label":"Baixa do custo de atletas pela venda de direitos intangíveis","category":"player_amortisation","amount":-7.324,"disclosure":"detailed"},
-        {"label":"Outras despesas (Nota 29)","category":"other_expenses","amount":-0.533,"disclosure":"detailed"}
+        {
+          "label": "Salários, direito de imagem, encargos e benefícios",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -362.276,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos diretos e indiretos com jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -28.384,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizações do intangível (atletas)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -186.647,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de assessoria e consultoria",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.593,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Baixa do ativo intangível (Nota 27)",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -5.704,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos com viagens e hospedagens",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -11.29,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos com Fretamentos e Passagens",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -18.288,
+          "disclosure": "detailed"
+        },
+        {"label":"Custos com alimentação","category":"match_operations","subcategory":"match_organisation_expense","amount":-8.053,"disclosure":"detailed"},
+        {"label":"Depreciação","category":"depreciation","subcategory":"depreciation","amount":-5.459,"disclosure":"detailed"},
+        {"label":"Direito de Arena (custo)","category":"match_operations","subcategory":"match_organisation_expense","amount":-8.904,"disclosure":"detailed"},
+        {
+          "label": "Manutenção campos de futebol",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.666,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviço de segurança e vigilância",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -9.249,
+          "disclosure": "detailed"
+        },
+        {"label":"Manutenção geral","category":"admin_general","subcategory":"admin_general_expense","amount":-26.552,"disclosure":"detailed"},
+        {
+          "label": "Taxas de legalização de jogadores",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.798,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros custos (atividades esportivas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -4.361,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Salários, encargos e benefícios (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.601,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços contratados de terceiros (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.587,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortizações (G&A)","category":"other_amortisation","subcategory":"other_amortisation","amount":-1.608,"disclosure":"detailed"},
+        {"label":"Despesas Comerciais (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.367,"disclosure":"detailed"},
+        {"label":"Outros (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-3.061,"disclosure":"detailed"},
+        {
+          "label": "Baixa do custo de atletas pela venda de direitos intangíveis",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -7.324,
+          "disclosure": "detailed"
+        },
+        {"label":"Outras despesas (Nota 29)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.533,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-44.495,"tax":0,"gross_debt":12.645,"cash":0.702},
       "official_totals": {"revenue":627.899,"expenses":698.305,"net_result":-114.9}

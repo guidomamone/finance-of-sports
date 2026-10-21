@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -32,41 +33,50 @@
       "management_id": null,
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"Direitos televisivos e premiações","category":"broadcasting","amount":88.708,"disclosure":"detailed"},
-        {"label":"Comerciais, marketing e publicidade","category":"sponsorship_commercial","amount":47.335,"disclosure":"detailed"},
-        {"label":"Receitas em jogos","category":"matchday_competition","amount":19.682,"disclosure":"detailed"},
-        {"label":"Contribuições de associados","category":"member_dues","amount":16.626,"disclosure":"detailed"},
-        {"label":"Patrimoniais","category":"other_income","amount":3.319,"disclosure":"detailed"},
-        {"label":"Outras receitas","category":"other_income","amount":0.567,"disclosure":"detailed"},
+        {"label":"Direitos televisivos e premiações","category":"media_rights","subcategory":"broadcasting","amount":88.708,"disclosure":"detailed"},
+        {"label":"Comerciais, marketing e publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":47.335,"disclosure":"detailed"},
+        {"label":"Receitas em jogos","category":"matchday","subcategory":"matchday_competition","amount":19.682,"disclosure":"detailed"},
+        {"label":"Contribuições de associados","category":"membership","subcategory":"member_dues","amount":16.626,"disclosure":"detailed"},
+        {"label":"Patrimoniais","category":"other_revenue","subcategory":"other_income","amount":3.319,"disclosure":"detailed"},
+        {"label":"Outras receitas","category":"other_revenue","subcategory":"other_income","amount":0.567,"disclosure":"detailed"},
         {
           "label": "Cessão de direitos contratuais (negociação de atletas, empréstimos e solidariedade)",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 6.609,
           "disclosure": "detailed"
         },
-        {"label":"Deduções de receita (INSS Patronal, 5%)","category":"other_income","amount":-8.66,"disclosure":"detailed"}
+        {"label":"Deduções de receita (INSS Patronal, 5%)","category":"other_revenue","subcategory":"other_income","amount":-8.66,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Gastos com pessoal do futebol","category":"wages_squad","amount":-116.898,"disclosure":"detailed"},
-        {"label":"Competição e viagens","category":"match_organisation_expense","amount":-14.094,"disclosure":"detailed"},
-        {"label":"Outros custos","category":"other_expenses","amount":-1.447,"disclosure":"detailed"},
+        {"label":"Gastos com pessoal do futebol","category":"first_team_staff","subcategory":"wages_squad","amount":-116.898,"disclosure":"detailed"},
+        {"label":"Competição e viagens","category":"match_operations","subcategory":"match_organisation_expense","amount":-14.094,"disclosure":"detailed"},
+        {"label":"Outros custos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.447,"disclosure":"detailed"},
         {
           "label": "Despesas com formação de atleta e amortização de despesas de anos anteriores",
-          "category": "youth_other_sports_expense",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
           "amount": -34.935,
           "disclosure": "detailed"
         },
-        {"label":"Serviços de terceiros","category":"admin_general_expense","amount":-23.234,"disclosure":"detailed"},
-        {"label":"Gastos com pessoal (administrativo)","category":"admin_general_expense","amount":-15.648,"disclosure":"detailed"},
-        {"label":"Depreciação","category":"depreciation","amount":-7.826,"disclosure":"detailed"},
-        {"label":"Despesas gerais","category":"admin_general_expense","amount":-8.659,"disclosure":"detailed"},
-        {"label":"Despesas com alimentação","category":"admin_general_expense","amount":-3.884,"disclosure":"detailed"},
-        {"label":"Despesas com manutenção","category":"admin_general_expense","amount":-2.985,"disclosure":"detailed"},
-        {"label":"Despesas c/alugueis","category":"admin_general_expense","amount":-1.525,"disclosure":"detailed"},
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-5.868,"disclosure":"detailed"},
+        {"label":"Serviços de terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-23.234,"disclosure":"detailed"},
+        {
+          "label": "Gastos com pessoal (administrativo)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -15.648,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação","category":"depreciation","subcategory":"depreciation","amount":-7.826,"disclosure":"detailed"},
+        {"label":"Despesas gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-8.659,"disclosure":"detailed"},
+        {"label":"Despesas com alimentação","category":"admin_general","subcategory":"admin_general_expense","amount":-3.884,"disclosure":"detailed"},
+        {"label":"Despesas com manutenção","category":"admin_general","subcategory":"admin_general_expense","amount":-2.985,"disclosure":"detailed"},
+        {"label":"Despesas c/alugueis","category":"admin_general","subcategory":"admin_general_expense","amount":-1.525,"disclosure":"detailed"},
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-5.868,"disclosure":"detailed"},
         {
           "label": "Outras (despesas) receitas operacionais líquidas (Liga Forte União, provisão para contingências e outras)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -35.739,
           "disclosure": "detailed"
         }

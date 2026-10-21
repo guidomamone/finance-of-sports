@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "GB",
     "reporting_currency": "GBP",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -77,12 +78,12 @@
       "management_id": null,
       "fx": {"ref":"GBP@2019-05-31"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":12.745422,"disclosure":"aggregated"},
-        {"label":"Broadcasting","category":"broadcasting","amount":22.26977,"disclosure":"aggregated"},
-        {"label":"Sponsorship.","category":"sponsorship_commercial","amount":7.338745,"disclosure":"aggregated"},
-        {"label":"Commercial","category":"sponsorship_commercial","amount":9.072537,"disclosure":"aggregated"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":12.745422,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"media_rights","subcategory":"broadcasting","amount":22.26977,"disclosure":"aggregated"},
+        {"label":"Sponsorship.","category":"commercial","subcategory":"sponsorship_commercial","amount":7.338745,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"commercial","subcategory":"sponsorship_commercial","amount":9.072537,"disclosure":"aggregated"}
       ],
-      "expenses": [{"label":"Administrative expenses","category":"admin_general_expense","amount":-163.043101,"disclosure":"aggregated"}],
+      "expenses": [{"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-163.043101,"disclosure":"aggregated"}],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.160269,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":51.426474,"expenses":163.043101,"net_result":null}
     },
@@ -95,14 +96,14 @@
       "management_id": null,
       "fx": {"ref":"GBP@2020-05-31"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":11.109998,"disclosure":"aggregated"},
-        {"label":"Broadcasting","category":"broadcasting","amount":77.727663,"disclosure":"aggregated"},
-        {"label":"Sponsorship","category":"sponsorship_commercial","amount":10.401513,"disclosure":"aggregated"},
-        {"label":"Commercial","category":"sponsorship_commercial","amount":8.624614,"disclosure":"aggregated"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":11.109998,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"media_rights","subcategory":"broadcasting","amount":77.727663,"disclosure":"aggregated"},
+        {"label":"Sponsorship","category":"commercial","subcategory":"sponsorship_commercial","amount":10.401513,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"commercial","subcategory":"sponsorship_commercial","amount":8.624614,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Administrative expenses","category":"admin_general_expense","amount":-203.017838,"disclosure":"aggregated"},
-        {"label":"Loss on sale of tangible assets","category":"exceptional_items","amount":-0.005947,"disclosure":"aggregated"}
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-203.017838,"disclosure":"aggregated"},
+        {"label":"Loss on sale of tangible assets","category":"exceptional","subcategory":"exceptional_items","amount":-0.005947,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.084973,"tax":4.181616,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":107.863788,"expenses":203.023785,"net_result":-90.893408},
@@ -123,13 +124,13 @@
       "management_id": null,
       "fx": {"ref":"GBP@2021-05-31"},
       "revenue": [
-        {"label":"Gate Receipts","category":"matchday_competition","amount":0.310542,"disclosure":"aggregated"},
-        {"label":"Broadcasting","category":"broadcasting","amount":157.143131,"disclosure":"aggregated"},
-        {"label":"Sponsorship","category":"sponsorship_commercial","amount":14.332283,"disclosure":"aggregated"},
-        {"label":"Commercial","category":"sponsorship_commercial","amount":3.842892,"disclosure":"aggregated"},
-        {"label":"Other operating income","category":"other_income","amount":2.5,"disclosure":"aggregated"}
+        {"label":"Gate Receipts","category":"matchday","subcategory":"matchday_competition","amount":0.310542,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"media_rights","subcategory":"broadcasting","amount":157.143131,"disclosure":"aggregated"},
+        {"label":"Sponsorship","category":"commercial","subcategory":"sponsorship_commercial","amount":14.332283,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"commercial","subcategory":"sponsorship_commercial","amount":3.842892,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":2.5,"disclosure":"aggregated"}
       ],
-      "expenses": [{"label":"Administrative expenses","category":"admin_general_expense","amount":-210.849675,"disclosure":"aggregated"}],
+      "expenses": [{"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-210.849675,"disclosure":"aggregated"}],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0.62564,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":178.128848,"expenses":210.849675,"net_result":-32.087203},
       "adjustments": {"extra_rows":[{"label":"Interest receivable and similar income","amount":null},{"label":"Tax on loss","amount":0.62564}]}
@@ -143,15 +144,15 @@
       "management_id": null,
       "fx": {"ref":"GBP@2022-05-31"},
       "revenue": [
-        {"label":"Gate Receipts","category":"matchday_competition","amount":16.062996,"disclosure":"aggregated"},
-        {"label":"Broadcasting","category":"broadcasting","amount":123.211017,"disclosure":"aggregated"},
-        {"label":"Sponsorship","category":"sponsorship_commercial","amount":12.703334,"disclosure":"aggregated"},
-        {"label":"Commercial","category":"sponsorship_commercial","amount":11.766557,"disclosure":"aggregated"},
-        {"label":"Other operating income","category":"other_income","amount":0.25,"disclosure":"aggregated"}
+        {"label":"Gate Receipts","category":"matchday","subcategory":"matchday_competition","amount":16.062996,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"media_rights","subcategory":"broadcasting","amount":123.211017,"disclosure":"aggregated"},
+        {"label":"Sponsorship","category":"commercial","subcategory":"sponsorship_commercial","amount":12.703334,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"commercial","subcategory":"sponsorship_commercial","amount":11.766557,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0.25,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Administrative expenses","category":"admin_general_expense","amount":-145.805056,"disclosure":"aggregated"},
-        {"label":"Exceptional administrative expenses","category":"exceptional_items","amount":-10,"disclosure":"aggregated"}
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-145.805056,"disclosure":"aggregated"},
+        {"label":"Exceptional administrative expenses","category":"exceptional","subcategory":"exceptional_items","amount":-10,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.282155,"tax":-1.434468,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":163.993904,"expenses":145.805056,"net_result":6.472225},
@@ -166,18 +167,24 @@
       "management_id": null,
       "fx": {"ref":"GBP@2023-05-31"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":18.776513,"disclosure":"aggregated"},
-        {"label":"Broadcasting","category":"broadcasting","amount":152.55645,"disclosure":"aggregated"},
-        {"label":"Sponsorship","category":"sponsorship_commercial","amount":16.302816,"disclosure":"aggregated"},
-        {"label":"Commercial","category":"sponsorship_commercial","amount":16.890061,"disclosure":"aggregated"},
-        {"label":"Other operating income","category":"other_income","amount":0,"disclosure":"aggregated"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":18.776513,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"media_rights","subcategory":"broadcasting","amount":152.55645,"disclosure":"aggregated"},
+        {"label":"Sponsorship","category":"commercial","subcategory":"sponsorship_commercial","amount":16.302816,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"commercial","subcategory":"sponsorship_commercial","amount":16.890061,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Depreciation of tangible assets","category":"depreciation","amount":-3.317377,"disclosure":"aggregated"},
-        {"label":"Wages and salaries","category":"wages_squad","amount":-9.080191,"disclosure":"aggregated"},
-        {"label":"Social security costs","category":"wages_squad","amount":-1.2022,"disclosure":"aggregated"},
-        {"label":"Other pension costs","category":"wages_squad","amount":-0.477504,"disclosure":"aggregated"},
-        {"label":"Other operating charges (including exceptional costs)","category":"other_expenses","amount":-306.203312,"disclosure":"aggregated"}
+        {"label":"Depreciation of tangible assets","category":"depreciation","subcategory":"depreciation","amount":-3.317377,"disclosure":"aggregated"},
+        {"label":"Wages and salaries","category":"first_team_staff","subcategory":"wages_squad","amount":-9.080191,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"first_team_staff","subcategory":"wages_squad","amount":-1.2022,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"first_team_staff","subcategory":"wages_squad","amount":-0.477504,"disclosure":"aggregated"},
+        {
+          "label": "Other operating charges (including exceptional costs)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -306.203312,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.128924,"tax":-0.22125,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":204.52584,"expenses":320.280584,"net_result":-116.104918},
@@ -192,20 +199,26 @@
       "management_id": null,
       "fx": {"ref":"GBP@2024-06-30"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":28.009,"disclosure":"aggregated"},
-        {"label":"Broadcasting","category":"broadcasting","amount":170.718,"disclosure":"aggregated"},
-        {"label":"Sponsorship","category":"sponsorship_commercial","amount":21.895,"disclosure":"aggregated"},
-        {"label":"Commercial","category":"sponsorship_commercial","amount":28.767,"disclosure":"aggregated"},
-        {"label":"UEFA","category":"broadcasting","amount":13.69,"disclosure":"aggregated"},
-        {"label":"Insurance claims receivable","category":"other_income","amount":2.5,"disclosure":"aggregated"},
-        {"label":"V Sports recharge","category":"other_income","amount":2.613,"disclosure":"aggregated"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":28.009,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"media_rights","subcategory":"broadcasting","amount":170.718,"disclosure":"aggregated"},
+        {"label":"Sponsorship","category":"commercial","subcategory":"sponsorship_commercial","amount":21.895,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"commercial","subcategory":"sponsorship_commercial","amount":28.767,"disclosure":"aggregated"},
+        {"label":"UEFA","category":"media_rights","subcategory":"broadcasting","amount":13.69,"disclosure":"aggregated"},
+        {"label":"Insurance claims receivable","category":"other_revenue","subcategory":"other_income","amount":2.5,"disclosure":"aggregated"},
+        {"label":"V Sports recharge","category":"other_revenue","subcategory":"other_income","amount":2.613,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Depreciation of tangible assets (see note 11)","category":"depreciation","amount":-4.909,"disclosure":"aggregated"},
-        {"label":"Wages and salaries","category":"wages_squad","amount":-12.827,"disclosure":"aggregated"},
-        {"label":"Social security costs","category":"wages_squad","amount":-1.877,"disclosure":"aggregated"},
-        {"label":"Other pension costs","category":"wages_squad","amount":-0.492,"disclosure":"aggregated"},
-        {"label":"Other operating charges","category":"other_expenses","amount":-298.796,"disclosure":"aggregated"}
+        {
+          "label": "Depreciation of tangible assets (see note 11)",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -4.909,
+          "disclosure": "aggregated"
+        },
+        {"label":"Wages and salaries","category":"first_team_staff","subcategory":"wages_squad","amount":-12.827,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"first_team_staff","subcategory":"wages_squad","amount":-1.877,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"first_team_staff","subcategory":"wages_squad","amount":-0.492,"disclosure":"aggregated"},
+        {"label":"Other operating charges","category":"other_operating_expenses","subcategory":"other_expenses","amount":-298.796,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":1.284,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":268.192,"expenses":318.901,"net_result":-49.425},
@@ -220,18 +233,19 @@
       "management_id": "nswe",
       "fx": {"ref":"GBP@2025-06-30"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":38.452,"disclosure":"detailed"},
-        {"label":"Broadcasting","category":"broadcasting","amount":170.717,"disclosure":"detailed"},
-        {"label":"Sponsorship","category":"sponsorship_commercial","amount":28.646,"disclosure":"detailed"},
-        {"label":"Commercial","category":"sponsorship_commercial","amount":51.23,"disclosure":"not_disclosed"},
-        {"label":"UEFA","category":"broadcasting","amount":70.232,"disclosure":"detailed"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":38.452,"disclosure":"detailed"},
+        {"label":"Broadcasting","category":"media_rights","subcategory":"broadcasting","amount":170.717,"disclosure":"detailed"},
+        {"label":"Sponsorship","category":"commercial","subcategory":"sponsorship_commercial","amount":28.646,"disclosure":"detailed"},
+        {"label":"Commercial","category":"commercial","subcategory":"sponsorship_commercial","amount":51.23,"disclosure":"not_disclosed"},
+        {"label":"UEFA","category":"media_rights","subcategory":"broadcasting","amount":70.232,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Staff costs","category":"wages_squad","amount":-20.578,"disclosure":"detailed"},
-        {"label":"Depreciation of tangible assets","category":"depreciation","amount":-8.737,"disclosure":"detailed"},
+        {"label":"Staff costs","category":"first_team_staff","subcategory":"wages_squad","amount":-20.578,"disclosure":"detailed"},
+        {"label":"Depreciation of tangible assets","category":"depreciation","subcategory":"depreciation","amount":-8.737,"disclosure":"detailed"},
         {
           "label": "Operating expenses (resto sin desglosar — ver limitación en el comentario de cabecera: casi con certeza incluye el costo del plantel profesional, que esta entidad no reporta por separado)",
-          "category": "lump_football_operations_expense",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
           "amount": -404.092,
           "disclosure": "not_disclosed"
         }

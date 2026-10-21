@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DK",
     "reporting_currency": "DKK",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -33,40 +34,56 @@
       "revenue": [
         {
           "label": "Entré-, TV- og præmieindtægter (recaudación de entradas, TV y premios combinados — 2020, año de público muy restringido por COVID-19)",
-          "category": "broadcasting",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
           "amount": 35.128,
           "disclosure": "detailed"
         },
-        {"label":"Indtægter fra partnere og sponsorer","category":"sponsorship_commercial","amount":41.805,"disclosure":"detailed"},
-        {"label":"F&B og arrangementer m.v.","category":"stadium_other","amount":3.792,"disclosure":"detailed"},
-        {"label":"Merchandise m.v.","category":"sponsorship_commercial","amount":26.799,"disclosure":"detailed"},
-        {"label":"Udlejning erhvervsejendom m.v.","category":"other_income","amount":2.333,"disclosure":"detailed"},
-        {"label":"Anden nettoomsætning","category":"other_income","amount":3.405,"disclosure":"detailed"},
+        {"label":"Indtægter fra partnere og sponsorer","category":"commercial","subcategory":"sponsorship_commercial","amount":41.805,"disclosure":"detailed"},
+        {"label":"F&B og arrangementer m.v.","category":"venue","subcategory":"stadium_other","amount":3.792,"disclosure":"detailed"},
+        {"label":"Merchandise m.v.","category":"commercial","subcategory":"sponsorship_commercial","amount":26.799,"disclosure":"detailed"},
+        {"label":"Udlejning erhvervsejendom m.v.","category":"other_revenue","subcategory":"other_income","amount":2.333,"disclosure":"detailed"},
+        {"label":"Anden nettoomsætning","category":"other_revenue","subcategory":"other_income","amount":3.405,"disclosure":"detailed"},
         {
           "label": "Andre driftsindtægter (compensación estatal COVID-19 + donación)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 45.209,
           "disclosure": "detailed",
           "items": [["Kompensation fra Staten",42.029],["Donation",3.181]]
         }
       ],
       "expenses": [
-        {"label":"Kamp- og spilleromkostninger","category":"match_organisation_expense","amount":-11.145,"disclosure":"detailed"},
-        {"label":"Salgs- og markedsføringsomkostninger","category":"admin_general_expense","amount":-4.377,"disclosure":"detailed"},
-        {"label":"F&B og arrangementer m.v. (costo)","category":"admin_general_expense","amount":-4.138,"disclosure":"detailed"},
-        {"label":"Driftsomkostninger ejendomme","category":"admin_general_expense","amount":-8.189,"disclosure":"detailed"},
-        {"label":"Vareforbrug m.v. merchandise","category":"other_expenses","amount":-12.859,"disclosure":"detailed"},
-        {"label":"Administrationsomkostninger","category":"admin_general_expense","amount":-19.596,"disclosure":"detailed"},
+        {
+          "label": "Kamp- og spilleromkostninger",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -11.145,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Salgs- og markedsføringsomkostninger",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.377,
+          "disclosure": "detailed"
+        },
+        {"label":"F&B og arrangementer m.v. (costo)","category":"admin_general","subcategory":"admin_general_expense","amount":-4.138,"disclosure":"detailed"},
+        {"label":"Driftsomkostninger ejendomme","category":"admin_general","subcategory":"admin_general_expense","amount":-8.189,"disclosure":"detailed"},
+        {"label":"Vareforbrug m.v. merchandise","category":"other_operating_expenses","subcategory":"other_expenses","amount":-12.859,"disclosure":"detailed"},
+        {"label":"Administrationsomkostninger","category":"admin_general","subcategory":"admin_general_expense","amount":-19.596,"disclosure":"detailed"},
         {
           "label": "Løn til bestyrelse og direktion",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -5.042,
           "disclosure": "detailed",
           "items": [["Vederlag mm. til direktionen",-4.543],["Bestyrelseshonorar",-0.499]]
         },
         {
           "label": "Personaleomkostninger (plantel, staff y resto del personal, excluye directorio/gerencia)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -97.407,
           "disclosure": "detailed",
           "items": [
@@ -79,11 +96,18 @@
         {
           "label": "Af- og nedskrivninger (bygninger, driftsmateriel og inventar)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -10.658,
           "disclosure": "detailed",
           "items": [["Bygninger m.v.",-6.624],["Driftsmateriel og inventar",-4.034]]
         },
-        {"label":"Tab ved salg/afgang af anlægsaktiver","category":"other_expenses","amount":-0.108,"disclosure":"detailed"}
+        {
+          "label": "Tab ved salg/afgang af anlægsaktiver",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.108,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":-8.057,"asset_sales":0,"net_interest":-2.749,"tax":0,"gross_debt":0,"cash":22.985},
       "official_totals": {"revenue":158.471,"expenses":173.518,"net_result":-25.853}

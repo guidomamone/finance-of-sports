@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -48,66 +49,192 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2024-12-31"},
       "revenue": [
-        {"label":"Televisionamento","category":"broadcasting","amount":30.365,"disclosure":"detailed"},
-        {"label":"Premiações e participações","category":"competition_bonus","amount":27.193,"disclosure":"detailed"},
-        {"label":"Bilheteria","category":"matchday_competition","amount":21.354,"disclosure":"detailed"},
-        {"label":"Camarote","category":"season_tickets","amount":4.775,"disclosure":"detailed"},
-        {"label":"Associados (sócio furacão)","category":"member_dues","amount":59.33,"disclosure":"detailed"},
-        {"label":"Receitas Arena","category":"stadium_other","amount":22.875,"disclosure":"detailed"},
-        {"label":"Publicidade","category":"sponsorship_commercial","amount":15.118,"disclosure":"detailed"},
-        {"label":"OTT - Rede furacão","category":"sponsorship_commercial","amount":23.571,"disclosure":"detailed"},
-        {"label":"Loja oficial","category":"sponsorship_commercial","amount":18.974,"disclosure":"detailed"},
-        {"label":"E-commerce","category":"sponsorship_commercial","amount":3.366,"disclosure":"detailed"},
-        {"label":"Lanchonetes","category":"stadium_other","amount":24.374,"disclosure":"detailed"},
-        {"label":"Patrocínios","category":"sponsorship_commercial","amount":20.426,"disclosure":"detailed"},
-        {"label":"Escolas de futebol","category":"youth_football","amount":2.353,"disclosure":"detailed"},
-        {"label":"Choperia","category":"stadium_other","amount":1.114,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais","category":"other_income","amount":12.973,"disclosure":"detailed"},
-        {"label":"(-) Impostos e deduções da receita","category":"other_income","amount":-26.881,"disclosure":"detailed"},
-        {"label":"Receita com venda de atletas","category":"player_sales","amount":272.268,"disclosure":"detailed"},
-        {"label":"Receita com transações com atletas (empréstimos)","category":"player_sales","amount":12.324,"disclosure":"detailed"},
-        {"label":"Doações/bonificações","category":"exceptional_items","amount":0.35,"disclosure":"detailed"},
-        {"label":"Receitas judiciais","category":"exceptional_items","amount":0.357,"disclosure":"detailed"},
-        {"label":"Outras receitas não operacionais","category":"exceptional_items","amount":1.522,"disclosure":"detailed"}
+        {"label":"Televisionamento","category":"media_rights","subcategory":"broadcasting","amount":30.365,"disclosure":"detailed"},
+        {"label":"Premiações e participações","category":"prize_money","subcategory":"competition_bonus","amount":27.193,"disclosure":"detailed"},
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":21.354,"disclosure":"detailed"},
+        {"label":"Camarote","category":"season_tickets","subcategory":"season_tickets","amount":4.775,"disclosure":"detailed"},
+        {"label":"Associados (sócio furacão)","category":"membership","subcategory":"member_dues","amount":59.33,"disclosure":"detailed"},
+        {"label":"Receitas Arena","category":"venue","subcategory":"stadium_other","amount":22.875,"disclosure":"detailed"},
+        {"label":"Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":15.118,"disclosure":"detailed"},
+        {"label":"OTT - Rede furacão","category":"commercial","subcategory":"sponsorship_commercial","amount":23.571,"disclosure":"detailed"},
+        {"label":"Loja oficial","category":"commercial","subcategory":"sponsorship_commercial","amount":18.974,"disclosure":"detailed"},
+        {"label":"E-commerce","category":"commercial","subcategory":"sponsorship_commercial","amount":3.366,"disclosure":"detailed"},
+        {"label":"Lanchonetes","category":"venue","subcategory":"stadium_other","amount":24.374,"disclosure":"detailed"},
+        {"label":"Patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":20.426,"disclosure":"detailed"},
+        {"label":"Escolas de futebol","category":"other_sporting_sections","subcategory":"youth_football","amount":2.353,"disclosure":"detailed"},
+        {"label":"Choperia","category":"venue","subcategory":"stadium_other","amount":1.114,"disclosure":"detailed"},
+        {"label":"Outras receitas operacionais","category":"other_revenue","subcategory":"other_income","amount":12.973,"disclosure":"detailed"},
+        {"label":"(-) Impostos e deduções da receita","category":"other_revenue","subcategory":"other_income","amount":-26.881,"disclosure":"detailed"},
+        {"label":"Receita com venda de atletas","category":"player_transfers","subcategory":"player_sales","amount":272.268,"disclosure":"detailed"},
+        {
+          "label": "Receita com transações com atletas (empréstimos)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 12.324,
+          "disclosure": "detailed"
+        },
+        {"label":"Doações/bonificações","category":"other_revenue","subcategory":"exceptional_items","amount":0.35,"disclosure":"detailed"},
+        {"label":"Receitas judiciais","category":"other_revenue","subcategory":"exceptional_items","amount":0.357,"disclosure":"detailed"},
+        {"label":"Outras receitas não operacionais","category":"other_revenue","subcategory":"exceptional_items","amount":1.522,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Custo Mercadoria Vendida Escola Oficial","category":"admin_general_expense","amount":-1.388,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida Loja","category":"admin_general_expense","amount":-8.749,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida E-Commerce","category":"admin_general_expense","amount":-1.448,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida Lanchonetes","category":"admin_general_expense","amount":-8.806,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida Choperia","category":"admin_general_expense","amount":-0.42,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida Camarotes","category":"admin_general_expense","amount":-0.778,"disclosure":"detailed"},
-        {"label":"Custo das Operações de Jogos","category":"match_organisation_expense","amount":-16.896,"disclosure":"detailed"},
-        {"label":"Custo das Operações de Eventos","category":"admin_general_expense","amount":-3.085,"disclosure":"detailed"},
-        {"label":"Salários, encargos e benefícios (Custos Com Atletas)","category":"wages_squad","amount":-107.629,"disclosure":"detailed"},
-        {"label":"Direito de Imagem (Custos Com Atletas)","category":"wages_squad","amount":-28.537,"disclosure":"detailed"},
-        {"label":"Gastos com viagens (Custos Com Atletas)","category":"match_organisation_expense","amount":-18.838,"disclosure":"detailed"},
-        {"label":"Gastos Administrativos (Custos Com Atletas)","category":"admin_general_expense","amount":-10.048,"disclosure":"detailed"},
-        {"label":"Amortizações de atletas (Custos Com Atletas)","category":"player_amortisation","amount":-44.127,"disclosure":"detailed"},
-        {"label":"Salários (Despesas com pessoal)","category":"admin_general_expense","amount":-26.998,"disclosure":"detailed"},
-        {"label":"Premiações (Despesas com pessoal)","category":"admin_general_expense","amount":-0.894,"disclosure":"detailed"},
-        {"label":"Rescisões (Despesas com pessoal)","category":"admin_general_expense","amount":-0.003,"disclosure":"detailed"},
-        {"label":"Encargos sobre folha (Despesas com pessoal)","category":"admin_general_expense","amount":-3.655,"disclosure":"detailed"},
-        {"label":"Benefícios sociais sobre folha (Despesas com pessoal)","category":"admin_general_expense","amount":-5.166,"disclosure":"detailed"},
-        {"label":"Outros gastos com pessoal (Despesas com pessoal)","category":"admin_general_expense","amount":-0.226,"disclosure":"detailed"},
-        {"label":"Depreciação","category":"depreciation","amount":-4.773,"disclosure":"detailed"},
-        {"label":"Amortização (intangíveis gerais)","category":"other_amortisation","amount":-1.567,"disclosure":"detailed"},
-        {"label":"Despesas administrativas","category":"admin_general_expense","amount":-33.336,"disclosure":"detailed"},
-        {"label":"Despesas gerais","category":"admin_general_expense","amount":-10.583,"disclosure":"detailed"},
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-9.329,"disclosure":"detailed"},
-        {"label":"Tecnologia da informação","category":"admin_general_expense","amount":-7.543,"disclosure":"detailed"},
-        {"label":"Repasse de Direitos Econômicos","category":"other_expenses","amount":-32.347,"disclosure":"detailed"},
-        {"label":"Comissões Sobre Transações Atletas","category":"other_expenses","amount":-14.737,"disclosure":"detailed"},
-        {"label":"Despesas Diversas Referente a Direitos Atletas","category":"other_expenses","amount":-14.286,"disclosure":"detailed"},
-        {"label":"Intermediação Sobre Contrato de Atletas","category":"other_expenses","amount":-8.995,"disclosure":"detailed"},
-        {"label":"Empréstimos Atletas (despesa)","category":"other_expenses","amount":-3.766,"disclosure":"detailed"},
-        {"label":"Mecanismo de Solidariedade (pago)","category":"other_expenses","amount":-2.186,"disclosure":"detailed"},
-        {"label":"Baixa de direitos federativos","category":"player_amortisation","amount":-19.326,"disclosure":"detailed"},
-        {"label":"Outras despesas com atletas","category":"other_expenses","amount":-0.701,"disclosure":"detailed"},
-        {"label":"Despesas judiciais","category":"exceptional_items","amount":-3.117,"disclosure":"detailed"},
-        {"label":"Despesas indedutíveis","category":"exceptional_items","amount":-0.447,"disclosure":"detailed"},
-        {"label":"Outras despesas não operacionais","category":"exceptional_items","amount":-16.249,"disclosure":"detailed"},
-        {"label":"Resultado de equivalência patrimonial (CAP S/A)","category":"exceptional_items","amount":-65.277,"disclosure":"detailed"}
+        {
+          "label": "Custo Mercadoria Vendida Escola Oficial",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.388,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo Mercadoria Vendida Loja","category":"admin_general","subcategory":"admin_general_expense","amount":-8.749,"disclosure":"detailed"},
+        {
+          "label": "Custo Mercadoria Vendida E-Commerce",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.448,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custo Mercadoria Vendida Lanchonetes",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -8.806,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo Mercadoria Vendida Choperia","category":"admin_general","subcategory":"admin_general_expense","amount":-0.42,"disclosure":"detailed"},
+        {
+          "label": "Custo Mercadoria Vendida Camarotes",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.778,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custo das Operações de Jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -16.896,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo das Operações de Eventos","category":"admin_general","subcategory":"admin_general_expense","amount":-3.085,"disclosure":"detailed"},
+        {
+          "label": "Salários, encargos e benefícios (Custos Com Atletas)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -107.629,
+          "disclosure": "detailed"
+        },
+        {"label":"Direito de Imagem (Custos Com Atletas)","category":"first_team_staff","subcategory":"wages_squad","amount":-28.537,"disclosure":"detailed"},
+        {
+          "label": "Gastos com viagens (Custos Com Atletas)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -18.838,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Administrativos (Custos Com Atletas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -10.048,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizações de atletas (Custos Com Atletas)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -44.127,
+          "disclosure": "detailed"
+        },
+        {"label":"Salários (Despesas com pessoal)","category":"admin_general","subcategory":"admin_general_expense","amount":-26.998,"disclosure":"detailed"},
+        {"label":"Premiações (Despesas com pessoal)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.894,"disclosure":"detailed"},
+        {"label":"Rescisões (Despesas com pessoal)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.003,"disclosure":"detailed"},
+        {
+          "label": "Encargos sobre folha (Despesas com pessoal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.655,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Benefícios sociais sobre folha (Despesas com pessoal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.166,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros gastos com pessoal (Despesas com pessoal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.226,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação","category":"depreciation","subcategory":"depreciation","amount":-4.773,"disclosure":"detailed"},
+        {
+          "label": "Amortização (intangíveis gerais)",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -1.567,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas administrativas","category":"admin_general","subcategory":"admin_general_expense","amount":-33.336,"disclosure":"detailed"},
+        {"label":"Despesas gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-10.583,"disclosure":"detailed"},
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-9.329,"disclosure":"detailed"},
+        {"label":"Tecnologia da informação","category":"admin_general","subcategory":"admin_general_expense","amount":-7.543,"disclosure":"detailed"},
+        {
+          "label": "Repasse de Direitos Econômicos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -32.347,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Comissões Sobre Transações Atletas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -14.737,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas Diversas Referente a Direitos Atletas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -14.286,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Intermediação Sobre Contrato de Atletas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -8.995,
+          "disclosure": "detailed"
+        },
+        {"label":"Empréstimos Atletas (despesa)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.766,"disclosure":"detailed"},
+        {
+          "label": "Mecanismo de Solidariedade (pago)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.186,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Baixa de direitos federativos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -19.326,
+          "disclosure": "detailed"
+        },
+        {"label":"Outras despesas com atletas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.701,"disclosure":"detailed"},
+        {"label":"Despesas judiciais","category":"exceptional","subcategory":"exceptional_items","amount":-3.117,"disclosure":"detailed"},
+        {"label":"Despesas indedutíveis","category":"exceptional","subcategory":"exceptional_items","amount":-0.447,"disclosure":"detailed"},
+        {"label":"Outras despesas não operacionais","category":"exceptional","subcategory":"exceptional_items","amount":-16.249,"disclosure":"detailed"},
+        {
+          "label": "Resultado de equivalência patrimonial (CAP S/A)",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -65.277,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":11.586,"tax":0,"gross_debt":0.518,"cash":128.443},
       "official_totals": {"revenue":548.101,"expenses":451.166,"net_result":23.439}
@@ -121,68 +248,194 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"Televisionamento","category":"broadcasting","amount":9.81,"disclosure":"detailed"},
-        {"label":"Premiações e participações","category":"competition_bonus","amount":13.866,"disclosure":"detailed"},
-        {"label":"Bilheteria","category":"matchday_competition","amount":13.356,"disclosure":"detailed"},
-        {"label":"Camarote","category":"season_tickets","amount":5.543,"disclosure":"detailed"},
-        {"label":"Associados (sócio furacão)","category":"member_dues","amount":48.435,"disclosure":"detailed"},
-        {"label":"Loterias","category":"other_income","amount":2.354,"disclosure":"detailed"},
-        {"label":"Receitas Arena","category":"stadium_other","amount":23.333,"disclosure":"detailed"},
-        {"label":"Publicidade","category":"sponsorship_commercial","amount":29.265,"disclosure":"detailed"},
-        {"label":"OTT - Rede furacão","category":"sponsorship_commercial","amount":1.09,"disclosure":"detailed"},
-        {"label":"Loja oficial","category":"sponsorship_commercial","amount":18.659,"disclosure":"detailed"},
-        {"label":"E-commerce","category":"sponsorship_commercial","amount":3.077,"disclosure":"detailed"},
-        {"label":"Lanchonetes","category":"stadium_other","amount":26.047,"disclosure":"detailed"},
-        {"label":"Patrocínios","category":"sponsorship_commercial","amount":22.727,"disclosure":"detailed"},
-        {"label":"Escolas de futebol","category":"youth_football","amount":1.25,"disclosure":"detailed"},
-        {"label":"Choperia","category":"stadium_other","amount":7.569,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais","category":"other_income","amount":6.103,"disclosure":"detailed"},
-        {"label":"(-) Impostos e deduções da receita","category":"other_income","amount":-19.222,"disclosure":"detailed"},
-        {"label":"Receita com venda de atletas","category":"player_sales","amount":180.687,"disclosure":"detailed"},
-        {"label":"Receita com transações com atletas (empréstimos)","category":"player_sales","amount":22.614,"disclosure":"detailed"},
-        {"label":"Doações/bonificações","category":"exceptional_items","amount":0.103,"disclosure":"detailed"},
-        {"label":"Receitas judiciais","category":"exceptional_items","amount":32.267,"disclosure":"detailed"},
-        {"label":"Outras receitas não operacionais","category":"exceptional_items","amount":0.046,"disclosure":"detailed"}
+        {"label":"Televisionamento","category":"media_rights","subcategory":"broadcasting","amount":9.81,"disclosure":"detailed"},
+        {"label":"Premiações e participações","category":"prize_money","subcategory":"competition_bonus","amount":13.866,"disclosure":"detailed"},
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":13.356,"disclosure":"detailed"},
+        {"label":"Camarote","category":"season_tickets","subcategory":"season_tickets","amount":5.543,"disclosure":"detailed"},
+        {"label":"Associados (sócio furacão)","category":"membership","subcategory":"member_dues","amount":48.435,"disclosure":"detailed"},
+        {"label":"Loterias","category":"other_revenue","subcategory":"other_income","amount":2.354,"disclosure":"detailed"},
+        {"label":"Receitas Arena","category":"venue","subcategory":"stadium_other","amount":23.333,"disclosure":"detailed"},
+        {"label":"Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":29.265,"disclosure":"detailed"},
+        {"label":"OTT - Rede furacão","category":"commercial","subcategory":"sponsorship_commercial","amount":1.09,"disclosure":"detailed"},
+        {"label":"Loja oficial","category":"commercial","subcategory":"sponsorship_commercial","amount":18.659,"disclosure":"detailed"},
+        {"label":"E-commerce","category":"commercial","subcategory":"sponsorship_commercial","amount":3.077,"disclosure":"detailed"},
+        {"label":"Lanchonetes","category":"venue","subcategory":"stadium_other","amount":26.047,"disclosure":"detailed"},
+        {"label":"Patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":22.727,"disclosure":"detailed"},
+        {"label":"Escolas de futebol","category":"other_sporting_sections","subcategory":"youth_football","amount":1.25,"disclosure":"detailed"},
+        {"label":"Choperia","category":"venue","subcategory":"stadium_other","amount":7.569,"disclosure":"detailed"},
+        {"label":"Outras receitas operacionais","category":"other_revenue","subcategory":"other_income","amount":6.103,"disclosure":"detailed"},
+        {"label":"(-) Impostos e deduções da receita","category":"other_revenue","subcategory":"other_income","amount":-19.222,"disclosure":"detailed"},
+        {"label":"Receita com venda de atletas","category":"player_transfers","subcategory":"player_sales","amount":180.687,"disclosure":"detailed"},
+        {
+          "label": "Receita com transações com atletas (empréstimos)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 22.614,
+          "disclosure": "detailed"
+        },
+        {"label":"Doações/bonificações","category":"other_revenue","subcategory":"exceptional_items","amount":0.103,"disclosure":"detailed"},
+        {"label":"Receitas judiciais","category":"other_revenue","subcategory":"exceptional_items","amount":32.267,"disclosure":"detailed"},
+        {"label":"Outras receitas não operacionais","category":"other_revenue","subcategory":"exceptional_items","amount":0.046,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Custo Mercadoria Vendida Escola Oficial","category":"admin_general_expense","amount":-0.649,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida Loja","category":"admin_general_expense","amount":-9.187,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida E-Commerce","category":"admin_general_expense","amount":-1.443,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida Lanchonetes","category":"admin_general_expense","amount":-8.283,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida Choperia","category":"admin_general_expense","amount":-2.89,"disclosure":"detailed"},
-        {"label":"Custo Mercadoria Vendida Camarotes","category":"admin_general_expense","amount":-0.736,"disclosure":"detailed"},
-        {"label":"Custo das Operações de Jogos","category":"match_organisation_expense","amount":-16.331,"disclosure":"detailed"},
-        {"label":"Custo das Operações de Eventos","category":"admin_general_expense","amount":-10.116,"disclosure":"detailed"},
-        {"label":"Salários, encargos e benefícios (Custos Com Atletas)","category":"wages_squad","amount":-104.972,"disclosure":"detailed"},
-        {"label":"Direito de Imagem (Custos Com Atletas)","category":"wages_squad","amount":-37.922,"disclosure":"detailed"},
-        {"label":"Gastos com viagens (Custos Com Atletas)","category":"match_organisation_expense","amount":-11.582,"disclosure":"detailed"},
-        {"label":"Gastos Administrativos (Custos Com Atletas)","category":"admin_general_expense","amount":-9.295,"disclosure":"detailed"},
-        {"label":"Amortizações de atletas (Custos Com Atletas)","category":"player_amortisation","amount":-45.796,"disclosure":"detailed"},
-        {"label":"Custo de Transmissão","category":"admin_general_expense","amount":-0.404,"disclosure":"detailed"},
-        {"label":"Salários (Despesas com pessoal)","category":"admin_general_expense","amount":-26.691,"disclosure":"detailed"},
-        {"label":"Premiações (Despesas com pessoal)","category":"admin_general_expense","amount":-0.96,"disclosure":"detailed"},
-        {"label":"Rescisões (Despesas com pessoal)","category":"admin_general_expense","amount":-0.008,"disclosure":"detailed"},
-        {"label":"Encargos sobre folha (Despesas com pessoal)","category":"admin_general_expense","amount":-4.085,"disclosure":"detailed"},
-        {"label":"Benefícios sociais sobre folha (Despesas com pessoal)","category":"admin_general_expense","amount":-6.661,"disclosure":"detailed"},
-        {"label":"Outros gastos com pessoal (Despesas com pessoal)","category":"admin_general_expense","amount":-0.244,"disclosure":"detailed"},
-        {"label":"Depreciação","category":"depreciation","amount":-6.76,"disclosure":"detailed"},
-        {"label":"Amortização (intangíveis gerais)","category":"other_amortisation","amount":-3.326,"disclosure":"detailed"},
-        {"label":"Despesas administrativas","category":"admin_general_expense","amount":-36.751,"disclosure":"detailed"},
-        {"label":"Despesas gerais","category":"admin_general_expense","amount":-9.185,"disclosure":"detailed"},
-        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-3.781,"disclosure":"detailed"},
-        {"label":"Tecnologia da informação","category":"admin_general_expense","amount":-7.392,"disclosure":"detailed"},
-        {"label":"Repasse de Direitos Econômicos","category":"other_expenses","amount":-53.006,"disclosure":"detailed"},
-        {"label":"Comissões Sobre Transações Atletas","category":"other_expenses","amount":-8.103,"disclosure":"detailed"},
-        {"label":"Despesas Diversas Referente a Direitos Atletas","category":"other_expenses","amount":-2.181,"disclosure":"detailed"},
-        {"label":"Intermediação Sobre Contrato de Atletas","category":"other_expenses","amount":-1.872,"disclosure":"detailed"},
-        {"label":"Empréstimos Atletas (despesa)","category":"other_expenses","amount":-4.417,"disclosure":"detailed"},
-        {"label":"Mecanismo de Solidariedade (pago)","category":"other_expenses","amount":-1.755,"disclosure":"detailed"},
-        {"label":"Baixa de direitos federativos","category":"player_amortisation","amount":-29.863,"disclosure":"detailed"},
-        {"label":"Outras despesas com atletas","category":"other_expenses","amount":-0.927,"disclosure":"detailed"},
-        {"label":"Despesas judiciais","category":"exceptional_items","amount":-0.468,"disclosure":"detailed"},
-        {"label":"Despesas indedutíveis","category":"exceptional_items","amount":-0.197,"disclosure":"detailed"},
-        {"label":"Outras despesas não operacionais","category":"exceptional_items","amount":-0.424,"disclosure":"detailed"},
-        {"label":"Resultado de equivalência patrimonial (CAP S/A)","category":"exceptional_items","amount":-55.485,"disclosure":"detailed"}
+        {
+          "label": "Custo Mercadoria Vendida Escola Oficial",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.649,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo Mercadoria Vendida Loja","category":"admin_general","subcategory":"admin_general_expense","amount":-9.187,"disclosure":"detailed"},
+        {
+          "label": "Custo Mercadoria Vendida E-Commerce",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.443,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custo Mercadoria Vendida Lanchonetes",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -8.283,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo Mercadoria Vendida Choperia","category":"admin_general","subcategory":"admin_general_expense","amount":-2.89,"disclosure":"detailed"},
+        {
+          "label": "Custo Mercadoria Vendida Camarotes",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.736,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custo das Operações de Jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -16.331,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo das Operações de Eventos","category":"admin_general","subcategory":"admin_general_expense","amount":-10.116,"disclosure":"detailed"},
+        {
+          "label": "Salários, encargos e benefícios (Custos Com Atletas)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -104.972,
+          "disclosure": "detailed"
+        },
+        {"label":"Direito de Imagem (Custos Com Atletas)","category":"first_team_staff","subcategory":"wages_squad","amount":-37.922,"disclosure":"detailed"},
+        {
+          "label": "Gastos com viagens (Custos Com Atletas)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -11.582,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Administrativos (Custos Com Atletas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -9.295,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortizações de atletas (Custos Com Atletas)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -45.796,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo de Transmissão","category":"admin_general","subcategory":"admin_general_expense","amount":-0.404,"disclosure":"detailed"},
+        {"label":"Salários (Despesas com pessoal)","category":"admin_general","subcategory":"admin_general_expense","amount":-26.691,"disclosure":"detailed"},
+        {"label":"Premiações (Despesas com pessoal)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.96,"disclosure":"detailed"},
+        {"label":"Rescisões (Despesas com pessoal)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.008,"disclosure":"detailed"},
+        {
+          "label": "Encargos sobre folha (Despesas com pessoal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.085,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Benefícios sociais sobre folha (Despesas com pessoal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.661,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros gastos com pessoal (Despesas com pessoal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.244,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação","category":"depreciation","subcategory":"depreciation","amount":-6.76,"disclosure":"detailed"},
+        {
+          "label": "Amortização (intangíveis gerais)",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -3.326,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas administrativas","category":"admin_general","subcategory":"admin_general_expense","amount":-36.751,"disclosure":"detailed"},
+        {"label":"Despesas gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-9.185,"disclosure":"detailed"},
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-3.781,"disclosure":"detailed"},
+        {"label":"Tecnologia da informação","category":"admin_general","subcategory":"admin_general_expense","amount":-7.392,"disclosure":"detailed"},
+        {
+          "label": "Repasse de Direitos Econômicos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -53.006,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Comissões Sobre Transações Atletas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -8.103,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas Diversas Referente a Direitos Atletas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.181,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Intermediação Sobre Contrato de Atletas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.872,
+          "disclosure": "detailed"
+        },
+        {"label":"Empréstimos Atletas (despesa)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4.417,"disclosure":"detailed"},
+        {
+          "label": "Mecanismo de Solidariedade (pago)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.755,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Baixa de direitos federativos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -29.863,
+          "disclosure": "detailed"
+        },
+        {"label":"Outras despesas com atletas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.927,"disclosure":"detailed"},
+        {"label":"Despesas judiciais","category":"exceptional","subcategory":"exceptional_items","amount":-0.468,"disclosure":"detailed"},
+        {"label":"Despesas indedutíveis","category":"exceptional","subcategory":"exceptional_items","amount":-0.197,"disclosure":"detailed"},
+        {"label":"Outras despesas não operacionais","category":"exceptional","subcategory":"exceptional_items","amount":-0.424,"disclosure":"detailed"},
+        {
+          "label": "Resultado de equivalência patrimonial (CAP S/A)",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -55.485,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":17.039,"tax":0,"gross_debt":0.13,"cash":48.268},
       "official_totals": {"revenue":448.979,"expenses":467.574,"net_result":-58.134}

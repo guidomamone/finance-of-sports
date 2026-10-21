@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DK",
     "reporting_currency": "DKK",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -39,15 +40,27 @@
       "management_id": "benham",
       "fx": {"ref":"DKK@2019-06-30"},
       "revenue": [
-        {"label":"Nettoomsætning","category":"lump_football_operations","amount":107.921,"disclosure":"aggregate"},
-        {"label":"Andre driftsindtægter (avance por venta de derechos federativos)","category":"player_sales","amount":161.96,"disclosure":"detailed"}
+        {"label":"Nettoomsætning","category":"undisclosed","subcategory":"lump_football_operations","amount":107.921,"disclosure":"aggregate"},
+        {
+          "label": "Andre driftsindtægter (avance por venta de derechos federativos)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 161.96,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Andre eksterne omkostninger","category":"other_expenses","amount":-73.974,"disclosure":"aggregate"},
-        {"label":"Personaleomkostninger","category":"wages_squad","amount":-93.592,"disclosure":"detailed"},
-        {"label":"Afskrivninger af immaterielle anlægsaktiver","category":"player_amortisation","amount":-29.319,"disclosure":"detailed"},
-        {"label":"Afskrivninger af materielle anlægsaktiver","category":"depreciation","amount":-3.291,"disclosure":"detailed"},
-        {"label":"Andre driftsomkostninger","category":"other_expenses","amount":-3.244,"disclosure":"aggregate"}
+        {"label":"Andre eksterne omkostninger","category":"other_operating_expenses","subcategory":"other_expenses","amount":-73.974,"disclosure":"aggregate"},
+        {"label":"Personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-93.592,"disclosure":"detailed"},
+        {
+          "label": "Afskrivninger af immaterielle anlægsaktiver",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -29.319,
+          "disclosure": "detailed"
+        },
+        {"label":"Afskrivninger af materielle anlægsaktiver","category":"depreciation","subcategory":"depreciation","amount":-3.291,"disclosure":"detailed"},
+        {"label":"Andre driftsomkostninger","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.244,"disclosure":"aggregate"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.043,"tax":-10.649,"gross_debt":1.22,"cash":53.452},
       "official_totals": {"revenue":269.881,"expenses":203.42,"net_result":55.769}
@@ -61,17 +74,41 @@
       "management_id": null,
       "fx": {"ref":"DKK@2020-06-30"},
       "revenue": [
-        {"label":"Nettoomsætning Revenue","category":"lump_football_operations","amount":87.61,"disclosure":"aggregated"},
-        {"label":"Andre driftsindtægter Other operating income","category":"other_income","amount":98.637,"disclosure":"aggregated"}
+        {"label":"Nettoomsætning Revenue","category":"undisclosed","subcategory":"lump_football_operations","amount":87.61,"disclosure":"aggregated"},
+        {
+          "label": "Andre driftsindtægter Other operating income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 98.637,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Andre eksterne omkostninger Other external expenses","category":"other_expenses","amount":-61.833,"disclosure":"aggregated"},
-        {"label":"Lønninger","category":"wages_squad","amount":-93.413,"disclosure":"aggregated"},
-        {"label":"Pensioner","category":"wages_squad","amount":-7.544,"disclosure":"aggregated"},
-        {"label":"Andre omkostninger til social sikring","category":"wages_squad","amount":-2.363,"disclosure":"aggregated"},
-        {"label":"Afskrivninger af immaterielle anlægsaktiver","category":"player_amortisation","amount":-36.929,"disclosure":"aggregated"},
-        {"label":"Afskrivninger af materielle anlægsaktiver","category":"depreciation","amount":-3.126,"disclosure":"aggregated"},
-        {"label":"Andre driftsomkostninger Other operating expenses","category":"other_expenses","amount":-0.056,"disclosure":"aggregated"}
+        {
+          "label": "Andre eksterne omkostninger Other external expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -61.833,
+          "disclosure": "aggregated"
+        },
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-93.413,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-7.544,"disclosure":"aggregated"},
+        {"label":"Andre omkostninger til social sikring","category":"first_team_staff","subcategory":"wages_squad","amount":-2.363,"disclosure":"aggregated"},
+        {
+          "label": "Afskrivninger af immaterielle anlægsaktiver",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -36.929,
+          "disclosure": "aggregated"
+        },
+        {"label":"Afskrivninger af materielle anlægsaktiver","category":"depreciation","subcategory":"depreciation","amount":-3.126,"disclosure":"aggregated"},
+        {
+          "label": "Andre driftsomkostninger Other operating expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.056,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.507,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":186.247,"expenses":205.264,"net_result":-19.524},

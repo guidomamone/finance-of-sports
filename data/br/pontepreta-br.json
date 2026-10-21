@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -63,38 +64,69 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2022-12-31"},
       "revenue": [
-        {"label":"Quotas Globo-Camp Brasileiro","category":"broadcasting","amount":7.710225,"disclosure":"detailed"},
-        {"label":"Quotas F.P.F","category":"broadcasting","amount":6.238,"disclosure":"detailed"},
-        {"label":"Outras Receitas (Profissional)","category":"other_income","amount":1.364574,"disclosure":"detailed"},
-        {"label":"Venda Atletas","category":"player_sales","amount":21.3,"disclosure":"detailed"},
-        {"label":"Publicidade/Propaganda","category":"sponsorship_commercial","amount":2.430518,"disclosure":"detailed"},
-        {"label":"Solidariedade / Compensação Formação","category":"player_sales","amount":1.635892,"disclosure":"detailed"},
-        {"label":"Administrativo - Estadio","category":"stadium_other","amount":0.914148,"disclosure":"detailed"},
-        {"label":"Administrativo - Jd Paineiras","category":"other_sports","amount":0.038906,"disclosure":"detailed"},
-        {"label":"Administrativo - Amador","category":"youth_football","amount":0.490304,"disclosure":"detailed"},
-        {"label":"Social / Outras","category":"other_income","amount":2.724533,"disclosure":"detailed"}
+        {"label":"Quotas Globo-Camp Brasileiro","category":"media_rights","subcategory":"broadcasting","amount":7.710225,"disclosure":"detailed"},
+        {"label":"Quotas F.P.F","category":"media_rights","subcategory":"broadcasting","amount":6.238,"disclosure":"detailed"},
+        {"label":"Outras Receitas (Profissional)","category":"other_revenue","subcategory":"other_income","amount":1.364574,"disclosure":"detailed"},
+        {"label":"Venda Atletas","category":"player_transfers","subcategory":"player_sales","amount":21.3,"disclosure":"detailed"},
+        {"label":"Publicidade/Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":2.430518,"disclosure":"detailed"},
+        {"label":"Solidariedade / Compensação Formação","category":"player_transfers","subcategory":"player_sales","amount":1.635892,"disclosure":"detailed"},
+        {"label":"Administrativo - Estadio","category":"venue","subcategory":"stadium_other","amount":0.914148,"disclosure":"detailed"},
+        {"label":"Administrativo - Jd Paineiras","category":"other_sporting_sections","subcategory":"other_sports","amount":0.038906,"disclosure":"detailed"},
+        {"label":"Administrativo - Amador","category":"other_sporting_sections","subcategory":"youth_football","amount":0.490304,"disclosure":"detailed"},
+        {"label":"Social / Outras","category":"other_revenue","subcategory":"other_income","amount":2.724533,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Salários e Encargos/Outros (Profissional)","category":"wages_squad","amount":-13.184276,"disclosure":"detailed"},
-        {"label":"Serviços de Terceiros (Profissional)","category":"admin_general_expense","amount":-2.588706,"disclosure":"detailed"},
-        {"label":"Despesas com Jogos","category":"match_organisation_expense","amount":-3.170302,"disclosure":"detailed"},
-        {"label":"Cessão de Imagem / Luvas","category":"wages_squad","amount":-3.530385,"disclosure":"detailed"},
-        {"label":"Intermediação / Comissão","category":"other_expenses","amount":-1.132324,"disclosure":"detailed"},
+        {
+          "label": "Salários e Encargos/Outros (Profissional)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -13.184276,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de Terceiros (Profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.588706,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas com Jogos","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.170302,"disclosure":"detailed"},
+        {"label":"Cessão de Imagem / Luvas","category":"first_team_staff","subcategory":"wages_squad","amount":-3.530385,"disclosure":"detailed"},
+        {"label":"Intermediação / Comissão","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.132324,"disclosure":"detailed"},
         {
           "label": "Viagens / Moradia / Concentração e Atletas / Refeições / Medicamentos",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -1.505238,
           "disclosure": "detailed"
         },
-        {"label":"Taxas CBF / FPF","category":"match_organisation_expense","amount":-0.330906,"disclosure":"detailed"},
-        {"label":"Outras Despesas (Demais Gastos)","category":"other_expenses","amount":-12.968254,"disclosure":"detailed"},
-        {"label":"Fenapaf/INSS","category":"admin_general_expense","amount":-1.43593,"disclosure":"detailed"},
-        {"label":"Amortização / Depreciação (Profissional)","category":"depreciation","amount":-1.751112,"disclosure":"detailed"},
-        {"label":"Acordo Trabalhista","category":"wages_squad","amount":-0.121947,"disclosure":"detailed"},
-        {"label":"Administrativo - Estadio","category":"match_organisation_expense","amount":-3.9323,"disclosure":"detailed"},
-        {"label":"Administrativo - Jd Paineiras","category":"youth_other_sports_expense","amount":-0.272761,"disclosure":"detailed"},
-        {"label":"Administrativo - Jd Eulina","category":"youth_other_sports_expense","amount":-0.2378,"disclosure":"detailed"},
-        {"label":"Amador","category":"youth_other_sports_expense","amount":-2.864938,"disclosure":"detailed"}
+        {"label":"Taxas CBF / FPF","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.330906,"disclosure":"detailed"},
+        {
+          "label": "Outras Despesas (Demais Gastos)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -12.968254,
+          "disclosure": "detailed"
+        },
+        {"label":"Fenapaf/INSS","category":"admin_general","subcategory":"admin_general_expense","amount":-1.43593,"disclosure":"detailed"},
+        {"label":"Amortização / Depreciação (Profissional)","category":"depreciation","subcategory":"depreciation","amount":-1.751112,"disclosure":"detailed"},
+        {"label":"Acordo Trabalhista","category":"first_team_staff","subcategory":"wages_squad","amount":-0.121947,"disclosure":"detailed"},
+        {"label":"Administrativo - Estadio","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.9323,"disclosure":"detailed"},
+        {
+          "label": "Administrativo - Jd Paineiras",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.272761,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Administrativo - Jd Eulina",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.2378,
+          "disclosure": "detailed"
+        },
+        {"label":"Amador","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-2.864938,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.350711,"tax":0,"gross_debt":156.048883,"cash":0.043848},
       "official_totals": {"revenue":44.8471,"expenses":49.02718,"net_result":-4.530791}
@@ -108,40 +140,77 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2023-12-31"},
       "revenue": [
-        {"label":"Quotas Globo-Camp Brasileiro","category":"broadcasting","amount":8.625,"disclosure":"detailed"},
-        {"label":"Quotas F.P.F","category":"broadcasting","amount":1.76,"disclosure":"detailed"},
-        {"label":"Premiação Campeonato Paulista","category":"competition_bonus","amount":0.43,"disclosure":"detailed"},
-        {"label":"Receita transmissão","category":"broadcasting","amount":3,"disclosure":"detailed"},
-        {"label":"Quotas Copa do Brasil-CBF","category":"broadcasting","amount":2.65,"disclosure":"detailed"},
-        {"label":"Outras Receitas (Profissional)","category":"other_income","amount":5.849958,"disclosure":"detailed"},
-        {"label":"Venda Atletas","category":"player_sales","amount":2.475,"disclosure":"detailed"},
-        {"label":"Publicidade/Propaganda","category":"sponsorship_commercial","amount":3.89945,"disclosure":"detailed"},
-        {"label":"Administrativo - Estadio","category":"stadium_other","amount":0.991662,"disclosure":"detailed"},
-        {"label":"Administrativo - Jd Paineiras","category":"other_sports","amount":0.056213,"disclosure":"detailed"},
-        {"label":"Administrativo - Amador","category":"youth_football","amount":0.743327,"disclosure":"detailed"},
-        {"label":"Social / Outras","category":"other_income","amount":1.894621,"disclosure":"detailed"}
+        {"label":"Quotas Globo-Camp Brasileiro","category":"media_rights","subcategory":"broadcasting","amount":8.625,"disclosure":"detailed"},
+        {"label":"Quotas F.P.F","category":"media_rights","subcategory":"broadcasting","amount":1.76,"disclosure":"detailed"},
+        {"label":"Premiação Campeonato Paulista","category":"prize_money","subcategory":"competition_bonus","amount":0.43,"disclosure":"detailed"},
+        {"label":"Receita transmissão","category":"media_rights","subcategory":"broadcasting","amount":3,"disclosure":"detailed"},
+        {"label":"Quotas Copa do Brasil-CBF","category":"media_rights","subcategory":"broadcasting","amount":2.65,"disclosure":"detailed"},
+        {"label":"Outras Receitas (Profissional)","category":"other_revenue","subcategory":"other_income","amount":5.849958,"disclosure":"detailed"},
+        {"label":"Venda Atletas","category":"player_transfers","subcategory":"player_sales","amount":2.475,"disclosure":"detailed"},
+        {"label":"Publicidade/Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":3.89945,"disclosure":"detailed"},
+        {"label":"Administrativo - Estadio","category":"venue","subcategory":"stadium_other","amount":0.991662,"disclosure":"detailed"},
+        {"label":"Administrativo - Jd Paineiras","category":"other_sporting_sections","subcategory":"other_sports","amount":0.056213,"disclosure":"detailed"},
+        {"label":"Administrativo - Amador","category":"other_sporting_sections","subcategory":"youth_football","amount":0.743327,"disclosure":"detailed"},
+        {"label":"Social / Outras","category":"other_revenue","subcategory":"other_income","amount":1.894621,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Salários e Encargos/Outros (Profissional)","category":"wages_squad","amount":-17.59986,"disclosure":"detailed"},
-        {"label":"Serviços de Terceiros (Profissional)","category":"admin_general_expense","amount":-2.0678,"disclosure":"detailed"},
-        {"label":"Despesas com Jogos","category":"match_organisation_expense","amount":-3.765897,"disclosure":"detailed"},
-        {"label":"Cessão de Imagem / Luvas","category":"wages_squad","amount":-1.2096,"disclosure":"detailed"},
-        {"label":"Intermediação / Comissão","category":"other_expenses","amount":-0.480725,"disclosure":"detailed"},
+        {
+          "label": "Salários e Encargos/Outros (Profissional)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -17.59986,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de Terceiros (Profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.0678,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas com Jogos","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.765897,"disclosure":"detailed"},
+        {"label":"Cessão de Imagem / Luvas","category":"first_team_staff","subcategory":"wages_squad","amount":-1.2096,"disclosure":"detailed"},
+        {"label":"Intermediação / Comissão","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.480725,"disclosure":"detailed"},
         {
           "label": "Viagens / Moradia / Concentração e Atletas / Refeições / Medicamentos",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -1.60263,
           "disclosure": "detailed"
         },
-        {"label":"Taxas CBF / FPF","category":"match_organisation_expense","amount":-0.197052,"disclosure":"detailed"},
-        {"label":"Outras Despesas (Demais Gastos)","category":"other_expenses","amount":-10.585164,"disclosure":"detailed"},
-        {"label":"Fenapaf/INSS","category":"admin_general_expense","amount":-0.512392,"disclosure":"detailed"},
-        {"label":"Amortização / Depreciação (Profissional)","category":"depreciation","amount":-1.601386,"disclosure":"detailed"},
-        {"label":"Acordo Trabalhista e outros","category":"wages_squad","amount":-0.339278,"disclosure":"detailed"},
-        {"label":"Administrativo - Estadio","category":"match_organisation_expense","amount":-3.651649,"disclosure":"detailed"},
-        {"label":"Administrativo - Jd Paineiras","category":"youth_other_sports_expense","amount":-0.329421,"disclosure":"detailed"},
-        {"label":"Administrativo - Jd Eulina","category":"youth_other_sports_expense","amount":-0.370469,"disclosure":"detailed"},
-        {"label":"Amador","category":"youth_other_sports_expense","amount":-3.009161,"disclosure":"detailed"}
+        {"label":"Taxas CBF / FPF","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.197052,"disclosure":"detailed"},
+        {
+          "label": "Outras Despesas (Demais Gastos)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -10.585164,
+          "disclosure": "detailed"
+        },
+        {"label":"Fenapaf/INSS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.512392,"disclosure":"detailed"},
+        {"label":"Amortização / Depreciação (Profissional)","category":"depreciation","subcategory":"depreciation","amount":-1.601386,"disclosure":"detailed"},
+        {"label":"Acordo Trabalhista e outros","category":"first_team_staff","subcategory":"wages_squad","amount":-0.339278,"disclosure":"detailed"},
+        {
+          "label": "Administrativo - Estadio",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -3.651649,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Administrativo - Jd Paineiras",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.329421,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Administrativo - Jd Eulina",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.370469,
+          "disclosure": "detailed"
+        },
+        {"label":"Amador","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-3.009161,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.221453,"tax":0,"gross_debt":155.365802,"cash":0.067135},
       "official_totals": {"revenue":32.375229,"expenses":47.322484,"net_result":-15.168708}
@@ -155,40 +224,78 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2024-12-31"},
       "revenue": [
-        {"label":"Quotas de Transmissão","category":"broadcasting","amount":16.35,"disclosure":"detailed"},
-        {"label":"Premiação Campeonato Paulista","category":"competition_bonus","amount":0.37905,"disclosure":"detailed"},
-        {"label":"Receita transmissão","category":"broadcasting","amount":45.01,"disclosure":"detailed"},
-        {"label":"Venda Atletas","category":"player_sales","amount":11,"disclosure":"detailed"},
-        {"label":"Publicidade/Propaganda","category":"sponsorship_commercial","amount":2.591824,"disclosure":"detailed"},
-        {"label":"Administrativo - Estadio","category":"stadium_other","amount":1.385118,"disclosure":"detailed"},
-        {"label":"Administrativo - Jd Paineiras","category":"other_sports","amount":0.061408,"disclosure":"detailed"},
-        {"label":"Administrativo - Amador","category":"youth_football","amount":0.971491,"disclosure":"detailed"},
-        {"label":"Social / Outras","category":"other_income","amount":1.901677,"disclosure":"detailed"}
+        {"label":"Quotas de Transmissão","category":"media_rights","subcategory":"broadcasting","amount":16.35,"disclosure":"detailed"},
+        {"label":"Premiação Campeonato Paulista","category":"prize_money","subcategory":"competition_bonus","amount":0.37905,"disclosure":"detailed"},
+        {"label":"Receita transmissão","category":"media_rights","subcategory":"broadcasting","amount":45.01,"disclosure":"detailed"},
+        {"label":"Venda Atletas","category":"player_transfers","subcategory":"player_sales","amount":11,"disclosure":"detailed"},
+        {"label":"Publicidade/Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":2.591824,"disclosure":"detailed"},
+        {"label":"Administrativo - Estadio","category":"venue","subcategory":"stadium_other","amount":1.385118,"disclosure":"detailed"},
+        {"label":"Administrativo - Jd Paineiras","category":"other_sporting_sections","subcategory":"other_sports","amount":0.061408,"disclosure":"detailed"},
+        {"label":"Administrativo - Amador","category":"other_sporting_sections","subcategory":"youth_football","amount":0.971491,"disclosure":"detailed"},
+        {"label":"Social / Outras","category":"other_revenue","subcategory":"other_income","amount":1.901677,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Salários e Encargos/Outros (Profissional)","category":"wages_squad","amount":-19.854985,"disclosure":"detailed"},
-        {"label":"Serviços de Terceiros (Profissional)","category":"admin_general_expense","amount":-2.973686,"disclosure":"detailed"},
-        {"label":"Despesas com Jogos","category":"match_organisation_expense","amount":-5.057256,"disclosure":"detailed"},
-        {"label":"Cessão de Imagem / Luvas","category":"wages_squad","amount":-2.026411,"disclosure":"detailed"},
-        {"label":"Intermediação / Comissão","category":"other_expenses","amount":-0.97434,"disclosure":"detailed"},
+        {
+          "label": "Salários e Encargos/Outros (Profissional)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -19.854985,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de Terceiros (Profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.973686,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas com Jogos","category":"match_operations","subcategory":"match_organisation_expense","amount":-5.057256,"disclosure":"detailed"},
+        {"label":"Cessão de Imagem / Luvas","category":"first_team_staff","subcategory":"wages_squad","amount":-2.026411,"disclosure":"detailed"},
+        {"label":"Intermediação / Comissão","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.97434,"disclosure":"detailed"},
         {
           "label": "Viagens / Moradia / Concentração e Atletas / Refeições / Medicamentos",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -1.881501,
           "disclosure": "detailed"
         },
-        {"label":"Taxas CBF / FPF","category":"match_organisation_expense","amount":-0.243992,"disclosure":"detailed"},
-        {"label":"Outras Despesas (Demais Gastos)","category":"other_expenses","amount":-7.49032,"disclosure":"detailed"},
-        {"label":"Fenapaf/INSS","category":"admin_general_expense","amount":-0.979699,"disclosure":"detailed"},
-        {"label":"Amortização / Depreciação (Profissional)","category":"depreciation","amount":-1.439364,"disclosure":"detailed"},
-        {"label":"Acordo Trabalhista e outros","category":"wages_squad","amount":-0.18,"disclosure":"detailed"},
-        {"label":"Administrativo - Estadio","category":"match_organisation_expense","amount":-3.459614,"disclosure":"detailed"},
-        {"label":"Administrativo - Jd Paineiras","category":"youth_other_sports_expense","amount":-0.425658,"disclosure":"detailed"},
-        {"label":"Administrativo - Jd Eulina","category":"youth_other_sports_expense","amount":-0.450581,"disclosure":"detailed"},
-        {"label":"Amador","category":"youth_other_sports_expense","amount":-3.084546,"disclosure":"detailed"},
+        {"label":"Taxas CBF / FPF","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.243992,"disclosure":"detailed"},
+        {
+          "label": "Outras Despesas (Demais Gastos)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7.49032,
+          "disclosure": "detailed"
+        },
+        {"label":"Fenapaf/INSS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.979699,"disclosure":"detailed"},
+        {"label":"Amortização / Depreciação (Profissional)","category":"depreciation","subcategory":"depreciation","amount":-1.439364,"disclosure":"detailed"},
+        {"label":"Acordo Trabalhista e outros","category":"first_team_staff","subcategory":"wages_squad","amount":-0.18,"disclosure":"detailed"},
+        {
+          "label": "Administrativo - Estadio",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -3.459614,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Administrativo - Jd Paineiras",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.425658,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Administrativo - Jd Eulina",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.450581,
+          "disclosure": "detailed"
+        },
+        {"label":"Amador","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-3.084546,"disclosure":"detailed"},
         {
           "label": "Depreciação/Contingência/Pept/CNRD (ajuste extraordinário fora dos departamentos — ver cabecera)",
-          "category": "exceptional_items",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
           "amount": -22.168194,
           "disclosure": "detailed"
         }
@@ -205,28 +312,64 @@
       "management_id": null,
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"Quotas Globo-Camp.Brasileiro","category":"broadcasting","amount":1.660015,"disclosure":"aggregated"},
-        {"label":"Quotas F.P.F","category":"broadcasting","amount":9.1175,"disclosure":"aggregated"},
-        {"label":"Premiação Campeonato Paulista","category":"competition_bonus","amount":0.2,"disclosure":"aggregated"},
-        {"label":"Quotas Copa do Brasil-CBF","category":"broadcasting","amount":0.83,"disclosure":"aggregated"},
-        {"label":"Publicidade/Propaganda","category":"sponsorship_commercial","amount":4.240984,"disclosure":"aggregated"},
-        {"label":"Solidariedade / Compensação Formação","category":"player_sales","amount":2.389897,"disclosure":"aggregated"},
-        {"label":"Administrativo - Estado","category":"stadium_other","amount":1.398765,"disclosure":"aggregated"},
-        {"label":"Administrativo - Jd Paineiras","category":"other_sports","amount":0.053848,"disclosure":"aggregated"},
-        {"label":"Administrativo - Amador","category":"youth_football","amount":0.988322,"disclosure":"aggregated"},
-        {"label":"Social / Outras","category":"other_income","amount":2.692,"disclosure":"aggregated"}
+        {"label":"Quotas Globo-Camp.Brasileiro","category":"media_rights","subcategory":"broadcasting","amount":1.660015,"disclosure":"aggregated"},
+        {"label":"Quotas F.P.F","category":"media_rights","subcategory":"broadcasting","amount":9.1175,"disclosure":"aggregated"},
+        {"label":"Premiação Campeonato Paulista","category":"prize_money","subcategory":"competition_bonus","amount":0.2,"disclosure":"aggregated"},
+        {"label":"Quotas Copa do Brasil-CBF","category":"media_rights","subcategory":"broadcasting","amount":0.83,"disclosure":"aggregated"},
+        {"label":"Publicidade/Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":4.240984,"disclosure":"aggregated"},
+        {
+          "label": "Solidariedade / Compensação Formação",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 2.389897,
+          "disclosure": "aggregated"
+        },
+        {"label":"Administrativo - Estado","category":"venue","subcategory":"stadium_other","amount":1.398765,"disclosure":"aggregated"},
+        {
+          "label": "Administrativo - Jd Paineiras",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 0.053848,
+          "disclosure": "aggregated"
+        },
+        {"label":"Administrativo - Amador","category":"other_sporting_sections","subcategory":"youth_football","amount":0.988322,"disclosure":"aggregated"},
+        {"label":"Social / Outras","category":"other_revenue","subcategory":"other_income","amount":2.692,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Salários e Encargos /Outros","category":"wages_squad","amount":-19.158725,"disclosure":"aggregated"},
-        {"label":"Serviços de Terceiros","category":"admin_general_expense","amount":-3.0665,"disclosure":"aggregated"},
-        {"label":"Despesas com Jogos","category":"match_organisation_expense","amount":-5.573721,"disclosure":"aggregated"},
-        {"label":"Demais Gastos","category":"other_expenses","amount":-14.887655,"disclosure":"aggregated"},
-        {"label":"Diferencia de redondeo","category":"other_expenses","amount":-0.000001,"disclosure":"aggregated"},
-        {"label":"Administrativo - Estado","category":"match_organisation_expense","amount":-3.680125,"disclosure":"aggregated"},
-        {"label":"Administrativo - Jd Paineiras","category":"youth_other_sports_expense","amount":-0.51094,"disclosure":"aggregated"},
-        {"label":"Administrativo - Jd Eulina","category":"youth_other_sports_expense","amount":-0.480674,"disclosure":"aggregated"},
-        {"label":"Amador","category":"youth_other_sports_expense","amount":-3.4534,"disclosure":"aggregated"},
-        {"label":"Depreciação/Amortizacao/Contingencia/Pept/Cnrd","category":"exceptional_items","amount":-6.299661,"disclosure":"aggregated"}
+        {"label":"Salários e Encargos /Outros","category":"first_team_staff","subcategory":"wages_squad","amount":-19.158725,"disclosure":"aggregated"},
+        {"label":"Serviços de Terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-3.0665,"disclosure":"aggregated"},
+        {"label":"Despesas com Jogos","category":"match_operations","subcategory":"match_organisation_expense","amount":-5.573721,"disclosure":"aggregated"},
+        {"label":"Demais Gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-14.887655,"disclosure":"aggregated"},
+        {"label":"Diferencia de redondeo","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.000001,"disclosure":"aggregated"},
+        {
+          "label": "Administrativo - Estado",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -3.680125,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Administrativo - Jd Paineiras",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.51094,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Administrativo - Jd Eulina",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.480674,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amador","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-3.4534,"disclosure":"aggregated"},
+        {
+          "label": "Depreciação/Amortizacao/Contingencia/Pept/Cnrd",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -6.299661,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.0357,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":23.571331,"expenses":50.811741,"net_result":-33.57577}

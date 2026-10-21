@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "EE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -73,31 +74,55 @@
       "management_id": null,
       "fx": {"ref":"EUR@2019-12-31"},
       "revenue": [
-        {"label":"Liikmetelt saadud tasud","category":"member_dues","amount":0.00003,"disclosure":"aggregated"},
-        {"label":"Annetused ja toetused","category":"other_income","amount":0.40604,"disclosure":"aggregated"},
-        {"label":"Piletide müük","category":"matchday_competition","amount":0.009263,"disclosure":"aggregated"},
-        {"label":"Reklaamiteenused","category":"sponsorship_commercial","amount":0.298151,"disclosure":"aggregated"},
-        {"label":"Staadioni rent","category":"stadium_other","amount":0.034782,"disclosure":"aggregated"},
-        {"label":"Jalgpallurite ülemineku registreerimistasu","category":"player_sales","amount":0.025,"disclosure":"aggregated"},
-        {"label":"Televisiooni ülekanne","category":"broadcasting","amount":0.001,"disclosure":"aggregated"},
-        {"label":"Muud","category":"other_income","amount":0.002811,"disclosure":"aggregated"},
-        {"label":"Muud tulud","category":"other_income","amount":0.054059,"disclosure":"aggregated"}
+        {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.00003,"disclosure":"aggregated"},
+        {"label":"Annetused ja toetused","category":"other_revenue","subcategory":"other_income","amount":0.40604,"disclosure":"aggregated"},
+        {"label":"Piletide müük","category":"matchday","subcategory":"matchday_competition","amount":0.009263,"disclosure":"aggregated"},
+        {"label":"Reklaamiteenused","category":"commercial","subcategory":"sponsorship_commercial","amount":0.298151,"disclosure":"aggregated"},
+        {"label":"Staadioni rent","category":"venue","subcategory":"stadium_other","amount":0.034782,"disclosure":"aggregated"},
+        {
+          "label": "Jalgpallurite ülemineku registreerimistasu",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.025,
+          "disclosure": "aggregated"
+        },
+        {"label":"Televisiooni ülekanne","category":"media_rights","subcategory":"broadcasting","amount":0.001,"disclosure":"aggregated"},
+        {"label":"Muud","category":"other_revenue","subcategory":"other_income","amount":0.002811,"disclosure":"aggregated"},
+        {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.054059,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Üür ja rent","category":"admin_general_expense","amount":-0.01547,"disclosure":"aggregated"},
-        {"label":"Elektrienergia","category":"admin_general_expense","amount":-0.009262,"disclosure":"aggregated"},
-        {"label":"Kütus","category":"admin_general_expense","amount":-0.005429,"disclosure":"aggregated"},
-        {"label":"Mitmesugused bürookulud","category":"admin_general_expense","amount":-0.000797,"disclosure":"aggregated"},
-        {"label":"Lähetuskulud","category":"match_organisation_expense","amount":-0.10197,"disclosure":"aggregated"},
-        {"label":"Koolituskulud","category":"admin_general_expense","amount":-0.011191,"disclosure":"aggregated"},
-        {"label":"Riiklikud ja kohalikud maksud","category":"admin_general_expense","amount":-0.005157,"disclosure":"aggregated"},
-        {"label":"Mängude ja treeningute kulud","category":"match_organisation_expense","amount":-0.084709,"disclosure":"aggregated"},
-        {"label":"Liikmemaks","category":"admin_general_expense","amount":-0.323479,"disclosure":"aggregated"},
-        {"label":"Kulu mängijate üleminekutest klubisse","category":"player_amortisation","amount":-0.0061,"disclosure":"aggregated"},
-        {"label":"Muud tegevuskulud","category":"other_expenses","amount":-0.075693,"disclosure":"aggregated"},
-        {"label":"Palgakulu","category":"wages_squad","amount":-0.383497,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaksud","category":"wages_squad","amount":-0.129621,"disclosure":"aggregated"},
-        {"label":"Põhivarade kulum ja väärtuse langus","category":"depreciation","amount":-0.079866,"disclosure":"aggregated"}
+        {"label":"Üür ja rent","category":"admin_general","subcategory":"admin_general_expense","amount":-0.01547,"disclosure":"aggregated"},
+        {"label":"Elektrienergia","category":"admin_general","subcategory":"admin_general_expense","amount":-0.009262,"disclosure":"aggregated"},
+        {"label":"Kütus","category":"admin_general","subcategory":"admin_general_expense","amount":-0.005429,"disclosure":"aggregated"},
+        {"label":"Mitmesugused bürookulud","category":"admin_general","subcategory":"admin_general_expense","amount":-0.000797,"disclosure":"aggregated"},
+        {"label":"Lähetuskulud","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.10197,"disclosure":"aggregated"},
+        {"label":"Koolituskulud","category":"admin_general","subcategory":"admin_general_expense","amount":-0.011191,"disclosure":"aggregated"},
+        {
+          "label": "Riiklikud ja kohalikud maksud",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.005157,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mängude ja treeningute kulud",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.084709,
+          "disclosure": "aggregated"
+        },
+        {"label":"Liikmemaks","category":"admin_general","subcategory":"admin_general_expense","amount":-0.323479,"disclosure":"aggregated"},
+        {
+          "label": "Kulu mängijate üleminekutest klubisse",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.0061,
+          "disclosure": "aggregated"
+        },
+        {"label":"Muud tegevuskulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.075693,"disclosure":"aggregated"},
+        {"label":"Palgakulu","category":"first_team_staff","subcategory":"wages_squad","amount":-0.383497,"disclosure":"aggregated"},
+        {"label":"Sotsiaalmaksud","category":"first_team_staff","subcategory":"wages_squad","amount":-0.129621,"disclosure":"aggregated"},
+        {"label":"Põhivarade kulum ja väärtuse langus","category":"depreciation","subcategory":"depreciation","amount":-0.079866,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.063208,"tax":0,"gross_debt":null,"cash":0.03194},
       "official_totals": {"revenue":0.831136,"expenses":1.232241,"net_result":-0.464313}
@@ -111,33 +136,57 @@
       "management_id": null,
       "fx": {"ref":"EUR@2020-12-31"},
       "revenue": [
-        {"label":"Liikmetelt saadud tasud","category":"member_dues","amount":0.00003,"disclosure":"aggregated"},
-        {"label":"Annetused ja toetused","category":"other_income","amount":0.554396,"disclosure":"aggregated"},
-        {"label":"Piletide müük","category":"matchday_competition","amount":0.007473,"disclosure":"aggregated"},
-        {"label":"Reklaamiteenused","category":"sponsorship_commercial","amount":0.130614,"disclosure":"aggregated"},
-        {"label":"Staadioni rent","category":"stadium_other","amount":0.0287,"disclosure":"aggregated"},
-        {"label":"Jalgpallurite ülemineku registreerimistasu","category":"player_sales","amount":0.005845,"disclosure":"aggregated"},
-        {"label":"Televisiooni ülekanne","category":"broadcasting","amount":0.0015,"disclosure":"aggregated"},
-        {"label":"Muud","category":"other_income","amount":0.000073,"disclosure":"aggregated"},
-        {"label":"Ehitustööd","category":"other_income","amount":0.054005,"disclosure":"aggregated"},
-        {"label":"Muud","category":"other_income","amount":0.003915,"disclosure":"aggregated"}
+        {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.00003,"disclosure":"aggregated"},
+        {"label":"Annetused ja toetused","category":"other_revenue","subcategory":"other_income","amount":0.554396,"disclosure":"aggregated"},
+        {"label":"Piletide müük","category":"matchday","subcategory":"matchday_competition","amount":0.007473,"disclosure":"aggregated"},
+        {"label":"Reklaamiteenused","category":"commercial","subcategory":"sponsorship_commercial","amount":0.130614,"disclosure":"aggregated"},
+        {"label":"Staadioni rent","category":"venue","subcategory":"stadium_other","amount":0.0287,"disclosure":"aggregated"},
+        {
+          "label": "Jalgpallurite ülemineku registreerimistasu",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.005845,
+          "disclosure": "aggregated"
+        },
+        {"label":"Televisiooni ülekanne","category":"media_rights","subcategory":"broadcasting","amount":0.0015,"disclosure":"aggregated"},
+        {"label":"Muud","category":"other_revenue","subcategory":"other_income","amount":0.000073,"disclosure":"aggregated"},
+        {"label":"Ehitustööd","category":"other_revenue","subcategory":"other_income","amount":0.054005,"disclosure":"aggregated"},
+        {"label":"Muud","category":"other_revenue","subcategory":"other_income","amount":0.003915,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Üür ja rent","category":"admin_general_expense","amount":-0.01975,"disclosure":"aggregated"},
-        {"label":"Elektrienergia","category":"admin_general_expense","amount":-0.008539,"disclosure":"aggregated"},
-        {"label":"Kütus","category":"admin_general_expense","amount":-0.005553,"disclosure":"aggregated"},
-        {"label":"Mitmesugused bürookulud","category":"admin_general_expense","amount":-0.006862,"disclosure":"aggregated"},
-        {"label":"Lähetuskulud","category":"match_organisation_expense","amount":-0.124117,"disclosure":"aggregated"},
-        {"label":"Koolituskulud","category":"admin_general_expense","amount":-0.001298,"disclosure":"aggregated"},
-        {"label":"Riiklikud ja kohalikud maksud","category":"admin_general_expense","amount":-0.005157,"disclosure":"aggregated"},
-        {"label":"Mängude ja treeningute kulud","category":"match_organisation_expense","amount":-0.037141,"disclosure":"aggregated"},
-        {"label":"Liikmemaks","category":"admin_general_expense","amount":-0.072986,"disclosure":"aggregated"},
-        {"label":"Kulu mängijate üleminekutest klubisse","category":"player_amortisation","amount":-0.02025,"disclosure":"aggregated"},
-        {"label":"Muud tegevuskulud","category":"other_expenses","amount":-0.146992,"disclosure":"aggregated"},
-        {"label":"Sportlasetoetus","category":"wages_squad","amount":-0.153774,"disclosure":"aggregated"},
-        {"label":"Palgakulu","category":"wages_squad","amount":-0.348194,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaksud","category":"wages_squad","amount":-0.117689,"disclosure":"aggregated"},
-        {"label":"Põhivarade kulum ja väärtuse langus","category":"depreciation","amount":-0.081468,"disclosure":"aggregated"}
+        {"label":"Üür ja rent","category":"admin_general","subcategory":"admin_general_expense","amount":-0.01975,"disclosure":"aggregated"},
+        {"label":"Elektrienergia","category":"admin_general","subcategory":"admin_general_expense","amount":-0.008539,"disclosure":"aggregated"},
+        {"label":"Kütus","category":"admin_general","subcategory":"admin_general_expense","amount":-0.005553,"disclosure":"aggregated"},
+        {"label":"Mitmesugused bürookulud","category":"admin_general","subcategory":"admin_general_expense","amount":-0.006862,"disclosure":"aggregated"},
+        {"label":"Lähetuskulud","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.124117,"disclosure":"aggregated"},
+        {"label":"Koolituskulud","category":"admin_general","subcategory":"admin_general_expense","amount":-0.001298,"disclosure":"aggregated"},
+        {
+          "label": "Riiklikud ja kohalikud maksud",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.005157,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mängude ja treeningute kulud",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.037141,
+          "disclosure": "aggregated"
+        },
+        {"label":"Liikmemaks","category":"admin_general","subcategory":"admin_general_expense","amount":-0.072986,"disclosure":"aggregated"},
+        {
+          "label": "Kulu mängijate üleminekutest klubisse",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.02025,
+          "disclosure": "aggregated"
+        },
+        {"label":"Muud tegevuskulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.146992,"disclosure":"aggregated"},
+        {"label":"Sportlasetoetus","category":"first_team_staff","subcategory":"wages_squad","amount":-0.153774,"disclosure":"aggregated"},
+        {"label":"Palgakulu","category":"first_team_staff","subcategory":"wages_squad","amount":-0.348194,"disclosure":"aggregated"},
+        {"label":"Sotsiaalmaksud","category":"first_team_staff","subcategory":"wages_squad","amount":-0.117689,"disclosure":"aggregated"},
+        {"label":"Põhivarade kulum ja väärtuse langus","category":"depreciation","subcategory":"depreciation","amount":-0.081468,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.008621,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":0.786551,"expenses":1.14977,"net_result":-0.37184}
@@ -151,56 +200,147 @@
       "management_id": null,
       "fx": {"ref":"EUR@2021-12-31"},
       "revenue": [
-        {"label":"Piletitulu Eesti-siseste võistlustustel","category":"matchday_competition","amount":0.003199,"disclosure":"aggregated"},
-        {"label":"Piletitulu UEFA klubisarjades osalemisest","category":"matchday_competition","amount":0.006188,"disclosure":"aggregated"},
-        {"label":"Hooajapiletite müügitulu","category":"season_tickets","amount":0.000122,"disclosure":"aggregated"},
-        {"label":"Reklaamitulu","category":"sponsorship_commercial","amount":0.271303,"disclosure":"aggregated"},
-        {"label":"Tulu ülekandeõiguste müügist","category":"broadcasting","amount":0.004,"disclosure":"aggregated"},
-        {"label":"Tulu mängijate üleminekutest klubist välja","category":"player_sales","amount":0.017302,"disclosure":"aggregated"},
-        {"label":"Klubi sümboolikaga toodete müügitulu","category":"sponsorship_commercial","amount":0.000073,"disclosure":"aggregated"},
-        {"label":"Staadioni rent","category":"stadium_other","amount":0.005757,"disclosure":"aggregated"},
-        {"label":"Tulu turniiride/laagrite korraldamisest","category":"other_income","amount":0.011999,"disclosure":"aggregated"},
-        {"label":"Muud tulud","category":"other_income","amount":0.005494,"disclosure":"aggregated"},
-        {"label":"UEFA toetused","category":"competition_bonus","amount":0.607885,"disclosure":"aggregated"},
-        {"label":"Riigi ja/või KOV toetused","category":"other_income","amount":0.065142,"disclosure":"aggregated"},
-        {"label":"Toetus kogukonnajuht","category":"other_income","amount":0.031042,"disclosure":"aggregated"},
-        {"label":"Töötasu hüvitimise","category":"other_income","amount":0.05229,"disclosure":"aggregated"},
-        {"label":"Riiklik treenerite tööjõukulude toetus","category":"other_income","amount":0.036948,"disclosure":"aggregated"},
-        {"label":"EJL toetused noortetööle","category":"youth_football","amount":0.004146,"disclosure":"aggregated"},
-        {"label":"Arengustipendiumid","category":"other_income","amount":0.034,"disclosure":"aggregated"},
-        {"label":"Mitteseotud osapoolte toetused/annetused","category":"other_income","amount":0.10154,"disclosure":"aggregated"},
-        {"label":"Noormängijate osavõtutasud","category":"youth_football","amount":0.139471,"disclosure":"aggregated"},
-        {"label":"Tulu liikmemaksudest","category":"member_dues","amount":0.00003,"disclosure":"aggregated"}
+        {
+          "label": "Piletitulu Eesti-siseste võistlustustel",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.003199,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Piletitulu UEFA klubisarjades osalemisest",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.006188,
+          "disclosure": "aggregated"
+        },
+        {"label":"Hooajapiletite müügitulu","category":"season_tickets","subcategory":"season_tickets","amount":0.000122,"disclosure":"aggregated"},
+        {"label":"Reklaamitulu","category":"commercial","subcategory":"sponsorship_commercial","amount":0.271303,"disclosure":"aggregated"},
+        {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.004,"disclosure":"aggregated"},
+        {
+          "label": "Tulu mängijate üleminekutest klubist välja",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.017302,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubi sümboolikaga toodete müügitulu",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.000073,
+          "disclosure": "aggregated"
+        },
+        {"label":"Staadioni rent","category":"venue","subcategory":"stadium_other","amount":0.005757,"disclosure":"aggregated"},
+        {
+          "label": "Tulu turniiride/laagrite korraldamisest",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.011999,
+          "disclosure": "aggregated"
+        },
+        {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.005494,"disclosure":"aggregated"},
+        {"label":"UEFA toetused","category":"prize_money","subcategory":"competition_bonus","amount":0.607885,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetused","category":"other_revenue","subcategory":"other_income","amount":0.065142,"disclosure":"aggregated"},
+        {"label":"Toetus kogukonnajuht","category":"other_revenue","subcategory":"other_income","amount":0.031042,"disclosure":"aggregated"},
+        {"label":"Töötasu hüvitimise","category":"other_revenue","subcategory":"other_income","amount":0.05229,"disclosure":"aggregated"},
+        {"label":"Riiklik treenerite tööjõukulude toetus","category":"other_revenue","subcategory":"other_income","amount":0.036948,"disclosure":"aggregated"},
+        {"label":"EJL toetused noortetööle","category":"other_sporting_sections","subcategory":"youth_football","amount":0.004146,"disclosure":"aggregated"},
+        {"label":"Arengustipendiumid","category":"other_revenue","subcategory":"other_income","amount":0.034,"disclosure":"aggregated"},
+        {
+          "label": "Mitteseotud osapoolte toetused/annetused",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.10154,
+          "disclosure": "aggregated"
+        },
+        {"label":"Noormängijate osavõtutasud","category":"other_sporting_sections","subcategory":"youth_football","amount":0.139471,"disclosure":"aggregated"},
+        {"label":"Tulu liikmemaksudest","category":"membership","subcategory":"member_dues","amount":0.00003,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Mängijate palgakulu","category":"wages_squad","amount":-0.300767,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"wages_squad","amount":-0.101436,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstav sportlasetoetus","category":"wages_squad","amount":-0.269279,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstud stipendiumid","category":"wages_squad","amount":-0.036937,"disclosure":"aggregated"},
-        {"label":"Muu personali palgakulu","category":"admin_general_expense","amount":-0.372621,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks muu personali töötasudelt","category":"admin_general_expense","amount":-0.125759,"disclosure":"aggregated"},
-        {"label":"Kulu mängijate üleminekutest klubisse","category":"player_amortisation","amount":-0.072287,"disclosure":"aggregated"},
-        {"label":"Kulutused turvalisusele","category":"match_organisation_expense","amount":-0.00965,"disclosure":"aggregated"},
-        {"label":"Toitluskulud","category":"match_organisation_expense","amount":-0.0012,"disclosure":"aggregated"},
-        {"label":"Trükised jm materjalid","category":"match_organisation_expense","amount":-0.001507,"disclosure":"aggregated"},
-        {"label":"Muud klassifitseerimata kodumängu korralduskulud","category":"match_organisation_expense","amount":-0.014033,"disclosure":"aggregated"},
-        {"label":"Eesti meistrivõistluste osavõtutasu","category":"match_organisation_expense","amount":-0.007008,"disclosure":"aggregated"},
-        {"label":"Lähetuskulud","category":"match_organisation_expense","amount":-0.238732,"disclosure":"aggregated"},
-        {"label":"Turundus-, sponsorlus- ja reklaamikulud","category":"admin_general_expense","amount":-0.002153,"disclosure":"aggregated"},
-        {"label":"Klubisümboolikaga toodete omahind","category":"other_expenses","amount":-0.00075,"disclosure":"aggregated"},
+        {"label":"Mängijate palgakulu","category":"first_team_staff","subcategory":"wages_squad","amount":-0.300767,"disclosure":"aggregated"},
+        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"first_team_staff","subcategory":"wages_squad","amount":-0.101436,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstav sportlasetoetus","category":"first_team_staff","subcategory":"wages_squad","amount":-0.269279,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstud stipendiumid","category":"first_team_staff","subcategory":"wages_squad","amount":-0.036937,"disclosure":"aggregated"},
+        {"label":"Muu personali palgakulu","category":"admin_general","subcategory":"admin_general_expense","amount":-0.372621,"disclosure":"aggregated"},
+        {
+          "label": "Sotsiaalmaks muu personali töötasudelt",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.125759,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kulu mängijate üleminekutest klubisse",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.072287,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kulutused turvalisusele",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.00965,
+          "disclosure": "aggregated"
+        },
+        {"label":"Toitluskulud","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.0012,"disclosure":"aggregated"},
+        {
+          "label": "Trükised jm materjalid",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.001507,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Muud klassifitseerimata kodumängu korralduskulud",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.014033,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Eesti meistrivõistluste osavõtutasu",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.007008,
+          "disclosure": "aggregated"
+        },
+        {"label":"Lähetuskulud","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.238732,"disclosure":"aggregated"},
+        {
+          "label": "Turundus-, sponsorlus- ja reklaamikulud",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.002153,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubisümboolikaga toodete omahind",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.00075,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.049596,
           "disclosure": "aggregated"
         },
-        {"label":"Klubi administeerimiskulud","category":"admin_general_expense","amount":-0.018773,"disclosure":"aggregated"},
-        {"label":"Meditsiinitarvikud - ja teenused","category":"other_expenses","amount":-0.02967,"disclosure":"aggregated"},
-        {"label":"Mänguvormid jm varustus","category":"other_expenses","amount":-0.005785,"disclosure":"aggregated"},
-        {"label":"Muud kulud","category":"other_expenses","amount":-0.0005,"disclosure":"aggregated"},
-        {"label":"Muud tegevuskulud","category":"other_expenses","amount":-0.120594,"disclosure":"aggregated"},
-        {"label":"Põhivara kulum","category":"depreciation","amount":-0.089594,"disclosure":"aggregated"},
-        {"label":"Ärikulud","category":"other_expenses","amount":-0.000861,"disclosure":"aggregated"}
+        {"label":"Klubi administeerimiskulud","category":"admin_general","subcategory":"admin_general_expense","amount":-0.018773,"disclosure":"aggregated"},
+        {
+          "label": "Meditsiinitarvikud - ja teenused",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.02967,
+          "disclosure": "aggregated"
+        },
+        {"label":"Mänguvormid jm varustus","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.005785,"disclosure":"aggregated"},
+        {"label":"Muud kulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.0005,"disclosure":"aggregated"},
+        {"label":"Muud tegevuskulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.120594,"disclosure":"aggregated"},
+        {"label":"Põhivara kulum","category":"depreciation","subcategory":"depreciation","amount":-0.089594,"disclosure":"aggregated"},
+        {"label":"Ärikulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.000861,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.168147,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":1.397931,"expenses":1.869492,"net_result":-0.639702},
@@ -215,53 +355,144 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-12-31"},
       "revenue": [
-        {"label":"Piletitulu Eesti-siseste võistlustustel","category":"matchday_competition","amount":0.009887,"disclosure":"aggregated"},
-        {"label":"Piletitulu UEFA klubisarjades osalemisest","category":"matchday_competition","amount":0.004693,"disclosure":"aggregated"},
-        {"label":"Hooajapiletite müügitulu","category":"season_tickets","amount":0.002704,"disclosure":"aggregated"},
-        {"label":"Reklaamitulu","category":"sponsorship_commercial","amount":0.508656,"disclosure":"aggregated"},
-        {"label":"Tulu ülekandeõiguste müügist","category":"broadcasting","amount":0.002,"disclosure":"aggregated"},
-        {"label":"Tulu mängijate üleminekutest klubist välja","category":"player_sales","amount":0.139972,"disclosure":"aggregated"},
-        {"label":"Klubi sümboolikaga toodete müügitulu","category":"sponsorship_commercial","amount":0.000913,"disclosure":"aggregated"},
-        {"label":"Staadioni rent","category":"stadium_other","amount":0.01413,"disclosure":"aggregated"},
-        {"label":"Tulu turniiride/laagrite korraldamisest","category":"other_income","amount":0.034531,"disclosure":"aggregated"},
-        {"label":"Muud tulud","category":"other_income","amount":0.015108,"disclosure":"aggregated"},
-        {"label":"UEFA toetused","category":"competition_bonus","amount":1.030704,"disclosure":"aggregated"},
-        {"label":"Riigi ja/või KOV toetused","category":"other_income","amount":0.107519,"disclosure":"aggregated"},
-        {"label":"Toetus kogukonnajuht","category":"other_income","amount":0.016974,"disclosure":"aggregated"},
-        {"label":"Riiklik treenerite tööjōukulude toetus","category":"other_income","amount":0.077794,"disclosure":"aggregated"},
-        {"label":"EJL toetused noortetööle","category":"youth_football","amount":0.005717,"disclosure":"aggregated"},
-        {"label":"Arengustipendiumid","category":"other_income","amount":0.029178,"disclosure":"aggregated"},
-        {"label":"Mitteseotud osapoolte toetused/annetused","category":"other_income","amount":0.035242,"disclosure":"aggregated"},
-        {"label":"Noormängijate osavõtutasud","category":"youth_football","amount":0.293424,"disclosure":"aggregated"},
-        {"label":"Tulu liikmemaksudest","category":"member_dues","amount":0.00003,"disclosure":"aggregated"}
+        {
+          "label": "Piletitulu Eesti-siseste võistlustustel",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.009887,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Piletitulu UEFA klubisarjades osalemisest",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.004693,
+          "disclosure": "aggregated"
+        },
+        {"label":"Hooajapiletite müügitulu","category":"season_tickets","subcategory":"season_tickets","amount":0.002704,"disclosure":"aggregated"},
+        {"label":"Reklaamitulu","category":"commercial","subcategory":"sponsorship_commercial","amount":0.508656,"disclosure":"aggregated"},
+        {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.002,"disclosure":"aggregated"},
+        {
+          "label": "Tulu mängijate üleminekutest klubist välja",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.139972,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubi sümboolikaga toodete müügitulu",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.000913,
+          "disclosure": "aggregated"
+        },
+        {"label":"Staadioni rent","category":"venue","subcategory":"stadium_other","amount":0.01413,"disclosure":"aggregated"},
+        {
+          "label": "Tulu turniiride/laagrite korraldamisest",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.034531,
+          "disclosure": "aggregated"
+        },
+        {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.015108,"disclosure":"aggregated"},
+        {"label":"UEFA toetused","category":"prize_money","subcategory":"competition_bonus","amount":1.030704,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetused","category":"other_revenue","subcategory":"other_income","amount":0.107519,"disclosure":"aggregated"},
+        {"label":"Toetus kogukonnajuht","category":"other_revenue","subcategory":"other_income","amount":0.016974,"disclosure":"aggregated"},
+        {"label":"Riiklik treenerite tööjōukulude toetus","category":"other_revenue","subcategory":"other_income","amount":0.077794,"disclosure":"aggregated"},
+        {"label":"EJL toetused noortetööle","category":"other_sporting_sections","subcategory":"youth_football","amount":0.005717,"disclosure":"aggregated"},
+        {"label":"Arengustipendiumid","category":"other_revenue","subcategory":"other_income","amount":0.029178,"disclosure":"aggregated"},
+        {
+          "label": "Mitteseotud osapoolte toetused/annetused",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.035242,
+          "disclosure": "aggregated"
+        },
+        {"label":"Noormängijate osavõtutasud","category":"other_sporting_sections","subcategory":"youth_football","amount":0.293424,"disclosure":"aggregated"},
+        {"label":"Tulu liikmemaksudest","category":"membership","subcategory":"member_dues","amount":0.00003,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Mängijate palgakulu","category":"wages_squad","amount":-0.304631,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"wages_squad","amount":-0.102936,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstav sportlasetoetus","category":"wages_squad","amount":-0.27497,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstud stipendiumid","category":"wages_squad","amount":-0.046368,"disclosure":"aggregated"},
-        {"label":"Muu personali palgakulu","category":"admin_general_expense","amount":-0.724431,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks muu personali töötasudelt","category":"admin_general_expense","amount":-0.244705,"disclosure":"aggregated"},
-        {"label":"Kulu mängijate üleminekutest klubisse","category":"player_amortisation","amount":-0.041067,"disclosure":"aggregated"},
-        {"label":"Kulutused turvalisusele","category":"match_organisation_expense","amount":-0.013436,"disclosure":"aggregated"},
-        {"label":"Trükised jm materjalid","category":"match_organisation_expense","amount":-0.003215,"disclosure":"aggregated"},
-        {"label":"Muud klassifitseerimata kodumängu korralduskulud","category":"match_organisation_expense","amount":-0.023119,"disclosure":"aggregated"},
-        {"label":"Eesti meistrivōistluste osavōtutasu","category":"match_organisation_expense","amount":-0.009398,"disclosure":"aggregated"},
-        {"label":"Lähetuskulud","category":"match_organisation_expense","amount":-0.283004,"disclosure":"aggregated"},
-        {"label":"Turundus-, sponsorlus- ja reklaamikulud","category":"admin_general_expense","amount":-0.006232,"disclosure":"aggregated"},
-        {"label":"Klubisümboolikaga toodete omahind","category":"other_expenses","amount":-0.001365,"disclosure":"aggregated"},
+        {"label":"Mängijate palgakulu","category":"first_team_staff","subcategory":"wages_squad","amount":-0.304631,"disclosure":"aggregated"},
+        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"first_team_staff","subcategory":"wages_squad","amount":-0.102936,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstav sportlasetoetus","category":"first_team_staff","subcategory":"wages_squad","amount":-0.27497,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstud stipendiumid","category":"first_team_staff","subcategory":"wages_squad","amount":-0.046368,"disclosure":"aggregated"},
+        {"label":"Muu personali palgakulu","category":"admin_general","subcategory":"admin_general_expense","amount":-0.724431,"disclosure":"aggregated"},
+        {
+          "label": "Sotsiaalmaks muu personali töötasudelt",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.244705,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kulu mängijate üleminekutest klubisse",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.041067,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kulutused turvalisusele",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.013436,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Trükised jm materjalid",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.003215,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Muud klassifitseerimata kodumängu korralduskulud",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.023119,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Eesti meistrivōistluste osavōtutasu",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.009398,
+          "disclosure": "aggregated"
+        },
+        {"label":"Lähetuskulud","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.283004,"disclosure":"aggregated"},
+        {
+          "label": "Turundus-, sponsorlus- ja reklaamikulud",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.006232,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubisümboolikaga toodete omahind",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.001365,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.169066,
           "disclosure": "aggregated"
         },
-        {"label":"Klubi administeerimiskulud","category":"admin_general_expense","amount":-0.026404,"disclosure":"aggregated"},
-        {"label":"Meditsiinitarvikud - ja teenused","category":"other_expenses","amount":-0.031674,"disclosure":"aggregated"},
-        {"label":"Mänguvormid jm varustus","category":"other_expenses","amount":-0.039949,"disclosure":"aggregated"},
-        {"label":"Muud tegevuskulud","category":"other_expenses","amount":-0.230106,"disclosure":"aggregated"},
-        {"label":"Pōhivara kulum","category":"depreciation","amount":-0.168476,"disclosure":"aggregated"},
-        {"label":"Ärikulud","category":"other_expenses","amount":-0.000225,"disclosure":"aggregated"}
+        {"label":"Klubi administeerimiskulud","category":"admin_general","subcategory":"admin_general_expense","amount":-0.026404,"disclosure":"aggregated"},
+        {
+          "label": "Meditsiinitarvikud - ja teenused",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.031674,
+          "disclosure": "aggregated"
+        },
+        {"label":"Mänguvormid jm varustus","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.039949,"disclosure":"aggregated"},
+        {"label":"Muud tegevuskulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.230106,"disclosure":"aggregated"},
+        {"label":"Pōhivara kulum","category":"depreciation","subcategory":"depreciation","amount":-0.168476,"disclosure":"aggregated"},
+        {"label":"Ärikulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.000225,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.193304,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":2.329176,"expenses":2.744777,"net_result":-0.608569},
@@ -276,55 +507,146 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-12-31"},
       "revenue": [
-        {"label":"Piletitulu Eesti-siseste võistlustustel","category":"matchday_competition","amount":0.012169,"disclosure":"aggregated"},
-        {"label":"Piletitulu UEFA klubisarjades osalemisest","category":"matchday_competition","amount":0.003922,"disclosure":"aggregated"},
-        {"label":"Hooajapiletite müügitulu","category":"season_tickets","amount":0.000412,"disclosure":"aggregated"},
-        {"label":"Reklaamitulu","category":"sponsorship_commercial","amount":0.425282,"disclosure":"aggregated"},
-        {"label":"Tulu ülekandeõiguste müügist","category":"broadcasting","amount":0.0075,"disclosure":"aggregated"},
-        {"label":"Tulu mängijate üleminekutest klubist välja","category":"player_sales","amount":0.122456,"disclosure":"aggregated"},
-        {"label":"Klubi sümboolikaga toodete müügitulu","category":"sponsorship_commercial","amount":0.002276,"disclosure":"aggregated"},
-        {"label":"Staadioni rent","category":"stadium_other","amount":0.008322,"disclosure":"aggregated"},
-        {"label":"Tulu turniiride/laagrite korraldamisest","category":"other_income","amount":0.051763,"disclosure":"aggregated"},
-        {"label":"Muud tulud","category":"other_income","amount":0.009264,"disclosure":"aggregated"},
-        {"label":"UEFA toetused","category":"competition_bonus","amount":0.53101,"disclosure":"aggregated"},
-        {"label":"Riigi ja/või KOV toetused","category":"other_income","amount":0.109447,"disclosure":"aggregated"},
-        {"label":"Toetus kogukonnajuht","category":"other_income","amount":0.007835,"disclosure":"aggregated"},
-        {"label":"Töötasu hüvitimise","category":"other_income","amount":0.000542,"disclosure":"aggregated"},
-        {"label":"Riiklik treenerite tööjōukulude toetus","category":"other_income","amount":0.082978,"disclosure":"aggregated"},
-        {"label":"EJL toetused noortetööle","category":"youth_football","amount":0.017986,"disclosure":"aggregated"},
-        {"label":"Arengustipendiumid","category":"other_income","amount":0.029688,"disclosure":"aggregated"},
-        {"label":"Seotud osapoolte toetused/annetused","category":"other_income","amount":0.15807,"disclosure":"aggregated"},
-        {"label":"Mitteseotud osapoolte toetused/annetused","category":"other_income","amount":0.003409,"disclosure":"aggregated"},
-        {"label":"Noormängijate osavõtutasud","category":"youth_football","amount":0.33804,"disclosure":"aggregated"},
-        {"label":"Tulu liikmemaksudest","category":"member_dues","amount":0.00003,"disclosure":"aggregated"}
+        {
+          "label": "Piletitulu Eesti-siseste võistlustustel",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.012169,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Piletitulu UEFA klubisarjades osalemisest",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.003922,
+          "disclosure": "aggregated"
+        },
+        {"label":"Hooajapiletite müügitulu","category":"season_tickets","subcategory":"season_tickets","amount":0.000412,"disclosure":"aggregated"},
+        {"label":"Reklaamitulu","category":"commercial","subcategory":"sponsorship_commercial","amount":0.425282,"disclosure":"aggregated"},
+        {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.0075,"disclosure":"aggregated"},
+        {
+          "label": "Tulu mängijate üleminekutest klubist välja",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.122456,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubi sümboolikaga toodete müügitulu",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.002276,
+          "disclosure": "aggregated"
+        },
+        {"label":"Staadioni rent","category":"venue","subcategory":"stadium_other","amount":0.008322,"disclosure":"aggregated"},
+        {
+          "label": "Tulu turniiride/laagrite korraldamisest",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.051763,
+          "disclosure": "aggregated"
+        },
+        {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.009264,"disclosure":"aggregated"},
+        {"label":"UEFA toetused","category":"prize_money","subcategory":"competition_bonus","amount":0.53101,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetused","category":"other_revenue","subcategory":"other_income","amount":0.109447,"disclosure":"aggregated"},
+        {"label":"Toetus kogukonnajuht","category":"other_revenue","subcategory":"other_income","amount":0.007835,"disclosure":"aggregated"},
+        {"label":"Töötasu hüvitimise","category":"other_revenue","subcategory":"other_income","amount":0.000542,"disclosure":"aggregated"},
+        {"label":"Riiklik treenerite tööjōukulude toetus","category":"other_revenue","subcategory":"other_income","amount":0.082978,"disclosure":"aggregated"},
+        {"label":"EJL toetused noortetööle","category":"other_sporting_sections","subcategory":"youth_football","amount":0.017986,"disclosure":"aggregated"},
+        {"label":"Arengustipendiumid","category":"other_revenue","subcategory":"other_income","amount":0.029688,"disclosure":"aggregated"},
+        {"label":"Seotud osapoolte toetused/annetused","category":"other_revenue","subcategory":"other_income","amount":0.15807,"disclosure":"aggregated"},
+        {
+          "label": "Mitteseotud osapoolte toetused/annetused",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.003409,
+          "disclosure": "aggregated"
+        },
+        {"label":"Noormängijate osavõtutasud","category":"other_sporting_sections","subcategory":"youth_football","amount":0.33804,"disclosure":"aggregated"},
+        {"label":"Tulu liikmemaksudest","category":"membership","subcategory":"member_dues","amount":0.00003,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Mängijate palgakulu","category":"wages_squad","amount":-0.295507,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"wages_squad","amount":-0.099856,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstav sportlasetoetus","category":"wages_squad","amount":-0.258998,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstud stipendiumid","category":"wages_squad","amount":-0.048188,"disclosure":"aggregated"},
-        {"label":"Muu personali palgakulu","category":"admin_general_expense","amount":-0.80517,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks muu personali töötasudelt","category":"admin_general_expense","amount":-0.271481,"disclosure":"aggregated"},
-        {"label":"Kulu mängijate üleminekutest klubisse","category":"player_amortisation","amount":-0.01486,"disclosure":"aggregated"},
-        {"label":"Kulutused turvalisusele","category":"match_organisation_expense","amount":-0.018575,"disclosure":"aggregated"},
-        {"label":"Trükised jm materjalid","category":"match_organisation_expense","amount":-0.016173,"disclosure":"aggregated"},
-        {"label":"Muud klassifitseerimata kodumängu korralduskulud","category":"match_organisation_expense","amount":-0.022528,"disclosure":"aggregated"},
-        {"label":"Eesti meistrivōistluste osavōtutasu","category":"match_organisation_expense","amount":-0.010548,"disclosure":"aggregated"},
-        {"label":"Lähetuskulud","category":"match_organisation_expense","amount":-0.265711,"disclosure":"aggregated"},
-        {"label":"Turundus-, sponsorlus- ja reklaamikulud","category":"admin_general_expense","amount":-0.001575,"disclosure":"aggregated"},
-        {"label":"Klubisümboolikaga toodete omahind","category":"other_expenses","amount":-0.003121,"disclosure":"aggregated"},
+        {"label":"Mängijate palgakulu","category":"first_team_staff","subcategory":"wages_squad","amount":-0.295507,"disclosure":"aggregated"},
+        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"first_team_staff","subcategory":"wages_squad","amount":-0.099856,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstav sportlasetoetus","category":"first_team_staff","subcategory":"wages_squad","amount":-0.258998,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstud stipendiumid","category":"first_team_staff","subcategory":"wages_squad","amount":-0.048188,"disclosure":"aggregated"},
+        {"label":"Muu personali palgakulu","category":"admin_general","subcategory":"admin_general_expense","amount":-0.80517,"disclosure":"aggregated"},
+        {
+          "label": "Sotsiaalmaks muu personali töötasudelt",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.271481,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kulu mängijate üleminekutest klubisse",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.01486,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kulutused turvalisusele",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.018575,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Trükised jm materjalid",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.016173,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Muud klassifitseerimata kodumängu korralduskulud",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.022528,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Eesti meistrivōistluste osavōtutasu",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.010548,
+          "disclosure": "aggregated"
+        },
+        {"label":"Lähetuskulud","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.265711,"disclosure":"aggregated"},
+        {
+          "label": "Turundus-, sponsorlus- ja reklaamikulud",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.001575,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubisümboolikaga toodete omahind",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.003121,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.188631,
           "disclosure": "aggregated"
         },
-        {"label":"Klubi administeerimiskulud","category":"admin_general_expense","amount":-0.017954,"disclosure":"aggregated"},
-        {"label":"Meditsiinitarvikud - ja teenused","category":"other_expenses","amount":-0.016952,"disclosure":"aggregated"},
-        {"label":"Mänguvormid jm varustus","category":"other_expenses","amount":-0.080504,"disclosure":"aggregated"},
-        {"label":"Muud tegevuskulud","category":"other_expenses","amount":-0.211185,"disclosure":"aggregated"},
-        {"label":"Pōhivara kulum","category":"depreciation","amount":-0.198766,"disclosure":"aggregated"},
-        {"label":"Ärikulud","category":"other_expenses","amount":-0.000153,"disclosure":"aggregated"}
+        {"label":"Klubi administeerimiskulud","category":"admin_general","subcategory":"admin_general_expense","amount":-0.017954,"disclosure":"aggregated"},
+        {
+          "label": "Meditsiinitarvikud - ja teenused",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.016952,
+          "disclosure": "aggregated"
+        },
+        {"label":"Mänguvormid jm varustus","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.080504,"disclosure":"aggregated"},
+        {"label":"Muud tegevuskulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.211185,"disclosure":"aggregated"},
+        {"label":"Pōhivara kulum","category":"depreciation","subcategory":"depreciation","amount":-0.198766,"disclosure":"aggregated"},
+        {"label":"Ärikulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.000153,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.220509,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":1.922401,"expenses":2.846436,"net_result":-1.144518},
@@ -339,54 +661,139 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-12-31"},
       "revenue": [
-        {"label":"Piletitulu Eesti-siseste võistlustustel","category":"matchday_competition","amount":0.021306,"disclosure":"aggregated"},
-        {"label":"Piletitulu UEFA klubisarjades osalemisest","category":"matchday_competition","amount":0.006231,"disclosure":"aggregated"},
-        {"label":"Hooajapiletite müügitulu","category":"season_tickets","amount":0.001164,"disclosure":"aggregated"},
-        {"label":"Reklaamitulu","category":"sponsorship_commercial","amount":0.654495,"disclosure":"aggregated"},
-        {"label":"Tulu ülekandeõiguste müügist","category":"broadcasting","amount":0.015,"disclosure":"aggregated"},
-        {"label":"Tulu mängijate üleminekutest klubist välja","category":"player_sales","amount":0.63735,"disclosure":"aggregated"},
-        {"label":"Klubi sümboolikaga toodete müügitulu","category":"sponsorship_commercial","amount":0.005054,"disclosure":"aggregated"},
-        {"label":"Staadioni rent","category":"stadium_other","amount":0.015648,"disclosure":"aggregated"},
-        {"label":"Tulu turniiride/laagrite korraldamisest","category":"other_income","amount":0.142996,"disclosure":"aggregated"},
-        {"label":"Muud tulud","category":"other_income","amount":0.004277,"disclosure":"aggregated"},
-        {"label":"UEFA toetused","category":"competition_bonus","amount":1.669386,"disclosure":"aggregated"},
-        {"label":"Riigi ja/või KOV toetused","category":"other_income","amount":0.118966,"disclosure":"aggregated"},
-        {"label":"Toetus kogukonnajuht","category":"other_income","amount":0.00864,"disclosure":"aggregated"},
-        {"label":"Töötasu hüvitimise","category":"other_income","amount":0.003403,"disclosure":"aggregated"},
-        {"label":"Riiklik treenerite tööjōukulude toetus","category":"other_income","amount":0.086522,"disclosure":"aggregated"},
-        {"label":"EJL toetused","category":"other_income","amount":0.016757,"disclosure":"aggregated"},
-        {"label":"Arengustipendiumid","category":"other_income","amount":0.036,"disclosure":"aggregated"},
-        {"label":"Seotud osapoolte toetused/annetused","category":"other_income","amount":0.139,"disclosure":"aggregated"},
-        {"label":"Mitteseotud osapoolte toetused/annetused","category":"other_income","amount":0.016047,"disclosure":"aggregated"},
-        {"label":"Noormängijate osavõtutasud","category":"youth_football","amount":0.396549,"disclosure":"aggregated"},
-        {"label":"Tulu liikmemaksudest","category":"member_dues","amount":0.00003,"disclosure":"aggregated"}
+        {
+          "label": "Piletitulu Eesti-siseste võistlustustel",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.021306,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Piletitulu UEFA klubisarjades osalemisest",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.006231,
+          "disclosure": "aggregated"
+        },
+        {"label":"Hooajapiletite müügitulu","category":"season_tickets","subcategory":"season_tickets","amount":0.001164,"disclosure":"aggregated"},
+        {"label":"Reklaamitulu","category":"commercial","subcategory":"sponsorship_commercial","amount":0.654495,"disclosure":"aggregated"},
+        {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.015,"disclosure":"aggregated"},
+        {
+          "label": "Tulu mängijate üleminekutest klubist välja",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.63735,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubi sümboolikaga toodete müügitulu",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.005054,
+          "disclosure": "aggregated"
+        },
+        {"label":"Staadioni rent","category":"venue","subcategory":"stadium_other","amount":0.015648,"disclosure":"aggregated"},
+        {
+          "label": "Tulu turniiride/laagrite korraldamisest",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.142996,
+          "disclosure": "aggregated"
+        },
+        {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.004277,"disclosure":"aggregated"},
+        {"label":"UEFA toetused","category":"prize_money","subcategory":"competition_bonus","amount":1.669386,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetused","category":"other_revenue","subcategory":"other_income","amount":0.118966,"disclosure":"aggregated"},
+        {"label":"Toetus kogukonnajuht","category":"other_revenue","subcategory":"other_income","amount":0.00864,"disclosure":"aggregated"},
+        {"label":"Töötasu hüvitimise","category":"other_revenue","subcategory":"other_income","amount":0.003403,"disclosure":"aggregated"},
+        {"label":"Riiklik treenerite tööjōukulude toetus","category":"other_revenue","subcategory":"other_income","amount":0.086522,"disclosure":"aggregated"},
+        {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.016757,"disclosure":"aggregated"},
+        {"label":"Arengustipendiumid","category":"other_revenue","subcategory":"other_income","amount":0.036,"disclosure":"aggregated"},
+        {"label":"Seotud osapoolte toetused/annetused","category":"other_revenue","subcategory":"other_income","amount":0.139,"disclosure":"aggregated"},
+        {
+          "label": "Mitteseotud osapoolte toetused/annetused",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.016047,
+          "disclosure": "aggregated"
+        },
+        {"label":"Noormängijate osavõtutasud","category":"other_sporting_sections","subcategory":"youth_football","amount":0.396549,"disclosure":"aggregated"},
+        {"label":"Tulu liikmemaksudest","category":"membership","subcategory":"member_dues","amount":0.00003,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Mängijate palgakulu","category":"wages_squad","amount":-0.318164,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"wages_squad","amount":-0.10746,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstav sportlasetoetus","category":"wages_squad","amount":-0.375541,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstud stipendiumid","category":"wages_squad","amount":-0.04873,"disclosure":"aggregated"},
-        {"label":"Muu personali palgakulu","category":"admin_general_expense","amount":-0.871501,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks muu personali töötasudelt","category":"admin_general_expense","amount":-0.291665,"disclosure":"aggregated"},
-        {"label":"Kulu mängijate üleminekutest klubisse","category":"player_amortisation","amount":-0.136033,"disclosure":"aggregated"},
-        {"label":"Kulutused turvalisusele","category":"match_organisation_expense","amount":-0.025218,"disclosure":"aggregated"},
-        {"label":"Trükised jm materjalid","category":"match_organisation_expense","amount":-0.005978,"disclosure":"aggregated"},
-        {"label":"Muud klassifitseerimata kodumängu korralduskulud","category":"match_organisation_expense","amount":-0.016722,"disclosure":"aggregated"},
-        {"label":"Eesti meistrivōistluste osavōtutasu","category":"match_organisation_expense","amount":-0.01226,"disclosure":"aggregated"},
-        {"label":"Lähetuskulud","category":"match_organisation_expense","amount":-0.363552,"disclosure":"aggregated"},
-        {"label":"Turundus-, sponsorlus- ja reklaamikulud","category":"admin_general_expense","amount":-0.007582,"disclosure":"aggregated"},
-        {"label":"Klubisümboolikaga toodete omahind","category":"other_expenses","amount":-0.005376,"disclosure":"aggregated"},
+        {"label":"Mängijate palgakulu","category":"first_team_staff","subcategory":"wages_squad","amount":-0.318164,"disclosure":"aggregated"},
+        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"first_team_staff","subcategory":"wages_squad","amount":-0.10746,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstav sportlasetoetus","category":"first_team_staff","subcategory":"wages_squad","amount":-0.375541,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstud stipendiumid","category":"first_team_staff","subcategory":"wages_squad","amount":-0.04873,"disclosure":"aggregated"},
+        {"label":"Muu personali palgakulu","category":"admin_general","subcategory":"admin_general_expense","amount":-0.871501,"disclosure":"aggregated"},
+        {
+          "label": "Sotsiaalmaks muu personali töötasudelt",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.291665,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kulu mängijate üleminekutest klubisse",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.136033,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kulutused turvalisusele",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.025218,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Trükised jm materjalid",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.005978,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Muud klassifitseerimata kodumängu korralduskulud",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.016722,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Eesti meistrivōistluste osavōtutasu",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.01226,
+          "disclosure": "aggregated"
+        },
+        {"label":"Lähetuskulud","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.363552,"disclosure":"aggregated"},
+        {
+          "label": "Turundus-, sponsorlus- ja reklaamikulud",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.007582,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubisümboolikaga toodete omahind",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.005376,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.159836,
           "disclosure": "aggregated"
         },
-        {"label":"Klubi administeerimiskulud","category":"admin_general_expense","amount":-0.06582,"disclosure":"aggregated"},
-        {"label":"Muud kulud","category":"other_expenses","amount":-0.002948,"disclosure":"aggregated"},
-        {"label":"Muud tegevuskulud","category":"other_expenses","amount":-0.287677,"disclosure":"aggregated"},
-        {"label":"Pōhivara kulum","category":"depreciation","amount":-0.280508,"disclosure":"aggregated"},
-        {"label":"Ärikulud","category":"other_expenses","amount":-0.009594,"disclosure":"aggregated"}
+        {"label":"Klubi administeerimiskulud","category":"admin_general","subcategory":"admin_general_expense","amount":-0.06582,"disclosure":"aggregated"},
+        {"label":"Muud kulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.002948,"disclosure":"aggregated"},
+        {"label":"Muud tegevuskulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.287677,"disclosure":"aggregated"},
+        {"label":"Pōhivara kulum","category":"depreciation","subcategory":"depreciation","amount":-0.280508,"disclosure":"aggregated"},
+        {"label":"Ärikulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.009594,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.303709,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":3.994821,"expenses":3.392165,"net_result":0.301615},
@@ -401,50 +808,129 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-12-31"},
       "revenue": [
-        {"label":"Piletitulu Eesti-siseste võistlustustel","category":"matchday_competition","amount":0.018498,"disclosure":"aggregated"},
-        {"label":"Piletitulu UEFA klubisarjades osalemisest","category":"matchday_competition","amount":0.035304,"disclosure":"aggregated"},
-        {"label":"Hooajapiletite müügitulu","category":"season_tickets","amount":0.00115,"disclosure":"aggregated"},
-        {"label":"Reklaamitulu","category":"sponsorship_commercial","amount":0.265208,"disclosure":"aggregated"},
-        {"label":"Tulu ülekandeõiguste müügist","category":"broadcasting","amount":0.014,"disclosure":"aggregated"},
-        {"label":"Klubi sümboolikaga toodete müügitulu","category":"sponsorship_commercial","amount":0.006751,"disclosure":"aggregated"},
-        {"label":"Staadioni rent","category":"stadium_other","amount":0.013416,"disclosure":"aggregated"},
-        {"label":"Muud tulud","category":"other_income","amount":0.00496,"disclosure":"aggregated"},
-        {"label":"Tulu mängijate üleminekutest klubist välja","category":"player_sales","amount":0.075136,"disclosure":"aggregated"},
-        {"label":"UEFA toetused","category":"competition_bonus","amount":1.119198,"disclosure":"aggregated"},
-        {"label":"Riigi ja/või KOV toetused","category":"other_income","amount":0.141954,"disclosure":"aggregated"},
-        {"label":"Toetus kogukonnajuht","category":"other_income","amount":0.00864,"disclosure":"aggregated"},
-        {"label":"Riiklik treenerite tööjōukulude toetus","category":"other_income","amount":0.073752,"disclosure":"aggregated"},
-        {"label":"EJL toetused","category":"other_income","amount":0.050925,"disclosure":"aggregated"},
-        {"label":"Seotud osapoolte toetused/annetused","category":"other_income","amount":0.2535,"disclosure":"aggregated"},
-        {"label":"Mitteseotud osapoolte toetused/annetused","category":"other_income","amount":0.018108,"disclosure":"aggregated"},
-        {"label":"Noormängijate osavõtutasud","category":"youth_football","amount":0.575148,"disclosure":"aggregated"},
-        {"label":"Tulu liikmemaksudest","category":"member_dues","amount":0.00003,"disclosure":"aggregated"}
+        {
+          "label": "Piletitulu Eesti-siseste võistlustustel",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.018498,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Piletitulu UEFA klubisarjades osalemisest",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.035304,
+          "disclosure": "aggregated"
+        },
+        {"label":"Hooajapiletite müügitulu","category":"season_tickets","subcategory":"season_tickets","amount":0.00115,"disclosure":"aggregated"},
+        {"label":"Reklaamitulu","category":"commercial","subcategory":"sponsorship_commercial","amount":0.265208,"disclosure":"aggregated"},
+        {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.014,"disclosure":"aggregated"},
+        {
+          "label": "Klubi sümboolikaga toodete müügitulu",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.006751,
+          "disclosure": "aggregated"
+        },
+        {"label":"Staadioni rent","category":"venue","subcategory":"stadium_other","amount":0.013416,"disclosure":"aggregated"},
+        {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.00496,"disclosure":"aggregated"},
+        {
+          "label": "Tulu mängijate üleminekutest klubist välja",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.075136,
+          "disclosure": "aggregated"
+        },
+        {"label":"UEFA toetused","category":"prize_money","subcategory":"competition_bonus","amount":1.119198,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetused","category":"other_revenue","subcategory":"other_income","amount":0.141954,"disclosure":"aggregated"},
+        {"label":"Toetus kogukonnajuht","category":"other_revenue","subcategory":"other_income","amount":0.00864,"disclosure":"aggregated"},
+        {"label":"Riiklik treenerite tööjōukulude toetus","category":"other_revenue","subcategory":"other_income","amount":0.073752,"disclosure":"aggregated"},
+        {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.050925,"disclosure":"aggregated"},
+        {"label":"Seotud osapoolte toetused/annetused","category":"other_revenue","subcategory":"other_income","amount":0.2535,"disclosure":"aggregated"},
+        {
+          "label": "Mitteseotud osapoolte toetused/annetused",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.018108,
+          "disclosure": "aggregated"
+        },
+        {"label":"Noormängijate osavõtutasud","category":"other_sporting_sections","subcategory":"youth_football","amount":0.575148,"disclosure":"aggregated"},
+        {"label":"Tulu liikmemaksudest","category":"membership","subcategory":"member_dues","amount":0.00003,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Mängijate palgakulu","category":"wages_squad","amount":-0.344085,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"wages_squad","amount":-0.116593,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstav sportlasetoetus","category":"wages_squad","amount":-0.422455,"disclosure":"aggregated"},
-        {"label":"Mängijatele makstud stipendiumid","category":"wages_squad","amount":-0.0554,"disclosure":"aggregated"},
-        {"label":"Muu personali palgakulu","category":"admin_general_expense","amount":-1.026003,"disclosure":"aggregated"},
-        {"label":"Sotsiaalmaks muu personali töötasudelt","category":"admin_general_expense","amount":-0.346401,"disclosure":"aggregated"},
-        {"label":"Kulutused turvalisusele","category":"match_organisation_expense","amount":-0.030277,"disclosure":"aggregated"},
-        {"label":"Trükised jm materjalid","category":"match_organisation_expense","amount":-0.010105,"disclosure":"aggregated"},
-        {"label":"Muud klassifitseerimata kodumängu korralduskulud","category":"match_organisation_expense","amount":-0.034304,"disclosure":"aggregated"},
-        {"label":"Eesti meistrivōistluste osavōtutasu","category":"match_organisation_expense","amount":-0.01274,"disclosure":"aggregated"},
-        {"label":"Lähetuskulud","category":"match_organisation_expense","amount":-0.430603,"disclosure":"aggregated"},
-        {"label":"Turundus-, sponsorlus- ja reklaamikulud","category":"admin_general_expense","amount":-0.008768,"disclosure":"aggregated"},
-        {"label":"Klubisümboolikaga toodete omahind","category":"other_expenses","amount":-0.01079,"disclosure":"aggregated"},
+        {"label":"Mängijate palgakulu","category":"first_team_staff","subcategory":"wages_squad","amount":-0.344085,"disclosure":"aggregated"},
+        {"label":"Sotsiaalmaks mängijate töötasudelt","category":"first_team_staff","subcategory":"wages_squad","amount":-0.116593,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstav sportlasetoetus","category":"first_team_staff","subcategory":"wages_squad","amount":-0.422455,"disclosure":"aggregated"},
+        {"label":"Mängijatele makstud stipendiumid","category":"first_team_staff","subcategory":"wages_squad","amount":-0.0554,"disclosure":"aggregated"},
+        {"label":"Muu personali palgakulu","category":"admin_general","subcategory":"admin_general_expense","amount":-1.026003,"disclosure":"aggregated"},
+        {
+          "label": "Sotsiaalmaks muu personali töötasudelt",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.346401,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kulutused turvalisusele",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.030277,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Trükised jm materjalid",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.010105,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Muud klassifitseerimata kodumängu korralduskulud",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.034304,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Eesti meistrivōistluste osavōtutasu",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.01274,
+          "disclosure": "aggregated"
+        },
+        {"label":"Lähetuskulud","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.430603,"disclosure":"aggregated"},
+        {
+          "label": "Turundus-, sponsorlus- ja reklaamikulud",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.008768,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubisümboolikaga toodete omahind",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.01079,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.178571,
           "disclosure": "aggregated"
         },
-        {"label":"Klubi administeerimiskulud","category":"admin_general_expense","amount":-0.049258,"disclosure":"aggregated"},
-        {"label":"Muud tegevuskulud","category":"other_expenses","amount":-0.307809,"disclosure":"aggregated"},
-        {"label":"Kulu mängijate üleminekutest klubisse","category":"player_amortisation","amount":-0.104323,"disclosure":"aggregated"},
-        {"label":"Pōhivara kulum","category":"depreciation","amount":-0.135535,"disclosure":"aggregated"},
-        {"label":"Ärikulud","category":"other_expenses","amount":-0.000016,"disclosure":"aggregated"}
+        {"label":"Klubi administeerimiskulud","category":"admin_general","subcategory":"admin_general_expense","amount":-0.049258,"disclosure":"aggregated"},
+        {"label":"Muud tegevuskulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.307809,"disclosure":"aggregated"},
+        {
+          "label": "Kulu mängijate üleminekutest klubisse",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.104323,
+          "disclosure": "aggregated"
+        },
+        {"label":"Pōhivara kulum","category":"depreciation","subcategory":"depreciation","amount":-0.135535,"disclosure":"aggregated"},
+        {"label":"Ärikulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.000016,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.271253,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":2.675678,"expenses":3.624036,"net_result":-1.219611},

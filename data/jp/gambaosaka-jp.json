@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "JP",
     "reporting_currency": "JPY",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -34,11 +35,12 @@
       "management_id": "temporada2025",
       "fx": {"ref":"JPY@2025-12-31"},
       "revenue": [
-        {"label":"スポンサー収入 (Ingreso por sponsors)","category":"sponsorship_commercial","amount":2292,"disclosure":"detailed"},
-        {"label":"入場料収入 (Ingreso por entradas/gate)","category":"matchday_competition","amount":1451,"disclosure":"detailed"},
+        {"label":"スポンサー収入 (Ingreso por sponsors)","category":"commercial","subcategory":"sponsorship_commercial","amount":2292,"disclosure":"detailed"},
+        {"label":"入場料収入 (Ingreso por entradas/gate)","category":"matchday","subcategory":"matchday_competition","amount":1451,"disclosure":"detailed"},
         {
           "label": "Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 5074,
           "disclosure": "aggregated_residual"
         }

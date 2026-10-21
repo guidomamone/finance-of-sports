@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -52,41 +53,125 @@
       "management_id": "muzzi",
       "fx": {"ref":"BRL@2023-12-31","source":"market_close"},
       "revenue": [
-        {"label":"Receitas de bilheteria","category":"matchday_competition","amount":5.069,"disclosure":"detailed"},
-        {"label":"Receitas de transmissão e imagem/Premiação","category":"broadcasting","amount":67.453,"disclosure":"detailed"},
-        {"label":"Outras receitas atividades esportivas (Timemania)","category":"other_income","amount":0.196,"disclosure":"detailed"},
-        {"label":"Receitas com sócio torcedor","category":"member_dues","amount":5.971,"disclosure":"detailed"},
-        {"label":"Receitas com patrocínios/marketing","category":"sponsorship_commercial","amount":7.749,"disclosure":"detailed"},
-        {"label":"(-) Impostos e contribuições","category":"other_income","amount":-11.095,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais (venda/empréstimo de direitos de jogadores)","category":"player_sales","amount":0.229,"disclosure":"detailed"}
+        {"label":"Receitas de bilheteria","category":"matchday","subcategory":"matchday_competition","amount":5.069,"disclosure":"detailed"},
+        {"label":"Receitas de transmissão e imagem/Premiação","category":"media_rights","subcategory":"broadcasting","amount":67.453,"disclosure":"detailed"},
+        {
+          "label": "Outras receitas atividades esportivas (Timemania)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.196,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas com sócio torcedor","category":"membership","subcategory":"member_dues","amount":5.971,"disclosure":"detailed"},
+        {"label":"Receitas com patrocínios/marketing","category":"commercial","subcategory":"sponsorship_commercial","amount":7.749,"disclosure":"detailed"},
+        {"label":"(-) Impostos e contribuições","category":"other_revenue","subcategory":"other_income","amount":-11.095,"disclosure":"detailed"},
+        {
+          "label": "Outras receitas operacionais (venda/empréstimo de direitos de jogadores)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.229,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Direito de imagem atletas / comissão técnica","category":"wages_squad","amount":-11.036,"disclosure":"detailed"},
-        {"label":"Salários / encargos sociais (futebol)","category":"wages_squad","amount":-32.418,"disclosure":"detailed"},
-        {"label":"Amortização dos direitos econômicos","category":"player_amortisation","amount":-16.904,"disclosure":"detailed"},
-        {"label":"Custo com atletas negociados","category":"other_expenses","amount":-1.567,"disclosure":"detailed"},
-        {"label":"Despesas com competições","category":"match_organisation_expense","amount":-5.332,"disclosure":"detailed"},
-        {"label":"Outros custos com futebol","category":"wages_squad","amount":-3.453,"disclosure":"detailed"},
-        {"label":"Energia elétrica (futebol)","category":"admin_general_expense","amount":-0.076,"disclosure":"detailed"},
-        {"label":"Impostos e taxas (futebol)","category":"admin_general_expense","amount":-0.154,"disclosure":"detailed"},
-        {"label":"Lanches e refeições","category":"wages_squad","amount":-0.533,"disclosure":"detailed"},
-        {"label":"Licenciamento de Software (futebol)","category":"admin_general_expense","amount":-0.614,"disclosure":"detailed"},
-        {"label":"Manutenção – equipamentos (futebol)","category":"admin_general_expense","amount":-0.029,"disclosure":"detailed"},
-        {"label":"Manutenção – imóveis (futebol)","category":"admin_general_expense","amount":-1.833,"disclosure":"detailed"},
-        {"label":"Marketing/Publicidade/Mídias Sociais (futebol)","category":"admin_general_expense","amount":-0.178,"disclosure":"detailed"},
-        {"label":"Materiais de escritório e expediente (futebol)","category":"admin_general_expense","amount":-0.122,"disclosure":"detailed"},
-        {"label":"Materiais esportivos","category":"wages_squad","amount":-0.714,"disclosure":"detailed"},
-        {"label":"Materiais médico-cirúrgicos e medicamento","category":"wages_squad","amount":-0.061,"disclosure":"detailed"},
-        {"label":"Outros custos gerais (futebol)","category":"admin_general_expense","amount":-3.932,"disclosure":"detailed"},
-        {"label":"Serviços médicos/exames PJ","category":"wages_squad","amount":-0.144,"disclosure":"detailed"},
-        {"label":"Salários / encargos sociais (atividades patrimoniais)","category":"admin_general_expense","amount":-0.592,"disclosure":"detailed"},
-        {"label":"Ações, acordos e Indenizações trabalhistas (patrimonial)","category":"admin_general_expense","amount":-0.013,"disclosure":"detailed"},
-        {"label":"Manutenção – equipamentos (patrimonial)","category":"admin_general_expense","amount":-0.032,"disclosure":"detailed"},
-        {"label":"Outros custos gerais (patrimonial)","category":"admin_general_expense","amount":-0.027,"disclosure":"detailed"},
-        {"label":"Despesas administrativas","category":"admin_general_expense","amount":-9.23,"disclosure":"detailed"},
-        {"label":"Despesas com depreciação","category":"depreciation","amount":-0.085,"disclosure":"detailed"},
-        {"label":"Despesas com pessoal (G&A)","category":"admin_general_expense","amount":-2.103,"disclosure":"detailed"},
-        {"label":"Despesas indenizações trabalhistas (G&A)","category":"admin_general_expense","amount":-0.053,"disclosure":"detailed"}
+        {
+          "label": "Direito de imagem atletas / comissão técnica",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -11.036,
+          "disclosure": "detailed"
+        },
+        {"label":"Salários / encargos sociais (futebol)","category":"first_team_staff","subcategory":"wages_squad","amount":-32.418,"disclosure":"detailed"},
+        {
+          "label": "Amortização dos direitos econômicos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -16.904,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo com atletas negociados","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.567,"disclosure":"detailed"},
+        {"label":"Despesas com competições","category":"match_operations","subcategory":"match_organisation_expense","amount":-5.332,"disclosure":"detailed"},
+        {"label":"Outros custos com futebol","category":"first_team_staff","subcategory":"wages_squad","amount":-3.453,"disclosure":"detailed"},
+        {"label":"Energia elétrica (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.076,"disclosure":"detailed"},
+        {"label":"Impostos e taxas (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.154,"disclosure":"detailed"},
+        {"label":"Lanches e refeições","category":"first_team_staff","subcategory":"wages_squad","amount":-0.533,"disclosure":"detailed"},
+        {
+          "label": "Licenciamento de Software (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.614,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Manutenção – equipamentos (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.029,
+          "disclosure": "detailed"
+        },
+        {"label":"Manutenção – imóveis (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-1.833,"disclosure":"detailed"},
+        {
+          "label": "Marketing/Publicidade/Mídias Sociais (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.178,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Materiais de escritório e expediente (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.122,
+          "disclosure": "detailed"
+        },
+        {"label":"Materiais esportivos","category":"first_team_staff","subcategory":"wages_squad","amount":-0.714,"disclosure":"detailed"},
+        {
+          "label": "Materiais médico-cirúrgicos e medicamento",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.061,
+          "disclosure": "detailed"
+        },
+        {"label":"Outros custos gerais (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-3.932,"disclosure":"detailed"},
+        {"label":"Serviços médicos/exames PJ","category":"first_team_staff","subcategory":"wages_squad","amount":-0.144,"disclosure":"detailed"},
+        {
+          "label": "Salários / encargos sociais (atividades patrimoniais)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.592,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Ações, acordos e Indenizações trabalhistas (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.013,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Manutenção – equipamentos (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.032,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros custos gerais (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.027,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas administrativas","category":"admin_general","subcategory":"admin_general_expense","amount":-9.23,"disclosure":"detailed"},
+        {"label":"Despesas com depreciação","category":"depreciation","subcategory":"depreciation","amount":-0.085,"disclosure":"detailed"},
+        {"label":"Despesas com pessoal (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-2.103,"disclosure":"detailed"},
+        {
+          "label": "Despesas indenizações trabalhistas (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.053,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-25.52,"tax":0,"gross_debt":465.387,"cash":191.231},
       "official_totals": {"revenue":75.572,"expenses":91.235,"net_result":-41.183}
@@ -100,60 +185,210 @@
       "management_id": "muzzi",
       "fx": {"ref":"BRL@2024-12-31","source":"market_close"},
       "revenue": [
-        {"label":"Receitas de bilheteria","category":"matchday_competition","amount":80.684,"disclosure":"detailed"},
-        {"label":"Receitas de transmissão e imagem/Premiação","category":"broadcasting","amount":247.742,"disclosure":"detailed"},
-        {"label":"Outras receitas atividades esportivas (Timemania)","category":"other_income","amount":11.223,"disclosure":"detailed"},
-        {"label":"Receitas com sócio torcedor","category":"member_dues","amount":32.193,"disclosure":"detailed"},
-        {"label":"Receitas com patrocínios/marketing","category":"sponsorship_commercial","amount":58.463,"disclosure":"detailed"},
-        {"label":"Receitas Patrimoniais","category":"other_income","amount":7.48,"disclosure":"detailed"},
-        {"label":"Receitas com Projetos","category":"other_income","amount":0.196,"disclosure":"detailed"},
-        {"label":"Receita De Venda No Manto","category":"sponsorship_commercial","amount":1.003,"disclosure":"detailed"},
-        {"label":"(-) Impostos e contribuições","category":"other_income","amount":-40.587,"disclosure":"detailed"},
-        {"label":"Custo de mercadorias e produtos (custo do manto vendido)","category":"admin_general_expense","amount":-1.103,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais — Empréstimos atletas","category":"player_sales","amount":0.326,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais — Vendas de atletas","category":"player_sales","amount":146.837,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais — Outras receitas c/transf. atletas","category":"player_sales","amount":35.675,"disclosure":"detailed"}
+        {"label":"Receitas de bilheteria","category":"matchday","subcategory":"matchday_competition","amount":80.684,"disclosure":"detailed"},
+        {"label":"Receitas de transmissão e imagem/Premiação","category":"media_rights","subcategory":"broadcasting","amount":247.742,"disclosure":"detailed"},
+        {
+          "label": "Outras receitas atividades esportivas (Timemania)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 11.223,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas com sócio torcedor","category":"membership","subcategory":"member_dues","amount":32.193,"disclosure":"detailed"},
+        {"label":"Receitas com patrocínios/marketing","category":"commercial","subcategory":"sponsorship_commercial","amount":58.463,"disclosure":"detailed"},
+        {"label":"Receitas Patrimoniais","category":"other_revenue","subcategory":"other_income","amount":7.48,"disclosure":"detailed"},
+        {"label":"Receitas com Projetos","category":"other_revenue","subcategory":"other_income","amount":0.196,"disclosure":"detailed"},
+        {"label":"Receita De Venda No Manto","category":"commercial","subcategory":"sponsorship_commercial","amount":1.003,"disclosure":"detailed"},
+        {"label":"(-) Impostos e contribuições","category":"other_revenue","subcategory":"other_income","amount":-40.587,"disclosure":"detailed"},
+        {
+          "label": "Custo de mercadorias e produtos (custo do manto vendido)",
+          "category": "other_revenue",
+          "subcategory": "admin_general_expense",
+          "amount": -1.103,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras receitas operacionais — Empréstimos atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.326,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras receitas operacionais — Vendas de atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 146.837,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras receitas operacionais — Outras receitas c/transf. atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 35.675,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Direito de imagem atletas / comissão técnica","category":"wages_squad","amount":-79.72,"disclosure":"detailed"},
-        {"label":"Salários / encargos sociais (futebol)","category":"wages_squad","amount":-243.646,"disclosure":"detailed"},
-        {"label":"Amortização dos direitos econômicos","category":"player_amortisation","amount":-112.578,"disclosure":"detailed"},
-        {"label":"Custo com atletas negociados","category":"other_expenses","amount":-66.898,"disclosure":"detailed"},
-        {"label":"Despesas com competições","category":"match_organisation_expense","amount":-50.723,"disclosure":"detailed"},
-        {"label":"Outros custos com futebol","category":"wages_squad","amount":-16.047,"disclosure":"detailed"},
-        {"label":"Custo Sócio Torcedor","category":"admin_general_expense","amount":-0.107,"disclosure":"detailed"},
-        {"label":"Energia elétrica (futebol)","category":"admin_general_expense","amount":-0.652,"disclosure":"detailed"},
-        {"label":"Impostos e taxas (futebol)","category":"admin_general_expense","amount":-0.49,"disclosure":"detailed"},
-        {"label":"Lanches e refeições","category":"wages_squad","amount":-4.184,"disclosure":"detailed"},
-        {"label":"Licenciamento de Software (futebol)","category":"admin_general_expense","amount":-3.617,"disclosure":"detailed"},
-        {"label":"Manutenção – equipamentos (futebol)","category":"admin_general_expense","amount":-1.339,"disclosure":"detailed"},
-        {"label":"Manutenção – imóveis (futebol)","category":"admin_general_expense","amount":-1.651,"disclosure":"detailed"},
-        {"label":"Marketing/Publicidade/Mídias Sociais (futebol)","category":"admin_general_expense","amount":-1.744,"disclosure":"detailed"},
-        {"label":"Materiais de escritório e expediente (futebol)","category":"admin_general_expense","amount":-0.522,"disclosure":"detailed"},
-        {"label":"Materiais esportivos","category":"wages_squad","amount":-6.3,"disclosure":"detailed"},
-        {"label":"Materiais médico-cirúrgicos e medicamento","category":"wages_squad","amount":-0.906,"disclosure":"detailed"},
-        {"label":"Outros custos gerais (futebol)","category":"admin_general_expense","amount":-20.035,"disclosure":"detailed"},
-        {"label":"Salários / encargos sociais (atividades patrimoniais)","category":"admin_general_expense","amount":-3.707,"disclosure":"detailed"},
-        {"label":"Ações, acordos e Indenizações trabalhistas (patrimonial)","category":"admin_general_expense","amount":-0.093,"disclosure":"detailed"},
-        {"label":"Impostos e taxas (patrimonial)","category":"admin_general_expense","amount":-0.017,"disclosure":"detailed"},
-        {"label":"Lanches e refeições (patrimonial)","category":"admin_general_expense","amount":-0.054,"disclosure":"detailed"},
-        {"label":"Licenciamento de Software (patrimonial)","category":"admin_general_expense","amount":-2.204,"disclosure":"detailed"},
-        {"label":"Manutenção – equipamentos (patrimonial)","category":"admin_general_expense","amount":-5.89,"disclosure":"detailed"},
-        {"label":"Manutenção – imóveis (patrimonial)","category":"admin_general_expense","amount":-0.303,"disclosure":"detailed"},
-        {"label":"Marketing/Publicidade/Mídias Sociais (patrimonial)","category":"admin_general_expense","amount":-2.527,"disclosure":"detailed"},
-        {"label":"Assessorias e consultorias (patrimonial)","category":"admin_general_expense","amount":-3.323,"disclosure":"detailed"},
-        {"label":"Serviços de vigilância e segurança (patrimonial)","category":"admin_general_expense","amount":-3.048,"disclosure":"detailed"},
-        {"label":"Outros custos gerais (patrimonial)","category":"admin_general_expense","amount":-3.081,"disclosure":"detailed"},
-        {"label":"Materiais de escritório e expediente (patrimonial)","category":"admin_general_expense","amount":-0.049,"disclosure":"detailed"},
-        {"label":"Materiais esportivos (patrimonial)","category":"admin_general_expense","amount":-0.081,"disclosure":"detailed"},
-        {"label":"Materiais medico-cirúrgicos e medicamento (patrimonial)","category":"admin_general_expense","amount":-0.001,"disclosure":"detailed"},
-        {"label":"Custo com projetos","category":"other_expenses","amount":-1.159,"disclosure":"detailed"},
-        {"label":"Despesas administrativas","category":"admin_general_expense","amount":-21.681,"disclosure":"detailed"},
-        {"label":"Despesas com depreciação","category":"depreciation","amount":-0.629,"disclosure":"detailed"},
-        {"label":"Despesas com pessoal (G&A)","category":"admin_general_expense","amount":-12.853,"disclosure":"detailed"},
-        {"label":"Despesas indenizações trabalhistas (G&A)","category":"admin_general_expense","amount":-0.429,"disclosure":"detailed"},
-        {"label":"Despesas com contingências","category":"admin_general_expense","amount":-15.532,"disclosure":"detailed"},
-        {"label":"Resultado equivalência patrimonial","category":"exceptional_items","amount":-51.738,"disclosure":"detailed"}
+        {
+          "label": "Direito de imagem atletas / comissão técnica",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -79.72,
+          "disclosure": "detailed"
+        },
+        {"label":"Salários / encargos sociais (futebol)","category":"first_team_staff","subcategory":"wages_squad","amount":-243.646,"disclosure":"detailed"},
+        {
+          "label": "Amortização dos direitos econômicos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -112.578,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo com atletas negociados","category":"other_operating_expenses","subcategory":"other_expenses","amount":-66.898,"disclosure":"detailed"},
+        {"label":"Despesas com competições","category":"match_operations","subcategory":"match_organisation_expense","amount":-50.723,"disclosure":"detailed"},
+        {"label":"Outros custos com futebol","category":"first_team_staff","subcategory":"wages_squad","amount":-16.047,"disclosure":"detailed"},
+        {"label":"Custo Sócio Torcedor","category":"admin_general","subcategory":"admin_general_expense","amount":-0.107,"disclosure":"detailed"},
+        {"label":"Energia elétrica (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.652,"disclosure":"detailed"},
+        {"label":"Impostos e taxas (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.49,"disclosure":"detailed"},
+        {"label":"Lanches e refeições","category":"first_team_staff","subcategory":"wages_squad","amount":-4.184,"disclosure":"detailed"},
+        {
+          "label": "Licenciamento de Software (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.617,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Manutenção – equipamentos (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.339,
+          "disclosure": "detailed"
+        },
+        {"label":"Manutenção – imóveis (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-1.651,"disclosure":"detailed"},
+        {
+          "label": "Marketing/Publicidade/Mídias Sociais (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.744,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Materiais de escritório e expediente (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.522,
+          "disclosure": "detailed"
+        },
+        {"label":"Materiais esportivos","category":"first_team_staff","subcategory":"wages_squad","amount":-6.3,"disclosure":"detailed"},
+        {
+          "label": "Materiais médico-cirúrgicos e medicamento",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.906,
+          "disclosure": "detailed"
+        },
+        {"label":"Outros custos gerais (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-20.035,"disclosure":"detailed"},
+        {
+          "label": "Salários / encargos sociais (atividades patrimoniais)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.707,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Ações, acordos e Indenizações trabalhistas (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.093,
+          "disclosure": "detailed"
+        },
+        {"label":"Impostos e taxas (patrimonial)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.017,"disclosure":"detailed"},
+        {"label":"Lanches e refeições (patrimonial)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.054,"disclosure":"detailed"},
+        {
+          "label": "Licenciamento de Software (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.204,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Manutenção – equipamentos (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.89,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Manutenção – imóveis (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.303,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Marketing/Publicidade/Mídias Sociais (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.527,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Assessorias e consultorias (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.323,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de vigilância e segurança (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.048,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros custos gerais (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.081,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Materiais de escritório e expediente (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.049,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Materiais esportivos (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.081,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Materiais medico-cirúrgicos e medicamento (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.001,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo com projetos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.159,"disclosure":"detailed"},
+        {"label":"Despesas administrativas","category":"admin_general","subcategory":"admin_general_expense","amount":-21.681,"disclosure":"detailed"},
+        {"label":"Despesas com depreciação","category":"depreciation","subcategory":"depreciation","amount":-0.629,"disclosure":"detailed"},
+        {"label":"Despesas com pessoal (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-12.853,"disclosure":"detailed"},
+        {
+          "label": "Despesas indenizações trabalhistas (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.429,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas com contingências","category":"admin_general","subcategory":"admin_general_expense","amount":-15.532,"disclosure":"detailed"},
+        {"label":"Resultado equivalência patrimonial","category":"exceptional","subcategory":"exceptional_items","amount":-51.738,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-139.928,"tax":0,"gross_debt":554.702,"cash":3.382},
       "official_totals": {"revenue":580.132,"expenses":687.82,"net_result":-299.354}
@@ -167,70 +402,216 @@
       "management_id": "pedrodaniel",
       "fx": {"ref":"BRL@2025-12-31","source":"market_close"},
       "revenue": [
-        {"label":"Receitas de bilheteria","category":"matchday_competition","amount":50.868,"disclosure":"detailed"},
-        {"label":"Receitas de transmissão e imagem/Premiação","category":"broadcasting","amount":183.519,"disclosure":"detailed"},
-        {"label":"Outras receitas atividades esportivas (Timemania)","category":"other_income","amount":77.064,"disclosure":"detailed"},
-        {"label":"Receitas com sócio torcedor","category":"member_dues","amount":36.538,"disclosure":"detailed"},
-        {"label":"Receitas com patrocínios/marketing","category":"sponsorship_commercial","amount":47.819,"disclosure":"detailed"},
-        {"label":"Receitas Patrimoniais","category":"other_income","amount":12.662,"disclosure":"detailed"},
-        {"label":"Receita De Venda No Manto","category":"sponsorship_commercial","amount":10.393,"disclosure":"detailed"},
+        {"label":"Receitas de bilheteria","category":"matchday","subcategory":"matchday_competition","amount":50.868,"disclosure":"detailed"},
+        {"label":"Receitas de transmissão e imagem/Premiação","category":"media_rights","subcategory":"broadcasting","amount":183.519,"disclosure":"detailed"},
+        {
+          "label": "Outras receitas atividades esportivas (Timemania)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 77.064,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas com sócio torcedor","category":"membership","subcategory":"member_dues","amount":36.538,"disclosure":"detailed"},
+        {"label":"Receitas com patrocínios/marketing","category":"commercial","subcategory":"sponsorship_commercial","amount":47.819,"disclosure":"detailed"},
+        {"label":"Receitas Patrimoniais","category":"other_revenue","subcategory":"other_income","amount":12.662,"disclosure":"detailed"},
+        {"label":"Receita De Venda No Manto","category":"commercial","subcategory":"sponsorship_commercial","amount":10.393,"disclosure":"detailed"},
         {
           "label": "Outras receitas (cessão parcial de direitos de transmissão futuros, Temporadas 2030-2074 — Nota 26a, ver comentario de cabecera)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 98.056,
           "disclosure": "detailed"
         },
         {
           "label": "(-) Impostos e contribuições (ver nota de redondeo en comentario de cabecera: 50,637 en vez del 50,537 impreso en la línea, para que la suma cierre contra el subtotal impreso de Deduções da receita, -55,124)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": -50.637,
           "disclosure": "detailed"
         },
-        {"label":"Custo de mercadorias e produtos (custo do manto vendido)","category":"admin_general_expense","amount":-4.487,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais — Empréstimos atletas","category":"player_sales","amount":2.433,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais — Vendas de atletas","category":"player_sales","amount":174.046,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais — Outras receitas c/transf. atletas","category":"player_sales","amount":26.486,"disclosure":"detailed"}
+        {
+          "label": "Custo de mercadorias e produtos (custo do manto vendido)",
+          "category": "other_revenue",
+          "subcategory": "admin_general_expense",
+          "amount": -4.487,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras receitas operacionais — Empréstimos atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 2.433,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras receitas operacionais — Vendas de atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 174.046,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras receitas operacionais — Outras receitas c/transf. atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 26.486,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Direito de imagem atletas / comissão técnica","category":"wages_squad","amount":-126.064,"disclosure":"detailed"},
-        {"label":"Salários / encargos sociais (futebol)","category":"wages_squad","amount":-236.374,"disclosure":"detailed"},
-        {"label":"Amortização dos direitos econômicos","category":"player_amortisation","amount":-118.554,"disclosure":"detailed"},
-        {"label":"Custo com atletas negociados","category":"other_expenses","amount":-30.979,"disclosure":"detailed"},
-        {"label":"Despesas com competições","category":"match_organisation_expense","amount":-60.3,"disclosure":"detailed"},
-        {"label":"Outros custos com futebol","category":"wages_squad","amount":-9.292,"disclosure":"detailed"},
-        {"label":"Custo Sócio Torcedor","category":"admin_general_expense","amount":-3.038,"disclosure":"detailed"},
-        {"label":"Energia elétrica (futebol)","category":"admin_general_expense","amount":-0.554,"disclosure":"detailed"},
-        {"label":"Impostos e taxas (futebol)","category":"admin_general_expense","amount":-1.086,"disclosure":"detailed"},
-        {"label":"Lanches e refeições","category":"wages_squad","amount":-4.134,"disclosure":"detailed"},
-        {"label":"Licenciamento de Software (futebol)","category":"admin_general_expense","amount":-3.841,"disclosure":"detailed"},
-        {"label":"Manutenção – equipamentos (futebol)","category":"admin_general_expense","amount":-0.68,"disclosure":"detailed"},
-        {"label":"Manutenção – imóveis (futebol)","category":"admin_general_expense","amount":-1.935,"disclosure":"detailed"},
-        {"label":"Marketing/Publicidade/Mídias Sociais (futebol)","category":"admin_general_expense","amount":-0.614,"disclosure":"detailed"},
-        {"label":"Materiais de escritório e expediente (futebol)","category":"admin_general_expense","amount":-0.116,"disclosure":"detailed"},
-        {"label":"Materiais esportivos","category":"wages_squad","amount":-4.106,"disclosure":"detailed"},
-        {"label":"Materiais médico-cirúrgicos e medicamento","category":"wages_squad","amount":-1.442,"disclosure":"detailed"},
-        {"label":"Outros custos gerais (futebol)","category":"admin_general_expense","amount":-21.702,"disclosure":"detailed"},
-        {"label":"Serviços médicos/exames PJ","category":"wages_squad","amount":-0.002,"disclosure":"detailed"},
-        {"label":"Salários / encargos sociais (atividades patrimoniais)","category":"admin_general_expense","amount":-5.025,"disclosure":"detailed"},
-        {"label":"Ações, acordos e Indenizações trabalhistas (patrimonial)","category":"admin_general_expense","amount":-0.015,"disclosure":"detailed"},
-        {"label":"Impostos e taxas (patrimonial)","category":"admin_general_expense","amount":-0.049,"disclosure":"detailed"},
-        {"label":"Lanches e refeições (patrimonial)","category":"admin_general_expense","amount":-0.024,"disclosure":"detailed"},
-        {"label":"Licenciamento de software (patrimonial)","category":"admin_general_expense","amount":-5.464,"disclosure":"detailed"},
-        {"label":"Manutenção – equipamentos (patrimonial)","category":"admin_general_expense","amount":-9.19,"disclosure":"detailed"},
-        {"label":"Manutenção – imóveis (patrimonial)","category":"admin_general_expense","amount":-1.109,"disclosure":"detailed"},
-        {"label":"Marketing/publicidade/mídias sociais (patrimonial)","category":"admin_general_expense","amount":-1.129,"disclosure":"detailed"},
-        {"label":"Assessorias e consultorias (patrimonial)","category":"admin_general_expense","amount":-3.957,"disclosure":"detailed"},
-        {"label":"Serviços de vigilância e segurança (patrimonial)","category":"admin_general_expense","amount":-3.887,"disclosure":"detailed"},
-        {"label":"Outros custos gerais (patrimonial)","category":"admin_general_expense","amount":-2.951,"disclosure":"detailed"},
-        {"label":"Materiais de escritório e expediente (patrimonial)","category":"admin_general_expense","amount":-0.021,"disclosure":"detailed"},
-        {"label":"Materiais esportivos (patrimonial)","category":"admin_general_expense","amount":-0.007,"disclosure":"detailed"},
-        {"label":"Custo com projetos","category":"other_expenses","amount":-0.852,"disclosure":"detailed"},
-        {"label":"Despesas administrativas","category":"admin_general_expense","amount":-26.74,"disclosure":"detailed"},
-        {"label":"Despesas com depreciação","category":"depreciation","amount":-1.189,"disclosure":"detailed"},
-        {"label":"Despesas com pessoal (G&A)","category":"admin_general_expense","amount":-13.191,"disclosure":"detailed"},
-        {"label":"Despesas indenizações trabalhistas (G&A)","category":"admin_general_expense","amount":-0.137,"disclosure":"detailed"},
-        {"label":"Despesas com contingências","category":"admin_general_expense","amount":-6.284,"disclosure":"detailed"},
-        {"label":"Resultado equivalência patrimonial","category":"exceptional_items","amount":-180.32,"disclosure":"detailed"}
+        {
+          "label": "Direito de imagem atletas / comissão técnica",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -126.064,
+          "disclosure": "detailed"
+        },
+        {"label":"Salários / encargos sociais (futebol)","category":"first_team_staff","subcategory":"wages_squad","amount":-236.374,"disclosure":"detailed"},
+        {
+          "label": "Amortização dos direitos econômicos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -118.554,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo com atletas negociados","category":"other_operating_expenses","subcategory":"other_expenses","amount":-30.979,"disclosure":"detailed"},
+        {"label":"Despesas com competições","category":"match_operations","subcategory":"match_organisation_expense","amount":-60.3,"disclosure":"detailed"},
+        {"label":"Outros custos com futebol","category":"first_team_staff","subcategory":"wages_squad","amount":-9.292,"disclosure":"detailed"},
+        {"label":"Custo Sócio Torcedor","category":"admin_general","subcategory":"admin_general_expense","amount":-3.038,"disclosure":"detailed"},
+        {"label":"Energia elétrica (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.554,"disclosure":"detailed"},
+        {"label":"Impostos e taxas (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-1.086,"disclosure":"detailed"},
+        {"label":"Lanches e refeições","category":"first_team_staff","subcategory":"wages_squad","amount":-4.134,"disclosure":"detailed"},
+        {
+          "label": "Licenciamento de Software (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.841,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Manutenção – equipamentos (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.68,
+          "disclosure": "detailed"
+        },
+        {"label":"Manutenção – imóveis (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-1.935,"disclosure":"detailed"},
+        {
+          "label": "Marketing/Publicidade/Mídias Sociais (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.614,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Materiais de escritório e expediente (futebol)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.116,
+          "disclosure": "detailed"
+        },
+        {"label":"Materiais esportivos","category":"first_team_staff","subcategory":"wages_squad","amount":-4.106,"disclosure":"detailed"},
+        {
+          "label": "Materiais médico-cirúrgicos e medicamento",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -1.442,
+          "disclosure": "detailed"
+        },
+        {"label":"Outros custos gerais (futebol)","category":"admin_general","subcategory":"admin_general_expense","amount":-21.702,"disclosure":"detailed"},
+        {"label":"Serviços médicos/exames PJ","category":"first_team_staff","subcategory":"wages_squad","amount":-0.002,"disclosure":"detailed"},
+        {
+          "label": "Salários / encargos sociais (atividades patrimoniais)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.025,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Ações, acordos e Indenizações trabalhistas (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.015,
+          "disclosure": "detailed"
+        },
+        {"label":"Impostos e taxas (patrimonial)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.049,"disclosure":"detailed"},
+        {"label":"Lanches e refeições (patrimonial)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.024,"disclosure":"detailed"},
+        {
+          "label": "Licenciamento de software (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.464,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Manutenção – equipamentos (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -9.19,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Manutenção – imóveis (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.109,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Marketing/publicidade/mídias sociais (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.129,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Assessorias e consultorias (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.957,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de vigilância e segurança (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.887,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outros custos gerais (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.951,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Materiais de escritório e expediente (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.021,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Materiais esportivos (patrimonial)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.007,
+          "disclosure": "detailed"
+        },
+        {"label":"Custo com projetos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.852,"disclosure":"detailed"},
+        {"label":"Despesas administrativas","category":"admin_general","subcategory":"admin_general_expense","amount":-26.74,"disclosure":"detailed"},
+        {"label":"Despesas com depreciação","category":"depreciation","subcategory":"depreciation","amount":-1.189,"disclosure":"detailed"},
+        {"label":"Despesas com pessoal (G&A)","category":"admin_general","subcategory":"admin_general_expense","amount":-13.191,"disclosure":"detailed"},
+        {
+          "label": "Despesas indenizações trabalhistas (G&A)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.137,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas com contingências","category":"admin_general","subcategory":"admin_general_expense","amount":-6.284,"disclosure":"detailed"},
+        {"label":"Resultado equivalência patrimonial","category":"exceptional","subcategory":"exceptional_items","amount":-180.32,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-660.515,"tax":0,"gross_debt":721.757,"cash":5.939},
       "official_totals": {"revenue":664.76,"expenses":706.034,"net_result":-882.109}

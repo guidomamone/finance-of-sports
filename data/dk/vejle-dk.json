@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DK",
     "reporting_currency": "DKK",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -33,7 +34,8 @@
       "revenue": [
         {
           "label": "Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa explícitamente la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 47.596,
           "disclosure": "aggregated"
         }
@@ -41,21 +43,30 @@
       "expenses": [
         {
           "label": "Personaleomkostninger (Lønninger + Pensioner + Andre omkostninger til social sikring)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -48.591,
           "disclosure": "detailed",
           "items": [["Lønninger",-45.433],["Pensioner",-2.471],["Andre omkostninger til social sikring",-0.687]]
         },
-        {"label":"Andre driftsomkostninger (residual, sin nota propia)","category":"other_expenses","amount":-0.082,"disclosure":"aggregated"},
+        {
+          "label": "Andre driftsomkostninger (residual, sin nota propia)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.082,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Immaterielle anlægsaktiver — afskrivninger (amortisation for the year, registraciones de jugadores)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -2.392,
           "disclosure": "detailed"
         },
         {
           "label": "Materielle anlægsaktiver — afskrivninger (Andre anlæg, driftsmateriel og inventar + Indretning af lejede lokaler)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.962,
           "disclosure": "detailed",
           "items": [["Andre anlæg, driftsmateriel og inventar",-0.828],["Indretning af lejede lokaler",-0.134]]

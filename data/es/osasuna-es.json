@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "ES",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -41,24 +42,33 @@
       "revenue": [
         {
           "label": "Taquillas Liga y amistosos",
-          "category": "competition_bonus",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
           "amount": 0.543417,
           "disclosure": "detailed",
           "items": [["Taquillas Liga",0.541994],["Amistosos",0.001423]]
         },
-        {"label":"Socios","category":"season_tickets","amount":5.388221,"disclosure":"detailed"},
-        {"label":"Derechos audiovisuales","category":"broadcasting","amount":51.254102,"disclosure":"detailed"},
+        {"label":"Socios","category":"season_tickets","subcategory":"season_tickets","amount":5.388221,"disclosure":"detailed"},
+        {"label":"Derechos audiovisuales","category":"media_rights","subcategory":"broadcasting","amount":51.254102,"disclosure":"detailed"},
         {
           "label": "Tienda y publicidad",
-          "category": "sponsorship_commercial",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
           "amount": 6.639209,
           "disclosure": "detailed",
           "items": [["Tienda",0.145309],["Publicidad",6.4939]]
         },
-        {"label":"Ingresos por cesiones (préstamo de jugadores)","category":"player_sales","amount":0.06,"disclosure":"detailed"},
+        {
+          "label": "Ingresos por cesiones (préstamo de jugadores)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.06,
+          "disclosure": "detailed"
+        },
         {
           "label": "Otros ingresos de explotación (arrendamientos, derechos de venta, otros, subvenciones)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 2.194211,
           "disclosure": "detailed",
           "items": [
@@ -70,14 +80,16 @@
         },
         {
           "label": "Imputación de subvenciones de inmovilizado no financiero (Cesión de Uso del Estadio El Sadar)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 1.385807,
           "disclosure": "detailed"
         },
-        {"label":"Exceso de provisiones","category":"other_income","amount":0.00115,"disclosure":"detailed"},
+        {"label":"Exceso de provisiones","category":"other_revenue","subcategory":"other_income","amount":0.00115,"disclosure":"detailed"},
         {
           "label": "Otros resultados (excepcionales: sentencias judiciales a favor, amistoso Argentina-Estonia, gasto COVID-19 LaLiga)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 2.592756,
           "disclosure": "detailed",
           "items": [
@@ -93,29 +105,56 @@
         }
       ],
       "expenses": [
-        {"label":"Aprovisionamientos","category":"other_expenses","amount":-0.492851,"disclosure":"detailed"},
-        {"label":"Sueldos y salarios, plantilla deportiva","category":"wages_squad","amount":-35.602344,"disclosure":"detailed"},
-        {"label":"Sueldos y salarios, plantilla no deportiva","category":"admin_general_expense","amount":-3.386508,"disclosure":"detailed"},
+        {"label":"Aprovisionamientos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.492851,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y salarios, plantilla deportiva",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -35.602344,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sueldos y salarios, plantilla no deportiva",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.386508,
+          "disclosure": "detailed"
+        },
         {
           "label": "Seguridad Social y otras cargas sociales (sin desglosar por área)",
-          "category": "lump_football_operations_expense",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
           "amount": -1.509496,
           "disclosure": "not_disclosed",
           "items": [["Seguridad social a cargo de la empresa",-1.492852],["Otras cargas sociales",-0.016644]]
         },
-        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-12.6548,"disclosure":"detailed"},
-        {"label":"Tributos","category":"admin_general_expense","amount":-0.048387,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-12.6548,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.048387,"disclosure":"detailed"},
         {
           "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.432752,
           "disclosure": "detailed"
         },
-        {"label":"Otros gastos de gestión corriente","category":"other_expenses","amount":-5.004256,"disclosure":"aggregated"},
-        {"label":"Amortización de derechos de traspaso de jugadores","category":"player_amortisation","amount":-7.075315,"disclosure":"detailed"},
+        {
+          "label": "Otros gastos de gestión corriente",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -5.004256,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortización de derechos de traspaso de jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -7.075315,
+          "disclosure": "detailed"
+        },
         {
           "label": "Amortización de otro inmovilizado intangible (incl. Cesión de Uso del Estadio El Sadar)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -1.433719,
           "disclosure": "detailed",
           "items": [["Aplicaciones informáticas",-0.047912],["Cesión de Uso del Estadio El Sadar y Tajonar",-1.385807]]
@@ -123,6 +162,7 @@
         {
           "label": "Amortización de inmovilizado material (terrenos, construcciones e instalaciones)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -1.463058,
           "disclosure": "detailed"
         }
@@ -139,27 +179,36 @@
       "management_id": "actual",
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Ingresos por competiciones","category":"competition_bonus","amount":4.853667,"disclosure":"detailed"},
-        {"label":"Ingresos por abonados y socios","category":"season_tickets","amount":6.764142,"disclosure":"detailed"},
-        {"label":"Ingresos por explotación de instalaciones","category":"stadium_other","amount":0.044227,"disclosure":"detailed"},
-        {"label":"Ingresos por retransmisiones","category":"broadcasting","amount":51.83331,"disclosure":"detailed"},
-        {"label":"Ingresos por comercialización y publicidad","category":"sponsorship_commercial","amount":7.722948,"disclosure":"detailed"},
+        {"label":"Ingresos por competiciones","category":"prize_money","subcategory":"competition_bonus","amount":4.853667,"disclosure":"detailed"},
+        {"label":"Ingresos por abonados y socios","category":"season_tickets","subcategory":"season_tickets","amount":6.764142,"disclosure":"detailed"},
+        {"label":"Ingresos por explotación de instalaciones","category":"venue","subcategory":"stadium_other","amount":0.044227,"disclosure":"detailed"},
+        {"label":"Ingresos por retransmisiones","category":"media_rights","subcategory":"broadcasting","amount":51.83331,"disclosure":"detailed"},
+        {
+          "label": "Ingresos por comercialización y publicidad",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 7.722948,
+          "disclosure": "detailed"
+        },
         {
           "label": "Otros ingresos de explotación (accesorios y gestión corriente, subvenciones)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 2.291856,
           "disclosure": "detailed",
           "items": [["Ingresos accesorios y otros de gestión corriente",2.134254],["Subvenciones a la explotación",0.157602]]
         },
         {
           "label": "Imputación de subvenciones de inmovilizado no financiero (Cesión de Uso del Estadio El Sadar)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 1.22442,
           "disclosure": "detailed"
         },
         {
           "label": "Otros resultados (excepcionales: cobros \"Caso Osasuna\", beneficios por cesión/traspaso de jugadores, neto de gasto COVID-19 LaLiga)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 1.708727,
           "disclosure": "detailed",
           "items": [
@@ -173,32 +222,47 @@
         }
       ],
       "expenses": [
-        {"label":"Aprovisionamientos","category":"other_expenses","amount":-1.044355,"disclosure":"detailed"},
+        {"label":"Aprovisionamientos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.044355,"disclosure":"detailed"},
         {
           "label": "Gastos Personal Deportivo (Inscribible y No Inscribible)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -40.818907,
           "disclosure": "detailed",
           "items": [["Inscribible",-38.020694],["No inscribible",-2.798213]]
         },
-        {"label":"Gastos Personal No Deportivo","category":"admin_general_expense","amount":-6.111538,"disclosure":"detailed"},
-        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-15.29507,"disclosure":"detailed"},
-        {"label":"Tributos","category":"admin_general_expense","amount":-0.076577,"disclosure":"detailed"},
-        {"label":"Pérdidas y provisiones por operaciones comerciales","category":"other_expenses","amount":-0.000817,"disclosure":"detailed"},
-        {"label":"Otros gastos de gestión corriente","category":"other_expenses","amount":-7.124241,"disclosure":"aggregated"},
+        {"label":"Gastos Personal No Deportivo","category":"admin_general","subcategory":"admin_general_expense","amount":-6.111538,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-15.29507,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.076577,"disclosure":"detailed"},
+        {
+          "label": "Pérdidas y provisiones por operaciones comerciales",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.000817,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Otros gastos de gestión corriente",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7.124241,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Amortización de derechos de adquisición y traspaso de jugadores",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -4.331337,
           "disclosure": "detailed"
         },
         {
           "label": "Amortización de otro inmovilizado intangible (incl. Cesión de Uso del Estadio El Sadar)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -1.281098,
           "disclosure": "detailed"
         },
-        {"label":"Amortización de inmovilizado material","category":"depreciation","amount":-1.938109,"disclosure":"detailed"}
+        {"label":"Amortización de inmovilizado material","category":"depreciation","subcategory":"depreciation","amount":-1.938109,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":5.101991,"asset_sales":0,"net_interest":-1.676497,"tax":0.958945,"gross_debt":50.186677,"cash":3.067461},
       "official_totals": {"revenue":76.443297,"expenses":78.022048,"net_result":2.805688}

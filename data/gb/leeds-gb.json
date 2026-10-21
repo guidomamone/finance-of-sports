@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "GB",
     "reporting_currency": "GBP",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -77,18 +78,24 @@
       "management_id": null,
       "fx": {"ref":"GBP@2019-06-30"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":12.612796,"disclosure":"aggregated"},
-        {"label":"Television and broadcasting income","category":"broadcasting","amount":1.486,"disclosure":"aggregated"},
-        {"label":"Merchandising income","category":"sponsorship_commercial","amount":9.436899,"disclosure":"aggregated"},
-        {"label":"Central distributions","category":"broadcasting","amount":7.649,"disclosure":"aggregated"},
-        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":11.937394,"disclosure":"aggregated"},
-        {"label":"Catering income","category":"other_income","amount":5.797676,"disclosure":"aggregated"},
-        {"label":"Other operating income","category":"other_income","amount":0.00286,"disclosure":"aggregated"},
-        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":15.649423,"disclosure":"aggregated"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":12.612796,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting income","category":"media_rights","subcategory":"broadcasting","amount":1.486,"disclosure":"aggregated"},
+        {"label":"Merchandising income","category":"commercial","subcategory":"sponsorship_commercial","amount":9.436899,"disclosure":"aggregated"},
+        {"label":"Central distributions","category":"media_rights","subcategory":"broadcasting","amount":7.649,"disclosure":"aggregated"},
+        {"label":"Other commercial revenue","category":"commercial","subcategory":"sponsorship_commercial","amount":11.937394,"disclosure":"aggregated"},
+        {"label":"Catering income","category":"other_revenue","subcategory":"other_income","amount":5.797676,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0.00286,"disclosure":"aggregated"},
+        {
+          "label": "Gain on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 15.649423,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Cost of sales","category":"other_expenses","amount":-9.970908,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general_expense","amount":-75.099771,"disclosure":"aggregated"}
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-9.970908,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-75.099771,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.900363,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":64.572048,"expenses":85.070679,"net_result":-21.398994},
@@ -109,14 +116,26 @@
       "management_id": null,
       "fx": {"ref":"GBP@2020-07-31"},
       "revenue": [
-        {"label":"Turnover","category":"lump_football_operations","amount":54.18398,"disclosure":"aggregated"},
-        {"label":"Other operating income","category":"other_income","amount":3.528322,"disclosure":"aggregated"},
-        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":10.128024,"disclosure":"aggregated"}
+        {"label":"Turnover","category":"undisclosed","subcategory":"lump_football_operations","amount":54.18398,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":3.528322,"disclosure":"aggregated"},
+        {
+          "label": "Gain on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 10.128024,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Cost of sales","category":"other_expenses","amount":-13.885858,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general_expense","amount":-108.398516,"disclosure":"aggregated"},
-        {"label":"Television and broadcasting rebate","category":"other_expenses","amount":-7,"disclosure":"aggregated"}
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-13.885858,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-108.398516,"disclosure":"aggregated"},
+        {
+          "label": "Television and broadcasting rebate",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.977936,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":67.840326,"expenses":129.284374,"net_result":-62.421984},
@@ -145,20 +164,26 @@
       "management_id": null,
       "fx": {"ref":"GBP@2021-06-30"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":1.928102,"disclosure":"aggregated"},
-        {"label":"Television and broadcasting income","category":"broadcasting","amount":22.016653,"disclosure":"aggregated"},
-        {"label":"Merchandising income","category":"sponsorship_commercial","amount":20.369022,"disclosure":"aggregated"},
-        {"label":"Central distributions","category":"broadcasting","amount":110.813728,"disclosure":"aggregated"},
-        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":15.042549,"disclosure":"aggregated"},
-        {"label":"Catering income","category":"other_income","amount":0.380638,"disclosure":"aggregated"},
-        {"label":"Educational services","category":"education","amount":0.477048,"disclosure":"aggregated"},
-        {"label":"Other operating income","category":"other_income","amount":1.137677,"disclosure":"aggregated"},
-        {"label":"(Loss)/gain on disposal of players' registrations","category":"player_sales","amount":-1.439614,"disclosure":"aggregated"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":1.928102,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting income","category":"media_rights","subcategory":"broadcasting","amount":22.016653,"disclosure":"aggregated"},
+        {"label":"Merchandising income","category":"commercial","subcategory":"sponsorship_commercial","amount":20.369022,"disclosure":"aggregated"},
+        {"label":"Central distributions","category":"media_rights","subcategory":"broadcasting","amount":110.813728,"disclosure":"aggregated"},
+        {"label":"Other commercial revenue","category":"commercial","subcategory":"sponsorship_commercial","amount":15.042549,"disclosure":"aggregated"},
+        {"label":"Catering income","category":"other_revenue","subcategory":"other_income","amount":0.380638,"disclosure":"aggregated"},
+        {"label":"Educational services","category":"non_sporting_activities","subcategory":"education","amount":0.477048,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":1.137677,"disclosure":"aggregated"},
+        {
+          "label": "(Loss)/gain on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": -1.439614,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Cost of sales","category":"other_expenses","amount":-14.654409,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general_expense","amount":-151.985475,"disclosure":"aggregated"},
-        {"label":"Settlement of transfer dispute","category":"exceptional_items","amount":-15.555435,"disclosure":"aggregated"}
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-14.654409,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-151.985475,"disclosure":"aggregated"},
+        {"label":"Settlement of transfer dispute","category":"exceptional","subcategory":"exceptional_items","amount":-15.555435,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.47533,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":170.725803,"expenses":166.639884,"net_result":-11.944846},
@@ -179,20 +204,26 @@
       "management_id": null,
       "fx": {"ref":"GBP@2022-06-30"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":24.579185,"disclosure":"aggregated"},
-        {"label":"Television and broadcasting income","category":"broadcasting","amount":19.802631,"disclosure":"aggregated"},
-        {"label":"Merchandising income","category":"sponsorship_commercial","amount":25.05464,"disclosure":"aggregated"},
-        {"label":"Central distributions","category":"broadcasting","amount":95.870294,"disclosure":"aggregated"},
-        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":18.935151,"disclosure":"aggregated"},
-        {"label":"Catering income","category":"other_income","amount":4.693913,"disclosure":"aggregated"},
-        {"label":"Educational services","category":"education","amount":0.270955,"disclosure":"aggregated"},
-        {"label":"Other operating income","category":"other_income","amount":0,"disclosure":"aggregated"},
-        {"label":"Gain/ (loss) on disposal of players' registrations","category":"player_sales","amount":0.889647,"disclosure":"aggregated"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":24.579185,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting income","category":"media_rights","subcategory":"broadcasting","amount":19.802631,"disclosure":"aggregated"},
+        {"label":"Merchandising income","category":"commercial","subcategory":"sponsorship_commercial","amount":25.05464,"disclosure":"aggregated"},
+        {"label":"Central distributions","category":"media_rights","subcategory":"broadcasting","amount":95.870294,"disclosure":"aggregated"},
+        {"label":"Other commercial revenue","category":"commercial","subcategory":"sponsorship_commercial","amount":18.935151,"disclosure":"aggregated"},
+        {"label":"Catering income","category":"other_revenue","subcategory":"other_income","amount":4.693913,"disclosure":"aggregated"},
+        {"label":"Educational services","category":"non_sporting_activities","subcategory":"education","amount":0.270955,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "Gain/ (loss) on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.889647,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Cost of sales","category":"other_expenses","amount":-20.174675,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general_expense","amount":-203.502431,"disclosure":"aggregated"},
-        {"label":"Settlement of transfer dispute","category":"exceptional_items","amount":0,"disclosure":"aggregated"}
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-20.174675,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-203.502431,"disclosure":"aggregated"},
+        {"label":"Settlement of transfer dispute","category":"exceptional","subcategory":"exceptional_items","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.129737,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":190.096416,"expenses":223.677106,"net_result":-36.710427},
@@ -213,18 +244,24 @@
       "management_id": null,
       "fx": {"ref":"GBP@2023-06-30"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":29.921168,"disclosure":"aggregated"},
-        {"label":"Television and broadcasting income","category":"broadcasting","amount":17.44213,"disclosure":"aggregated"},
-        {"label":"Merchandising income","category":"sponsorship_commercial","amount":24.017167,"disclosure":"aggregated"},
-        {"label":"Central distributions","category":"broadcasting","amount":94.102405,"disclosure":"aggregated"},
-        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":18.302149,"disclosure":"aggregated"},
-        {"label":"Catering income","category":"other_income","amount":5.736823,"disclosure":"aggregated"},
-        {"label":"Educational services","category":"education","amount":0.161705,"disclosure":"aggregated"},
-        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":73.345427,"disclosure":"aggregated"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":29.921168,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting income","category":"media_rights","subcategory":"broadcasting","amount":17.44213,"disclosure":"aggregated"},
+        {"label":"Merchandising income","category":"commercial","subcategory":"sponsorship_commercial","amount":24.017167,"disclosure":"aggregated"},
+        {"label":"Central distributions","category":"media_rights","subcategory":"broadcasting","amount":94.102405,"disclosure":"aggregated"},
+        {"label":"Other commercial revenue","category":"commercial","subcategory":"sponsorship_commercial","amount":18.302149,"disclosure":"aggregated"},
+        {"label":"Catering income","category":"other_revenue","subcategory":"other_income","amount":5.736823,"disclosure":"aggregated"},
+        {"label":"Educational services","category":"non_sporting_activities","subcategory":"education","amount":0.161705,"disclosure":"aggregated"},
+        {
+          "label": "Gain on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 73.345427,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Cost of sales","category":"other_expenses","amount":-20.577557,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general_expense","amount":-275.080123,"disclosure":"aggregated"}
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-20.577557,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-275.080123,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.075424,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":263.028974,"expenses":295.65768,"net_result":-33.70413},
@@ -245,22 +282,47 @@
       "management_id": "marathe49ers",
       "fx": {"ref":"GBP@2024-06-30"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":30.633661,"disclosure":"detailed"},
-        {"label":"Television and broadcasting income + Central distributions","category":"broadcasting","amount":53.64343,"disclosure":"detailed"},
-        {"label":"Merchandising income","category":"sponsorship_commercial","amount":25.410723,"disclosure":"detailed"},
-        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":9.496047,"disclosure":"detailed"},
-        {"label":"Catering income","category":"other_income","amount":8.314712,"disclosure":"detailed"},
-        {"label":"Educational services","category":"education","amount":0.059707,"disclosure":"detailed"},
-        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":33.694289,"disclosure":"detailed"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":30.633661,"disclosure":"detailed"},
+        {
+          "label": "Television and broadcasting income + Central distributions",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 53.64343,
+          "disclosure": "detailed"
+        },
+        {"label":"Merchandising income","category":"commercial","subcategory":"sponsorship_commercial","amount":25.410723,"disclosure":"detailed"},
+        {"label":"Other commercial revenue","category":"commercial","subcategory":"sponsorship_commercial","amount":9.496047,"disclosure":"detailed"},
+        {"label":"Catering income","category":"other_revenue","subcategory":"other_income","amount":8.314712,"disclosure":"detailed"},
+        {"label":"Educational services","category":"non_sporting_activities","subcategory":"education","amount":0.059707,"disclosure":"detailed"},
+        {
+          "label": "Gain on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 33.694289,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Staff costs","category":"wages_squad","amount":-84.030436,"disclosure":"detailed"},
-        {"label":"Amortisation of players' registrations","category":"player_amortisation","amount":-59.35885,"disclosure":"detailed"},
-        {"label":"Impairment of players' registrations (First Team Squad review)","category":"player_impairment","amount":-7.475305,"disclosure":"detailed"},
-        {"label":"Depreciation of tangible assets","category":"depreciation","amount":-4.855858,"disclosure":"detailed"},
+        {"label":"Staff costs","category":"first_team_staff","subcategory":"wages_squad","amount":-84.030436,"disclosure":"detailed"},
+        {
+          "label": "Amortisation of players' registrations",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -59.35885,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Impairment of players' registrations (First Team Squad review)",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -7.475305,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciation of tangible assets","category":"depreciation","subcategory":"depreciation","amount":-4.855858,"disclosure":"detailed"},
         {
           "label": "Other operating expenses (residual, sin desglose propio en la fuente)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -48.091406,
           "disclosure": "estimated"
         }
@@ -277,22 +339,47 @@
       "management_id": "marathe49ers",
       "fx": {"ref":"GBP@2025-06-30"},
       "revenue": [
-        {"label":"Gate receipts","category":"matchday_competition","amount":31.647912,"disclosure":"detailed"},
-        {"label":"Television and broadcasting income + Central distributions","category":"broadcasting","amount":47.22852,"disclosure":"detailed"},
-        {"label":"Merchandising income","category":"sponsorship_commercial","amount":24.560557,"disclosure":"detailed"},
-        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":25.890452,"disclosure":"detailed"},
-        {"label":"Catering income","category":"other_income","amount":7.614479,"disclosure":"detailed"},
-        {"label":"Educational services","category":"education","amount":0.04741,"disclosure":"detailed"},
-        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":24.765848,"disclosure":"detailed"}
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":31.647912,"disclosure":"detailed"},
+        {
+          "label": "Television and broadcasting income + Central distributions",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 47.22852,
+          "disclosure": "detailed"
+        },
+        {"label":"Merchandising income","category":"commercial","subcategory":"sponsorship_commercial","amount":24.560557,"disclosure":"detailed"},
+        {"label":"Other commercial revenue","category":"commercial","subcategory":"sponsorship_commercial","amount":25.890452,"disclosure":"detailed"},
+        {"label":"Catering income","category":"other_revenue","subcategory":"other_income","amount":7.614479,"disclosure":"detailed"},
+        {"label":"Educational services","category":"non_sporting_activities","subcategory":"education","amount":0.04741,"disclosure":"detailed"},
+        {
+          "label": "Gain on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 24.765848,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Staff costs","category":"wages_squad","amount":-102.724254,"disclosure":"detailed"},
-        {"label":"Amortisation of players' registrations","category":"player_amortisation","amount":-46.37906,"disclosure":"detailed"},
-        {"label":"Impairment of players' registrations","category":"player_impairment","amount":-3.014241,"disclosure":"detailed"},
-        {"label":"Depreciation of tangible assets","category":"depreciation","amount":-6.200495,"disclosure":"detailed"},
+        {"label":"Staff costs","category":"first_team_staff","subcategory":"wages_squad","amount":-102.724254,"disclosure":"detailed"},
+        {
+          "label": "Amortisation of players' registrations",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -46.37906,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Impairment of players' registrations",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -3.014241,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciation of tangible assets","category":"depreciation","subcategory":"depreciation","amount":-6.200495,"disclosure":"detailed"},
         {
           "label": "Other operating expenses (residual, incluye crédito neto por negative goodwill — ver comentario de cabecera)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -47.072661,
           "disclosure": "estimated"
         }

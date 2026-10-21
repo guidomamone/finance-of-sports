@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "GR",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -94,38 +95,99 @@
       "management_id": null,
       "fx": {"ref":"EUR@2016-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":6.387526,"disclosure":"aggregated"},
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":10.754917,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":6.441874,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":0.91862,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":34.003783,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":0.499933,"disclosure":"aggregated"},
-        {"label":"Έσοδα από πωλήσεις ποδοσφαιριστών","category":"player_sales","amount":13.868,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":6.387526,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":10.754917,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":6.441874,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":0.91862,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":34.003783,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.499933,"disclosure":"aggregated"},
+        {"label":"Έσοδα από πωλήσεις ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":13.868,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-22.910779,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.11341,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-5.71788,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-7.459767,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-1.067857,"disclosure":"aggregated"},
-        {"label":"Πρόβλεψη αποζημίωσης προσωπικού","category":"admin_general_expense","amount":-0.106303,"disclosure":"aggregated"},
-        {"label":"Απόσβεση ενσώματων περιουσιακών στοιχείων","category":"depreciation","amount":-0.316771,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-22.910779,"disclosure":"aggregated"},
+        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.11341,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-5.71788,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-7.459767,"disclosure":"aggregated"},
+        {
+          "label": "Εισφορές κοινωνικής ασφάλισης",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.067857,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.106303,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Απόσβεση ενσώματων περιουσιακών στοιχείων",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.316771,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εξαιρούνται οι εγγραφές ποδοσφαιριστών)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.004244,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών","category":"player_amortisation","amount":-10.097539,"disclosure":"aggregated"},
-        {"label":"Απομείωση δικαιωμάτων ποδοσφαιριστών","category":"player_impairment","amount":-0.219129,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-2.345941,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-3.930768,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-5.798469,"disclosure":"aggregated"},
-        {"label":"Έκτακτα Έξοδα","category":"exceptional_items","amount":-0.345721,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-2.160603,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-11.25484,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος ποδοσφαιριστών","category":"player_amortisation","amount":-4.350212,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"other_expenses","amount":-1.585,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -10.097539,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Απομείωση δικαιωμάτων ποδοσφαιριστών",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -0.219129,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.345941,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα χορηγιών και διαφημίσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.930768,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.798469,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έκτακτα Έξοδα","category":"exceptional","subcategory":"exceptional_items","amount":-0.345721,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -2.160603,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-11.25484,"disclosure":"aggregated"},
+        {
+          "label": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -4.350212,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.585,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.479915,"tax":-2.238583,"gross_debt":6.055517,"cash":2.14963},
       "official_totals": {"revenue":72.874652,"expenses":79.439512,"net_result":-8.669249},
@@ -147,37 +209,92 @@
       "management_id": null,
       "fx": {"ref":"EUR@2017-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":4.694986,"disclosure":"aggregated"},
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":11.690169,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":6.036096,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":0.630496,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":8.754979,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":0.601068,"disclosure":"aggregated"},
-        {"label":"Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων","category":"player_sales","amount":46.435375,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":4.694986,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":11.690169,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":6.036096,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":0.630496,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":8.754979,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.601068,"disclosure":"aggregated"},
+        {
+          "label": "Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 46.435375,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-21.814523,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.101128,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-4.277814,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-6.872671,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-0.999433,"disclosure":"aggregated"},
-        {"label":"Πρόβλεψη αποζημίωσης προσωπικού","category":"admin_general_expense","amount":-0.074969,"disclosure":"aggregated"},
-        {"label":"Απόσβεση ενσώματων περιουσιακών στοιχείων","category":"depreciation","amount":-0.254069,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-21.814523,"disclosure":"aggregated"},
+        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.101128,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-4.277814,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-6.872671,"disclosure":"aggregated"},
+        {
+          "label": "Εισφορές κοινωνικής ασφάλισης",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.999433,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.074969,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Απόσβεση ενσώματων περιουσιακών στοιχείων",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.254069,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.00799,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση","category":"player_amortisation","amount":-10.769159,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-2.717178,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-4.1839,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-5.859521,"disclosure":"aggregated"},
-        {"label":"Έκτακτα έξοδα","category":"exceptional_items","amount":-0.510772,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-2.369267,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-12.259348,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος ποδοσφαιριστών","category":"player_amortisation","amount":-6.278466,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"other_expenses","amount":-2.840973,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -10.769159,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.717178,"disclosure":"aggregated"},
+        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general","subcategory":"admin_general_expense","amount":-4.1839,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.859521,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έκτακτα έξοδα","category":"exceptional","subcategory":"exceptional_items","amount":-0.510772,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -2.369267,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-12.259348,"disclosure":"aggregated"},
+        {
+          "label": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -6.278466,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.840973,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.247808,"tax":3.452575,"gross_debt":13.304981,"cash":1.65159},
       "official_totals": {"revenue":78.84317,"expenses":81.680409,"net_result":-1.143244},
@@ -199,38 +316,105 @@
       "management_id": null,
       "fx": {"ref":"EUR@2018-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":5.715773,"disclosure":"aggregated"},
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":12.608807,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":4.848,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":0.633355,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":31.5185,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":0.831318,"disclosure":"aggregated"},
-        {"label":"Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων","category":"player_sales","amount":27.199775,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":5.715773,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":12.608807,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":4.848,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":0.633355,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":31.5185,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.831318,"disclosure":"aggregated"},
+        {
+          "label": "Έσοδα από πωλήσεις ποδοσφαιριστών / λύσεις συμβολαίων",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 27.199775,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-18.359229,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.10913,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-1.355758,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-8.740063,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-1.062745,"disclosure":"aggregated"},
-        {"label":"Πρόβλεψη αποζημίωσης προσωπικού","category":"admin_general_expense","amount":-0.074566,"disclosure":"aggregated"},
-        {"label":"Απόσβεση ενσώματων περιουσιακών στοιχείων","category":"depreciation","amount":-0.225643,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-18.359229,"disclosure":"aggregated"},
+        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.10913,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-1.355758,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-8.740063,"disclosure":"aggregated"},
+        {
+          "label": "Εισφορές κοινωνικής ασφάλισης",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.062745,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.074566,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Απόσβεση ενσώματων περιουσιακών στοιχείων",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.225643,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.008891,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών","category":"player_amortisation","amount":-12.830663,"disclosure":"aggregated"},
-        {"label":"Απόομειωση δικαιωμάτων ποδοσφαιριστών","category":"player_impairment","amount":-0.819873,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-2.638995,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-3.681201,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-5.821794,"disclosure":"aggregated"},
-        {"label":"Έκτακτα έξοδα","category":"exceptional_items","amount":-0.480811,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-2.233096,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-19.158892,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος ποδοσφαιριστών","category":"player_amortisation","amount":-7.353522,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"other_expenses","amount":-0.34,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -12.830663,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Απόομειωση δικαιωμάτων ποδοσφαιριστών",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -0.819873,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.638995,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα χορηγιών και διαφημίσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.681201,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.821794,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έκτακτα έξοδα","category":"exceptional","subcategory":"exceptional_items","amount":-0.480811,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -2.233096,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-19.158892,"disclosure":"aggregated"},
+        {
+          "label": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -7.353522,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.34,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.393569,"tax":-5.702182,"gross_debt":7,"cash":4.946224},
       "official_totals": {"revenue":83.355529,"expenses":84.814061,"net_result":-8.035094},
@@ -252,38 +436,93 @@
       "management_id": null,
       "fx": {"ref":"EUR@2019-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":4.303481,"disclosure":"aggregated"},
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":13.541318,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":5.753689,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":1.426632,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":12.401755,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":0.534528,"disclosure":"aggregated"},
-        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_sales","amount":21.734948,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα κατά την πώληση","category":"player_sales","amount":1.345,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":4.303481,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":13.541318,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":5.753689,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":1.426632,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":12.401755,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.534528,"disclosure":"aggregated"},
+        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":21.734948,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα κατά την πώληση","category":"player_transfers","subcategory":"player_sales","amount":1.345,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-13.991271,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.122573,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-1.346075,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-5.719296,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-1.099379,"disclosure":"aggregated"},
-        {"label":"Πρόβλεψη αποζημίωσης προσωπικού","category":"admin_general_expense","amount":-0.085932,"disclosure":"aggregated"},
-        {"label":"Απόσβεση ενσώματων περιουσιακών στοιχείων","category":"depreciation","amount":-0.219081,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-13.991271,"disclosure":"aggregated"},
+        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.122573,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-1.346075,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-5.719296,"disclosure":"aggregated"},
+        {
+          "label": "Εισφορές κοινωνικής ασφάλισης",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.099379,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.085932,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Απόσβεση ενσώματων περιουσιακών στοιχείων",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.219081,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.012927,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση","category":"player_amortisation","amount":-8.519162,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-1.980628,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-2.481477,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-5.32015,"disclosure":"aggregated"},
-        {"label":"Έκτακτα έξοδα","category":"exceptional_items","amount":-0.527824,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-2.075481,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-12.140836,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος ποδοσφαιριστών","category":"player_amortisation","amount":-8.949571,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"other_expenses","amount":-1.52,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -8.519162,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-1.980628,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα χορηγιών και διαφημίσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.481477,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.32015,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έκτακτα έξοδα","category":"exceptional","subcategory":"exceptional_items","amount":-0.527824,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -2.075481,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-12.140836,"disclosure":"aggregated"},
+        {
+          "label": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -8.949571,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.52,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.698985,"tax":3.606066,"gross_debt":0.88,"cash":3.123061},
       "official_totals": {"revenue":61.041351,"expenses":65.583839,"net_result":-2.163231},
@@ -305,39 +544,94 @@
       "management_id": null,
       "fx": {"ref":"EUR@2020-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":5.714093,"disclosure":"aggregated"},
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":10.657746,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":4.871515,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":0.805846,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":36.535617,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":0.567811,"disclosure":"aggregated"},
-        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_sales","amount":23.2525,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα κατά την πώληση","category":"player_sales","amount":0.05,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":5.714093,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":10.657746,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":4.871515,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":0.805846,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":36.535617,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.567811,"disclosure":"aggregated"},
+        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":23.2525,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα κατά την πώληση","category":"player_transfers","subcategory":"player_sales","amount":0.05,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-15.877127,"disclosure":"aggregated"},
-        {"label":"Εισφορεκκοινωνικής ασφάλισης","category":"wages_squad","amount":-0.14064,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-5.722637,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-7.050278,"disclosure":"aggregated"},
-        {"label":"Εισφορεκκοινωνικής ασφάλισης","category":"admin_general_expense","amount":-1.006096,"disclosure":"aggregated"},
-        {"label":"Πρόβλεψη αποζημίωσης προσωπικού","category":"admin_general_expense","amount":-0.082446,"disclosure":"aggregated"},
-        {"label":"Απόσβεση ενσώματων περιουσιακών στοιχείων","category":"depreciation","amount":-0.226973,"disclosure":"aggregated"},
-        {"label":"Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων","category":"depreciation","amount":-0.449045,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-15.877127,"disclosure":"aggregated"},
+        {"label":"Εισφορεκκοινωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.14064,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-5.722637,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-7.050278,"disclosure":"aggregated"},
+        {"label":"Εισφορεκκοινωνικής ασφάλισης","category":"admin_general","subcategory":"admin_general_expense","amount":-1.006096,"disclosure":"aggregated"},
+        {
+          "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.082446,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Απόσβεση ενσώματων περιουσιακών στοιχείων",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.226973,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.449045,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.028923,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση","category":"player_amortisation","amount":-8.92115,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-1.920609,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-2.640273,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-4.001938,"disclosure":"aggregated"},
-        {"label":"Έκτακτα έξοδα","category":"exceptional_items","amount":-0.300409,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-1.616227,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-17.20333,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος ποδοσφαιριστών","category":"player_amortisation","amount":-7.535065,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"other_expenses","amount":-0.11,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -8.92115,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-1.920609,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα χορηγιών και διαφημίσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.640273,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.001938,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έκτακτα έξοδα","category":"exceptional","subcategory":"exceptional_items","amount":-0.300409,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -1.616227,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-17.20333,"disclosure":"aggregated"},
+        {
+          "label": "Αναπόσβεστο κόστος ποδοσφαιριστών",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -7.535065,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.11,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.056555,"tax":-3.835022,"gross_debt":15.63126,"cash":9.856505},
       "official_totals": {"revenue":82.455128,"expenses":74.532757,"net_result":2.730384},
@@ -359,39 +653,94 @@
       "management_id": null,
       "fx": {"ref":"EUR@2021-06-30"},
       "revenue": [
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":16.708713,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":5.375303,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":0.607517,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":39.228897,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":3.147211,"disclosure":"aggregated"},
-        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_sales","amount":21.544414,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος ποδοσφαιριστών","category":"player_sales","amount":-2.632665,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"player_sales","amount":-2.56875,"disclosure":"aggregated"}
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":16.708713,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":5.375303,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":0.607517,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":39.228897,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":3.147211,"disclosure":"aggregated"},
+        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":21.544414,"disclosure":"aggregated"},
+        {"label":"Αναπόσβεστο κόστος ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":-2.632665,"disclosure":"aggregated"},
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": -2.56875,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-17.268408,"disclosure":"aggregated"},
-        {"label":"Εισφορέσκονωνικής ασφάλισης","category":"wages_squad","amount":-0.138673,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-9.294223,"disclosure":"aggregated"},
-        {"label":"Diferencia de redondeo","category":"other_expenses","amount":0,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-8.401708,"disclosure":"aggregated"},
-        {"label":"Εισφορέσκονωνικής ασφάλισης","category":"admin_general_expense","amount":-0.799156,"disclosure":"aggregated"},
-        {"label":"Πρόβλεψη αποζημίωσης προσωπικού","category":"admin_general_expense","amount":-0.068402,"disclosure":"aggregated"},
-        {"label":"Απόσβεση ενσώματων ακινητοποιήσεων","category":"depreciation","amount":-0.231382,"disclosure":"aggregated"},
-        {"label":"Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων","category":"depreciation","amount":-0.487802,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-17.268408,"disclosure":"aggregated"},
+        {"label":"Εισφορέσκονωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.138673,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-9.294223,"disclosure":"aggregated"},
+        {"label":"Diferencia de redondeo","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-8.401708,"disclosure":"aggregated"},
+        {"label":"Εισφορέσκονωνικής ασφάλισης","category":"admin_general","subcategory":"admin_general_expense","amount":-0.799156,"disclosure":"aggregated"},
+        {
+          "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.068402,
+          "disclosure": "aggregated"
+        },
+        {"label":"Απόσβεση ενσώματων ακινητοποιήσεων","category":"depreciation","subcategory":"depreciation","amount":-0.231382,"disclosure":"aggregated"},
+        {
+          "label": "Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.487802,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.026387,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών","category":"player_amortisation","amount":-7.812512,"disclosure":"aggregated"},
-        {"label":"Απομείωση δικαιωμάτων ποδοσφαιριστών","category":"player_impairment","amount":-0.649855,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-1.666076,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-1.104848,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-4.466739,"disclosure":"aggregated"},
-        {"label":"Λοιπά μη λειτουργικά έξοδα","category":"other_expenses","amount":-0.093312,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-1.635039,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-19.620355,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -7.812512,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Απομείωση δικαιωμάτων ποδοσφαιριστών",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -0.649855,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-1.666076,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα χορηγιών και διαφημίσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.104848,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.466739,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά μη λειτουργικά έξοδα",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.093312,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -1.635039,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-19.620355,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.21787,"tax":-2.199789,"gross_debt":9.606985,"cash":9.028003},
       "official_totals": {"revenue":81.410639,"expenses":73.764878,"net_result":4.228104},
@@ -413,38 +762,87 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":5.171556,"disclosure":"aggregated"},
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":12.866631,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":2.621353,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":12.604103,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":15.170022,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":1.925792,"disclosure":"aggregated"},
-        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_sales","amount":19.672278,"disclosure":"aggregated"},
-        {"label":"Λοιπά έσοδα κατά την πώληση","category":"player_sales","amount":0.040323,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος ποδοσφαιριστών","category":"player_sales","amount":-2.197325,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"player_sales","amount":-1.106781,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":5.171556,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":12.866631,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":2.621353,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":12.604103,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":15.170022,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":1.925792,"disclosure":"aggregated"},
+        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":19.672278,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα κατά την πώληση","category":"player_transfers","subcategory":"player_sales","amount":0.040323,"disclosure":"aggregated"},
+        {"label":"Αναπόσβεστο κόστος ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":-2.197325,"disclosure":"aggregated"},
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": -1.106781,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-25.199529,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.169791,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-6.203083,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-7.8865,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-1.00927,"disclosure":"aggregated"},
-        {"label":"Πρόβλεψη αποζημίωσης προσωπικού","category":"admin_general_expense","amount":-0.038717,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-25.199529,"disclosure":"aggregated"},
+        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.169791,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-6.203083,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-7.8865,"disclosure":"aggregated"},
+        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"admin_general","subcategory":"admin_general_expense","amount":-1.00927,"disclosure":"aggregated"},
+        {
+          "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.038717,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.763476,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση","category":"player_amortisation","amount":-13.495967,"disclosure":"aggregated"},
-        {"label":"Πρόβλεψη επισφαλών πελατών","category":"other_expenses","amount":-0.059741,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-2.541255,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-1.421195,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-5.303279,"disclosure":"aggregated"},
-        {"label":"Λοιπά μη λειτουργικά έξοδα","category":"other_expenses","amount":-0.265879,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-2.212968,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-12.534144,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -13.495967,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Πρόβλεψη επισφαλών πελατών",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.059741,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.541255,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα χορηγιών και διαφημίσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.421195,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.303279,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά μη λειτουργικά έξοδα",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.265879,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -2.212968,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-12.534144,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.355312,"tax":2.819339,"gross_debt":9.250086,"cash":16.455274},
       "official_totals": {"revenue":66.767951,"expenses":79.104794,"net_result":-10.872817},
@@ -466,49 +864,100 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":6.365335,"disclosure":"aggregated"},
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":15.018186,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":7.305992,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":1.247905,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":12.191898,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":3.54401,"disclosure":"aggregated"},
-        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_sales","amount":16.509336,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος Ποδοσφαιριστών","category":"player_sales","amount":-10.433318,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"player_sales","amount":-0.648219,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":6.365335,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":15.018186,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":7.305992,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":1.247905,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":12.191898,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":3.54401,"disclosure":"aggregated"},
+        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":16.509336,"disclosure":"aggregated"},
+        {"label":"Αναπόσβεστο κόστος Ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":-10.433318,"disclosure":"aggregated"},
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": -0.648219,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-23.927832,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.192577,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-10.959345,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-5.998403,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-23.927832,"disclosure":"aggregated"},
+        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.192577,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-10.959345,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-5.998403,"disclosure":"aggregated"},
         {
           "label": "Ημερομίσθια και μισθοί εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -1.988569,
           "disclosure": "aggregated"
         },
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-1.040968,"disclosure":"aggregated"},
+        {
+          "label": "Εισφορές κοινωνικής ασφάλισης",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.040968,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Εισφορές κοινωνικής ασφάλισης εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.017719,
           "disclosure": "aggregated"
         },
-        {"label":"Πρόβλεψη αποζημίωσης Προσωπικού","category":"admin_general_expense","amount":-0.049923,"disclosure":"aggregated"},
+        {
+          "label": "Πρόβλεψη αποζημίωσης Προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.049923,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση και απομείωση ενσώματων & ασώματων ακινητοποιήσεων & δικαιωμάτων χρήσης περιουσιακών στοιχείων",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.802218,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση","category":"player_amortisation","amount":-14.296571,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-4.322272,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-1.413219,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-5.65294,"disclosure":"aggregated"},
-        {"label":"Λοιπά μη λειτουργικά έξοδα","category":"other_expenses","amount":-0.550088,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-2.87206,"disclosure":"aggregated"},
-        {"label":"Αμοιβές διαμεσολαβητών","category":"other_expenses","amount":-2.678805,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-2.580581,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -14.296571,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-4.322272,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα χορηγιών και διαφημίσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.413219,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.65294,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά μη λειτουργικά έξοδα",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.550088,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -2.87206,
+          "disclosure": "aggregated"
+        },
+        {"label":"Αμοιβές διαμεσολαβητών","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.678805,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.580581,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.462856,"tax":7.069927,"gross_debt":2.463209,"cash":9.303114},
       "official_totals": {"revenue":51.101124,"expenses":79.34409,"net_result":-22.635895},
@@ -530,51 +979,108 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":9.25154,"disclosure":"aggregated"},
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":12.445117,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":8.223,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":0.701229,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":19.873506,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":1.98185,"disclosure":"aggregated"},
-        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_sales","amount":21.364234,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος Ποδοσφαιριστών","category":"player_sales","amount":-5.022747,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"player_sales","amount":-1.617839,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":9.25154,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":12.445117,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":8.223,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":0.701229,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":19.873506,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":1.98185,"disclosure":"aggregated"},
+        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":21.364234,"disclosure":"aggregated"},
+        {"label":"Αναπόσβεστο κόστος Ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":-5.022747,"disclosure":"aggregated"},
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": -1.617839,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-28.397805,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.198785,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-13.150537,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-8.109884,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-28.397805,"disclosure":"aggregated"},
+        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.198785,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-13.150537,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-8.109884,"disclosure":"aggregated"},
         {
           "label": "Ημερομίσθια και μισθοί εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -2.041708,
           "disclosure": "aggregated"
         },
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-1.229546,"disclosure":"aggregated"},
+        {
+          "label": "Εισφορές κοινωνικής ασφάλισης",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.229546,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Εισφορές κοινωνικής ασφάλισης εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.021909,
           "disclosure": "aggregated"
         },
-        {"label":"Πρόβλεψη αποζημίωσης Προσωπικού","category":"admin_general_expense","amount":-0.051379,"disclosure":"aggregated"},
-        {"label":"Απόσβεση ενσώματων ακινητοποιήσεων","category":"depreciation","amount":-0.279813,"disclosure":"aggregated"},
-        {"label":"Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων","category":"depreciation","amount":-0.489138,"disclosure":"aggregated"},
+        {
+          "label": "Πρόβλεψη αποζημίωσης Προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.051379,
+          "disclosure": "aggregated"
+        },
+        {"label":"Απόσβεση ενσώματων ακινητοποιήσεων","category":"depreciation","subcategory":"depreciation","amount":-0.279813,"disclosure":"aggregated"},
+        {
+          "label": "Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.489138,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.012942,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση","category":"player_amortisation","amount":-15.933998,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-6.132354,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-1.774367,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-3.272189,"disclosure":"aggregated"},
-        {"label":"Λοιπά μη λειτουργικά έξοδα","category":"other_expenses","amount":-0.422094,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-3.328292,"disclosure":"aggregated"},
-        {"label":"Αμοιβές διαμεσολαβητών","category":"other_expenses","amount":-1.692984,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-8.809905,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -15.933998,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-6.132354,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα χορηγιών και διαφημίσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.774367,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.272189,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά μη λειτουργικά έξοδα",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.422094,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -3.328292,
+          "disclosure": "aggregated"
+        },
+        {"label":"Αμοιβές διαμεσολαβητών","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.692984,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-8.809905,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.38245,"tax":0.088479,"gross_debt":3.746808,"cash":19.623731},
       "official_totals": {"revenue":67.199889,"expenses":95.349628,"net_result":-29.44371},
@@ -596,52 +1102,115 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":13.571987,"disclosure":"aggregated"},
-        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":22.866659,"disclosure":"aggregated"},
-        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":8.302,"disclosure":"aggregated"},
-        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":0.622106,"disclosure":"aggregated"},
-        {"label":"Έσοδα από UEFA","category":"competition_bonus","amount":20.056857,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":1.642439,"disclosure":"aggregated"},
-        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_sales","amount":43.712266,"disclosure":"aggregated"},
-        {"label":"Αναπόσβεστο κόστος Ποδοσφαιριστών","category":"player_sales","amount":-3.968487,"disclosure":"aggregated"},
-        {"label":"Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών","category":"player_sales","amount":-1.260928,"disclosure":"aggregated"}
+        {"label":"Έσοδα από εισιτήρια","category":"matchday","subcategory":"matchday_competition","amount":13.571987,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":22.866659,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":8.302,"disclosure":"aggregated"},
+        {"label":"Εμπορικά","category":"commercial","subcategory":"sponsorship_commercial","amount":0.622106,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA","category":"prize_money","subcategory":"competition_bonus","amount":20.056857,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":1.642439,"disclosure":"aggregated"},
+        {"label":"Αξία πώλησης ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":43.712266,"disclosure":"aggregated"},
+        {"label":"Αναπόσβεστο κόστος Ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":-3.968487,"disclosure":"aggregated"},
+        {
+          "label": "Λοιπά άμεσα κόστη μετεγγραφής ποδοσφαιριστών",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": -1.260928,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Μισθοί και δόσεις συμβολαίων","category":"wages_squad","amount":-30.419345,"disclosure":"aggregated"},
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.143774,"disclosure":"aggregated"},
-        {"label":"Λοιπές παροχές","category":"wages_squad","amount":-13.444917,"disclosure":"aggregated"},
-        {"label":"Ημερομίσθια και μισθοί","category":"admin_general_expense","amount":-10.587413,"disclosure":"aggregated"},
+        {"label":"Μισθοί και δόσεις συμβολαίων","category":"first_team_staff","subcategory":"wages_squad","amount":-30.419345,"disclosure":"aggregated"},
+        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"first_team_staff","subcategory":"wages_squad","amount":-0.143774,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές","category":"first_team_staff","subcategory":"wages_squad","amount":-13.444917,"disclosure":"aggregated"},
+        {"label":"Ημερομίσθια και μισθοί","category":"admin_general","subcategory":"admin_general_expense","amount":-10.587413,"disclosure":"aggregated"},
         {
           "label": "Ημερομίσθια και μισθοί εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -2.166897,
           "disclosure": "aggregated"
         },
-        {"label":"Εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-1.196315,"disclosure":"aggregated"},
+        {
+          "label": "Εισφορές κοινωνικής ασφάλισης",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.196315,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Εισφορές κοινωνικής ασφάλισης εργαζομένων άρθρου 47 Κανονισμού Αδειοδότησης",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.014679,
           "disclosure": "aggregated"
         },
-        {"label":"Πρόβλεψη αποζημίωσης Προσωπικού","category":"admin_general_expense","amount":-0.051657,"disclosure":"aggregated"},
-        {"label":"Απόσβεση ενσώματων ακινητοποιήσεων","category":"depreciation","amount":-0.295739,"disclosure":"aggregated"},
-        {"label":"Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων","category":"depreciation","amount":-0.35732,"disclosure":"aggregated"},
+        {
+          "label": "Πρόβλεψη αποζημίωσης Προσωπικού",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.051657,
+          "disclosure": "aggregated"
+        },
+        {"label":"Απόσβεση ενσώματων ακινητοποιήσεων","category":"depreciation","subcategory":"depreciation","amount":-0.295739,"disclosure":"aggregated"},
+        {
+          "label": "Απόσβεση δικαιωμάτων χρήσης περιουσιακών στοιχείων",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.35732,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Απόσβεση λοιπών ασώματων περιουσιακών στοιχείων (εκτός ποδοσφαιριστών)",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.012268,
           "disclosure": "aggregated"
         },
-        {"label":"Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση","category":"player_amortisation","amount":-13.506551,"disclosure":"aggregated"},
-        {"label":"Πρόβλεψη επισφαλών πελατών","category":"other_expenses","amount":-0.142924,"disclosure":"aggregated"},
-        {"label":"Έξοδα αγώνων","category":"match_organisation_expense","amount":-5.221055,"disclosure":"aggregated"},
-        {"label":"Έξοδα χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-1.429875,"disclosure":"aggregated"},
-        {"label":"Έξοδα ακινήτων & εγκαταστάσεων","category":"admin_general_expense","amount":-4.449371,"disclosure":"aggregated"},
-        {"label":"Λοιπά μη λειτουργικά έξοδα","category":"other_expenses","amount":-0.163839,"disclosure":"aggregated"},
-        {"label":"Έξοδα ποδοσφαιρικού τμήματος","category":"lump_football_operations_expense","amount":-3.100562,"disclosure":"aggregated"},
-        {"label":"Αμοιβές διαμεσολαβητών","category":"other_expenses","amount":-0.410088,"disclosure":"aggregated"},
-        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-14.10039,"disclosure":"aggregated"}
+        {
+          "label": "Απόσβεση δικαιωμάτων ποδοσφαιριστών και απομείωση",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -13.506551,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Πρόβλεψη επισφαλών πελατών",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.142924,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-5.221055,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα χορηγιών και διαφημίσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.429875,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.449371,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά μη λειτουργικά έξοδα",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.163839,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -3.100562,
+          "disclosure": "aggregated"
+        },
+        {"label":"Αμοιβές διαμεσολαβητών","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.410088,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-14.10039,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.869127,"tax":0.983935,"gross_debt":8.273661,"cash":7.559117},
       "official_totals": {"revenue":105.5449,"expenses":101.214979,"net_result":2.444729},

@@ -1,8 +1,17 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
-  "club": {"id":"rodajc-nl","name":"Roda JC","display_name":"Roda JC","country":"NL","reporting_currency":"EUR","fiscal_year_start":"07-01","sport":"futbol"},
+  "club": {
+    "id": "rodajc-nl",
+    "name": "Roda JC",
+    "display_name": "Roda JC",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
   "sources": [
     {
       "id": "rodajc-nl-wf-2024-2025-e1694c69",
@@ -23,13 +32,13 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Netto-omzet","category":"lump_football_operations","amount":7.877577,"disclosure":"aggregated"},
-        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":0.442997,"disclosure":"aggregated"}
+        {"label":"Netto-omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":7.877577,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_transfers","subcategory":"player_sales","amount":0.442997,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Personeelskosten","category":"wages_squad","amount":-5.316416,"disclosure":"aggregated"},
-        {"label":"Afschrijvingen","category":"depreciation","amount":-0.11552,"disclosure":"aggregated"},
-        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-3.691078,"disclosure":"aggregated"}
+        {"label":"Personeelskosten","category":"first_team_staff","subcategory":"wages_squad","amount":-5.316416,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen","category":"depreciation","subcategory":"depreciation","amount":-0.11552,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.691078,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.072486,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":8.320574,"expenses":9.123014,"net_result":-0.874926},

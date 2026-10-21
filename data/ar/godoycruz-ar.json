@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "AR",
     "reporting_currency": "ARS",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -32,77 +33,245 @@
       "management_id": "mansur",
       "fx": {"ref":"ARS@2020-06-30"},
       "revenue": [
-        {"label":"Ingresos Varios AFA","category":"other_income","amount":16.060122,"disclosure":"detailed"},
-        {"label":"Ingresos Venta Jugadores","category":"player_sales","amount":132.526834,"disclosure":"detailed"},
-        {"label":"Ingresos Varios","category":"other_income","amount":0.006019,"disclosure":"detailed"},
-        {"label":"Ingreso Fútbol Amateur","category":"youth_football","amount":3.652939,"disclosure":"detailed"},
-        {"label":"Ingreso por D° de TV y Transmisión","category":"broadcasting","amount":263.030344,"disclosure":"detailed"},
-        {"label":"Ingreso por Publicidad y Sponsorización","category":"sponsorship_commercial","amount":30.279651,"disclosure":"detailed"},
-        {"label":"Ingreso Cuota Sociales","category":"member_dues","amount":16.861385,"disclosure":"detailed"},
-        {"label":"Ingreso por Cuota Socio Fútbol","category":"member_dues","amount":6.621607,"disclosure":"detailed"},
-        {"label":"Ingreso por Plus de Actividades","category":"other_income","amount":1.954056,"disclosure":"detailed"},
-        {"label":"Ingreso por Otras Actividades Club","category":"other_income","amount":6.689911,"disclosure":"detailed"},
-        {"label":"Ingreso Cuotas Colegio","category":"education","amount":16.967374,"disclosure":"detailed"},
-        {"label":"Ingreso Adicionales Instituto","category":"education","amount":3.479392,"disclosure":"detailed"},
-        {"label":"Ingreso por Aporte DGE (Nota n°28)","category":"education","amount":11.611687,"disclosure":"detailed"},
-        {"label":"Ingreso por Venta de Entradas","category":"matchday_competition","amount":7.697923,"disclosure":"detailed"},
-        {"label":"Ingreso por Publicidad Revista","category":"sponsorship_commercial","amount":0.288106,"disclosure":"detailed"},
-        {"label":"Ingreso por Descuentos Comerciales","category":"other_income","amount":0.058276,"disclosure":"detailed"},
-        {"label":"Ingreso por Rescisión de Contrato","category":"player_sales","amount":2.351826,"disclosure":"detailed"},
-        {"label":"Ingreso por Derecho de Formación / Mec. Solidaridad","category":"player_sales","amount":1.847878,"disclosure":"detailed"},
-        {"label":"Ingreso por Subsidio","category":"other_income","amount":0.036858,"disclosure":"detailed"},
-        {"label":"Ingreso Recupero ART - Seguros","category":"other_income","amount":1.453859,"disclosure":"detailed"},
-        {"label":"Ingreso por Alquiler Instalaciones Deportivas","category":"other_income","amount":1.403526,"disclosure":"detailed"},
-        {"label":"Ingreso por Partido Amistoso","category":"matchday_competition","amount":18.229545,"disclosure":"detailed"},
-        {"label":"Ingreso por Derechos de Tanteo","category":"other_income","amount":38.591521,"disclosure":"detailed"},
-        {"label":"Ingresos Ayuda ATP","category":"other_income","amount":0.155697,"disclosure":"detailed"},
-        {"label":"Ingreso Acuerdo Deuda Clubes","category":"other_income","amount":32.812278,"disclosure":"detailed"}
+        {"label":"Ingresos Varios AFA","category":"other_revenue","subcategory":"other_income","amount":16.060122,"disclosure":"detailed"},
+        {"label":"Ingresos Venta Jugadores","category":"player_transfers","subcategory":"player_sales","amount":132.526834,"disclosure":"detailed"},
+        {"label":"Ingresos Varios","category":"other_revenue","subcategory":"other_income","amount":0.006019,"disclosure":"detailed"},
+        {"label":"Ingreso Fútbol Amateur","category":"other_sporting_sections","subcategory":"youth_football","amount":3.652939,"disclosure":"detailed"},
+        {"label":"Ingreso por D° de TV y Transmisión","category":"media_rights","subcategory":"broadcasting","amount":263.030344,"disclosure":"detailed"},
+        {
+          "label": "Ingreso por Publicidad y Sponsorización",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 30.279651,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingreso Cuota Sociales","category":"membership","subcategory":"member_dues","amount":16.861385,"disclosure":"detailed"},
+        {"label":"Ingreso por Cuota Socio Fútbol","category":"membership","subcategory":"member_dues","amount":6.621607,"disclosure":"detailed"},
+        {"label":"Ingreso por Plus de Actividades","category":"other_revenue","subcategory":"other_income","amount":1.954056,"disclosure":"detailed"},
+        {"label":"Ingreso por Otras Actividades Club","category":"other_revenue","subcategory":"other_income","amount":6.689911,"disclosure":"detailed"},
+        {"label":"Ingreso Cuotas Colegio","category":"non_sporting_activities","subcategory":"education","amount":16.967374,"disclosure":"detailed"},
+        {"label":"Ingreso Adicionales Instituto","category":"non_sporting_activities","subcategory":"education","amount":3.479392,"disclosure":"detailed"},
+        {
+          "label": "Ingreso por Aporte DGE (Nota n°28)",
+          "category": "non_sporting_activities",
+          "subcategory": "education",
+          "amount": 11.611687,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingreso por Venta de Entradas","category":"matchday","subcategory":"matchday_competition","amount":7.697923,"disclosure":"detailed"},
+        {"label":"Ingreso por Publicidad Revista","category":"commercial","subcategory":"sponsorship_commercial","amount":0.288106,"disclosure":"detailed"},
+        {"label":"Ingreso por Descuentos Comerciales","category":"other_revenue","subcategory":"other_income","amount":0.058276,"disclosure":"detailed"},
+        {"label":"Ingreso por Rescisión de Contrato","category":"player_transfers","subcategory":"player_sales","amount":2.351826,"disclosure":"detailed"},
+        {
+          "label": "Ingreso por Derecho de Formación / Mec. Solidaridad",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1.847878,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingreso por Subsidio","category":"other_revenue","subcategory":"other_income","amount":0.036858,"disclosure":"detailed"},
+        {"label":"Ingreso Recupero ART - Seguros","category":"other_revenue","subcategory":"other_income","amount":1.453859,"disclosure":"detailed"},
+        {
+          "label": "Ingreso por Alquiler Instalaciones Deportivas",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 1.403526,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingreso por Partido Amistoso","category":"matchday","subcategory":"matchday_competition","amount":18.229545,"disclosure":"detailed"},
+        {"label":"Ingreso por Derechos de Tanteo","category":"other_revenue","subcategory":"other_income","amount":38.591521,"disclosure":"detailed"},
+        {"label":"Ingresos Ayuda ATP","category":"other_revenue","subcategory":"other_income","amount":0.155697,"disclosure":"detailed"},
+        {"label":"Ingreso Acuerdo Deuda Clubes","category":"other_revenue","subcategory":"other_income","amount":32.812278,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Remuneración Plantel","category":"wages_squad","amount":-38.40606,"disclosure":"detailed"},
-        {"label":"Primas y Premios del Plantel","category":"wages_squad","amount":-127.472478,"disclosure":"detailed"},
-        {"label":"Cargas Sociales","category":"wages_squad","amount":-22.743992,"disclosure":"detailed"},
-        {"label":"Costo de Venta Jugadores","category":"player_amortisation","amount":-1.021288,"disclosure":"detailed"},
-        {"label":"Mecanismo de Solidaridad","category":"player_amortisation","amount":-11.125044,"disclosure":"detailed"},
-        {"label":"Gastos Específicos y de Organización","category":"match_organisation_expense","amount":-15.038198,"disclosure":"detailed"},
-        {"label":"Liga Mendocina de Fútbol","category":"match_organisation_expense","amount":-1.362001,"disclosure":"detailed"},
-        {"label":"AFA - Asociación del Fútbol Argentino","category":"match_organisation_expense","amount":-8.873756,"disclosure":"detailed"},
-        {"label":"FAA - Futbolistas Argentinos","category":"match_organisation_expense","amount":-0.134521,"disclosure":"detailed"},
-        {"label":"Departamento Médico","category":"wages_squad","amount":-7.742766,"disclosure":"detailed"},
-        {"label":"Departamento de Actividades Deportivas","category":"youth_other_sports_expense","amount":0,"disclosure":"detailed"},
-        {"label":"Servicios Prestados por DT y PF Inferiores","category":"youth_other_sports_expense","amount":-5.823969,"disclosure":"detailed"},
-        {"label":"Servicios Prestados por DT y PF Infantiles","category":"youth_other_sports_expense","amount":-1.718079,"disclosure":"detailed"},
-        {"label":"Gastos Generales Administración Fútbol Amateur","category":"youth_other_sports_expense","amount":-0.091933,"disclosure":"detailed"},
-        {"label":"Viáticos Fútbol Amateur Inferiores","category":"youth_other_sports_expense","amount":-0.14192,"disclosure":"detailed"},
-        {"label":"Servicios Prestados Reserva","category":"youth_other_sports_expense","amount":-0.645457,"disclosure":"detailed"},
-        {"label":"Temporada Pileta","category":"youth_other_sports_expense","amount":-2.376564,"disclosure":"detailed"},
-        {"label":"Gastos Generales de Administración Colegio","category":"education_expense","amount":-0.932078,"disclosure":"detailed"},
-        {"label":"Servicios Prestados Personal Colegio","category":"education_expense","amount":-1.559956,"disclosure":"detailed"},
-        {"label":"Remuneraciones y Cargas Sociales Colegio","category":"education_expense","amount":-22.206506,"disclosure":"detailed"},
-        {"label":"Deudores Incobrables Colegio","category":"education_expense","amount":-1.300694,"disclosure":"detailed"},
-        {"label":"Gastos Mantenimiento Inst. Deportivas","category":"admin_general_expense","amount":-11.043285,"disclosure":"detailed"},
-        {"label":"Gastos Generales de Administración Fútbol","category":"admin_general_expense","amount":-4.768357,"disclosure":"detailed"},
-        {"label":"Sistemas Informáticos","category":"admin_general_expense","amount":-3.395055,"disclosure":"detailed"},
-        {"label":"Gastos Impositivos","category":"admin_general_expense","amount":-0.650512,"disclosure":"detailed"},
-        {"label":"Impuestos Internos","category":"admin_general_expense","amount":-0.144879,"disclosure":"detailed"},
-        {"label":"Seguros","category":"admin_general_expense","amount":-0.301116,"disclosure":"detailed"},
-        {"label":"Remuneraciones y Cargas Sociales Club","category":"admin_general_expense","amount":-30.909864,"disclosure":"detailed"},
-        {"label":"Gastos Tarjeta de Crédito","category":"admin_general_expense","amount":-1.116866,"disclosure":"detailed"},
-        {"label":"Gastos Varios Administración Club","category":"admin_general_expense","amount":-1.903483,"disclosure":"detailed"},
-        {"label":"Gastos por Juicios Laborales","category":"admin_general_expense","amount":-0.99883,"disclosure":"detailed"},
-        {"label":"Indemnización Empleados","category":"admin_general_expense","amount":-0.274431,"disclosure":"detailed"},
-        {"label":"Departamento Jurídico","category":"admin_general_expense","amount":-2.006516,"disclosure":"detailed"},
-        {"label":"Honorarios Profesionales Club","category":"admin_general_expense","amount":-0.340747,"disclosure":"detailed"},
-        {"label":"Pérdida Retención - Percepción - Ganancia","category":"admin_general_expense","amount":-0.430507,"disclosure":"detailed"},
-        {"label":"Otras Amortizaciones","category":"other_amortisation","amount":-7.312084,"disclosure":"detailed"},
-        {"label":"Otros Gastos Deportivos","category":"other_expenses","amount":-54.510741,"disclosure":"detailed"},
-        {"label":"Otros Gastos de Gestión","category":"other_expenses","amount":-10.774997,"disclosure":"detailed"},
-        {"label":"Descuentos en Recibos Sociales","category":"other_expenses","amount":-2.507718,"disclosure":"detailed"},
-        {"label":"Egreso Obra Club","category":"other_expenses","amount":-2.983704,"disclosure":"detailed"},
-        {"label":"Egreso por Disciplina","category":"other_expenses","amount":-4.49409,"disclosure":"detailed"},
-        {"label":"Gastos Local Indumentaria","category":"other_expenses","amount":0,"disclosure":"detailed"},
-        {"label":"Deudores Incobrables Club","category":"other_expenses","amount":-2.440506,"disclosure":"detailed"},
-        {"label":"Pérdida por Finalización de Contrato","category":"other_expenses","amount":-0.209535,"disclosure":"detailed"}
+        {"label":"Remuneración Plantel","category":"first_team_staff","subcategory":"wages_squad","amount":-38.40606,"disclosure":"detailed"},
+        {"label":"Primas y Premios del Plantel","category":"first_team_staff","subcategory":"wages_squad","amount":-127.472478,"disclosure":"detailed"},
+        {"label":"Cargas Sociales","category":"first_team_staff","subcategory":"wages_squad","amount":-22.743992,"disclosure":"detailed"},
+        {
+          "label": "Costo de Venta Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1.021288,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Mecanismo de Solidaridad",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -11.125044,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Específicos y de Organización",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -15.038198,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Liga Mendocina de Fútbol",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.362001,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "AFA - Asociación del Fútbol Argentino",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -8.873756,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "FAA - Futbolistas Argentinos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.134521,
+          "disclosure": "detailed"
+        },
+        {"label":"Departamento Médico","category":"first_team_staff","subcategory":"wages_squad","amount":-7.742766,"disclosure":"detailed"},
+        {
+          "label": "Departamento de Actividades Deportivas",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": 0,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Servicios Prestados por DT y PF Inferiores",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -5.823969,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Servicios Prestados por DT y PF Infantiles",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -1.718079,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Generales Administración Fútbol Amateur",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.091933,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Viáticos Fútbol Amateur Inferiores",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.14192,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Servicios Prestados Reserva",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.645457,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Temporada Pileta",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -2.376564,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Generales de Administración Colegio",
+          "category": "non_sporting_activities",
+          "subcategory": "education_expense",
+          "amount": -0.932078,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Servicios Prestados Personal Colegio",
+          "category": "non_sporting_activities",
+          "subcategory": "education_expense",
+          "amount": -1.559956,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Remuneraciones y Cargas Sociales Colegio",
+          "category": "non_sporting_activities",
+          "subcategory": "education_expense",
+          "amount": -22.206506,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Deudores Incobrables Colegio",
+          "category": "non_sporting_activities",
+          "subcategory": "education_expense",
+          "amount": -1.300694,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Mantenimiento Inst. Deportivas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -11.043285,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Generales de Administración Fútbol",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.768357,
+          "disclosure": "detailed"
+        },
+        {"label":"Sistemas Informáticos","category":"admin_general","subcategory":"admin_general_expense","amount":-3.395055,"disclosure":"detailed"},
+        {"label":"Gastos Impositivos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.650512,"disclosure":"detailed"},
+        {"label":"Impuestos Internos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.144879,"disclosure":"detailed"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.301116,"disclosure":"detailed"},
+        {
+          "label": "Remuneraciones y Cargas Sociales Club",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -30.909864,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos Tarjeta de Crédito","category":"admin_general","subcategory":"admin_general_expense","amount":-1.116866,"disclosure":"detailed"},
+        {
+          "label": "Gastos Varios Administración Club",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.903483,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos por Juicios Laborales","category":"admin_general","subcategory":"admin_general_expense","amount":-0.99883,"disclosure":"detailed"},
+        {"label":"Indemnización Empleados","category":"admin_general","subcategory":"admin_general_expense","amount":-0.274431,"disclosure":"detailed"},
+        {"label":"Departamento Jurídico","category":"admin_general","subcategory":"admin_general_expense","amount":-2.006516,"disclosure":"detailed"},
+        {"label":"Honorarios Profesionales Club","category":"admin_general","subcategory":"admin_general_expense","amount":-0.340747,"disclosure":"detailed"},
+        {
+          "label": "Pérdida Retención - Percepción - Ganancia",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.430507,
+          "disclosure": "detailed"
+        },
+        {"label":"Otras Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-7.312084,"disclosure":"detailed"},
+        {"label":"Otros Gastos Deportivos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-54.510741,"disclosure":"detailed"},
+        {"label":"Otros Gastos de Gestión","category":"other_operating_expenses","subcategory":"other_expenses","amount":-10.774997,"disclosure":"detailed"},
+        {
+          "label": "Descuentos en Recibos Sociales",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.507718,
+          "disclosure": "detailed"
+        },
+        {"label":"Egreso Obra Club","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.983704,"disclosure":"detailed"},
+        {"label":"Egreso por Disciplina","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4.49409,"disclosure":"detailed"},
+        {"label":"Gastos Local Indumentaria","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"detailed"},
+        {"label":"Deudores Incobrables Club","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.440506,"disclosure":"detailed"},
+        {
+          "label": "Pérdida por Finalización de Contrato",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.209535,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-43.083991000000026,"tax":0,"gross_debt":80.537132,"cash":161.039724},
       "official_totals": {"revenue":614.668614,"expenses":414.235082,"net_result":157.349542}
