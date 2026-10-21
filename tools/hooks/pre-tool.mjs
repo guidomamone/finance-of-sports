@@ -110,7 +110,8 @@ function bashEscribeEnSkills(cmd) {
     new RegExp(`\\b(?:mv|cp|rm|touch|truncate)\\s+[^|;&\\n]*${S}`),
   ];
   if (destino.some((re) => re.test(sinCuerpos))) return true;
-  return /\b(?:python3?|node)\b/.test(cmd) && /\b(?:open|writeFileSync|writeFile|write_text|appendFileSync)\s*\([^)]*\.claude\/skills\//.test(cmd);
+  return /\b(?:python3?|node)\b/.test(cmd)
+    && /\b(?:open|writeFileSync|writeFile|write_text|appendFileSync|Path|shutil\.\w+|os\.(?:rename|replace|remove))\s*\([^)]*\.claude\/skills\//.test(cmd);
 }
 
 function skillsConOk(cmd) {

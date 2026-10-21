@@ -15,6 +15,8 @@ const casos = [
   ['skill: sed -i a skills', bash("sed -i 's/a/b/' .claude/skills/club-sourcing/SKILL.md"), 'deny', 'Bash no escribe'],
   ['skill: redirección a skills', bash("cat > .claude/skills/a/SKILL.md <<'EOF'\nhola\nEOF"), 'deny', 'Bash no escribe'],
   ['skill: python que abre skills', bash("python3 -c \"open('.claude/skills/a/SKILL.md','w').write('x')\""), 'deny', 'Bash no escribe'],
+  ['skill: pathlib y shutil a skills', bash("python3 -c \"from pathlib import Path; Path('.claude/skills/a/SKILL.md').write_text('x')\""), 'deny', 'Bash no escribe'],
+  ['skill: shutil.copy a skills', bash("python3 -c \"import shutil; shutil.copy('a.md', '.claude/skills/a/SKILL.md')\""), 'deny', 'Bash no escribe'],
   ['skill: tee y cp a skills', bash('echo x | tee .claude/skills/a/SKILL.md'), 'deny', 'Bash no escribe'],
   ['skill: git checkout pasa', bash('git checkout main -- .claude/skills/club-sourcing/SKILL.md'), 'pasa'],
   // Falsos positivos: el texto que se escribe nombra la ruta, pero el destino es otro archivo.
