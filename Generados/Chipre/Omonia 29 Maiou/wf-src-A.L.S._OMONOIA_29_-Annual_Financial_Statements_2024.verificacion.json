@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf",
  "md": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.md",
- "generado": "2026-10-21T14:00:34.824Z",
- "scriptHuella": "f2a64e48f42b",
+ "generado": "2026-10-21T17:24:47.840Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -12,7 +12,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "El estado de resultados de Omonia 29is Maiou (2023-24, club de la 2ª división chipriota) no trae ningún ingreso de televisión: sus ingresos son cuotas de socios, abonos, partidos, patrocinios, boutique, eventos, premium, departamento de investigación, sorteos y Kids Club",
+   "evidencia": "pág. 1 del visor, .md L19-30",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

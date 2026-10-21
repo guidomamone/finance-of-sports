@@ -567,6 +567,10 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-21): no editar 
 - Xinjiang Tianshan Leopard — sin-buscar: 2015 (cn-league1)
 - Yanbian Changbaishan — sin-buscar: 2015 (cn-league1)
 
+## Chipre (1 clubes, 1 club-años)
+
+- Omonia 29M — sin-buscar: 2025 (cy-firstdivision)
+
 ## Colombia (26 clubes, 64 club-años)
 
 - Uniautónoma — sin-buscar: 2015 (co-primeraA), 2014 (co-primeraA)
@@ -1293,7 +1297,7 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-21): no editar 
 - Güngören Belediyespor — sin-buscar: 2009 (tr-1lig)
 - Kartalspor — sin-buscar: 2009 (tr-1lig)
 
-## cy (27 clubes, 30 club-años)
+## cy (26 clubes, 28 club-años)
 
 - AEK Larnaca — sin-buscar: 2025 (cy-firstdivision)
 - AEL Limassol — sin-buscar: 2025 (cy-firstdivision)
@@ -1306,7 +1310,6 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-21): no editar 
 - Karmiotissa — sin-buscar: 2025 (cy-firstdivision)
 - Nea Salamis Famagusta — sin-buscar: 2025 (cy-firstdivision)
 - Omonia — sin-buscar: 2025 (cy-firstdivision)
-- Omonia 29M — sin-buscar: 2025 (cy-firstdivision), 2024 (cy-seconddivision)
 - Omonia Aradippou — sin-buscar: 2025 (cy-firstdivision), 2024 (cy-seconddivision)
 - Pafos — sin-buscar: 2025 (cy-firstdivision)
 - Achyronas-Onisilos — sin-buscar: 2024 (cy-seconddivision)

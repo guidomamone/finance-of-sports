@@ -323,6 +323,7 @@ const clubs = {
   'atleticobucaramanga-co': { id:'atleticobucaramanga-co', name:'Club Atlético Bucaramanga S.A.', displayName:'Atletico Bucaramanga', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#F3E638' },
   'rapidwien-at': { id:'rapidwien-at', name:'SK Rapid GmbH', displayName:'Rapid Wien', country:'AT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#009150' },
   'bathrugby-gb': { id:'bathrugby-gb', name:'Bath Rugby Limited', displayName:'Bath Rugby', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'rugby' },
+  'omonia29maiou-cy': { id:'omonia29maiou-cy', name:'Omonia 29 Maiou', displayName:'Omonia 29 Maiou', country:'CY', reportingCurrency:'EUR', fiscalYearStart:'06-01', sport:'futbol', brandColor:'#117143' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.

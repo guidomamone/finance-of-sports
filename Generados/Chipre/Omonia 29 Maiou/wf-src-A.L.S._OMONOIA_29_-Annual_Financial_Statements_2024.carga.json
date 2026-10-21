@@ -1,18 +1,14 @@
 {
  "pdf": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf",
- "generado": "2026-10-21T14:00:39.171Z",
+ "generado": "2026-10-21T17:24:49.691Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (omonia29maiou-cy)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
-  "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-05-31); pregunta en la cola (no frena)"
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-21, El estado de resultados de Omonia 29is Maiou (2023-24, club de la 2ª división chipriota) no trae ningún ingreso de televisión: sus ingresos son cuotas de socios, abonos, partidos, patrocinios, boutique, eventos, premium, departamento de investigación, sorteos y Kids Club)"
  ],
  "ejercicio": {
   "clubId": "omonia29maiou-cy",
@@ -433,7 +429,18 @@
  },
  "clubId": "omonia29maiou-cy",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "El estado de resultados de Omonia 29is Maiou (2023-24, club de la 2ª división chipriota) no trae ningún ingreso de televisión: sus ingresos son cuotas de socios, abonos, partidos, patrocinios, boutique, eventos, premium, departamento de investigación, sorteos y Kids Club",
+   "evidencia": "pág. 1 del visor, .md L19-30",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
  "seleccion": {
   "filas": 37,
   "notasUsadas": [],
@@ -1007,12 +1014,6 @@
    "amountNative": -0.00138
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -1055,10 +1056,9 @@
   "label": "Tipo de referencia del Banco Central Europeo al 2024-05-31"
  },
  "liga": {
-  "valor": null,
-  "fuente": "sin caché de rosters para cy (tools/club-league-reference/cy.json)",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "cy-seconddivision",
+  "fuente": "roster cacheado de \"2023–24 Cypriot Second Division\" (tools/club-league-reference/cy.json), coincidencia exacta \"Omonia 29M\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -1097,14 +1097,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "sin caché de rosters para cy (tools/club-league-reference/cy.json)",
-   "estado": "pendiente"
+   "valor": "cy-seconddivision",
+   "fuente": "roster cacheado de \"2023–24 Cypriot Second Division\" (tools/club-league-reference/cy.json), coincidencia exacta \"Omonia 29M\"",
+   "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 11,
   "lineasGasto": 26,
   "metaFilas": 0,

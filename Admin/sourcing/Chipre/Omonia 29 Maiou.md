@@ -13,3 +13,5 @@
 
 - Archivos `cfa-annual-financial-statements-<año>-club|consolidated.pdf` (club = solo la entidad; consolidated = grupo) y `cfa-oikonomikes-katastaseis-2023.pdf`. Elegir una entidad por ejercicio y no mezclar. Sin 2022 ni anteriores en la CFA.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2024 desde `Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf` (sourceId `omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024`).

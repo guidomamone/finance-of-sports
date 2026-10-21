@@ -52,6 +52,7 @@ const COUNTRIES = {
   TR: { name:'Turquía',   key:'country.TR', flag:'🇹🇷', region:'europa' },
   EE: { name:'Estonia', key:'country.EE', flag:'🇪🇪', region:'europa' },
   SCT: { name:'Escocia', key:'country.SCT', flag:'🏴󠁧󠁢󠁳󠁣󠁴󠁿', region:'europa' },
+  CY: { name:'Chipre', key:'country.CY', flag:'🇨🇾', region:'europa' },
 };
 
 // EL PAÍS DE UNA LIGA ES EL DE SU FEDERACIÓN; el de un CLUB, donde está. `club.country` sigue siendo el estado (el sufijo del id y la carpeta
