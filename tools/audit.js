@@ -1472,8 +1472,12 @@ function checkCategorizacion(api) {
       const rows = api.bucketize(lines, buckets, catchAll, null, (api.clubs[clubId] || {}).sport);
       const resto = Math.abs((rows.find(r => r.label === catchAll) || {}).value || 0);
       const pct = resto / total;
-      if (pct > 0.4) {
-        add('P2', 'catchall-dominante', `${ref(clubId, year)} ${sec}: el catch-all "${catchAll}" se lleva ${(pct * 100).toFixed(0)}% del total — Formato simplificado no dice casi nada para este ejercicio`);
+      // P3, no P2 (Auditora 4, 2ª corrida de P2 y P3): un catch-all grande es un dato para mirar, no un error de carga; el total cierra y la
+      // línea figura tal cual la fuente. Y no se cuenta cuando en esa fila caen una o dos líneas: ahí no hay nada que desglosar (una sola
+      // línea del documento, como "Otros ingresos" o "Otros gastos", ES el catch-all).
+      const lineasEnLaFila = ((rows.find(r => r.label === catchAll) || {}).items || []).length;
+      if (pct > 0.4 && lineasEnLaFila > 2) {
+        add('P3', 'catchall-dominante', `${ref(clubId, year)} ${sec}: el catch-all "${catchAll}" se lleva ${(pct * 100).toFixed(0)}% del total — Formato simplificado no dice casi nada para este ejercicio`);
       }
     }
   }
