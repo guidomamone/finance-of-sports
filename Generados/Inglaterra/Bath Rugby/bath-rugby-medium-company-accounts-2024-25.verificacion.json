@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
  "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.md",
- "generado": "2026-10-21T02:06:21.771Z",
- "scriptHuella": "342e019de972",
+ "generado": "2026-10-21T02:18:03.677Z",
+ "scriptHuella": "f4b024927cf8",
  "estado": "ok",
- "clubId": null,
+ "clubId": "bathrugby-gb",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -52,7 +52,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 0.039777999999998315
+   "dif": 0
   },
   {
    "nombre": "documento del año 2024",
@@ -62,15 +62,17 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: el desglose de \"TURNOVER\" se abre con una fila \"Diferencia en el documento\" de 39,778 (2026-10-21, 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 23,3); el Turnover del estado es 23.339.778. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.)"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 23.369825,
+  "ingresos": 23.409603,
   "gastos": 26.310648,
   "financiero": 0.127574,
   "impuesto": -0.250554,
@@ -111,6 +113,15 @@
    "pagina": 6,
    "linea": 173,
    "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Diferencia en el documento",
+   "lado": "ingreso",
+   "M": 0.039778,
+   "pagina": 20,
+   "linea": 709,
+   "origen": "nota que desglosa \"TURNOVER\"",
+   "categoria": "other_income"
   },
   {
    "etiqueta": "Other operating income",

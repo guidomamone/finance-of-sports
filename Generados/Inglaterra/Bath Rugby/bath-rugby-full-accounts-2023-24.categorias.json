@@ -1,0 +1,108 @@
+{
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.md",
+ "club": "bathrugby-gb",
+ "year": 2024,
+ "generatedAt": "2026-10-21T02:17:50.196Z",
+ "rubrosHuella": "3c8a3925d205f5ce2c2ff11f0c112452480b855d",
+ "jevHuella": "4f70df0ab586bf5347002eaa80d8ce31daaa1355",
+ "modelo": "sesión (Claude Code)",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Central income",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "page": 5,
+   "pendiente": false,
+   "ya": "central_income",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "central_income",
+   "confianza": 1
+  },
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "page": 5,
+   "pendiente": false,
+   "ya": "gate_receipts",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "gate_receipts",
+   "confianza": 1
+  },
+  {
+   "label": "Commercial activities",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "page": 5,
+   "pendiente": false,
+   "ya": "commercial_activities",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "commercial_activities",
+   "confianza": 1
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "page": 5,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Diferencia en el documento",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "page": 22,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "section": "estado",
+   "page": 22,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "section": "estado",
+   "page": 22,
+   "pendiente": false,
+   "ya": "lump_rugby_operations_expense",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "lump_rugby_operations_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "page": 22,
+   "pendiente": false,
+   "ya": "lump_rugby_operations_expense",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "lump_rugby_operations_expense",
+   "confianza": 1
+  }
+ ]
+}

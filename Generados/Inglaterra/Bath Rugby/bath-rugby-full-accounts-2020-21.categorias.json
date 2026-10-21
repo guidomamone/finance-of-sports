@@ -1,0 +1,77 @@
+{
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md",
+ "club": "bathrugby-gb",
+ "year": 2021,
+ "generatedAt": "2026-10-21T02:17:36.346Z",
+ "rubrosHuella": "b343602eb87fdfd744d76bfb64dc7fc4ea759f4d",
+ "jevHuella": "fa293173b429377bcb9857f6518d9fc55c120d12",
+ "modelo": "sesión (Claude Code)",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Turnover",
+   "lado": "revenue",
+   "section": "estado",
+   "page": 11,
+   "pendiente": true,
+   "jev": "lump_rugby_operations",
+   "jevConf": 0.5,
+   "escalon": 2,
+   "categoria": "lump_rugby_operations",
+   "confianza": 0.9,
+   "motivo": "2020-21 no abre el Turnover por tipo (el Strategic Report solo trae indicadores): monto real sin desglose"
+  },
+  {
+   "label": "Fair value movements",
+   "lado": "revenue",
+   "section": "estado",
+   "page": 11,
+   "pendiente": true,
+   "jev": "other_income",
+   "jevConf": 0.5,
+   "escalon": 2,
+   "categoria": "other_income",
+   "confianza": 0.9,
+   "motivo": "revaluación de la participación en Premiership Rugby (nota 5); votación 2 a 1 (CONVENCIONES-DATOS): other_income"
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "section": "estado",
+   "page": 11,
+   "pendiente": true,
+   "jev": "other_income",
+   "jevConf": 0.5,
+   "escalon": 2,
+   "categoria": "other_income",
+   "confianza": 0.9,
+   "motivo": "subsidios del gobierno y otros ingresos operativos varios (nota 4)"
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "section": "estado",
+   "page": 11,
+   "pendiente": true,
+   "jev": "lump_rugby_operations_expense",
+   "jevConf": 0.5,
+   "escalon": 2,
+   "categoria": "lump_rugby_operations_expense",
+   "confianza": 0.9,
+   "motivo": "gasto por función sin desglose por naturaleza (personal, partidos, academia adentro); decisión 12 del plan 248: bolsón"
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "page": 11,
+   "pendiente": true,
+   "jev": "lump_rugby_operations_expense",
+   "jevConf": 0.5,
+   "escalon": 2,
+   "categoria": "lump_rugby_operations_expense",
+   "confianza": 0.9,
+   "motivo": "gasto por función sin desglose por naturaleza; decisión 12 del plan 248: bolsón junto con Cost of sales"
+  }
+ ]
+}

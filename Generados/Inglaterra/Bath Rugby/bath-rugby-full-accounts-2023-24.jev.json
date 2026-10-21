@@ -1,0 +1,79 @@
+{
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.md",
+ "generatedAt": "2026-10-21T02:17:11.569Z",
+ "rubrosHuella": "3c8a3925d205f5ce2c2ff11f0c112452480b855d",
+ "rubros": [
+  {
+   "label": "Central income",
+   "lado": "revenue",
+   "page": 5,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "central_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 5,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "gate_receipts",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Commercial activities",
+   "lado": "revenue",
+   "page": 5,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "commercial_activities",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 5,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Diferencia en el documento",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado",
+   "choice": "lump_rugby_operations_expense",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado",
+   "choice": "lump_rugby_operations_expense",
+   "confidence": 0.5,
+   "origen": "sesión"
+  }
+ ]
+}
