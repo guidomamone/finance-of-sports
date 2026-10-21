@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 907 — Arreglo de la ruta relativa en /liga/ (2026-10-20) [340 · 342]
+
+- `index.html` lleva `<base href="/">`: tocar un club en `/liga/<id>` después de llegar desde la portada ya carga sus datos (antes pedía `/liga/data/...`), y los links a `fuentes.html` y `correcciones.html` desde esas rutas tampoco se rompen. Verificado con Burnley, rutas directas, atrás y adelante y a 375 px. ASSET_V 1561. Nuevo 342: el título al navegar y el `<base>` doble.
+
 ## Versión 906 — Bath Rugby, el primer club de otro deporte (2026-10-20) [248 · bath-gb · 340]
 
 - Bath Rugby (`bathrugby-gb`, Premiership Rugby) con sus 5 ejercicios, 2020-21 a 2024-25, cada uno con el resultado impreso; Rugby elegible en el selector y su liga en Ligas. `auditAll()`: 320 clubes, 3.718 checks, 0 no cierran. API ~US$ 0,51. Cinco reglas de categoría pasan a `CATEGORÍA (prompt, futbol)`. El personal de Bath queda sin separar (la nota no tiene rótulo). 248 cerrado.

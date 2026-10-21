@@ -31,8 +31,8 @@ el número de la izquierda es el orden de trabajo.
 * Lo que está en marcha va marcado en cada bloque.
 
 **C. Técnico**
-1. 340 (Pantallas 6): tocar un club en /liga/<id> falla («No se pudieron cargar los datos») si se llegó navegando desde la portada: `loadClubData` pide `/liga/data/...` (index.html no tiene `<base href="/">`). Probablemente también en producción
-2. 341 (Pipeline 11): los 12 arreglos que se hicieron a mano para cargar Bath (`frenados-por-script.jsonl`), para que la próxima carga no los repita
+1. 341 (Pipeline 11): los 12 arreglos que se hicieron a mano para cargar Bath (`frenados-por-script.jsonl`), para que la próxima carga no los repita
+2. 342: el título de la pestaña no cambia al navegar dentro de la app, y las páginas de `club/` y `liga/` llevan dos `<base>` (el del generador sobra)
 3. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 4. 249: API en dominio propio (el último de C; no construirla todavía)
 
@@ -136,10 +136,10 @@ el número de la izquierda es el orden de trabajo.
 338. CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
    (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
    `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
-340. RUTA RELATIVA EN /liga/ (Datos 4, 2026-10-20). Con la ruta propia del 241, entrar a una liga desde la app y tocar un club cuyos datos
-   no estaban cargados falla: `loadClubData` arma una ruta relativa y, con la URL en `/liga/<id>`, pide `/liga/data/...` (404). Probado con Burnley.
-   Las páginas generadas tienen `<base href="/">`; `index.html` no. Arreglo de Pantallas; verificar también en producción.
 341. LO QUE BATH SE HIZO A MANO (Datos 4, 2026-10-20). 12 defectos abiertos en `Admin/registros/frenados-por-script.jsonl` (alta sin liga ni
    deporte nuevos, rehacer una página, subtotal sin rótulo, redondeo de nota a mano, registro de validar-bloques, estadio y sponsor de rugby,
    fuente sin url, subir ASSET_V, reglas de fútbol al activar un deporte, alta que queda escrita, personal sin rótulo, caja por escala).
    Pipeline los toma por impacto, con la Auditora.
+342. TÍTULO AL NAVEGAR Y BASE DOBLE (Pantallas 6, 2026-10-20). El `<title>` queda el de la primera página cuando se navega dentro de la
+   app (afecta pestañas y lo que se comparte copiando la URL desde el navegador). `generate-club-pages.js` mete su `<base href="/">` y ahora
+   `index.html` ya trae uno: hay dos, inofensivo, pero sobra uno. Detalle en `Admin/sesiones/pantallas.md`.
