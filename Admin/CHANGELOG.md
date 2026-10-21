@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 912 — El sitio se prueba también abierto como archivo (2026-10-21) [340]
+
+- Regresión del 340: el `<base href="/">` de `index.html` rompía abrir el sitio desde el disco (sin estilos ni scripts). Regla en `Admin/PANTALLA.md`: cada cambio de pantalla se prueba servido y como archivo, y `index.html` no lleva `<base>` ni rutas que empiecen con `/`. En camino: el arreglo (Pantallas 6) y un chequeo P1 en `audit.js` (Pipeline 12).
+
 ## Versión 911 — La skill de arranque manda a publicar.mjs (2026-10-21) [341]
 
 - Sección 5 de `start-session-finance-of-sports-project`: después de una edición a mano se corre `node tools/publicar.mjs` en lugar de los generadores uno por uno; las fuentes se editan con `tools/fuente.mjs` (ok de Guido). Pipeline 12 sigue el 341.
