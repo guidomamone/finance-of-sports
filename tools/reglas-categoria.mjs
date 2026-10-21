@@ -47,23 +47,31 @@ export function reglasParaPrompt(deporte = 'futbol') {
   return leerReglasCategoria().flatMap((r) => r.promptItems.filter((x) => !x.deporte || x.deporte === deporte).map((x) => `- ${x.texto} (${r.titulo.replace(/\s*\(.*$/, '')})`));
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  const reglas = leerReglasCategoria(); const errores = [];
+// (to-do 341) Las frases CATEGORÍA (prompt) contra los deportes dados (por defecto, los activos): una regla sin deporte tiene que ser válida en cada uno. El alta de un deporte nuevo
+// (tools/catalogo-liga.mjs) la corre ANTES de activarlo, con el candidato agregado, y lista las reglas que quedarían inválidas. Devuelve { errores: [texto], reglas: [{ titulo, linea, deporte, texto, ok }] }.
+export function validarReglasPrompt({ activos = deportesActivos() } = {}) {
+  const reglas = leerReglasCategoria(); const errores = []; const detalle = [];
   // (to-do 339) las categorías válidas son las de la taxonomía del deporte (data/category-map.js, SPORT_TAXONOMIES); no se importa categorizar-claude.mjs: él importa este archivo
-  const clubs = readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8');
   // claves que una frase puede nombrar sin ser subcategorías de un deporte: las genéricas del 248 y las financieras del JSON
   const NO_SUBCATEGORIAS = new Set([...genericasIds(), 'profit_on_player_sales', 'asset_sales', 'net_interest', 'gross_debt', 'staff_cost', 'no_es_rubro']);
   for (const r of reglas) for (const x of r.promptItems) {
-    const q = `L${x.linea} (${r.titulo.slice(0, 50)})`;
-    if (x.deporte && !deportes().some((d) => d.id === x.deporte)) { errores.push(`${q}: el deporte «${x.deporte}» no es un id de SPORTS en data/leagues.js`); continue; }
+    const q = `L${x.linea} (${r.titulo.slice(0, 50)})`; const antes = errores.length;
+    if (x.deporte && !deportes().some((d) => d.id === x.deporte)) { errores.push(`${q}: el deporte «${x.deporte}» no es un id de SPORTS en data/leagues.js`); detalle.push({ titulo: r.titulo, linea: x.linea, deporte: x.deporte, texto: x.texto, ok: false }); continue; }
     const ids = [...new Set(x.texto.match(/\b[a-z]+(?:_[a-z]+)+\b/g) || [])].filter((i) => !NO_SUBCATEGORIAS.has(i));
-    const deDeporte = x.deporte ? [x.deporte] : deportesActivos();
+    const deDeporte = x.deporte ? [x.deporte] : activos;
     for (const id of ids) for (const d of deDeporte) {
       const t = categoriasDeDeporte(d);
       if (!t) errores.push(`${q}: nombra «${id}» y el deporte «${d}» no tiene taxonomía en category-map.js`);
       else if (!t.todas.has(id)) errores.push(`${q}: «${id}» no es una categoría de ${d}${x.deporte ? '' : ' (la regla es de todos los deportes activos: marcala con CATEGORÍA (prompt, <deporte>) o sacá el id de la frase)'}`);
     }
+    detalle.push({ titulo: r.titulo, linea: x.linea, deporte: x.deporte, texto: x.texto, ok: errores.length === antes });
   }
+  return { errores, reglas: detalle };
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const reglas = leerReglasCategoria(); const errores = validarReglasPrompt().errores;
+  const clubs = readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8');
   const ya = existsSync(APRENDIDAS) ? readFileSync(APRENDIDAS, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
   const faltan = [];
   for (const r of reglas) for (const e of r.ejemplos) {
