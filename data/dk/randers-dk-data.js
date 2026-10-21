@@ -31,6 +31,6 @@ window.CLUB_GENERIC_DATA["randers-dk"] = {
   presupuestoOverlayByYear: randersDkPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"randers-dk-aarsrapport-2022-23":{"id":"randers-dk-aarsrapport-2022-23","clubId":"randers-dk","title":"Randers FC A/S — Årsrapport 1. juli 2022 - 30. juni 2023","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"randers-dk-aarsrapport-2022-23":{"id":"randers-dk-aarsrapport-2022-23","clubId":"randers-dk","title":"Randers FC A/S — Årsrapport 1. juli 2022 - 30. juni 2023","type":"official_balance_sheet","reliability":"primary","url":"http://regnskaber.virk.dk/61804938/amNsb3VkczovLzAzLzVmL2ZlL2JkLzA0L2Q2MmMtNGQwNi1iNzAwLTgyYTQ5YjEzNWRiOQ.pdf"}});
 
 memberCountByClub["randers-dk"] = null;
