@@ -2,8 +2,8 @@
   "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.md",
   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.pdf",
   "club": "goias-br",
-  "year": null,
-  "generatedAt": "2026-10-21T14:12:55.538Z",
+  "year": 2019,
+  "generatedAt": "2026-10-21T14:36:22.782Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.207457
       ],
-      "glosa": "Costes y gastos de personal - Partidos"
+      "glosa": "Costos y gastos de personal - Partidos"
     },
     {
       "label": "Outros custos e despesas - Jogos",
@@ -64,7 +64,7 @@
       "values": [
         2.584446
       ],
-      "glosa": "Otros costes y gastos - Partidos"
+      "glosa": "Otros costos y gastos - Partidos"
     },
     {
       "label": "Taxas confederações e federações",
@@ -74,7 +74,7 @@
       "values": [
         0.918566
       ],
-      "glosa": "Tasas de confederaciones y federaciones"
+      "glosa": "Tasas de federaciones y confederaciones"
     },
     {
       "label": "Transportes",
@@ -114,7 +114,7 @@
       "values": [
         5.597466
       ],
-      "glosa": "Amortización de costes de jugadores contratados"
+      "glosa": "Amortización del costo de jugadores contratados"
     },
     {
       "label": "Amortização de custo de atletas formados",
@@ -124,7 +124,7 @@
       "values": [
         0.655035
       ],
-      "glosa": "Amortización de costes de jugadores formados"
+      "glosa": "Amortización del costo de jugadores formados"
     },
     {
       "label": "Amortização de custo de atletas em formação",
@@ -134,7 +134,7 @@
       "values": [
         2.515373
       ],
-      "glosa": "Amortización de costes de jugadores en formación"
+      "glosa": "Amortización del costo de jugadores en formación"
     },
     {
       "label": "Amortização de custo de cessão de direitos de imagem",
@@ -144,7 +144,7 @@
       "values": [
         3.49069
       ],
-      "glosa": "Amortización de costes de cesión de derechos de imagen"
+      "glosa": "Amortización del costo de cesión de derechos de imagen"
     },
     {
       "label": "Despesa com pessoal",
@@ -194,7 +194,7 @@
       "values": [
         0.075266
       ],
-      "glosa": "Obsequios"
+      "glosa": "Obsequios y atenciones"
     },
     {
       "label": "Alugueis",
@@ -254,7 +254,7 @@
       "values": [
         0.00568
       ],
-      "glosa": "Libros, revistas y publicaciones periódicas"
+      "glosa": "Libros, revistas y periódicos"
     },
     {
       "label": "Correios",
@@ -314,7 +314,7 @@
       "values": [
         1.899769
       ],
-      "glosa": "Gastos de materiales"
+      "glosa": "Gastos en materiales"
     },
     {
       "label": "Profissões regulamentadas",
@@ -324,7 +324,7 @@
       "values": [
         0.00135
       ],
-      "glosa": "Servicios profesionales colegiados"
+      "glosa": "Servicios de profesionales independientes"
     },
     {
       "label": "Outros serviços",

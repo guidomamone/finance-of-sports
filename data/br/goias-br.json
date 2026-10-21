@@ -124,6 +124,13 @@
       "title": "Goiás Esporte Clube — demonstracoes-contabeis-2020 (ejercicio 2020)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "goias-br-demonstracoes-contabeis-2018",
+      "club_id": "goias-br",
+      "title": "Goiás Esporte Clube — demonstracoes-contabeis-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "members": null,
@@ -977,6 +984,159 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.974389,"tax":0,"gross_debt":3.179515,"cash":1.435464},
       "official_totals": {"revenue":58.651219,"expenses":57.974704,"net_result":1.650903}
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-12-31",
+      "currency": "BRL",
+      "source_id": "goias-br-demonstracoes-contabeis-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2018-12-31"},
+      "revenue": [
+        {"label":"Bilheterias","category":"matchday","subcategory":"matchday_competition","amount":3.636535,"disclosure":"aggregated"},
+        {"label":"Direitos de transmissão de TV","category":"media_rights","subcategory":"broadcasting","amount":35.287107,"disclosure":"aggregated"},
+        {"label":"Premiação/participações","category":"prize_money","subcategory":"competition_bonus","amount":6.793361,"disclosure":"aggregated"},
+        {"label":"Transação de atletas","category":"player_transfers","subcategory":"player_sales","amount":22.630289,"disclosure":"aggregated"},
+        {
+          "label": "Patrocínio/ publicidade/propaganda",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 5.077342,
+          "disclosure": "aggregated"
+        },
+        {"label":"Mensalidades","category":"membership","subcategory":"member_dues","amount":4.569132,"disclosure":"aggregated"},
+        {"label":"Jogos lotéricos","category":"other_revenue","subcategory":"other_income","amount":2.207761,"disclosure":"aggregated"},
+        {"label":"Receitas patrimoniais","category":"other_revenue","subcategory":"other_income","amount":0.082645,"disclosure":"aggregated"},
+        {"label":"Outras receitas","category":"other_revenue","subcategory":"other_income","amount":0.509091,"disclosure":"aggregated"},
+        {"label":"(-) INSS receitas de bilheterias","category":"other_revenue","subcategory":"other_income","amount":-0.181827,"disclosure":"aggregated"},
+        {"label":"(-) Cortesia de ingressos","category":"matchday","subcategory":"matchday_competition","amount":-0.244072,"disclosure":"aggregated"},
+        {
+          "label": "(-) INSS direitos de transmissões/premiações/participações",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": -1.91265,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "(-) Direito de arena direitos de transmissões/premiações/participações",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": -1.98522,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "(-) INSS patrocínio/publicidade/propaganda",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -0.238758,
+          "disclosure": "aggregated"
+        },
+        {"label":"(-) Deduções de mensalidades","category":"membership","subcategory":"member_dues","amount":-0.569305,"disclosure":"aggregated"},
+        {"label":"(-) IRRF jogos lotéricos","category":"other_revenue","subcategory":"other_income","amount":-0.208633,"disclosure":"aggregated"},
+        {"label":"(-) INSS jogos lotéricos","category":"other_revenue","subcategory":"other_income","amount":-0.110388,"disclosure":"aggregated"},
+        {"label":"(-) Demais deduções das receitas","category":"other_revenue","subcategory":"other_income","amount":-0.191999,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Alugueis de estádios","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.354353,"disclosure":"aggregated"},
+        {"label":"Arbitragens","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.107634,"disclosure":"aggregated"},
+        {"label":"Exames antidoping","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.018972,"disclosure":"aggregated"},
+        {
+          "label": "Custos e despesas c/ pessoal - jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.233074,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Outros custos e despesas - jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.154605,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Taxas confederações e federações",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.706798,
+          "disclosure": "aggregated"
+        },
+        {"label":"Transportes","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.582358,"disclosure":"aggregated"},
+        {
+          "label": "Alimentação e estadias",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.797334,
+          "disclosure": "aggregated"
+        },
+        {"label":"Custos com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-35.930234,"disclosure":"aggregated"},
+        {
+          "label": "Amortização de custo de Atletas contratados",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.440824,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortização de custo de Atletas formados",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.684142,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortização de custo de Atletas em formação",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.201014,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortização de custos de cessão de direito de imagem",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.521896,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesas com pessoal","category":"admin_general","subcategory":"admin_general_expense","amount":-9.708832,"disclosure":"aggregated"},
+        {"label":"Combustíveis e lubrificantes","category":"admin_general","subcategory":"admin_general_expense","amount":-0.08045,"disclosure":"aggregated"},
+        {"label":"Manutenção e conservação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.365895,"disclosure":"aggregated"},
+        {"label":"Propaganda e publicidade","category":"admin_general","subcategory":"admin_general_expense","amount":-0.164201,"disclosure":"aggregated"},
+        {"label":"Brindes","category":"admin_general","subcategory":"admin_general_expense","amount":-0.021684,"disclosure":"aggregated"},
+        {"label":"Aluguéis","category":"admin_general","subcategory":"admin_general_expense","amount":-0.000895,"disclosure":"aggregated"},
+        {"label":"Despesas legais e judiciais","category":"admin_general","subcategory":"admin_general_expense","amount":-1.657501,"disclosure":"aggregated"},
+        {
+          "label": "Água, telefone, energia e internet",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.830448,
+          "disclosure": "aggregated"
+        },
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.372359,"disclosure":"aggregated"},
+        {"label":"Lanches e refeições","category":"admin_general","subcategory":"admin_general_expense","amount":-0.418215,"disclosure":"aggregated"},
+        {
+          "label": "Livros, revistas e periódicos",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.005463,
+          "disclosure": "aggregated"
+        },
+        {"label":"Correios","category":"admin_general","subcategory":"admin_general_expense","amount":-0.015673,"disclosure":"aggregated"},
+        {"label":"Transportes","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.007655,"disclosure":"aggregated"},
+        {"label":"Despesas administrativas","category":"admin_general","subcategory":"admin_general_expense","amount":-1.502704,"disclosure":"aggregated"},
+        {"label":"Depreciação","category":"depreciation","subcategory":"depreciation","amount":-0.840054,"disclosure":"aggregated"},
+        {"label":"Provisões para riscos","category":"admin_general","subcategory":"admin_general_expense","amount":2.063438,"disclosure":"aggregated"},
+        {"label":"Despesas com materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-1.136312,"disclosure":"aggregated"},
+        {"label":"Profissões regulamentadas","category":"admin_general","subcategory":"admin_general_expense","amount":-0.00244,"disclosure":"aggregated"},
+        {"label":"Outros serviços","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.007064,"disclosure":"aggregated"},
+        {"label":"Manutenção geral","category":"admin_general","subcategory":"admin_general_expense","amount":-0.380526,"disclosure":"aggregated"},
+        {"label":"Consultoria e assessoria","category":"admin_general","subcategory":"admin_general_expense","amount":-2.635741,"disclosure":"aggregated"},
+        {"label":"Serviços gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-1.315438,"disclosure":"aggregated"},
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.512121,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.167529,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":75.150413,"expenses":63.651475,"net_result":9.328969}
     },
     {
       "fiscal_year": 2020,

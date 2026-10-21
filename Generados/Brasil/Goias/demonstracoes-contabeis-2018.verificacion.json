@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.pdf",
  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.md",
- "generado": "2026-10-21T14:12:55.490Z",
+ "generado": "2026-10-21T14:50:43.382Z",
  "scriptHuella": "f2a64e48f42b",
  "estado": "ok",
  "clubId": "goias-br",
@@ -39,16 +39,23 @@
    "detalle": "la columna 2017 de este documento suma ingresos 58.651219; el sitio tiene 58.651217"
   },
   {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2018: 75.150413 en este documento y 75.150413 en demonstracoes-contabeis-2019.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "documento del año 2017",
    "ok": true,
    "detalle": "ingresos de 2017: 58.651219 en demonstracoes-contabeis-2017-2016.pdf y 58.651219 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"-\"): aceptar, en demonstracoes-contabeis-2015-2014.pdf"
+  "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"-\"): aceptar, en demonstracoes-contabeis-2015-2014.pdf",
+  "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"-\"): aceptar, en demonstracoes-contabeis-2015-2014.pdf",
+  "duda de extraer que no afecta la carga: b28 reclasifica 177.937,27 entre Patrocínio y Outras receitas respecto de la nota 17; la suma bruta es la misma."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 75.150413,

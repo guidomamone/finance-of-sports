@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.pdf",
- "generado": "2026-10-21T14:14:24.337Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Amortização de custo de cessão de direit\" -> wages_squad 0.6"
-  }
- ],
+ "generado": "2026-10-21T14:50:46.078Z",
+ "frena": [],
  "avisos": [],
  "ejercicio": {
   "clubId": "goias-br",
@@ -152,9 +147,9 @@
     "amountNative": -3.49069,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Despesa com pessoal",
@@ -659,11 +654,11 @@
    "origen": "verificacion (nota que desglosa \"Custos com futebol\")",
    "signoFijo": 3.49069,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): pago de derechos de imagen a atletas (.md L437), precedente Goiás Cessão de Direitos Imagem en wages_squad",
    "destino": "expense",
    "amountNative": -3.49069
   },
@@ -1065,10 +1060,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no aparece en los rosters cacheados de 2019 (br-serieB, br-serieC, br-serieD): puede haber jugado otra división",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "br-serieA",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1107,14 +1101,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no aparece en los rosters cacheados de 2019 (br-serieB, br-serieC, br-serieD): puede haber jugado otra división",
-   "estado": "pendiente"
+   "valor": "br-serieA",
+   "fuente": "data/club-leagues/br.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 1,
   "lineasGasto": 36,
   "metaFilas": 1,

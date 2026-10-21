@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.pdf",
- "generado": "2026-10-21T14:14:23.960Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"(-) INSS direitos de transmissões/premia\" -> broadcasting 0.6"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Otras secciones deportivas. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-21T14:50:45.920Z",
+ "frena": [],
  "avisos": [
-  "materialidad: \"Amortização de custos de cessão de direito de imagem\" va como wages_squad con 0.75 (las dudas de gastos suman 0.77% de su lado)"
+  "materialidad: \"Amortização de custos de cessão de direito de imagem\" va como wages_squad con 0.75 (las dudas de gastos suman 0.77% de su lado)",
+  "categorías en 0 aun después del reintento (se carga así): Otras secciones deportivas"
  ],
  "ejercicio": {
   "clubId": "goias-br",
@@ -136,9 +128,9 @@
     "amountNative": -1.91265,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "(-) Direito de arena direitos de transmissões/premiações/participações",
@@ -781,11 +773,11 @@
    "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
    "signoFijo": -1.91265,
    "cat": "broadcasting",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): INSS sobre derechos de TV y premiaciones (.md L908-919); TV es el 84 % de lo que deduce; precedente Goiás Direito de Arena en media_rights",
    "destino": "revenue",
    "amountNative": -1.91265
   },
@@ -1444,11 +1436,6 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Otras secciones deportivas"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")": "gastos con signo",
@@ -1490,8 +1477,8 @@
  },
  "liga": {
   "valor": "br-serieB",
-  "fuente": "roster cacheado de \"2018 Campeonato Brasileiro Série B\" (tools/club-league-reference/br.json), coincidencia exacta \"Goiás\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1531,13 +1518,13 @@
   },
   "liga": {
    "valor": "br-serieB",
-   "fuente": "roster cacheado de \"2018 Campeonato Brasileiro Série B\" (tools/club-league-reference/br.json), coincidencia exacta \"Goiás\"",
+   "fuente": "data/club-leagues/br.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 18,
   "lineasGasto": 36,
   "metaFilas": 1,

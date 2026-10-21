@@ -528,13 +528,90 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-21): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025)
+tools/dentro-de-otro.mjs (2026-10-21): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2021, 2022, 2023, 2024, 2025)
 ```
 
 ### Liga
 
 ```text
 tools/cargar.mjs (2026-10-21): br-serieA, verificado contra roster cacheado de "2020 Campeonato Brasileiro Série A" (tools/club-league-reference/br.json), coincidencia exacta "Goiás".
+```
+
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Goias/demonstracoes-contabeis-2018.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilheterias | pág. 22, precedente |
+| 2 | Direitos de transmissão de TV | pág. 22, precedente |
+| 3 | Premiação/participações | pág. 22, precedente |
+| 4 | Transação de atletas | pág. 22, precedente |
+| 5 | Patrocínio/ publicidade/propaganda | pág. 22, precedente |
+| 6 | Mensalidades | pág. 22, precedente |
+| 7 | Jogos lotéricos | pág. 22, precedente |
+| 8 | Receitas patrimoniais | pág. 22, precedente |
+| 9 | Outras receitas | pág. 22, precedente |
+| 10 | (-) INSS receitas de bilheterias | pág. 22, precedente |
+| 11 | (-) Cortesia de ingressos | pág. 22, Jev 0.98 |
+| 12 | (-) INSS direitos de transmissões/premiações/participações | pág. 22, precedente |
+| 13 | (-) Direito de arena direitos de transmissões/premiações/participações | pág. 22, Claude 0.8 |
+| 14 | (-) INSS patrocínio/publicidade/propaganda | pág. 22, precedente |
+| 15 | (-) Deduções de mensalidades | pág. 22, precedente |
+| 16 | (-) IRRF jogos lotéricos | pág. 22, precedente |
+| 17 | (-) INSS jogos lotéricos | pág. 22, precedente |
+| 18 | (-) Demais deduções das receitas | pág. 22, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Alugueis de estádios | pág. 23, precedente |
+| 2 | Arbitragens | pág. 23, precedente |
+| 3 | Exames antidoping | pág. 23, precedente |
+| 4 | Custos e despesas c/ pessoal - jogos | pág. 23, precedente |
+| 5 | Outros custos e despesas - jogos | pág. 23, precedente |
+| 6 | Taxas confederações e federações | pág. 23, precedente |
+| 7 | Transportes | pág. 23, precedente |
+| 8 | Alimentação e estadias | pág. 23, precedente |
+| 9 | Custos com pessoal | pág. 23, Jev 0.93 |
+| 10 | Amortização de custo de Atletas contratados | pág. 23, precedente |
+| 11 | Amortização de custo de Atletas formados | pág. 23, precedente |
+| 12 | Amortização de custo de Atletas em formação | pág. 23, Claude 0.8 |
+| 13 | Amortização de custos de cessão de direito de imagem | pág. 23, ? 0.75 |
+| 14 | Despesas com pessoal | pág. 23, Claude 0.85 |
+| 15 | Combustíveis e lubrificantes | pág. 23, precedente |
+| 16 | Manutenção e conservação | pág. 23, precedente |
+| 17 | Propaganda e publicidade | pág. 23, precedente |
+| 18 | Brindes | pág. 23, precedente |
+| 19 | Aluguéis | pág. 23, Jev 0.95 |
+| 20 | Despesas legais e judiciais | pág. 23, precedente |
+| 21 | Água, telefone, energia e internet | pág. 23, precedente |
+| 22 | Seguros | pág. 23, precedente |
+| 23 | Lanches e refeições | pág. 23, precedente |
+| 24 | Livros, revistas e periódicos | pág. 23, precedente |
+| 25 | Correios | pág. 23, precedente |
+| 26 | Transportes | pág. 23, precedente |
+| 27 | Despesas administrativas | pág. 23, precedente |
+| 28 | Depreciação | pág. 23, Jev 1 |
+| 29 | Provisões para riscos | pág. 23, Claude 0.88 |
+| 30 | Despesas com materiais | pág. 7, precedente |
+| 31 | Profissões regulamentadas | pág. 23, Jev 1 |
+| 32 | Outros serviços | pág. 23, Jev 0.97 |
+| 33 | Manutenção geral | pág. 23, Jev 1 |
+| 34 | Consultoria e assessoria | pág. 23, Jev 1 |
+| 35 | Serviços gerais | pág. 23, Jev 1 |
+| 36 | Despesas tributárias | pág. 7, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2017
@@ -1424,4 +1501,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2018
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
