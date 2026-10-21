@@ -696,6 +696,15 @@
   }
   // `window.FOS_RUTA` lo escribe la página generada; solo vale para la primera lectura: después manda la barra de direcciones.
   var rutaInicial = window.FOS_RUTA || null;
+  // El título de la pestaña sigue a la ruta. En la ruta por la que se entró queda el de la página generada (el que ven los buscadores).
+  var tituloEntrada = document.title, pathEntrada = location.pathname.replace(/\.html$/, '');
+  function tituloDe(ruta){
+    const sitio = I18N.t('site.name', 'El deporte en Números');
+    const m = /^\/(club|liga)\/(.+)$/.exec(ruta || '');
+    if(m && ruta === pathEntrada) return tituloEntrada;
+    const nombre = m && (m[1] === 'club' ? (clubs[m[2]] || {}).displayName : ((window.LEAGUES || {})[m[2]] || {}).name);
+    return nombre ? nombre + ' | ' + sitio : I18N.t('site.title', 'El deporte en Números | Las finanzas de los clubes, directo de la fuente');
+  }
   function escribirURL(modo){
     if(!urlLista || aplicandoURL) return;
     const p = new URLSearchParams(location.search);
@@ -707,6 +716,7 @@
     Object.entries(e).forEach(([k, v]) => p.set(k, v));
     const q = p.toString().replace(/%2C/g, ',').replace(/%3A/g, ':').replace(/%7E/g, '~');
     const path = ruta || (CON_RUTA ? '/' : location.pathname);
+    document.title = tituloDe(ruta);
     const url = path + (q ? '?' + q : '') + location.hash;
     if(url === location.pathname + location.search + location.hash) return;
     // Cambiar de club (o de liga) con la barra ya en una ruta suma una entrada al historial: "atrás" vuelve al anterior.
