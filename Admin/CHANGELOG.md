@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 901 — La pantalla arma las filas desde la categoría genérica (2026-10-20) [248 · bath-gb]
+
+- El motor y Formato simplificado leen `data/category-map.js` en vez de listas de fútbol: para el fútbol, idéntico en los 1.296 ejercicios y `auditAll()` en 0 que no cierran. Taxonomía `rugby-1` (`data/schema/taxonomy-rugby-1.json`). Bath 2023-24, página 22 retranscripta con Mistral (US$ 0,004).
+
 ## Versión 900 — Toda condición nueva pasa por la Auditora (2026-10-20) [339]
 
 - `Admin/CONVENCIONES.md`: una condición nueva en una tool la decide la Auditora con la sección 7 de su skill (antes iba a Guido); cualquier sesión de worktree le escribe directo a la Auditora abierta por esto, no solo los frenados del onboarding. Lo mismo en `club-or-year-onboarding` y en `worktree.md` de la skill de arranque (ok de Guido).

@@ -31,7 +31,7 @@ el número de la izquierda es el orden de trabajo.
 * Lo que está en marcha va marcado en cada bloque.
 
 **C. Técnico**
-1. 248 (Datos 4, Opus): esquema 2.0 migrado; falta la pantalla leyendo el mapa y después Bath Rugby (decisiones tomadas, votación hecha)
+1. 248 (Datos 4, Opus): esquema 2.0 y pantalla listos; falta cargar Bath Rugby
 2. 339 (Pipeline 11): que el pipeline sepa el deporte de cada club; las 4 condiciones aprobadas por Auditora 4 con cambios; codeando, Jev primero
 3. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 4. 249: API en dominio propio (el último de C; no construirla todavía)
