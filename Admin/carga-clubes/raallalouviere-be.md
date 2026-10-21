@@ -146,6 +146,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 0 (compuerta: documento siguiente): "Valeurs disponibles" pág. 8
+```
+
 ## 2022
 
 ### Ingresos
@@ -177,6 +181,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 0 (compuerta: documento siguiente): "Valeurs disponibles" pág. 8
+```
+
 ## 2021
 
 ### Ingresos
@@ -204,6 +212,10 @@ Generados/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.categori
 ```text
 tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 2 (compuerta: documento anterior): "Etablissements de crédit, dettes de location-finan" pág. 10 + "Dettes à plus d'un an échéant dans l'année" pág. 10
 ```
 
 ## 2020
@@ -234,6 +246,10 @@ tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 2 (compuerta: documento siguiente): "Etablissements de crédit, dettes de location-finan" pág. 11 + "Dettes à plus d'un an échéant dans l'année" pág. 11; cash escalón 0 (compuerta: documento anterior): "Valeurs disponibles" pág. 10
+```
+
 ## 2019
 
 ### Ingresos
@@ -260,6 +276,10 @@ Generados/Bélgica/RAAL La Louvière/jaarrekening-2019-06-30-individual.categori
 ```text
 tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 2 (compuerta: documento siguiente): "Etablissements de crédit, dettes de location-finan" pág. 11 + "Dettes à plus d'un an échéant dans l'année" pág. 11; cash escalón 0 (compuerta: documento siguiente): "Valeurs disponibles" pág. 10
 ```
 
 ### Liga
@@ -295,6 +315,10 @@ Generados/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.categori
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): reportType = official_balance_sheet. Revisión del alta (Claude, 2026-10-09): comptes annuels del ejercicio 12-05-2017 a 30-06-2018; no es presupuesto
 tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 0 (compuerta: documento siguiente): "Valeurs disponibles" pág. 9
 ```
 
 ## Fuentes
