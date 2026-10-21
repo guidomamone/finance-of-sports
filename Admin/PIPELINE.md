@@ -841,6 +841,13 @@ sección Rusia de `Admin/COMO-CORRE-EL-PROYECTO.html`; el detalle de cada escal�
   `escribir()` de `cargar.mjs`, que audita y revierte si da P0/P1) y `--reemplazar` reescribe los años ya cargados que tienen tablas de
   notas o formulario 6.
 
+## Dinamarca: los informes en XHTML (ESEF / iXBRL)
+
+`Clubes/Dinamarca/` trae informes `aarsrapport-AAAA-MM-DD.xhtml`. El registro, `lote.mjs` y `cargar.mjs` trabajan sobre PDFs, así que `tools/xhtml-aarsrapport.mjs` (gratis, determinista, sin IA ni OCR) deja cada XHTML en la forma que el pipeline ya usa: un `.md` fiel (texto visible, tablas `| celda |`, cifras tal cual se imprimen, sin soft hyphens ni lo oculto) y un `.pdf` al lado, que es el mismo XHTML impreso con Chrome sin ventana. El PDF sirve de ancla del registro y del «página N del visor»; NO es el documento oficial, y la validación `numeros-vs-texto-pdf` controla al conversor, no es una segunda lectura independiente. Por eso el motor queda como «xhtml-ixbrl (determinista)» (`Admin/registros/api/xhtml-ixbrl.jsonl`, que lee `inventario-transcripciones.mjs`) y en la primera línea del `.md`.
+- Compuerta (a): cada hecho iXBRL visible tiene su número impreso en el `.md`. Los que están dentro de un elemento `display:none` no se ven en el documento: se listan aparte y no frenan. Con un faltante visible no se escribe nada (Hvidovre 2025 no se convierte).
+- Compuerta (b): las marcas `--- pág. N ---` salen de ubicar cada línea en la página del PDF; con menos de 98 % ubicadas no se escribe nada y se dice cuáles líneas quedaron sin página (FC København PSE consolidado 2025: 12 %, no se convierte).
+- Después el documento es un PDF más: `lote.mjs` lo localiza, extrae, verifica y carga con las etapas de siempre; las compuertas aritméticas son las de siempre. Ensayo: `node tools/xhtml-aarsrapport.mjs "<xhtml>|<carpeta>"`; `--escribir` escribe el `.md` y el `.pdf` (no pisa los que existen; `--rehacer` sí).
+
 ## Caja y deuda (`tools/caja-deuda.mjs`)
 
 Comando aparte, con el club ya publicado: completa `cash` y `grossDebt` de cada año cargado donde el sitio tiene null (nunca pisa un valor
