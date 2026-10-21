@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 933 — documentos de grupo, áreas de toque de 44 px (2026-10-21) [361 · fleetwood-gb]
+
+- Votación 3 a 0, en CONVENCIONES-DATOS: un consolidado de grupo vale como documento del club si el club está en el grupo el ejercicio entero y lo ajeno pesa ≤ 10 % del turnover impreso. No cambia ningún año cargado; Fleetwood/Jaymel queda descartado. El freno que la aplica queda en la cola de Pipeline.
+- 361: hasta 700 px los controles fuera de Ligas llegan a 44 px; los links dentro de un texto agrandan su área sin mover nada. ASSET_V 1713.
+- ux.md: los casos que resolvió el 360, en pasado.
+
 ## Versión 932 — 345 cerrado, reglas para no trabarse, UX y COVID en pantalla (2026-10-21) [345 · 352 · 356 · 358 · 359 · 360 · girona-es, genoa-it, fiorentina-it, omonia29maiou-cy]
 - Datos: Girona 2021-23 recargado (resultado por venta de jugadores en su campo), Fiorentina 2020 y Genoa 2024 cargados y Atalanta 2022 recargado como tramos de transición, alta de Omonia 29 Maiou (Chipre, ligas nuevas), líneas del auditor y urls danesas del 359, 26 temporadas con segunda fuente RSSSF (358); Fleetwood (Jaymel) descartado.
 - Reglas: COVID y tramo corto (CONVENCIONES-DATOS), dos fuentes por liga, id de club nuevo por alta-club.mjs, registro de rarezas del documento, una tool que decide no lee solo una parte, lote de un solo tipo, «Terminado cuando:» en el TODO, lo que entra sin esperar a la Auditora, worktree trae main con --ff-only, eje ux en la auditoría.
