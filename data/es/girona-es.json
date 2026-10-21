@@ -149,8 +149,6 @@
       "management_id": null,
       "fx": {"ref":"EUR@2021-06-30"},
       "revenue": [
-        {"label":"a) Ventas","category":"undisclosed","subcategory":"lump_football_operations","amount":0.439514,"disclosure":"aggregated"},
-        {"label":"b) Prestaciones de servicios","category":"other_revenue","subcategory":"other_income","amount":10.280324,"disclosure":"aggregated"},
         {
           "label": "a) Ingresos accesorios y otros de gestión corriente",
           "category": "other_revenue",
@@ -174,10 +172,10 @@
         },
         {"label":"10. Excesos de provisiones","category":"other_revenue","subcategory":"other_income","amount":0.026219,"disclosure":"aggregated"},
         {
-          "label": "b) Resultados por enajenaciones y otras",
-          "category": "player_transfers",
-          "subcategory": "player_sales",
-          "amount": 8.495649,
+          "label": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 10.719838,
           "disclosure": "aggregated"
         },
         {"label":"13. Otros resultados","category":"other_revenue","subcategory":"other_income","amount":0.507457,"disclosure":"aggregated"}
@@ -238,8 +236,8 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.221731,"tax":2.318766,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":21.609729,"expenses":30.504812,"net_result":-6.798048},
+      "financial": {"profit_on_player_sales":8.495649,"asset_sales":0,"net_interest":-0.221731,"tax":2.318766,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":13.11408,"expenses":30.504812,"net_result":-6.798048},
       "adjustments": {
         "extra_rows": [
           {"label":"a) Por deudas con empresas del grupo y asociadas","amount":-0.063597},
@@ -249,10 +247,10 @@
         ],
         "no_breakdown": [
           {
-            "line": "a) Ventas",
+            "line": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
             "side": "revenue",
-            "amount": 0.439514,
-            "reason": "Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2020-21: a) Ventas como bolsón lump_football_operations, igual que Girona 2020 y 2025"
+            "amount": 10.719838,
+            "reason": "el documento no desglosa este renglón"
           }
         ]
       }
@@ -266,8 +264,6 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
-        {"label":"a) Ventas","category":"undisclosed","subcategory":"lump_football_operations","amount":2.495814,"disclosure":"aggregated"},
-        {"label":"b) Prestaciones de servicios","category":"other_revenue","subcategory":"other_income","amount":11.081896,"disclosure":"aggregated"},
         {
           "label": "a) Ingresos accesorios y otros de gestión corriente",
           "category": "other_revenue",
@@ -287,6 +283,13 @@
           "category": "other_revenue",
           "subcategory": "other_income",
           "amount": 0.20503,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 13.57771,
           "disclosure": "aggregated"
         },
         {"label":"13. Otros resultados","category":"other_revenue","subcategory":"other_income","amount":0.321417,"disclosure":"aggregated"}
@@ -338,17 +341,10 @@
           "subcategory": "player_amortisation",
           "amount": -2.377716,
           "disclosure": "aggregated"
-        },
-        {
-          "label": "b) Resultados por enajenaciones y otras",
-          "category": "other_operating_expenses",
-          "subcategory": "other_expenses",
-          "amount": -0.296866,
-          "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.53184,"tax":3.92802,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":16.651759,"expenses":32.065604,"net_result":-12.017664},
+      "financial": {"profit_on_player_sales":-0.296866,"asset_sales":0,"net_interest":-0.53184,"tax":3.92802,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":16.651759,"expenses":31.768738,"net_result":-12.017664},
       "adjustments": {
         "extra_rows": [
           {"label":"b 2) De terceros","amount":0.00975},
@@ -359,10 +355,10 @@
         ],
         "no_breakdown": [
           {
-            "line": "a) Ventas",
+            "line": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
             "side": "revenue",
-            "amount": 2.495814,
-            "reason": "Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2021-22: a) Ventas como bolsón, igual que 2020 y 2025"
+            "amount": 13.57771,
+            "reason": "el documento no desglosa este renglón"
           }
         ]
       }
@@ -376,8 +372,6 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
-        {"label":"a) Ventas","category":"undisclosed","subcategory":"lump_football_operations","amount":6.745909,"disclosure":"aggregated"},
-        {"label":"b) Prestaciones de servicios","category":"other_revenue","subcategory":"other_income","amount":53.099706,"disclosure":"aggregated"},
         {
           "label": "a) Ingresos accesorios y otros de gestión corriente",
           "category": "other_revenue",
@@ -397,6 +391,13 @@
           "category": "other_revenue",
           "subcategory": "other_income",
           "amount": 0.20503,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 59.845616,
           "disclosure": "aggregated"
         }
       ],
@@ -455,17 +456,10 @@
           "amount": -3.448327,
           "disclosure": "aggregated"
         },
-        {
-          "label": "b) Resultados por enajenaciones y otras",
-          "category": "other_operating_expenses",
-          "subcategory": "other_expenses",
-          "amount": -0.759576,
-          "disclosure": "aggregated"
-        },
         {"label":"13. Otros resultados","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.039442,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.773606,"tax":-0.254669,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":64.54342,"expenses":62.839541,"net_result":0.675604},
+      "financial": {"profit_on_player_sales":-0.759576,"asset_sales":0,"net_interest":-0.773606,"tax":-0.254669,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":64.54342,"expenses":62.079966,"net_result":0.675604},
       "adjustments": {
         "extra_rows": [
           {"label":"b 2) De terceros","amount":0.00271},
@@ -476,10 +470,10 @@
         ],
         "no_breakdown": [
           {
-            "line": "a) Ventas",
+            "line": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
             "side": "revenue",
-            "amount": 6.745909,
-            "reason": "Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2022-23: a) Ventas como bolsón, igual que 2020 y 2025"
+            "amount": 59.845616,
+            "reason": "el documento no desglosa este renglón"
           }
         ]
       }

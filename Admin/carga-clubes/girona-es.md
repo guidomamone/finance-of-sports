@@ -115,11 +115,10 @@ Generados/España/Girona FC/cuentas-anuales-2022-2023.categorias.json (escalón 
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | a) Ventas | pág. 15, precedente |
-| 2 | b) Prestaciones de servicios | pág. 15, Jev 0.98 |
-| 3 | a) Ingresos accesorios y otros de gestión corriente | pág. 15, precedente |
-| 4 | b) Subvenciones de explotación incorporadas al resultado del ejercicio | pág. 15, precedente |
-| 5 | 9. Imputación de subvenciones de inmovilizado no financiero y otras | pág. 15, precedente |
+| 1 | a) Ingresos accesorios y otros de gestión corriente | pág. 15, precedente |
+| 2 | b) Subvenciones de explotación incorporadas al resultado del ejercicio | pág. 15, precedente |
+| 3 | 9. Imputación de subvenciones de inmovilizado no financiero y otras | pág. 15, precedente |
+| 4 | Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto) | pág. 15, precedente |
 
 ### Gastos
 
@@ -137,12 +136,16 @@ Generados/España/Girona FC/cuentas-anuales-2022-2023.categorias.json (escalón 
 | 10 | c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales | pág. 15, precedente |
 | 11 | d) Otros gastos de gestión corriente | pág. 15, precedente |
 | 12 | 8. Amortización del inmovilizado | pág. 15, precedente |
-| 13 | b) Resultados por enajenaciones y otras | pág. 15, precedente |
-| 14 | 13. Otros resultados | pág. 16, precedente |
+| 13 | 13. Otros resultados | pág. 16, precedente |
 
 ### Meta
 
 ```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = -759.575,80. Auditora 5 (Girona 2021-23): pérdida por enajenaciones de jugadores a financial.profit_on_player_sales con su signo
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 59.845.615,57. Auditora 5 (Girona 2021-23): cifra de negocios en UNA línea lump_football_operations, como 2020 y 2025
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = no_es_rubro. Ya está dentro de la línea «Importe neto de la cifra de negocios» (L741); evita contarla dos veces (Auditora 5, Girona 2021-23)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = lump_football_operations. Criterio de Girona 2020 y 2025 (Auditora 5)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 0. Ya está dentro de la línea «Importe neto de la cifra de negocios» (L741 = L742 + L743): se saca para no contarla dos veces (Auditora 5, Girona 2021-23)
 tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
@@ -158,12 +161,11 @@ Generados/España/Girona FC/cuentas-anuales-2021-2022.categorias.json (escalón 
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | a) Ventas | pág. 14, precedente |
-| 2 | b) Prestaciones de servicios | pág. 14, Jev 0.98 |
-| 3 | a) Ingresos accesorios y otros de gestión corriente | pág. 14, precedente |
-| 4 | b) Subvenciones de explotación incorporadas al resultado del ejercicio | pág. 14, precedente |
-| 5 | 9. Imputación de subvenciones de inmovilizado no financiero y otras | pág. 14, precedente |
-| 6 | 13. Otros resultados | pág. 15, precedente |
+| 1 | a) Ingresos accesorios y otros de gestión corriente | pág. 14, precedente |
+| 2 | b) Subvenciones de explotación incorporadas al resultado del ejercicio | pág. 14, precedente |
+| 3 | 9. Imputación de subvenciones de inmovilizado no financiero y otras | pág. 14, precedente |
+| 4 | Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto) | pág. 14, precedente |
+| 5 | 13. Otros resultados | pág. 15, precedente |
 
 ### Gastos
 
@@ -180,11 +182,15 @@ Generados/España/Girona FC/cuentas-anuales-2021-2022.categorias.json (escalón 
 | 9 | c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales | pág. 14, precedente |
 | 10 | d) Otros gastos de gestión corriente | pág. 14, precedente |
 | 11 | 8. Amortización del inmovilizado | pág. 14, precedente |
-| 12 | b) Resultados por enajenaciones y otras | pág. 14, precedente |
 
 ### Meta
 
 ```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = -296.865,68. Auditora 5 (Girona 2021-23): pérdida por enajenaciones de jugadores a financial.profit_on_player_sales con su signo
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 13.577.710,19. Auditora 5 (Girona 2021-23): cifra de negocios en UNA línea lump_football_operations, como 2020 y 2025
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = no_es_rubro. Ya está dentro de la línea «Importe neto de la cifra de negocios» (L550 = a + b, L551-552); evita contarla dos veces (Auditora 5, Girona 2021-23)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = lump_football_operations. Criterio de Girona 2020 y 2025 (Auditora 5)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 0. Ya está dentro de la línea «Importe neto de la cifra de negocios» (L550 = L551 + L552): se saca para no contarla dos veces (Auditora 5, Girona 2021-23)
 tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
@@ -200,14 +206,12 @@ Generados/España/Girona FC/cuentas-anuales-2020-2021.categorias.json (escalón 
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | a) Ventas | pág. 15, precedente |
-| 2 | b) Prestaciones de servicios | pág. 15, Jev 0.98 |
-| 3 | a) Ingresos accesorios y otros de gestión corriente | pág. 15, precedente |
-| 4 | b) Subvenciones de explotación incorporadas al resultado del ejercicio | pág. 15, precedente |
-| 5 | 9. Imputación de subvenciones de inmovilizado no financiero y otras | pág. 15, precedente |
-| 6 | 10. Excesos de provisiones | pág. 15, Jev 1 |
-| 7 | b) Resultados por enajenaciones y otras | pág. 15, precedente |
-| 8 | 13. Otros resultados | pág. 16, precedente |
+| 1 | a) Ingresos accesorios y otros de gestión corriente | pág. 15, precedente |
+| 2 | b) Subvenciones de explotación incorporadas al resultado del ejercicio | pág. 15, precedente |
+| 3 | 9. Imputación de subvenciones de inmovilizado no financiero y otras | pág. 15, precedente |
+| 4 | 10. Excesos de provisiones | pág. 15, Jev 1 |
+| 5 | Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto) | pág. 15, precedente |
+| 6 | 13. Otros resultados | pág. 16, precedente |
 
 ### Gastos
 
@@ -229,6 +233,11 @@ Generados/España/Girona FC/cuentas-anuales-2020-2021.categorias.json (escalón 
 ### Meta
 
 ```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 8.495.649,09. Auditora 5 (Girona 2021-23, CONVENCIONES/club-data-mapping §2): el resultado por enajenaciones de jugadores va a financial.profit_on_player_sales, como Girona 2020 y 2025 y los demás clubes españoles
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 10.719.838,08. Auditora 5 (Girona 2021-23): la cifra de negocios va en UNA línea lump_football_operations, como Girona 2020 y 2025 (Admin/carga-clubes/girona-es.md); el documento solo separa Ventas de Prestaciones de servicios, sin desglosar por concepto
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = no_es_rubro. Ya está dentro de la línea «Importe neto de la cifra de negocios» (L673 = a + b, L675-676); evita contarla dos veces (Auditora 5, Girona 2021-23)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = lump_football_operations. Criterio de Girona 2020 y 2025: cifra de negocios sin desglosar por concepto = bolsón lump_football_operations (Auditora 5)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 0. Ya está dentro de la línea «Importe neto de la cifra de negocios» (L673 = L675 + L676): se saca para no contarla dos veces (Auditora 5, Girona 2021-23)
 tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
