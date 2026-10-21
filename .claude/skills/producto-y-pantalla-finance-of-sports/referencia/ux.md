@@ -53,6 +53,9 @@ Un punto que no aplica, o que no se pudo probar, se dice en la nota de la sesió
   `[...document.querySelectorAll('main button, main a, header button')].filter(e => e.offsetParent).filter(e => { const r = e.getBoundingClientRect(); return r.height < 44 || r.width < 44; })`
   y revisar cada uno.
   *Caso:* hoy, en la página de una liga, el nombre de cada club del ranking (`.lg-club`) mide 17 px de alto y «← Todas las ligas» 36 px.
+  *Excepción, ya decidida (no es un pendiente):* las etiquetas de estado (`.stat-tag`: COVID, PRESUPUESTO y las que sigan el mismo patrón)
+  miden unos 16 px de alto. Agrandarlas taparía el toque del elemento de al lado, su texto también está en el `aria-label` y lo que abren es
+  información de más. Una auditoría `ux` no las marca.
 - [ ] **Sin scroll horizontal de la página.** Una tabla ancha scrollea adentro de su caja.
   *Prueba:* `document.documentElement.scrollWidth <= innerWidth`.
   *Caso:* la matriz por nivel de la lista de Ligas scrollea en su caja.
