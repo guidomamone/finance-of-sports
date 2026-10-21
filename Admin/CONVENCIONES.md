@@ -104,6 +104,11 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   rutas y sus números son los de ese día. Ver `Admin/Archive/README.md`.
 
 - Cerrar un punto del TODO con una premisa vencida: skill `principal-finance-of-sports`.
+- UNA RAREZA DEL DOCUMENTO YA REVISADA SE REGISTRA UNA VEZ, DONDE LA LEEN LAS TOOLS: una errata (una fecha, un nombre o una cifra mal impresa)
+  que alguien ya miró y explicó va a `Admin/registros/rarezas.jsonl` (documento, línea, texto, qué es, veredicto con cita, autor y fecha), con
+  `node tools/rarezas.mjs`. Todo chequeo o tool que vuelve a encontrar algo raro en esa línea la da por vista y no la marca de nuevo. Una nota en
+  texto libre (en `auditoria.jsonl` o en el motivo de un ajuste) sirve para el lector, pero no para la tool: no alcanza. Caso: Goiás 2018, el informe
+  del auditor fechado «24 de abril de 2018» para el ejercicio 2018.
 - UN PUNTO NUEVO DEL TODO ARRANCA CON «Terminado cuando:»: la lista cerrada de lo que entra (clubes, años, archivos, tools) y la prueba de que está hecho. Lo que aparece en el camino y no está en esa lista va a un punto nuevo; el punto se cierra cuando se cumple su lista, aunque haya salido trabajo nuevo.
 - REGLA DE ESTILO (Versión 42, pedida por Guido: "los odio a los em dashes"): la regla vale SOLO para el
   texto visible del sitio (copy de la página, traducciones, notas públicas): no usar el carácter
