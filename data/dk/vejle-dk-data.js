@@ -3,6 +3,10 @@ const vejleDkRevenueLinesByYear = {
   2024: [
     {"rawLabel":"Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa explícitamente la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)","normalizedCategory":"lump_football_operations","amountNative":47.596,"disclosureLevel":"aggregated"},
   ],
+  2025: [
+    {"rawLabel":"Bruttofortjeneste","normalizedCategory":"lump_football_operations","amountNative":53.447,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Indtægter af kapitalandele i tilknyttede virksomheder","normalizedCategory":"other_income","amountNative":0.783,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const vejleDkExpenseLinesByYear = {
@@ -12,10 +16,19 @@ const vejleDkExpenseLinesByYear = {
     {"rawLabel":"Immaterielle anlægsaktiver — afskrivninger (amortisation for the year, registraciones de jugadores)","normalizedCategory":"player_amortisation","amountNative":-2.392,"disclosureLevel":"detailed"},
     {"rawLabel":"Materielle anlægsaktiver — afskrivninger (Andre anlæg, driftsmateriel og inventar + Indretning af lejede lokaler)","normalizedCategory":"depreciation","amountNative":-0.962,"disclosureLevel":"detailed","items":[["Andre anlæg, driftsmateriel og inventar",-0.828],["Indretning af lejede lokaler",-0.134]]},
   ],
+  2025: [
+    {"rawLabel":"Lønninger","normalizedCategory":"wages_squad","amountNative":-50.539,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Pensioner","normalizedCategory":"wages_squad","amountNative":-3.219,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Andre omkostninger til social sikring","normalizedCategory":"wages_squad","amountNative":-0.733,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Andre driftsomkostninger","normalizedCategory":"other_expenses","amountNative":-0.07,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Amortización derechos de jugadores","normalizedCategory":"player_amortisation","amountNative":-2.322,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Depreciación de materiales","normalizedCategory":"depreciation","amountNative":-1.012,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const vejleDkFiscalYearMeta = {
   2024: {"currency":"DKK","sourceId":"vejle-dk-aarsrapport-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.456,"tax":0.31,"grossDebt":24.128,"cash":4.548,"officialTotalRevenue":47.596,"officialTotalExpenses":52.027,"officialPAT":-3.665},
+  2025: {"currency":"DKK","sourceId":"vejle-dk-aarsrapport-2025-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.212,"tax":0.34,"grossDebt":null,"cash":null,"officialTotalRevenue":54.23,"officialTotalExpenses":57.895,"officialPAT":-3.537,"extraRows":[{"label":"Finansielle indtægter","value":0.046},{"label":"Finansielle omkostninger","value":-0.258},{"label":"Skat af årets resultat","value":0.34}],"sinDesglose":[{"renglon":"Bruttofortjeneste","lado":"revenue","importe":53.447,"motivo":"el documento no desglosa este renglón"}]},
 };
 
 const vejleDkPresupuestoOverlayByYear = {};
@@ -32,6 +45,6 @@ window.CLUB_GENERIC_DATA["vejle-dk"] = {
   presupuestoOverlayByYear: vejleDkPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"vejle-dk-aarsrapport-2024":{"id":"vejle-dk-aarsrapport-2024","clubId":"vejle-dk","title":"VB Alliancen A/S — Årsrapport 1. januar - 31. december 2024","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"vejle-dk-aarsrapport-2024":{"id":"vejle-dk-aarsrapport-2024","clubId":"vejle-dk","title":"VB Alliancen A/S — Årsrapport 1. januar - 31. december 2024","type":"official_balance_sheet","reliability":"primary"},"vejle-dk-aarsrapport-2025-12-31":{"id":"vejle-dk-aarsrapport-2025-12-31","clubId":"vejle-dk","title":"VB Alliancen A/S — aarsrapport-2025-12-31 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
 
 memberCountByClub["vejle-dk"] = null;

@@ -42,3 +42,5 @@
 - Ejercicios en disco ahora: 2016, 2017, 2019 (+2018 comparativo), 2020, 2021, 2022, 2023, 2024, 2025.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.pdf` (sourceId `chapecoense-br-demonstracoes-contabeis-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2019 desde `Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.pdf` (sourceId `chapecoense-br-demonstracoes-financeiras-2019`).

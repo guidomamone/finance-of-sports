@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "chapecoense-br",
@@ -33,6 +33,13 @@
       "id": "chapecoense-br-demonstracoes-contabeis-2022",
       "club_id": "chapecoense-br",
       "title": "Associação Chapecoense de Futebol — demonstracoes-contabeis-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "chapecoense-br-demonstracoes-financeiras-2019",
+      "club_id": "chapecoense-br",
+      "title": "Associação Chapecoense de Futebol — demonstracoes-financeiras-2019 (ejercicio 2019)",
       "type": "official_balance_sheet",
       "reliability": "primary"
     }
@@ -165,6 +172,100 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.910458,"tax":0,"gross_debt":0,"cash":8.340897},
       "official_totals": {"revenue":97.852554,"expenses":86.376908,"net_result":4.832261}
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "BRL",
+      "source_id": "chapecoense-br-demonstracoes-financeiras-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2019-12-31"},
+      "revenue": [
+        {"label":"Receita de Transmissão","category":"media_rights","subcategory":"broadcasting","amount":39.359,"disclosure":"aggregated"},
+        {"label":"Catarinense","category":"matchday","subcategory":"matchday_competition","amount":0.2,"disclosure":"aggregated"},
+        {"label":"Brasileirão Série A","category":"matchday","subcategory":"matchday_competition","amount":2.996,"disclosure":"aggregated"},
+        {"label":"Copa do Brasil","category":"matchday","subcategory":"matchday_competition","amount":0.173,"disclosure":"aggregated"},
+        {"label":"Sulamericana","category":"matchday","subcategory":"matchday_competition","amount":0.05,"disclosure":"aggregated"},
+        {"label":"Patrocínio","category":"commercial","subcategory":"sponsorship_commercial","amount":13.874,"disclosure":"aggregated"},
+        {"label":"Receita de Negociação de Atletas","category":"player_transfers","subcategory":"player_sales","amount":5.553,"disclosure":"aggregated"},
+        {"label":"Programa Sócio Torcedor","category":"membership","subcategory":"member_dues","amount":8.47,"disclosure":"aggregated"},
+        {"label":"Timemania","category":"other_revenue","subcategory":"other_income","amount":0.169,"disclosure":"aggregated"},
+        {
+          "label": "Royalties/Direito de Uso de Marca/Venda de produtos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.926,
+          "disclosure": "aggregated"
+        },
+        {"label":"Receitas Diversas","category":"other_revenue","subcategory":"other_income","amount":1.176,"disclosure":"aggregated"},
+        {"label":"Doações/PAF","category":"other_revenue","subcategory":"other_income","amount":0.001,"disclosure":"aggregated"},
+        {"label":"Receita Federações","category":"prize_money","subcategory":"competition_bonus","amount":7.496,"disclosure":"aggregated"},
+        {"label":"Deduções Tributárias e Sindicais","category":"other_revenue","subcategory":"other_income","amount":-6.542,"disclosure":"aggregated"},
+        {"label":"Dividendos Recebidos","category":"other_revenue","subcategory":"other_income","amount":0.015,"disclosure":"aggregated"},
+        {"label":"Outras Receitas Não Operacionais","category":"other_revenue","subcategory":"other_income","amount":0.055,"disclosure":"aggregated"},
+        {"label":"Recuperação de Despesas","category":"other_revenue","subcategory":"other_income","amount":1.234,"disclosure":"aggregated"},
+        {"label":"Venda de Imobilizado","category":"other_revenue","subcategory":"other_income","amount":0.04,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custos","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-0.244,"disclosure":"aggregated"},
+        {"label":"Ordenados e Salários","category":"first_team_staff","subcategory":"wages_squad","amount":-35.548,"disclosure":"aggregated"},
+        {"label":"Premiação","category":"first_team_staff","subcategory":"wages_squad","amount":-6.262,"disclosure":"aggregated"},
+        {"label":"INSS/FGTS/PIS","category":"first_team_staff","subcategory":"wages_squad","amount":-4.962,"disclosure":"aggregated"},
+        {
+          "label": "Amortização Direitos Fed. Econ.",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -8.796,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Despesas com Transf. Jogadores",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.372,
+          "disclosure": "aggregated"
+        },
+        {"label":"Indenizações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.516,"disclosure":"aggregated"},
+        {"label":"Alimentação","category":"first_team_staff","subcategory":"wages_squad","amount":-0.273,"disclosure":"aggregated"},
+        {"label":"Despesas Médicas","category":"first_team_staff","subcategory":"wages_squad","amount":-1.512,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"first_team_staff","subcategory":"wages_squad","amount":-0.919,"disclosure":"aggregated"},
+        {"label":"Outros Gastos c/ Pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-0.594,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.671,"disclosure":"aggregated"},
+        {"label":"Manutenção Imobilizado","category":"admin_general","subcategory":"admin_general_expense","amount":-0.104,"disclosure":"aggregated"},
+        {"label":"Manutenção Terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.688,"disclosure":"aggregated"},
+        {"label":"Manutenção Intangível","category":"admin_general","subcategory":"admin_general_expense","amount":-0.836,"disclosure":"aggregated"},
+        {"label":"Jogos e competições","category":"match_operations","subcategory":"match_organisation_expense","amount":-8.535,"disclosure":"aggregated"},
+        {"label":"Terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-9.978,"disclosure":"aggregated"},
+        {"label":"Bens de pq. Valor e depreciação","category":"depreciation","subcategory":"depreciation","amount":-0.794,"disclosure":"aggregated"},
+        {"label":"Direito de imagem","category":"first_team_staff","subcategory":"wages_squad","amount":-15.46,"disclosure":"aggregated"},
+        {"label":"Multas e Indenizações","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.034,"disclosure":"aggregated"},
+        {"label":"Propaganda e Publicidade","category":"admin_general","subcategory":"admin_general_expense","amount":-0.76,"disclosure":"aggregated"},
+        {"label":"Gastos Logísticos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.295,"disclosure":"aggregated"},
+        {"label":"Provisões Contingência","category":"admin_general","subcategory":"admin_general_expense","amount":-0.534,"disclosure":"aggregated"},
+        {"label":"Doações/Ajudas de Custo","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.029,"disclosure":"aggregated"},
+        {"label":"Água, Luz e Telefone","category":"admin_general","subcategory":"admin_general_expense","amount":-0.23,"disclosure":"aggregated"},
+        {"label":"Despesas Bancárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.147,"disclosure":"aggregated"},
+        {"label":"Mensalidades/Periódicos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.071,"disclosure":"aggregated"},
+        {"label":"Academia","category":"admin_general","subcategory":"admin_general_expense","amount":-0.003,"disclosure":"aggregated"},
+        {"label":"Demais Gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.717,"disclosure":"aggregated"},
+        {"label":"Tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.808,"disclosure":"aggregated"},
+        {"label":"Despesas diversas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.002,"disclosure":"aggregated"},
+        {
+          "label": "Custo dos Bens Patrimoniais Vendidos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.058,
+          "disclosure": "aggregated"
+        },
+        {"label":"Acidente Aéreo Chapecoense","category":"exceptional","subcategory":"exceptional_items","amount":-21.217,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.018,"tax":-0.013,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":75.245,"expenses":100.752,"net_result":-50.756},
+      "adjustments": {
+        "extra_rows": [{"label":"Receitas Financeiras","amount":0.392},{"label":"Despesas Financeiras","amount":-4.41},{"label":"IR e CSLL","amount":-0.013}],
+        "no_breakdown": [{"line":"Custos","side":"expense","amount":0.244,"reason":"el documento no desglosa este renglón"}]
+      }
     },
     {
       "fiscal_year": 2021,

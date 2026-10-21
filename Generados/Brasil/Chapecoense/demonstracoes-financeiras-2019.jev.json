@@ -1,0 +1,690 @@
+{
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md",
+ "generatedAt": "2026-10-21T13:45:03.570Z",
+ "rubrosHuella": "0cfee42097c9b03b344d1b7f5907bbc038718b91",
+ "rubros": [
+  {
+   "label": "Receita de Transmissão",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Copa do Brasil",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\"",
+   "choice": "competition_bonus",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de Negociação de Atletas",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Royalties/Direito de Uso de Marca/Venda de produtos",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas Diversas",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Doações/PAF",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita Federações",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "competition_bonus",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Deduções Tributárias e Sindicais",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Recuperação de Despesas",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Outras Receitas Operacionais\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Brasileirão Série A",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\"",
+   "choice": "matchday_competition",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "matchday_competition",
+     0.54
+    ],
+    [
+     "competition_bonus",
+     0.32
+    ],
+    [
+     "broadcasting",
+     0.08
+    ]
+   ],
+   "tokens": 1117
+  },
+  {
+   "label": "Custos",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Ordenados e Salários",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiação",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "INSS/FGTS/PIS",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Timemania",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Despesas com Transf. Jogadores",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Indenizações",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "exceptional_items",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Alimentação",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Médicas",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Gastos c/ Pessoal",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Manutenção Imobilizado",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Manutenção\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Manutenção Terceiros",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Manutenção\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Sulamericana",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\"",
+   "choice": "competition_bonus",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "competition_bonus",
+     0.7
+    ],
+    [
+     "broadcasting",
+     0.15
+    ],
+    [
+     "matchday_competition",
+     0.14
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Programa Sócio Torcedor",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Dividendos Recebidos",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Outras Receitas Operacionais\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Bens de pq. Valor e depreciação",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de imagem",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas e Indenizações",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Propaganda e Publicidade",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Logísticos",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Receitas Não Operacionais",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Outras Receitas Operacionais\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Doações/Ajudas de Custo",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Água, Luz e Telefone",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Bancárias",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Venda de Imobilizado",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Outras Receitas Operacionais\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Catarinense",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\"",
+   "choice": "matchday_competition",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "matchday_competition",
+     0.85
+    ],
+    [
+     "competition_bonus",
+     0.08
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Demais Gastos",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Tributárias",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas diversas",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Outras Despesas Operacionais\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo dos Bens Patrimoniais Vendidos",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Outras Despesas Operacionais\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortização Direitos Fed. Econ.",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Pessoal\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1145
+  },
+  {
+   "label": "Academia",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "youth_other_sports_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 910
+  },
+  {
+   "label": "Provisões Contingência",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Jogos e competições",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Mensalidades/Periódicos",
+   "lado": "expense",
+   "page": 49,
+   "section": "nota que desglosa \"Gerais e Adm.\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 933
+  },
+  {
+   "label": "Manutenção Intangível",
+   "lado": "expense",
+   "page": 48,
+   "section": "nota que desglosa \"Manutenção\"",
+   "choice": "other_amortisation",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_amortisation",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Acidente Aéreo Chapecoense",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Outras Despesas Operacionais\"",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 911
+  },
+  {
+   "label": "Terceiros",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1007
+  }
+ ]
+}

@@ -1,0 +1,220 @@
+{
+ "md": "Clubes/España/Girona FC/cuentas-anuales-2022-2023.md",
+ "generatedAt": "2026-10-21T13:45:04.530Z",
+ "rubrosHuella": "11b49c94e9d77a85b3a922d7b3efa1587c1a41e5",
+ "rubros": [
+  {
+   "label": "a) Ventas",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.35,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Prestaciones de servicios",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Ingresos accesorios y otros de gestión corriente",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "- Nacionales",
+   "lado": "expense",
+   "page": 99,
+   "section": "nota que desglosa \"a) Consumo de mercaderías\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Variación de existencias",
+   "lado": "expense",
+   "page": 99,
+   "section": "nota que desglosa \"a) Consumo de mercaderías\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Consumo de materias primas y otras materias consumibles",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Sueldos, salarios y asimilados",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Servicios exteriores",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Tributos",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Otros gastos de gestión corriente",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "8. Amortización del inmovilizado",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Resultados por enajenaciones y otras",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "13. Otros resultados",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "a) Seguridad Social a cargo de la empresa",
+   "lado": "expense",
+   "page": 100,
+   "section": "nota que desglosa \"b) Cargas sociales\"",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.79
+    ],
+    [
+     "wages_squad",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "c) Otras cargas sociales",
+   "lado": "expense",
+   "page": 100,
+   "section": "nota que desglosa \"b) Cargas sociales\"",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ]
+   ],
+   "tokens": 1021
+  }
+ ]
+}

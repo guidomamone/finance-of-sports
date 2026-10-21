@@ -1,24 +1,146 @@
 {
  "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
- "generado": "2026-10-21T12:52:10.835Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-21T13:55:36.520Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-21: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 14 documento(s) mirados)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "vejle-dk",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Bruttofortjeneste",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 53.447,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Indtægter af kapitalandele i tilknyttede virksomheder",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.783,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Lønninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -50.539,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioner",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -3.219,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre omkostninger til social sikring",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.733,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre driftsomkostninger",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.07,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortización derechos de jugadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -2.322,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Partición por notas (ver fila)"
+   },
+   {
+    "rawLabel": "Depreciación de materiales",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.012,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Partición por notas (ver fila)"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2025-12-31",
+   "sourceId": "vejle-dk-aarsrapport-2025-12-31",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.212,
+   "tax": 0.34,
+   "extraRows": [
+    {
+     "label": "Finansielle indtægter",
+     "value": 0.046
+    },
+    {
+     "label": "Finansielle omkostninger",
+     "value": -0.258
+    },
+    {
+     "label": "Skat af årets resultat",
+     "value": 0.34
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Bruttofortjeneste",
+     "lado": "revenue",
+     "importe": 53.447,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 54.23,
+   "officialTotalExpenses": 57.895,
+   "officialPAT": -3.537
+  },
+  "source": {
+   "id": "vejle-dk-aarsrapport-2025-12-31",
+   "clubId": "vejle-dk",
+   "title": "VB Alliancen A/S — aarsrapport-2025-12-31 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md",
  "reemplaza": false,
  "periodo": {
@@ -31,5 +153,319 @@
  },
  "clubId": "vejle-dk",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+   "campo": "cierre",
+   "valor": "2025-12-31",
+   "linea": null,
+   "motivo": "regnskabsåret 1. januar - 31. december 2025 (.md, declaración de la dirección)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "2.322",
+   "linea": 558,
+   "etiqueta": "Amortización derechos de jugadores (nota 4)",
+   "lado": "gasto",
+   "reemplaza": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "motivo": "Partir el total de 3.334 (L211) por las notas, como Vejle 2024: derechos de jugadores 2.322 (nota 4, L558) y materiales 1.012 (nota 5, L581); cierra exacto",
+   "evidencia": ".md L211, L558, L581",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "1.012",
+   "linea": 581,
+   "etiqueta": "Depreciación de materiales (nota 5)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Parte del total de 3.334 (L211): depreciación de materiales (nota 5, L581)",
+   "evidencia": ".md L211, L581",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Amortización derechos de jugadores (nota 4)",
+   "motivo": "Partición por notas (ver fila)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Depreciación de materiales (nota 5)",
+   "motivo": "Partición por notas (ver fila)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 11,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Bruttofortjeneste",
+   "page": 11,
+   "native": 53.447,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 53.447,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 53.447
+  },
+  {
+   "label": "Indtægter af kapitalandele i tilknyttede virksomheder",
+   "page": 11,
+   "native": 0.783,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "signoFijo": 0.783,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.783
+  },
+  {
+   "label": "Lønninger",
+   "page": 21,
+   "native": 50.539,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 50.539,
+   "cat": "wages_squad",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -50.539
+  },
+  {
+   "label": "Pensioner",
+   "page": 21,
+   "native": 3.219,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 3.219,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.219
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "page": 21,
+   "native": 0.733,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.733,
+   "cat": "wages_squad",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.733
+  },
+  {
+   "label": "Andre driftsomkostninger",
+   "page": 11,
+   "native": 0.07,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.07,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.07
+  },
+  {
+   "label": "Amortización derechos de jugadores",
+   "page": 21,
+   "native": 2.322,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 2.322,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Partición por notas (ver fila)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -2.322
+  },
+  {
+   "label": "Depreciación de materiales",
+   "page": 22,
+   "native": 1.012,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.012,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Partición por notas (ver fila)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -1.012
+  },
+  {
+   "label": "Finansielle indtægter",
+   "page": null,
+   "native": 0.046,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Finansielle omkostninger",
+   "page": null,
+   "native": -0.258,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skat af årets resultat",
+   "page": null,
+   "native": 0.34,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
+   "verificacion (nota que desglosa \"Personaleomkostninger\")": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 54.23,
+  "expSum": -57.895,
+  "officialTotalRevenue": 54.23,
+  "officialTotalExpenses": 57.895,
+  "officialPAT": -3.537,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -3.537,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 54.23
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 57.895
+  }
+ },
+ "liga": {
+  "valor": "dk-superliga",
+  "fuente": "roster cacheado de \"2025–26 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Vejle\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): regnskabsåret 1. januar - 31. december 2025 (.md, declaración de la dirección)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): regnskabsåret 1. januar - 31. december 2025 (.md, declaración de la dirección))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-21)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "DKK@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene DKK@2025-12-31 = 6.3527 (Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2025-12-30, 2025-12-31 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "vejle-dk-aarsrapport-2025-12-31",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "dk-superliga",
+   "fuente": "roster cacheado de \"2025–26 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Vejle\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 6,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

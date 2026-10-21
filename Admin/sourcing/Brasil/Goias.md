@@ -129,3 +129,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2024 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2024.pdf` (sourceId `goias-br-demonstracoes-contabeis-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2025 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf` (sourceId `goias-br-demonstracoes-contabeis-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2020 desde `Clubes/Brasil/Goias/demonstracoes-contabeis-2020.pdf` (sourceId `goias-br-demonstracoes-contabeis-2020`).

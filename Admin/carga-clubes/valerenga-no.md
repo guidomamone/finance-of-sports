@@ -85,6 +85,44 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): no-eliteserien, verificado contra roster cacheado de "2025 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Vålerenga".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sponsorinntekter | pág. 12, precedente |
+| 2 | Markeds- og medieinntekter | pág. 12, precedente |
+| 3 | Billettsalg (ordinært) | pág. 12, precedente |
+| 4 | Viderefakturert | pág. 12, precedente |
+| 5 | Diverse inntekter | pág. 12, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Varekostnad | pág. 6, precedente |
+| 2 | Lønninger | pág. 12, precedente |
+| 3 | Arbeidsgiveravgift | pág. 12, precedente |
+| 4 | Pensjonskostnader | pág. 12, precedente |
+| 5 | Andre ytelser | pág. 12, precedente |
+| 6 | Avskrivning av driftsmidler | pág. 6, precedente |
+| 7 | Nedskrivning av driftsmidler | pág. 6, Claude 0.85 |
+| 8 | Tap på fordringer | pág. 6, Jev 0.99 |
+| 9 | Annen driftskostnad | pág. 6, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): perimetro = individual. El club en el sitio es Vålerenga Fotball AS (individual, como el 2025 cargado); los otros documentos de 2024 son de Vålerenga Fotball Elite AS y de la asociación (FLI)
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2023
 
 ### Ingresos
@@ -243,4 +281,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### valerenga-no-aarsregnskap-valerenga-fotball-as-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

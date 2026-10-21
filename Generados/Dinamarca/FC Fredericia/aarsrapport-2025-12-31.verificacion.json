@@ -1,11 +1,11 @@
 {
  "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2025-12-31.pdf",
  "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2025-12-31.md",
- "generado": "2026-10-21T12:48:26.029Z",
+ "generado": "2026-10-21T13:45:00.936Z",
  "scriptHuella": "f2a64e48f42b",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "fredericia-dk",
- "year": null,
+ "year": 2025,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -24,9 +24,7 @@
    "fecha": "2026-10-21"
   }
  ],
- "cola": [
-  "e9c7554"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,20 +43,19 @@
    "dif": 1.9984014443252818e-15
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 15.2326 en aarsrapport-2024-12-31.pdf y 15.2326 en este documento (columna del año anterior)"
   },
   {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "duda de extraer que no afecta la carga: L263 es ganancia bruta (ingresos menos costos externos) bajo la ley danesa; no se informan ingresos brutos.",
-  "duda de extraer que no afecta la carga: El estado suma 46.968 al resultado (1.374.691+46.968=1.421.659) mientras la nota 2 lo muestra como - 46.968.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: El estado suma 46.968 al resultado (1.374.691+46.968=1.421.659) mientras la nota 2 lo muestra como - 46.968."
  ],
  "reintentar": null,
  "reintentado": false,
@@ -145,26 +142,5 @@
    "M": 0.046968,
    "linea": 279
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "055274dd7d57f3c6f26d6e6ad7bb77269d385fec",
-  "rango": [
-   260,
-   284
-  ],
-  "lineasCargadas": [
-   263,
-   437,
-   439,
-   441,
-   267,
-   269,
-   273,
-   275,
-   279
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 260 a 284 del .md):\nL260: | --- |\nL261: | (DKK) |  | Note |  | 2025 |  | 2024 |\nL262: | --- | --- | --- | --- | --- | --- | --- |\nL263: | Bruttofortjeneste |  |  |  | 23.917.977 |  | 15.232.600 |\nL264: | --- | --- | --- | --- | --- | --- | --- |\nL265: | Personaleomkostninger |  | 1 |  | - 20.021.289 |  | - 12.143.912 |\nL266: | --- | --- | --- | --- | --- | --- | --- |\nL267: | Af- og nedskrivninger af materielle anlægsaktiver |  |  |  | - 1.316.896 |  | - 116.200 |\nL268: | --- | --- | --- | --- | --- | --- | --- |\nL269: | Andre driftsomkostninger |  |  |  | - 1.189.089 |  | - 1.186.330 |\nL270: | --- | --- | --- | --- | --- | --- | --- |\nL271: | Resultat før finansielle poster |  |  |  | 1.390.703 |  | 1.786.158 |\nL272: | --- | --- | --- | --- | --- | --- | --- |\nL273: | Finansielle indtægter |  |  |  | 8.432 |  | 12.886 |\nL274: | --- | --- | --- | --- | --- | --- | --- |\nL275: | Finansielle omkostninger |  |  |  | - 24.444 |  | - 64.563 |\nL276: | --- | --- | --- | --- | --- | --- | --- |\nL277: | Resultat før skat |  |  |  | 1.374.691 |  | 1.734.481 |\nL278: | --- | --- | --- | --- | --- | --- | --- |\nL279: | Skat af årets resultat |  | 2 |  | 46.968 |  | 0 |\nL280: | --- | --- | --- | --- | --- | --- | --- |\nL281: | Årets resultat |  |  |  | 1.421.659 |  | 1.734.481 |\nL282: | --- | --- | --- | --- | --- | --- | --- |\nL284: --- pág. 10 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Bruttofortjeneste\" · 23.917977 · L263\n- gasto · \"Lønninger\" · 18.988901 · L437 (de una nota)\n- gasto · \"Pensioner\" · 0.66129 · L439 (de una nota)\n- gasto · \"Andre omkostninger til social sikring\" · 0.371098 · L441 (de una nota)\n- gasto · \"Af- og nedskrivninger af materielle anlægsaktiver\" · 1.316896 · L267\n- gasto · \"Andre driftsomkostninger\" · 1.189089 · L269\n- financiero · \"Finansielle indtægter\" · 0.008432 · L273\n- financiero · \"Finansielle omkostninger\" · -0.024444 · L275\n- impuesto · \"Skat af årets resultat\" · 0.046968 · L279"
- }
+ ]
 }

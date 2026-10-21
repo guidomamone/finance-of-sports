@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.pdf",
  "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.md",
- "generado": "2026-10-21T12:47:56.911Z",
+ "generado": "2026-10-21T14:00:34.697Z",
  "scriptHuella": "f2a64e48f42b",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "fredericia-dk",
  "year": 2024,
  "escala": {
@@ -24,9 +24,7 @@
    "fecha": "2026-10-21"
   }
  ],
- "cola": [
-  "fa471b5"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,6 +43,11 @@
    "dif": 2.220446049250313e-15
   },
   {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 15.2326 en este documento y 15.2326 en aarsrapport-2025-12-31.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 10.098024 en aarsrapport-2023-12-31.pdf y 10.098024 en este documento (columna del año anterior)"
@@ -55,7 +58,9 @@
    "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
- "notas": [],
+ "notas": [
+  "duda de extraer ya contestada para el club (perimetro, \"Bruttofortjeneste\"): aceptar, en aarsrapport-2024-12-31.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,

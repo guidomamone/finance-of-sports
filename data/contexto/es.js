@@ -32,6 +32,9 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'girona-es': {
     2020: {"estadio":"Montilivi","capacidad":13450,"sponsor":"Marathonbet","marca":"Puma","temporada":"2019–20 Segunda División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375355910"},
+    2021: {"estadio":"Montilivi","capacidad":11200,"marca":"Puma","temporada":"2020–21 Segunda División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375819652"},
+    2022: {"estadio":"Montilivi","capacidad":11200,"sponsor":"Gosbi","marca":"Puma","temporada":"2021–22 Segunda División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376309408"},
+    2023: {"estadio":"Montilivi","capacidad":13400,"sponsor":"Gosbi","marca":"Puma","temporada":"2022–23 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376841504"},
     2025: {"estadio":"Montilivi","capacidad":14624,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
   'levante-es': {

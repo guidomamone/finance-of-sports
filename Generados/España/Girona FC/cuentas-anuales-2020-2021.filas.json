@@ -1,0 +1,854 @@
+{
+ "pdf": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf",
+ "md": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.md",
+ "mdSha1": "9bc86b620c5c7bd0f0865b0c2864121849e4976a",
+ "ubicacionSha1": "8b258ad42a940af928673f49970a90f100f5a778",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T13:27:56.923Z",
+ "ubicacion": {
+  "estado": [
+   "b14",
+   "b15"
+  ],
+  "notas_ingresos": [
+   "b137"
+  ],
+  "notas_gastos": [
+   "b111",
+   "b112",
+   "b113",
+   "b135",
+   "b138"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b14",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales de céntimos (ej. 10.719.838,08); no se imprime frase de escala"
+  },
+  {
+   "bloque": "b15",
+   "escala": "unidades",
+   "evidencia": "Importes con céntimos (ej. -6.798.048,11); modelo oficial en euros"
+  },
+  {
+   "bloque": "b137",
+   "escala": "unidades",
+   "evidencia": "L4685: 'por importe de 540.151,68 euros'"
+  },
+  {
+   "bloque": "b111",
+   "escala": "unidades",
+   "evidencia": "Importes con céntimos coincidentes con el estado (328.701,83)"
+  },
+  {
+   "bloque": "b112",
+   "escala": "unidades",
+   "evidencia": "TOTAL 11.732.903,70 coincide con el estado"
+  },
+  {
+   "bloque": "b113",
+   "escala": "unidades",
+   "evidencia": "950.570,61 coincide con el estado"
+  },
+  {
+   "bloque": "b135",
+   "escala": "unidades",
+   "evidencia": "Seguridad Social 950.570,61 coincide con cargas sociales del estado"
+  },
+  {
+   "bloque": "b138",
+   "escala": "unidades",
+   "evidencia": "L4692: 'por importe de 32.694,19 euros'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b14",
+   "linea": 673,
+   "etiqueta": "1. Importe neto de la cifra de negocios",
+   "actual": "10.719.838,08",
+   "anterior": "14.998.071,72",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 675,
+   "etiqueta": "a) Ventas",
+   "actual": "439.514,28",
+   "anterior": "1.912.707,97",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 676,
+   "etiqueta": "b) Prestaciones de servicios",
+   "actual": "10.280.323,80",
+   "anterior": "13.085.363,75",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 680,
+   "etiqueta": "4. Aprovisionamientos",
+   "actual": "-481.435,36",
+   "anterior": "-646.275,76",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 681,
+   "etiqueta": "a) Consumo de mercaderías",
+   "actual": "-328.701,83",
+   "anterior": "-241.531,31",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 682,
+   "etiqueta": "b) Consumo de materias primas y otras materias consumibles",
+   "actual": "-36.535,53",
+   "anterior": "-51.201,95",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 684,
+   "etiqueta": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos",
+   "actual": "-116.198,00",
+   "anterior": "-353.542,50",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 685,
+   "etiqueta": "5. Otros ingresos de explotación",
+   "actual": "1.655.536,04",
+   "anterior": "11.682.275,20",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 686,
+   "etiqueta": "a) Ingresos accesorios y otros de gestión corriente",
+   "actual": "1.532.551,54",
+   "anterior": "11.542.127,60",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 687,
+   "etiqueta": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
+   "actual": "122.984,50",
+   "anterior": "140.147,60",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 688,
+   "etiqueta": "6. Gastos de personal",
+   "actual": "-14.324.631,70",
+   "anterior": "-24.012.792,30",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 689,
+   "etiqueta": "a) Sueldos, salarios y asimilados",
+   "actual": "-13.540.099,76",
+   "anterior": "-22.924.070,75",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 690,
+   "etiqueta": "b) Cargas sociales",
+   "actual": "-950.570,61",
+   "anterior": "-1.088.721,55",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 691,
+   "etiqueta": "c) Provisiones",
+   "actual": "166.038,67",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 692,
+   "etiqueta": "7. Otros gastos de explotación",
+   "actual": "-11.732.903,70",
+   "anterior": "-14.199.915,22",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 693,
+   "etiqueta": "a) Servicios exteriores",
+   "actual": "-5.804.418,93",
+   "anterior": "-7.704.090,27",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 694,
+   "etiqueta": "b) Tributos",
+   "actual": "-122.126,31",
+   "anterior": "-185.053,16",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 695,
+   "etiqueta": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+   "actual": "-5.610.583,46",
+   "anterior": "-5.957.271,79",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 696,
+   "etiqueta": "d) Otros gastos de gestión corriente",
+   "actual": "-195.775,00",
+   "anterior": "-353.500,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 698,
+   "etiqueta": "8. Amortización del inmovilizado",
+   "actual": "-3.965.841,70",
+   "anterior": "-5.016.471,37",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 699,
+   "etiqueta": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
+   "actual": "205.030,00",
+   "anterior": "205.030,02",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 700,
+   "etiqueta": "10. Excesos de provisiones",
+   "actual": "26.218,66",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 701,
+   "etiqueta": "11. Deterioro y resultado por enajenaciones del inmovilizado",
+   "actual": "8.495.649,09",
+   "anterior": "17.002.691,52",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 703,
+   "etiqueta": "b) Resultados por enajenaciones y otras",
+   "actual": "8.495.649,09",
+   "anterior": "17.002.691,52",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 721,
+   "etiqueta": "13. Otros resultados",
+   "actual": "507.457,49",
+   "anterior": "21.033,56",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 722,
+   "etiqueta": "A.1) RESULTADO DE EXPLOTACIÓN (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13)",
+   "actual": "-8.895.083,10",
+   "anterior": "33.647,37",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 731,
+   "etiqueta": "15. Gastos financieros",
+   "actual": "-221.122,76",
+   "anterior": "-38.784,86",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 732,
+   "etiqueta": "a) Por deudas con empresas del grupo y asociadas",
+   "actual": "-63.596,96",
+   "anterior": "-32.000,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 733,
+   "etiqueta": "b) Por deudas con terceros",
+   "actual": "-157.525,80",
+   "anterior": "-6.784,86",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 738,
+   "etiqueta": "17. Diferencias de cambio",
+   "actual": "-608,00",
+   "anterior": "-3.171,03",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 746,
+   "etiqueta": "A.2) RESULTADO FINANCIERO (14 + 15 + 16 + 17 + 18 + 19)",
+   "actual": "-221.730,76",
+   "anterior": "-41.955,89",
+   "tipo": "resultado",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 747,
+   "etiqueta": "A.3) RESULTADO ANTES DE IMPUESTOS (A.1 + A.2)",
+   "actual": "-9.116.813,86",
+   "anterior": "-8.308,52",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 748,
+   "etiqueta": "20. Impuestos sobre beneficios",
+   "actual": "2.318.765,75",
+   "anterior": "-25.771,66",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 749,
+   "etiqueta": "A.4) RESULTADO DEL EJERCICIO PROCEDENTE DE OPERACIONES CONTINUADAS (A.3 + 20)",
+   "actual": "-6.798.048,11",
+   "anterior": "-34.080,18",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 752,
+   "etiqueta": "A.5) RESULTADO DEL EJERCICIO (A.4 + 21)",
+   "actual": "-6.798.048,11",
+   "anterior": "-34.080,18",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b137",
+   "linea": 4689,
+   "etiqueta": "Ingresos de Ejercicios Anteriores",
+   "actual": "284.449,77",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "13. Otros resultados"
+  },
+  {
+   "bloque": "b137",
+   "linea": 4690,
+   "etiqueta": "Ingresos excepcionales",
+   "actual": "255.701,91",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "13. Otros resultados"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4077,
+   "etiqueta": "Consumo de mercaderías",
+   "actual": "328.701,83",
+   "anterior": "241.531,31",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "a) Consumo de mercaderías"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4078,
+   "etiqueta": "a) Compras, netas devol. y dto. de las cuales:",
+   "actual": "537.164,80",
+   "anterior": "173.374,32",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) Consumo de mercaderías"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4079,
+   "etiqueta": "- nacionales",
+   "actual": "537.164,80",
+   "anterior": "173.374,32",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) Compras, netas devol. y dto. de las cuales:"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4080,
+   "etiqueta": "- adquisiciones intracomunitarias",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) Compras, netas devol. y dto. de las cuales:"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4081,
+   "etiqueta": "b) Variación de existencias",
+   "actual": "-208.462,97",
+   "anterior": "68.156,99",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) Consumo de mercaderías"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4082,
+   "etiqueta": "Cons. de mat. primas y otras mat. consumibles",
+   "actual": "36.535,53",
+   "anterior": "51.201,95",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "b) Consumo de materias primas y otras materias consumibles"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4083,
+   "etiqueta": "a) Compras, netas devol. y dto. de las cuales:",
+   "actual": "36.535,53",
+   "anterior": "51.201,95",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) Consumo de materias primas y otras materias consumibles"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4084,
+   "etiqueta": "- Compras medicamentos y mat. sanitario",
+   "actual": "18.122,94",
+   "anterior": "24.823,83",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) Compras, netas devol. y dto. de las cuales:"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4085,
+   "etiqueta": "- Compra de otros aprovisionamientos",
+   "actual": "18.412,59",
+   "anterior": "26.378,12",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "a) Compras, netas devol. y dto. de las cuales:"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4086,
+   "etiqueta": "b) Variación de existencias",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) Consumo de materias primas y otras materias consumibles"
+  },
+  {
+   "bloque": "b111",
+   "linea": 4087,
+   "etiqueta": "Deterioro de mercaderías y materias primas",
+   "actual": "116.198,00",
+   "anterior": "353.542,50",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4108,
+   "etiqueta": "Comunicaciones",
+   "actual": "48.300,00",
+   "anterior": "59.550,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4109,
+   "etiqueta": "Arrendamientos y Cánones",
+   "actual": "766.218,44",
+   "anterior": "986.370,14",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4110,
+   "etiqueta": "Reparación y Conservación",
+   "actual": "153.363,31",
+   "anterior": "160.379,58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4111,
+   "etiqueta": "Servicios Profesionales Independientes",
+   "actual": "1.478.346,59",
+   "anterior": "3.297.900,06",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4112,
+   "etiqueta": "Primas de seguros",
+   "actual": "30.577,44",
+   "anterior": "24.149,42",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4113,
+   "etiqueta": "Servicios Bancarios y similares",
+   "actual": "18.745,50",
+   "anterior": "40.197,68",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4114,
+   "etiqueta": "Publicidad, propaganda y RR.PP",
+   "actual": "101.438,46",
+   "anterior": "181.605,84",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4115,
+   "etiqueta": "Suministros",
+   "actual": "132.617,01",
+   "anterior": "151.983,97",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4116,
+   "etiqueta": "Otros Servicios",
+   "actual": "3.074.812,18",
+   "anterior": "2.801.953,58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4117,
+   "etiqueta": "Derechos de arbitraje",
+   "actual": "284.452,52",
+   "anterior": "241.697,56",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4118,
+   "etiqueta": "Gastos de Adquisición de Jugadores",
+   "actual": "1.873.013,70",
+   "anterior": "2.865.000,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4119,
+   "etiqueta": "Desplazamientos",
+   "actual": "476.980,92",
+   "anterior": "456.842,59",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4120,
+   "etiqueta": "Cuota entidades deportivas",
+   "actual": "207.869,69",
+   "anterior": "59.432,48",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4121,
+   "etiqueta": "Gtos de participación competiciones deportivas",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4122,
+   "etiqueta": "Otros tributos",
+   "actual": "122.126,31",
+   "anterior": "185.053,16",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4123,
+   "etiqueta": "Subvenciones otras entidades deportivas",
+   "actual": "2.600.556,35",
+   "anterior": "2.273.979,87",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4124,
+   "etiqueta": "Sanciones Deportivas",
+   "actual": "30.083,00",
+   "anterior": "25.224,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4125,
+   "etiqueta": "Otras pérdidas en Gestión Corriente",
+   "actual": "195.775,00",
+   "anterior": "353.500,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4126,
+   "etiqueta": "Pdas deterioro créditos operaciones comer.",
+   "actual": "137.627,28",
+   "anterior": "35.095,29",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b112",
+   "linea": 4127,
+   "etiqueta": "**TOTAL**",
+   "actual": "11.732.903,70",
+   "anterior": "14.199.915,22",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "7. Otros gastos de explotación"
+  },
+  {
+   "bloque": "b113",
+   "linea": 4135,
+   "etiqueta": "Cargas sociales",
+   "actual": "950.570,61",
+   "anterior": "1.088.721,55",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "b) Cargas sociales"
+  },
+  {
+   "bloque": "b113",
+   "linea": 4136,
+   "etiqueta": "*a) Seguridad Social a cargo de la empresa*",
+   "actual": "950.570,61",
+   "anterior": "1.088.721,55",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) Cargas sociales"
+  },
+  {
+   "bloque": "b113",
+   "linea": 4137,
+   "etiqueta": "*b) Aportaciones y dotaciones para pensiones*",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) Cargas sociales"
+  },
+  {
+   "bloque": "b113",
+   "linea": 4138,
+   "etiqueta": "*c) Otras cargas sociales*",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "b) Cargas sociales"
+  },
+  {
+   "bloque": "b138",
+   "linea": 4696,
+   "etiqueta": "Gasto de ejercicios anteriores",
+   "actual": "13.418,94",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "13. Otros resultados"
+  },
+  {
+   "bloque": "b138",
+   "linea": 4697,
+   "etiqueta": "Otros gastos Excepcionales",
+   "actual": "19.275,25",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "13. Otros resultados"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 752,
+  "actual": "-6.798.048,11",
+  "anterior": "-34.080,18"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de gastos de personal por categoría y concepto (b135, L4631-L4639)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "6. Gastos de personal",
+   "texto": "Su total 16.523.775,72 (L4639) no concilia con Gastos de personal -14.324.631,70 (L688) y mezcla gastos de adquisición; es un cuadro por columnas sin columna de ejercicio claro.",
+   "bloques": [
+    "b135"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se mantienen las notas de ingresos y gastos excepcionales (b137, b138) como desglose de '13. Otros resultados'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "13. Otros resultados",
+   "texto": "540.151,68 - 32.694,19 = 507.457,49 coincide con L721, pero el renglón del estado no se llama igual.",
+   "bloques": [
+    "b137",
+    "b138",
+    "b15"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se carga la nota de otros gastos de explotación (b112) aunque incluya conceptos de tributos, deterioros y gestión corriente bajo un solo total?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "7. Otros gastos de explotación",
+   "texto": "El TOTAL L4127 coincide con L692; las partidas no se separan por subepígrafe y 'Pdas deterioro' (137.627,28) no iguala a L695 (-5.610.583,46).",
+   "bloques": [
+    "b112",
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de pérdidas y ganancias en euros con céntimos. No se imprimen totales de ingresos ni de gastos. Signos: el estado usa negativos para gastos; las notas en positivo. La partida 13. Otros resultados se desglosa en b137 y b138."
+}

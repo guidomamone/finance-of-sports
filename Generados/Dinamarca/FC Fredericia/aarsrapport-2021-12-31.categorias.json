@@ -1,0 +1,90 @@
+{
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2021-12-31.md",
+ "club": "fredericia-dk",
+ "year": 2021,
+ "generatedAt": "2026-10-21T13:45:11.835Z",
+ "rubrosHuella": "6e9c563f5f4aa9e2bce3ef8b0acfd328f3416646",
+ "jevHuella": "b2c29ea42c356b1d5cf7c2af7b706215e37ab940",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Bruttofortjeneste",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto",
+   "page": 9,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Sueldos y salarios",
+   "page": 14,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Pensiones",
+   "page": 14,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Otros gastos de seguridad social",
+   "page": 14,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Otros gastos de personal",
+   "page": 14,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización y deterioro del inmovilizado material",
+   "page": 9,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  }
+ ]
+}

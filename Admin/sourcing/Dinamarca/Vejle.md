@@ -34,3 +34,5 @@ otra entidad relacionada (ej. una sociedad de infraestructura/estadio) — no bl
 sesión de sourcing.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2025 desde `Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf` (sourceId `vejle-dk-aarsrapport-2025-12-31`).

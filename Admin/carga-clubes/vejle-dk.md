@@ -136,6 +136,49 @@ _de data/club-leagues/dk.js:_
 relegado recién al cierre de 2024/25 (fuera del ejercicio calendario 2024)
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/Vejle/aarsrapport-2025-12-31.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bruttofortjeneste | pág. 11, precedente |
+| 2 | Indtægter af kapitalandele i tilknyttede virksomheder | pág. 11, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Lønninger | pág. 21, Claude 0.9 |
+| 2 | Pensioner | pág. 21, Jev 1 |
+| 3 | Andre omkostninger til social sikring | pág. 21, Jev 0.97 |
+| 4 | Andre driftsomkostninger | pág. 11, precedente |
+| 5 | Amortización derechos de jugadores | pág. 21, precedente |
+| 6 | Depreciación de materiales | pág. 22, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cierre = 2025-12-31. regnskabsåret 1. januar - 31. december 2025 (.md, declaración de la dirección)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 2.322. Partir el total de 3.334 (L211) por las notas, como Vejle 2024: derechos de jugadores 2.322 (nota 4, L558) y materiales 1.012 (nota 5, L581); cierra exacto
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 1.012. Parte del total de 3.334 (L211): depreciación de materiales (nota 5, L581)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = player_amortisation. Partición por notas (ver fila)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = depreciation. Partición por notas (ver fila)
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-21): dk-superliga, verificado contra roster cacheado de "2025–26 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia exacta "Vejle".
+```
+
 ## 2024
 
 ### Meta
@@ -164,4 +207,12 @@ _note (data/):_
 
 ```text
 Sociedad profesional del fútbol de Vejle Boldklub (CVR 31 08 51 79, distinta de la asociación "VEJLE BOLDKLUB" CVR 68 04 67 18), con 65% de VB Plus ApS por el método de la participación (grupos de networking empresarial, no fútbol). El estado de resultados usa explícitamente la exención del § 32 de la Årsregnskabsloven (solo "Bruttofortjeneste"/Gross profit neto) — todo el revenue se cargó sin desglosar. Patrimonio neto negativo al cierre (-19,936 M DKK). La transcripción tenía las tablas desalineadas y el signo negativo de varios números convertido en un "7" literal; se reconstruyó cruzando la aritmética interna y 2 anclas de texto del informe de gestión (ver comentario de cabecera de data/dk/vejle-dk-data.js). Transcripción completa en Clubes/Dinamarca/Vejle/aarsrapport-2024-12-31.md.
+```
+
+### vejle-dk-aarsrapport-2025-12-31
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

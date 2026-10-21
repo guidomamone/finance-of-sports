@@ -19,6 +19,26 @@ const chapecoenseBrRevenueLinesByYear = {
     {"rawLabel":"Reversão de Provisão","normalizedCategory":"other_income","amountNative":2.5,"disclosureLevel":"detailed"},
     {"rawLabel":"Venda de Imobilizado","normalizedCategory":"other_income","amountNative":0.02049,"disclosureLevel":"detailed"},
   ],
+  2019: [
+    {"rawLabel":"Receita de Transmissão","normalizedCategory":"broadcasting","amountNative":39.359,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Catarinense","normalizedCategory":"matchday_competition","amountNative":0.2,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Brasileirão Série A","normalizedCategory":"matchday_competition","amountNative":2.996,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Copa do Brasil","normalizedCategory":"matchday_competition","amountNative":0.173,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sulamericana","normalizedCategory":"matchday_competition","amountNative":0.05,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Patrocínio","normalizedCategory":"sponsorship_commercial","amountNative":13.874,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Receita de Negociação de Atletas","normalizedCategory":"player_sales","amountNative":5.553,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Programa Sócio Torcedor","normalizedCategory":"member_dues","amountNative":8.47,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Timemania","normalizedCategory":"other_income","amountNative":0.169,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Royalties/Direito de Uso de Marca/Venda de produtos","normalizedCategory":"sponsorship_commercial","amountNative":0.926,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Receitas Diversas","normalizedCategory":"other_income","amountNative":1.176,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Doações/PAF","normalizedCategory":"other_income","amountNative":0.001,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Receita Federações","normalizedCategory":"competition_bonus","amountNative":7.496,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Deduções Tributárias e Sindicais","normalizedCategory":"other_income","amountNative":-6.542,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Dividendos Recebidos","normalizedCategory":"other_income","amountNative":0.015,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Outras Receitas Não Operacionais","normalizedCategory":"other_income","amountNative":0.055,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Recuperação de Despesas","normalizedCategory":"other_income","amountNative":1.234,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Venda de Imobilizado","normalizedCategory":"other_income","amountNative":0.04,"disclosureLevel":"aggregated"},
+  ],
   2021: [
     {"rawLabel":"Receita de Transmissão","normalizedCategory":"broadcasting","amountNative":41.593,"disclosureLevel":"detailed"},
     {"rawLabel":"Bilheteria","normalizedCategory":"matchday_competition","amountNative":0.392,"disclosureLevel":"detailed"},
@@ -70,6 +90,41 @@ const chapecoenseBrExpenseLinesByYear = {
     {"rawLabel":"Custo dos Bens Patrimoniais Vendidos","normalizedCategory":"other_expenses","amountNative":-0.025135,"disclosureLevel":"detailed"},
     {"rawLabel":"Despesas diversas","normalizedCategory":"other_expenses","amountNative":-0.022097,"disclosureLevel":"detailed"},
   ],
+  2019: [
+    {"rawLabel":"Custos","normalizedCategory":"lump_football_operations_expense","amountNative":-0.244,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ordenados e Salários","normalizedCategory":"wages_squad","amountNative":-35.548,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Premiação","normalizedCategory":"wages_squad","amountNative":-6.262,"disclosureLevel":"aggregated"},
+    {"rawLabel":"INSS/FGTS/PIS","normalizedCategory":"wages_squad","amountNative":-4.962,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Amortização Direitos Fed. Econ.","normalizedCategory":"player_amortisation","amountNative":-8.796,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Despesas com Transf. Jogadores","normalizedCategory":"other_expenses","amountNative":-0.372,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Indenizações","normalizedCategory":"wages_squad","amountNative":-0.516,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Alimentação","normalizedCategory":"wages_squad","amountNative":-0.273,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Despesas Médicas","normalizedCategory":"wages_squad","amountNative":-1.512,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Seguros","normalizedCategory":"wages_squad","amountNative":-0.919,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Outros Gastos c/ Pessoal","normalizedCategory":"wages_squad","amountNative":-0.594,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Materiais","normalizedCategory":"admin_general_expense","amountNative":-0.671,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Manutenção Imobilizado","normalizedCategory":"admin_general_expense","amountNative":-0.104,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Manutenção Terceiros","normalizedCategory":"admin_general_expense","amountNative":-0.688,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Manutenção Intangível","normalizedCategory":"admin_general_expense","amountNative":-0.836,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Jogos e competições","normalizedCategory":"match_organisation_expense","amountNative":-8.535,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Terceiros","normalizedCategory":"admin_general_expense","amountNative":-9.978,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Bens de pq. Valor e depreciação","normalizedCategory":"depreciation","amountNative":-0.794,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Direito de imagem","normalizedCategory":"wages_squad","amountNative":-15.46,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Multas e Indenizações","normalizedCategory":"other_expenses","amountNative":-0.034,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Propaganda e Publicidade","normalizedCategory":"admin_general_expense","amountNative":-0.76,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos Logísticos","normalizedCategory":"admin_general_expense","amountNative":-0.295,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Provisões Contingência","normalizedCategory":"admin_general_expense","amountNative":-0.534,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Doações/Ajudas de Custo","normalizedCategory":"other_expenses","amountNative":-0.029,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Água, Luz e Telefone","normalizedCategory":"admin_general_expense","amountNative":-0.23,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Despesas Bancárias","normalizedCategory":"admin_general_expense","amountNative":-0.147,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mensalidades/Periódicos","normalizedCategory":"admin_general_expense","amountNative":-0.071,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Academia","normalizedCategory":"admin_general_expense","amountNative":-0.003,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Demais Gastos","normalizedCategory":"other_expenses","amountNative":-0.717,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Tributárias","normalizedCategory":"admin_general_expense","amountNative":-0.808,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Despesas diversas","normalizedCategory":"other_expenses","amountNative":-0.002,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Custo dos Bens Patrimoniais Vendidos","normalizedCategory":"other_expenses","amountNative":-0.058,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Acidente Aéreo Chapecoense","normalizedCategory":"exceptional_items","amountNative":-21.217,"disclosureLevel":"aggregated"},
+  ],
   2021: [
     {"rawLabel":"Despesas com Pessoal","normalizedCategory":"wages_squad","amountNative":-46.456,"disclosureLevel":"detailed","items":[["Ordenados e Salários",-19.73],["Premiação",-4.226],["INSS/FGTS/PIS",-2.986],["Despesas com Transf. Jogadores",-0.136],["Indenizações",-16.06],["Alimentação",-0.12],["Despesas Médicas",-2.349],["Seguros",-0.562],["Outros Gastos c/ Pessoal",-0.287]]},
     {"rawLabel":"Direito de Imagem","normalizedCategory":"wages_squad","amountNative":-7.341,"disclosureLevel":"detailed"},
@@ -119,6 +174,7 @@ const chapecoenseBrExpenseLinesByYear = {
 
 const chapecoenseBrFiscalYearMeta = {
   2017: {"currency":"BRL","sourceId":"chapecoense-br-demonstracoes-2017","reportType":"official_balance_sheet","gestionId":"plinio-denes","fxRef":"BRL@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":2.910458,"tax":0,"grossDebt":0,"cash":8.340897,"officialTotalRevenue":97.852554,"officialTotalExpenses":86.376908,"officialPAT":4.832261},
+  2019: {"currency":"BRL","sourceId":"chapecoense-br-demonstracoes-financeiras-2019","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2019-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-4.018,"tax":-0.013,"grossDebt":null,"cash":null,"officialTotalRevenue":75.245,"officialTotalExpenses":100.752,"officialPAT":-50.756,"extraRows":[{"label":"Receitas Financeiras","value":0.392},{"label":"Despesas Financeiras","value":-4.41},{"label":"IR e CSLL","value":-0.013}],"sinDesglose":[{"renglon":"Custos","lado":"expense","importe":0.244,"motivo":"el documento no desglosa este renglón"}]},
   2021: {"currency":"BRL","sourceId":"chapecoense-br-demonstracoes-2020-2021","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2021-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-6.933,"tax":0,"grossDebt":14.025,"cash":2.531,"officialTotalRevenue":61.097,"officialTotalExpenses":68.328,"officialPAT":-59.872},
   2022: {"currency":"BRL","sourceId":"chapecoense-br-demonstracoes-contabeis-2022","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2022-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":4.824,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":36.714,"officialTotalExpenses":35.404,"officialPAT":6.134,"extraRows":[{"label":"Receitas Financeiras","value":6.491},{"label":"Despesas Financeiras","value":-1.667}],"sinDesglose":[{"renglon":"Custos","lado":"expense","importe":0.18,"motivo":"el documento no desglosa este renglón"}]},
 };
@@ -137,7 +193,7 @@ window.CLUB_GENERIC_DATA["chapecoense-br"] = {
   presupuestoOverlayByYear: chapecoenseBrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"chapecoense-br-demonstracoes-2017":{"id":"chapecoense-br-demonstracoes-2017","clubId":"chapecoense-br","title":"Demonstrações Financeiras (Controladora e Consolidado) findas em 31/12/2017","type":"official_balance_sheet","reliability":"primary","url":"https://www.chapecoense.com"},"chapecoense-br-demonstracoes-2020-2021":{"id":"chapecoense-br-demonstracoes-2020-2021","clubId":"chapecoense-br","title":"Demonstrações Financeiras da Controladora e Consolidado em conjunto com as Notas Explicativas, findas em 31/12/2021 e 31/12/2020","type":"official_balance_sheet","reliability":"primary","url":"https://www.fcf.com.br/"},"chapecoense-br-demonstracoes-contabeis-2022":{"id":"chapecoense-br-demonstracoes-contabeis-2022","clubId":"chapecoense-br","title":"Associação Chapecoense de Futebol — demonstracoes-contabeis-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"chapecoense-br-demonstracoes-2017":{"id":"chapecoense-br-demonstracoes-2017","clubId":"chapecoense-br","title":"Demonstrações Financeiras (Controladora e Consolidado) findas em 31/12/2017","type":"official_balance_sheet","reliability":"primary","url":"https://www.chapecoense.com"},"chapecoense-br-demonstracoes-2020-2021":{"id":"chapecoense-br-demonstracoes-2020-2021","clubId":"chapecoense-br","title":"Demonstrações Financeiras da Controladora e Consolidado em conjunto com as Notas Explicativas, findas em 31/12/2021 e 31/12/2020","type":"official_balance_sheet","reliability":"primary","url":"https://www.fcf.com.br/"},"chapecoense-br-demonstracoes-contabeis-2022":{"id":"chapecoense-br-demonstracoes-contabeis-2022","clubId":"chapecoense-br","title":"Associação Chapecoense de Futebol — demonstracoes-contabeis-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"},"chapecoense-br-demonstracoes-financeiras-2019":{"id":"chapecoense-br-demonstracoes-financeiras-2019","clubId":"chapecoense-br","title":"Associação Chapecoense de Futebol — demonstracoes-financeiras-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary"}});
 
 gestionesByClub["chapecoense-br"] = {"sinconfirmar":{"nombre":"Gestión sin confirmar en detalle (cambio de Conselho Administrativo el 14/12/2021; balance firmado por Nei Roque Mohr, Presidente)","firstYear":2021,"lastYear":2021},"plinio-denes":{"nombre":"Plinio David De Nes Filho","firstYear":2017,"lastYear":2017}};
 

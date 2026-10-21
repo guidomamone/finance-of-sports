@@ -103,6 +103,22 @@ window.RANKINGS["nl-eredivisie"] = {
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"fcemmen-nl", revenue:9.699, reportType:"official_balance_sheet",
+        sourceId:"fcemmen-nl-f-04-fce-jaarverslag-2020-2021-incl-jaarcijfers-def",
+        mix:[["Comercial / Sponsors",4.346],["Estadio",0.273],["Televisión",2.656],["Premios por competencias",0.434],["Otros ingresos",1.99]] },
+    ],
+  },
+  2020: {
+    leagueSize: null,
+    clubs: [
+      { id:"fcemmen-nl", revenue:11.072, reportType:"official_balance_sheet",
+        sourceId:"fcemmen-nl-f-04-fce-jaarverslag-2019-2020-incl-jaarcijfers-def",
+        mix:[["Comercial / Sponsors",4.544],["Estadio",1.889],["Televisión",2.206],["Premios por competencias",0.353],["Venta de Jugadores",0.96],["Otros ingresos",1.12]] },
+    ],
+  },
   2019: {
     leagueSize: 18,
     wiki: {"t":"2018–19 Eredivisie","lang":"en","at":"2026-10-19","n":18},

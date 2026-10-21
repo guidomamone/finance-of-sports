@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 320 clubes, 1302 ejercicios, 23 países.
+TOTAL: 320 clubes, 1318 ejercicios, 23 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -89,7 +89,7 @@ BRASIL (42)
   Botafogo              3 ejercicios (2023 a 2025), balance, BRL
   Botafogo-SP           2 ejercicios (2024 a 2025), balance, BRL
   Ceará                 2 ejercicios (2024 a 2025), balance, BRL
-  Chapecoense           3 ejercicios (2017, 2021, 2022), balance, BRL
+  Chapecoense           4 ejercicios (2017, 2019, 2021, 2022), balance, BRL
   Corinthians           2 ejercicios (2024 a 2025), balance, BRL
   Coritiba              3 ejercicios (2023 a 2025), balance, BRL
   CRB                   6 ejercicios (2020 a 2025), balance, BRL
@@ -100,7 +100,7 @@ BRASIL (42)
   Flamengo              2 ejercicios (2024 a 2025), balance, BRL
   Fluminense            2 ejercicios (2024 a 2025), balance, BRL
   Fortaleza             1 ejercicio (2025), balance, BRL
-  Goiás                 15 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025), balance, BRL
+  Goiás                 16 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2020, 2021, 2022, 2023, 2024, 2025), balance, BRL
   Grêmio                2 ejercicios (2024 a 2025), balance, BRL
   Guarani               2 ejercicios (2024 a 2025), balance, BRL
   Internacional         2 ejercicios (2024 a 2025), balance, BRL
@@ -164,15 +164,15 @@ ALEMANIA (11)
 
 DK (11)
   AGF              1 ejercicio (2020/2021), balance, DKK
-  Brøndby          1 ejercicio (2020), balance, DKK
-  FC Fredericia    2 ejercicios (2019 a 2020), balance, DKK
-  FC København     1 ejercicio (2024), balance, DKK
+  Brøndby          2 ejercicios (2020 a 2021), balance, DKK
+  FC Fredericia    7 ejercicios (2019 a 2025), balance, DKK
+  FC København     2 ejercicios (2024 a 2025), balance, DKK
   FC Midtjylland   2 ejercicios (2018/2019 a 2019/2020), balance, DKK
-  FC Nordsjælland  1 ejercicio (2024), balance, DKK
+  FC Nordsjælland  2 ejercicios (2024 a 2025), balance, DKK
   Randers FC       1 ejercicio (2022/2023), balance, DKK
   Silkeborg IF     2 ejercicios (2024 a 2025), balance, DKK
   SønderjyskE      2 ejercicios (2021/2022, 2023/2024), balance, DKK
-  Vejle            1 ejercicio (2024), balance, DKK
+  Vejle            2 ejercicios (2024 a 2025), balance, DKK
   Viborg FF        2 ejercicios (2023/2024 a 2024/2025), balance, DKK
 
 EE (9)
@@ -195,7 +195,7 @@ ESPAÑA (19)
   Elche CF            2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   FC Barcelona        1 ejercicio (2024/2025), balance, EUR
   Getafe CF           2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  Girona FC           2 ejercicios (2019/2020, 2024/2025), balance, EUR
+  Girona FC           4 ejercicios (2019/2020, 2021/2022, 2022/2023, 2024/2025), balance, EUR
   Levante UD          1 ejercicio (2024/2025), balance, EUR
   Rayo Vallecano      1 ejercicio (2024/2025), balance, EUR
   RCD Espanyol        2 ejercicios (2023/2024 a 2024/2025), balance, EUR
@@ -305,7 +305,7 @@ NL (31)
   FC Den Bosch      1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   FC Dordrecht      1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   FC Eindhoven      1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
-  FC Emmen          1 ejercicio (2018/2019), balance, EUR, sin deuda/caja
+  FC Emmen          3 ejercicios (2018/2019 a 2020/2021), balance, EUR, sin deuda/caja
   FC Groningen      1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   FC Twente         1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   FC Utrecht        1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
@@ -333,7 +333,7 @@ NO (6)
   Fredrikstad   8 ejercicios (2012, 2013, 2014, 2015, 2016, 2017, 2018, 2024), balance, NOK, sin deuda/caja
   Molde         18 ejercicios (2008 a 2025), balance, NOK, sin deuda/caja
   Sarpsborg 08  14 ejercicios (2008, 2012, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025), balance, NOK, sin deuda/caja
-  Vålerenga     3 ejercicios (2022, 2023, 2025), balance, NOK, sin deuda/caja
+  Vålerenga     4 ejercicios (2022 a 2025), balance, NOK, sin deuda/caja
   Viking        9 ejercicios (2017 a 2025), balance, NOK, sin deuda/caja
 
 PERÚ (1)

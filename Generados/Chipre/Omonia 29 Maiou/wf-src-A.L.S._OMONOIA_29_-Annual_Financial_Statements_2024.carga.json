@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf",
- "generado": "2026-10-21T12:52:10.120Z",
+ "generado": "2026-10-21T14:00:39.171Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (omonia29maiou-cy)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "11 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Έσοδα από τμήμα έρευνας\" -> other_income 0.6; \"Kids Club\" -> member_dues 0.45; \"Ενοίκια και ζημιές γηπέδων\" -> match_organisation_expense 0.55; \"Στολές παικτών\" -> other_expenses 0.5; \"Έξοδα ποδοσφαιρικού τμήματος\" -> other_expenses 0.4"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2024: pregunta en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "reintento",
@@ -104,9 +96,9 @@
     "amountNative": 0.059,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έσοδα μεταγραφών",
@@ -134,9 +126,9 @@
     "amountNative": 0.00081,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -146,9 +138,9 @@
     "amountNative": -0.01712,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Στολές παικτών",
@@ -156,9 +148,9 @@
     "amountNative": -0.018751,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αποθέματα στο τέλος",
@@ -186,9 +178,9 @@
     "amountNative": -0.162607,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έξοδα ιατρών, φυσιοθεραπευτών",
@@ -196,9 +188,9 @@
     "amountNative": -0.011553,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Έξοδα αγώνων",
@@ -262,13 +254,13 @@
    },
    {
     "rawLabel": "Αποζημείωσεις",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "other_expenses",
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Διοικητικά έξοδα",
@@ -296,9 +288,9 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αθλητικό υλικό για προπόνηση",
@@ -376,19 +368,19 @@
     "amountNative": -0.0024,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Εγγραφή παικτών",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.005545,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Αποσβέσεις",
@@ -396,9 +388,9 @@
     "amountNative": -0.00138,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -561,11 +553,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.059,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.md:27 \"Έσοδα από τμήμα έρευνας",
    "destino": "revenue",
    "amountNative": 0.059
   },
@@ -607,11 +599,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.00081,
    "cat": "member_dues",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:30 \"Kids Club",
    "destino": "revenue",
    "amountNative": 0.00081
   },
@@ -623,11 +615,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.01712,
    "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:33 \"Ενοίκια και ζημιές γηπέδων",
    "destino": "expense",
    "amountNative": -0.01712
   },
@@ -639,11 +631,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.018751,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:34 \"Στολές παικτών",
    "destino": "expense",
    "amountNative": -0.018751
   },
@@ -685,11 +677,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.162607,
    "cat": "other_expenses",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:37 \"Έξοδα ποδοσφαιρικού τμήματος",
    "destino": "expense",
    "amountNative": -0.162607
   },
@@ -701,11 +693,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.011553,
    "cat": "other_expenses",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:38 \"Έξοδα ιατρών, φυσιοθεραπευτών",
    "destino": "expense",
    "amountNative": -0.011553
   },
@@ -806,12 +798,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0,
-   "cat": "wages_squad",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:45 \"Αποζημείωσεις",
    "destino": "expense",
    "amountNative": 0
   },
@@ -853,11 +845,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0,
    "cat": "other_expenses",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:48 \"Προετοιμασία ποδοσφαιριστών",
    "destino": "expense",
    "amountNative": 0
   },
@@ -974,11 +966,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.0024,
    "cat": "other_expenses",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:56 \"Έξοδα προπονητικού κέντρου",
    "destino": "expense",
    "amountNative": -0.0024
   },
@@ -989,12 +981,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.005545,
-   "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:57 \"Εγγραφή παικτών",
    "destino": "expense",
    "amountNative": -0.005545
   },
@@ -1006,11 +998,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.00138,
    "cat": "depreciation",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): ...Annual_Financial_Statements_2024.md:58 \"Αποσβέσεις",
    "destino": "expense",
    "amountNative": -0.00138
   }
@@ -1112,7 +1104,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 2,
   "lineasIngreso": 11,
   "lineasGasto": 26,
   "metaFilas": 0,

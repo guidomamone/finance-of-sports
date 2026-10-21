@@ -1,0 +1,112 @@
+{
+ "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md",
+ "generatedAt": "2026-10-21T13:53:19.061Z",
+ "rubrosHuella": "049c3a6a7b1d7c5dc17bbe8df1d935b457cc2bd6",
+ "rubros": [
+  {
+   "label": "Bruttofortjeneste Gross profit",
+   "lado": "revenue",
+   "page": 19,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønninger og gager Salaries and wages",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensioner Pension costs",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre omkostninger til social sikring Other costs for social security",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización derechos de jugadores (nota 5)",
+   "lado": "expense",
+   "page": 28,
+   "section": "ajuste manual",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)",
+   "lado": "expense",
+   "page": 19,
+   "section": "ajuste manual",
+   "choice": "player_amortisation",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "player_amortisation",
+     0.44
+    ],
+    [
+     "other_amortisation",
+     0.4
+    ],
+    [
+     "player_impairment",
+     0.13
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Depreciación de materiales (nota 6)",
+   "lado": "expense",
+   "page": 29,
+   "section": "ajuste manual",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1035
+  }
+ ]
+}

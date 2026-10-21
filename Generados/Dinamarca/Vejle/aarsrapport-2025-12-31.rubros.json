@@ -2,8 +2,8 @@
   "md": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md",
   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
   "club": "vejle-dk",
-  "year": null,
-  "generatedAt": "2026-10-21T12:47:57.636Z",
+  "year": 2025,
+  "generatedAt": "2026-10-21T13:53:03.330Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         53.447
       ],
-      "glosa": "Beneficio bruto"
+      "glosa": "Margen bruto"
     },
     {
       "label": "Indtægter af kapitalandele i tilknyttede virksomheder",
@@ -57,16 +57,6 @@
       "glosa": "Otros gastos de seguridad social"
     },
     {
-      "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
-      "lado": "expense",
-      "page": 11,
-      "section": "estado",
-      "values": [
-        3.334
-      ],
-      "glosa": "Amortización y deterioro del inmovilizado intangible y material"
-    },
-    {
       "label": "Andre driftsomkostninger",
       "lado": "expense",
       "page": 11,
@@ -75,6 +65,26 @@
         0.07
       ],
       "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Amortización derechos de jugadores (nota 4)",
+      "lado": "expense",
+      "page": 21,
+      "section": "ajuste manual",
+      "values": [
+        2.322
+      ],
+      "glosa": "Amortización derechos de jugadores (nota 4)"
+    },
+    {
+      "label": "Depreciación de materiales (nota 5)",
+      "lado": "expense",
+      "page": 22,
+      "section": "ajuste manual",
+      "values": [
+        1.012
+      ],
+      "glosa": "Depreciación de materiales (nota 5)"
     }
   ]
 }

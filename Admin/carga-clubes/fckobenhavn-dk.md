@@ -119,6 +119,55 @@ de un año más reciente porque sus balances 2022+ netean Revenue contra Cost of
 línea "Bruttofortjeneste", sin desglose disponible). brandColor: footylogos.com/Wikipedia.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/FC København/aarsrapport-2025-12-31.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Entréindtægter | pág. 16, precedente |
+| 2 | TV- og præmie-indtægter | pág. 16, precedente |
+| 3 | Samarbejdspartnere | pág. 16, precedente |
+| 4 | Merchandiseindtægter | pág. 16, precedente |
+| 5 | Food & Beverage, konferencecenter m.v. | pág. 16, precedente |
+| 6 | Ejendomsudlejning | pág. 16, precedente |
+| 7 | Øvrige indtægter | pág. 16, precedente |
+| 8 | Andre driftsindtægter | pág. 12, precedente |
+| 9 | Indtægter af kapitalandele i tilknyttede virksomheder | pág. 12, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vareforbrug | pág. 12, precedente |
+| 2 | Andre eksterne omkostninger | pág. 12, precedente |
+| 3 | Lønninger og gager | pág. 16, Jev 0.99 |
+| 4 | Pensioner | pág. 16, Jev 0.91 |
+| 5 | Andre omkostninger til social sikring | pág. 16, Jev 0.92 |
+| 6 | Amortiseringer af kontraktrettigheder | pág. 17, precedente |
+| 7 | Afskrivning på indretning af lejede lokaler | pág. 17, Jev 0.95 |
+| 8 | Afskrivning på bygninger | pág. 17, Jev 0.99 |
+| 9 | Nedskrivninger bygninger | pág. 17, ? 0.75 |
+| 10 | Afskrivning på produktionsanlæg og maskiner | pág. 17, Jev 1 |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cierre = 2025-12-31. el .md (convertido del XHTML) habla de 31. december 2025 (7 veces); el nombre del archivo y el resto de los años del club cierran el 31-12
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-21): dk-superliga, verificado contra roster cacheado de "2025–26 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia exacta "Copenhagen".
+```
+
 ## 2024
 
 ### Meta
@@ -183,3 +232,11 @@ Descargado vía distribution.virk.dk (Erhvervsstyrelsen, CVR 43 95 21 61). Entid
 ```
 
 2026-10-15 (to-do 232 ab): 2024 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.
+
+### fckobenhavn-dk-aarsrapport-2025-12-31
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```

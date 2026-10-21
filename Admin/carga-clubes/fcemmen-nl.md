@@ -41,6 +41,86 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2019: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2019-06-30","sourceId":"fcemmen-nl-f-04-fce-jaarverslag-2018-2019-incl-jaarcijfers-def"}
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Wedstrijdbaten | pág. 7, precedente |
+| 2 | Sponsoring | pág. 7, precedente |
+| 3 | Media gerelateerde baten | pág. 7, precedente |
+| 4 | Prijzengeld | pág. 7, precedente |
+| 5 | Horeca | pág. 7, precedente |
+| 6 | Merchandise | pág. 7, precedente |
+| 7 | Subsidies & giften | pág. 7, precedente |
+| 8 | Overige baten | pág. 7, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Personeelskosten | pág. 7, precedente |
+| 2 | Horeca | pág. 7, precedente |
+| 3 | Verkoopkosten | pág. 7, precedente |
+| 4 | Huisvestingskosten | pág. 7, precedente |
+| 5 | Wedstrijd- en trainingskosten | pág. 7, precedente |
+| 6 | Algemene kosten | pág. 7, precedente |
+| 7 | Afschrijvingskosten imm. & mat. vaste activa | pág. 7, precedente |
+| 8 | Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen | pág. 7, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cierre = 2021-06-30. Temporada 2020/2021: el eigen vermogen se compara «per 30 juni 2021» (.md L146)
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Wedstrijdbaten | pág. 7, precedente |
+| 2 | Sponsoring | pág. 7, precedente |
+| 3 | Media gerelateerde baten | pág. 7, precedente |
+| 4 | Prijzengeld | pág. 7, precedente |
+| 5 | Horeca | pág. 7, precedente |
+| 6 | Merchandise | pág. 7, precedente |
+| 7 | Subsidies & giften | pág. 7, precedente |
+| 8 | Overige baten | pág. 7, precedente |
+| 9 | Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen | pág. 7, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Personeelskosten | pág. 7, precedente |
+| 2 | Horeca | pág. 7, precedente |
+| 3 | Verkoopkosten | pág. 7, precedente |
+| 4 | Huisvestingskosten | pág. 7, precedente |
+| 5 | Wedstrijd- en trainingskosten | pág. 7, precedente |
+| 6 | Algemene kosten | pág. 7, precedente |
+| 7 | Afschrijvingskosten imm. & mat. vaste activa | pág. 7, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cierre = 2020-06-30. Temporada 2019/2020: el informe fija el personal «Op 30 juni 2020» (.md L41); boekjaar de 1-7 a 30-6 como los demás años del club
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2019
 
 ### Ingresos
@@ -95,4 +175,20 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fcemmen-nl-f-04-fce-jaarverslag-2019-2020-incl-jaarcijfers-def
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fcemmen-nl-f-04-fce-jaarverslag-2020-2021-incl-jaarcijfers-def
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

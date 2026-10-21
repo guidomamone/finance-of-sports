@@ -1,0 +1,308 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2020.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2020.md",
+ "mdSha1": "7701dc945f1a0a2c6fdc1ba99375249e27b3c79d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T14:06:30.655Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    136,
+    149
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    151,
+    170
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    194,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    233,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    261,
+    267
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    291,
+    329
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    561,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    572,
+    581
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    585,
+    591
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    611,
+    624
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    644,
+    665
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    685,
+    701
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    725,
+    746
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    768,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    829,
+    839
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    845,
+    852
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    856,
+    870
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    890,
+    895
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    899,
+    906
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    910,
+    925
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    951,
+    956
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    964,
+    972
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    976,
+    981
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    1005,
+    1031
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 26,
+   "lineas": [
+    1035,
+    1050
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 27,
+   "lineas": [
+    1070,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 27,
+   "lineas": [
+    1092,
+    1101
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 27,
+   "lineas": [
+    1105,
+    1115
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 28,
+   "lineas": [
+    1135,
+    1177
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 29,
+   "lineas": [
+    1205,
+    1216
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 30,
+   "lineas": [
+    1278,
+    1283
+   ],
+   "tipo": "texto"
+  },
+  "b32": {
+   "pagina": 31,
+   "lineas": [
+    1303,
+    1331
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 31,
+   "lineas": [
+    1333,
+    1354
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b24",
+  "b28"
+ ],
+ "notas_gastos": [
+  "b25",
+  "b26",
+  "b27"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro por segmento 'Resultado por atividade' (nota 22) porque solo reparte por actividad importes ya abiertos en las notas 17 a 21?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "El cuadro b29 tiene columnas Futebol Profissional, Base y Social con las mismas filas que la nota 17 y el estado.",
+   "bloques": [
+    "b29"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual de Goiás Esporte Clube en b3 (en reales). Notas: receita líquida b24, custos com futebol b25, despesas administrativas b26, serviços de terceiros b27, resultado financeiro b28 (ingresos y gastos financieros). b29 es por actividad y repite importes ya abiertos. b32/b33 son flujo de caja realizado/a realizar, excluidos."
+}

@@ -8,13 +8,20 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'brondby-dk': {
     2020: {"estadio":"Brøndby Stadium","capacidad":29000,"sponsor":"Booztlet","marca":"Hummel","temporada":"2020–21 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1287585270"},
+    2021: {"estadio":"Brøndby Stadium","capacidad":29000,"sponsor":"Booztlet","marca":"Hummel","temporada":"2021–22 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379231192"},
   },
   'fckobenhavn-dk': {
     2024: {"estadio":"Parken","capacidad":38009,"sponsor":"Unibet","marca":"Adidas","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
+    2025: {"estadio":"Parken","capacidad":38009,"sponsor":"Unibet","marca":"Adidas","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'fredericia-dk': {
     2019: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2019–20 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328192521"},
     2020: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2019–20 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328192521"},
+    2021: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","fuente":"https://en.wikipedia.org/wiki/2021%E2%80%9322_Danish_1st_Division","fuenteManual":"https://en.wikipedia.org/wiki/2021%E2%80%9322_Danish_1st_Division","manual":["estadio","capacidad","sponsor","marca"]},
+    2022: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","fuente":"https://en.wikipedia.org/wiki/2022%E2%80%9323_Danish_1st_Division","fuenteManual":"https://en.wikipedia.org/wiki/2022%E2%80%9323_Danish_1st_Division","manual":["estadio","capacidad","sponsor","marca"]},
+    2023: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","fuente":"https://en.wikipedia.org/wiki/2023%E2%80%9324_Danish_1st_Division","fuenteManual":"https://en.wikipedia.org/wiki/2023%E2%80%9324_Danish_1st_Division","manual":["estadio","capacidad","sponsor","marca"]},
+    2024: {"estadio":"Monjasa Park","capacidad":6000,"sponsor":"Monjasa","marca":"Hummel","fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Danish_1st_Division","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Danish_1st_Division","manual":["estadio","capacidad","sponsor","marca"]},
+    2025: {"estadio":"Monjasa Park","capacidad":6000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'midtjylland-dk': {
     2019: {"estadio":"MCH Arena","capacidad":11800,"sponsor":"Det Faglige Hus","marca":"Nike","temporada":"2018–19 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1324790591"},
@@ -22,6 +29,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'nordsjaelland-dk': {
     2024: {"estadio":"Right to Dream Park","capacidad":9900,"sponsor":"DHL","marca":"Nike","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
+    2025: {"estadio":"Right to Dream Park","capacidad":9900,"sponsor":"DHL","marca":"Nike","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'randers-dk': {
     2023: {"estadio":"Cepheus Park Randers","capacidad":12000,"sponsor":"Verdo A/S","marca":"Puma","temporada":"2022–23 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376808618"},
@@ -36,6 +44,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'vejle-dk': {
     2024: {"estadio":"Vejle Stadion","capacidad":11060,"sponsor":"Arbejdernes Landsbank","marca":"Adidas","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
+    2025: {"estadio":"Vejle Stadion","capacidad":11060,"sponsor":"Arbejdernes Landsbank","marca":"Adidas","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'viborg-dk': {
     2024: {"estadio":"Energi Viborg Arena","capacidad":9566,"sponsor":"Peter Larsen Kaffe, SkilteCentret","marca":"Capelli Sport","temporada":"2023–24 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377453087"},

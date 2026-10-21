@@ -130,6 +130,68 @@ VERIFICACIÓN (regla #1 de CLAUDE.md):
 ============================================================================
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/Brøndby/aarsrapport-2021-12-31.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Entré-, TV- og præmieindtægter | pág. 46, precedente |
+| 2 | Indtægter fra partnere og sponsorer | pág. 46, precedente |
+| 3 | F&B og arrangementer m.v. | pág. 46, precedente |
+| 4 | Merchandise m.v. | pág. 46, precedente |
+| 5 | Udlejning erhvervsejendom m.v. | pág. 46, precedente |
+| 6 | Anden nettoomsætning | pág. 46, precedente |
+| 7 | Diferencia de redondeo | pág. ?, precedente |
+| 8 | Kompensation fra Staten | pág. 46, Jev 0.99 |
+| 9 | Donation | pág. 46, Jev 1 |
+| 10 | Indtægter | pág. 49, Claude 0.85 |
+| 11 | Diferencia de redondeo | pág. ?, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Omkostninger | pág. 49, precedente |
+| 2 | Nedskrivninger på kontraktrettigheder | pág. 49, precedente |
+| 3 | Afskrivninger på kontraktrettigheder | pág. 49, precedente |
+| 4 | Kamp- og spilleromkostninger | pág. 47, precedente |
+| 5 | Salgs- og markedsføringsomkostninger | pág. 47, precedente |
+| 6 | F&B og arrangementer m.v. | pág. 47, precedente |
+| 7 | Driftsomkostninger ejendomme | pág. 47, precedente |
+| 8 | Vareforbrug m.v. merchandise | pág. 47, precedente |
+| 9 | Administrationsomkostninger | pág. 47, precedente |
+| 10 | Vederlag til direktion | pág. 48, Jev 0.99 |
+| 11 | Kontantbaseret incitamentsordning, direktion | pág. 48, Claude 0.88 |
+| 12 | Pension til direktion | pág. 48, Jev 0.96 |
+| 13 | Bestyrelseshonorar | pág. 48, Jev 0.99 |
+| 14 | Gager og lønninger til medarbejdere | pág. 48, Claude 0.85 |
+| 15 | Pensionsordninger, bidragsbaserede | pág. 48, Claude 0.85 |
+| 16 | Andre omkostninger til social sikring | pág. 48, Jev 0.96 |
+| 17 | Øvrige personaleomkostninger | pág. 48, precedente |
+| 18 | Diferencia de redondeo | pág. ?, Jev 0.99 |
+| 19 | Bygninger m.v. | pág. 49, Jev 0.97 |
+| 20 | Driftsmateriel og inventar | pág. 49, Claude 0.93 |
+| 21 | Tab ved salg/afgang af anlægsaktiver | pág. 49, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cierre = 2021-12-31. el .md habla de 31. december 2021 (36 veces); Resultatopgørelse y Balance «pr. 31. december»
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-21): dk-superliga, verificado contra roster cacheado de "2021–22 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia exacta "Brøndby".
+```
+
 ## 2020
 
 ### Meta
@@ -181,3 +243,11 @@ Descargado vía distribution.virk.dk (Erhvervsstyrelsen, CVR 83 93 34 10). Año 
 ```
 
 2026-10-15 (to-do 232 ab): 2020 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.
+
+### brondby-dk-aarsrapport-2021-12-31
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

@@ -104,6 +104,91 @@ del Balance principal por consistencia con el resto de los clubes cargados. cash
 otros activos líquidos equivalentes" del balance principal.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/España/Girona FC/cuentas-anuales-2022-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/España/Girona FC/cuentas-anuales-2022-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | a) Ventas | pág. 15, precedente |
+| 2 | b) Prestaciones de servicios | pág. 15, Jev 0.98 |
+| 3 | a) Ingresos accesorios y otros de gestión corriente | pág. 15, precedente |
+| 4 | b) Subvenciones de explotación incorporadas al resultado del ejercicio | pág. 15, precedente |
+| 5 | 9. Imputación de subvenciones de inmovilizado no financiero y otras | pág. 15, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | - Nacionales | pág. 99, Claude 0.8 |
+| 2 | b) Variación de existencias | pág. 99, Jev 1 |
+| 3 | b) Consumo de materias primas y otras materias consumibles | pág. 15, Jev 1 |
+| 4 | d) Deterioro de mercaderías, materias primas y otros aprovisionamientos | pág. 15, Jev 1 |
+| 5 | a) Sueldos, salarios y asimilados | pág. 15, Claude 0.85 |
+| 6 | a) Seguridad Social a cargo de la empresa | pág. 100, Claude 0.85 |
+| 7 | c) Otras cargas sociales | pág. 100, Claude 0.8 |
+| 8 | a) Servicios exteriores | pág. 15, precedente |
+| 9 | b) Tributos | pág. 15, precedente |
+| 10 | c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales | pág. 15, precedente |
+| 11 | d) Otros gastos de gestión corriente | pág. 15, precedente |
+| 12 | 8. Amortización del inmovilizado | pág. 15, precedente |
+| 13 | b) Resultados por enajenaciones y otras | pág. 15, precedente |
+| 14 | 13. Otros resultados | pág. 16, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/España/Girona FC/cuentas-anuales-2021-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/España/Girona FC/cuentas-anuales-2021-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | a) Ventas | pág. 14, precedente |
+| 2 | b) Prestaciones de servicios | pág. 14, Jev 0.98 |
+| 3 | a) Ingresos accesorios y otros de gestión corriente | pág. 14, precedente |
+| 4 | b) Subvenciones de explotación incorporadas al resultado del ejercicio | pág. 14, precedente |
+| 5 | 9. Imputación de subvenciones de inmovilizado no financiero y otras | pág. 14, precedente |
+| 6 | 13. Otros resultados | pág. 15, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | - Nacionales | pág. 93, Claude 0.8 |
+| 2 | b) Variación de existencias | pág. 93, Jev 1 |
+| 3 | b) Consumo de materias primas y otras materias consumibles | pág. 14, Jev 1 |
+| 4 | d) Deterioro de mercaderías, materias primas y otros aprovisionamientos | pág. 14, Jev 1 |
+| 5 | a) Sueldos, salarios y asimilados | pág. 14, Claude 0.85 |
+| 6 | b) Cargas sociales | pág. 14, Claude 0.8 |
+| 7 | a) Servicios exteriores | pág. 14, precedente |
+| 8 | b) Tributos | pág. 14, precedente |
+| 9 | c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales | pág. 14, precedente |
+| 10 | d) Otros gastos de gestión corriente | pág. 14, precedente |
+| 11 | 8. Amortización del inmovilizado | pág. 14, precedente |
+| 12 | b) Resultados por enajenaciones y otras | pág. 14, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## 2020
 
 ### Meta
@@ -144,6 +229,22 @@ _note (data/):_
 
 ```text
 PDF oficial, escaneo con ruido de OCR en la transcripción. "Amortización del inmovilizado" se corrigió por residuo contra RESULTADO DE EXPLOTACIÓN impreso (diferencia de exactamente EUR 3.000.000, ver comentario de cabecera de data/es/girona-es-data.js). Bajado vía statics-maker.llt-services.com/gir/. Transcripción completa en Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md.
+```
+
+### girona-es-cuentas-anuales-2021-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/España/Girona FC/cuentas-anuales-2021-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### girona-es-cuentas-anuales-2022-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/España/Girona FC/cuentas-anuales-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

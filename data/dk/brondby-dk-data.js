@@ -9,6 +9,19 @@ const brondbyDkRevenueLinesByYear = {
     {"rawLabel":"Anden nettoomsætning","normalizedCategory":"other_income","amountNative":3.405,"disclosureLevel":"detailed"},
     {"rawLabel":"Andre driftsindtægter (compensación estatal COVID-19 + donación)","normalizedCategory":"other_income","amountNative":45.209,"disclosureLevel":"detailed","items":[["Kompensation fra Staten",42.029],["Donation",3.181]]},
   ],
+  2021: [
+    {"rawLabel":"Entré-, TV- og præmieindtægter","normalizedCategory":"broadcasting","amountNative":147.52,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Indtægter fra partnere og sponsorer","normalizedCategory":"sponsorship_commercial","amountNative":72.628,"disclosureLevel":"aggregated"},
+    {"rawLabel":"F&B og arrangementer m.v.","normalizedCategory":"stadium_other","amountNative":23.227,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Merchandise m.v.","normalizedCategory":"sponsorship_commercial","amountNative":42.614,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Udlejning erhvervsejendom m.v.","normalizedCategory":"other_income","amountNative":2.26,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Anden nettoomsætning","normalizedCategory":"other_income","amountNative":1.754,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Diferencia de redondeo","normalizedCategory":"other_income","amountNative":0.001,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Kompensation fra Staten","normalizedCategory":"other_income","amountNative":17.024,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Donation","normalizedCategory":"other_income","amountNative":2.793,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Indtægter","normalizedCategory":"player_sales","amountNative":50.215,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Diferencia de redondeo","normalizedCategory":"other_income","amountNative":0.001,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const brondbyDkExpenseLinesByYear = {
@@ -24,10 +37,34 @@ const brondbyDkExpenseLinesByYear = {
     {"rawLabel":"Af- og nedskrivninger (bygninger, driftsmateriel og inventar)","normalizedCategory":"depreciation","amountNative":-10.658,"disclosureLevel":"detailed","items":[["Bygninger m.v.",-6.624],["Driftsmateriel og inventar",-4.034]]},
     {"rawLabel":"Tab ved salg/afgang af anlægsaktiver","normalizedCategory":"other_expenses","amountNative":-0.108,"disclosureLevel":"detailed"},
   ],
+  2021: [
+    {"rawLabel":"Omkostninger","normalizedCategory":"player_amortisation","amountNative":-2.584,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Nedskrivninger på kontraktrettigheder","normalizedCategory":"player_impairment","amountNative":-3.803,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Afskrivninger på kontraktrettigheder","normalizedCategory":"player_amortisation","amountNative":-25.288,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Kamp- og spilleromkostninger","normalizedCategory":"match_organisation_expense","amountNative":-25.869,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Salgs- og markedsføringsomkostninger","normalizedCategory":"admin_general_expense","amountNative":-7.957,"disclosureLevel":"aggregated"},
+    {"rawLabel":"F&B og arrangementer m.v.","normalizedCategory":"admin_general_expense","amountNative":-18.138,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Driftsomkostninger ejendomme","normalizedCategory":"admin_general_expense","amountNative":-11.545,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Vareforbrug m.v. merchandise","normalizedCategory":"other_expenses","amountNative":-19.034,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrationsomkostninger","normalizedCategory":"admin_general_expense","amountNative":-26.25,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Vederlag til direktion","normalizedCategory":"admin_general_expense","amountNative":-4.477,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Kontantbaseret incitamentsordning, direktion","normalizedCategory":"admin_general_expense","amountNative":-2.564,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Pension til direktion","normalizedCategory":"admin_general_expense","amountNative":-0.187,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Bestyrelseshonorar","normalizedCategory":"admin_general_expense","amountNative":-0.525,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gager og lønninger til medarbejdere","normalizedCategory":"wages_squad","amountNative":-103.062,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Pensionsordninger, bidragsbaserede","normalizedCategory":"wages_squad","amountNative":-5.211,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Andre omkostninger til social sikring","normalizedCategory":"wages_squad","amountNative":-1.11,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Øvrige personaleomkostninger","normalizedCategory":"wages_squad","amountNative":-7.983,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Diferencia de redondeo","normalizedCategory":"other_expenses","amountNative":-0.001,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Bygninger m.v.","normalizedCategory":"depreciation","amountNative":-6.903,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Driftsmateriel og inventar","normalizedCategory":"depreciation","amountNative":-3.875,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Tab ved salg/afgang af anlægsaktiver","normalizedCategory":"other_expenses","amountNative":-0.108,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const brondbyDkFiscalYearMeta = {
   2020: {"currency":"DKK","sourceId":"brondby-aarsrapport-2020","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2020-12-31","profitOnPlayerSales":-8.057,"assetSales":0,"netInterest":-2.749,"tax":0,"grossDebt":0,"cash":22.985,"officialTotalRevenue":158.471,"officialTotalExpenses":173.518,"officialPAT":-25.853},
+  2021: {"currency":"DKK","sourceId":"brondby-dk-aarsrapport-2021-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2021-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.145,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":360.037,"officialTotalExpenses":276.474,"officialPAT":83.418,"extraRows":[{"label":"Finansielle indtægter","value":0.446},{"label":"Finansielle omkostninger","value":-0.591},{"label":"Skat af årets resultat","value":0}]},
 };
 
 const brondbyDkPresupuestoOverlayByYear = {};
@@ -44,6 +81,6 @@ window.CLUB_GENERIC_DATA["brondby-dk"] = {
   presupuestoOverlayByYear: brondbyDkPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"brondby-aarsrapport-2020":{"id":"brondby-aarsrapport-2020","clubId":"brondby-dk","title":"Brøndbyernes I.F. Fodbold A/S — Årsrapport 2020 (1. januar - 31. december 2020)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"brondby-aarsrapport-2020":{"id":"brondby-aarsrapport-2020","clubId":"brondby-dk","title":"Brøndbyernes I.F. Fodbold A/S — Årsrapport 2020 (1. januar - 31. december 2020)","type":"official_balance_sheet","reliability":"primary"},"brondby-dk-aarsrapport-2021-12-31":{"id":"brondby-dk-aarsrapport-2021-12-31","clubId":"brondby-dk","title":"Brøndbyernes I.F. Fodbold A/S — aarsrapport-2021-12-31 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary"}});
 
 memberCountByClub["brondby-dk"] = null;

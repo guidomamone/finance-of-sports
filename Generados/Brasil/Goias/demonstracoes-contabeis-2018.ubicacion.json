@@ -1,0 +1,293 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.md",
+ "mdSha1": "ce1058ab7d8712c642c42a52019d35560abe9205",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T14:04:28.363Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    117,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    161,
+    174
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    198,
+    202
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    226,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    256,
+    295
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    481,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    492,
+    499
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    519,
+    523
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    531,
+    535
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    539,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    568,
+    590
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    608,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    653,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    695,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    760,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    767,
+    771
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 20,
+   "lineas": [
+    775,
+    782
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 20,
+   "lineas": [
+    786,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    822,
+    827
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 21,
+   "lineas": [
+    831,
+    844
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    864,
+    869
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    891,
+    896
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    904,
+    926
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 23,
+   "lineas": [
+    946,
+    961
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    965,
+    983
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 23,
+   "lineas": [
+    987,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    1016,
+    1026
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 25,
+   "lineas": [
+    1046,
+    1069
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 26,
+   "lineas": [
+    1087,
+    1106
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 27,
+   "lineas": [
+    1132,
+    1145
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 28,
+   "lineas": [
+    1193,
+    1198
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b23",
+  "b27"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25",
+  "b26"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2018",
+ "columna_anterior": "2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Resultado por atividade' (nota 22, b28-b29), por repetir por segmento importes ya abiertos en las notas 17 a 21?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "El cuadro por actividad (futebol profissional, base, social) parece repetir los renglones de las notas 17-21; solo serviría si abre algún renglón no desglosado (p.ej. custos com pessoal dentro de Custos com futebol).",
+   "bloques": [
+    "b28",
+    "b29"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual del Goiás Esporte Clube en reais. b2 es la DRE; b23 abre Receita líquida, b24 Custos com futebol, b25 Despesas administrativas, b26 Serviços de terceiros, b27 Resultado financeiro. b3 es el resultado abrangente (no se carga)."
+}

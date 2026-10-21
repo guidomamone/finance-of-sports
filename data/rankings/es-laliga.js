@@ -64,6 +64,15 @@ window.RANKINGS["es-laliga"] = {
         mix:[["Comercial / Sponsors",6.897],["Estadio",2.932],["Televisión",53.848],["Premios por competencias",1.165],["Venta de Jugadores",1.609],["Otros ingresos",2.577]] },
     ],
   },
+  2023: {
+    leagueSize: 20,
+    wiki: {"t":"2022–23 La Liga","lang":"en","at":"2026-10-21","n":20},
+    clubs: [
+      { id:"girona-es", revenue:70.133, reportType:"official_balance_sheet",
+        sourceId:"girona-es-cuentas-anuales-2022-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",7.33],["Otros ingresos",62.803]] },
+    ],
+  },
   2022: {
     leagueSize: 20,
     wiki: {"t":"2021–22 La Liga","lang":"en","at":"2026-10-17","n":20},

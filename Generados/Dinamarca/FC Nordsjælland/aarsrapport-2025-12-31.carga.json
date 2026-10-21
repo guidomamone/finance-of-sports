@@ -1,24 +1,140 @@
 {
  "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
- "generado": "2026-10-21T12:52:10.743Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-21T13:55:36.414Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-21: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 13 documento(s) mirados)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "nordsjaelland-dk",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Bruttofortjeneste Gross profit",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 460.800148,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Lønninger og gager Salaries and wages",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -138.376504,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioner Pension costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.834516,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre omkostninger til social sikring Other costs for social security",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.838843,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortización derechos de jugadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -19.889197,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Partición de la línea de amortizaciones por las notas (ver fila)"
+   },
+   {
+    "rawLabel": "Depreciación de materiales",
+    "normalizedCategory": "depreciation",
+    "amountNative": -2.320184,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Partición de la línea de amortizaciones por las notas (ver fila)"
+   },
+   {
+    "rawLabel": "Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -13.511776,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Residuo como en Nordsjælland 2024 (other_amortisation)"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2025-12-31",
+   "sourceId": "nordsjaelland-dk-aarsrapport-2025-12-31",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -8.778991,
+   "tax": -65.011162,
+   "extraRows": [
+    {
+     "label": "Andre finansielle indtægter fra tilknyttede virksomheder Other financial income from group enterprises",
+     "value": 1.137518
+    },
+    {
+     "label": "Andre finansielle indtægter Other financial income",
+     "value": 1.590029
+    },
+    {
+     "label": "Øvrige finansielle omkostninger Other financial costs",
+     "value": -11.506538
+    },
+    {
+     "label": "Skat af årets resultat Tax on net profit or loss for the year",
+     "value": -65.011162
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Bruttofortjeneste Gross profit",
+     "lado": "revenue",
+     "importe": 460.800148,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 460.800148,
+   "officialTotalExpenses": 177.77102,
+   "officialPAT": 209.238975
+  },
+  "source": {
+   "id": "nordsjaelland-dk-aarsrapport-2025-12-31",
+   "clubId": "nordsjaelland-dk",
+   "title": "FC Nordsjælland A/S — aarsrapport-2025-12-31 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md",
  "reemplaza": false,
  "periodo": {
@@ -31,5 +147,339 @@
  },
  "clubId": "nordsjaelland-dk",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "cierre",
+   "valor": "2025-12-31",
+   "linea": null,
+   "motivo": "el .md (convertido del XHTML) habla de 31. december 2025 (15 veces)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "19.889.197",
+   "linea": 677,
+   "etiqueta": "Amortización derechos de jugadores (nota 5)",
+   "lado": "gasto",
+   "reemplaza": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisation, and impairment",
+   "motivo": "Partir el total de 35.721.157 (L429) por las notas, como Vejle 2024 y Nordsjælland 2024: amortización del año de derechos de jugadores (nota 5, L677)",
+   "evidencia": ".md L429 y L677",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "2.320.184",
+   "linea": 703,
+   "etiqueta": "Depreciación de materiales (nota 6)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Parte del total de 35.721.157 (L429): depreciación del año de activos materiales (nota 6, L703)",
+   "evidencia": ".md L429 y L703",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "13.511.776",
+   "linea": 429,
+   "etiqueta": "Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Residuo 35.721.157 - 19.889.197 - 2.320.184 = 13.511.776: baja de derechos vendidos (nota 5); mismo tratamiento que el residuo de Nordsjælland 2024 (other_amortisation)",
+   "evidencia": ".md L429, L677, L703",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Amortización derechos de jugadores (nota 5)",
+   "motivo": "Partición de la línea de amortizaciones por las notas (ver fila)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Depreciación de materiales (nota 6)",
+   "motivo": "Partición de la línea de amortizaciones por las notas (ver fila)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "other_amortisation",
+   "linea": null,
+   "etiqueta": "Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)",
+   "motivo": "Residuo como en Nordsjælland 2024 (other_amortisation)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 11,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Bruttofortjeneste Gross profit",
+   "page": 19,
+   "native": 460.800148,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 460.800148,
+   "cat": "lump_football_operations",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 460.800148
+  },
+  {
+   "label": "Lønninger og gager Salaries and wages",
+   "page": 27,
+   "native": 138.376504,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger Staff costs\")",
+   "signoFijo": 138.376504,
+   "cat": "wages_squad",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -138.376504
+  },
+  {
+   "label": "Pensioner Pension costs",
+   "page": 27,
+   "native": 1.834516,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger Staff costs\")",
+   "signoFijo": 1.834516,
+   "cat": "wages_squad",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.834516
+  },
+  {
+   "label": "Andre omkostninger til social sikring Other costs for social security",
+   "page": 27,
+   "native": 1.838843,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger Staff costs\")",
+   "signoFijo": 1.838843,
+   "cat": "wages_squad",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.838843
+  },
+  {
+   "label": "Amortización derechos de jugadores",
+   "page": 28,
+   "native": 19.889197,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 19.889197,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Partición de la línea de amortizaciones por las notas (ver fila)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -19.889197
+  },
+  {
+   "label": "Depreciación de materiales",
+   "page": 29,
+   "native": 2.320184,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 2.320184,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Partición de la línea de amortizaciones por las notas (ver fila)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -2.320184
+  },
+  {
+   "label": "Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)",
+   "page": 19,
+   "native": 13.511776,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 13.511776,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Residuo como en Nordsjælland 2024 (other_amortisation)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -13.511776
+  },
+  {
+   "label": "Andre finansielle indtægter fra tilknyttede virksomheder Other financial income from group enterprises",
+   "page": null,
+   "native": 1.137518,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Andre finansielle indtægter Other financial income",
+   "page": null,
+   "native": 1.590029,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Øvrige finansielle omkostninger Other financial costs",
+   "page": null,
+   "native": -11.506538,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skat af årets resultat Tax on net profit or loss for the year",
+   "page": null,
+   "native": -65.011162,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos con signo",
+   "verificacion (nota que desglosa \"Personaleomkostninger Staff costs\")": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 460.800148,
+  "expSum": -177.77102,
+  "officialTotalRevenue": 460.800148,
+  "officialTotalExpenses": 177.77102,
+  "officialPAT": 209.238975,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 209.238975,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 460.800148
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 177.77102
+  }
+ },
+ "liga": {
+  "valor": "dk-superliga",
+  "fuente": "roster cacheado de \"2025–26 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia única por palabras \"Nordsjælland\" = \"FC Nordsjælland\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): el .md (convertido del XHTML) habla de 31. december 2025 (15 veces)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): el .md (convertido del XHTML) habla de 31. december 2025 (15 veces))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-21)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "DKK@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene DKK@2025-12-31 = 6.3527 (Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2025-12-30, 2025-12-31 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "nordsjaelland-dk-aarsrapport-2025-12-31",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "dk-superliga",
+   "fuente": "roster cacheado de \"2025–26 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia única por palabras \"Nordsjælland\" = \"FC Nordsjælland\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 6,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
 }

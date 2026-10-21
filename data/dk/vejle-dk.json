@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "vejle-dk",
@@ -17,6 +17,13 @@
       "id": "vejle-dk-aarsrapport-2024",
       "club_id": "vejle-dk",
       "title": "VB Alliancen A/S — Årsrapport 1. januar - 31. december 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "vejle-dk-aarsrapport-2025-12-31",
+      "club_id": "vejle-dk",
+      "title": "VB Alliancen A/S — aarsrapport-2025-12-31 (ejercicio 2025)",
       "type": "official_balance_sheet",
       "reliability": "primary"
     }
@@ -74,6 +81,49 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.456,"tax":0.31,"gross_debt":24.128,"cash":4.548},
       "official_totals": {"revenue":47.596,"expenses":52.027,"net_result":-3.665}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "DKK",
+      "source_id": "vejle-dk-aarsrapport-2025-12-31",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2025-12-31"},
+      "revenue": [
+        {"label":"Bruttofortjeneste","category":"undisclosed","subcategory":"lump_football_operations","amount":53.447,"disclosure":"aggregated"},
+        {
+          "label": "Indtægter af kapitalandele i tilknyttede virksomheder",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.783,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-50.539,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-3.219,"disclosure":"aggregated"},
+        {"label":"Andre omkostninger til social sikring","category":"first_team_staff","subcategory":"wages_squad","amount":-0.733,"disclosure":"aggregated"},
+        {"label":"Andre driftsomkostninger","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.07,"disclosure":"aggregated"},
+        {
+          "label": "Amortización derechos de jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.322,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación de materiales","category":"depreciation","subcategory":"depreciation","amount":-1.012,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.212,"tax":0.34,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":54.23,"expenses":57.895,"net_result":-3.537},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Finansielle indtægter","amount":0.046},
+          {"label":"Finansielle omkostninger","amount":-0.258},
+          {"label":"Skat af årets resultat","amount":0.34}
+        ],
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":53.447,"reason":"el documento no desglosa este renglón"}]
+      }
     }
   ],
   "budget_overlay": {},

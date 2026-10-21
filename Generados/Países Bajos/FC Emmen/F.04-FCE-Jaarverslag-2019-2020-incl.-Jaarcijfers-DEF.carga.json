@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.pdf",
- "generado": "2026-10-21T12:52:08.982Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Som der afschr. bijz. waardevermindering\" -> other_income 0"
-  }
- ],
+ "generado": "2026-10-21T14:00:38.294Z",
+ "frena": [],
  "avisos": [],
  "ejercicio": {
   "clubId": "fcemmen-nl",
@@ -96,13 +91,13 @@
    },
    {
     "rawLabel": "Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "player_sales",
     "amountNative": 0.857,
     "disclosureLevel": "aggregated",
     "_pag": 7,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_amortisation, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -370,13 +365,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
    "signoFijo": 0.857,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_amortisation, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.md:120 \"Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen",
    "destino": "revenue",
    "amountNative": 0.857
   },
@@ -548,10 +543,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de nl 2020 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "nl-eredivisie",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -590,14 +584,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de nl 2020 cacheada",
-   "estado": "pendiente"
+   "valor": "nl-eredivisie",
+   "fuente": "data/club-leagues/nl.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 9,
   "lineasGasto": 7,
   "metaFilas": 2,

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "valerenga-no",
@@ -35,6 +35,13 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "public_note": "Suma de dos entidades que no consolidan: aarsregnskap-valerenga-fotball-as-2023 y aarsregnskap-valerenga-fotball-elite-2023. La primera no imprime la transferencia a la segunda como renglón: el importe (87,5 millones) sale del ingreso «Overføring fra samarbeidsselskap» de la segunda y se resta de «Annen driftskostnad» de la primera (evidencia: Elite 2023, pág. 2 del visor: Overføring fra samarbeidsselskap 87 500 000; AS 2023, pág. 2 del visor: Annen driftskostnad 116 180 151, y la nota del contrato de colaboración con el Elite: el AS cubre los gastos del Elite); el resultado es la suma de los dos resultados impresos."
+    },
+    {
+      "id": "valerenga-no-aarsregnskap-valerenga-fotball-as-2024",
+      "club_id": "valerenga-no",
+      "title": "Vålerenga Fotball AS — aarsregnskap-valerenga-fotball-as-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "members": null,
@@ -298,6 +305,44 @@
           {"label":"Elite · Annen rentekostnad","amount":-0.024306},
           {"label":"Elite · Annen finanskostnad","amount":-89.339777}
         ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "NOK",
+      "source_id": "valerenga-no-aarsregnskap-valerenga-fotball-as-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2024-12-31"},
+      "revenue": [
+        {"label":"Sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":48.585515,"disclosure":"aggregated"},
+        {"label":"Markeds- og medieinntekter","category":"media_rights","subcategory":"broadcasting","amount":19.125106,"disclosure":"aggregated"},
+        {"label":"Billettsalg (ordinært)","category":"matchday","subcategory":"matchday_competition","amount":9.875103,"disclosure":"aggregated"},
+        {"label":"Viderefakturert","category":"other_revenue","subcategory":"other_income","amount":0.806512,"disclosure":"aggregated"},
+        {"label":"Diverse inntekter","category":"other_revenue","subcategory":"other_income","amount":0.235271,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.479064,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-7.281695,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"first_team_staff","subcategory":"wages_squad","amount":-1.436981,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"first_team_staff","subcategory":"wages_squad","amount":-0.194755,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"first_team_staff","subcategory":"wages_squad","amount":-0.101651,"disclosure":"aggregated"},
+        {"label":"Avskrivning av driftsmidler","category":"depreciation","subcategory":"depreciation","amount":-0.412094,"disclosure":"aggregated"},
+        {
+          "label": "Nedskrivning av driftsmidler",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.199718,
+          "disclosure": "aggregated"
+        },
+        {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.194918,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-83.502873,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.749113,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":78.627507,"expenses":93.803749,"net_result":-12.427128},
+      "adjustments": {
+        "extra_rows": [{"label":"Annen finansinntekt","amount":39.800533},{"label":"Annen finanskostnad","amount":-37.05142},{"label":"Skattekostnad","amount":0}]
       }
     },
     {

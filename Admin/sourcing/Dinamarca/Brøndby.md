@@ -40,3 +40,5 @@ Ninguna.
   chequeo de `node tools/audit.js`).
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2021 desde `Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.pdf` (sourceId `brondby-dk-aarsrapport-2021-12-31`).

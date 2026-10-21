@@ -1,0 +1,509 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.md",
+ "generado": "2026-10-21T14:12:55.490Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "ok",
+ "clubId": "goias-br",
+ "year": 2018,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "75.150413 = 75.150413",
+   "suma": 75.15041278000001,
+   "impreso": 75.15041278
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.002440520000003943
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2017 de este documento suma ingresos 58.651219; el sitio tiene 58.651217"
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2017: 58.651219 en demonstracoes-contabeis-2017-2016.pdf y 58.651219 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"-\"): aceptar, en demonstracoes-contabeis-2015-2014.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 75.150413,
+  "gastos": 63.651475,
+  "financiero": -2.167529,
+  "impuesto": 0,
+  "resultadoImpreso": 9.328969,
+  "resultadoParaCargar": 9.328969,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Bilheterias",
+   "lado": "ingreso",
+   "M": 3.636535,
+   "pagina": 22,
+   "linea": 907,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Direitos de transmissão de TV",
+   "lado": "ingreso",
+   "M": 35.287107,
+   "pagina": 22,
+   "linea": 908,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Premiação/participações",
+   "lado": "ingreso",
+   "M": 6.793361,
+   "pagina": 22,
+   "linea": 909,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Transação de atletas",
+   "lado": "ingreso",
+   "M": 22.630289,
+   "pagina": 22,
+   "linea": 910,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Patrocínio/ publicidade/propaganda",
+   "lado": "ingreso",
+   "M": 5.077342,
+   "pagina": 22,
+   "linea": 911,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Mensalidades",
+   "lado": "ingreso",
+   "M": 4.569132,
+   "pagina": 22,
+   "linea": 912,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Jogos lotéricos",
+   "lado": "ingreso",
+   "M": 2.207761,
+   "pagina": 22,
+   "linea": 913,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Receitas patrimoniais",
+   "lado": "ingreso",
+   "M": 0.082645,
+   "pagina": 22,
+   "linea": 914,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 0.509091,
+   "pagina": 22,
+   "linea": 915,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) INSS receitas de bilheterias",
+   "lado": "ingreso",
+   "M": -0.181827,
+   "pagina": 22,
+   "linea": 917,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) Cortesia de ingressos",
+   "lado": "ingreso",
+   "M": -0.244072,
+   "pagina": 22,
+   "linea": 918,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) INSS direitos de transmissões/premiações/participações",
+   "lado": "ingreso",
+   "M": -1.91265,
+   "pagina": 22,
+   "linea": 919,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) Direito de arena direitos de transmissões/premiações/participações",
+   "lado": "ingreso",
+   "M": -1.98522,
+   "pagina": 22,
+   "linea": 920,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) INSS patrocínio/publicidade/propaganda",
+   "lado": "ingreso",
+   "M": -0.238758,
+   "pagina": 22,
+   "linea": 921,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) Deduções de mensalidades",
+   "lado": "ingreso",
+   "M": -0.569305,
+   "pagina": 22,
+   "linea": 922,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) IRRF jogos lotéricos",
+   "lado": "ingreso",
+   "M": -0.208633,
+   "pagina": 22,
+   "linea": 923,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) INSS jogos lotéricos",
+   "lado": "ingreso",
+   "M": -0.110388,
+   "pagina": 22,
+   "linea": 924,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) Demais deduções das receitas",
+   "lado": "ingreso",
+   "M": -0.191999,
+   "pagina": 22,
+   "linea": 925,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Alugueis de estádios",
+   "lado": "gasto",
+   "M": 0.354353,
+   "pagina": 23,
+   "linea": 948,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Arbitragens",
+   "lado": "gasto",
+   "M": 0.107634,
+   "pagina": 23,
+   "linea": 949,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Exames antidoping",
+   "lado": "gasto",
+   "M": 0.018972,
+   "pagina": 23,
+   "linea": 950,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Custos e despesas c/ pessoal - jogos",
+   "lado": "gasto",
+   "M": 0.233074,
+   "pagina": 23,
+   "linea": 951,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Outros custos e despesas - jogos",
+   "lado": "gasto",
+   "M": 1.154605,
+   "pagina": 23,
+   "linea": 952,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Taxas confederações e federações",
+   "lado": "gasto",
+   "M": 0.706798,
+   "pagina": 23,
+   "linea": 953,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Transportes",
+   "lado": "gasto",
+   "M": 0.582358,
+   "pagina": 23,
+   "linea": 954,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Alimentação e estadias",
+   "lado": "gasto",
+   "M": 0.797334,
+   "pagina": 23,
+   "linea": 955,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Custos com pessoal",
+   "lado": "gasto",
+   "M": 35.930234,
+   "pagina": 23,
+   "linea": 956,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Amortização de custo de Atletas contratados",
+   "lado": "gasto",
+   "M": 0.440824,
+   "pagina": 23,
+   "linea": 957,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Amortização de custo de Atletas formados",
+   "lado": "gasto",
+   "M": 0.684142,
+   "pagina": 23,
+   "linea": 958,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Amortização de custo de Atletas em formação",
+   "lado": "gasto",
+   "M": 2.201014,
+   "pagina": 23,
+   "linea": 959,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Amortização de custos de cessão de direito de imagem",
+   "lado": "gasto",
+   "M": 0.521896,
+   "pagina": 23,
+   "linea": 960,
+   "origen": "nota que desglosa \"Custos com futebol\""
+  },
+  {
+   "etiqueta": "Despesas com pessoal",
+   "lado": "gasto",
+   "M": 9.708832,
+   "pagina": 23,
+   "linea": 967,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Combustíveis e lubrificantes",
+   "lado": "gasto",
+   "M": 0.08045,
+   "pagina": 23,
+   "linea": 968,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Manutenção e conservação",
+   "lado": "gasto",
+   "M": 0.365895,
+   "pagina": 23,
+   "linea": 969,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Propaganda e publicidade",
+   "lado": "gasto",
+   "M": 0.164201,
+   "pagina": 23,
+   "linea": 970,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Brindes",
+   "lado": "gasto",
+   "M": 0.021684,
+   "pagina": 23,
+   "linea": 971,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Aluguéis",
+   "lado": "gasto",
+   "M": 0.000895,
+   "pagina": 23,
+   "linea": 972,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Despesas legais e judiciais",
+   "lado": "gasto",
+   "M": 1.657501,
+   "pagina": 23,
+   "linea": 973,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Água, telefone, energia e internet",
+   "lado": "gasto",
+   "M": 0.830448,
+   "pagina": 23,
+   "linea": 974,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.372359,
+   "pagina": 23,
+   "linea": 975,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Lanches e refeições",
+   "lado": "gasto",
+   "M": 0.418215,
+   "pagina": 23,
+   "linea": 976,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Livros, revistas e periódicos",
+   "lado": "gasto",
+   "M": 0.005463,
+   "pagina": 23,
+   "linea": 977,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Correios",
+   "lado": "gasto",
+   "M": 0.015673,
+   "pagina": 23,
+   "linea": 978,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Transportes",
+   "lado": "gasto",
+   "M": 0.007655,
+   "pagina": 23,
+   "linea": 979,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Despesas administrativas",
+   "lado": "gasto",
+   "M": 1.502704,
+   "pagina": 23,
+   "linea": 980,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Depreciação",
+   "lado": "gasto",
+   "M": 0.840054,
+   "pagina": 23,
+   "linea": 981,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Provisões para riscos",
+   "lado": "gasto",
+   "M": -2.063438,
+   "pagina": 23,
+   "linea": 982,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Despesas com materiais",
+   "lado": "gasto",
+   "M": 1.136312,
+   "pagina": 7,
+   "linea": 168,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profissões regulamentadas",
+   "lado": "gasto",
+   "M": 0.00244,
+   "pagina": 23,
+   "linea": 990,
+   "origen": "nota que desglosa \"Despesas com serviços de terceiros\""
+  },
+  {
+   "etiqueta": "Outros serviços",
+   "lado": "gasto",
+   "M": 0.007064,
+   "pagina": 23,
+   "linea": 991,
+   "origen": "nota que desglosa \"Despesas com serviços de terceiros\""
+  },
+  {
+   "etiqueta": "Manutenção geral",
+   "lado": "gasto",
+   "M": 0.380526,
+   "pagina": 23,
+   "linea": 993,
+   "origen": "nota que desglosa \"Despesas com serviços de terceiros\""
+  },
+  {
+   "etiqueta": "Consultoria e assessoria",
+   "lado": "gasto",
+   "M": 2.635741,
+   "pagina": 23,
+   "linea": 994,
+   "origen": "nota que desglosa \"Despesas com serviços de terceiros\""
+  },
+  {
+   "etiqueta": "Serviços gerais",
+   "lado": "gasto",
+   "M": 1.315438,
+   "pagina": 23,
+   "linea": 995,
+   "origen": "nota que desglosa \"Despesas com serviços de terceiros\""
+  },
+  {
+   "etiqueta": "Despesas tributárias",
+   "lado": "gasto",
+   "M": 0.512121,
+   "pagina": 7,
+   "linea": 170,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Resultado financeiro líquido",
+   "M": -2.167529,
+   "linea": 173
+  }
+ ],
+ "impuesto": []
+}

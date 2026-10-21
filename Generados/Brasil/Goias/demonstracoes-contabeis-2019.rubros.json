@@ -1,0 +1,380 @@
+{
+  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.md",
+  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.pdf",
+  "club": "goias-br",
+  "year": null,
+  "generatedAt": "2026-10-21T14:12:55.538Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "RECEITA LÍQUIDA",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        90.846836
+      ],
+      "glosa": "Ingresos netos"
+    },
+    {
+      "label": "Aluguéis de estádios",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        0.803977
+      ],
+      "glosa": "Alquiler de estadios"
+    },
+    {
+      "label": "Arbitragens",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        0.774772
+      ],
+      "glosa": "Arbitrajes"
+    },
+    {
+      "label": "Exames antidoping",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        0.10456
+      ],
+      "glosa": "Controles antidopaje"
+    },
+    {
+      "label": "Custos e despesas c/ pessoal - Jogos",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        0.207457
+      ],
+      "glosa": "Costes y gastos de personal - Partidos"
+    },
+    {
+      "label": "Outros custos e despesas - Jogos",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        2.584446
+      ],
+      "glosa": "Otros costes y gastos - Partidos"
+    },
+    {
+      "label": "Taxas confederações e federações",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        0.918566
+      ],
+      "glosa": "Tasas de confederaciones y federaciones"
+    },
+    {
+      "label": "Transportes",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        1.940957
+      ],
+      "glosa": "Transportes"
+    },
+    {
+      "label": "Alimentação e estadias",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        0.886772
+      ],
+      "glosa": "Alojamiento y manutención"
+    },
+    {
+      "label": "Despesa com pessoal",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        41.358458
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Amortização de custo de atletas contratados",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        5.597466
+      ],
+      "glosa": "Amortización de costes de jugadores contratados"
+    },
+    {
+      "label": "Amortização de custo de atletas formados",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        0.655035
+      ],
+      "glosa": "Amortización de costes de jugadores formados"
+    },
+    {
+      "label": "Amortização de custo de atletas em formação",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        2.515373
+      ],
+      "glosa": "Amortización de costes de jugadores en formación"
+    },
+    {
+      "label": "Amortização de custo de cessão de direitos de imagem",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Custos com futebol\"",
+      "values": [
+        3.49069
+      ],
+      "glosa": "Amortización de costes de cesión de derechos de imagen"
+    },
+    {
+      "label": "Despesa com pessoal",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        9.260639
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Combustíveis e lubrificantes",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.112921
+      ],
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Manutenção e conservação",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.654933
+      ],
+      "glosa": "Mantenimiento y conservación"
+    },
+    {
+      "label": "Propaganda e publicidade",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.113444
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Brindes",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.075266
+      ],
+      "glosa": "Obsequios"
+    },
+    {
+      "label": "Alugueis",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.0055
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Despesas legais e judiciais",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.134321
+      ],
+      "glosa": "Gastos legales y judiciales"
+    },
+    {
+      "label": "Água, telefone, energia e internet",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        1.137742
+      ],
+      "glosa": "Agua, teléfono, energía e internet"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.346744
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Lanches e refeições",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.513743
+      ],
+      "glosa": "Refrigerios y comidas"
+    },
+    {
+      "label": "Livros, revistas e periódicos",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.00568
+      ],
+      "glosa": "Libros, revistas y publicaciones periódicas"
+    },
+    {
+      "label": "Correios",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.012923
+      ],
+      "glosa": "Correos"
+    },
+    {
+      "label": "Transportes",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.009994
+      ],
+      "glosa": "Transportes"
+    },
+    {
+      "label": "Despesas Administrativas",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        1.40763
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Depreciação e amortização",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        1.522292
+      ],
+      "glosa": "Depreciación y amortización"
+    },
+    {
+      "label": "Provisões para contingências",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        0.445186
+      ],
+      "glosa": "Provisiones para contingencias"
+    },
+    {
+      "label": "Despesas com materiais",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.899769
+      ],
+      "glosa": "Gastos de materiales"
+    },
+    {
+      "label": "Profissões regulamentadas",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas com serviços de terceiros\"",
+      "values": [
+        0.00135
+      ],
+      "glosa": "Servicios profesionales colegiados"
+    },
+    {
+      "label": "Outros serviços",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas com serviços de terceiros\"",
+      "values": [
+        0.008541
+      ],
+      "glosa": "Otros servicios"
+    },
+    {
+      "label": "Manutenção geral",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas com serviços de terceiros\"",
+      "values": [
+        0.38984
+      ],
+      "glosa": "Mantenimiento general"
+    },
+    {
+      "label": "Consultoria e assessoria",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas com serviços de terceiros\"",
+      "values": [
+        3.607702
+      ],
+      "glosa": "Consultoría y asesoría"
+    },
+    {
+      "label": "Serviços gerais",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Despesas com serviços de terceiros\"",
+      "values": [
+        0.963973
+      ],
+      "glosa": "Servicios generales"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.171809
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
+}

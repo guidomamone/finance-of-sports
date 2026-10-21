@@ -1,22 +1,212 @@
 {
  "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.pdf",
- "generado": "2026-10-21T12:52:09.254Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-21T14:00:38.374Z",
+ "frena": [],
  "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "fcemmen-nl",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Wedstrijdbaten",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.107,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsoring",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 3.435,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Media gerelateerde baten",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 2.235,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Prijzengeld",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.365,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Horeca",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.123,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Merchandise",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.222,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsidies & giften",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.28,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige baten",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.395,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Personeelskosten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -5.723,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Horeca",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.148,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Verkoopkosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.384,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Huisvestingskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.469,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Wedstrijd- en trainingskosten",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.551,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Algemene kosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.405,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingskosten imm. & mat. vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.168,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.723,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-06-30",
+   "sourceId": "fcemmen-nl-f-04-fce-jaarverslag-2020-2021-incl-jaarcijfers-def",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.006,
+   "tax": 0.243,
+   "extraRows": [
+    {
+     "label": "Som der rentebaten en rentelasten",
+     "value": -0.006
+    },
+    {
+     "label": "Som der belastingen resultaat uit gewone bedrijsvoering",
+     "value": 0.243
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 8.162,
+   "officialTotalExpenses": 8.571,
+   "officialPAT": -0.171
+  },
+  "source": {
+   "id": "fcemmen-nl-f-04-fce-jaarverslag-2020-2021-incl-jaarcijfers-def",
+   "clubId": "fcemmen-nl",
+   "title": "FC Emmen B.V. — F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.md",
  "reemplaza": false,
  "periodo": {
@@ -29,5 +219,381 @@
  },
  "clubId": "fcemmen-nl",
  "year": 2021,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.pdf",
+   "campo": "cierre",
+   "valor": "2021-06-30",
+   "linea": null,
+   "motivo": "Temporada 2020/2021: el eigen vermogen se compara «per 30 juni 2021» (.md L146)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Wedstrijdbaten",
+   "page": 7,
+   "native": 0.107,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.107,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.107
+  },
+  {
+   "label": "Sponsoring",
+   "page": 7,
+   "native": 3.435,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.435,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.435
+  },
+  {
+   "label": "Media gerelateerde baten",
+   "page": 7,
+   "native": 2.235,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.235,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.235
+  },
+  {
+   "label": "Prijzengeld",
+   "page": 7,
+   "native": 0.365,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.365,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.365
+  },
+  {
+   "label": "Horeca",
+   "page": 7,
+   "native": 0.123,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.123,
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: criterio neerlandés unificado (catering/Horeca a stadium_other como Go Ahead Eagles; el renglón de amortización + resultado de traspasos de FC Emmen queda como amortización de pases, sin ingreso negativo)",
+   "destino": "revenue",
+   "amountNative": 0.123
+  },
+  {
+   "label": "Merchandise",
+   "page": 7,
+   "native": 0.222,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.222,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.222
+  },
+  {
+   "label": "Subsidies & giften",
+   "page": 7,
+   "native": 1.28,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.28,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.28
+  },
+  {
+   "label": "Overige baten",
+   "page": 7,
+   "native": 0.395,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.395,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.395
+  },
+  {
+   "label": "Personeelskosten",
+   "page": 7,
+   "native": 5.723,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.723,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Personeelskosten 3.915 (miles de EUR) es costo de personal sin separar plantel de no plantel: el renglon entero va a wages_squad. [Personeelskosten | € 3.915 (L96)]",
+   "destino": "expense",
+   "amountNative": -5.723
+  },
+  {
+   "label": "Horeca",
+   "page": 7,
+   "native": 0.148,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.148,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Horeca de gasto (430 miles) es el costo de lo vendido en la gastronomia del estadio, equivalente a 'Kostprijs van de omzet' (other_expenses en Feyenoord y PSV; 'Inkoopwaarde van de omzet' en Go Ahead Eagles). Va a Otros gastos, como propone el sistema. Suma de gastos: 3.915+430+481+527+670+304+203 = 6.530 vs 6.529 impreso (redondeo de miles). [Horeca | € 430 (L97); Som der bedrijfslasten € 6.529 (L103)]",
+   "destino": "expense",
+   "amountNative": -0.148
+  },
+  {
+   "label": "Verkoopkosten",
+   "page": 7,
+   "native": 0.384,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.384,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Verkoopkosten (costos de venta/comerciales, 481 miles) va a admin_general_expense: category-map.js define esa categoria como 'administracion, gastos generales, comerciales, impuestos...'. Se usa el mismo criterio para todo Verkoopkosten neerlandes (Dordrecht, NAC Breda). No es Otros gastos. [Verkoopkosten | € 481 (L98)]",
+   "destino": "expense",
+   "amountNative": -0.384
+  },
+  {
+   "label": "Huisvestingskosten",
+   "page": 7,
+   "native": 0.469,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.469,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.469
+  },
+  {
+   "label": "Wedstrijd- en trainingskosten",
+   "page": 7,
+   "native": 0.551,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.551,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.551
+  },
+  {
+   "label": "Algemene kosten",
+   "page": 7,
+   "native": 0.405,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.405,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.405
+  },
+  {
+   "label": "Afschrijvingskosten imm. & mat. vaste activa",
+   "page": 7,
+   "native": 0.168,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.168,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.168
+  },
+  {
+   "label": "Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen",
+   "page": 7,
+   "native": 0.723,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))",
+   "signoFijo": 0.723,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: criterio neerlandés unificado (catering/Horeca a stadium_other como Go Ahead Eagles; el renglón de amortización + resultado de traspasos de FC Emmen queda como amortización de pases, sin ingreso negativo)",
+   "destino": "expense",
+   "amountNative": -0.723
+  },
+  {
+   "label": "Som der rentebaten en rentelasten",
+   "page": null,
+   "native": -0.006,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Som der belastingen resultaat uit gewone bedrijsvoering",
+   "page": null,
+   "native": 0.243,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 8.162,
+  "expSum": -8.571,
+  "officialTotalRevenue": 8.162,
+  "officialTotalExpenses": 8.571,
+  "officialPAT": -0.171,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.171,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 8.162
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 8.571
+  }
+ },
+ "liga": {
+  "valor": "nl-eredivisie",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): Temporada 2020/2021: el eigen vermogen se compara «per 30 juni 2021» (.md L146)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): Temporada 2020/2021: el eigen vermogen se compara «per 30 juni 2021» (.md L146))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "escalón 2: la verificación del documento cerró con el resultado impreso (cierra (como impresos))",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-06-30 = 0.8415 (Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "fcemmen-nl-f-04-fce-jaarverslag-2020-2021-incl-jaarcijfers-def",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eredivisie",
+   "fuente": "data/club-leagues/nl.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 8,
+  "lineasGasto": 8,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

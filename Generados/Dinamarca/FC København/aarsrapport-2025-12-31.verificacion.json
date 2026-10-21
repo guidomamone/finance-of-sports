@@ -1,11 +1,11 @@
 {
  "pdf": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.pdf",
  "md": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md",
- "generado": "2026-10-21T12:48:26.066Z",
+ "generado": "2026-10-21T13:45:00.966Z",
  "scriptHuella": "f2a64e48f42b",
  "estado": "ok",
  "clubId": "fckobenhavn-dk",
- "year": null,
+ "year": 2025,
  "escala": {
   "valor": "miles",
   "escalon": 0,
@@ -49,20 +49,14 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "ok": false,
+   "detalle": "la columna 2024 de este documento suma ingresos 772.59; el sitio tiene 754.513"
   }
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 3",
   "duda de localizar que no afecta la carga: El renglón no tiene número de nota en b16 y no aparece desglosado en ningún bloque.",
-  "duda de extraer que no afecta la carga: La nota 8 (L404-L408) reparte el resultado en dividendo y resultado transferido; no desglosa ingresos ni gastos.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: La nota 8 (L404-L408) reparte el resultado en dividendo y resultado transferido; no desglosa ingresos ni gastos."
  ],
  "reintentar": null,
  "reintentado": false,
@@ -247,38 +241,5 @@
    "linea": 250
   }
  ],
- "impuesto": [],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "dc9e454f6d6d3c7315e2d007c0f31e5447230743",
-  "rango": [
-   236,
-   255
-  ],
-  "lineasCargadas": [
-   354,
-   355,
-   356,
-   357,
-   358,
-   359,
-   360,
-   241,
-   248,
-   242,
-   243,
-   369,
-   370,
-   371,
-   387,
-   389,
-   390,
-   391,
-   392,
-   249,
-   250
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 236 a 255 del .md):\nL236: |  |  | 2025 | 2024 |\nL237: | --- | --- | --- | --- |\nL238: | Note |  | t.kr. | t.kr. |\nL239: | 2 | Nettoomsætning | 711.560 | 471.136 |\nL240: | --- | --- | --- | --- |\nL241: |  | Andre driftsindtægter | 163.035 | 287.954 |\nL242: |  | Vareforbrug | -116.323 | -106.193 |\nL243: |  | Andre eksterne omkostninger | -187.366 | -181.906 |\nL244: |  | Bruttoresultat | 570.906 | 470.991 |\nL245: | 4 | Personaleomkostninger | -349.664 | -298.133 |\nL246: | 5 | Af- og nedskrivninger af materielle og immaterielle anlægsaktiver | -179.629 | -137.242 |\nL247: |  | Driftsresultat | 41.613 | 35.616 |\nL248: |  | Indtægter af kapitalandele i tilknyttede virksomheder | 19.400 | 13.500 |\nL249: | 6 | Andre finansielle indtægter | 9.337 | 2.733 |\nL250: | 7 | Øvrige finansielle omkostninger | -17.179 | -5.613 |\nL251: |  | Resultat før skat | 53.171 | 46.236 |\nL252: | 8 | Årets resultat | 53.171 | 46.236 |\nL253: |  | F.C. København P/S · Årsrapport for 2025 | 10 |\nL254: | --- | --- | --- |\n\nLO QUE SE CARGA:\n- ingreso · \"Entréindtægter\" · 118.352 · L354 (de una nota)\n- ingreso · \"TV- og præmie-indtægter\" · 275.452 · L355 (de una nota)\n- ingreso · \"Samarbejdspartnere\" · 158.819 · L356 (de una nota)\n- ingreso · \"Merchandiseindtægter\" · 81.533 · L357 (de una nota)\n- ingreso · \"Food & Beverage, konferencecenter m.v.\" · 28.985 · L358 (de una nota)\n- ingreso · \"Ejendomsudlejning\" · 21.248 · L359 (de una nota)\n- ingreso · \"Øvrige indtægter\" · 27.171 · L360 (de una nota)\n- ingreso · \"Andre driftsindtægter\" · 163.035 · L241\n- ingreso · \"Indtægter af kapitalandele i tilknyttede virksomheder\" · 19.4 · L248\n- gasto · \"Vareforbrug\" · 116.323 · L242\n- gasto · \"Andre eksterne omkostninger\" · 187.366 · L243\n- gasto · \"Lønninger og gager\" · 330.987 · L369 (de una nota)\n- gasto · \"Pensioner\" · 16.051 · L370 (de una nota)\n- gasto · \"Andre omkostninger til social sikring\" · 2.626 · L371 (de una nota)\n- gasto · \"Amortiseringer af kontraktrettigheder\" · 155.676 · L387 (de una nota)\n- gasto · \"Afskrivning på indretning af lejede lokaler\" · 4.151 · L389 (de una nota)\n- gasto · \"Afskrivning på bygninger\" · 5.679 · L390 (de una nota)\n- gasto · \"Nedskrivninger bygninger\" · 2.329 · L391 (de una nota)\n- gasto · \"Afskrivning på produktionsanlæg og maskiner\" · 11.794 · L392 (de una nota)\n- financiero · \"Andre finansielle indtægter\" · 9.337 · L249\n- financiero · \"Øvrige finansielle omkostninger\" · -17.179 · L250"
- }
+ "impuesto": []
 }

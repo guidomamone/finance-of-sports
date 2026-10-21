@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "nordsjaelland-dk",
@@ -17,6 +17,13 @@
       "id": "nordsjaelland-dk-aarsrapport-2024",
       "club_id": "nordsjaelland-dk",
       "title": "FC Nordsjælland A/S — Årsrapport 2024 / Annual report 2024 (01.01.2024 - 31.12.2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "nordsjaelland-dk-aarsrapport-2025-12-31",
+      "club_id": "nordsjaelland-dk",
+      "title": "FC Nordsjælland A/S — aarsrapport-2025-12-31 (ejercicio 2025)",
       "type": "official_balance_sheet",
       "reliability": "primary"
     }
@@ -66,6 +73,67 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.576407,"tax":-31.778343,"gross_debt":20.625,"cash":16.943338},
       "official_totals": {"revenue":366.004057,"expenses":220.17121,"net_result":111.478097}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "DKK",
+      "source_id": "nordsjaelland-dk-aarsrapport-2025-12-31",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2025-12-31"},
+      "revenue": [
+        {
+          "label": "Bruttofortjeneste Gross profit",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 460.800148,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Lønninger og gager Salaries and wages",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -138.376504,
+          "disclosure": "aggregated"
+        },
+        {"label":"Pensioner Pension costs","category":"first_team_staff","subcategory":"wages_squad","amount":-1.834516,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring Other costs for social security",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -1.838843,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortización derechos de jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -19.889197,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación de materiales","category":"depreciation","subcategory":"depreciation","amount":-2.320184,"disclosure":"aggregated"},
+        {
+          "label": "Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -13.511776,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.778991,"tax":-65.011162,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":460.800148,"expenses":177.77102,"net_result":209.238975},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andre finansielle indtægter fra tilknyttede virksomheder Other financial income from group enterprises","amount":1.137518},
+          {"label":"Andre finansielle indtægter Other financial income","amount":1.590029},
+          {"label":"Øvrige finansielle omkostninger Other financial costs","amount":-11.506538},
+          {"label":"Skat af årets resultat Tax on net profit or loss for the year","amount":-65.011162}
+        ],
+        "no_breakdown": [{"line":"Bruttofortjeneste Gross profit","side":"revenue","amount":460.800148,"reason":"el documento no desglosa este renglón"}]
+      }
     }
   ],
   "budget_overlay": {},

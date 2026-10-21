@@ -387,6 +387,81 @@ error de carga. Página 7 releída a 300dpi para confirmar que la imagen dice lo
 es un error de OCR de esta sesión).
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Chapecoense/demonstracoes-financeiras-2019.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Receita de Transmissão | pág. 47, precedente |
+| 2 | Catarinense | pág. 47, Claude 0.9 |
+| 3 | Brasileirão Série A | pág. 47, Claude 0.9 |
+| 4 | Copa do Brasil | pág. 47, Claude 0.88 |
+| 5 | Sulamericana | pág. 47, Claude 0.88 |
+| 6 | Patrocínio | pág. 47, precedente |
+| 7 | Receita de Negociação de Atletas | pág. 47, precedente |
+| 8 | Programa Sócio Torcedor | pág. 47, precedente |
+| 9 | Timemania | pág. 47, precedente |
+| 10 | Royalties/Direito de Uso de Marca/Venda de produtos | pág. 47, precedente |
+| 11 | Receitas Diversas | pág. 47, precedente |
+| 12 | Doações/PAF | pág. 47, precedente |
+| 13 | Receita Federações | pág. 47, precedente |
+| 14 | Deduções Tributárias e Sindicais | pág. 47, precedente |
+| 15 | Dividendos Recebidos | pág. 50, precedente |
+| 16 | Outras Receitas Não Operacionais | pág. 50, precedente |
+| 17 | Recuperação de Despesas | pág. 50, precedente |
+| 18 | Venda de Imobilizado | pág. 50, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custos | pág. 17, precedente |
+| 2 | Ordenados e Salários | pág. 48, precedente |
+| 3 | Premiação | pág. 48, Claude 0.85 |
+| 4 | INSS/FGTS/PIS | pág. 48, precedente |
+| 5 | Amortização Direitos Fed. Econ. | pág. 48, Jev 1 |
+| 6 | Despesas com Transf. Jogadores | pág. 48, precedente |
+| 7 | Indenizações | pág. 48, precedente |
+| 8 | Alimentação | pág. 48, precedente |
+| 9 | Despesas Médicas | pág. 48, precedente |
+| 10 | Seguros | pág. 48, precedente |
+| 11 | Outros Gastos c/ Pessoal | pág. 48, precedente |
+| 12 | Materiais | pág. 17, precedente |
+| 13 | Manutenção Imobilizado | pág. 48, precedente |
+| 14 | Manutenção Terceiros | pág. 48, precedente |
+| 15 | Manutenção Intangível | pág. 48, Claude 0.8 |
+| 16 | Jogos e competições | pág. 17, Jev 1 |
+| 17 | Terceiros | pág. 17, Jev 1 |
+| 18 | Bens de pq. Valor e depreciação | pág. 17, precedente |
+| 19 | Direito de imagem | pág. 17, precedente |
+| 20 | Multas e Indenizações | pág. 49, precedente |
+| 21 | Propaganda e Publicidade | pág. 49, precedente |
+| 22 | Gastos Logísticos | pág. 49, precedente |
+| 23 | Provisões Contingência | pág. 49, Jev 0.93 |
+| 24 | Doações/Ajudas de Custo | pág. 49, precedente |
+| 25 | Água, Luz e Telefone | pág. 49, precedente |
+| 26 | Despesas Bancárias | pág. 49, precedente |
+| 27 | Mensalidades/Periódicos | pág. 49, Jev 1 |
+| 28 | Academia | pág. 49, precedente |
+| 29 | Demais Gastos | pág. 49, precedente |
+| 30 | Tributárias | pág. 17, precedente |
+| 31 | Despesas diversas | pág. 51, precedente |
+| 32 | Custo dos Bens Patrimoniais Vendidos | pág. 51, precedente |
+| 33 | Acidente Aéreo Chapecoense | pág. 51, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## 2017
 
 ### Meta
@@ -454,6 +529,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### chapecoense-br-demonstracoes-financeiras-2019
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros
