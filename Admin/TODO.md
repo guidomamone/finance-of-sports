@@ -28,25 +28,25 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-* Lo que está en marcha va marcado en cada bloque.
+1. 343 (Pipeline 12): propuesta de cómo se busca el sponsor con evidencia (texto de skill para tu ok)
+2. 341 (Pipeline 12): codear el alta que propone una liga y un deporte nuevos, con tus respuestas
+3. 344 (Pantallas 6): mockup de Ligas con ligas de distintos países y deportes, para tu ok
+4. 330 y 257 (Orden 1): dónde se pierde lo decidido y las skills que faltan (propuestas para tu ok)
+5. 278 y 287 (la principal): carpetas duplicadas con `tools/mudar-carpetas.mjs`
+6. 237 al (Pipeline 12, después del 341): anexo UEFA para abrir las ventas
+7. 258 (Pantallas 6, después del 344): índice partido por país o liga, si la skill de escala dice que llegó el momento
 
 **C. Técnico**
-1. 341: queda tu decisión sobre el diseño de cómo un alta propone una liga y un deporte nuevos (en `Admin/sesiones/onboarding.md`, «Diseño de #5 y #14»), y un detalle menor del aviso `index-file-roto`
-2. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
-3. 249: API en dominio propio (el último de C; no construirla todavía)
+8. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
 **D. Orden de la casa**
-4. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
-5. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
-6. 257: skills que faltan
-7. 237 al: anexo UEFA para abrir las ventas
-8. 258: índice partido por país o liga (cuando la skill de escala lo diga)
-9. 338: correr todas las auditorías del proyecto
+9. 338: correr todas las auditorías del proyecto (al final de A)
 
 **E. Después de A a D (Guido, 2026-10-20)**
 10. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 11. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 12. 335: mails a clubes
+13. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -139,8 +139,14 @@ el número de la izquierda es el orden de trabajo.
 338. CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
    (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
    `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
-341. LO QUE BATH SE HIZO A MANO (Datos 4, 2026-10-20). Arreglados por script todos menos el alta que propone una liga o un deporte
-   nuevos (#5) y el aviso de reglas de fútbol al activar un deporte (#14): el diseño está en `Admin/sesiones/onboarding.md`, «Diseño de #5 y
-   #14». Propuesta: agregar una liga a un deporte activo lo aprueba la Auditora; activar un deporte, Guido. Abiertas para Guido: si un deporte
-   puede activarse con la liga de un solo club, y si el `tier` de rugby sigue la pirámide inglesa. No se suma `gb-premiershiprugby` a
-   `SOLO_ESTADIO` (Auditora 4). Menor: el número de línea del aviso `index-file-roto` se corre con comentarios HTML de varias líneas.
+341. LO QUE BATH SE HIZO A MANO (Datos 4, 2026-10-20). Queda el alta que propone una liga o un deporte nuevos (#5) y el aviso de
+   reglas de fútbol al activar un deporte (#14), con el diseño de `Admin/sesiones/onboarding.md`, «Diseño de #5 y #14». Guido (2026-10-21):
+   una liga nueva para un deporte activo la aprueba la Auditora; activar un deporte, Guido; un deporte puede activarse con un solo club;
+   el `tier` de rugby sigue la pirámide de la RFU (Premiership 1, Championship 2) y se compara dentro de un deporte y un país.
+   Menor: el número de línea del aviso `index-file-roto` se corre con comentarios HTML de varias líneas.
+343. BUSCAR EL SPONSOR CON EVIDENCIA (Guido, 2026-10-21): «lo único que quiero es que se haya intentado buscarlo. Auditoría necesita
+   evidencia de que buscaste, y no solo Wikipedia». Hoy la compuerta de `estadio-sponsor.mjs` frena sin sponsor salvo `SOLO_ESTADIO` o
+   liga amateur. Propuesta: un registro de búsqueda con las fuentes probadas que deja pasar el año sin sponsor, y la skill que dice dónde
+   buscar. La propuesta va a `Admin/propuestas/343-busqueda-sponsor.md`; la compuerta, a la Auditora; el texto de skill, a Guido.
+344. LIGAS DE DISTINTOS PAÍSES Y DEPORTES EN LA PANTALLA LIGAS (Guido, 2026-10-21: «quiero un mockup»). Cómo se agrupan, filtran y ordenan
+   al crecer (país, deporte, nivel; el nivel se compara dentro de un deporte y un país) y cómo convive Informes (332). Mockup antes de nada.
