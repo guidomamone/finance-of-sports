@@ -1,3 +1,20 @@
+# Sesión pantallas (Pantallas 6): Inicio sin conteos de lo cargado
+
+## Qué cambió (para CHANGELOG)
+- Inicio ya no muestra cuánto hay cargado: se sacó la línea «320 clubes · 23 países · 1301 ejercicios» (el elemento `#iniConteo`, `pintarConteoInicio()` y las claves `ini.clubs`, `ini.countries` e
+  `ini.years` de `en.js`; el estilo `.ini-eyebrow`). Las tarjetas de «Los que más facturan» dicen solo «Ejercicio AAAA» (no «262 clubes con balance»). El ranking con los US$ de cada club QUEDA
+  (se había sacado en la tanda anterior por la lectura de «(c)»; se restauró según la aclaración: es contenido, como el ranking de una liga). Sigue fuera el aviso de «% sin desglosar» de las
+  tarjetas de liga de Inicio. Verificado servido: sin conteos y con los 40 valores en US$. ASSET_V 1593.
+
+## Qué queda (para TODO)
+- `file://`: no pude verlo en Brave. Dos `open -a "Brave Browser" file:///…/fos-pantallas/index.html` no abrieron una ventana nueva visible para `app_list_windows`; la ventana que se ve es la de la
+  principal, con `finance-of-sports/index.html` (la carpeta principal, no la mía). Falta que alguien lo mire con esta rama mergeada.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 6): 344 implementado, números fuera de Ligas e Inicio, Escocia separada
 
 ## Qué cambió (para CHANGELOG)

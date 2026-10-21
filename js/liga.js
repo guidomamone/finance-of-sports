@@ -1324,6 +1324,7 @@ window.LIGA_VIEW = (function(){
       lleno.style.width = max > 0 ? Math.max(2, Math.round(f.revenue / max * 100)) + '%' : '0';
       barra.appendChild(lleno);
       b.appendChild(barra);
+      b.appendChild(el('span', 'vid-val', fmtCard(f.revenue)));
       b.addEventListener('click', function(){ irAlClub(f.id); });
       li.appendChild(b);
       ol.appendChild(li);

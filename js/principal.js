@@ -346,7 +346,7 @@
 
   // ---------- INICIO ----------
   // El buscador es la puerta al selector: al tocarlo se abre el modal con lo que haya tipeado, y al elegir se cae en Finanzas.
-  // "Comparar" lleva a la pestaña Comparar. El conteo sale de data/club-index.js (solo clubes con un ejercicio real).
+  // "Comparar" lleva a la pestaña Comparar.
   const iniQ = document.getElementById('iniQ');
   const abrirDesdeInicio = () => {
     const q = iniQ.value.trim();
@@ -358,14 +358,6 @@
   iniQ.addEventListener('focus', abrirDesdeInicio);
   iniQ.addEventListener('input', abrirDesdeInicio);
   document.getElementById('iniCmp').addEventListener('click', () => irASeccion('vs'));
-  function pintarConteoInicio(){
-    const idx = Object.values(window.CLUB_INDEX || {});
-    const paises = new Set(idx.map(c => c.c)).size;
-    const ejercicios = idx.reduce((a, c) => a + (c.y || 0), 0);
-    document.getElementById('iniConteo').textContent = idx.length + ' ' + I18N.t('ini.clubs', 'clubes') + ' · '
-      + paises + ' ' + I18N.t('ini.countries', 'países') + ' · ' + ejercicios + ' ' + I18N.t('ini.years', 'ejercicios');
-  }
-  pintarConteoInicio();
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
   // El dropdown escribe en FIN_SEL (js/finanzas-render.js) y nadie más lo lee.
@@ -865,7 +857,6 @@
     // La pestaña Ligas también arma todo su contenido en JS.
     LIGA_VIEW.refresh();
     if(window.SPONSOR_VIEW) SPONSOR_VIEW.refresh();
-    pintarConteoInicio();
     rotularMenuMovil();
     pintarVistaFin();
   });
