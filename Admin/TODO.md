@@ -27,12 +27,12 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 313 y el 51 quedan para más adelante (E).
 
 **A. En marcha**
-* 333: lo no bloqueante de la revisión del 245 y el 246: `generar-data.mjs --check` también marca un `-data.js` sin JSON; `worktree.mjs` trata `data/<iso>/*-data.js` como generado y corre `generar-data` después del merge; `renombrar-ids.mjs --verificar` ignora el ejemplo de CLAUDE.md --> Pipeline (sesión nueva)
+* 333: lo no bloqueante de la revisión del 245 y el 246 (generar-data --check, worktree.mjs con -data.js generado, renombrar-ids sin el ejemplo de CLAUDE.md, título de Racing, búsqueda duplicada en Mi Cuenta): hecho, espera el veredicto de la Auditora 2 --> Pipeline 8 y Auditora 2
 
 **B. Pantallas y distribución**
-* Vålerenga: la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
-* 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
-* 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
+* Vålerenga (en marcha, Pantallas 4): la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
+* 282: quién audita, lo que queda: 56 informes del auditor sin canal público, solo por mail al club (espera que decidas si se escribe)
+* 241 (en marcha, Pantallas 4: primero el mockup, para tu ok): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
 * 259: material de difusión (después de 241)
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
