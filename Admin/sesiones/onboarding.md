@@ -384,3 +384,17 @@ La frase «Y si subiste `ASSET_V` … hay que correr `generate-fuentes-page.js` 
 
 ### Qué deja de ser cierto en ESTADO
 - Una liga o un deporte nuevo ya no se agrega a mano a `data/leagues.js`: `catalogo-liga.mjs`.
+
+## Pipeline 12: 343 codeado y 237 al (2026-10-21)
+
+### Qué cambió (para CHANGELOG)
+- 343: la sección 0.5 de `club-sourcing` (buscar el sponsor con evidencia, texto aprobado por Guido); `tools/sponsor-busqueda.js` y la compuerta de `estadio-sponsor.mjs`: un sponsor sin fuente solo cuenta con el registro de búsqueda (tres clases sin contar Wikipedia) o `legacy` de `tools/sponsor-legacy.json` (26 años de 8 clubes, congelada); `audit.js` P1 `sponsor-sin-busqueda` y `sponsor-legacy-fuera-de-lista`, P3 `sponsor-sin-registro`. Medido: 0 años frenados fuera de legacy, `data/` igual.
+- 237 al: `tools/cuadro-sobrante.mjs`, llamado por `extraer.mjs` tras la respuesta del modelo: un cuadro que localizar eligió y extraer no usó abre un renglón del estado cuando una sección suma exacto (≥ 3 filas, desde 1.000 unidades, reparto único, más fino, una sola columna). Solo extracciones nuevas; un año cargado se salta y dice qué habría reemplazado. Casos: Mafra 2023-24 (Vendas e serviços prestados en 6 filas), AS Roma 2009 (e) Altri proventi en 10). Control de falsos positivos: 0 de 15.826 ensayos (la primera versión dio 1 de 4.947 por una cifra chica y 1 de 15.826 por dos filas; de ahí los mínimos). `verificar.mjs` de Mafra sin los ajustes manuales: rubros de bilheteira, patrocínios, televisión, merchandising y UEFA; AS Roma 2009 igual (OK, mismos totales).
+
+### Qué falta
+- Que Guido vea la línea de la skill de arranque `club-or-year-onboarding` (sección 6, «Compuerta de estadio y sponsor»): sumar que el sponsor sin fuente pide el registro de `club-sourcing` 0.5.
+- Sporting 2002-2007 (cuadro que redondea por fila) y Portimonense 2024-25 siguen a mano.
+
+### Qué deja de ser cierto en ESTADO
+- Un sponsor sin fuente ya no se resuelve con un texto: pide el registro de búsqueda.
+- Un anexo con otra estructura puede abrir un renglón (Mafra) en extracciones nuevas.
