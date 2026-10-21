@@ -318,7 +318,48 @@ window.LIGA_VIEW = (function(){
     der.appendChild(panelSimulacion(r));
     grilla.appendChild(der);
     wrap.appendChild(grilla);
+    var inf = informes(st.league);
+    if(inf) wrap.appendChild(inf);
     wrap.appendChild(salvedades(r));
+  }
+
+  // INFORMES DE ESTA LIGA: una lista de lectura (data/informes.js), no datos: ningún número de acá entra en un ranking. Los informes que
+  // cubren varias ligas de Europa van arriba; después, los de esta liga. Cada tarjeta lleva una cifra con su fuente y el link al original.
+  function informes(leagueId){
+    var todos = window.INFORMES || [];
+    var pais = (window.COUNTRIES || {})[ligaDe(leagueId).country] || {};
+    var lista = todos.filter(function(i){ return i.ambito === 'europa' ? pais.region === 'europa' : (i.ligas || []).indexOf(leagueId) >= 0; })
+      .sort(function(a, b){ return (a.ambito === 'europa' ? 0 : 1) - (b.ambito === 'europa' ? 0 : 1); });
+    if(!lista.length) return null;
+    var lang = document.documentElement.lang === 'en' ? 'en' : 'es';
+    function txt(o){ return o[lang] || o.es; }
+    var caja = el('section', 'lg-informes');
+    caja.appendChild(el('h2', 'lg-card-h', t('liga.inf.title', 'Informes de esta liga')));
+    caja.appendChild(el('p', 'lg-card-sub', t('liga.inf.sub', 'Lecturas de terceros que cubren esta liga. Los números son de cada informe, no de los clubes cargados en el sitio.')));
+    var grilla = el('div', 'lg-inf-grilla');
+    lista.forEach(function(i){
+      var c = el('article', 'lg-inf');
+      var top = el('div', 'lg-inf-top');
+      top.appendChild(el('span', 'lg-inf-ambito', i.ambito === 'europa' ? t('liga.inf.europa', 'Europa') : ligaDe(leagueId).name));
+      if(i.cifra && i.cifra.borrador) top.appendChild(el('span', 'lg-inf-borrador', t('liga.inf.borrador', 'borrador')));
+      c.appendChild(top);
+      c.appendChild(el('h3', 'lg-inf-t', i.titulo));
+      c.appendChild(el('p', 'lg-inf-ed', i.editor + ' · ' + i.anio));
+      c.appendChild(el('p', 'lg-inf-cubre', txt(i.cubre)));
+      c.appendChild(el('p', 'lg-inf-frase', txt(i.frase)));
+      if(i.cifra){
+        var f = el('p', 'lg-inf-cifra');
+        f.appendChild(el('strong', null, txt(i.cifra)));
+        f.appendChild(el('span', 'lg-inf-fuente', i.cifra.fuente));
+        c.appendChild(f);
+      }
+      var a = el('a', 'lg-inf-link', i.urlTipo === 'pdf' ? t('liga.inf.pdf', 'Leer el PDF original →') : t('liga.inf.pagina', 'Ver el informe original →'));
+      a.href = i.url; a.target = '_blank'; a.rel = 'noopener';
+      c.appendChild(a);
+      grilla.appendChild(c);
+    });
+    caja.appendChild(grilla);
+    return caja;
   }
 
   // LA POSICIÓN ES SOLO ENTRE LOS CLUBES CARGADOS, nunca "de los leagueSize reales": no hay forma de saber dónde quedaría contra un

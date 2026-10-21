@@ -778,4 +778,10 @@ window.I18N.strings.en = {
   "grupo.aviso.t": "What this total is not.",
   "grupo.aviso.a": "It only adds up the clubs the group controls that have accounts on the site",
   "grupo.aviso.b": "It is not a consolidation: what one group club sells to another is counted in both. Each club is added with its own financial year end.",
+  "liga.inf.title": "Reports on this league",
+  "liga.inf.sub": "Third-party reading that covers this league. The numbers belong to each report, not to the clubs loaded on the site.",
+  "liga.inf.europa": "Europe",
+  "liga.inf.borrador": "draft",
+  "liga.inf.pdf": "Read the original PDF →",
+  "liga.inf.pagina": "See the original report →",
 };

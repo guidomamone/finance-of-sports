@@ -1,5 +1,29 @@
 # Rama `pantallas`
 
+## Pantallas 6, segunda tanda: to-do 332 (2026-10-20)
+
+### Qué cambió (para CHANGELOG)
+
+- 332: bloque «Informes de esta liga» en la pestaña Ligas (`informes()` en `js/liga.js`, estilos `.lg-inf*` en `css/styles.css`, claves `liga.inf.*` en
+  `data/lang/en.js`). Una tarjeta por informe: ámbito, título, editor y año, qué cubre, una frase, una cifra con su fuente (con la marca «borrador» si lo es)
+  y el link al original. Los informes de Europa van arriba (se muestran en toda liga de un país de región Europa) y después los de la liga. Salen de
+  `data/informes.js` (`window.INFORMES`, un renglón por informe y edición, textos con `{es, en}`): UEFA ECFIL 2025 (link a su página oficial, que da 200; el PDF
+  directo no se halló), Deloitte ARFF 2026 (PDF oficial, 200) e IFR State of the Game 2026 (PDF, 206; borrador). Deloitte e IFR figuran en Premier, Championship,
+  League One y League Two. Verificado en el preview a escritorio y 375 px, sin desborde. ASSET_V 1532, `fuentes` regenerado.
+- Decisiones mías a revisar: la cifra de la UEFA es «más de €30.000 M en 2025» (la UEFA la proyecta) y la del IFR «94% de los clubes con pérdida en 2025/26»
+  (la sección 1 de `informes-futbol-ingles.md` no dice sobre qué conjunto de clubes es el 94%: conviene mirar la página del `.md` antes de publicar).
+
+### Qué queda (para TODO)
+
+- El bloque solo sale si la liga tiene ranking cargado (una liga sin datos, como Scottish Premiership, no muestra informes ni los de Europa).
+- Sumar los informes de otros países cuando Sourcing los verifique (DFL, LaLiga, EY Brasil, Football Benchmark): una entrada en `data/informes.js`.
+- Una vista aparte «Informes» con todos (la sección 4 del informe la menciona) no se hizo.
+- `tools/audit.js` no mira `data/informes.js` (que cada `ligas` exista en `LEAGUES`, que cada `url` conteste); lo pide Pipeline si se quiere.
+
+### Qué deja de ser cierto en ESTADO
+
+- «Inicio, Ligas y navegación»: la liga elegida suma el bloque «Informes de esta liga» (desde `data/informes.js`).
+
 ## Pantallas 6 (2026-10-20)
 
 ### Qué cambió (para CHANGELOG)
