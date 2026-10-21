@@ -63,3 +63,25 @@ Bajar los 3 archivos de arriba (Forest, Burnley, Bath; unos 150 KB comprimidos e
 Si no sale nada, el resto de los clubes británicos medianos y chicos se queda por PDF como hoy.
 
 Para repetirlo: los scripts de la medición no se guardaron en el repo (viven en el scratchpad de la sesión); el método está arriba y alcanza para rehacerlos en 40 líneas de Node.
+
+## Prueba del lector con los 3 archivos (2026-10-21, Guido dijo «ok»)
+
+Bajados del Accounts Data Product de Companies House con pedidos HTTP por rango (solo esos archivos, 48 + 47 + 54 KB comprimidos), a carpetas nuevas y vacías; leídos como datos, sin ejecutar nada. Copias en `Clubes/Inglaterra/<Club>/` con el nombre del `.md` que ya existe de ese año y extensión `.xhtml` (ignorada por git): `forest-full-accounts-2024-25.xhtml`, `burnley-fc-holdings-group-accounts-2024-25.xhtml`, `bath-rugby-medium-company-accounts-2024-25.xhtml`. Ya tienen `.md` y `.pdf` de PDF de esos años; no se escribió ninguno nuevo ni se cargó nada.
+
+`tools/xhtml-aarsrapport.mjs` (sin tocar el código para el iXBRL británico; solo el escalón óptimo ya aprobado) en ensayo:
+
+| Club (cierre) | Líneas | Hechos iXBRL | Compuerta (a) | Compuerta (b) | El `.md` cierra |
+| --- | --- | --- | --- | --- | --- |
+| Nottingham Forest (2025-06-30) | 1.531 | 292 (30 ocultos) | 0 faltantes | 763/763; el codicioso ubicaba 645 (84 %): pasa **solo** por el escalón óptimo | sí: 221.746 − 15.224 = 206.522; − 271.449 = −64.927; +5 −21.016 +7.017 = −78.921 (= `ProfitLoss`) |
+| Burnley, grupo (2025-07-31) | 1.764 | 292 (83 ocultos) | 0 faltantes | 819/825 (99,3 %), codicioso | sí: 71.746 − 30.401 − 82.263 − 2.606 + 5.576 = −37.948 (operación sin fichajes) |
+| Bath Rugby (2025-06-30) | 1.682 | 257 (1 oculto) | 0 faltantes | 749/749, codicioso | sí: 23.339.778 − 20.059.154 = 3.280.624; − 6.251.494 + 69.825 = −2.901.045; − 127.574 = −3.028.619; + 250.554 = −2.778.065 (= `ProfitLoss`) |
+
+Conclusión: **el lector actual ya lee el iXBRL británico (FRS 102) y el `.md` cierra contra los totales del documento**, en los tres. No hizo falta una versión nueva; sí el escalón óptimo para Forest.
+
+Lo que no sale tan limpio:
+- **Burnley (cuentas de grupo)**: el `ProfitLoss` del grupo (−28.530 miles) viene con el eje `GroupCompanyDataDimension=Consolidated`; el hecho SIN dimensiones es el de la sociedad matriz, 0. El chequeo del resultado de `cargar.mjs` (contexto sin dimensiones, condición de la Auditora 5) compararía 0 contra el resultado del grupo y daría un aviso falso para toda cuenta británica de grupo. Hace falta una regla para el eje de consolidación (condición nueva: va a la Auditora 5).
+- **`Revenue`/`Turnover` casi no está etiquetado** en estos informes (solo Bath tiene `TurnoverRevenue`; Forest y Burnley no): la comparación de ingresos no sirve en el Reino Unido. El iXBRL británico etiqueta 257-292 hechos, sobre todo del balance y las notas.
+- **Bath**: el `.md` parte el paréntesis de negativo en otra celda (`| (2,970,870 | ) |`); las cifras están, pero la fila no es limpia para quien la lea con regex.
+- Los tres traen el ejercicio entero en un solo documento y el mismo número de sociedad que ya figura en los `.md`; no cambia el perímetro ni la moneda respecto de la transcripción del PDF.
+
+Falta decidir si conviene usarlo: los 9 de 36 clubes con iXBRL son sobre todo los chicos y medianos; para los 18 grandes sigue siendo el PDF.
