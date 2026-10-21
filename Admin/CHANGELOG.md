@@ -17,6 +17,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 929 — Chequeos del iXBRL, skills existentes y corridas de P2 y P3 (2026-10-21) [257 · 345 · 347 · 352 · 353 · 354]
+- 257 parte 3 (Orden 1, ok de Guido): club-sourcing, start-session, club-outreach, worktree.md, club-or-year-onboarding, CONVENCIONES-DATOS y CONVENCIONES con las reglas que vivían en la memoria de la principal; la memoria se borró (queda un índice que apunta a las skills).
+- 352: `tools/ixbrl-resultado.mjs` avisa si el resultado cargado no coincide con el `ProfitLoss` etiquetado (aviso, no frena; ajuste `ixbrl-omitir`).
+- 345: el lector danés alinea mejor (alineador óptimo, span absoluto): 8 informes más pasan (AaB, Aarhus Fremad, Esbjerg, Helsingør, OB 2022-25); el consolidado de FC København 2025 no se escribe (Auditora 5). Lote 131: 8 transcripciones (Girona 2021-23, Goiás 2018-20, Novorizontino 2012, Fiorentina 2020).
+- 347: `gestion-club-inexistente` 26 a 5 (una línea por país; P1 solo si un id se parece a un club cargado); `ejercicio-sin-rastro` revisado (los faltantes van a Pipeline); `salto-interanual` (dos silencios con motivo).
+- 353: Companies House: los grandes británicos presentan PDF; 9 de 36 en iXBRL.
+- 354 al TODO: `perfil-en-cola` no frena y aviso de flechas en `mergear`.
+
 ## Versión 928 — Lector del XHTML danés, lote 130 y dos corridas más de P2 y P3 (2026-10-21) [345 · 347 · sonderjyske-dk]
 - `tools/xhtml-aarsrapport.mjs`: un informe danés en XHTML (iXBRL) pasa a `.md` fiel con un PDF de ancla, con dos compuertas (no escribe con menos de 98 % de líneas ubicadas) y el motor «xhtml-ixbrl (determinista)» (Auditora 4). Convierte 7 de 8; no el consolidado de FC København 2025.
 - Lote 130 (Pipeline 12): SønderjyskE 2024 cargado (alta); el resto sigue con Onboarding 8. US$ 3,29.
