@@ -1,6 +1,6 @@
 # Sesión datos (Sourcing 4) — to-do 356: qué clubes británicos presentan sus cuentas en iXBRL
 
-**Estado: relevamiento hecho y descarga hecha con la opción (c)** (completas de los últimos 3 cierres, aprobada por la principal): **69 archivos `.xhtml`, 45,5 MB en disco (6,1 MB por la red)**, ya en `Clubes/` de este worktree y copiados a `Clubes/` de main. Los `.xhtml` están ignorados por git: no viajan con el merge. Nada se cargó. Lo que sigue (las cuentas pequeñas y los 5 años enteros) no se bajó sin el ok de Guido.
+**Estado: relevamiento hecho y descarga hecha con la opción (c)** (completas de los últimos 3 cierres, aprobada por la principal): **69 archivos `.xhtml`, 45,5 MB en disco (6,1 MB por la red)**, ya en `Clubes/` de este worktree y copiados a `Clubes/` de main. Los `.xhtml` están ignorados por git: no viajan con el merge. Nada se cargó. Después, con el ok de Guido en el chat, se bajó el resto: **198 archivos en total, 84,0 MB**, todos ya en main (ver «Descarga del resto»).
 
 ## Archivos bajados (para Onboarding)
 
@@ -123,9 +123,46 @@ Los `.xhtml` están ignorados por git (`*.xhtml`, como los tres de Forest, Burnl
 
 Carga: Onboarding, con `tools/xhtml-aarsrapport.mjs` (el eje de consolidación del grupo y la ausencia de `Revenue` que dejó la prueba anterior siguen siendo condiciones de la Auditora). Las cuentas «pequeñas» y los 5 años enteros de cada club (hasta 84 MB en disco): ver «Descarga del resto» más abajo.
 
-## Descarga del resto (to-do 356, punto 1): NO hecha
+## Descarga del resto (to-do 356, punto 1): hecha, con el ok de Guido en el chat («baja el resto»)
 
-El auto-modo del cliente rechazó la segunda descarga (los 129 archivos restantes, que llevan el total por encima de 50 MB): el tope que subió Guido me llegó por mensaje de la principal, no por él, y el clasificador de permisos no lo tomó como autorización. **No intenté rodearlo.** Está todo listo para correrla en cuanto se autorice: `dl2.mjs` (en el scratchpad de esta sesión) baja los 129 por rango, cada uno a una carpeta nueva y vacía, y el nombre final será `<base del PDF>-ixbrl.xhtml` (con `-<sociedad>` si coincide). Hace falta que Guido lo diga en el chat de esta sesión o que agregue la regla de permiso. Los 69 ya bajados se llaman como el PDF (`<base>.xhtml`), sin `-ixbrl`: si Onboarding los va a convertir, conviene renombrarlos también (no lo hice para no romper lo que ya use).
+Se bajaron los **129 archivos restantes: 38,5 MB en disco (3,7 MB por la red)**; con los 69 de antes son los **198 del relevamiento, 84,0 MB**. Mismo método (pedido por rango al ZIP mensual, cada uno a una carpeta nueva y vacía, tamaño y nombre comprobados contra el índice, sin ejecutar nada) y todos con cabecera XHTML/XML. Quedaron en `Clubes/` de este worktree **y** de main, con el nombre `<base del PDF del año>-ixbrl.xhtml`; cuando el año no tiene PDF con ese patrón (44 casos, sobre todo ejercicios 2020-21 y 2019-20) el nombre es `<club>-<sociedad>-accounts-AAAA-AA-ixbrl.xhtml`; cuando la sociedad es la segunda de un club (Barnet, Doncaster, Port Vale, Salford, Crawley, Fleetwood) o el nombre ya existía, lleva `-<sociedad>` antes de `-ixbrl`. Son las cuentas «pequeñas» (small, micro, total exemption, abridged) de todos los años y las completas de 2020-21 y 2021-22 que faltaban. **Ojo:** las pequeñas pueden venir sin cuenta de resultados. Los 69 de antes, en mi worktree, siguen con el nombre viejo (sin `-ixbrl`); en main ya los renombró la principal (el de Gillingham 2022-23 le quedó fuera).
+- Clubes/Inglaterra/Accrington Stanley/: 5 (2020-21 a 2024-25, small)
+- Clubes/Inglaterra/Barnet/: 10 (dos sociedades, 2020-21 a 2024-25 cada una, small)
+- Clubes/Inglaterra/Blackpool/: 2 (2020-21, 2021-22, group)
+- Clubes/Inglaterra/Cambridge United/: 2 (2020-21, 2021-22, total exemption)
+- Clubes/Inglaterra/Cheltenham Town/: 4 (2020-21, 2022-23, 2023-24, 2024-25, small)
+- Clubes/Inglaterra/Colchester United/: 1 (2020-21, small)
+- Clubes/Inglaterra/Crawley Town/: 6 (2020-21 a 2024-25 de 03858150 y 2024-25 micro de 15899186)
+- Clubes/Inglaterra/Crewe Alexandra/: 1 (2020-21, full)
+- Clubes/Inglaterra/Doncaster Rovers/: 8 (03739676 2020-21 a 2024-25, small; 00170192 2023-24, 2024-25, 2025-26, total exemption)
+- Clubes/Inglaterra/Fleetwood Town/: 7 (small 2021-22 a 2024-25; full 2020-21; group 2020-21 y 2021-22)
+- Clubes/Inglaterra/Gillingham/: 2 (2020-21, 2021-22, full)
+- Clubes/Inglaterra/Grimsby Town/: 3 (2022-23 a 2024-25, total exemption)
+- Clubes/Inglaterra/Leyton Orient/: 4 (2021-22 a 2024-25, total exemption)
+- Clubes/Inglaterra/Lincoln City/: 2 (2020-21, 2021-22, full)
+- Clubes/Inglaterra/Mansfield Town/: 5 (2019-20, 2020-21, 2021-22, 2022-23, 2024-25)
+- Clubes/Inglaterra/Morecambe/: 2 (2020-21, 2021-22, full)
+- Clubes/Inglaterra/Newport County/: 2 (2023-24, 2024-25, total exemption)
+- Clubes/Inglaterra/Northampton Town/: 2 (2020-21, 2021-22, small)
+- Clubes/Inglaterra/Notts County/: 5 (2020-21 a 2024-25, small)
+- Clubes/Inglaterra/Oxford United/: 3 (2020-21, 2021-22, 2022-23, total exemption)
+- Clubes/Inglaterra/Peterborough United/: 1 (2021-22, full)
+- Clubes/Inglaterra/Plymouth Argyle/: 2 (2020-21, 2021-22, full)
+- Clubes/Inglaterra/Port Vale/: 4 (08876768 y 11954695, 2023-24 y 2024-25, total exemption)
+- Clubes/Inglaterra/Reading/: 2 (2020-21, 2021-22, full)
+- Clubes/Inglaterra/Salford City/: 5 (group 2021-22; 08912116 2021-22 a 2024-25, small)
+- Clubes/Inglaterra/Shrewsbury Town/: 2 (2020-21, 2021-22, full)
+- Clubes/Inglaterra/Stevenage/: 4 (2020-21, 2022-23, 2023-24, 2024-25)
+- Clubes/Inglaterra/Stockport County/: 5 (2020-21 a 2024-25)
+- Clubes/Inglaterra/Sutton United/: 3 (2022-23 a 2024-25, total exemption)
+- Clubes/Inglaterra/Swindon Town/: 4 (2020-21, 2022-23, 2023-24, 2024-25, total exemption)
+- Clubes/Inglaterra/Wycombe Wanderers/: 3 (2021-22, 2023-24, 2024-25, small)
+- Clubes/Escocia/Dundee/: 5 (2020-21 a 2024-25, small)
+- Clubes/Escocia/Falkirk/: 4 (2020-21 a 2023-24, small)
+- Clubes/Escocia/Hibernian/: 1 (2021-22, full)
+- Clubes/Escocia/Livingston/: 4 (2020-21 a 2023-24, small)
+- Clubes/Escocia/Motherwell/: 2 (2020-21, 2021-22, full)
+- Clubes/Escocia/Ross County/: 2 (2020-21, 2021-22, full)
 
 ## Fuente pública de los depósitos daneses (to-do 356, punto 2)
 
