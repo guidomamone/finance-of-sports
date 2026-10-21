@@ -41,10 +41,10 @@ Un punto que no aplica, o que no se pudo probar, se dice en la nota de la sesió
   *Caso:* la marca COVID se abre con Enter o espacio y se cierra con Escape.
 - [ ] **Al cambiar de vista, el foco va al título de la vista nueva** (con `tabindex="-1"`), no queda en un elemento que se borró.
   *Prueba:* entrar con Enter y leer `document.activeElement`: no puede ser `body`.
-  *Caso:* hoy, elegir una liga con Enter borra la fila que tenía el foco y el foco cae en `body`; el Tab siguiente arranca desde el principio de la página.
+  *Caso:* elegir una liga con Enter borraba la fila que tenía el foco y el foco caía en `body`; ahora `focoDeVista()` (`js/principal.js`) lo lleva al título.
 - [ ] **Un panel o un modal:** al abrir, el foco entra; Escape lo cierra; al cerrar, el foco vuelve al botón que lo abrió.
   *Prueba:* abrirlo con el teclado, Escape, y leer `document.activeElement`.
-  *Caso:* el selector de club abre con el foco en su buscador y cierra con Escape, pero `close()` no devuelve el foco: hay que probar dónde queda.
+  *Caso:* el selector de club abre con el foco en su buscador, cierra con Escape y devuelve el foco al botón que lo abrió (salvo al buscador de Inicio, que lo reabriría).
 
 ## 4. Toques en el celular
 
@@ -52,7 +52,8 @@ Un punto que no aplica, o que no se pudo probar, se dice en la nota de la sesió
   *Prueba:* a 375 px, en la consola:
   `[...document.querySelectorAll('main button, main a, header button')].filter(e => e.offsetParent).filter(e => { const r = e.getBoundingClientRect(); return r.height < 44 || r.width < 44; })`
   y revisar cada uno.
-  *Caso:* hoy, en la página de una liga, el nombre de cada club del ranking (`.lg-club`) mide 17 px de alto y «← Todas las ligas» 36 px.
+  *Caso:* en la página de una liga, el nombre de cada club medía 17 px de alto; ahora la fila mide 44 y el botón la cubre entera. Hoy todavía quedan chicos
+  en Inicio (atajos, filas de los rankings, «Ver la liga»), Finanzas («Elegí un club») y Mi Cuenta («Entrar con Google»).
   *Excepción, ya decidida (no es un pendiente):* las etiquetas de estado (`.stat-tag`: COVID, PRESUPUESTO y las que sigan el mismo patrón)
   miden unos 16 px de alto. Agrandarlas taparía el toque del elemento de al lado, su texto también está en el `aria-label` y lo que abren es
   información de más. Una auditoría `ux` no las marca.
@@ -81,5 +82,5 @@ Un punto que no aplica, o que no se pudo probar, se dice en la nota de la sesió
 - [ ] **Un filtro, una pestaña interna, un toggle o un grupo abierto sigue igual** al volver con atrás o desde el menú. Lo que tiene que sobrevivir a un link
   copiado va a la URL; lo demás, en memoria mientras dura la visita.
   *Prueba:* cambiar cada control, ir a otra vista, volver con atrás y comparar.
-  *Caso:* los filtros de la lista de Ligas (deporte, región, agrupar, orden, informes) viajan en la URL y vuelven. Los países abiertos no: hoy, a 375 px,
-  abrir Italia, entrar a la Serie A y volver deja todos los países plegados, y la altura guardada cae más arriba de donde estaba.
+  *Caso:* los filtros de la lista de Ligas (deporte, región, agrupar, orden, informes) viajan en la URL y vuelven; los países que se abrieron a mano se
+  plegaban al volver y la altura guardada caía más arriba: ahora se guardan en memoria (`frio.pais`, `js/liga.js`).
