@@ -641,6 +641,28 @@ function checkIndexFileRoto() {
   }
 }
 
+// --- El sponsor sin fuente lleva el registro de búsqueda (to-do 343, skill club-sourcing 0.5) -----------------------------------------------
+// tools/contexto-manual.json: `sin-fuente.sponsor` solo vale como registro { buscado, por, intentos } con tres clases sin contar Wikipedia, o como { legacy: true, texto } de un club y
+// año que están en tools/sponsor-legacy.json (la lista no crece). La compuerta de estadio-sponsor.mjs lo comprueba al cargar; esto no depende de que alguien la corra.
+function checkSponsorBusqueda() {
+  const f = path.join(ROOT, 'tools', 'contexto-manual.json');
+  if (!fs.existsSync(f)) return;
+  const { validar, listaLegacy } = require('./sponsor-busqueda.js');
+  const manual = JSON.parse(fs.readFileSync(f, 'utf8')); const lista = listaLegacy();
+  const malos = []; const fuera = []; let legacy = 0;
+  for (const [club, anios] of Object.entries(manual)) {
+    if (club.startsWith('_')) continue;
+    for (const [anio, d] of Object.entries(anios)) {
+      const v = d && d['sin-fuente'] && d['sin-fuente'].sponsor; if (v === undefined) continue;
+      const r = validar(v, club, anio, lista);
+      if (r.ok) { if (r.legacy) legacy++; } else if (v && v.legacy === true) fuera.push(`${club} ${anio}`); else malos.push(`${club} ${anio}: ${r.motivo}`);
+    }
+  }
+  if (malos.length) add('P1', 'sponsor-sin-busqueda', `${malos.length} año(s) con sin-fuente.sponsor sin registro de búsqueda válido (skill club-sourcing 0.5): ${malos.slice(0, 3).join(' · ')}${malos.length > 3 ? ' · …' : ''}`);
+  if (fuera.length) add('P1', 'sponsor-legacy-fuera-de-lista', `${fuera.length} año(s) con «legacy» que no están en tools/sponsor-legacy.json (la lista no crece; hay que hacer la búsqueda de la skill club-sourcing 0.5): ${fuera.slice(0, 5).join(', ')}`);
+  if (legacy) add('P3', 'sponsor-sin-registro', `${legacy} año(s) con el sponsor sin fuente como texto libre de antes (tools/sponsor-legacy.json): completar con el registro de búsqueda cuando alguien toque el club`);
+}
+
 // --- Comentarios internos en lo que se publica (to-do 208 y 209) -------------
 // Todo comentario de index.html, js/ y data/ viaja al visitante. La regla (Admin/PANTALLA.md, "Comentarios en lo que se publica") deja
 // solo el porqué técnico: nada de nombres, "Versión N", "to-do N", fechas ni contadores de clubes. Un hallazgo por archivo, con el total y
@@ -1840,6 +1862,7 @@ function main() {
   checkEscala(api);
   checkDeployInterno();
   checkIndexFileRoto();
+  checkSponsorBusqueda();
   checkComentariosPublicados();
   checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
