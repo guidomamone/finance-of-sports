@@ -294,6 +294,21 @@ tope contradiría a Anderlecht 2011 (16 meses) ya cargado, y ningún caso conoci
 18 meses), Aston Villa 2023-24 (13 meses) y Wolves 2025 (01/06/2024 – 30/06/2025, 13 meses). Un tramo que deja afuera parte de la temporada
 sigue siendo parcial. La comparabilidad con un año de 12 meses la cubre la `publicNote`.
 
+**Tramo corto de transición sin hueco (votación 2 a 1, con el sí de Guido).** Un ejercicio de menos de 12 meses por cambio de la fecha de cierre
+se carga como un ejercicio propio (`fiscal_year` = año del cierre, importes tal cual, sin anualizar) si (a) el ejercicio anterior, cargado o con
+documento, termina el día anterior al inicio del tramo, (b) el siguiente empieza el día después de su cierre y (c) ningún balance anual cargado o
+conocido contiene esas fechas. Lleva `publicNote` «Ejercicio de transición de N meses por cambio de la fecha de cierre: del DD/MM/AAAA al DD/MM/AAAA.
+No es comparable con un año de 12 meses.» y no entra al ranking por año, a la mediana de la liga ni a las variaciones interanuales. Si (a), (b) o (c)
+falla, es parcial (`documentos-parciales.txt`, con «falta: …»), sin pregunta. Casos: Fiorentina 2020 (enero a junio), Genoa 2024, Atalanta 2022. Un
+semestral dentro de un ejercicio cuyo anual existe (Juve Stabia, Estrela da Amadora) falla (c). El detalle de la votación:
+`Admin/propuestas/transicion-y-covid.md`.
+
+**Temporadas de la pandemia (votación 3 a 0).** Los ejercicios con `period_end` entre 2020-03-31 y 2021-12-31 se cargan con los importes impresos,
+sin ajustar ni anualizar: la realidad fue parcial, no el documento. Dentro de esa ventana la taquilla o el estadio en 0 no piden reintento
+(`tools/cargar.mjs`; se apaga por documento con el ajuste `covid-omitir`). `salto-interanual`, `outlier-liga`, el tie-out, el perímetro, la escala y el
+signo no se tocan: no disparan por la pandemia y son los que atajan un error de unidad. En pantalla, esos ejercicios llevan la marca «COVID»; no hay
+`publicNote`. Casos: AEK 2021 y Asteras 2021 (taquilla en 0 real).
+
 **Ejercicio de 11 meses por cambio de cierre (decisión de Guido, 2026-10-15).** Cuando un club pasa el cierre de julio a junio, el ejercicio
 de transición (1 de agosto a 30 de junio, 11 meses) se carga como el año: contiene la temporada entera y no hay otro tramo que buscar. Casos:
 Benfica 2007-08 ("período de 11 meses, que compreende o período de 1 de Agosto de 2007 a 30 de Junho de 2008") y Sporting 2003-04. La
