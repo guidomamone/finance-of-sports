@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 897 — Esquema 2.0: categoría genérica y subcategoría del deporte (2026-10-20) [248]
+
+- Cada línea de los 319 JSON lleva `category` genérica (derivada de `data/category-map.js`, igual para cualquier deporte) y `subcategory` (la de hoy), más `club.sport` y `club.taxonomy`. Migrados con `tools/migrar-v2.mjs` sin cambiar un importe: los `-data.js` quedan idénticos, la huella de 38.883 renglones también, la cascada da igual en los 1.296 ejercicios y `auditAll()` sigue en 0 que no cierran. `club-v2.json` y `taxonomy-football-1.json`; `club-v1.json` congelado. 3 chequeos nuevos en `audit.js`. ASSET_V 1542.
+
 ## Versión 896 — Qué del pipeline asume fútbol (2026-10-20) [339]
 
 - Inventario de 38 puntos ordenados por impacto (`Admin/mediciones/339-inventario.md`): primero lo que categoriza (Jev y `categorizar-claude.mjs` eligen entre categorías de fútbol), después las compuertas de `cargar.mjs`, `audit.js`, el alta y los prompts. Sin código.

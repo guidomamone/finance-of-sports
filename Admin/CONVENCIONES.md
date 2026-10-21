@@ -40,6 +40,8 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     ignora y que la principal bajó después de `preparar`. Se arregla volviendo a correr `node tools/worktree.mjs preparar <carpeta>`.
   - **El hook de los docs de la principal lee el texto del comando**: un Bash que solo NOMBRA `TODO.md`, `CHANGELOG.md` o `ESTADO.md` junto a
     una escritura (un heredoc a la nota de la sesión) también se frena. En ese caso, escribir con Edit/Write.
+  - **Después de mergear una rama con JSON de club en el esquema viejo (1.0)**: `node tools/migrar-v2.mjs --escribir` en la principal
+    (idempotente: con los chequeos de sumas en verde, solo escribe los que estaban en 1.0).
   - **Un archivo GENERADO no se mergea a mano: se regenera.** Si hay conflicto en `Admin/sourcing/README.md`,
     `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js` o
     `Admin/ESTADO-clubes.md` (el bloque CLUB-INDEX, aparte de `Admin/ESTADO.md` desde la Versión 239),
