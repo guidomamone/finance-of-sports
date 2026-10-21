@@ -306,3 +306,31 @@ Premier ~25 · LaLiga ~30 · Serie A ~5 · Bundesliga ~10 · Brasil ~60 · Argen
 
 ### Qué deja de ser cierto en ESTADO
 - Nada del sitio.
+
+## Pipeline 11: frenos de Bath, cierre de la sesión (2026-10-21)
+
+### Qué cambió (para CHANGELOG)
+- Tanda 1, mergeada: #10 `lote --sin-api` valida si es gratis o frena diciendo el costo, y `validar-bloques --ejecutar` encadena `verificar --rubros` e inventario (`4cbc581329`); #15 `alta-club --deshacer <club> [--escribir]` (`b1039b4d0f`); #7 `mistral-ocr-transcribe --pagina N` (`879e1f9dc8`); #13 `tools/publicar.mjs` (`5acb97b07b`).
+- Tanda 2, commiteada y aprobada por Auditora 4, falta el merge: #17 y #16 en `caja-deuda.mjs` (`a0a04213c9`: escalón 1b de `escalaDe`, y el total sin rótulo como candidata de `--personal`); #8 `armar-a-mano` con etiqueta sintética para un subtotal sin rótulo (`56e4bb26a4`); #9a `ajustes.mjs --etiqueta-diferencia` (`3c3ab4de47`); #12 `tools/fuente.mjs` (`51c9816819`).
+
+### Qué falta
+- **#9b** (que el pipeline proponga solo la fila de redondeo cuando una nota cierra por redondeo): no se hace en tool. Dónde va esa diferencia es un criterio de datos (Bath: `other_income`); si hace falta un aviso en `verificar.mjs`, se diseña aparte.
+- **#14** (activar un deporte invalida reglas de fútbol): `reglas-categoria.mjs` y `audit.js` (`regla-categoria-invalida`) ya marcan las reglas con ids de otro deporte; lo que falta es el aviso en el momento de activar, que depende de #5.
+- **#5** (el alta propone la liga y el deporte nuevos): `alta-club.mjs` solo pregunta. Hay que decidir de qué fuente salen el nombre, el nivel y el país de la liga (Wikipedia, el propio documento), qué se escribe en `data/leagues.js` (`SPORTS` active, `LEAGUES`) y en `data/club-leagues/<iso>.js`, y quién aprueba activar un deporte (es de producto). Con eso, el alta corre `reglas-categoria.mjs` con el deporte ya activo y lista las reglas que quedan inválidas (#14).
+- **#11** (estadio y sponsor de rugby): `estadio-sponsor.mjs` solo lee infoboxes y páginas de temporada de fútbol (`FICHA_CLUB`, `SOLO_ESTADIO`). Para rugby hay que leer `Infobox rugby team` y la página de temporada de la liga de rugby; mientras, a mano en `tools/contexto-manual.json`, con fuente.
+- Las anteriores del 339 siguen: textos de los prompts de lectura que dicen «clubes de fútbol» (`localizar`, `extraer`, `perimetro-senales`, `caja-deuda`, `glosar-rubros`), JSON-LD `Soccer` de `generate-club-pages.js`, la frase de `club-data-mapping`.
+
+### Cómo se probó, y trampas
+- Todo con el estado de Bath de main en un worktree descartable: `git worktree add --detach <carpeta> main`, `node tools/worktree.mjs preparar <carpeta>` y correr las tools de esa carpeta; después `git worktree remove --force`.
+- `cargar.mjs` recorta `process.argv` al importarse: una tool que lo importa lee sus flags ANTES (import dinámico), como `publicar.mjs`. Un `--ensayo` mal ubicado publicó de verdad una vez (revertido).
+- Sin ejercitar con un documento real: la rama «frena por costo» de `lote --sin-api` (#10); `alta-club --deshacer` con un país nuevo.
+
+### Texto propuesto para la skill de arranque, sección 5 (Guido lo aprueba antes)
+Reemplazar, en «SI TOCASTE DATOS DE UN CLUB, HAY ARCHIVOS GENERADOS QUE REGENERAR», el bloque de los cuatro generadores y el párrafo que sigue a «La fuente de un club es su JSON» por:
+
+> Si cargaste o corregiste a mano: `node tools/publicar.mjs`. Genera el data file desde el JSON (`generar-data.mjs`), sube `ASSET_V` una vez, corre los generadores (índice de clubes, fuentes, rankings, páginas de club y liga) y `audit.js`; si `audit.js` da P0 o P1 revierte lo que hizo él, no tu edición a mano. `--ensayo` dice qué haría sin escribir. `cargar.mjs --escribir`, `alta-club.mjs` y `lote.mjs --cargar` ya lo hacen solos: ahí no lo repitas. Una fuente (título, url, nota pública) se edita con `node tools/fuente.mjs` y después se publica.
+
+La frase «Y si subiste `ASSET_V` … hay que correr `generate-fuentes-page.js` y `generate-club-pages.js` igual» se reemplaza por: «`publicar.mjs` ya regenera las páginas de fuentes y `club/` con el `ASSET_V` nuevo».
+
+### Qué deja de ser cierto en ESTADO
+- Nada del sitio.
