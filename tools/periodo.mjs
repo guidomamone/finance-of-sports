@@ -244,6 +244,33 @@ export function periodoDe(mdText, nombreArchivo = '') {
       res = { tipo: n === 12 ? 'anual' : tipoDeMeses(n), meses: n, inicio: iso(c.a), cierre: iso(c.b), cierreDe: 'período del formulario (to-do 298 f)', evidencia: { pagina: c.pagina, texto: c.texto.slice(0, 200) }, confianza: 'alta' };
     }
   }
+  // 3c. TRAMO CORTO POR LAS COLUMNAS (tramo corto de transición, Admin/CONVENCIONES-DATOS.md). Un ejercicio de transición por cambio de cierre no
+  // lo dice en un título: la frase está en la prosa («composto da soli 6 mesi gestione (1 gennaio 2020 - 30 giugno 2020)», Fiorentina 2020 L324)
+  // o en ningún lado (Atalanta 2022), y salía «anual, 12 meses» por descarte. Lo que sí trae siempre son las columnas de los estados: el cierre al
+  // lado del cierre ANTERIOR, que está a menos de 12 meses («| ATTIVO | 30/06/2022 | 31/12/2021 |», Atalanta 2022; «| 30-06-2024 | 31-12-2023 |»,
+  // Genoa 2024). Solo si los pasos 1-3b no decidieron y hay cierre leído. Votos: cada fila de tabla cuya primera fecha es el cierre y la segunda
+  // otro fin de mes anterior. COMPUERTA: un solo salto de 1 a 11 meses con 2 votos o más, y NINGÚN par a 12 meses (un intermedio compara el
+  // resultado con el mismo período del año anterior: tiene pares a 12 meses y no entra acá). Un primer ejercicio de una sociedad nueva no entra:
+  // no tiene columna de un cierre anterior para votar (Kifisia 2022, Volos 2019, RWDM 2019, Anderlecht 2011 y RAAL 2018 los deciden los pasos 2b y
+  // 3b y salen igual). Medido sobre los 3.763 .md (Auditora 5, sección 8): cambian 4, Atalanta 2022, Fiorentina 2020, Genoa 2024 y Slavia Praha 2002
+  // («Za období od 1.1. do 30.6.2002»), todos semestrales de verdad. Se apaga con un ajuste `cierre` del documento (el período sale del ajuste).
+  if (!res && masCitado) {
+    const saltos = new Map(); let ej = null;
+    for (const p of paginasDe(mdText)) for (const l of p.body.split('\n')) {
+      if (!l.trim().startsWith('|')) continue;
+      const fs = l.split('|').map((c) => fechasDe(c)[0]).filter(Boolean);
+      if (fs.length < 2 || iso(fs[0]) !== masCitado || !finDeMes(fs[1])) continue;
+      const n = (fs[0].a - fs[1].a) * 12 + (fs[0].m - fs[1].m);
+      if (n < 1) continue;
+      saltos.set(n, (saltos.get(n) || 0) + 1);
+      if (n < 12 && !ej) ej = { pagina: p.n, texto: l.trim().slice(0, 200), anterior: fs[1] };
+    }
+    const cortos = [...saltos].filter(([n]) => n < 12);
+    if (cortos.length === 1 && cortos[0][1] >= 2 && !saltos.has(12)) {
+      const n = cortos[0][0]; const d = new Date(Date.UTC(ej.anterior.a, ej.anterior.m - 1, ej.anterior.d + 1));
+      res = { tipo: tipoDeMeses(n), meses: n, inicio: d.toISOString().slice(0, 10), cierre: masCitado, cierreDe: 'columnas: cierre y cierre anterior (3c)', evidencia: { pagina: ej.pagina, texto: ej.texto }, confianza: 'alta' };
+    }
+  }
   // 4. anual por descarte
   if (!res) res = { tipo: 'anual', meses: 12, cierre: masCitado, evidencia: null, confianza: masCitado ? 'media' : 'baja' };
   if (res.cierre && res.cierre > TOPE) res.cierre = null; // la compuerta, también para lo leído en los pasos 1-3
