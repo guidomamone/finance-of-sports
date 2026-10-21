@@ -1372,7 +1372,7 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
     // (it, kr...), dejarlo como `pregunta` hacía que MÁS datos dieran MENOS clubes listos (21 carpetas
     // frenadas solo por esto). La fila se escribe en `null` (= "nadie lo verificó", P3) y la pregunta
     // queda en `nota` para cuando se decida el catálogo.
-    return campo('liga', null, `el roster "${exactos[0].page}" lo ubica en '${exactos[0].leagueId}', que NO está en el catálogo de data/leagues.js`, 'pendiente', { nota: `fila en null hasta decidir: el club jugó ${anio} en '${exactos[0].leagueId}' (${exactos[0].page}), liga que no está en el catálogo. ¿Se agrega al catálogo o la fila va como 'liga-no-catalogada'? (decisión de Guido, por liga)` });
+    return campo('liga', null, `el roster "${exactos[0].page}" lo ubica en '${exactos[0].leagueId}', que NO está en el catálogo de data/leagues.js`, 'pendiente', { nota: `fila en null hasta decidir: el club jugó ${anio} en '${exactos[0].leagueId}' (${exactos[0].page}), liga que no está en el catálogo. Propuesta de la entrada del catálogo: node tools/catalogo-liga.mjs --liga ${exactos[0].leagueId} (la liga de un deporte activo la aprueba la Auditora; activar un deporte, Guido)` });
   }
   // Una coincidencia parcial ÚNICA en toda la temporada del país ("AC Milan" / "Milan", "OFI Crete" / "OFI") vale como exacta
   // (confirmado por Guido para esos casos). Si hay más de una, sigue pendiente de confirmación.
