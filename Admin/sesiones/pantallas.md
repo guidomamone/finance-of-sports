@@ -1,3 +1,21 @@
+# Sesión pantallas (Pantallas 6): to-do 340 reabierto, index.html por file://
+
+## Qué cambió (para CHANGELOG)
+- El `<base href="/">` fijo de `index.html` rompía abrir el archivo directo desde el disco (`file:///css/styles.css`). Ahora lo escribe un script al principio del `<head>`
+  solo si el protocolo es http(s) y la página no trae ya su base: servido, `/liga/<id>` sigue cargando `data/` desde la raíz (to-do 340); por `file://` no hay base y las rutas
+  relativas siguen contra la carpeta de `index.html`. Las páginas generadas siguen con su `<base>` estático (el script queda después del `<head>` generado y no suma otro);
+  `tools/generate-club-pages.js` vuelve a escribirlo (revierte lo del 342). Verificado en el preview servido: portada → liga → Burnley, atrás y adelante, y `/club/boca-ar.html`
+  directo (una sola base). El caso `file://` NO se pudo probar en un navegador: el panel abre los archivos locales como una captura sin estilos y Claude in Chrome no estaba
+  conectado; solo se comprobó que la condición da falso para `file:` y que el archivo ya no tiene `<base>` fijo. Conviene que Guido abra el archivo una vez. ASSET_V 1563.
+
+## Qué queda (para TODO)
+- Que Guido confirme `file://` abriendo `index.html` desde el disco.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 6): to-do 342, título de la pestaña y <base> doble
 
 ## Qué cambió (para CHANGELOG)

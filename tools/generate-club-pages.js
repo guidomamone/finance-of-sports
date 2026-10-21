@@ -15,7 +15,7 @@
 //                        og:image (?v=<hash>) para saltar el caché de WhatsApp. La tipografía es Inter (tools/fonts/, licencia OFL).
 //   sitemap.xml          lo escribe SOLO este generador (antes lo escribía generate-fuentes-page.js; dos escritores se pisan).
 // Cada página sale de `index.html` como plantilla (así ASSET_V y los <script> quedan al día solos) con tres cambios:
-//   1. <head>: <title>, description, canonical, Open Graph, Twitter y JSON-LD.
+//   1. <head>: <base href="/">, <title>, description, canonical, Open Graph, Twitter y JSON-LD.
 //   2. un <script> con la ruta: window.FOS_RUTA = {tab:'finanzas', club:'boca-ar'} o {tab:'liga', liga:'ar-primera'} (lo lee js/principal.js).
 //   3. un bloque de texto visible sin JS (#pagina-estatica: h1 y tabla por ejercicio, en USD) que se oculta cuando la app arranca.
 // Los números salen del MISMO motor que el sitio (computeYearGeneric y toDisplayValue de js/finanzas-calc.js) y de data/rankings/.
@@ -128,6 +128,7 @@ const CSS = `#pagina-estatica{max-width:900px;margin:24px auto;padding:0 16px;fo
 
 function pagina(plantilla, { ruta, titulo, desc, canonical, ogImagen, jsonld, cuerpo }) {
   const head = [
+    '<base href="/">',
     `<title>${esc(titulo)} | ${SITIO}</title>`,
     `<meta name="description" content="${esc(desc)}">`,
     `<link rel="canonical" href="${canonical}">`,
@@ -142,7 +143,7 @@ function pagina(plantilla, { ruta, titulo, desc, canonical, ogImagen, jsonld, cu
   let h = plantilla;
   const antes = h;
   h = h.replace(/<title[^>]*>[\s\S]*?<\/title>\n?/, '');
-  // Después del <meta viewport>: el charset tiene que quedar dentro de los primeros 1024 bytes, y el <base href="/"> de la plantilla (index.html) queda antes de cualquier ruta relativa.
+  // Después del <meta viewport>: el charset tiene que quedar dentro de los primeros 1024 bytes, y <base> antes de cualquier ruta relativa.
   h = h.replace(/(<meta name="viewport"[^>]*>\n?)/, `$1<!-- GENERADO por tools/generate-club-pages.js: no editar a mano (to-do 241). -->\n${head}\n`);
   h = h.replace(/<body>\s*<body>/, '<body>'); // la plantilla trae <body> doble; el generador deja uno
   h = h.replace('<body>', `<body>\n<main id="pagina-estatica">\n${cuerpo}\n</main>`);
