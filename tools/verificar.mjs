@@ -720,6 +720,21 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // financiero se tomaba como 0 y el resultado no cerraba. Si hay renglones, el subtotal no se usa (no se cuenta dos veces).
   const renglonesOTotal = (lado) => { const r = estado.filter((f) => f.lado === lado && f.tipo === 'renglon'); if (r.length) return r; const t = estado.filter((f) => f.lado === lado && ['subtotal', 'total'].includes(f.tipo) && isFinite(f.M)); return t.length === 1 ? t : []; };
   const fin = renglonesOTotal('financiero'); const imp = renglonesOTotal('impuesto');
+  // ESCALÓN «EL SIGNO DEL IMPUESTO LO ELIGEN LAS SUMAS» (como el 17-bis del financiero, más abajo). Una fila del impuesto puede ser un ingreso impreso
+  // en positivo entre costos («proventi (oneri) da adesione al regime di consolidato fiscale» 280.131 baja el impuesto: Genoa 2024, .md L419). Si las
+  // filas no suman el total del impuesto impreso DESPUÉS de ellas, se prueban las combinaciones de signo (hasta 6 filas con importe) y se usa la
+  // ÚNICA que da EXACTO ese total. Sin combinación única, queda como antes. Genoa 2024: 1.007.712 + 1.525.834 − 280.131 = 2.253.415 (L420).
+  {
+    const rImp = imp.filter((f) => f.tipo === 'renglon' && isFinite(f.M) && f.M);
+    const totImp = estado.filter((f) => f.lado === 'impuesto' && ['subtotal', 'total'].includes(f.tipo) && isFinite(f.M) && rImp.length && f.linea > Math.max(...rImp.map((x) => x.linea))).sort((a, b) => a.linea - b.linea)[0];
+    if (totImp && rImp.length >= 2 && rImp.length <= 6) {
+      const tol = Math.max(1e-6, 0.5 * [...rImp, totImp].reduce((a, f) => a + (f.u || 0), 0));
+      if (Math.abs(rImp.reduce((a, f) => a + f.M, 0) - totImp.M) > tol) {
+        const sirven = []; for (let m = 1; m < 1 << rImp.length; m++) if (Math.abs(rImp.reduce((a, f, i) => a + ((m >> i) & 1 ? -f.M : f.M), 0) - totImp.M) <= tol) sirven.push(m);
+        if (sirven.length === 1) { const inv = rImp.filter((f, i) => (sirven[0] >> i) & 1); for (const f of inv) f.M = -f.M; notas.push(`escalón "signo del impuesto por las sumas": ${inv.map((f) => `L${f.linea} "${String(f.etiqueta).slice(0, 50)}"`).join(', ')} con el signo contrario: única combinación que da el total del impuesto impreso (L${totImp.linea})`); }
+      }
+    }
+  }
   const suma = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
   const conSigno = (arr, c = 'M') => arr.reduce((a, f) => a + (f[c] || 0), 0);
   // (to-do 212) SIGNO DE UNA FILA DEL FINANCIERO POR SU RÓTULO: +1 si dice ingreso financiero (intereses cobrados, receitas financeiras,
