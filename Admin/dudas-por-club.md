@@ -1510,6 +1510,10 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
 - Informe 2025, nota 21 "Gastos de administración": el subtotal de la nota suma 10.955.346 y el estado de resultados muestra 10.838.114, 117.232 de diferencia
   (en 2024 coinciden). Hay dos importes sueltos sin rótulo en la nota (un guion y 171.225). ¿Qué renglón de la nota sobra o está mal impreso? Se carga el valor del estado.
 
+## FC Emmen (sourcing, sesión 2026-10-21: no frena la carga; pedírselo al club)
+
+- **Informe del auditor (controleverklaring) del ejercicio 2020-21** (y el 2019-20): el F.04 que publica el club solo dice que las cifras salen de la jaarrekening de FC Emmen B.V., «waarbij een accountantsverklaring is verstrekt», pero no trae el informe. La jaarrekening completa solo existe en el Handelsregister de la KvK, de pago (€3,90 cada una; Guido decidió no comprarla). ¿Nos pueden mandar la jaarrekening 2020-21 (y la 2019-20) con la controleverklaring?
+
 ## Juventude y Ponte Preta (onboarding, lote 103, sesión 2026-10-19: no frena la carga)
 
 - **Juventude 2021**: tiene planes de sócio-torcedor (Jaconero; búsqueda web), pero "Receitas Patrimoniais" y "Outras Receitas" no desglosan dónde registra las mensalidades. ¿En qué línea del balance están?
