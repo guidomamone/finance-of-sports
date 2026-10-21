@@ -69,8 +69,7 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 ### b) Mejorar un script
 
 1. Mirar 2-3 casos reales antes de afirmar la causa.
-2. Mostrar el diseño en pocas líneas, con la escalera completa y el escalón nuevo, y un ejemplo real que recorra cada escalón. No
-   commitear antes del veredicto de la Auditora. Una condición nueva (un frenazo, aviso, filtro o pregunta en una tool, o un cambio en lo
+2. Mostrar el diseño en pocas líneas, con la escalera completa y el escalón nuevo, y un ejemplo real que recorra cada escalón. No commitear antes del veredicto de la Auditora, que decide con la sección 8 de `auditoria-finance-of-sports` si es una mejora general o un parche. Una condición nueva (un frenazo, aviso, filtro o pregunta en una tool, o un cambio en lo
    que asume) también va a la Auditora, que la decide con la sección 7 de `auditoria-finance-of-sports`; a Guido va solo lo que la
    Auditora manda a votación o lo que cambia ese criterio (`Admin/CONVENCIONES.md`).
 3. Medir antes y después con los lotes de prueba (sección 5).

@@ -31,11 +31,10 @@ el número de la izquierda es el orden de trabajo.
 1. 345 (Onboarding 8): la cola del lote 130, Girona 2021-23, RAAL, SønderjyskE 2023, los daneses, Hvidovre, København individual, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020; la liga de Burnley, Girona y Fredericia (hasta US$12 en total)
 2. 353 (Pipeline 13): el aviso del resultado en cuentas de grupo británicas y que `faltantes` no frene por la fecha ni por PDFs sin enlazar (esperan a la Auditora); ¿cargar los británicos chicos en iXBRL? (decisión tuya)
 3. 355: Lierse son dos clubes (BCE distintos, Auditora 5); falta que cada ficha diga de quién es sucesora y los 3 alias de liga (Onboarding 8)
-3b. 350: propuesta de proceso para revisar categorías en `Admin/propuestas/350-revision-categorias.md` (falta mostrarte el texto)
 4. 347 (Auditora 5): corridas de P2 y P3 (ya: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`, `outlier-liga`, `gestion-club-inexistente`, `ejercicio-sin-rastro`, `salto-interanual`, `escala-implausible`)
 5. 352 (Auditora 5, con lo que cargue Onboarding 8): decidir si el chequeo del iXBRL pasa de aviso a frenar
 6. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
-7. 350 (Auditora 5, después de las corridas): relevar qué categorías están en vano (educación incluida), votar una para subsidios y donaciones, y un proceso para revisar categorías
+7. 350 (Auditora 5, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
 8. 257 (Orden 1): la parte 7, qué pasa de CONVENCIONES a skills (falta mostrarte el texto)
 9. 356 (Sourcing 4, después Onboarding): clubes británicos chicos y medianos que presentan en iXBRL, cargados sin transcribir
 
@@ -98,7 +97,7 @@ el número de la izquierda es el orden de trabajo.
    últimos 5 años; Onboarding los carga con `tools/xhtml-aarsrapport.mjs` (sin transcribir). Presupuesto: Guido dijo que sí (2026-10-21);
    tope de US$3 para la categorización, con ensayo gratis antes. Relevado (`Admin/sesiones/datos.md`): 54 de 68 sociedades tienen iXBRL en
    los últimos 5 años (22 en los 5). Se bajan las cuentas completas de los últimos 3 cierres (69 archivos, 45,5 MB, dentro del tope de 50 MB);
-   el resto (cuentas pequeñas y años anteriores, hasta 84 MB) espera el ok de Guido.
+   el resto (cuentas pequeñas y años anteriores, hasta 84 MB) también se baja: Guido subió el tope (2026-10-21).
 353. LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21). Medido (`Admin/mediciones/companies-house-ixbrl.md`): los grandes presentan PDF; 9 de 36
    clubes probados vienen en iXBRL (Nottingham Forest, Burnley y Bath Rugby, cargados; Plymouth, Bolton, Lincoln, Oxford, Peterborough e
    Hibernian, no). Probado con Forest, Burnley y Bath: `xhtml-aarsrapport.mjs` ya lee el iXBRL británico sin cambios y el `.md` cierra contra
@@ -121,6 +120,10 @@ el número de la izquierda es el orden de trabajo.
    Y (Guido, 2026-10-21): una skill o un proceso para revisar categorías, «así no es un gut feeling»: cuándo se revisa la taxonomía, con
    qué medición (uso por categoría, monto, deportes y países), qué umbral abre o cierra una categoría y cómo se vota. Texto de skill para el
    ok de Guido.
+   Hecho (Auditora 5): medición, votación 3 a 0 por `grants_donations` y texto del proceso en `Admin/propuestas/350-revision-categorias.md`.
+   Guido (2026-10-21): todavía no se crea la categoría. Antes, al terminar el resto del bloque A, una tabla con cada fila del Formato
+   simplificado y en cuántos club-años de cuántos queda en 0 (por deporte y por país). Ninguna fila se oculta en cero: el formato es
+   siempre igual (la propuesta de `hideIfZero` para la fila nueva y para Educación queda descartada).
 335. MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
    un mail sin que Guido lo pida en sus palabras.
    (a) Proceso: Etapa 1 lista y probada de punta a punta (Resend, `outreach.financeofsports.com`, cola en `Admin/outreach/`, envío desde
