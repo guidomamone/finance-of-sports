@@ -462,6 +462,11 @@ Unos US$ 12,3 en total contando los US$ 3,29 de Pipeline 12: pasé el tope de US
 - **Sarpsborg 08 2011 y Fredrikstad**: sus casos de la cola quedaron contestados como documentos descartados.
 - To-do 351 (sueldos de los clubes británicos e Instituto 2025): no empezado.
 
+### Segunda parte (to-dos 345 y 356, misma sesión)
+- **356:** los 67 XHTML británicos están convertidos a `.md` y PDF de ancla `*-ixbrl` (gratis, el PDF oficial intacto); `Admin/lotes/lote-133.txt` los lista. Plymouth 2022-23 no convierte (defecto de script, Pipeline 13). Cargarlos con la tool actual cuesta unos US$ 17,8 (28 altas, ~US$ 0,37 por documento): la principal decidió no gastar hasta que Pipeline 13 mida si la extracción sale de las etiquetas iXBRL. 23 documentos piden fijar cierre o perímetro. `Admin/lotes/lote-134.txt` (7 altas, un año cada una) quedó sin correr.
+- **345:** Fiorentina 2020 (6 meses, individual tras fusión) quedó en `documentos-parciales.txt`, como Genoa y Atalanta, **con el ok de Guido pendiente**. Novorizontino 2012: el OCR separó etiquetas y cifras; reordené el bloque a tabla en el `.md` (mismas cifras, nota al principio) y verifiqué contra el PDF. Goiás 2018-19, Novorizontino 2012 y RAAL 2020 están listos para escribir pero **`cargar.mjs` falla al escribir** (`e is not defined`, línea 1341, nota «Informe oficial en formato XHTML»): defecto pasado a la principal. Falta además liga, estadio y sponsor de Novorizontino 2012 y RAAL 2020 (Goiás ya los tiene). Girona 2021 quedó con el registro de búsqueda del sponsor.
+- Gasto del 345 hasta ahora ~US$ 12,9 de US$ 17.
+
 ### Qué deja de ser cierto en ESTADO
 - `Admin/registros/documentos-descartados.txt` tiene ocho documentos de tenedoras (Fredrikstad, Sarpsborg 08).
 - Los clubes del lote 130 tienen años nuevos (ver arriba); `Admin/ESTADO-clubes.md` se regenera con `node tools/generate-club-index.js`.

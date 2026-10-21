@@ -147,7 +147,39 @@
       }
     }
   },
+  "goias-br": {
+    "2018": {
+      "estadio": "Serra Dourada",
+      "capacidad": 42000,
+      "sponsor": "Caixa",
+      "marca": "Topper",
+      "fuente": "https://en.wikipedia.org/wiki/2018_Campeonato_Brasileiro_S%C3%A9rie_B"
+    },
+    "2019": {
+      "estadio": "Serra Dourada",
+      "capacidad": 50049,
+      "sponsor": "Marjo Sports",
+      "marca": "Gr33n",
+      "fuente": "https://en.wikipedia.org/wiki/2019_Campeonato_Brasileiro_S%C3%A9rie_A"
+    }
+  },
   "novorizontino-br": {
+    "2012": {
+      "estadio": "Jorge Ismael de Biasi",
+      "capacidad": 16000,
+      "fuente": "https://en.wikipedia.org/wiki/Gr%C3%AAmio_Novorizontino (estadio del club; capacidad como en 2013, https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2013_-_S%C3%A9rie_A3)",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-21",
+          "por": "Claude (Onboarding 8)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Brasil/Novorizontino/balanco-2012.md, estado de resultados: «RECEITA PATROCINIO E PUBLICIDADE 711.565,33» sin nombrar al patrocinador de la camiseta", "resultado": "sin-dato" },
+            { "clase": "archivo-web", "donde": "https://www.footballkitarchive.com/pt/ (camisetas Novorizontino 2012, casa y visitante, marca Aktion, Campeonato Paulista): la ficha no nombra sponsor", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsqueda web «Novorizontino 2012 camisa patrocinador Segunda Divisão Paulista uniforme patrocínio 2012»: solo patrocinios de 2026 (Totvs Oeste)", "resultado": "sin-dato" }
+          ]
+        }
+      }
+    },
     "2013": {
       "estadio": "Jorge Ismael de Biasi",
       "capacidad": 16000,
@@ -797,6 +829,22 @@
       "sponsor": "OBOS",
       "marca": "Adidas",
       "fuente": "https://en.wikipedia.org/wiki/2024_Norwegian_First_Division"
+    }
+  },
+  "girona-es": {
+    "2021": {
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-21",
+          "por": "Claude (Onboarding 8)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.md, informe de gestión L5520-5562: nombra a Puma como patrocinador técnico y a CaixaBank, Patronat de Turisme Costa Brava Pirineu de Girona y FactorEnergía como patrocinadores, sin decir cuál iba en el frente de la camiseta", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "https://www.footyheadlines.com/2020/08/girona-20-21-home-away-third-kits.html (presentación de las camisetas 2020-21: solo Puma y la inscripción del 90 aniversario, no nombra sponsor de pecho)", "resultado": "sin-dato" },
+            { "clase": "club-oficial", "donde": "búsqueda web «gironafc.cat nueva camiseta 2020-21 Puma Girona FC presenta equipaciones patrocinador»: el sitio del club no aparece entre los resultados", "resultado": "sin-dato" },
+            { "clase": "archivo-web", "donde": "https://footballkitarchive.com/girona-kits", "resultado": "inaccesible" }
+          ]
+        }
+      }
     }
   },
   "chapecoense-br": {
