@@ -84,6 +84,10 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     si entra en lo que queda, se corre sin preguntar; si no, se frena y se le avisa a la principal. La cuenta sale de `node tools/gasto.mjs --sesion <la carpeta del worktree>` (cada llamada nueva lleva su sesión; lo anterior figura «(sin marca)»)
     (lee los registros de la API) y va en la nota de la sesión. La auditora compara, en cada merge, lo gastado contra el presupuesto y
     los ensayos, y marca la plata tirada: lotes que no escribieron nada, reintentos repetidos, corridas dobles.
+  - **Lo que ya viene estructurado no se paga con IA.** Si el documento trae las cifras etiquetadas o en un formato que se lee sin
+    interpretar (iXBRL o XBRL, el XML o CSV del depósito, los códigos NBB), la carga sale de ahí; la IA entra solo para lo que esa
+    lectura no cubre, y el ensayo lo dice documento por documento. Lo vigilan la skill de onboarding (sección 4), la de auditoría
+    (sección 4) y el freno de `tools/lote.mjs`.
   - **Una regla que se tiene que cumplir va a un chequeo, no a la memoria de una sesión** (Guido: «son parches»). Primero `audit.js`
     (que el hook corre antes de cada commit: P0 y P1 frenan) o el hook de `tools/hooks/pre-tool.mjs`; si no se puede chequear, a
     estas convenciones, `PANTALLA.md`, `CONVENCIONES-DATOS.md` o la skill que corresponda. La memoria de una sesión no cuenta como arreglo.

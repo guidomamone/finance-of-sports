@@ -102,6 +102,7 @@ especificación de las filas y las respuestas de categoría, y las tools arman l
 - **Arreglar en los scripts, nunca a mano.** Lo que se repite va a un script de `tools/` con un ensayo que estime el costo. Gastar
   dólares de API está bien, dentro del presupuesto de la sesión (`Admin/CONVENCIONES.md`); tokens de sesión, no. Archivos grandes se leen con filtros, no enteros.
 - **Para bajar el gasto de API:** la Batch API (mismo modelo, mitad de precio) y pasar una tarea de Opus a Sonnet, de a una y medida contra lo cargado. Nunca Haiku. Antes de una medición paga, además del costo del ensayo, una frase que diga qué decisión cambia el resultado; sin esa frase no se corre. Cada archivo de `Admin/mediciones/` abre con `Conclusión:` y `Destino:`.
+- **Antes de pagar, el camino sin IA.** Si el ensayo da costo de localizar, extraer o transcribir en un documento que trae las cifras etiquetadas o en un formato que se lee sin interpretar (iXBRL o XBRL, el XML o CSV del depósito, los códigos NBB), no se corre: se le pide a Pipeline el escalón que lee esa estructura, y la IA queda solo para lo que ese escalón no cierra.
 - **Ejemplos concretos:** club, año, fila, importe, antes y después. Explicar las siglas.
 - **Páginas:** decir siempre las dos, "página N del visor (impreso M al pie)".
 - **La cola (Guido no la revisa).** Preguntas concretas de sí o no, con la página del visor y las líneas del .md. Las contesta un subagente

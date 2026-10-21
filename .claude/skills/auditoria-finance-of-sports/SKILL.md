@@ -148,6 +148,7 @@ es una mala operación, siempre.**
 - **Cada chequeo que se automatiza en `tools/audit.js` es un chequeo que deja de costar razonamiento
   para siempre.** Si en una auditoría encontraste algo a ojo que un script podía encontrar solo,
   el trabajo no termina en reportarlo: termina en agregar el chequeo.
+- **Pagar IA por lo que ya viene estructurado es plata tirada, y la Auditora lo marca sin que se lo pidan.** Al aprobar una tool o un lote, y al comparar lo gastado en cada merge, mira si el formato del documento (iXBRL o XBRL, XML o CSV del depósito, códigos NBB) ya trae lo que se le pide a la IA. Si lo trae, lo frena y pide el escalón que lee esa estructura.
 
 ---
 
