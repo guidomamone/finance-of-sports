@@ -187,8 +187,9 @@ function memoriaNoEsRegla() {
 const PY_ESCRIBE = /\bopen\([^)]*,\s*['"][wax]|\.write_text\(|\.write_bytes\(|\bshutil\.|\bos\.(?:rename|replace|remove|unlink)\b/;
 function comandoQueEdita(cmd) {
   if (/^\s*git\s+commit\b/.test(cmd) || /\/tmp\/claude-\d+\//.test(cmd)) return; // un mensaje de commit no edita; el scratchpad no es el repo
-  const sedPerl = /\b(?:sed|perl)\s+(?:-\w+\s+)*-i\b/.test(cmd);
-  const py = /\bpython3?\s+(?:-[ce]\b|-\s*<<)/.test(cmd) && PY_ESCRIBE.test(cmd);
+  // Solo cuando sed, perl o python es el comando (al principio o después de ; && || |), no cuando el texto aparece dentro de un grep o un mensaje.
+  const sedPerl = /(?:^|[;&|]\s*)(?:sed|perl)\s+(?:-\w+\s+)*-i\b/.test(cmd);
+  const py = /(?:^|[;&|]\s*)python3?\s+(?:-[ce]\b|-\s*<<)/.test(cmd) && PY_ESCRIBE.test(cmd);
   if (!sedPerl && !py) return;
   try { appendFileSync(join(cwd, 'Admin', 'registros', '.hooks-disparos.jsonl'), JSON.stringify({ ts: new Date().toISOString(), chequeo: 'comando-que-edita', cmd: cmd.slice(0, 120) }) + '\n'); } catch { /* sin carpeta */ }
   decidir('deny', 'Editá con Edit o Write; una transformación en masa va en un archivo de script que se corre.');

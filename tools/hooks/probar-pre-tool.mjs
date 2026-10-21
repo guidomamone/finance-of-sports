@@ -20,16 +20,19 @@ const casos = [
   ['skill: tee y cp a skills', bash('echo x | tee .claude/skills/a/SKILL.md'), 'deny', 'Bash no escribe'],
   ['skill: git checkout pasa', bash('git checkout main -- .claude/skills/club-sourcing/SKILL.md'), 'pasa'],
   // Falsos positivos: el texto que se escribe nombra la ruta, pero el destino es otro archivo.
-  ['FP: python escribe otro archivo y nombra skills', bash("python3 - <<'EOF'\nopen('Admin/x.md','w').write('ver .claude/skills/ y más')\nEOF"), 'ask', 'sed -i'],
+  ['FP: python escribe otro archivo y nombra skills', bash("python3 - <<'EOF'\nopen('Admin/x.md','w').write('ver .claude/skills/ y más')\nEOF"), 'deny', 'Edit o Write'],
   ['FP: echo a otro archivo que nombra skills', bash('echo ".claude/skills/ nombrada" > Admin/x.md'), 'pasa'],
   ['FP: heredoc a otro archivo con "> .claude/skills/" en el texto', bash("cat > Admin/x.md <<'EOF'\ntexto > .claude/skills/a/SKILL.md\nEOF"), 'pasa'],
   ['archivar una sesión', { tool_name: 'mcp__ccd_session_mgmt__archive_session', tool_input: { session_id: 'local_x' } }, 'ask', 'Archivar'],
   ['Opus en una sesión nueva', { tool_name: 'mcp__ccd_session__start_session', tool_input: { model: 'claude-opus-5-5' } }, 'ask', 'Opus'],
   ['Sonnet en una sesión nueva', { tool_name: 'mcp__ccd_session__start_session', tool_input: { model: 'claude-sonnet-5-5' } }, 'pasa'],
-  ['permission_mode distinto de auto', { tool_name: 'mcp__ccd_session__start_session', tool_input: { permission_mode: 'acceptEdits' } }, 'ask', 'permission_mode'],
+  ['permission_mode distinto de auto', { tool_name: 'mcp__ccd_session__start_session', tool_input: { permission_mode: 'acceptEdits' } }, 'deny', 'permission_mode'],
   ['memoria de regla (feedback)', { tool_name: 'Write', tool_input: { file_path: '/Users/x/.claude/projects/p/memory/a.md', content: '---\nname: a\nmetadata:\n  type: feedback\n---\nx' } }, 'ask', 'memoria'],
   ['memoria de trato (user)', { tool_name: 'Write', tool_input: { file_path: '/Users/x/.claude/projects/p/memory/b.md', content: '---\nname: b\nmetadata:\n  type: user\n---\nx' } }, 'pasa'],
-  ['sed -i fuera de skills', bash("sed -i 's/a/b/' Admin/x.md"), 'ask', 'Edit o Write'],
+  ['sed -i fuera de skills', bash("sed -i 's/a/b/' Admin/x.md"), 'deny', 'Edit o Write'],
+  ['python que solo lee pasa', bash("node tools/audit.js --json | python3 -c \"import json,sys;print(len(json.load(sys.stdin)))\""), 'pasa'],
+  ['sed -i en el scratchpad pasa', bash("sed -i '' 's/a/b/' /private/tmp/claude-501/x/scratchpad/a.py"), 'pasa'],
+  ['grep que nombra sed -i pasa', bash('grep -n "sed -i" tools/hooks/probar-pre-tool.mjs'), 'pasa'],
   ['comando normal', bash('git status'), 'pasa'],
 ];
 
