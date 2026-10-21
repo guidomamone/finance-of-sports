@@ -1032,7 +1032,10 @@ function checkGenerados() {
       execSync(`node tools/${script} --check`, { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] });
     } catch (e) {
       const detalle = String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ').slice(0, 220);
-      add('P1', code, `${que} quedó desactualizado. Corré: node tools/${script}${detalle ? ' — ' + detalle : ''}`);
+      // faltantes-liga.mjs --check (Auditora 5): 2 = las entradas no cambiaron pero se calculó hace más de 30 días; 3 = solo faltan en este worktree los enlaces a PDF (corré preparar). Ninguno de los dos
+      // es un dato roto que el visitante vea: P3, para que ni el calendario ni un worktree sin preparar frenen commits ajenos. Con 1 (cambiaron las entradas) sigue siendo P1.
+      if (script === 'faltantes-liga.mjs' && (e.status === 2 || e.status === 3)) add('P3', code, `${que}: ${detalle || (e.status === 3 ? 'corré node tools/worktree.mjs preparar .' : 'regenerá: node tools/faltantes-liga.mjs')}`);
+      else add('P1', code, `${que} quedó desactualizado. Corré: node tools/${script}${detalle ? ' — ' + detalle : ''}`);
     }
   }
 }
@@ -1890,6 +1893,7 @@ function pruebaDeDeporte(api) {
 // (to-do 317, aprobado por la Auditora 4) EJERCICIO SIN RASTRO. Un club-año entre el primer ejercicio cargado de un club y el más reciente cargado de su país que ni está
 // cargado ni figura en data/faltantes/ con ningún estado (buscado, en-mano, sin-buscar: esos ya tienen su lugar). Cubre el hueco entre dos ejercicios y la cola hasta el último año del país.
 // P3 por club, con la lista de años. Se silencia por club en tools/audit-ignore.json, con motivo, después de mirarlo. Medido al nacer: 84 club-años en 51 clubes (24 de hueco y 60 de cola).
+const { temporada: temporadaDe } = require('./temporada.js'); // la misma que usa tools/faltantes-liga.mjs
 function checkEjercicioSinRastro() {
   const RECIENTE_MESES = 9; // el mismo de tools/faltantes-liga.mjs (Guido, 2026-10-17): si cambia allá, cambia acá (el .mjs corre su main al importarlo)
   const dirFal = path.join(ROOT, 'data/faltantes');
@@ -1909,16 +1913,19 @@ function checkEjercicioSinRastro() {
     const anios = (j.years || []).map((y) => y.fiscal_year).filter((y) => Number.isFinite(y));
     if (!anios.length) continue;
     const iso = path.basename(path.dirname(rj));
-    clubes.push({ id: j.club.id, iso, anios, cruza: j.club.fiscal_year_start !== '01-01' });
+    clubes.push({ id: j.club.id, iso, anios, cruza: j.club.fiscal_year_start !== '01-01', fys: j.club.fiscal_year_start });
     // El máximo del país no cuenta presupuestos puros (official_budget): un presupuesto no es un balance cargado (Auditora 4: 51 -> 38 clubes).
     const reales = (j.years || []).filter((y) => y.report_type !== 'official_budget').map((y) => y.fiscal_year).filter((y) => Number.isFinite(y));
     maxPais[iso] = Math.max(maxPais[iso] || 0, ...reales);
   }
   for (const c of clubes.sort((a, b) => a.id.localeCompare(b.id))) {
     const tiene = new Set(c.anios); const fal = enFaltantes[c.id] || new Set();
+    // data/faltantes/ está por TEMPORADA (la que termina en el año de la lista); el ejercicio, por fiscal_year. La misma función que faltantes-liga.mjs (tools/temporada.js) los traduce: un ejercicio que cierra
+    // entre septiembre y diciembre de y (FCK, 31/12) es de la temporada y+1 en una liga de temporada partida (Auditora 5). Se busca en data/faltantes/ con la clave del año y con la de la temporada.
+    const enFal = (y) => fal.has(y) || fal.has(temporadaDe({ fiscalYearStart: c.fys }, y, true));
     const ultimo = Math.max(...c.anios); const hueco = []; const cola = [];
     for (let y = Math.min(...c.anios); y <= maxPais[c.iso]; y++) {
-      if (tiene.has(y) || fal.has(y)) continue;
+      if (tiene.has(y) || enFal(y)) continue;
       // Un año cerrado hace menos de RECIENTE_MESES todavía no lo publicó nadie: no es una falta (misma cuenta que tools/faltantes-liga.mjs). La salida depende de la fecha de hoy.
       const cierre = new Date(Date.UTC(y, c.cruza ? 5 : 11, c.cruza ? 30 : 31));
       if ((new Date() - cierre) / (1000 * 60 * 60 * 24 * 30.44) < RECIENTE_MESES) continue;
