@@ -2,7 +2,8 @@
   "_comentario": "Nombre de una lista de Wikipedia -> el mismo club con otro nombre, cuando el nombre normalizado no alcanza (lo lee tools/faltantes-liga.mjs). Cada entrada es { clubId } (club del sitio), { carpeta: 'País/Club' } (Clubes/) o { sourcing: 'País/Club' } (Admin/sourcing/). Solo el MISMO club (renombrado, con sponsor, en otro idioma); nunca un filial, un homónimo ni el club nuevo que ocupó la plaza de uno disuelto. Candidatos: node tools/faltantes-liga.mjs --sugerir.",
   "nl": {
     "Eindhoven": {"clubId": "fceindhoven-nl"},
-    "FC Twente (Enschede)": {"clubId": "fctwente-nl"}
+    "FC Twente (Enschede)": {"clubId": "fctwente-nl"},
+    "SC Cambuur (Leeuwarden)": {"clubId": "sccambuur-nl"}
   },
   "at": {
     "Rheindorf Altach": {"sourcing": "Austria/SCR Altach"},
@@ -120,6 +121,7 @@
   "pt": {
     "Sporting de Braga": {"clubId": "braga-pt"},
     "Vilafranquense": {"clubId": "avs-pt"},
+    "Académico de Viseu FC": {"clubId": "academicoviseu-pt"},
     "Leiria": {"clubId": "uniaodeleiria-pt"},
     "Desportivo de Chaves": {"clubId": "chaves-pt"},
     "Grupo Desportivo '''Estoril-Praia'''": {"clubId": "estorilpraia-pt"},
@@ -130,6 +132,9 @@
   },
   "ru": {
     "Spartak": {"clubId": "spartakmoscow-ru"},
+    "CSKA Moskva": {"clubId": "cskamoscow-ru"},
+    "Lokomotiv Moskva": {"clubId": "lokomotivmoscow-ru"},
+    "Krylya Sovetov Samara": {"clubId": "kryliasovetovsamara-ru"},
     "Dynamo": {"clubId": "dynamomoscow-ru"},
     "Nizhny Novgorod": {"clubId": "parinizhnynovgorod-ru"}
   },

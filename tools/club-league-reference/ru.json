@@ -83,6 +83,36 @@
           "Ufa",
           "Rubin Kazan",
           "Arsenal Tula"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Russian_Premier_League"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesr/rus2022.html",
+            "tabla": "Premier League",
+            "fetchedAt": "2026-10-21T22:21:43.644Z",
+            "equipos": [
+              "Zenit Sankt-Peterburg",
+              "FC Sochi",
+              "Dinamo Moskva",
+              "FC Krasnodar",
+              "CSKA Moskva",
+              "Lokomotiv Moskva",
+              "Ahmat Grozny",
+              "Krylya Sovetov Samara",
+              "FC Rostov",
+              "Spartak Moskva",
+              "FC Nizhniy Novgorod",
+              "Ural Yekaterinburg",
+              "FC Khimki",
+              "FC Ufa",
+              "Rubin Kazan",
+              "Arsenal Tula"
+            ]
+          }
         ]
       },
       "2023": {
@@ -125,6 +155,36 @@
           "Fakel Voronezh",
           "Khimki",
           "Torpedo Moscow"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Russian_Premier_League"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesr/rus2023.html",
+            "tabla": "Premier League",
+            "fetchedAt": "2026-10-21T22:21:43.670Z",
+            "equipos": [
+              "Zenit (Sankt-Peterburg)",
+              "CSKA (Moskva)",
+              "Spartak (Moskva)",
+              "FC Rostov",
+              "Akhmat (Grozny)",
+              "FC Krasnodar",
+              "FC Orenburg",
+              "Lokomotiv (Moskva)",
+              "Dinamo (Moskva)",
+              "FC Sochi",
+              "Ural (Yekaterinburg)",
+              "Krylya Sovetov (Samara)",
+              "Pari (Nizhniy Novgorod)",
+              "Fakel (Voronezh)",
+              "FC Khimki",
+              "Torpedo (Moskva)"
+            ]
+          }
         ]
       },
       "2024": {

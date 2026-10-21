@@ -61,7 +61,7 @@ Es un snapshot, igual que `ESTADO.md`: lo que deja de ser cierto se reemplaza.
   revisión de las páginas clave contra la imagen, con una cola en `Admin/transcripcion-subagentes/` (README.md). Lo que falta, en
   `Admin/TODO.md` (356).
 - La liga de un año necesita dos fuentes (regla en `Admin/CONVENCIONES-DATOS.md`): la segunda es RSSSF, que lee
-  `tools/segunda-fuente-liga.mjs` a la caché de `tools/club-league-reference/`; lo que falta, en el TODO 358.
+  `tools/segunda-fuente-liga.mjs` a la caché de `tools/club-league-reference/` (las páginas bajadas, en `Generados/fuentes-liga/`); las ligas en grupos frenan en la compuerta (`Admin/HALLAZGOS-pipeline.md`).
 - `tools/pipeline.mjs` hace SOLO la etapa 2 (transcribir con Mistral y validar, más el control "sin tablas"). La lista de rubros la arma
   `verificar.mjs` y la categorización es la etapa 7 del lote.
 - Perímetro del club por señales (`tools/perimetro-senales.mjs`): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el ajuste

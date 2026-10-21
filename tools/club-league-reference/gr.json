@@ -301,6 +301,34 @@
           "Panetolikos",
           "OFI",
           "AEL"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Super_League_Greece"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesg/grk2021.html",
+            "tabla": "Super League",
+            "fetchedAt": "2026-10-21T22:21:43.431Z",
+            "equipos": [
+              "Olympiakos Piraeus",
+              "Aris Thessaloniki",
+              "AEK (Athinai)",
+              "PAOK Thessaloniki",
+              "Panathina&iuml;kos",
+              "Asteras Tripolis",
+              "Volos NFC",
+              "PAS Giannina",
+              "Apollon Smyrnis",
+              "Atromitos Athinon",
+              "PAS Lamia",
+              "Panaitolikos Agriniou",
+              "OFI Heraklion",
+              "AE Larissas"
+            ]
+          }
         ]
       },
       "2022": {
@@ -705,6 +733,38 @@
           "Kallithea",
           "Veria",
           "Acharnaikos"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2017%E2%80%9318_Football_League_(Greece)"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesg/grk2018.html",
+            "tabla": "Football League",
+            "fetchedAt": "2026-10-21T22:21:43.455Z",
+            "equipos": [
+              "OFI Heraklion",
+              "Aris Thessaloniki",
+              "Panaha&iuml;ki 1891 (Patras) 34",
+              "AO Chania Kissamikos",
+              "Doxa Dramas",
+              "Trikala",
+              "Apollon Pontou",
+              "AE Kara&iuml;skakis Artas",
+              "Ergotelis Heraklion",
+              "Apollon Larissas",
+              "Aiginiakos",
+              "AE Sparti",
+              "Anagennisi Karditsas",
+              "Panserra&iuml;kos",
+              "Panaigialios",
+              "Kallithea",
+              "Veria",
+              "Acharna&iuml;kos"
+            ]
+          }
         ]
       },
       "2019": {

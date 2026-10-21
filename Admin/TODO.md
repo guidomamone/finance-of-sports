@@ -29,45 +29,34 @@ el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
 1. 359 (Onboarding): Emmen (pregunta al club) y las urls danesas que quedan, si se quieren
-2. 358 (Onboarding): correr la segunda fuente en las 10 ligas que quedan (el script ya está arreglado)
-3. 355: Lierse son dos clubes (BCE distintos, Auditora 5); falta que cada ficha diga de quién es sucesora y los 3 alias de liga (Onboarding)
-4. 347 (Auditora): corridas de P2 y P3 (hechas nueve códigos); faltan los fixes aprobados, que codea Pipeline
-5. 352 (Auditora): el iXBRL ya frena en el individual; falta medir el consolidado
-6. 351 (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
-7. 350 (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
-8. 257 (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
-9. 356 (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
-10. 362 (Pipeline, con la Auditora): el freno de documentos de grupo
-11. 363 (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+2. 355: Lierse son dos clubes (BCE distintos, Auditora 5); falta que cada ficha diga de quién es sucesora y los 3 alias de liga (Onboarding)
+3. 347 (Auditora): corridas de P2 y P3 (hechas nueve códigos); faltan los fixes aprobados, que codea Pipeline
+4. 352 (Auditora): el iXBRL ya frena en el individual; falta medir el consolidado
+5. 351 (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
+6. 350 (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
+7. 257 (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
+8. 356 (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
+9. 362 (Pipeline, con la Auditora): el freno de documentos de grupo
+10. 363 (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 **D. Orden de la casa**
-12. 338: correr todas las auditorías del proyecto (al final de A)
-13. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
-14. 364 (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
-15. 298 (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+11. 338: correr todas las auditorías del proyecto (al final de A)
+12. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+13. 364 (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+14. 298 (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 **E. Después de A a D (Guido, 2026-10-20)**
-16. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-17. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-18. 335: mails a clubes
-19. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
-20. 357: mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+15. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+16. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+17. 335: mails a clubes
+18. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+19. 357: mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 357. MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
    dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo
    muestra. Primero medir (Auditora o Pipeline): en cuántos club-años el documento lo imprime (estado de cambios en el patrimonio, flujo de
    fondos o notas) y con qué rótulos, por país. Después Pantallas propone dónde se ve, con mockup para el ok de Guido. Si suma un campo al
    JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios y aportes impresos como ingreso).
-358. SEGUNDA FUENTE DE LAS LIGAS (regla «la liga de un año necesita dos fuentes», CONVENCIONES-DATOS). `tools/segunda-fuente-liga.mjs` lee
-   RSSSF y guarda la fuente en la caché de `tools/club-league-reference/`; `liga-una-fuente` (P3) marca hoy 10 ligas (bajó de 17: hay 26
-   liga-temporadas con segunda fuente y `liga-fuentes-no-coinciden` da 0). El script ya está arreglado (la sección por su nombre, UTF-16,
-   filas con un espacio): 19 de las 21 liga-temporadas frenadas pasan. Terminado cuando: las 10 ligas de `node tools/audit.js` con
-   `liga-una-fuente` tienen su segunda fuente o una línea en HALLAZGOS que diga por qué no hay, y `liga-fuentes-no-coinciden` sigue en 0 o
-   cada caso votado (skill de auditoría, sección 9). Falta correr `segunda-fuente-liga.mjs` con las URLs ya cacheadas en
-   `Generados/fuentes-liga/` (be-challengerproleague 2018-24, pt-ligaportugal2 2022-25, gr-superleague 2021, gr-superleague2 2018,
-   gb-championship 2022, nl-eerstedivisie 2025, ru-premierliga 2022-23, ch-superleague 2011-12, ar-primera 2025). pt-liga3 2023 y
-   gr-superleague2 2025 (dos grupos: la primera tabla trae la mitad) frenan bien: HALLAZGOS o que Pipeline lea los grupos. Lo hace Onboarding.
-
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso

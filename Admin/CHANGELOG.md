@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 936 — Segunda fuente de las ligas, cerrada (2026-10-21) [358]
+
+- `segunda-fuente-liga.mjs` sobre las 22 liga-temporadas que quedaban (páginas de RSSSF ya bajadas, sin API): 20 escritas en `tools/club-league-reference/` (Argentina 2025; Bélgica 2018-24; Suiza 2011-12; Championship 2022; Grecia 2021 y Super League 2 2018; Eerste Divisie 2025; Liga Portugal 2 2022-25; Premier rusa 2022-23). `liga-una-fuente` baja de 10 ligas a 2; P3 de 192 a 184; `liga-fuentes-no-coinciden` queda en 0.
+- 5 alias en `alias.json` (CSKA Moskva, Lokomotiv Moskva, Krylya Sovetov Samara, SC Cambuur (Leeuwarden), Académico de Viseu FC): el mismo club con otro nombre en RSSSF, mismas posiciones que Wikipedia.
+- Las 2 que quedan (Super League 2 griega 2025, Liga 3 portuguesa 2023) frenan en la compuerta por tener dos grupos; línea en HALLAZGOS con la condición para retomarlas. Sin cambios en `tools/*.mjs` ni en lo publicado.
+
 ## Versión 935 — Modo de una sola sesión y arranque más corto (2026-10-21) [298]
 
 - `CLAUDE.md`: bloque «Modo de trabajo: una sola sesión» (un rol por vez con su skill, lo que hacía la Auditora, tokens, cómo hablarle a Guido, cierre directo a TODO, CHANGELOG y ESTADO). Ya no se leen `principal-finance-of-sports`, `worktree.md` ni `Admin/sesiones/`.

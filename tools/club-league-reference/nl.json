@@ -641,6 +641,40 @@
           "Jong PSV",
           "Jong FC Utrecht",
           "Vitesse"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Eerste_Divisie"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesn/ned2025.html",
+            "tabla": "Eerste Divisie",
+            "fetchedAt": "2026-10-21T22:21:43.501Z",
+            "equipos": [
+              "FC Volendam",
+              "Excelsior (Rotterdam)",
+              "SC Cambuur (Leeuwarden)",
+              "ADO Den Haag",
+              "FC Dordrecht",
+              "De Graafschap (Doetinchem)",
+              "Telstar (Velsen)",
+              "FC Emmen",
+              "FC Den Bosch",
+              "Jong AZ (Alkmaar)",
+              "FC Eindhoven",
+              "Roda JC Kerkrade",
+              "Helmond Sport",
+              "VVV-Venlo",
+              "MVV Maastricht",
+              "TOP Oss",
+              "Jong Ajax (Amsterdam)",
+              "Jong PSV (Eindhoven)",
+              "Jong FC Utrecht",
+              "Vitesse (Arnhem)"
+            ]
+          }
         ]
       }
     }

@@ -82,6 +82,8 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   páginas con error real (1,2%); la cascada de `tools/chequeos-gratis.mjs` tiene 0 escapes. No entra. Retomar si el gasto de la segunda voz
   en escaneos pesa más y hay un OCR mejor: repetir con una muestra mayor, sin tocar la compuerta. `Admin/mediciones/x2-voz-local-escaneos.md`.
 
+- **Segunda fuente de una liga en grupos** (`segunda-fuente-liga.mjs`, to-do 358): la Super League 2 griega 2025 (RSSSF `grk2025`, grupos Voreios y Notios de 10) y la Liga 3 portuguesa 2023 (`port2023`, séries A y B de 12) frenan en la compuerta, bien: la tabla que lee el script es la del primer grupo y trae la mitad de los equipos de Wikipedia (10 de 20, 12 de 24). Los dos clubes que el aviso `liga-una-fuente` nombra (AE Larissas 2025, FC Felgueiras 1932 2023) están, revisado a mano, en la primera tabla de su grupo. No se relaja la compuerta: un parcial que pasa es el error que la regla evita. Se retoma si `audit.js` suma una liga con grupos sin segunda fuente (hoy 2 avisos `liga-una-fuente`): el escalón sería juntar los grupos de la sección y comparar la unión contra Wikipedia.
+
 ## 2026-10-08, dos trampas que costaron una corrida
 
 - Una respuesta "no" de la cola a una duda de extraer ("¿se cargan las filas de la nota b41?") NO saca filas que la extracción ya trajo: queda como nota y las filas siguen entrando. Para sacarlas se usa un ajuste `fila`

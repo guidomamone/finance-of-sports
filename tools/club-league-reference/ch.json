@@ -203,6 +203,30 @@
           "Thun",
           "Neuchâtel Xamax",
           "St. Gallen"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2010%E2%80%9311_Swiss_Super_League"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesz/zwit2011.html",
+            "tabla": "Super League",
+            "fetchedAt": "2026-10-21T22:21:43.361Z",
+            "equipos": [
+              "FC Basel",
+              "FC Zürich",
+              "BSC Young Boys Bern",
+              "FC Sion",
+              "FC Thun",
+              "FC Luzern",
+              "Grasshopper-Club Zürich",
+              "Neuchâtel Xamax",
+              "AC Bellinzona",
+              "FC Sankt Gallen"
+            ]
+          }
         ]
       },
       "2012": {
@@ -233,6 +257,30 @@
           "Neuchâtel Xamax",
           "Zürich",
           "Sion"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2011%E2%80%9312_Swiss_Super_League"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesz/zwit2012.html",
+            "tabla": "Super League",
+            "fetchedAt": "2026-10-21T22:21:43.384Z",
+            "equipos": [
+              "FC Basel",
+              "FC Luzern",
+              "BSC Young Boys Bern",
+              "Servette FC (Genève)",
+              "FC Thun",
+              "FC Zürich",
+              "FC Lausanne-Sport",
+              "Grasshopper-Club Zürich 34",
+              "FC Sion",
+              "Neuchâtel Xamax"
+            ]
+          }
         ]
       },
       "2013": {
