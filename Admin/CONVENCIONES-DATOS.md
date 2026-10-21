@@ -594,6 +594,15 @@ Turnover impreso (11,6): el cierre contra el resultado operativo impreso (−£1
 CATEGORÍA (prompt): una revaluación no realizada de una inversión a valor razonable (Fair value movements), sin cobro, va a other_income con nota que lo aclare; nunca a asset_sales ni a una venta.
 EJEMPLO-CATEGORÍA: bathrugby-gb | revenue | Fair value movements | other_income
 
+## REGLA: la liga de un año necesita dos fuentes independientes
+
+La página de la temporada en Wikipedia cuenta como una sola fuente. La otra sale de esta lista, en este orden: el sitio oficial de la liga o de la
+federación; RSSSF; un sitio de resultados (worldfootball.net, Soccerway, Transfermarkt). Si las dos coinciden, la liga se asigna. Si no coinciden, se
+vota (skill `auditoria-finance-of-sports`, sección 9). Con una sola fuente, la liga queda asignada con el aviso `liga-una-fuente` hasta tener la segunda.
+El club se identifica por su nombre exacto o un alias de `tools/club-league-reference/alias.json`, nunca por parecido: otro club de la misma ciudad
+puede tener un nombre casi igual. Casos: RAAL La Louvière 2021 («La Louvière Centre» es otro club), la segunda chipriota 2023-24 (la tabla de Wikipedia
+lista 15 de los 16 equipos).
+
 ## REGLA: el país de una liga es el de su federación; el de un club, donde está (`CLUB_NATION`, `data/leagues.js`)
 
 `club.country` es el estado: el sufijo del id y la carpeta `data/<país>/` (Celtic es `celtic-gb` y vive en `data/gb/`). El país que se muestra y con el que se
