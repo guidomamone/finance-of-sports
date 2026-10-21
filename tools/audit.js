@@ -815,6 +815,45 @@ function checkHistoriaEnDocs() {
   }
 }
 
+// --- PÁRRAFOS REPETIDOS ENTRE DOCUMENTOS VIVOS (to-do 327, C-11) -------------
+// Una regla escrita en dos lugares se desincroniza: es lo que ensució las skills antes de la consolidación del 255. Compara párrafos de
+// 200 caracteres o más (normalizados) entre CLAUDE.md, las skills y los Admin/*.md de primer nivel. Las subcarpetas de Admin/ (plantillas
+// por país o por club, instrucciones de tandas, archivo) repiten texto a propósito y quedan afuera. P3.
+const PARRAFO_MIN = 200;
+const PARRAFO_SIMILITUD = 0.8;   // de las ventanas de 6 palabras del párrafo más corto, la fracción que está en el otro
+
+function checkParrafosRepetidos() {
+  const archivos = ['CLAUDE.md', ...mdsDeSkills(),
+    ...fs.readdirSync(path.join(ROOT, 'Admin')).filter(f => f.endsWith('.md') && !/^(CHANGELOG|TODO|ESTADO-clubes)\.md$/.test(f)).sort().map(f => `Admin/${f}`)]
+    .filter(f => fs.existsSync(path.join(ROOT, f)));
+  const norm = s => s.toLowerCase().replace(/[`*_>#|-]/g, ' ').replace(/\s+/g, ' ').trim();
+  const parrafos = [];
+  for (const f of archivos) {
+    for (const p of fs.readFileSync(path.join(ROOT, f), 'utf8').split(/\n\s*\n/)) {
+      const n = norm(p);
+      if (n.length < PARRAFO_MIN) continue;
+      const w = n.split(' ');
+      const ventanas = new Set();
+      for (let i = 0; i + 6 <= w.length; i++) ventanas.add(w.slice(i, i + 6).join(' '));
+      parrafos.push({ f, n, ventanas });
+    }
+  }
+  const pares = [];
+  for (let i = 0; i < parrafos.length; i++) {
+    for (let j = i + 1; j < parrafos.length; j++) {
+      const a = parrafos[i], b = parrafos[j];
+      if (a.f === b.f) continue;
+      const [chico, grande] = a.ventanas.size <= b.ventanas.size ? [a, b] : [b, a];
+      let comunes = 0;
+      for (const v of chico.ventanas) if (grande.ventanas.has(v)) comunes++;
+      if (chico.ventanas.size && comunes / chico.ventanas.size >= PARRAFO_SIMILITUD) pares.push(`${a.f} ~ ${b.f}: «${a.n.slice(0, 60)}…»`);
+    }
+  }
+  for (const par of pares) {
+    add('P3', 'parrafo-repetido', `${par}. El mismo texto (≥${PARRAFO_MIN} caracteres) en dos documentos vivos: dejalo en uno y en el otro poné un puntero`);
+  }
+}
+
 // --- D19: TODO LO GENERADO, AL DÍA (Versión 183) ---------------------------
 // El proyecto tiene 6 generadores (estos 5 tienen --check; el sexto es generate-como-corre-stats.js) y dependen de que alguien se acuerde de
 // correrlos. "Acordate" ya falló antes acá (ver `checkDeployInterno`), y esta
@@ -1616,6 +1655,7 @@ function main() {
   checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
   checkHistoriaEnDocs();
+  checkParrafosRepetidos();
   checkHigiene(api);
   checkGestiones(api);
   checkDatosJson();
