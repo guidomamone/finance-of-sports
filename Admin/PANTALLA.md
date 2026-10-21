@@ -792,11 +792,15 @@ Texto movido sin cambios.
   entera, no solo la liga, y lleva el chip "Cuentas de la federación entera".
 - PESTAÑA LIGAS (mockup: artboards "Ligas" del artifact "Pantallas FoS"). El ranking de ingresos de los clubes de una liga
   en UN ejercicio. Vive en `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún `data/<país>/<club>-data.js`.
-  ESTADO FRÍO (se llega por el nav): sin título que repita la pestaña; un buscador (liga o país), las regiones como filtro con cuántas
-  ligas tienen datos, y una fila por país (alfabético) con sus ligas en orden de división (`tier`), cada una con "N de M · año" o "N
-  clubes · año". Eso sale de `window.RANKINGS_INDICE` (en `data/rankings/_regiones.js`, generado), así que la grilla no baja los
-  rankings. Las ligas sin datos van al final, plegadas y sin poder entrar. UNA LIGA: "← Todas las ligas", el nombre con su bandera,
-  país · división · cobertura, y los ejercicios como pastillas con cuántos clubes trae cada uno. Abajo, dos columnas (una en el
+  ESTADO FRÍO (se llega por el nav): un buscador (liga o país); filtros de deporte (solo si hay más de un deporte con datos), región y
+  «Con informes» (solo los informes propios de la liga, no el de toda Europa); y las ligas agrupadas por País (default: un país plegable por
+  fila, con sus ligas por nivel; los dos primeros abiertos, o todos si se busca), por Deporte o por Nivel (una matriz país × nivel de UN
+  deporte). Se ordena A–Z o por cantidad de ligas. La lista NO muestra cuánto hay cargado ni plata (pedido de Guido): solo nombre, nivel,
+  país, deporte y la marca de informes. Los niveles se comparan solo dentro de un país y un deporte; los estaduales de Brasil no tienen
+  nivel y quedan como están («—», al final de su país). Todo sale de `LEAGUES` y de `window.RANKINGS_INDICE` (en
+  `data/rankings/_regiones.js`, generado), así que no baja los rankings. Deporte, región, agrupación, orden e informes viven en la
+  URL (`?tab=liga&deporte=rugby&agrupar=nivel`). Las ligas sin datos van al final, plegadas y sin poder entrar. UNA LIGA: "← Todas las
+  ligas", el nombre con su bandera, país · división · deporte, y los ejercicios como pastillas (solo el año). Abajo, dos columnas (una en el
   teléfono): a la izquierda el ranking con barras horizontales en el color de cada club y el total de los cargados (sin el documento
   de cada club en la fila: demasiado texto junto; está en su ficha, en Fuentes y, si es un presupuesto o una copia, en las
   salvedades); a la derecha "De dónde sale la plata" (una barra apilada por club, colores por peso en el ranking y el bolsón sin
@@ -805,6 +809,7 @@ Texto movido sin cambios.
   ejercicio está siempre escrito y es cambiable (un ranking es (liga, EJERCICIO), nunca (liga)); el default es el ejercicio con MÁS
   clubes y no el más reciente, porque los balances tardan en publicarse; y el "N de M" solo se escribe si `leagueSizeAt()` lo sabe.
   Las banderas (no los códigos de país) son las de `COUNTRIES[...].flag`, también en las tarjetas de Inicio.
+  Las tarjetas de ranking de Inicio no llevan cuántos clubes hay cargados ni US$ por club (pedido de Guido): nombre, barra y el ejercicio.
 - SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-285, to-do 83) — por
   ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, el card
   "<club> en otra liga" (Versión 532; hasta ahí era un botón en la barra de controles), con el balance más nuevo elegido; (b) desde CUALQUIER liga, un buscador ("Sumar un

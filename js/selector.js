@@ -149,7 +149,7 @@ window.CLUB_SELECTOR = (function(){
   function nameOf(id){ return (clubs[id] && clubs[id].displayName) || idx(id).n || id; }
   // Etiqueta de una fila de Formato simplificado, traducida (mismo helper que js/liga.js).
   function tLabel(label){ var key = (window.SITE_LABEL_KEYS || {})[label]; return key ? t(key, label) : label; }
-  function countryOf(id){ return (clubs[id] && clubs[id].country) || idx(id).c || null; }
+  function countryOf(id){ return (window.nationOf && window.nationOf(id)) || idx(id).c || null; }
   function regionOf(id){ return window.regionOfCountry(countryOf(id)); }
   function sportOf(id){ return (clubs[id] && clubs[id].sport) || 'futbol'; }
   function ligasDe(id){ return (window.leaguesOfClub(id) || []).map(function(l){ return l.league; }); }

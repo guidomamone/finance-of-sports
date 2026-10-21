@@ -629,7 +629,7 @@
   // ==========================================================================
   // `moneda`, `real` y `formato` van solo cuando no son los de siempre (USD, sin ajustar, formato simplificado): un link común queda
   // corto. `a` y `b` son los dos lados de Comparar (ladoAURL()).
-  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio', 'grupo', 'sponsor', 'moneda', 'real', 'formato', 'a', 'b'];
+  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio', 'grupo', 'sponsor', 'moneda', 'real', 'formato', 'a', 'b', 'deporte', 'region', 'agrupar', 'orden', 'informes'];
   // UN LADO DE COMPARAR EN TEXTO: bloques separados por "~"; un bloque de clubes es "c.<club>:<año>,<club>:<año>" (sin año = el más
   // reciente) y uno de liga "l.<liga>.<años separados por coma>"; al final ".s" (suma) o ".p" (promedio) solo si no es el de siempre
   // (clubes suman, ligas promedian). `?tab=vs&a=c.boca-ar:2024&b=c.river-ar:2024`, `b=l.es-laliga.2025`.
@@ -682,6 +682,14 @@
     if(tab === 'liga'){
       const c = LIGA_VIEW.current();
       if(c.league){ e.liga = c.league; if(c.year) e.anio = c.year; }
+      else if(c.filtros){
+        // La lista de ligas sin liga elegida: solo lo que no es de siempre.
+        if(c.filtros.deporte) e.deporte = c.filtros.deporte;
+        if(c.filtros.region) e.region = c.filtros.region;
+        if(c.filtros.agrupar !== 'pais') e.agrupar = c.filtros.agrupar;
+        if(c.filtros.orden !== 'az') e.orden = c.filtros.orden;
+        if(c.filtros.informes) e.informes = 1;
+      }
     }
     if(tab === 'grupo' && window.GRUPO_VIEW && GRUPO_VIEW.current().grupo) e.grupo = GRUPO_VIEW.current().grupo;
     if(tab === 'sponsor' && window.SPONSOR_VIEW && SPONSOR_VIEW.current().sponsor) e.sponsor = SPONSOR_VIEW.current().sponsor;
@@ -770,7 +778,11 @@
         CLUB_SELECTOR.setReal(real);
         CLUB_SELECTOR.setLados(ladoDeURL(p.get('a')), ladoDeURL(p.get('b')));
       }
-      if(tab === 'liga') return (liga && (window.LEAGUES || {})[liga]) ? LIGA_VIEW.show(liga, anio) : LIGA_VIEW.frio();
+      if(tab === 'liga'){
+        if(liga && (window.LEAGUES || {})[liga]) return LIGA_VIEW.show(liga, anio);
+        LIGA_VIEW.setFiltros({ deporte: p.get('deporte'), region: p.get('region'), agrupar: p.get('agrupar'), orden: p.get('orden'), informes: p.get('informes') === '1' });
+        return LIGA_VIEW.frio();
+      }
       if(tab === 'grupo' && window.GRUPO_VIEW && (window.GRUPOS_INDICE || []).some(g => g.id === grupo)) return GRUPO_VIEW.show(grupo);
       // Un sponsor que no existe lo dice la propia página ("No encontramos ese sponsor"): para saberlo hay que bajar data/sponsors.js.
       if(tab === 'sponsor' && window.SPONSOR_VIEW && sponsor) return SPONSOR_VIEW.show(sponsor);

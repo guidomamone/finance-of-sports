@@ -32,7 +32,7 @@ const COUNTRIES = {
   DE: { name:'Alemania',  key:'country.DE', flag:'🇩🇪', region:'europa' },
   DK: { name:'Dinamarca', key:'country.DK', flag:'🇩🇰', region:'europa' },
   ES: { name:'España',    key:'country.ES', flag:'🇪🇸', region:'europa' },
-  GB: { name:'Inglaterra',key:'country.GB', flag:'🏴', region:'europa' },
+  GB: { name:'Inglaterra',key:'country.GB', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', region:'europa' },
   GR: { name:'Grecia',    key:'country.GR', flag:'🇬🇷', region:'europa' },
   HR: { name:'Croacia',   key:'country.HR', flag:'🇭🇷', region:'europa' },
   JP: { name:'Japón',     key:'country.JP', flag:'🇯🇵', region:'asia' },
@@ -51,7 +51,19 @@ const COUNTRIES = {
   RU: { name:'Rusia',     key:'country.RU', flag:'🇷🇺', region:'europa' },
   TR: { name:'Turquía',   key:'country.TR', flag:'🇹🇷', region:'europa' },
   EE: { name:'Estonia', key:'country.EE', flag:'🇪🇪', region:'europa' },
+  SCT: { name:'Escocia', key:'country.SCT', flag:'🏴󠁧󠁢󠁳󠁣󠁴󠁿', region:'europa' },
 };
+
+// EL PAÍS DE UNA LIGA ES EL DE SU FEDERACIÓN; el de un CLUB, donde está. `club.country` sigue siendo el estado (el sufijo del id y la carpeta
+// data/<país>/): Celtic es `celtic-gb` y vive en data/gb/, pero es de Escocia. Un club cuya nación no es la de su `country` va acá; el resto no
+// necesita entrada. Los ids no cambian. Para Gales: `WAL` en COUNTRIES, la Cymru Premier con `country:'WAL'` y cada club galés (Cardiff,
+// Swansea) en esta tabla, aunque juegue una liga inglesa.
+const CLUB_NATION = { 'celtic-gb': 'SCT' };
+function nationOf(clubId){
+  if(CLUB_NATION[clubId]) return CLUB_NATION[clubId];
+  var c = (typeof clubs !== 'undefined' && clubs[clubId]) || null;
+  return c ? c.country : null;
+}
 
 // LIGAS. id `<iso2>-<slug>` que nombra el ESCALÓN; `tier` = el escalón (1 = primera). Sin `totalClubs`: el tamaño cambia por
 // temporada y vive en LEAGUE_SIZE_BY_YEAR (data/club-leagues.js).
@@ -83,7 +95,7 @@ const LEAGUES = {
   'es-segunda':        { name:'Segunda División',      full:'Segunda División de España',          country:'ES', sport:'futbol', tier:2 },
   'gb-premierleague':  { name:'Premier League',        full:'Premier League',                      country:'GB', sport:'futbol', tier:1 },
   'gb-championship':   { name:'Championship',          full:'EFL Championship',                    country:'GB', sport:'futbol', tier:2 },
-  'gb-scottishpremiership': { name:'Premiership',       full:'Scottish Premiership',                country:'GB', sport:'futbol', tier:1 },
+  'gb-scottishpremiership': { name:'Premiership',       full:'Scottish Premiership',                country:'SCT', sport:'futbol', tier:1 },
   'gb-premiershiprugby': { name:'Premiership Rugby',   full:'Premiership Rugby',                   country:'GB', sport:'rugby',  tier:1 },
   'ee-meistriliiga':   { name:'Meistriliiga',           full:'Meistriliiga de Estonia',             country:'EE', sport:'futbol', tier:1 },
   'gr-superleague':    { name:'Super League',           full:'Super League Greece',                 country:'GR', sport:'futbol', tier:1 },
@@ -162,4 +174,6 @@ function regionOfCountry(countryId){
 window.SPORTS = SPORTS;
 window.REGIONS = REGIONS;
 window.COUNTRIES = COUNTRIES;
+window.CLUB_NATION = CLUB_NATION;
+window.nationOf = nationOf;
 window.LEAGUES = LEAGUES;

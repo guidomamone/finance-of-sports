@@ -63,7 +63,7 @@ function cargar() {
     ...archivosData(), 'js/finanzas-calc.js',
   ];
   for (const rel of files) vm.runInContext(fs.readFileSync(path.join(ROOT, rel), 'utf8'), ctx, { filename: rel });
-  const api = vm.runInContext('({ computeYearGeneric, toDisplayValue, yearMetaFor, clubs, LEAGUES, COUNTRIES, generic: window.CLUB_GENERIC_DATA || {} })', ctx);
+  const api = vm.runInContext('({ computeYearGeneric, toDisplayValue, yearMetaFor, clubs, LEAGUES, COUNTRIES, nationOf, generic: window.CLUB_GENERIC_DATA || {} })', ctx);
   // data/rankings/<liga>.js (los escribe generate-rankings.js, que corre antes)
   const rk = { window: {} };
   for (const f of fs.readdirSync(path.join(ROOT, 'data/rankings')).filter((f) => !f.startsWith('_') && f.endsWith('.js'))) vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'data/rankings', f), 'utf8'), rk);
@@ -168,7 +168,7 @@ function construir(api, plantilla) {
     const club = api.clubs[id]; const nombre = club.displayName || club.name;
     const filas = datos[id]; const t = textosClub(api, id, nombre, filas);
     const liga = ligaDeClub(api, id); const L = liga && api.LEAGUES[liga];
-    const pais = (api.COUNTRIES[club.country] || {}).name || club.country;
+    const pais = (api.COUNTRIES[api.nationOf(id)] || {}).name || club.country;
     const tr = filas.map((f) => `<tr><td>${esc(f.etiqueta)}</td><td class="n">${fmt(f.ingresos)}</td><td class="n">${f.resultado < 0 ? '−' : ''}${fmt(f.resultado)}</td></tr>`).join('\n');
     const cuerpo = `<h1>${esc(nombre)}: ingresos y resultado por ejercicio</h1>
 <p>${esc(nombre)} (${esc(pais)}${L ? `, ${esc(L.full || L.name)}` : ''}). ${esc(t.desc)}</p>

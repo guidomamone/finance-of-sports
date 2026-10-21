@@ -577,3 +577,12 @@ Turnover impreso (11,6): el cierre contra el resultado operativo impreso (−£1
 
 CATEGORÍA (prompt): una revaluación no realizada de una inversión a valor razonable (Fair value movements), sin cobro, va a other_income con nota que lo aclare; nunca a asset_sales ni a una venta.
 EJEMPLO-CATEGORÍA: bathrugby-gb | revenue | Fair value movements | other_income
+
+## REGLA: el país de una liga es el de su federación; el de un club, donde está (`CLUB_NATION`, `data/leagues.js`)
+
+`club.country` es el estado: el sufijo del id y la carpeta `data/<país>/` (Celtic es `celtic-gb` y vive en `data/gb/`). El país que se muestra y con el que se
+agrupa es otra cosa: una liga lleva el de su federación (`country:'SCT'` en la Premiership escocesa; la pirámide inglesa sigue en `GB`, que se llama Inglaterra) y un club,
+el de `nationOf(clubId)`: la tabla `CLUB_NATION` solo lista a los clubes cuya nación no es la de su `country` (hoy, Celtic → `SCT`), y los ids no cambian. Para Gales: sumar
+`WAL` a `COUNTRIES` (con su clave en `data/lang/en.js`), la Cymru Premier con `country:'WAL'` y cada club galés (Cardiff, Swansea) a `CLUB_NATION`, aunque juegue en la pirámide
+inglesa: su ficha dice Gales y su liga, la inglesa. Medido al hacerlo: un club afectado (Celtic) y una liga (la Premiership escocesa); cambian las agrupaciones por país de Ligas y
+del selector, el subtítulo de Finanzas y la página generada del club. `tools/generate-club-pages.js` usa `nationOf`. No hay condición nueva en `tools/`.
