@@ -1,0 +1,576 @@
+id,club_id,fiscal_year,fecha,tipo,lado,rotulo,campo,antes,despues,moneda,motivo_es,motivo_en,commit,anterior_al_registro
+agf-dk-2021-4bba679,agf-dk,2021,2026-10-20,total,,,deuda,4.627,0,DKK,,,4bba679,false
+estudianteslp-ar-2024-36196e8,estudianteslp-ar,2024,2026-10-20,categoria,ingresos,Resultado por revaluación de jugadores,categoria,player_sales,other_income,ARS,,,36196e8,false
+estudianteslp-ar-2023-36196e8,estudianteslp-ar,2023,2026-10-20,categoria,ingresos,Resultado por revaluación de jugadores,categoria,player_sales,other_income,ARS,,,36196e8,false
+godoycruz-ar-2020-48840ad,godoycruz-ar,2020,2026-10-20,categoria,ingresos,Ingreso por Derechos de Tanteo,categoria,player_sales,other_income,ARS,,,48840ad,false
+hoffenheim-de-2025-b073ba8,hoffenheim-de,2025,2026-10-20,total,,,resultado,-0.189156,1.10027,EUR,,,b073ba8,false
+hoffenheim-de-2024-b073ba8,hoffenheim-de,2024,2026-10-20,total,,,resultado,-0.368366,1.268,EUR,,,b073ba8,false
+mechelen-be-2025-4bba679,mechelen-be,2025,2026-10-20,estructura,ingresos,"Andere bedrijfsopbrengsten — resto sin desglosar (probablemente resultado neto de transferencias, según jaarverslag)",fila,8.5361,,EUR,,,4bba679,false
+mechelen-be-2025-4bba679,mechelen-be,2025,2026-10-20,estructura,ingresos,Andere bedrijfsopbrengsten — resto sin desglosar,fila,,8.5361,EUR,,,4bba679,false
+mechelen-be-2025-4bba679,mechelen-be,2025,2026-10-20,estructura,gastos,Afschrijvingen op immateriële vaste activa (spelersregistratierechten),fila,-1.112255,,EUR,,,4bba679,false
+mechelen-be-2025-4bba679,mechelen-be,2025,2026-10-20,estructura,gastos,"Afschrijvingen op immateriële vaste activa (concessies, octrooien, licenties, knowhow, merken)",fila,,-1.112255,EUR,,,4bba679,false
+rosariocentral-ar-2025-4bba679,rosariocentral-ar,2025,2026-10-20,categoria,ingresos,Ingresos por ventas tiendas,categoria,other_income,sponsorship_commercial,ARS,,,4bba679,false
+silkeborg-dk-2025-162c3a2,silkeborg-dk,2025,2026-10-20,estructura,gastos,"Depreciation, amortisation and impairment losses",fila,-12.67,,DKK,,,162c3a2,false
+silkeborg-dk-2025-162c3a2,silkeborg-dk,2025,2026-10-20,estructura,gastos,Amortisation of intangible assets (player registrations),fila,,-6.502,DKK,,,162c3a2,false
+silkeborg-dk-2025-162c3a2,silkeborg-dk,2025,2026-10-20,estructura,gastos,"Depreciation of property, plant and equipment",fila,,-6.168,DKK,,,162c3a2,false
+stgallen-ch-2022-9bc972d,stgallen-ch,2022,2026-10-20,estructura,ingresos,Entschädigung von FCSG Event AG,fila,9.8,,CHF,,,9bc972d,false
+stgallen-ch-2022-9bc972d,stgallen-ch,2022,2026-10-20,estructura,gastos,Entschädigung an FCSG AG,fila,-9.8,,CHF,,,9bc972d,false
+stgallen-ch-2022-9bc972d,stgallen-ch,2022,2026-10-20,estructura,,,total_ingresos,42.469,32.669,CHF,,,9bc972d,false
+stgallen-ch-2022-9bc972d,stgallen-ch,2022,2026-10-20,estructura,,,total_gastos,40.576,30.776,CHF,,,9bc972d,false
+stgallen-ch-2019-310809b,stgallen-ch,2019,2026-10-20,estructura,ingresos,Entschädigung von FCSG Event AG,fila,6.405,,CHF,,,310809b,false
+stgallen-ch-2019-310809b,stgallen-ch,2019,2026-10-20,estructura,gastos,Entschädigung an FCSG AG,fila,-6.405,,CHF,,,310809b,false
+stgallen-ch-2019-310809b,stgallen-ch,2019,2026-10-20,estructura,,,total_ingresos,34.815,28.41,CHF,,,310809b,false
+stgallen-ch-2019-310809b,stgallen-ch,2019,2026-10-20,estructura,,,total_gastos,35.647,29.242,CHF,,,310809b,false
+stuttgart-de-2024-4c5dfef,stuttgart-de,2024,2026-10-20,total,,,resultado,15.443276,15.532851,EUR,,,4c5dfef,false
+stuttgart-de-2023-4c5dfef,stuttgart-de,2023,2026-10-20,total,,,resultado,0.6793,0.777012,EUR,,,4c5dfef,false
+viborg-dk-2025-162c3a2,viborg-dk,2025,2026-10-20,estructura,gastos,"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment",fila,-18.375737,,DKK,,,162c3a2,false
+viborg-dk-2025-162c3a2,viborg-dk,2025,2026-10-20,estructura,gastos,Amortisation during the year (player registrations),fila,,-15.751691,DKK,,,162c3a2,false
+viborg-dk-2025-162c3a2,viborg-dk,2025,2026-10-20,estructura,gastos,"Depreciation during the year (property, plant and equipment)",fila,,-2.624046,DKK,,,162c3a2,false
+bologna-it-2025-cc68019,bologna-it,2025,2026-10-17,total,,,deuda,19.355606,,EUR,,,cc68019,true
+bologna-it-2024-cc68019,bologna-it,2024,2026-10-17,total,,,deuda,28.839624,,EUR,,,cc68019,true
+bologna-it-2019-cc68019,bologna-it,2019,2026-10-17,total,,,deuda,23.446528,,EUR,,,cc68019,true
+bologna-it-2018-cc68019,bologna-it,2018,2026-10-17,total,,,deuda,16.850492,,EUR,,,cc68019,true
+chievoverona-it-2016-cc68019,chievoverona-it,2016,2026-10-17,total,,,deuda,18.277235,,EUR,,,cc68019,true
+chievoverona-it-2015-cc68019,chievoverona-it,2015,2026-10-17,total,,,deuda,17.705538,,EUR,,,cc68019,true
+cuiaba-br-2023-fd75478,cuiaba-br,2023,2026-10-17,total,,,caja,21.108242,12.840574,BRL,,,fd75478,true
+estorilpraia-pt-2025-fd75478,estorilpraia-pt,2025,2026-10-17,total,,,caja,4.846825,0.983221,EUR,,,fd75478,true
+estorilpraia-pt-2024-fd75478,estorilpraia-pt,2024,2026-10-17,total,,,caja,8.517811,0.318763,EUR,,,fd75478,true
+genoa-it-2023-cc68019,genoa-it,2023,2026-10-17,total,,,deuda,20.667997,,EUR,,,cc68019,true
+genoa-it-2022-cc68019,genoa-it,2022,2026-10-17,total,,,deuda,15.678033,,EUR,,,cc68019,true
+goias-br-2009-fd75478,goias-br,2009,2026-10-17,total,,,caja,7.505452,,BRL,,,fd75478,true
+goias-br-2008-fd75478,goias-br,2008,2026-10-17,total,,,caja,5.176767,,BRL,,,fd75478,true
+leixoes-pt-2024-fd75478,leixoes-pt,2024,2026-10-17,total,,,caja,2.578377,0.051788,EUR,,,fd75478,true
+monza-it-2024-d5af990,monza-it,2024,2026-10-17,total,,,deuda,13.5,0,EUR,,,d5af990,true
+moreirense-pt-2023-fd75478,moreirense-pt,2023,2026-10-17,total,,,caja,4.881129,2.294662,EUR,,,fd75478,true
+moreirense-pt-2022-fd75478,moreirense-pt,2022,2026-10-17,total,,,caja,4.901227,1.366448,EUR,,,fd75478,true
+parma-it-2017-cc68019,parma-it,2017,2026-10-17,total,,,deuda,0.031888,,EUR,,,cc68019,true
+sportingcp-pt-2023-fd75478,sportingcp-pt,2023,2026-10-17,total,,,caja,68.348,8.633,EUR,,,fd75478,true
+sportingcp-pt-2022-fd75478,sportingcp-pt,2022,2026-10-17,total,,,caja,62.85,4.886,EUR,,,fd75478,true
+sportingcp-pt-2021-fd75478,sportingcp-pt,2021,2026-10-17,total,,,caja,48.214,9.642,EUR,,,fd75478,true
+sportingcp-pt-2020-fd75478,sportingcp-pt,2020,2026-10-17,total,,,caja,65.911,15.416,EUR,,,fd75478,true
+sportingcp-pt-2012-fd75478,sportingcp-pt,2012,2026-10-17,total,,,caja,17.972,0.064,EUR,,,fd75478,true
+sportingcp-pt-2007-ef61461,sportingcp-pt,2007,2026-10-17,total,,,deuda,33,,EUR,,,ef61461,true
+sportingcp-pt-2006-ef61461,sportingcp-pt,2006,2026-10-17,total,,,deuda,33,,EUR,,,ef61461,true
+sportingcp-pt-2005-ef61461,sportingcp-pt,2005,2026-10-17,total,,,deuda,15,,EUR,,,ef61461,true
+sportingcp-pt-2004-ef61461,sportingcp-pt,2004,2026-10-17,total,,,deuda,0.005,,EUR,,,ef61461,true
+sportingcp-pt-2003-ef61461,sportingcp-pt,2003,2026-10-17,total,,,deuda,0.017396,,EUR,,,ef61461,true
+sportingcp-pt-2002-ef61461,sportingcp-pt,2002,2026-10-17,total,,,deuda,24.486,,EUR,,,ef61461,true
+sportingcp-pt-2000-ef61461,sportingcp-pt,2000,2026-10-17,total,,,deuda,900,,PTE,,,ef61461,true
+fortalezaceif-co-2020-04519a9,fortalezaceif-co,2020,2026-10-15,categoria,gastos,Sena,categoria,admin_general_expense,wages_squad,COP,,,04519a9,true
+olympiacos-gr-2025-cb40c97,olympiacos-gr,2025,2026-10-15,categoria,gastos,Εισφορές κοινωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,cb40c97,true
+olympiacos-gr-2024-ba5b5ed,olympiacos-gr,2024,2026-10-15,categoria,gastos,Εισφορές κοινωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,ba5b5ed,true
+olympiacos-gr-2023-98ea5d6,olympiacos-gr,2023,2026-10-15,categoria,gastos,Εισφορές κοινωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,98ea5d6,true
+olympiacos-gr-2022-757d4af,olympiacos-gr,2022,2026-10-15,categoria,gastos,Εισφορές κοινωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,757d4af,true
+olympiacos-gr-2021-b3c1afa,olympiacos-gr,2021,2026-10-15,categoria,gastos,Εισφορέσκονωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,b3c1afa,true
+olympiacos-gr-2020-04df576,olympiacos-gr,2020,2026-10-15,categoria,gastos,Εισφορεκκοινωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,04df576,true
+olympiacos-gr-2019-d98987c,olympiacos-gr,2019,2026-10-15,categoria,gastos,Εισφορές κοινωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,d98987c,true
+olympiacos-gr-2018-36c8bb8,olympiacos-gr,2018,2026-10-15,categoria,gastos,Εισφορές κοινωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,36c8bb8,true
+olympiacos-gr-2017-3083dc2,olympiacos-gr,2017,2026-10-15,categoria,gastos,Εισφορές κοινωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,3083dc2,true
+olympiacos-gr-2016-f52e75a,olympiacos-gr,2016,2026-10-15,categoria,gastos,Εισφορές κοινωνικής ασφάλισης,categoria,wages_squad,admin_general_expense,EUR,,,f52e75a,true
+paok-gr-2025-c1d124a,paok-gr,2025,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,c1d124a,true
+paok-gr-2025-c1d124a,paok-gr,2025,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,c1d124a,true
+paok-gr-2025-c1d124a,paok-gr,2025,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,c1d124a,true
+paok-gr-2025-c1d124a,paok-gr,2025,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,c1d124a,true
+paok-gr-2025-c1d124a,paok-gr,2025,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,c1d124a,true
+paok-gr-2025-c1d124a,paok-gr,2025,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,c1d124a,true
+paok-gr-2024-2fb73b8,paok-gr,2024,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,2fb73b8,true
+paok-gr-2024-2fb73b8,paok-gr,2024,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,2fb73b8,true
+paok-gr-2024-2fb73b8,paok-gr,2024,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,2fb73b8,true
+paok-gr-2024-2fb73b8,paok-gr,2024,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,2fb73b8,true
+paok-gr-2024-2fb73b8,paok-gr,2024,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,2fb73b8,true
+paok-gr-2024-2fb73b8,paok-gr,2024,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,2fb73b8,true
+paok-gr-2023-5d7386b,paok-gr,2023,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,5d7386b,true
+paok-gr-2023-5d7386b,paok-gr,2023,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,5d7386b,true
+paok-gr-2023-5d7386b,paok-gr,2023,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,5d7386b,true
+paok-gr-2023-5d7386b,paok-gr,2023,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,5d7386b,true
+paok-gr-2023-5d7386b,paok-gr,2023,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,5d7386b,true
+paok-gr-2023-5d7386b,paok-gr,2023,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,5d7386b,true
+paok-gr-2022-cb3c539,paok-gr,2022,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,cb3c539,true
+paok-gr-2022-cb3c539,paok-gr,2022,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,cb3c539,true
+paok-gr-2022-cb3c539,paok-gr,2022,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,cb3c539,true
+paok-gr-2022-cb3c539,paok-gr,2022,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,cb3c539,true
+paok-gr-2022-cb3c539,paok-gr,2022,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,cb3c539,true
+paok-gr-2022-cb3c539,paok-gr,2022,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,cb3c539,true
+paok-gr-2021-448f0c3,paok-gr,2021,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,448f0c3,true
+paok-gr-2021-448f0c3,paok-gr,2021,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,448f0c3,true
+paok-gr-2021-448f0c3,paok-gr,2021,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,448f0c3,true
+paok-gr-2021-448f0c3,paok-gr,2021,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,448f0c3,true
+paok-gr-2021-448f0c3,paok-gr,2021,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,448f0c3,true
+paok-gr-2021-448f0c3,paok-gr,2021,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,448f0c3,true
+paok-gr-2019-32195f8,paok-gr,2019,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,32195f8,true
+paok-gr-2019-32195f8,paok-gr,2019,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,32195f8,true
+paok-gr-2019-32195f8,paok-gr,2019,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,32195f8,true
+paok-gr-2017-c7dea56,paok-gr,2017,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,c7dea56,true
+paok-gr-2017-c7dea56,paok-gr,2017,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,c7dea56,true
+paok-gr-2017-c7dea56,paok-gr,2017,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,c7dea56,true
+paok-gr-2017-c7dea56,paok-gr,2017,2026-10-15,categoria,gastos,Αμοιβές προσωπικού,categoria,wages_squad,admin_general_expense,EUR,,,c7dea56,true
+paok-gr-2017-c7dea56,paok-gr,2017,2026-10-15,categoria,gastos,Αμοιβές τρίτων,categoria,wages_squad,admin_general_expense,EUR,,,c7dea56,true
+paok-gr-2017-c7dea56,paok-gr,2017,2026-10-15,categoria,gastos,Αποσβέσεις,categoria,player_amortisation,depreciation,EUR,,,c7dea56,true
+atalanta-it-2022-05ed996,atalanta-it,2022,2026-10-08,retirado,,,suma_ingresos,120.30974,,EUR,,,05ed996,true
+atalanta-it-2022-05ed996,atalanta-it,2022,2026-10-08,retirado,,,suma_gastos,-103.185283,,EUR,,,05ed996,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,contributi in conto esercizio,fila,13.111905,,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,altri,fila,42.840695,,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Provvidenze e contributi in c/esercizio,fila,,3.111905,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Paracadute retrocessione,fila,,10,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Proventi da sponsors ufficiali e istituzionali,fila,,32.294362,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Proventi da sponsors tecnici e fornitori ufficiali,fila,,0.414693,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Proventi pubblicitari e altri sponsors,fila,,3.499979,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Proventi televisivi campionato,fila,,2.098216,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Proventi televisivi Coppa Italia,fila,,0.799,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Proventi da contratto RAI Com,fila,,0.030146,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Ricavi da cessione temporanea prestaz calciat.,fila,,0.70825,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,"Plusv, da cessione diritti pluriennali calciatori",fila,,1.396012,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,"Premi di valorizz, preparaz, contr solid e altri calc",fila,,0.665823,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Ricavi da attività varie del SG,fila,,0.066271,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Affitti attivi,fila,,0.034047,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Ricavi commerciali e royalties,fila,,0.107452,EUR,,,23f9800,true
+cremonese-it-2024-23f9800,cremonese-it,2024,2026-10-08,estructura,ingresos,Altri ricavi e proventi,fila,,0.726444,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,contributi in conto esercizio,fila,5.778315,,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,altri,fila,21.651613,,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Provvidenze e contributi in c/esercizio,fila,,5.778315,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Proventi da sponsors ufficiali e istituzionali,fila,,17.210186,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Proventi da sponsors tecnici e fornitori ufficiali,fila,,0.354575,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Proventi pubblicitari e altri sponsors,fila,,0.980636,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Concessioni radio televisive,fila,,2.736953,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Proventi da contratto RAI Com,fila,,0.036636,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Ricavi da cessione temporanea prestaz calciat.,fila,,0.0135,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,"Plusv, da cessione diritti pluriennali calciatori",fila,,0.005,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,"Premi di valorizz, preparaz, contr solid e altri calc",fila,,0.182105,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Affitti attivi,fila,,0.028414,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Ricavi commerciali e royalties,fila,,0.031222,EUR,,,23f9800,true
+cremonese-it-2022-23f9800,cremonese-it,2022,2026-10-08,estructura,ingresos,Altri ricavi e proventi,fila,,0.072386,EUR,,,23f9800,true
+parma-it-2022-9c752ff,parma-it,2022,2026-10-08,recarga,ingresos,,suma_ingresos,32.507794,32.507794,EUR,,,9c752ff,true
+parma-it-2022-9c752ff,parma-it,2022,2026-10-08,recarga,gastos,,suma_gastos,-130.490721,-130.490721,EUR,,,9c752ff,true
+asroma-it-2018-ad06eb3,asroma-it,2018,2026-10-07,estructura,ingresos,Gestione operativa netta calciatori,fila,45.922,,EUR,,,ad06eb3,true
+asroma-it-2018-ad06eb3,asroma-it,2018,2026-10-07,estructura,ingresos,Ricavi da gestione dei diritti pluriennali prestazioni calciatori,fila,,69.561,EUR,,,ad06eb3,true
+asroma-it-2018-ad06eb3,asroma-it,2018,2026-10-07,estructura,gastos,Oneri da gestione dei diritti pluriennali prestazioni calciatori,fila,,-23.639,EUR,,,ad06eb3,true
+asroma-it-2018-ad06eb3,asroma-it,2018,2026-10-07,estructura,,,total_ingresos,296.87,320.509,EUR,,,ad06eb3,true
+asroma-it-2018-ad06eb3,asroma-it,2018,2026-10-07,estructura,,,total_gastos,289.796,313.435,EUR,,,ad06eb3,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,contributi in conto esercizio,fila,5.47336,,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,altri,fila,50.276342,,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Provvidenze e contributi dalla mutualità,fila,,3.81965,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Contributo solidarietà,fila,,1.58371,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Contributo progetto solidarietà lega,fila,,0.07,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Proventi da sponsors ufficiali e istituzionali,fila,,37.607005,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Proventi da sponsors tecnici e fornitori ufficiali,fila,,0.901037,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Proventi pubblicitari e altri sponsors,fila,,3.996392,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Proventi televisivi campionato,fila,,0.894677,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Proventi televisivi Coppa Italia,fila,,0.478553,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Proventi da contratto RAI Com,fila,,0.030146,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Ricavi da cessione temporanea prestaz calciat.,fila,,0.8145,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,"Plusv, da cessione diritti pluriennali calciatori",fila,,3.014719,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,"Premi di valorizz, preparaz, contr solid e altri calc",fila,,1.851697,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Ricavi da attività varie del SG,fila,,0.068245,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Affitti attivi,fila,,0.03,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Ricavi commerciali e royalties,fila,,0.422299,EUR,,,0b12291,true
+cremonese-it-2025-0b12291,cremonese-it,2025,2026-10-07,estructura,ingresos,Altri ricavi e proventi,fila,,0.167072,EUR,,,0b12291,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,b) plusvalenze,fila,2.384681,,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,f) Contributi in conto esercizio,fila,15.410208,,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,a) Derivanti da attività accessorie (sin TV),fila,34.08654,,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,Proventi da sponsorizzazioni,fila,,19.305,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,Proventi pubblicitari,fila,,7.096,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,Proventi commerciali e royalties,fila,,0.291,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,Plusvalenze da cessione diritti pluriennali prestazioni dei calciatori,fila,,2.385,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,Proventi da cessioni temporanee calciatori,fila,,1.627,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,Proventi Lega non audiovisivi,fila,,15.507,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,ingresos,Proventi diversi,fila,,5.671,EUR,,,612e979,true
+sassuolo-it-2025-612e979,sassuolo-it,2025,2026-10-07,estructura,,,total_ingresos,70.698429,70.699,EUR,,,612e979,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,contributi in conto esercizio,fila,2.046228,,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,altri,fila,70.918956,,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Contributi in conto esercizio,fila,,3.85834,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Proventi da sponsorizzazioni,fila,,2.2,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Proventi pubblicitari,fila,,5.925334,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Proventi commerciali e royalties,fila,,0.773293,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Proventi da cessioni diritti audiovisivi,fila,,36.160511,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Ricavi da cessione temporanea prestazione calciatori,fila,,0.0153,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Plusvalenze da cessione calciatori,fila,,16.928151,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Altri proventi da trasferimento calciatori,fila,,0.534468,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Rimborsi assicurativi,fila,,0.116158,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,ingresos,Altri ricavi e proventi,fila,,6.453626,EUR,,,763f0dd,true
+udinese-it-2022-763f0dd,udinese-it,2022,2026-10-07,estructura,,,total_ingresos,78.080241,78.080238,EUR,,,763f0dd,true
+boca-ar-2025-30ab531,boca-ar,2025,2026-10-06,categoria,gastos,Estadio — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2025-30ab531,boca-ar,2025,2026-10-06,categoria,gastos,Departamento de educación física — Remuneraciones y cargas sociales,categoria,wages_squad,youth_other_sports_expense,ARS,,,30ab531,true
+boca-ar-2025-30ab531,boca-ar,2025,2026-10-06,categoria,gastos,Fútbol juvenil — Remuneraciones y cargas sociales,categoria,wages_squad,youth_other_sports_expense,ARS,,,30ab531,true
+boca-ar-2025-30ab531,boca-ar,2025,2026-10-06,categoria,gastos,Departamento de básquet — Remuneraciones y cargas sociales,categoria,wages_squad,youth_other_sports_expense,ARS,,,30ab531,true
+boca-ar-2025-30ab531,boca-ar,2025,2026-10-06,categoria,gastos,Casa Amarilla — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2025-30ab531,boca-ar,2025,2026-10-06,categoria,gastos,Departamento médico — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2025-30ab531,boca-ar,2025,2026-10-06,categoria,gastos,Gastos de estructura operativa — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2023-30ab531,boca-ar,2023,2026-10-06,categoria,gastos,Estadio — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2023-30ab531,boca-ar,2023,2026-10-06,categoria,gastos,Departamento de educación física — Remuneraciones y cargas sociales,categoria,wages_squad,youth_other_sports_expense,ARS,,,30ab531,true
+boca-ar-2023-30ab531,boca-ar,2023,2026-10-06,categoria,gastos,Fútbol juvenil — Remuneraciones y cargas sociales,categoria,wages_squad,youth_other_sports_expense,ARS,,,30ab531,true
+boca-ar-2023-30ab531,boca-ar,2023,2026-10-06,categoria,gastos,Departamento de básquet — Remuneraciones y cargas sociales,categoria,wages_squad,youth_other_sports_expense,ARS,,,30ab531,true
+boca-ar-2023-30ab531,boca-ar,2023,2026-10-06,categoria,gastos,Casa Amarilla — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2023-30ab531,boca-ar,2023,2026-10-06,categoria,gastos,Departamento médico — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2023-30ab531,boca-ar,2023,2026-10-06,categoria,gastos,Gastos de estructura operativa — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2022-30ab531,boca-ar,2022,2026-10-06,categoria,gastos,Estadio — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2022-30ab531,boca-ar,2022,2026-10-06,categoria,gastos,Departamento de educación física — Remuneraciones y cargas sociales,categoria,wages_squad,youth_other_sports_expense,ARS,,,30ab531,true
+boca-ar-2022-30ab531,boca-ar,2022,2026-10-06,categoria,gastos,Fútbol juvenil — Remuneraciones y cargas sociales,categoria,wages_squad,youth_other_sports_expense,ARS,,,30ab531,true
+boca-ar-2022-30ab531,boca-ar,2022,2026-10-06,categoria,gastos,Departamento de básquet — Remuneraciones y cargas sociales,categoria,wages_squad,youth_other_sports_expense,ARS,,,30ab531,true
+boca-ar-2022-30ab531,boca-ar,2022,2026-10-06,categoria,gastos,Casa Amarilla — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2022-30ab531,boca-ar,2022,2026-10-06,categoria,gastos,Departamento médico — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+boca-ar-2022-30ab531,boca-ar,2022,2026-10-06,categoria,gastos,Gastos de estructura operativa — Remuneraciones y cargas sociales,categoria,wages_squad,admin_general_expense,ARS,,,30ab531,true
+racing-ar-2027-4d58d36,racing-ar,2027,2026-10-06,estructura,ingresos,Ingresos de otras secciones,fila,4359.330552,,ARS,,,4d58d36,true
+racing-ar-2027-4d58d36,racing-ar,2027,2026-10-06,estructura,ingresos,Cobranzas de otras actividades deportivas,fila,,1151.782091,ARS,,,4d58d36,true
+racing-ar-2027-4d58d36,racing-ar,2027,2026-10-06,estructura,ingresos,Cobranzas de instituciones educativas,fila,,3207.548462,ARS,,,4d58d36,true
+racing-ar-2027-4d58d36,racing-ar,2027,2026-10-06,estructura,gastos,Egresos de otras secciones,fila,-5981.254752,,ARS,,,4d58d36,true
+racing-ar-2027-4d58d36,racing-ar,2027,2026-10-06,estructura,gastos,Pago de remuneraciones otras actividades deportivas,fila,,-389.374038,ARS,,,4d58d36,true
+racing-ar-2027-4d58d36,racing-ar,2027,2026-10-06,estructura,gastos,Pago de gastos otras actividades deportivas,fila,,-1970.613103,ARS,,,4d58d36,true
+racing-ar-2027-4d58d36,racing-ar,2027,2026-10-06,estructura,gastos,Pago de remuneraciones de instituciones educativas,fila,,-2789.252081,ARS,,,4d58d36,true
+racing-ar-2027-4d58d36,racing-ar,2027,2026-10-06,estructura,gastos,Pago de gastos de instituciones educativas,fila,,-832.01553,ARS,,,4d58d36,true
+racing-ar-2026-4d58d36,racing-ar,2026,2026-10-06,estructura,ingresos,Ingresos de otras secciones,fila,2289.790438,,ARS,,,4d58d36,true
+racing-ar-2026-4d58d36,racing-ar,2026,2026-10-06,estructura,ingresos,Cobranzas de otras actividades deportivas,fila,,599.188852,ARS,,,4d58d36,true
+racing-ar-2026-4d58d36,racing-ar,2026,2026-10-06,estructura,ingresos,Cobranzas de instituciones educativas,fila,,1690.601585,ARS,,,4d58d36,true
+racing-ar-2026-4d58d36,racing-ar,2026,2026-10-06,estructura,gastos,Egresos de otras secciones,fila,-4732.977406,,ARS,,,4d58d36,true
+racing-ar-2026-4d58d36,racing-ar,2026,2026-10-06,estructura,gastos,Pago de remuneraciones otras actividades deportivas,fila,,-894.565507,ARS,,,4d58d36,true
+racing-ar-2026-4d58d36,racing-ar,2026,2026-10-06,estructura,gastos,Pago de gastos otras actividades deportivas,fila,,-572.029391,ARS,,,4d58d36,true
+racing-ar-2026-4d58d36,racing-ar,2026,2026-10-06,estructura,gastos,Pago de remuneraciones de instituciones educativas,fila,,-2743.247721,ARS,,,4d58d36,true
+racing-ar-2026-4d58d36,racing-ar,2026,2026-10-06,estructura,gastos,Pago de gastos de instituciones educativas,fila,,-523.134788,ARS,,,4d58d36,true
+river-ar-2024-4d58d36,river-ar,2024,2026-10-06,categoria,gastos,Educación,categoria,youth_other_sports_expense,education_expense,ARS,,,4d58d36,true
+river-ar-2021-4d58d36,river-ar,2021,2026-10-06,categoria,gastos,Educación,categoria,youth_other_sports_expense,education_expense,ARS,,,4d58d36,true
+aellarissa-gr-2025-f02e3af,aellarissa-gr,2025,2026-10-05,categoria,gastos,Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2025-f02e3af,aellarissa-gr,2025,2026-10-05,categoria,,,total_gastos,2.718314,2.502209,EUR,,,f02e3af,true
+aellarissa-gr-2024-f02e3af,aellarissa-gr,2024,2026-10-05,categoria,gastos,(-) Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2024-f02e3af,aellarissa-gr,2024,2026-10-05,categoria,,,total_gastos,3.568785,1.936681,EUR,,,f02e3af,true
+aellarissa-gr-2023-f02e3af,aellarissa-gr,2023,2026-10-05,categoria,gastos,(-) Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2023-f988e2e,aellarissa-gr,2023,2026-10-05,recarga,ingresos,,suma_ingresos,1.370526,1.370526,EUR,,,f988e2e,true
+aellarissa-gr-2023-f988e2e,aellarissa-gr,2023,2026-10-05,recarga,gastos,,suma_gastos,-2.737531,-2.737531,EUR,,,f988e2e,true
+aellarissa-gr-2022-f02e3af,aellarissa-gr,2022,2026-10-05,categoria,gastos,(-) Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2022-f02e3af,aellarissa-gr,2022,2026-10-05,categoria,,,total_gastos,2.386989,2.106599,EUR,,,f02e3af,true
+aellarissa-gr-2021-f02e3af,aellarissa-gr,2021,2026-10-05,categoria,gastos,(-) Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2021-f02e3af,aellarissa-gr,2021,2026-10-05,categoria,,,total_gastos,3.819903,3.546422,EUR,,,f02e3af,true
+aellarissa-gr-2020-f02e3af,aellarissa-gr,2020,2026-10-05,categoria,gastos,(-) Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2020-f02e3af,aellarissa-gr,2020,2026-10-05,categoria,,,total_gastos,3.312966,3.284055,EUR,,,f02e3af,true
+aellarissa-gr-2019-f02e3af,aellarissa-gr,2019,2026-10-05,categoria,gastos,(-) Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2019-f02e3af,aellarissa-gr,2019,2026-10-05,categoria,,,total_gastos,3.556419,3.534819,EUR,,,f02e3af,true
+aellarissa-gr-2018-f02e3af,aellarissa-gr,2018,2026-10-05,categoria,gastos,(-) Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2018-f02e3af,aellarissa-gr,2018,2026-10-05,categoria,,,total_gastos,2.658492,2.658101,EUR,,,f02e3af,true
+aellarissa-gr-2017-f02e3af,aellarissa-gr,2017,2026-10-05,categoria,gastos,(-) Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2017-f02e3af,aellarissa-gr,2017,2026-10-05,categoria,,,total_gastos,2.567982,2.547803,EUR,,,f02e3af,true
+aellarissa-gr-2016-f02e3af,aellarissa-gr,2016,2026-10-05,categoria,gastos,Λοιπά έξοδα και ζημιές,categoria,other_expenses,exceptional_items,EUR,,,f02e3af,true
+aellarissa-gr-2016-f02e3af,aellarissa-gr,2016,2026-10-05,categoria,,,total_gastos,1.351793,1.252202,EUR,,,f02e3af,true
+catolica-cl-2016-b32f70f,catolica-cl,2016,2026-10-05,estructura,gastos,Remuneraciones,fila,-447.549,,CLP,,,b32f70f,true
+catolica-cl-2016-b32f70f,catolica-cl,2016,2026-10-05,estructura,gastos,Remuneraciones (gastos de administración),fila,,-447.549,CLP,,,b32f70f,true
+fortalezaceif-co-2025-b32f70f,fortalezaceif-co,2025,2026-10-05,valor,gastos,Arrendamientos,importe,-1655.093,-15.715,COP,,,b32f70f,true
+fortalezaceif-co-2025-b32f70f,fortalezaceif-co,2025,2026-10-05,valor,gastos,Legales,importe,-3500.119,-39.211,COP,,,b32f70f,true
+fortalezaceif-co-2025-b32f70f,fortalezaceif-co,2025,2026-10-05,valor,gastos,Arrendamientos,fila,-15.715,,COP,,,b32f70f,true
+fortalezaceif-co-2025-b32f70f,fortalezaceif-co,2025,2026-10-05,valor,gastos,Legales,fila,-39.211,,COP,,,b32f70f,true
+fortalezaceif-co-2025-b32f70f,fortalezaceif-co,2025,2026-10-05,valor,gastos,Alquiler construcciones y edificaciones,fila,,-225.384,COP,,,b32f70f,true
+fortalezaceif-co-2025-b32f70f,fortalezaceif-co,2025,2026-10-05,valor,gastos,Alquiler maquinaria y equipo,fila,,-150.895,COP,,,b32f70f,true
+fortalezaceif-co-2025-b32f70f,fortalezaceif-co,2025,2026-10-05,valor,gastos,Alquiler Terrenos,fila,,-1278.814,COP,,,b32f70f,true
+fortalezaceif-co-2025-b32f70f,fortalezaceif-co,2025,2026-10-05,valor,gastos,Tramites y licencias,fila,,-16.891,COP,,,b32f70f,true
+fortalezaceif-co-2025-b32f70f,fortalezaceif-co,2025,2026-10-05,valor,gastos,Derechos Deportivos (7),fila,,-3483.228,COP,,,b32f70f,true
+fortalezaceif-co-2025-ed97d1d,fortalezaceif-co,2025,2026-10-05,estructura,gastos,Gastos Laborales,fila,-2234.94,,COP,,,ed97d1d,true
+fortalezaceif-co-2025-ed97d1d,fortalezaceif-co,2025,2026-10-05,estructura,gastos,Gastos Laborales (administración),fila,,-2234.94,COP,,,ed97d1d,true
+fortalezaceif-co-2024-b32f70f,fortalezaceif-co,2024,2026-10-05,valor,gastos,Legales,importe,-163.562,-2.97,COP,,,b32f70f,true
+fortalezaceif-co-2024-b32f70f,fortalezaceif-co,2024,2026-10-05,valor,gastos,Legales,fila,-2.97,,COP,,,b32f70f,true
+fortalezaceif-co-2024-b32f70f,fortalezaceif-co,2024,2026-10-05,valor,gastos,Tramites y licencias,fila,,-96.521,COP,,,b32f70f,true
+fortalezaceif-co-2024-b32f70f,fortalezaceif-co,2024,2026-10-05,valor,gastos,Derechos Deportivos (7),fila,,-67.041,COP,,,b32f70f,true
+fortalezaceif-co-2024-ed97d1d,fortalezaceif-co,2024,2026-10-05,estructura,gastos,Gastos Laborales,fila,-996.661,,COP,,,ed97d1d,true
+fortalezaceif-co-2024-ed97d1d,fortalezaceif-co,2024,2026-10-05,estructura,gastos,Gastos Laborales (administración),fila,,-996.661,COP,,,ed97d1d,true
+fortalezaceif-co-2024-ce25724,fortalezaceif-co,2024,2026-10-05,categoria,ingresos,Auxilio de arbitraje,categoria,other_income,competition_bonus,COP,,,ce25724,true
+fortalezaceif-co-2024-ce25724,fortalezaceif-co,2024,2026-10-05,categoria,ingresos,Auxilio de transporte,categoria,other_income,competition_bonus,COP,,,ce25724,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Bonificaciones,fila,-20.514,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Sueldos,fila,-278.356,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Incapacidades,fila,-6.109,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Auxilio de transporte,fila,-6.204,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Cesantías,fila,-25.249,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Intereses sobre cesantías,fila,-2.963,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Prima de servicios,fila,-25.251,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Vacaciones,fila,-27.14,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Prima extralegal,fila,-2.7,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Bonificaciones,fila,-146.841,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Aportes fondo de pensiones,fila,-37.096,,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Bonificaciones (2ª fila),fila,,-20.514,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Sueldos (administración),fila,,-278.356,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Incapacidades (administración),fila,,-6.109,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Auxilio de transporte (administración),fila,,-6.204,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Cesantías (administración),fila,,-25.249,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Intereses sobre cesantías (administración),fila,,-2.963,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Prima de servicios (administración),fila,,-25.251,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Vacaciones (administración),fila,,-27.14,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Prima extralegal (administración),fila,,-2.7,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Bonificaciones (administración),fila,,-146.841,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ed97d1d,fortalezaceif-co,2023,2026-10-05,estructura,gastos,Aportes fondo de pensiones (administración),fila,,-37.096,COP,,,ed97d1d,true
+fortalezaceif-co-2023-ce25724,fortalezaceif-co,2023,2026-10-05,categoria,ingresos,Auxilio de arbitraje,categoria,other_income,competition_bonus,COP,,,ce25724,true
+fortalezaceif-co-2023-ce25724,fortalezaceif-co,2023,2026-10-05,categoria,ingresos,Auxilio de transporte,fila,11.013,,COP,,,ce25724,true
+fortalezaceif-co-2023-ce25724,fortalezaceif-co,2023,2026-10-05,categoria,ingresos,Auxilio de transporte (Dimayor),fila,,11.013,COP,,,ce25724,true
+fortalezaceif-co-2022-ed97d1d,fortalezaceif-co,2022,2026-10-05,estructura,gastos,Gastos Laborales,fila,-502.281,,COP,,,ed97d1d,true
+fortalezaceif-co-2022-ed97d1d,fortalezaceif-co,2022,2026-10-05,estructura,gastos,Gastos Laborales (administración),fila,,-502.281,COP,,,ed97d1d,true
+fortalezaceif-co-2021-1d1b54c,fortalezaceif-co,2021,2026-10-05,total,,,deuda,102.513,295.846,COP,,,1d1b54c,true
+fortalezaceif-co-2021-ed97d1d,fortalezaceif-co,2021,2026-10-05,estructura,gastos,Gastos Laborales,fila,-517.345,,COP,,,ed97d1d,true
+fortalezaceif-co-2021-ed97d1d,fortalezaceif-co,2021,2026-10-05,estructura,gastos,Gastos Laborales (administración),fila,,-517.345,COP,,,ed97d1d,true
+fortalezaceif-co-2021-ce25724,fortalezaceif-co,2021,2026-10-05,categoria,ingresos,Auxilio hotelero(*),categoria,other_income,competition_bonus,COP,,,ce25724,true
+fortalezaceif-co-2021-ce25724,fortalezaceif-co,2021,2026-10-05,categoria,ingresos,Auxilio de arbitraje(*),categoria,other_income,competition_bonus,COP,,,ce25724,true
+fortalezaceif-co-2021-ce25724,fortalezaceif-co,2021,2026-10-05,categoria,ingresos,Auxilio de transporte(*),categoria,other_income,competition_bonus,COP,,,ce25724,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Sueldos,fila,-257.425,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Bonificaciones,fila,-29.9,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Fondos Pensión,fila,-29.598,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Prima De Servicios,fila,-24.177,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Cesantías,fila,-23.265,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Vacaciones,fila,-11.833,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Aportes Cajas De Compensación Familiar,fila,-10.93,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Auxilio De Transporte,fila,-4.501,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Intereses Sobre Cesantías,fila,-2.788,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Aportes A Entidades Promotoras De Salud,fila,-1.63,,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Sueldos (administración),fila,,-257.425,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Bonificaciones (administración),fila,,-29.9,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Fondos Pensión (administración),fila,,-29.598,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Prima De Servicios (administración),fila,,-24.177,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Cesantías (administración),fila,,-23.265,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Vacaciones (administración),fila,,-11.833,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Aportes Cajas De Compensación Familiar (administración),fila,,-10.93,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Auxilio De Transporte (administración),fila,,-4.501,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Intereses Sobre Cesantías (administración),fila,,-2.788,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ed97d1d,fortalezaceif-co,2020,2026-10-05,estructura,gastos,Aportes A Entidades Promotoras De Salud (administración),fila,,-1.63,COP,,,ed97d1d,true
+fortalezaceif-co-2020-ce25724,fortalezaceif-co,2020,2026-10-05,categoria,ingresos,Auxilio Transporte,categoria,other_income,competition_bonus,COP,,,ce25724,true
+fortalezaceif-co-2019-ed97d1d,fortalezaceif-co,2019,2026-10-05,estructura,gastos,Gastos Laborales,fila,-526.714,,COP,,,ed97d1d,true
+fortalezaceif-co-2019-ed97d1d,fortalezaceif-co,2019,2026-10-05,estructura,gastos,Gastos Laborales (administración),fila,,-526.714,COP,,,ed97d1d,true
+fortalezaceif-co-2019-ce25724,fortalezaceif-co,2019,2026-10-05,categoria,ingresos,Auxilio Transporte,categoria,other_income,competition_bonus,COP,,,ce25724,true
+goias-br-2025-175554d,goias-br,2025,2026-10-05,categoria,ingresos,Outras Receitas (b),fila,1.439848,,BRL,,,175554d,true
+goias-br-2025-175554d,goias-br,2025,2026-10-05,categoria,gastos,Despesas com Earn In (a),categoria,other_expenses,exceptional_items,BRL,,,175554d,true
+goias-br-2025-175554d,goias-br,2025,2026-10-05,categoria,gastos,Outras Receitas (b),fila,,1.439848,BRL,,,175554d,true
+goias-br-2025-175554d,goias-br,2025,2026-10-05,categoria,,,total_ingresos,46.814472,45.374624,BRL,,,175554d,true
+goias-br-2025-175554d,goias-br,2025,2026-10-05,categoria,,,total_gastos,142.154644,134.176779,BRL,,,175554d,true
+goias-br-2016-b32f70f,goias-br,2016,2026-10-05,recarga,ingresos,,suma_ingresos,83.023374,83.023376,BRL,,,b32f70f,true
+goias-br-2016-b32f70f,goias-br,2016,2026-10-05,recarga,gastos,,suma_gastos,-63.985424,-63.985425,BRL,,,b32f70f,true
+goias-br-2013-383ae09,goias-br,2013,2026-10-05,recarga,ingresos,,suma_ingresos,51.074726,51.074726,BRL,,,383ae09,true
+goias-br-2013-383ae09,goias-br,2013,2026-10-05,recarga,gastos,,suma_gastos,-54.518463,-54.518463,BRL,,,383ae09,true
+goias-br-2012-383ae09,goias-br,2012,2026-10-05,valor,gastos,Despesas com futebol,fila,-35.830361,,BRL,,,383ae09,true
+goias-br-2012-383ae09,goias-br,2012,2026-10-05,valor,gastos,Despesas administrativas,importe,-0.147616,-0.524193,BRL,,,383ae09,true
+goias-br-2012-383ae09,goias-br,2012,2026-10-05,valor,gastos,Serviços de terceiros,importe,-1.880989,-4.095731,BRL,,,383ae09,true
+goias-br-2012-383ae09,goias-br,2012,2026-10-05,valor,gastos,Despesas com jogos,fila,,-3.384073,BRL,,,383ae09,true
+goias-br-2012-383ae09,goias-br,2012,2026-10-05,valor,gastos,Despesas com pessoal - futebol profissional,fila,,-25.454582,BRL,,,383ae09,true
+goias-br-2012-383ae09,goias-br,2012,2026-10-05,valor,gastos,Despesas com pessoal - social e administrativo,fila,,-4.180386,BRL,,,383ae09,true
+goias-br-2012-383ae09,goias-br,2012,2026-10-05,valor,gastos,Provisões para contingências,fila,,-0.22,BRL,,,383ae09,true
+juventus-it-2006-b32f70f,juventus-it,2006,2026-10-05,estructura,ingresos,e) Other revenues and income,fila,51.002569,,EUR,,,b32f70f,true
+juventus-it-2006-b32f70f,juventus-it,2006,2026-10-05,estructura,ingresos,"Option rights granted to RTI (Mediaset), TV 2007/08-2008/09",fila,,30,EUR,,,b32f70f,true
+juventus-it-2006-b32f70f,juventus-it,2006,2026-10-05,estructura,ingresos,e) Other revenues and income (resto),fila,,21.002569,EUR,,,b32f70f,true
+novorizontino-br-2019-ee14499,novorizontino-br,2019,2026-10-05,total,,,deuda,32.32,32.323,BRL,,,ee14499,true
+argentinosjuniors-ar-2018-c48e5e8,argentinosjuniors-ar,2018,2026-10-04,categoria,gastos,Sueldos y cargas sociales (Estadio y predios),categoria,match_organisation_expense,admin_general_expense,ARS,,,c48e5e8,true
+argentinosjuniors-ar-2017-c48e5e8,argentinosjuniors-ar,2017,2026-10-04,categoria,gastos,Sueldos y cargas sociales (Estadio y predios),categoria,match_organisation_expense,admin_general_expense,ARS,,,c48e5e8,true
+argentinosjuniors-ar-2016-c48e5e8,argentinosjuniors-ar,2016,2026-10-04,categoria,gastos,Sueldos y cargas sociales (Estadio y predios),categoria,match_organisation_expense,admin_general_expense,ARS,,,c48e5e8,true
+argentinosjuniors-ar-2015-c48e5e8,argentinosjuniors-ar,2015,2026-10-04,categoria,gastos,Estadio y predios,categoria,match_organisation_expense,admin_general_expense,ARS,,,c48e5e8,true
+estudianteslp-ar-2024-494405a,estudianteslp-ar,2024,2026-10-04,categoria,gastos,Reconocimientos y premios,categoria,match_organisation_expense,wages_squad,ARS,,,494405a,true
+estudianteslp-ar-2023-494405a,estudianteslp-ar,2023,2026-10-04,categoria,gastos,Reconocimientos y premios,categoria,match_organisation_expense,wages_squad,ARS,,,494405a,true
+estudianteslp-ar-2022-494405a,estudianteslp-ar,2022,2026-10-04,categoria,gastos,Reconocimientos y premios,categoria,match_organisation_expense,wages_squad,ARS,,,494405a,true
+fortalezaceif-co-2017-a9694ad,fortalezaceif-co,2017,2026-10-04,recarga,ingresos,,suma_ingresos,5319.897,5319.897,COP,,,a9694ad,true
+fortalezaceif-co-2017-a9694ad,fortalezaceif-co,2017,2026-10-04,recarga,gastos,,suma_gastos,-3677.624,-3677.627,COP,,,a9694ad,true
+fortalezaceif-co-2017-a9694ad,fortalezaceif-co,2017,2026-10-04,recarga,,,total_gastos,3628.13,3628.133,COP,,,a9694ad,true
+river-ar-2024-d546bf6,river-ar,2024,2026-10-04,estructura,ingresos,Fútbol Profesional,fila,138100.487166,,ARS,,,d546bf6,true
+river-ar-2024-d546bf6,river-ar,2024,2026-10-04,estructura,ingresos,"Venta, préstamos de jugadores, derechos de formación y otros",fila,,34976.634475,ARS,,,d546bf6,true
+river-ar-2024-d546bf6,river-ar,2024,2026-10-04,estructura,ingresos,Televisión,fila,,12013.955106,ARS,,,d546bf6,true
+river-ar-2024-d546bf6,river-ar,2024,2026-10-04,estructura,ingresos,Publicidad,fila,,38954.967989,ARS,,,d546bf6,true
+river-ar-2024-d546bf6,river-ar,2024,2026-10-04,estructura,ingresos,Ingresos torneos nacionales e internacionales,fila,,52154.929596,ARS,,,d546bf6,true
+river-ar-2021-d546bf6,river-ar,2021,2026-10-04,estructura,ingresos,Fútbol Profesional,fila,6856.111878,,ARS,,,d546bf6,true
+river-ar-2021-d546bf6,river-ar,2021,2026-10-04,estructura,ingresos,"Venta, préstamos de jugadores, derechos de formación y otros",fila,,3101.042241,ARS,,,d546bf6,true
+river-ar-2021-d546bf6,river-ar,2021,2026-10-04,estructura,ingresos,Televisión,fila,,2280.386274,ARS,,,d546bf6,true
+river-ar-2021-d546bf6,river-ar,2021,2026-10-04,estructura,ingresos,Publicidad,fila,,1472.349199,ARS,,,d546bf6,true
+river-ar-2021-d546bf6,river-ar,2021,2026-10-04,estructura,ingresos,Ingresos torneos nacionales e internacionales,fila,,2.334164,ARS,,,d546bf6,true
+sanlorenzo-ar-2014-c48e5e8,sanlorenzo-ar,2014,2026-10-04,categoria,gastos,Ciudad deportiva (gasto),categoria,other_expenses,admin_general_expense,ARS,,,c48e5e8,true
+sanlorenzo-ar-2014-c48e5e8,sanlorenzo-ar,2014,2026-10-04,categoria,gastos,Subsedes,categoria,other_expenses,admin_general_expense,ARS,,,c48e5e8,true
+catolica-cl-2018-6a87c76,catolica-cl,2018,2026-10-02,categoria,gastos,Indemnizaciones,categoria,other_expenses,admin_general_expense,CLP,,,6a87c76,true
+catolica-cl-2024-b47a8bb,catolica-cl,2024,2026-10-01,recarga,ingresos,,suma_ingresos,21223.767,21223.767,CLP,,,b47a8bb,true
+catolica-cl-2024-b47a8bb,catolica-cl,2024,2026-10-01,recarga,gastos,,suma_gastos,-21072.707,-21072.707,CLP,,,b47a8bb,true
+catolica-cl-2024-b47a8bb,catolica-cl,2024,2026-10-01,recarga,,,tipo_de_cambio,992.12,996.48,,,,b47a8bb,true
+catolica-cl-2023-5d17475,catolica-cl,2023,2026-10-01,recarga,ingresos,,suma_ingresos,16208.365,16208.365,CLP,,,5d17475,true
+catolica-cl-2023-5d17475,catolica-cl,2023,2026-10-01,recarga,gastos,,suma_gastos,-18898.194,-18898.194,CLP,,,5d17475,true
+catolica-cl-2023-5d17475,catolica-cl,2023,2026-10-01,recarga,,,tipo_de_cambio,884.59,877.12,,,,5d17475,true
+catolica-cl-2022-db4a530,catolica-cl,2022,2026-10-01,recarga,ingresos,,suma_ingresos,23810.928,23810.928,CLP,,,db4a530,true
+catolica-cl-2022-db4a530,catolica-cl,2022,2026-10-01,recarga,gastos,,suma_gastos,-21410.964,-21410.964,CLP,,,db4a530,true
+catolica-cl-2022-db4a530,catolica-cl,2022,2026-10-01,recarga,,,tipo_de_cambio,859.51,855.86,,,,db4a530,true
+river-ar-2021-dd49be3,river-ar,2021,2026-09-28,valor,gastos,Amortización de software,importe,-12.326254,-12.326234,ARS,,,dd49be3,true
+botafogo-br-2025-c84c2d9,botafogo-br,2025,2026-09-26,categoria,ingresos,Mecanismo de solidariedade (recebido),categoria,youth_football,player_sales,BRL,,,c84c2d9,true
+botafogo-br-2024-c84c2d9,botafogo-br,2024,2026-09-26,categoria,ingresos,Mecanismo de Solidariedade (recebido),categoria,youth_football,player_sales,BRL,,,c84c2d9,true
+botafogo-br-2023-c84c2d9,botafogo-br,2023,2026-09-26,categoria,ingresos,Mecanismo de solidariedade (recebido),categoria,youth_football,player_sales,BRL,,,c84c2d9,true
+cruzeiro-br-2025-c84c2d9,cruzeiro-br,2025,2026-09-26,categoria,ingresos,Mecanismo de solidariedade (recebido),categoria,youth_football,player_sales,BRL,,,c84c2d9,true
+cruzeiro-br-2024-c84c2d9,cruzeiro-br,2024,2026-09-26,categoria,ingresos,Mecanismo de solidariedade (recebido),categoria,youth_football,player_sales,BRL,,,c84c2d9,true
+cruzeiro-br-2023-c84c2d9,cruzeiro-br,2023,2026-09-26,categoria,ingresos,Mecanismo de solidariedade (recebido),categoria,youth_football,player_sales,BRL,,,c84c2d9,true
+cruzeiro-br-2022-c84c2d9,cruzeiro-br,2022,2026-09-26,categoria,ingresos,Mecanismo de solidariedade (recebido),categoria,youth_football,player_sales,BRL,,,c84c2d9,true
+gremio-br-2024-c84c2d9,gremio-br,2024,2026-09-26,categoria,ingresos,Mecanismo de Solidariedade,categoria,youth_football,player_sales,BRL,,,c84c2d9,true
+racing-ar-2027-c84c2d9,racing-ar,2027,2026-09-26,categoria,ingresos,Cobros de derechos de formación y mecanismo de solidaridad,categoria,youth_football,player_sales,ARS,,,c84c2d9,true
+racing-ar-2026-c84c2d9,racing-ar,2026,2026-09-26,categoria,ingresos,Cobros de derechos de formación y mecanismo de solidaridad,categoria,youth_football,player_sales,ARS,,,c84c2d9,true
+velez-ar-2025-c84c2d9,velez-ar,2025,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2024-c84c2d9,velez-ar,2024,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2023-c84c2d9,velez-ar,2023,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2022-c84c2d9,velez-ar,2022,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2021-c84c2d9,velez-ar,2021,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2020-c84c2d9,velez-ar,2020,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2019-c84c2d9,velez-ar,2019,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2018-c84c2d9,velez-ar,2018,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2017-c84c2d9,velez-ar,2017,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2016-c84c2d9,velez-ar,2016,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+velez-ar-2015-c84c2d9,velez-ar,2015,2026-09-26,categoria,ingresos,Derechos de formación,categoria,other_income,player_sales,ARS,,,c84c2d9,true
+athleticclub-es-2025-e0a26bd,athleticclub-es,2025,2026-09-22,estructura,ingresos,Ingresos deportivos,fila,139.462259,,EUR,,,e0a26bd,true
+athleticclub-es-2025-e0a26bd,athleticclub-es,2025,2026-09-22,estructura,ingresos,Ingresos por competición,fila,,38.981106,EUR,,,e0a26bd,true
+athleticclub-es-2025-e0a26bd,athleticclub-es,2025,2026-09-22,estructura,ingresos,Ingresos por retransmisión,fila,,72.713424,EUR,,,e0a26bd,true
+athleticclub-es-2025-e0a26bd,athleticclub-es,2025,2026-09-22,estructura,ingresos,Ingresos de comercialización y publicidad,fila,,14.675772,EUR,,,e0a26bd,true
+athleticclub-es-2025-e0a26bd,athleticclub-es,2025,2026-09-22,estructura,ingresos,Ingresos San Mamés VIP Area,fila,,8.847445,EUR,,,e0a26bd,true
+athleticclub-es-2025-e0a26bd,athleticclub-es,2025,2026-09-22,estructura,ingresos,Eventos y otros (incluye la final de la UEFA Europa League en San Mamés),fila,,4.244512,EUR,,,e0a26bd,true
+estudianteslp-ar-2025-e0a26bd,estudianteslp-ar,2025,2026-09-22,categoria,ingresos,Cuotas colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+estudianteslp-ar-2025-e0a26bd,estudianteslp-ar,2025,2026-09-22,categoria,ingresos,Aranceles deportivos y recreativos,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2025-e0a26bd,estudianteslp-ar,2025,2026-09-22,categoria,ingresos,Colonia de vacaciones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2025-e0a26bd,estudianteslp-ar,2025,2026-09-22,categoria,ingresos,Recursos por temporada de verano,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2024-e0a26bd,estudianteslp-ar,2024,2026-09-22,categoria,ingresos,Cuotas colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+estudianteslp-ar-2024-e0a26bd,estudianteslp-ar,2024,2026-09-22,categoria,ingresos,Aranceles deportivos y recreativos,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2024-e0a26bd,estudianteslp-ar,2024,2026-09-22,categoria,ingresos,Colonia de vacaciones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2024-e0a26bd,estudianteslp-ar,2024,2026-09-22,categoria,ingresos,Recursos por temporada de verano,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2024-e0a26bd,estudianteslp-ar,2024,2026-09-22,categoria,ingresos,Licitaciones de palco,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+estudianteslp-ar-2023-e0a26bd,estudianteslp-ar,2023,2026-09-22,categoria,ingresos,Cuotas colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+estudianteslp-ar-2023-e0a26bd,estudianteslp-ar,2023,2026-09-22,categoria,ingresos,Aranceles deportivos y recreativos,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2023-e0a26bd,estudianteslp-ar,2023,2026-09-22,categoria,ingresos,Recursos por temporada de verano,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2023-e0a26bd,estudianteslp-ar,2023,2026-09-22,categoria,ingresos,Colonia de vacaciones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2023-e0a26bd,estudianteslp-ar,2023,2026-09-22,categoria,ingresos,Licitaciones de palco,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+estudianteslp-ar-2022-e0a26bd,estudianteslp-ar,2022,2026-09-22,categoria,ingresos,Cuotas colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+estudianteslp-ar-2022-e0a26bd,estudianteslp-ar,2022,2026-09-22,categoria,ingresos,Aranceles deportivos y recreativos,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2022-e0a26bd,estudianteslp-ar,2022,2026-09-22,categoria,ingresos,Colonia de vacaciones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+estudianteslp-ar-2022-e0a26bd,estudianteslp-ar,2022,2026-09-22,categoria,ingresos,Recursos por temporada de verano,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+independiente-ar-2024-e0a26bd,independiente-ar,2024,2026-09-22,categoria,ingresos,Departamento Educación Física,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+independiente-ar-2024-e0a26bd,independiente-ar,2024,2026-09-22,categoria,ingresos,Complejo de Tenis,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+independiente-ar-2024-e0a26bd,independiente-ar,2024,2026-09-22,categoria,ingresos,Centro Educativo,categoria,other_income,education,ARS,,,e0a26bd,true
+independiente-ar-2024-e0a26bd,independiente-ar,2024,2026-09-22,categoria,ingresos,Complejo Polideportivo Wilde,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+independiente-ar-2024-e0a26bd,independiente-ar,2024,2026-09-22,categoria,ingresos,"Estadio (concesiones, no recaudación de partidos)",categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+independiente-ar-2024-ef39bc5,independiente-ar,2024,2026-09-22,categoria,gastos,Centro Educativo (gasto),categoria,youth_other_sports_expense,education_expense,ARS,,,ef39bc5,true
+instituto-ar-2024-e0a26bd,instituto-ar,2024,2026-09-22,categoria,ingresos,Centros educativos,categoria,other_income,education,ARS,,,e0a26bd,true
+instituto-ar-2024-e0a26bd,instituto-ar,2024,2026-09-22,categoria,ingresos,Recursos predio La Agustina,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Remuneraciones y cargas (Básquet/La Agustina/Sede/Colegio/Tienda),fila,-1435.840818,,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Seguros (Colegio),categoria,youth_other_sports_expense,education_expense,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Honorarios (Básquet/La Agustina/Sede/Colegio),fila,-1118.866174,,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Diversos (Básquet/La Agustina/Sede/Colegio/Tienda),fila,-713.029106,,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Mantenimiento de bienes de uso (La Agustina/Sede/Colegio),fila,-704.788042,,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,"Servicios de energía, agua, gas, etc. (La Agustina/Sede/Colegio/Tienda)",fila,-105.19861,,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Remuneraciones y cargas (Colegio),fila,,-979.100475,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Remuneraciones y cargas (Básquet/La Agustina/Sede/Tienda),fila,,-456.740343,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Honorarios (Colegio),fila,,-80.466336,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Honorarios (Básquet/La Agustina/Sede),fila,,-1038.399838,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Diversos (Colegio),fila,,-73.67118,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Diversos (Básquet/La Agustina/Sede/Tienda),fila,,-639.357926,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Mantenimiento de bienes de uso (Colegio),fila,,-145.746239,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,Mantenimiento de bienes de uso (La Agustina/Sede),fila,,-559.041803,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,"Servicios de energía, agua, gas, etc. (Colegio)",fila,,-6.010492,ARS,,,ef39bc5,true
+instituto-ar-2024-ef39bc5,instituto-ar,2024,2026-09-22,categoria,gastos,"Servicios de energía, agua, gas, etc. (La Agustina/Sede/Tienda)",fila,,-99.188118,ARS,,,ef39bc5,true
+racing-ar-2027-e0a26bd,racing-ar,2027,2026-09-22,categoria,ingresos,Ingresos de otras secciones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+racing-ar-2026-e0a26bd,racing-ar,2026,2026-09-22,categoria,ingresos,Ingresos de otras secciones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+racing-ar-2025-e0a26bd,racing-ar,2025,2026-09-22,categoria,ingresos,Ingresos colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2024-e0a26bd,racing-ar,2024,2026-09-22,categoria,ingresos,Ingresos colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2021-e0a26bd,racing-ar,2021,2026-09-22,categoria,ingresos,Ingresos Colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2020-e0a26bd,racing-ar,2020,2026-09-22,categoria,ingresos,Ingresos Colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2019-e0a26bd,racing-ar,2019,2026-09-22,categoria,ingresos,Cobranza de Ingresos de Otras Secciones Deportivas,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+racing-ar-2018-e0a26bd,racing-ar,2018,2026-09-22,categoria,ingresos,Ingresos Colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2018-ef39bc5,racing-ar,2018,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,ARS,,,ef39bc5,true
+racing-ar-2017-e0a26bd,racing-ar,2017,2026-09-22,categoria,ingresos,Ingresos Colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2017-ef39bc5,racing-ar,2017,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,ARS,,,ef39bc5,true
+racing-ar-2016-e0a26bd,racing-ar,2016,2026-09-22,categoria,ingresos,Ingresos Colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2016-ef39bc5,racing-ar,2016,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,ARS,,,ef39bc5,true
+racing-ar-2015-e0a26bd,racing-ar,2015,2026-09-22,categoria,ingresos,Ingresos Colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2015-ef39bc5,racing-ar,2015,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,ARS,,,ef39bc5,true
+racing-ar-2014-e0a26bd,racing-ar,2014,2026-09-22,categoria,ingresos,Ingresos Colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2014-ef39bc5,racing-ar,2014,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,ARS,,,ef39bc5,true
+racing-ar-2013-e0a26bd,racing-ar,2013,2026-09-22,categoria,ingresos,Ingresos Colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2013-ef39bc5,racing-ar,2013,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,ARS,,,ef39bc5,true
+racing-ar-2012-e0a26bd,racing-ar,2012,2026-09-22,categoria,ingresos,Ingresos Colegio,categoria,other_income,education,ARS,,,e0a26bd,true
+racing-ar-2012-ef39bc5,racing-ar,2012,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,ARS,,,ef39bc5,true
+racing-ar-2011-e0a26bd,racing-ar,2011,2026-09-22,categoria,ingresos,Ingresos colegio,categoria,other_income,education,USD,,,e0a26bd,true
+racing-ar-2011-ef39bc5,racing-ar,2011,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,USD,,,ef39bc5,true
+racing-ar-2010-e0a26bd,racing-ar,2010,2026-09-22,categoria,ingresos,Ingresos colegio,categoria,other_income,education,USD,,,e0a26bd,true
+racing-ar-2010-ef39bc5,racing-ar,2010,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,USD,,,ef39bc5,true
+racing-ar-2009-e0a26bd,racing-ar,2009,2026-09-22,categoria,ingresos,Ingresos colegio,categoria,other_income,education,USD,,,e0a26bd,true
+racing-ar-2009-ef39bc5,racing-ar,2009,2026-09-22,categoria,gastos,Colegio,categoria,admin_general_expense,education_expense,USD,,,ef39bc5,true
+river-ar-2024-e0a26bd,river-ar,2024,2026-09-22,categoria,ingresos,Educación,categoria,other_income,education,ARS,,,e0a26bd,true
+river-ar-2024-e0a26bd,river-ar,2024,2026-09-22,categoria,ingresos,Deportes y otras actividades,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+rosariocentral-ar-2023-e0a26bd,rosariocentral-ar,2023,2026-09-22,categoria,ingresos,Balneario y pileta,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+rosariocentral-ar-2023-e0a26bd,rosariocentral-ar,2023,2026-09-22,categoria,ingresos,Abonos guardería náutica,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+sanlorenzo-ar-2017-e0a26bd,sanlorenzo-ar,2017,2026-09-22,categoria,ingresos,Aranceles (ciudad deportiva),categoria,other_income,other_sports,ARS,,,e0a26bd,true
+sanlorenzo-ar-2016-e0a26bd,sanlorenzo-ar,2016,2026-09-22,categoria,ingresos,Aranceles (ciudad deportiva),categoria,other_income,other_sports,ARS,,,e0a26bd,true
+sanlorenzo-ar-2015-e0a26bd,sanlorenzo-ar,2015,2026-09-22,categoria,ingresos,Aranceles (ciudad deportiva),categoria,other_income,other_sports,ARS,,,e0a26bd,true
+sanlorenzo-ar-2014-e0a26bd,sanlorenzo-ar,2014,2026-09-22,categoria,ingresos,Ciudad deportiva,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+sanlorenzo-ar-2013-e0a26bd,sanlorenzo-ar,2013,2026-09-22,categoria,ingresos,Aranceles (ciudad deportiva),categoria,other_income,other_sports,ARS,,,e0a26bd,true
+sanlorenzo-ar-2012-e0a26bd,sanlorenzo-ar,2012,2026-09-22,categoria,ingresos,Aranceles (ciudad deportiva),categoria,other_income,other_sports,ARS,,,e0a26bd,true
+sanlorenzo-ar-2011-e0a26bd,sanlorenzo-ar,2011,2026-09-22,categoria,ingresos,Aranceles (ciudad deportiva),categoria,other_income,other_sports,ARS,,,e0a26bd,true
+union-ar-2025-e0a26bd,union-ar,2025,2026-09-22,categoria,ingresos,Departamento para la Actividad Educativa,categoria,other_income,education,ARS,,,e0a26bd,true
+union-ar-2025-e0a26bd,union-ar,2025,2026-09-22,categoria,ingresos,Ingresos de Subcomisiones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+union-ar-2024-e0a26bd,union-ar,2024,2026-09-22,categoria,ingresos,Departamento para la Actividad Educativa,categoria,other_income,education,ARS,,,e0a26bd,true
+union-ar-2024-e0a26bd,union-ar,2024,2026-09-22,categoria,ingresos,Ingresos de Subcomisiones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+union-ar-2023-e0a26bd,union-ar,2023,2026-09-22,categoria,ingresos,Departamento para la Actividad Educativa,categoria,other_income,education,ARS,,,e0a26bd,true
+union-ar-2023-e0a26bd,union-ar,2023,2026-09-22,categoria,ingresos,Ingresos de Subcomisiones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+union-ar-2023-ef39bc5,union-ar,2023,2026-09-22,categoria,gastos,Departamento para la Actividad Educativa,categoria,youth_other_sports_expense,education_expense,ARS,,,ef39bc5,true
+union-ar-2022-e0a26bd,union-ar,2022,2026-09-22,categoria,ingresos,Departamento para la Actividad Educativa,categoria,other_income,education,ARS,,,e0a26bd,true
+union-ar-2022-e0a26bd,union-ar,2022,2026-09-22,categoria,ingresos,Ingresos de Subcomisiones,categoria,other_income,other_sports,ARS,,,e0a26bd,true
+union-ar-2022-ef39bc5,union-ar,2022,2026-09-22,categoria,gastos,Departamento para la Actividad Educativa,categoria,youth_other_sports_expense,education_expense,ARS,,,ef39bc5,true
+velez-ar-2025-e0a26bd,velez-ar,2025,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2025-e0a26bd,velez-ar,2025,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2025-e0a26bd,velez-ar,2025,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2024-e0a26bd,velez-ar,2024,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2024-e0a26bd,velez-ar,2024,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2024-e0a26bd,velez-ar,2024,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2023-e0a26bd,velez-ar,2023,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2023-e0a26bd,velez-ar,2023,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2023-e0a26bd,velez-ar,2023,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2022-e0a26bd,velez-ar,2022,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2022-e0a26bd,velez-ar,2022,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2022-e0a26bd,velez-ar,2022,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2021-e0a26bd,velez-ar,2021,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2021-e0a26bd,velez-ar,2021,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2020-e0a26bd,velez-ar,2020,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2020-e0a26bd,velez-ar,2020,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2020-e0a26bd,velez-ar,2020,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2019-e0a26bd,velez-ar,2019,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2019-e0a26bd,velez-ar,2019,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2019-e0a26bd,velez-ar,2019,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2018-e0a26bd,velez-ar,2018,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2018-e0a26bd,velez-ar,2018,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2018-e0a26bd,velez-ar,2018,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2017-e0a26bd,velez-ar,2017,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2017-e0a26bd,velez-ar,2017,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2017-e0a26bd,velez-ar,2017,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2016-e0a26bd,velez-ar,2016,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2016-e0a26bd,velez-ar,2016,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2016-e0a26bd,velez-ar,2016,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2015-e0a26bd,velez-ar,2015,2026-09-22,categoria,ingresos,Uso del estadio,categoria,other_income,stadium_other,ARS,,,e0a26bd,true
+velez-ar-2015-e0a26bd,velez-ar,2015,2026-09-22,categoria,ingresos,Por servicios de enseñanza,categoria,other_income,education,ARS,,,e0a26bd,true
+velez-ar-2015-e0a26bd,velez-ar,2015,2026-09-22,categoria,ingresos,Subsidios estatales a la educación,categoria,other_income,education,ARS,,,e0a26bd,true
+argentinosjuniors-ar-2019-888f442,argentinosjuniors-ar,2019,2026-09-20,otro,,,tipo_de_cambio,42.45,,,,,888f442,true
+argentinosjuniors-ar-2018-888f442,argentinosjuniors-ar,2018,2026-09-20,otro,,,tipo_de_cambio,28.85,,,,,888f442,true
+argentinosjuniors-ar-2017-888f442,argentinosjuniors-ar,2017,2026-09-20,otro,,,tipo_de_cambio,16.8,,,,,888f442,true
+argentinosjuniors-ar-2016-888f442,argentinosjuniors-ar,2016,2026-09-20,otro,,,tipo_de_cambio,15.2,,,,,888f442,true
+argentinosjuniors-ar-2015-888f442,argentinosjuniors-ar,2015,2026-09-20,otro,,,tipo_de_cambio,9.085,,,,,888f442,true
+instituto-ar-2024-2390c7e,instituto-ar,2024,2026-09-20,recarga,ingresos,,suma_ingresos,17958.365499,17958.365499,ARS,,,2390c7e,true
+instituto-ar-2024-2390c7e,instituto-ar,2024,2026-09-20,recarga,gastos,,suma_gastos,-16769.337544,-16769.337544,ARS,,,2390c7e,true
+river-ar-2024-2390c7e,river-ar,2024,2026-09-20,estructura,gastos,Fútbol profesional,fila,-78835.612406,,ARS,,,2390c7e,true
+river-ar-2024-2390c7e,river-ar,2024,2026-09-20,estructura,gastos,Fútbol profesional — Sueldos y cargas sociales,fila,,-12889.436305,ARS,,,2390c7e,true
+river-ar-2024-2390c7e,river-ar,2024,2026-09-20,estructura,gastos,Fútbol profesional — resto (sin desglosar por la fuente),fila,,-65946.176101,ARS,,,2390c7e,true
+boca-ar-2026-661fd18,boca-ar,2026,2026-09-14,retirado,,,suma_ingresos,0,,USD,,,661fd18,true
+boca-ar-2026-661fd18,boca-ar,2026,2026-09-14,retirado,,,suma_gastos,0,,USD,,,661fd18,true
+boca-ar-2024-661fd18,boca-ar,2024,2026-09-14,retirado,,,suma_ingresos,0,,USD,,,661fd18,true
+boca-ar-2024-661fd18,boca-ar,2024,2026-09-14,retirado,,,suma_gastos,0,,USD,,,661fd18,true
+boca-ar-2023-661fd18,boca-ar,2023,2026-09-14,retirado,,,suma_ingresos,47.2,,USD,,,661fd18,true
+boca-ar-2023-661fd18,boca-ar,2023,2026-09-14,retirado,,,suma_gastos,-44.9,,USD,,,661fd18,true
+boca-ar-2022-661fd18,boca-ar,2022,2026-09-14,retirado,,,suma_ingresos,45.1,,USD,,,661fd18,true
+boca-ar-2022-661fd18,boca-ar,2022,2026-09-14,retirado,,,suma_gastos,-43.4,,USD,,,661fd18,true
+boca-ar-2021-661fd18,boca-ar,2021,2026-09-14,retirado,,,suma_ingresos,40.1,,USD,,,661fd18,true
+boca-ar-2021-661fd18,boca-ar,2021,2026-09-14,retirado,,,suma_gastos,-40.8,,USD,,,661fd18,true
+boca-ar-2019-661fd18,boca-ar,2019,2026-09-14,retirado,,,suma_ingresos,28.1,,USD,,,661fd18,true
+boca-ar-2019-661fd18,boca-ar,2019,2026-09-14,retirado,,,suma_gastos,-27.9,,USD,,,661fd18,true
+boca-ar-2018-661fd18,boca-ar,2018,2026-09-14,retirado,,,suma_ingresos,25.1,,USD,,,661fd18,true
+boca-ar-2018-661fd18,boca-ar,2018,2026-09-14,retirado,,,suma_gastos,-25.3,,USD,,,661fd18,true
+cerezoosaka-jp-2025-4b1db13,cerezoosaka-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true
+fctokyo-jp-2025-4b1db13,fctokyo-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true
+gambaosaka-jp-2025-4b1db13,gambaosaka-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true
+kashimaantlers-jp-2025-4b1db13,kashimaantlers-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true
+kawasakifrontale-jp-2025-4b1db13,kawasakifrontale-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true
+nagoyagrampus-jp-2025-4b1db13,nagoyagrampus-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true
+river-ar-2025-661fd18,river-ar,2025,2026-09-14,retirado,,,suma_ingresos,95,,USD,,,661fd18,true
+river-ar-2025-661fd18,river-ar,2025,2026-09-14,retirado,,,suma_gastos,-85,,USD,,,661fd18,true
+river-ar-2024-fb18946,river-ar,2024,2026-09-14,categoria,gastos,Fútbol profesional,categoria,other_expenses,lump_football_operations_expense,ARS,,,fb18946,true
+river-ar-2024-fb18946,river-ar,2024,2026-09-14,categoria,gastos,Educación,categoria,other_expenses,youth_other_sports_expense,ARS,,,fb18946,true
+river-ar-2024-fb18946,river-ar,2024,2026-09-14,categoria,gastos,Deportes,categoria,other_expenses,youth_other_sports_expense,ARS,,,fb18946,true
+river-ar-2024-fb18946,river-ar,2024,2026-09-14,categoria,gastos,Administración,categoria,other_expenses,admin_general_expense,ARS,,,fb18946,true
+river-ar-2024-fb18946,river-ar,2024,2026-09-14,categoria,gastos,Mantenimiento e intendencia,categoria,other_expenses,admin_general_expense,ARS,,,fb18946,true
+river-ar-2024-fb18946,river-ar,2024,2026-09-14,categoria,gastos,Servicio médico y asistencial,categoria,other_expenses,admin_general_expense,ARS,,,fb18946,true
+river-ar-2024-fb18946,river-ar,2024,2026-09-14,categoria,gastos,Socios,categoria,other_expenses,admin_general_expense,ARS,,,fb18946,true
+river-ar-2024-fb18946,river-ar,2024,2026-09-14,categoria,gastos,Museo,categoria,other_expenses,admin_general_expense,ARS,,,fb18946,true
+river-ar-2021-661fd18,river-ar,2021,2026-09-14,retirado,,,suma_ingresos,65,,USD,,,661fd18,true
+river-ar-2021-661fd18,river-ar,2021,2026-09-14,retirado,,,suma_gastos,-61,,USD,,,661fd18,true
+sanfreccehiroshima-jp-2025-4b1db13,sanfreccehiroshima-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true
+urawareddiamonds-jp-2025-4b1db13,urawareddiamonds-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true
+visselkobe-jp-2025-4b1db13,visselkobe-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true
+yokohamafmarinos-jp-2025-4b1db13,yokohamafmarinos-jp,2025,2026-09-14,categoria,ingresos,"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",categoria,other_income,lump_football_operations,JPY,,,4b1db13,true

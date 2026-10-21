@@ -168,3 +168,6 @@ Admin/sourcing/Inglaterra/uefa-ecfil-2025.md
 
 # tools/package.json (to-do 241): @resvg/resvg-js para las imágenes og/. Se instala con `cd tools && npm install`.
 tools/node_modules/
+
+# tools/generar-correcciones.mjs: caché de lo ya comparado (to-do 247); se reconstruye solo
+Generados/.cache-correcciones.json

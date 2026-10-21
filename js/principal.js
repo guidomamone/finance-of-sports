@@ -132,6 +132,7 @@
     if(window.FIN_MULTI && window.FIN_GESTION) FIN_GESTION.render(currentClub);
     if(window.FIN_ESTRUCTURA) FIN_ESTRUCTURA.render(currentClub, FIN_SEL.years());
     if(window.FIN_AUDITORIA) FIN_AUDITORIA.render(currentClub, FIN_SEL.years());
+    if(window.FIN_CORRECCIONES) FIN_CORRECCIONES.render(currentClub, FIN_SEL.years());
     if(window.FIN_CITAR) FIN_CITAR.render(currentClub, FIN_SEL.years());
     if(window.FIN_CONTEXTO) FIN_CONTEXTO.render(currentClub, FIN_SEL.years());
     if(window.FIN_REAL_UI) FIN_REAL_UI.render(currentClub, FIN_SEL.years());

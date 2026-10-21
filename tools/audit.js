@@ -803,6 +803,7 @@ const GENERADORES = [
   ['generate-sponsors.js',      'data/sponsors.js (sponsors y marcas de cada liga)', 'sponsors-desfasado'], // to-do 273; une equipos a clubes del sitio
   ['generar-data.mjs',          'los data/<país>/<id>-data.js (se generan de su JSON: nunca a mano)', 'json-js-desfasado'], // to-do 245: el JSON es la fuente
   ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v1.json)', 'json-no-valida'],
+  ['generar-correcciones.mjs',  'data/correcciones/ (el registro público de correcciones, to-do 247)', 'correcciones-desfasado'],
 ];
 function checkGenerados() {
   for (const [script, que, code] of GENERADORES) {
@@ -814,6 +815,16 @@ function checkGenerados() {
       add('P1', code, `${que} quedó desactualizado. Corré: node tools/${script}${detalle ? ' — ' + detalle : ''}`);
     }
   }
+}
+
+// to-do 247: un commit que corrige un dato publicado (importe, categoría, filas, totales, caja/deuda, moneda, fuente, perímetro) lleva el trailer
+// `Corrige: <motivo en una frase>` (o una línea en Admin/registros/correcciones.jsonl). Sin eso el registro público dice «Motivo no registrado».
+function checkCorreccionesSinMotivo() {
+  if (!fs.existsSync(path.join(ROOT, 'tools/generar-correcciones.mjs'))) return;
+  try {
+    const lista = JSON.parse(execSync('node tools/generar-correcciones.mjs --sin-motivo', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 1 << 26 }).toString());
+    for (const { commit, clubs } of lista) add('P2', 'correccion-sin-motivo', `el commit ${commit} corrige datos publicados (${clubs.slice(0, 4).join(', ')}${clubs.length > 4 ? `, +${clubs.length - 4} más` : ''}) sin trailer \`Corrige:\` ni línea en Admin/registros/correcciones.jsonl: el registro público dirá «Motivo no registrado»`);
+  } catch (e) { /* si el generador falla, lo dice correcciones-desfasado */ }
 }
 
 // --- D18: los rankings precalculados (Versión 182, to-dos 23(c) y 33) ------
@@ -1567,6 +1578,7 @@ function main() {
   checkColisionSourcing(api);
   checkLigasPorEjercicio(api);
   checkGenerados();
+  checkCorreccionesSinMotivo();
   checkRankings(api);
   checkCategorizacion(api);
   checkEscala(api);

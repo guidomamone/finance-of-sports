@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Correcciones | El deporte en Números</title>
+<meta name="description" content="El registro público de correcciones de financeofsports.com: cada vez que se corrige un dato publicado, qué cambió, en qué club y ejercicio, cuándo y por qué.">
+<link rel="canonical" href="https://financeofsports.com/correcciones.html">
+<style>
+  :root{--azul:#0a2b5c;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  header{background:var(--azul);color:#fff;padding:12px 16px;}
+  .header-inner{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;}
+  .dot{width:10px;height:10px;background:var(--oro);border-radius:50%;}
+  header a{color:#fff;text-decoration:none;}
+  main{max-width:1040px;margin:0 auto;padding:28px 16px 60px;}
+  h1{font-size:34px;letter-spacing:-.02em;color:var(--azul);margin:0 0 8px;}
+  .bajada{font-size:16px;color:#45474d;margin:0 0 8px;max-width:720px;}
+  .metodo{font-size:14px;color:#45474d;margin:0 0 18px;max-width:720px;}
+  a{color:var(--azul);}
+  .barra{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:14px;}
+  .barra label{display:flex;flex-direction:column;gap:3px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);min-width:0;}
+  .barra select{font:inherit;font-size:15px;min-height:40px;max-width:100%;border:1px solid var(--border);border-radius:8px;padding:0 8px;background:#fff;color:var(--text);text-transform:none;letter-spacing:0;font-weight:400;}
+  .barra .chk{flex-direction:row;align-items:center;gap:8px;text-transform:none;letter-spacing:0;font-size:14px;font-weight:400;color:var(--text);min-height:40px;}
+  .barra .chk input{width:20px;height:20px;}
+  .barra button{min-height:40px;border:1px solid var(--border);background:#fff;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;cursor:pointer;}
+  .fila-info{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;justify-content:space-between;margin:0 0 10px;font-size:14px;color:#45474d;}
+  .lista{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .ev{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;}
+  .ev-cab{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;font-size:13px;color:var(--muted);}
+  .ev-club{font-size:16px;font-weight:800;color:var(--azul);text-decoration:none;}
+  .ev-anio{font-weight:700;color:var(--text);font-size:14px;}
+  .corr-tipo{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border-radius:999px;background:#eef0f3;color:#45474d;font-size:12.5px;font-weight:700;}
+  .corr-sha{font-family:ui-monospace,Menlo,monospace;font-size:12px;}
+  .corr-previo{font-size:12px;border:1px dashed #c9c9c4;border-radius:999px;padding:0 8px;}
+  .corr-res{font-size:15px;line-height:1.5;overflow-wrap:anywhere;}
+  .corr-motivo{font-size:14.5px;color:#2b2d33;line-height:1.5;}
+  .corr-sinmotivo{color:var(--muted);font-style:italic;}
+  details summary{cursor:pointer;font-size:14px;color:var(--azul);min-height:32px;display:flex;align-items:center;}
+  .corr-tabla{border-collapse:collapse;width:100%;font-size:13.5px;margin-top:4px;}
+  .corr-tabla th,.corr-tabla td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top;overflow-wrap:anywhere;}
+  .corr-tabla th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em;}
+  .corr-tabla .num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;}
+  .tabla-wrap{overflow-x:auto;}
+  .corr-mas{font-size:13px;color:var(--muted);margin:6px 0 0;}
+  .mas{display:block;margin:14px auto 0;min-height:44px;padding:0 22px;border:1px solid var(--azul);background:#fff;color:var(--azul);border-radius:10px;font:inherit;font-size:15px;font-weight:700;cursor:pointer;}
+  .nota{font-size:13px;color:var(--muted);margin:18px 0 0;}
+  .bajar{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;margin-top:6px;}
+  .volver{display:inline-block;margin-top:24px;font-size:14px;}
+  footer{max-width:1040px;margin:0 auto;padding:20px 16px;color:var(--muted);font-size:12.5px;}
+  @media (max-width:640px){ h1{font-size:28px;} .barra label{flex:1 1 140px;} .barra select{width:100%;} }
+</style>
+</head>
+<body>
+<header><div class="header-inner"><span class="dot"></span><a href="index.html">El deporte en Números</a></div></header>
+<main>
+  <h1 data-i18n="corr.pag.title">Registro de correcciones</h1>
+  <p class="bajada" data-i18n="corr.pag.lead">Cada vez que se corrige un dato publicado queda anotado acá: qué cambió, en qué club y ejercicio, cuándo y por qué. Se genera solo del historial del proyecto; nadie lo edita a mano.</p>
+  <p class="metodo" data-i18n="corr.pag.metodo">Cuenta como corrección: un importe o una categoría que cambia en un ejercicio ya publicado, filas que se suman o se quitan, un total, la caja o la deuda que cambian, la moneda, el tipo de cambio, la fuente o el perímetro, o un ejercicio que se saca del sitio. No cuenta: un ejercicio o un club nuevo, reordenar filas, renombrar ids.</p>
+
+  <div class="barra" id="barra" hidden>
+    <label><span data-i18n="corr.pag.club">Club</span><select id="fClub"></select></label>
+    <label><span data-i18n="corr.pag.pais">País</span><select id="fPais"></select></label>
+    <label><span data-i18n="corr.pag.tipo">Tipo</span><select id="fTipo"></select></label>
+    <label><span data-i18n="corr.pag.anio">Ejercicio</span><select id="fAnio"></select></label>
+    <label class="chk"><input type="checkbox" id="fPrevio"><span id="lblPrevio" data-i18n="corr.pag.todo">Incluir lo anterior al registro</span></label>
+    <button type="button" id="fQuitar" data-i18n="corr.pag.quitar">Quitar filtros</button>
+  </div>
+  <div class="fila-info"><span id="cuenta" aria-live="polite"></span><span class="bajar"><span><span data-i18n="corr.pag.bajar">Datos abiertos</span>:</span> <a href="data/correcciones/correcciones.json" data-i18n="corr.pag.json">JSON (todo)</a> <a href="data/correcciones/correcciones.csv" data-i18n="corr.pag.csv">CSV (una fila por cambio)</a></span></div>
+  <ul class="lista" id="lista"></ul>
+  <button type="button" class="mas" id="mas" hidden data-i18n="corr.pag.mas">Ver más</button>
+  <p class="nota" data-i18n="corr.pag.nota">Los importes están en millones de la moneda en que el club presenta sus cuentas. El código junto a la fecha es la versión del dato en el historial del proyecto.</p>
+  <a class="volver" href="index.html" data-i18n="corr.pag.volver">‹ Volver al sitio</a>
+</main>
+<footer>financeofsports.com — datos públicos de clubes de fútbol.</footer>
+<script src="data/lang/langs.js?v=1537"></script>
+<script src="js/i18n.js?v=1537"></script>
+<script src="data/clubs.js?v=1537"></script>
+<script src="data/category-map.js?v=1537"></script>
+<script src="js/correcciones.js?v=1537"></script>
+<script>
+window.ASSET_V = '1537';
+(function(){
+  const C = FIN_CORRECCIONES, t = (k, es) => I18N.t(k, es), esc = C.esc;
+  const PAGINA = 40;
+  let datos = null, mostrados = PAGINA;
+  const q = new URLSearchParams(location.search);
+  const $ = id => document.getElementById(id);
+  const estado = { club: q.get('club') || '', pais: q.get('pais') || '', tipo: q.get('tipo') || '', anio: q.get('anio') || '', previo: q.get('previo') === '1' };
+
+  function opciones(sel, valores, actual, todos){
+    sel.innerHTML = `<option value="">${esc(todos)}</option>` + valores.map(([v, tx]) => `<option value="${esc(v)}"${String(v) === String(actual) ? ' selected' : ''}>${esc(tx)}</option>`).join('');
+  }
+  function armarFiltros(){
+    const ev = datos.events, todos = t('corr.pag.todos', 'Todos');
+    const ids = [...new Set(ev.map(e => e.club_id))].sort((a, b) => C.nombreClub(a).localeCompare(C.nombreClub(b)));
+    if(estado.club && !ids.includes(estado.club)) ids.push(estado.club);
+    opciones($('fClub'), ids.map(id => [id, C.nombreClub(id)]), estado.club, todos);
+    opciones($('fPais'), [...new Set(ev.map(e => e.club_id.slice(-2)))].sort().map(p => [p, p.toUpperCase()]), estado.pais, todos);
+    opciones($('fTipo'), [...new Set(ev.map(e => e.tipo))].map(x => [x, C.tipoTexto(x)]), estado.tipo, todos);
+    opciones($('fAnio'), [...new Set(ev.map(e => e.fiscal_year))].sort((a, b) => b - a).map(y => [y, y]), estado.anio, todos);
+    $('fPrevio').checked = estado.previo;
+    $('lblPrevio').textContent = t('corr.pag.todo', 'Incluir lo anterior al registro (empezó el {f})').replace('{f}', C.fechaTexto(datos.registro_desde));
+    $('barra').hidden = false;
+  }
+  function filtrados(){
+    return datos.events.filter(e => (estado.previo || !e.anterior_al_registro) && (!estado.club || e.club_id === estado.club) && (!estado.pais || e.club_id.endsWith('-' + estado.pais))
+      && (!estado.tipo || e.tipo === estado.tipo) && (!estado.anio || String(e.fiscal_year) === String(estado.anio)));
+  }
+  function url(){
+    const p = new URLSearchParams(); for(const [k, v] of Object.entries(estado)) if(v && v !== true) p.set(k, v); if(estado.previo) p.set('previo', '1');
+    history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : ''));
+  }
+  function pintar(){
+    const ev = filtrados(); url();
+    $('cuenta').textContent = t('corr.pag.n', 'Correcciones: {n}').replace('{n}', ev.length);
+    $('lista').innerHTML = ev.length ? ev.slice(0, mostrados).map(e => `<li class="ev"><div class="ev-cab"><a class="ev-club" href="index.html?tab=finanzas&amp;club=${encodeURIComponent(e.club_id)}">${esc(C.nombreClub(e.club_id))}</a>
+        <span class="ev-anio">${esc(C.etiquetaEjercicio(e.club_id, e.fiscal_year))}</span><span class="corr-tipo">${esc(C.tipoTexto(e.tipo))}</span>${C.meta(e)}</div>
+      <div class="corr-res">${esc(C.resumen(e))}</div>${C.motivoHtml(e)}
+      <details><summary>${esc(t('corr.pag.detalle', 'Ver los cambios'))}</summary><div class="tabla-wrap">${C.detalle(e, 30)}</div></details></li>`).join('')
+      : `<li class="ev">${esc(t('corr.pag.nada', 'Ninguna corrección coincide con estos filtros.'))}</li>`;
+    $('mas').hidden = ev.length <= mostrados;
+  }
+  function enlazar(){
+    for(const [id, k] of [['fClub', 'club'], ['fPais', 'pais'], ['fTipo', 'tipo'], ['fAnio', 'anio']]) $(id).onchange = () => { estado[k] = $(id).value; mostrados = PAGINA; pintar(); };
+    $('fPrevio').onchange = () => { estado.previo = $('fPrevio').checked; mostrados = PAGINA; pintar(); };
+    $('fQuitar').onclick = () => { Object.assign(estado, { club: '', pais: '', tipo: '', anio: '', previo: false }); armarFiltros(); mostrados = PAGINA; pintar(); };
+    $('mas').onclick = () => { mostrados += PAGINA; pintar(); };
+  }
+  I18N.init().then(() => C.cargar('correcciones')).then(d => {
+    if(!d){ $('cuenta').textContent = 'No se pudo cargar el registro.'; return; }
+    datos = d; armarFiltros(); enlazar(); pintar();
+  });
+  I18N.onChange(() => { if(datos){ armarFiltros(); pintar(); } });
+})();
+</script>
+</body>
+</html>
