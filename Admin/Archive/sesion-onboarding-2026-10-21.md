@@ -511,8 +511,8 @@ Unos US$ 12,3 en total contando los US$ 3,29 de Pipeline 12: pasé el tope de US
 - **(d)** Url del depósito (`dokumentUrl` de regnskaber.virk.dk, con `http://`) en 10 fuentes, con `fuente.mjs --url`: Fredericia 2021-25, København 2025, Nordsjælland 2025, Vejle 2025, Brøndby 2021 y SønderjyskE 2024-09-30. En Fredericia 2023 y Brøndby 2021, que tienen dos presentaciones idénticas, va la primera.
 
 ### Qué queda (para TODO)
-- **(c) Emmen 2019-20 y 2020-21:** no se puede transcribir. El PDF F.04 tiene 7 páginas, todas en el `.md`, y no trae el informe del auditor: solo dice que la jaarrekening de FC Emmen B.V. lleva accountantsverklaring (`.md` L309 en 2020-21). Hace falta la jaarrekening completa (depósito de KvK, que es pago) → Sourcing. Las líneas `falta_transcripcion` están bien.
-- **(d), el resto de las fuentes danesas sin url:** AGF 2020-21, Brøndby 2020, København 2024, Fredericia 2019 y 2020, Midtjylland 2019 y 2020, Nordsjælland 2024, Randers 2022-23, Silkeborg 2024 y 2025, SønderjyskE 2022, Vejle 2024 y Viborg 2024 y 2025. No están en la tabla de `datos.md` y no son XHTML del depósito → Sourcing, si se quiere la url (mismo método por CVR).
+- **(c) Emmen 2019-20 y 2020-21:** no se puede transcribir. El PDF F.04 tiene 7 páginas, todas en el `.md`, y no trae el informe del auditor: solo dice que la jaarrekening de FC Emmen B.V. lleva accountantsverklaring (`.md` L309 en 2020-21). Hace falta la jaarrekening completa (depósito de KvK, que es pago) → Sourcing. Las líneas `falta_transcripcion` están bien. → TODO 359 (pregunta al club, ya en `Admin/dudas-por-club.md`)
+- **(d), el resto de las fuentes danesas sin url:** AGF 2020-21, Brøndby 2020, København 2024, Fredericia 2019 y 2020, Midtjylland 2019 y 2020, Nordsjælland 2024, Randers 2022-23, Silkeborg 2024 y 2025, SønderjyskE 2022, Vejle 2024 y Viborg 2024 y 2025. No están en la tabla de `datos.md` y no son XHTML del depósito → Sourcing, si se quiere la url (mismo método por CVR). → TODO 359
 
 ### Gasto
 US$ 0 de API (los subagentes van con tokens de sesión).
@@ -545,16 +545,16 @@ US$ 0 (RSSSF es HTML, sin IA).
 
 ### Qué queda
 - 12 clubes cuyo `-ixbrl.md` no tiene tablas (Hibernian, Bolton, Bristol Rovers, Cambridge 2024-25, Crewe, Northampton, Oxford, Peterborough, Plymouth, Rotherham, Salford y Tranmere; Blackpool y Reading igual) → TODO 356: esperan el arreglo de `xhtml-aarsrapport.mjs` (frenados-por-script, Pipeline 15).
-- Morecambe: el importe «(n )» con espacio se lee en unidades → frenados-por-script (Pipeline).
-- Ross County 2025: el aviso «registro no se actualizó, correr el lote» no cambia al correrlo → frenados (Pipeline); cola contestada.
+- Morecambe: el importe «(n )» con espacio se lee en unidades → frenados-por-script (Pipeline) → TODO 356.
+- Ross County 2025: el aviso «registro no se actualizó, correr el lote» no cambia al correrlo → frenados (Pipeline); cola contestada → TODO 356.
 - Falkirk 2025: listo salvo la liga (Scottish Championship no existe en `data/leagues.js`) → TODO 356: crear la liga (club-sourcing 0.4) y cargar con su publicNote y el EJEMPLO-CATEGORÍA de la Auditora 6 (`reglas-categoria.mjs --escribir`).
 - Los otros años: 21 pagables (Ross County 2022-24, Wimbledon 2023-24, Barnsley 2022-24, Burton 2022-24, Cambridge 2022-24 —su alta puede entrar por 2023-24—, Chesterfield 2022-24, Exeter 2023-24, Gillingham 2022-24, Lincoln 2022-24, Shrewsbury 2022-24, Wigan 2022-23) → TODO 356, lote siguiente con las respuestas de este como precedente (~US$ 8); 17 esperan el conversor → TODO 356.
 - Líneas del auditor de las 10 altas → `node tools/auditoria.mjs --pendientes` (TODO 356).
 - Escudos sin mirar (`escudoOk` null) en las 10 altas; gestiones (presidentes) en la cola, no frenan → TODO 356.
-- Perfil de socios en ingleses: la cuota que cobra el Trust dueño (Wimbledon, Exeter) se contestó «no» → regla a la Auditora 6.
-- 358: 10 ligas esperan el arreglo de `segunda-fuente-liga.mjs` (sección To-do 358) → TODO 358.
+- Perfil de socios en ingleses: la cuota que cobra el Trust dueño (Wimbledon, Exeter) se contestó «no» → TODO 356 (criterio a escribir en CONVENCIONES-DATOS).
+- 358: 10 ligas esperan el arreglo de `segunda-fuente-liga.mjs` (sección To-do 358) → TODO 358 (el arreglo ya entró; queda correrlo).
 - 351: sueldos de los británicos con `caja-deuda --personal` → TODO 351 (ahora con 10 clubes más).
-- `perimetro-senales.mjs` votó «individual» en group accounts con s408 (Salford, Falkirk, Exeter; corregidos a mano) → frenados/Pipeline.
+- `perimetro-senales.mjs` votó «individual» en group accounts con s408 (Salford, Falkirk, Exeter; corregidos a mano) → frenados/Pipeline → TODO 356.
 
 ### Qué deja de ser cierto en ESTADO
 - Inglaterra tiene 10 clubes nuevos de League One y League Two; `documentos-descartados.txt` suma los Jaymel de Fleetwood.

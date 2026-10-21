@@ -17,6 +17,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 934 — 10 altas británicas, segunda fuente de ligas y período del iXBRL (2026-10-21) [356 · 358 · 359 · 362 · 363 · 364 · afcwimbledon-gb, barnsley-gb, burtonalbion-gb, carlisleunited-gb, chesterfield-gb, exetercity-gb, gillingham-gb, lincolncity-gb, shrewsburytown-gb, wiganathletic-gb, falkirk-gb]
+
+- Datos (356): 10 altas británicas desde el XHTML (lotes 140 y 141): AFC Wimbledon, Barnsley, Burton Albion, Carlisle United, Chesterfield, Exeter City, Gillingham, Lincoln City y Shrewsbury Town 2025, y Wigan Athletic 2024; ~US$ 1,9 de US$ 35. Quedan 12 clubes que esperan el conversor XHTML, Morecambe y Ross County por defectos de script, y Falkirk, que espera la liga.
+- Datos (359): líneas del auditor de Omonia, Fiorentina, Genoa, Atalanta y Girona, Chapecoense y Goiás revisados, 13 urls danesas más. Emmen va como pregunta al club.
+- Criterio: votación 2 a 1, la liberación de un goodwill negativo va a `exceptional_items` (Falkirk 2024-25), en CONVENCIONES-DATOS.
+- `segunda-fuente-liga.mjs` arreglado (sección por su nombre, UTF-16, filas con un espacio): 19 de las 21 liga-temporadas frenadas pasan; 26 temporadas con segunda fuente escritas (358); `liga-una-fuente` baja de 17 a 10 ligas.
+- `periodo.mjs`: escalón 0 con el período etiquetado del iXBRL (0 cierres cargados cambian); destraba 16 británicos.
+- `emisorDe` lee el XHTML entero si el `identifier` no está en los primeros 600 KB (17 de 249 quedaban sin emisor). `caja-deuda.mjs`, `perimetro-senales.mjs` y `alta-club.mjs` avisan cuando leen solo una parte del documento.
+- `lote.mjs`: aviso en el ensayo cuando un alta trae más de un ejercicio.
+- Registro público de correcciones (`correcciones.html`, `data/correcciones/`, `tools/generar-correcciones.mjs`): 236 eventos en 56 clubes, motivos por curar (364).
+- `referencia/ux.md`: excepción de 44 px para los links en texto corrido (ok de Guido), en la skill de pantallas.
+- Skill principal: modo una sola sesión, sin worktrees (e5673abef9).
+- Notas de Auditora 6, Pantallas 7, Pipeline 15 y Onboarding 9 pasadas al TODO (nuevos 362, 363, 364; se borra el 361) y archivadas.
+
 ## Versión 933 — documentos de grupo, áreas de toque de 44 px (2026-10-21) [361 · fleetwood-gb]
 
 - Votación 3 a 0, en CONVENCIONES-DATOS: un consolidado de grupo vale como documento del club si el club está en el grupo el ejercicio entero y lo ajeno pesa ≤ 10 % del turnover impreso. No cambia ningún año cargado; Fleetwood/Jaymel queda descartado. El freno que la aplica queda en la cola de Pipeline.

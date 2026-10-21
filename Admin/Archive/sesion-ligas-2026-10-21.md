@@ -749,14 +749,14 @@ Veredictos (todos en `Admin/registros/auditoria-proceso.jsonl`, sesión `auditor
 
 ### Qué queda
 
-- La línea de `PIPELINE.md` («Cola humana») para `Admin/registros/cola-borradores/`, con el texto exacto en el registro (línea `registro-sin-lector`). Con ella el código queda en 0. → regla (PIPELINE.md, la escribe la principal o Pipeline)
-- Freno de documentos de grupo en `perimetro-senales` o `cargar`: turnover por clase de negocio con el deporte del club por debajo del 90 %, o venta o compra de la sociedad del club en el ejercicio. Se espera que frene los 3 Jaymel y 0 de los 53 cargados. Pasa por la sección 7. → TODO 361
+- La línea de `PIPELINE.md` («Cola humana») para `Admin/registros/cola-borradores/`, con el texto exacto en el registro (línea `registro-sin-lector`). Con ella el código queda en 0. → descartado: ya escrita en `Admin/PIPELINE.md`, «Cola humana» (última viñeta)
+- Freno de documentos de grupo en `perimetro-senales` o `cargar`: turnover por clase de negocio con el deporte del club por debajo del 90 %, o venta o compra de la sociedad del club en el ejercicio. Se espera que frene los 3 Jaymel y 0 de los 53 cargados. Pasa por la sección 7. → TODO 362
 - Nota de sourcing de Fleetwood: «Ejercicios útiles: Jaymel 2015/16-2023/24» es falso (fútbol 42 % en 2021-22); hoy lo único útil es Fleetwood Wanderers 2020-21. → TODO 356
 - EJEMPLO-CATEGORÍA de Falkirk en la regla del goodwill negativo, cuando el club esté en el sitio (`reglas-categoria.mjs --escribir`). → TODO 356
-- Pipeline 15, aprobados con cambios y sin confirmar: `jevDe` con todas las filas (ensayo de los 162 y lista de años de caja o deuda que cambian, cada uno con cita o revertido); `segunda-fuente-liga` con el título como palabra entera (medir 26/26 y 19/21); `falta_documento` con páginas 1..N sin saltos, las 13 sin .md propio citando el .md fuente del año y la migración de las 58 con `--check`. → TODO 362 (si Pipeline 15 cierra sin mandar los números)
+- Pipeline 15, aprobados con cambios y sin confirmar: `jevDe` con todas las filas (ensayo de los 162 y lista de años de caja o deuda que cambian, cada uno con cita o revertido); `segunda-fuente-liga` con el título como palabra entera (medir 26/26 y 19/21); `falta_documento` con páginas 1..N sin saltos, las 13 sin .md propio citando el .md fuente del año y la migración de las 58 con `--check`. → TODO 363
 - Fixes de la Auditora 5 todavía sin codear (`outlier-liga`, `escala-implausible`, `signo-invertido`, `salto-interanual`, `gestion-club-inexistente`) y la próxima corrida de P2 y P3 (no saltear `registro-sin-lector` en las tres siguientes). → TODO 347
 - La tabla de filas del Formato simplificado en 0, no arrancada por pedido de la principal. → TODO 350
 - Escalón 0 de extraer desde las etiquetas iXBRL, EN PAUSA con la condición de la Auditora 5 (el estado de resultados, menos del 40 % del gasto: no se codea). → descartado mientras no cambie esa medición (backtest 22 de 67, 33 %)
-- Preguntas a Guido que dejó abiertas la Auditora 5 (tramo corto C o B, nota de COVID en los club-años ya cargados, Lierse) → TODO 355 (Lierse); las otras dos → TODO 362, a confirmar por la principal
+- Preguntas a Guido que dejó abiertas la Auditora 5 (tramo corto C o B, nota de COVID en los club-años ya cargados, Lierse) → TODO 355 (Lierse); las otras dos → TODO 363
 
 Commits de esta sesión en `ligas`, sin push: e0e31eda83, 9cb6c682df, 285d4b5f6c, bf2cfc3d76, b72d735bef, ba77d32aec, fd57b01f4e más este.

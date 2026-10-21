@@ -879,7 +879,7 @@ Texto movido sin cambios.
   a 44 (atajos y filas de los rankings de Inicio, «Ver la liga», «Elegí un club», «Cambiar de club», «Más opciones», presets y gestiones, «+N más», los
   segmentados, el índice de Finanzas, «Entrar con Google»; «Todos» y la × también a 44 de ancho). Los links dentro de un texto o de una celda agrandan su
   área sin mover nada (padding y margen negativo de 15 px); dos links solos en su renglón, uno debajo del otro (`.fin-fuentes-link`), ocupan los 44 de
-  verdad, y un párrafo con más de un link queda afuera porque las áreas se pisarían (propuesta de excepción: `Admin/propuestas/ux-excepcion-texto-corrido.md`).
+  verdad, y un párrafo con más de un link queda afuera porque las áreas se pisarían (excepción decidida por Guido; texto original en `Admin/Archive/ux-excepcion-texto-corrido.md`).
   En la página de una liga el botón de cada club también mide 44 (padding y margen negativo), además del `::after` que cubre la fila.
 - LA FILA DE CHIPS DE EJERCICIO EN EL TELÉFONO (Finanzas y Comparar, `mostrarElegidosEnFila()` en `js/finanzas-calc.js`): arranca en lo más
   nuevo, salvo que así no se vea ningún ejercicio elegido; ahí arranca con el más viejo de los elegidos contra el borde izquierdo.

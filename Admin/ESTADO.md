@@ -83,9 +83,16 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   notas explicativas cuando suman el código del formulario. Qué clubes y años hay: `Admin/ESTADO-clubes.md`. Cómo corre:
   `Admin/PIPELINE.md`, "Rusia (GIR BO)".
 - Dinamarca desde 2025 publica en XHTML (iXBRL): `tools/xhtml-aarsrapport.mjs` lo deja como `.md` fiel con un PDF de ancla y no escribe si
-  ubica menos del 98 % de las líneas (un informe diseñado como el consolidado de FC København queda afuera).
-- Reino Unido (Companies House, casi todo escaneado) se transcribe con subagentes de Claude: Tesseract más revisión de las páginas
-  clave contra la imagen, con una cola en `Admin/transcripcion-subagentes/` (README.md). Lo que falta, en `Admin/TODO.md` (261).
+  ubica menos del 98 % de las líneas (un informe diseñado como el consolidado de FC København queda afuera). Los cierres de un año en
+  XHTML salen del período etiquetado del iXBRL (`periodo.mjs`, escalón 0) y, en el perímetro individual, el resultado cargado se compara con
+  el `ProfitLoss` etiquetado y frena si no coincide (`tools/ixbrl-resultado.mjs`; en el consolidado solo avisa).
+- Reino Unido (Companies House): los clubes que presentan en iXBRL se cargan desde el XHTML (`xhtml-aarsrapport.mjs`, sin transcribir ni pagar
+  IA: `lote.mjs` la frena sobre estos documentos salvo `--pagar-ia-xhtml`); si el XHTML está maquetado con div o span, el `.md` sale sin
+  tablas y el club espera el conversor (TODO 356). El resto, casi todo escaneado, se transcribe con subagentes de Claude: Tesseract más
+  revisión de las páginas clave contra la imagen, con una cola en `Admin/transcripcion-subagentes/` (README.md). Lo que falta, en
+  `Admin/TODO.md` (356).
+- La liga de un año necesita dos fuentes (regla en `Admin/CONVENCIONES-DATOS.md`): la segunda es RSSSF, que lee
+  `tools/segunda-fuente-liga.mjs` a la caché de `tools/club-league-reference/`; lo que falta, en el TODO 358.
 - `tools/pipeline.mjs` hace SOLO la etapa 2 (transcribir con Mistral y validar, más el control "sin tablas"). La lista de rubros la arma
   `verificar.mjs` y la categorización es la etapa 7 del lote.
 - Perímetro del club por señales (`tools/perimetro-senales.mjs`): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el ajuste

@@ -462,19 +462,19 @@ jerga interna. `node tools/audit.js` da `correccion-sin-motivo` (P2) si falta, d
 
 ## Queda pendiente (para TODO)
 - Curar los motivos de los eventos con más impacto (valor, retiros, recargas) en `Admin/registros/correcciones.jsonl` (paso 2 del plan, con subagentes que lean el
-  cuerpo del commit y `Admin/registros/ajustes-manuales.jsonl`). Hoy todo dice «Motivo no registrado». → TODO nuevo (lo numera la principal): «el
+  cuerpo del commit y `Admin/registros/ajustes-manuales.jsonl`). Hoy todo dice «Motivo no registrado». → TODO 364: «el
   registro de correcciones, curado», con este punto, el inglés del motivo, el Data Package y la revisión de «total» y «otro» (los de abajo). Al
   2026-10-21 `Admin/registros/correcciones.jsonl` todavía no existe.
 - El inglés del motivo: no hay traducción automática al generar; sin `motivo_en`/`Corrige-en:` la página en inglés muestra el español. Decidir si se traduce al curar.
-  → TODO nuevo (el mismo de arriba).
+  → TODO 364.
 - `tools/worktree.mjs mergear` debería regenerar `data/correcciones/` (como los otros generados) y `tools/exportar-paquete.mjs` sumar el registro al Data Package.
-  → descartado lo de `mergear`: ya lo regenera (`OTROS_GENERADOS`); el Data Package → TODO nuevo (el mismo de arriba).
+  → descartado lo de `mergear`: ya lo regenera (`OTROS_GENERADOS`); el Data Package → TODO 364.
 - Los shas del registro son los de la rama: un squash o rebase al mergear los cambia; con merge normal o fast-forward quedan. → descartado: la principal
   mergea con `worktree.mjs mergear` (merge normal), no con squash.
 - El punto de la tarjeta de ejercicio no lleva link (la tarjeta es un botón): el detalle está en el bloque de abajo. → descartado: decisión de diseño, el
   detalle está en el bloque.
 - Revisar que los tipos «total» y «otro» de los eventos de hoy (246, 245) no tengan ruido de renombres; los 0→null de caja y deuda ya se filtran.
-  → TODO nuevo (el mismo de arriba).
+  → TODO 364.
 
 ## Qué deja de ser cierto en ESTADO
 - Agregar: el registro de correcciones (`correcciones.html`, `data/correcciones/`, `tools/generar-correcciones.mjs`, bloque en Finanzas) y que `data/` y el
