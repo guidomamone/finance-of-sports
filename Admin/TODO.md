@@ -36,17 +36,24 @@ el número de la izquierda es el orden de trabajo.
 6. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
 7. 350 (Auditora 5, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
 8. 257 (Orden 1): la parte 7, qué pasa de CONVENCIONES a skills (falta mostrarte el texto)
-9. 356 (Sourcing 4, después Onboarding): clubes británicos chicos y medianos que presentan en iXBRL, cargados sin transcribir
+9. 356 (Onboarding 8 carga 67 británicos en iXBRL, tope US$3; Sourcing 4 baja el resto y los links daneses; Pipeline 13 arregla Plymouth y el freno de no pisar PDFs)
 
 **D. Orden de la casa**
-9. 338: correr todas las auditorías del proyecto (al final de A)
-10. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+10. 338: correr todas las auditorías del proyecto (al final de A)
+11. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-11. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-12. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-13. 335: mails a clubes
-14. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+12. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+13. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+14. 335: mails a clubes
+15. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+16. 357: mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+
+357. MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
+   dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo
+   muestra. Primero medir (Auditora o Pipeline): en cuántos club-años el documento lo imprime (estado de cambios en el patrimonio, flujo de
+   fondos o notas) y con qué rótulos, por país. Después Pantallas propone dónde se ve, con mockup para el ok de Guido. Si suma un campo al
+   JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios y aportes impresos como ingreso).
 
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
