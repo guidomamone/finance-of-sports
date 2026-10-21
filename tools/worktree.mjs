@@ -6,7 +6,7 @@
 // los worktrees probados antes terminaban en conflictos. Dos causas: (1) todas editaban TODO, CHANGELOG y ESTADO; (2) cada carga regenera
 // lo mismo (ASSET_V de index.html, las páginas de fuentes/, ESTADO-clubes, club-index, rankings, sitemap). La (1) la resuelve una regla
 // (solo la principal escribe esos tres; ver la skill de arranque, worktree.md); la (2), `mergear`. Además, una copia nueva no tiene lo que
-// git ignora (los PDFs de Clubes/, las claves de Admin/api-keys/, las cachés de Generados/): sin eso no corre nada; lo resuelve `preparar`.
+// git ignora (los PDFs de Clubes/, las claves de Admin/api-keys/, las cachés de Generados/, tools/node_modules/): sin eso no corre nada; lo resuelve `preparar`.
 //
 // USO:
 //   node tools/worktree.mjs preparar <carpeta del worktree>   en la copia, un enlace a cada archivo que git ignora en la carpeta principal
@@ -43,8 +43,18 @@ function preparar(destino) {
   const lista = git(['ls-files', '--others', '--ignored', '--exclude-standard', '-z'], main).split('\0').filter(Boolean)
     // Ni una carpeta con su propio .git (git la lista entera, con / al final) ni lo de .claude/worktrees/ (los otros worktrees, que en la
     // principal figuran como ignorados): enlazarlos hacía fallar el comando.
-    .filter((f) => !/(^|\/)\.DS_Store$/.test(f) && !f.endsWith('/') && !f.startsWith('.claude/worktrees/') && !ESTADO_DE_CORRIDA.includes(f));
+    .filter((f) => !/(^|\/)\.DS_Store$/.test(f) && !f.endsWith('/') && !f.startsWith('.claude/worktrees/') && !ESTADO_DE_CORRIDA.includes(f)
+      && !f.startsWith('tools/node_modules/')); // (to-do 339) node_modules se enlaza ENTERO, abajo: archivo por archivo quedaba una carpeta a medias y el binding nativo de resvg no aparecía
   let hechos = 0, ya = 0;
+  // tools/node_modules (las dependencias de las tools, p. ej. @resvg/resvg-js de generate-club-pages.js): UN enlace a la carpeta de la principal. Sin esto un worktree no encuentra el
+  // módulo y la carga se revierte sola (Bath). Si ya hay una carpeta real (a medias), no se pisa: se avisa.
+  const nm = join(main, 'tools', 'node_modules'); const nmDst = join(wt, 'tools', 'node_modules');
+  if (existsSync(nm)) {
+    let hay = false, esEnlace = false; try { esEnlace = lstatSync(nmDst).isSymbolicLink(); hay = true; } catch {}
+    if (!hay) { mkdirSync(dirname(nmDst), { recursive: true }); symlinkSync(nm, nmDst); hechos++; }
+    else if (!esEnlace) console.log(`AVISO: ${nmDst} es una carpeta real (no un enlace a la principal): si falta un módulo (p. ej. @resvg/resvg-js), borrala y corré preparar de nuevo.`);
+    else ya++;
+  }
   for (const f of lista) {
     const dst = join(wt, f); let existe = false; try { lstatSync(dst); existe = true; } catch {}
     if (existe) { ya++; continue; }
