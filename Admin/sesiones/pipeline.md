@@ -246,15 +246,22 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 - (b) PSE de FCK: 2021, 2022 y 2024 pasan. 2023 fallaba (a) por el EPS «34,20» con la etiqueta en «34,2»: escalón 2 de la compuerta (a) (ceros decimales de más, con el separador del `format`), escrito y SIN commitear, en la Auditora (sección 8). Medido sobre los 249 `.xhtml`: cambia solo FCK PSE 2023 (pasa); 248 idénticos. 2025 sigue en (b) 96 % (piso de 98 %, veredicto pendiente desde Pipeline 13).
 - Visto al medir, otro defecto: 9 XHTML daneses dan (b) «0 % ubicadas» (Horsens 2025, Hobro 2025 y 2026, Lyngby 2026, Næstved 2025, Randers 2025, Skive 2025, Viborg 2025): el PDF que imprime Chrome sale sin fuentes ni texto (Næstved: 18 págs, `pdffonts` vacío). Igual antes y después del cambio; no lo perseguí.
 
-### 10. Chipre (`933748ad75`)
+### 10. Chipre (`933748ad75`, `bded2d912c`)
 
-- `tools/club-league-reference/cy.json`: Second Division 2023-24 (16 equipos, de la tabla de posiciones: la de estadios no trae a Enosis Neon Paralimni) y First Division 2024-25 (14). Alias «Omonia 29M» = `omonia29maiou-cy` (el id que propone el alta). Propuestas de catálogo: `cy-firstdivision` (tier 1) y `cy-seconddivision` (tier 2), en la Auditora: `catalogo-liga.mjs --escribir` exige su línea. RSSSF (`rsssf.org/tablesc/cyp2024.html`, L669-699) confirma a Omonia 29M 4.º en la fase regular y 2.º y ascendido en la ronda final.
-- `alias.json`: también «Alianza Petrolera» = `alianzafc-co` (`947874ec33`; mismo NIT, la Auditora lo cerró).
+- `tools/club-league-reference/cy.json`: Second Division 2023-24 (16 equipos, de la tabla de posiciones: la de estadios no trae a Enosis Neon Paralimni) y First Division 2024-25 (14). Catálogo: `cy-firstdivision` («First Division de Chipre», tier 1) y `cy-seconddivision` («Second Division de Chipre», tier 2), escritas con `catalogo-liga.mjs` sobre las líneas APROBADO de la Auditora (L161-162). RSSSF (`rsssf.org/tablesc/cyp2024.html`, L669-699) confirma a Omonia 29M 4.º en la fase regular y 2.º y ascendido en la ronda final.
+- El alias «Omonia 29M» lo saqué (`7a3e3aa363`, regla nueva: una referencia a un club va en el commit del alta o después): lo pone Onboarding con el alta, junto con el de RSSSF («ALS Omonia 29th May») para que la segunda fuente lo reconozca.
+- `alias.json`: «Alianza Petrolera» = `alianzafc-co` (`947874ec33`; mismo NIT, la Auditora lo cerró).
+- El escalón 2 de la compuerta (a) de XHTML, aprobado: `366a8dd130`.
+
+### 11. La liga de un año necesita dos fuentes (`7c7a655405`; Auditora 5, sección 7, con dos cambios)
+
+- `tools/segunda-fuente-liga.mjs` (nuevo): la tabla de posiciones de RSSSF a `fuentes` de la liga-temporada; sin IA, nunca toca `data/club-leagues/`, User-Agent propio, un segundo entre pedidos, lo bajado en `Generados/fuentes-liga/` (ignorado), un 403/429 se descarta (worldfootball.net da 403); no escribe si no encuentra la tabla o da menos equipos que Wikipedia. `fetch-club-league-reference.mjs` conserva `fuentes`; `lookup-club-league.js` dice cuántas. Hechas: cy-seconddivision 2024 (16) e it-seriea 2022 (20).
+- `audit.js` (`liga-una-fuente` P3 por liga, `liga-fuentes-no-coinciden` P2 por club-año), escrito y SIN commitear: con el alcance de la Auditora (asignaciones nuevas desde 2026-10-22 y las no exactas vigentes) da 17 líneas P3 (61 club-años) y 0 P2; pasa el umbral de ~15 que puso la Auditora, se lo mandé.
+- Punto 9, `referencia-a-club-inexistente` (P1): hoy 0 (alias con `clubId` y filas de `data/club-leagues/` contra `data/clubs.js`); diseño en la Auditora, sin escribir todavía.
 
 ### Qué queda (Pipeline 14)
 
-- Veredictos de la Auditora 5: el escalón 2 de la compuerta (a) de `xhtml-aarsrapport.mjs` (sin commitear en el árbol de esta rama) y las dos ligas de Chipre; con su ok, commitear y `node tools/catalogo-liga.mjs --liga <id> --escribir --full … --name … --aprobado-ref <línea>` → TODO nuevo (Auditora).
-- Punto 8, «la liga de un año necesita dos fuentes» (`Admin/propuestas/liga-dos-fuentes.md`): diseño en la Auditora (fuentes por liga-temporada en la caché, tool de segunda fuente desde RSSSF, `liga-una-fuente` P3 agregado por liga); worldfootball.net da 403 a una lectura mecánica y queda afuera → TODO nuevo.
-- Datos (Onboarding): Atalanta 2022 con `--reemplazar` (period_months 6, nota) sin cambiar otro año; cargar Fiorentina 2020 y Genoa 2024 (sacarlos antes de `documentos-parciales.txt`); OH Leuven 2019 y Benfica 2007-08 con `period_months`; Girona 2021-23 con los tres ajustes `fila --destino profit_on_player_sales`; el alta de Omonia 29 Maiou cuando estén las ligas → TODO nuevo (datos).
+- Veredictos de la Auditora 5: el alcance de `liga-una-fuente` (17 líneas) y `referencia-a-club-inexistente`; con su ok, commitear (el primero ya está en el árbol de trabajo de esta rama) → TODO nuevo (Auditora).
+- Datos (Onboarding): Atalanta 2022 con `--reemplazar` (period_months 6, nota) sin cambiar otro año; cargar Fiorentina 2020 y Genoa 2024 (sacarlos antes de `documentos-parciales.txt`); OH Leuven 2019 y Benfica 2007-08 con `period_months`; Girona 2021-23 con los tres ajustes `fila --destino profit_on_player_sales`; el alta de Omonia 29 Maiou (ligas ya en el catálogo; los alias «Omonia 29M» y «ALS Omonia 29th May» van con el alta) → TODO nuevo (datos).
 - Los 9 XHTML daneses con PDF de Chrome sin texto («0 % ubicadas») → TODO nuevo.
 - La marca visual «COVID» (Pantallas, con mockup) y las REGLAS de COVID y de tramo corto en `Admin/CONVENCIONES-DATOS.md` (principal) → regla.
