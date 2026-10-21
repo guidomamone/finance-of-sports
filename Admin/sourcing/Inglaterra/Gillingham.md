@@ -18,3 +18,5 @@ Todos en `Clubes/Inglaterra/Gillingham/` (los PDF no se trackean; son escaneos, 
 - `gillingham-medium-accounts-2024-25.pdf`
 - `gillingham-medium-accounts-2023-24.pdf`
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2025 desde `Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.pdf` (sourceId `gillingham-gb-medium-accounts-2024-25-ixbrl`).

@@ -103,6 +103,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
+  'gillingham-gb': {
+    2025: {"estadio":"Priestfield Stadium","capacidad":11582,"sponsor":"Bauvill","marca":"Macron","temporada":"2024–25 EFL League Two","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378041142","fuenteManual":"https://www.gillinghamfootballclub.com/news/2023/june/bauvill-become-new-front-of-shirt-sponsor (dos temporadas en el pecho, 2023-24 y 2024-25); marca: https://www.gillinghamfootballclub.com/news/2024/may/20242025-home-kit-launched","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'leeds-gb': {
     2019: {"estadio":"Elland Road","capacidad":37890,"sponsor":"32Red","marca":"Kappa","temporada":"2018–19 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372863678"},
     2020: {"estadio":"Elland Road","capacidad":37890,"sponsor":"32Red","marca":"Kappa","temporada":"2019–20 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380740679"},

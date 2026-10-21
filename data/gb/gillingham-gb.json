@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "gillingham-gb",
+    "name": "Gillingham Football Club Ltd",
+    "display_name": "Gillingham",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
+  "sources": [
+    {
+      "id": "gillingham-gb-medium-accounts-2024-25-ixbrl",
+      "club_id": "gillingham-gb",
+      "title": "Gillingham Football Club Ltd — gillingham-medium-accounts-2024-25-ixbrl (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Informe oficial en formato XHTML (iXBRL)"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "gillingham-gb-medium-accounts-2024-25-ixbrl",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Football","category":"matchday","subcategory":"matchday_competition","amount":3.495463,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"commercial","subcategory":"sponsorship_commercial","amount":2.334535,"disclosure":"aggregated"},
+        {"label":"School","category":"non_sporting_activities","subcategory":"education","amount":0.068491,"disclosure":"aggregated"},
+        {"label":"Shop","category":"commercial","subcategory":"sponsorship_commercial","amount":0.518864,"disclosure":"aggregated"},
+        {"label":"Youth Academy","category":"other_sporting_sections","subcategory":"youth_football","amount":0.652507,"disclosure":"aggregated"},
+        {"label":"Programmes","category":"commercial","subcategory":"sponsorship_commercial","amount":0.053741,"disclosure":"aggregated"},
+        {"label":"Kiosks","category":"venue","subcategory":"stadium_other","amount":0.359451,"disclosure":"aggregated"},
+        {"label":"Sundry income and donation","category":"other_revenue","subcategory":"other_income","amount":0.012463,"disclosure":"aggregated"},
+        {"label":"Transfer fees","category":"player_transfers","subcategory":"player_sales","amount":0.035,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-10.057281,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-3.194908,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.015884,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":7.530515,"expenses":13.252189,"net_result":-5.737558},
+      "adjustments": {
+        "extra_rows": [{"label":"Interest payable and similar expenses","amount":-0.015884},{"label":"Tax on loss","amount":null}],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true},"broadcasting":{"in":"matchday_competition","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}
