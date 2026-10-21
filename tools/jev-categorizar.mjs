@@ -40,6 +40,7 @@ import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { abrirCache } from './respuestas-cache.mjs';
 import { derivado, ubicar } from './rutas.mjs';
+import { deporteODefecto, categoriasDeDeporte, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) el deporte del club: su lista de categorías y los ejemplos del mismo deporte primero
 import { paisDeClub, afinidad } from './pais-club.mjs'; // (to-do 331) el país del club en el texto y los ejemplos del mismo país primero
 import { lineasAprendidas } from './memoria-categorias.mjs';
 import vm from 'node:vm';
@@ -91,14 +92,30 @@ function loadCategories() {
 const CATS = loadCategories();
 const ALL = { ...Object.fromEntries(Object.entries(CATS.revenue).map(([k, v]) => [k, `INGRESO: ${v}`])), ...Object.fromEntries(Object.entries(CATS.expense).map(([k, v]) => [k, `GASTO: ${v}`])) };
 const sideOf = (cat) => (cat in CATS.revenue ? 'revenue' : cat in CATS.expense ? 'expense' : '?');
+// (to-do 339) Las categorías que Jev puede elegir son las de la taxonomía del DEPORTE del club (con la descripción de CATS cuando la hay), en el orden de CATS.
+// Para el fútbol es exactamente ALL. Un deporte sin taxonomía devuelve null: no se cae a la lista del fútbol.
+const _criterios = new Map();
+function criteriosDe(deporte) {
+  if (_criterios.has(deporte)) return _criterios.get(deporte);
+  const t = categoriasDeDeporte(deporte); let r = null;
+  if (t) {
+    const lado = {}; const todas = {};
+    for (const k of Object.keys(ALL)) if (t.todas.has(k)) { todas[k] = ALL[k]; lado[k] = sideOf(k); }
+    for (const [set, side, rot] of [[t.revenue, 'revenue', 'INGRESO'], [t.expense, 'expense', 'GASTO']]) for (const k of set) if (!(k in todas)) { todas[k] = `${rot}: ${k}`; lado[k] = side; }
+    r = { todas, lado };
+  }
+  _criterios.set(deporte, r); return r;
+}
 
 // ---------------------------------------------------------------- llamada a Jev
 let stopAll = null;
 async function askJev(key, { label, section, club, side, examples, useSide }) {
-  const criteria = (SIDE_KNOWN || useSide) && side ? Object.fromEntries(Object.entries(ALL).filter(([k]) => sideOf(k) === side)) : ALL;
+  const deporte = deporteODefecto(club); const cd = criteriosDe(deporte);
+  if (!cd) return { error: `el deporte «${deporte}» no tiene taxonomía en data/category-map.js (SPORT_TAXONOMIES): no se le pregunta a Jev` };
+  const criteria = (SIDE_KNOWN || useSide) && side ? Object.fromEntries(Object.entries(cd.todas).filter(([k]) => cd.lado[k] === side)) : cd.todas;
   const exText = examples && examples.length ? `Ejemplos de rubros parecidos que ya están categorizados en el sitio (los clubes tienen convenciones propias; guiate por ellos):\n${examples.map((x) => `- "${x.label}" (${x.club}) -> ${x.truth}`).join('\n')}\n` : '';
   const pc = club ? paisDeClub(club) : null; // (to-do 331) el país del club: la misma palabra puede ser otra cosa en otro país del mismo idioma
-  const state = [`Rubro de un estado financiero de un club de fútbol${club ? ` (${club}${pc ? `, de ${pc.nombre}` : ''})` : ''}${section ? `, sección: ${section}` : ''}.`, exText, `Texto del rubro, tal cual figura en el documento: "${label}"`].filter(Boolean).join('\n');
+  const state = [`Rubro de un estado financiero de un club de ${nombreDeporte(deporte)}${club ? ` (${club}${pc ? `, de ${pc.nombre}` : ''})` : ''}${section ? `, sección: ${section}` : ''}.`, exText, `Texto del rubro, tal cual figura en el documento: "${label}"`].filter(Boolean).join('\n');
   const body = { state, model: 'jev-latest', questions: { categoria: { type: 'choice', instructions: 'Elegí la categoría de la lista a la que corresponde este rubro. Si no encaja en ninguna, elegí la más genérica (other_income / other_expenses).', criteria } } };
   for (let attempt = 0; attempt < 5; attempt++) {
     if (stopAll) return { error: stopAll };
@@ -140,8 +157,9 @@ function makeRetriever(bank) {
   const prepared = bank.map((b) => ({ ...b, w: words(b.label), key: `${b.club}|${b.label.toLowerCase().replace(/\s+/g, ' ').trim()}` }));
   return (q) => {
     const qw = words(q.label); const qkey = `${q.club}|${q.label.toLowerCase().replace(/\s+/g, ' ').trim()}`;
-    const scored = [];
+    const scored = []; const admite = categoriasDeDeporte(deporteODefecto(q.club))?.todas; // (to-do 339) solo ejemplos cuya categoría existe en la taxonomía del deporte del club (ingreso + gasto)
     for (const b of prepared) {
+      if (admite && !admite.has(b.truth)) continue;
       if (NO_SAME_CLUB && b.club === q.club) continue;
       if (b.key === qkey) continue; // nunca el mismo rubro del mismo club (sería la respuesta: eso lo cubre el precedente exacto)
       if ((SIDE_KNOWN || q.useSide) && q.side && b.side !== q.side) continue;
@@ -149,8 +167,8 @@ function makeRetriever(bank) {
       if (!inter) continue;
       scored.push([inter / (qw.size + b.w.size - inter), b]);
     }
-    // (to-do 331) a igual parecido de palabras: primero los del mismo país, después los del mismo idioma
-    scored.sort((a, b) => (b[0] - a[0] > 1e-12 || a[0] - b[0] > 1e-12) ? b[0] - a[0] : afinidad(q.club, b[1].club) - afinidad(q.club, a[1].club));
+    // (to-do 331, 339) a igual parecido de palabras: primero los del mismo deporte, después los del mismo país, después los del mismo idioma
+    scored.sort((a, b) => (b[0] - a[0] > 1e-12 || a[0] - b[0] > 1e-12) ? b[0] - a[0] : (afinidadDeporte(q.club, b[1].club) - afinidadDeporte(q.club, a[1].club)) || (afinidad(q.club, b[1].club) - afinidad(q.club, a[1].club)));
     const seen = new Set(); const out = [];
     for (const [, b] of scored) { const k = `${b.label.toLowerCase()}|${b.truth}`; if (seen.has(k)) continue; seen.add(k); out.push(b); if (out.length >= K_EXAMPLES) break; }
     return out;
