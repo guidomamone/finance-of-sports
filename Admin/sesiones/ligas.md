@@ -701,3 +701,38 @@ No decido ni toco ids. Evidencia por dato, con su cita.
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Traspaso a Auditora 6, 2026-10-21 (de Auditora 5)
+
+Para una Auditora nueva sin mi contexto. Todo lo que decidí está en `Admin/registros/auditoria-proceso.jsonl` (una línea por veredicto, con el motivo y las citas); esta nota dice qué está abierto.
+
+### Cómo se trabaja (lo que me costó aprender)
+
+- Veredictos de la sección 7 de la skill de auditoría: las cinco preguntas, el número que cambia y, si se puede, la comparación antes y después. Una sesión Pipeline manda la condición por `SendMessage`; contesto por `SendMessage` y dejo la línea en el registro. Desde el cambio de la skill, un aviso P3 nuevo y una mejora de la sección 8 con 0 años cargados cambiados entran sin esperar; frenos, cambios a lo que una tool asume y criterios de datos sí esperan.
+- Votaciones: skill `votacion-de-criterios`, tres subagentes Sonnet con el caso en un archivo del scratchpad. El hook exige en el prompt de cada subagente la frase: «Leé con Read y escribí con Write. Bash solo para comandos simples con la ruta completa entre comillas, sin variables, sin cd, sin ; ni &&.»
+- Comandos sin `$(…)`, variables, `cd`, ni /tmp; los scripts se escriben con Write en el scratchpad y se corren con `node <ruta>`; un comando de Bash cuyo texto nombra palabras de merge lo frena el hook (usar Edit o Write para editar notas). Traer main: `git merge --ff-only main`, solo, en un comando aparte. El merge lo hace la principal; commiteo sin push y se lo pido.
+- El hook frena el commit si `node tools/audit.js` da P0 o P1: si pasa por algo ajeno, avisar a la principal (no usar `[sin-audit]` sin el ok de Guido).
+
+### Veredictos que esperan respuesta o confirmación
+
+- **Pipeline 15, `emisorDe`** (`tools/ixbrl-resultado.mjs`): lee solo los primeros 600 KB del XHTML, y en 17 de los 48 XHTML daneses el `ix:header` está más adelante (Silkeborg 2025: byte 2,69 MB; AGF 2022-25, AaB 2025, Brøndby 2025, el PSE de FCK), así que un año cargado de PDF no encuentra su XHTML del mismo emisor y se queda sin la segunda lectura, sin aviso. Leer el archivo entero haría que se comparen más años y eso puede sumar frenos: es una condición nueva y va a la Auditora antes de codear (detalle en `Admin/sesiones/pipeline.md`, «Qué queda (Pipeline 15)»). Mi criterio: aprobarla si, con la lectura entera, se mide cuántos años nuevos se comparan y 0 de ellos da diferencia o frena mal; el freno solo vale para el perímetro individual.
+- **Pipeline 15, el barrido de lecturas recortadas:** me lo mencionó la principal; el mensaje no me llegó. Cuando llegue, aplicar lo mismo: qué otras lecturas de archivos cortan a un límite fijo y qué cambia al leerlas enteras.
+- **Escalón 0 de extraer desde las etiquetas iXBRL:** EN PAUSA. Mi condición: medir qué parte de los US$ 16,48 del lote 133 es el estado de resultados y qué parte las notas; si el estado es menos de 40 %, no se codea. Backtest de Pipeline 14: 22 de 67 líneas cargadas ligadas por etiqueta (33 %): lo cargado son desgloses de notas. El freno por bandera (`--pagar-ia-xhtml`) ya está y lo confirmé con el ensayo del lote 133 (US$ 17,83 frenados).
+- **Fixes aprobados y todavía no codeados** (los hallazgos siguen con la misma cuenta hasta que Pipeline los codee): `outlier-liga` (año vecino y P3), `escala-implausible` (sacar la rama P3), `signo-invertido` (no emitir si el ejercicio cierra contra el total oficial), `salto-interanual` (consecutivos y `cambio-de-formato`), `gestion-club-inexistente` (una línea P3 por país). Al codearse, medir el antes y después que dice cada línea del registro.
+- **ixbrl-resultado:** pasó a frenazo SOLO para el perímetro individual (7 de 7 años daneses con hecho, más Forest y Bath, 0 falsos); el consolidado sigue como aviso hasta medir dos años consolidados de clubes distintos, uno con minoritarios.
+- **Guido (por la principal):** si C o B para el tramo corto sin hueco (el código del tramo corto ya entró, así que parece contestado: confirmar); si se agrega la nota de COVID a los 190 club-años ya cargados dentro de la ventana; Lierse: dos clubes, el campo `club.predecessor_id` y los 3 alias de liga (to-do 355); el texto de la sección «Revisión de la taxonomía» para `club-data-mapping` (`Admin/propuestas/350-revision-categorias.md`).
+
+### El 347: corridas de P2 y P3 (un código por corrida)
+
+- Tratados: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido` (dos veces), `outlier-liga`, `gestion-club-inexistente`, `ejercicio-sin-rastro`, `salto-interanual`, `escala-implausible`.
+- Cómo se elige el siguiente: `node tools/audit.js --json` al scratchpad, contar P2 y P3 por código, saltear los de las últimas tres corridas y los que esperan a otro. Hoy esperan a otro: `catchall-dominante` (132, el 350), `sin-salarios` (48, Onboarding), `signo-invertido` (el fix), `liga-una-fuente` (17, Onboarding baja RSSSF liga por liga), `outlier-liga` y `escala-implausible` (el fix). Los chicos que quedan son de Orden: `registro-sin-lector` (5), `historia-en-doc-de-criterio` (3), `ruta-muerta` (2). Si ninguno está libre, la corrida siguiente es de lo que Pipeline haya codeado: medir el antes y después.
+- Regla de cada corrida: cinco hallazgos de muestra contra el documento (no solo el JSON), decisión por el código entero (falso positivo del chequeo, real arreglado por un script, real aceptado y silenciado en `tools/audit-ignore.json` con motivo, o el chequeo no sirve), línea en el registro con `codigo_tratado`, antes y después.
+
+### El 350: lo que falta
+
+- Hecho: relevamiento (`Admin/mediciones/350-categorias-en-vano.md`), votación 3 a 0 por `grants_donations` y la propuesta de proceso (`Admin/propuestas/350-revision-categorias.md`). Guido decidió (2026-10-21): **todavía no se crea la categoría**, y ninguna fila del Formato simplificado se oculta en cero (la propuesta de `hideIfZero` para la fila nueva y para Educación queda descartada).
+- **Lo que falta, al final del bloque A del TODO:** una tabla con CADA fila del Formato simplificado y en cuántos club-años de cuántos queda en 0, por deporte y por país. Las filas salen de `GENERIC_SIMPLIFIED_REVENUE_BUCKETS` y `GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` de `js/finanzas-calc.js` (líneas ~170-200: ingresos Cuotas Sociales, Comercial, Estadio, Televisión, Premios, Venta de Jugadores, Educación, Otras secciones, Fútbol profesional sin desglosar, Otros ingresos; gastos Compra de jugadores, Salarios, Inversiones, Organización de partidos, Educación, Otras secciones, Administración, Fútbol profesional sin desglosar, Otros gastos). Una fila está «en 0» en un club-año si ninguna línea de ese lado cae en las genéricas del bucket (`gens`). La base para el script es `Admin/mediciones/350-uso-categorias.mjs` (recorre `data/<iso2>/<club>.json`, sin presupuestos, deporte por `club.sport`). Con esa tabla, Guido decide subsidios y donaciones y el proceso de revisión.
+
+### Estado de mis commits
+
+- Todo lo mío está commiteado en `ligas`, sin push; la principal mergeó hasta `223ccc95d1`. Los scripts de medición de esta sesión están en el scratchpad (se pierden) salvo los tres de `Admin/mediciones/350-*`.
