@@ -620,3 +620,21 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 5: décima corrida, `escala-implausible`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl` con `codigo_tratado: escala-implausible`, antes 5 (P3): son clubes chicos de tercera (Alverca 2022, Felgueiras 2022, Harju JK Laagri 2023 y 2024, Novorizontino 2015) que cierran con el total oficial. El P3 solo sale cuando el año vecino ya descartó el error de escala, así que no pide nada: se saca esa rama. El tie-out no atrapa una escala mal leída (§0 de la skill); la atrapa el año vecino, y sin vecino queda el P0.
+- Otra línea: aprobada la distancia de edición ≤2 de Pipeline 13 en `gestion-id-sospechoso`.
+- Cierre de la consulta del PSE y aceptación del lector XHTML: ya en el registro y mergeados.
+
+### Qué queda (para TODO / una sesión Pipeline)
+
+- `tools/audit.js` (`checkEscala`, cerca de la línea 484): sacar la rama P3 y conservar la P0. Mide: `escala-implausible` antes P3 5, después 0, P0 sin cambio, resto idéntico.
+- Con esto los P2 y P3 que quedan con más de 5 hallazgos son `catchall-dominante` (131, espera el 350), `sin-salarios` (48, espera a Onboarding 8) y `ejercicio-sin-rastro` (23, espera a Pipeline 13). Re-medir antes de la próxima corrida; los códigos chicos (`ruta-muerta`, `registro-sin-lector`, `comentario-interno-publicado`, 3 a 5 cada uno) son de Orden.
+- Siguiente: el 350.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
