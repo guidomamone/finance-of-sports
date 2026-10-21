@@ -257,3 +257,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: frenado #15 de Bath (`alta-club.mjs --deshacer`), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: `alta-club.mjs --deshacer <clubId>`, APROBADO CON UN CAMBIO.
+
+### Qué queda
+
+- `--deshacer` solo restaura `index.html` a HEAD si su diff trae únicamente el `ASSET_V` (la constante y los `?v=`); si trae otra cosa, va a «revisar a mano». Hoy lo restauraría entero y borraría ediciones a mano sin commit.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
