@@ -1,6 +1,14 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["dk-1division"] = {
+  2022: {
+    leagueSize: null,
+    clubs: [
+      { id:"fredericia-dk", revenue:1.653, reportType:"official_balance_sheet",
+        sourceId:"fredericia-dk-aarsrapport-2022-12-31",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.653]] },
+    ],
+  },
   2021: {
     leagueSize: null,
     clubs: [

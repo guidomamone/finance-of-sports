@@ -9,6 +9,9 @@ const fredericiaDkRevenueLinesByYear = {
   2021: [
     {"rawLabel":"Bruttofortjeneste","normalizedCategory":"lump_football_operations","amountNative":10.735834,"disclosureLevel":"aggregated"},
   ],
+  2022: [
+    {"rawLabel":"Bruttofortjeneste","normalizedCategory":"lump_football_operations","amountNative":11.524518,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Bruttofortjeneste","normalizedCategory":"lump_football_operations","amountNative":23.917977,"disclosureLevel":"aggregated"},
   ],
@@ -35,6 +38,13 @@ const fredericiaDkExpenseLinesByYear = {
     {"rawLabel":"Andre personaleomkostninger","normalizedCategory":"wages_squad","amountNative":-0.848062,"disclosureLevel":"aggregated"},
     {"rawLabel":"Af- og nedskrivninger af materielle anlægsaktiver","normalizedCategory":"depreciation","amountNative":-0.024638,"disclosureLevel":"aggregated"},
   ],
+  2022: [
+    {"rawLabel":"Lønninger","normalizedCategory":"wages_squad","amountNative":-9.655809,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Pensioner","normalizedCategory":"wages_squad","amountNative":-0.352602,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Andre omkostninger til social sikring","normalizedCategory":"wages_squad","amountNative":-0.259717,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Andre personaleomkostninger","normalizedCategory":"wages_squad","amountNative":-1.114848,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Af- og nedskrivninger af materielle anlægsaktiver","normalizedCategory":"depreciation","amountNative":-0.052482,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Lønninger","normalizedCategory":"wages_squad","amountNative":-18.988901,"disclosureLevel":"aggregated"},
     {"rawLabel":"Pensioner","normalizedCategory":"wages_squad","amountNative":-0.66129,"disclosureLevel":"aggregated"},
@@ -48,6 +58,7 @@ const fredericiaDkFiscalYearMeta = {
   2019: {"currency":"DKK","sourceId":"fredericia-dk-aarsrapport-2019","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"DKK@2019-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.149297,"tax":0,"grossDebt":4.905334,"cash":1.182138,"officialTotalRevenue":13.783959,"officialTotalExpenses":15.028301,"officialPAT":-1.393639},
   2020: {"currency":"DKK","sourceId":"fredericia-dk-aarsrapport-2020-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2020-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.169382,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":10.952864,"officialTotalExpenses":10.088332,"officialPAT":0.69515,"extraRows":[{"label":"Finansielle omkostninger","value":-0.169382},{"label":"Skat af årets resultat","value":0}],"sinDesglose":[{"renglon":"Bruttofortjeneste","lado":"revenue","importe":10.952864,"motivo":"el documento no desglosa este renglón"}]},
   2021: {"currency":"DKK","sourceId":"fredericia-dk-aarsrapport-2021-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2021-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.174109,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":10.735834,"officialTotalExpenses":10.529227,"officialPAT":0.032498,"extraRows":[{"label":"Finansielle indtægter","value":-0.000034},{"label":"Finansielle omkostninger","value":-0.174075},{"label":"Skat af årets resultat","value":0}],"sinDesglose":[{"renglon":"Bruttofortjeneste","lado":"revenue","importe":10.735834,"motivo":"el documento no desglosa este renglón"}]},
+  2022: {"currency":"DKK","sourceId":"fredericia-dk-aarsrapport-2022-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2022-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.066949,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":11.524518,"officialTotalExpenses":11.435458,"officialPAT":0.022111,"extraRows":[{"label":"Finansielle indtægter","value":0},{"label":"Finansielle omkostninger","value":-0.066949},{"label":"Skat af årets resultat","value":0}],"sinDesglose":[{"renglon":"Bruttofortjeneste","lado":"revenue","importe":11.524518,"motivo":"el documento no desglosa este renglón"}]},
   2025: {"currency":"DKK","sourceId":"fredericia-dk-aarsrapport-2025-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.016012,"tax":0.046968,"grossDebt":null,"cash":null,"officialTotalRevenue":23.917977,"officialTotalExpenses":22.527274,"officialPAT":1.421659,"extraRows":[{"label":"Finansielle indtægter","value":0.008432},{"label":"Finansielle omkostninger","value":-0.024444},{"label":"Skat af årets resultat","value":0.046968}],"sinDesglose":[{"renglon":"Bruttofortjeneste","lado":"revenue","importe":23.917977,"motivo":"el documento no desglosa este renglón"}]},
 };
 
@@ -65,7 +76,7 @@ window.CLUB_GENERIC_DATA["fredericia-dk"] = {
   presupuestoOverlayByYear: fredericiaDkPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fredericia-dk-aarsrapport-2019":{"id":"fredericia-dk-aarsrapport-2019","clubId":"fredericia-dk","title":"Fodbold Club Fredericia 1991 ApS — Årsrapport 2019 (1.1.2019-31.12.2019)","type":"official_balance_sheet","reliability":"primary"},"fredericia-dk-aarsrapport-2020-12-31":{"id":"fredericia-dk-aarsrapport-2020-12-31","clubId":"fredericia-dk","title":"Fodbold Club Fredericia 1991 — aarsrapport-2020-12-31 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary"},"fredericia-dk-aarsrapport-2025-12-31":{"id":"fredericia-dk-aarsrapport-2025-12-31","clubId":"fredericia-dk","title":"Fodbold Club Fredericia 1991 — aarsrapport-2025-12-31 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"},"fredericia-dk-aarsrapport-2021-12-31":{"id":"fredericia-dk-aarsrapport-2021-12-31","clubId":"fredericia-dk","title":"Fodbold Club Fredericia 1991 — aarsrapport-2021-12-31 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fredericia-dk-aarsrapport-2019":{"id":"fredericia-dk-aarsrapport-2019","clubId":"fredericia-dk","title":"Fodbold Club Fredericia 1991 ApS — Årsrapport 2019 (1.1.2019-31.12.2019)","type":"official_balance_sheet","reliability":"primary"},"fredericia-dk-aarsrapport-2020-12-31":{"id":"fredericia-dk-aarsrapport-2020-12-31","clubId":"fredericia-dk","title":"Fodbold Club Fredericia 1991 — aarsrapport-2020-12-31 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary"},"fredericia-dk-aarsrapport-2025-12-31":{"id":"fredericia-dk-aarsrapport-2025-12-31","clubId":"fredericia-dk","title":"Fodbold Club Fredericia 1991 — aarsrapport-2025-12-31 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"},"fredericia-dk-aarsrapport-2021-12-31":{"id":"fredericia-dk-aarsrapport-2021-12-31","clubId":"fredericia-dk","title":"Fodbold Club Fredericia 1991 — aarsrapport-2021-12-31 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary"},"fredericia-dk-aarsrapport-2022-12-31":{"id":"fredericia-dk-aarsrapport-2022-12-31","clubId":"fredericia-dk","title":"Fodbold Club Fredericia 1991 — aarsrapport-2022-12-31 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"}});
 
 gestionesByClub["fredericia-dk"] = {"actual":{"nombre":"Morten Rahbek Hansen (formand)","firstYear":2019,"lastYear":2019}};
 

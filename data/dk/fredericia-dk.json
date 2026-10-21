@@ -40,6 +40,13 @@
       "title": "Fodbold Club Fredericia 1991 — aarsrapport-2021-12-31 (ejercicio 2021)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "fredericia-dk-aarsrapport-2022-12-31",
+      "club_id": "fredericia-dk",
+      "title": "Fodbold Club Fredericia 1991 — aarsrapport-2022-12-31 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "management": [{"id":"actual","name":"Morten Rahbek Hansen (formand)","first_year":2019,"last_year":2019}],
@@ -153,6 +160,41 @@
           {"label":"Skat af årets resultat","amount":0}
         ],
         "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":10.735834,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "DKK",
+      "source_id": "fredericia-dk-aarsrapport-2022-12-31",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2022-12-31"},
+      "revenue": [{"label":"Bruttofortjeneste","category":"undisclosed","subcategory":"lump_football_operations","amount":11.524518,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-9.655809,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-0.352602,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.259717,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andre personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-1.114848,"disclosure":"aggregated"},
+        {
+          "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.052482,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.066949,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":11.524518,"expenses":11.435458,"net_result":0.022111},
+      "adjustments": {
+        "extra_rows": [{"label":"Finansielle indtægter","amount":0},{"label":"Finansielle omkostninger","amount":-0.066949},{"label":"Skat af årets resultat","amount":0}],
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":11.524518,"reason":"el documento no desglosa este renglón"}]
       }
     },
     {
