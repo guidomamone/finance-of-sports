@@ -68,7 +68,7 @@ function leerXhtml(src, capas) {
     if (!cierra) {
       const estilo = (attrs.match(/style="([^"]*)"/) || [])[1] || '';
       const oc = /display:\s*none/.test(estilo) || n === 'ix:header' || n === 'style' || n === 'script' || n === 'head';
-      if (n === 'ix:nonfraction' && !auto) hecho = { txt: '', nombre: (attrs.match(/\bname="([^"]+)"/) || [])[1] || '', oculto: oculto > 0 || oc };
+      if (n === 'ix:nonfraction' && !auto) hecho = { txt: '', nombre: (attrs.match(/\bname="([^"]+)"/) || [])[1] || '', formato: (attrs.match(/\bformat="([^"]+)"/) || [])[1] || '', oculto: oculto > 0 || oc };
       if (!auto) pila.push({ n, oc, hecho: n === 'ix:nonfraction' ? hecho : null });
       if (oc && !auto) oculto++;
       if (oculto) continue;
@@ -96,10 +96,21 @@ function leerXhtml(src, capas) {
 }
 
 // compuerta (a): hechos VISIBLES cuyo número no está impreso en el .md (multiconjunto)
+// ESCALÓN 1: el texto del hecho, tal cual. ESCALÓN 2, solo para los que el 1 no encontró (después de que el 1 consumió los suyos): el mismo número con
+// uno o dos ceros decimales de más, con el separador decimal que dice el `format` del hecho (num-comma-decimal: «,»; num-dot-decimal: «.»).
+// Caso: FCK PSE consolidado 2023, «Resultat pr. aktie (EPS)» se ve «34,20» pero la etiqueta cubre «34,2» y el «0» quedó en el span de al lado
+// (corte del conversor ParsePort): es el mismo valor, no una cifra que falta.
 export function hechosFaltantes(lineas, hechos) {
   const bolsa = new Map(); for (const n of lineas.join('\n').match(/-?\d[\d.,]*/g) || []) { const k = n.replace(/^-/, ''); bolsa.set(k, (bolsa.get(k) || 0) + 1); }
-  const faltan = [];
-  for (const h of hechos.filter((x) => !x.oculto)) { const k = h.txt.replace(/^[-–(]|\)$/g, ''); if (!k || !/\d/.test(k)) continue; const c = bolsa.get(k); if (c) bolsa.set(k, c - 1); else faltan.push(h); }
+  const toma = (k) => { const c = bolsa.get(k); if (!c) return false; bolsa.set(k, c - 1); return true; };
+  const clave = (h) => h.txt.replace(/^[-–(]|\)$/g, '');
+  const visibles = hechos.filter((x) => !x.oculto && /\d/.test(clave(x)));
+  const sinEscalon1 = visibles.filter((h) => !toma(clave(h)));
+  const faltan = sinEscalon1.filter((h) => {
+    const sep = /comma-decimal|numcommadecimal/i.test(h.formato) ? ',' : /dot-decimal|numdotdecimal/i.test(h.formato) ? '.' : null;
+    const k = clave(h); if (!sep || !k.includes(sep)) return true;
+    return !(toma(`${k}0`) || toma(`${k}00`));
+  });
   return { faltan, ocultos: hechos.filter((x) => x.oculto) };
 }
 
