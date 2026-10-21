@@ -1,5 +1,25 @@
 # Rama `pantallas`
 
+## Pantallas 6 (2026-10-20)
+
+### Qué cambió (para CHANGELOG)
+
+- 241 paso 2: `js/principal.js` lee y escribe la ruta. Finanzas con club es `/club/<id>`, Ligas con liga es `/liga/<id>` (la query sin `tab`, `club` ni
+  `liga`; `anios`, `anio`, `moneda` y el resto igual que antes); las demás pestañas vuelven a `/`. Lee `window.FOS_RUTA` (solo la primera vez) o el pathname
+  (`.html` opcional); un id viejo pasa por `data/club-aliases.js`. Cambiar de club o de liga suma una entrada al historial ("atrás" vuelve al anterior).
+  `?tab=finanzas&club=…` sigue andando y se reescribe a la ruta. Sin http (file://) las rutas no se tocan. Al arrancar esconde `#pagina-estatica` (el texto
+  sin JS de la página generada) si existe. Verificado en el preview con páginas temporales, a escritorio y 375 px: abrir, cambiar club y liga, atrás y
+  adelante, id viejo, Inicio. El esconder `#pagina-estatica` no se probó en el navegador. ASSET_V 1530, `fuentes` regenerado.
+
+### Qué queda (para TODO)
+
+- Pipeline: la página generada necesita `<base href="/">` y `window.FOS_RUTA` antes de los scripts, y el texto sin JS dentro de `id="pagina-estatica"`.
+- Netlify: el rewrite `/club/:id` → `/club/:id.html` es obligatorio; sin él, un refresh en `/club/boca-ar` da 404.
+
+### Qué deja de ser cierto en ESTADO
+
+- «El estado va en la URL» (Inicio, Ligas y navegación): club y liga viajan en la ruta (`/club/<id>`, `/liga/<id>`) y el resto en la query.
+
 ## Pantallas 4 (2026-10-20)
 
 ### Qué cambió (para CHANGELOG)

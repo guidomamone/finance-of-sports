@@ -762,6 +762,9 @@
 
   // Y recién acá entra lo que hay que mostrar: lo que pide la URL (un link compartido) y, si no pide nada, el club de la visita
   // anterior, por el mismo camino que un click en el selector.
+  // La página generada trae su texto para quien no corre JS dentro de #pagina-estatica: al arrancar la app se esconde.
+  var estatica = document.getElementById('pagina-estatica');
+  if(estatica) estatica.style.display = 'none';
   if(rutaInicial || rutaDeURL() || URL_CLAVES.some(k => new URLSearchParams(location.search).has(k))) aplicarURL();
   else {
     urlLista = true;
