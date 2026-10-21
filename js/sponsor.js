@@ -135,12 +135,11 @@ const SPONSOR_VIEW = (function(){
     actual = id;
     return cargar().then(render);
   }
-  // Se para en su sección (el botón de #mainNav está escondido; click() igual lo activa) y sube.
+  // Se para en su sección (el botón de #mainNav está escondido; click() igual lo activa); subir lo hace escribirURL() (js/principal.js).
   function abrir(id){
     return show(id).then(() => {
       const b = document.querySelector('#mainNav button[data-section="sponsor"]');
       if(b) b.click();
-      window.scrollTo(0, 0);
     });
   }
   // Desde la tarjeta "Estadio y camiseta" de Finanzas: el nombre de ese ejercicio, el club y si es sponsor ('c') o marca ('m').

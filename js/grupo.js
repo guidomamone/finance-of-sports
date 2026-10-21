@@ -122,7 +122,6 @@ const GRUPO_VIEW = (function(){
     return show(id).then(() => {
       const b = document.querySelector('#mainNav button[data-section="grupo"]');
       if(b) b.click();
-      window.scrollTo(0, 0);
     });
   }
   return { show, abrir, current: () => ({ grupo: actual }), refresh: () => { if(actual) render(); } };

@@ -177,7 +177,6 @@
   function irASeccion(id){
     const btn = document.querySelector('#mainNav button[data-section="' + id + '"]');
     if(btn) btn.click();
-    window.scrollTo(0, 0);
   }
   // Lo prende el buscador de Inicio, y lo
   // apaga selectClub() al aterrizar. Un flag y no un parámetro de selectClub() porque entre
@@ -716,11 +715,48 @@
     const nombre = m && (m[1] === 'club' ? (clubs[m[2]] || {}).displayName : ((window.LEAGUES || {})[m[2]] || {}).name);
     return nombre ? nombre + ' | ' + sitio : I18N.t('site.title', 'El deporte en Números | Las finanzas de los clubes, directo de la fuente');
   }
+  // EL SCROLL AL CAMBIAR DE VISTA, en un solo lugar: toda navegación pasa por escribirURL(). Otra vista (otra pestaña, club, liga, grupo
+  // o sponsor) arranca arriba, o en el ancla si la URL trae una; el año, la moneda o un filtro no son otra vista y no mueven nada.
+  // "Atrás", "adelante" y recargar vuelven a la altura en que se dejó esa entrada del historial (cada una lleva una clave `k`): se anota
+  // justo antes de cada click (antes de que el click redibuje y la página se achique), al apretar atrás o adelante, y en history.state
+  // cuando el scroll se detiene, para que la recarga la encuentre (Chrome no guarda un replaceState hecho en pagehide).
+  var vistaEscrita = null, restaurarScroll = true, alturas = {};
+  if('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  function claveNueva(){ return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+  function claveDeEntrada(){
+    if(!(history.state || {}).k) try { history.replaceState(Object.assign({}, history.state, { k: claveNueva() }), ''); } catch(e){}
+    return (history.state || {}).k;
+  }
+  var claveActual = claveDeEntrada();
+  function guardarScroll(){
+    // Mientras "atrás" lleva la pantalla a la entrada nueva, los clicks son del propio sitio y pisarían la altura que hay que restaurar.
+    if(aplicandoURL) return;
+    alturas[claveActual] = window.scrollY;
+    try { history.replaceState(Object.assign({}, history.state, { y: window.scrollY }), ''); } catch(e){}
+  }
+  document.addEventListener('click', guardarScroll, true);
+  // Con espera, y solo si sigue siendo la misma entrada: un replaceState por cada evento de scroll lo frena Safari.
+  var esperaScroll = null;
+  window.addEventListener('scroll', () => {
+    clearTimeout(esperaScroll);
+    const clave = claveActual;
+    esperaScroll = setTimeout(() => { if(clave === claveActual) guardarScroll(); }, 250);
+  }, { passive: true });
+  function scrollDeVista(e){
+    const vista = [e.tab, e.club, e.liga, e.grupo, e.sponsor].join('|');
+    if(vista === vistaEscrita) return;
+    vistaEscrita = vista;
+    const ancla = location.hash.length > 1 && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if(ancla) ancla.scrollIntoView();
+    else window.scrollTo(0, restaurarScroll ? alturas[claveActual] ?? (history.state || {}).y ?? 0 : 0);
+    restaurarScroll = false;
+  }
   function escribirURL(modo){
     if(!urlLista || aplicandoURL) return;
     const p = new URLSearchParams(location.search);
     URL_CLAVES.forEach(k => p.delete(k));
     const e = estadoActual();
+    scrollDeVista(e);
     let ruta = null;
     if(CON_RUTA && e.tab === 'finanzas' && e.club){ ruta = '/club/' + e.club; delete e.tab; delete e.club; }
     else if(CON_RUTA && e.tab === 'liga' && e.liga){ ruta = '/liga/' + e.liga; delete e.tab; delete e.liga; }
@@ -733,7 +769,8 @@
     // Cambiar de club (o de liga) con la barra ya en una ruta suma una entrada al historial: "atrás" vuelve al anterior.
     const antes = rutaDeURL();
     const otro = ruta && antes && ruta.split('/')[1] === antes.tipo && ruta !== '/' + antes.tipo + '/' + antes.id;
-    history[modo === 'push' || otro ? 'pushState' : 'replaceState'](null, '', url);
+    if(modo === 'push' || otro){ claveActual = claveNueva(); history.pushState({ k: claveActual }, '', url); }
+    else history.replaceState(history.state, '', url);
   }
   // Lleva la pantalla a lo que dice la URL. Un club o una liga que no existen se ignoran (el link viejo no rompe nada).
   function aplicarURL(){
@@ -782,9 +819,14 @@
       const btn = document.querySelector('#mainNav button[data-section="' + tab + '"]');
       if(btn && !btn.hidden && !btn.classList.contains('active')) irASeccion(tab);
     }).catch(err => console.error('[url] no se pudo abrir el estado de la URL', err))
-      .finally(() => { aplicandoURL = false; urlLista = true; escribirURL('replace'); });
+      .finally(() => { aplicandoURL = false; urlLista = true; escribirURL('replace'); restaurarScroll = false; });
   }
-  window.addEventListener('popstate', aplicarURL);
+  window.addEventListener('popstate', () => {
+    alturas[claveActual] = window.scrollY;
+    claveActual = claveDeEntrada();
+    restaurarScroll = true;
+    aplicarURL();
+  });
 
   // Y recién acá entra lo que hay que mostrar: lo que pide la URL (un link compartido) y, si no pide nada, el club de la visita
   // anterior, por el mismo camino que un click en el selector.
@@ -794,6 +836,7 @@
   if(rutaInicial || rutaDeURL() || URL_CLAVES.some(k => new URLSearchParams(location.search).has(k))) aplicarURL();
   else {
     urlLista = true;
+    scrollDeVista(estadoActual());
     if(clubGuardado) selectClub(clubGuardado);
   }
 
