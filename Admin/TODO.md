@@ -28,21 +28,22 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-2. 344 (Pantallas 6): Ligas ya implementada y Escocia separada; falta sacar los conteos que quedan en Inicio y probar como archivo
-3. 257 (Orden 1): skills que faltan; los chequeos aprobados, qué de CONVENCIONES pasa a skill, y cada texto de skill con tu ok
+1. 344 (Pantallas 6): sacar los conteos que quedan en Inicio y probar Ligas abierta como archivo
+2. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar; sumar 3 tools al matcher de los hooks (tu ok)
+3. 317 (Pruebas 1): revisar los 43 años sin cargar que marca `ejercicio-sin-rastro`
 
 **C. Técnico**
-6. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
+4. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
 
 **D. Orden de la casa**
-7. 338: correr todas las auditorías del proyecto (al final de A)
-8. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+5. 338: correr todas las auditorías del proyecto (al final de A)
+6. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-9. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-10. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-11. 335: mails a clubes
-12. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+7. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+8. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+9. 335: mails a clubes
+10. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,

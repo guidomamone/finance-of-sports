@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 922 — Chequeos de dónde se pierde lo decidido y candado de skills (2026-10-21) [257]
+- `audit.js` P3 `duda-resuelta-en-dudas`, `registro-sin-lector` y `medicion-sin-destino` (con `Admin/mediciones/README.md` como índice); `historia-en-doc-de-criterio` mira también ESTADO.md. `gasto.mjs` imprime el gasto A2 contra el techo del 15 %.
+- `tools/hooks/pre-tool.mjs`: el candado de skills (un cambio a una skill necesita su texto commiteado en `Admin/propuestas/`), y piden ok archivar una sesión, abrir una en Opus, abrir un worktree sin modo de permisos, escribir una regla en la memoria y un comando que edita. Aprobados por la Auditora 4.
+- Parte 7 de `Admin/propuestas/257-skills.md`: qué de CONVENCIONES pasa a skills (sin aplicar).
+
 ## Versión 921 — Ligas nueva, Escocia aparte, el anexo que abre las ventas (2026-10-21) [344 · 237 · celtic-gb, mafra-pt, asroma-it]
 - 344: la lista de Ligas como el mockup aprobado (filtros de deporte, región e informes; agrupar por país, deporte o nivel; orden; estado en la URL). Sin conteos de clubes cargados ni plata en el encabezado de liga ni en las tarjetas de Inicio; el ranking y «La liga en total» quedan.
 - Escocia es un país aparte (`COUNTRIES.SCT`, la Premiership escocesa con `country:'SCT'`); `CLUB_NATION` y `nationOf()` en `data/leagues.js` dan el país de un club sin cambiar ids ni carpetas (Celtic). La regla de Gales (el país de una liga es el de su federación; el de un club, donde está) en `CONVENCIONES-DATOS.md`.
