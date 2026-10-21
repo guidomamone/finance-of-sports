@@ -18,7 +18,8 @@ que dice `ESTADO.md` era verdad ese día.
 ---
 
 ## Versión 919 — Skill de deploy; Ligas aprobada (2026-10-21) [257 · 344 · 237 · 317 · 319]
-- Skill nueva `deploy-y-release-finance-of-sports` (qué chequear antes del push y cómo verificar producción), con el ok de Guido; CLAUDE.md la nombra.
+- Skills nuevas `deploy-y-release-finance-of-sports` (antes del push y después) y `producto-y-pantalla-finance-of-sports` (mockup, ok, construir, verificar servido, como archivo y en celular), con el ok de Guido; CLAUDE.md las nombra.
+- 317: la Auditora 4 aprobó con cambios el chequeo de huecos de años y rechazó el de atraso como chequeo aparte.
 - 344: Guido aprobó el mockup de Ligas sin conteos ni plata; se sacan los conteos del encabezado de liga y de Inicio; Escocia se separa.
 - 237 al: la Auditora 4 aprobó el diseño con dos cambios (sin codear).
 - 317: Postgres local con los 320 clubes no sirve para decidir cuándo `data/*.js` deja de alcanzar; no se migra (`Admin/mediciones/317-supabase.md`). 319: repo verificado, sin instalar. 318: sin probar (pide Docker).
