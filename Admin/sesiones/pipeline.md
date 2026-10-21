@@ -259,6 +259,11 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 - `audit.js` (`7795f1744b`): `liga-una-fuente` P3 por liga y `liga-fuentes-no-coinciden` P2 por club-año, con el alcance de la Auditora (asignaciones nuevas desde 2026-10-22 y las no exactas vigentes): 17 líneas P3 (61 club-años), 0 P2. La Auditora lo aceptó así (sin restringir a 2 club-años: un club-año suelto es justo el caso de riesgo).
 - Punto 9, `referencia-a-club-inexistente` (P1, `03c247da8e`, Auditora 5 con un cambio: un id viejo que resuelve `data/club-aliases.js` no cuenta). Hoy 0; en un worktree de mentira, un id falso en `alias.json` y otro en `data/club-leagues/ar.js` dan 2 P1; `boca` (→ boca-ar), 0.
 
+### 12. Pedidos de Onboarding 8: Genoa 2024 y la nota del tramo corto al recargar
+
+- Genoa 2024: el «provento da consolidato fiscale» 280.131 (L419) iba como costo del impuesto; con el impuesto mal, el escalón «17) resta» (que ya resuelve el financiero, −4.788.914, L399) no entraba porque exige que cierre el resultado. Un escalón «signo del impuesto por las sumas» (`00d729644d`) lo resolvía cambiando solo Genoa 2024 de 974 documentos, pero un patrón de un solo club es un parche (sección 8): revertido (`1e5f028b6d`) y anotado en HALLAZGOS (`3e89afb825`) para el tercer documento. Se resuelve con el ajuste que ya dejó Onboarding: con el código de HEAD y SOLO el ajuste del impuesto (−280.131, `--reemplaza-linea 419`), la verificación da ok (impuesto 2.253.415, financiero −4.788.914, resultado −38.831.182). Los otros 4 ajustes de prueba de Genoa 2024 (las filas financieras de L394, L398 y L399) hay que anularlos (`ajustes.mjs --anular`): con ellos el financiero sale mal.
+- `cargar.mjs` (`16b8388901`): con `--reemplazar` y la fuente ya existente, la nota de transición o de primer ejercicio se agrega al final de la nota pública si no está. Atalanta 2022 en un worktree de mentira: sin la nota, la recarga la pone igual a la que puso Onboarding; una segunda recarga no la repite.
+
 ### Qué queda (Pipeline 14)
 
 - Sumar RSSSF liga por liga con `segunda-fuente-liga.mjs`, empezando por pt-primeiraliga (8), gr-superleague (7) y be-challengerproleague (6): cada una baja su P3 (lo pide la principal a una sesión de datos) → TODO nuevo (datos).

@@ -143,6 +143,15 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 - **Un renglón con hijos que se deja en una línea (Onboarding 8, 2026-10-21; caso Girona 2021-23):** necesita un `fila` que reemplaza el primer hijo con el total del renglón y otro `fila` en 0 para cada hijo restante; si no, `verificar.mjs` cuenta la cifra dos veces y el resultado no cierra (ingresos 31,38 en vez de 21,61 M). Al tercer documento de dos clubes pasa a mejora general (sección 8 de `auditoria-finance-of-sports`).
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **Una fila del impuesto que es un ingreso impreso en positivo (Pipeline 14, 2026-10-21): hoy va por ajuste; al tercer documento de 2 clubes o
+  más, escalón.** El esquema italiano trae «proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale» entre las imposte,
+  en positivo cuando es un provento que BAJA el impuesto. verificar.mjs lo suma como costo y el resultado no cierra; y como el escalón «17) resta»
+  exige que cierre el resultado entero, el financiero tampoco se corrige. Casos: Genoa 2024 (.md L419, 280.131; total L420 2.253.415 = 1.007.712
+  + 1.525.834 − 280.131) y Genoa 2023 (+12.799, con el mismo criterio): un solo club. Hoy se resuelve con un ajuste `fila --lado impuesto --valor
+  "-<importe>" --reemplaza-linea <L>`: con él cierra el impuesto, entra el «17) resta» y el resultado da el impreso (Genoa 2024: −38.831.182).
+  El escalón medido y revertido (`00d729644d`, `1e5f028b6d`): si las filas del impuesto no suman el total impreso después de ellas, la ÚNICA
+  combinación de signos (hasta 6 filas) que lo da, como el 17-bis; sobre los 974 documentos con verificación cambiaba solo Genoa 2024. Retomar
+  cuando otro club traiga el mismo patrón (3 documentos de 2 clubes, sección 8 de la auditoría).
 - **Brøndby 2025: `ProfitLoss` ambiguo en el XHTML (Pipeline 14, 2026-10-21): es un error de etiquetado del informe, no del perímetro.** Una sola
   entidad (LEI 213800DAZ89VABJPBD93). El estado de resultados está bien: «Årets resultat −130.578 | −104.164», con −130.578 en el contexto
   2024-07-01..2025-06-30 y −104.164 en 2023-01-01..2024-06-30 (18 meses). El estado de cambios en el patrimonio etiqueta las dos filas «Årets
