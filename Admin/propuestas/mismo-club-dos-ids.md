@@ -15,3 +15,7 @@ Cuando dos fichas parecen el mismo club, no se decide de memoria: se decide con 
    - **no se puede saber** (falta el número en los documentos) → queda como está y la pregunta va a `Admin/dudas-por-club.md`.
 3. **Quién decide:** la Auditora, con la evidencia del punto 1 en `Admin/registros/auditoria-proceso.jsonl`. Si la tabla no alcanza, se vota (`votacion-de-criterios`). Guido no decide de memoria: ve el resultado.
 4. **Cómo se aplica:** el cambio de id lo hace una sesión de datos con `tools/migrar-v2.mjs` de modelo (alias, redirect 301 de `fuentes/` en `netlify.toml`, `data/club-leagues/`), con `audit.js` sin P0 ni P1 y el trailer `Corrige:`.
+
+## Cómo mantener esta skill
+
+(Aprobado por Guido el 2026-10-21: «aprobado». Va antes de «Cómo mantener esta skill».)
