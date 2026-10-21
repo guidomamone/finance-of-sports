@@ -151,6 +151,42 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 42
    }
   },
+  "2021": {
+   "auditor": {
+    "nombre": "ADN Gafisa Barcelona Auditors, S.L.P.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.md",
+    "linea": 45
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "ADN Gafisa Barcelona Auditors, S.L.P.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/España/Girona FC/cuentas-anuales-2021-2022.md",
+    "linea": 55
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "ADN Gafisa Barcelona Auditors, S.L.P.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/España/Girona FC/cuentas-anuales-2022-2023.md",
+    "linea": 36
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "ADN Gafisa Barcelona Auditors, S.L.P.",

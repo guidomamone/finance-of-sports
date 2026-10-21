@@ -301,6 +301,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": null
   },
+  "2019": {
+   "auditor": {
+    "nombre": "RL Solutions Auditores & Consultores",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md",
+    "linea": 2143
+   }
+  },
   "2021": {
    "auditor": null,
    "dictamen": "sin_informe",
@@ -1002,6 +1014,42 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 37
    }
   },
+  "2018": {
+   "auditor": {
+    "nombre": "Floresta Auditores Independentes S/S",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.md",
+    "linea": 41
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "Floresta Auditores Independentes S/S",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.md",
+    "linea": 39
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "Floresta Auditores Independentes S/S",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2020.md",
+    "linea": 40
+   }
+  },
   "2021": {
    "auditor": {
     "nombre": "BDO",
@@ -1181,6 +1229,12 @@ Object.assign(window.CLUB_AUDITORIA, {
  },
  "novorizontino-br": {
   "2010": {
+   "auditor": null,
+   "dictamen": "sin_informe",
+   "continuidad": false,
+   "fuente": null
+  },
+  "2012": {
    "auditor": null,
    "dictamen": "sin_informe",
    "continuidad": false,
