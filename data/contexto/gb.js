@@ -57,6 +57,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"W88","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"96.com","marca":"Castore","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
+  'burtonalbion-gb': {
+    2025: {"estadio":"Pirelli Stadium","capacidad":6912,"sponsor":"Burton Kia","marca":"TAG Sportswear","temporada":"2024–25 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378041093","fuenteManual":"https://www.footballkitarchive.com/burton-albion-2024-25-home-kit/ (marca TAG) y la referencia de https://en.wikipedia.org/wiki/Burton_Albion_F.C. «Burton Kia are 24/25 front of shirt sponsor»; capacidad: misma página de Wikipedia","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'celtic-gb': {
     2021: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","fuente":"https://en.wikipedia.org/wiki/Celtic_Park","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"}},
     2022: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","fuente":"https://en.wikipedia.org/wiki/Celtic_Park","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"}},

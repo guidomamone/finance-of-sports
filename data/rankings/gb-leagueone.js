@@ -8,6 +8,9 @@ window.RANKINGS["gb-leagueone"] = {
       { id:"barnsley-gb", revenue:15.328, reportType:"official_balance_sheet",
         sourceId:"barnsley-gb-medium-accounts-2024-25-ixbrl",
         mix:[["Comercial / Sponsors",1.751],["Estadio",5.294],["Televisión",4.483],["Venta de Jugadores",1.248],["Otros ingresos",2.552]] },
+      { id:"burtonalbion-gb", revenue:9.28, reportType:"official_balance_sheet",
+        sourceId:"burtonalbion-gb-burton-full-accounts-2024-25-ixbrl",
+        mix:[["Comercial / Sponsors",3.634],["Estadio",1.237],["Televisión",3.918],["Venta de Jugadores",0.322],["Otros ingresos",0.17]] },
     ],
   },
   2022: {

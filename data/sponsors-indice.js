@@ -2384,6 +2384,7 @@ window.SPONSORS_INDICE = [
   ["t33","T33",["m"]],
   ["tadel-s-a","Tadel S.A.",["c"]],
   ["tag","TAG",["m"]],
+  ["tag-sportswear","TAG Sportswear",["m"]],
   ["taif","TAIF",["c"]],
   ["talasur-group","Talasur Group",["c"]],
   ["talkeasy","TalkEasy",["c"]],

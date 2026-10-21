@@ -24,4 +24,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'celtic-gb': { 2025: 'gb-scottishpremiership', 2021: 'gb-scottishpremiership', 2022: 'gb-scottishpremiership', 2023: 'gb-scottishpremiership', 2024: 'gb-scottishpremiership' },
   'afcwimbledon-gb': { 2025: 'gb-leaguetwo' },
   'barnsley-gb': { 2025: 'gb-leagueone' },
+  'burtonalbion-gb': { 2025: 'gb-leagueone' },
 });
