@@ -18,7 +18,7 @@ que dice `ESTADO.md` era verdad ese día.
 ---
 
 ## Versión 919 — Skill de deploy; Ligas aprobada (2026-10-21) [257 · 344 · 237 · 317 · 319]
-- Skills nuevas `deploy-y-release-finance-of-sports` (antes del push y después) y `producto-y-pantalla-finance-of-sports` (mockup, ok, construir, verificar servido, como archivo y en celular), con el ok de Guido; CLAUDE.md las nombra.
+- Skills nuevas `deploy-y-release-finance-of-sports` (antes del push y después) `producto-y-pantalla-finance-of-sports` (mockup, ok, construir, verificar servido, como archivo y en celular) y `contenido-y-difusion-finance-of-sports` (una publicación con dato verificado y fuente), con el ok de Guido; CLAUDE.md las nombra.
 - 317: la Auditora 4 aprobó con cambios el chequeo de huecos de años y rechazó el de atraso como chequeo aparte.
 - 344: Guido aprobó el mockup de Ligas sin conteos ni plata; se sacan los conteos del encabezado de liga y de Inicio; Escocia se separa.
 - 237 al: la Auditora 4 aprobó el diseño con dos cambios (sin codear).
