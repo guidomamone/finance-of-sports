@@ -10,9 +10,6 @@
   `data/informes.js` (`window.INFORMES`, un renglón por informe y edición, textos con `{es, en}`): UEFA ECFIL 2025 (link a su página oficial, que da 200; el PDF
   directo no se halló), Deloitte ARFF 2026 (PDF oficial, 200) e IFR State of the Game 2026 (PDF, 206; borrador). Deloitte e IFR figuran en Premier, Championship,
   League One y League Two. Verificado en el preview a escritorio y 375 px, sin desborde. ASSET_V 1532, `fuentes` regenerado.
-- Decisiones mías a revisar: la cifra de la UEFA es «más de €30.000 M en 2025» (la UEFA la proyecta) y la del IFR «94% de los clubes con pérdida en 2025/26»
-  (la sección 1 de `informes-futbol-ingles.md` no dice sobre qué conjunto de clubes es el 94%: conviene mirar la página del `.md` antes de publicar).
-
 ### Qué queda (para TODO)
 
 - El bloque solo sale si la liga tiene ranking cargado (una liga sin datos, como Scottish Premiership, no muestra informes ni los de Europa).

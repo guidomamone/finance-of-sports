@@ -39,7 +39,7 @@ window.INFORMES = [
     ligas: ['gb-premierleague', 'gb-championship', 'gb-leagueone', 'gb-leaguetwo'],
     cubre: { es: 'Las cinco divisiones de hombres de Inglaterra, agregado por división (sin balance por club). Borrador en consulta.', en: 'England’s five men’s divisions, aggregated by division (no club-by-club accounts). Draft under consultation.' },
     frase: { es: '¿Qué tan sana es la economía del fútbol inglés y dónde están los riesgos de todo el sistema?', en: 'How healthy is English football’s economy and where are the system-wide risks?' },
-    cifra: { es: '94% de los clubes con pérdida en 2025/26 (datos reales y proyectados).', en: '94% of clubs make a loss in 2025/26 (actual and projected data).', fuente: 'IFR, State of the Game 2026', borrador: true },
+    cifra: { es: '94% de los clubes de las cinco primeras divisiones inglesas, con pérdida antes de impuestos en 2025/26 (datos reales y proyectados).', en: '94% of clubs in England’s top five divisions make a loss before tax in 2025/26 (actual and projected data).', fuente: 'IFR, State of the Game 2026', borrador: true },
     url: 'https://sotg.footballregulator.org.uk/api/media/file/IFR%20State%20of%20the%20Game%20Report.pdf',
     urlTipo: 'pdf'
   }
