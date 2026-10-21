@@ -672,6 +672,20 @@ function checkParrafoNetlifyDuplicado() {
 // decisión va a mano, con el motivo escrito, como el resto de audit-ignore.json.
 const RUTA_EN_TEXTO = /^[A-Za-z0-9_][A-Za-z0-9_./-]*\.(md|js|html|json|toml|xml)$/;
 
+// Los .md de .claude/skills/, a cualquier profundidad, con su ruta relativa a la raíz.
+function mdsDeSkills() {
+  const out = [];
+  (function walk(d) {
+    let entradas;
+    try { entradas = fs.readdirSync(path.join(ROOT, d), { withFileTypes: true }); } catch { return; }
+    for (const e of entradas) {
+      const rel = `${d}/${e.name}`;
+      if (e.isDirectory()) walk(rel); else if (e.name.endsWith('.md')) out.push(rel);
+    }
+  })('.claude/skills');
+  return out.sort();
+}
+
 function archivosVivos() {
   const hay = rel => fs.existsSync(path.join(ROOT, rel));
   const dir = (d, filtro) => {
@@ -685,7 +699,8 @@ function archivosVivos() {
     ...dir('js', js), ...dir('tools', n => js(n) || n.endsWith('.json')),
     ...dir('data', js), ...dir('data/lang', js),
     ...dir('data/club-leagues', js), ...dir('data/rankings', js),
-    ...dir('.claude/skills', () => true).map(d => `${d}/SKILL.md`),
+    // Todos los .md de las skills (to-do 327, C-10): paises/, referencia/, worktree.md… no solo cada SKILL.md.
+    ...mdsDeSkills(),
     // Admin/ menos los dos históricos. Archive/ no entra: es una subcarpeta.
     ...dir('Admin', n => n.endsWith('.md') || n.endsWith('.html'))
       .filter(f => !/CHANGELOG\.md$|finance-of-sports-project\.md$/.test(f)),
