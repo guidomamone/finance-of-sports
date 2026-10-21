@@ -100,7 +100,8 @@ function main() {
     for (const [year, entry] of Object.entries(years)) {
       if (anio && year !== String(anio)) continue;
       const hit = entry.clubs.find((c) => normalize(c).includes(q) || q.includes(normalize(c)));
-      if (hit) { const alias = aliasDe(hit); matches.push({ leagueId, year, matchedName: hit, wikipediaPage: entry.wikipediaPage, exacta: normalize(hit) === q || !!alias, alias }); }
+      // fuentes: cuántas listas independientes tiene esa liga-temporada (sin `fuentes`, solo Wikipedia); regla «la liga de un año necesita dos fuentes»
+      if (hit) { const alias = aliasDe(hit); matches.push({ leagueId, year, matchedName: hit, wikipediaPage: entry.wikipediaPage, exacta: normalize(hit) === q || !!alias, alias, fuentes: (entry.fuentes || []).length || 1 }); }
     }
   }
 
@@ -114,7 +115,7 @@ function main() {
     logMiss(query, pais, anio);
     return;
   }
-  matches.forEach((m) => console.log(`${m.leagueId} ${m.year}: "${m.matchedName}" (${m.wikipediaPage})${m.alias ? ` · alias de ${m.alias} (alias.json)` : m.exacta ? '' : ' · NO EXACTA'}`));
+  matches.forEach((m) => console.log(`${m.leagueId} ${m.year}: "${m.matchedName}" (${m.wikipediaPage}; ${m.fuentes} fuente${m.fuentes === 1 ? '' : 's'})${m.alias ? ` · alias de ${m.alias} (alias.json)` : m.exacta ? '' : ' · NO EXACTA'}`));
   const noExactas = matches.filter((m) => !m.exacta);
   if (noExactas.length) console.log(`\nAVISO: ${noExactas.length} coincidencia(s) NO EXACTA(S) (${[...new Set(noExactas.map((m) => `"${m.matchedName}"`))].join(', ')}): el nombre de la lista no es "${query}" ni un alias${club ? ` de ${club}` : ''} en alias.json. Puede ser otro club con un nombre parecido (caso: "La Louvière Centre" no es RAAL La Louvière). Confirmalo en la página del club antes de usarla.`);
   console.log('\nOJO: esto es una caché de un roster ya bajado, no la fuente de verdad. Confirmar igual antes de cargar el dato en data/club-leagues/<iso2>.js.');

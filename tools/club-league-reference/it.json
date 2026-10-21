@@ -1129,6 +1129,40 @@
           "Cagliari",
           "Genoa",
           "Venezia"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Serie_A"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesi/ital2022.html",
+            "tabla": "Serie A",
+            "fetchedAt": "2026-10-21T17:18:14.391Z",
+            "equipos": [
+              "Milan AC",
+              "FC Internazionale",
+              "SSC Napoli",
+              "Juventus FC",
+              "SS Lazio",
+              "AS Roma",
+              "AC Fiorentina",
+              "Atalanta BC",
+              "Hellas Verona FC",
+              "Torino FC",
+              "US Sassuolo",
+              "Udinese Calcio",
+              "Bologna FC",
+              "Empoli FC",
+              "UC Sampdoria",
+              "Spezia Calcio",
+              "US Salernitana",
+              "Cagliari Calcio",
+              "Genoa CFC",
+              "Venezia FC"
+            ]
+          }
         ]
       },
       "2023": {

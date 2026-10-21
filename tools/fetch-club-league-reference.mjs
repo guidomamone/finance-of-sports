@@ -205,6 +205,8 @@ function guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion })
   const cachePath = resolve(refDir, `${pais}.json`);
   const cache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : { leagues: {} };
   cache.leagues[leagueId] = cache.leagues[leagueId] || {};
+  // `fuentes` (regla «la liga de un año necesita dos fuentes»): esta página es la de Wikipedia; las otras (tools/segunda-fuente-liga.mjs) se conservan
+  const otras = (cache.leagues[leagueId][year]?.fuentes || []).filter((f) => f.tipo !== 'wikipedia');
   cache.leagues[leagueId][year] = {
     wikipediaPage: wikipediaTitle,
     lang,
@@ -212,6 +214,7 @@ function guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion })
     fetchedAt: new Date().toISOString(),
     clubs: teams,
     ...(posiciones ? { posiciones } : {}),
+    fuentes: [{ tipo: 'wikipedia', url: `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(wikipediaTitle.replace(/ /g, '_'))}` }, ...otras],
   };
   writeFileSync(cachePath, JSON.stringify(cache, null, 2) + '\n', 'utf8');
 
