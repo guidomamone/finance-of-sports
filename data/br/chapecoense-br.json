@@ -260,7 +260,7 @@
         },
         {"label":"Acidente Aéreo Chapecoense","category":"exceptional","subcategory":"exceptional_items","amount":-21.217,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.018,"tax":-0.013,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.018,"tax":-0.013,"gross_debt":null,"cash":2.593},
       "official_totals": {"revenue":75.245,"expenses":100.752,"net_result":-50.756},
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":0.392},{"label":"Despesas Financeiras","amount":-4.41},{"label":"IR e CSLL","amount":-0.013}],
@@ -476,7 +476,7 @@
         {"label":"Demais Gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.75,"disclosure":"aggregated"},
         {"label":"Tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.234,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":4.824,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":4.824,"tax":0,"gross_debt":null,"cash":0.06},
       "official_totals": {"revenue":36.714,"expenses":35.404,"net_result":6.134},
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":6.491},{"label":"Despesas Financeiras","amount":-1.667}],

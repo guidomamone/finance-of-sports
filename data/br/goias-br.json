@@ -1142,7 +1142,7 @@
         {"label":"Serviços gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-1.315438,"disclosure":"aggregated"},
         {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.512121,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.167529,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.167529,"tax":0,"gross_debt":null,"cash":0.31071},
       "official_totals": {"revenue":75.150413,"expenses":63.651475,"net_result":9.328969}
     },
     {
@@ -1246,7 +1246,7 @@
         {"label":"Serviços gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.963973,"disclosure":"aggregated"},
         {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-1.171809,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.401072,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.401072,"tax":0,"gross_debt":null,"cash":10.433197},
       "official_totals": {"revenue":90.846836,"expenses":85.64047,"net_result":2.801865},
       "adjustments": {
         "no_breakdown": [{"line":"RECEITA LÍQUIDA","side":"revenue","amount":90.846836,"reason":"el documento no desglosa este renglón"}],
@@ -1359,7 +1359,7 @@
         {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.248876,"disclosure":"aggregated"},
         {"label":"OUTRAS RECEITAS E (DESPESAS)","category":"exceptional","subcategory":"exceptional_items","amount":-3.826628,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":6.248292,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":6.248292,"tax":0,"gross_debt":null,"cash":0.05095},
       "official_totals": {"revenue":85.971659,"expenses":91.492245,"net_result":-3.098919},
       "adjustments": {
         "no_breakdown": [{"line":"RECEITA LÍQUIDA","side":"revenue","amount":85.971659,"reason":"el documento no desglosa este renglón"}],

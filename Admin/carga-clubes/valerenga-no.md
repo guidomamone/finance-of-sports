@@ -79,6 +79,10 @@ Generados/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.categorias.j
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 2 (compuerta: documento anterior): "Sertifikatlån" pág. 4; cash escalón 1 (compuerta: documento anterior): "Bankinnskudd, kontanter o. l." pág. 3
+```
+
 ### Liga
 
 ```text
@@ -121,6 +125,10 @@ Generados/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.categorias.j
 ```text
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): perimetro = individual. El club en el sitio es Vålerenga Fotball AS (individual, como el 2025 cargado); los otros documentos de 2024 son de Vålerenga Fotball Elite AS y de la asociación (FLI)
 tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 2 (compuerta: documento siguiente): "Sertifikatlån" pág. 4; cash escalón 1 (compuerta: documento siguiente): "Bankinnskudd, kontanter o. l." pág. 3
 ```
 
 ## 2023
@@ -183,6 +191,10 @@ Generados/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.categorias.j
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): suma-con = Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2023.pdf. Vålerenga: el AS y el Elite no consolidan; el ejercicio suma los dos sin contar dos veces la transferencia del AS al Elite (to-do 283)
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): estado = b2. El estado de resultados es el bloque b2 (pág. 2); b3 solo trae el encabezado de año y la fila 'Sum overføringer og disponeringer', que no es ingreso ni gasto
 tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 2 (compuerta: documento siguiente): "Sertifikatlån" pág. 5; cash escalón 1 (compuerta: documento siguiente): "Bankinnskudd, kontanter o. l." pág. 4
 ```
 
 ### Liga
@@ -249,6 +261,10 @@ Generados/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2022.categorias.j
 ```text
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): perimetro = individual. Ni el AS ni el Elite consolidan al otro (to-do 283): cada documento es individual; el ejercicio suma los dos con el ajuste suma-con del AS
 tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 1 (compuerta: documento siguiente): "Bankinnskudd, kontanter o. l." pág. 4
 ```
 
 ### Liga

@@ -173,6 +173,10 @@ tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 2 (compuerta: año anterior): "Leasingforpligtelser" pág. 13 + "Ansvarlig lånekapital" pág. 13 + "Kortfristet del af langfristede gældsforpligtelser" pág. 13; cash escalón 1 (compuerta: año anterior): "Likvide beholdninger" pág. 12
+```
+
 ### Liga
 
 ```text
