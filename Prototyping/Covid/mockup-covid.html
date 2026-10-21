@@ -9,20 +9,20 @@
   --bg:#f6f7f9; --card:#ffffff; --ink:#18202c; --muted:#5f6b7a; --line:#dde2ea;
   --azul:#0a2b5c; --azul-soft:#e7eef9; --oro:#f2b705;
   --nota:#a3321f; --nota-bg:#fdeeea;
-  --boom:#ffd23f; --boom-line:#0a2b5c; --boom-txt:#b3122b; --boom-halo:#ffffff;
+  --boom:#0a2b5c; --boom-line:#0a2b5c; --boom-txt:#ffffff;
   --neg:#b3261e;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0f141c; --card:#171d28; --ink:#e8ecf2; --muted:#9aa5b5; --line:#2a3342;
   --azul:#9db9ee; --azul-soft:#1a2740; --oro:#f2b705;
   --nota:#f0a898; --nota-bg:#2e1a16;
-  --boom:#ffd23f; --boom-line:#f3f5f9; --boom-txt:#b3122b; --boom-halo:#ffffff;
+  --boom:#9db9ee; --boom-line:#9db9ee; --boom-txt:#0f141c;
   --neg:#f2b8b5; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0f141c; --card:#171d28; --ink:#e8ecf2; --muted:#9aa5b5; --line:#2a3342;
   --azul:#9db9ee; --azul-soft:#1a2740; --oro:#f2b705;
   --nota:#f0a898; --nota-bg:#2e1a16;
-  --boom:#ffd23f; --boom-line:#f3f5f9; --boom-txt:#b3122b; --boom-halo:#ffffff;
+  --boom:#9db9ee; --boom-line:#9db9ee; --boom-txt:#0f141c;
   --neg:#f2b8b5; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;
@@ -43,13 +43,12 @@ button{font:inherit;color:inherit;cursor:pointer}
 .dos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
 @media (max-width:760px){.dos{grid-template-columns:1fr}}
 /* LA MARCA: un estallido de historieta con COVID adentro. SVG inline, el texto es real (se puede seleccionar y lo lee el lector de pantalla). */
-.covid{display:inline-block;position:relative;line-height:0;outline-offset:3px;cursor:help;transform:rotate(-7deg)}
+.covid{display:inline-block;position:relative;line-height:0;outline-offset:3px;cursor:help;transform:rotate(-4deg)}
 .covid svg{display:block;width:100%;height:100%;overflow:visible}
 .covid .burst{fill:var(--boom);stroke:var(--boom-line);stroke-width:3;stroke-linejoin:round}
-.covid text{font:900 italic 25px/1 Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",sans-serif;letter-spacing:.5px;fill:var(--boom-txt);
-  stroke:var(--boom-halo);stroke-width:4;paint-order:stroke;stroke-linejoin:round;text-anchor:middle}
-.covid.s{width:58px;height:35px}
-.covid.m{width:54px;height:33px}
+.covid text{font:700 17px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;letter-spacing:1px;fill:var(--boom-txt);text-anchor:middle}
+.covid.s{width:66px;height:40px}
+.covid.m{width:62px;height:38px}
 .covid.l{width:74px;height:45px}
 .covid:focus-visible{outline:2px solid var(--oro)}
 .tip{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%) rotate(7deg);width:max-content;max-width:260px;background:var(--ink);color:var(--bg);
@@ -65,7 +64,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .fin-year b{font-size:15px}
 .fin-year span.t{font-size:12px;color:var(--muted)}
 .fin-year.on{border-color:var(--azul);box-shadow:inset 0 0 0 1px var(--azul)}
-.fin-year .covid{position:absolute;right:-10px;top:-27px}
+.fin-year .covid{position:absolute;right:-12px;top:-30px}
 /* B: la cabecera de la tabla de varios ejercicios */
 .tabla{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
 table{border-collapse:collapse;width:100%;min-width:520px;font-size:13.5px}
@@ -95,7 +94,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;ba
   <header class="sec">
     <div class="kick">Mockup · marca COVID · solo para aprobar, no hay nada implementado</div>
     <h1>La pandemia, marcada en el ejercicio</h1>
-    <p class="lede">La palabra «COVID» dentro de un estallido de historieta, pegada al ejercicio y no escrita en una nota. Aparece en todo ejercicio cuyo cierre cae entre el 31 de marzo de 2020 y el 31 de diciembre de 2021. Se deriva de la fecha de cierre que el sitio ya calcula para cada ejercicio (<code>cierreEjercicio()</code>): no hay campo nuevo. Los números son los reales de Juventus y de Atalanta.</p>
+    <p class="lede">La palabra «COVID» dentro de un recuadro con borde de estallido, pegada al ejercicio y no escrita en una nota. Aparece en todo ejercicio cuyo cierre cae entre el 31 de marzo de 2020 y el 31 de diciembre de 2021. Se deriva de la fecha de cierre que el sitio ya calcula para cada ejercicio (<code>cierreEjercicio()</code>): no hay campo nuevo. Los números son los reales de Juventus y de Atalanta.</p>
     <button class="tema" id="tema" type="button" aria-pressed="false">Ver en modo oscuro</button>
     <div class="nota"><b>Lo que hay que decidir.</b>
       <ol>
@@ -108,10 +107,10 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;ba
 
   <section class="sec">
     <div class="kick">1 · La marca</div>
-    <h2>Un estallido amarillo con COVID en rojo, en tres tamaños</h2>
+    <h2>Un estallido azul con COVID en blanco, en tres tamaños</h2>
     <div class="card">
       <div class="tamanos" id="tamanos"></div>
-      <p class="lede">Va ladeada unos 7 grados, como una onomatopeya. El amarillo es el mismo del sitio. El borde es azul en claro y blanco en oscuro, para que el estallido no se pierda sobre el fondo; el texto rojo lleva un halo blanco. Con el puntero, con el teclado (Tab) o al tocarlo, abre el globo con una línea que explica qué pasó.</p>
+      <p class="lede">Conserva el recuadro con borde de estallido, pero sobrio: azul del sitio con la palabra en blanco y tipografía de sistema en negrita, sin cursiva ni contorno. Va apenas ladeada (4 grados). En modo oscuro se invierte: azul claro con la palabra en oscuro. Con el puntero, con el teclado (Tab) o al tocarlo, abre el globo con una línea que explica qué pasó.</p>
     </div>
   </section>
 
@@ -162,7 +161,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;ba
         <li><b>Globo.</b> «Pandemia de COVID-19: entre marzo de 2020 y junio de 2021 hubo partidos suspendidos o a puertas cerradas, según el país. Los importes son los del balance, sin ajuste.» (en inglés, la misma línea).</li>
         <li><b>Teclado.</b> La marca recibe foco con Tab y muestra el globo; Escape lo cierra. En el teléfono, un toque lo abre y otro lo cierra (el mismo comportamiento que ya tienen los «?» del sitio).</li>
         <li><b>Movimiento.</b> No hay animación; el globo aparece sin transición con «reducir movimiento».</li>
-        <li><b>Color.</b> El rojo sobre el amarillo con halo blanco llega a contraste de texto grande; la palabra va en tipografía pesada de sistema (sin descargar una fuente).</li>
+        <li><b>Color.</b> Blanco sobre el azul del sitio (contraste alto) en claro, y texto oscuro sobre azul claro en oscuro; la palabra va en la tipografía de sistema, sin descargar una fuente.</li>
         <li><b>Regla.</b> Ejercicio (balance o presupuesto) con cierre entre 2020-03-31 y 2021-12-31. Hoy son 190 club-años de fútbol en 118 clubes; los importes no se tocan.</li>
       </ul>
     </div>
