@@ -7,6 +7,8 @@ description: El rol de la sesión principal de finance-of-sports (la de la carpe
 
 La principal mergea, escribe `Admin/TODO.md`, `Admin/CHANGELOG.md` y `Admin/ESTADO.md` y es la única que habla con Guido de todo el proyecto. Las otras sesiones corren en su worktree y su rama.
 
+**Modo una sola sesión.** Cuando Guido dice que trabaja todo en una sesión, no se abren worktrees ni sesiones: la principal hace cada rol ella misma, con `una-sola-sesion.md`.
+
 ## Hablarle a Guido
 
 - **Un mensaje por paso, con las decisiones numeradas y la recomendación al lado.** Sin AskUserQuestion. No partir un resultado en pedazos mientras corren tools.
