@@ -25,6 +25,22 @@
 - **f188d4345b**: el plan al día (CVC es fila aparte del Strategic Report, la votación, las respuestas a Pipeline sobre la taxonomía).
 - Bath 2023-24, pág. 22 rehecha con Mistral (abajo, en hallazgos).
 
+## Bath Rugby (paso 5): FRENADO por dos defectos de script, nada cargado
+
+- Hecho: transcripción (`pipeline.mjs`, ~US$ 0,44: 2020-21 con Mistral, validación del escaneo de 2023-24, 2024-25 rehecho con Mistral; el
+  Strategic Report de 2024-25 ahora lee bien "Central income 4.4"), más la pág. 22 de 2023-24 (US$ 0,004). Total de API: ~US$ 0,45 de US$ 2.
+- 2022-23 armado con tokens de sesión (`armar-a-mano.mjs`, 19 filas: estado b3, Strategic Report b1 en £m, nota 4 b8) y un ajuste `desglose`
+  del Turnover (44.435 £, la diferencia de redondeo, decisión 11). `verificar` cierra el resultado.
+- **Freno 1 (`Admin/registros/frenados-por-script.jsonl`)**: `verificar` acepta la nota en £m con un decimal por tolerancia, reemplaza el Turnover
+  exacto y pierde la diferencia (44.435 £ en 2022-23); el ajuste `desglose` no entra porque corre solo si `cerrarNota()` falla. Cargado así,
+  cada año tendría ~0,2 % menos de ingreso que lo impreso.
+- **Freno 2**: Jev `--desde-sesion` y `cargar.mjs` aceptan solo las categorías del fútbol (339, puntos 1 y 13).
+- Probable tercero, sin probar: partir el personal (decisión 12) con `caja-deuda.mjs --personal --partir` pide UNA fila global de gasto y Bath
+  tiene dos (Cost of sales y Administrative expenses).
+- Lo que sabe una sesión que retome: 2020-21 no abre el Turnover por tipo (va entero como bolsón); 2021-22 a 2023-24 traen "CVC income" aparte
+  (votación: `other_income`); 2023-24 tiene el Strategic Report como texto (b1, L162-166) y la nota 4 sin tabla; 2024-25 imprime los gastos sin
+  paréntesis y el impuesto "(250,554)" como crédito; el informe 2024-25 reexpresa 2024 (personal 14,25 M; otros ingresos 88.503).
+
 ## Los 4 chequeos de sumas (todos en verde)
 
 1. Los 319 `-data.js` regenerados son idénticos byte por byte (`git status` sin ningún `-data.js`).

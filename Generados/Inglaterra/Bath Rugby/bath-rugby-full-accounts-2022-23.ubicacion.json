@@ -1,0 +1,51 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md",
+ "mdSha1": "335bf48e5e3da81bb45cb9a53c87be27babb31f3",
+ "modelo": "a mano (Claude Code, sesión 2026-10-21)",
+ "generado": "2026-10-21T01:59:15.664Z",
+ "bloques": {
+  "b3": {
+   "pagina": 19,
+   "lineas": [
+    661,
+    674
+   ],
+   "tipo": "tabla"
+  },
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    151,
+    158
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 28,
+   "lineas": [
+    996,
+    1000
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b1",
+  "b8"
+ ],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "L661: | | Note | 2023 £ | 2022 £ |",
+ "moneda": "GBP",
+ "columna_ejercicio": "2023 £",
+ "columna_anterior": "2022 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Armado a mano con tokens de sesión (to-do 248, Bath Rugby como prueba de la taxonomía rugby-1; el pipeline todavía categoriza con la lista del fútbol, to-do 339). Estado de resultados individual de Bath Rugby Limited en b3 (pág. 19 del visor, impreso 15). Los ingresos por tipo solo están en la tabla del Strategic Report (b1, pág. 6 del visor, £m con un decimal): detallan Turnover con redondeo. CVC income es fila aparte (votación: other_income). Cost of sales y Administrative expenses son por función; el personal (nota 8, L1041-1046) no se abre por renglón."
+}

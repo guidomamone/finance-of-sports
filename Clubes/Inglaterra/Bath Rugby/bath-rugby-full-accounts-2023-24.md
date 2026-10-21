@@ -1048,45 +1048,40 @@ Page 18
 
 --- pág. 23 ---
 
-Bath Rugby Limited
+# Bath Rugby Limited
 
-(Registration number: 03170814)
-Balance Sheet as at 30 June 2024
+### (Registration number: 03170814)
+### Balance Sheet as at 30 June 2024
 
-2024 2023
-Note £ £
-Fixed assets
-Tangible assets 12 1,792,014 1,708,710
-Investments 13 20,530,000 20,530,000
-22,322,014 22,238,710
-Current assets
-Stocks 14 20,263 12,437
-Debtors 15 3,957,126 2,504 892
-Cash at bank and in hand 16 373,298 49,093
-4,350,687 2,566,422
-Creditors: Amounts falling due within one year if (13,979,761) (12,680,313)
-Net current liabilities (9,629,074) (10,113,891)
-Total assets less current liabilities 12,692,940 12,124,819
-Creditors: Amounts falling due after more than one year iv (29,983,312) (25,766,233)
-Provisions for liabilities 20 - (968,782)
-Net liabilities (17,290,372) (14,610,196)
-Capital and reserves
-Called up share capital 21 5,093,716 5,093,716
-Other reserves 22 4,065,234 3,064,428
-Profit and loss account 22 (26,449,322) (22,768,340)
-
-Total equity
-
-(17,290,372)
-
-(14,610,196)
+| | Note | 2024<br>£ | 2023<br>£ |
+| :--- | :---: | :---: | :---: |
+| **Fixed assets** | | | |
+| Tangible assets | 12 | 1,792,014 | 1,708,710 |
+| Investments | 13 | 20,530,000 | 20,530,000 |
+| | | 22,322,014 | 22,238,710 |
+| **Current assets** | | | |
+| Stocks | 14 | 20,263 | 12,437 |
+| Debtors | 15 | 3,957,126 | 2,504,892 |
+| Cash at bank and in hand | 16 | 373,298 | 49,093 |
+| | | 4,350,687 | 2,566,422 |
+| **Creditors: Amounts falling due within one year** | 17 | (13,979,761) | (12,680,313) |
+| **Net current liabilities** | | (9,629,074) | (10,113,891) |
+| **Total assets less current liabilities** | | 12,692,940 | 12,124,819 |
+| **Creditors: Amounts falling due after more than one year** | 17 | (29,983,312) | (25,766,233) |
+| **Provisions for liabilities** | 20 | - | (968,782) |
+| **Net liabilities** | | (17,290,372) | (14,610,196) |
+| **Capital and reserves** | | | |
+| Called up share capital | 21 | 5,093,716 | 5,093,716 |
+| Other reserves | 22 | 4,065,234 | 3,064,428 |
+| Profit and loss account | 22 | (26,449,322) | (22,768,340) |
+| **Total equity** | | (17,290,372) | (14,610,196) |
 
 Approved and authorised by the Board on 31 March 2025 and signed on its behalf by:
 
-LT McDonald
+LT McDonald  
 Director
 
-The notes on pages 22 to 37 form an integral part of these financial statements.
+The notes on pages 22 to 37 form an integral part of these financial statements.  
 Page 19
 
 --- pág. 24 ---
@@ -1637,45 +1632,54 @@ Page 29
 
 --- pág. 34 ---
 
-Bath Rugby Limited
+# Bath Rugby Limited
 
-Notes to the Financial Statements for the Year Ended 30 June 2024
+### Notes to the Financial Statements for the Year Ended 30 June 2024
 
-8 Staff costs
+### 8 Staff costs
 
-The aggregate payroll costs (including directors’ remuneration) were as follows:
+The aggregate payroll costs (including directors' remuneration) were as follows:
 
-2024 2023
-£ £
-Wages and salaries 13,672,042 13,179,962
-Social security costs 1,580,847 1,555,132
-Pension costs, defined contribution scheme 131,227 150,669
-15,384,116 14,885,763
-The average number of persons employed by the company (including directors) during the year, analysed by
-category, was as follows:
-2024 2023
-No. No.
-Players and team management 119 116
-Selling and administration 55 59
-174 175
+| | 2024<br>£ | 2023<br>£ |
+| :--- | :---: | :---: |
+| Wages and salaries | 13,672,042 | 13,179,962 |
+| Social security costs | 1,580,847 | 1,555,132 |
+| Pension costs, defined contribution scheme | 131,227 | 150,669 |
+| | **15,384,116** | **14,885,763** |
+
+The average number of persons employed by the company (including directors) during the year, analysed by category, was as follows:
+
+| | 2024<br>No. | 2023<br>No. |
+| :--- | :---: | :---: |
+| Players and team management | 119 | 116 |
+| Selling and administration | 55 | 59 |
+| | **174** | **175** |
+
 During the year the company incurred £0 (2023: £15,923) in redundancy costs.
-9 Directors‘ remuneration
-The directors’ remuneration for the year was as follows:
-2024 2023
-£ £
-Remuneration 154,984 106,167
-Contributions paid to money purchase schemes 1,321 1,321
-156,305 107,488
+
+### 9 Directors' remuneration
+
+The directors' remuneration for the year was as follows:
+
+| | 2024<br>£ | 2023<br>£ |
+| :--- | :---: | :---: |
+| Remuneration | 154,984 | 106,167 |
+| Contributions paid to money purchase schemes | 1,321 | 1,321 |
+| | **156,305** | **107,488** |
+
 During the year the number of directors who were receiving benefits and share incentives was as follows:
-2024 2023
-No. No.
-Accruing benefits under money purchase pension scheme 1 1
-10 Auditors’ remuneration
-2024 2023
-£ £
-Audit of the financial statements 34,000 22,673
-Other fees to auditors
-All other non-audit services 939 534
+
+| | 2024<br>No. | 2023<br>No. |
+| :--- | :---: | :---: |
+| Accruing benefits under money purchase pension scheme | 1 | 1 |
+
+### 10 Auditors' remuneration
+
+| | 2024<br>£ | 2023<br>£ |
+| :--- | :---: | :---: |
+| Audit of the financial statements | 34,000 | 22,673 |
+| **Other fees to auditors** | | |
+| All other non-audit services | 939 | 534 |
 
 Page 30
 
@@ -1874,59 +1878,45 @@ Page 33
 
 --- pág. 38 ---
 
-Bath Rugby Limited
+# Bath Rugby Limited
 
-Notes to the Financial Statements for the Year Ended 30 June 2024
+### Notes to the Financial Statements for the Year Ended 30 June 2024
 
-18 Creditors: Amounts falling due after more than one year
+### 18 Creditors: Amounts falling due after more than one year
 
-Non-current loans and borrowings
+**Non-current loans and borrowings**
 
-2024 2023
+| | 2024<br>£ | 2023<br>£ |
+| :--- | :---: | :---: |
+| DCMS loan | 3,957,995 | 4,617,661 |
+| Loan | 26,025,317 | 21,148,572 |
+| | **29,983,312** | **25,766,233** |
 
-£ £
+The loan is interest-free and repayable on 12 months' notice of the sole shareholder, Mr B T Craig. No such notice has been given at the date of approval of the financial statements.
 
-DCMS loan 3,957,995 4,617,661
-Loan 26,025,317 21,148,572
-29,983,312 25,766,233
+**Current loans and borrowings**
 
-The loan is interest-free and repayable on 12 months’ notice of the sole shareholder, Mr B T Craig. No such notice
+| | 2024<br>£ | 2023<br>£ |
+| :--- | :---: | :---: |
+| DCMS loan | 659,666 | 873,630 |
+| Bank overdraft facility utilised | - | 415,338 |
+| Other borrowings | 364,805 | - |
+| | **1,024,471** | **1,288,968** |
 
-has been given at the date of approval of the financial statements.
+**Other borrowings**
 
-Current loans and borrowings
+The loan from DCMS is denominated in GBP with a nominal interest rate of 2%, and the final instalment is due on 31 March 2031. The carrying amount at year end is £4,617,661 (2023 - £5,491,291).
 
-2024 2023
-
-£ £
-
-DCMS loan 659,666 873,630
-Bank overdraft facility utilised - 415,338
-Other borrowings 364,805 -
-1,024,471 1,288,968
-
-Other borrowings
-
-The loan from DCMS is denominated in GBP with a nominal interest rate of 2%, and the final instalment is due on 31
-
-March 2031. The carrying amount at year end is £4,617,661 (2023 - £5,491 ,291).
-
-£659,666 (2023 - £873,630) of the loan value falls due in less than a year.
+£659,666 (2023 - £873,630) of the loan value falls due in less than a year.  
 The loan is secured by a floating charge over all assets and undertakings of the company.
 
-19 Financial instruments
+### 19 Financial instruments
 
-Financial assets
-2024
+**Financial assets**
 
-£
-
-Financial assets measured at fair value through profit or loss 20,530,000
-
-2023
-£
-
-20,530,000
+| | 2024<br>£ | 2023<br>£ |
+| :--- | :---: | :---: |
+| Financial assets measured at fair value through profit or loss | 20,530,000 | 20,530,000 |
 
 Financial assets measured at fair value through profit or loss comprise the investment in Premiership Rugby Limited.
 
