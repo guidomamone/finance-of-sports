@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 911 — La skill de arranque manda a publicar.mjs (2026-10-21) [341]
+
+- Sección 5 de `start-session-finance-of-sports-project`: después de una edición a mano se corre `node tools/publicar.mjs` en lugar de los generadores uno por uno; las fuentes se editan con `tools/fuente.mjs` (ok de Guido). Pipeline 12 sigue el 341.
+
 ## Versión 910 — Tanda 2 de lo que Bath se hizo a mano (2026-10-21) [341]
 
 - `caja-deuda.mjs`: un escalón más para inferir la escala de la caja, y el total de personal sin rótulo como candidato de `--personal`. `armar-a-mano` acepta un subtotal sin rótulo con etiqueta sintética. `ajustes.mjs --etiqueta-diferencia`. `tools/fuente.mjs` edita título, url y nota pública de una fuente. Aprobado por Auditora 4. El redondeo de una nota queda como criterio de datos, no en una tool.
