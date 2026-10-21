@@ -15,6 +15,7 @@ window.SITE_LABEL_KEYS = {
   "Estadio": "bucket.stadium",
   "Estadio: recaudación de partidos": "bucket.matchday",
   "Fútbol profesional (sin desglosar por la fuente)": "bucket.lump_football",
+  "Rugby profesional (sin desglosar por la fuente)": "bucket.lump_rugby",
   "Inversiones (amortizaciones y depreciación)": "bucket.depreciation",
   "Organización de partidos": "bucket.match_org",
   "Otras secciones deportivas (juvenil, otros deportes, básquet)": "bucket.youth_other",

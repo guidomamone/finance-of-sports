@@ -17,11 +17,12 @@
 // ============================================================================
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
-import { CAMPOS as C, SCHEMA_VERSION, UNIT, DISCLOSURE, categoriasDelSitio } from './json-datos.mjs';
+import { CAMPOS as C, SCHEMA_VERSION, UNIT, DISCLOSURE, categoriasDelSitio, categoriasDeDeporte } from './json-datos.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const cat = categoriasDelSitio();
-const subcategorias = [...new Set([...cat.revenue, ...cat.expense])].sort();
+// las subcategorías de todos los deportes (las de cada uno están en su tabla, data/schema/taxonomy-<versión>.json)
+const subcategorias = [...new Set(Object.values(cat.deportes).flatMap((t) => [...Object.keys(t.revenue), ...Object.keys(t.expense)]))].sort();
 const disclosure = new Set(DISCLOSURE);
 // genérica -> subcategorías que la dan, por lado y para todos los deportes (una subcategoría del otro lado va a la catch-all: genericCategoryOf)
 const pares = (lado) => {
@@ -89,12 +90,17 @@ else {
   console.log(`escrito ${dest} (${subcategorias.length} subcategorías, ${cat.genericas.revenue.length}+${cat.genericas.expense.length} genéricas, ${disclosure.size} valores de disclosure)`);
   // la tabla pública del mapa, una por deporte: qué genérica da cada subcategoría y en qué bloque de la cascada del resultado está
   for (const [dep, t] of Object.entries(cat.deportes)) {
-    const lado = (l) => Object.fromEntries([...cat.revenue, ...cat.expense].filter((sub, i, a) => a.indexOf(sub) === i).map((sub) => [sub, cat.genericCategoryOf(dep, l, sub)]).filter(([, g]) => g));
+    // cada subcategoría del lado con su rótulo y su descripción (las que ven Jev y Claude); las del otro lado van a la catch-all (cross_side)
+    const cd = categoriasDeDeporte(dep);
+    const lado = (l) => Object.fromEntries(Object.entries(cd[l]).map(([sub, x]) => [sub, { generic: x.generic, label_es: x.label, description_es: x.description }]));
+    const cruzadas = (l) => Object.keys(cd[l === 'revenue' ? 'expense' : 'revenue']).filter((sub) => !cd[l][sub]).sort();
     const tabla = {
       taxonomy: t.version, sport: C.DEPORTE[dep],
       description: 'Mapa de las subcategorías de este deporte a las categorías genéricas de Finance of Sports. La genérica no se elige: se deriva de esta tabla. Una subcategoría del otro lado (un gasto usado en una línea de ingreso, o al revés) va a la genérica catch-all de su lado. block: la parte del resultado (revenue; operating = gasto operativo en efectivo; non_cash = amortizaciones y depreciación; exceptional). Resultado operativo = ingresos + operating + non_cash + exceptional.',
       generic: { revenue: cat.genericas.revenue.map((g) => ({ id: g.id, block: g.block, label_en: g.en, label_es: g.label })), expense: cat.genericas.expense.map((g) => ({ id: g.id, block: g.block, label_en: g.en, label_es: g.label })) },
+      undisclosed: cd.lump,
       subcategories: { revenue: lado('revenue'), expense: lado('expense') },
+      cross_side: { revenue: { generic: cat.genericCategoryOf(dep, 'revenue', cruzadas('revenue')[0]), subcategories: cruzadas('revenue') }, expense: { generic: cat.genericCategoryOf(dep, 'expense', cruzadas('expense')[0]), subcategories: cruzadas('expense') } },
     };
     const f = resolve(ROOT, 'data', 'schema', `taxonomy-${t.version}.json`); writeFileSync(f, JSON.stringify(tabla, null, 2) + '\n'); console.log(`escrito ${f}`);
   }

@@ -53,9 +53,11 @@ window.LIGA_VIEW = (function(){
   function nClubes(n){
     return n + ' ' + (n === 1 ? t('liga.club1', 'club') : t('liga.clubN', 'clubes'));
   }
-  // El bolsón "sin desglosar por la fuente" se identifica por su etiqueta (la clave de los buckets en data/site-labels.js). Si se
-  // renombra en js/finanzas-calc.js hay que renombrarlo acá: si no, el aviso deja de mostrarse sin romper nada.
-  var LUMP_LABEL = 'Fútbol profesional (sin desglosar por la fuente)';
+  // El bolsón "sin desglosar por la fuente" se identifica por su etiqueta, que depende del deporte del club (LUMP_LABEL_BY_SPORT de
+  // js/finanzas-calc.js, la misma clave que en data/site-labels.js). `esBolson(c)` reconoce la de cualquier deporte.
+  var LUMP_LABELS = Object.keys(window.LUMP_LABEL_BY_SPORT || {}).map(function(k){ return window.LUMP_LABEL_BY_SPORT[k]; });
+  if(!LUMP_LABELS.length) LUMP_LABELS = ['Fútbol profesional (sin desglosar por la fuente)'];
+  function esBolson(c){ return LUMP_LABELS.indexOf(c) >= 0; }
   // El total de los cargados: una sola cuenta para rankingCard(), salvedades() y tarjetaLiga().
   function totalDe(r){
     return r.clubs.reduce(function(s, f){ return s + f.revenue; }, 0);
@@ -788,10 +790,10 @@ window.LIGA_VIEW = (function(){
   function paletaMix(filas){
     var pesos = {};
     filas.forEach(function(f){ f.mix.forEach(function(m){ if(m[1] > 0) pesos[m[0]] = (pesos[m[0]] || 0) + m[1]; }); });
-    var cats = Object.keys(pesos).filter(function(c){ return c !== LUMP_LABEL; }).sort(function(a, b){ return pesos[b] - pesos[a]; });
+    var cats = Object.keys(pesos).filter(function(c){ return !esBolson(c); }).sort(function(a, b){ return pesos[b] - pesos[a]; });
     var colorDe = {};
     cats.forEach(function(c, i){ colorDe[c] = PALETA_MIX[i % PALETA_MIX.length]; });
-    if(pesos[LUMP_LABEL]){ colorDe[LUMP_LABEL] = '#e0d6c2'; cats.push(LUMP_LABEL); }
+    LUMP_LABELS.forEach(function(L){ if(pesos[L]){ colorDe[L] = '#e0d6c2'; cats.push(L); } });
     return { cats:cats, colorDe:colorDe };
   }
 
@@ -856,7 +858,7 @@ window.LIGA_VIEW = (function(){
     card.appendChild(lista);
 
     var notas = [];
-    var lump = r.clubs.filter(function(f){ return f.mix.some(function(m){ return m[0] === LUMP_LABEL && m[1]; }); });
+    var lump = r.clubs.filter(function(f){ return f.mix.some(function(m){ return esBolson(m[0]) && m[1]; }); });
     if(lump.length) notas.push(t('liga.lumpShort', 'Sin desglosar') + ': ' + nClubes(lump.length) + ' (' + lump.map(function(f){ return nombreDe(f.id); }).join(', ') + ') '
       + (lump.length === 1 ? t('liga.cons.lump1', 'publica el ingreso sin partirlo en categorías.') : t('liga.cons.lump', 'publican el ingreso sin partirlo en categorías.')));
     if(conEst) notas.push('* ' + t('liga.cons.estNote', 'Un estimado es un total por club, sin categorías: va aparte. Ver la nota de la tabla de ingresos.'));
@@ -864,7 +866,7 @@ window.LIGA_VIEW = (function(){
     notas.forEach(function(n){ card.appendChild(el('p', 'lg-est-nota', n)); });
     return card;
   }
-  function nombreCat(c){ return c === LUMP_LABEL ? t('liga.lumpShort', 'Sin desglosar') : tLabel(c); }
+  function nombreCat(c){ return esBolson(c) ? t('liga.lumpShort', 'Sin desglosar') : tLabel(c); }
 
   function composicion(r, simulados){
     var card = el('article', 'vid-card lg-mix');
@@ -880,7 +882,7 @@ window.LIGA_VIEW = (function(){
       var sw = el('span', 'lg-ley-sw'); sw.style.background = colorDe[c];
       it.appendChild(sw);
       // El bolsón, con su nombre corto: el largo ("Fútbol profesional (sin desglosar por la fuente)") parte la leyenda en dos líneas.
-      it.appendChild(document.createTextNode(c === LUMP_LABEL ? t('liga.lumpShort', 'Sin desglosar') : tLabel(c)));
+      it.appendChild(document.createTextNode(esBolson(c) ? t('liga.lumpShort', 'Sin desglosar') : tLabel(c)));
       ley.appendChild(it);
     });
     card.appendChild(ley);
@@ -951,10 +953,10 @@ window.LIGA_VIEW = (function(){
     }
 
     // Cuánto de este ranking no está desglosado (una fuente que publica el total por club y el resto solo por división). El bolsón
-    // se identifica por LUMP_LABEL: ver su comentario.
+    // se identifica con esBolson(): ver su comentario.
     var tot = totalDe(r), lump = 0;
     r.clubs.forEach(function(f){
-      f.mix.forEach(function(m){ if(m[0] === LUMP_LABEL) lump += m[1]; });
+      f.mix.forEach(function(m){ if(esBolson(m[0])) lump += m[1]; });
     });
     if(tot && lump / tot > 0.10){
       out.push(Math.round((lump / tot) * 100) + '% ' + t('liga.cv.lump',
@@ -1116,7 +1118,7 @@ window.LIGA_VIEW = (function(){
     // Una sola salvedad acá, la que cambia cómo se lee el ranking (cuánto no está desglosado); el resto está en la pestaña de la liga.
     var tot = totalDe(r), lump = 0;
     r.clubs.forEach(function(f){
-      f.mix.forEach(function(m){ if(m[0] === LUMP_LABEL) lump += m[1]; });
+      f.mix.forEach(function(m){ if(esBolson(m[0])) lump += m[1]; });
     });
     var resto = r.clubs.length - TOP_LIGA;
     return tarjeta({

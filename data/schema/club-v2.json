@@ -65,7 +65,8 @@
         },
         "taxonomy": {
           "enum": [
-            "football-1"
+            "football-1",
+            "rugby-1"
           ]
         }
       },
@@ -272,17 +273,25 @@
         },
         "subcategory": {
           "enum": [
+            "academy_community",
+            "academy_community_expense",
             "admin_general_expense",
             "broadcasting",
+            "central_income",
+            "commercial_activities",
             "competition_bonus",
             "depreciation",
             "education",
             "education_expense",
             "exceptional_items",
+            "gate_receipts",
             "lump_football_operations",
             "lump_football_operations_expense",
+            "lump_rugby_operations",
+            "lump_rugby_operations_expense",
             "match_organisation_expense",
             "matchday_competition",
+            "matchday_costs",
             "member_dues",
             "other_amortisation",
             "other_expenses",
@@ -290,9 +299,12 @@
             "other_sports",
             "player_amortisation",
             "player_impairment",
+            "player_registrations_amortisation",
             "player_sales",
+            "player_transfers",
             "season_tickets",
             "sponsorship_commercial",
+            "squad_wages",
             "stadium_other",
             "wages_squad",
             "womens_football",
@@ -347,6 +359,7 @@
             },
             "subcategory": {
               "enum": [
+                "gate_receipts",
                 "matchday_competition"
               ]
             }
@@ -383,7 +396,8 @@
             },
             "subcategory": {
               "enum": [
-                "broadcasting"
+                "broadcasting",
+                "central_income"
               ]
             }
           }
@@ -407,6 +421,7 @@
             },
             "subcategory": {
               "enum": [
+                "commercial_activities",
                 "sponsorship_commercial"
               ]
             }
@@ -419,7 +434,8 @@
             },
             "subcategory": {
               "enum": [
-                "player_sales"
+                "player_sales",
+                "player_transfers"
               ]
             }
           }
@@ -431,6 +447,7 @@
             },
             "subcategory": {
               "enum": [
+                "academy_community",
                 "other_sports",
                 "womens_football",
                 "youth_football"
@@ -457,17 +474,22 @@
             },
             "subcategory": {
               "enum": [
+                "academy_community_expense",
                 "admin_general_expense",
                 "depreciation",
                 "education_expense",
                 "exceptional_items",
                 "lump_football_operations_expense",
+                "lump_rugby_operations_expense",
                 "match_organisation_expense",
+                "matchday_costs",
                 "other_amortisation",
                 "other_expenses",
                 "other_income",
                 "player_amortisation",
                 "player_impairment",
+                "player_registrations_amortisation",
+                "squad_wages",
                 "wages_squad",
                 "youth_other_sports_expense"
               ]
@@ -481,7 +503,8 @@
             },
             "subcategory": {
               "enum": [
-                "lump_football_operations"
+                "lump_football_operations",
+                "lump_rugby_operations"
               ]
             }
           }
@@ -512,17 +535,25 @@
         },
         "subcategory": {
           "enum": [
+            "academy_community",
+            "academy_community_expense",
             "admin_general_expense",
             "broadcasting",
+            "central_income",
+            "commercial_activities",
             "competition_bonus",
             "depreciation",
             "education",
             "education_expense",
             "exceptional_items",
+            "gate_receipts",
             "lump_football_operations",
             "lump_football_operations_expense",
+            "lump_rugby_operations",
+            "lump_rugby_operations_expense",
             "match_organisation_expense",
             "matchday_competition",
+            "matchday_costs",
             "member_dues",
             "other_amortisation",
             "other_expenses",
@@ -530,9 +561,12 @@
             "other_sports",
             "player_amortisation",
             "player_impairment",
+            "player_registrations_amortisation",
             "player_sales",
+            "player_transfers",
             "season_tickets",
             "sponsorship_commercial",
+            "squad_wages",
             "stadium_other",
             "wages_squad",
             "womens_football",
@@ -575,6 +609,7 @@
             },
             "subcategory": {
               "enum": [
+                "squad_wages",
                 "wages_squad"
               ]
             }
@@ -587,7 +622,8 @@
             },
             "subcategory": {
               "enum": [
-                "match_organisation_expense"
+                "match_organisation_expense",
+                "matchday_costs"
               ]
             }
           }
@@ -599,6 +635,7 @@
             },
             "subcategory": {
               "enum": [
+                "academy_community_expense",
                 "youth_other_sports_expense"
               ]
             }
@@ -635,16 +672,22 @@
             },
             "subcategory": {
               "enum": [
+                "academy_community",
                 "broadcasting",
+                "central_income",
+                "commercial_activities",
                 "competition_bonus",
                 "education",
+                "gate_receipts",
                 "lump_football_operations",
+                "lump_rugby_operations",
                 "matchday_competition",
                 "member_dues",
                 "other_expenses",
                 "other_income",
                 "other_sports",
                 "player_sales",
+                "player_transfers",
                 "season_tickets",
                 "sponsorship_commercial",
                 "stadium_other",
@@ -661,7 +704,8 @@
             },
             "subcategory": {
               "enum": [
-                "lump_football_operations_expense"
+                "lump_football_operations_expense",
+                "lump_rugby_operations_expense"
               ]
             }
           }
@@ -673,7 +717,8 @@
             },
             "subcategory": {
               "enum": [
-                "player_amortisation"
+                "player_amortisation",
+                "player_registrations_amortisation"
               ]
             }
           }

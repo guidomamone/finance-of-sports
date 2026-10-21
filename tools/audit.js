@@ -112,6 +112,7 @@ function loadEngine() {
     computeYearGeneric, toDisplayValue, bucketize, yearMetaFor, toleranciaTieOut, montosTieOut,
     REVENUE_CATEGORIES, EXPENSE_CATEGORIES,
     GENERIC_REVENUE_CATEGORIES, GENERIC_EXPENSE_CATEGORIES, SPORT_TAXONOMIES, genericCategoryOf,
+    SPORT_LISTS: Object.fromEntries(Object.entries(SPORT_TAXONOMIES).map(([k, t]) => [k, { revenue: eval(t.lists.revenue[0]), expense: eval(t.lists.expense[0]) }])),
     REVENUE_BUCKETS: GENERIC_SIMPLIFIED_REVENUE_BUCKETS,
     EXPENSE_BUCKETS: GENERIC_SIMPLIFIED_EXPENSE_BUCKETS,
     clubs, sources, gestionesByClub, CURRENCY_META,
@@ -301,21 +302,26 @@ function checkCategorias(api) {
 // fila-parte-generica (P2): una genérica cuyas subcategorías caen en dos filas de Formato simplificado; la pantalla y la capa genérica
 // dejarían de agrupar igual.
 function checkTaxonomiaGenerica(api) {
-  const tax = api.SPORT_TAXONOMIES.futbol;
+  for (const [dep, tax] of Object.entries(api.SPORT_TAXONOMIES)) checkTaxonomiaDeporte(api, dep, tax);
+}
+function checkTaxonomiaDeporte(api, dep, tax) {
+  const listas = api.SPORT_LISTS[dep];
   const lados = [
-    ['ingreso', api.REVENUE_CATEGORIES, tax.revenue, api.GENERIC_REVENUE_CATEGORIES, api.REVENUE_BUCKETS],
-    ['gasto', api.EXPENSE_CATEGORIES, tax.expense, api.GENERIC_EXPENSE_CATEGORIES, api.EXPENSE_BUCKETS],
+    ['ingreso', listas.revenue, tax.revenue, api.GENERIC_REVENUE_CATEGORIES, api.REVENUE_BUCKETS],
+    ['gasto', listas.expense, tax.expense, api.GENERIC_EXPENSE_CATEGORIES, api.EXPENSE_BUCKETS],
   ];
   for (const [lado, subs, mapa, genericas, buckets] of lados) {
     const ids = new Set(genericas.map(g => g.id));
     for (const g of genericas) if (!['revenue', 'operating', 'non_cash', 'exceptional'].includes(g.block)) add('P1', 'taxonomia-incompleta', `genérica de ${lado} '${g.id}' con bloque '${g.block}'`);
-    for (const sub of subs) if (!mapa[sub]) add('P1', 'taxonomia-incompleta', `la subcategoría de ${lado} '${sub}' no tiene genérica en SPORT_TAXONOMIES.futbol`);
+    for (const sub of subs) if (!mapa[sub]) add('P1', 'taxonomia-incompleta', `la subcategoría de ${lado} '${sub}' (${dep}) no tiene genérica en SPORT_TAXONOMIES.${dep}`);
+    for (const sub of Object.keys(mapa)) if (!subs.includes(sub)) add('P1', 'taxonomia-incompleta', `'${sub}' (${lado}, ${dep}) tiene genérica pero no está en la lista de subcategorías de ${dep} (sin descripción para Jev y Claude)`);
     for (const [sub, gen] of Object.entries(mapa)) if (!ids.has(gen)) add('P1', 'taxonomia-incompleta', `'${sub}' (${lado}) apunta a la genérica '${gen}', que no existe`);
-    const filaDe = (sub) => (buckets.find(b => b.cats.includes(sub)) || {}).label || '(catch-all)';
+    const filaDe = (sub) => (buckets.find(b => b.gens.includes(mapa[sub])) || {}).label || '(catch-all)';
     const filas = new Map();
     for (const [sub, gen] of Object.entries(mapa)) { if (!filas.has(gen)) filas.set(gen, new Set()); filas.get(gen).add(filaDe(sub)); }
     for (const [gen, f] of filas) if (f.size > 1) add('P2', 'fila-parte-generica', `la genérica de ${lado} '${gen}' cae en ${f.size} filas de Formato simplificado: ${[...f].join(' / ')}`);
   }
+  if (dep !== 'futbol') return;
   // Una línea con una subcategoría del otro lado tiene genérica (la catch-all de su lado, genericCategoryOf); una que no existe ya es P0
   // (categoria-inexistente). Acá queda solo el caso de una subcategoría declarada en category-map.js que el mapa no resuelve.
   for (const { clubId, year, rev, exp } of clubYears(api)) {
@@ -1411,7 +1417,7 @@ function checkCategorizacion(api) {
       if (!lines.length) continue;
       const total = Math.abs(sum(lines));
       if (!total) continue;
-      const rows = api.bucketize(lines, buckets, catchAll);
+      const rows = api.bucketize(lines, buckets, catchAll, null, (api.clubs[clubId] || {}).sport);
       const resto = Math.abs((rows.find(r => r.label === catchAll) || {}).value || 0);
       const pct = resto / total;
       if (pct > 0.4) {

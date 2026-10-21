@@ -40,8 +40,8 @@
     if(!overlay) return null;
     if(simplifyFormat){
       return {
-        ingresos: bucketize(overlay.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otros ingresos'),
-        gastos: bucketize(overlay.expenseLines, GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'Otros gastos'),
+        ingresos: bucketize(overlay.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otros ingresos', null, sportOfClub(clubId)),
+        gastos: bucketize(overlay.expenseLines, GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'Otros gastos', null, sportOfClub(clubId)),
       };
     }
     return {
@@ -170,62 +170,76 @@
   // propia. Revertir no toca datos, pero hay que regenerar los rankings: Admin/PANTALLA.md, "Revertir la fusión de abonos".
   const ABONOS_DENTRO_DE_ESTADIO = true;
 
+  // Las filas se definen por CATEGORÍA GENÉRICA (`gens`, data/category-map.js), así sirven para cualquier deporte. `cats` son las
+  // subcategorías de fútbol de cada fila, DERIVADAS del mapa (no se escriben a mano): las leen las tools que marcan filas por subcategoría
+  // (audit.js, tools/dentro-de-otro.mjs). El rótulo del bolsón sin desglosar depende del deporte (LUMP_LABEL_BY_SPORT).
   const GENERIC_SIMPLIFIED_REVENUE_BUCKETS = [
-    {label:'Cuotas Sociales', cats:['member_dues']},
-    {label:'Comercial / Sponsors', cats:['sponsorship_commercial']},
-    {label:'Estadio', cats: ABONOS_DENTRO_DE_ESTADIO
-      ? ['matchday_competition','season_tickets','stadium_other']
-      : ['matchday_competition','stadium_other']},
-    {label:'Televisión', cats:['broadcasting']},
-    {label:'Premios por competencias', cats:['competition_bonus']},
-    ...(ABONOS_DENTRO_DE_ESTADIO ? [] : [{label:'Abonos', cats:['season_tickets']}]),
-    {label:'Venta de Jugadores', cats:['player_sales']},
-    {label:'Educación', cats:['education']},
-    {label:'Otras secciones deportivas', cats:['other_sports','youth_football','womens_football']},
-    {label:'Fútbol profesional (sin desglosar por la fuente)', cats:['lump_football_operations'], hideIfZero:true},
+    {label:'Cuotas Sociales', gens:['membership']},
+    {label:'Comercial / Sponsors', gens:['commercial']},
+    {label:'Estadio', gens: ABONOS_DENTRO_DE_ESTADIO ? ['matchday','season_tickets','venue'] : ['matchday','venue']},
+    {label:'Televisión', gens:['media_rights']},
+    {label:'Premios por competencias', gens:['prize_money']},
+    ...(ABONOS_DENTRO_DE_ESTADIO ? [] : [{label:'Abonos', gens:['season_tickets']}]),
+    {label:'Venta de Jugadores', gens:['player_transfers']},
+    {label:'Educación', gens:['non_sporting_activities']},
+    {label:'Otras secciones deportivas', gens:['other_sporting_sections']},
+    {label:'Fútbol profesional (sin desglosar por la fuente)', gens:['undisclosed'], hideIfZero:true},
   ];
 
   // Las filas de gastos son siempre las mismas entre clubes aunque alguna dé cero, para que el catch-all "Otros gastos" no absorba
   // plata que tiene una categoría identificable.
   const GENERIC_SIMPLIFIED_EXPENSE_BUCKETS = [
-    {label:'Compra de jugadores', cats:['player_amortisation','player_impairment']},
-    {label:'Salarios y primas (plantel y cuerpo técnico)', cats:['wages_squad']},
-    {label:'Inversiones (amortizaciones y depreciación)', cats:['depreciation','other_amortisation']},
-    {label:'Organización de partidos', cats:['match_organisation_expense']},
-    {label:'Educación', cats:['education_expense']},
-    {label:'Otras secciones deportivas (juvenil, otros deportes, básquet)', cats:['youth_other_sports_expense']},
-    {label:'Administración y gastos generales', cats:['admin_general_expense']},
-    {label:'Fútbol profesional (sin desglosar por la fuente)', cats:['lump_football_operations_expense'], hideIfZero:true},
+    {label:'Compra de jugadores', gens:['player_registrations_amortisation','player_registrations_impairment']},
+    {label:'Salarios y primas (plantel y cuerpo técnico)', gens:['first_team_staff']},
+    {label:'Inversiones (amortizaciones y depreciación)', gens:['depreciation','other_amortisation']},
+    {label:'Organización de partidos', gens:['match_operations']},
+    {label:'Educación', gens:['non_sporting_activities']},
+    {label:'Otras secciones deportivas (juvenil, otros deportes, básquet)', gens:['other_sporting_sections']},
+    {label:'Administración y gastos generales', gens:['admin_general']},
+    {label:'Fútbol profesional (sin desglosar por la fuente)', gens:['undisclosed'], hideIfZero:true},
   ];
+  // El bolsón sin desglosar se llama según el deporte del club; el de fútbol es el rótulo de la lista de arriba.
+  const LUMP_LABEL_BY_SPORT = { futbol: 'Fútbol profesional (sin desglosar por la fuente)', rugby: 'Rugby profesional (sin desglosar por la fuente)' };
+  window.LUMP_LABEL_BY_SPORT = LUMP_LABEL_BY_SPORT;
+  const sportOfClub = (clubId) => (typeof clubs !== 'undefined' && clubs[clubId] && clubs[clubId].sport) || 'futbol';
+  const sideOfBuckets = (buckets) => buckets === GENERIC_SIMPLIFIED_EXPENSE_BUCKETS ? 'expense' : 'revenue';
+  // las subcategorías de un deporte que caen en una fila (para `incluidoEn`, que se escribe en subcategorías)
+  const subsOfBucket = (b, sport, side) => {
+    const t = SPORT_TAXONOMIES[sport] || { revenue: {}, expense: {} };
+    return [...Object.keys(t.revenue), ...Object.keys(t.expense)].filter((sub, i, a) => a.indexOf(sub) === i && b.gens.includes(genericCategoryOf(sport, side, sub)));
+  };
+  for (const [bs, side] of [[GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'revenue'], [GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'expense']]) for (const b of bs) b.cats = subsOfBucket(b, 'futbol', side);
 
   // Para tools/dentro-de-otro.mjs, que corre este motor en Node: marca las mismas filas que ve el visitante sin copiar estas listas.
   window.SIMPLIFIED_BUCKETS = { ingresos: GENERIC_SIMPLIFIED_REVENUE_BUCKETS, gastos: GENERIC_SIMPLIFIED_EXPENSE_BUCKETS };
 
-  // Agrupa líneas en filas. Cada fila lleva `items` con las líneas reales que la suman (el acordeón de control). Las mismas reglas
-  // de Admin/CONVENCIONES-DATOS.md:
+  // Agrupa líneas en filas por su categoría genérica (genericCategoryOf, del deporte del club). Cada fila lleva `items` con las líneas
+  // reales que la suman (el acordeón de control). Las mismas reglas de Admin/CONVENCIONES-DATOS.md:
   //   - con un bolsón "sin desglosar por la fuente" CON PLATA ADENTRO, otra fila en cero es un "no sabemos": se marca `unknown` y se
   //     pinta "—" (el catch-all queda afuera de la marca);
-  //   - `incluidoEn` (en fiscalYearMeta) marca una fila en cero cuyo concepto está dentro de otra fila del documento.
+  //   - `incluidoEn` (en fiscalYearMeta, por subcategoría) marca una fila en cero cuyo concepto está dentro de otra fila del documento.
   // Ninguna de las dos marcas mueve un número: la fila sigue valiendo 0 y el total de la sección no cambia.
-  function bucketize(lines, buckets, catchAllLabel, incluidoEn){
-    const bucketed = new Set(buckets.flatMap(b => b.cats));
-    const filaDe = (cat) => (buckets.find(b => b.cats.includes(cat)) || {}).label || catchAllLabel;
-    const LUMPS = ['lump_football_operations', 'lump_football_operations_expense'];
-    const hayBolson = lines.some(l => LUMPS.includes(l.normalizedCategory) && l.amountNative !== 0);
+  function bucketize(lines, buckets, catchAllLabel, incluidoEn, sport){
+    const dep = sport || 'futbol'; const side = sideOfBuckets(buckets);
+    const genDe = (l) => genericCategoryOf(dep, side, l.normalizedCategory);
+    const bucketed = new Set(buckets.flatMap(b => b.gens));
+    const labelDe = (b) => b.gens.includes('undisclosed') ? (LUMP_LABEL_BY_SPORT[dep] || b.label) : b.label;
+    const filaDe = (sub) => { const g = genericCategoryOf(dep, side, sub); const b = buckets.find(x => x.gens.includes(g)); return b ? labelDe(b) : catchAllLabel; };
+    const hayBolson = lines.some(l => genDe(l) === 'undisclosed' && l.amountNative !== 0);
     const rows = buckets
       .map(b => {
-        const matches = lines.filter(l => b.cats.includes(l.normalizedCategory));
+        const matches = lines.filter(l => b.gens.includes(genDe(l)));
         const value = matches.reduce((s,l) => s + l.amountNative, 0);
         const items = matches.length ? matches.map(l => [l.rawLabel, l.amountNative, l.items || null]) : null;
-        const esBolson = b.cats.some(c => LUMPS.includes(c));
-        const dentro = value === 0 && incluidoEn ? b.cats.map(c => incluidoEn[c]).find(Boolean) : null;
-        return { label:b.label, value, items, hideIfZero:b.hideIfZero,
+        const esBolson = b.gens.includes('undisclosed');
+        const dentro = value === 0 && incluidoEn ? subsOfBucket(b, dep, side).map(c => incluidoEn[c]).find(Boolean) : null;
+        return { label:labelDe(b), value, items, hideIfZero:b.hideIfZero,
                  unknown: !dentro && hayBolson && value === 0 && !esBolson,
                  // `incluidoEn` puede ser 'categoria' o { en:'categoria', posible:true } (no confirmado que esté ahí)
                  ...(dentro ? { incluidoEn: filaDe(typeof dentro === 'string' ? dentro : dentro.en), ...(dentro.posible ? { incluidoPosible: true } : {}) } : {}) };
       })
       .filter(row => !(row.hideIfZero && row.value === 0));
-    const restLines = lines.filter(l => !bucketed.has(l.normalizedCategory));
+    const restLines = lines.filter(l => !bucketed.has(genDe(l)));
     const rest = restLines.reduce((s,l) => s + l.amountNative, 0);
     const restItems = restLines.length ? restLines.map(l => [l.rawLabel, l.amountNative, l.items || null]) : null;
     rows.push({ label:catchAllLabel, value:rest, items:restItems });
@@ -244,8 +258,8 @@
     ];
     return {
       resultLabel:'Resultado neto',
-      ingresos: bucketize(cur.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otros ingresos', cur.meta.incluidoEn),
-      gastos: bucketize(cur.expenseLines, GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'Otros gastos', cur.meta.incluidoEn),
+      ingresos: bucketize(cur.revenueLines, GENERIC_SIMPLIFIED_REVENUE_BUCKETS, 'Otros ingresos', cur.meta.incluidoEn, sportOfClub(clubId)),
+      gastos: bucketize(cur.expenseLines, GENERIC_SIMPLIFIED_EXPENSE_BUCKETS, 'Otros gastos', cur.meta.incluidoEn, sportOfClub(clubId)),
       extraRows,
     };
   }
@@ -315,9 +329,6 @@
   }
 
 
-  function sumCat(lines, cats){
-    return lines.filter(l => cats.includes(l.normalizedCategory)).reduce((s,l) => s + l.amountNative, 0);
-  }
 
 
   function computeYearGeneric(clubId, year){
@@ -328,17 +339,22 @@
     const expenseLines = (gd.expenseLinesByYear[year]) || [];
     const meta = (gd.fiscalYearMeta[year]) || {};
     const revenue = revenueLines.reduce((s,l) => s + l.amountNative, 0);
-    const wages = sumCat(expenseLines, ['wages_squad']);
-    // Toda categoría NUEVA de gasto operativo en efectivo tiene que sumarse acá: si no, su plata desaparece de expenses/ebitda/pat en
-    // todo el sitio (las no-efectivo van aparte, en `nonCash`). verifyTieOuts() lo delata dejando de cerrar.
-    const otherExpenses = sumCat(expenseLines, ['other_expenses','lump_football_operations_expense','match_organisation_expense','education_expense','youth_other_sports_expense','admin_general_expense']);
+    // Los gastos se suman por la categoría GENÉRICA de cada línea y su bloque (data/category-map.js): operating (en efectivo),
+    // non_cash y exceptional. Una subcategoría nueva entra sola en su bloque al darle su genérica; sin genérica no suma (audit.js lo avisa:
+    // taxonomia-incompleta, categoria-inexistente).
+    const sport = sportOfClub(clubId);
+    const genDe = (l) => genericCategoryOf(sport, 'expense', l.normalizedCategory);
+    const bloqueDe = (g) => (GENERIC_EXPENSE_CATEGORIES.find(x => x.id === g) || {}).block;
+    const sumGen = (pred) => expenseLines.filter(l => pred(genDe(l))).reduce((s,l) => s + l.amountNative, 0);
+    const wages = sumGen(g => g === 'first_team_staff');
+    const otherExpenses = sumGen(g => g !== 'first_team_staff' && bloqueDe(g) === 'operating');
     const expenses = wages + otherExpenses;
     const ebitda = revenue + expenses;
-    const exceptionalItems = sumCat(expenseLines, ['exceptional_items']);
-    const playerAmortisation = sumCat(expenseLines, ['player_amortisation']);
-    const playerImpairment = sumCat(expenseLines, ['player_impairment']);
-    const depreciation = sumCat(expenseLines, ['depreciation']);
-    const otherAmortisation = sumCat(expenseLines, ['other_amortisation']);
+    const exceptionalItems = sumGen(g => bloqueDe(g) === 'exceptional');
+    const playerAmortisation = sumGen(g => g === 'player_registrations_amortisation');
+    const playerImpairment = sumGen(g => g === 'player_registrations_impairment');
+    const depreciation = sumGen(g => g === 'depreciation');
+    const otherAmortisation = sumGen(g => g === 'other_amortisation');
     const nonCash = playerAmortisation + playerImpairment + depreciation + otherAmortisation;
     const operatingProfit = ebitda + exceptionalItems + nonCash;
     const profitOnPlayerSales = meta.profitOnPlayerSales || 0;
@@ -448,6 +464,7 @@
     {label:'Educación', color:'#c98a00'},
     {label:'Otras secciones deportivas', color:'#4a7c9e'},
     {label:'Fútbol profesional (sin desglosar por la fuente)', color:'#c2185b'},
+    {label:'Rugby profesional (sin desglosar por la fuente)', color:'#c2185b'},
     {label:'Otros ingresos', color:'#6b6b6b'},
     // 'Abonos' y las 2 de abajo no se usan mientras ABONOS_DENTRO_DE_ESTADIO sea true: se conservan para poder revertir la fusión.
     {label:'Estadio: recaudación de partidos', color:'#1b7a3d'},
