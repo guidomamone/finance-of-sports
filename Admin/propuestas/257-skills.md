@@ -378,7 +378,7 @@ La skill 2.1 gana una línea al final de su punto 4: «El detalle de qué se pru
 ```markdown
 **Después de `preparar`:** si `audit.js` da `faltantes-desfasado` (P1; `data/faltantes/` depende de PDFs que git ignora y que la principal bajó después), se arregla volviendo a correr `node tools/worktree.mjs preparar <carpeta>`.
 
-**Un archivo generado no se mergea a mano: se regenera.** Si hay conflicto en `Admin/sourcing/README.md`, `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js` o `Admin/ESTADO-clubes.md` (el bloque CLUB-INDEX), tomá cualquiera de los dos lados, mergeá y corré el generador que corresponde. Resolverlos línea por línea es cómo se mete un dato que ningún documento respalda.
+**Un archivo generado no se mergea a mano: se regenera.** Si hay conflicto en `Admin/sourcing/README.md`, `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js`, `data/sponsors.js` o `Admin/ESTADO-clubes.md` (el bloque CLUB-INDEX), tomá cualquiera de los dos lados, mergeá y corré el generador que corresponde. Resolverlos línea por línea es cómo se mete un dato que ningún documento respalda.
 
 **El hook de los documentos de la principal lee el texto del comando:** un Bash que solo nombra `TODO.md`, `CHANGELOG.md` o `ESTADO.md` junto a una escritura también se frena. Escribir la nota de la sesión con Edit o Write.
 
@@ -404,6 +404,8 @@ En `CONVENCIONES.md` el bullet se reemplaza por una línea: «Cerrar un punto de
 ### Qué NO es una skill ni vale mudar
 
 `CONVENCIONES.md`, «Índice de las reglas que viven en otro archivo» (`:156-201`): son 40 líneas de punteros con «Versión N»; no es ni regla ni procedimiento. Va a lo que dice 3.7 (dejar solo título y destino) o se borra entero: ninguna sesión llega a una regla por su número de versión.
+
+Parte 7 aprobada por Guido el 2026-10-21: «ok a la parte 7 del 257, con sponsors.js agregado».
 
 ## 8. Regla de redacción de todo texto que va a una skill
 
