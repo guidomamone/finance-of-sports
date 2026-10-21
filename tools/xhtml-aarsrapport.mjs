@@ -62,7 +62,8 @@ export function xhtmlALineas(src) {
       if (oc && !auto) oculto++;
       if (oculto) continue;
       if (/^h[1-6]$/.test(n)) { volcar(); linea = '#'.repeat(+n[1]) + ' '; }
-      else if (['p', 'div', 'li', 'br', 'section'].includes(n)) { if (celda != null) celda += ' '; else volcar(); }
+      // un span con position:absolute es una línea de texto puesta por coordenadas (las notas del consolidado PSE de København, hecho por ParsePort): el salto de línea está en el `top`, no en una etiqueta; sin esto las notas salen pegadas en una sola línea (Auditora 5)
+      else if (['p', 'div', 'li', 'br', 'section'].includes(n) || (n === 'span' && /position:\s*absolute/.test(estilo))) { if (celda != null) celda += ' '; else volcar(); }
       else if (n === 'table') { volcar(); tabla = []; }
       else if (n === 'tr') { fila = []; }
       else if (n === 'td' || n === 'th') { celda = ''; }
@@ -97,6 +98,8 @@ export function imprimirPdf(xhtmlAbs, pdfAbs) {
   const paginas = []; for (let p = 1; p <= n; p++) paginas.push(norm(execFileSync('pdftotext', ['-f', String(p), '-l', String(p), pdfAbs, '-'], { maxBuffer: 1e8 }).toString()));
   return paginas;
 }
+// las mismas páginas en orden del flujo del contenido (`pdftotext -raw`), para el escalón 2 de la compuerta (b)
+export function paginasRaw(pdfAbs, n) { const out = []; for (let p = 1; p <= n; p++) out.push(norm(execFileSync('pdftotext', ['-raw', '-f', String(p), '-l', String(p), pdfAbs, '-'], { maxBuffer: 1e8 }).toString())); return out; }
 // compuerta (b): la página de cada línea (monótona; la primera entre la actual y las 3 siguientes que contiene la firma). -> { pagina: [n|0], con, ubicadas, sinPagina: [linea] }
 export function alinear(lineas, paginas) {
   const pagina = []; let pag = 1, con = 0, ubicadas = 0; const sin = [];
@@ -113,6 +116,32 @@ export function alinear(lineas, paginas) {
   }
   return { pagina, con, ubicadas, sinPagina: sin };
 }
+// ESCALÓN 2 de la compuerta (b), solo cuando `alinear` no llega al piso (Auditora 5): la misma firma de cada línea, el mismo piso, pero la asignación de páginas es la mejor posible en vez de la primera
+// coincidencia. `alinear` avanza de a una y se desfasa para siempre tras unas pocas coincidencias falsas (en el consolidado PSE de København, 12 % de líneas ubicadas); acá se elige la secuencia NO
+// DECRECIENTE de páginas que ubica más líneas (programación dinámica, líneas × páginas). Las páginas salen de `pdftotext -raw` (orden del flujo del contenido, no el supuesto orden de lectura).
+// Una línea sin lugar en esa secuencia queda sin página: lleva la de la línea ubicada anterior, nunca una inventada.
+const esFirmable = (l) => { const celdas = l.startsWith('|') ? l.split('|').map((c) => c.trim()).filter((c) => c && !/^-+$/.test(c)) : [l]; const firma = norm(celdas.find((c) => norm(c).length >= 6) || ''); return firma.length >= 6 && (firma.match(/\p{L}/gu) || []).length >= 4; };
+export function alinearOptimo(lineas, paginas) {
+  const P = paginas.length; const mejor = Array.from({ length: P + 1 }, () => ({ val: 0 })); let con = 0; const cands = [];
+  lineas.forEach((l, i) => {
+    const celdas = l.startsWith('|') ? l.split('|').map((c) => c.trim()).filter((c) => c && !/^-+$/.test(c)) : [l]; const firma = norm(celdas.find((c) => norm(c).length >= 6) || '');
+    if (firma.length < 6 || (firma.match(/\p{L}/gu) || []).length < 4) return;
+    con++; const clave = firma.slice(0, 24); const etiqueta = norm((celdas.find((c) => norm(c).length >= 6) || '').split(/\d/)[0]);
+    const c = []; for (let p = 1; p <= P; p++) if (paginas[p - 1].includes(clave) || (etiqueta.length >= 6 && paginas[p - 1].includes(etiqueta))) c.push(p);
+    cands[i] = c;
+  });
+  lineas.forEach((l, i) => {
+    const c = cands[i]; if (!c || !c.length) return;
+    let pref = { val: 0 }; const nuevos = []; let k = 0;
+    for (let p = 1; p <= P; p++) { if (mejor[p].val > pref.val) pref = mejor[p]; if (c[k] === p) { nuevos.push([p, { val: pref.val + 1, i, p, prev: pref }]); k++; } }
+    for (const [p, nodo] of nuevos) if (nodo.val > mejor[p].val) mejor[p] = nodo;
+  });
+  let fin = mejor[1]; for (let p = 1; p <= P; p++) if (mejor[p].val > fin.val) fin = mejor[p];
+  const asign = new Map(); for (let nd = fin; nd && nd.i !== undefined; nd = nd.prev) asign.set(nd.i, nd.p);
+  const pagina = []; const sin = []; let pag = 1;
+  lineas.forEach((l, i) => { if (asign.has(i)) pag = asign.get(i); else if (esFirmable(l)) sin.push(l.slice(0, 90)); pagina.push(pag); });
+  return { pagina, con, ubicadas: asign.size, sinPagina: sin };
+}
 export function armarMd(xhtmlNombre, lineas, pagina) {
   const out = [`> Generado de ${xhtmlNombre} por tools/xhtml-aarsrapport.mjs · motor: ${MOTOR}. El PDF de al lado es la impresión de Chrome del XHTML oficial, no el documento oficial.`, ''];
   let actual = 0;
@@ -127,7 +156,11 @@ export function convertir(xhtmlAbs, { pdfDestino }) {
   if (faltan.length) r.errores.push(`(a) ${faltan.length} hecho(s) visible(s) sin su número en el .md: ${faltan.slice(0, 5).map((h) => `«${h.txt}» ${h.nombre}`).join(', ')}${faltan.length > 5 ? ', …' : ''}`);
   if (r.errores.length) return r;
   let paginas; try { paginas = imprimirPdf(xhtmlAbs, pdfDestino); } catch (e) { r.errores.push(e.message); return r; }
-  const al = alinear(lineas, paginas); r.paginasPdf = paginas.length; r.con = al.con; r.ubicadas = al.ubicadas;
+  let al = alinear(lineas, paginas); r.paginasPdf = paginas.length; r.con = al.con; r.ubicadas = al.ubicadas;
+  if (al.con && al.ubicadas / al.con < MIN_UBICADAS) { // escalón 2: la misma compuerta con la mejor asignación de páginas (solo si el codicioso no llega)
+    const op = alinearOptimo(lineas, paginasRaw(pdfDestino, paginas.length)); r.escalon = 'óptimo'; r.ubicadasCodicioso = al.ubicadas;
+    if (op.ubicadas > al.ubicadas) { al = op; r.ubicadas = op.ubicadas; }
+  }
   if (al.con === 0 || al.ubicadas / al.con < MIN_UBICADAS) { r.errores.push(`(b) ${al.con - al.ubicadas} de ${al.con} líneas sin página en el PDF (${al.con ? Math.round(100 * al.ubicadas / al.con) : 0} % ubicadas, hace falta ${Math.round(MIN_UBICADAS * 100)} %): ${al.sinPagina.slice(0, 5).join(' | ')}`); return r; }
   r.md = armarMd(nombre, lineas, al.pagina); return r;
 }
@@ -143,7 +176,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (!REHACER && (existsSync(mdAbs) || existsSync(pdfAbs))) { console.log(`${rel}: ya tiene ${existsSync(mdAbs) ? '.md' : '.pdf'}: no se toca (--rehacer)`); continue; }
     const tmpPdf = ESCRIBIR ? pdfAbs : join(tmp, basename(pdfAbs));
     let r; try { r = convertir(x, { pdfDestino: tmpPdf }); } catch (e) { console.log(`${rel}: ERROR ${e.message}`); mal++; continue; }
-    console.log(`${rel}: ${r.lineas} líneas · ${r.hechos} hechos iXBRL (${r.ocultos.length} ocultos${r.ocultos.length ? `: ${[...new Set(r.ocultos.map((h) => h.nombre))].slice(0, 4).join(', ')}` : ''}) · ${r.paginasPdf ? `PDF ${r.paginasPdf} págs, ${r.ubicadas}/${r.con} líneas ubicadas` : 'sin PDF'}`);
+    console.log(`${rel}: ${r.lineas} líneas · ${r.hechos} hechos iXBRL (${r.ocultos.length} ocultos${r.ocultos.length ? `: ${[...new Set(r.ocultos.map((h) => h.nombre))].slice(0, 4).join(', ')}` : ''}) · ${r.paginasPdf ? `PDF ${r.paginasPdf} págs, ${r.ubicadas}/${r.con} líneas ubicadas${r.escalon ? ` (escalón ${r.escalon}; el codicioso ubicaba ${r.ubicadasCodicioso})` : ''}` : 'sin PDF'}`);
     if (r.errores.length) { for (const e of r.errores) console.log(`   NO SE ESCRIBE: ${e}`); mal++; continue; }
     if (!ESCRIBIR) { console.log('   ok (ensayo: no se escribió nada)'); continue; }
     writeFileSync(mdAbs, r.md);
