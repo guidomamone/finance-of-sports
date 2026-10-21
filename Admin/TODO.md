@@ -94,7 +94,8 @@ el número de la izquierda es el orden de trabajo.
    cargados por Onboarding 8 sin falsos avisos, la Auditora decide si pasa de aviso a frenar.
 356. CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing busca en Companies House los clubes que no tenemos y
    presentan en iXBRL (Plymouth, Bolton, Lincoln, Oxford, Peterborough, Hibernian y el resto de League One, League Two y Escocia) y baja los
-   últimos 5 años; Onboarding los carga con `tools/xhtml-aarsrapport.mjs` (sin transcribir; el presupuesto de categorización, con Guido).
+   últimos 5 años; Onboarding los carga con `tools/xhtml-aarsrapport.mjs` (sin transcribir). Presupuesto: Guido dijo que sí (2026-10-21);
+   tope de US$3 para la categorización, con ensayo gratis antes.
 353. LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21). Medido (`Admin/mediciones/companies-house-ixbrl.md`): los grandes presentan PDF; 9 de 36
    clubes probados vienen en iXBRL (Nottingham Forest, Burnley y Bath Rugby, cargados; Plymouth, Bolton, Lincoln, Oxford, Peterborough e
    Hibernian, no). Probado con Forest, Burnley y Bath: `xhtml-aarsrapport.mjs` ya lee el iXBRL británico sin cambios y el `.md` cierra contra
