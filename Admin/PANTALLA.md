@@ -858,6 +858,10 @@ Texto movido sin cambios.
   la reemplazan, para no llenar el historial con cada click. Al abrir, la URL le gana al club guardado; un club o una liga que no
   existen se ignoran. Se tocan solo esas cinco claves (`?multi=0`, `?audit=1` quedan). La moneda, la inflación, el formato y
   Comparar todavía no van en la URL. El índice de Finanzas salta sin escribir un #ancla.
+  EL SCROLL sigue a la vista, en un solo lugar: `scrollDeVista()`, que corre en cada `escribirURL()`. Otra vista (pestaña, club, liga,
+  grupo o sponsor) arranca arriba, o en el ancla si la URL trae una; el año, la moneda o un filtro no mueven nada. Atrás, adelante y
+  recargar vuelven a la altura en que se dejó esa entrada (`history.scrollRestoration = 'manual'`; cada entrada lleva una clave `k`).
+  Ninguna vista llama a `window.scrollTo(0, 0)` por su cuenta al navegar: si hace falta, falta pasar por `escribirURL()`.
 - FINANZAS, LO DE ARRIBA (mockup: artboards "Finanzas" del artifact "Pantallas FoS"). El título es el club, con "Cambiar de
   club" al lado (en Finanzas el título ya dice qué club es). Debajo, una guía de una línea (qué se toca) que se cierra y no vuelve
   (`localStorage` `finGuiaCerrada`). La tarjeta de ejercicios termina con la vista en palabras ("Montos en USD, nominales, formato

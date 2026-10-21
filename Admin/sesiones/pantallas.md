@@ -1,3 +1,28 @@
+# Sesión pantallas (Pantallas 7): scroll al cambiar de vista
+
+## Qué cambió (para CHANGELOG)
+- Bug de Guido: en Ligas, elegir una liga después de scrollear la lista abría la liga a la misma altura. Arreglado en un solo lugar para toda navegación:
+  `scrollDeVista()` en `js/principal.js`, que corre en cada `escribirURL()`. Otra vista (pestaña, club, liga, grupo, sponsor) arranca arriba, o en el
+  ancla si la URL trae una; el año, la moneda o un filtro no mueven nada. Atrás, adelante y recargar vuelven a la altura de esa entrada
+  (`history.scrollRestoration = 'manual'`, una clave `k` por entrada, la altura se anota antes de cada click, al apretar atrás y cuando el scroll se
+  detiene). Se sacaron los `scrollTo(0, 0)` de `irASeccion()`, `GRUPO_VIEW.abrir()` y `SPONSOR_VIEW.abrir()`; los del selector quedan. Regla en
+  `Admin/PANTALLA.md` («EL ESTADO EN LA URL»). ASSET_V 1688.
+- Verificado servido a 1024 px: lista (1500) → liga (0) → club (0) → atrás (liga a 1300) → atrás (lista a 1500) → adelante (1300) → adelante (900);
+  cambiar el año de la liga no mueve; pestaña del nav arriba; recarga vuelve a la altura; `#finTrendCard` en la URL cae en el card. A 375 px con
+  toques reales: liga arriba y atrás vuelve a la lista. Como archivo a 1280 (Chrome sin ventana por CDP): lista → liga → club → atrás → atrás, igual.
+  `node tools/audit.js`: 0 P0, 0 P1.
+
+## Qué queda (para TODO)
+- `data/club-leagues.js` arma `'data/club-leagues/<iso2>.js'` sin `fosUrl()`: después de navegar dentro de la app a `/liga/<id>` o `/club/<id>` las 23
+  tablas dan 404 (`[club-leagues] no se pudo cargar`) y el selector queda sin ligas. Es de antes de esta tanda; un cambio de una línea.
+- A 375 px los países de la lista de Ligas están plegados y al volver con atrás se vuelven a plegar: la altura se restaura hasta donde da la lista
+  plegada. Lo que se abrió debería mantenerse al volver (va de ejemplo en la guía de UX).
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 6): marca COVID, a la espera del ok a las guías y a la etiqueta
 
 ## Qué queda (para TODO)
