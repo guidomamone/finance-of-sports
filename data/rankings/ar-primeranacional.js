@@ -74,8 +74,8 @@ window.RANKINGS["ar-primeranacional"] = {
     leagueSize: 23,
     wiki: {"t":"2016–17 Primera B Nacional","lang":"en","at":"2026-10-17","n":23},
     clubs: [
-      { id:"argentinosjuniors", revenue:11.595, reportType:"official_balance_sheet",
-        sourceId:"argentinosjuniors-balance-2016-2017",
+      { id:"argentinosjuniors-ar", revenue:11.595, reportType:"official_balance_sheet",
+        sourceId:"argentinosjuniors-ar-balance-2016-2017",
         mix:[["Cuotas Sociales",1.509],["Comercial / Sponsors",0.963],["Estadio",0.083],["Televisión",2.092],["Venta de Jugadores",4.339],["Otras secciones deportivas",0.937],["Otros ingresos",1.672]] },
     ],
   },

@@ -1,0 +1,453 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "vilanova-br",
+    "name": "Vila Nova Futebol Clube",
+    "display_name": "Vila Nova",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "vilanova-br-demonstrativo-financeiro-2025",
+      "club_id": "vilanova-br",
+      "title": "Vila Nova Futebol Clube — demonstrativo-financeiro-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "vilanova-br-balanco-patrimonial-2015",
+      "club_id": "vilanova-br",
+      "title": "Vila Nova Futebol Clube — balanco-patrimonial-2015 (ejercicio 2015)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "vilanova-br-balanco-patrimonial-2016",
+      "club_id": "vilanova-br",
+      "title": "Vila Nova Futebol Clube — balanco-patrimonial-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "vilanova-br-balanco-patrimonial-2017",
+      "club_id": "vilanova-br",
+      "title": "Vila Nova Futebol Clube — balanco-patrimonial-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "vilanova-br-demonstrativo-financeiro-2021",
+      "club_id": "vilanova-br",
+      "title": "Vila Nova Futebol Clube — demonstrativo-financeiro-2021 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "vilanova-br-demonstrativo-financeiro-2022",
+      "club_id": "vilanova-br",
+      "title": "Vila Nova Futebol Clube — demonstrativo-financeiro-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "vilanova-br-demonstrativo-financeiro-2023",
+      "club_id": "vilanova-br",
+      "title": "Vila Nova Futebol Clube — demonstrativo-financeiro-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "vilanova-br-demonstrativo-financeiro-2024",
+      "club_id": "vilanova-br",
+      "title": "Vila Nova Futebol Clube — demonstrativo-financeiro-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "vilanova-br-notas-explicativas-2014",
+      "club_id": "vilanova-br",
+      "title": "Vila Nova Futebol Clube — notas-explicativas-2014 (ejercicio 2014)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2014,
+      "period_end": "2014-12-31",
+      "currency": "BRL",
+      "source_id": "vilanova-br-notas-explicativas-2014",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2014-12-31"},
+      "revenue": [
+        {"label":"Receitas Atividades Esportivas","category":"lump_football_operations","amount":1.965462,"disclosure":"aggregated"},
+        {"label":"Receitas Doações/Patrocínios","category":"sponsorship_commercial","amount":0.630388,"disclosure":"aggregated"},
+        {"label":"Receitas Publicidade","category":"sponsorship_commercial","amount":0.288755,"disclosure":"aggregated"},
+        {"label":"Receitas Direitos Federativos Atletas","category":"player_sales","amount":0.665997,"disclosure":"aggregated"},
+        {"label":"Receitas Aluguéis","category":"other_income","amount":0.069207,"disclosure":"aggregated"},
+        {"label":"Receitas Extraordinárias","category":"other_income","amount":0.057821,"disclosure":"aggregated"},
+        {"label":"Receitas Contribuições Conselheiros","category":"member_dues","amount":0.303172,"disclosure":"aggregated"},
+        {"label":"Receitas Diversas","category":"other_income","amount":0.038241,"disclosure":"aggregated"},
+        {"label":"Receitas CBF","category":"broadcasting","amount":1.89,"disclosure":"aggregated"},
+        {"label":"Receitas Escolinha de Futebol","category":"youth_football","amount":0.12687,"disclosure":"aggregated"},
+        {"label":"Receitas Sócio Tigrão","category":"member_dues","amount":0.001461,"disclosure":"aggregated"},
+        {"label":"Receitas Timemania","category":"other_income","amount":0.078862,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Despesas Administrativas","category":"admin_general_expense","amount":-2.899833,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.157814,"disclosure":"aggregated"},
+        {"label":"Despesas Serviços Terceiros","category":"admin_general_expense","amount":-0.160415,"disclosure":"aggregated"},
+        {"label":"Ajustes de Exercícios Anteriores","category":"exceptional_items","amount":-0.002719,"disclosure":"aggregated"},
+        {"label":"Despesas Depto Esportes","category":"lump_football_operations_expense","amount":-3.268187,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.004187,"tax":0,"gross_debt":18.658933,"cash":1.404004},
+      "official_totals": {"revenue":6.116236,"expenses":6.488968,"net_result":-0.376919},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":1.965462,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Despesas Depto Esportes",
+            "side": "expense",
+            "amount": 3.268187,
+            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense"
+          }
+        ],
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
+      }
+    },
+    {
+      "fiscal_year": 2015,
+      "period_end": "2015-12-31",
+      "currency": "BRL",
+      "source_id": "vilanova-br-balanco-patrimonial-2015",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2015-12-31"},
+      "revenue": [
+        {"label":"Receitas Atividades Esportivas","category":"lump_football_operations","amount":2.338518,"disclosure":"aggregated"},
+        {"label":"Receitas Escolinha de Futebol","category":"youth_football","amount":0.081603,"disclosure":"aggregated"},
+        {"label":"Receitas Doações/Patrocínios","category":"sponsorship_commercial","amount":0.193571,"disclosure":"aggregated"},
+        {"label":"Receitas Publicidade","category":"sponsorship_commercial","amount":1.130904,"disclosure":"aggregated"},
+        {"label":"Receitas Direitos Federativos Atletas","category":"player_sales","amount":0.467925,"disclosure":"aggregated"},
+        {"label":"Receitas Alugueis","category":"other_income","amount":0.096017,"disclosure":"aggregated"},
+        {"label":"Receitas Contribuições Conselheiros","category":"member_dues","amount":0.500735,"disclosure":"aggregated"},
+        {"label":"Receitas Time mania","category":"other_income","amount":0.18172,"disclosure":"aggregated"},
+        {"label":"Receitas Diversas","category":"other_income","amount":1.899206,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Despesas Administrativas","category":"admin_general_expense","amount":-4.361587,"disclosure":"aggregated"},
+        {"label":"Despesas Depto Esportes","category":"lump_football_operations_expense","amount":-3.649581,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.046495,"disclosure":"aggregated"},
+        {"label":"Despesas Serviços Terceiros","category":"admin_general_expense","amount":-0.541265,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.033295,"tax":0,"gross_debt":18.819918,"cash":0.077259},
+      "official_totals": {"revenue":6.890197,"expenses":8.598927,"net_result":-1.675435},
+      "adjustments": {
+        "extra_rows": [{"label":"Receitas Financeiras","amount":0.038324},{"label":"Despesas Financeiras","amount":-0.005029}],
+        "no_breakdown": [
+          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":2.338518,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Despesas Depto Esportes",
+            "side": "expense",
+            "amount": 3.649581,
+            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-12-31",
+      "currency": "BRL",
+      "source_id": "vilanova-br-balanco-patrimonial-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2016-12-31"},
+      "revenue": [
+        {"label":"Receitas Atividades Esportivas","category":"lump_football_operations","amount":2.220891,"disclosure":"aggregated"},
+        {"label":"Receitas Escolinha de Futebol","category":"youth_football","amount":0.119131,"disclosure":"aggregated"},
+        {"label":"Receitas Doações/Patrocínios","category":"sponsorship_commercial","amount":0.50307,"disclosure":"aggregated"},
+        {"label":"Receitas CBF","category":"broadcasting","amount":5.266022,"disclosure":"aggregated"},
+        {"label":"Receitas Publicidade","category":"sponsorship_commercial","amount":1.753607,"disclosure":"aggregated"},
+        {"label":"Receitas Sócio Tigrão","category":"member_dues","amount":0.368941,"disclosure":"aggregated"},
+        {"label":"Receitas Direitos Federativos Atletas","category":"player_sales","amount":0.6,"disclosure":"aggregated"},
+        {"label":"Receitas Alugueis","category":"other_income","amount":0.269565,"disclosure":"aggregated"},
+        {"label":"Receitas Contribuições Conselheiros","category":"member_dues","amount":0.389937,"disclosure":"aggregated"},
+        {"label":"Receitas Time mania","category":"other_income","amount":0.260774,"disclosure":"aggregated"},
+        {"label":"Receitas Diversas","category":"other_income","amount":1.142537,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Despesas Administrativas","category":"admin_general_expense","amount":-9.801794,"disclosure":"aggregated"},
+        {"label":"Despesas Depto Esportes","category":"lump_football_operations_expense","amount":-4.783521,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.185638,"disclosure":"aggregated"},
+        {"label":"Despesas Serviços Terceiros","category":"admin_general_expense","amount":-0.535155,"disclosure":"aggregated"},
+        {"label":"Despesas Diversas","category":"other_expenses","amount":-0.013946,"disclosure":"aggregated"},
+        {"label":"Ajustes de Exercícios Anteriores","category":"exceptional_items","amount":-0.34373,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.002693,"tax":0,"gross_debt":18.593245,"cash":0.056715},
+      "official_totals": {"revenue":12.894474,"expenses":15.320054,"net_result":-2.772003},
+      "adjustments": {
+        "extra_rows": [{"label":"Receitas Financeiras","amount":0.030509},{"label":"Despesas Financeiras","amount":-0.033202}],
+        "no_breakdown": [
+          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":2.220891,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Despesas Depto Esportes",
+            "side": "expense",
+            "amount": 4.783521,
+            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense"
+          }
+        ],
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "BRL",
+      "source_id": "vilanova-br-balanco-patrimonial-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2017-12-31"},
+      "revenue": [
+        {"label":"Receitas Atividades Esportivas","category":"lump_football_operations","amount":3.342234,"disclosure":"aggregated"},
+        {"label":"Receitas Escolinha de Futebol","category":"youth_football","amount":0.110915,"disclosure":"aggregated"},
+        {"label":"Receitas Doações/Patrocínios","category":"sponsorship_commercial","amount":2.280957,"disclosure":"aggregated"},
+        {"label":"Receitas CBF","category":"broadcasting","amount":5.539438,"disclosure":"aggregated"},
+        {"label":"Receitas Publicidade","category":"sponsorship_commercial","amount":1.839,"disclosure":"aggregated"},
+        {"label":"Receitas Sócio Tigrão","category":"member_dues","amount":0.739465,"disclosure":"aggregated"},
+        {"label":"Receitas Direitos Federativos Atletas","category":"player_sales","amount":0.105638,"disclosure":"aggregated"},
+        {"label":"Receitas Alugueis","category":"other_income","amount":0.086921,"disclosure":"aggregated"},
+        {"label":"Receitas Federação Goiana","category":"broadcasting","amount":0.405,"disclosure":"aggregated"},
+        {"label":"Receitas Contribuições Conselheiros","category":"member_dues","amount":0.39385,"disclosure":"aggregated"},
+        {"label":"Receitas Time mania","category":"other_income","amount":0.346337,"disclosure":"aggregated"},
+        {"label":"Receitas Diversas","category":"other_income","amount":22.764537,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Despesas Administrativas","category":"admin_general_expense","amount":-7.215652,"disclosure":"aggregated"},
+        {"label":"Despesas Depto Esportes","category":"lump_football_operations_expense","amount":-31.235464,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.146867,"disclosure":"aggregated"},
+        {"label":"Despesas Serviços Terceiros","category":"admin_general_expense","amount":-0.867857,"disclosure":"aggregated"},
+        {"label":"Despesas Diversas","category":"other_expenses","amount":-0.008291,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.065278,"tax":0,"gross_debt":18.643609,"cash":0.181721},
+      "official_totals": {"revenue":37.954292,"expenses":39.474131,"net_result":-1.585118},
+      "adjustments": {
+        "extra_rows": [{"label":"Receitas Financeiras","amount":0.00202},{"label":"Despesas Financeiras","amount":-0.067298}],
+        "no_breakdown": [
+          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":3.342234,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Despesas Depto Esportes",
+            "side": "expense",
+            "amount": 31.235464,
+            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense"
+          }
+        ],
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "BRL",
+      "source_id": "vilanova-br-demonstrativo-financeiro-2021",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2021-12-31"},
+      "revenue": [
+        {"label":"RECEITA COM DIREITOS DE TRANSMISSÃO E PREMIAÇÕES","category":"broadcasting","amount":16.622995,"disclosure":"aggregated"},
+        {"label":"RECEITA PATROCÍNIO E MARKETING","category":"sponsorship_commercial","amount":4.50246,"disclosure":"aggregated"},
+        {"label":"RECEITAS DIVERSAS","category":"other_income","amount":2.989799,"disclosure":"aggregated"},
+        {"label":"(-) DEDUÇÕES DA RECEITA BRUTA","category":"other_income","amount":-1.511113,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"(-) CUSTOS GERAIS","category":"admin_general_expense","amount":-0.09868,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM PESSOAL","category":"wages_squad","amount":-6.451134,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES","category":"admin_general_expense","amount":-0.372019,"disclosure":"aggregated"},
+        {"label":"(-) PROVISÕES E CONTIGÊNCIAS","category":"admin_general_expense","amount":-12.27047,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM VENDAS EM GERAL","category":"admin_general_expense","amount":-6.188497,"disclosure":"aggregated"},
+        {"label":"(-) OUTRAS DESPESAS","category":"other_expenses","amount":-4.991006,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":5.972119,"tax":0,"gross_debt":67.059933,"cash":0.340353},
+      "official_totals": {"revenue":22.60414,"expenses":30.371805,"net_result":-1.795546},
+      "adjustments": {"extra_rows":[{"label":"(-) DESPESA FINANCEIRA","amount":-0.657771},{"label":"RECEITAS FINANCEIRAS","amount":6.62989}]}
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "BRL",
+      "source_id": "vilanova-br-demonstrativo-financeiro-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2022-12-31"},
+      "revenue": [
+        {"label":"RECEITA PATROCINIO E MARKETING","category":"sponsorship_commercial","amount":5.431481,"disclosure":"aggregated"},
+        {"label":"RECEITAS DIVERSAS","category":"other_income","amount":12.457555,"disclosure":"aggregated"},
+        {"label":"(-) DEDUÇÕES DA RECEITA BRUTA","category":"other_income","amount":-1.051383,"disclosure":"aggregated"},
+        {"label":"Venda/Empréstimos de atletas","category":"player_sales","amount":1.199337,"disclosure":"aggregated"},
+        {"label":"Programa socio-torcedor","category":"member_dues","amount":1.079868,"disclosure":"aggregated"},
+        {"label":"Cota televisiva","category":"broadcasting","amount":9.320801,"disclosure":"aggregated"},
+        {"label":"Incentivo Governo Federal","category":"other_income","amount":1.514364,"disclosure":"aggregated"},
+        {"label":"Premiação","category":"competition_bonus","amount":2.654,"disclosure":"aggregated"},
+        {"label":"Bilheteria","category":"matchday_competition","amount":3.251231,"disclosure":"aggregated"},
+        {"label":"Uso de imagem / royalties","category":"sponsorship_commercial","amount":0.932899,"disclosure":"aggregated"},
+        {"label":"Direito de imagem","category":"sponsorship_commercial","amount":0.008877,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"(-) DESPESAS COM PESSOAL","category":"wages_squad","amount":-6.312614,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES","category":"admin_general_expense","amount":-0.665202,"disclosure":"aggregated"},
+        {"label":"(-) PROVISÕES E CONTIGÊNCIAS","category":"admin_general_expense","amount":-5.447099,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM VENDAS EM GERAL","category":"admin_general_expense","amount":-8.82054,"disclosure":"aggregated"},
+        {"label":"(-) OUTRAS DESPESAS","category":"other_expenses","amount":-9.542741,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.896299,"tax":0,"gross_debt":78.489087,"cash":0.741401},
+      "official_totals": {"revenue":36.799031,"expenses":30.788196,"net_result":2.114536},
+      "adjustments": {"extra_rows":[{"label":"(-) DESPESA FINANCEIRA","amount":-4.429115},{"label":"RECEITAS FINANCEIRA","amount":0.532816}]}
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "BRL",
+      "source_id": "vilanova-br-demonstrativo-financeiro-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2023-12-31"},
+      "revenue": [
+        {"label":"RECEITAS DIVERSAS","category":"other_income","amount":5.165898,"disclosure":"aggregated"},
+        {"label":"(-) DEDUÇÕES DA RECEITA BRUTA","category":"other_income","amount":-0.279902,"disclosure":"aggregated"},
+        {"label":"Venda de atletas","category":"player_sales","amount":2.718339,"disclosure":"aggregated"},
+        {"label":"Programa sócio torcedor","category":"member_dues","amount":0.786306,"disclosure":"aggregated"},
+        {"label":"Cota televisiva","category":"broadcasting","amount":10.448425,"disclosure":"aggregated"},
+        {"label":"Bilheteria","category":"matchday_competition","amount":3.77718,"disclosure":"aggregated"},
+        {"label":"Patrocinadores","category":"sponsorship_commercial","amount":5.017601,"disclosure":"aggregated"},
+        {"label":"Marca própria - Loja Royalties","category":"sponsorship_commercial","amount":0.859339,"disclosure":"aggregated"},
+        {"label":"Venda de participações","category":"player_sales","amount":0.825366,"disclosure":"aggregated"},
+        {"label":"Mecanismo Solidariedade","category":"player_sales","amount":0.026993,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"(-) CUSTOS GERAIS","category":"admin_general_expense","amount":-0.003564,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM PESSOAL","category":"wages_squad","amount":-8.719408,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES","category":"admin_general_expense","amount":-1.201971,"disclosure":"aggregated"},
+        {"label":"(-) PROVISÕES E CONTIGÊNCIAS","category":"admin_general_expense","amount":-4.450807,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM VENDAS EM GERAL","category":"admin_general_expense","amount":-9.735194,"disclosure":"aggregated"},
+        {"label":"(-) OUTRAS DESPESAS","category":"other_expenses","amount":-9.510671,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.184577,"tax":0,"gross_debt":86.833975,"cash":0.395459},
+      "official_totals": {"revenue":29.345546,"expenses":33.621615,"net_result":-4.460647},
+      "adjustments": {"extra_rows":[{"label":"(-) DESPESAS FINANCEIRAS","amount":-4.019144},{"label":"RECEITAS FINANCEIRAS","amount":3.834567}]}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "BRL",
+      "source_id": "vilanova-br-demonstrativo-financeiro-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":6.18,"source":"document_close"},
+      "revenue": [
+        {"label":"RECEITA COM DIREITOS DE TRANSMISSÃO, PARTICIPAÇÃO E PREMIAÇÃO","category":"broadcasting","amount":49.144011,"disclosure":"aggregated"},
+        {"label":"RECEITAS DIVERSAS","category":"other_income","amount":5.069997,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"(-) DEDUÇÕES DA RECEITA BRUTA","category":"other_expenses","amount":-0.491419,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM PESSOAL","category":"wages_squad","amount":-21.884377,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM IMPOSTOS, TAXAS E CONTRIBUIÇÕES","category":"admin_general_expense","amount":-1.465905,"disclosure":"aggregated"},
+        {"label":"(-) PROVISÕES E CONTIGÊNCIAS","category":"admin_general_expense","amount":-5.067055,"disclosure":"aggregated"},
+        {"label":"(-) DESPESAS COM ATIVIDADE EM GERAL","category":"admin_general_expense","amount":-7.237539,"disclosure":"aggregated"},
+        {"label":"(-) OUTRAS DESPESAS","category":"other_expenses","amount":-9.776197,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-13.661356,"tax":0,"gross_debt":93.498102,"cash":0.496737},
+      "official_totals": {"revenue":54.214008,"expenses":45.922491,"net_result":-5.369839},
+      "adjustments": {"extra_rows":[{"label":"(-) DESPESAS FINANCEIRAS","amount":-14.367129},{"label":"RECEITAS FINANCEIRAS","amount":0.705773}]}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "vilanova-br-demonstrativo-financeiro-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":5.5,"source":"document_close"},
+      "revenue": [
+        {"label":"Participação em competições, exposição e performance","category":"competition_bonus","amount":6.548,"disclosure":"aggregated"},
+        {"label":"Direitos de transmissão","category":"broadcasting","amount":0.995,"disclosure":"aggregated"},
+        {"label":"Patrocínios e publicidade","category":"sponsorship_commercial","amount":7.964,"disclosure":"aggregated"},
+        {"label":"Licenciamento e *royanties","category":"sponsorship_commercial","amount":1.394,"disclosure":"aggregated"},
+        {"label":"Bilheteria","category":"matchday_competition","amount":5.605,"disclosure":"aggregated"},
+        {"label":"Sócio Tigrão","category":"member_dues","amount":1.404,"disclosure":"aggregated"},
+        {"label":"Associações quadro social","category":"member_dues","amount":0.866,"disclosure":"aggregated"},
+        {"label":"Repasse loterias","category":"other_income","amount":0.795,"disclosure":"aggregated"},
+        {"label":"Bares e lanchonetes","category":"stadium_other","amount":0.376,"disclosure":"aggregated"},
+        {"label":"Incentivos governamentais","category":"other_income","amount":0.277,"disclosure":"aggregated"},
+        {"label":"(-) Impostos e deduções da receita","category":"other_income","amount":-0.717,"disclosure":"aggregated"},
+        {"label":"Venda de atletas e participações em direitos econômicos","category":"player_sales","amount":11.749,"disclosure":"aggregated"},
+        {"label":"Mecanismo de solidariedade","category":"player_sales","amount":0.26,"disclosure":"aggregated"},
+        {"label":"Estorno de provisões (ii)","category":"other_income","amount":2.555,"disclosure":"aggregated"},
+        {"label":"Multas contratuais recebidas (iii)","category":"other_income","amount":1.884,"disclosure":"aggregated"},
+        {"label":"Doações","category":"other_income","amount":0.815,"disclosure":"aggregated"},
+        {"label":"Receita com aluguéis","category":"other_income","amount":0.146,"disclosure":"aggregated"},
+        {"label":"Arrecadação do futebol de base","category":"youth_football","amount":0.144,"disclosure":"aggregated"},
+        {"label":"Brindes recebidos","category":"other_income","amount":0.088,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_income","amount":0.057,"disclosure":"aggregated"},
+        {"label":"Reembolsos recebidos","category":"other_income","amount":0.052,"disclosure":"aggregated"},
+        {"label":"Taxa de avaliação base","category":"youth_football","amount":0.035,"disclosure":"aggregated"},
+        {"label":"Auxílio custos operacionais","category":"other_income","amount":0.033,"disclosure":"aggregated"},
+        {"label":"Estacionamentos","category":"other_income","amount":0.015,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Adesão ao condomínio LFU","category":"exceptional_items","amount":12.85,"disclosure":"aggregated"},
+        {"label":"(-) Comissões","category":"other_expenses","amount":-3.121,"disclosure":"aggregated"},
+        {"label":"(-) Gastos para viabilizar a venda","category":"other_expenses","amount":-0.52,"disclosure":"aggregated"},
+        {"label":"Perdas na venda de ativos","category":"other_expenses","amount":-0.356,"disclosure":"aggregated"},
+        {"label":"Amortização de direitos sobre atletas (i)","category":"player_amortisation","amount":-12.077,"disclosure":"aggregated"},
+        {"label":"Premiações (ii)","category":"wages_squad","amount":-6.676,"disclosure":"aggregated"},
+        {"label":"Salários, encargos e benefícios","category":"wages_squad","amount":-6.076,"disclosure":"aggregated"},
+        {"label":"Gastos com jogos e competições","category":"match_organisation_expense","amount":-5.898,"disclosure":"aggregated"},
+        {"label":"Despesas com transações de atletas","category":"other_expenses","amount":-2.686,"disclosure":"aggregated"},
+        {"label":"Rescisões","category":"wages_squad","amount":-0.89,"disclosure":"aggregated"},
+        {"label":"Perdas esperadas com processos trabalhistas","category":"other_expenses","amount":-0.681,"disclosure":"aggregated"},
+        {"label":"Direito de imagem","category":"wages_squad","amount":-0.535,"disclosure":"aggregated"},
+        {"label":"Salários, encargos e benefícios","category":"wages_squad","amount":-1.708,"disclosure":"aggregated"},
+        {"label":"Férias e encargos","category":"admin_general_expense","amount":-0.942,"disclosure":"aggregated"},
+        {"label":"13º salário e encargos","category":"admin_general_expense","amount":-0.578,"disclosure":"aggregated"},
+        {"label":"Rescisões","category":"wages_squad","amount":-0.016,"disclosure":"aggregated"},
+        {"label":"Serviços de terceiros","category":"admin_general_expense","amount":-3.713,"disclosure":"aggregated"},
+        {"label":"Uso e consumo","category":"admin_general_expense","amount":-2.717,"disclosure":"aggregated"},
+        {"label":"Depreciações","category":"depreciation","amount":-0.813,"disclosure":"aggregated"},
+        {"label":"Esportes olímpicos","category":"youth_other_sports_expense","amount":-0.774,"disclosure":"aggregated"},
+        {"label":"Publicidades","category":"admin_general_expense","amount":-0.767,"disclosure":"aggregated"},
+        {"label":"Manutenções de ativos","category":"admin_general_expense","amount":-0.743,"disclosure":"aggregated"},
+        {"label":"Gastos administrativos","category":"admin_general_expense","amount":-0.73,"disclosure":"aggregated"},
+        {"label":"Honorários jurídicos","category":"admin_general_expense","amount":-0.686,"disclosure":"aggregated"},
+        {"label":"Taxas associativas","category":"admin_general_expense","amount":-0.556,"disclosure":"aggregated"},
+        {"label":"Multas contratuais","category":"other_expenses","amount":-0.435,"disclosure":"aggregated"},
+        {"label":"Reembolsos","category":"admin_general_expense","amount":-0.325,"disclosure":"aggregated"},
+        {"label":"Tecnologia da informação","category":"admin_general_expense","amount":-0.093,"disclosure":"aggregated"},
+        {"label":"Despesas com transporte","category":"match_organisation_expense","amount":-0.082,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-0.077,"disclosure":"aggregated"},
+        {"label":"Impostos estaduais","category":"admin_general_expense","amount":-0.069,"disclosure":"aggregated"},
+        {"label":"Aluguéis","category":"admin_general_expense","amount":-0.063,"disclosure":"aggregated"},
+        {"label":"Honorários contábeis","category":"admin_general_expense","amount":-0.061,"disclosure":"aggregated"},
+        {"label":"Impostos municipais","category":"admin_general_expense","amount":-0.013,"disclosure":"aggregated"},
+        {"label":"Outros","category":"admin_general_expense","amount":-0.014,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.541,"tax":0,"gross_debt":94.946,"cash":0.016},
+      "official_totals": {"revenue":43.34,"expenses":55.491,"net_result":-2.842},
+      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-4.804},{"label":"Receitas financeiras","amount":1.263}]}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

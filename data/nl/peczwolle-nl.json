@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "peczwolle-nl",
+    "name": "PEC Zwolle B.V.",
+    "display_name": "PEC Zwolle",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "peczwolle-nl-wf-2024-2025-aaba1b62",
+      "club_id": "peczwolle-nl",
+      "title": "PEC Zwolle B.V. — wf-2024-2025-aaba1b62 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "peczwolle-nl-wf-2024-2025-aaba1b62",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":2.446954,"disclosure":"aggregated"},
+        {"label":"Prijzengeld","category":"competition_bonus","amount":1.615025,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"sponsorship_commercial","amount":7.726863,"disclosure":"aggregated"},
+        {"label":"Media gerelateerde baten","category":"broadcasting","amount":3.608212,"disclosure":"aggregated"},
+        {"label":"Merchandising & Business to consumeractiviteiten","category":"sponsorship_commercial","amount":0.160648,"disclosure":"aggregated"},
+        {"label":"Food & beverage","category":"stadium_other","amount":0.313929,"disclosure":"aggregated"},
+        {"label":"Overige omzet","category":"other_income","amount":0.951855,"disclosure":"aggregated"},
+        {"label":"Subsidies en giften","category":"other_income","amount":0.254179,"disclosure":"aggregated"},
+        {"label":"Vergoedingssommen spelers","category":"player_sales","amount":3.826242,"disclosure":"aggregated"},
+        {"label":"Solidariteit- en opleidingsvergoedingen","category":"player_sales","amount":1.21625,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lonen en salarissen","category":"wages_squad","amount":-9.815594,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"wages_squad","amount":-1.028039,"disclosure":"aggregated"},
+        {"label":"Pensioenlasten","category":"wages_squad","amount":-0.165985,"disclosure":"aggregated"},
+        {"label":"Overige personeelskosten","category":"admin_general_expense","amount":-1.536801,"disclosure":"aggregated"},
+        {"label":"Immateriële vaste activa","category":"player_amortisation","amount":-0.770219,"disclosure":"aggregated"},
+        {"label":"Materiële vaste activa","category":"depreciation","amount":-0.537409,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-7.164671,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.022802,"tax":-0.195518,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":22.120157,"expenses":21.018718,"net_result":0.928723},
+      "adjustments": {"extra_rows":[{"label":"Financiële baten en lasten","amount":0.022802},{"label":"Belastingen","amount":-0.195518}]}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

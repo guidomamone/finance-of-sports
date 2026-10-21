@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "istra-hr",
+    "name": "Nogometni klub Istra 1961 sportsko dioničko društvo",
+    "display_name": "Istra 1961",
+    "country": "HR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "istra-hr-financijsko-izvjesce-2025",
+      "club_id": "istra-hr",
+      "title": "Financijski izvještaji na dan 31. prosinca 2025. godine s izvješćem revizora (Pravilnik o licenciranju i financijskoj održivosti klubova HNS-a)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "EUR",
+      "source_id": "istra-hr-financijsko-izvjesce-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-12-31"},
+      "revenue": [
+        {
+          "label": "Prihodi od ulaznica (Nacionalna natjecanja + Ostali nerazvrstani)",
+          "category": "matchday_competition",
+          "amount": 0.43299,
+          "disclosure": "detailed",
+          "items": [["Prihodi od ulaznica - Nacionalna natjecanja",0.410161],["Ostali nerazvrstani prihodi od ulaznica",0.022829]]
+        },
+        {"label":"Prihodi od ulaznica - Godišnje ulaznice","category":"season_tickets","amount":0.073124,"disclosure":"detailed"},
+        {
+          "label": "Prihod od sponzorstva i oglašavanja - Ukupno",
+          "category": "sponsorship_commercial",
+          "amount": 0.510171,
+          "disclosure": "detailed",
+          "items": [
+            ["Glavni sponzor na opremi",0.065664],
+            ["Reklamiranje na panoima oko terena za igru",0.0023],
+            ["Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",0.442207]
+          ]
+        },
+        {"label":"Prihodi od prava emitiranja - Nacionalna natjecanja","category":"broadcasting","amount":0.8958,"disclosure":"detailed"},
+        {
+          "label": "Komercijalni prihodi - Ukupno",
+          "category": "sponsorship_commercial",
+          "amount": 0.199546,
+          "disclosure": "detailed",
+          "items": [["Komercijalni prihodi - Nacionalna natjecanja",0.00149],["Komercijalni prihodi - Prodaja proizvoda",0.198056]]
+        },
+        {"label":"Uefina klupska natjecanja - solidarne uplate","category":"competition_bonus","amount":1.87375,"disclosure":"detailed"},
+        {
+          "label": "Ostali poslovni prihodi - Ukupno",
+          "category": "other_income",
+          "amount": 0.341239,
+          "disclosure": "detailed",
+          "items": [
+            ["Donacije i dotacije od nacionalnih nogometnih tijela",0.071671],
+            ["Donacije i dotacije od države i lokalne samouprave",0.119171],
+            ["Donacije nepovezanih strana",0.035954],
+            ["Ostali nerazvrstani poslovni prihodi",0.114443]
+          ]
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Troškovi primanja igrača + Troškovi primanja stručnog stožera",
+          "category": "wages_squad",
+          "amount": -5.611605,
+          "disclosure": "detailed",
+          "items": [["Troškovi primanja igrača - ukupno",-3.615261],["Troškovi primanja stručnog stožera - ukupno",-1.996344]]
+        },
+        {
+          "label": "Troškovi prodaje/materijala + Trošak primanja ostalih zaposlenika + Troškovi sponzorstva + Troškovi imovine i objekata",
+          "category": "admin_general_expense",
+          "amount": -0.692704,
+          "disclosure": "detailed",
+          "items": [
+            ["Troškovi prodaje/materijala - Ukupno",-0.309314],
+            ["Trošak primanja ostalih zaposlenika - Ukupno",-0.268151],
+            ["Troškovi sponzorstva i oglašavanja",-0.051479],
+            ["Troškovi imovine i objekata",-0.06376]
+          ]
+        },
+        {
+          "label": "Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača)",
+          "category": "depreciation",
+          "amount": -0.259618,
+          "disclosure": "detailed",
+          "items": [["Amortizacija dugotrajne materijalne imovine",-0.071042],["Amortizacija ostale nematerijalne imovine (bez registracija igrača)",-0.188576]]
+        },
+        {"label":"Troškovi utakmica","category":"match_organisation_expense","amount":-0.847995,"disclosure":"detailed"},
+        {
+          "label": "Izvanredni troškovi + Ostali nerazvrstani poslovni rashodi",
+          "category": "other_expenses",
+          "amount": -1.653346,
+          "disclosure": "detailed",
+          "items": [["Izvanredni troškovi",-0.010233],["Ostali nerazvrstani poslovni rashodi",-1.643113]]
+        }
+      ],
+      "financial": {"profit_on_player_sales":1.707844,"asset_sales":0.438955,"net_interest":-0.087805,"tax":0,"gross_debt":2.521332,"cash":0.114452},
+      "official_totals": {"revenue":4.32662,"expenses":9.065268,"net_result":-2.679654},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ganancia por venta de jugadores","amount":1.707844},
+          {"label":"Intereses netos","amount":-0.087805},
+          {"label":"Otros ingresos/egresos no operativos","amount":0.438955}
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

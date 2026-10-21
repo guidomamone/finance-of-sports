@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "crystalpalace-gb",
+    "name": "CPFC 2010 Limited",
+    "display_name": "Crystal Palace",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "crystalpalace-gb-group-accounts-2024",
+      "club_id": "crystalpalace-gb",
+      "title": "Group accounts (CPFC 2010 Limited), ejercicio cerrado 30/6/2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07206409/filing-history"
+    },
+    {
+      "id": "crystalpalace-gb-group-accounts-2025",
+      "club_id": "crystalpalace-gb",
+      "title": "Group accounts (CPFC 2010 Limited), ejercicio cerrado 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07206409/filing-history",
+      "public_note": "Temporada de la primera FA Cup de la historia del club (2024-25)."
+    },
+    {
+      "id": "crystalpalace-gb-cpfc-2010-group-accounts-2021-22",
+      "club_id": "crystalpalace-gb",
+      "title": "CPFC 2010 Limited — cpfc-2010-group-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "crystalpalace-gb-cpfc-2010-group-accounts-2022-23",
+      "club_id": "crystalpalace-gb",
+      "title": "CPFC 2010 Limited — cpfc-2010-group-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"parish-blitzer-harris-textor","name":"Parish / Blitzer-Harris / Textor","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "crystalpalace-gb-cpfc-2010-group-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Broadcasting","category":"broadcasting","amount":126.49,"disclosure":"aggregated"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":11.642,"disclosure":"aggregated"},
+        {"label":"Gate receipts","category":"matchday_competition","amount":11.462,"disclosure":"aggregated"},
+        {"label":"Other commercial activities","category":"other_income","amount":8.706,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":1.699,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players","category":"player_sales","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Wages and salaries","category":"wages_squad","amount":-108.701,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-14.955,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"wages_squad","amount":-0.179,"disclosure":"aggregated"},
+        {"label":"Other operating charges","category":"other_expenses","amount":-19.458,"disclosure":"aggregated"},
+        {"label":"Depreciation","category":"depreciation","amount":-2.396,"disclosure":"aggregated"},
+        {"label":"Amortisation","category":"player_amortisation","amount":-34.151,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.388,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":159.999,"expenses":179.84,"net_result":-24.229},
+      "adjustments": {
+        "extra_rows": [{"label":"Interest receivable","amount":0.018},{"label":"Interest payable and similar charges","amount":-4.406},{"label":"Taxation","amount":null}]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "crystalpalace-gb-cpfc-2010-group-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Broadcasting","category":"broadcasting","amount":141.059,"disclosure":"aggregated"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":14.641,"disclosure":"aggregated"},
+        {"label":"Gate receipts","category":"matchday_competition","amount":12.344,"disclosure":"aggregated"},
+        {"label":"Other commercial activities","category":"other_income","amount":8.84,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":3.182,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players","category":"player_sales","amount":0.331,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of plant & machinery","category":"other_income","amount":0.029,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Wages and salaries","category":"wages_squad","amount":-114.191,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-16.226,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"wages_squad","amount":-0.209,"disclosure":"aggregated"},
+        {"label":"Other operating charges","category":"other_expenses","amount":-26.308,"disclosure":"aggregated"},
+        {"label":"Depreciation","category":"depreciation","amount":-2.552,"disclosure":"aggregated"},
+        {"label":"Amortisation","category":"player_amortisation","amount":-40.487,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.98,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":180.426,"expenses":199.973,"net_result":-27.527},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable","amount":0.763},
+          {"label":"Interest payable and similar charges","amount":-7.806},
+          {"label":"Foreign exchange losses","amount":-0.937},
+          {"label":"Taxation","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "crystalpalace-gb-group-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "parish-blitzer-harris-textor",
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Broadcasting","category":"broadcasting","amount":145.451,"disclosure":"detailed"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":16.104,"disclosure":"detailed"},
+        {"label":"Gate receipts","category":"matchday_competition","amount":13.809,"disclosure":"detailed"},
+        {"label":"Other commercial activities","category":"other_income","amount":10.167,"disclosure":"detailed"},
+        {"label":"Other income","category":"other_income","amount":4.693,"disclosure":"detailed"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":1.341,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-133.712,"disclosure":"detailed"},
+        {"label":"Other operating charges","category":"other_expenses","amount":-28.038,"disclosure":"detailed"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-45.951,"disclosure":"detailed"},
+        {"label":"Depreciation of tangible fixed assets","category":"depreciation","amount":-3.241,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0.007,"net_interest":-13.561,"tax":0,"gross_debt":157.905,"cash":9.036},
+      "official_totals": {"revenue":191.565,"expenses":210.942,"net_result":-32.931}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "crystalpalace-gb-group-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "parish-blitzer-harris-textor",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Broadcasting","category":"broadcasting","amount":142.296,"disclosure":"detailed"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":19.35,"disclosure":"detailed"},
+        {"label":"Gate receipts","category":"matchday_competition","amount":15.634,"disclosure":"detailed"},
+        {"label":"Other commercial activities","category":"other_income","amount":11.369,"disclosure":"detailed"},
+        {"label":"Other income (incluye £4,4m de prize money FA Cup, sin línea propia)","category":"other_income","amount":7.974,"disclosure":"detailed"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":66.078,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-148.292,"disclosure":"detailed"},
+        {"label":"Other operating charges","category":"other_expenses","amount":-33.032,"disclosure":"detailed"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-54.147,"disclosure":"detailed"},
+        {"label":"Depreciation of tangible fixed assets","category":"depreciation","amount":-3.676,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":-0.161,"net_interest":-15.128,"tax":0,"gross_debt":121.918,"cash":13.715},
+      "official_totals": {"revenue":262.701,"expenses":239.147,"net_result":8.265}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,13 +1,13 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  atleticogoianiense: { 2025: 'br-serieB' },
-  botafogo: { 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
-  coritiba: { 2023: 'br-serieA', 2024: 'br-serieB', 2025: 'br-serieB' },
-  cruzeiro: { 2022: 'br-serieB', 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
-  gremio: { 2024: 'br-serieA', 2025: 'br-serieA' },
-  ituano: { 2024: 'br-serieB' },
-  mirassol: { 2024: 'br-serieB' },
+  'atleticogoianiense-br': { 2025: 'br-serieB' },
+  'botafogo-br': { 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
+  'coritiba-br': { 2023: 'br-serieA', 2024: 'br-serieB', 2025: 'br-serieB' },
+  'cruzeiro-br': { 2022: 'br-serieB', 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
+  'gremio-br': { 2024: 'br-serieA', 2025: 'br-serieA' },
+  'ituano-br': { 2024: 'br-serieB' },
+  'mirassol-br': { 2024: 'br-serieB' },
   'americamineiro-br': { 2023: 'br-serieA', 2024: 'br-serieB', 2025: 'br-serieB' },
   'operarioferroviario-br': { 2024: 'br-serieB', 2025: 'br-serieB' },
   'voltaredonda-br': { 2024: 'br-serieC', 2025: 'br-serieB' },

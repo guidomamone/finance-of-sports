@@ -23,7 +23,7 @@
 //
 // USO:
 //   import { clubDeCarpeta } from './carpetas-clubes.mjs';
-//   clubDeCarpeta('Argentina', 'Racing')   -> { clubId: 'racing', via: 'cita', fuente: 'data/ar/racing-data.js' }
+//   clubDeCarpeta('Argentina', 'Racing')   -> { clubId: 'racing-ar', via: 'cita', fuente: 'data/ar/racing-ar-data.js' }
 //   clubDeCarpeta('Portugal', 'Nacional')  -> { clubId: null, via: 'nuevo' }
 //   node tools/carpetas-clubes.mjs            imprime el mapa completo y las carpetas ambiguas
 //   node tools/carpetas-clubes.mjs --json

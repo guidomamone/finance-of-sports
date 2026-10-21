@@ -1,0 +1,439 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "asterastripolis-gr",
+    "name": "A.G.S. Asteras Tripolis P.A.E.",
+    "display_name": "Asteras Tripolis",
+    "country": "GR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "asterastripolis-gr-asteras-fs-2019-06-30",
+      "club_id": "asterastripolis-gr",
+      "title": "A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2019-06-30 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asterastripolis-gr-asteras-fs-2020-06-30",
+      "club_id": "asterastripolis-gr",
+      "title": "A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2020-06-30 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asterastripolis-gr-asteras-fs-2022-06-30",
+      "club_id": "asterastripolis-gr",
+      "title": "A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2022-06-30 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asterastripolis-gr-asteras-fs-2023-06-30",
+      "club_id": "asterastripolis-gr",
+      "title": "A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2023-06-30 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asterastripolis-gr-asteras-fs-2024-06-30",
+      "club_id": "asterastripolis-gr",
+      "title": "A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2024-06-30 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asterastripolis-gr-asteras-fs-2025-06-30",
+      "club_id": "asterastripolis-gr",
+      "title": "A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2025-06-30 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asterastripolis-gr-asteras-fs-2021-06-30",
+      "club_id": "asterastripolis-gr",
+      "title": "A.G.S. Asteras Tripolis P.A.E. — Asteras_FS_2021-06-30 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "asterastripolis-gr-asteras-fs-2019-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Έσοδα αγώνων","category":"matchday_competition","amount":0.229394,"disclosure":"aggregated"},
+        {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"broadcasting","amount":0.9,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_sales","amount":0.590284,"disclosure":"aggregated"},
+        {"label":"Έσοδα από πώληση λοιπών αποθεμάτων","category":"other_income","amount":0.006008,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"other_income","amount":0.752631,"disclosure":"aggregated"},
+        {"label":"Διάφορα έσοδα πωλήσεων","category":"other_income","amount":0.00079,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_income","amount":1.008293,"disclosure":"aggregated"},
+        {"label":"Άλλα λειτουργικά έσοδα","category":"other_income","amount":0.000099,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.051392,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Αμοιβές και έξοδα προσωπικού","category":"wages_squad","amount":-2.659861,"disclosure":"aggregated"},
+        {"label":"Αμοιβές και έξοδα τρίτων","category":"admin_general_expense","amount":-0.30227,"disclosure":"aggregated"},
+        {"label":"Παροχές τρίτων","category":"admin_general_expense","amount":-0.34136,"disclosure":"aggregated"},
+        {"label":"Φόροι και τέλη","category":"admin_general_expense","amount":-0.094766,"disclosure":"aggregated"},
+        {"label":"Διάφορα έξοδα","category":"other_expenses","amount":-1.25543,"disclosure":"aggregated"},
+        {"label":"Αποσβέσεις παγίων στο λειτουργικό κόστος","category":"depreciation","amount":-0.174347,"disclosure":"aggregated"},
+        {"label":"Πρόβλεψη αποζημίωσης προσωπικού","category":"wages_squad","amount":-0.009071,"disclosure":"aggregated"},
+        {"label":"Αξία χορηγούμενων εισιτηρίων δωρεάν","category":"match_organisation_expense","amount":0.03226,"disclosure":"aggregated"},
+        {"label":"Πρόβλεψη για επισφαλείς απαιτήσεις","category":"other_amortisation","amount":-0.01,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις","category":"other_expenses","amount":-0.000981,"disclosure":"aggregated"},
+        {"label":"Αποσβέσεις αποχωρησάντων ποδοσφαιριστών","category":"player_amortisation","amount":-0.015034,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα έξοδα","category":"exceptional_items","amount":-0.000131,"disclosure":"aggregated"},
+        {"label":"Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)","category":"player_impairment","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.012125,"tax":0,"gross_debt":0,"cash":0.066814},
+      "official_totals": {"revenue":3.538891,"expenses":4.830991,"net_result":-1.305075},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Έσοδα συμμετοχών και επενδύσεων","amount":0},
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.012125},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "asterastripolis-gr-asteras-fs-2020-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [
+        {"label":"Έσοδα αγώνων","category":"matchday_competition","amount":0.180624,"disclosure":"aggregated"},
+        {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"broadcasting","amount":0.855,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_sales","amount":0.690353,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"other_income","amount":0.405879,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_income","amount":1.239662,"disclosure":"aggregated"},
+        {"label":"Έσοδα από συνεισφορά αλληλεγγύης","category":"player_sales","amount":0.053814,"disclosure":"aggregated"},
+        {"label":"Άλλα λειτουργικά έσοδα","category":"other_income","amount":0.000097,"disclosure":"aggregated"},
+        {"label":"Λοιπά Έκτακτα και ανόργανα έσοδα","category":"other_income","amount":0.002855,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+          "category": "lump_football_operations_expense",
+          "amount": -3.147828,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-1.259543,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.037245,"disclosure":"aggregated"},
+        {"label":"Πρόβλεψη για επισφαλείς απαιτήσεις","category":"other_amortisation","amount":-0.031,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις","category":"other_expenses","amount":-0.000007,"disclosure":"aggregated"},
+        {"label":"Προσαυξήσεις Εισφ. Ασφαλιστικών Ταμείων","category":"other_expenses","amount":-0.000844,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα έξοδα","category":"exceptional_items","amount":-0.000025,"disclosure":"aggregated"},
+        {"label":"Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)","category":"player_impairment","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01184,"tax":0,"gross_debt":0,"cash":0.417622},
+      "official_totals": {"revenue":3.435971,"expenses":4.476491,"net_result":-1.05236},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Έσοδα συμμετοχών και επενδύσεων","amount":0},
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.01184},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+            "side": "expense",
+            "amount": 3.147828,
+            "reason": "el documento no desglosa este renglón"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "asterastripolis-gr-asteras-fs-2021-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"broadcasting","amount":0.95,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_sales","amount":0.818301,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"other_income","amount":0.360137,"disclosure":"aggregated"},
+        {"label":"Αποζημίωση ειδικού σκοπού αθλητικών σωματείων","category":"other_income","amount":1.571428,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_income","amount":1.234845,"disclosure":"aggregated"},
+        {"label":"Έσοδα από συνεισφορά αλληλεγγύης και τροφεία","category":"player_sales","amount":0.102521,"disclosure":"aggregated"},
+        {"label":"Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Έσοδα συμμετοχών και επενδύσεων","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.00232,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+          "category": "lump_football_operations_expense",
+          "amount": -3.448209,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-1.334813,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.020243,"disclosure":"aggregated"},
+        {"label":"Πρόβλεψη για επισφαλείς απαιτήσεις","category":"other_amortisation","amount":-0.039,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις","category":"other_expenses","amount":-0.000036,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα έξοδα","category":"exceptional_items","amount":0,"disclosure":"aggregated"},
+        {"label":"Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)","category":"player_impairment","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01157,"tax":0,"gross_debt":0,"cash":0.601755},
+      "official_totals": {"revenue":5.039553,"expenses":4.842301,"net_result":0.185683},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.01157},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+            "side": "expense",
+            "amount": 3.448209,
+            "reason": "el documento no desglosa este renglón"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "asterastripolis-gr-asteras-fs-2022-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Έσοδα αγώνων","category":"matchday_competition","amount":0.072441,"disclosure":"aggregated"},
+        {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"broadcasting","amount":0.925,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_sales","amount":0.2,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"other_income","amount":0.430855,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_income","amount":1.060297,"disclosure":"aggregated"},
+        {"label":"Έσοδα από συνεισφορά αλληλεγγύης και τροφεία","category":"player_sales","amount":0.035175,"disclosure":"aggregated"},
+        {"label":"Άλλα λειτουργικά έσοδα","category":"other_income","amount":0.000102,"disclosure":"aggregated"},
+        {"label":"Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","category":"other_income","amount":0.000134,"disclosure":"aggregated"},
+        {"label":"Έσοδα συμμετοχών και επενδύσεων","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.021114,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+          "category": "lump_football_operations_expense",
+          "amount": -3.959304,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-1.361903,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.027559,"disclosure":"aggregated"},
+        {"label":"Πρόβλεψη για επισφαλείς απαιτήσεις","category":"other_amortisation","amount":-0.035,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις","category":"other_expenses","amount":-0.000004,"disclosure":"aggregated"},
+        {
+          "label": "Έκτακτα έξοδα από οριστικοποίηση δικαστικής αξίωσης προηγούμενης χρήσης",
+          "category": "exceptional_items",
+          "amount": -0.15,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά έκτακτα έξοδα","category":"exceptional_items","amount":0,"disclosure":"aggregated"},
+        {"label":"Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)","category":"player_impairment","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.012382,"tax":0,"gross_debt":0.025894,"cash":0.238168},
+      "official_totals": {"revenue":2.745118,"expenses":5.38377,"net_result":-2.801035},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000136},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.012518},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+            "side": "expense",
+            "amount": 3.959304,
+            "reason": "el documento no desglosa este renglón"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "asterastripolis-gr-asteras-fs-2023-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Έσοδα αγώνων","category":"matchday_competition","amount":0.070817,"disclosure":"aggregated"},
+        {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"broadcasting","amount":0.925,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_sales","amount":0.04,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"other_income","amount":0.413184,"disclosure":"aggregated"},
+        {"label":"Αποζημίωση ειδικού σκοπού αθλητικών σωματείων","category":"other_income","amount":1.5,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_income","amount":1.203324,"disclosure":"aggregated"},
+        {"label":"Έσοδα από συνεισφορά αλληλεγγύης και τροφεία","category":"player_sales","amount":0.013051,"disclosure":"aggregated"},
+        {"label":"Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","category":"other_income","amount":0.0002,"disclosure":"aggregated"},
+        {"label":"Έσοδα συμμετοχών και επενδύσεων","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.001503,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+          "category": "lump_football_operations_expense",
+          "amount": -5.016123,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-1.562964,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.026045,"disclosure":"aggregated"},
+        {"label":"Πρόβλεψη για επισφαλείς απαιτήσεις","category":"other_amortisation","amount":-0.024,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις","category":"other_expenses","amount":-0.000328,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα έξοδα","category":"exceptional_items","amount":-0.009106,"disclosure":"aggregated"},
+        {"label":"Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)","category":"player_impairment","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.017783,"tax":0,"gross_debt":0.062932,"cash":0.036521},
+      "official_totals": {"revenue":4.167078,"expenses":6.638566,"net_result":-2.489271},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000078},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.017861},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+            "side": "expense",
+            "amount": 5.016123,
+            "reason": "el documento no desglosa este renglón"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "asterastripolis-gr-asteras-fs-2024-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Έσοδα αγώνων","category":"matchday_competition","amount":0.188791,"disclosure":"aggregated"},
+        {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"broadcasting","amount":0.925,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_sales","amount":0.217707,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"other_income","amount":0.416949,"disclosure":"aggregated"},
+        {"label":"Αποζημίωση ειδικού σκοπού αθλητικών σωματείων","category":"other_income","amount":1.50282,"disclosure":"aggregated"},
+        {"label":"Διάφορα έσοδα πωλήσεων","category":"other_income","amount":0.00352,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_income","amount":1.339776,"disclosure":"aggregated"},
+        {"label":"Έσοδα από συνεισφορά αλληλεγγύης και τροφεία","category":"player_sales","amount":0.033608,"disclosure":"aggregated"},
+        {"label":"Άλλα λειτουργικά έσοδα","category":"other_income","amount":0.0001,"disclosure":"aggregated"},
+        {"label":"Έσοδα συμμετοχών και επενδύσεων","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Λοιπά Έκτακτα και ανόργανα έσοδα","category":"other_income","amount":0.001326,"disclosure":"aggregated"},
+        {"label":"Έσοδα από αχρησιμοποίητες προβλέψεις προηγούμενων χρήσεων","category":"other_income","amount":0.054637,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+          "category": "lump_football_operations_expense",
+          "amount": -4.804987,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-1.725763,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.035026,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις","category":"other_expenses","amount":-0.001165,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα έξοδα","category":"exceptional_items","amount":-0.0002,"disclosure":"aggregated"},
+        {"label":"Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)","category":"player_impairment","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01944,"tax":0,"gross_debt":0.046616,"cash":0.303483},
+      "official_totals": {"revenue":4.684235,"expenses":6.567142,"net_result":-1.902346},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000037},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.019477},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+            "side": "expense",
+            "amount": 4.804987,
+            "reason": "el documento no desglosa este renglón"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "asterastripolis-gr-asteras-fs-2025-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Έσοδα αγώνων","category":"matchday_competition","amount":0.200212,"disclosure":"aggregated"},
+        {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"broadcasting","amount":0.975,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_sales","amount":0.703735,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"other_income","amount":1.168365,"disclosure":"aggregated"},
+        {"label":"Αποζημίωση ειδικού σκοπού αθλητικών σωματείων","category":"other_income","amount":1.495569,"disclosure":"aggregated"},
+        {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_income","amount":2.789884,"disclosure":"aggregated"},
+        {"label":"Έσοδα από συνεισφορά αλληλεγγύης και τροφεία","category":"player_sales","amount":0.035019,"disclosure":"aggregated"},
+        {"label":"Έσοδα συμμετοχών και επενδύσεων","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Κέρδος από αγορά οντότητας ή τμήματος σε τιμή ευκαιρίας","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Λοιπά Έκτακτα και ανόργανα έσοδα","category":"other_income","amount":0.007877,"disclosure":"aggregated"},
+        {"label":"Έσοδα από αχρησιμοποίητες προβλέψεις προηγούμενων χρήσεων","category":"other_income","amount":0.04,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+          "category": "lump_football_operations_expense",
+          "amount": -6.879827,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-2.14122,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.044216,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις","category":"other_expenses","amount":-0.001652,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα έξοδα","category":"exceptional_items","amount":-0.000001,"disclosure":"aggregated"},
+        {"label":"Απομειώσεις περιουσιακών στοιχείων (καθαρό ποσό)","category":"player_impairment","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.026621,"tax":0,"gross_debt":0.030028,"cash":0.268204},
+      "official_totals": {"revenue":7.415662,"expenses":9.066915,"net_result":-1.677874},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.026621},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+            "side": "expense",
+            "amount": 6.879827,
+            "reason": "el documento no desglosa este renglón"
+          }
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

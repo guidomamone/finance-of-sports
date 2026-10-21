@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "burnley-gb",
+    "name": "Burnley FC Holdings Limited",
+    "display_name": "Burnley",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "08-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "burnley-gb-holdings-group-accounts-2024",
+      "club_id": "burnley-gb",
+      "title": "Burnley FC Holdings Limited — Annual Report and Financial Statements, year ended 31 July 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08335231/filing-history",
+      "public_note": "Balance consolidado auditado (BDO LLP, con énfasis de negocio en marcha) de Burnley FC Holdings Limited, la sociedad matriz del grupo (ALK Capital / Alan Pace), depositado en Companies House (Reino Unido). Ejercicio cerrado el 31 de julio de 2024 (temporada 2023/24, Premier League — recién ascendido, descendió al terminar 19°)."
+    },
+    {
+      "id": "burnley-gb-holdings-group-accounts-2025",
+      "club_id": "burnley-gb",
+      "title": "Burnley FC Holdings Limited — Annual Report and Financial Statements, year ended 31 July 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08335231/filing-history",
+      "public_note": "Balance consolidado auditado (BDO LLP) de Burnley FC Holdings Limited. Ejercicio cerrado el 31 de julio de 2025 (temporada 2024/25, CHAMPIONSHIP — recién descendido, ascendió de nuevo terminando 2°, no Premier League como los otros 4 clubes onboardeados en esta sesión)."
+    },
+    {
+      "id": "burnley-gb-holdings-group-accounts-2022-23",
+      "club_id": "burnley-gb",
+      "title": "Burnley FC Holdings Limited — burnley-holdings-group-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "burnley-gb-holdings-group-accounts-2021-22",
+      "club_id": "burnley-gb",
+      "title": "Burnley FC Holdings Limited — burnley-holdings-group-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"pace","name":"Alan Pace / ALK Capital LLC","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-07-31",
+      "currency": "GBP",
+      "source_id": "burnley-gb-holdings-group-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-07-31"},
+      "revenue": [
+        {"label":"Match income","category":"matchday_competition","amount":7.021,"disclosure":"aggregated"},
+        {"label":"Television rights","category":"broadcasting","amount":104.894,"disclosure":"aggregated"},
+        {"label":"Catering sales","category":"stadium_other","amount":1.739,"disclosure":"aggregated"},
+        {"label":"Other commercial activities","category":"other_income","amount":7.738,"disclosure":"aggregated"},
+        {"label":"Retail sales","category":"sponsorship_commercial","amount":2.015,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":1.232,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":54.719,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Wages and salaries","category":"wages_squad","amount":-82.009,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-9.828,"disclosure":"aggregated"},
+        {"label":"Cost of defined contribution scheme","category":"wages_squad","amount":-0.141,"disclosure":"aggregated"},
+        {"label":"Depreciation","category":"depreciation","amount":-2.37,"disclosure":"aggregated"},
+        {"label":"Other operating expenses","category":"other_expenses","amount":-19.13,"disclosure":"aggregated"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-22.703,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.097,"tax":-10.184,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":179.358,"expenses":136.181,"net_result":25.896},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.075},
+          {"label":"Interest payable and similar expenses","amount":-7.172},
+          {"label":"Tax on profit/(loss)","amount":-10.184}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-07-31",
+      "currency": "GBP",
+      "source_id": "burnley-gb-holdings-group-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-07-31"},
+      "revenue": [
+        {"label":"Match income","category":"matchday_competition","amount":8.726,"disclosure":"aggregated"},
+        {"label":"Television rights","category":"broadcasting","amount":47.812,"disclosure":"aggregated"},
+        {"label":"Catering sales","category":"stadium_other","amount":2.342,"disclosure":"aggregated"},
+        {"label":"Other commercial activities","category":"other_income","amount":3.195,"disclosure":"aggregated"},
+        {"label":"Retail sales","category":"sponsorship_commercial","amount":2.824,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":0.89,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":11.399,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Wages and salaries","category":"wages_squad","amount":-46.807,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-6.737,"disclosure":"aggregated"},
+        {"label":"Cost of defined contribution scheme","category":"wages_squad","amount":-0.117,"disclosure":"aggregated"},
+        {"label":"Depreciation","category":"depreciation","amount":-2.412,"disclosure":"aggregated"},
+        {"label":"Other operating expenses","category":"other_expenses","amount":-28.304,"disclosure":"aggregated"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-22.115,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.695,"tax":8.056,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":77.188,"expenses":106.492,"net_result":-27.943},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":2.804},
+          {"label":"Interest payable and similar expenses","amount":-9.499},
+          {"label":"Tax on (loss)/profit","amount":8.056}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-07-31",
+      "currency": "GBP",
+      "source_id": "burnley-gb-holdings-group-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "pace",
+      "fx": {"ref":"GBP@2024-07-31"},
+      "revenue": [
+        {"label":"Match income","category":"matchday_competition","amount":8.869,"disclosure":"detailed"},
+        {"label":"Television rights","category":"broadcasting","amount":110.564,"disclosure":"detailed"},
+        {"label":"Catering sales","category":"stadium_other","amount":0.836,"disclosure":"detailed"},
+        {"label":"Other commercial activities","category":"other_income","amount":10.681,"disclosure":"not_disclosed"},
+        {"label":"Retail sales","category":"sponsorship_commercial","amount":2.615,"disclosure":"detailed"},
+        {"label":"Other operating income (excluding player trading)","category":"other_income","amount":0.804,"disclosure":"detailed"},
+        {"label":"Other operating income (player trading — loan fees receivable)","category":"player_sales","amount":5.494,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player/staff registrations","category":"player_sales","amount":15.059,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-27.744,"disclosure":"not_disclosed"},
+        {"label":"Staff costs","category":"wages_squad","amount":-93.42,"disclosure":"detailed"},
+        {"label":"Depreciation","category":"depreciation","amount":-2.629,"disclosure":"detailed"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-42.615,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-16.961,"tax":4.016,"gross_debt":112.393,"cash":8.91},
+      "official_totals": {"revenue":154.922,"expenses":166.408,"net_result":-24.431}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-07-31",
+      "currency": "GBP",
+      "source_id": "burnley-gb-holdings-group-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "pace",
+      "fx": {"ref":"GBP@2025-07-31"},
+      "revenue": [
+        {"label":"Match income","category":"matchday_competition","amount":9.095,"disclosure":"detailed"},
+        {"label":"Television rights","category":"broadcasting","amount":55.219,"disclosure":"detailed"},
+        {"label":"Catering sales","category":"stadium_other","amount":0.351,"disclosure":"detailed"},
+        {"label":"Other commercial activities","category":"other_income","amount":4.358,"disclosure":"not_disclosed"},
+        {"label":"Retail sales","category":"sponsorship_commercial","amount":2.723,"disclosure":"detailed"},
+        {"label":"Other operating income (excluding player trading)","category":"other_income","amount":0.98,"disclosure":"detailed"},
+        {"label":"Other operating income (player trading — loan fees receivable)","category":"player_sales","amount":4.596,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player/staff registrations","category":"player_sales","amount":58.954,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-30.401,"disclosure":"not_disclosed"},
+        {"label":"Staff costs","category":"wages_squad","amount":-82.263,"disclosure":"detailed"},
+        {"label":"Depreciation","category":"depreciation","amount":-2.606,"disclosure":"detailed"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-36.679,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-13.489,"tax":0.632,"gross_debt":142.372,"cash":12.909},
+      "official_totals": {"revenue":136.276,"expenses":151.949,"net_result":-28.53}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

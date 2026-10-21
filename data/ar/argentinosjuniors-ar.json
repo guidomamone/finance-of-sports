@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "argentinosjuniors-ar",
+    "name": "Asociación Atlética Argentinos Juniors",
+    "display_name": "Argentinos Juniors",
+    "country": "AR",
+    "reporting_currency": "ARS",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "argentinosjuniors-ar-presentacion-asamblea-2015-2019",
+      "club_id": "argentinosjuniors-ar",
+      "title": "Presentación de Asamblea: Estados de Situación Patrimonial y de Resultados comparativos, Ejercicios 2015 a 2019 (30/6 de cada año)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Cifras tomadas de una presentación de asamblea, no de un balance completo: comparan cinco ejercicios a la vez, están agregadas en cuatro categorías y se expresan en pesos ajustados por inflación, no nominales."
+    },
+    {
+      "id": "argentinosjuniors-ar-balance-2015-2016",
+      "club_id": "argentinosjuniors-ar",
+      "title": "Estados Contables auditados, Ejercicio N°112 (1°/7/2015 al 30/6/2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "argentinosjuniors-ar-balance-2016-2017",
+      "club_id": "argentinosjuniors-ar",
+      "title": "Estados Contables auditados, Ejercicio N°113 (1°/7/2016 al 30/6/2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "argentinosjuniors-ar-balance-2017-2018",
+      "club_id": "argentinosjuniors-ar",
+      "title": "Estados Contables auditados, Ejercicio N°114 (1°/7/2017 al 30/6/2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"malaspina","name":"Malaspina (2015-actual)","first_year":2016,"last_year":2019}],
+  "members": 20069,
+  "years": [
+    {
+      "fiscal_year": 2015,
+      "period_end": "2015-06-30",
+      "currency": "ARS",
+      "source_id": "argentinosjuniors-ar-balance-2015-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"ARS@2015-06-30"},
+      "revenue": [
+        {"label":"Cuotas sociales (socios simples)","category":"member_dues","amount":4.732401,"disclosure":"detailed"},
+        {"label":"Derechos de televisación","category":"broadcasting","amount":14.485372,"disclosure":"detailed"},
+        {"label":"Esponsorización y publicidad","category":"sponsorship_commercial","amount":11.84375,"disclosure":"detailed"},
+        {"label":"Ingresos Copa Argentina","category":"competition_bonus","amount":0.898,"disclosure":"detailed"},
+        {"label":"Partidos amistosos","category":"matchday_competition","amount":4.77675,"disclosure":"detailed"},
+        {"label":"Valorización del plantel profesional","category":"player_sales","amount":0.691712,"disclosure":"detailed"},
+        {"label":"Venta de entradas, plateas y palcos","category":"matchday_competition","amount":2.042117,"disclosure":"detailed"},
+        {"label":"Venta neta de jugadores","category":"player_sales","amount":20.399511,"disclosure":"detailed"},
+        {"label":"Diversos (fútbol)","category":"other_income","amount":0.859329,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y culturales","category":"other_sports","amount":7.504834,"disclosure":"detailed"},
+        {"label":"Socios (cuotas simples/adherentes + inscripciones)","category":"member_dues","amount":9.486436,"disclosure":"detailed"},
+        {"label":"Diversos (alquileres, concesiones, etc.)","category":"other_income","amount":2.97744,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Fútbol profesional (sin desglosar por rubro, ver comentario de cabecera)",
+          "category": "lump_football_operations_expense",
+          "amount": -106.285897,
+          "disclosure": "detailed"
+        },
+        {"label":"Actividades deportivas y culturales","category":"youth_other_sports_expense","amount":-8.732963,"disclosure":"detailed"},
+        {"label":"Administración","category":"admin_general_expense","amount":-13.821121,"disclosure":"detailed"},
+        {"label":"Estadio y predios","category":"admin_general_expense","amount":-8.853987,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.513566,"tax":0,"gross_debt":200.426712,"cash":1.10545},
+      "official_totals": {"revenue":80.697652,"expenses":137.693968,"net_result":-67.509882},
+      "adjustments": {
+        "included_in": {
+          "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-06-30",
+      "currency": "ARS",
+      "source_id": "argentinosjuniors-ar-balance-2015-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": "malaspina",
+      "fx": {"ref":"ARS@2016-06-30"},
+      "revenue": [
+        {"label":"Cuotas sociales (socios simples)","category":"member_dues","amount":4.40006,"disclosure":"detailed"},
+        {"label":"Derechos de formación","category":"player_sales","amount":2.98528,"disclosure":"detailed"},
+        {"label":"Derechos de televisación","category":"broadcasting","amount":28.431053,"disclosure":"detailed"},
+        {"label":"Esponsorización y publicidad","category":"sponsorship_commercial","amount":12.810709,"disclosure":"detailed"},
+        {"label":"Partidos amistosos","category":"matchday_competition","amount":6.16,"disclosure":"detailed"},
+        {"label":"Valorización del plantel profesional","category":"player_sales","amount":0.501454,"disclosure":"detailed"},
+        {"label":"Venta de entradas, plateas y palcos","category":"matchday_competition","amount":1.470691,"disclosure":"detailed"},
+        {"label":"Venta neta de jugadores","category":"player_sales","amount":20.129026,"disclosure":"detailed"},
+        {"label":"Diversos (fútbol)","category":"other_income","amount":0.682234,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y culturales","category":"other_sports","amount":10.757903,"disclosure":"detailed"},
+        {"label":"Socios (cuotas simples/adherentes + inscripciones)","category":"member_dues","amount":10.397525,"disclosure":"detailed"},
+        {"label":"Diversos (alquileres, concesiones, etc.)","category":"other_income","amount":6.318022,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Amortización de bienes intangibles","category":"player_amortisation","amount":-10.089964,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-0.572525,"disclosure":"detailed"},
+        {"label":"Gastos A.F.A.","category":"match_organisation_expense","amount":-0.498565,"disclosure":"detailed"},
+        {"label":"Gastos de entrenamiento","category":"match_organisation_expense","amount":-1.050312,"disclosure":"detailed"},
+        {"label":"Gastos de mantenimiento y conservación","category":"admin_general_expense","amount":-2.366005,"disclosure":"detailed"},
+        {"label":"Gastos de oficina","category":"admin_general_expense","amount":-0.333805,"disclosure":"detailed"},
+        {"label":"Gastos diversos","category":"other_expenses","amount":-6.813002,"disclosure":"detailed"},
+        {"label":"Gastos legales","category":"admin_general_expense","amount":-10.193171,"disclosure":"detailed"},
+        {"label":"Gastos y comisiones bancarias","category":"admin_general_expense","amount":-1.178672,"disclosure":"detailed"},
+        {"label":"Honorarios y retribuciones por servicios","category":"admin_general_expense","amount":-1.01611,"disclosure":"detailed"},
+        {"label":"Hospedaje y concentración","category":"match_organisation_expense","amount":-2.050337,"disclosure":"detailed"},
+        {"label":"Impuestos, tasas y contribuciones","category":"admin_general_expense","amount":-1.19026,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-1.839611,"disclosure":"detailed"},
+        {"label":"Préstamos y transferencias de jugadores","category":"other_expenses","amount":-5.280408,"disclosure":"detailed"},
+        {"label":"Primas y premios","category":"wages_squad","amount":-6.5658,"disclosure":"detailed"},
+        {"label":"Seguridad y vigilancia","category":"match_organisation_expense","amount":-1.820259,"disclosure":"detailed"},
+        {"label":"Seguros","category":"other_expenses","amount":-0.482047,"disclosure":"detailed"},
+        {"label":"Servicios públicos","category":"admin_general_expense","amount":-1.105336,"disclosure":"detailed"},
+        {"label":"Sueldos y cargas sociales (Fútbol profesional)","category":"wages_squad","amount":-40.472668,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y cargas sociales (Actividades deportivas y culturales)",
+          "category": "youth_other_sports_expense",
+          "amount": -17.708022,
+          "disclosure": "detailed"
+        },
+        {"label":"Sueldos y cargas sociales (Administración)","category":"admin_general_expense","amount":-4.22277,"disclosure":"detailed"},
+        {"label":"Sueldos y cargas sociales (Estadio y predios)","category":"admin_general_expense","amount":-2.847292,"disclosure":"detailed"},
+        {"label":"Viajes (Fútbol profesional)","category":"match_organisation_expense","amount":-0.846633,"disclosure":"detailed"},
+        {"label":"Viajes (Administración)","category":"admin_general_expense","amount":-0.198128,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.989351,"tax":0,"gross_debt":239.269605,"cash":1.381149},
+      "official_totals": {"revenue":105.043957,"expenses":120.741702,"net_result":-24.687096}
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-06-30",
+      "currency": "ARS",
+      "source_id": "argentinosjuniors-ar-balance-2016-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": "malaspina",
+      "fx": {"ref":"ARS@2017-06-30"},
+      "revenue": [
+        {"label":"Cuotas sociales (socios simples)","category":"member_dues","amount":7.250611,"disclosure":"detailed"},
+        {"label":"Derechos de formación","category":"player_sales","amount":9.503289,"disclosure":"detailed"},
+        {"label":"Derechos de televisación","category":"broadcasting","amount":35.144032,"disclosure":"detailed"},
+        {"label":"Esponsorización y publicidad","category":"sponsorship_commercial","amount":16.17411,"disclosure":"detailed"},
+        {"label":"Resarcimiento por rescisión de contratos","category":"player_sales","amount":1.05815,"disclosure":"detailed"},
+        {"label":"Valorización del plantel profesional","category":"player_sales","amount":52.283226,"disclosure":"detailed"},
+        {"label":"Venta de entradas, plateas y palcos","category":"matchday_competition","amount":1.390504,"disclosure":"detailed"},
+        {"label":"Venta neta de jugadores","category":"player_sales","amount":10.048679,"disclosure":"detailed"},
+        {"label":"Diversos (fútbol)","category":"other_income","amount":0.359877,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y culturales","category":"other_sports","amount":15.742519,"disclosure":"detailed"},
+        {"label":"Socios (cuotas simples/adherentes + inscripciones)","category":"member_dues","amount":18.108523,"disclosure":"detailed"},
+        {"label":"Diversos (alquileres, concesiones, etc.)","category":"other_income","amount":27.729052,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Amortización de activos intangibles","category":"player_amortisation","amount":-13.406325,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-0.506612,"disclosure":"detailed"},
+        {"label":"Desvalorización plantel","category":"player_impairment","amount":-17.463017,"disclosure":"detailed"},
+        {"label":"Gastos de entrenamiento","category":"match_organisation_expense","amount":-2.185298,"disclosure":"detailed"},
+        {"label":"Gastos de mantenimiento y conservación","category":"admin_general_expense","amount":-2.607852,"disclosure":"detailed"},
+        {"label":"Gastos de oficina","category":"admin_general_expense","amount":-1.67785,"disclosure":"detailed"},
+        {"label":"Gastos de prensa","category":"admin_general_expense","amount":-1.089769,"disclosure":"detailed"},
+        {"label":"Gastos diversos","category":"other_expenses","amount":-5.082384,"disclosure":"detailed"},
+        {"label":"Gastos legales","category":"admin_general_expense","amount":-10.503443,"disclosure":"detailed"},
+        {"label":"Gastos por venta de jugadores","category":"other_expenses","amount":-0.666667,"disclosure":"detailed"},
+        {"label":"Gastos y comisiones bancarias","category":"admin_general_expense","amount":-3.346699,"disclosure":"detailed"},
+        {"label":"Honorarios y retribuciones por servicios","category":"admin_general_expense","amount":-0.771942,"disclosure":"detailed"},
+        {"label":"Hospedaje y concentración","category":"match_organisation_expense","amount":-2.250934,"disclosure":"detailed"},
+        {"label":"Impuestos, tasas y contribuciones","category":"admin_general_expense","amount":-0.922162,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-4.387726,"disclosure":"detailed"},
+        {"label":"Préstamos y transferencias de jugadores","category":"other_expenses","amount":-3.682601,"disclosure":"detailed"},
+        {"label":"Primas y premios","category":"wages_squad","amount":-7.985209,"disclosure":"detailed"},
+        {"label":"Seguridad y vigilancia","category":"match_organisation_expense","amount":-1.793272,"disclosure":"detailed"},
+        {"label":"Seguros","category":"other_expenses","amount":-0.374982,"disclosure":"detailed"},
+        {"label":"Servicios públicos","category":"admin_general_expense","amount":-2.286152,"disclosure":"detailed"},
+        {"label":"Sueldos y cargas sociales (Fútbol profesional)","category":"wages_squad","amount":-36.312995,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y cargas sociales (Actividades deportivas y culturales)",
+          "category": "youth_other_sports_expense",
+          "amount": -22.849998,
+          "disclosure": "detailed"
+        },
+        {"label":"Sueldos y cargas sociales (Administración)","category":"admin_general_expense","amount":-7.287931,"disclosure":"detailed"},
+        {"label":"Sueldos y cargas sociales (Estadio y predios)","category":"admin_general_expense","amount":-4.902985,"disclosure":"detailed"},
+        {"label":"Viajes (Fútbol profesional)","category":"match_organisation_expense","amount":-2.060799,"disclosure":"detailed"},
+        {"label":"Viajes (Administración)","category":"admin_general_expense","amount":-0.314093,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.260078,"tax":0,"gross_debt":235.072669,"cash":0.991633},
+      "official_totals": {"revenue":194.792572,"expenses":156.719697,"net_result":30.812797}
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-06-30",
+      "currency": "ARS",
+      "source_id": "argentinosjuniors-ar-balance-2017-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": "malaspina",
+      "fx": {"ref":"ARS@2018-06-30"},
+      "revenue": [
+        {"label":"Cuotas sociales (socios simples)","category":"member_dues","amount":10.226927,"disclosure":"detailed"},
+        {"label":"Derechos de formación","category":"player_sales","amount":1.307848,"disclosure":"detailed"},
+        {"label":"Derechos de televisación","category":"broadcasting","amount":51.835179,"disclosure":"detailed"},
+        {"label":"Esponsorización y publicidad","category":"sponsorship_commercial","amount":22.203228,"disclosure":"detailed"},
+        {"label":"Ingresos otras competiciones","category":"competition_bonus","amount":0.960346,"disclosure":"detailed"},
+        {"label":"Resarcimiento por rescisión de contratos","category":"player_sales","amount":0.555867,"disclosure":"detailed"},
+        {"label":"Valorización del plantel profesional","category":"player_sales","amount":233.826918,"disclosure":"detailed"},
+        {"label":"Venta de entradas, plateas y palcos","category":"matchday_competition","amount":3.298819,"disclosure":"detailed"},
+        {"label":"Venta neta de jugadores","category":"player_sales","amount":226.354197,"disclosure":"detailed"},
+        {"label":"Diversos (fútbol)","category":"other_income","amount":3.066992,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y culturales","category":"other_sports","amount":17.467061,"disclosure":"detailed"},
+        {"label":"Socios (cuotas simples/adherentes + inscripciones)","category":"member_dues","amount":24.498092,"disclosure":"detailed"},
+        {"label":"Diversos (alquileres, concesiones, etc.)","category":"other_income","amount":15.09803,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Amortización de activos intangibles","category":"player_amortisation","amount":-13.93825,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-0.605642,"disclosure":"detailed"},
+        {"label":"Derechos de imagen","category":"wages_squad","amount":-3.405,"disclosure":"detailed"},
+        {"label":"Desvalorización plantel","category":"player_impairment","amount":-3.405911,"disclosure":"detailed"},
+        {"label":"Gastos de entrenamiento","category":"match_organisation_expense","amount":-6.089395,"disclosure":"detailed"},
+        {"label":"Gastos de mantenimiento y conservación","category":"admin_general_expense","amount":-5.419138,"disclosure":"detailed"},
+        {"label":"Gastos de oficina","category":"admin_general_expense","amount":-0.843424,"disclosure":"detailed"},
+        {"label":"Gastos de prensa","category":"admin_general_expense","amount":-0.74455,"disclosure":"detailed"},
+        {"label":"Gastos diversos","category":"other_expenses","amount":-1.664279,"disclosure":"detailed"},
+        {"label":"Gastos legales","category":"admin_general_expense","amount":-7.647056,"disclosure":"detailed"},
+        {"label":"Gastos por venta de jugadores","category":"other_expenses","amount":-64.71477,"disclosure":"detailed"},
+        {"label":"Gastos y comisiones bancarias","category":"admin_general_expense","amount":-6.881995,"disclosure":"detailed"},
+        {"label":"Honorarios y retribuciones por servicios","category":"admin_general_expense","amount":-1.567242,"disclosure":"detailed"},
+        {"label":"Hospedaje y concentración","category":"match_organisation_expense","amount":-5.737351,"disclosure":"detailed"},
+        {"label":"Impuestos, tasas y contribuciones","category":"admin_general_expense","amount":-2.617905,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-12.429345,"disclosure":"detailed"},
+        {"label":"Préstamos y transferencias de jugadores","category":"other_expenses","amount":-18.571303,"disclosure":"detailed"},
+        {"label":"Primas y premios","category":"wages_squad","amount":-14.165999,"disclosure":"detailed"},
+        {"label":"Seguridad y vigilancia","category":"match_organisation_expense","amount":-3.61096,"disclosure":"detailed"},
+        {"label":"Seguros","category":"other_expenses","amount":-0.533417,"disclosure":"detailed"},
+        {"label":"Servicios públicos","category":"admin_general_expense","amount":-3.320998,"disclosure":"detailed"},
+        {"label":"Sueldos y cargas sociales (Fútbol profesional)","category":"wages_squad","amount":-57.663711,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y cargas sociales (Actividades deportivas y culturales)",
+          "category": "youth_other_sports_expense",
+          "amount": -19.728118,
+          "disclosure": "detailed"
+        },
+        {"label":"Sueldos y cargas sociales (Administración)","category":"admin_general_expense","amount":-7.317549,"disclosure":"detailed"},
+        {"label":"Sueldos y cargas sociales (Estadio y predios)","category":"admin_general_expense","amount":-4.216407,"disclosure":"detailed"},
+        {"label":"Viajes (Fútbol profesional)","category":"match_organisation_expense","amount":-4.883119,"disclosure":"detailed"},
+        {"label":"Viajes (Actividades deportivas y culturales)","category":"youth_other_sports_expense","amount":-0.2481,"disclosure":"detailed"},
+        {"label":"Viajes (Administración)","category":"admin_general_expense","amount":-0.444286,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-19.947296,"tax":0,"gross_debt":232.933684,"cash":0.837555},
+      "official_totals": {"revenue":610.699504,"expenses":272.41522,"net_result":318.336988}
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "ARS",
+      "source_id": "argentinosjuniors-ar-presentacion-asamblea-2015-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": "malaspina",
+      "fx": {"ref":"ARS@2019-06-30"},
+      "revenue": [
+        {"label":"Fútbol profesional","category":"lump_football_operations","amount":1033.075093,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y culturales","category":"other_sports","amount":20.753946,"disclosure":"detailed"},
+        {"label":"Socios","category":"member_dues","amount":33.954376,"disclosure":"detailed"},
+        {"label":"Diversos","category":"other_income","amount":73.173983,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Fútbol profesional","category":"lump_football_operations_expense","amount":-951.379297,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y culturales","category":"youth_other_sports_expense","amount":-49.480646,"disclosure":"detailed"},
+        {"label":"Administración","category":"admin_general_expense","amount":-59.619273,"disclosure":"detailed"},
+        {"label":"Estadio y predios","category":"admin_general_expense","amount":-35.31429,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":54.110381,"tax":0,"gross_debt":247.566408,"cash":30.282796},
+      "official_totals": {"revenue":1160.957398,"expenses":1095.793506,"net_result":119.274273},
+      "adjustments": {
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    }
+  ],
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

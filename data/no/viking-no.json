@@ -1,0 +1,411 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "viking-no",
+    "name": "Viking Fotball AS",
+    "display_name": "Viking",
+    "country": "NO",
+    "reporting_currency": "NOK",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "viking-no-aarsregnskap-viking-fotball-as-2025",
+      "club_id": "viking-no",
+      "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "viking-no-aarsregnskap-viking-fotball-as-2022",
+      "club_id": "viking-no",
+      "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "viking-no-aarsregnskap-viking-fotball-as-2018",
+      "club_id": "viking-no",
+      "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "viking-no-aarsregnskap-viking-fotball-as-2019",
+      "club_id": "viking-no",
+      "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "viking-no-aarsregnskap-viking-fotball-as-2020",
+      "club_id": "viking-no",
+      "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2020 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "viking-no-aarsregnskap-viking-fotball-as-2021",
+      "club_id": "viking-no",
+      "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2021 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "viking-no-aarsregnskap-viking-fotball-as-2023",
+      "club_id": "viking-no",
+      "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "viking-no-aarsregnskap-viking-fotball-as-2024",
+      "club_id": "viking-no",
+      "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "viking-no-aarsregnskap-viking-fotball-as-2017",
+      "club_id": "viking-no",
+      "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "NOK",
+      "source_id": "viking-no-aarsregnskap-viking-fotball-as-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2017-12-31"},
+      "revenue": [
+        {"label":"Inntekter fra samarbeidsavtaler","category":"sponsorship_commercial","amount":38.647576,"disclosure":"aggregated"},
+        {"label":"Billettinntekter fra kamper","category":"matchday_competition","amount":7.550567,"disclosure":"aggregated"},
+        {"label":"Varesalg","category":"sponsorship_commercial","amount":0.875702,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"other_income","amount":11.283168,"disclosure":"aggregated"},
+        {"label":"Gevinst ved salg av spillere","category":"player_sales","amount":13.719178,"disclosure":"aggregated"},
+        {"label":"Tap ved salg av spillere","category":"player_sales","amount":-0.540816,"disclosure":"aggregated"},
+        {"label":"Medieinntekter NTF","category":"broadcasting","amount":11.013187,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-3.837822,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-6.539124,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-1.035631,"disclosure":"aggregated"},
+        {"label":"Personalkostnader fra Viking FK","category":"wages_squad","amount":-26.223764,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnad (OTP)","category":"wages_squad","amount":-0.334007,"disclosure":"aggregated"},
+        {"label":"Andre personalkostnader","category":"wages_squad","amount":-0.689184,"disclosure":"aggregated"},
+        {"label":"Avskrivning på varige driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-9.357212,"disclosure":"aggregated"},
+        {"label":"Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":-1.940673,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-39.417984,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.084067,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":82.548562,"expenses":89.375401,"net_result":-9.910906},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.193514},
+          {"label":"Annen rentekostnad","amount":-3.240458},
+          {"label":"Annen finanskostnad","amount":-0.037123},
+          {"label":"Skattekostnad på ordinært resultat","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-12-31",
+      "currency": "NOK",
+      "source_id": "viking-no-aarsregnskap-viking-fotball-as-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2018-12-31"},
+      "revenue": [
+        {"label":"Inntekter fra samarbeidsavtaler","category":"sponsorship_commercial","amount":37.350345,"disclosure":"aggregated"},
+        {"label":"Billettinntekter fra kamper","category":"matchday_competition","amount":7.320356,"disclosure":"aggregated"},
+        {"label":"Netto gevinst ved salag av spillere","category":"player_sales","amount":7.557137,"disclosure":"aggregated"},
+        {"label":"Medieinntekter NTF","category":"broadcasting","amount":8.962228,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"other_income","amount":11.139168,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lønninger","category":"wages_squad","amount":-5.781469,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-0.894568,"disclosure":"aggregated"},
+        {"label":"Personalkostnader fra Viking FK","category":"wages_squad","amount":-23.23457,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnad (OTP)","category":"wages_squad","amount":-0.596899,"disclosure":"aggregated"},
+        {"label":"Andre personalkostnader","category":"wages_squad","amount":-1.307115,"disclosure":"aggregated"},
+        {"label":"Avskrivning på varige driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-7.690523,"disclosure":"aggregated"},
+        {"label":"Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":-3.015783,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-36.197536,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.040257,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":72.329234,"expenses":78.718463,"net_result":-9.429485},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.03518},
+          {"label":"Annen rentekostnad","amount":-3.070553},
+          {"label":"Annen finanskostnad","amount":-0.004884},
+          {"label":"Skattekostnad på ordinært resultat","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "NOK",
+      "source_id": "viking-no-aarsregnskap-viking-fotball-as-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2019-12-31"},
+      "revenue": [
+        {"label":"Inntekt fra samarbeidsavtaler","category":"sponsorship_commercial","amount":46.427956,"disclosure":"aggregated"},
+        {"label":"Billettinntekt fra kamper","category":"matchday_competition","amount":12.756143,"disclosure":"aggregated"},
+        {"label":"Medieinntekter NTF","category":"broadcasting","amount":15.006455,"disclosure":"aggregated"},
+        {"label":"Netto gevinst ved salg av spillere","category":"player_sales","amount":0.878347,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"other_income","amount":28.196484,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lønninger","category":"wages_squad","amount":-4.036896,"disclosure":"aggregated"},
+        {"label":"Arbeidsgivenavgift","category":"wages_squad","amount":-1.009076,"disclosure":"aggregated"},
+        {"label":"Personalkostnader fra Viking FK","category":"wages_squad","amount":-33.182545,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnad (OTP)","category":"wages_squad","amount":-0.163189,"disclosure":"aggregated"},
+        {"label":"Andre personalkostnader","category":"wages_squad","amount":-1.261783,"disclosure":"aggregated"},
+        {"label":"Ordinære avskrivninger","category":"depreciation","amount":-7.924786,"disclosure":"aggregated"},
+        {"label":"Nedskrivninger","category":"player_impairment","amount":0,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-54.059334,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.655345,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":103.265385,"expenses":101.637609,"net_result":-1.027569},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.083976},
+          {"label":"Annen rentekostnad","amount":-2.745855},
+          {"label":"Annen finanskostnad","amount":0.006534},
+          {"label":"Skattekostnad på ordinært resultat","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-12-31",
+      "currency": "NOK",
+      "source_id": "viking-no-aarsregnskap-viking-fotball-as-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2020-12-31"},
+      "revenue": [
+        {"label":"Inntekt fra samarbeidsavtaler","category":"sponsorship_commercial","amount":40.010986,"disclosure":"aggregated"},
+        {"label":"Billettinntekt fra kamper","category":"matchday_competition","amount":4.904598,"disclosure":"aggregated"},
+        {"label":"Medieinntekter","category":"broadcasting","amount":14.813167,"disclosure":"aggregated"},
+        {"label":"Gevinst ved salg av spillere","category":"player_sales","amount":24.141848,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"other_income","amount":27.915095,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lønninger","category":"wages_squad","amount":-7.462363,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-1.088367,"disclosure":"aggregated"},
+        {"label":"Personalkostnader fra Viking FK","category":"wages_squad","amount":-34.804267,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnad (OTP)","category":"wages_squad","amount":-0.283726,"disclosure":"aggregated"},
+        {"label":"Andre personalkostnader","category":"wages_squad","amount":-0.828483,"disclosure":"aggregated"},
+        {"label":"Avskrivning på varige driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-10.727885,"disclosure":"aggregated"},
+        {"label":"Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":-7.249771,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-39.315395,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.699123,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":111.785694,"expenses":101.760257,"net_result":8.326314},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.249369},
+          {"label":"Annen rentekostnad","amount":-2.003935},
+          {"label":"Annen finanskostnad","amount":0.055443},
+          {"label":"Skattekostnad på ordinært resultat","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "NOK",
+      "source_id": "viking-no-aarsregnskap-viking-fotball-as-2021",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2021-12-31"},
+      "revenue": [
+        {"label":"Inntekt fra samarbeidsavtaler","category":"sponsorship_commercial","amount":48.646715,"disclosure":"aggregated"},
+        {"label":"Billettinntekt fra kamper","category":"matchday_competition","amount":8.708865,"disclosure":"aggregated"},
+        {"label":"Medieinntekter NTF","category":"broadcasting","amount":23.044766,"disclosure":"aggregated"},
+        {"label":"Gevinst ved salg av spillere","category":"player_sales","amount":19.560125,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"other_income","amount":24.228638,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lønninger","category":"wages_squad","amount":-5.89645,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-1.158038,"disclosure":"aggregated"},
+        {"label":"Personalkostnader fra Viking FK","category":"wages_squad","amount":-42.387274,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnad (OTP)","category":"wages_squad","amount":-0.251921,"disclosure":"aggregated"},
+        {"label":"Andre personalkostnader","category":"wages_squad","amount":-1.166761,"disclosure":"aggregated"},
+        {"label":"Avskrivning på varige driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-10.373985,"disclosure":"aggregated"},
+        {"label":"Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":-0.016667,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-52.607747,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.975946,"tax":3.241936,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":124.189109,"expenses":113.858843,"net_result":11.596256},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.159359},
+          {"label":"Annen rentekostnad","amount":-1.641162},
+          {"label":"Annen finanskostnad","amount":-0.494143},
+          {"label":"Skattekostnad på ordinært resultat","amount":3.241936}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "NOK",
+      "source_id": "viking-no-aarsregnskap-viking-fotball-as-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2022-12-31"},
+      "revenue": [
+        {"label":"Inntekt fra samarbeidsavtaler","category":"sponsorship_commercial","amount":53.861094,"disclosure":"aggregated"},
+        {"label":"Billettinntekt fra kamper","category":"matchday_competition","amount":15.588245,"disclosure":"aggregated"},
+        {"label":"Medieinntekter NTF","category":"broadcasting","amount":14.069055,"disclosure":"aggregated"},
+        {"label":"Gevinst ved salg av spillere","category":"player_sales","amount":37.384164,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"other_income","amount":42.339273,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lønninger","category":"wages_squad","amount":-9.138793,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-1.262185,"disclosure":"aggregated"},
+        {"label":"Personalkostnader fra Viking FK","category":"wages_squad","amount":-49.983934,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnad (OTP)","category":"wages_squad","amount":-0.32419,"disclosure":"aggregated"},
+        {"label":"Andre personalkostnader","category":"wages_squad","amount":-1.025702,"disclosure":"aggregated"},
+        {"label":"Avskrivning på varige driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-11.320283,"disclosure":"aggregated"},
+        {"label":"Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-75.579739,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.8528,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":163.241831,"expenses":148.634826,"net_result":12.754205},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.258204},
+          {"label":"Annen finansinntekt","amount":0.180387},
+          {"label":"Annen rentekostnad","amount":-2.291391},
+          {"label":"Annen finanskostnad","amount":0},
+          {"label":"Skattekostnad på ordinært resultat","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "NOK",
+      "source_id": "viking-no-aarsregnskap-viking-fotball-as-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2023-12-31"},
+      "revenue": [
+        {"label":"Inntekt fra samarbeidsavtaler","category":"sponsorship_commercial","amount":56.580264,"disclosure":"aggregated"},
+        {"label":"Billettinntekt fra kamper","category":"matchday_competition","amount":18.453235,"disclosure":"aggregated"},
+        {"label":"Medieinntekter","category":"broadcasting","amount":29.879937,"disclosure":"aggregated"},
+        {"label":"Gevinst ved salg av spillere","category":"player_sales","amount":36.584869,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"other_income","amount":19.796338,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lønn og sosiale kostnader","category":"wages_squad","amount":-67.385846,"disclosure":"aggregated"},
+        {"label":"Ordinære avskrivninger","category":"depreciation","amount":-17.925743,"disclosure":"aggregated"},
+        {"label":"Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":-1.587544,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-71.372413,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.111498,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":161.294643,"expenses":158.271546,"net_result":3.134595},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.566538},
+          {"label":"Annen finansinntekt","amount":2.652264},
+          {"label":"Annen rentekostnad","amount":-3.107304},
+          {"label":"Skattekostnad på ordinært resultat","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "NOK",
+      "source_id": "viking-no-aarsregnskap-viking-fotball-as-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2024-12-31"},
+      "revenue": [
+        {"label":"Inntekt fra samarbeidsavtaler","category":"sponsorship_commercial","amount":65.605095,"disclosure":"aggregated"},
+        {"label":"Billettinntekt fra kamper","category":"matchday_competition","amount":17.83223,"disclosure":"aggregated"},
+        {"label":"Medieinntekter","category":"broadcasting","amount":36.706251,"disclosure":"aggregated"},
+        {"label":"Gevinst ved salg av spillertettigheter","category":"player_sales","amount":76.769325,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"other_income","amount":24.651566,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lønninger","category":"wages_squad","amount":-11.295951,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-1.655147,"disclosure":"aggregated"},
+        {"label":"Personalkostnader fra Viking FK","category":"wages_squad","amount":-61.560858,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnad (OTP)","category":"wages_squad","amount":-0.380386,"disclosure":"aggregated"},
+        {"label":"Andre personalkostnader","category":"wages_squad","amount":0.679137,"disclosure":"aggregated"},
+        {"label":"Ordinære avskrivninger","category":"depreciation","amount":-21.689421,"disclosure":"aggregated"},
+        {"label":"Nedskrivninger","category":"player_impairment","amount":0,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-93.346471,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.236118,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":221.564467,"expenses":189.249097,"net_result":30.079253},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Renteinntekt","amount":0.730524},
+          {"label":"Netto finansinntekt","amount":0.777159},
+          {"label":"Rentekostnad","amount":-3.743801},
+          {"label":"Skattekostnad på ordinært resultat","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "NOK",
+      "source_id": "viking-no-aarsregnskap-viking-fotball-as-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2025-12-31"},
+      "revenue": [
+        {"label":"Inntekt fra samarbeidsavtaler","category":"sponsorship_commercial","amount":82.33338,"disclosure":"aggregated"},
+        {"label":"Billettinntekt fra kamper","category":"matchday_competition","amount":27.464561,"disclosure":"aggregated"},
+        {"label":"Medieinntekter","category":"broadcasting","amount":47.909413,"disclosure":"aggregated"},
+        {"label":"Gevinst ved salg av spillerrettigheter","category":"player_sales","amount":61.756707,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"other_income","amount":48.667227,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lønninger","category":"wages_squad","amount":-13.927807,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-2.101645,"disclosure":"aggregated"},
+        {"label":"Personalkostnader fra Viking FK","category":"wages_squad","amount":-80.010132,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnad (OTP)","category":"wages_squad","amount":-0.529119,"disclosure":"aggregated"},
+        {"label":"Andre personalkostnader","category":"wages_squad","amount":-0.325704,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-112.406643,"disclosure":"aggregated"},
+        {"label":"Avskrivninger spillerrettigheter","category":"player_amortisation","amount":-19.207686,"disclosure":"aggregated"},
+        {"label":"Avskrivninger markedsrettigheter","category":"other_amortisation","amount":-0.225,"disclosure":"aggregated"},
+        {"label":"Avskrivninger varige driftsmidler","category":"depreciation","amount":-9.022602,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.707366,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":268.131288,"expenses":237.756338,"net_result":24.667584},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Renteinntekt","amount":1.497338},
+          {"label":"Netto finansinntekt/kostnad","amount":-2.138694},
+          {"label":"Rentekostnad","amount":-5.06601},
+          {"label":"Skattekostnad på ordinært resultat","amount":0}
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

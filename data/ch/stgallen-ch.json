@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "stgallen-ch",
+    "name": "FC St.Gallen AG",
+    "display_name": "St. Gallen",
+    "country": "CH",
+    "reporting_currency": "CHF",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "stgallen-ch-geschaeftsbericht-2024-25",
+      "club_id": "stgallen-ch",
+      "title": "FC St.Gallen AG — geschaeftsbericht-2024-25 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "stgallen-ch-geschaeftsbericht-2018-19",
+      "club_id": "stgallen-ch",
+      "title": "FC St.Gallen AG — geschaeftsbericht-2018-19 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "stgallen-ch-geschaeftsbericht-2021-22",
+      "club_id": "stgallen-ch",
+      "title": "FC St.Gallen AG — geschaeftsbericht-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "stgallen-ch-geschaeftsbericht-2022-23",
+      "club_id": "stgallen-ch",
+      "title": "FC St.Gallen AG — geschaeftsbericht-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "stgallen-ch-geschaeftsbericht-2020-21",
+      "club_id": "stgallen-ch",
+      "title": "FC St.Gallen AG — geschaeftsbericht-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "stgallen-ch-geschaeftsbericht-2023-24",
+      "club_id": "stgallen-ch",
+      "title": "FC St.Gallen AG — geschaeftsbericht-2023-24 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "stgallen-ch-geschaeftsbericht-2019-20",
+      "club_id": "stgallen-ch",
+      "title": "FC St.Gallen AG — geschaeftsbericht-2019-20 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "CHF",
+      "source_id": "stgallen-ch-geschaeftsbericht-2018-19",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"CHF@2019-06-30"},
+      "revenue": [
+        {"label":"Erträge brutto","category":"lump_football_operations","amount":28.001,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_income","amount":-0.304,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.713,"disclosure":"aggregated"},
+        {"label":"Auflösung Rückstellungen","category":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Direkte Kosten","category":"lump_football_operations_expense","amount":-8.165,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"wages_squad","amount":-14.747,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-4.145,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-0.846,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.339,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-0.16,"disclosure":"aggregated"},
+        {"label":"Ausserordentliche Abschreibungen","category":"exceptional_items","amount":-3.999,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.067,"tax":-0.004,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":28.41,"expenses":29.242,"net_result":-5.063},
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzerfolg","amount":-0.067},{"label":"Steuern","amount":-0.004}],
+        "no_breakdown": [
+          {
+            "line": "Erträge brutto",
+            "side": "revenue",
+            "amount": 28.001,
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations"
+          },
+          {
+            "line": "Direkte Kosten",
+            "side": "expense",
+            "amount": 8.165,
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos"
+          }
+        ],
+        "included_in": {
+          "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "other_sports": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "youth_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "CHF",
+      "source_id": "stgallen-ch-geschaeftsbericht-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"CHF@2020-06-30"},
+      "revenue": [
+        {"label":"Erträge brutto","category":"lump_football_operations","amount":29.863,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_income","amount":-0.666,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.405,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Direkte Kosten","category":"lump_football_operations_expense","amount":-8.201,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"wages_squad","amount":-13.645,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-3.77,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.385,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-0.69,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-0.013,"disclosure":"aggregated"},
+        {"label":"Ausserordentliche Abschreibungen","category":"exceptional_items","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.135,"tax":-0.009,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":29.602,"expenses":27.691,"net_result":1.754},
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzerfolg","amount":-0.135},{"label":"Steuern","amount":-0.009}],
+        "no_breakdown": [
+          {
+            "line": "Erträge brutto",
+            "side": "revenue",
+            "amount": 29.863,
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations"
+          },
+          {
+            "line": "Direkte Kosten",
+            "side": "expense",
+            "amount": 8.201,
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"other_income","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "other_sports": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "youth_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "CHF",
+      "source_id": "stgallen-ch-geschaeftsbericht-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"CHF@2021-06-30"},
+      "revenue": [
+        {"label":"Erträge aus Transfers und Leihgebühren","category":"player_sales","amount":4.717,"disclosure":"aggregated"},
+        {"label":"Diverse Erträge inklusive Swiss Football League","category":"other_income","amount":6.116,"disclosure":"aggregated"},
+        {"label":"Erträge aus Future Champs Ostschweiz","category":"youth_football","amount":1.42,"disclosure":"aggregated"},
+        {"label":"Erträge von Gönnern und Mitgliedern","category":"member_dues","amount":0.995,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Fussballspielen","category":"matchday_competition","amount":5.358,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Werbung und Sponsoring","category":"sponsorship_commercial","amount":6.07,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Merchandising","category":"sponsorship_commercial","amount":1.107,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Conference Arena / Diverse Erträge","category":"other_income","amount":0.118,"disclosure":"aggregated"},
+        {"label":"Veränderung Wertberichtigungen","category":"other_income","amount":0.241,"disclosure":"aggregated"},
+        {"label":"Debitorenverluste","category":"other_income","amount":-0.029,"disclosure":"aggregated"},
+        {"label":"Veränderung Wertberichtigungen","category":"other_income","amount":-0.053,"disclosure":"aggregated"},
+        {"label":"Diverse Ertragsminderungen","category":"other_income","amount":-0.09,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":3.822,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aufwand für Spielbetrieb","category":"match_organisation_expense","amount":-2.289,"disclosure":"aggregated"},
+        {"label":"Aufwand für Transfers","category":"other_expenses","amount":-1.51,"disclosure":"aggregated"},
+        {"label":"Aufwand für Spielorganisation Fussball","category":"match_organisation_expense","amount":-2.961,"disclosure":"aggregated"},
+        {"label":"Aufwand für Werbung und Sponsoring","category":"admin_general_expense","amount":-0.666,"disclosure":"aggregated"},
+        {"label":"Aufwand für Merchandising","category":"other_expenses","amount":-1.043,"disclosure":"aggregated"},
+        {"label":"Aufwand für Conference Arena / Diverses","category":"other_expenses","amount":-0.184,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"wages_squad","amount":-14.058,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-3.87,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.562,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-0.853,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-0.001,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.087,"tax":-0.003,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":29.792,"expenses":28.997,"net_result":0.879},
+      "adjustments": {"extra_rows":[{"label":"Finanzerfolg","amount":0.087},{"label":"Steuern","amount":-0.003}]}
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "CHF",
+      "source_id": "stgallen-ch-geschaeftsbericht-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"CHF@2022-06-30"},
+      "revenue": [
+        {"label":"Erträge brutto","category":"lump_football_operations","amount":31.998,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_income","amount":-0.315,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.986,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Direkte Kosten","category":"lump_football_operations_expense","amount":-8.912,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"wages_squad","amount":-15.459,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-4.124,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.21,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-1.071,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-0.03,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.223,"tax":-0.01,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":32.669,"expenses":30.776,"net_result":1.63},
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzerfolg","amount":-0.223},{"label":"Steuern","amount":-0.01}],
+        "no_breakdown": [
+          {
+            "line": "Erträge brutto",
+            "side": "revenue",
+            "amount": 31.998,
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations"
+          },
+          {
+            "line": "Direkte Kosten",
+            "side": "expense",
+            "amount": 8.912,
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos"
+          }
+        ],
+        "included_in": {
+          "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "other_sports": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "youth_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "CHF",
+      "source_id": "stgallen-ch-geschaeftsbericht-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"CHF@2023-06-30"},
+      "revenue": [
+        {"label":"Erträge brutto","category":"lump_football_operations","amount":37.47,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_income","amount":-0.456,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.154,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Direkte Kosten","category":"lump_football_operations_expense","amount":-11.154,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"wages_squad","amount":-17.004,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-4.434,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.156,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-1.412,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-1.127,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.264,"tax":-0.014,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":37.168,"expenses":35.16,"net_result":0.603},
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzerfolg","amount":-0.264},{"label":"Steuern","amount":-0.014}],
+        "no_breakdown": [
+          {
+            "line": "Erträge brutto",
+            "side": "revenue",
+            "amount": 37.47,
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations"
+          },
+          {
+            "line": "Direkte Kosten",
+            "side": "expense",
+            "amount": 11.154,
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos"
+          }
+        ],
+        "included_in": {
+          "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "other_sports": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "youth_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "CHF",
+      "source_id": "stgallen-ch-geschaeftsbericht-2023-24",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"CHF@2024-06-30"},
+      "revenue": [
+        {"label":"Erträge aus Transfers und Leihgebühren","category":"player_sales","amount":4.886,"disclosure":"aggregated"},
+        {"label":"Diverse Erträge inklusive Swiss Football League","category":"other_income","amount":5.565,"disclosure":"aggregated"},
+        {"label":"Erträge aus Future Champs Ostschweiz","category":"youth_football","amount":1.389,"disclosure":"aggregated"},
+        {"label":"Erträge von Gönnern und Mitgliedern","category":"member_dues","amount":1.219,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Fussballspielen","category":"matchday_competition","amount":9.168,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Werbung und Sponsoring","category":"sponsorship_commercial","amount":8.544,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Hospitality und Logen","category":"stadium_other","amount":4.916,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Merchandising","category":"sponsorship_commercial","amount":2.094,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Drittveranstaltungen","category":"other_income","amount":0.076,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Conference Arena / Diverse Erträge","category":"other_income","amount":1.335,"disclosure":"aggregated"},
+        {"label":"Veränderung Wertberichtigungen","category":"other_income","amount":0.006,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_income","amount":-0.369,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":1.482,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aufwand für Spielbetrieb","category":"match_organisation_expense","amount":-4.051,"disclosure":"aggregated"},
+        {"label":"Aufwand für Transfers","category":"other_expenses","amount":-0.791,"disclosure":"aggregated"},
+        {"label":"Aufwand für Spielorganisation Fussball","category":"match_organisation_expense","amount":-3.295,"disclosure":"aggregated"},
+        {"label":"Aufwand für Catering","category":"other_expenses","amount":-2.013,"disclosure":"aggregated"},
+        {"label":"Aufwand für Werbung und Sponsoring","category":"admin_general_expense","amount":-0.945,"disclosure":"aggregated"},
+        {"label":"Aufwand für Merchandising","category":"other_expenses","amount":-1.394,"disclosure":"aggregated"},
+        {"label":"Aufwand für Drittveranstaltungen","category":"other_expenses","amount":-0.015,"disclosure":"aggregated"},
+        {"label":"Aufwand für Conference Arena / Diverses","category":"other_expenses","amount":-0.101,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"wages_squad","amount":-19.95,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-5,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.373,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-1.279,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.079,"tax":-0.012,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":40.311,"expenses":40.207,"net_result":0.013},
+      "adjustments": {"extra_rows":[{"label":"Finanzerfolg","amount":-0.079},{"label":"Steuern","amount":-0.012}]}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "CHF",
+      "source_id": "stgallen-ch-geschaeftsbericht-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"CHF@2025-06-30"},
+      "revenue": [
+        {"label":"Erträge aus Transfers und Leihgebühren","category":"player_sales","amount":3.353,"disclosure":"aggregated"},
+        {"label":"Diverse Erträge inklusive Swiss Football League","category":"other_income","amount":9.512,"disclosure":"aggregated"},
+        {"label":"Erträge aus FutureChampsOstschweiz","category":"youth_football","amount":1.416,"disclosure":"aggregated"},
+        {"label":"Erträge von Gönnern und Mitgliedern","category":"member_dues","amount":1.246,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Fussballspielen","category":"matchday_competition","amount":11.607,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Werbung und Sponsoring","category":"sponsorship_commercial","amount":9.547,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Hospitality und Logen","category":"stadium_other","amount":5.167,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Merchandising","category":"sponsorship_commercial","amount":2.32,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Drittveranstaltungen","category":"other_income","amount":0.107,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Conference Arena / Diverse Erträge","category":"other_income","amount":1.245,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.044,"disclosure":"aggregated"},
+        {"label":"Veränderung Wertberichtigungen","category":"other_income","amount":0.021,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_income","amount":-0.484,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aufwand für Spielbetrieb","category":"match_organisation_expense","amount":-4.845,"disclosure":"aggregated"},
+        {"label":"Aufwand für Transfers","category":"other_expenses","amount":-1.378,"disclosure":"aggregated"},
+        {"label":"Aufwand für Spielorganisation Fussball","category":"match_organisation_expense","amount":-3.701,"disclosure":"aggregated"},
+        {"label":"Aufwand für Catering","category":"other_expenses","amount":-2.164,"disclosure":"aggregated"},
+        {"label":"Aufwand für Werbung und Sponsoring","category":"admin_general_expense","amount":-1.005,"disclosure":"aggregated"},
+        {"label":"Aufwand für Mechandising","category":"other_expenses","amount":-1.876,"disclosure":"aggregated"},
+        {"label":"Aufwand für Drittveranstaltungen","category":"other_expenses","amount":-0.012,"disclosure":"aggregated"},
+        {"label":"Aufwand für Conference Arena / Diverses","category":"other_expenses","amount":-0.074,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"wages_squad","amount":-20.833,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-5.372,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.362,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-2.059,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.292,"tax":-0.011,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":45.101,"expenses":44.681,"net_result":0.117},
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzerfolg","amount":-0.292},{"label":"Steuern","amount":-0.011}],
+        "included_in": {"broadcasting":{"in":"other_income","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

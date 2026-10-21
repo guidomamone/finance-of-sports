@@ -32,7 +32,7 @@ impreso $143,886002 M menos "Intereses Bancarios" $6,865639 M, que va a
 `netInterest`). Los 5 rubros de auxilio DIMAYOR (Hotelero/Transporte/
 Arbitraje/Logística/Mejoramientos) y "Fondo de Equipos" se categorizaron
 como `broadcasting`, mismo criterio que la sub-descomposición de "DIMAYOR"
-en `data/co/oncecaldas-data.js` (son la misma distribución de la liga, no
+en `data/co/oncecaldas-co-data.js` (son la misma distribución de la liga, no
 ingreso propio del club). "Ingresos Abonados con Boyacá" -> `season_tickets`
 (abonos, mismo concepto que Once Caldas). "Menos: Devoluciones"
 (-$1.726,052997 M, 21% del ingreso bruto) NO se pudo atribuir con

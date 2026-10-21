@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "belenenses-pt",
+    "name": "Belenenses",
+    "display_name": "Belenenses",
+    "country": "PT",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "belenenses-pt-sduq-demonstracoes-financeiras-30junho2025",
+      "club_id": "belenenses-pt",
+      "title": "Belenenses — Belenenses-SDUQ-demonstracoes-financeiras-30junho2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "belenenses-pt-sduq-relatorio-e-contas-2023-2024",
+      "club_id": "belenenses-pt",
+      "title": "Belenenses — Belenenses-SDUQ-Relatorio-e-Contas-2023-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "belenenses-pt-sduq-relatorio-e-contas-2023-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [{"label":"Vendas e serviços prestados","category":"lump_football_operations","amount":1.288499,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Trabalhos especializados","category":"admin_general_expense","amount":-0.14608,"disclosure":"aggregated"},
+        {"label":"Publicidade e propaganda","category":"admin_general_expense","amount":-0.010046,"disclosure":"aggregated"},
+        {"label":"Vigilância e segurança","category":"match_organisation_expense","amount":-0.107391,"disclosure":"aggregated"},
+        {"label":"Honorários","category":"admin_general_expense","amount":-0.040036,"disclosure":"aggregated"},
+        {"label":"Serviços bancários","category":"admin_general_expense","amount":-0.000884,"disclosure":"aggregated"},
+        {"label":"Comissões","category":"other_expenses","amount":-0.000004,"disclosure":"aggregated"},
+        {"label":"Ferramentas e utensílios de desgaste rápido","category":"admin_general_expense","amount":-0.009121,"disclosure":"aggregated"},
+        {"label":"Material de escritório","category":"admin_general_expense","amount":-0.000301,"disclosure":"aggregated"},
+        {"label":"Eletricidade","category":"admin_general_expense","amount":-0.001857,"disclosure":"aggregated"},
+        {"label":"Água","category":"admin_general_expense","amount":-0.001136,"disclosure":"aggregated"},
+        {"label":"Combustíveis","category":"admin_general_expense","amount":-0.001013,"disclosure":"aggregated"},
+        {"label":"Deslocações e estadias","category":"match_organisation_expense","amount":-0.180413,"disclosure":"aggregated"},
+        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.031715,"disclosure":"aggregated"},
+        {"label":"Comunicação","category":"admin_general_expense","amount":-0.001874,"disclosure":"aggregated"},
+        {"label":"Contechisioso e notariado","category":"admin_general_expense","amount":-0.0003,"disclosure":"aggregated"},
+        {"label":"Despesas de representação","category":"admin_general_expense","amount":-0.000103,"disclosure":"aggregated"},
+        {"label":"Limpeza, higiene e conforto","category":"admin_general_expense","amount":-0.000075,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.008684,"disclosure":"aggregated"},
+        {"label":"Órgãos sociais e outros colaboradores","category":"admin_general_expense","amount":-0.066042,"disclosure":"aggregated"},
+        {"label":"Remunerações Plantel e Equipa Técnica","category":"wages_squad","amount":-0.703895,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.063015,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-0.068499,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.030648,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.000953,"disclosure":"aggregated"},
+        {"label":"Taxas","category":"admin_general_expense","amount":-0.0005,"disclosure":"aggregated"},
+        {"label":"Menos valias de ativos intangíveis","category":"player_impairment","amount":-0.08,"disclosure":"aggregated"},
+        {"label":"Outros gastos e perdas","category":"other_expenses","amount":-0.000408,"disclosure":"aggregated"},
+        {"label":"Gastos / reversões de depreciação e de amortização","category":"depreciation","amount":-0.123999,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.00001,"tax":0,"gross_debt":0,"cash":0.13992},
+      "official_totals": {"revenue":1.288499,"expenses":1.678994,"net_result":-0.390504},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.00001},{"label":"Imposto sobre o rendimento do período","amount":null}],
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":1.288499,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "belenenses-pt-sduq-demonstracoes-financeiras-30junho2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Vendas e serviços prestados","category":"lump_football_operations","amount":0.536756,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.222067,"disclosure":"aggregated"},
+        {"label":"Outros não especificados","category":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Bilhetes","category":"match_organisation_expense","amount":-0.002915,"disclosure":"aggregated"},
+        {"label":"Serviços de Gestão","category":"admin_general_expense","amount":-0.006,"disclosure":"aggregated"},
+        {"label":"Contabilidade","category":"admin_general_expense","amount":-0.0139,"disclosure":"aggregated"},
+        {"label":"Acompanhamento Nutricional","category":"other_expenses","amount":-0.008541,"disclosure":"aggregated"},
+        {"label":"Catapult One Team","category":"other_expenses","amount":-0.004,"disclosure":"aggregated"},
+        {"label":"Outros Serviços","category":"other_expenses","amount":-0.052712,"disclosure":"aggregated"},
+        {"label":"Publicidade e propaganda","category":"admin_general_expense","amount":-0.00148,"disclosure":"aggregated"},
+        {"label":"Vigilância e segurança","category":"match_organisation_expense","amount":-0.08914,"disclosure":"aggregated"},
+        {"label":"Conservação e reparação","category":"admin_general_expense","amount":-0.0004,"disclosure":"aggregated"},
+        {"label":"Honorários","category":"admin_general_expense","amount":-0.116055,"disclosure":"aggregated"},
+        {"label":"Serviços bancários","category":"admin_general_expense","amount":-0.000442,"disclosure":"aggregated"},
+        {"label":"Comissões","category":"other_expenses","amount":-0.00014,"disclosure":"aggregated"},
+        {"label":"Outros serviços especializados","category":"other_expenses","amount":-0.0005,"disclosure":"aggregated"},
+        {"label":"Ferramentas e utensílios de desgaste rápido","category":"admin_general_expense","amount":-0.007859,"disclosure":"aggregated"},
+        {"label":"Material de escritório","category":"admin_general_expense","amount":-0.000278,"disclosure":"aggregated"},
+        {"label":"Combustíveis","category":"admin_general_expense","amount":-0.00134,"disclosure":"aggregated"},
+        {"label":"Deslocações e estadias","category":"match_organisation_expense","amount":-0.11185,"disclosure":"aggregated"},
+        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.0082,"disclosure":"aggregated"},
+        {"label":"Comunicação","category":"admin_general_expense","amount":-0.000225,"disclosure":"aggregated"},
+        {"label":"Contencioso e notariado","category":"admin_general_expense","amount":-0.000113,"disclosure":"aggregated"},
+        {"label":"Despesas de representação","category":"admin_general_expense","amount":-0.003977,"disclosure":"aggregated"},
+        {"label":"Limpeza, higiene e conforto","category":"admin_general_expense","amount":-0.000148,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.002396,"disclosure":"aggregated"},
+        {"label":"Orgãos sociais e outros colaboradores","category":"admin_general_expense","amount":-0.054712,"disclosure":"aggregated"},
+        {"label":"Remunerações Plantel e Equipa Técnica","category":"wages_squad","amount":-0.55804,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.05392,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-0.031442,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.005235,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.001404,"disclosure":"aggregated"},
+        {"label":"Taxas","category":"admin_general_expense","amount":-0.00006,"disclosure":"aggregated"},
+        {"label":"Quotizações Assoc. Futebol Lisboa","category":"admin_general_expense","amount":-0.01552,"disclosure":"aggregated"},
+        {"label":"Multas desportivas","category":"other_expenses","amount":-0.01714,"disclosure":"aggregated"},
+        {"label":"Outros gastos e perdas","category":"other_expenses","amount":-0.010946,"disclosure":"aggregated"},
+        {"label":"Gastos / reversões de depreciação e de amortização","category":"depreciation","amount":-0.009439,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000046,"tax":-0.019344,"gross_debt":0.00631,"cash":0.087683},
+      "official_totals": {"revenue":0.758823,"expenses":1.190468,"net_result":-0.451035},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000046},{"label":"Imposto sobre o rendimento do período","amount":-0.019344}],
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.536756,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

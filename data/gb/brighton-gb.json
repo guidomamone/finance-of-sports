@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "brighton-gb",
+    "name": "The Brighton and Hove Albion Football Club Limited",
+    "display_name": "Brighton",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "brighton-gb-full-accounts-2024",
+      "club_id": "brighton-gb",
+      "title": "The Brighton and Hove Albion Football Club Limited — Report and Financial Statements, year ended 30 June 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00081077/filing-history",
+      "public_note": "Cuentas individuales auditadas (BDO LLP, sin salvedades) de The Brighton and Hove Albion Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2024 (temporada 2023/24, séptima temporada en la Premier League, 11° puesto, primera participación europea del club — UEFA Europa League)."
+    },
+    {
+      "id": "brighton-gb-full-accounts-2025",
+      "club_id": "brighton-gb",
+      "title": "The Brighton and Hove Albion Football Club Limited — Annual Report and Financial Statements, year ended 30 June 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00081077/filing-history",
+      "public_note": "Cuentas individuales auditadas (BDO LLP, sin salvedades) de The Brighton and Hove Albion Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25, octava temporada en la Premier League, 8° puesto, sin competencia europea)."
+    },
+    {
+      "id": "brighton-gb-full-accounts-2019-20",
+      "club_id": "brighton-gb",
+      "title": "The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2019-20 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "brighton-gb-full-accounts-2020-21",
+      "club_id": "brighton-gb",
+      "title": "The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "brighton-gb-full-accounts-2021-22",
+      "club_id": "brighton-gb",
+      "title": "The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "brighton-gb-full-accounts-2022-23",
+      "club_id": "brighton-gb",
+      "title": "The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"bloom","name":"Bloom (2009-actual)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "GBP",
+      "source_id": "brighton-gb-full-accounts-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2020-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":13.513,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"broadcasting","amount":89.92,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":9.481,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":10.377,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses","category":"other_expenses","amount":-182.111,"disclosure":"aggregated"},
+        {"label":"(Loss)/profit on player trading","category":"other_expenses","amount":-0.599,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.286,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":123.291,"expenses":182.71,"net_result":-62.705},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.015},
+          {"label":"Interest payable and similar charges","amount":-3.301},
+          {"label":"Tax on loss","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "GBP",
+      "source_id": "brighton-gb-full-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":0.48,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"broadcasting","amount":122.991,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":8.32,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":7.94,"disclosure":"aggregated"},
+        {"label":"Profit/(loss) on player trading","category":"player_sales","amount":6.592,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":2.513,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-1.004,"disclosure":"aggregated"},
+        {"label":"Operating expenses","category":"other_expenses","amount":-194.356,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.031,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":148.836,"expenses":195.36,"net_result":-49.555},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.005},
+          {"label":"Interest payable and similar charges","amount":-3.036},
+          {"label":"Tax on loss","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "brighton-gb-full-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":20.571,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"broadcasting","amount":125.969,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":15.171,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":5.718,"disclosure":"aggregated"},
+        {"label":"Profit on player trading","category":"player_sales","amount":62.356,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-1.274,"disclosure":"aggregated"},
+        {"label":"Operating expenses","category":"other_expenses","amount":-203.024,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.908,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":229.785,"expenses":204.298,"net_result":27.395},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":3.287},
+          {"label":"Interest payable and similar charges","amount":-1.379},
+          {"label":"Tax on profit/(loss)","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "brighton-gb-full-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":24.492,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"broadcasting","amount":154.897,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":17.592,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":6.593,"disclosure":"aggregated"},
+        {"label":"Profit on player trading","category":"player_sales","amount":121.361,"disclosure":"aggregated"},
+        {"label":"Compensation received","category":"other_income","amount":23.353,"disclosure":"aggregated"},
+        {"label":"Proceeds from insurance claim","category":"other_income","amount":1.525,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-5.579,"disclosure":"aggregated"},
+        {"label":"Operating expenses","category":"other_expenses","amount":-204.749,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.479,"tax":-10.431,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":349.813,"expenses":210.328,"net_result":131.533},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":5.073},
+          {"label":"Interest payable and similar charges","amount":-2.594},
+          {"label":"Tax on profit","amount":-10.431}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "brighton-gb-full-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "bloom",
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":27.722,"disclosure":"detailed"},
+        {"label":"Broadcasting","category":"broadcasting","amount":163.478,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":20.188,"disclosure":"detailed"},
+        {"label":"Other (Turnover)","category":"other_income","amount":9.905,"disclosure":"detailed"},
+        {"label":"Other operating income","category":"other_income","amount":2.45,"disclosure":"detailed"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":110.295,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-142.235,"disclosure":"detailed"},
+        {"label":"Amortisation of players' registrations","category":"player_amortisation","amount":-39.342,"disclosure":"detailed"},
+        {"label":"Impairment of players' registrations","category":"player_impairment","amount":-2.784,"disclosure":"detailed"},
+        {"label":"Depreciation of tangible fixed assets","category":"depreciation","amount":-1.397,"disclosure":"detailed"},
+        {
+          "label": "Otros costos operativos (Cost of sales + Operating expenses no desglosados por naturaleza, neto de staff/amortización/impairment/depreciación)",
+          "category": "other_expenses",
+          "amount": -63.567,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.544,"tax":-32.192,"gross_debt":229.2,"cash":14.966},
+      "official_totals": {"revenue":334.038,"expenses":249.325,"net_result":56.065}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "brighton-gb-full-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "bloom",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":27.534,"disclosure":"detailed"},
+        {"label":"Broadcasting","category":"broadcasting","amount":150.638,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":22.414,"disclosure":"detailed"},
+        {"label":"Other (Turnover)","category":"other_income","amount":20.477,"disclosure":"detailed"},
+        {"label":"Other operating income","category":"other_income","amount":5,"disclosure":"detailed"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":56.911,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-158.679,"disclosure":"detailed"},
+        {"label":"Amortisation of players' registrations","category":"player_amortisation","amount":-81.84,"disclosure":"detailed"},
+        {"label":"Depreciation of tangible fixed assets","category":"depreciation","amount":-1.41,"disclosure":"detailed"},
+        {
+          "label": "Otros costos operativos (Cost of sales + Operating expenses no desglosados por naturaleza, neto de staff/amortización/depreciación)",
+          "category": "other_expenses",
+          "amount": -72.35,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.7,"tax":3.4,"gross_debt":336.069,"cash":39.836},
+      "official_totals": {"revenue":282.974,"expenses":314.279,"net_result":-28.605}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

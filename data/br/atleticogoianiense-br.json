@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "atleticogoianiense-br",
+    "name": "Atlético Clube Goianiense",
+    "display_name": "Atlético Goianiense",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "atleticogoianiense-br-demonstracoes-2024-2025",
+      "club_id": "atleticogoianiense-br",
+      "title": "Demonstrações Financeiras (Relatório da Administração), Exercícios Findos em 31 de Dezembro de 2025 e de 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://atleticogoianiense.com.br/up/TRANSPARENCIA-26/"
+    }
+  ],
+  "management": [{"id":"sinconfirmar","name":"Atlético Goianiense (gestión no confirmada en detalle)","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "atleticogoianiense-br-demonstracoes-2024-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "sinconfirmar",
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Direitos de Transmissão","category":"broadcasting","amount":4.465,"disclosure":"detailed"},
+        {"label":"Bilheteria","category":"matchday_competition","amount":1.004,"disclosure":"detailed"},
+        {"label":"Patrocínio e publicidade","category":"sponsorship_commercial","amount":8.828,"disclosure":"detailed"},
+        {"label":"Mensalidades Associativas","category":"member_dues","amount":0.312,"disclosure":"detailed"},
+        {"label":"Negociação de atletas","category":"player_sales","amount":37.657,"disclosure":"detailed"},
+        {"label":"Outras receitas","category":"other_income","amount":10.399,"disclosure":"detailed"},
+        {"label":"Programa Sócio Torcedor","category":"member_dues","amount":0.705,"disclosure":"detailed"},
+        {"label":"Receitas Condomínio LFU","category":"broadcasting","amount":10.819,"disclosure":"detailed"},
+        {"label":"Premiações","category":"competition_bonus","amount":2.922,"disclosure":"detailed"},
+        {"label":"Outras receitas e despesas operacionais","category":"other_income","amount":1.589,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Custos com Salários de Atletas/Com. Técnica","category":"wages_squad","amount":-40.6,"disclosure":"detailed"},
+        {"label":"Direito de Imagem","category":"wages_squad","amount":-13.428,"disclosure":"detailed"},
+        {"label":"Despesas com Patrocínio/Premiações (bonos de rendimiento)","category":"match_organisation_expense","amount":-3.16,"disclosure":"detailed"},
+        {"label":"Despesas CBF","category":"match_organisation_expense","amount":-0.238,"disclosure":"detailed"},
+        {"label":"INSS sobre Receita","category":"admin_general_expense","amount":-0.085,"disclosure":"detailed"},
+        {"label":"Fenapaf / Direito de Arena","category":"match_organisation_expense","amount":-0.006,"disclosure":"detailed"},
+        {"label":"Quadro Móvel (logística de partidos)","category":"match_organisation_expense","amount":-0.183,"disclosure":"detailed"},
+        {"label":"Custos com Parcerias com outros clubes","category":"other_expenses","amount":-1.131,"disclosure":"detailed"},
+        {"label":"Comissão/intermediação","category":"other_expenses","amount":-1.209,"disclosure":"detailed"},
+        {"label":"Salários e encargos (administrativo)","category":"wages_squad","amount":-1.506,"disclosure":"detailed"},
+        {"label":"Serviços de Terceiros","category":"admin_general_expense","amount":-2.699,"disclosure":"detailed"},
+        {"label":"Marketing","category":"admin_general_expense","amount":-1.095,"disclosure":"detailed"},
+        {"label":"Amortização do custo de atletas","category":"player_amortisation","amount":-6.074,"disclosure":"detailed"},
+        {"label":"Depreciações","category":"depreciation","amount":-2.156,"disclosure":"detailed"},
+        {"label":"Contingências","category":"other_expenses","amount":-0.003,"disclosure":"detailed"},
+        {"label":"Despesas gerais","category":"admin_general_expense","amount":-3.53,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.899,"tax":-0.009,"gross_debt":9.666,"cash":0.767},
+      "official_totals": {"revenue":78.7,"expenses":77.103,"net_result":0.687}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

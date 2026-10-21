@@ -59,7 +59,7 @@
 //     "## Fuentes" de Admin/carga-clubes/<club>.md; audit.js checkFuentesPublicas: las salvedades públicas las deriva sourceCaveats() de los campos). Y una línea en
 //     Admin/sourcing/<País>/<Club>.md si ese archivo existe.
 //
-// --escribir (solo si no quedó NINGÚN motivo para frenar, y si el ejercicio tiene estadio y sponsor: compuertaContexto(), to-do 273): inserta el año en las tres estructuras del data/<país>/<club>-data.js y en sources{},
+// --escribir (solo si no quedó NINGÚN motivo para frenar, y si el ejercicio tiene estadio y sponsor: compuertaContexto(), to-do 273): escribe el año en el JSON del club (data/<país>/<club>.json: ingresos, gastos, meta y la fuente) y regenera su data/<país>/<club>-data.js,
 // la fila de liga en data/club-leagues/<iso2>.js, la cotización de mercado nueva en FX_CLOSE si hace falta, la línea de fuentes/, sube
 // ASSET_V (la constante Y cada `?v=` literal de index.html, salvo que ya esté subido respecto de HEAD), corre los 4 generadores y
 // `node tools/audit.js --quiet`. Si la auditoría da algún P0/P1, o cualquier paso falla, RESTAURA cada archivo tocado y borra lo creado
@@ -98,6 +98,7 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import vm from 'node:vm';
 import { archivosData, rutaData } from './data-clubes.js';
+import { modificarClub, rutaJson } from './club-json.mjs'; // (to-do 245, fase 2) el JSON es la fuente de cada club
 import { TOCA_UNA_CARGA } from './rutas.mjs';
 import { parseNumber } from './datos-sitio.mjs';
 import { validacionAlDia } from './cache-al-dia.mjs'; // (to-do 237 ak)
@@ -1239,7 +1240,7 @@ export function compuertaContexto(P) {
 
 export function escribir(P) {
   const E = P.ejercicio; const id = E.clubId; const y = E.year;
-  const dataRel = rutaData(id); const dataPath = resolve(ROOT, dataRel);
+  const dataRel = rutaData(id);
   const [paisCarpeta, clubCarpeta] = P.pdf.split('/').slice(1, 3);
   const fuentesMd = `Admin/sourcing/${paisCarpeta}/${clubCarpeta}.md`;
   const extra = existsSync(resolve(ROOT, fuentesMd)) ? [fuentesMd] : [];
@@ -1250,13 +1251,8 @@ export function escribir(P) {
   const snap = snapshot(extraRev); const escritos = [];
   try {
     let ev = EV.leer(id);
-    let src = readFileSync(dataPath, 'utf8');
-    const reg = src.match(/CLUB_GENERIC_DATA(?:\[\s*['"][^'"]+['"]\s*\]|\.[A-Za-z_$][\w$]*)\s*=\s*\{([\s\S]*?)\};/);
-    if (!reg) throw new Error(`${dataRel}: no encontré el registro en CLUB_GENERIC_DATA`);
-    const varDe = (k) => (reg[1].match(new RegExp(`${k}\\s*:\\s*([A-Za-z_$][\\w$]*)`)) || [])[1];
-    const vRev = varDe('revenueLinesByYear'); const vExp = varDe('expenseLinesByYear'); const vMeta = varDe('fiscalYearMeta');
-    if (!vRev || !vExp || !vMeta) throw new Error(`${dataRel}: el registro no nombra las tres variables (revenue/expense/meta)`);
-    const linea = (l) => `    { rawLabel:${js(l.rawLabel)}, normalizedCategory:${js(l.normalizedCategory)}, amountNative:${num(l.amountNative)}, disclosureLevel:${js(l.disclosureLevel)}${l.items ? `, items:[\n      ${l.items.map((it) => `[${js(it[0])}, ${num(it[1])}]`).join(', ')},\n    ]` : ''} },\n`;
+    const lineaJ = (l) => ({ rawLabel: l.rawLabel, normalizedCategory: l.normalizedCategory, amountNative: r6(l.amountNative),
+      ...(l.disclosureLevel !== undefined ? { disclosureLevel: l.disclosureLevel } : {}), ...(l.items ? { items: l.items.map((it) => [it[0], r6(it[1])]) } : {}) });
     // la nota de cada fila (página y escalón de su categoría) va a la tabla del año en la evidencia, con su número de fila
     const notaFila = (l) => `pág. ${l._pag ?? '?'}, ${['precedente', 'Jev', 'Claude'][l._escalon] ?? '?'}${l._conf != null && l._escalon ? ` ${l._conf}` : ''}`;
     const tabla = (ls) => ls.map((l, i) => ({ fila: i + 1, rawLabel: l.rawLabel, nota: notaFila(l) }));
@@ -1277,15 +1273,15 @@ export function escribir(P) {
       // Panetolikos 2021-2025 con los sueldos separados).
       if (M0.staffCost == null && vm0.staffCost != null) M0.staffCost = vm0.staffCost;
       if (M0.gestionId == null && vm0.gestionId != null) M0.gestionId = vm0.gestionId;
-      for (const v of [vRev, vExp, vMeta]) {
-        const ini = src.indexOf(`const ${v} = {`); if (ini < 0) throw new Error(`${dataRel}: no encontré const ${v}`);
-        const abreObj = src.indexOf('{', ini); const cierraObj = cierreDe(src, abreObj);
-        const m = new RegExp(`\\n[ \\t]*['"]?${y}['"]?\\s*:\\s*([\\[{])`).exec(src.slice(abreObj, cierraObj)); if (!m) throw new Error(`${dataRel}: ${v} no tiene ${y}`);
-        const desde = abreObj + m.index; const abre = abreObj + m.index + m[0].length - 1;
-        const cierra = cierreDe(src, abre, m[1] === '[' ? '[' : '{', m[1] === '[' ? ']' : '}');
-        let hasta = cierra + 1; while (/[ \t,]/.test(src[hasta])) hasta++;
-        src = src.slice(0, desde) + src.slice(hasta);
-      }
+
+
+
+
+
+
+
+
+
       // (to-do 206 y 209) también la evidencia que este script escribió para el año que se reemplaza (su cabecera "cargado por", sus
       // AJUSTE MANUAL, sus notas de meta y liga, y las tablas de filas): se vuelve a escribir abajo con lo de ahora, sin apilarse. Lo que
       // se escribió a mano en ese año no se toca.
@@ -1295,31 +1291,48 @@ export function escribir(P) {
         /^incluidoEn: ajuste manual `incluye`/, /^ajuste manual `incluye`: el documento junta/, /^sinDesglose: líneas que el documento no desglosa/]);
       ev = EV.quitarLineas(ev, y, 'Liga', [/^tools\/cargar\.mjs \(\d{4}-\d{2}-\d{2}\): /]);
     }
-    src = insertarEnObjeto(src, `const ${vRev} = {`, `  ${y}: [\n${E.revenueLines.map(linea).join('')}  ],\n`, dataRel);
-    src = insertarEnObjeto(src, `const ${vExp} = {`, `  ${y}: [\n${E.expenseLines.map(linea).join('')}  ],\n`, dataRel);
+
+
     ev = EV.agregarTexto(ev, y, 'Ingresos', cab);
     ev = EV.ponerTabla(ev, y, 'Ingresos', tabla(E.revenueLines));
     ev = EV.ponerTabla(ev, y, 'Gastos', tabla(E.expenseLines));
     const M = E.fiscalYearMeta;
-    const fxTxt = M.fxRef ? `fxRef:${js(M.fxRef)}` : M.fx != null ? `fx:${num(M.fx)}, fxSource:${js(M.fxSource)}` : '';
     // AJUSTES MANUALES (Versión 366): lo que Guido forzó para este documento queda a la vista en la evidencia del club, en la meta del año.
     const ajTxt = (P.ajustes || []).map((a) => `${y}: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.campo}${a.valor ? ` = ${a.valor}` : ''}. ${String(a.motivo).replace(/\n/g, ' ')}`);
     ev = EV.agregarTexto(ev, y, 'Meta', [...ajTxt, `tools/cargar.mjs (${HOY}). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.`,
       ...(M.incluidoEn ? ['incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.'] : []),
       ...(M.sinDesglose ? ['sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.'] : [])]);
-    const metaTxt = `  ${y}: {\n    currency:${js(M.currency)}${fxTxt ? ', ' + fxTxt : ''},\n    sourceId:${js(M.sourceId)},\n    reportType:${js(M.reportType)},\n    gestionId:${M.gestionId != null ? js(M.gestionId) : 'null'},\n    profitOnPlayerSales:0, assetSales:0,\n    netInterest:${num(M.netInterest)}, tax:${num(M.tax)},\n${M.extraRows ? `    extraRows: [\n${M.extraRows.map((x) => `      {label:${js(x.label)}, value:${num(x.value)}},\n`).join('')}    ],\n` : ''}${M.incluidoEn ? `    incluidoEn:${JSON.stringify(M.incluidoEn)},\n` : ''}${M.sinDesglose ? `    sinDesglose: [\n${M.sinDesglose.map((x) => `      {renglon:${js(x.renglon)}, lado:${js(x.lado)}, importe:${num(x.importe)}, motivo:${js(x.motivo)}},\n`).join('')}    ],\n` : ''}    grossDebt:${num(M.grossDebt)}, cash:${num(M.cash)},${M.staffCost != null ? ` staffCost:${num(M.staffCost)},` : ''}\n    officialTotalRevenue:${num(M.officialTotalRevenue)}, officialTotalExpenses:${num(M.officialTotalExpenses)}, officialPAT:${num(M.officialPAT)},\n  },\n`;
-    src = insertarEnObjeto(src, `const ${vMeta} = {`, metaTxt, dataRel);
+    const metaJ = {
+      currency: M.currency, ...(M.fxRef ? { fxRef: M.fxRef } : M.fx != null ? { fx: r6(M.fx), fxSource: M.fxSource } : {}),
+      sourceId: M.sourceId, reportType: M.reportType, gestionId: M.gestionId != null ? M.gestionId : null,
+      profitOnPlayerSales: 0, assetSales: 0, netInterest: r6(M.netInterest ?? null), tax: r6(M.tax ?? null),
+      ...(M.extraRows ? { extraRows: M.extraRows.map((x) => ({ label: x.label, value: r6(x.value ?? null) })) } : {}),
+      ...(M.incluidoEn ? { incluidoEn: M.incluidoEn } : {}),
+      ...(M.sinDesglose ? { sinDesglose: M.sinDesglose.map((x) => ({ renglon: x.renglon, lado: x.lado, importe: r6(x.importe), motivo: x.motivo })) } : {}),
+      grossDebt: r6(M.grossDebt ?? null), cash: r6(M.cash ?? null), ...(M.staffCost != null ? { staffCost: r6(M.staffCost) } : {}),
+      officialTotalRevenue: r6(M.officialTotalRevenue ?? null), officialTotalExpenses: r6(M.officialTotalExpenses ?? null), officialPAT: r6(M.officialPAT ?? null),
+    };
+
     const S = E.source;
     // la nota INTERNA de la fuente va a la evidencia del club (to-do 209: data/ se publica), no a un campo `note` de sources{}
+    let fuenteNueva = null;
     if (!(P.reemplaza && cargarSitio().sources?.[S.id])) {
       const dmy = (f) => f.split('-').reverse().join('/');
       const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).`
         : P.transicion ? `Ejercicio de transición por cambio de fecha de cierre: ${P.transicion.inicio ? `del ${dmy(P.transicion.inicio)} ` : ''}al ${dmy(P.transicion.cierre)} (${P.transicion.meses} meses).` : null;
       const notaPublica = [notaPrimero, P.suma?.nota].filter(Boolean).join(' ');
-      src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n${notaPublica ? `    publicNote:${js(notaPublica)},\n` : ''}  },\n`, dataRel);
+      fuenteNueva = { id: S.id, clubId: S.clubId, title: S.title, type: S.type, reliability: S.reliability, ...(notaPublica ? { publicNote: notaPublica } : {}) };
       if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
     }
-    writeFileSync(dataPath, src); escritos.push(dataRel);
+    // (to-do 245, fase 2) el club se escribe en su JSON (la fuente) y de ahí se regenera el data file: se convierte a los nombres de siempre, se
+    // cambia el año y se valida contra el esquema antes de escribir nada.
+    const [rj, rd] = modificarClub(id, (c) => {
+      c.datos.revenueLinesByYear[y] = E.revenueLines.map(lineaJ);
+      c.datos.expenseLinesByYear[y] = E.expenseLines.map(lineaJ);
+      c.datos.fiscalYearMeta[y] = metaJ;
+      if (fuenteNueva) c.sources[S.id] = fuenteNueva;
+    });
+    escritos.push(rj, rd);
 
     // liga
     const iso = String((cargarSitio().clubs[id] || {}).country || '').toLowerCase();
@@ -1348,7 +1361,7 @@ export function escribir(P) {
     // entero y con el año recién escrito: el año nuevo nace con sus marcas y un año viejo gana o pierde las suyas si este año le cambia el
     // precedente. Antes de publicar, así un P0/P1 lo revierte todo junto.
     const marcas = marcarClub(id);
-    if (marcas.cambio && !escritos.includes(dataRel)) escritos.push(dataRel);
+    if (marcas.cambio) for (const r of [rutaJson(id), dataRel]) if (!escritos.includes(r)) escritos.push(r);
     if (marcas.antes || marcas.despues) console.log(`"Posiblemente dentro de otro rubro" (tools/dentro-de-otro.mjs): marcas del club ${marcas.antes} → ${marcas.despues}${marcas.lineas.length ? `\n  ${marcas.lineas.join('\n  ')}` : ''}`);
     return publicarCambios(snap, extraRev, escritos);
   } catch (err) {

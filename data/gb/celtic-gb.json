@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {"id":"celtic-gb","name":"Celtic plc","display_name":"Celtic","country":"GB","reporting_currency":"GBP","fiscal_year_start":"07-01","sport":"futbol"},
+  "sources": [
+    {
+      "id": "celtic-gb-plc-group-accounts-2024-25",
+      "club_id": "celtic-gb",
+      "title": "Celtic plc — celtic-plc-group-accounts-2024-25 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "celtic-gb-group-accounts-2020-21",
+      "club_id": "celtic-gb",
+      "title": "Celtic plc — celtic-group-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "celtic-gb-group-accounts-2021-22",
+      "club_id": "celtic-gb",
+      "title": "Celtic plc — celtic-group-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "celtic-gb-group-accounts-2022-23",
+      "club_id": "celtic-gb",
+      "title": "Celtic plc — celtic-group-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "celtic-gb-group-accounts-2023-24",
+      "club_id": "celtic-gb",
+      "title": "Celtic plc — celtic-group-accounts-2023-24 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "GBP",
+      "source_id": "celtic-gb-group-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-06-30"},
+      "revenue": [
+        {"label":"Ticketing","category":"matchday_competition","amount":21.675,"disclosure":"aggregated"},
+        {"label":"Merchandise vouchers for season ticket holders","category":"season_tickets","amount":-2.775,"disclosure":"aggregated"},
+        {"label":"Commercial / sponsorship","category":"sponsorship_commercial","amount":12.425,"disclosure":"aggregated"},
+        {"label":"Retail outlets and E-commerce","category":"sponsorship_commercial","amount":15.117,"disclosure":"aggregated"},
+        {"label":"Media rights","category":"broadcasting","amount":11.253,"disclosure":"aggregated"},
+        {"label":"Stadium operations","category":"stadium_other","amount":1.924,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":1.162,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of intangible assets","category":"player_sales","amount":9.435,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":5,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Operating expenses (before intangible asset transactions and exceptional items)",
+          "category": "other_expenses",
+          "amount": -74.353,
+          "disclosure": "aggregated"
+        },
+        {"label":"Exceptional operating expenses","category":"exceptional_items","amount":-0.333,"disclosure":"aggregated"},
+        {"label":"Amortisation of intangible assets","category":"player_amortisation","amount":-11.821,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.201,"tax":-1.109,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":75.216,"expenses":86.174,"net_result":-12.601},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Finance income","amount":0.855},
+          {"label":"Finance expense","amount":-1.056},
+          {"label":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":-1.109}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "celtic-gb-group-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Ticketing","category":"matchday_competition","amount":36.314,"disclosure":"aggregated"},
+        {"label":"Merchandise vouchers for season ticket holders","category":"season_tickets","amount":0.347,"disclosure":"aggregated"},
+        {"label":"Commercial / sponsorship","category":"sponsorship_commercial","amount":11.513,"disclosure":"aggregated"},
+        {"label":"Retail outlets and E-commerce","category":"sponsorship_commercial","amount":18.511,"disclosure":"aggregated"},
+        {"label":"Media rights","category":"broadcasting","amount":13.308,"disclosure":"aggregated"},
+        {"label":"Stadium operations","category":"stadium_other","amount":6.397,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":1.845,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of intangible assets","category":"player_sales","amount":29.029,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Operating expenses (before intangible asset transactions and exceptional items)",
+          "category": "other_expenses",
+          "amount": -91.728,
+          "disclosure": "aggregated"
+        },
+        {"label":"Impairment of intangible assets and other prepaid costs","category":"exceptional_items","amount":-7.235,"disclosure":"aggregated"},
+        {"label":"Reversal of prior period impairment charges","category":"exceptional_items","amount":1.094,"disclosure":"aggregated"},
+        {"label":"Settlement agreements on contract termination","category":"exceptional_items","amount":-0.121,"disclosure":"aggregated"},
+        {"label":"Amortisation of intangible assets","category":"player_amortisation","amount":-13.045,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.093,"tax":-0.287,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":117.264,"expenses":104.773,"net_result":5.849},
+      "adjustments": {"extra_rows":[{"label":"Finance income","amount":0.876},{"label":"Finance expense","amount":-0.969},{"label":"Tax expense","amount":-0.287}]}
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "celtic-gb-group-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Ticketing","category":"matchday_competition","amount":40.551,"disclosure":"aggregated"},
+        {"label":"Commercial / sponsorship","category":"sponsorship_commercial","amount":13.365,"disclosure":"aggregated"},
+        {"label":"Retail outlets and E-commerce","category":"sponsorship_commercial","amount":22.219,"disclosure":"aggregated"},
+        {"label":"Media rights","category":"broadcasting","amount":31.176,"disclosure":"aggregated"},
+        {"label":"Stadium operations","category":"stadium_other","amount":10.457,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":2.083,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of intangible assets","category":"player_sales","amount":14.441,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":13.5,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Operating expenses (before intangible asset transactions and exceptional items)",
+          "category": "other_expenses",
+          "amount": -95.432,
+          "disclosure": "aggregated"
+        },
+        {"label":"Exceptional operating expenses","category":"exceptional_items","amount":-0.131,"disclosure":"aggregated"},
+        {"label":"Amortisation of intangible assets","category":"player_amortisation","amount":-12.088,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.556,"tax":-7.365,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":147.792,"expenses":107.52,"net_result":33.332},
+      "adjustments": {"extra_rows":[{"label":"Finance income","amount":2.041},{"label":"Finance expense","amount":-1.485},{"label":"Tax expense","amount":-7.365}]}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "celtic-gb-group-accounts-2023-24",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Ticketing","category":"matchday_competition","amount":40.823,"disclosure":"aggregated"},
+        {"label":"Commercial / sponsorship","category":"sponsorship_commercial","amount":13.831,"disclosure":"aggregated"},
+        {"label":"Retail outlets and e-commerce","category":"sponsorship_commercial","amount":22.65,"disclosure":"aggregated"},
+        {"label":"Media rights","category":"broadcasting","amount":36.374,"disclosure":"aggregated"},
+        {"label":"Stadium operations","category":"stadium_other","amount":8.814,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":2.088,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of Intangible assets","category":"player_sales","amount":6.637,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Exceptional operating Income/(expenses)","category":"other_income","amount":0.203,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Operating expenses (before intangible asset transactions and exceptional items)",
+          "category": "other_expenses",
+          "amount": -105.394,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortisation of intangible assets","category":"player_amortisation","amount":-11.483,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.282,"tax":-4.441,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":131.42,"expenses":116.877,"net_result":13.384},
+      "adjustments": {"extra_rows":[{"label":"Finance income","amount":4.726},{"label":"Finance expense","amount":-1.444},{"label":"Tax expense","amount":-4.441}]}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "celtic-gb-plc-group-accounts-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Revenue","category":"lump_football_operations","amount":143.597,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of intangible assets","category":"player_sales","amount":31.488,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Operating expenses (before intangible asset transactions and exceptional items)",
+          "category": "other_expenses",
+          "amount": -117.062,
+          "disclosure": "aggregated"
+        },
+        {"label":"Exceptional operating (expense)/income","category":"exceptional_items","amount":-2.005,"disclosure":"aggregated"},
+        {"label":"Amortisation of intangible assets","category":"player_amortisation","amount":-13.845,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.514,"tax":-11.753,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":175.085,"expenses":130.907,"net_result":33.934},
+      "adjustments": {
+        "extra_rows": [{"label":"Finance income","amount":5.082},{"label":"Finance expense","amount":-1.568},{"label":"Tax expense","amount":-11.753}],
+        "no_breakdown": [
+          {
+            "line": "Revenue",
+            "side": "revenue",
+            "amount": 143.597,
+            "reason": "Claude 2026-10-20: el estado trae un solo renglón Revenue; el desglose por categoría (nota 4, pág. 74 del visor) lo evalúa el reintento; si el desglose entra, este total no se suma aparte"
+          }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

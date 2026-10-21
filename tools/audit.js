@@ -581,7 +581,8 @@ function checkComentariosPublicados() {
     .flatMap(e => e.isDirectory() ? jsDe(dir + '/' + e.name) : e.name.endsWith('.js') ? [dir + '/' + e.name] : []);
   for (const rel of [...publicados(), ...jsDe('data')]) {
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
-    const todos = comentarios(rel, src);
+    // La cabecera fija que pone tools/generar-data.mjs ("GENERADO desde … no editar a mano") es el único comentario que un data file lleva.
+    const todos = comentarios(rel, src).filter(c => !/^GENERADO desde data\/[a-z]{2}\/[a-z0-9-]+\.json por tools\/generar-data\.mjs/.test(String(c.text).trim().replace(/^\/\/\s*/, '')));
     if (/^data\/(?:[a-z]{2}\/)?[^/]+-data\.js$/.test(rel) && todos.length) {
       add('P2', 'comentario-en-data-club',
         `${rel}: ${todos.length} comentarios (el primero en la línea ${todos[0].line}). Un data/<país>/<club>-data.js no lleva comentarios: la nota va a Admin/carga-clubes/<club>.md (regla: Admin/CONVENCIONES-DATOS.md)`);
@@ -799,6 +800,8 @@ const GENERADORES = [
   ['entidades.mjs',             'data/entidades/ (estructura de cada club, to-do 280)', 'entidades-desfasado'],
   ['estimar.mjs',               'data/estimados/ (y ningún estimado al lado de un año real)', 'estimados-desfasado'], // to-do 270; sin la carpeta, no chequea
   ['generate-sponsors.js',      'data/sponsors.js (sponsors y marcas de cada liga)', 'sponsors-desfasado'], // to-do 273; une equipos a clubes del sitio
+  ['generar-data.mjs',          'los data/<país>/<id>-data.js (se generan de su JSON: nunca a mano)', 'json-js-desfasado'], // to-do 245: el JSON es la fuente
+  ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v1.json)', 'json-no-valida'],
 ];
 function checkGenerados() {
   for (const [script, que, code] of GENERADORES) {
@@ -900,65 +903,29 @@ function checkRankings(api) {
   }
 }
 
-// --- D14: el espacio de nombres de clubId (Versión 129) --------------------
-// `clubId` no lleva país, y no es una clave más: nombra el archivo de datos
-// (`data/<país>/<clubId>-data.js`, por convención de loadClubData()) y prefija cada
-// sourceId (`racing-balance-2009`). Los ids de hoy son `racing`, `independiente`,
-// `union`, `sanlorenzo`: los cuatro nombres existen en varios países (Racing de
-// Santander, Independiente del Valle y el de Medellín, Unión Española, Unión
-// Magdalena). Ya pasa en `fuentes/`, con un Olimpia de Honduras y otro de
-// Paraguay, y ahí no choca solo porque el país es una carpeta.
-//
-// La convención, desde la Versión 129 y escrita en Admin/CONVENCIONES.md: todo club
-// NUEVO lleva el país al final del id (`racingsantander-es`). Los 41 de antes
-// quedan como están, listados acá abajo: migrarlos tocaría sus archivos, sus
-// sourceIds y el club guardado en el localStorage de cada visitante, y no
-// arregla ninguna colisión real, porque todavía no hay ninguna.
-const CLUB_IDS_SIN_PAIS_HEREDADOS = [
-  "argentinosjuniors", "athleticclub", "atleticogoianiense", "atleticomadrid", "boca", "botafogo",
-  "celtavigo", "cerezoosaka", "clubamerica", "coritiba", "cruzeiro", "deportivoalaves",
-  "envigado", "estudianteslp", "fcbarcelona", "fctokyo", "gambaosaka", "gremio",
-  "independiente", "instituto", "ituano", "kashimaantlers", "kawasakifrontale", "mirassol",
-  "nagoyagrampus", "oncecaldas", "racing", "realbetis", "realmadrid", "river",
-  "rosariocentral", "sanfreccehiroshima", "sanlorenzo", "sevillafc", "union", "urawareddiamonds",
-  "valenciacf", "velez", "villarrealcf", "visselkobe", "yokohamafmarinos",
-];
-
+// --- D14: el espacio de nombres de clubId ---------------------------------
+// `clubId` nombra el archivo de datos (`data/<país>/<clubId>-data.js`, por convención de loadClubData()) y prefija cada sourceId.
+// Formato: `<slug>-<iso2>`, con el `country` de clubs.js (Admin/CONVENCIONES-DATOS.md, "Identidad del club"). Los ids que no lo cumplían
+// se renombraron en el to-do 246; los viejos viven en `data/club-aliases.js` para siempre, y `alias-roto` vigila ese mapa.
 function checkClubIds(api) {
-  const heredados = new Set(CLUB_IDS_SIN_PAIS_HEREDADOS);
-  const paises = new Set(Object.values(api.clubs).map(c => (c.country || '').toLowerCase()).filter(Boolean));
-  // El "nombre base" es el id sin su sufijo de país, para comparar peras con peras.
-  const base = id => {
-    const m = id.match(/^(.*)-([a-z]{2})$/);
-    return (m && paises.has(m[2])) ? m[1] : id;
-  };
-
-  // El disparador de migración: mientras `racing` sea el único, "racing" significa
-  // Racing Club sin ambigüedad. El día que entra `racing-es`, el id pelado pasa a ser
-  // el único de la familia que no dice de qué país es, y ahí sí conviene renombrarlo a
-  // `racing-ar`. O sea que esto no prohíbe la convivencia (es justamente la convención
-  // funcionando): avisa cuándo un id heredado se volvió ambiguo, que es el único
-  // momento en que migrarlo vale lo que cuesta.
-  const porBase = {};
-  for (const id of Object.keys(api.clubs)) (porBase[base(id)] = porBase[base(id)] || []).push(id);
-  for (const b of Object.keys(porBase)) {
-    if (porBase[b].length < 2) continue;
-    const pelados = porBase[b].filter(id => id === b);
-    const conPais = porBase[b].filter(id => id !== b);
-    if (!pelados.length) continue;  // todos con país: no hay nada ambiguo
-    for (const id of pelados) {
-      const pais = (api.clubs[id].country || 'xx').toLowerCase();
-      add('P2', 'clubid-heredado-ambiguo', `el id '${id}' (${api.clubs[id].country}) ya no es inequívoco: existe ${conPais.join(', ')} con el mismo nombre base. Es el momento de renombrarlo a '${id}-${pais}' (el archivo data/${id}-data.js, el clubId y el prefijo de sus sourceId)`);
+  for (const id of Object.keys(api.clubs)) {
+    const iso = (api.clubs[id].country || 'xx').toLowerCase();
+    if (!id.endsWith('-' + iso)) {
+      add('P1', 'clubid-sin-pais', `el club '${id}' tiene un id que no termina en su país (esperado '${id.replace(/-[a-z]{2}$/, '')}-${iso}'): la convención de ids es <slug>-<iso2>, ver Admin/CONVENCIONES-DATOS.md`);
     }
   }
-
-  const sinPais = Object.keys(api.clubs).filter(id => !heredados.has(id) && !/-[a-z]{2}$/.test(id));
-  for (const id of sinPais) {
-    add('P2', 'clubid-sin-pais', `el club '${id}' es nuevo y su id no termina en el país (ej. '${id}-${(api.clubs[id].country || 'xx').toLowerCase()}'), que es la convención desde la Versión 129: ver Admin/CONVENCIONES.md`);
+  let aliases = {};
+  try {
+    const txt = fs.readFileSync(path.join(ROOT, 'data/club-aliases.js'), 'utf8');
+    aliases = JSON.parse(txt.match(/CLUB_ALIASES\s*=\s*(\{[\s\S]*?\});/)[1]);
+  } catch (e) {
+    add('P1', 'alias-roto', `no se pudo leer data/club-aliases.js: ${e.message}`);
+    return;
   }
-  const heredadosVivos = Object.keys(api.clubs).filter(id => heredados.has(id)).length;
-  if (heredadosVivos) {
-    add('P3', 'clubid-heredado', `${heredadosVivos} clubes con id sin país, de antes de la convención. No es un error y no urge migrarlos: el chequeo de colisión de arriba avisa si alguna vez chocan de verdad`);
+  for (const [viejo, nuevo] of Object.entries(aliases)) {
+    if (!api.clubs[nuevo]) add('P1', 'alias-roto', `el alias '${viejo}' apunta a '${nuevo}', que no es un club del sitio`);
+    else if (api.clubs[viejo]) add('P1', 'alias-roto', `el alias '${viejo}' es también un id vivo de club: un alias nunca se reutiliza`);
+    else if (aliases[nuevo]) add('P1', 'alias-roto', `el alias '${viejo}' apunta a '${nuevo}', que a su vez es un alias (sin cadenas)`);
   }
 }
 
@@ -1550,29 +1517,21 @@ function listarFx(api) {
 }
 
 // ---------------------------------------------------------------------------
-// DATOS COMO JSON CON ESQUEMA (to-do 245, aprobado por Guido el 2026-10-20: aviso P2, no freno). Cada data/<país>/*-data.js se pasa al JSON del
-// esquema de Admin/mediciones/245-esquema.md (tools/json-datos.mjs) y se valida: una clave que el diccionario no conoce, un tipo mal, una categoría que no
-// está en category-map.js, un año repetido o fuera de orden. Cuesta menos de 1 segundo sobre los 313 clubes (medido). No escribe nada.
+// DATOS COMO JSON CON ESQUEMA (to-do 245, fase 2): el JSON de cada club (data/<país>/<id>.json) es la FUENTE. Que valide contra el esquema (`json-no-valida`)
+// y que el data file generado coincida con él (`json-js-desfasado`) lo chequean, como P1, los generadores de checkGenerados() (validar-esquema-json.mjs y
+// generar-data.mjs --check). Acá van solo los AVISOS del validador (el JSON valida pero tiene algo raro: una fuente o una gestión que vive fuera del archivo),
+// P2 que no frenan.
 // ---------------------------------------------------------------------------
 function checkDatosJson() {
   let J;
-  try { J = require('./json-datos.mjs'); } catch (e) { add('P2', 'json-no-valida', `no se pudo cargar tools/json-datos.mjs: ${e.message}`); return; }
+  try { J = require('./json-datos.mjs'); } catch (e) { add('P2', 'json-aviso', `no se pudo cargar tools/json-datos.mjs: ${e.message}`); return; }
   const categorias = J.categoriasDelSitio(); const externos = J.referenciasExternas();
   for (const rel of archivosData()) {
-    const id = idDeArchivo(rel);
-    let orig, j;
-    try { orig = J.leerClub(rel); j = JSON.parse(JSON.stringify(J.aJson(orig, { exportadoEn: '2026-01-01' }))); }
-    catch (e) { add('P2', 'json-no-valida', `${id}: no se pudo pasar al esquema JSON: ${e.message}`); continue; }
+    const id = idDeArchivo(rel); const rj = rel.replace(/-data\.js$/, '.json');
+    if (!fs.existsSync(path.join(ROOT, rj))) { add('P1', 'json-no-valida', `${id}: no tiene su JSON fuente (${rj}); el data file se genera de ahí`); continue; }
+    let j; try { j = JSON.parse(fs.readFileSync(path.join(ROOT, rj), 'utf8')); } catch (e) { continue; }
     const r = J.validar(j, { categorias, externos });
-    for (const m of r.errores.slice(0, 3)) add('P2', 'json-no-valida', `${id}: ${m}`);
-    if (r.errores.length > 3) add('P2', 'json-no-valida', `${id}: ... y ${r.errores.length - 3} error(es) más del esquema`);
     for (const m of r.avisos.slice(0, 3)) add('P2', 'json-aviso', `${id}: ${m}`);
-    // (to-do 325 a) ida y vuelta: JS -> JSON -> JS tiene que dar el mismo objeto; si no, el JSON y el JS se desfasaron.
-    try {
-      const d = J.diferencias(orig, J.evaluarJs(J.generarJs(j), id));
-      for (const x of d.slice(0, 3)) add('P2', 'json-js-desfasado', `${id}: ${x.ruta}: ${x.antes} -> ${x.despues}`);
-      if (d.length > 3) add('P2', 'json-js-desfasado', `${id}: ... y ${d.length - 3} diferencia(s) más`);
-    } catch (e) { add('P2', 'json-js-desfasado', `${id}: no se pudo regenerar el JS desde el JSON: ${e.message}`); }
   }
 }
 

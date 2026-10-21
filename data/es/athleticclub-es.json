@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "athleticclub-es",
+    "name": "Athletic Club",
+    "display_name": "Athletic Club",
+    "country": "ES",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "athleticclub-es-cuentas-anuales-2024-25",
+      "club_id": "athleticclub-es",
+      "title": "Cuentas Anuales 2024-2025 (presentadas en la Asamblea General de socios), Ejercicio 1/7/2024 a 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://cdn.athletic-club.eus/txoko-utils/"
+    }
+  ],
+  "management": [{"id":"ejercicio2025","name":"Ejercicio 2024/25","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "athleticclub-es-cuentas-anuales-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {
+          "label": "Ingresos por competición",
+          "category": "competition_bonus",
+          "amount": 38.981106,
+          "disclosure": "detailed",
+          "items": [["Liga",3.725443],["Copa",3.044278],["UEFA",31.99281],["Otros",0.218576]]
+        },
+        {"label":"Ingresos por retransmisión","category":"broadcasting","amount":72.713424,"disclosure":"detailed"},
+        {"label":"Ingresos de comercialización y publicidad","category":"sponsorship_commercial","amount":14.675772,"disclosure":"detailed"},
+        {"label":"Ingresos San Mamés VIP Area","category":"stadium_other","amount":8.847445,"disclosure":"detailed"},
+        {
+          "label": "Eventos y otros (incluye la final de la UEFA Europa League en San Mamés)",
+          "category": "other_income",
+          "amount": 4.244512,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingresos por abonados y socios","category":"season_tickets","amount":26.937099,"disclosure":"detailed"},
+        {"label":"Otros ingresos de explotación","category":"other_income","amount":3.922252,"disclosure":"detailed"},
+        {"label":"Imputación de subvenciones de inmovilizado no financiero y otras","category":"other_income","amount":0.157316,"disclosure":"detailed"},
+        {"label":"Otros Resultados","category":"other_income","amount":1.030427,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Variación de existencias de productos terminados y en curso de fabricación",
+          "category": "other_expenses",
+          "amount": -0.007075,
+          "disclosure": "detailed"
+        },
+        {"label":"Aprovisionamientos (otros consumos y gastos externos)","category":"admin_general_expense","amount":-1.479335,"disclosure":"detailed"},
+        {"label":"Sueldos y salarios plantilla deportiva","category":"wages_squad","amount":-100.826491,"disclosure":"detailed"},
+        {"label":"Otros Sueldos, salarios y asimilados","category":"admin_general_expense","amount":-16.37518,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-4.870866,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-15.926377,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general_expense","amount":-0.431788,"disclosure":"detailed"},
+        {"label":"Desplazamientos","category":"match_organisation_expense","amount":-4.222025,"disclosure":"detailed"},
+        {
+          "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+          "category": "other_expenses",
+          "amount": 0.260109,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-10.763129,"disclosure":"detailed"},
+        {
+          "label": "Amortización del inmovilizado (activos fijos, sin fichajes por política de cantera)",
+          "category": "depreciation",
+          "amount": -11.089739,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":2.391898,"asset_sales":0,"net_interest":-0.476968,"tax":-0.711651,"gross_debt":0,"cash":46.086948},
+      "official_totals": {"revenue":171.509353,"expenses":165.731896,"net_result":6.980736}
+    }
+  ],
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

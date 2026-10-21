@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "degraafschap-nl",
+    "name": "Betaald Voetbal De Graafschap B.V.",
+    "display_name": "De Graafschap",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "degraafschap-nl-wf-src-betaald-voetbal-de-graafschap-b-v-publicatierapport-2021-2022",
+      "club_id": "degraafschap-nl",
+      "title": "Betaald Voetbal De Graafschap B.V. — wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "degraafschap-nl-wf-src-betaald-voetbal-de-graafschap-b-v-publicatierapport-2021-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Netto-omzet","category":"lump_football_operations","amount":8.272005,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":0.05146,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lonen en salarissen","category":"wages_squad","amount":-3.492133,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"wages_squad","amount":-0.610169,"disclosure":"aggregated"},
+        {"label":"Pensioenlasten","category":"wages_squad","amount":-0.084659,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.261379,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-4.324265,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.035869,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":8.323465,"expenses":8.772605,"net_result":-0.485009},
+      "adjustments": {
+        "extra_rows": [{"label":"Rentelasten en soortgelijke kosten","amount":-0.035869},{"label":"Belastingen","amount":null}],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":8.272005,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

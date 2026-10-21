@@ -20,7 +20,7 @@ completas en Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2023-24.md
 y liverpool-group-accounts-2024-25.md.
 
 Cifras en LIBRAS ESTERLINAS (GBP) millones NATIVOS, con signo (revenue
-positivo, expense negativo), mismo shape que data/ar/river-data.js. GBP es
+positivo, expense negativo), mismo shape que data/ar/river-ar-data.js. GBP es
 moneda NUEVA para el sitio (no existe todavía en data/currency-map.js): por
 pedido explícito de esta sesión NO se agregó esa entrada ni se tocó ese
 archivo, así que cada año usa fxRef ('GBP@2024-05-31'/'GBP@2025-05-31') en
@@ -308,6 +308,6 @@ que riverPresupuestoOverlayByYear/racingPresupuestoOverlayByYear.
 Mercado de pases / Resultados deportivos / Títulos: sin datos cargados en
 esta sesión (fuera de alcance de la tarea: onboardear los 2 ejercicios
 financieros). Arrays vacíos, mismo patrón que un club recién onboardeado sin
-esta info todavía (ver instituto-data.js primer registro en
+esta info todavía (ver instituto-ar-data.js primer registro en
 CLUB_GENERIC_DATA para el precedente de arrays vacíos).
 ```

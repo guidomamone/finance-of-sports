@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "fredericia-dk",
+    "name": "Fodbold Club Fredericia 1991",
+    "display_name": "FC Fredericia",
+    "country": "DK",
+    "reporting_currency": "DKK",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "fredericia-dk-aarsrapport-2019",
+      "club_id": "fredericia-dk",
+      "title": "Fodbold Club Fredericia 1991 ApS — Årsrapport 2019 (1.1.2019-31.12.2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fredericia-dk-aarsrapport-2020-12-31",
+      "club_id": "fredericia-dk",
+      "title": "Fodbold Club Fredericia 1991 — aarsrapport-2020-12-31 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Morten Rahbek Hansen (formand)","first_year":2019,"last_year":2019}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "DKK",
+      "source_id": "fredericia-dk-aarsrapport-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"DKK@2019-12-31"},
+      "revenue": [{"label":"Nettoomsætning","category":"lump_football_operations","amount":13.783959,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Omkostninger til råvarer og hjælpematerialer","category":"other_expenses","amount":-0.427011,"disclosure":"aggregated"},
+        {"label":"Andre eksterne omkostninger","category":"other_expenses","amount":-4.68689,"disclosure":"aggregated"},
+        {"label":"Personaleomkostninger","category":"wages_squad","amount":-9.875023,"disclosure":"aggregated"},
+        {"label":"Af- og nedskrivninger af materielle anlægsaktiver","category":"depreciation","amount":-0.039377,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.149297,"tax":0,"gross_debt":4.905334,"cash":1.182138},
+      "official_totals": {"revenue":13.783959,"expenses":15.028301,"net_result":-1.393639}
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-12-31",
+      "currency": "DKK",
+      "source_id": "fredericia-dk-aarsrapport-2020-12-31",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2020-12-31"},
+      "revenue": [{"label":"Bruttofortjeneste","category":"lump_football_operations","amount":10.952864,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Lønninger","category":"wages_squad","amount":-8.798576,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"wages_squad","amount":-0.357736,"disclosure":"aggregated"},
+        {"label":"Andre omkostninger til social sikring","category":"wages_squad","amount":-0.18591,"disclosure":"aggregated"},
+        {"label":"Andre personaleomkostninger","category":"wages_squad","amount":-0.697424,"disclosure":"aggregated"},
+        {"label":"Af- og nedskrivninger af materielle anlægsaktiver","category":"depreciation","amount":-0.048686,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.169382,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":10.952864,"expenses":10.088332,"net_result":0.69515},
+      "adjustments": {
+        "extra_rows": [{"label":"Finansielle omkostninger","amount":-0.169382},{"label":"Skat af årets resultat","amount":0}],
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":10.952864,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

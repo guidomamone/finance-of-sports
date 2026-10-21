@@ -1,0 +1,1267 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "racing-ar",
+    "name": "Racing Club",
+    "display_name": "Racing Club",
+    "country": "AR",
+    "reporting_currency": "ARS",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "racing-ar-presupuesto-2025-26-prensa",
+      "club_id": "racing-ar",
+      "title": "Cobertura de prensa del presupuesto económico-financiero de Racing, julio 2025 a junio 2026",
+      "type": "press_coverage_of_assembly",
+      "reliability": "secondary_press",
+      "url": "https://x.com/Sacostaracing/status/1944855768127431049",
+      "public_note": "No es el documento del club, sino la cobertura de prensa del resumen presentado en asamblea. Los rubros vienen agrupados de forma más gruesa que en un presupuesto oficial."
+    },
+    {
+      "id": "racing-ar-placeholder",
+      "club_id": "racing-ar",
+      "title": "Placeholder (ya no se usa, ver racing-ar-balance-2023-24/2024-25/racing-ar-presupuesto-2025-26)",
+      "type": "estimate_placeholder",
+      "reliability": "placeholder",
+      "public_note": "No es un documento: son números de prueba, puestos para diseñar el sitio mientras se consiguen los balances reales de esos ejercicios."
+    },
+    {
+      "id": "racing-ar-balance-2009",
+      "club_id": "racing-ar",
+      "title": "Estado de Recursos y Gastos (balance auditado), Ejercicio N°107, 1°/11/2008 al 31/10/2009",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2009.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2010",
+      "club_id": "racing-ar",
+      "title": "Estado de Recursos y Gastos (balance auditado), Ejercicio N°108, 1°/11/2009 al 31/10/2010",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2010.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2011",
+      "club_id": "racing-ar",
+      "title": "Estado de Recursos y Gastos (balance auditado), Ejercicio N°109, 1°/11/2010 al 31/10/2011",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2011.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2012",
+      "club_id": "racing-ar",
+      "title": "Memoria y Balance (balance auditado), Ejercicio N°110, 1°/11/2011 al 31/10/2012",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2012.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2013",
+      "club_id": "racing-ar",
+      "title": "Memoria y Balance (balance auditado), Ejercicio N°111, 1°/11/2012 al 31/10/2013",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2013.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2014",
+      "club_id": "racing-ar",
+      "title": "Memoria y Balance (balance auditado), Ejercicio N°112 (irregular de 10 meses), 1°/11/2013 al 31/8/2014",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2014.pdf"
+    },
+    {
+      "id": "racing-ar-presupuesto-2013-14",
+      "club_id": "racing-ar",
+      "title": "Presupuesto Financiero, Ejercicio 2013/2014 (1°/9/2013 al 31/8/2014)",
+      "type": "official_budget",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/presupuesto2013-14.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2014-15",
+      "club_id": "racing-ar",
+      "title": "Memoria y Balance (balance auditado), Ejercicio N°113, 1°/9/2014 al 31/8/2015",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2015.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2017",
+      "club_id": "racing-ar",
+      "title": "Memoria y Balance (balance auditado), Ejercicio N°115, 1°/9/2016 al 31/8/2017",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2017.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2016",
+      "club_id": "racing-ar",
+      "title": "Memoria y Balance (balance auditado), Ejercicio N°114, 1°/9/2015 al 31/8/2016",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2016.pdf"
+    },
+    {
+      "id": "racing-ar-presupuesto-2015-16",
+      "club_id": "racing-ar",
+      "title": "Presupuesto Financiero, Ejercicio 2015/2016 (1°/9/2015 al 31/8/2016)",
+      "type": "official_budget",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/presupuesto2015-16.pdf"
+    },
+    {
+      "id": "racing-ar-presupuesto-2017-18",
+      "club_id": "racing-ar",
+      "title": "Presupuesto Financiero, Ejercicio 2017/2018 (1°/9/2017 al 31/8/2018)",
+      "type": "official_budget",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/presupuesto2017-18.pdf"
+    },
+    {
+      "id": "racing-ar-presupuesto-2018-19",
+      "club_id": "racing-ar",
+      "title": "Presupuesto Financiero de Recursos y Gastos, Ejercicio 2018/2019 (1°/9/2018 al 31/8/2019)",
+      "type": "official_budget",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/presupuesto2018-19.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2018",
+      "club_id": "racing-ar",
+      "title": "Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°116, 1°/9/2017 al 31/8/2018",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2018.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2019-20",
+      "club_id": "racing-ar",
+      "title": "Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°118, 1°/9/2019 al 31/8/2020",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2019-20.pdf"
+    },
+    {
+      "id": "racing-ar-presupuesto-2019-20",
+      "club_id": "racing-ar",
+      "title": "Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2019/2020 (1°/9/2019 al 31/8/2020)",
+      "type": "official_budget",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/presupuesto2019-20.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2021",
+      "club_id": "racing-ar",
+      "title": "Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°119 (irregular de 10 meses), 1°/9/2020 al 30/6/2021",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2021.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2023-24",
+      "club_id": "racing-ar",
+      "title": "Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°122, 1°/7/2023 al 30/6/2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2024.pdf"
+    },
+    {
+      "id": "racing-ar-balance-2024-25",
+      "club_id": "racing-ar",
+      "title": "Estado de Recursos y Gastos + Estado de Situación Patrimonial (balance auditado), Ejercicio N°123, 1°/7/2024 al 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/balance2025.pdf"
+    },
+    {
+      "id": "racing-ar-presupuesto-2025-26",
+      "club_id": "racing-ar",
+      "title": "Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2025/2026 (1°/7/2025 al 30/6/2026)",
+      "type": "official_budget",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/presupuesto-2025-26.pdf"
+    },
+    {
+      "id": "racing-ar-presupuesto-2026-27",
+      "club_id": "racing-ar",
+      "title": "Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2026/2027 (1°/7/2026 al 30/6/2027)",
+      "type": "official_budget",
+      "reliability": "primary",
+      "url": "https://www.racingclub.com.ar/informes/presupuesto-2026-27.pdf"
+    }
+  ],
+  "management": [
+    {"id":"milito","name":"Milito (2024-actual)","first_year":2025,"last_year":2027},
+    {"id":"blanco","name":"Blanco (2013-2024)","first_year":2014,"last_year":2024}
+  ],
+  "members": 86529,
+  "years": [
+    {
+      "fiscal_year": 2009,
+      "period_end": "2009-06-30",
+      "currency": "USD",
+      "source_id": "racing-ar-balance-2009",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":3.82,"source":"market_approx"},
+      "revenue": [
+        {"label":"Cuotas sociales","category":"member_dues","amount":2.001,"disclosure":"detailed"},
+        {"label":"Televisación","category":"broadcasting","amount":3.805,"disclosure":"detailed"},
+        {"label":"Campeonatos oficiales","category":"matchday_competition","amount":1.787,"disclosure":"detailed"},
+        {"label":"Otros torneos","category":"matchday_competition","amount":0.124,"disclosure":"detailed"},
+        {"label":"Ingresos alquiler","category":"other_income","amount":0.132,"disclosure":"detailed"},
+        {"label":"Ingresos publicidad","category":"sponsorship_commercial","amount":1.429,"disclosure":"detailed"},
+        {"label":"Otros ingresos diversos","category":"other_income","amount":0.131,"disclosure":"detailed"},
+        {"label":"Otros ingresos deportivos","category":"other_income","amount":0.19,"disclosure":"detailed"},
+        {"label":"Transferencia de jugadores","category":"player_sales","amount":10.587,"disclosure":"detailed"},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":0.132,"disclosure":"detailed"},
+        {"label":"Ingresos colegio","category":"education","amount":0.155,"disclosure":"detailed"},
+        {"label":"Desafectación de previsiones y provisiones (extraordinario)","category":"exceptional_items","amount":2.355,"disclosure":"detailed"},
+        {"label":"Condonaciones (extraordinario)","category":"exceptional_items","amount":0.053,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos del personal","category":"wages_squad","amount":-3.746,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-0.592,"disclosure":"detailed"},
+        {"label":"Fútbol profesional","category":"wages_squad","amount":-6.499,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-0.995,"disclosure":"detailed"},
+        {"label":"Televisión AFA","category":"admin_general_expense","amount":-0.215,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y sociales","category":"youth_other_sports_expense","amount":-0.632,"disclosure":"detailed"},
+        {"label":"Honorarios órgano fiduciario","category":"admin_general_expense","amount":-0.008,"disclosure":"detailed"},
+        {"label":"Honorarios y otras contribuciones","category":"admin_general_expense","amount":-0.239,"disclosure":"detailed"},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-0.318,"disclosure":"detailed"},
+        {"label":"Sellados, multas y gastos bancarios","category":"admin_general_expense","amount":-0.068,"disclosure":"detailed"},
+        {"label":"Colegio","category":"education_expense","amount":-0.251,"disclosure":"detailed"},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-0.491,"disclosure":"detailed"},
+        {"label":"Costo transferencia de jugadores","category":"player_amortisation","amount":-1.506,"disclosure":"detailed"},
+        {"label":"Amortizaciones de bienes de uso","category":"depreciation","amount":-0.259,"disclosure":"detailed"},
+        {"label":"Previsiones / otras amortizaciones (cargos extraordinarios)","category":"other_amortisation","amount":-6.316,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.042,"tax":0,"gross_debt":18.393,"cash":1.993},
+      "official_totals": {"revenue":22.880864,"expenses":null,"net_result":0.703439}
+    },
+    {
+      "fiscal_year": 2010,
+      "period_end": "2010-06-30",
+      "currency": "USD",
+      "source_id": "racing-ar-balance-2010",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":3.98,"source":"market_approx"},
+      "revenue": [
+        {"label":"Cuotas sociales","category":"member_dues","amount":3.296,"disclosure":"detailed"},
+        {"label":"Televisación","category":"broadcasting","amount":5.965,"disclosure":"detailed"},
+        {"label":"Campeonatos oficiales","category":"matchday_competition","amount":1.35,"disclosure":"detailed"},
+        {"label":"Otros torneos","category":"matchday_competition","amount":0.132,"disclosure":"detailed"},
+        {"label":"Ingresos alquiler","category":"other_income","amount":0.221,"disclosure":"detailed"},
+        {"label":"Ingresos publicidad","category":"sponsorship_commercial","amount":2.573,"disclosure":"detailed"},
+        {"label":"Otros ingresos diversos","category":"other_income","amount":1.622,"disclosure":"detailed"},
+        {"label":"Otros ingresos deportivos","category":"other_income","amount":0.138,"disclosure":"detailed"},
+        {"label":"Transferencia de jugadores","category":"player_sales","amount":2.549,"disclosure":"detailed"},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":0.137,"disclosure":"detailed"},
+        {"label":"Ingresos colegio","category":"education","amount":0.343,"disclosure":"detailed"},
+        {"label":"Desafectación de previsiones (extraordinario)","category":"exceptional_items","amount":0.093,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos del personal","category":"wages_squad","amount":-5.545,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-0.684,"disclosure":"detailed"},
+        {"label":"Fútbol profesional","category":"wages_squad","amount":-6.786,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-1.191,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y sociales","category":"youth_other_sports_expense","amount":-1.735,"disclosure":"detailed"},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-0.41,"disclosure":"detailed"},
+        {"label":"Sellados, multas y gastos bancarios","category":"admin_general_expense","amount":-0.124,"disclosure":"detailed"},
+        {"label":"Colegio","category":"education_expense","amount":-0.043,"disclosure":"detailed"},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-0.13,"disclosure":"detailed"},
+        {"label":"Costo transferencia de jugadores","category":"player_amortisation","amount":-0.167,"disclosure":"detailed"},
+        {"label":"Amortizaciones de bienes de uso","category":"depreciation","amount":-0.303,"disclosure":"detailed"},
+        {"label":"Previsiones / otras amortizaciones (cargos extraordinarios)","category":"other_amortisation","amount":-3.128,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.612,"tax":0,"gross_debt":26.459,"cash":0.713},
+      "official_totals": {"revenue":18.418835,"expenses":null,"net_result":-2.440733}
+    },
+    {
+      "fiscal_year": 2011,
+      "period_end": "2011-06-30",
+      "currency": "USD",
+      "source_id": "racing-ar-balance-2011",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":4.27,"source":"market_approx"},
+      "revenue": [
+        {"label":"Cuotas sociales","category":"member_dues","amount":5.671,"disclosure":"detailed"},
+        {"label":"Televisación","category":"broadcasting","amount":5.699,"disclosure":"detailed"},
+        {"label":"Campeonatos oficiales","category":"matchday_competition","amount":1.943,"disclosure":"detailed"},
+        {"label":"Otros torneos","category":"matchday_competition","amount":0.197,"disclosure":"detailed"},
+        {"label":"Ingresos alquiler","category":"other_income","amount":0.159,"disclosure":"detailed"},
+        {"label":"Ingresos publicidad","category":"sponsorship_commercial","amount":2.985,"disclosure":"detailed"},
+        {"label":"Otros ingresos diversos","category":"other_income","amount":2.997,"disclosure":"detailed"},
+        {"label":"Otros ingresos deportivos","category":"other_income","amount":0.158,"disclosure":"detailed"},
+        {"label":"Transferencia de jugadores","category":"player_sales","amount":4.844,"disclosure":"detailed"},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":0.151,"disclosure":"detailed"},
+        {"label":"Ingresos colegio","category":"education","amount":0.673,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos del personal","category":"wages_squad","amount":-6.939,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-1.117,"disclosure":"detailed"},
+        {"label":"Fútbol profesional","category":"wages_squad","amount":-7.077,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-1.128,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y sociales","category":"youth_other_sports_expense","amount":-2.279,"disclosure":"detailed"},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-0.255,"disclosure":"detailed"},
+        {"label":"Sellados, multas y gastos bancarios","category":"admin_general_expense","amount":-0.189,"disclosure":"detailed"},
+        {"label":"Colegio","category":"education_expense","amount":-0.041,"disclosure":"detailed"},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-0.185,"disclosure":"detailed"},
+        {"label":"Costo transferencia de jugadores","category":"player_amortisation","amount":-0.992,"disclosure":"detailed"},
+        {"label":"Amortizaciones de bienes de uso","category":"depreciation","amount":-0.316,"disclosure":"detailed"},
+        {"label":"Previsiones / otras amortizaciones (cargos extraordinarios)","category":"other_amortisation","amount":-3.954,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.942,"tax":0,"gross_debt":24.395,"cash":0.542},
+      "official_totals": {"revenue":25.475358,"expenses":null,"net_result":0.062577}
+    },
+    {
+      "fiscal_year": 2012,
+      "period_end": "2012-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2012",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":4.726,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":27.908682},
+        {"label":"Televisación / Televisión AFA","category":"broadcasting","amount":30.610592},
+        {"label":"Campeonatos Oficiales","category":"matchday_competition","amount":7.573676},
+        {"label":"Otros Torneos","category":"matchday_competition","amount":4.441797},
+        {"label":"Ingresos Alquiler","category":"other_income","amount":1.158378},
+        {"label":"Ingresos Publicidad","category":"sponsorship_commercial","amount":16.329828},
+        {"label":"Otros Ingresos Diversos","category":"other_income","amount":26.4949},
+        {"label":"Otros Ingresos Deportivos","category":"other_income","amount":0.992412},
+        {"label":"Transferencia de Jugadores","category":"player_sales","amount":64.297016},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":0.760321},
+        {"label":"Ingresos Colegio","category":"education","amount":3.224299},
+        {"label":"Desafectación de Previsiones y Provisiones (extraordinario)","category":"exceptional_items","amount":1}
+      ],
+      "expenses": [
+        {"label":"Sueldos del Personal","category":"wages_squad","amount":-34.882106},
+        {"label":"Cargas Sociales","category":"wages_squad","amount":-5.751097},
+        {"label":"Fútbol Profesional","category":"wages_squad","amount":-36.097682},
+        {"label":"Organización de Partidos","category":"match_organisation_expense","amount":-6.173585},
+        {"label":"Grales. Actividades Deportivas / Soc.","category":"youth_other_sports_expense","amount":-11.28532},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-1.365491},
+        {"label":"Sellados, Multas, Gtos Bancarios","category":"admin_general_expense","amount":-1.252515},
+        {"label":"Colegio","category":"education_expense","amount":-0.19806},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-0.998536},
+        {"label":"Costo Transferencia de Jugadores","category":"player_amortisation","amount":-43.047765},
+        {"label":"Amortizaciones de Bienes de Uso","category":"depreciation","amount":-1.442073},
+        {"label":"Cargos Extraordinarios (Previsiones / Otras Amortizaciones)","category":"other_amortisation","amount":-24.292381}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.980936,"tax":0,"gross_debt":115.415132,"cash":1.275318},
+      "official_totals": {"revenue":184.791901,"expenses":166.786611,"net_result":17.024354}
+    },
+    {
+      "fiscal_year": 2013,
+      "period_end": "2013-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2013",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":5.872,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":41.980607},
+        {"label":"Televisación / Televisión AFA","category":"broadcasting","amount":32.510718},
+        {"label":"Campeonatos Oficiales","category":"matchday_competition","amount":5.723933},
+        {"label":"Otros Torneos","category":"matchday_competition","amount":2.039223},
+        {"label":"Ingresos Alquiler","category":"other_income","amount":0.538175},
+        {"label":"Ingresos Publicidad","category":"sponsorship_commercial","amount":22.911354},
+        {"label":"Otros Ingresos Diversos","category":"other_income","amount":13.504244},
+        {"label":"Otros Ingresos Deportivos","category":"other_income","amount":1.505573},
+        {"label":"Transferencia de Jugadores","category":"player_sales","amount":63.588544},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":0.6513},
+        {"label":"Ingresos Colegio","category":"education","amount":3.737282}
+      ],
+      "expenses": [
+        {"label":"Sueldos del Personal","category":"wages_squad","amount":-49.704889},
+        {"label":"Cargas Sociales","category":"wages_squad","amount":-8.046589},
+        {"label":"Fútbol Profesional","category":"wages_squad","amount":-55.534786},
+        {"label":"Organización de Partidos","category":"match_organisation_expense","amount":-6.815239},
+        {"label":"Grales. Actividades Deportivas / Soc.","category":"youth_other_sports_expense","amount":-13.000589},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-1.321368},
+        {"label":"Sellados, Multas, Gtos Bancarios","category":"admin_general_expense","amount":-0.331475},
+        {"label":"Colegio","category":"education_expense","amount":-1.153084},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-1.6175},
+        {"label":"Costo Transferencia de Jugadores","category":"player_amortisation","amount":-20.602181},
+        {"label":"Amortizaciones de Bienes de Uso","category":"depreciation","amount":-1.486409},
+        {"label":"Cargos Extraordinarios (Previsiones / Otras Amortizaciones)","category":"other_amortisation","amount":-18.016124}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.166121,"tax":0,"gross_debt":133.030906,"cash":4.180729},
+      "official_totals": {"revenue":188.690953,"expenses":177.630233,"net_result":11.22684}
+    },
+    {
+      "fiscal_year": 2014,
+      "period_end": "2014-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2014",
+      "report_type": "official_budget_and_balance",
+      "management_id": "blanco",
+      "fx": {"rate":8.307,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":46.449177},
+        {"label":"Televisación / Televisión AFA","category":"broadcasting","amount":42.021758},
+        {"label":"Campeonatos Oficiales","category":"matchday_competition","amount":7.348189},
+        {"label":"Otros Torneos","category":"matchday_competition","amount":1.61451},
+        {"label":"Ingresos Alquiler","category":"other_income","amount":0.868263},
+        {"label":"Ingresos Publicidad","category":"sponsorship_commercial","amount":23.904721},
+        {"label":"Otros Ingresos Diversos","category":"other_income","amount":36.812116},
+        {"label":"Otros Ingresos Deportivos","category":"other_income","amount":1.522769},
+        {"label":"Transferencia de Jugadores","category":"player_sales","amount":136.156527},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":0.805942},
+        {"label":"Ingresos Colegio","category":"education","amount":4.127896},
+        {"label":"Desafectación de Previsiones y Provisiones (extraordinario)","category":"exceptional_items","amount":1}
+      ],
+      "expenses": [
+        {"label":"Sueldos del Personal","category":"wages_squad","amount":-56.424777},
+        {"label":"Cargas Sociales","category":"wages_squad","amount":-8.983527},
+        {"label":"Fútbol Profesional","category":"wages_squad","amount":-50.750419},
+        {"label":"Organización de Partidos","category":"match_organisation_expense","amount":-13.329071},
+        {"label":"Grales. Actividades Deportivas / Soc.","category":"youth_other_sports_expense","amount":-17.848486},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-2.362159},
+        {"label":"Sellados, Multas, Gtos Bancarios","category":"admin_general_expense","amount":-4.507312},
+        {"label":"Colegio","category":"education_expense","amount":-0.370414},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-1.209085},
+        {"label":"Costo Transferencia de Jugadores","category":"player_amortisation","amount":-34.347235},
+        {"label":"Amortizaciones de Bienes de Uso","category":"depreciation","amount":-1.578112},
+        {"label":"Cargos Extraordinarios (Previsiones / Otras Amortizaciones)","category":"other_amortisation","amount":-26.435662}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":16.451126,"tax":0,"gross_debt":91.442572,"cash":4.696944},
+      "official_totals": {"revenue":302.631868,"expenses":218.146259,"net_result":100.936735}
+    },
+    {
+      "fiscal_year": 2015,
+      "period_end": "2015-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2014-15",
+      "report_type": "official_balance_sheet",
+      "management_id": "blanco",
+      "fx": {"rate":9.2,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":93.187267},
+        {"label":"Televisación / Televisión AFA","category":"broadcasting","amount":56.64832},
+        {"label":"Campeonatos Oficiales","category":"matchday_competition","amount":56.640384},
+        {"label":"Otros Torneos","category":"matchday_competition","amount":2.568669},
+        {"label":"Ingresos Alquiler","category":"other_income","amount":1.45723},
+        {"label":"Ingresos Publicidad","category":"sponsorship_commercial","amount":40.50538},
+        {"label":"Otros Ingresos Diversos","category":"other_income","amount":84.059113},
+        {"label":"Otros Ingresos Deportivos","category":"other_income","amount":3.448025},
+        {"label":"Transferencia de Jugadores","category":"player_sales","amount":83.417474},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":1.326368},
+        {"label":"Ingresos Colegio","category":"education","amount":7.056754}
+      ],
+      "expenses": [
+        {"label":"Sueldos del Personal","category":"wages_squad","amount":-88.805004},
+        {"label":"Cargas Sociales","category":"wages_squad","amount":-14.284452},
+        {"label":"Fútbol Profesional","category":"wages_squad","amount":-72.493181},
+        {"label":"Organización de Partidos","category":"match_organisation_expense","amount":-35.094389},
+        {"label":"Grales. Actividades Deportivas / Soc.","category":"youth_other_sports_expense","amount":-31.493115},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-9.084199},
+        {"label":"Sellados, Multas, Gtos Bancarios","category":"admin_general_expense","amount":-3.326824},
+        {"label":"Colegio","category":"education_expense","amount":-0.547052},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-1.644146},
+        {"label":"Costo Transferencia de Jugadores","category":"player_amortisation","amount":-53.26671},
+        {"label":"Amortizaciones de Bienes de Uso","category":"depreciation","amount":-1.683948},
+        {"label":"Cargos Extraordinarios (Previsiones / Otras Amortizaciones)","category":"other_amortisation","amount":-19.931642}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.884192,"tax":0,"gross_debt":65.098611,"cash":7.838386},
+      "official_totals": {"revenue":430.314984,"expenses":331.654662,"net_result":102.544513}
+    },
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2016",
+      "report_type": "official_budget_and_balance",
+      "management_id": "blanco",
+      "fx": {"rate":14.83,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":138.030177},
+        {"label":"Televisación / Televisión AFA","category":"broadcasting","amount":52.802659},
+        {"label":"Campeonatos Oficiales","category":"matchday_competition","amount":89.069294},
+        {"label":"Otros Torneos","category":"matchday_competition","amount":2.569939},
+        {"label":"Ingresos Alquiler","category":"other_income","amount":1.520788},
+        {"label":"Ingresos Publicidad","category":"sponsorship_commercial","amount":43.794391},
+        {"label":"Otros Ingresos Diversos","category":"other_income","amount":85.027196},
+        {"label":"Otros Ingresos Deportivos","category":"other_income","amount":12.372951},
+        {"label":"Transferencia de Jugadores","category":"player_sales","amount":175.030692},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":1.891514},
+        {"label":"Ingresos Colegio","category":"education","amount":9.858772}
+      ],
+      "expenses": [
+        {"label":"Sueldos del Personal","category":"wages_squad","amount":-112.639736},
+        {"label":"Cargas Sociales","category":"wages_squad","amount":-18.694347},
+        {"label":"Fútbol Profesional","category":"wages_squad","amount":-99.361355},
+        {"label":"Organización de Partidos","category":"match_organisation_expense","amount":-30.147936},
+        {"label":"Grales. Actividades Deportivas / Soc.","category":"youth_other_sports_expense","amount":-49.287058},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-5.121782},
+        {"label":"Sellados, Multas, Gtos Bancarios","category":"admin_general_expense","amount":-14.797764},
+        {"label":"Colegio","category":"education_expense","amount":-1.077987},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-2.845248},
+        {"label":"Costo Transferencia de Jugadores","category":"player_amortisation","amount":-19.501483},
+        {"label":"Depreciación","category":"depreciation","amount":-1.968198},
+        {"label":"Previsiones / Amortizaciones","category":"other_amortisation","amount":-86.210139}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":23.657963,"tax":0,"gross_debt":98.450187,"cash":42.030653},
+      "official_totals": {"revenue":611.968373,"expenses":441.653033,"net_result":193.973303}
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": "blanco",
+      "fx": {"rate":17.21,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":182.076763},
+        {"label":"Televisación / Televisión AFA","category":"broadcasting","amount":90.438829},
+        {"label":"Campeonatos Oficiales","category":"matchday_competition","amount":38.03978},
+        {"label":"Otros Torneos","category":"matchday_competition","amount":73.59285},
+        {"label":"Ingresos Alquiler","category":"other_income","amount":1.422611},
+        {"label":"Ingresos Publicidad","category":"sponsorship_commercial","amount":63.643015},
+        {"label":"Otros Ingresos Diversos","category":"other_income","amount":72.825306},
+        {"label":"Otros Ingresos Deportivos","category":"other_income","amount":58.202349},
+        {"label":"Transferencia de Jugadores","category":"player_sales","amount":206.087866},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":5.181522},
+        {"label":"Ingresos Colegio","category":"education","amount":13.322324}
+      ],
+      "expenses": [
+        {"label":"Sueldos del Personal","category":"wages_squad","amount":-174.356185},
+        {"label":"Cargas Sociales","category":"wages_squad","amount":-24.647352},
+        {"label":"Fútbol Profesional","category":"wages_squad","amount":-139.564544},
+        {"label":"Organización de Partidos","category":"match_organisation_expense","amount":-22.15197},
+        {"label":"Actividades Deportivas y Sociales","category":"youth_other_sports_expense","amount":-67.837036},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-6.560212},
+        {"label":"Sellados, Multas y Gastos Bancarios","category":"admin_general_expense","amount":-24.037401},
+        {"label":"Colegio","category":"education_expense","amount":-1.41323},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-4.879757},
+        {"label":"Costo Transferencia de Jugadores","category":"player_amortisation","amount":-110.485332},
+        {"label":"Depreciaciones de Bienes de Uso","category":"depreciation","amount":-6.073853},
+        {"label":"Previsiones / Amortizaciones Intangibles","category":"other_amortisation","amount":-126.386082}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":37.720415,"tax":0,"gross_debt":198.933525,"cash":41.104353},
+      "official_totals": {"revenue":804.833215,"expenses":708.392954,"net_result":134.160676}
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2018",
+      "report_type": "official_budget_and_balance",
+      "management_id": "blanco",
+      "fx": {"rate":36.65,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":236.43391,"disclosure":"detailed"},
+        {"label":"Televisación / Televisión AFA","category":"broadcasting","amount":90.532228,"disclosure":"detailed"},
+        {"label":"Campeonatos Oficiales","category":"matchday_competition","amount":122.099684,"disclosure":"detailed"},
+        {"label":"Otros Torneos","category":"matchday_competition","amount":2.712848,"disclosure":"detailed"},
+        {"label":"Ingresos Alquiler","category":"other_income","amount":1.864879,"disclosure":"detailed"},
+        {"label":"Ingresos Publicidad","category":"sponsorship_commercial","amount":88.125372,"disclosure":"detailed"},
+        {"label":"Otros Ingresos Diversos","category":"other_income","amount":140.903954,"disclosure":"detailed"},
+        {"label":"Otros Ingresos Deportivos","category":"other_income","amount":109.042661,"disclosure":"detailed"},
+        {"label":"Transferencia de Jugadores","category":"player_sales","amount":970.845312,"disclosure":"detailed"},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":6.711866,"disclosure":"detailed"},
+        {"label":"Ingresos Colegio","category":"education","amount":20.546519,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos del personal","category":"wages_squad","amount":-238.067884,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-36.475037,"disclosure":"detailed"},
+        {"label":"Fútbol profesional","category":"wages_squad","amount":-351.203655,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-98.275268,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y sociales","category":"youth_other_sports_expense","amount":-97.925553,"disclosure":"detailed"},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-8.374754,"disclosure":"detailed"},
+        {"label":"Sellados, multas y gastos bancarios","category":"admin_general_expense","amount":-32.075059,"disclosure":"detailed"},
+        {"label":"Colegio","category":"education_expense","amount":-2.5705,"disclosure":"detailed"},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-9.166669,"disclosure":"detailed"},
+        {"label":"Costo transferencia de jugadores","category":"player_amortisation","amount":-218.891538,"disclosure":"detailed"},
+        {"label":"Depreciaciones de bienes de uso","category":"depreciation","amount":-7.775936,"disclosure":"detailed"},
+        {"label":"Previsiones / Amortizaciones intangibles","category":"other_amortisation","amount":-249.64599,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":177.149112,"tax":0,"gross_debt":458.94064,"cash":405.685775},
+      "official_totals": {"revenue":1789.819233,"expenses":1350.447843,"net_result":616.520502}
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-presupuesto-2018-19",
+      "report_type": "official_budget",
+      "management_id": "blanco",
+      "fx": {"rate":40,"source":"document_assumption"},
+      "revenue": [
+        {"label":"Campeonatos Oficiales SAF/AFA","category":"matchday_competition","amount":52},
+        {"label":"Comp. Oficiales Internacionales","category":"matchday_competition","amount":32.67},
+        {"label":"Otras Comp. y Partidos Amistosos","category":"matchday_competition","amount":3.73},
+        {"label":"Derechos de Retransmisión","category":"broadcasting","amount":137.154},
+        {"label":"Pub. y Esponsorización Futbol","category":"sponsorship_commercial","amount":100},
+        {"label":"Cesión de Jugadores (Transf. / Prést.)","category":"player_sales","amount":602.95},
+        {"label":"Ingresos por Prop. Industrial / Intelectual cedida en Explotación","category":"other_income","amount":10.96865},
+        {"label":"Cobranza de Ingresos de Otras Secciones Deportivas","category":"other_sports","amount":19},
+        {"label":"Cobranza de ingresos por Socios y Abonados","category":"member_dues","amount":404.494},
+        {"label":"Cobranza de Otros Ingresos Ordinarios","category":"other_income","amount":85.7},
+        {"label":"Cobranza de Rentas Financieras Ordinarias","category":"other_income","amount":91.96},
+        {"label":"Cobro de Subv., Donaciones y Legados","category":"other_income","amount":3.4},
+        {"label":"Otros Cobros de Ing. Fros","category":"other_income","amount":72}
+      ],
+      "expenses": [
+        {"label":"Gastos de Explotación del Estadio","category":"admin_general_expense","amount":-65.45},
+        {"label":"Participación en Camp. Oficiales SAF/AFA","category":"match_organisation_expense","amount":-46.7},
+        {"label":"Part. en Campeonatos Internacionales","category":"match_organisation_expense","amount":-25},
+        {"label":"Remuneraciones Plantel Deportivo (Incluido Cuerpo Técnico)","category":"wages_squad","amount":-154},
+        {"label":"Premios y Primas Plantel Deportivo","category":"wages_squad","amount":-177},
+        {"label":"Otros Gastos Dep. Futbol Profesional","category":"wages_squad","amount":-296.7},
+        {"label":"Gastos Fútbol Amateur","category":"youth_other_sports_expense","amount":-66},
+        {"label":"Pago de Gtos de Otras Secciones Dep.","category":"youth_other_sports_expense","amount":-28.6},
+        {"label":"Gerencias Operativas","category":"admin_general_expense","amount":-27.2},
+        {"label":"Departamentos Auxiliares - No Incluidos en (A)","category":"admin_general_expense","amount":-22},
+        {"label":"Gastos Generales de Administración","category":"admin_general_expense","amount":-54},
+        {"label":"Pago de Otros Gastos Ordinarios","category":"other_expenses","amount":-108.8},
+        {"label":"Pagos de Gastos Financieros","category":"admin_general_expense","amount":-2.4},
+        {"label":"Pagos por compra de Bienes de Uso","category":"other_expenses","amount":-120.5},
+        {"label":"Pago por compra de Activos Intangibles","category":"player_amortisation","amount":-415.333333},
+        {"label":"Pagos por Colocaciones Fras.","category":"other_expenses","amount":-46.2},
+        {"label":"Cancelación Efectiva de Pasivos","category":"other_expenses","amount":-100.76924}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1616.02665,"expenses":1756.652573}
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2019-20",
+      "report_type": "official_budget_and_balance",
+      "management_id": "blanco",
+      "fx": {"rate":73.98,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":485.007214,"disclosure":"detailed"},
+        {"label":"Televisación / Televisión AFA","category":"broadcasting","amount":290.569011,"disclosure":"detailed"},
+        {"label":"Campeonatos Oficiales","category":"matchday_competition","amount":180.471063,"disclosure":"detailed"},
+        {"label":"Otros Torneos","category":"matchday_competition","amount":11.400134,"disclosure":"detailed"},
+        {"label":"Ingresos Alquiler","category":"other_income","amount":4.120262,"disclosure":"detailed"},
+        {"label":"Ingresos Publicidad","category":"sponsorship_commercial","amount":240.140055,"disclosure":"detailed"},
+        {"label":"Otros Ingresos Diversos","category":"other_income","amount":283.705929,"disclosure":"detailed"},
+        {"label":"Otros Ingresos Deportivos","category":"other_income","amount":367.059521,"disclosure":"detailed"},
+        {"label":"Transferencia de Jugadores","category":"player_sales","amount":509.331575,"disclosure":"detailed"},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":11.957092,"disclosure":"detailed"},
+        {"label":"Ingresos Colegio","category":"education","amount":52.34112,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos del personal","category":"wages_squad","amount":-611.240429,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-71.370395,"disclosure":"detailed"},
+        {"label":"Fútbol profesional","category":"wages_squad","amount":-902.416706,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-62.397662,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y sociales","category":"youth_other_sports_expense","amount":-229.17414,"disclosure":"detailed"},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-14.227505,"disclosure":"detailed"},
+        {"label":"Sellados, multas y gastos bancarios","category":"admin_general_expense","amount":-29.062797,"disclosure":"detailed"},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-13.310389,"disclosure":"detailed"},
+        {"label":"Costo transferencia de jugadores","category":"player_amortisation","amount":-167.283017,"disclosure":"detailed"},
+        {"label":"Depreciaciones de bienes de uso","category":"depreciation","amount":-105.212746,"disclosure":"detailed"},
+        {"label":"Previsiones / Amortizaciones intangibles","category":"other_amortisation","amount":-735.0374,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":227.570638,"tax":0,"gross_debt":715.799969,"cash":585.611084},
+      "official_totals": {"revenue":2436.102976,"expenses":2940.733186,"net_result":-277.059572}
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2021",
+      "report_type": "official_balance_sheet",
+      "management_id": "blanco",
+      "fx": {"rate":95.52,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":444.73077,"disclosure":"detailed"},
+        {"label":"Televisación / Televisión AFA","category":"broadcasting","amount":294.387257,"disclosure":"detailed"},
+        {"label":"Campeonatos Oficiales","category":"matchday_competition","amount":579.451092,"disclosure":"detailed"},
+        {"label":"Otros Torneos","category":"matchday_competition","amount":0,"disclosure":"detailed"},
+        {"label":"Ingresos Alquiler","category":"other_income","amount":9.916097,"disclosure":"detailed"},
+        {"label":"Ingresos Publicidad","category":"sponsorship_commercial","amount":281.073459,"disclosure":"detailed"},
+        {"label":"Otros Ingresos Diversos","category":"other_income","amount":345.913034,"disclosure":"detailed"},
+        {"label":"Otros Ingresos Deportivos","category":"other_income","amount":469.722665,"disclosure":"detailed"},
+        {"label":"Transferencia de Jugadores","category":"player_sales","amount":855.871189,"disclosure":"detailed"},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":3.561719,"disclosure":"detailed"},
+        {"label":"Ingresos Colegio","category":"education","amount":50.935566,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos del personal","category":"wages_squad","amount":-588.846774,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-90.303914,"disclosure":"detailed"},
+        {"label":"Fútbol profesional","category":"wages_squad","amount":-1127.573095,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-77.158339,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y sociales","category":"youth_other_sports_expense","amount":-242.195045,"disclosure":"detailed"},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-15.785163,"disclosure":"detailed"},
+        {"label":"Sellados, multas y gastos bancarios","category":"admin_general_expense","amount":-39.157337,"disclosure":"detailed"},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-9.53966,"disclosure":"detailed"},
+        {"label":"Costo transferencia de jugadores","category":"player_amortisation","amount":-157.846153,"disclosure":"detailed"},
+        {"label":"Depreciaciones de bienes de uso","category":"depreciation","amount":-152.718471,"disclosure":"detailed"},
+        {"label":"Previsiones / Amortizaciones intangibles","category":"other_amortisation","amount":-903.322913,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":75.896098,"tax":0,"gross_debt":885.305109,"cash":1154.224649},
+      "official_totals": {"revenue":3335.562848,"expenses":3404.446864,"net_result":7.012082}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2023-24",
+      "report_type": "official_balance_sheet",
+      "management_id": "blanco",
+      "fx": {"rate":909,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas sociales","category":"member_dues","amount":11613.758662,"disclosure":"detailed"},
+        {"label":"Televisación","category":"broadcasting","amount":3098.596682,"disclosure":"detailed"},
+        {"label":"Campeonatos oficiales","category":"matchday_competition","amount":5841.305367,"disclosure":"detailed"},
+        {"label":"Ingresos alquiler","category":"other_income","amount":504.690564,"disclosure":"detailed"},
+        {"label":"Ingresos publicidad","category":"sponsorship_commercial","amount":4265.712955,"disclosure":"detailed"},
+        {"label":"Otros ingresos diversos","category":"other_income","amount":8519.14145,"disclosure":"detailed"},
+        {"label":"Otros ingresos deportivos","category":"other_income","amount":3942.938917,"disclosure":"detailed"},
+        {"label":"Transferencia de jugadores","category":"player_sales","amount":27684.959835,"disclosure":"detailed"},
+        {"label":"Ingresos colegio","category":"education","amount":896.608057,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos del personal","category":"wages_squad","amount":-8519.25827,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-1698.882389,"disclosure":"detailed"},
+        {"label":"Fútbol profesional","category":"wages_squad","amount":-24286.994971,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-2597.482802,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y sociales","category":"youth_other_sports_expense","amount":-7194.050178,"disclosure":"detailed"},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-261.225073,"disclosure":"detailed"},
+        {"label":"Sellados, multas y gastos bancarios","category":"admin_general_expense","amount":-1293.568672,"disclosure":"detailed"},
+        {"label":"Costo transferencia de jugadores","category":"player_amortisation","amount":-9995.727378,"disclosure":"detailed"},
+        {"label":"Depreciaciones de bienes de uso","category":"depreciation","amount":-2488.762976,"disclosure":"detailed"},
+        {"label":"Previsiones / Amortizaciones intangibles","category":"other_amortisation","amount":-20832.011983,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":6672.632331,"tax":0,"gross_debt":30889.883055,"cash":3854.010152},
+      "official_totals": {"revenue":66367.712489,"expenses":79167.964692,"net_result":-6127.619872}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-balance-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": "milito",
+      "fx": {"rate":1196,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas sociales","category":"member_dues","amount":20397.105338,"disclosure":"detailed"},
+        {"label":"Televisación","category":"broadcasting","amount":6494.232872,"disclosure":"detailed"},
+        {"label":"Campeonatos oficiales","category":"matchday_competition","amount":18773.606931,"disclosure":"detailed"},
+        {"label":"Ingresos alquiler","category":"other_income","amount":68.936162,"disclosure":"detailed"},
+        {"label":"Ingresos publicidad","category":"sponsorship_commercial","amount":5134.942754,"disclosure":"detailed"},
+        {"label":"Otros ingresos diversos","category":"other_income","amount":14849.103245,"disclosure":"detailed"},
+        {"label":"Otros ingresos deportivos","category":"other_income","amount":6557.543132,"disclosure":"detailed"},
+        {"label":"Transferencia de jugadores","category":"player_sales","amount":13515.889164,"disclosure":"detailed"},
+        {"label":"Ingresos Sede Villa del Parque","category":"other_income","amount":121.928016,"disclosure":"detailed"},
+        {"label":"Ingresos colegio","category":"education","amount":1486.329395,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos del personal","category":"wages_squad","amount":-15202.077398,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-3195.300296,"disclosure":"detailed"},
+        {"label":"Fútbol profesional","category":"wages_squad","amount":-27905.125653,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-5678.302707,"disclosure":"detailed"},
+        {"label":"Actividades deportivas y sociales","category":"youth_other_sports_expense","amount":-9290.650219,"disclosure":"detailed"},
+        {"label":"Mantenimiento","category":"admin_general_expense","amount":-350.733591,"disclosure":"detailed"},
+        {"label":"Sellados, multas y gastos bancarios","category":"admin_general_expense","amount":-1695.870575,"disclosure":"detailed"},
+        {"label":"Sede Villa del Parque","category":"admin_general_expense","amount":-1376.54867,"disclosure":"detailed"},
+        {"label":"Costo transferencia de jugadores","category":"player_amortisation","amount":-2533.458758,"disclosure":"detailed"},
+        {"label":"Depreciaciones de bienes de uso","category":"depreciation","amount":-3152.752679,"disclosure":"detailed"},
+        {"label":"Previsiones / Amortizaciones intangibles","category":"other_amortisation","amount":-20912.793752,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3715.545468,"tax":0,"gross_debt":48210.858049,"cash":9738.609524},
+      "official_totals": {"revenue":87399.617009,"expenses":91293.614298,"net_result":-178.451821}
+    },
+    {
+      "fiscal_year": 2026,
+      "period_end": "2026-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-presupuesto-2025-26",
+      "report_type": "official_budget",
+      "management_id": "milito",
+      "fx": {"rate":1438,"source":"document_assumption"},
+      "revenue": [
+        {"label":"Cobranzas por venta de entradas","category":"matchday_competition","amount":3325.230307,"disclosure":"detailed"},
+        {"label":"Cobranzas por participación","category":"competition_bonus","amount":7973.298,"disclosure":"detailed"},
+        {"label":"Cobranzas por venta de abonos estadio","category":"season_tickets","amount":8906.278442,"disclosure":"detailed"},
+        {"label":"Cobros por retransmisión y derechos de TV","category":"broadcasting","amount":7470.240603,"disclosure":"detailed"},
+        {"label":"Cobros por marketing y publicidad","category":"sponsorship_commercial","amount":13712.624218,"disclosure":"detailed"},
+        {"label":"Cobros por ventas de jugadores","category":"player_sales","amount":32475.995078,"disclosure":"detailed"},
+        {"label":"Cobros por préstamos de jugadores","category":"player_sales","amount":387.4,"disclosure":"detailed"},
+        {"label":"Cobros de derechos de formación y mecanismo de solidaridad","category":"player_sales","amount":1152.906397,"disclosure":"detailed"},
+        {"label":"Cobros de otros recursos de gestión por fútbol","category":"other_income","amount":14863.072662,"disclosure":"detailed"},
+        {"label":"Ingresos sociales","category":"member_dues","amount":23789.84136,"disclosure":"detailed"},
+        {"label":"Cobranzas de otras actividades deportivas","category":"other_sports","amount":599.188852,"disclosure":"detailed"},
+        {"label":"Cobranzas de instituciones educativas","category":"education","amount":1690.601585,"disclosure":"detailed"},
+        {
+          "label": "Otros ingresos",
+          "category": "other_income",
+          "amount": 6950.531967,
+          "disclosure": "detailed",
+          "items": [["Cobros de otros recursos ordinarios",6430.531967],["Cobros de rentas financieras",520]]
+        }
+      ],
+      "expenses": [
+        {"label":"Pago de gastos explotación del estadio","category":"admin_general_expense","amount":-6290.935116,"disclosure":"detailed"},
+        {"label":"Pago de gastos por participación","category":"match_organisation_expense","amount":-7653.273667,"disclosure":"detailed"},
+        {"label":"Pago de remuneraciones plantel profesional","category":"wages_squad","amount":-27953.696292,"disclosure":"detailed"},
+        {"label":"Pago de remuneraciones cuerpo técnico","category":"wages_squad","amount":-4743.41219,"disclosure":"detailed"},
+        {"label":"Pago de otros gastos deportivos fútbol profesional","category":"wages_squad","amount":-10251.057047,"disclosure":"detailed"},
+        {"label":"Pago por adquisición de jugadores","category":"player_amortisation","amount":-19010.56705,"disclosure":"detailed"},
+        {"label":"Pago de gastos por compraventa de jugadores","category":"other_expenses","amount":-9719.521189,"disclosure":"detailed"},
+        {"label":"Pago de gastos fútbol amateur (activable)","category":"youth_other_sports_expense","amount":-5260.525946,"disclosure":"detailed"},
+        {"label":"Pago de gastos de comercialización","category":"admin_general_expense","amount":-7069.748476,"disclosure":"detailed"},
+        {"label":"Pago de remuneraciones otras actividades deportivas","category":"youth_other_sports_expense","amount":-894.565507,"disclosure":"detailed"},
+        {"label":"Pago de gastos otras actividades deportivas","category":"youth_other_sports_expense","amount":-572.029391,"disclosure":"detailed"},
+        {"label":"Pago de remuneraciones de instituciones educativas","category":"education_expense","amount":-2743.247721,"disclosure":"detailed"},
+        {"label":"Pago de gastos de instituciones educativas","category":"education_expense","amount":-523.134788,"disclosure":"detailed"},
+        {
+          "label": "Otros egresos",
+          "category": "admin_general_expense",
+          "amount": -17160.514764,
+          "disclosure": "detailed",
+          "items": [
+            ["Pago de gastos de administración",-12318.896759],
+            ["Pago de otros gastos ordinarios",-436.882116],
+            ["Pago de impuestos, tasas y contribuciones",-2427.991586],
+            ["Pago de gastos financieros",-1976.744303]
+          ]
+        },
+        {
+          "label": "Egresos extraordinarios (compra de bienes de uso y mejoras, principalmente)",
+          "category": "other_expenses",
+          "amount": -7014.228299,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":123297.209473,"expenses":126860.457441}
+    },
+    {
+      "fiscal_year": 2027,
+      "period_end": "2027-06-30",
+      "currency": "ARS",
+      "source_id": "racing-ar-presupuesto-2026-27",
+      "report_type": "official_budget",
+      "management_id": "milito",
+      "fx": {"rate":1687.5,"source":"document_assumption"},
+      "revenue": [
+        {"label":"Cobranzas por venta de entradas","category":"matchday_competition","amount":4456.387863,"disclosure":"detailed"},
+        {"label":"Cobranzas por participación","category":"competition_bonus","amount":2646,"disclosure":"detailed"},
+        {"label":"Cobranzas por venta de abonos estadio","category":"season_tickets","amount":11902.898203,"disclosure":"detailed"},
+        {"label":"Cobros por retransmisión y derechos de TV","category":"broadcasting","amount":7003.015314,"disclosure":"detailed"},
+        {"label":"Cobros por marketing y publicidad","category":"sponsorship_commercial","amount":12914.651805,"disclosure":"detailed"},
+        {"label":"Cobros por ventas de jugadores","category":"player_sales","amount":38271.865599,"disclosure":"detailed"},
+        {"label":"Cobros por préstamos de jugadores","category":"player_sales","amount":504.875,"disclosure":"detailed"},
+        {"label":"Cobros de derechos de formación y mecanismo de solidaridad","category":"player_sales","amount":1551.494,"disclosure":"detailed"},
+        {"label":"Cobros de otros recursos de gestión por fútbol","category":"other_income","amount":13778.918428,"disclosure":"detailed"},
+        {"label":"Ingresos sociales","category":"member_dues","amount":36786.392109,"disclosure":"detailed"},
+        {"label":"Cobranzas de otras actividades deportivas","category":"other_sports","amount":1151.782091,"disclosure":"detailed"},
+        {"label":"Cobranzas de instituciones educativas","category":"education","amount":3207.548462,"disclosure":"detailed"},
+        {
+          "label": "Otros ingresos",
+          "category": "other_income",
+          "amount": 8942.65347,
+          "disclosure": "detailed",
+          "items": [["Cobros de otros recursos ordinarios",8664.10347],["Cobros de rentas financieras",278.55]]
+        }
+      ],
+      "expenses": [
+        {"label":"Pago de gastos explotación del estadio","category":"admin_general_expense","amount":-5309.807479,"disclosure":"detailed"},
+        {"label":"Pago de gastos por participación","category":"match_organisation_expense","amount":-7340.691293,"disclosure":"detailed"},
+        {"label":"Pago de remuneraciones plantel profesional","category":"wages_squad","amount":-28190.431748,"disclosure":"detailed"},
+        {"label":"Pago de remuneraciones cuerpo técnico","category":"wages_squad","amount":-4191.06686,"disclosure":"detailed"},
+        {"label":"Pago de otros gastos deportivos fútbol profesional","category":"wages_squad","amount":-12923.34615,"disclosure":"detailed"},
+        {"label":"Pago por adquisición de jugadores","category":"player_amortisation","amount":-19318.430324,"disclosure":"detailed"},
+        {"label":"Pago de gastos por compraventa de jugadores","category":"other_expenses","amount":-14335.322189,"disclosure":"detailed"},
+        {"label":"Pago de gastos fútbol amateur (activable)","category":"youth_other_sports_expense","amount":-5462.113805,"disclosure":"detailed"},
+        {"label":"Pago de gastos de comercialización","category":"admin_general_expense","amount":-8478.900817,"disclosure":"detailed"},
+        {"label":"Pago de remuneraciones otras actividades deportivas","category":"youth_other_sports_expense","amount":-389.374038,"disclosure":"detailed"},
+        {"label":"Pago de gastos otras actividades deportivas","category":"youth_other_sports_expense","amount":-1970.613103,"disclosure":"detailed"},
+        {"label":"Pago de remuneraciones de instituciones educativas","category":"education_expense","amount":-2789.252081,"disclosure":"detailed"},
+        {"label":"Pago de gastos de instituciones educativas","category":"education_expense","amount":-832.01553,"disclosure":"detailed"},
+        {
+          "label": "Otros egresos",
+          "category": "admin_general_expense",
+          "amount": -19998.655736,
+          "disclosure": "detailed",
+          "items": [
+            ["Pago de gastos de administración",-15375.16962],
+            ["Pago de otros gastos ordinarios",-519.097351],
+            ["Pago de impuestos, tasas y contribuciones",-2157.3],
+            ["Pago de gastos financieros",-1947.088765]
+          ]
+        },
+        {
+          "label": "Egresos extraordinarios (compra de bienes de uso y mejoras, principalmente)",
+          "category": "other_expenses",
+          "amount": -10541.726845,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":143118.482343,"expenses":142071.747998}
+    }
+  ],
+  "budget_overlay": {
+    "2014": {
+      "currency": "ARS",
+      "fx": {"rate":6,"source":"document_assumption"},
+      "source_id": "racing-ar-presupuesto-2013-14",
+      "revenue": [
+        {"label":"Campeonatos Oficiales AFA","category":"matchday_competition","amount":8.81},
+        {"label":"Otras Comp. y Partidos Amistosos","category":"matchday_competition","amount":2.4},
+        {"label":"Derechos de Retransmisión","category":"broadcasting","amount":35.2},
+        {"label":"Pub. y Esponsorización Futbol","category":"sponsorship_commercial","amount":23.166673},
+        {"label":"Otros Ingresos por alquiler de cancha","category":"other_income","amount":0.27},
+        {"label":"Cesión de Jugadores (Transf. / Prést.)","category":"player_sales","amount":85.802408},
+        {"label":"Ingresos por Prop. Industrial / Intelectual cedida en Explotación","category":"other_income","amount":6.125},
+        {"label":"Otros Ingresos de Gestión por Futbol","category":"other_income","amount":11.79},
+        {"label":"Cobranza de Ingresos de Otras Secciones Deportivas","category":"other_sports","amount":2.59},
+        {"label":"Ingresos por Socios","category":"member_dues","amount":47.3},
+        {"label":"Ingresos Varios Sede","category":"other_income","amount":4.95375},
+        {"label":"Ingresos por Merchandising","category":"sponsorship_commercial","amount":9.35},
+        {"label":"Cobro de Subv., Donaciones y Legados","category":"other_income","amount":5.994},
+        {"label":"Otros cobros de Ing. Extraordinarios","category":"other_income","amount":0.6}
+      ],
+      "expenses": [
+        {"label":"Gastos de Explotación del Estadio","category":"admin_general_expense","amount":-2.31},
+        {"label":"Participación en Camp. Oficiales AFA","category":"match_organisation_expense","amount":-5.35395},
+        {"label":"Part. en Campeonatos Internacionales","category":"match_organisation_expense","amount":-0.2264},
+        {"label":"Gtos Derechos Televisación","category":"admin_general_expense","amount":-0.648},
+        {"label":"Remuneraciones Plantel Deportivo","category":"wages_squad","amount":-22.988878},
+        {"label":"Primas Plantel Deportivo","category":"wages_squad","amount":-22.67001},
+        {"label":"Premios Plantel Deportivo","category":"wages_squad","amount":-8.748435},
+        {"label":"Pretemporada","category":"wages_squad","amount":-0.99},
+        {"label":"Otros Gastos Dep. Futbol Profesional","category":"wages_squad","amount":-28.166451},
+        {"label":"Inversiones en Amateur","category":"youth_other_sports_expense","amount":-7.145684},
+        {"label":"Gastos de Seguridad","category":"admin_general_expense","amount":-6.4265},
+        {"label":"Servicios Médicos","category":"admin_general_expense","amount":-1.785},
+        {"label":"Pago de Gtos de Otras Secciones Dep.","category":"youth_other_sports_expense","amount":-2.091},
+        {"label":"Departamentos Auxiliares - Socios","category":"admin_general_expense","amount":-0.63},
+        {"label":"Departamentos Auxiliares - Imagen / Prensa","category":"admin_general_expense","amount":-0.6},
+        {"label":"Gastos Generales de Administración","category":"admin_general_expense","amount":-6.57},
+        {"label":"Pago de Otros Gastos Ordinarios","category":"other_expenses","amount":-37.975},
+        {"label":"Pago de Moratoria","category":"admin_general_expense","amount":-3.6},
+        {"label":"Pago de Otros Pasivos","category":"other_expenses","amount":-25.655611},
+        {"label":"Pagos por compra de Bienes de Uso","category":"other_expenses","amount":-0.5},
+        {"label":"Pago por compra de Inv. Estadio","category":"other_expenses","amount":-1.3},
+        {"label":"Pagos por Colocaciones Fras.","category":"other_expenses","amount":-7.5},
+        {"label":"Cancelación Efectiva de Pasivos","category":"other_expenses","amount":-28.165654},
+        {"label":"Cancelación Efva por Cpra de Jug.","category":"player_amortisation","amount":-7.5}
+      ]
+    },
+    "2016": {
+      "currency": "ARS",
+      "fx": {"rate":11.8,"source":"document_assumption"},
+      "source_id": "racing-ar-presupuesto-2015-16",
+      "revenue": [
+        {"label":"Campeonatos Oficiales AFA","category":"matchday_competition","amount":23.045},
+        {"label":"Comp. Oficiales Internacionales","category":"matchday_competition","amount":40.3},
+        {"label":"Otras Comp. y Partidos Amistosos","category":"matchday_competition","amount":4.405},
+        {"label":"Derechos de Retransmisión","category":"broadcasting","amount":59},
+        {"label":"Pub. y Esponsorización Futbol","category":"sponsorship_commercial","amount":45.6},
+        {"label":"Otros Ingresos por alquiler de cancha","category":"other_income","amount":2.4},
+        {"label":"Otros Ingresos Dep. Futbol Prof.","category":"other_income","amount":2.48},
+        {"label":"Cesión de Jugadores (Transf. / Prést.)","category":"player_sales","amount":59.825},
+        {"label":"Ingresos por Prop. Industrial / Intelectual cedida en Explotación","category":"other_income","amount":9},
+        {"label":"Otros Ingresos de Gestión por Futbol","category":"other_income","amount":13.4},
+        {"label":"Cobranza de Ingresos de Otras Secciones Deportivas","category":"other_sports","amount":3.7},
+        {"label":"Ingresos por Socios","category":"member_dues","amount":155.5},
+        {"label":"Ingresos Varios Sede","category":"other_income","amount":10.4},
+        {"label":"Ingresos por Merchandising","category":"sponsorship_commercial","amount":26.3},
+        {"label":"Cobro de Subv., Donaciones y Legados","category":"other_income","amount":8.64},
+        {"label":"Otros Cobros de Ing. Fros - Plazo Fijo","category":"other_income","amount":1.2}
+      ],
+      "expenses": [
+        {"label":"Gastos de Explotación del Estadio","category":"admin_general_expense","amount":-3.45},
+        {"label":"Participación en Camp. Oficiales AFA","category":"match_organisation_expense","amount":-8.95},
+        {"label":"Part. en Campeonatos Internacionales","category":"match_organisation_expense","amount":-20},
+        {"label":"Participación en Otras Comp. y Partidos Amistosos","category":"match_organisation_expense","amount":-0.15},
+        {"label":"Gtos Derechos Televisación","category":"admin_general_expense","amount":-1.2},
+        {"label":"Remuneraciones Plantel Deportivo","category":"wages_squad","amount":-45.1},
+        {"label":"Primas Plantel Deportivo","category":"wages_squad","amount":-54},
+        {"label":"Premios Plantel Deportivo","category":"wages_squad","amount":-25.7},
+        {"label":"Pretemporada","category":"wages_squad","amount":-4.05},
+        {"label":"Otros Gastos Dep. Futbol Profesional","category":"wages_squad","amount":-14.5},
+        {"label":"Inversiones en Amateur","category":"youth_other_sports_expense","amount":-19.5},
+        {"label":"Gastos de Seguridad","category":"admin_general_expense","amount":-9},
+        {"label":"Servicios Médicos","category":"admin_general_expense","amount":-1.8},
+        {"label":"Pago de Gtos de Otras Secciones Dep.","category":"youth_other_sports_expense","amount":-4.95},
+        {"label":"Departamentos Auxiliares - Socios","category":"admin_general_expense","amount":-2.88},
+        {"label":"Departamentos Auxiliares - Imagen / Prensa","category":"admin_general_expense","amount":-1.8},
+        {"label":"Gastos Generales de Administración","category":"admin_general_expense","amount":-3.36},
+        {"label":"Pago de Otros Gastos Ordinarios","category":"other_expenses","amount":-139},
+        {"label":"Pago de Moratoria","category":"admin_general_expense","amount":-2.52},
+        {"label":"Pago de Otros Pasivos","category":"other_expenses","amount":-31},
+        {"label":"Pagos por compra de Bienes de Uso","category":"other_expenses","amount":-0.4},
+        {"label":"Pago por compra de Inv. Estadio y Bs Uso","category":"other_expenses","amount":-10},
+        {"label":"Pagos por Colocaciones Fras.","category":"other_expenses","amount":-8.4},
+        {"label":"Cancelación Efectiva de Pasivos","category":"other_expenses","amount":-8.016},
+        {"label":"Cancelación Efva por Cpra de Jug.","category":"player_amortisation","amount":-52.5}
+      ]
+    },
+    "2018": {
+      "currency": "ARS",
+      "fx": {"rate":20,"source":"document_assumption"},
+      "source_id": "racing-ar-presupuesto-2017-18",
+      "revenue": [
+        {"label":"Campeonatos Oficiales AFA","category":"matchday_competition","amount":20},
+        {"label":"Competencias Oficiales Internacionales","category":"matchday_competition","amount":87.6},
+        {"label":"Otras Competencias y Partidos Amistosos","category":"matchday_competition","amount":2.6},
+        {"label":"Derechos de Retransmisión","category":"broadcasting","amount":78},
+        {"label":"Publicidad y Esponsorización del Fútbol","category":"sponsorship_commercial","amount":69},
+        {"label":"Otros Ingresos Deportivos Fútbol Profesional","category":"other_income","amount":40},
+        {"label":"Cesión de Jugadores (Transferencias / Préstamos)","category":"player_sales","amount":454.66},
+        {"label":"Ingresos por Propiedad Industrial / Intelectual cedida en Explotación","category":"other_income","amount":18},
+        {"label":"Cobranza de Ingresos de Otras Secciones Deportivas","category":"other_sports","amount":14.1},
+        {"label":"Ingresos por Socios","category":"member_dues","amount":225},
+        {"label":"Ingresos Varios Sede","category":"other_income","amount":30},
+        {"label":"Ingresos por Merchandising","category":"sponsorship_commercial","amount":66},
+        {"label":"Cobro de Subvenciones, Donaciones y Legados","category":"other_income","amount":2.16},
+        {"label":"Otros Cobros de Ingresos Financieros - Plazo Fijo","category":"other_income","amount":30}
+      ],
+      "expenses": [
+        {"label":"Gastos de Explotación del Estadio","category":"admin_general_expense","amount":-18},
+        {"label":"Participación en Campeonatos Oficiales AFA","category":"match_organisation_expense","amount":-21.6},
+        {"label":"Participación en Campeonatos Internacionales","category":"match_organisation_expense","amount":-15.4},
+        {"label":"Gastos Derechos de Televisación","category":"admin_general_expense","amount":-6},
+        {"label":"Remuneraciones Plantel Deportivo","category":"wages_squad","amount":-99.5},
+        {"label":"Primas Plantel Deportivo","category":"wages_squad","amount":-91},
+        {"label":"Premios Plantel Deportivo","category":"wages_squad","amount":-10},
+        {"label":"Pretemporada","category":"wages_squad","amount":-5},
+        {"label":"Otros Gastos Deportivos Fútbol Profesional","category":"wages_squad","amount":-48},
+        {"label":"Inversiones en Amateur","category":"youth_other_sports_expense","amount":-54},
+        {"label":"Gastos de Seguridad","category":"admin_general_expense","amount":-13.2},
+        {"label":"Servicios Médicos","category":"admin_general_expense","amount":-4.224},
+        {"label":"Pago de Gastos de Otras Secciones Deportivas","category":"youth_other_sports_expense","amount":-15.9},
+        {"label":"Departamentos Auxiliares - Socios","category":"admin_general_expense","amount":-8.956742},
+        {"label":"Departamentos Auxiliares - Imagen / Prensa","category":"admin_general_expense","amount":-5.01706},
+        {"label":"Gastos Generales de Administración","category":"admin_general_expense","amount":-5.176587},
+        {"label":"Pago de Otros Gastos Ordinarios","category":"other_expenses","amount":-184},
+        {"label":"Pago de Otros Gastos Extraordinarios - Moratoria","category":"other_expenses","amount":-5.4},
+        {"label":"Gastos Financieros de Pago de Otros Pasivos","category":"admin_general_expense","amount":-6},
+        {"label":"Pagos por Compra de Bienes de Uso","category":"other_expenses","amount":-2.4},
+        {"label":"Pago por Compra de Inversiones en el Estadio","category":"other_expenses","amount":-59.4},
+        {"label":"Pagos por Colocaciones Financieras","category":"other_expenses","amount":-45.15},
+        {"label":"Cancelación Efectiva de Pasivos","category":"other_expenses","amount":-88},
+        {"label":"Cancelación Efectiva por Compra de Jugadores","category":"player_amortisation","amount":-314.266654}
+      ]
+    },
+    "2020": {
+      "currency": "ARS",
+      "fx": {"rate":70,"source":"document_assumption"},
+      "source_id": "racing-ar-presupuesto-2019-20",
+      "revenue": [
+        {"label":"Cobranzas por venta de entradas","category":"matchday_competition","amount":156},
+        {
+          "label": "Cobranzas por participación",
+          "category": "competition_bonus",
+          "amount": 274.78,
+          "items": [
+            ["Competiciones oficiales S.A.F.",19.78],
+            ["Competiciones oficiales internacionales",246.5],
+            ["Competiciones A.F.A., amistosos y otras competiciones",8.5]
+          ]
+        },
+        {"label":"Cobranzas por venta de abonos estadio","category":"season_tickets","amount":123.154},
+        {"label":"Cobros por retransmisión y derechos de TV","category":"broadcasting","amount":208.8},
+        {
+          "label": "Cobros por marketing y publicidad",
+          "category": "sponsorship_commercial",
+          "amount": 320.778,
+          "items": [["Comercialización y otros",121.278],["Esponsorización",152.4],["Publicidad estática y dinámica",47.1]]
+        },
+        {"label":"Cobros por ventas de jugadores","category":"player_sales","amount":1122.345},
+        {"label":"Cobros por préstamos de jugadores","category":"player_sales","amount":10.95},
+        {"label":"Cobros de derechos de formación y mecanismo de solidaridad","category":"player_sales","amount":7.96},
+        {"label":"Cobros de otros recursos de gestión por fútbol","category":"other_income","amount":18},
+        {"label":"Ingresos sociales","category":"member_dues","amount":634.15205},
+        {"label":"Cobranzas de otras actividades deportivas","category":"other_sports","amount":29.7},
+        {"label":"Cobranzas de instituciones educativas","category":"education","amount":46.4},
+        {
+          "label": "Otros ingresos",
+          "category": "other_income",
+          "amount": 78.6,
+          "items": [["Cobros de otros recursos ordinarios",30.6],["Cobros de rentas financieras",48]]
+        },
+        {"label":"Cobros por venta de inversiones financieras","category":"other_income","amount":96}
+      ],
+      "expenses": [
+        {"label":"Pago de gastos explotación del estadio","category":"admin_general_expense","amount":-73.3},
+        {
+          "label": "Pago de gastos por participación",
+          "category": "match_organisation_expense",
+          "amount": -120.7,
+          "items": [["Competiciones oficiales S.A.F.",-88.2],["Competiciones oficiales internacionales",-32.5]]
+        },
+        {
+          "label": "Pago de remuneraciones plantel profesional",
+          "category": "wages_squad",
+          "amount": -781.995,
+          "items": [
+            ["Sueldos jugadores profesionales",-208.8],
+            ["Primas jugadores profesionales",-332.01],
+            ["Premios jugadores profesionales",-237.5],
+            ["Otros conceptos jugadores profesionales",-3.685]
+          ]
+        },
+        {"label":"Pago de remuneraciones cuerpo técnico","category":"wages_squad","amount":-145.4},
+        {"label":"Pago de otros gastos deportivos fútbol profesional","category":"wages_squad","amount":-221.95},
+        {"label":"Pago por adquisición de jugadores","category":"player_amortisation","amount":-816.62},
+        {"label":"Pago de gastos por compraventa de jugadores","category":"other_expenses","amount":-95.795},
+        {"label":"Pago de gastos fútbol amateur (activable)","category":"youth_other_sports_expense","amount":-122},
+        {"label":"Pago de gastos de comercialización","category":"admin_general_expense","amount":-81.082048},
+        {"label":"Pago de remuneraciones otras actividades deportivas","category":"youth_other_sports_expense","amount":-6.9},
+        {"label":"Pago de gastos otras actividades deportivas","category":"youth_other_sports_expense","amount":-53.7},
+        {"label":"Pago de remuneraciones de instituciones educativas","category":"education_expense","amount":-38.6},
+        {"label":"Pago de gastos de instituciones educativas","category":"education_expense","amount":-8.3},
+        {
+          "label": "Otros egresos",
+          "category": "admin_general_expense",
+          "amount": -325.9,
+          "items": [
+            ["Pago de gastos de administración",-42.6],
+            ["Pago de otros gastos ordinarios",-228],
+            ["Pago de impuestos, tasas y contribuciones",-7.3],
+            ["Pago de gastos financieros",-48]
+          ]
+        },
+        {"label":"Egresos extraordinarios (compra de bienes de uso y mejoras, principalmente)","category":"other_expenses","amount":-85.26}
+      ]
+    }
+  },
+  "squad_transfers": [],
+  "results": {
+    "milito": {"local_titles":0,"international_titles":1,"best_libertadores_result":"Sin dato verificado todavía en esta gestión (breve, desde dic-2024)"},
+    "blanco": {"local_titles":5,"international_titles":1,"best_libertadores_result":"Cuartos de final (2023); nunca pasó de cuartos en su gestión"}
+  },
+  "titles": [
+    {"year":2014,"competition":"Torneo Transición","result":"Campeón","management":"blanco"},
+    {"year":2019,"competition":"Superliga Argentina 2018/19","result":"Campeón","management":"blanco"},
+    {"year":2019,"competition":"Trofeo de Campeones","result":"Campeón","management":"blanco"},
+    {"year":2022,"competition":"Trofeo de Campeones","result":"Campeón","management":"blanco"},
+    {"year":2022,"competition":"Supercopa Internacional","result":"Campeón","management":"blanco"},
+    {"year":2024,"competition":"Copa Sudamericana","result":"Campeón","management":"blanco"},
+    {"year":2025,"competition":"Recopa Sudamericana","result":"Campeón","management":"milito"}
+  ],
+  "extras": {
+    "budget_assumptions": {
+      "2026": {
+        "doc_label": "Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2025/2026 (1° de julio de 2025 al 30 de junio de 2026).",
+        "sections": [
+          {
+            "heading": "Premisas macroeconómicas",
+            "items": [
+              "Producto Bruto Interno (PBI): se proyecta un crecimiento del 4% interanual.",
+              "Tipo de cambio: se prevé un promedio de $1.438 por dólar, acelerado post elecciones legislativas de medio término.",
+              "Inflación: se proyecta un aumento promedio del Índice de Precios al Consumidor (IPC, medido por el INDEC) del 29,5% durante el período.",
+              "Incremento salarial: se proyecta un incremento salarial promedio del 30,4%."
+            ]
+          },
+          {
+            "heading": "Políticas de ingresos",
+            "items": [
+              "Campeonatos oficiales y competencias internacionales: participación en la Liga Profesional, torneos CONMEBOL, Copa Sudamericana 2026, Copa Argentina 2025/26 y amistosos de pretemporada, con la renovación del convenio de ESPN muy avanzada.",
+              "Retransmisión y derechos de TV: ingreso recurrente proyectado al nivel de cuota devengada actual, con renegociación.",
+              "Marketing y publicidad: sponsors vigentes (Betsson, Sur Finanzas, RUS, PAX, Cetrogar, EA Sports, Alliance, Quilmes, Sorare, ESPN, Lat Comex, entre otros) más los ingresos de Locademia y concesiones/licencias sobre la marca.",
+              "Venta y préstamos de jugadores: venta moderada, por decisión de retener y valorizar un plantel competitivo; incluye el cobro de acreencias de ejercicios anteriores.",
+              "Derechos de formación y mecanismo de solidaridad: ingresos por jugadores formados en Racing y transferidos en ligas del exterior.",
+              "Recursos sociales: campaña de captación de socios en el primer mes de ejecución (resultados no contemplados en el presupuesto); incremento de la cuota social bimestral conforme al IPC.",
+              "Otras secciones: ingresos de Básquet, Futsal, Fútbol Infantil, Tenis, Vóley, Handball, Hockey y Colonia de vacaciones, más el Colegio (cuotas escolares y subvención estatal).",
+              "Otros recursos: concesión de la Sede Avellaneda a Gimnasios Argentinos S.A., eventos sociales, y el rendimiento de excedentes transitorios de capital de trabajo (en baja por la normalización de tasas)."
+            ]
+          },
+          {
+            "heading": "Política de gastos",
+            "items": [
+              "Plantel profesional: remuneraciones, primas y premios según contratos vigentes, según el propio club, \"el presupuesto más importante de los últimos tiempos\" por la decisión de retener a figuras campeonas.",
+              "Cuerpo técnico: remuneraciones y premios según contratos individuales, campañas y títulos obtenidos.",
+              "Incorporación y venta de jugadores: reemplazo de figuras salientes; gastos asociados a la venta (comisiones de agentes, 15% del jugador y agremiados, Decreto 1212).",
+              "Fútbol amateur: desarrollo de infantiles y divisiones inferiores, la Pensión y el predio Tita Mattiussi.",
+              "Administración: reformulación de la matriz organizacional, dirección deportiva, proveedores, haberes del personal (sin incluir al plantel de fútbol), Obras Sociales y Sindicatos.",
+              "Inversiones (egresos extraordinarios): obras en el Estadio, el predio de Ezeiza y el predio Tita Mattiussi, y mejoras en las sedes Avellaneda y Villa del Parque."
+            ]
+          }
+        ]
+      },
+      "2027": {
+        "doc_label": "Presupuesto Financiero de Ingresos y Egresos, Ejercicio 2026/2027 (1° de julio de 2026 al 30 de junio de 2027), el presupuesto vigente hoy.",
+        "sections": [
+          {
+            "heading": "Premisas macroeconómicas",
+            "items": [
+              "Producto Bruto Interno (PBI): se proyecta un crecimiento real del 4,18% interanual.",
+              "Tipo de cambio: se prevé $1.505 por dólar en julio de 2026 y $1.870 por dólar en junio de 2027.",
+              "Inflación: se proyecta un aumento promedio del Índice de Precios al Consumidor (IPC, medido por el INDEC) del 27,1% durante el período.",
+              "Incremento salarial: se proyecta acorde a la inflación estimada para el ejercicio."
+            ]
+          },
+          {
+            "heading": "Políticas de ingresos",
+            "items": [
+              "Campeonatos oficiales y competencias internacionales: participación en la Liga Profesional, torneos CONMEBOL, Copa Sudamericana 2027, Copa Argentina 2026/27 y amistosos de pretemporada, con el convenio de televisación de ESPN ya renovado.",
+              "Retransmisión y derechos de TV: ingreso recurrente proyectado al nivel de cuota devengada actual, con una renegociación prudente.",
+              "Marketing y publicidad: sponsors vigentes (Betsson, RUS, PAX, Cetrogar, Alliance, ESPN, Lat Comex, Pirelli, Coca-Cola, entre otros) más los ingresos de Locademia (venta de artículos deportivos) y concesiones/licencias sobre la marca.",
+              "Venta y préstamos de jugadores: venta moderada, priorizando un reembolso neto de la operación por sobre la diferencia compra/venta, dado un mercado poco demandante; incluye el cobro de acreencias de ejercicios anteriores.",
+              "Derechos de formación y mecanismo de solidaridad: ingresos por jugadores formados en Racing y transferidos en ligas del exterior.",
+              "Recursos sociales: incremento de la cuota social bimestral conforme al IPC; no se proyecta crecimiento de la masa societaria pese a las campañas de captación.",
+              "Otras secciones: ingresos de Básquet, Futsal, Fútbol Infantil, Tenis, Vóley, Handball, Hockey y Colonia de vacaciones, más el Colegio (ampliación de matrículas, cuotas escolares y subvención estatal).",
+              "Otros recursos: concesión de la Sede Avellaneda a Gimnasios Argentinos S.A., eventos sociales, y el rendimiento de excedentes transitorios de capital de trabajo."
+            ]
+          },
+          {
+            "heading": "Política de gastos",
+            "items": [
+              "Plantel profesional: remuneraciones, primas y premios según los contratos vigentes, para torneos amistosos, Copa Argentina y CONMEBOL 2026/27, según el propio club, uno de los presupuestos salariales más altos del fútbol argentino.",
+              "Cuerpo técnico: remuneraciones y premios según contratos individuales y el acuerdo con el cuerpo técnico saliente.",
+              "Incorporación y venta de jugadores: reemplazo de figuras salientes; gastos asociados a la venta (comisiones de agentes, 15% del jugador y agremiados, Decreto 1212).",
+              "Fútbol amateur: desarrollo de infantiles y divisiones inferiores, viajes al exterior, la Pensión y el predio Tita Mattiussi.",
+              "Administración: nueva estructura organizacional y dirección deportiva, haberes del personal (sin incluir al plantel de fútbol), Obras Sociales y Sindicatos.",
+              "Inversiones (egresos extraordinarios): primera etapa del predio de Ezeiza, obras en el predio Tita Mattiussi, mejoras del Estadio y de las sedes Avellaneda y Villa del Parque, y la nueva sede educativa."
+            ]
+          }
+        ]
+      }
+    },
+    "budget_financial": {
+      "2026": {
+        "steps": [
+          {"label":"Saldo Inicial","op":"","magnitude":9324.935735},
+          {"label":"Ingresos","op":"+","magnitude":123297.209473},
+          {"label":"Egresos","op":"−","magnitude":126860.457441},
+          {"label":"Saldo al Cierre","op":"=","magnitude":5761.687768,"is_result":true}
+        ],
+        "note": "A diferencia de Boca, el presupuesto de Racing ya está armado en base de caja desde el origen, no distingue un \"presupuesto económico\" devengado de uno financiero, así que este saldo usa las mismas cifras que el Estado de resultados de arriba, sin ajuste por cobros/pagos diferidos del ejercicio anterior."
+      },
+      "2027": {
+        "steps": [
+          {"label":"Saldo Inicial","op":"","magnitude":5367.787912},
+          {"label":"Ingresos","op":"+","magnitude":143118.482343},
+          {"label":"Egresos","op":"−","magnitude":142071.747998},
+          {"label":"Saldo al Cierre","op":"=","magnitude":6414.522257,"is_result":true}
+        ],
+        "note": "Mismo criterio que el Ejercicio 2025/2026: presupuesto en base de caja desde el origen, sin distinción entre devengado y percibido."
+      }
+    },
+    "budget_investments": {
+      "2026": {
+        "total": 7014.228299,
+        "note": "El presupuesto de Racing agrupa este monto en una sola línea (\"Egresos extraordinarios\", compra de bienes de uso y mejoras) dentro del rubro Egresos Extraordinarios, sin desglosar por obra o proyecto individual como sí hace Boca. El texto del documento menciona en general obras en el Estadio, el predio de Ezeiza, el predio Tita Mattiussi y las sedes Avellaneda y Villa del Parque, pero no separa el monto entre ellas."
+      },
+      "2027": {
+        "total": 10541.726845,
+        "note": "Mismo criterio que el Ejercicio 2025/2026: una sola línea sin desglosar por obra. El documento menciona en general la primera etapa del predio de Ezeiza, obras en el predio Tita Mattiussi, mejoras del Estadio, y las sedes Avellaneda, Villa del Parque y la nueva sede educativa."
+      }
+    }
+  }
+}

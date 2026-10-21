@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "gimnasiaesgrima-ar",
+    "name": "Club de Gimnasia y Esgrima La Plata",
+    "display_name": "Gimnasia y Esgrima (La Plata)",
+    "country": "AR",
+    "reporting_currency": "ARS",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "gimnasiaesgrima-ar-balance-2022-2023",
+      "club_id": "gimnasiaesgrima-ar",
+      "title": "Balance General, 136° Ejercicio Económico (1°/7/2022 al 30/6/2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "gimnasiaesgrima-ar-balance-2023-2024",
+      "club_id": "gimnasiaesgrima-ar",
+      "title": "Balance General, 137° Ejercicio Económico (1°/7/2023 al 30/6/2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "El documento no explica la fila \"Incremento Valor Jugadores FP\"; se muestra tal como figura, en otros ingresos."
+    },
+    {
+      "id": "gimnasiaesgrima-ar-balance-2024-2025",
+      "club_id": "gimnasiaesgrima-ar",
+      "title": "Balance General, 138° Ejercicio Económico (1°/7/2024 al 30/6/2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "El documento no explica la fila \"Incremento Valor Jugadores FP\"; se muestra tal como figura, en otros ingresos."
+    },
+    {
+      "id": "gimnasiaesgrima-ar-presupuesto-2023-2024",
+      "club_id": "gimnasiaesgrima-ar",
+      "title": "Presupuesto Económico de Recursos y Gastos, Ejercicio 2023-2024",
+      "type": "official_budget",
+      "reliability": "primary"
+    },
+    {
+      "id": "gimnasiaesgrima-ar-presupuesto-2024-2025",
+      "club_id": "gimnasiaesgrima-ar",
+      "title": "Presupuesto Económico de Recursos y Gastos, Ejercicio 2024-2025",
+      "type": "official_budget",
+      "reliability": "primary"
+    },
+    {
+      "id": "gimnasiaesgrima-ar-presupuesto-2025-2026",
+      "club_id": "gimnasiaesgrima-ar",
+      "title": "Presupuesto Económico de Recursos y Gastos, Ejercicio 2025-2026",
+      "type": "official_budget",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"cowen","name":"Cowen (2022-presente)","first_year":2024,"last_year":2026}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "ARS",
+      "source_id": "gimnasiaesgrima-ar-balance-2022-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":268,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":1163.587465,"disclosure":"detailed"},
+        {"label":"Venta Jugadores y Otros Ingresos Gestión","category":"player_sales","amount":1104.572985,"disclosure":"detailed"},
+        {"label":"Derechos de Televisión","category":"broadcasting","amount":806.093031,"disclosure":"detailed"},
+        {"label":"Publicidad","category":"sponsorship_commercial","amount":186.403703,"disclosure":"detailed"},
+        {"label":"Entradas, Palcos y Plateas","category":"matchday_competition","amount":375.945332,"disclosure":"detailed"},
+        {"label":"Competencias Copas Internacionales","category":"competition_bonus","amount":424.756899,"disclosure":"detailed"},
+        {
+          "label": "Fundación ECDLP (subvención Fundación Estadio Ciudad de La Plata, Nota 4)",
+          "category": "stadium_other",
+          "amount": 22.38043,
+          "disclosure": "detailed"
+        },
+        {"label":"Venta Merchandising","category":"other_income","amount":216.860037,"disclosure":"detailed"},
+        {"label":"Matrícula, Cuotas y Subvención (Jardín de Infantes y Escuela)","category":"education","amount":300.598003,"disclosure":"detailed"},
+        {"label":"Arancel Deportes","category":"other_sports","amount":80.57195,"disclosure":"detailed"},
+        {"label":"Alquileres y Canon","category":"other_income","amount":36.481371,"disclosure":"detailed"},
+        {"label":"Varios (Fútbol Profesional)","category":"other_income","amount":94.377925,"disclosure":"detailed"},
+        {"label":"Varios (Deportes y Actividades Sociales)","category":"other_sports","amount":89.592842,"disclosure":"detailed"},
+        {"label":"Varios (Generales)","category":"other_income","amount":344.445824,"disclosure":"detailed"},
+        {"label":"Donaciones","category":"other_income","amount":221.155346,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos y Cargas Sociales (Fútbol Profesional)","category":"wages_squad","amount":-1204.326656,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y Cargas Sociales (Deportes y Actividades Sociales)",
+          "category": "youth_other_sports_expense",
+          "amount": -356.865061,
+          "disclosure": "detailed"
+        },
+        {"label":"Sueldos y Cargas Sociales (Jardín de Infantes y Escuela)","category":"education_expense","amount":-296.979745,"disclosure":"detailed"},
+        {"label":"Sueldos y Cargas Sociales (Generales)","category":"admin_general_expense","amount":-402.222917,"disclosure":"detailed"},
+        {"label":"Reconocimientos y Premios","category":"wages_squad","amount":-644.7423,"disclosure":"detailed"},
+        {"label":"Gastos de Transferencias","category":"other_expenses","amount":-72.779252,"disclosure":"detailed"},
+        {"label":"Gastos de Partidos Oficiales","category":"match_organisation_expense","amount":-170.503865,"disclosure":"detailed"},
+        {"label":"Competencias Copas Internacionales","category":"match_organisation_expense","amount":-134.262015,"disclosure":"detailed"},
+        {"label":"Atención Médica (Fútbol Profesional)","category":"wages_squad","amount":-22.24115,"disclosure":"detailed"},
+        {"label":"Atención Médica (Deportes y Actividades Sociales)","category":"youth_other_sports_expense","amount":-24.99909,"disclosure":"detailed"},
+        {"label":"Atención Médica (Generales)","category":"admin_general_expense","amount":-2.63309,"disclosure":"detailed"},
+        {"label":"Rescisión Contratos","category":"player_impairment","amount":-399.292929,"disclosure":"detailed"},
+        {"label":"Movilidad, Viaticos, Hotelería","category":"wages_squad","amount":-309.04298,"disclosure":"detailed"},
+        {"label":"Varios (Fútbol Profesional)","category":"other_expenses","amount":-57.171544,"disclosure":"detailed"},
+        {"label":"Varios (Deportes y Actividades Sociales)","category":"youth_other_sports_expense","amount":-183.189808,"disclosure":"detailed"},
+        {"label":"Varios (Jardín de Infantes y Escuela)","category":"education_expense","amount":-67.197198,"disclosure":"detailed"},
+        {"label":"Varios (Generales)","category":"admin_general_expense","amount":-474.227251,"disclosure":"detailed"},
+        {"label":"Costo Venta Merchandising","category":"other_expenses","amount":-74.822484,"disclosure":"detailed"},
+        {"label":"Costo Venta Lotes","category":"other_expenses","amount":-157.268641,"disclosure":"detailed"},
+        {"label":"Cargas Fiscales","category":"admin_general_expense","amount":-41.860202,"disclosure":"detailed"},
+        {
+          "label": "Amortización Activos Intangibles (Anexo I, derechos federativos)",
+          "category": "player_amortisation",
+          "amount": -390.134838,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciación Bienes de Uso (Anexo II)","category":"depreciation","amount":-116.24401,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-614.98764,"tax":0,"gross_debt":3965.57016,"cash":23.11086},
+      "official_totals": {"revenue":5467.823142,"expenses":5603.007025,"net_result":-750.171524}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "ARS",
+      "source_id": "gimnasiaesgrima-ar-balance-2023-2024",
+      "report_type": "official_budget_and_balance",
+      "management_id": "cowen",
+      "fx": {"rate":932.5,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":3932.260239,"disclosure":"detailed"},
+        {
+          "label": "Incremento Valor Jugadores FP (ver comentario de cabecera, duda en Admin/dudas-por-club.md)",
+          "category": "other_income",
+          "amount": 2900.943865,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros Ingresos Gestión de Futbol","category":"other_income","amount":1977.143294,"disclosure":"detailed"},
+        {"label":"Ventas Jugadores","category":"player_sales","amount":5208.117402,"disclosure":"detailed"},
+        {"label":"Prestamos jugadores","category":"player_sales","amount":13.495962,"disclosure":"detailed"},
+        {"label":"Derechos de Televisión","category":"broadcasting","amount":2483.365334,"disclosure":"detailed"},
+        {"label":"Publicidad","category":"sponsorship_commercial","amount":644.97641,"disclosure":"detailed"},
+        {"label":"Entradas, Palcos y Plateas","category":"matchday_competition","amount":944.418376,"disclosure":"detailed"},
+        {"label":"Competencias Copas Internacionales","category":"competition_bonus","amount":297.945252,"disclosure":"detailed"},
+        {
+          "label": "Fundación ECDLP (subvención Fundación Estadio Ciudad de La Plata, Nota 4)",
+          "category": "stadium_other",
+          "amount": 59.490291,
+          "disclosure": "detailed"
+        },
+        {"label":"Venta Merchandising","category":"other_income","amount":916.807835,"disclosure":"detailed"},
+        {"label":"Matrícula, Cuotas y Subvención (Jardín de Infantes y Escuela)","category":"education","amount":1063.587888,"disclosure":"detailed"},
+        {"label":"Arancel Deportes","category":"other_sports","amount":229.208085,"disclosure":"detailed"},
+        {"label":"Alquileres y Canon","category":"other_income","amount":82.598342,"disclosure":"detailed"},
+        {"label":"Varios (Fútbol Profesional)","category":"other_income","amount":12.208945,"disclosure":"detailed"},
+        {"label":"Varios (Deportes y Actividades Sociales)","category":"other_sports","amount":259.330503,"disclosure":"detailed"},
+        {"label":"Varios (Generales)","category":"other_income","amount":1078.209461,"disclosure":"detailed"},
+        {"label":"Donaciones","category":"other_income","amount":95.726368,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos y Cargas Sociales (Fútbol Profesional)","category":"wages_squad","amount":-3010.52592,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y Cargas Sociales (Deportes y Actividades Sociales)",
+          "category": "youth_other_sports_expense",
+          "amount": -1489.570093,
+          "disclosure": "detailed"
+        },
+        {"label":"Sueldos y Cargas Sociales (Jardín de Infantes y Escuela)","category":"education_expense","amount":-1049.359147,"disclosure":"detailed"},
+        {"label":"Sueldos y Cargas Sociales (Generales)","category":"admin_general_expense","amount":-1389.789151,"disclosure":"detailed"},
+        {"label":"Reconocimientos y Premios","category":"wages_squad","amount":-2915.300197,"disclosure":"detailed"},
+        {"label":"Gastos de Transferencias","category":"other_expenses","amount":-1929.413931,"disclosure":"detailed"},
+        {"label":"Gastos de Partidos Oficiales","category":"match_organisation_expense","amount":-431.002147,"disclosure":"detailed"},
+        {"label":"Competencias Copas Internacionales","category":"match_organisation_expense","amount":-11.860164,"disclosure":"detailed"},
+        {"label":"Atención Médica (Fútbol Profesional)","category":"wages_squad","amount":-104.895475,"disclosure":"detailed"},
+        {"label":"Atención Médica (Deportes y Actividades Sociales)","category":"youth_other_sports_expense","amount":-132.006103,"disclosure":"detailed"},
+        {"label":"Atención Médica (Generales)","category":"admin_general_expense","amount":-9.451619,"disclosure":"detailed"},
+        {"label":"Rescisión Contratos","category":"player_impairment","amount":-231.096262,"disclosure":"detailed"},
+        {"label":"Movilidad, Viaticos, Hotelería","category":"wages_squad","amount":-2960.900856,"disclosure":"detailed"},
+        {"label":"Varios (Fútbol Profesional)","category":"other_expenses","amount":-344.992213,"disclosure":"detailed"},
+        {"label":"Varios (Deportes y Actividades Sociales)","category":"youth_other_sports_expense","amount":-703.180087,"disclosure":"detailed"},
+        {"label":"Varios (Jardín de Infantes y Escuela)","category":"education_expense","amount":-249.181263,"disclosure":"detailed"},
+        {"label":"Varios (Generales)","category":"admin_general_expense","amount":-454.068434,"disclosure":"detailed"},
+        {"label":"Costo Venta Merchandising","category":"other_expenses","amount":-280.725532,"disclosure":"detailed"},
+        {"label":"Costo Venta Lotes","category":"other_expenses","amount":-66.550633,"disclosure":"detailed"},
+        {"label":"Cargas Fiscales","category":"admin_general_expense","amount":-200.272569,"disclosure":"detailed"},
+        {
+          "label": "Amortización Activos Intangibles (Anexo I, derechos federativos)",
+          "category": "player_amortisation",
+          "amount": -3041.60693,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciación Bienes de Uso (Anexo II)","category":"depreciation","amount":-415.599514,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3288.094625,"tax":0,"gross_debt":9628.914,"cash":194.383705},
+      "official_totals": {"revenue":22199.83385,"expenses":21421.348241,"net_result":4066.580234}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "ARS",
+      "source_id": "gimnasiaesgrima-ar-balance-2024-2025",
+      "report_type": "official_budget_and_balance",
+      "management_id": "cowen",
+      "fx": {"rate":1215,"source":"document_close"},
+      "revenue": [
+        {"label":"Cuotas Sociales","category":"member_dues","amount":6789.210138,"disclosure":"detailed"},
+        {
+          "label": "Incremento Valor Jugadores FP (ver comentario de cabecera, duda en Admin/dudas-por-club.md)",
+          "category": "other_income",
+          "amount": 2051.113616,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros Ingresos Gestión de Futbol","category":"other_income","amount":2825.509837,"disclosure":"detailed"},
+        {"label":"Ventas Jugadores","category":"player_sales","amount":7567.812997,"disclosure":"detailed"},
+        {"label":"Derechos de Televisión","category":"broadcasting","amount":4920.469608,"disclosure":"detailed"},
+        {"label":"Sponsor y Publicidad","category":"sponsorship_commercial","amount":997.980813,"disclosure":"detailed"},
+        {"label":"Ingresos Partidos - Entradas, Palcos y Plateas","category":"matchday_competition","amount":2668.557175,"disclosure":"detailed"},
+        {"label":"Competencias Copas Nacionales","category":"competition_bonus","amount":49.601509,"disclosure":"detailed"},
+        {"label":"Fundación Estadio CDLP","category":"stadium_other","amount":77.182479,"disclosure":"detailed"},
+        {"label":"Venta Merchandising","category":"other_income","amount":1125.370251,"disclosure":"detailed"},
+        {"label":"Matrícula, Cuotas y Subvención (Jardín de Infantes y Escuela)","category":"education","amount":1340.264486,"disclosure":"detailed"},
+        {"label":"Arancel Deportes","category":"other_sports","amount":433.693577,"disclosure":"detailed"},
+        {"label":"Alquileres y Canon","category":"other_income","amount":39.3921,"disclosure":"detailed"},
+        {"label":"Varios (Fútbol Profesional)","category":"other_income","amount":41.312296,"disclosure":"detailed"},
+        {"label":"Varios (Deportes y Actividades Sociales)","category":"other_sports","amount":184.854752,"disclosure":"detailed"},
+        {"label":"Varios (Jardín de Infantes y Escuela)","category":"education","amount":11.312853,"disclosure":"detailed"},
+        {"label":"Varios (Generales)","category":"other_income","amount":2066.761021,"disclosure":"detailed"},
+        {"label":"Donaciones","category":"other_income","amount":0.077372,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Sueldos y Cargas Sociales (Fútbol Profesional)","category":"wages_squad","amount":-4210.091766,"disclosure":"detailed"},
+        {
+          "label": "Sueldos y Cargas Sociales (Deportes y Actividades Sociales)",
+          "category": "youth_other_sports_expense",
+          "amount": -2971.904922,
+          "disclosure": "detailed"
+        },
+        {"label":"Sueldos y Cargas Sociales (Jardín de Infantes y Escuela)","category":"education_expense","amount":-1343.265386,"disclosure":"detailed"},
+        {"label":"Sueldos y Cargas Sociales (Generales)","category":"admin_general_expense","amount":-3789.071582,"disclosure":"detailed"},
+        {"label":"Reconocimientos y Premios","category":"wages_squad","amount":-3743.180357,"disclosure":"detailed"},
+        {"label":"Gastos de Transferencias","category":"other_expenses","amount":-3643.562124,"disclosure":"detailed"},
+        {"label":"Gastos de Partidos Oficiales","category":"match_organisation_expense","amount":-959.915457,"disclosure":"detailed"},
+        {"label":"Competencias Copas Nacionales e Internacionales","category":"match_organisation_expense","amount":-4.84519,"disclosure":"detailed"},
+        {"label":"Atención Médica (Fútbol Profesional)","category":"wages_squad","amount":-200.170782,"disclosure":"detailed"},
+        {"label":"Atención Médica (Deportes y Actividades Sociales)","category":"youth_other_sports_expense","amount":-66.945612,"disclosure":"detailed"},
+        {"label":"Atención Médica (Generales)","category":"admin_general_expense","amount":-27.402503,"disclosure":"detailed"},
+        {"label":"Rescisión Contratos","category":"player_impairment","amount":-220.142362,"disclosure":"detailed"},
+        {"label":"Viaticos, Hotelería, Transporte","category":"wages_squad","amount":-659.720297,"disclosure":"detailed"},
+        {"label":"Varios (Fútbol Profesional)","category":"other_expenses","amount":-2117.876534,"disclosure":"detailed"},
+        {"label":"Varios (Deportes y Actividades Sociales)","category":"youth_other_sports_expense","amount":-1606.764891,"disclosure":"detailed"},
+        {"label":"Varios (Jardín de Infantes y Escuela)","category":"education_expense","amount":-458.15503,"disclosure":"detailed"},
+        {"label":"Varios (Generales)","category":"admin_general_expense","amount":-1596.015287,"disclosure":"detailed"},
+        {"label":"Costo Venta y gastos Merchandising","category":"other_expenses","amount":-570.033681,"disclosure":"detailed"},
+        {"label":"Costo Venta Lotes","category":"other_expenses","amount":-6.92632,"disclosure":"detailed"},
+        {"label":"Cargas Fiscales","category":"admin_general_expense","amount":-289.059076,"disclosure":"detailed"},
+        {
+          "label": "Amortización Activos Intangibles (Anexo I, derechos federativos)",
+          "category": "player_amortisation",
+          "amount": -2124.114987,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciación Bienes de Uso (Anexo II)","category":"depreciation","amount":-595.297062,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2036.164087,"tax":0,"gross_debt":14125.318171,"cash":228.738518},
+      "official_totals": {"revenue":33190.476877,"expenses":31204.461211,"net_result":4022.179754}
+    },
+    {
+      "fiscal_year": 2026,
+      "period_end": "2026-06-30",
+      "currency": "ARS",
+      "source_id": "gimnasiaesgrima-ar-presupuesto-2025-2026",
+      "report_type": "official_budget",
+      "management_id": "cowen",
+      "fx": {"ref":"ARS@2026-06-30","source":"market_close"},
+      "revenue": [
+        {"label":"1.- Recursos por Venta de Entradas","category":"matchday_competition","amount":201.5,"disclosure":"detailed"},
+        {"label":"2.- Recursos por Participación","category":"competition_bonus","amount":64.488827,"disclosure":"detailed"},
+        {"label":"3.- Recursos por Venta de Abonos Estadio","category":"season_tickets","amount":2707.86,"disclosure":"detailed"},
+        {"label":"4.- Retransmisión y Derechos de TV","category":"broadcasting","amount":5978.50267,"disclosure":"detailed"},
+        {"label":"5.- Marketing y Publicidad","category":"sponsorship_commercial","amount":2408.584088,"disclosure":"detailed"},
+        {"label":"6.- Recursos por Venta de Jugadores","category":"player_sales","amount":7481.70412,"disclosure":"detailed"},
+        {"label":"7.- Recursos por Préstamo de Jugadores","category":"player_sales","amount":39.139076,"disclosure":"detailed"},
+        {"label":"8.- Derechos de Formación y Mecanismo de Solidaridad","category":"other_income","amount":507.353759,"disclosure":"detailed"},
+        {"label":"Recursos de Cuotas Sociales","category":"member_dues","amount":9816.2148,"disclosure":"detailed"},
+        {"label":"Recursos de Otras Actividades Deportivas","category":"other_sports","amount":1607.42674,"disclosure":"detailed"},
+        {"label":"Recursos de Instituciones Educativas","category":"education","amount":1942.542015,"disclosure":"detailed"},
+        {"label":"Otros Recursos Ordinarios","category":"other_income","amount":185.683838,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"1.- Gastos Explotación del Estadio","category":"match_organisation_expense","amount":-1862.750785,"disclosure":"detailed"},
+        {"label":"2.- Gastos por Participación","category":"match_organisation_expense","amount":-1308.020881,"disclosure":"detailed"},
+        {"label":"3.- Remuneraciones Plantel Profesional","category":"wages_squad","amount":-7676.700335,"disclosure":"detailed"},
+        {"label":"4.- Remuneraciones Cuerpo Técnico","category":"wages_squad","amount":-802.351759,"disclosure":"detailed"},
+        {"label":"5.- Otros Gastos Deportivos Fútbol Profesional","category":"wages_squad","amount":-3222.135036,"disclosure":"detailed"},
+        {"label":"7.- Gastos Relacionados por Venta de Jugadores","category":"other_expenses","amount":-479.135412,"disclosure":"detailed"},
+        {"label":"8.- Gastos por Préstamos de Jugadores Recibidos","category":"other_expenses","amount":-39.186491,"disclosure":"detailed"},
+        {"label":"9.- Gastos de Fútbol Amateur","category":"youth_other_sports_expense","amount":-3148.846337,"disclosure":"detailed"},
+        {"label":"10.- Gastos de Comercialización","category":"admin_general_expense","amount":-996.425805,"disclosure":"detailed"},
+        {"label":"Remuneraciones Otras Actividades Deportivas","category":"youth_other_sports_expense","amount":-4208.438777,"disclosure":"detailed"},
+        {"label":"Resto de Gastos Otras Actividades Deportivas","category":"youth_other_sports_expense","amount":-2528.386638,"disclosure":"detailed"},
+        {"label":"Remuneraciones de Instituciones Educativas","category":"education_expense","amount":-1647.275125,"disclosure":"detailed"},
+        {"label":"Resto de Gastos de Instituciones Educativas","category":"education_expense","amount":-489.498119,"disclosure":"detailed"},
+        {"label":"Gastos de Administración","category":"admin_general_expense","amount":-3216.474959,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-491.9395,"tax":0},
+      "official_totals": {"revenue":32940.999932,"expenses":31625.626459}
+    }
+  ],
+  "budget_overlay": {
+    "2024": {
+      "currency": "ARS",
+      "fx": {"ref":"ARS@2024-06-30","source":"market_close"},
+      "source_id": "gimnasiaesgrima-ar-presupuesto-2023-2024",
+      "revenue": [
+        {"label":"1.- Recursos por Venta de Entradas","category":"matchday_competition","amount":55.445314},
+        {"label":"2.- Recursos por Participación","category":"competition_bonus","amount":18},
+        {"label":"3.- Recursos por Venta de Abonos Estadio","category":"season_tickets","amount":307.866379},
+        {"label":"4.- Retransmisión y Derechos de TV","category":"broadcasting","amount":1380.582728},
+        {"label":"5.- Marketing y Publicidad","category":"sponsorship_commercial","amount":565.143587},
+        {"label":"6.- Recursos por Venta de Jugadores","category":"player_sales","amount":2794.93345},
+        {"label":"8.- Derechos de Formación y Mecanismo de Solidaridad","category":"other_income","amount":3.997265},
+        {"label":"9.- Otros Recursos de Gestión por Fútbol","category":"other_income","amount":1882.66266},
+        {"label":"Recursos de Cuotas Sociales","category":"member_dues","amount":1704.899133},
+        {"label":"Recursos de Otras Actividades Deportivas","category":"other_sports","amount":504.194883},
+        {"label":"Recursos de Instituciones Educativas","category":"education","amount":544.784196},
+        {"label":"Otros Recursos Ordinarios","category":"other_income","amount":122.589788},
+        {"label":"Recursos Financieros","category":"other_income","amount":154.146731}
+      ],
+      "expenses": [
+        {"label":"1.- Gastos Explotación del Estadio","category":"match_organisation_expense","amount":-708.470846},
+        {"label":"2.- Gastos por Participación","category":"match_organisation_expense","amount":-209.935695},
+        {"label":"3.- Remuneraciones Plantel Profesional","category":"wages_squad","amount":-959.52021},
+        {"label":"4.- Remuneraciones Cuerpo Técnico","category":"wages_squad","amount":-578.535725},
+        {"label":"5.- Otros Gastos Deportivos Fútbol Profesional","category":"wages_squad","amount":-574.892591},
+        {"label":"6.- Costo de Venta de Jugadores","category":"player_amortisation","amount":-55.749224},
+        {"label":"7.- Gastos Relacionados por Venta de Jugadores","category":"other_expenses","amount":-661.02106},
+        {"label":"8.- Gastos por Préstamos de Jugadores Recibidos","category":"other_expenses","amount":-211.336125},
+        {"label":"9.- Gastos de Fútbol Amateur","category":"youth_other_sports_expense","amount":-514.603579},
+        {"label":"10.- Gastos de Comercialización","category":"admin_general_expense","amount":-121.054758},
+        {"label":"Remuneraciones Otras Actividades Deportivas","category":"youth_other_sports_expense","amount":-695.324897},
+        {"label":"Resto de Gastos Otras Actividades Deportivas","category":"youth_other_sports_expense","amount":-203.122781},
+        {"label":"Remuneraciones de Instituciones Educativas","category":"education_expense","amount":-514.770625},
+        {"label":"Resto de Gastos de Instituciones Educativas","category":"education_expense","amount":-132.811453},
+        {"label":"Gastos de Administración","category":"admin_general_expense","amount":-899.449707},
+        {"label":"Gastos Financieros","category":"admin_general_expense","amount":-114.631443}
+      ]
+    },
+    "2025": {
+      "currency": "ARS",
+      "fx": {"ref":"ARS@2025-06-30","source":"market_close"},
+      "source_id": "gimnasiaesgrima-ar-presupuesto-2024-2025",
+      "revenue": [
+        {"label":"1.- Recursos por Venta de Entradas","category":"matchday_competition","amount":146.9122},
+        {"label":"2.- Recursos por Participación","category":"competition_bonus","amount":90.420892},
+        {"label":"3.- Recursos por Venta de Abonos Estadio","category":"season_tickets","amount":1237.36},
+        {"label":"4.- Retransmisión y Derechos de TV","category":"broadcasting","amount":3536.236114},
+        {"label":"5.- Marketing y Publicidad","category":"sponsorship_commercial","amount":1671.99996},
+        {"label":"6.- Recursos por Venta de Jugadores","category":"player_sales","amount":8244.41},
+        {"label":"8.- Derechos de Formación y Mecanismo de Solidaridad","category":"other_income","amount":99.354902},
+        {"label":"9.- Otros Recursos de Gestión por Fútbol","category":"other_income","amount":272.9516},
+        {"label":"Recursos de Cuotas Sociales","category":"member_dues","amount":6613.479222},
+        {"label":"Recursos de Otras Actividades Deportivas","category":"other_sports","amount":1053.966726},
+        {"label":"Recursos de Instituciones Educativas","category":"education","amount":1137.057902},
+        {"label":"Otros Recursos Ordinarios","category":"other_income","amount":23.159001}
+      ],
+      "expenses": [
+        {"label":"1.- Gastos Explotación del Estadio","category":"match_organisation_expense","amount":-1361.042516},
+        {"label":"2.- Gastos por Participación","category":"match_organisation_expense","amount":-549.817987},
+        {"label":"3.- Remuneraciones Plantel Profesional","category":"wages_squad","amount":-4200.952278},
+        {"label":"4.- Remuneraciones Cuerpo Técnico","category":"wages_squad","amount":-785.4077},
+        {"label":"5.- Otros Gastos Deportivos Fútbol Profesional","category":"wages_squad","amount":-2095.44727},
+        {"label":"7.- Gastos Relacionados por Venta de Jugadores","category":"other_expenses","amount":-2213.263345},
+        {"label":"9.- Gastos de Fútbol Amateur","category":"youth_other_sports_expense","amount":-1656.823778},
+        {"label":"10.- Gastos de Comercialización","category":"admin_general_expense","amount":-478.208695},
+        {"label":"Remuneraciones Otras Actividades Deportivas","category":"youth_other_sports_expense","amount":-1842.764187},
+        {"label":"Resto de Gastos Otras Actividades Deportivas","category":"youth_other_sports_expense","amount":-908.06598},
+        {"label":"Remuneraciones de Instituciones Educativas","category":"education_expense","amount":-1206.230365},
+        {"label":"Resto de Gastos de Instituciones Educativas","category":"education_expense","amount":-270.104262},
+        {"label":"Gastos de Administración","category":"admin_general_expense","amount":-2358.079648},
+        {"label":"Gastos Financieros","category":"admin_general_expense","amount":-32.621198}
+      ]
+    }
+  },
+  "squad_transfers": [],
+  "results": {},
+  "titles": [],
+  "extras": {"budget_assumptions":{},"budget_financial":{},"budget_investments":{}}
+}

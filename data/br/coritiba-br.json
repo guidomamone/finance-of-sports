@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "coritiba-br",
+    "name": "Coritiba Sociedade Anônima do Futebol - SAF",
+    "display_name": "Coritiba",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "coritiba-br-demonstracoes-2022-2023",
+      "club_id": "coritiba-br",
+      "title": "Demonstrações Contábeis, Exercícios findos em 31 de dezembro de 2023 e 2022 (publicidade legal, Diário Indústria&Comércio)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://coritiba.com.br/"
+    },
+    {
+      "id": "coritiba-br-demonstracoes-2024",
+      "club_id": "coritiba-br",
+      "title": "Demonstrações Contábeis, Exercícios findos em 31 de dezembro de 2024 e 2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://coritiba.com.br/"
+    },
+    {
+      "id": "coritiba-br-wf-2024-2025-ef0cf145",
+      "club_id": "coritiba-br",
+      "title": "Coritiba Sociedade Anônima do Futebol - SAF — wf-2024-2025-ef0cf145 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"sinconfirmar","name":"Gestión actual","first_year":2023,"last_year":2024}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "BRL",
+      "source_id": "coritiba-br-demonstracoes-2022-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": "sinconfirmar",
+      "fx": {"ref":"BRL@2023-12-31"},
+      "revenue": [
+        {"label":"Direitos de Transmissão de TV","category":"broadcasting","amount":33.523841,"disclosure":"detailed"},
+        {"label":"Mensalidades de Sócios","category":"member_dues","amount":12.909871,"disclosure":"detailed"},
+        {"label":"Patrimoniais","category":"member_dues","amount":8.682417,"disclosure":"detailed"},
+        {"label":"Patrocínios/Subvenção","category":"sponsorship_commercial","amount":7.347865,"disclosure":"detailed"},
+        {"label":"Competições/Bilheteria","category":"matchday_competition","amount":3.840888,"disclosure":"detailed"},
+        {"label":"Transações de Atletas","category":"player_sales","amount":3.181675,"disclosure":"detailed"},
+        {"label":"Outras Receitas","category":"other_income","amount":1.079841,"disclosure":"detailed"},
+        {"label":"Venda de Mercadorias","category":"sponsorship_commercial","amount":0.046513,"disclosure":"detailed"},
+        {"label":"(-) Tributos sobre Receitas","category":"other_income","amount":-3.775655,"disclosure":"detailed"},
+        {"label":"(-) Taxas Federativas e Direito de Arena","category":"other_income","amount":-2.221018,"disclosure":"detailed"},
+        {
+          "label": "Receita com cessão de 20% dos direitos comerciais à LCP/Liga Forte União (líquida da provisão do TEF de R$7.145.600)",
+          "category": "other_income",
+          "amount": 152.0344,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {"label":"Pessoal, Benefícios e Encargos sociais (futebol)","category":"wages_squad","amount":-44.494312,"disclosure":"detailed"},
+        {"label":"Direito de Uso de Imagem","category":"wages_squad","amount":-18.875392,"disclosure":"detailed"},
+        {"label":"Amortização de Direitos Econômicos de Atletas","category":"player_amortisation","amount":-13.235967,"disclosure":"detailed"},
+        {"label":"Serviços de Terceiros (administrativo)","category":"admin_general_expense","amount":-12.68462,"disclosure":"detailed"},
+        {
+          "label": "Pagamento de dívidas do Coritiba Foot Ball Club (recuperação judicial, parcelamentos tributários, empréstimos e serviços contratados)",
+          "category": "other_expenses",
+          "amount": -65.872826,
+          "disclosure": "aggregated"
+        },
+        {"label":"Pessoal, Benefícios e Encargos Sociais (administrativo)","category":"admin_general_expense","amount":-6.197082,"disclosure":"detailed"},
+        {"label":"Gastos com Cessão Temporária de Atletas","category":"player_amortisation","amount":-4.498408,"disclosure":"detailed"},
+        {"label":"Viagens e Estadias","category":"match_organisation_expense","amount":-3.762917,"disclosure":"detailed"},
+        {"label":"Despesas com Jogos","category":"match_organisation_expense","amount":-2.837899,"disclosure":"detailed"},
+        {"label":"Serviços de Terceiros (futebol)","category":"match_organisation_expense","amount":-2.338279,"disclosure":"detailed"},
+        {"label":"Despesas Administrativa com Liga Forte","category":"admin_general_expense","amount":-1.08315,"disclosure":"detailed"},
+        {"label":"Outras Despesas Administrativas","category":"admin_general_expense","amount":-1.150626,"disclosure":"detailed"},
+        {"label":"Material Esportivo","category":"match_organisation_expense","amount":-0.950161,"disclosure":"detailed"},
+        {"label":"Energia Elétrica, Gás, Água e Telefonia (administrativo)","category":"admin_general_expense","amount":-0.553767,"disclosure":"detailed"},
+        {"label":"Conservação de Bens Patrimoniais","category":"admin_general_expense","amount":-0.777025,"disclosure":"detailed"},
+        {"label":"Energia Elétrica, Gás, Água e Telefonia (futebol)","category":"match_organisation_expense","amount":-0.497097,"disclosure":"detailed"},
+        {"label":"Materiais de Almoxarifado","category":"admin_general_expense","amount":-0.341869,"disclosure":"detailed"},
+        {"label":"Impostos e Taxas (futebol)","category":"admin_general_expense","amount":-0.405673,"disclosure":"detailed"},
+        {"label":"Outros Custos (futebol)","category":"other_expenses","amount":-0.785037,"disclosure":"detailed"},
+        {"label":"Impostos e Taxas (administrativo)","category":"admin_general_expense","amount":-0.241472,"disclosure":"detailed"},
+        {
+          "label": "Outras Despesas Administrativas — Multas e Honorários / Encargos Legais",
+          "category": "admin_general_expense",
+          "amount": -0.13611,
+          "disclosure": "detailed"
+        },
+        {"label":"Propaganda, Publicidade e Eventos","category":"admin_general_expense","amount":-0.146927,"disclosure":"detailed"},
+        {"label":"Custos das Mercadorias Vendidas","category":"admin_general_expense","amount":-0.02555,"disclosure":"detailed"},
+        {"label":"Formação de Atletas (reversão/crédito no exercício)","category":"youth_other_sports_expense","amount":0.293017,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.359721,"tax":0,"gross_debt":0,"cash":11.830912},
+      "official_totals": {"revenue":216.650638,"expenses":181.59915,"net_result":34.691767}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "BRL",
+      "source_id": "coritiba-br-demonstracoes-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "sinconfirmar",
+      "fx": {"ref":"BRL@2024-12-31"},
+      "revenue": [
+        {"label":"Mensalidades de associados","category":"member_dues","amount":22.09726,"disclosure":"detailed"},
+        {"label":"Transações de atletas","category":"player_sales","amount":18.003566,"disclosure":"detailed"},
+        {"label":"Patrocínios/subvenção","category":"sponsorship_commercial","amount":17.252073,"disclosure":"detailed"},
+        {"label":"Outras receitas","category":"other_income","amount":10.644365,"disclosure":"detailed"},
+        {"label":"Direitos de transmissão de TV","category":"broadcasting","amount":9.752644,"disclosure":"detailed"},
+        {"label":"Patrimoniais","category":"member_dues","amount":9.494258,"disclosure":"detailed"},
+        {"label":"Competições/bilheteria","category":"matchday_competition","amount":3.60344,"disclosure":"detailed"},
+        {"label":"Receitas com vendas de mercadorias","category":"sponsorship_commercial","amount":0.897827,"disclosure":"detailed"},
+        {"label":"(-) Tributos sobre receitas","category":"other_income","amount":-3.501142,"disclosure":"detailed"},
+        {"label":"(-) Taxas federativas/direito de arena","category":"other_income","amount":-1.241584,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Pessoal, benefícios e encargos sociais (futebol)","category":"wages_squad","amount":-56.065075,"disclosure":"detailed"},
+        {"label":"Pessoal, benefícios e encargos sociais (administrativo)","category":"admin_general_expense","amount":-32.419142,"disclosure":"detailed"},
+        {"label":"Direito de uso de imagem","category":"wages_squad","amount":-25.447114,"disclosure":"detailed"},
+        {"label":"Amortização de direitos econômicos de atletas","category":"player_amortisation","amount":-21.918799,"disclosure":"detailed"},
+        {
+          "label": "Outras (despesas) receitas operacionais e não operacionais (Recuperação Judicial, parcelamentos e repasses à Associação)",
+          "category": "other_expenses",
+          "amount": -33.76194,
+          "disclosure": "aggregated"
+        },
+        {"label":"Tecnologia da informação","category":"admin_general_expense","amount":-8.80576,"disclosure":"detailed"},
+        {"label":"Serviços de terceiros (administrativo)","category":"admin_general_expense","amount":-6.656316,"disclosure":"detailed"},
+        {"label":"Despesas com Jogos","category":"match_organisation_expense","amount":-6.191641,"disclosure":"detailed"},
+        {"label":"Outras despesas administrativas","category":"admin_general_expense","amount":-4.692763,"disclosure":"detailed"},
+        {"label":"Conservação de bens patrimoniais","category":"admin_general_expense","amount":-3.950034,"disclosure":"detailed"},
+        {"label":"Viagens e estadias","category":"match_organisation_expense","amount":-3.609488,"disclosure":"detailed"},
+        {"label":"Multas e honorários / encargos legais","category":"admin_general_expense","amount":-3.591756,"disclosure":"detailed"},
+        {"label":"Gastos com cessão temporária de atletas","category":"player_amortisation","amount":-2.987701,"disclosure":"detailed"},
+        {"label":"Outros custos (futebol)","category":"other_expenses","amount":-2.692548,"disclosure":"detailed"},
+        {"label":"Energia elétrica, gás, água e telefonia","category":"admin_general_expense","amount":-2.027238,"disclosure":"detailed"},
+        {"label":"Formação de atletas","category":"youth_other_sports_expense","amount":-1.505257,"disclosure":"detailed"},
+        {"label":"Locações de equipamentos e imóveis","category":"admin_general_expense","amount":-1.161786,"disclosure":"detailed"},
+        {"label":"Material esportivo","category":"match_organisation_expense","amount":-1.013156,"disclosure":"detailed"},
+        {"label":"Gastos com nova filial (A&B)","category":"admin_general_expense","amount":-0.968111,"disclosure":"detailed"},
+        {"label":"Materiais de almoxarifado","category":"admin_general_expense","amount":-0.844676,"disclosure":"detailed"},
+        {"label":"Propaganda, publicidade e eventos","category":"admin_general_expense","amount":-0.546315,"disclosure":"detailed"},
+        {"label":"Custos das mercadorias vendidas","category":"admin_general_expense","amount":-0.430587,"disclosure":"detailed"},
+        {"label":"Serviços de terceiros (futebol)","category":"match_organisation_expense","amount":-0.413043,"disclosure":"detailed"},
+        {"label":"Impostos e taxas (futebol)","category":"admin_general_expense","amount":-0.119313,"disclosure":"detailed"},
+        {"label":"Impostos e taxas (administrativo)","category":"admin_general_expense","amount":-0.071025,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.515749,"tax":0,"gross_debt":49.4,"cash":3.623921},
+      "official_totals": {"revenue":87.002707,"expenses":221.889584,"net_result":-139.402626}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "coritiba-br-wf-2024-2025-ef0cf145",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Direitos de Transmissão de TV","category":"broadcasting","amount":13.543227,"disclosure":"aggregated"},
+        {"label":"Mensalidades de Associados","category":"member_dues","amount":26.236358,"disclosure":"aggregated"},
+        {"label":"Transações de Atletas","category":"player_sales","amount":41.408085,"disclosure":"aggregated"},
+        {"label":"Competições/Bilheteria","category":"matchday_competition","amount":9.155964,"disclosure":"aggregated"},
+        {"label":"Patrocínios/Subvenção","category":"sponsorship_commercial","amount":19.173611,"disclosure":"aggregated"},
+        {"label":"Patrimoniais","category":"member_dues","amount":7.05131,"disclosure":"aggregated"},
+        {"label":"Receitas com Vendas de Mercadorias","category":"sponsorship_commercial","amount":12.53858,"disclosure":"aggregated"},
+        {"label":"Outras Receitas","category":"other_income","amount":9.818733,"disclosure":"aggregated"},
+        {"label":"Tributos Sobre Receitas","category":"other_income","amount":-5.044851,"disclosure":"aggregated"},
+        {"label":"Taxas Federativas/Direito de Arena","category":"other_income","amount":-0.998493,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Futebol","category":"lump_football_operations_expense","amount":-89.80156,"disclosure":"aggregated"},
+        {"label":"Futebol das Categorias de Base","category":"youth_other_sports_expense","amount":-17.42354,"disclosure":"aggregated"},
+        {"label":"Custos das Mercadorias Vendidas","category":"admin_general_expense","amount":-5.102791,"disclosure":"aggregated"},
+        {"label":"Amortização de Direitos Econômicos de Atletas","category":"player_amortisation","amount":-18.545239,"disclosure":"aggregated"},
+        {"label":"Formação de Atletas","category":"youth_other_sports_expense","amount":-0.236121,"disclosure":"aggregated"},
+        {"label":"Pessoal, Benefícios e Encargos Sociais","category":"admin_general_expense","amount":-33.964204,"disclosure":"aggregated"},
+        {"label":"Conservação de Bens Patrimoniais","category":"admin_general_expense","amount":-5.027648,"disclosure":"aggregated"},
+        {"label":"Multas e Honorários / Encargos Legais","category":"admin_general_expense","amount":-3.023747,"disclosure":"aggregated"},
+        {"label":"Serviços de Terceiros","category":"admin_general_expense","amount":-12.925223,"disclosure":"aggregated"},
+        {"label":"Energia Elétrica, Gás, Água e Telefonia","category":"admin_general_expense","amount":-1.549198,"disclosure":"aggregated"},
+        {"label":"Propaganda, Publicidade e Eventos","category":"admin_general_expense","amount":-0.09652,"disclosure":"aggregated"},
+        {"label":"Materiais de Almoxarifado","category":"admin_general_expense","amount":-1.996713,"disclosure":"aggregated"},
+        {"label":"Impostos e Taxas","category":"admin_general_expense","amount":-0.118022,"disclosure":"aggregated"},
+        {"label":"Tecnologia da Informação","category":"admin_general_expense","amount":-9.285786,"disclosure":"aggregated"},
+        {"label":"Locações de Equipamentos e Imóveis","category":"admin_general_expense","amount":-1.662051,"disclosure":"aggregated"},
+        {"label":"Outras Despesas Administrativas","category":"admin_general_expense","amount":-11.601262,"disclosure":"aggregated"},
+        {"label":"Outras (Despesas) Receitas Operacionais e Não Operacionais","category":"other_expenses","amount":-22.887789,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-11.608388,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":132.882524,"expenses":235.247414,"net_result":-113.973278},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Futebol",
+            "side": "expense",
+            "amount": 89.80156,
+            "reason": "Claude 2026-10-19 (subagente Sonnet, media): La nota 21 abre por naturaleza (pessoal 59,4M, direito de imagem 27,5M, jogos 6,6M...) solo el total combinado profesional+base; no dice cuanto de cada naturaleza es de profesional. Repartirlo seria inventar. Por eso el bolsón lump_football_operations_expense es la salida fiel para esta fila y la base (17,4M) queda aparte. Atencion: es una decision de estructura; si Guido prefi [Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md L226 (DRE: 'Futebol (89.801.560)]"
+          }
+        ],
+        "included_in": {
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,16 +1,16 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  athleticclub: { 2025: 'es-laliga' },
-  atleticomadrid: { 2025: 'es-laliga' },
-  celtavigo: { 2025: 'es-laliga' },
-  deportivoalaves: { 2025: 'es-laliga' },
-  fcbarcelona: { 2025: 'es-laliga' },
-  realbetis: { 2025: 'es-laliga' },
-  realmadrid: { 2025: 'es-laliga' },
-  sevillafc: { 2025: 'es-laliga' },
-  valenciacf: { 2025: 'es-laliga' },
-  villarrealcf: { 2024: 'es-laliga' },
+  'athleticclub-es': { 2025: 'es-laliga' },
+  'atleticomadrid-es': { 2025: 'es-laliga' },
+  'celtavigo-es': { 2025: 'es-laliga' },
+  'deportivoalaves-es': { 2025: 'es-laliga' },
+  'fcbarcelona-es': { 2025: 'es-laliga' },
+  'realbetis-es': { 2025: 'es-laliga' },
+  'realmadrid-es': { 2025: 'es-laliga' },
+  'sevillafc-es': { 2025: 'es-laliga' },
+  'valenciacf-es': { 2025: 'es-laliga' },
+  'villarrealcf-es': { 2024: 'es-laliga' },
 
   'getafe-es': { 2024: 'es-laliga', 2025: 'es-laliga' },
   'girona-es': { 2020: 'es-segunda', 2025: 'es-laliga' },

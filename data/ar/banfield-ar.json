@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "banfield-ar",
+    "name": "Club Atlético Banfield",
+    "display_name": "Banfield",
+    "country": "AR",
+    "reporting_currency": "ARS",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "banfield-ar-memoria-y-balance-2019-2020",
+      "club_id": "banfield-ar",
+      "title": "Memoria y Balance General, 116° Ejercicio Económico (1°/7/2019 al 30/6/2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"barbuto","name":"Barbuto (2018-2021)","first_year":2020,"last_year":2020}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "ARS",
+      "source_id": "banfield-ar-memoria-y-balance-2019-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": "barbuto",
+      "fx": {"ref":"ARS@2020-06-30","source":"market_close"},
+      "revenue": [
+        {"label":"Transferencias y Préstamos","category":"player_sales","amount":132.6875,"disclosure":"detailed"},
+        {"label":"Ingresos por Socios","category":"member_dues","amount":63.385042,"disclosure":"detailed"},
+        {"label":"Formación de Jugadores","category":"player_sales","amount":50.305977,"disclosure":"detailed"},
+        {"label":"Publicidad","category":"sponsorship_commercial","amount":27.699428,"disclosure":"detailed"},
+        {"label":"Entradas Grales., Plateas, Palcos y Abonos","category":"matchday_competition","amount":22.284826,"disclosure":"detailed"},
+        {"label":"Fútbol Amateur - Derechos","category":"player_sales","amount":4.547082,"disclosure":"detailed"},
+        {"label":"Pileta Natación (Predio)","category":"other_sports","amount":2.987267,"disclosure":"detailed"},
+        {"label":"Estacionamiento (Predio)","category":"other_income","amount":1.47115,"disclosure":"detailed"},
+        {"label":"Colonia (Predio)","category":"other_sports","amount":0.983501,"disclosure":"detailed"},
+        {"label":"Acceso a Predio","category":"other_income","amount":0.13724,"disclosure":"detailed"},
+        {"label":"Alquiler (Predio)","category":"other_income","amount":0.031559,"disclosure":"detailed"},
+        {"label":"Escuela de Fútbol (Departamento Deportes)","category":"youth_football","amount":6.346066,"disclosure":"detailed"},
+        {"label":"Hockey","category":"other_sports","amount":5.2589,"disclosure":"detailed"},
+        {"label":"Futsal","category":"other_sports","amount":1.281824,"disclosure":"detailed"},
+        {"label":"Voley","category":"other_sports","amount":1.184147,"disclosure":"detailed"},
+        {"label":"Tenis","category":"other_sports","amount":1.144882,"disclosure":"detailed"},
+        {"label":"Handball","category":"other_sports","amount":1.12594,"disclosure":"detailed"},
+        {"label":"Liga de fútbol","category":"other_sports","amount":1.03932,"disclosure":"detailed"},
+        {"label":"Patín","category":"other_sports","amount":0.710011,"disclosure":"detailed"},
+        {"label":"Gimnasia Deportiva","category":"other_sports","amount":0.688741,"disclosure":"detailed"},
+        {"label":"Fútbol femenino (Departamento Deportes)","category":"womens_football","amount":0.184004,"disclosure":"detailed"},
+        {"label":"Taekwondo","category":"other_sports","amount":0.161673,"disclosure":"detailed"},
+        {"label":"Acondicionamiento Físico","category":"other_sports","amount":0.076092,"disclosure":"detailed"},
+        {"label":"Ajedrez","category":"other_sports","amount":0.051627,"disclosure":"detailed"},
+        {"label":"Arancel Enseñanza (Instituto CAB)","category":"education","amount":28.049127,"disclosure":"detailed"},
+        {"label":"Televisaciones","category":"broadcasting","amount":164.620005,"disclosure":"detailed"},
+        {"label":"Ingresos Varios","category":"other_income","amount":187.351483,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Concentraciones, Entrenamientos y Alquileres","category":"wages_squad","amount":-4.305518,"disclosure":"detailed"},
+        {"label":"Dpto. Médico, Estudios, Medicamentos y Accesorios (Fútbol Profesional)","category":"wages_squad","amount":-6.326139,"disclosure":"detailed"},
+        {"label":"Indumentaria y Elementos Deportivos (Fútbol Profesional)","category":"wages_squad","amount":-0.3823,"disclosure":"detailed"},
+        {"label":"Primas Anuales","category":"wages_squad","amount":-93.350381,"disclosure":"detailed"},
+        {"label":"Proveduría","category":"wages_squad","amount":-5.080915,"disclosure":"detailed"},
+        {"label":"Seguro y Viáticos Jugadores","category":"wages_squad","amount":-0.689111,"disclosure":"detailed"},
+        {"label":"Sueldos y Cargas Sociales (Fútbol Profesional)","category":"wages_squad","amount":-51.461734,"disclosure":"detailed"},
+        {"label":"Traslados Partidos y Pretemporadas","category":"wages_squad","amount":-2.388711,"disclosure":"detailed"},
+        {"label":"Costo y Custodia Espectáculo","category":"match_organisation_expense","amount":-25.80476,"disclosure":"detailed"},
+        {
+          "label": "Prop. Mant. Administración y Gastos Generales (Fútbol Profesional)",
+          "category": "admin_general_expense",
+          "amount": -15.137768,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sector Fútbol Amateur (formación de jugadores, capitalizado — Nota 4)",
+          "category": "youth_other_sports_expense",
+          "amount": -120.335465,
+          "disclosure": "detailed",
+          "items": [
+            ["Alquileres, Alojamientos y Seguros",-2.09688],
+            ["Comidas y Cocina Pensionados Dormys",-7.033706],
+            ["Convenio Liga",-2.007872],
+            ["Dpto. Médico, Estudios, Medicamentos y Accesorios",-12.802727],
+            ["Indumentaria y Elementos Deportivos",-0.062964],
+            ["Inscripción Contratos",-0.102328],
+            ["Mantenimiento, Administración y Reformas",-46.084856],
+            ["Partidos Divisiones Inferiores",-0.57485],
+            ["Salarios, Honorarios, Innovación y Tecnología",-47.373758],
+            ["Traslados y Viáticos Jugadores",-2.195524]
+          ]
+        },
+        {
+          "label": "Apropiación de Costos Fútbol Amateur (reversión por capitalización, Nota 4)",
+          "category": "youth_other_sports_expense",
+          "amount": 120.335465,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sector Estadio (mantenimiento, servicios y personal)",
+          "category": "match_organisation_expense",
+          "amount": -20.695883,
+          "disclosure": "detailed",
+          "items": [
+            ["Gtos. Generales, Mantenimiento y Reparaciones",-9.187674],
+            ["Servicios (Teléfono, Agua, Gas, Electricidad)",-2.536533],
+            ["Sueldos y Cargas Sociales",-8.971676]
+          ]
+        },
+        {
+          "label": "Sector Administración Sede Social",
+          "category": "admin_general_expense",
+          "amount": -36.532339,
+          "disclosure": "detailed",
+          "items": [
+            ["Gastos e Intereses Bancarios",-0.978272],
+            ["Gastos Generales",-0.522663],
+            ["Honorarios",-0.142397],
+            ["Mantenimiento y Reparaciones",-0.347012],
+            ["Remuneraciones y Cargas Sociales",-33.433677],
+            ["Servicios (Teléfono, Agua, Gas, Electricidad)",-1.108318]
+          ]
+        },
+        {
+          "label": "Sector Predio",
+          "category": "youth_other_sports_expense",
+          "amount": -69.869857,
+          "disclosure": "detailed",
+          "items": [
+            ["Gastos Generales y Administración",-12.554649],
+            ["Proyecto formación de Jugadores Extranjeros",-6.3646],
+            ["Remuneraciones y Cargas Sociales",-43.89242],
+            ["Reparaciones y Mantenimiento",-3.286247],
+            ["Servicios (Electricidad, Teléfono, Agua, Gas)",-3.771941]
+          ]
+        },
+        {"label":"Escuela de Fútbol (Departamento Deportes, gasto)","category":"youth_other_sports_expense","amount":-4.509135,"disclosure":"detailed"},
+        {"label":"Fútbol femenino (Departamento Deportes, gasto)","category":"youth_other_sports_expense","amount":-1.035389,"disclosure":"detailed"},
+        {
+          "label": "Resto de Departamento Deportes (Hockey, Futsal, Voley, Tenis, Handball, Liga de fútbol, Patín, Gimnasia, Taekwondo, Acond. Físico, Ajedrez, Colonia, gastos generales)",
+          "category": "youth_other_sports_expense",
+          "amount": -28.006832,
+          "disclosure": "detailed",
+          "items": [
+            ["Acondicionamiento físico",-0.120816],
+            ["Ajedrez",-0.266613],
+            ["Colonia Vacaciones",-0.474394],
+            ["Futsal",-2.119345],
+            ["Gastos Departamento de Deportes",-2.630266],
+            ["Gimnasia Deportiva",-1.499304],
+            ["Handball",-1.521199],
+            ["Hockey",-7.874299],
+            ["Liga de fútbol",-2.222729],
+            ["Patín",-1.967646],
+            ["Pileta Natación",-1.562513],
+            ["Taekwondo",-0.474432],
+            ["Tenis",-2.656003],
+            ["Voley",-2.617273]
+          ]
+        },
+        {
+          "label": "Instituto CAB (Gastos Varios + Remuneraciones y Cargas Sociales)",
+          "category": "education_expense",
+          "amount": -39.533546,
+          "disclosure": "detailed",
+          "items": [["Gastos Varios",-4.571453],["Remuneraciones y Cargas Sociales",-34.962093]]
+        },
+        {"label":"Depreciaciones (Gastos Generales)","category":"depreciation","amount":-113.965732,"disclosure":"detailed"},
+        {"label":"Objetivos (premios por objetivos deportivos, Gastos Generales)","category":"wages_squad","amount":-25.469312,"disclosure":"detailed"},
+        {
+          "label": "Resto de Gastos Generales (Abonos/Mantenimiento, Honorarios, Insumos, Juicios, Socios/Comunicación)",
+          "category": "admin_general_expense",
+          "amount": -100.937948,
+          "disclosure": "detailed",
+          "items": [
+            ["Abonos, Mantenimiento y Otros gastos",-12.383574],
+            ["Honorarios",-6.720166],
+            ["Insumos Generales",-0.71578],
+            ["Juicios",-73.552708],
+            ["Socios, Comunicación y otros",-7.565721]
+          ]
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":19.86247,"tax":0,"gross_debt":246.057622,"cash":8.57802},
+      "official_totals": {"revenue":705.794415,"expenses":645.483308,"net_result":80.173576}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": [],
+  "extras": {"budget_assumptions":{},"budget_financial":{},"budget_investments":{}}
+}

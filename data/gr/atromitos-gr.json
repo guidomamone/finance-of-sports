@@ -1,0 +1,405 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "atromitos-gr",
+    "name": "A.P.S. Atromitos Athinon 1923 P.A.E.",
+    "display_name": "Atromitos",
+    "country": "GR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "atromitos-gr-notes-2015-16",
+      "club_id": "atromitos-gr",
+      "title": "A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_notes_2015-16 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "atromitos-gr-fs-2019-06-30",
+      "club_id": "atromitos-gr",
+      "title": "A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_FS_2019-06-30 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "atromitos-gr-notes-2020-06-30",
+      "club_id": "atromitos-gr",
+      "title": "A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_notes_2020-06-30 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "atromitos-gr-notes-2021-06-30",
+      "club_id": "atromitos-gr",
+      "title": "A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_notes_2021-06-30 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "atromitos-gr-fs-2022-06-30",
+      "club_id": "atromitos-gr",
+      "title": "A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_FS_2022-06-30 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "atromitos-gr-fs-2023-06-30",
+      "club_id": "atromitos-gr",
+      "title": "A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_FS_2023-06-30 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "atromitos-gr-fs-2024-06-30",
+      "club_id": "atromitos-gr",
+      "title": "A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_FS_2024-06-30 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "atromitos-gr-fs-2025-06-30",
+      "club_id": "atromitos-gr",
+      "title": "A.P.S. Atromitos Athinon 1923 P.A.E. — Atromitos_FS_2025-06-30 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-06-30",
+      "currency": "EUR",
+      "source_id": "atromitos-gr-notes-2015-16",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2016-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":4.214679,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":0.878168,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.109951,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-4.938658,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.653858,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.111137,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000859,"tax":0,"gross_debt":0.50325,"cash":0.08901},
+      "official_totals": {"revenue":5.202798,"expenses":5.703653,"net_result":-0.501714},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.016146},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.017005},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":4.214679,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 4.938658,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2015-16.md: Κόστος πωλήσεων 4.938.658 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+          }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "atromitos-gr-fs-2019-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.155532,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":2.352325,"disclosure":"aggregated"},
+        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":0.234735,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.201512,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από συμμετοχή UEFA","category":"competition_bonus","amount":0.377719,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από UEFA Ακαδημιών","category":"youth_football","amount":0.331917,"disclosure":"aggregated"},
+        {"label":"Έσοδα από αποζημιώσεις","category":"other_income","amount":0.001588,"disclosure":"aggregated"},
+        {"label":"Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.064189,"disclosure":"aggregated"},
+        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.024,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.019555,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-5.233558,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.304293,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.038471,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.135736,"tax":0,"gross_debt":2.86172,"cash":0.037404},
+      "official_totals": {"revenue":3.763073,"expenses":5.576322,"net_result":-1.948985},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000001},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.135737},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 5.233558,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "atromitos-gr-notes-2020-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [
+        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.140609,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":2.187,"disclosure":"aggregated"},
+        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":0.480736,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.263893,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από συμμετοχή UEFA","category":"competition_bonus","amount":0.625816,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από UEFA Ακαδημιών","category":"youth_football","amount":0.349805,"disclosure":"aggregated"},
+        {"label":"Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.02027,"disclosure":"aggregated"},
+        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.0208,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.023731,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-5.065443,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.290308,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.041713,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.186933,"tax":0,"gross_debt":1.252979,"cash":0.275174},
+      "official_totals": {"revenue":4.112661,"expenses":5.397464,"net_result":-1.471737},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000001},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.186934},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 5.065443,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2020-06-30.md: Κόστος πωλήσεων 5.065.443 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "atromitos-gr-notes-2021-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":0.365,"disclosure":"aggregated"},
+        {"label":"Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό","category":"player_sales","amount":0.492266,"disclosure":"aggregated"},
+        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":1.714093,"disclosure":"aggregated"},
+        {"label":"Κέρδη από πωλήσεις παγίων","category":"other_income","amount":0.001532,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.009653,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από UEFA Ακαδημιών","category":"youth_football","amount":0.33311,"disclosure":"aggregated"},
+        {"label":"Έσοδα από ΕΠΟ - Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.803089,"disclosure":"aggregated"},
+        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.0088,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.012234,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-5.66824,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.238059,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.0231,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.08789,"tax":0,"gross_debt":1.780686,"cash":0.120113},
+      "official_totals": {"revenue":3.739776,"expenses":5.929399,"net_result":-2.277513},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000001},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.087891},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 5.66824,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "atromitos-gr-fs-2022-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.111603,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":0.365,"disclosure":"aggregated"},
+        {"label":"Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό","category":"player_sales","amount":0.32,"disclosure":"aggregated"},
+        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":2.541299,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.009653,"disclosure":"aggregated"},
+        {"label":"Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.789816,"disclosure":"aggregated"},
+        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.016409,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα και ανόργανα","category":"other_income","amount":0.069231,"disclosure":"aggregated"},
+        {"label":"Μη επιστρέω ποσό επιστρεπτέας προκαταβολής","category":"other_income","amount":0.1,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-6.766095,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.365355,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.030874,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.147452,"tax":0,"gross_debt":5.435877,"cash":0.049776},
+      "official_totals": {"revenue":4.323011,"expenses":7.162324,"net_result":-2.986765},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.147452},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 6.766095,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_FS_2022-06-30.md: Κόστος πωλήσεων 6.766.094,58 (visto en 2023 L243 como comparativo; estado de resultados por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "atromitos-gr-fs-2023-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.124447,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":0.365,"disclosure":"aggregated"},
+        {"label":"Από παραχώρηση ποδ/στών στο εσωτερικό-εξωτερικό","category":"player_sales","amount":1.3,"disclosure":"aggregated"},
+        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":2.208817,"disclosure":"aggregated"},
+        {"label":"Κέρδη από πωλήσεις παγίων","category":"other_income","amount":0.006048,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.120656,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από συμμετοχή UEFA","category":"competition_bonus","amount":0.058118,"disclosure":"aggregated"},
+        {"label":"Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος","category":"competition_bonus","amount":0.758012,"disclosure":"aggregated"},
+        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.023588,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.008189,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-6.612663,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.445239,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.214128,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.361907,"tax":0,"gross_debt":6.915224,"cash":0.04637},
+      "official_totals": {"revenue":4.972875,"expenses":7.272031,"net_result":-2.661063},
+      "adjustments": {
+        "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.361907},{"label":"Φόροι εισοδήματος","amount":0}],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 6.612663,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "atromitos-gr-fs-2024-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Από εισιτήρια αγώνων","category":"matchday_competition","amount":0.107661,"disclosure":"aggregated"},
+        {"label":"Από τηλεοπτικά δικαιώματα","category":"broadcasting","amount":0.365,"disclosure":"aggregated"},
+        {"label":"Από χορηγίες-διαφήμιση","category":"sponsorship_commercial","amount":2.562379,"disclosure":"aggregated"},
+        {"label":"Κέρδη από πωλήσεις παγίων","category":"other_income","amount":0.000403,"disclosure":"aggregated"},
+        {"label":"Επιχορήγηση από Super League-ΕΠΟ","category":"competition_bonus","amount":0.177536,"disclosure":"aggregated"},
+        {"label":"Έσοδα από ΕΠΟ και Έσοδα από Κύπελλο Ελλάδος","category":"competition_bonus","amount":1.516468,"disclosure":"aggregated"},
+        {"label":"Ενοίκια Κυλικείου","category":"other_income","amount":0.023166,"disclosure":"aggregated"},
+        {"label":"Λοιπά έκτακτα και ανόργανα","category":"other_income","amount":0.074992,"disclosure":"aggregated"},
+        {"label":"Ληφθείσες αποζημιώσεις","category":"other_income","amount":0.00247,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-6.619201,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.490468,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.201521,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.650137,"tax":0,"gross_debt":7.950943,"cash":0.028118},
+      "official_totals": {"revenue":4.830076,"expenses":7.31119,"net_result":-3.131251},
+      "adjustments": {
+        "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.650137},{"label":"Φόροι εισοδήματος","amount":0}],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 6.619201,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "atromitos-gr-fs-2025-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":6.283402,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":1.785142,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.011197,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-6.312663,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.533264,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.119211,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.021063,"tax":0,"gross_debt":5.525265,"cash":0.013885},
+      "official_totals": {"revenue":8.079741,"expenses":6.965137,"net_result":0.093541},
+      "adjustments": {
+        "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-1.021063},{"label":"Φόροι εισοδήματος","amount":0}],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":6.283402,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 6.312663,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+          }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

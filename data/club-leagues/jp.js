@@ -1,16 +1,16 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  cerezoosaka: { 2025: 'jp-j1' },
-  fctokyo: { 2025: 'jp-j1' },
-  gambaosaka: { 2025: 'jp-j1' },
-  kashimaantlers: { 2025: 'jp-j1' },
-  kawasakifrontale: { 2025: 'jp-j1' },
-  nagoyagrampus: { 2025: 'jp-j1' },
-  sanfreccehiroshima: { 2025: 'jp-j1' },
-  urawareddiamonds: { 2025: 'jp-j1' },
-  visselkobe: { 2025: 'jp-j1' },
-  yokohamafmarinos: { 2025: 'jp-j1' },
+  'cerezoosaka-jp': { 2025: 'jp-j1' },
+  'fctokyo-jp': { 2025: 'jp-j1' },
+  'gambaosaka-jp': { 2025: 'jp-j1' },
+  'kashimaantlers-jp': { 2025: 'jp-j1' },
+  'kawasakifrontale-jp': { 2025: 'jp-j1' },
+  'nagoyagrampus-jp': { 2025: 'jp-j1' },
+  'sanfreccehiroshima-jp': { 2025: 'jp-j1' },
+  'urawareddiamonds-jp': { 2025: 'jp-j1' },
+  'visselkobe-jp': { 2025: 'jp-j1' },
+  'yokohamafmarinos-jp': { 2025: 'jp-j1' },
 });
 
 window.LEAGUE_SIZE_BY_YEAR = window.LEAGUE_SIZE_BY_YEAR || {};

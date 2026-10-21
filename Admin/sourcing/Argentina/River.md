@@ -34,7 +34,7 @@ legalizados/firmados**:
   legalizados (2).pdf", 3,7 MB, 65 pág., presentación CNV #3248465. Transcripción vía Mistral OCR
   (escaneado, verificado a mano contra el PDF — encontró y corrigió un dígito transpuesto en
   "Amortización de software", $12.336.254 leído vs. $12.326.254 real). REEMPLAZA el placeholder
-  inventado que tenía este ejercicio desde la Versión 138. Ver `data/ar/river-data.js`.
+  inventado que tenía este ejercicio desde la Versión 138. Ver `data/ar/river-ar-data.js`.
 - `estados-contables-2020-2021-consolidado.pdf` (mismo ejercicio, versión CONSOLIDADA, "EECC 2021
   River Plate legalizados.pdf", 2,0 MB, 63 pág.) — presentación #3241487. Preferir la individual
   para cargar datos (mismo criterio que ya usan Boca/Racing/el resto), esta queda de respaldo.
@@ -119,7 +119,7 @@ una gestión para Guido, no una búsqueda para sourcear solo.**
 https://www.riverplate.com/docs/socios/memoria-YYYY-YYYY.pdf — el dominio oficial de River solo
 publica el reporte de gestión narrativo (fútbol, infraestructura, marca, redes sociales, etc.),
 nunca el balance auditado. Se probaron y confirmaron 7 años directos (2018-19 a 2025) en
-`Clubes/Argentina/River/`, pero NINGUNO tiene estados contables — ver `river-data.js` para el
+`Clubes/Argentina/River/`, pero NINGUNO tiene estados contables — ver `river-ar-data.js` para el
 detalle de este hallazgo. No cargar más años de esta fuente esperando encontrar el balance ahí, no
 está.
 

@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "fctwente-nl",
+    "name": "FC Twente ‘65 B.V.",
+    "display_name": "FC Twente",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "fctwente-nl-jaarrekening-2024-2025",
+      "club_id": "fctwente-nl",
+      "title": "FC Twente ‘65 B.V. — FC-Twente-Jaarrekening-2024-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "fctwente-nl-jaarrekening-2024-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":10.592,"disclosure":"aggregated"},
+        {"label":"Bijdragen in giften en geld","category":"other_income","amount":30.21,"disclosure":"aggregated"},
+        {"label":"Televisiebaten","category":"broadcasting","amount":7.941,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"sponsorship_commercial","amount":0.382,"disclosure":"aggregated"},
+        {"label":"Catering","category":"stadium_other","amount":11.451,"disclosure":"aggregated"},
+        {"label":"Overige baten","category":"other_income","amount":1.114,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":16.469,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Inkoopwaarde van de omzet","category":"other_expenses","amount":-5.413,"disclosure":"aggregated"},
+        {"label":"Lonen en salarissen","category":"wages_squad","amount":-19.504,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"wages_squad","amount":-1.548,"disclosure":"aggregated"},
+        {"label":"Pensioenpremies","category":"wages_squad","amount":-0.224,"disclosure":"aggregated"},
+        {"label":"Autokosten","category":"admin_general_expense","amount":-0.875,"disclosure":"aggregated"},
+        {"label":"Inhuur personeel","category":"wages_squad","amount":-0.993,"disclosure":"aggregated"},
+        {"label":"Overige personeelskosten","category":"admin_general_expense","amount":-1.07,"disclosure":"aggregated"},
+        {"label":"Wedstrijd- en trainingskosten","category":"match_organisation_expense","amount":-6.307,"disclosure":"aggregated"},
+        {"label":"Verkoopkosten","category":"admin_general_expense","amount":-2.831,"disclosure":"aggregated"},
+        {"label":"Huisvestingskosten","category":"admin_general_expense","amount":-6.06,"disclosure":"aggregated"},
+        {"label":"Algemene kosten","category":"admin_general_expense","amount":-3.98,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen (im)materiële vaste activa","category":"depreciation","amount":-3.332,"disclosure":"aggregated"},
+        {"label":"Vergoedingssommen","category":"player_amortisation","amount":-4.695,"disclosure":"aggregated"},
+        {"label":"Hand- en tekengelden","category":"player_amortisation","amount":-0.37,"disclosure":"aggregated"},
+        {"label":"Kosten intermediairs","category":"player_amortisation","amount":-0.878,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.151,"tax":-5.149,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":78.159,"expenses":58.08,"net_result":14.779},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële baten en lasten","amount":-0.151},{"label":"Belastingen resultaat uit gewone bedrijfsuitoefening","amount":-5.149}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

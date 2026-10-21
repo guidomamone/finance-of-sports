@@ -124,9 +124,18 @@
     "titles": {
       "type": "array"
     },
-    "legacy_extras": {
+    "extras": {
       "type": "object",
-      "description": "Contenido editorial de pocos clubes copiado con sus claves originales (sin traducir): finanzas*, supuestos del presupuesto."
+      "properties": {
+        "budget_assumptions": {},
+        "budget_financial": {},
+        "budget_investments": {},
+        "finance_years": {},
+        "finance_managements": {}
+      },
+      "required": [],
+      "additionalProperties": false,
+      "description": "Contenido editorial de pocos clubes (supuestos y detalle del presupuesto, ejercicios y gestiones a mostrar): las claves van en inglés y los textos quedan en español."
     }
   },
   "required": [

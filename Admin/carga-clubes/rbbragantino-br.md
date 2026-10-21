@@ -271,7 +271,7 @@ Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/
 ### window.CLUB_GENERIC_DATA
 
 ```text
-Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Versión 95).
+Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-ar-data.js, Versión 95).
 ```
 
 ### gestionesByClub['rbbragantino-br']

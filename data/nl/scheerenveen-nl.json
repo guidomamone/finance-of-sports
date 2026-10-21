@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "scheerenveen-nl",
+    "name": "S.C. Heerenveen Holding B.V.",
+    "display_name": "SC Heerenveen",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "scheerenveen-nl-jaarverslag-2024-2025",
+      "club_id": "scheerenveen-nl",
+      "title": "S.C. Heerenveen Holding B.V. — SC-Heerenveen-Jaarverslag-2024-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "scheerenveen-nl-jaarverslag-2024-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":4.867279,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"sponsorship_commercial","amount":9.101753,"disclosure":"aggregated"},
+        {"label":"Mediagelden","category":"broadcasting","amount":6.469374,"disclosure":"aggregated"},
+        {"label":"Food & Beverage","category":"stadium_other","amount":0.531163,"disclosure":"aggregated"},
+        {"label":"Merchandise","category":"sponsorship_commercial","amount":0.776585,"disclosure":"aggregated"},
+        {"label":"Overige opbrengsten","category":"other_income","amount":2.513826,"disclosure":"aggregated"},
+        {"label":"Netto-opbrengst vergoedingssommen","category":"player_sales","amount":7.555866,"disclosure":"aggregated"},
+        {"label":"Resultaat deelnemingen","category":"other_income","amount":0.203041,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Kostprijs","category":"other_expenses","amount":-1.406246,"disclosure":"aggregated"},
+        {"label":"Salariskosten","category":"wages_squad","amount":-10.939527,"disclosure":"aggregated"},
+        {"label":"Pensioenlasten","category":"wages_squad","amount":-0.245383,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"wages_squad","amount":-1.534143,"disclosure":"aggregated"},
+        {"label":"Overige kosten","category":"admin_general_expense","amount":-1.676125,"disclosure":"aggregated"},
+        {"label":"Doorberekende personeelskosten","category":"wages_squad","amount":-0.19887,"disclosure":"aggregated"},
+        {"label":"Afschrijvingskosten vergoedingssommen","category":"player_amortisation","amount":-3.268827,"disclosure":"aggregated"},
+        {"label":"Afwaardering boekwaarde vertrokken spelers","category":"player_impairment","amount":-0.37125,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen op materiële vaste activa","category":"depreciation","amount":-0.685457,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-10.279559,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.035254,"tax":-0.332253,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":32.018887,"expenses":30.605387,"net_result":1.045993},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Rentebaten en soortgelijke opbrengsten","amount":0.061227},
+          {"label":"Rentelasten en soortgelijke kosten","amount":-0.096481},
+          {"label":"Vennootschapsbelasting","amount":-0.332253}
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "santafe-co",
+    "name": "Independiente Santa Fe S.A. En Reorganización",
+    "display_name": "Independiente Santa Fe",
+    "country": "CO",
+    "reporting_currency": "COP",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "santafe-co-estados-financieros-2025",
+      "club_id": "santafe-co",
+      "title": "Estado de Resultados Integral Separado y Notas a los Estados Financieros, al 31 de diciembre de 2025 y 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "COP",
+      "source_id": "santafe-co-estados-financieros-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"COP@2025-12-31"},
+      "revenue": [
+        {"label":"Taquilla Venta De Boletería/Abonos","category":"matchday_competition","amount":27252.794113,"disclosure":"detailed"},
+        {"label":"Publicidad","category":"sponsorship_commercial","amount":1948.104553,"disclosure":"detailed"},
+        {"label":"Patrocinio","category":"sponsorship_commercial","amount":8701.653103,"disclosure":"detailed"},
+        {"label":"Dimayor","category":"broadcasting","amount":13028.917487,"disclosure":"detailed"},
+        {"label":"Federación Colombiana De Futbol","category":"competition_bonus","amount":1226.15154,"disclosure":"detailed"},
+        {"label":"Venta de derechos deportivos","category":"player_sales","amount":611.187078,"disclosure":"detailed"},
+        {"label":"Prestamos Jugadores","category":"player_sales","amount":234.084888,"disclosure":"detailed"},
+        {"label":"Exterior Mecanismo De Solidaridad","category":"player_sales","amount":198.169183,"disclosure":"detailed"},
+        {"label":"Regalías","category":"sponsorship_commercial","amount":22.096216,"disclosure":"detailed"},
+        {"label":"Divisiones Menores","category":"youth_football","amount":322.850328,"disclosure":"detailed"},
+        {"label":"Escuelas de formación","category":"youth_football","amount":4931.985002,"disclosure":"detailed"},
+        {"label":"Comercio al por mayor y al por menor (Ropa Deportiva)","category":"sponsorship_commercial","amount":452.838972,"disclosure":"detailed"},
+        {"label":"Equipo Profesional Femenino","category":"womens_football","amount":622.606265,"disclosure":"detailed"},
+        {"label":"Participación Eventos Internacionales","category":"competition_bonus","amount":3776.5945,"disclosure":"detailed"},
+        {"label":"Dev Venta de ropa deportiva","category":"sponsorship_commercial","amount":-8.968078,"disclosure":"detailed"},
+        {"label":"Dev Divisiones Menores","category":"youth_football","amount":-6.2351,"disclosure":"detailed"},
+        {
+          "label": "Ajuste de reconciliación contra el total impreso de la Nota 21 (diferencia no explicada por ninguna línea visible en el documento)",
+          "category": "other_income",
+          "amount": -2294.550661,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Otros Ingresos (ingresos método de participación, arrendamientos, recuperaciones, indemnizaciones, ejercicios anteriores, utilidad venta PP&E, comisiones, devoluciones, diversos)",
+          "category": "other_income",
+          "amount": 6635.226012,
+          "disclosure": "detailed",
+          "items": [
+            ["Ingresos Método De Participación",1015.586382],
+            ["Arrendamientos",745.757678],
+            ["Recuperaciones",2273.661424],
+            ["Indemnizaciones",1744.180308],
+            ["Ingresos De Ejercicios Anteriores",57.990332],
+            ["Utilidad En Venta De Propiedades Planta Y Equipo",0],
+            ["Comisiones",100.841128],
+            ["Devoluciones, Rebajas Y Descuentos En Otras Ventas",-1446],
+            ["Diversos",2143.20876]
+          ]
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Gastos de Administración (personal, honorarios, impuestos, arrendamientos, contribuciones, seguros, servicios, legales, mantenimiento, reparaciones locativas, viajes)",
+          "category": "admin_general_expense",
+          "amount": -4429.482451,
+          "disclosure": "detailed",
+          "items": [
+            ["Gastos de Personal",-3179.845206],
+            ["Honorarios",-137.069068],
+            ["Impuestos",-664.712923],
+            ["Arrendamientos",-19.908658],
+            ["Contribuciones y Afiliaciones",-1.4485],
+            ["Seguros",-0.83092],
+            ["Servicios",-332.910657],
+            ["Gastos Legales",-12.61049],
+            ["Mantenimientos y Reparaciones",-15.940618],
+            ["Reparaciones Locativas",-14.855706],
+            ["Gastos de Viaje",-49.349705]
+          ]
+        },
+        {"label":"Gastos de Administración: Depreciación y Amortización (PP&E)","category":"depreciation","amount":-210.327775,"disclosure":"detailed"},
+        {
+          "label": "Gastos de Administración: Diversos y Provisiones y Litigios",
+          "category": "other_expenses",
+          "amount": -69.732325,
+          "disclosure": "detailed",
+          "items": [["Diversos relacionados con la operación",-65.732325],["Provisiones y Litigios",-4]]
+        },
+        {"label":"Gastos de Venta: Gastos de Personal","category":"wages_squad","amount":-37547.99551,"disclosure":"detailed"},
+        {
+          "label": "Gastos de Venta: Bonificaciones y convenios (parte de \"Diversos: Otros gastos de funcionamiento deportivo\")",
+          "category": "wages_squad",
+          "amount": -3445.271359,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de Venta: transferencias de jugadores (amortización de intangibles, préstamos, % venta jugadores, acuerdos de colaboración y solidaridad, inscripciones y transferencias, derechos de formación)",
+          "category": "player_amortisation",
+          "amount": -1183.530642,
+          "disclosure": "detailed",
+          "items": [
+            ["Amortización Intangibles (Depreciaciones y Amortizaciones)",-639.500588],
+            ["Prestamos Jugadores",-143.912],
+            ["% Venta de jugadores",-24.041934],
+            ["Acuerdos de colaboración y solidaridad",-192.473675],
+            ["Inscripciones y Transferencias",-113.988],
+            ["Derechos de Formación",-69.614445]
+          ]
+        },
+        {
+          "label": "Gastos de Venta: organización y logística (impuestos IDRD, arrendamientos, contribuciones y tasas de arriendo, servicios, mantenimiento, adecuación, viajes, sanciones deportivas, inscripciones a torneos)",
+          "category": "match_organisation_expense",
+          "amount": -15094.452895,
+          "disclosure": "detailed",
+          "items": [
+            ["Impuestos",-2493.675011],
+            ["Arrendamientos",-1643.079036],
+            ["Contribuciones y Afiliaciones",-3955.882542],
+            ["Servicios",-3746.057748],
+            ["Mantenimiento y Reparaciones",-300.902063],
+            ["Adecuación e instalación",-32.784703],
+            ["Gastos de Viaje",-2444.563326],
+            ["Sanciones Deportivas",-394.916116],
+            ["Inscripciones a torneos",-82.59235]
+          ]
+        },
+        {"label":"Gastos de Venta: Imagen y publicidad","category":"admin_general_expense","amount":-144,"disclosure":"detailed"},
+        {"label":"Gastos de Venta: Auxilio deportivo Divisiones Menores","category":"youth_other_sports_expense","amount":-74.6576,"disclosure":"detailed"},
+        {"label":"Gastos de Venta: Depreciaciones (PP&E)","category":"depreciation","amount":-367.626469,"disclosure":"detailed"},
+        {
+          "label": "Gastos de Venta (honorarios, seguros, legales, ARL, diversos no deportivos: comisiones, elementos de aseo, papelería, combustibles, casino, parqueaderos)",
+          "category": "admin_general_expense",
+          "amount": -1666.625367,
+          "disclosure": "detailed",
+          "items": [
+            ["Honorarios",-214.63018],
+            ["Seguros",-256.523404],
+            ["Gastos Legales",-23.889002],
+            ["ARL Vigencias anteriores",-1.1069],
+            ["Comisiones",-942.224905],
+            ["Gastos De Representación Y Relaciones Publicas",-4.948472],
+            ["Elementos De Aseo Y Cafetería",-23.20323],
+            ["Útiles, Papelería Y Fotocopias",-13.285547],
+            ["Combustibles Y Lubricantes",-75.378379],
+            ["Taxis Y Buses",-0.11],
+            ["Casino Y Restaurante",-106.486518],
+            ["Parqueaderos",-4.35883],
+            ["Adecuaciones Sede Tenjo",-0.48]
+          ]
+        },
+        {
+          "label": "Otros Gastos (pérdidas método de participación, gastos extraordinarios, gastos diversos)",
+          "category": "other_expenses",
+          "amount": -922.400138,
+          "disclosure": "detailed",
+          "items": [["Pérdidas Método De Participación",-1.856881],["Gastos Extraordinarios",-288.775653],["Gastos Diversos",-631.767604]]
+        },
+        {"label":"Costo de venta de mercancía para la venta","category":"other_expenses","amount":-275.5739,"disclosure":"detailed"},
+        {"label":"Costo de venta de boletería","category":"match_organisation_expense","amount":-172.931543,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1052.293049,"tax":972.728987,"gross_debt":4645.154895,"cash":684.927123},
+      "official_totals": {"revenue":67655.505401,"expenses":65604.607974,"net_result":1971.333366}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

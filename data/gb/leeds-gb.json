@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "leeds-gb",
+    "name": "Leeds United Football Club Limited",
+    "display_name": "Leeds United",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "leeds-gb-group-accounts-2024",
+      "club_id": "leeds-gb",
+      "title": "Consolidated Financial Statements (Leeds United Football Club Limited), ejercicio cerrado 30/6/2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06233875/filing-history"
+    },
+    {
+      "id": "leeds-gb-group-accounts-2025",
+      "club_id": "leeds-gb",
+      "title": "Consolidated Financial Statements (Leeds United Football Club Limited), ejercicio cerrado 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/06233875/filing-history",
+      "public_note": "Campeón del Championship 2024-25 (100 puntos), ascendido a la Premier League para la temporada 2025-26 (fuera del alcance de este ejercicio)."
+    },
+    {
+      "id": "leeds-gb-group-accounts-2018-19",
+      "club_id": "leeds-gb",
+      "title": "Leeds United Football Club Limited — leeds-group-accounts-2018-19 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "leeds-gb-group-accounts-2019-20",
+      "club_id": "leeds-gb",
+      "title": "Leeds United Football Club Limited — leeds-group-accounts-2019-20 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "leeds-gb-group-accounts-2021-22",
+      "club_id": "leeds-gb",
+      "title": "Leeds United Football Club Limited — leeds-group-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "leeds-gb-group-accounts-2022-23",
+      "club_id": "leeds-gb",
+      "title": "Leeds United Football Club Limited — leeds-group-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "leeds-gb-group-accounts-2020-21",
+      "club_id": "leeds-gb",
+      "title": "Leeds United Football Club Limited — leeds-group-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"marathe49ers","name":"49ers Enterprises Global Football Group LLC (Paraag Marathe, Chairman)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "GBP",
+      "source_id": "leeds-gb-group-accounts-2018-19",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2019-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":12.612796,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting income","category":"broadcasting","amount":1.486,"disclosure":"aggregated"},
+        {"label":"Merchandising income","category":"sponsorship_commercial","amount":9.436899,"disclosure":"aggregated"},
+        {"label":"Central distributions","category":"broadcasting","amount":7.649,"disclosure":"aggregated"},
+        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":11.937394,"disclosure":"aggregated"},
+        {"label":"Catering income","category":"other_income","amount":5.797676,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":0.00286,"disclosure":"aggregated"},
+        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":15.649423,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-9.970908,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-75.099771,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.900363,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":64.572048,"expenses":85.070679,"net_result":-21.398994},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":1.062},
+          {"label":"Interest payable and similar expenses","amount":-1.962363},
+          {"label":"Tax on loss","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-07-31",
+      "currency": "GBP",
+      "source_id": "leeds-gb-group-accounts-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2020-07-31"},
+      "revenue": [
+        {"label":"Turnover","category":"lump_football_operations","amount":54.18398,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":3.528322,"disclosure":"aggregated"},
+        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":10.128024,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-13.885858,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-108.398516,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting rebate","category":"other_expenses","amount":-7,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.977936,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":67.840326,"expenses":129.284374,"net_result":-62.421984},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":1.05751},
+          {"label":"Interest payable and similar expenses","amount":-2.035446},
+          {"label":"Tax on loss","amount":null}
+        ],
+        "no_breakdown": [{"line":"Turnover","side":"revenue","amount":54.18398,"reason":"el documento no desglosa este renglón"}],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "GBP",
+      "source_id": "leeds-gb-group-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":1.928102,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting income","category":"broadcasting","amount":22.016653,"disclosure":"aggregated"},
+        {"label":"Merchandising income","category":"sponsorship_commercial","amount":20.369022,"disclosure":"aggregated"},
+        {"label":"Central distributions","category":"broadcasting","amount":110.813728,"disclosure":"aggregated"},
+        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":15.042549,"disclosure":"aggregated"},
+        {"label":"Catering income","category":"other_income","amount":0.380638,"disclosure":"aggregated"},
+        {"label":"Educational services","category":"education","amount":0.477048,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":1.137677,"disclosure":"aggregated"},
+        {"label":"(Loss)/gain on disposal of players' registrations","category":"player_sales","amount":-1.439614,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-14.654409,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-151.985475,"disclosure":"aggregated"},
+        {"label":"Settlement of transfer dispute","category":"exceptional_items","amount":-15.555435,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.47533,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":170.725803,"expenses":166.639884,"net_result":-11.944846},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":5.282136},
+          {"label":"Interest payable and similar expenses","amount":-5.757466},
+          {"label":"Tax on profit/(loss)","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "leeds-gb-group-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":24.579185,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting income","category":"broadcasting","amount":19.802631,"disclosure":"aggregated"},
+        {"label":"Merchandising income","category":"sponsorship_commercial","amount":25.05464,"disclosure":"aggregated"},
+        {"label":"Central distributions","category":"broadcasting","amount":95.870294,"disclosure":"aggregated"},
+        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":18.935151,"disclosure":"aggregated"},
+        {"label":"Catering income","category":"other_income","amount":4.693913,"disclosure":"aggregated"},
+        {"label":"Educational services","category":"education","amount":0.270955,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Gain/ (loss) on disposal of players' registrations","category":"player_sales","amount":0.889647,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-20.174675,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-203.502431,"disclosure":"aggregated"},
+        {"label":"Settlement of transfer dispute","category":"exceptional_items","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.129737,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":190.096416,"expenses":223.677106,"net_result":-36.710427},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":6.598522},
+          {"label":"Interest payable and similar expenses","amount":-9.728259},
+          {"label":"Tax on loss","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "leeds-gb-group-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":29.921168,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting income","category":"broadcasting","amount":17.44213,"disclosure":"aggregated"},
+        {"label":"Merchandising income","category":"sponsorship_commercial","amount":24.017167,"disclosure":"aggregated"},
+        {"label":"Central distributions","category":"broadcasting","amount":94.102405,"disclosure":"aggregated"},
+        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":18.302149,"disclosure":"aggregated"},
+        {"label":"Catering income","category":"other_income","amount":5.736823,"disclosure":"aggregated"},
+        {"label":"Educational services","category":"education","amount":0.161705,"disclosure":"aggregated"},
+        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":73.345427,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-20.577557,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-275.080123,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.075424,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":263.028974,"expenses":295.65768,"net_result":-33.70413},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":11.909865},
+          {"label":"Interest payable and similar expenses","amount":-12.985289},
+          {"label":"Tax on loss","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "leeds-gb-group-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "marathe49ers",
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":30.633661,"disclosure":"detailed"},
+        {"label":"Television and broadcasting income + Central distributions","category":"broadcasting","amount":53.64343,"disclosure":"detailed"},
+        {"label":"Merchandising income","category":"sponsorship_commercial","amount":25.410723,"disclosure":"detailed"},
+        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":9.496047,"disclosure":"detailed"},
+        {"label":"Catering income","category":"other_income","amount":8.314712,"disclosure":"detailed"},
+        {"label":"Educational services","category":"education","amount":0.059707,"disclosure":"detailed"},
+        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":33.694289,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-84.030436,"disclosure":"detailed"},
+        {"label":"Amortisation of players' registrations","category":"player_amortisation","amount":-59.35885,"disclosure":"detailed"},
+        {"label":"Impairment of players' registrations (First Team Squad review)","category":"player_impairment","amount":-7.475305,"disclosure":"detailed"},
+        {"label":"Depreciation of tangible assets","category":"depreciation","amount":-4.855858,"disclosure":"detailed"},
+        {
+          "label": "Other operating expenses (residual, sin desglose propio en la fuente)",
+          "category": "other_expenses",
+          "amount": -48.091406,
+          "disclosure": "estimated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.252199,"tax":0,"gross_debt":60.297537,"cash":5.008994},
+      "official_totals": {"revenue":161.252569,"expenses":203.811855,"net_result":-60.811485}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "leeds-gb-group-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "marathe49ers",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":31.647912,"disclosure":"detailed"},
+        {"label":"Television and broadcasting income + Central distributions","category":"broadcasting","amount":47.22852,"disclosure":"detailed"},
+        {"label":"Merchandising income","category":"sponsorship_commercial","amount":24.560557,"disclosure":"detailed"},
+        {"label":"Other commercial revenue","category":"sponsorship_commercial","amount":25.890452,"disclosure":"detailed"},
+        {"label":"Catering income","category":"other_income","amount":7.614479,"disclosure":"detailed"},
+        {"label":"Educational services","category":"education","amount":0.04741,"disclosure":"detailed"},
+        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":24.765848,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-102.724254,"disclosure":"detailed"},
+        {"label":"Amortisation of players' registrations","category":"player_amortisation","amount":-46.37906,"disclosure":"detailed"},
+        {"label":"Impairment of players' registrations","category":"player_impairment","amount":-3.014241,"disclosure":"detailed"},
+        {"label":"Depreciation of tangible assets","category":"depreciation","amount":-6.200495,"disclosure":"detailed"},
+        {
+          "label": "Other operating expenses (residual, incluye crédito neto por negative goodwill — ver comentario de cabecera)",
+          "category": "other_expenses",
+          "amount": -47.072661,
+          "disclosure": "estimated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.542355,"tax":0,"gross_debt":58.824929,"cash":33.952665},
+      "official_totals": {"revenue":161.755178,"expenses":205.390711,"net_result":-49.177888}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

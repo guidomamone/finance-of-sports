@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "wolves-gb",
+    "name": "Wolverhampton Wanderers Football Club (1986) Limited",
+    "display_name": "Wolverhampton Wanderers",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "06-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "wolves-gb-full-accounts-2024",
+      "club_id": "wolves-gb",
+      "title": "Wolverhampton Wanderers Football Club (1986) Limited — Report and Financial Statements, year ended 31 May 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01989823/filing-history",
+      "public_note": "Cuentas individuales auditadas de Wolverhampton Wanderers Football Club (1986) Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 31 de mayo de 2024 (temporada 2023/24), 12 meses."
+    },
+    {
+      "id": "wolves-gb-full-accounts-2025",
+      "club_id": "wolves-gb",
+      "title": "Wolverhampton Wanderers Football Club (1986) Limited — Report and Financial Statements, period ended 30 June 2025 (13 meses)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01989823/filing-history",
+      "public_note": "Cuentas individuales auditadas de Wolverhampton Wanderers Football Club (1986) Limited, depositadas en Companies House (Reino Unido). PERÍODO DE TRANSICIÓN DE 13 MESES (1° de junio de 2024 a 30 de junio de 2025) por un cambio de fecha de cierre de ejercicio de 31/5 a 30/6 — NO es un ejercicio normal de 12 meses, ver aviso completo en el comentario de cabecera de data/wolves-gb-data.js."
+    },
+    {
+      "id": "wolves-gb-full-accounts-2019-20",
+      "club_id": "wolves-gb",
+      "title": "Wolverhampton Wanderers Football Club (1986) Limited — wolves-full-accounts-2019-20 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "wolves-gb-full-accounts-2020-21",
+      "club_id": "wolves-gb",
+      "title": "Wolverhampton Wanderers Football Club (1986) Limited — wolves-full-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "wolves-gb-full-accounts-2021-22",
+      "club_id": "wolves-gb",
+      "title": "Wolverhampton Wanderers Football Club (1986) Limited — wolves-full-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "wolves-gb-full-accounts-2022-23",
+      "club_id": "wolves-gb",
+      "title": "Wolverhampton Wanderers Football Club (1986) Limited — wolves-full-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"fosun","name":"Fosun International","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-05-31",
+      "currency": "GBP",
+      "source_id": "wolves-gb-full-accounts-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2020-05-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":12.703,"disclosure":"aggregated"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":11.922,"disclosure":"aggregated"},
+        {"label":"Broadcasting rights","category":"broadcasting","amount":23.329,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":10.541,"disclosure":"aggregated"},
+        {"label":"League distributions","category":"broadcasting","amount":72.484,"disclosure":"aggregated"},
+        {"label":"Other turnover","category":"other_income","amount":1.63,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":9.52,"disclosure":"aggregated"}
+      ],
+      "expenses": [{"label":"Operating expenses","category":"other_expenses","amount":-174.79,"disclosure":"aggregated"}],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.691,"tax":0.681,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":142.129,"expenses":174.79,"net_result":-36.671},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.121},
+          {"label":"Interest payable and similar charges","amount":-4.812},
+          {"label":"Tax on (loss)/profit","amount":0.681}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-05-31",
+      "currency": "GBP",
+      "source_id": "wolves-gb-full-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-05-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":0.144,"disclosure":"aggregated"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":15.493,"disclosure":"aggregated"},
+        {"label":"Broadcasting rights","category":"broadcasting","amount":27.706,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":7.832,"disclosure":"aggregated"},
+        {"label":"League distributions","category":"broadcasting","amount":141.645,"disclosure":"aggregated"},
+        {"label":"Other turnover","category":"other_income","amount":1.276,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":60.76,"disclosure":"aggregated"}
+      ],
+      "expenses": [{"label":"Operating expenses","category":"other_expenses","amount":-228.374,"disclosure":"aggregated"}],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.372,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":254.856,"expenses":228.374,"net_result":21.11},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":null},
+          {"label":"Interest payable and similar charges","amount":-5.372},
+          {"label":"Tax on Profit/(loss)","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-05-31",
+      "currency": "GBP",
+      "source_id": "wolves-gb-full-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-05-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":13.264,"disclosure":"aggregated"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":13.097,"disclosure":"aggregated"},
+        {"label":"Broadcasting rights","category":"broadcasting","amount":14.385,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":12.81,"disclosure":"aggregated"},
+        {"label":"League distributions","category":"broadcasting","amount":110.441,"disclosure":"aggregated"},
+        {"label":"Other turnover","category":"other_income","amount":1.662,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":2.741,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":14.977,"disclosure":"aggregated"}
+      ],
+      "expenses": [{"label":"Operating expenses","category":"other_expenses","amount":-220.869,"disclosure":"aggregated"}],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.597,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":183.377,"expenses":220.869,"net_result":-43.089},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.03},
+          {"label":"Interest payable and similar charges","amount":-5.627},
+          {"label":"Tax on (loss)/profit)","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-05-31",
+      "currency": "GBP",
+      "source_id": "wolves-gb-full-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-05-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":15.105,"disclosure":"aggregated"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":13.343,"disclosure":"aggregated"},
+        {"label":"Broadcasting rights","category":"broadcasting","amount":11.148,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":13.718,"disclosure":"aggregated"},
+        {"label":"League distributions","category":"broadcasting","amount":113.795,"disclosure":"aggregated"},
+        {"label":"Other turnover","category":"other_income","amount":1.466,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":43.874,"disclosure":"aggregated"}
+      ],
+      "expenses": [{"label":"Operating expenses","category":"other_expenses","amount":-266.119,"disclosure":"aggregated"}],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.402,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":212.449,"expenses":266.119,"net_result":-64.072},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.308},
+          {"label":"Interest payable and similar charges","amount":-10.71},
+          {"label":"Tax on (loss)/profit)","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-05-31",
+      "currency": "GBP",
+      "source_id": "wolves-gb-full-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "fosun",
+      "fx": {"ref":"GBP@2024-05-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":16.193,"disclosure":"detailed"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":14.538,"disclosure":"detailed"},
+        {"label":"Broadcasting rights","category":"broadcasting","amount":15.569,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":12.288,"disclosure":"detailed"},
+        {"label":"League distributions","category":"broadcasting","amount":117.135,"disclosure":"detailed"},
+        {"label":"Other turnover","category":"other_income","amount":1.974,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":64.631,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-141.284,"disclosure":"detailed"},
+        {"label":"Amortisation of player's registrations","category":"player_amortisation","amount":-64.168,"disclosure":"detailed"},
+        {"label":"Provision for impairment of intangible assets","category":"player_impairment","amount":-3.024,"disclosure":"detailed"},
+        {"label":"Depreciation of assets","category":"depreciation","amount":-1.477,"disclosure":"detailed"},
+        {"label":"Amortisation of other intangible assets","category":"other_amortisation","amount":-0.067,"disclosure":"detailed"},
+        {
+          "label": "Otros costos operativos (Operating expenses no desglosados por naturaleza, neto de staff/amortización/impairment/depreciación)",
+          "category": "other_expenses",
+          "amount": -37.547,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.639,"tax":0,"gross_debt":100.609,"cash":30.563},
+      "official_totals": {"revenue":242.328,"expenses":247.567,"net_result":-10.878}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "wolves-gb-full-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "fosun",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":21.766,"disclosure":"detailed"},
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":19.83,"disclosure":"detailed"},
+        {"label":"Broadcasting rights","category":"broadcasting","amount":125.591,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":4.788,"disclosure":"detailed"},
+        {"label":"Other operating income (incl. seguros)","category":"other_income","amount":1.424,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":116.984,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-162.087,"disclosure":"detailed"},
+        {"label":"Amortisation of player's registrations","category":"player_amortisation","amount":-75.426,"disclosure":"detailed"},
+        {"label":"Provision for impairment of intangible assets","category":"player_impairment","amount":-12.365,"disclosure":"detailed"},
+        {"label":"Depreciation of assets","category":"depreciation","amount":-1.535,"disclosure":"detailed"},
+        {"label":"Amortisation of other intangible assets","category":"other_amortisation","amount":-0.012,"disclosure":"detailed"},
+        {
+          "label": "Otros costos operativos (Operating expenses no desglosados por naturaleza, neto de staff/amortización/impairment/depreciación)",
+          "category": "other_expenses",
+          "amount": -39.273,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-11.316,"tax":0,"gross_debt":101.394,"cash":33.439},
+      "official_totals": {"revenue":290.383,"expenses":290.698,"net_result":-11.631}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

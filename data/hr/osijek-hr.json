@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "osijek-hr",
+    "name": "Nogometni klub Osijek, sportsko dioničko društvo",
+    "display_name": "Osijek",
+    "country": "HR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "osijek-hr-financijsko-izvjesce-2025",
+      "club_id": "osijek-hr",
+      "title": "Revidirani godišnji kombinirani financijski izvještaji za posebne namjene za 2025. godinu",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "EUR",
+      "source_id": "osijek-hr-financijsko-izvjesce-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-12-31"},
+      "revenue": [
+        {"label":"Prihodi od ulaznica - Nacionalna natjecanja","category":"matchday_competition","amount":1.134206,"disclosure":"detailed"},
+        {"label":"Prihodi od ulaznica - Godišnje ulaznice","category":"season_tickets","amount":0.003667,"disclosure":"detailed"},
+        {"label":"Prihodi od ulaznica - Članarine","category":"member_dues","amount":0.032818,"disclosure":"detailed"},
+        {
+          "label": "Prihod od sponzorstva i oglašavanja — Glavni sponzor na opremi + Sponzor za stadion",
+          "category": "sponsorship_commercial",
+          "amount": 9.104688,
+          "disclosure": "detailed",
+          "items": [["Glavni sponzor na opremi",8.756],["Sponzor za stadion",0.348688]]
+        },
+        {"label":"Prihodi od prava emitiranja - Nacionalna natjecanja","category":"broadcasting","amount":0.8556,"disclosure":"detailed"},
+        {
+          "label": "Komercijalni prihodi — Prodaja proizvoda + Ostali nerazvrstani",
+          "category": "sponsorship_commercial",
+          "amount": 1.203004,
+          "disclosure": "detailed",
+          "items": [["Komercijalni prihodi - Prodaja proizvoda",0.459111],["Ostali nerazvrstani komercijalni prihodi",0.743893]]
+        },
+        {"label":"Uefina klupska natjecanja - solidarne uplate","category":"competition_bonus","amount":1.982354,"disclosure":"detailed"},
+        {
+          "label": "Ostali poslovni prihodi — donacije i izvanredni prihodi",
+          "category": "other_income",
+          "amount": 4.493684,
+          "disclosure": "detailed",
+          "items": [
+            ["Donacije nepovezanih strana",3.349012],
+            ["Donacije i doprinosi povezanih strana",0.102782],
+            ["Izvanredni prihodi",0.083374],
+            ["Ostali nerazvrstani poslovni prihodi (Bjelica nagodba 0,618518 + Donacije 0,168000 + Ostali 0,171998)",0.958516]
+          ]
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Troškovi primanja igrača + Troškovi primanja stručnog stožera",
+          "category": "wages_squad",
+          "amount": -6.020068,
+          "disclosure": "detailed",
+          "items": [["Troškovi primanja igrača (Plaće 5,184527 + Ostali nerazvrstani 0,361003)",-5.54553],["Troškovi primanja stručnog stožera (Plaće)",-0.474538]]
+        },
+        {
+          "label": "Trošak primanja ostalih zaposlenika + Troškovi sponzorstva/komercijalnih aktivnosti/imovine i objekata/nenogometnih djelatnosti",
+          "category": "admin_general_expense",
+          "amount": -8.473839,
+          "disclosure": "detailed",
+          "items": [
+            ["Trošak primanja ostalih zaposlenika (Plaće 3,032037 + Porezi i doprinosi 1,678020 + Ostali 0,158601)",-4.868658],
+            ["Troškovi sponzorstva i oglašavanja",-0.288719],
+            ["Troškovi komercijalnih aktivnosti",-1.190487],
+            ["Troškovi imovine i objekata",-0.35664],
+            ["Troškovi za nenogometne djelatnosti",-1.769335]
+          ]
+        },
+        {"label":"Amortizacija dugotrajne materijalne imovine","category":"depreciation","amount":-1.145578,"disclosure":"detailed"},
+        {"label":"Troškovi održavanja utakmica","category":"match_organisation_expense","amount":-1.085017,"disclosure":"detailed"},
+        {
+          "label": "Ostali nerazvrstani poslovni rashodi",
+          "category": "other_expenses",
+          "amount": -2.264797,
+          "disclosure": "detailed",
+          "items": [
+            ["Troškovi dugoročnog rezerviranja sudskih sporova",-1.168733],
+            ["Članarine udrugama (HNS, ŽNS..)",-0.118519],
+            ["Darovanja",-0.094283],
+            ["Ugostiteljski troškovi",-0.276373],
+            ["Prostojbe HNS (Odluke)",-0.052835],
+            ["Troškovi platnog prometa",-0.052742],
+            ["Ostalo",-0.501312]
+          ]
+        }
+      ],
+      "financial": {"profit_on_player_sales":-0.335134,"asset_sales":0,"net_interest":-0.403355,"tax":0,"gross_debt":11.470126,"cash":1.585818},
+      "official_totals": {"revenue":18.810021,"expenses":18.989299,"net_result":-0.917767}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

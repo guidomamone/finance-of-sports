@@ -1,7 +1,7 @@
 // Generado por tools/auditoria.mjs desde Admin/registros/auditoria.jsonl. No editar a mano.
 window.CLUB_AUDITORIA = window.CLUB_AUDITORIA || {};
 Object.assign(window.CLUB_AUDITORIA, {
- "athleticclub": {
+ "athleticclub-es": {
   "2025": {
    "auditor": null,
    "dictamen": "sin_informe",
@@ -9,7 +9,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": null
   }
  },
- "atleticomadrid": {
+ "atleticomadrid-es": {
   "2025": {
    "auditor": {
     "nombre": "Eudita AH Auditores 1986, S.A.P.",
@@ -23,7 +23,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "celtavigo": {
+ "celtavigo-es": {
   "2025": {
    "auditor": null,
    "dictamen": "sin_informe",
@@ -31,7 +31,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": null
   }
  },
- "deportivoalaves": {
+ "deportivoalaves-es": {
   "2025": {
    "auditor": {
     "nombre": "SAYMA AUDITORES, S.L.",
@@ -97,7 +97,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "fcbarcelona": {
+ "fcbarcelona-es": {
   "2025": {
    "auditor": {
     "nombre": "Crowe",
@@ -233,7 +233,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "realbetis": {
+ "realbetis-es": {
   "2025": {
    "auditor": {
     "nombre": "EUDITA GCM AUDITORES Y CONSULTORES, S.L.",
@@ -247,7 +247,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "realmadrid": {
+ "realmadrid-es": {
   "2025": {
    "auditor": null,
    "dictamen": "sin_informe",
@@ -269,7 +269,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "sevillafc": {
+ "sevillafc-es": {
   "2025": {
    "auditor": {
     "nombre": "Netadia Europa, S.L.P.",
@@ -283,7 +283,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "valenciacf": {
+ "valenciacf-es": {
   "2025": {
    "auditor": {
     "nombre": "EY",
@@ -298,7 +298,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "villarrealcf": {
+ "villarrealcf-es": {
   "2024": {
    "auditor": {
     "nombre": "Betea España Auditores S.L.P.",

@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "westham-gb",
+    "name": "West Ham United Football Club Limited",
+    "display_name": "West Ham United",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "06-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "westham-gb-full-accounts-2025",
+      "club_id": "westham-gb",
+      "title": "West Ham United Football Club Limited — Annual Report and Financial Statements, year ended 31 May 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00066516/filing-history",
+      "public_note": "Cuentas individuales auditadas de West Ham United Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 31 de mayo de 2025 (temporada 2024/25, 14° en la Premier League)."
+    },
+    {
+      "id": "westham-gb-full-accounts-2022-23",
+      "club_id": "westham-gb",
+      "title": "West Ham United Football Club Limited — westham-full-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "westham-gb-full-accounts-2019-20",
+      "club_id": "westham-gb",
+      "title": "West Ham United Football Club Limited — westham-full-accounts-2019-20 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "westham-gb-full-accounts-2020-21",
+      "club_id": "westham-gb",
+      "title": "West Ham United Football Club Limited — westham-full-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "westham-gb-full-accounts-2021-22",
+      "club_id": "westham-gb",
+      "title": "West Ham United Football Club Limited — westham-full-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "westham-gb-full-accounts-2023-24",
+      "club_id": "westham-gb",
+      "title": "West Ham United Football Club Limited — westham-full-accounts-2023-24 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"sullivan","name":"Sullivan / Kretinsky / Estate of Gold","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-05-31",
+      "currency": "GBP",
+      "source_id": "westham-gb-full-accounts-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2020-05-31"},
+      "revenue": [
+        {"label":"Match receipts and related football activities","category":"matchday_competition","amount":22.431,"disclosure":"aggregated"},
+        {"label":"Broadcast and central sponsorship distributions","category":"broadcasting","amount":82.52,"disclosure":"aggregated"},
+        {"label":"Commercial activities","category":"sponsorship_commercial","amount":25.111,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":8.56,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":1.377,"disclosure":"aggregated"},
+        {"label":"Profit on sale of players","category":"player_sales","amount":22.833,"disclosure":"aggregated"},
+        {"label":"Income from loan of players","category":"player_sales","amount":2.1,"disclosure":"aggregated"}
+      ],
+      "expenses": [{"label":"Administrative expenses","category":"admin_general_expense","amount":-224.542,"disclosure":"aggregated"}],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.134,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":164.932,"expenses":224.542,"net_result":-64.744},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.031},
+          {"label":"Interest payable and similar expenses","amount":-5.165},
+          {"label":"Tax on Loss","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-05-31",
+      "currency": "GBP",
+      "source_id": "westham-gb-full-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-05-31"},
+      "revenue": [
+        {"label":"Match receipts and related football activities","category":"matchday_competition","amount":0.275,"disclosure":"aggregated"},
+        {"label":"Broadcast and central sponsorship distributions","category":"broadcasting","amount":163.104,"disclosure":"aggregated"},
+        {"label":"Commercial activities","category":"sponsorship_commercial","amount":19.045,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":9.672,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":4.436,"disclosure":"aggregated"},
+        {"label":"Profit on sale of players","category":"player_sales","amount":17.436,"disclosure":"aggregated"},
+        {"label":"Income from loan of players","category":"player_sales","amount":0.148,"disclosure":"aggregated"}
+      ],
+      "expenses": [{"label":"Administrative expenses","category":"admin_general_expense","amount":-231.602,"disclosure":"aggregated"}],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.647,"tax":0.397,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":214.116,"expenses":231.602,"net_result":-25.736},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.005},
+          {"label":"Interest payable and similar expenses","amount":-8.652},
+          {"label":"Tax on Loss","amount":0.397}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-05-31",
+      "currency": "GBP",
+      "source_id": "westham-gb-full-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-05-31"},
+      "revenue": [
+        {"label":"Match receipts and related football activities","category":"matchday_competition","amount":40.852,"disclosure":"aggregated"},
+        {"label":"Broadcast and central sponsorship distributions","category":"broadcasting","amount":163.62,"disclosure":"aggregated"},
+        {"label":"Commercial activities","category":"sponsorship_commercial","amount":34.266,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":13.053,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":2.406,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players","category":"player_sales","amount":0.709,"disclosure":"aggregated"}
+      ],
+      "expenses": [{"label":"Administrative expenses","category":"admin_general_expense","amount":-234.059,"disclosure":"aggregated"}],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.532,"tax":-1.748,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":254.906,"expenses":234.059,"net_result":11.567},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.092},
+          {"label":"Interest payable and similar expenses","amount":-7.624},
+          {"label":"Tax (charge)/credit on profit/(loss)","amount":-1.748}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-05-31",
+      "currency": "GBP",
+      "source_id": "westham-gb-full-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-05-31"},
+      "revenue": [
+        {"label":"Match receipts and related football activities","category":"matchday_competition","amount":40.267,"disclosure":"aggregated"},
+        {"label":"Broadcast and central sponsorship distributions","category":"broadcasting","amount":147.584,"disclosure":"aggregated"},
+        {"label":"Commercial activities","category":"sponsorship_commercial","amount":34.534,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":12.976,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":2.495,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players","category":"player_sales","amount":16.98,"disclosure":"aggregated"}
+      ],
+      "expenses": [{"label":"Operating costs","category":"other_expenses","amount":-253.776,"disclosure":"aggregated"}],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.446,"tax":1.217,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":254.836,"expenses":253.776,"net_result":-16.169},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.579},
+          {"label":"Interest payable and similar expenses","amount":-19.025},
+          {"label":"Tax on (loss)/profit","amount":1.217}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-05-31",
+      "currency": "GBP",
+      "source_id": "westham-gb-full-accounts-2023-24",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2024-05-31"},
+      "revenue": [
+        {"label":"Match receipts and related football activities","category":"matchday_competition","amount":43.807,"disclosure":"aggregated"},
+        {"label":"Broadcast and central sponsorship distributions","category":"broadcasting","amount":167.022,"disclosure":"aggregated"},
+        {"label":"Commercial activities","category":"sponsorship_commercial","amount":41.225,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":16.146,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":6.929,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players","category":"player_sales","amount":96.313,"disclosure":"aggregated"}
+      ],
+      "expenses": [{"label":"Operating costs","category":"other_expenses","amount":-304.572,"disclosure":"aggregated"}],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.328,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":371.442,"expenses":304.572,"net_result":58.543},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":5.013},
+          {"label":"Interest payable and similar expenses","amount":-13.341},
+          {"label":"Tax on profit/(loss)","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-05-31",
+      "currency": "GBP",
+      "source_id": "westham-gb-full-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "sullivan",
+      "fx": {"ref":"GBP@2025-05-31"},
+      "revenue": [
+        {"label":"Match receipts and related football activities","category":"matchday_competition","amount":38.573,"disclosure":"detailed"},
+        {"label":"Broadcast and central sponsorship distributions","category":"broadcasting","amount":132.382,"disclosure":"detailed"},
+        {"label":"Commercial activities","category":"sponsorship_commercial","amount":41.437,"disclosure":"detailed"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":13.666,"disclosure":"detailed"},
+        {"label":"Other operating income","category":"other_income","amount":3.896,"disclosure":"detailed"},
+        {"label":"Profit on disposal of players","category":"player_sales","amount":19.954,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Employment costs","category":"wages_squad","amount":-173.335,"disclosure":"detailed"},
+        {"label":"Amortisation of intangible fixed assets","category":"player_amortisation","amount":-99.408,"disclosure":"detailed"},
+        {"label":"Depreciation on tangible fixed assets","category":"depreciation","amount":-2.602,"disclosure":"detailed"},
+        {
+          "label": "Otros costos operativos (Operating costs no desglosados por naturaleza, neto de employment costs/depreciación)",
+          "category": "other_expenses",
+          "amount": -64.079,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-19.326,"tax":0.581,"gross_debt":20.799,"cash":0.422},
+      "official_totals": {"revenue":249.908,"expenses":339.424,"net_result":-108.261}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

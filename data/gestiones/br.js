@@ -41,7 +41,7 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Mattheus Montenegro', corto:'Montenegro', cargo:'Presidente', desde:'2025-12-19', hasta:null,
       fuente:'https://www.fluminense.com.br/noticia/mattheus-montenegro-toma-posse-como-novo-presidente-do-fluminense', confirmada:true },
   ],
-  gremio: [
+  'gremio-br': [
     { nombre:'Alberto Jerônimo Guerra Neto', corto:'Guerra', cargo:'Presidente', desde:'2023-01-01', hasta:'2026-01-01',
       fuente:'https://www.lance.com.br/gremio/um-gremio-ainda-maior-alberto-guerra-e-o-novo-presidente-do-imortal-para-2023-25.html', confirmada:true },
     { nombre:'Odorico Roman', corto:'Roman', cargo:'Presidente', desde:'2026-01-01', hasta:null,
@@ -87,15 +87,15 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Fábio Rios Mota', corto:'Mota', cargo:'Presidente', desde:'2021-10-01', hasta:null,
       fuente:'https://www.lance.com.br/vitoria/com-folga-fabio-mota-e-reeleito-presidente-do-vitoria-veja-resultados.html', confirmada:true },
   ],
-  'botafogo': [
+  'botafogo-br': [
     { nombre:'John Textor', corto:'Textor', cargo:'Presidente', desde:'2022-03-03', hasta:'2026-04-23',
       fuente:'https://pt.wikipedia.org/wiki/John_Textor', confirmada:true },
   ],
-  'cruzeiro': [
+  'cruzeiro-br': [
     { nombre:'Ronaldo Nazário', corto:'Ronaldo', cargo:'Presidente', desde:'2022-01-01', hasta:'2024-04-29',
       fuente:'https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-mineiro/cruzeiro/pedro-lourenco-oficializa-compra-do-cruzeiro-saf-junto-a-ronaldo-veja-detalhes/', confirmada:true },
   ],
-  'mirassol': [
+  'mirassol-br': [
     { nombre:'Edson Antonio Ermenegildo', corto:'Ermenegildo', cargo:'Presidente', desde:'1995-01-01', hasta:null,
       fuente:'https://pt.wikipedia.org/wiki/Mirassol_Futebol_Clube', confirmada:true },
   ],
@@ -185,7 +185,7 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Dower Alexandre de Araújo', corto:'Dower', cargo:'CEO', desde:'2020-07-31', hasta:'2025-12-17',
       fuente:'https://www.mg.superesportes.com.br/app/noticias/futebol/america-mg/2020/07/31/noticia_america_mg,3856910/america-anuncia-dower-araujo-como-novo-superintendente-geral-do-clube.shtml', confirmada:true },
   ],
-  'coritiba': [
+  'coritiba-br': [
     { nombre:'Carlos Amodeo', corto:'Amodeo', cargo:'CEO', desde:'2023-06-01', hasta:'2024-07-02',
       fuente:'https://maquinadoesporte.com.br/futebol/coritiba-anuncia-saida-de-ceo-carlos-amodeo/', confirmada:true },
   ],
@@ -203,7 +203,7 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Júlio César Carneiro', corto:'Carneiro', cargo:'Diretor Presidente', desde:'2024-04-26', hasta:null,
       fuente:'https://rciararaquara.com.br/juliano-malara-deixa-a-ferroviaria-acionistas-escolhem-julio-carneiro-para-a-direcao-executiva/', confirmada:true },
   ],
-  'atleticogoianiense': [
+  'atleticogoianiense-br': [
     { nombre:'Adson José Batista', corto:'Adson Batista', cargo:'Presidente', desde:'2019-01-14', hasta:null,
       fuente:'https://www.lance.com.br/atletico-goianiense/adson-batista-aclamado-novo-presidente-atletico.html', confirmada:true },
   ],
@@ -215,7 +215,7 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Genilson da Rocha Santos', corto:'Genilson', cargo:'Presidente', desde:'2012-01-01', hasta:null,
       fuente:'https://www.espn.com.br/futebol/paulista/artigo/_/id/16384516/novorizontino-por-que-mudou-nome-antes-virar-saf-tem-palmeiras-como-exemplo-sucesso', confirmada:true },
   ],
-  'ituano': [
+  'ituano-br': [
     { nombre:'João Paulo Silveira Ruiz', corto:'Ruiz', cargo:'Presidente', desde:'2024-01-01', hasta:null,
       fuente:'https://jornalperiscopio.com.br/site/ituano-elege-nova-diretoria/', confirmada:true },
   ],

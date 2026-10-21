@@ -77,7 +77,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "atleticogoianiense": {
+ "atleticogoianiense-br": {
   "2025": {
    "auditor": {
     "nombre": "Moore Alianzo Auditoria S/S Ltda",
@@ -220,7 +220,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "botafogo": {
+ "botafogo-br": {
   "2023": {
    "auditor": {
     "nombre": "BDO",
@@ -334,7 +334,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "coritiba": {
+ "coritiba-br": {
   "2023": {
    "auditor": {
     "nombre": "BDO",
@@ -582,7 +582,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "cruzeiro": {
+ "cruzeiro-br": {
   "2022": {
    "auditor": {
     "nombre": "Forvis Mazars",
@@ -1068,7 +1068,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "gremio": {
+ "gremio-br": {
   "2024": {
    "auditor": {
     "nombre": "Baker Tilly",
@@ -1137,7 +1137,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "ituano": {
+ "ituano-br": {
   "2024": {
    "auditor": {
     "nombre": "AUDIT Consult – Auditoria & Consultoria",
@@ -1165,7 +1165,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "mirassol": {
+ "mirassol-br": {
   "2024": {
    "auditor": {
     "nombre": "ANALYST GESTAO EMPRESARIAL LTDA",

@@ -622,7 +622,7 @@
 
   // ==========================================================================
   // EL ESTADO EN LA URL: qué pestaña, qué club y qué años, qué liga y qué ejercicio. Un link copiado abre lo mismo y "atrás" vuelve a
-  // lo anterior. `?tab=finanzas&club=river&anios=2021,2024`, `?tab=liga&liga=es-laliga&anio=2025`; Inicio no lleva nada. Se tocan
+  // lo anterior. `?tab=finanzas&club=river-ar&anios=2021,2024`, `?tab=liga&liga=es-laliga&anio=2025`; Inicio no lleva nada. Se tocan
   // solo estas claves: `?multi=0`, `?audit=1` y las demás quedan como estaban. `var` y no `let`: refreshFinanzas() y la vista de
   // Ligas llaman a escribirURL() desde el INIT, antes de este bloque, y `urlLista` las frena hasta haber leído la URL de entrada.
   // ==========================================================================
@@ -631,7 +631,7 @@
   var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio', 'grupo', 'sponsor', 'moneda', 'real', 'formato', 'a', 'b'];
   // UN LADO DE COMPARAR EN TEXTO: bloques separados por "~"; un bloque de clubes es "c.<club>:<año>,<club>:<año>" (sin año = el más
   // reciente) y uno de liga "l.<liga>.<años separados por coma>"; al final ".s" (suma) o ".p" (promedio) solo si no es el de siempre
-  // (clubes suman, ligas promedian). `?tab=vs&a=c.boca:2024&b=c.river:2024`, `b=l.es-laliga.2025`.
+  // (clubes suman, ligas promedian). `?tab=vs&a=c.boca-ar:2024&b=c.river-ar:2024`, `b=l.es-laliga.2025`.
   function ladoAURL(l){
     if(!l || !l.bloques || !l.bloques.length) return null;
     return l.bloques.map(b => {
@@ -652,7 +652,7 @@
         const years = partes[2].split(',').map(Number).filter(y => Number.isInteger(y) && y > 1800);
         if(years.length) bloques.push({ kind:'liga', league:partes[1], years, agg:agg || 'promedio' });
       } else if(partes[0] === 'c' && partes.length === 2){
-        const pares = partes[1].split(',').map(x => x.split(':')).filter(p => clubs[p[0]])
+        const pares = partes[1].split(',').map(x => x.split(':')).map(p => [window.resolverClubId(p[0]), p[1]]).filter(p => clubs[p[0]])
           .map(p => [p[0], p[1] && Number.isInteger(Number(p[1])) ? Number(p[1]) : null]);
         if(pares.length) bloques.push({ kind:'clubes', pares, agg:agg || 'suma' });
       }
@@ -700,7 +700,7 @@
   function aplicarURL(){
     const p = new URLSearchParams(location.search);
     const tab = p.get('tab') || 'inicio';
-    const club = p.get('club');
+    const club = window.resolverClubId(p.get('club'));
     const anios = (p.get('anios') || '').split(',').map(Number).filter(Number.isFinite).filter(Boolean);
     const liga = p.get('liga');
     const anio = Number(p.get('anio')) || null;

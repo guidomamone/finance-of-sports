@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {"id":"gent-be","name":"K.A.A. Gent NV","display_name":"Gent","country":"BE","reporting_currency":"EUR","fiscal_year_start":"07-01","sport":"futbol"},
+  "sources": [
+    {
+      "id": "gent-be-jaarrekening-2025",
+      "club_id": "gent-be",
+      "title": "Jaarrekening van K.A.A. Gent NV voor het boekjaar van 1/7/2024 tot 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "gent-be-jaarrekening-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Omzet (ticketing, sponsoring en publiciteit)","category":"lump_football_operations","amount":37.503463,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"player_sales","amount":43.656204,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Handelsgoederen, grond- en hulpstoffen","category":"other_expenses","amount":-0.357352,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-22.217207,"disclosure":"aggregated"},
+        {"label":"Bezoldigingen, sociale lasten en pensioenen","category":"wages_squad","amount":-34.923563,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "player_amortisation",
+          "amount": -13.616725,
+          "disclosure": "aggregated"
+        },
+        {"label":"Voorzieningen voor risico's en kosten (terugneming/reversión)","category":"exceptional_items","amount":0.349285,"disclosure":"aggregated"},
+        {
+          "label": "Andere bedrijfskosten (onroerende voorheffing en sell-on fees op transfers)",
+          "category": "other_expenses",
+          "amount": -6.717525,
+          "disclosure": "aggregated"
+        },
+        {"label":"Niet-recurrente bedrijfskosten (dading en afhandeling CEPANI)","category":"exceptional_items","amount":-0.988421,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.673941,"tax":-0.118355,"gross_debt":70.411806,"cash":9.057614},
+      "official_totals": {"revenue":81.159667,"expenses":77.832372,"net_result":1.895863}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

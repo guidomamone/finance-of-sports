@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "americadecali-co",
+    "name": "América de Cali S.A. En Reorganización",
+    "display_name": "América de Cali",
+    "country": "CO",
+    "reporting_currency": "COP",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "americadecali-co-estados-financieros-2025",
+      "club_id": "americadecali-co",
+      "title": "Estado Individual de Situación Financiera y Estado Individual de Resultados y Otros Resultados Integrales, al 31 de diciembre de 2025 y 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Marcela Gómez Giraldo (Representante Legal)","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "COP",
+      "source_id": "americadecali-co-estados-financieros-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"COP@2025-12-31"},
+      "revenue": [
+        {"label":"Ingreso venta de boletería","category":"matchday_competition","amount":20397.872,"disclosure":"detailed"},
+        {"label":"Derechos Deportivos","category":"player_sales","amount":21564.695,"disclosure":"detailed"},
+        {"label":"Utilidad en venta Derechos Deportivos","category":"player_sales","amount":8687.472,"disclosure":"detailed"},
+        {"label":"Patrocinio y Publicidad","category":"sponsorship_commercial","amount":15760.765,"disclosure":"detailed"},
+        {"label":"Derechos TV Dimayor","category":"broadcasting","amount":6192.158,"disclosure":"detailed"},
+        {"label":"Auxilios Dimayor","category":"broadcasting","amount":2808.468,"disclosure":"detailed"},
+        {"label":"Academias","category":"youth_football","amount":814.294,"disclosure":"detailed"},
+        {"label":"Transporte de mercancía","category":"sponsorship_commercial","amount":0,"disclosure":"detailed"},
+        {"label":"Participación Eventos","category":"competition_bonus","amount":10530.04,"disclosure":"detailed"},
+        {"label":"Ventas Gravadas y Excluidas","category":"other_income","amount":10291.303,"disclosure":"detailed"},
+        {"label":"Ingresos Conexos","category":"other_income","amount":85.339,"disclosure":"detailed"},
+        {"label":"Auxilio de Infraestructura","category":"other_income","amount":62.94,"disclosure":"detailed"},
+        {"label":"Ingreso mecanismo de solidaridad","category":"player_sales","amount":257.227,"disclosure":"detailed"},
+        {"label":"Menos: Devoluciones","category":"other_income","amount":-1062.38,"disclosure":"detailed"},
+        {
+          "label": "Otros ingresos operacionales (servicios, utilidad en venta de PP&E, recuperaciones, devoluciones, diversos)",
+          "category": "other_income",
+          "amount": 841.136,
+          "disclosure": "detailed",
+          "items": [
+            ["Servicios",45.429],
+            ["Utilidad en venta de propiedad, planta y equipo",20],
+            ["Recuperaciones costos y gastos",477.085],
+            ["Devoluciones",-1.879],
+            ["Diversos",300.501]
+          ]
+        }
+      ],
+      "expenses": [
+        {"label":"Costo de Ventas","category":"other_expenses","amount":-6678.102,"disclosure":"detailed"},
+        {"label":"Costos deportivos: Gastos de personal (plantel)","category":"wages_squad","amount":-33897.003,"disclosure":"detailed"},
+        {
+          "label": "Costos deportivos: Administración del plantel (honorarios, impuestos, contribuciones, seguros, legales)",
+          "category": "admin_general_expense",
+          "amount": -4276.834,
+          "disclosure": "detailed",
+          "items": [["Honorarios",-189.462],["Impuestos",-3436.829],["Contribuciones y afiliaciones",-525.9],["Seguros",-94.767],["Gastos legales",-29.876]]
+        },
+        {
+          "label": "Costos deportivos: Organización y logística (arrendamientos, servicios, mantenimiento, adecuación, viajes)",
+          "category": "match_organisation_expense",
+          "amount": -6532.411,
+          "disclosure": "detailed",
+          "items": [
+            ["Arrendamientos",-1145.596],
+            ["Servicios",-1235.901],
+            ["Mantenimiento y reparaciones",-198.667],
+            ["Adecuación e instalación",-63.602],
+            ["Gastos de viaje",-3888.645]
+          ]
+        },
+        {"label":"Costos deportivos: Depreciaciones","category":"depreciation","amount":-392.482,"disclosure":"detailed"},
+        {"label":"Costos deportivos: Amortizaciones (derechos deportivos)","category":"player_amortisation","amount":-16614.604,"disclosure":"detailed"},
+        {"label":"Costos deportivos: Derechos deportivos","category":"player_amortisation","amount":-19144.126,"disclosure":"detailed"},
+        {"label":"Costos deportivos: Diversos","category":"other_expenses","amount":-8674.47,"disclosure":"detailed"},
+        {
+          "label": "Gasto de administración (personal, honorarios, impuestos, arrendamientos, contribuciones, seguros, legales, servicios, mantenimiento, adecuación, viajes, diversos)",
+          "category": "admin_general_expense",
+          "amount": -3670.709,
+          "disclosure": "detailed"
+        },
+        {"label":"Gasto de administración: Depreciaciones","category":"depreciation","amount":-149.035,"disclosure":"detailed"},
+        {"label":"Gasto de administración: Amortizaciones","category":"other_amortisation","amount":-18.85,"disclosure":"detailed"},
+        {
+          "label": "Gasto de ventas (personal, honorarios, impuestos, arrendamientos, contribuciones, y otros no desglosados individualmente en la transcripción)",
+          "category": "admin_general_expense",
+          "amount": -1593.44,
+          "disclosure": "detailed",
+          "items": [
+            ["Gastos de personal",-657.334],
+            ["Honorarios",-58.5],
+            ["Impuestos",-85.801],
+            ["Arrendamientos",-445.262],
+            ["Contribuciones y afiliaciones",-0.472],
+            [
+              "Otros gastos de ventas (deterioro, seguros, servicios, legales, mantenimiento, viajes, depreciaciones, amortizaciones, diversos — no desglosados individualmente por solapamiento de notas en la transcripción)",
+              -346.071
+            ]
+          ]
+        },
+        {
+          "label": "Otros Gastos (pérdida en venta y retiro de bienes, gastos extraordinarios, gravamen movimiento financiero, gastos diversos, deterioro)",
+          "category": "other_expenses",
+          "amount": -2679.146,
+          "disclosure": "detailed",
+          "items": [
+            ["Perdida en venta y retiro de bienes",0],
+            ["Gastos Extraordinarios",-716.294],
+            ["Gravamen movimiento financiero",-387.88],
+            ["Gastos Diversos",-1487.151],
+            ["Deterioro",-87.821]
+          ]
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4239.446,"tax":-569.145,"gross_debt":11835.971,"cash":870.325},
+      "official_totals": {"revenue":97231.328,"expenses":104321.212,"net_result":-11898.474}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

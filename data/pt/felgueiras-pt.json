@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "felgueiras-pt",
+    "name": "Futebol Clube de Felgueiras - Futebol SAD",
+    "display_name": "Felgueiras",
+    "country": "PT",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024",
+      "club_id": "felgueiras-pt",
+      "title": "Futebol Clube de Felgueiras - Futebol SAD — Demonstracoes-Financeiras-Individuais-Epoca-2023-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "felgueiras-pt-fecho-contas-2022-2023",
+      "club_id": "felgueiras-pt",
+      "title": "Futebol Clube de Felgueiras - Futebol SAD — Fecho-contas-2022-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "felgueiras-pt-fecho-de-contas-sad-2021-2022",
+      "club_id": "felgueiras-pt",
+      "title": "Futebol Clube de Felgueiras - Futebol SAD — Fecho-de-contas-SAD-2021-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "felgueiras-pt-fecho-de-contas-sad-2021-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Vendas e serviços prestados","category":"lump_football_operations","amount":0.138985,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.004029,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trabalhos especializados","category":"admin_general_expense","amount":-0.040094,"disclosure":"aggregated"},
+        {"label":"Publicidade e propaganda","category":"admin_general_expense","amount":-0.000556,"disclosure":"aggregated"},
+        {"label":"Vigilância e segurança","category":"match_organisation_expense","amount":-0.009762,"disclosure":"aggregated"},
+        {"label":"Honorários","category":"admin_general_expense","amount":-0.0005,"disclosure":"aggregated"},
+        {"label":"Ferramentas e utensílios de desgaste rápido","category":"admin_general_expense","amount":-0.003244,"disclosure":"aggregated"},
+        {"label":"Material de escritório","category":"admin_general_expense","amount":-0.001213,"disclosure":"aggregated"},
+        {"label":"Eletricidade","category":"admin_general_expense","amount":-0.000633,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.000016,"disclosure":"aggregated"},
+        {"label":"Deslocações e estadas","category":"match_organisation_expense","amount":-0.002018,"disclosure":"aggregated"},
+        {"label":"Transportes de mercadorias","category":"admin_general_expense","amount":-0.007382,"disclosure":"aggregated"},
+        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.0133,"disclosure":"aggregated"},
+        {"label":"Comunicação","category":"admin_general_expense","amount":-0.000178,"disclosure":"aggregated"},
+        {"label":"Contencioso e notariado","category":"admin_general_expense","amount":-0.000879,"disclosure":"aggregated"},
+        {"label":"Despesas de representação","category":"admin_general_expense","amount":-0.028069,"disclosure":"aggregated"},
+        {"label":"Limpeza, higiene e conforto","category":"admin_general_expense","amount":-0.000718,"disclosure":"aggregated"},
+        {"label":"Outros serviços","category":"other_expenses","amount":-0.043752,"disclosure":"aggregated"},
+        {"label":"Remunerações","category":"wages_squad","amount":-0.160181,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"wages_squad","amount":-0.223448,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_expenses","amount":-0.136213,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000217,"tax":0,"gross_debt":1.054922,"cash":0.018265},
+      "official_totals": {"revenue":0.143014,"expenses":0.672154,"net_result":-0.529357},
+      "adjustments": {"no_breakdown":[{"line":"Vendas e serviços prestados","side":"revenue","amount":0.138985,"reason":"el documento no desglosa este renglón"}]}
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "felgueiras-pt-fecho-contas-2022-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":0.9203,"source":"manual"},
+      "revenue": [
+        {"label":"Vendas e serviços prestados","category":"lump_football_operations","amount":0.179315,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.008297,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"other_income","amount":0.009521,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trabalhos especializados","category":"admin_general_expense","amount":-0.051727,"disclosure":"aggregated"},
+        {"label":"Publicidade e propaganda","category":"admin_general_expense","amount":-0.000509,"disclosure":"aggregated"},
+        {"label":"Vigilância e segurança","category":"match_organisation_expense","amount":-0.00153,"disclosure":"aggregated"},
+        {"label":"Honorários","category":"admin_general_expense","amount":-0.002,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.015736,"disclosure":"aggregated"},
+        {"label":"Ferramentas e utensílios de desgaste rápido","category":"admin_general_expense","amount":-0.019351,"disclosure":"aggregated"},
+        {"label":"Material de escritório","category":"admin_general_expense","amount":-0.000932,"disclosure":"aggregated"},
+        {"label":"Eletricidade","category":"admin_general_expense","amount":-0.00164,"disclosure":"aggregated"},
+        {"label":"Água","category":"admin_general_expense","amount":-0.000007,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.000047,"disclosure":"aggregated"},
+        {"label":"Deslocações e estadas","category":"match_organisation_expense","amount":-0.010869,"disclosure":"aggregated"},
+        {"label":"Transportes de mercadorias","category":"admin_general_expense","amount":-0.007276,"disclosure":"aggregated"},
+        {"label":"Serviços diversos","category":"other_expenses","amount":-0.189825,"disclosure":"aggregated"},
+        {"label":"Gastos com o pessoal","category":"wages_squad","amount":-0.458634,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_expenses","amount":-0.000052,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.001175,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000123,"tax":-0.002884,"gross_debt":1.656346,"cash":0.013695},
+      "official_totals": {"revenue":0.197133,"expenses":0.76131,"net_result":-0.567184},
+      "adjustments": {
+        "extra_rows": [{"label":"Gasto líquido de financiamento","amount":-0.000123},{"label":"Imposto sobre o rendimento do período","amount":-0.002884}],
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.179315,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Vendas e serviços prestados","category":"lump_football_operations","amount":0.418836,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.009517,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Fornecimentos e serviços externos","category":"admin_general_expense","amount":-0.365117,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-0.579119,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.090555,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-0.025698,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"wages_squad","amount":-0.099534,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_expenses","amount":-0.001148,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.0028,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.003558,"tax":-0.000637,"gross_debt":2.431543,"cash":0.052557},
+      "official_totals": {"revenue":0.428353,"expenses":1.163971,"net_result":-0.732696},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Juros e rendimentos similares obtidos","amount":0.004206},
+          {"label":"Juros e gastos similares suportados","amount":-0.000648},
+          {"label":"Imposto sobre o rendimento do período","amount":-0.000637}
+        ],
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.418836,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

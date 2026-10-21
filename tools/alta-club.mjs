@@ -69,10 +69,7 @@
 // ----------------------------------------------------------------------------
 // id               slug del nombre de la carpeta + '-' + ISO2 del país (convención
 //                  de la Versión 129, `Admin/CONVENCIONES.md`: 'agf-dk',
-//                  'racingsantander-es'). `pregunta` si choca con un id existente o
-//                  si su base coincide con un id HEREDADO sin país ('racing',
-//                  'union'...): la convención dice que ESE es el momento de
-//                  renombrar el viejo, y eso lo decide Guido.
+//                  'racingsantander-es'). `pregunta` si choca con un id existente.
 // displayName      el nombre de la carpeta (que ya es el nombre corto legible que
 //                  eligió el sourcing), sin lo que vaya entre paréntesis.
 // name             el nombre LEGAL: se busca en el `.md` una línea con el nombre del
@@ -259,6 +256,7 @@ import { agregarCaso, casoYRespuesta } from './cola.mjs';
 import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
 import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
+import { crearClub } from './club-json.mjs'; // (to-do 245, fase 2) el JSON es la fuente de cada club
 import { GENERADORES, queFalla } from './generadores.mjs';
 import { derivado } from './rutas.mjs';
 export { resumenAltas };
@@ -1039,7 +1037,6 @@ export function analizar(docArg, sitio, ov = {}) {
     const id = `${base}-${iso}`;
     if (!pais || !pais.iso2) r.campos.push(campo('id', id, 'slug del nombre de la carpeta + país', 'pregunta', { pregunta: pais && pais.pregunta ? pais.pregunta : `País "${paisCarpeta}" sin ISO2: ¿qué sufijo lleva el id?` }));
     else if (sitio.clubs[id]) r.campos.push(campo('id', id, 'slug del nombre de la carpeta + país', 'pregunta', { pregunta: `El id '${id}' ya existe en data/clubs.js (${sitio.clubs[id].name}) y ninguna señal dice que sea este club. ¿Es el mismo club (y la carpeta se llama distinto) o hace falta otro id?` }));
-    else if (sitio.clubs[base]) r.campos.push(campo('id', id, 'slug del nombre de la carpeta + país', 'pregunta', { pregunta: `El id base '${base}' es un id HEREDADO sin país (${sitio.clubs[base].name}, ${sitio.clubs[base].country}). Admin/CONVENCIONES.md (Versión 129): el día que entra un homónimo de otro país hay que renombrar el viejo a '${base}-${String(sitio.clubs[base].country).toLowerCase()}' (su archivo, su clubId y cada sourceId). ¿Se renombra ahora?` }));
     else r.campos.push(campo('id', id, `slug de "${displayName}" + '-${iso}' (convención de clubId, Admin/CONVENCIONES.md Versión 129)`));
     // name
     r.campos.push(decidirNombre(md, displayName, r.carpeta, r.pdf, { ov }));
@@ -1461,29 +1458,9 @@ function escribir(r) {
       `FISCAL YEAR META PROPUESTO para ${r.ejercicio.anio} (NO registrado: un ejercicio con meta y`,
       'sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):',
       `  ${r.ejercicio.anio}: ${JSON.stringify(metaProp)}`]);
-    const esqueleto = `const ${v}RevenueLinesByYear = {};
-const ${v}ExpenseLinesByYear = {};
-const ${v}FiscalYearMeta = {};
-const ${v}PresupuestoOverlayByYear = {};
-
-const ${v}PasesData = [];
-const ${v}ResultadosData = {};
-const ${v}TitulosData = [];
-
-window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
-window.CLUB_GENERIC_DATA[${jsStr(id)}] = {
-  revenueLinesByYear: ${v}RevenueLinesByYear, expenseLinesByYear: ${v}ExpenseLinesByYear,
-  fiscalYearMeta: ${v}FiscalYearMeta, pasesData: ${v}PasesData,
-  resultadosData: ${v}ResultadosData, titulosData: ${v}TitulosData,
-  presupuestoOverlayByYear: ${v}PresupuestoOverlayByYear,
-};
-
-Object.assign(sources, {
-});
-
-memberCountByClub[${jsStr(id)}] = null;
-`;
-    mkdirSync(dirname(dataPath), { recursive: true }); writeFileSync(dataPath, esqueleto); escritos.push(rutaData(id, { pais: val('country') }));
+    // (to-do 245, fase 2) el esqueleto es el JSON del club (la fuente) y de ahí sale su data file
+    const ficha = { id, name: val('name'), displayName: val('displayName'), country: val('country'), reportingCurrency: val('reportingCurrency'), fiscalYearStart: val('fiscalYearStart'), sport: val('sport') || 'futbol' };
+    escritos.push(...crearClub(id, ficha, { pais: val('country') }));
 
     // 3. data/club-leagues/<iso2>.js
     const iso = val('country').toLowerCase();

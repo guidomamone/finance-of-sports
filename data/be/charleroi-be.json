@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "charleroi-be",
+    "name": "R. Charleroi S.C.",
+    "display_name": "Charleroi",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "charleroi-be-jaarrekening-2025",
+      "club_id": "charleroi-be",
+      "title": "Comptes annuels de la SA Sporting du Pays de Charleroi pour l'exercice du 1/7/2024 au 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "charleroi-be-jaarrekening-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Chiffre d'affaires","category":"lump_football_operations","amount":24.786109,"disclosure":"aggregated"},
+        {"label":"Autres produits d'exploitation","category":"other_income","amount":5.018673,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Approvisionnements et marchandises","category":"other_expenses","amount":-0.210451,"disclosure":"aggregated"},
+        {"label":"Services et biens divers","category":"other_expenses","amount":-12.762354,"disclosure":"aggregated"},
+        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-17.825907,"disclosure":"aggregated"},
+        {
+          "label": "Amortissements — droits sur joueurs (immobilisations incorporelles)",
+          "category": "player_amortisation",
+          "amount": -1.635885,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortissements — immobilisations corporelles","category":"depreciation","amount":-0.501149,"disclosure":"detailed"},
+        {"label":"Réductions de valeur sur stocks et créances commerciales","category":"other_expenses","amount":-0.003648,"disclosure":"aggregated"},
+        {"label":"Provisions pour risques et charges","category":"exceptional_items","amount":-0.419224,"disclosure":"aggregated"},
+        {"label":"Impôts et taxes relatifs à l'exploitation","category":"admin_general_expense","amount":-0.561662,"disclosure":"detailed"},
+        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.063697,"disclosure":"aggregated"},
+        {"label":"Prélèvement sur les réserves immunisées","category":"exceptional_items","amount":1.078606,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.28882,"tax":-0.113122,"gross_debt":10.64103,"cash":0.898948},
+      "official_totals": {"revenue":29.804782,"expenses":33.564753,"net_result":-3.50253}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

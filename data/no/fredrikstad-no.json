@@ -1,0 +1,343 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "fredrikstad-no",
+    "name": "Fredrikstad Fotballklubb",
+    "display_name": "Fredrikstad",
+    "country": "NO",
+    "reporting_currency": "NOK",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "fredrikstad-no-wf-src-ffk-arsmote-2025",
+      "club_id": "fredrikstad-no",
+      "title": "Fredrikstad Fotballklubb — wf-src-FFK_-_Årsmøte_2025 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2016",
+      "club_id": "fredrikstad-no",
+      "title": "Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2017",
+      "club_id": "fredrikstad-no",
+      "title": "Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2013",
+      "club_id": "fredrikstad-no",
+      "title": "Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2013 (ejercicio 2013)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2014",
+      "club_id": "fredrikstad-no",
+      "title": "Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2014 (ejercicio 2014)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2015",
+      "club_id": "fredrikstad-no",
+      "title": "Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2015 (ejercicio 2015)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2018",
+      "club_id": "fredrikstad-no",
+      "title": "Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2012",
+      "club_id": "fredrikstad-no",
+      "title": "Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2012 (ejercicio 2012)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2012,
+      "period_end": "2012-12-31",
+      "currency": "NOK",
+      "source_id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2012",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2012-12-31"},
+      "revenue": [
+        {"label":"Diverseinntekter","category":"other_income","amount":0.000354,"disclosure":"aggregated"},
+        {"label":"Medlemskontingent","category":"member_dues","amount":0.08649,"disclosure":"aggregated"},
+        {"label":"GRASROTANDEL","category":"other_income","amount":0.677145,"disclosure":"aggregated"},
+        {"label":"Jeg er med","category":"other_income","amount":1.148488,"disclosure":"aggregated"},
+        {"label":"Spilleautomater","category":"other_income","amount":0.230242,"disclosure":"aggregated"},
+        {"label":"Tilskudd FFK Sport ASA","category":"other_income","amount":19.769761,"disclosure":"aggregated"},
+        {"label":"Tilskudd, gaver","category":"other_income","amount":1.088161,"disclosure":"aggregated"},
+        {"label":"Treningsavgifter","category":"youth_football","amount":0.0625,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lønn/honorar","category":"wages_squad","amount":-0.063134,"disclosure":"aggregated"},
+        {"label":"Lønn Gatelag","category":"youth_other_sports_expense","amount":-0.33521,"disclosure":"aggregated"},
+        {"label":"Sosiale tiltak, frivillige","category":"youth_other_sports_expense","amount":-0.03355,"disclosure":"aggregated"},
+        {"label":"Utsmykning stadion","category":"admin_general_expense","amount":-0.016809,"disclosure":"aggregated"},
+        {"label":"Adm. kostnader","category":"admin_general_expense","amount":-0.045,"disclosure":"aggregated"},
+        {"label":"Jeg er med!","category":"other_expenses","amount":-0.071307,"disclosure":"aggregated"},
+        {"label":"Kurs","category":"admin_general_expense","amount":-0.01183,"disclosure":"aggregated"},
+        {"label":"Reiseutgifter","category":"match_organisation_expense","amount":-0.035545,"disclosure":"aggregated"},
+        {"label":"Arrangement gatelag","category":"youth_other_sports_expense","amount":-0.078702,"disclosure":"aggregated"},
+        {"label":"Kostnader gatelag","category":"youth_other_sports_expense","amount":-0.17696,"disclosure":"aggregated"},
+        {"label":"Revisjonshonorar","category":"admin_general_expense","amount":-0.05,"disclosure":"aggregated"},
+        {"label":"Revisjonsbistand","category":"admin_general_expense","amount":-0.0265,"disclosure":"aggregated"},
+        {"label":"Juridisk bistand","category":"admin_general_expense","amount":-0.08542,"disclosure":"aggregated"},
+        {"label":"Kontorkostnader","category":"admin_general_expense","amount":-0.00644,"disclosure":"aggregated"},
+        {"label":"Gaver/medaljer","category":"other_expenses","amount":-0.017425,"disclosure":"aggregated"},
+        {"label":"Representasjon/møter","category":"admin_general_expense","amount":-0.0556,"disclosure":"aggregated"},
+        {"label":"Ikke fradragsber. Kostn","category":"other_expenses","amount":-0.10025,"disclosure":"aggregated"},
+        {"label":"Tap på krav","category":"other_expenses","amount":-1.188489,"disclosure":"aggregated"},
+        {"label":"Utgifter Sport","category":"lump_football_operations_expense","amount":-21.156689,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.027941,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":23.063141,"expenses":23.55486,"net_result":-1.51966},
+      "adjustments": {
+        "extra_rows": [{"label":"Annen finansinntekt","amount":-1.027294},{"label":"Annen rentekostnad","amount":0},{"label":"Annen finanskostnad","amount":-0.000647}],
+        "no_breakdown": [
+          {
+            "line": "Utgifter Sport",
+            "side": "expense",
+            "amount": 21.156689,
+            "reason": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose"
+          }
+        ],
+        "included_in": {
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2013,
+      "period_end": "2013-12-31",
+      "currency": "NOK",
+      "source_id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2013",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2013-12-31"},
+      "revenue": [
+        {"label":"Salgsinntekt","category":"lump_football_operations","amount":14.289455,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"lump_football_operations","amount":1.291506,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-2.253392,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-13.093523,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-1.883764,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.182305,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":-0.163735,"disclosure":"aggregated"},
+        {"label":"Avskrivning","category":"depreciation","amount":-0.087835,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-17.181495,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.311729,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":15.580961,"expenses":34.846049,"net_result":-17.953359},
+      "adjustments": {
+        "extra_rows": [{"label":"Annen finansinntekt","amount":1.468544},{"label":"Annen finanskostnad","amount":-0.156815}],
+        "no_breakdown": [
+          {
+            "line": "Salgsinntekt",
+            "side": "revenue",
+            "amount": 14.289455,
+            "reason": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)"
+          },
+          {"line":"Annen driftsinntekt","side":"revenue","amount":1.291506,"reason":"el documento no desglosa este renglón"}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2014,
+      "period_end": "2014-12-31",
+      "currency": "NOK",
+      "source_id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2014",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2014-12-31"},
+      "revenue": [
+        {"label":"Salgsinntekt","category":"lump_football_operations","amount":28.816918,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"lump_football_operations","amount":1.547231,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-3.170397,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-12.876374,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-1.888163,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.249785,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":-0.44589,"disclosure":"aggregated"},
+        {"label":"Avskrivning","category":"depreciation","amount":-1.59183,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-10.136399,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.049225,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":30.364149,"expenses":30.358838,"net_result":0.054536},
+      "adjustments": {
+        "extra_rows": [{"label":"Annen finansinntekt","amount":0.049912},{"label":"Annen finanskostnad","amount":-0.000687}],
+        "no_breakdown": [
+          {
+            "line": "Salgsinntekt",
+            "side": "revenue",
+            "amount": 28.816918,
+            "reason": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)"
+          },
+          {"line":"Annen driftsinntekt","side":"revenue","amount":1.547231,"reason":"el documento no desglosa este renglón"}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2015,
+      "period_end": "2015-12-31",
+      "currency": "NOK",
+      "source_id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2015",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2015-12-31"},
+      "revenue": [
+        {"label":"Salgsinntekt","category":"lump_football_operations","amount":28.043511,"disclosure":"aggregated"},
+        {"label":"Annen driftsinntekt","category":"lump_football_operations","amount":4.134031,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-4.0189,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-14.267826,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-2.052939,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.211498,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":-0.462423,"disclosure":"aggregated"},
+        {"label":"Avskrivning","category":"depreciation","amount":-0.169916,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-10.996404,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.037476,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":32.177542,"expenses":32.179906,"net_result":0.035112},
+      "adjustments": {
+        "extra_rows": [{"label":"Annen finansinntekt","amount":0.048832},{"label":"Annen finanskostnad","amount":-0.011356}],
+        "no_breakdown": [
+          {
+            "line": "Salgsinntekt",
+            "side": "revenue",
+            "amount": 28.043511,
+            "reason": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)"
+          },
+          {"line":"Annen driftsinntekt","side":"revenue","amount":4.134031,"reason":"el documento no desglosa este renglón"}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-12-31",
+      "currency": "NOK",
+      "source_id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2016-12-31"},
+      "revenue": [{"label":"Annen driftsinntekt","category":"lump_football_operations","amount":33.801587,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-4.006214,"disclosure":"aggregated"},
+        {"label":"Lønnskostnad","category":"wages_squad","amount":-19.287756,"disclosure":"aggregated"},
+        {"label":"Avskrivning","category":"depreciation","amount":-0.541479,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-9.977524,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.031955,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":33.801587,"expenses":33.812973,"net_result":0.020569},
+      "adjustments": {
+        "extra_rows": [{"label":"Annen finansinntekt","amount":0.042386},{"label":"Annen finanskostnad","amount":-0.010431}],
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":33.801587,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "NOK",
+      "source_id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2017-12-31"},
+      "revenue": [{"label":"Annen driftsinntekt","category":"lump_football_operations","amount":28.452409,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-3.777036,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-14.794685,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-2.053884,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.249952,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":-0.45711,"disclosure":"aggregated"},
+        {"label":"Avskrivning","category":"depreciation","amount":-0.811054,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-6.350206,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.009456,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":28.452409,"expenses":28.493927,"net_result":-0.032063},
+      "adjustments": {
+        "extra_rows": [{"label":"Annen finansinntekt","amount":0.039931},{"label":"Annen finanskostnad","amount":-0.030475}],
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":28.452409,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-12-31",
+      "currency": "NOK",
+      "source_id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2018-12-31"},
+      "revenue": [{"label":"Annen driftsinntekt","category":"lump_football_operations","amount":22.903598,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-3.579789,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-10.325425,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-1.782638,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.247446,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":-0.413427,"disclosure":"aggregated"},
+        {"label":"Avskrivning","category":"depreciation","amount":-0.235149,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-6.321588,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.1467,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":22.903598,"expenses":22.905462,"net_result":-1.148565},
+      "adjustments": {
+        "extra_rows": [{"label":"Annen finansinntekt","amount":0.09345},{"label":"Annen finanskostnad","amount":-1.24015}],
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":22.903598,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "NOK",
+      "source_id": "fredrikstad-no-wf-src-ffk-arsmote-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2024-12-31"},
+      "revenue": [{"label":"Annen driftsinntekt","category":"lump_football_operations","amount":92.725486,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-9.678901,"disclosure":"aggregated"},
+        {"label":"Lønnskostnad","category":"wages_squad","amount":-53.626147,"disclosure":"aggregated"},
+        {"label":"Avskrivning","category":"depreciation","amount":-5.056889,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-21.50972,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.087325,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":92.725486,"expenses":89.871657,"net_result":2.766504},
+      "adjustments": {
+        "extra_rows": [{"label":"Annen finansinntekt","amount":0.223302},{"label":"Annen finanskostnad","amount":-0.310627}],
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":92.725486,"reason":"el documento no desglosa este renglón"}],
+        "included_in": {
+          "member_dues": "lump_football_operations",
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true}
+        }
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "mancity-gb",
+    "name": "Manchester City Football Club Limited",
+    "display_name": "Manchester City",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "mancity-gb-full-accounts-2024",
+      "club_id": "mancity-gb",
+      "title": "Manchester City Football Club Limited — Full Accounts (Companies House n.° 00040946), ejercicio cerrado el 30 de junio de 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history",
+      "public_note": "Cuentas de la sociedad del club (Manchester City Football Club Limited) sola, NO las cuentas consolidadas de City Football Group, que además controla otros clubes (Nueva York, Melbourne, Girona, entre otros) y publica su propio balance por separado."
+    },
+    {
+      "id": "mancity-gb-full-accounts-2025",
+      "club_id": "mancity-gb",
+      "title": "Manchester City Football Club Limited — Full Accounts (Companies House n.° 00040946), ejercicio cerrado el 30 de junio de 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00040946/filing-history",
+      "public_note": "Cuentas de la sociedad del club (Manchester City Football Club Limited) sola, NO las cuentas consolidadas de City Football Group, que además controla otros clubes (Nueva York, Melbourne, Girona, entre otros) y publica su propio balance por separado."
+    },
+    {
+      "id": "mancity-gb-full-accounts-2020-21",
+      "club_id": "mancity-gb",
+      "title": "Manchester City Football Club Limited — mancity-full-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "mancity-gb-full-accounts-2022-23",
+      "club_id": "mancity-gb",
+      "title": "Manchester City Football Club Limited — mancity-full-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "mancity-gb-full-accounts-2021-22",
+      "club_id": "mancity-gb",
+      "title": "Manchester City Football Club Limited — mancity-full-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Khaldoon Al Mubarak (Chairman, 2008-actual)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "GBP",
+      "source_id": "mancity-gb-full-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":0.732,"disclosure":"aggregated"},
+        {"label":"Broadcasting - UEFA","category":"broadcasting","amount":114.765,"disclosure":"aggregated"},
+        {"label":"Broadcasting - all other","category":"broadcasting","amount":182.683,"disclosure":"aggregated"},
+        {"label":"Other commercial activities","category":"sponsorship_commercial","amount":271.669,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":1.244,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":68.545,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Direct cost of sales and consumables","category":"admin_general_expense","amount":-0.067,"disclosure":"aggregated"},
+        {"label":"Remuneration of Auditors (audit fees)","category":"admin_general_expense","amount":-0.06,"disclosure":"aggregated"},
+        {"label":"Other external charges","category":"other_expenses","amount":-99.766,"disclosure":"aggregated"},
+        {"label":"Wages and salaries","category":"wages_squad","amount":-310.737,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-42.502,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"wages_squad","amount":-1.45,"disclosure":"aggregated"},
+        {"label":"Amortisation and impairment of intangible assets","category":"player_amortisation","amount":-164.427,"disclosure":"aggregated"},
+        {"label":"Owned","category":"depreciation","amount":-9.376,"disclosure":"aggregated"},
+        {"label":"Leased","category":"depreciation","amount":-1.452,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.753,"tax":-2.681,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":639.638,"expenses":629.837,"net_result":2.367},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":1.525},
+          {"label":"Interest payable and similar charges","amount":-6.278},
+          {"label":"Taxation","amount":-2.681}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "mancity-gb-full-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":54.482,"disclosure":"aggregated"},
+        {"label":"Broadcasting - UEFA","category":"broadcasting","amount":90.499,"disclosure":"aggregated"},
+        {"label":"Broadcasting - all other","category":"broadcasting","amount":158.561,"disclosure":"aggregated"},
+        {"label":"Other commercial activities","category":"sponsorship_commercial","amount":309.472,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":6.068,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":67.699,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Direct cost of sales and consumables","category":"admin_general_expense","amount":-8.587,"disclosure":"aggregated"},
+        {"label":"Remuneration of Auditors (audit fees)","category":"admin_general_expense","amount":-0.052,"disclosure":"aggregated"},
+        {"label":"Other external charges","category":"other_expenses","amount":-124.69,"disclosure":"aggregated"},
+        {"label":"Wages and salaries","category":"wages_squad","amount":-308.675,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-44.35,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"wages_squad","amount":-0.856,"disclosure":"aggregated"},
+        {"label":"Amortisation and impairment of intangible assets","category":"player_amortisation","amount":-140.708,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of property, plant and equipment","category":"other_expenses","amount":-1.119,"disclosure":"aggregated"},
+        {"label":"Owned","category":"depreciation","amount":-9.999,"disclosure":"aggregated"},
+        {"label":"Leased","category":"depreciation","amount":-1.452,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.567,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":686.781,"expenses":640.488,"net_result":41.726},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.778},
+          {"label":"Interest payable and similar charges","amount":-5.345},
+          {"label":"Taxation","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "mancity-gb-full-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":71.914,"disclosure":"aggregated"},
+        {"label":"Broadcasting - UEFA","category":"broadcasting","amount":113.852,"disclosure":"aggregated"},
+        {"label":"Broadcasting - all other","category":"broadcasting","amount":185.558,"disclosure":"aggregated"},
+        {"label":"Other commercial activities","category":"sponsorship_commercial","amount":341.444,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":5.456,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":121.72,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Direct cost of sales and consumables","category":"admin_general_expense","amount":-15.613,"disclosure":"aggregated"},
+        {"label":"Remuneration of Auditors (audit fees)","category":"admin_general_expense","amount":-0.072,"disclosure":"aggregated"},
+        {"label":"Other external charges","category":"other_expenses","amount":-156.533,"disclosure":"aggregated"},
+        {"label":"Wages and salaries","category":"wages_squad","amount":-368.213,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-52.88,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"wages_squad","amount":-0.96,"disclosure":"aggregated"},
+        {"label":"Share-based payments","category":"wages_squad","amount":-0.842,"disclosure":"aggregated"},
+        {"label":"Amortisation and impairment of intangible assets","category":"player_amortisation","amount":-145.448,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of property, plant and equipment","category":"other_expenses","amount":-1.236,"disclosure":"aggregated"},
+        {"label":"Owned","category":"depreciation","amount":-10.613,"disclosure":"aggregated"},
+        {"label":"Leased","category":"depreciation","amount":-1.452,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.711,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":839.944,"expenses":753.862,"net_result":80.371},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.056},
+          {"label":"Interest payable and similar charges","amount":-5.767},
+          {"label":"Taxation","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "mancity-gb-full-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":75.607,"disclosure":"detailed"},
+        {"label":"Broadcasting - UEFA","category":"broadcasting","amount":104.599,"disclosure":"detailed"},
+        {"label":"Broadcasting - All Other","category":"broadcasting","amount":190.132,"disclosure":"detailed"},
+        {"label":"Other commercial activities","category":"sponsorship_commercial","amount":344.681,"disclosure":"detailed"},
+        {"label":"Other operating income","category":"other_income","amount":4.455,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Employee costs","category":"wages_squad","amount":-412.573,"disclosure":"detailed"},
+        {"label":"Direct cost of sales and consumables","category":"admin_general_expense","amount":-17.186,"disclosure":"detailed"},
+        {"label":"Remuneration of Auditors (audit fees)","category":"admin_general_expense","amount":-0.08,"disclosure":"detailed"},
+        {"label":"Other external charges","category":"other_expenses","amount":-172.391,"disclosure":"not_disclosed"},
+        {"label":"(Profit)/loss on disposal of property, plant and equipment","category":"other_expenses","amount":-0.016,"disclosure":"detailed"},
+        {
+          "label": "Amortisation and impairment of intangible assets (players' registrations)",
+          "category": "player_amortisation",
+          "amount": -165.094,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciation of property, plant and equipment — Owned","category":"depreciation","amount":-11.179,"disclosure":"detailed"},
+        {"label":"Depreciation of property, plant and equipment — Leased","category":"depreciation","amount":-1.452,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":139.009,"asset_sales":0,"net_interest":-4.755,"tax":0,"gross_debt":0,"cash":53.767},
+      "official_totals": {"revenue":719.474,"expenses":779.971,"net_result":73.757},
+      "adjustments": {"extra_rows":[{"label":"Interest receivable and similar income","amount":1.098},{"label":"Interest payable and similar charges","amount":-5.853}]}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "mancity-gb-full-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":75.084,"disclosure":"detailed"},
+        {"label":"Broadcasting - UEFA","category":"broadcasting","amount":70.651,"disclosure":"detailed"},
+        {"label":"Broadcasting - All Other","category":"broadcasting","amount":207.976,"disclosure":"detailed"},
+        {"label":"Other commercial activities","category":"sponsorship_commercial","amount":340.383,"disclosure":"detailed"},
+        {"label":"Other operating income","category":"other_income","amount":2.835,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Employee costs","category":"wages_squad","amount":-408.403,"disclosure":"detailed"},
+        {"label":"Direct cost of sales and consumables","category":"admin_general_expense","amount":-9.307,"disclosure":"detailed"},
+        {"label":"Remuneration of Auditors (audit fees)","category":"admin_general_expense","amount":-0.09,"disclosure":"detailed"},
+        {"label":"Other external charges","category":"other_expenses","amount":-187.753,"disclosure":"not_disclosed"},
+        {"label":"(Profit)/loss on disposal of property, plant and equipment","category":"other_expenses","amount":0.08,"disclosure":"detailed"},
+        {
+          "label": "Amortisation and impairment of intangible assets (players' registrations)",
+          "category": "player_amortisation",
+          "amount": -169.546,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciation of property, plant and equipment — Owned","category":"depreciation","amount":-11.901,"disclosure":"detailed"},
+        {"label":"Depreciation of property, plant and equipment — Leased","category":"depreciation","amount":-3.311,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":95.21,"asset_sales":0,"net_interest":-11.824,"tax":0,"gross_debt":0,"cash":173.724},
+      "official_totals": {"revenue":696.929,"expenses":790.231,"net_result":-9.916},
+      "adjustments": {"extra_rows":[{"label":"Interest receivable and similar income","amount":7.768},{"label":"Interest payable and similar charges","amount":-19.592}]}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

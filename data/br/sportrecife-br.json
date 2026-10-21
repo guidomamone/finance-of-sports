@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "sportrecife-br",
+    "name": "Sport Club do Recife",
+    "display_name": "Sport Recife",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "sportrecife-br-demonstracoes-2025",
+      "club_id": "sportrecife-br",
+      "title": "Demonstrações Contábeis, Exercícios Findos em 31 de Dezembro de 2025 e de 2024, com Relatório do Auditor Independente",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://sportrecife.com.br/portal-transparencia/demonstracoes-financeiras/"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "sportrecife-br-demonstracoes-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Direitos televisivos e premiações","category":"broadcasting","amount":88.708,"disclosure":"detailed"},
+        {"label":"Comerciais, marketing e publicidade","category":"sponsorship_commercial","amount":47.335,"disclosure":"detailed"},
+        {"label":"Receitas em jogos","category":"matchday_competition","amount":19.682,"disclosure":"detailed"},
+        {"label":"Contribuições de associados","category":"member_dues","amount":16.626,"disclosure":"detailed"},
+        {"label":"Patrimoniais","category":"other_income","amount":3.319,"disclosure":"detailed"},
+        {"label":"Outras receitas","category":"other_income","amount":0.567,"disclosure":"detailed"},
+        {
+          "label": "Cessão de direitos contratuais (negociação de atletas, empréstimos e solidariedade)",
+          "category": "player_sales",
+          "amount": 6.609,
+          "disclosure": "detailed"
+        },
+        {"label":"Deduções de receita (INSS Patronal, 5%)","category":"other_income","amount":-8.66,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Gastos com pessoal do futebol","category":"wages_squad","amount":-116.898,"disclosure":"detailed"},
+        {"label":"Competição e viagens","category":"match_organisation_expense","amount":-14.094,"disclosure":"detailed"},
+        {"label":"Outros custos","category":"other_expenses","amount":-1.447,"disclosure":"detailed"},
+        {
+          "label": "Despesas com formação de atleta e amortização de despesas de anos anteriores",
+          "category": "youth_other_sports_expense",
+          "amount": -34.935,
+          "disclosure": "detailed"
+        },
+        {"label":"Serviços de terceiros","category":"admin_general_expense","amount":-23.234,"disclosure":"detailed"},
+        {"label":"Gastos com pessoal (administrativo)","category":"admin_general_expense","amount":-15.648,"disclosure":"detailed"},
+        {"label":"Depreciação","category":"depreciation","amount":-7.826,"disclosure":"detailed"},
+        {"label":"Despesas gerais","category":"admin_general_expense","amount":-8.659,"disclosure":"detailed"},
+        {"label":"Despesas com alimentação","category":"admin_general_expense","amount":-3.884,"disclosure":"detailed"},
+        {"label":"Despesas com manutenção","category":"admin_general_expense","amount":-2.985,"disclosure":"detailed"},
+        {"label":"Despesas c/alugueis","category":"admin_general_expense","amount":-1.525,"disclosure":"detailed"},
+        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-5.868,"disclosure":"detailed"},
+        {
+          "label": "Outras (despesas) receitas operacionais líquidas (Liga Forte União, provisão para contingências e outras)",
+          "category": "other_expenses",
+          "amount": -35.739,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-13.941,"tax":0,"gross_debt":26.786,"cash":2.388},
+      "official_totals": {"revenue":174.186,"expenses":272.742,"net_result":-112.497}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

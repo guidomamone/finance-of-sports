@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "alverca-pt",
+    "name": "Futebol Clube de Alverca - Futebol SAD",
+    "display_name": "Alverca",
+    "country": "PT",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "alverca-pt-relatorio-contas-2021-22",
+      "club_id": "alverca-pt",
+      "title": "Futebol Clube de Alverca - Futebol SAD — relatorio-contas-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "alverca-pt-relatorio-contas-2022-23",
+      "club_id": "alverca-pt",
+      "title": "Futebol Clube de Alverca - Futebol SAD — relatorio-contas-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "alverca-pt-relatorio-contas-2023-24",
+      "club_id": "alverca-pt",
+      "title": "Futebol Clube de Alverca - Futebol SAD — relatorio-contas-2023-24 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "alverca-pt-relatorio-contas-2024-25",
+      "club_id": "alverca-pt",
+      "title": "Futebol Clube de Alverca - Futebol SAD — relatorio-contas-2024-25 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "alverca-pt-relatorio-contas-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Vendas e serviços prestados","category":"lump_football_operations","amount":0.09357,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.037669,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"other_income","amount":0.02106,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Fornecimentos e serviços externos","category":"admin_general_expense","amount":-0.580143,"disclosure":"aggregated"},
+        {"label":"Gastos com pessoal","category":"wages_squad","amount":-1.898159,"disclosure":"aggregated"},
+        {"label":"Provisões (aumentos/reduções)","category":"admin_general_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_expenses","amount":-0.041037,"disclosure":"aggregated"},
+        {"label":"Gastos / reversões de depreciação e de amortização","category":"depreciation","amount":-0.031442,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.011537,"tax":-0.006458,"gross_debt":null,"cash":0.047464},
+      "official_totals": {"revenue":0.1523,"expenses":2.550781,"net_result":-2.416477},
+      "adjustments": {
+        "extra_rows": [{"label":"Gastos de financiamento (líquidos)","amount":-0.011537},{"label":"Imposto sobre o rendimento do período","amount":-0.006458}],
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.09357,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "alverca-pt-relatorio-contas-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Vendas e serviços prestados","category":"lump_football_operations","amount":0.063878,"disclosure":"aggregated"},
+        {"label":"Subsídios a exploração","category":"other_income","amount":0.054882,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento obtidos","category":"other_income","amount":0.000011,"disclosure":"aggregated"},
+        {"label":"Alienações diretas de inscrição desportiva","category":"player_sales","amount":0.694021,"disclosure":"aggregated"},
+        {"label":"Correções relativas a períodos anteriores (rendimentos)","category":"other_income","amount":0.003093,"disclosure":"aggregated"},
+        {"label":"Recuperação de encargos","category":"other_income","amount":0.002949,"disclosure":"aggregated"},
+        {"label":"Outros não especificados","category":"other_income","amount":0.008474,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Fornecimentos e serviços externos","category":"admin_general_expense","amount":-1.441895,"disclosure":"aggregated"},
+        {"label":"Gastos com o pessoal","category":"wages_squad","amount":-2.57562,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_expenses","amount":-0.038684,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.020295,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000029,"tax":-0.007798,"gross_debt":null,"cash":0.00424},
+      "official_totals": {"revenue":0.827308,"expenses":4.076494,"net_result":-3.257014},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000029},{"label":"Imposto sobre o rendimento do período","amount":-0.007798}],
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.063878,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "alverca-pt-relatorio-contas-2023-24",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Vendas e serviços prestados","category":"lump_football_operations","amount":0.069051,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.063231,"disclosure":"aggregated"},
+        {"label":"Rendimentos Suplementares","category":"other_income","amount":0.024154,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento obtidos","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Alienações diretas de inscrição desportiva","category":"player_sales","amount":0.5815,"disclosure":"aggregated"},
+        {"label":"Correções relativas a períodos anteriores (rendimentos)","category":"other_income","amount":0.004103,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"other_income","amount":0.0005,"disclosure":"aggregated"},
+        {"label":"Outros não especificados","category":"other_income","amount":0.012335,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Serviços Especializados","category":"admin_general_expense","amount":-0.736232,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.067239,"disclosure":"aggregated"},
+        {"label":"Energia e Fluidos","category":"admin_general_expense","amount":-0.007643,"disclosure":"aggregated"},
+        {"label":"Deslocações e Estadas","category":"match_organisation_expense","amount":-0.14016,"disclosure":"aggregated"},
+        {"label":"Serviços Diversos","category":"other_expenses","amount":-0.220087,"disclosure":"aggregated"},
+        {"label":"Gastos com o pessoal","category":"wages_squad","amount":-2.437682,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.019459,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_expenses","amount":-0.347029,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-0.00983,"gross_debt":null,"cash":0.080657},
+      "official_totals": {"revenue":0.754874,"expenses":3.975531,"net_result":-3.230497},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":0},{"label":"Imposto sobre o rendimento do período","amount":-0.00983}],
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.069051,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "alverca-pt-relatorio-contas-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Vendas e serviços prestados","category":"lump_football_operations","amount":0.637398,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.386886,"disclosure":"aggregated"},
+        {"label":"Indemnização FIFA - AL Wasl","category":"player_sales","amount":0.25383,"disclosure":"aggregated"},
+        {"label":"Alienações direitos de inscrição desportiva","category":"player_sales","amount":0.76957,"disclosure":"aggregated"},
+        {"label":"Correcções relativas a períodos anteriores","category":"other_income","amount":0.000185,"disclosure":"aggregated"},
+        {"label":"Recuperação de encargos","category":"other_income","amount":0.001171,"disclosure":"aggregated"},
+        {"label":"Outros não especificados","category":"other_income","amount":0.010993,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Serviços Especializados","category":"admin_general_expense","amount":-1.003233,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.12885,"disclosure":"aggregated"},
+        {"label":"Energia e Fluidos","category":"admin_general_expense","amount":-0.01259,"disclosure":"aggregated"},
+        {"label":"Deslocações e Estadas","category":"match_organisation_expense","amount":-0.360564,"disclosure":"aggregated"},
+        {"label":"Serviços Diversos","category":"other_expenses","amount":-0.389304,"disclosure":"aggregated"},
+        {"label":"Remunerações dos Órgãos Sociais","category":"admin_general_expense","amount":-0.015713,"disclosure":"aggregated"},
+        {"label":"Remuneração do Pessoal","category":"wages_squad","amount":-4.827742,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.445686,"disclosure":"aggregated"},
+        {"label":"Seguros de Acidentes de Trabalho","category":"admin_general_expense","amount":-0.414698,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"wages_squad","amount":-0.121127,"disclosure":"aggregated"},
+        {"label":"Outros Gastos com Pessoal","category":"wages_squad","amount":-0.314632,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.025756,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.00257,"disclosure":"aggregated"},
+        {"label":"Quotizações","category":"admin_general_expense","amount":-0.000932,"disclosure":"aggregated"},
+        {"label":"Correcções relativas a períodos anteriores","category":"exceptional_items","amount":-0.012093,"disclosure":"aggregated"},
+        {"label":"Donativos","category":"other_expenses","amount":-0.0005,"disclosure":"aggregated"},
+        {"label":"Multas e penalidades","category":"other_expenses","amount":-0.017274,"disclosure":"aggregated"},
+        {"label":"Juros de mora e compensatórios","category":"other_expenses","amount":-0.000398,"disclosure":"aggregated"},
+        {"label":"Despesas não devidamente documentadas","category":"other_expenses","amount":-0.004078,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.034553,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-0.006919,"gross_debt":null,"cash":0.09302},
+      "official_totals": {"revenue":2.060033,"expenses":8.1202,"net_result":-6.079177},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":0},{"label":"Imposto sobre o rendimento do período","amount":-0.006919}],
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.637398,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

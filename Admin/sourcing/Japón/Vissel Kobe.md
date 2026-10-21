@@ -15,7 +15,7 @@
   no específica del club) — el documento de la liga ya cubre lo pedido de forma directa.
 - Contacto: `aboutj.jleague.jp/corporate/assets/pdf/club_info/club_doc-<año>.pdf`.
 - Último chequeo: 2026-09-13.
-- **CARGADO al sitio (2026-09-13), Ejercicio 2025**: ver `data/jp/visselkobe-data.js`. Solo Sponsor
+- **CARGADO al sitio (2026-09-13), Ejercicio 2025**: ver `data/jp/visselkobe-jp-data.js`. Solo Sponsor
   (¥3.025M)/Gate (¥1.441M)/Total (¥8.711M) son reales por club — el resto de categorías y TODOS los
   costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/

@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "cerclebrugge-be",
+    "name": "Cercle Brugge KSV",
+    "display_name": "Cercle Brugge",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "cerclebrugge-be-jaarrekening-2025",
+      "club_id": "cerclebrugge-be",
+      "title": "Jaarrekening van Cercle Brugge KSV BV voor het boekjaar van 1/7/2024 tot 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "cerclebrugge-be-jaarrekening-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":19.306482,"disclosure":"aggregated"},
+        {
+          "label": "Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen",
+          "category": "other_income",
+          "amount": 0.001619,
+          "disclosure": "detailed"
+        },
+        {"label":"Andere bedrijfsopbrengsten — resto sin desglosar","category":"other_income","amount":24.415131,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Handelsgoederen, grond- en hulpstoffen","category":"other_expenses","amount":-0.793617,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-14.011456,"disclosure":"aggregated"},
+        {
+          "label": "Bezoldigingen, sociale lasten en pensioenen",
+          "category": "wages_squad",
+          "amount": -19.290772,
+          "disclosure": "detailed",
+          "items": [
+            ["Bezoldigingen en rechtstreekse sociale voordelen",15.983999],
+            ["Werkgeversbijdragen voor sociale verzekeringen",2.406575],
+            ["Werkgeverspremies voor bovenwettelijke verzekeringen",0.751715],
+            ["Andere personeelskosten",0.148483]
+          ]
+        },
+        {
+          "label": "Afschrijvingen op immateriële vaste activa (spelersregistratierechten)",
+          "category": "player_amortisation",
+          "amount": -2.820298,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Afschrijvingen op materiële vaste activa (incl. diferencia sin explicar contra el total impreso)",
+          "category": "depreciation",
+          "amount": -0.527259,
+          "disclosure": "aggregated"
+        },
+        {"label":"Waardeverminderingen op handelsvorderingen","category":"other_expenses","amount":-0.0035,"disclosure":"detailed"},
+        {
+          "label": "Voorzieningen voor risico's en kosten (netto terugneming recurrente)",
+          "category": "exceptional_items",
+          "amount": 0.089665,
+          "disclosure": "detailed"
+        },
+        {"label":"Andere bedrijfskosten — Bedrijfsbelastingen en -taksen","category":"admin_general_expense","amount":-0.269439,"disclosure":"detailed"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-6.012965,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.169022,"tax":-0.162946,"gross_debt":19.177608,"cash":6.900418},
+      "official_totals": {"revenue":43.723231,"expenses":37.716341,"net_result":0.089666}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

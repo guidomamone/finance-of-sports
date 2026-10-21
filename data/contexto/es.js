@@ -3,16 +3,16 @@
 // No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
-  'athleticclub': {
+  'athleticclub-es': {
     2025: {"estadio":"San Mamés","capacidad":53289,"sponsor":"Kutxabank","marca":"Castore","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
-  'atleticomadrid': {
+  'atleticomadrid-es': {
     2025: {"estadio":"Metropolitano","capacidad":70460,"sponsor":"Riyadh Air","marca":"Nike","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
-  'celtavigo': {
+  'celtavigo-es': {
     2025: {"estadio":"Balaídos","capacidad":24870,"sponsor":"Estrella Galicia 0,0","marca":"Hummel","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
-  'deportivoalaves': {
+  'deportivoalaves-es': {
     2025: {"estadio":"Mendizorrotza","capacidad":19840,"sponsor":"Dexin News","marca":"Puma","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
   'elche-es': {
@@ -23,7 +23,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Stage Front Stadium","capacidad":40000,"sponsor":"Riviera Maya","marca":"Kelme","temporada":"2023–24 Segunda División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377575023"},
     2025: {"estadio":"RCDE Stadium","capacidad":42260,"sponsor":"Conservas Dani","marca":"Kelme","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
-  'fcbarcelona': {
+  'fcbarcelona-es': {
     2025: {"estadio":"Olímpic Lluís Companys","capacidad":55926,"sponsor":"Spotify","marca":"Nike","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
   'getafe-es': {
@@ -47,22 +47,22 @@ Object.assign(window.CLUB_CONTEXT, {
   'rcdmallorca-es': {
     2025: {"estadio":"Mallorca Son Moix","capacidad":23142,"sponsor":"αGEL","marca":"Nike","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
-  'realbetis': {
+  'realbetis-es': {
     2025: {"estadio":"Benito Villamarín","capacidad":60721,"sponsor":"Gree Electric","marca":"Hummel","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
-  'realmadrid': {
+  'realmadrid-es': {
     2025: {"estadio":"Santiago Bernabéu","capacidad":78297,"sponsor":"Emirates","marca":"Adidas","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
   'realoviedo-es': {
     2025: {"estadio":"Estadio Carlos Tartiere","capacidad":30500,"sponsor":"Digi","marca":"Adidas","temporada":"2024–25 Segunda División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378791167"},
   },
-  'sevillafc': {
+  'sevillafc-es': {
     2025: {"estadio":"Ramón Sánchez-Pizjuán","capacidad":43883,"sponsor":"Midea","marca":"Castore","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
-  'valenciacf': {
+  'valenciacf-es': {
     2025: {"estadio":"Mestalla","capacidad":49430,"sponsor":"TM Real Estate Group","marca":"Puma","temporada":"2024–25 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378085900"},
   },
-  'villarrealcf': {
+  'villarrealcf-es': {
     2024: {"estadio":"Estadio de la Cerámica","capacidad":23008,"sponsor":"Pamesa Cerámica","marca":"Joma","temporada":"2023–24 La Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377503199"},
   },
 });

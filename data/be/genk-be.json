@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "genk-be",
+    "name": "K. Racing Club Genk 322 VZW",
+    "display_name": "Genk",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "genk-be-jaarrekening-2025",
+      "club_id": "genk-be",
+      "title": "Jaarrekening van K. Racing Club Genk 322 VZW voor het boekjaar van 1/7/2024 tot 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "genk-be-jaarrekening-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":33.51509,"disclosure":"aggregated"},
+        {"label":"Lidgeld, schenkingen, legaten en subsidies","category":"member_dues","amount":13.483361,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"player_sales","amount":55.955475,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Handelsgoederen, grond- en hulpstoffen","category":"other_expenses","amount":-1.332069,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-18.864068,"disclosure":"aggregated"},
+        {"label":"Bezoldigingen, sociale lasten en pensioenen","category":"wages_squad","amount":-53.540132,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "player_amortisation",
+          "amount": -16.300826,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Andere bedrijfskosten (netto de una reversión de waardeverminderingen op voorraden/vorderingen de +0,452 M)",
+          "category": "other_expenses",
+          "amount": -1.878734,
+          "disclosure": "aggregated"
+        },
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.231,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.439869,"tax":-0.199845,"gross_debt":34.505065,"cash":3.500316},
+      "official_totals": {"revenue":102.953926,"expenses":91.915829,"net_result":9.167383}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

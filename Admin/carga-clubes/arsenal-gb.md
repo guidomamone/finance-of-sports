@@ -273,7 +273,7 @@ Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglate
 ```text
 Mercado de pases / Resultados deportivos / Títulos: NO onboardeados (alcance de esta sesión fue
 solo Finanzas, 2 ejercicios). Vacíos a propósito, mismo criterio que otros clubes onboardeados
-solo para Finanzas (ver data/es/valenciacf-data.js).
+solo para Finanzas (ver data/es/valenciacf-es-data.js).
 ```
 
 ### gestionesByClub['arsenal-gb']

@@ -6,10 +6,11 @@
 //
 // USO: node tools/ida-y-vuelta.mjs [--club <id>] [--detalle] [--escribir <carpeta>]
 // ============================================================================
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { todosLosArchivos, leerClub, aJson, generarJs, evaluarJs, diferencias, validar, categoriasDelSitio, referenciasExternas } from './json-datos.mjs';
 
+const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2); const flag = (f) => { const i = A.indexOf(f); return i >= 0 ? A[i + 1] : null; };
 const solo = flag('--club'); const detalle = A.includes('--detalle'); const destino = flag('--escribir');
 const categorias = categoriasDelSitio(); const externos = referenciasExternas();
@@ -17,7 +18,9 @@ let n = 0, iguales = 0, conAvisos = 0; const avisados = []; const distintos = []
 for (const rel of todosLosArchivos()) {
   const id = rel.split('/').pop().replace(/-data\.js$/, ''); if (solo && id !== solo) continue; n++;
   let orig; try { orig = leerClub(rel); } catch (e) { sinExportar.push([id, `no se pudo leer: ${e.message}`]); continue; }
-  let j; try { j = JSON.parse(JSON.stringify(aJson(orig, { exportadoEn: '2026-10-20' }))); } catch (e) { sinExportar.push([id, e.message]); continue; }
+  // Con el JSON en disco (fase 2) se prueba EL ARCHIVO; sin él, la exportación del JS (fase 1).
+  const rj = rel.replace(/-data\.js$/, '.json');
+  let j; try { j = existsSync(resolve(ROOT, rj)) ? JSON.parse(readFileSync(resolve(ROOT, rj), 'utf8')) : JSON.parse(JSON.stringify(aJson(orig, { exportadoEn: '2026-10-20' }))); } catch (e) { sinExportar.push([id, e.message]); continue; }
   for (const y of j.years) { anios++; lineas += (y.revenue || []).length + (y.expenses || []).length; }
   const v = validar(j, { categorias, externos }); if (v.errores.length) noValidan.push([id, v.errores]); if (v.avisos.length) { conAvisos++; avisados.push([id, v.avisos]); }
   let vuelta; try { const txt = generarJs(j); if (destino) { mkdirSync(resolve(destino), { recursive: true }); writeFileSync(resolve(destino, `${id}-data.js`), txt); } vuelta = evaluarJs(txt, id); } catch (e) { distintos.push([id, [{ ruta: '(generar/evaluar)', antes: '', despues: e.message }]]); continue; }

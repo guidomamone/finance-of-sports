@@ -43,7 +43,7 @@ export const MIN_PRECEDENTE = 0.9;
 export const padreDe = (section) => { const m = String(section || '').match(/desglosa "([^"]+)"/); return m ? m[1] : section ? 'estado' : null; };
 const clave = (club, lado, label, padre = null) => `${club}|${lado}|${normalizar(label)}${padre ? `|${normalizar(padre)}` : ''}`;
 // EL CLUB SE RECALCULA DESDE LA CARPETA DEL DOCUMENTO al leer, no se confía en el guardado (BUG REAL al sembrar, 2026-09-30): respuestas de
-// Claude de antes de la Versión 309 traían el club EQUIVOCADO (el Athletic Club brasileño figuraba como 'athleticclub', que es el Athletic de
+// Claude de antes de la Versión 309 traían el club EQUIVOCADO (el Athletic Club brasileño figuraba como 'athleticclub-es', que es el Athletic de
 // Bilbao), y un club nuevo tiene un id PROVISORIO (el slug de su carpeta, 'vitoria-guimaraes') distinto del que recibe al darse de alta
 // ('vitoriaguimaraes-pt'). Con la regla única de tools/carpetas-clubes.mjs: club del sitio si la carpeta resuelve, si no el mismo slug
 // provisorio que usa el pipeline (onboard.mjs: nombre de la carpeta en minúsculas, sin acentos, espacios -> guiones).

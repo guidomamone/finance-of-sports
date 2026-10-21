@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "fulham-gb",
+    "name": "Fulham Football Club Limited",
+    "display_name": "Fulham",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "fulham-gb-full-accounts-2024",
+      "club_id": "fulham-gb",
+      "title": "Full accounts (Fulham Football Club Limited, standalone), ejercicio cerrado 30/6/2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02114486/filing-history"
+    },
+    {
+      "id": "fulham-gb-full-accounts-2025",
+      "club_id": "fulham-gb",
+      "title": "Full accounts (Fulham Football Club Limited, standalone), ejercicio cerrado 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02114486/filing-history"
+    },
+    {
+      "id": "fulham-gb-full-accounts-2020-21",
+      "club_id": "fulham-gb",
+      "title": "Fulham Football Club Limited — fulham-full-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fulham-gb-full-accounts-2022-23",
+      "club_id": "fulham-gb",
+      "title": "Fulham Football Club Limited — fulham-full-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fulham-gb-full-accounts-2021-22",
+      "club_id": "fulham-gb",
+      "title": "Fulham Football Club Limited — fulham-full-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"khan","name":"Shahid Khan (2013-actual)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "GBP",
+      "source_id": "fulham-gb-full-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-06-30"},
+      "revenue": [
+        {"label":"Gate Receipts","category":"matchday_competition","amount":0.231,"disclosure":"aggregated"},
+        {"label":"Central Awards","category":"broadcasting","amount":90.504,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"broadcasting","amount":14.413,"disclosure":"aggregated"},
+        {"label":"Compensation","category":"other_income","amount":0.025,"disclosure":"aggregated"},
+        {"label":"Sponsorship and other Commercial Activities","category":"sponsorship_commercial","amount":10.938,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":0.146,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses before depreciation, amortisation & impairment","category":"other_expenses","amount":-132.621,"disclosure":"aggregated"},
+        {"label":"- Owned fixed assets","category":"depreciation","amount":-0.658,"disclosure":"aggregated"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-56.452,"disclosure":"aggregated"},
+        {"label":"Impairment","category":"player_impairment","amount":-20.906,"disclosure":"aggregated"},
+        {"label":"Loss on disposal of other assets","category":"exceptional_items","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.002,"tax":0.026,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":116.257,"expenses":210.637,"net_result":-94.352},
+      "adjustments": {"extra_rows":[{"label":"Net interest receivable","amount":0.002},{"label":"Taxation on loss","amount":0.026}]}
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "fulham-gb-full-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Gate Receipts","category":"matchday_competition","amount":6.824,"disclosure":"aggregated"},
+        {"label":"Central Awards","category":"broadcasting","amount":49.215,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"broadcasting","amount":1.59,"disclosure":"aggregated"},
+        {"label":"Compensation","category":"other_income","amount":4.497,"disclosure":"aggregated"},
+        {"label":"Sponsorship and other Commercial Activities","category":"sponsorship_commercial","amount":9.463,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":12.479,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses before depreciation, amortisation & impairment","category":"other_expenses","amount":-110.099,"disclosure":"aggregated"},
+        {"label":"- Owned fixed assets","category":"depreciation","amount":-0.862,"disclosure":"aggregated"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-31.028,"disclosure":"aggregated"},
+        {"label":"Impairment","category":"player_impairment","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.029,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":84.068,"expenses":141.989,"net_result":-57.89},
+      "adjustments": {"extra_rows":[{"label":"Net interest receivable","amount":0.029},{"label":"Taxation on loss","amount":null}]}
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "fulham-gb-full-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Gate Receipts","category":"matchday_competition","amount":15.17,"disclosure":"aggregated"},
+        {"label":"Central Awards","category":"broadcasting","amount":128.513,"disclosure":"aggregated"},
+        {"label":"Broadcasting","category":"broadcasting","amount":15.961,"disclosure":"aggregated"},
+        {"label":"Compensation","category":"other_income","amount":1.137,"disclosure":"aggregated"},
+        {"label":"Sponsorship and other Commercial Activities","category":"sponsorship_commercial","amount":21.544,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":8.743,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of other assets","category":"other_income","amount":0.043,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses before depreciation, amortisation & impairment","category":"other_expenses","amount":-171.338,"disclosure":"aggregated"},
+        {"label":"Depreciation of fixed assets","category":"depreciation","amount":-1.094,"disclosure":"aggregated"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-45.617,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.323,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":191.111,"expenses":218.049,"net_result":-26.615},
+      "adjustments": {"extra_rows":[{"label":"Net interest receivable","amount":0.323},{"label":"Taxation on loss","amount":null}]}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "fulham-gb-full-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "khan",
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Gate Receipts","category":"matchday_competition","amount":18.392,"disclosure":"detailed"},
+        {"label":"Central Awards","category":"broadcasting","amount":123.316,"disclosure":"detailed"},
+        {"label":"Broadcasting","category":"broadcasting","amount":11.19,"disclosure":"detailed"},
+        {"label":"Compensation","category":"other_income","amount":0.873,"disclosure":"detailed"},
+        {"label":"Sponsorship and other Commercial Activities","category":"sponsorship_commercial","amount":27.788,"disclosure":"detailed"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":32.735,"disclosure":"detailed"},
+        {"label":"Other income (R&D tax credits)","category":"other_income","amount":4.624,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-154.754,"disclosure":"detailed"},
+        {"label":"Otros gastos operativos (residual, sin desglose propio en la fuente)","category":"other_expenses","amount":-37.504,"disclosure":"estimated"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-57.4,"disclosure":"detailed"},
+        {"label":"Depreciation of fixed assets","category":"depreciation","amount":-1.364,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":-0.007,"net_interest":0.905,"tax":-1.009,"gross_debt":44.398,"cash":32.768},
+      "official_totals": {"revenue":218.918,"expenses":251.022,"net_result":-32.215}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "fulham-gb-full-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "khan",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {
+          "label": "Gate Receipts (forzado por el total — ver duda de OCR en el comentario de cabecera)",
+          "category": "matchday_competition",
+          "amount": 15.01,
+          "disclosure": "estimated"
+        },
+        {"label":"Central Awards","category":"broadcasting","amount":128.837,"disclosure":"detailed"},
+        {"label":"Broadcasting","category":"broadcasting","amount":12.748,"disclosure":"detailed"},
+        {"label":"Compensation","category":"other_income","amount":4.013,"disclosure":"detailed"},
+        {"label":"Sponsorship and other Commercial Activities","category":"sponsorship_commercial","amount":34.182,"disclosure":"detailed"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":41.035,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-166.507,"disclosure":"detailed"},
+        {"label":"Otros gastos operativos (residual, sin desglose propio en la fuente)","category":"other_expenses","amount":-45.628,"disclosure":"estimated"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-61.521,"disclosure":"detailed"},
+        {"label":"Depreciation of fixed assets","category":"depreciation","amount":-1.7,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.518,"tax":0,"gross_debt":0,"cash":13.172},
+      "official_totals": {"revenue":235.825,"expenses":275.355,"net_result":-39.012}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

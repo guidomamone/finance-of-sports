@@ -1,0 +1,403 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "famalicao-pt",
+    "name": "Futebol Clube de Famalicão - Futebol S.A.D.",
+    "display_name": "Famalicão",
+    "country": "PT",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "famalicao-pt-relatorio-contas-2021-22",
+      "club_id": "famalicao-pt",
+      "title": "Futebol Clube de Famalicão - Futebol S.A.D. — relatorio-contas-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "famalicao-pt-relatorio-contas-2018-19",
+      "club_id": "famalicao-pt",
+      "title": "Futebol Clube de Famalicão - Futebol S.A.D. — relatorio-contas-2018-19 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "famalicao-pt-relatorio-contas-2019-20",
+      "club_id": "famalicao-pt",
+      "title": "Futebol Clube de Famalicão - Futebol S.A.D. — relatorio-contas-2019-20 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "famalicao-pt-relatorio-contas-2020-21",
+      "club_id": "famalicao-pt",
+      "title": "Futebol Clube de Famalicão - Futebol S.A.D. — relatorio-contas-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "famalicao-pt-relatorio-contas-2022-23",
+      "club_id": "famalicao-pt",
+      "title": "Futebol Clube de Famalicão - Futebol S.A.D. — relatorio-contas-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "famalicao-pt-relatorio-contas-2023-24",
+      "club_id": "famalicao-pt",
+      "title": "Futebol Clube de Famalicão - Futebol S.A.D. — relatorio-contas-2023-24 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "famalicao-pt-relatorio-contas-2024-25",
+      "club_id": "famalicao-pt",
+      "title": "Futebol Clube de Famalicão - Futebol S.A.D. — relatorio-contas-2024-25 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "famalicao-pt-relatorio-contas-2018-19",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Vendas de mercadorias","category":"sponsorship_commercial","amount":0.027361,"disclosure":"aggregated"},
+        {"label":"Ingressos","category":"matchday_competition","amount":0.06745,"disclosure":"aggregated"},
+        {"label":"Competições","category":"competition_bonus","amount":0.038254,"disclosure":"aggregated"},
+        {"label":"Publicidade","category":"sponsorship_commercial","amount":0.390202,"disclosure":"aggregated"},
+        {"label":"Patrocínios","category":"sponsorship_commercial","amount":0.061751,"disclosure":"aggregated"},
+        {"label":"Direitos Clube","category":"broadcasting","amount":0.7,"disclosure":"aggregated"},
+        {"label":"Apostas desportivas","category":"other_income","amount":0.204446,"disclosure":"aggregated"},
+        {"label":"Outras receitas desportivas","category":"other_income","amount":0.055525,"disclosure":"aggregated"},
+        {"label":"Descontos e Abatimentos","category":"other_income","amount":-0.011405,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.188401,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"player_sales","amount":0.024638,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas","category":"admin_general_expense","amount":-0.019172,"disclosure":"aggregated"},
+        {"label":"Fornecimentos e serviços externos","category":"admin_general_expense","amount":-0.951736,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-2.158421,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"wages_squad","amount":-0.111664,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.220708,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-0.155976,"disclosure":"aggregated"},
+        {"label":"Gastos de ação social","category":"wages_squad","amount":-0.023652,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"player_amortisation","amount":-0.153281,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.133332,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.001453,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento concedi","category":"other_expenses","amount":-0.000006,"disclosure":"aggregated"},
+        {"label":"Outros gastos e perdas","category":"other_expenses","amount":-0.227823,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.118354,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.293679,"tax":0.047468,"gross_debt":2.58,"cash":0.247352},
+      "official_totals": {"revenue":1.746623,"expenses":4.275577,"net_result":-2.775165},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.293679},{"label":"Imposto sobre o rendimento do período","amount":0.047468}]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "famalicao-pt-relatorio-contas-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [
+        {"label":"Vendas de mercadorias","category":"sponsorship_commercial","amount":0.288842,"disclosure":"aggregated"},
+        {"label":"Ingressos","category":"matchday_competition","amount":0.376916,"disclosure":"aggregated"},
+        {"label":"Competições","category":"competition_bonus","amount":0.265255,"disclosure":"aggregated"},
+        {"label":"Publicidade","category":"sponsorship_commercial","amount":0.628095,"disclosure":"aggregated"},
+        {"label":"Patrocínios","category":"sponsorship_commercial","amount":0.05879,"disclosure":"aggregated"},
+        {"label":"Direitos Clube","category":"broadcasting","amount":4.5,"disclosure":"aggregated"},
+        {"label":"Apostas desportivas","category":"other_income","amount":0.21018,"disclosure":"aggregated"},
+        {"label":"Outras receitas desportivas","category":"other_income","amount":0.139509,"disclosure":"aggregated"},
+        {"label":"Descontos e Abatimentos","category":"other_income","amount":-0.001368,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.193183,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"player_sales","amount":0.158937,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas","category":"admin_general_expense","amount":-0.195235,"disclosure":"aggregated"},
+        {"label":"Fornecimentos e serviços externos","category":"admin_general_expense","amount":-2.545161,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-5.831159,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"wages_squad","amount":-0.10005,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.4972,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-0.512453,"disclosure":"aggregated"},
+        {"label":"Gastos de ação social","category":"wages_squad","amount":-0.062855,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"player_amortisation","amount":-0.624455,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.008043,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.005387,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.000101,"disclosure":"aggregated"},
+        {"label":"Outros gastos e perdas","category":"other_expenses","amount":-0.057433,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.253854,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.878526,"tax":-0.034553,"gross_debt":9.105286,"cash":1.323047},
+      "official_totals": {"revenue":6.818339,"expenses":10.693385,"net_result":-4.788125},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.878526},{"label":"Imposto sobre o rendimento do período","amount":-0.034553}]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "famalicao-pt-relatorio-contas-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"Vendas de mercadorias","category":"sponsorship_commercial","amount":0.125037,"disclosure":"aggregated"},
+        {"label":"Competições","category":"competition_bonus","amount":0.057321,"disclosure":"aggregated"},
+        {"label":"Publicidade","category":"sponsorship_commercial","amount":0.573012,"disclosure":"aggregated"},
+        {"label":"Patrocínios","category":"sponsorship_commercial","amount":0.161087,"disclosure":"aggregated"},
+        {"label":"Direitos Clube","category":"broadcasting","amount":4.3,"disclosure":"aggregated"},
+        {"label":"Apostas desportivas","category":"other_income","amount":0.303692,"disclosure":"aggregated"},
+        {"label":"Outras receitas desportivas","category":"other_income","amount":0.145711,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.166582,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"player_sales","amount":8.734021,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas","category":"admin_general_expense","amount":-0.077321,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general_expense","amount":-0.704116,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.772464,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.070428,"disclosure":"aggregated"},
+        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.402867,"disclosure":"aggregated"},
+        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.367373,"disclosure":"aggregated"},
+        {"label":"Limpeza, Higiene e conforto","category":"admin_general_expense","amount":-0.033975,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.078033,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-7.923187,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"wages_squad","amount":-0.251334,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.775357,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-0.682214,"disclosure":"aggregated"},
+        {"label":"Gastos de ação social","category":"wages_squad","amount":-0.092251,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"player_amortisation","amount":-1.230371,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.008782,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.00691,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.000056,"disclosure":"aggregated"},
+        {"label":"Ganhos e perdas em subsidiárias e associadas","category":"other_expenses","amount":-0.000312,"disclosure":"aggregated"},
+        {"label":"Gastos e perdas em inv. não financeiros","category":"other_expenses","amount":-0.070833,"disclosure":"aggregated"},
+        {"label":"Outros gastos e perdas","category":"other_expenses","amount":-0.028473,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.986829,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.422616,"tax":-0.045783,"gross_debt":15.489288,"cash":1.614809},
+      "official_totals": {"revenue":14.566463,"expenses":14.563487,"net_result":-1.465423},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-1.422616},{"label":"Imposto sobre o rendimento do período","amount":-0.045783}]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "famalicao-pt-relatorio-contas-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Vendas de mercadorias","category":"sponsorship_commercial","amount":0.154177,"disclosure":"aggregated"},
+        {"label":"Ingressos","category":"matchday_competition","amount":0.17565,"disclosure":"aggregated"},
+        {"label":"Competições","category":"competition_bonus","amount":0.15935,"disclosure":"aggregated"},
+        {"label":"Publicidade","category":"sponsorship_commercial","amount":0.389362,"disclosure":"aggregated"},
+        {"label":"Patrocinios","category":"sponsorship_commercial","amount":0.267143,"disclosure":"aggregated"},
+        {"label":"Direitos Clube","category":"broadcasting","amount":3.6,"disclosure":"aggregated"},
+        {"label":"Apostas desportivas","category":"other_income","amount":0.347894,"disclosure":"aggregated"},
+        {"label":"Outras receitas desportivas","category":"other_income","amount":0.460113,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.167736,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"player_sales","amount":5.141805,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas","category":"admin_general_expense","amount":-0.109644,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general_expense","amount":-1.028339,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.724745,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.125474,"disclosure":"aggregated"},
+        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.469293,"disclosure":"aggregated"},
+        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.521427,"disclosure":"aggregated"},
+        {"label":"Limpeza, Higiene e conforto","category":"admin_general_expense","amount":-0.035165,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.0759,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-10.029738,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"wages_squad","amount":-1.010529,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.831429,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-1.120376,"disclosure":"aggregated"},
+        {"label":"Gastos de ação social","category":"wages_squad","amount":-0.076881,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"player_amortisation","amount":-0.502903,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.00041,"disclosure":"aggregated"},
+        {"label":"Provisões (aumentos/reduções)","category":"admin_general_expense","amount":-0.0351,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.006895,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.00003,"disclosure":"aggregated"},
+        {"label":"Gastos e perdas em inv. não financeiros","category":"other_expenses","amount":-0.087186,"disclosure":"aggregated"},
+        {"label":"Outros gastos e perdas","category":"other_expenses","amount":-0.119427,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-1.23441,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.067547,"tax":-0.057691,"gross_debt":22.055784,"cash":1.120705},
+      "official_totals": {"revenue":10.86323,"expenses":18.145301,"net_result":-9.40273},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-2.067547},{"label":"Imposto sobre o rendimento do período","amount":-0.057691}]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "famalicao-pt-relatorio-contas-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Vendas de mercadorias","category":"sponsorship_commercial","amount":0.145417,"disclosure":"aggregated"},
+        {"label":"Ingressos","category":"matchday_competition","amount":0.314956,"disclosure":"aggregated"},
+        {"label":"Competições","category":"competition_bonus","amount":0.203768,"disclosure":"aggregated"},
+        {"label":"Publicidade","category":"sponsorship_commercial","amount":0.475134,"disclosure":"aggregated"},
+        {"label":"Patrocínios","category":"sponsorship_commercial","amount":0.344772,"disclosure":"aggregated"},
+        {"label":"Direitos Clube","category":"broadcasting","amount":3.6,"disclosure":"aggregated"},
+        {"label":"Apostas desportivas","category":"other_income","amount":0.310178,"disclosure":"aggregated"},
+        {"label":"Outras receitas desportivas","category":"other_income","amount":0.325847,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.229588,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"player_sales","amount":11.345648,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas","category":"admin_general_expense","amount":-0.09663,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general_expense","amount":-1.577695,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.666787,"disclosure":"aggregated"},
+        {"label":"Energia e fluídos","category":"admin_general_expense","amount":-0.117553,"disclosure":"aggregated"},
+        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.356007,"disclosure":"aggregated"},
+        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.499457,"disclosure":"aggregated"},
+        {"label":"Limpeza, Higiene e conforto","category":"admin_general_expense","amount":-0.03024,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.092639,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-9.252849,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"wages_squad","amount":-0.794888,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.805189,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-1.012884,"disclosure":"aggregated"},
+        {"label":"Gastos de ação social","category":"wages_squad","amount":-0.030529,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"player_amortisation","amount":-0.304691,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.002214,"disclosure":"aggregated"},
+        {"label":"Provisões (aumentos/reduções)","category":"admin_general_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.00698,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.000025,"disclosure":"aggregated"},
+        {"label":"Gastos e perdas em inv. não financeiros","category":"other_expenses","amount":-0.170421,"disclosure":"aggregated"},
+        {"label":"Outros gastos e perdas","category":"other_expenses","amount":-0.058106,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-1.642522,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.006916,"tax":-0.04416,"gross_debt":30.122109,"cash":1.159543},
+      "official_totals": {"revenue":17.295307,"expenses":17.518308,"net_result":-3.271222},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-3.006916},{"label":"Imposto sobre o rendimento do período","amount":-0.04416}]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "famalicao-pt-relatorio-contas-2023-24",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Vendas de mercadorias","category":"sponsorship_commercial","amount":0.161051,"disclosure":"aggregated"},
+        {"label":"Ingressos","category":"matchday_competition","amount":0.266286,"disclosure":"aggregated"},
+        {"label":"Competições","category":"competition_bonus","amount":0.069609,"disclosure":"aggregated"},
+        {"label":"Publicidade","category":"sponsorship_commercial","amount":0.478637,"disclosure":"aggregated"},
+        {"label":"Patrocínios","category":"sponsorship_commercial","amount":0.345379,"disclosure":"aggregated"},
+        {"label":"Direitos Clube","category":"broadcasting","amount":3.6,"disclosure":"aggregated"},
+        {"label":"Apostas desportivas","category":"other_income","amount":0.366873,"disclosure":"aggregated"},
+        {"label":"Outras receitas desportivas","category":"other_income","amount":0.414502,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.338566,"disclosure":"aggregated"},
+        {"label":"Ganhos/perdas imputados de subsidiárias, associadas e empre","category":"other_income","amount":0.003168,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"player_sales","amount":27.320521,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas","category":"admin_general_expense","amount":-0.159153,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general_expense","amount":-1.417259,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.820419,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.155366,"disclosure":"aggregated"},
+        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.518764,"disclosure":"aggregated"},
+        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.56534,"disclosure":"aggregated"},
+        {"label":"Limpeza, Higiene e conforto","category":"admin_general_expense","amount":-0.036903,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.146621,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-10.82754,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"wages_squad","amount":-0.469853,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.956984,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-1.339193,"disclosure":"aggregated"},
+        {"label":"Gastos de ação social","category":"wages_squad","amount":-0.029811,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"player_amortisation","amount":-0.661482,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Provisões (aumentos/reduções)","category":"admin_general_expense","amount":0.0351,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.005831,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.000021,"disclosure":"aggregated"},
+        {"label":"Gastos e perdas em inv. não financeiros","category":"other_expenses","amount":-0.619382,"disclosure":"aggregated"},
+        {"label":"Outros gastos e perdas","category":"other_expenses","amount":-0.113445,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-2.431805,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.666909,"tax":-0.228096,"gross_debt":33.108866,"cash":0.822787},
+      "official_totals": {"revenue":33.364592,"expenses":21.240073,"net_result":8.229515},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-3.666909},{"label":"Imposto sobre o rendimento do período","amount":-0.228096}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "famalicao-pt-relatorio-contas-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Vendas de mercadorias","category":"sponsorship_commercial","amount":0.173224,"disclosure":"aggregated"},
+        {"label":"Ingressos","category":"matchday_competition","amount":0.265016,"disclosure":"aggregated"},
+        {"label":"Competições","category":"competition_bonus","amount":0.000789,"disclosure":"aggregated"},
+        {"label":"Publicidade","category":"sponsorship_commercial","amount":0.612614,"disclosure":"aggregated"},
+        {"label":"Patrocínios","category":"sponsorship_commercial","amount":0.21,"disclosure":"aggregated"},
+        {"label":"Direitos Clube","category":"broadcasting","amount":4,"disclosure":"aggregated"},
+        {"label":"Apostas desportivas","category":"other_income","amount":0.391934,"disclosure":"aggregated"},
+        {"label":"Outras receitas desportivas","category":"other_income","amount":0.925115,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.605789,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"player_sales","amount":16.44286,"disclosure":"aggregated"},
+        {"label":"Ganhos/perdas imputados de subsidiárias, associadas e empresas","category":"other_income","amount":0.005008,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas","category":"admin_general_expense","amount":-0.080563,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general_expense","amount":-1.763475,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.928683,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.181822,"disclosure":"aggregated"},
+        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.573485,"disclosure":"aggregated"},
+        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.709611,"disclosure":"aggregated"},
+        {"label":"Limpeza, Higiene e conforto","category":"admin_general_expense","amount":-0.041025,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.131933,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-10.888768,"disclosure":"aggregated"},
+        {"label":"Benefícios pós-emprego","category":"wages_squad","amount":-0.5,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"wages_squad","amount":-1.267062,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-1.00653,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-1.136461,"disclosure":"aggregated"},
+        {"label":"Gastos de ação social","category":"wages_squad","amount":-0.050587,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"player_amortisation","amount":-0.625689,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.056477,"disclosure":"aggregated"},
+        {"label":"Provisões (aumentos/reduções)","category":"admin_general_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.012952,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.000176,"disclosure":"aggregated"},
+        {"label":"Gastos e perdas em inv. não financeiros","category":"other_expenses","amount":-0.23373,"disclosure":"aggregated"},
+        {"label":"Outros gastos e perdas","category":"other_expenses","amount":-0.853491,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-2.327416,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.494664,"tax":-0.02556,"gross_debt":24.58,"cash":1.50202},
+      "official_totals": {"revenue":23.632349,"expenses":23.369937,"net_result":-3.257811},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-3.494664},{"label":"Imposto sobre o rendimento do período","amount":-0.02556}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -55,8 +55,8 @@ window.RANKINGS_INDICE = {
 };
 window.RANKINGS_REGION = {
   mundo: { year:2025, total:261, clubs:[
-    { id:"realmadrid", league:"es-laliga", revenue:1388.522 },
-    { id:"fcbarcelona", league:"es-laliga", revenue:1167.798 },
+    { id:"realmadrid-es", league:"es-laliga", revenue:1388.522 },
+    { id:"fcbarcelona-es", league:"es-laliga", revenue:1167.798 },
     { id:"bayernmunich-de", league:"de-bundesliga", revenue:1085.912 },
     { id:"arsenal-gb", league:"gb-premierleague", revenue:1038.61 },
     { id:"liverpool-gb", league:"gb-premierleague", revenue:1036.369 },
@@ -69,13 +69,13 @@ window.RANKINGS_REGION = {
   america: { year:2025, total:63, clubs:[
     { id:"flamengo-br", league:"br-serieA", revenue:347.575 },
     { id:"palmeiras-br", league:"br-serieA", revenue:295.959 },
-    { id:"botafogo", league:"br-serieA", revenue:247.129 },
-    { id:"boca", league:"ar-primera", revenue:197.518 },
+    { id:"botafogo-br", league:"br-serieA", revenue:247.129 },
+    { id:"boca-ar", league:"ar-primera", revenue:197.518 },
     { id:"saopaulo-br", league:"br-serieA", revenue:195.173 },
     { id:"fluminense-br", league:"br-serieA", revenue:180.271 },
     { id:"corinthians-br", league:"br-serieA", revenue:167.759 },
-    { id:"gremio", league:"br-serieA", revenue:164.209 },
-    { id:"clubamerica", league:"mx-ligamx", revenue:155.722 },
+    { id:"gremio-br", league:"br-serieA", revenue:164.209 },
+    { id:"clubamerica-mx", league:"mx-ligamx", revenue:155.722 },
     { id:"atleticomineiro-br", league:"br-serieA", revenue:120.813 },
   ] },
 };

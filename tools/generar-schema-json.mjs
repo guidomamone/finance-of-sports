@@ -42,7 +42,7 @@ const schema = {
     squad_transfers: { type: 'array', description: 'Opcional: no va en el paquete publicado (solo lo financiero).' },
     results: { type: 'object' },
     titles: { type: 'array' },
-    legacy_extras: { type: 'object', description: 'Contenido editorial de pocos clubes copiado con sus claves originales (sin traducir): finanzas*, supuestos del presupuesto.' },
+    extras: objeto(Object.fromEntries(Object.values(C.EXTRAS).map((n) => [n, {}])), [], { description: 'Contenido editorial de pocos clubes (supuestos y detalle del presupuesto, ejercicios y gestiones a mostrar): las claves van en inglés y los textos quedan en español.' }),
   }, ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'years']),
   $defs: {
     fecha: { type: 'string', pattern: '^\\d{4}-\\d{2}-\\d{2}$' },

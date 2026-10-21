@@ -97,7 +97,7 @@ totales sin desglose de rubros) · regulador/país: no aplica — 2026-09-27.
   asamblea) porque `balance-2018-2019.pdf` (a pesar del nombre) resultó ser la Memoria narrativa
   completa, sin una sola cifra de balance — no hay balance auditado real de ese ejercicio
   descargado para reemplazarlo. Ver comentario de cabecera completo en
-  `data/ar/argentinosjuniors-data.js` (incluye un error aritmético de $20.000 encontrado y documentado
+  `data/ar/argentinosjuniors-ar-data.js` (incluye un error aritmético de $20.000 encontrado y documentado
   en el propio Anexo IV del balance 2015-2016, verificado visualmente, no es un error de
   transcripción).
 - Pendiente: balance completo de los ejercicios 2019-20 en adelante — no están en la página de

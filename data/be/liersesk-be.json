@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "liersesk-be",
+    "name": "Lierse SK",
+    "display_name": "Lierse SK",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "liersesk-be-jaarrekening-2025-06-30-individual",
+      "club_id": "liersesk-be",
+      "title": "Lierse SK — jaarrekening-2025-06-30-individual (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liersesk-be-jaarrekening-2022-06-30-individual",
+      "club_id": "liersesk-be",
+      "title": "Lierse SK — jaarrekening-2022-06-30-individual (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liersesk-be-jaarrekening-2023-06-30-individual",
+      "club_id": "liersesk-be",
+      "title": "Lierse SK — jaarrekening-2023-06-30-individual (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liersesk-be-jaarrekening-2024-06-30-individual",
+      "club_id": "liersesk-be",
+      "title": "Lierse SK — jaarrekening-2024-06-30-individual (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liersesk-be-jaarrekening-2020-06-30-individual",
+      "club_id": "liersesk-be",
+      "title": "Lierse SK — jaarrekening-2020-06-30-individual (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liersesk-be-jaarrekening-2021-06-30-individual",
+      "club_id": "liersesk-be",
+      "title": "Lierse SK — jaarrekening-2021-06-30-individual (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liersesk-be-jaarrekening-2019-06-30-individual",
+      "club_id": "liersesk-be",
+      "title": "Lierse SK — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Primer ejercicio de la sociedad: del 09/07/2018 al 30/06/2019 (12 meses)."
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "liersesk-be-jaarrekening-2019-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [],
+      "expenses": [
+        {"label":"Brutomarge (+)/(-)","category":"lump_football_operations_expense","amount":-0.001372,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -0.002479,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000027,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0,"expenses":0.003851,"net_result":-0.003878},
+      "adjustments": {"no_breakdown":[{"line":"Brutomarge (+)/(-)","side":"expense","amount":0.001372,"reason":"Claude 2026-10-19 (subagente Sonnet, revisado)"}]}
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "liersesk-be-jaarrekening-2020-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [],
+      "expenses": [
+        {"label":"Brutomarge (+)/(-)","category":"lump_football_operations_expense","amount":-0.001475,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.000098,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.009666,"tax":-0.008184,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0,"expenses":0.001573,"net_result":-0.019422},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.044754},
+          {"label":"Recurrente financiële kosten","amount":-0.05442},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.008184}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"expense","amount":0.001475,"reason":"Claude 2026-10-19 (subagente Sonnet, revisado)"}]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "liersesk-be-jaarrekening-2021-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [],
+      "expenses": [
+        {"label":"Brutomarge (+)/(-)","category":"lump_football_operations_expense","amount":-0.001436,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.000201,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.020313,"tax":-0.004467,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0,"expenses":0.001637,"net_result":0.014209},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.020343},
+          {"label":"Recurrente financiële kosten","amount":-0.00003},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.004467}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"expense","amount":0.001436,"reason":"Claude 2026-10-19 (subagente Sonnet, revisado)"}]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "liersesk-be-jaarrekening-2022-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":1.673036,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-1.735126,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": 0.01134,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.013125,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.125954,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.314897,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.049011,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.00328,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.673036,"expenses":2.100819,"net_result":-0.557017},
+      "adjustments": {
+        "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.003435},{"label":"Recurrente financiële kosten","amount":-0.006715}],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.673036,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "liersesk-be-jaarrekening-2023-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":2.555937,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-2.225282,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+          "category": "other_expenses",
+          "amount": -0.000941,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.074512,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.091867,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.248921,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.062368,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.010435,"tax":-0.002794,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":2.555937,"expenses":2.612024,"net_result":-0.161182},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.00073},
+          {"label":"Recurrente financiële kosten","amount":-0.011165},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.002794}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.555937,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "liersesk-be-jaarrekening-2024-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":2.895671,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-2.556688,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.01883,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.023422,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.248921,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.132643,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.012956,"tax":-0.010092,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":2.895671,"expenses":2.957082,"net_result":-0.10788},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.004349},
+          {"label":"Recurrente financiële kosten","amount":-0.017305},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.010092}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.895671,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "liersesk-be-jaarrekening-2025-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":2.706155,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-3.139021,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.050448,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.023792,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.24728,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.159809,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.033226,"tax":-0.014803,"gross_debt":null,"cash":0.002984},
+      "official_totals": {"revenue":2.706155,"expenses":3.596558,"net_result":-0.962223},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.000698},
+          {"label":"Recurrente financiële kosten","amount":-0.033924},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.014803}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.706155,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -12,7 +12,7 @@ data/ar/almagro-ar-data.js — Club Almagro (Asociación Civil, Medrano 522, CAB
 clubId lleva el sufijo de país ('almagro-ar') por la convención de la Versión 129
 (Admin/CONVENCIONES.md): cualquier club nuevo desde entonces nace con el país en el id,
 para no arrastrar una colisión futura si aparece otro "Almagro" en otro país. Los 41
-clubes de antes de esa versión (incluido "instituto"/"racing"/"velez"/"rosariocentral",
+clubes de antes de esa versión (incluido "instituto-ar"/"racing-ar"/"velez-ar"/"rosariocentral-ar",
 cargados antes de la 129 o en la misma tanda sin haberse actualizado) se quedan sin
 migrar a propósito, ver el criterio completo en CONVENCIONES.md.
 club NUEVO, motor genérico. 6 ejercicios cargados, todos balances auditados reales,

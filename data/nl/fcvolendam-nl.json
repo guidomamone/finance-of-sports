@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "fcvolendam-nl",
+    "name": "Stichting R.K.F.C. Volendam",
+    "display_name": "FC Volendam",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "fcvolendam-nl-volendam-jaarcijfers-2024-2025",
+      "club_id": "fcvolendam-nl",
+      "title": "Stichting R.K.F.C. Volendam — Volendam-Jaarcijfers-2024-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "fcvolendam-nl-volendam-jaarcijfers-2024-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [{"label":"Netto-omzet","category":"lump_football_operations","amount":10.714978,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Lonen en salarissen","category":"wages_squad","amount":-3.957954,"disclosure":"aggregated"},
+        {"label":"Sociale lasten en pensioenen","category":"wages_squad","amount":-0.74537,"disclosure":"aggregated"},
+        {"label":"Afschrijving vaste activa","category":"depreciation","amount":-0.648395,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-6.162643,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.028337,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":10.714978,"expenses":11.514362,"net_result":-0.82772},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële baten en lasten","amount":-0.028337},{"label":"Belastingen","amount":0}],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":10.714978,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

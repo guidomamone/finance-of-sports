@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "krasnodar-ru",
+    "name": "OOO Football Club Krasnodar",
+    "display_name": "Krasnodar",
+    "country": "RU",
+    "reporting_currency": "RUB",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "krasnodar-ru-bfo-2021-datos",
+      "club_id": "krasnodar-ru",
+      "title": "OOO Football Club Krasnodar — отчетность 2021 в ГИР БО (bo.nalog.gov.ru), ejercicio 2021",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "krasnodar-ru-bfo-2022-datos",
+      "club_id": "krasnodar-ru",
+      "title": "OOO Football Club Krasnodar — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "krasnodar-ru-bfo-2023-datos",
+      "club_id": "krasnodar-ru",
+      "title": "OOO Football Club Krasnodar — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "krasnodar-ru-bfo-2024-datos",
+      "club_id": "krasnodar-ru",
+      "title": "OOO Football Club Krasnodar — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "krasnodar-ru-bfo-2025-datos",
+      "club_id": "krasnodar-ru",
+      "title": "OOO Football Club Krasnodar — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "RUB",
+      "source_id": "krasnodar-ru-bfo-2021-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2021-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":3368.643,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":1384.005,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-4497.071,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-150.006,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-108.919,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-3055.249,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":73.322,"tax":594.387,"gross_debt":0,"cash":217.873},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-2390.888},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Доходы от участия в других организациях (2310)","amount":0.612},
+          {"label":"Проценты к получению (2320)","amount":72.71},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":594.387}
+        ],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":3368.643,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 4497.071,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "RUB",
+      "source_id": "krasnodar-ru-bfo-2022-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2022-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":3180.351,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":4500.664,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-3238.92,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-172.376,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-125.734,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-9089.867,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":52.206,"tax":84.424,"gross_debt":0,"cash":3431.495},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-4809.252},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Доходы от участия в других организациях (2310)","amount":31.721},
+          {"label":"Проценты к получению (2320)","amount":52.074},
+          {"label":"Проценты к уплате (2330)","amount":-31.589},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":84.424}
+        ],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":3180.351,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {"line":"Себестоимость продаж (2120)","side":"gasto","amount":3238.92,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"}
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "RUB",
+      "source_id": "krasnodar-ru-bfo-2023-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2023-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":4030.342,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":6625.309,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-3987.725,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-240.986,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-121.486,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-3085.193,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":881.4,"tax":212.724,"gross_debt":0,"cash":402.022},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":4314.385},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Доходы от участия в других организациях (2310)","amount":767.606},
+          {"label":"Проценты к получению (2320)","amount":149.475},
+          {"label":"Проценты к уплате (2330)","amount":-35.681},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":212.724}
+        ],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":4030.342,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 3987.725,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "RUB",
+      "source_id": "krasnodar-ru-bfo-2024-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2024-12-31"},
+      "revenue": [
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":7186.301,"disclosure":"aggregated"},
+        {"label":"Размещение спонсорской рекламы","category":"sponsorship_commercial","amount":1905.084,"disclosure":"detailed"},
+        {"label":"Реализация коммерческих прав на трансляцию","category":"broadcasting","amount":920.893,"disclosure":"detailed"},
+        {"label":"Размещение рекламной продукции","category":"sponsorship_commercial","amount":692.181,"disclosure":"detailed"},
+        {"label":"Атрибутика","category":"sponsorship_commercial","amount":340.684,"disclosure":"detailed"},
+        {"label":"Продажа билетов","category":"matchday_competition","amount":311.228,"disclosure":"detailed"},
+        {"label":"Продажа абонементов","category":"season_tickets","amount":254.062,"disclosure":"detailed"},
+        {"label":"Прочие","category":"other_income","amount":75.777,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-7330.711,"disclosure":"aggregated"},
+        {"label":"Материальные затраты","category":"admin_general_expense","amount":-341.694,"disclosure":"detailed"},
+        {
+          "label": "Расходы, связанные с основным видом деятельности (в том числе расходы по организации тренировочного процесса, подготовке к соревнованиям)",
+          "category": "match_organisation_expense",
+          "amount": -972.149,
+          "disclosure": "detailed"
+        },
+        {"label":"Расходы на оплату труда","category":"wages_squad","amount":-3961.42,"disclosure":"detailed"},
+        {"label":"Отчисления на социальные нужды","category":"wages_squad","amount":-362.808,"disclosure":"detailed"},
+        {"label":"Амортизация","category":"depreciation","amount":-91.4,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1279.59,"tax":504.643,"gross_debt":0,"cash":427.635},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":410.261},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Доходы от участия в других организациях (2310)","amount":1294.48},
+          {"label":"Проценты к получению (2320)","amount":29.027},
+          {"label":"Проценты к уплате (2330)","amount":-43.917},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":504.643}
+        ],
+        "no_breakdown": [],
+        "included_in": {}
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "RUB",
+      "source_id": "krasnodar-ru-bfo-2025-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2025-12-31"},
+      "revenue": [
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":5781.574,"disclosure":"aggregated"},
+        {"label":"Размещение спонсорской рекламы","category":"sponsorship_commercial","amount":1815.143,"disclosure":"detailed"},
+        {"label":"Реализация коммерческих прав на трансляцию","category":"broadcasting","amount":1199.719,"disclosure":"detailed"},
+        {"label":"Размещение рекламной продукции","category":"sponsorship_commercial","amount":914.103,"disclosure":"detailed"},
+        {"label":"Атрибутика","category":"sponsorship_commercial","amount":525.112,"disclosure":"detailed"},
+        {"label":"Продажа билетов","category":"matchday_competition","amount":519.266,"disclosure":"detailed"},
+        {"label":"Продажа абонементов","category":"season_tickets","amount":419.637,"disclosure":"detailed"},
+        {"label":"Прочие","category":"other_income","amount":59.877,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-5187.116,"disclosure":"aggregated"},
+        {"label":"Материальные затраты","category":"admin_general_expense","amount":-487.343,"disclosure":"detailed"},
+        {
+          "label": "Расходы, связанные с основным видом деятельности (в том числе расходы по организации тренировочного процесса, подготовке к соревнованиям)",
+          "category": "match_organisation_expense",
+          "amount": -1245.217,
+          "disclosure": "detailed"
+        },
+        {"label":"Расходы на оплату труда","category":"wages_squad","amount":-4599.209,"disclosure":"detailed"},
+        {"label":"Отчисления на социальные нужды","category":"wages_squad","amount":-413.407,"disclosure":"detailed"},
+        {"label":"Амортизация","category":"depreciation","amount":-89.29,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1248.868,"tax":432.001,"gross_debt":0,"cash":1264.188},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":893.718},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Доходы от участия в других организациях (2310)","amount":1185.951},
+          {"label":"Проценты к получению (2320)","amount":108.155},
+          {"label":"Проценты к уплате (2330)","amount":-45.238},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":432.001}
+        ],
+        "no_breakdown": [],
+        "included_in": {}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

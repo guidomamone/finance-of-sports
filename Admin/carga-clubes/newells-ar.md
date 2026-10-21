@@ -84,7 +84,7 @@ TC de cierre al 30/06/2019, `fxSource:'document_close'` (regla #0 de club-data-m
 El documento usa DOS tasas de USD distintas según el lado del balance: 41,50 (comprador, para los
 Créditos/Activos en USD, ej. "Deudores por transferencia jugadores") y 43,50 (vendedor, para las
 Deudas/Pasivos en USD) — el mismo spread comprador/vendedor que ya documentó Unión
-(data/ar/union-data.js) para su propio Anexo de moneda extranjera. Se usó el lado ACTIVO/CRÉDITO
+(data/ar/union-ar-data.js) para su propio Anexo de moneda extranjera. Se usó el lado ACTIVO/CRÉDITO
 (comprador, 41,50), mismo criterio ya establecido para Unión ("Anexo V, lado Activo/Créditos").
 NO se usó el fxRef ARS@2019-06-30 de currency-map.js (42,45, cotización de mercado): el documento
 declara el suyo propio, que gana siempre sobre una cotización externa.
@@ -186,7 +186,7 @@ PDF oficial (98 páginas, capa de texto nativa, sin OCR). Recuperado vía Waybac
 ### window.CLUB_GENERIC_DATA
 
 ```text
-Registro en CLUB_GENERIC_DATA (ver comentario completo en data/ar/instituto-data.js, Versión 95).
+Registro en CLUB_GENERIC_DATA (ver comentario completo en data/ar/instituto-ar-data.js, Versión 95).
 ```
 
 ### gestionesByClub['newells-ar']

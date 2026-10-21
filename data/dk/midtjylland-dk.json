@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "midtjylland-dk",
+    "name": "FC Midtjylland A/S",
+    "display_name": "FC Midtjylland",
+    "country": "DK",
+    "reporting_currency": "DKK",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "midtjylland-dk-aarsrapport-2019",
+      "club_id": "midtjylland-dk",
+      "title": "Årsrapport FC Midtjylland A/S, 1. juli 2018 - 30. juni 2019",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "midtjylland-dk-aarsrapport-2020-06-30",
+      "club_id": "midtjylland-dk",
+      "title": "FC Midtjylland A/S — aarsrapport-2020-06-30 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"benham","name":"Matthew Benham","first_year":2019,"last_year":2019}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "DKK",
+      "source_id": "midtjylland-dk-aarsrapport-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": "benham",
+      "fx": {"ref":"DKK@2019-06-30"},
+      "revenue": [
+        {"label":"Nettoomsætning","category":"lump_football_operations","amount":107.921,"disclosure":"aggregate"},
+        {"label":"Andre driftsindtægter (avance por venta de derechos federativos)","category":"player_sales","amount":161.96,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Andre eksterne omkostninger","category":"other_expenses","amount":-73.974,"disclosure":"aggregate"},
+        {"label":"Personaleomkostninger","category":"wages_squad","amount":-93.592,"disclosure":"detailed"},
+        {"label":"Afskrivninger af immaterielle anlægsaktiver","category":"player_amortisation","amount":-29.319,"disclosure":"detailed"},
+        {"label":"Afskrivninger af materielle anlægsaktiver","category":"depreciation","amount":-3.291,"disclosure":"detailed"},
+        {"label":"Andre driftsomkostninger","category":"other_expenses","amount":-3.244,"disclosure":"aggregate"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.043,"tax":-10.649,"gross_debt":1.22,"cash":53.452},
+      "official_totals": {"revenue":269.881,"expenses":203.42,"net_result":55.769}
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "DKK",
+      "source_id": "midtjylland-dk-aarsrapport-2020-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2020-06-30"},
+      "revenue": [
+        {"label":"Nettoomsætning Revenue","category":"lump_football_operations","amount":87.61,"disclosure":"aggregated"},
+        {"label":"Andre driftsindtægter Other operating income","category":"other_income","amount":98.637,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Andre eksterne omkostninger Other external expenses","category":"other_expenses","amount":-61.833,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-93.413,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"wages_squad","amount":-7.544,"disclosure":"aggregated"},
+        {"label":"Andre omkostninger til social sikring","category":"wages_squad","amount":-2.363,"disclosure":"aggregated"},
+        {"label":"Afskrivninger af immaterielle anlægsaktiver","category":"player_amortisation","amount":-36.929,"disclosure":"aggregated"},
+        {"label":"Afskrivninger af materielle anlægsaktiver","category":"depreciation","amount":-3.126,"disclosure":"aggregated"},
+        {"label":"Andre driftsomkostninger Other operating expenses","category":"other_expenses","amount":-0.056,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.507,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":186.247,"expenses":205.264,"net_result":-19.524},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Finansielle indtægter Financial income","amount":0.059},
+          {"label":"Finansielle omkostninger Financial expenses","amount":-0.566},
+          {"label":"Skat af årets resultat Tax on profit/loss for the year","amount":0}
+        ],
+        "no_breakdown": [{"line":"Nettoomsætning Revenue","side":"revenue","amount":87.61,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

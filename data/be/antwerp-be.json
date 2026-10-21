@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "antwerp-be",
+    "name": "Royal Antwerp F.C.",
+    "display_name": "Antwerp",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "antwerp-be-jaarrekening-2025",
+      "club_id": "antwerp-be",
+      "title": "Jaarrekening van Royal Antwerp Football Club NV (RAFC) voor het boekjaar van 1/7/2024 tot 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Paul Gheysens (hoofdaandeelhouder, via Goala BV)","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "antwerp-be-jaarrekening-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":43.351487,"disclosure":"aggregated"},
+        {
+          "label": "Andere bedrijfsopbrengsten",
+          "category": "other_income",
+          "amount": 46.4609,
+          "disclosure": "aggregated",
+          "items": [["Exploitatiesubsidies en compenserende bedragen (Nota 6.10)",11.682618],["Overige (sin más desglose en la fuente)",34.778282]]
+        }
+      ],
+      "expenses": [
+        {"label":"Handelsgoederen, grond- en hulpstoffen","category":"other_expenses","amount":-4.236184,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-28.290772,"disclosure":"aggregated"},
+        {"label":"Bezoldigingen, sociale lasten en pensioenen","category":"wages_squad","amount":-42.479869,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen — immateriële vaste activa (pases)","category":"player_amortisation","amount":-6.162963,"disclosure":"detailed"},
+        {"label":"Afschrijvingen — materiële vaste activa (bienes de uso)","category":"depreciation","amount":-0.878187,"disclosure":"detailed"},
+        {"label":"Waardeverminderingen op voorraden en handelsvorderingen","category":"other_expenses","amount":-0.042904,"disclosure":"aggregated"},
+        {"label":"Voorzieningen voor risico's en kosten (terugneming)","category":"exceptional_items","amount":0.213502,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten — bedrijfsbelastingen en -taksen","category":"admin_general_expense","amount":-0.189605,"disclosure":"detailed"},
+        {"label":"Andere bedrijfskosten — overige","category":"other_expenses","amount":-2.136177,"disclosure":"detailed"},
+        {
+          "label": "Niet-recurrente bedrijfskosten (minderwaarde bij realisatie van immateriële vaste activa)",
+          "category": "player_impairment",
+          "amount": -0.074116,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.2483,"tax":-0.802638,"gross_debt":50.748888,"cash":4.159718},
+      "official_totals": {"revenue":89.812387,"expenses":84.490777,"net_result":-0.515827}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

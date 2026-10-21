@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "corinthians-br",
+    "name": "Sport Club Corinthians Paulista",
+    "display_name": "Corinthians",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "corinthians-br-demonstracoes-2024",
+      "club_id": "corinthians-br",
+      "title": "Demonstrações Financeiras, Exercícios Findos em 31 de Dezembro de 2024 e de 2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.corinthians.com.br/clube/transparencia/demonstracoes-financeiras-e-balancetes-patrimoniais"
+    },
+    {
+      "id": "corinthians-br-demonstracoes-2025",
+      "club_id": "corinthians-br",
+      "title": "Demonstrações Financeiras, Exercícios Findos em 31 de Dezembro de 2025 e de 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.corinthians.com.br/clube/transparencia/demonstracoes-financeiras-e-balancetes-patrimoniais"
+    }
+  ],
+  "management": [
+    {"id":"melo","name":"Augusto Melo (2024-2026, até afastamento em maio de 2025)","first_year":2024,"last_year":2024},
+    {"id":"stabile","name":"Osmar Stábile (interino desde maio/2025, efetivado agosto/2025, mandato até dez/2026)","first_year":2025,"last_year":2025}
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "BRL",
+      "source_id": "corinthians-br-demonstracoes-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "melo",
+      "fx": {"ref":"BRL@2024-12-31"},
+      "revenue": [
+        {"label":"Direitos de transmissão de TV (segmento futebol)","category":"broadcasting","amount":295.064,"disclosure":"detailed"},
+        {"label":"Patrocínios e publicidades (segmento futebol)","category":"sponsorship_commercial","amount":253.721,"disclosure":"detailed"},
+        {"label":"Arrecadação de jogos (segmento futebol)","category":"matchday_competition","amount":93.994,"disclosure":"detailed"},
+        {"label":"Premiações, Fiel Torcedor, Loterias e Outras (segmento futebol)","category":"other_income","amount":70.635,"disclosure":"detailed"},
+        {"label":"Receitas com repasses de direitos federativos (segmento futebol)","category":"player_sales","amount":338.421,"disclosure":"detailed"},
+        {"label":"Impostos e contribuições (dedução, segmento futebol)","category":"other_income","amount":-34.536,"disclosure":"detailed"},
+        {"label":"Outras receitas (despesas) operacionais (segmento futebol)","category":"other_income","amount":1.93,"disclosure":"detailed"},
+        {"label":"Contribuições dos sócios (segmento clube social)","category":"member_dues","amount":26.991,"disclosure":"detailed"},
+        {"label":"Patrocínios e publicidades (segmento clube social)","category":"sponsorship_commercial","amount":10.828,"disclosure":"detailed"},
+        {"label":"Arrecadação de jogos (segmento clube social)","category":"matchday_competition","amount":0.088,"disclosure":"detailed"},
+        {"label":"Explorações comerciais (segmento clube social)","category":"other_income","amount":3.908,"disclosure":"detailed"},
+        {"label":"Licenciamento e franquias (segmento clube social)","category":"sponsorship_commercial","amount":19.75,"disclosure":"detailed"},
+        {"label":"Premiações, Fiel Torcedor, Loterias e Outras (segmento clube social)","category":"other_income","amount":1.523,"disclosure":"detailed"},
+        {"label":"Impostos e contribuições (dedução, segmento clube social)","category":"other_income","amount":-0.872,"disclosure":"detailed"},
+        {"label":"Outras receitas (despesas) operacionais (segmento clube social)","category":"other_income","amount":0.485,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Pessoal (segmento futebol)","category":"wages_squad","amount":-367.714,"disclosure":"detailed"},
+        {"label":"Serviços de terceiros (segmento futebol)","category":"admin_general_expense","amount":-46.311,"disclosure":"detailed"},
+        {"label":"Gerais e administrativas (segmento futebol)","category":"admin_general_expense","amount":-106.376,"disclosure":"detailed"},
+        {"label":"Custo com vendas e aquisição de atletas","category":"other_expenses","amount":-71.041,"disclosure":"detailed"},
+        {
+          "label": "Futebol (custo operacional da área, sem nota própria de detalhe)",
+          "category": "match_organisation_expense",
+          "amount": -54.566,
+          "disclosure": "detailed"
+        },
+        {"label":"Rateio de despesas administrativas (segmento futebol, Nota 17)","category":"admin_general_expense","amount":-31.289,"disclosure":"detailed"},
+        {
+          "label": "Provisão de contingências (Nota 15: cível, trabalhista, tributária, CNRD/FIFA/CAS)",
+          "category": "exceptional_items",
+          "amount": -112.242,
+          "disclosure": "detailed"
+        },
+        {"label":"Pessoal (segmento clube social)","category":"youth_other_sports_expense","amount":-60.951,"disclosure":"detailed"},
+        {"label":"Serviços de terceiros (segmento clube social)","category":"admin_general_expense","amount":-42.77,"disclosure":"detailed"},
+        {"label":"Gerais e administrativas (segmento clube social)","category":"admin_general_expense","amount":-35.339,"disclosure":"detailed"},
+        {"label":"Esportes amadores","category":"youth_other_sports_expense","amount":-1.676,"disclosure":"detailed"},
+        {
+          "label": "Rateio das despesas administrativas (segmento clube social, Nota 17, crédito que cancela a linha espelho do segmento futebol)",
+          "category": "admin_general_expense",
+          "amount": 31.289,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação de bens do imobilizado (Nota 7, todo o Clube)","category":"depreciation","amount":-11.259,"disclosure":"detailed"},
+        {
+          "label": "Amortização de direitos federativos de atletas (resto de \"Depreciação e amortização de direitos\", ambos segmentos)",
+          "category": "player_amortisation",
+          "amount": -74.295,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-279.156,"tax":0,"gross_debt":244.672,"cash":12.699},
+      "official_totals": {"revenue":1081.93,"expenses":872.298,"net_result":-181.766}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "corinthians-br-demonstracoes-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "stabile",
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Direitos de TV","category":"broadcasting","amount":233.855,"disclosure":"detailed"},
+        {"label":"Matchday (bilheteria bruta)","category":"matchday_competition","amount":118.597,"disclosure":"detailed"},
+        {"label":"Participação e Premiações","category":"competition_bonus","amount":128.825,"disclosure":"detailed"},
+        {"label":"Comerciais (patrocínio, material esportivo, publicidade)","category":"sponsorship_commercial","amount":252.163,"disclosure":"detailed"},
+        {"label":"Locação de espaço","category":"other_income","amount":2.227,"disclosure":"detailed"},
+        {"label":"Programa Fiel Torcedor","category":"member_dues","amount":61.74,"disclosure":"detailed"},
+        {"label":"Parque São Jorge - Sócios e Atividades","category":"member_dues","amount":30.189,"disclosure":"detailed"},
+        {"label":"Licenciamentos","category":"sponsorship_commercial","amount":25.545,"disclosure":"detailed"},
+        {"label":"Outras Receitas (eventos, memorial, estacionamento, Timemania)","category":"other_income","amount":10.544,"disclosure":"detailed"},
+        {"label":"Impostos e contribuições (dedução)","category":"other_income","amount":-27.022,"disclosure":"detailed"},
+        {"label":"Outras deduções sobre a receita","category":"other_income","amount":-26.537,"disclosure":"detailed"},
+        {"label":"Outras receitas (despesas) operacionais líquidas","category":"other_income","amount":5.545,"disclosure":"detailed"},
+        {"label":"Cessão definitiva de atletas (receita bruta)","category":"player_sales","amount":107.405,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Despesas com pessoal (Nota 20)",
+          "category": "wages_squad",
+          "amount": -571.179,
+          "disclosure": "detailed",
+          "items": [
+            ["Salários e ordenados",-295.129],
+            ["Prêmios",-72.356],
+            ["Direito de Imagem",-131.134],
+            ["Encargos sobre folha",-39.799],
+            ["Benefícios a funcionários",-32.761]
+          ]
+        },
+        {"label":"Despesas Administrativas (Nota 21)","category":"admin_general_expense","amount":-53.697,"disclosure":"detailed"},
+        {"label":"Impostos e Taxas (Nota 21)","category":"admin_general_expense","amount":-18.06,"disclosure":"detailed"},
+        {
+          "label": "Depreciação de bens do imobilizado (Nota 8, parte de \"Amortizações e Depreciações\" da Nota 21)",
+          "category": "depreciation",
+          "amount": -12.138,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortização de direitos federativos de atletas (resto de \"Amortizações e Depreciações\" da Nota 21)",
+          "category": "player_amortisation",
+          "amount": -92.678,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas com Materiais e Serviços (Nota 22)","category":"admin_general_expense","amount":-124.123,"disclosure":"detailed"},
+        {"label":"Despesas com jogos (Nota 22, = Nota 19.2 Matchday)","category":"match_organisation_expense","amount":-53.148,"disclosure":"detailed"},
+        {
+          "label": "Despesas jurídicas e contingências (Nota 23: indenizações/acordos judiciais, custas processuais, provisão para contingências)",
+          "category": "exceptional_items",
+          "amount": -65.148,
+          "disclosure": "detailed"
+        },
+        {"label":"Baixa de atletas (Nota 24.2)","category":"player_amortisation","amount":-0.941,"disclosure":"detailed"},
+        {
+          "label": "Despesa na cessão de atletas (Nota 24.3, comissões e taxas federativas)",
+          "category": "other_expenses",
+          "amount": -17.298,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-58.107,"tax":0,"gross_debt":250.032,"cash":26.019},
+      "official_totals": {"revenue":923.076,"expenses":943.262,"net_result":-143.441}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

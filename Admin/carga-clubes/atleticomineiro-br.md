@@ -223,7 +223,7 @@ debêntures" (13,548 + 45,423 = 58,971, emitidas 25/09/2024), Controladora = 554
 cash = "Caixa e equivalentes de caixa".
 netInterest = "Receitas/(despesas) financeiras, líquidas", Controladora (35,037 - 174,965).
 officialTotalExpenses EXCLUYE 'Resultado equivalência patrimonial' (-51,738, exceptional_items)
-— mismo criterio que Botafogo (data/br/botafogo-data.js): verifyTieOuts()/tools/audit.js comparan
+— mismo criterio que Botafogo (data/br/botafogo-br-data.js): verifyTieOuts()/tools/audit.js comparan
 "Expenses" contra gasto ordinario + no-efectivo solamente (expenses+nonCash), exceptional_items
 no participa de ese check (sí de officialPAT, vía operatingProfit). Documento imprime 739,558
 como total de despesas INCLUYENDO ese ítem; acá va 687,820 (739,558 - 51,738) para que cierre

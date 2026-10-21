@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "rbbragantino-br",
+    "name": "Red Bull Bragantino Futebol Ltda.",
+    "display_name": "RB Bragantino",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "rbbragantino-br-balanco-2019",
+      "club_id": "rbbragantino-br",
+      "title": "Red Bull Bragantino — Balanço Patrimonial e Demonstração do Resultado, Exercícios Findos em 31 de Dezembro de 2019 e de 2018",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://web.archive.org/web/2019*/https://www.redbullbragantino.com.br/balanco/2019.pdf"
+    },
+    {
+      "id": "rbbragantino-br-balanco-2024",
+      "club_id": "rbbragantino-br",
+      "title": "Red Bull Bragantino Futebol Ltda. — Balanços Patrimoniais e Demonstrações do Resultado, Exercícios Findos em 31 de Dezembro de 2024 e de 2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://web.archive.org/web/2025*/https://www.redbullbragantino.com.br/balanco/Red_Bull_Bragantino_(BDO...11_de_Fevereiro_de_2025).pdf"
+    },
+    {
+      "id": "rbbragantino-br-balanco-2025-auditado",
+      "club_id": "rbbragantino-br",
+      "title": "Red Bull Bragantino Futebol Ltda. — balanco-2025-auditado (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [
+    {
+      "id": "sinconfirmar",
+      "name": "Red Bull Bragantino Futebol Ltda. (controlada por Red Bull GmbH, sin gestión/presidencia electa)",
+      "first_year": 2019,
+      "last_year": 2024
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "BRL",
+      "source_id": "rbbragantino-br-balanco-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": "sinconfirmar",
+      "fx": {"ref":"BRL@2019-12-31"},
+      "revenue": [{"label":"Receita Líquida","category":"lump_football_operations","amount":39.171,"disclosure":"lump"}],
+      "expenses": [
+        {"label":"Comissão técnica","category":"wages_squad","amount":-3.189,"disclosure":"summary"},
+        {"label":"Custo do departamento de futebol","category":"wages_squad","amount":-23.807,"disclosure":"summary"},
+        {"label":"Gastos com jogos e bonificações","category":"match_organisation_expense","amount":-2.47,"disclosure":"summary"},
+        {"label":"Custo com departamento amador","category":"youth_other_sports_expense","amount":0,"disclosure":"summary"},
+        {"label":"Despesas gerais e administrativas","category":"admin_general_expense","amount":-7.559,"disclosure":"summary"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.002,"tax":0,"gross_debt":0.564,"cash":4.256},
+      "official_totals": {"revenue":39.171,"expenses":37.025,"net_result":0.144}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "BRL",
+      "source_id": "rbbragantino-br-balanco-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "sinconfirmar",
+      "fx": {"ref":"BRL@2024-12-31"},
+      "revenue": [
+        {"label":"Receita Líquida","category":"lump_football_operations","amount":425.224,"disclosure":"lump"},
+        {"label":"Outras receitas e despesas operacionais","category":"other_income","amount":80.992,"disclosure":"summary"}
+      ],
+      "expenses": [
+        {"label":"Comissão técnica","category":"wages_squad","amount":-68.656,"disclosure":"summary"},
+        {"label":"Custo do departamento de futebol","category":"wages_squad","amount":-311.878,"disclosure":"summary"},
+        {"label":"Gastos com jogos e bonificações","category":"match_organisation_expense","amount":-13.822,"disclosure":"summary"},
+        {"label":"Custo com departamento amador","category":"youth_other_sports_expense","amount":-37.316,"disclosure":"summary"},
+        {"label":"Despesas gerais e administrativas","category":"admin_general_expense","amount":-38.253,"disclosure":"summary"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":9.094,"tax":-14.384,"gross_debt":0,"cash":29.015},
+      "official_totals": {"revenue":506.216,"expenses":469.925,"net_result":31.001}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "rbbragantino-br-balanco-2025-auditado",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Receita de patrocínio e publicidade","category":"sponsorship_commercial","amount":397.569,"disclosure":"aggregated"},
+        {"label":"Campeonato Brasileiro","category":"competition_bonus","amount":109.528,"disclosure":"aggregated"},
+        {"label":"Campeonato Paulista","category":"competition_bonus","amount":15.6,"disclosure":"aggregated"},
+        {"label":"Receitas com repasses de direitos federativo","category":"player_sales","amount":11.214,"disclosure":"aggregated"},
+        {"label":"Outras Receitas","category":"other_income","amount":6.821,"disclosure":"aggregated"},
+        {"label":"Bilheteria","category":"matchday_competition","amount":3.911,"disclosure":"aggregated"},
+        {"label":"Copa do Brasil","category":"competition_bonus","amount":9.541,"disclosure":"aggregated"},
+        {"label":"( - ) Encargos sobre receitas","category":"other_income","amount":-54.984,"disclosure":"aggregated"},
+        {"label":"Outras receitas e Despesas operacionais","category":"other_income","amount":28.089,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Comissão técnica","category":"wages_squad","amount":-41.85,"disclosure":"aggregated"},
+        {"label":"Custo do departamento de futebol","category":"wages_squad","amount":-325.62,"disclosure":"aggregated"},
+        {"label":"Gastos com jogos e bonificações","category":"match_organisation_expense","amount":-9.675,"disclosure":"aggregated"},
+        {"label":"Custo com departamento amador","category":"youth_other_sports_expense","amount":-50.7,"disclosure":"aggregated"},
+        {"label":"Despesas gerais e administrativas","category":"admin_general_expense","amount":-49.965,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.763,"tax":-14.941,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":527.289,"expenses":477.81,"net_result":31.773},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Receitas financeiras","amount":0.357},
+          {"label":"Despesas financeiras","amount":-3.12},
+          {"label":"Imposto de renda e contribuição social","amount":-14.941}
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

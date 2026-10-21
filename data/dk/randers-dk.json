@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "randers-dk",
+    "name": "Randers FC A/S",
+    "display_name": "Randers FC",
+    "country": "DK",
+    "reporting_currency": "DKK",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "randers-dk-aarsrapport-2022-23",
+      "club_id": "randers-dk",
+      "title": "Randers FC A/S — Årsrapport 1. juli 2022 - 30. juni 2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "DKK",
+      "source_id": "randers-dk-aarsrapport-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2023-06-30"},
+      "revenue": [
+        {
+          "label": "Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)",
+          "category": "lump_football_operations",
+          "amount": 61.744974,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Løn- og personaleomkostninger (Løn og gager + Pensioner + Andre omkostninger til social sikring)",
+          "category": "wages_squad",
+          "amount": -54.229295,
+          "disclosure": "detailed",
+          "items": [["Løn og gager",-47.872434],["Pensioner",-4.269825],["Andre omkostninger til social sikring",-2.087037]]
+        },
+        {
+          "label": "Kontraktrettigheder mv. — årets af- og nedskrivninger (amortisation for the year, player registrations)",
+          "category": "player_amortisation",
+          "amount": -6.877926,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Indretning af lejede lokaler + Andre anlæg, driftsmateriel og inventar — årets af- og nedskrivninger",
+          "category": "depreciation",
+          "amount": -1.066125,
+          "disclosure": "detailed",
+          "items": [["Indretning af lejede lokaler",-0.479431],["Andre anlæg, driftsmateriel og inventar",-0.586694]]
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.568178,"tax":0.054931,"gross_debt":2.062693,"cash":11.464548},
+      "official_totals": {"revenue":61.744974,"expenses":62.173346,"net_result":2.194737}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

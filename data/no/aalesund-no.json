@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "aalesund-no",
+    "name": "Ålesund Fotball AS",
+    "display_name": "Aalesund",
+    "country": "NO",
+    "reporting_currency": "NOK",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "aalesund-no-aarsregnskap-aalesund-fotball-as-2025",
+      "club_id": "aalesund-no",
+      "title": "Ålesund Fotball AS — aarsregnskap-aalesund-fotball-as-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "NOK",
+      "source_id": "aalesund-no-aarsregnskap-aalesund-fotball-as-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2025-12-31"},
+      "revenue": [
+        {"label":"Salgsinntekter","category":"lump_football_operations","amount":69.990515,"disclosure":"aggregated"},
+        {"label":"Andre driftsinntekter","category":"other_income","amount":0.440395,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-6.366043,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-5.45678,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-0.854926,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.151065,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":-0.43456,"disclosure":"aggregated"},
+        {"label":"Avskrivning varige driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-6.632698,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_expenses","amount":-49.677946,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.657928,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":70.43091,"expenses":69.574018,"net_result":1.51482},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Renteinntekt fra foretak i samme konsern","amount":0.45},
+          {"label":"Annen renteinntekt","amount":0.14761},
+          {"label":"Annen finansinntekt","amount":0.138252},
+          {"label":"Nedskrivning av andre finansielle omløpsmidler","amount":0},
+          {"label":"Annen rentekostnad","amount":-0.007004},
+          {"label":"Annen finanskostnad","amount":-0.07093},
+          {"label":"Skattekostnad på ordinært resultat","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Salgsinntekter",
+            "side": "revenue",
+            "amount": 69.990515,
+            "reason": "Claude 2026-10-18 (subagente Sonnet): Salgsinntekt es un unico renglon sin desglose en ninguna parte del documento (Note 3 repite 69 990 515 sin abrir; Note 2 solo da la transferencia de la cooperacion con el FLI, 27 578 215). Lump_football_operations es el caso correcto. Televisión y Estadio dan 0 por esto: estan incluidos en Salgsinntekter, no se puede abrir. [Salgsinntekter 69 990 515 (L302); Overførsel iht. avtale 27 578 215 (L296)]"
+          }
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

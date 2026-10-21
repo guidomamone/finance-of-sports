@@ -16,7 +16,7 @@ depositadas en Companies House UK. Ejercicio cerrado el 30 de junio de 2025 (tem
 Clubes/Inglaterra/Newcastle United/newcastle-united-group-accounts-2024-25.md.
 
 amountNative en millones de GBP nativos. revenue positivo, expense NEGATIVO, mismo criterio que
-river-data.js/racing-data.js/everton-gb-data.js.
+river-ar-data.js/racing-ar-data.js/everton-gb-data.js.
 
 "Matchday": el propio documento (Nota 2.4, política contable) define este stream como "Season
 ticket and corporate hospitality revenue" + "Season and matchday tickets and corporate hospitality

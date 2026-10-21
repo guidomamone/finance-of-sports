@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "boavista-pt",
+    "name": "Boavista Futebol Clube, Futebol, SAD",
+    "display_name": "Boavista",
+    "country": "PT",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "boavista-pt-rcsad-23-24-1-3",
+      "club_id": "boavista-pt",
+      "title": "Boavista Futebol Clube, Futebol, SAD — RCSAD-23-24_1-3 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "boavista-pt-rcsad-23-24-1-3",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Subsídios à exploração","category":"other_income","amount":0.219358,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos","category":"other_income","amount":5.282976,"disclosure":"aggregated"},
+        {"label":"Bilhetes e Camarotes","category":"matchday_competition","amount":0.507075,"disclosure":"aggregated"},
+        {"label":"Direitos Televisivos","category":"broadcasting","amount":3.463889,"disclosure":"aggregated"},
+        {"label":"Publicidade","category":"sponsorship_commercial","amount":0.453304,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Fornecimentos e serviços externos","category":"admin_general_expense","amount":-3.886821,"disclosure":"aggregated"},
+        {"label":"Gastos com o pessoal","category":"wages_squad","amount":-10.608358,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_expenses","amount":-0.618006,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-2.200963,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.931493,"tax":1.649761,"gross_debt":0,"cash":0.051557},
+      "official_totals": {"revenue":9.926602,"expenses":17.314147,"net_result":-6.669278},
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.931493},{"label":"Imposto sobre o rendimento do período","amount":1.649761}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

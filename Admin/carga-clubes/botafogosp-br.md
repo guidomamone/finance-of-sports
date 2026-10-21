@@ -11,7 +11,7 @@ meta. Las notas de cada fila van en una tabla con su número de fila (hay nombre
 data/br/botafogosp-br-data.js — Botafogo Futebol S.A. - SAF (Botafogo Futebol Clube,
 Ribeirão Preto, São Paulo, Brasil) — SAF (Sociedade Anônima do Futebol), 60% del
 capital del Botafogo Futebol Clube (associação, fundado 1918) + 40% de Trexx Sports
-Participações. NO es el Botafogo de Rio de Janeiro (ese es clubId 'botafogo', ya
+Participações. NO es el Botafogo de Rio de Janeiro (ese es clubId 'botafogo-br', ya
 cargado). clubId 'botafogosp-br' (CON GUIÓN, bracket notation en clubs{}/
 CLUB_GENERIC_DATA/gestionesByClub/memberCountByClub, mismo criterio que el resto de
 los clubes de Brasil). displayName sugerido 'Botafogo-SP' (NO 'Botafogo' a secas, para
@@ -302,7 +302,7 @@ Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/
 ### window.CLUB_GENERIC_DATA
 
 ```text
-Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Versión 95).
+Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-ar-data.js, Versión 95).
 ```
 
 ### memberCountByClub['botafogosp-br']

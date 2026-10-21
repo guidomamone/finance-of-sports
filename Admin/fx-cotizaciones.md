@@ -7,7 +7,7 @@ se verificó). El modelo de monedas y tipos de cambio: `Admin/ARQUITECTURA.md`, 
 ## Antes de 'ARS@2015-06-30' (y las que siguen)
 
 ```text
-Las 5 de abajo vivían escritas a mano en data/ar/argentinosjuniors-data.js (to-do 21(b),
+Las 5 de abajo vivían escritas a mano en data/ar/argentinosjuniors-ar-data.js (to-do 21(b),
 movidas el 2026-09-20). Son la MISMA serie que la de 2014 de arriba — dólar vendedor BNA de
 cierre, investigada en datos.gob.ar/series — así que su lugar es acá y no adentro de un club.
 ANTES DE MOVERLAS SE CONFIRMÓ QUE DE VERDAD SON DE MERCADO, que es lo que el to-do pedía: los
@@ -91,7 +91,7 @@ Licensing Report y los 10 clubes de Japón salen de ese mismo documento.
 ```text
 Perú (Alianza Lima, onboarding inicial del país): los EEFF 2019-2021 SÍ declaran su propio tipo de
 cambio de cierre (Nota "Riesgo de tipo de cambio", promedio ponderado SBS compra/venta) y van como
-fx literal + fxSource:'document_close' en data/pe/alianzalima-pe-data.js, NO acá. Los EEFF 2022-2024
+fx literal + fxSource:'document_close' en data/pe/alianzalima-pe.json (`fx.rate`, `fx.source`), NO acá. Los EEFF 2022-2024
 transcriptos para este club no incluyen esa nota (la transcripción llegó solo hasta los 3 estados
 principales, no a las notas), así que estos 3 son cotizaciones de mercado investigadas aparte.
 ```

@@ -40,7 +40,7 @@ caído) · regulador/país: no aplica — 2026-09-26.
   detalle por rubro — se cargó con ese nivel de agregación honesto. En el Anexo VI de 2016, la
   extracción OCR inicial no separaba bien 2 filas (Honorarios por servicios y Gastos de estadio) —
   se corrigieron releyendo la imagen de la página. Todo verificado línea por línea contra los
-  totales impresos antes de cargar. Ver `data/ar/sanlorenzo-data.js` para el detalle completo (incluye
+  totales impresos antes de cargar. Ver `data/ar/sanlorenzo-ar-data.js` para el detalle completo (incluye
   la gestión de Carlos Abdo, nueva en el sitio, cubriendo 2011-2012). El Informe de Gestión
   (2012-2019) es narrativo, no se usó.
 - **Presupuesto 2023-2024 YA CARGADO en el sitio (8vo ejercicio del club)**: la transcripción

@@ -3,7 +3,7 @@
   "JP": "Los clubes de la J.League son sociedades anonimas (株式会社) con dueño empresarial (Mercari, Nissan, Fujitsu, Rakuten, Panasonic, MIXI, Toyota, etc.), por lo que se carga al 代表取締役社長 (presidente de la sociedad, quien firma). Se mantiene 'Presidente' como cargo. Un 会長 (chairman) es aparte y no se carga salvo que cumpla ese rol (caso Kobe/Mikitani: no cargado)."
  },
  "clubes": {
-  "kashimaantlers": {
+  "kashimaantlers-jp": {
    "gestiones": [
     {
      "nombre": "Fumiaki Koizumi",
@@ -23,7 +23,7 @@
    },
    "dudas": []
   },
-  "urawareddiamonds": {
+  "urawareddiamonds-jp": {
    "gestiones": [
     {
      "nombre": "Makoto Taguchi",
@@ -43,7 +43,7 @@
    },
    "dudas": []
   },
-  "yokohamafmarinos": {
+  "yokohamafmarinos-jp": {
    "gestiones": [
     {
      "nombre": "Akihiro Nakayama",
@@ -63,7 +63,7 @@
    },
    "dudas": []
   },
-  "kawasakifrontale": {
+  "kawasakifrontale-jp": {
    "gestiones": [
     {
      "nombre": "Akihiro Yoshida",
@@ -85,7 +85,7 @@
     "No se buscó confirmación expresa de que Yoshida siga hoy (hasta=null por falta de noticia de cambio). La búsqueda no devolvió ningún cambio de presidente en 2025."
    ]
   },
-  "visselkobe": {
+  "visselkobe-jp": {
    "gestiones": [
     {
      "nombre": "Yuki Senfu",
@@ -107,7 +107,7 @@
     "Posible discusión de criterio: Mikitani (fundador/CEO de Rakuten) es 会長 del club. Se cargó a Senfu por regla (dueño = empresa)."
    ]
   },
-  "gambaosaka": {
+  "gambaosaka-jp": {
    "gestiones": [
     {
      "nombre": "Naoto Mizutani",
@@ -127,7 +127,7 @@
    },
    "dudas": []
   },
-  "cerezoosaka": {
+  "cerezoosaka-jp": {
    "gestiones": [
     {
      "nombre": "Takayuki Hioki",
@@ -147,7 +147,7 @@
    },
    "dudas": []
   },
-  "fctokyo": {
+  "fctokyo-jp": {
    "gestiones": [
     {
      "nombre": "Shigeya Kawagishi",
@@ -167,7 +167,7 @@
    },
    "dudas": []
   },
-  "sanfreccehiroshima": {
+  "sanfreccehiroshima-jp": {
    "gestiones": [
     {
      "nombre": "Masayoshi Kubo",
@@ -187,7 +187,7 @@
    },
    "dudas": []
   },
-  "nagoyagrampus": {
+  "nagoyagrampus-jp": {
    "gestiones": [
     {
      "nombre": "Katsuhiro Shimizu",

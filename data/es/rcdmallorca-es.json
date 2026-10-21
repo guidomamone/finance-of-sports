@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "rcdmallorca-es",
+    "name": "Real Club Deportivo Mallorca, S.A.D.",
+    "display_name": "RCD Mallorca",
+    "country": "ES",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "rcdmallorca-es-cuentas-anuales-informe-gestion-2024-25",
+      "club_id": "rcdmallorca-es",
+      "title": "Cuentas Anuales e Informe de Gestión, Temporada 2024-25",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"sin_confirmar","name":"Sin confirmar","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "rcdmallorca-es-cuentas-anuales-informe-gestion-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": "sin_confirmar",
+      "fx": {"ref":"EUR@2025-06-30","source":"market_close"},
+      "revenue": [
+        {
+          "label": "Ingresos por competiciones (Liga, Copa del Rey, Supercopa de España, amistosos)",
+          "category": "competition_bonus",
+          "amount": 4.927512,
+          "disclosure": "detailed",
+          "items": [["Liga",2.423124],["Supercopa de España",2.443429],["Otras competiciones y partidos amistosos",0.06096]]
+        },
+        {"label":"Ingresos por abonados y socios","category":"season_tickets","amount":7.661479,"disclosure":"detailed"},
+        {"label":"Ingresos por explotación de instalaciones","category":"stadium_other","amount":3.03608,"disclosure":"detailed"},
+        {
+          "label": "Ingresos por retransmisión",
+          "category": "broadcasting",
+          "amount": 44.349607,
+          "disclosure": "detailed",
+          "items": [["Real Decreto-Ley 5/2015",43.876906],["Otros",0.472701]]
+        },
+        {"label":"Ingresos por comercialización","category":"sponsorship_commercial","amount":0.043799,"disclosure":"detailed"},
+        {
+          "label": "Ingresos por publicidad",
+          "category": "sponsorship_commercial",
+          "amount": 12.551615,
+          "disclosure": "detailed",
+          "items": [["Publicidad estática",6.903299],["Publicidad dinámica",5.648316]]
+        },
+        {
+          "label": "Otros ingresos (LFP, subvenciones, cesiones y varios)",
+          "category": "other_income",
+          "amount": 1.513622,
+          "disclosure": "detailed",
+          "items": [["Ingresos LFP",0.301183],["Subvenciones a la explotación y otros",0.283956],["Cesiones",0.233],["Otros",0.695483]]
+        },
+        {"label":"Imputación de subvenciones de inmovilizado no financiero y otras","category":"other_income","amount":0.419249,"disclosure":"detailed"},
+        {"label":"Otros resultados","category":"other_income","amount":1.025872,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Aprovisionamientos y variación de existencias",
+          "category": "other_expenses",
+          "amount": -0.843819,
+          "disclosure": "detailed",
+          "items": [["Consumos de material deportivo y tiendas",-0.734218],["Consumos medicinas y material sanitario",-0.109601]]
+        },
+        {
+          "label": "Gastos de personal no deportivo",
+          "category": "admin_general_expense",
+          "amount": -7.862703,
+          "disclosure": "detailed",
+          "items": [["Sueldos y salarios personal no deportivo",-6.641955],["Seguridad Social del personal no deportivo",-1.173945],["Otros",-0.046803]]
+        },
+        {
+          "label": "Gastos de personal de plantilla deportiva",
+          "category": "wages_squad",
+          "amount": -45.642816,
+          "disclosure": "detailed",
+          "items": [
+            [
+              "Gastos plantilla deportiva inscribible en la Liga",
+              -42.763846,
+              [["Sueldos y salarios",-38.749609],["Seguridad social",-0.614236],["Primas colectivas",-3.4]]
+            ],
+            ["Gastos plantilla deportiva no inscribible en la Liga",-2.87897,[["Sueldos y salarios",-2.337383],["Seguridad social",-0.541587]]]
+          ]
+        },
+        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-10.813982,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general_expense","amount":-0.074673,"disclosure":"detailed"},
+        {
+          "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+          "category": "other_expenses",
+          "amount": -0.00605,
+          "disclosure": "detailed"
+        },
+        {"label":"Desplazamientos","category":"match_organisation_expense","amount":-3.657023,"disclosure":"detailed"},
+        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-0.408524,"disclosure":"detailed"},
+        {
+          "label": "Gastos de adquisición de jugadores (inscribibles y no inscribibles en la Liga)",
+          "category": "other_expenses",
+          "amount": -1.688745,
+          "disclosure": "detailed",
+          "items": [["Inscribibles en la Liga",-0.748738],["No inscribibles en la Liga",-0.940007]]
+        },
+        {"label":"Otros (gastos de gestión corriente)","category":"other_expenses","amount":-5.272207,"disclosure":"detailed"},
+        {"label":"Amortización del inmovilizado material","category":"depreciation","amount":-2.310358,"disclosure":"detailed"},
+        {"label":"Amortizaciones del intangible (excluido jugadores)","category":"other_amortisation","amount":-0.426126,"disclosure":"detailed"},
+        {
+          "label": "Amortización derechos adquisición de jugadores (inscribibles y no inscribibles en la Liga)",
+          "category": "player_amortisation",
+          "amount": -13.006063,
+          "disclosure": "detailed",
+          "items": [["Inscribibles en la Liga",-12.683201],["No inscribibles en la Liga",-0.322861]]
+        }
+      ],
+      "financial": {"profit_on_player_sales":7.768888,"asset_sales":0,"net_interest":-1.151946,"tax":-0.132013,"gross_debt":59.60432,"cash":3.599131},
+      "official_totals": {"revenue":75.528837,"expenses":92.01309,"net_result":-9.999324}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

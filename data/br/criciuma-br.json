@@ -1,0 +1,709 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "criciuma-br",
+    "name": "Criciúma Esporte Clube",
+    "display_name": "Criciuma",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "criciuma-br-demonstrativo-financeiro-2012",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — demonstrativo-financeiro-2012 (ejercicio 2012)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-demonstracoes-financeiras-2013",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — demonstracoes-financeiras-2013 (ejercicio 2013)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-balanco-2019",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — balanco-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-balanco-2020",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — balanco-2020 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-demonstrativo-financeiro-2021",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — demonstrativo-financeiro-2021 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-relatorio-de-balanco-2023",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — relatorio-de-balanco-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-relatorio-de-balanco-2024",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — relatorio-de-balanco-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-relatorio-auditoria-2025",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — relatorio-auditoria-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-demonstracoes-financeiras-2022",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — demonstracoes-financeiras-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-demonstrativo-financeiro-2014",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — demonstrativo-financeiro-2014 (ejercicio 2014)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-balanco-2015",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — balanco-2015 (ejercicio 2015)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-balanco-2017",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — balanco-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-balanco-2018",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — balanco-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "criciuma-br-balanco-auditado-2016",
+      "club_id": "criciuma-br",
+      "title": "Criciúma Esporte Clube — balanco-auditado-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2012,
+      "period_end": "2012-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-demonstrativo-financeiro-2012",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2012-12-31"},
+      "revenue": [
+        {"label":"Futebol","category":"lump_football_operations","amount":13.684738,"disclosure":"aggregated"},
+        {"label":"Sócios","category":"member_dues","amount":5.624029,"disclosure":"aggregated"},
+        {"label":"Extraordinárias","category":"other_income","amount":0.303164,"disclosure":"aggregated"},
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.655157,"disclosure":"aggregated"},
+        {"label":"Royalties","category":"sponsorship_commercial","amount":0.186412,"disclosure":"aggregated"},
+        {"label":"Subvenções","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Outras receitas","category":"other_income","amount":0.088605,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento profissional","category":"lump_football_operations_expense","amount":-15.56887,"disclosure":"aggregated"},
+        {"label":"Departamento amador","category":"youth_other_sports_expense","amount":-1.4443,"disclosure":"aggregated"},
+        {"label":"Departamento administrativo","category":"admin_general_expense","amount":-0.318809,"disclosure":"aggregated"},
+        {"label":"Departamento marketing e comercial","category":"admin_general_expense","amount":-0.714485,"disclosure":"aggregated"},
+        {"label":"Departamento financeiro","category":"admin_general_expense","amount":-0.159496,"disclosure":"aggregated"},
+        {"label":"Departamento de patrimônio","category":"admin_general_expense","amount":-2.558049,"disclosure":"aggregated"},
+        {"label":"Departamento jurídico","category":"admin_general_expense","amount":-0.106247,"disclosure":"aggregated"},
+        {"label":"Departamento loja Tigre Maníacos","category":"admin_general_expense","amount":-0.180738,"disclosure":"aggregated"},
+        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-0.223862,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.356051,"tax":0,"gross_debt":9.613669,"cash":1.371463},
+      "official_totals": {"revenue":20.542105,"expenses":21.274856,"net_result":-2.088802},
+      "adjustments": {
+        "extra_rows": [{"label":"Receitas financeiras – nota 15","amount":0.074328},{"label":"Despesas financeiras – nota 15","amount":-1.430379}],
+        "no_breakdown": [
+          {"line":"Futebol","side":"revenue","amount":13.684738,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Departamento profissional",
+            "side": "expense",
+            "amount": 15.56887,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2013,
+      "period_end": "2013-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-demonstracoes-financeiras-2013",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2013-12-31"},
+      "revenue": [
+        {"label":"Futebol","category":"lump_football_operations","amount":31.284433,"disclosure":"aggregated"},
+        {"label":"Sócios","category":"member_dues","amount":10.343313,"disclosure":"aggregated"},
+        {"label":"MESP - Projeto Formação Atletas – nota 5","category":"other_income","amount":1.422656,"disclosure":"aggregated"},
+        {"label":"Extraordinárias","category":"other_income","amount":0.705478,"disclosure":"aggregated"},
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.795949,"disclosure":"aggregated"},
+        {"label":"Royalties","category":"sponsorship_commercial","amount":0.292131,"disclosure":"aggregated"},
+        {"label":"Outras receitas","category":"other_income","amount":0.155927,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento profissional","category":"lump_football_operations_expense","amount":-28.077497,"disclosure":"aggregated"},
+        {"label":"Departamento amador","category":"youth_other_sports_expense","amount":-2.028453,"disclosure":"aggregated"},
+        {"label":"Departamento administrativo","category":"admin_general_expense","amount":-0.856767,"disclosure":"aggregated"},
+        {"label":"Departamento marketing e comercial","category":"admin_general_expense","amount":-0.971574,"disclosure":"aggregated"},
+        {"label":"Departamento financeiro","category":"admin_general_expense","amount":-0.14397,"disclosure":"aggregated"},
+        {"label":"Departamento de patrimônio","category":"admin_general_expense","amount":-3.331551,"disclosure":"aggregated"},
+        {"label":"Departamento jurídico","category":"admin_general_expense","amount":-1.271965,"disclosure":"aggregated"},
+        {"label":"Departamento loja Tigre Maníacos","category":"admin_general_expense","amount":-0.25209,"disclosure":"aggregated"},
+        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-0.420794,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.356872,"tax":0,"gross_debt":6.434932,"cash":4.9673},
+      "official_totals": {"revenue":44.999887,"expenses":37.354661,"net_result":6.288354},
+      "adjustments": {
+        "extra_rows": [{"label":"Receitas financeiras – nota 16","amount":0.048876},{"label":"Despesas financeiras – nota 16","amount":-1.405748}],
+        "no_breakdown": [
+          {"line":"Futebol","side":"revenue","amount":31.284433,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Departamento profissional",
+            "side": "expense",
+            "amount": 28.077497,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2014,
+      "period_end": "2014-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-demonstrativo-financeiro-2014",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2014-12-31"},
+      "revenue": [
+        {"label":"Receitas com transmissões televisivas","category":"broadcasting","amount":30.086366,"disclosure":"aggregated"},
+        {"label":"Receitas com mensalidade dos sócios","category":"member_dues","amount":10.809859,"disclosure":"aggregated"},
+        {"label":"Receita de mecanismo de solidariedade","category":"player_sales","amount":1.048507,"disclosure":"aggregated"},
+        {"label":"Repasses de direitos federativos","category":"player_sales","amount":0.505145,"disclosure":"aggregated"},
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.441636,"disclosure":"aggregated"},
+        {"label":"Receitas com royalties","category":"sponsorship_commercial","amount":0.119377,"disclosure":"aggregated"},
+        {"label":"Receitas de publicidade","category":"sponsorship_commercial","amount":0.268621,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento profissional","category":"lump_football_operations_expense","amount":-32.953552,"disclosure":"aggregated"},
+        {"label":"Departamento amador","category":"youth_other_sports_expense","amount":-2.519771,"disclosure":"aggregated"},
+        {"label":"Departamento administrativo","category":"admin_general_expense","amount":-0.884796,"disclosure":"aggregated"},
+        {"label":"Departamento marketing e comercial","category":"admin_general_expense","amount":-0.687495,"disclosure":"aggregated"},
+        {"label":"Departamento financeiro","category":"admin_general_expense","amount":-0.199486,"disclosure":"aggregated"},
+        {"label":"Departamento de patrimônio","category":"admin_general_expense","amount":-4.094848,"disclosure":"aggregated"},
+        {"label":"Departamento jurídico","category":"admin_general_expense","amount":-0.716254,"disclosure":"aggregated"},
+        {"label":"Departamento loja Tigre Maníacos","category":"admin_general_expense","amount":-0.249772,"disclosure":"aggregated"},
+        {"label":"Despesas tributárias","category":"admin_general_expense","amount":-0.063622,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.905793,"tax":0,"gross_debt":5.947028,"cash":2.991694},
+      "official_totals": {"revenue":43.279511,"expenses":42.369596,"net_result":0.004122},
+      "adjustments": {
+        "extra_rows": [{"label":"Receitas financeiras","amount":0.106268},{"label":"Despesas financeiras","amount":-1.012061}],
+        "no_breakdown": [
+          {
+            "line": "Departamento profissional",
+            "side": "expense",
+            "amount": 32.953552,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2015,
+      "period_end": "2015-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-balanco-2015",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2015-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão televisíveis","category":"broadcasting","amount":8.776922,"disclosure":"aggregated"},
+        {"label":"Receita com mensalidade de sócios","category":"member_dues","amount":6.727476,"disclosure":"aggregated"},
+        {"label":"Receita de mecanismo de solidariedade","category":"player_sales","amount":2.441524,"disclosure":"aggregated"},
+        {"label":"Repasse de direitos federativos","category":"player_sales","amount":0.25,"disclosure":"aggregated"},
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.128315,"disclosure":"aggregated"},
+        {"label":"Receitas de royalties","category":"sponsorship_commercial","amount":0.068507,"disclosure":"aggregated"},
+        {"label":"Receitas Publicidades","category":"sponsorship_commercial","amount":0.344811,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento Futebol Profissional","category":"lump_football_operations_expense","amount":-18.289053,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol de Base","category":"youth_other_sports_expense","amount":-1.813209,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-1.45036,"disclosure":"aggregated"},
+        {"label":"Departamento de Marketing e Comercial","category":"admin_general_expense","amount":-1.188369,"disclosure":"aggregated"},
+        {"label":"Departamento Financeiro","category":"admin_general_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimonio","category":"admin_general_expense","amount":-3.704815,"disclosure":"aggregated"},
+        {"label":"Departamento Jurídico","category":"admin_general_expense","amount":-1.340799,"disclosure":"aggregated"},
+        {"label":"Departamento Loja - Tigre Maníacos","category":"other_expenses","amount":-0.151713,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.264213,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.949059,"tax":0,"gross_debt":13.627921,"cash":1.178656},
+      "official_totals": {"revenue":18.737555,"expenses":28.202531,"net_result":-10.414036},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-1.247699},{"label":"Receitas Financeiras","amount":0.29864}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Futebol Profissional",
+            "side": "expense",
+            "amount": 18.289053,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-balanco-auditado-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2016-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão televisíveis","category":"broadcasting","amount":5.374282,"disclosure":"aggregated"},
+        {"label":"Receita com mensalidade de sócios","category":"member_dues","amount":5.002656,"disclosure":"aggregated"},
+        {"label":"Receita com Patrocínios","category":"sponsorship_commercial","amount":2.293138,"disclosure":"aggregated"},
+        {"label":"Receita de mecanismo de solidariedade","category":"player_sales","amount":1.73834,"disclosure":"aggregated"},
+        {"label":"Repasse de direitos federativos","category":"player_sales","amount":10.13655,"disclosure":"aggregated"},
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.233375,"disclosure":"aggregated"},
+        {"label":"Receitas de royalties","category":"sponsorship_commercial","amount":0.029385,"disclosure":"aggregated"},
+        {"label":"Receitas Publicidades","category":"sponsorship_commercial","amount":0.263119,"disclosure":"aggregated"},
+        {"label":"Demais Receitas","category":"other_income","amount":0.893194,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento Profissional","category":"lump_football_operations_expense","amount":-15.124972,"disclosure":"aggregated"},
+        {"label":"Departamento Amador","category":"youth_other_sports_expense","amount":-2.60462,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-0.860398,"disclosure":"aggregated"},
+        {"label":"Departamento de Marketing e Comercial","category":"admin_general_expense","amount":-0.510526,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimonio","category":"admin_general_expense","amount":-3.953431,"disclosure":"aggregated"},
+        {"label":"Departamento Jurídico","category":"admin_general_expense","amount":-1.099762,"disclosure":"aggregated"},
+        {"label":"Departamento Loja - Tigre Maniacos","category":"other_expenses","amount":-0.093578,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.268364,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.412444,"tax":0,"gross_debt":9.241157,"cash":0.37382},
+      "official_totals": {"revenue":25.964039,"expenses":24.515651,"net_result":0.035944},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-1.541219},{"label":"Receitas Financeiras","amount":0.128775}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Profissional",
+            "side": "expense",
+            "amount": 15.124972,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-balanco-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2017-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão televisíveis","category":"broadcasting","amount":7.070872,"disclosure":"aggregated"},
+        {"label":"Receita com mensalidade de sócios","category":"member_dues","amount":4.047471,"disclosure":"aggregated"},
+        {"label":"Receita com Patrocínios","category":"sponsorship_commercial","amount":2.089015,"disclosure":"aggregated"},
+        {"label":"Receita de mecanismo de solidariedade","category":"player_sales","amount":0.459719,"disclosure":"aggregated"},
+        {"label":"Repasse de direitos federativos","category":"player_sales","amount":1.664904,"disclosure":"aggregated"},
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.30484,"disclosure":"aggregated"},
+        {"label":"Receitas de royalties","category":"sponsorship_commercial","amount":0.028741,"disclosure":"aggregated"},
+        {"label":"Receitas Publicidades","category":"sponsorship_commercial","amount":0.285287,"disclosure":"aggregated"},
+        {"label":"Demais Receitas","category":"other_income","amount":1.434918,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento Profissional","category":"lump_football_operations_expense","amount":-14.332058,"disclosure":"aggregated"},
+        {"label":"Departamento Amador","category":"youth_other_sports_expense","amount":-2.429934,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-0.683967,"disclosure":"aggregated"},
+        {"label":"Departamento de Marketing e Comercial","category":"admin_general_expense","amount":-0.527402,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimonio","category":"admin_general_expense","amount":-3.985009,"disclosure":"aggregated"},
+        {"label":"Departamento Juridico","category":"admin_general_expense","amount":-2.673868,"disclosure":"aggregated"},
+        {"label":"Departamento Loja - Tigre Maniacos","category":"other_expenses","amount":-0.160993,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.381374,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.4869,"tax":0,"gross_debt":13.905384,"cash":0.219693},
+      "official_totals": {"revenue":17.385767,"expenses":25.174605,"net_result":-9.275738},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-1.50713},{"label":"Receitas Financeiras","amount":0.02023}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Profissional",
+            "side": "expense",
+            "amount": 14.332058,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-balanco-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2018-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão televisíveis","category":"broadcasting","amount":7.825593,"disclosure":"aggregated"},
+        {"label":"Receita com mensalidades de sócios","category":"member_dues","amount":3.601009,"disclosure":"aggregated"},
+        {"label":"Receita com patrocínios","category":"sponsorship_commercial","amount":2.407857,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"other_income","amount":0.536091,"disclosure":"aggregated"},
+        {"label":"Receita com negociação de atletas","category":"player_sales","amount":12.8675,"disclosure":"aggregated"},
+        {"label":"Receita com jogos","category":"matchday_competition","amount":0.518477,"disclosure":"aggregated"},
+        {"label":"Receita Loteria Esportiva/Timemania","category":"other_income","amount":0.250696,"disclosure":"aggregated"},
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.2845,"disclosure":"aggregated"},
+        {"label":"Receitas de royalties","category":"sponsorship_commercial","amount":0.018349,"disclosure":"aggregated"},
+        {"label":"Receitas de publicidades","category":"sponsorship_commercial","amount":0.208933,"disclosure":"aggregated"},
+        {"label":"Demais Receitas","category":"other_income","amount":0.393393,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento Futebol Profissional","category":"lump_football_operations_expense","amount":-12.83884,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol de Base","category":"youth_other_sports_expense","amount":-2.586197,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-1.068598,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimônio","category":"admin_general_expense","amount":-3.970588,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.466372,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.568893,"tax":0,"gross_debt":7.808872,"cash":0.105529},
+      "official_totals": {"revenue":28.912398,"expenses":20.930595,"net_result":6.412915},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-1.584498},{"label":"Receitas Financeiras","amount":0.015605}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Futebol Profissional",
+            "side": "expense",
+            "amount": 12.83884,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-balanco-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2019-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão","category":"broadcasting","amount":10.799073,"disclosure":"aggregated"},
+        {"label":"Receita com sócios","category":"member_dues","amount":3.003071,"disclosure":"aggregated"},
+        {"label":"Receita com patrocínios","category":"sponsorship_commercial","amount":1.264179,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"other_income","amount":1.417122,"disclosure":"aggregated"},
+        {"label":"Receita com negociação de atletas","category":"player_sales","amount":7.58,"disclosure":"aggregated"},
+        {"label":"Receita com jogos","category":"matchday_competition","amount":0.73129,"disclosure":"aggregated"},
+        {"label":"Demais Receitas","category":"other_income","amount":1.344944,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento Futebol Profissional","category":"lump_football_operations_expense","amount":-16.888461,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol de Base","category":"youth_other_sports_expense","amount":-1.999967,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-1.519791,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimônio","category":"admin_general_expense","amount":-3.465363,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.825209,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.393215,"tax":0,"gross_debt":9.208141,"cash":0.259982},
+      "official_totals": {"revenue":26.139679,"expenses":24.698791,"net_result":0.047673},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-1.421762},{"label":"Receitas Financeiras","amount":0.028547}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Futebol Profissional",
+            "side": "expense",
+            "amount": 16.888461,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-balanco-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2020-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão","category":"broadcasting","amount":2.390861,"disclosure":"aggregated"},
+        {"label":"Receita com sócios","category":"member_dues","amount":1.804347,"disclosure":"aggregated"},
+        {"label":"Receita com patrocínios","category":"sponsorship_commercial","amount":0.501123,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"other_income","amount":0.449258,"disclosure":"aggregated"},
+        {"label":"Receita com negociação de atletas","category":"player_sales","amount":7.895414,"disclosure":"aggregated"},
+        {"label":"Receita com jogos","category":"matchday_competition","amount":0.090646,"disclosure":"aggregated"},
+        {"label":"Demais Receitas","category":"other_income","amount":0.69758,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento Futebol Profissional","category":"lump_football_operations_expense","amount":-7.582374,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol de Base","category":"youth_other_sports_expense","amount":-0.962244,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-1.059948,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimônio","category":"admin_general_expense","amount":-2.959021,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.05808,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.496593,"tax":0,"gross_debt":8.178546,"cash":0.016676},
+      "official_totals": {"revenue":13.829229,"expenses":12.621667,"net_result":0.710969},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-0.513598},{"label":"Receitas Financeiras","amount":0.017005}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Futebol Profissional",
+            "side": "expense",
+            "amount": 7.582374,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-demonstrativo-financeiro-2021",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2021-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão","category":"broadcasting","amount":7.707719,"disclosure":"aggregated"},
+        {"label":"Receita com sócios","category":"member_dues","amount":1.721452,"disclosure":"aggregated"},
+        {"label":"Receita com patrocínios","category":"sponsorship_commercial","amount":1.885235,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"other_income","amount":0.342203,"disclosure":"aggregated"},
+        {"label":"Receita com negociação de atletas","category":"player_sales","amount":0.227584,"disclosure":"aggregated"},
+        {"label":"Receita com jogos","category":"matchday_competition","amount":0.15963,"disclosure":"aggregated"},
+        {"label":"Reversão contingências – Termo de Rescisão Parcial GA","category":"other_income","amount":2.390899,"disclosure":"aggregated"},
+        {"label":"Demais Receitas","category":"other_income","amount":0.851256,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento Futebol Profissional","category":"lump_football_operations_expense","amount":-11.524382,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol de Base","category":"youth_other_sports_expense","amount":-1.628007,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol Feminino","category":"youth_other_sports_expense","amount":-0.306311,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-1.246346,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimônio","category":"admin_general_expense","amount":-2.960509,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.357685,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.270722,"tax":0,"gross_debt":11.552238,"cash":0.490819},
+      "official_totals": {"revenue":15.285978,"expenses":18.02324,"net_result":-3.007985},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-0.292431},{"label":"Receitas Financeiras","amount":0.021709}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Futebol Profissional",
+            "side": "expense",
+            "amount": 11.524382,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-demonstracoes-financeiras-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2022-12-31"},
+      "revenue": [
+        {"label":"RECEITA OPERACIONAL BRUTA","category":"lump_football_operations","amount":27.268558,"disclosure":"aggregated"},
+        {"label":"Outras receitas Operacionais","category":"other_income","amount":0.032222,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento Futebol Profissional","category":"lump_football_operations_expense","amount":-15.977814,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol de Base","category":"youth_other_sports_expense","amount":-1.902868,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol Feminino","category":"youth_other_sports_expense","amount":-0.263722,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-1.385459,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimônio","category":"admin_general_expense","amount":-3.584477,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.708285,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.207001,"tax":0,"gross_debt":1.795754,"cash":0.327636},
+      "official_totals": {"revenue":27.30078,"expenses":23.822625,"net_result":2.271155},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-1.251577},{"label":"Receitas Financeiras","amount":0.044576}],
+        "no_breakdown": [
+          {"line":"RECEITA OPERACIONAL BRUTA","side":"revenue","amount":27.268558,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Departamento Futebol Profissional",
+            "side": "expense",
+            "amount": 15.977814,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ],
+        "included_in": {
+          "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-relatorio-de-balanco-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2023-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão","category":"broadcasting","amount":14.011212,"disclosure":"aggregated"},
+        {"label":"Receita com sócios","category":"member_dues","amount":15.373894,"disclosure":"aggregated"},
+        {"label":"Receita com patrocínios","category":"sponsorship_commercial","amount":4.1016,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"other_income","amount":0.51435,"disclosure":"aggregated"},
+        {"label":"Receita com negociação de atletas","category":"player_sales","amount":0.461839,"disclosure":"aggregated"},
+        {"label":"Receita com jogos","category":"matchday_competition","amount":0.920438,"disclosure":"aggregated"},
+        {"label":"Receita com licenciamento – royalties","category":"sponsorship_commercial","amount":1.1579,"disclosure":"aggregated"},
+        {"label":"Receita Timemania - CEF","category":"other_income","amount":0.754578,"disclosure":"aggregated"},
+        {"label":"Demais Receitas","category":"other_income","amount":2.196626,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Receita Direitos Condomínio LFU","category":"exceptional_items","amount":62.25,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol Profissional","category":"lump_football_operations_expense","amount":-31.244024,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol de Base","category":"youth_other_sports_expense","amount":-3.123933,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol Feminino","category":"youth_other_sports_expense","amount":-0.457627,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-3.010359,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimônio","category":"admin_general_expense","amount":-4.220841,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.746126,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.753074,"tax":0,"gross_debt":0,"cash":3.873385},
+      "official_totals": {"revenue":39.492437,"expenses":42.80291,"net_result":57.186452},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-1.906375},{"label":"Receitas Financeiras","amount":0.153301}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Futebol Profissional",
+            "side": "expense",
+            "amount": 31.244024,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-relatorio-de-balanco-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2024-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão","category":"broadcasting","amount":60.386671,"disclosure":"aggregated"},
+        {"label":"Receita com sócios","category":"member_dues","amount":20.169677,"disclosure":"aggregated"},
+        {"label":"Receita com patrocínios","category":"sponsorship_commercial","amount":10.039129,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"other_income","amount":0.529636,"disclosure":"aggregated"},
+        {"label":"Receita com negociação de atletas","category":"player_sales","amount":1.947359,"disclosure":"aggregated"},
+        {"label":"Receita com jogos","category":"matchday_competition","amount":2.967683,"disclosure":"aggregated"},
+        {"label":"Receita com licenciamento – royalties","category":"sponsorship_commercial","amount":1.204296,"disclosure":"aggregated"},
+        {"label":"Receita Timemania - CEF","category":"other_income","amount":0.695093,"disclosure":"aggregated"},
+        {"label":"Demais Receitas","category":"other_income","amount":3.033903,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Receita Direitos Condomínio LFU","category":"exceptional_items","amount":-31.125,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol Profissional","category":"lump_football_operations_expense","amount":-77.261712,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol de Base","category":"youth_other_sports_expense","amount":-3.250239,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol Feminino","category":"youth_other_sports_expense","amount":-0.717369,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-4.054096,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimônio","category":"admin_general_expense","amount":-8.859302,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-3.441472,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.259387,"tax":0,"gross_debt":0,"cash":20.047502},
+      "official_totals": {"revenue":100.973447,"expenses":97.58419,"net_result":-28.995129},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-2.161965},{"label":"Receitas Financeiras","amount":0.902578}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Futebol Profissional",
+            "side": "expense",
+            "amount": 77.261712,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "criciuma-br-relatorio-auditoria-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Receita com transmissão","category":"broadcasting","amount":19.562719,"disclosure":"aggregated"},
+        {"label":"Receita com sócios","category":"member_dues","amount":17.899329,"disclosure":"aggregated"},
+        {"label":"Receita com patrocínios","category":"sponsorship_commercial","amount":5.707084,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"other_income","amount":0.978593,"disclosure":"aggregated"},
+        {"label":"Receita com negociação de atletas","category":"player_sales","amount":6.3372,"disclosure":"aggregated"},
+        {"label":"Receita com jogos","category":"matchday_competition","amount":0.966982,"disclosure":"aggregated"},
+        {"label":"Receita com licenciamento – royalties","category":"sponsorship_commercial","amount":0.796536,"disclosure":"aggregated"},
+        {"label":"Receita Timemania - CEF","category":"other_income","amount":1.014457,"disclosure":"aggregated"},
+        {"label":"Demais Receitas","category":"other_income","amount":3.017633,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Departamento Futebol Profissional","category":"lump_football_operations_expense","amount":-64.178298,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol de Base","category":"youth_other_sports_expense","amount":-4.487895,"disclosure":"aggregated"},
+        {"label":"Departamento Futebol Feminino","category":"youth_other_sports_expense","amount":-0.920625,"disclosure":"aggregated"},
+        {"label":"Departamento Administrativo","category":"admin_general_expense","amount":-3.036331,"disclosure":"aggregated"},
+        {"label":"Departamento de Patrimônio","category":"admin_general_expense","amount":-6.960257,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-1.338729,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.66147,"tax":0,"gross_debt":0,"cash":0.649355},
+      "official_totals": {"revenue":56.280533,"expenses":80.922135,"net_result":-25.303073},
+      "adjustments": {
+        "extra_rows": [{"label":"Despesas Financeiras","amount":-1.878701},{"label":"Receitas Financeiras","amount":1.217231}],
+        "no_breakdown": [
+          {
+            "line": "Departamento Futebol Profissional",
+            "side": "expense",
+            "amount": 64.178298,
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+          }
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

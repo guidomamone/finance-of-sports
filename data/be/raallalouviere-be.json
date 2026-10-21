@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "raallalouviere-be",
+    "name": "RAAL La Louvière SC",
+    "display_name": "RAAL La Louvière",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "raallalouviere-be-wf-2024-2025-2677fac4",
+      "club_id": "raallalouviere-be",
+      "title": "RAAL La Louvière SC — wf-2024-2025-2677fac4 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "raallalouviere-be-jaarrekening-2018-06-30-individual",
+      "club_id": "raallalouviere-be",
+      "title": "RAAL La Louvière SC — jaarrekening-2018-06-30-individual (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Primer ejercicio de la sociedad: del 12/05/2017 al 30/06/2018 (14 meses)."
+    },
+    {
+      "id": "raallalouviere-be-jaarrekening-2019-06-30-individual",
+      "club_id": "raallalouviere-be",
+      "title": "RAAL La Louvière SC — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "raallalouviere-be-jaarrekening-2021-06-30-individual",
+      "club_id": "raallalouviere-be",
+      "title": "RAAL La Louvière SC — jaarrekening-2021-06-30-individual (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "raallalouviere-be-jaarrekening-2022-06-30-individual",
+      "club_id": "raallalouviere-be",
+      "title": "RAAL La Louvière SC — jaarrekening-2022-06-30-individual (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "raallalouviere-be-jaarrekening-2023-06-30-individual",
+      "club_id": "raallalouviere-be",
+      "title": "RAAL La Louvière SC — jaarrekening-2023-06-30-individual (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "raallalouviere-be-jaarrekening-2024-06-30-individual",
+      "club_id": "raallalouviere-be",
+      "title": "RAAL La Louvière SC — jaarrekening-2024-06-30-individual (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-06-30",
+      "currency": "EUR",
+      "source_id": "raallalouviere-be-jaarrekening-2018-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2018-06-30"},
+      "revenue": [{"label":"Marge brute d'exploitation","category":"lump_football_operations","amount":0.430494,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-0.578307,"disclosure":"aggregated"},
+        {
+          "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "category": "depreciation",
+          "amount": -0.086931,
+          "disclosure": "aggregated"
+        },
+        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.002507,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.001578,"tax":-0.000178,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.430494,"expenses":0.667745,"net_result":-0.239007},
+      "adjustments": {
+        "extra_rows": [{"label":"Charges financières récurrentes","amount":-0.001578},{"label":"Impôts sur le résultat","amount":-0.000178}],
+        "no_breakdown": [
+          {
+            "line": "Marge brute d'exploitation",
+            "side": "revenue",
+            "amount": 0.430494,
+            "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "raallalouviere-be-jaarrekening-2019-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [{"label":"Marge brute d'exploitation","category":"lump_football_operations","amount":0.496957,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-0.518027,"disclosure":"aggregated"},
+        {
+          "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "category": "depreciation",
+          "amount": -0.157759,
+          "disclosure": "aggregated"
+        },
+        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.004676,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.006669,"tax":0.000047,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.496957,"expenses":0.680462,"net_result":-0.190128},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Produits financiers récurrents","amount":0.000005},
+          {"label":"Charges financières récurrentes","amount":-0.006674},
+          {"label":"Impôts sur le résultat","amount":0.000047}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Marge brute d'exploitation",
+            "side": "revenue",
+            "amount": 0.496957,
+            "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "raallalouviere-be-jaarrekening-2021-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [{"label":"Marge brute","category":"lump_football_operations","amount":0.480032,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-0.306132,"disclosure":"aggregated"},
+        {
+          "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "category": "depreciation",
+          "amount": -0.104875,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+          "category": "exceptional_items",
+          "amount": -0.03,
+          "disclosure": "aggregated"
+        },
+        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.055883,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.012096,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.480032,"expenses":0.46689,"net_result":-0.028954},
+      "adjustments": {
+        "extra_rows": [{"label":"Produits financiers récurrents","amount":0.000001},{"label":"Charges financières récurrentes","amount":-0.012097}],
+        "no_breakdown": [
+          {
+            "line": "Marge brute",
+            "side": "revenue",
+            "amount": 0.480032,
+            "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "raallalouviere-be-jaarrekening-2022-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [{"label":"Marge brute","category":"lump_football_operations","amount":0.836649,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-0.772848,"disclosure":"aggregated"},
+        {
+          "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "category": "depreciation",
+          "amount": -0.105582,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+          "category": "other_expenses",
+          "amount": 0.044386,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+          "category": "exceptional_items",
+          "amount": 0.003,
+          "disclosure": "aggregated"
+        },
+        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.005082,"disclosure":"aggregated"},
+        {"label":"Charges d'exploitation non récurrentes","category":"exceptional_items","amount":-0.123236,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.016968,"tax":-0.003753,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.836649,"expenses":0.836649,"net_result":-0.143433},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Produits financiers récurrents","amount":0.000002},
+          {"label":"Charges financières récurrentes","amount":-0.01697},
+          {"label":"Impôts sur le résultat","amount":-0.003753}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Marge brute",
+            "side": "revenue",
+            "amount": 0.836649,
+            "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "raallalouviere-be-jaarrekening-2023-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [{"label":"Marge brute","category":"lump_football_operations","amount":1.098287,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-1.479328,"disclosure":"aggregated"},
+        {
+          "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "category": "depreciation",
+          "amount": -0.076505,
+          "disclosure": "aggregated"
+        },
+        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.03234,"disclosure":"aggregated"},
+        {"label":"Charges d'exploitation non récurrentes","category":"exceptional_items","amount":-0.003702,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.018068,"tax":-0.000709,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.098287,"expenses":1.591875,"net_result":-0.512364},
+      "adjustments": {
+        "extra_rows": [{"label":"Charges financières récurrentes","amount":-0.018068},{"label":"Impôts sur le résultat","amount":-0.000709}],
+        "no_breakdown": [
+          {
+            "line": "Marge brute",
+            "side": "revenue",
+            "amount": 1.098287,
+            "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "raallalouviere-be-jaarrekening-2024-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [{"label":"Marge brute","category":"lump_football_operations","amount":1.045134,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-1.912837,"disclosure":"aggregated"},
+        {
+          "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "category": "depreciation",
+          "amount": -0.090519,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+          "category": "other_expenses",
+          "amount": -0.010642,
+          "disclosure": "aggregated"
+        },
+        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.007208,"disclosure":"aggregated"},
+        {"label":"Charges d'exploitation non récurrentes","category":"exceptional_items","amount":-0.001182,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.022726,"tax":-0.001974,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.045134,"expenses":2.022388,"net_result":-1.001954},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Produits financiers récurrents","amount":0.000284},
+          {"label":"Charges financières récurrentes","amount":-0.02301},
+          {"label":"Impôts sur le résultat","amount":-0.001974}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Marge brute",
+            "side": "revenue",
+            "amount": 1.045134,
+            "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "raallalouviere-be-wf-2024-2025-2677fac4",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Chiffre d'affaires","category":"lump_football_operations","amount":4.615173,"disclosure":"aggregated"},
+        {"label":"Autres produits d'exploitation","category":"other_income","amount":1.536293,"disclosure":"aggregated"},
+        {"label":"Produits d'exploitation non récurrents","category":"other_income","amount":0.145299,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Achats","category":"other_expenses","amount":-0.511554,"disclosure":"aggregated"},
+        {"label":"Stocks: réduction (augmentation)","category":"other_expenses","amount":-0.013739,"disclosure":"aggregated"},
+        {"label":"Services et biens divers","category":"other_expenses","amount":-3.72582,"disclosure":"aggregated"},
+        {"label":"Rémunérations, charges sociales et pensions","category":"wages_squad","amount":-3.535934,"disclosure":"aggregated"},
+        {
+          "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "category": "depreciation",
+          "amount": -0.558871,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+          "category": "other_expenses",
+          "amount": -0.017902,
+          "disclosure": "aggregated"
+        },
+        {"label":"Autres charges d'exploitation","category":"other_expenses","amount":-0.09718,"disclosure":"aggregated"},
+        {"label":"Charges d'exploitation non récurrentes","category":"exceptional_items","amount":-0.003193,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.029283,"tax":-0.010503,"gross_debt":null,"cash":1.630864},
+      "official_totals": {"revenue":6.296765,"expenses":8.464193,"net_result":-2.148648},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Autres produits financiers","amount":0.120161},
+          {"label":"Autres charges financières","amount":-0.090878},
+          {"label":"Impôts","amount":-0.010503}
+        ],
+        "no_breakdown": [{"line":"Chiffre d'affaires","side":"revenue","amount":4.615173,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

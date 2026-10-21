@@ -70,7 +70,7 @@ const EXPENSE_CATEGORY_LABELS = {
 // Mapa de rubros reales -> categorías normalizadas de algunos clubes cargados a mano (referencia; las líneas de cada club ya traen su
 // normalizedCategory en su data file).
 const categoryMapByClub = {
-  boca: {
+  'boca-ar': {
     revenue: {
       cuotasSociales: 'member_dues',
       comerciales: 'sponsorship_commercial',

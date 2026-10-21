@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "oficrete-gr",
+    "name": "Omilos Filathlon Irakleiou P.A.E. OFI 1925",
+    "display_name": "OFI Crete",
+    "country": "GR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "oficrete-gr-ofi-income-stmt-2018-06-30",
+      "club_id": "oficrete-gr",
+      "title": "Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_income_stmt_2018-06-30 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "oficrete-gr-ofi-income-stmt-2019-06-30",
+      "club_id": "oficrete-gr",
+      "title": "Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_income_stmt_2019-06-30 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "oficrete-gr-ofi-income-stmt-2021-06-30",
+      "club_id": "oficrete-gr",
+      "title": "Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_income_stmt_2021-06-30 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "oficrete-gr-ofi-income-stmt-2022-06-30",
+      "club_id": "oficrete-gr",
+      "title": "Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_income_stmt_2022-06-30 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "oficrete-gr-ofi-income-stmt-2023-06-30",
+      "club_id": "oficrete-gr",
+      "title": "Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_income_stmt_2023-06-30 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "oficrete-gr-ofi-income-stmt-2024-06-30",
+      "club_id": "oficrete-gr",
+      "title": "Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_income_stmt_2024-06-30 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "oficrete-gr-ofi-fs-2025-06-30",
+      "club_id": "oficrete-gr",
+      "title": "Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_FS_2025-06-30 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "oficrete-gr-ofi-notes-2020-06-30",
+      "club_id": "oficrete-gr",
+      "title": "Omilos Filathlon Irakleiou P.A.E. OFI 1925 — OFI_notes_2020-06-30 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-06-30",
+      "currency": "EUR",
+      "source_id": "oficrete-gr-ofi-income-stmt-2018-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2018-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":0.527893,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":0.122035,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.080266,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-1.577619,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.095472,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.079767,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.211419,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.00358,"tax":0,"gross_debt":0,"cash":0.060826},
+      "official_totals": {"revenue":0.730194,"expenses":1.964276,"net_result":-1.237662},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.00358},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.527893,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 1.577619,
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "oficrete-gr-ofi-income-stmt-2019-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":1.399917,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":0.691068,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.122073,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-4.84361,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.350335,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.264951,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.26288,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.006121,"tax":0,"gross_debt":0,"cash":0.084684},
+      "official_totals": {"revenue":2.213058,"expenses":5.721776,"net_result":-3.51484},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.006121},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.399917,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 4.84361,
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "oficrete-gr-ofi-notes-2020-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":1.835448,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":1.370515,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.08065,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-5.125907,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.371575,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.215003,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.175841,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01138,"tax":0,"gross_debt":0,"cash":0.100497},
+      "official_totals": {"revenue":3.286613,"expenses":5.888327,"net_result":-2.613093},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.01138},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.835448,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 5.125907,
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "oficrete-gr-ofi-income-stmt-2021-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":2.692727,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":1.675372,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":1.692773,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-5.629152,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.287954,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.364203,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.396806,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.006328,"tax":0,"gross_debt":0,"cash":0.761742},
+      "official_totals": {"revenue":6.060872,"expenses":6.678115,"net_result":-0.623572},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.006328},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.692727,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 5.629152,
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "oficrete-gr-ofi-income-stmt-2022-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":5.064441,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":0.451177,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.323081,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-7.325795,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.446556,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.403304,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.061514,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01537,"tax":0,"gross_debt":0,"cash":0.279353},
+      "official_totals": {"revenue":5.838699,"expenses":8.237169,"net_result":-2.41384},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.01537},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":5.064441,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 7.325795,
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "oficrete-gr-ofi-income-stmt-2023-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":4.726105,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":1.94002,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.041469,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-7.782646,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.535392,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.450902,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.52811,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.020562,"tax":0,"gross_debt":0,"cash":0.247006},
+      "official_totals": {"revenue":6.707594,"expenses":9.297048,"net_result":-2.610017},
+      "adjustments": {
+        "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.020562},{"label":"Φόροι εισοδήματος","amount":0}],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":4.726105,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 7.782646,
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "oficrete-gr-ofi-income-stmt-2024-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":4.019073,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.149271,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.039355,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-7.852901,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.585664,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.640947,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.499968,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.086109,"tax":0,"gross_debt":0,"cash":0.396045},
+      "official_totals": {"revenue":6.207699,"expenses":9.57948,"net_result":-3.45789},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.086109},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":4.019073,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 7.852901,
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "oficrete-gr-ofi-fs-2025-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":5.33344,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.538213,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.31608,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-8.199058,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.659694,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.565452,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημίες","category":"other_expenses","amount":-0.161311,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.016748,"tax":0,"gross_debt":0,"cash":0.382833},
+      "official_totals": {"revenue":8.187733,"expenses":9.585516,"net_result":-1.41453},
+      "adjustments": {
+        "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.016748},{"label":"Φόροι εισοδήματος","amount":0}],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":5.33344,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 8.199058,
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+          }
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

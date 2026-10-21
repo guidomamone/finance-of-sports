@@ -19,7 +19,11 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   data/<país>/<club>-data.js, ninguno inline acá. Desde la Versión 238, el CSS tampoco
   vive acá: está en css/styles.css, referenciado con un <link> que lleva el
   mismo `?v=` que los <script src> propios.
-- data/<país>/<clubId>-data.js: un archivo por club, en la carpeta de su país (código ISO de `clubs[clubId].country` en
+- data/<país>/<clubId>.json: LA FUENTE de los datos de un club (to-do 245, fase 2): el esquema, `schema_version`, la unidad (millones de la moneda del
+  club) y los nombres de campo en inglés están en `Admin/mediciones/245-esquema.md` y `data/schema/club-v1.json`. Se publica como dato abierto. Las tools
+  de carga lo leen y escriben con `tools/club-json.mjs` (`modificarClub`), que lo valida y regenera el data file; `tools/generar-data.mjs` lo hace a mano
+  (`--check` lo vigila, `audit.js` lo corre).
+- data/<país>/<clubId>-data.js: GENERADO desde ese JSON (no se edita), un archivo por club, en la carpeta de su país (código ISO de `clubs[clubId].country` en
   minúscula, igual que `data/club-leagues/` y `data/gestiones/`). El sitio arma la ruta en `loadClubData()`; las tools, SOLO con
   `tools/data-clubes.js` (`rutaData(clubId)`, `archivosData()`, `idDeArchivo()`): ninguna tool arma esa ruta a mano.
 - ASSET_V (`window.ASSET_V`, declarado en un `<script>` inline en index.html
@@ -83,7 +87,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   tenga su data/rankings/<liga>.js correspondiente (`destacado-sin-ranking`,
   P1), para que un club borrado o una membresía que cambia no deje un
   ranking de 1 en la portada sin avisar.
-- data/ar/river-data.js, data/ar/racing-data.js: datos de esos dos clubes
+- data/ar/river-ar-data.js, data/ar/racing-ar-data.js: datos de esos dos clubes
   (ingresos/gastos por línea, resultados deportivos, títulos). Sin comentarios (los data files no los llevan,
   `Admin/CONVENCIONES-DATOS.md`): qué es real y qué es placeholder está en `Admin/ESTADO-clubes.md` y en `Admin/carga-clubes/<club>.md`.
 - js/selector.js: ELEGIR Y COMPARAR, que desde la Versión 152 son lo mismo y
@@ -196,7 +200,7 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versió
   normalizedCategory, amountNative, disclosureLevel} (revenueLinesByYear/
   expenseLinesByYear, ver data/<país>/<club>-data.js), porque cada club reporta una
   cantidad distinta de rubros reales. Boca ya NO tiene un yearsRaw{}/computeYear()
-  propio (migración completa: ver la evidencia en Admin/carga-clubes/boca.md para
+  propio (migración completa: ver la evidencia en Admin/carga-clubes/boca-ar.md para
   el detalle de cómo se reconcilió su balance 2025, que hasta esa migración vivía
   en DOS estructuras paralelas sin cruzar entre sí). Estas funciones alimentan los
   KPIs de arriba de Finanzas, los gráficos, "Comparar Gestiones" y verifyTieOuts().
@@ -260,18 +264,18 @@ Los colores de marca, el chequeo contra el escudo y la liga de cada temporada de
 **"Ya generalizado" no siempre significó "genérico para cualquier `clubId`"**: hasta que se
 onboardeó el primer club nuevo desde que existe este motor genérico (Vélez Sarsfield), varias
 funciones que parecían genéricas en realidad tenían un ternario de 2 ramas hardcodeado
-(`clubId === 'river' ? X : Y`). Casi una decena de funciones (`computeYearGeneric`, `yearMetaFor`,
+(`clubId === 'river-ar' ? X : Y`). Casi una decena de funciones (`computeYearGeneric`, `yearMetaFor`,
 `reportTypeForYear`, `allYearsRangeForClub`, `presupuestoOverlayFor` en `js/finanzas-calc.js`;
 `drawTrendChartGeneric`, `populateFinanzasSelectors`, `renderDataQualityBannerForCurrentSelection`
 en `js/finanzas-render.js`; `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub` en
 `index.html`) tuvieron que pasar de 2 a 3 ramas antes de que Vélez funcionara. **Si agregás un club
-nuevo al motor genérico, buscá TODAS las ocurrencias de `'river'` Y `'racing'` como string literal en
+nuevo al motor genérico, buscá TODAS las ocurrencias de `'river-ar'` Y `'racing-ar'` como string literal en
 `js/finanzas-calc.js`/`js/finanzas-render.js`/`index.html` ANTES de asumir que "ya es genérico" —
 esta lista de 9 funciones puede no ser exhaustiva la próxima vez tampoco, volvé a buscar en vez de
 confiar en esta lista.**
 
 Estas piezas de index.html YA están escritas para funcionar con cualquier club, no solo Boca.
-Buscalas y reusalas antes de escribir un `if(clubId === 'racing')` nuevo:
+Buscalas y reusalas antes de escribir un `if(clubId === 'racing-ar')` nuevo:
 
 - **`yearMetaFor(clubId, year)`**: el único lugar que decide en qué moneda está guardado un
   ejercicio y con qué tipo de cambio convertirlo, para CUALQUIER club. Internamente delega a
@@ -313,8 +317,8 @@ Hasta que `index.html` se separó en archivos por club, todos los datos vivían 
 Boca. Lo que sigue es la estructura VIGENTE desde el día uno para cualquier club nuevo, no una
 limpieza de una sola vez:
 
-- **Datos del club, en su propio `data/<país>/<club>-data.js`.** Mismo patrón que ya tienen
-  `data/ar/river-data.js`/`data/ar/racing-data.js`/`data/ar/boca-data.js`: `<club>RevenueLinesByYear`,
+- **Datos del club, en su propio `data/<país>/<club>.json` (fuente) y su `-data.js` generado.** El generador emite el patrón que ya tienen
+  `data/ar/river-ar-data.js`/`data/ar/racing-ar-data.js`/`data/ar/boca-ar-data.js`: `<club>RevenueLinesByYear`,
   `<club>ExpenseLinesByYear`, `<club>FiscalYearMeta`, `<club>PasesData`, `<club>ResultadosData`,
   `<club>TitulosData`. NUNCA pegues los datos de un club nuevo inline en el `<script>` de
   index.html, ni en `js/finanzas-calc.js`/`js/finanzas-render.js` (esos dos archivos son solo
@@ -336,7 +340,7 @@ limpieza de una sola vez:
   `REVENUE_CATEGORIES`/`EXPENSE_CATEGORIES` y sus `_LABELS` en `category-map.js` EN LA MISMA
   sesión en la que la usás por primera vez, no lo dejes para después: `category-map.js` quedó
   desincronizado varias versiones porque nadie sumó a tiempo `player_sales` (usado en
-  `racing-data.js` desde temprano) a `REVENUE_CATEGORIES`/`REVENUE_CATEGORY_LABELS` — simplemente
+  `racing-ar-data.js` desde temprano) a `REVENUE_CATEGORIES`/`REVENUE_CATEGORY_LABELS` — simplemente
   nadie lo agregó en el momento. Si además agregás la categoría a
   `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` (en `js/finanzas-calc.js`), usá el nombre
   nuevo directo, sin dejar un alias del nombre viejo/temporal que probaste primero.
@@ -374,17 +378,15 @@ limpieza de una sola vez:
      todavía no se pidió, a diferencia de todo lo del punto 1c.
 
      **`brandColor`**: el procedimiento para un club nuevo está en `.claude/skills/club-or-year-onboarding/club-nuevo.md` (sección "Color de marca").
-  1c. `sources{}`/`gestionesByClub{}`/`memberCountByClub{}` NO se tocan en `data/clubs.js` — se
-     autoregistran al final de tu propio `data/<país>/<club>-data.js`, mismo momento que el registro en
-     `CLUB_GENERIC_DATA` (punto 2 de abajo), copiando el patrón de cualquier club ya cargado como
-     plantilla:
+  1c. `sources{}`/`gestionesByClub{}`/`memberCountByClub{}` NO se tocan en `data/clubs.js` (Boca incluida): en el JSON del club son `sources[]`,
+     `management[]` y `members`, y el generador (`tools/generar-data.mjs`) emite al final de su `data/<país>/<club>-data.js`, junto al registro en
+     `CLUB_GENERIC_DATA` (punto 2 de abajo):
      ```js
      Object.assign(sources, { '<club>-fuente-1': {...}, '<club>-fuente-2': {...} });
-     gestionesByClub.<club> = { <gestionId>: { nombre:'...', firstYear:..., lastYear:... } };
-     memberCountByClub.<club> = <número o null>;
+     gestionesByClub['<club>'] = { <gestionId>: { nombre:'...', firstYear:..., lastYear:... } };
+     memberCountByClub['<club>'] = <número o null>;
      ```
-     Nunca redeclares estos 3 con `const` (ya existen, declarados una sola vez en `data/clubs.js`
-     con Boca adentro) — solo asignales una propiedad nueva o hacé `Object.assign`. Esto es seguro
+     Los 3 están declarados una sola vez en `data/clubs.js` (vacíos) y los data files solo les asignan una propiedad o hacen `Object.assign`. Esto es seguro
      porque los 3 solo se LEEN para el club actualmente elegido (después de que su propio archivo ya
      cargó), a diferencia de `clubs{}` (punto 1b), que hace falta para TODOS los clubes desde el
      arranque.
@@ -418,7 +420,7 @@ limpieza de una sola vez:
   eso lee la variable global del club que el visitante NO eligió, que puede no estar cargada
   todavía, y tira `ReferenceError` (pasó en `drawTrendChartGeneric`/`populateFinanzasSelectors`, con
   `{ river: riverFiscalYearMeta, racing: racingFiscalYearMeta }`). Usá siempre un ternario
-  (`clubId === 'river' ? riverX : clubId === 'racing' ? racingX : <club>X`) o una función que reciba
+  (`clubId === 'river-ar' ? riverX : clubId === 'racing-ar' ? racingX : <club>X`) o una función que reciba
   `clubId` y solo lea el global adentro (como `pasesDataForClub`, punto 2 arriba): las dos formas
   solo evalúan la rama que efectivamente hace falta, nunca las otras. Si al agregar un club nuevo
   encontrás un objeto de este tipo en el código (buscá `river:` seguido de `racing:` en la misma
@@ -507,12 +509,13 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
 
 - CONVENCIÓN DE ARCHIVOS: un club = un `data/<país>/<clubId>-data.js`, cargado bajo
   demanda por `loadClubData(clubId)` armando el path por convención. Onboardear un
-  club NO requiere tocar `index.html`: alcanza con el `data/*.js` nuevo y su
+  club NO requiere tocar `index.html`: alcanza con el JSON nuevo (`alta-club.mjs` lo crea y genera su `-data.js`) y su
   entrada en `data/clubs.js`, más correr `node tools/generate-club-index.js`.
-  DESDE LA VERSIÓN 129, el `clubId` de un club NUEVO lleva el país al final
-  (`nacional-uy`), porque el id nombra el archivo y prefija cada `sourceId`. Los
-  41 de antes quedan como están hasta que alguno se vuelva ambiguo, y
-  `tools/audit.js` avisa justo ese día. Ver `Admin/CONVENCIONES.md`.
+  El `clubId` de todo club es `<slug>-<iso2>` (`nacional-uy`), porque el id nombra el
+  archivo y prefija cada `sourceId`. Los ids viejos sin país viven en `data/club-aliases.js`
+  (el sitio los resuelve con `resolverClubId()`, las tools con `normalizarId()` de
+  `tools/data-clubes.js`) y `tools/audit.js` vigila el formato (`clubid-sin-pais`) y el mapa
+  (`alias-roto`). Ver `Admin/CONVENCIONES-DATOS.md`, "Identidad del club".
 - TAXONOMÍA DEL SELECTOR (Versión 137): `data/leagues.js` es el CATÁLOGO
   (6 deportes, 6 regiones, 8 países, 14 ligas con su escalón: los 2 segundos escalones de
   la Versión 201 (`es-segunda`, `de-2bundesliga`) más el 3° brasileño y el 2° colombiano

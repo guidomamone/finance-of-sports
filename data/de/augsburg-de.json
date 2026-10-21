@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "augsburg-de",
+    "name": "Fußball-Club Augsburg 1907 GmbH & Co. KGaA",
+    "display_name": "FC Augsburg",
+    "country": "DE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "augsburg-de-konzernabschluss-2024",
+      "club_id": "augsburg-de",
+      "title": "Konzernabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024 (Fußball-Club Augsburg 1907 GmbH & Co. KGaA)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "augsburg-de-konzernabschluss-2025",
+      "club_id": "augsburg-de",
+      "title": "Konzernabschluss zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025 (Fußball-Club Augsburg 1907 GmbH & Co. KGaA)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "augsburg-de-konzernabschluss-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Erlöse aus dem Spielbetrieb","category":"matchday_competition","amount":15.541,"disclosure":"detailed"},
+        {"label":"Werbung","category":"sponsorship_commercial","amount":17.331,"disclosure":"detailed"},
+        {"label":"TV-Einnahmen","category":"broadcasting","amount":48.991,"disclosure":"detailed"},
+        {"label":"Transfers","category":"player_sales","amount":15.142,"disclosure":"detailed"},
+        {"label":"Handel","category":"sponsorship_commercial","amount":3.426,"disclosure":"detailed"},
+        {"label":"Sonstiges","category":"other_income","amount":1.806,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":5.735098,"disclosure":"detailed"},
+        {"label":"Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung","category":"other_income","amount":1.016697,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und für bezogene Waren",
+          "category": "other_expenses",
+          "amount": -9.542689,
+          "disclosure": "detailed"
+        },
+        {"label":"Aufwendungen für bezogene Leistungen","category":"other_expenses","amount":-7.71499,"disclosure":"detailed"},
+        {
+          "label": "Personalaufwand",
+          "category": "wages_squad",
+          "amount": -59.59975,
+          "disclosure": "detailed",
+          "items": [["Löhne und Gehälter",-55.164649],["soziale Abgaben",-4.435101]]
+        },
+        {"label":"Abschreibungen auf Spielerwerte","category":"player_amortisation","amount":-13.878242,"disclosure":"detailed"},
+        {
+          "label": "Abschreibungen auf Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte",
+          "category": "other_amortisation",
+          "amount": -0.02529,
+          "disclosure": "detailed"
+        },
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-3.304668,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-22.899545,"disclosure":"detailed"},
+        {"label":"Sonstige Steuern","category":"admin_general_expense","amount":-0.11763,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.783082,"tax":0,"gross_debt":35.487566,"cash":15.706786},
+      "official_totals": {"revenue":108.989355,"expenses":117.082804,"net_result":-7.310368}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "augsburg-de-konzernabschluss-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Erlöse aus dem Spielbetrieb","category":"matchday_competition","amount":18.957,"disclosure":"detailed"},
+        {"label":"Werbung","category":"sponsorship_commercial","amount":17.88,"disclosure":"detailed"},
+        {"label":"TV-Einnahmen","category":"broadcasting","amount":54.185,"disclosure":"detailed"},
+        {"label":"Transfers","category":"player_sales","amount":44.985,"disclosure":"detailed"},
+        {"label":"Handel","category":"sponsorship_commercial","amount":8.669,"disclosure":"detailed"},
+        {"label":"Sonstiges","category":"other_income","amount":1.386,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":2.983403,"disclosure":"detailed"},
+        {"label":"Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung","category":"other_income","amount":1.070795,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und für bezogene Waren",
+          "category": "other_expenses",
+          "amount": -10.170114,
+          "disclosure": "detailed"
+        },
+        {"label":"Aufwendungen für bezogene Leistungen","category":"other_expenses","amount":-15.460372,"disclosure":"detailed"},
+        {
+          "label": "Personalaufwand",
+          "category": "wages_squad",
+          "amount": -62.294068,
+          "disclosure": "detailed",
+          "items": [["Löhne und Gehälter",-57.555509],["soziale Abgaben",-4.73856]]
+        },
+        {"label":"Abschreibungen auf Spielerwerte","category":"player_amortisation","amount":-10.974193,"disclosure":"detailed"},
+        {
+          "label": "Abschreibungen auf Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte",
+          "category": "other_amortisation",
+          "amount": -0.018288,
+          "disclosure": "detailed"
+        },
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-3.617957,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-26.082291,"disclosure":"detailed"},
+        {"label":"Sonstige Steuern","category":"admin_general_expense","amount":-0.976323,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.512983,"tax":-2.990126,"gross_debt":27.810112,"cash":14.134535},
+      "official_totals": {"revenue":150.115906,"expenses":129.593606,"net_result":18.045158}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

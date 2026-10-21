@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "santos-br",
+    "name": "Santos Futebol Clube",
+    "display_name": "Santos",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "santos-br-demonstracoes-2024",
+      "club_id": "santos-br",
+      "title": "Demonstrações Financeiras, Exercício Findo em 31 de Dezembro de 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://transparencia.santosfc.com.br/"
+    },
+    {
+      "id": "santos-br-demonstracoes-2025",
+      "club_id": "santos-br",
+      "title": "Demonstrações Financeiras, Exercício Findo em 31 de Dezembro de 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://media.santosfc.com.br/"
+    }
+  ],
+  "management": [{"id":"teixeira","name":"Marcelo Pirilo Teixeira (2024-2026)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "BRL",
+      "source_id": "santos-br-demonstracoes-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "teixeira",
+      "fx": {"ref":"BRL@2024-12-31"},
+      "revenue": [
+        {"label":"Receitas com bilheterias e cotas de participação","category":"matchday_competition","amount":34.342,"disclosure":"detailed"},
+        {"label":"Receitas com transmissões televisivas","category":"broadcasting","amount":55.48,"disclosure":"detailed"},
+        {"label":"Outras receitas líquidas - Negociação de atletas","category":"player_sales","amount":127.028,"disclosure":"detailed"},
+        {"label":"Receitas de publicidade","category":"sponsorship_commercial","amount":89.114,"disclosure":"detailed"},
+        {"label":"Receitas com manutenção e frequência","category":"member_dues","amount":28.032,"disclosure":"detailed"},
+        {"label":"Receitas de aluguéis","category":"other_income","amount":0.827,"disclosure":"detailed"},
+        {"label":"Receitas Timemania","category":"other_income","amount":0.6,"disclosure":"detailed"},
+        {"label":"Receita de Voluntariado Obtida","category":"other_income","amount":1.62,"disclosure":"detailed"},
+        {"label":"Receitas diversas","category":"other_income","amount":42.027,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Pessoal e encargos sociais (Futebol profissional)","category":"wages_squad","amount":-121.841,"disclosure":"detailed"},
+        {"label":"Pessoal e encargos sociais (Futebol amador)","category":"youth_other_sports_expense","amount":-21.022,"disclosure":"detailed"},
+        {
+          "label": "Pessoal e encargos sociais (Clube social, administrativo e outros desportos)",
+          "category": "youth_other_sports_expense",
+          "amount": -14.955,
+          "disclosure": "detailed"
+        },
+        {"label":"Jogos e bonificações","category":"match_organisation_expense","amount":-31.55,"disclosure":"detailed"},
+        {"label":"Direitos de imagem e arena","category":"wages_squad","amount":-29.411,"disclosure":"detailed"},
+        {"label":"Amortização de gastos com atletas","category":"player_amortisation","amount":-43.944,"disclosure":"detailed"},
+        {"label":"Outros custos (departamento de esportes)","category":"other_expenses","amount":-34.938,"disclosure":"detailed"},
+        {"label":"Pessoal e encargos sociais (despesas administrativas)","category":"admin_general_expense","amount":-17.27,"disclosure":"detailed"},
+        {"label":"Gerais e administrativas","category":"admin_general_expense","amount":-28.26,"disclosure":"detailed"},
+        {"label":"Serviços profissionais","category":"admin_general_expense","amount":-8.636,"disclosure":"detailed"},
+        {"label":"Depreciações","category":"depreciation","amount":-2.563,"disclosure":"detailed"},
+        {"label":"Amortização Intangível - software","category":"other_amortisation","amount":-0.412,"disclosure":"detailed"},
+        {"label":"Serviços Prestados por Voluntariado","category":"other_expenses","amount":-1.62,"disclosure":"detailed"},
+        {"label":"Outras receitas (despesas) líquidas","category":"other_expenses","amount":-54.881,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-72.973,"tax":0,"gross_debt":129.591,"cash":0.17},
+      "official_totals": {"revenue":379.07,"expenses":411.303,"net_result":-105.206}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "santos-br-demonstracoes-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "teixeira",
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Receitas com bilheterias e cotas de participação","category":"matchday_competition","amount":32.326,"disclosure":"detailed"},
+        {"label":"Receitas com transmissões televisivas","category":"broadcasting","amount":156.172,"disclosure":"detailed"},
+        {"label":"Outras receitas líquidas - Negociação de atletas","category":"player_sales","amount":134.934,"disclosure":"detailed"},
+        {"label":"Receitas de publicidade","category":"sponsorship_commercial","amount":142.433,"disclosure":"detailed"},
+        {"label":"Receitas com manutenção e frequência","category":"member_dues","amount":57.224,"disclosure":"detailed"},
+        {"label":"Receitas de aluguéis","category":"other_income","amount":1.374,"disclosure":"detailed"},
+        {"label":"Receitas Timemania","category":"other_income","amount":0.6,"disclosure":"detailed"},
+        {"label":"Receita de Voluntariado Obtida","category":"other_income","amount":1.62,"disclosure":"detailed"},
+        {"label":"Receitas diversas","category":"other_income","amount":98.239,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Pessoal e encargos sociais (Futebol profissional)","category":"wages_squad","amount":-217.54,"disclosure":"detailed"},
+        {"label":"Pessoal e encargos sociais (Futebol amador)","category":"youth_other_sports_expense","amount":-28.929,"disclosure":"detailed"},
+        {
+          "label": "Pessoal e encargos sociais (Clube social, administrativo e outros desportos)",
+          "category": "youth_other_sports_expense",
+          "amount": -14.943,
+          "disclosure": "detailed"
+        },
+        {"label":"Jogos e bonificações","category":"match_organisation_expense","amount":-31.513,"disclosure":"detailed"},
+        {"label":"Direitos de imagem e arena","category":"wages_squad","amount":-102.278,"disclosure":"detailed"},
+        {"label":"Amortização de gastos com atletas","category":"player_amortisation","amount":-91.272,"disclosure":"detailed"},
+        {"label":"Outros custos (departamento de esportes)","category":"other_expenses","amount":-72.45,"disclosure":"detailed"},
+        {"label":"Pessoal e encargos sociais (despesas administrativas)","category":"admin_general_expense","amount":-19.543,"disclosure":"detailed"},
+        {"label":"Gerais e administrativas","category":"admin_general_expense","amount":-11.386,"disclosure":"detailed"},
+        {"label":"Serviços profissionais","category":"admin_general_expense","amount":-13.071,"disclosure":"detailed"},
+        {"label":"Depreciações","category":"depreciation","amount":-2.499,"disclosure":"detailed"},
+        {"label":"Amortização Intangível - software","category":"other_amortisation","amount":-0.42,"disclosure":"detailed"},
+        {"label":"Serviços Prestados por Voluntariado","category":"other_expenses","amount":-1.62,"disclosure":"detailed"},
+        {"label":"Outras receitas (despesas) líquidas","category":"other_expenses","amount":-20.946,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-75.908,"tax":0,"gross_debt":94.338,"cash":0.295},
+      "official_totals": {"revenue":624.922,"expenses":628.41,"net_result":-79.396}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

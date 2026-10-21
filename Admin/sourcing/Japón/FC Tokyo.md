@@ -17,7 +17,7 @@
   documento de la liga ya cubre lo pedido.
 - Contacto: `aboutj.jleague.jp/corporate/assets/pdf/club_info/club_doc-<año>.pdf`.
 - Último chequeo: 2026-09-13.
-- **CARGADO al sitio (2026-09-13), Ejercicio 2025**: ver `data/jp/fctokyo-data.js`. Solo Sponsor
+- **CARGADO al sitio (2026-09-13), Ejercicio 2025**: ver `data/jp/fctokyo-jp-data.js`. Solo Sponsor
   (¥3.223M)/Gate (¥1.439M)/Total (¥7.210M) son reales por club — el resto de categorías y TODOS los
   costos solo se publican a nivel de división, no por club (ver corrección en
   `_notas-generales.md`). `expenseLinesByYear` vacío a propósito, `officialTotalExpenses`/

@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "deportivoalaves-es",
+    "name": "Deportivo Alavés, S.A.D.",
+    "display_name": "Deportivo Alavés",
+    "country": "ES",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "deportivoalaves-es-cuentas-anuales-2024-25",
+      "club_id": "deportivoalaves-es",
+      "title": "Informe de Auditoría, Cuentas Anuales e Informe de Gestión 2024-2025, Ejercicio 1/7/2024 a 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://cms.bkndagroup.com/uploads/"
+    }
+  ],
+  "management": [{"id":"ejercicio2025","name":"Ejercicio 2024/25","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "deportivoalaves-es-cuentas-anuales-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Ingresos por competiciones","category":"competition_bonus","amount":1.099404,"disclosure":"detailed"},
+        {"label":"Ingresos por abonados y socios","category":"season_tickets","amount":4.850083,"disclosure":"detailed"},
+        {"label":"Ingresos por retransmisión","category":"broadcasting","amount":43.896471,"disclosure":"detailed"},
+        {"label":"Ingresos por comercialización","category":"sponsorship_commercial","amount":0.933491,"disclosure":"detailed"},
+        {"label":"Ingresos por publicidad","category":"sponsorship_commercial","amount":10.323112,"disclosure":"detailed"},
+        {"label":"Otros ingresos de explotación","category":"other_income","amount":2.780841,"disclosure":"detailed"},
+        {"label":"Imputación de subvenciones de inmovilizado no financiero y otras","category":"other_income","amount":0.206209,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Consumos de material deportivo","category":"other_expenses","amount":-0.436733,"disclosure":"detailed"},
+        {"label":"Otros consumos","category":"admin_general_expense","amount":-1.737585,"disclosure":"detailed"},
+        {"label":"Variación de existencias","category":"other_expenses","amount":0.086784,"disclosure":"detailed"},
+        {"label":"Sueldos y salarios de la plantilla deportiva","category":"wages_squad","amount":-30.795231,"disclosure":"detailed"},
+        {"label":"Otros sueldos, salarios y asimilados","category":"admin_general_expense","amount":-8.867831,"disclosure":"detailed"},
+        {"label":"Cargas sociales","category":"wages_squad","amount":-2.502813,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-12.513873,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general_expense","amount":-0.050063,"disclosure":"detailed"},
+        {
+          "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+          "category": "other_expenses",
+          "amount": -0.030677,
+          "disclosure": "detailed"
+        },
+        {"label":"Desplazamientos","category":"match_organisation_expense","amount":-1.070689,"disclosure":"detailed"},
+        {"label":"Gastos de adquisición de jugadores","category":"other_expenses","amount":-3.879323,"disclosure":"detailed"},
+        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-8.310788,"disclosure":"detailed"},
+        {"label":"Amortización de derechos de adquisición de jugadores","category":"player_amortisation","amount":-5.2573,"disclosure":"detailed"},
+        {"label":"Otras amortizaciones","category":"depreciation","amount":-0.804571,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":15.096226,"asset_sales":0,"net_interest":-3.902985,"tax":1.1,"gross_debt":0,"cash":5.216203},
+      "official_totals": {"revenue":64.089611,"expenses":76.170693,"net_result":0.212159}
+    }
+  ],
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}
