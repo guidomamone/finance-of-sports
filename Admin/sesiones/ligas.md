@@ -433,3 +433,18 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: primera corrida de «un código por corrida»: `linea-duplicada`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl` con `codigo_tratado: linea-duplicada`, antes 927 y después 0: decidido arreglar el chequeo. Los 927 son P3 «con montos distintos» y es el mismo rótulo repetido en las notas de un mismo documento (sin ningún caso de «mismo monto», que es la copia pegada que el chequeo quería atrapar). Medido en los 320 JSON: 685 grupos de rótulo repetido, 651 con una sola subcategoría y 34 con dos (el costo de personal repartido por función), 0 con el mismo monto y 0 con desglose.
+
+### Qué queda (para TODO / una sesión Pipeline)
+
+- `tools/audit.js` (`checkLineas`, cerca de la línea 397): sacar la rama P3 «con montos distintos» y dejar la P1 de «mismo monto». Mide: `node tools/audit.js` antes P3 `linea-duplicada` 927 y después 0, con el resto de la salida idéntica. Es aflojar un P3, no frena nada ni toca datos.
+- Próxima corrida del proceso de P2 y P3: `catchall-dominante` (P2, 256 hallazgos).
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
