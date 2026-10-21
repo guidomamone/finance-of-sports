@@ -1183,6 +1183,7 @@ window.SPONSORS_INDICE = [
   ["hiper-sa","Hiper Sá",["c"]],
   ["hipercard","Hipercard",["c"]],
   ["hitachi","Hitachi",["c"]],
+  ["hitachi-capital-mobility","Hitachi Capital Mobility",["c"]],
   ["hodge-clemco","Hodge Clemco",["c"]],
   ["hofmann-personal","Hofmann Personal",["c"]],
   ["holcim","Holcim",["c"]],
