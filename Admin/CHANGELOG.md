@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 883 — Prefijo de entidad automático y la ruta del 241 (2026-10-20) [334 · 241 · valerenga-no]
+
+- 334: `combinar()` de `tools/suma-entidades.mjs` pone «AS · » / «Elite · » solo (nombre corto desde los PDFs del ajuste); recargar Vålerenga 2022 y 2023 deja el JSON igual.
+- 241 paso 2: `js/principal.js` lee y escribe `/club/<id>` y `/liga/<id>` (ids viejos, atrás y adelante); falta el generador de páginas y el rewrite. ASSET_V 1527.
+
 ## Versión 882 — De qué tratan los informes del fútbol inglés; difusión después de las grandes ligas (2026-10-20) [332 · 313 · 337]
 
 - 332: Deloitte ARFF 2026, UEFA ECFIL 2025 e IFR State of the Game transcriptos con Mistral (US$ 1,65; no se trackean: `.gitignore`) y resumidos; ~14 informes parecidos de otras ligas; idea de una sección «Informes» en Ligas.

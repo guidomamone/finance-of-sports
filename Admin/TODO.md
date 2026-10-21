@@ -30,8 +30,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * Lo que está en marcha va marcado en B y C.
 
 **B. Pantallas y distribución**
-* 334 (en marcha, Pipeline 9): `suma-entidades.mjs` pone el prefijo «AS · » / «Elite · » al sumar dos entidades, para que una recarga no lo pise
-* 241 (ok de Guido; en marcha: Pipeline 9 el generador y las imágenes, después del 334 y el 270; Pantallas 6 la ruta en `js/principal.js`): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
+* 241 (ok de Guido; la ruta en `js/principal.js` ya está; en marcha: Pipeline 9 el generador, el rewrite y las imágenes, después del 270): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
 * 332: resumen listo (`Admin/sourcing/Inglaterra/informes-futbol-ingles.md`, sección 4 con la idea de una sección «Informes» en Ligas); espera que decidas si se hace y si es lista de informes o noticias
@@ -145,8 +144,6 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    UEFA, los de la Premier League, la EFL o la FA). Para cada uno: quién lo publica, si es público, qué años y clubes cubre, y para qué
    sirve: contrastar lo ya cargado (totales por club y por liga), completar años o clubes que faltan, o dar contexto en Ligas. Solo
    sourcing y una nota en `Admin/sourcing/Inglaterra/`; no se transcribe ni se carga nada sin decisión de Guido.
-334. PREFIJO DE ENTIDAD EN LA SUMA (cierre de Pantallas 4, 2026-10-20). Vålerenga 2022 y 2023 llevan «AS · » y «Elite · » en cada etiqueta, puesto a mano
-   en el JSON. Si `cargar.mjs` vuelve a escribir esos años, lo pisa: `combinar()` de `tools/suma-entidades.mjs` tiene que ponerlo. Ålesund usa el mismo ajuste.
 335. MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
    un mail sin que Guido lo pida en sus palabras.
    (a) Proceso: Etapa 1 lista y probada de punta a punta (Resend, `outreach.financeofsports.com`, cola en `Admin/outreach/`, envío desde
