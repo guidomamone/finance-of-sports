@@ -1,0 +1,430 @@
+{
+ "pdf": "Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "6ec7020d1fd90f2c52d9aa532c6799b54de8e48c",
+ "ubicacionSha1": "18bf113729bed7ca0b499af66bc1be013f64ae77",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:16:41.215Z",
+ "ubicacion": {
+  "estado": [
+   "b27"
+  ],
+  "notas_ingresos": [
+   "b49",
+   "b50",
+   "b52"
+  ],
+  "notas_gastos": [
+   "b51",
+   "b52",
+   "b54"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b27",
+   "escala": "unidades",
+   "evidencia": "L359: Note | £ | £"
+  },
+  {
+   "bloque": "b49",
+   "escala": "unidades",
+   "evidencia": "L622: £ | £"
+  },
+  {
+   "bloque": "b50",
+   "escala": "unidades",
+   "evidencia": "L642: £ | £"
+  },
+  {
+   "bloque": "b52",
+   "escala": "unidades",
+   "evidencia": "L704: £ | £"
+  },
+  {
+   "bloque": "b51",
+   "escala": "unidades",
+   "evidencia": "L675: £ | £"
+  },
+  {
+   "bloque": "b54",
+   "escala": "unidades",
+   "evidencia": "L760: £ | £"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b27",
+   "linea": 360,
+   "etiqueta": "Turnover",
+   "actual": "9,784,083",
+   "anterior": "8,685,903",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 362,
+   "etiqueta": "Cost of sales",
+   "actual": "(8,223,069)",
+   "anterior": "(7,269,153)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 363,
+   "etiqueta": "Gross profit",
+   "actual": "1,561,014",
+   "anterior": "1,416,750",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 364,
+   "etiqueta": "Administrative expenses",
+   "actual": "(4,183,724)",
+   "anterior": "(4,091,194)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 365,
+   "etiqueta": "Exceptional administrative expenses",
+   "actual": "(881,019)",
+   "anterior": "(409,175)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 366,
+   "etiqueta": "Gain on disposal of players' registrations",
+   "actual": "972,266",
+   "anterior": "3,279,741",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 367,
+   "etiqueta": "Other operating income",
+   "actual": "1,131,979",
+   "anterior": "140,099",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 368,
+   "etiqueta": "Operating (loss)/profit",
+   "actual": "(1,399,484)",
+   "anterior": "336,221",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 369,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "100,329",
+   "anterior": "64,958",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 370,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(5,259)",
+   "anterior": "(19,654)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 371,
+   "etiqueta": "(Loss)/profit before tax",
+   "actual": "(1,304,414)",
+   "anterior": "381,525",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 372,
+   "etiqueta": "Tax on (loss)/profit",
+   "actual": "83,392",
+   "anterior": "173,805",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 373,
+   "etiqueta": "(Loss)/profit for the financial year",
+   "actual": "(1,221,022)",
+   "anterior": "555,330",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b49",
+   "linea": 623,
+   "etiqueta": "Match receipts, player loans and prize money",
+   "actual": "5,858,414",
+   "anterior": "5,354,457",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b49",
+   "linea": 625,
+   "etiqueta": "Merchandise and programmes",
+   "actual": "1,081,991",
+   "anterior": "850,211",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b49",
+   "linea": 626,
+   "etiqueta": "Sponsorships and advertising",
+   "actual": "990,532",
+   "anterior": "872,243",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b49",
+   "linea": 627,
+   "etiqueta": "Bar and catering",
+   "actual": "861,032",
+   "anterior": "890,441",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b49",
+   "linea": 628,
+   "etiqueta": "Donations and sundry",
+   "actual": "446,091",
+   "anterior": "199,551",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b49",
+   "linea": 629,
+   "etiqueta": "Youth development income",
+   "actual": "546,023",
+   "anterior": "519,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b49",
+   "linea": 630,
+   "etiqueta": "",
+   "actual": "9,784,083",
+   "anterior": "8,685,903",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b50",
+   "linea": 643,
+   "etiqueta": "Grants receivable",
+   "actual": "25,000",
+   "anterior": "140,099",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b50",
+   "linea": 645,
+   "etiqueta": "Insurance claim",
+   "actual": "960,556",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b50",
+   "linea": 646,
+   "etiqueta": "Flood Donations",
+   "actual": "146,424",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b50",
+   "linea": 647,
+   "etiqueta": "",
+   "actual": "1,131,980",
+   "anterior": "140,099",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b52",
+   "linea": 705,
+   "etiqueta": "Bank interest receivable",
+   "actual": "100,329",
+   "anterior": "64,958",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b52",
+   "linea": 707,
+   "etiqueta": "",
+   "actual": "100,329",
+   "anterior": "64,958",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b52",
+   "linea": 712,
+   "etiqueta": "Bank interest payable",
+   "actual": "-",
+   "anterior": "10,835",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b52",
+   "linea": 714,
+   "etiqueta": "Finance leases",
+   "actual": "5,259",
+   "anterior": "8,819",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b52",
+   "linea": 715,
+   "etiqueta": "",
+   "actual": "5,259",
+   "anterior": "19,654",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b52",
+   "linea": 722,
+   "etiqueta": "Prior years - R&D tax credit",
+   "actual": "(83,392)",
+   "anterior": "(173,805)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on (loss)/profit"
+  },
+  {
+   "bloque": "b52",
+   "linea": 724,
+   "etiqueta": "Total current tax",
+   "actual": "(83,392)",
+   "anterior": "(173,805)",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Tax on (loss)/profit"
+  },
+  {
+   "bloque": "b54",
+   "linea": 761,
+   "etiqueta": "Exceptional debt provision",
+   "actual": "-",
+   "anterior": "409,175",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Exceptional administrative expenses"
+  },
+  {
+   "bloque": "b54",
+   "linea": 763,
+   "etiqueta": "Stadium flood",
+   "actual": "881,019",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Exceptional administrative expenses"
+  },
+  {
+   "bloque": "b54",
+   "linea": 764,
+   "etiqueta": "",
+   "actual": "881,019",
+   "anterior": "409,175",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Exceptional administrative expenses"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 373,
+  "actual": "(1,221,022)",
+  "anterior": "555,330"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la nota 8 Employees (L676-L680), porque los gastos de personal están repartidos entre Cost of sales y Administrative expenses sin asignación?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "L676-L680 desglosan costos de personal que no corresponden a un único renglón del estado.",
+   "bloques": [
+    "b51"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera las notas 6 (L653-L656) y 7 (L670) por ser cargos informativos incluidos en otros renglones?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Operating (loss)/profit",
+   "texto": "Depreciación, amortización, leasing y honorarios de auditoría son informativos, no un desglose aditivo.",
+   "bloques": [
+    "b50",
+    "b51"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Nota 5 suma 1,131,980 vs 1,131,979 en el estado (redondeo). El cuadro por país (L636-L638) duplica Turnover y no se cargó. El impuesto es un crédito: positivo en el estado, negativo en la nota 11."
+}

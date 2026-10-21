@@ -1,0 +1,260 @@
+{
+ "md": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.md",
+ "generatedAt": "2026-10-21T18:26:15.550Z",
+ "rubrosHuella": "8d0ce50530fd95ace0952ec47c7f7e95bc0f96da",
+ "rubros": [
+  {
+   "label": "Football League income",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "broadcasting",
+     0.86
+    ],
+    [
+     "competition_bonus",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Sundry Income",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Ticket Sales",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Academy income",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "youth_football",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "youth_football",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Television and internet portal income",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Contributions from support organisations",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "sponsorship_commercial",
+     0.06
+    ],
+    [
+     "member_dues",
+     0.02
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Food and Beverage sales",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "stadium_other",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "stadium_other",
+     0.98
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Transfer fees",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "wages_squad",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1008
+  }
+ ]
+}

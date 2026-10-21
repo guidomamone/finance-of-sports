@@ -1,0 +1,52 @@
+{
+ "pdf": "Clubes/Escocia/Hibernian/hibernian-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Escocia/Hibernian/hibernian-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "f5cb0e04ea96555ef2c2e9e8241cfe1814f377a9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:15:16.071Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    91,
+    109
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    192,
+    212
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF contiene un estado de resultados (profit and loss account) del ejercicio cerrado el 30-06-2025 que no aparece en la transcripción?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo tiene el cuadro de KPIs de cinco temporadas (b1, pág. 4) y la lista de directores (b2, pág. 9); en unas cuentas completas iXBRL el estado de resultados debería estar en páginas posteriores, posiblemente no transcriptas.",
+   "bloques": [
+    "b1",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo se transcribieron dos bloques: b1 es un cuadro de indicadores clave de cinco temporadas (2020-21 a 2024-25) en £m dentro del Strategic Report, que no debe cargarse; b2 es la lista de directores. No hay estado de resultados ni notas en la transcripción, por eso sin_estado = true. Probablemente faltan páginas en la transcripción."
+}

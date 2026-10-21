@@ -1,0 +1,201 @@
+{
+ "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:40:20.798Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-05-31",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 31.5.25 en el XHTML; .md: Year Ended 31 May 2025",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "940,244",
+   "linea": 390,
+   "etiqueta": "Release of negative goodwill",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Auditora 6 (votación 2 a 1, 2026-10-21): la liberación de goodwill negativo va como ingreso exceptional_items en línea propia, aunque el estado la imprima en el bloque de gastos (.md L390: suma, 612.100 → 1.552.344)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "-6,220",
+   "linea": 396,
+   "etiqueta": "Interest payable and similar expenses",
+   "lado": "financiero",
+   "reemplaza": "Interest payable and similar expenses",
+   "motivo": "El interés pagado (.md L396, 6.220, impreso sin paréntesis) resta: financiero neto 24.171 − 6.220 = 17.951; 1.552.344 − 6.220 = 1.546.124 antes de impuestos (L398)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Release of negative goodwill",
+   "motivo": "Auditora 6 (votación 2 a 1, 2026-10-21; regla en CONVENCIONES-DATOS debajo de la de Bath)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 1.1102230246251565e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Release of negative goodwill\" (ingreso) 940,244 (2026-10-21, Auditora 6 (votación 2 a 1, 2026-10-21): la liberación de goodwill negativo va como ingreso exceptional_items en línea propia, aunque el estado la imprima en el bloque de gastos (.md L390: suma, 612.100 → 1.552.344))",
+  "ajuste manual: fila \"Interest payable and similar expenses\" (financiero) -6,220, en lugar de \"Interest payable and similar expenses\" (2026-10-21, El interés pagado (.md L396, 6.220, impreso sin paréntesis) resta: financiero neto 24.171 − 6.220 = 17.951; 1.552.344 − 6.220 = 1.546.124 antes de impuestos (L398))"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5.558394,
+  "gastos": 4.030221,
+  "financiero": 0.017951,
+  "impuesto": 0.001149,
+  "resultadoImpreso": 1.544975,
+  "resultadoParaCargar": 1.544975,
+  "resultadoFinal": null,
+  "lecturaSignos": "impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "TURNOVER",
+   "lado": "ingreso",
+   "M": 4.432819,
+   "pagina": 19,
+   "linea": 370,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.185331,
+   "pagina": 19,
+   "linea": 380,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Release of negative goodwill",
+   "lado": "ingreso",
+   "M": 0.940244,
+   "pagina": 19,
+   "linea": 390,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 3.114932,
+   "pagina": 19,
+   "linea": 372,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 0.915289,
+   "pagina": 19,
+   "linea": 376,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.024171,
+   "linea": 384
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.00622,
+   "linea": 396
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on profit/(loss)",
+   "M": -0.001149,
+   "linea": 400
+  },
+  {
+   "etiqueta": "Income tax relating to other comprehensive income",
+   "M": null,
+   "linea": 408
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "124f0d3364ca8b672d44b86c3239fe163ebe4beb",
+  "rango": [
+   367,
+   415
+  ],
+  "lineasCargadas": [
+   370,
+   380,
+   390,
+   372,
+   376,
+   384,
+   396,
+   400,
+   408
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 367 a 415 del .md):\nL367: | --- | --- |\nL368: | £ | £ |\nL369: | --- | --- |\nL370: | TURNOVER | 4,432,819 | 2,489,875 |\nL371: | --- | --- | --- |\nL372: | Cost of sales | 3,114,932 | 2,261,813 |\nL373: | --- | --- | --- |\nL374: | GROSS PROFIT | 1,317,887 | 228,062 |\nL375: | --- | --- | --- |\nL376: | Administrative expenses | 915,289 | 698,407 |\nL377: | --- | --- | --- |\nL378: | 402,598 | (470,345 | ) |\nL379: | --- | --- | --- |\nL380: | Other operating income | 185,331 | 62,411 |\nL381: | --- | --- | --- |\nL382: | OPERATING PROFIT/(LOSS) | 587,929 | (407,934 | ) |\nL383: | --- | --- | --- | --- |\nL384: | Interest receivable and similar income | 24,171 | 7,687 |\nL385: | --- | --- | --- |\nL386: | 612,100 | (400,247 | ) |\nL387: | --- | --- | --- |\nL388: | Amounts written off investments | - | 35,288 |\nL389: | --- | --- | --- |\nL390: | Release of negative goodwill | (940,244 | ) | - |\nL391: | --- | --- | --- | --- |\nL392: | (940,244 | ) | 35,288 |\nL393: | --- | --- | --- |\nL394: | 1,552,344 | (435,535 | ) |\nL395: | --- | --- | --- |\nL396: | Interest payable and similar expenses | 6,220 | 780 |\nL397: | --- | --- | --- |\nL398: | PROFIT/(LOSS) BEFORE TAXATION | 1,546,124 | (436,315 | ) |\nL399: | --- | --- | --- | --- |\nL400: | Tax on profit/(loss) | 1,149 | - |\nL401: | --- | --- | --- |\nL402: | PROFIT/(LOSS) FOR THE FINANCIAL YEAR | 1,544,975 | (436,315 | ) |\nL403: | --- | --- | --- | --- |\nL404: | OTHER COMPREHENSIVE INCOME |\nL405: | --- |\nL406: | Revaluation of property | 1,711,844 | - |\nL407: | --- | --- | --- |\nL408: | Income tax relating to other comprehensive income | - | - |\nL409: | --- | --- | --- |\nL410: | OTHER COMPREHENSIVE INCOME FOR THE YEAR, NET OF INCOME TAX | 1,711,844 | - |\nL411: | --- | --- | --- |\nL412: | TOTAL COMPREHENSIVE INCOME/(LOSS) FOR THE YEAR | 3,256,819 | (436,315 | ) |\nL413: | --- | --- | --- | --- |\nL414: | Profit/(loss) attributable to: |\nL415: | --- |\n\nLO QUE SE CARGA:\n- ingreso · \"TURNOVER\" · 4.432819 · L370\n- ingreso · \"Other operating income\" · 0.185331 · L380\n- ingreso · \"Release of negative goodwill\" · 0.940244 · L390\n- gasto · \"Cost of sales\" · 3.114932 · L372\n- gasto · \"Administrative expenses\" · 0.915289 · L376\n- financiero · \"Interest receivable and similar income\" · 0.024171 · L384\n- financiero · \"Interest payable and similar expenses\" · -0.00622 · L396\n- impuesto · \"Tax on profit/(loss)\" · -0.001149 · L400\n- impuesto · \"Income tax relating to other comprehensive income\" · 0 · L408"
+ }
+}

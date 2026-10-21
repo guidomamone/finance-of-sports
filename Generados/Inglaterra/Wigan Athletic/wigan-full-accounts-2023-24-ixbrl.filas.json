@@ -1,0 +1,374 @@
+{
+ "pdf": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.md",
+ "mdSha1": "b84f046d739887543243c6402079af3dfeee2206",
+ "ubicacionSha1": "74b78ba3179a14f0c402e189170d7d9184c2eff2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:23:17.510Z",
+ "ubicacion": {
+  "estado": [
+   "b20"
+  ],
+  "notas_ingresos": [
+   "b34"
+  ],
+  "notas_gastos": [
+   "b36"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "L602: columnas en '£'"
+  },
+  {
+   "bloque": "b34",
+   "escala": "unidades",
+   "evidencia": "L1040: '£'"
+  },
+  {
+   "bloque": "b36",
+   "escala": "unidades",
+   "evidencia": "L1082/L1122/L1132: '£'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b20",
+   "linea": 604,
+   "etiqueta": "TURNOVER",
+   "actual": "9,246,111",
+   "anterior": "15,865,467",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 606,
+   "etiqueta": "Cost of sales",
+   "actual": "881,525",
+   "anterior": "929,979",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 608,
+   "etiqueta": "GROSS PROFIT",
+   "actual": "8,364,586",
+   "anterior": "14,935,488",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 610,
+   "etiqueta": "Administrative expenses",
+   "actual": "17,346,415",
+   "anterior": "28,685,359",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 612,
+   "etiqueta": "",
+   "actual": "(8,981,829)",
+   "anterior": "(13,749,871)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 614,
+   "etiqueta": "Profit on sale of intangible fixed assets",
+   "actual": "748,978",
+   "anterior": "380,069",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 616,
+   "etiqueta": "",
+   "actual": "(8,232,851)",
+   "anterior": "(13,369,802)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 618,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "7,538",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 620,
+   "etiqueta": "LOSS BEFORE TAXATION",
+   "actual": "(8,225,313)",
+   "anterior": "(13,369,802)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 622,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 624,
+   "etiqueta": "LOSS FOR THE FINANCIAL YEAR",
+   "actual": "(8,225,313)",
+   "anterior": "(13,369,802)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 626,
+   "etiqueta": "OTHER COMPREHENSIVE INCOME",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 628,
+   "etiqueta": "TOTAL COMPREHENSIVE LOSS FOR THE YEAR",
+   "actual": "(8,225,313)",
+   "anterior": "(13,369,802)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b34",
+   "linea": 1042,
+   "etiqueta": "Premier League distributions",
+   "actual": "778,500",
+   "anterior": "4,800,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1044,
+   "etiqueta": "EFL central distributions",
+   "actual": "1,371,627",
+   "anterior": "3,712,450",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1046,
+   "etiqueta": "Sponsorship, commercial",
+   "actual": "1,594,484",
+   "anterior": "1,613,045",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1048,
+   "etiqueta": "Match/Season/Cup Tickets",
+   "actual": "2,378,645",
+   "anterior": "2,640,254",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1050,
+   "etiqueta": "Stadium hire/rental charges",
+   "actual": "821,697",
+   "anterior": "893,800",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1052,
+   "etiqueta": "Academy grants",
+   "actual": "831,025",
+   "anterior": "851,060",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1054,
+   "etiqueta": "Retail income",
+   "actual": "704,355",
+   "anterior": "781,071",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1056,
+   "etiqueta": "Other income",
+   "actual": "367,778",
+   "anterior": "531,287",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1058,
+   "etiqueta": "Cup broadcasting",
+   "actual": "220,000",
+   "anterior": "32,500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1060,
+   "etiqueta": "Cup prize money",
+   "actual": "178,000",
+   "anterior": "10,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1062,
+   "etiqueta": "",
+   "actual": "9,246,111",
+   "anterior": "15,865,467",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1084,
+   "etiqueta": "Wages and salaries",
+   "actual": "10,498,218",
+   "anterior": "20,571,999",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1086,
+   "etiqueta": "Social security costs",
+   "actual": "1,116,076",
+   "anterior": "2,556,160",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1088,
+   "etiqueta": "Other pension costs",
+   "actual": "105,981",
+   "anterior": "111,894",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1090,
+   "etiqueta": "",
+   "actual": "11,720,275",
+   "anterior": "23,240,053",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1124,
+   "etiqueta": "Profit on sale of intangible fixed assets",
+   "actual": "748,978",
+   "anterior": "380,069",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit on sale of intangible fixed assets"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 604,
+  "actual": "9,246,111"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 624,
+  "actual": "(8,225,313)",
+  "anterior": "(13,369,802)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se asignan los costos de personal de la nota 4 (L1084-L1090) como desglose de 'Administrative expenses'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota 4 no indica en qué renglón del estado se imputan los sueldos; podrían repartirse entre Cost of sales y Administrative expenses.",
+   "bloques": [
+    "b36"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'The loss is stated after charging' de la nota 6 (L1134-L1142)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Son cargos informativos (amortizaciones, alquileres, auditoría) sin renglón explícito del estado al que desglosen, L1134-L1142.",
+   "bloques": [
+    "b36"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera la remuneración de directores (L1114-L1116)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Es información incluida dentro de los costos de personal, con 2024 en '-'.",
+   "bloques": [
+    "b36"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Ejercicio cerrado al 30 de junio de 2024 (L598). Gastos impresos en positivo en el estado. No hay total de gastos impreso. Las cantidades de empleados (L1096-L1108) no son importes y se omitieron."
+}

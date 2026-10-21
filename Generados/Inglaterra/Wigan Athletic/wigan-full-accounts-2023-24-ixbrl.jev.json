@@ -1,0 +1,306 @@
+{
+ "md": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.md",
+ "generatedAt": "2026-10-21T18:33:54.261Z",
+ "rubrosHuella": "a2aecd7ab2a8bb5c232e9d2158e1beb11657641f",
+ "rubros": [
+  {
+   "label": "EFL central distributions",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Match/Season/Cup Tickets",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "season_tickets",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Premier League distributions",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "broadcasting",
+     0.98
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Academy grants",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "youth_football",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "youth_football",
+     0.56
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Sponsorship, commercial",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Retail income",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Stadium hire/rental charges",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "stadium_other",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "stadium_other",
+     0.85
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Profit on sale of intangible fixed assets",
+   "lado": "revenue",
+   "page": 31,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "player_sales",
+     0.2
+    ],
+    [
+     "broadcasting",
+     0.06
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Cup prize money",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 31,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Cup broadcasting",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 31,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "wages_squad",
+     0.14
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1001
+  }
+ ]
+}

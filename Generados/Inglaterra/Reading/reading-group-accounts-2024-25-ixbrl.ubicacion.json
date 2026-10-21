@@ -1,0 +1,93 @@
+{
+ "pdf": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "58a905aaaba17cc02ad8abc84b3b06a4a12ca153",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:32:41.731Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    16,
+    20
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    114,
+    124
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    127,
+    135
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    139,
+    147
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    158,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    192,
+    204
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 31,
+   "lineas": [
+    1254,
+    1259
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF contiene la cuenta de resultados consolidada (Group statement of comprehensive income) del ejercicio al 30-06-2025 en páginas que no aparecen en el índice?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo muestra cuadros del informe estratégico (b2-b5), listas de directores y una nota de inversiones (b7, pág. 31); probablemente la transcripción del iXBRL perdió las tablas de los estados.",
+   "bloques": [
+    "b2",
+    "b5",
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Ningún bloque del índice es el estado de resultados: b2-b5 son series históricas de ingresos, asistencia y abonos del informe estratégico; b1 y b6 son directores; b7 es el costo de participaciones en subsidiarias. Hay que revisar el PDF por si las tablas de los estados no se transcribieron."
+}

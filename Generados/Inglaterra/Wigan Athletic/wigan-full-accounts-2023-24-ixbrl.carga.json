@@ -1,0 +1,547 @@
+{
+ "pdf": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf",
+ "generado": "2026-10-21T18:40:28.398Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (wiganathletic-gb)"
+  }
+ ],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "wiganathletic-gb",
+  "year": 2024,
+  "cierre": "2024-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Premier League distributions",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.7785,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "EFL central distributions",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 1.371627,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsorship, commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.594484,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Match/Season/Cup Tickets",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 2.378645,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Stadium hire/rental charges",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.821697,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Academy grants",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.831025,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Retail income",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.704355,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.367778,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cup broadcasting",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.22,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cup prize money",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.178,
+    "disclosureLevel": "aggregated",
+    "_pag": 45,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on sale of intangible fixed assets",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.748978,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.881525,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -17.346415,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2024-06-30",
+   "sourceId": "wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.007538,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.007538
+    },
+    {
+     "label": "Tax on loss",
+     "value": null
+    }
+   ],
+   "incluidoEn": {
+    "wages_squad": {
+     "en": "other_expenses",
+     "posible": true
+    }
+   },
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 9.995089,
+   "officialTotalExpenses": 18.22794,
+   "officialPAT": -8.225313
+  },
+  "source": {
+   "id": "wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl",
+   "clubId": "wiganathletic-gb",
+   "title": "Wigan Athletic A.F.C. Limited — wigan-full-accounts-2023-24-ixbrl (ejercicio 2024)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-21): EndDateForPeriodCoveredByReport 30.6.24 en el XHTML; .md: YEAR ENDED 30 JUNE 2024"
+ },
+ "clubId": "wiganathletic-gb",
+ "year": 2024,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2024-06-30",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 30.6.24 en el XHTML; .md: YEAR ENDED 30 JUNE 2024",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 15,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Premier League distributions",
+   "page": 45,
+   "native": 0.7785,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.7785,
+   "cat": "broadcasting",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.7785
+  },
+  {
+   "label": "EFL central distributions",
+   "page": 45,
+   "native": 1.371627,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 1.371627,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.371627
+  },
+  {
+   "label": "Sponsorship, commercial",
+   "page": 45,
+   "native": 1.594484,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 1.594484,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.594484
+  },
+  {
+   "label": "Match/Season/Cup Tickets",
+   "page": 45,
+   "native": 2.378645,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 2.378645,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.378645
+  },
+  {
+   "label": "Stadium hire/rental charges",
+   "page": 45,
+   "native": 0.821697,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.821697,
+   "cat": "stadium_other",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.821697
+  },
+  {
+   "label": "Academy grants",
+   "page": 45,
+   "native": 0.831025,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.831025,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): Academy grants (.md L1052): youth_football",
+   "destino": "revenue",
+   "amountNative": 0.831025
+  },
+  {
+   "label": "Retail income",
+   "page": 45,
+   "native": 0.704355,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.704355,
+   "cat": "sponsorship_commercial",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.704355
+  },
+  {
+   "label": "Other income",
+   "page": 45,
+   "native": 0.367778,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.367778,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.367778
+  },
+  {
+   "label": "Cup broadcasting",
+   "page": 45,
+   "native": 0.22,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.22,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.22
+  },
+  {
+   "label": "Cup prize money",
+   "page": 45,
+   "native": 0.178,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.178,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.178
+  },
+  {
+   "label": "Profit on sale of intangible fixed assets",
+   "page": 31,
+   "native": 0.748978,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.748978,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): Profit on sale of intangible fixed assets 748.978 (.md L614, L1124): venta de registros de jugadores, player_sales como los ingleses cargados",
+   "destino": "revenue",
+   "amountNative": 0.748978
+  },
+  {
+   "label": "Cost of sales",
+   "page": 31,
+   "native": 0.881525,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.881525,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Barnsley), titulo:notes · Claude 2026-10-21 (subagente Sonnet): Cost of sales sin desglose por naturaleza (.md L494) va a other_expenses, como los clubes ingleses cargados (Leeds, Sunderland, Brighton)",
+   "destino": "expense",
+   "amountNative": -0.881525
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 31,
+   "native": 17.346415,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 17.346415,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -17.346415
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.007538,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"TURNOVER\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 9.995089,
+  "expSum": -18.22794,
+  "officialTotalRevenue": 9.995089,
+  "officialTotalExpenses": 18.22794,
+  "officialPAT": -8.225313,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -8.225313,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 9.995089
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 18.22794
+  }
+ },
+ "liga": {
+  "valor": "gb-leagueone",
+  "fuente": "roster cacheado de \"2023–24 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Wigan Athletic\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2024,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.24 en el XHTML; .md: YEAR ENDED 30 JUNE 2024",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2024-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.24 en el XHTML; .md: YEAR ENDED 30 JUNE 2024)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2024-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2024-06-30 = 0.7906 (Cierre BCE del viernes 28/6/2024 (el 30 es domingo, sin cotización), cruzando GBP/EUR (0,84638) × EUR/USD (1,0705) (1 GBP ≈ 1,2648 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-leagueone",
+   "fuente": "roster cacheado de \"2023–24 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Wigan Athletic\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 11,
+  "lineasGasto": 2,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

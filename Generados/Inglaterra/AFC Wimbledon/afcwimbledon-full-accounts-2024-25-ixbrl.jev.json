@@ -1,0 +1,306 @@
+{
+ "md": "Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.md",
+ "generatedAt": "2026-10-21T18:33:53.253Z",
+ "rubrosHuella": "9241874407106af13826000f6e3e56b81059414f",
+ "rubros": [
+  {
+   "label": "Merchandise and programmes",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Bar and catering",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "stadium_other",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "stadium_other",
+     0.6
+    ],
+    [
+     "matchday_competition",
+     0.26
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Sponsorships and advertising",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Gain on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Donations and sundry",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Grants receivable",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Match receipts, player loans and prize money",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "matchday_competition",
+     0.53
+    ],
+    [
+     "lump_football_operations",
+     0.33
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Flood Donations",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Insurance claim",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Youth development income",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "youth_football",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "youth_football",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "wages_squad",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Exceptional administrative expenses",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "exceptional_items",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1012
+  }
+ ]
+}

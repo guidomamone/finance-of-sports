@@ -1,0 +1,43 @@
+{
+ "pdf": "Clubes/Inglaterra/Northampton Town/northamptontown-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Northampton Town/northamptontown-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "10726a39b5f7e862c2fc63cf3f2b836b6e533734",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:21:43.656Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    82,
+    91
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "2024/25",
+ "columna_anterior": "2023/24",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF contiene un profit and loss account del ejercicio cerrado el 30-06-2025 que no aparece en el índice de bloques transcriptos?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo tiene el cuadro de indicadores clave del strategic report (pág. 4, b1), que no es un estado de resultados.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El único bloque con cifras es el cuadro de KPIs del strategic report (posición en liga, asistencia, costos de personal, pérdida del ejercicio). No es estado de resultados, por lo que no se elige. Sin estado de resultados del ejercicio 2024/25 en la transcripción."
+}

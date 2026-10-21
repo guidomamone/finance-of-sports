@@ -1,0 +1,237 @@
+{
+ "md": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.md",
+ "generatedAt": "2026-10-21T18:38:23.881Z",
+ "rubrosHuella": "8f90c2376a60e7010c63d726bc90c7502aecee9c",
+ "rubros": [
+  {
+   "label": "TV and football awards",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "broadcasting",
+     0.93
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Commercial income",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Lease premium income",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "stadium_other",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "stadium_other",
+     0.66
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Other grants receivable",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Amortisation of government grants receivable",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Transfer fees",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Gates and season tickets",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "matchday_competition",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "matchday_competition",
+     0.67
+    ],
+    [
+     "season_tickets",
+     0.31
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 31,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 31,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.82
+    ],
+    [
+     "wages_squad",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1000
+  }
+ ]
+}

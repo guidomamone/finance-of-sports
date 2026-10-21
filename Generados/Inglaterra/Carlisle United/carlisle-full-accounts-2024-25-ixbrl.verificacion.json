@@ -1,0 +1,245 @@
+{
+ "pdf": "Clubes/Inglaterra/Carlisle United/carlisle-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Carlisle United/carlisle-full-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:40:21.014Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Carlisle United/carlisle-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 6.899969 cierra; además se suman 4 línea(s) fuera de ese total (0.199741)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Other operating income\" (5 filas) no suma la fila: quedó la fila",
+  "la lectura base no cerraba; cerró con la lectura 2",
+  "duda de localizar que no afecta la carga: En 2025 la nota 10 no tiene importe (solo 2,558,811 en 2024) y el resto del bloque es el cuadro de intangibles, que no desglosa la cuenta de resultados.",
+  "duda de extraer que no afecta la carga: L629-L633: la nota no indica en qué renglón del estado se incluyen los 7,009,280.",
+  "duda de extraer que no afecta la carga: L612-L623: son cargos incluidos en el resultado operativo, no un desglose completo."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Other operating income",
+   "suma": 0.199741,
+   "objetivo": 0.13157
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Other operating income",
+   "suma": 0.199741,
+   "objetivo": 0.13157
+  }
+ ],
+ "totales": {
+  "ingresos": 7.09971,
+  "gastos": 12.245383,
+  "financiero": 0.023205,
+  "impuesto": 0,
+  "resultadoImpreso": -5.122468,
+  "resultadoParaCargar": -5.122468,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 2.135057,
+   "pagina": 22,
+   "linea": 585,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 1.028918,
+   "pagina": 22,
+   "linea": 587,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Retail",
+   "lado": "ingreso",
+   "M": 0.738755,
+   "pagina": 22,
+   "linea": 588,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Football fortune",
+   "lado": "ingreso",
+   "M": 0.606311,
+   "pagina": 22,
+   "linea": 589,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Football league",
+   "lado": "ingreso",
+   "M": 2.24186,
+   "pagina": 22,
+   "linea": 590,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Website and streaming income",
+   "lado": "ingreso",
+   "M": 0.103397,
+   "pagina": 22,
+   "linea": 591,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Donations",
+   "lado": "ingreso",
+   "M": 0.045671,
+   "pagina": 22,
+   "linea": 592,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.13157,
+   "pagina": 22,
+   "linea": 598,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Net rents receivable",
+   "lado": "ingreso",
+   "M": 0.029103,
+   "pagina": 22,
+   "linea": 600,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Government grants receivable",
+   "lado": "ingreso",
+   "M": 0.028378,
+   "pagina": 22,
+   "linea": 601,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Insurance claims receivable",
+   "lado": "ingreso",
+   "M": 0.01069,
+   "pagina": 22,
+   "linea": 602,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 8.420236,
+   "pagina": 14,
+   "linea": 328,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 3.825147,
+   "pagina": 14,
+   "linea": 330,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.024064,
+   "linea": 334
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.000859,
+   "linea": 335
+  }
+ ],
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "aa95fdb18c2bd66a3341dfd1ad8d56faef1296ef",
+  "rango": [
+   323,
+   345
+  ],
+  "lineasCargadas": [
+   585,
+   587,
+   588,
+   589,
+   590,
+   591,
+   592,
+   598,
+   600,
+   601,
+   602,
+   328,
+   330,
+   334,
+   335
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 323 a 345 del .md):\nL323: |  | 2025 | 2024 |\nL324: | --- | --- | --- |\nL325: | Note | £ | £ |\nL326: | Turnover | 4 | 6,899,969 | 8,313,429 |\nL327: | --- | --- | --- | --- |\nL328: | Cost of sales |  | (8,420,236) | (5,533,249) |\nL329: | Gross (loss)/profit |  | (1,520,267) | 2,780,180 |\nL330: | Administrative expenses |  | (3,825,147) | (2,623,848) |\nL331: | Exceptional item |  | - | 2,558,811 |\nL332: | Other operating income | 5 | 199,741 | 49,935 |\nL333: | Operating (loss)/profit | 6 | (5,145,673) | 2,765,078 |\nL334: | Interest receivable and similar income |  | 24,064 | 53,489 |\nL335: | Interest payable and similar expenses |  | (859) | (417) |\nL336: | (Loss)/profit before tax |  | (5,122,468) | 2,818,150 |\nL337: | (Loss)/profit for the financial year |  | (5,122,468) | 2,818,150 |\nL338: | Other comprehensive income for the year |  |  |  |\nL339: | --- | --- | --- | --- |\nL340: | Tax relating to other comprehensive income |  | 42,502 | 37,000 |\nL341: | Other comprehensive income for the year |  | 42,502 | 37,000 |\nL342: | Total comprehensive income for the year |  | (5,079,966) | 2,855,150 |\nL343: | The notes on pages 15 to 28 form part of these financial statements. |\nL344: | --- |\n\nLO QUE SE CARGA:\n- ingreso · \"Matchday\" · 2.135057 · L585 (de una nota)\n- ingreso · \"Commercial\" · 1.028918 · L587 (de una nota)\n- ingreso · \"Retail\" · 0.738755 · L588 (de una nota)\n- ingreso · \"Football fortune\" · 0.606311 · L589 (de una nota)\n- ingreso · \"Football league\" · 2.24186 · L590 (de una nota)\n- ingreso · \"Website and streaming income\" · 0.103397 · L591 (de una nota)\n- ingreso · \"Donations\" · 0.045671 · L592 (de una nota)\n- ingreso · \"Other operating income\" · 0.13157 · L598 (de una nota)\n- ingreso · \"Net rents receivable\" · 0.029103 · L600 (de una nota)\n- ingreso · \"Government grants receivable\" · 0.028378 · L601 (de una nota)\n- ingreso · \"Insurance claims receivable\" · 0.01069 · L602 (de una nota)\n- gasto · \"Cost of sales\" · 8.420236 · L328\n- gasto · \"Administrative expenses\" · 3.825147 · L330\n- financiero · \"Interest receivable and similar income\" · 0.024064 · L334\n- financiero · \"Interest payable and similar expenses\" · -0.000859 · L335"
+ }
+}

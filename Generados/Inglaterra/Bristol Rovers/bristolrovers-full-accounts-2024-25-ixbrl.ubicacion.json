@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "ff900831ced6ceea0f8fc34cc95ee96aafc76fd3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:17:25.059Z",
+ "perimetroClub": "individual",
+ "bloques": {},
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF 'bristolrovers-full-accounts-2024-25-ixbrl.pdf' contiene un estado de resultados (profit and loss account) del ejercicio cerrado el 30-06-2025 que la transcripción no capturó?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice no tiene ningún bloque con cifras, posiblemente por una transcripción fallida del iXBRL o por cuentas abreviadas sin P&L.",
+   "bloques": [],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "La transcripción no tiene bloques con cifras, por lo que no se identificó ningún estado de resultados. Puede tratarse de cuentas abreviadas presentadas sin P&L o de un fallo de extracción; conviene revisar el PDF original."
+}

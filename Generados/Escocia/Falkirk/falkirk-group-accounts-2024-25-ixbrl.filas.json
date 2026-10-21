@@ -1,0 +1,255 @@
+{
+ "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "0100be5f1c3bbaefd63ac062f4d4e8d19968ba57",
+ "ubicacionSha1": "081fa3ae43c0ca21b3e05e166eaf2adcb8796ffe",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:15:10.900Z",
+ "ubicacion": {
+  "estado": [
+   "b10"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L368: | £ | £ |"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b10",
+   "linea": 370,
+   "etiqueta": "TURNOVER",
+   "actual": "4,432,819",
+   "anterior": "2,489,875",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 372,
+   "etiqueta": "Cost of sales",
+   "actual": "3,114,932",
+   "anterior": "2,261,813",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 374,
+   "etiqueta": "GROSS PROFIT",
+   "actual": "1,317,887",
+   "anterior": "228,062",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 376,
+   "etiqueta": "Administrative expenses",
+   "actual": "915,289",
+   "anterior": "698,407",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 378,
+   "etiqueta": "",
+   "actual": "402,598",
+   "anterior": "(470,345)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 380,
+   "etiqueta": "Other operating income",
+   "actual": "185,331",
+   "anterior": "62,411",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 382,
+   "etiqueta": "OPERATING PROFIT/(LOSS)",
+   "actual": "587,929",
+   "anterior": "(407,934)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 384,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "24,171",
+   "anterior": "7,687",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 386,
+   "etiqueta": "",
+   "actual": "612,100",
+   "anterior": "(400,247)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 388,
+   "etiqueta": "Amounts written off investments",
+   "actual": "-",
+   "anterior": "35,288",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 390,
+   "etiqueta": "Release of negative goodwill",
+   "actual": "(940,244)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 392,
+   "etiqueta": "",
+   "actual": "(940,244)",
+   "anterior": "35,288",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 394,
+   "etiqueta": "",
+   "actual": "1,552,344",
+   "anterior": "(435,535)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 396,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "6,220",
+   "anterior": "780",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 398,
+   "etiqueta": "PROFIT/(LOSS) BEFORE TAXATION",
+   "actual": "1,546,124",
+   "anterior": "(436,315)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 400,
+   "etiqueta": "Tax on profit/(loss)",
+   "actual": "1,149",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 402,
+   "etiqueta": "PROFIT/(LOSS) FOR THE FINANCIAL YEAR",
+   "actual": "1,544,975",
+   "anterior": "(436,315)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 406,
+   "etiqueta": "Revaluation of property",
+   "actual": "1,711,844",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 408,
+   "etiqueta": "Income tax relating to other comprehensive income",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 410,
+   "etiqueta": "OTHER COMPREHENSIVE INCOME FOR THE YEAR, NET OF INCOME TAX",
+   "actual": "1,711,844",
+   "anterior": "-",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 412,
+   "etiqueta": "TOTAL COMPREHENSIVE INCOME/(LOSS) FOR THE YEAR",
+   "actual": "3,256,819",
+   "anterior": "(436,315)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 402,
+  "actual": "1,544,975",
+  "anterior": "(436,315)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Release of negative goodwill' (L390) con signo negativo (940,244) como un crédito que suma al resultado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Release of negative goodwill",
+   "texto": "En L390 figura entre paréntesis pero aumenta el resultado (612,100 a 1,552,344 en L394), por lo que el signo es de presentación de una partida de gasto negativa.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cierre del ejercicio 31 May 2025 (L364). No hay total de ingresos ni de gastos impreso. Las filas de atribución (L416, L420) no se extrajeron por repetir el resultado. Filas sin etiqueta (L378, L386, L392, L394) son subtotales intermedios."
+}

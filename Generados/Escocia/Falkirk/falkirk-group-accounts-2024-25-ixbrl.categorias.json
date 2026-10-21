@@ -1,0 +1,78 @@
+{
+ "md": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.md",
+ "club": "falkirk",
+ "year": 2025,
+ "generatedAt": "2026-10-21T18:40:26.413Z",
+ "rubrosHuella": "bfd5db1304ac08bc14517533457e4d613d6b8523",
+ "jevHuella": "2899557abdcf55ab86f9ec17e50f154c045a268a",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0057312,
+ "rubros": [
+  {
+   "label": "TURNOVER",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Cifra de negocios",
+   "page": 19,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 19,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Release of negative goodwill",
+   "lado": "revenue",
+   "section": "ajuste manual",
+   "glosa": "Imputación de fondo de comercio negativo",
+   "page": 19,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Coste de ventas",
+   "page": 19,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.78,
+   "escalon": 2,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.45,
+   "motivo": "Turnover cargado como bolsón de fútbol sin desglose; coste de ventas es su espejo sin desglosar."
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 19,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

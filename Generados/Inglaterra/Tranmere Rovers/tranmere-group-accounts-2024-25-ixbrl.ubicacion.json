@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "b148653b80cdbcb25c91d08d6cabe4d3e3b21b47",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:22:45.056Z",
+ "perimetroClub": null,
+ "bloques": {},
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF 'tranmere-group-accounts-2024-25-ixbrl.pdf' contiene un estado de resultados (profit and loss account) del ejercicio cerrado el 30-06-2025 que la transcripción no captó?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice llegó con 0 bloques con cifras, posiblemente por un fallo de extracción del iXBRL y no porque falte el estado.",
+   "bloques": [],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El índice no tiene ningún bloque con cifras, así que no se puede identificar el estado de resultados. Probablemente sea un fallo de la transcripción del PDF iXBRL. Hay que revisarlo o reprocesarlo con otra extracción. La moneda se asume GBP por tratarse de un club inglés."
+}

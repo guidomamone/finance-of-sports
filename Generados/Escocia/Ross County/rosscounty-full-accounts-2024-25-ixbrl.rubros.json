@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.md",
+  "pdf": "Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.pdf",
+  "club": "ross-county",
+  "year": 2025,
+  "generatedAt": "2026-10-21T18:23:17.847Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Turnover",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        5.907595
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Related undertaking loan forgiven",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.168263
+      ],
+      "glosa": "Condonación de préstamo de empresa vinculada"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        7.076541
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.427039
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

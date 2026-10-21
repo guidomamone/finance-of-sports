@@ -1,0 +1,391 @@
+{
+ "pdf": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "8010c776db9ebaebc6bdccae270c0ed29fcd6744",
+ "ubicacionSha1": "cc970fa18db9d87fdb0a905a21f371825f396161",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:22:40.589Z",
+ "ubicacion": {
+  "estado": [
+   "b15"
+  ],
+  "notas_ingresos": [
+   "b33"
+  ],
+  "notas_gastos": [
+   "b35",
+   "b36",
+   "b37",
+   "b40"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b15",
+   "escala": "unidades",
+   "evidencia": "Columnas '2025 £' / '2024 £' (L208)"
+  },
+  {
+   "bloque": "b33",
+   "escala": "unidades",
+   "evidencia": "Columnas '2025 £' (L465)"
+  },
+  {
+   "bloque": "b35",
+   "escala": "unidades",
+   "evidencia": "Columnas '2025 £' (L487, L493)"
+  },
+  {
+   "bloque": "b36",
+   "escala": "unidades",
+   "evidencia": "Columnas '2025 £' (L506)"
+  },
+  {
+   "bloque": "b37",
+   "escala": "unidades",
+   "evidencia": "Columnas '2025 £' (L513)"
+  },
+  {
+   "bloque": "b40",
+   "escala": "unidades",
+   "evidencia": "Columnas '2025 £' (L545)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b15",
+   "linea": 210,
+   "etiqueta": "Turnover",
+   "actual": "7,214,063",
+   "anterior": "6,823,952",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 211,
+   "etiqueta": "Cost of sales",
+   "actual": "(6,948,641)",
+   "anterior": "(7,440,477)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 212,
+   "etiqueta": "Gross profit/(loss)",
+   "actual": "265,422",
+   "anterior": "(616,525)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 213,
+   "etiqueta": "Administrative expenses",
+   "actual": "(1,188,028)",
+   "anterior": "(1,237,070)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 214,
+   "etiqueta": "Other operating income",
+   "actual": "-",
+   "anterior": "277,740",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 215,
+   "etiqueta": "Operating loss",
+   "actual": "(922,606)",
+   "anterior": "(1,575,855)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 216,
+   "etiqueta": "Other interest receivable and similar income",
+   "actual": "-",
+   "anterior": "141",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 217,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(3,898)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 218,
+   "etiqueta": "",
+   "actual": "(3,898)",
+   "anterior": "141",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 219,
+   "etiqueta": "Loss before tax",
+   "actual": "(926,504)",
+   "anterior": "(1,575,714)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 220,
+   "etiqueta": "Tax on loss",
+   "actual": "327,092",
+   "anterior": "19,707",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 221,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(599,412)",
+   "anterior": "(1,556,007)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b33",
+   "linea": 467,
+   "etiqueta": "Ticket Sales",
+   "actual": "1,840,131",
+   "anterior": "1,983,714",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 468,
+   "etiqueta": "Football League income",
+   "actual": "2,363,353",
+   "anterior": "1,761,428",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 469,
+   "etiqueta": "Transfer fees",
+   "actual": "250,931",
+   "anterior": "427,500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 470,
+   "etiqueta": "Sundry Income",
+   "actual": "1,353,709",
+   "anterior": "1,163,948",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 471,
+   "etiqueta": "Academy income",
+   "actual": "555,635",
+   "anterior": "539,691",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 472,
+   "etiqueta": "Television and internet portal income",
+   "actual": "22,903",
+   "anterior": "136,263",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 473,
+   "etiqueta": "Contributions from support organisations",
+   "actual": "40,037",
+   "anterior": "48,756",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 474,
+   "etiqueta": "Food and Beverage sales",
+   "actual": "787,364",
+   "anterior": "762,652",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 475,
+   "etiqueta": "",
+   "actual": "7,214,063",
+   "anterior": "6,823,952",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b35",
+   "linea": 489,
+   "etiqueta": "Depreciation expense",
+   "actual": "67,925",
+   "anterior": "59,252",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b35",
+   "linea": 490,
+   "etiqueta": "Amortisation expense",
+   "actual": "75,667",
+   "anterior": "71,111",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b35",
+   "linea": 495,
+   "etiqueta": "Interest income on bank deposits",
+   "actual": "-",
+   "anterior": "141",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Other interest receivable and similar income"
+  },
+  {
+   "bloque": "b36",
+   "linea": 508,
+   "etiqueta": "Interest on obligations under finance leases and hire purchase contracts",
+   "actual": "3,898",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b37",
+   "linea": 515,
+   "etiqueta": "Wages and salaries",
+   "actual": "4,812,295",
+   "anterior": "4,889,580",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 516,
+   "etiqueta": "Social security costs",
+   "actual": "468,043",
+   "anterior": "457,694",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 517,
+   "etiqueta": "Pension costs, defined contribution scheme",
+   "actual": "72,640",
+   "anterior": "71,276",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 518,
+   "etiqueta": "",
+   "actual": "5,352,978",
+   "anterior": "5,418,550",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 548,
+   "etiqueta": "Arising from origination and reversal of timing differences",
+   "actual": "(327,092)",
+   "anterior": "(19,707)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 210,
+  "actual": "7,214,063"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 221,
+  "actual": "(599,412)",
+  "anterior": "(1,556,007)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los costos de personal de la nota 8 (L515-L518) sin asignarlos a un renglón del estado, ya que se reparten entre 'Cost of sales' y 'Administrative expenses'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La nota 8 (L512) no indica a qué renglón del estado corresponde; el personal está distribuido entre costo de ventas y administración.",
+   "bloques": [
+    "b37"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se tratan la depreciación y amortización de la nota 5 (L489-L490) como informativas, sin sumarlas a los gastos del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating loss",
+   "texto": "La nota 5 lista cargos incluidos dentro del resultado operativo, no un desglose completo de un renglón (L486).",
+   "bloques": [
+    "b35"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en libras (unidades). El estado no imprime total de gastos (Cost of sales + Administrative expenses). En la nota 10 el signo del impuesto está invertido respecto al estado (crédito). Turnover incluye Transfer fees."
+}

@@ -1,0 +1,43 @@
+{
+ "pdf": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "5ed4bb387edfdfc099c4291bd1cd2a0810c0ac27",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:17:17.985Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 35,
+   "lineas": [
+    1443,
+    1448
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF 'bolton-footballventures-group-accounts-2024-25-ixbrl.pdf' carece de un estado de resultados (profit and loss account) del ejercicio cerrado al 30-06-2025 legible en la transcripción?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La transcripción solo contiene un bloque con cifras, el de inversiones en subsidiarias (pág. 35, b1); el estado de resultados podría estar en páginas no transcritas (iXBRL).",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El único bloque con cifras (b1, pág. 35) es la nota de 'Shares in subsidiaries' (coste de inversiones en filiales), que no forma parte del estado de resultados. No hay estado de resultados consolidado ni individual en la transcripción; probablemente la extracción del iXBRL perdió las tablas. Conviene revisar el PDF original."
+}
