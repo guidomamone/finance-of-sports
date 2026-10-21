@@ -5,7 +5,7 @@
 // POR QUÉ (ok de Guido, 2026-10-17). Con dos sesiones en la misma carpeta cada una tenía que cuidarse de no commitear lo de la otra, y
 // los worktrees probados antes terminaban en conflictos. Dos causas: (1) todas editaban TODO, CHANGELOG y ESTADO; (2) cada carga regenera
 // lo mismo (ASSET_V de index.html, las páginas de fuentes/, ESTADO-clubes, club-index, rankings, sitemap). La (1) la resuelve una regla
-// (solo la principal escribe esos tres; ver la skill de arranque, worktree.md); la (2), `mergear`. Además, una copia nueva no tiene lo que
+// (solo la principal escribe esos tres; ver Admin/Archive/modo-varias-sesiones.md); la (2), `mergear`. Además, una copia nueva no tiene lo que
 // git ignora (los PDFs de Clubes/, las claves de Admin/api-keys/, las cachés de Generados/, tools/node_modules/): sin eso no corre nada; lo resuelve `preparar`.
 //
 // USO:

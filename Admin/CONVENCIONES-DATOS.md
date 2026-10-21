@@ -36,8 +36,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   resuelve el color de un club nuevo: skill `club-or-year-onboarding`, `club-nuevo.md`. De dónde salió el color de cada club: su
   `Admin/carga-clubes/<club>.md`. El color de las iniciales no se guarda: lo decide `textoSobre()` por contraste.
 
-- DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152, actualizada en la 155 cuando el
-  único que existía se borró). El proyecto existe porque sus números son verificables, así que un
+- DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO. El proyecto existe porque sus números son verificables, así que un
   archivo de datos de mentira es lo más peligroso que se le puede agregar. **Hoy no hay ninguno.**
   Si vuelve a hacer falta uno para prototipar —el caso real fue Guido pidiendo "el tener datos
   incompletos me limita la creatividad", con la condición que él mismo puso: "documentar bien lo que
@@ -53,15 +52,14 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
       "· INVENTADO" al lado del año en todos lados;
   (5) NO se copia a `data/` jamás: el día que ese club publique su balance real se carga leyendo el
       documento, no promoviendo el relleno;
-  (6) **NO QUEDA EN EL REPO MÁS ALLÁ DE LA SESIÓN QUE LO NECESITA** (condición nueva, Versión 155,
-      y la que faltaba). Netlify publica la raíz, y `netlify.toml` solo borra del deploy lo
+  (6) **NO QUEDA EN EL REPO MÁS ALLÁ DE LA SESIÓN QUE LO NECESITA**. Netlify publica la raíz, y `netlify.toml` solo borra del deploy lo
       interno (`Admin/`, con las notas de sourcing; `CLAUDE.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`). Todo lo demás
       que está trackeado es alcanzable por URL en `financeofsports.com`: la raíz, `data/`, `js/`, `fuentes/*.html` y las
       transcripciones de `Clubes/`. El relleno de los prototipos estuvo servido públicamente tres días sin
       que nadie se diera cuenta. Tenía su franja roja y nadie estaba linkeado a él, pero un sitio
       cuyo argumento entero es que sus números son verificables no puede servir números falsos desde
       su dominio. Vale para cualquier cosa que se deje en el repo "por las dudas".
-- NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO (Versión 137, decisión de arquitectura que salió
+- NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO (decisión de arquitectura que salió
   de un pushback de Guido: "si el usuario quiere ver cuánto generaba una liga en 2025 y 2024, 2023,
   2022, tiene que tener en cuenta que los clubes fueron cambiando"). `data/leagues.js` es el
   CATÁLOGO de ligas (nombre, país, deporte, escalón) y no tiene una sola línea de membresía. La
@@ -70,7 +68,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   `clubsOfLeagueYear(liga, ejercicio)`: si una función nueva necesita "los clubes de la liga L" sin
   año, está mal planteada. Para NAVEGAR sí existe `clubsOfLeague(L)` sin año, y su conteo significa
   "clubes con al menos un ejercicio cargado acá", que NO es "los clubes de la liga" y el sitio no
-  puede afirmar lo segundo. LA REGLA SUBE UN ESCALÓN (Versión 177): el TAMAÑO de la liga tampoco
+  puede afirmar lo segundo. LA REGLA SUBE UN ESCALÓN: el TAMAÑO de la liga tampoco
   puede ser un número suelto, porque también cambia por temporada, así que `LEAGUES[].totalClubs`
   se eliminó en vez de llenarse y el dato vive en `LEAGUE_SIZE_BY_YEAR` (liga, ejercicio) ->
   cuántos equipos, en los mismos `data/club-leagues/<iso2>.js`, y se lee con `leagueSizeAt(liga,
@@ -79,25 +77,22 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   `clubs[id].league` con "la liga de hoy" está prohibido: sería una segunda verdad sobre el
   mismo hecho. En el árbol del selector, un club aparece bajo cada liga en
   la que tiene un ejercicio cargado.
-- "SIN DATO" NO ES CERO (Versión 137 para la comparación, ampliado en la 152 a la ficha de
-  Finanzas). Un cero se lee como un dato, y este sitio no muestra datos que no tiene. Se muestra
+- "SIN DATO" NO ES CERO. Un cero se lee como un dato, y este sitio no muestra datos que no tiene. Se muestra
   "sin dato" y no "0,0 M USD" cuando la fuente no informa: deuda (los dos campos en null, o los dos
   en CERO EXACTO, que es como lo escriben los presupuestos), masa salarial que el documento no
   desglosa, un club sin padrón de socios publicado, y GASTOS — los 10 clubes japoneses tienen
   `expenseLines: []` y `officialTotalExpenses: null` porque la J.League publica el ingreso de cada
   club y no su estructura de costos. El resultado del ejercicio cae con los gastos: es el final de
   una cascada que arranca ahí.
-  LO QUE COSTÓ ENTENDER (to-do 31, abierto desde la Versión 137 y cerrado en la 152): esto no es un
+  LO QUE COSTÓ ENTENDER: esto no es un
   criterio de UNA vista. Mientras lo aplicó solo la comparación, la ficha de Finanzas de Cerezo
   Osaka decía "Gastos 0,0 M USD" y "Resultado neto +38,1 M USD" en el cuerpo de letra más grande de
   la página — ese club no ganó 38 millones, simplemente no sabemos qué gastó. Y arreglar solo los
   KPIs dejaba la tabla de abajo diciendo "Total Gastos 0,0" en la misma pantalla: media pantalla
   honesta es peor que ninguna, porque el visitante no sabe a cuál creerle. **Si aparece una vista
   nueva que muestre estos indicadores, aplica igual.**
-  OJO, esto es un criterio de la VISTA: el dato sigue diciendo 0 en el archivo del club. El criterio
-  general sigue abierto en la to-do 20(h).
-  Y LA LECCIÓN DE MECANISMO (Versión 167, tercera vez que aparece el mismo bug: la 140 en Inicio, la
-  152 en Gastos/Resultado, la 167 en Deuda neta): **el test de "la fuente no informa esto" va en UNA
+  OJO, esto es un criterio de la VISTA: el dato sigue diciendo 0 en el archivo del club.
+  Y LA LECCIÓN DE MECANISMO: **el test de "la fuente no informa esto" va en UNA
   función compartida, no escrito adentro de cada función de render.** Las tres veces la causa fue la
   misma — una vista tenía el test y la de al lado no, así que la misma pantalla se contradecía sola:
   el KPI publicaba "Deuda neta · 0,0 M USD" y tres centímetros abajo el aviso decía que ese cero no
@@ -106,8 +101,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   ya computado), los dos en `js/finanzas-render.js`. Una vista nueva que muestre deuda llama a uno
   de esos dos; si necesita un test que todavía no existe, se escribe como función aparte y la usan
   todas, nunca en línea.
-- INGRESO EXTRAORDINARIO: SE QUEDA EN `exceptional_items` (decisión de Guido, 2026-09-20, to-do
-  20(d) cerrado). Las 5 líneas de ingreso extraordinario de Racing (2009, 2010, 2012, 2014:
+- INGRESO EXTRAORDINARIO: SE QUEDA EN `exceptional_items` (decisión de Guido). Las 5 líneas de ingreso extraordinario de Racing (2009, 2010, 2012, 2014:
   desafectaciones de previsiones y condonaciones) usan `exceptional_items`, que es una categoría de
   la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario
   con fila propia en Formato simplificado, que eran 4 ediciones chicas y no movía ningún número— y
@@ -118,7 +112,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   con su `rawLabel` textual, que dice "(extraordinario)". Los 5 hallazgos están silenciados en
   `tools/audit-ignore.json` con este motivo escrito. **No recategorizar sin volver a preguntarle.**
 - **No se recategorizan líneas ya cargadas** para unificar criterios entre clubes; solo un error claro (un rubro del lado o la categoría evidentemente equivocados). Una inconsistencia entre clubes no abre un to-do.
-- "LA FUENTE REPORTA CERO" NO ES "LA FUENTE NO LO DESGLOSA" (to-do 20(h), Versión 172, decisión de
+- "LA FUENTE REPORTA CERO" NO ES "LA FUENTE NO LO DESGLOSA" (decisión de
   Guido). Es la misma familia que "SIN DATO NO ES CERO" de más arriba, pero un nivel más abajo: no
   en los KPIs, sino en cada fila de Formato simplificado.
   LA REGLA, implementada en `bucketize()` (`js/finanzas-calc.js`): **si una sección tiene un bolsón
@@ -133,7 +127,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   nivel división. Un periodista que comparaba Gamba con Real Madrid leía que un club de primera
   japonesa no cobra derechos de televisación.
   NO MUEVE NINGÚN NÚMERO: las filas marcadas valen 0, los totales son idénticos.
-- LA LIGA DE UN EJERCICIO ES LA DEL CIERRE (Versión 132, decidido por Guido). Cuando un ejercicio
+- LA LIGA DE UN EJERCICIO ES LA DEL CIERRE (decidido por Guido). Cuando un ejercicio
   cruza dos torneos (los argentinos cierran el 30/6 y la temporada va de febrero a diciembre), en
   `data/club-leagues.js` se anota la división en la que estaba el club EL DÍA QUE CERRÓ EL BALANCE.
   Es la misma regla que el proyecto ya usa para atribuir la gestión presidencial, y por eso se
@@ -141,7 +135,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   los ingresos del ejercicio se hayan generado en esa categoría, y cuando el club ascendió o
   descendió en el medio, la mitad de la plata viene de la otra. Si alguna vez eso importa para una
   comparación, se agrega el matiz en el aviso, no cambiando el criterio.
-- EL `clubId` DE UN CLUB NUEVO LLEVA EL PAÍS AL FINAL (Versión 129, decidido antes del selector
+- EL `clubId` DE UN CLUB NUEVO LLEVA EL PAÍS AL FINAL (decidido antes del selector
   jerárquico). `racingsantander-es`, `nacional-uy`, `independiente-co`. Por qué: el `clubId` no es
   una clave más, nombra el archivo de datos (el JSON `data/<país>/<clubId>.json` y su `<clubId>-data.js` generado, por convención de
   `loadClubData()`) y prefija cada `sourceId` (`racing-ar-balance-2009`), así que una colisión se paga
@@ -162,8 +156,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   compartidos, búsquedas guardadas y `fuentes/<id>.html` indexadas con el id viejo. Para el redirect de
   `fuentes/` se agregan las dos reglas 301 a `netlify.toml`. `node tools/audit.js` vigila el formato
   (`clubid-sin-pais`, P1) y el mapa (`alias-roto`, P1). Los tools aceptan un id viejo (`normalizarId()`).
-- `note` ES INTERNA Y NO SE RENDERIZA NUNCA; LO QUE VE EL VISITANTE ES `publicNote` (Versión 127,
-  después de que Guido revisara la primera versión de la pestaña Fuentes: "veo que en Salvedades a
+- `note` ES INTERNA Y NO SE RENDERIZA NUNCA; LO QUE VE EL VISITANTE ES `publicNote` (después de que Guido revisara la primera versión de la pestaña Fuentes: "veo que en Salvedades a
   veces pones 'descargado por Guido' o direcciones que son de mi computadora. Eso no puede
   aparecerle al usuario"). `sources[].note` es la nota que una sesión le deja a la siguiente: dónde
   quedó la transcripción, cómo se leyó el PDF, qué falta. Las 91 entradas la tienen y 64 mencionan
@@ -175,12 +168,12 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   sin que nadie escriba una línea. Lo vigila `node tools/audit.js`: `nota-publica-con-interno` (P1)
   si un `publicNote` menciona un nombre propio, una ruta o un detalle de transcripción, y
   `note-interna-renderizada` (P1) si alguien vuelve a interpolar `.note` dentro de HTML.
-- UN EJERCICIO ANTERIOR AL EURO SE CARGA EN SU MONEDA LEGADO (Versión 607, decisión de Guido con Lazio 1998-99 a 2000-01 en liras). Para
+- UN EJERCICIO ANTERIOR AL EURO SE CARGA EN SU MONEDA LEGADO (decisión de Guido con Lazio 1998-99 a 2000-01 en liras). Para
   sumar otra moneda (DEM, ESP, FRF, NLG, PTE...): la entrada en CURRENCY_META con `euroFijo` (unidades por 1 EUR, paridad irrevocable del
   31/12/1998), su cotización de cierre en FX_CLOSE (`XXX@AAAA-MM-DD`, en data/currency-map.js) y un ajuste manual `moneda` en cada documento
   (tools/ajustes.mjs). `toDisplayValue` (js/finanzas-calc.js) ya la muestra en EUR por la paridad fija. Los deflactores llegan hasta 1995
   (tools/fetch-fx-reference.mjs --deflactores): un ejercicio anterior necesita bajar ese corte.
-- PROCEDENCIA DEL TIPO DE CAMBIO: TODO `fx` DECLARA DE DÓNDE SALIÓ (Versión 125, a pedido de Guido:
+- PROCEDENCIA DEL TIPO DE CAMBIO: TODO `fx` DECLARA DE DÓNDE SALIÓ (a pedido de Guido:
   "si yo mañana quiero auditar los tipos de cambio usado para cada club para cada año y entender si
   salieron de internet o del club, ¿puedo hacerlo sin drama?", la respuesta era que no). Cada
   ejercicio lleva `fxSource` con uno de los 7 valores de `FX_SOURCE` (`data/currency-map.js`), o
@@ -215,7 +208,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   PRIMER NIVEL (`items` no lo mira `sumCat()`/`computeYearGeneric()`, así que lo enterrado ahí desaparece de "Formato simplificado"). Regla
   completa: `.claude/skills/club-data-mapping/SKILL.md` sección 1; el ejemplo de Racing: `referencia/casos-por-pais-y-formato.md`, "Ejemplo
   largo"; cómo detectarlo probando en el navegador (mirar CADA bucket, no solo el total): `Admin/PANTALLA.md`, ex §8.
-- OJO REGLA REFORZADA (bug real, Versión 30): NUNCA cargar datos al sitio
+- OJO REGLA REFORZADA: NUNCA cargar datos al sitio
   extrayendo un PDF directo, sin pasar antes por una transcripción completa
   a Markdown (CLAUDE.md ya lo decía, pero se saltó una vez con el
   presupuesto 2026/27 y se perdió detalle real. Guido lo notó comparando
@@ -227,13 +220,13 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   los demás ejercicios no tienen (Televisión/Premios por competencias en
   Ingresos; Organización de partidos/Otras secciones deportivas/
   Administración y gastos generales en vez de un solo "Otros gastos"),
-  es a propósito (Versión 30/31): ese es el único ejercicio con el
+  es a propósito: ese es el único ejercicio con el
   desglose fino disponible (ver presupuesto-26-27.md), así que se usa donde
   hay dato real en vez de forzar una categoría vacía o aproximada en todos
   los ejercicios por igual. Si se carga un balance nuevo con este mismo
   nivel de detalle (ej. el resto de los años de Boca, to-do #2), evaluar si
   amerita el mismo tratamiento especial dentro de `simplifiedReportForBoca()`.
-## REGLA (a pedido de Guido): un presupuesto en año CALENDARIO se reconstruye a temporada, nunca se carga tal cual (ex §15 del skill de onboarding, Versión 471)
+## REGLA (a pedido de Guido): un presupuesto en año CALENDARIO se reconstruye a temporada, nunca se carga tal cual
 
 
 Motivo del pedido: Instituto ACC publicó su Presupuesto 2025 (y sus Premisas) en año calendario
@@ -268,7 +261,7 @@ que se lea como un ejercicio completo raro). El documento y el hallazgo quedan d
 futuro aparece el Presupuesto 2024 o 2026 del mismo club, se pueda completar una de las 2 temporadas
 y recién ahí cargarla.
 
-**Balances parciales (de menos de 12 meses), to-do 190, Versión 631.** La misma regla vale para un BALANCE de menos de 12 meses (un cambio de
+**Balances parciales (de menos de 12 meses).** La misma regla vale para un BALANCE de menos de 12 meses (un cambio de
 fecha de cierre, un semestral): no se carga solo. Va a `Admin/registros/documentos-parciales.txt` (no a `documentos-descartados.txt`, que es para lo que no
 sirve), con lo que cubre y el tramo que falta; `lote.mjs` lo saltea y `tools/estado.mjs` lo lista en cada corrida con lo que falta, y la ficha del club
 en `Admin/sourcing/<País>/<Club>.md` dice qué tramo buscar. CÓMO SE JUNTAN DOS TRAMOS cuando aparece el que falta: (1) tienen que ser el mismo perímetro
@@ -279,19 +272,19 @@ tramo y sus fechas. Si alguna de esas condiciones no se cumple (perímetro o mon
 quedan como parciales. Si un tramo es parte de un ejercicio cuyo balance anual completo existe (Juve Stabia: semestral al 31/12/2024 del ejercicio
 2024-25), lo que se busca es ese balance anual, no el otro semestre.
 
-**Primer ejercicio de una sociedad nueva (decisión de Guido, 2026-10-14).** Un período de menos de 12 meses SIN otro tramo posible se carga como el
+**Primer ejercicio de una sociedad nueva (decisión de Guido).** Un período de menos de 12 meses SIN otro tramo posible se carga como el
 año: es el primer ejercicio de una sociedad que antes no existía (una ΠΑΕ recién constituida) y, como la liga no se juega todos los meses, contiene
 la temporada entera del club. La señal sale del propio documento: la columna del año anterior no tiene ningún importe distinto de cero (o no
 existe). Casos: Kifisia 2022 (09/08/2021 – 30/06/2022, sin columna) y Volos 2019 (24/07/2018 – 30/06/2019, la plantilla griega imprime la
 columna 2017-2018 toda en 0,00). Un cambio de cierre o un semestral siempre tienen importes del año anterior y siguen siendo parciales. La
 fuente lleva `publicNote` "Primer ejercicio de la sociedad: del ... al ... (N meses)". Lo aplica `tools/cargar.mjs` (sin cola).
-Lo mismo vale para un primer ejercicio de MÁS de 12 meses (decisión de Guido, 2026-10-19): la sociedad se constituyó antes de la temporada
+Lo mismo vale para un primer ejercicio de MÁS de 12 meses (decisión de Guido): la sociedad se constituyó antes de la temporada
 y su primer cierre llega 14 a 18 meses después. Se carga como el año del cierre, con los importes tal cual (sin prorratear: el fútbol
 arranca con la temporada) y la misma nota. Casos: Anderlecht 2011 (24/02/2010 – 30/06/2011, 16 meses; vendió 39,1 M y en 2012, de 12
 meses, 67,9 M), RAAL La Louvière 2018, Sint-Truiden 2013 y Zulte Waregem 2012. Un cambio de cierre largo (Westerlo 2015, 01/01/2014 –
 30/06/2015) tiene importes del año anterior y no entra por esta regla, sino por la siguiente.
 
-**Ejercicio de transición de más de 12 meses por cambio de cierre (votación, 2026-10-20, 2 a 1).** Un ejercicio largo que SÍ trae importes del
+**Ejercicio de transición de más de 12 meses por cambio de cierre (votación, 2 a 1).** Un ejercicio largo que SÍ trae importes del
 año anterior, contiguo con el anterior y que contiene la temporada entera, se carga como el año del cierre, con los importes tal cual (sin
 prorratear: prorratear inventa un desglose mensual que el documento no trae) y `publicNote` con las fechas y los meses. Sin tope de meses: un
 tope contradiría a Anderlecht 2011 (16 meses) ya cargado, y ningún caso conocido pasa de 18. Casos: Westerlo 2015 (01/01/2014 – 30/06/2015,
@@ -313,7 +306,7 @@ sin ajustar ni anualizar: la realidad fue parcial, no el documento. Dentro de es
 signo no se tocan: no disparan por la pandemia y son los que atajan un error de unidad. En pantalla, esos ejercicios llevan la marca «COVID»; no hay
 `publicNote`. Casos: AEK 2021 y Asteras 2021 (taquilla en 0 real).
 
-**Ejercicio de 11 meses por cambio de cierre (decisión de Guido, 2026-10-15).** Cuando un club pasa el cierre de julio a junio, el ejercicio
+**Ejercicio de 11 meses por cambio de cierre (decisión de Guido).** Cuando un club pasa el cierre de julio a junio, el ejercicio
 de transición (1 de agosto a 30 de junio, 11 meses) se carga como el año: contiene la temporada entera y no hay otro tramo que buscar. Casos:
 Benfica 2007-08 ("período de 11 meses, que compreende o período de 1 de Agosto de 2007 a 30 de Junho de 2008") y Sporting 2003-04. La
 fuente lleva `publicNote` con las fechas y los meses. Un semestral o un tramo que deja afuera parte de la temporada sigue siendo parcial.
@@ -325,7 +318,7 @@ cierre, y el siguiente cierra 12 meses después.
 documento (todas las demás 11 columnas van ene-25 a nov-25, y el total anual solo cierra si esa
 columna es diciembre del MISMO año 2025), no un error de transcripción.
 
-## REGLA: deducciones de ingresos que el documento no abre por tipo de ingreso (to-do 138, hallazgo 11, 2026-10-05)
+## REGLA: deducciones de ingresos que el documento no abre por tipo de ingreso
 
 Cuando el documento imprime UNA línea de deducciones ("(-) Deduções da receita", tributos y descuentos sobre el ingreso bruto) sin decir a
 qué ingreso corresponde cada parte, va ENTERA a `other_income`, en negativo. No se reparte entre TV, entradas, patrocinio, etc.: repartirla
@@ -334,31 +327,31 @@ sería inventar una apertura que la fuente no da. Cuando el documento sí la abr
 años `other_income` puede quedar negativo (Goiás 2008-2017). Una auditoría que lo vea no lo reabre; si el signo es lo que la alarma, las
 líneas verificadas están en `tools/audit-ignore.json`.
 
-## REGLA: una línea que junta dos conceptos se carga entera en una categoría, y el año dice dónde quedó la otra (`incluidoEn`, Versión 509)
+## REGLA: una línea que junta dos conceptos se carga entera en una categoría, y el año dice dónde quedó la otra
 
 Cuando el documento junta dos conceptos en UNA línea sin separarlos (Bahia: "Sócios e bilheteria"; Vitória: premios de copa + socio-hincha;
 América Mineiro: "atividades sociais", que puede incluir cuotas), la línea va entera a la categoría principal y NO se reparte. En el
 `fiscalYearMeta` del año (en el JSON, `adjustments.included_in`) se agrega `incluidoEn: { <categoría que queda en 0>: '<categoría donde está> }'`, por ejemplo
 `{ member_dues: 'matchday_competition' }`. La vista simplificada de Finanzas pinta entonces "Dentro de otro rubro" (con el nombre de la fila
-en el bocadillo; textos de Guido, Versión 515) en vez de $0, sin tocar
+en el bocadillo; textos de Guido) en vez de $0, sin tocar
 el valor (sigue siendo el número 0, así que los totales no cambian). Una auditoría no lo reabre como "socios en 0".
 Si no está confirmado que el concepto esté en esa línea (América Mineiro: "atividades sociais"), la forma es
 `{ member_dues: { en: 'other_income', posible: true } }` y el sitio dice "Posiblemente dentro de otro rubro". La decisión se guarda también como
 ajuste manual `incluye` (`tools/ajustes.mjs`), para que una recarga con `cargar.mjs` la conserve.
-SIN DECISIÓN DE GUIDO, POR PRECEDENTE (Versión 517, to-do 140(i)): si el año tiene un renglón "sin desglosar por la fuente" y una fila en
+SIN DECISIÓN DE GUIDO, POR PRECEDENTE: si el año tiene un renglón "sin desglosar por la fuente" y una fila en
 "—" tiene plata en TODOS los otros balances desglosados del club (al menos 2; presupuestos no cuentan), `tools/dentro-de-otro.mjs` escribe
 `{ en:'lump_football_operations(_expense)', posible:true, por:'precedente' }`. Esas marcas (con `por`) son de la tool: cada corrida las
 borra y las recalcula; nunca se editan a mano. Para corregir una, un ajuste `cero-real` (el 0 es real) o `incluye` (dónde está), y correr
 la tool otra vez.
 
-GESTIÓN DE JUGADORES NETA DE ROMA (Versión 610, to-do 182, decisión de Guido del 2026-10-08). En Roma 2007, 2009, 2012 y 2013 a 2017 la compraventa de jugadores sale neta en el estado
+GESTIÓN DE JUGADORES NETA DE ROMA (decisión de Guido). En Roma 2007, 2009, 2012 y 2013 a 2017 la compraventa de jugadores sale neta en el estado
 ("Gestione operativa netta calciatori", 4.428 en 2007, 9.060 en 2012) y se carga neta como un ingreso si es positiva (ajuste `fila`, lado ingreso, la línea de esa fila; no la nota con el bruto).
 Desde 2018 el estado IFRS la trae bruta ("Ricavi da gestione dei diritti pluriennali" en ingresos) y se carga bruta. Los ingresos de los dos regímenes no son comparables: el chequeo del año
 vecino los marca "otro régimen" ("no se puede comparar"), no como error. Con el neto, el ingreso de Roma 2007 (162.017 sin las existencias) coincide con la columna 2007 del documento de 2008.
 Sus totales impresos de ingresos y gastos excluyen amortizaciones y provisiones que se imprimen debajo, así que "total de ingresos" y "total de gastos" quedan en rojo aunque el resultado
 cierre: se aceptan por la cola, como Roma 2018. Falta, si Guido la quiere, una nota pública en la página del club que lo avise.
 
-UN COMPARATIVO REEXPRESADO NO ES LA TRANSCRIPCIÓN DEL AÑO (Versión 610, Salernitana 2022, decisión de Guido). Si el PDF de un año es un escaneo ilegible, el año se puede cargar con las filas de
+UN COMPARATIVO REEXPRESADO NO ES LA TRANSCRIPCIÓN DEL AÑO (Salernitana 2022, decisión de Guido). Si el PDF de un año es un escaneo ilegible, el año se puede cargar con las filas de
 primer nivel de la columna de ese año en el documento del año siguiente, sin sub-filas, si cierra con el resultado impreso. Hay que dejar escrito en `.filas.json` (`observaciones`) de dónde sale, y en
 `Admin/dudas-por-club.md` la pregunta al club por una copia legible. El comparativo puede estar reclasificado entre rubros de costos (Salernitana: servicios externos y otros gastos, misma suma).
 
@@ -381,7 +374,7 @@ del club (`Admin/carga-clubes/<clubId>.md`); la página muestra el documento fue
 
 **Dos sociedades del mismo club con cuentas del mismo ejercicio** (el club y su holding, como Aston Villa FC Ltd y NSWE Sports): entra
 la sociedad que el sitio ya publica para ese club, por coherencia de la serie, y el documento de la otra va a
-`Admin/registros/documentos-descartados.txt` (decisión de Guido, 2026-10-19, Reino Unido).
+`Admin/registros/documentos-descartados.txt` (decisión de Guido, Reino Unido).
 
 **Un consolidado de grupo con negocios ajenos al club** (el holding del dueño que consolida el club y otras empresas) vale como el
 documento del club si cumple dos condiciones:
@@ -396,11 +389,11 @@ Si el documento no desglosa lo ajeno, vale, salvo que el informe de gestión o l
 actividad principal del grupo con cifras propias. En ese caso, y cuando lo desglosa y pasa el 10 %, el documento va a descartados y el
 club se busca en las cuentas de su propia sociedad. Casos: Fleetwood Town con Jaymel Ltd (energía; fútbol 28 % en 2022-23 y 45 % en
 2023-24, vendido en mayo de 2024: descartados) frente a Arsenal (inmobiliaria, menos del 1 %), Chelsea (hotel y estacionamientos en
-Stamford Bridge) y Newcastle (productora de cine dentro de Commercial), que se cargan (votación, 2026-10-21, 3 a 0).
+Stamford Bridge) y Newcastle (productora de cine dentro de Commercial), que se cargan (votación, 3 a 0).
 
 ## REGLA: qué entidad se carga cuando el fútbol está en una sociedad aparte (club asociación y SAD/SDUQ/SAF/AS)
 
-Decisión de Guido (2026-10-15, Portugal). En muchos países el fútbol profesional está en una sociedad (SAD o SDUQ en Portugal) y el club
+Decisión de Guido (Portugal). En muchos países el fútbol profesional está en una sociedad (SAD o SDUQ en Portugal) y el club
 asociación es dueño de parte de ella y lleva lo demás. No se generaliza la entidad de hoy al pasado: cada ejercicio se mira solo.
 
 1. **Un solo documento del ejercicio: se carga**, sea del club o de la sociedad. Puede ser que ese año el fútbol estuviera en el club
@@ -415,12 +408,12 @@ asociación es dueño de parte de ella y lleva lo demás. No se generaliza la en
 
 ## REGLA: dos documentos distintos del mismo club y ejercicio
 
-Decisión de Guido (2026-10-17, limpieza de las transcripciones de Países Bajos). Cuando hay dos documentos DISTINTOS del mismo club y
+Decisión de Guido (limpieza de las transcripciones de Países Bajos). Cuando hay dos documentos DISTINTOS del mismo club y
 ejercicio (p. ej. el jaarverslag del club y el depósito en la KvK): entra el que trae el estado de resultados completo de la entidad del
 club; si los dos lo traen, el más completo (con notas). El otro va a `Admin/registros/documentos-descartados.txt`. Los idénticos byte a
 byte no hace falta: el inventario los marca `duplicado`.
 
-## REGLA: la tienda del club va a la categoría de merchandising que ya existe (Guido, 2026-10-20)
+## REGLA: la tienda del club va a la categoría de merchandising que ya existe (Guido)
 
 Los ingresos de la tienda del club (Rosario Central, Talleres) van a `sponsorship_commercial`, que ya incluye el merchandising. No se crean
 `merchandise_sales` ni `cost_of_goods_sold`. El costo de la mercadería vendida queda donde está cargado.
@@ -429,7 +422,7 @@ CATEGORÍA (prompt, futbol): los ingresos de la tienda del club (merchandising, 
 EJEMPLO-CATEGORÍA: rosariocentral-ar | revenue | Ingresos por ventas tiendas | sponsorship_commercial
 EJEMPLO-CATEGORÍA: talleres-ar | revenue | Ingresos por tienda netos de costo de venta | sponsorship_commercial
 
-## REGLA: `grossDebt` con leasing IFRS 16 o deuda con partes relacionadas (votación 3 a 0, 2026-10-20)
+## REGLA: `grossDebt` con leasing IFRS 16 o deuda con partes relacionadas (votación 3 a 0)
 
 Vale para todos los países la regla de `club-data-mapping/referencia/formato-simplificado.md` ("Deuda financiera sin precedente del club"): el
 leasing IFRS 16 queda fuera si tiene fila propia (dentro solo si viene mezclado en las deudas financieras sin separar); la deuda con la
@@ -437,7 +430,7 @@ controlante, los accionistas o las partes relacionadas cuenta solo si la nota la
 AGF (solo leasing: 0), Silkeborg (0), SønderjyskE (sin vinculadas), Chelsea (0). Botafogo-SP 2024 y Fulham 2024 dependen de cómo la nota llame
 al saldo.
 
-## REGLA: la venta o cesión de un % de derechos de TV o comerciales a un fondo es `other_income`, ingreso único (votación 3 a 0, 2026-10-20)
+## REGLA: la venta o cesión de un % de derechos de TV o comerciales a un fondo es `other_income`, ingreso único (votación 3 a 0)
 
 Va como `other_income`, no como `broadcasting` ni `exceptional_items`: es una operación patrimonial, no la TV del año. La `publicNote` del año dice
 que es única (y, si se recompra, lo que pasa después). Casos: Ceará 2024 ("Venda de direitos de participação", R$60,1 M, 37 % de los ingresos;
@@ -447,7 +440,7 @@ silencia en `tools/audit-ignore.json` con el motivo, no se recategoriza.
 CATEGORÍA (prompt): la venta o cesión de un porcentaje de derechos de TV o comerciales a un fondo (o a la liga) va a other_income, ingreso único; no a broadcasting ni a exceptional_items.
 EJEMPLO-CATEGORÍA: ceara-br | revenue | Venda de direitos de participação (LFF) | other_income
 
-## REGLA: el intangible belga "Concessies, octrooien, licenties…" no es de jugadores sin confirmación del documento (votación 3 a 0, 2026-10-20)
+## REGLA: el intangible belga "Concessies, octrooien, licenties…" no es de jugadores sin confirmación del documento (votación 3 a 0)
 
 La amortización de ese intangible va a `depreciation` y el residuo de "Andere bedrijfsopbrengsten" a `other_income`, salvo que el propio
 documento (una nota de reglas de evaluación, el Jaarverslag con la cifra) diga que es de jugadores o de transferencias: entonces
@@ -457,27 +450,27 @@ confirmación: pasa a `depreciation` el 1,11 M y a `other_income` el 8,54 M). We
 
 CATEGORÍA (prompt, futbol): en Bélgica, el intangible «Concessies, octrooien, licenties…» y su amortización van a depreciation, y el residuo de «Andere bedrijfsopbrengsten» a other_income, salvo que el documento diga que es de jugadores o de transferencias (entonces player_amortisation y player_sales); no agregues palabras que el documento no imprime.
 
-## REGLA: la ganancia por vender inversiones o filiales (también a la matriz) va a `assetSales`, no a los ingresos (votación 3 a 0, 2026-10-20)
+## REGLA: la ganancia por vender inversiones o filiales (también a la matriz) va a `assetSales`, no a los ingresos (votación 3 a 0)
 
 "Profit on disposal of investments" y parecidos (venta de una filial o de una participación, incluida la deconsolidación intragrupo) se cargan en
 el meta `assetSales` del año, no como línea de ingresos: así los ingresos cierran con el turnover impreso y el resultado con el impreso. Casos:
 Everton 2025 (£49,2 M, venta de Everton FC Women y Goodison Park Stadium a la matriz Roundhouse), Newcastle 2025 (venta de una filial) y Brentford 2025.
 
-## REGLA: los bonos de fichaje o de trayectoria pagados a jugadores y técnicos por nombre son `wages_squad` (votación 3 a 0, 2026-10-20)
+## REGLA: los bonos de fichaje o de trayectoria pagados a jugadores y técnicos por nombre son `wages_squad` (votación 3 a 0)
 
 Un bono pagado a personas, sin contrato de pase con otro club, es remuneración, no `player_amortisation` (que es adquisición de pases a otros clubes).
 Caso: Deportivo Pereira 2025, "Trayectoria deportiva" (8,9 % de los gastos).
 CATEGORÍA (prompt, futbol): un bono de fichaje o de trayectoria pagado a jugadores y técnicos por nombre, sin contrato de pase con otro club, va a wages_squad, no a player_amortisation.
 EJEMPLO-CATEGORÍA: deportivopereira-co | expense | Trayectoria deportiva | wages_squad
 
-## REGLA: `officialPAT` de un consolidado alemán con partner silencioso o minoritarios es el resultado ANTES de esas asignaciones (votación 3 a 0, 2026-10-20)
+## REGLA: `officialPAT` de un consolidado alemán con partner silencioso o minoritarios es el resultado ANTES de esas asignaciones (votación 3 a 0)
 
 Se carga la línea del resultado consolidado total (Konzernjahresüberschuss), no la que queda después de la asignación al partner silencioso o a otros
 socios; la asignación no es un impuesto. Criterio de Augsburg y Eintracht Frankfurt. Caso: Hoffenheim 2023/24 y 2024/25 (línea 14: +1,268 M y +1,100 M
 en vez de la línea 16: -0,368 M y -0,189 M; `tax` deja de absorber la asignación). Pendiente de revisar: Stuttgart carga el resultado después de
 minoritarios y suma el NCI a `tax`, el criterio contrario.
 
-## REGLA: una revaluación de jugadores o una fila de valor de jugadores sin explicar va a `other_income`, nunca a `player_sales` (votación 3 a 0, 2026-10-20)
+## REGLA: una revaluación de jugadores o una fila de valor de jugadores sin explicar va a `other_income`, nunca a `player_sales` (votación 3 a 0)
 
 `player_sales` es plata que entró por una venta. Una revaluación o un incremento de valor de jugadores (sin cobro en el ejercicio) va a `other_income`;
 si el documento no explica la fila, la `publicNote` del año lo dice y no afirma que sea no-cash ni extraordinaria. El porcentaje alto se silencia en
@@ -486,13 +479,13 @@ contable valúa a costo, sin nota que la explique): `other_income`. Estudiantes 
 de los ingresos; balance con "Jugadores destinados a la venta" y ventas pactadas después del cierre): estaba en `player_sales`, pasa a `other_income`
 (2 votos a 1; Onboarding verifica antes la nota del documento y revisa que 2024-25 no vuelva a contar esas ventas).
 
-## REGLA: el ingreso por cesión (préstamo) de jugadores sigue a cómo lo imprime el documento (votación, 2026-10-20)
+## REGLA: el ingreso por cesión (préstamo) de jugadores sigue a cómo lo imprime el documento (votación)
 
 Si el documento lo imprime como línea propia ("Cesiones" de Getafe, "Ingresos por cesiones (préstamo de jugadores)" de Osasuna, "Prestamos jugadores" de Boca
 y Gimnasia), va a `player_sales`. Si viene dentro de "Otros ingresos" sin desglose (Mallorca 2025, 0,233 M, 0,3 % de los ingresos; Oviedo), queda en
 `other_income`: no se inventa un desglose que el documento no da (la diferencia es inmaterial). Votos: C, A, A; los tres coinciden en todo lo material.
 
-## REGLA: el "derecho de tanteo" cobrado va a `other_income`, no a `player_sales` (votación 3 a 0, 2026-10-20)
+## REGLA: el "derecho de tanteo" cobrado va a `other_income`, no a `player_sales` (votación 3 a 0)
 
 Un ingreso por derecho de tanteo que el documento no liga a una transferencia ya hecha ni a "Ingresos venta de jugadores" va a `other_income`: en
 `player_sales` el lector entendería que se vendió un jugador. Si el documento lo liga a una venta concreta, vuelve a `player_sales`. Caso: Godoy Cruz 2020,
@@ -502,7 +495,7 @@ EJEMPLO-CATEGORÍA: godoycruz-ar | revenue | Ingreso por Derechos de Tanteo | ot
 
 ## REGLA: entidades del club, grupos multiclub e ingresos de las otras entidades
 
-Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.jsonl` (cada línea con su cita) y lo verifica
+Decisiones de Guido. El registro es `Admin/registros/entidades.jsonl` (cada línea con su cita) y lo verifica
 `tools/entidades.mjs`.
 
 - Ingresos de una entidad que no se carga: todos los renglones de ingresos de su estado de resultados, sin la ganancia por su parte de la
@@ -512,15 +505,14 @@ Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.json
 - La pertenencia de un club a un grupo puede citarse con una fuente externa (url y fecha) cuando el balance no lo dice.
 - Un dueño persona (Marinakis, Friedkin) cuenta como grupo, igual que una empresa, con el nombre que imprimen los documentos.
 - Cuando el balance no dice quién es el dueño de una sociedad intermedia, la cita se busca en el registro público (Companies House, PSC)
-  antes que deducirla (Guido, 2026-10-18).
-- Un club que no cambia de entidad ni de perímetro lleva UNA línea `carga-club` con un rango de ejercicios y una cita (to-do 298 ad, Guido
-  2026-10-19), en lugar de una línea `carga` por año: cada ejercicio cargado dentro del rango que no tenga su propia línea toma esa entidad.
+  antes que deducirla (Guido).
+- Un club que no cambia de entidad ni de perímetro lleva UNA línea `carga-club` con un rango de ejercicios y una cita (Guido), en lugar de una línea `carga` por año: cada ejercicio cargado dentro del rango que no tenga su propia línea toma esa entidad.
   Al dar el alta de un club con dueño se agrega una vez; así los años que se cargan después ya muestran su estructura. Una `carga`
   explícita del mismo año gana; dos rangos del mismo club no se pisan. Un rango no sirve para un ejercicio que suma dos entidades.
 
 ## REGLA: el dictamen del auditor (registro de auditoría)
 
-Criterio de Guido (2026-10-18), también en el encabezado de `tools/auditoria.mjs`. El vocabulario es provisorio y se ajusta con los casos.
+Criterio de Guido, también en el encabezado de `tools/auditoria.mjs`. El vocabulario es provisorio y se ajusta con los casos.
 
 - Un párrafo de énfasis sobre la continuidad sin "incertidumbre material" no es duda sobre la continuidad (`continuidad: false`).
 - Alcanza el título del párrafo para clasificar; manda el párrafo de opinión sobre el título de la base.
@@ -530,20 +522,20 @@ Criterio de Guido (2026-10-18), también en el encabezado de `tools/auditoria.mj
 
 ## REGLA: bonos convertibles en la deuda
 
-Decisión de Guido (2026-10-18, HSV). Un bono convertible común (Wandelschuldverschreibung dentro de las deudas) es deuda financiera y entra
+Decisión de Guido (HSV). Un bono convertible común (Wandelschuldverschreibung dentro de las deudas) es deuda financiera y entra
 en `grossDebt` (HSV 2024: 57.848 TEUR con la WSV de 30.000). Un convertible con conversión OBLIGATORIA en acciones, que el documento muestra
 como partida especial después del patrimonio (Sonderposten nach dem Eigenkapital), no es deuda (HSV 2025: 22,03 M, sin la WSV).
 
-- INGRESOS DE LA OTRA ENTIDAD (Guido delegó en la principal, 2026-10-18): se suman todos los renglones de ingresos de su estado de
+- INGRESOS DE LA OTRA ENTIDAD (Guido delegó en la principal): se suman todos los renglones de ingresos de su estado de
   resultados, incluidos los "Juros e rendimentos similares obtidos"; solo queda afuera lo que se contaría dos veces (la ganancia por la parte
   de la SAD, "Ganhos imputados de subsidiárias").
 - DOS INFORMES DEL AUDITOR EN EL MISMO DOCUMENTO (individual y consolidado): la línea de auditoría usa el del perímetro que publica el sitio
-  (Guido, 2026-10-18: "coherencia de perímetro"). El otro se transcribe pero no se cita.
-- ESTADIO Y SPONSOR DE UN AÑO DE LIGA AMATEUR (Guido, 2026-10-18): la compuerta de la carga lo acepta sin sponsor si tiene el estadio con
+  (Guido: "coherencia de perímetro"). El otro se transcribe pero no se cita.
+- ESTADIO Y SPONSOR DE UN AÑO DE LIGA AMATEUR (Guido): la compuerta de la carga lo acepta sin sponsor si tiene el estadio con
   fuente. En las ligas amateur casi nunca hay fuente que nombre el sponsor de camiseta. Lo mismo vale para la Eerste Divisie neerlandesa
-  (Guido, 2026-10-19): sus páginas de temporada en en.wikipedia no traen la tabla de camisetas.
+  (Guido): sus páginas de temporada en en.wikipedia no traen la tabla de camisetas.
 
-## REGLA: el factoring en la deuda (to-do 291, Guido 2026-10-19)
+## REGLA: el factoring en la deuda (Guido)
 
 El factoring es vender a una financiera las facturas o cuotas que el club cobrará (por ejemplo, de traspasos) para cobrar antes. Es deuda
 financiera solo si el club responde: si el documento lo llama "deuda financiera", "autoliquidante" o dice que el crédito sigue en el activo
@@ -552,7 +544,7 @@ Se lee en la nota de cada documento: la etiqueta ("debiti verso altri finanziato
 pro soluto, deuda 0; Genoa 2022, 30,4 M de Banca Sistema que la propia nota llama "debito finanziario autoliquidante", deuda 95,7 M. Por eso
 `tools/vocabulario.mjs` no suma "altri finanziatori" por su cuenta: lo decide la lectura del documento (escalón 1b o 2, o un ajuste con cita).
 
-## REGLA: una línea de depreciación y amortización junta se parte con las notas (votación 3 a 0, 2026-10-20, Silkeborg y Viborg 2025)
+## REGLA: una línea de depreciación y amortización junta se parte con las notas (votación 3 a 0, Silkeborg y Viborg 2025)
 
 Cuando el estado de resultados junta en una línea la amortización de los derechos de jugadores y la depreciación de bienes de uso
 ("Depreciation, amortisation and impairment") pero las notas las abren, se parte con los importes de las notas: derechos de jugadores a
@@ -562,14 +554,14 @@ de la línea que junta dos conceptos). Precedente: Silkeborg 2024 y Viborg 2024 
 
 CATEGORÍA (prompt, futbol): una línea que junta la amortización de derechos de jugadores y la depreciación de bienes de uso se parte con los importes de las notas (jugadores a player_amortisation, bienes de uso a depreciation); si las notas no la abren, va entera a player_amortisation.
 
-## REGLA: una gestión (presidente) sin fuente pública queda en null (Guido, 2026-10-20)
+## REGLA: una gestión (presidente) sin fuente pública queda en null (Guido)
 
 Una gestión se busca en la web (búsqueda general, la página del club, Wikipedia y la prensa). Si no aparece una fuente que confirme quién
 estaba a cargo al cierre, el año queda sin gestión (`null`) y no se espera la respuesta del club: la pregunta en `Admin/dudas-por-club.md`
 puede quedar, pero no frena nada. Para Wikipedia no se abre la página entera (es lo que hace caer a los subagentes): se lee solo la ficha o
 la sección que hace falta.
 
-## REGLA: un dato de contexto sin fuente pública queda en null y el año se carga igual (Guido, 2026-10-20)
+## REGLA: un dato de contexto sin fuente pública queda en null y el año se carga igual (Guido)
 
 Estadio, sponsor, liga, gestión y los demás datos de contexto (lo que no es una cifra del balance) se buscan en la web: la página del
 club, Wikipedia (con `tools/wiki-extracto.mjs`, no la página entera), la prensa y la página de la temporada. Si la búsqueda se agota sin
@@ -578,7 +570,7 @@ igual: la falta de un dato de contexto nunca frena una carga ni es una pregunta 
 (votación de Patro Eisden 2013): si no hay fuente, queda `null`. Además, en la segunda división belga (`be-challengerproleague`) alcanza
 con el estadio, igual que en la Eerste Divisie y las segundas noruegas (`SOLO_ESTADIO`; votación de Patro Eisden 2015, opción C).
 
-## REGLA: en un balance turco, lo que el propio balance pone en las actividades principales va como línea operativa (votación 3 a 0, 2026-10-20, Beşiktaş)
+## REGLA: en un balance turco, lo que el propio balance pone en las actividades principales va como línea operativa (votación 3 a 0, Beşiktaş)
 
 Las partidas que el balance imprime dentro de las actividades principales (Tecil - faiz, Reeskont, kur farkı, vade farkı) se cargan
 como líneas operativas (`other_income` / `other_expenses`), no como `netInterest`. El resultado financiero es el bloque Finansman.
@@ -587,11 +579,11 @@ CATEGORÍA (prompt): en un balance turco, las partidas que el propio balance imp
 EJEMPLO-CATEGORÍA: besiktas-tr | expense | Tecil - faiz giderleri | other_expenses
 EJEMPLO-CATEGORÍA: besiktas-tr | revenue | Reeskont gelirleri | other_income
 
-## REGLA: si el documento declara varios tipos de cambio a USD del mismo día de cierre, vale el de caja y bancos (votación 3 a 0, 2026-10-20, Beşiktaş 2006)
+## REGLA: si el documento declara varios tipos de cambio a USD del mismo día de cierre, vale el de caja y bancos (votación 3 a 0, Beşiktaş 2006)
 
 El `fx` es el de caja y bancos (`document_close`). Caso: Beşiktaş 2006, 1,5357 contra el 1,5442 de pasivos.
 
-## REGLA: el anticipo de un fondo (CVC) que el club reconoce en cuotas va a `other_income`, aparte del reparto central de la liga (votación 3 a 0, 2026-10-20, Bath Rugby 2021 a 2023)
+## REGLA: el anticipo de un fondo (CVC) que el club reconoce en cuotas va a `other_income`, aparte del reparto central de la liga (votación 3 a 0, Bath Rugby 2021 a 2023)
 
 `central_income` (genérica `media_rights`) es el reparto corriente de TV y comercial central de la liga y de la federación (Premiership Rugby y RFU). El
 anticipo que cobró la liga de CVC por vender una participación (£12,8 M en 2019, reconocidos en 48 meses dentro de Turnover) va a `other_income`, con la
@@ -602,7 +594,7 @@ Bath no lo trata como venta: no sale de la regla de la venta a un fondo (misma d
 CATEGORÍA (prompt): el anticipo de un fondo de inversión (CVC) sobre derechos comerciales de la liga, reconocido en cuotas por el club, va a other_income como fila aparte; no al reparto central de la liga.
 EJEMPLO-CATEGORÍA: bathrugby-gb | revenue | CVC income | other_income
 
-## REGLA: una revaluación no realizada de una inversión impresa fuera de los ingresos va a `other_income`, no a `assetSales` (votación 2 a 1, 2026-10-20, Bath Rugby 2021)
+## REGLA: una revaluación no realizada de una inversión impresa fuera de los ingresos va a `other_income`, no a `assetSales` (votación 2 a 1, Bath Rugby 2021)
 
 `assetSales` es para ventas realizadas ("Profit on disposal"). «Fair value movements» (+£6,66 M en 2021, la participación en Premiership Rugby, no monetaria en
 el flujo de caja) va a `other_income` como el resto de las revaluaciones sin cobro, con `publicNote` que dice que es una revaluación no realizada fuera de
@@ -613,7 +605,7 @@ Turnover impreso (11,6): el cierre contra el resultado operativo impreso (−£1
 CATEGORÍA (prompt): una revaluación no realizada de una inversión a valor razonable (Fair value movements), sin cobro, va a other_income con nota que lo aclare; nunca a asset_sales ni a una venta.
 EJEMPLO-CATEGORÍA: bathrugby-gb | revenue | Fair value movements | other_income
 
-## REGLA: la liberación de un goodwill negativo va a `exceptional_items`, del lado de los ingresos (votación 2 a 1, 2026-10-21, Falkirk 2024-25)
+## REGLA: la liberación de un goodwill negativo va a `exceptional_items`, del lado de los ingresos (votación 2 a 1, Falkirk 2024-25)
 
 Un goodwill negativo (bargain purchase: el club compra una sociedad por menos de lo que valen sus activos) que se libera al resultado es
 una ganancia contable única, sin caja. Va como ingreso en `exceptional_items`, con línea propia y su etiqueta textual («Release of

@@ -19,7 +19,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   data/<país>/<club>-data.js, ninguno inline acá. Desde la Versión 238, el CSS tampoco
   vive acá: está en css/styles.css, referenciado con un <link> que lleva el
   mismo `?v=` que los <script src> propios.
-- data/<país>/<clubId>.json: LA FUENTE de los datos de un club (to-do 245, fase 2): el esquema, `schema_version`, la unidad (millones de la moneda del
+- data/<país>/<clubId>.json: LA FUENTE de los datos de un club: el esquema, `schema_version`, la unidad (millones de la moneda del
   club) y los nombres de campo en inglés están en `Admin/mediciones/245-esquema.md` y `data/schema/club-v2.json` (cada línea con `category` genérica
   y `subcategory` del deporte; la tabla de cada deporte en `data/schema/taxonomy-<versión>.json`). Se publica como dato abierto. Las tools
   de carga lo leen y escriben con `tools/club-json.mjs` (`modificarClub`), que lo valida y regenera el data file; `tools/generar-data.mjs` lo hace a mano
@@ -27,8 +27,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
 - data/<país>/<clubId>-data.js: GENERADO desde ese JSON (no se edita), un archivo por club, en la carpeta de su país (código ISO de `clubs[clubId].country` en
   minúscula, igual que `data/club-leagues/` y `data/gestiones/`). El sitio arma la ruta en `loadClubData()`; las tools, SOLO con
   `tools/data-clubes.js` (`rutaData(clubId)`, `archivosData()`, `idDeArchivo()`): ninguna tool arma esa ruta a mano.
-- ASSET_V (`window.ASSET_V`, declarado en un `<script>` inline en index.html
-  justo antes de los `<script src>` propios, Versión 115): la versión de los
+- ASSET_V: la versión de los
   assets propios, para invalidar el caché del navegador en cada deploy. La regla de subirlo
   (la constante Y cada `?v=`, que son literales) y el bug que la motivó están una sola vez, en
   `Admin/PANTALLA.md`, "CACHE DE ASSETS". Lo de arquitectura: solo 2 cargadores DINÁMICOS leen la
@@ -46,7 +45,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   (memberCountByClub{}).
 - data/category-map.js: la taxonomía compartida de categorías de
   ingreso/gasto (REVENUE_CATEGORIES, EXPENSE_CATEGORIES), usada en vivo por
-  TODOS los clubes (Boca incluida desde la Versión 102) vía `normalizedCategory`
+  TODOS los clubes vía `normalizedCategory`
   en cada línea de revenueLines/expenseLines. `categoryMapByClub.boca` (el
   mapeo campo-viejo -> categoría que se usó como referencia al migrar Boca) es
   documentación histórica, no se lee en vivo. Desde el to-do 248 tiene además la capa genérica:
@@ -79,7 +78,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   tools/generate-rankings.js con el motor real (`computeYearGeneric()` +
   `simplifiedReportForClub()`, nunca reimplementado) para no tener que bajar
   los data/<país>/<club>-data.js de toda una liga en vivo. Un archivo por liga
-  (Versión 182), 1-3,4 KB gzip cada uno. Alimenta la pestaña Ligas
+ , 1-3,4 KB gzip cada uno. Alimenta la pestaña Ligas
   (js/liga.js) y los rankings curados de Inicio (data/destacados.js).
   `node tools/generate-rankings.js --check` avisa si quedó viejo (y
   `tools/audit.js` lo corre solo, como P1); `--print` imprime los rankings
@@ -109,7 +108,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   2026-09-26) sin bajar un solo `data/<país>/<club>-data.js`, y recién baja los que
   hagan falta al apretar "Comparar". La explicación larga del modelo está en
   `Admin/Archive/selector-merge-a-produccion.md`, secciones 0, 3 y 5.
-  `js/comparar-clubes.js` (la bandeja de chips de la Versión 137) ya no existe:
+  `js/comparar-clubes.js` ya no existe:
   se borró en la Versión 152 y lo que hacía mejor está acá adentro.
 - js/liga.js: la pestaña LIGAS — el ranking de ingresos de los clubes de una
   liga en UN ejercicio (la misma regla que data/club-leagues.js: nunca "la
@@ -117,13 +116,13 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   más reciente sino el que tiene MÁS clubes cargados, porque los balances
   tardan en publicarse y el ejercicio más nuevo es siempre el más flaco. Lee
   data/rankings/<liga>.js directo, no baja ningún data/<país>/<club>-data.js. Barras
-  de un solo color y no apiladas (decisión de Guido, 2026-09-22: buena parte
+  de un solo color y no apiladas (decisión de Guido: buena parte
   de cada barra sería "sin desglosar por la fuente", y algunos clubes reportan
   un segmento NEGATIVO), orden ascendente en el gráfico y descendente (por
   puesto) en la tabla — el orden es decisión de la vista, el dato guardado
   siempre está descendente. Versión 183, to-do 23(c).
 - js/i18n.js + data/lang/<code>.js + data/lang/langs.js: el motor de
-  traducción del sitio (Versión 115). El CASTELLANO NO TIENE ARCHIVO DE
+  traducción del sitio. El CASTELLANO NO TIENE ARCHIVO DE
   DICCIONARIO, a propósito: el HTML ya está escrito en castellano y `apply()`
   guarda ese texto como valor "es" la primera vez que corre, así que el
   castellano no se puede desincronizar del HTML (ES el HTML), y una clave que
@@ -186,9 +185,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   Clubes/Argentina/Racing/. País y club van capitalizados (Argentina, Boca,
   River, Racing), a diferencia de los `clubId` del código (minúscula). Regla
   desde la Versión 28: reemplazó el esquema anterior de dos árboles
-  paralelos, PDFs/<país>/<club>/ + pdf-extracts/<país>/<club>/ (ese esquema
-  nació en la Versión 17, reemplazando a su vez las carpetas sueltas
-  racing-pdfs/ y river-pdfs/). Guido pidió el PDF y su transcripción uno al
+  paralelos, PDFs/<país>/<club>/ + pdf-extracts/<país>/<club>/. Guido pidió el PDF y su transcripción uno al
   lado del otro, no en dos carpetas separadas. Ver `Admin/PIPELINE.md`, sección
   "Documentos fuente". Regla desde la Versión 14
   sigue vigente: todo PDF nuevo se transcribe a un .md ACÁ MISMO (junto al
@@ -198,7 +195,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   reabrir el PDF (son escaneos, salen caros en tokens leerlos de nuevo
   página por página).
 
-MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versión 102)
+MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES
 - CÁLCULO: TODOS los clubes, Boca incluida, pasan por computeYearGeneric(clubId,
   year) (buscar "MULTI-CLUB" en el <script>), sobre listas de líneas {rawLabel,
   normalizedCategory, amountNative, disclosureLevel} (revenueLinesByYear/
@@ -243,7 +240,7 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versió
   error): siempre visible para cualquier club, porque depende de `normalizedCategory`
   en las líneas, no de qué moneda reporta el club. El botón CTA de Premium
   (premiumCtaBtn) se SACÓ en la Versión 30, prometía como feature paga algo que el
-  toggle "Formato simplificado" (Versión 29) ya hace gratis; Guido pidió sacarlo
+  toggle "Formato simplificado" ya hace gratis; Guido pidió sacarlo
   en vez de dejarlo diciendo algo falso.
 - Verificación automática: verifyTieOuts() corre sola al cargar el sitio y
   compara, por consola del navegador, la suma de rubros contra el total oficial
@@ -259,7 +256,7 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES (desde la Versió
 
 ## Finanzas para cualquier club: arquitectura que escriben `cargar.mjs` y `alta-club.mjs`
 
-Venía del skill `club-or-year-onboarding` (Versión 471), sin cambios de texto. Sirve al tocar el motor de Finanzas o los scripts de carga.
+Venía del skill `club-or-year-onboarding`, sin cambios de texto. Sirve al tocar el motor de Finanzas o los scripts de carga.
 
 Los colores de marca, el chequeo contra el escudo y la liga de cada temporada de un club nuevo están en `.claude/skills/club-or-year-onboarding/club-nuevo.md`, secciones "Color de marca", "Chequeo contra el escudo" y "Liga de cada temporada".
 
@@ -520,7 +517,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   (el sitio los resuelve con `resolverClubId()`, las tools con `normalizarId()` de
   `tools/data-clubes.js`) y `tools/audit.js` vigila el formato (`clubid-sin-pais`) y el mapa
   (`alias-roto`). Ver `Admin/CONVENCIONES-DATOS.md`, "Identidad del club".
-- TAXONOMÍA DEL SELECTOR (Versión 137): `data/leagues.js` es el CATÁLOGO
+- TAXONOMÍA DEL SELECTOR: `data/leagues.js` es el CATÁLOGO
   (6 deportes, 6 regiones, 8 países, 14 ligas con su escalón: los 2 segundos escalones de
   la Versión 201 (`es-segunda`, `de-2bundesliga`) más el 3° brasileño y el 2° colombiano
   de la Versión 217 (`br-serieC`, `co-primeraB`, onboarding de Volta Redonda/Unión
@@ -535,7 +532,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   año (lo levantó Guido). En el árbol, un club aparece bajo CADA liga en la que
   tiene un ejercicio cargado: nada que actualizar por temporada, ningún campo que
   pueda mentir. `clubs{}` gana `sport`, que sí es intrínseco del club.
-- LIGA POR EJERCICIO (Versión 132, partido por país en la 164):
+- LIGA POR EJERCICIO:
   `data/club-leagues/<iso2>.js` dice en qué categoría
   jugó cada club en cada ejercicio, que es distinto de en cuál juega hoy
   (Mirassol 2024 es Série B y Mirassol 2025 Série A). Es un archivo aparte y no
@@ -573,7 +570,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   TODAVÍA NO LA USA NINGUNA VISTA, a propósito: el consumidor (el "N de M clubes
   de esta liga tienen ejercicio cargado", o sea el aviso de sesgo del benchmark)
   es el to-do 23(c)/33. Con los datos de hoy daría 8 de 28, 9 de 20 y 10 de 20.
-- ÍNDICE LIVIANO DE CLUBES (Versión 129, ampliado en la 146): `data/club-index.js`,
+- ÍNDICE LIVIANO DE CLUBES: `data/club-index.js`,
   GENERADO, con lo que hay que mostrar de un club ANTES de entrar a él (nombre,
   país, calidad del dato, cuántos ejercicios, el más reciente, y desde la Versión
   146 `yrs`: la LISTA de ejercicios con el reportType de cada uno). Existe porque
@@ -603,10 +600,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   y llama al motor REAL, nunca reimplementa la cascada. Hoy: 0 P0, 0 P1, 1 P2 (intencional: 2
   ejercicios sin fila de liga porque jugaron un 2do escalón sin catálogo todavía, Zulte Waregem
   2025 y FC Fredericia 2019), 8 P3 y 114 silenciados con su motivo en `tools/audit-ignore.json`
-  (medido el 2026-09-25, Versión 227, tras la 2da tanda de 20 transcripts — 14 hallazgos nuevos
-  silenciados: 5 deducciones fiscales/variaciones de existencias verificadas y 9 catch-all
-  dominante por límite real de la fuente; y 2 P0 reales encontrados y corregidos en la
-  integración, ver `Admin/CHANGELOG.md`). ~40 de esos 114 son de las 4 sesiones de onboarding de
+ . ~40 de esos 114 son de las 4 sesiones de onboarding de
   PDF pendientes (Versiones 217/219/220/221) —
   categorizaciones legítimas verificadas contra el documento fuente, y un puñado de P0 reales
   encontrados y corregidos en la integración de cada tanda (típicamente `officialTotalExpenses`
@@ -630,7 +624,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   los clubes que nadie está mirando. Desde la Versión 160 los carga en tandas
   paralelas de 25 y no de a uno, para que siga siendo viable correrlo cuando los
   clubes sean cientos.
-- FUENTES (Versión 126, revisada en la 127): cada número cita su documento. Al
+- FUENTES: cada número cita su documento. Al
   final de Finanzas hay una ficha con el documento del ejercicio que se está
   mirando (link incluido), su tipo y nivel de fuente, el tipo de cambio usado CON
   su procedencia, y las salvedades; y afuera del sitio hay una PÁGINA ESTÁTICA POR CLUB,
@@ -654,7 +648,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   primeros clubes argentinos, y los 88 ejercicios REALES no mostraban su fuente
   en ningún lado (el único consumidor de `sources{}` era el banner de
   advertencia, que no aparece cuando el dato es oficial).
-- PROCEDENCIA DEL TIPO DE CAMBIO (Versión 125): cada ejercicio declara de dónde
+- PROCEDENCIA DEL TIPO DE CAMBIO: cada ejercicio declara de dónde
   salió su `fx`, `fxSource` con uno de los 7 valores de `FX_SOURCE`
   (`data/currency-map.js`), o `fxRef` apuntando a `FX_CLOSE`, la tabla de
   cotizaciones de mercado por moneda y fecha de cierre. La regla: lo que declara
@@ -779,7 +773,7 @@ un ejercicio posterior al año base (un presupuesto futuro) no se ajusta. El obj
 --deflactores` desde la fuente oficial (BEA, Eurostat), una vez por año.
 ## Dónde está cada cosa
 
-**La raíz del repo es el SITIO; los documentos internos viven en `Admin/`** (Versión 196). Antes
+**La raíz del repo es el SITIO; los documentos internos viven en `Admin/`**. Antes
 estaban todos sueltos arriba, mezclados con `index.html`, y se publicaban salvo que alguien se
 acordara de sumarlos a mano a la lista de `netlify.toml`.
 
@@ -828,7 +822,7 @@ completo está en `Admin/CONVENCIONES.md`.
   VIVOS que ya no existen, entre backticks o como link Markdown. Los históricos
   (`Admin/CHANGELOG.md`, `Admin/finance-of-sports-project.md`, `Admin/Archive/`, `auditorias/`)
   quedan afuera a propósito: una ruta vieja ahí era verdad el día que se escribió.
-- `.claude/skills/club-outreach/SKILL.md` + `Admin/outreach/` (Versión 216): el proceso
+- `.claude/skills/club-outreach/SKILL.md` + `Admin/outreach/`: el proceso
   para escribirle un mail de verdad a un club sin que cada envío pase por aprobación en el chat —
   Resend + subdominio propio en vez de Gmail. Etapa 1 en construcción, bloqueada en que Guido cree
   la cuenta de Resend y verifique el subdominio (ver el skill, sección 2). Check-in programado para
@@ -836,14 +830,14 @@ completo está en `Admin/CONVENCIONES.md`.
 - `tools/generate-club-index.js`: regenera la sección "QUÉ ES REAL POR CLUB" desde
   los propios datos. Corrélo después de onboardear un club, NO edites esa sección
   a mano. `--check` avisa si quedó desactualizada.
-- `tools/generate-fuentes-index.js` (Versión 175): regenera la sección "Índice de
+- `tools/generate-fuentes-index.js`: regenera la sección "Índice de
   países" de `Admin/sourcing/README.md` desde los `Admin/sourcing/_indice/<País>.md`. Corrélo
   después de una sesión de sourcing, NO edites esas líneas a mano. `--check` avisa
   si quedó vieja, `--debug` muestra la clasificación club por club. Cuando no puede
   decidir si un club tiene documento (la prosa matchea señales de los dos lados, o
   de ninguno) ABORTA en vez de adivinar: la decisión va a mano a `OVERRIDES`, adentro
   del script. Hoy hay 12, de la corrida original del 2026-09-20.
-- `tools/generate-rankings.js` (Versión 182): precalcula el ranking de ingresos de cada
+- `tools/generate-rankings.js`: precalcula el ranking de ingresos de cada
   liga-ejercicio en `data/rankings/<liga>.js`, uno por liga (8 archivos, 39 KB crudos / 5 KB
   gzip). Corrélo después de cargar un club o un ejercicio, NO edites esos archivos a mano.
   `--check` avisa si quedaron viejos y `--print` imprime los rankings en la terminal para
@@ -854,7 +848,7 @@ completo está en `Admin/CONVENCIONES.md`.
   incluido el que rebota, no. **Es el único lugar del proyecto que guarda números de plata
   copiados de otro lado**, así que `node tools/audit.js` corre su `--check` como **P1**
   (`rankings-desfasado`): no se puede pushear con el ranking viejo.
-- `data/destacados.js` (Versión 182): la lista CURADA A MANO de hasta 10 (liga, ejercicio)
+- `data/destacados.js`: la lista CURADA A MANO de hasta 10 (liga, ejercicio)
   que Inicio muestra como vidriera. Es el único archivo de esta feature que se edita a mano;
   `audit.js` chequea que cada entrada tenga ranking precalculado (`destacado-sin-ranking`,
   P1) y avisa si alguna quedó con un solo club.
@@ -887,8 +881,7 @@ completo está en `Admin/CONVENCIONES.md`.
 - LAS NOTAS INTERNAS DE SOURCING (`Admin/sourcing/<País>/<Club>.md`, 610, y
   `Admin/sourcing/_indice/<País>.md`, 44) SÍ SE TRACKEAN — esta línea decía lo contrario hasta la
   Versión 204 y ya no era cierto: hubo una regla en `.gitignore` (`fuentes/**/*.md`) desde la
-  Versión 167, pero Guido la revirtió 6 versiones después (Versión 173, "si pierdo la mac
-  pierdo semanas de trabajo") junto con TODO el destrackeo, a favor del mecanismo único que
+  Versión 167, pero Guido la revirtió 6 versiones después junto con TODO el destrackeo, a favor del mecanismo único que
   sigue vigente hoy: todo se trackea (respaldo completo en GitHub) y `netlify.toml` saca lo
   interno del ARTEFACTO DE DEPLOY antes de publicar, ver más abajo en "Dónde está cada cosa".
   Los 131 `fuentes/<clubId>.html` generados son la excepción a propósito: SÍ son parte del
@@ -899,7 +892,7 @@ completo está en `Admin/CONVENCIONES.md`.
   países, 571 clubes trackeados, 370 con documento encontrado (de los cuales 131
   están cargados al sitio). Esos números y las 44 líneas de país NO se escriben a
   mano desde la Versión 175: los genera `node tools/generate-fuentes-index.js`.
-- `Admin/ESTADO-clubes.md` (Versión 239): el bloque "QUÉ ES REAL POR CLUB", generado por
+- `Admin/ESTADO-clubes.md`: el bloque "QUÉ ES REAL POR CLUB", generado por
   `node tools/generate-club-index.js`, partido de este archivo cuando se acercaba al umbral de
   60 KB de `tools/audit.js`.
 - `Admin/dudas-por-club.md`: preguntas genuinamente abiertas, sin criterio asumido.

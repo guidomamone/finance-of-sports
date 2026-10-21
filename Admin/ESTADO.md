@@ -19,7 +19,7 @@ deja de ser cierto, se reemplaza, no se apila una línea nueva al lado de la vie
 ## Objetivo del proyecto
 
 Un sitio de finanzas de clubes de fútbol (multi-club), pensado para hinchas, periodistas y
-creadores de contenido. **Todo el sitio es gratis. Licencia (decisión de Guido, 2026-10-18): el Formato simplificado bajo CC BY-NC 4.0 (libre citando,
+creadores de contenido. **Todo el sitio es gratis. Licencia (decisión de Guido): el Formato simplificado bajo CC BY-NC 4.0 (libre citando,
 también en medios con publicidad); el uso comercial, la reventa, la descarga masiva u otra API necesitan licencia aparte; la API, si se
 hace, es paga para todos. Los documentos de los clubes no llevan la licencia del sitio, lo de Wikipedia va con CC BY-SA 4.0 y el código
 tiene todos los derechos reservados (`terminos.html`; fuentes y términos en `Admin/fuentes-externas.md`). Presupuesto casi cero, sigue
@@ -33,14 +33,31 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 
 ## Estado actual
 
-### Pipeline: de un PDF a un año cargado (en `main`)
+### Pipeline: de un PDF a un año cargado
 
-- El detalle de cómo corre el pipeline, país por país (lote, cargar, caja y deuda, Rusia, Dinamarca, Reino Unido, Estonia, Bélgica, Portugal,
-  Grecia, Italia, Brasil) está en `Admin/ESTADO-pipeline.md`: se lee solo al onboardear clubes o tocar las tools. Cuántos documentos hay en
-  cada etapa y cuánto cuesta el paso siguiente: `node tools/estado.mjs` (gratis).
+- Tools: `lote.mjs` (etapas 3 a 8, en segundo plano), `pipeline.mjs` (solo la etapa 2: transcribir con Mistral y validar), `cargar.mjs` (escribe el
+  año, corre los generadores y `audit.js`, y revierte si algo falla; `lote.mjs --ejecutar --cargar` escribe lo que queda listo, con un commit por
+  año), `caja-deuda.mjs` (caja, deuda y, con `--personal`, el costo de personal) y `cola.mjs` (lo que no se resuelve solo). Proceso etapa por
+  etapa: `Admin/PIPELINE.md`; descartes medidos: `Admin/HALLAZGOS-pipeline.md`; cuántos documentos hay en cada etapa y cuánto cuesta el paso
+  siguiente: `node tools/estado.mjs` (gratis). Un dato publicado mal se corrige con un ajuste manual (`tools/ajustes.mjs`) además de en `data/`,
+  para que una corrida futura no lo deshaga.
+- La cola la contesta un subagente Sonnet con cita del documento y del criterio de `club-data-mapping`; a Guido va solo lo que frena un alta o un
+  año, y lo que solo el club sabe va a `Admin/dudas-por-club.md`. Un club nuevo entra al lote con un solo ejercicio; sus otros años van después
+  de contestar su cola, para que las respuestas del primero sirvan de precedente.
+- Lo que se decide solo: el primer año de un club (con lo impreso o con una pregunta a Claude, `primer-anio-ia.mjs`), el perímetro
+  (`perimetro-senales.mjs`), el rubro probable de una fila en «—» (`dentro-de-otro.mjs`), las gestiones (`gestiones-tanda.mjs`) y la liga de un año
+  nuevo (`listas-lote.mjs --lote`). La liga de un año necesita dos fuentes: la segunda es RSSSF (`segunda-fuente-liga.mjs`).
+- Sin IA cuando el documento viene estructurado: Rusia sale del fisco (`bfo-rusia.mjs`), Dinamarca y los británicos que presentan en iXBRL, del XHTML
+  (`xhtml-aarsrapport.mjs`; `lote.mjs` frena la IA sobre ellos salvo `--pagar-ia-xhtml`; `ixbrl-resultado.mjs` frena el individual si el resultado no
+  coincide con el etiquetado) y Bélgica, de los códigos NBB (`nbb.mjs`).
+- No se transcriben PDFs nuevos salvo los de las 5 grandes ligas, Brasil y Argentina; el resto se carga si ya tiene `.md`. Los escaneados británicos
+  los transcriben subagentes (`Admin/transcripcion-subagentes/README.md`); cargar sin API: `club-or-year-onboarding/carga-con-tokens.md`.
+- Una tarea mensual (`ejercicios-nuevos.mjs`) baja los PDF nuevos y los anota en `Admin/sourcing/README.md`. El tablero del pipeline
+  (artifact https://claude.ai/artifact/ESc6PC7CUbQ8wV2ETgLVdb) no se actualiza solo: `node tools/tablero.mjs`.
+- Para enterarse de que terminó un lote, el comando lleva al final `; osascript -e 'display notification "Terminó el lote" with title "finance-of-sports" sound name "Glass"'`.
 - Modo de trabajo: una sola sesión en la carpeta principal y en `main`, un rol por vez, cada uno con su skill (reglas en `CLAUDE.md`,
   «Modo de trabajo»). Esta sesión escribe TODO, CHANGELOG y ESTADO al cerrar cada tarea. El modo de varios worktrees (`tools/worktree.mjs`,
-  skill de arranque `worktree.md`, skill `principal-finance-of-sports`) y los roles de `Admin/CONVENCIONES.md` («ONBOARDING CARGA, PIPELINE
+  `Admin/Archive/modo-varias-sesiones.md`) y los roles de `Admin/CONVENCIONES.md` («ONBOARDING CARGA, PIPELINE
   ARREGLA, AUDITORA APRUEBA») siguen escritos, pero hoy no se usan. El gasto por sesión: `node tools/gasto.mjs --sesion <carpeta>`.
 - Hooks de Claude Code (`.claude/settings.json` → `tools/hooks/pre-tool.mjs`): `audit.js` antes de cada commit publicable (frena con P0/P1;
   `[sin-audit]` con el ok de Guido), y piden permiso editar skills, `git push` y borrar en `Clubes/`; en un worktree rechazan escribir TODO,
@@ -84,7 +101,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Para periodistas: la tarjeta "Citar y descargar" de Finanzas (cita sugerida de lo que se ve, copiar la cita o el link, CSV por rubro y
   ejercicio con moneda, tipo de cambio y documento; sin dato va vacío, nunca 0) y la página pública `metodologia.html` (link en el pie).
 - Balances propios de las entidades que organizan las ligas: en `Ligas/` (cuáles hay: `data/auditoria/_ligas.js`; las notas de sourcing de cada entidad, en `Admin/sourcing/Ligas/`), con su auditoría en
-  `data/auditoria/_ligas.js` (to-do 295); en Ligas, la tarjeta "Las cuentas de la liga".
+  `data/auditoria/_ligas.js`; en Ligas, la tarjeta "Las cuentas de la liga".
 - Quién auditó cada balance: `Admin/registros/auditoria.jsonl` (con citas) y `tools/auditoria.mjs`, que genera `data/auditoria/` (todos los
   balances). En Finanzas, la tarjeta "Quién auditó estos números"; un club-año sin línea dice "Todavía no lo
   revisamos", no "sin informe", y sin ningún dato del club la tarjeta se esconde; una revisión que no es auditoría plena dice

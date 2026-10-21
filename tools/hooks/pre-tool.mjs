@@ -23,7 +23,7 @@
 //                            Las herramientas de sesiones (archivar, iniciar, cambiar modelo) necesitan su matcher en .claude/settings.json.
 //   push-con-ok              `git push` le pide permiso a Guido cada vez: un push a main despliega en Netlify (free tier, ~25 deploys/mes).
 //   docs-de-la-principal     en un worktree, escribir Admin/TODO.md, CHANGELOG.md o ESTADO.md se rechaza: los escribe solo la principal; el
-//                            cierre de la rama va en Admin/sesiones/<rama>.md (skill de arranque, worktree.md). En la principal no hace nada.
+//                            cierre de la rama va en Admin/sesiones/<rama>.md (Admin/Archive/modo-varias-sesiones.md). En la principal no hace nada.
 //   pdfs-con-ok              (deny) borrar o pisar en Clubes/ (rm, unlink, trash, find -delete, mv sobre algo que existe) o un `git clean`
 //                            con -x/-X: los PDF no se trackean y no hay copia. No le pregunta a Guido: dice qué usar (preparar, mv a un nombre
 //                            nuevo, el scratchpad). Un mv a un destino que no existe y un Clubes/ del scratchpad pasan.
@@ -214,7 +214,7 @@ function docsDeLaPrincipal(cmd) {
   let rama = '<rama>';
   try { rama = git(['rev-parse', '--abbrev-ref', 'HEAD']).trim(); } catch {}
   decidir('deny', `Esto es un worktree: Admin/TODO.md, CHANGELOG.md y ESTADO.md los escribe solo la principal. Lo que iba ahí va en `
-    + `Admin/sesiones/${rama}.md (qué cambió, qué queda, qué deja de ser cierto en ESTADO). Ver la skill de arranque, worktree.md.`);
+    + `Admin/sesiones/${rama}.md (qué cambió, qué queda, qué deja de ser cierto en ESTADO). Ver Admin/Archive/modo-varias-sesiones.md.`);
 }
 
 // `rsync -a` copia los symlinks como symlinks: en un worktree recién creado apuntan a carpetas que no existen. Con `--no-links` se saltean (to-do 327, C-6).

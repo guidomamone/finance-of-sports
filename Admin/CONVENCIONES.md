@@ -1,14 +1,7 @@
 # Convenciones y gotchas vigentes
 
-Reglas permanentes y trampas ya encontradas que una sesión nueva TIENE que
-respetar. Antes vivían sueltas dentro del bloque "ESTADO ACTUAL" del comentario
-de `index.html`, mezcladas con el historial de versiones: se movieron acá en la
-Versión 114 porque son criterios VIGENTES, no historia: el historial se lee una
-vez y se olvida, esto hay que tenerlo a mano cada vez que se toca el sitio.
-
-El porqué de cada regla y cuándo se decidió está en `Admin/CHANGELOG.md` (resumen) o
-`Admin/finance-of-sports-project.md` (narrativa). (Muchos bullets todavía llevan su número de versión: es un resto de cuando se
-conservaba ahí, no algo a imitar en los bullets nuevos.)
+Reglas permanentes y trampas ya encontradas que una sesión nueva TIENE que respetar: criterios vigentes, sin historia. El porqué de cada
+una y cuándo se decidió está en `Admin/CHANGELOG.md` (resumen) o `Admin/finance-of-sports-project.md` (narrativa).
 Las que dicen "pedido explícito de Guido" no son negociables sin preguntarle.
 
 Si una decisión nueva contradice algo de acá, actualizá ESTE archivo en la misma
@@ -19,11 +12,11 @@ Este archivo tiene las reglas de proceso, que valen en cualquier sesión. Las de
 cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir datos de un club) y `Admin/PANTALLA.md` (al tocar `js/`,
 `index.html` o CSS). Al final está el índice de cada regla mudada: su título y el archivo donde vive.
 
-- DOS SESIONES EN PARALELO: dos sesiones sobre el mismo working tree se pisan en silencio, así que cada sesión paralela va en su worktree; el procedimiento está en la skill de arranque, `worktree.md`.
+- DOS SESIONES EN PARALELO: dos sesiones sobre el mismo working tree se pisan en silencio, así que cada sesión paralela va en su worktree (hoy se trabaja en una sola; cómo era: `Admin/Archive/modo-varias-sesiones.md`).
   - **Después de mergear una rama con JSON de club en el esquema viejo (1.0)**: `node tools/migrar-v2.mjs --escribir` en la principal
     (idempotente: con los chequeos de sumas en verde, solo escribe los que estaban en 1.0).
 
-- ONBOARDING CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA (pedido de Guido, 2026-10-20: "quitarme de en medio en los arreglos de script").
+- ONBOARDING CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA (pedido de Guido: "quitarme de en medio en los arreglos de script").
   Tres sesiones de worktree con un rol cada una; la principal mergea, corre los comandos y hace de correo. En el modo de una sola sesión
   (`CLAUDE.md`, «Modo de trabajo») la misma sesión toma un rol por vez y el circuito de abajo se colapsa; valen igual el registro de frenados,
   la medición antes del arreglo y los criterios de la Auditora.
@@ -32,7 +25,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     TODO si ya existe, o una descripción corta), lo deja y sigue con el resto. No le pregunta a Guido por eso.
     Si lo destraba a mano (edita un JSON, un ajuste, `club-leagues`, `contexto-manual` o corre un paso distinto), también lo anota ahí,
     con qué hizo y qué tendría que hacer la tool: un arreglo a mano que no se comparte se vuelve a pagar en la próxima carga (Guido).
-  - **Antes de frenar un año, la Auditora** (Guido, 2026-10-20). Si un documento no cierra, queda con casos en la cola sin precedente o iría a
+  - **Antes de frenar un año, la Auditora** (Guido). Si un documento no cierra, queda con casos en la cola sin precedente o iría a
     `Admin/dudas-por-club.md`, Onboarding no lo deja parado: le manda el caso a la Auditora, que lo clasifica: (a) se resuelve con un ajuste
     con precedente (devuelve cuál, con la cita, y Onboarding lo carga); (b) es un criterio nuevo (votación, con la regla de materialidad);
     (c) de verdad necesita al club (recién entonces va a `dudas-por-club.md`). Un defecto de script sigue yendo a `frenados-por-script.jsonl`.
@@ -52,7 +45,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   - **A Guido solo le llega lo que cambia un criterio**, junto en un mensaje numerado de la principal por día.
   - **El circuito:** frenado → pipeline (diseño y medición) → auditora → commit → la principal mergea y le devuelve a onboarding (o a una
     sesión nueva) la lista de documentos destrabados, que los carga o los vuelve a frenar.
-  - **Cada sesión corre sus propios lotes y tiene un presupuesto** (Guido, 2026-10-20). La sesión larga sus lotes en su carpeta, en
+  - **Cada sesión corre sus propios lotes y tiene un presupuesto** (Guido). La sesión larga sus lotes en su carpeta, en
     segundo plano (`caffeinate -i node tools/lote.mjs … --ejecutar`), y lee el resultado sola; ni Guido ni la principal largan lotes
     en la carpeta de otra. Guido fija un presupuesto total en US$ por sesión. Antes de cada corrida paga, el ensayo gratis da el costo:
     si entra en lo que queda, se corre sin preguntar; si no, se frena y se le avisa a la principal. La cuenta sale de `node tools/gasto.mjs --sesion <la carpeta del worktree>` (cada llamada nueva lleva su sesión; lo anterior figura «(sin marca)»)
@@ -65,7 +58,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   - **Una regla que se tiene que cumplir va a un chequeo, no a la memoria de una sesión** (Guido: «son parches»). Primero `audit.js`
     (que el hook corre antes de cada commit: P0 y P1 frenan) o el hook de `tools/hooks/pre-tool.mjs`; si no se puede chequear, a
     estas convenciones, `PANTALLA.md`, `CONVENCIONES-DATOS.md` o la skill que corresponda. La memoria de una sesión no cuenta como arreglo.
-  - **Las sesiones de worktree le escriben solo a la principal, corto** (Guido, 2026-10-20: lo que escribe una sesión es lo más
+  - **Las sesiones de worktree le escriben solo a la principal, corto** (Guido: lo que escribe una sesión es lo más
     caro en tokens, y Guido lee solo a la principal). Nada de explicaciones para Guido. El aviso de fin de turno va en 3 a 5 líneas
     (qué quedó, qué pide, cuánto gastó), y el detalle va en la nota de la sesión, no en el chat.
   - **No se transcriben PDFs nuevos, salvo las grandes ligas** (Guido). Se cargan los documentos que ya tienen `.md`; arreglar o validar
@@ -82,7 +75,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     o un club nuevo no lo es. Si el commit ya salió, una línea en `Admin/registros/correcciones.jsonl` (`commit`, `club`, `anio`,
     `motivo_es`, `motivo_en`, `fuente`). El motivo se publica en el registro de correcciones; `audit.js` da `correccion-sin-motivo` (P2).
 
-- DÓNDE VA UN DOCUMENTO NUEVO, Y POR QUÉ NO ES UNA CUESTIÓN DE ORDEN (Versión 196, pedido de Guido:
+- DÓNDE VA UN DOCUMENTO NUEVO, Y POR QUÉ NO ES UNA CUESTIÓN DE ORDEN (pedido de Guido:
   *"the entire project has too many files scattered. i want some order"*). La regla (todo documento
   interno va adentro de `Admin/`; la extensión no dice si es interno; `CLAUDE.md` es la única excepción)
   está en `CLAUDE.md`, "DÓNDE PONER UN DOCUMENTO NUEVO". Acá el porqué: Netlify sirve
@@ -98,30 +91,29 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     nivel, así que una regla `<NOMBRE>.md` también ignora `Admin/<NOMBRE>.md` — es exactamente la trampa que
     esta versión desarmó.
 
-- LO QUE ESTÁ CERRADO SE ARCHIVA, NO SE BORRA NI SE APILA (Versión 196). La regla (y qué se rescata antes
+- LO QUE ESTÁ CERRADO SE ARCHIVA, NO SE BORRA NI SE APILA. La regla (y qué se rescata antes
   de archivar) está en `CLAUDE.md`. `Admin/Archive/` es para
   documentos que cumplieron su función entera y pasaron a ser historia: un plan con todos sus puntos
   cerrados, una sección que ahora se genera desde los datos. Si no queda nada que rescatar,
   probablemente había que borrarlo y no archivarlo. Lo archivado lleva un banner que dice de qué Versión es, porque sus
   rutas y sus números son los de ese día. Ver `Admin/Archive/README.md`.
 
-- Cerrar un punto del TODO con una premisa vencida: skill `principal-finance-of-sports`.
+- Cerrar un punto del TODO con una premisa vencida: `CLAUDE.md`, «Modo de trabajo».
 - UNA RAREZA DEL DOCUMENTO YA REVISADA SE REGISTRA UNA VEZ, DONDE LA LEEN LAS TOOLS: una errata (una fecha, un nombre o una cifra mal impresa)
   que alguien ya miró y explicó va a `Admin/registros/rarezas.jsonl` (documento, línea, texto, qué es, veredicto con cita, autor y fecha), con
   `node tools/rarezas.mjs`. Todo chequeo o tool que vuelve a encontrar algo raro en esa línea la da por vista y no la marca de nuevo. Una nota en
   texto libre (en `auditoria.jsonl` o en el motivo de un ajuste) sirve para el lector, pero no para la tool: no alcanza. Caso: Goiás 2018, el informe
   del auditor fechado «24 de abril de 2018» para el ejercicio 2018.
 - UN PUNTO NUEVO DEL TODO ARRANCA CON «Terminado cuando:»: la lista cerrada de lo que entra (clubes, años, archivos, tools) y la prueba de que está hecho. Lo que aparece en el camino y no está en esa lista va a un punto nuevo; el punto se cierra cuando se cumple su lista, aunque haya salido trabajo nuevo.
-- REGLA DE ESTILO (Versión 42, pedida por Guido: "los odio a los em dashes"): la regla vale SOLO para el
+- REGLA DE ESTILO (pedida por Guido: "los odio a los em dashes"): la regla vale SOLO para el
   texto visible del sitio (copy de la página, traducciones, notas públicas): no usar el carácter
   em dash (—, U+2014). Usar punto y arrancar oración nueva, coma, dos puntos o paréntesis según
-  corresponda. En documentos internos, skills y comentarios de código no aplica (decisión de Guido,
-  2026-10-20). La ÚNICA excepción dentro del sitio es el carácter "—" usado como símbolo de "sin dato"/"no aplica"
+  corresponda. En documentos internos, skills y comentarios de código no aplica (decisión de Guido). La ÚNICA excepción dentro del sitio es el carácter "—" usado como símbolo de "sin dato"/"no aplica"
   en celdas de tabla (`fmtPctDisplay`/`fmtPctOfTotal`/varios `td` de
   `buildNativeSectionHtml`/`renderNativePLTable`/etc.): ese uso no es puntuación de una oración, es
   un símbolo de tabla, y se mantiene igual que siempre.
 
-- UNA FUENTE EXTERNA NUEVA SE ANOTA ANTES DE PUBLICAR (Guido, 2026-10-18). Antes de publicar datos que salgan de una fuente externa nueva
+- UNA FUENTE EXTERNA NUEVA SE ANOTA ANTES DE PUBLICAR (Guido). Antes de publicar datos que salgan de una fuente externa nueva
   (una cotización, un deflactor, una lista, Wikipedia…), se suma a `Admin/fuentes-externas.md` con sus términos leídos en su página: qué
   permite y si deja reventa. La licencia del sitio está en `terminos.html` ("Licencia y reuso").
 

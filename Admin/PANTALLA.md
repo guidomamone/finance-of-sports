@@ -1,6 +1,6 @@
 # Reglas de pantalla y código del sitio
 
-Cómo se ve y cómo está hecho el sitio. Primero, Finanzas multi-año (la vista de hoy, to-do 147); después, las reglas de la vista de
+Cómo se ve y cómo está hecho el sitio. Primero, Finanzas multi-año; después, las reglas de la vista de
 un ejercicio, que sigue armándose escondida y es la que vuelve con `?multi=0`: cards, dropdown "Año", tabla "Estado de resultados",
 stats de arriba y cómo verificarlo en el navegador (venía del skill `club-or-year-onboarding`). Al final, "Convenciones de pantalla y
 código": traducciones, `alert()`, ASSET_V, Chart.js, selects, color de club (venían de `Admin/CONVENCIONES.md`). Se lee cuando se toca
@@ -10,7 +10,7 @@ Los colores de marca, el chequeo contra el escudo y la liga de cada temporada de
 
 ---
 
-## Finanzas multi-año (to-do 147, Versiones 531-548): cómo es y qué no romper
+## Finanzas multi-año: cómo es y qué no romper
 
 Desde la Versión 542 es la vista por default; `?multi=0` vuelve a la vieja de un ejercicio con el dropdown "Año" (salida de
 emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión: `Prototyping/Finanzas/mockup-147.html`.
@@ -44,7 +44,7 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
   de presupuesto son los del presupuesto más nuevo elegido, con el año en un `<span class="fin-card-yr">` aparte del texto
   traducible (si va adentro del mismo elemento con `data-i18n`, `I18N.apply()` lo pisa).
 - **"<club> en otra liga"** es un card entre Deuda y los cards de presupuesto, no un botón en la barra: usa el balance más nuevo
-  elegido, nunca un presupuesto. Muestra el puesto a la vista (Versión 547): un selector con las ligas que tienen clubes cargados
+  elegido, nunca un presupuesto. Muestra el puesto a la vista: un selector con las ligas que tienen clubes cargados
   ESE ejercicio (por `leagueAt` sobre `CLUB_INDEX`, sin bajar rankings; default, la de más clubes), y el puesto calculado con
   `LIGA_VIEW.filaSimulada` contra `data/rankings/<liga>.js`, el mismo motor que la simulación de Ligas. El texto dice ENTRE CUÁNTOS
   clubes cargados (los rankings no tienen la liga entera), nunca "de 20" a secas. "Ver el ranking completo" abre Ligas con el club
@@ -84,7 +84,7 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
 
 ---
 
-## Comparar con el diseño de Finanzas (to-do 23, Versión 559): cómo es y qué no romper
+## Comparar con el diseño de Finanzas: cómo es y qué no romper
 
 Mockup aprobado y el porqué de cada decisión (en el comentario del principio): `Prototyping/Comparar/mockup-23.html`. Todo vive en
 `js/selector.js`; el CSS, en `css/styles.css` (bloques `cd-*`, más las clases de Finanzas que se reusan: `.fin-year*`, `.pl-multi`).
@@ -219,7 +219,7 @@ sacó `sourceNote` de los 3 mapas de datos, donde quedaba contenido explicativo 
 cita (ej. la nota de "base de caja" de Racing), se renombró a `note` y se le sacó la frase "Fuente:
 ..." del principio, dejando solo la explicación.
 
-**Excepción (aprobada por Guido, 2026-10-18): la tarjeta Estructura y la página del grupo multiclub.** Cada entidad lleva un link "ver
+**Excepción (aprobada por Guido): la tarjeta Estructura y la página del grupo multiclub.** Cada entidad lleva un link "ver
 en el balance" (o "ver en <dominio>" para una cita externa) a la transcripción, sin la palabra "Fuente:": la cita por entidad es el dato
 que pide el periodista. No se extiende a otros cards.
 
@@ -449,22 +449,21 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   de "Abonos" y de las filas viejas, y `data/site-labels.js` / `data/lang/en.js` conservan sus claves i18n.
 - DEUDA Y CAJA SIN DATO: sin dato es null en `data/` (el 0/0 de la convención vieja ya no queda; si aparece, se lee igual: no se
   cargó). Un dato null se muestra "—", nunca 0, y sin deuda O sin caja no hay deuda neta ("Sin dato"): `deudaNoDesglosada()` y
-  `filaDeuda()` (`js/finanzas-render.js`), las usan la ficha, el KPI, el multiaño, Comparar gestiones y el selector (to-do 235; caso:
-  Argentinos 2019 mostraba caja 0 y deuda neta = deuda bruta). Un 0 IMPRESO de uno solo de los dos es real y se muestra (Sunderland
+  `filaDeuda()` (`js/finanzas-render.js`), las usan la ficha, el KPI, el multiaño, Comparar gestiones y el selector. Un 0 IMPRESO de uno solo de los dos es real y se muestra (Sunderland
   2024, caja 0). `debtDisclosureNote()` (`js/finanzas-calc.js`) avisa debajo de la ficha de deuda; el placeholder no lo necesita
   porque ya tiene su propio banner. Un mensaje traducible que lleva datos adentro se arma con `{a}`/`{b}`
   sobre una sola clave de `t()`, nunca concatenando pedazos traducidos: eso congela el orden de palabras del castellano.
 
-- UN TEXTO QUE ESCRIBE JS NO LLEVA `data-i18n` (Versión 530, bug real: to-do 146). `I18N.apply()` guarda como "castellano original" lo que
+- UN TEXTO QUE ESCRIBE JS NO LLEVA `data-i18n`. `I18N.apply()` guarda como "castellano original" lo que
   el elemento tenga la PRIMERA vez que lo ve y lo vuelve a poner en cada cambio de idioma: si JS ya había escrito ahí (el nombre del club
   en el chip del header), ese texto viejo vuelve. Lo que arma JS se traduce con `t()` en su render, y ese render se llama desde
   `I18N.onChange` (en index.html). Al agregar un render nuevo, sumarlo ahí: `CLUB_SELECTOR.refresh()` no estaba, aunque su comentario
   decía que sí.
-- UN SOLO BOCADILLO DE EXPLICACIÓN: `js/info-tip.js` (Versión 515). Hover en desktop, tap en mobile, un único `div.op-info-float`
+- UN SOLO BOCADILLO DE EXPLICACIÓN: `js/info-tip.js`. Hover en desktop, tap en mobile, un único `div.op-info-float`
   `position:fixed` colgado de `body` (esquiva el `overflow:hidden` de cards y del modal). Para algo pintado con innerHTML alcanza con
   `data-info-tip="texto"` (delegación); para un botón que no debe propagar el click, `INFO_TIP.enganchar(el, texto)` (el "?" del
   selector). No crear otro bocadillo propio en otro archivo: así terminó duplicado el del selector.
-- "DENTRO DE OTRO RUBRO" (Versión 515, textos de Guido): una fila con `incluidoEn` dice solo "Dentro de otro rubro" / "Posiblemente
+- "DENTRO DE OTRO RUBRO" (textos de Guido): una fila con `incluidoEn` dice solo "Dentro de otro rubro" / "Posiblemente
   dentro de otro rubro" (en la celda no entra el nombre del rubro: ocupaba seis renglones) y el rubro va en el bocadillo:
   "Está incluido en X: la fuente lo reporta junto con ese rubro." / "Sospecho que está dentro de X: no es un cero, pero la fuente no lo
   aclara o es confusa." (`window.FINANZAS_DENTRO_TIP`, en js/finanzas-render.js; lo usan también js/liga.js y js/selector.js). En
@@ -481,14 +480,13 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   argentino sería inventar un dato que el documento no dice. Vale igual para `fuentes.html`, que
   desde esta versión se traduce sola con el mismo motor y el mismo diccionario que el sitio, en vez
   de generarse un archivo por idioma.
-- NADA DE `alert()` EN UN CAMINO DE ERROR (Versión 137, bug real que costó una hora de sesión). Un
+- NADA DE `alert()` EN UN CAMINO DE ERROR. Un
   `alert()` nativo congela el hilo entero: timers, `onload` de los `<script>` que inyecta
   `loadClubData()`, y cualquier intento de leer el estado desde la consola para diagnosticar. Desde
   que el club elegido se guarda en `localStorage` y se carga solo al abrir el sitio, un club que
   falle con un alert deja la página congelada EN CADA VISITA, sin poder siquiera elegir otro. Los
   errores se cuentan por `console.error` y se muestran en un aviso dentro de la página.
-- UNA PÁGINA FUERA DE LA RAÍZ TIENE QUE DECLARAR `window.I18N_BASE` (Versión 162, bug real de esta
-  sesión). `I18N.load()` arma el src del diccionario como `data/lang/<code>.js`, y eso es relativo al
+- UNA PÁGINA FUERA DE LA RAÍZ TIENE QUE DECLARAR `window.I18N_BASE`. `I18N.load()` arma el src del diccionario como `data/lang/<code>.js`, y eso es relativo al
   DOCUMENTO, no a `js/i18n.js`. Las primeras páginas del proyecto que no viven en la raíz son las de
   fuentes por club (`fuentes/<clubId>.html`): pedían `fuentes/data/lang/en.js`, se comían un 404 y se
   quedaban en castellano aunque el visitante tuviera el sitio en inglés. Peor todavía, el `onerror`
@@ -496,25 +494,25 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   equivocado. Ahora el src lleva `window.I18N_BASE` adelante ('' en la raíz, '../' en `fuentes/`).
   Los `<script src>` estáticos NO alcanzan: esos ya llevaban su `../` y cargaban bien, el que fallaba
   era el inyectado en runtime. Mismo tipo de trampa que `loadClubData()`.
-- TODO ARCHIVO DE `js/` QUE LLAME A `t()` VA EN LA LISTA DE `tools/audit.js` (Versión 137). El
+- TODO ARCHIVO DE `js/` QUE LLAME A `t()` VA EN LA LISTA DE `tools/audit.js`. El
   chequeo `i18n-incompleto` recorre una lista fija de archivos; cuando nació `js/selector.js` no
   estaba, así que sus claves nuevas eran invisibles y el chequeo pasaba en verde mientras el
-  visitante de habla inglesa leía castellano. Y al revés (Versión 155): cuando un archivo de esa
+  visitante de habla inglesa leía castellano. Y al revés: cuando un archivo de esa
   lista SE BORRA, hay que sacarlo, o el chequeo entero revienta con ENOENT y deja de correr.
-  AMPLIADO (Versión 162): la regla no es solo para `js/`, es para TODO archivo que emita claves de
+  AMPLIADO: la regla no es solo para `js/`, es para TODO archivo que emita claves de
   i18n, incluido el que GENERA HTML. `tools/generate-fuentes-page.js` escribe `data-i18n` en
   `fuentes.html` y en las páginas por club, y no estaba en ningún escaneo: una clave nueva de esas
   páginas era invisible para el chequeo. Ya está en la lista.
-  COROLARIO (Versión 155): las claves que quedan huérfanas al borrar una feature se borran de
+  COROLARIO: las claves que quedan huérfanas al borrar una feature se borran de
   `data/lang/en.js` en el mismo movimiento — el merge del selector dejó 88. El audit no las detecta:
   cuenta las que FALTAN, no las que sobran.
 - ASSET_V SE SUBE EN DOS LUGARES, NO EN UNO (la constante y cada `?v=`): la regla y el bug que la motivó están una sola vez, en "CACHE DE ASSETS" (más abajo).
-- 2 BUGS REALES CORREGIDOS + REGLA NUEVA DE ORDEN DEL DROPDOWN (Versión 96): (1) Boca (club default)
+- 2 BUGS REALES CORREGIDOS + REGLA NUEVA DE ORDEN DEL DROPDOWN: (1) Boca (club default)
   aparecía con TODOS los gráficos de Finanzas vacíos en la primera carga de la página, y solo se
   arreglaba solo después de cambiar de club y volver — causa: `pasesDataForClub`/
   `resultadosDataForClub`/`titulosDataForClub` (más abajo en el `<script>`) referencian
   `CLUB_GENERIC_DATA` SIN el prefijo `window.`, y ese objeto global solo se crea DENTRO de cada
-  `data/<país>/<club>-data.js` lazy-loaded (Versión 95) — en la carga inicial, antes del primer cambio de
+  `data/<país>/<club>-data.js` lazy-loaded — en la carga inicial, antes del primer cambio de
   club, ningún data-file de club genérico corrió todavía, así que el identificador bare
   `CLUB_GENERIC_DATA` no estaba declarado en ningún lado y tiraba `ReferenceError` (a diferencia de
   `window.CLUB_GENERIC_DATA`, que da `undefined` sin explotar) — eso frenaba en seco TODO el resto
@@ -539,14 +537,14 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   en `populateFinanzasSelectors`, tanto para Boca como para River/Racing) sigue mostrando el
   estilo largo "Ejercicio AAAA/AAAA (presupuestado)" a propósito, no tiene el problema de espacio
   de la tabla y así el dropdown se ve igual en los 3 clubes.
-- REGLA REFORZADA (Versión 48, Guido: "urnifica, tienen que ser exactamente iguales los nombres"):
+- REGLA REFORZADA (Guido: "urnifica, tienen que ser exactamente iguales los nombres"):
   no alcanza con nombres PARECIDOS entre Boca y el motor genérico, tienen que ser IDÉNTICOS
   carácter por carácter. Bug real encontrado y corregido: Boca usa el label `'Televisión'` (fila
   del Ejercicio 2027), el motor genérico tenía `'Televisión / Derechos de TV'` para la misma
   categoría (`broadcasting`), corregido a `'Televisión'` exacto. Antes de dar por buena una
   homologación de labels, comparar carácter por carácter contra `simplifiedReportForBoca()`, no de
   memoria/aproximado.
-- REGLA PERMANENTE (Versión 47, extiende la regla de la Versión 46, pedido explícito de Guido: "la
+- REGLA PERMANENTE (extiende la regla de la, pedido explícito de Guido: "la
   tabla tiene que quedar exactamente igual ordenada tambien. el orden importa"): el ORDEN de
   `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` (River/Racing) tiene que calzar con el
   orden real de `simplifiedReportForBoca()`, no solo los nombres. ORDEN VIGENTE DESDE LA VERSIÓN
@@ -554,15 +552,14 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   Educación, Otras secciones deportivas, catch-all "Otros ingresos" (con "Abonos" de vuelta en 6ta
   posición si `ABONOS_DENTRO_DE_ESTADIO` se pone en `false`). Orden anterior, hasta la 188: Cuotas
   Sociales, Comercial/Sponsors, Estadio, Televisión, Premios, Abonos, Venta de Jugadores,
-  catch-all (label "Abonos" a secas desde la Versión 49, ver bullet más abajo, antes decía
-  "Entradas / Abonos"). También: cualquier bucket que NO tenga equivalente en Boca (hoy: "Fútbol profesional
+  catch-all. También: cualquier bucket que NO tenga equivalente en Boca (hoy: "Fútbol profesional
   (sin desglosar por la fuente)", solo existe para Racing/River porque a veces el dato no
   desglosa más) lleva `hideIfZero:true` en su definición, no se pinta la fila si ese club/año no
   tiene ninguna línea ahí adentro (Guido lo pidió viendo esa fila en $0 para Racing). Un bucket
   NORMAL en $0 (ej. Venta de Jugadores cuando no hubo ventas) se sigue mostrando igual que en Boca,
   la regla `hideIfZero` es solo para categorías-excepción sin equivalente Boca. Ver
   `.claude/skills/club-data-mapping/referencia/formato-simplificado.md` y `Admin/finance-of-sports-project.md`.
-- REGLA PERMANENTE (Versión 46, pedido explícito de Guido): "Formato simplificado" de CUALQUIER
+- REGLA PERMANENTE (pedido explícito de Guido): "Formato simplificado" de CUALQUIER
   club tiene que usar el mismo set de categorías y la misma lógica que ya usa Boca
   (`simplifiedReportForBoca()`), no un set separado diseñado para el motor genérico. Si el dato
   fuente de un club no permite categorizar así, consultar a Guido antes de decidir cómo resolverlo,
@@ -573,13 +570,13 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   River se dejó como estaba (su dato no permite separarlo hoy); Gastos se dejó con la
   categorización que ya tenía, solo renombrada para que coincida con el vocabulario de Boca (Compra
   de jugadores / Salarios y primas / Inversiones / Otros gastos).
-- REGLA (Versión 44, mismo pedido que la Versión 43 pero para "Gestión"): el
+- REGLA: el
   `<select id="gestionSelect">` también tiene ancho fijo por CSS
   (`#gestionSelect{width:200px;max-width:100%;}`, justo después de `#anioSelect{...}`), mismo
-  criterio y mismo motivo que el de "Año" (ver bullet de la Versión 43 más abajo). 200px alcanza
+  criterio y mismo motivo que el de "Año". 200px alcanza
   para la gestión más larga de los 3 clubes ("Riquelme (2023-actual)", Boca, ~188px medido en el
   navegador).
-- REGLA (Versión 43, bug real de UX reportado por Guido): el `<select id="anioSelect">` ("Año" de
+- REGLA (bug real de UX reportado por Guido): el `<select id="anioSelect">` ("Año" de
   Finanzas) tiene ancho fijo por CSS (`#anioSelect{width:300px;max-width:100%;}`, justo después de
   la regla genérica `select{...}`). Antes no tenía ancho propio, así que un `<select>` nativo se
   achica o agranda según el texto de la OPCIÓN seleccionada (no la más larga de la lista), y el
@@ -589,19 +586,19 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   incluida la flecha nativa). REGLA PARA EL FUTURO: si se agrega un club/año con una etiqueta más
   larga que esa, medir de nuevo en el navegador (`selectEl.getBoundingClientRect().width` con esa
   opción seleccionada) antes de asumir que 300px sigue alcanzando, no agrandar el número a ojo.
-- REGLA VIGENTE (Versión 42, reemplaza la regla de las Versiones 34-35/41, ver bullet más abajo):
+- REGLA VIGENTE:
   los cards "Supuestos", "Presupuesto Financiero", "Presupuesto de Inversiones" e "Ingresos y
   Egresos por Torneo" ahora se ESCONDEN por completo cuando el club/ejercicio seleccionado no tiene
   presupuesto cargado, en vez de mostrar un mensaje de "no hay". Pedido explícito de Guido al ver
   los 4 cards vacíos para Boca 2024/2025 (que tiene balance, no presupuesto). La función
   `noDataMsg()` se borró (ya no la llama nadie). Detalle completo en
   `Admin/PANTALLA.md`, la regla de los 4 cards escondidos sin presupuesto.
-- REGLA PARA EL FUTURO (Versión 40, pedido explícito de Guido: "es mi manera de hacerte un
+- REGLA PARA EL FUTURO (pedido explícito de Guido: "es mi manera de hacerte un
   control"): toda fila de "Formato simplificado" tiene que llevar `items` con el desglose real de
   qué campo(s) nativo(s) se sumaron para llegar a ese número, nunca `items:null`. Implementado para
   Boca en la Versión 40 y para River/Racing en la Versión 42 (ver bullet más arriba), así que hoy
   ya cubre a los 3 clubes.
-- REGLA (Versión 39, bug real de layout + una regresión propia corregida en la misma sesión):
+- REGLA:
   `#finanzasPLTable` (card "Estado de resultados") tiene `table-layout:fixed` + un `<colgroup>` de 6
   `<col>`. Rubro es la única sin ancho fijo (se lleva el resto), las 5 numéricas tienen ancho fijo en
   píxeles. Antes de esto no tenía `table-layout:fixed`, así que el ancho de Rubro (y por lo tanto dónde
@@ -619,10 +616,10 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   `<div class="table-scroll">` (`overflow-x:auto`, `min-width` distinto por modo: 600px en Por gestión,
   320px en Año a año) para que en mobile scrollee en vez de aplastar Rubro. Detalle completo, con las
   dos vueltas de debugging, en `Admin/finance-of-sports-project.md`.
-- REGLA (Versión 37, bug visual): el "$" del eje Y del gráfico de barras (card Gráficos) no
+- REGLA: el "$" del eje Y del gráfico de barras (card Gráficos) no
   colisiona más con el tick más alto, ver `layout:{padding:{top:26}}` en `drawTrendChart`/
   `drawTrendChartGeneric`.
-- REGLA (Versión 36, pedida por Guido: "detesto que hagas eso"): la cita de fuente ("Fuente: ...")
+- REGLA (pedida por Guido: "detesto que hagas eso"): la cita de fuente ("Fuente: ...")
   NUNCA va adentro de un card individual (Supuestos, Presupuesto Financiero, Presupuesto de
   Inversiones, ni ningún card nuevo). Va en `#finanzasDataQualityBanner` (por ejercicio),
   `#finanzasClubSourceNote` (por club, al final del bloque de cards) o la tarjeta Fuentes de Finanzas, nunca
@@ -639,7 +636,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   no hay, en vez de esconder el card. (Ese texto lo arma hoy cada render de card: la función
   compartida `noDataMsg()` que hacía esto se borró, ver el punto de más arriba en este mismo
   archivo — este párrafo la seguía citando en presente.) Los 3 se repintan
-  juntos cada vez que cambia club/año/gestión. ACTUALIZADO (Versión 135): los datos de los 3
+  juntos cada vez que cambia club/año/gestión. ACTUALIZADO: los datos de los 3
   viven en el data file de cada club (generado de su JSON: `extras.budget_assumptions` / `budget_financial` / `budget_investments`), en `presupuestoSupuestosByYear` /
   `presupuestoFinancieroByYear` / `presupuestoInversionesByYear`, indexados por `[year]`. Antes
   eran 3 registros `[clubId][year]` adentro de `js/finanzas-render.js`, o sea datos de club en la
@@ -654,21 +651,19 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   `<div class="card">`", es el marcador genérico de "esto es Boca-only,
   ocultalo con otro club" que usa `refreshAllForClub()`. Cualquier elemento
   nuevo (card, `<p>`, lo que sea) que solo aplique a Boca necesita esta
-  clase, si no queda visible con cualquier club (bug real, Versión 27, pasó
-  con una nota de fuente suelta que no estaba dentro de ningún card).
+  clase, si no queda visible con cualquier club.
 - OJO `Object.keys()` sobre un objeto con claves que parecen enteros
   (riverFiscalYearMeta, racingFiscalYearMeta: "2024","2025"...): JS SIEMPRE
   las reordena ascendente al iterarlas, sin importar el orden del código
-  fuente, no asumir que el orden de escritura se respeta (bug real,
-  Versión 26). `populateFinanzasSelectors()` ya ordena a mano
+  fuente, no asumir que el orden de escritura se respeta. `populateFinanzasSelectors()` ya ordena a mano
   (`.sort((a,b)=>b-a)`) para que el selector de Año quede descendente, y
   preserva el ejercicio seleccionado (o el más cercano) al cambiar de club,
   cualquier `<select>` nuevo que liste ejercicios de estos objetos debe
   seguir el mismo criterio, no confiar en el orden de iteración.
 - OJO texto fijo dibujado a mano en un <canvas> de Chart.js: el "$" del eje Y
-  del gráfico de barras se dibujaba con `ctx.fillText` (Versión 22) para
+  del gráfico de barras se dibujaba con `ctx.fillText` para
   esquivar la rotación automática del título nativo, pero salía con el glyph
-  roto (reportado por Guido, Versión 25), no se pudo diagnosticar la causa
+  roto (reportado por Guido), no se pudo diagnosticar la causa
   exacta (Chart.js no carga en el navegador de este entorno, ver más abajo).
   Reemplazado por un `<span>` de HTML normal superpuesto con
   `position:absolute` sobre `.chart-wrap`, mucho más simple y sin el riesgo
@@ -681,8 +676,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
 - OJO alineación en `<summary>` de acordeón (`details.accordion>summary`): usa
   `display:flex;justify-content:space-between`, pero el `::after` (+/−) cuenta
   como un 3er hijo flex, con solo 2 <span> (label + monto) el monto NO queda
-  pegado al borde derecho, space-between lo reparte entre los 3 (bug real,
-  Versión 24). Si se agrega un `<summary>` nuevo con label+monto, darle al
+  pegado al borde derecho, space-between lo reparte entre los 3. Si se agrega un `<summary>` nuevo con label+monto, darle al
   monto `flex:0 0 <ancho fijo>;text-align:right` (ver
   `details.accordion.nested>summary>span:last-child`), no confiar en
   space-between solo.
@@ -695,12 +689,11 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   sospechaba al principio). Si se agrega un nuevo lugar que muestre "Gastos"
   del ejercicio, usar ese mismo patrón (renderNativePLTable primero, después
   el stat con su total), no recalcular aparte.
-- EN EL CAMINO DE FINANZAS EL SELECTOR ELIGE UN SOLO CLUB (Versión 633, to-do 96, decisión de Guido). El paso de clubes (`PASO_CLUBES` en
+- EN EL CAMINO DE FINANZAS EL SELECTOR ELIGE UN SOLO CLUB (decisión de Guido). El paso de clubes (`PASO_CLUBES` en
   js/selector.js) es de elección única cuando `origen === 'finanzas'`: tocar un club avanza (`unico`, sin casillas ni "Elegir todos"). La multi-selección
   es solo de Comparar, donde un lado puede ser un conjunto. Antes se podían marcar varios y el card final decía "2 clubes", "suma(2 clubes)" y "Ver los
   números de AC Milan" a la vez. La fórmula ("suma(…)") tampoco se muestra fuera de Comparar.
-- LA ETIQUETA DE UN EJERCICIO ("2021" O "23/24") Y SU GESTIÓN SALEN DE LA FECHA DE CIERRE DE ESE EJERCICIO, NO DEL CLUB (Versión 627,
-  to-do 177, decisión de Guido). Se pregunta con `esEjercicioCalendario(clubId, y)` / `cierreEjercicio(clubId, y)` (js/finanzas-calc.js), nunca con
+- LA ETIQUETA DE UN EJERCICIO ("2021" O "23/24") Y SU GESTIÓN SALEN DE LA FECHA DE CIERRE DE ESE EJERCICIO, NO DEL CLUB (decisión de Guido). Se pregunta con `esEjercicioCalendario(clubId, y)` / `cierreEjercicio(clubId, y)` (js/finanzas-calc.js), nunca con
   `clubs[id].fiscalYearStart === '01-01'`: Parma, Atalanta, Milan, Genoa y Fiorentina cambiaron la fecha de cierre algunos años, y con la regla por
   club Parma 2018 se veía "2018" y se le asignaba Pizzarotti (es 17/18, de Jiang). Escalera: `cierre` del fiscalYearMeta, la fecha del `fxRef`, y si el
   data file no está cargado (Ligas, selector, Comparar) `CLUB_INDEX[id].ci` (lo genera tools/generate-club-index.js con el mismo criterio, desde
@@ -729,7 +722,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   club) y el aro interno de los colores claros; si aun así no se lleva, va a `null`. El dato
   del club no se toca, que es justamente lo que el campo promete. El procedimiento para
   resolver el color de un club NUEVO vive en `.claude/skills/club-or-year-onboarding/club-nuevo.md`.
-- OJO CON EL ESTADO DE UI A NIVEL DE MÓDULO EN `js/selector.js` (Versión 174).
+- OJO CON EL ESTADO DE UI A NIVEL DE MÓDULO EN `js/selector.js`.
   `grillaConTope()` la usan varias grillas distintas, y su `mostrarTodos` es una
   variable de módulo: si una grilla nueva la prende, "Mostrar más" queda apretado
   también en las otras sin que nadie lo haya pedido. Una grilla nueva trae su
@@ -751,7 +744,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
 
 Texto movido sin cambios.
 
-- PRESUPUESTOS, POR CLUB (Versión 135): los 3 cards que solo aparecen para un
+- PRESUPUESTOS, POR CLUB: los 3 cards que solo aparecen para un
   ejercicio con presupuesto (Supuestos, Presupuesto Financiero, Presupuesto de
   Inversiones) sacan sus datos de `presupuestoSupuestosByYear` /
   `presupuestoFinancieroByYear` / `presupuestoInversionesByYear`, adentro del
@@ -760,11 +753,11 @@ Texto movido sin cambios.
   ESTE archivo. Onboardear un presupuesto ya no toca ni el motor ni el HTML.
 - PESTAÑAS: Finanzas es la única con datos reales y es donde está todo el
   trabajo. Resultados Deportivos / Títulos están vacías o con placeholder según el club. La pestaña
-  Mercado de Pases se borró (to-do 303, decisión de Guido): mostraba datos inventados; `pasesData`
-  queda como `[]` en cada club y nadie lo lee. "Mi Cuenta" (to-do 70, Versiones 271-272, 2026-09-27) DEJÓ DE SER
+  Mercado de Pases se borró (decisión de Guido): mostraba datos inventados; `pasesData`
+  queda como `[]` en cada club y nadie lo lee. "Mi Cuenta" DEJÓ DE SER
   UN STUB: login con Google vía Supabase y "Saved Searches" reales — cada club/comparación que se
   mira queda guardado solo (sin botón), con favoritos primero y el resto del historial después.
-  No es un paywall (la decisión de ir todo gratis del 2026-09-14 sigue en pie): es que quien se
+  No es un paywall (la decisión de ir todo gratis sigue en pie): es que quien se
   loguea puede volver a ver lo que ya miró. Pendiente antes de que sirva para un visitante real,
   no solo Guido: to-do 94 (publicar la pantalla de consentimiento OAuth de Google, que arranca en
   modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase).
@@ -794,9 +787,9 @@ Texto movido sin cambios.
   clubes y no el más reciente, porque los balances tardan en publicarse; y el "N de M" solo se escribe si `leagueSizeAt()` lo sabe.
   Las banderas (no los códigos de país) son las de `COUNTRIES[...].flag`, también en las tarjetas de Inicio.
   Las tarjetas de ranking de Inicio no llevan cuántos clubes hay cargados ni US$ por club (pedido de Guido): nombre, barra y el ejercicio.
-- SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-285, to-do 83) — por
+- SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA — por
   ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, el card
-  "<club> en otra liga" (Versión 532; hasta ahí era un botón en la barra de controles), con el balance más nuevo elegido; (b) desde CUALQUIER liga, un buscador ("Sumar un
+  "<club> en otra liga", con el balance más nuevo elegido; (b) desde CUALQUIER liga, un buscador ("Sumar un
   club o una liga entera…") que acepta tanto un club suelto (se baja con `loadClubData()` antes de
   calcular, y su ejercicio queda editable con un dropdown inline) como una LIGA COMPLETA (inserta
   TODOS sus clubes de una, reusando `data/rankings/<liga>.js` ya calculado — no baja nada, por eso
@@ -804,12 +797,10 @@ Texto movido sin cambios.
   fondo ámbar, badge "(simulado)") y NUNCA cuenta para los totales/cobertura reales de esa liga.
   Mientras hay algo simulado, un dropdown deja cambiar de liga sin perder los clubes, y "Volver a
   Ligas" reabre el picker con ellos en cola en vez de resetear todo. Se guarda solo en Mi Cuenta
-  (to-do 70) como `state.clubes` (siempre array, mismo caso con 1 club o con varios). El botón de
+  como `state.clubes` (siempre array, mismo caso con 1 club o con varios). El botón de
   Finanzas solo aparece en modo "Año a año" (no "Por gestión"): el motor real compara un ejercicio
   puntual, no un rango.
-- UI: EL SELECTOR DE CLUB ES UN MODAL PASO A PASO (Versión 146, reemplaza al panel
-  de 5 columnas de la Versión 137, que a su vez había reemplazado a un `<select>`
-  plano de 41 opciones). Una pregunta por vez, los pasos apilados: Deporte →
+- UI: EL SELECTOR DE CLUB ES UN MODAL PASO A PASO. Una pregunta por vez, los pasos apilados: Deporte →
   Región → País → Clubes → Ejercicio de cada club. El resuelto se encoge a una
   línea con lo que elegiste y un "Cambiar"; ninguno es obligatorio ("Elegir más
   tarde" está en todos, por eso ninguno dice "opcional"). Arriba, el buscador:
@@ -839,7 +830,7 @@ Texto movido sin cambios.
   Racing, el amarillo de Club América) — y le pone un aro interno a los colores muy
   claros, que contra el fondo blanco de la fila se perderían. Son 39 de los 41: el
   campo es opcional a propósito y Real Madrid y Once Caldas llevan `brandColor:null`
-  (Versión 179), porque el color que los identifica es el blanco y un círculo blanco
+ , porque el color que los identifica es el blanco y un círculo blanco
   no se ve; esos dos se quedan con el azul del sitio, que es el fallback. El `null`
   explícito es lo que distingue "se miró y no lleva color" de "nadie lo chequeó": el
   ausente lo marca `node tools/audit.js` (`club-sin-color-ni-null`, P3), y resolver el
@@ -908,8 +899,7 @@ Texto movido sin cambios.
   barra baja a una segunda línea). Inicio se ve IGUAL haya club elegido o no, y NINGÚN `data/<país>/<club>-data.js` se carga para
   dibujarlo. Las cinco pestañas (Inicio, Comparar, Ligas, Finanzas, Mi Cuenta) se ven con club o sin club; la pestaña Fuentes no existe más (repetía la tarjeta Fuentes de Finanzas y la página pública `fuentes/<club>.html`). El club queda en
   `localStorage` y las visitas siguientes entran derecho a él.
-- COMPARAR (Versión 148-154, pestaña `#vs`, no confundir con "Comparar Gestiones",
-  que compara 2 presidencias del mismo club). **Dos cards, A y B, y cada uno es un
+- COMPARAR. **Dos cards, A y B, y cada uno es un
   LADO. Un lado es una SUMA DE BLOQUES**, y cada bloque tiene su propio agregador:
 
       { kind:'liga',   league:'ar-primera', years:[2025],             agg:'promedio'|'suma' }
@@ -921,10 +911,10 @@ Texto movido sin cambios.
   Clubes / Mezcla — las dos primeras son atajos de un bloque, la mezcla es el
   modelo completo). `año === null` es "el ejercicio más reciente de ESE club"; en un
   bloque de liga el año NO puede ser null, define quiénes la integraban.
-  Desde el to-do 23 (Versión 559) la pantalla se lee como Finanzas: ver la sección
+  Desde el to-do 23 la pantalla se lee como Finanzas: ver la sección
   "Comparar con el diseño de Finanzas" de arriba. Los números salen de
   `computeYearGeneric()`, el motor real. Vive todo en `js/selector.js`:
-  `js/comparar-clubes.js` (la bandeja de chips de la Versión 137) se borró en la Versión 152.
+  `js/comparar-clubes.js` se borró en la Versión 152.
 - Toggle de moneda nativa/USD y toggle "Formato del club"/"Formato simplificado"
   (este último es el default). El toggle "Año a año"/"Por gestión" está OCULTO
   desde la Versión 112 (pedido de Guido), código y datos intactos.
@@ -943,8 +933,7 @@ Texto movido sin cambios.
 - CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=`. SUBIR ESE
   NÚMERO al cambiar cualquier archivo de `js/` o `data/`, si no un visitante que
   ya entró antes se puede quedar con el JS viejo cacheado y el HTML nuevo.
-  OJO, SE SUBE EN DOS LUGARES (corregido en la Versión 125, hasta acá este
-  párrafo decía algo que no era cierto): `window.ASSET_V` es una constante
+  OJO, SE SUBE EN DOS LUGARES: `window.ASSET_V` es una constante
   inline, pero los `?v=` de los `<script src>` estáticos son LITERALES y no salen
   de ella, solo los 2 cargadores dinámicos (`loadClubData()`, `I18N.load()`) la
   leen. Hay que cambiar la constante Y los tags. Subir uno solo es peor que no
