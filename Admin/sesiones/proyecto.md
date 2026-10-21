@@ -44,3 +44,19 @@ main de esos dos `-data.js`, pasar su cambio al JSON con `node tools/exportar-js
 `data/ar/<id>.json`) y regenerar con `node tools/generar-data.mjs`. El resto del conflicto es generado (`index.html` ASSET_V, `fuentes.html`, `fuentes/*.html`): `tools/worktree.mjs mergear`
 lo resuelve y regenera (hay que regenerar también `data/rankings/ar-primera.js`, que cambió en los dos lados). Después `node tools/audit.js`, `node tools/generar-data.mjs --check` y
 `node tools/renombrar-ids.mjs --verificar` (que no vuelva a aparecer un id viejo en lo que trajo main).
+
+## Lo que una sesión nueva tiene que saber del 246 (y del estado de la rama)
+
+- **Formato del id:** `<slug>-<iso2>` con el `country` de `data/clubs.js` (`boca-ar`, `realmadrid-es`). Un id nunca se reutiliza. Los 41 viejos (`boca`, `river`, `racing`…) están en `data/club-aliases.js`
+  (`window.CLUB_ALIASES` + `resolverClubId`/`resolverClubIds`), que se carga en `index.html` después de `clubs.js` y no se borra nunca. En tools, `normalizarId()` de `tools/data-clubes.js` (`rutaData` lo usa) acepta
+  un id viejo y avisa. `audit.js`: `clubid-sin-pais` y `alias-roto` son P1.
+- **`tools/renombrar-ids.mjs`:** el ensayo (sin flags) escribe `Admin/mediciones/246-ensayo.txt`; `--aplicar` exige árbol limpio; `--verificar` (solo lectura) dice si queda un id viejo en un contexto reconocido. Reescribe
+  solo en contextos (comillas, clave de objeto, rutas, `?club=`, sourceIds EXACTOS leídos del data file del club, `"match": "<id> …"` de `audit-ignore.json`, `|<id>"` de la cola). Excluye a propósito: historia
+  (CHANGELOG, Archive, sesiones, auditorías), `Clubes/`, logs de gasto, `.claude/`, `audit.js`, `js/selector.js`.
+- **Trampas que aparecieron:** (1) un token `<id>-algo` entre comillas NO es siempre un sourceId (entidades como `botafogo-saf`, slugs de sponsors, ejemplos de docs): por eso los sourceIds salen del data file;
+  (2) en los data files los registros se asignaban con `gestionesByClub.river = …` y `memberCountByClub.river = …` (propiedad, no comillas): quedaron con el id viejo y `auditAll()` NO lo detecta (la gestión
+  queda «sin dato»); (3) una clave con guion en JS necesita comillas; (4) archivos viejos de `Admin/gestiones-por-pais/` ya usaban ids con país (`clubamerica-mx`): no se duplica el sufijo; (5) `git mv` + reescritura
+  en el mismo `--aplicar`; (6) el clasificador de permisos frenó `--aplicar` hasta que Guido lo confirmó en la sesión.
+- **Chequeo que conviene siempre tras tocar ids:** cargar todos los data files y datos compartidos en un `vm` y buscar cualquier id viejo como clave o valor (se hizo con un script suelto; resultado: ninguno).
+- **Estado de la rama `proyecto`:** además del 246 (`b802dc4d52` y el arreglo `1ad395ff4e`), la sesión ya hizo y commiteó el 245 fase 2 antes de que cambiara el brief (`ccaac6af55` Boca, `f22c829d39` JSON fuente, ya
+  verificado; ver la sección de arriba). El Boca (`ccaac6af55`) quedó ANTES del arreglo del 246 en la historia. No reescribí historia.
