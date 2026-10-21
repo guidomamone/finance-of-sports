@@ -19,37 +19,9 @@ Este archivo tiene las reglas de proceso, que valen en cualquier sesión. Las de
 cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir datos de un club) y `Admin/PANTALLA.md` (al tocar `js/`,
 `index.html` o CSS). Al final está el índice de cada regla mudada, para que una búsqueda por su versión siga llegando.
 
-- DOS SESIONES EN PARALELO: UNA EN `main`, LA OTRA EN UN WORKTREE (Versión 200, pedido de Guido para
-  correr onboarding y sourcing al mismo tiempo). Dos sesiones sobre el MISMO working tree se pisan
-  en silencio: no hay bloqueo de archivos, así que la segunda escritura gana y la primera se pierde
-  sin que nada avise. Pasó el 2026-09-22 con tres sesiones de documentación. La separación es un
-  worktree (`git worktree`), que convierte un clobber invisible en un conflicto de merge visible.
-  - **El ONBOARDING va en `main`, el SOURCING en el worktree.** No es simétrico, y el motivo es
-    `Clubes/`: hay miles de PDFs y decenas de GB ahí, y **ninguno está trackeado** (solo las transcripciones
-    `.md`). Un worktree nace sin un solo PDF. El onboarding necesita el PDF del club que carga, que
-    ya está en el árbol principal; el sourcing los crea. Además el onboarding necesita el preview
-    para `auditAll()`, y `.claude/launch.json` tiene el puerto fijo con `autoPort:false`.
-  - **Un PDF bajado en el worktree NO viaja al mergear**, porque `*.pdf` está en `.gitignore`. Si
-    borrás el worktree, se perdió el documento fuente. Pasalos al árbol principal ANTES de hacer
-    `git worktree remove` (cómo, con `rsync -a --no-links`: `.claude/skills/start-session-finance-of-sports-project/worktree.md`),
-    o simplemente no borres el worktree.
-  - **El número de Versión se decide al MERGEAR, no al escribir.** Las dos ramas van a querer el
-    mismo. El que mergea segundo renumera su entrada; el conflicto al final de `Admin/CHANGELOG.md`
-    es esperable y mecánico.
-  - **`faltantes-desfasado` en un worktree** (P1 de `audit.js`, y el hook de commit lo frena): `data/faltantes/` depende de PDFs que git
-    ignora y que la principal bajó después de `preparar`. Se arregla volviendo a correr `node tools/worktree.mjs preparar <carpeta>`.
-  - **El hook de los docs de la principal lee el texto del comando**: un Bash que solo NOMBRA `TODO.md`, `CHANGELOG.md` o `ESTADO.md` junto a
-    una escritura (un heredoc a la nota de la sesión) también se frena. En ese caso, escribir con Edit/Write.
+- DOS SESIONES EN PARALELO: dos sesiones sobre el mismo working tree se pisan en silencio, así que cada sesión paralela va en su worktree; el procedimiento está en la skill de arranque, `worktree.md`.
   - **Después de mergear una rama con JSON de club en el esquema viejo (1.0)**: `node tools/migrar-v2.mjs --escribir` en la principal
     (idempotente: con los chequeos de sumas en verde, solo escribe los que estaban en 1.0).
-  - **Un archivo GENERADO no se mergea a mano: se regenera.** Si hay conflicto en `Admin/sourcing/README.md`,
-    `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js` o
-    `Admin/ESTADO-clubes.md` (el bloque CLUB-INDEX, aparte de `Admin/ESTADO.md` desde la Versión 239),
-    tomá cualquiera de los dos lados, mergeá, y corré el generador que
-    corresponda. Resolverlos línea por línea es cómo se mete un dato que ningún documento respalda.
-  - **Un país por sesión de sourcing.** `Admin/sourcing/_indice/<País>.md` y `Admin/sourcing/<País>/` son de un
-    solo país a propósito (ver el porqué en `CLAUDE.md`): dos sesiones en países distintos no
-    comparten un solo archivo y no pueden conflictuar.
 
 - ONBOARDING CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA (pedido de Guido, 2026-10-20: "quitarme de en medio en los arreglos de script").
   Tres sesiones de worktree con un rol cada una; la principal mergea, corre los comandos y hace de correo.
@@ -127,19 +99,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   probablemente había que borrarlo y no archivarlo. Lo archivado lleva un banner que dice de qué Versión es, porque sus
   rutas y sus números son los de ese día. Ver `Admin/Archive/README.md`.
 
-- UNA PREMISA VENCIDA EN LA TO-DO SE ESCRIBE AL CERRAR EL PUNTO (auditoría del eje `tokens`,
-  2026-09-20). Cuando una tarea se resuelve y el motivo por el que estaba trabada resultó FALSO, no
-  alcanza con borrar el punto: hay que dejar escrito que la premisa estaba vencida, en la entrada de
-  `Admin/CHANGELOG.md` y, si el punto sigue vivo en parte, en el propio `Admin/TODO.md`.
-  POR QUÉ, con los casos que lo motivaron: la to-do 21(a) daba 5 tipos de cambio por irrecuperables
-  con dos motivos y los dos estaban vencidos (los PDFs de San Lorenzo "nunca se transcribieron" —
-  lo están desde el 2026-09-17; la transcripción de Vélez "no preservó la columna de cambio
-  vigente" — su Anexo VI la tiene). Se resolvieron leyendo archivos que ya estaban en disco. La
-  to-do 25 mandaba a revisar `renderFinanzasStatsFromComputed`, borrada en la Versión 102.
-  Una premisa vencida no hace perder la tarea: **la hace parecer más cara de lo que es, y por eso
-  queda al fondo de la lista para siempre.** Escribirlo es la única señal de que los OTROS puntos
-  de la lista también pueden estar en la misma situación — fue así como, después del primer caso,
-  se encontró el segundo.
+- Cerrar un punto del TODO con una premisa vencida: skill `principal-finance-of-sports`.
 - REGLA DE ESTILO (Versión 42, pedida por Guido: "los odio a los em dashes"): la regla vale SOLO para el
   texto visible del sitio (copy de la página, traducciones, notas públicas): no usar el carácter
   em dash (—, U+2014). Usar punto y arrancar oración nueva, coma, dos puntos o paréntesis según

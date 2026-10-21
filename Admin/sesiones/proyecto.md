@@ -206,3 +206,15 @@ lo resuelve y regenera (hay que regenerar también `data/rankings/ar-primera.js`
 - Rechazados por la Auditora (no codeados): que `mergear` frene sin flecha (va como aviso, primero el texto de `worktree.md` con el ok de Guido) y un paso de adelantar en `worktree.mjs` (no existe).
 - Sigue pendiente el ok de Guido a cada skill de las partes 2, 3 y 7 de 257-skills.md.
 - Medición del candado: 162 commits tocaron `.claude/skills` en total y 32 desde el 2026-10-14; cada uno habría necesitado su propuesta commiteada antes.
+
+### Vuelta 3 de Orden 1 (2026-10-21): partes 3 y 7 del 257 aplicadas
+
+- Parte 3 (ocho commits, el último `83070e4759`): club-sourcing, start-session (párrafo, filas 9 a 13 de la tabla, «Cómo mantener»), club-outreach, `worktree.md`, club-or-year-onboarding (la cola y el gasto de API), CONVENCIONES-DATOS y CONVENCIONES (la regla de dónde queda lo que se decide, con su tabla, y el índice sin versiones). El chequeo de historia se nombra `historia-en-doc-de-criterio` (el nombre real en `audit.js`).
+- Parte 7 (un commit): `producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md` (con la verificación y las trampas del navegador), cinco párrafos de pasos de worktree en `worktree.md` (con `data/sponsors.js` en la lista de generados) y la sección «Cerrar un punto del TODO» en la skill principal. En `Admin/PANTALLA.md` las dos secciones quedan en una línea que apunta a la skill; en `Admin/CONVENCIONES.md` se borraron «DOS SESIONES EN PARALELO» (queda su primera frase y el bullet de `migrar-v2.mjs`, que decide quien mergea) y «UNA PREMISA VENCIDA» (queda una línea que apunta a la skill). Los textos exactos, en `Admin/propuestas/257-parte3-texto.md` y `257-parte7-texto.md`.
+
+### Qué queda (vuelta 3)
+
+- En `Admin/PANTALLA.md` quedó, bajo «Verificar en el browser de verdad…», el párrafo «Cómo verlo como archivo» (Chrome sin ventana con `--screenshot`): el texto aprobado de la skill no lo trae y no lo mudé para no perderlo. Para moverlo a `navegador-de-preview.md` hace falta un texto nuevo con el ok de Guido.
+- La introducción de `Admin/CONVENCIONES.md` (línea 20) todavía dice que el índice de reglas mudadas sirve para buscar «por su versión»; el índice ya no lleva versiones.
+- El aviso de `worktree.mjs mergear` por un «Qué queda» sin flecha no está codeado (la tabla de CONVENCIONES lo nombra): cambio de tool para Pipeline, con la Auditora.
+- Memorias de la parte 1: todas cubiertas; antes de borrar la 14 (`no-frenar-carga-por-socios`) falta en `Admin/TODO.md` la mejora de que el gate `perfil-en-cola` de `cargar.mjs` nunca frene.
