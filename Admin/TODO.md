@@ -30,26 +30,23 @@ el número de la izquierda es el orden de trabajo.
 **A. En marcha**
 * Lo que está en marcha va marcado en cada bloque.
 
-**B. Pantallas y distribución**
-1. 247 (Pantallas 7): registro público de correcciones (ok de Guido a las 4 recomendaciones del plan)
-
 **C. Técnico**
-2. 327 (Pipeline 10): 4 chequeos nuevos en audit.js y 6 frenos automáticos en el hook (ok de Guido)
-3. 248 (Datos 4, Opus): taxonomía genérica y subcategorías por deporte; se prueba cargando Bath Rugby (Guido)
-4. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
-5. 249: API en dominio propio (el último de C; no construirla todavía)
+1. 327 (Pipeline 10): 4 chequeos nuevos en audit.js y 6 frenos automáticos en el hook (ok de Guido)
+2. 248 (Datos 4, Opus): taxonomía genérica y subcategorías por deporte; se prueba cargando Bath Rugby (Guido)
+3. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+4. 249: API en dominio propio (el último de C; no construirla todavía)
 
 **D. Orden de la casa**
-6. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
-7. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
-8. 257: skills que faltan
-9. 237 al: anexo UEFA para abrir las ventas
-10. 258: índice partido por país o liga (cuando la skill de escala lo diga)
+5. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
+6. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
+7. 257: skills que faltan
+8. 237 al: anexo UEFA para abrir las ventas
+9. 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-11. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-12. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-13. 335: mails a clubes
+10. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+11. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+12. 335: mails a clubes
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -66,8 +63,6 @@ el número de la izquierda es el orden de trabajo.
        Más casos (lote 84): Sporting 2002 a 2007, cuadro de gestión de los proveitos (columna de resultados reales, mismo total que
        el estado): cargado con 45 ajustes `fila` (TV, taquilla, abonos, cuotas, sponsors, royalties, UEFA y un resto).
 
-247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
-   ni cuándo, dato por dato. Un registro público versionado.
 248. TAXONOMÍA GENÉRICA + SUBCATEGORÍAS POR DEPORTE (mejoras de proyecto, pedido de Guido 2026-10-16). Una capa genérica (ingresos y gastos operativos, deuda) y las subcategorías de cada
    deporte debajo, para que wages_squad no quede como campo de primer nivel de una API. Sin otros deportes por ahora (Guido, 2026-10-20: no se transcribe más).
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en

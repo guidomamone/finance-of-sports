@@ -87,6 +87,11 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     lo avisa a costo 0, y reintentar no hace aparecer una tabla que el `.md` no tiene (Auditora, 2026-10-20; Colombia corrió tres veces por eso).
   - **El número de lote lo da la principal.** Las listas de corrida (`Admin/registros/.lote-lista-actual.txt` y compañía) son de cada
     carpeta; dos lotes en carpetas distintas pueden correr a la vez, dos en la misma no.
+  - **Un commit que corrige un dato publicado lleva el trailer `Corrige: <motivo>`**: una frase en español, para un hincha o un
+    periodista, sin jerga ni números de to-do (opcional `Corrige-en:` en inglés). Corregir es cambiar un importe, una categoría, las filas,
+    un total, la caja o la deuda, la moneda, el tipo de cambio, la fuente o el perímetro de un ejercicio que ya estaba en el sitio; un año
+    o un club nuevo no lo es. Si el commit ya salió, una línea en `Admin/registros/correcciones.jsonl` (`commit`, `club`, `anio`,
+    `motivo_es`, `motivo_en`, `fuente`). El motivo se publica en el registro de correcciones; `audit.js` da `correccion-sin-motivo` (P2).
 
 - DÓNDE VA UN DOCUMENTO NUEVO, Y POR QUÉ NO ES UNA CUESTIÓN DE ORDEN (Versión 196, pedido de Guido:
   *"the entire project has too many files scattered. i want some order"*). La regla (todo documento
