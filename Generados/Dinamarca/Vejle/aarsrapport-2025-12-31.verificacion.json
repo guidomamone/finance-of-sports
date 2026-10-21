@@ -1,11 +1,11 @@
 {
  "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
  "md": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md",
- "generado": "2026-10-21T12:48:26.150Z",
+ "generado": "2026-10-21T13:55:31.440Z",
  "scriptHuella": "f2a64e48f42b",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "vejle-dk",
- "year": null,
+ "year": 2025,
  "escala": {
   "valor": "miles",
   "escalon": 0,
@@ -22,12 +22,57 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "2.322",
+   "linea": 558,
+   "etiqueta": "Amortización derechos de jugadores (nota 4)",
+   "lado": "gasto",
+   "reemplaza": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "motivo": "Partir el total de 3.334 (L211) por las notas, como Vejle 2024: derechos de jugadores 2.322 (nota 4, L558) y materiales 1.012 (nota 5, L581); cierra exacto",
+   "evidencia": ".md L211, L558, L581",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "1.012",
+   "linea": 581,
+   "etiqueta": "Depreciación de materiales (nota 5)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Parte del total de 3.334 (L211): depreciación de materiales (nota 5, L581)",
+   "evidencia": ".md L211, L581",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Amortización derechos de jugadores (nota 4)",
+   "motivo": "Partición por notas (ver fila)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Depreciación de materiales (nota 5)",
+   "motivo": "Partición por notas (ver fila)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
   }
  ],
- "cola": [
-  "7c28b0e",
-  "d1f6438"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,19 +97,15 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
-  },
-  {
-   "nombre": "primer año",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "la columna 2024 de este documento suma ingresos 48.516; el sitio tiene 47.596"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Amortización derechos de jugadores (nota 4)\" (gasto) 2.322, en lugar de \"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver\" (2026-10-21, Partir el total de 3.334 (L211) por las notas, como Vejle 2024: derechos de jugadores 2.322 (nota 4, L558) y materiales 1.012 (nota 5, L581); cierra exacto)",
+  "ajuste manual: fila \"Depreciación de materiales (nota 5)\" (gasto) 1.012 (2026-10-21, Parte del total de 3.334 (L211): depreciación de materiales (nota 5, L581))",
   "la lectura base no cerraba; cerró con la lectura 3",
-  "duda de extraer que no afecta la carga: Signo opuesto entre estado L218 y nota L547-L548; el resultado L219 confirma que suma 340.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Signo opuesto entre estado L218 y nota L547-L548; el resultado L219 confirma que suma 340."
  ],
  "reintentar": null,
  "reintentado": false,
@@ -121,20 +162,28 @@
    "origen": "nota que desglosa \"Personaleomkostninger\""
   },
   {
-   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
-   "lado": "gasto",
-   "M": 3.334,
-   "pagina": 11,
-   "linea": 211,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Andre driftsomkostninger",
    "lado": "gasto",
    "M": 0.07,
    "pagina": 11,
    "linea": 212,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortización derechos de jugadores (nota 4)",
+   "lado": "gasto",
+   "M": 2.322,
+   "pagina": 21,
+   "linea": 558,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Depreciación de materiales (nota 5)",
+   "lado": "gasto",
+   "M": 1.012,
+   "pagina": 22,
+   "linea": 581,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -159,27 +208,5 @@
    "M": 0.34,
    "linea": 218
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "dcd3b8f89fc6fbe8756e4923b1a5c1906c7fd4da",
-  "rango": [
-   206,
-   222
-  ],
-  "lineasCargadas": [
-   209,
-   214,
-   539,
-   540,
-   541,
-   211,
-   212,
-   215,
-   216,
-   218
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 206 a 222 del .md):\nL206: |  | Resultatopgørelse |  |  |  |\nL207: | --- | --- | --- | --- | --- |\nL208: |  | Note | t.kr. | 2025 | 2024 |\nL209: |  |  | Bruttofortjeneste | 53.447 | 47.801 |\nL210: |  | 2 | Personaleomkostninger | -54.491 | -48.796 |\nL211: |  |  | Af- og nedskrivninger af immaterielle og materielle anlægsaktiver | -3.334 | -3.354 |\nL212: |  |  | Andre driftsomkostninger | -70 | -82 |\nL213: |  |  | Resultat før finansielle poster | -4.448 | -4.431 |\nL214: |  |  | Indtægter af kapitalandele i tilknyttede virksomheder | 783 | 715 |\nL215: |  |  | Finansielle indtægter | 46 | 98 |\nL216: |  |  | Finansielle omkostninger | -258 | -357 |\nL217: |  |  | Resultat før skat | -3.877 | -3.975 |\nL218: |  | 3 | Skat af årets resultat | 340 | 310 |\nL219: |  |  | Årets resultat | -3.537 | -3.665 |\nL220: |  |  | Forslag til resultatdisponering |  |  |\nL221: | --- | --- | --- | --- | --- |\nL222: |  |  | Reserve for nettoopskrivning efter indre værdis metode | 3 | 1 |\n\nLO QUE SE CARGA:\n- ingreso · \"Bruttofortjeneste\" · 53.447 · L209\n- ingreso · \"Indtægter af kapitalandele i tilknyttede virksomheder\" · 0.783 · L214\n- gasto · \"Lønninger\" · 50.539 · L539 (de una nota)\n- gasto · \"Pensioner\" · 3.219 · L540 (de una nota)\n- gasto · \"Andre omkostninger til social sikring\" · 0.733 · L541 (de una nota)\n- gasto · \"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver\" · 3.334 · L211\n- gasto · \"Andre driftsomkostninger\" · 0.07 · L212\n- financiero · \"Finansielle indtægter\" · 0.046 · L215\n- financiero · \"Finansielle omkostninger\" · -0.258 · L216\n- impuesto · \"Skat af årets resultat\" · 0.34 · L218"
- }
+ ]
 }
