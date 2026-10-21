@@ -55,3 +55,5 @@ Todos en `Clubes/Inglaterra/Bath Rugby/` (los PDF no se trackean; son escaneos, 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2022 desde `Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.pdf` (sourceId `bathrugby-gb-full-accounts-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2023 desde `Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.pdf` (sourceId `bathrugby-gb-full-accounts-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2024 desde `Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.pdf` (sourceId `bathrugby-gb-full-accounts-2023-24`).
