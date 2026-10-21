@@ -258,6 +258,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2020: {
     leagueSize: 20,
+    sinDato: ["fiorentina-it"],
     wiki: {"t":"2019–20 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"juventus-it", revenue:642.132, reportType:"official_balance_sheet",
