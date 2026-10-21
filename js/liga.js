@@ -536,7 +536,9 @@ window.LIGA_VIEW = (function(){
   // nivel. Solo las ligas con datos se pueden elegir; las demás quedan al final, plegadas. La lista no muestra cuánto hay cargado ni plata:
   // el índice (data/rankings/_regiones.js) solo dice qué ligas tienen datos. Los filtros viven en la URL (LIGA_VIEW.current().filtros).
   // Los niveles se comparan solo dentro de un país y un deporte: nunca se ordenan ligas de países distintos por nivel.
-  var frio = { q:'', region:null, deporte:null, agrupar:'pais', orden:'az', informes:false, abiertos:null };
+  // `pais`: los países que el visitante abrió o cerró a mano ({cid: true/false}), y `sinDatos`, el plegable de las ligas sin datos. Viven en
+  // memoria mientras dura la visita: volver con atrás desde una liga redibuja la lista como se dejó (la guía de UX, punto 6).
+  var frio = { q:'', region:null, deporte:null, agrupar:'pais', orden:'az', informes:false, abiertos:null, pais:{}, sinDatos:false };
   var FRIO_AGRUPAR = ['pais', 'deporte', 'nivel'], FRIO_ORDEN = ['az', 'ligas'];
   function conDatos(lid){ return !!(window.RANKINGS_INDICE || {})[lid]; }
   // Informes propios de la liga (los de toda Europa no cuentan: cubren todas las ligas y no distinguen). Ver `informes()`.
@@ -605,9 +607,12 @@ window.LIGA_VIEW = (function(){
     var grupos = agruparPorPais(lids);
     grupos.forEach(function(g, i){
       var det = el('details', 'lg-pais2');
-      var abierto = frio.abiertos === 'todos' ? true : frio.abiertos === 'ninguno' ? false : (frio.q.trim() ? true : i < 2);
+      var abierto = g.cid in frio.pais ? frio.pais[g.cid]
+        : frio.abiertos === 'todos' ? true : frio.abiertos === 'ninguno' ? false : (frio.q.trim() ? true : i < 2);
       if(abierto) det.open = true;
       var sum = el('summary');
+      // El click llega antes de que el <details> cambie: lo que queda es lo contrario de lo que hay.
+      sum.addEventListener('click', function(){ frio.pais[g.cid] = !det.open; });
       sum.appendChild(el('span', 'lg-flag', ((window.COUNTRIES || {})[g.cid] || {}).flag || ''));
       sum.appendChild(el('span', 'lg-pais2-n', g.nombre));
       sum.appendChild(el('span', 'lg-pais2-r', g.ligas.length + ' ' + (g.ligas.length === 1 ? t('liga.una', 'liga') : t('liga.varias', 'ligas'))));
@@ -801,7 +806,7 @@ window.LIGA_VIEW = (function(){
         [['todos', t('liga.abrir', 'Abrir todos')], ['ninguno', t('liga.cerrar', 'Cerrar todos')]].forEach(function(x){
           var bt = el('button', null, x[1]);
           bt.type = 'button';
-          bt.addEventListener('click', function(){ frio.abiertos = x[0]; pintarLista(); });
+          bt.addEventListener('click', function(){ frio.abiertos = x[0]; frio.pais = {}; pintarLista(); });
           acc.appendChild(bt);
         });
         cuenta.appendChild(acc);
@@ -810,7 +815,10 @@ window.LIGA_VIEW = (function(){
       else lista.appendChild(frio.agrupar === 'deporte' ? vistaDeporte(con) : frio.agrupar === 'nivel' ? vistaNivel(con) : vistaPais(con));
       if(sin.length){
         var det = el('details', 'lg-sindatos');
-        det.appendChild(el('summary', null, sin.length + ' ' + t('liga.noDataYet', 'ligas sin datos todavía')));
+        if(frio.sinDatos) det.open = true;
+        var sumSin = el('summary', null, sin.length + ' ' + t('liga.noDataYet', 'ligas sin datos todavía'));
+        sumSin.addEventListener('click', function(){ frio.sinDatos = !det.open; });
+        det.appendChild(sumSin);
         det.appendChild(el('p', null, sin.map(function(lid){ return nombrePais(ligaDe(lid).country) + ': ' + ligaDe(lid).name; }).join(' · ')));
         lista.appendChild(det);
       }
@@ -1384,12 +1392,14 @@ window.LIGA_VIEW = (function(){
     // Los filtros de la lista de ligas que dice la URL; un valor que no existe vuelve al de siempre.
     setFiltros: function(f){
       f = f || {};
+      var antes = [frio.deporte, frio.region, frio.agrupar, frio.orden, frio.informes].join('|');
       frio.deporte = (window.SPORTS || []).some(function(x){ return x.id === f.deporte; }) ? f.deporte : null;
       frio.region = (window.REGIONS || []).some(function(x){ return x.id === f.region; }) ? f.region : null;
       frio.agrupar = FRIO_AGRUPAR.indexOf(f.agrupar) >= 0 ? f.agrupar : 'pais';
       frio.orden = FRIO_ORDEN.indexOf(f.orden) >= 0 ? f.orden : 'az';
       frio.informes = !!f.informes;
-      frio.abiertos = null;
+      // "Atrás" a la misma lista no cambia ningún filtro: lo abierto y cerrado queda como estaba. Otros filtros, otra lista.
+      if([frio.deporte, frio.region, frio.agrupar, frio.orden, frio.informes].join('|') !== antes) frio.abiertos = null;
     },
     // Volver al estado frío (la grilla de ligas), por ejemplo con "atrás" desde una liga.
     frio: function(){ st.league = null; st.year = null; st.simulados = []; pendingSim = []; render(); }

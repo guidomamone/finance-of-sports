@@ -742,14 +742,26 @@
     const clave = claveActual;
     esperaScroll = setTimeout(() => { if(clave === claveActual) guardarScroll(); }, 250);
   }, { passive: true });
+  // EL FOCO SIGUE A LA VISTA: va al primer título visible de la sección nueva (o a la sección), para que el teclado y el lector de pantalla
+  // arranquen ahí y no en `body` (el elemento que se tocó, una fila de la lista de Ligas por ejemplo, ya no existe). Al abrir la página no
+  // se mueve: el foco de entrada es del navegador.
+  function focoDeVista(){
+    const s = document.querySelector('main > section.active');
+    if(!s) return;
+    const h = [...s.querySelectorAll('h1, h2')].find(x => x.offsetParent) || s;
+    if(!h.hasAttribute('tabindex')){ h.setAttribute('tabindex', '-1'); h.classList.add('foco-vista'); }
+    h.focus({ preventScroll: true });
+  }
   function scrollDeVista(e){
     const vista = [e.tab, e.club, e.liga, e.grupo, e.sponsor].join('|');
     if(vista === vistaEscrita) return;
+    const primera = vistaEscrita === null;
     vistaEscrita = vista;
     const ancla = location.hash.length > 1 && document.getElementById(decodeURIComponent(location.hash.slice(1)));
     if(ancla) ancla.scrollIntoView();
     else window.scrollTo(0, restaurarScroll ? alturas[claveActual] ?? (history.state || {}).y ?? 0 : 0);
     restaurarScroll = false;
+    if(!primera) focoDeVista();
   }
   function escribirURL(modo){
     if(!urlLista || aplicandoURL) return;

@@ -455,8 +455,11 @@ window.CLUB_SELECTOR = (function(){
   // LA ÚNICA FRONTERA ASYNC DEL SELECTOR: las filas de data/club-leagues/<iso2>.js se bajan acá, antes de dibujar, y no adentro de
   // los helpers (si devolvieran promesas habría que volver async cada render del modal). loadClubLeagues() cachea su promesa; si un
   // archivo de país falla, el modal abre igual, sin esas ligas.
+  var quienAbrio = null;   // el elemento con foco al abrir: close() se lo devuelve
   function abrirModal(i, desde, q){
     if(!inited) return;
+    var a = document.activeElement;
+    quienAbrio = a && a !== document.body && !$('clubPanel').contains(a) ? a : null;
     window.loadClubLeagues().then(function(){
       // El texto buscable incluye el nombre de las ligas de cada club, así que no
       // se puede armar antes de que la tabla esté cargada: se invalida acá para que
@@ -515,6 +518,11 @@ window.CLUB_SELECTOR = (function(){
     $('clubBtn').setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
     cerrarInfosAbiertas();
+    // El foco vuelve al botón que abrió el modal, si sigue en la página y el foco estaba adentro del modal. El buscador de Inicio no:
+    // enfocarlo vuelve a abrir el modal. Si después se cambia de vista, focoDeVista() (js/principal.js) lo lleva al título nuevo.
+    var volver = quienAbrio;
+    quienAbrio = null;
+    if(volver && volver.isConnected && volver.id !== 'iniQ' && $('clubPanel').contains(document.activeElement)) volver.focus({ preventScroll:true });
   }
 
   // ---------------------------------------------------------------------------
