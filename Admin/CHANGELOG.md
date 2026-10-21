@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 925 — Sourcing de los años con vía concreta; primera corrida de P2 y P3; skills (2026-10-21) [346 · 347 · 257 · goias-br, novorizontino-br, fiorentina-it]
+- 346 (Sourcing 4): Goiás 2018-20 (Wayback), Novorizontino 2012 (3 JPG a PDF) y Fiorentina 2020 (6 meses, Issuu) en `Clubes/`; no aparecieron Ferroviária y Novorizontino 2011, Gladbach y Stuttgart 2025 (se esperan para enero de 2027), Monza 2025 ni Lierse 2023-25. Basel 2022: la nota estaba bien (los dos 2022-23 de la carpeta son de otras entidades).
+- 347: primera corrida de «un código por corrida» (Auditora 4): `linea-duplicada` es un falso positivo (927 rótulos repetidos con montos distintos, ninguno copia); se saca la rama P3. Próximo: `catchall-dominante`.
+- Skills: el proceso de P2 y P3 en la de auditoría; cada tarea a la sesión de su rol en la principal (ok de Guido).
+- 345: `tools/xhtml-aarsrapport.mjs` convierte los informes daneses en XHTML (iXBRL) a `.md` (Auditora 4 aprobó); 7 de 8 casos; no el consolidado de FC København 2025.
+
 ## Versión 924 — Años sin rastro revisados (2026-10-21) [317 · 345 · 346 · acmilan-it, lazio-it, sampdoria-it, chievoverona-it, osasuna-es, almagro-ar, ferrocarriloeste-ar, losandes-ar]
 - `ejercicio-sin-rastro` no reporta un año cerrado hace menos de 9 meses (Auditora 4): 23 clubes y 41 club-años. Silenciados con motivo 8 clubes sin documento publicado y ya buscados.
 - Dos listas nuevas en el TODO: documentos en mano sin cargar (345) y sourcing con vía concreta (346).

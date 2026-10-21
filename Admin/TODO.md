@@ -31,7 +31,7 @@ el número de la izquierda es el orden de trabajo.
 1. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar
 2. 345 (Onboarding 8): lote 130 de documentos en mano y Girona 2021-23 (~US$5,50); los daneses en XHTML, cuando esté el lector
 3. 345 (Pipeline 13): lector del XHTML danés, con el diseño aprobado por la Auditora
-4. 346 (Sourcing 4): sourcing con vía concreta (Brasil, Alemania, Italia, Bélgica, Suiza)
+4. 347 (Pipeline 13): `linea-duplicada` sin la rama P3 «con montos distintos» (falso positivo, decisión de la Auditora)
 5. 347 (Auditora 4): primera corrida del proceso de P2 y P3, con `linea-duplicada` (927)
 6. 320 a 322 (Pruebas 1): Browser Use, Higgsfield, Zapier y OmniRoute
 
@@ -68,9 +68,6 @@ el número de la izquierda es el orden de trabajo.
    «Revisión de la cola del chequeo»: Chapecoense 2019, FC Emmen 2020-21, FC Fredericia 2021-25, los 2025 daneses en XHTML (ESEF), SønderjyskE
    2023-24, Fredrikstad 2019-23, Sarpsborg 08 2009-11, Vålerenga 2024, Genoa 2024, Girona 2021-23, Lierse Kempenzonen 2022, RAAL 2020, Omonia 29is
    Maiou 2024. Es un lote de onboarding: necesita presupuesto de Guido. El XHTML danés no lo lee el pipeline hoy.
-346. SOURCING CON VÍA CONCRETA (Pruebas 1, 2026-10-21). Ferroviária 2011 y Novorizontino 2011-12 (repositorio de la federación paulista), Goiás
-   2019, Mönchengladbach y VfB Stuttgart 2025 (Unternehmensregister), Monza 2025, Lierse Kempenzonen 2023-25 (API de la BNB), Basel 2022 (la nota
-   dice que no hay PDF pero está `geschaeftsbericht_2022-23.pdf`), Fiorentina 2020. Detalle y notas en `Admin/sesiones/pipeline.md`.
 347. P2 Y P3 SIN PROCESO (Guido, 2026-10-21: «armemos algo para los P2 y P3»). Hoy hay ~370 P2 y ~1.000 P3 que nadie revisa (los más:
    `linea-duplicada` 927, `catchall-dominante` 256, `sin-salarios` 48). Propuesta en `Admin/propuestas/p2-p3-y-roles.md`: cada auditoría baja
    un código (muestra de cinco, decisión por el código entero, registro antes y después). Ya está en la skill de auditoría (ok de Guido);
