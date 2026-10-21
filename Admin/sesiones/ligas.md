@@ -215,3 +215,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: `32dafd0a90` y `audit.js` sin ids de fútbol fijos, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`: `32dafd0a90` (`lote.mjs` corre `alta-club` antes del filtro de `--sin-api`) APROBADO; el barrido de `audit.js` y `pruebaDeDeporte()` (P1 `deporte-muestra`), APROBADO CON UN CAMBIO.
+
+### Qué queda (para TODO / 339)
+
+- `pruebaDeDeporte()` tiene que envolver cada chequeo en try/catch (limpieza en finally) y reportar una excepción como P1 `deporte-muestra`: si no, un deporte nuevo puede tirar abajo todo `audit.js` y ocultar el informe de los datos reales.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
