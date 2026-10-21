@@ -14,8 +14,15 @@
 //   node tools/lookup-club-league.js "Boyacá Chicó" --pais co
 //   node tools/lookup-club-league.js "Boyacá Chicó" --pais co --anio 2016
 //   node tools/lookup-club-league.js "Lillestrøm" --pais no --json
+//   node tools/lookup-club-league.js "La Louvière" --pais be --club raallalouviere-be
 //   node tools/lookup-club-league.js --list-cache --pais co
 //   node tools/lookup-club-league.js --misses
+//
+// CADA COINCIDENCIA DICE SI ES EXACTA. La búsqueda es por subcadena (para no perder un nombre con sponsor o con sigla), así que trae homónimos:
+// "La Louvière" encuentra "La Louvière" (RAAL, Division 2) y "La Louvière Centre" (UR La Louvière Centre, otra sociedad, National Division 1),
+// y la segunda se tomó una vez por RAAL 2021. Exacta = el nombre normalizado de la lista es igual al buscado, o es un alias de
+// tools/club-league-reference/alias.json (del club de --club si se pasa). Cualquier otra lleva "NO EXACTA" y un aviso al final: se confirma
+// contra la página del club antes de usarla. En --json, cada coincidencia trae `exacta` (true/false) y `alias` (el clubId del alias, si lo es).
 // ============================================================================
 
 import { readFileSync, readdirSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
@@ -85,12 +92,15 @@ function main() {
 
   const data = JSON.parse(readFileSync(cachePath, 'utf8'));
   const q = normalize(query);
+  const clubFlag = args.indexOf('--club'); const club = clubFlag >= 0 ? args[clubFlag + 1] : null;
+  let aliasPais = {}; try { aliasPais = JSON.parse(readFileSync(resolve(refDir, 'alias.json'), 'utf8'))[pais] || {}; } catch { /* sin alias.json: solo cuenta el nombre igual */ }
+  const aliasDe = (c) => { const a = aliasPais[c]; return a && a.clubId && (!club || a.clubId === club) ? a.clubId : null; };
   const matches = [];
   for (const [leagueId, years] of Object.entries(data.leagues || {})) {
     for (const [year, entry] of Object.entries(years)) {
       if (anio && year !== String(anio)) continue;
       const hit = entry.clubs.find((c) => normalize(c).includes(q) || q.includes(normalize(c)));
-      if (hit) matches.push({ leagueId, year, matchedName: hit, wikipediaPage: entry.wikipediaPage });
+      if (hit) { const alias = aliasDe(hit); matches.push({ leagueId, year, matchedName: hit, wikipediaPage: entry.wikipediaPage, exacta: normalize(hit) === q || !!alias, alias }); }
     }
   }
 
@@ -104,7 +114,9 @@ function main() {
     logMiss(query, pais, anio);
     return;
   }
-  matches.forEach((m) => console.log(`${m.leagueId} ${m.year}: "${m.matchedName}" (${m.wikipediaPage})`));
+  matches.forEach((m) => console.log(`${m.leagueId} ${m.year}: "${m.matchedName}" (${m.wikipediaPage})${m.alias ? ` · alias de ${m.alias} (alias.json)` : m.exacta ? '' : ' · NO EXACTA'}`));
+  const noExactas = matches.filter((m) => !m.exacta);
+  if (noExactas.length) console.log(`\nAVISO: ${noExactas.length} coincidencia(s) NO EXACTA(S) (${[...new Set(noExactas.map((m) => `"${m.matchedName}"`))].join(', ')}): el nombre de la lista no es "${query}" ni un alias${club ? ` de ${club}` : ''} en alias.json. Puede ser otro club con un nombre parecido (caso: "La Louvière Centre" no es RAAL La Louvière). Confirmalo en la página del club antes de usarla.`);
   console.log('\nOJO: esto es una caché de un roster ya bajado, no la fuente de verdad. Confirmar igual antes de cargar el dato en data/club-leagues/<iso2>.js.');
 }
 

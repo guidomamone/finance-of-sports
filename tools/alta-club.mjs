@@ -1376,9 +1376,12 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
   }
   // Una coincidencia parcial ÚNICA en toda la temporada del país ("AC Milan" / "Milan", "OFI Crete" / "OFI") vale como exacta
   // (confirmado por Guido para esos casos). Si hay más de una, sigue pendiente de confirmación.
+  // AVISO (Auditora 5): el resultado no cambia, pero la fuente empieza con «NO EXACTA»: una coincidencia por palabras puede ser otro club con un
+  // nombre parecido (RAAL La Louvière / «La Louvière Centre», otra sociedad; Lierse SK / Lierse Kempenzonen). Medido sobre las altas de hoy: 63
+  // asignaciones salieron por acá sin ser exactas ni alias; casi todas son el mismo club con otro largo de nombre (Roma / AS Roma).
   if (!exactos.length && parciales.length === 1) {
     const p1 = parciales[0]; const cat = enCatalogo(p1.leagueId);
-    if (cat) return campo('liga', cat, `roster cacheado de "${p1.page}" (tools/club-league-reference/${iso}.json), coincidencia única por palabras "${p1.club}" = "${nombre}"`);
+    if (cat) return campo('liga', cat, `NO EXACTA, confirmar en la página del club: roster cacheado de "${p1.page}" (tools/club-league-reference/${iso}.json), coincidencia única por palabras "${p1.club}" = "${nombre}" (si es el mismo club, agregarlo a alias.json)`);
   }
   if (exactos.length + parciales.length > 0) {
     const todos = [...exactos, ...parciales];
