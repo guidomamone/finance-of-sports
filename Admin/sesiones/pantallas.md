@@ -1,3 +1,30 @@
+# Sesión pantallas (Pantallas 6): 344 implementado, números fuera de Ligas e Inicio, Escocia separada
+
+## Qué cambió (para CHANGELOG)
+- 344: la lista de la pestaña Ligas pasa a ser la del mockup aprobado: filtros de deporte (solo si hay más de uno con datos), región y «Con informes»; agrupar por país (plegable), deporte o
+  nivel (matriz país × nivel de un deporte); ordenar A–Z o por cantidad de ligas; deporte, región, agrupación, orden e informes en la URL (`?tab=liga&agrupar=nivel`). Sin conteos de clubes
+  ni plata en la lista. `js/liga.js` (`estadoFrio()` y vistas), `js/principal.js` (la URL), `css/styles.css` (`.lg-ffila`, `.lg-pais2`, `.lg-lrow`, `.lg-mat`…), claves `liga.f.*` en `data/lang/en.js`
+  (y se borraron las huérfanas).
+- Por pedido de Guido se sacan los números: el encabezado de una liga ya no dice «N de M con ejercicio AAAA» ni cuántos clubes trae cada ejercicio (ahora país · división · deporte y el año), y las tarjetas
+  de ranking de Inicio ya no llevan «N de M cargados», «+ N clubes más», el aviso de «% sin desglosar» ni US$ por club. El ranking de una liga y «La liga en total» quedan.
+- Escocia separada de Inglaterra: `COUNTRIES.SCT` (Escocia), la Premiership escocesa con `country:'SCT'`, `CLUB_NATION` y `nationOf(clubId)` en `data/leagues.js` (Celtic → `SCT`; los ids y la carpeta
+  `data/gb/` no cambian), `countryOf()` del selector y las banderas de `js/liga.js` usan `nationOf`, y `tools/generate-club-pages.js` también. La bandera de Inglaterra es la propia. Gales: el mecanismo
+  está y la regla en `Admin/CONVENCIONES-DATOS.md`; no hay clubes ni ligas galeses cargados todavía. Los estaduales de Brasil quedan como están, sin nivel.
+- Verificado servido a escritorio y 375 px: la lista por país, por deporte y por nivel (sin desborde de la página), el filtro de rugby, Premiership bajo Escocia, Celtic bajo Escocia en Finanzas y en
+  el selector, el encabezado y Inicio sin números. `node tools/audit.js`: 0 P0, 0 P1. ASSET_V 1580; regenerados `fuentes/`, `club/` y `liga/`. NO se probó `file://` en un navegador (el panel lo abre como captura
+  sin estilos y Claude in Chrome no conecta): no cambió nada de `index.html` salvo la versión.
+- En el worktree: `preparar` dejó 28 enlaces a PDFs que ya no existen en la carpeta principal; los borré (solo enlaces rotos, ningún archivo) porque hacían fallar dos chequeos de `audit.js`.
+
+## Qué queda (para TODO)
+- Si se carga un club o una liga galesa: `WAL` en `COUNTRIES`, la Cymru Premier con `country:'WAL'` y los clubes galeses (Cardiff, Swansea) en `CLUB_NATION`.
+- `leagueAt()` devuelve null hasta que se abre el selector (las tablas de `data/club-leagues/` son lazy): el subtítulo de Finanzas no dice la liga al entrar directo a un club. Es de antes de esta tanda.
+- Texto de Inicio «Revenue in dollars for every club loaded…» (`vid.sub`) sigue hablando de los clubes cargados, sin números.
+
+## Qué deja de ser cierto en ESTADO
+- «Inicio, Ligas y navegación»: Ligas es una lista con filtros de deporte, región e informes, agrupada por país, deporte o nivel, con el estado en la URL; Inglaterra y Escocia son países distintos.
+
+---
+
 # Sesión pantallas (Pantallas 6): 344, el mockup sin conteos ni plata
 
 ## Qué cambió (para CHANGELOG)

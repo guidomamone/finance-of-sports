@@ -40,6 +40,7 @@ window.LIGA_VIEW = (function(){
   // OJO: `clubs` SIN `window.`: data/clubs.js lo declara con `const`, así que window.clubs da undefined.
   function clubDe(id){ return (typeof clubs !== 'undefined' && clubs[id]) || {}; }
   function nombreDe(id){ return clubDe(id).displayName || id; }
+  function deporteNombre(id){ var sp = (window.SPORTS || []).filter(function(x){ return x.id === id; })[0]; return sp ? t(sp.key, sp.name) : ''; }
   function ligaDe(lid){ return (window.LEAGUES || {})[lid] || {}; }
   function paisDe(lid){ return (window.COUNTRIES || {})[ligaDe(lid).country] || {}; }
   // La etiqueta del ejercicio se arma acá y no viene del archivo generado: congelarla en data/rankings/ la haría intraducible.
@@ -451,7 +452,7 @@ window.LIGA_VIEW = (function(){
         return norm(nombreDe(id)).indexOf(q) >= 0;
       }).sort(function(a, b){ return nombreDe(a).localeCompare(nombreDe(b), 'es'); }).slice(0, 8);
       candidatos.forEach(function(id){
-        var co = window.COUNTRIES && window.COUNTRIES[clubDe(id).country];
+        var co = window.COUNTRIES && window.COUNTRIES[window.nationOf(id)];
         var b = el('button', 'liga-sim-resultado',
           (co && co.flag ? co.flag + ' ' : '') + nombreDe(id));
         b.type = 'button';
@@ -531,12 +532,166 @@ window.LIGA_VIEW = (function(){
           || ligaDe(a).name.localeCompare(ligaDe(b).name, 'es', {sensitivity:'base'});
       });
   }
-  // La pastilla de una liga con datos: solo el nombre. Un "N clubes · año" se leía como que la liga tenía un solo ejercicio.
+  // EL ESTADO FRÍO: un buscador (liga o país), los filtros de deporte, región e informes, y las ligas agrupadas por país, por deporte o por
+  // nivel. Solo las ligas con datos se pueden elegir; las demás quedan al final, plegadas. La lista no muestra cuánto hay cargado ni plata:
+  // el índice (data/rankings/_regiones.js) solo dice qué ligas tienen datos. Los filtros viven en la URL (LIGA_VIEW.current().filtros).
+  // Los niveles se comparan solo dentro de un país y un deporte: nunca se ordenan ligas de países distintos por nivel.
+  var frio = { q:'', region:null, deporte:null, agrupar:'pais', orden:'az', informes:false, abiertos:null };
+  var FRIO_AGRUPAR = ['pais', 'deporte', 'nivel'], FRIO_ORDEN = ['az', 'ligas'];
+  function conDatos(lid){ return !!(window.RANKINGS_INDICE || {})[lid]; }
+  // Informes propios de la liga (los de toda Europa no cuentan: cubren todas las ligas y no distinguen). Ver `informes()`.
+  function informesPropios(lid){
+    return (window.INFORMES || []).filter(function(i){ return i.ambito !== 'europa' && (i.ligas || []).indexOf(lid) >= 0; }).length;
+  }
+  function nivelTxt(lid){
+    var n = ligaDe(lid).tier;
+    if(n == null) return '—';
+    if(document.documentElement.lang === 'en') return n + (n === 1 ? 'st' : n === 2 ? 'nd' : n === 3 ? 'rd' : 'th');
+    return n + '.ª';
+  }
+  function nombrePais(cid){ var co = (window.COUNTRIES || {})[cid] || {}; return t(co.key, co.name || cid); }
+  function ligasDelCatalogo(){ return Object.keys(window.LEAGUES || {}); }
+  function deportesConDatos(){
+    var vistos = {};
+    ligasDelCatalogo().forEach(function(lid){ if(conDatos(lid)) vistos[ligaDe(lid).sport] = true; });
+    return (window.SPORTS || []).filter(function(s){ return vistos[s.id]; });
+  }
+  // Las ligas que pasan los filtros, sin separar las que tienen datos de las que no.
+  function ligasFiltradas(){
+    var q = norm(frio.q.trim());
+    return ligasDelCatalogo().filter(function(lid){
+      var lg = ligaDe(lid), co = paisDe(lid);
+      if(frio.region && co.region !== frio.region) return false;
+      if(frio.deporte && lg.sport !== frio.deporte) return false;
+      if(frio.informes && !informesPropios(lid)) return false;
+      return !q || norm(lg.name).indexOf(q) >= 0 || norm(nombrePais(lg.country)).indexOf(q) >= 0;
+    });
+  }
+  function porTier(a, b){
+    return ((ligaDe(a).tier == null ? 99 : ligaDe(a).tier) - (ligaDe(b).tier == null ? 99 : ligaDe(b).tier)) // sin tier (estaduales) al final
+      || ligaDe(a).name.localeCompare(ligaDe(b).name, 'es', {sensitivity:'base'});
+  }
+  // [{ cid, nombre, ligas:[lid…] }] ordenado por nombre o por cantidad de ligas.
+  function agruparPorPais(lids){
+    var m = {};
+    lids.forEach(function(lid){ var c = ligaDe(lid).country; (m[c] = m[c] || { cid:c, nombre:nombrePais(c), ligas:[] }).ligas.push(lid); });
+    var arr = Object.keys(m).map(function(c){ m[c].ligas.sort(porTier); return m[c]; });
+    arr.sort(function(a, b){
+      return (frio.orden === 'ligas' ? b.ligas.length - a.ligas.length : 0) || a.nombre.localeCompare(b.nombre, 'es', {sensitivity:'base'});
+    });
+    return arr;
+  }
+  function filaLiga(lid, conDeporte){
+    var lg = ligaDe(lid);
+    var b = el('button', 'lg-lrow');
+    b.type = 'button';
+    b.appendChild(el('span', 'lg-niv', nivelTxt(lid)));
+    var n = el('span', 'lg-lrow-n');
+    n.appendChild(document.createTextNode(lg.name));
+    var ni = informesPropios(lid);
+    if(ni) n.appendChild(el('span', 'lg-insig', ni + ' ' + (ni === 1 ? t('liga.inf.uno', 'informe') : t('liga.inf.varios', 'informes'))));
+    if(conDeporte) n.appendChild(el('small', null, deporteNombre(lg.sport)));
+    b.appendChild(n);
+    b.title = t('liga.nivelEn', 'Nivel dentro de') + ' ' + nombrePais(lg.country) + ' · ' + deporteNombre(lg.sport);
+    // Modo simulación: si hay clubes esperando destino, la lista usa la liga elegida como destino en vez de navegar.
+    b.addEventListener('click', function(){
+      if(pendingSim.length) showConSimulados(lid, null, pendingSim);
+      else show(lid);
+    });
+    return b;
+  }
+  function vistaPais(lids){
+    var frag = document.createDocumentFragment();
+    var grupos = agruparPorPais(lids);
+    grupos.forEach(function(g, i){
+      var det = el('details', 'lg-pais2');
+      var abierto = frio.abiertos === 'todos' ? true : frio.abiertos === 'ninguno' ? false : (frio.q.trim() ? true : i < 2);
+      if(abierto) det.open = true;
+      var sum = el('summary');
+      sum.appendChild(el('span', 'lg-flag', ((window.COUNTRIES || {})[g.cid] || {}).flag || ''));
+      sum.appendChild(el('span', 'lg-pais2-n', g.nombre));
+      sum.appendChild(el('span', 'lg-pais2-r', g.ligas.length + ' ' + (g.ligas.length === 1 ? t('liga.una', 'liga') : t('liga.varias', 'ligas'))));
+      det.appendChild(sum);
+      var cuerpo = el('div', 'lg-pais2-c');
+      var deportes = [];
+      g.ligas.forEach(function(lid){ if(deportes.indexOf(ligaDe(lid).sport) < 0) deportes.push(ligaDe(lid).sport); });
+      deportes.forEach(function(sp){
+        if(deportes.length > 1) cuerpo.appendChild(el('div', 'lg-dep', deporteNombre(sp)));
+        g.ligas.filter(function(lid){ return ligaDe(lid).sport === sp; }).forEach(function(lid){ cuerpo.appendChild(filaLiga(lid, false)); });
+      });
+      det.appendChild(cuerpo);
+      frag.appendChild(det);
+    });
+    return frag;
+  }
+  function vistaDeporte(lids){
+    var frag = document.createDocumentFragment();
+    (window.SPORTS || []).forEach(function(sp){
+      var ls = lids.filter(function(lid){ return ligaDe(lid).sport === sp.id; });
+      if(!ls.length) return;
+      var grupos = agruparPorPais(ls);
+      var card = el('section', 'lg-dcard');
+      var h = el('div', 'lg-dhead');
+      h.appendChild(el('h3', null, deporteNombre(sp.id)));
+      h.appendChild(el('span', null, ls.length + ' ' + (ls.length === 1 ? t('liga.una', 'liga') : t('liga.varias', 'ligas')) + ' · '
+        + grupos.length + ' ' + (grupos.length === 1 ? t('liga.pais1', 'país') : t('liga.paisN', 'países'))));
+      card.appendChild(h);
+      grupos.forEach(function(g){
+        var f = el('div', 'lg-dpais');
+        f.appendChild(el('span', 'lg-dpais-n', (((window.COUNTRIES || {})[g.cid] || {}).flag || '') + ' ' + g.nombre));
+        var ch = el('div', 'lg-pais-ligas');
+        g.ligas.forEach(function(lid){ ch.appendChild(botonLiga(lid)); });
+        f.appendChild(ch);
+        card.appendChild(f);
+      });
+      frag.appendChild(card);
+    });
+    return frag;
+  }
+  // La matriz de UN deporte: filas, países; columnas, niveles. Las ligas sin nivel (estaduales) van en una columna aparte.
+  function vistaNivel(lids){
+    var frag = document.createDocumentFragment();
+    var sp = frio.deporte || 'futbol';
+    var ls = lids.filter(function(lid){ return ligaDe(lid).sport === sp; });
+    if(!frio.deporte) frag.appendChild(el('p', 'lg-nota', t('liga.nivel.uno', 'Los niveles solo se comparan dentro de un deporte: se muestra') + ' ' + deporteNombre(sp) + '.'));
+    if(!ls.length) return frag;
+    var max = 1, sinNivel = false;
+    ls.forEach(function(lid){ var n = ligaDe(lid).tier; if(n == null) sinNivel = true; else if(n > max) max = n; });
+    var caja = el('div', 'lg-mat');
+    var tabla = document.createElement('table');
+    var tr = document.createElement('tr');
+    var th = document.createElement('th'); th.textContent = t('liga.f.pais', 'País'); tr.appendChild(th);
+    for(var n = 1; n <= max; n++){ th = document.createElement('th'); th.textContent = t('liga.nivel', 'Nivel') + ' ' + n; tr.appendChild(th); }
+    if(sinNivel){ th = document.createElement('th'); th.textContent = t('liga.sinNivel', 'Sin nivel'); tr.appendChild(th); }
+    var thead = document.createElement('thead'); thead.appendChild(tr); tabla.appendChild(thead);
+    var tbody = document.createElement('tbody');
+    agruparPorPais(ls).forEach(function(g){
+      var fila = document.createElement('tr');
+      var c0 = document.createElement('th');
+      c0.textContent = (((window.COUNTRIES || {})[g.cid] || {}).flag || '') + ' ' + g.nombre;
+      fila.appendChild(c0);
+      for(var k = 1; k <= max + (sinNivel ? 1 : 0); k++){
+        var td = document.createElement('td');
+        g.ligas.filter(function(lid){ var tn = ligaDe(lid).tier; return k <= max ? tn === k : tn == null; })
+          .forEach(function(lid){ td.appendChild(botonLiga(lid)); });
+        if(!td.children.length){ td.className = 'vacio'; td.textContent = '—'; }
+        fila.appendChild(td);
+      }
+      tbody.appendChild(fila);
+    });
+    tabla.appendChild(tbody);
+    caja.appendChild(tabla);
+    frag.appendChild(caja);
+    frag.appendChild(el('p', 'lg-nota', t('liga.nivel.nota', 'Un nivel 2 de un país no equivale al de otro: los niveles se comparan solo dentro de un país y un deporte.')));
+    return frag;
+  }
+  // La pastilla de una liga con datos: solo el nombre (las vistas por deporte y por nivel).
   function botonLiga(lid){
     var b = el('button', 'lg-liga');
     b.type = 'button';
     b.appendChild(el('span', 'lg-liga-n', ligaDe(lid).name));
-    // Modo simulación: si hay clubes esperando destino, la grilla usa la liga elegida como destino en vez de navegar.
+    var ni = informesPropios(lid);
+    if(ni) b.appendChild(el('span', 'lg-insig', String(ni)));
     b.addEventListener('click', function(){
       if(pendingSim.length) showConSimulados(lid, null, pendingSim);
       else show(lid);
@@ -549,10 +704,6 @@ window.LIGA_VIEW = (function(){
     if(nombres.length <= 3) return nombres.join(' + ');
     return nombres.slice(0, 2).join(' + ') + ' + ' + (nombres.length - 2) + ' ' + t('liga.sim.mas', 'más');
   }
-  // EL ESTADO FRÍO: un buscador (liga o país), las regiones como filtro y una fila por país con sus ligas en orden de división. Solo
-  // las ligas con datos se pueden elegir; las demás quedan al final, plegadas. El índice (data/rankings/_regiones.js) se baja una vez.
-  var frioQ = '', frioRegion = null;
-  function conDatos(lid){ return !!(window.RANKINGS_INDICE || {})[lid]; }
   function estadoFrio(){
     var caja = el('div', 'lg-frio');
     if(pendingSim.length){
@@ -570,87 +721,104 @@ window.LIGA_VIEW = (function(){
     campo.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>';
     var input = document.createElement('input');
     input.type = 'search';
-    input.value = frioQ;
+    input.value = frio.q;
     input.placeholder = t('liga.search', 'Buscá una liga o un país: Brasil, Serie A…');
     input.setAttribute('aria-label', t('liga.searchAria', 'Buscar una liga o un país'));
     campo.appendChild(input);
     barra.appendChild(campo);
-    var chips = el('div', 'lg-regiones');
-    chips.setAttribute('role', 'group');
-    barra.appendChild(chips);
     caja.appendChild(barra);
+    var filtros = el('div', 'lg-filtros');
+    caja.appendChild(filtros);
+    var cuenta = el('div', 'lg-cuenta');
+    caja.appendChild(cuenta);
     var lista = el('div', 'lg-frio-lista');
     caja.appendChild(lista);
 
-    function ligasDeRegion(regId){
-      var out = [];
-      paisesDeRegionAlfa(regId).forEach(function(cid){ out = out.concat(ligasDePaisAlfa(cid)); });
-      return out;
+    // Una fila de pastillas: [{ id, nombre, n? }]; `clave` es la propiedad de `frio` que cambia.
+    function fila(titulo, items, clave){
+      var f = el('div', 'lg-ffila');
+      f.appendChild(el('span', 'lg-ffila-l', titulo));
+      var g = el('div', 'lg-regiones');
+      g.setAttribute('role', 'group');
+      g.setAttribute('aria-label', titulo);
+      items.forEach(function(x){
+        var on = frio[clave] === x.id;
+        var b = el('button', 'lg-region' + (on ? ' activa' : ''));
+        b.type = 'button';
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        b.appendChild(document.createTextNode(x.nombre));
+        if(x.n != null) b.appendChild(el('span', 'lg-region-n', ' ' + x.n));
+        b.addEventListener('click', function(){
+          frio[clave] = x.id;
+          if(clave !== 'q') frio.abiertos = null;
+          pintarFiltros(); pintarLista(); api.onEstado();
+        });
+        g.appendChild(b);
+      });
+      f.appendChild(g);
+      return f;
     }
-    function pintarChips(){
-      chips.innerHTML = '';
-      var regs = [{ id:null, nombre:t('liga.all', 'Todas'), n:Object.keys(window.RANKINGS_INDICE || {}).length }];
+    function pintarFiltros(){
+      filtros.innerHTML = '';
+      var conD = ligasDelCatalogo().filter(conDatos);
+      var deportes = deportesConDatos();
+      if(deportes.length > 1){
+        filtros.appendChild(fila(t('liga.f.deporte', 'Deporte'), [{ id:null, nombre:t('liga.all.m', 'Todos'), n:conD.length }]
+          .concat(deportes.map(function(s){ return { id:s.id, nombre:t(s.key, s.name), n:conD.filter(function(l){ return ligaDe(l).sport === s.id; }).length }; })), 'deporte'));
+      }
+      var regs = [{ id:null, nombre:t('liga.all', 'Todas'), n:conD.length }];
       (window.REGIONS || []).forEach(function(reg){
-        var n = ligasDeRegion(reg.id).filter(conDatos).length;
+        var n = conD.filter(function(l){ return paisDe(l).region === reg.id; }).length;
         if(n) regs.push({ id:reg.id, nombre:t(reg.key, reg.name), n:n });
       });
-      regs.forEach(function(x){
-        var b = el('button', 'lg-region' + (frioRegion === x.id ? ' activa' : ''));
-        b.type = 'button';
-        b.setAttribute('aria-pressed', frioRegion === x.id ? 'true' : 'false');
-        b.appendChild(document.createTextNode(x.nombre + ' '));
-        b.appendChild(el('span', 'lg-region-n', String(x.n)));
-        b.addEventListener('click', function(){ frioRegion = x.id; pintarChips(); pintarLista(); });
-        chips.appendChild(b);
-      });
+      filtros.appendChild(fila(t('liga.f.region', 'Región'), regs, 'region'));
+      filtros.appendChild(fila(t('liga.f.agrupar', 'Agrupar por'), [{ id:'pais', nombre:t('liga.f.pais', 'País') }, { id:'deporte', nombre:t('liga.f.dep', 'Deporte') }, { id:'nivel', nombre:t('liga.nivel', 'Nivel') }], 'agrupar'));
+      filtros.appendChild(fila(t('liga.f.orden', 'Ordenar'), [{ id:'az', nombre:t('liga.f.az', 'A–Z') }, { id:'ligas', nombre:t('liga.f.mas', 'Más ligas') }], 'orden'));
+      var extra = el('div', 'lg-ffila');
+      extra.appendChild(el('span', 'lg-ffila-l', t('liga.f.mostrar', 'Mostrar')));
+      var g = el('div', 'lg-regiones');
+      var b = el('button', 'lg-region' + (frio.informes ? ' activa' : ''));
+      b.type = 'button';
+      b.setAttribute('aria-pressed', frio.informes ? 'true' : 'false');
+      b.appendChild(document.createTextNode(t('liga.f.informes', 'Con informes')));
+      b.addEventListener('click', function(){ frio.informes = !frio.informes; frio.abiertos = null; pintarFiltros(); pintarLista(); api.onEstado(); });
+      g.appendChild(b);
+      extra.appendChild(g);
+      filtros.appendChild(extra);
     }
     // Pinta SOLO la lista: si repintara todo, el input perdería el foco en cada tecla.
     function pintarLista(){
       lista.innerHTML = '';
-      var q = norm(frioQ.trim());
-      var sinDatos = [];
-      (window.REGIONS || []).forEach(function(reg){
-        if(frioRegion && frioRegion !== reg.id) return;
-        var filas = [];
-        paisesDeRegionAlfa(reg.id).forEach(function(cid){
-          var co = window.COUNTRIES[cid];
-          var nomPais = t(co.key, co.name);
-          var ligas = ligasDePaisAlfa(cid).filter(function(lid){
-            return !q || norm(nomPais).indexOf(q) >= 0 || norm(ligaDe(lid).name).indexOf(q) >= 0;
-          });
-          ligas.filter(function(lid){ return !conDatos(lid); }).forEach(function(lid){ sinDatos.push(nomPais + ': ' + ligaDe(lid).name); });
-          ligas = ligas.filter(conDatos);
-          if(!ligas.length) return;
-          var fila = el('div', 'lg-pais');
-          var nom = el('div', 'lg-pais-n');
-          nom.appendChild(el('span', 'lg-flag', co.flag || ''));
-          nom.appendChild(document.createTextNode(nomPais));
-          fila.appendChild(nom);
-          var pills = el('div', 'lg-pais-ligas');
-          ligas.forEach(function(lid){ pills.appendChild(botonLiga(lid)); });
-          fila.appendChild(pills);
-          filas.push(fila);
+      cuenta.innerHTML = '';
+      var todas = ligasFiltradas();
+      var con = todas.filter(conDatos), sin = todas.filter(function(l){ return !conDatos(l); });
+      var paises = {}; con.forEach(function(l){ paises[ligaDe(l).country] = true; });
+      var np = Object.keys(paises).length;
+      cuenta.appendChild(el('span', null, con.length + ' ' + (con.length === 1 ? t('liga.una', 'liga') : t('liga.varias', 'ligas')) + ' ' + t('liga.de', 'de') + ' '
+        + np + ' ' + (np === 1 ? t('liga.pais1', 'país') : t('liga.paisN', 'países'))));
+      if(frio.agrupar === 'pais' && con.length){
+        var acc = el('span', 'lg-acc');
+        [['todos', t('liga.abrir', 'Abrir todos')], ['ninguno', t('liga.cerrar', 'Cerrar todos')]].forEach(function(x){
+          var bt = el('button', null, x[1]);
+          bt.type = 'button';
+          bt.addEventListener('click', function(){ frio.abiertos = x[0]; pintarLista(); });
+          acc.appendChild(bt);
         });
-        if(!filas.length) return;
-        var sec = el('section', 'lg-reg');
-        sec.appendChild(el('h2', 'lg-reg-h', t(reg.key, reg.name)));
-        var card = el('div', 'lg-reg-card');
-        filas.forEach(function(f){ card.appendChild(f); });
-        sec.appendChild(card);
-        lista.appendChild(sec);
-      });
-      if(!lista.children.length) lista.appendChild(el('p', 'lg-frio-nada', t('liga.sim.sinresultados', 'Ningún club o liga coincide.')));
-      if(sinDatos.length){
+        cuenta.appendChild(acc);
+      }
+      if(!con.length) lista.appendChild(el('p', 'lg-frio-nada', t('liga.sim.sinresultados', 'Ningún club o liga coincide.')));
+      else lista.appendChild(frio.agrupar === 'deporte' ? vistaDeporte(con) : frio.agrupar === 'nivel' ? vistaNivel(con) : vistaPais(con));
+      if(sin.length){
         var det = el('details', 'lg-sindatos');
-        det.appendChild(el('summary', null, sinDatos.length + ' ' + t('liga.noDataYet', 'ligas sin datos todavía')));
-        det.appendChild(el('p', null, sinDatos.join(' · ')));
+        det.appendChild(el('summary', null, sin.length + ' ' + t('liga.noDataYet', 'ligas sin datos todavía')));
+        det.appendChild(el('p', null, sin.map(function(lid){ return nombrePais(ligaDe(lid).country) + ': ' + ligaDe(lid).name; }).join(' · ')));
         lista.appendChild(det);
       }
     }
-    input.addEventListener('input', function(){ frioQ = input.value; pintarLista(); });
-    // El índice es chico y se baja una sola vez; mientras tanto se dibuja la grilla sin los conteos.
-    pintarChips(); pintarLista();
-    if(!window.RANKINGS_INDICE) loadRanking('_regiones').then(function(){ if(caja.isConnected){ pintarChips(); pintarLista(); } });
+    input.addEventListener('input', function(){ frio.q = input.value; pintarLista(); });
+    // El índice es chico y se baja una sola vez; mientras tanto se dibuja la lista sin saber qué ligas tienen datos.
+    pintarFiltros(); pintarLista();
+    if(!window.RANKINGS_INDICE) loadRanking('_regiones').then(function(){ if(caja.isConnected){ pintarFiltros(); pintarLista(); } });
     return caja;
   }
 
@@ -678,12 +846,7 @@ window.LIGA_VIEW = (function(){
     h.appendChild(el('span', 'lg-flag', co.flag || ''));
     h.appendChild(document.createTextNode(lg.name));
     txt.appendChild(h);
-    // "N de M" SOLO si leagueSize existe: inventar el M sería justo el dato inventado que data/club-leagues.js existe para evitar.
-    var n = r.clubs.length;
-    var cob = r.leagueSize != null
-      ? n + ' ' + t('liga.of', 'de los') + ' ' + r.leagueSize + ' ' + t('liga.coverY', 'clubes de la temporada tienen ejercicio') + ' ' + st.year
-      : nClubes(n) + ' ' + t('liga.coverNY', 'con ejercicio') + ' ' + st.year;
-    txt.appendChild(el('p', 'lg-sub', [co.key ? t(co.key, co.name) : '', window.tierLabel ? window.tierLabel(lg.tier) : '', cob]
+    txt.appendChild(el('p', 'lg-sub', [co.key ? t(co.key, co.name) : '', window.tierLabel ? window.tierLabel(lg.tier) : '', deporteNombre(lg.sport)]
       .filter(Boolean).join(' · ')));
     caja.appendChild(txt);
 
@@ -694,8 +857,7 @@ window.LIGA_VIEW = (function(){
       var b = el('button', 'lg-region' + (y === st.year ? ' activa' : ''));
       b.type = 'button';
       b.setAttribute('aria-pressed', y === st.year ? 'true' : 'false');
-      b.appendChild(document.createTextNode(y + ' '));
-      b.appendChild(el('span', 'lg-region-n', '· ' + rankingDe(st.league, y).clubs.length));
+      b.appendChild(document.createTextNode(String(y)));
       b.addEventListener('click', function(){ st.year = y; render(); });
       pills.appendChild(b);
     });
@@ -1036,13 +1198,11 @@ window.LIGA_VIEW = (function(){
       var grilla = el('div', 'vid-grilla');
       cards.forEach(function(x){
         var r = R[x[0]];
-        var resto = r.total - r.clubs.length;
         grilla.appendChild(tarjeta({
           titulo: x[1],
-          sub: t('liga.exercise', 'Ejercicio') + ' ' + r.year + ' · ' + r.total + ' ' + t('top.withBalance', 'clubes con balance'),
+          sub: t('liga.exercise', 'Ejercicio') + ' ' + r.year,
           filas: r.clubs,
-          conPais: true,
-          pie: resto > 0 ? '+ ' + resto + ' ' + t('top.more', 'clubes más con balance') + ' ' + r.year : ''
+          conPais: true
         }));
       });
       secReg.appendChild(grilla);
@@ -1111,24 +1271,11 @@ window.LIGA_VIEW = (function(){
 
   function tarjetaLiga(leagueId, year, r){
     var lg = ligaDe(leagueId);
-    // La misma regla de cobertura que la pestaña: "N de M" solo si leagueSizeAt() lo supo al generar el ranking.
-    var cob = r.leagueSize != null
-      ? r.clubs.length + ' ' + t('vid.of', 'de') + ' ' + r.leagueSize + ' ' + t('liga.clubN', 'clubes')
-      : nClubes(r.clubs.length) + ' ' + t('vid.loaded', 'cargados');
-    // Una sola salvedad acá, la que cambia cómo se lee el ranking (cuánto no está desglosado); el resto está en la pestaña de la liga.
-    var tot = totalDe(r), lump = 0;
-    r.clubs.forEach(function(f){
-      f.mix.forEach(function(m){ if(esBolson(m[0])) lump += m[1]; });
-    });
-    var resto = r.clubs.length - TOP_LIGA;
     return tarjeta({
       pais: ligaDe(leagueId).country,
       titulo: lg.name,
-      sub: t('liga.exercise', 'Ejercicio') + ' ' + year + ' · ' + cob,
+      sub: t('liga.exercise', 'Ejercicio') + ' ' + year,
       filas: r.clubs.slice(0, TOP_LIGA),
-      pie: resto > 0 ? '+ ' + resto + ' ' + t('vid.more', 'clubes más en el ranking') : '',
-      aviso: (tot && lump / tot > 0.10)
-        ? Math.round((lump / tot) * 100) + '% ' + t('vid.lump', 'sin desglosar por rubro') : '',
       ver: function(){
         // `show()` deja la vista lista; navegar es del que sabe del nav.
         show(leagueId, year).then(function(){ api.goLiga(); });
@@ -1170,14 +1317,13 @@ window.LIGA_VIEW = (function(){
       var dot = el('span', 'vid-dot'); dot.style.background = color;
       nom.appendChild(dot);
       nom.appendChild(el('span', 'vid-nom-t', nombreDe(f.id)));
-      if(o.conPais) nom.appendChild(el('span', 'vid-pais', ((window.COUNTRIES || {})[clubDe(f.id).country] || {}).flag || ''));
+      if(o.conPais) nom.appendChild(el('span', 'vid-pais', ((window.COUNTRIES || {})[window.nationOf(f.id)] || {}).flag || ''));
       b.appendChild(nom);
       var barra = el('span', 'vid-barra');
       var lleno = el('span'); lleno.style.background = color;
       lleno.style.width = max > 0 ? Math.max(2, Math.round(f.revenue / max * 100)) + '%' : '0';
       barra.appendChild(lleno);
       b.appendChild(barra);
-      b.appendChild(el('span', 'vid-val', fmtCard(f.revenue)));
       b.addEventListener('click', function(){ irAlClub(f.id); });
       li.appendChild(b);
       ol.appendChild(li);
@@ -1216,7 +1362,20 @@ window.LIGA_VIEW = (function(){
     // La llama index.html después de un cambio de idioma. Repinta LAS DOS pantallas: la vidriera también es texto generado en JS.
     refresh: function(){ render(); renderDestacados(); },
     renderDestacados: renderDestacados,
-    current: function(){ return { league: st.league, year: st.year }; },
+    current: function(){
+      return { league: st.league, year: st.year,
+        filtros: { deporte: frio.deporte, region: frio.region, agrupar: frio.agrupar, orden: frio.orden, informes: frio.informes } };
+    },
+    // Los filtros de la lista de ligas que dice la URL; un valor que no existe vuelve al de siempre.
+    setFiltros: function(f){
+      f = f || {};
+      frio.deporte = (window.SPORTS || []).some(function(x){ return x.id === f.deporte; }) ? f.deporte : null;
+      frio.region = (window.REGIONS || []).some(function(x){ return x.id === f.region; }) ? f.region : null;
+      frio.agrupar = FRIO_AGRUPAR.indexOf(f.agrupar) >= 0 ? f.agrupar : 'pais';
+      frio.orden = FRIO_ORDEN.indexOf(f.orden) >= 0 ? f.orden : 'az';
+      frio.informes = !!f.informes;
+      frio.abiertos = null;
+    },
     // Volver al estado frío (la grilla de ligas), por ejemplo con "atrás" desde una liga.
     frio: function(){ st.league = null; st.year = null; st.simulados = []; pendingSim = []; render(); }
   };
