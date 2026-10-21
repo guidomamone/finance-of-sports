@@ -102,6 +102,7 @@ especificación de las filas y las respuestas de categoría, y las tools arman l
   escalón (probar lo que dijo la IA y, solo si la compuerta no cierra, probar lo otro).
 - **Arreglar en los scripts, nunca a mano.** Lo que se repite va a un script de `tools/` con un ensayo que estime el costo. Gastar
   dólares de API está bien, dentro del presupuesto de la sesión (`Admin/CONVENCIONES.md`); tokens de sesión, no. Archivos grandes se leen con filtros, no enteros.
+- **Para bajar el gasto de API:** la Batch API (mismo modelo, mitad de precio) y pasar una tarea de Opus a Sonnet, de a una y medida contra lo cargado. Nunca Haiku. Antes de una medición paga, además del costo del ensayo, una frase que diga qué decisión cambia el resultado; sin esa frase no se corre. Cada archivo de `Admin/mediciones/` abre con `Conclusión:` y `Destino:`.
 - **Ejemplos concretos:** club, año, fila, importe, antes y después. Explicar las siglas.
 - **Páginas:** decir siempre las dos, "página N del visor (impreso M al pie)".
 - **La cola (Guido no la revisa).** Preguntas concretas de sí o no, con la página del visor y las líneas del .md. Las contesta un subagente
@@ -111,6 +112,7 @@ especificación de las filas y las respuestas de categoría, y las tools arman l
   Sonnet)". Un "no sé" que frena el alta de un club o la carga de un año se le pregunta a Guido, de sí o no y diciéndole exactamente qué
   abrir ("abrí el PDF en la página N del visor; en el .md, líneas X-Y; fijate si..."); si es algo que solo el club sabe, va a
   `Admin/dudas-por-club.md`.
+  Un caso de perfil (socios que pagan cuota, otros deportes) nunca frena una carga: se googlea el club (programa de socios, modalidades), se contesta con esa fuente y, si no hay nada, la respuesta es "no" con la nota y la duda va a `Admin/dudas-por-club.md`.
 - Ajuste `categoria` = MUDAR una fila de lado (salta la compuerta del lado). Para aceptar/corregir dentro del mismo lado: la cola
   (`cola.mjs --corregir-categoria`), que respeta la compuerta. Caso: Novorizontino 2024, "Premiações" es ingreso y gasto.
 
