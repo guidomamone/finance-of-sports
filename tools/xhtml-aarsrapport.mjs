@@ -44,13 +44,22 @@ const dec = (t) => t.replace(/&#x([0-9a-f]+);/gi, (m, h) => String.fromCodePoint
 const limpiar = (t) => t.replace(/­/g, '');
 
 // XHTML -> { lineas: [texto], hechos: [{ txt, nombre, oculto }] }. Una línea del .md por elemento de bloque o fila de tabla. Los div.page del XHTML se ignoran (las páginas son las del PDF).
+// ESCALÓN: primero como siempre; solo si tira una excepción (una tabla dentro de otra, que dejaba `tabla` en null: Plymouth), se vuelve a leer tratando las tablas de maquetación como texto.
+// Los demás informes salen byte a byte igual que antes (medido sobre 116 XHTML: los 115 que no tiraban excepción, idénticos). Ver `capas` abajo.
 export function xhtmlALineas(src) {
+  try { return leerXhtml(src, false); } catch (e) { return leerXhtml(src, true); }
+}
+function leerXhtml(src, capas) {
   const i0 = src.search(/<body[\s>]/i); const body = (i0 >= 0 ? src.slice(i0) : src).replace(/<!--[\s\S]*?-->/g, '');
   const toks = body.match(/<[^>]+>|[^<]+/g) || [];
   const lineas = []; const hechos = []; let linea = ''; let tabla = null, fila = null, celda = null, oculto = 0; const pila = []; let hecho = null;
+  // TABLAS DE MAQUETACIÓN: una tabla que tiene otra tabla adentro (Plymouth: todo el informe en una celda) no es una tabla de datos; sus etiquetas table/tr/td cuentan como salto de línea y las tablas de adentro salen como tablas.
+  // Antes, el `</table>` de la de adentro dejaba `tabla` en null y el `</tr>` de la de afuera tiraba «Cannot read properties of null (reading 'push')». Sin tablas anidadas no cambia nada.
+  const capa = new Set(); if (capas) { const st = []; toks.forEach((t, i) => { if (/^<table[\s>\/]/i.test(t)) { if (st.length) capa.add(st[st.length - 1]); st.push(i); } else if (/^<\/table\s*>/i.test(t)) st.pop(); }); }
+  const pt = []; // pila de las tablas abiertas: ¿es de maquetación?
   const volcar = () => { const t = linea.replace(/\s+/g, ' ').trim(); if (t) lineas.push(t); linea = ''; };
   const celdaFin = () => { if (celda != null) { fila.push(celda.replace(/\s+/g, ' ').replace(/\|/g, '/').trim()); celda = null; } };
-  for (const t of toks) {
+  for (const [ti, t] of toks.entries()) {
     if (t[0] !== '<') { if (oculto) { if (hecho) hecho.txt += limpiar(dec(t)); continue; } const x = limpiar(dec(t)); if (hecho) hecho.txt += x; const previo = celda != null ? celda : linea; const pega = /[\p{L}:]$/u.test(previo) && /^\d/.test(x) ? ' ' : ''; /* dos spans seguidos («t.kr.» «2025») no se pegan */ if (celda != null) celda += pega + x; else linea += pega + x; continue; }
     const m = t.match(/^<\s*(\/?)\s*([a-zA-Z0-9:_-]+)([^>]*?)(\/?)>$/); if (!m) continue;
     const [, cierra, nombre, attrs, auto] = m; const n = nombre.toLowerCase();
@@ -64,16 +73,19 @@ export function xhtmlALineas(src) {
       if (/^h[1-6]$/.test(n)) { volcar(); linea = '#'.repeat(+n[1]) + ' '; }
       // un span con position:absolute es una línea de texto puesta por coordenadas (las notas del consolidado PSE de København, hecho por ParsePort): el salto de línea está en el `top`, no en una etiqueta; sin esto las notas salen pegadas en una sola línea (Auditora 5)
       else if (['p', 'div', 'li', 'br', 'section'].includes(n) || (n === 'span' && /position:\s*absolute/.test(estilo))) { if (celda != null) celda += ' '; else volcar(); }
-      else if (n === 'table') { volcar(); tabla = []; }
+      else if (n === 'table') { pt.push(capa.has(ti)); volcar(); if (!capa.has(ti)) tabla = []; }
+      else if ((n === 'tr' || n === 'td' || n === 'th') && pt[pt.length - 1]) { volcar(); }
       else if (n === 'tr') { fila = []; }
       else if (n === 'td' || n === 'th') { celda = ''; }
     } else {
-      const top = pila.pop(); if (top && top.oc) oculto--;
+      const top = pila.pop(); const eraOc = !!(top && top.oc); if (eraOc) oculto--;
       if (top && top.hecho) { const h = top.hecho; h.txt = h.txt.replace(/\s+/g, ' ').trim(); hechos.push(h); hecho = null; }
       if (oculto) continue;
-      if (n === 'td' || n === 'th') celdaFin();
+      if ((n === 'tr' || n === 'td' || n === 'th') && pt[pt.length - 1] && !eraOc) { volcar(); }
+      else if (n === 'table' && pt[pt.length - 1] && !eraOc) { pt.pop(); volcar(); }
+      else if (n === 'td' || n === 'th') celdaFin();
       else if (n === 'tr') { if (fila && fila.some((c) => c)) tabla.push(fila); fila = null; }
-      else if (n === 'table') { if (tabla && tabla.length) { const w = Math.max(...tabla.map((r) => r.length)); tabla.forEach((r, i) => { while (r.length < w) r.push(''); lineas.push('| ' + r.join(' | ') + ' |'); if (i === 0) lineas.push('|' + ' --- |'.repeat(w)); }); } tabla = null; }
+      else if (n === 'table') { if (!eraOc) pt.pop(); if (tabla && tabla.length) { const w = Math.max(...tabla.map((r) => r.length)); tabla.forEach((r, i) => { while (r.length < w) r.push(''); lineas.push('| ' + r.join(' | ') + ' |'); if (i === 0) lineas.push('|' + ' --- |'.repeat(w)); }); } tabla = null; }
       else if (/^h[1-6]$/.test(n) || ['p', 'div', 'li'].includes(n)) { if (celda == null) volcar(); }
     }
   }
