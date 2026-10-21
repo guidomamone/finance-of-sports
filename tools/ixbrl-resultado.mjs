@@ -19,6 +19,10 @@
 // ============================================================================
 import { readFileSync, readdirSync, openSync, readSync, closeSync } from 'node:fs';
 import { join } from 'node:path';
+import { gunzipSync } from 'node:zlib';
+
+// Un .xhtml puede venir comprimido con gzip (bytes 1f 8b: Brøndby 2025 en Clubes/Dinamarca/); se descomprime EN MEMORIA, sin tocar ni reemplazar el archivo (Auditora 5).
+export function leerXhtmlTexto(abs) { const b = readFileSync(abs); return (b[0] === 0x1f && b[1] === 0x8b ? gunzipSync(b) : b).toString('utf8'); }
 
 const local = (n) => String(n || '').replace(/^.*:/, '');
 const attr = (t, a) => { const m = t.match(new RegExp(`\\b${a}\\s*=\\s*"([^"]*)"`)); return m ? m[1] : null; };
@@ -86,14 +90,15 @@ function elegir(src, nombres, cierre, perimetro) {
 
 // -> { resultado: {estado, valorM, tolM}, ingresos: {...} } para el ejercicio que cierra en `cierre` (AAAA-MM-DD) y el perímetro cargado ('consolidado' | 'individual')
 export function leerResultadoIxbrl(xhtmlAbs, cierre, perimetro) {
-  const src = readFileSync(xhtmlAbs, 'utf8');
+  const src = leerXhtmlTexto(xhtmlAbs);
   return { resultado: elegir(src, ['ProfitLoss'], cierre, perimetro), ingresos: elegir(src, ['Revenue', 'TurnoverRevenue', 'Turnover'], cierre, perimetro) };
 }
 
 // El emisor del XHTML (el `xbrli:identifier` de sus contextos: CVR, número de Companies House): lee solo el comienzo del archivo, donde está el ix:header.
 export function emisorDe(xhtmlAbs) {
   const fd = openSync(xhtmlAbs, 'r'); const b = Buffer.alloc(600000); const n = readSync(fd, b, 0, b.length, 0); closeSync(fd);
-  return ((b.toString('utf8', 0, n).match(/<(?:[\w-]+:)?identifier\b[^>]*>\s*([^<\s]+)\s*</) || [])[1] || '').replace(/[^0-9A-Za-z]/g, '');
+  const cabeza = b[0] === 0x1f && b[1] === 0x8b ? leerXhtmlTexto(xhtmlAbs).slice(0, 600000) : b.toString('utf8', 0, n);
+  return ((cabeza.match(/<(?:[\w-]+:)?identifier\b[^>]*>\s*([^<\s]+)\s*</) || [])[1] || '').replace(/[^0-9A-Za-z]/g, '');
 }
 // Un año cargado de PDF puede contrastarse con un XHTML de la carpeta del club SI es del mismo emisor (su identificador figura en el .md del año) y del mismo cierre (lo decide el contexto
 // del hecho). Devuelve la ruta si hay exactamente uno.
