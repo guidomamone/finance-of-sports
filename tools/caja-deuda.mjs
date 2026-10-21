@@ -932,7 +932,18 @@ export function factorPorIngresos(filas, lineas, md = null) { // `md` sin uso (l
 export function escalaDe(md, anio, filas, lineas, anios) {
   const aj = ajusteDelAnio(md.replace(/\.md$/i, '.pdf'), 'escala', anio, anios.filter((x) => x.md === md).length === 1);
   if (aj && FACTOR_ESCALA[aj.valor]) return FACTOR_ESCALA[aj.valor];
-  return factorPorIngresos(filas, lineas, md);
+  const f = factorPorIngresos(filas, lineas, md);
+  // (to-do 339, frenado de Bath) ESCALÓN 1b: la escala 1 (millones) inferida de las líneas cargadas la contradice la escala del ESTADO DE RESULTADOS que registró verificar.mjs
+  // (.verificacion.json, escala 'unidades' o 'miles'). Bath 2022 a 2025: el estado está en £ y las líneas cargadas salen del Strategic Report en £m con un decimal (4,8; 5,2...), que
+  // coinciden con esa tabla del propio documento a escala 1: la caja de 49.093 £ se leía 49.093 M y se rechazaba por los ingresos. Solo contradice a la escala 1; nunca cambia otra
+  // (medido en todos los clubes: solo cambia Bath).
+  if (f === 1) {
+    try {
+      const v = JSON.parse(readFileSync(resolve(ROOT, derivado(md, '.verificacion.json', { crear: false })), 'utf8'));
+      const esc = v?.escala?.valor; if (esc && esc !== 'millones' && FACTOR_ESCALA[esc]) return FACTOR_ESCALA[esc];
+    } catch { /* sin verificación: como antes */ }
+  }
+  return f;
 }
 
 // ---------------------------------------------------------------- ESCALÓN 2: IA
@@ -1255,6 +1266,17 @@ function candidatosPersonal(md) {
     for (let k = a; k < b; k++) {
       const f = porLinea.get(k + 1);
       if (f && esTotal(f.etiqueta) && f.cifras.length) out.push({ md, linea: k + 1, etiqueta: f.etiqueta, cifras: f.cifras, tabla: (celdas(L[a]).find((c) => /\p{L}{3,}/u.test(c)) || '').slice(0, 80), contexto: [arriba.join(' '), enc && `encabezado: ${enc}`, primeras.length && `filas: ${primeras.join(' / ')}`].filter(Boolean).join(' · ').slice(0, 300) });
+      // (to-do 339, frenado de Bath) TOTAL SIN RÓTULO: la última fila de una tabla que no tiene etiqueta ("| | 14,885,763 | 12,165,369 |" debajo de los tres renglones de la nota «Staff costs»).
+      // Sin vocabulario ni idioma: es candidata SOLO si su primera cifra es la suma EXACTA de la primera cifra de las filas con etiqueta que tiene arriba en la misma tabla (al menos dos).
+      if (k === b - 1) {
+        const cs = celdas(L[k]); const sinRotulo = cs.length >= 2 && !cs[0] && cs.slice(1).some((c) => /\d/.test(c));
+        const nums = sinRotulo ? cs.slice(1).map(parseNumber).filter((n) => n !== null) : [];
+        if (nums.length) {
+          const arribaFilas = []; for (let q = a; q < k; q++) { const g = porLinea.get(q + 1); if (g && g.etiqueta && !esTotal(g.etiqueta) && g.cifras.length) arribaFilas.push(Math.abs(g.cifras[0])); }
+          const suma = arribaFilas.reduce((x, y) => x + y, 0);
+          if (arribaFilas.length >= 2 && Math.abs(suma - Math.abs(nums[0])) <= Math.max(0.5, 5e-4 * Math.abs(nums[0]))) out.push({ md, linea: k + 1, etiqueta: '(total sin rótulo: suma las filas de arriba)', cifras: nums.map(Math.abs), tabla: (celdas(L[a]).find((c) => /\p{L}{3,}/u.test(c)) || '').slice(0, 80), contexto: [arriba.join(' '), enc && `encabezado: ${enc}`, primeras.length && `filas: ${primeras.join(' / ')}`].filter(Boolean).join(' · ').slice(0, 300) });
+        }
+      }
     }
     a = b;
   }
@@ -1285,7 +1307,8 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     if (r.ensayo) { usd += r.usd; ensayos++; }
     else usd += r.costo || 0;
     const fila = r.fila || null;
-    const factor = fila ? (factorPorIngresos(filasDe(fila.md), d.revenueLinesByYear?.[a.anio], fila.md) ?? factorPorIngresos(filasDe(a.md), d.revenueLinesByYear?.[a.anio], a.md)) : null;
+    // (to-do 339) la escala del año con la misma escalera que caja y deuda (ajuste `escala`, líneas cargadas, y la escala del estado que registró verificar.mjs si contradice a la escala 1)
+    const factor = fila ? (escalaDe(fila.md, a.anio, filasDe(fila.md), d.revenueLinesByYear?.[a.anio], anios) ?? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios)) : null;
     porAnio.set(a.anio, { a, fila, factor, jev: r, ndocs: mds.length, ncands: cands.length });
   }
   const res = [];
