@@ -464,3 +464,19 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: tercera corrida de «un código por corrida»: `sin-salarios`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl` con `codigo_tratado: sin-salarios`, antes 48: real y lo arregla un script; el chequeo no se toca. Los 48 son 12 clubes británicos (47 hallazgos: Aston Villa, Brentford, Brighton, Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves), con el estado de resultados por función y los sueldos dentro de una sola línea («Administrative expenses», «Operating expenses…», «Operating costs»), y Instituto 2025 (1), cuyo anexo de «Remuneraciones y cargas» se cargó entero como `admin_general_expense` en lugar de por columnas como 2024.
+
+### Qué queda (para TODO / onboarding o datos)
+
+- Británicos: `node tools/caja-deuda.mjs --personal --club <id> --ejecutar` (Jev, centavos por club; el ensayo de Aston Villa dice ~US$ 0,001) y después `--partir` y cargar con `--reemplazar` donde la compuerta del documento siguiente lo confirme; los años que la compuerta deje sin dato quedan como están. Mide: `sin-salarios` 48 antes contra lo que quede, con `audit.js` sin P0 ni P1 nuevos. Lo corre una sesión de onboarding o de datos, no la auditoría: cambia «Salarios y primas» publicados de 47 club-años.
+- Instituto 2025: abrir «Remuneraciones y cargas» por columnas como 2024 (tarea de carga).
+- Próxima corrida: `signo-invertido` (P2, 30).
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
