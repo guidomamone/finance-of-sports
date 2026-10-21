@@ -39,7 +39,8 @@ Un punto que no aplica, o que no se pudo probar, se dice en la nota de la sesió
   *Caso:* la lista de Ligas a 1500 px → Serie A → Inter → atrás dos veces vuelve a la lista a 1500.
 - [ ] **Nada se pide con una ruta relativa a la barra.** Toda carga dinámica pasa por `fosUrl()`: en `/liga/<id>` y `/club/<id>`, `data/…` apunta a `/liga/data/…`.
   *Prueba:* después de navegar dentro del sitio a una liga y a un club, `performance.getEntriesByType('resource').filter(e => e.responseStatus === 404)` da vacío.
-  *Caso:* hoy `data/club-leagues.js` pide `data/club-leagues/<iso2>.js` sin `fosUrl()`, y después de entrar a una liga las tablas de ligas por club dan 404.
+  *Caso:* `data/club-leagues.js` pedía `data/club-leagues/<iso2>.js` sin `fosUrl()`: después de entrar a una liga desde la lista, las tablas de ligas por
+  club daban 404 y el selector quedaba sin ligas, en silencio salvo por la consola.
 - [ ] **Un id viejo o mal escrito no rompe.** Un club, una liga o un sponsor que no existen se ignoran o se dicen, sin error en la consola.
   *Prueba:* abrir `?tab=liga&liga=no-existe` y `?tab=sponsor&sponsor=no-existe`.
   *Caso:* «No encontramos ese sponsor».
@@ -115,7 +116,6 @@ En el paso 4, como primer punto de la lista:
 
 Los casos que dicen «hoy» son cosas que el sitio no cumple:
 
-1. `data/club-leagues.js` sin `fosUrl()`: 404 de las tablas de ligas por club después de navegar a `/liga/<id>` o `/club/<id>`.
-2. El foco cae en `body` al cambiar de vista; y verificar adónde vuelve al cerrar el selector.
-3. Áreas de toque chicas en la página de una liga (`.lg-club`, «← Todas las ligas»): falta el barrido del resto de las pantallas.
-4. Los países abiertos de la lista de Ligas se pliegan al volver.
+1. El foco cae en `body` al cambiar de vista; y verificar adónde vuelve al cerrar el selector.
+2. Áreas de toque chicas en la página de una liga (`.lg-club`, «← Todas las ligas»): falta el barrido del resto de las pantallas.
+3. Los países abiertos de la lista de Ligas se pliegan al volver.

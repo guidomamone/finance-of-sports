@@ -1,3 +1,22 @@
+# Sesión pantallas (Pantallas 7): las tablas de ligas por club con fosUrl()
+
+## Qué cambió (para CHANGELOG)
+- `data/club-leagues.js` pedía `data/club-leagues/<iso2>.js` con una ruta relativa: después de navegar dentro del sitio a `/liga/<id>` o `/club/<id>`, las
+  23 tablas daban 404 y el selector quedaba sin ligas. Ahora pasa por `fosUrl()`. Revisadas las demás cargas de `js/` y `data/`: todas usaban `fosUrl()`;
+  los dos `href="fuentes/…"` que arma el JS los cubre `absolutizarLink()`. ASSET_V 1689.
+- Verificado servido: de la lista de Ligas a una liga (23 tablas con 200, 320 clubes con liga); entrada directa a `/liga/it-seriea.html` → Inter, con el selector
+  abierto y las ligas listadas; entrada directa a `/club/boca-ar.html`: sin ningún 404. Como archivo a 1280 (Chrome sin ventana): de la lista a una liga, las
+  tablas cargan y no hay errores en la consola. `node tools/audit.js`: 0 P0, 0 P1.
+- La propuesta de UX usa este caso como ejemplo, en pasado, y lo saca de sus pendientes.
+
+## Qué queda (para TODO)
+- Nada de esto.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 7): propuesta de guía de UX (sin aplicar)
 
 ## Qué cambió (para CHANGELOG)
@@ -7,7 +26,7 @@
 
 ## Qué queda (para TODO)
 - El ok de Guido al texto; después, aplicarlo tal cual.
-- Si lo aprueba, los cuatro pendientes de la sección 3 de la propuesta (fosUrl en club-leagues, foco al cambiar de vista y al cerrar el selector, áreas
+- Si lo aprueba, los tres pendientes de la sección 3 de la propuesta (foco al cambiar de vista y al cerrar el selector, áreas
   de toque chicas en la página de una liga, países de Ligas que se pliegan al volver).
 
 ## Qué deja de ser cierto en ESTADO
@@ -30,8 +49,6 @@
   `node tools/audit.js`: 0 P0, 0 P1.
 
 ## Qué queda (para TODO)
-- `data/club-leagues.js` arma `'data/club-leagues/<iso2>.js'` sin `fosUrl()`: después de navegar dentro de la app a `/liga/<id>` o `/club/<id>` las 23
-  tablas dan 404 (`[club-leagues] no se pudo cargar`) y el selector queda sin ligas. Es de antes de esta tanda; un cambio de una línea.
 - A 375 px los países de la lista de Ligas están plegados y al volver con atrás se vuelven a plegar: la altura se restaura hasta donde da la lista
   plegada. Lo que se abrió debería mantenerse al volver (va de ejemplo en la guía de UX).
 

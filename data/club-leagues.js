@@ -16,7 +16,8 @@ function loadClubLeagues(){
   if(!paises.length) console.error('[club-leagues] no se pudo leer clubs{}: el selector va a quedar sin ligas');
   _clubLeaguesPromise = Promise.allSettled(paises.map(p => new Promise((resolve, reject) => {
     const s = document.createElement('script');
-    s.src = 'data/club-leagues/' + p + '.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+    // fosUrl() (js/i18n.js): en /liga/<id> o /club/<id> una ruta relativa se resuelve contra la barra y da 404.
+    s.src = fosUrl('data/club-leagues/' + p + '.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
     s.onload = resolve;
     s.onerror = () => reject(new Error(p));
     document.head.appendChild(s);
