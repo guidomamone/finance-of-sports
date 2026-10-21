@@ -1,3 +1,22 @@
+# Sesión pantallas (Pantallas 6): to-do 340, rutas relativas en /club/<id> y /liga/<id>
+
+## Qué cambió (para CHANGELOG)
+- 340: `index.html` lleva `<base href="/">` (la app corre también en `/club/<id>` y `/liga/<id>`). Sin eso toda ruta relativa apuntaba a `/liga/data/…`: elegir un
+  club no cargado desde una liga fallaba con «No se pudieron cargar los datos», y lo mismo los links `fuentes.html`, `fuentes/<id>.html` y `correcciones.html`. Elegí la
+  base y no rutas absolutas en cada carga porque cubre scripts, `fetch`, `I18N_BASE` y los `href` a la vez. Los links `#ancla` que cambian con una base
+  (irían a `/#…`) ya hacen `preventDefault` (índice de Finanzas, sponsors). Verificado en el preview: portada → liga → Burnley (carga y la URL pasa a `/club/burnley-gb`),
+  atrás y adelante, `/club/boca-ar.html` y `/liga/gb-premierleague.html` directos, y 375 px (Brighton, sin desborde). ASSET_V 1561; regeneradas `fuentes/`, `club/` y `liga/`.
+
+## Qué queda (para TODO)
+- El generador (`tools/generate-club-pages.js`) ya mete su propio `<base href="/">`: ahora la página tiene dos (el primero manda, inofensivo). Pipeline puede sacar el suyo.
+- El `<title>` y la descripción de la página generada no cambian cuando el visitante navega dentro de la app (queda el del club o la liga de entrada); solo lo ven la pestaña
+  del navegador y el historial. Si molesta, hay que actualizar `document.title` en `escribirURL()`.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 7): to-do 247, registro público de correcciones
 
 ## Qué cambió (para CHANGELOG)
