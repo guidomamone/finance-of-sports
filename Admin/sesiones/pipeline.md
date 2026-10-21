@@ -282,6 +282,11 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 
 - Ningún punto tiene flecha a Pipeline (dos van a datos, los 9 XHTML daneses a TODO, donde esperan dentro del 356 el presupuesto de Guido, y uno a regla): no hubo nada para hacer.
 
+### 3. 352: `ixbrl-resultado` frena para el perímetro individual (`69e82bea06`, veredicto de la Auditora 5)
+
+- `chequearIxbrl` recibe el perímetro y devuelve `frena` solo si el hecho es único («ok»), la diferencia pasa la tolerancia y lo cargado es individual; `cargar.mjs` lo convierte en el freno `ixbrl-resultado` (con el `.md` y el ajuste `ixbrl-omitir` en el mensaje). En el consolidado sigue el aviso con su caso en la cola. Ambiguo, solo-matriz, sin-hecho, formato y perímetro desconocido nunca frenan. En `lote.mjs` sale como «8 cargar: ixbrl-resultado». `Admin/PIPELINE.md` y la cabecera de `ajustes.mjs` al día.
+- Probado en un worktree de mentira (detached, preparado, ya borrado), con el ensayo de `cargar.mjs --desde-verificacion --reemplazar` y el resultado tal cual, con el signo cambiado y ×1000 (un factor solo en la copia de `cargar.mjs` de ese worktree): Fredericia 2021-25, Nordsjælland 2025, Vejle 2025 y Viborg 2025 pasan tal cual y frenan alterados con el mensaje del caso. Brøndby 2021 (sin hecho) y Midtjylland 2020 (sin XHTML del mismo cierre) no comparan. FCK 2025 y SønderjyskE 2024 salen consolidados en este ensayo, con un hecho que es solo de la matriz: avisan y no frenan (la Auditora los midió como individuales, llamando a la función directamente). Forest, Bath y Burnley 2025 no tienen `.verificacion.json` (carga con tokens): con las dos funciones que llama `cargar`, Forest y Bath pasan y frenan alterados, y Burnley (consolidado) solo avisa. Ningún año cargado frena tal cual.
+
 ### Qué queda (Pipeline 15)
 
-Nada nuevo.
+- `emisorDe` (en `ixbrl-resultado.mjs`) lee solo los primeros 600 KB del XHTML, y en 17 de los 48 XHTML daneses el `ix:header` está más adelante (Silkeborg 2025: byte 2,69 MB; AGF 2022-25, AaB 2025, Brøndby 2025, el PSE de FCK). Un año cargado de un PDF no encuentra su XHTML del mismo emisor y se queda sin la segunda lectura, sin aviso: Silkeborg 2025 nunca se comparó desde `cargar` (con las funciones directas da 25,799, igual que lo cargado). Leer el archivo entero haría que se comparen más años, y eso puede sumar frenos: es una condición nueva y va a la Auditora antes de codearla → TODO nuevo (Pipeline, con la Auditora).
