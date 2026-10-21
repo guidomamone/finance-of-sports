@@ -299,3 +299,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: frenados #8, #9a y #12 de Bath, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Tres líneas más en `Admin/registros/auditoria-proceso.jsonl`: `armar-a-mano.mjs` con etiqueta sintética para un subtotal o total sin rótulo, `ajustes.mjs --etiqueta-diferencia` y `tools/fuente.mjs`, APROBADOS. El #9b (proponer la fila de redondeo) queda sin hacer a propósito: es un criterio de datos.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
