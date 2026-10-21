@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 908 — El título sigue a la ruta; un solo <base> (2026-10-20) [342]
+
+- `document.title` cambia al navegar dentro de la app (club, liga, Inicio según idioma). `generate-club-pages.js` ya no escribe su `<base>`: una sola base por página. ASSET_V 1562.
+
 ## Versión 907 — Arreglo de la ruta relativa en /liga/ (2026-10-20) [340 · 342]
 
 - `index.html` lleva `<base href="/">`: tocar un club en `/liga/<id>` después de llegar desde la portada ya carga sus datos (antes pedía `/liga/data/...`), y los links a `fuentes.html` y `correcciones.html` desde esas rutas tampoco se rompen. Verificado con Burnley, rutas directas, atrás y adelante y a 375 px. ASSET_V 1561. Nuevo 342: el título al navegar y el `<base>` doble.
