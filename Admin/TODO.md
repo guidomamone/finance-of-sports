@@ -36,11 +36,11 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * 259: material de difusión (después de 241)
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
-* 332: buscar «The State of the Game» y otros informes parecidos sobre las finanzas del fútbol inglés, y ver para qué sirven: contrastar lo cargado, completar lo que falta y dar contexto en Ligas
+* 332 (en marcha, Sourcing 2): buscar «The State of the Game» y otros informes parecidos sobre las finanzas del fútbol inglés, y ver para qué sirven: contrastar lo cargado, completar lo que falta y dar contexto en Ligas
 * 248: taxonomía genérica y subcategorías por deporte
-* 247: registro público de correcciones (sobre 245)
+* 247 (en marcha, Pantallas 5: primero el diseño y el mockup, para tu ok): registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
-* 270: estimado de club nuevo: volver a medir cuando entren más años de Noruega, Suiza y Países Bajos
+* 270: estimado de club nuevo: medido otra vez con 1.270 club-años; espera tu decisión sobre Estonia
 * 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): elegir cuáles van a hook o a audit.js (Pipeline)
 * 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
