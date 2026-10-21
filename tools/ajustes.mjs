@@ -24,6 +24,8 @@
 //                     que quitar este ajuste a conciencia (se agrega otro con --valor no). Casos: Torino 2020 y 2025, Inter 2017-18, Lazio 2021, Salernitana 2022.
 //   ixbrl-omitir      (to-do 345, Auditora 5) sin valor, con --motivo: apaga para ese documento el aviso de cargar.mjs que compara el resultado cargado con el
 //                     `ProfitLoss` etiquetado en su XHTML (tools/ixbrl-resultado.mjs). Para un hecho que no es el resultado del ejercicio (perímetro distinto, minoritarios).
+//   covid-omitir      sin valor, con --motivo: el documento cierra dentro de la ventana COVID (2020-03-31 a 2021-12-31) pero su taquilla o entradas en 0
+//                     NO son por la pandemia (un club que jugó con público): cargar.mjs vuelve a pedir el reintento como en cualquier otro año.
 //   no-recargar       (Versión 637) sin valor: lo publicado de ese año es mejor que lo que da una corrida nueva (más desglose, de notas que el script no abre)
 //                     y no se reproduce con ajustes razonables. tools/cargar.mjs frena (también con --reemplazar). Casos: Lazio 2012-13, Roma 2021.
 //   estado            (Versión 614) valor = los ids de los bloques del estado de resultados de ese documento, separados por coma ("b107,b108,b109"): escalón 0 de tools/localizar.mjs,
@@ -88,7 +90,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda', 'escala', 'suma-con', 'ixbrl-omitir'];
+export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda', 'escala', 'suma-con', 'ixbrl-omitir', 'covid-omitir'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 // (to-do 224) UNA LECTURA POR PROCESO, igual que leer() de cola.mjs: 18 de los 36 s de `verificar.mjs --lista` sobre 237 documentos eran

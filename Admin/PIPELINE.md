@@ -647,8 +647,8 @@ solo esos 4 cambian, 0 filas a la cola, 0 categorías distintas.
  SIN CATEGORÍA    fila impresa (con página) que no está en el .categorias.json y nada categorizó ─► frena con su nombre (to-do 232 x;
                   AEK 2024) ─► las demás sin categoría aceptable: más del 5% del dinero del lado frena, menos es aviso y no se cargan
  CATEGORÍAS EN 0  ajuste `cero-real` ─► (298 p2) el `cero-real` de esa categoría en OTRO documento del club, si ningún año cargado del
-                  club la tiene con monto (Beerschot 2019, 2020 y 2022 toman el de 2025: "Cuotas sociales") ─► Estadio en 0 en el ejercicio 2021: real (puertas cerradas por el Covid; decisión de Guido del
-                  2026-10-13) ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
+                  club la tiene con monto (Beerschot 2019, 2020 y 2022 toman el de 2025: "Cuotas sociales") ─► taquilla o entradas en 0 (en fútbol, Estadio) con cierre del 2020-03-31 al 2021-12-31:
+                  real (ventana COVID; sin cierre conocido, el año 2021; el ajuste `covid-omitir` lo apaga) ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
                   (298 p1) EL PERFIL ES POR AÑO: cada chequeo (respuesta de la cola, forma jurídica, revisión) guarda el año del documento y
                   vale para los años a menos de 5 (perfil-clubes.mjs, perfilVigente). Fuera de toda ventana se vuelve a preguntar, UNA vez por
                   club, campo y tramo, y la respuesta de cualquier documento del club en la ventana sirve. Un chequeo que contradice al más
@@ -717,7 +717,7 @@ errores"). Un documento se marca para reintentar por dos motivos:
 
 - a) **Un desglose no suma** (una nota, o un cuadro que abre una fila de una nota). Lo detecta la etapa 6.
 - b) **Una categoría da 0 cuando debería tener número.** Lo detecta la etapa 8 (ahí ya hay categorías):
-  - salarios del plantel, televisión o estadio en 0: siempre, salvo Estadio en 2021 (Covid, ver CATEGORÍAS EN 0);
+  - salarios del plantel, televisión o estadio en 0: siempre, salvo la taquilla en la ventana COVID (ver CATEGORÍAS EN 0);
   - cuotas sociales en 0: solo si el perfil del club dice que tiene socios;
   - otras secciones deportivas en 0: solo si el perfil dice que tiene otros deportes (básquet, vóley, futsal...);
   - educación nunca dispara;
