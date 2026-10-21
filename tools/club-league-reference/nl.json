@@ -91,6 +91,38 @@
           "VVV-Venlo",
           "NAC Breda",
           "PEC Zwolle"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Eredivisie"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesn/ned2019.html",
+            "tabla": "Eredivisie",
+            "fetchedAt": "2026-10-21T18:06:48.966Z",
+            "equipos": [
+              "Ajax (Amsterdam)",
+              "PSV (Eindhoven)",
+              "Feyenoord (Rotterdam)",
+              "AZ (Alkmaar)",
+              "Vitesse (Arnhem)",
+              "FC Utrecht",
+              "Heracles Almelo",
+              "FC Groningen",
+              "ADO Den Haag",
+              "Willem II (Tilburg)",
+              "SC Heerenveen",
+              "VVV-Venlo",
+              "PEC Zwolle",
+              "FC Emmen",
+              "Fortuna Sittard",
+              "Excelsior (Rotterdam)",
+              "De Graafschap (Doetinchem)",
+              "NAC Breda"
+            ]
+          }
         ]
       },
       "2022": {
@@ -275,6 +307,38 @@
           "Twente",
           "Utrecht",
           "Willem II"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Eredivisie"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesn/ned2025.html",
+            "tabla": "Eredivisie",
+            "fetchedAt": "2026-10-21T18:06:49.007Z",
+            "equipos": [
+              "PSV (Eindhoven)",
+              "Ajax (Amsterdam)",
+              "Feyenoord (Rotterdam)",
+              "FC Utrecht",
+              "AZ (Alkmaar)",
+              "FC Twente (Enschede)",
+              "Go Ahead Eagles (Deventer)",
+              "NEC (N&#307;megen)",
+              "SC Heerenveen",
+              "PEC Zwolle",
+              "Fortuna Sittard",
+              "Sparta Rotterdam",
+              "FC Groningen",
+              "Heracles Almelo",
+              "NAC Breda",
+              "Willem II (Tilburg)",
+              "RKC Waalw&#307;k",
+              "Almere City FC"
+            ]
+          }
         ]
       }
     },

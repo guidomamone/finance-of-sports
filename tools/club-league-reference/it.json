@@ -729,6 +729,40 @@
           "Livorno",
           "Udinese",
           "Sassuolo"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2013%E2%80%9314_Serie_A"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesi/ital2014.html",
+            "tabla": "Serie A",
+            "fetchedAt": "2026-10-21T18:06:48.926Z",
+            "equipos": [
+              "Juventus FC",
+              "AS Roma",
+              "SSC Napoli",
+              "AC Fiorentina",
+              "FC Internazionale",
+              "Parma FC",
+              "Torino FC",
+              "Milan AC",
+              "SS Lazio",
+              "Hellas Verona FC",
+              "Atalanta BC",
+              "UC Sampdoria",
+              "Udinese Calcio",
+              "Genoa CFC",
+              "Cagliari Calcio",
+              "AC Chievo Verona",
+              "US Sassuolo",
+              "Calcio Catania",
+              "Bologna FC",
+              "AS Livorno"
+            ]
+          }
         ]
       },
       "2015": {
