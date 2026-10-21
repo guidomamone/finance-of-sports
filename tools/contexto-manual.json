@@ -799,6 +799,22 @@
       "fuente": "https://en.wikipedia.org/wiki/2024_Norwegian_First_Division"
     }
   },
+  "girona-es": {
+    "2021": {
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-21",
+          "por": "Claude (Onboarding 8)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.md, informe de gestión L5520-5562: nombra a Puma como patrocinador técnico y a CaixaBank, Patronat de Turisme Costa Brava Pirineu de Girona y FactorEnergía como patrocinadores, sin decir cuál iba en el frente de la camiseta", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "https://www.footyheadlines.com/2020/08/girona-20-21-home-away-third-kits.html (presentación de las camisetas 2020-21: solo Puma y la inscripción del 90 aniversario, no nombra sponsor de pecho)", "resultado": "sin-dato" },
+            { "clase": "club-oficial", "donde": "búsqueda web «gironafc.cat nueva camiseta 2020-21 Puma Girona FC presenta equipaciones patrocinador»: el sitio del club no aparece entre los resultados", "resultado": "sin-dato" },
+            { "clase": "archivo-web", "donde": "https://footballkitarchive.com/girona-kits", "resultado": "inaccesible" }
+          ]
+        }
+      }
+    }
+  },
   "chapecoense-br": {
     "2019": {
       "estadio": "Arena Condá",
