@@ -470,7 +470,9 @@ function checkMoneda(api) {
     // chico. Un club profesional del mundo real no factura 0,2 M USD ni 2.000 M.
     // (to-do 237 e) La decisión se toma después del recorrido (fueraDeBanda, abajo): hace falta la serie entera del club.
     if (usd < 0.2 || usd > 2000) fueraDeBanda.push({ clubId, year, usd });
-    const pais = (api.clubs[clubId] || {}).country || '??';
+    // Un tramo corto de transición (period_months < 12, Admin/CONVENCIONES-DATOS.md) no se compara con años de 12 meses: fuera de outlier-liga y salto-interanual.
+    if ((ym.periodMonths || 12) < 12) continue;
+    const pais =(api.clubs[clubId] || {}).country || '??';
     (porPais[pais] = porPais[pais] || []).push({ clubId, year, usd });
     (serie[clubId] = serie[clubId] || []).push({ year, usd, currency: ym.currency });
   }

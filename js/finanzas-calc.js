@@ -19,7 +19,16 @@
       currency: m.currency || 'USD',
       fx: (f.fx != null ? f.fx : FX_RATE),
       fxSource: f.source, fxLabel: f.label, fxRef: f.ref,
+      // meses del ejercicio si no son 12 (un tramo corto de transición cargado como año, Admin/CONVENCIONES-DATOS.md); sin el campo, null = 12.
+      // Uno de menos de 12 no entra al ranking por año (tools/generate-rankings.js) ni a las variaciones interanuales.
+      periodMonths: m.periodMonths || null,
     };
+  }
+  // Un tramo corto de transición: un ejercicio de menos de 12 meses cargado como año. Sus flujos (ingresos, gastos, resultado) no se comparan
+  // con un año de 12 meses: sin Δ en Finanzas multi-año (js/finanzas-multi.js); la deuda y la caja, que son saldos, sí.
+  function esTramoCorto(clubId, year){
+    const pm = yearMetaFor(clubId, year).periodMonths;
+    return !!(pm && pm < 12);
   }
 
 

@@ -159,6 +159,10 @@ function rankingDe(api, leagueId, year) {
     // aparte") y la que Swiss Ramble escribe como "rankings have only been
     // applied where data is available".
     if (!c || !meta) { sinDato.push(id); continue; }
+    // Un tramo corto de transición (`periodMonths` < 12, Admin/CONVENCIONES-DATOS.md) no entra: seis meses al lado de doce se leen como una
+    // caída. Queda contado aparte como un club sin dato comparable; tools/estimar.mjs (la mediana de la liga-año) lee de acá, así que tampoco entra
+    // ahí, y no recibe un estimado porque el año está cargado (data/club-index.js).
+    if ((meta.periodMonths || 12) < 12) { sinDato.push(id); continue; }
     const revenue = api.toDisplayValue(c.revenue, meta, 'USD');
     if (!revenue) { sinDato.push(id); continue; }
 
