@@ -32,10 +32,9 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 **B. Pantallas y distribución**
 * 334 (en marcha, Pipeline 9): `suma-entidades.mjs` pone el prefijo «AS · » / «Elite · » al sumar dos entidades, para que una recarga no lo pise
 * 241 (ok de Guido; en marcha: Pipeline 9 el generador y las imágenes, después del 334 y el 270; Pantallas 6 la ruta en `js/principal.js`): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
-* 259: material de difusión (después de 241)
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
-* 332 (en marcha, Sourcing 3): transcribir con Mistral los informes del fútbol inglés y resumir de qué trata cada uno y qué otros parecidos hay, para pensar una sección de noticias o informes en Ligas (sin tocar texto del sitio)
+* 332: resumen listo (`Admin/sourcing/Inglaterra/informes-futbol-ingles.md`, sección 4 con la idea de una sección «Informes» en Ligas); espera que decidas si se hace y si es lista de informes o noticias
 * 336: lo mismo que el 332 para cada liga ya cargada, y buscar estos informes cada vez que se abre una liga nueva (paso de skill, con el texto para tu ok)
 * 248: taxonomía genérica y subcategorías por deporte
 * 247 (ok de Guido a las 4 recomendaciones del plan; se implementa después del 241): registro público de correcciones (sobre 245)
@@ -52,7 +51,8 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 **E. Más adelante (Guido, 2026-10-20)**
-* 313: contenido para X e Instagram (después de 241; con el 259 y el 257)
+* 337: antes de difundir, las 5 grandes ligas, Brasil y Argentina bien cargadas (medir qué falta y definir el umbral)
+* 313: contenido y difusión: X, Instagram y el material para periodistas y sponsors (después del 337 y el 241; con el 257)
 * 335: mails a clubes (une el proceso de mails, lo que quedaba de quién audita y el check-in de outreach)
 
 
@@ -87,8 +87,6 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    rompe); deploy/release (qué chequear antes de pushear y cómo verificar producción).
 258. ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). clubs.js + club-index.js pesan ~93 KB para ~230 clubes y se bajan siempre (con 10.000 clubes,
    ~4 MB). Partir el índice y cargar el buscador aparte cuando la skill escala-finance-of-sports diga que llegó el momento.
-259. MATERIAL DE DIFUSIÓN (mejoras de proyecto, pedido de Guido 2026-10-16). Un deck para periodistas y sponsors, o un informe por liga ("las finanzas de LaLiga 2025 en 10 slides"), con
-   el tipo Slides. Sin código.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
    contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
    compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil), sin silenciar ni mover nada; va con el 278.
@@ -115,6 +113,8 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
         con Higgsfield (321);
     (d) un calendario: qué liga o club se publica cada semana, para no repetir;
     (e) enlaces a `/club/<id>` con tarjeta al compartir (241) y medir qué publicaciones traen visitas. Depende de 241 y 246.
+    (f) material de difusión (era el 259): un deck para periodistas y sponsors, o un informe por liga («las finanzas de LaLiga 2025 en
+        10 slides»), con el tipo Slides; sin código. Nada de esto sale antes del 337.
 317. SUPABASE COMO ESPEJO DE LECTURA (idea, 2026-10-19; con el 245 y el 258). Un experimento descartable: exportar los ejercicios de un solo
     país a tablas y correr las auditorías en SQL (rubros que no suman, años faltantes, outliers entre clubes) para comparar con
     `verifyTieOuts()`. Sirve de medida para decidir cuándo `data/*.js` deja de alcanzar (skill de escala). No es una migración. Sobre lo de
@@ -160,3 +160,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 336. INFORMES AGREGADOS POR LIGA (pedido de Guido, 2026-10-20). Como el 332 para cada liga ya cargada: buscar los informes que resumen las
    finanzas de sus clubes (de la liga, la federación, el regulador, la UEFA, consultoras), de qué tratan y para qué sirven. Y sumar a la
    skill que corresponda un paso para buscarlos cada vez que se abre una liga nueva (texto para el ok de Guido).
+337. ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
+   Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
+   (clubes y años, con `tools/faltantes-liga.mjs` y `Admin/ESTADO-clubes.md`) y proponerle a Guido el umbral de «bien cargada». Ojo: completar
+   pide transcribir PDFs nuevos, que hoy están frenados; la excepción la decide Guido.

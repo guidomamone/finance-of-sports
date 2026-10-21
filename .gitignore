@@ -160,3 +160,8 @@ Generados/Grecia/Athens Kallithea/**
 # Los datos del dashboard de usuarios y visitas (tools/dashboard-usuarios.mjs): se rehacen cada semana y se suben al artifact; no son
 # caché de nada. Después del !Generados/**/*.json, por lo mismo que Kallithea.
 Generados/dashboard-usuarios/**
+
+# Transcripciones de informes de terceros (332): se leen para resumirlos, no se publican ni se trackean.
+Admin/sourcing/Inglaterra/deloitte-arff-2026.md
+Admin/sourcing/Inglaterra/ifr-state-of-the-game-2026.md
+Admin/sourcing/Inglaterra/uefa-ecfil-2025.md

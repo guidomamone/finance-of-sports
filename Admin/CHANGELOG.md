@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 882 — De qué tratan los informes del fútbol inglés; difusión después de las grandes ligas (2026-10-20) [332 · 313 · 337]
+
+- 332: Deloitte ARFF 2026, UEFA ECFIL 2025 e IFR State of the Game transcriptos con Mistral (US$ 1,65; no se trackean: `.gitignore`) y resumidos; ~14 informes parecidos de otras ligas; idea de una sección «Informes» en Ligas.
+- El 259 (material de difusión) pasa a ser parte del 313; nuevo 337: no se difunde hasta tener bien cargadas las 5 grandes ligas, Brasil y Argentina.
+
 ## Versión 881 — 333 cerrado sin cambios (2026-10-20) [333]
 
 - Mi Cuenta: una búsqueda guardada antes del 246 con un id viejo puede quedar duplicada al volver a guardarla. Se acepta así (pocas filas, se borra desde Mi Cuenta); no se migra `saved_searches`.
