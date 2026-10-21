@@ -1,0 +1,232 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2012.md",
+ "generatedAt": "2026-10-21T14:36:37.936Z",
+ "rubrosHuella": "c55b1928ae8ce089fcf8608da3103a80ac87598b",
+ "rubros": [
+  {
+   "label": "VENDAS DE INGRESSOS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DOACOES RECEBIDAS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "RECEITA DE LOCAÇÃO DE CADEIRAS DE ASSOCIADOS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "stadium_other",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "stadium_other",
+     0.29000000000000004
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "member_dues",
+     0.24
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "SUBVENCÕES E CONVÊNIOS MUNICIPAL",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "DESPESAS TRIBUTARIAS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "CONVENIO PREF. MUN. CMDCA",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "education",
+     0.03
+    ],
+    [
+     "youth_football",
+     0.01
+    ]
+   ],
+   "tokens": 987
+  },
+  {
+   "label": "RECEITA PATROCINIO E PUBLICIDADE",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "CONVENIO PREF.N.HORIZ. 08/2012- ESCOLA FUTEBOL",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.95
+    ],
+    [
+     "education_expense",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "DIREITOS FEDERATIVOS DE ATLETAS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1064
+  }
+ ]
+}

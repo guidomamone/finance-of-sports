@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Novorizontino/balanco-2012.pdf",
  "md": "Clubes/Brasil/Novorizontino/balanco-2012.md",
- "mdSha1": "bac23525e52de6b1d73d9ef42bcea538b5e3b306",
+ "mdSha1": "10ca9e4ab18f05b034da7d116afc5df493660db7",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T14:08:17.017Z",
+ "generado": "2026-10-21T14:32:05.114Z",
  "perimetroClub": "individual",
  "bloques": {
   "b1": {
@@ -23,63 +23,84 @@
    "tipo": "texto"
   },
   "b3": {
-   "pagina": 2,
+   "pagina": 1,
    "lineas": [
-    145,
-    151
+    37,
+    60
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b4": {
    "pagina": 2,
    "lineas": [
-    157,
-    165
+    84,
+    90
    ],
    "tipo": "texto"
   },
   "b5": {
-   "pagina": 3,
+   "pagina": 2,
    "lineas": [
-    261,
-    267
+    96,
+    104
    ],
    "tipo": "texto"
   },
   "b6": {
    "pagina": 3,
    "lineas": [
-    273,
-    341
+    200,
+    206
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 3,
+   "lineas": [
+    212,
+    280
    ],
    "tipo": "texto"
   }
  },
- "sin_estado": true,
- "estado": [],
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
  "notas_ingresos": [],
  "notas_gastos": [],
  "escala": "unidades",
  "escala_evidencia": "DEMONSTRACAO DO RESULTADO DO EXERCICIO (Valores em Reais)",
  "moneda": "BRL",
- "columna_ejercicio": "Janeiro a Dezembro de 2012",
+ "columna_ejercicio": "Valor (R$)",
  "columna_anterior": null,
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se confirma que la transcripción no contiene las cifras de la DRE de la pág. 1 (solo encabezados b1/b2) y que hay que cargarla mirando el PDF?",
+   "pregunta": "¿La DRE del bloque b3 corresponde al ejercicio enero-diciembre 2012, aunque el año del encabezado ('Período: Janeiro a Dezembro de', b2) aparece truncado?",
    "propuesta": "sí",
-   "tema": "otro",
+   "tema": "cuadro-de-otro-anio",
    "renglon": "",
-   "texto": "La pág. 1 se titula 'DEMONSTRACAO DO RESULTADO DO EXERCICIO' pero los bloques b1 y b2 solo traen datos de la empresa; el único dato de resultado es 'DEFICIT DO EXERCICIO (41.797,46)' en el balance (b6).",
+   "texto": "El año del período y de la fecha de cierre no se lee en b2 ('31/12/'), así que el ejercicio no se puede confirmar desde el índice.",
    "bloques": [
-    "b1",
     "b2",
-    "b6"
+    "b3"
    ],
    "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La entidad 'GREMIO NOVORIZONTINO' de la DRE (b1) es la misma entidad que se carga en el sitio como Grêmio Novorizontino SAF?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "En 2012 el club probablemente era una asociación (recibe doações y subvenções) y no una SAF.",
+   "bloques": [
+    "b1",
+    "b3"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "El documento es de Grêmio Novorizontino, ejercicio 2012, en reales. La DRE de la pág. 1 aparece solo como título y la transcripción no trae sus renglones. Los bloques con cifras (b6) corresponden al balance patrimonial (pasivo y patrimonio líquido), que informa un déficit del ejercicio de 41.797,46. No hay columna del año anterior ni consolidado."
+ "observaciones": "Hay una sola DRE (b3), con una única columna sin año anterior. b4-b7 son encabezados y el balance patrimonial. b7 termina en 'CONTAS DE RESULTADO / DEFICIT DO EXERCICIO' dentro del balance, por lo que no se elige."
 }

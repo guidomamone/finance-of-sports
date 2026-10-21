@@ -216,9 +216,11 @@ window.RANKINGS["br-serieB"] = {
   },
   2018: {
     leagueSize: 20,
-    sinDato: ["goias-br"],
     wiki: {"t":"2018 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-09","n":20},
     clubs: [
+      { id:"goias-br", revenue:19.395, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2018",
+        mix:[["Cuotas Sociales",1.032],["Comercial / Sponsors",1.249],["Estadio",0.876],["Televisión",8.101],["Premios por competencias",1.753],["Venta de Jugadores",5.84],["Otros ingresos",0.544]] },
       { id:"criciuma-br", revenue:7.462, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-balanco-2018",
         mix:[["Cuotas Sociales",0.929],["Comercial / Sponsors",0.753],["Estadio",0.134],["Televisión",2.02],["Venta de Jugadores",3.321],["Otros ingresos",0.305]] },

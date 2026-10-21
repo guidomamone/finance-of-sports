@@ -186,8 +186,11 @@ window.RANKINGS["br-serieA"] = {
   },
   2019: {
     leagueSize: null,
-    sinDato: ["goias-br"],
     clubs: [
+      { id:"goias-br", revenue:22.539, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",22.539]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"chapecoense-br", revenue:18.668, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-financeiras-2019",
         mix:[["Cuotas Sociales",2.101],["Comercial / Sponsors",3.672],["Estadio",0.848],["Televisión",9.765],["Premios por competencias",1.86],["Venta de Jugadores",1.378],["Otros ingresos",-0.956]] },

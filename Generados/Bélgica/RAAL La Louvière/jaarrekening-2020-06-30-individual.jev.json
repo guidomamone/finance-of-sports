@@ -1,0 +1,43 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.md",
+ "generatedAt": "2026-10-21T14:33:44.967Z",
+ "rubrosHuella": "f7897459ae394f53ac16b01a1de638a2194b38ae",
+ "rubros": [
+  {
+   "label": "Marge brute d'exploitation",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  }
+ ]
+}

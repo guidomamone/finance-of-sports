@@ -1,0 +1,120 @@
+{
+  "md": "Clubes/Brasil/Novorizontino/balanco-2012.md",
+  "pdf": "Clubes/Brasil/Novorizontino/balanco-2012.pdf",
+  "club": "novorizontino-br",
+  "year": 2012,
+  "generatedAt": "2026-10-21T14:33:25.401Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "DOACOES RECEBIDAS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.023534
+      ],
+      "glosa": "Donaciones recibidas"
+    },
+    {
+      "label": "SUBVENCÕES E CONVÊNIOS MUNICIPAL",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.119143
+      ],
+      "glosa": "Subvenciones y convenios municipales"
+    },
+    {
+      "label": "RECEITA PATROCINIO E PUBLICIDADE",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.711565
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "RECEITA DE LOCAÇÃO DE CADEIRAS DE ASSOCIADOS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.043847
+      ],
+      "glosa": "Ingresos por alquiler de butacas de socios"
+    },
+    {
+      "label": "VENDAS DE INGRESSOS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.387359
+      ],
+      "glosa": "Venta de entradas"
+    },
+    {
+      "label": "CONVENIO PREF. MUN. CMDCA",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.012
+      ],
+      "glosa": "Convenio Municipalidad CMDCA"
+    },
+    {
+      "label": "DIREITOS FEDERATIVOS DE ATLETAS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.00424
+      ],
+      "glosa": "Derechos federativos de deportistas"
+    },
+    {
+      "label": "DESPESAS ADMINISTRATIVAS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.563753
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "DESPESAS TRIBUTARIAS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.003527
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "DESPESAS OPERACIONAIS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.641612
+      ],
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "CONVENIO PREF.N.HORIZ. 08/2012- ESCOLA FUTEBOL",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.131182
+      ],
+      "glosa": "Convenio Pref. N. Horiz. 08/2012 - Escuela de fútbol"
+    }
+  ]
+}

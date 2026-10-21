@@ -1,11 +1,11 @@
 {
  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.pdf",
  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.md",
- "generado": "2026-10-21T14:12:55.538Z",
+ "generado": "2026-10-21T14:50:43.419Z",
  "scriptHuella": "f2a64e48f42b",
  "estado": "ok",
  "clubId": "goias-br",
- "year": null,
+ "year": 2019,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -45,9 +45,19 @@
    "dif": 0.0034297100000149072
   },
   {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 90.846836 en este documento y 90.846836 en demonstracoes-contabeis-2020.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2018: 75.150413 en demonstracoes-contabeis-2018.pdf y 75.150413 en este documento (columna del año anterior)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",

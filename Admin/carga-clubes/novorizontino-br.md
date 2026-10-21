@@ -1028,6 +1028,42 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 2013: tools/cargar.mjs 2026-10-03, verificado contra roster cacheado de "Campeonato Paulista de Futebol de 2013 - Série A3" (tools/club-league-
 ```
 
+## 2012
+
+### Ingresos
+
+```text
+2012: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Brasil/Novorizontino/balanco-2012.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Novorizontino/balanco-2012.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | DOACOES RECEBIDAS | pág. 1, Jev 1 |
+| 2 | SUBVENCÕES E CONVÊNIOS MUNICIPAL | pág. 1, Jev 1 |
+| 3 | RECEITA PATROCINIO E PUBLICIDADE | pág. 1, Jev 1 |
+| 4 | RECEITA DE LOCAÇÃO DE CADEIRAS DE ASSOCIADOS | pág. 1, Claude 0.88 |
+| 5 | VENDAS DE INGRESSOS | pág. 1, precedente |
+| 6 | CONVENIO PREF. MUN. CMDCA | pág. 1, Jev 0.96 |
+| 7 | DIREITOS FEDERATIVOS DE ATLETAS | pág. 1, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | DESPESAS ADMINISTRATIVAS | pág. 1, precedente |
+| 2 | DESPESAS TRIBUTARIAS | pág. 1, Jev 1 |
+| 3 | DESPESAS OPERACIONAIS | pág. 1, precedente |
+| 4 | CONVENIO PREF.N.HORIZ. 08/2012- ESCOLA FUTEBOL | pág. 1, Jev 0.95 |
+
+### Meta
+
+```text
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cero-real = Televisión. El estado de resultados 2012 de Novorizontino (primer año competitivo, Segunda Divisão Paulista) no trae ningún ingreso de televisión: su receita bruta son donaciones, subvenciones, patrocinio, locación de cadeiras, ingressos, convênio y direitos federativos (.md L39-65)
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## 2010
 
 ### Ingresos
@@ -1211,4 +1247,12 @@ _note (data/):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### novorizontino-br-balanco-2012
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

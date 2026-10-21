@@ -7,6 +7,16 @@ const gironaEsRevenueLinesByYear = {
     {"rawLabel":"Imputación de subvenciones de inmovilizado no financiero y otras","normalizedCategory":"other_income","amountNative":0.20503,"disclosureLevel":"detailed"},
     {"rawLabel":"Otros resultados","normalizedCategory":"other_income","amountNative":0.021034,"disclosureLevel":"detailed"},
   ],
+  2021: [
+    {"rawLabel":"a) Ventas","normalizedCategory":"lump_football_operations","amountNative":0.439514,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Prestaciones de servicios","normalizedCategory":"other_income","amountNative":10.280324,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) Ingresos accesorios y otros de gestión corriente","normalizedCategory":"other_income","amountNative":1.532552,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"other_income","amountNative":0.122984,"disclosureLevel":"aggregated"},
+    {"rawLabel":"9. Imputación de subvenciones de inmovilizado no financiero y otras","normalizedCategory":"other_income","amountNative":0.20503,"disclosureLevel":"aggregated"},
+    {"rawLabel":"10. Excesos de provisiones","normalizedCategory":"other_income","amountNative":0.026219,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Resultados por enajenaciones y otras","normalizedCategory":"player_sales","amountNative":8.495649,"disclosureLevel":"aggregated"},
+    {"rawLabel":"13. Otros resultados","normalizedCategory":"other_income","amountNative":0.507457,"disclosureLevel":"aggregated"},
+  ],
   2022: [
     {"rawLabel":"a) Ventas","normalizedCategory":"lump_football_operations","amountNative":2.495814,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) Prestaciones de servicios","normalizedCategory":"other_income","amountNative":11.081896,"disclosureLevel":"aggregated"},
@@ -39,6 +49,20 @@ const gironaEsExpenseLinesByYear = {
     {"rawLabel":"Pérdidas, deterioro y variación de provisiones por operaciones comerciales (residuo contra el subtotal impreso, ver comentario de cabecera)","normalizedCategory":"other_expenses","amountNative":-5.957272,"disclosureLevel":"summary"},
     {"rawLabel":"Otros gastos de gestión corriente","normalizedCategory":"admin_general_expense","amountNative":-0.3535,"disclosureLevel":"detailed"},
     {"rawLabel":"Amortización del inmovilizado (sin separar jugadores del resto)","normalizedCategory":"player_amortisation","amountNative":-5.016471,"disclosureLevel":"summary"},
+  ],
+  2021: [
+    {"rawLabel":"a) Compras, netas devol. y dto. de las cuales:","normalizedCategory":"other_expenses","amountNative":-0.537165,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Variación de existencias","normalizedCategory":"other_expenses","amountNative":0.208463,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Consumo de materias primas y otras materias consumibles","normalizedCategory":"other_expenses","amountNative":-0.036536,"disclosureLevel":"aggregated"},
+    {"rawLabel":"d) Deterioro de mercaderías, materias primas y otros aprovisionamientos","normalizedCategory":"other_expenses","amountNative":-0.116198,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) Sueldos, salarios y asimilados","normalizedCategory":"wages_squad","amountNative":-13.5401,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Cargas sociales","normalizedCategory":"wages_squad","amountNative":-0.950571,"disclosureLevel":"aggregated"},
+    {"rawLabel":"c) Provisiones","normalizedCategory":"wages_squad","amountNative":0.166039,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) Servicios exteriores","normalizedCategory":"admin_general_expense","amountNative":-5.804419,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Tributos","normalizedCategory":"admin_general_expense","amountNative":-0.122126,"disclosureLevel":"aggregated"},
+    {"rawLabel":"c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales","normalizedCategory":"other_expenses","amountNative":-5.610583,"disclosureLevel":"aggregated"},
+    {"rawLabel":"d) Otros gastos de gestión corriente","normalizedCategory":"admin_general_expense","amountNative":-0.195775,"disclosureLevel":"aggregated"},
+    {"rawLabel":"8. Amortización del inmovilizado","normalizedCategory":"player_amortisation","amountNative":-3.965842,"disclosureLevel":"aggregated"},
   ],
   2022: [
     {"rawLabel":"- Nacionales","normalizedCategory":"other_expenses","amountNative":-0.214182,"disclosureLevel":"aggregated"},
@@ -83,6 +107,7 @@ const gironaEsExpenseLinesByYear = {
 
 const gironaEsFiscalYearMeta = {
   2020: {"currency":"EUR","sourceId":"girona-es-cuentas-anuales-2019-20","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2020-06-30","profitOnPlayerSales":17.002692,"assetSales":0,"netInterest":-0.041956,"tax":-0.025772,"grossDebt":3.167,"cash":3.856412,"officialTotalRevenue":26.906411,"officialTotalExpenses":43.875455,"officialPAT":-0.03408},
+  2021: {"currency":"EUR","sourceId":"girona-es-cuentas-anuales-2020-2021","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2021-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.221731,"tax":2.318766,"grossDebt":null,"cash":null,"officialTotalRevenue":21.609729,"officialTotalExpenses":30.504812,"officialPAT":-6.798048,"extraRows":[{"label":"a) Por deudas con empresas del grupo y asociadas","value":-0.063597},{"label":"b) Por deudas con terceros","value":-0.157526},{"label":"17. Diferencias de cambio","value":-0.000608},{"label":"20. Impuestos sobre beneficios","value":2.318766}],"sinDesglose":[{"renglon":"a) Ventas","lado":"revenue","importe":0.439514,"motivo":"Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2020-21: a) Ventas como bolsón lump_football_operations, igual que Girona 2020 y 2025"}]},
   2022: {"currency":"EUR","sourceId":"girona-es-cuentas-anuales-2021-2022","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2022-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.53184,"tax":3.92802,"grossDebt":null,"cash":null,"officialTotalRevenue":16.651759,"officialTotalExpenses":32.065604,"officialPAT":-12.017664,"extraRows":[{"label":"b 2) De terceros","value":0.00975},{"label":"a) Por deudas con empresas del grupo y asociadas","value":-0.04125},{"label":"b) Por deudas con terceros","value":-0.490825},{"label":"17. Diferencias de cambio","value":-0.009515},{"label":"20. Impuestos sobre beneficios","value":3.92802}],"sinDesglose":[{"renglon":"a) Ventas","lado":"revenue","importe":2.495814,"motivo":"Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2021-22: a) Ventas como bolsón, igual que 2020 y 2025"}]},
   2023: {"currency":"EUR","sourceId":"girona-es-cuentas-anuales-2022-2023","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.773606,"tax":-0.254669,"grossDebt":null,"cash":null,"officialTotalRevenue":64.54342,"officialTotalExpenses":62.839541,"officialPAT":0.675604,"extraRows":[{"label":"b 2) De terceros","value":0.00271},{"label":"a) Por deudas con empresas del grupo y asociadas","value":-0.6688},{"label":"b) Por deudas con terceros","value":-0.091945},{"label":"17. Diferencias de cambio","value":-0.015571},{"label":"20. Impuestos sobre beneficios","value":-0.254669}],"sinDesglose":[{"renglon":"a) Ventas","lado":"revenue","importe":6.745909,"motivo":"Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2022-23: a) Ventas como bolsón, igual que 2020 y 2025"}]},
   2025: {"currency":"EUR","sourceId":"girona-es-informe-auditoria-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":22.560578,"assetSales":0,"netInterest":-1.004234,"tax":-5.502496,"grossDebt":47.221,"cash":11.121773,"officialTotalRevenue":143.945001,"officialTotalExpenses":143.503997,"officialPAT":16.494852},
@@ -102,7 +127,7 @@ window.CLUB_GENERIC_DATA["girona-es"] = {
   presupuestoOverlayByYear: gironaEsPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"girona-es-cuentas-anuales-2019-20":{"id":"girona-es-cuentas-anuales-2019-20","clubId":"girona-es","title":"Cuentas Anuales, Ejercicio cerrado el 30 de junio de 2020 (depósito estándar Registro Mercantil)","type":"official_balance_sheet","reliability":"primary"},"girona-es-informe-auditoria-cuentas-anuales-2024-25":{"id":"girona-es-informe-auditoria-cuentas-anuales-2024-25","clubId":"girona-es","title":"Informe de Auditoría y Cuentas Anuales 2024-2025","type":"official_balance_sheet","reliability":"primary"},"girona-es-cuentas-anuales-2021-2022":{"id":"girona-es-cuentas-anuales-2021-2022","clubId":"girona-es","title":"Girona Futbol Club, S.A.D. — cuentas-anuales-2021-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"},"girona-es-cuentas-anuales-2022-2023":{"id":"girona-es-cuentas-anuales-2022-2023","clubId":"girona-es","title":"Girona Futbol Club, S.A.D. — cuentas-anuales-2022-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"girona-es-cuentas-anuales-2019-20":{"id":"girona-es-cuentas-anuales-2019-20","clubId":"girona-es","title":"Cuentas Anuales, Ejercicio cerrado el 30 de junio de 2020 (depósito estándar Registro Mercantil)","type":"official_balance_sheet","reliability":"primary"},"girona-es-informe-auditoria-cuentas-anuales-2024-25":{"id":"girona-es-informe-auditoria-cuentas-anuales-2024-25","clubId":"girona-es","title":"Informe de Auditoría y Cuentas Anuales 2024-2025","type":"official_balance_sheet","reliability":"primary"},"girona-es-cuentas-anuales-2021-2022":{"id":"girona-es-cuentas-anuales-2021-2022","clubId":"girona-es","title":"Girona Futbol Club, S.A.D. — cuentas-anuales-2021-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"},"girona-es-cuentas-anuales-2022-2023":{"id":"girona-es-cuentas-anuales-2022-2023","clubId":"girona-es","title":"Girona Futbol Club, S.A.D. — cuentas-anuales-2022-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"},"girona-es-cuentas-anuales-2020-2021":{"id":"girona-es-cuentas-anuales-2020-2021","clubId":"girona-es","title":"Girona Futbol Club, S.A.D. — cuentas-anuales-2020-2021 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary"}});
 
 gestionesByClub["girona-es"] = {"actual":{"nombre":"Gestión actual","firstYear":2020,"lastYear":2025}};
 

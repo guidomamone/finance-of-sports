@@ -40,6 +40,13 @@
       "title": "Girona Futbol Club, S.A.D. — cuentas-anuales-2022-2023 (ejercicio 2023)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "girona-es-cuentas-anuales-2020-2021",
+      "club_id": "girona-es",
+      "title": "Girona Futbol Club, S.A.D. — cuentas-anuales-2020-2021 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2020,"last_year":2025}],
@@ -132,6 +139,123 @@
       ],
       "financial": {"profit_on_player_sales":17.002692,"asset_sales":0,"net_interest":-0.041956,"tax":-0.025772,"gross_debt":3.167,"cash":3.856412},
       "official_totals": {"revenue":26.906411,"expenses":43.875455,"net_result":-0.03408}
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "girona-es-cuentas-anuales-2020-2021",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"a) Ventas","category":"undisclosed","subcategory":"lump_football_operations","amount":0.439514,"disclosure":"aggregated"},
+        {"label":"b) Prestaciones de servicios","category":"other_revenue","subcategory":"other_income","amount":10.280324,"disclosure":"aggregated"},
+        {
+          "label": "a) Ingresos accesorios y otros de gestión corriente",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 1.532552,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.122984,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.20503,
+          "disclosure": "aggregated"
+        },
+        {"label":"10. Excesos de provisiones","category":"other_revenue","subcategory":"other_income","amount":0.026219,"disclosure":"aggregated"},
+        {
+          "label": "b) Resultados por enajenaciones y otras",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 8.495649,
+          "disclosure": "aggregated"
+        },
+        {"label":"13. Otros resultados","category":"other_revenue","subcategory":"other_income","amount":0.507457,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "a) Compras, netas devol. y dto. de las cuales:",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.537165,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Variación de existencias",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": 0.208463,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Consumo de materias primas y otras materias consumibles",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.036536,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.116198,
+          "disclosure": "aggregated"
+        },
+        {"label":"a) Sueldos, salarios y asimilados","category":"first_team_staff","subcategory":"wages_squad","amount":-13.5401,"disclosure":"aggregated"},
+        {"label":"b) Cargas sociales","category":"first_team_staff","subcategory":"wages_squad","amount":-0.950571,"disclosure":"aggregated"},
+        {"label":"c) Provisiones","category":"first_team_staff","subcategory":"wages_squad","amount":0.166039,"disclosure":"aggregated"},
+        {"label":"a) Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-5.804419,"disclosure":"aggregated"},
+        {"label":"b) Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.122126,"disclosure":"aggregated"},
+        {
+          "label": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -5.610583,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "d) Otros gastos de gestión corriente",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.195775,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "8. Amortización del inmovilizado",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3.965842,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.221731,"tax":2.318766,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":21.609729,"expenses":30.504812,"net_result":-6.798048},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"a) Por deudas con empresas del grupo y asociadas","amount":-0.063597},
+          {"label":"b) Por deudas con terceros","amount":-0.157526},
+          {"label":"17. Diferencias de cambio","amount":-0.000608},
+          {"label":"20. Impuestos sobre beneficios","amount":2.318766}
+        ],
+        "no_breakdown": [
+          {
+            "line": "a) Ventas",
+            "side": "revenue",
+            "amount": 0.439514,
+            "reason": "Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2020-21: a) Ventas como bolsón lump_football_operations, igual que Girona 2020 y 2025"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2022,

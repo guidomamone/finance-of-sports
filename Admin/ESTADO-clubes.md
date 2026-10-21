@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 320 clubes, 1318 ejercicios, 23 países.
+TOTAL: 320 clubes, 1323 ejercicios, 23 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -70,7 +70,7 @@ BE (23)
   Mechelen              1 ejercicio (2024/2025), balance, EUR
   OH Leuven             6 ejercicios (2018/2019, 2019/2020, 2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Patro Eisden          13 ejercicios (2012/2013 a 2024/2025), balance, EUR
-  RAAL La Louvière      7 ejercicios (2017/2018, 2018/2019, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
+  RAAL La Louvière      8 ejercicios (2017/2018 a 2024/2025), balance, EUR
   RWDM                  6 ejercicios (2019/2020 a 2024/2025), balance, EUR
   Sint-Truiden          1 ejercicio (2024/2025), balance, EUR
   Standard Liège        1 ejercicio (2024/2025), balance, EUR
@@ -100,14 +100,14 @@ BRASIL (42)
   Flamengo              2 ejercicios (2024 a 2025), balance, BRL
   Fluminense            2 ejercicios (2024 a 2025), balance, BRL
   Fortaleza             1 ejercicio (2025), balance, BRL
-  Goiás                 16 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2020, 2021, 2022, 2023, 2024, 2025), balance, BRL
+  Goiás                 18 ejercicios (2008 a 2025), balance, BRL
   Grêmio                2 ejercicios (2024 a 2025), balance, BRL
   Guarani               2 ejercicios (2024 a 2025), balance, BRL
   Internacional         2 ejercicios (2024 a 2025), balance, BRL
   Ituano                1 ejercicio (2024), balance, BRL
   Juventude             2 ejercicios (2020 a 2021), balance, BRL
   Mirassol              1 ejercicio (2024), balance, BRL
-  Novorizontino         14 ejercicios (2010, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025), balance, BRL
+  Novorizontino         15 ejercicios (2010, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025), balance, BRL
   Operário Ferroviário  2 ejercicios (2024 a 2025), balance, BRL
   Palmeiras             2 ejercicios (2024 a 2025), balance, BRL
   Paysandu              4 ejercicios (2021, 2023, 2024, 2025), balance, BRL
@@ -195,7 +195,7 @@ ESPAÑA (19)
   Elche CF            2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   FC Barcelona        1 ejercicio (2024/2025), balance, EUR
   Getafe CF           2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  Girona FC           4 ejercicios (2019/2020, 2021/2022, 2022/2023, 2024/2025), balance, EUR
+  Girona FC           5 ejercicios (2019/2020, 2020/2021, 2021/2022, 2022/2023, 2024/2025), balance, EUR
   Levante UD          1 ejercicio (2024/2025), balance, EUR
   Rayo Vallecano      1 ejercicio (2024/2025), balance, EUR
   RCD Espanyol        2 ejercicios (2023/2024 a 2024/2025), balance, EUR

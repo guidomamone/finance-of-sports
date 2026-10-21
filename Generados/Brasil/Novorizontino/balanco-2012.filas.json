@@ -1,0 +1,282 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2012.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2012.md",
+ "mdSha1": "10ca9e4ab18f05b034da7d116afc5df493660db7",
+ "ubicacionSha1": "bcfb4d1a11a80c49e558fe1ed429e8c0d4a47d44",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T14:32:47.585Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columna 'Valor (R$)' (L37) con importes con centavos (ej. 1.301.688,36); no hay indicación de miles."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 39,
+   "etiqueta": "RECEITA BRUTA OPERACIONAL",
+   "actual": "1.301.688,36",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 40,
+   "etiqueta": "DOACOES RECEBIDAS",
+   "actual": "23.534,18",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 41,
+   "etiqueta": "SUBVENCÕES E CONVÊNIOS MUNICIPAL",
+   "actual": "119.142,62",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 42,
+   "etiqueta": "RECEITA PATROCINIO E PUBLICIDADE",
+   "actual": "711.565,33",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 43,
+   "etiqueta": "RECEITA DE LOCAÇÃO DE CADEIRAS DE ASSOCIADOS",
+   "actual": "43.847,05",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 44,
+   "etiqueta": "VENDAS DE INGRESSOS",
+   "actual": "387.359,18",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 45,
+   "etiqueta": "CONVENIO PREF. MUN. CMDCA",
+   "actual": "12.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 46,
+   "etiqueta": "DIREITOS FEDERATIVOS DE ATLETAS",
+   "actual": "4.240,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 47,
+   "etiqueta": "RECEITA LIQUIDA OPERACIONAL",
+   "actual": "1.301.688,36",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 48,
+   "etiqueta": "RECEITA LIQUIDA SERVICOS",
+   "actual": "1.301.688,36",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 49,
+   "etiqueta": "LUCRO BRUTO DE SERVICOS",
+   "actual": "1.301.688,36",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 50,
+   "etiqueta": "DESPESAS/RECEITAS OPERACIONAIS",
+   "actual": "(1.343.485,82)",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 51,
+   "etiqueta": "DESPESAS ADMINISTRATIVAS",
+   "actual": "(563.752,55)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 52,
+   "etiqueta": "DESPESAS TRIBUTARIAS",
+   "actual": "(3.526,86)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 53,
+   "etiqueta": "DESPESAS FINANCEIRAS",
+   "actual": "(3.629,05)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 54,
+   "etiqueta": "DESPESAS OPERACIONAIS",
+   "actual": "(641.611,65)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 55,
+   "etiqueta": "RECEITAS FINANCEIRAS",
+   "actual": "216,41",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 56,
+   "etiqueta": "CONVENIO PREF.N.HORIZ. 08/2012- ESCOLA FUTEBOL",
+   "actual": "(131.182,12)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 57,
+   "etiqueta": "OPERACIONAL",
+   "actual": "(41.797,46)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 58,
+   "etiqueta": "ANTES DA CONTRIBUICAO SOCIAL",
+   "actual": "(41.797,46)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 59,
+   "etiqueta": "ANTES DO IMPOSTO DE RENDA",
+   "actual": "(41.797,46)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 60,
+   "etiqueta": "LIQUIDO",
+   "actual": "(41.797,46)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 39,
+  "actual": "1.301.688,36"
+ },
+ "total_gastos": {
+  "linea": 50,
+  "actual": "(1.343.485,82)"
+ },
+ "resultado": {
+  "linea": 60,
+  "actual": "(41.797,46)",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma en el PDF que las etiquetas y cifras de L39-L60 coinciden con el original, dado que la tabla fue reordenada desde OCR que separaba etiqueta y cifra (L35)?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "",
+   "texto": "L35 indica que la tabla se reconstruyó emparejando etiquetas y cifras separadas por el OCR; un desfase cambiaría importes por renglón.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que el estado no tiene columna del año anterior y se carga anterior = null?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado L37 solo muestra 'Valor (R$)'.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados de 2012 en reales (unidades), sin columna comparativa. Ingresos L40-L46 suman 1.301.688,36 (= L39). Gastos L51-L56 netos suman (1.343.485,82) (= L50) incluyendo RECEITAS FINANCEIRAS positivas y el convenio escola futebol como gasto. Resultado neto (41.797,46). No hay notas de desglose."
+}

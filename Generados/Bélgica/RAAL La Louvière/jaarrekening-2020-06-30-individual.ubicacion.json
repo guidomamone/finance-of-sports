@@ -1,213 +1,505 @@
 {
  "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.md",
- "mdSha1": "1496e02527bdc16059c6f1e3a6ff282333640b1e",
+ "mdSha1": "d4b3e0c31c95f88efe223388b58f9f536e46b9ca",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T20:56:51.339Z",
+ "generado": "2026-10-21T14:33:11.712Z",
  "perimetroClub": "individual",
  "bloques": {
   "b1": {
    "pagina": 1,
    "lineas": [
-    28,
-    36
+    3,
+    5
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b2": {
-   "pagina": 10,
+   "pagina": 3,
    "lineas": [
-    519,
-    546
+    76,
+    77
    ],
    "tipo": "tabla"
   },
   "b3": {
-   "pagina": 11,
+   "pagina": 4,
    "lineas": [
-    552,
-    557
+    157,
+    158
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b4": {
-   "pagina": 11,
+   "pagina": 5,
    "lineas": [
-    579,
-    583
+    258,
+    259
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b5": {
-   "pagina": 11,
+   "pagina": 6,
    "lineas": [
-    587,
-    589
+    351,
+    352
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b6": {
-   "pagina": 11,
+   "pagina": 7,
    "lineas": [
-    597,
-    602
+    466,
+    467
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b7": {
-   "pagina": 13,
+   "pagina": 8,
    "lineas": [
-    777,
-    781
+    563,
+    564
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b8": {
-   "pagina": 13,
+   "pagina": 9,
    "lineas": [
-    787,
-    790
+    572,
+    573
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b9": {
-   "pagina": 17,
+   "pagina": 10,
    "lineas": [
-    1050,
-    1055
+    594,
+    595
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b10": {
-   "pagina": 17,
+   "pagina": 10,
    "lineas": [
-    1058,
-    1067
+    601,
+    628
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b11": {
-   "pagina": 17,
+   "pagina": 11,
    "lineas": [
-    1070,
-    1079
+    634,
+    635
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b12": {
-   "pagina": 19,
+   "pagina": 11,
    "lineas": [
-    1145,
-    1149
+    637,
+    686
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b13": {
-   "pagina": 19,
+   "pagina": 12,
    "lineas": [
-    1153,
-    1157
+    692,
+    693
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b14": {
-   "pagina": 24,
+   "pagina": 12,
    "lineas": [
-    1380,
-    1382
+    697,
+    726
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b15": {
-   "pagina": 25,
+   "pagina": 13,
    "lineas": [
-    1414,
-    1416
+    732,
+    733
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b16": {
-   "pagina": 26,
+   "pagina": 13,
    "lineas": [
-    1448,
-    1450
+    737,
+    753
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b17": {
-   "pagina": 27,
+   "pagina": 14,
    "lineas": [
-    1480,
-    1482
+    759,
+    760
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b18": {
-   "pagina": 28,
+   "pagina": 14,
    "lineas": [
-    1516,
-    1518
+    772,
+    776
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b19": {
-   "pagina": 29,
+   "pagina": 14,
    "lineas": [
-    1558,
-    1560
+    784,
+    791
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b20": {
-   "pagina": 30,
+   "pagina": 14,
    "lineas": [
-    1576,
-    1580
+    793,
+    807
    ],
    "tipo": "tabla"
   },
   "b21": {
-   "pagina": 30,
+   "pagina": 15,
    "lineas": [
-    1582,
-    1605
+    813,
+    814
    ],
    "tipo": "tabla"
   },
   "b22": {
-   "pagina": 31,
+   "pagina": 15,
    "lineas": [
-    1628,
-    1643
+    822,
+    825
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 15,
+   "lineas": [
+    833,
+    837
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 15,
+   "lineas": [
+    845,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 15,
+   "lineas": [
+    856,
+    876
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 16,
+   "lineas": [
+    882,
+    883
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 16,
+   "lineas": [
+    891,
+    895
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 16,
+   "lineas": [
+    903,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 16,
+   "lineas": [
+    915,
+    920
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 16,
+   "lineas": [
+    926,
+    927
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 16,
+   "lineas": [
+    933,
+    957
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 17,
+   "lineas": [
+    963,
+    964
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 17,
+   "lineas": [
+    1026,
+    1052
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 18,
+   "lineas": [
+    1058,
+    1059
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 18,
+   "lineas": [
+    1091,
+    1100
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 19,
+   "lineas": [
+    1106,
+    1107
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 19,
+   "lineas": [
+    1147,
+    1160
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 19,
+   "lineas": [
+    1164,
+    1166
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 19,
+   "lineas": [
+    1180,
+    1182
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 19,
+   "lineas": [
+    1188,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 20,
+   "lineas": [
+    1196,
+    1197
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 20,
+   "lineas": [
+    1205,
+    1208
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 21,
+   "lineas": [
+    1214,
+    1215
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 21,
+   "lineas": [
+    1235,
+    1241
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 21,
+   "lineas": [
+    1247,
+    1249
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 21,
+   "lineas": [
+    1265,
+    1267
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 22,
+   "lineas": [
+    1273,
+    1274
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 23,
+   "lineas": [
+    1392,
+    1393
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 24,
+   "lineas": [
+    1426,
+    1428
    ],
    "tipo": "texto"
+  },
+  "b50": {
+   "pagina": 25,
+   "lineas": [
+    1461,
+    1463
+   ],
+   "tipo": "texto"
+  },
+  "b51": {
+   "pagina": 26,
+   "lineas": [
+    1497,
+    1499
+   ],
+   "tipo": "texto"
+  },
+  "b52": {
+   "pagina": 27,
+   "lineas": [
+    1529,
+    1533
+   ],
+   "tipo": "texto"
+  },
+  "b53": {
+   "pagina": 28,
+   "lineas": [
+    1572,
+    1574
+   ],
+   "tipo": "texto"
+  },
+  "b54": {
+   "pagina": 29,
+   "lineas": [
+    1612,
+    1614
+   ],
+   "tipo": "texto"
+  },
+  "b55": {
+   "pagina": 30,
+   "lineas": [
+    1624,
+    1625
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 30,
+   "lineas": [
+    1639,
+    1643
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 30,
+   "lineas": [
+    1676,
+    1696
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 31,
+   "lineas": [
+    1702,
+    1703
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 31,
+   "lineas": [
+    1715,
+    1718
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 31,
+   "lineas": [
+    1743,
+    1756
+   ],
+   "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
+ "sin_estado": false,
+ "estado": [
+  "b14"
+ ],
  "notas_ingresos": [],
  "notas_gastos": [],
  "escala": "unidades",
- "escala_evidencia": "COMPTES ANNUELS EN EUROS (b1)",
+ "escala_evidencia": "Modelo normalizado BNB abreviado en EUR (encabezado 'EUR' en b1); los importes se expresan en euros.",
  "moneda": "EUR",
  "columna_ejercicio": "Exercice",
  "columna_anterior": "Exercice précédent",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿El PDF trae en la página 12 un 'Compte de résultats' (A 4) del ejercicio al 30-06-2020 que la transcripción no capturó?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice salta del bilan (pág. 10-11) a affectations et prélèvements (pág. 13). La página 12, donde iría el compte de résultats en el modelo belga, no tiene ningún bloque con cifras.",
-   "bloques": [
-    "b2",
-    "b6",
-    "b7"
-   ],
-   "afecta_carga": true
-  }
- ],
- "observaciones": "Cuentas anuales individuales (modelo abreviado BNB) de RAAL La Louvière, ejercicio del 01-07-2019 al 30-06-2020, en euros. En el índice aparecen el balance (b2-b6), affectations (b7-b8), deudas (b9-b11), garantías (b12-b13), el informe del auditor (b14-b19) y el bilan social (b20-b22). No hay ningún bloque del compte de résultats: probablemente está en la pág. 12 y no se transcribió. Hasta revisarlo en el PDF, se marca sin_estado. El bilan social (b20) trae los frais de personnel, pero no es el estado de resultados."
+ "dudas": [],
+ "observaciones": "Comptes annuels abrégés (modèle BNB) de la société individual. El estado de resultados es b14 (pág. 12), que arranca con la 'Marge brute d'exploitation' (modelo abreviado, sin abrir chiffre d'affaires). b35 solo trae personal medio (9087: 12,7 / 12,4) y códigos de resultados no recurrentes vacíos, así que no desglosa importes. b56 trae datos de personal del balance social (efectivos, horas, frais de personnel), pero no se elige porque es un cuadro del bilan social y no una nota que desglose un renglón del estado. Los bloques b16 (affectations), b10/b12 (balance), b18-b31 (inmovilizado) y b33 (deudas) quedan excluidos."
 }

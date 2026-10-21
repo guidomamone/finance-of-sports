@@ -3,8 +3,9 @@
  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.md",
  "mdSha1": "ce1058ab7d8712c642c42a52019d35560abe9205",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T14:04:28.363Z",
+ "generado": "2026-10-21T14:33:58.922Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 6,
@@ -261,12 +262,14 @@
  ],
  "notas_ingresos": [
   "b23",
-  "b27"
+  "b27",
+  "b28"
  ],
  "notas_gastos": [
   "b24",
   "b25",
-  "b26"
+  "b26",
+  "b29"
  ],
  "escala": "unidades",
  "escala_evidencia": "(EM REAIS)",
@@ -277,11 +280,11 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro 'Resultado por atividade' (nota 22, b28-b29), por repetir por segmento importes ya abiertos en las notas 17 a 21?",
+   "pregunta": "¿Se cargan los cuadros 'Resultado por atividade' (b28-b29) por segmento para abrir Futebol de base y Social e administrativo?",
    "propuesta": "sí",
    "tema": "usar-cuadro-por-segmento",
    "renglon": "",
-   "texto": "El cuadro por actividad (futebol profissional, base, social) parece repetir los renglones de las notas 17-21; solo serviría si abre algún renglón no desglosado (p.ej. custos com pessoal dentro de Custos com futebol).",
+   "texto": "El reintento pide filas de otras secciones; la nota 22 separa futebol profissional, base y social/administrativo, que el estado no abre.",
    "bloques": [
     "b28",
     "b29"
@@ -289,5 +292,5 @@
    "afecta_carga": true
   }
  ],
- "observaciones": "Estado individual del Goiás Esporte Clube en reais. b2 es la DRE; b23 abre Receita líquida, b24 Custos com futebol, b25 Despesas administrativas, b26 Serviços de terceiros, b27 Resultado financeiro. b3 es el resultado abrangente (no se carga)."
+ "observaciones": "Estado de resultados individual de Goiás Esporte Clube en b2 (reales, unidades). Notas 17-21 abren receita, custos, despesas y resultado financiero. Nota 22 (b28 ingresos, b29 costos y gastos) es cuadro por actividad: incluido por pedido de otras secciones deportivas (futebol de base, social)."
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "novorizontino-br",
@@ -110,6 +110,13 @@
       "title": "Grêmio Novorizontino Sociedade Anônima do Futebol — balanco-2015 (ejercicio 2015)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "novorizontino-br-balanco-2012",
+      "club_id": "novorizontino-br",
+      "title": "Grêmio Novorizontino Sociedade Anônima do Futebol — balanco-2012 (ejercicio 2012)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "members": null,
@@ -145,6 +152,67 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.001691,"tax":0,"gross_debt":0.5353,"cash":0.000014},
       "official_totals": {"revenue":0.13035,"expenses":0.163946,"net_result":-0.035287}
+    },
+    {
+      "fiscal_year": 2012,
+      "period_end": "2012-12-31",
+      "currency": "BRL",
+      "source_id": "novorizontino-br-balanco-2012",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2012-12-31"},
+      "revenue": [
+        {"label":"DOACOES RECEBIDAS","category":"other_revenue","subcategory":"other_income","amount":0.023534,"disclosure":"aggregated"},
+        {"label":"SUBVENCÕES E CONVÊNIOS MUNICIPAL","category":"other_revenue","subcategory":"other_income","amount":0.119143,"disclosure":"aggregated"},
+        {
+          "label": "RECEITA PATROCINIO E PUBLICIDADE",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.711565,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "RECEITA DE LOCAÇÃO DE CADEIRAS DE ASSOCIADOS",
+          "category": "season_tickets",
+          "subcategory": "season_tickets",
+          "amount": 0.043847,
+          "disclosure": "aggregated"
+        },
+        {"label":"VENDAS DE INGRESSOS","category":"matchday","subcategory":"matchday_competition","amount":0.387359,"disclosure":"aggregated"},
+        {"label":"CONVENIO PREF. MUN. CMDCA","category":"other_revenue","subcategory":"other_income","amount":0.012,"disclosure":"aggregated"},
+        {"label":"DIREITOS FEDERATIVOS DE ATLETAS","category":"player_transfers","subcategory":"player_sales","amount":0.00424,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"DESPESAS ADMINISTRATIVAS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.563753,"disclosure":"aggregated"},
+        {"label":"DESPESAS TRIBUTARIAS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.003527,"disclosure":"aggregated"},
+        {
+          "label": "DESPESAS OPERACIONAIS",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -0.641612,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "CONVENIO PREF.N.HORIZ. 08/2012- ESCOLA FUTEBOL",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.131182,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003413,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.301688,"expenses":1.340073,"net_result":-0.041797},
+      "adjustments": {
+        "extra_rows": [{"label":"DESPESAS FINANCEIRAS","amount":-0.003629},{"label":"RECEITAS FINANCEIRAS","amount":0.000216}],
+        "no_breakdown": [
+          {
+            "line": "DESPESAS OPERACIONAIS",
+            "side": "expense",
+            "amount": 0.641612,
+            "reason": "Claude 2026-10-21: DESPESAS OPERACIONAIS (641.611,65) es el gasto operativo del club sin desglose en el estado (.md L95-97): fútbol sin desglosar, como los otros años de Novorizontino sin detalle"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2013,
