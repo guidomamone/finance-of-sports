@@ -1518,9 +1518,3 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
 
 - **Juventude 2021**: tiene planes de sócio-torcedor (Jaconero; búsqueda web), pero "Receitas Patrimoniais" y "Outras Receitas" no desglosan dónde registra las mensalidades. ¿En qué línea del balance están?
 - **Ponte Preta 2025**: tiene el programa "Torcedor Camisa 10+" (19.130 sócios-torcedores según el Torcedômetro). ¿Las mensalidades están en "Social / Outras" (2.692.000 en 2025)?
-
-## FC Emmen (`fcemmen-nl`), Países Bajos — to-do 359, sesión 2026-10-21
-
-- **Informe del auditor (controleverklaring) 2019-20 y 2020-21**: el documento que tenemos (7 páginas) no lo trae. La jaarrekening completa está en
-  el Handelsregister de la KvK, pero se compra (€3,90 cada una) y no se compran documentos. Pedírsela al club: ¿pueden mandar la jaarrekening
-  depositada de esos dos ejercicios, con la controleverklaring?
