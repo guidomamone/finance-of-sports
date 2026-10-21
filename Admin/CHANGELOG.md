@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 890 — Informes de 7 ligas más; el link propio publicado (2026-10-20) [336 · 241]
+
+- 336: `data/informes.js` pasa de 3 a 10 informes públicos con una cifra leída del documento: DFL, LaLiga, ReportCalcio, EY Brasil, Toppfotballbarometeret, Supersociedades y J.League. Sin informe usable en otras 16 ligas (`Admin/sesiones/datos-sourcing.md`). US$ 0. ASSET_V 1535.
+- 241: publicado; el depurador de Facebook muestra la tarjeta con imagen, título y descripción, y Google rastrea la página bien.
+
 ## Versión 889 — Skill de arranque con las páginas de club y liga (2026-10-20) [241 · 247]
 
 - La skill de arranque (sección 5) nombra `generate-club-pages` entre los generadores y en lo que exige subir `ASSET_V` (ok de Guido). 247 en marcha (Pantallas 7).

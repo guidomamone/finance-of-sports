@@ -28,29 +28,29 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 241: publicado y andando; falta que Guido pruebe el link en el depurador de Facebook (pide su cuenta)
+* Lo que está en marcha va marcado en cada bloque.
 
 **B. Pantallas y distribución**
-2. 247 (Pantallas 7): registro público de correcciones (ok de Guido a las 4 recomendaciones del plan)
+1. 247 (Pantallas 7): registro público de correcciones (ok de Guido a las 4 recomendaciones del plan)
 
 **C. Técnico**
-3. 336 (Sourcing 4): sumar a `data/informes.js` los informes de cada liga ya cargada (hoy solo Inglaterra y Europa), y un paso de skill para buscarlos al abrir una liga (texto para tu ok)
-4. 327 (Pipeline 10): los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): cuáles van a hook o a audit.js
-5. 248: taxonomía genérica y subcategorías por deporte
-6. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
-7. 249: API en dominio propio (el último de C; no construirla todavía)
+2. 336: 10 informes cargados en Ligas; falta tu ok al paso de skill para buscarlos al abrir una liga
+3. 327 (Pipeline 10): los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): cuáles van a hook o a audit.js
+4. 248 (Datos 4, Opus): taxonomía genérica y subcategorías por deporte
+5. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+6. 249: API en dominio propio (el último de C; no construirla todavía)
 
 **D. Orden de la casa**
-8. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
-9. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
-10. 257: skills que faltan
-11. 237 al: anexo UEFA para abrir las ventas
-12. 258: índice partido por país o liga (cuando la skill de escala lo diga)
+7. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
+8. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
+9. 257: skills que faltan
+10. 237 al: anexo UEFA para abrir las ventas
+11. 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-13. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-14. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-15. 335: mails a clubes
+12. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+13. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+14. 335: mails a clubes
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -67,9 +67,6 @@ el número de la izquierda es el orden de trabajo.
        Más casos (lote 84): Sporting 2002 a 2007, cuadro de gestión de los proveitos (columna de resultados reales, mismo total que
        el estado): cargado con 45 ajustes `fila` (TV, taquilla, abonos, cuotas, sponsors, royalties, UEFA y un resto).
 
-241. LINK DEDICADO: LO QUE QUEDA (2026-10-20). `/club/<id>` y `/liga/<id>` ya están (páginas en `club/` y `liga/`, imagen en `og/`,
-   rewrite en `netlify.toml`). Falta, con el sitio publicado: el depurador de Facebook (sirve para WhatsApp) y la prueba de resultados
-   enriquecidos de Google con la URL pública (paso 4 de `Admin/mediciones/241-plan.md`).
 247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
    ni cuándo, dato por dato. Un registro público versionado.
 248. TAXONOMÍA GENÉRICA + SUBCATEGORÍAS POR DEPORTE (mejoras de proyecto, pedido de Guido 2026-10-16). Una capa genérica (ingresos y gastos operativos, deuda) y las subcategorías de cada

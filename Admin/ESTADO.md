@@ -160,7 +160,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   muestran en Ligas dentro de la tabla de ingresos con "(estimado)*", rango y error; el total de la liga los suma solo cuando más de la
   mitad tiene balance real, y la composición y el simulador usan solo lo real. Arriba de la tabla, "La liga en total, por categoría".
 - "Informes de esta liga" en Ligas (`data/informes.js`): informes de terceros sobre las finanzas de la liga, con quién lo publica, qué cubre,
-  una cifra con su fuente y el link al original; los de Europa arriba. Hoy: UEFA ECFIL, Deloitte ARFF e IFR (borrador). No sale en ligas sin ranking.
+  una cifra con su fuente y el link al original; los de Europa arriba. Cubre Europa, Inglaterra, Alemania, España, Italia, Brasil, Noruega, Colombia y Japón. No sale en ligas sin ranking.
 - Las listas de Wikipedia (`tools/club-league-reference/`) cubren 376 liga-años y guardan la posición final donde la tabla está completa.
 
 ### Finanzas multi-año
