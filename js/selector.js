@@ -1673,8 +1673,8 @@ window.CLUB_SELECTOR = (function(){
     }
     wrap.innerHTML = '';
     cols.forEach(function(c){ wrap.appendChild(c); });
-    // En celular la fila de chips se scrollea de costado: que arranque en lo más nuevo, como en Finanzas.
-    wrap.querySelectorAll('.fin-years-row').forEach(function(f){ f.scrollLeft = f.scrollWidth; });
+    // En celular la fila de chips se scrollea de costado: que arranque mostrando lo elegido, como en Finanzas.
+    wrap.querySelectorAll('.fin-years-row').forEach(function(f){ window.mostrarElegidosEnFila(f); });
     renderPie();
     renderControles();
     // Sin botón "Comparar": con los dos lados llenos, el resultado se arma solo y se rehace con cada cambio de un card.

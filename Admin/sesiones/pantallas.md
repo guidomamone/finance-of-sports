@@ -1,3 +1,24 @@
+# Sesión pantallas (Pantallas 7): 360, el ejercicio elegido a la vista en la fila de chips
+
+## Qué cambió (para CHANGELOG)
+- A 375 px la fila de chips de ejercicio de Comparar (y la de Finanzas, que tenía la misma línea) arrancaba siempre en lo más nuevo, y un ejercicio elegido
+  viejo (Juventus 19/20 en Comparar, `?anios=2019,2020` en Finanzas) quedaba fuera de vista. `mostrarElegidosEnFila()` nuevo en `js/finanzas-calc.js`:
+  arranca en lo más nuevo salvo que así no se vea ningún elegido; ahí, con el más viejo de los elegidos contra el borde izquierdo. Lo usan
+  `js/selector.js` y `js/finanzas-anios.js`. Regla en `Admin/PANTALLA.md`. ASSET_V 1704.
+- Verificado a 375 px: Comparar Juventus 19/20 contra 23/24 (lado A: 19/20, 20/21, 21/22; lado B: 22/23, 23/24, 24/25, como antes), Finanzas con los
+  ejercicios de siempre (22/23, 23/24, 24/25, como antes) y con `?anios=2019,2020` (18/19, 19/20, 20/21). Como archivo a 1280, sin errores. Escritorio: las
+  filas entran enteras, no cambia nada. `node tools/audit.js`: 0 P0, 0 P1.
+- Recorrido de `referencia/ux.md`: es el punto 6 (lo elegido a la vista); 1 a 5 no cambian (sin navegación, URL, foco ni carga nueva; sin scroll
+  horizontal de la página a 375).
+
+## Qué queda (para TODO)
+- Nada de esto. Al tocar un chip la fila se redibuja con la misma regla: si el visitante había corrido la fila, vuelve a lo más nuevo o al elegido más viejo.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 7): 360, lo que el sitio no cumplía de la guía de UX
 
 ## Qué cambió (para CHANGELOG)
