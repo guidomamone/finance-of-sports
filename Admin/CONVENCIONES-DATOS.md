@@ -613,6 +613,18 @@ Turnover impreso (11,6): el cierre contra el resultado operativo impreso (−£1
 CATEGORÍA (prompt): una revaluación no realizada de una inversión a valor razonable (Fair value movements), sin cobro, va a other_income con nota que lo aclare; nunca a asset_sales ni a una venta.
 EJEMPLO-CATEGORÍA: bathrugby-gb | revenue | Fair value movements | other_income
 
+## REGLA: la liberación de un goodwill negativo va a `exceptional_items`, del lado de los ingresos (votación 2 a 1, 2026-10-21, Falkirk 2024-25)
+
+Un goodwill negativo (bargain purchase: el club compra una sociedad por menos de lo que valen sus activos) que se libera al resultado es
+una ganancia contable única, sin caja. Va como ingreso en `exceptional_items`, con línea propia y su etiqueta textual («Release of
+negative goodwill»), aunque el estado la imprima entre paréntesis en el bloque de gastos. Nunca va neteado en gastos ni en
+`other_amortisation`, porque se leería como un gasto real menor. Lleva `publicNote` que diga que es una ganancia contable sin caja por la compra
+de qué sociedad. Si el estado y la nota no coinciden, manda el monto del estado, que es el que cierra con el resultado impreso
+(Falkirk: 940.244 en el estado, 940.224 en la nota). Votos: `exceptional_items` ×2, `other_income` ×1 (los dos caen en la misma fila
+genérica de ingresos). Leeds 2025 (el reverso neteado dentro de `other_operating_expenses`) es anterior y no se recategoriza.
+
+CATEGORÍA (prompt): la liberación de un goodwill negativo (Release of negative goodwill, bargain purchase) es una ganancia contable única sin caja: va a exceptional_items como ingreso en fila aparte, aunque el estado la imprima en el bloque de gastos; nunca a other_amortisation.
+
 ## REGLA: la liga de un año necesita dos fuentes independientes
 
 La página de la temporada en Wikipedia cuenta como una sola fuente. La otra sale de esta lista, en este orden: el sitio oficial de la liga o de la

@@ -736,3 +736,27 @@ Para una Auditora nueva sin mi contexto. Todo lo que decidí está en `Admin/reg
 ### Estado de mis commits
 
 - Todo lo mío está commiteado en `ligas`, sin push; la principal mergeó hasta `223ccc95d1`. Los scripts de medición de esta sesión están en el scratchpad (se pierden) salvo los tres de `Admin/mediciones/350-*`.
+
+## Auditora 6, 2026-10-21: qué cambió y qué queda
+
+Veredictos (todos en `Admin/registros/auditoria-proceso.jsonl`, sesión `auditora-6`):
+
+- 347, corrida de `registro-sin-lector`: 5 → 1. Cuatro registros cerrados a `Admin/Archive/` (con su entrada en el README).
+- 356, Fleetwood: los tres Jaymel van a descartados por precedente. Votación 3 a 0: regla nueva en CONVENCIONES-DATOS («Un consolidado de grupo con negocios ajenos al club», umbral del 10 % sobre lo impreso; 0 años cargados cambian).
+- 356, Falkirk 2024-25: votación 2 a 1, regla nueva en CONVENCIONES-DATOS («la liberación de un goodwill negativo va a `exceptional_items`»).
+- Pipeline 15: barrido de lecturas recortadas (4 veredictos), `segunda-fuente-liga.mjs` (aprobado con un cambio) y `falta_documento` en `auditoria.mjs` (aprobado con dos cambios).
+- Los P1 `faltantes-desfasado` y `estimados-desfasado` de un worktree pueden ser un enlace roto a un PDF renombrado en la principal. Se arregla con `node tools/worktree.mjs preparar <carpeta>`.
+
+### Qué queda
+
+- La línea de `PIPELINE.md` («Cola humana») para `Admin/registros/cola-borradores/`, con el texto exacto en el registro (línea `registro-sin-lector`). Con ella el código queda en 0. → regla (PIPELINE.md, la escribe la principal o Pipeline)
+- Freno de documentos de grupo en `perimetro-senales` o `cargar`: turnover por clase de negocio con el deporte del club por debajo del 90 %, o venta o compra de la sociedad del club en el ejercicio. Se espera que frene los 3 Jaymel y 0 de los 53 cargados. Pasa por la sección 7. → TODO 361
+- Nota de sourcing de Fleetwood: «Ejercicios útiles: Jaymel 2015/16-2023/24» es falso (fútbol 42 % en 2021-22); hoy lo único útil es Fleetwood Wanderers 2020-21. → TODO 356
+- EJEMPLO-CATEGORÍA de Falkirk en la regla del goodwill negativo, cuando el club esté en el sitio (`reglas-categoria.mjs --escribir`). → TODO 356
+- Pipeline 15, aprobados con cambios y sin confirmar: `jevDe` con todas las filas (ensayo de los 162 y lista de años de caja o deuda que cambian, cada uno con cita o revertido); `segunda-fuente-liga` con el título como palabra entera (medir 26/26 y 19/21); `falta_documento` con páginas 1..N sin saltos, las 13 sin .md propio citando el .md fuente del año y la migración de las 58 con `--check`. → TODO 362 (si Pipeline 15 cierra sin mandar los números)
+- Fixes de la Auditora 5 todavía sin codear (`outlier-liga`, `escala-implausible`, `signo-invertido`, `salto-interanual`, `gestion-club-inexistente`) y la próxima corrida de P2 y P3 (no saltear `registro-sin-lector` en las tres siguientes). → TODO 347
+- La tabla de filas del Formato simplificado en 0, no arrancada por pedido de la principal. → TODO 350
+- Escalón 0 de extraer desde las etiquetas iXBRL, EN PAUSA con la condición de la Auditora 5 (el estado de resultados, menos del 40 % del gasto: no se codea). → descartado mientras no cambie esa medición (backtest 22 de 67, 33 %)
+- Preguntas a Guido que dejó abiertas la Auditora 5 (tramo corto C o B, nota de COVID en los club-años ya cargados, Lierse) → TODO 355 (Lierse); las otras dos → TODO 362, a confirmar por la principal
+
+Commits de esta sesión en `ligas`, sin push: e0e31eda83, 9cb6c682df, 285d4b5f6c, bf2cfc3d76, b72d735bef, ba77d32aec, fd57b01f4e más este.
