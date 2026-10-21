@@ -29,7 +29,8 @@
 //   node tools/faltantes-liga.mjs --print    la medición: conteo por estado y por liga, y los nombres sin unir
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, statSync, unlinkSync } from 'node:fs';
-import { resolve, relative } from 'node:path';
+import { resolve, relative, join } from 'node:path';
+import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 import { todasLasCarpetas } from './carpetas-clubes.mjs';
 import { quien } from './quien.mjs';
@@ -38,7 +39,8 @@ const ROOT = resolve(import.meta.dirname, '..');
 const REF = resolve(ROOT, 'tools', 'club-league-reference');
 const RECIENTE_MESES = 9;   // Guido, 2026-10-17
 const REBUSCAR_MESES = 12;  // Guido, 2026-10-17
-const HOY = new Date();
+// A medianoche UTC del día: el archivo generado guarda esa fecha en su cabecera y `--check` recalcula con ELLA (no con la de hoy), así el calendario solo no lo deja viejo.
+let HOY = new Date(new Date().toISOString().slice(0, 10));
 
 // País (carpeta de Clubes/ y de Admin/sourcing/) de cada iso2 de las listas. Inglaterra trae clubes galeses en sus ligas.
 const PAISES = {
@@ -69,13 +71,8 @@ function listas() {
 // cierra entre septiembre y diciembre del año y (Sassuolo, los rusos: 31/12) es de la temporada que termina en y+1 (la categoría al cierre,
 // como data/club-leagues/); uno que cierra entre enero y agosto, de la que termina en y. En una liga de un año, ejercicio y = temporada y.
 const require_ = (await import('node:module')).createRequire(import.meta.url);
-const { cierreDelClub } = require_('./cierre-ejercicio.js');
 function clubsJs() { const s = { window: {} }; s.window.window = s.window; const ctx = vm.createContext(s); vm.runInContext(readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8'), ctx); return vm.runInContext('clubs', ctx); }
-export function temporada(club, y, partida, ci) {
-  if (!partida) return y;
-  const mes = Number((ci || cierreDelClub(club, y).slice(5)).slice(0, 2));
-  return mes >= 9 ? y + 1 : y; // julio y agosto son fin de temporada (Burnley cierra el 31/7)
-}
+export const { temporada } = require_('./temporada.js'); // la misma función que usa audit.js (ejercicio-sin-rastro)
 const cubre = (CI, CLUBS, id, anio, partida) => (CI[id]?.yrs || []).some(([y]) => temporada(CLUBS[id], y, partida, CI[id].ci?.[y]) === anio);
 const alias = () => { const p = resolve(REF, 'alias.json'); return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : {}; };
 const lineasArchivo = (p) => (existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter((l) => l.trim() && !l.startsWith('#')).map((l) => l.split(' # ')[0].trim()) : []);
@@ -217,15 +214,15 @@ export function calcular() {
 }
 
 // ---------------------------------------------------------------------------- salidas
-const CABECERA = '// GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).\n';
+const CABECERA = () => `// GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).\n// calculado: ${HOY.toISOString().slice(0, 10)}\n`;
 function salidas({ resultado, pendientes }) {
   const files = {};
   for (const [liga, ys] of Object.entries(resultado)) {
     const cuerpo = Object.entries(ys).map(([y, v]) => `  ${y}: ${JSON.stringify(v)},`).join('\n');
-    files[`data/faltantes/${liga}.js`] = `${CABECERA}window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};\nwindow.LEAGUE_GAPS[${JSON.stringify(liga)}] = {\n${cuerpo}\n};\n`;
+    files[`data/faltantes/${liga}.js`] = `${CABECERA()}window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};\nwindow.LEAGUE_GAPS[${JSON.stringify(liga)}] = {\n${cuerpo}\n};\n`;
   }
   const tier = (liga) => (/2|segunda|serieb|championship|1lig|1division|pervaya|fnl|eerste|primerab|league1|kleague2|superleague2/i.test(liga) ? 2 : /3|seriec|leagueone|liga3/i.test(liga) ? 3 : /seried|leaguetwo/i.test(liga) ? 4 : 1);
-  let md = `# Pendientes de sourcing por liga\n\nGENERADO por \`node tools/faltantes-liga.mjs\`: no editar a mano. Club-años que jugaron una liga con lista de equipos en\n\`tools/club-league-reference/\`, sin cargar, sin PDF en mano y sin búsqueda de los últimos ${REBUSCAR_MESES} meses (\`sin-buscar\`: nunca se buscó;\n\`rebuscar\`: el último chequeo es más viejo). Excluye los años cerrados hace menos de ${RECIENTE_MESES} meses. Orden: liga más alta, año más reciente.\n`;
+  let md = `# Pendientes de sourcing por liga\n\nGENERADO por \`node tools/faltantes-liga.mjs\` (calculado: ${HOY.toISOString().slice(0, 10)}): no editar a mano. Club-años que jugaron una liga con lista de equipos en\n\`tools/club-league-reference/\`, sin cargar, sin PDF en mano y sin búsqueda de los últimos ${REBUSCAR_MESES} meses (\`sin-buscar\`: nunca se buscó;\n\`rebuscar\`: el último chequeo es más viejo). Excluye los años cerrados hace menos de ${RECIENTE_MESES} meses. Orden: liga más alta, año más reciente.\n`;
   for (const pais of Object.keys(pendientes).sort()) {
     const clubes = Object.entries(pendientes[pais]).map(([n, p]) => ({ n, ...p, tier: Math.min(...p.anios.map((a) => tier(a.liga))), ult: Math.max(...p.anios.map((a) => a.anio)) }))
       .sort((a, b) => a.tier - b.tier || b.ult - a.ult || a.n.localeCompare(b.n));
@@ -257,14 +254,39 @@ function imprimir({ resultado, sinUnir, pendientes, aliasFaltan, aliasRotos }) {
   if (process.argv.includes('--sin-unir')) for (const [iso, s] of Object.entries(sinUnir)) console.log(`  ${iso}: ${[...s].sort().join(' | ')}`);
 }
 
+// La fecha con la que se calcularon los archivos que hay (la cabecera de data/faltantes/). Sin ella (archivos de antes de este cambio), se regenera una vez.
+function fechaGuardada() {
+  const dir = resolve(ROOT, 'data', 'faltantes'); if (!existsSync(dir)) return null;
+  for (const f of readdirSync(dir).filter((x) => x.endsWith('.js'))) { const m = readFileSync(resolve(dir, f), 'utf8').match(/^\/\/ calculado: (\d{4}-\d{2}-\d{2})$/m); if (m) return m[1]; }
+  return null;
+}
+// ¿Este worktree no tiene los enlaces a algún PDF que la carpeta principal ya tiene? Lo que sale de pdfsEnMano() depende de los PDF (no se trackean), así que un worktree sin
+// `preparar` ve otros "en-mano" que la principal y el archivo parece viejo sin que haya cambiado ninguna entrada.
+function faltaPreparar() {
+  let main; try { main = resolve(execFileSync('git', ['rev-parse', '--path-format=absolute', '--git-common-dir'], { cwd: ROOT, encoding: 'utf8' }).trim(), '..'); } catch { return false; }
+  if (main === ROOT || !existsSync(resolve(main, 'Clubes'))) return false;
+  const falta = (d) => { for (const e of readdirSync(d, { withFileTypes: true })) { const p = join(d, e.name); if (e.isDirectory()) { if (falta(p)) return true; } else if (/\.pdf$/i.test(e.name) && !existsSync(resolve(ROOT, relative(main, p)))) return true; } return false; };
+  return falta(resolve(main, 'Clubes'));
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
+  const guardada = process.argv.includes('--check') ? fechaGuardada() : null;
+  if (guardada) HOY = new Date(guardada); // --check recalcula con la fecha de los archivos: solo queda viejo si cambiaron las entradas, no por el calendario
   const r = calcular(); const files = salidas(r);
   if (process.argv.includes('--sugerir')) console.log(r.sugerencias.join('\n'));
   else if (process.argv.includes('--print') || process.argv.includes('--sin-unir')) imprimir(r);
   else if (process.argv.includes('--check')) {
     const viejos = Object.entries(files).filter(([p, t]) => !existsSync(resolve(ROOT, p)) || readFileSync(resolve(ROOT, p), 'utf8') !== t).map(([p]) => p);
     const sobran = existsSync(resolve(ROOT, 'data', 'faltantes')) ? readdirSync(resolve(ROOT, 'data', 'faltantes')).map((f) => `data/faltantes/${f}`).filter((p) => !files[p]) : [];
-    if (viejos.length || sobran.length) { console.log(`faltantes-liga: ${viejos.length + sobran.length} archivos viejos (${[...viejos, ...sobran].slice(0, 5).join(', ')}): node tools/faltantes-liga.mjs`); process.exit(1); }
+    if (viejos.length || sobran.length) {
+      const lista = [...viejos, ...sobran].slice(0, 5).join(', ');
+      // código 3 (audit.js: P3): solo faltan los enlaces a PDF de la principal en este worktree; código 1 (P1): cambiaron las entradas (o los archivos no traen fecha)
+      if (guardada && faltaPreparar()) { console.log(`faltantes-liga: ${viejos.length + sobran.length} archivos distintos (${lista}) y a este worktree le faltan enlaces a PDF de la principal (los "en-mano" dependen de ellos): corré node tools/worktree.mjs preparar . y volvé a chequear`); process.exit(3); }
+      console.log(`faltantes-liga: ${viejos.length + sobran.length} archivos viejos (${lista}): node tools/faltantes-liga.mjs`); process.exit(1);
+    }
+    const dias = guardada ? Math.floor((new Date(new Date().toISOString().slice(0, 10)) - HOY) / 86400000) : 0;
+    // código 2 (audit.js: P3): las entradas no cambiaron, pero hace más de 30 días que se calculó: los años recientes ya pasaron el corte
+    if (dias > 30) { console.log(`faltantes-liga: calculado hace ${dias} días (${guardada}); las entradas no cambiaron, pero regenerá: los años recientes ya pasaron el corte (node tools/faltantes-liga.mjs)`); process.exit(2); }
     console.log('faltantes-liga: al día');
   } else {
     mkdirSync(resolve(ROOT, 'data', 'faltantes'), { recursive: true });

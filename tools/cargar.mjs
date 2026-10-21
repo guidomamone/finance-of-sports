@@ -105,7 +105,7 @@ import { validacionAlDia } from './cache-al-dia.mjs'; // (to-do 237 ak)
 import { GENERADORES, queFalla } from './generadores.mjs'; // (to-do 298 x)
 import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs'; // (to-do 298 ah)
 import { combinar as combinarEntidades } from './suma-entidades.mjs'; // (to-do 283)
-import { leerResultadoIxbrl, chequearIxbrl } from './ixbrl-resultado.mjs'; // (to-do 345, Auditora 5)
+import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs'; // (to-do 345, Auditora 5)
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.
@@ -1057,9 +1057,13 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // 6c. (to-do 345, Auditora 5) SEGUNDA LECTURA del resultado, independiente del texto: el `ProfitLoss` etiquetado en el XHTML del que salió este .md (solo el hermano del mismo cierre).
   // Es un AVISO (y una fila en la cola si no coincide); pasa a frenar cuando 10 años de varios clubes den cero falsos frenos (lo decide la Auditora). Se apaga con el ajuste `ixbrl-omitir`.
   try {
-    const xh = resolve(ROOT, e.md.replace(/\.md$/, '.xhtml')); const cierreIx = (per && per.cierre) || (alta.ejercicio && alta.ejercicio.cierre);
-    if (cierreIx && !ajusteDe(pdf, 'ixbrl-omitir') && existsSync(xh) && /xhtml-aarsrapport\.mjs/.test(readFileSync(mdAbs, 'utf8').slice(0, 400))) {
-      const ch = chequearIxbrl(leerResultadoIxbrl(xh, cierreIx), { resultadoM: T.officialPAT, ingresosM: T.revSum });
+    // el XHTML de donde salió este .md (su hermano, con el encabezado de xhtml-aarsrapport.mjs) o, si el año salió de un PDF, un XHTML de la carpeta del club del MISMO emisor (su identificador está en el .md)
+    // y del mismo cierre (lo exige el contexto del hecho): una segunda lectura independiente del PDF (Auditora 5). El perímetro es el de esta carga: sin él, no compara.
+    const mdTxt = readFileSync(mdAbs, 'utf8'); const cierreIx = (per && per.cierre) || (alta.ejercicio && alta.ejercicio.cierre);
+    const hermano = resolve(ROOT, e.md.replace(/\.md$/, '.xhtml'));
+    const xh = existsSync(hermano) && /xhtml-aarsrapport\.mjs/.test(mdTxt.slice(0, 400)) ? hermano : (cierreIx ? xhtmlDelMismoEmisor(dirname(mdAbs), mdTxt) : null);
+    if (cierreIx && xh && !ajusteDe(pdf, 'ixbrl-omitir')) {
+      const ch = chequearIxbrl(leerResultadoIxbrl(xh, cierreIx, perimetro), { resultadoM: T.officialPAT, ingresosM: T.revSum });
       for (const a of ch.avisos) P.avisos.push(`iXBRL: ${a}`);
       if (ch.caso) agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'ixbrl-resultado', detalle: String(year), que: `El resultado etiquetado en el XHTML (iXBRL) no coincide con el cargado: ${ch.caso}. Mirá la fila del estado de resultados en el .md; si el hecho no es el resultado del ejercicio (perímetro, minoritarios), ajuste \`ixbrl-omitir\` con su motivo.`, propuesta: 'revisar el signo y la escala del resultado en el .md; si el hecho es de otro perímetro, ixbrl-omitir' });
     }

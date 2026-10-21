@@ -12,10 +12,13 @@
 //   (c) nombre local sin prefijo (fsa, d, c, ifrs-full e ifrs_full_14 cambian), escala, signo (atributo sign="-", que el texto impreso puede no tener) y formato (ixt:numdotcomma,
 //       numcommadecimal y num-dot-decimal separan distinto).
 //   (d) tolerancia: medio punto de `decimals` (hecho en miles: ±500 unidades, 0,0005 M).
-//   (e) ingresos (`Revenue`): solo se informa si lo cargado es MENOR que la etiqueta (se perdió una línea); mayor es lo normal (Revenue es la cifra de negocios).
+//   (f) PERÍMETRO (Auditora 5, tras la prueba con cuentas británicas): si lo cargado es CONSOLIDADO, el resultado es el `ProfitLoss` cuyo ÚNICO eje es GroupCompanyDataDimension=Consolidated (el hecho sin ejes es el de la
+//       sociedad matriz: en Burnley vale 0 y el del grupo −28,530); si solo hay hecho sin ejes, no compara y lo dice. Si lo cargado es INDIVIDUAL, el hecho sin ejes. Si el perímetro no se conoce, no compara.
+//   (e) ingresos (`Revenue`, o `TurnoverRevenue`/`Turnover`): solo se informa si lo cargado es MENOR que la etiqueta (se perdió una línea); mayor es lo normal (Revenue es la cifra de negocios).
 // Devuelve millones de la moneda del informe, como official_totals.
 // ============================================================================
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync, openSync, readSync, closeSync } from 'node:fs';
+import { join } from 'node:path';
 
 const local = (n) => String(n || '').replace(/^.*:/, '');
 const attr = (t, a) => { const m = t.match(new RegExp(`\\b${a}\\s*=\\s*"([^"]*)"`)); return m ? m[1] : null; };
@@ -25,9 +28,10 @@ function contextos(src) {
   const out = new Map();
   for (const m of src.matchAll(/<(?:[\w-]+:)?context\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)<\/(?:[\w-]+:)?context>/g)) {
     const cuerpo = m[2];
-    if (/explicitMember|typedMember/.test(cuerpo)) continue;
+    if (/typedMember/.test(cuerpo)) continue;
+    const dims = [...cuerpo.matchAll(/<(?:[\w-]+:)?explicitMember\b[^>]*\bdimension="([^"]+)"[^>]*>\s*([^<\s]+)\s*</g)].map((x) => [local(x[1]), local(x[2])]);
     const ini = (cuerpo.match(/<(?:[\w-]+:)?startDate>\s*([\d-]+)\s*</) || [])[1]; const fin = (cuerpo.match(/<(?:[\w-]+:)?endDate>\s*([\d-]+)\s*</) || [])[1];
-    if (ini && fin) out.set(m[1], { inicio: ini, fin });
+    if (ini && fin) out.set(m[1], { inicio: ini, fin, dims });
   }
   return out;
 }
@@ -50,11 +54,11 @@ function numero(txt, formato) {
 }
 
 // hechos nonFraction de nombre local `nombre` con contexto válido que termina en `cierre`
-function hechos(src, nombre, cierre) {
+function hechos(src, nombre, cierre, aceptar) {
   const ctx = contextos(src); const out = [];
   for (const m of src.matchAll(/<ix:nonFraction\b([^>]*)>([\s\S]*?)<\/ix:nonFraction>/g)) {
     const a = m[1]; if (local(attr(a, 'name')) !== nombre) continue;
-    const c = ctx.get(attr(a, 'contextRef')); if (!c || c.fin !== cierre) continue;
+    const c = ctx.get(attr(a, 'contextRef')); if (!c || c.fin !== cierre || !aceptar(c.dims)) continue;
     const txt = m[2].replace(/<[^>]+>/g, '');
     const n = numero(txt, attr(a, 'format')); if (n == null) { out.push({ ilegible: txt.trim() }); continue; }
     const escala = Number(attr(a, 'scale') || 0); const dcm = attr(a, 'decimals');
@@ -66,10 +70,37 @@ function hechos(src, nombre, cierre) {
 }
 const unico = (hs) => { const ok = hs.filter((h) => !h.ilegible); if (hs.some((h) => h.ilegible)) return { estado: 'formato', detalle: hs.find((h) => h.ilegible).ilegible }; if (!ok.length) return { estado: 'sin-hecho' }; const v = ok[0]; if (ok.some((h) => Math.abs(h.valor - v.valor) > Math.max(h.tolM, v.tolM) * 1e6)) return { estado: 'ambiguo', valoresM: ok.map((h) => h.valor / 1e6) }; return { estado: 'ok', valorM: v.valor / 1e6, tolM: Math.max(...ok.map((h) => h.tolM)), inicio: v.inicio }; };
 
-// -> { resultado: {estado, valorM, tolM}, ingresos: {estado, valorM, tolM} } para el ejercicio que cierra en `cierre` (AAAA-MM-DD)
-export function leerResultadoIxbrl(xhtmlAbs, cierre) {
+// Sin ejes / solo el eje de grupo consolidado (regla (f))
+const sinEjes = (d) => d.length === 0;
+const grupo = (d) => d.length === 1 && d[0][0] === 'GroupCompanyDataDimension' && d[0][1] === 'Consolidated';
+function elegir(src, nombres, cierre, perimetro) {
+  const per = String(perimetro || '').toLowerCase();
+  if (per !== 'consolidado' && per !== 'individual') return { estado: 'perimetro', detalle: perimetro || 'sin dato' };
+  for (const nombre of nombres) {
+    if (per === 'individual') { const h = hechos(src, nombre, cierre, sinEjes); if (h.length) return unico(h); continue; }
+    const g = hechos(src, nombre, cierre, grupo); if (g.length) return unico(g);
+    if (hechos(src, nombre, cierre, sinEjes).length) return { estado: 'solo-matriz' };
+  }
+  return { estado: 'sin-hecho' };
+}
+
+// -> { resultado: {estado, valorM, tolM}, ingresos: {...} } para el ejercicio que cierra en `cierre` (AAAA-MM-DD) y el perímetro cargado ('consolidado' | 'individual')
+export function leerResultadoIxbrl(xhtmlAbs, cierre, perimetro) {
   const src = readFileSync(xhtmlAbs, 'utf8');
-  return { resultado: unico(hechos(src, 'ProfitLoss', cierre)), ingresos: unico(hechos(src, 'Revenue', cierre)) };
+  return { resultado: elegir(src, ['ProfitLoss'], cierre, perimetro), ingresos: elegir(src, ['Revenue', 'TurnoverRevenue', 'Turnover'], cierre, perimetro) };
+}
+
+// El emisor del XHTML (el `xbrli:identifier` de sus contextos: CVR, número de Companies House): lee solo el comienzo del archivo, donde está el ix:header.
+export function emisorDe(xhtmlAbs) {
+  const fd = openSync(xhtmlAbs, 'r'); const b = Buffer.alloc(600000); const n = readSync(fd, b, 0, b.length, 0); closeSync(fd);
+  return ((b.toString('utf8', 0, n).match(/<(?:[\w-]+:)?identifier\b[^>]*>\s*([^<\s]+)\s*</) || [])[1] || '').replace(/[^0-9A-Za-z]/g, '');
+}
+// Un año cargado de PDF puede contrastarse con un XHTML de la carpeta del club SI es del mismo emisor (su identificador figura en el .md del año) y del mismo cierre (lo decide el contexto
+// del hecho). Devuelve la ruta si hay exactamente uno.
+export function xhtmlDelMismoEmisor(dir, mdTexto) {
+  const plano = String(mdTexto).replace(/[^0-9A-Za-z]/g, ''); const ok = [];
+  for (const f of readdirSync(dir).filter((x) => x.endsWith('.xhtml'))) { const e = emisorDe(join(dir, f)); if (e.length >= 6 && plano.includes(e)) ok.push(join(dir, f)); }
+  return ok.length === 1 ? ok[0] : null;
 }
 
 // Compara con lo cargado (en millones). -> { avisos: [texto], caso: texto|null }
@@ -78,6 +109,8 @@ export function chequearIxbrl(ix, { resultadoM, ingresosM }) {
   if (r.estado === 'ok' && resultadoM != null) {
     if (Math.abs(r.valorM - resultadoM) > r.tolM + 1e-6) { caso = `resultado iXBRL ${r.valorM} M contra ${resultadoM} M cargado (diferencia ${+(r.valorM - resultadoM).toFixed(6)} M; tolerancia ${r.tolM} M)`; avisos.push(`ProfitLoss del informe XHTML (iXBRL) no coincide: ${caso}`); }
   } else if (r.estado === 'ambiguo') avisos.push(`ProfitLoss del informe XHTML: dos valores distintos en contextos válidos (${r.valoresM.join(' / ')} M); no se compara`);
+  else if (r.estado === 'solo-matriz') avisos.push('ProfitLoss del informe XHTML: lo cargado es consolidado y el informe solo trae el hecho sin eje de grupo (la sociedad matriz); no se puede saber de qué perímetro es: no se compara');
+  else if (r.estado === 'perimetro') avisos.push(`ProfitLoss del informe XHTML: no se sabe el perímetro cargado (${r.detalle}): no se compara`);
   else if (r.estado === 'formato') avisos.push(`ProfitLoss del informe XHTML: formato de número que no se lee («${r.detalle}»); no se compara`);
   const i = ix.ingresos;
   if (i.estado === 'ok' && ingresosM != null && ingresosM < i.valorM - i.tolM - 1e-6) avisos.push(`ingresos cargados ${ingresosM} M son menores que la etiqueta Revenue del informe XHTML (${i.valorM} M): ¿se perdió una línea?`);

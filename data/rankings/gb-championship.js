@@ -32,6 +32,9 @@ window.RANKINGS["gb-championship"] = {
     leagueSize: 24,
     wiki: {"t":"2022–23 EFL Championship","lang":"en","at":"2026-09-30","n":24},
     clubs: [
+      { id:"burnley-gb", revenue:99.287, reportType:"official_balance_sheet",
+        sourceId:"burnley-gb-holdings-group-accounts-2022-23",
+        mix:[["Comercial / Sponsors",3.633],["Estadio",14.237],["Televisión",61.501],["Venta de Jugadores",14.663],["Otros ingresos",5.255]] },
       { id:"sunderland-gb", revenue:48.5, reportType:"official_balance_sheet",
         sourceId:"sunderland-gb-full-accounts-2022-23",
         mix:[["Comercial / Sponsors",5.526],["Estadio",13.754],["Televisión",12.97],["Venta de Jugadores",0.394],["Otros ingresos",15.856]] },
@@ -41,9 +44,6 @@ window.RANKINGS["gb-championship"] = {
     leagueSize: 24,
     wiki: {"t":"2021–22 EFL Championship","lang":"en","at":"2026-10-19","n":24},
     clubs: [
-      { id:"burnley-gb", revenue:218.135, reportType:"official_balance_sheet",
-        sourceId:"burnley-gb-holdings-group-accounts-2021-22",
-        mix:[["Comercial / Sponsors",2.451],["Estadio",10.654],["Televisión",127.572],["Venta de Jugadores",66.549],["Otros ingresos",10.909]] },
       { id:"fulham-gb", revenue:102.084, reportType:"official_balance_sheet",
         sourceId:"fulham-gb-full-accounts-2021-22",
         mix:[["Comercial / Sponsors",11.491],["Estadio",8.286],["Televisión",61.692],["Venta de Jugadores",15.153],["Otros ingresos",5.461]] },
