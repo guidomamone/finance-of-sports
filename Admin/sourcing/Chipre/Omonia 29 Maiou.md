@@ -15,3 +15,4 @@
 - Último chequeo: 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2024 desde `Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf` (sourceId `omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024`).
+- Color de marca: `null`, resultado cerrado — el club es verde y blanco (el.wikipedia, «Χρώματα της ομάδας είναι το πράσινο και το άσπρο»), pero no hay un hex verificado del propio club: el único que apareció (#117143) es del escudo de AC Omonia, otro club (`Admin/PANTALLA.md`: el hex tiene que ser del club; como Real Madrid y Once Caldas). Decidido por la principal, 2026-10-21.
