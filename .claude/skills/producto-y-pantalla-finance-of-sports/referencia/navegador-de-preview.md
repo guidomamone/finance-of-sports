@@ -4,6 +4,14 @@
 
 **El sitio anda de dos maneras y se prueban las dos antes de pedir el merge:** servido (el preview de `launch.json`, y `/club/<id>` y `/liga/<id>` directos y navegando desde la portada) y abierto como archivo (`file:///…/index.html`). Por eso `index.html` no lleva `<base>` fijo ni rutas que empiecen con `/`: con `file://` la raíz es la del disco y la página sale sin estilos ni scripts. Las cargas dinámicas y los links que arma el JS pasan por `fosUrl()` de `js/i18n.js`. Solo las páginas generadas de `club/` y `liga/` llevan `<base>`. `audit.js` lo chequea (`index-file-roto`).
 
+**Cómo verlo como archivo.** El Browser pane abre un `file://` como una captura sin estilos y el navegador de Guido no se maneja: se usa Chrome sin ventana, con la ruta del worktree y una salida en el scratchpad:
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --allow-file-access-from-files --window-size=1280,1600 --virtual-time-budget=8000 --screenshot=<scratchpad>/x.png "file:///…/index.html?tab=liga"
+```
+
+Después se mira la imagen con Read.
+
 **La cuenta a mano no alcanza.** Verificar que `revenueLines` y `expenseLines` suman el total impreso es necesario, pero un bug de display no aparece sin abrir el sitio. Después de tocar una función de display o de conversión: `preview_start`, cambiar de club, tocar los dos toggles (moneda y Formato del club o simplificado) y leer los números en pantalla. `verifyTieOuts()` corre en moneda nativa, nunca pasa por el toggle y no detecta una doble conversión.
 
 **Un ejercicio recién categorizado se mira línea por línea.** Que `verifyTieOuts()` pase y que «Formato del club» se vea bien no alcanza: abrir «Formato simplificado» y confirmar que ningún bucket que debería tener plata (según el documento) está en $0. Un bucket en $0 sin explicación es la señal de que algo quedó enterrado en `items` en vez de promovido a su categoría (por ejemplo una línea real de televisión bajo `lump_football_operations`: el total cierra igual).

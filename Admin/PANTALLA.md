@@ -211,12 +211,7 @@ que pide el periodista. No se extiende a otros cards.
 
 ## Verificar en el browser de verdad, no solo revisar los números a mano (ex §8)
 
-Cómo se verifica una pantalla y las trampas del navegador de preview: skill `producto-y-pantalla-finance-of-sports`, `referencia/navegador-de-preview.md`.
-
-Cómo verlo como archivo: el Browser pane abre un `file://` como captura sin estilos y el navegador de Guido no se maneja, así que se usa Chrome
-sin ventana, con la ruta del worktree y una salida en el scratchpad:
-`"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --allow-file-access-from-files --window-size=1280,1600 --virtual-time-budget=8000 --screenshot=<scratchpad>/x.png "file:///…/index.html?tab=liga"`
-y se mira la imagen con Read.
+Cómo se verifica una pantalla y las trampas del navegador de preview: skill `producto-y-pantalla-finance-of-sports`, `referencia/navegador-de-preview.md` (también cómo verlo como archivo).
 
 ## El sufijo entre paréntesis del dropdown "Año": SOLO 4 palabras posibles, nunca una 5ta (ex §10)
 
