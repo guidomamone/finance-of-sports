@@ -501,3 +501,18 @@ Unos US$ 12,3 en total contando los US$ 3,29 de Pipeline 12: pasé el tope de US
 - `Admin/registros/documentos-descartados.txt` tiene ocho documentos de tenedoras (Fredrikstad, Sarpsborg 08).
 - Los clubes del lote 130 tienen años nuevos (ver arriba); `Admin/ESTADO-clubes.md` se regenera con `node tools/generate-club-index.js`.
 - Chipre tiene un club (Omonia 29 Maiou) y sus ligas; Fiorentina 2020, Genoa 2024 y Atalanta 2022 son tramos de transición de 6 meses con nota; `documentos-parciales.txt` ya no los tiene.
+
+## To-do 359 (2026-10-21, Onboarding 9)
+
+### Qué cambió (para CHANGELOG)
+- Verificaciones de la recarga de Girona 2021-23 commiteadas (las había dejado Onboarding 8), con `data/faltantes/` regenerado.
+- **(a) Líneas del auditor** (subagente Sonnet por año, validadas con `tools/auditoria.mjs`): Fiorentina 2020 (PwC, limpia), Genoa 2024 (BDO, limpia, ÉNFASIS CONTINUIDAD sin incertidumbre material), Omonia 29M 2024 (`sin_informe`: el PDF son 3 páginas de estados firmados por la administración). Atalanta 2022 y Girona 2021-23 ya tenían su línea (el `.md` no cambió con la recarga). `data/auditoria/cy.js` es nuevo.
+- **(b)** Chapecoense 2019: la nota ya trae el motivo de la ressalva (provisión del accidente aéreo subestimada y «Acordo Atletas» sin acuerdos firmados); el resto quedó igual. Goiás 2018: el «24 de abril de 2018» del pie es una errata. El informe es del ejercicio 2018 (opina a 31/12/2018 y cita al de 2017, que es del 16/04/2018). Cambió solo la nota.
+- **(d)** Url del depósito (`dokumentUrl` de regnskaber.virk.dk, con `http://`) en 10 fuentes, con `fuente.mjs --url`: Fredericia 2021-25, København 2025, Nordsjælland 2025, Vejle 2025, Brøndby 2021 y SønderjyskE 2024-09-30. En Fredericia 2023 y Brøndby 2021, que tienen dos presentaciones idénticas, va la primera.
+
+### Qué queda (para TODO)
+- **(c) Emmen 2019-20 y 2020-21:** no se puede transcribir. El PDF F.04 tiene 7 páginas, todas en el `.md`, y no trae el informe del auditor: solo dice que la jaarrekening de FC Emmen B.V. lleva accountantsverklaring (`.md` L309 en 2020-21). Hace falta la jaarrekening completa (depósito de KvK, que es pago) → Sourcing. Las líneas `falta_transcripcion` están bien.
+- **(d), el resto de las fuentes danesas sin url:** AGF 2020-21, Brøndby 2020, København 2024, Fredericia 2019 y 2020, Midtjylland 2019 y 2020, Nordsjælland 2024, Randers 2022-23, Silkeborg 2024 y 2025, SønderjyskE 2022, Vejle 2024 y Viborg 2024 y 2025. No están en la tabla de `datos.md` y no son XHTML del depósito → Sourcing, si se quiere la url (mismo método por CVR).
+
+### Gasto
+US$ 0 de API (los subagentes van con tokens de sesión).

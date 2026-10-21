@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf",
  "md": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.md",
- "generado": "2026-10-21T14:50:43.341Z",
- "scriptHuella": "f2a64e48f42b",
+ "generado": "2026-10-21T17:02:34.201Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "girona-es",
  "year": 2021,
@@ -12,18 +12,81 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf",
+   "campo": "fila",
+   "valor": "8.495.649,09",
+   "linea": 703,
+   "etiqueta": "b) Resultados por enajenaciones y otras",
+   "lado": "financiero",
+   "reemplaza": "b) Resultados por enajenaciones y otras",
+   "destino": "profit_on_player_sales",
+   "motivo": "Auditora 5 (Girona 2021-23, CONVENCIONES/club-data-mapping §2): el resultado por enajenaciones de jugadores va a financial.profit_on_player_sales, como Girona 2020 y 2025 y los demás clubes españoles",
+   "evidencia": "pág. 15 del visor, .md L703",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf",
+   "campo": "fila",
+   "valor": "10.719.838,08",
+   "linea": 673,
+   "etiqueta": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
+   "lado": "ingreso",
+   "reemplaza": "a) Ventas",
+   "motivo": "Auditora 5 (Girona 2021-23): la cifra de negocios va en UNA línea lump_football_operations, como Girona 2020 y 2025 (Admin/carga-clubes/girona-es.md); el documento solo separa Ventas de Prestaciones de servicios, sin desglosar por concepto",
+   "evidencia": ".md L673-676",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf",
+   "campo": "categoria",
+   "valor": "no_es_rubro",
+   "linea": null,
+   "etiqueta": "b) Prestaciones de servicios",
+   "motivo": "Ya está dentro de la línea «Importe neto de la cifra de negocios» (L673 = a + b, L675-676); evita contarla dos veces (Auditora 5, Girona 2021-23)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf",
+   "campo": "categoria",
+   "valor": "lump_football_operations",
+   "linea": null,
+   "etiqueta": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
+   "motivo": "Criterio de Girona 2020 y 2025: cifra de negocios sin desglosar por concepto = bolsón lump_football_operations (Auditora 5)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 676,
+   "etiqueta": "Prestaciones de servicios (incluidas en la cifra de negocios)",
+   "lado": "ingreso",
+   "reemplaza": "b) Prestaciones de servicios",
+   "motivo": "Ya está dentro de la línea «Importe neto de la cifra de negocios» (L673 = L675 + L676): se saca para no contarla dos veces (Auditora 5, Girona 2021-23)",
+   "evidencia": ".md L673-676",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": null,
-   "detalle": "el documento no lo imprime"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "el documento no lo imprime"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
@@ -34,7 +97,7 @@
   {
    "nombre": "lectura",
    "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
    "nombre": "año anterior cargado",
@@ -51,9 +114,11 @@
   "el desglose de \"a) Compras, netas devol. y dto. de las cuales:\" (4 filas) no suma la fila: quedó la fila",
   "la nota de \"b) Consumo de materias primas y otras materias consumibles\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"b) Cargas sociales\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "escalón \"subtotal repetido\": \"11. Deterioro y resultado por enajenaciones del inmovilizado\" (L701) repite la fila de abajo \"b) Resultados por enajenaciones y otras\" (L703); se saltea",
-  "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
-  "la lectura base no cerraba; cerró con la lectura 4",
+  "ajuste manual: fila \"b) Resultados por enajenaciones y otras\" (financiero) 8.495.649,09, en lugar de \"b) Resultados por enajenaciones y otras\" (2026-10-21, Auditora 5 (Girona 2021-23, CONVENCIONES/club-data-mapping §2): el resultado por enajenaciones de jugadores va a financial.profit_on_player_sales, como Girona 2020 y 2025 y los demás clubes españoles)",
+  "ajuste manual: fila \"Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)\" (ingreso) 10.719.838,08, en lugar de \"a) Ventas\" (2026-10-21, Auditora 5 (Girona 2021-23): la cifra de negocios va en UNA línea lump_football_operations, como Girona 2020 y 2025 (Admin/carga-clubes/girona-es.md); el documento solo separa Ventas de Prestaciones de servicios, sin desglosar por concepto)",
+  "ajuste manual: sale la fila \"b) Prestaciones de servicios\" (2026-10-21, Ya está dentro de la línea «Importe neto de la cifra de negocios» (L673 = L675 + L676): se saca para no contarla dos veces (Auditora 5, Girona 2021-23))",
+  "escalón \"nota exacta en la lectura 6\": \"a) Consumo de mercaderías\" (L681) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 6",
   "duda de extraer que no afecta la carga: 540.151,68 - 32.694,19 = 507.457,49 coincide con L721, pero el renglón del estado no se llama igual.",
   "duda de extraer que no afecta la carga: El TOTAL L4127 coincide con L692; las partidas no se separan por subepígrafe y 'Pdas deterioro' (137.627,28) no iguala a L695 (-5.610.583,46)."
  ],
@@ -73,9 +138,9 @@
   }
  ],
  "totales": {
-  "ingresos": 21.609729,
+  "ingresos": 13.11408,
   "gastos": 30.504812,
-  "financiero": -0.221731,
+  "financiero": 8.273918,
   "impuesto": 2.318766,
   "resultadoImpreso": -6.798048,
   "resultadoParaCargar": -6.798048,
@@ -84,28 +149,12 @@
  },
  "lineas": [
   {
-   "etiqueta": "a) Ventas",
-   "lado": "ingreso",
-   "M": 0.439514,
-   "pagina": 15,
-   "linea": 675,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "b) Prestaciones de servicios",
-   "lado": "ingreso",
-   "M": 10.280324,
-   "pagina": 15,
-   "linea": 676,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "a) Ingresos accesorios y otros de gestión corriente",
    "lado": "ingreso",
    "M": 1.532552,
    "pagina": 15,
    "linea": 686,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
@@ -113,7 +162,7 @@
    "M": 0.122984,
    "pagina": 15,
    "linea": 687,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
@@ -121,7 +170,7 @@
    "M": 0.20503,
    "pagina": 15,
    "linea": 699,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "10. Excesos de provisiones",
@@ -129,15 +178,15 @@
    "M": 0.026219,
    "pagina": 15,
    "linea": 700,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "b) Resultados por enajenaciones y otras",
+   "etiqueta": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
    "lado": "ingreso",
-   "M": 8.495649,
+   "M": 10.719838,
    "pagina": 15,
-   "linea": 703,
-   "origen": "estado"
+   "linea": 673,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "13. Otros resultados",
@@ -145,7 +194,7 @@
    "M": 0.507457,
    "pagina": 16,
    "linea": 721,
-   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
   },
   {
    "etiqueta": "a) Compras, netas devol. y dto. de las cuales:",
@@ -169,7 +218,7 @@
    "M": 0.036536,
    "pagina": 15,
    "linea": 682,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos",
@@ -177,7 +226,7 @@
    "M": 0.116198,
    "pagina": 15,
    "linea": 684,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "a) Sueldos, salarios y asimilados",
@@ -185,7 +234,7 @@
    "M": 13.5401,
    "pagina": 15,
    "linea": 689,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "b) Cargas sociales",
@@ -193,7 +242,7 @@
    "M": 0.950571,
    "pagina": 15,
    "linea": 690,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "c) Provisiones",
@@ -201,7 +250,7 @@
    "M": -0.166039,
    "pagina": 15,
    "linea": 691,
-   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "a) Servicios exteriores",
@@ -209,7 +258,7 @@
    "M": 5.804419,
    "pagina": 15,
    "linea": 693,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "b) Tributos",
@@ -217,7 +266,7 @@
    "M": 0.122126,
    "pagina": 15,
    "linea": 694,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
@@ -225,7 +274,7 @@
    "M": 5.610583,
    "pagina": 15,
    "linea": 695,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "d) Otros gastos de gestión corriente",
@@ -233,7 +282,7 @@
    "M": 0.195775,
    "pagina": 15,
    "linea": 696,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "8. Amortización del inmovilizado",
@@ -241,7 +290,7 @@
    "M": 3.965842,
    "pagina": 15,
    "linea": 698,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {
@@ -263,6 +312,12 @@
    "etiqueta": "17. Diferencias de cambio",
    "M": -0.000608,
    "linea": 738
+  },
+  {
+   "etiqueta": "b) Resultados por enajenaciones y otras",
+   "M": 8.495649,
+   "linea": 703,
+   "destino": "profit_on_player_sales"
   }
  ],
  "impuesto": [

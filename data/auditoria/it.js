@@ -777,6 +777,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 3727
    }
   },
+  "2020": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-giu-issuu.md",
+    "linea": 4595
+   }
+  },
   "2021": {
    "auditor": {
     "nombre": "PwC",
@@ -855,6 +868,19 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md",
     "linea": 4186
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2024-individual.md",
+    "linea": 4036
    }
   },
   "2025": {

@@ -65,6 +65,6 @@ window.CLUB_GENERIC_DATA["fckobenhavn-dk"] = {
   presupuestoOverlayByYear: fckobenhavnDkPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fckobenhavn-aarsrapport-2024":{"id":"fckobenhavn-aarsrapport-2024","clubId":"fckobenhavn-dk","title":"F.C. København P/S — Årsrapport for 2024 (1. januar - 31. december 2024)","type":"official_balance_sheet","reliability":"primary"},"fckobenhavn-dk-aarsrapport-2025-12-31":{"id":"fckobenhavn-dk-aarsrapport-2025-12-31","clubId":"fckobenhavn-dk","title":"F.C. København P/S — aarsrapport-2025-12-31 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fckobenhavn-aarsrapport-2024":{"id":"fckobenhavn-aarsrapport-2024","clubId":"fckobenhavn-dk","title":"F.C. København P/S — Årsrapport for 2024 (1. januar - 31. december 2024)","type":"official_balance_sheet","reliability":"primary"},"fckobenhavn-dk-aarsrapport-2025-12-31":{"id":"fckobenhavn-dk-aarsrapport-2025-12-31","clubId":"fckobenhavn-dk","title":"F.C. København P/S — aarsrapport-2025-12-31 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","url":"http://regnskaber.virk.dk/16125934/amNsb3VkczovLzAzL2JjL2JmLzdmLzk2L2E0NDItNGQ1Yy1hZDFlLTJhNWM0Njg0Nzk3Yg.xhtml"}});
 
 memberCountByClub["fckobenhavn-dk"] = null;
