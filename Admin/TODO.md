@@ -92,6 +92,10 @@ el número de la izquierda es el orden de trabajo.
    los totales etiquetados, un chequeo que compare lo cargado con esos totales. Lo diseña la Auditora; lo codea Pipeline.
 353. ¿LOS BRITÁNICOS EN iXBRL? (Guido, 2026-10-21). Medir en Companies House cuántos clubes de `data/gb/` presentan cuentas en iXBRL y no en
    PDF; si los grandes vienen así, se cargan sin transcribir. Medición gratis, sin código: `Admin/mediciones/companies-house-ixbrl.md`.
+354. DOS ARREGLOS DE TOOL QUE DEJÓ EL 257 (Orden 1, 2026-10-21; para Pipeline). (a) El paso `perfil-en-cola` de `cargar.mjs` no frena
+   nunca una carga: un caso de perfil (socios, otros deportes) se contesta googleando el club (regla de club-or-year-onboarding, «La cola»).
+   (b) `worktree.mjs mergear` avisa si un punto de «Qué queda» de la nota de sesión no termina con su flecha (`→ TODO n`, `→ regla`,
+   `→ HALLAZGOS`, `→ descartado`); la tabla de CONVENCIONES ya lo da por hecho.
 351. SUELDOS ADENTRO DE UNA SOLA LÍNEA (Auditora 4, 3ª corrida de P2 y P3, 2026-10-21). 12 británicos (Aston Villa, Brentford, Brighton,
    Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves; 47 club-años con el estado por función) e
    Instituto 2025 (anexo de remuneraciones cargado entero en gastos generales). Cómo: `Admin/sesiones/ligas.md`, tercera corrida. Corrige datos
