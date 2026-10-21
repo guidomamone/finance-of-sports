@@ -10,7 +10,7 @@
 // LA ESCALERA, una sola compuerta para todos los documentos (cada parte tiene que cumplirse; si no, no se toca nada):
 //   1  EL CUADRO: un bloque tabla de la ubicación (estado + notas de ingresos y gastos) del que extraer no sacó ninguna fila.
 //   2  LA SECCIÓN: por columna, las filas con importe hasta una fila «Total»/«Subtotal» cuyo valor es la suma EXACTA (al centavo) de las filas acumuladas (≥ 3 filas).
-//   3  LOS RENGLONES: existe UN solo subconjunto de renglones del estado (mismo documento, ejercicio actual, mismo lado) cuya suma es exactamente el total de la sección.
+//   3  LOS RENGLONES: existe UN solo subconjunto, de al menos 2 renglones, del estado (mismo documento, ejercicio actual, mismo lado) cuya suma es exactamente el total de la sección.
 //   4  EL REPARTO: las filas de la sección se reparten en grupos, un grupo por renglón, cada uno con suma exacta; el reparto es único y no sobra ninguna fila.
 //   5  MÁS FINO: el reparto de al menos un renglón tiene más filas que las hojas que ese renglón tiene hoy (FSE de Mafra, ya abierto en b25 en 40 filas, no se reemplaza por 6).
 //   6  UNA COLUMNA: si dos columnas del cuadro cumplen todo lo anterior es ambiguo y no se toca (un anexo con ED*-1, ED*-2 y ED*-3 solo cierra en la del ejercicio).
@@ -33,6 +33,8 @@ const eq = (a, b) => Math.abs(a - b) < 0.005;
 const MIN_IMPORTE = 1000;
 // Dos filas que suman un renglón de otro documento también salen por azar (Juventus 2003-04 contra Celtic: 4.976 + 106 = 5.082): una sección y un grupo abierto valen desde 3 filas.
 const MIN_FILAS = 3;
+// Un total de sección que iguala UN solo renglón sale por azar una vez cada ~10.000 comparaciones con renglones ajenos (control de falsos positivos, tres semillas); que dos o más renglones se repartan la sección, cada uno exacto, no.
+const MIN_RENGLONES = 2;
 
 // «25.811,26 €», «- 425,25 €», «1,275,143.83», «7 003», «(1.234)» -> número (o null)
 export function numero(t) {
@@ -76,7 +78,7 @@ export function proponer({ filas, ub, L }) {
             const S = acum.reduce((a, r) => a + Math.abs(r.v), 0);
             if (acum.length >= MIN_FILAS && eq(S, Math.abs(x)) && Math.abs(x) >= MIN_IMPORTE) {
               const Q = subconjuntos(rengs.map((r) => r.v), Math.abs(x));
-              if (Q && Q.length === 1) {
+              if (Q && Q.length === 1 && [...Q[0].toString(2)].filter((c) => c === "1").length >= MIN_RENGLONES) {
                 const qs = rengs.filter((r, k) => Q[0] >> k & 1); let ok = true; const resto = acum.slice(); const grupos = [];
                 for (const q of qs.slice().sort((a, b) => a.v - b.v)) {
                   const sol = subconjuntos(resto.map((r) => Math.abs(r.v)), q.v); if (!sol || sol.length !== 1) { ok = false; break; }
