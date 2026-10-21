@@ -496,3 +496,32 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Traspaso a Auditora 5 (`local_eb37a9db-f23a-44b2-934d-91a98b93d4e8`), 2026-10-21
+
+### Qué quedó abierto (veredictos y sesiones que esperan)
+
+- **`signo-invertido` (cuarta corrida):** decidido arreglar el chequeo (30 a 17), se lo pasó la principal a Pipeline 13. Cuando llegue el cambio, confirmar que `signo-invertido` pase de 30 a 17 con el resto de la salida idéntico. Los 14 hallazgos que quedan sin mirar (Basel 2009 y 2019, Benfica ×2, Besiktas, Celtic, Groningen, Go Ahead Eagles, Nacional 2024, Nõmme Kalju, Paide, y los de «Korrektur» y «Allocatie amortisatie» de Basel 2016, FC Utrecht y NEC) se miran contra el documento en la próxima corrida de ese código; los reales y aceptados se silencian con motivo, nunca sin mirar.
+- **`sin-salarios`:** la carga la hace Onboarding 8 después de su lote (12 clubes británicos con `caja-deuda --personal`, y Instituto 2025 por columnas). Al terminar medir `sin-salarios` 48 contra lo que quede, con `audit.js` sin P0 ni P1 nuevos.
+- **`catchall-dominante` y `linea-duplicada`:** ya están en main. La auditoría quedó en P2 115 y P3 206 después del cambio de `catchall-dominante`.
+- **Tarea 350 de la principal:** relevamiento exhaustivo de las categorías de la taxonomía que están en vano, revisar si educación tiene sentido y votar una categoría para subsidios (`votacion-de-criterios`; la causa viene de `catchall-dominante`: subsidios, aportes y donaciones sin categoría en ligas bajas de Grecia, Rusia y Portugal). Se hace después de las corridas, cuando la principal avise; por la regla vigente no recategoriza lo cargado.
+- **Del 237 al (Pipeline 12):** si en una corrida real aparece una aplicación sospechosa de `cuadroSobrante`, Pipeline 12 avisa a la Auditora.
+- **Del 345 (Pipeline 12, informes daneses XHTML):** diseño aprobado con tres cambios; si vuelve con el código, confirmar los tres (0 faltantes en los 8 documentos pedidos, no escribir con menos de 98 % de líneas ubicadas, motor registrado como «xhtml-ixbrl»).
+- **De Pruebas 1, `ejercicio-sin-rastro`:** aprobados el máximo sin presupuestos y el corte de 9 meses; si se codeó, verificar que la salida coincida (31 clubes y 54 club-años al 21 de octubre) y que la constante de 9 meses sea una sola.
+- **De Orden 1:** hooks `comando-que-edita` y `worktree-sin-permission-mode` pasaron a deny (aprobados, con el cambio de salida para scripts del scratchpad); `memoria-no-es-regla` se quedó en ask (rechazado el deny). Se mira `.hooks-disparos.jsonl` de la principal en una semana: si aparece un uso legítimo sin salida, vuelve a ask.
+- **Textos de skill que esperan el ok de Guido** (no se editan sin que él los vea): la frase de «menos de un segundo» de `audit.js` en la skill de arranque (línea 86; propuesta: «unos 15 segundos con 320 clubes»), el control de muestra por país del sponsor en el eje `datos` de la auditoría, y la verificación del avance de la rama en la skill principal.
+- **Pendientes de Pipeline 12 sin respuesta mía hoy:** ninguno.
+
+### Próximo código de P2 y P3
+
+- **`outlier-liga`** (P2, 21 hallazgos). Después, por tamaño: `gestion-club-inexistente` (P3, 26), `ejercicio-sin-rastro` (P3, ~23 antes del corte de 9 meses), `escala-implausible` (P3, 5), `salto-interanual` (P2, 5). Re-medir con `node tools/audit.js --json` antes de elegir: los números cambian con cada merge. Códigos ya tratados en `Admin/registros/auditoria-proceso.jsonl` (campo `codigo_tratado`): `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`.
+
+### Qué me conviene que sepa
+
+- Los veredictos de hoy están todos en `Admin/registros/auditoria-proceso.jsonl`, uno por línea, con el motivo; Pipeline 11, 12 y 13, Orden 1 y Pruebas 1 trabajan con ese archivo como fuente.
+- La skill ya tiene el criterio de condiciones nuevas (sección 7); si falta algo, escribir el texto propuesto en esta nota y llevárselo a la principal, sin editar la skill.
+- Un script nuevo para el hook del repo bloquea `$(...)`, `${...}`, `$VAR` y heredocs que mencionen palabras de merge: escribir los scripts con la herramienta Write en el scratchpad y correrlos con `node <ruta>`.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
