@@ -151,10 +151,14 @@ for (let i = docs.length - 1; i >= 0; i--) { const e = registro.find((x) => x.pd
 // Admin/registros/pagar-ia-xhtml.jsonl con el motivo y los documentos, y audit.js da P1 si gasto.mjs registra una llamada paga sin ella). El ensayo dice, por documento, que hoy iría por IA.
 const esXhtml = (d) => { const x = registro.find((y) => y.pdf === d); try { return /motor: xhtml-ixbrl/.test(readFileSync(resolve(ROOT, x?.md || d.replace(/\.pdf$/i, '.md')), 'utf8').slice(0, 400)); } catch { return false; } };
 const docsXhtml = docs.filter(esXhtml); const PAGAR_XHTML = flag('--pagar-ia-xhtml');
+// Cada línea de costo del ensayo lo dice al lado del documento: sin la bandera, «se frenaría (determinista)»; con ella, que va por IA y por qué.
+// Y el total final separa lo que corre de lo que se frena (antes el aviso salía una vez arriba y cada línea seguía diciendo «localizar ~US$ … + extraer …»).
+const DET = new Set(docsXhtml); const PAGA_XHTML = !!PAGAR_XHTML && !PAGAR_XHTML.startsWith('--');
+const frenaria = (pdf) => (DET.has(pdf) ? (PAGA_XHTML ? ' · determinista: va por IA (--pagar-ia-xhtml)' : ' · se frenaría (determinista)') : '');
 if (docsXhtml.length) {
-  console.log(`\nDETERMINISTAS (motor xhtml-ixbrl): ${docsXhtml.length} de ${docs.length} documentos. Sus cifras ya vienen etiquetadas; el escalón que las lee todavía no existe, así que hoy irían por IA (localizar y extraer): determinista, ¿va por etiquetas? NO (sin escalón). El costo estimado en juego sale al final del ensayo.`);
+  console.log(`\nDETERMINISTAS (motor xhtml-ixbrl): ${docsXhtml.length} de ${docs.length} documentos. Sus cifras ya vienen etiquetadas; el escalón que las lee todavía no existe, así que hoy irían por IA (localizar y extraer): determinista, ¿va por etiquetas? NO (sin escalón). Cada uno dice «se frenaría (determinista)» al lado de su costo, y el total final separa lo que corre de lo que se frena.`);
   if (API) {
-    if (!PAGAR_XHTML || PAGAR_XHTML.startsWith('--')) { console.error(`\nFRENADO: ${docsXhtml.length} documentos de motor xhtml-ixbrl (determinista) pagarían IA (localizar y extraer) y ya traen sus cifras etiquetadas. No se escribió nada. Si igual hay que pagarlo, con el motivo: --pagar-ia-xhtml "<motivo>". Primero: node tools/lote.mjs --lista ${LISTA} (ensayo, dice el costo).`); process.exit(1); }
+    if (!PAGA_XHTML) { console.error(`\nFRENADO: ${docsXhtml.length} documentos de motor xhtml-ixbrl (determinista) pagarían IA (localizar y extraer) y ya traen sus cifras etiquetadas. No se escribió nada. Si igual hay que pagarlo, con el motivo: --pagar-ia-xhtml "<motivo>". Primero: node tools/lote.mjs --lista ${LISTA} (ensayo, dice el costo).`); process.exit(1); }
     appendFileSync(resolve(ROOT, 'Admin', 'registros', 'pagar-ia-xhtml.jsonl'), JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, motivo: PAGAR_XHTML, docs: docsXhtml }) + '\n');
     console.log(`  --pagar-ia-xhtml: queda registrado (Admin/registros/pagar-ia-xhtml.jsonl): ${PAGAR_XHTML}`);
   }
@@ -306,7 +310,7 @@ for (const pdf of docs) {
   const candidatoAjuste = REINTENTAR && ubAntes && !ubAntes.intentoNotasConAjuste && (ubAntes.sin_estado || !(ubAntes.estado || []).length) && ajRes?.linea;
   if (candidatoNotas || candidatoAjuste) {
     const L3 = await localizar(pdf, { registro, perimetroClub, ejecutar: API, rehacer: true, notasComoEstado: true, pistaResultado: candidatoAjuste ? { valor: ajRes.valor, linea: ajRes.linea } : null });
-    if (L3.ensayo) { frenaSinApi(pdf, 'localizar (las notas hacen de estado)', L3.usd); cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L3.usd + EX.usd; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
+    if (L3.ensayo) { frenaSinApi(pdf, 'localizar (las notas hacen de estado)', L3.usd); cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L3.usd + EX.usd; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ${EX.texto}${frenaria(pdf)}`); continue; }
     if (L3.error) { estado[pdf] = `localizar (notas como estado): ${L3.error}`; continue; }
     usd += L3.costo || 0;
     if (L3.datos.sin_estado) { estado[pdf] = 'sin estado de resultados ni notas con resultado impreso (queda como fuente)'; console.log(`  ${pdf}: ${estado[pdf]}`); continue; }
@@ -333,7 +337,7 @@ for (const pdf of docs) {
   }
   const TP = resolverEnsayo ? null : paginasARearmar(pdf, e.md, e); const pagsTP = TP?.paginas; // (Versión 433) en el ensayo, el 1a va primero
   if (pagsTP) {
-    if (!(REINTENTAR && API)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar ~US$ 0,05 + extraer ${estimarExtraerSinBloques(pdf).texto}`); if (!EJECUTAR) usd += 0.05 + estimarExtraerSinBloques(pdf).usd; continue; }
+    if (!(REINTENTAR && API)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar ~US$ 0,05 + extraer ${estimarExtraerSinBloques(pdf).texto}${frenaria(pdf)}`); if (!EJECUTAR) usd += 0.05 + estimarExtraerSinBloques(pdf).usd; continue; }
     const RA = rearmar(pdf, pagsTP, TP.metodo);
     console.log(`  ${pdf}: págs. ${RA.paginas.join(', ') || 'ninguna'} rearmadas con el texto propio del PDF (etapa 2, escalón 1, método ${TP.metodo})${RA.rechazadas.length ? `; págs. ${RA.rechazadas.join(', ')} NO (la compuerta del rearmado: perdían filas de tabla, queda la transcripción anterior)` : ''}`);
     const L4 = await localizar(pdf, { registro, perimetroClub, ejecutar: true, rehacer: true }); usd += L4.costo || 0;
@@ -374,7 +378,7 @@ for (const pdf of docs) {
     usd += L.costo || 0; estado[pdf] = 'reintento sin estado: queda la localización anterior'; console.log(`  ${pdf}: el reintento no encontró estado; queda la localización anterior (el intento, en .ubicacion-reintento.json)`);
     continue;
   }
-  if (L.ensayo) { frenaSinApi(pdf, 'localizar', L.usd); cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L.usd + EX.usd; console.log(`  ${pdf}: ${enModoNotas ? 'reintento con las notas como estado: ' : ''}localizar ~US$ ${L.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
+  if (L.ensayo) { frenaSinApi(pdf, 'localizar', L.usd); cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L.usd + EX.usd; console.log(`  ${pdf}: ${enModoNotas ? 'reintento con las notas como estado: ' : ''}localizar ~US$ ${L.usd.toFixed(3)} + extraer ${EX.texto}${frenaria(pdf)}`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
   if (L.datos.sin_estado) {
@@ -428,7 +432,7 @@ for (const pdf of docs) {
   }
   usd += (API ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
   const X = await extraer(pdf, { registro, ejecutar: API, rehacer: REHACER || !!reintento || cacheViejo || ubVieja, reintento });
-  if (X.ensayo) { frenaSinApi(pdf, 'extraer', X.usd); cotizados.add(pdf); usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
+  if (X.ensayo) { frenaSinApi(pdf, 'extraer', X.usd); cotizados.add(pdf); usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)${frenaria(pdf)}`); continue; }
   if (X.pendiente) { estado[pdf] = 'esperando la Batch API (extraer)'; console.log(`  ${pdf}: extraer pendiente de la Batch API`); continue; }
   usd += X.costo || 0;
   if (X.error) { estado[pdf] = `extraer: ${X.error}`; continue; }
@@ -448,10 +452,27 @@ avisoCorrecciones();
 // cargar.mjs). Antes cobraba US$ 0,03 por cada documento de la lista: los ya en el sitio, los sin .md y los que frenan antes de localizar.
 // Caso: lote 91, 26 años en el sitio y el resto ya categorizado, estimaba US$ 1,62.
 const aCategorizar = docs.filter((d) => (cotizados.has(d) || String(estado[d] || '').startsWith('extraído')) && !testigos.has(d) && !(() => { const e = registro.find((x) => x.pdf === d); try { return e?.md && categoriasAlDia(resolve(ROOT, e.md)); } catch { return false; } })());
-if (!EJECUTAR) { const coma = (x) => x.toFixed(2).replace('.', ','); console.log(`\nEnsayo terminado, no se gastó nada. Correrlo cuesta ~US$ ${coma(usd + 0.03 * aCategorizar.length)} (localizar y extraer US$ ${coma(usd)} + categorización ~US$ 0,03 por documento en ${aCategorizar.length} de ${docs.length}: los demás ya están en el sitio, categorizados al día o frenan antes + páginas escaneadas ~US$ 0,003 cada una). Para correrlo: agregá --ejecutar.`); process.exit(0); }
+// Lo que cuesta cada documento en esta corrida (el ensayo estima; con --ejecutar, lo gastado): la diferencia del acumulado entre su inicio y el del siguiente.
+const costoDe = (d) => { const i = docs.indexOf(d); return (i + 1 < docs.length ? inicioUsd[docs[i + 1]] : usd) - inicioUsd[d]; };
+const costoDet = docsXhtml.reduce((a, d) => a + costoDe(d), 0);
+if (!EJECUTAR) {
+  const coma = (x) => x.toFixed(2).replace('.', ',');
+  const total = `Correrlo cuesta ~US$ ${coma(usd + 0.03 * aCategorizar.length)} (localizar y extraer US$ ${coma(usd)} + categorización ~US$ 0,03 por documento en ${aCategorizar.length} de ${docs.length}: los demás ya están en el sitio, categorizados al día o frenan antes + páginas escaneadas ~US$ 0,003 cada una)`;
+  if (!docsXhtml.length) { console.log(`\nEnsayo terminado, no se gastó nada. ${total}. Para correrlo: agregá --ejecutar.`); process.exit(0); }
+  // Con deterministas en la lista, el total se parte en dos: lo que corre (los demás) y lo que se frena (los de motor xhtml-ixbrl). El freno de --ejecutar es del lote
+  // entero (sale antes de escribir nada), así que «corre» es lo que costaría la lista sin ellos.
+  const catDet = aCategorizar.filter((d) => DET.has(d)).length; const catResto = aCategorizar.length - catDet;
+  const conCosto = (ds) => ds.filter((d) => costoDe(d) > 0 || aCategorizar.includes(d)).length;
+  const resto = docs.filter((d) => !DET.has(d)); const usdResto = usd - costoDet;
+  const corre = `corre ~US$ ${coma(usdResto + 0.03 * catResto)} (${resto.length} documentos no deterministas, ${conCosto(resto)} con costo: localizar y extraer US$ ${coma(usdResto)} + categorización en ${catResto})`;
+  const frena = `${PAGA_XHTML ? 'va por IA con --pagar-ia-xhtml' : 'se frena'} ~US$ ${coma(costoDet + 0.03 * catDet)} (${docsXhtml.length} deterministas de motor xhtml-ixbrl, ${conCosto(docsXhtml)} con costo: localizar y extraer US$ ${coma(costoDet)} + categorización en ${catDet})`;
+  console.log(`\nEnsayo terminado, no se gastó nada. ${total}.\n  Separado: ${corre} · ${frena}.`);
+  console.log(PAGA_XHTML ? '  Para correrlo: agregá --ejecutar (con la misma --pagar-ia-xhtml).' : `  --ejecutar frena el lote ENTERO mientras la lista tenga deterministas: sacalos de la lista para correr el resto (US$ 0 en ellos), o pasá --pagar-ia-xhtml "<motivo>" para pagarlos igual.`);
+  process.exit(0);
+}
 
-if (docsXhtml.length) { // costo en juego de los deterministas (el ensayo estima; con --ejecutar, lo gastado)
-  const fin = (i) => (i + 1 < docs.length ? inicioUsd[docs[i + 1]] : usd); const costo = docs.reduce((a, d, i) => a + (esXhtml(d) ? (fin(i) - inicioUsd[d]) : 0), 0);
+if (docsXhtml.length) { // costo de los deterministas (con --ejecutar, lo gastado)
+  const costo = costoDet;
   console.log(`\nDETERMINISTAS (xhtml-ixbrl): ${docsXhtml.length} documentos, ${EJECUTAR ? 'gastado' : 'costo estimado en juego si van por IA'}: ~US$ ${costo.toFixed(2).replace('.', ',')}${EJECUTAR ? '' : ` (--ejecutar los frena salvo con --pagar-ia-xhtml "<motivo>")`}`);
   if (EJECUTAR && PAGAR_XHTML) appendFileSync(resolve(ROOT, 'Admin', 'registros', 'pagar-ia-xhtml.jsonl'), JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, cierre: true, docs: docsXhtml.length, costoUsd: +costo.toFixed(4) }) + '\n');
 }
