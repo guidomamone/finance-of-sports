@@ -218,3 +218,33 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - Godoy Cruz 2020 "Ingreso por Derechos de Tanteo" (38,59 M) de `player_sales` a `other_income` (tanda 3 de la Auditora), ajuste `categoria` con cita (L164); el comparativo 2019 no está cargado. Las cesiones de Getafe no cambian nada. ASSET_V 1515.
 - Cerrado el 238 en lo gratis: cola en 0 (AEK), dudas OH Leuven/Thun/Polissya fuera, tandas 2 y 3 aplicadas (Hoffenheim, Stuttgart, Estudiantes LP, Gimnasia LP, Godoy Cruz). Queda lo pagado/no aplicado: Rosario Central residuales y Independiente estadio (ver arriba), pares duplicados de Rep. Checa, Aalesund y Vålerenga 2008-21.
 - Gasto: US$ 1,20 de 6, sin lote.
+
+## Onboarding 7: to-do 337, paso 1 (medición, 2026-10-20; sin gasto)
+
+Fuente: `node tools/faltantes-liga.mjs --print`, `data/faltantes/<liga>.js` y `Admin/registros/transcripciones-estado.jsonl`. El cruce año↔PDF
+es por nombre de archivo (aprox.). Años = los de las listas de `tools/club-league-reference/`; el año 2026 (reciente) no cuenta.
+
+### Cobertura hoy, últimas 5 temporadas (2021-2025): cargados / club-años · lo que falta por estado
+| Liga | cargado | en-mano | buscado | sin-buscar | PDFs en-mano: con .md / sin .md |
+|---|---|---|---|---|---|
+| Premier | 74/100 | 21 | 5 | 0 | 0 / 23 |
+| LaLiga (solo hay listas 2022, 2024, 2025) | 18/60 | 32 | 10 | 0 | 27 / 29 |
+| Serie A | 72/100 | 1 | 27 | 0 | 0 / 2 |
+| Bundesliga | 24/90 | 14 | 43 | 9 | 8 / 1 |
+| Ligue 1 (SIN lista de referencia) | 0 | n/d | n/d | n/d | ver abajo |
+| Brasileirão A | 46/100 | 51 | 3 | 0 | 62 / 58 |
+| Primera argentina | 32/138 | 6 | 91 | 11 | 16 / 3 |
+Los PDFs en-mano cuentan toda la historia de cada club en-mano, no solo 2021-25 (son los que habría que correr; hay solapes).
+
+### Qué se ve
+- Todo lo "en-mano" sin `.md` (Premier 23, LaLiga 29, Brasil 58, Argentina 3, Bundesliga 1, Serie A 2 = ~116 PDFs) es lo que gasta Mistral.
+- Premier, Serie A y Brasil: casi todo lo faltante ya está bajado. Serie A, Bundesliga y Argentina: lo faltante es sobre todo "buscado" (se buscó y no apareció): ahí el techo lo pone el sourcing, no la plata.
+- Ligue 1: ningún club cargado ni lista `fr.json`. Los 18 de 2025/26 salen de los DNCG "comptes individuels" (un PDF por temporada con todos los clubes, ya transcriptos a `.md` en `Clubes/Francia/_DNCG-Agregado-Liga/`) y OL tiene sus `.md`. Cargarlos pide un criterio (un agregado de liga como fuente oficial, y el perímetro): a la Auditora/Guido, antes de gastar.
+- Las listas de equipos no cubren todos los años (LaLiga 2019-21 y 2023, Brasil 2011/16/19, Bundesliga antes de 2021): completarlas es de la sesión de pipeline (gratis).
+
+### Umbral propuesto
+«Bien cargada» = cada club de las últimas 5 temporadas completas (2021-2025) con balance cargado, y para los que no, una constancia de sourcing
+`buscado`/`cerrado` con motivo (ej.: no publica). Meta numérica: ≥90% de los club-años de 2021-25 cargados o cerrados con motivo en Premier, LaLiga, Serie A, Bundesliga, Ligue 1 y Brasil; Argentina ≥60% (techo por falta de publicación). Alternativa: 80% de 10 temporadas (más caro: el sourcing de 2011-2020 es casi todo "buscado").
+
+### Presupuesto propuesto (API; Mistral ~US$0,2 por PDF sin `.md`, localizar+extraer+categorizar ~US$0,3 por PDF; cifras de `estado.mjs`)
+Premier ~25 · LaLiga ~30 · Serie A ~5 · Bundesliga ~10 · Brasil ~60 · Argentina ~10 · Ligue 1 ~20 (si se aprueba el criterio) = ~US$160, con margen. Primero los que ya tienen `.md` (más barato), ensayo gratis (`pipeline.mjs --max-paginas 0`) antes de cada corrida para fijar el costo exacto por liga.
