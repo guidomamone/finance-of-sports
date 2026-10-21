@@ -131,6 +131,13 @@
       "title": "Goiás Esporte Clube — demonstracoes-contabeis-2018 (ejercicio 2018)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "goias-br-demonstracoes-contabeis-2019",
+      "club_id": "goias-br",
+      "title": "Goiás Esporte Clube — demonstracoes-contabeis-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "members": null,
@@ -1137,6 +1144,118 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.167529,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":75.150413,"expenses":63.651475,"net_result":9.328969}
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "BRL",
+      "source_id": "goias-br-demonstracoes-contabeis-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2019-12-31"},
+      "revenue": [{"label":"RECEITA LÍQUIDA","category":"undisclosed","subcategory":"lump_football_operations","amount":90.846836,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Aluguéis de estádios","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.803977,"disclosure":"aggregated"},
+        {"label":"Arbitragens","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.774772,"disclosure":"aggregated"},
+        {"label":"Exames antidoping","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.10456,"disclosure":"aggregated"},
+        {
+          "label": "Custos e despesas c/ pessoal - Jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.207457,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Outros custos e despesas - Jogos",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.584446,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Taxas confederações e federações",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.918566,
+          "disclosure": "aggregated"
+        },
+        {"label":"Transportes","category":"match_operations","subcategory":"match_organisation_expense","amount":-1.940957,"disclosure":"aggregated"},
+        {
+          "label": "Alimentação e estadias",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.886772,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesa com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-41.358458,"disclosure":"aggregated"},
+        {
+          "label": "Amortização de custo de atletas contratados",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -5.597466,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortização de custo de atletas formados",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.655035,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortização de custo de atletas em formação",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.515373,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortização de custo de cessão de direitos de imagem",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -3.49069,
+          "disclosure": "aggregated"
+        },
+        {"label":"Despesa com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-9.260639,"disclosure":"aggregated"},
+        {"label":"Combustíveis e lubrificantes","category":"admin_general","subcategory":"admin_general_expense","amount":-0.112921,"disclosure":"aggregated"},
+        {"label":"Manutenção e conservação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.654933,"disclosure":"aggregated"},
+        {"label":"Propaganda e publicidade","category":"admin_general","subcategory":"admin_general_expense","amount":-0.113444,"disclosure":"aggregated"},
+        {"label":"Brindes","category":"admin_general","subcategory":"admin_general_expense","amount":-0.075266,"disclosure":"aggregated"},
+        {"label":"Alugueis","category":"admin_general","subcategory":"admin_general_expense","amount":-0.0055,"disclosure":"aggregated"},
+        {"label":"Despesas legais e judiciais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.134321,"disclosure":"aggregated"},
+        {
+          "label": "Água, telefone, energia e internet",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.137742,
+          "disclosure": "aggregated"
+        },
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.346744,"disclosure":"aggregated"},
+        {"label":"Lanches e refeições","category":"admin_general","subcategory":"admin_general_expense","amount":-0.513743,"disclosure":"aggregated"},
+        {"label":"Livros, revistas e periódicos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.00568,"disclosure":"aggregated"},
+        {"label":"Correios","category":"admin_general","subcategory":"admin_general_expense","amount":-0.012923,"disclosure":"aggregated"},
+        {"label":"Transportes","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.009994,"disclosure":"aggregated"},
+        {"label":"Despesas Administrativas","category":"admin_general","subcategory":"admin_general_expense","amount":-1.40763,"disclosure":"aggregated"},
+        {"label":"Depreciação e amortização","category":"depreciation","subcategory":"depreciation","amount":-1.522292,"disclosure":"aggregated"},
+        {"label":"Provisões para contingências","category":"admin_general","subcategory":"admin_general_expense","amount":-0.445186,"disclosure":"aggregated"},
+        {"label":"Despesas com materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-1.899769,"disclosure":"aggregated"},
+        {"label":"Profissões regulamentadas","category":"admin_general","subcategory":"admin_general_expense","amount":-0.00135,"disclosure":"aggregated"},
+        {"label":"Outros serviços","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.008541,"disclosure":"aggregated"},
+        {"label":"Manutenção geral","category":"admin_general","subcategory":"admin_general_expense","amount":-0.38984,"disclosure":"aggregated"},
+        {"label":"Consultoria e assessoria","category":"admin_general","subcategory":"admin_general_expense","amount":-3.607702,"disclosure":"aggregated"},
+        {"label":"Serviços gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.963973,"disclosure":"aggregated"},
+        {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-1.171809,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.401072,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":90.846836,"expenses":85.64047,"net_result":2.801865},
+      "adjustments": {
+        "no_breakdown": [{"line":"RECEITA LÍQUIDA","side":"revenue","amount":90.846836,"reason":"el documento no desglosa este renglón"}],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
     },
     {
       "fiscal_year": 2020,

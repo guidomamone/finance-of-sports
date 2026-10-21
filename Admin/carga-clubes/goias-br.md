@@ -537,6 +537,72 @@ tools/dentro-de-otro.mjs (2026-10-21): posiblemente dentro de otro rubro, por pr
 tools/cargar.mjs (2026-10-21): br-serieA, verificado contra roster cacheado de "2020 Campeonato Brasileiro Série A" (tools/club-league-reference/br.json), coincidencia exacta "Goiás".
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Goias/demonstracoes-contabeis-2019.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | RECEITA LÍQUIDA | pág. 8, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aluguéis de estádios | pág. 23, precedente |
+| 2 | Arbitragens | pág. 23, precedente |
+| 3 | Exames antidoping | pág. 23, precedente |
+| 4 | Custos e despesas c/ pessoal - Jogos | pág. 23, precedente |
+| 5 | Outros custos e despesas - Jogos | pág. 23, precedente |
+| 6 | Taxas confederações e federações | pág. 23, precedente |
+| 7 | Transportes | pág. 23, precedente |
+| 8 | Alimentação e estadias | pág. 24, precedente |
+| 9 | Despesa com pessoal | pág. 24, precedente |
+| 10 | Amortização de custo de atletas contratados | pág. 24, precedente |
+| 11 | Amortização de custo de atletas formados | pág. 24, precedente |
+| 12 | Amortização de custo de atletas em formação | pág. 24, Claude 0.8 |
+| 13 | Amortização de custo de cessão de direitos de imagem | pág. 24, precedente |
+| 14 | Despesa com pessoal | pág. 24, precedente |
+| 15 | Combustíveis e lubrificantes | pág. 24, precedente |
+| 16 | Manutenção e conservação | pág. 24, precedente |
+| 17 | Propaganda e publicidade | pág. 24, precedente |
+| 18 | Brindes | pág. 24, precedente |
+| 19 | Alugueis | pág. 24, Jev 0.95 |
+| 20 | Despesas legais e judiciais | pág. 24, precedente |
+| 21 | Água, telefone, energia e internet | pág. 24, precedente |
+| 22 | Seguros | pág. 24, precedente |
+| 23 | Lanches e refeições | pág. 24, precedente |
+| 24 | Livros, revistas e periódicos | pág. 24, precedente |
+| 25 | Correios | pág. 24, precedente |
+| 26 | Transportes | pág. 24, precedente |
+| 27 | Despesas Administrativas | pág. 24, precedente |
+| 28 | Depreciação e amortização | pág. 24, precedente |
+| 29 | Provisões para contingências | pág. 24, precedente |
+| 30 | Despesas com materiais | pág. 8, precedente |
+| 31 | Profissões regulamentadas | pág. 24, Jev 1 |
+| 32 | Outros serviços | pág. 24, Jev 0.97 |
+| 33 | Manutenção geral | pág. 24, Jev 1 |
+| 34 | Consultoria e assessoria | pág. 24, Jev 1 |
+| 35 | Serviços gerais | pág. 24, Jev 1 |
+| 36 | Despesas tributárias | pág. 8, precedente |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cierre = 2019-12-31. Relatório do auditor: balanço patrimonial em 31 de dezembro de 2019 (.md L37)
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-21): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2021, 2022, 2023, 2024, 2025)
+```
+
 ## 2018
 
 ### Ingresos
@@ -1509,4 +1575,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2019
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
