@@ -798,6 +798,15 @@
         "period_end": {
           "$ref": "#/$defs/fecha"
         },
+        "period_months": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 36,
+          "not": {
+            "const": 12
+          },
+          "description": "Meses del ejercicio, solo si no son 12 (sin el campo, 12). Un ejercicio de menos de 12 (tramo de transición por cambio de cierre) no entra al ranking por año, a la mediana de la liga ni a las variaciones interanuales."
+        },
         "currency": {
           "$ref": "#/$defs/moneda"
         },

@@ -70,7 +70,9 @@ const schema = {
     linea_ingreso: linea('revenue'), linea_gasto: linea('expense'),
     fx: objeto({ ref: texto, rate: num, source: texto }),
     anio: objeto({
-      fiscal_year: { type: 'integer' }, period_end: { $ref: '#/$defs/fecha' }, currency: { $ref: '#/$defs/moneda' }, fx: { $ref: '#/$defs/fx' },
+      fiscal_year: { type: 'integer' }, period_end: { $ref: '#/$defs/fecha' },
+      period_months: { type: 'integer', minimum: 1, maximum: 36, not: { const: 12 }, description: 'Meses del ejercicio, solo si no son 12 (sin el campo, 12). Un ejercicio de menos de 12 (tramo de transición por cambio de cierre) no entra al ranking por año, a la mediana de la liga ni a las variaciones interanuales.' },
+      currency: { $ref: '#/$defs/moneda' }, fx: { $ref: '#/$defs/fx' },
       source_id: { type: ['string', 'null'] }, report_type: texto, management_id: { type: ['string', 'null'] },
       revenue: { type: 'array', items: { $ref: '#/$defs/linea_ingreso' } }, expenses: { type: 'array', items: { $ref: '#/$defs/linea_gasto' } },
       financial: objeto(solo(C.FINANCIERO, numONull)), official_totals: objeto(solo(C.TOTALES, numONull)),
