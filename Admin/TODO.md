@@ -29,20 +29,21 @@ el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
 1. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar
-2. 317 (Pruebas 1): revisar los 43 años sin cargar que marca `ejercicio-sin-rastro`
+2. 345: documentos en mano sin cargar (lote de onboarding; falta tu presupuesto)
+3. 346: sourcing con vía concreta (Brasil, Alemania, Italia, Bélgica, Suiza)
 
 **C. Técnico**
-3. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
+4. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
 
 **D. Orden de la casa**
-4. 338: correr todas las auditorías del proyecto (al final de A)
-5. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+5. 338: correr todas las auditorías del proyecto (al final de A)
+6. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-6. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-7. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-8. 335: mails a clubes
-9. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+7. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+8. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+9. 335: mails a clubes
+10. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
@@ -60,6 +61,13 @@ el número de la izquierda es el orden de trabajo.
    skill, a una convención o a un chequeo; la memoria no es el lugar de una regla de trabajo. Repasar cada memoria y decidir a dónde va.
    Y algo que cuide que un cambio de skill no se aplique sin que Guido haya visto el texto exacto (pasó tres veces el 2026-10-20: el texto
    quedaba detrás del cuadro de pregunta). Por ejemplo, que el hook de skills exija el texto propuesto en un archivo de `Admin/` ya commiteado.
+345. DOCUMENTOS EN MANO SIN CARGAR (Pruebas 1, 2026-10-21, revisando `ejercicio-sin-rastro`). Lista con rutas en `Admin/sesiones/pipeline.md`,
+   «Revisión de la cola del chequeo»: Chapecoense 2019, FC Emmen 2020-21, FC Fredericia 2021-25, los 2025 daneses en XHTML (ESEF), SønderjyskE
+   2023-24, Fredrikstad 2019-23, Sarpsborg 08 2009-11, Vålerenga 2024, Genoa 2024, Girona 2021-23, Lierse Kempenzonen 2022, RAAL 2020, Omonia 29is
+   Maiou 2024. Es un lote de onboarding: necesita presupuesto de Guido. El XHTML danés no lo lee el pipeline hoy.
+346. SOURCING CON VÍA CONCRETA (Pruebas 1, 2026-10-21). Ferroviária 2011 y Novorizontino 2011-12 (repositorio de la federación paulista), Goiás
+   2019, Mönchengladbach y VfB Stuttgart 2025 (Unternehmensregister), Monza 2025, Lierse Kempenzonen 2023-25 (API de la BNB), Basel 2022 (la nota
+   dice que no hay PDF pero está `geschaeftsbericht_2022-23.pdf`), Fiorentina 2020. Detalle y notas en `Admin/sesiones/pipeline.md`.
 258. ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
    clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
    3.000 ~200 KB. Todavía no. Se reabre cuando lo que se baja siempre pase 150 KB comprimidos (~2.200 clubes) o esos dos archivos pasen 1 MB

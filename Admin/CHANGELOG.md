@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 924 — Años sin rastro revisados (2026-10-21) [317 · 345 · 346 · acmilan-it, lazio-it, sampdoria-it, chievoverona-it, osasuna-es, almagro-ar, ferrocarriloeste-ar, losandes-ar]
+- `ejercicio-sin-rastro` no reporta un año cerrado hace menos de 9 meses (Auditora 4): 23 clubes y 41 club-años. Silenciados con motivo 8 clubes sin documento publicado y ya buscados.
+- Dos listas nuevas en el TODO: documentos en mano sin cargar (345) y sourcing con vía concreta (346).
+
 ## Versión 923 — Inicio sin conteos; archivar solo si Guido lo pide (2026-10-21) [344 · 257]
 - 344: Inicio ya no dice cuántos clubes, países y ejercicios hay ni «N clubes con balance»; el ranking con US$ queda. Ligas e Inicio probados abiertos como archivo (Chrome sin ventana: cómo, en PANTALLA.md).
 - Skill principal: una sesión que terminó queda abierta; se archiva solo si Guido lo pide (ok de Guido; la memoria se borró). El matcher de los hooks suma archivar, abrir una sesión y cambiar de modelo.
