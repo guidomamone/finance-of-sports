@@ -50,3 +50,21 @@
 - `Ligas/Japón/J.League/jleague-kashitaishohyo-2025.pdf`, `jleague-sonekikeisansho-2025.pdf`, `jleague-kansahokoku-2025.pdf`
 
 ## Después del merge del 2026-10-18 (2)
+
+## Auditora 3: votación de dos criterios de Bath Rugby (to-do 248), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Dos reglas votadas en `Admin/CONVENCIONES-DATOS.md` y dos líneas en `Admin/registros/auditoria-proceso.jsonl`: el anticipo de CVC va a `other_income` (3 a 0) y el «Fair value movements» de 2021 va a `other_income` (2 a 1). Registradas en `reglas-categoria`. No se cargó nada.
+
+### Qué queda (para TODO / 248)
+
+- Plan 248, decisión 10: corregir. El documento imprime «CVC income» como fila aparte, no dentro de «Central income»; `central_income` queda solo con PRL y RFU. Decisión 13: `assetSales` queda descartado.
+- Datos 4: con la revaluación en `other_income`, los ingresos de 2021 (11,6 + 0,15 + 6,66) no igualan el Turnover impreso; hay que contemplarlo en el chequeo contra Turnover y silenciar ambos porcentajes en `tools/audit-ignore.json`. 2021 no tiene `.md` (falta transcribir 2020-21).
+- Las `publicNote` de 2021 a 2023 explican el diferimiento del anticipo y la revaluación no realizada.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada (Bath aún no está cargado).
+
+- Las dos reglas de Bath quedaron sin `EJEMPLO-CATEGORÍA`: `reglas-categoria.mjs` exige un club que esté en `data/clubs.js` y `bath-gb` todavía no está. Agregarlos (`bath-gb | revenue | CVC income | other_income` y `bath-gb | revenue | Fair value movements | other_income`) cuando se dé de alta el club, y correr `node tools/reglas-categoria.mjs --escribir`. Además la tool falla hoy por una regla ajena (L386, `rosariocentral` no está en `data/clubs.js`), así que `--escribir` no registró nada.
