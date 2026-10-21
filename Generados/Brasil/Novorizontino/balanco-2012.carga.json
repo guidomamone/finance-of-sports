@@ -1,0 +1,481 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2012.pdf",
+ "generado": "2026-10-21T14:52:41.263Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-03: Guido 2026-10-02: una sola entidad (associação hasta 2023, SAF después); 'Consolidado' es el membrete del auditor (Verdus), no un estado consolidado)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-21, El estado de resultados 2012 de Novorizontino (primer año competitivo, Segunda Divisão Paulista) no trae ningún ingreso de televisión: su receita bruta son donaciones, subvenciones, patrocinio, locación de cadeiras, ingressos, convênio y direitos federativos (.md L39-65))"
+ ],
+ "ejercicio": {
+  "clubId": "novorizontino-br",
+  "year": 2012,
+  "cierre": "2012-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "DOACOES RECEBIDAS",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.023534,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "SUBVENCÕES E CONVÊNIOS MUNICIPAL",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.119143,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "RECEITA PATROCINIO E PUBLICIDADE",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.711565,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "RECEITA DE LOCAÇÃO DE CADEIRAS DE ASSOCIADOS",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 0.043847,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "VENDAS DE INGRESSOS",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.387359,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "CONVENIO PREF. MUN. CMDCA",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.012,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "DIREITOS FEDERATIVOS DE ATLETAS",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.00424,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "DESPESAS ADMINISTRATIVAS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.563753,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "DESPESAS TRIBUTARIAS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.003527,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "DESPESAS OPERACIONAIS",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -0.641612,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "CONVENIO PREF.N.HORIZ. 08/2012- ESCOLA FUTEBOL",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.131182,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2012-12-31",
+   "sourceId": "novorizontino-br-balanco-2012",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.003413,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "DESPESAS FINANCEIRAS",
+     "value": -0.003629
+    },
+    {
+     "label": "RECEITAS FINANCEIRAS",
+     "value": 0.000216
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "DESPESAS OPERACIONAIS",
+     "lado": "expense",
+     "importe": 0.641612,
+     "motivo": "Claude 2026-10-21: DESPESAS OPERACIONAIS (641.611,65) es el gasto operativo del club sin desglose en el estado (.md L95-97): fútbol sin desglosar, como los otros años de Novorizontino sin detalle"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 1.301688,
+   "officialTotalExpenses": 1.340073,
+   "officialPAT": -0.041797
+  },
+  "source": {
+   "id": "novorizontino-br-balanco-2012",
+   "clubId": "novorizontino-br",
+   "title": "Grêmio Novorizontino Sociedade Anônima do Futebol — balanco-2012 (ejercicio 2012)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Novorizontino/balanco-2012.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2012-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "novorizontino-br",
+ "year": 2012,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2012.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "El estado de resultados 2012 de Novorizontino (primer año competitivo, Segunda Divisão Paulista) no trae ningún ingreso de televisión: su receita bruta son donaciones, subvenciones, patrocinio, locación de cadeiras, ingressos, convênio y direitos federativos (.md L39-65)",
+   "evidencia": "pág. 1 del visor, .md L35-65",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 13,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "DOACOES RECEBIDAS",
+   "page": 1,
+   "native": 0.023534,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.023534,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.023534
+  },
+  {
+   "label": "SUBVENCÕES E CONVÊNIOS MUNICIPAL",
+   "page": 1,
+   "native": 0.119143,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.119143,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.119143
+  },
+  {
+   "label": "RECEITA PATROCINIO E PUBLICIDADE",
+   "page": 1,
+   "native": 0.711565,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.711565,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.711565
+  },
+  {
+   "label": "RECEITA DE LOCAÇÃO DE CADEIRAS DE ASSOCIADOS",
+   "page": 1,
+   "native": 0.043847,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.043847,
+   "cat": "season_tickets",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.043847
+  },
+  {
+   "label": "VENDAS DE INGRESSOS",
+   "page": 1,
+   "native": 0.387359,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.387359,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.387359
+  },
+  {
+   "label": "CONVENIO PREF. MUN. CMDCA",
+   "page": 1,
+   "native": 0.012,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.012,
+   "cat": "other_income",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.012
+  },
+  {
+   "label": "DIREITOS FEDERATIVOS DE ATLETAS",
+   "page": 1,
+   "native": 0.00424,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.00424,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.00424
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "page": 1,
+   "native": 0.563753,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.563753,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.563753
+  },
+  {
+   "label": "DESPESAS TRIBUTARIAS",
+   "page": 1,
+   "native": 0.003527,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.003527,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.003527
+  },
+  {
+   "label": "DESPESAS OPERACIONAIS",
+   "page": 1,
+   "native": 0.641612,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.641612,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21: DESPESAS OPERACIONAIS (641.611,65) es el gasto operativo del club sin desglose en el estado (.md L95-97): fútbol sin desglosar, como los otros años de Novorizontino sin detalle",
+   "destino": "expense",
+   "amountNative": -0.641612
+  },
+  {
+   "label": "CONVENIO PREF.N.HORIZ. 08/2012- ESCOLA FUTEBOL",
+   "page": 1,
+   "native": 0.131182,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.131182,
+   "cat": "youth_other_sports_expense",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.131182
+  },
+  {
+   "label": "DESPESAS FINANCEIRAS",
+   "page": null,
+   "native": -0.003629,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "page": null,
+   "native": 0.000216,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 1.301688,
+  "expSum": -1.340074,
+  "officialTotalRevenue": 1.301688,
+  "officialTotalExpenses": 1.340073,
+  "officialPAT": -0.041797,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.041797,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 1.301688
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 1.340073
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2012,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2012-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (8 de 8 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "escalón 1: estado de resultados corto de una columna, con título y período de 12 meses en la primera página",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-03)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2012-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2012-12-31 = 2.0435 (PTAX de cierre (venda) del Banco Central do Brasil al 2012-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "novorizontino-br-balanco-2012",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no aparece en los rosters cacheados de 2012 (br-serieA, br-serieB, br-serieC, br-paulistaA3, br-paulistaA2): puede haber jugado otra división",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 7,
+  "lineasGasto": 4,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2012.md",
+ "clave": "13764e81e53174f305895c4813a6578990f8a8d2",
+ "generado": "2026-10-21T14:33:28.843Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Se cargan todos los renglones de ingresos (L40-L46) y de gastos/financieros (L51-L56); los subtotales (L39, L47-L50, L57-L60) se excluyen correctamente. La suma reproduce el resultado líquido de (41.797,46)."
+ }
+}
