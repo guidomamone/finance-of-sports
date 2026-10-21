@@ -30,9 +30,9 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * 333: queda solo Mi Cuenta: una búsqueda guardada con un id viejo se duplica al volver a guardarla; pide una migración SQL en Supabase o que `save_search` busque también por la clave vieja (son pocas filas)
 
 **B. Pantallas y distribución**
-* Vålerenga (en marcha, Pantallas 4): la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
+* 334 (en marcha, Pipeline 9): `suma-entidades.mjs` pone el prefijo «AS · » / «Elite · » al sumar dos entidades, para que una recarga no lo pise
 * 282: quién audita, lo que queda: 56 informes del auditor sin canal público, solo por mail al club (espera que decidas si se escribe)
-* 241 (en marcha, Pantallas 4: primero el mockup, para tu ok): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
+* 241 (mockup listo, espera tu ok a las 3 decisiones de `Admin/mediciones/241-plan.md`): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
 * 259: material de difusión (después de 241)
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
@@ -190,3 +190,5 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 333. MI CUENTA CON IDS VIEJOS (revisión Opus del 245 y el 246, 2026-10-20). Lo demás del 333 está hecho. Queda: una búsqueda guardada en
    `saved_searches` con un id viejo genera otro `state_hash` al volver a guardarse y queda duplicada. Arreglo: una migración SQL en Supabase,
    o que `save_search` busque también por la clave vieja. El parche de `js/cuenta.js` que se rechazó, en la nota de Pipeline 8.
+334. PREFIJO DE ENTIDAD EN LA SUMA (cierre de Pantallas 4, 2026-10-20). Vålerenga 2022 y 2023 llevan «AS · » y «Elite · » en cada etiqueta, puesto a mano
+   en el JSON. Si `cargar.mjs` vuelve a escribir esos años, lo pisa: `combinar()` de `tools/suma-entidades.mjs` tiene que ponerlo. Ålesund usa el mismo ajuste.

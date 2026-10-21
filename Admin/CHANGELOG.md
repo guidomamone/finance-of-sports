@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 878 — Etiquetas de Vålerenga por entidad y plan del 241 (2026-10-20) [241 · 334 · valerenga-no]
+
+- Vålerenga 2022 y 2023: cada renglón dice si es del AS o del Elite («AS · », «Elite · »); los números no cambian. ASSET_V 1524.
+- 241: plan y mockup del link propio por club y liga (`Admin/mediciones/241-plan.md`), sin código; espera el ok de Guido.
+
 ## Versión 877 — Lo no bloqueante de la revisión del 245 y el 246 (2026-10-20) [333 · racing-ar]
 
 - `generar-data.mjs --check` marca un `-data.js` sin JSON (P1); `worktree.mjs` trata `data/<iso>/*-data.js` como generado y corre `generar-data`
