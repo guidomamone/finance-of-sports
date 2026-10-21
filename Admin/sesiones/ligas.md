@@ -68,3 +68,20 @@
 - Nada (Bath aún no está cargado).
 
 - Las dos reglas de Bath quedaron sin `EJEMPLO-CATEGORÍA`: `reglas-categoria.mjs` exige un club que esté en `data/clubs.js` y `bath-gb` todavía no está. Agregarlos (`bath-gb | revenue | CVC income | other_income` y `bath-gb | revenue | Fair value movements | other_income`) cuando se dé de alta el club, y correr `node tools/reglas-categoria.mjs --escribir`. Además la tool falla hoy por una regla ajena (L386, `rosariocentral` no está en `data/clubs.js`), así que `--escribir` no registró nada.
+
+## Auditora 4: las 4 condiciones nuevas del to-do 339 (Pipeline 11), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Cuatro veredictos en `Admin/registros/auditoria-proceso.jsonl`, sobre `Admin/mediciones/339-inventario.md` sección 5: las cuatro aprobadas, cada una con un cambio (la 3, con dos). No se codeó nada.
+
+### Qué queda (para TODO / 339, lo hace Pipeline 11 después del 248)
+
+- Filtro de ejemplos: contra la unión ingreso+gasto del deporte, no por lado (si no, el fútbol deja de ser idéntico por 13 líneas cruzadas). Aceptación: backtest de Jev y prompt de Claude de fútbol byte por byte iguales.
+- `CATEGORÍA (prompt, deporte)`: el validador exige deporte válido e ids de la frase presentes en la taxonomía de la regla; la regla del CVC nombra `central_income` y hay que reescribirla o marcarla rugby.
+- Tabla de ceros: una sola para `CATS_CERO` (5 entradas), el chequeo de L798 (3) y `LADO_CERO` de verificar; clave explícita por deporte activo (rugby `{}`) con chequeo en `audit.js`; las preguntas de perfil (socios, otros deportes) se saltean sin tabla.
+- Deporte sin declarar: leer ficha, luego la liga de `data/leagues.js`, luego menciones; preguntar solo si nada responde, y sumar `sport` a los campos que cortan el alta. Medido: 31 de 400 carpetas (700 de 3.673 documentos) no mencionan el fútbol; sin la liga como fuente, esas altas legítimas se frenarían.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
