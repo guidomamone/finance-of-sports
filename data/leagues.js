@@ -9,7 +9,7 @@ const SPORTS = [
   { id:'nfl',     key:'sport.nfl',     name:'Fútbol americano',   icon:'🏈', active:false },
   { id:'f1',      key:'sport.f1',      name:'Automovilismo',      icon:'🏎️', active:false },
   { id:'tenis',   key:'sport.tenis',   name:'Tenis',              icon:'🎾', active:false },
-  { id:'rugby',   key:'sport.rugby',   name:'Rugby',              icon:'🏉', active:false },
+  { id:'rugby',   key:'sport.rugby',   name:'Rugby',              icon:'🏉', active:true  },
 ];
 
 // REGIONES. Las que no tienen clubes se muestran apagadas por el conteo real, no por un flag.
@@ -84,6 +84,7 @@ const LEAGUES = {
   'gb-premierleague':  { name:'Premier League',        full:'Premier League',                      country:'GB', sport:'futbol', tier:1 },
   'gb-championship':   { name:'Championship',          full:'EFL Championship',                    country:'GB', sport:'futbol', tier:2 },
   'gb-scottishpremiership': { name:'Premiership',       full:'Scottish Premiership',                country:'GB', sport:'futbol', tier:1 },
+  'gb-premiershiprugby': { name:'Premiership Rugby',   full:'Premiership Rugby',                   country:'GB', sport:'rugby',  tier:1 },
   'ee-meistriliiga':   { name:'Meistriliiga',           full:'Meistriliiga de Estonia',             country:'EE', sport:'futbol', tier:1 },
   'gr-superleague':    { name:'Super League',           full:'Super League Greece',                 country:'GR', sport:'futbol', tier:1 },
   'tr-superlig':       { name:'Süper Lig',              full:'Süper Lig de Turquía',                country:'TR', sport:'futbol', tier:1 },

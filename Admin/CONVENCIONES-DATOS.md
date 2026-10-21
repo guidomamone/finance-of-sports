@@ -390,7 +390,7 @@ byte no hace falta: el inventario los marca `duplicado`.
 Los ingresos de la tienda del club (Rosario Central, Talleres) van a `sponsorship_commercial`, que ya incluye el merchandising. No se crean
 `merchandise_sales` ni `cost_of_goods_sold`. El costo de la mercadería vendida queda donde está cargado.
 
-CATEGORÍA (prompt): los ingresos de la tienda del club (merchandising, «tienda», «ventas tiendas», «store») van a sponsorship_commercial; no hay categoría propia de merchandising ni de costo de la mercadería, y ese costo queda donde está cargado.
+CATEGORÍA (prompt, futbol): los ingresos de la tienda del club (merchandising, «tienda», «ventas tiendas», «store») van a sponsorship_commercial; no hay categoría propia de merchandising ni de costo de la mercadería, y ese costo queda donde está cargado.
 EJEMPLO-CATEGORÍA: rosariocentral-ar | revenue | Ingresos por ventas tiendas | sponsorship_commercial
 EJEMPLO-CATEGORÍA: talleres-ar | revenue | Ingresos por tienda netos de costo de venta | sponsorship_commercial
 
@@ -420,7 +420,7 @@ documento (una nota de reglas de evaluación, el Jaarverslag con la cifra) diga 
 "probablemente…"). Casos: Dender (`depreciation`), Charleroi y Anderlecht (confirmados por texto: `player_amortisation`), Mechelen 2025 (sin
 confirmación: pasa a `depreciation` el 1,11 M y a `other_income` el 8,54 M). Westerlo y Antwerp: mirar si tienen la confirmación por texto.
 
-CATEGORÍA (prompt): en Bélgica, el intangible «Concessies, octrooien, licenties…» y su amortización van a depreciation, y el residuo de «Andere bedrijfsopbrengsten» a other_income, salvo que el documento diga que es de jugadores o de transferencias (entonces player_amortisation y player_sales); no agregues palabras que el documento no imprime.
+CATEGORÍA (prompt, futbol): en Bélgica, el intangible «Concessies, octrooien, licenties…» y su amortización van a depreciation, y el residuo de «Andere bedrijfsopbrengsten» a other_income, salvo que el documento diga que es de jugadores o de transferencias (entonces player_amortisation y player_sales); no agregues palabras que el documento no imprime.
 
 ## REGLA: la ganancia por vender inversiones o filiales (también a la matriz) va a `assetSales`, no a los ingresos (votación 3 a 0, 2026-10-20)
 
@@ -432,7 +432,7 @@ Everton 2025 (£49,2 M, venta de Everton FC Women y Goodison Park Stadium a la m
 
 Un bono pagado a personas, sin contrato de pase con otro club, es remuneración, no `player_amortisation` (que es adquisición de pases a otros clubes).
 Caso: Deportivo Pereira 2025, "Trayectoria deportiva" (8,9 % de los gastos).
-CATEGORÍA (prompt): un bono de fichaje o de trayectoria pagado a jugadores y técnicos por nombre, sin contrato de pase con otro club, va a wages_squad, no a player_amortisation.
+CATEGORÍA (prompt, futbol): un bono de fichaje o de trayectoria pagado a jugadores y técnicos por nombre, sin contrato de pase con otro club, va a wages_squad, no a player_amortisation.
 EJEMPLO-CATEGORÍA: deportivopereira-co | expense | Trayectoria deportiva | wages_squad
 
 ## REGLA: `officialPAT` de un consolidado alemán con partner silencioso o minoritarios es el resultado ANTES de esas asignaciones (votación 3 a 0, 2026-10-20)
@@ -462,7 +462,7 @@ y Gimnasia), va a `player_sales`. Si viene dentro de "Otros ingresos" sin desglo
 Un ingreso por derecho de tanteo que el documento no liga a una transferencia ya hecha ni a "Ingresos venta de jugadores" va a `other_income`: en
 `player_sales` el lector entendería que se vendió un jugador. Si el documento lo liga a una venta concreta, vuelve a `player_sales`. Caso: Godoy Cruz 2020,
 "Ingreso por Derechos de Tanteo" 38,59 M (6,3 % de los ingresos): pasa a `other_income`; la "Rescisión de Contrato" (2,35 M, 0,4 %) queda en `player_sales`.
-CATEGORÍA (prompt): un ingreso por derecho de tanteo que el documento no liga a una transferencia ya hecha va a other_income, no a player_sales.
+CATEGORÍA (prompt, futbol): un ingreso por derecho de tanteo que el documento no liga a una transferencia ya hecha va a other_income, no a player_sales.
 EJEMPLO-CATEGORÍA: godoycruz-ar | revenue | Ingreso por Derechos de Tanteo | other_income
 
 ## REGLA: entidades del club, grupos multiclub e ingresos de las otras entidades
@@ -525,7 +525,7 @@ Cuando el estado de resultados junta en una línea la amortización de los derec
 de la línea que junta dos conceptos). Precedente: Silkeborg 2024 y Viborg 2024 ya estaban partidos. Casos: Silkeborg 2025 (12.670 = Note 10
 6.502 + Note 11 6.168) y Viborg 2025 (18.375.737 = 15.751.691 + 2.624.046). Registro: `Admin/registros/auditoria-proceso.jsonl`.
 
-CATEGORÍA (prompt): una línea que junta la amortización de derechos de jugadores y la depreciación de bienes de uso se parte con los importes de las notas (jugadores a player_amortisation, bienes de uso a depreciation); si las notas no la abren, va entera a player_amortisation.
+CATEGORÍA (prompt, futbol): una línea que junta la amortización de derechos de jugadores y la depreciación de bienes de uso se parte con los importes de las notas (jugadores a player_amortisation, bienes de uso a depreciation); si las notas no la abren, va entera a player_amortisation.
 
 ## REGLA: una gestión (presidente) sin fuente pública queda en null (Guido, 2026-10-20)
 
@@ -565,6 +565,7 @@ de 2019. Medido: £3,3 M (28 % de los ingresos de 2021, 17 % de 2022) y £2,4 M 
 Bath no lo trata como venta: no sale de la regla de la venta a un fondo (misma dirección, hecho distinto).
 
 CATEGORÍA (prompt): el anticipo de un fondo de inversión (CVC) sobre derechos comerciales de la liga, reconocido en cuotas por el club, va a other_income como fila aparte; no al reparto central de la liga.
+EJEMPLO-CATEGORÍA: bathrugby-gb | revenue | CVC income | other_income
 
 ## REGLA: una revaluación no realizada de una inversión impresa fuera de los ingresos va a `other_income`, no a `assetSales` (votación 2 a 1, 2026-10-20, Bath Rugby 2021)
 
@@ -575,3 +576,4 @@ sin ella el resultado operativo pasa de −£0,11 M a −£6,77 M: se silencia e
 Turnover impreso (11,6): el cierre contra el resultado operativo impreso (−£105.875) sí cierra; el chequeo contra Turnover lo tiene que contemplar Datos 4.
 
 CATEGORÍA (prompt): una revaluación no realizada de una inversión a valor razonable (Fair value movements), sin cobro, va a other_income con nota que lo aclare; nunca a asset_sales ni a una venta.
+EJEMPLO-CATEGORÍA: bathrugby-gb | revenue | Fair value movements | other_income

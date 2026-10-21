@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.md",
+ "generado": "2026-10-21T03:11:19.371Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "£ £ £ £",
+ "caja": {
+  "lineas": [
+   744
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   747,
+   751
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no desglosa la deuda: las líneas 747 y 751 son totales de acreedores (a menos y a más de un año) que incluyen el préstamo DCMS y el préstamo del propietario, pero también cuentas comerciales y otros conceptos. Se eligieron como aproximación y el detalle está en las notas 13 y 14. No hay indicación expresa de escala; se asume unidades por las cifras completas en £."
+}
