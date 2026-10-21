@@ -56,6 +56,8 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   - **Onboarding solo carga.** No edita `tools/`. Si un documento frena por un defecto de script, lo anota en
     `Admin/registros/frenados-por-script.jsonl` (una línea: `{"pdf", "defecto", "detalle", "sesion", "fecha"}`; `defecto` es la letra del
     TODO si ya existe, o una descripción corta), lo deja y sigue con el resto. No le pregunta a Guido por eso.
+    Si lo destraba a mano (edita un JSON, un ajuste, `club-leagues`, `contexto-manual` o corre un paso distinto), también lo anota ahí,
+    con qué hizo y qué tendría que hacer la tool: un arreglo a mano que no se comparte se vuelve a pagar en la próxima carga (Guido).
   - **Antes de frenar un año, la Auditora** (Guido, 2026-10-20). Si un documento no cierra, queda con casos en la cola sin precedente o iría a
     `Admin/dudas-por-club.md`, Onboarding no lo deja parado: le manda el caso a la Auditora, que lo clasifica: (a) se resuelve con un ajuste
     con precedente (devuelve cuál, con la cita, y Onboarding lo carga); (b) es un criterio nuevo (votación, con la regla de materialidad);
