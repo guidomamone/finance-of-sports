@@ -1952,8 +1952,9 @@ function checkDeportes() {
 // (to-do 339 c) LA COMA DECIMAL QUE EL OCR SE COME. Una tabla en £m / M con un decimal sale de la transcripción con «Central income 5.3 74 (2.1)» por 7.4 (Bath 2023-24 L162).
 // Regla: una fila de tres cifras A B C con al menos una con decimal, donde C NO es la diferencia de A y B, pero SÍ lo es si un entero sin coma (A o B) se divide por 10.
 // Aviso P2, no frena nada: Admin/mediciones/339-condicion-coma.md (medida: 4 marcadas en 3.677 .md, 0 falsas). Se silencia con tools/audit-ignore.json (code coma-comida) tras mirar la fuente.
+// Una cifra registrada en Admin/registros/rarezas.jsonl (tools/rarezas.mjs: ya se miró y es así en el documento) no se marca; otra cifra de la misma tabla, sí.
 function checkComaComida() {
-  const R = path.join(ROOT, 'Clubes');
+  const R = path.join(ROOT, 'Clubes'); const R_ = require('./rarezas.mjs');
   const num = (t) => { const neg = /^\(.*\)$/.test(t) || t.startsWith('-'); const v = parseFloat(t.replace(/[()\-,]/g, '')); return neg ? -v : v; };
   const TOK = '(\\(?-?\\d+\\.\\d\\)?|\\(?-?\\d+\\)?)';
   const re = new RegExp('^[|\\s]*([A-Za-z][^|\\d]{2,60}?)[|\\s]+' + TOK + '[|\\s]+' + TOK + '[|\\s]+' + TOK + '[|\\s]*$');
@@ -1966,11 +1967,18 @@ function checkComaComida() {
       const [a, b, c] = t.map(num); if (cierra(a, b, c)) return;
       for (const k of [0, 1]) {
         const v = [a, b]; v[k] = v[k] / 10;
-        if (!t[k].includes('.') && cierra(v[0], v[1], c)) { add('P2', 'coma-comida', `${path.relative(ROOT, f)} L${i + 1}: «${l.trim().slice(0, 80)}» — la cifra ${k + 1} (${t[k]}) parece haber perdido la coma decimal (con ÷10 la fila cierra); corregir el .md o silenciar tras mirar el documento`); break; }
+        if (!t[k].includes('.') && cierra(v[0], v[1], c) && !R_.rarezaEn(path.relative(ROOT, f), i + 1, t[k])) { add('P2', 'coma-comida', `${path.relative(ROOT, f)} L${i + 1}: «${l.trim().slice(0, 80)}» — la cifra ${k + 1} (${t[k]}) parece haber perdido la coma decimal (con ÷10 la fila cierra); corregir el .md o silenciar tras mirar el documento`); break; }
       }
     });
   };
   if (fs.existsSync(R)) walk(R);
+}
+
+// LAS RAREZAS QUE PERDIERON SU TEXTO (tools/rarezas.mjs, regla de CONVENCIONES «UNA RAREZA DEL DOCUMENTO YA REVISADA…»). Una rareza cubre un hallazgo
+// solo si su texto sigue en su línea ±3; si una re-transcripción lo movió, ya no cubre nada (no tapa, pero la revisión se pierde): hay que moverla.
+function checkRarezas() {
+  const R_ = require('./rarezas.mjs');
+  for (const r of R_.sinSuTexto()) add('P3', 'rareza-sin-su-texto', `Admin/registros/rarezas.jsonl: ${r.md}:${r.linea} «${r.texto}» ya no está en esa línea ±3 (¿se re-transcribió?). Buscá el texto en el .md y registrala de nuevo con tools/rarezas.mjs, o sacala`);
 }
 
 // (to-do 339) PRUEBA DE DEPORTE: por cada deporte con taxonomía distinto del fútbol se arma EN MEMORIA un club de muestra (una línea por subcategoría de ingreso y de gasto) y se
@@ -2157,6 +2165,7 @@ function main() {
   checkReglasCategoria();
   checkDeportes();
   checkComaComida();
+  checkRarezas();
   checkEjercicioSinRastro();
   pruebaDeDeporte(api);
 
