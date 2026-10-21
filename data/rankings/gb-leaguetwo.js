@@ -9,6 +9,9 @@ window.RANKINGS["gb-leaguetwo"] = {
         sourceId:"afcwimbledon-gb-full-accounts-2024-25-ixbrl",
         mix:[["Comercial / Sponsors",2.839],["Estadio",8.026],["Venta de Jugadores",1.332],["Otras secciones deportivas",0.748],["Otros ingresos",3.342]],
         incluidos:[["Televisión","Estadio",1]] },
+      { id:"carlisleunited-gb", revenue:9.727, reportType:"official_balance_sheet",
+        sourceId:"carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl",
+        mix:[["Comercial / Sponsors",2.422],["Estadio",2.925],["Televisión",3.213],["Premios por competencias",0.831],["Otros ingresos",0.336]] },
     ],
   },
 };

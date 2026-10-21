@@ -327,6 +327,7 @@ const clubs = {
   'afcwimbledon-gb': { id:'afcwimbledon-gb', name:'AFC Wimbledon Limited', displayName:'AFC Wimbledon', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#2B4690' },
   'barnsley-gb': { id:'barnsley-gb', name:'Barnsley Football Club Limited', displayName:'Barnsley', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D71921' },
   'burtonalbion-gb': { id:'burtonalbion-gb', name:'The Albion Football Club (Burton on Trent) Limited', displayName:'Burton Albion', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FDE92B' },
+  'carlisleunited-gb': { id:'carlisleunited-gb', name:'Carlisle United Association Football Club (1921) Limited', displayName:'Carlisle United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#007ABC' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.

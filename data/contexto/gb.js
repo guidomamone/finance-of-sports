@@ -60,6 +60,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'burtonalbion-gb': {
     2025: {"estadio":"Pirelli Stadium","capacidad":6912,"sponsor":"Burton Kia","marca":"TAG Sportswear","temporada":"2024–25 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378041093","fuenteManual":"https://www.footballkitarchive.com/burton-albion-2024-25-home-kit/ (marca TAG) y la referencia de https://en.wikipedia.org/wiki/Burton_Albion_F.C. «Burton Kia are 24/25 front of shirt sponsor»; capacidad: misma página de Wikipedia","manual":["estadio","capacidad","sponsor","marca"]},
   },
+  'carlisleunited-gb': {
+    2025: {"estadio":"Brunton Park","capacidad":17949,"sponsor":"Aqua Pura","marca":"Umbro","temporada":"2024–25 EFL League Two","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378041142","fuenteManual":"https://www.carlisleunited.co.uk/news/202425-kits (kits 2024-25, Umbro, Aqua Pura en el pecho; capacidad del infobox de https://en.wikipedia.org/wiki/Carlisle_United_F.C.)","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'celtic-gb': {
     2021: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","fuente":"https://en.wikipedia.org/wiki/Celtic_Park","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"}},
     2022: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","fuente":"https://en.wikipedia.org/wiki/Celtic_Park","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"}},
