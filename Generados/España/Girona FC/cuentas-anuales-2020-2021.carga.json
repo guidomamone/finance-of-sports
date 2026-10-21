@@ -1,0 +1,730 @@
+{
+ "pdf": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf",
+ "generado": "2026-10-21T13:55:35.705Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "girona-es",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "a) Ventas",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.439514,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "b) Prestaciones de servicios",
+    "normalizedCategory": "other_income",
+    "amountNative": 10.280324,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Ingresos accesorios y otros de gestión corriente",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.532552,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.122984,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.20503,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "10. Excesos de provisiones",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.026219,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Resultados por enajenaciones y otras",
+    "normalizedCategory": "player_sales",
+    "amountNative": 8.495649,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "13. Otros resultados",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.507457,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "a) Compras, netas devol. y dto. de las cuales:",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.537165,
+    "disclosureLevel": "aggregated",
+    "_pag": 89,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Variación de existencias",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.208463,
+    "disclosureLevel": "aggregated",
+    "_pag": 89,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Consumo de materias primas y otras materias consumibles",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.036536,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.116198,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Sueldos, salarios y asimilados",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -13.5401,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Cargas sociales",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.950571,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Provisiones",
+    "normalizedCategory": "wages_squad",
+    "amountNative": 0.166039,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "a) Servicios exteriores",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.804419,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Tributos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.122126,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.610583,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "d) Otros gastos de gestión corriente",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.195775,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "8. Amortización del inmovilizado",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -3.965842,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-06-30",
+   "sourceId": "girona-es-cuentas-anuales-2020-2021",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.221731,
+   "tax": 2.318766,
+   "extraRows": [
+    {
+     "label": "a) Por deudas con empresas del grupo y asociadas",
+     "value": -0.063597
+    },
+    {
+     "label": "b) Por deudas con terceros",
+     "value": -0.157526
+    },
+    {
+     "label": "17. Diferencias de cambio",
+     "value": -0.000608
+    },
+    {
+     "label": "20. Impuestos sobre beneficios",
+     "value": 2.318766
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "a) Ventas",
+     "lado": "revenue",
+     "importe": 0.439514,
+     "motivo": "Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2020-21: a) Ventas como bolsón lump_football_operations, igual que Girona 2020 y 2025"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 21.609729,
+   "officialTotalExpenses": 30.504812,
+   "officialPAT": -6.798048
+  },
+  "source": {
+   "id": "girona-es-cuentas-anuales-2020-2021",
+   "clubId": "girona-es",
+   "title": "Girona Futbol Club, S.A.D. — cuentas-anuales-2020-2021 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/España/Girona FC/cuentas-anuales-2020-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-06-30",
+  "evidencia": {
+   "pagina": 81,
+   "texto": "|  CONCEPTO | 30-06-2021 | 30-06-2020  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "girona-es",
+ "year": 2021,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 24,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "a) Ventas",
+   "page": 15,
+   "native": 0.439514,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.439514,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2020-21: a) Ventas como bolsón lump_football_operations, igual que Girona 2020 y 2025",
+   "destino": "revenue",
+   "amountNative": 0.439514
+  },
+  {
+   "label": "b) Prestaciones de servicios",
+   "page": 15,
+   "native": 10.280324,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 10.280324,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.280324
+  },
+  {
+   "label": "a) Ingresos accesorios y otros de gestión corriente",
+   "page": 15,
+   "native": 1.532552,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.532552,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.532552
+  },
+  {
+   "label": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
+   "page": 15,
+   "native": 0.122984,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.122984,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.122984
+  },
+  {
+   "label": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
+   "page": 15,
+   "native": 0.20503,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.20503,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.20503
+  },
+  {
+   "label": "10. Excesos de provisiones",
+   "page": 15,
+   "native": 0.026219,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.026219,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.026219
+  },
+  {
+   "label": "b) Resultados por enajenaciones y otras",
+   "page": 15,
+   "native": 8.495649,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 8.495649,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2020-21: Resultados por enajenaciones (+8,50 M) como línea de venta de jugadores",
+   "destino": "revenue",
+   "amountNative": 8.495649
+  },
+  {
+   "label": "13. Otros resultados",
+   "page": 16,
+   "native": 0.507457,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "signoFijo": 0.507457,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.507457
+  },
+  {
+   "label": "a) Compras, netas devol. y dto. de las cuales:",
+   "page": 89,
+   "native": 0.537165,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"a) Consumo de mercaderías\")",
+   "signoFijo": 0.537165,
+   "cat": "other_expenses",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.537165
+  },
+  {
+   "label": "b) Variación de existencias",
+   "page": 89,
+   "native": 0.208463,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"a) Consumo de mercaderías\")",
+   "signoFijo": -0.208463,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.208463
+  },
+  {
+   "label": "b) Consumo de materias primas y otras materias consumibles",
+   "page": 15,
+   "native": 0.036536,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.036536,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.036536
+  },
+  {
+   "label": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos",
+   "page": 15,
+   "native": 0.116198,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.116198,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.116198
+  },
+  {
+   "label": "a) Sueldos, salarios y asimilados",
+   "page": 15,
+   "native": 13.5401,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 13.5401,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -13.5401
+  },
+  {
+   "label": "b) Cargas sociales",
+   "page": 15,
+   "native": 0.950571,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.950571,
+   "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.950571
+  },
+  {
+   "label": "c) Provisiones",
+   "page": 15,
+   "native": 0.166039,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -0.166039,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2020-21: c) Provisiones es subrenglón de Gastos de personal",
+   "destino": "expense",
+   "amountNative": 0.166039
+  },
+  {
+   "label": "a) Servicios exteriores",
+   "page": 15,
+   "native": 5.804419,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.804419,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.804419
+  },
+  {
+   "label": "b) Tributos",
+   "page": 15,
+   "native": 0.122126,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.122126,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.122126
+  },
+  {
+   "label": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+   "page": 15,
+   "native": 5.610583,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.610583,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.610583
+  },
+  {
+   "label": "d) Otros gastos de gestión corriente",
+   "page": 15,
+   "native": 0.195775,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.195775,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.195775
+  },
+  {
+   "label": "8. Amortización del inmovilizado",
+   "page": 15,
+   "native": 3.965842,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.965842,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.965842
+  },
+  {
+   "label": "a) Por deudas con empresas del grupo y asociadas",
+   "page": null,
+   "native": -0.063597,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "b) Por deudas con terceros",
+   "page": null,
+   "native": -0.157526,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "17. Diferencias de cambio",
+   "page": null,
+   "native": -0.000608,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "20. Impuestos sobre beneficios",
+   "page": null,
+   "native": 2.318766,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
+   "verificacion (nota que desglosa \"a) Consumo de mercaderías\")": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 21.609729,
+  "expSum": -30.504813,
+  "officialTotalRevenue": 21.609729,
+  "officialTotalExpenses": 30.504812,
+  "officialPAT": -6.798048,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -6.798048,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 21.609729
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 30.504812
+  }
+ },
+ "liga": {
+  "valor": "es-segunda",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (65 de 69 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (1 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de España (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-06-30 = 0.8415 (Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "girona-es-cuentas-anuales-2020-2021",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "es-segunda",
+   "fuente": "data/club-leagues/es.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 8,
+  "lineasGasto": 12,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

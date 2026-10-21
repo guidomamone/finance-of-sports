@@ -1,0 +1,49 @@
+{
+ "pdf": "Clubes/España/Girona FC/cuentas-anuales-2021-2022.pdf",
+ "md": "Clubes/España/Girona FC/cuentas-anuales-2021-2022.md",
+ "mdSha1": "055455a471f8f6eaae6709035393f36754788d9f",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-21T13:30:50.026Z",
+ "fuentes": {
+  "14": "gemini",
+  "15": "gemini",
+  "32": "gemini",
+  "33": "gemini",
+  "93": "gemini",
+  "94": "gemini",
+  "104": "gemini",
+  "105": "gemini",
+  "107": "gemini"
+ },
+ "confirmados": 389,
+ "noConfirmados": [
+  {
+   "bloque": "b47",
+   "pagina": 33,
+   "linea": 1527,
+   "numero": "20.593",
+   "segundaLeyo": "20595",
+   "sinSegunda": false,
+   "texto": "| **Gastos plantilla deportiva (-)** | (26.754) | (20.593) | (12.473) | (14.102) |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 33,
+   "linea": 1542,
+   "numero": "17.473",
+   "segundaLeyo": "12473",
+   "sinSegunda": false,
+   "texto": "| **Otros Gastos de explotación (-)** | (17.473) | (14.200) | (10.759) | (10.213) |"
+  },
+  {
+   "bloque": "b47",
+   "pagina": 33,
+   "linea": 1552,
+   "numero": "6.105",
+   "segundaLeyo": "6165",
+   "sinSegunda": false,
+   "texto": "| **Amortizaciones (-)** | (6.105) | (5.016) | (3.966) | (2.378) |"
+  }
+ ]
+}

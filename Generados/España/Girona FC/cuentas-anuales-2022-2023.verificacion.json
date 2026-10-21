@@ -1,0 +1,272 @@
+{
+ "pdf": "Clubes/España/Girona FC/cuentas-anuales-2022-2023.pdf",
+ "md": "Clubes/España/Girona FC/cuentas-anuales-2022-2023.md",
+ "generado": "2026-10-21T13:55:31.341Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "ok",
+ "clubId": "girona-es",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 6.439293542825908e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 16.651759 en cuentas-anuales-2021-2022.pdf y 16.651759 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"b) Consumo de materias primas y otras materias consumibles\" no suma el renglón (0 contra 0.054221, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar confirmada por las sumas (columna, \"1. Importe neto de la cifra de negocios\"): ¿Se confirma que la columna 'EJERCICIO 2022 (1)' del modelo oficial (b21/b23) corresponde al ejercicio cerrado el 30-06-2023?",
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga la PyG en formato LaLiga (b63-b64, columnas CCAA 2021/2022 y 2022/2023)?",
+  "duda de extraer ya contestada para el club (perimetro, \"1. Importe neto de la cifra de negocios\"): corregir no, en cuentas-anuales-2022-2023.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"13. Otros resultados\"): aceptar, en cuentas-anuales-2022-2023.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"13. Otros resultados\"): aceptar, en cuentas-anuales-2022-2023.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"6. Gastos de personal\"): aceptar, en cuentas-anuales-2022-2023.pdf"
+ ],
+ "reintentar": [
+  {
+   "renglon": "b) Consumo de materias primas y otras materias consumibles",
+   "suma": 0,
+   "objetivo": 0.054221
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "b) Consumo de materias primas y otras materias consumibles",
+   "suma": 0,
+   "objetivo": 0.054221
+  }
+ ],
+ "totales": {
+  "ingresos": 64.54342,
+  "gastos": 62.839541,
+  "financiero": -0.773606,
+  "impuesto": -0.254669,
+  "resultadoImpreso": 0.675604,
+  "resultadoParaCargar": 0.675604,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "a) Ventas",
+   "lado": "ingreso",
+   "M": 6.745909,
+   "pagina": 15,
+   "linea": 742,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Prestaciones de servicios",
+   "lado": "ingreso",
+   "M": 53.099706,
+   "pagina": 15,
+   "linea": 743,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Ingresos accesorios y otros de gestión corriente",
+   "lado": "ingreso",
+   "M": 4.168106,
+   "pagina": 15,
+   "linea": 753,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
+   "lado": "ingreso",
+   "M": 0.324669,
+   "pagina": 15,
+   "linea": 754,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
+   "lado": "ingreso",
+   "M": 0.20503,
+   "pagina": 15,
+   "linea": 766,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "- Nacionales",
+   "lado": "gasto",
+   "M": 0.617412,
+   "pagina": 99,
+   "linea": 5073,
+   "origen": "nota que desglosa \"a) Consumo de mercaderías\""
+  },
+  {
+   "etiqueta": "b) Variación de existencias",
+   "lado": "gasto",
+   "M": -0.103386,
+   "pagina": 99,
+   "linea": 5075,
+   "origen": "nota que desglosa \"a) Consumo de mercaderías\""
+  },
+  {
+   "etiqueta": "b) Consumo de materias primas y otras materias consumibles",
+   "lado": "gasto",
+   "M": 0.054221,
+   "pagina": 15,
+   "linea": 749,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos",
+   "lado": "gasto",
+   "M": -0.035054,
+   "pagina": 15,
+   "linea": 751,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "a) Sueldos, salarios y asimilados",
+   "lado": "gasto",
+   "M": 38.269076,
+   "pagina": 15,
+   "linea": 756,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Seguridad Social a cargo de la empresa",
+   "lado": "gasto",
+   "M": 1.12556,
+   "pagina": 100,
+   "linea": 5133,
+   "origen": "nota que desglosa \"b) Cargas sociales\""
+  },
+  {
+   "etiqueta": "c) Otras cargas sociales",
+   "lado": "gasto",
+   "M": 0.002603,
+   "pagina": 100,
+   "linea": 5135,
+   "origen": "nota que desglosa \"b) Cargas sociales\""
+  },
+  {
+   "etiqueta": "a) Servicios exteriores",
+   "lado": "gasto",
+   "M": 10.949236,
+   "pagina": 15,
+   "linea": 760,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Tributos",
+   "lado": "gasto",
+   "M": 0.165383,
+   "pagina": 15,
+   "linea": 761,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+   "lado": "gasto",
+   "M": 0.001777,
+   "pagina": 15,
+   "linea": 762,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "d) Otros gastos de gestión corriente",
+   "lado": "gasto",
+   "M": 7.545369,
+   "pagina": 15,
+   "linea": 763,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "8. Amortización del inmovilizado",
+   "lado": "gasto",
+   "M": 3.448327,
+   "pagina": 15,
+   "linea": 765,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Resultados por enajenaciones y otras",
+   "lado": "gasto",
+   "M": 0.759576,
+   "pagina": 15,
+   "linea": 770,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
+  },
+  {
+   "etiqueta": "13. Otros resultados",
+   "lado": "gasto",
+   "M": 0.039442,
+   "pagina": 16,
+   "linea": 792,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "b 2) De terceros",
+   "M": 0.00271,
+   "linea": 800
+  },
+  {
+   "etiqueta": "a) Por deudas con empresas del grupo y asociadas",
+   "M": -0.6688,
+   "linea": 803
+  },
+  {
+   "etiqueta": "b) Por deudas con terceros",
+   "M": -0.091945,
+   "linea": 804
+  },
+  {
+   "etiqueta": "17. Diferencias de cambio",
+   "M": -0.015571,
+   "linea": 809
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "20. Impuestos sobre beneficios",
+   "M": -0.254669,
+   "linea": 819
+  }
+ ]
+}

@@ -55,6 +55,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'valerenga-no': {
     2022: {"estadio":"Intility Arena","capacidad":16555,"sponsor":"DNB","marca":"Adidas","temporada":"2022 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312230967"},
     2023: {"estadio":"Intility Arena","capacidad":16555,"marca":"Adidas","temporada":"2023 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1364297219","fuenteManual":"https://en.wikipedia.org/wiki/2023_V%C3%A5lerenga_Fotball_season","manual":["estadio"],"sinFuente":{"sponsor":"Buscado el 2026-10-20 (temporada 2023): en.wikipedia de la temporada y del club, snl.no, efdn.org (Coop como socio, no como sponsor de camiseta) y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de 2023."}},
+    2024: {"temporada":"2024 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356845648"},
     2025: {"estadio":"Intility Arena","capacidad":16556,"sponsor":"OBOS","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'viking-no': {

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "girona-es",
@@ -24,6 +24,13 @@
       "id": "girona-es-informe-auditoria-cuentas-anuales-2024-25",
       "club_id": "girona-es",
       "title": "Informe de Auditoría y Cuentas Anuales 2024-2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "girona-es-cuentas-anuales-2021-2022",
+      "club_id": "girona-es",
+      "title": "Girona Futbol Club, S.A.D. — cuentas-anuales-2021-2022 (ejercicio 2022)",
       "type": "official_balance_sheet",
       "reliability": "primary"
     }
@@ -118,6 +125,116 @@
       ],
       "financial": {"profit_on_player_sales":17.002692,"asset_sales":0,"net_interest":-0.041956,"tax":-0.025772,"gross_debt":3.167,"cash":3.856412},
       "official_totals": {"revenue":26.906411,"expenses":43.875455,"net_result":-0.03408}
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "girona-es-cuentas-anuales-2021-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"a) Ventas","category":"undisclosed","subcategory":"lump_football_operations","amount":2.495814,"disclosure":"aggregated"},
+        {"label":"b) Prestaciones de servicios","category":"other_revenue","subcategory":"other_income","amount":11.081896,"disclosure":"aggregated"},
+        {
+          "label": "a) Ingresos accesorios y otros de gestión corriente",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 1.957088,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.590514,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.20503,
+          "disclosure": "aggregated"
+        },
+        {"label":"13. Otros resultados","category":"other_revenue","subcategory":"other_income","amount":0.321417,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"- Nacionales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.214182,"disclosure":"aggregated"},
+        {
+          "label": "b) Variación de existencias",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.200262,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Consumo de materias primas y otras materias consumibles",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.022828,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": 0.138611,
+          "disclosure": "aggregated"
+        },
+        {"label":"a) Sueldos, salarios y asimilados","category":"first_team_staff","subcategory":"wages_squad","amount":-15.880879,"disclosure":"aggregated"},
+        {"label":"b) Cargas sociales","category":"first_team_staff","subcategory":"wages_squad","amount":-0.910041,"disclosure":"aggregated"},
+        {"label":"a) Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-5.072964,"disclosure":"aggregated"},
+        {"label":"b) Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.087007,"disclosure":"aggregated"},
+        {
+          "label": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.070199,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "d) Otros gastos de gestión corriente",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -7.07127,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "8. Amortización del inmovilizado",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.377716,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "b) Resultados por enajenaciones y otras",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.296866,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.53184,"tax":3.92802,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":16.651759,"expenses":32.065604,"net_result":-12.017664},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"b 2) De terceros","amount":0.00975},
+          {"label":"a) Por deudas con empresas del grupo y asociadas","amount":-0.04125},
+          {"label":"b) Por deudas con terceros","amount":-0.490825},
+          {"label":"17. Diferencias de cambio","amount":-0.009515},
+          {"label":"20. Impuestos sobre beneficios","amount":3.92802}
+        ],
+        "no_breakdown": [
+          {
+            "line": "a) Ventas",
+            "side": "revenue",
+            "amount": 2.495814,
+            "reason": "Claude 2026-10-21 (subagente Sonnet, revisado): Girona 2021-22: a) Ventas como bolsón, igual que 2020 y 2025"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2025,

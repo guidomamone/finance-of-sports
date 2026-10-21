@@ -1,0 +1,210 @@
+{
+  "md": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.md",
+  "pdf": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf",
+  "club": "girona-es",
+  "year": 2021,
+  "generatedAt": "2026-10-21T13:33:13.038Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "a) Ventas",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.439514
+      ],
+      "glosa": "a) Ventas"
+    },
+    {
+      "label": "b) Prestaciones de servicios",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        10.280324
+      ],
+      "glosa": "b) Prestaciones de servicios"
+    },
+    {
+      "label": "a) Ingresos accesorios y otros de gestión corriente",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        1.532552
+      ],
+      "glosa": "a) Ingresos accesorios y otros de gestión corriente"
+    },
+    {
+      "label": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.122984
+      ],
+      "glosa": "b) Subvenciones de explotación incorporadas al resultado del ejercicio"
+    },
+    {
+      "label": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.20503
+      ],
+      "glosa": "9. Imputación de subvenciones de inmovilizado no financiero y otras"
+    },
+    {
+      "label": "10. Excesos de provisiones",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.026219
+      ],
+      "glosa": "10. Excesos de provisiones"
+    },
+    {
+      "label": "b) Resultados por enajenaciones y otras",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        8.495649
+      ],
+      "glosa": "b) Resultados por enajenaciones y otras"
+    },
+    {
+      "label": "13. Otros resultados",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.507457
+      ],
+      "glosa": "13. Otros resultados"
+    },
+    {
+      "label": "a) Compras, netas devol. y dto. de las cuales:",
+      "lado": "expense",
+      "page": 89,
+      "section": "nota que desglosa \"a) Consumo de mercaderías\"",
+      "values": [
+        0.537165
+      ],
+      "glosa": "a) Compras, netas devol. y dto. de las cuales:"
+    },
+    {
+      "label": "b) Variación de existencias",
+      "lado": "expense",
+      "page": 89,
+      "section": "nota que desglosa \"a) Consumo de mercaderías\"",
+      "values": [
+        -0.208463
+      ],
+      "glosa": "b) Variación de existencias"
+    },
+    {
+      "label": "b) Consumo de materias primas y otras materias consumibles",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.036536
+      ],
+      "glosa": "b) Consumo de materias primas y otras materias consumibles"
+    },
+    {
+      "label": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.116198
+      ],
+      "glosa": "d) Deterioro de mercaderías, materias primas y otros aprovisionamientos"
+    },
+    {
+      "label": "a) Sueldos, salarios y asimilados",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        13.5401
+      ],
+      "glosa": "a) Sueldos, salarios y asimilados"
+    },
+    {
+      "label": "b) Cargas sociales",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.950571
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) Provisiones",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.166039
+      ],
+      "glosa": "c) Provisiones"
+    },
+    {
+      "label": "a) Servicios exteriores",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        5.804419
+      ],
+      "glosa": "a) Servicios exteriores"
+    },
+    {
+      "label": "b) Tributos",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.122126
+      ],
+      "glosa": "b) Tributos"
+    },
+    {
+      "label": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        5.610583
+      ],
+      "glosa": "c) Pérdidas, deterioro y variación de provisiones por operaciones comerciales"
+    },
+    {
+      "label": "d) Otros gastos de gestión corriente",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.195775
+      ],
+      "glosa": "d) Otros gastos de gestión corriente"
+    },
+    {
+      "label": "8. Amortización del inmovilizado",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        3.965842
+      ],
+      "glosa": "8. Amortización del inmovilizado"
+    }
+  ]
+}
