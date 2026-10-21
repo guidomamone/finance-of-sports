@@ -17,7 +17,7 @@ sesión: si no, la próxima sesión va a seguir la regla vieja sin enterarse.
 ---
 Este archivo tiene las reglas de proceso, que valen en cualquier sesión. Las de datos y las de pantalla viven aparte y se leen solo
 cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir datos de un club) y `Admin/PANTALLA.md` (al tocar `js/`,
-`index.html` o CSS). Al final está el índice de cada regla mudada, para que una búsqueda por su versión siga llegando.
+`index.html` o CSS). Al final está el índice de cada regla mudada: su título y el archivo donde vive.
 
 - DOS SESIONES EN PARALELO: dos sesiones sobre el mismo working tree se pisan en silencio, así que cada sesión paralela va en su worktree; el procedimiento está en la skill de arranque, `worktree.md`.
   - **Después de mergear una rama con JSON de club en el esquema viejo (1.0)**: `node tools/migrar-v2.mjs --escribir` en la principal
