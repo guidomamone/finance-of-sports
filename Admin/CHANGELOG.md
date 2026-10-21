@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 876 — Skills al día con el JSON fuente y los ids con país (2026-10-20) [245 · 246]
+
+- Los 18 cambios que propuso Datos 3 (ok de Guido): start-session, club-data-mapping (y fx, formato-simplificado), escala y auditoría
+  dicen ahora que la fuente de un club es `data/<país>/<club>.json`, con los nombres de campo del JSON, y que todo id lleva país.
+
 ## Versión 875 — Ids estables y el JSON de cada club como fuente (2026-10-20) [246 · 245 · 332 · 333]
 
 - 246: los 41 clubes sin país pasan a `<slug>-<iso2>` (`boca` → `boca-ar`, `realmadrid` → `realmadrid-es`); `data/club-aliases.js` resuelve los ids

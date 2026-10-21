@@ -28,7 +28,6 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 
 **A. En marcha**
 * 333: lo no bloqueante de la revisión del 245 y el 246: `generar-data.mjs --check` también marca un `-data.js` sin JSON; `worktree.mjs` trata `data/<iso>/*-data.js` como generado y corre `generar-data` después del merge; `renombrar-ids.mjs --verificar` ignora el ejemplo de CLAUDE.md --> Pipeline (sesión nueva)
-* 245 y 246, skills: los 18 cambios que propone Datos 3 (`Admin/mediciones/245-246-cambios-skills.md`), para tu ok
 
 **B. Pantallas y distribución**
 * Vålerenga: la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
