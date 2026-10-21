@@ -19,6 +19,13 @@
       "title": "Bath Rugby Limited — bath-rugby-full-accounts-2020-21 (ejercicio 2021)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "bathrugby-gb-full-accounts-2021-22",
+      "club_id": "bathrugby-gb",
+      "title": "Bath Rugby Limited — bath-rugby-full-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "members": null,
@@ -58,6 +65,48 @@
           {"line":"Turnover","side":"revenue","amount":11.597938,"reason":"el documento no desglosa este renglón"},
           {"line":"Cost of sales","side":"expense","amount":14.103734,"reason":"el documento no desglosa este renglón"},
           {"line":"Administrative expenses","side":"expense","amount":4.418764,"reason":"el documento no desglosa este renglón"}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "bathrugby-gb-full-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Central income","category":"media_rights","subcategory":"central_income","amount":4.8,"disclosure":"aggregated"},
+        {"label":"Gate receipts","category":"matchday","subcategory":"gate_receipts","amount":4.8,"disclosure":"aggregated"},
+        {"label":"Commercial activities","category":"commercial","subcategory":"commercial_activities","amount":6.6,"disclosure":"aggregated"},
+        {"label":"CVC income","category":"other_revenue","subcategory":"other_income","amount":3.3,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_revenue","subcategory":"other_income","amount":0.3,"disclosure":"aggregated"},
+        {"label":"Diferencia en el documento","category":"other_revenue","subcategory":"other_income","amount":0.019557,"disclosure":"aggregated"},
+        {"label":"Fair value movements","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"undisclosed","subcategory":"lump_rugby_operations_expense","amount":-15.605502,"disclosure":"aggregated"},
+        {
+          "label": "Administrative expenses",
+          "category": "undisclosed",
+          "subcategory": "lump_rugby_operations_expense",
+          "amount": -4.660895,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.104184,"tax":0.387584,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":19.819557,"expenses":20.266397,"net_result":-0.16344},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Other interest receivable and similar income","amount":0.003698},
+          {"label":"Interest payable and similar expenses","amount":-0.107882},
+          {"label":"Tax on loss","amount":0.387584}
+        ],
+        "no_breakdown": [
+          {"line":"Cost of sales","side":"expense","amount":15.605502,"reason":"el documento no desglosa este renglón"},
+          {"line":"Administrative expenses","side":"expense","amount":4.660895,"reason":"el documento no desglosa este renglón"}
         ]
       }
     }

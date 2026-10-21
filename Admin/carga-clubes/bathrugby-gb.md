@@ -41,6 +41,42 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2021: {"reportType":"official_balance_sheet","currency":"GBP","fxRef":"GBP@2021-06-30","sourceId":"bathrugby-gb-full-accounts-2020-21"}
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Central income | pág. 5, Claude 0.9 |
+| 2 | Gate receipts | pág. 5, Claude 0.9 |
+| 3 | Commercial activities | pág. 5, Claude 0.9 |
+| 4 | CVC income | pág. 5, Claude 0.9 |
+| 5 | Other income | pág. 5, Claude 0.9 |
+| 6 | Diferencia en el documento | pág. 17, precedente |
+| 7 | Fair value movements | pág. 17, precedente |
+| 8 | Other operating income | pág. 17, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 17, precedente |
+| 2 | Administrative expenses | pág. 17, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): filas-a-mano. Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): desglose = 19,557. 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 19,8); el Turnover del estado es 19.819.557. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## 2021
 
 ### Ingresos
@@ -85,4 +121,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md; categorías del pipeline (sesión (Claude Code)). Perímetro: individual.
+```
+
+### bathrugby-gb-full-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md; categorías del pipeline (sesión (Claude Code)). Perímetro: individual.
 ```
