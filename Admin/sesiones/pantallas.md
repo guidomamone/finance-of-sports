@@ -1,3 +1,20 @@
+# Sesión pantallas (Pantallas 7): propuesta de guía de UX (sin aplicar)
+
+## Qué cambió (para CHANGELOG)
+- `Admin/propuestas/ux-del-sitio.md`: el texto exacto de `referencia/ux.md` para la skill `producto-y-pantalla-finance-of-sports` (lista de chequeo:
+  navegación y scroll, URL y atrás, foco y teclado, toques de 44 px, carga y estados, lo elegido al volver; cada punto con prueba y caso real) y las dos
+  líneas para su `SKILL.md`. No se aplicó.
+
+## Qué queda (para TODO)
+- El ok de Guido al texto; después, aplicarlo tal cual.
+- Si lo aprueba, los cuatro pendientes de la sección 3 de la propuesta (fosUrl en club-leagues, foco al cambiar de vista y al cerrar el selector, áreas
+  de toque chicas en la página de una liga, países de Ligas que se pliegan al volver).
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 7): scroll al cambiar de vista
 
 ## Qué cambió (para CHANGELOG)
