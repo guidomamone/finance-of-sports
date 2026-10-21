@@ -184,10 +184,10 @@ lo resuelve y regenera (hay que regenerar también `data/rankings/ar-primera.js`
 - No se tocó `.claude/skills/`, la memoria, tools ni hooks.
 
 ### Qué queda (para TODO)
-- Guido: decidir qué skills nuevas y qué cambios de 257-skills.md (partes 2 y 3) aprueba. Sin su ok no se pega nada.
-- Auditora 4 (sección 7): los chequeos de 330 y de la parte 4 del 257 (`memoria-no-es-regla`, `doc-de-criterio-con-historia`, `duda-resuelta-en-dudas`, `medicion-sin-destino`, `registro-sin-lector`, `archivar-con-ok`, `modelo-opus-con-ok`, `worktree-sin-permission-mode`, el candado de skills, ampliación de `comandos-simples`, cambios de `worktree.mjs`).
-- Falta línea en `Admin/HALLAZGOS-pipeline.md` para los descartes 314 (Stirling) y 298 x2 (voz local); falta en `Admin/TODO.md` el punto de que `perfil-en-cola` de `cargar.mjs` nunca frene; la pregunta de Deportes Tolima (`dudas-por-club.md:201`) frena una carga y no está en el TODO.
-- Sin mirar: los chats de las sesiones y las 118 notas de `Admin/Archive/sesion-*` (muestreé dos). Ver el final de 330.
+- Guido: decidir qué skills nuevas y qué cambios de 257-skills.md (partes 2 y 3) aprueba. Sin su ok no se pega nada. → descartado: aprobado y aplicado (partes 2, 3 y 7).
+- Auditora 4 (sección 7): los chequeos de 330 y de la parte 4 del 257 (`memoria-no-es-regla`, `doc-de-criterio-con-historia`, `duda-resuelta-en-dudas`, `medicion-sin-destino`, `registro-sin-lector`, `archivar-con-ok`, `modelo-opus-con-ok`, `worktree-sin-permission-mode`, el candado de skills, ampliación de `comandos-simples`, cambios de `worktree.mjs`). → descartado: aprobados y codeados (vuelta 2).
+- Falta línea en `Admin/HALLAZGOS-pipeline.md` para los descartes 314 (Stirling) y 298 x2 (voz local); falta en `Admin/TODO.md` el punto de que `perfil-en-cola` de `cargar.mjs` nunca frene; la pregunta de Deportes Tolima (`dudas-por-club.md:201`) frena una carga y no está en el TODO. → HALLAZGOS: las líneas de 314 y 298 x2 están en esta vuelta; → TODO: `perfil-en-cola` y la pregunta de Tolima (la escribe la principal).
+- Sin mirar: los chats de las sesiones y las 118 notas de `Admin/Archive/sesion-*` (muestreé dos). Ver el final de 330. → TODO: pasada opcional con subagentes; la principal decide si la abre.
 
 ### Qué deja de ser cierto en ESTADO
 - Nada todavía: son propuestas. Si se aprueban, el bloque de hooks cambia (candado, archivar, Opus) y aparecen las skills nuevas.
@@ -202,10 +202,10 @@ lo resuelve y regenera (hay que regenerar también `data/rankings/ar-primera.js`
 
 ### Qué queda (vuelta 2)
 
-- La principal: agregar al `matcher` de `.claude/settings.json` `mcp__ccd_session_mgmt__archive_session`, `mcp__ccd_session__start_session` y `mcp__ccd_session_mgmt__set_session_model`; sin eso los tres hooks de sesiones no corren. Los demás ya corren.
-- Rechazados por la Auditora (no codeados): que `mergear` frene sin flecha (va como aviso, primero el texto de `worktree.md` con el ok de Guido) y un paso de adelantar en `worktree.mjs` (no existe).
-- Sigue pendiente el ok de Guido a cada skill de las partes 2, 3 y 7 de 257-skills.md.
-- Medición del candado: 162 commits tocaron `.claude/skills` en total y 32 desde el 2026-10-14; cada uno habría necesitado su propuesta commiteada antes.
+- La principal: agregar al `matcher` de `.claude/settings.json` `mcp__ccd_session_mgmt__archive_session`, `mcp__ccd_session__start_session` y `mcp__ccd_session_mgmt__set_session_model`; sin eso los tres hooks de sesiones no corren. Los demás ya corren. → descartado: hecho, `settings.json` ya los tiene.
+- Rechazados por la Auditora (no codeados): que `mergear` frene sin flecha (va como aviso, primero el texto de `worktree.md` con el ok de Guido) y un paso de adelantar en `worktree.mjs` (no existe). → descartado: rechazados por la Auditora; el aviso de `mergear` ya está.
+- Sigue pendiente el ok de Guido a cada skill de las partes 2, 3 y 7 de 257-skills.md. → descartado: aprobadas y aplicadas.
+- Medición del candado: 162 commits tocaron `.claude/skills` en total y 32 desde el 2026-10-14; cada uno habría necesitado su propuesta commiteada antes. → descartado: es un dato de la medición, no un pendiente.
 
 ### Vuelta 3 de Orden 1 (2026-10-21): partes 3 y 7 del 257 aplicadas
 
@@ -214,7 +214,17 @@ lo resuelve y regenera (hay que regenerar también `data/rankings/ar-primera.js`
 
 ### Qué queda (vuelta 3)
 
-- En `Admin/PANTALLA.md` quedó, bajo «Verificar en el browser de verdad…», el párrafo «Cómo verlo como archivo» (Chrome sin ventana con `--screenshot`): el texto aprobado de la skill no lo trae y no lo mudé para no perderlo. Para moverlo a `navegador-de-preview.md` hace falta un texto nuevo con el ok de Guido.
-- La introducción de `Admin/CONVENCIONES.md` (línea 20) todavía dice que el índice de reglas mudadas sirve para buscar «por su versión»; el índice ya no lleva versiones.
-- El aviso de `worktree.mjs mergear` por un «Qué queda» sin flecha no está codeado (la tabla de CONVENCIONES lo nombra): cambio de tool para Pipeline, con la Auditora.
-- Memorias de la parte 1: todas cubiertas; antes de borrar la 14 (`no-frenar-carga-por-socios`) falta en `Admin/TODO.md` la mejora de que el gate `perfil-en-cola` de `cargar.mjs` nunca frene.
+- En `Admin/PANTALLA.md` quedó, bajo «Verificar en el browser de verdad…», el párrafo «Cómo verlo como archivo» (Chrome sin ventana con `--screenshot`): el texto aprobado de la skill no lo trae y no lo mudé para no perderlo. Para moverlo a `navegador-de-preview.md` hace falta un texto nuevo con el ok de Guido. → TODO: texto exacto en `Admin/propuestas/257-como-verlo-como-archivo.md`, para el ok de Guido.
+- La introducción de `Admin/CONVENCIONES.md` (línea 20) todavía dice que el índice de reglas mudadas sirve para buscar «por su versión»; el índice ya no lleva versiones. → descartado: la principal lo corrigió.
+- El aviso de `worktree.mjs mergear` por un «Qué queda» sin flecha no está codeado (la tabla de CONVENCIONES lo nombra): cambio de tool para Pipeline, con la Auditora. → descartado: ya está (`worktree.mjs mergear` avisa).
+- Memorias de la parte 1: todas cubiertas; antes de borrar la 14 (`no-frenar-carga-por-socios`) falta en `Admin/TODO.md` la mejora de que el gate `perfil-en-cola` de `cargar.mjs` nunca frene. → descartado: la memoria ya está vaciada.
+
+### Vuelta 4 de Orden 1 (2026-10-21): HALLAZGOS, flechas y propuesta de «Cómo verlo como archivo»
+
+- `Admin/HALLAZGOS-pipeline.md`: las líneas de los descartes 314 (Stirling PDF contra Mistral) y 298 x2 (voz local de respaldo en escaneos).
+- `Admin/propuestas/257-como-verlo-como-archivo.md`: texto exacto para mudar el párrafo «Cómo verlo como archivo» de `Admin/PANTALLA.md` a `navegador-de-preview.md`. No se aplicó.
+- Cada punto de «Qué queda» de esta nota lleva su flecha.
+
+### Qué queda (vuelta 4)
+
+- Falta el ok de Guido al texto de `Admin/propuestas/257-como-verlo-como-archivo.md`; con su sí se aplica con Edit y se borra el párrafo de `Admin/PANTALLA.md`. → TODO: punto 8 del 257, (d).

@@ -72,6 +72,15 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   extraer se mide contra una segunda corrida, no contra lo cargado). Mediciones: `Admin/mediciones/extraer-verificar-cargado-vs-*.txt`.
 - **Sonnet en categorizar**: ya medido antes (`Admin/mediciones/test-categorizar-claude.md`, 259 rubros: 74,9% contra 81,1% de Opus, peor
   calibrado); en el cierre del to-do 288 (2026-10-18) no se volvió a medir. Sigue en Opus.
+- **Stirling PDF en vez de Mistral para escaneos** (to-do 314, 2026-10-20, US$ 0): en seis escaneos con filas ya cargadas lee 83 a 94% de las
+  cifras en cuatro (los tres noruegos y Ferroviária; Tesseract pelado da 24 a 59% en los noruegos) y 3 a 4% en las páginas dadas vuelta de Sporting;
+  Mistral da 100%, pero ese techo está inflado porque las filas cargadas salieron de su mismo `.md`. Con una lectura local de respaldo, Mistral
+  se ahorraría en 0 de 6 documentos (0 de 10 en la muestra ampliada: Stirling halla de 52 a 90% de las cifras que Mistral leyó). No entra.
+  Retomar con documentos sin `.md` de Mistral y con totales oficiales, para sacar el sesgo. `Admin/mediciones/stirling-vs-tesseract-vs-mistral.md`.
+- **Una voz local (Tesseract) como respaldo de cifras en escaneos** (to-do 298 x2, 2026-10-20, US$ 0): respaldaría ~22% de las páginas de escaneo
+  sin error (39 de 178; ~US$ 10 de ~US$ 48 de segunda voz sobre los 317 escaneos pendientes) pero daría por buena por lo menos 1 de cada 82
+  páginas con error real (1,2%); la cascada de `tools/chequeos-gratis.mjs` tiene 0 escapes. No entra. Retomar si el gasto de la segunda voz
+  en escaneos pesa más y hay un OCR mejor: repetir con una muestra mayor, sin tocar la compuerta. `Admin/mediciones/x2-voz-local-escaneos.md`.
 
 ## 2026-10-08, dos trampas que costaron una corrida
 
