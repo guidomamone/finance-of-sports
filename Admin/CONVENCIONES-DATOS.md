@@ -383,6 +383,21 @@ del club (`Admin/carga-clubes/<clubId>.md`); la página muestra el documento fue
 la sociedad que el sitio ya publica para ese club, por coherencia de la serie, y el documento de la otra va a
 `Admin/registros/documentos-descartados.txt` (decisión de Guido, 2026-10-19, Reino Unido).
 
+**Un consolidado de grupo con negocios ajenos al club** (el holding del dueño que consolida el club y otras empresas) vale como el
+documento del club si cumple dos condiciones:
+1. **El club está en el grupo el ejercicio entero.** Si se compra o se vende en el año, el consolidado no tiene el año del club y va a
+   descartados con la cita.
+2. **Lo ajeno pesa como mucho el 10 % del turnover, según lo que imprime el propio documento** (turnover por clase de negocio o por
+   segmento). Ajeno es lo que no es el deporte del club ni sus instalaciones y servicios: estadio y su terreno, academia, centro de
+   entrenamiento, equipo femenino y otros equipos del club, tienda, catering, conferencias, hotel o estacionamientos en el estadio,
+   fundación. Energía, inmobiliaria sin relación con el estadio o cualquier otra empresa del dueño son ajenas.
+
+Si el documento no desglosa lo ajeno, vale, salvo que el informe de gestión o la lista de subsidiarias lo presenten como una
+actividad principal del grupo con cifras propias. En ese caso, y cuando lo desglosa y pasa el 10 %, el documento va a descartados y el
+club se busca en las cuentas de su propia sociedad. Casos: Fleetwood Town con Jaymel Ltd (energía; fútbol 28 % en 2022-23 y 45 % en
+2023-24, vendido en mayo de 2024: descartados) frente a Arsenal (inmobiliaria, menos del 1 %), Chelsea (hotel y estacionamientos en
+Stamford Bridge) y Newcastle (productora de cine dentro de Commercial), que se cargan (votación, 2026-10-21, 3 a 0).
+
 ## REGLA: qué entidad se carga cuando el fútbol está en una sociedad aparte (club asociación y SAD/SDUQ/SAF/AS)
 
 Decisión de Guido (2026-10-15, Portugal). En muchos países el fútbol profesional está en una sociedad (SAD o SDUQ en Portugal) y el club
