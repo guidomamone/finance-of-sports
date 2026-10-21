@@ -28,23 +28,24 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar
-2. 345 (Onboarding 8): la cola del lote 130, Girona 2021-23, RAAL, SønderjyskE 2023, los 7 daneses convertidos, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020 (hasta US$10 en total)
-3. 345 (Pipeline 13): el consolidado de FC København 2025 y Hvidovre 2025; después, el 353
-4. 352 (Auditora 5, con lo que cargue Onboarding 8): decidir si el chequeo del iXBRL pasa de aviso a frenar; 355: Lierse con dos ids (decisión tuya)
-5. 347 (Auditora 5): corridas de P2 y P3; sigue `gestion-club-inexistente` (ya: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`, `outlier-liga`)
-6. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea (`sin-salarios`, 48)
+1. 345 (Onboarding 8): la cola del lote 130, Girona 2021-23, RAAL, SønderjyskE 2023, los daneses, Hvidovre, København individual, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020; la liga de Burnley, Girona y Fredericia (hasta US$12 en total)
+2. 353 (Pipeline 13): probar el lector iXBRL con las cuentas de Forest, Burnley y Bath; y el veredicto de la Auditora sobre `faltantes` que no frene por la fecha ni por PDFs sin enlazar
+3. 355 (Auditora 5): Lierse con dos ids, con el proceso «¿Es el mismo club?» de la skill de contrato de datos
+4. 347 (Auditora 5): corridas de P2 y P3 (ya: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`, `outlier-liga`, `gestion-club-inexistente`, `ejercicio-sin-rastro`, `salto-interanual`, `escala-implausible`)
+5. 352 (Auditora 5, con lo que cargue Onboarding 8): decidir si el chequeo del iXBRL pasa de aviso a frenar
+6. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
 7. 350 (Auditora 5, después de las corridas): relevar qué categorías están en vano (educación incluida), votar una para subsidios y donaciones, y un proceso para revisar categorías
+8. 257 (Orden 1): la parte 7, qué pasa de CONVENCIONES a skills (falta mostrarte el texto)
 
 **D. Orden de la casa**
-8. 338: correr todas las auditorías del proyecto (al final de A)
-9. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+9. 338: correr todas las auditorías del proyecto (al final de A)
+10. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-10. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-11. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-12. 335: mails a clubes
-13. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+11. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+12. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+13. 335: mails a clubes
+14. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
