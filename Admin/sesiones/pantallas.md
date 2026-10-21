@@ -1,3 +1,20 @@
+# Sesión pantallas (Pantallas 7): cierre, excepción de texto corrido en ux.md
+
+## Qué cambió (para CHANGELOG)
+- Con el ok de Guido («si, excepcion»), `referencia/ux.md` sección 4 suma la excepción de 44 px para los links en texto corrido (debajo de la de las
+  etiquetas de estado), y el caso del área mínima cambia «Hoy todavía quedan chicos…» (lo resolvió el 361) por el caso de la atribución de Wikipedia de una
+  liga. El texto, primero en `Admin/propuestas/ux-excepcion-texto-corrido.md` (28f9799cf4 y 6f1a89b9c1, por el candado); aplicado en a599f62147 (el
+  caso; el mensaje del commit nombra también la excepción, que el candado frenó ahí) y d555a982cc (la excepción).
+- Cada punto de «Qué queda» de esta nota lleva su flecha.
+
+## Qué queda (para TODO)
+- Nada de esto. → descartado: no queda nada.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 7): 361, áreas de toque de 44 px fuera de Ligas
 
 ## Qué cambió (para CHANGELOG)
@@ -14,8 +31,9 @@
 ## Qué queda (para TODO)
 - La prueba todavía marca en Ligas los dos links del párrafo de atribución de Wikipedia («2024–25 Serie A» y «CC BY-SA 4.0»): están en renglones seguidos y
   con 44 px cada uno el segundo taparía el texto del primero. Propuesta de excepción (texto corrido, como WCAG 2.5.8) o de interlineado:
-  `Admin/propuestas/ux-excepcion-texto-corrido.md`; la decide Guido.
-- A 375 px los controles de Finanzas (presets, gestiones, segmentados) quedan un poco más altos: es el costo visible del 361.
+  `Admin/propuestas/ux-excepcion-texto-corrido.md`; la decide Guido. → regla: Guido eligió la excepción («si, excepcion»), aplicada en `ux.md` (d555a982cc).
+- A 375 px los controles de Finanzas (presets, gestiones, segmentados) quedan un poco más altos: es el costo visible del 361. → descartado: costo aceptado
+  con el «Terminado cuando:» del 361, nada que hacer.
 
 ## Qué deja de ser cierto en ESTADO
 - Nada que no esté en `Admin/PANTALLA.md`.
@@ -37,6 +55,7 @@
 
 ## Qué queda (para TODO)
 - Nada de esto. Al tocar un chip la fila se redibuja con la misma regla: si el visitante había corrido la fila, vuelve a lo más nuevo o al elegido más viejo.
+  → regla: es el comportamiento elegido, escrito en `Admin/PANTALLA.md` («LA FILA DE CHIPS DE EJERCICIO EN EL TELÉFONO»).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -69,7 +88,8 @@
 - Del barrido de 44 px a 375, fuera de Ligas (no lo toqué: agrandarlos cambia esas pantallas, sobre todo las 40 filas de Inicio): Inicio, los atajos de
   club (32 px), las filas de los rankings (`.vid-fila`, 37) y «Ver la liga» / «Todas las ligas» (`.vid-link`, 32); Finanzas sin club, «Elegí un club»
   (38); Mi Cuenta, «Entrar con Google» (34); el input del buscador de Inicio (22, dentro de una caja más grande); y la etiqueta COVID (16) en todas.
-- Aplicar `Admin/propuestas/ux-casos-360.md` con el ok de Guido.
+  → descartado: hecho en el 361 (03eab69f20); la etiqueta COVID es una excepción decidida (`ux.md`).
+- Aplicar `Admin/propuestas/ux-casos-360.md` con el ok de Guido. → descartado: aplicado (8cd88a0976).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada que no esté en `Admin/PANTALLA.md`.
@@ -102,9 +122,9 @@
 
 ## Qué queda (para TODO)
 - La etiqueta COVID mide menos de 44 px de alto en todas las pantallas (ux.md, punto 4): decidir si se acepta como excepción o si se le da más área sin
-  pisar el chip o la pastilla vecinos.
+  pisar el chip o la pastilla vecinos. → regla: Guido la aceptó como excepción, escrita en `ux.md` (96929f621b).
 - Antes de este cambio, y sin relación con él: a 375 px la fila de ejercicios de Comparar arranca mostrando el más nuevo, así que el ejercicio elegido de
-  un lado (19/20) queda fuera de vista.
+  un lado (19/20) queda fuera de vista. → descartado: hecho (a994ea6c9d, `mostrarElegidosEnFila()`).
 
 ## Qué deja de ser cierto en ESTADO
 - «Finanzas multi-año» / marca COVID: ya no es solo de Finanzas; también Comparar, Ligas y el selector.
@@ -122,7 +142,8 @@
 - Hallazgo para la regla de Ligas: en las 65 temporadas de liga afectadas, todos los clubes del ranking caen dentro de la pandemia; no hay ninguna mixta.
 
 ## Qué queda (para TODO)
-- El ok de Guido a las tres ubicaciones; después, el código, recorriendo `referencia/ux.md` antes de pedir el merge.
+- El ok de Guido a las tres ubicaciones; después, el código, recorriendo `referencia/ux.md` antes de pedir el merge. → descartado: aprobado («ok a
+  pantallas») y construido (f144a3c50d).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -138,8 +159,10 @@
 
 ## Qué queda (para TODO)
 - Los tres pendientes de la sección 3 de la propuesta: el foco al cambiar de vista y al cerrar el selector, las áreas de toque chicas en la página de una
-  liga y los países de Ligas que se pliegan al volver.
-- Archivar `Admin/propuestas/ux-del-sitio.md` en `Admin/Archive/` (ya está aplicada).
+  liga y los países de Ligas que se pliegan al volver. → descartado: hechos en el 360 (9e2a0c7ae6).
+- Archivar `Admin/propuestas/ux-del-sitio.md` en `Admin/Archive/` (ya está aplicada). → descartado: no es trabajo de Pantallas; las tres
+  propuestas ya aplicadas (`ux-del-sitio.md`, `ux-casos-360.md`, `ux-excepcion-texto-corrido.md`) las archiva la principal con esta nota (el README
+  anota la Versión, y `Admin/PANTALLA.md` cita la última por su ruta).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -158,7 +181,7 @@
 - La propuesta de UX usa este caso como ejemplo, en pasado, y lo saca de sus pendientes.
 
 ## Qué queda (para TODO)
-- Nada de esto.
+- Nada de esto. → descartado: no queda nada.
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -173,9 +196,9 @@
   líneas para su `SKILL.md`. No se aplicó.
 
 ## Qué queda (para TODO)
-- El ok de Guido al texto; después, aplicarlo tal cual.
+- El ok de Guido al texto; después, aplicarlo tal cual. → descartado: aprobado y aplicado (123121a963).
 - Si lo aprueba, los tres pendientes de la sección 3 de la propuesta (foco al cambiar de vista y al cerrar el selector, áreas
-  de toque chicas en la página de una liga, países de Ligas que se pliegan al volver).
+  de toque chicas en la página de una liga, países de Ligas que se pliegan al volver). → descartado: hechos en el 360 (9e2a0c7ae6).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -198,7 +221,7 @@
 
 ## Qué queda (para TODO)
 - A 375 px los países de la lista de Ligas están plegados y al volver con atrás se vuelven a plegar: la altura se restaura hasta donde da la lista
-  plegada. Lo que se abrió debería mantenerse al volver (va de ejemplo en la guía de UX).
+  plegada. Lo que se abrió debería mantenerse al volver (va de ejemplo en la guía de UX). → descartado: hecho en el 360 (`frio.pais`).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -209,7 +232,7 @@
 
 ## Qué queda (para TODO)
 - La rama trae el estallido (`9eeca96600`) y NO se mergea: se reemplaza por la etiqueta de estado (artifact versión 3, `Prototyping/Covid/mockup-covid.html`) cuando Guido apruebe las guías
-  (`Admin/propuestas/marca-del-sitio.md`) y la etiqueta; después, un solo merge.
+  (`Admin/propuestas/marca-del-sitio.md`) y la etiqueta; después, un solo merge. → descartado: la etiqueta reemplazó al estallido y ya está en main.
 - → regla (para `referencia/navegador-de-preview.md`, con el ok de Guido): el Chrome sin ventana (`--headless=new --window-size=375,…`) no baja de unos 500 px de layout, así que la captura a 375 px
   sale recortada a la derecha y no sirve para juzgar el teléfono; el 375 se mira en el Browser pane con `resize_window` (preset `mobile`) sobre el sitio servido, y el `file://` se mira a 1280.
 
@@ -226,7 +249,7 @@
 - NO probado: `file://` en un navegador, ni el modo oscuro del sitio real (el sitio no tiene modo oscuro: el del mockup era solo del mockup).
 
 ## Qué queda (para TODO)
-- Comparar, Ligas y el selector de ejercicio no llevan la marca todavía.
+- Comparar, Ligas y el selector de ejercicio no llevan la marca todavía. → descartado: hecho (f144a3c50d).
 
 ## Qué deja de ser cierto en ESTADO
 - «Finanzas multi-año»: los ejercicios con cierre en la ventana de la pandemia llevan la marca COVID (card, cabecera de tabla y número de ingresos).
@@ -242,7 +265,8 @@
 
 ## Qué queda (para TODO)
 - El ok de Guido al mockup; después, el código (helper compartido, `t()` en español e inglés, claves en `en.js`, `Admin/PANTALLA.md`) y verificar servido y como archivo.
-- Comparar, Ligas y el selector de ejercicio quedan para después de aprobar.
+  → descartado: aprobado y hecho (Pantallas 6).
+- Comparar, Ligas y el selector de ejercicio quedan para después de aprobar. → descartado: hecho (f144a3c50d).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -260,6 +284,7 @@
 ## Qué queda (para TODO)
 - `file://`: no pude verlo en Brave. Dos `open -a "Brave Browser" file:///…/fos-pantallas/index.html` no abrieron una ventana nueva visible para `app_list_windows`; la ventana que se ve es la de la
   principal, con `finance-of-sports/index.html` (la carpeta principal, no la mía). Falta que alguien lo mire con esta rama mergeada.
+  → descartado: el `file://` se mira con Chrome sin ventana (`referencia/navegador-de-preview.md`); Pantallas 7 lo hizo en cada tanda.
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -285,8 +310,11 @@
 
 ## Qué queda (para TODO)
 - Si se carga un club o una liga galesa: `WAL` en `COUNTRIES`, la Cymru Premier con `country:'WAL'` y los clubes galeses (Cardiff, Swansea) en `CLUB_NATION`.
+  → regla: está en `Admin/CONVENCIONES-DATOS.md`.
 - `leagueAt()` devuelve null hasta que se abre el selector (las tablas de `data/club-leagues/` son lazy): el subtítulo de Finanzas no dice la liga al entrar directo a un club. Es de antes de esta tanda.
-- Texto de Inicio «Revenue in dollars for every club loaded…» (`vid.sub`) sigue hablando de los clubes cargados, sin números.
+  → descartado: ya no pasa (2026-10-21, `/club/juventus-it.html` directo dice «Serie A · Italy»).
+- Texto de Inicio «Revenue in dollars for every club loaded…» (`vid.sub`) sigue hablando de los clubes cargados, sin números. → descartado: el texto
+  de hoy es «one financial year per league», ya no habla de lo cargado.
 
 ## Qué deja de ser cierto en ESTADO
 - «Inicio, Ligas y navegación»: Ligas es una lista con filtros de deporte, región e informes, agrupada por país, deporte o nivel, con el estado en la URL; Inglaterra y Escocia son países distintos.
@@ -302,7 +330,9 @@
 ## Qué queda (para TODO)
 - La pestaña Ligas del sitio de hoy: la lista inicial ya muestra solo el nombre de cada liga, pero hay números en el encabezado de una liga (país · división · «N de M con ejercicio AAAA» y las pastillas de ejercicio),
   en el ranking y el total «La liga en total» (que son el contenido de la pantalla) y en las tarjetas de Inicio («N de M cargados» y US$ por club). Esperan la confirmación de Guido de si el pedido vale para el sitio.
-- Los estaduales de Brasil (Paulista A1, A2, A3) no tienen nivel en los datos (`tier` ausente): decidir dónde van en la lista.
+  → descartado: Guido confirmó y se sacaron (tanda «344 implementado»).
+- Los estaduales de Brasil (Paulista A1, A2, A3) no tienen nivel en los datos (`tier` ausente): decidir dónde van en la lista. → descartado: decidido
+  en el 344, quedan sin nivel (`tier:null`, `scope:'estadual'`).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -321,7 +351,9 @@
   cargados y a ~200 KB con ~3.000 (a 1.000 clubes: ~84 KB; a 10.000: ~0,6 MB). Propuesta de umbral para reabrirlo: payload eager comprimido > 150 KB (~2.200 clubes) o `clubs.js` + `club-index.js` crudos > 1 MB.
   Medirlo con `grep -o 'src="data/[^"?]*' index.html | sed 's/src="//' | xargs cat | gzip -9c | wc -c`. Cuando se reabra: la premisa de la skill (el destino de `fiscalYearStart` es `club-index.js`, no el archivo del club)
   y partir por país no compra lazy-load si el selector necesita la tabla entera para dibujarse; lo que sirvió con `club-leagues.js` fue sacarlo del camino eager detrás de una frontera async.
+  → TODO 258 (ya con el umbral de 150 KB).
 - Si se quiere, agregar ese umbral como chequeo a `checkEscala()` de `tools/audit.js` (P3 `payload-eager`), que hoy proyecta bytes crudos y no comprimidos (lo pide Pipeline).
+  → TODO 258 (parte del mismo disparador).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -339,9 +371,10 @@
 
 ## Qué queda (para TODO)
 - Esperar el ok de Guido a las decisiones del mockup: agrupar por país por default; niveles solo dentro de país y deporte; países plegados; filtro «Con informes» con los informes propios
-  de la liga (el de la UEFA cubre toda Europa y no distingue).
+  de la liga (el de la UEFA cubre toda Europa y no distingue). → descartado: aprobado e implementado (tanda «344 implementado»).
 - Hallazgo de datos: el país `GB` se llama «Inglaterra» y hoy agrupa también la Premiership escocesa de fútbol. Con más ligas conviene separar Escocia, Gales e Irlanda del Norte o llamar
-  al grupo «Reino Unido» (`COUNTRIES` en `data/leagues.js`). Es de datos, lo decide la principal o Guido.
+  al grupo «Reino Unido» (`COUNTRIES` en `data/leagues.js`). Es de datos, lo decide la principal o Guido. → descartado: Escocia separada en el 344;
+  Gales tiene su regla.
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -361,7 +394,7 @@
   `FOS_RAIZ` sale de `file:///…/js/i18n.js`. Conviene que Guido lo abra una vez.
 
 ## Qué queda (para TODO)
-- Que Guido confirme `file://`.
+- Que Guido confirme `file://`. → descartado: verificado con Chrome sin ventana (Pantallas 7, en cada tanda).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -376,7 +409,7 @@
   (lo trae la plantilla `index.html`): una sola base por página. `--check` al día. Verificado en el preview: liga directa → club → atrás → Inicio. ASSET_V 1562.
 
 ## Qué queda (para TODO)
-- Nada.
+- Nada. → descartado: no queda nada.
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -394,8 +427,9 @@
 
 ## Qué queda (para TODO)
 - El generador (`tools/generate-club-pages.js`) ya mete su propio `<base href="/">`: ahora la página tiene dos (el primero manda, inofensivo). Pipeline puede sacar el suyo.
+  → descartado: hecho en el 342 (el generador ya no escribe su base).
 - El `<title>` y la descripción de la página generada no cambian cuando el visitante navega dentro de la app (queda el del club o la liga de entrada); solo lo ven la pestaña
-  del navegador y el historial. Si molesta, hay que actualizar `document.title` en `escribirURL()`.
+  del navegador y el historial. Si molesta, hay que actualizar `document.title` en `escribirURL()`. → descartado: hecho en el 342 (`tituloDe()`).
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.
@@ -428,12 +462,19 @@ jerga interna. `node tools/audit.js` da `correccion-sin-motivo` (P2) si falta, d
 
 ## Queda pendiente (para TODO)
 - Curar los motivos de los eventos con más impacto (valor, retiros, recargas) en `Admin/registros/correcciones.jsonl` (paso 2 del plan, con subagentes que lean el
-  cuerpo del commit y `Admin/registros/ajustes-manuales.jsonl`). Hoy todo dice «Motivo no registrado».
+  cuerpo del commit y `Admin/registros/ajustes-manuales.jsonl`). Hoy todo dice «Motivo no registrado». → TODO nuevo (lo numera la principal): «el
+  registro de correcciones, curado», con este punto, el inglés del motivo, el Data Package y la revisión de «total» y «otro» (los de abajo). Al
+  2026-10-21 `Admin/registros/correcciones.jsonl` todavía no existe.
 - El inglés del motivo: no hay traducción automática al generar; sin `motivo_en`/`Corrige-en:` la página en inglés muestra el español. Decidir si se traduce al curar.
+  → TODO nuevo (el mismo de arriba).
 - `tools/worktree.mjs mergear` debería regenerar `data/correcciones/` (como los otros generados) y `tools/exportar-paquete.mjs` sumar el registro al Data Package.
-- Los shas del registro son los de la rama: un squash o rebase al mergear los cambia; con merge normal o fast-forward quedan.
-- El punto de la tarjeta de ejercicio no lleva link (la tarjeta es un botón): el detalle está en el bloque de abajo.
+  → descartado lo de `mergear`: ya lo regenera (`OTROS_GENERADOS`); el Data Package → TODO nuevo (el mismo de arriba).
+- Los shas del registro son los de la rama: un squash o rebase al mergear los cambia; con merge normal o fast-forward quedan. → descartado: la principal
+  mergea con `worktree.mjs mergear` (merge normal), no con squash.
+- El punto de la tarjeta de ejercicio no lleva link (la tarjeta es un botón): el detalle está en el bloque de abajo. → descartado: decisión de diseño, el
+  detalle está en el bloque.
 - Revisar que los tipos «total» y «otro» de los eventos de hoy (246, 245) no tengan ruido de renombres; los 0→null de caja y deuda ya se filtran.
+  → TODO nuevo (el mismo de arriba).
 
 ## Qué deja de ser cierto en ESTADO
 - Agregar: el registro de correcciones (`correcciones.html`, `data/correcciones/`, `tools/generar-correcciones.mjs`, bloque en Finanzas) y que `data/` y el
