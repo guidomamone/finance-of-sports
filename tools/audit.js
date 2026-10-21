@@ -1164,6 +1164,26 @@ function checkClubIds(api) {
     else if (api.clubs[viejo]) add('P1', 'alias-roto', `el alias '${viejo}' es también un id vivo de club: un alias nunca se reutiliza`);
     else if (aliases[nuevo]) add('P1', 'alias-roto', `el alias '${viejo}' apunta a '${nuevo}', que a su vez es un alias (sin cadenas)`);
   }
+  checkReferenciaAClub(api, aliases);
+}
+
+// REFERENCIA A UN CLUB QUE NO EXISTE (regla de CONVENCIONES-DATOS: el id lo pone alta-club.mjs, y una referencia a un club va en el commit del alta
+// o después; aprobado por la Auditora 5, sección 7). P1 por cada alias de tools/club-league-reference/alias.json con `clubId` y cada fila de
+// data/club-leagues/ que apunta a un id que no está en data/clubs.js. Un id viejo que data/club-aliases.js resuelve a un club que sí está (`boca`,
+// o el de una unión de fichas) no cuenta: si no, una migración de ids con el alias puesto dejaría en P1 las filas viejas hasta migrarlas.
+// Caso: «Omonia 29M» = omonia29maiou-cy en alias.json antes del alta (7a3e3aa363, sacado). Los alias de `carpeta`/`sourcing` los vigila faltantes-liga.
+function checkReferenciaAClub(api, aliasesDeIds) {
+  const existe = (id) => !!api.clubs[id] || (!!aliasesDeIds[id] && !!api.clubs[aliasesDeIds[id]]);
+  let alias = {}; try { alias = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools', 'club-league-reference', 'alias.json'), 'utf8')); } catch { /* sin alias.json: nada que mirar */ }
+  for (const [iso, m] of Object.entries(alias)) {
+    if (!m || typeof m !== 'object') continue;
+    for (const [nombre, a] of Object.entries(m)) if (a && a.clubId && !existe(a.clubId)) add('P1', 'referencia-a-club-inexistente', `tools/club-league-reference/alias.json (${iso}) «${nombre}» apunta a '${a.clubId}', que no está en data/clubs.js: la referencia va en el commit del alta o después (Admin/CONVENCIONES-DATOS.md)`);
+  }
+  for (const id of Object.keys(api.CLUB_LEAGUE_BY_YEAR || {}).sort()) {
+    if (existe(id)) continue;
+    const iso = (id.match(/-([a-z]{2})$/) || [])[1];
+    add('P1', 'referencia-a-club-inexistente', `${iso ? `data/club-leagues/${iso}.js` : 'data/club-leagues/'}: la fila de '${id}' apunta a un club que no está en data/clubs.js: la referencia va en el commit del alta o después (Admin/CONVENCIONES-DATOS.md)`);
+  }
 }
 
 // --- D12c: colisión de clubId adelantada al SOURCING (Versión 163) ----------
