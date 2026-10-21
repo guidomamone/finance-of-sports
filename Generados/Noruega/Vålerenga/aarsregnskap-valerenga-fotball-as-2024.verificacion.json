@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.pdf",
  "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.md",
- "generado": "2026-10-21T12:47:57.409Z",
+ "generado": "2026-10-21T14:00:34.740Z",
  "scriptHuella": "f2a64e48f42b",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "valerenga-no",
  "year": 2024,
  "escala": {
@@ -24,11 +24,7 @@
    "fecha": "2026-10-21"
   }
  ],
- "cola": [
-  "7773a64",
-  "714f97e",
-  "714f97e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -68,6 +64,8 @@
  ],
  "notas": [
   "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el resultatregnskap de la pág. 2 (b4, versión del formulario del Brønnøysundregistrene) por duplicar el de la pág. 6 (b8)?",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-valerenga-fotball-as-2024.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-valerenga-fotball-as-2024.pdf",
   "duda de extraer que no afecta la carga: Diferencia de 1 corona en el año anterior entre L220 y L418, es redondeo."
  ],
  "reintentar": null,

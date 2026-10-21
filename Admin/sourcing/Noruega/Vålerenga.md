@@ -55,3 +55,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2022 desde `Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2022.pdf` (sourceId `valerenga-no-aarsregnskap-valerenga-fotball-as-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2023 desde `Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.pdf` (sourceId `valerenga-no-aarsregnskap-valerenga-fotball-as-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2024 desde `Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.pdf` (sourceId `valerenga-no-aarsregnskap-valerenga-fotball-as-2024`).

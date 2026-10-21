@@ -10,6 +10,14 @@ window.RANKINGS["no-1divisjon"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.944],["Otros ingresos",0.044]] },
     ],
   },
+  2024: {
+    leagueSize: null,
+    clubs: [
+      { id:"valerenga-no", revenue:6.925, reportType:"official_balance_sheet",
+        sourceId:"valerenga-no-aarsregnskap-valerenga-fotball-as-2024",
+        mix:[["Comercial / Sponsors",4.279],["Estadio",0.87],["Televisión",1.685],["Otros ingresos",0.092]] },
+    ],
+  },
   2018: {
     leagueSize: 16,
     wiki: {"t":"2018 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
