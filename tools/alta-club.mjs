@@ -842,14 +842,18 @@ export function decidirNombre(md, displayName, carpeta, pdf, { escribirCola = tr
   if (rq && rq.decision === 'aceptar' && cq?.nombrePropuesto) return campo('name', cq.nombrePropuesto, `respuesta de Guido en la cola (${cq.id}): aceptó la propuesta`);
   if (ov.name) return campo('name', ov.name.valor, `claude-api con cita verificada: ${ov.name.fuente}`);
   const nl = nombreLegal(md, displayName); const frec = nl && nl.veces >= 2 ? nl.nombre : null; const port = nombrePortada(md, displayName);
-  if (port && frec && claveN(port) === claveN(frec)) return campo('name', nombreBienEscrito(port, md), `la portada y lo más frecuente del .md coinciden (${nl.veces} veces)`);
+  // nombreLegal cuenta en las primeras 4000 líneas: si el .md es más largo, se dice (regla de Admin/PIPELINE.md «Una tool que decide no lee solo
+  // una parte del documento»; medido: 356 de 3.763 .md pasan las 4000 líneas). La decisión no cambia.
+  const totalLineas = md.split('\n').length;
+  const corte = totalLineas > 4000 ? ` (AVISO (recorte): lo más frecuente se contó en las primeras 4000 de ${totalLineas} líneas; el resto no se miró)` : '';
+  if (port && frec && claveN(port) === claveN(frec)) return campo('name', nombreBienEscrito(port, md), `la portada y lo más frecuente del .md coinciden (${nl.veces} veces)${corte}`);
   if (port || frec) {
     const prop = nombreBienEscrito(port || frec, md);
     const pregunta = `¿Cuál es el nombre legal de "${displayName}"? La portada dice ${port ? `"${port}"` : 'nada'} y lo más frecuente del documento es ${frec ? `"${frec}" (${nl.veces} veces)` : 'nada'}${nl?.otros?.length ? ` (otras formas: ${nl.otros.join('; ')})` : ''}. Propuesta: "${prop}".`;
     if (escribirCola) agregarCaso({ pdf: carpeta, md: pdf ? pdf.replace(/\.pdf$/i, '.md') : null, etapa: 'alta', motivo: 'name', detalle: carpeta, nombrePropuesto: prop, que: pregunta, propuesta: `"${prop}" (responder aceptar si está bien; si no, corregir --valor "<nombre legal>")` });
-    return campo('name', null, 'la portada y lo más frecuente no coinciden: pregunta en la cola (node tools/cola.mjs)', 'pregunta', { pregunta });
+    return campo('name', null, `la portada y lo más frecuente no coinciden: pregunta en la cola (node tools/cola.mjs)${corte}`, 'pregunta', { pregunta });
   }
-  return campo('name', displayName, 'no se encontró el nombre legal en el .md; se usa el nombre de la carpeta', 'pendiente', { nota: 'name es el nombre legal completo (pestaña Fuentes)' });
+  return campo('name', displayName, `no se encontró el nombre legal en el .md; se usa el nombre de la carpeta${corte}`, 'pendiente', { nota: 'name es el nombre legal completo (pestaña Fuentes)' });
 }
 
 // ============================================================================

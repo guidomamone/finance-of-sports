@@ -293,7 +293,16 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 - Migradas 6, con las notas originales en su lugar: Goiás 2018 L97, Ponte Preta 2023 L551, Santos 2024 L420, Sporting 2007-08 L1636, Beşiktaş 2018 L2587 y Bologna 2021-22 L2858. Medido: hoy no deja de marcar ningún hallazgo automático (`audit.js` 272 antes y después; `auditoria.mjs --check` 0; la cola, 1 caso ya contestado). Lo que evita es la relectura de sesiones y subagentes.
 - Probado en el scratchpad (24 de 24, con la aceptación de la Auditora: la cifra registrada no se marca, otra de la misma tabla sí, «32» no es «322», y una cita sin L ni pág. se rechaza). `--extractos`, en un worktree de mentira ya borrado.
 
+### 5. Barrido de lecturas recortadas que deciden (regla de PIPELINE.md «Una tool que decide no lee solo una parte del documento»)
+
+- Medido gratis sobre los 3.763 `.md` y con los ensayos de `caja-deuda.mjs --medir`. Sin pérdida: la marca de `xhtml-aarsrapport.mjs` en 400 caracteres (6 sitios; 76 de 76 adentro), la de escaneo de Mistral en 1500 (778 de 778), `pdftotext -l 2` de `mistral-ocr-transcribe.mjs` (solo marca) y `TOPE_PAGINA` de `alta-claude.mjs` (ya avisa). `cargar.mjs:215` corta la cabecera del club a 6000 caracteres (105 de 321 la pasan), pero ese valor (`cabecera` de `perimetroHeredado`) no lo lee nadie.
+- Ahora avisan, sin cambiar lo que se pide ni ninguna decisión: `caja-deuda.mjs` (`71bb67cb19`; 162 documentos cortan en las 120 filas a Jev, 0 en los 60.000 caracteres a la IA y en las 150 filas de personal), `perimetro-senales.mjs` (`edaeb90506`; 110 cortan en los 6000 caracteres a Jev, texto idéntico en los 3.763) y `alta-club.mjs` `nombreLegal` (`3f5e21eb2e`; 356 pasan las 4000 líneas).
+- El detalle, con casos: `p15-recortes.md` en la carpeta de notas compartidas de la principal.
+
 ### Qué queda (Pipeline 15)
+
+- Cuatro decisiones del barrido, para la auditora (la 5 está archivada; el mensaje no llegó): (1) Jev con todas las filas del balance en `caja-deuda.mjs` (162 documentos; las de deuda son las que quedan afuera); (2) los encabezados de balance de la página entera y no de sus primeros 1500 caracteres (287 páginas; `--medir` probado IDÉNTICO y revertido); (3) `nombreLegal` entero (cambia 63 de 356, mezclado; propuesta: dejar el corte con aviso); (4) intermedio en 20000 caracteres (leyendo entero, 394 anuales pasarían a intermedio; propuesta: aceptarlo como ventana de portada) → TODO nuevo (Pipeline, con la auditora).
+- `cabecera` de `perimetroHeredado` (`cargar.mjs:215-220`) se calcula y no la lee nadie → HALLAZGOS.
 
 - Que la skill `auditoria-finance-of-sports` (eje datos) y la de la cola digan «antes de reportar algo raro de un documento, `node tools/rarezas.mjs --md <ruta>`»: es donde se repite la relectura. Texto para la principal (la Auditora se lo pasa) → regla.
 - `emisorDe`: mandado a la Auditora 5 (sección 7). Medido: 17 de 249 XHTML con el emisor después de los 600 KB; leyendo entero gana la segunda lectura un solo año cargado, Silkeborg 2025, que coincide (25,799). Los demás con la cabecera lejos: AGF 2022-25, AaB 2025, Brøndby 2025 y el PSE de FCK (Silkeborg 2025: byte 2,69 MB) → TODO nuevo (Pipeline, espera el veredicto).
