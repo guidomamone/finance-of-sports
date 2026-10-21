@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 926 — Herramientas revisadas: ninguna se instala (2026-10-21) [320 · 321 · 322]
+- 320 Browser Use: sin caso (los portales de secuencia fija tienen captcha, bloqueo geográfico o ya se recorren con curl). 321 Higgsfield: pago mensual y créditos sin tope; no se conecta. 322 Zapier: no hace falta para el 335; OmniRoute: concentra claves y prompts y el ahorro ya lo dan la API de lotes y Sonnet. Mediciones en `Admin/mediciones/320-*.md`, `321-*.md` y `322-*.md`.
+- Enlaces rotos de `Clubes/` en dos worktrees (de la mudanza del 278) sacados; frenaban commits con P1.
+
 ## Versión 925 — Sourcing de los años con vía concreta; primera corrida de P2 y P3; skills (2026-10-21) [346 · 347 · 257 · goias-br, novorizontino-br, fiorentina-it]
 - 346 (Sourcing 4): Goiás 2018-20 (Wayback), Novorizontino 2012 (3 JPG a PDF) y Fiorentina 2020 (6 meses, Issuu) en `Clubes/`; no aparecieron Ferroviária y Novorizontino 2011, Gladbach y Stuttgart 2025 (se esperan para enero de 2027), Monza 2025 ni Lierse 2023-25. Basel 2022: la nota estaba bien (los dos 2022-23 de la carpeta son de otras entidades).
 - 347: primera corrida de «un código por corrida» (Auditora 4): `linea-duplicada` es un falso positivo (927 rótulos repetidos con montos distintos, ninguno copia); se saca la rama P3. Próximo: `catchall-dominante`.

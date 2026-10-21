@@ -33,7 +33,7 @@ el número de la izquierda es el orden de trabajo.
 3. 345 (Pipeline 13): lector del XHTML danés, con el diseño aprobado por la Auditora
 4. 347 (Pipeline 13): `linea-duplicada` sin la rama P3 «con montos distintos» (falso positivo, decisión de la Auditora)
 5. 347 (Auditora 4): primera corrida del proceso de P2 y P3, con `linea-duplicada` (927)
-6. 320 a 322 (Pruebas 1): Browser Use, Higgsfield, Zapier y OmniRoute
+6. 349: OpenSEO, Book to Skill y Open Generative AI (faltan tus links)
 
 **C. Técnico**
 (nada fuera de lo que está en marcha)
@@ -89,14 +89,7 @@ el número de la izquierda es el orden de trabajo.
     (e) enlaces a `/club/<id>` con tarjeta al compartir (241) y medir qué publicaciones traen visitas. Depende de 241 y 246.
     (f) material de difusión (era el 259): un deck para periodistas y sponsors, o un informe por liga («las finanzas de LaLiga 2025 en
         10 slides»), con el tipo Slides; sin código. Nada de esto sale antes del 337.
-320. PROBAR BROWSER USE (idea, 2026-10-19). Solo para portales con formularios de secuencia fija que hoy consumen mucho contexto del Browser
-    pane. Esperar a que aparezca uno en un lote; hoy no es urgente.
-321. HIGGSFIELD MCP (idea, 2026-10-19). Conector (`https://mcp.higgsfield.ai/mcp`) para generar imágenes y video corto con créditos de
-    Higgsfield. Sirve para los visuales del 313 (c); verificar precio y condiciones en su sitio, las fuentes encontradas son blogs.
-322. ZAPIER MCP Y OMNIROUTE (ideas, 2026-10-19; a demanda). Zapier: solo si el flujo de mails (335) o el de publicación (313) necesitan
-    automatizar "respuesta → fila" o programar posts; exponer solo las acciones necesarias. OmniRoute: gateway local de modelos con
-    fallback, para abaratar la API (no Haiku, ver la regla de modelos); concentra credenciales y prompts, así que se revisa el repo
-    antes. Quedan sin ubicar OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: pedir los links a Guido.
+349. HERRAMIENTAS SIN UBICAR (resto del 322). OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: faltan los links de Guido.
 335. MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
    un mail sin que Guido lo pida en sus palabras.
    (a) Proceso: Etapa 1 lista y probada de punta a punta (Resend, `outreach.financeofsports.com`, cola en `Admin/outreach/`, envío desde
