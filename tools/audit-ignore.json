@@ -869,5 +869,15 @@
   "code": "ejercicio-sin-rastro",
   "match": "sampdoria-it:",
   "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Italia/Sampdoria.md): los fascicoli 2022-2025 no se publican; sitio y Wayback agotados."
+ },
+ {
+  "code": "salto-interanual",
+  "match": "alverca-pt: revenue salta",
+  "motivo": "REVISADO (Auditora 5, contra Clubes/Portugal/Alverca/relatorio-contas-2022-23.md): «Outros rendimentos» pasa de 21.060 a 708.548 EUR; la línea cargada «Alienações diretas de inscrição desportiva» (694.021) es una venta de jugadores del ejercicio 2022-23 sobre un club de tercera división. El ingreso total coincide con el oficial (0,827308 M)."
+ },
+ {
+  "code": "salto-interanual",
+  "match": "harjujklaagri-ee: revenue salta",
+  "motivo": "REVISADO (Auditora 5, contra Clubes/Estonia/Harju JK Laagri/aruanne-2025.md): «Annetused ja toetused» 296.416 EUR contra 2.500 el año anterior, una subvención destinada; el ingreso total coincide con el oficial (0,393836 M)."
  }
 ]
