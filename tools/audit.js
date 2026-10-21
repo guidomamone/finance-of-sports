@@ -1578,9 +1578,12 @@ function checkGestiones(api) {
     catch (e) { add('P1', 'gestiones-no-carga', `data/gestiones/${f}.js no carga: ${e.message}`); }
   }
   const fecha = /^\d{4}-\d{2}-\d{2}$/;
+  const sinBalance = [];
   for (const [club, gs] of Object.entries(sandbox.window.CLUB_GESTIONES || {})) {
     // P3 (to-do 219): las gestiones se cargan por país antes que los balances; un club sin balance todavía es esperable, no un riesgo.
-    if (!api.clubs[club]) add('P3', 'gestion-club-inexistente', `data/gestiones: '${club}' no está en data/clubs.js`);
+    // Una línea por país en vez de una por club (Auditora 5): son 26 avisos del mismo hecho. Y un id sin balance que se parece a uno cargado
+    // (mismo país y mismos cinco primeros caracteres del slug) sí puede ser un id mal escrito: ese es P1 (`gestion-id-sospechoso`).
+    if (!api.clubs[club]) sinBalance.push(club);
     const orden = gs.slice().sort((a, b) => a.desde < b.desde ? -1 : 1);
     orden.forEach((g, i) => {
       const quien = `${club} · ${g.nombre || '?'}`;
@@ -1591,6 +1594,20 @@ function checkGestiones(api) {
       const sig = orden[i + 1];
       if (sig && (g.hasta == null || g.hasta > sig.desde)) add('P1', 'gestiones-superpuestas', `${club}: ${g.nombre} (hasta ${g.hasta || 'hoy'}) se pisa con ${sig.nombre} (desde ${sig.desde})`);
     });
+  }
+  const partes = (id) => { const i = id.lastIndexOf('-'); return { slug: id.slice(0, i), pais: id.slice(i + 1) }; };
+  const porPais = {};
+  for (const id of sinBalance) (porPais[partes(id).pais] = porPais[partes(id).pais] || []).push(id);
+  for (const [pais, ids] of Object.entries(porPais)) {
+    add('P3', 'gestion-club-inexistente', `${ids.length} clubes con gestión y sin balance (${pais}): ${ids.join(', ')} — las gestiones se cargan por país antes que los balances`);
+    for (const id of ids) {
+      const { slug } = partes(id);
+      // «se parece» = mismo país, mismos cinco primeros caracteres del slug (Auditora 5) Y a lo sumo 2 letras de distancia: sin lo segundo,
+      // «deportestolima» y «deportivopereira» (dos clubes distintos de Colombia) comparten «depor» y darían un P1 falso, que frena los commits.
+      const dist = (a, b) => { const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]); for (let j = 1; j <= b.length; j++) d[0][j] = j; for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); return d[a.length][b.length]; };
+      const parecido = Object.keys(api.clubs).find((c) => { const p = partes(c); return p.pais === pais && p.slug.slice(0, 5) === slug.slice(0, 5) && dist(p.slug, slug) <= 2; });
+      if (parecido) add('P1', 'gestion-id-sospechoso', `data/gestiones: '${id}' no está en data/clubs.js pero se parece a '${parecido}' (mismo país y mismos cinco primeros caracteres): ¿id mal escrito?`);
+    }
   }
 }
 
