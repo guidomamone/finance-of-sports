@@ -7,8 +7,8 @@
 - El F.04 que tenemos (`F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.pdf`, 7 págs.) solo dice, en la página de las cifras, que sus datos «zijn ontleend uit de jaarrekening 2020-2021 van FC Emmen B.V., waarbij een accountantsverklaring is verstrekt»: el informe del auditor no está en él.
 - **El documento existe en el Handelsregister de la KvK, pero hay que pagarlo.** Según el tarifario oficial de la KvK vigente desde el 1/1/2026 (`tarievenoverzicht_1_januari_2026.pdf`, leído): **jaarrekening, por pieza (descarga online): €3,90**; ver el listado de depósitos de la sociedad (para saber qué ejercicios hay): €2,95; un «gewaarmerkt» (certificado digital) es más caro (€9,60 según una fuente secundaria; no lo vi en el PDF). Se pide por kvk.nl > Producto > Jaarrekeningen > «Bestel», buscando la sociedad por nombre o número, y se puede bajar como PDF, XBRL o ZIP de XHTML/iXBRL. Se pueden pedir los últimos 7 años (el 2020-21 entra).
 - **La sociedad:** FC Emmen B.V. (besloten vennootschap, activa; Stadionplein, Emmen). **KvK 40781860 según un directorio de terceros**; no lo pude verificar en kvk.nl (la búsqueda es una web dinámica) ni aparece en los PDF. Verificarlo al pedir.
-- **No compré nada.** Para el 2020-21: **€3,90** (+ €2,95 si hace falta ver el listado). Si Guido quiere también el 2019-20 (el otro ejercicio de Emmen en la misma situación), son otros €3,90: €7,80 los dos.
-- Sin otra vía gratis hallada: el sitio del club (`fcemmen.nl`) solo sube los F.04 y los jaarverslagen, y Wayback estaba fuera de servicio cuando lo probé.
+- **No compré nada, y Guido dijo que no se compra** («no vamos a comprar el reporte»): solo fuentes gratis. Revisadas sin hallazgo: el sitio del club (`fcemmen.nl/jaarverslagen/`: el link 2020/2021 es el mismo F.04 que ya tenemos), Exa (una búsqueda; devuelve esa página y prensa de otros clubes) y prensa. La CDX de Wayback del sitio respondió 502.
+- **Resultado:** solo existe de pago. Anotado en la nota del club (`Admin/sourcing/Países Bajos/FC Emmen.md`) y en `Admin/dudas-por-club.md` («pedírselo al club», para 2020-21 y 2019-20).
 
 ### (2) Url del depósito en regnskaber.virk.dk de las otras 15 fuentes danesas
 
