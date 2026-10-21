@@ -15,6 +15,15 @@ excepción decidida, justo debajo de la de las etiquetas de estado, en «4. Toqu
   Un link solo en su párrafo sí llega a 44, sin mover el texto. Una auditoría `ux` no los marca.
 ```
 
+Cómo quedan las dos excepciones juntas, la de las etiquetas (ya aplicada) y esta debajo (el mismo texto, nada más):
+
+```markdown
+  información de más. Una auditoría `ux` no las marca.
+  *Excepción, ya decidida (no es un pendiente):* un link dentro de un párrafo con más de un link (texto corrido: una atribución, una cita con su
+  licencia). Sus áreas de 44 px se pisarían de un renglón al otro y el toque abriría el link equivocado; agrandar el interlineado cambia la lectura.
+  Un link solo en su párrafo sí llega a 44, sin mover el texto. Una auditoría `ux` no los marca.
+```
+
 Con el ok (Guido: «si, excepcion»), el caso del área mínima cambia su segunda frase («Hoy todavía quedan chicos en Inicio…», que el 361 resolvió) por
 el caso de los links en texto corrido. Reemplaza las dos líneas que empiezan en `*Caso:* en la página de una liga, el nombre de cada club medía 17 px`:
 
