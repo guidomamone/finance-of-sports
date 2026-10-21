@@ -248,3 +248,15 @@ Los PDFs en-mano cuentan toda la historia de cada club en-mano, no solo 2021-25 
 
 ### Presupuesto propuesto (API; Mistral ~US$0,2 por PDF sin `.md`, localizar+extraer+categorizar ~US$0,3 por PDF; cifras de `estado.mjs`)
 Premier ~25 · LaLiga ~30 · Serie A ~5 · Bundesliga ~10 · Brasil ~60 · Argentina ~10 · Ligue 1 ~20 (si se aprueba el criterio) = ~US$160, con margen. Primero los que ya tienen `.md` (más barato), ensayo gratis (`pipeline.mjs --max-paginas 0`) antes de cada corrida para fijar el costo exacto por liga.
+
+## Pipeline 11: to-do 339, inventario (2026-10-20)
+
+### Qué cambió
+- `Admin/mediciones/339-inventario.md`: todo lo que asume fútbol en tools/, prompts, skills y audit.js (38 puntos), con archivo y línea, de dónde leería el deporte y cuánto trabajo es. Solo lectura: no se tocó ninguna tool.
+
+### Qué queda
+- Paso 2 del 339 (después de la migración del 248, Datos 4): `tools/deporte-club.mjs` + lista de categorías y ejemplos por deporte en Jev y `categorizar-claude.mjs`, luego las compuertas de `cargar.mjs`. Las condiciones nuevas (filtro de ejemplos, `CATEGORÍA (prompt, deporte)`, tabla de ceros por deporte, sin deporte = pregunta) se muestran a Guido antes de codear.
+- Dudas para Datos 4 en la sección 6 del inventario (cómo leen las tools la taxonomía; descripciones de las subcategorías de rugby; si habrá bolsón).
+
+### Qué deja de ser cierto
+- Nada en ESTADO. En el TODO, el 339 queda con el paso 1 hecho.
