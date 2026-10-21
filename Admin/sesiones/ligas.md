@@ -144,3 +144,102 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: frenado de Bath en `verificar.mjs`, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: el cambio de `verificar.mjs` (el ajuste manual `desglose` se prueba antes de `cerrarNota()`), APROBADO; Pipeline 11 puede commitearlo en `onboarding`.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: `e500bdab8c`, `c514bddfff` y `deporteODefecto()` desde el registro de altas, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Tres líneas más en `Admin/registros/auditoria-proceso.jsonl`: `e500bdab8c` y `c514bddfff` APROBADOS; la propuesta de que `deporteODefecto()` lea el deporte de `altas-club.jsonl` (y devuelva null si no hay fuente), APROBADA CON DOS CAMBIOS.
+
+### Qué queda (para TODO / 339)
+
+- `deporteODefecto()`: orden ficha, registro de altas (solo con `sport` no nulo y su fuente), null. Medir antes de dar por buena la condición cuántos documentos de las listas de prueba tienen un club sin ficha y sin línea de registro; si el lote corre Jev antes del alta, que el lote corra `alta-club` sobre sus carpetas antes de la etapa 5.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: tres alineaciones al deporte (Jev --desde-sesion, caja-deuda --partir, audit.js), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Tres líneas más en `Admin/registros/auditoria-proceso.jsonl`: los tres cambios de Pipeline 11 en el working tree de `onboarding` (freno 4 de Jev, `caja-deuda --personal --partir`, `sin-salarios` y `sueldos-escondidos` de `audit.js`), APROBADOS.
+
+### Qué queda
+
+- `audit.js` trata un club sin `sport` como fútbol: sumar un hallazgo `club-sin-deporte` junto con el null de `deporteODefecto()`.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: `ced0a94508`, el deporte sin default fútbol, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: `ced0a94508` (`resolverDeporte`, `sport` en `altas-club.jsonl`, `club-sin-deporte` P1), APROBADO CON UN CAMBIO.
+
+### Qué queda (para TODO / 339)
+
+- `lote.mjs` corre `alta-club` solo fuera del modo `--sin-api`; hay que sacarlo del `if (!SIN_API)` (Pipeline 11).
+- Después del merge: `node tools/alta-club.mjs --todos` (gratis, ~20 s) en la principal, para que el registro de altas trackeado tenga `sport`.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: freno 5 de Bath, `alta-club` club-leagues y `worktree.mjs`, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Tres líneas más en `Admin/registros/auditoria-proceso.jsonl`: `checkCategorias` de `audit.js` por deporte y el año en la línea existente de `club-leagues` (`alta-club.mjs`), APROBADOS; `worktree.mjs` (enlace a `tools/node_modules`), APROBADO CON UN CAMBIO.
+
+### Qué queda
+
+- `.gitignore`: cambiar `tools/node_modules/` por `tools/node_modules` (sin barra final), en el mismo commit que el enlace de `worktree.mjs`. Con la barra git no ignora un enlace simbólico y un `git add -A` lo agregaría.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: `32dafd0a90` y `audit.js` sin ids de fútbol fijos, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`: `32dafd0a90` (`lote.mjs` corre `alta-club` antes del filtro de `--sin-api`) APROBADO; el barrido de `audit.js` y `pruebaDeDeporte()` (P1 `deporte-muestra`), APROBADO CON UN CAMBIO.
+
+### Qué queda (para TODO / 339)
+
+- `pruebaDeDeporte()` tiene que envolver cada chequeo en try/catch (limpieza en finally) y reportar una excepción como P1 `deporte-muestra`: si no, un deporte nuevo puede tirar abajo todo `audit.js` y ocultar el informe de los datos reales.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: `7e1971717e` y `af445e43f2`, cierre de la revisión del 339, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: `7e1971717e` (`audit.js` con try/catch por chequeo) y `af445e43f2` (`PIPELINE.md`), APROBADOS. Todo el 339 de la rama `onboarding` queda aprobado para el merge.
+
+### Qué queda
+
+- Después del merge: `node tools/alta-club.mjs --todos` (gratis, ~20 s) en la principal, para que el registro de altas tenga `sport`.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
