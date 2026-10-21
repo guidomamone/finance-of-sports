@@ -121,23 +121,12 @@
     const c = cierreEjercicio(clubId, y);
     return c >= '2020-03-31' && c <= '2021-12-31';
   }
-  // El estallido: 16 puntas de radio alternado y una irregularidad fija, calculado una sola vez.
-  const COVID_PUNTOS = (function(){
-    const pts = [];
-    for(let i = 0; i < 32; i++){
-      const a = (Math.PI * 2 * i) / 32 - Math.PI / 2;
-      const r = i % 2 === 0 ? 47 + ((i * 7) % 5) : 34 + ((i * 3) % 4);
-      pts.push((50 + Math.cos(a) * r).toFixed(1) + ',' + (30 + Math.sin(a) * r * 0.62).toFixed(1));
-    }
-    return pts.join(' ');
-  })();
   // `tam`: 's' (card de ejercicio), 'm' (cabecera de tabla) o 'l' (número grande). `conFoco`: false dentro de un botón, donde un segundo
-  // elemento enfocable sobraría. Devuelve el HTML; el globo sale de data-info-tip (js/info-tip.js).
+  // elemento enfocable sobraría. Devuelve el HTML de una etiqueta de estado; el globo sale de data-info-tip (js/info-tip.js).
   function marcaCovidHtml(tam, conFoco){
     const aria = t('covid.aria', 'Ejercicio dentro de la pandemia de COVID-19: partidos suspendidos o a puertas cerradas');
     const tip = t('covid.tip', 'Pandemia de COVID-19: entre marzo de 2020 y junio de 2021 hubo partidos suspendidos o a puertas cerradas, según el país. Los importes son los del balance, sin ajuste.');
-    return '<span class="covid ' + tam + '" role="img"' + (conFoco ? ' tabindex="0"' : '') + ' aria-label="' + aria.replace(/"/g, '&quot;') + '" data-info-tip="' + tip.replace(/"/g, '&quot;') + '">' +
-      '<svg viewBox="-4 -4 108 68" aria-hidden="true" focusable="false"><polygon class="burst" points="' + COVID_PUNTOS + '"></polygon><text x="50" y="37">COVID</text></svg></span>';
+    return '<span class="covid ' + tam + '" role="img"' + (conFoco ? ' tabindex="0"' : '') + ' aria-label="' + aria.replace(/"/g, '&quot;') + '" data-info-tip="' + tip.replace(/"/g, '&quot;') + '">COVID</span>';
   }
   window.esCovid = esCovid;
   window.marcaCovidHtml = marcaCovidHtml;

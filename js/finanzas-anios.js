@@ -148,8 +148,6 @@ const FIN_ANIOS = (function(){
       if(esCovid(clubId, e.y)) b.insertAdjacentHTML('beforeend', marcaCovidHtml('s', false));
       fila.appendChild(b);
     });
-    // La marca COVID sobresale de la fila: se le deja lugar arriba solo si hay alguna.
-    fila.classList.toggle('con-covid', !!fila.querySelector('.covid'));
     // En celular la fila se scrollea de costado: que arranque mostrando lo más nuevo.
     fila.scrollLeft = fila.scrollWidth;
 
