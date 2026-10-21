@@ -59,6 +59,19 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "valerenga-no": {
+  "2024": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO AS"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.md",
+    "linea": 844
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "BDO",

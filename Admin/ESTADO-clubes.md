@@ -333,7 +333,7 @@ NO (6)
   Fredrikstad   8 ejercicios (2012, 2013, 2014, 2015, 2016, 2017, 2018, 2024), balance, NOK, sin deuda/caja
   Molde         18 ejercicios (2008 a 2025), balance, NOK, sin deuda/caja
   Sarpsborg 08  14 ejercicios (2008, 2012, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025), balance, NOK, sin deuda/caja
-  Vålerenga     4 ejercicios (2022 a 2025), balance, NOK, sin deuda/caja
+  Vålerenga     4 ejercicios (2022 a 2025), balance, NOK
   Viking        9 ejercicios (2017 a 2025), balance, NOK, sin deuda/caja
 
 PERÚ (1)

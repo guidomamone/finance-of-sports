@@ -223,6 +223,18 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "raallalouviere-be": {
+  "2020": {
+   "auditor": {
+    "nombre": "Joiris - Rousseaux & Co - Réviseurs d'entreprises associés",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.md",
+    "linea": 1455
+   }
+  },
   "2025": {
    "auditor": null,
    "dictamen": "sin_informe",
