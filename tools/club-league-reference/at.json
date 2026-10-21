@@ -67,6 +67,32 @@
           "Hartberg",
           "Wolfsberger AC",
           "WSG Tirol"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Austrian_Football_Bundesliga"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tableso/oost2024.html",
+            "tabla": "Bundesliga",
+            "fetchedAt": "2026-10-21T18:06:48.524Z",
+            "equipos": [
+              "RB Salzburg",
+              "SK Sturm Graz",
+              "LASK Linz",
+              "SK Austria Klagenfurt",
+              "TSV Hartberg",
+              "SK Rapid Wien",
+              "FK Austria Wien",
+              "Wolfsberger AC",
+              "SC Rheindorf Altach",
+              "FC Blau-Wei&szlig; Linz",
+              "Wattener SG Tirol",
+              "SC Austria Lustenau"
+            ]
+          }
         ]
       },
       "2025": {
@@ -101,6 +127,32 @@
           "WSG Tirol",
           "Grazer AK",
           "Rheindorf Altach"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Austrian_Football_Bundesliga"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tableso/oost2025.html",
+            "tabla": "Bundesliga",
+            "fetchedAt": "2026-10-21T18:06:48.563Z",
+            "equipos": [
+              "SK Sturm Graz",
+              "FK Austria Wien",
+              "RB Salzburg",
+              "Wolfsberger AC",
+              "SK Rapid Wien",
+              "FC Blau-Wei&szlig; Linz",
+              "LASK Linz",
+              "TSV Hartberg",
+              "SK Austria Klagenfurt",
+              "Wattener SG Tirol",
+              "GAK 1902",
+              "SC Rheindorf Altach"
+            ]
+          }
         ]
       }
     },

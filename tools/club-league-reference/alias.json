@@ -1,10 +1,12 @@
 {
   "_comentario": "Nombre de una lista de Wikipedia -> el mismo club con otro nombre, cuando el nombre normalizado no alcanza (lo lee tools/faltantes-liga.mjs). Cada entrada es { clubId } (club del sitio), { carpeta: 'País/Club' } (Clubes/) o { sourcing: 'País/Club' } (Admin/sourcing/). Solo el MISMO club (renombrado, con sponsor, en otro idioma); nunca un filial, un homónimo ni el club nuevo que ocupó la plaza de uno disuelto. Candidatos: node tools/faltantes-liga.mjs --sugerir.",
   "nl": {
-    "Eindhoven": {"clubId": "fceindhoven-nl"}
+    "Eindhoven": {"clubId": "fceindhoven-nl"},
+    "FC Twente (Enschede)": {"clubId": "fctwente-nl"}
   },
   "at": {
-    "Rheindorf Altach": {"sourcing": "Austria/SCR Altach"}
+    "Rheindorf Altach": {"sourcing": "Austria/SCR Altach"},
+    "SK Rapid Wien": {"clubId": "rapidwien-at"}
   },
   "br": {
     "Red Bull Bragantino": {"clubId": "rbbragantino-br"},
@@ -19,6 +21,7 @@
   },
   "co": {
     "Santa Fe": {"clubId": "santafe-co"},
+    "Fortaleza FC (Bogotá)": {"clubId": "fortalezaceif-co"},
     "Alianza Petrolera": {"clubId": "alianzafc-co"},
     "Patriotas F.C.": {"carpeta": "Colombia/Patriotas Boyaca"},
     "Fortaleza F.C.": {"clubId": "fortalezaceif-co"},
@@ -94,12 +97,14 @@
   "gr": {
     "Volos": {"clubId": "volosnfc-gr"},
     "A.E. Kifisia": {"clubId": "kifisia-gr"},
-    "Kallithea": {"carpeta": "Grecia/Athens Kallithea"}
+    "Kallithea": {"carpeta": "Grecia/Athens Kallithea"},
+    "OFI Heraklion": {"clubId": "oficrete-gr"}
   },
   "it": {
     "Inter Milan": {"clubId": "inter-it"},
     "Internazionale": {"clubId": "inter-it"},
     "ChievoVerona": {"clubId": "chievoverona-it"},
+    "AC Chievo Verona": {"clubId": "chievoverona-it"},
     "Delta Rovigo": {"sourcing": "Italia/Rovigo Delta"},
     "AZ Picerno": {"sourcing": "Italia/Picerno"}
   },
@@ -119,7 +124,9 @@
     "Desportivo de Chaves": {"clubId": "chaves-pt"},
     "Grupo Desportivo '''Estoril-Praia'''": {"clubId": "estorilpraia-pt"},
     "Clube Desportivo '''Feirense'''": {"carpeta": "Portugal/Feirense"},
-    "Clube Desportivo '''Santa Clara'''": {"clubId": "santaclara-pt"}
+    "Clube Desportivo '''Santa Clara'''": {"clubId": "santaclara-pt"},
+    "GD Estoril Praia": {"clubId": "estorilpraia-pt"},
+    "Vitória SC (Guimarães)": {"clubId": "vitoriaguimaraes-pt"}
   },
   "ru": {
     "Spartak": {"clubId": "spartakmoscow-ru"},

@@ -516,3 +516,21 @@ Unos US$ 12,3 en total contando los US$ 3,29 de Pipeline 12: pasé el tope de US
 
 ### Gasto
 US$ 0 de API (los subagentes van con tokens de sesión).
+
+## To-do 358 (2026-10-21, Onboarding 9)
+
+### Qué cambió (para CHANGELOG)
+- **Segunda fuente (RSSSF) escrita con `tools/segunda-fuente-liga.mjs`** en 26 liga-temporadas: pt-primeiraliga 2021-25, gr-superleague 2019-20 y 2022-25, at-bundesliga 2024-25, ch-superleague 2009, co-primeraA 2025, dk-superliga 2020 y 2026, gb-premierleague 2020-23, it-seriea 2014 y nl-eredivisie 2019 y 2025. Antes de escribir, en cada ensayo revisé que la tabla fuera la de esa liga, con todos sus equipos. `liga-fuentes-no-coinciden` da 0.
+- **Alias de RSSSF** (`tools/club-league-reference/alias.json`, el mismo club con el nombre de RSSSF): GD Estoril Praia, Vitória SC (Guimarães), OFI Heraklion, SK Rapid Wien, FC Twente (Enschede), Fortaleza FC (Bogotá) y AC Chievo Verona.
+- `liga-una-fuente` bajó de 17 a 10 ligas.
+- Códigos de RSSSF que no se adivinan: Grecia `tablesg/grkAAAA`, Suiza `tablesz/zwitAAAA` (2009: `zwit09`), Dinamarca `tablesd/denAAAA`, Austria `tableso/oostAAAA`.
+
+### Qué queda (para TODO)
+- **Las 10 ligas que siguen con `liga-una-fuente` tienen tabla en RSSSF, pero la tool no la puede leer.** Son tres defectos de script, anotados en `Admin/registros/frenados-por-script.jsonl` → Pipeline. Cuando estén arreglados, se corren con las URLs ya cacheadas en `Generados/fuentes-liga/`.
+  - El título cae en el índice del principio de la página, así que la tool solo puede leer la primera tabla. Frena be-challengerproleague 2018-24, pt-ligaportugal2 2022-25, pt-liga3 2023, gr-superleague2 2018 y 2025, gb-championship 2022 y nl-eerstedivisie 2025. Es el que importa: si las dos tablas tienen el mismo número de equipos, la compuerta deja pasar la tabla equivocada.
+  - Las páginas en UTF-16 no se leen: gr-superleague 2021 y ru-premierliga 2022-23.
+  - La fila pide dos espacios entre el nombre y los partidos jugados, y no admite rótulos entre filas: ch-superleague 2011-12 y ar-primera 2025 (la compuerta frena bien).
+- Ninguna liga se quedó sin RSSSF, así que no hay líneas nuevas para HALLAZGOS.
+
+### Gasto
+US$ 0 (RSSSF es HTML, sin IA).

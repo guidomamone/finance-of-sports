@@ -109,6 +109,34 @@
           "OB",
           "SønderjyskE",
           "Silkeborg"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Danish_Superliga"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesd/den2020.html",
+            "tabla": "Superligaen",
+            "fetchedAt": "2026-10-21T18:06:48.687Z",
+            "equipos": [
+              "FC Midtjylland",
+              "FC København",
+              "AGF",
+              "Brøndby IF",
+              "FC Nordsjælland",
+              "AaB",
+              "Randers FC",
+              "AC Horsens",
+              "OB",
+              "Lyngby BK",
+              "SønderjyskE",
+              "Hobro IK",
+              "Esbjerg fB",
+              "Silkeborg IF"
+            ]
+          }
         ]
       },
       "2021": {
@@ -313,6 +341,32 @@
           "Sønderjyske",
           "Vejle",
           "Viborg"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Danish_Superliga"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesd/den2026.html",
+            "tabla": "Superligaen",
+            "fetchedAt": "2026-10-21T18:06:48.726Z",
+            "equipos": [
+              "AGF",
+              "FC Midtjylland",
+              "SønderjyskE",
+              "Brøndby IF",
+              "Viborg FF",
+              "FC Nordsjælland",
+              "FC København",
+              "OB",
+              "Randers FC",
+              "FC Fredericia",
+              "Silkeborg IF",
+              "Vejle Boldklub"
+            ]
+          }
         ]
       }
     },
