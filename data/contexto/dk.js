@@ -8,6 +8,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'brondby-dk': {
     2020: {"estadio":"Brøndby Stadium","capacidad":29000,"sponsor":"Booztlet","marca":"Hummel","temporada":"2020–21 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1287585270"},
+    2021: {"estadio":"Brøndby Stadium","capacidad":29000,"sponsor":"Booztlet","marca":"Hummel","temporada":"2021–22 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379231192"},
   },
   'fckobenhavn-dk': {
     2024: {"estadio":"Parken","capacidad":38009,"sponsor":"Unibet","marca":"Adidas","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},

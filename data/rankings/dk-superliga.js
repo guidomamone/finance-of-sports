@@ -65,6 +65,9 @@ window.RANKINGS["dk-superliga"] = {
     leagueSize: 12,
     wiki: {"t":"2020–21 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
+      { id:"brondby-dk", revenue:54.874, reportType:"official_balance_sheet",
+        sourceId:"brondby-dk-aarsrapport-2021-12-31",
+        mix:[["Comercial / Sponsors",17.564],["Estadio",3.54],["Televisión",22.484],["Venta de Jugadores",7.653],["Otros ingresos",3.632]] },
       { id:"agf-dk", revenue:30.096, reportType:"official_balance_sheet",
         sourceId:"agf-aarsrapport-2020-21",
         mix:[["Comercial / Sponsors",12.213],["Estadio",3.061],["Televisión",5.541],["Venta de Jugadores",4.577],["Otros ingresos",4.704]] },

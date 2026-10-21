@@ -2,8 +2,8 @@
   "md": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.md",
   "pdf": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.pdf",
   "club": "brondby-dk",
-  "year": null,
-  "generatedAt": "2026-10-21T12:47:57.666Z",
+  "year": 2021,
+  "generatedAt": "2026-10-21T13:33:13.526Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         147.52
       ],
-      "glosa": "Ingresos por taquilla, televisión y premios deportivos"
+      "glosa": "Ingresos por taquilla, televisión y premios"
     },
     {
       "label": "Indtægter fra partnere og sponsorer",
@@ -24,7 +24,7 @@
       "values": [
         72.628
       ],
-      "glosa": "Ingresos de patrocinadores y socios comerciales"
+      "glosa": "Ingresos por patrocinadores y socios"
     },
     {
       "label": "F&B og arrangementer m.v.",
@@ -54,7 +54,7 @@
       "values": [
         2.26
       ],
-      "glosa": "Alquiler de inmuebles comerciales, etc."
+      "glosa": "Arrendamiento de inmuebles comerciales, etc."
     },
     {
       "label": "Anden nettoomsætning",
@@ -123,7 +123,7 @@
       "values": [
         -3.803
       ],
-      "glosa": "Deterioro del valor de derechos contractuales"
+      "glosa": "Deterioro de derechos contractuales"
     },
     {
       "label": "Afskrivninger på kontraktrettigheder",
@@ -162,7 +162,7 @@
       "values": [
         7.957
       ],
-      "glosa": "Gastos de ventas y marketing"
+      "glosa": "Gastos de comercialización y marketing"
     },
     {
       "label": "F&B og arrangementer m.v.",
@@ -192,7 +192,7 @@
       "values": [
         19.034
       ],
-      "glosa": "Consumo de mercaderías (merchandising, etc.)"
+      "glosa": "Consumo de mercancías de merchandising, etc."
     },
     {
       "label": "Administrationsomkostninger",
@@ -212,7 +212,7 @@
       "values": [
         4.477
       ],
-      "glosa": "Remuneración de la dirección"
+      "glosa": "Retribución de la dirección"
     },
     {
       "label": "Kontantbaseret incitamentsordning, direktion",
@@ -242,7 +242,7 @@
       "values": [
         0.525
       ],
-      "glosa": "Retribución del consejo de administración"
+      "glosa": "Honorarios del consejo de administración"
     },
     {
       "label": "Gager og lønninger til medarbejdere",
@@ -252,7 +252,7 @@
       "values": [
         103.062
       ],
-      "glosa": "Sueldos y salarios de los empleados"
+      "glosa": "Sueldos y salarios del personal"
     },
     {
       "label": "Pensionsordninger, bidragsbaserede",
@@ -272,7 +272,7 @@
       "values": [
         1.11
       ],
-      "glosa": "Otros gastos de seguridad social"
+      "glosa": "Otras cotizaciones a la seguridad social"
     },
     {
       "label": "Øvrige personaleomkostninger",
@@ -321,7 +321,7 @@
       "values": [
         0.108
       ],
-      "glosa": "Pérdidas por venta/baja del inmovilizado"
+      "glosa": "Pérdidas por enajenación o baja del inmovilizado"
     }
   ]
 }

@@ -1,22 +1,12 @@
 {
  "pdf": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.pdf",
- "generado": "2026-10-21T12:52:10.917Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Diferencia de redondeo\" -> other_income 0; \"Omkostninger\" -> other_income 0; \"Nedskrivninger på kontraktrettigheder\" -> other_income 0; \"Afskrivninger på kontraktrettigheder\" -> other_income 0; \"Diferencia de redondeo\" -> other_income 0"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2021: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2021: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-21T13:45:35.487Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-21: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 8 documento(s) mirados)",
+  "3 fila(s) con categoría de un lado y el documento del otro: \"Omkostninger\" -> player_amortisation; \"Nedskrivninger på kontraktrettigheder\" -> player_impairment; \"Afskrivninger på kontraktrettigheder\" -> player_amortisation",
+  "ingresos: ningún total impreso igual a la suma de las líneas (360.037); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-276.474); queda la suma, verificada por el resultado del ejercicio",
   "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
  ],
  "ejercicio": {
@@ -90,9 +80,9 @@
     "normalizedCategory": "other_income",
     "amountNative": 0.001,
     "disclosureLevel": "aggregated",
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kompensation fra Staten",
@@ -125,46 +115,46 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Omkostninger",
-    "normalizedCategory": "other_income",
-    "amountNative": -2.584,
-    "disclosureLevel": "aggregated",
-    "_pag": 49,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
-   },
-   {
-    "rawLabel": "Nedskrivninger på kontraktrettigheder",
-    "normalizedCategory": "other_income",
-    "amountNative": -3.803,
-    "disclosureLevel": "aggregated",
-    "_pag": 49,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_impairment, del otro lado que la fila: se propone la genérica de su lado"
-   },
-   {
-    "rawLabel": "Afskrivninger på kontraktrettigheder",
-    "normalizedCategory": "other_income",
-    "amountNative": -25.288,
-    "disclosureLevel": "aggregated",
-    "_pag": 49,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_amortisation, del otro lado que la fila: se propone la genérica de su lado"
-   },
-   {
     "rawLabel": "Diferencia de redondeo",
     "normalizedCategory": "other_income",
     "amountNative": 0.001,
     "disclosureLevel": "aggregated",
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
+   {
+    "rawLabel": "Omkostninger",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -2.584,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Nedskrivninger på kontraktrettigheder",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -3.803,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Afskrivninger på kontraktrettigheder",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -25.288,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
    {
     "rawLabel": "Kamp- og spilleromkostninger",
     "normalizedCategory": "match_organisation_expense",
@@ -301,9 +291,9 @@
     "amountNative": -7.983,
     "disclosureLevel": "aggregated",
     "_pag": 48,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diferencia de redondeo",
@@ -371,8 +361,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 328.362,
-   "officialTotalExpenses": 244.799,
+   "officialTotalRevenue": 360.037,
+   "officialTotalExpenses": 276.474,
    "officialPAT": 83.418
   },
   "source": {
@@ -511,12 +501,12 @@
    "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
    "signoFijo": 0.001,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): DK/Brøndby/aarsrapport-2021-12-31.md:1208-1214 (6 renglones de la nota suman 290.003 contra Nettoomsætning 290.004 impresa: +0,001 M)",
    "destino": "revenue",
    "amountNative": 0.001
   },
@@ -572,14 +562,15 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")",
    "signoFijo": -2.584,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): DK/Brøndby/aarsrapport-2021-12-31.md:1360 (\"Omkostninger",
+   "destino": "expense",
+   "ladoContradictorio": true,
    "amountNative": -2.584
   },
   {
@@ -589,14 +580,15 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")",
    "signoFijo": -3.803,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_impairment, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): DK/Brøndby/aarsrapport-2021-12-31.md:1361 (\"Nedskrivninger på kontraktrettigheder",
+   "destino": "expense",
+   "ladoContradictorio": true,
    "amountNative": -3.803
   },
   {
@@ -606,14 +598,15 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")",
    "signoFijo": -25.288,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_amortisation, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
-   "destino": "revenue",
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): DK/Brøndby/aarsrapport-2021-12-31.md:1362 (\"Afskrivninger på kontraktrettigheder",
+   "destino": "expense",
+   "ladoContradictorio": true,
    "amountNative": -25.288
   },
   {
@@ -623,12 +616,12 @@
    "origen": "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")",
    "signoFijo": 0.001,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): DK/Brøndby/aarsrapport-2021-12-31.md:1208-1214 (6 renglones de la nota suman 290.003 contra Nettoomsætning 290.004 impresa: +0,001 M)",
    "destino": "revenue",
    "amountNative": 0.001
   },
@@ -835,11 +828,11 @@
    "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
    "signoFijo": 7.983,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet, revisado): DK/Brøndby/aarsrapport-2021-12-31.md:1303 (\"Øvrige personaleomkostninger",
    "destino": "expense",
    "amountNative": -7.983
   },
@@ -940,40 +933,30 @@
   "porTabla": {
    "verificacion (nota que desglosa \"Nettoomsætning\")": "gastos con signo",
    "verificacion (nota que desglosa \"Andre driftsindtægter\")": "gastos con signo",
-   "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Eksterne omkostninger\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Personaleomkostninger\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Af- og nedskrivninger\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+  "elegida": "gastos por tabla; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 328.362,
-  "expSum": -244.799,
-  "officialTotalRevenue": 328.362,
-  "officialTotalExpenses": 244.799,
+  "revSum": 360.037,
+  "expSum": -276.474,
+  "officialTotalRevenue": 360.037,
+  "officialTotalExpenses": 276.474,
   "officialPAT": 83.418,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "impreso",
-   "gastos": "impreso"
+   "ingresos": "por-resultado",
+   "gastos": "por-resultado"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
    "pag": null,
    "M": 83.418,
-   "signos": "signos de la verificación; financiero/impuesto como su tabla"
-  },
-  "revImpreso": {
-   "label": "total de ingresos (verificado)",
-   "pag": null,
-   "M": 328.362
-  },
-  "expImpreso": {
-   "label": "total de gastos (verificado)",
-   "pag": null,
-   "M": 244.799
+   "signos": "gastos por tabla; financiero/impuesto como su tabla"
   }
  },
  "fxCloseNuevo": {
@@ -1035,10 +1018,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
-  "lineasIngreso": 14,
-  "lineasGasto": 18,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 11,
+  "lineasGasto": 21,
   "metaFilas": 3,
   "excluidas": 0
  }

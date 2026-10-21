@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "brondby-dk",
@@ -17,6 +17,13 @@
       "id": "brondby-aarsrapport-2020",
       "club_id": "brondby-dk",
       "title": "Brøndbyernes I.F. Fodbold A/S — Årsrapport 2020 (1. januar - 31. december 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "brondby-dk-aarsrapport-2021-12-31",
+      "club_id": "brondby-dk",
+      "title": "Brøndbyernes I.F. Fodbold A/S — aarsrapport-2021-12-31 (ejercicio 2021)",
       "type": "official_balance_sheet",
       "reliability": "primary"
     }
@@ -111,6 +118,104 @@
       ],
       "financial": {"profit_on_player_sales":-8.057,"asset_sales":0,"net_interest":-2.749,"tax":0,"gross_debt":0,"cash":22.985},
       "official_totals": {"revenue":158.471,"expenses":173.518,"net_result":-25.853}
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "DKK",
+      "source_id": "brondby-dk-aarsrapport-2021-12-31",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2021-12-31"},
+      "revenue": [
+        {"label":"Entré-, TV- og præmieindtægter","category":"media_rights","subcategory":"broadcasting","amount":147.52,"disclosure":"aggregated"},
+        {
+          "label": "Indtægter fra partnere og sponsorer",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 72.628,
+          "disclosure": "aggregated"
+        },
+        {"label":"F&B og arrangementer m.v.","category":"venue","subcategory":"stadium_other","amount":23.227,"disclosure":"aggregated"},
+        {"label":"Merchandise m.v.","category":"commercial","subcategory":"sponsorship_commercial","amount":42.614,"disclosure":"aggregated"},
+        {"label":"Udlejning erhvervsejendom m.v.","category":"other_revenue","subcategory":"other_income","amount":2.26,"disclosure":"aggregated"},
+        {"label":"Anden nettoomsætning","category":"other_revenue","subcategory":"other_income","amount":1.754,"disclosure":"aggregated"},
+        {"label":"Diferencia de redondeo","category":"other_revenue","subcategory":"other_income","amount":0.001,"disclosure":"aggregated"},
+        {"label":"Kompensation fra Staten","category":"other_revenue","subcategory":"other_income","amount":17.024,"disclosure":"aggregated"},
+        {"label":"Donation","category":"other_revenue","subcategory":"other_income","amount":2.793,"disclosure":"aggregated"},
+        {"label":"Indtægter","category":"player_transfers","subcategory":"player_sales","amount":50.215,"disclosure":"aggregated"},
+        {"label":"Diferencia de redondeo","category":"other_revenue","subcategory":"other_income","amount":0.001,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Omkostninger","category":"player_registrations_amortisation","subcategory":"player_amortisation","amount":-2.584,"disclosure":"aggregated"},
+        {
+          "label": "Nedskrivninger på kontraktrettigheder",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -3.803,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Afskrivninger på kontraktrettigheder",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -25.288,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kamp- og spilleromkostninger",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -25.869,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Salgs- og markedsføringsomkostninger",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -7.957,
+          "disclosure": "aggregated"
+        },
+        {"label":"F&B og arrangementer m.v.","category":"admin_general","subcategory":"admin_general_expense","amount":-18.138,"disclosure":"aggregated"},
+        {"label":"Driftsomkostninger ejendomme","category":"admin_general","subcategory":"admin_general_expense","amount":-11.545,"disclosure":"aggregated"},
+        {
+          "label": "Vareforbrug m.v. merchandise",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -19.034,
+          "disclosure": "aggregated"
+        },
+        {"label":"Administrationsomkostninger","category":"admin_general","subcategory":"admin_general_expense","amount":-26.25,"disclosure":"aggregated"},
+        {"label":"Vederlag til direktion","category":"admin_general","subcategory":"admin_general_expense","amount":-4.477,"disclosure":"aggregated"},
+        {
+          "label": "Kontantbaseret incitamentsordning, direktion",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.564,
+          "disclosure": "aggregated"
+        },
+        {"label":"Pension til direktion","category":"admin_general","subcategory":"admin_general_expense","amount":-0.187,"disclosure":"aggregated"},
+        {"label":"Bestyrelseshonorar","category":"admin_general","subcategory":"admin_general_expense","amount":-0.525,"disclosure":"aggregated"},
+        {"label":"Gager og lønninger til medarbejdere","category":"first_team_staff","subcategory":"wages_squad","amount":-103.062,"disclosure":"aggregated"},
+        {"label":"Pensionsordninger, bidragsbaserede","category":"first_team_staff","subcategory":"wages_squad","amount":-5.211,"disclosure":"aggregated"},
+        {"label":"Andre omkostninger til social sikring","category":"first_team_staff","subcategory":"wages_squad","amount":-1.11,"disclosure":"aggregated"},
+        {"label":"Øvrige personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-7.983,"disclosure":"aggregated"},
+        {"label":"Diferencia de redondeo","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.001,"disclosure":"aggregated"},
+        {"label":"Bygninger m.v.","category":"depreciation","subcategory":"depreciation","amount":-6.903,"disclosure":"aggregated"},
+        {"label":"Driftsmateriel og inventar","category":"depreciation","subcategory":"depreciation","amount":-3.875,"disclosure":"aggregated"},
+        {
+          "label": "Tab ved salg/afgang af anlægsaktiver",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.108,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.145,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":360.037,"expenses":276.474,"net_result":83.418},
+      "adjustments": {
+        "extra_rows": [{"label":"Finansielle indtægter","amount":0.446},{"label":"Finansielle omkostninger","amount":-0.591},{"label":"Skat af årets resultat","amount":0}]
+      }
     }
   ],
   "budget_overlay": {},
