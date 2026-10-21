@@ -1612,6 +1612,53 @@ function checkEscala(api) {
 // asignan mal los ejercicios en silencio (P1); un club que no existe es una gestión que nunca se ve
 // (P2). Y la lista PAISES de js/finanzas-anios.js tiene que nombrar exactamente los archivos que hay:
 // un archivo que no está en la lista nunca se carga (P1).
+// LA LIGA DE UN AÑO NECESITA DOS FUENTES (regla de Guido en Admin/CONVENCIONES-DATOS.md; diseño aprobado por la Auditora 5, sección 7). La lista de
+// equipos de cada liga-temporada (tools/club-league-reference/<iso>.json) es una fuente (Wikipedia); `fuentes` suma las otras (tools/segunda-fuente-liga.mjs).
+// ALCANCE (cambio 1 de la Auditora): no los 1.300 club-años cargados (un P3 permanente que nadie baja), solo las asignaciones del alta que (a) son
+// desde LIGA_DOS_FUENTES_DESDE o (b) salieron de una coincidencia NO exacta (ni el nombre igual ni un alias de alias.json). El rastro es el de
+// alta-club.mjs en Admin/carga-clubes/<id>.md («roster cacheado de "<página>" (…/<iso>.json), coincidencia exacta "X"» o «… única por palabras "X" =
+// "Y"», con la fecha si la línea la trae). Cuenta solo si la fila de data/club-leagues/ de ese año (o del anterior) sigue siendo esa liga.
+//   liga-una-fuente (P3, UNA línea por liga): club-años de ese alcance cuya liga-temporada tiene una sola fuente.
+//   liga-fuentes-no-coinciden (P2, por club-año): hay dos fuentes y el club (por el nombre de la lista, el de su carpeta o un alias, nunca por
+//   parecido) no está en la otra. Lo decide la Auditora o se vota; no se corrige solo.
+const LIGA_DOS_FUENTES_DESDE = '2026-10-22';
+function checkLigaDosFuentes(api) {
+  const dirEv = path.join(ROOT, 'Admin', 'carga-clubes'); const dirRef = path.join(ROOT, 'tools', 'club-league-reference');
+  if (!fs.existsSync(dirEv) || !fs.existsSync(dirRef)) return;
+  const n = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  let alias = {}; try { alias = JSON.parse(fs.readFileSync(path.join(dirRef, 'alias.json'), 'utf8')); } catch { /* sin alias: solo el nombre */ }
+  const caches = {}; const cache = (iso) => { if (!(iso in caches)) { try { caches[iso] = JSON.parse(fs.readFileSync(path.join(dirRef, `${iso}.json`), 'utf8')); } catch { caches[iso] = null; } } return caches[iso]; };
+  const RE = /roster cacheado de "([^"]+)" \(tools\/club-league-reference\/([a-z]{2})\.json\), coincidencia (exacta "([^"]+)"|única por palabras "([^"]+)" = "([^"]+)")/;
+  const casos = new Map();
+  for (const f of fs.readdirSync(dirEv).filter((x) => x.endsWith('.md')).sort()) {
+    const clubId = f.replace(/\.md$/, '');
+    for (const l of fs.readFileSync(path.join(dirEv, f), 'utf8').split('\n')) {
+      const m = RE.exec(l); if (!m) continue;
+      const [, pagina, iso, , exacta, lista2, carpeta] = m; const lista = exacta || lista2;
+      const fecha = (/alta-club\.mjs, (\d{4}-\d{2}-\d{2})/.exec(l) || [])[1] || null;
+      const k = `${clubId}|${pagina}`; const prev = casos.get(k) || {};
+      casos.set(k, { clubId, pagina, iso, lista, carpeta: carpeta || prev.carpeta || null, exacta: !!exacta, fecha: fecha || prev.fecha || null });
+    }
+  }
+  const unaFuente = {};
+  for (const c of casos.values()) {
+    const aliasDelClub = Object.entries(alias[c.iso] || {}).filter(([, a]) => a && a.clubId === c.clubId).map(([x]) => n(x));
+    const noExacta = !c.exacta && n(c.lista) !== n(c.carpeta) && !aliasDelClub.includes(n(c.lista));
+    if (!noExacta && !(c.fecha && c.fecha >= LIGA_DOS_FUENTES_DESDE)) continue;
+    const C = cache(c.iso); let liga = null; let anio = null; let entrada = null;
+    for (const [lid, ys] of Object.entries(C?.leagues || {})) for (const [y, e] of Object.entries(ys)) if (e.wikipediaPage === c.pagina) { liga = lid; anio = Number(y); entrada = e; }
+    if (!entrada) continue;
+    const filas = api.CLUB_LEAGUE_BY_YEAR[c.clubId] || {};
+    if (![anio, anio - 1].some((y) => String(filas[y] || '').toLowerCase() === liga.toLowerCase())) continue; // la fila ya no es esa liga (corregida)
+    const fuentes = entrada.fuentes && entrada.fuentes.length ? entrada.fuentes : [{ tipo: 'wikipedia' }];
+    const otras = fuentes.filter((x) => x.tipo !== 'wikipedia' && Array.isArray(x.equipos));
+    if (!otras.length) { (unaFuente[liga] = unaFuente[liga] || []).push(`${c.clubId} ${anio}`); continue; }
+    const nombres = new Set([n(c.lista), n(c.carpeta), ...aliasDelClub].filter(Boolean));
+    for (const o of otras) if (!o.equipos.some((e) => nombres.has(n(e)))) add('P2', 'liga-fuentes-no-coinciden', `${c.clubId} ${anio} en ${liga}: está en la lista de Wikipedia («${c.lista}», ${c.pagina}) y no en la de ${o.tipo} (${o.url}) por su nombre ni por un alias de alias.json. Si es el mismo club con otro nombre, va a alias.json; si no, lo decide la Auditora o se vota (no se corrige solo)`);
+  }
+  for (const [liga, cs] of Object.entries(unaFuente).sort()) add('P3', 'liga-una-fuente', `${liga}: ${cs.length} club-año(s) con la liga de una sola fuente (Wikipedia) que salieron de una coincidencia no exacta o son nuevos: ${cs.slice(0, 6).join(', ')}${cs.length > 6 ? ', …' : ''}. La segunda: node tools/segunda-fuente-liga.mjs`);
+}
+
 // (Auditora 5, to-do 356; regla de Guido: lo que ya viene estructurado no se paga con IA) PAGO DE IA SOBRE UN DOCUMENTO DETERMINISTA. Un .md que escribió tools/xhtml-aarsrapport.mjs (primera línea: «motor: xhtml-ixbrl»)
 // trae sus cifras etiquetadas. P1 si un log de API (los que lee tools/gasto.mjs) registra, desde FRENO_DESDE, una llamada de localizar o extraer sobre uno de esos documentos sin que Admin/registros/pagar-ia-xhtml.jsonl
 // tenga antes la bandera `--pagar-ia-xhtml "<motivo>"` de lote.mjs para ese documento. Cuando exista el escalón que lee las etiquetas, el «sin la bandera» pasa a ser «sin haber corrido el escalón».
@@ -2085,6 +2132,7 @@ function main() {
   checkHigiene(api);
   checkGestiones(api);
   checkPagoSobreDeterminista();
+  checkLigaDosFuentes(api);
   checkDatosJson();
   checkReglasCategoria();
   checkDeportes();
