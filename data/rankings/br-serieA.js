@@ -186,6 +186,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2019: {
     leagueSize: null,
+    sinDato: ["goias-br"],
     clubs: [
       { id:"chapecoense-br", revenue:18.668, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-financeiras-2019",

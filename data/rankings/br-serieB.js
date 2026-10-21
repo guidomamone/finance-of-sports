@@ -216,6 +216,7 @@ window.RANKINGS["br-serieB"] = {
   },
   2018: {
     leagueSize: 20,
+    sinDato: ["goias-br"],
     wiki: {"t":"2018 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"criciuma-br", revenue:7.462, reportType:"official_balance_sheet",
