@@ -25,51 +25,22 @@
 - **f188d4345b**: el plan al día (CVC es fila aparte del Strategic Report, la votación, las respuestas a Pipeline sobre la taxonomía).
 - Bath 2023-24, pág. 22 rehecha con Mistral (abajo, en hallazgos).
 
-## Bath Rugby (paso 5): FRENADO por dos defectos de script, nada cargado
+## Bath Rugby (paso 5 del 248): CARGADO, los 5 ejercicios
 
-- Hecho: transcripción (`pipeline.mjs`, ~US$ 0,44: 2020-21 con Mistral, validación del escaneo de 2023-24, 2024-25 rehecho con Mistral; el
-  Strategic Report de 2024-25 ahora lee bien "Central income 4.4"), más la pág. 22 de 2023-24 (US$ 0,004). Total de API: ~US$ 0,45 de US$ 2.
-- Los 5 años armados con tokens de sesión (`armar-a-mano.mjs`; especificaciones en el scratchpad de la sesión, el resultado en
-  `Generados/Inglaterra/Bath Rugby/`) y verificados: los 5 cierran el resultado. Lote `Admin/lotes/lote-129.txt`. Ajuste `desglose` del Turnover
-  en 2021-22 (19.557 £), 2022-23 (44.435), 2023-24 (22.985) y 2024-25 (39.778): la diferencia de redondeo (decisión 11), que hoy no entra (freno 1).
-  2020-21 no tiene desglose: no lo necesita. 2024-25 cierra con «financiero e impuesto invertidos» (su formato imprime los gastos sin paréntesis).
-- **2020-21 (el año sin desglose, no depende del freno 1):** `validar-bloques` con API (US$ 0,006: 33 números confirmados), lote 129 corrido
-  `--sin-api` (los 5 frenan en la categorización, como se espera) y Jev `--desde-sesion` con las respuestas de rugby
-  (Turnover, Cost of sales y Administrative expenses al bolsón `lump_rugby_operations(_expense)`; Fair value movements y Other operating income a
-  `other_income`). **Freno 4** (`frenados-por-script.jsonl`): `--desde-sesion` valida con `sideOf()` del fútbol (L282) y rechaza el bolsón de rugby.
-  Para probarlo hizo falta el alta: `alta-club.mjs --escribir` da `bathrugby-gb` (el id que propone la tool, no `bath-gb` como decía el plan),
-  deporte `rugby` deducido de la liga. **El alta se revirtió** (sin un año cargado, el sitio mostraba un club vacío y Rugby con 0 clubes). Para
-  rehacerla, además del alta: en `data/leagues.js`, Rugby `active:true` y la liga
-  `'gb-premiershiprugby': { name:'Premiership Rugby', full:'Premiership Rugby', country:'GB', sport:'rugby', tier:1 }` (después de
-  `gb-scottishpremiership`); en `data/club-leagues/gb.js`, `'bathrugby-gb': { 2021..2025: 'gb-premiershiprugby' }`. Respuestas de Jev en el
-  scratchpad de esta sesión (`bath-cat/jev-2020-21.json`).
-- **Freno 2 marcado resuelto** (339, 121399a592) en lo que se arregló; el freno 4 es la parte que quedó.
-- **Freno 3** (anotado sin correr): `caja-deuda --personal --partir` escribe `wages_squad` (fútbol) y corre solo sobre un club publicado. La
-  compuerta de las dos filas NO frena a Bath (Administrative expenses es menor que el costo de personal).
-- Lo que sigue (necesita main, donde Pipeline 11 ya hizo que Jev y `cargar.mjs` lean el deporte): alta de `bath-gb` (deporte `rugby`), paso 4 de
-  `carga-con-tokens.md` (Jev `--desde-sesion`, rubros en `.rubros.json`) y el resto. Faltan en main, según la principal: que Jev vea las
-  descripciones de rugby y el bolsón `lump_rugby_operations` en `cargar.mjs`; y el freno 1.
-- **Freno 1 (`Admin/registros/frenados-por-script.jsonl`)**: `verificar` acepta la nota en £m con un decimal por tolerancia, reemplaza el Turnover
-  exacto y pierde la diferencia (44.435 £ en 2022-23); el ajuste `desglose` no entra porque corre solo si `cerrarNota()` falla. Cargado así,
-  cada año tendría ~0,2 % menos de ingreso que lo impreso.
-- **Freno 2**: Jev `--desde-sesion` y `cargar.mjs` aceptan solo las categorías del fútbol (339, puntos 1 y 13).
-- Probable tercero, sin probar: partir el personal (decisión 12) con `caja-deuda.mjs --personal --partir` pide UNA fila global de gasto y Bath
-  tiene dos (Cost of sales y Administrative expenses).
-- Lo que sabe una sesión que retome: 2020-21 no abre el Turnover por tipo (va entero como bolsón); 2021-22 a 2023-24 traen "CVC income" aparte
-  (votación: `other_income`); 2023-24 tiene el Strategic Report como texto (b1, L162-166) y la nota 4 sin tabla; 2024-25 imprime los gastos sin
-  paréntesis y el impuesto "(250,554)" como crédito; el informe 2024-25 reexpresa 2024 (personal 14,25 M; otros ingresos 88.503).
-
-## Bath Rugby: dónde quedó (después de los frenos 1 y 4)
-
-- Los 5 años verificados al peso, validados (validar-bloques, US$ 0,03) y categorizados desde la sesión con `rugby-1`; la propuesta de carga da
-  5 de 5. Estadio y sponsor de los 5 años en `tools/contexto-manual.json` (The Recreation Ground 14.509, Dyson, Macron 2021-23 / Castore 2024-25).
-  El alta la revisó un subagente contra los 5 documentos (nombre, tipo, cierre: todo coincide).
-- **Freno 5** (`frenados-por-script.jsonl`): `audit.js` `checkCategorias` da P0 `categoria-inexistente` a las subcategorías de rugby (valida con la
-  lista del fútbol) y `cargar.mjs` se revierte. Lo de `@resvg/resvg-js` ya está resuelto (`npm install --prefix tools`).
-- Para retomar cuando esté el arreglo: las ediciones del catálogo (arriba), `alta-club.mjs "<2020-21.pdf>" --escribir`, borrar la línea
-  `'bathrugby-gb': { 2021: 'gb-premiershiprugby' },` que el alta agrega en `data/club-leagues/gb.js` (pisa la de 2021 a 2025; defecto menor del
-  alta, anotarlo para Pipeline), y `cargar.mjs "<pdf>" --desde-verificacion --escribir` por año, un commit por año (el primero con el alta).
-  Después: EJEMPLO-CATEGORÍA de las reglas de CVC y fair value en `CONVENCIONES-DATOS.md` y `node tools/reglas-categoria.mjs --escribir`.
+- Commits (sin push): 86baf79b86 (alta de `bathrugby-gb`, Rugby activo en `data/leagues.js`, liga `gb-premiershiprugby`, ejercicio 2021),
+  911ff2ed74 (2022), e2ed50005f (2023), 4d00a760e0 (2024), 5f6da735e1 (2025), f5e2b1df3c (caja y deuda), 51b20931df (fuentes con Companies House
+  y notas públicas; EJEMPLO-CATEGORÍA de CVC y fair value y `reglas-categoria --escribir`; 5 reglas de fútbol marcadas `CATEGORÍA (prompt, futbol)`
+  porque con Rugby activo `reglas-categoria.mjs` las daba por error).
+- Con tokens de sesión: especificaciones de `armar-a-mano`, Jev y Claude `--desde-sesion` (41 rubros, `rugby-1`). API de Bath en total: ~US$ 0,51
+  (transcribir 0,44, validar 0,04, caja-deuda 0,03).
+- Cada año cierra con lo impreso (ingresos, gastos y resultado); `auditAll()` 320 clubes, 3718 checks, 0 no cierran; `audit.js` 0 P0 / 0 P1.
+- Visto en el preview, a escritorio y a 375 px: Rugby en el paso Deporte del selector; Premiership Rugby en Ligas (5 ejercicios, un club); la
+  ficha de Bath con Formato simplificado por genérica y el bolsón «Rugby profesional (sin desglosar por la fuente)».
+- Los 5 frenos de script de Bath están resueltos en `frenados-por-script.jsonl` (e500bdab8c, 121399a592, e18b1aa60e, 05ebe22888, 7e1971717e).
+- Lo que no se pudo: separar el costo de personal (decisión 12). `caja-deuda --personal` no encuentra el total en ningún año (la fila del total de
+  la nota «Staff costs» no tiene rótulo; Jev: «ninguna»), así que `--partir` no tiene dato: los sueldos quedan en el bolsón y la pantalla los
+  muestra «—». Caja de 2021 y 2023 y deuda de 2021, 2023 y 2025 quedaron sin dato (escala del script: 3.102.211 «no coincide» con 3102211;
+  49.093 tomado como 2.425 veces los ingresos).
 
 ## Los 4 chequeos de sumas (todos en verde)
 
@@ -93,7 +64,7 @@
 
 ## Para TODO, CHANGELOG y ESTADO (los escribe la principal)
 
-- TODO 248: hechos los pasos 1 a 4 (mapa, migración, documentos, etapa de pantalla) y la taxonomía `rugby-1`. Queda el paso 5: cargar Bath Rugby.
+- TODO 248: HECHO entero (mapa, migración, documentos, etapa de pantalla, `rugby-1` y Bath Rugby cargado como prueba). Se puede borrar.
   Las 14 decisiones del plan están cerradas: 1 a 9, 11 y 12 como se recomendaron; 10 (CVC) y 13 (fair value 2021) por votación, a `other_income`;
   14 (comparar con fútbol) y lo visible de Bath (Rugby en el selector, «Rugby profesional…») con el ok de Guido. Los textos fijos que dicen «fútbol»
   (pie y paquete) quedan como están.
@@ -117,6 +88,15 @@
 > sesión (`audit.js`, `taxonomia-incompleta`).
 
 ## Hallazgos de paso (no se tocaron)
+
+- **Pantalla, probablemente también en producción**: tocar un club en la página de una liga (`/liga/<id>`) falla con «No se pudieron cargar los
+  datos de <club>» si sus datos no estaban cargados: `loadClubData` (`js/principal.js` L32) arma `data/<país>/<id>-data.js` RELATIVO y, con la URL
+  en `/liga/…`, el navegador pide `/liga/data/gb/burnley-gb-data.js` (404). Probado con Burnley y con Bath en el preview. Arreglo probable: ruta
+  absoluta (`/data/...`). Es de Pantallas.
+- Pantalla: «Salarios / Ingresos» da 0 % cuando los sueldos están dentro de un bolsón sin desglosar (Bath, y cualquier club con bolsón de gastos);
+  debería ser «—». Y la fila «Resultado neto» del estado de resultados sale en castellano en la versión en inglés.
+- caja-deuda: problemas de escala en Bath (2021: 3.102.211 «no coincide» con el mismo número del documento siguiente; 2023: 49.093 £ de caja
+  tomado como 2.425 veces los ingresos). Y `--personal` no lee un total de nota sin rótulo.
 
 - Bath Rugby 2023-24, pág. 22: la rehice con Mistral (US$ 0,004) y quedó como tabla. Corrección de lo que dije antes: la versión vieja NO había
   perdido las cifras, las tenía en una columna aparte debajo de los rótulos; son las mismas. El `.md` cambió, así que el pipeline lo va a ver

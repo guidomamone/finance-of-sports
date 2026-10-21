@@ -1,9 +1,8 @@
 # Taxonomía genérica con subcategorías por deporte (to-do 248): plan
 
-Estado: los pasos 1 a 4 del "Orden de trabajo" (sección 4) están HECHOS: el mapa, los chequeos de `audit.js`, el esquema 2.0 con la migración de
-los 319 JSON (4 chequeos en verde), los documentos y la etapa de pantalla (el motor y Formato simplificado leen la capa genérica). La taxonomía
-`rugby-1` ya está en `data/category-map.js`. Las 14 decisiones (sección 6) están cerradas: 10 y 13 por votación, 14 y lo visible de Bath con el ok
-de Guido. Falta el paso 5: cargar Bath Rugby (sección 5).
+Estado: HECHO. Los 5 pasos del "Orden de trabajo" (sección 4): el mapa, los chequeos de `audit.js`, el esquema 2.0 con la migración de los 319 JSON, los
+documentos, la etapa de pantalla y Bath Rugby (`bathrugby-gb`, 5 ejercicios) cargado como prueba de punta a punta. Las 14 decisiones (sección 6)
+quedaron cerradas. Lo que no se pudo de la decisión 12 (separar el personal) está en la nota de la sesión.
 
 ## 1. El problema, medido
 
@@ -222,7 +221,7 @@ aprobado). No se carga nada antes del ok.
 - **Liga**: `gb-premiershiprugby` en `data/leagues.js` (`name: 'Premiership Rugby'`, sin el sponsor "Gallagher", país GB, `sport:'rugby'`,
   tier 1), y Bath en `data/club-leagues/gb.js` para 2021 a 2025. Ranking propio en `data/rankings/` (lo genera `generate-rankings.js` como a
   cualquier liga).
-- **Club**: `bath-gb`, por `alta-club.mjs`, con la ficha que pide `data/clubs.js` (`sport:'rugby'`, moneda GBP, ejercicio desde 07-01).
+- **Club**: `bathrugby-gb` (el id que propone `alta-club.mjs`), con la ficha que pide `data/clubs.js` (`sport:'rugby'`, moneda GBP, ejercicio desde 07-01).
 - **Tipo de cambio**: `GBP@<año>-06-30` en `FX_CLOSE` (hoy solo hay cierres al 31 de mayo, de los clubes de fútbol), con
   `fetch-fx-reference.mjs`.
 
