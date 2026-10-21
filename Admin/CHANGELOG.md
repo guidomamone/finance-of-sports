@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 877 — Lo no bloqueante de la revisión del 245 y el 246 (2026-10-20) [333 · racing-ar]
+
+- `generar-data.mjs --check` marca un `-data.js` sin JSON (P1); `worktree.mjs` trata `data/<iso>/*-data.js` como generado y corre `generar-data`
+  después del merge; `renombrar-ids.mjs --verificar` ignora el ejemplo de CLAUDE.md; título de la fuente de Racing corregido. Aprobado por la
+  Auditora 2. Queda del 333 solo Mi Cuenta (búsquedas guardadas con id viejo).
+
 ## Versión 876 — Skills al día con el JSON fuente y los ids con país (2026-10-20) [245 · 246]
 
 - Los 18 cambios que propuso Datos 3 (ok de Guido): start-session, club-data-mapping (y fx, formato-simplificado), escala y auditoría

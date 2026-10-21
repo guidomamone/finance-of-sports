@@ -27,7 +27,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 313 y el 51 quedan para más adelante (E).
 
 **A. En marcha**
-* 333: lo no bloqueante de la revisión del 245 y el 246 (generar-data --check, worktree.mjs con -data.js generado, renombrar-ids sin el ejemplo de CLAUDE.md, título de Racing, búsqueda duplicada en Mi Cuenta): hecho, espera el veredicto de la Auditora 2 --> Pipeline 8 y Auditora 2
+* 333: queda solo Mi Cuenta: una búsqueda guardada con un id viejo se duplica al volver a guardarla; pide una migración SQL en Supabase o que `save_search` busque también por la clave vieja (son pocas filas)
 
 **B. Pantallas y distribución**
 * Vålerenga (en marcha, Pantallas 4): la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
@@ -187,8 +187,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    UEFA, los de la Premier League, la EFL o la FA). Para cada uno: quién lo publica, si es público, qué años y clubes cubre, y para qué
    sirve: contrastar lo ya cargado (totales por club y por liga), completar años o clubes que faltan, o dar contexto en Ligas. Solo
    sourcing y una nota en `Admin/sourcing/Inglaterra/`; no se transcribe ni se carga nada sin decisión de Guido.
-333. LO NO BLOQUEANTE DE LA REVISIÓN DEL 245 Y EL 246 (revisión Opus, 2026-10-20). (1) `tools/generar-data.mjs --check` solo recorre los
-   JSON: un `-data.js` sin JSON, o un id de clubs.js sin `<id>.json`, tiene que dar P1. (2) `tools/worktree.mjs`: `data/<iso>/*-data.js`
-   es generado; un conflicto ahí no es "conflicto real" y después del merge corre `generar-data`. (3) `renombrar-ids.mjs --verificar`
-   ignora el `boca` de ejemplo de CLAUDE.md. (4) Cosmético: el título de la fuente `racing-ar-placeholder`; en Mi Cuenta, una búsqueda vieja
+333. MI CUENTA CON IDS VIEJOS (revisión Opus del 245 y el 246, 2026-10-20). Lo demás del 333 está hecho. Queda: una búsqueda guardada en
+   `saved_searches` con un id viejo genera otro `state_hash` al volver a guardarse y queda duplicada. Arreglo: una migración SQL en Supabase,
+   o que `save_search` busque también por la clave vieja. El parche de `js/cuenta.js` que se rechazó, en la nota de Pipeline 8.
    guardada de nuevo genera una fila duplicada.
