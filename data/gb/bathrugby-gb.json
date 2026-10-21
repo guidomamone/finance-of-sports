@@ -26,6 +26,13 @@
       "title": "Bath Rugby Limited — bath-rugby-full-accounts-2021-22 (ejercicio 2022)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "bathrugby-gb-full-accounts-2022-23",
+      "club_id": "bathrugby-gb",
+      "title": "Bath Rugby Limited — bath-rugby-full-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "members": null,
@@ -65,7 +72,14 @@
           {"line":"Turnover","side":"revenue","amount":11.597938,"reason":"el documento no desglosa este renglón"},
           {"line":"Cost of sales","side":"expense","amount":14.103734,"reason":"el documento no desglosa este renglón"},
           {"line":"Administrative expenses","side":"expense","amount":4.418764,"reason":"el documento no desglosa este renglón"}
-        ]
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_rugby_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_rugby_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_rugby_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_rugby_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_rugby_operations","possible":true,"by":"precedente"}
+        }
       }
     },
     {
@@ -107,6 +121,48 @@
         "no_breakdown": [
           {"line":"Cost of sales","side":"expense","amount":15.605502,"reason":"el documento no desglosa este renglón"},
           {"line":"Administrative expenses","side":"expense","amount":4.660895,"reason":"el documento no desglosa este renglón"}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "bathrugby-gb-full-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Central income","category":"media_rights","subcategory":"central_income","amount":4.8,"disclosure":"aggregated"},
+        {"label":"Gate receipts","category":"matchday","subcategory":"gate_receipts","amount":5.2,"disclosure":"aggregated"},
+        {"label":"Commercial activities","category":"commercial","subcategory":"commercial_activities","amount":7,"disclosure":"aggregated"},
+        {"label":"CVC income","category":"other_revenue","subcategory":"other_income","amount":2.4,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_revenue","subcategory":"other_income","amount":0.3,"disclosure":"aggregated"},
+        {"label":"Diferencia en el documento","category":"other_revenue","subcategory":"other_income","amount":0.044435,"disclosure":"aggregated"},
+        {"label":"Miscellaneous other operating income","category":"other_revenue","subcategory":"other_income","amount":0.45,"disclosure":"aggregated"},
+        {"label":"Other revenue","category":"other_revenue","subcategory":"other_income","amount":0.0459,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"undisclosed","subcategory":"lump_rugby_operations_expense","amount":-18.505213,"disclosure":"aggregated"},
+        {
+          "label": "Administrative expenses",
+          "category": "undisclosed",
+          "subcategory": "lump_rugby_operations_expense",
+          "amount": -6.064013,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.100113,"tax":1.167663,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":20.240335,"expenses":24.569226,"net_result":-3.261341},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Other interest receivable and similar income","amount":0.005889},
+          {"label":"Interest payable and similar expenses","amount":-0.106002},
+          {"label":"Tax on loss","amount":1.167663}
+        ],
+        "no_breakdown": [
+          {"line":"Cost of sales","side":"expense","amount":18.505213,"reason":"el documento no desglosa este renglón"},
+          {"line":"Administrative expenses","side":"expense","amount":6.064013,"reason":"el documento no desglosa este renglón"}
         ]
       }
     }
