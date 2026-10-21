@@ -277,7 +277,7 @@ const FORZAR = ARGS.includes('--forzar');
 const MODELO = flagVal('--modelo') || MODELO_DEFAULT;
 const LIMITE = flagVal('--limit') !== null ? Number(flagVal('--limit')) : null;
 const TOPE_USD = flagVal('--tope-usd') !== null ? Number(flagVal('--tope-usd')) : 1;
-const CON_VALOR = new Set(['--anio', '--modelo', '--limit', '--tope-usd', '--solo']);
+const CON_VALOR = new Set(['--anio', '--modelo', '--limit', '--tope-usd', '--solo', '--deshacer']);
 const DOCS = ARGS.filter((a, i) => !a.startsWith('--') && !CON_VALOR.has(ARGS[i - 1]));
 
 // ============================================================================
@@ -2060,9 +2060,67 @@ async function modoBacktest() {
 }
 
 // ============================================================================
+// --deshacer <clubId> [--escribir] — (to-do 339, frenado de Bath) deshace un alta ESCRITA y no commiteada. Una carga a mano que fallaba (cargar.mjs se revertía solo, el alta no) dejaba
+// el alta en el árbol y había que revertirla a mano con git checkout y borrando los archivos nuevos, tres veces. Sin --escribir es un ENSAYO que dice qué haría.
+//   - SOLO si el alta no está commiteada (el id no está en data/clubs.js de HEAD): lo commiteado se revierte con git.
+//   - Lo que escribió el alta Y SE EDITA A MANO se deshace por líneas, sin pisar el resto del archivo: la entrada del club en data/clubs.js y sus líneas en data/club-leagues/*.js.
+//   - Lo propio del club (data/<país>/<id>*, fuentes/<id>.html, la evidencia Admin/carga-clubes/<id>.md, sus páginas club/ y og/) se borra si no está commiteado.
+//   - Lo puramente GENERADO (fuentes.html, y index.html solo si su diff son líneas de ASSET_V, sitemap.xml, club/, liga/, og/, rankings, club-index, ESTADO-clubes...) vuelve a HEAD con git checkout: se regenera.
+//   - Cualquier OTRO archivo modificado (data/leagues.js, data/currency-map.js, idiomas, un país nuevo...) NO se toca y se lista como «revisar a mano»: puede traer ediciones a mano.
+// ============================================================================
+function deshacerAlta(clubId, { escribir }) {
+  const git = (args) => execFileSync('git', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 256 * 1024 * 1024, stdio: ['ignore', 'pipe', 'pipe'] });
+  const clubsPath = resolve(ROOT, 'data/clubs.js'); const clubsTxt = readFileSync(clubsPath, 'utf8');
+  const lineaClub = new RegExp(`^\\s*['"]?${clubId}['"]?\\s*:\\s*\\{[^\\n]*\\},?[ \\t]*\\n`, 'm');
+  if (!lineaClub.test(clubsTxt)) { console.error(`${clubId}: no está en data/clubs.js`); process.exit(1); }
+  let enHead = ''; try { enHead = git(['show', 'HEAD:data/clubs.js']); } catch { /* sin HEAD */ }
+  if (new RegExp(`['"]?${clubId}['"]?\\s*:\\s*\\{\\s*id:`).test(enHead)) { console.error(`${clubId} ya está commiteado en data/clubs.js: se revierte con git, no con --deshacer`); process.exit(1); }
+  const acciones = []; const aMano = [];
+  acciones.push({ txt: 'quitar su entrada de data/clubs.js', f: () => writeFileSync(clubsPath, clubsTxt.replace(lineaClub, '')) });
+  // sus líneas en data/club-leagues/*.js
+  for (const f of readdirSync(resolve(ROOT, 'data/club-leagues')).filter((x) => x.endsWith('.js'))) {
+    const abs = resolve(ROOT, 'data/club-leagues', f); const t = readFileSync(abs, 'utf8'); const re = new RegExp(`^\\s*['"]?${clubId}['"]?\\s*:\\s*\\{[^\\n]*\\},?[ \\t]*\\n`, 'gm');
+    if (re.test(t)) acciones.push({ txt: `quitar sus líneas de data/club-leagues/${f}`, f: () => writeFileSync(abs, t.replace(new RegExp(re.source, 'gm'), '')) });
+  }
+  // el estado del árbol en el sitio y lo generado
+  const porc = git(['status', '--porcelain', '-uall', '--', 'data', 'index.html', 'fuentes', 'club', 'liga', 'og', 'fuentes.html', 'sitemap.xml', 'Admin/carga-clubes', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/sourcing']).split('\n').filter(Boolean).map((l) => ({ est: l.slice(0, 2), f: l.slice(3).replace(/^"|"$/g, '') }));
+  const GENERADO = (f) => ['fuentes.html', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'data/club-index.js', 'data/sponsors.js', 'Admin/sourcing/pendientes.md'].includes(f)
+    || /^(club|liga|og)\//.test(f) || /^fuentes\//.test(f) || /^data\/(rankings|faltantes|estimados|entidades)\//.test(f);
+  const propio = (f) => f.includes(`/${clubId}.`) || f.includes(`/${clubId}-`) || f.includes(`/${clubId}/`) || f.endsWith(`/${clubId}`);
+  const borrar = []; const restaurar = [];
+  for (const { est, f } of porc) {
+    if (f === 'data/clubs.js' || /^data\/club-leagues\//.test(f)) continue; // ya van por líneas
+    if (f === 'Admin/registros/altas-club.jsonl') continue; // el registro de altas lo recalcula alta-club --todos --solo (se dice abajo)
+    if (est === '??' && propio(f)) { borrar.push(f); continue; }
+    if (est === '??' && GENERADO(f)) { borrar.push(f); continue; } // una página nueva generada (de otro club también: se regenera)
+    // index.html NO es solo generado: lleva el código de la pantalla, que se edita a mano. Vuelve a HEAD solo si su diff son únicamente líneas de ASSET_V (la constante y los ?v=).
+    if (f === 'index.html') {
+      const lineas = git(['diff', '-U0', '--', 'index.html']).split('\n').filter((l) => /^[+-]/.test(l) && !/^(\+\+\+|---)/.test(l));
+      if (lineas.every((l) => /ASSET_V|\?v=/.test(l))) restaurar.push(f); else aMano.push('M index.html (trae más que ASSET_V: ediciones de pantalla; restaurá a mano solo las líneas de ASSET_V)');
+      continue;
+    }
+    if (est !== '??' && GENERADO(f)) { restaurar.push(f); continue; }
+    if (est !== '??' && propio(f)) { restaurar.push(f); continue; }
+    aMano.push(`${est.trim() || '??'} ${f}`);
+  }
+  if (borrar.length) acciones.push({ txt: `borrar ${borrar.length} archivo(s) nuevos (del club o generados)`, f: () => { for (const f of borrar) { try { unlinkSync(resolve(ROOT, f)); } catch { /* ya no está */ } } } });
+  if (restaurar.length) acciones.push({ txt: `volver a HEAD ${restaurar.length} archivo(s) generados o del club`, f: () => git(['checkout', '-q', '--', ...restaurar]) });
+  console.log(`${escribir ? 'DESHACER' : 'ENSAYO de deshacer'} el alta de ${clubId}:`);
+  for (const a of acciones) console.log(`  - ${a.txt}`);
+  if (borrar.length) console.log(`    nuevos: ${borrar.slice(0, 12).join(', ')}${borrar.length > 12 ? `, … (+${borrar.length - 12})` : ''}`);
+  if (restaurar.length) console.log(`    a HEAD: ${restaurar.slice(0, 12).join(', ')}${restaurar.length > 12 ? `, … (+${restaurar.length - 12})` : ''}`);
+  if (aMano.length) console.log(`  REVISAR A MANO (no se tocan; pueden traer ediciones a mano): ${aMano.join(' | ')}`);
+  console.log('  Después: node tools/alta-club.mjs --todos --solo "<país>/<club>" recalcula su línea del registro de altas (Admin/registros/altas-club.jsonl).');
+  if (!escribir) { console.log('  Agregá --escribir para hacerlo.'); return; }
+  for (const a of acciones) a.f();
+  console.log('Hecho.' + (aMano.length ? ' Quedan los archivos de «revisar a mano».' : ''));
+}
+
+// ============================================================================
 // MAIN
 // ============================================================================
 async function main() {
+  if (flagVal('--deshacer')) return deshacerAlta(flagVal('--deshacer'), { escribir: ESCRIBIR });
   if (BACKTEST) return modoBacktest();
   if (ARGS.includes('--informe-backtest')) return modoInformeBacktest();
   if (DUDAS) return modoDudas();
