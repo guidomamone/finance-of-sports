@@ -17,6 +17,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 935 — Modo de una sola sesión y arranque más corto (2026-10-21) [298]
+
+- `CLAUDE.md`: bloque «Modo de trabajo: una sola sesión» (un rol por vez con su skill, lo que hacía la Auditora, tokens, cómo hablarle a Guido, cierre directo a TODO, CHANGELOG y ESTADO). Ya no se leen `principal-finance-of-sports`, `worktree.md` ni `Admin/sesiones/`.
+- `Admin/ESTADO.md` partido: el detalle del pipeline por país pasó a `Admin/ESTADO-pipeline.md` (se lee solo al onboardear o tocar tools). Arranque fijo: de ~63 KB a ~45 KB (`CLAUDE.md` + skill de arranque + `ESTADO.md`).
+- `Admin/CONVENCIONES.md`: nota en el bloque de roles (en una sola sesión el circuito se colapsa).
+- `Admin/TODO.md`: el 298 estaba cortado a una línea; se recuperó del historial y entró al plan (D, punto 15). El resto del plan se renumeró.
+- Las skills no se tocaron (candado): recortar `start-session…` y `principal…` queda como propuesta a Guido.
+
 ## Versión 934 — 10 altas británicas, segunda fuente de ligas y período del iXBRL (2026-10-21) [356 · 358 · 359 · 362 · 363 · 364 · afcwimbledon-gb, barnsley-gb, burtonalbion-gb, carlisleunited-gb, chesterfield-gb, exetercity-gb, gillingham-gb, lincolncity-gb, shrewsburytown-gb, wiganathletic-gb, falkirk-gb]
 
 - Datos (356): 10 altas británicas desde el XHTML (lotes 140 y 141): AFC Wimbledon, Barnsley, Burton Albion, Carlisle United, Chesterfield, Exeter City, Gillingham, Lincoln City y Shrewsbury Town 2025, y Wigan Athletic 2024; ~US$ 1,9 de US$ 35. Quedan 12 clubes que esperan el conversor XHTML, Morecambe y Ross County por defectos de script, y Falkirk, que espera la liga.

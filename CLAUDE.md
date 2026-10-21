@@ -14,9 +14,41 @@ La extensión no dice nada sobre si un documento es interno. `CLAUDE.md` es la �
 sirve y llevalo a donde se lee: una regla a `Admin/CONVENCIONES.md` (proceso), `Admin/CONVENCIONES-DATOS.md` (datos) o
 `Admin/PANTALLA.md` (pantalla y código), o a la skill que corresponda; un pendiente a `Admin/TODO.md`.
 
+## Modo de trabajo: una sola sesión
+
+Hoy se trabaja en UNA sesión, en la carpeta principal y en `main`, una cosa a la vez. No se abren worktrees ni otras sesiones, y no se
+leen `.claude/skills/principal-finance-of-sports/` (es el rol de coordinar worktrees), `worktree.md` ni `Admin/sesiones/` (notas del modo
+anterior). Lo que sirve de ahí está acá:
+
+- **Un rol por vez, con su skill.** Los roles de `Admin/TODO.md` entre paréntesis (Onboarding, Pipeline, Auditora, Pantallas, Sourcing,
+  Orden) dicen qué skill cargar: cargar clubes, `club-or-year-onboarding`; buscar documentos, `club-sourcing`; una pantalla,
+  `producto-y-pantalla-finance-of-sports`; auditar, `auditoria-finance-of-sports`; tools del pipeline, la de onboarding. Se dice en una línea
+  qué rol se toma. Una tarea se termina y se commitea antes de cambiar de rol. Una skill ya cargada no se vuelve a cargar; se lee la sección
+  que pide la tarea, no la skill entera.
+- **Lo que hacía la Auditora.** Una condición nueva en una tool: la sesión recorre la sección 7 de `auditoria-finance-of-sports` y mide
+  antes de dejarla activa, y lo anota en CHANGELOG como «sin revisión independiente». Un criterio de datos sin precedente:
+  `votacion-de-criterios` (tres votantes, subagentes Sonnet; el único uso de subagentes del modo). Lo que no tiene precedente ni voto no
+  frena el resto: queda en la cola y se sigue con otro año. El circuito frenado → pipeline → auditora de `Admin/CONVENCIONES.md` se
+  colapsa: Onboarding no edita `tools/` y Pipeline sí, pero acá es la misma sesión, una tarea después de la otra.
+- **Tokens.** Una tarea por tramo de conversación; al terminar una grande, si el contexto pasa de la mitad, pedirle a Guido que compacte.
+  Los lotes corren en segundo plano, de a uno. Leer lo justo: de un `.md` de club, la parte que se usa.
+- **Hablarle a Guido.** Un mensaje por paso, con un ejemplo real antes de hacerlo y las decisiones numeradas con la recomendación al lado;
+  tareas chicas, terminadas y commiteadas antes de abrir la siguiente. Lo que Guido tiene que correr o decidir va completo en el último
+  mensaje del turno (el comando en un bloque `bash`), con **Te toca a vos** numerado o «nada», y **En curso** (rol, to-do, lote).
+- **Decide la sesión, cuenta en el resumen:** estructura y calidad de datos (ids, esquema, alias, consistencia, reglas objetivas). **Va a
+  Guido:** el texto de una skill (candado: `Admin/propuestas/`), gastar fuera del presupuesto, push y deploy, un cambio de alcance, un mail a
+  un club (solo si lo pidió con sus palabras).
+- **Cerrar un punto del TODO.** Se borra. Si el motivo por el que estaba trabado resultó falso (la transcripción que «nunca se hizo» ya
+  estaba en disco), queda escrito en la entrada de CHANGELOG, y en el propio TODO si el punto sigue vivo en parte.
+- **Lo que en el otro modo iba a la nota de sesión** se escribe directo en `Admin/TODO.md`, `Admin/CHANGELOG.md` y `Admin/ESTADO.md` al
+  cerrar cada tarea (las dos primeras siempre; ESTADO solo si algo dejó de ser cierto).
+
 ## Al empezar
 
-- Leé `Admin/ESTADO.md` (qué hay armado hoy), vos solo, sin que Guido lo pida. `Admin/TODO.md` NO se lee al arrancar: se abre cuando
+- **Leer, y parar ahí:** este archivo (ya cargado), `Admin/ESTADO.md` y la skill del rol de la tarea, por la sección que pide. La skill de
+  arranque (`start-session-finance-of-sports-project`) se abre por «Antes de tocar nada», «Verificar» y «Git»; no hacen falta sus filas 8 y
+  9. Si la tarea es onboardear o tocar las tools del pipeline, además `Admin/ESTADO-pipeline.md` (el detalle por país del pipeline).
+- `Admin/ESTADO.md` (qué hay armado hoy) se lee sola, sin que Guido lo pida. `Admin/TODO.md` NO se lee al arrancar: se abre cuando
   la tarea es elegir qué sigue, cuando Guido lo pide, o para agregar o borrar un punto. Qué hay cargado de cada club:
   `Admin/ESTADO-clubes.md` (generado). `Admin/CONVENCIONES.md` (reglas de proceso) se lee cuando la skill de la tarea lo pide.
 - **Las skills y los documentos de criterio** (`Admin/PIPELINE.md`, `CONVENCIONES*.md`, `PANTALLA.md`, `ESTADO.md`) dicen cómo se trabaja y qué hay HOY: sin historia (nada de «Versión N», fechas de decisión ni ramas mergeadas: eso va a `Admin/CHANGELOG.md`; un caso real que ilustra una regla se queda, sin la versión), sin contadores fijos (en su lugar, el comando que los da: `node tools/estado.mjs`, `node tools/audit.js`, `Admin/ESTADO-clubes.md`), sin «to-do N» (el pendiente vive solo en `Admin/TODO.md`) y con las menos palabras que una sesión siga entendiendo.
@@ -24,7 +56,7 @@ sirve y llevalo a donde se lee: una regla a `Admin/CONVENCIONES.md` (proceso), `
   existía (pasó de verdad). Empezá por `start-session-finance-of-sports-project`, salvo que la tarea sea onboardear clubes o tocar
   las tools del pipeline: ahí `club-or-year-onboarding`, que trae su propio arranque. Las demás: `club-sourcing` (buscar documentos),
   `club-data-mapping` (categorizar, revisar la cola de categorías o cargar a mano; el criterio está en su SKILL.md y los casos de tipo de cambio, formato simplificado, PDFs difíciles y casos por país en `referencia/`, que su índice dice cuándo abrir), `club-outreach` (mails a clubes),
-  `auditoria-finance-of-sports`, `escala-finance-of-sports`, `deploy-y-release-finance-of-sports` (antes y después de que Guido pushee), `producto-y-pantalla-finance-of-sports` (una pantalla o un cambio visible, del mockup a la verificación) `contenido-y-difusion-finance-of-sports` (una publicación con un dato del sitio) `contrato-de-datos-finance-of-sports` (qué cambio de los datos públicos los rompe) y, en la carpeta principal, `principal-finance-of-sports`.
+  `auditoria-finance-of-sports`, `escala-finance-of-sports`, `deploy-y-release-finance-of-sports` (antes y después de que Guido pushee), `producto-y-pantalla-finance-of-sports` (una pantalla o un cambio visible, del mockup a la verificación) `contenido-y-difusion-finance-of-sports` (una publicación con un dato del sitio) `contrato-de-datos-finance-of-sports` (qué cambio de los datos públicos los rompe) y `votacion-de-criterios`. `principal-finance-of-sports` es del modo de varios worktrees: no se usa.
 - Mirá si hay algo nuevo en `Admin/sourcing/README.md`: Guido deja ahí links a documentos antes de que se carguen. Si algo de ahí no figura
   como cargado en `Admin/ESTADO-clubes.md`, es trabajo pendiente.
 - Una pregunta genuina sobre un documento, que no se puede responder con la fuente ni con los criterios de las skills, va a
@@ -38,7 +70,7 @@ Con cualquier cambio real (datos, features, estructura, copy), sin que Guido lo 
   `Admin/ESTADO-clubes.md` no se escribe a mano: `node tools/generate-club-index.js`.
 - **`Admin/TODO.md`**: se BORRA lo resuelto (no se marca "RESUELTO"). Un punto nuevo toma el número siguiente al más alto.
 - **`Admin/CHANGELOG.md`**: siempre una entrada, corta (qué cambió). `Admin/finance-of-sports-project.md` solo si amerita el porqué.
-- **En un worktree no se editan `Admin/TODO.md`, `CHANGELOG.md` ni `ESTADO.md`:** la sesión deja `Admin/sesiones/<rama>.md` (qué cambió, qué queda, qué deja de ser cierto) y la principal escribe esos tres. Ver `worktree.md`, en la skill de arranque.
+- Si algún día se vuelve a trabajar con worktrees: en uno no se editan esos tres, la sesión deja `Admin/sesiones/<rama>.md` y la principal los escribe (`worktree.md`, en la skill de arranque).
 - La lista de pendientes vive solo en `Admin/TODO.md`. El detalle del cierre: skill de arranque, sección 5.
 
 ## Los datos de un club: la fuente es su JSON

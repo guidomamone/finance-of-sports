@@ -24,7 +24,9 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     (idempotente: con los chequeos de sumas en verde, solo escribe los que estaban en 1.0).
 
 - ONBOARDING CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA (pedido de Guido, 2026-10-20: "quitarme de en medio en los arreglos de script").
-  Tres sesiones de worktree con un rol cada una; la principal mergea, corre los comandos y hace de correo.
+  Tres sesiones de worktree con un rol cada una; la principal mergea, corre los comandos y hace de correo. En el modo de una sola sesión
+  (`CLAUDE.md`, «Modo de trabajo») la misma sesión toma un rol por vez y el circuito de abajo se colapsa; valen igual el registro de frenados,
+  la medición antes del arreglo y los criterios de la Auditora.
   - **Onboarding solo carga.** No edita `tools/`. Si un documento frena por un defecto de script, lo anota en
     `Admin/registros/frenados-por-script.jsonl` (una línea: `{"pdf", "defecto", "detalle", "sesion", "fecha"}`; `defecto` es la letra del
     TODO si ya existe, o una descripción corta), lo deja y sigue con el resto. No le pregunta a Guido por eso.
