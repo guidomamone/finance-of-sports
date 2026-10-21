@@ -83,6 +83,12 @@ En el paso 2 («Mockup antes de código»), al principio:
 Antes de dibujar, leé `referencia/marca.md` (tono, paleta, cómo se marca un estado, lo que no se hace y la prueba del diario): un mockup que no la pasa no se muestra.
 ```
 
+## 2 bis. Cómo queda el paso 2 del `SKILL.md` con esa línea (el resto del párrafo no cambia)
+
+```
+2. **Mockup antes de código.** Antes de dibujar, leé `referencia/marca.md` (tono, paleta, cómo se marca un estado, lo que no se hace y la prueba del diario): un mockup que no la pasa no se muestra. Un cambio que se ve (un card, una tabla, un flujo) se dibuja primero en `Prototyping/<Tema>/mockup-N.html` con números reales del motor, o en el artifact de Design «Pantallas FoS». Guido lo ve y dice sí o no. Sin su ok no se construye. Si dice no, se rehace el mockup, no el código.
+```
+
 ## 3. Qué cambia respecto de hoy y por qué
 
 - Hoy esas reglas estaban repartidas: la paleta en `css/styles.css`, el patrón de etiqueta en `.stat-tag` y el significado de la cursiva y del punteado en `Admin/PANTALLA.md`; nada decía qué NO hacer. De ahí salió la marca COVID infantil.
