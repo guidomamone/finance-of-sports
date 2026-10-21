@@ -161,10 +161,15 @@ Generados/Grecia/Athens Kallithea/**
 # caché de nada. Después del !Generados/**/*.json, por lo mismo que Kallithea.
 Generados/dashboard-usuarios/**
 
-# Transcripciones de informes de terceros (332): se leen para resumirlos, no se publican ni se trackean.
+# Transcripciones de informes de terceros (332, 336): se leen para resumirlos, no se publican ni se trackean.
 Admin/sourcing/Inglaterra/deloitte-arff-2026.md
 Admin/sourcing/Inglaterra/ifr-state-of-the-game-2026.md
 Admin/sourcing/Inglaterra/uefa-ecfil-2025.md
+Admin/sourcing/Alemania/dfl-wirtschaftsreport-2425-kennzahlen.md
+Admin/sourcing/España/laliga-informe-economico-financiero-2425.md
+Admin/sourcing/Brasil/ey-levantamento-financeiro-clubes-2025.md
+Admin/sourcing/Noruega/toppfotballbarometeret-2026-hovedfunn.md
+Admin/sourcing/Italia/reportcalcio-2025-comunicado.md
 
 # tools/package.json (to-do 241): @resvg/resvg-js para las imágenes og/. Se instala con `cd tools && npm install`.
 tools/node_modules/
