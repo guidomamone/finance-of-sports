@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 927 — Segunda corrida de P2 y P3; enlaces rotos; tres herramientas más (2026-10-21) [347 · 349 · 350]
+- `catchall-dominante` pasa a P3 y no cuenta un catch-all de una o dos líneas (la Auditora: describe cuánto detalla el documento, no un defecto). La auditoría queda en P2 115 y P3 206 (antes 371 y 1.002).
+- `worktree.mjs preparar` saca de `Clubes/` del worktree los enlaces rotos (nunca un archivo real).
+- 349: OpenSEO (solo con DataForSEO pago), Book to Skill y Open Generative AI (API paga): ninguna se instala (`Admin/mediciones/349-herramientas.md`).
+- 350 al TODO: una categoría para subsidios y donaciones.
+
 ## Versión 926 — Herramientas revisadas: ninguna se instala (2026-10-21) [320 · 321 · 322]
 - 320 Browser Use: sin caso (los portales de secuencia fija tienen captcha, bloqueo geográfico o ya se recorren con curl). 321 Higgsfield: pago mensual y créditos sin tope; no se conecta. 322 Zapier: no hace falta para el 335; OmniRoute: concentra claves y prompts y el ahorro ya lo dan la API de lotes y Sonnet. Mediciones en `Admin/mediciones/320-*.md`, `321-*.md` y `322-*.md`.
 - Enlaces rotos de `Clubes/` en dos worktrees (de la mudanza del 278) sacados; frenaban commits con P1.

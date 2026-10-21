@@ -33,7 +33,7 @@ el número de la izquierda es el orden de trabajo.
 3. 345 (Pipeline 13): lector del XHTML danés, con el diseño aprobado por la Auditora
 4. 347 (Pipeline 13): `preparar` saca los enlaces rotos de `Clubes/`; después, el consolidado de FC København 2025
 5. 347 (Auditora 4): segunda corrida del proceso de P2 y P3, con `catchall-dominante` (256); la primera bajó `linea-duplicada` de 927 a 0
-6. 349: OpenSEO, Book to Skill y Open Generative AI (faltan tus links)
+6. 350: votar una categoría para subsidios, donaciones y aportes (hoy caen en «otros»; no recategoriza lo cargado)
 
 **C. Técnico**
 (nada fuera de lo que está en marcha)
@@ -89,7 +89,10 @@ el número de la izquierda es el orden de trabajo.
     (e) enlaces a `/club/<id>` con tarjeta al compartir (241) y medir qué publicaciones traen visitas. Depende de 241 y 246.
     (f) material de difusión (era el 259): un deck para periodistas y sponsors, o un informe por liga («las finanzas de LaLiga 2025 en
         10 slides»), con el tipo Slides; sin código. Nada de esto sale antes del 337.
-349. HERRAMIENTAS SIN UBICAR (resto del 322). OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: faltan los links de Guido.
+350. CATEGORÍA PARA SUBSIDIOS Y DONACIONES (Auditora 4, 2ª corrida de P2 y P3, 2026-10-21; Guido: «dejalo como to do»). Buena parte de los
+   ~130 `catchall-dominante` son subsidios, donaciones y aportes (Subsídios, Επιχορηγήσεις, Целевые взносы; ligas bajas de Grecia, Rusia y
+   Portugal) que la taxonomía no tiene dónde poner. Es una votación de criterio (`votacion-de-criterios`); por la regla vigente no recategoriza
+   lo ya cargado.
 335. MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
    un mail sin que Guido lo pida en sus palabras.
    (a) Proceso: Etapa 1 lista y probada de punta a punta (Resend, `outreach.financeofsports.com`, cola en `Admin/outreach/`, envío desde
