@@ -604,3 +604,19 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 5: novena corrida, `salto-interanual`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl` con `codigo_tratado: salto-interanual`, antes 5 (P2): Alverca 2023 (venta de jugadores) y Harju JK Laagri 2025 (subvención) son reales y quedan silenciados en `tools/audit-ignore.json` con el motivo, mirados contra el `.md`. Lommel y RAAL La Louvière saltan porque el año chico es el formato abreviado belga con «Brutomarge» / «Marge brute» como único ingreso; Westerlo salta entre 2015 y 2025.
+
+### Qué queda (para TODO / una sesión Pipeline)
+
+- `tools/audit.js` (bloque de `salto-interanual`, cerca de la línea 514): comparar solo años a dos o menos de distancia, y si un lado es un año con un único ingreso «Brutomarge» / «Marge brute» / «Bruttomarge» / «Gross margin», emitir P3 `cambio-de-formato` en vez de P2. Mide: `salto-interanual` antes 5 (3 con los dos silencios hechos) y después 0 en P2.
+- Para Guido, criterio y no condición: 31 club-años belgas (Lommel, RAAL La Louvière, Lierse, Patro Eisden, RWDM, Loke­ren-Temse, Westerlo y otros) muestran como ingresos un margen bruto sin aviso. Qué se le dice al visitante es de datos o de pantalla; no se recategoriza lo cargado.
+- Próxima corrida: `escala-implausible` (P3, 5) y los demás por tamaño; re-medir.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
