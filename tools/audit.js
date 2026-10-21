@@ -789,6 +789,32 @@ function checkRutasMuertas() {
   }
 }
 
+// --- HISTORIA EN LOS DOCUMENTOS DE CRITERIO (to-do 327, C-9) -----------------
+// Las skills, CLAUDE.md y los documentos de criterio dicen cómo se trabaja y qué hay HOY: sin «Versión N», sin fechas de decisión y
+// sin «to-do N» (eso va a Admin/CHANGELOG.md y Admin/TODO.md; ver CLAUDE.md, «Al empezar»). P3: es la lista de limpieza, no una alarma.
+// No mira contadores fijos («58 clubes»): el patrón da falsos positivos y no se midió su precisión.
+const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md'];
+const HISTORIA_EN_DOCS = [
+  ['version', /\bVersi[óo]n \d+/g, '«Versión N»'],
+  ['fecha', /\b20\d\d-\d\d-\d\d\b/g, 'fechas AAAA-MM-DD'],
+  ['todo', /\bto-?dos? (?:n[°º] ?)?\d{2,3}\b/gi, '«to-do N»'],
+];
+
+function checkHistoriaEnDocs() {
+  const archivos = [...DOCS_DE_CRITERIO, ...mdsDeSkills()].filter(f => fs.existsSync(path.join(ROOT, f)));
+  for (const [clave, re, nombre] of HISTORIA_EN_DOCS) {
+    const porArchivo = new Map();
+    for (const f of archivos) {
+      const n = (fs.readFileSync(path.join(ROOT, f), 'utf8').match(re) || []).length;
+      if (n) porArchivo.set(f, n);
+    }
+    if (!porArchivo.size) continue;
+    const total = [...porArchivo.values()].reduce((a, b) => a + b, 0);
+    const top = [...porArchivo].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([f, n]) => `${f} (${n})`).join(', ');
+    add('P3', 'historia-en-doc-de-criterio', `${nombre}: ${total} en ${porArchivo.size} documentos de criterio (skills, CLAUDE.md, PIPELINE, CONVENCIONES*, PANTALLA); los que más: ${top}. Esos documentos dicen qué hay HOY: la historia va a Admin/CHANGELOG.md y los pendientes a Admin/TODO.md`);
+  }
+}
+
 // --- D19: TODO LO GENERADO, AL DÍA (Versión 183) ---------------------------
 // El proyecto tiene 6 generadores (estos 5 tienen --check; el sexto es generate-como-corre-stats.js) y dependen de que alguien se acuerde de
 // correrlos. "Acordate" ya falló antes acá (ver `checkDeployInterno`), y esta
@@ -1589,6 +1615,7 @@ function main() {
   checkComentariosPublicados();
   checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
+  checkHistoriaEnDocs();
   checkHigiene(api);
   checkGestiones(api);
   checkDatosJson();
