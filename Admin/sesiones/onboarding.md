@@ -278,3 +278,16 @@ Premier ~25 · LaLiga ~30 · Serie A ~5 · Bundesliga ~10 · Brasil ~60 · Argen
 
 ### Qué deja de ser cierto en ESTADO
 - Nada del sitio. Las tools categorizan por el deporte del club (ver PIPELINE.md, «El pipeline sabe el deporte»).
+
+## Pipeline 11: 339 (a) y (b), y (c) para la Auditora (2026-10-20)
+
+### Qué cambió (para CHANGELOG)
+- (a) Jev y `categorizar-claude.mjs` leen la lista con descripción de la taxonomía del deporte del club (`leerCategorias` de `tools/deporte-club.mjs`, de las listas que nombra `SPORT_TAXONOMIES[deporte].lists`): rugby ve las descripciones de `RUGBY_*`. Fútbol idéntico (500 pedidos a Jev, 80 a Claude).
+- (b) El bolsón «sin desglosar» sale de `SPORT_TAXONOMIES[deporte].lump` (`cargar.mjs` `sinDesglose`, `dentro-de-otro.mjs`). `medir-cargar` (334) sin diferencias.
+
+### Qué queda
+- (c) Condición nueva de la coma decimal (`Admin/mediciones/339-condicion-coma.md`, medida: 4 filas en 3.677 `.md`, 2 de Bath y 2 de Everton): falta el veredicto de la Auditora antes de codear. Las 2 filas de Everton, a revisar con Datos 4.
+- Lo de la lista anterior (textos de prompts de lectura, JSON-LD, `estadio-sponsor` de rugby, frase de la skill).
+
+### Qué deja de ser cierto en ESTADO
+- Nada.
