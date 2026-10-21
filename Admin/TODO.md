@@ -100,10 +100,10 @@ el número de la izquierda es el orden de trabajo.
    `tools/ixbrl-resultado.mjs`, que avisa si el resultado cargado no coincide con el etiquetado. Decidido (Auditora 5, en
    `Admin/registros/auditoria-proceso.jsonl`): pasa a freno solo para el perímetro individual; el consolidado sigue como aviso. Falta: que
    Pipeline lo codee con las condiciones del veredicto.
-360. LO QUE EL SITIO NO CUMPLE DE LA GUÍA DE UX (Pantallas 7, al escribir `referencia/ux.md`). Terminado cuando: (a) al cambiar de vista el foco
-   va al título de la vista nueva y nunca queda en `body`, y el selector de club devuelve el foco al cerrarse; (b) a 375 px, ningún elemento
-   tocable de la página de una liga mide menos de 44 × 44 px (`.lg-club` mide 17 px de alto y «← Todas las ligas» 36 px), con el barrido de la
-   guía sobre las demás vistas; (c) los países abiertos de la lista de Ligas siguen abiertos al volver con atrás. Lo hace Pantallas.
+361. ÁREAS DE TOQUE DE 44 PX FUERA DE LIGAS (sale del 360, ya resuelto en Ligas). Terminado cuando: a 375 px, la prueba de `referencia/ux.md`
+   sección 4 da vacía en Inicio (atajos de 32 px, filas de los rankings de 37, «Ver la liga» de 32), Finanzas («Elegí un club», 38), Mi Cuenta
+   («Entrar con Google», 34) y Comparar (la fila de ejercicios a 375 px arranca en el más nuevo y deja fuera de vista el elegido). Las etiquetas
+   de estado son una excepción decidida. Lo hace Pantallas.
 356. CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing busca en Companies House los clubes que no tenemos y
    presentan en iXBRL (Plymouth, Bolton, Lincoln, Oxford, Peterborough, Hibernian y el resto de League One, League Two y Escocia) y baja los
    últimos 5 años; Onboarding los carga con `tools/xhtml-aarsrapport.mjs` (sin transcribir). Presupuesto: Guido dijo que sí (2026-10-21);
