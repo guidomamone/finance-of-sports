@@ -32,7 +32,7 @@ el número de la izquierda es el orden de trabajo.
 
 **C. Técnico**
 1. 248 (Datos 4, Opus): plan listo y decidido (`Admin/mediciones/248-plan.md`); ahora la migración a club-v2 y la etapa de pantalla; Bath Rugby después de las dos (votación hecha: CVC y fair value a other_income); Guido aprobó que se vea y se compare
-2. 339 (Pipeline 11): que el pipeline sepa el deporte de cada club; inventario listo (`Admin/mediciones/339-inventario.md`, 38 puntos); 4 condiciones nuevas esperan tu ok; se codea después de la migración del 248
+2. 339 (Pipeline 11): que el pipeline sepa el deporte de cada club; inventario listo (`Admin/mediciones/339-inventario.md`, 38 puntos); las 4 condiciones nuevas las revisa Auditora 4; se codea después de la migración del 248
 3. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 4. 249: API en dominio propio (el último de C; no construirla todavía)
 
