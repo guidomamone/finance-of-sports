@@ -392,9 +392,9 @@ function checkLineas(api) {
         // (personal −0,001, provisiones −0,001, otros gastos +0,001, plantel +0,001), que la guarda revertía aunque los totales cierran.
         if (l.rawLabel === 'Diferencia de redondeo') continue;
         const prev = vistos.get(l.rawLabel);
-        if (prev != null) {
-          const sev = prev === l.amountNative ? 'P1' : 'P3';
-          add(sev, 'linea-duplicada', `${ref(clubId, year)} ${sec} "${l.rawLabel}": aparece dos veces${prev === l.amountNative ? ' con el MISMO monto (' + l.amountNative + '), probable copia pegada dos veces' : ' con montos distintos'}`);
+        // Solo el MISMO monto (probable copia pegada). Con montos distintos es un falso positivo (la Auditora 4 lo sacó tras la primera corrida de P2 y P3): el mismo rótulo en dos notas o dos tramos es normal.
+        if (prev != null && prev === l.amountNative) {
+          add('P1', 'linea-duplicada', `${ref(clubId, year)} ${sec} "${l.rawLabel}": aparece dos veces con el MISMO monto (${l.amountNative}), probable copia pegada dos veces`);
         }
         vistos.set(l.rawLabel, l.amountNative);
       }
