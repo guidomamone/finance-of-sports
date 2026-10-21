@@ -370,3 +370,17 @@ La frase «Y si subiste `ASSET_V` … hay que correr `generate-fuentes-page.js` 
 5. **Qué decide quién**: propongo que (a) agregar una **liga** a un deporte ya activo (datos de Wikipedia, reversible) lo apruebe la Auditora, con la propuesta de arriba, y (b) **activar un deporte** (aparece en el selector del sitio: es producto) lo apruebe Guido, con una hoja de una pantalla: el deporte, la liga, la taxonomía y su versión, los clubes de prueba cargados, y la lista de reglas inválidas del punto 4. Recomendación: sí a las dos; Guido solo ve (b), una vez por deporte.
 
 **Lo que no se resuelve acá** (preguntas abiertas, para Guido): si un deporte nuevo sin ninguna liga en el catálogo puede activarse con la liga de un solo club; y si el `tier` de rugby sigue la pirámide inglesa de rugby (Level 1 = Premiership) o la comparabilidad entre deportes no se promete.
+
+## Pipeline 12: to-do 341 codeado y 343 propuesta (2026-10-21)
+
+### Qué cambió (para CHANGELOG)
+- 341 (#5 y #14): `tools/catalogo-liga.mjs --liga <id>` propone la entrada de `LEAGUES` (nombre, país, deporte, escalón desde Wikipedia en inglés, sin IA) y, para un deporte nuevo, lo que falta para activarlo (taxonomía, `CEROS_POR_DEPORTE`, un club, reglas de categoría inválidas con el deporte ya activo: `validarReglasPrompt` en `reglas-categoria.mjs`). `--escribir` exige `--full` y `--name` dados por quien aprueba y una aprobación verificable (`--aprobado-ref` y, para activar un deporte, `--deporte-ref`: líneas de `Admin/registros/auditoria-proceso.jsonl`). Medido sobre las 63 ligas del catálogo con caché: deporte igual en 60, escalón en 59; las demás preguntan. `alta-club.mjs` apunta a la tool en la nota de la liga pendiente.
+- `audit.js` `checkComaComida` no se cae con un enlace roto de worktree (5bec638265).
+- 343: propuesta `Admin/propuestas/343-busqueda-sponsor.md` con los cambios de la Auditora 4 (legacy congelado en `tools/sponsor-legacy.json`, `archivo-web` cuenta). Sin codear: espera el ok de Guido al texto de la skill.
+
+### Qué falta
+- 343 codeado (compuerta, `sponsor-legacy.json`, `audit.js`) cuando Guido apruebe el texto.
+- 237 al (anexo UEFA que abre las ventas).
+
+### Qué deja de ser cierto en ESTADO
+- Una liga o un deporte nuevo ya no se agrega a mano a `data/leagues.js`: `catalogo-liga.mjs`.
