@@ -31,7 +31,7 @@ el número de la izquierda es el orden de trabajo.
 1. 241: cuando se publique, probar el link en el depurador de Facebook y en Google (lo demás ya está)
 
 **B. Pantallas y distribución**
-2. 247: registro público de correcciones (ok de Guido a las 4 recomendaciones del plan; después del 241)
+2. 247 (Pantallas 7): registro público de correcciones (ok de Guido a las 4 recomendaciones del plan)
 
 **C. Técnico**
 3. 336: sumar a `data/informes.js` los informes de cada liga ya cargada (hoy solo Inglaterra y Europa), y un paso de skill para buscarlos al abrir una liga (texto para tu ok)
