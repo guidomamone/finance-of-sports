@@ -356,3 +356,37 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: chequeos propuestos del 330 y del 257 (Orden 1), 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Trece líneas más en `Admin/registros/auditoria-proceso.jsonl`, una por chequeo de `Admin/propuestas/330-donde-se-pierde.md` y `257-skills.md` (partes 4 y 5). APROBADOS: `duda-resuelta-en-dudas`, `registro-sin-lector`, `doc-de-criterio-con-historia`, `gasto.mjs` con el 15 % de A2, `archivar-con-ok`, `modelo-opus-con-ok`. APROBADOS CON UN CAMBIO: `memoria-no-es-regla` (ask, no deny), `medicion-sin-destino` (cuenta lo que una tool nombra), `worktree-sin-permission-mode` (ask), `comandos-simples` ampliado (solo ask). APROBADO CON TRES CAMBIOS: el candado `skills-con-ok`. RECHAZADOS: `mergear` que frena sin flecha (queda como aviso) y `adelantar` (la tool no tiene ese paso). Sin codear.
+
+### Qué queda (para TODO / 330 y 257)
+
+- `skills-con-ok`: coincidencia contigua, git exento de la regla de Bash y una medición con los últimos cambios a `.claude/skills` antes de instalarlo.
+- `medicion-sin-destino`: hoy 35 de 51 archivos de `Admin/mediciones/` sin citar; el commit que lo agregue tiene que resolverlos o dejarlos listados.
+- `worktree.mjs mergear`: primero el texto de `worktree.md` con el ok de Guido, después un aviso (no freno) por los puntos de «Qué queda» sin flecha.
+- `adelantar`: Pipeline dice qué paso hace hoy el avance de la rama y se vuelve a proponer sobre ese archivo.
+- Los matchers de `.claude/settings.json` (`archivar-con-ok`, `modelo-opus-con-ok`, `worktree-sin-permission-mode`, `comandos-simples`) los agrega la principal; la sesión que los codee no edita ese archivo por su cuenta.
+- Orden 1 retiró el punto `adelantar` (no hay tool: el avance de la rama lo corre la principal a mano; la verificación queda como texto en la skill principal, que necesita el ok de Guido).
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: `catalogo-liga.mjs` (to-do 341) y `5bec638265`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`: `tools/catalogo-liga.mjs` con `validarReglasPrompt` (propone la entrada de `LEAGUES` y activa un deporte con aprobaciones), APROBADO CON DOS CAMBIOS; `5bec638265` (`checkComaComida` con `throwIfNoEntry:false`), APROBADO.
+
+### Qué queda (para TODO / 341)
+
+- `catalogo-liga.mjs`: (1) `--aprobado` y `--aprobado-deporte` con una referencia verificable a una línea de `auditoria-proceso.jsonl`, no texto libre; (2) `--escribir` exige `--full` y `--name` dados por quien aprueba (el título de Wikipedia es en inglés y el catálogo usa nombres locales o en español: `full` coincide en 18 de 63).
+- Recomendado, no condición: pasar a nota las preguntas informativas («el infobox no dice un país reconocible») y agregar `--tier` y `--pais` explícitos; hoy 24 de 63 ligas llevan una pregunta que no se puede contestar sin editar `data/leagues.js` a mano.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
