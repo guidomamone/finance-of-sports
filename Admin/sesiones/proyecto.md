@@ -36,3 +36,11 @@ vacío de Krasnodar desaparece, como hacía la tool antes).
 fuentes en clubs.js; la línea de la fase 1 del 245 en el TODO. **TODO:** borrar el 245 al mergear (la fase 2 está hecha); seguir con las skills (propuesta en la carpeta de notas).
 **Pendiente / ojo:** el ASSET_V subió a 1520 (el 246 y el 245); mirar tras el primer push las 301 de `/fuentes/<id>.html`. `tools/renombrar-ids.mjs` y `exportar-json.mjs` se pueden archivar en
 `tools/archivo/` (no lo hice: `renombrar-ids.mjs --verificar` todavía sirve). Los comentarios de otras tools que dicen «escribe el data file» (lectura con `vm`) siguen ciertos porque leen el JS generado.
+
+## Al mergear con main (conflictos anticipados con `git merge-tree`, main 14 commits adelante)
+
+Conflictos reales: `data/ar/godoycruz-ar-data.js` y `data/ar/gimnasiaesgrima-ar-data.js` (Onboarding 6 los tocó en main, y acá el `-data.js` es generado). Resolución: quedarse con la versión de
+main de esos dos `-data.js`, pasar su cambio al JSON con `node tools/exportar-json.mjs --club godoycruz-ar --fecha <hoy>` (y lo mismo con `gimnasiaesgrima-ar`; esa tool lee el JS y escribe
+`data/ar/<id>.json`) y regenerar con `node tools/generar-data.mjs`. El resto del conflicto es generado (`index.html` ASSET_V, `fuentes.html`, `fuentes/*.html`): `tools/worktree.mjs mergear`
+lo resuelve y regenera (hay que regenerar también `data/rankings/ar-primera.js`, que cambió en los dos lados). Después `node tools/audit.js`, `node tools/generar-data.mjs --check` y
+`node tools/renombrar-ids.mjs --verificar` (que no vuelva a aparecer un id viejo en lo que trajo main).
