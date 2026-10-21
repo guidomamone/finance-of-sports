@@ -31,7 +31,7 @@ el número de la izquierda es el orden de trabajo.
 1. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar
 2. 345 (Onboarding 8): la cola del lote 130, Girona 2021-23, RAAL, SønderjyskE 2023, los 7 daneses convertidos, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020 (hasta US$10 en total)
 3. 345 (Pipeline 13): el consolidado de FC København 2025 y Hvidovre 2025; después, el 353
-4. 352 (Auditora 5): la fuente de un año que viene de un XHTML, y un chequeo de lo cargado contra los totales etiquetados en iXBRL
+4. 352 (Auditora 5, con lo que cargue Onboarding 8): decidir si el chequeo del iXBRL pasa de aviso a frenar; 355: Lierse con dos ids (decisión tuya)
 5. 347 (Auditora 5): corridas de P2 y P3; sigue `gestion-club-inexistente` (ya: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`, `outlier-liga`)
 6. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea (`sin-salarios`, 48)
 7. 350 (Auditora 5, después de las corridas): relevar qué categorías están en vano (educación incluida), votar una para subsidios y donaciones, y un proceso para revisar categorías
@@ -87,16 +87,15 @@ el número de la izquierda es el orden de trabajo.
     (e) enlaces a `/club/<id>` con tarjeta al compartir (241) y medir qué publicaciones traen visitas. Depende de 241 y 246.
     (f) material de difusión (era el 259): un deck para periodistas y sponsors, o un informe por liga («las finanzas de LaLiga 2025 en
         10 slides»), con el tipo Slides; sin código. Nada de esto sale antes del 337.
-352. FUENTE Y CHEQUEO DE LO QUE VIENE EN XHTML (Guido, 2026-10-21). Un año convertido por `tools/xhtml-aarsrapport.mjs` tiene como original el
-   XHTML y el PDF de ancla lo armamos nosotros: la página de fuentes y el `source` tienen que apuntar al XHTML publicado. Y como iXBRL trae
-   los totales etiquetados, un chequeo que compare lo cargado con esos totales. Lo diseña la Auditora; lo codea Pipeline.
+352. EL CHEQUEO DEL iXBRL PASA A FRENAR (Guido, 2026-10-21). Hechos: la fuente de un año en XHTML (`fuente-xhtml-sin-url`, nota pública) y
+   `tools/ixbrl-resultado.mjs`, que avisa si el resultado cargado no coincide con el etiquetado. Falta: con 10 años de varios clubes daneses
+   cargados por Onboarding 8 sin falsos avisos, la Auditora decide si pasa de aviso a frenar.
 353. LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21). Medido (`Admin/mediciones/companies-house-ixbrl.md`): los grandes presentan PDF; 9 de 36
    clubes probados vienen en iXBRL (Nottingham Forest, Burnley y Bath Rugby, cargados; Plymouth, Bolton, Lincoln, Oxford, Peterborough e
    Hibernian, no). Guido aprobó bajar los 3 de Forest, Burnley y Bath y probar una versión de `xhtml-aarsrapport.mjs` (Pipeline 13).
-354. DOS ARREGLOS DE TOOL QUE DEJÓ EL 257 (Orden 1, 2026-10-21; para Pipeline). (a) El paso `perfil-en-cola` de `cargar.mjs` no frena
-   nunca una carga: un caso de perfil (socios, otros deportes) se contesta googleando el club (regla de club-or-year-onboarding, «La cola»).
-   (b) `worktree.mjs mergear` avisa si un punto de «Qué queda» de la nota de sesión no termina con su flecha (`→ TODO n`, `→ regla`,
-   `→ HALLAZGOS`, `→ descartado`); la tabla de CONVENCIONES ya lo da por hecho.
+355. LIERSE CON DOS IDS (Auditora 5, 2026-10-21). `liersekempenzonen-be` (2018-21) y `liersesk-be` (2022-25), mismas ligas: parece el mismo
+   club con otro nombre. Unirlos cambia un id público (contrato de datos): lo decide Guido. Antes, confirmar con los documentos que no sea el
+   Lierse SK que quebró en 2018.
 351. SUELDOS ADENTRO DE UNA SOLA LÍNEA (Auditora 4, 3ª corrida de P2 y P3, 2026-10-21). 12 británicos (Aston Villa, Brentford, Brighton,
    Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves; 47 club-años con el estado por función) e
    Instituto 2025 (anexo de remuneraciones cargado entero en gastos generales). Cómo: `Admin/sesiones/ligas.md`, tercera corrida. Corrige datos
