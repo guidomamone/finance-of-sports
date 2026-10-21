@@ -1369,6 +1369,35 @@ function checkCarpetasClubes() {
   }
 }
 
+// Un archivo bajado que no es lo que dice su extensión (Admin/propuestas/archivo-no-es-lo-que-dice.md, ok de Guido). Caso: Brøndby 2025,
+// aarsrapport-2025-06-30.xhtml venía comprimido con gzip (el depósito lo sirvió así) y ninguna tool lo leía; nadie lo vio hasta medir los XHTML.
+// Un .pdf, .xhtml o .xml de Clubes/ cuyos primeros bytes son gzip (1f 8b) o Zip (PK\3\4), o un .pdf que es una página HTML (de error o de login),
+// salvo que al lado exista <base>-descomprimido.<ext> (la copia que se lee; el original queda). Solo esas tres firmas: un PDF con basura antes
+// de %PDF lo lee poppler igual y no es este caso. Lee 64 bytes por archivo (sigue los enlaces de un worktree preparado).
+// Un .xhtml en gzip NO es hallazgo (Auditora 5): xhtml-aarsrapport.mjs e ixbrl-resultado.mjs lo descomprimen en memoria (`leerXhtmlTexto`) y la copia
+// no hace falta; si esas tools dejaran de leerlo, vuelve a serlo. Un .xhtml en Zip sí: ninguna tool lo abre.
+function checkArchivoNoEsLoQueDice() {
+  if (!fs.existsSync(CLUBES_DIR)) return;
+  const buf = Buffer.alloc(64);
+  (function walk(d) {
+    let es; try { es = fs.readdirSync(d, { withFileTypes: true }); } catch { return; }
+    const nombres = new Set(es.map(e => e.name));
+    for (const e of es) {
+      const p = path.join(d, e.name);
+      if (e.isDirectory() || (e.isSymbolicLink() && (() => { try { return fs.statSync(p).isDirectory(); } catch { return false; } })())) { walk(p); continue; }
+      const m = /^(.*)\.(pdf|xhtml|xml)$/i.exec(e.name); if (!m) continue;
+      if (nombres.has(`${m[1]}-descomprimido.${m[2]}`)) continue;
+      let n = 0; try { const fd = fs.openSync(p, 'r'); try { n = fs.readSync(fd, buf, 0, 64, 0); } finally { fs.closeSync(fd); } } catch { continue; }
+      const cab = buf.subarray(0, n);
+      const real = cab[0] === 0x1f && cab[1] === 0x8b ? (m[2].toLowerCase() === 'xhtml' ? null : 'gzip') : (cab[0] === 0x50 && cab[1] === 0x4b && cab[2] === 0x03 && cab[3] === 0x04) ? 'Zip'
+        : (m[2].toLowerCase() === 'pdf' && /^(\xEF\xBB\xBF)?\s*<(!doctype html|html)/i.test(cab.toString('latin1'))) ? 'HTML' : null;
+      if (!real) continue;
+      const rel = path.relative(ROOT, p);
+      add('P2', 'archivo-no-es-lo-que-dice', `${rel} es ${real}, no ${m[2].toLowerCase()}: ${real === 'HTML' ? 'es una página de error o de login, no el documento; se vuelve a bajar' : `el depósito lo sirvió comprimido; se descomprime a ${m[1]}-descomprimido.${m[2]} al lado y el original queda`} (skill club-sourcing, «Gotchas de tooling»)`);
+    }
+  })(CLUBES_DIR);
+}
+
 // --- D13: qué de las fuentes se le muestra al visitante (Versión 127) -------
 // `sources[].note` es una nota INTERNA: una sesión se la escribe a la siguiente, con
 // rutas del repo, cómo se leyó el PDF y qué quedó pendiente. En la Versión 126 se
@@ -2033,6 +2062,7 @@ function main() {
   checkFuentesPublicas(api);
   checkClubIds(api);
   checkCarpetasClubes();
+  checkArchivoNoEsLoQueDice();
   checkColisionSourcing(api);
   checkLigasPorEjercicio(api);
   checkGenerados();

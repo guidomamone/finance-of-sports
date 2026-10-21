@@ -1018,6 +1018,12 @@ Cada club y cada liga con ranking tiene su página: `club/<id>.html` y `liga/<id
 
 Texto movido sin cambios. Lo que dice "este archivo" o "acá" se refería a `CLAUDE.md`.
 
+**Un documento que una tool no lee.** Primero `file <archivo>`. Si no es lo que dice la extensión (gzip, Zip, una página HTML de error), el
+problema es la descarga y no la tool: se descomprime a un archivo nuevo (`<base>-descomprimido.<ext>`, el original queda) o se vuelve a bajar
+(skill `club-sourcing`, «Gotchas de tooling»). Excepción: un `.xhtml` en gzip se deja como está, porque `xhtml-aarsrapport.mjs` e
+`ixbrl-resultado.mjs` lo descomprimen en memoria. Si es lo que dice y la tool falla, va a `Admin/registros/frenados-por-script.jsonl` y lo
+arregla Pipeline. Lo vigila `audit.js` (`archivo-no-es-lo-que-dice`, P2).
+
 ## Estructura de carpetas de documentos fuente: Clubes/<País>/<Club>/ (PDF y transcripción juntos)
 
 Todos los PDFs fuente Y sus transcripciones a Markdown viven JUNTOS, en la
