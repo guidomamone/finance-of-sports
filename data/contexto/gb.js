@@ -18,6 +18,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Villa Park","capacidad":42657,"sponsor":"BK8","marca":"Castore","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Villa Park","capacidad":42918,"sponsor":"Betano","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
+  'bathrugby-gb': {
+    2021: {"estadio":"The Recreation Ground","capacidad":14509,"sponsor":"Dyson","marca":"Macron","fuente":"https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; Dyson, title sponsor desde 2014-15 sin interrupción: https://sponsorship.sportbusiness.com/news/dyson-fills-bath-rugbys-sponsorship-vacuum/ y cuentas 2021-22 de Bath Rugby Limited (Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md L159)","fuenteManual":"https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; Dyson, title sponsor desde 2014-15 sin interrupción: https://sponsorship.sportbusiness.com/news/dyson-fills-bath-rugbys-sponsorship-vacuum/ y cuentas 2021-22 de Bath Rugby Limited (Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md L159)","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'bournemouth-gb': {
     2022: {"estadio":"Dean Court","capacidad":11364,"sponsor":"MSP Capital","marca":"Umbro","temporada":"2021–22 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358361756"},
     2023: {"estadio":"Dean Court","capacidad":11307,"sponsor":"Dafabet","marca":"Umbro","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},

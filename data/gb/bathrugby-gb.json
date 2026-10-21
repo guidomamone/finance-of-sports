@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "bathrugby-gb",
+    "name": "Bath Rugby Limited",
+    "display_name": "Bath Rugby",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "rugby_union",
+    "taxonomy": "rugby-1"
+  },
+  "sources": [
+    {
+      "id": "bathrugby-gb-full-accounts-2020-21",
+      "club_id": "bathrugby-gb",
+      "title": "Bath Rugby Limited — bath-rugby-full-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "GBP",
+      "source_id": "bathrugby-gb-full-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-06-30"},
+      "revenue": [
+        {"label":"Turnover","category":"undisclosed","subcategory":"lump_rugby_operations","amount":11.597938,"disclosure":"aggregated"},
+        {"label":"Fair value movements","category":"other_revenue","subcategory":"other_income","amount":6.664853,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0.153832,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"undisclosed","subcategory":"lump_rugby_operations_expense","amount":-14.103734,"disclosure":"aggregated"},
+        {
+          "label": "Administrative expenses",
+          "category": "undisclosed",
+          "subcategory": "lump_rugby_operations_expense",
+          "amount": -4.418764,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.056372,"tax":-0.230837,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":18.416623,"expenses":18.522498,"net_result":-0.393084},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Other interest receivable and similar income","amount":0.000731},
+          {"label":"Interest payable and similar expenses","amount":-0.057103},
+          {"label":"Tax on loss","amount":-0.230837}
+        ],
+        "no_breakdown": [
+          {"line":"Turnover","side":"revenue","amount":11.597938,"reason":"el documento no desglosa este renglón"},
+          {"line":"Cost of sales","side":"expense","amount":14.103734,"reason":"el documento no desglosa este renglón"},
+          {"line":"Administrative expenses","side":"expense","amount":4.418764,"reason":"el documento no desglosa este renglón"}
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

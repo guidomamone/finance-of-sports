@@ -804,6 +804,7 @@ window.SPONSORS_INDICE = [
   ["dw-sports-fitness","DW Sports Fitness",["c"]],
   ["dynamo-makhachkala","Dynamo Makhachkala",["m"]],
   ["dyorex","Dyorex",["c"]],
+  ["dyson","Dyson",["c"]],
   ["e-baillien","e.Baillien",["c"]],
   ["e-co-energia-corrente","E.CO Energia Corrente",["c"]],
   ["e-land","E-Land",["c"]],

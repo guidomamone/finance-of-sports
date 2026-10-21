@@ -30,6 +30,7 @@ window.RANKINGS_INDICE = {
   "gb-championship": [2022,4,24],
   "gb-leagueone": [2022,1,24],
   "gb-premierleague": [2023,18,20],
+  "gb-premiershiprugby": [2021,1,null],
   "gb-scottishpremiership": [2025,1,12],
   "gr-superleague": [2025,12,14],
   "gr-superleague2": [2023,3,30],
