@@ -136,6 +136,8 @@ const LEAGUES = {
   'ru-pervayaliga':    { name:'Primera Liga',          full:'Primera Liga de Rusia (FNL)',         country:'RU', sport:'futbol', tier:2 },
   'tr-superlig':       { name:'Süper Lig',             full:'Süper Lig de Turquía',                country:'TR', sport:'futbol', tier:1 },
   'tr-1lig':           { name:'1. Lig',                full:'TFF 1. Lig',                          country:'TR', sport:'futbol', tier:2 },
+  'cy-firstdivision': { name:'First Division', full:'First Division de Chipre', country:'CY', sport:'futbol', tier:1 },
+  'cy-seconddivision': { name:'Second Division', full:'Second Division de Chipre', country:'CY', sport:'futbol', tier:2 },
 };
 
 // Helpers de catálogo. Los de MEMBRESÍA viven en data/club-leagues.js, siempre con el año.
