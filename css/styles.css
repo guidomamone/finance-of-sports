@@ -403,7 +403,6 @@
      barras horizontales con el punto del color de cada club. */
   .ini-hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:40px;align-items:center;padding:28px 0 40px;}
   .ini-hero-txt{display:flex;flex-direction:column;gap:14px;}
-  .ini-eyebrow{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);min-height:1em;}
   .ini-hero h1{margin:0;font-size:42px;line-height:1.08;letter-spacing:-.02em;color:var(--azul);}
   .ini-lead{margin:0;font-size:17px;line-height:1.55;color:#45474d;max-width:520px;}
   .ini-busca{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:16px;}
