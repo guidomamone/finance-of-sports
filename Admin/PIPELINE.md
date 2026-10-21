@@ -834,6 +834,9 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Quién la contesta (decisión de Guido del 2026-10-13): un subagente Sonnet con cita del documento y del criterio de `club-data-mapping`,
   firmado "Claude"; Claude revisa contra el documento las correcciones grandes antes de aplicarlas. A Guido solo lo que el subagente no
   puede decidir y frena un alta o un año; lo que solo el club sabe, a `Admin/dudas-por-club.md` (skill `club-or-year-onboarding`).
+- Las respuestas grandes de la cola que todavía no se aplicaron (un lote, un club con muchos años) quedan en `Admin/registros/cola-borradores/`,
+  un archivo por lote o club, y se aplican con `cola.mjs --responder`; aplicadas, el archivo va a `Admin/Archive/`. Antes de correr un lote cuyos
+  documentos ya arrastran casos, se contestan primero.
 
 ---
 
