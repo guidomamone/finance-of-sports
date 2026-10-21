@@ -169,13 +169,8 @@ Lo que enseñó resolver `club-leagues.js`, para aplicarlo a los otros dos:
 
 ### E. Namespacing e IDs
 
-- **`clubId` sin país**: resuelto como MECANISMO, no como migración completa. Los clubes con id
-  heredado (sin sufijo de país) se cuentan con
-  `ls data/*/*-data.js | sed 's|data/||;s|-data.js||' | grep -v -- '-[a-z][a-z]$' | wc -l`.
-  `checkClubIds()` en `tools/audit.js` detecta el momento exacto en que un id heredado deja de ser
-  inequívoco (P2) y marca cualquier club nuevo sin país (P2). No requiere más trabajo salvo
-  mantenerlo. Es el modelo a copiar para el resto de esta lista: un chequeo automático que avisa en
-  el momento en que migrar deja de ser prematuro, en vez de migrar todo por las dudas.
+- **`clubId` con país**: todos los ids son `<slug>-<iso2>`; los viejos viven en `data/club-aliases.js` (URL, Comparar, Mi Cuenta) y
+  `fuentes/` redirige con 301 desde `netlify.toml`. `tools/audit.js` vigila el formato y el mapa (P1).
   `checkColisionSourcing()` lo adelanta al sourcing: lee los `Admin/sourcing/_indice/<País>.md` y avisa (P3)
   cuando un club que alguien está SOURCEANDO coincide con un id pelado ya cargado, o sea antes de
   transcribir nada.

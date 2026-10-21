@@ -90,15 +90,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de perímetro,
   no frena: un ejercicio con un solo perímetro se carga con ese (regla en `Admin/CONVENCIONES-DATOS.md`). Reconoce títulos en italiano e
   inglés; en otros idiomas decide el paso A2 (Claude, cinco criterios con peso). Frena solo si los votos de dos ejercicios chocan.
-- Transcripción con subagentes (sin API, con el límite de la suscripción): para PDFs digitales, un subagente Sonnet por documento sigue
-  `Admin/transcripcion-subagentes/reglas.md` y se controla con `check-transcripcion-fidelidad.js` y
-  `Admin/transcripcion-subagentes/comparar-numeros.mjs` (números del .md contra el texto del PDF). Después el pipeline sigue igual
-  (`pipeline.mjs --lista` valida gratis y el lote localiza). Transcriptos así, limpios (fuera lo que no es del club, lo que no
-  trae estado de resultados y las segundas versiones) y esperando validación: Estonia, Bélgica, Suiza, Países Bajos, parte de Turquía
-  (Beşiktaş) y parte de Colombia; qué sigue, en el punto 2 del ORDEN del TODO (el detalle viejo, en el 165 b1) (y por documento, en
-  `Admin/transcripcion-subagentes/avance-<fecha>.md`). Un digital es el que `pdftotext` lee con 10 o más cifras y 300 o más letras
-  por página en promedio; el resto va por Mistral. Las páginas imagen (informes del auditor) se leen del render: el comparador no
-  las puede cotejar y se aceptan si sus totales coinciden con el balance.
+- No se transcriben PDFs nuevos (Guido, 2026-10-20): se cargan los documentos que ya tienen `.md`; las tools de transcripción quedan para
+  arreglar o validar un `.md` existente. Cargar sin API (con tokens de sesión): `club-or-year-onboarding/carga-con-tokens.md`.
 - Un club nuevo entra al lote con un solo ejercicio; el resto de sus años, después del alta y de contestar su cola (skill
   `club-or-year-onboarding`), para que las respuestas del primero sirvan de precedente. Las respuestas grandes de la cola que todavía
   no se aplicaron quedan en `Admin/registros/cola-borradores/`. Antes de correr un lote cuyos documentos ya arrastran casos, conviene
@@ -124,6 +117,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   CHANGELOG y ESTADO, las otras dejan su cierre en `Admin/sesiones/<rama>.md` (skill de arranque, `worktree.md`). Qué worktree hace qué:
   el "Reparto en worktrees" arriba del ORDEN de `Admin/TODO.md`. Una rama que sigue abierta después de un merge escribe lo nuevo de su
   cierre debajo de una línea con la fecha del merge; un worktree no mergea main en su rama: la principal le hace un fast-forward.
+- Trabajo por roles (`Admin/CONVENCIONES.md`, «ONBOARDING CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA»): Onboarding carga, Pipeline es la única
+  que toca `tools/`, la Auditora aprueba arreglos y vota criterios (skill `votacion-de-criterios`, con materialidad de 1%), y la principal
+  mergea. Ningún año queda frenado por datos sin pasar por la Auditora. El gasto por sesión: `node tools/gasto.mjs --sesion <carpeta>`.
 - Hooks de Claude Code (`.claude/settings.json` → `tools/hooks/pre-tool.mjs`): `audit.js` antes de cada commit publicable (frena con P0/P1;
   `[sin-audit]` con el ok de Guido), y piden permiso editar skills, `git push` y borrar en `Clubes/`; en un worktree rechazan escribir TODO,
   CHANGELOG y ESTADO. Qué chequea cada uno: la cabecera del script.
@@ -245,15 +241,17 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   mira las corridas del Worker de los últimos 7 días: sin corridas o con errores, ALERTA), el tablero del pipeline, la auditoría de rutina con un
   eje rotando y de 3 a 5 sugerencias de mejora. Commitea solo `auditorias/<fecha>.md`; lo que va al TODO queda en su sección "Para TODO", para
   la principal. Avisa siempre con una línea.
-- Un solo motor genérico calcula Finanzas para todos los clubes (ver `Admin/ARQUITECTURA.md`); ningún club tiene motor propio. Los clubes
-  nuevos nacen con el país en el `clubId` (ej. `corinthians-br`, `millonarios-co`); `tools/audit.js` lo chequea (`clubid-sin-pais`).
+- Un solo motor genérico calcula Finanzas para todos los clubes (ver `Admin/ARQUITECTURA.md`); ningún club tiene motor propio. Todos los
+  `clubId` llevan el país (`<slug>-<iso2>`, ej. `boca-ar`, `corinthians-br`); los ids viejos viven en `data/club-aliases.js` y `fuentes/`
+  redirige con 301 desde `netlify.toml`. `tools/audit.js` vigila el formato y el mapa.
 - DATOS: cuántos clubes, de qué países y qué ejercicios tiene cada uno: `Admin/ESTADO-clubes.md` (generado). Solo cuentan los clubes
   con al menos un ejercicio REAL (balance o presupuesto oficial).
 
 ### Dónde vive cada cosa
 
 - Raíz: las páginas del sitio (`index.html`, `fuentes.html`, `metodologia.html`, `privacidad.html`, `terminos.html`, `sitemap.xml`), `netlify.toml` y `CLAUDE.md`.
-- `data/`: lo que el sitio carga. Un archivo por club en `data/<país>/<clubId>-data.js` (país = código ISO en minúscula); los
+- `data/`: la fuente de cada club es `data/<país>/<clubId>.json` (dato abierto, esquema en `data/schema/club-v1.json`); el sitio carga el
+  `data/<país>/<clubId>-data.js`, que se GENERA desde el JSON (`tools/generar-data.mjs`; `--check` lo controla). Los
   compartidos (`clubs.js`, `leagues.js`, …) sueltos; `club-leagues/`, `gestiones/`, `rankings/` y `lang/`. Las tools arman la ruta de un
   club solo con `tools/data-clubes.js`.
 - `js/` (el script principal es `js/principal.js`) y `css/styles.css`. `fuentes/`: solo las páginas públicas `<clubId>.html`.

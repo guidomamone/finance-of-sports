@@ -17,6 +17,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 875 — Ids estables y el JSON de cada club como fuente (2026-10-20) [246 · 245 · 332 · 333]
+
+- 246: los 41 clubes sin país pasan a `<slug>-<iso2>` (`boca` → `boca-ar`, `realmadrid` → `realmadrid-es`); `data/club-aliases.js` resuelve los ids
+  viejos en la URL, Comparar y Mi Cuenta, y `netlify.toml` redirige con 301 las 41 páginas de `fuentes/`. `tools/renombrar-ids.mjs`.
+- 245 fase 2: `data/<país>/<club>.json` es la fuente (dato abierto) y el `-data.js` se genera con `tools/generar-data.mjs`; las tools de carga
+  escriben el JSON. Boca normalizada a la estructura de los demás. Ida y vuelta 319 de 319, audit 0 P0 y 0 P1.
+- Revisado por una sesión Opus antes del merge: sin bloqueantes (lo demás, to-do 333). Skills: escala (ids con país) y formato-simplificado.
+- To-do 332 nuevo: informes sobre las finanzas del fútbol inglés («The State of the Game» y parecidos).
+
 ## Versión 874 — Sale el 238 (lo gratis) (2026-10-20) [238 · godoycruz-ar]
 
 - Merge de Onboarding 6: Godoy Cruz 2020 tanteo a other_income; cola de AEK en 0; dudas de OH Leuven, Thun y Polissya resueltas. Sale el 238

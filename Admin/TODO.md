@@ -27,10 +27,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 313 y el 51 quedan para más adelante (E).
 
 **A. En marcha**
-* 246: ids estables con mapa de alias; primero el diseño, para tu ok --> Datos 3
-* 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos), después del 246 --> sesión nueva en Opus (ok de Guido)
+* 333: lo no bloqueante de la revisión del 245 y el 246: `generar-data.mjs --check` también marca un `-data.js` sin JSON; `worktree.mjs` trata `data/<iso>/*-data.js` como generado y corre `generar-data` después del merge; `renombrar-ids.mjs --verificar` ignora el ejemplo de CLAUDE.md --> Pipeline (sesión nueva)
+* 245 y 246, skills: los 18 cambios que propone Datos 3 (`Admin/mediciones/245-246-cambios-skills.md`), para tu ok
 
-**B. Pantallas y distribución (después del 246)**
+**B. Pantallas y distribución**
 * Vålerenga: la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
@@ -54,7 +54,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 **E. Más adelante (Guido, 2026-10-20)**
-* 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
+* 313: contenido para X e Instagram (después de 241; con el 259 y el 257)
 * 51: proceso de mails a clubes
 
 
@@ -76,19 +76,6 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 241. LINK DEDICADO, NIVEL 2: RUTAS REALES, TARJETA AL COMPARTIR Y SEO (mejoras de proyecto, pedido de Guido 2026-10-16). `/club/<id>` y `/liga/<id>` pre-generadas (redirect de Netlify +
    un generador de HTML por club, como `fuentes/<club>.html`), con título, descripción y OG image ("Boca Juniors · Ingresos 2025: US$ 120 M").
    WhatsApp y Google no ejecutan JS: sin esto la preview es la portada y nadie que busque "deuda de Boca" llega. Mockups con Design antes de codear.
-245. DATOS COMO JSON CON ESQUEMA (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy son JS (`const xRevenueLinesByYear = {...}`), sin versión de esquema, con la unidad implícita
-   (millones) y la moneda en otro archivo. JSON con schema_version, unit/scale/currency explícitos y fecha de corte, como fuente; el JS del
-   sitio se genera desde ahí. FASE 1 HECHA (2026-10-20, aprobada por la auditora): esquema en `Admin/mediciones/245-esquema.md` (por club,
-   millones con `unit.scale`, nombres en inglés, `period_end` y `exported_at`); `tools/exportar-json.mjs`, `tools/validar-esquema-json.mjs`
-   y `tools/ida-y-vuelta.mjs` (313 de 313 idénticos). Falta la FASE 2: que el JSON sea la fuente y el JS se genere desde ahí (con todo
-   mergeado y sin worktrees, como el 246), con los cambios de skills y documentos que inventaría Docs 1. En la fase 2 también (Guido,
-   2026-10-20): los nombres de campo de los bloques de texto libre pasan al inglés (los textos quedan en español) y Boca se normaliza a la
-   estructura de los otros clubes (sus fuentes y gestiones viven hoy en clubs.js y gestiones/ar.js).
-   Decidido (Guido, 2026-10-20): el JSON fuente vive en `data/<país>/<club>.json` y se publica como dato abierto (D1); el sitio sigue
-   cargando el `-data.js`, que pasa a ser GENERADO desde el JSON (D2). Inventario: `Admin/mediciones/245-inventario-docs.md`.
-   Hecho (2026-10-20): JSON Schema formal (`data/schema/club-v1.json`) y `datapackage.json` (CC BY-NC 4.0, solo lo financiero).
-246. IDS ESTABLES (mejoras de proyecto, pedido de Guido 2026-10-16). Conviven ids sin país (realmadrid, athleticclub) y con país (elche-es, corinthians-br). Normalizar antes de tener
-   clientes de una API, con un mapa de alias de los ids viejos.
 247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
    ni cuándo, dato por dato. Un registro público versionado.
 248. TAXONOMÍA GENÉRICA + SUBCATEGORÍAS POR DEPORTE (mejoras de proyecto, pedido de Guido 2026-10-16). Una capa genérica (ingresos y gastos operativos, deuda) y las subcategorías de cada
@@ -201,3 +188,8 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    UEFA, los de la Premier League, la EFL o la FA). Para cada uno: quién lo publica, si es público, qué años y clubes cubre, y para qué
    sirve: contrastar lo ya cargado (totales por club y por liga), completar años o clubes que faltan, o dar contexto en Ligas. Solo
    sourcing y una nota en `Admin/sourcing/Inglaterra/`; no se transcribe ni se carga nada sin decisión de Guido.
+333. LO NO BLOQUEANTE DE LA REVISIÓN DEL 245 Y EL 246 (revisión Opus, 2026-10-20). (1) `tools/generar-data.mjs --check` solo recorre los
+   JSON: un `-data.js` sin JSON, o un id de clubs.js sin `<id>.json`, tiene que dar P1. (2) `tools/worktree.mjs`: `data/<iso>/*-data.js`
+   es generado; un conflicto ahí no es "conflicto real" y después del merge corre `generar-data`. (3) `renombrar-ids.mjs --verificar`
+   ignora el `boca` de ejemplo de CLAUDE.md. (4) Cosmético: el título de la fuente `racing-ar-placeholder`; en Mi Cuenta, una búsqueda vieja
+   guardada de nuevo genera una fila duplicada.
