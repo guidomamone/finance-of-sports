@@ -24,3 +24,10 @@
 El bilancio al 31/12/2025 no está publicado todavía (en 2025 se subió el 2024 antes de mayo; revisar). La CDX de dominio no trae nada anterior a 2022.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-08): ejercicio 2024 desde `Clubes/Italia/Monza/Monza-bilancio-2024.pdf` (sourceId `monza-it-bilancio-2024`).
+
+## Chequeo 2026-10-21: el bilancio 2025 sigue sin publicarse
+
+- `acmonza.com/en/informazioni-finanziarie/` (en vivo) lista solo ACM_Bilancio 2022, 2023 y 2024 y los compensi agenti 2022-2024. La captura de Wayback del 2026-08-28 de la misma página muestra exactamente lo mismo (ninguna de las cuatro de 2026 trae un 2025).
+- El 2024 se subió antes de mayo de 2025; con el 31/12/2025 ya pasaron 10 meses sin documento. No hay señal de que lo vaya a subir.
+- Queda: la visura del bilancio en el Registro Imprese (Camera di Commercio, de pago, a nombre de «A.C. Monza S.p.A.»): gestión de Guido por el pago, no de sourcing. O pedirlo al club.
+- Último chequeo: 2026-10-21.

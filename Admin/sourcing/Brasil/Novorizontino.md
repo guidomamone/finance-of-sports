@@ -44,6 +44,12 @@
   https://www.gremionovorizontino.com.br/ (sin sección financiera).
 - Último chequeo: 2026-09-22.
 
+## Chequeo 2026-10-21: 2012 bajado (3 JPG → un PDF); 2011 no existe en la FPF
+
+- **2012 conseguido.** `9541A.jpg`, `9541B.jpg` y `9541C.jpg` de `/Repositorio/Institucional/2012/` (200, escaneos de 2550×3300 a 300 dpi; `curl` baja bien las imágenes). Armados en un PDF de 3 páginas: `Clubes/Brasil/Novorizontino/balanco-2012.pdf` (sin capa de texto: hay que transcribirlo con OCR). La primera página (OCR) es la **DRE de enero a diciembre de 2012** del «Grêmio Novorizontino» (CNPJ 04.728.712/0001-82, Novo Horizonte-SP): receita bruta R$ 1.301.688,36 y resultado de −R$ 41.797,46; las otras dos son el resto del estado. Una sola columna, **sin comparativo 2011**.
+- **2011: no está.** El handler de 2011 devuelve 26 clubes sin Novorizontino (`idClube` 9541), y el listado viene desfasado (ver `Ferroviaria.md`), así que se miró por nombre de archivo: ningún `9541*` en 2011; las rutas a mano (`9541A.pdf`, `9541B.pdf`, `9541A.jpg`) dan 404. El club no presentó el 2011 a la federación, y el 2012 no lo trae de comparativo. Queda pedirlo al club (`gremionovorizontino.com.br` no tiene sección financiera).
+- Último chequeo: 2026-10-21.
+
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2019 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2019`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-03): ejercicio 2020 desde `Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.pdf` (sourceId `novorizontino-br-demonstracoes-financeiras-2020`).

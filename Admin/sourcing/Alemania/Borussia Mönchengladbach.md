@@ -92,3 +92,9 @@ sección de arriba).
   Bestätigungsvermerk), el depósito completo de ~15 páginas y no el del Aufsichtsrat (~3). Se guarda como
   `Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2025.pdf` y pasa a onboarding.
 - Último chequeo: 2026-10-18.
+
+## Chequeo 2026-10-21: todavía no está publicado
+
+- `unternehmensregister.de` ahora responde (200), pero su búsqueda es un formulario con sesión (ver `paises/Alemania.md`) y no se abrió. Se miró North Data, que replica las publicaciones del registro: la lista de Jahresabschlüsse de la GmbH va de 2019 a 2024 y **no trae ninguno con cierre 31/12/2025**. `bundesanzeiger.de` redirige (302), no sirve desde la terminal.
+- Sigue lo de arriba: se espera hacia enero de 2027, cuando el club use el plazo legal. Reintentar entonces, directo en el Unternehmensregister.
+- Último chequeo: 2026-10-21.

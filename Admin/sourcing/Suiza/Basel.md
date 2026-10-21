@@ -41,7 +41,13 @@ en los 5 ejercicios del agregado de liga (2021-2025), así que los años sin Ges
 tienen igual una Bilanz + Erfolgsrechuung resumida ahí (menos detallada que el Geschäftsbericht
 completo, pero real y auditada).
 
-- Último chequeo: 2026-09-17.
+## Chequeo 2026-10-21: no hay Geschäftsbericht del FC Basel desde 2022, y los dos «2022-23/2023» de la carpeta no son del club
+
+- `fcb.ch/pages/geschaftsberichte` (releído): el último es 2021 (AG y Verein); para 2022 a 2025 el propio sitio manda al helpdesk del club. La conclusión de arriba sigue en pie.
+- `geschaeftsbericht_2022-23.pdf` es del **Theater Basel** (Theatergenossenschaft, cierre al 31/07/2023) y `Jahresbericht-2023.pdf` es de **Basel Tourismus**: ninguno es del FC Basel. Ya están en `Admin/registros/documentos-descartados.txt` (error de sourcing, 2026-10-15), así que el «ejercicio 2022» que sugería el nombre del archivo no existe. No hay rótulo de año que corregir: hay que sacarlos de la carpeta del club (lo decide quien limpia; no se borraron).
+- Para 2022-2025 queda el agregado de la SFL (arriba) o pedirle los Geschäftsberichte al club.
+
+- Último chequeo: 2026-10-21.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Suiza/Basel/geschaeftsbericht-unternehmen-2021.pdf` (sourceId `basel-ch-geschaeftsbericht-unternehmen-2021`).
 

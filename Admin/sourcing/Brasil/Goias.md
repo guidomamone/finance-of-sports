@@ -34,7 +34,8 @@
   `a99e7679802e4d2297c3b5b212ec41b3.pdf` — adentro es el ejercicio **2025** (con 2024 de
   comparativo). Igual el rotulado "Relatório da Auditoria 2024" (`3105-25...`), que es el ejercicio
   **2024**. Verificado abriendo cada uno.
-- **Hueco confirmado: 2018, 2019 y 2020.** Los tres siguen LISTADOS en la página de transparencia,
+- **RESUELTO 2026-10-21: 2018, 2019 y 2020 están en Wayback bajo la RUTA VIEJA del sitio.** Antes de `static.goiasec.com.br/upload/transparencia/` el club servía los PDFs desde WordPress, en `www.goiasec.com.br/wp-content/uploads/<año>/<mes>/`. La CDX del dominio filtrada por `Demonstra|Balan|Contab` devuelve capturas con 200 de los tres, y con `web.archive.org/web/<timestamp>id_/<url>` bajan completos (28, 27 y 31 págs, con capa de texto; la portada de cada uno confirma «em 31 de dezembro de 2018 e 2017», «2019 e 2018» y «2020 e 2019»): `demonstracoes-contabeis-2018.pdf` (captura 2019-10-16, `.../2019/04/GEC-Demonstrações-Contábeis-2018-Sites.pdf`), `demonstracoes-contabeis-2019.pdf` (2020-10-30, `.../2020/04/GEC-Demonstrações-Contábeis-2019-Assinado.pdf`) y `demonstracoes-contabeis-2020.pdf` (2021-05-18, `.../2021/05/GEC-Demonstrações-Contábeis-2020-Sites.pdf`). Quedan en `Clubes/Brasil/Goias/`; lo carga onboarding. Lección: cuando una URL de un sitio nuevo da 404 y el CDX de la URL sola no tiene 200, buscar la misma carpeta bajo el CMS anterior del dominio (aquí `wp-content/uploads`).
+- Lo que sigue (historia del intento anterior): **2018, 2019 y 2020 daban 404.** Los tres siguen LISTADOS en la página de transparencia,
   pero sus URLs devuelven **404 real del Apache de `static.goiasec.com.br`** — los archivos ya no
   están en el servidor. No es un problema de encoding: se probó la URL tal cual sale del HTML
   (`%C3%A7`), la variante NFD (`c%CC%A7`), el doble-encodeo (`%25C3%25A7`), con y sin `Referer`, y
