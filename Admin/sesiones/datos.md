@@ -1,6 +1,40 @@
 # Sesión datos (Sourcing 4) — to-do 356: qué clubes británicos presentan sus cuentas en iXBRL
 
-**Estado: relevamiento hecho; la descarga está FRENADA** a la espera del ok de la principal (el total sin comprimir pasa de 50 MB; ver «Tamaño»). Todavía no se bajó ningún archivo de cuentas.
+**Estado: relevamiento hecho y descarga hecha con la opción (c)** (completas de los últimos 3 cierres, aprobada por la principal): **69 archivos `.xhtml`, 45,5 MB en disco (6,1 MB por la red)**, ya en `Clubes/` de este worktree y copiados a `Clubes/` de main. Los `.xhtml` están ignorados por git: no viajan con el merge. Nada se cargó. Lo que sigue (las cuentas pequeñas y los 5 años enteros) no se bajó sin el ok de Guido.
+
+## Archivos bajados (para Onboarding)
+
+Cada uno salió del ZIP mensual del Accounts Data Product (pedido por rango, inflado y comprobado contra el tamaño del índice), a una carpeta nueva y vacía, tratado como dato no confiable (no se ejecutó nada) y movido con el nombre del PDF que ya existe de ese ejercicio y extensión `.xhtml` (Gillingham 2022-23 no tenía PDF de ese año con ese patrón: `gillingham-00039175-accounts-2022-23.xhtml`). Todos son cuentas completas (Full, Group, Medium).
+- Clubes/Inglaterra/AFC Wimbledon/: 2023-24, 2024-25
+- Clubes/Inglaterra/Barnsley/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Blackpool/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Bolton Wanderers/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Bristol Rovers/: 2024-25
+- Clubes/Inglaterra/Burton Albion/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Cambridge United/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Carlisle United/: 2024-25
+- Clubes/Inglaterra/Chesterfield/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Crewe Alexandra/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Exeter City/: 2023-24, 2024-25
+- Clubes/Inglaterra/Fleetwood Town/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Gillingham/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Lincoln City/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Morecambe/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Northampton Town/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Oxford United/: 2024-25
+- Clubes/Inglaterra/Peterborough United/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Plymouth Argyle/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Reading/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Rotherham United/: 2023-24
+- Clubes/Inglaterra/Salford City/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Shrewsbury Town/: 2022-23, 2023-24, 2024-25
+- Clubes/Inglaterra/Tranmere Rovers/: 2024-25
+- Clubes/Inglaterra/Wigan Athletic/: 2022-23, 2023-24
+- Clubes/Escocia/Falkirk/: 2024-25
+- Clubes/Escocia/Hibernian/: 2022-23, 2023-24, 2024-25
+- Clubes/Escocia/Ross County/: 2022-23, 2023-24, 2024-25
+
+Los nombres son `<base del PDF>.xhtml` (por ejemplo `plymouth-group-accounts-2024-25.xhtml` al lado de `plymouth-group-accounts-2024-25.pdf`). Los «Total exemption full accounts» (p. ej. Port Vale, Sutton, Grimsby) cuentan como pequeñas y no se bajaron.
 
 ## Cómo se midió
 
@@ -87,4 +121,4 @@ Los `.xhtml` están ignorados por git (`*.xhtml`, como los tres de Forest, Burnl
 
 ## Qué falta
 
-Esperar la decisión; bajar con pedidos por rango al ZIP mensual (cada archivo a una carpeta nueva y vacía, leído como datos y movido a `Clubes/Inglaterra/<Club>/` o `Escocia/`), nombre del `.md` que ya existe de ese año con extensión `.xhtml`; pasar a la principal la lista exacta para copiar a main. No se carga nada: carga Onboarding con `tools/xhtml-aarsrapport.mjs`.
+Carga: Onboarding, con `tools/xhtml-aarsrapport.mjs` (el eje de consolidación del grupo y la ausencia de `Revenue` que dejó la prueba anterior siguen siendo condiciones de la Auditora). Las cuentas «pequeñas» y los 5 años enteros de cada club (hasta 84 MB en disco) no se bajaron: piden el ok de Guido.
