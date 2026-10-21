@@ -1581,6 +1581,28 @@ function checkEscala(api) {
 // asignan mal los ejercicios en silencio (P1); un club que no existe es una gestión que nunca se ve
 // (P2). Y la lista PAISES de js/finanzas-anios.js tiene que nombrar exactamente los archivos que hay:
 // un archivo que no está en la lista nunca se carga (P1).
+// (Auditora 5, to-do 356; regla de Guido: lo que ya viene estructurado no se paga con IA) PAGO DE IA SOBRE UN DOCUMENTO DETERMINISTA. Un .md que escribió tools/xhtml-aarsrapport.mjs (primera línea: «motor: xhtml-ixbrl»)
+// trae sus cifras etiquetadas. P1 si un log de API (los que lee tools/gasto.mjs) registra, desde FRENO_DESDE, una llamada de localizar o extraer sobre uno de esos documentos sin que Admin/registros/pagar-ia-xhtml.jsonl
+// tenga antes la bandera `--pagar-ia-xhtml "<motivo>"` de lote.mjs para ese documento. Cuando exista el escalón que lee las etiquetas, el «sin la bandera» pasa a ser «sin haber corrido el escalón».
+const FRENO_DESDE = '2026-10-22T00:00:00Z';
+function checkPagoSobreDeterminista() {
+  const dir = path.join(ROOT, 'Admin', 'registros');
+  const autorizados = []; // { pdf, ts }
+  try { for (const l of fs.readFileSync(path.join(dir, 'pagar-ia-xhtml.jsonl'), 'utf8').split('\n').filter(Boolean)) { const o = JSON.parse(l); if (!o.cierre) for (const d of o.docs || []) autorizados.push({ pdf: d, ts: o.ts }); } } catch (e) { /* sin bandera usada */ }
+  const esDet = {}; const det = (pdf) => (pdf in esDet ? esDet[pdf] : (esDet[pdf] = (() => { try { return /motor: xhtml-ixbrl/.test(fs.readFileSync(path.join(ROOT, pdf.replace(/\.pdf$/i, '.md')), 'utf8').slice(0, 400)); } catch (e) { return false; } })()));
+  const malos = new Set();
+  for (const log of ['claude-api.jsonl', 'gemini.jsonl', 'mistral.jsonl']) {
+    let t; try { t = fs.readFileSync(path.join(dir, 'api', log), 'utf8'); } catch (e) { continue; }
+    for (const l of t.split('\n')) {
+      if (!l.includes('"pdf"')) continue;
+      let o; try { o = JSON.parse(l); } catch (e) { continue; }
+      if (!o.pdf || !o.ts || o.ts < FRENO_DESDE || !o.costUsd || o.pdf.startsWith('/') || !det(o.pdf)) continue;
+      if (!autorizados.some((a) => a.pdf === o.pdf && a.ts <= o.ts)) malos.add(o.pdf);
+    }
+  }
+  if (malos.size) add('P1', 'pago-ia-sobre-determinista', `${malos.size} documento(s) de motor xhtml-ixbrl (determinista) con una llamada paga de IA (${log0(malos)}) sin --pagar-ia-xhtml "<motivo>" registrado antes en Admin/registros/pagar-ia-xhtml.jsonl: sus cifras ya vienen etiquetadas y no se pagan con IA`);
+}
+const log0 = (set) => [...set].slice(0, 3).map((p) => p.split('/').pop()).join(', ') + (set.size > 3 ? `, +${set.size - 3} más` : '');
 function checkGestiones(api) {
   const dir = path.join(ROOT, 'data', 'gestiones');
   if (!fs.existsSync(dir)) return;
@@ -2030,6 +2052,7 @@ function main() {
   checkRayaLarga();
   checkHigiene(api);
   checkGestiones(api);
+  checkPagoSobreDeterminista();
   checkDatosJson();
   checkReglasCategoria();
   checkDeportes();

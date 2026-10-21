@@ -29,7 +29,7 @@
 //   En la lista, "testigo <pdf>" = documento que solo sirve para verificar a otro (ver TESTIGOS abajo).
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync, statSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync, statSync, readdirSync, appendFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
@@ -145,6 +145,20 @@ let registro = leerRegistro();
 }
 // (Versión 521, to-do 140(c)) DUPLICADOS: el mismo PDF que otro (misma huella, inventario-transcripciones.mjs) no se procesa: se procesa el otro.
 for (let i = docs.length - 1; i >= 0; i--) { const e = registro.find((x) => x.pdf === docs[i]); if (e && e.estado === 'duplicado') { console.log(`  ${docs[i]}: duplicado de ${e.duplicadoDe} (misma huella): se saltea`); docs.splice(i, 1); } }
+// FRENO DE IA SOBRE UN DOCUMENTO DETERMINISTA (Auditora 5, to-do 356; regla de Guido: lo que ya viene estructurado no se paga con IA, Admin/propuestas/estructurado-sin-ia.md). Un .md que escribió
+// tools/xhtml-aarsrapport.mjs (primera línea: «motor: xhtml-ixbrl (determinista)») trae sus cifras etiquetadas; localizar y extraer con IA es plata tirada si el escalón que lee las etiquetas puede
+// cerrarlo. Mientras ese escalón no exista, --ejecutar NO paga IA sobre esos documentos salvo con --pagar-ia-xhtml "<motivo>" (la bandera es el apagado: queda en
+// Admin/registros/pagar-ia-xhtml.jsonl con el motivo y los documentos, y audit.js da P1 si gasto.mjs registra una llamada paga sin ella). El ensayo dice, por documento, que hoy iría por IA.
+const esXhtml = (d) => { const x = registro.find((y) => y.pdf === d); try { return /motor: xhtml-ixbrl/.test(readFileSync(resolve(ROOT, x?.md || d.replace(/\.pdf$/i, '.md')), 'utf8').slice(0, 400)); } catch { return false; } };
+const docsXhtml = docs.filter(esXhtml); const PAGAR_XHTML = flag('--pagar-ia-xhtml');
+if (docsXhtml.length) {
+  console.log(`\nDETERMINISTAS (motor xhtml-ixbrl): ${docsXhtml.length} de ${docs.length} documentos. Sus cifras ya vienen etiquetadas; el escalón que las lee todavía no existe, así que hoy irían por IA (localizar y extraer): determinista, ¿va por etiquetas? NO (sin escalón). El costo estimado en juego sale al final del ensayo.`);
+  if (API) {
+    if (!PAGAR_XHTML || PAGAR_XHTML.startsWith('--')) { console.error(`\nFRENADO: ${docsXhtml.length} documentos de motor xhtml-ixbrl (determinista) pagarían IA (localizar y extraer) y ya traen sus cifras etiquetadas. No se escribió nada. Si igual hay que pagarlo, con el motivo: --pagar-ia-xhtml "<motivo>". Primero: node tools/lote.mjs --lista ${LISTA} (ensayo, dice el costo).`); process.exit(1); }
+    appendFileSync(resolve(ROOT, 'Admin', 'registros', 'pagar-ia-xhtml.jsonl'), JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, motivo: PAGAR_XHTML, docs: docsXhtml }) + '\n');
+    console.log(`  --pagar-ia-xhtml: queda registrado (Admin/registros/pagar-ia-xhtml.jsonl): ${PAGAR_XHTML}`);
+  }
+}
 // silencioso: para las tools que se llaman solo por su efecto y imprimen un resumen de TODO el proyecto (inventario-transcripciones.mjs
 // imprimía ~150 líneas del registro entero en medio de la etapa 7; Versión 327). Si fallan, se muestra su salida igual.
 const node = (tool, argv, { silencioso = false } = {}) => {
@@ -198,7 +212,9 @@ if (REINTENTAR) {
 const sinDeporte = [...new Set(docs.filter((d) => !resolverDeporte({ club: clubDeRuta(d).clubId, pdf: d })).map((d) => d.split('/').slice(1, 3).join('/')))];
 for (const solo of sinDeporte) { console.log(`  alta-club (gratis) sobre ${solo}: el club no tiene deporte todavía`); node('tools/alta-club.mjs', ['--todos', '--solo', solo], { silencioso: true }); }
 if (sinDeporte.length) olvidarDeportes();
+const inicioUsd = {};
 for (const pdf of docs) {
+  inicioUsd[pdf] = usd;
   let e = registro.find((x) => x.pdf === pdf);
   // (Versión 407) el registro puede tener la ruta del .md sin el archivo en disco (tieneMd: false, "PAGADO SIN .md": Novorizontino 2022);
   // antes pasaba a localizar.mjs y el lote entero se caía con ENOENT.
@@ -434,6 +450,11 @@ avisoCorrecciones();
 const aCategorizar = docs.filter((d) => (cotizados.has(d) || String(estado[d] || '').startsWith('extraído')) && !testigos.has(d) && !(() => { const e = registro.find((x) => x.pdf === d); try { return e?.md && categoriasAlDia(resolve(ROOT, e.md)); } catch { return false; } })());
 if (!EJECUTAR) { const coma = (x) => x.toFixed(2).replace('.', ','); console.log(`\nEnsayo terminado, no se gastó nada. Correrlo cuesta ~US$ ${coma(usd + 0.03 * aCategorizar.length)} (localizar y extraer US$ ${coma(usd)} + categorización ~US$ 0,03 por documento en ${aCategorizar.length} de ${docs.length}: los demás ya están en el sitio, categorizados al día o frenan antes + páginas escaneadas ~US$ 0,003 cada una). Para correrlo: agregá --ejecutar.`); process.exit(0); }
 
+if (docsXhtml.length) { // costo en juego de los deterministas (el ensayo estima; con --ejecutar, lo gastado)
+  const fin = (i) => (i + 1 < docs.length ? inicioUsd[docs[i + 1]] : usd); const costo = docs.reduce((a, d, i) => a + (esXhtml(d) ? (fin(i) - inicioUsd[d]) : 0), 0);
+  console.log(`\nDETERMINISTAS (xhtml-ixbrl): ${docsXhtml.length} documentos, ${EJECUTAR ? 'gastado' : 'costo estimado en juego si van por IA'}: ~US$ ${costo.toFixed(2).replace('.', ',')}${EJECUTAR ? '' : ` (--ejecutar los frena salvo con --pagar-ia-xhtml "<motivo>")`}`);
+  if (EJECUTAR && PAGAR_XHTML) appendFileSync(resolve(ROOT, 'Admin', 'registros', 'pagar-ia-xhtml.jsonl'), JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, cierre: true, docs: docsXhtml.length, costoUsd: +costo.toFixed(4) }) + '\n');
+}
 console.log('\n=== 2/5 · Sumar y cruzar con lo impreso (etapa 6, gratis) ===');
 // startsWith (Versión 347): el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no
 // pasaba a verificar en la misma corrida (UC 2015, lote 06: re-transcripto y extraído, y la etapa 6 lo salteaba).
