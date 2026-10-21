@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 887 — Sección «Informes» en Ligas (2026-10-20) [332]
+
+- Bloque «Informes de esta liga» en Ligas desde `data/informes.js`: UEFA ECFIL 2025, Deloitte ARFF 2026 y el borrador del IFR, con una cifra de contexto con fuente (los de Europa arriba). No sale en ligas sin ranking. ASSET_V 1533.
+
 ## Versión 886 — Plan numerado en orden de trabajo; el 337 queda para después de A a D (2026-10-20) [337]
 
 - ORDEN de `Admin/TODO.md` numerado del 1 al 16 en el orden en que se trabaja. 337 medido (Onboarding 7) y pasado a E, antes del 313.

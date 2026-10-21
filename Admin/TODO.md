@@ -29,29 +29,28 @@ el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
 1. 241 (Pipeline 9): link propio por club y liga: el generador de páginas, el rewrite de Netlify y la imagen al compartir (la ruta en `js/principal.js` ya está)
-2. 332 (Pantallas 6): sección «Informes» en Ligas, como lista de informes (sección 4 de `Admin/sourcing/Inglaterra/informes-futbol-ingles.md`)
 
 **B. Pantallas y distribución**
-3. 247: registro público de correcciones (ok de Guido a las 4 recomendaciones del plan; después del 241)
+2. 247: registro público de correcciones (ok de Guido a las 4 recomendaciones del plan; después del 241)
 
 **C. Técnico**
-4. 336: informes como los del 332 para cada liga ya cargada, y un paso de skill para buscarlos al abrir una liga (texto para tu ok)
-5. 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): cuáles van a hook o a audit.js
-6. 248: taxonomía genérica y subcategorías por deporte
-7. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
-8. 249: API en dominio propio (el último de C; no construirla todavía)
+3. 336: sumar a `data/informes.js` los informes de cada liga ya cargada (hoy solo Inglaterra y Europa), y un paso de skill para buscarlos al abrir una liga (texto para tu ok)
+4. 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): cuáles van a hook o a audit.js
+5. 248: taxonomía genérica y subcategorías por deporte
+6. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+7. 249: API en dominio propio (el último de C; no construirla todavía)
 
 **D. Orden de la casa**
-9. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
-10. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
-11. 257: skills que faltan
-12. 237 al: anexo UEFA para abrir las ventas
-13. 258: índice partido por país o liga (cuando la skill de escala lo diga)
+8. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
+9. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
+10. 257: skills que faltan
+11. 237 al: anexo UEFA para abrir las ventas
+12. 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-14. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-15. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-16. 335: mails a clubes
+13. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+14. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+15. 335: mails a clubes
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -128,11 +127,6 @@ el número de la izquierda es el orden de trabajo.
    `Admin/Archive/`, HALLAZGOS, mediciones, dudas, registros, chats de sesiones) buscando tokens gastados en decidir o descubrir algo que
    después no llega a ningún lado: una decisión que no quedó como REGLA ni en un registro, un hallazgo que nadie vuelve a leer, una
    medición que no cambió nada. Proponer, para cada tipo, dónde tiene que quedar para que la próxima sesión no lo pague de nuevo.
-332. INFORMES SOBRE EL FÚTBOL INGLÉS (pedido de Guido, 2026-10-20). Buscar «The State of the Game» y los informes parecidos que
-   resumen las finanzas de los clubes ingleses (por ejemplo, la Annual Review of Football Finance de Deloitte, el informe de clubes de la
-   UEFA, los de la Premier League, la EFL o la FA). Para cada uno: quién lo publica, si es público, qué años y clubes cubre, y para qué
-   sirve: contrastar lo ya cargado (totales por club y por liga), completar años o clubes que faltan, o dar contexto en Ligas. Solo
-   sourcing y una nota en `Admin/sourcing/Inglaterra/`; no se transcribe ni se carga nada sin decisión de Guido.
 335. MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
    un mail sin que Guido lo pida en sus palabras.
    (a) Proceso: Etapa 1 lista y probada de punta a punta (Resend, `outreach.financeofsports.com`, cola en `Admin/outreach/`, envío desde
@@ -143,7 +137,7 @@ el número de la izquierda es el orden de trabajo.
    PDF"), casi todos sin canal público; entre ellos Go Ahead Eagles 2025. Roma 2022 queda así por decisión de Guido (no hay informe del
    consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025 cambian de informe (los dos están bajados).
    (d) Las preguntas a cada club: `Admin/dudas-por-club.md`.
-336. INFORMES AGREGADOS POR LIGA (pedido de Guido, 2026-10-20). Como el 332 para cada liga ya cargada: buscar los informes que resumen las
+336. INFORMES AGREGADOS POR LIGA (pedido de Guido, 2026-10-20). Como los de Inglaterra (sección «Informes» de Ligas, `data/informes.js`) para cada liga ya cargada: buscar los informes que resumen las
    finanzas de sus clubes (de la liga, la federación, el regulador, la UEFA, consultoras), de qué tratan y para qué sirven. Y sumar a la
    skill que corresponda un paso para buscarlos cada vez que se abre una liga nueva (texto para el ok de Guido).
 337. ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
