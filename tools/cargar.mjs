@@ -875,9 +875,17 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       const aj = ceroRealDelClub(pdf, c.categoria);
       if (aj && !conMontoEnElClub(cats)) { ceros.splice(ceros.indexOf(c), 1); P.avisos.push(`"${c.categoria}" en 0: real, por el ajuste cero-real del club (${aj.pdf.split('/').pop()}, ${aj.fecha}) y ningún año cargado la tiene con monto`); }
     }
-    // ESCALÓN 1 DEL AVISO (decisión de Guido, 2026-10-13: "siempre me hacés la misma pregunta"): el ejercicio 2021 jugó a puertas cerradas
-    // por el Covid, así que "Estadio" en 0 es real y no pide reintento. Casos: AEK 2021, Asteras 2021 (reintento pagado para nada).
-    for (const c of [...ceros]) if (String(year) === '2021' && c.categoria === 'Estadio') { ceros.splice(ceros.indexOf(c), 1); P.avisos.push('"Estadio" en 0 en 2021: real (partidos a puertas cerradas por el Covid)'); }
+    // ESCALÓN 1 DEL AVISO: un ejercicio que cierra dentro de la ventana COVID (period_end del 2020-03-31 al 2021-12-31, regla de
+    // Admin/CONVENCIONES-DATOS.md, votación 3 a 0) jugó con partidos suspendidos, a puertas cerradas o con aforo limitado: la taquilla o las
+    // entradas en 0 (la fila de ceros cuyas categorías son matchday o abonos; en fútbol, "Estadio") son reales y no piden reintento.
+    // Sin cierre conocido queda la regla anterior (el año 2021). Se apaga por documento con el ajuste `covid-omitir`.
+    // Casos: AEK 2021, Asteras 2021 (reintento pagado para nada).
+    const cierreCovid = alta.ejercicio.cierre || null;
+    const enVentanaCovid = cierreCovid ? (cierreCovid >= '2020-03-31' && cierreCovid <= '2021-12-31') : String(year) === '2021';
+    if (enVentanaCovid && !ajusteDe(pdf, 'covid-omitir')) {
+      const CATS_TAQUILLA = ['matchday_competition', 'season_tickets'];
+      for (const c of [...ceros]) if ((CATS_CERO[c.categoria.toLowerCase()] || []).some((x) => CATS_TAQUILLA.includes(x))) { ceros.splice(ceros.indexOf(c), 1); P.avisos.push(`"${c.categoria}" en 0 con cierre ${cierreCovid || `en ${year}`}, dentro de la ventana COVID: real (partidos suspendidos, a puertas cerradas o con aforo limitado)`); }
+    }
     if (ceros.length && !yaReintentado) { P.reintentar = ceros; frena('reintento', `categorías en 0 que deberían tener número: ${ceros.map((c) => c.categoria).join(', ')}. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar`); }
     else if (ceros.length) P.avisos.push(`categorías en 0 aun después del reintento (se carga así): ${ceros.map((c) => c.categoria).join(', ')}`);
   }
