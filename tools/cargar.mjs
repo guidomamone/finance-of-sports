@@ -129,7 +129,7 @@ const { padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca } = await im
 // generales" y no "admin_general_expense".
 const NOMBRE_CAT = (() => { try { const t = readFileSync(resolve(import.meta.dirname, '..', 'data', 'category-map.js'), 'utf8'); const o = {}; for (const b of t.match(/_CATEGORY_LABELS = \{[\s\S]*?\n\};/g) || []) for (const m of b.matchAll(/^\s*(\w+): '([^']+)'/gm)) o[m[1]] = m[2]; return o; } catch { return {}; } })();
 const { periodoDe } = await import('./periodo.mjs');
-const { categoriasDeDeporte } = await import('./deporte-club.mjs'); // (to-do 339) las categorías de un deporte
+const { categoriasDeDeporte, cerosDeDeporte } = await import('./deporte-club.mjs'); // (to-do 339) las categorías de un deporte
 const { normalizar, claveFamilia, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } = await import('./vocabulario.mjs');
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -398,6 +398,9 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const TX = club.sport ? categoriasDeDeporte(club.sport) : null;
   if (!TX) { return corta('deporte', club.sport ? `el deporte «${club.sport}» de ${clubId} no tiene taxonomía en data/category-map.js (SPORT_TAXONOMIES)` : `${clubId} no declara deporte (sport en data/clubs.js)`); }
   const ladoDeCat = (c) => (TX.revenue.has(c) ? 'revenue' : TX.expense.has(c) ? 'expense' : null);
+  // (to-do 339) lo que no debería dar 0, y las preguntas de perfil, son los del deporte del club (CEROS_POR_DEPORTE: una sola tabla; [] = ninguno, a propósito)
+  const CEROS = cerosDeDeporte(club.sport);
+  if (!CEROS) { return corta('deporte', `el deporte «${club.sport}» no tiene clave en CEROS_POR_DEPORTE (tools/deporte-club.mjs): una tabla vacía ([]) o con lo que no puede dar 0`); }
   const alta = analizar(pdf, sitio);
   if (alta.error) { return corta('alta', alta.error); }
   const campo = (n) => alta.ejercicio.campos.find((c) => c.campo === n) || {};
@@ -793,7 +796,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // de sueldos en 0, y los sueldos (nota 21, "Sueldos 705.432") quedaron adentro de "Total Gastos de Administración".
     const lumpIng = conCat.some((f) => f.destino === 'revenue' && /^lump_/.test(f.cat)); const lumpGas = conCat.some((f) => f.destino === 'expense' && /^lump_/.test(f.cat));
     {
-      for (const [nombre, cats, lado] of [['Salarios del plantel', ['wages_squad'], 'gasto'], ['Televisión', ['broadcasting'], 'ingreso'], ['Estadio', ['matchday_competition', 'stadium_other', 'season_tickets'], 'ingreso']]) if (!(lado === 'gasto' ? lumpGas : (lumpIng || sinIngresosNBB)) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* (to-do 237 g) un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // (to-do 163) el lado lo usa verificar.mjs
+      for (const { nombre, cats, lado } of CEROS.filter((x) => x.lado)) if (!(lado === 'gasto' ? lumpGas : (lumpIng || sinIngresosNBB)) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* (to-do 237 g) un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // (to-do 163) el lado lo usa verificar.mjs
       // (to-do 298 p1, decisión de Guido 2026-10-19: "que cada 5 años se chequee, y ahí se puede ir para atrás y corregir") EL PERFIL POR AÑO:
       // vale el chequeo más cercano dentro de la ventana (tools/perfil-clubes.mjs, perfilVigente); la respuesta de la cola puede venir de
       // CUALQUIER documento del club dentro de la ventana (antes, solo la de este documento: 391 casos para 181 preguntas). Un chequeo nuevo
@@ -820,10 +823,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         if (!(ya && ya.anio === r.anio && ya.valor === r.v)) registrarPerfil(campo, nombre, r.v, `respuesta ${r.caso.id} en la cola (${r.resp.nota || 'sin nota'})`, 'guido-cola', r.anio);
         return r.v;
       };
-      for (const [campo, nombre, catsIng, catsGas, pregunta] of [
-        ['socios', 'Cuotas sociales', ['member_dues'], [], `¿${club.name || clubId} tiene socios que le pagan una cuota (cuotas sociales, mensalidades, sócio-torcedor, membresía)?`],
-        ['otrosDeportes', 'Otras secciones deportivas', ['other_sports', 'youth_football', 'womens_football'], ['youth_other_sports_expense'], `¿${club.name || clubId} tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?`],
-      ]) {
+      for (const [campo, nombre, catsIng, catsGas, pregunta] of CEROS.filter((x) => x.perfil).map((x) => [x.perfil.campo, x.nombre, x.perfil.catsIng, x.perfil.catsGas, x.perfil.pregunta(club.name || clubId)])) {
         if (lumpIng || suma(catsIng) || (catsGas.length && suma(catsGas))) continue;
         // (Versión 511) ajuste `incluye`: la categoría está dentro de otra línea (el documento las junta): no es un 0 a revisar ni una pregunta.
         if (catsIng.every((c) => incluidoEn[c]) && catsGas.every((c) => incluidoEn[c])) { P.avisos.push(`"${nombre}" da 0 porque está incluida en otra línea (ajuste manual \`incluye\`)`); continue; }
@@ -866,7 +866,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // año, con UNA compuerta: ningún año cargado del club tiene esa categoría con monto (si alguno la tuvo, el 0 puede ser un desglose perdido
     // y sigue pidiendo reintento). Caso: Tallinna Kalev, "Televisión" en 0 con 7 ajustes, uno por año; 94 ajustes `cero-real` para 36
     // combinaciones de club y categoría.
-    const CATS_CERO = { 'salarios del plantel': ['wages_squad'], 'televisión': ['broadcasting'], 'estadio': ['matchday_competition', 'stadium_other', 'season_tickets'], 'cuotas sociales': ['member_dues'], 'otras secciones deportivas': ['other_sports', 'youth_football', 'womens_football', 'youth_other_sports_expense'] };
+    const CATS_CERO = Object.fromEntries(CEROS.map((x) => [x.nombre.toLowerCase(), x.cats]));
     const conMontoEnElClub = (cats) => ['revenueLinesByYear', 'expenseLinesByYear'].some((k) => Object.values(cd[k] || {}).some((ls) => (ls || []).some((l) => cats.includes(l.normalizedCategory) && Math.abs(l.amountNative || 0) > 0)));
     for (const c of [...ceros]) {
       const cats = CATS_CERO[c.categoria.toLowerCase()]; if (!cats) continue;

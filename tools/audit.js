@@ -1712,6 +1712,15 @@ function checkReglasCategoria() {
   else if (lineas.filter((l) => l.startsWith('falta registrar')).length) add('P2', 'regla-categoria-sin-registrar', `${lineas.filter((l) => l.startsWith('falta registrar')).length} ejemplo(s) de reglas de categoría sin registrar: node tools/reglas-categoria.mjs --escribir`);
 }
 
+// (to-do 339) Cada deporte activo (o con taxonomía) tiene su tabla de «ceros que no pueden ser cero» en tools/deporte-club.mjs (CEROS_POR_DEPORTE; [] si la vacía es a propósito) y su taxonomía.
+function checkDeportes() {
+  let out = ''; let fallo = false;
+  try { out = execSync('node tools/deporte-club.mjs', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); }
+  catch (e) { out = String(e.stdout || e.stderr || ''); fallo = true; }
+  const lineas = out.split('\n').map((l) => l.trim()).filter(Boolean);
+  if (fallo) add('P2', 'deporte-sin-tabla', lineas.filter((l) => l.startsWith('ERROR')).slice(0, 3).join(' | ') || lineas.slice(-1)[0] || 'tools/deporte-club.mjs falló');
+}
+
 function main() {
   let api;
   try { api = loadEngine(); }
@@ -1747,6 +1756,7 @@ function main() {
   checkGestiones(api);
   checkDatosJson();
   checkReglasCategoria();
+  checkDeportes();
 
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
   // (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.

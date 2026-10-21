@@ -67,3 +67,45 @@ export function afinidadDeporte(clubA, clubB) {
   const a = deporteDeClub(clubA); const b = deporteDeClub(clubB);
   return a && b && a === b ? 1 : 0;
 }
+
+// ---------------------------------------------------------------------------------------------------------
+// CEROS POR DEPORTE (to-do 339). UNA tabla de lo que un año no debería tener en 0, por deporte. La leen cargar.mjs (aviso de «categorías en 0» y reintento, preguntas de
+// perfil, ajustes cero-real) y verificar.mjs (de qué lado es cada categoría en 0). Antes eran tres listas sueltas (CATS_CERO, el chequeo de tres categorías y LADO_CERO).
+//   nombre   como lo nombra el aviso y los ajustes `cero-real`.
+//   cats     las subcategorías del deporte que cuentan (si alguna tiene monto, el 0 no es tal).
+//   lado     'ingreso' | 'gasto': se revisa SIEMPRE que ese lado no esté sin desglosar (las que no pueden ser 0: el 0 es casi seguro un desglose perdido).
+//   perfil   las que dependen de qué es el club: { campo, catsIng, catsGas, pregunta(nombreDelClub) }; si el perfil del club (tools/perfil-clubes.mjs) no dice que lo tiene,
+//            el 0 es real y la pregunta va a la cola.
+// Una clave por cada deporte con taxonomía: [] es «vacía a propósito» (sin medición de qué da 0 en ese deporte: no se avisa, no se reintenta y no se pregunta el perfil);
+// un deporte sin clave es un hallazgo (`node tools/deporte-club.mjs`, que corre audit.js). El fútbol se midió sobre los años cargados (salarios del plantel nunca da 0,
+// televisión 2 %, estadio 1 %; cuotas sociales 46 % y otras secciones 63-68 % de ceros reales).
+export const CEROS_POR_DEPORTE = {
+  futbol: [
+    { nombre: 'Salarios del plantel', cats: ['wages_squad'], lado: 'gasto' },
+    { nombre: 'Televisión', cats: ['broadcasting'], lado: 'ingreso' },
+    { nombre: 'Estadio', cats: ['matchday_competition', 'stadium_other', 'season_tickets'], lado: 'ingreso' },
+    { nombre: 'Cuotas sociales', perfil: { campo: 'socios', catsIng: ['member_dues'], catsGas: [], pregunta: (club) => `¿${club} tiene socios que le pagan una cuota (cuotas sociales, mensalidades, sócio-torcedor, membresía)?` } },
+    { nombre: 'Otras secciones deportivas', perfil: { campo: 'otrosDeportes', catsIng: ['other_sports', 'youth_football', 'womens_football'], catsGas: ['youth_other_sports_expense'], pregunta: (club) => `¿${club} tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?` } },
+  ],
+  rugby: [],
+};
+// La tabla del deporte, con `cats` completo en cada entrada; null si el deporte no tiene clave.
+export function cerosDeDeporte(deporte) {
+  const t = CEROS_POR_DEPORTE[deporte]; if (!t) return null;
+  return t.map((e) => ({ ...e, cats: e.cats || [...e.perfil.catsIng, ...e.perfil.catsGas] }));
+}
+
+// CLI: el chequeo que corre audit.js. Código 1 y líneas «ERROR …» si un deporte activo (o con taxonomía) no tiene taxonomía o no tiene clave en CEROS_POR_DEPORTE.
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const errores = [];
+  for (const d of new Set([...deportesActivos(), ...deportesConTaxonomia(), ...Object.keys(CEROS_POR_DEPORTE)])) {
+    const activo = deportesActivos().includes(d);
+    if (activo && !categoriasDeDeporte(d)) errores.push(`el deporte activo «${d}» no tiene taxonomía en SPORT_TAXONOMIES (data/category-map.js)`);
+    if ((activo || categoriasDeDeporte(d)) && !CEROS_POR_DEPORTE[d]) errores.push(`el deporte «${d}» no tiene clave en CEROS_POR_DEPORTE (tools/deporte-club.mjs): [] si la vacía es a propósito`);
+    const t = categoriasDeDeporte(d);
+    for (const e of cerosDeDeporte(d) || []) for (const c of e.cats) if (t && !t.todas.has(c)) errores.push(`CEROS_POR_DEPORTE.${d}: «${e.nombre}» nombra «${c}», que no es una subcategoría de ${d}`);
+  }
+  console.log(`deportes con taxonomía: ${deportesConTaxonomia().join(', ')}; activos: ${deportesActivos().join(', ')}; tablas de ceros: ${Object.keys(CEROS_POR_DEPORTE).join(', ')}`);
+  for (const m of errores) console.log(`  ERROR ${m}`);
+  process.exit(errores.length ? 1 : 0);
+}
