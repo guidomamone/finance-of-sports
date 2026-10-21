@@ -20,7 +20,8 @@ que dice `ESTADO.md` era verdad ese día.
 ## Versión 920 — El sponsor sin fuente pide evidencia de búsqueda; chequeo de años sin rastro (2026-10-21) [343 · 317 · 257]
 - 343: club-sourcing 0.5 (cómo buscar el sponsor y dejar el registro); la compuerta de `estadio-sponsor.mjs` solo acepta un sponsor sin fuente con un registro de búsqueda válido (`tools/sponsor-busqueda.js`) o en `tools/sponsor-legacy.json` (26 años de 8 clubes, congelados); `audit.js` P1 `sponsor-sin-busqueda` y `sponsor-legacy-fuera-de-lista`, P3 `sponsor-sin-registro`. Medido: 0 años frenados nuevos. Auditora 4 aprobó el código.
 - 317: `audit.js` P3 `ejercicio-sin-rastro`: años no cargados ni anotados en `data/faltantes/` (51 clubes).
-- Skill nueva `contrato-de-datos-finance-of-sports` (ok de Guido).
+- Skills nuevas `contrato-de-datos-finance-of-sports` y `principal-finance-of-sports` (el rol de la sesión principal, que vivía en su memoria), con el ok de Guido. club-or-year-onboarding: el sponsor sin fuente pide el registro de club-sourcing 0.5.
+- 317: `ejercicio-sin-rastro` calcula el máximo del país sin los presupuestos (de 51 clubes a 38).
 
 ## Versión 919 — Skill de deploy; Ligas aprobada (2026-10-21) [257 · 344 · 237 · 317 · 319]
 - Skills nuevas `deploy-y-release-finance-of-sports` (antes del push y después) `producto-y-pantalla-finance-of-sports` (mockup, ok, construir, verificar servido, como archivo y en celular) y `contenido-y-difusion-finance-of-sports` (una publicación con dato verificado y fuente), con el ok de Guido; CLAUDE.md las nombra.

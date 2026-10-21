@@ -31,7 +31,6 @@ el número de la izquierda es el orden de trabajo.
 2. 344 (Pantallas 6): implementar Ligas como el mockup aprobado, sacar los conteos del encabezado de liga y de Inicio, separar Escocia y diseñar Gales
 3. 257 (Orden 1): skills que faltan; los chequeos aprobados, qué de CONVENCIONES pasa a skill, y cada texto de skill con tu ok
 4. 237 al (Pipeline 12): anexo UEFA para abrir las ventas
-5. 317 a 319 (Pruebas 1): Supabase, Open Notebook e I have ADHD
 
 **C. Técnico**
 6. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
@@ -67,8 +66,9 @@ el número de la izquierda es el orden de trabajo.
    (`Admin/fuentes-externas.md`, "Consecuencias").
 257. SKILLS QUE FALTAN Y DÓNDE SE PIERDE LO QUE SE DECIDE (une el 330; pedido de Guido 2026-10-16 y 2026-10-20). Propuestas de Orden 1, sin
    aplicar: `Admin/propuestas/257-skills.md` (destino de cada memoria, texto de cinco skills nuevas, cambios a las existentes, candado de
-   skills) y `Admin/propuestas/330-donde-se-pierde.md` (seis tipos de pérdida con archivo y línea). Falta: el ok de Guido a cada texto de
-   skill; la Auditora, para los chequeos; y lo que encontró sin dueño (que `perfil-en-cola` de `cargar.mjs` nunca frene; la duda de Deportes
+   skills) y `Admin/propuestas/330-donde-se-pierde.md` (seis tipos de pérdida con archivo y línea). Aplicadas con el ok de Guido las cinco skills nuevas
+   (deploy, producto y pantalla, contenido, contrato de datos, principal). Falta: los cambios a skills existentes (parte 3) con su ok;
+   llevar cada memoria a su lugar (parte 1); qué de CONVENCIONES pasa a skill (parte 7); la Auditora, para los chequeos; y lo que encontró sin dueño (que `perfil-en-cola` de `cargar.mjs` nunca frene; la duda de Deportes
    Tolima, `dudas-por-club.md:201`, que frena su carga; HALLAZGOS de los descartes 314 y 298). Lo pedido originalmente: Producto/pantalla (mockup, ok, implementación, chequeo en celular; hoy mezclado en PANTALLA.md); contenido y
    difusión (un año cargado → hilo o post con el dato verificado y el link a la fuente); contrato de datos/API (esquema público y qué lo
    rompe); deploy/release (qué chequear antes de pushear y cómo verificar producción).
