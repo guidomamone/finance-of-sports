@@ -82,6 +82,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   Orenburg). Escalón 2 (`tools/bfo-rusia-notas.mjs`): abre ingresos, otros ingresos/gastos y costos por elemento con las tablas de las
   notas explicativas cuando suman el código del formulario. Qué clubes y años hay: `Admin/ESTADO-clubes.md`. Cómo corre:
   `Admin/PIPELINE.md`, "Rusia (GIR BO)".
+- Dinamarca desde 2025 publica en XHTML (iXBRL): `tools/xhtml-aarsrapport.mjs` lo deja como `.md` fiel con un PDF de ancla y no escribe si
+  ubica menos del 98 % de las líneas (un informe diseñado como el consolidado de FC København queda afuera).
 - Reino Unido (Companies House, casi todo escaneado) se transcribe con subagentes de Claude: Tesseract más revisión de las páginas
   clave contra la imagen, con una cola en `Admin/transcripcion-subagentes/` (README.md). Lo que falta, en `Admin/TODO.md` (261).
 - `tools/pipeline.mjs` hace SOLO la etapa 2 (transcribir con Mistral y validar, más el control "sin tablas"). La lista de rubros la arma

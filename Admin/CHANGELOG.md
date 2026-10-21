@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 928 — Lector del XHTML danés, lote 130 y dos corridas más de P2 y P3 (2026-10-21) [345 · 347 · sonderjyske-dk]
+- `tools/xhtml-aarsrapport.mjs`: un informe danés en XHTML (iXBRL) pasa a `.md` fiel con un PDF de ancla, con dos compuertas (no escribe con menos de 98 % de líneas ubicadas) y el motor «xhtml-ixbrl (determinista)» (Auditora 4). Convierte 7 de 8; no el consolidado de FC København 2025.
+- Lote 130 (Pipeline 12): SønderjyskE 2024 cargado (alta); el resto sigue con Onboarding 8. US$ 3,29.
+- `signo-invertido` 30 a 17 (líneas netas y deducciones impresas no son un signo invertido); `outlier-liga` medido (la mediana del país mezcla divisiones; se pasa a P3).
+- Auditora 4 y Pipeline 12 archivadas (ventana llena, pedido de Guido); la Auditora es Auditora 5.
+
 ## Versión 927 — Segunda corrida de P2 y P3; enlaces rotos; tres herramientas más (2026-10-21) [347 · 349 · 350]
 - `catchall-dominante` pasa a P3 y no cuenta un catch-all de una o dos líneas (la Auditora: describe cuánto detalla el documento, no un defecto). La auditoría queda en P2 115 y P3 206 (antes 371 y 1.002).
 - `worktree.mjs preparar` saca de `Clubes/` del worktree los enlaces rotos (nunca un archivo real).
