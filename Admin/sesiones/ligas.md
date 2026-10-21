@@ -201,3 +201,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: freno 5 de Bath, `alta-club` club-leagues y `worktree.mjs`, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Tres líneas más en `Admin/registros/auditoria-proceso.jsonl`: `checkCategorias` de `audit.js` por deporte y el año en la línea existente de `club-leagues` (`alta-club.mjs`), APROBADOS; `worktree.mjs` (enlace a `tools/node_modules`), APROBADO CON UN CAMBIO.
+
+### Qué queda
+
+- `.gitignore`: cambiar `tools/node_modules/` por `tools/node_modules` (sin barra final), en el mismo commit que el enlace de `worktree.mjs`. Con la barra git no ignora un enlace simbólico y un `git add -A` lo agregaría.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
