@@ -1,0 +1,155 @@
+#!/usr/bin/env node
+// ============================================================================
+// tools/xhtml-aarsrapport.mjs — LOS INFORMES DANESES EN XHTML (ESEF / iXBRL) AL FORMATO DEL PIPELINE: .md fiel + PDF de ancla (to-do 345, diseño aprobado por la Auditora 4).
+// Gratis, determinista, sin IA ni OCR.
+//
+// POR QUÉ. Clubes/Dinamarca/ trae informes `aarsrapport-AAAA-MM-DD.xhtml` (el formato oficial que presentan los clubes). El registro (transcripciones-estado.jsonl), lote.mjs y cargar.mjs
+// están hechos sobre PDFs: una línea por PDF con su .md. Sin esta tool, un XHTML no entra a ninguna etapa.
+//
+// QUÉ HACE (por cada .xhtml):
+//   1  El .md fiel (`aarsrapport-AAAA-MM-DD.md`): el texto visible del documento, títulos con #, tablas `| celda |`, las cifras TAL CUAL se imprimen (formato danés, signo, «tkr.»),
+//      sin soft hyphens (U+00AD, el XHTML los trae entre sílabas) y sin lo oculto (ix:header, estilos, elementos con display:none). Los hechos iXBRL (ix:nonFraction) son
+//      transparentes: se imprime su texto visible. No toca escala ni signos: eso lo lee localizar/extraer del propio texto.
+//   2  El PDF de ancla (`aarsrapport-AAAA-MM-DD.pdf`, al lado): el MISMO XHTML impreso con Chrome sin ventana. Sirve para que el registro, lote.mjs, estado.mjs, la validación
+//      numeros-vs-texto-pdf y «abrí el PDF en la página N del visor» funcionen sin cambiar ninguna tool. Es la impresión de Chrome del XHTML oficial, NO el documento oficial.
+//   3  Las marcas `--- pág. N ---` (las usan localizar, caja-deuda y las preguntas a la cola): cada línea del .md se ubica en la página del PDF cuyo texto contiene el comienzo
+//      normalizado de la línea (la primera entre la actual y las 3 siguientes; monótono).
+// COMPUERTAS (las mismas para todos los documentos; si una falla, NO se escribe nada y se dice por qué):
+//   (a) cada hecho iXBRL VISIBLE tiene su número impreso en el .md (multiconjunto de los números). Los hechos dentro de un elemento display:none (una fila de «Egenkapital»
+//       repetida y oculta, por ejemplo) no se ven en el documento: se cuentan y se listan aparte, sin frenar. Faltantes visibles: 0.
+//   (b) al menos el 98 % de las líneas con firma quedan ubicadas en una página del PDF. Menos: no se escribe (localizar, caja-deuda y la validación por páginas dependen de
+//       las marcas y fallarían más adelante sin decir por qué); se dice cuántas y cuáles líneas quedaron sin página.
+// HONESTIDAD DEL REGISTRO. El PDF sale del mismo XHTML: numeros-vs-texto-pdf es un control del CONVERSOR, no una segunda lectura independiente. Por eso el motor queda como
+// «xhtml-ixbrl (determinista)» (Admin/registros/api/xhtml-ixbrl.jsonl, que lee inventario-transcripciones.mjs) y en la primera línea del .md. No decide categorías ni lados:
+// eso sigue siendo localizar/extraer/verificar (la compuerta aritmética es la de siempre: suma de renglones contra el resultado impreso).
+// Seguimiento posible: los hechos iXBRL (valor, escala y signo estructurados) como total oficial independiente para el tie-out.
+//
+// USO:
+//   node tools/xhtml-aarsrapport.mjs "<xhtml>" [...]          ENSAYO: convierte en memoria, imprime el PDF en la carpeta temporal y dice qué pasa con cada compuerta
+//   node tools/xhtml-aarsrapport.mjs "<xhtml>" --escribir     escribe el .md y el .pdf (no pisa los que ya existen; --rehacer sí) y anota el motor
+//   node tools/xhtml-aarsrapport.mjs "Clubes/Dinamarca/<Club>" [...]   todos los .xhtml de esa carpeta
+// ============================================================================
+import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, appendFileSync, statSync } from 'node:fs';
+import { resolve, join, dirname, basename } from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { tmpdir } from 'node:os';
+import { execFileSync } from 'node:child_process';
+
+const ROOT = resolve(import.meta.dirname, '..');
+const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const MOTOR = 'xhtml-ixbrl (determinista)';
+const MIN_UBICADAS = 0.98;
+const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', ndash: '–', mdash: '—', oslash: 'ø', aring: 'å', aelig: 'æ', Oslash: 'Ø', Aring: 'Å', AElig: 'Æ', euro: '€', copy: '©' };
+const dec = (t) => t.replace(/&#x([0-9a-f]+);/gi, (m, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&#(\d+);/g, (m, d) => String.fromCodePoint(+d)).replace(/&([a-zA-Z]+);/g, (m, n) => ENT[n] ?? m);
+const limpiar = (t) => t.replace(/­/g, '');
+
+// XHTML -> { lineas: [texto], hechos: [{ txt, nombre, oculto }] }. Una línea del .md por elemento de bloque o fila de tabla. Los div.page del XHTML se ignoran (las páginas son las del PDF).
+export function xhtmlALineas(src) {
+  const i0 = src.search(/<body[\s>]/i); const body = (i0 >= 0 ? src.slice(i0) : src).replace(/<!--[\s\S]*?-->/g, '');
+  const toks = body.match(/<[^>]+>|[^<]+/g) || [];
+  const lineas = []; const hechos = []; let linea = ''; let tabla = null, fila = null, celda = null, oculto = 0; const pila = []; let hecho = null;
+  const volcar = () => { const t = linea.replace(/\s+/g, ' ').trim(); if (t) lineas.push(t); linea = ''; };
+  const celdaFin = () => { if (celda != null) { fila.push(celda.replace(/\s+/g, ' ').replace(/\|/g, '/').trim()); celda = null; } };
+  for (const t of toks) {
+    if (t[0] !== '<') { if (oculto) { if (hecho) hecho.txt += limpiar(dec(t)); continue; } const x = limpiar(dec(t)); if (hecho) hecho.txt += x; const previo = celda != null ? celda : linea; const pega = /[\p{L}:]$/u.test(previo) && /^\d/.test(x) ? ' ' : ''; /* dos spans seguidos («t.kr.» «2025») no se pegan */ if (celda != null) celda += pega + x; else linea += pega + x; continue; }
+    const m = t.match(/^<\s*(\/?)\s*([a-zA-Z0-9:_-]+)([^>]*?)(\/?)>$/); if (!m) continue;
+    const [, cierra, nombre, attrs, auto] = m; const n = nombre.toLowerCase();
+    if (!cierra) {
+      const estilo = (attrs.match(/style="([^"]*)"/) || [])[1] || '';
+      const oc = /display:\s*none/.test(estilo) || n === 'ix:header' || n === 'style' || n === 'script' || n === 'head';
+      if (n === 'ix:nonfraction' && !auto) hecho = { txt: '', nombre: (attrs.match(/\bname="([^"]+)"/) || [])[1] || '', oculto: oculto > 0 || oc };
+      if (!auto) pila.push({ n, oc, hecho: n === 'ix:nonfraction' ? hecho : null });
+      if (oc && !auto) oculto++;
+      if (oculto) continue;
+      if (/^h[1-6]$/.test(n)) { volcar(); linea = '#'.repeat(+n[1]) + ' '; }
+      else if (['p', 'div', 'li', 'br', 'section'].includes(n)) { if (celda != null) celda += ' '; else volcar(); }
+      else if (n === 'table') { volcar(); tabla = []; }
+      else if (n === 'tr') { fila = []; }
+      else if (n === 'td' || n === 'th') { celda = ''; }
+    } else {
+      const top = pila.pop(); if (top && top.oc) oculto--;
+      if (top && top.hecho) { const h = top.hecho; h.txt = h.txt.replace(/\s+/g, ' ').trim(); hechos.push(h); hecho = null; }
+      if (oculto) continue;
+      if (n === 'td' || n === 'th') celdaFin();
+      else if (n === 'tr') { if (fila && fila.some((c) => c)) tabla.push(fila); fila = null; }
+      else if (n === 'table') { if (tabla && tabla.length) { const w = Math.max(...tabla.map((r) => r.length)); tabla.forEach((r, i) => { while (r.length < w) r.push(''); lineas.push('| ' + r.join(' | ') + ' |'); if (i === 0) lineas.push('|' + ' --- |'.repeat(w)); }); } tabla = null; }
+      else if (/^h[1-6]$/.test(n) || ['p', 'div', 'li'].includes(n)) { if (celda == null) volcar(); }
+    }
+  }
+  volcar();
+  return { lineas, hechos };
+}
+
+// compuerta (a): hechos VISIBLES cuyo número no está impreso en el .md (multiconjunto)
+export function hechosFaltantes(lineas, hechos) {
+  const bolsa = new Map(); for (const n of lineas.join('\n').match(/-?\d[\d.,]*/g) || []) { const k = n.replace(/^-/, ''); bolsa.set(k, (bolsa.get(k) || 0) + 1); }
+  const faltan = [];
+  for (const h of hechos.filter((x) => !x.oculto)) { const k = h.txt.replace(/^[-–(]|\)$/g, ''); if (!k || !/\d/.test(k)) continue; const c = bolsa.get(k); if (c) bolsa.set(k, c - 1); else faltan.push(h); }
+  return { faltan, ocultos: hechos.filter((x) => x.oculto) };
+}
+
+const norm = (s) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+// el PDF que imprime Chrome del XHTML; devuelve las páginas (texto normalizado) o lanza si Chrome no está
+export function imprimirPdf(xhtmlAbs, pdfAbs) {
+  if (!existsSync(CHROME)) throw new Error(`no encuentro Chrome en ${CHROME}: sin él no hay PDF de ancla ni marcas de página; la tool no escribe el .md solo`);
+  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--no-pdf-header-footer', `--print-to-pdf=${pdfAbs}`, pathToFileURL(xhtmlAbs).href], { stdio: 'ignore', timeout: 300000 });
+  const n = Number(execFileSync('pdfinfo', [pdfAbs]).toString().match(/Pages:\s+(\d+)/)[1]);
+  const paginas = []; for (let p = 1; p <= n; p++) paginas.push(norm(execFileSync('pdftotext', ['-f', String(p), '-l', String(p), pdfAbs, '-'], { maxBuffer: 1e8 }).toString()));
+  return paginas;
+}
+// compuerta (b): la página de cada línea (monótona; la primera entre la actual y las 3 siguientes que contiene la firma). -> { pagina: [n|0], con, ubicadas, sinPagina: [linea] }
+export function alinear(lineas, paginas) {
+  const pagina = []; let pag = 1, con = 0, ubicadas = 0; const sin = [];
+  for (const l of lineas) {
+    const celdas = l.startsWith('|') ? l.split('|').map((c) => c.trim()).filter((c) => c && !/^-+$/.test(c)) : [l]; const firma = norm(celdas.find((c) => norm(c).length >= 6) || '');
+    if (firma.length < 6 || (firma.match(/\p{L}/gu) || []).length < 4) { pagina.push(pag); continue; } // una cabecera «2021 tkr.» no dice nada: el PDF separa año y unidad
+    con++; const clave = firma.slice(0, 24); let q = -1;
+    for (let p = pag; p <= Math.min(paginas.length, pag + 3); p++) if (paginas[p - 1].includes(clave)) { q = p; break; }
+    // un texto con cifras al lado («Inden for 1 år: 31.915 31.212»): el PDF separa la etiqueta de las cifras, se busca la etiqueta (lo que hay antes de la primera cifra, desde 6 caracteres)
+    const etiqueta = norm((celdas.find((c) => norm(c).length >= 6) || '').split(/\d/)[0]);
+    if (q < 0 && etiqueta.length >= 6) for (let p = pag; p <= Math.min(paginas.length, pag + 3); p++) if (paginas[p - 1].includes(etiqueta)) { q = p; break; }
+    if (q > 0) { ubicadas++; pag = q; } else sin.push(l.slice(0, 90));
+    pagina.push(pag);
+  }
+  return { pagina, con, ubicadas, sinPagina: sin };
+}
+export function armarMd(xhtmlNombre, lineas, pagina) {
+  const out = [`> Generado de ${xhtmlNombre} por tools/xhtml-aarsrapport.mjs · motor: ${MOTOR}. El PDF de al lado es la impresión de Chrome del XHTML oficial, no el documento oficial.`, ''];
+  let actual = 0;
+  lineas.forEach((l, i) => { if (pagina[i] !== actual) { actual = pagina[i]; out.push('', `--- pág. ${actual} ---`, ''); } out.push(l); if (l.startsWith('|') && !(lineas[i + 1] || '').startsWith('|')) out.push(''); });
+  return out.join('\n').replace(/\n{3,}/g, '\n\n') + '\n';
+}
+
+export function convertir(xhtmlAbs, { pdfDestino }) {
+  const src = readFileSync(xhtmlAbs, 'utf8'); const nombre = basename(xhtmlAbs);
+  const { lineas, hechos } = xhtmlALineas(src); const { faltan, ocultos } = hechosFaltantes(lineas, hechos);
+  const r = { nombre, lineas: lineas.length, hechos: hechos.length, ocultos, faltan, errores: [] };
+  if (faltan.length) r.errores.push(`(a) ${faltan.length} hecho(s) visible(s) sin su número en el .md: ${faltan.slice(0, 5).map((h) => `«${h.txt}» ${h.nombre}`).join(', ')}${faltan.length > 5 ? ', …' : ''}`);
+  if (r.errores.length) return r;
+  let paginas; try { paginas = imprimirPdf(xhtmlAbs, pdfDestino); } catch (e) { r.errores.push(e.message); return r; }
+  const al = alinear(lineas, paginas); r.paginasPdf = paginas.length; r.con = al.con; r.ubicadas = al.ubicadas;
+  if (al.con === 0 || al.ubicadas / al.con < MIN_UBICADAS) { r.errores.push(`(b) ${al.con - al.ubicadas} de ${al.con} líneas sin página en el PDF (${al.con ? Math.round(100 * al.ubicadas / al.con) : 0} % ubicadas, hace falta ${Math.round(MIN_UBICADAS * 100)} %): ${al.sinPagina.slice(0, 5).join(' | ')}`); return r; }
+  r.md = armarMd(nombre, lineas, al.pagina); return r;
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const A = process.argv.slice(2); const ESCRIBIR = A.includes('--escribir'); const REHACER = A.includes('--rehacer');
+  const entradas = A.filter((a) => !a.startsWith('--'));
+  if (!entradas.length) { console.error('Uso: node tools/xhtml-aarsrapport.mjs "<xhtml>|<carpeta>" [...] [--escribir] [--rehacer]'); process.exit(1); }
+  const xs = entradas.flatMap((e) => { const abs = resolve(ROOT, e); return existsSync(abs) && statSync(abs).isDirectory() ? readdirSync(abs).filter((f) => f.endsWith('.xhtml')).map((f) => join(abs, f)) : [abs]; });
+  const tmp = join(tmpdir(), 'xhtml-aarsrapport'); mkdirSync(tmp, { recursive: true }); let mal = 0;
+  for (const x of xs) {
+    const rel = x.replace(ROOT + '/', ''); const mdAbs = x.replace(/\.xhtml$/, '.md'); const pdfAbs = x.replace(/\.xhtml$/, '.pdf');
+    if (!REHACER && (existsSync(mdAbs) || existsSync(pdfAbs))) { console.log(`${rel}: ya tiene ${existsSync(mdAbs) ? '.md' : '.pdf'}: no se toca (--rehacer)`); continue; }
+    const tmpPdf = ESCRIBIR ? pdfAbs : join(tmp, basename(pdfAbs));
+    let r; try { r = convertir(x, { pdfDestino: tmpPdf }); } catch (e) { console.log(`${rel}: ERROR ${e.message}`); mal++; continue; }
+    console.log(`${rel}: ${r.lineas} líneas · ${r.hechos} hechos iXBRL (${r.ocultos.length} ocultos${r.ocultos.length ? `: ${[...new Set(r.ocultos.map((h) => h.nombre))].slice(0, 4).join(', ')}` : ''}) · ${r.paginasPdf ? `PDF ${r.paginasPdf} págs, ${r.ubicadas}/${r.con} líneas ubicadas` : 'sin PDF'}`);
+    if (r.errores.length) { for (const e of r.errores) console.log(`   NO SE ESCRIBE: ${e}`); mal++; continue; }
+    if (!ESCRIBIR) { console.log('   ok (ensayo: no se escribió nada)'); continue; }
+    writeFileSync(mdAbs, r.md);
+    mkdirSync(join(ROOT, 'Admin', 'registros', 'api'), { recursive: true });
+    appendFileSync(join(ROOT, 'Admin', 'registros', 'api', 'xhtml-ixbrl.jsonl'), JSON.stringify({ ts: new Date().toISOString(), md: rel.replace(/\.xhtml$/, '.md'), model: MOTOR, costUsd: 0, hechos: r.hechos, ocultos: r.ocultos.length }) + '\n');
+    console.log(`   escrito: ${rel.replace(/\.xhtml$/, '.md')} y ${rel.replace(/\.xhtml$/, '.pdf')} (motor ${MOTOR})`);
+  }
+  process.exit(mal ? 1 : 0);
+}

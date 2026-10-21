@@ -1,0 +1,64 @@
+{
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.md",
+ "club": "sarpsborg08-no",
+ "year": 2011,
+ "generatedAt": "2026-10-21T12:52:04.915Z",
+ "rubrosHuella": "ed13f2bce7109e32dd843d5fc391c59d99a7deda",
+ "jevHuella": "c2dfc210a1914da8816d60f224e04f5afd63e9fb",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Salg av spillere",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Venta de jugadores",
+   "page": 6,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "player_sales",
+   "confianza": 1
+  },
+  {
+   "label": "Bidrag fra aksjonærene",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Aportaciones de los accionistas",
+   "page": 6,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
+  },
+  {
+   "label": "Avskrivning på varige driftsm. og immatr. eiendeler",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización del inmovilizado material e intangible",
+   "page": 6,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 6,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "other_expenses",
+   "confianza": 0.97
+  }
+ ]
+}

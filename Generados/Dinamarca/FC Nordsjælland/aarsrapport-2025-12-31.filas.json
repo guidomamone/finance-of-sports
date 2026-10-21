@@ -1,0 +1,273 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md",
+ "mdSha1": "87be9b1cb87e7be812a0267761745e0c9c854a09",
+ "ubicacionSha1": "caa385d078601caa4f72cadf4bf8e6d2d7d8ac18",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:46:09.822Z",
+ "ubicacion": {
+  "estado": [
+   "b25"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b37"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b25",
+   "escala": "unidades",
+   "evidencia": "L422: All amounts in DKK. / L425: kr."
+  },
+  {
+   "bloque": "b37",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; los subtotales L637, L644 y L650 coinciden exactamente con el estado en kr. (L428, L433, L435)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b25",
+   "linea": 426,
+   "etiqueta": "Bruttofortjeneste Gross profit",
+   "actual": "460.800.148",
+   "anterior": "366.004.057",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 428,
+   "etiqueta": "Personaleomkostninger Staff costs",
+   "actual": "-142.049.863",
+   "anterior": "-175.027.070",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 429,
+   "etiqueta": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisation, and impairment",
+   "actual": "-35.721.157",
+   "anterior": "-45.144.140",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 430,
+   "etiqueta": "Driftsresultat Operating profit",
+   "actual": "283.029.128",
+   "anterior": "145.832.847",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 431,
+   "etiqueta": "Andre finansielle indtægter fra tilknyttede virksomheder Other financial income from group enterprises",
+   "actual": "1.137.518",
+   "anterior": "1.168.111",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 432,
+   "etiqueta": "Andre finansielle indtægter Other financial income",
+   "actual": "1.590.029",
+   "anterior": "1.631.843",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 433,
+   "etiqueta": "Øvrige finansielle omkostninger Other financial costs",
+   "actual": "-11.506.538",
+   "anterior": "-5.376.361",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 434,
+   "etiqueta": "Resultat før skat Pre-tax net profit or loss",
+   "actual": "274.250.137",
+   "anterior": "143.256.440",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 435,
+   "etiqueta": "Skat af årets resultat Tax on net profit or loss for the year",
+   "actual": "-65.011.162",
+   "anterior": "-31.778.343",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 436,
+   "etiqueta": "Årets resultat Net profit or loss for the year",
+   "actual": "209.238.975",
+   "anterior": "111.478.097",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 634,
+   "etiqueta": "Lønninger og gager Salaries and wages",
+   "actual": "138.376.504",
+   "anterior": "170.037.690",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff costs"
+  },
+  {
+   "bloque": "b37",
+   "linea": 635,
+   "etiqueta": "Pensioner Pension costs",
+   "actual": "1.834.516",
+   "anterior": "3.237.569",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff costs"
+  },
+  {
+   "bloque": "b37",
+   "linea": 636,
+   "etiqueta": "Andre omkostninger til social sikring Other costs for social security",
+   "actual": "1.838.843",
+   "anterior": "1.751.811",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff costs"
+  },
+  {
+   "bloque": "b37",
+   "linea": 637,
+   "etiqueta": "",
+   "actual": "142.049.863",
+   "anterior": "175.027.070",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff costs"
+  },
+  {
+   "bloque": "b37",
+   "linea": 642,
+   "etiqueta": "Finansielle omkostninger, tilknyttede virksomheder Financial costs, group enterprises",
+   "actual": "275.000",
+   "anterior": "550.000",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Øvrige finansielle omkostninger Other financial costs"
+  },
+  {
+   "bloque": "b37",
+   "linea": 643,
+   "etiqueta": "Andre finansielle omkostninger Other financial costs",
+   "actual": "11.231.538",
+   "anterior": "4.826.361",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Øvrige finansielle omkostninger Other financial costs"
+  },
+  {
+   "bloque": "b37",
+   "linea": 644,
+   "etiqueta": "",
+   "actual": "11.506.538",
+   "anterior": "5.376.361",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Øvrige finansielle omkostninger Other financial costs"
+  },
+  {
+   "bloque": "b37",
+   "linea": 647,
+   "etiqueta": "Skat af årets resultat Tax of the results for the year, parent company",
+   "actual": "60.145.052",
+   "anterior": "25.582.279",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on net profit or loss for the year"
+  },
+  {
+   "bloque": "b37",
+   "linea": 648,
+   "etiqueta": "Årets regulering af udskudt skat Adjustment for the year of deferred tax",
+   "actual": "387.110",
+   "anterior": "6.196.064",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on net profit or loss for the year"
+  },
+  {
+   "bloque": "b37",
+   "linea": 649,
+   "etiqueta": "Regulering af tidligere års skat Adjustment of tax for previous years",
+   "actual": "4.479.000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on net profit or loss for the year"
+  },
+  {
+   "bloque": "b37",
+   "linea": 650,
+   "etiqueta": "",
+   "actual": "65.011.162",
+   "anterior": "31.778.343",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on net profit or loss for the year"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 436,
+  "actual": "209.238.975",
+  "anterior": "111.478.097"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Bruttofortjeneste Gross profit' (L426) como único renglón de ingresos, sabiendo que es ingresos netos de otros gastos externos no desglosados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bruttofortjeneste Gross profit",
+   "texto": "L426: el estado danés presenta solo el beneficio bruto; los ingresos y gastos externos no se imprimen por separado.",
+   "bloques": [
+    "b25"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas 'Direktion og bestyrelse' (L638) y 'Gennemsnitligt antal beskæftigede medarbejdere' (L639)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Personaleomkostninger Staff costs",
+   "texto": "L638 es información de remuneración ya incluida en el total y L639 es número de empleados, no importe.",
+   "bloques": [
+    "b37"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en DKK unidades. No hay notas de ingresos. Los subtotales de la nota (L637, L644, L650) cuadran con el estado; la nota presenta importes en positivo."
+}

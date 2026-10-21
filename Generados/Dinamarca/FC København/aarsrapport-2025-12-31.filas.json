@@ -1,0 +1,441 @@
+{
+ "pdf": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md",
+ "mdSha1": "fbb67113e81eb2aafb2fecbed58eecf24273a05a",
+ "ubicacionSha1": "72afc0b493699ca02bb08e7cea3ca3c9e301b1fc",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:45:28.759Z",
+ "ubicacion": {
+  "estado": [
+   "b16"
+  ],
+  "notas_ingresos": [
+   "b20",
+   "b22"
+  ],
+  "notas_gastos": [
+   "b20",
+   "b22"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b16",
+   "escala": "miles",
+   "evidencia": "L238: t.kr."
+  },
+  {
+   "bloque": "b20",
+   "escala": "miles",
+   "evidencia": "L349: t.kr."
+  },
+  {
+   "bloque": "b22",
+   "escala": "miles",
+   "evidencia": "Continuación de notas de b20 (L349: t.kr.); importes cuadran con el estado en t.kr."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b16",
+   "linea": 239,
+   "etiqueta": "Nettoomsætning",
+   "actual": "711.560",
+   "anterior": "471.136",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 241,
+   "etiqueta": "Andre driftsindtægter",
+   "actual": "163.035",
+   "anterior": "287.954",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 242,
+   "etiqueta": "Vareforbrug",
+   "actual": "-116.323",
+   "anterior": "-106.193",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 243,
+   "etiqueta": "Andre eksterne omkostninger",
+   "actual": "-187.366",
+   "anterior": "-181.906",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 244,
+   "etiqueta": "Bruttoresultat",
+   "actual": "570.906",
+   "anterior": "470.991",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 245,
+   "etiqueta": "Personaleomkostninger",
+   "actual": "-349.664",
+   "anterior": "-298.133",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 246,
+   "etiqueta": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver",
+   "actual": "-179.629",
+   "anterior": "-137.242",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 247,
+   "etiqueta": "Driftsresultat",
+   "actual": "41.613",
+   "anterior": "35.616",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 248,
+   "etiqueta": "Indtægter af kapitalandele i tilknyttede virksomheder",
+   "actual": "19.400",
+   "anterior": "13.500",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 249,
+   "etiqueta": "Andre finansielle indtægter",
+   "actual": "9.337",
+   "anterior": "2.733",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 250,
+   "etiqueta": "Øvrige finansielle omkostninger",
+   "actual": "-17.179",
+   "anterior": "-5.613",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 251,
+   "etiqueta": "Resultat før skat",
+   "actual": "53.171",
+   "anterior": "46.236",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 252,
+   "etiqueta": "Årets resultat",
+   "actual": "53.171",
+   "anterior": "46.236",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 354,
+   "etiqueta": "Entréindtægter",
+   "actual": "118.352",
+   "anterior": "85.544",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Nettoomsætning"
+  },
+  {
+   "bloque": "b20",
+   "linea": 355,
+   "etiqueta": "TV- og præmie-indtægter",
+   "actual": "275.452",
+   "anterior": "110.836",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Nettoomsætning"
+  },
+  {
+   "bloque": "b20",
+   "linea": 356,
+   "etiqueta": "Samarbejdspartnere",
+   "actual": "158.819",
+   "anterior": "127.594",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Nettoomsætning"
+  },
+  {
+   "bloque": "b20",
+   "linea": 357,
+   "etiqueta": "Merchandiseindtægter",
+   "actual": "81.533",
+   "anterior": "57.327",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Nettoomsætning"
+  },
+  {
+   "bloque": "b20",
+   "linea": 358,
+   "etiqueta": "Food & Beverage, konferencecenter m.v.",
+   "actual": "28.985",
+   "anterior": "30.869",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Nettoomsætning"
+  },
+  {
+   "bloque": "b20",
+   "linea": 359,
+   "etiqueta": "Ejendomsudlejning",
+   "actual": "21.248",
+   "anterior": "32.190",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Nettoomsætning"
+  },
+  {
+   "bloque": "b20",
+   "linea": 360,
+   "etiqueta": "Øvrige indtægter",
+   "actual": "27.171",
+   "anterior": "26.776",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Nettoomsætning"
+  },
+  {
+   "bloque": "b20",
+   "linea": 361,
+   "etiqueta": "",
+   "actual": "711.560",
+   "anterior": "471.136",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Nettoomsætning"
+  },
+  {
+   "bloque": "b20",
+   "linea": 369,
+   "etiqueta": "Lønninger og gager",
+   "actual": "330.987",
+   "anterior": "282.586",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b20",
+   "linea": 370,
+   "etiqueta": "Pensioner",
+   "actual": "16.051",
+   "anterior": "12.914",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b20",
+   "linea": 371,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "2.626",
+   "anterior": "2.633",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b20",
+   "linea": 372,
+   "etiqueta": "",
+   "actual": "349.664",
+   "anterior": "298.133",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b22",
+   "linea": 387,
+   "etiqueta": "Amortiseringer af kontraktrettigheder",
+   "actual": "155.676",
+   "anterior": "113.241",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver"
+  },
+  {
+   "bloque": "b22",
+   "linea": 388,
+   "etiqueta": "Nedskrivninger af kontraktrettigheder",
+   "actual": "0",
+   "anterior": "7.128",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver"
+  },
+  {
+   "bloque": "b22",
+   "linea": 389,
+   "etiqueta": "Afskrivning på indretning af lejede lokaler",
+   "actual": "4.151",
+   "anterior": "2.409",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver"
+  },
+  {
+   "bloque": "b22",
+   "linea": 390,
+   "etiqueta": "Afskrivning på bygninger",
+   "actual": "5.679",
+   "anterior": "4.683",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver"
+  },
+  {
+   "bloque": "b22",
+   "linea": 391,
+   "etiqueta": "Nedskrivninger bygninger",
+   "actual": "2.329",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver"
+  },
+  {
+   "bloque": "b22",
+   "linea": 392,
+   "etiqueta": "Afskrivning på produktionsanlæg og maskiner",
+   "actual": "11.794",
+   "anterior": "9.781",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver"
+  },
+  {
+   "bloque": "b22",
+   "linea": 393,
+   "etiqueta": "",
+   "actual": "179.629",
+   "anterior": "137.242",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver"
+  },
+  {
+   "bloque": "b22",
+   "linea": 396,
+   "etiqueta": "Finansielle indtægter, tilknyttede virksomheder",
+   "actual": "201",
+   "anterior": "110",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andre finansielle indtægter"
+  },
+  {
+   "bloque": "b22",
+   "linea": 397,
+   "etiqueta": "Andre finansielle indtægter",
+   "actual": "9.136",
+   "anterior": "2.623",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andre finansielle indtægter"
+  },
+  {
+   "bloque": "b22",
+   "linea": 398,
+   "etiqueta": "",
+   "actual": "9.337",
+   "anterior": "2.733",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Andre finansielle indtægter"
+  },
+  {
+   "bloque": "b22",
+   "linea": 401,
+   "etiqueta": "Finansielle omkostninger, tilknyttede virksomheder",
+   "actual": "9.631",
+   "anterior": "4.333",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Øvrige finansielle omkostninger"
+  },
+  {
+   "bloque": "b22",
+   "linea": 402,
+   "etiqueta": "Andre finansielle omkostninger",
+   "actual": "7.548",
+   "anterior": "1.280",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Øvrige finansielle omkostninger"
+  },
+  {
+   "bloque": "b22",
+   "linea": 403,
+   "etiqueta": "",
+   "actual": "17.179",
+   "anterior": "5.613",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Øvrige finansielle omkostninger"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 252,
+  "actual": "53.171",
+  "anterior": "46.236"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la nota 8 'Forslag til resultatdisponering' (L404-L408), por ser distribución del resultado y no ingresos/gastos?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Årets resultat",
+   "texto": "La nota 8 (L404-L408) reparte el resultado en dividendo y resultado transferido; no desglosa ingresos ni gastos.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala t.kr. (miles de DKK) en estado y notas. No se imprimen totales de ingresos ni de gastos. 'Resultat før skat' igual a 'Årets resultat' (sin impuesto, sociedad P/S transparente). Fila L373 (número medio de empleados) no se extrae por no ser importe monetario. 'Indtægter af kapitalandele i tilknyttede virksomheder' clasificado como otro."
+}

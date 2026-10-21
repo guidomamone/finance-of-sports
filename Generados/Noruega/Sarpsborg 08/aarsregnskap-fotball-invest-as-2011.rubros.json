@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.md",
+  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.pdf",
+  "club": "sarpsborg08-no",
+  "year": 2011,
+  "generatedAt": "2026-10-21T12:47:57.091Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Salg av spillere",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.4
+      ],
+      "glosa": "Venta de jugadores"
+    },
+    {
+      "label": "Bidrag fra aksjonærene",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.0875
+      ],
+      "glosa": "Aportaciones de los accionistas"
+    },
+    {
+      "label": "Avskrivning på varige driftsm. og immatr. eiendeler",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.572104
+      ],
+      "glosa": "Amortización del inmovilizado material e intangible"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.173243
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

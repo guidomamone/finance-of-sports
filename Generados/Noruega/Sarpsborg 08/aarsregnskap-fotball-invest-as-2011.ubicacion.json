@@ -1,0 +1,114 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.md",
+ "mdSha1": "54686649c9762d31fcfc3d36e03f4e1fb32062ab",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:42:01.900Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    100,
+    123
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    138,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    186,
+    191
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    259,
+    278
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    287,
+    302
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    311,
+    328
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    399,
+    413
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    419,
+    426
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, mismo estado de resultados de Sarpsborg Fotball Invest AS)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2011",
+ "columna_anterior": "2010",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados de Sarpsborg Fotball Invest AS (b4) aunque la entidad del sitio es Sarpsborg 08 Fotballforening?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento solo trae cuentas individuales de la sociedad inversora Sarpsborg Fotball Invest AS (org. 983 618 596), no las de la Fotballforening ni un consolidado.",
+   "bloques": [
+    "b4",
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera b1 por ser la versión del registro (Brønnøysund) del mismo estado de resultados que b4?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 (pág. 2) y b4 (pág. 6) son el mismo resultatregnskap 2011/2010 de la misma sociedad.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento es de Sarpsborg Fotball Invest AS (sociedad que posee derechos de jugadores), no de la Fotballforening; solo hay estados individuales, sin consolidado. b1 y b4 son el mismo estado de resultados (formato registro y formato original); se elige b4. b2/b3/b5/b6 son balance, b7 accionistas, b8 evolución del patrimonio. No hay notas de desglose de ingresos/gastos con cifras."
+}

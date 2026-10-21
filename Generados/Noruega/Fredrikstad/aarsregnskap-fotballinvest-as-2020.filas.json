@@ -1,0 +1,138 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2020.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2020.md",
+ "mdSha1": "9487053f5b8ced5d4d7d105eb98aa040eea4ed81",
+ "ubicacionSha1": "289fee9574ec23e985bb53902fbdfd2938c85cca",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:41:00.747Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "no se sabe",
+   "evidencia": "El bloque b8 no indica escala; los importes parecen en unidades (NOK) pero no está impreso"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 352,
+   "etiqueta": "Annen driftsinntekt",
+   "actual": "120 684",
+   "anterior": "231 456",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 354,
+   "etiqueta": "Avskrivning",
+   "actual": "358 158",
+   "anterior": "411 773",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 355,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "58 786",
+   "anterior": "87 395",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 356,
+   "etiqueta": "Sum driftskostnader",
+   "actual": "416 944",
+   "anterior": "499 168",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 357,
+   "etiqueta": "Driftsresultat",
+   "actual": "-296 260",
+   "anterior": "-267 712",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 359,
+   "etiqueta": "Annen finansinntekt",
+   "actual": "65",
+   "anterior": "237",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 360,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "-296 195",
+   "anterior": "-267 475",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 361,
+   "etiqueta": "Årsresultat",
+   "actual": "-296 195",
+   "anterior": "-267 475",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 363,
+   "etiqueta": "Udekket tap",
+   "actual": "-296 195",
+   "anterior": "-267 475",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": {
+  "linea": 356,
+  "actual": "416 944"
+ },
+ "resultado": {
+  "linea": 361,
+  "actual": "-296 195",
+  "anterior": "-267 475"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado de resultados (b8, L352-L363) como unidades (NOK)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b8 no imprime la escala; por la magnitud de los importes parecen unidades.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados de Fotballinvest AS (sociedad holding, no el club operativo). Único ingreso operativo 'Annen driftsinntekt'; no hay total de ingresos impreso (coincide con la única fila). 'Udekket tap' (L363) es la aplicación del resultado, no una partida de resultados. No se pasaron notas de desglose."
+}

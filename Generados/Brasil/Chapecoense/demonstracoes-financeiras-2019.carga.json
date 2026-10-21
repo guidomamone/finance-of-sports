@@ -1,0 +1,35 @@
+{
+ "pdf": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.pdf",
+ "generado": "2026-10-21T12:52:08.824Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2021, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2017 individual, 2021 consolidado, 2022 consolidado"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "chapecoense-br",
+ "year": 2019,
+ "cortadoEn": "filas"
+}

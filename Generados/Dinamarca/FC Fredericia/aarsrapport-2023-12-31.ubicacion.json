@@ -1,0 +1,123 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2023-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2023-12-31.md",
+ "mdSha1": "8931ba3ca2d2264dbdd8c83c46b3d1fdc1f5f4ad",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:39:20.115Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    39
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    198,
+    210
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    214,
+    218
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    230,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    255,
+    268
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    278,
+    284
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    294,
+    314
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    324,
+    331
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    335,
+    342
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    346,
+    350
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    360,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    368,
+    374
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b8"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado '2023 DKK | 2022 DKK' sin indicación de miles",
+ "moneda": "DKK",
+ "columna_ejercicio": "2023 DKK",
+ "columna_anterior": "2022 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Resultatopgørelse individual de la sociedad (b2), empieza en Bruttofortjeneste (formato reducido de la clase B danesa, sin desglose de ingresos). Nota 1 Personaleomkostninger (b8) desglosa gastos de personal. El resto son balance, patrimonio, flujo de efectivo, activo fijo, impuesto diferido y destino del resultado: excluidos."
+}

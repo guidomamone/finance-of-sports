@@ -1,0 +1,200 @@
+{
+  "md": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md",
+  "pdf": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.pdf",
+  "club": "fckobenhavn-dk",
+  "year": null,
+  "generatedAt": "2026-10-21T12:47:57.511Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Entréindtægter",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Nettoomsætning\"",
+      "values": [
+        118.352
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "TV- og præmie-indtægter",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Nettoomsætning\"",
+      "values": [
+        275.452
+      ],
+      "glosa": "Ingresos por televisión y premios"
+    },
+    {
+      "label": "Samarbejdspartnere",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Nettoomsætning\"",
+      "values": [
+        158.819
+      ],
+      "glosa": "Patrocinios y socios comerciales"
+    },
+    {
+      "label": "Merchandiseindtægter",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Nettoomsætning\"",
+      "values": [
+        81.533
+      ],
+      "glosa": "Ingresos por merchandising"
+    },
+    {
+      "label": "Food & Beverage, konferencecenter m.v.",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Nettoomsætning\"",
+      "values": [
+        28.985
+      ],
+      "glosa": "Alimentos y bebidas, centro de conferencias, etc."
+    },
+    {
+      "label": "Ejendomsudlejning",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Nettoomsætning\"",
+      "values": [
+        21.248
+      ],
+      "glosa": "Alquiler de inmuebles"
+    },
+    {
+      "label": "Øvrige indtægter",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Nettoomsætning\"",
+      "values": [
+        27.171
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Andre driftsindtægter",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        163.035
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Indtægter af kapitalandele i tilknyttede virksomheder",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        19.4
+      ],
+      "glosa": "Ingresos de participaciones en empresas del grupo"
+    },
+    {
+      "label": "Vareforbrug",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        116.323
+      ],
+      "glosa": "Consumo de mercaderías"
+    },
+    {
+      "label": "Andre eksterne omkostninger",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        187.366
+      ],
+      "glosa": "Otros gastos externos"
+    },
+    {
+      "label": "Lønninger og gager",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        330.987
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        16.051
+      ],
+      "glosa": "Planes de pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        2.626
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Amortiseringer af kontraktrettigheder",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+      "values": [
+        155.676
+      ],
+      "glosa": "Amortización de derechos contractuales"
+    },
+    {
+      "label": "Afskrivning på indretning af lejede lokaler",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+      "values": [
+        4.151
+      ],
+      "glosa": "Amortización de adecuación de locales arrendados"
+    },
+    {
+      "label": "Afskrivning på bygninger",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+      "values": [
+        5.679
+      ],
+      "glosa": "Amortización de construcciones"
+    },
+    {
+      "label": "Nedskrivninger bygninger",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+      "values": [
+        2.329
+      ],
+      "glosa": "Deterioro de valor de construcciones"
+    },
+    {
+      "label": "Afskrivning på produktionsanlæg og maskiner",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+      "values": [
+        11.794
+      ],
+      "glosa": "Amortización de instalaciones y maquinaria"
+    }
+  ]
+}

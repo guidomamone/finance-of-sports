@@ -1,0 +1,223 @@
+{
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.pdf",
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.md",
+ "generado": "2026-10-21T12:47:57.409Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "cola",
+ "clubId": "valerenga-no",
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "El club en el sitio es Vålerenga Fotball AS (individual, como el 2025 cargado); los otros documentos de 2024 son de Vålerenga Fotball Elite AS y de la asociación (FLI)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [
+  "7773a64",
+  "714f97e",
+  "714f97e"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "78.627507 = 78.627507",
+   "suma": 78.627507,
+   "impreso": 78.627507
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "93.803749 = 93.803748",
+   "suma": 93.803749,
+   "impreso": 93.803748
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 0.0000010000000010279564
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2023 de este documento suma ingresos 100.555061; el sitio tiene 201.05265"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 78.627507 en este documento y 78.627507 en aarsregnskap-valerenga-fotball-as-2025.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 100.555061 en aarsregnskap-valerenga-fotball-as-2023.pdf y 100.555061 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el resultatregnskap de la pág. 2 (b4, versión del formulario del Brønnøysundregistrene) por duplicar el de la pág. 6 (b8)?",
+  "duda de extraer que no afecta la carga: Diferencia de 1 corona en el año anterior entre L220 y L418, es redondeo."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 78.627507,
+  "gastos": 93.803749,
+  "financiero": 76.851953,
+  "impuesto": 0,
+  "resultadoImpreso": -12.427128,
+  "resultadoParaCargar": -12.427128,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Sponsorinntekter",
+   "lado": "ingreso",
+   "M": 48.585515,
+   "pagina": 12,
+   "linea": 397,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Markeds- og medieinntekter",
+   "lado": "ingreso",
+   "M": 19.125106,
+   "pagina": 12,
+   "linea": 398,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Billettsalg (ordinært)",
+   "lado": "ingreso",
+   "M": 9.875103,
+   "pagina": 12,
+   "linea": 399,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Viderefakturert",
+   "lado": "ingreso",
+   "M": 0.806512,
+   "pagina": 12,
+   "linea": 406,
+   "origen": "nota que desglosa \"Andre inntekter\""
+  },
+  {
+   "etiqueta": "Diverse inntekter",
+   "lado": "ingreso",
+   "M": 0.235271,
+   "pagina": 12,
+   "linea": 407,
+   "origen": "nota que desglosa \"Andre inntekter\""
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 0.479064,
+   "pagina": 6,
+   "linea": 219,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 7.281695,
+   "pagina": 12,
+   "linea": 414,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 1.436981,
+   "pagina": 12,
+   "linea": 415,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 0.194755,
+   "pagina": 12,
+   "linea": 416,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre ytelser",
+   "lado": "gasto",
+   "M": 0.101651,
+   "pagina": 12,
+   "linea": 417,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning av driftsmidler",
+   "lado": "gasto",
+   "M": 0.412094,
+   "pagina": 6,
+   "linea": 221,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Nedskrivning av driftsmidler",
+   "lado": "gasto",
+   "M": 0.199718,
+   "pagina": 6,
+   "linea": 222,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tap på fordringer",
+   "lado": "gasto",
+   "M": 0.194918,
+   "pagina": 6,
+   "linea": 223,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 83.502873,
+   "pagina": 6,
+   "linea": 224,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 39.800533,
+   "linea": 228
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": -37.05142,
+   "linea": 229
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skattekostnad",
+   "M": 0,
+   "linea": 232
+  }
+ ]
+}

@@ -1,0 +1,380 @@
+{
+  "md": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.md",
+  "pdf": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf",
+  "club": "omonia-29-maiou",
+  "year": 2024,
+  "generatedAt": "2026-10-21T12:47:57.414Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Συνδρομές μελών",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.076072
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Εισιτήρια διαρκείας",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.0324
+      ],
+      "glosa": "Abonos de temporada"
+    },
+    {
+      "label": "Έσοδα αγώνων",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.144905
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Χορηγίες και εισφορές",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.275389
+      ],
+      "glosa": "Patrocinios y aportaciones"
+    },
+    {
+      "label": "Έσοδα μπουτίκ",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.0219
+      ],
+      "glosa": "Ingresos de la tienda oficial"
+    },
+    {
+      "label": "Έσοδα από εκδηλώσεις",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.018129
+      ],
+      "glosa": "Ingresos por eventos"
+    },
+    {
+      "label": "Μέλη Premium",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.035064
+      ],
+      "glosa": "Membresías Premium"
+    },
+    {
+      "label": "Έσοδα από τμήμα έρευνας",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.059
+      ],
+      "glosa": "Ingresos del departamento de investigación"
+    },
+    {
+      "label": "Έσοδα μεταγραφών",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Ingresos por traspasos"
+    },
+    {
+      "label": "Λαχνοί",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.0225
+      ],
+      "glosa": "Rifas y sorteos"
+    },
+    {
+      "label": "Kids Club",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.00081
+      ],
+      "glosa": "Kids Club"
+    },
+    {
+      "label": "Ενοίκια και ζημιές γηπέδων",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.01712
+      ],
+      "glosa": "Alquileres y reparaciones de estadios"
+    },
+    {
+      "label": "Στολές παικτών",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.018751
+      ],
+      "glosa": "Equipaciones de jugadores"
+    },
+    {
+      "label": "Αποθέματα στο τέλος",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.0055
+      ],
+      "glosa": "Existencias finales"
+    },
+    {
+      "label": "Διάφορα έξοδα",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.054481
+      ],
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Έξοδα ποδοσφαιρικού τμήματος",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.162607
+      ],
+      "glosa": "Gastos del departamento de fútbol"
+    },
+    {
+      "label": "Έξοδα ιατρών, φυσιοθεραπευτών",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.011553
+      ],
+      "glosa": "Gastos de médicos y fisioterapeutas"
+    },
+    {
+      "label": "Έξοδα αγώνων",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.00179
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Νερά",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.00578
+      ],
+      "glosa": "Gastos de agua"
+    },
+    {
+      "label": "Δικαιώματα τραπεζών",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.000341
+      ],
+      "glosa": "Comisiones bancarias"
+    },
+    {
+      "label": "Αποθέματα στην αρχή",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.01
+      ],
+      "glosa": "Existencias iniciales"
+    },
+    {
+      "label": "Κοινωνικές ασφαλίσεις",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.068205
+      ],
+      "glosa": "Seguridad Social"
+    },
+    {
+      "label": "Μισθοί",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.233441
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Αποζημείωσεις",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Διοικητικά έξοδα",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.012326
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Γραφική ύλη και εκτυπωτικά",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.001022
+      ],
+      "glosa": "Material de oficina e imprenta"
+    },
+    {
+      "label": "Προετοιμασία ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Preparación deportiva de jugadores"
+    },
+    {
+      "label": "Αθλητικό υλικό για προπόνηση",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.008893
+      ],
+      "glosa": "Material deportivo de entrenamiento"
+    },
+    {
+      "label": "Πρόστιμα",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.1004
+      ],
+      "glosa": "Multas y sanciones"
+    },
+    {
+      "label": "Μεταφορικά ομάδας και διαμονή στην Πάφο",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.00604
+      ],
+      "glosa": "Transporte y alojamiento del equipo en Pafos"
+    },
+    {
+      "label": "Έξοδα δεξίωσης ποδοσφαιριστών",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.004465
+      ],
+      "glosa": "Gastos de recepciones y atenciones a jugadores"
+    },
+    {
+      "label": "Έξοδα οχημάτων",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.000136
+      ],
+      "glosa": "Gastos de vehículos"
+    },
+    {
+      "label": "Πακέτα μελών",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.003588
+      ],
+      "glosa": "Paquetes de socios"
+    },
+    {
+      "label": "Έξοδα οικήματος",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.004
+      ],
+      "glosa": "Gastos de la sede social"
+    },
+    {
+      "label": "Έξοδα προπονητικού κέντρου",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.0024
+      ],
+      "glosa": "Gastos del centro de entrenamiento"
+    },
+    {
+      "label": "Εγγραφή παικτών",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.005545
+      ],
+      "glosa": "Inscripción federativa de jugadores"
+    },
+    {
+      "label": "Αποσβέσεις",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.00138
+      ],
+      "glosa": "Amortizaciones"
+    }
+  ]
+}

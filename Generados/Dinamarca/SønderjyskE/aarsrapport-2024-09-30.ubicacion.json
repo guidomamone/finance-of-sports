@@ -1,0 +1,158 @@
+{
+ "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.pdf",
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.md",
+ "mdSha1": "f0ad90f7704a5478d3a9eb31d7e84caa28cbf29f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:47:39.031Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    37,
+    49
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    61,
+    62
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    65,
+    68
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    94,
+    95
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    202,
+    216
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    222,
+    240
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    247,
+    261
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    266,
+    272
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    281,
+    288
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    291,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    300,
+    305
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    308,
+    312
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    317,
+    328
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    331,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    346,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    369,
+    371
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b9",
+  "b10",
+  "b11",
+  "b12"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Fila de unidades en el encabezado del estado: 'kr.' (importes completos, p.ej. 37.431.315)",
+ "moneda": "DKK",
+ "columna_ejercicio": "2023/24",
+ "columna_anterior": "2022/23",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Sønderjyske Fodbold A/S (1 okt 2023 - 30 sep 2024) en b5, presentado con Bruttofortjeneste (ingresos netos de gastos externos, sin desglose de ingresos). Las filas 'Forslag til resultatdisponering' son destino del resultado, no se cargan. Notas de gastos: personal (b9), amortizaciones (b10), gastos financieros (b11), impuesto (b12). No hay consolidado."
+}

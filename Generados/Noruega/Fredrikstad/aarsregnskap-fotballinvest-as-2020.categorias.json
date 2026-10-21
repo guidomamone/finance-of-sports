@@ -1,0 +1,51 @@
+{
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2020.md",
+ "club": "fredrikstad-no",
+ "year": 2020,
+ "generatedAt": "2026-10-21T12:52:04.895Z",
+ "rubrosHuella": "c48d0d0762e7673fe23a0070e27484785678584e",
+ "jevHuella": "741bd0af2d81226815638710557bb77c15283796",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 9,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Avskrivning",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización",
+   "page": 9,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 9,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

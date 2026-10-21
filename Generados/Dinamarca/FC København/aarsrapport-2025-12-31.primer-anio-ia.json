@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md",
+ "clave": "dc9e454f6d6d3c7315e2d007c0f31e5447230743",
+ "generado": "2026-10-21T12:48:10.588Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas. Las partes de las notas suman exactamente cada renglón que abren: los ingresos de la nota suman 711.560 (Nettoomsætning, L239), el personal suma 349.664 (L245) y las amortizaciones y depreciaciones suman 179.629 (L246). Los subtotales Bruttoresultat, Driftsresultat y Resultat før skat no se cargaron, que es lo correcto. Los signos de cada fila son coherentes con su lado."
+ }
+}

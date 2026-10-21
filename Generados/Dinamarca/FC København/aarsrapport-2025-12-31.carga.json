@@ -1,0 +1,685 @@
+{
+ "pdf": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.pdf",
+ "generado": "2026-10-21T12:52:10.566Z",
+ "frena": [
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2025: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2025: pregunta en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado. Años cargados: 2024 consolidado",
+  "materialidad: \"Nedskrivninger bygninger\" va como depreciation con 0.75 (las dudas de gastos suman 0.28% de su lado)"
+ ],
+ "ejercicio": {
+  "clubId": "fckobenhavn-dk",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Entréindtægter",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 118.352,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "TV- og præmie-indtægter",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 275.452,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Samarbejdspartnere",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 158.819,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandiseindtægter",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 81.533,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Food & Beverage, konferencecenter m.v.",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 28.985,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ejendomsudlejning",
+    "normalizedCategory": "other_income",
+    "amountNative": 21.248,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Øvrige indtægter",
+    "normalizedCategory": "other_income",
+    "amountNative": 27.171,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre driftsindtægter",
+    "normalizedCategory": "player_sales",
+    "amountNative": 163.035,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Indtægter af kapitalandele i tilknyttede virksomheder",
+    "normalizedCategory": "other_income",
+    "amountNative": 19.4,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Vareforbrug",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -116.323,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre eksterne omkostninger",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -187.366,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lønninger og gager",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -330.987,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioner",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -16.051,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre omkostninger til social sikring",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.626,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortiseringer af kontraktrettigheder",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -155.676,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afskrivning på indretning af lejede lokaler",
+    "normalizedCategory": "depreciation",
+    "amountNative": -4.151,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afskrivning på bygninger",
+    "normalizedCategory": "depreciation",
+    "amountNative": -5.679,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Nedskrivninger bygninger",
+    "normalizedCategory": "depreciation",
+    "amountNative": -2.329,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": "materialidad",
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.28% (≤ 1%) y esta tiene 0.75"
+   },
+   {
+    "rawLabel": "Afskrivning på produktionsanlæg og maskiner",
+    "normalizedCategory": "depreciation",
+    "amountNative": -11.794,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2025-12-31",
+   "sourceId": "fckobenhavn-dk-aarsrapport-2025-12-31",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -7.842,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Andre finansielle indtægter",
+     "value": 9.337
+    },
+    {
+     "label": "Øvrige finansielle omkostninger",
+     "value": -17.179
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 893.995,
+   "officialTotalExpenses": 832.982,
+   "officialPAT": 53.171
+  },
+  "source": {
+   "id": "fckobenhavn-dk-aarsrapport-2025-12-31",
+   "clubId": "fckobenhavn-dk",
+   "title": "F.C. København P/S — aarsrapport-2025-12-31 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-21): el .md (convertido del XHTML) habla de 31. december 2025 (7 veces); el nombre del archivo y el resto de los años del club cierran el 31-12"
+ },
+ "clubId": "fckobenhavn-dk",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.pdf",
+   "campo": "cierre",
+   "valor": "2025-12-31",
+   "linea": null,
+   "motivo": "el .md (convertido del XHTML) habla de 31. december 2025 (7 veces); el nombre del archivo y el resto de los años del club cierran el 31-12",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 21,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Entréindtægter",
+   "page": 16,
+   "native": 118.352,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 118.352,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 118.352
+  },
+  {
+   "label": "TV- og præmie-indtægter",
+   "page": 16,
+   "native": 275.452,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 275.452,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 275.452
+  },
+  {
+   "label": "Samarbejdspartnere",
+   "page": 16,
+   "native": 158.819,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 158.819,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 158.819
+  },
+  {
+   "label": "Merchandiseindtægter",
+   "page": 16,
+   "native": 81.533,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 81.533,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 81.533
+  },
+  {
+   "label": "Food & Beverage, konferencecenter m.v.",
+   "page": 16,
+   "native": 28.985,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 28.985,
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 28.985
+  },
+  {
+   "label": "Ejendomsudlejning",
+   "page": 16,
+   "native": 21.248,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 21.248,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 21.248
+  },
+  {
+   "label": "Øvrige indtægter",
+   "page": 16,
+   "native": 27.171,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 27.171,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 27.171
+  },
+  {
+   "label": "Andre driftsindtægter",
+   "page": 12,
+   "native": 163.035,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 163.035,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 163.035
+  },
+  {
+   "label": "Indtægter af kapitalandele i tilknyttede virksomheder",
+   "page": 12,
+   "native": 19.4,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "signoFijo": 19.4,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 19.4
+  },
+  {
+   "label": "Vareforbrug",
+   "page": 12,
+   "native": 116.323,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 116.323,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -116.323
+  },
+  {
+   "label": "Andre eksterne omkostninger",
+   "page": 12,
+   "native": 187.366,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 187.366,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -187.366
+  },
+  {
+   "label": "Lønninger og gager",
+   "page": 16,
+   "native": 330.987,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 330.987,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -330.987
+  },
+  {
+   "label": "Pensioner",
+   "page": 16,
+   "native": 16.051,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 16.051,
+   "cat": "wages_squad",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -16.051
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "page": 16,
+   "native": 2.626,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 2.626,
+   "cat": "wages_squad",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.626
+  },
+  {
+   "label": "Amortiseringer af kontraktrettigheder",
+   "page": 17,
+   "native": 155.676,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")",
+   "signoFijo": 155.676,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -155.676
+  },
+  {
+   "label": "Afskrivning på indretning af lejede lokaler",
+   "page": 17,
+   "native": 4.151,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")",
+   "signoFijo": 4.151,
+   "cat": "depreciation",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.151
+  },
+  {
+   "label": "Afskrivning på bygninger",
+   "page": 17,
+   "native": 5.679,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")",
+   "signoFijo": 5.679,
+   "cat": "depreciation",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.679
+  },
+  {
+   "label": "Nedskrivninger bygninger",
+   "page": 17,
+   "native": 2.329,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")",
+   "signoFijo": 2.329,
+   "cat": "depreciation",
+   "conf": 0.75,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.28% (≤ 1%) y esta tiene 0.75",
+   "enLista": true,
+   "enCola": false,
+   "destino": "expense",
+   "amountNative": -2.329
+  },
+  {
+   "label": "Afskrivning på produktionsanlæg og maskiner",
+   "page": 17,
+   "native": 11.794,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")",
+   "signoFijo": 11.794,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -11.794
+  },
+  {
+   "label": "Andre finansielle indtægter",
+   "page": null,
+   "native": 9.337,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Øvrige finansielle omkostninger",
+   "page": null,
+   "native": -17.179,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Nettoomsætning\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
+   "verificacion (nota que desglosa \"Personaleomkostninger\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 893.995,
+  "expSum": -832.982,
+  "officialTotalRevenue": 893.995,
+  "officialTotalExpenses": 832.982,
+  "officialPAT": 53.171,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 53.171,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 893.995
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 832.982
+  }
+ },
+ "liga": {
+  "valor": "dk-superliga",
+  "fuente": "roster cacheado de \"2025–26 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Copenhagen\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): el .md (convertido del XHTML) habla de 31. december 2025 (7 veces); el nombre del archivo y el resto de los años del club cierran el 31-12",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): el .md (convertido del XHTML) habla de 31. december 2025 (7 veces); el nombre del archivo y el resto de los años del club cierran el 31-12)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "DKK@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene DKK@2025-12-31 = 6.3527 (Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2025-12-30, 2025-12-31 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "fckobenhavn-dk-aarsrapport-2025-12-31",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "dk-superliga",
+   "fuente": "roster cacheado de \"2025–26 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Copenhagen\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 9,
+  "lineasGasto": 10,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

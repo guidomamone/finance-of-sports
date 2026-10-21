@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md",
+  "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+  "club": "vejle-dk",
+  "year": null,
+  "generatedAt": "2026-10-21T12:47:57.636Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bruttofortjeneste",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        53.447
+      ],
+      "glosa": "Beneficio bruto"
+    },
+    {
+      "label": "Indtægter af kapitalandele i tilknyttede virksomheder",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.783
+      ],
+      "glosa": "Ingresos de participaciones en empresas del grupo"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 21,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        50.539
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 21,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        3.219
+      ],
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 21,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.733
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        3.334
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado intangible y material"
+    },
+    {
+      "label": "Andre driftsomkostninger",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.07
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

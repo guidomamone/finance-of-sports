@@ -1,0 +1,145 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.md",
+ "generado": "2026-10-21T12:47:56.911Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "cola",
+ "clubId": "fredericia-dk",
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.pdf",
+   "campo": "cierre",
+   "valor": "2024-12-31",
+   "linea": null,
+   "motivo": "regnskabsåret 1. januar - 31. december 2024 (.md L43)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [
+  "fa471b5"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.220446049250313e-15
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 10.098024 en aarsrapport-2023-12-31.pdf y 10.098024 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 15.2326,
+  "gastos": 13.446442,
+  "financiero": -0.051677,
+  "impuesto": 0,
+  "resultadoImpreso": 1.734481,
+  "resultadoParaCargar": 1.734481,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Bruttofortjeneste",
+   "lado": "ingreso",
+   "M": 15.2326,
+   "pagina": 7,
+   "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 11.492021,
+   "pagina": 12,
+   "linea": 320,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Pensioner",
+   "lado": "gasto",
+   "M": 0.37516,
+   "pagina": 12,
+   "linea": 321,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre omkostninger til social sikring",
+   "lado": "gasto",
+   "M": 0.276731,
+   "pagina": 12,
+   "linea": 322,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "lado": "gasto",
+   "M": 0.1162,
+   "pagina": 7,
+   "linea": 196,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre driftsomkostninger",
+   "lado": "gasto",
+   "M": 1.18633,
+   "pagina": 7,
+   "linea": 197,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finansielle indtægter",
+   "M": 0.012886,
+   "linea": 199
+  },
+  {
+   "etiqueta": "Finansielle omkostninger",
+   "M": -0.064563,
+   "linea": 200
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skat af årets resultat",
+   "M": 0,
+   "linea": 202
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2019.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2019.md",
+ "mdSha1": "d0854ec033f7fff2268b47b56f852957d88ac677",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:39:57.901Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    114,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    149,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    337,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    359,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    377,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    398,
+    405
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    416,
+    420
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    477,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    492,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    499,
+    503
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    511,
+    516
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    528,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    534,
+    571
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    579,
+    592
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b8"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados de Fredrikstad Fotballinvest AS (b3) aunque la entidad del sitio es Fredrikstad Fotballklubb?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El documento solo trae cuentas de Fredrikstad Fotballinvest AS (org. 979 111 576), una sociedad inversora con el 20% de los derechos económicos de los jugadores, no del club.",
+   "bloques": [
+    "b1",
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el bloque b1 (pág. 2) por ser un duplicado del estado de resultados b3?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 y b3 parecen ser la misma cuenta de resultados, en dos formatos distintos.",
+   "bloques": [
+    "b1",
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento trata de Fredrikstad Fotballinvest AS y no del club: la cuenta de resultados aparece en b1 (pág. 2) y en b3 (pág. 8). Elegí b3 y tomé b8, la nota 4 de amortizaciones de jugadores, como desglose de gastos. La nota 5 (b9-b10) es fiscal y la nota 6 (b11) es de patrimonio, así que no las elegí. Las cifras están en NOK, en unidades."
+}

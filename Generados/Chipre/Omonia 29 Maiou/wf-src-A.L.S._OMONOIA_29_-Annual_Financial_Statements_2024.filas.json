@@ -1,0 +1,439 @@
+{
+ "pdf": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf",
+ "md": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.md",
+ "mdSha1": "678b2c268672e0640b3ee7ae7a8e480778a08aac",
+ "ubicacionSha1": "4be0cfd4788ce1f26597e887a8f723076d028c1f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:44:21.190Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2024 €' / '2023 €' (L17), sin indicación de miles"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Συνδρομές μελών",
+   "actual": "76,072",
+   "anterior": "45,480",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Εισιτήρια διαρκείας",
+   "actual": "32,400",
+   "anterior": "32,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Έσοδα αγώνων",
+   "actual": "144,905",
+   "anterior": "108,840",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Χορηγίες και εισφορές",
+   "actual": "275,389",
+   "anterior": "304,260",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "Έσοδα μπουτίκ",
+   "actual": "21,900",
+   "anterior": "16,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 25,
+   "etiqueta": "Έσοδα από εκδηλώσεις",
+   "actual": "18,129",
+   "anterior": "8,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 26,
+   "etiqueta": "Μέλη Premium",
+   "actual": "35,064",
+   "anterior": "27,272",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 27,
+   "etiqueta": "Έσοδα από τμήμα έρευνας",
+   "actual": "59,000",
+   "anterior": "59,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 28,
+   "etiqueta": "Έσοδα μεταγραφών",
+   "actual": "-",
+   "anterior": "7,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 29,
+   "etiqueta": "Λαχνοί",
+   "actual": "22,500",
+   "anterior": "37,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 30,
+   "etiqueta": "Kids Club",
+   "actual": "810",
+   "anterior": "630",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 31,
+   "etiqueta": "Σύνολο εσόδων",
+   "actual": "686,169",
+   "anterior": "645,482",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 33,
+   "etiqueta": "Ενοίκια και ζημιές γηπέδων",
+   "actual": "17,120",
+   "anterior": "22,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 34,
+   "etiqueta": "Στολές παικτών",
+   "actual": "18,751",
+   "anterior": "21,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 35,
+   "etiqueta": "Αποθέματα στο τέλος",
+   "actual": "(5,500)",
+   "anterior": "(10,000)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 36,
+   "etiqueta": "Διάφορα έξοδα",
+   "actual": "54,481",
+   "anterior": "42,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 37,
+   "etiqueta": "Έξοδα ποδοσφαιρικού τμήματος",
+   "actual": "162,607",
+   "anterior": "229,187",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 38,
+   "etiqueta": "Έξοδα ιατρών, φυσιοθεραπευτών",
+   "actual": "11,553",
+   "anterior": "8,500",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 39,
+   "etiqueta": "Έξοδα αγώνων",
+   "actual": "1,790",
+   "anterior": "4,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 40,
+   "etiqueta": "Νερά",
+   "actual": "5,780",
+   "anterior": "5,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 41,
+   "etiqueta": "Δικαιώματα τραπεζών",
+   "actual": "341",
+   "anterior": "1,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 42,
+   "etiqueta": "Αποθέματα στην αρχή",
+   "actual": "10,000",
+   "anterior": "8,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 43,
+   "etiqueta": "Κοινωνικές ασφαλίσεις",
+   "actual": "68,205",
+   "anterior": "28,414",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 44,
+   "etiqueta": "Μισθοί",
+   "actual": "233,441",
+   "anterior": "109,919",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 45,
+   "etiqueta": "Αποζημείωσεις",
+   "actual": "-",
+   "anterior": "3,500",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 46,
+   "etiqueta": "Διοικητικά έξοδα",
+   "actual": "12,326",
+   "anterior": "42,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 47,
+   "etiqueta": "Γραφική ύλη και εκτυπωτικά",
+   "actual": "1,022",
+   "anterior": "1,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 48,
+   "etiqueta": "Προετοιμασία ποδοσφαιριστών",
+   "actual": "-",
+   "anterior": "7,900",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 49,
+   "etiqueta": "Αθλητικό υλικό για προπόνηση",
+   "actual": "8,893",
+   "anterior": "8,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 50,
+   "etiqueta": "Πρόστιμα",
+   "actual": "100,400",
+   "anterior": "79,700",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 51,
+   "etiqueta": "Μεταφορικά ομάδας και διαμονή στην Πάφο",
+   "actual": "6,040",
+   "anterior": "10,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 52,
+   "etiqueta": "Έξοδα δεξίωσης ποδοσφαιριστών",
+   "actual": "4,465",
+   "anterior": "3,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 53,
+   "etiqueta": "Έξοδα οχημάτων",
+   "actual": "136",
+   "anterior": "1,500",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 54,
+   "etiqueta": "Πακέτα μελών",
+   "actual": "3,588",
+   "anterior": "4,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 55,
+   "etiqueta": "Έξοδα οικήματος",
+   "actual": "4,000",
+   "anterior": "4,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 56,
+   "etiqueta": "Έξοδα προπονητικού κέντρου",
+   "actual": "2,400",
+   "anterior": "2,200",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 57,
+   "etiqueta": "Εγγραφή παικτών",
+   "actual": "5,545",
+   "anterior": "5,600",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 58,
+   "etiqueta": "Αποσβέσεις",
+   "actual": "1,380",
+   "anterior": "460",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 59,
+   "etiqueta": "Σύνολο εξόδων",
+   "actual": "728,764",
+   "anterior": "641,880",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 60,
+   "etiqueta": "(Έλλειμμα)/πλεόνασμα για την περίοδο",
+   "actual": "(42,595)",
+   "anterior": "3,602",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 31,
+  "actual": "686,169"
+ },
+ "total_gastos": {
+  "linea": 59,
+  "actual": "728,764"
+ },
+ "resultado": {
+  "linea": 60,
+  "actual": "(42,595)",
+  "anterior": "3,602"
+ },
+ "dudas": [],
+ "observaciones": "Estado de ingresos y gastos en euros, período 1-6-2023 a 31-5-2024. Las variaciones de existencias (L35 Αποθέματα στο τέλος con paréntesis y L42 Αποθέματα στην αρχή) se incluyen dentro de los gastos tal como figuran. Las filas con '-' (L28, L45, L48) tienen importe nulo en 2024. No hay notas de desglose."
+}

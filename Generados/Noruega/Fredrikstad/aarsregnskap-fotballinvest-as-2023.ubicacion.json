@@ -1,0 +1,160 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2023.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2023.md",
+ "mdSha1": "9e29f4e4cc9727acb11a78b034aba660cf7f5291",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:41:38.540Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    126,
+    149
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    164,
+    194
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    204,
+    224
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    255,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    264,
+    269
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    273,
+    280
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    337,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    366,
+    382
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    391,
+    412
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    477,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    489,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    507,
+    511
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    528,
+    533
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    541,
+    548
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1); importes en coronas sin indicación de miles",
+ "moneda": "NOK",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el Resultatregnskap de FREDRIKSTAD FOTBALLINVEST AS (b7, pág. 8; duplicado en b1, pág. 2) por ser de una entidad distinta de Fredrikstad Fotballklubb?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El documento solo trae cuentas de Fredrikstad Fotballinvest AS (org. 979 111 576), una sociedad inversora sin empleados (Note 1), no del club que juega el fútbol.",
+   "bloques": [
+    "b7",
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "Si se cargara esta entidad, ¿se usa b7 (cuentas anuales, pág. 8) y se descarta b1 (formulario pág. 2) como duplicado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 y b7 son el mismo estado de resultados 2023/2022 en dos formatos.",
+   "bloques": [
+    "b1",
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento es el årsregnskap 2023 de Fredrikstad Fotballinvest AS, no de Fredrikstad Fotballklubb. Contiene su estado de resultados dos veces (b1 pág. 2 formato Altinn y b7 pág. 8), balances (b2, b3, b8, b9), notas de activos, patrimonio, acciones e impuestos; ninguna nota desglosa ingresos o gastos. Escala en unidades de NOK."
+}

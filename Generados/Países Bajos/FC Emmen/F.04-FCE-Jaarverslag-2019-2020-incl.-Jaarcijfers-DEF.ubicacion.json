@@ -1,0 +1,77 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.pdf",
+ "md": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.md",
+ "mdSha1": "163de5c632877dcaf4712ce00e2e8a2df8ce1328",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:37:27.742Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    77,
+    81
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    83,
+    91
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    97,
+    125
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    131,
+    146
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    150,
+    157
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "in EUR * 1.000",
+ "moneda": "EUR",
+ "columna_ejercicio": "2019-2020",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El cuadro 'VERLIES EN WINSTREKENING' (b3) trae solo la columna 2019-2020, sin columna del año anterior?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado del índice solo muestra '2019-2020'; puede haber una columna 2018-2019 no visible.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Publicación resumida KNVB F.04 de FC Emmen B.V.; b3 es la cuenta de resultados en miles de EUR. b1/b2 son balance y b5 es una nota de tesorería, excluidos. No hay notas de desglose."
+}

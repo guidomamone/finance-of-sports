@@ -32,6 +32,9 @@ window.RANKINGS["dk-superliga"] = {
       { id:"vejle-dk", revenue:6.63, reportType:"official_balance_sheet",
         sourceId:"vejle-dk-aarsrapport-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.63]] },
+      { id:"sonderjyske-dk", revenue:5.621, reportType:"official_balance_sheet",
+        sourceId:"sonderjyske-dk-aarsrapport-2024-09-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.621]] },
     ],
   },
   2023: {

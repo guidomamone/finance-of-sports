@@ -1,20 +1,70 @@
 {
- "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.md",
- "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.pdf",
- "club": "fredericia-dk",
- "year": 2024,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:59:54.525Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": false,
-  "motivo": "sin estado de resultados"
- },
- "ladoConocido": 0,
- "rubros": []
+  "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.md",
+  "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.pdf",
+  "club": "fredericia-dk",
+  "year": 2024,
+  "generatedAt": "2026-10-21T12:47:56.911Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bruttofortjeneste",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        15.2326
+      ],
+      "glosa": "Beneficio bruto"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        11.492021
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.37516
+      ],
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.276731
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.1162
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado material"
+    },
+    {
+      "label": "Andre driftsomkostninger",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.18633
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
 }

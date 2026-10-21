@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md",
+ "clave": "770e79ef5c3755d4fb3443607c721a240c670eba",
+ "generado": "2026-10-21T12:48:01.143Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Se carga la columna consolidada 2019. Las notas abren Receita Operacional Líquida (L551), Pessoal (L555), Manutenção (L557), Gerais e Adm. (L562) y Outras Receitas/Despesas Operacionais (L565-L566); sus partes reemplazan a esos renglones. No se cargan subtotales y el resultado coincide con el impreso."
+ }
+}

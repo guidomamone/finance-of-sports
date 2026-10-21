@@ -1,0 +1,411 @@
+{
+ "pdf": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.pdf",
+ "md": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.md",
+ "generado": "2026-10-21T12:48:26.179Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "ok",
+ "clubId": "brondby-dk",
+ "year": null,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.pdf",
+   "campo": "cierre",
+   "valor": "2021-12-31",
+   "linea": null,
+   "motivo": "el .md habla de 31. december 2021 (36 veces); Resultatopgørelse y Balance «pr. 31. december»",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4210854715202004e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 6\": \"Nettoomsætning\" (L854) se abre en las 7 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Andre driftsindtægter\" (L855) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Resultat af transferaktiviteter\" (L864) se abre en las 5 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Eksterne omkostninger\" (L858) se abre en las 6 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Personaleomkostninger\" (L859) se abre en las 9 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Af- og nedskrivninger\" (L860) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Nettoomsætning\"): ¿Se deja afuera de la carga el desglose alternativo 'Salg af varer / Salg af tjenesteydelser' de Nettoomsætning (L1215-L1218)?",
+  "duda de extraer que no afecta la carga: L876 rotula 'kr.' aunque Totalindkomst (L883) repite Årets resultat en tkr.; no forma parte del resultado del ejercicio.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 328.362,
+  "gastos": 244.799,
+  "financiero": -0.145,
+  "impuesto": 0,
+  "resultadoImpreso": 83.418,
+  "resultadoParaCargar": 83.418,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Entré-, TV- og præmieindtægter",
+   "lado": "ingreso",
+   "M": 147.52,
+   "pagina": 46,
+   "linea": 1208,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Indtægter fra partnere og sponsorer",
+   "lado": "ingreso",
+   "M": 72.628,
+   "pagina": 46,
+   "linea": 1209,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "F&B og arrangementer m.v.",
+   "lado": "ingreso",
+   "M": 23.227,
+   "pagina": 46,
+   "linea": 1210,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Merchandise m.v.",
+   "lado": "ingreso",
+   "M": 42.614,
+   "pagina": 46,
+   "linea": 1211,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Udlejning erhvervsejendom m.v.",
+   "lado": "ingreso",
+   "M": 2.26,
+   "pagina": 46,
+   "linea": 1212,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Anden nettoomsætning",
+   "lado": "ingreso",
+   "M": 1.754,
+   "pagina": 46,
+   "linea": 1213,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "ingreso",
+   "M": 0.001,
+   "linea": 854,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Kompensation fra Staten",
+   "lado": "ingreso",
+   "M": 17.024,
+   "pagina": 46,
+   "linea": 1242,
+   "origen": "nota que desglosa \"Andre driftsindtægter\""
+  },
+  {
+   "etiqueta": "Donation",
+   "lado": "ingreso",
+   "M": 2.793,
+   "pagina": 46,
+   "linea": 1243,
+   "origen": "nota que desglosa \"Andre driftsindtægter\""
+  },
+  {
+   "etiqueta": "Indtægter",
+   "lado": "ingreso",
+   "M": 50.215,
+   "pagina": 49,
+   "linea": 1359,
+   "origen": "nota que desglosa \"Resultat af transferaktiviteter\""
+  },
+  {
+   "etiqueta": "Omkostninger",
+   "lado": "ingreso",
+   "M": -2.584,
+   "pagina": 49,
+   "linea": 1360,
+   "origen": "nota que desglosa \"Resultat af transferaktiviteter\""
+  },
+  {
+   "etiqueta": "Nedskrivninger på kontraktrettigheder",
+   "lado": "ingreso",
+   "M": -3.803,
+   "pagina": 49,
+   "linea": 1361,
+   "origen": "nota que desglosa \"Resultat af transferaktiviteter\""
+  },
+  {
+   "etiqueta": "Afskrivninger på kontraktrettigheder",
+   "lado": "ingreso",
+   "M": -25.288,
+   "pagina": 49,
+   "linea": 1362,
+   "origen": "nota que desglosa \"Resultat af transferaktiviteter\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "ingreso",
+   "M": 0.001,
+   "linea": 864,
+   "origen": "nota que desglosa \"Resultat af transferaktiviteter\""
+  },
+  {
+   "etiqueta": "Kamp- og spilleromkostninger",
+   "lado": "gasto",
+   "M": 25.869,
+   "pagina": 47,
+   "linea": 1264,
+   "origen": "nota que desglosa \"Eksterne omkostninger\""
+  },
+  {
+   "etiqueta": "Salgs- og markedsføringsomkostninger",
+   "lado": "gasto",
+   "M": 7.957,
+   "pagina": 47,
+   "linea": 1265,
+   "origen": "nota que desglosa \"Eksterne omkostninger\""
+  },
+  {
+   "etiqueta": "F&B og arrangementer m.v.",
+   "lado": "gasto",
+   "M": 18.138,
+   "pagina": 47,
+   "linea": 1266,
+   "origen": "nota que desglosa \"Eksterne omkostninger\""
+  },
+  {
+   "etiqueta": "Driftsomkostninger ejendomme",
+   "lado": "gasto",
+   "M": 11.545,
+   "pagina": 47,
+   "linea": 1267,
+   "origen": "nota que desglosa \"Eksterne omkostninger\""
+  },
+  {
+   "etiqueta": "Vareforbrug m.v. merchandise",
+   "lado": "gasto",
+   "M": 19.034,
+   "pagina": 47,
+   "linea": 1268,
+   "origen": "nota que desglosa \"Eksterne omkostninger\""
+  },
+  {
+   "etiqueta": "Administrationsomkostninger",
+   "lado": "gasto",
+   "M": 26.25,
+   "pagina": 47,
+   "linea": 1269,
+   "origen": "nota que desglosa \"Eksterne omkostninger\""
+  },
+  {
+   "etiqueta": "Vederlag til direktion",
+   "lado": "gasto",
+   "M": 4.477,
+   "pagina": 48,
+   "linea": 1293,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Kontantbaseret incitamentsordning, direktion",
+   "lado": "gasto",
+   "M": 2.564,
+   "pagina": 48,
+   "linea": 1294,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Pension til direktion",
+   "lado": "gasto",
+   "M": 0.187,
+   "pagina": 48,
+   "linea": 1296,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Bestyrelseshonorar",
+   "lado": "gasto",
+   "M": 0.525,
+   "pagina": 48,
+   "linea": 1298,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Gager og lønninger til medarbejdere",
+   "lado": "gasto",
+   "M": 103.062,
+   "pagina": 48,
+   "linea": 1300,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Pensionsordninger, bidragsbaserede",
+   "lado": "gasto",
+   "M": 5.211,
+   "pagina": 48,
+   "linea": 1301,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre omkostninger til social sikring",
+   "lado": "gasto",
+   "M": 1.11,
+   "pagina": 48,
+   "linea": 1302,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Øvrige personaleomkostninger",
+   "lado": "gasto",
+   "M": 7.983,
+   "pagina": 48,
+   "linea": 1303,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "gasto",
+   "M": 0.001,
+   "linea": 859,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Bygninger m.v.",
+   "lado": "gasto",
+   "M": 6.903,
+   "pagina": 49,
+   "linea": 1349,
+   "origen": "nota que desglosa \"Af- og nedskrivninger\""
+  },
+  {
+   "etiqueta": "Driftsmateriel og inventar",
+   "lado": "gasto",
+   "M": 3.875,
+   "pagina": 49,
+   "linea": 1350,
+   "origen": "nota que desglosa \"Af- og nedskrivninger\""
+  },
+  {
+   "etiqueta": "Tab ved salg/afgang af anlægsaktiver",
+   "lado": "gasto",
+   "M": 0.108,
+   "pagina": 49,
+   "linea": 1351,
+   "origen": "nota que desglosa \"Af- og nedskrivninger\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finansielle indtægter",
+   "M": 0.446,
+   "linea": 868
+  },
+  {
+   "etiqueta": "Finansielle omkostninger",
+   "M": -0.591,
+   "linea": 869
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skat af årets resultat",
+   "M": 0,
+   "linea": 873
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "641485abf19665323fc29c10c129b3ada541b9fe",
+  "rango": [
+   851,
+   878
+  ],
+  "lineasCargadas": [
+   1208,
+   1209,
+   1210,
+   1211,
+   1212,
+   1213,
+   854,
+   1242,
+   1243,
+   1359,
+   1360,
+   1361,
+   1362,
+   864,
+   1264,
+   1265,
+   1266,
+   1267,
+   1268,
+   1269,
+   1293,
+   1294,
+   1296,
+   1298,
+   1300,
+   1301,
+   1302,
+   1303,
+   859,
+   1349,
+   1350,
+   1351,
+   868,
+   869,
+   873
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 851 a 878 del .md):\nL851: |  | Note | 2021 tkr. | 2020 tkr. |\nL852: | --- | --- | --- | --- |\nL853: | Indtægter |  |  |  |\nL854: | Nettoomsætning | 4,5 | 290.004 | 113.262 |\nL855: | Andre driftsindtægter | 6 | 19.817 | 45.209 |\nL856: | Indtægter i alt |  | 309.821 | 158.471 |\nL857: | Omkostninger |  |  |  |\nL858: | Eksterne omkostninger | 7,8 | -108.793 | -60.304 |\nL859: | Personaleomkostninger | 9,10 | -125.120 | -102.448 |\nL860: | Af- og nedskrivninger | 11 | -10.886 | -10.766 |\nL861: | Omkostninger i alt |  | -244.798 | -173.518 |\nL862: | Resultat før transferaktiviteter, fin. poster og skat |  | 65.023 | -15.047 |\nL863: | Transferaktiviteter |  |  |  |\nL864: | Resultat af transferaktiviteter | 12 | 18.541 | -8.057 |\nL865: | Transferaktiviteter i alt |  | 18.541 | -8.057 |\nL866: | Resultat før finansielle poster og skat |  | 83.564 | -23.104 |\nL867: | Finansielle poster |  |  |  |\nL868: | Finansielle indtægter | 13 | 446 | 14 |\nL869: | Finansielle omkostninger | 14 | -591 | -2.763 |\nL870: | Finansielle poster i alt |  | -146 | -2.749 |\nL871: | Resultat før skat |  | 83.418 | -25.853 |\nL872: | Skat |  |  |  |\nL873: | Skat af årets resultat | 15 | 0 | 0 |\nL874: | Skat i alt |  | 0 | 0 |\nL875: | Årets resultat |  | 83.418 | -25.853 |\nL876: |  |  | 2021 kr. | 2020 kr. |\nL877: | --- | --- | --- | --- |\nL878: | Anden totalindkomst: |  |  |  |\n\nLO QUE SE CARGA:\n- ingreso · \"Entré-, TV- og præmieindtægter\" · 147.52 · L1208 (de una nota)\n- ingreso · \"Indtægter fra partnere og sponsorer\" · 72.628 · L1209 (de una nota)\n- ingreso · \"F&B og arrangementer m.v.\" · 23.227 · L1210 (de una nota)\n- ingreso · \"Merchandise m.v.\" · 42.614 · L1211 (de una nota)\n- ingreso · \"Udlejning erhvervsejendom m.v.\" · 2.26 · L1212 (de una nota)\n- ingreso · \"Anden nettoomsætning\" · 1.754 · L1213 (de una nota)\n- ingreso · \"Diferencia de redondeo\" · 0.001 · L854\n- ingreso · \"Kompensation fra Staten\" · 17.024 · L1242 (de una nota)\n- ingreso · \"Donation\" · 2.793 · L1243 (de una nota)\n- ingreso · \"Indtægter\" · 50.215 · L1359 (de una nota)\n- ingreso · \"Omkostninger\" · -2.584 · L1360 (de una nota)\n- ingreso · \"Nedskrivninger på kontraktrettigheder\" · -3.803 · L1361 (de una nota)\n- ingreso · \"Afskrivninger på kontraktrettigheder\" · -25.288 · L1362 (de una nota)\n- ingreso · \"Diferencia de redondeo\" · 0.001 · L864\n- gasto · \"Kamp- og spilleromkostninger\" · 25.869 · L1264 (de una nota)\n- gasto · \"Salgs- og markedsføringsomkostninger\" · 7.957 · L1265 (de una nota)\n- gasto · \"F&B og arrangementer m.v.\" · 18.138 · L1266 (de una nota)\n- gasto · \"Driftsomkostninger ejendomme\" · 11.545 · L1267 (de una nota)\n- gasto · \"Vareforbrug m.v. merchandise\" · 19.034 · L1268 (de una nota)\n- gasto · \"Administrationsomkostninger\" · 26.25 · L1269 (de una nota)\n- gasto · \"Vederlag til direktion\" · 4.477 · L1293 (de una nota)\n- gasto · \"Kontantbaseret incitamentsordning, direktion\" · 2.564 · L1294 (de una nota)\n- gasto · \"Pension til direktion\" · 0.187 · L1296 (de una nota)\n- gasto · \"Bestyrelseshonorar\" · 0.525 · L1298 (de una nota)\n- gasto · \"Gager og lønninger til medarbejdere\" · 103.062 · L1300 (de una nota)\n- gasto · \"Pensionsordninger, bidragsbaserede\" · 5.211 · L1301 (de una nota)\n- gasto · \"Andre omkostninger til social sikring\" · 1.11 · L1302 (de una nota)\n- gasto · \"Øvrige personaleomkostninger\" · 7.983 · L1303 (de una nota)\n- gasto · \"Diferencia de redondeo\" · 0.001 · L859\n- gasto · \"Bygninger m.v.\" · 6.903 · L1349 (de una nota)\n- gasto · \"Driftsmateriel og inventar\" · 3.875 · L1350 (de una nota)\n- gasto · \"Tab ved salg/afgang af anlægsaktiver\" · 0.108 · L1351 (de una nota)\n- financiero · \"Finansielle indtægter\" · 0.446 · L868\n- financiero · \"Finansielle omkostninger\" · -0.591 · L869\n- impuesto · \"Skat af årets resultat\" · 0 · L873"
+ }
+}
