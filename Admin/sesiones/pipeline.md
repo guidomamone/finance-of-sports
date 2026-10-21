@@ -82,4 +82,33 @@ Deja de ser cierto: nada en ESTADO. Borrar el 327 de TODO. `Admin/PIPELINE.md` n
 - 318: cerrado como «no probado» (`Admin/mediciones/318-open-notebook.md`; se reabre si Guido instala Docker). Open Notebook (`lfnovo/open-notebook`, MIT, dueño usuario `lfnovo`, repo de 2024-10) se instala con Docker, que esta máquina no tiene, y pide además un modelo de embeddings (Anthropic no los da).
 - 319: `ayghri/i-have-adhd` es de la cuenta personal `ayghri` (tipo User, no es fork, MIT, creado 2026-05-13, 58 mil estrellas, último push 2026-10-19). Es una skill (`skills/i-have-adhd/SKILL.md`, `disable-model-invocation: true`, se invoca con `/i-have-adhd` y queda activa hasta «stop adhd mode»): pone la próxima acción primero, pasos numerados, un solo paso siguiente, sin tangentes, estimaciones en minutos, listas de hasta 5. Trae además un hook `SessionStart` que solo inyecta las reglas si existe el archivo `~/.claude/.i-have-adhd-always`; sin ese archivo no hace nada. No se instaló. Las copias con el mismo nombre no se enumeraron: al instalar, usar exactamente `ayghri/i-have-adhd`.
 - `tools/audit.js`: chequeo nuevo P3 `ejercicio-sin-rastro` (aprobado por la Auditora 4; el de «atraso del último ejercicio» lo rechazó y su parte útil entró acá). Un hallazgo por club con los años entre su primer ejercicio y el más reciente cargado de su país que ni están cargados ni figuran en `data/faltantes/` con ningún estado. Al nacer: 51 clubes (84 club-años: 24 de hueco, 60 de cola), igual que lo medido por la Auditora. 17 de los 51 llevaban 2027 en la cola, porque el máximo del país incluía un presupuesto 2027 de un solo club; la Auditora 4 aprobó calcular ese máximo sin los ejercicios `official_budget` (6 en el sitio) y quedó: 38 clubes, 24 de hueco y 43 de cola. Los 43 de cola se miran uno por uno y los de clubes sin documento publicado se silencian por club en `tools/audit-ignore.json`, con motivo. Se silencia por club en `tools/audit-ignore.json`, con motivo, después de mirarlo. `audit.js` sigue en 0 P0 y los 2 P1 que ya daba este worktree (`faltantes-desfasado`, `estimados-desfasado`: falta un PDF de Brasil enlazado). `audit.js` tarda ~15 s (lo confirmó la Auditora); la frase «menos de un segundo» de la skill de arranque queda para que Guido la cambie.
+- `ejercicio-sin-rastro`, segunda condición (aprobada por la Auditora 4): no reporta un año cuyo cierre es de hace menos de 9 meses (`RECIENTE_MESES`, copia de la constante de `tools/faltantes-liga.mjs`: el .mjs corre su main al importarlo, por eso no se importa; si cambia allá, cambiar acá). La salida depende de la fecha de hoy. Pasa de 38 clubes y 67 club-años a 31 y 54, y con los 8 silenciados de abajo quedan 23 clubes y 41 club-años.
+
+### Revisión de la cola del chequeo (hecha el 2026-10-21; no se cargó nada)
+
+Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de sourcing: AC Milan 2014, Almagro 2024, Chievo Verona 2022-25 (club desaparecido), Ferro Carril Oeste 2024 (solo memoria narrativa), Lazio 2002, Los Andes 2022-24, Osasuna 2023 (solo memoria no financiera) y Sampdoria 2022. Silenciar es por club: si más adelante alguno publica otro año, el chequeo no lo avisa.
+
+**Documento en mano, sin cargar (es onboarding, no sourcing; el hallazgo se va solo al cargarlo).** Rutas bajo `Clubes/<País>/<Club>/`:
+- Brasil/Chapecoense: `demonstracoes-financeiras-2019.pdf`.
+- Países Bajos/FC Emmen: `F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.pdf` (2020) y `F.04-FCE-Jaarverslag-2020-2021-…pdf` (2021).
+- Dinamarca/FC Fredericia: `aarsrapport-<2021 a 2024>-12-31.pdf` y `aarsrapport-2025-12-31.xhtml`.
+- Dinamarca/FC København `aarsrapport-2025-12-31.xhtml` (y el consolidado PSE), Nordsjælland `aarsrapport-2025-12-31.xhtml`, Vejle `aarsrapport-2025-12-31.xhtml` y Brøndby `aarsrapport-2021-12-31.xhtml`: los 2025 y el 2021 son XHTML (ESEF), no PDF.
+- Dinamarca/SønderjyskE: `aarsrapport-2022-2023-09-30-transicion.xhtml` (2023) y `aarsrapport-2024-09-30.xhtml` (2024).
+- Noruega/Fredrikstad: `aarsregnskap-fotballinvest-as-<2019 a 2023>.pdf`.
+- Noruega/Sarpsborg 08: `aarsregnskap-fotball-invest-as-<2009, 2010, 2011>.pdf`.
+- Noruega/Vålerenga: `aarsregnskap-valerenga-fotball-as-2024.pdf` (más `-elite-2024`, `-parent-fli-2024` y `wf-2023-2024-8866f96d.pdf`).
+- Italia/Genoa: `Genoa-bilancio-30.06.2024-individual.pdf` (período de transición).
+- España/Girona FC: `cuentas-anuales-2020-2021.pdf`, `2021-2022` y `2022-2023`.
+- Bélgica/Lierse Kempenzonen: `jaarrekening-2022-06-30-individual.pdf`; Bélgica/RAAL La Louvière: `jaarrekening-2020-06-30-individual.pdf`.
+- Argentina/Ferro Carril Oeste 2026 (ya reciente, no sale en el chequeo): `memoria-y-balance-ejercicio-122-2025-26.pdf`.
+
+**Para sourcing (no hay documento en mano, pero hay una vía concreta).**
+- Brasil/Ferroviária 2011 y Novorizontino 2011-12: el repositorio de la federación paulista tiene el año 2011 de otros clubes (confirmado con Ituano); el 2012 de Novorizontino está en el índice como 3 JPG, no PDF. Notas: `Admin/sourcing/Brasil/Ferroviaria.md` L40, `Novorizontino.md` L37.
+- Brasil/Goiás 2019: el hueco 2018-2020 «sigue listado» en la página de transparencia del club (`Admin/sourcing/Brasil/Goias.md` L37): reintentar el enlace.
+- Alemania/Mönchengladbach 2025 y VfB Stuttgart 2025: los ejercicios existen (presentados en la asamblea de 2026); buscar el Jahresabschluss/Konzernabschluss en el Unternehmensregister (notas con el chequeo del 2026-10-18).
+- Italia/Monza 2025: el bilancio al 31/12/2025 «no está publicado todavía» (revisar, ya pasaron 10 meses).
+- Bélgica/Lierse Kempenzonen 2023-25: la Centrale des bilans (BNB) tiene API pública; el último chequeo (2026-10-08) solo llegó hasta 2022. Reconsultar.
+- Suiza/Basel 2022: la nota dice «no hay PDF para 2022 en adelante», pero en la carpeta hay `geschaeftsbericht_2022-23.pdf`; la fuente alternativa es SFL Finanzzahlen. Revisar la nota y el rótulo del año.
+- Italia/Fiorentina 2020: ya está `Fiorentina-bilancio-2020-21-issuu.pdf`; falta confirmar si el 2020 es ese mismo ejercicio con otro rótulo o un 2019/20 aparte.
+
 - 320, 321 y 322: no se tocaron (esperan portal, 313 y 335).
