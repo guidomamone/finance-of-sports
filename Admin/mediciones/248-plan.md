@@ -1,8 +1,9 @@
 # Taxonomía genérica con subcategorías por deporte (to-do 248): plan
 
-Estado: los pasos 1 a 3 del "Orden de trabajo" (sección 4) están HECHOS: el mapa en `data/category-map.js`, los chequeos de `audit.js`, el esquema 2.0 y la
-migración de los 319 JSON (`tools/migrar-v2.mjs`, con los 4 chequeos en verde) y los documentos. Las decisiones 1 a 8 (sección 6) quedaron como se
-recomendaron. Falta el paso 4 (la etapa de pantalla) y el 5, Bath Rugby (sección 5), con las decisiones 9 a 14 abiertas.
+Estado: los pasos 1 a 4 del "Orden de trabajo" (sección 4) están HECHOS: el mapa, los chequeos de `audit.js`, el esquema 2.0 con la migración de
+los 319 JSON (4 chequeos en verde), los documentos y la etapa de pantalla (el motor y Formato simplificado leen la capa genérica). La taxonomía
+`rugby-1` ya está en `data/category-map.js`. Las 14 decisiones (sección 6) están cerradas: 10 y 13 por votación, 14 y lo visible de Bath con el ok
+de Guido. Falta el paso 5: cargar Bath Rugby (sección 5).
 
 ## 1. El problema, medido
 
@@ -206,8 +207,10 @@ aprobado). No se carga nada antes del ok.
   del resultado operativo); intereses; impuesto. Importes exactos en libras.
 - **Ingresos por tipo, solo en el Strategic Report** (parte del informe anual, en £m con un decimal): Central income (lo que reparten
   Premiership Rugby, por TV y comercial central, y la RFU por el sistema de desarrollo de jugadores), Gate receipts (abonos y entradas),
-  Commercial activities (hospitalidad, comida y bebida, sponsors, merchandising, eventos) y Other income. La prosa abre algunos (en 2024:
-  PRL 3,0 y RFU 2,3; abonos 3,0 y entradas 3,6; hospitalidad 2,0, comida y bebida 1,4, sponsors 3,3).
+  Commercial activities (hospitalidad, comida y bebida, sponsors, merchandising, eventos) y Other income. En 2021 a 2023 imprime además
+  **"CVC income" como fila aparte** (2021-22: 3,3; 2022-23: 2,4; L119 y L156 de sus `.md`): el anticipo del acuerdo de CVC con Premiership
+  Rugby, que NO está adentro de Central income. La prosa abre algunos (en 2024: PRL 3,0 y RFU 2,3; abonos 3,0 y entradas 3,6; hospitalidad
+  2,0, comida y bebida 1,4, sponsors 3,3).
 - **Gastos**: la nota de Staff costs da el total del personal (sueldos, cargas, pensión), sin partir en plata entre plantel y administración
   (solo la dotación: 119 "players and team management" y 55-62 de administración). La nota 5 da la depreciación. No hay pases capitalizados.
 - **Deuda y caja**: del balance (préstamo DCMS, préstamo del director a tasa cero descontado al 7 %, caja).
@@ -226,7 +229,9 @@ aprobado). No se carga nada antes del ok.
 ### Subcategorías de rugby (`rugby-1`)
 
 Ids propios del rugby, aunque varios sean 1:1 con el fútbol: así la prueba demuestra que el motor y la pantalla leen la genérica y no un id
-de fútbol que coincide por casualidad.
+de fútbol que coincide por casualidad. **Ya están en `data/category-map.js`** (`RUGBY_REVENUE_CATEGORIES` / `RUGBY_EXPENSE_CATEGORIES`, con la
+descripción en el comentario de cada una y sus `_LABELS`; el mapa en `SPORT_TAXONOMIES.rugby`) y publicadas en `data/schema/taxonomy-rugby-1.json`.
+Rugby sigue apagado en el selector hasta que se cargue Bath.
 
 | Lado | Subcategoría | Genérica | Bath la usa |
 |---|---|---|---|
@@ -236,7 +241,7 @@ de fútbol que coincide por casualidad.
 | ingreso | `commercial_activities` | `commercial` | sí |
 | ingreso | `player_transfers` | `player_transfers` | no (la política contable lo prevé) |
 | ingreso | `academy_community` | `other_sporting_sections` | no |
-| ingreso | `other_income` | `other_revenue` | sí, y el redondeo (decisión 11) |
+| ingreso | `other_income` | `other_revenue` | sí: el redondeo (decisión 11), CVC income (2021-2023) y el fair value de 2021 (votación) |
 | ingreso | `lump_rugby_operations` | `undisclosed` | no |
 | gasto | `squad_wages` | `first_team_staff` | sí (decisión 12) |
 | gasto | `matchday_costs` | `match_operations` | no |
@@ -245,11 +250,30 @@ de fútbol que coincide por casualidad.
 | gasto | `other_expenses` | `other_operating_expenses` | no |
 | gasto | `lump_rugby_operations_expense` | `undisclosed` | sí (decisión 12) |
 | gasto | `depreciation` | `depreciation` | sí |
+| gasto | `player_registrations_amortisation` | `player_registrations_amortisation` | no |
 | gasto | `other_amortisation` | `other_amortisation` | no |
-| gasto | `exceptional_items` | `exceptional` | si aplica (decisión 13) |
+| gasto | `exceptional_items` | `exceptional` | no |
 
-Bath quedaría, por ejercicio, con unas 8 líneas: 4 de ingreso del Strategic Report más la línea de redondeo y Other operating income; de gasto,
-el personal, la depreciación y el resto de Cost of sales más Administrative expenses como bolsón sin desglosar.
+Bath quedaría, por ejercicio, con unas 8 líneas: las filas de ingreso del Strategic Report (CVC income en 2021-2023) más la línea de redondeo y
+Other operating income; de gasto, el personal, la depreciación y el resto de Cost of sales más Administrative expenses como bolsón sin desglosar.
+
+### Cómo leen las tools la taxonomía de un club (respuestas a Pipeline, `Admin/mediciones/339-inventario.md`, sección 6)
+
+1. **Archivo y función.** Todo vive en `data/category-map.js`; las tools no lo leen con regex propio sino con `tools/json-datos.mjs`:
+   - `categoriasDeDeporte(deporte)` → `{ version, lump: { revenue, expense }, revenue: { <sub>: { label, description, generic } }, expense: { … } }`.
+     `deporte` es el id interno de `data/clubs.js` (`'futbol'`, `'rugby'`); devuelve `null` si el deporte no tiene taxonomía. La descripción es la
+     primera oración del comentario de la subcategoría (la misma regla que `loadCategories()` de `jev-categorizar.mjs`).
+   - `taxonomia()` → `{ revenue, expense (las listas de fútbol), genericas, deportes: SPORT_TAXONOMIES, genericCategoryOf }`, para quien necesite el mapa
+     entero. En el navegador y en los vm de `audit.js`: `SPORT_TAXONOMIES[deporte]` (`version`, `lists`, `lump`, `revenue`, `expense`) y
+     `genericCategoryOf(deporte, lado, subcategoría)`.
+   - El formato del archivo es el de siempre: las listas de rugby se llaman `RUGBY_REVENUE_CATEGORIES` / `RUGBY_REVENUE_CATEGORY_LABELS` (y `EXPENSE`), y
+     `SPORT_TAXONOMIES[deporte].lists` dice el nombre de las listas de cada deporte. El regex de `loadCategories()` sirve igual cambiando el nombre.
+2. **Descripciones de `rugby-1`**: las del comentario de cada subcategoría en `data/category-map.js`, también en `data/schema/taxonomy-rugby-1.json`
+   (`description_es`). Fútbol tiene la misma tabla en `taxonomy-football-1.json`.
+3. **Bolsón sin desglosar de rugby**: sí, `lump_rugby_operations` (ingreso) y `lump_rugby_operations_expense` (gasto), los dos con genérica `undisclosed`;
+   cada deporte lo declara en `SPORT_TAXONOMIES[deporte].lump`. La pantalla lo rotula «Rugby profesional (sin desglosar por la fuente)»
+   (`LUMP_LABEL_BY_SPORT` de `js/finanzas-calc.js`). Las compuertas que buscan `^lump_football_operations` deberían usar `lump` del deporte o
+   la genérica `undisclosed`.
 
 ### Cómo lo ve la pantalla, sección por sección
 
@@ -318,10 +342,8 @@ Lo que se ve distinto está marcado **VISIBLE**: es lo que hay que mostrarle a G
     desarrollo de jugadores). Recomiendo una sola línea `central_income` → `media_rights`, con PRL y RFU como `items` cuando la prosa da los dos
     importes; es lo mismo que el reparto central de TV de una liga de fútbol. La alternativa es una genérica nueva para fondos de federación,
     que hoy tendría un solo club.
-    Adentro va además la parte del acuerdo de CVC con Premiership Rugby: £12,8 M cobrados en 2019 como anticipo del contrato comercial,
-    reconocidos en 48 meses (Bath 2021 y 2022: 12 meses cada uno; 2023: 9). La regla vigente (`CONVENCIONES-DATOS.md`, votación 3 a 0) manda
-    la venta o cesión de un % de derechos a un fondo a `other_income`, como ingreso único. Acá el club lo trata como anticipo de ingresos
-    comerciales, no como venta. Recomiendo pasarlo por `votacion-de-criterios` antes de cargar 2021 a 2023, porque son unos £3 M por año.
+    **Resuelto por votación (3 a 0, `CONVENCIONES-DATOS.md`): el ingreso de CVC va a `other_income`.** No está adentro de Central income:
+    el Strategic Report lo imprime como fila aparte, "CVC income" (2021 a 2023).
 11. **Ingresos por tipo con un decimal**: el Strategic Report da £m redondeados (2024: 5,3 + 7,0 + 8,1 + 0,4 = 20,8 contra un Turnover exacto).
     Recomiendo cargar las 4 filas como las imprime y una quinta, "Diferencia de redondeo contra el Turnover" (`other_income`,
     `disclosure: "aggregated_residual"`), que es el Turnover exacto menos la suma, para que cierre al peso. Abonos y entradas por separado solo
@@ -330,8 +352,7 @@ Lo que se ve distinto está marcado **VISIBLE**: es lo que hay que mostrarle a G
     precedente del fútbol (`caja-deuda.mjs --personal`): el total va a `squad_wages`, con un rótulo que diga que incluye administración; Cost of
     sales + Administrative expenses − personal − depreciación va como bolsón sin desglosar, para que las filas que esconde salgan "—" y no 0.
 13. **"Fair value movements" de 2021** (+£6,66 M, revaluación de la participación en Premiership Rugby, adentro del resultado operativo):
-    recomiendo `asset_sales` en `financial`, igual que la regla de las ganancias por inversiones y filiales (votación 3 a 0). La alternativa
-    es una línea `exceptional_items`. Si no hay acuerdo, va a `votacion-de-criterios` junto con la 10.
+    **resuelto por votación (2 a 1, `CONVENCIONES-DATOS.md`): `other_income`**, una línea de ingreso; `asset_sales` quedó descartado.
 14. **Comparar Bath con un club de fútbol**: recomiendo dejarlo, porque las filas genéricas son las mismas y es justo lo que la capa
     habilita. El selector sigue separando por deporte por defecto.
 
