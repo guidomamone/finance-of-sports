@@ -661,8 +661,13 @@ function propuestaJev(filas, jev, cual) {
 }
 const CACHE_JEV = resolve(ROOT, 'Generados', '_cache', 'jev-caja-deuda.jsonl');
 let claveJev = null;
-async function jevDe(filas, ejecutar, deporte) {
-  const bal = dedupe(filas.filter((f) => f.balance)).filter((f, i, xs) => xs.findIndex((g) => g.linea === f.linea) === i).slice(0, 120);
+// LO QUE SE LE MANDA A JEV O A LA IA TIENE TOPE (120 filas del balance, 60.000 caracteres de sus páginas, 150 filas de total): si el documento trae
+// más, se dice (regla de Admin/PIPELINE.md «Una tool que decide no lee solo una parte del documento»), para que un «no encontrado» no pase por
+// un dato que no se miró. El tope no cambia: lo que se pide (y su caché) queda igual.
+const avisarRecorte = (md, que, usadas, total) => { if (total > usadas) console.log(`  AVISO (recorte): ${md}: ${que}: se mandaron ${usadas} de ${total}; el resto no se miró`); };
+async function jevDe(filas, ejecutar, deporte, md = '') {
+  const todas = dedupe(filas.filter((f) => f.balance)).filter((f, i, xs) => xs.findIndex((g) => g.linea === f.linea) === i);
+  const bal = todas.slice(0, 120); avisarRecorte(md, 'Jev (caja y deuda), filas del balance', bal.length, todas.length);
   if (!bal.length) return { error: 'sin filas del balance' };
   const texto = (f) => `${String(f.etiqueta).slice(0, 120)} | ${f.cifras.join(' | ')}`;
   const state = `Filas del balance (estado de situación financiera) de un club de ${deporteEnFrase(deporte)}, tal cual las leyó el sistema (etiqueta | cifras del año | del año anterior):\n${bal.map((f) => `L${f.linea}: ${texto(f)}`).join('\n')}`;
@@ -985,7 +990,7 @@ export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false
   if (!paginas.length) return { error: 'sin páginas de balance' };
   const L = mdText.split('\n'); const PAG = /^---\s*pág\.\s*(\d+)\s*---/i; let pag = 1; const lineas = [];
   for (let i = 0; i < L.length; i++) { const m = L[i].match(PAG); if (m) { pag = Number(m[1]); continue; } if (paginas.includes(pag) && L[i].trim()) lineas.push(`L${i + 1}: ${L[i].slice(0, 220)}`); }
-  const texto = lineas.join('\n').slice(0, 60000);
+  const todo = lineas.join('\n'); const texto = todo.slice(0, 60000); avisarRecorte(md, 'IA (caja y deuda), caracteres de las páginas del balance', texto.length, todo.length);
   const user = `Documento: ${md.split('/').slice(1).join(' / ')}.\nCriterio de deuda de este club: ${criterioDeuda}\n\nPÁGINAS DEL BALANCE (${paginas.join(', ')} del visor):\n${texto}`;
   const { llamarClaude, tokensDe, usdEstimado } = await import('./claude-llamada.mjs'); const SYSTEM_IA = sistemaIA(deporteDePdf(md));
   if (!ejecutar) return { ensayo: true, usd: usdEstimado(tokensDe(SYSTEM_IA + user), 400, idModelo) };
@@ -1062,7 +1067,7 @@ async function medir({ club = null, detalle = false, ia = false, jev = false, ej
     const porMd = new Map(); for (const c of casos.filter((x) => x.valor == null)) porMd.set(c.md, [...(porMd.get(c.md) || []), c]);
     let usd = 0; let ensayos = 0; let errores = 0;
     const uno = async ([md, cs]) => {
-      const r = await jevDe(cs[0].ctx.filas, ejecutar, deporteDePdf(md));
+      const r = await jevDe(cs[0].ctx.filas, ejecutar, deporteDePdf(md), md);
       if (r.ensayo) { usd += r.usd; ensayos++; return; }
       if (r.error) { errores++; return; }
       usd += r.costo || 0;
@@ -1188,7 +1193,7 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
     // distintos eran errores del sitio, PAOK 2021 y Panetolikos 2022; US$ 0,11 en total). Antes de la IA cara; sin --ejecutar, ensayo.
     let sinDato = faltan.filter((k) => res[k].valor == null);
     if (sinDato.length) {
-      const j = await jevDe(filasDe(a.md), ejecutar, deporteDePdf(a.md));
+      const j = await jevDe(filasDe(a.md), ejecutar, deporteDePdf(a.md), a.md);
       if (j.ensayo) { usd += j.usd; for (const k of sinDato) res[k].como += ` · escalón 1b: ensayo (~US$ ${j.usd.toFixed(4)})`; }
       else if (j.error) { for (const k of sinDato) res[k].como += ` · escalón 1b: ${j.error}`; }
       else { usd += j.costo || 0; for (const k of sinDato) { const ctx = { ...res[k].ctx, jev: j.datos }; res[k] = { ctx, ...escalera(ctx.filas, k === 'cash' ? 'cash' : 'deuda', ctx) }; } }
@@ -1284,7 +1289,7 @@ function candidatosPersonal(md) {
 }
 async function jevPersonal(cands, ejecutar, deporte) {
   if (!cands.length) return { error: 'sin filas de total' };
-  const cs = cands.slice(0, 150);
+  const cs = cands.slice(0, 150); avisarRecorte(cands[0].md, 'Jev (personal), filas de total', cs.length, cands.length);
   const criteria = { ...Object.fromEntries(cs.map((c, i) => [`c${i}`, `${c.md.split('/').pop()} L${c.linea}: ${String(c.etiqueta).slice(0, 80)} | ${c.cifras.slice(0, 2).join(' | ')} (${c.contexto})`])), ninguna: 'Ninguna de estas filas es el total del costo de personal del ejercicio' };
   const body = { state: 'Filas de TOTAL de las tablas de los documentos contables de UN ejercicio de un club de ' + deporteEnFrase(deporte) + ', cada una con su tabla (texto de arriba, encabezado, primeras filas). Cifras: del ejercicio | del anterior.', model: 'jev-latest',
     questions: { personal: { type: 'choice', instructions: '¿Cuál es el TOTAL del costo de personal del ejercicio: sueldos y salarios + cargas sociales + otros beneficios, de todo el personal (jugadores y empleados)? No es: una parte (solo cargas sociales, solo un sector), una provisión, una cantidad de empleados. Si ninguna fila lo es, elegí "ninguna".', criteria } } };
