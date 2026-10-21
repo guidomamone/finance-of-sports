@@ -97,8 +97,13 @@ el número de la izquierda es el orden de trabajo.
     (f) material de difusión (era el 259): un deck para periodistas y sponsors, o un informe por liga («las finanzas de LaLiga 2025 en
         10 slides»), con el tipo Slides; sin código. Nada de esto sale antes del 337.
 352. EL CHEQUEO DEL iXBRL PASA A FRENAR (Guido, 2026-10-21). Hechos: la fuente de un año en XHTML (`fuente-xhtml-sin-url`, nota pública) y
-   `tools/ixbrl-resultado.mjs`, que avisa si el resultado cargado no coincide con el etiquetado. Falta: con 10 años de varios clubes daneses
-   cargados por Onboarding 8 sin falsos avisos, la Auditora decide si pasa de aviso a frenar.
+   `tools/ixbrl-resultado.mjs`, que avisa si el resultado cargado no coincide con el etiquetado. Decidido (Auditora 5, en
+   `Admin/registros/auditoria-proceso.jsonl`): pasa a freno solo para el perímetro individual; el consolidado sigue como aviso. Falta: que
+   Pipeline lo codee con las condiciones del veredicto.
+360. LO QUE EL SITIO NO CUMPLE DE LA GUÍA DE UX (Pantallas 7, al escribir `referencia/ux.md`). Terminado cuando: (a) al cambiar de vista el foco
+   va al título de la vista nueva y nunca queda en `body`, y el selector de club devuelve el foco al cerrarse; (b) a 375 px, ningún elemento
+   tocable de la página de una liga mide menos de 44 × 44 px (`.lg-club` mide 17 px de alto y «← Todas las ligas» 36 px), con el barrido de la
+   guía sobre las demás vistas; (c) los países abiertos de la lista de Ligas siguen abiertos al volver con atrás. Lo hace Pantallas.
 356. CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing busca en Companies House los clubes que no tenemos y
    presentan en iXBRL (Plymouth, Bolton, Lincoln, Oxford, Peterborough, Hibernian y el resto de League One, League Two y Escocia) y baja los
    últimos 5 años; Onboarding los carga con `tools/xhtml-aarsrapport.mjs` (sin transcribir). Presupuesto: Guido dijo que sí (2026-10-21);
