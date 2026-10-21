@@ -33,7 +33,7 @@ el número de la izquierda es el orden de trabajo.
 3. 345 (Pipeline 13): lector del XHTML danés, con el diseño aprobado por la Auditora
 4. 347 (Pipeline 13): `preparar` saca los enlaces rotos de `Clubes/`; después, el consolidado de FC København 2025
 5. 347 (Auditora 4): segunda corrida del proceso de P2 y P3, con `catchall-dominante` (256); la primera bajó `linea-duplicada` de 927 a 0
-6. 350: votar una categoría para subsidios, donaciones y aportes (hoy caen en «otros»; no recategoriza lo cargado)
+6. 350: relevar qué categorías están en vano (educación incluida) y votar una para subsidios, donaciones y aportes
 
 **C. Técnico**
 (nada fuera de lo que está en marcha)
@@ -93,6 +93,9 @@ el número de la izquierda es el orden de trabajo.
    ~130 `catchall-dominante` son subsidios, donaciones y aportes (Subsídios, Επιχορηγήσεις, Целевые взносы; ligas bajas de Grecia, Rusia y
    Portugal) que la taxonomía no tiene dónde poner. Es una votación de criterio (`votacion-de-criterios`); por la regla vigente no recategoriza
    lo ya cargado.
+   Además (Guido, 2026-10-21): revisar si la categoría de educación tiene sentido (se abrió por Vélez y parece aplicar a pocos clubes
+   argentinos), y antes de votar, un relevamiento exhaustivo de qué categorías y subcategorías de la taxonomía están en vano hoy: cuántos
+   clubes y años usan cada una, con qué monto, y cuáles casi nadie usa.
 335. MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
    un mail sin que Guido lo pida en sus palabras.
    (a) Proceso: Etapa 1 lista y probada de punta a punta (Resend, `outreach.financeofsports.com`, cola en `Admin/outreach/`, envío desde
