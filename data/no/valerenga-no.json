@@ -166,7 +166,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.22635,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.22635,"tax":0,"gross_debt":null,"cash":1.126337},
       "official_totals": {"revenue":102.580405,"expenses":137.039282,"net_result":-42.685226},
       "adjustments": {
         "extra_rows": [
@@ -294,7 +294,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":5.143771,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":5.143771,"tax":0,"gross_debt":9.565613,"cash":6.78605},
       "official_totals": {"revenue":201.05265,"expenses":200.060777,"net_result":6.135645},
       "adjustments": {
         "extra_rows": [
@@ -339,7 +339,7 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.194918,"disclosure":"aggregated"},
         {"label":"Annen driftskostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-83.502873,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.749113,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.749113,"tax":0,"gross_debt":18.465613,"cash":4.616901},
       "official_totals": {"revenue":78.627507,"expenses":93.803749,"net_result":-12.427128},
       "adjustments": {
         "extra_rows": [{"label":"Annen finansinntekt","amount":39.800533},{"label":"Annen finanskostnad","amount":-37.05142},{"label":"Skattekostnad","amount":0}]
@@ -376,7 +376,7 @@
         },
         {"label":"Annen driftskostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-98.900054,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":31.72628,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":31.72628,"tax":0,"gross_debt":18.465613,"cash":10.074982},
       "official_totals": {"revenue":99.824626,"expenses":128.95424,"net_result":2.596666},
       "adjustments": {"extra_rows":[{"label":"Annen finansinntekt","amount":70.10379},{"label":"Annen finanskostnad","amount":-38.37751}]}
     }
