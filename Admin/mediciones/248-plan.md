@@ -247,17 +247,23 @@ de fútbol que coincide por casualidad.
 Bath quedaría, por ejercicio, con unas 8 líneas: 4 de ingreso del Strategic Report más la línea de redondeo y Other operating income; de gasto,
 el personal, la depreciación y el resto de Cost of sales más Administrative expenses como bolsón sin desglosar.
 
-### Cómo lo ve la pantalla
+### Cómo lo ve la pantalla, sección por sección
 
-- **Selector**: Rugby pasa a ser un deporte elegible, con un club; eligiéndolo, Inglaterra muestra solo Premiership Rugby.
-- **Finanzas**: necesita la etapa de pantalla (decisión 6). Sin ella, el motor descarta los gastos con ids de rugby (suma listas de fútbol)
-  y Formato simplificado los manda al catch-all. Con ella, las filas salen de la genérica y Bath ve las mismas filas que un club de fútbol.
-- **Rótulos**: las filas de Formato simplificado son genéricas salvo dos: "Fútbol profesional (sin desglosar por la fuente)" pasa a "Rugby
-  profesional…" según el deporte del club (una clave nueva en `data/lang/` y `data/site-labels.js`), y "Venta de Jugadores" sirve igual.
-- **Comparar y rankings**: el ranking es por liga, así que no se mezclan deportes. Comparar a Bath con un club de fútbol funciona (las filas
-  son las mismas genéricas); recomiendo dejarlo (decisión 14).
-- **Textos fijos que dicen "fútbol"** (Inicio, Ligas, el paquete abierto, `description` de `exportar-paquete.mjs`): se revisan en la carga y
-  se anotan, no se reescriben sin ok.
+Lo que se ve distinto está marcado **VISIBLE**: es lo que hay que mostrarle a Guido antes de cargar.
+
+| Sección | Qué cambia para Bath | Qué cambia para el fútbol |
+|---|---|---|
+| Selector | **VISIBLE**: Rugby 🏉 pasa de "próximamente" a elegible, con 1 club; eligiéndolo, Inglaterra muestra solo Premiership Rugby. | Nada (el paso Deporte ya existe; hoy ofrece Fútbol y el resto apagado). |
+| Inicio | La tarjeta del club con sus KPIs (ingresos, resultado, masa salarial / ingresos, deuda neta) sale de la genérica, igual que un club de fútbol. | Nada. |
+| Finanzas: Formato simplificado | Las mismas filas que un club de fútbol, armadas desde la genérica (decisión 6). **VISIBLE**: el bolsón dice "Rugby profesional (sin desglosar por la fuente)" y, como Bath tiene bolsón de gastos, las filas de gasto que no abre (Organización de partidos, Administración…) salen "—" y no 0, por la regla de siempre. | Nada (mismas filas, mismos números). |
+| Finanzas: Formato del club | Las líneas de Bath con su rótulo en inglés, tal cual el documento. | Nada. |
+| Finanzas: Por gestión, Resultados y Títulos, Pases | Bath no tiene gestiones, resultados, títulos ni pases cargados: esas tarjetas no aparecen (es lo que ya pasa con cualquier club sin esos datos). La tarjeta de resultados dice "Mejor resultado en Libertadores", que es de fútbol sudamericano; no se ve porque Bath no tiene resultados. | Nada. |
+| Finanzas: Estadio y camiseta (`js/contexto.js`) | Sin datos de Bath en `data/contexto/gb.js`: la tarjeta se esconde. Cargarlos no entra en la prueba. | Nada. |
+| Ligas | **VISIBLE**: una liga nueva, Premiership Rugby, con un solo club en su ranking. El gráfico de la liga usa el rótulo del bolsón con su nombre corto (`LUMP_LABEL` de `js/liga.js`): pasa a depender del deporte. | Nada. |
+| Rankings (`data/rankings/`) | Un archivo nuevo, `gb-premiershiprugby.js`. Ningún ranking mezcla deportes porque son por liga. | Los demás no cambian (`generate-rankings.js --check`). |
+| Comparar | Bath se puede comparar con cualquier club: mismas filas genéricas (decisión 14). En el selector, el filtro de deporte separa por defecto. | Nada. |
+| Páginas `/club/` y `/liga/` (`tools/generate-club-pages.js`) | **VISIBLE para buscadores**: el JSON-LD dice `sport: 'Soccer'` fijo; para Bath tiene que decir `'Rugby'`. Una página nueva de club y una de liga, con su imagen `og/`. | Nada. |
+| Textos fijos | El pie de página ("datos financieros de clubes de fútbol"), la `description` del paquete abierto y algún texto de Inicio dicen fútbol. **VISIBLE** si se cambian: se proponen con el texto exacto, no se reescriben sin ok. | El mismo texto, si se cambia. |
 
 ### Qué prueba y qué se anota
 
