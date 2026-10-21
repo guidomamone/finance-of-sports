@@ -6,6 +6,7 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { existsSync } from 'node:fs';
 import vm from 'node:vm';
+import { clubDeRuta } from './carpetas-clubes.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 
@@ -49,6 +50,12 @@ export function deporteDeCarpeta(ruta) {
 // El deporte de un documento, SIN default: la ficha del club (data/clubs.js) -> el registro de altas de su carpeta -> null. Quien recibe null se detiene y pide el deporte
 // (correr `node tools/alta-club.mjs --todos --solo "<país>/<club>"`, gratis), no categoriza como fútbol.
 export function resolverDeporte({ club = null, pdf = null } = {}) { return deporteDeClub(club) || deporteDeCarpeta(pdf) || null; }
+// Olvida lo leído de data/clubs.js y del registro de altas: después de correr alta-club en el mismo proceso (lote.mjs), el deporte recién calculado tiene que verse.
+export function olvidarDeportes() { _clubs = null; _altas = null; }
+// El deporte de un documento por su ruta (Clubes/<País>/<Club>/<archivo>): la ficha del club o el registro de altas. null si nadie lo calculó.
+export function deporteDePdf(pdf) { return resolverDeporte({ club: clubDeRuta(pdf).clubId, pdf }); }
+// El deporte tal como va en la frase de un prompt de lectura («clubes de fútbol», «el negocio del rugby»): el nombre del deporte, o «deporte» si no se sabe cuál es (nunca se supone fútbol).
+export const deporteEnFrase = (deporte) => (deporte ? nombreDeporte(deporte) : 'deporte');
 export const MENSAJE_SIN_DEPORTE = (quien) => `${quien} no tiene deporte: ni ficha en data/clubs.js ni deporte en el registro de altas. Correr node tools/alta-club.mjs --todos --solo "<país>/<club>" (gratis)`;
 
 // SPORT_TAXONOMIES de data/category-map.js: { futbol: { version, revenue: {sub: genérica}, expense: {...} }, ... }

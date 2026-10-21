@@ -29,6 +29,7 @@ import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 
 import { resolve } from 'node:path';
 import { createRequire } from 'node:module';
 import vm from 'node:vm';
+import { deporteDeClub } from './deporte-club.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const REF = resolve(ROOT, 'tools', 'club-league-reference');
@@ -254,6 +255,11 @@ async function paginaLocal(iso, liga, anio, partida, equiposEn) {
 // campos en `club`).
 const LANG_PAIS = { pt: 'pt', br: 'pt', ar: 'es', co: 'es', pe: 'es', cl: 'es', uy: 'es', mx: 'es', es: 'es', it: 'it', ru: 'ru', gr: 'el', ee: 'et', be: 'nl', nl: 'nl', de: 'de', dk: 'da', tr: 'tr', fr: 'fr', ch: 'de' };
 const FICHA_CLUB = /\{\{\s*(Infobox football club|Info\/Futebol|Info\/Clube de futebol|Info\/Clube|Ficha de club|Ficha de equipo de fútbol|Squadra di calcio|Sportverein|Футбольный клуб|Карточка футбольного клуба|Κουτί πληροφοριών ποδοσφαιρικής ομάδας|Infobox voetbalclub|Infobox Fußballverein|Jalgpalliklubi)/i;
+// (to-do 341, #11) La ficha de un club de RUGBY (Bath Rugby: «Infobox rugby team»). Cada deporte usa SU ficha: un club de fútbol sigue pasando solo por FICHA_CLUB (su
+// resultado no cambia) y uno de rugby, solo por esta. La página de TEMPORADA de una liga de rugby (estadio, capacidad y «Kit supplier») ya la lee leerPagina sin cambios.
+// Un deporte sin ficha acá (o un club sin deporte en data/clubs.js) usa la de fútbol, como hasta ahora.
+const FICHA_RUGBY = /\{\{\s*Infobox rugby (?:team|union club|league club)/i;
+const fichaDe = (clubId) => (deporteDeClub(clubId) === 'rugby' ? FICHA_RUGBY : FICHA_CLUB);
 async function api(lang, q) {
   for (let i = 0; i < 3; i++) {
     await dormir(1500 * (i ? 4 * i : 1));
@@ -502,7 +508,7 @@ async function main() {
           for (const [clave, lang] of [['en', 'en'], ['local', local]]) {
             if (!lang || !titulos[lang] || (clave === 'local' && lang === 'en')) continue;
             const art = await pagina(titulos[lang], lang);
-            if (!art || !FICHA_CLUB.test(art.wikitext)) { r[clave] = { pagina: titulos[lang], lang, sinFicha: true }; continue; }
+            if (!art || !fichaDe(id).test(art.wikitext)) { r[clave] = { pagina: titulos[lang], lang, sinFicha: true }; continue; }
             r[clave] = { pagina: art.titulo, lang, revid: art.revid, ...camisetasDePagina(art.wikitext) };
           }
         }

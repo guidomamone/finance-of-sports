@@ -334,3 +334,39 @@ La frase «Y si subiste `ASSET_V` … hay que correr `generate-fuentes-page.js` 
 
 ### Qué deja de ser cierto en ESTADO
 - Nada del sitio.
+
+## Pipeline 12: to-do 341, #11, prompts por deporte, y diseño de #5 y #14 (2026-10-21)
+
+### Qué cambió (para CHANGELOG)
+- #11 `estadio-sponsor.mjs`: la tabla de camisetas de la página del club se acepta con la ficha de su deporte (`Infobox rugby team` para rugby; el fútbol sigue con la suya). La página de temporada de una liga de rugby ya daba estadio, capacidad y marca sin tocar el lector. El sponsor de rugby no sale de Wikipedia: sigue a mano.
+- Los prompts de lectura (`localizar`, `extraer`, `perimetro-senales`, `caja-deuda`, `glosar-rubros`) dicen el deporte del club (`deporteDePdf`, `deporteEnFrase` en `deporte-club.mjs`). Con el fútbol, byte por byte igual.
+- `lote.mjs` corre el alta gratis (que calcula el deporte de un club nuevo) antes de la primera lectura, no después; `olvidarDeportes()` refresca la caché del deporte en el mismo proceso. Pedido de la Auditora 4: sin esto, un club nuevo de fútbol leía con «club de deporte».
+- `audit.js`: P1 `index-file-roto` (ninguna etiqueta `<base>` ni `src`/`href` propio con «/» en los .html de la raíz). Estado según el commit; ver abajo.
+
+### Qué falta
+- `SOLO_ESTADIO` para `gb-premiershiprugby`: la Auditora 4 recomienda NO sumarla (aflojaría la compuerta por un club de prueba cuyo sponsor ya va a mano con fuente). Para otra liga de rugby sin fuente del sponsor pasa lo mismo; lo decide Guido si aparece.
+- «El negocio del fútbol del club» de las preguntas de perímetro (`perimetro-senales.mjs`, `PREGUNTA` y A3) quedó con «fútbol»: es el criterio de `CONVENCIONES-DATOS.md`; si se generaliza al deporte, lo decide la Auditora.
+- #5 y #14: abajo, el diseño. Sin codear.
+
+### Diseño de #5 y #14 (propuesta; Guido decide quién aprueba activar un deporte)
+
+**Qué hace hoy el alta** (`alta-club.mjs`): propone la liga de un club solo si ya está en `LEAGUES` (`data/leagues.js`); si la caché de rosters la ubica en una liga que no está en el catálogo, la fila va en `null`, `pendiente`, con la pregunta «¿se agrega al catálogo?». El deporte sale de la ficha, de la liga o de las menciones del `.md`; si no, pregunta. Nada escribe `SPORTS` ni `LEAGUES`.
+
+**Propuesta: un paso «catálogo» en el alta**, una sola vez por liga y por deporte, que PROPONE (no escribe sin ok) y deja la propuesta en la evidencia del club (`Admin/carga-clubes/<id>.md`) y en la cola:
+
+1. De dónde sale cada dato de la liga (todo de Wikipedia en inglés, por la API, wikitext crudo, como `fetch-club-league-reference.mjs`; sin IA):
+   - **Nombre (`name`, `full`)**: el título de la página de temporada sin la temporada y sin sponsor (Wikipedia titula sin sponsor: «2023–24 Premiership Rugby» da «Premiership Rugby»; el campo `name` del infobox de la liga confirma). Es el mismo título que ya guarda `fetch-club-league-reference.mjs` (`wikipediaPage`).
+   - **País**: `countries`/`country` del infobox de la temporada o de la liga, mapeado a `COUNTRIES` (GB es «Inglaterra» en el catálogo). Si el país no está en `COUNTRIES`, ya existe el camino de país nuevo del alta.
+   - **Nivel (`tier`)**: `level` del infobox de la liga cuando lo trae (rugby inglés: «Level 1»). El fútbol no lo trae: se deduce de la cadena `promotion` (sin `promotion` = 1; si no, 1 + el nivel de esa liga, en el mismo país). Si ninguno responde, o la cadena sale de la lista del país, **pregunta** (no se inventa un nivel).
+   - **Deporte de la liga**: el campo `sport` del infobox de la liga o de la temporada («Rugby union» → `rugby`); si no es un deporte conocido de `SPORTS`, es la propuesta de deporte nuevo (punto 3).
+   - **Id**: `<iso2>-<slug>` del escalón (regla de `ARQUITECTURA.md`), con el slug del nombre sin espacios.
+2. Qué se escribe, en este orden, solo al aprobar:
+   - `data/leagues.js`: la línea de `LEAGUES` (`{ name, full, country, sport, tier }`); si el deporte ya estaba, nada más.
+   - `tools/club-league-reference/<iso2>.json`: las temporadas de la liga que usan los ejercicios del club (`fetch-club-league-reference.mjs`, ya existe). Es lo que hoy impide que `estadio-sponsor.mjs` y `faltantes-liga` encuentren la liga.
+   - `data/club-leagues/<iso2>.js`: las filas (club, ejercicio) → liga que hoy quedan en `null` por `liga-no-catalogada`, ya con el criterio de cierre que usa `proponerLiga`.
+   - `data/rankings/<id>.js` y las páginas `liga/` salen solas de `publicar.mjs`.
+3. **Deporte nuevo** (`SPORTS` con `active:false` o ausente): además, `active:true`, y se exige antes que existan la taxonomía en `SPORT_TAXONOMIES` (con su bolsón), la clave en `CEROS_POR_DEPORTE` (`[]` vale) y un club de prueba cargado de punta a punta; es lo que chequea `node tools/deporte-club.mjs`. Sin eso el paso no propone activar: dice qué falta.
+4. **Cuándo se avisan las reglas inválidas (#14)**: ANTES de escribir `active:true`, el paso corre `reglas-categoria.mjs` como si el deporte ya estuviera activo (la validación «todo id de la frase tiene que existir en cada deporte activo» con el deporte candidato agregado) y pone en la propuesta la lista exacta: cada regla `CATEGORÍA (prompt)` sin deporte que nombra una subcategoría que el deporte nuevo no tiene, con su línea de `CONVENCIONES-DATOS.md`. La salida de la propuesta lleva tres cosas: reglas válidas, reglas inválidas (hay que acotarlas con `CATEGORÍA (prompt, futbol)` o reescribirlas con ids genéricos) y reglas que solo mencionan genéricas. No se escribe `active:true` mientras haya una inválida; `audit.js` (`regla-categoria-invalida`) queda como red de seguridad si alguien activa a mano.
+5. **Qué decide quién**: propongo que (a) agregar una **liga** a un deporte ya activo (datos de Wikipedia, reversible) lo apruebe la Auditora, con la propuesta de arriba, y (b) **activar un deporte** (aparece en el selector del sitio: es producto) lo apruebe Guido, con una hoja de una pantalla: el deporte, la liga, la taxonomía y su versión, los clubes de prueba cargados, y la lista de reglas inválidas del punto 4. Recomendación: sí a las dos; Guido solo ve (b), una vez por deporte.
+
+**Lo que no se resuelve acá** (preguntas abiertas, para Guido): si un deporte nuevo sin ninguna liga en el catálogo puede activarse con la liga de un solo club; y si el `tier` de rugby sigue la pirámide inglesa de rugby (Level 1 = Premiership) o la comparabilidad entre deportes no se promete.

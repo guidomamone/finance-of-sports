@@ -625,6 +625,22 @@ function checkDeployInterno() {
   }
 }
 
+// --- Las páginas de la raíz tienen que abrir como archivo (P1 index-file-roto) --------------------------------------------------------
+// Un <base href="/"> en index.html rompió abrir el sitio suelto (file://): sin estilos ni scripts, y nadie lo vio. Las rutas las arma fosUrl() de js/i18n.js
+// (Admin/PANTALLA.md, «Verificar en el browser de verdad»). En index.html y en cada .html suelto de la raíz: ninguna etiqueta <base> (ni escrita con document.write)
+// y ningún src/href propio que empiece con «/» (los «//» externos y las #anclas valen). club/ y liga/ quedan fuera: se sirven solo detrás de Netlify.
+function checkIndexFileRoto() {
+  const htmls = fs.readdirSync(ROOT, { withFileTypes: true }).filter(d => d.isFile() && d.name.endsWith('.html')).map(d => d.name).sort();
+  for (const f of htmls) {
+    const html = fs.readFileSync(path.join(ROOT, f), 'utf8').replace(/<!--[\s\S]*?-->/g, m => m.replace(/[^\n]/g, ' '));
+    const lineaDe = (i) => html.slice(0, i).split('\n').length;
+    const base = html.match(/<base[\s>/]/i);
+    if (base) add('P1', 'index-file-roto', `${f} (línea ${lineaDe(base.index)}): tiene una etiqueta <base> (o la escribe con document.write); rompe abrir el sitio como archivo (file://). Armá las rutas con fosUrl() de js/i18n.js`);
+    const propios = [...html.replace(/<base\b[^>]*>/gi, m => ' '.repeat(m.length)).matchAll(/\b(?:src|href)\s*=\s*["']\/(?!\/)[^"']*/gi)];
+    if (propios.length) add('P1', 'index-file-roto', `${f} (línea ${lineaDe(propios[0].index)}): ${propios.length} src/href propio(s) que empiezan con «/» (el primero: ${propios[0][0].replace(/\s+/g, '')}); no cargan al abrir el sitio como archivo (file://). Usá una ruta relativa o fosUrl()`);
+  }
+}
+
 // --- Comentarios internos en lo que se publica (to-do 208 y 209) -------------
 // Todo comentario de index.html, js/ y data/ viaja al visitante. La regla (Admin/PANTALLA.md, "Comentarios en lo que se publica") deja
 // solo el porqué técnico: nada de nombres, "Versión N", "to-do N", fechas ni contadores de clubes. Un hallazgo por archivo, con el total y
@@ -1823,6 +1839,7 @@ function main() {
   checkCategorizacion(api);
   checkEscala(api);
   checkDeployInterno();
+  checkIndexFileRoto();
   checkComentariosPublicados();
   checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
