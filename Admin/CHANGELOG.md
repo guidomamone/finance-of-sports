@@ -17,6 +17,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 917 — Carpetas duplicadas unidas; propuestas de sponsor, skills y mockup de Ligas (2026-10-21) [278 · 287 · 343 · 344 · 257 · 258 · botafogosp-br, omonia29maiou-cy, rcdeportivo-es]
+- 278/287: `mudar-carpetas.mjs` unió las 12 carpetas del manifiesto y los 3 PDFs guardados en el club equivocado (Botafogo-SP 2023 estaba en Botafogo, Omonia 29is Maiou en Omonia Nicosia, RC Deportivo 2021-22 en Alavés): 4 a unir, 24 duplicados a `Admin/Archive/pdfs-duplicados/`, ningún PDF borrado. `carpeta-doble` da 0. El Omonia 29is Maiou 2023-24 quedó en su carpeta, sin cargar.
+- 343: propuesta de buscar el sponsor con evidencia (`Admin/propuestas/343-busqueda-sponsor.md`); la Auditora 4 la aprobó con tres cambios. Sin codear.
+- 344: mockup de Ligas con ligas de distintos países y deportes (`Prototyping/Ligas/mockup-344.html`). Sin implementar.
+- 330 y 257: propuestas de Orden 1 (`Admin/propuestas/330-donde-se-pierde.md`, `257-skills.md`); el 330 se une al 257.
+- 258: medido, todavía no hace falta (46,5 KB comprimidos de carga inicial); el disparador queda en el TODO.
+
 ## Versión 916 — Rugby en estadio y sponsor, prompts por deporte, chequeo de abrir como archivo (2026-10-21) [341 · bathrugby-gb]
 - `estadio-sponsor.mjs` acepta la ficha de rugby (`Infobox rugby team`); el sponsor de rugby sigue a mano. `gb-premiershiprugby` no entra a `SOLO_ESTADIO` (Auditora 4).
 - Los prompts de `localizar`, `extraer`, `perimetro-senales`, `caja-deuda` y `glosar-rubros` nombran el deporte del club (fútbol igual byte por byte); `lote.mjs` corre el alta antes de la primera lectura.

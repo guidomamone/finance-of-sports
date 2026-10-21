@@ -28,25 +28,24 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 343 (Pipeline 12): propuesta de cómo se busca el sponsor con evidencia (texto de skill para tu ok)
-2. 341 (Pipeline 12): codear el alta que propone una liga y un deporte nuevos, con tus respuestas
-3. 344 (Pantallas 6): mockup de Ligas con ligas de distintos países y deportes, para tu ok
-4. 330 y 257 (Orden 1): dónde se pierde lo decidido y las skills que faltan (propuestas para tu ok)
-5. 278 y 287 (la principal): carpetas duplicadas con `tools/mudar-carpetas.mjs`
-6. 237 al (Pipeline 12, después del 341): anexo UEFA para abrir las ventas
-7. 258 (Pantallas 6, después del 344): índice partido por país o liga, si la skill de escala dice que llegó el momento
+1. 343 (Pipeline 12): buscar el sponsor con evidencia; propuesta lista, falta tu ok al texto de skill
+2. 344 (Pantallas 6): mockup de Ligas listo, falta tu ok
+3. 257 (Orden 1): skills que faltan y dónde se pierde lo decidido; propuestas listas, falta tu ok a cada texto
+4. 341 (Pipeline 12): codear el alta que propone una liga y un deporte nuevos, con tus respuestas
+5. 237 al (Pipeline 12, después del 341): anexo UEFA para abrir las ventas
 
 **C. Técnico**
-8. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+6. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
 **D. Orden de la casa**
-9. 338: correr todas las auditorías del proyecto (al final de A)
+7. 338: correr todas las auditorías del proyecto (al final de A)
+8. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-10. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-11. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-12. 335: mails a clubes
-13. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+9. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+10. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+11. 335: mails a clubes
+12. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -67,22 +66,22 @@ el número de la izquierda es el orden de trabajo.
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
    (`Admin/fuentes-externas.md`, "Consecuencias").
-257. SKILLS QUE FALTAN (mejoras de proyecto, pedido de Guido 2026-10-16). Producto/pantalla (mockup, ok, implementación, chequeo en celular; hoy mezclado en PANTALLA.md); contenido y
+257. SKILLS QUE FALTAN Y DÓNDE SE PIERDE LO QUE SE DECIDE (une el 330; pedido de Guido 2026-10-16 y 2026-10-20). Propuestas de Orden 1, sin
+   aplicar: `Admin/propuestas/257-skills.md` (destino de cada memoria, texto de cinco skills nuevas, cambios a las existentes, candado de
+   skills) y `Admin/propuestas/330-donde-se-pierde.md` (seis tipos de pérdida con archivo y línea). Falta: el ok de Guido a cada texto de
+   skill; la Auditora, para los chequeos; y lo que encontró sin dueño (que `perfil-en-cola` de `cargar.mjs` nunca frene; la duda de Deportes
+   Tolima, `dudas-por-club.md:201`, que frena su carga; HALLAZGOS de los descartes 314 y 298). Lo pedido originalmente: Producto/pantalla (mockup, ok, implementación, chequeo en celular; hoy mezclado en PANTALLA.md); contenido y
    difusión (un año cargado → hilo o post con el dato verificado y el link a la fuente); contrato de datos/API (esquema público y qué lo
    rompe); deploy/release (qué chequear antes de pushear y cómo verificar producción).
    Además (Guido, 2026-10-20): lo que hoy se maneja con la memoria de la sesión principal (`~/.claude/projects/…/memory/`) pasa a una
    skill, a una convención o a un chequeo; la memoria no es el lugar de una regla de trabajo. Repasar cada memoria y decidir a dónde va.
    Y algo que cuide que un cambio de skill no se aplique sin que Guido haya visto el texto exacto (pasó tres veces el 2026-10-20: el texto
    quedaba detrás del cuadro de pregunta). Por ejemplo, que el hook de skills exija el texto propuesto en un archivo de `Admin/` ya commiteado.
-258. ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). clubs.js + club-index.js pesan ~93 KB para ~230 clubes y se bajan siempre (con 10.000 clubes,
-   ~4 MB). Partir el índice y cargar el buscador aparte cuando la skill escala-finance-of-sports diga que llegó el momento.
-287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
-   contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
-   compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil), sin silenciar ni mover nada; va con el 278.
-   Un `.md` sin PDF no es error (Ajax, PSV, Feyenoord y AZ 2023-25 son la fuente publicada de lo cargado).
+258. ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
+   clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
+   3.000 ~200 KB. Todavía no. Se reabre cuando lo que se baja siempre pase 150 KB comprimidos (~2.200 clubes) o esos dos archivos pasen 1 MB
+   crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy proyecta bytes crudos): condición nueva, va a la Auditora.
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
-278. CARPETAS DUPLICADAS EN Clubes/. Cardiff y Swansea en `Inglaterra/` y `Gales/`; `Suiza/FC St. Gallen` y `Suiza/St. Gallen`.
-   `faltantes-liga` las lee juntas. Unificar sin borrar ningún PDF y chequeando antes las referencias del pipeline.
 
 313. CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
     Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -114,10 +113,6 @@ el número de la izquierda es el orden de trabajo.
     automatizar "respuesta → fila" o programar posts; exponer solo las acciones necesarias. OmniRoute: gateway local de modelos con
     fallback, para abaratar la API (no Haiku, ver la regla de modelos); concentra credenciales y prompts, así que se revisa el repo
     antes. Quedan sin ubicar OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: pedir los links a Guido.
-330. DÓNDE SE PIERDE LO QUE SE DECIDE O SE DESCUBRE (pedido de Guido, 2026-10-20). Revisar el proyecto entero (notas de sesión,
-   `Admin/Archive/`, HALLAZGOS, mediciones, dudas, registros, chats de sesiones) buscando tokens gastados en decidir o descubrir algo que
-   después no llega a ningún lado: una decisión que no quedó como REGLA ni en un registro, un hallazgo que nadie vuelve a leer, una
-   medición que no cambió nada. Proponer, para cada tipo, dónde tiene que quedar para que la próxima sesión no lo pague de nuevo.
 335. MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
    un mail sin que Guido lo pida en sus palabras.
    (a) Proceso: Etapa 1 lista y probada de punta a punta (Resend, `outreach.financeofsports.com`, cola en `Admin/outreach/`, envío desde
@@ -147,6 +142,9 @@ el número de la izquierda es el orden de trabajo.
 343. BUSCAR EL SPONSOR CON EVIDENCIA (Guido, 2026-10-21): «lo único que quiero es que se haya intentado buscarlo. Auditoría necesita
    evidencia de que buscaste, y no solo Wikipedia». Hoy la compuerta de `estadio-sponsor.mjs` frena sin sponsor salvo `SOLO_ESTADIO` o
    liga amateur. Propuesta: un registro de búsqueda con las fuentes probadas que deja pasar el año sin sponsor, y la skill que dice dónde
-   buscar. La propuesta va a `Admin/propuestas/343-busqueda-sponsor.md`; la compuerta, a la Auditora; el texto de skill, a Guido.
+   buscar. Propuesta en `Admin/propuestas/343-busqueda-sponsor.md` (sección 0.5 de club-sourcing). La Auditora la aprobó con tres cambios (lista
+   legacy congelada en un archivo, `archivo-web` cuenta como fuente del club, medir antes de codear). Falta el ok de Guido al texto.
 344. LIGAS DE DISTINTOS PAÍSES Y DEPORTES EN LA PANTALLA LIGAS (Guido, 2026-10-21: «quiero un mockup»). Cómo se agrupan, filtran y ordenan
-   al crecer (país, deporte, nivel; el nivel se compara dentro de un deporte y un país) y cómo convive Informes (332). Mockup antes de nada.
+   al crecer (país, deporte, nivel; el nivel se compara dentro de un deporte y un país) y cómo convive Informes (332). Mockup listo (Pantallas 6): https://claude.ai/artifact/CzmEuNtdt7i2yHNrDDi2Aa y
+   `Prototyping/Ligas/mockup-344.html`; falta el ok de Guido. Hallazgo: el país GB se llama «Inglaterra» y agrupa la Premiership escocesa;
+   con más ligas conviene separar Escocia y Gales o llamarlo «Reino Unido».
