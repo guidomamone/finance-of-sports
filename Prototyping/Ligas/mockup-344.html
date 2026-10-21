@@ -65,7 +65,7 @@ a{color:var(--azul)}
 .pais .res{color:var(--muted);font-size:13.5px;margin-left:auto;text-align:right}
 .pais .cuerpo{border-top:1px solid var(--line)}
 .dep{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:10px 16px 2px;background:var(--bg)}
-.liga{display:grid;grid-template-columns:34px minmax(0,1.3fr) minmax(0,1fr) 104px;gap:6px 12px;align-items:center;padding:10px 16px;border-top:1px solid var(--line)}
+.liga{display:grid;grid-template-columns:34px minmax(0,1fr) 130px;gap:6px 12px;align-items:center;padding:10px 16px;border-top:1px solid var(--line)}
 .liga:first-child{border-top:0}
 .liga .niv{font-size:12px;font-weight:700;color:var(--azul);background:var(--azul-soft);border-radius:6px;text-align:center;padding:2px 0}
 .liga .ln{font-weight:600;min-width:0}
@@ -73,8 +73,8 @@ a{color:var(--azul)}
 .liga .cov{display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:var(--muted)}
 .barra{height:6px;border-radius:3px;background:var(--bar-bg);overflow:hidden}
 .barra i{display:block;height:100%;background:var(--bar)}
-.liga .tot{white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums;font-weight:600;font-size:14px}
-.liga .tot small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.liga .est{text-align:right;font-size:12.5px;color:var(--ok);font-weight:600}
+.liga .est.no{color:var(--muted);font-weight:400}
 .insig{display:inline-block;margin-left:6px;font-size:11.5px;font-weight:600;color:var(--azul);background:var(--azul-soft);border-radius:999px;padding:1px 8px;vertical-align:1px}
 .sin{opacity:.6}
 .sin summary{cursor:default}
@@ -126,8 +126,7 @@ td.vacio{color:var(--muted)}
 .inf .lk{font-weight:600;font-size:13.5px;margin-top:auto;padding-top:6px}
 .vacia{border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--muted);font-size:13.5px}
 @media (max-width:700px){
-  .liga{grid-template-columns:34px minmax(0,1fr) 100px}
-  .liga .cov{grid-column:2 / 4;grid-row:2}
+  .liga{grid-template-columns:34px minmax(0,1fr) 96px}
   .dpais{grid-template-columns:1fr}
   .dos{grid-template-columns:1fr}
   .pais .res{margin-left:0;text-align:left;width:100%}
@@ -140,12 +139,13 @@ td.vacio{color:var(--muted)}
   <header class="sec">
     <div class="kick">Mockup · to-do 344 · solo para aprobar, no hay nada implementado</div>
     <h1>Ligas con muchos países y varios deportes</h1>
-    <p class="lede">Hoy hay <span id="nL"></span> ligas de <span id="nP"></span> países, <span id="nD"></span> con datos cargados, y desde el 248 también Premiership Rugby. Esto muestra cómo se agrupan, se filtran y se ordenan cuando sean muchas más, y dónde vive la sección Informes (332). Los números de cada fila son los reales del sitio al 2026-10-21.</p>
+    <p class="lede">Hoy hay <span id="nL"></span> ligas de <span id="nP"></span> países, <span id="nD"></span> con datos cargados, y desde el 248 también Premiership Rugby. Esto muestra cómo se agrupan, se filtran y se ordenan cuando sean muchas más, y dónde vive la sección Informes (332). Las ligas, países y niveles son los reales del sitio al 2026-10-21. Por ahora la lista no muestra cuánto hay cargado ni plata: solo lo que sirve para elegir la liga.</p>
     <div class="nota"><b>Lo que hay que decidir.</b>
       <ol class="dec">
         <li>Agrupar por país por default, con deporte y nivel como filtros o vistas.</li>
         <li>Los niveles se comparan solo dentro de un país y un deporte: no hay un ranking de «segundas divisiones» entre países.</li>
         <li>Países plegados cuando son muchos, con el resumen siempre a la vista.</li>
+        <li>Los campeonatos estaduales de Brasil (Paulista A1, A2, A3) no tienen nivel en los datos y figuran con «—»: hay que decidir si entran en la lista, en un grupo aparte «Estaduales» o sin nivel.</li>
         <li>«Inglaterra» agrupa hoy también la Premiership escocesa (el país del sitio es GB, con nombre Inglaterra). Con más ligas conviene separar Escocia, Gales e Irlanda del Norte o llamar al grupo «Reino Unido».</li>
         <li>Informes: el bloque dentro de cada liga (ya hecho) más un filtro «Con informes» en esta lista, que cuenta solo los informes propios de la liga (el de la UEFA cubre toda Europa y no distingue). Una página aparte con todos queda afuera por ahora.</li>
       </ol>
@@ -210,7 +210,8 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({'&':'&
 const SP = Object.fromEntries(D.sports.map((s) => [s.id, s]));
 const REG = Object.fromEntries(D.regions.map((r) => [r.id, r]));
 const nClubes = (n) => n + (n === 1 ? ' club' : ' clubes');
-const ordinal = (t) => t + '.ª';
+const ordinal = (t) => (t == null ? '—' : t + '.ª');
+const nv = (l) => (l.t == null ? 99 : l.t);
 const fmtM = (v) => 'US$ ' + v.toLocaleString('es', { useGrouping: 'always' }) + ' M';
 
 const LIGAS = Object.entries(D.leagues).map(([id, l]) => {
@@ -218,20 +219,18 @@ const LIGAS = Object.entries(D.leagues).map(([id, l]) => {
   const c = D.countries[l.c] || { n: l.c, f: '', r: '' };
   const europa = c.r === 'europa' && l.s === 'futbol';
   const informes = D.informes.filter((i) => (i.ambito === 'europa' ? europa : i.ligas.includes(id)));
-  return { id, n: l.n, c: l.c, pais: c.n, flag: c.f, reg: c.r, s: l.s, t: l.t, ix, anio: ix ? ix[0] : null, nc: ix ? ix[1] : 0, tam: ix ? ix[2] : null, tot: D.tot[id] || 0, informes, propios: informes.filter((i) => i.ambito !== 'europa') };
+  return { id, n: l.n, c: l.c, pais: c.n, flag: c.f, reg: c.r, s: l.s, t: l.t, ix, anio: ix ? ix[0] : null, informes, propios: informes.filter((i) => i.ambito !== 'europa') };
 });
 $('nL').textContent = LIGAS.length;
 $('nP').textContent = new Set(LIGAS.map((l) => l.c)).size;
 $('nD').textContent = LIGAS.filter((l) => l.ix).length;
 
 function filaLiga(l, conDeporte) {
-  const cov = l.ix ? (l.tam ? l.nc + ' de ' + l.tam + ' clubes · ' + l.anio : l.nc + ' clubes · ' + l.anio) : 'Sin datos todavía';
-  const pct = l.ix && l.tam ? Math.round((l.nc / l.tam) * 100) : (l.ix ? 40 : 0);
   const ins = l.propios.length ? '<span class="insig">' + l.propios.length + ' informe' + (l.propios.length > 1 ? 's' : '') + '</span>' : '';
+  const estado = l.ix ? 'Con datos' : 'Sin datos todavía';
   return '<div class="liga"><span class="niv" title="Nivel dentro de ' + esc(l.pais) + ' y ' + esc(SP[l.s].name) + '">' + ordinal(l.t) + '</span>' +
     '<span class="ln">' + esc(l.n) + ins + (conDeporte ? '<small>' + SP[l.s].icon + ' ' + esc(SP[l.s].name) + '</small>' : '') + '</span>' +
-    '<span class="cov"><span>' + cov + '</span><span class="barra"><i style="width:' + pct + '%"></i></span></span>' +
-    '<span class="tot">' + (l.tot ? fmtM(l.tot) : '—') + '<small>' + (l.tot ? 'de los cargados' : '') + '</small></span></div>';
+    '<span class="est' + (l.ix ? '' : ' no') + '">' + estado + '</span></div>';
 }
 
 /* Sección 1: como hoy */
@@ -240,9 +239,9 @@ function pintarHoy() {
   LIGAS.forEach((l) => { (porPais[l.c] = porPais[l.c] || []).push(l); });
   const paises = Object.keys(porPais).sort((a, b) => D.countries[a].n.localeCompare(D.countries[b].n, 'es')).filter((c) => ['GB', 'AR', 'BE'].includes(c));
   $('hoyBox').innerHTML = '<div class="card" style="padding:0;overflow:hidden">' + paises.map((c) => {
-    const ls = porPais[c].sort((a, b) => a.t - b.t);
+    const ls = porPais[c].sort((a, b) => nv(a) - nv(b));
     return '<div class="dpais" style="padding:10px 16px;grid-template-columns:minmax(120px,190px) minmax(0,1fr)"><span class="nom">' + D.countries[c].f + ' ' + esc(D.countries[c].n) + '</span><span class="dligas">' +
-      ls.map((l) => '<span class="lchip"><b>' + l.t + '</b>' + esc(l.n) + (l.ix ? '' : ' (sin datos)') + '</span>').join('') + '</span></div>';
+      ls.map((l) => '<span class="lchip"><b>' + (l.t == null ? '—' : l.t) + '</b>' + esc(l.n) + (l.ix ? '' : ' (sin datos)') + '</span>').join('') + '</span></div>';
   }).join('') + '</div><p class="cuenta" style="margin-top:6px">Se muestran tres de los ' + Object.keys(porPais).length + ' países, para el ejemplo.</p>';
 }
 
@@ -261,17 +260,17 @@ function controles() {
   chips($('cSport'), [{ id: 'todos', label: 'Todos', n: base.length }].concat(D.sports.map((s) => ({ id: s.id, label: s.icon + ' ' + s.name, n: base.filter((l) => l.s === s.id).length }))), 'sport');
   chips($('cReg'), [{ id: 'todas', label: 'Todas' }].concat(D.regions.filter((r) => base.some((l) => l.reg === r.id)).map((r) => ({ id: r.id, label: r.name, n: base.filter((l) => l.reg === r.id).length }))), 'reg');
   chips($('cGrp'), [{ id: 'pais', label: 'País' }, { id: 'deporte', label: 'Deporte' }, { id: 'nivel', label: 'Nivel' }], 'grp');
-  chips($('cOrd'), [{ id: 'az', label: 'A–Z' }, { id: 'cargados', label: 'Más clubes cargados' }, { id: 'ingreso', label: 'Mayor ingreso' }], 'ord');
+  chips($('cOrd'), [{ id: 'az', label: 'A–Z' }, { id: 'ligas', label: 'Más ligas' }], 'ord');
   $('cExtra').innerHTML = '<button type="button" class="chip" data-k="inf" data-v="1" aria-pressed="' + st.inf + '">Con informes<span class="n">' + LIGAS.filter((l) => l.ix && l.propios.length).length + '</span></button>' +
     '<button type="button" class="chip" data-k="sinDatos" data-v="1" aria-pressed="' + st.sinDatos + '">Ligas sin datos, al final</button>';
 }
-function ordenar(arr, clave) { // arr de {nombre, nc, tot}
-  const f = { az: (a, b) => a.nombre.localeCompare(b.nombre, 'es'), cargados: (a, b) => b.nc - a.nc || a.nombre.localeCompare(b.nombre, 'es'), ingreso: (a, b) => b.tot - a.tot || a.nombre.localeCompare(b.nombre, 'es') }[clave];
+function ordenar(arr, clave) { // arr de {nombre, ls}
+  const f = { az: (a, b) => a.nombre.localeCompare(b.nombre, 'es'), ligas: (a, b) => b.ls.length - a.ls.length || a.nombre.localeCompare(b.nombre, 'es') }[clave];
   return arr.sort(f);
 }
 function porPais(ls) {
   const m = {};
-  ls.forEach((l) => { (m[l.c] = m[l.c] || { c: l.c, nombre: l.pais, flag: l.flag, ls: [], nc: 0, tot: 0 }); const g = m[l.c]; g.ls.push(l); g.nc += l.nc; g.tot += l.tot; });
+  ls.forEach((l) => { (m[l.c] = m[l.c] || { c: l.c, nombre: l.pais, flag: l.flag, ls: [] }); const g = m[l.c]; g.ls.push(l); });
   return ordenar(Object.values(m), st.ord);
 }
 function vistaPais(ls) {
@@ -281,7 +280,7 @@ function vistaPais(ls) {
     const conDatos = g.ls.some((l) => l.ix);
     const deportes = [...new Set(g.ls.map((l) => l.s))];
     const abierto = st.abiertos === 'todos' ? true : st.abiertos === 'ninguno' ? false : (q ? true : i < 2 && conDatos);
-    const ligas = g.ls.slice().sort((a, b) => a.s.localeCompare(b.s) || a.t - b.t);
+    const ligas = g.ls.slice().sort((a, b) => a.s.localeCompare(b.s) || nv(a) - nv(b));
     let cuerpo = '';
     deportes.forEach((s) => {
       const sub = ligas.filter((l) => l.s === s && (l.ix || st.sinDatos));
@@ -291,7 +290,7 @@ function vistaPais(ls) {
     });
     const nDatos = g.ls.filter((l) => l.ix).length;
     return '<details class="pais' + (conDatos ? '' : ' sin') + '"' + (abierto ? ' open' : '') + '><summary><span class="flag">' + g.flag + '</span><span class="nom">' + esc(g.nombre) + '</span>' +
-      '<span class="res">' + g.ls.length + (g.ls.length === 1 ? ' liga' : ' ligas') + (nDatos ? ' · ' + nClubes(g.nc) + ' cargados' + (g.tot ? ' · ' + fmtM(g.tot) : '') : ' · sin datos') + '</span></summary><div class="cuerpo">' + cuerpo + '</div></details>';
+      '<span class="res">' + g.ls.length + (g.ls.length === 1 ? ' liga' : ' ligas') + (nDatos ? ' · ' + nDatos + ' con datos' : ' · sin datos todavía') + '</span></summary><div class="cuerpo">' + cuerpo + '</div></details>';
   }).join('');
 }
 function vistaDeporte(ls) {
@@ -301,7 +300,7 @@ function vistaDeporte(ls) {
     const paises = porPais(sl);
     return '<div class="card deporte"><div class="dhead"><h3>' + s.icon + ' ' + esc(s.name) + '</h3><span class="res">' + sl.length + ' ligas · ' + paises.length + (paises.length === 1 ? ' país' : ' países') + '</span></div>' +
       paises.map((g) => '<div class="dpais"><span class="nom">' + g.flag + ' ' + esc(g.nombre) + '</span><span class="dligas">' +
-        g.ls.sort((a, b) => a.t - b.t).filter((l) => l.ix || st.sinDatos).map((l) => '<span class="lchip' + (l.ix ? '' : ' sin') + '"><b>' + l.t + '</b>' + esc(l.n) + (l.propios.length ? '<span class="insig">' + l.propios.length + '</span>' : '') + '</span>').join('') + '</span></div>').join('') + '</div>';
+        g.ls.sort((a, b) => nv(a) - nv(b)).filter((l) => l.ix || st.sinDatos).map((l) => '<span class="lchip' + (l.ix ? '' : ' sin') + '"><b>' + (l.t == null ? '—' : l.t) + '</b>' + esc(l.n) + (l.propios.length ? '<span class="insig">' + l.propios.length + '</span>' : '') + '</span>').join('') + '</span></div>').join('') + '</div>';
   }).join('') || '<p class="vacia">Ninguna liga con esos filtros.</p>';
 }
 function vistaNivel(ls) {
@@ -315,7 +314,7 @@ function vistaNivel(ls) {
     let tds = '';
     for (let t = 1; t <= maxT; t++) {
       const ls2 = g.ls.filter((l) => l.t === t);
-      tds += ls2.length ? '<td>' + ls2.map((l) => esc(l.n) + '<small>' + (l.ix ? (l.tam ? l.nc + ' de ' + l.tam : nClubes(l.nc)) + ' · ' + l.anio : 'sin datos') + '</small>').join('') + '</td>' : '<td class="vacio">—</td>';
+      tds += ls2.length ? '<td>' + ls2.map((l) => esc(l.n) + '<small>' + (l.ix ? 'con datos' : 'sin datos') + '</small>').join('') + '</td>' : '<td class="vacio">—</td>';
     }
     return '<tr><th>' + g.flag + ' ' + esc(g.nombre) + '</th>' + tds + '</tr>';
   }).join('');
@@ -361,7 +360,7 @@ function pintarLiga() {
   const sinInf = inf.length ? '<section class="informes"><h3>Informes de esta liga</h3><p class="cuenta">Lecturas de terceros que cubren esta liga. Los números son de cada informe, no de los clubes cargados en el sitio.</p><div class="igrid">' + inf.map((i) => tarjeta(i)).join('') + '</div></section>' :
     '<div class="vacia">Sin informes verificados para ' + esc(l.n) + ': el bloque «Informes de esta liga» no aparece. Cuando Sourcing verifique uno, se suma una línea a <code>data/informes.js</code> y aparece solo.</div>';
   $('pg').innerHTML = '<div class="tit"><span class="flag">' + l.flag + '</span><h3 style="font-size:20px">' + esc(l.n) + '</h3></div>' +
-    '<p class="sub">' + esc(l.pais) + ' · ' + ordinal(l.t) + ' nivel · ' + SP[l.s].icon + ' ' + esc(SP[l.s].name) + ' · ' + (l.ix ? (l.tam ? l.nc + ' de ' + l.tam + ' clubes cargados' : nClubes(l.nc) + ' cargados') + ' · ' + l.anio : 'sin datos') + '</p>' +
+    '<p class="sub">' + esc(l.pais) + ' · ' + ordinal(l.t) + ' nivel · ' + SP[l.s].icon + ' ' + esc(SP[l.s].name) + ' · ' + (l.ix ? 'con datos' : 'sin datos') + '</p>' +
     '<div class="pills"><span class="pill on">' + (l.anio || '—') + '</span><span class="pill">otros ejercicios</span></div>' +
     '<div class="dos"><div class="esq"><b>Ranking de ingresos</b><span class="r" style="width:92%"></span><span class="r" style="width:74%"></span><span class="r" style="width:58%"></span><span class="r" style="width:41%"></span><span>Sin cambios</span></div>' +
     '<div class="esq"><b>De dónde sale la plata y simulador</b><span class="r" style="width:100%"></span><span class="r" style="width:100%"></span><span>Sin cambios</span></div></div>' + sinInf +
