@@ -104,6 +104,50 @@ GESTIÓN: cambio de control societario el 18/12/2024 (Trivela Group V ApS
 ============================================================================
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bruttofortjeneste Gross profit | pág. 19, Jev 0.96 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Lønninger og gager Salaries and wages | pág. 27, Claude 0.88 |
+| 2 | Pensioner Pension costs | pág. 27, Jev 0.95 |
+| 3 | Andre omkostninger til social sikring Other costs for social security | pág. 27, Jev 0.96 |
+| 4 | Amortización derechos de jugadores | pág. 28, precedente |
+| 5 | Depreciación de materiales | pág. 29, precedente |
+| 6 | Baja de derechos de jugadores y otros (resto de la línea de amortizaciones) | pág. 19, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cierre = 2025-12-31. el .md (convertido del XHTML) habla de 31. december 2025 (15 veces)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 19.889.197. Partir el total de 35.721.157 (L429) por las notas, como Vejle 2024 y Nordsjælland 2024: amortización del año de derechos de jugadores (nota 5, L677)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 2.320.184. Parte del total de 35.721.157 (L429): depreciación del año de activos materiales (nota 6, L703)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = 13.511.776. Residuo 35.721.157 - 19.889.197 - 2.320.184 = 13.511.776: baja de derechos vendidos (nota 5); mismo tratamiento que el residuo de Nordsjælland 2024 (other_amortisation)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = player_amortisation. Partición de la línea de amortizaciones por las notas (ver fila)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = depreciation. Partición de la línea de amortizaciones por las notas (ver fila)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): categoria = other_amortisation. Residuo como en Nordsjælland 2024 (other_amortisation)
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-21): dk-superliga, verificado contra roster cacheado de "2025–26 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia única por palabras "Nordsjælland" = "FC Nordsjælland".
+```
+
 ## 2024
 
 ### Meta
@@ -131,4 +175,12 @@ _note (data/):_
 
 ```text
 Entidad única (CVR 24 25 77 03). Auditor: Grant Thornton, Godkendt Revisionspartnerselskab, sin salvedades. El estado de resultados usa la exención del § 32 de la Årsregnskabsloven (solo reporta "Bruttofortjeneste"/Gross profit neto, sin desglose de ingresos por rubro ni de costos externos) — todo el revenue se cargó como una única línea sin desglosar. Transcripción completa en Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2024-12-31.md.
+```
+
+### nordsjaelland-dk-aarsrapport-2025-12-31
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

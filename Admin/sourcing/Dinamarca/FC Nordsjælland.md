@@ -25,3 +25,5 @@ societaria Aktieselskab).
 Ninguna.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2025 desde `Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf` (sourceId `nordsjaelland-dk-aarsrapport-2025-12-31`).

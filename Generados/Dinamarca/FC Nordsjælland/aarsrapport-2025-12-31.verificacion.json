@@ -1,11 +1,11 @@
 {
  "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
  "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md",
- "generado": "2026-10-21T12:48:26.120Z",
+ "generado": "2026-10-21T13:55:31.407Z",
  "scriptHuella": "f2a64e48f42b",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "nordsjaelland-dk",
- "year": null,
+ "year": 2025,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -22,11 +22,81 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "19.889.197",
+   "linea": 677,
+   "etiqueta": "Amortización derechos de jugadores (nota 5)",
+   "lado": "gasto",
+   "reemplaza": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisation, and impairment",
+   "motivo": "Partir el total de 35.721.157 (L429) por las notas, como Vejle 2024 y Nordsjælland 2024: amortización del año de derechos de jugadores (nota 5, L677)",
+   "evidencia": ".md L429 y L677",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "2.320.184",
+   "linea": 703,
+   "etiqueta": "Depreciación de materiales (nota 6)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Parte del total de 35.721.157 (L429): depreciación del año de activos materiales (nota 6, L703)",
+   "evidencia": ".md L429 y L703",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "fila",
+   "valor": "13.511.776",
+   "linea": 429,
+   "etiqueta": "Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Residuo 35.721.157 - 19.889.197 - 2.320.184 = 13.511.776: baja de derechos vendidos (nota 5); mismo tratamiento que el residuo de Nordsjælland 2024 (other_amortisation)",
+   "evidencia": ".md L429, L677, L703",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Amortización derechos de jugadores (nota 5)",
+   "motivo": "Partición de la línea de amortizaciones por las notas (ver fila)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Depreciación de materiales (nota 6)",
+   "motivo": "Partición de la línea de amortizaciones por las notas (ver fila)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "categoria",
+   "valor": "other_amortisation",
+   "linea": null,
+   "etiqueta": "Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)",
+   "motivo": "Residuo como en Nordsjælland 2024 (other_amortisation)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
   }
  ],
- "cola": [
-  "511c695"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -46,18 +116,15 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
-  },
-  {
-   "nombre": "primer año",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "la columna 2024 de este documento suma ingresos 366.004057; el sitio tiene 366.004057"
   }
  ],
  "notas": [
-  "duda de extraer que no afecta la carga: L638 es información de remuneración ya incluida en el total y L639 es número de empleados, no importe.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "ajuste manual: fila \"Amortización derechos de jugadores (nota 5)\" (gasto) 19.889.197, en lugar de \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisation, and impairment\" (2026-10-21, Partir el total de 35.721.157 (L429) por las notas, como Vejle 2024 y Nordsjælland 2024: amortización del año de derechos de jugadores (nota 5, L677))",
+  "ajuste manual: fila \"Depreciación de materiales (nota 6)\" (gasto) 2.320.184 (2026-10-21, Parte del total de 35.721.157 (L429): depreciación del año de activos materiales (nota 6, L703))",
+  "ajuste manual: fila \"Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)\" (gasto) 13.511.776 (2026-10-21, Residuo 35.721.157 - 19.889.197 - 2.320.184 = 13.511.776: baja de derechos vendidos (nota 5); mismo tratamiento que el residuo de Nordsjælland 2024 (other_amortisation))",
+  "duda de extraer que no afecta la carga: L638 es información de remuneración ya incluida en el total y L639 es número de empleados, no importe."
  ],
  "reintentar": null,
  "reintentado": false,
@@ -106,12 +173,28 @@
    "origen": "nota que desglosa \"Personaleomkostninger Staff costs\""
   },
   {
-   "etiqueta": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisation, and impairment",
+   "etiqueta": "Amortización derechos de jugadores (nota 5)",
    "lado": "gasto",
-   "M": 35.721157,
+   "M": 19.889197,
+   "pagina": 28,
+   "linea": 677,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Depreciación de materiales (nota 6)",
+   "lado": "gasto",
+   "M": 2.320184,
+   "pagina": 29,
+   "linea": 703,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Baja de derechos de jugadores y otros (resto de la línea de amortizaciones)",
+   "lado": "gasto",
+   "M": 13.511776,
    "pagina": 19,
    "linea": 429,
-   "origen": "estado"
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -141,26 +224,5 @@
    "M": -65.011162,
    "linea": 435
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "4f3d7b2caf609fae86066516793f462a18cdc5ee",
-  "rango": [
-   423,
-   439
-  ],
-  "lineasCargadas": [
-   426,
-   634,
-   635,
-   636,
-   429,
-   431,
-   432,
-   433,
-   435
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 423 a 439 del .md):\nL423: |  |  | 2025 | 2024 |\nL424: | --- | --- | --- | --- |\nL425: | Note |  | kr. | kr. |\nL426: |  | Bruttofortjeneste Gross profit | 460.800.148 | 366.004.057 |\nL427: | --- | --- | --- | --- |\nL428: | 1 | Personaleomkostninger Staff costs | -142.049.863 | -175.027.070 |\nL429: |  | Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisation, and impairment | -35.721.157 | -45.144.140 |\nL430: |  | Driftsresultat Operating profit | 283.029.128 | 145.832.847 |\nL431: |  | Andre finansielle indtægter fra tilknyttede virksomheder Other financial income from group enterprises | 1.137.518 | 1.168.111 |\nL432: |  | Andre finansielle indtægter Other financial income | 1.590.029 | 1.631.843 |\nL433: | 2 | Øvrige finansielle omkostninger Other financial costs | -11.506.538 | -5.376.361 |\nL434: |  | Resultat før skat Pre-tax net profit or loss | 274.250.137 | 143.256.440 |\nL435: | 3 | Skat af årets resultat Tax on net profit or loss for the year | -65.011.162 | -31.778.343 |\nL436: | 4 | Årets resultat Net profit or loss for the year | 209.238.975 | 111.478.097 |\nL437: |  | FC Nordsjælland A/S · Årsrapport for 2025 | 17 |\nL438: | --- | --- | --- |\nL439: |  | Annual report 2025 |  |\n\nLO QUE SE CARGA:\n- ingreso · \"Bruttofortjeneste Gross profit\" · 460.800148 · L426\n- gasto · \"Lønninger og gager Salaries and wages\" · 138.376504 · L634 (de una nota)\n- gasto · \"Pensioner Pension costs\" · 1.834516 · L635 (de una nota)\n- gasto · \"Andre omkostninger til social sikring Other costs for social security\" · 1.838843 · L636 (de una nota)\n- gasto · \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisati\" · 35.721157 · L429\n- financiero · \"Andre finansielle indtægter fra tilknyttede virksomheder Other financial income from group\" · 1.137518 · L431\n- financiero · \"Andre finansielle indtægter Other financial income\" · 1.590029 · L432\n- financiero · \"Øvrige finansielle omkostninger Other financial costs\" · -11.506538 · L433\n- impuesto · \"Skat af årets resultat Tax on net profit or loss for the year\" · -65.011162 · L435"
- }
+ ]
 }
