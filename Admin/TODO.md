@@ -30,7 +30,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * 333: queda solo Mi Cuenta: una búsqueda guardada con un id viejo se duplica al volver a guardarla; pide una migración SQL en Supabase o que `save_search` busque también por la clave vieja (son pocas filas)
 
 **B. Pantallas y distribución**
-* 334 (en marcha, Pipeline 9): `suma-entidades.mjs` pone el prefijo «AS · » / «Elite · » al sumar dos entidades, para que una recarga no lo pise
+* 334 (para Pipeline; sesión por abrir): `suma-entidades.mjs` pone el prefijo «AS · » / «Elite · » al sumar dos entidades, para que una recarga no lo pise
 * 282: quién audita, lo que queda: 56 informes del auditor sin canal público, solo por mail al club (espera que decidas si se escribe)
 * 241 (mockup listo, espera tu ok a las 3 decisiones de `Admin/mediciones/241-plan.md`): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
 * 259: material de difusión (después de 241)
