@@ -66,9 +66,13 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   - **La auditora aprueba o rechaza en lugar de Guido.** Solo lee y escribe su veredicto en `Admin/registros/auditoria-proceso.jsonl` (y la
     REGLA que sale de una votación, en `Admin/CONVENCIONES-DATOS.md`; skill `votacion-de-criterios`).
     Aprueba sola cuando se cumple todo: (1) la medición no cambia ningún año ya cargado; (2) el cambio no agrega un criterio de datos
-    nuevo (perímetro, categoría, período, tratamiento de una partida); (3) cierra los casos que dice cerrar; (4) no endurece una compuerta
-    (ver la memoria de no endurecer reglas). Si falla (1) o (3), rechaza con el motivo. Si es (2) o (4), lo deriva a Guido.
+    nuevo (perímetro, categoría, período, tratamiento de una partida); (3) cierra los casos que dice cerrar. Si falla (1) o (3), rechaza
+    con el motivo. Si es (2), va a `votacion-de-criterios`. Una condición nueva en una tool (frenazo, aviso, filtro, pregunta, o un cambio en
+    lo que asume) la decide ella con la sección 7 de `auditoria-finance-of-sports`; a Guido va solo si cambia ese criterio.
     También audita las cargas de onboarding con la skill `auditoria-finance-of-sports`: sumas, fuentes, nada cargado a mano sin evidencia.
+  - **Cualquier sesión, no solo onboarding, pasa por la Auditora** cuando propone una condición nueva en una tool o un criterio de datos.
+    Le escribe directo a la Auditora abierta (es la excepción a «solo a la principal»); si no hay ninguna, a la principal, que la abre.
+    No se codea ni se commitea antes del veredicto.
   - **A Guido solo le llega lo que cambia un criterio**, junto en un mensaje numerado de la principal por día.
   - **El circuito:** frenado → pipeline (diseño y medición) → auditora → commit → la principal mergea y le devuelve a onboarding (o a una
     sesión nueva) la lista de documentos destrabados, que los carga o los vuelve a frenar.
