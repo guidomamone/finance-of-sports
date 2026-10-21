@@ -32,6 +32,11 @@ permanentes. Esto es el procedimiento.
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía |
 | 7 | `Admin/sourcing/README.md` (índice de países) → `Admin/sourcing/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca |
 | 8 | `worktree.md` (en esta carpeta) | si la sesión corre en un worktree (`git rev-parse --git-dir` no es `.git`) o Guido pide trabajar en paralelo |
+| 9 | `.claude/skills/principal-finance-of-sports` | si la sesión corre en la carpeta principal (no en un worktree) |
+| 10 | `.claude/skills/producto-y-pantalla-finance-of-sports` | si Guido pide una pantalla, un card, un cambio de diseño o un texto visible |
+| 11 | `.claude/skills/contenido-y-difusion-finance-of-sports` | si Guido pide una publicación, un hilo, una tarjeta o un informe para difundir el sitio |
+| 12 | `.claude/skills/contrato-de-datos-finance-of-sports` | antes de renombrar, quitar o cambiar el significado de un campo, una categoría genérica, un id o una unidad |
+| 13 | `.claude/skills/deploy-y-release-finance-of-sports` | cuando Guido diga que va a publicar, pregunte si algo está listo para subir o haya que confirmar que salió |
 
 **Lo que NO hace falta leer para trabajar**, y conviene no abrir por las dudas:
 
@@ -51,6 +56,8 @@ Si al leer un documento fuente queda una pregunta genuina (algo que no se puede 
 de la fuente ni de los criterios ya documentados), va a `Admin/dudas-por-club.md`, no a un comentario
 perdido en el código ni a un criterio inventado. Esa es la lista que Guido usa para escribirle
 directo a los clubes.
+
+**Cómo se trabaja con Guido:** un paso por vez, con un ejemplo real antes de hacerlo; tareas chicas, cerradas y commiteadas antes de abrir la siguiente; un mensaje por paso con las decisiones numeradas y la recomendación al lado. Las skills, `Admin/ESTADO.md` y los documentos de criterio dicen cómo es hoy: sin versiones, fechas de decisión, contadores fijos ni «to-do N» (`node tools/audit.js` avisa: `historia-en-doc-de-criterio`).
 
 ---
 
@@ -164,7 +171,7 @@ regenera las páginas de fuentes y `club/` con el número nuevo.
 
 ## Cómo mantener este skill
 
-Si aparece un paso de arranque, de verificación o de cierre que no está acá, proponele a Guido el texto exacto y esperá su ok.
+Si aparece un paso de arranque, de verificación o de cierre que no está acá, proponele a Guido el texto exacto y esperá su ok. El texto exacto va a `Admin/propuestas/<tema>.md`, commiteado, antes del cambio.
 Si un paso resultó innecesario, proponé sacarlo. Este archivo tiene que poder leerse entero en un
 minuto: si crece mucho, es señal de que algo debería vivir en `Admin/CONVENCIONES.md` (una regla) o en
 `Admin/ARQUITECTURA.md` (cómo funciona algo), no acá (qué hacer y en qué orden).

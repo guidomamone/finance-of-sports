@@ -117,6 +117,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   del ejercicio cierra igual (el motor suma por monto, no por bucket) y Formato del club las muestra
   con su `rawLabel` textual, que dice "(extraordinario)". Los 5 hallazgos están silenciados en
   `tools/audit-ignore.json` con este motivo escrito. **No recategorizar sin volver a preguntarle.**
+- **No se recategorizan líneas ya cargadas** para unificar criterios entre clubes; solo un error claro (un rubro del lado o la categoría evidentemente equivocados). Una inconsistencia entre clubes no abre un to-do.
 - "LA FUENTE REPORTA CERO" NO ES "LA FUENTE NO LO DESGLOSA" (to-do 20(h), Versión 172, decisión de
   Guido). Es la misma familia que "SIN DATO NO ES CERO" de más arriba, pero un nivel más abajo: no
   en los KPIs, sino en cada fila de Formato simplificado.

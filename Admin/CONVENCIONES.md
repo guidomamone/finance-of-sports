@@ -153,49 +153,53 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   (una cotización, un deflactor, una lista, Wikipedia…), se suma a `Admin/fuentes-externas.md` con sus términos leídos en su página: qué
   permite y si deja reventa. La licencia del sitio está en `terminos.html` ("Licencia y reuso").
 
+- **LO QUE SE DECIDE O SE DESCUBRE SE ESCRIBE EN EL LUGAR DONDE SE VA A LEER, EN EL MISMO TURNO;** lo que una máquina puede vigilar lo vigila una máquina. Dónde queda cada tipo:
+
+| Tipo | Hoy | Tiene que quedar en | Lo vigila |
+|---|---|---|---|
+| Decisión de Guido en el chat | memoria | `CONVENCIONES*.md` / skill (propuesta en `Admin/propuestas/`) | hook `memoria-no-es-regla` |
+| Pregunta resuelta | dentro de la pregunta | `Admin/carga-clubes/<id>.md`; se borra de dudas | `audit.js` `duda-resuelta-en-dudas` |
+| Pregunta abierta que frena una carga | solo `dudas-por-club.md` | también en `Admin/TODO.md` | convención de formato |
+| Descarte medido | CHANGELOG (se archiva en 7 días) | una línea en `HALLAZGOS-pipeline.md` | `audit.js` `medicion-sin-destino` |
+| «Retomar si…» | prosa | un número que una tool imprime (`gasto.mjs`, `estado.mjs`) | la tool |
+| Medición paga | archivo crudo | HALLAZGOS + `Conclusión:`/`Destino:` arriba; el crudo a Archive | `audit.js` `medicion-sin-destino` |
+| Pendiente de una nota de sesión | `Admin/sesiones/` y después `Archive/` | `TODO n` / regla / HALLAZGOS / descartado, con flecha | aviso en `worktree.mjs mergear` |
+| Registro | `Admin/registros/` | con lector declarado en un README | `audit.js` `registro-sin-lector` |
+| Historia en un doc de criterio | texto | `Admin/CHANGELOG.md` | `audit.js` `historia-en-doc-de-criterio` |
+
 ## Índice de las reglas que viven en otro archivo
 
-- DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152, actualizada en la 155 cuando el → `Admin/CONVENCIONES-DATOS.md`
-- QUÉ SE TRADUCE Y QUÉ NO (Versión 138, cierra la decisión que el to-do 19(c) dejaba abierta). → `Admin/PANTALLA.md`
-- NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO (Versión 137, decisión de arquitectura que salió → `Admin/CONVENCIONES-DATOS.md`
-- "SIN DATO" NO ES CERO (Versión 137 para la comparación, ampliado en la 152 a la ficha de → `Admin/CONVENCIONES-DATOS.md`
-- INGRESO EXTRAORDINARIO: SE QUEDA EN `exceptional_items` (decisión de Guido, 2026-09-20, to-do → `Admin/CONVENCIONES-DATOS.md`
-- "LA FUENTE REPORTA CERO" NO ES "LA FUENTE NO LO DESGLOSA" (to-do 20(h), Versión 172, decisión de → `Admin/CONVENCIONES-DATOS.md`
-- NADA DE `alert()` EN UN CAMINO DE ERROR (Versión 137, bug real que costó una hora de sesión). Un → `Admin/PANTALLA.md`
-- UNA PÁGINA FUERA DE LA RAÍZ TIENE QUE DECLARAR `window.I18N_BASE` (Versión 162, bug real de esta → `Admin/PANTALLA.md`
-- TODO ARCHIVO DE `js/` QUE LLAME A `t()` VA EN LA LISTA DE `tools/audit.js` (Versión 137). El → `Admin/PANTALLA.md`
-- LA LIGA DE UN EJERCICIO ES LA DEL CIERRE (Versión 132, decidido por Guido). Cuando un ejercicio → `Admin/CONVENCIONES-DATOS.md`
-- EL `clubId` DE UN CLUB NUEVO LLEVA EL PAÍS AL FINAL (Versión 129, decidido antes del selector → `Admin/CONVENCIONES-DATOS.md`
-- `note` ES INTERNA Y NO SE RENDERIZA NUNCA; LO QUE VE EL VISITANTE ES `publicNote` (Versión 127, → `Admin/CONVENCIONES-DATOS.md`
-- PROCEDENCIA DEL TIPO DE CAMBIO: TODO `fx` DECLARA DE DÓNDE SALIÓ (Versión 125, a pedido de Guido: → `Admin/CONVENCIONES-DATOS.md`
-- ASSET_V SE SUBE EN DOS LUGARES, NO EN UNO (Versión 125, bug real de esta sesión): `window.ASSET_V` → `Admin/PANTALLA.md`
-- SEGUNDO EJERCICIO NUEVO DE SAN LORENZO + REGLA DE PRESUPUESTOS EN CAJA (Versión 97, Guido: "quiero → `Admin/CONVENCIONES-DATOS.md`
-- 2 BUGS REALES CORREGIDOS + REGLA NUEVA DE ORDEN DEL DROPDOWN (Versión 96): (1) Boca (club default) → `Admin/PANTALLA.md`
-- REGLA (Versión 50, Guido: "(presupuestado)" pegado al año se superponía con el header "% DEL → `Admin/PANTALLA.md`
-- REGLA PERMANENTE (Versión 189, pedido explícito de Guido, REEMPLAZA a la regla de la Versión 49 → `Admin/CONVENCIONES-DATOS.md`
-- REGLA PERMANENTE (Versión 189): Ingresos tiene 2 filas nuevas, **"Educación"** (`education`) y → `Admin/CONVENCIONES-DATOS.md`
-- REGLA HISTÓRICA (Versión 49, pedido explícito de Guido en su momento, VIGENTE HASTA LA VERSIÓN → `Admin/Archive/convenciones-historia.md`
-- REGLA REFORZADA (Versión 48, Guido: "urnifica, tienen que ser exactamente iguales los nombres"): → `Admin/PANTALLA.md`
-- REGLA PERMANENTE (Versión 47, extiende la regla de la Versión 46, pedido explícito de Guido: "la → `Admin/PANTALLA.md`
-- REGLA PERMANENTE (Versión 46, pedido explícito de Guido): "Formato simplificado" de CUALQUIER → `Admin/PANTALLA.md`
-- REGLA (Versión 44, mismo pedido que la Versión 43 pero para "Gestión"): el → `Admin/PANTALLA.md`
-- REGLA (Versión 43, bug real de UX reportado por Guido): el `<select id="anioSelect">` ("Año" de → `Admin/PANTALLA.md`
-- REGLA VIGENTE (Versión 42, reemplaza la regla de las Versiones 34-35/41, ver bullet más abajo): → `Admin/PANTALLA.md`
-- REGLA PARA EL FUTURO (Versión 40, pedido explícito de Guido: "es mi manera de hacerte un → `Admin/PANTALLA.md`
-- REGLA (Versión 39, bug real de layout + una regresión propia corregida en la misma sesión): → `Admin/PANTALLA.md`
-- REGLA (Versión 38, corrige un bug real de categorización): antes de meter algo adentro de → `Admin/CONVENCIONES-DATOS.md`
-- REGLA (Versión 37, bug visual): el "$" del eje Y del gráfico de barras (card Gráficos) no → `Admin/PANTALLA.md`
-- REGLA (Versión 36, pedida por Guido: "detesto que hagas eso"): la cita de fuente ("Fuente: ...") → `Admin/PANTALLA.md`
-- REGLA (Versiones 34-35, pedida por Guido, no es opcional, "homologar lo que se pueda → `Admin/PANTALLA.md`
-- OJO REGLA REFORZADA (bug real, Versión 30): NUNCA cargar datos al sitio → `Admin/CONVENCIONES-DATOS.md`
-- OJO Ejercicio 2027 tiene categorías EXTRA en el Formato simplificado que → `Admin/CONVENCIONES-DATOS.md`
-- OJO clase `bocaPresupuestoOficialCard`: pese al nombre, NO es "solo para → `Admin/PANTALLA.md`
-- OJO `Object.keys()` sobre un objeto con claves que parecen enteros → `Admin/PANTALLA.md`
-- OJO texto fijo dibujado a mano en un <canvas> de Chart.js: el "$" del eje Y → `Admin/PANTALLA.md`
-- OJO alineación en `<summary>` de acordeón (`details.accordion>summary`): usa → `Admin/PANTALLA.md`
-- OJO stats de arriba de Finanzas: el stat "Gastos" (`#finanzasStats`) SIEMPRE → `Admin/PANTALLA.md`
-- REGLA DEL COLOR DE CADA CLUB (Versión 178, decisión de Guido al cerrar el to-do → `Admin/PANTALLA.md`
-- OJO CON EL ESTADO DE UI A NIVEL DE MÓDULO EN `js/selector.js` (Versión 174). → `Admin/PANTALLA.md`
-- OJO Chart.js: el script tag pinea la versión exacta de cdnjs → `Admin/PANTALLA.md`
-- **YA NO ES CIERTO DESDE EL 2026-09-20: AHORA SÍ HAY `netlify.toml`.** Netlify sigue publicando la raíz, pero antes… → `Admin/Archive/convenciones-historia.md`
-- REGLA (a pedido de Guido): un presupuesto en año CALENDARIO se reconstruye a temporada, nunca se carga tal cual (ex… → `Admin/CONVENCIONES-DATOS.md`
+- DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO → `Admin/CONVENCIONES-DATOS.md`
+- QUÉ SE TRADUCE Y QUÉ NO → `Admin/PANTALLA.md`
+- NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO → `Admin/CONVENCIONES-DATOS.md`
+- "SIN DATO" NO ES CERO → `Admin/CONVENCIONES-DATOS.md`
+- INGRESO EXTRAORDINARIO: SE QUEDA EN `exceptional_items` → `Admin/CONVENCIONES-DATOS.md`
+- "LA FUENTE REPORTA CERO" NO ES "LA FUENTE NO LO DESGLOSA" → `Admin/CONVENCIONES-DATOS.md`
+- NADA DE `alert()` EN UN CAMINO DE ERROR → `Admin/PANTALLA.md`
+- UNA PÁGINA FUERA DE LA RAÍZ TIENE QUE DECLARAR `window.I18N_BASE` → `Admin/PANTALLA.md`
+- TODO ARCHIVO DE `js/` QUE LLAME A `t()` VA EN LA LISTA DE `tools/audit.js` → `Admin/PANTALLA.md`
+- LA LIGA DE UN EJERCICIO ES LA DEL CIERRE → `Admin/CONVENCIONES-DATOS.md`
+- EL `clubId` DE UN CLUB NUEVO LLEVA EL PAÍS AL FINAL → `Admin/CONVENCIONES-DATOS.md`
+- `note` ES INTERNA Y NO SE RENDERIZA NUNCA; LO QUE VE EL VISITANTE ES `publicNote` → `Admin/CONVENCIONES-DATOS.md`
+- PROCEDENCIA DEL TIPO DE CAMBIO: TODO `fx` DECLARA DE DÓNDE SALIÓ → `Admin/CONVENCIONES-DATOS.md`
+- ASSET_V SE SUBE EN DOS LUGARES, NO EN UNO: `window.ASSET_V` → `Admin/PANTALLA.md`
+- REGLA DE PRESUPUESTOS EN CAJA → `Admin/CONVENCIONES-DATOS.md`
+- REGLA DE ORDEN DEL DROPDOWN → `Admin/PANTALLA.md`
+- "(presupuestado)" pegado al año no se superpone con el header "% DEL TOTAL" → `Admin/PANTALLA.md`
+- INGRESOS TIENE LAS FILAS "Educación" (`education`) Y "Otras secciones deportivas" → `Admin/CONVENCIONES-DATOS.md`
+- "Formato simplificado" de CUALQUIER club → `Admin/PANTALLA.md`
+- El `<select id="anioSelect">` ("Año" de Finanzas) → `Admin/PANTALLA.md`
+- El "$" del eje Y del gráfico de barras (card Gráficos) → `Admin/PANTALLA.md`
+- La cita de fuente ("Fuente: ...") → `Admin/PANTALLA.md`
+- NUNCA cargar datos al sitio sin antes… → `Admin/CONVENCIONES-DATOS.md`
+- Ejercicio 2027: categorías EXTRA en el Formato simplificado → `Admin/CONVENCIONES-DATOS.md`
+- Clase `bocaPresupuestoOficialCard`: pese al nombre, NO es "solo para Boca" → `Admin/PANTALLA.md`
+- `Object.keys()` sobre un objeto con claves que parecen enteros → `Admin/PANTALLA.md`
+- Texto fijo dibujado a mano en un <canvas> de Chart.js: el "$" del eje Y → `Admin/PANTALLA.md`
+- Alineación en `<summary>` de acordeón (`details.accordion>summary`) → `Admin/PANTALLA.md`
+- El stat "Gastos" de arriba de Finanzas (`#finanzasStats`) → `Admin/PANTALLA.md`
+- EL ESTADO DE UI A NIVEL DE MÓDULO EN `js/selector.js` → `Admin/PANTALLA.md`
+- Chart.js: el script tag pinea la versión exacta de cdnjs → `Admin/PANTALLA.md`
+- Hay `netlify.toml`: lo interno se borra del deploy → `Admin/Archive/convenciones-historia.md`
+- UN PRESUPUESTO EN AÑO CALENDARIO SE RECONSTRUYE A TEMPORADA, NUNCA SE CARGA TAL CUAL → `Admin/CONVENCIONES-DATOS.md`
+- Otras reglas de pantalla y de datos que ya no tienen título propio acá: `Admin/PANTALLA.md` y `Admin/CONVENCIONES-DATOS.md`, que se leen enteros cuando la tarea las toca.

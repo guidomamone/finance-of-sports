@@ -37,6 +37,8 @@ Por eso el pipeline separa tajantemente tres pasos, y solo uno de ellos corre af
 No hay regla de disparo automática: Guido decide cuándo escribirle a un club. El envío no necesita
 aprobación mensaje-por-mensaje en el chat una vez que Guido corre el script.
 
+Nadie redacta ni asigna un mail a un club sin que Guido lo haya pedido con sus palabras. Una sesión que lo propone, o una nota que dice «candidato a mail», queda anotada en el to-do de origen sin sesión propia hasta que Guido pida el outreach.
+
 **Candidatos, y la regla de exhaustividad**: un club recién está listo para el PRIMER mail cuando se
 agotó esto, no antes:
 
