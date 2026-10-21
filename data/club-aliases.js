@@ -1,4 +1,4 @@
-// Los ids viejos de club (sin país) y a qué id apuntan hoy (to-do 246). NO se borra ninguna entrada: un link compartido o una búsqueda guardada
+// Los ids viejos de club (sin país) y a qué id apuntan hoy. NO se borra ninguna entrada: un link compartido o una búsqueda guardada
 // con el id viejo tiene que seguir abriendo. Lo escribe tools/renombrar-ids.mjs; un alias nuevo se agrega a mano y `audit.js` lo chequea
 // (alias-roto). Las páginas fuentes/<id>.html viejas redirigen desde netlify.toml.
 window.CLUB_ALIASES = {

@@ -214,7 +214,7 @@ export function calcular() {
 }
 
 // ---------------------------------------------------------------------------- salidas
-const CABECERA = () => `// GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).\n// calculado: ${HOY.toISOString().slice(0, 10)}\n`;
+const CABECERA = () => `// GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).\nwindow.LEAGUE_GAPS_CALCULADO = '${HOY.toISOString().slice(0, 10)}';\n`; // la fecha va como DATO (un comentario con fecha cuenta como historia interna publicada)
 function salidas({ resultado, pendientes }) {
   const files = {};
   for (const [liga, ys] of Object.entries(resultado)) {
@@ -257,7 +257,7 @@ function imprimir({ resultado, sinUnir, pendientes, aliasFaltan, aliasRotos }) {
 // La fecha con la que se calcularon los archivos que hay (la cabecera de data/faltantes/). Sin ella (archivos de antes de este cambio), se regenera una vez.
 function fechaGuardada() {
   const dir = resolve(ROOT, 'data', 'faltantes'); if (!existsSync(dir)) return null;
-  for (const f of readdirSync(dir).filter((x) => x.endsWith('.js'))) { const m = readFileSync(resolve(dir, f), 'utf8').match(/^\/\/ calculado: (\d{4}-\d{2}-\d{2})$/m); if (m) return m[1]; }
+  for (const f of readdirSync(dir).filter((x) => x.endsWith('.js'))) { const m = readFileSync(resolve(dir, f), 'utf8').match(/^window\.LEAGUE_GAPS_CALCULADO = '(\d{4}-\d{2}-\d{2})';$/m); if (m) return m[1]; }
   return null;
 }
 // ¿Este worktree no tiene los enlaces a algún PDF que la carpeta principal ya tiene? Lo que sale de pdfsEnMano() depende de los PDF (no se trackean), así que un worktree sin

@@ -879,5 +879,20 @@
   "code": "salto-interanual",
   "match": "harjujklaagri-ee: revenue salta",
   "motivo": "REVISADO (Auditora 5, contra Clubes/Estonia/Harju JK Laagri/aruanne-2025.md): «Annetused ja toetused» 296.416 EUR contra 2.500 el año anterior, una subvención destinada; el ingreso total coincide con el oficial (0,393836 M)."
+ },
+ {
+  "code": "ruta-muerta",
+  "match": "`Admin/difusion/calendario.md`: no existe",
+  "motivo": "REVISADO (Pipeline 13, 2026-10-21): la skill contenido-y-difusion nombra un calendario de publicaciones que todavía no se creó (no existe Admin/difusion/). Quitar la mención es editar una skill, que va con el ok de Guido; mientras tanto se silencia. Retomar cuando se cree el calendario o se corrija la skill."
+ },
+ {
+  "code": "ruta-muerta",
+  "match": "`club-v3.json`: no existe",
+  "motivo": "REVISADO (Pipeline 13, 2026-10-21): la skill contrato-de-datos nombra club-v3.json como EJEMPLO del archivo del esquema siguiente («el esquema nuevo es un archivo nuevo»); hoy el vigente es club-v2.json y no hay v3. Es a propósito."
+ },
+ {
+  "code": "ruta-muerta",
+  "match": "`resultado-N.json`: no existe",
+  "motivo": "REVISADO (Pipeline 13, 2026-10-21): Admin/dudas-por-club.md nombra «resultado-N.json de la tanda» con N como marcador de lugar (cada tanda de búsqueda tiene el suyo); no es una ruta."
  }
 ]
