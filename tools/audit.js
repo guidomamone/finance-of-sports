@@ -865,7 +865,7 @@ function checkRutasMuertas() {
 // Las skills, CLAUDE.md y los documentos de criterio dicen cómo se trabaja y qué hay HOY: sin «Versión N», sin fechas de decisión y
 // sin «to-do N» (eso va a Admin/CHANGELOG.md y Admin/TODO.md; ver CLAUDE.md, «Al empezar»). P3: es la lista de limpieza, no una alarma.
 // No mira contadores fijos («58 clubes»): el patrón da falsos positivos y no se midió su precisión.
-const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md'];
+const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md'];
 const HISTORIA_EN_DOCS = [
   ['version', /\bVersi[óo]n \d+/g, '«Versión N»'],
   ['fecha', /\b20\d\d-\d\d-\d\d\b/g, 'fechas AAAA-MM-DD'],
@@ -876,14 +876,18 @@ function checkHistoriaEnDocs() {
   const archivos = [...DOCS_DE_CRITERIO, ...mdsDeSkills()].filter(f => fs.existsSync(path.join(ROOT, f)));
   for (const [clave, re, nombre] of HISTORIA_EN_DOCS) {
     const porArchivo = new Map();
+    const primera = new Map();   // la primera línea con el patrón: dónde empezar a limpiar
     for (const f of archivos) {
-      const n = (fs.readFileSync(path.join(ROOT, f), 'utf8').match(re) || []).length;
-      if (n) porArchivo.set(f, n);
+      const texto = fs.readFileSync(path.join(ROOT, f), 'utf8');
+      const n = (texto.match(re) || []).length;
+      if (!n) continue;
+      porArchivo.set(f, n);
+      primera.set(f, texto.slice(0, texto.search(re)).split('\n').length);
     }
     if (!porArchivo.size) continue;
     const total = [...porArchivo.values()].reduce((a, b) => a + b, 0);
-    const top = [...porArchivo].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([f, n]) => `${f} (${n})`).join(', ');
-    add('P3', 'historia-en-doc-de-criterio', `${nombre}: ${total} en ${porArchivo.size} documentos de criterio (skills, CLAUDE.md, PIPELINE, CONVENCIONES*, PANTALLA); los que más: ${top}. Esos documentos dicen qué hay HOY: la historia va a Admin/CHANGELOG.md y los pendientes a Admin/TODO.md`);
+    const top = [...porArchivo].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([f, n]) => `${f}:${primera.get(f)} (${n})`).join(', ');
+    add('P3', 'historia-en-doc-de-criterio', `${nombre}: ${total} en ${porArchivo.size} documentos de criterio (skills, CLAUDE.md, ESTADO, PIPELINE, CONVENCIONES*, PANTALLA); los que más (archivo:primera línea): ${top}. Esos documentos dicen qué hay HOY: la historia va a Admin/CHANGELOG.md y los pendientes a Admin/TODO.md`);
   }
 }
 
