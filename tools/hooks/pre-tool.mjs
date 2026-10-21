@@ -24,8 +24,9 @@
 //   push-con-ok              `git push` le pide permiso a Guido cada vez: un push a main despliega en Netlify (free tier, ~25 deploys/mes).
 //   docs-de-la-principal     en un worktree, escribir Admin/TODO.md, CHANGELOG.md o ESTADO.md se rechaza: los escribe solo la principal; el
 //                            cierre de la rama va en Admin/sesiones/<rama>.md (skill de arranque, worktree.md). En la principal no hace nada.
-//   pdfs-con-ok              borrar en Clubes/ (rm, unlink, trash, find -delete) o un `git clean` con -x/-X le pide permiso a Guido: los PDF
-//                            no se trackean y no hay copia de dónde recuperarlos; antes hay que chequear las referencias del pipeline.
+//   pdfs-con-ok              (deny) borrar o pisar en Clubes/ (rm, unlink, trash, find -delete, mv sobre algo que existe) o un `git clean`
+//                            con -x/-X: los PDF no se trackean y no hay copia. No le pregunta a Guido: dice qué usar (preparar, mv a un nombre
+//                            nuevo, el scratchpad). Un mv a un destino que no existe y un Clubes/ del scratchpad pasan.
 //
 //   comandos-simples        (deny) un Bash con /tmp suelto, `cd … &&`, o `$(…)`/`${…}`/`$VAR` fuera de comillas simples: no se puede chequear antes de
 //                            correr y pide permiso cada vez (to-do 327, C-1). Pasan el scratchpad de la sesión y el heredoc de `git commit`.
@@ -242,9 +243,12 @@ function pdfsConOk(cmd) {
   const sinScratchpad = cmd.replace(/(?:\/private)?\/tmp\/claude-\d+\/[^\s"']*/g, '');
   const borraEnClubes = /\bClubes\b/.test(sinScratchpad) && /\b(rm|unlink|trash|mv)\s|\s-delete\b/.test(cmd) && !soloRenombres(cmd);
   const gitCleanIgnorados = GIT_SUB('clean').test(cmd) && /\s-\w*[xX]/.test(cmd);
+  // No se le pregunta a Guido: una sesión nunca borra en Clubes/ (si él quiere borrar un PDF, lo hace él). Se frena y se dice qué usar.
   if (borraEnClubes || gitCleanIgnorados) {
-    decidir('ask', 'Esto puede borrar PDFs de Clubes/. No se trackean y no hay copia de dónde recuperarlos: ¿Guido lo pidió y se chequearon '
-      + 'las referencias del pipeline (tools/quien.mjs, el registro)?');
+    decidir('deny', 'Una sesión no borra ni pisa nada en Clubes/: los PDF no se trackean y no hay copia. En su lugar: enlaces rotos de un worktree, '
+      + '`node tools/worktree.mjs preparar <carpeta>` (los saca solo); renombrar, `mv` a un nombre que todavía no existe (pasa); un archivo que '
+      + 'no es lo que dice, se renombra con -pagina-html y se baja el real; una prueba, en un Clubes/ del scratchpad. Si de verdad hay que borrar, se le '
+      + 'pide a la principal, que se lo pide a Guido.');
   }
 }
 
