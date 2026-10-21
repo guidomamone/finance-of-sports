@@ -62,6 +62,14 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
   encabezado de `data/gestiones/ar.js`). El gráfico pinta una franja por gestión (plugin `franjasGestion`) y la tabla agrupa las
   columnas por presidente. Un país nuevo se suma a `PAISES` en `FIN_GESTION`; `tools/audit.js` (`checkGestiones`) controla
   fuentes, fechas, superposiciones y que la lista coincida con los archivos.
+- **Marca COVID** (`esCovid()` y `marcaCovidHtml()`, js/finanzas-calc.js; estilos `.covid`, css/styles.css; mockup aprobado:
+  `Prototyping/Covid/mockup-covid.html`; guías: `.claude/skills/producto-y-pantalla-finance-of-sports/referencia/marca.md`). Un ejercicio (balance
+  o presupuesto) cuyo cierre cae entre 2020-03-31 y 2021-12-31 lleva una etiqueta de estado «COVID» (el patrón de `.stat-tag`: mayúsculas de 10,5 px
+  con espaciado, recuadro de 4 px, azul del sitio sobre azul muy claro; sin estallido, sin inclinación). Se deriva de `cierreEjercicio()`: no hay
+  campo en los datos. Va en tres lugares: una línea dentro del card de cada ejercicio (la fila suma esa línea de alto), la cabecera de las columnas de la tabla multi-año y el
+  número «Ingresos» de arriba (solo ese, para no repetirla en los cinco). Es un `role="img"` con `aria-label` y un globo de `js/info-tip.js`
+  (`data-info-tip`): al pasar el puntero o tocar; dentro de un card, tocarla abre el globo y no elige el año; fuera, recibe foco con Tab y se
+  abre con Enter o espacio. Los textos son `covid.aria` y `covid.tip`. Todavía no está en Comparar, Ligas ni el selector de ejercicio.
 - **Mi Cuenta** guarda `years` además de `year`; con un solo año la clave es la de siempre (las búsquedas viejas no se duplican).
 - **Cómo verificar un cambio acá**: los totales de cada columna contra la tabla de un año, eligiendo los ejercicios de a uno
   CON CLICKS en los cards (`#finYears .fin-year`). Llamar `refreshFinanzas()` o `selectClub()` desde la consola no sirve:

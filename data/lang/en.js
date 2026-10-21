@@ -832,4 +832,6 @@ window.I18N.strings.en = {
   "liga.f.informes": "With reports",
   "liga.abrir": "Open all",
   "liga.cerrar": "Close all",
+  "covid.aria": "Financial year during the COVID-19 pandemic: matches suspended or played behind closed doors",
+  "covid.tip": "COVID-19 pandemic: between March 2020 and June 2021 matches were suspended or played behind closed doors, depending on the country. The amounts are the ones in the accounts, with no adjustment.",
 };

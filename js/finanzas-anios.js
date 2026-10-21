@@ -139,8 +139,13 @@ const FIN_ANIOS = (function(){
         b.title = t('finanzas.card.unpublishedTip', 'El club todavía no publicó este ejercicio, o no lo conseguimos');
       } else {
         b.setAttribute('aria-pressed', FIN_SEL.has(e.y) ? 'true' : 'false');
-        b.onclick = () => cambiar(FIN_SEL.has(e.y) ? sel.filter(y => y !== e.y) : sel.concat(e.y));
+        // Tocar la marca COVID abre su globo y no elige el año.
+        b.onclick = (ev) => {
+          if(ev && ev.target && ev.target.closest && ev.target.closest('.covid')) return;
+          cambiar(FIN_SEL.has(e.y) ? sel.filter(y => y !== e.y) : sel.concat(e.y));
+        };
       }
+      if(esCovid(clubId, e.y)) b.insertAdjacentHTML('beforeend', marcaCovidHtml('s', false));
       fila.appendChild(b);
     });
     // En celular la fila se scrollea de costado: que arranque mostrando lo más nuevo.

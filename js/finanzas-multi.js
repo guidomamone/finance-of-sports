@@ -261,7 +261,7 @@ const FIN_MULTI_PL = (function(){
     let head = `<tr><th>${t('th.line', 'Rubro')}<small>${pct ? esc(t('pl.multi.pctUnit', '% del total')) : esc(FIN_REAL.unidad(clubId))}</small></th>`;
     cols.forEach(c => {
       head += c.gap ? `<th class="pl-gap" title="${esc(t('pl.multi.gap', 'Años sin elegir en el medio'))}">…</th>`
-        : `<th${cls(c)}>${lab(c.d.y)}<small>${sub(c)}${!pct && c.src !== 'dev' && FIN_REAL.fac(c.d.y) > 1.005 ? ' · ×' + FIN_REAL.fac(c.d.y).toFixed(2) : ''}</small></th>`;
+        : `<th${cls(c)}>${esCovid(clubId, c.d.y) ? '<span class="cab-covid">' + marcaCovidHtml('m', true) + '</span>' : ''}${lab(c.d.y)}<small>${sub(c)}${!pct && c.src !== 'dev' && FIN_REAL.fac(c.d.y) > 1.005 ? ' · ×' + FIN_REAL.fac(c.d.y).toFixed(2) : ''}</small></th>`;
     });
     head += `<th class="pl-delta">Δ ${lab(primero.y)}→${lab(ultimo.y)}</th><th class="pl-spark">${t('pl.multi.trend', 'Tendencia')}</th></tr>`;
 
@@ -473,7 +473,8 @@ const FIN_MULTI_KPIS = (function(){
       const etiqueta = st.querySelector('.label');
       if(etiqueta && !etiqueta.querySelector('.stat-year')){
         etiqueta.insertAdjacentHTML('beforeend', ` <span class="stat-year">· ${lab(ultimo.y)}</span>` +
-          (ultimo.presu ? ` <span class="stat-tag">${t('finanzas.card.budget', 'Presupuesto')}</span>` : ''));
+          (ultimo.presu ? ` <span class="stat-tag">${t('finanzas.card.budget', 'Presupuesto')}</span>` : '') +
+          (k === 'ing' && esCovid(clubId, ultimo.y) ? ' ' + marcaCovidHtml('l', true) : ''));
       }
       if(k === 'nd' && ultimo.presu){
         const v = st.querySelector('.value');

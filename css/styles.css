@@ -988,6 +988,14 @@
   .lg-mat td.vacio{color:var(--muted);}
   .lg-mat .lg-liga{min-height:36px;padding:0 12px;margin:2px 4px 2px 0;}
   .lg-nota{margin:0;font-size:13.5px;color:var(--muted);}
+  /* La marca COVID: una etiqueta de estado, el mismo patrón que .stat-tag, en azul del sitio (una condición del ejercicio). Ver Admin/PANTALLA.md, "Marca COVID". */
+  .covid{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;line-height:1.5;padding:0 6px;border:1px solid var(--azul);
+    border-radius:4px;background:#eaf0fa;color:var(--azul);cursor:help;outline-offset:2px;white-space:nowrap;vertical-align:1px;}
+  .covid.l{font-size:11px;}
+  .covid:focus-visible{outline:2px solid var(--oro,#f2b705);}
+  .fin-year .covid{display:block;width:fit-content;margin-top:5px;}
+  .cab-covid{display:block;text-align:right;margin-bottom:2px;}
+  .stat .label .covid{margin-left:6px;}
   @media (max-width:600px){ .lg-dpais{grid-template-columns:1fr;} .lg-acc{margin-left:0;} }
   .lg-sindatos{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 20px;}
   .lg-sindatos summary{cursor:pointer;font-weight:700;font-size:14px;color:#45474d;}
