@@ -392,6 +392,92 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 2021: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2020–21 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-giu-issuu.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Italia/Fiorentina/Fiorentina-bilancio-2020-giu-issuu.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ricavi Gare in Casa – Campionato | pág. 75, precedente |
+| 2 | Ricavi per abbonamenti | pág. 75, precedente |
+| 3 | Ricavi Gare in Casa - Coppa Italia | pág. 75, precedente |
+| 4 | Ricavi Gare fuori Casa - Coppa Italia | pág. 75, precedente |
+| 5 | Ricavi da sponsorizzazioni ufficiali | pág. 76, precedente |
+| 6 | Ricavi da sponsor tecnico | pág. 76, precedente |
+| 7 | Ricavi da altre sponsorizzazioni commerciali | pág. 76, precedente |
+| 8 | c) proventi pubblicitari | pág. 42, precedente |
+| 9 | d) proventi commerciali e royalties | pág. 42, precedente |
+| 10 | e) proventi da cessione diritti televisivi | pág. 42, precedente |
+| 11 | Diritti di trasmissione radiofonici | pág. 77, precedente |
+| 12 | Proventi accessori diritti televisivi | pág. 77, precedente |
+| 13 | Ricavi Collettivi Lega Naz.le Professionisti | pág. 77, precedente |
+| 14 | Proventi da partecipazione Coppa Italia | pág. 77, precedente |
+| 15 | Ricavi per servizi resi a società controllanti | pág. 77, precedente |
+| 16 | Indennità partecipazione calciatori altre competizioni | pág. 77, precedente |
+| 17 | Altri | pág. 77, precedente |
+| 18 | g) ricavi per cessione temporanea giocatori | pág. 42, precedente |
+| 19 | h) plusv. da cessione diritti pluriennali alle prest.di calciatori | pág. 42, precedente |
+| 20 | ILICIC J. | pág. 78, precedente |
+| 21 | Contributi solidarietà FIFA attivi | pág. 78, precedente |
+| 22 | Premi preparazione attivi | pág. 78, precedente |
+| 23 | l) ricavi e proventi diversi | pág. 42, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Materiale Tecnico per attività sportiva | pág. 79, precedente |
+| 2 | Materiale Sanitario | pág. 79, precedente |
+| 3 | Costi per manutenzioni e riparazioni | pág. 79, precedente |
+| 4 | Materiale di consumo e altri | pág. 79, precedente |
+| 5 | Costi per attività sportiva | pág. 80, precedente |
+| 6 | Servizio biglietteria e controllo ingressi | pág. 80, precedente |
+| 7 | Vitto, alloggio e locomozioni squadre | pág. 80, precedente |
+| 8 | Assicurazioni | pág. 80, precedente |
+| 9 | Amministrative, pubblicitarie e generali | pág. 80, precedente |
+| 10 | Utenze sedi sociali e stadio | pág. 80, precedente |
+| 11 | Consulenze Direzionali, legali, commerciali e varie | pág. 80, precedente |
+| 12 | 8) per godimento di beni di terzi | pág. 42, precedente |
+| 13 | a) salari e stipendi | pág. 42, precedente |
+| 14 | b) oneri sociali | pág. 42, precedente |
+| 15 | c) trattamento di fine rapporto | pág. 42, precedente |
+| 16 | e) altri costi | pág. 42, precedente |
+| 17 | a) ammortamento immobilizzazioni immateriali | pág. 42, precedente |
+| 18 | b) ammortamento diritti pluriennali calciatori | pág. 42, precedente |
+| 19 | c) ammortamento immobilizzazioni materiali | pág. 42, precedente |
+| 20 | d) altre svalutazioni delle immobilizzazioni | pág. 42, precedente |
+| 21 | e) svalutazione crediti dell'attivo circolante | pág. 42, precedente |
+| 22 | 11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci | pág. 42, precedente |
+| 23 | 12) accantonamenti per rischi | pág. 42, precedente |
+| 24 | Spese Organizzazione gare | pág. 82, precedente |
+| 25 | Tasse iscrizione gare | pág. 82, precedente |
+| 26 | Mutualità passiva per incassi Coppa Italia | pág. 82, precedente |
+| 27 | Costi per acq. temporanea prestazioni calciatori | pág. 82, precedente |
+| 28 | Minusvalenze cessione diritti plur. Prest. calciatori | pág. 82, precedente |
+| 29 | DRAGOSWKI B. | pág. 82, Claude 0.85 |
+| 30 | PEDRO G. | pág. 82, Claude 0.85 |
+| 31 | Altri | pág. 82, precedente |
+| 32 | Contributi Solidarietà FIFA | pág. 82, precedente |
+| 33 | Premi valorizzazione calciatori | pág. 82, precedente |
+| 34 | Altri oneri diversi di gestione | pág. 82, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-21): it-seriea, verificado contra roster cacheado de "2019–20 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Fiorentina".
+```
+
 ## 2019
 
 ### Ingresos
@@ -556,4 +642,12 @@ _note (data/):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-consolidato-2019-issuu.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fiorentina-it-bilancio-2020-giu-issuu
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-giu-issuu.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

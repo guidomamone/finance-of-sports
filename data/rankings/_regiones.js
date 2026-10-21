@@ -19,6 +19,7 @@ window.RANKINGS_INDICE = {
   "cl-primera": [2025,3,16],
   "co-primeraA": [2025,13,20],
   "co-primeraB": [2018,2,16],
+  "cy-seconddivision": [2024,1,16],
   "de-2bundesliga": [2025,2,18],
   "de-bundesliga": [2024,10,18],
   "dk-1division": [2024,1,null],

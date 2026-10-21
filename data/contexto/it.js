@@ -79,6 +79,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'fiorentina-it': {
     2019: {"estadio":"Stadio Artemio Franchi","capacidad":43147,"sponsor":"Mediacom","marca":"Le Coq Sportif","temporada":"2019–20 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375932850"},
+    2020: {"estadio":"Stadio Artemio Franchi","capacidad":43147,"sponsor":"Mediacom","marca":"Le Coq Sportif","temporada":"2019–20 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375932850"},
     2021: {"estadio":"Stadio Artemio Franchi","capacidad":45000,"sponsor":"Mediacom","marca":"Kappa","temporada":"2020–21 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375819828"},
     2022: {"estadio":"Stadio Artemio Franchi","capacidad":43147,"sponsor":"Mediacom","marca":"Kappa","temporada":"2021–22 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376310118"},
     2024: {"estadio":"Stadio Artemio Franchi","capacidad":43118,"sponsor":"Mediacom","marca":"Kappa","temporada":"2023–24 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377576935"},

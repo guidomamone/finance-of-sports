@@ -266,6 +266,7 @@ const FX_CLOSE = {
   'DKK@2021-12-31': { fx: 6.5612, source: 'market_close', label: 'Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2021-12-30, 2021-12-31 no es día hábil)' },
   'DKK@2022-12-31': { fx: 6.9722, source: 'market_close', label: 'Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2022-12-30, 2022-12-31 no es día hábil)' },
   'DKK@2023-12-31': { fx: 6.7447, source: 'market_close', label: 'Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2023-12-29, 2023-12-31 no es día hábil)' },
+  'EUR@2024-05-31': { fx: 0.921489, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2024-05-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

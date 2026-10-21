@@ -1,0 +1,119 @@
+{
+  "schema_version": "2.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "omonia29maiou-cy",
+    "name": "Omonia 29 Maiou",
+    "display_name": "Omonia 29 Maiou",
+    "country": "CY",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "06-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
+  "sources": [
+    {
+      "id": "omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024",
+      "club_id": "omonia29maiou-cy",
+      "title": "Omonia 29 Maiou — wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-05-31",
+      "currency": "EUR",
+      "source_id": "omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-05-31"},
+      "revenue": [
+        {"label":"Συνδρομές μελών","category":"membership","subcategory":"member_dues","amount":0.076072,"disclosure":"aggregated"},
+        {"label":"Εισιτήρια διαρκείας","category":"season_tickets","subcategory":"season_tickets","amount":0.0324,"disclosure":"aggregated"},
+        {"label":"Έσοδα αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.144905,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και εισφορές","category":"commercial","subcategory":"sponsorship_commercial","amount":0.275389,"disclosure":"aggregated"},
+        {"label":"Έσοδα μπουτίκ","category":"commercial","subcategory":"sponsorship_commercial","amount":0.0219,"disclosure":"aggregated"},
+        {"label":"Έσοδα από εκδηλώσεις","category":"other_revenue","subcategory":"other_income","amount":0.018129,"disclosure":"aggregated"},
+        {"label":"Μέλη Premium","category":"membership","subcategory":"member_dues","amount":0.035064,"disclosure":"aggregated"},
+        {"label":"Έσοδα από τμήμα έρευνας","category":"other_revenue","subcategory":"other_income","amount":0.059,"disclosure":"aggregated"},
+        {"label":"Έσοδα μεταγραφών","category":"player_transfers","subcategory":"player_sales","amount":0,"disclosure":"aggregated"},
+        {"label":"Λαχνοί","category":"other_revenue","subcategory":"other_income","amount":0.0225,"disclosure":"aggregated"},
+        {"label":"Kids Club","category":"membership","subcategory":"member_dues","amount":0.00081,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Ενοίκια και ζημιές γηπέδων",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.01712,
+          "disclosure": "aggregated"
+        },
+        {"label":"Στολές παικτών","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.018751,"disclosure":"aggregated"},
+        {"label":"Αποθέματα στο τέλος","category":"other_operating_expenses","subcategory":"other_expenses","amount":0.0055,"disclosure":"aggregated"},
+        {"label":"Διάφορα έξοδα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.054481,"disclosure":"aggregated"},
+        {
+          "label": "Έξοδα ποδοσφαιρικού τμήματος",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.162607,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα ιατρών, φυσιοθεραπευτών",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.011553,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα αγώνων","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.00179,"disclosure":"aggregated"},
+        {"label":"Νερά","category":"admin_general","subcategory":"admin_general_expense","amount":-0.00578,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα τραπεζών","category":"admin_general","subcategory":"admin_general_expense","amount":-0.000341,"disclosure":"aggregated"},
+        {"label":"Αποθέματα στην αρχή","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.01,"disclosure":"aggregated"},
+        {"label":"Κοινωνικές ασφαλίσεις","category":"first_team_staff","subcategory":"wages_squad","amount":-0.068205,"disclosure":"aggregated"},
+        {"label":"Μισθοί","category":"first_team_staff","subcategory":"wages_squad","amount":-0.233441,"disclosure":"aggregated"},
+        {"label":"Αποζημείωσεις","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Διοικητικά έξοδα","category":"admin_general","subcategory":"admin_general_expense","amount":-0.012326,"disclosure":"aggregated"},
+        {"label":"Γραφική ύλη και εκτυπωτικά","category":"admin_general","subcategory":"admin_general_expense","amount":-0.001022,"disclosure":"aggregated"},
+        {"label":"Προετοιμασία ποδοσφαιριστών","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "Αθλητικό υλικό για προπόνηση",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.008893,
+          "disclosure": "aggregated"
+        },
+        {"label":"Πρόστιμα","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.1004,"disclosure":"aggregated"},
+        {
+          "label": "Μεταφορικά ομάδας και διαμονή στην Πάφο",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.00604,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Έξοδα δεξίωσης ποδοσφαιριστών",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.004465,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα οχημάτων","category":"admin_general","subcategory":"admin_general_expense","amount":-0.000136,"disclosure":"aggregated"},
+        {"label":"Πακέτα μελών","category":"admin_general","subcategory":"admin_general_expense","amount":-0.003588,"disclosure":"aggregated"},
+        {"label":"Έξοδα οικήματος","category":"admin_general","subcategory":"admin_general_expense","amount":-0.004,"disclosure":"aggregated"},
+        {"label":"Έξοδα προπονητικού κέντρου","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.0024,"disclosure":"aggregated"},
+        {"label":"Εγγραφή παικτών","category":"admin_general","subcategory":"admin_general_expense","amount":-0.005545,"disclosure":"aggregated"},
+        {"label":"Αποσβέσεις","category":"depreciation","subcategory":"depreciation","amount":-0.00138,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.686169,"expenses":0.728764,"net_result":-0.042595}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

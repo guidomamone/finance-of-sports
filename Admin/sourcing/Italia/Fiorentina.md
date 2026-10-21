@@ -74,3 +74,5 @@ Huecos: 2022/23 (30/06/2023) y 2018: no aparecen ni en Issuu (`issuu.com/acffior
 - Mismo método que los otros Issuu (`reader3.isu.pub/<usuario>/<slug>/reader3_4.json` → `image.isu.pub/.../page_N.jpg`, ~1059×1497 px, sin capa de texto: hay que transcribir con OCR). **Trampa nueva:** las imágenes de `image.isu.pub` devuelven 403 si el pedido no lleva `Referer: https://issuu.com/` (el json no lo pide). Se confirmó por OCR la portada: «Bilancio al 30 giugno 2020».
 - **Para onboarding:** período de seis meses, no comparable con uno de doce; el ejercicio se rotula 2020 (cierre 30/06/2020). El 2018 sigue faltando (embed numérico viejo, sin slug).
 - Último chequeo: 2026-10-21.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2020 desde `Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-giu-issuu.pdf` (sourceId `fiorentina-it-bilancio-2020-giu-issuu`).
