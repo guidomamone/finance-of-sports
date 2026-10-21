@@ -256,12 +256,12 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 ### 11. La liga de un año necesita dos fuentes (`7c7a655405`; Auditora 5, sección 7, con dos cambios)
 
 - `tools/segunda-fuente-liga.mjs` (nuevo): la tabla de posiciones de RSSSF a `fuentes` de la liga-temporada; sin IA, nunca toca `data/club-leagues/`, User-Agent propio, un segundo entre pedidos, lo bajado en `Generados/fuentes-liga/` (ignorado), un 403/429 se descarta (worldfootball.net da 403); no escribe si no encuentra la tabla o da menos equipos que Wikipedia. `fetch-club-league-reference.mjs` conserva `fuentes`; `lookup-club-league.js` dice cuántas. Hechas: cy-seconddivision 2024 (16) e it-seriea 2022 (20).
-- `audit.js` (`liga-una-fuente` P3 por liga, `liga-fuentes-no-coinciden` P2 por club-año), escrito y SIN commitear: con el alcance de la Auditora (asignaciones nuevas desde 2026-10-22 y las no exactas vigentes) da 17 líneas P3 (61 club-años) y 0 P2; pasa el umbral de ~15 que puso la Auditora, se lo mandé.
-- Punto 9, `referencia-a-club-inexistente` (P1): hoy 0 (alias con `clubId` y filas de `data/club-leagues/` contra `data/clubs.js`); diseño en la Auditora, sin escribir todavía.
+- `audit.js` (`7795f1744b`): `liga-una-fuente` P3 por liga y `liga-fuentes-no-coinciden` P2 por club-año, con el alcance de la Auditora (asignaciones nuevas desde 2026-10-22 y las no exactas vigentes): 17 líneas P3 (61 club-años), 0 P2. La Auditora lo aceptó así (sin restringir a 2 club-años: un club-año suelto es justo el caso de riesgo).
+- Punto 9, `referencia-a-club-inexistente` (P1, `03c247da8e`, Auditora 5 con un cambio: un id viejo que resuelve `data/club-aliases.js` no cuenta). Hoy 0; en un worktree de mentira, un id falso en `alias.json` y otro en `data/club-leagues/ar.js` dan 2 P1; `boca` (→ boca-ar), 0.
 
 ### Qué queda (Pipeline 14)
 
-- Veredictos de la Auditora 5: el alcance de `liga-una-fuente` (17 líneas) y `referencia-a-club-inexistente`; con su ok, commitear (el primero ya está en el árbol de trabajo de esta rama) → TODO nuevo (Auditora).
+- Sumar RSSSF liga por liga con `segunda-fuente-liga.mjs`, empezando por pt-primeiraliga (8), gr-superleague (7) y be-challengerproleague (6): cada una baja su P3 (lo pide la principal a una sesión de datos) → TODO nuevo (datos).
 - Datos (Onboarding): Atalanta 2022 con `--reemplazar` (period_months 6, nota) sin cambiar otro año; cargar Fiorentina 2020 y Genoa 2024 (sacarlos antes de `documentos-parciales.txt`); OH Leuven 2019 y Benfica 2007-08 con `period_months`; Girona 2021-23 con los tres ajustes `fila --destino profit_on_player_sales`; el alta de Omonia 29 Maiou (ligas ya en el catálogo; los alias «Omonia 29M» y «ALS Omonia 29th May» van con el alta) → TODO nuevo (datos).
 - Los 9 XHTML daneses con PDF de Chrome sin texto («0 % ubicadas») → TODO nuevo.
 - La marca visual «COVID» (Pantallas, con mockup) y las REGLAS de COVID y de tramo corto en `Admin/CONVENCIONES-DATOS.md` (principal) → regla.
