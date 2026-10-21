@@ -1,0 +1,201 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.md",
+ "mdSha1": "f2bb5fd9b268537a5826904223348d417ce12c09",
+ "ubicacionSha1": "1cc25da8a009ab415334f089a3b95fe618b902ee",
+ "modelo": "a mano (Claude Code, sesión 2026-10-21)",
+ "generado": "2026-10-21T02:03:18.024Z",
+ "salida": "a mano",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b2"
+  ],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L708: 30.6.25 £"
+  },
+  {
+   "bloque": "b2",
+   "escala": "millones",
+   "evidencia": "L169: £m £m £m (Strategic Report, un decimal)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 709,
+   "etiqueta": "TURNOVER",
+   "actual": "23,339,778",
+   "anterior": "20,822,985",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 710,
+   "etiqueta": "Cost of sales",
+   "actual": "20,059,154",
+   "anterior": "19,500,753",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 711,
+   "etiqueta": "GROSS PROFIT",
+   "actual": "3,280,624",
+   "anterior": "1,322,232",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 712,
+   "etiqueta": "Administrative expenses",
+   "actual": "6,251,494",
+   "anterior": "6,290,057",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 714,
+   "etiqueta": "Other operating income",
+   "actual": "69,825",
+   "anterior": "88,503",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 715,
+   "etiqueta": "OPERATING LOSS",
+   "actual": "(2,901,045)",
+   "anterior": "(4,879,322)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 716,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "-",
+   "anterior": "1,089",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 718,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "127,574",
+   "anterior": "112,840",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 719,
+   "etiqueta": "LOSS BEFORE TAXATION",
+   "actual": "(3,028,619)",
+   "anterior": "(4,991,073)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 720,
+   "etiqueta": "Tax on loss",
+   "actual": "(250,554)",
+   "anterior": "(1,310,091)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 721,
+   "etiqueta": "LOSS FOR THE FINANCIAL YEAR",
+   "actual": "(2,778,065)",
+   "anterior": "(3,680,982)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 170,
+   "etiqueta": "Central income",
+   "actual": "4.4",
+   "anterior": "5.3",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b2",
+   "linea": 171,
+   "etiqueta": "Gate receipts",
+   "actual": "8.7",
+   "anterior": "7.0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b2",
+   "linea": 172,
+   "etiqueta": "Commercial activities",
+   "actual": "10.0",
+   "anterior": "8.1",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b2",
+   "linea": 173,
+   "etiqueta": "Other income",
+   "actual": "0.2",
+   "anterior": "0.4",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b2",
+   "linea": 174,
+   "etiqueta": "Turnover",
+   "actual": "23.3",
+   "anterior": "20.8",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 721,
+  "actual": "(2,778,065)",
+  "anterior": "(3,680,982)"
+ },
+ "dudas": [],
+ "observaciones": "Armado a mano con tokens de sesión (to-do 248, Bath Rugby como prueba de la taxonomía rugby-1). Cuentas de 'medium company' (Statement of Comprehensive Income) en b3 (pág. 20 del visor). Este formato imprime los gastos SIN paréntesis (Cost of sales, Administrative expenses, Interest payable) y el impuesto '(250,554)' es un CRÉDITO: 3.028.619 de pérdida antes de impuestos menos 250.554 = 2.778.065 de pérdida del ejercicio. Los ingresos por tipo solo están en el Strategic Report (b2, pág. 6 del visor, £m con un decimal): detallan TURNOVER con redondeo. Este documento reexpresa 2024 (Administrative expenses 6.290.057 y otros ingresos 88.503 contra 6.283.057 y 81.503 del informe 2023-24): vale cada ejercicio con su propio documento."
+}

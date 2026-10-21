@@ -1,0 +1,42 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md",
+ "mdSha1": "a6ec26a7037bac387d8b7a7483c475220ca63666",
+ "modelo": "a mano (Claude Code, sesión 2026-10-21)",
+ "generado": "2026-10-21T02:02:21.662Z",
+ "bloques": {
+  "b3": {
+   "pagina": 17,
+   "lineas": [
+    573,
+    587
+   ],
+   "tipo": "tabla"
+  },
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    114,
+    121
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b1"
+ ],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "L573: | | Note | 2022 £ | 2021 £ |",
+ "moneda": "GBP",
+ "columna_ejercicio": "2022 £",
+ "columna_anterior": "2021 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Armado a mano con tokens de sesión (to-do 248, Bath Rugby como prueba de la taxonomía rugby-1). Estado de resultados individual en b3 (pág. 17 del visor, impreso 14). Los ingresos por tipo solo están en la tabla del Strategic Report (b1, pág. 5 del visor, £m con un decimal): detallan Turnover con redondeo. CVC income es fila aparte (votación: other_income). Cost of sales y Administrative expenses son por función; el personal (nota 9, L963-968) no se abre por renglón."
+}

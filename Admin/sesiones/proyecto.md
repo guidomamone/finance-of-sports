@@ -29,8 +29,13 @@
 
 - Hecho: transcripción (`pipeline.mjs`, ~US$ 0,44: 2020-21 con Mistral, validación del escaneo de 2023-24, 2024-25 rehecho con Mistral; el
   Strategic Report de 2024-25 ahora lee bien "Central income 4.4"), más la pág. 22 de 2023-24 (US$ 0,004). Total de API: ~US$ 0,45 de US$ 2.
-- 2022-23 armado con tokens de sesión (`armar-a-mano.mjs`, 19 filas: estado b3, Strategic Report b1 en £m, nota 4 b8) y un ajuste `desglose`
-  del Turnover (44.435 £, la diferencia de redondeo, decisión 11). `verificar` cierra el resultado.
+- Los 5 años armados con tokens de sesión (`armar-a-mano.mjs`; especificaciones en el scratchpad de la sesión, el resultado en
+  `Generados/Inglaterra/Bath Rugby/`) y verificados: los 5 cierran el resultado. Lote `Admin/lotes/lote-129.txt`. Ajuste `desglose` del Turnover
+  en 2021-22 (19.557 £), 2022-23 (44.435), 2023-24 (22.985) y 2024-25 (39.778): la diferencia de redondeo (decisión 11), que hoy no entra (freno 1).
+  2020-21 no tiene desglose: no lo necesita. 2024-25 cierra con «financiero e impuesto invertidos» (su formato imprime los gastos sin paréntesis).
+- Lo que sigue (necesita main, donde Pipeline 11 ya hizo que Jev y `cargar.mjs` lean el deporte): alta de `bath-gb` (deporte `rugby`), paso 4 de
+  `carga-con-tokens.md` (Jev `--desde-sesion`, rubros en `.rubros.json`) y el resto. Faltan en main, según la principal: que Jev vea las
+  descripciones de rugby y el bolsón `lump_rugby_operations` en `cargar.mjs`; y el freno 1.
 - **Freno 1 (`Admin/registros/frenados-por-script.jsonl`)**: `verificar` acepta la nota en £m con un decimal por tolerancia, reemplaza el Turnover
   exacto y pierde la diferencia (44.435 £ en 2022-23); el ajuste `desglose` no entra porque corre solo si `cerrarNota()` falla. Cargado así,
   cada año tendría ~0,2 % menos de ingreso que lo impreso.
