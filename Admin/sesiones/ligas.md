@@ -229,3 +229,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: `7e1971717e` y `af445e43f2`, cierre de la revisión del 339, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: `7e1971717e` (`audit.js` con try/catch por chequeo) y `af445e43f2` (`PIPELINE.md`), APROBADOS. Todo el 339 de la rama `onboarding` queda aprobado para el merge.
+
+### Qué queda
+
+- Después del merge: `node tools/alta-club.mjs --todos` (gratis, ~20 s) en la principal, para que el registro de altas tenga `sport`.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
