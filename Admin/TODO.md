@@ -36,6 +36,7 @@ el número de la izquierda es el orden de trabajo.
 6. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
 7. 350 (Auditora 5, después de las corridas): relevar qué categorías están en vano (educación incluida), votar una para subsidios y donaciones, y un proceso para revisar categorías
 8. 257 (Orden 1): la parte 7, qué pasa de CONVENCIONES a skills (falta mostrarte el texto)
+9. 356 (Sourcing 4, después Onboarding): clubes británicos chicos y medianos que presentan en iXBRL, cargados sin transcribir
 
 **D. Orden de la casa**
 9. 338: correr todas las auditorías del proyecto (al final de A)
@@ -91,6 +92,9 @@ el número de la izquierda es el orden de trabajo.
 352. EL CHEQUEO DEL iXBRL PASA A FRENAR (Guido, 2026-10-21). Hechos: la fuente de un año en XHTML (`fuente-xhtml-sin-url`, nota pública) y
    `tools/ixbrl-resultado.mjs`, que avisa si el resultado cargado no coincide con el etiquetado. Falta: con 10 años de varios clubes daneses
    cargados por Onboarding 8 sin falsos avisos, la Auditora decide si pasa de aviso a frenar.
+356. CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing busca en Companies House los clubes que no tenemos y
+   presentan en iXBRL (Plymouth, Bolton, Lincoln, Oxford, Peterborough, Hibernian y el resto de League One, League Two y Escocia) y baja los
+   últimos 5 años; Onboarding los carga con `tools/xhtml-aarsrapport.mjs` (sin transcribir; el presupuesto de categorización, con Guido).
 353. LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21). Medido (`Admin/mediciones/companies-house-ixbrl.md`): los grandes presentan PDF; 9 de 36
    clubes probados vienen en iXBRL (Nottingham Forest, Burnley y Bath Rugby, cargados; Plymouth, Bolton, Lincoln, Oxford, Peterborough e
    Hibernian, no). Probado con Forest, Burnley y Bath: `xhtml-aarsrapport.mjs` ya lee el iXBRL británico sin cambios y el `.md` cierra contra
