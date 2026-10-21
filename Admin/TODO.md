@@ -31,22 +31,23 @@ el número de la izquierda es el orden de trabajo.
 * Lo que está en marcha va marcado en cada bloque.
 
 **C. Técnico**
-1. 340: tocar un club en /liga/<id> falla («No se pudieron cargar los datos») si se llegó navegando desde la portada: `loadClubData` pide `/liga/data/...` (index.html no tiene `<base href="/">`). Probablemente también en producción
-2. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
-3. 249: API en dominio propio (el último de C; no construirla todavía)
+1. 340 (Pantallas 6): tocar un club en /liga/<id> falla («No se pudieron cargar los datos») si se llegó navegando desde la portada: `loadClubData` pide `/liga/data/...` (index.html no tiene `<base href="/">`). Probablemente también en producción
+2. 341 (Pipeline 11): los 12 arreglos que se hicieron a mano para cargar Bath (`frenados-por-script.jsonl`), para que la próxima carga no los repita
+3. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+4. 249: API en dominio propio (el último de C; no construirla todavía)
 
 **D. Orden de la casa**
-4. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
-5. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
-6. 257: skills que faltan
-7. 237 al: anexo UEFA para abrir las ventas
-8. 258: índice partido por país o liga (cuando la skill de escala lo diga)
-9. 338: correr todas las auditorías del proyecto
+5. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
+6. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
+7. 257: skills que faltan
+8. 237 al: anexo UEFA para abrir las ventas
+9. 258: índice partido por país o liga (cuando la skill de escala lo diga)
+10. 338: correr todas las auditorías del proyecto
 
 **E. Después de A a D (Guido, 2026-10-20)**
-10. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-11. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-12. 335: mails a clubes
+11. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+12. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+13. 335: mails a clubes
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -138,3 +139,7 @@ el número de la izquierda es el orden de trabajo.
 340. RUTA RELATIVA EN /liga/ (Datos 4, 2026-10-20). Con la ruta propia del 241, entrar a una liga desde la app y tocar un club cuyos datos
    no estaban cargados falla: `loadClubData` arma una ruta relativa y, con la URL en `/liga/<id>`, pide `/liga/data/...` (404). Probado con Burnley.
    Las páginas generadas tienen `<base href="/">`; `index.html` no. Arreglo de Pantallas; verificar también en producción.
+341. LO QUE BATH SE HIZO A MANO (Datos 4, 2026-10-20). 12 defectos abiertos en `Admin/registros/frenados-por-script.jsonl` (alta sin liga ni
+   deporte nuevos, rehacer una página, subtotal sin rótulo, redondeo de nota a mano, registro de validar-bloques, estadio y sponsor de rugby,
+   fuente sin url, subir ASSET_V, reglas de fútbol al activar un deporte, alta que queda escrita, personal sin rótulo, caja por escala).
+   Pipeline los toma por impacto, con la Auditora.
