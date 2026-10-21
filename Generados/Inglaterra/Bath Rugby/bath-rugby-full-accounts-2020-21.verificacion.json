@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md",
- "generado": "2026-10-21T02:01:54.479Z",
+ "generado": "2026-10-21T02:08:21.669Z",
  "scriptHuella": "342e019de972",
- "estado": "cola",
- "clubId": null,
+ "estado": "ok",
+ "clubId": "bathrugby-gb",
  "year": 2021,
  "escala": {
   "valor": "unidades",
@@ -24,9 +24,7 @@
    "fecha": "2026-10-21"
   }
  ],
- "cola": [
-  "79da26f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,9 +43,14 @@
    "dif": 2.55351295663786e-15
   },
   {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 18.416623 en este documento y 18.418685 en bath-rugby-full-accounts-2021-22.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [],
@@ -128,25 +131,5 @@
    "M": -0.230837,
    "linea": 342
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "pendiente",
-  "clave": "e554c07f5dda70d3749b9cb9a46348824e4fd4bc",
-  "rango": [
-   328,
-   346
-  ],
-  "lineasCargadas": [
-   331,
-   335,
-   336,
-   332,
-   334,
-   338,
-   339,
-   342
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 328 a 346 del .md):\nL329: |   | Note | 2021 £ | 2020 £  |\nL330: | --- | --- | --- | --- |\nL331: |  Turnover | 3 | 11,597,938 | 16,825,184  |\nL332: |  Cost of sales |  | (14,103,734) | (15,948,646)  |\nL333: |  Gross (loss)/profit |  | (2,505,796) | 876,538  |\nL334: |  Administrative expenses |  | (4,418,764) | (4,578,670)  |\nL335: |  Fair value movements |  | 6,664,853 | -  |\nL336: |  Other operating income | 4 | 153,832 | 773,456  |\nL337: |  Operating loss | 6 | (105,875) | (2,928,676)  |\nL338: |  Other interest receivable and similar income | 7 | 731 | 1,993  |\nL339: |  Interest payable and similar expenses | 8 | (57,103) | (3,428)  |\nL340: |   |  | (56,372) | (1,435)  |\nL341: |  Loss before tax |  | (162,247) | (2,930,111)  |\nL342: |  Tax on loss | 12 | (230,837) | 875,144  |\nL343: |  Loss for the financial year |  | (393,084) | (2,054,967)  |\nL345: The above results were derived from continuing operations.\n\nLO QUE SE CARGA:\n- ingreso · \"Turnover\" · 11.597938 · L331\n- ingreso · \"Fair value movements\" · 6.664853 · L335\n- ingreso · \"Other operating income\" · 0.153832 · L336\n- gasto · \"Cost of sales\" · 14.103734 · L332\n- gasto · \"Administrative expenses\" · 4.418764 · L334\n- financiero · \"Other interest receivable and similar income\" · 0.000731 · L338\n- financiero · \"Interest payable and similar expenses\" · -0.057103 · L339\n- impuesto · \"Tax on loss\" · -0.230837 · L342"
- }
+ ]
 }
