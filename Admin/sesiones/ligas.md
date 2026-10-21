@@ -589,3 +589,18 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 5: octava corrida, `ejercicio-sin-rastro`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl` con `codigo_tratado: ejercicio-sin-rastro`, antes 23: el chequeo está bien, lo que falla es la lista `data/faltantes/` que lo alimenta. Causas: alias que faltan (RAAL La Louvière, Lierse Kempenzonen, Sarpsborg 08, Burnley y otros hasta 10, que `faltantes-liga.mjs --print` ya lista), ligas-año sin tabla de referencia (Girona, Fredericia), `br-serieA.js` y `br-serieB.js` viejos, y una clave de año de la lista que parece corrida para los daneses con el XHTML de 2025 sin cargar (sin resolver). No se silencia nada.
+
+### Qué queda (para TODO / una sesión Pipeline)
+
+- Pipeline: (a) los 10 alias en `tools/club-league-reference/alias.json`; (b) revisar la clave de año de `faltantes-liga.mjs` contra `fiscal_year` en `dk-superliga` 2025; (c) una entrada por liga-año donde `club-leagues` pone a un club cargado aunque la tabla no esté bajada; (d) `node tools/faltantes-liga.mjs`. Mide: `ejercicio-sin-rastro` antes 23 y después; `faltantes-liga.mjs --check` en 0. Basel 2022 queda sin explicar. Lo que sobre es cola de Sourcing en `Admin/sourcing/pendientes.md`.
+- Próxima corrida: `escala-implausible` (P3, 5) o `salto-interanual` (P2, 5); re-medir antes de elegir.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
