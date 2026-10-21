@@ -12,13 +12,14 @@
 //   node tools/worktree.mjs preparar <carpeta del worktree>   en la copia, un enlace a cada archivo que git ignora en la carpeta principal
 //                                                             (la lista sale de git, no de carpetas fijas). Los enlaces no ocupan lugar y
 //                                                             las cachés quedan compartidas: lo que paga una sesión le sirve a la otra.
+//                                                             Antes saca de Clubes/ los enlaces rotos (destino movido en la principal); un archivo real, nunca.
 //   node tools/worktree.mjs mergear <rama>                    en la principal, sobre main: mergea la rama; los conflictos en lo generado se
 //                                                             resuelven con lo de main y se regenera (ASSET_V una vez + los 4 generadores
 //                                                             + audit.js, como al final de cargar.mjs). Frena si la rama tocó TODO /
 //                                                             CHANGELOG / ESTADO o si hay un conflicto real (data/ de un club, una tool).
 // ============================================================================
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, symlinkSync, readFileSync, writeFileSync, lstatSync } from 'node:fs';
+import { existsSync, mkdirSync, symlinkSync, readFileSync, writeFileSync, lstatSync, readdirSync, unlinkSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -55,12 +56,25 @@ function preparar(destino) {
     else if (!esEnlace) console.log(`AVISO: ${nmDst} es una carpeta real (no un enlace a la principal): si falta un módulo (p. ej. @resvg/resvg-js), borrala y corré preparar de nuevo.`);
     else ya++;
   }
+  // Enlaces rotos de Clubes/: cuando la principal mueve o renombra un PDF, el enlace viejo del worktree queda apuntando a la nada y
+  // faltantes-liga.mjs, estimar.mjs y el hook de commit fallan (2 P1). Se sacan SOLO los enlaces simbólicos cuyo destino ya no existe,
+  // nunca un archivo real; el bucle de abajo enlaza después lo que la principal tiene en su lugar nuevo.
+  let rotos = 0;
+  const barrer = (dir) => {
+    let ents; try { ents = readdirSync(dir, { withFileTypes: true }); } catch { return; }
+    for (const e of ents) {
+      const p = join(dir, e.name);
+      if (e.isSymbolicLink()) { if (!existsSync(p)) { unlinkSync(p); rotos++; } }
+      else if (e.isDirectory()) barrer(p);
+    }
+  };
+  barrer(join(wt, 'Clubes'));
   for (const f of lista) {
     const dst = join(wt, f); let existe = false; try { lstatSync(dst); existe = true; } catch {}
     if (existe) { ya++; continue; }
     mkdirSync(dirname(dst), { recursive: true }); symlinkSync(join(main, f), dst); hechos++;
   }
-  console.log(`preparar ${wt}: ${hechos} enlaces nuevos a la carpeta principal, ${ya} ya estaban (${lista.length} archivos que git ignora).`);
+  console.log(`preparar ${wt}: ${hechos} enlaces nuevos a la carpeta principal, ${ya} ya estaban (${lista.length} archivos que git ignora)${rotos ? `, ${rotos} enlaces rotos de Clubes/ sacados` : ''}.`);
 }
 
 async function mergear(rama) {

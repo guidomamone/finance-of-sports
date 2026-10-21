@@ -122,3 +122,4 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 - `tools/audit.js` (`checkLineas`): `linea-duplicada` queda solo con el MISMO monto (P1, probable copia pegada); se sacó la rama P3 «con montos distintos», un falso positivo (el mismo rótulo en dos notas o tramos).
 - Medido con `audit.js --json` antes y después: `linea-duplicada` 927 (todos P3) → 0; el resto de `findings` y `silenciados` idéntico.
 - Pendiente de esperar: el consolidado PSE de FC København 2025 (lector danés ya hecho por Pipeline 12), cuando la principal avise el merge de onboarding.
+- `tools/worktree.mjs preparar`: antes de enlazar, saca de `Clubes/` del worktree los enlaces simbólicos rotos (destino inexistente); un archivo real o un enlace sano no se toca. Probado con un enlace roto, un archivo real y un enlace sano: solo el roto se fue (el resumen de `preparar` lo cuenta). Sin condición nueva.
