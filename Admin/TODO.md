@@ -29,14 +29,11 @@ el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
 1. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar
-2. 345 (Onboarding 8): lote 130 de documentos en mano y Girona 2021-23 (~US$5,50); los daneses en XHTML, cuando esté el lector
-3. 345 (Pipeline 13): lector del XHTML danés, con el diseño aprobado por la Auditora
-4. 347 (Pipeline 13): `preparar` saca los enlaces rotos de `Clubes/`; después, el consolidado de FC København 2025
-5. 347 (Auditora 4): segunda corrida del proceso de P2 y P3, con `catchall-dominante` (256); la primera bajó `linea-duplicada` de 927 a 0
-6. 350: relevar qué categorías están en vano (educación incluida) y votar una para subsidios, donaciones y aportes
-
-**C. Técnico**
-(nada fuera de lo que está en marcha)
+2. 345 (Pipeline 12, después Onboarding 8): lote 130 corriendo; Onboarding 8 carga lo que quede, Girona 2021-23, RAAL, SønderjyskE, los daneses ya convertidos, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020 (hasta US$7)
+3. 345 (Pipeline 13): el consolidado de FC København 2025 que el lector danés no convierte
+4. 347 (Auditora 4): cuarta corrida del proceso de P2 y P3, con `signo-invertido` (30); ya se trataron `linea-duplicada`, `catchall-dominante` y `sin-salarios`
+5. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea (`sin-salarios`, 48)
+6. 350 (Auditora 4, después de las corridas): relevar qué categorías están en vano (educación incluida) y votar una para subsidios, donaciones y aportes
 
 **D. Orden de la casa**
 7. 338: correr todas las auditorías del proyecto (al final de A)
@@ -89,6 +86,10 @@ el número de la izquierda es el orden de trabajo.
     (e) enlaces a `/club/<id>` con tarjeta al compartir (241) y medir qué publicaciones traen visitas. Depende de 241 y 246.
     (f) material de difusión (era el 259): un deck para periodistas y sponsors, o un informe por liga («las finanzas de LaLiga 2025 en
         10 slides»), con el tipo Slides; sin código. Nada de esto sale antes del 337.
+351. SUELDOS ADENTRO DE UNA SOLA LÍNEA (Auditora 4, 3ª corrida de P2 y P3, 2026-10-21). 12 británicos (Aston Villa, Brentford, Brighton,
+   Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves; 47 club-años con el estado por función) e
+   Instituto 2025 (anexo de remuneraciones cargado entero en gastos generales). Cómo: `Admin/sesiones/ligas.md`, tercera corrida. Corrige datos
+   publicados: trailer `Corrige:`.
 350. CATEGORÍA PARA SUBSIDIOS Y DONACIONES (Auditora 4, 2ª corrida de P2 y P3, 2026-10-21; Guido: «dejalo como to do»). Buena parte de los
    ~130 `catchall-dominante` son subsidios, donaciones y aportes (Subsídios, Επιχορηγήσεις, Целевые взносы; ligas bajas de Grecia, Rusia y
    Portugal) que la taxonomía no tiene dónde poner. Es una votación de criterio (`votacion-de-criterios`); por la regla vigente no recategoriza
