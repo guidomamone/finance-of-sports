@@ -1,3 +1,19 @@
+# Sesión pantallas (Pantallas 6): 344, el mockup sin conteos ni plata
+
+## Qué cambió (para CHANGELOG)
+- 344: por pedido de Guido el mockup de Ligas ya no muestra cuántos clubes hay cargados ni plata en las filas, los países ni las matrices: queda el nombre, el país, el deporte, el nivel, «Con datos / Sin datos
+  todavía» y los informes propios. El orden «Más clubes cargados» y «Mayor ingreso» se cambió por «Más ligas». Se republicó en el mismo artifact (versión 2).
+
+## Qué queda (para TODO)
+- La pestaña Ligas del sitio de hoy: la lista inicial ya muestra solo el nombre de cada liga, pero hay números en el encabezado de una liga (país · división · «N de M con ejercicio AAAA» y las pastillas de ejercicio),
+  en el ranking y el total «La liga en total» (que son el contenido de la pantalla) y en las tarjetas de Inicio («N de M cargados» y US$ por club). Esperan la confirmación de Guido de si el pedido vale para el sitio.
+- Los estaduales de Brasil (Paulista A1, A2, A3) no tienen nivel en los datos (`tier` ausente): decidir dónde van en la lista.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 6): to-do 258, índice partido por país o liga
 
 ## Qué cambió (para CHANGELOG)
