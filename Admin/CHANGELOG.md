@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 894 — Frenos automáticos en el hook (2026-10-20) [327]
+
+- `tools/hooks/pre-tool.mjs` rechaza, con el motivo y cómo reescribirlo: `/tmp`, `$(...)`, variables y `cd ... &&` fuera de comillas; `node -e` que importa una tool; subagentes sin la regla de Read/Grep/Write; modo plan y `git merge`/`pull` en un worktree; `rsync` sin `--no-links`. `mv` en `Clubes/` pide permiso. `.claude/settings.json` suma `Agent|Task|EnterPlanMode` al matcher (ok de Guido). 327 cerrado.
+
 ## Versión 893 — Chequeos nuevos en audit.js; plan de la taxonomía genérica (2026-10-20) [327 · 248 · 338]
 
 - 327: `audit.js` suma historia y contadores en skills (P3), párrafos repetidos en docs (P3), rutas muertas en todas las skills y la raya larga en el texto del sitio (P2); las 13 rayas, arregladas. ASSET_V 1538.

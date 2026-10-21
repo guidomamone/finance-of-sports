@@ -31,24 +31,23 @@ el número de la izquierda es el orden de trabajo.
 * Lo que está en marcha va marcado en cada bloque.
 
 **C. Técnico**
-1. 327 (Pipeline 10): los 6 frenos automáticos en el hook (ok de Guido); los 4 chequeos de audit.js ya están
-2. 248 (Datos 4, Opus): plan listo y decidido (`Admin/mediciones/248-plan.md`); ahora la migración a club-v2 y la etapa de pantalla; Bath Rugby espera la votación de Auditora 3 (CVC y fair value); Guido aprobó que se vea y se compare
-3. 339 (Pipeline 11): que el pipeline sepa el deporte de cada club (Jev, prompts, altas, chequeos); primero el inventario
-4. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
-5. 249: API en dominio propio (el último de C; no construirla todavía)
+1. 248 (Datos 4, Opus): plan listo y decidido (`Admin/mediciones/248-plan.md`); ahora la migración a club-v2 y la etapa de pantalla; Bath Rugby espera la votación de Auditora 3 (CVC y fair value); Guido aprobó que se vea y se compare
+2. 339 (Pipeline 11): que el pipeline sepa el deporte de cada club (Jev, prompts, altas, chequeos); primero el inventario
+3. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+4. 249: API en dominio propio (el último de C; no construirla todavía)
 
 **D. Orden de la casa**
-6. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
-7. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
-8. 257: skills que faltan
-9. 237 al: anexo UEFA para abrir las ventas
-10. 258: índice partido por país o liga (cuando la skill de escala lo diga)
-11. 338: correr todas las auditorías del proyecto
+5. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
+6. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
+7. 257: skills que faltan
+8. 237 al: anexo UEFA para abrir las ventas
+9. 258: índice partido por país o liga (cuando la skill de escala lo diga)
+10. 338: correr todas las auditorías del proyecto
 
 **E. Después de A a D (Guido, 2026-10-20)**
-12. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-13. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-14. 335: mails a clubes
+11. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+12. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+13. 335: mails a clubes
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -114,8 +113,6 @@ el número de la izquierda es el orden de trabajo.
     automatizar "respuesta → fila" o programar posts; exponer solo las acciones necesarias. OmniRoute: gateway local de modelos con
     fallback, para abaratar la API (no Haiku, ver la regla de modelos); concentra credenciales y prompts, así que se revisa el repo
     antes. Quedan sin ubicar OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: pedir los links a Guido.
-327. CHEQUEOS QUE DEJÓ EL 255 (2026-10-20). Los 12 de la sección 4 de `Admin/Archive/consolidar-reglas-255.md`: elegir cuáles se automatizan
-   (hook o audit.js) y hacerlos con el circuito de Pipeline. Nada urgente.
 330. DÓNDE SE PIERDE LO QUE SE DECIDE O SE DESCUBRE (pedido de Guido, 2026-10-20). Revisar el proyecto entero (notas de sesión,
    `Admin/Archive/`, HALLAZGOS, mediciones, dudas, registros, chats de sesiones) buscando tokens gastados en decidir o descubrir algo que
    después no llega a ningún lado: una decisión que no quedó como REGLA ni en un registro, un hallazgo que nadie vuelve a leer, una

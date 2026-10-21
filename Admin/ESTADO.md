@@ -122,7 +122,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   mergea. Ningún año queda frenado por datos sin pasar por la Auditora. El gasto por sesión: `node tools/gasto.mjs --sesion <carpeta>`.
 - Hooks de Claude Code (`.claude/settings.json` → `tools/hooks/pre-tool.mjs`): `audit.js` antes de cada commit publicable (frena con P0/P1;
   `[sin-audit]` con el ok de Guido), y piden permiso editar skills, `git push` y borrar en `Clubes/`; en un worktree rechazan escribir TODO,
-  CHANGELOG y ESTADO. Qué chequea cada uno: la cabecera del script.
+  CHANGELOG y ESTADO. También rechazan (con el motivo y cómo reescribirlo) rutas en `/tmp`, `$(...)` y variables, `cd ... &&`, `node -e`
+  que importa una tool, un subagente sin la regla de solo Read, Grep y Write, el modo plan o un `git merge`/`pull` en un worktree y `rsync`
+  sin `--no-links`; `mv` en `Clubes/` pide permiso. Qué chequea cada uno: la cabecera del script.
 - Estadio, capacidad, sponsor de camiseta y marca técnica de cada club y ejercicio: `data/contexto/<iso>.js` (`tools/estadio-sponsor.mjs`,
   de Wikipedia con el permalink de la revisión; lo manual en `tools/contexto-manual.json` con fuente). `cargar.mjs` no escribe un año
   nuevo sin estadio y sponsor, salvo en una liga amateur o en las segundas sin tabla de camisetas en Wikipedia, donde basta el estadio (la lista, `SOLO_ESTADIO` de `estadio-sponsor.mjs`; `compuertaContexto()`; también `bfo-rusia.mjs`). Donde la temporada en inglés no lo trae, el estadio y la capacidad salen de la Wikipedia del país
