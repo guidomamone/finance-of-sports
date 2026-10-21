@@ -1,4 +1,42 @@
-# Sesión datos (Sourcing 4) — to-do 356: qué clubes británicos presentan sus cuentas en iXBRL
+# Sesión datos (Sourcing 4) — to-dos 359 y 356
+
+## To-do 359 (2026-10-21)
+
+### (1) FC Emmen 2020-21: la jaarrekening con la controleverklaring se compra en la KvK, a €3,90
+
+- El F.04 que tenemos (`F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.pdf`, 7 págs.) solo dice, en la página de las cifras, que sus datos «zijn ontleend uit de jaarrekening 2020-2021 van FC Emmen B.V., waarbij een accountantsverklaring is verstrekt»: el informe del auditor no está en él.
+- **El documento existe en el Handelsregister de la KvK, pero hay que pagarlo.** Según el tarifario oficial de la KvK vigente desde el 1/1/2026 (`tarievenoverzicht_1_januari_2026.pdf`, leído): **jaarrekening, por pieza (descarga online): €3,90**; ver el listado de depósitos de la sociedad (para saber qué ejercicios hay): €2,95; un «gewaarmerkt» (certificado digital) es más caro (€9,60 según una fuente secundaria; no lo vi en el PDF). Se pide por kvk.nl > Producto > Jaarrekeningen > «Bestel», buscando la sociedad por nombre o número, y se puede bajar como PDF, XBRL o ZIP de XHTML/iXBRL. Se pueden pedir los últimos 7 años (el 2020-21 entra).
+- **La sociedad:** FC Emmen B.V. (besloten vennootschap, activa; Stadionplein, Emmen). **KvK 40781860 según un directorio de terceros**; no lo pude verificar en kvk.nl (la búsqueda es una web dinámica) ni aparece en los PDF. Verificarlo al pedir.
+- **No compré nada.** Para el 2020-21: **€3,90** (+ €2,95 si hace falta ver el listado). Si Guido quiere también el 2019-20 (el otro ejercicio de Emmen en la misma situación), son otros €3,90: €7,80 los dos.
+- Sin otra vía gratis hallada: el sitio del club (`fcemmen.nl`) solo sube los F.04 y los jaarverslagen, y Wayback estaba fuera de servicio cuando lo probé.
+
+### (2) Url del depósito en regnskaber.virk.dk de las otras 15 fuentes danesas
+
+Mismo método que con las 20 anteriores: el hash del archivo de `Clubes/Dinamarca/` (carpeta de main) contra el documento que sirve `regnskaber.virk.dk` para ese CVR (`distribution.virk.dk/offentliggoerelser`, por `cvrNummer`). Las 15 coinciden. `http://` (con `https://` el servidor da error de SSL).
+
+| Club (carpeta) | Archivo | Sag | Presentado | Período | dokumentUrl |
+| --- | --- | --- | --- | --- | --- |
+| AGF | `aarsrapport-2021-06-30.pdf` | X21-EW-21-JN | 2021-11-14 | 2020-07-01 → 2021-06-30 | http://regnskaber.virk.dk/01993838/amNsb3VkczovLzAzL2IzLzA5Lzk4L2MwL2JhOTktNGE0My1iM2E3LWE1OWMyMzg4MmI5Yg.pdf |
+| Brøndby | `aarsrapport-2020-12-31.pdf` | X21-BQ-99-PP | 2021-05-04 | 2020-01-01 → 2020-12-31 | http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAzL2RhL2VkLzdmLzQ3LzVhM2MtNGUyMC05M2YxLTRiZTRlMjQzM2FiNA.pdf |
+| FC København | `aarsrapport-2024-12-31.pdf` | X25-BU-66-GM | 2025-04-23 | 2024-01-01 → 2024-12-31 | http://regnskaber.virk.dk/16125934/amNsb3VkczovLzAzLzk0L2MzLzUyL2ZiLzljNDktNGYyZS1iOWFmLTFlMzQ3Y2RlMTMxZA.pdf |
+| FC Fredericia | `aarsrapport-2019-12-31.pdf` | X20-CR-82-VS | 2020-06-19 | 2019-01-01 → 2019-12-31 | http://regnskaber.virk.dk/69436272/amNsb3VkczovLzAzLzE1Lzc3LzcyL2EzL2Q2NWYtNDBjOS1hOTQwLTJhZTAxNWEwZTI1OQ.pdf |
+| FC Fredericia | `aarsrapport-2020-12-31.pdf` | X21-BN-23-PY | 2021-04-22 | 2020-01-01 → 2020-12-31 | http://regnskaber.virk.dk/69436272/amNsb3VkczovLzAzL2JiLzY3L2MwL2Y4LzA5NTctNGVmMC05NjI1LWE4NDhlMTFiZDc1Zg.pdf |
+| FC Midtjylland | `aarsrapport-2019-06-30.pdf` | X19-DE-91-NK | 2019-10-29 | 2018-07-01 → 2019-06-30 | http://regnskaber.virk.dk/65167513/ZG9rdW1lbnRsYWdlcjovLzAzL2E1LzYzLzFiL2RjL2RhZDMtNGZiMC1iNzUyLWZjNTFiNDAyNWIwMg.pdf |
+| FC Midtjylland | `aarsrapport-2020-06-30.pdf` | X20-ES-32-MX | 2020-12-02 | 2019-07-01 → 2020-06-30 | http://regnskaber.virk.dk/65167513/amNsb3VkczovLzAzLzIyLzY4L2MxLzhjLzliMDgtNDEwZS1hYThiLTg1NDNhYTMyYjgyMQ.pdf |
+| FC Nordsjælland | `aarsrapport-2024-12-31.pdf` | X25-BW-84-AR | 2025-05-01 | 2024-01-01 → 2024-12-31 | http://regnskaber.virk.dk/30775242/amNsb3VkczovLzAzLzgwL2QwLzkzL2Q4LzY0ODQtNGRlZi1hOWFhLTFhYWM1NzdjNjFhZA.pdf |
+| Randers FC | `aarsrapport-2023-06-30.pdf` | X23-FY-84-RN | 2023-10-31 | 2022-07-01 → 2023-06-30 | http://regnskaber.virk.dk/61804938/amNsb3VkczovLzAzLzVmL2ZlL2JkLzA0L2Q2MmMtNGQwNi1iNzAwLTgyYTQ5YjEzNWRiOQ.pdf |
+| Silkeborg IF | `aarsrapport-2024-12-31.pdf` (idéntico: `Aarsrapport-2024-SIF.pdf`) | X25-BW-05-JP | 2025-04-29 | 2024-01-01 → 2024-12-31 | http://regnskaber.virk.dk/13779362/amNsb3VkczovLzAzL2Q0LzVjLzUyLzQzLzAwMzktNDkxYS04NmQ0LTEyYjRhZTQ3YzVlMQ.pdf |
+| Silkeborg IF | `aarsrapport-2025-12-31.xhtml` | X26-BJ-59-BY | 2026-03-17 | 2025-01-01 → 2025-12-31 | http://regnskaber.virk.dk/13779362/amNsb3VkczovLzAzLzU0Lzc3LzdkLzExLzE3ZjYtNDdkNS1hMGUyLTBhZDMzNDIzMTVmZA.xhtml |
+| SønderjyskE | `aarsrapport-2022-06-30.pdf` | X22-ER-69-FR | 2022-10-28 | 2021-07-01 → 2022-06-30 | http://regnskaber.virk.dk/11188513/amNsb3VkczovLzAzLzcyL2YwLzVlL2FiLzlkMGQtNDZlMy05ZGJhLWZhMjA5Y2E4MzcyMw.pdf |
+| Vejle | `aarsrapport-2024-12-31.pdf` | X25-BL-51-YT | 2025-03-26 | 2024-01-01 → 2024-12-31 | http://regnskaber.virk.dk/97158013/amNsb3VkczovLzAzLzYwL2I4L2MxLzdhLzcyYWItNGQyOC04ZDAwLTNkN2I5OGM3MGNmNA.pdf |
+| Viborg FF | `aarsrapport-2024-06-30.pdf` | X24-KP-37-FE | 2024-11-04 | 2023-07-01 → 2024-06-30 | http://regnskaber.virk.dk/31737038/amNsb3VkczovLzAzL2ZlLzVlLzljLzU4L2Y1ZTgtNDI4Mi04Mjk3LTI4NzA5MDk0MjI2Yg.pdf |
+| Viborg FF | `aarsrapport-2025-06-30.xhtml` | X25-MZ-43-ES | 2025-10-30 | 2024-07-01 → 2025-06-30 | http://regnskaber.virk.dk/31737038/amNsb3VkczovLzAzLzA2LzRlL2UyLzM2L2RjYzEtNDdkNy1hZDgyLTU4YWQ3ZTZjNjA0Nw.xhtml |
+
+Notas: AGF 2019-20 (`aarsrapport-2020-06-30.pdf`, X20-EC-36-VT, presentado 2020-10-23) también coincide; la url es `http://regnskaber.virk.dk/01993838/amNsb3VkczovLzAzL2MxL2M0Lzc5Lzg3L2IwZWItNGYyYi05ZjNlLTA4NGExOWM2ZTJjNQ.pdf`. Los PDF de las carpetas con otro nombre que **no** coinciden con ningún depósito (Midtjylland `A_rsrapport-for-FC-Midtjylland-2019-2020.pdf` y `...2020-2021.pdf`, Silkeborg `Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf` y `Regnskab_PM_2025.pdf`, Viborg `2023-2024-rsrapport-...pdf` y `2025-rsrapport-...pdf`) son documentos del sitio del club, no la presentación del registro: no tienen url del depósito.
+
+---
+
+# (Anterior) to-do 356: qué clubes británicos presentan sus cuentas en iXBRL
 
 **Estado: relevamiento hecho y descarga hecha con la opción (c)** (completas de los últimos 3 cierres, aprobada por la principal): **69 archivos `.xhtml`, 45,5 MB en disco (6,1 MB por la red)**, ya en `Clubes/` de este worktree y copiados a `Clubes/` de main. Los `.xhtml` están ignorados por git: no viajan con el merge. Nada se cargó. Después, con el ok de Guido en el chat, se bajó el resto: **198 archivos en total, 84,0 MB**, todos ya en main (ver «Descarga del resto»).
 
