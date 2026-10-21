@@ -1162,6 +1162,12 @@ mismo documento.
 
 ### Trampas de PDF y de grep
 
+- **Una tool que decide no lee solo una parte del documento.** Si lee los primeros N KB, N líneas o N páginas para decidir algo (quién emite, el
+  perímetro, el período, el tipo de documento), o lee el archivo entero, o dice en su salida que cortó y qué no miró, para que el caso no pase como
+  «no encontrado». Un recorte para mostrar texto en pantalla no cuenta. Al medir una tool nueva o un cambio, se corre sobre todos los documentos de su
+  tipo, no sobre una muestra, y se cuenta cuántos quedaron cortados. Caso: `emisorDe` de `ixbrl-resultado.mjs` leía 600 KB y en 17 de 48 XHTML
+  daneses la cabecera está más abajo.
+
 - **Un documento que una tool no lee.** Primero `file <archivo>`. Si no es lo que dice la extensión (gzip, Zip, una página HTML de
   error), el problema es la descarga y no la tool: se descomprime a un archivo nuevo o se vuelve a bajar (skill `club-sourcing`,
   «Gotchas de tooling»). Si es lo que dice y la tool falla, va a `Admin/registros/frenados-por-script.jsonl` y lo arregla Pipeline.
