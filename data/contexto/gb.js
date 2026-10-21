@@ -93,6 +93,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Stake.com","marca":"Hummel","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Stake.com","marca":"Castore","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
+  'exetercity-gb': {
+    2025: {"estadio":"St James Park","capacidad":8720,"sponsor":"HEL Performance","marca":"adidas","temporada":"2024–25 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378041093","fuenteManual":"https://exetercityfc.co.uk/helextends (HEL Performance en el pecho desde 2023-24); marca: https://www.footballkitarchive.com/ms/exeter-city-kit-2024-25-t222/; capacidad del infobox de https://en.wikipedia.org/wiki/Exeter_City_F.C.","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'fulham-gb': {
     2021: {"estadio":"Craven Cottage","capacidad":19359,"sponsor":"BetVictor","marca":"Adidas","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
     2022: {"estadio":"Craven Cottage","capacidad":19359,"sponsor":"World Mobile","marca":"Adidas","temporada":"2021–22 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358361756"},

@@ -20,3 +20,5 @@ Todos en `Clubes/Inglaterra/Exeter City/` (los PDF no se trackean; son escaneos,
 
 El ejercicio 2024/25 es una presentación "Amended group of companies' accounts" (AAMD, 1/5/2026): puede haber una versión anterior, verificar cuál es la vigente. El de 2020/21 está presentado como "Accounts" genérico: abrir y confirmar que trae cuenta de resultados.
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2025 desde `Clubes/Inglaterra/Exeter City/exeter-group-accounts-2024-25-ixbrl.pdf` (sourceId `exetercity-gb-exeter-group-accounts-2024-25-ixbrl`).
