@@ -172,3 +172,9 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 - `audit.js`: P1 `pago-ia-sobre-determinista` si un log de API (`claude-api`, `gemini`, `mistral`) registra desde 2026-10-22 una llamada paga con `pdf` de un documento de motor `xhtml-ixbrl` sin la bandera registrada antes. Probado en un worktree de mentira (sin tocar `Clubes/` real): llamada sin bandera → P1; con la bandera antes → nada; con la bandera después → P1.
 - No probado: `--ejecutar` CON la bandera de punta a punta (pagaría IA; el worktree de mentira no tiene claves) ni el costo estimado sobre el lote 133 real (su lista está en el worktree de Onboarding). El freno completo («no paga IA hasta que corra el escalón de etiquetas») espera el escalón, que espera el veredicto de la Auditora.
 - `Admin/PIPELINE.md` (sección Dinamarca/XHTML) al día con todo lo de esta rama sobre la tool de XHTML.
+
+### Pipeline 13: URGENTE, `cargar.mjs` revertía toda escritura («e is not defined»)
+
+- Causa: la nota pública de la fuente XHTML (mía, 51bd8c7895) usaba `e.md` dentro de `escribir(P)`, donde `e` no existe (es de `proponer`); el ensayo no ejecuta `escribir`, así que pasaba. Arreglo: usa `P.md` (con try/catch: sin `.md` o ilegible, no hay nota). Reproducido y corregido en un worktree de mentira: con el `cargar.mjs` de HEAD, «REVERTIDO: e is not defined»; con el corregido, escribe y la fuente nueva trae `public_note` «Informe oficial en formato XHTML (iXBRL)».
+- `tools/prueba-escribir.mjs` (nuevo): la prueba de regresión que pidió la principal; escribe de verdad en un worktree descartable (SønderjyskE 2024 sin cargar en la copia) y falla si se revierte. Pasa.
+- Trampa que apareció: un worktree en `/var/folders/…` (tmpdir sin `realpath`) hace que `import.meta.url === file://argv[1]` de las tools no se cumpla y salgan en silencio con 0.
