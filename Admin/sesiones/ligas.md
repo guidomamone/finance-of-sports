@@ -243,3 +243,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: frenado #10 de Bath (validar en `--sin-api` y encadenar `verificar`), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: `lote.mjs --sin-api` corre `validar()` si es gratis o frena con el costo, y `validar-bloques.mjs --ejecutar` encadena `verificar --rubros` e inventario; APROBADO.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
