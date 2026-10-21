@@ -284,11 +284,14 @@ function noImportarTools(cmd) {
 }
 
 // En un worktree no se mergea ni se hace pull: ni la rama a main ni main a la rama; el merge lo hace la sesión principal (to-do 327, C-4).
-// `merge-tree` y `merge-base` no tocan nada y sirven para anticipar conflictos; `merge --abort` deshace.
+// `merge-tree` y `merge-base` no tocan nada y sirven para anticipar conflictos; `merge --abort` deshace. `git merge --ff-only main` sí pasa:
+// solo adelanta la rama hasta main, sin mezclar nada (si la rama tiene commits propios, git lo rechaza y la sesión le pide el merge a la principal).
 function mergeEnWorktree(cmd) {
   if (!GIT_SUB('(?:merge|pull)(?![-\\w])').test(cmd) || /--abort\b/.test(cmd) || !estaEnWorktree()) return;
-  decidir('deny', 'Esto es un worktree: el merge (y el pull) lo hace la sesión principal, ni la rama a main ni main a la rama. Para anticipar conflictos '
-    + 'usá git merge-tree (no toca nada) y anotalos en Admin/sesiones/<rama>.md; para traer main a la rama, la tool sync_with_base_branch de la app.');
+  if (/^\s*git(?:\s+-C\s+\S+)?\s+merge\s+--ff-only\s+main\s*$/.test(cmd)) return;
+  decidir('deny', 'Esto es un worktree: el merge (y el pull) lo hace la sesión principal. Lo único que pasa es traer main sin mezclar: '
+    + '`git merge --ff-only main`, solo, en un comando aparte. Si git lo rechaza porque la rama tiene commits propios, pedile el merge a la principal. '
+    + 'Para anticipar conflictos, git merge-tree (no toca nada).');
 }
 
 // `EnterPlanMode` en un worktree: aprobar un plan pasa la sesión a acceptEdits y pide permiso para todo (to-do 327, C-3). Solo el Enter: si la
