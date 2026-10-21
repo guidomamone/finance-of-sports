@@ -22,6 +22,7 @@ Caso: el ensayo del lote 133 (68 cuentas británicas en iXBRL) daba US$16,48 de 
 - **Antes de pagar, el camino sin IA.** Si el ensayo da costo de localizar, extraer o transcribir en un documento que trae las cifras etiquetadas o en un formato que se lee sin interpretar (iXBRL o XBRL, el XML o CSV del depósito, los códigos NBB), no se corre: se le pide a Pipeline el escalón que lee esa estructura, y la IA queda solo para lo que ese escalón no cierra.
 - **Ejemplos concretos:**
 
+agregar el chequeo.
 - **Pagar IA por lo que ya viene estructurado es plata tirada, y la Auditora lo marca sin que se lo pidan.** Al aprobar una tool o un lote, y al comparar lo gastado en cada merge, mira si el formato del documento (iXBRL o XBRL, XML o CSV del depósito, códigos NBB) ya trae lo que se le pide a la IA. Si lo trae, lo frena y pide el escalón que lee esa estructura.
 
 ---
