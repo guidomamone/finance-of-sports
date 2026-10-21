@@ -1389,6 +1389,21 @@ function checkFuentesPublicas(api) {
     add('P3', 'fuente-no-primaria-sin-nota', `${sinNota} documentos que no son fuente primaria y no tienen publicNote. El nivel solo dice "réplica" o "prensa": conviene una frase que diga por qué`);
   }
 
+  // (to-do 345, Auditora 5) UNA FUENTE QUE SALIÓ DE UN INFORME XHTML (iXBRL) Y NO TIENE LA URL DEL DEPÓSITO OFICIAL (Virk o el club). Se la reconoce por el mismo cruce que
+  // `fuente.mjs --propuesta`: el id de la fuente es <clubId>-<nombre del .md sin el club>, y el encabezado del .md dice que lo escribió xhtml-aarsrapport.mjs. La url nunca puede ser
+  // nuestro PDF de ancla (la impresión de Chrome, no el original): P1 si termina en .pdf o empieza con Clubes/. Sin url: P3.
+  const slugN = (t) => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const mdsXhtml = [];
+  (function walk(d) { let es; try { es = fs.readdirSync(d, { withFileTypes: true }); } catch { return; } if (es.some((e) => e.name.endsWith('.xhtml'))) for (const e of es) if (e.name.endsWith('.md') && es.some((x) => x.name === e.name.replace(/\.md$/, '.xhtml'))) mdsXhtml.push({ dir: path.basename(d), slug: slugN(e.name.replace(/\.md$/, '')), abs: path.join(d, e.name) }); for (const e of es) if (e.isDirectory()) walk(path.join(d, e.name)); })(path.join(ROOT, 'Clubes'));
+  for (const id of Object.keys(api.sources)) {
+    const s = api.sources[id]; const url = s.url || '';
+    const cand = mdsXhtml.filter((m) => id.endsWith('-' + m.slug) && String(s.clubId || '').startsWith(slugN(m.dir).split('-')[0]));
+    const md = cand.find((m) => /xhtml-aarsrapport\.mjs/.test(fs.readFileSync(m.abs, 'utf8').slice(0, 400)));
+    if (!md) continue;
+    if (/\.pdf(\?|#|$)/i.test(url) || url.startsWith('Clubes/')) add('P1', 'fuente-xhtml-sin-url', `sources['${id}'].url apunta a ${url}: el PDF de ancla es la impresión de Chrome de un XHTML, no el documento oficial; la url tiene que ser la del depósito oficial (Virk o el club)`);
+    else if (!url) add('P3', 'fuente-xhtml-sin-url', `sources['${id}'] salió de un informe XHTML (iXBRL) y no tiene la url del depósito oficial (Virk o el club): node tools/fuente.mjs ${s.clubId} ${id} --url "…" --nota "Informe oficial en formato XHTML (iXBRL)" --escribir`);
+  }
+
   // El guardarraíl del bug de la 126: `note` no se renderiza en ningún lado.
   for (const rel of ['js/finanzas-render.js', 'tools/generate-fuentes-page.js']) {
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');

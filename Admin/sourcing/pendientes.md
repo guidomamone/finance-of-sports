@@ -337,7 +337,7 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Santa Rita — sin-buscar: 2018 (br-serieD)
 - Sparta — sin-buscar: 2018 (br-serieD)
 
-## Bélgica (176 clubes, 685 club-años)
+## Bélgica (175 clubes, 680 club-años)
 
 - Belisia — sin-buscar: 2025 (be-div1amateur), 2022 (be-div2amateur)
 - Beveren — sin-buscar: 2025 (be-challengerproleague), 2024 (be-challengerproleague), 2023 (be-challengerproleague)
@@ -357,7 +357,6 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Jong KAA Gent — sin-buscar: 2025 (be-div1amateur), 2024 (be-div1amateur), 2023 (be-div1amateur)
 - Knokke — sin-buscar: 2025 (be-div1amateur), 2024 (be-div1amateur), 2023 (be-div1amateur), 2022 (be-div1amateur), 2021 (be-div1amateur), 2020 (be-div2amateur), 2019 (be-div1amateur), 2018 (be-div1amateur), 2017 (be-div2amateur)
 - Kortrijk — sin-buscar: 2025 (be-proleague), 2024 (be-proleague), 2023 (be-proleague), 2022 (be-proleague), 2021 (be-proleague), 2020 (be-proleague), 2019 (be-proleague), 2018 (be-proleague), 2017 (be-proleague), 2016 (be-proleague), 2015 (be-proleague)
-- La Louvière — sin-buscar: 2025 (be-challengerproleague), 2022 (be-div2amateur), 2021 (be-div2amateur), 2020 (be-div2amateur), 2019 (be-div2amateur)
 - Lyra-Lierse Berlaar — sin-buscar: 2025 (be-div1amateur)
 - Merelbeke — sin-buscar: 2025 (be-div1amateur), 2024 (be-div2amateur), 2023 (be-div2amateur), 2022 (be-div2amateur), 2021 (be-div2amateur), 2020 (be-div2amateur)
 - Mons — sin-buscar: 2025 (be-div1amateur), 2015 (be-challengerproleague)
@@ -958,7 +957,7 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Shimizu S-Pulse — sin-buscar: 2025 (jp-j1)
 - Shonan Bellmare — sin-buscar: 2025 (jp-j1)
 
-## Noruega (35 clubes, 110 club-años)
+## Noruega (34 clubes, 109 club-años)
 
 - Egersund — sin-buscar: 2025 (no-1divisjon)
 - Mjøndalen — sin-buscar: 2025 (no-1divisjon), 2021 (no-eliteserien), 2020 (no-eliteserien), 2019 (no-eliteserien), 2018 (no-1divisjon), 2017 (no-1divisjon), 2016 (no-1divisjon), 2015 (no-eliteserien), 2014 (no-1divisjon), 2013 (no-1divisjon), 2012 (no-1divisjon), 2008 (no-2divisjon)
@@ -982,7 +981,6 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Follo — sin-buscar: 2015 (no-1divisjon), 2013 (no-1divisjon), 2008 (no-2divisjon)
 - IK Start — sin-buscar: 2012 (no-1divisjon)
 - Løv-Ham — sin-buscar: 2008 (no-1divisjon)
-- Sarpsborg Sparta — sin-buscar: 2008 (no-1divisjon)
 - Fram Larvik — sin-buscar: 2018 (no-2divisjon)
 - Grorud — sin-buscar: 2018 (no-2divisjon)
 - Mjølner — sin-buscar: 2018 (no-2divisjon)

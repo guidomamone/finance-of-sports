@@ -114,6 +114,19 @@ async function mergear(rama) {
   git(['commit', '-q', '-m', `Merge de ${rama}${conflictos.length ? ` (${conflictos.length} generados resueltos con main y regenerados)` : ''}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`]);
   console.log(`mergeado ${rama}: ${tocados.length} archivos de la rama, ${conflictos.length} conflictos en lo generado (resueltos), auditoría ${r.audit}.`);
   if (cierres.length) console.log(`Cierre de la sesión para pasar a TODO / CHANGELOG / ESTADO: ${cierres.join(', ')}`);
+  // (to-do 354 b, Orden 1) AVISO, no frena: cada punto de «Qué queda» de la nota de sesión termina con su flecha (`→ TODO n`, `→ regla`, `→ HALLAZGOS`, `→ descartado`), que es lo que dice a dónde va (CONVENCIONES).
+  for (const c of cierres) {
+    const ruta = resolve(ROOT, c); if (!existsSync(ruta)) continue;
+    const sinFlecha = []; let dentro = false, punto = null;
+    const cerrar = () => { if (punto && !/→\s*(TODO\b|regla\b|HALLAZGOS\b|descartado\b)[^\n]*$/.test(punto)) sinFlecha.push(punto.replace(/\s+/g, ' ').slice(0, 90)); punto = null; };
+    for (const l of readFileSync(ruta, 'utf8').split('\n')) {
+      if (/^#{1,6}\s/.test(l)) { cerrar(); dentro = /^#{1,6}\s+Qué queda/i.test(l); continue; }
+      if (!dentro) continue;
+      if (/^- /.test(l)) { cerrar(); punto = l.slice(2); } else if (punto != null && /^\s+\S/.test(l)) punto += ' ' + l.trim(); else if (!l.trim()) cerrar();
+    }
+    cerrar();
+    if (sinFlecha.length) console.log(`AVISO ${c}: ${sinFlecha.length} punto(s) de «Qué queda» sin su flecha (→ TODO n | → regla | → HALLAZGOS | → descartado): ${sinFlecha.slice(0, 5).map((p) => `«${p}…»`).join('; ')}`);
+  }
 }
 
 const [cmd, arg] = process.argv.slice(2);

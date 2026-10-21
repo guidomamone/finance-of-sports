@@ -852,11 +852,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         else if (tiene === undefined || tiene === null) {
           // (to-do 298 p1) UNA pregunta por club, campo y tramo: si otro documento del club ya la tiene abierta dentro de la ventana, no se abre otra.
           const abierta = pendientes().find((c) => c.etapa === 'cargar' && c.motivo === 'perfil' && c.detalle === `${clubId}:${campo}` && c.pdf !== pdf && Math.abs((c.anio ?? anioDeDoc(c.pdf) ?? 0) - year) < VENTANA_PERFIL);
-          if (abierta) frena('perfil-en-cola', `"${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'} en ${year}: la pregunta ya está en la cola por ${abierta.pdf.split('/').pop()} (${abierta.id}) y vale para este año`);
+          // (to-do 354 a, Orden 1) NUNCA frena la carga: un caso de perfil se contesta googleando el club (club-or-year-onboarding, «La cola»); mientras tanto el 0 queda con este aviso
+          if (abierta) P.avisos.push(`perfil-en-cola (no frena): "${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'} en ${year}: la pregunta ya está en la cola por ${abierta.pdf.split('/').pop()} (${abierta.id}) y vale para este año`);
           else {
             const prev = perfilCercano(clubId, campo, year);
             agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perfil', detalle: `${clubId}:${campo}`, anio: year, que: `${pregunta}  (por qué: en ${year} "${nombre}" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Vale para los años a menos de ${VENTANA_PERFIL} de ${year}.${prev ? ` Último chequeo: ${prev.valor ? 'sí' : 'no'} en ${prev.anio}.` : ''})`, propuesta: 'responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)' });
-            frena('perfil-en-cola', `"${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'} en ${year}: pregunta en la cola humana (node tools/cola.mjs)`);
+            P.avisos.push(`perfil-en-cola (no frena): "${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'} en ${year}: pregunta en la cola; se contesta googleando el club y, si el club tiene, se reintenta (node tools/cola.mjs)`);
           }
         }
       }
@@ -1331,7 +1332,10 @@ export function escribir(P) {
       const dmy = (f) => f.split('-').reverse().join('/');
       const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).`
         : P.transicion ? `Ejercicio de transición por cambio de fecha de cierre: ${P.transicion.inicio ? `del ${dmy(P.transicion.inicio)} ` : ''}al ${dmy(P.transicion.cierre)} (${P.transicion.meses} meses).` : null;
-      const notaPublica = [notaPrimero, P.suma?.nota].filter(Boolean).join(' ');
+      // (to-do 345, Auditora 5) el año salió de un informe XHTML (iXBRL): lo dice el encabezado del .md que escribe xhtml-aarsrapport.mjs. La fuente nace sin url, así que la página de fuentes lo dice con esta frase
+      // (el PDF de ancla es la impresión de Chrome, no se publica como si fuera el original; la url del depósito oficial la pone fuente.mjs).
+      const notaXhtml = /xhtml-aarsrapport\.mjs/.test(readFileSync(resolve(ROOT, e.md), 'utf8').slice(0, 400)) ? 'Informe oficial en formato XHTML (iXBRL)' : null;
+      const notaPublica = [notaPrimero, P.suma?.nota, notaXhtml].filter(Boolean).join(' ');
       fuenteNueva = { id: S.id, clubId: S.clubId, title: S.title, type: S.type, reliability: S.reliability, ...(notaPublica ? { publicNote: notaPublica } : {}) };
       if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
     }
