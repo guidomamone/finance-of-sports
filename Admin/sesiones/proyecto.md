@@ -48,6 +48,9 @@
 ## Para TODO, CHANGELOG y ESTADO (los escribe la principal)
 
 - TODO 248: hechos los pasos 1 a 4 (mapa, migración, documentos, etapa de pantalla) y la taxonomía `rugby-1`. Queda el paso 5: cargar Bath Rugby.
+  Las 14 decisiones del plan están cerradas: 1 a 9, 11 y 12 como se recomendaron; 10 (CVC) y 13 (fair value 2021) por votación, a `other_income`;
+  14 (comparar con fútbol) y lo visible de Bath (Rugby en el selector, «Rugby profesional…») con el ok de Guido. Los textos fijos que dicen «fútbol»
+  (pie y paquete) quedan como están.
 - TODO 339 (Pipeline): la taxonomía de rugby ya se lee por código; las respuestas a sus 3 dudas están en `Admin/mediciones/248-plan.md`,
   sección 5, «Cómo leen las tools la taxonomía de un club».
 - CHANGELOG: "248: esquema 2.0: cada línea con category genérica (derivada de data/category-map.js) y subcategory del deporte; los 319 JSON
