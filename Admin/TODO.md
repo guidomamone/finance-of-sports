@@ -38,7 +38,7 @@ el número de la izquierda es el orden de trabajo.
 8. 257 (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
 9. 356 (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
 10. 362 (Pipeline, con la Auditora): el freno de documentos de grupo
-11. 363 (Pipeline): lo aprobado de Pipeline 15 que no se aplicó, y dos preguntas para Guido
+11. 363 (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 **D. Orden de la casa**
 12. 338: correr todas las auditorías del proyecto (al final de A)
@@ -169,7 +169,7 @@ el número de la izquierda es el orden de trabajo.
    grupo si el turnover por clase de negocio deja el deporte del club por debajo del 90 %, o si el ejercicio trae la venta o compra de la
    sociedad del club; medido, frena los 3 Jaymel y 0 de los 53 británicos cargados desde grupo. Antes de codear, pasa por la sección 7 de la
    skill de auditoría (la Auditora). Lo hace Pipeline.
-363. LO APROBADO DE PIPELINE 15 QUE NO SE APLICÓ, Y DOS PREGUNTAS A GUIDO (Auditora 5 y 6, `Admin/registros/auditoria-proceso.jsonl`; el detalle
+363. LO APROBADO DE PIPELINE 15 QUE NO SE APLICÓ (Auditora 5 y 6, `Admin/registros/auditoria-proceso.jsonl`; el detalle
    en `Admin/Archive/sesion-pipeline-2026-10-21.md`, «Pipeline 15»). Terminado cuando: (a) barrido de lecturas recortadas: `jevDe` de
    `caja-deuda.mjs` con todas las filas (aprobado con un cambio: antes de commitear, volver a pedirle a Jev los 162 documentos que cortan en 120
    filas, y los años cuya caja o deuda cambia van como corrección con cita y trailer `Corrige:`, o se revierte); los encabezados de balance de
@@ -181,8 +181,8 @@ el número de la izquierda es el orden de trabajo.
    subagente Sonnet y el lote entero pasando `--check` antes del commit (medido: 45 con el `.md` completo, 0 con páginas sin transcribir); (c)
    se saca `cabecera` de `perimetroHeredado` (`cargar.mjs:215-220`), que se calcula y no la lee nadie; (d) la skill `auditoria-finance-of-sports`
    (eje datos) y la de la cola dicen «antes de reportar algo raro de un documento, `node tools/rarezas.mjs --md <ruta>`» (texto para el ok de
-   Guido); (e) Guido contesta si el tramo corto sin hueco va como C o B (el código ya entró: parece contestado, confirmar) y si la nota de
-   COVID se agrega a los 190 club-años ya cargados dentro de la ventana. Lo hace Pipeline (a, b, c) y la principal (d).
+   Guido). Lo hace Pipeline (a, b, c) y la principal (d). Las dos preguntas de la Auditora 5 ya están contestadas en CONVENCIONES-DATOS:
+   el tramo corto va como C y la temporada COVID lleva la etiqueta en pantalla, sin publicNote.
 364. EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
    clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
    español en `Admin/registros/correcciones.jsonl` (`{"commit","club","anio","motivo_es","motivo_en","fuente"}`; con subagentes que lean el
