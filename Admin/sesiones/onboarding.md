@@ -534,3 +534,27 @@ US$ 0 de API (los subagentes van con tokens de sesión).
 
 ### Gasto
 US$ 0 (RSSSF es HTML, sin IA).
+
+## To-do 356 y cierre (2026-10-21, Onboarding 9)
+
+### Qué cambió (para CHANGELOG)
+- **10 altas británicas cargadas** (lotes 140 y 141, un commit cada una): AFC Wimbledon, Barnsley, Burton Albion, Carlisle United, Chesterfield (CFC 2001 Ltd), Exeter City, Gillingham, Lincoln City y Shrewsbury Town 2025, y Wigan Athletic 2024. Color, liga, estadio y sponsor con fuente (`altas-revision.jsonl`, `contexto-manual.json`). La cola la contestaron subagentes Sonnet y yo revisé las correcciones grandes.
+- Criterios aplicados: Cost of sales → `other_expenses`; distribución de la EFL → `broadcasting`; notas «stated after charging» y staff costs sin renglón → afuera; sueldos con `incluye wages_squad --posible` en `other_expenses` (se parten con `caja-deuda --personal`, to-do 351); Barnsley «Trading of intangible assets» abierto en tres filas (nota 7).
+- Gratis antes de pagar: 16 cierres del XHTML y los perímetros (regla 1). Barnsley y Gillingham 2023-24 tienen 13 meses (transición larga). Fleetwood/Jaymel 2022-25 descartados (Auditora 6). 13 urls danesas más (359 d).
+- Gasto del 356: ~US$ 1,9 de US$ 35.
+
+### Qué queda
+- 12 clubes cuyo `-ixbrl.md` no tiene tablas (Hibernian, Bolton, Bristol Rovers, Cambridge 2024-25, Crewe, Northampton, Oxford, Peterborough, Plymouth, Rotherham, Salford y Tranmere; Blackpool y Reading igual) → TODO 356: esperan el arreglo de `xhtml-aarsrapport.mjs` (frenados-por-script, Pipeline 15).
+- Morecambe: el importe «(n )» con espacio se lee en unidades → frenados-por-script (Pipeline).
+- Ross County 2025: el aviso «registro no se actualizó, correr el lote» no cambia al correrlo → frenados (Pipeline); cola contestada.
+- Falkirk 2025: listo salvo la liga (Scottish Championship no existe en `data/leagues.js`) → TODO 356: crear la liga (club-sourcing 0.4) y cargar con su publicNote y el EJEMPLO-CATEGORÍA de la Auditora 6 (`reglas-categoria.mjs --escribir`).
+- Los otros años: 21 pagables (Ross County 2022-24, Wimbledon 2023-24, Barnsley 2022-24, Burton 2022-24, Cambridge 2022-24 —su alta puede entrar por 2023-24—, Chesterfield 2022-24, Exeter 2023-24, Gillingham 2022-24, Lincoln 2022-24, Shrewsbury 2022-24, Wigan 2022-23) → TODO 356, lote siguiente con las respuestas de este como precedente (~US$ 8); 17 esperan el conversor → TODO 356.
+- Líneas del auditor de las 10 altas → `node tools/auditoria.mjs --pendientes` (TODO 356).
+- Escudos sin mirar (`escudoOk` null) en las 10 altas; gestiones (presidentes) en la cola, no frenan → TODO 356.
+- Perfil de socios en ingleses: la cuota que cobra el Trust dueño (Wimbledon, Exeter) se contestó «no» → regla a la Auditora 6.
+- 358: 10 ligas esperan el arreglo de `segunda-fuente-liga.mjs` (sección To-do 358) → TODO 358.
+- 351: sueldos de los británicos con `caja-deuda --personal` → TODO 351 (ahora con 10 clubes más).
+- `perimetro-senales.mjs` votó «individual» en group accounts con s408 (Salford, Falkirk, Exeter; corregidos a mano) → frenados/Pipeline.
+
+### Qué deja de ser cierto en ESTADO
+- Inglaterra tiene 10 clubes nuevos de League One y League Two; `documentos-descartados.txt` suma los Jaymel de Fleetwood.
