@@ -54,6 +54,11 @@ el número de la izquierda es el orden de trabajo.
    muestra. Primero medir (Auditora o Pipeline): en cuántos club-años el documento lo imprime (estado de cambios en el patrimonio, flujo de
    fondos o notas) y con qué rótulos, por país. Después Pantallas propone dónde se ve, con mockup para el ok de Guido. Si suma un campo al
    JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios y aportes impresos como ingreso).
+358. SEGUNDA FUENTE DE LAS LIGAS (regla «la liga de un año necesita dos fuentes», CONVENCIONES-DATOS). `tools/segunda-fuente-liga.mjs` lee
+   RSSSF y guarda la fuente en la caché de `tools/club-league-reference/`; `liga-una-fuente` (P3) marca hoy 17 ligas. Terminado cuando:
+   las 17 ligas de `node tools/audit.js` con `liga-una-fuente` tienen su segunda fuente o una línea en HALLAZGOS que diga por qué no hay
+   (RSSSF sin esa temporada), y `liga-fuentes-no-coinciden` está en 0 o cada caso votado (skill de auditoría, sección 9). Orden: las de más
+   clubes primero (pt-primeiraliga 8, gr-superleague 7, be-challengerproleague 6). Un pedido por liga. Lo hace Onboarding.
 
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
