@@ -24,6 +24,7 @@
 //   merge-en-worktree       (deny) `git merge` / `git pull` dentro de un worktree (menos `merge-tree`, `merge-base` y `--abort`): lo hace la principal (C-4).
 //   plan-en-worktree        (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
 //   subagente-con-regla     (deny) un Agent cuyo prompt no diga que Bash va «sin variables» (C-2).
+//   rsync-sin-no-links      (deny) `rsync -a` sin `--no-links` (C-6). `pdfs-con-ok` ahora también cubre `mv` sobre Clubes/ (ask).
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
 import { execFileSync } from 'node:child_process';
@@ -99,8 +100,16 @@ function docsDeLaPrincipal(cmd) {
     + `Admin/sesiones/${rama}.md (qué cambió, qué queda, qué deja de ser cierto en ESTADO). Ver la skill de arranque, worktree.md.`);
 }
 
+// `rsync -a` copia los symlinks como symlinks: en un worktree recién creado apuntan a carpetas que no existen. Con `--no-links` se saltean (to-do 327, C-6).
+function rsyncSinNoLinks(cmd) {
+  if (!/\brsync\b/.test(cmd) || /--no-links\b/.test(cmd)) return;
+  if (/\s-[A-Za-z]*a[A-Za-z]*\b|--archive\b/.test(cmd)) {
+    decidir('deny', 'rsync -a copia los symlinks tal cual y en el destino quedan rotos. Agregá --no-links (o --no-links junto con -rt en vez de -a).');
+  }
+}
+
 function pdfsConOk(cmd) {
-  const borraEnClubes = /\bClubes\b/.test(cmd) && /\b(rm|unlink|trash)\s|\s-delete\b/.test(cmd);
+  const borraEnClubes = /\bClubes\b/.test(cmd) && /\b(rm|unlink|trash|mv)\s|\s-delete\b/.test(cmd);
   const gitCleanIgnorados = GIT_SUB('clean').test(cmd) && /\s-\w*[xX]/.test(cmd);
   if (borraEnClubes || gitCleanIgnorados) {
     decidir('ask', 'Esto puede borrar PDFs de Clubes/. No se trackean y no hay copia de dónde recuperarlos: ¿Guido lo pidió y se chequearon '
@@ -167,6 +176,7 @@ function subagenteConReglaDeComandos() {
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
 if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); mergeEnWorktree(cmd); }
 planEnWorktree();
+if (herramienta === 'Bash') rsyncSinNoLinks(cmd);
 subagenteConReglaDeComandos();
 skillsConOk(cmd);
 pushConOk(cmd);
