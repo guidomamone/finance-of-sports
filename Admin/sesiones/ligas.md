@@ -285,3 +285,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: frenados #17 y #16 de Bath (`caja-deuda.mjs`), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`: `escalaDe()` con el escalón 1b (la escala del estado contradice la escala 1 inferida) y `--personal` con el total sin rótulo y la escala por `escalaDe`, APROBADOS.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
