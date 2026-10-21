@@ -1411,7 +1411,7 @@ function checkCategorizacion(api) {
       if (!lines.length) continue;
       const total = Math.abs(sum(lines));
       if (!total) continue;
-      const rows = api.bucketize(lines, buckets, catchAll);
+      const rows = api.bucketize(lines, buckets, catchAll, null, (api.clubs[clubId] || {}).sport);
       const resto = Math.abs((rows.find(r => r.label === catchAll) || {}).value || 0);
       const pct = resto / total;
       if (pct > 0.4) {

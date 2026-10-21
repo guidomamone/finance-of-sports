@@ -10,6 +10,7 @@ window.I18N.strings.en = {
   "bucket.competition_bonus": "Competition prize money",
   "bucket.depreciation": "Capex (amortisation and depreciation)",
   "bucket.lump_football": "Professional football (not broken down by the source)",
+  "bucket.lump_rugby": "Professional rugby (not broken down by the source)",
   "bucket.match_org": "Match organisation",
   "bucket.matchday": "Stadium: matchday revenue",
   "bucket.member_dues": "Membership dues",

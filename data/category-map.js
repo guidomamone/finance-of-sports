@@ -67,7 +67,7 @@ const EXPENSE_CATEGORY_LABELS = {
   lump_football_operations_expense: 'Fútbol profesional (sin desglosar por la fuente)',
 };
 
-// CAPA GENÉRICA (to-do 248, Admin/mediciones/248-plan.md). Las listas de arriba son las SUBCATEGORÍAS del fútbol: las que eligen el pipeline
+// CAPA GENÉRICA. Las listas de arriba son las SUBCATEGORÍAS del fútbol: las que eligen el pipeline
 // y la cola, y las que usa el motor. Cada una tiene además una categoría GENÉRICA, la misma para cualquier deporte, que NO se elige: se deriva
 // de SPORT_TAXONOMIES. El JSON de cada club la guarda (`category`, con `subcategory` al lado) y tools/json-datos.mjs exige que el par coincida.
 // `block` es la parte de la cascada del resultado (la misma de computeYearGeneric): revenue; operating (gasto en efectivo), non_cash
@@ -125,8 +125,7 @@ const SPORT_TAXONOMIES = {
   },
 };
 
-// La genérica de una línea. Una subcategoría del OTRO lado (audit.js, categoria-cruzada: `exceptional_items` en ingresos de Racing
-// 2009-2014, decisión de Guido en CONVENCIONES-DATOS.md; Athletico Paranaense; el costo de las camisetas de Atlético Mineiro) va a la genérica
+// La genérica de una línea. Una subcategoría del OTRO lado (`exceptional_items` en una línea de ingreso, por ejemplo) va a la genérica
 // catch-all de su lado, que es la fila donde ya se ve y se suma. null = la subcategoría no existe en el deporte.
 const GENERIC_CATCH_ALL = { revenue: 'other_revenue', expense: 'other_operating_expenses' };
 function genericCategoryOf(sport, side, sub) {
