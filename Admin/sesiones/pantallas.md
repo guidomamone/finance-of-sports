@@ -1,3 +1,38 @@
+# Sesión pantallas (Pantallas 7): marca COVID en Comparar, Ligas y el selector
+
+## Qué cambió (para CHANGELOG)
+- Con el ok de Guido al mockup («ok a pantallas»), la etiqueta COVID va también en Comparar (chips de ejercicio de los dos lados y cabecera de la tabla),
+  en la página de una liga (debajo de la pastilla de cada temporada de la pandemia y en la línea «Suma de los N clubes con balance AAAA») y en el paso
+  «Elegí el ejercicio» del selector («2020/2021 · COVID» en la opción y la etiqueta al lado del desplegable). `esCovidPares()` nuevo en
+  `js/finanzas-calc.js` (todos los pares club-ejercicio en la ventana); `js/selector.js`, `js/liga.js`, `css/styles.css`; regla en `Admin/PANTALLA.md`
+  («Marca COVID»). ASSET_V 1699.
+- Verificado servido a escritorio: Comparar Juventus 19/20 contra 23/24 (19/20 y 20/21 con la etiqueta en los dos lados, la cabecera solo en A; tocar la
+  etiqueta abre el globo y no cambia el ejercicio), Serie A 2021 y Brasileirão 2021 (pastillas 2020 y 2021 y la línea), el selector con Juventus (opciones
+  «2020/2021 · COVID» y «2019/2020 · COVID», etiqueta al elegir). A 375 px: Comparar y Serie A sin scroll horizontal, y un toque real en la etiqueta de 2020
+  abre el globo sin cambiar el año. Como archivo a 1280 (Chrome sin ventana): Serie A y Comparar con las mismas marcas, sin errores. `node tools/audit.js`:
+  0 P0, 0 P1.
+
+## Recorrido de `referencia/ux.md`
+- 1 Navegación y scroll: no hay navegación nueva; ningún `scrollTo` nuevo; tocar la etiqueta o cambiar de temporada no mueve la página.
+- 2 URL y atrás: no cambia lo que va en la URL; ninguna carga nueva (la marca se deriva de lo cargado). Ids viejos: no aplica.
+- 3 Foco y teclado: las etiquetas fuera de un botón (pastilla de liga, línea, cabecera de Comparar, selector) reciben foco con Tab, abren con Enter y
+  cierran con Escape (probado en la pastilla y la línea); dentro de un chip no suman un segundo elemento enfocable. El foco al cambiar de vista sigue en el 360.
+- 4 Toques: **no cumple el área de 44 px**: la etiqueta mide unos 16 px de alto, igual que la de Finanzas ya aprobada; agrandarla taparía el toque del chip
+  o de la pastilla de al lado. Sin scroll horizontal a 375. No depende del hover (se abre con un toque).
+- 5 Carga, vacío y error: no aplica (sin carga propia; sin ranking cargado, la temporada no lleva marca).
+- 6 Lo elegido al volver: tocar la etiqueta no cambia el ejercicio elegido.
+
+## Qué queda (para TODO)
+- La etiqueta COVID mide menos de 44 px de alto en todas las pantallas (ux.md, punto 4): decidir si se acepta como excepción o si se le da más área sin
+  pisar el chip o la pastilla vecinos.
+- Antes de este cambio, y sin relación con él: a 375 px la fila de ejercicios de Comparar arranca mostrando el más nuevo, así que el ejercicio elegido de
+  un lado (19/20) queda fuera de vista.
+
+## Qué deja de ser cierto en ESTADO
+- «Finanzas multi-año» / marca COVID: ya no es solo de Finanzas; también Comparar, Ligas y el selector.
+
+---
+
 # Sesión pantallas (Pantallas 7): mockup de la marca COVID en Comparar, Ligas y el selector (sin código)
 
 ## Qué cambió (para CHANGELOG)

@@ -996,6 +996,9 @@
   .fin-year .covid{display:block;width:fit-content;margin-top:5px;}
   .cab-covid{display:block;text-align:right;margin-bottom:2px;}
   .stat .label .covid{margin-left:6px;}
+  .lg-anios-p{align-items:flex-start;}
+  .lg-anio-covid{display:inline-flex;flex-direction:column;align-items:center;gap:3px;}
+  .arm-anio .covid{margin-left:2px;}
   @media (max-width:600px){ .lg-dpais{grid-template-columns:1fr;} .lg-acc{margin-left:0;} }
   .lg-sindatos{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 20px;}
   .lg-sindatos summary{cursor:pointer;font-weight:700;font-size:14px;color:#45474d;}

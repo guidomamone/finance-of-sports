@@ -69,7 +69,13 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
   campo en los datos. Va en tres lugares: una línea dentro del card de cada ejercicio (la fila suma esa línea de alto), la cabecera de las columnas de la tabla multi-año y el
   número «Ingresos» de arriba (solo ese, para no repetirla en los cinco). Es un `role="img"` con `aria-label` y un globo de `js/info-tip.js`
   (`data-info-tip`): al pasar el puntero o tocar; dentro de un card, tocarla abre el globo y no elige el año; fuera, recibe foco con Tab y se
-  abre con Enter o espacio. Los textos son `covid.aria` y `covid.tip`. Todavía no está en Comparar, Ligas ni el selector de ejercicio.
+  abre con Enter o espacio. Los textos son `covid.aria` y `covid.tip`.
+  Fuera de Finanzas (mockup aprobado: `Prototyping/Covid/mockup-2.html`): en **Comparar**, dentro de cada chip de ejercicio de la pandemia de los dos
+  lados y arriba del nombre en la cabecera de la tabla cuando todos los ejercicios de ese lado caen en la ventana; en la **página de una liga**, debajo
+  de la pastilla de cada temporada de la pandemia (fuera del botón: no cambia su ancho y recibe foco) y al final de la línea «Suma de los N clubes con
+  balance AAAA»; en el paso **«Elegí el ejercicio»** del selector, como texto en la opción («2020/2021 · COVID», el desplegable nativo no admite una
+  etiqueta) y como etiqueta al lado del desplegable cuando lo elegido es de la pandemia. Una temporada de liga o un lado de Comparar la llevan solo si
+  TODOS sus pares club-ejercicio caen en la ventana (`esCovidPares()`); hoy ninguna temporada de liga mezcla clubes de adentro y de afuera.
 - **Mi Cuenta** guarda `years` además de `year`; con un solo año la clave es la de siempre (las búsquedas viejas no se duplican).
 - **Cómo verificar un cambio acá**: los totales de cada columna contra la tabla de un año, eligiendo los ejercicios de a uno
   CON CLICKS en los cards (`#finYears .fin-year`). Llamar `refreshFinanzas()` o `selectClub()` desde la consola no sirve:

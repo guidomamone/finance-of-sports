@@ -836,6 +836,12 @@ window.LIGA_VIEW = (function(){
     return b;
   }
 
+  // La marca COVID de una temporada: todos los clubes de su ranking cierran dentro de la ventana (esCovidPares(), js/finanzas-calc.js).
+  function covidTemporada(leagueId, y){
+    var r = rankingDe(leagueId, y);
+    return !!(r && window.esCovidPares && esCovidPares((r.clubs || []).map(function(c){ return [c.id, c.year || y]; })));
+  }
+
   // EL ENCABEZADO: la liga como título; país, división y cobertura en una línea; los ejercicios como pastillas que dicen cuántos
   // clubes trae cada uno, para no elegir a ciegas.
   function encabezado(r){
@@ -859,7 +865,13 @@ window.LIGA_VIEW = (function(){
       b.setAttribute('aria-pressed', y === st.year ? 'true' : 'false');
       b.appendChild(document.createTextNode(String(y)));
       b.addEventListener('click', function(){ st.year = y; render(); });
-      pills.appendChild(b);
+      // Una temporada de la pandemia lleva la marca COVID debajo de la pastilla, fuera del botón: no cambia su ancho y recibe foco sola.
+      if(covidTemporada(st.league, y)){
+        var c = el('span', 'lg-anio-covid');
+        c.appendChild(b);
+        c.insertAdjacentHTML('beforeend', marcaCovidHtml('s', true));
+        pills.appendChild(c);
+      } else pills.appendChild(b);
     });
     anios.appendChild(pills);
     caja.appendChild(anios);
@@ -983,7 +995,9 @@ window.LIGA_VIEW = (function(){
       + t('liga.cons.withBal', 'clubes con balance') + ' ' + st.year
       + (conEst ? ' + ' + est.length + ' ' + (est.length === 1 ? t('liga.est.one', 'estimado') : t('liga.est.many', 'estimados')) + '*' : '')
       + ' · ' + t('liga.cons.usd', 'en dólares');
-    txt.appendChild(el('p', 'lg-card-sub', sub));
+    var subP = el('p', 'lg-card-sub', sub);
+    if(covidTemporada(st.league, st.year)) subP.insertAdjacentHTML('beforeend', ' ' + marcaCovidHtml('s', true));
+    txt.appendChild(subP);
     head.appendChild(txt);
     var big = el('div', 'lg-cons-total');
     big.appendChild(el('span', 'lg-cons-total-l', t('liga.revenue', 'Ingresos')));
