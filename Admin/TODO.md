@@ -29,21 +29,23 @@ el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
 1. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar
-2. 345: documentos en mano sin cargar (lote de onboarding; falta tu presupuesto)
-3. 346: sourcing con vía concreta (Brasil, Alemania, Italia, Bélgica, Suiza)
+2. 345 (Onboarding 8): lote 130 de documentos en mano y Girona 2021-23 (~US$5,50); los daneses en XHTML, cuando esté el lector
+3. 345 (Pipeline 13): lector del XHTML danés, con el diseño aprobado por la Auditora
+4. 346 (Sourcing 4): sourcing con vía concreta (Brasil, Alemania, Italia, Bélgica, Suiza)
+5. 347: proceso para bajar los P2 y P3 de a un código por corrida (texto de skill para tu ok, en `Admin/propuestas/p2-p3-y-roles.md`)
 
 **C. Técnico**
-4. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
+6. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
 
 **D. Orden de la casa**
-5. 338: correr todas las auditorías del proyecto (al final de A)
-6. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+7. 338: correr todas las auditorías del proyecto (al final de A)
+8. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-7. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-8. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-9. 335: mails a clubes
-10. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+9. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+10. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+11. 335: mails a clubes
+12. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
@@ -68,6 +70,9 @@ el número de la izquierda es el orden de trabajo.
 346. SOURCING CON VÍA CONCRETA (Pruebas 1, 2026-10-21). Ferroviária 2011 y Novorizontino 2011-12 (repositorio de la federación paulista), Goiás
    2019, Mönchengladbach y VfB Stuttgart 2025 (Unternehmensregister), Monza 2025, Lierse Kempenzonen 2023-25 (API de la BNB), Basel 2022 (la nota
    dice que no hay PDF pero está `geschaeftsbericht_2022-23.pdf`), Fiorentina 2020. Detalle y notas en `Admin/sesiones/pipeline.md`.
+347. P2 Y P3 SIN PROCESO (Guido, 2026-10-21: «armemos algo para los P2 y P3»). Hoy hay ~370 P2 y ~1.000 P3 que nadie revisa (los más:
+   `linea-duplicada` 927, `catchall-dominante` 256, `sin-salarios` 48). Propuesta en `Admin/propuestas/p2-p3-y-roles.md`: cada auditoría baja
+   un código (muestra de cinco, decisión por el código entero, registro antes y después). Falta el ok de Guido al texto de la skill.
 258. ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
    clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
    3.000 ~200 KB. Todavía no. Se reabre cuando lo que se baja siempre pase 150 KB comprimidos (~2.200 clubes) o esos dos archivos pasen 1 MB
