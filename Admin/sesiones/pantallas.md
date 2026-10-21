@@ -1,3 +1,22 @@
+# Sesión pantallas (Pantallas 6): to-do 258, índice partido por país o liga
+
+## Qué cambió (para CHANGELOG)
+- 258: se miró con la skill `escala-finance-of-sports` (sección B, payload eager) y todavía no llegó el momento: no se implementó nada. Medido el 2026-10-21 con 320 clubes: `data/clubs.js` 66,9 KB
+  (11,2 KB comprimido) y `data/club-index.js` 69,6 KB (6,5 KB comprimido), o sea unos 55 bytes comprimidos por club; el payload eager completo (los `<script src="data/…">` de `index.html`) es
+  250 KB crudo y 46,5 KB comprimido, y lo que escala por club es solo esos dos archivos (17,7 KB comprimidos).
+
+## Qué queda (para TODO)
+- 258 se cierra con su disparador, que la skill ya fija como «problema observable del payload eager comprimido»: a 55 bytes comprimidos por club, el payload eager comprimido llega a ~100 KB con ~1.300 clubes
+  cargados y a ~200 KB con ~3.000 (a 1.000 clubes: ~84 KB; a 10.000: ~0,6 MB). Propuesta de umbral para reabrirlo: payload eager comprimido > 150 KB (~2.200 clubes) o `clubs.js` + `club-index.js` crudos > 1 MB.
+  Medirlo con `grep -o 'src="data/[^"?]*' index.html | sed 's/src="//' | xargs cat | gzip -9c | wc -c`. Cuando se reabra: la premisa de la skill (el destino de `fiscalYearStart` es `club-index.js`, no el archivo del club)
+  y partir por país no compra lazy-load si el selector necesita la tabla entera para dibujarse; lo que sirvió con `club-leagues.js` fue sacarlo del camino eager detrás de una frontera async.
+- Si se quiere, agregar ese umbral como chequeo a `checkEscala()` de `tools/audit.js` (P3 `payload-eager`), que hoy proyecta bytes crudos y no comprimidos (lo pide Pipeline).
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 6): to-do 344, mockup de Ligas con muchos países y deportes
 
 ## Qué cambió (para CHANGELOG)
