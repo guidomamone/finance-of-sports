@@ -271,3 +271,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: frenados #7 y #13 de Bath (`--pagina` de Mistral y `publicar.mjs`), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`: `mistral-ocr-transcribe.mjs --pagina` y `tools/publicar.mjs`, APROBADOS.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
