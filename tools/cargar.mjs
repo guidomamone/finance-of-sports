@@ -381,13 +381,13 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     if (ESCRIBIR) return corta('club', MSG_ALTA);
     const a0 = analizar(pdf, sitio);
     const v = (n) => a0.campos.find((c) => c.campo === n) || {};
-    const faltan = ['id', 'country', 'reportingCurrency', 'fiscalYearStart'].filter((n) => v(n).estado === 'pregunta' || v(n).valor == null);
+    const faltan = ['id', 'country', 'reportingCurrency', 'fiscalYearStart', 'sport'].filter((n) => v(n).estado === 'pregunta' || v(n).valor == null);
     if (a0.error || faltan.length) return corta('club', `${MSG_ALTA}${a0.error ? ` (${a0.error})` : `; la ficha del alta tiene preguntas en ${faltan.join(', ')}`}`);
     frena('club', `${MSG_ALTA}; el resto se evaluó con un club provisional armado de la ficha del alta (${v('id').valor})`);
     provisional = {
       id: v('id').valor,
       club: { id: v('id').valor, name: v('name').valor, displayName: v('displayName').valor, country: v('country').valor,
-        reportingCurrency: v('reportingCurrency').valor, fiscalYearStart: v('fiscalYearStart').valor, sport: v('sport').valor || 'futbol' },
+        reportingCurrency: v('reportingCurrency').valor, fiscalYearStart: v('fiscalYearStart').valor, sport: v('sport').valor },
       cd: { fiscalYearMeta: {}, revenueLinesByYear: {}, expenseLinesByYear: {} },
     };
   }

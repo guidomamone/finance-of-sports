@@ -250,6 +250,7 @@ import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { clubDeCarpeta } from './carpetas-clubes.mjs';
+import { deportesActivos } from './deporte-club.mjs'; // (to-do 339) deportes activos del catálogo
 import * as EV from './evidencia-club.mjs';
 import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
 import { agregarCaso, casoYRespuesta } from './cola.mjs';
@@ -1181,6 +1182,18 @@ export function analizar(docArg, sitio, ov = {}) {
   // Liga
   E.push(proponerLiga(clubId, r.club.existe ? (sitio.clubs[clubId] || {}).displayName : clubCarpeta, pais, anio, sitio, cierre));
 
+  // (to-do 339) DEPORTE DECLARADO, en este orden: la ficha del club (data/clubs.js) -> la liga del club (data/leagues.js tiene `sport`: es un dato, no un supuesto) -> las menciones del .md
+  // (la regla de arriba). Pregunta solo si ninguna responde: sin fútbol nombrado, sin otro deporte nombrado y sin ficha ni liga el deporte NO se supone fútbol. Medido sobre Clubes/:
+  // 31 de 400 carpetas no nombran el fútbol (los clubes coreanos, estonios, All Boys...); sin mirar la liga y la ficha se frenarían a la cola por nada.
+  {
+    const iSp = r.campos.findIndex((c) => c.campo === 'sport'); const ligaC = E.find((c) => c.campo === 'liga');
+    const deLaFicha = r.club.existe ? (sitio.clubs[clubId] || {}).sport : null;
+    const deLaLiga = ligaC && ligaC.valor ? (sitio.LEAGUES[ligaC.valor] || {}).sport : null;
+    const decl = deLaFicha ? { v: deLaFicha, f: `la ficha de ${clubId} en data/clubs.js dice ${deLaFicha}` } : deLaLiga ? { v: deLaLiga, f: `la liga ${ligaC.valor} del catálogo (data/leagues.js) es de ${deLaLiga}` } : null;
+    if (iSp >= 0 && decl && deportesActivos().includes(decl.v)) r.campos[iSp] = campo('sport', decl.v, decl.f);
+    else if (iSp >= 0 && !decl && r.campos[iSp].estado !== 'pregunta' && !fuenteDeporteClaude && nFutbol <= 0) r.campos[iSp] = campo('sport', null, 'ni la ficha, ni la liga, ni el .md nombran un deporte', 'pregunta', { pregunta: '¿De qué deporte es el club? El .md no nombra el fútbol ni ningún otro deporte y todavía no hay ficha ni liga del club en el catálogo.' });
+  }
+
   // Contexto que el alta necesita escribir aparte (país/moneda nuevos)
   r.contexto = {
     paisNuevo: pais && pais.iso2 && !sitio.COUNTRIES[pais.iso2] ? { iso2: pais.iso2, name: NOMBRE_PAIS_ES[pais.iso2] || paisCarpeta, en: pais.en, flag: bandera(pais.iso2), region: pais.region } : null,
@@ -1413,6 +1426,7 @@ function jsStr(s) { return `'${String(s).replace(/\\/g, '\\\\').replace(/'/g, "\
 
 function escribir(r) {
   const val = (n) => (r.campos.find((c) => c.campo === n) || {}).valor;
+  if (!val('sport')) throw new Error('el alta no tiene deporte (sport): no se supone fútbol, se pregunta (to-do 339)');
   const eVal = (n) => (r.ejercicio.campos.find((c) => c.campo === n) || {});
   const id = val('id');
   const hoy = new Date().toISOString().slice(0, 10);
@@ -1460,7 +1474,7 @@ function escribir(r) {
       'sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):',
       `  ${r.ejercicio.anio}: ${JSON.stringify(metaProp)}`]);
     // (to-do 245, fase 2) el esqueleto es el JSON del club (la fuente) y de ahí sale su data file
-    const ficha = { id, name: val('name'), displayName: val('displayName'), country: val('country'), reportingCurrency: val('reportingCurrency'), fiscalYearStart: val('fiscalYearStart'), sport: val('sport') || 'futbol' };
+    const ficha = { id, name: val('name'), displayName: val('displayName'), country: val('country'), reportingCurrency: val('reportingCurrency'), fiscalYearStart: val('fiscalYearStart'), sport: val('sport') };
     escritos.push(...crearClub(id, ficha, { pais: val('country') }));
 
     // 3. data/club-leagues/<iso2>.js
