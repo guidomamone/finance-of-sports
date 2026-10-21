@@ -1,6 +1,14 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["gb-premiershiprugby"] = {
+  2025: {
+    leagueSize: null,
+    clubs: [
+      { id:"bathrugby-gb", revenue:32.072, reportType:"official_balance_sheet",
+        sourceId:"bathrugby-gb-medium-company-accounts-2024-25",
+        mix:[["Comercial / Sponsors",13.701],["Estadio",11.919],["Televisión",6.028],["Otros ingresos",0.424]] },
+    ],
+  },
   2024: {
     leagueSize: null,
     clubs: [

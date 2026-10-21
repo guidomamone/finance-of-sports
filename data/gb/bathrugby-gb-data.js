@@ -33,6 +33,14 @@ const bathrugbyGbRevenueLinesByYear = {
     {"rawLabel":"Diferencia en el documento","normalizedCategory":"other_income","amountNative":0.022985,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other operating income","normalizedCategory":"other_income","amountNative":0.081503,"disclosureLevel":"aggregated"},
   ],
+  2025: [
+    {"rawLabel":"Central income","normalizedCategory":"central_income","amountNative":4.4,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gate receipts","normalizedCategory":"gate_receipts","amountNative":8.7,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Commercial activities","normalizedCategory":"commercial_activities","amountNative":10,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Other income","normalizedCategory":"other_income","amountNative":0.2,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Diferencia en el documento","normalizedCategory":"other_income","amountNative":0.039778,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Other operating income","normalizedCategory":"other_income","amountNative":0.069825,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const bathrugbyGbExpenseLinesByYear = {
@@ -52,6 +60,10 @@ const bathrugbyGbExpenseLinesByYear = {
     {"rawLabel":"Cost of sales","normalizedCategory":"lump_rugby_operations_expense","amountNative":-19.500753,"disclosureLevel":"aggregated"},
     {"rawLabel":"Administrative expenses","normalizedCategory":"lump_rugby_operations_expense","amountNative":-6.283057,"disclosureLevel":"aggregated"},
   ],
+  2025: [
+    {"rawLabel":"Cost of sales","normalizedCategory":"lump_rugby_operations_expense","amountNative":-20.059154,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses","normalizedCategory":"lump_rugby_operations_expense","amountNative":-6.251494,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const bathrugbyGbFiscalYearMeta = {
@@ -59,6 +71,7 @@ const bathrugbyGbFiscalYearMeta = {
   2022: {"currency":"GBP","sourceId":"bathrugby-gb-full-accounts-2021-22","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2022-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.104184,"tax":0.387584,"grossDebt":null,"cash":null,"officialTotalRevenue":19.819557,"officialTotalExpenses":20.266397,"officialPAT":-0.16344,"extraRows":[{"label":"Other interest receivable and similar income","value":0.003698},{"label":"Interest payable and similar expenses","value":-0.107882},{"label":"Tax on loss","value":0.387584}],"sinDesglose":[{"renglon":"Cost of sales","lado":"expense","importe":15.605502,"motivo":"el documento no desglosa este renglón"},{"renglon":"Administrative expenses","lado":"expense","importe":4.660895,"motivo":"el documento no desglosa este renglón"}]},
   2023: {"currency":"GBP","sourceId":"bathrugby-gb-full-accounts-2022-23","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.100113,"tax":1.167663,"grossDebt":null,"cash":null,"officialTotalRevenue":20.240335,"officialTotalExpenses":24.569226,"officialPAT":-3.261341,"extraRows":[{"label":"Other interest receivable and similar income","value":0.005889},{"label":"Interest payable and similar expenses","value":-0.106002},{"label":"Tax on loss","value":1.167663}],"sinDesglose":[{"renglon":"Cost of sales","lado":"expense","importe":18.505213,"motivo":"el documento no desglosa este renglón"},{"renglon":"Administrative expenses","lado":"expense","importe":6.064013,"motivo":"el documento no desglosa este renglón"}]},
   2024: {"currency":"GBP","sourceId":"bathrugby-gb-full-accounts-2023-24","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.111751,"tax":1.310091,"grossDebt":null,"cash":null,"officialTotalRevenue":20.904488,"officialTotalExpenses":25.78381,"officialPAT":-3.680982,"extraRows":[{"label":"Other interest receivable and similar income","value":0.001089},{"label":"Interest payable and similar expenses","value":-0.11284},{"label":"Tax on loss","value":1.310091}],"sinDesglose":[{"renglon":"Cost of sales","lado":"expense","importe":19.500753,"motivo":"el documento no desglosa este renglón"},{"renglon":"Administrative expenses","lado":"expense","importe":6.283057,"motivo":"el documento no desglosa este renglón"}]},
+  2025: {"currency":"GBP","sourceId":"bathrugby-gb-medium-company-accounts-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.127574,"tax":0.250554,"grossDebt":null,"cash":null,"officialTotalRevenue":23.409603,"officialTotalExpenses":26.310648,"officialPAT":-2.778065,"extraRows":[{"label":"Interest receivable and similar income","value":null},{"label":"Interest payable and similar expenses","value":-0.127574},{"label":"Tax on loss","value":0.250554}],"sinDesglose":[{"renglon":"Cost of sales","lado":"expense","importe":20.059154,"motivo":"el documento no desglosa este renglón"},{"renglon":"Administrative expenses","lado":"expense","importe":6.251494,"motivo":"el documento no desglosa este renglón"}]},
 };
 
 const bathrugbyGbPresupuestoOverlayByYear = {};
@@ -75,6 +88,6 @@ window.CLUB_GENERIC_DATA["bathrugby-gb"] = {
   presupuestoOverlayByYear: bathrugbyGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"bathrugby-gb-full-accounts-2020-21":{"id":"bathrugby-gb-full-accounts-2020-21","clubId":"bathrugby-gb","title":"Bath Rugby Limited — bath-rugby-full-accounts-2020-21 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary"},"bathrugby-gb-full-accounts-2021-22":{"id":"bathrugby-gb-full-accounts-2021-22","clubId":"bathrugby-gb","title":"Bath Rugby Limited — bath-rugby-full-accounts-2021-22 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"},"bathrugby-gb-full-accounts-2022-23":{"id":"bathrugby-gb-full-accounts-2022-23","clubId":"bathrugby-gb","title":"Bath Rugby Limited — bath-rugby-full-accounts-2022-23 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"},"bathrugby-gb-full-accounts-2023-24":{"id":"bathrugby-gb-full-accounts-2023-24","clubId":"bathrugby-gb","title":"Bath Rugby Limited — bath-rugby-full-accounts-2023-24 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"bathrugby-gb-full-accounts-2020-21":{"id":"bathrugby-gb-full-accounts-2020-21","clubId":"bathrugby-gb","title":"Bath Rugby Limited — bath-rugby-full-accounts-2020-21 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary"},"bathrugby-gb-full-accounts-2021-22":{"id":"bathrugby-gb-full-accounts-2021-22","clubId":"bathrugby-gb","title":"Bath Rugby Limited — bath-rugby-full-accounts-2021-22 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"},"bathrugby-gb-full-accounts-2022-23":{"id":"bathrugby-gb-full-accounts-2022-23","clubId":"bathrugby-gb","title":"Bath Rugby Limited — bath-rugby-full-accounts-2022-23 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"},"bathrugby-gb-full-accounts-2023-24":{"id":"bathrugby-gb-full-accounts-2023-24","clubId":"bathrugby-gb","title":"Bath Rugby Limited — bath-rugby-full-accounts-2023-24 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"},"bathrugby-gb-medium-company-accounts-2024-25":{"id":"bathrugby-gb-medium-company-accounts-2024-25","clubId":"bathrugby-gb","title":"Bath Rugby Limited — bath-rugby-medium-company-accounts-2024-25 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
 
 memberCountByClub["bathrugby-gb"] = null;
