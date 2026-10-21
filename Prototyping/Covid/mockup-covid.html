@@ -1,0 +1,258 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Marca COVID en los ejercicios</title>
+<style>
+/* Mockup para aprobar la marca visual de los ejercicios de la pandemia (ventana: cierre entre 2020-03-31 y 2021-12-31, derivada de cierreEjercicio()).
+   Números de Juventus y Atalanta tomados de data/it/*.json el 2026-10-21 (ingresos en millones de EUR, tal cual el documento). */
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#18202c; --muted:#5f6b7a; --line:#dde2ea;
+  --azul:#0a2b5c; --azul-soft:#e7eef9; --oro:#f2b705;
+  --nota:#a3321f; --nota-bg:#fdeeea;
+  --boom:#ffd23f; --boom-line:#0a2b5c; --boom-txt:#b3122b; --boom-halo:#ffffff;
+  --neg:#b3261e;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f141c; --card:#171d28; --ink:#e8ecf2; --muted:#9aa5b5; --line:#2a3342;
+  --azul:#9db9ee; --azul-soft:#1a2740; --oro:#f2b705;
+  --nota:#f0a898; --nota-bg:#2e1a16;
+  --boom:#ffd23f; --boom-line:#f3f5f9; --boom-txt:#b3122b; --boom-halo:#ffffff;
+  --neg:#f2b8b5; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141c; --card:#171d28; --ink:#e8ecf2; --muted:#9aa5b5; --line:#2a3342;
+  --azul:#9db9ee; --azul-soft:#1a2740; --oro:#f2b705;
+  --nota:#f0a898; --nota-bg:#2e1a16;
+  --boom:#ffd23f; --boom-line:#f3f5f9; --boom-txt:#b3122b; --boom-halo:#ffffff;
+  --neg:#f2b8b5; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 64px}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1{font-size:25px;line-height:1.2;margin:0;text-wrap:balance}
+h2{font-size:18px;margin:0;text-wrap:balance}
+h3{font-size:14px;margin:0}
+p{margin:0}
+.lede{color:var(--muted);max-width:70ch}
+.kick{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.sec{display:flex;flex-direction:column;gap:14px}
+.nota{background:var(--nota-bg);color:var(--nota);border-radius:8px;padding:10px 14px;font-size:13.5px}
+.nota ol{margin:6px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+button{font:inherit;color:inherit;cursor:pointer}
+.tema{align-self:flex-start;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}
+.dos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+@media (max-width:760px){.dos{grid-template-columns:1fr}}
+/* LA MARCA: un estallido de historieta con COVID adentro. SVG inline, el texto es real (se puede seleccionar y lo lee el lector de pantalla). */
+.covid{display:inline-block;position:relative;line-height:0;outline-offset:3px;cursor:help;transform:rotate(-7deg)}
+.covid svg{display:block;width:100%;height:100%;overflow:visible}
+.covid .burst{fill:var(--boom);stroke:var(--boom-line);stroke-width:3;stroke-linejoin:round}
+.covid text{font:900 italic 25px/1 Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",sans-serif;letter-spacing:.5px;fill:var(--boom-txt);
+  stroke:var(--boom-halo);stroke-width:4;paint-order:stroke;stroke-linejoin:round;text-anchor:middle}
+.covid.s{width:58px;height:35px}
+.covid.m{width:54px;height:33px}
+.covid.l{width:74px;height:45px}
+.covid:focus-visible{outline:2px solid var(--oro)}
+.tip{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%) rotate(7deg);width:max-content;max-width:260px;background:var(--ink);color:var(--bg);
+  border-radius:8px;padding:8px 10px;font:400 12.5px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;text-align:left;z-index:5;
+  opacity:0;pointer-events:none;transition:opacity .12s}
+.covid:hover .tip,.covid:focus .tip,.covid.abierto .tip{opacity:1}
+@media (prefers-reduced-motion: reduce){.tip{transition:none}}
+.tamanos{display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap;padding:8px 4px 16px}
+.tamanos figure{margin:0;display:flex;flex-direction:column;align-items:flex-start;gap:6px;font-size:12.5px;color:var(--muted)}
+/* A: los cards de ejercicio de Finanzas */
+.cards{display:flex;gap:10px;overflow-x:auto;padding:32px 14px 10px 2px}
+.fin-year{position:relative;flex:0 0 auto;min-width:88px;text-align:left;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:8px 12px;display:flex;flex-direction:column}
+.fin-year b{font-size:15px}
+.fin-year span.t{font-size:12px;color:var(--muted)}
+.fin-year.on{border-color:var(--azul);box-shadow:inset 0 0 0 1px var(--azul)}
+.fin-year .covid{position:absolute;right:-10px;top:-27px}
+/* B: la cabecera de la tabla de varios ejercicios */
+.tabla{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:13.5px}
+th,td{padding:9px 12px;text-align:right;border-top:1px solid var(--line);vertical-align:bottom;white-space:nowrap}
+thead th{border-top:0;font-weight:600;padding-top:18px}
+thead th:first-child,tbody th{text-align:left}
+tbody th{font-weight:600}
+.cab{display:inline-flex;flex-direction:column;align-items:flex-end;gap:2px}
+.cab .covid{margin-bottom:2px}
+td.neg{color:var(--neg)}
+/* C: los números de arriba */
+.kpi{display:flex;flex-direction:column;gap:2px}
+.kpi .l{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.kpi .v{font-size:30px;font-weight:700}
+.kpi .d{font-size:13px;color:var(--muted)}
+/* Teléfono */
+.tel{width:375px;max-width:100%;border:1px solid var(--line);border-radius:22px;padding:16px 16px 18px;background:var(--bg);display:flex;flex-direction:column;gap:14px;margin:0 auto}
+.tel h2{font-size:22px}
+.tel .sub{font-size:13.5px;color:var(--muted)}
+.lista{display:flex;flex-direction:column;gap:6px;font-size:14px}
+.lista li{display:flex;gap:10px;align-items:baseline}
+.lista{margin:0;padding-left:18px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:var(--azul-soft);padding:1px 6px;border-radius:5px}
+</style>
+
+<div class="wrap">
+  <header class="sec">
+    <div class="kick">Mockup · marca COVID · solo para aprobar, no hay nada implementado</div>
+    <h1>La pandemia, marcada en el ejercicio</h1>
+    <p class="lede">La palabra «COVID» dentro de un estallido de historieta, pegada al ejercicio y no escrita en una nota. Aparece en todo ejercicio cuyo cierre cae entre el 31 de marzo de 2020 y el 31 de diciembre de 2021. Se deriva de la fecha de cierre que el sitio ya calcula para cada ejercicio (<code>cierreEjercicio()</code>): no hay campo nuevo. Los números son los reales de Juventus y de Atalanta.</p>
+    <button class="tema" id="tema" type="button" aria-pressed="false">Ver en modo oscuro</button>
+    <div class="nota"><b>Lo que hay que decidir.</b>
+      <ol>
+        <li>La marca: forma, colores y el tamaño de cada uso (sección 1).</li>
+        <li>Dónde va: propongo el card de cada ejercicio, la cabecera de la tabla y el número grande de arriba (sección 2). Comparar, Ligas y el selector de ejercicio quedan para después si se aprueba.</li>
+        <li>El texto del globo que explica qué pasó (sección 4).</li>
+      </ol>
+    </div>
+  </header>
+
+  <section class="sec">
+    <div class="kick">1 · La marca</div>
+    <h2>Un estallido amarillo con COVID en rojo, en tres tamaños</h2>
+    <div class="card">
+      <div class="tamanos" id="tamanos"></div>
+      <p class="lede">Va ladeada unos 7 grados, como una onomatopeya. El amarillo es el mismo del sitio. El borde es azul en claro y blanco en oscuro, para que el estallido no se pierda sobre el fondo; el texto rojo lleva un halo blanco. Con el puntero, con el teclado (Tab) o al tocarlo, abre el globo con una línea que explica qué pasó.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="kick">2 · Dónde va</div>
+    <h2>Los tres lugares donde se lee el ejercicio</h2>
+    <p class="lede">Ejemplo con Juventus (cierra el 30 de junio: 2019/20 y 2020/21 caen en la ventana). Hay que pasar el puntero o tocar la marca para ver el globo.</p>
+
+    <div class="card">
+      <h3>A · El card de cada ejercicio (el selector de años de Finanzas)</h3>
+      <div class="cards" id="cardsJuve" role="group" aria-label="Ejercicios de Juventus"></div>
+      <p class="lede">La marca se pega a la esquina del card y sobresale un poco. No cambia el ancho del card ni empuja a los demás.</p>
+    </div>
+
+    <div class="card">
+      <h3>B · La cabecera de la tabla con varios ejercicios (Estado de resultados)</h3>
+      <div class="tabla"><table id="tablaJuve"></table></div>
+      <p class="lede">La marca va arriba del año, alineada a la derecha como el número. Un ejercicio de la ventana se ve igual con uno solo o con varios elegidos.</p>
+    </div>
+
+    <div class="card">
+      <h3>C · El número grande de arriba</h3>
+      <div class="dos">
+        <div class="kpi" id="kpiJuve"></div>
+        <div class="kpi" id="kpiAtalanta"></div>
+      </div>
+      <p class="lede">Atalanta cierra el 31 de diciembre: sus ejercicios 2020 y 2021 caen en la ventana, y 2022 (cierre del 30 de junio, tramo de seis meses) no.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="kick">3 · En el teléfono</div>
+    <h2>A 375 px la marca no tapa nada ni agrega scroll</h2>
+    <div class="tel">
+      <div><h2>Atalanta</h2><p class="sub">Serie A · Italia · 8 balances</p></div>
+      <div class="cards" id="cardsAtalantaTel" role="group" aria-label="Ejercicios de Atalanta"></div>
+      <div class="kpi" id="kpiTel"></div>
+    </div>
+    <p class="lede">La fila de ejercicios ya se desliza de costado, como hoy. La marca queda dentro del card o apenas afuera de su esquina, y el padding de arriba de la fila le deja lugar para que no se corte.</p>
+  </section>
+
+  <section class="sec">
+    <div class="kick">4 · Texto para todos</div>
+    <h2>Lectores de pantalla, globo e idioma</h2>
+    <div class="card">
+      <ul class="lista">
+        <li><b>Texto alternativo.</b> La marca es un elemento con <code>role="img"</code> y <code>aria-label</code>; el lector dice: «Ejercicio dentro de la pandemia de COVID-19: partidos suspendidos o a puertas cerradas.» En inglés: «Financial year during the COVID-19 pandemic: matches suspended or played behind closed doors.»</li>
+        <li><b>Globo.</b> «Pandemia de COVID-19: entre marzo de 2020 y junio de 2021 hubo partidos suspendidos o a puertas cerradas, según el país. Los importes son los del balance, sin ajuste.» (en inglés, la misma línea).</li>
+        <li><b>Teclado.</b> La marca recibe foco con Tab y muestra el globo; Escape lo cierra. En el teléfono, un toque lo abre y otro lo cierra (el mismo comportamiento que ya tienen los «?» del sitio).</li>
+        <li><b>Movimiento.</b> No hay animación; el globo aparece sin transición con «reducir movimiento».</li>
+        <li><b>Color.</b> El rojo sobre el amarillo con halo blanco llega a contraste de texto grande; la palabra va en tipografía pesada de sistema (sin descargar una fuente).</li>
+        <li><b>Regla.</b> Ejercicio (balance o presupuesto) con cierre entre 2020-03-31 y 2021-12-31. Hoy son 190 club-años de fútbol en 118 clubes; los importes no se tocan.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<script>
+const J = [[2018,'2018-06-30',504.7],[2019,'2019-06-30',621.5],[2020,'2020-06-30',573.4],[2021,'2021-06-30',479.0],[2022,'2022-06-30',440.1],[2023,'2023-06-30',503.7]];
+const A = [[2018,'2018-12-31',155.7],[2019,'2019-12-31',188.6],[2020,'2020-12-31',242.0],[2021,'2021-12-31',242.7],[2022,'2022-06-30',120.3]];
+const enCovid = (end) => end >= '2020-03-31' && end <= '2021-12-31';
+const lab = (y, end) => end.slice(5, 7) === '12' ? String(y) : (y - 1) + '/' + String(y).slice(2);
+const fmt = (v) => v.toLocaleString('es', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const ARIA = 'Ejercicio dentro de la pandemia de COVID-19: partidos suspendidos o a puertas cerradas';
+const TIP = 'Pandemia de COVID-19: entre marzo de 2020 y junio de 2021 hubo partidos suspendidos o a puertas cerradas, según el país. Los importes son los del balance, sin ajuste.';
+
+// El estallido: 16 puntas, radios alternados con un poco de irregularidad fija (determinista).
+function estallido() {
+  const pts = [], n = 16, cx = 50, cy = 30;
+  for (let i = 0; i < n * 2; i++) {
+    const a = (Math.PI * 2 * i) / (n * 2) - Math.PI / 2;
+    const punta = i % 2 === 0;
+    const r = punta ? 47 + ((i * 7) % 5) : 34 + ((i * 3) % 4);
+    pts.push((cx + Math.cos(a) * r * 1.0).toFixed(1) + ',' + (cy + Math.sin(a) * r * 0.62).toFixed(1));
+  }
+  return pts.join(' ');
+}
+const PUNTOS = estallido();
+function marca(tam) {
+  const s = document.createElement('span');
+  s.className = 'covid ' + tam;
+  s.tabIndex = 0;
+  s.setAttribute('role', 'img');
+  s.setAttribute('aria-label', ARIA);
+  s.innerHTML = '<svg viewBox="-4 -4 108 68" aria-hidden="true" focusable="false"><polygon class="burst" points="' + PUNTOS + '"></polygon><text x="50" y="39">COVID</text></svg><span class="tip" role="tooltip">' + TIP + '</span>';
+  s.addEventListener('click', (e) => { e.stopPropagation(); const ab = s.classList.contains('abierto'); document.querySelectorAll('.covid.abierto').forEach((x) => x.classList.remove('abierto')); if (!ab) s.classList.add('abierto'); });
+  s.addEventListener('keydown', (e) => { if (e.key === 'Escape') { s.classList.remove('abierto'); s.blur(); } });
+  return s;
+}
+document.addEventListener('click', () => document.querySelectorAll('.covid.abierto').forEach((x) => x.classList.remove('abierto')));
+
+// 1. tamaños
+const tam = document.getElementById('tamanos');
+[['s', 'chico: card de ejercicio'], ['m', 'mediano: cabecera de tabla'], ['l', 'grande: número de arriba']].forEach(([k, t]) => {
+  const f = document.createElement('figure'); f.appendChild(marca(k)); const c = document.createElement('figcaption'); c.textContent = t; f.appendChild(c); tam.appendChild(f);
+});
+
+// A. cards
+function cards(el, datos, sel) {
+  datos.forEach(([y, end]) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'fin-year' + (sel.includes(y) ? ' on' : '');
+    b.innerHTML = '<b>' + lab(y, end) + '</b><span class="t">Balance</span>';
+    if (enCovid(end)) b.appendChild(marca('s'));
+    el.appendChild(b);
+  });
+}
+cards(document.getElementById('cardsJuve'), J, [2020, 2021, 2022]);
+cards(document.getElementById('cardsAtalantaTel'), A, [2020, 2021]);
+
+// B. tabla
+(function () {
+  const t = document.getElementById('tablaJuve');
+  const col = J.slice(1, 6);
+  let h = '<thead><tr><th></th>' + col.map(([y, end]) => '<th scope="col"><span class="cab" data-y="' + y + '"><span class="m"></span>' + lab(y, end) + '</span></th>').join('') + '</tr></thead><tbody>';
+  h += '<tr><th scope="row">Ingresos (M EUR)</th>' + col.map((c) => '<td>' + fmt(c[2]) + '</td>').join('') + '</tr>';
+  h += '<tr><th scope="row">Variación</th><td>—</td>' + col.slice(1).map((c, i) => { const d = (c[2] / col[i][2] - 1) * 100; return '<td class="' + (d < 0 ? 'neg' : '') + '">' + (d > 0 ? '+' : '−') + Math.abs(d).toFixed(0) + '%</td>'; }).join('') + '</tr></tbody>';
+  t.innerHTML = h;
+  col.forEach(([y, end]) => { if (enCovid(end)) t.querySelector('.cab[data-y="' + y + '"] .m').replaceWith(marca('m')); else t.querySelector('.cab[data-y="' + y + '"] .m').remove(); });
+})();
+
+// C. KPI
+function kpi(el, nombre, datos, y) {
+  const i = datos.findIndex((d) => d[0] === y), d = datos[i], p = datos[i - 1];
+  const dv = (d[2] / p[2] - 1) * 100;
+  const l = document.createElement('div'); l.className = 'l'; l.append('Ingresos · ' + lab(d[0], d[1]));
+  if (enCovid(d[1])) l.appendChild(marca('l'));
+  const v = document.createElement('div'); v.className = 'v'; v.textContent = fmt(d[2]) + ' M EUR';
+  const dd = document.createElement('div'); dd.className = 'd'; dd.textContent = nombre + ' · vs. ' + lab(p[0], p[1]) + ' ' + (dv > 0 ? '+' : '−') + Math.abs(dv).toFixed(0) + '%';
+  el.append(l, v, dd);
+}
+kpi(document.getElementById('kpiJuve'), 'Juventus', J, 2021);
+kpi(document.getElementById('kpiAtalanta'), 'Atalanta', A, 2022);
+kpi(document.getElementById('kpiTel'), 'Atalanta', A, 2021);
+
+// tema
+const btn = document.getElementById('tema');
+btn.addEventListener('click', () => {
+  const oscuro = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.documentElement.setAttribute('data-theme', oscuro ? 'light' : 'dark');
+  btn.setAttribute('aria-pressed', String(!oscuro));
+  btn.textContent = oscuro ? 'Ver en modo oscuro' : 'Ver en modo claro';
+});
+</script>

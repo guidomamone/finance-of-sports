@@ -1,3 +1,19 @@
+# Sesión pantallas (Pantallas 6): mockup de la marca COVID (sin código)
+
+## Qué cambió (para CHANGELOG)
+- Mockup de la marca COVID (un estallido de historieta con la palabra) en `Prototyping/Covid/mockup-covid.html`, con números reales de Juventus y Atalanta: la marca en tres tamaños, dónde va (card de
+  ejercicio, cabecera de la tabla multi-año y número grande de arriba), el teléfono a 375 px, modo oscuro, texto alternativo, globo y teclado. La ventana se deriva de `cierreEjercicio()` (cierre entre
+  2020-03-31 y 2021-12-31), sin campo nuevo. No se tocó `index.html`, `js/` ni `css/`.
+
+## Qué queda (para TODO)
+- El ok de Guido al mockup; después, el código (helper compartido, `t()` en español e inglés, claves en `en.js`, `Admin/PANTALLA.md`) y verificar servido y como archivo.
+- Comparar, Ligas y el selector de ejercicio quedan para después de aprobar.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 6): Inicio sin conteos de lo cargado
 
 ## Qué cambió (para CHANGELOG)
