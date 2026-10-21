@@ -40,7 +40,7 @@ import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { abrirCache } from './respuestas-cache.mjs';
 import { derivado, ubicar } from './rutas.mjs';
-import { deporteODefecto, categoriasDeDeporte, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) el deporte del club: su lista de categorías y los ejemplos del mismo deporte primero
+import { deporteODefecto, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) el deporte del club: su lista de categorías y los ejemplos del mismo deporte primero
 import { paisDeClub, afinidad } from './pais-club.mjs'; // (to-do 331) el país del club en el texto y los ejemplos del mismo país primero
 import { lineasAprendidas } from './memoria-categorias.mjs';
 import vm from 'node:vm';
@@ -73,39 +73,25 @@ const readKey = () => {
 };
 
 // ---------------------------------------------------------------- categorías con descripción
-// La descripción sale del propio data/category-map.js (etiqueta + el comentario de cada categoría), no se reescribe acá.
-function loadCategories() {
-  const src = readFileSync(resolve(root, 'data', 'category-map.js'), 'utf8');
-  const block = (name) => { const a = src.indexOf(`const ${name} = [`); return src.slice(a, src.indexOf('];', a)); };
-  const labels = (name) => { const a = src.indexOf(`const ${name} = {`); const b = src.slice(a, src.indexOf('};', a)); return Object.fromEntries([...b.matchAll(/^\s*([a-z_]+):\s*'([^']*)'/gm)].map((m) => [m[1], m[2]])); };
-  const build = (arrName, labName) => {
-    const lab = labels(labName); const out = {};
-    for (const m of block(arrName).matchAll(/^\s*'([a-z_]+)',?\s*(?:\/\/\s*(.*))?$/gm)) {
-      const comment = (m[2] || '').replace(/\(Versión \d+[^)]*\)/g, '').replace(/\s+/g, ' ').trim();
-      const first = comment.split(/(?<=[.!?])\s/)[0].slice(0, 220);
-      out[m[1]] = [lab[m[1]] || m[1], first].filter(Boolean).join(' — ');
-    }
-    return out;
-  };
-  return { revenue: build('REVENUE_CATEGORIES', 'REVENUE_CATEGORY_LABELS'), expense: build('EXPENSE_CATEGORIES', 'EXPENSE_CATEGORY_LABELS') };
-}
-const CATS = loadCategories();
-const ALL = { ...Object.fromEntries(Object.entries(CATS.revenue).map(([k, v]) => [k, `INGRESO: ${v}`])), ...Object.fromEntries(Object.entries(CATS.expense).map(([k, v]) => [k, `GASTO: ${v}`])) };
-const sideOf = (cat) => (cat in CATS.revenue ? 'revenue' : cat in CATS.expense ? 'expense' : '?');
-// (to-do 339) Las categorías que Jev puede elegir son las de la taxonomía del DEPORTE del club (con la descripción de CATS cuando la hay), en el orden de CATS.
-// Para el fútbol es exactamente ALL. Un deporte sin taxonomía devuelve null: no se cae a la lista del fútbol.
+// (to-do 339) Las categorías que Jev puede elegir son las de la taxonomía del DEPORTE del club (tools/deporte-club.mjs, leerCategorias): etiqueta + la primera oración del
+// comentario de cada una en data/category-map.js; no se reescriben acá. Un deporte sin taxonomía devuelve null: no se cae a la lista del fútbol.
 const _criterios = new Map();
 function criteriosDe(deporte) {
   if (_criterios.has(deporte)) return _criterios.get(deporte);
-  const t = categoriasDeDeporte(deporte); let r = null;
-  if (t) {
-    const lado = {}; const todas = {};
-    for (const k of Object.keys(ALL)) if (t.todas.has(k)) { todas[k] = ALL[k]; lado[k] = sideOf(k); }
-    for (const [set, side, rot] of [[t.revenue, 'revenue', 'INGRESO'], [t.expense, 'expense', 'GASTO']]) for (const k of set) if (!(k in todas)) { todas[k] = `${rot}: ${k}`; lado[k] = side; }
+  const C = leerCategorias(deporte); let r = null;
+  if (C) {
+    const todas = {}; const lado = {};
+    for (const [side, rot] of [['revenue', 'INGRESO'], ['expense', 'GASTO']]) for (const [k, v] of Object.entries(C[side])) {
+      const first = v.desc.split(/(?<=[.!?])\s/)[0].slice(0, 220);
+      todas[k] = `${rot}: ${[v.label, first].filter(Boolean).join(' — ')}`; lado[k] = side;
+    }
     r = { todas, lado };
   }
   _criterios.set(deporte, r); return r;
 }
+// El lado de una categoría para el informe y el backtest: la de cualquier deporte con taxonomía (el fútbol primero; un id compartido tiene el mismo lado en todos).
+const LADOS = {}; for (const d of [...new Set(['futbol', ...deportesConTaxonomia()])]) { const c = criteriosDe(d); if (c) for (const [k, l] of Object.entries(c.lado)) LADOS[k] ??= l; }
+const sideOf = (cat) => LADOS[cat] || '?';
 
 // ---------------------------------------------------------------- llamada a Jev
 let stopAll = null;

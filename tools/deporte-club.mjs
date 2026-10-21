@@ -58,6 +58,30 @@ export function categoriasDeDeporte(deporte) {
   if (t) { const revenue = new Set(Object.keys(t.revenue || {})); const expense = new Set(Object.keys(t.expense || {})); r = { revenue, expense, todas: new Set([...revenue, ...expense]), version: t.version }; }
   _cats.set(deporte, r); return r;
 }
+// Las subcategorías de un deporte CON su rótulo y su comentario (el criterio curado de cada una), leídas de las listas que SPORT_TAXONOMIES[deporte].lists nombra en
+// data/category-map.js (REVENUE_CATEGORIES para el fútbol, RUGBY_REVENUE_CATEGORIES para el rugby...): { revenue: { id: { label, desc } }, expense: {...} } en el orden de la
+// lista, o null si el deporte no tiene taxonomía. `desc` sin la marca «(Versión N…)». Es el formato que ya leían jev-categorizar.mjs y categorizar-claude.mjs.
+const _leidas = new Map();
+export function leerCategorias(deporte) {
+  if (_leidas.has(deporte)) return _leidas.get(deporte);
+  const t = taxonomias()[deporte]; let r = null;
+  if (t) {
+    const src = readFileSync(resolve(ROOT, 'data', 'category-map.js'), 'utf8');
+    const lists = t.lists || { revenue: ['REVENUE_CATEGORIES', 'REVENUE_CATEGORY_LABELS'], expense: ['EXPENSE_CATEGORIES', 'EXPENSE_CATEGORY_LABELS'] };
+    const block = (name) => { const a = src.indexOf(`const ${name} = [`); return src.slice(a, src.indexOf('];', a)); };
+    const labels = (name) => { const a = src.indexOf(`const ${name} = {`); const b = src.slice(a, src.indexOf('};', a)); return Object.fromEntries([...b.matchAll(/^\s*([a-z_]+):\s*'([^']*)'/gm)].map((m) => [m[1], m[2]])); };
+    r = {};
+    for (const side of ['revenue', 'expense']) {
+      const [arr, lab] = lists[side]; const L = labels(lab); const out = {};
+      for (const m of block(arr).matchAll(/^\s*'([a-z_]+)',?\s*(?:\/\/\s*(.*))?$/gm)) out[m[1]] = { label: L[m[1]] || m[1], desc: (m[2] || '').replace(/\(Versión \d+[^)]*\)/g, '').replace(/\s+/g, ' ').trim() };
+      for (const k of Object.keys(t[side] || {})) if (!(k in out)) out[k] = { label: L[k] || k, desc: '' }; // en la taxonomía pero no en la lista: va igual
+      r[side] = out;
+    }
+  }
+  _leidas.set(deporte, r); return r;
+}
+// El bolsón «sin desglosar por la fuente» del deporte: { revenue, expense } (ids de subcategoría), o null si el deporte no tiene taxonomía o no declara bolsón.
+export function bolsonDeDeporte(deporte) { const l = taxonomias()[deporte]?.lump; return l ? { revenue: l.revenue, expense: l.expense } : null; }
 // ¿Esta categoría existe en la taxonomía del deporte del club? Sin taxonomía del deporte, no (nunca se asume que sí).
 export function categoriaValidaParaClub(clubId, categoria) {
   const c = categoriasDeDeporte(deporteODefecto(clubId)); return Boolean(c && c.todas.has(categoria));

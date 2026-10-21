@@ -129,7 +129,7 @@ const { padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca } = await im
 // generales" y no "admin_general_expense".
 const NOMBRE_CAT = (() => { try { const t = readFileSync(resolve(import.meta.dirname, '..', 'data', 'category-map.js'), 'utf8'); const o = {}; for (const b of t.match(/_CATEGORY_LABELS = \{[\s\S]*?\n\};/g) || []) for (const m of b.matchAll(/^\s*(\w+): '([^']+)'/gm)) o[m[1]] = m[2]; return o; } catch { return {}; } })();
 const { periodoDe } = await import('./periodo.mjs');
-const { categoriasDeDeporte, cerosDeDeporte } = await import('./deporte-club.mjs'); // (to-do 339) las categorías de un deporte
+const { categoriasDeDeporte, cerosDeDeporte, bolsonDeDeporte } = await import('./deporte-club.mjs'); // (to-do 339) las categorías de un deporte
 const { normalizar, claveFamilia, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } = await import('./vocabulario.mjs');
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -1084,7 +1084,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // el motivo (la nota de Guido en la cola, si la hay). Hoy la página no lee este campo: es la marca para que otra sesión muestre "No
   // declarado" en las categorías que esa línea esconde (UC 2025: los sueldos del plantel están adentro del costo de ventas). Las sumas no
   // cambian: el importe está una sola vez, en la línea.
-  const sinDesglose = [...rev, ...exp].filter((f) => /^lump_football_operations/.test(f.cat || '')).map((f) => ({ renglon: f.label, lado: f.destino, importe: r6(Math.abs(f.amountNative ?? f.native ?? 0)), motivo: f.notaGuido || 'el documento no desglosa este renglón' }));
+  const sinDesglose = [...rev, ...exp].filter((f) => { const b = bolsonDeDeporte(club.sport); return b && (f.cat === b.revenue || f.cat === b.expense); }).map((f) => ({ renglon: f.label, lado: f.destino, importe: r6(Math.abs(f.amountNative ?? f.native ?? 0)), motivo: f.notaGuido || 'el documento no desglosa este renglón' }));
   // (Versión 525, to-do 140(h), aprobado por Guido el 2026-10-05) DE DÓNDE SALIÓ CADA DATO DE LAS ESCALERAS CHICAS: el texto que ya arma
   // alta-club.mjs para cada campo (año, cierre, perímetro, moneda, tipo de cambio, liga), más lo que cargar.mjs decidió encima (perímetro
   // por ajuste, heredado o por la cola). Solo registro: no cambia ninguna decisión. Lo junta `node tools/estado.mjs --escalones`.
