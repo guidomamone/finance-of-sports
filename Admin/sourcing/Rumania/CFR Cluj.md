@@ -9,3 +9,10 @@
 - **Cómo se encontró**: página viva (solo la última tanda) + Wayback CDX de `cfr1907.ro` (`wp-content/uploads/2019/04/*`, `2024/04/*`).
 - **Pendiente**: 2018 y anteriores no buscado. Confirmar al transcribir qué consolida el "consolidat" 2024-25.
 - Último chequeo: 2026-10-03.
+
+## 2026-10-21: la cuenta de resultados consolidada 2024 SÍ existe y está bajado
+
+- `cpp-consolidat-2024.pdf` era la página «Wayback Machine» de un archivo no capturado (HTML con extensión `.pdf`), no el documento. Se renombró a `cpp-consolidat-2024-pagina-html.html` (no se borró).
+- El documento real: `https://cfr1907.ro/wp-content/uploads/2025/03/Contul-de-profit-si-pierdere-consolidat-2024.pdf` (subido en marzo de 2025, hoy sigue vivo en el sitio del club: 200, `application/pdf`, 428.058 bytes; Wayback lo tiene en la captura 2025-11-21). Es un PDF de 1 página, **un escaneo (una imagen JPEG de 3508×2480 a 300 dpi, sin capa de texto)**: hay que transcribirlo con OCR. Guardado como `Clubes/Rumania/CFR Cluj/cpp-consolidat-2024.pdf` (el mismo nombre, ahora PDF de verdad; `file` lo confirma).
+- Es el CPP «consolidat» de 2024 por separado; el 2025 (`bilant-2025.pdf` + `contul-de-profit-si-pierderi-2025.pdf`, también rotulado consolidado) lo trae de comparativo. Falta el balance consolidado 2024: no apareció uno propio en la CDX (`wp-content/uploads/2025/03/`).
+- Último chequeo: 2026-10-21.

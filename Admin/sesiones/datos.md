@@ -2,6 +2,12 @@
 
 **Estado: relevamiento hecho y descarga hecha con la opción (c)** (completas de los últimos 3 cierres, aprobada por la principal): **69 archivos `.xhtml`, 45,5 MB en disco (6,1 MB por la red)**, ya en `Clubes/` de este worktree y copiados a `Clubes/` de main. Los `.xhtml` están ignorados por git: no viajan con el merge. Nada se cargó. Después, con el ok de Guido en el chat, se bajó el resto: **198 archivos en total, 84,0 MB**, todos ya en main (ver «Descarga del resto»).
 
+## Los 2 «PDF» que eran HTML (con el ok de Guido, vía la principal)
+
+- **CFR Cluj consolidado 2024: resuelto.** El real es `https://cfr1907.ro/wp-content/uploads/2025/03/Contul-de-profit-si-pierdere-consolidat-2024.pdf` (vivo en el sitio del club): PDF de 1 página, escaneo sin capa de texto (OCR). Ya está en main como `Clubes/Rumania/CFR Cluj/cpp-consolidat-2024.pdf` (`file` lo confirma); el HTML quedó como `cpp-consolidat-2024-pagina-html.html`.
+- **Unión Magdalena dictamen 2021: no se pudo.** El servidor de SIIS bloquea la URL del archivo (su nombre real es `1%%7p601!.PDF` y el servidor responde 500 «URL blocked» a cualquier codificación, también desde el visor del propio portal). El HTML se renombró a `dictamen-revisor-fiscal-2021-pagina-html.html` en main; no hay un PDF real que reemplazarlo. Detalle y qué queda en `Admin/sourcing/Colombia/Union Magdalena.md`.
+- Quité de mi worktree el enlace roto a `dictamen-revisor-fiscal-2021.pdf` (apuntaba al archivo que se renombró en main).
+
 ## Archivos bajados (para Onboarding)
 
 Cada uno salió del ZIP mensual del Accounts Data Product (pedido por rango, inflado y comprobado contra el tamaño del índice), a una carpeta nueva y vacía, tratado como dato no confiable (no se ejecutó nada) y movido con el nombre del PDF que ya existe de ese ejercicio y extensión `.xhtml` (Gillingham 2022-23 no tenía PDF de ese año con ese patrón: `gillingham-00039175-accounts-2022-23.xhtml`). Todos son cuentas completas (Full, Group, Medium).

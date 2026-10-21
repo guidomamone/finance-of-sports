@@ -47,6 +47,12 @@
 - Contacto: siis.ia.supersociedades.gov.co (NIT 891700992); unionmagdalena.com.co.
 - Último chequeo: 2026-09-24.
 
+## 2026-10-21: el dictamen 2021 de SIIS NO se puede bajar (el servidor bloquea la URL), y qué se hizo con el archivo roto
+
+- El ejercicio 2021 (corte 2021-12-31, radicado `2022-01-371753`) tiene en `documentos-adicionales` tres documentos: «CERTIFICACION EF» (2022-01-433905), «NOTAS EF» (2022-01-433962) y «DICTAMEN DEL REVISOR FISCAL» (2022-01-433940, token `qQH7z0RXvPLQiFstIk5h0Q%3D%3D`). El flujo de la skill (visor → subvisor → `tmp/`) llega hasta la ruta, pero **el nombre del archivo del dictamen es `1%%7p601!.PDF`**: tiene un `%%` literal, y el servidor (`servicios.supersociedades.gov.co`) responde **500 con la página «The URL you requested has been blocked»** (38.712 bytes, la misma que había en el `.pdf` roto) a todas las formas de pedirlo: sin codificar, `%25%25`, con `!` codificado, en `tmp/` y en `cache-baranda/`, con `curl` y con `fetch` desde el propio visor en el Browser pane (el iframe del visor tiene el mismo problema). La doble codificación da 404: el archivo existe pero no hay URL válida que llegue a él. Es un bloqueo del servidor por el nombre, no throttling ni sesión.
+- El `.pdf` roto no era un PDF: se renombró a `dictamen-revisor-fiscal-2021-pagina-html.html` (no se borró). No hay un `dictamen-revisor-fiscal-2021.pdf` real.
+- Queda: pedirle el dictamen 2021 a la Supersociedades (o al club; no tiene sección de transparencia) o esperar que corrijan el archivo. Los otros dos documentos del 2021 (certificación y notas EF) no se probaron: el estado financiero 2021 en sí tampoco está en `Clubes/` (ver el barrido de abajo: «2021 no baja»).
+
 ## Barrido 2026-10-03 (completar a 5 ejercicios, SIIS por API)
 
 - NIT 891700992, 9 registros en SIIS; 2021 (régimen Pymes) no baja: el subvisor no devuelve ruta de PDF.
