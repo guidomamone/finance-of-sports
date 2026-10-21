@@ -313,3 +313,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: to-do 341 (estadio-sponsor de rugby y prompts con el deporte), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`: `estadio-sponsor.mjs` con la ficha de rugby, APROBADO (y recomendación de NO sumar `gb-premiershiprugby` a `SOLO_ESTADIO`); los prompts de lectura con el deporte del club, APROBADO CON UN CAMBIO.
+
+### Qué queda (para TODO / 341)
+
+- `lote.mjs`: el tramo que corre `alta-club` para llenar el registro de altas tiene que ir antes de `localizar` (hoy está después de `extraer`); si no, un club nuevo de fútbol lee con «clubes de deporte».
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
