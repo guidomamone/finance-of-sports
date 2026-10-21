@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 914 — Sin <base> en index.html: fosUrl() arma las rutas (2026-10-21) [340]
+
+- `js/i18n.js` calcula la raíz del sitio desde la URL de su script y expone `fosUrl()`; lo usan las cargas dinámicas y los links que arma el JS. `index.html` sin `<base>` ni script de base. Probado como archivo en Brave (portada con estilos) y servido: portada → J1 League → Kawasaki Frontale carga, `/club/...` directo. ASSET_V 1564.
+
 ## Versión 913 — El sitio vuelve a abrirse como archivo (2026-10-21) [340]
 
 - `index.html` ya no tiene un `<base>` fijo: lo escribe un script solo cuando la página se sirve por http(s). Anda abierto desde el disco (visto en Brave) y en `/liga/<id>` navegando desde la portada. Las páginas de `club/` y `liga/` conservan su `<base>`. ASSET_V 1563. Regla: lo que se tiene que cumplir va a un chequeo (`audit.js` o el hook), no a la memoria de una sesión (`Admin/CONVENCIONES.md`).

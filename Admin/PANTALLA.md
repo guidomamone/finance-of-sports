@@ -214,7 +214,8 @@ que pide el periodista. No se extiende a otros cards.
 **El sitio tiene que andar de dos maneras, y se prueban las dos antes de pedir el merge:** servido (el preview de `launch.json`, y
 `/club/<id>` y `/liga/<id>` directos y navegando desde la portada) y **abierto como archivo** (`file:///…/finance-of-sports/index.html`
 en el navegador, que es como Guido lo mira a veces). Por eso `index.html` no lleva un `<base>` fijo ni rutas que empiecen con `/`: con `file://` la raíz es la del disco y la
-página sale sin estilos ni scripts. El `<base href="/">` lo escribe un script al principio del `<head>` solo si la página se sirve por http(s). Pasó de verdad: un `<base href="/">` arregló `/liga/<id>` y rompió
+página sale sin estilos ni scripts. Las cargas dinámicas y los links que arma el JS pasan por `fosUrl()` de `js/i18n.js`, que calcula la raíz desde la URL del
+propio script (`FOS_RAIZ`): anda servido y como archivo. Solo las páginas generadas de `club/` y `liga/` llevan `<base>`. Pasó de verdad: un `<base href="/">` arregló `/liga/<id>` y rompió
 abrir el archivo. `audit.js` lo chequea (`index-file-roto`).
 
 La cuenta a mano (verificar que `revenueLines`/`expenseLines` suman el total impreso del documento)
