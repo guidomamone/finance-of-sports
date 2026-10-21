@@ -110,6 +110,18 @@ En el paso 4, como primer punto de la lista:
    - Recorrer `referencia/ux.md` entera y anotar en la nota de la sesión qué punto no aplica o no se pudo probar. Sin eso no se pide el merge.
 ```
 
+Cómo quedan los dos pasos con esas líneas puestas (el mismo texto, nada más):
+
+```markdown
+2. **Mockup antes de código.** Antes de dibujar, leé `referencia/marca.md` (tono, paleta, cómo se marca un estado, lo que no se hace y la prueba del diario): un mockup que no la pasa no se muestra. Leé también `referencia/ux.md` (navegación, URL y atrás, foco, toques, carga y estados, lo que se mantiene al volver): el mockup muestra cómo cumple cada punto que toca. Un cambio que se ve (un card, una tabla, un flujo) se dibuja primero en `Prototyping/<Tema>/mockup-N.html` con números reales del motor, o en el artifact de Design «Pantallas FoS». Guido lo ve y dice sí o no. Sin su ok no se construye. Si dice no, se rehace el mockup, no el código.
+```
+
+```markdown
+4. **Verificar, siempre, sin pedirle a Guido que mire:**
+   - Recorrer `referencia/ux.md` entera y anotar en la nota de la sesión qué punto no aplica o no se pudo probar. Sin eso no se pide el merge.
+   - `preview_start` y recarga con `?cb=<nuevo>` (subí `ASSET_V` si tocaste `js/` o `data/`).
+```
+
 ---
 
 ## 3. Lo que esta guía deja como pendiente (para `Admin/TODO.md`, si Guido la aprueba)
