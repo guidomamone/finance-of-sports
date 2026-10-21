@@ -28,7 +28,7 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 241: cuando se publique, probar el link en el depurador de Facebook y en Google (lo demás ya está)
+1. 241: publicado y andando; falta que Guido pruebe el link en el depurador de Facebook (pide su cuenta)
 
 **B. Pantallas y distribución**
 2. 247 (Pantallas 7): registro público de correcciones (ok de Guido a las 4 recomendaciones del plan)
