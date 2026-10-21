@@ -16,7 +16,7 @@ const FIN_CONTEXTO = (function(){
     // Un país sin archivo es un país sin dato: el error de carga no se avisa.
     if(!pedidos[pais]) pedidos[pais] = new Promise(res => {
       const s = document.createElement('script');
-      s.src = 'data/contexto/' + pais + '.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = fosUrl('data/contexto/' + pais + '.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
       s.onload = res; s.onerror = res;
       document.head.appendChild(s);
     });

@@ -16,7 +16,7 @@ const SPONSOR_VIEW = (function(){
     if(window.SPONSORS) return Promise.resolve();
     if(!pedido) pedido = new Promise(res => {
       const s = document.createElement('script');
-      s.src = 'data/sponsors.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = fosUrl('data/sponsors.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
       s.onload = res; s.onerror = () => { console.error('[sponsor] no cargó data/sponsors.js'); res(); };
       document.head.appendChild(s);
     });
@@ -29,7 +29,7 @@ const SPONSOR_VIEW = (function(){
     if(window.SPONSORS_INDICE) return Promise.resolve();
     if(!pedidoIndice) pedidoIndice = new Promise(res => {
       const s = document.createElement('script');
-      s.src = 'data/sponsors-indice.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = fosUrl('data/sponsors-indice.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
       s.onload = res; s.onerror = () => { console.error('[sponsor] no cargó data/sponsors-indice.js'); res(); };
       document.head.appendChild(s);
     });
