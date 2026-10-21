@@ -31,8 +31,8 @@ el número de la izquierda es el orden de trabajo.
 1. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar
 2. 345 (Onboarding 8): lote 130 de documentos en mano y Girona 2021-23 (~US$5,50); los daneses en XHTML, cuando esté el lector
 3. 345 (Pipeline 13): lector del XHTML danés, con el diseño aprobado por la Auditora
-4. 347 (Pipeline 13): `linea-duplicada` sin la rama P3 «con montos distintos» (falso positivo, decisión de la Auditora)
-5. 347 (Auditora 4): primera corrida del proceso de P2 y P3, con `linea-duplicada` (927)
+4. 347 (Pipeline 13): `preparar` saca los enlaces rotos de `Clubes/`; después, el consolidado de FC København 2025
+5. 347 (Auditora 4): segunda corrida del proceso de P2 y P3, con `catchall-dominante` (256); la primera bajó `linea-duplicada` de 927 a 0
 6. 349: OpenSEO, Book to Skill y Open Generative AI (faltan tus links)
 
 **C. Técnico**
