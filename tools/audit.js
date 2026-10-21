@@ -1844,6 +1844,7 @@ function pruebaDeDeporte(api) {
 // cargado ni figura en data/faltantes/ con ningún estado (buscado, en-mano, sin-buscar: esos ya tienen su lugar). Cubre el hueco entre dos ejercicios y la cola hasta el último año del país.
 // P3 por club, con la lista de años. Se silencia por club en tools/audit-ignore.json, con motivo, después de mirarlo. Medido al nacer: 84 club-años en 51 clubes (24 de hueco y 60 de cola).
 function checkEjercicioSinRastro() {
+  const RECIENTE_MESES = 9; // el mismo de tools/faltantes-liga.mjs (Guido, 2026-10-17): si cambia allá, cambia acá (el .mjs corre su main al importarlo)
   const dirFal = path.join(ROOT, 'data/faltantes');
   if (!fs.existsSync(dirFal)) return;
   const enFaltantes = {}; // clubId -> Set de años, con cualquier estado
@@ -1861,7 +1862,7 @@ function checkEjercicioSinRastro() {
     const anios = (j.years || []).map((y) => y.fiscal_year).filter((y) => Number.isFinite(y));
     if (!anios.length) continue;
     const iso = path.basename(path.dirname(rj));
-    clubes.push({ id: j.club.id, iso, anios });
+    clubes.push({ id: j.club.id, iso, anios, cruza: j.club.fiscal_year_start !== '01-01' });
     // El máximo del país no cuenta presupuestos puros (official_budget): un presupuesto no es un balance cargado (Auditora 4: 51 -> 38 clubes).
     const reales = (j.years || []).filter((y) => y.report_type !== 'official_budget').map((y) => y.fiscal_year).filter((y) => Number.isFinite(y));
     maxPais[iso] = Math.max(maxPais[iso] || 0, ...reales);
@@ -1869,7 +1870,13 @@ function checkEjercicioSinRastro() {
   for (const c of clubes.sort((a, b) => a.id.localeCompare(b.id))) {
     const tiene = new Set(c.anios); const fal = enFaltantes[c.id] || new Set();
     const ultimo = Math.max(...c.anios); const hueco = []; const cola = [];
-    for (let y = Math.min(...c.anios); y <= maxPais[c.iso]; y++) if (!tiene.has(y) && !fal.has(y)) (y < ultimo ? hueco : cola).push(y);
+    for (let y = Math.min(...c.anios); y <= maxPais[c.iso]; y++) {
+      if (tiene.has(y) || fal.has(y)) continue;
+      // Un año cerrado hace menos de RECIENTE_MESES todavía no lo publicó nadie: no es una falta (misma cuenta que tools/faltantes-liga.mjs). La salida depende de la fecha de hoy.
+      const cierre = new Date(Date.UTC(y, c.cruza ? 5 : 11, c.cruza ? 30 : 31));
+      if ((new Date() - cierre) / (1000 * 60 * 60 * 24 * 30.44) < RECIENTE_MESES) continue;
+      (y < ultimo ? hueco : cola).push(y);
+    }
     if (!hueco.length && !cola.length) continue;
     const partes = [];
     if (hueco.length) partes.push(`hueco ${hueco.join(', ')}`);

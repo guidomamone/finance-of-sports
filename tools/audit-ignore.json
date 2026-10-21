@@ -829,5 +829,45 @@
   "code": "coma-comida",
   "match": "everton-group-accounts-2024-25.md L157",
   "motivo": "VERIFICADO (to-do 339 c, Auditora 4): Other commercial 22.9 | 17.0 | 5.9; la cifra dañada es la del año anterior. Los años cargados de Everton salen del estado de resultados y coinciden con la cifra buena."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "acmilan-it:",
+  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Italia/AC Milan.md): el sitio oficial publica solo desde 2017/18 y Wayback no capturó los PDF de dic-2014, dic-2015 y dic-2016; la prensa los comenta sin el documento."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "almagro-ar:",
+  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Argentina/Almagro.md): sitio y Wayback agotados hasta 2026; el regulador (IGJ) exige clave fiscal y pago. Sin documento publicado del ejercicio 2024."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "chievoverona-it:",
+  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Italia/Chievo Verona.md): el club dejó de existir en 2021; su sitio está muerto y Wayback no tiene balances posteriores a 2016."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "ferrocarriloeste-ar:",
+  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Argentina/Ferro Carril Oeste.md): el ejercicio 120 (2023-24) solo existe como memoria narrativa, sin estados contables; sitio, Wayback y búsqueda agotados."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "lazio-it:",
+  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Italia/Lazio.md): 2001/02 y 2002/03 sin encontrar; el sitio no publica el histórico anterior a 2006/07 y el listado de Borsa Italiana carga por JS."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "losandes-ar:",
+  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Argentina/Los Andes.md): el archivo oficial llega al ejercicio 105 (2020-21); chequeos del 2026-09-12 y 09-22, sin ejercicio 106 o posterior en el dominio."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "osasuna-es:",
+  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/España/CA Osasuna.md): 2022-23 solo se publica como memoria no financiera (memoria2023.pdf); las cuentas del ejercicio no están."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "sampdoria-it:",
+  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Italia/Sampdoria.md): los fascicoli 2022-2025 no se publican; sitio y Wayback agotados."
  }
 ]
