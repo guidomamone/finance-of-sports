@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 885 — La app esconde la página estática del 241 (2026-10-20) [241]
+
+- `js/principal.js` esconde `#pagina-estatica` al arrancar, si existe (el bloque sin JS que va a generar Pipeline en `/club/<id>` y `/liga/<id>`). ASSET_V 1531.
+
 ## Versión 884 — Estonia sin estimados; grandes ligas con Mistral (2026-10-20) [270 · 337 · 332]
 
 - 270: `PAISES_SIN_ESTIMAR` en `tools/estimar.mjs` (hoy `ee`): Estonia deja de tener estimados en Ligas; las otras 49 ligas no cambian. ASSET_V 1530.
