@@ -164,7 +164,8 @@ function modeloOpusConOk() {
 function worktreeSinPermissionMode() {
   if (herramienta !== HERRAMIENTA_INICIAR) return;
   if (params.permission_mode && params.permission_mode !== 'auto') {
-    decidir('ask', `start_session con permission_mode «${params.permission_mode}»: una sesión de worktree hereda el modo auto y con acceptEdits pide permiso para todo. Omití permission_mode; ¿Guido pidió ese modo?`);
+    try { appendFileSync(join(cwd, 'Admin', 'registros', '.hooks-disparos.jsonl'), JSON.stringify({ ts: new Date().toISOString(), chequeo: 'worktree-sin-permission-mode', modo: params.permission_mode }) + '\n'); } catch { /* sin carpeta */ }
+    decidir('deny', `start_session con permission_mode «${params.permission_mode}»: una sesión de worktree va en auto (con acceptEdits pide permiso para todo). Usá auto u omitilo.`);
   }
 }
 
@@ -181,11 +182,16 @@ function memoriaNoEsRegla() {
   }
 }
 
-// comando-que-edita (ask, no deny): sed -i, perl -i y python que escriben se reemplazan por Edit o Write. Cada disparo se anota para medir cuántas veces pasa.
+// comando-que-edita (deny: corrige a la sesión, no le pregunta a Guido): sed -i, perl -i y un python en línea que ESCRIBE archivos se reemplazan por
+// Edit o Write. Un python que solo lee (contar, filtrar una salida) pasa, y uno que escribe solo en el scratchpad de la sesión también. Cada disparo se anota.
+const PY_ESCRIBE = /\bopen\([^)]*,\s*['"][wax]|\.write_text\(|\.write_bytes\(|\bshutil\.|\bos\.(?:rename|replace|remove|unlink)\b/;
 function comandoQueEdita(cmd) {
-  if (!/\b(?:sed|perl)\s+(?:-\w+\s+)*-i\b|\bpython3?\s+(?:-[ce]\b|-\s*<<)/.test(cmd)) return;
+  if (/^\s*git\s+commit\b/.test(cmd) || /\/tmp\/claude-\d+\//.test(cmd)) return; // un mensaje de commit no edita; el scratchpad no es el repo
+  const sedPerl = /\b(?:sed|perl)\s+(?:-\w+\s+)*-i\b/.test(cmd);
+  const py = /\bpython3?\s+(?:-[ce]\b|-\s*<<)/.test(cmd) && PY_ESCRIBE.test(cmd);
+  if (!sedPerl && !py) return;
   try { appendFileSync(join(cwd, 'Admin', 'registros', '.hooks-disparos.jsonl'), JSON.stringify({ ts: new Date().toISOString(), chequeo: 'comando-que-edita', cmd: cmd.slice(0, 120) }) + '\n'); } catch { /* sin carpeta */ }
-  decidir('ask', 'Editar con `sed -i`, `perl -i` o un script de python por Bash salta el seguimiento de cambios: usá Edit o Write. ¿Hace falta este comando?');
+  decidir('deny', 'Editá con Edit o Write; una transformación en masa va en un archivo de script que se corre.');
 }
 
 function pushConOk(cmd) {
