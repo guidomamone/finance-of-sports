@@ -1762,7 +1762,7 @@ function checkComaComida() {
   const TOK = '(\\(?-?\\d+\\.\\d\\)?|\\(?-?\\d+\\)?)';
   const re = new RegExp('^[|\\s]*([A-Za-z][^|\\d]{2,60}?)[|\\s]+' + TOK + '[|\\s]+' + TOK + '[|\\s]+' + TOK + '[|\\s]*$');
   const cierra = (a, b, c) => Math.abs(a - b - c) <= 0.051 || Math.abs(b - a - c) <= 0.051;
-  const walk = (d) => { for (const e of fs.readdirSync(d)) { const f = path.join(d, e); const st = fs.statSync(f); if (st.isDirectory()) walk(f); else if (f.endsWith('.md')) leer(f); } };
+  const walk = (d) => { for (const e of fs.readdirSync(d)) { const f = path.join(d, e); const st = fs.statSync(f, { throwIfNoEntry: false }); if (!st) continue; /* un enlace a un PDF que ya no está (worktree) */ if (st.isDirectory()) walk(f); else if (f.endsWith('.md')) leer(f); } };
   const leer = (f) => {
     fs.readFileSync(f, 'utf8').split('\n').forEach((l, i) => {
       const m = l.match(re); if (!m) return;
