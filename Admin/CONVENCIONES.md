@@ -81,7 +81,8 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     (qué quedó, qué pide, cuánto gastó), y el detalle va en la nota de la sesión, no en el chat.
   - **No se transcriben PDFs nuevos, salvo las grandes ligas** (Guido). Se cargan los documentos que ya tienen `.md`; arreglar o validar
     un `.md` que ya existe sí vale. La excepción: Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera
-    argentina, que se completan transcribiendo con Mistral. Fuera de esas ligas, un documento sin `.md` se deja.
+    argentina, que se completan transcribiendo con Mistral, y Bath Rugby (la prueba de la taxonomía por deporte). Fuera de eso, un
+    documento sin `.md` se deja.
   - **Un documento que la localización ya marcó `sin_estado` no se vuelve a correr** con `--rehacer` ni `--reintentar`: el ensayo ya
     lo avisa a costo 0, y reintentar no hace aparecer una tabla que el `.md` no tiene (Auditora, 2026-10-20; Colombia corrió tres veces por eso).
   - **El número de lote lo da la principal.** Las listas de corrida (`Admin/registros/.lote-lista-actual.txt` y compañía) son de cada

@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 891 — Informes al abrir una liga; Bath Rugby para probar el 248 (2026-10-20) [336 · 248 · 327]
+
+- Skill `club-sourcing`, sección 0.4: al abrir una liga se buscan sus informes agregados y se suman a `data/informes.js`; `club-or-year-onboarding` manda ahí (ok de Guido). 336 cerrado.
+- Regla: Bath Rugby se puede transcribir con Mistral, como prueba de la taxonomía por deporte (248). 327: Guido aprueba los 6 frenos del hook.
+
 ## Versión 890 — Informes de 7 ligas más; el link propio publicado (2026-10-20) [336 · 241]
 
 - 336: `data/informes.js` pasa de 3 a 10 informes públicos con una cifra leída del documento: DFL, LaLiga, ReportCalcio, EY Brasil, Toppfotballbarometeret, Supersociedades y J.League. Sin informe usable en otras 16 ligas (`Admin/sesiones/datos-sourcing.md`). US$ 0. ASSET_V 1535.

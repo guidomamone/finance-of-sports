@@ -364,6 +364,18 @@ reales, no un árbol de decisión: la mayoría de los clubes caen limpio en uno 
   `Admin/sourcing/<País>/_notas-generales.md`; los pendientes de sourcing de un país no van a `Admin/TODO.md`)
   en vez de hacerlo a medias adentro de una sesión que tiene otro objetivo.
 
+### 0.4 Informes agregados de la liga (al abrir una liga nueva)
+
+Cuando se abre una liga (hay ranking en `data/rankings/`), buscar los informes públicos que resumen las finanzas de sus clubes y sumarlos a `data/informes.js`. Es una lista de lectura: ningún número de ahí entra en un ranking.
+
+1. **Dónde mirar, en este orden:** la liga o la federación (informe económico anual; en Alemania la DFL, en España LaLiga, en Noruega Norsk Toppfotball con Deloitte); el regulador o el registro (Supersociedades en Colombia); la propia UEFA (el ECFIL ya está para toda liga de Europa: no se repite); una consultora (Deloitte, EY, KPMG Football Benchmark). Búsqueda: `<liga o país> informe económico financiero clubes <año>`, y el sitio de la liga y de la federación.
+2. **Se abre el PDF o la página** y se confirma que es público y baja sin registro. Un informe de pago, con registro o que solo existe en prensa no se suma. Un informe que no se pudo abrir no entra, aunque la prensa lo cite.
+3. **Una cifra de contexto, leída del documento** (no de la prensa), con su año y su fuente; si el informe es un borrador, `borrador: true`.
+4. **Alta en `data/informes.js`** con el formato de las entradas existentes (`ambito`, `ligas`, `cubre`, `frase`, `cifra`, `url`, `urlTipo`; textos `{es, en}`). Sin opinión propia. Cada edición nueva reemplaza a la anterior.
+5. **El PDF y su texto** van a `Admin/sourcing/<País>/`, sin trackear (`.gitignore`). Si hace falta leer un PDF largo, `pdftotext -layout` primero; Mistral solo si es un escaneo.
+6. **Si no hay informe:** una línea en `Admin/sourcing/<País>/_notas-generales.md` con qué se buscó y por qué no sirvió (REGLA 2 de `Admin/sourcing/README.md`). No se inventa un informe para llenar la liga.
+7. Subir `ASSET_V` y correr `generate-fuentes-page.js` y `generate-club-pages.js`.
+
 ## Gotchas de tooling (no de ningún portal)
 
 - **`tesseract` no puede leer de `/tmp`.** En este entorno, `tesseract /tmp/x.png stdout` falla con

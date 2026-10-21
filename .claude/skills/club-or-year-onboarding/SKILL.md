@@ -148,6 +148,7 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 ## 7. Lo que el pipeline no cubre
 
 - **Club nuevo:** color de marca, chequeo contra el escudo y liga de cada temporada, a mano: `club-nuevo.md`, en esta misma carpeta.
+- **Liga nueva** (su primer ranking en `data/rankings/`): buscar los informes que resumen sus finanzas, `club-sourcing`, sección 0.4.
 - **Presupuestos:** `localizar.mjs` no los elige, así que el pipeline no los carga. A mano: `Admin/ARQUITECTURA.md` (ex §11, presupuesto y
   balance del mismo año) y `Admin/CONVENCIONES.md` (ex §15, presupuesto en año calendario).
 - **Buscar el PDF:** skill `club-sourcing`.
