@@ -144,3 +144,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: frenado de Bath en `verificar.mjs`, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: el cambio de `verificar.mjs` (el ajuste manual `desglose` se prueba antes de `cerrarNota()`), APROBADO; Pipeline 11 puede commitearlo en `onboarding`.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
