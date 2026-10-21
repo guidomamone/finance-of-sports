@@ -21,6 +21,10 @@ Toda mejora a una tool del pipeline pasa por la Auditora antes del commit, adem�
 
 **Dónde queda.** El veredicto en `Admin/registros/auditoria-proceso.jsonl`, con el patrón, el comando de búsqueda, el número de documentos y el antes y después.
 
+## Cómo mantener este skill
+
+(Ancla: la sección 8 va justo antes. Aprobado por Guido el 2026-10-21: «ok al skill para parches vs reglas generales».)
+
 ## Texto exacto 2: skill `club-or-year-onboarding`, sección 3b, punto 2 (reemplaza la segunda oración)
 
 No commitear antes del veredicto de la Auditora, que decide con la sección 8 de `auditoria-finance-of-sports` si es una mejora general o un parche.
