@@ -34,8 +34,8 @@ el número de la izquierda es el orden de trabajo.
 2. 247 (Pantallas 7): registro público de correcciones (ok de Guido a las 4 recomendaciones del plan)
 
 **C. Técnico**
-3. 336: sumar a `data/informes.js` los informes de cada liga ya cargada (hoy solo Inglaterra y Europa), y un paso de skill para buscarlos al abrir una liga (texto para tu ok)
-4. 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): cuáles van a hook o a audit.js
+3. 336 (Sourcing 4): sumar a `data/informes.js` los informes de cada liga ya cargada (hoy solo Inglaterra y Europa), y un paso de skill para buscarlos al abrir una liga (texto para tu ok)
+4. 327 (Pipeline 10): los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): cuáles van a hook o a audit.js
 5. 248: taxonomía genérica y subcategorías por deporte
 6. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 7. 249: API en dominio propio (el último de C; no construirla todavía)
