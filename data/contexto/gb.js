@@ -78,6 +78,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Stamford Bridge","capacidad":40173,"sponsor":"Infinite Athlete","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Stamford Bridge","capacidad":40173,"sponsor":"DAMAC Properties","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
+  'chesterfield-gb': {
+    2025: {"estadio":"SMH Group Stadium","capacidad":10600,"sponsor":"Leengate Valves","marca":"Puma","temporada":"2024–25 EFL League Two","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378041142","fuenteManual":"https://www.footballkitarchive.com/chesterfield-fc-2024-25-home-kit-241907/ (camiseta 2024-25); estadio: https://en.wikipedia.org/wiki/2024%E2%80%9325_Chesterfield_F.C._season; capacidad: https://en.wikipedia.org/wiki/Chesterfield_F.C.","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'crystalpalace-gb': {
     2022: {"estadio":"Selhurst Park","capacidad":25486,"sponsor":"W88","marca":"Puma","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2023: {"estadio":"Selhurst Park","capacidad":25486,"sponsor":"Cinch","marca":"Macron","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},

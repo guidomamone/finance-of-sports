@@ -26,4 +26,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'barnsley-gb': { 2025: 'gb-leagueone' },
   'burtonalbion-gb': { 2025: 'gb-leagueone' },
   'carlisleunited-gb': { 2025: 'gb-leaguetwo' },
+  'chesterfield-gb': { 2025: 'gb-leaguetwo' },
 });

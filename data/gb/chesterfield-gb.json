@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "chesterfield-gb",
+    "name": "Chesterfield",
+    "display_name": "Chesterfield",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
+  "sources": [
+    {
+      "id": "chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl",
+      "club_id": "chesterfield-gb",
+      "title": "Chesterfield — cfc2001-medium-accounts-2024-25-ixbrl (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Informe oficial en formato XHTML (iXBRL)"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Gates and season tickets","category":"matchday","subcategory":"matchday_competition","amount":4.12574,"disclosure":"aggregated"},
+        {"label":"TV and football awards","category":"media_rights","subcategory":"broadcasting","amount":0.074626,"disclosure":"aggregated"},
+        {"label":"Transfer fees","category":"player_transfers","subcategory":"player_sales","amount":0.343466,"disclosure":"aggregated"},
+        {"label":"Commercial income","category":"commercial","subcategory":"sponsorship_commercial","amount":2.54526,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_revenue","subcategory":"other_income","amount":0.714996,"disclosure":"aggregated"},
+        {
+          "label": "Amortisation of government grants receivable",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.073349,
+          "disclosure": "aggregated"
+        },
+        {"label":"Lease premium income","category":"other_revenue","subcategory":"other_income","amount":0.0056,"disclosure":"aggregated"},
+        {"label":"Other grants receivable","category":"other_revenue","subcategory":"other_income","amount":0.0024,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.941478,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-9.162496,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.164358,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":7.885437,"expenses":10.103974,"net_result":-2.382893},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":-0.000001},
+          {"label":"Interest payable and similar expenses","amount":-0.164357},
+          {"label":"Tax on loss","amount":null}
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

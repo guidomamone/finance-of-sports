@@ -22,3 +22,5 @@ Todos en `Clubes/Inglaterra/Chesterfield/` (los PDF no se trackean; los de Compa
 - En disco 2020/21 a 2024/25 (3 Full accounts + 2 "medium"; la de 2024/25 trae Income Statement en pág. 14, verificado por OCR). 18 ejercicios disponibles (2012/13 en adelante).
 - Fuente oficial adicional (sitio del club, no bajada): https://chesterfield-fc.co.uk/wp-content/uploads/2024/03/CFC-2-Limited-company-accounts-final-draft-full.pdf — rotulada "final draft" de cuentas del ejercicio 2022/23 (turnover £4.577.446 según el snippet de búsqueda). Cotejar con la versión presentada en Companies House si se carga ese año.
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2025 desde `Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf` (sourceId `chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl`).
