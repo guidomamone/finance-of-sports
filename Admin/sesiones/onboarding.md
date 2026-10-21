@@ -398,3 +398,40 @@ La frase «Y si subiste `ASSET_V` … hay que correr `generate-fuentes-page.js` 
 ### Qué deja de ser cierto en ESTADO
 - Un sponsor sin fuente ya no se resuelve con un texto: pide el registro de búsqueda.
 - Un anexo con otra estructura puede abrir un renglón (Mafra) en extracciones nuevas.
+
+
+## Traspaso del lote 130 a Onboarding 8 (2026-10-21, Pipeline 12)
+
+Pedido de Guido: las cargas las hace Onboarding. El lote 130 (to-do 345, documentos en mano sin cargar de la cola del chequeo) corrió hasta el final con `--ejecutar --cargar` y quedó acá. Lista: `Admin/lotes/lote-130.txt` (y `lote-130-transcribir.txt`, la etapa 2). Gasto hasta ahora: US$ 1,25 de transcripción (Chapecoense 2019 fue el caro, US$ 0,92) + US$ 2,04 de localizar y extraer = US$ 3,29; la categorización no está contada (`node tools/gasto.mjs`). Con Girona el lote queda en unos US$ 5,50 (Guido aprobó pasar de US$ 5: «hacé Girona»).
+
+### Qué quedó escrito
+- **SønderjyskE 2024**: alta y año cargados (`50a03eecb`). El 2022-23 de transición (`aarsrapport-2022-2023-09-30-transicion`) quedó afuera a propósito (un alta lleva un solo ejercicio primero): va ahora, con la cola del 2024 contestada.
+
+### Qué hay transcripto y qué falta
+- Transcripto en este lote (etapa 2 hecha): Chapecoense 2019 (RESERVA: solo Claude validó las págs 28, 32, 37, 40 y 44: cerrar con la suma al onboardear), Sarpsborg 08 2009-2011, Omonia 29 Maiou 2024 (3 págs).
+- Convertidos del XHTML danés con `tools/xhtml-aarsrapport.mjs` (`.md` + `.pdf` de ancla de Chrome, motor «xhtml-ixbrl (determinista)»): Fredericia 2025, FC København 2025, Nordsjælland 2025, Vejle 2025, Brøndby 2021, SønderjyskE 2022-23 (transición) y 2024. Los 47 XHTML de `Clubes/Dinamarca/` se convierten igual cuando alguien pida cargarlos: `node tools/xhtml-aarsrapport.mjs "<xhtml>|<carpeta>" --escribir`. Hvidovre 2025 no pasa la compuerta (hechos visibles sin su cifra) y el consolidado PSE de København 2025 tampoco (ubica el 12 % de las líneas: ver pendientes de Pipeline).
+- **Falta transcribir**: Girona FC 2020-21, 2021-22 y 2022-23 (`Clubes/España/Girona FC/cuentas-anuales-AAAA-AAAA.pdf`, 150, 157 y 156 págs, ~US$ 4: `node tools/pipeline.mjs --lista <lista con los 3> --max-paginas 0 --limit 0 --ejecutar`, dentro del presupuesto que aprobó Guido) y re-transcribir las 2 páginas escaneadas de RAAL La Louvière 2020 (`jaarrekening-2020-06-30-individual.pdf`: `lote.mjs --reintentar` con una lista de solo ese documento).
+
+### Dónde quedó cada documento (según la salida del lote)
+- Sin estado de resultados («queda como fuente»): Fredrikstad 2021 y 2023, Sarpsborg 08 2009 y 2010. Miralos antes de insistir (¿el `.md` trae el resultado en otra parte, o el PDF es otro documento?).
+- Cola de sumas (etapa 6, `node tools/cola.mjs`): Chapecoense 2019 (4 casos; el total de gastos suma 121.969 y el impreso dice 100.448), Emmen 2020-21 (1), Fredericia 2021 (1), 2022 (2), 2023 (3), 2024 (1) y 2025 (1), Fredrikstad 2019 (4) y 2022 (1), Vålerenga 2024 (3), Nordsjælland 2025 (1), Vejle 2025 (2).
+- Cola de categorías o perfil (etapa 7): Emmen 2019-20 (1 fila), Omonia 2024 (11), Brøndby 2021 (6), Sarpsborg 2011 y København 2025 («Cuotas sociales» en 0, el perfil del club no dice si tiene socios).
+- Reintento: Fredrikstad 2020 (salarios del plantel en 0).
+- Sin verificar todavía (corren con el lote siguiente): Fredrikstad 2021 y 2023, Sarpsborg 2009 y 2010, RAAL 2020.
+- Fredericia 2021-24 y Emmen 2019-20 y 2020-21: los cierres están fijados con cita del `.md` (`ajustes-manuales.jsonl`); Vålerenga 2024 tiene perímetro individual (el club es Vålerenga Fotball AS, como el 2025 cargado); los cinco XHTML daneses nuevos tienen su cierre.
+
+### Lo que no entra y por qué
+- **Genoa 2024** (`Genoa-bilancio-30.06.2024-individual.pdf`): está en `Admin/registros/documentos-parciales.txt` (cubre 01-01 a 30-06-2024; falta 01-07 a 31-12-2023 y el 2023 cargado es el año calendario completo, no sirve de tramo). No se carga sin el otro tramo.
+- **Lierse Kempenzonen 2022** (`jaarrekening-2022-06-30-individual.pdf`): está en `Admin/registros/documentos-descartados.txt`.
+
+### Pendiente de Pipeline (no de Onboarding)
+- El consolidado PSE de København 2025 (`aarsrapport-2025-12-31-PSE-consolidado.xhtml`, y los PSE 2021-24) no pasa la compuerta (b) de `xhtml-aarsrapport.mjs`: 7.865 líneas, 164 páginas de PDF, 12 % de las líneas ubicadas (informe de diseño con texto en cajas). Si hace falta cargarlo, hay que mejorar la alineación de páginas.
+- Hvidovre 2025 (cifras sin separadores): la compuerta (a) lo rechaza; si hace falta, mirar por qué esos 93 hechos no salen en el `.md`.
+- Seguimiento posible (no condición, de la Auditora 4): usar los hechos iXBRL (valor, escala y signo estructurados) como total oficial independiente en el tie-out.
+
+### Qué cambió (para CHANGELOG)
+- `tools/xhtml-aarsrapport.mjs` (nuevo, aprobado por la Auditora 4), `inventario-transcripciones.mjs` lee el motor «xhtml-ixbrl (determinista)»; `Admin/PIPELINE.md`, sección «Dinamarca: los informes en XHTML».
+- Lote 130: transcripciones, cierres, perímetro y un año cargado (SønderjyskE 2024).
+
+### Qué deja de ser cierto en ESTADO
+- Los XHTML daneses ya tienen camino de entrada (`xhtml-aarsrapport.mjs`); antes ninguna tool los leía.
