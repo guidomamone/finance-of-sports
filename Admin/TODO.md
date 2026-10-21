@@ -29,21 +29,22 @@ el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
 1. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar
-2. 345 (Pipeline 12, después Onboarding 8): lote 130 corriendo; Onboarding 8 carga lo que quede, Girona 2021-23, RAAL, SønderjyskE, los daneses ya convertidos, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020 (hasta US$7)
-3. 345 (Pipeline 13): el consolidado de FC København 2025 que el lector danés no convierte
-4. 347 (Auditora 4): cuarta corrida del proceso de P2 y P3, con `signo-invertido` (30); ya se trataron `linea-duplicada`, `catchall-dominante` y `sin-salarios`
-5. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea (`sin-salarios`, 48)
-6. 350 (Auditora 4, después de las corridas): relevar qué categorías están en vano (educación incluida) y votar una para subsidios, donaciones y aportes
+2. 345 (Onboarding 8): la cola del lote 130, Girona 2021-23, RAAL, SønderjyskE 2023, los 7 daneses convertidos, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020 (hasta US$10 en total)
+3. 345 (Pipeline 13): el consolidado de FC København 2025 y Hvidovre 2025; después, el 353
+4. 352 (Auditora 5): la fuente de un año que viene de un XHTML, y un chequeo de lo cargado contra los totales etiquetados en iXBRL
+5. 347 (Auditora 5): corridas de P2 y P3; sigue `gestion-club-inexistente` (ya: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`, `outlier-liga`)
+6. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea (`sin-salarios`, 48)
+7. 350 (Auditora 5, después de las corridas): relevar qué categorías están en vano (educación incluida), votar una para subsidios y donaciones, y un proceso para revisar categorías
 
 **D. Orden de la casa**
-7. 338: correr todas las auditorías del proyecto (al final de A)
-8. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+8. 338: correr todas las auditorías del proyecto (al final de A)
+9. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-9. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-10. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-11. 335: mails a clubes
-12. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+10. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+11. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+12. 335: mails a clubes
+13. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
@@ -86,6 +87,11 @@ el número de la izquierda es el orden de trabajo.
     (e) enlaces a `/club/<id>` con tarjeta al compartir (241) y medir qué publicaciones traen visitas. Depende de 241 y 246.
     (f) material de difusión (era el 259): un deck para periodistas y sponsors, o un informe por liga («las finanzas de LaLiga 2025 en
         10 slides»), con el tipo Slides; sin código. Nada de esto sale antes del 337.
+352. FUENTE Y CHEQUEO DE LO QUE VIENE EN XHTML (Guido, 2026-10-21). Un año convertido por `tools/xhtml-aarsrapport.mjs` tiene como original el
+   XHTML y el PDF de ancla lo armamos nosotros: la página de fuentes y el `source` tienen que apuntar al XHTML publicado. Y como iXBRL trae
+   los totales etiquetados, un chequeo que compare lo cargado con esos totales. Lo diseña la Auditora; lo codea Pipeline.
+353. ¿LOS BRITÁNICOS EN iXBRL? (Guido, 2026-10-21). Medir en Companies House cuántos clubes de `data/gb/` presentan cuentas en iXBRL y no en
+   PDF; si los grandes vienen así, se cargan sin transcribir. Medición gratis, sin código: `Admin/mediciones/companies-house-ixbrl.md`.
 351. SUELDOS ADENTRO DE UNA SOLA LÍNEA (Auditora 4, 3ª corrida de P2 y P3, 2026-10-21). 12 británicos (Aston Villa, Brentford, Brighton,
    Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves; 47 club-años con el estado por función) e
    Instituto 2025 (anexo de remuneraciones cargado entero en gastos generales). Cómo: `Admin/sesiones/ligas.md`, tercera corrida. Corrige datos
