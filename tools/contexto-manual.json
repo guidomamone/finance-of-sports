@@ -31,1108 +31,296 @@
     "2024": { "estadio": "DW Stadium", "capacidad": 25138, "sponsor": "Smurfit Kappa", "marca": "Puma", "fuente": "https://www.wigantoday.net/sport/football/first-look-wigan-athletic-launch-new-kit-for-2023-24-campaign-4227219 (camiseta 2023-24); estadio: https://en.wikipedia.org/wiki/2023%E2%80%9324_Wigan_Athletic_F.C._season" }
   },
   "kryliasovetovsamara-ru": {
-    "2021": {
-      "estadio": "Solidarnost Samara Arena",
-      "capacidad": 44918,
-      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
-    },
-    "2022": {
-      "estadio": "Solidarnost Samara Arena",
-      "capacidad": 44918,
-      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
-    },
-    "2023": {
-      "estadio": "Solidarnost Samara Arena",
-      "capacidad": 44918,
-      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
-    },
-    "2024": {
-      "estadio": "Solidarnost Samara Arena",
-      "capacidad": 44918,
-      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
-    },
-    "2025": {
-      "estadio": "Solidarnost Samara Arena",
-      "capacidad": 44918,
-      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
-    }
+    "2021": { "estadio": "Solidarnost Samara Arena", "capacidad": 44918, "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087" },
+    "2022": { "estadio": "Solidarnost Samara Arena", "capacidad": 44918, "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087" },
+    "2023": { "estadio": "Solidarnost Samara Arena", "capacidad": 44918, "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087" },
+    "2024": { "estadio": "Solidarnost Samara Arena", "capacidad": 44918, "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087" },
+    "2025": { "estadio": "Solidarnost Samara Arena", "capacidad": 44918, "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087" }
   },
   "akrontolyatti-ru": {
-    "2021": {
-      "estadio": "Kristall (Zhigulyovsk)",
-      "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"
-    },
-    "2022": {
-      "estadio": "Kristall (Zhigulyovsk)",
-      "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl",
-      "sponsor": "1xStavka",
-      "fuentes": {
-        "sponsor": "https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D1%80%D0%BE%D0%BD_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
-      }
-    },
-    "2023": {
-      "estadio": "Kristall (Zhigulyovsk)",
-      "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"
-    },
-    "2024": {
-      "estadio": "Solidarnost Samara Arena",
-      "capacidad": 44918,
-      "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"
-    },
-    "2025": {
-      "estadio": "Solidarnost Samara Arena",
-      "capacidad": 44918,
-      "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"
-    }
+    "2021": { "estadio": "Kristall (Zhigulyovsk)", "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl" },
+    "2022": { "estadio": "Kristall (Zhigulyovsk)", "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl", "sponsor": "1xStavka", "fuentes": {"sponsor":"https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D1%80%D0%BE%D0%BD_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"} },
+    "2023": { "estadio": "Kristall (Zhigulyovsk)", "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl" },
+    "2024": { "estadio": "Solidarnost Samara Arena", "capacidad": 44918, "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona" },
+    "2025": { "estadio": "Solidarnost Samara Arena", "capacidad": 44918, "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona" }
   },
   "dynamomakhachkala-ru": {
-    "2021": {
-      "estadio": "Dynamo Stadium",
-      "fuente": "https://www.sport-express.ru/football/rus_cup/fbl_match-legion-dinamo-anzhi-343552/"
-    },
-    "2024": {
-      "estadio": "Anzhi-Arena",
-      "fuente": "https://www.championat.com/football/_russiapl/tournament/5980/match/1175524/"
-    },
-    "2025": {
-      "estadio": "Anzhi-Arena",
-      "fuente": "https://www.championat.com/football/_russiapl/tournament/6594/match/1251474/"
-    }
+    "2021": { "estadio": "Dynamo Stadium", "fuente": "https://www.sport-express.ru/football/rus_cup/fbl_match-legion-dinamo-anzhi-343552/" },
+    "2024": { "estadio": "Anzhi-Arena", "fuente": "https://www.championat.com/football/_russiapl/tournament/5980/match/1175524/" },
+    "2025": { "estadio": "Anzhi-Arena", "fuente": "https://www.championat.com/football/_russiapl/tournament/6594/match/1251474/" }
   },
   "sochi-ru": {
-    "2021": {
-      "sponsor": "sin sponsor",
-      "fuente": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%87%D0%B8_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
-    },
-    "2022": {
-      "sponsor": "sin sponsor",
-      "fuente": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%87%D0%B8_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
-    },
-    "2024": {
-      "estadio": "Fisht Olympic Stadium",
-      "fuente": "https://news.sportbox.ru/Vidy_sporta/Futbol/stats/stadium_1295441877"
-    }
+    "2021": { "sponsor": "sin sponsor", "fuente": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%87%D0%B8_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)" },
+    "2022": { "sponsor": "sin sponsor", "fuente": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%87%D0%B8_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)" },
+    "2024": { "estadio": "Fisht Olympic Stadium", "fuente": "https://news.sportbox.ru/Vidy_sporta/Futbol/stats/stadium_1295441877" }
   },
   "spartakmoscow-ru": {
-    "2021": {
-      "estadio": "Otkritie Bank Arena",
-      "capacidad": 45360,
-      "fuente": "https://stadiumdb.com/stadiums/rus/otkritie_arena"
-    },
-    "2022": {
-      "estadio": "Otkritie Bank Arena",
-      "fuente": "https://www.sport-express.ru/football/rfpl/news/1741358/"
-    },
-    "2023": {
-      "estadio": "Otkritie Bank Arena",
-      "fuente": "https://fomag.ru/news-streem/lukoyl-podal-zayavku-na-registratsiyu-tovarnogo-znaka-lukoyl-arena/"
-    }
+    "2021": { "estadio": "Otkritie Bank Arena", "capacidad": 45360, "fuente": "https://stadiumdb.com/stadiums/rus/otkritie_arena" },
+    "2022": { "estadio": "Otkritie Bank Arena", "fuente": "https://www.sport-express.ru/football/rfpl/news/1741358/" },
+    "2023": { "estadio": "Otkritie Bank Arena", "fuente": "https://fomag.ru/news-streem/lukoyl-podal-zayavku-na-registratsiyu-tovarnogo-znaka-lukoyl-arena/" }
   },
   "baltikakaliningrad-ru": {
-    "2022": {
-      "sponsor": "Kaliningrad Amber Combine",
-      "fuente": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%BA%D0%B0_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
-    },
-    "2024": {
-      "estadio": "Rostec Arena",
-      "fuente": "https://www.dp.ru/a/2024/06/04/besprozvannih-dogovorilsja",
-      "sponsor": "Rostec",
-      "fuentes": {
-        "sponsor": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%BA%D0%B0_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
-      }
-    }
+    "2022": { "sponsor": "Kaliningrad Amber Combine", "fuente": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%BA%D0%B0_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)" },
+    "2024": { "estadio": "Rostec Arena", "fuente": "https://www.dp.ru/a/2024/06/04/besprozvannih-dogovorilsja", "sponsor": "Rostec", "fuentes": {"sponsor":"https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%BA%D0%B0_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"} }
   },
   "ferroviaria-br": {
-    "2015": {
-      "estadio": "Arena da Fonte Luminosa",
-      "capacidad": 20950,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2015_-_S%C3%A9rie_A2"
-    },
-    "2016": {
-      "estadio": "Arena da Fonte Luminosa",
-      "capacidad": 20000,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2016_-_S%C3%A9rie_A1"
-    },
-    "2017": {
-      "estadio": "Arena da Fonte Luminosa",
-      "capacidad": 20000,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2017_-_S%C3%A9rie_A1"
-    },
-    "2018": {
-      "estadio": "Arena da Fonte Luminosa",
-      "capacidad": 20000,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2018_-_S%C3%A9rie_A1"
-    },
-    "2022": {
-      "sponsor": "Estrella Galicia",
-      "fuente": "https://rciararaquara.com.br/ferroviaria/ferroviaria-fecha-patrocinio-com-a-estrella-galicia-para-o-time-masculino/"
-    },
-    "2023": {
-      "estadio": "Arena da Fonte Luminosa",
-      "capacidad": 20000,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2023_-_S%C3%A9rie_A1",
-      "sponsor": "Betnacional",
-      "fuentes": {
-        "sponsor": "https://ferroviariasaf.com/2023/01/22/profissional-masculino-tera-betnacional-como-patrocinadora/"
-      }
-    }
+    "2015": { "estadio": "Arena da Fonte Luminosa", "capacidad": 20950, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2015_-_S%C3%A9rie_A2" },
+    "2016": { "estadio": "Arena da Fonte Luminosa", "capacidad": 20000, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2016_-_S%C3%A9rie_A1" },
+    "2017": { "estadio": "Arena da Fonte Luminosa", "capacidad": 20000, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2017_-_S%C3%A9rie_A1" },
+    "2018": { "estadio": "Arena da Fonte Luminosa", "capacidad": 20000, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2018_-_S%C3%A9rie_A1" },
+    "2022": { "sponsor": "Estrella Galicia", "fuente": "https://rciararaquara.com.br/ferroviaria/ferroviaria-fecha-patrocinio-com-a-estrella-galicia-para-o-time-masculino/" },
+    "2023": { "estadio": "Arena da Fonte Luminosa", "capacidad": 20000, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2023_-_S%C3%A9rie_A1", "sponsor": "Betnacional", "fuentes": {"sponsor":"https://ferroviariasaf.com/2023/01/22/profissional-masculino-tera-betnacional-como-patrocinadora/"} }
   },
   "omonia29maiou-cy": {
-    "2024": {
-      "estadio": "Dimitris Hamatsos",
-      "fuente": "https://en.wikipedia.org/wiki/PAC_Omonia_29M (en las divisiones inferiores jugó en el Dimitris Hamatsos, compartido con Chalkanoras Idaliou; el Katokopia Stadium, de Peristerona, es del club ya ascendido a la First Division, desde 2024-25)",
-      "sin-fuente": {
-        "sponsor": {
-          "buscado": "2026-10-21",
-          "por": "Claude (Onboarding 8)",
-          "intentos": [
-            { "clase": "informe-anual", "donde": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.md, estado de ingresos: «Χορηγίες και εισφορές 275,389» sin nombrar al patrocinador de la camiseta", "resultado": "sin-dato" },
-            { "clase": "prensa", "donde": "búsqueda web «Ομόνοια 29ης Μαΐου φανέλα 2023-24 χορηγός στήθος νέα εμφάνιση»: solo trae al AC Omonia (Macron), nada de la 29M", "resultado": "sin-dato" },
-            { "clase": "archivo-web", "donde": "https://www.footballkitarchive.com/ (resultados de la misma búsqueda): ninguna ficha de Omonia 29M 2023-24", "resultado": "sin-dato" }
-          ]
-        }
-      }
-    }
+    "2024": { "estadio": "Dimitris Hamatsos", "fuente": "https://en.wikipedia.org/wiki/PAC_Omonia_29M (en las divisiones inferiores jugó en el Dimitris Hamatsos, compartido con Chalkanoras Idaliou; el Katokopia Stadium, de Peristerona, es del club ya ascendido a la First Division, desde 2024-25)", "sin-fuente": {"sponsor":{"buscado":"2026-10-21","por":"Claude (Onboarding 8)","intentos":[{"clase":"informe-anual","donde":"Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.md, estado de ingresos: «Χορηγίες και εισφορές 275,389» sin nombrar al patrocinador de la camiseta","resultado":"sin-dato"},{"clase":"prensa","donde":"búsqueda web «Ομόνοια 29ης Μαΐου φανέλα 2023-24 χορηγός στήθος νέα εμφάνιση»: solo trae al AC Omonia (Macron), nada de la 29M","resultado":"sin-dato"},{"clase":"archivo-web","donde":"https://www.footballkitarchive.com/ (resultados de la misma búsqueda): ninguna ficha de Omonia 29M 2023-24","resultado":"sin-dato"}]}} }
   },
   "goias-br": {
-    "2018": {
-      "estadio": "Serra Dourada",
-      "capacidad": 42000,
-      "sponsor": "Caixa",
-      "marca": "Topper",
-      "fuente": "https://en.wikipedia.org/wiki/2018_Campeonato_Brasileiro_S%C3%A9rie_B"
-    },
-    "2019": {
-      "estadio": "Serra Dourada",
-      "capacidad": 50049,
-      "sponsor": "Marjo Sports",
-      "marca": "Gr33n",
-      "fuente": "https://en.wikipedia.org/wiki/2019_Campeonato_Brasileiro_S%C3%A9rie_A"
-    }
+    "2018": { "estadio": "Serra Dourada", "capacidad": 42000, "sponsor": "Caixa", "marca": "Topper", "fuente": "https://en.wikipedia.org/wiki/2018_Campeonato_Brasileiro_S%C3%A9rie_B" },
+    "2019": { "estadio": "Serra Dourada", "capacidad": 50049, "sponsor": "Marjo Sports", "marca": "Gr33n", "fuente": "https://en.wikipedia.org/wiki/2019_Campeonato_Brasileiro_S%C3%A9rie_A" }
   },
   "novorizontino-br": {
-    "2012": {
-      "estadio": "Jorge Ismael de Biasi",
-      "capacidad": 16000,
-      "fuente": "https://en.wikipedia.org/wiki/Gr%C3%AAmio_Novorizontino (estadio del club; capacidad como en 2013, https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2013_-_S%C3%A9rie_A3)",
-      "sin-fuente": {
-        "sponsor": {
-          "buscado": "2026-10-21",
-          "por": "Claude (Onboarding 8)",
-          "intentos": [
-            { "clase": "informe-anual", "donde": "Clubes/Brasil/Novorizontino/balanco-2012.md, estado de resultados: «RECEITA PATROCINIO E PUBLICIDADE 711.565,33» sin nombrar al patrocinador de la camiseta", "resultado": "sin-dato" },
-            { "clase": "archivo-web", "donde": "https://www.footballkitarchive.com/pt/ (camisetas Novorizontino 2012, casa y visitante, marca Aktion, Campeonato Paulista): la ficha no nombra sponsor", "resultado": "sin-dato" },
-            { "clase": "prensa", "donde": "búsqueda web «Novorizontino 2012 camisa patrocinador Segunda Divisão Paulista uniforme patrocínio 2012»: solo patrocinios de 2026 (Totvs Oeste)", "resultado": "sin-dato" }
-          ]
-        }
-      }
-    },
-    "2013": {
-      "estadio": "Jorge Ismael de Biasi",
-      "capacidad": 16000,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2013_-_S%C3%A9rie_A3"
-    },
-    "2014": {
-      "estadio": "Jorge Ismael de Biasi",
-      "capacidad": 16000,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2014_-_S%C3%A9rie_A3"
-    },
-    "2015": {
-      "estadio": "Jorge Ismael de Biasi",
-      "capacidad": 16000,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2015_-_S%C3%A9rie_A2"
-    },
-    "2016": {
-      "estadio": "Jorge Ismael de Biasi",
-      "capacidad": 12398,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2016_-_S%C3%A9rie_A1"
-    },
-    "2017": {
-      "estadio": "Jorge Ismael de Biasi",
-      "capacidad": 12398,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2017_-_S%C3%A9rie_A1"
-    },
-    "2018": {
-      "estadio": "Jorge Ismael de Biasi",
-      "fuente": "https://trivela.com.br/brasil/serie-b/santos-tabu-31-anos-novorizontino-serie-b/"
-    }
+    "2012": { "estadio": "Jorge Ismael de Biasi", "capacidad": 16000, "fuente": "https://en.wikipedia.org/wiki/Gr%C3%AAmio_Novorizontino (estadio del club; capacidad como en 2013, https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2013_-_S%C3%A9rie_A3)", "sin-fuente": {"sponsor":{"buscado":"2026-10-21","por":"Claude (Onboarding 8)","intentos":[{"clase":"informe-anual","donde":"Clubes/Brasil/Novorizontino/balanco-2012.md, estado de resultados: «RECEITA PATROCINIO E PUBLICIDADE 711.565,33» sin nombrar al patrocinador de la camiseta","resultado":"sin-dato"},{"clase":"archivo-web","donde":"https://www.footballkitarchive.com/pt/ (camisetas Novorizontino 2012, casa y visitante, marca Aktion, Campeonato Paulista): la ficha no nombra sponsor","resultado":"sin-dato"},{"clase":"prensa","donde":"búsqueda web «Novorizontino 2012 camisa patrocinador Segunda Divisão Paulista uniforme patrocínio 2012»: solo patrocinios de 2026 (Totvs Oeste)","resultado":"sin-dato"}]}} },
+    "2013": { "estadio": "Jorge Ismael de Biasi", "capacidad": 16000, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2013_-_S%C3%A9rie_A3" },
+    "2014": { "estadio": "Jorge Ismael de Biasi", "capacidad": 16000, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2014_-_S%C3%A9rie_A3" },
+    "2015": { "estadio": "Jorge Ismael de Biasi", "capacidad": 16000, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2015_-_S%C3%A9rie_A2" },
+    "2016": { "estadio": "Jorge Ismael de Biasi", "capacidad": 12398, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2016_-_S%C3%A9rie_A1" },
+    "2017": { "estadio": "Jorge Ismael de Biasi", "capacidad": 12398, "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2017_-_S%C3%A9rie_A1" },
+    "2018": { "estadio": "Jorge Ismael de Biasi", "fuente": "https://trivela.com.br/brasil/serie-b/santos-tabu-31-anos-novorizontino-serie-b/" }
   },
   "argentinosjuniors-ar": {
-    "2015": {
-      "estadio": "Diego Armando Maradona",
-      "fuente": "https://en.wikipedia.org/wiki/2014_Primera_B_Nacional"
-    }
+    "2015": { "estadio": "Diego Armando Maradona", "fuente": "https://en.wikipedia.org/wiki/2014_Primera_B_Nacional" }
   },
   "catolica-cl": {
-    "2010": {
-      "estadio": "San Carlos de Apoquindo",
-      "fuente": "https://en.wikipedia.org/wiki/2010_Primera_Divisi%C3%B3n_de_Chile"
-    }
+    "2010": { "estadio": "San Carlos de Apoquindo", "fuente": "https://en.wikipedia.org/wiki/2010_Primera_Divisi%C3%B3n_de_Chile" }
   },
   "racing-ar": {
-    "2015": {
-      "estadio": "Presidente Juan Domingo Perón",
-      "capacidad": 55389,
-      "fuente": "https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n"
-    }
+    "2015": { "estadio": "Presidente Juan Domingo Perón", "capacidad": 55389, "fuente": "https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n" }
   },
   "sanlorenzo-ar": {
-    "2015": {
-      "estadio": "Pedro Bidegain (Nuevo Gasómetro)",
-      "capacidad": 39494,
-      "fuente": "https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n"
-    }
+    "2015": { "estadio": "Pedro Bidegain (Nuevo Gasómetro)", "capacidad": 39494, "fuente": "https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n" }
   },
   "velez-ar": {
-    "2015": {
-      "estadio": "José Amalfitani",
-      "capacidad": 45540,
-      "fuente": "https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n"
-    }
+    "2015": { "estadio": "José Amalfitani", "capacidad": 45540, "fuente": "https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n" }
   },
   "ferrocarriloeste-ar": {
-    "2023": {
-      "sponsor": "Avalian (hasta 2022) / Lepore",
-      "fuente": "https://es.wikipedia.org/wiki/Club_Ferro_Carril_Oeste"
-    }
+    "2023": { "sponsor": "Avalian (hasta 2022) / Lepore", "fuente": "https://es.wikipedia.org/wiki/Club_Ferro_Carril_Oeste" }
   },
   "fortalezaceif-co": {
-    "2017": {
-      "sponsor": "sin sponsor",
-      "fuente": "https://es.wikipedia.org/wiki/Fortaleza_F%C3%BAtbol_Club"
-    }
+    "2017": { "sponsor": "sin sponsor", "fuente": "https://es.wikipedia.org/wiki/Fortaleza_F%C3%BAtbol_Club" }
   },
   "oncecaldas-co": {
-    "2022": {
-      "sponsor": "Aguardiente Cristal",
-      "fuente": "https://www.tintiando.com/2021/12/21/ilc-reitera-su-compromiso-con-la-region-y-sera-principal-patrocinador-del-once-caldas-en-2022/"
-    }
+    "2022": { "sponsor": "Aguardiente Cristal", "fuente": "https://www.tintiando.com/2021/12/21/ilc-reitera-su-compromiso-con-la-region-y-sera-principal-patrocinador-del-once-caldas-en-2022/" }
   },
   "remo-br": {
-    "2019": {
-      "sponsor": "VeganNation",
-      "fuente": "https://en.wikipedia.org/wiki/2019_Clube_do_Remo_season"
-    },
-    "2020": {
-      "sponsor": "Banpará",
-      "fuente": "https://en.wikipedia.org/wiki/2020_Clube_do_Remo_season"
-    }
+    "2019": { "sponsor": "VeganNation", "fuente": "https://en.wikipedia.org/wiki/2019_Clube_do_Remo_season" },
+    "2020": { "sponsor": "Banpará", "fuente": "https://en.wikipedia.org/wiki/2020_Clube_do_Remo_season" }
   },
   "alverca-pt": {
-    "2022": {
-      "sponsor": "PSG Segurança Privada",
-      "fuente": "https://www.footballkitarchive.com/fc-alverca-kits/"
-    },
-    "2023": {
-      "sponsor": "RE/MAX",
-      "fuente": "https://www.footballkitarchive.com/fc-alverca-kits/"
-    }
+    "2022": { "sponsor": "PSG Segurança Privada", "fuente": "https://www.footballkitarchive.com/fc-alverca-kits/" },
+    "2023": { "sponsor": "RE/MAX", "fuente": "https://www.footballkitarchive.com/fc-alverca-kits/" }
   },
   "braga-pt": {
-    "2016": {
-      "sponsor": "BancoBIC",
-      "fuente": "https://www.footyheadlines.com/2015/07/sporting-braga-15-16-kits.html"
-    }
+    "2016": { "sponsor": "BancoBIC", "fuente": "https://www.footyheadlines.com/2015/07/sporting-braga-15-16-kits.html" }
   },
   "dortmund-de": {
-    "2024": {
-      "sponsor": "1&1 (Bundesliga) / Evonik (copas)",
-      "fuente": "https://insideworldfootball.com/?p=118510"
-    },
-    "2025": {
-      "sponsor": "1&1 (Bundesliga) / Evonik (copas)",
-      "fuente": "https://insideworldfootball.com/?p=118510"
-    }
+    "2024": { "sponsor": "1&1 (Bundesliga) / Evonik (copas)", "fuente": "https://insideworldfootball.com/?p=118510" },
+    "2025": { "sponsor": "1&1 (Bundesliga) / Evonik (copas)", "fuente": "https://insideworldfootball.com/?p=118510" }
   },
   "juvestabia-it": {
-    "2024": {
-      "sponsor": "Plinio Medical Center / StarCasinò Sport",
-      "fuente": "https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Juve_Stabia_2023-2024"
-    }
+    "2024": { "sponsor": "Plinio Medical Center / StarCasinò Sport", "fuente": "https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Juve_Stabia_2023-2024" }
   },
   "lazio-it": {
-    "2020": {
-      "sponsor": "sin sponsor",
-      "fuente": "https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Lazio_2019-2020"
-    }
+    "2020": { "sponsor": "sin sponsor", "fuente": "https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Lazio_2019-2020" }
   },
   "parma-it": {
-    "2016": {
-      "sponsor": "Navigare",
-      "fuente": "https://www.calcioefinanza.it/?p=12452"
-    },
-    "2017": {
-      "sponsor": "Aon / Folletto",
-      "fuente": "https://it.wikipedia.org/wiki/Parma_Calcio_1913_2016-2017"
-    }
+    "2016": { "sponsor": "Navigare", "fuente": "https://www.calcioefinanza.it/?p=12452" },
+    "2017": { "sponsor": "Aon / Folletto", "fuente": "https://it.wikipedia.org/wiki/Parma_Calcio_1913_2016-2017" }
   },
   "aellarissa-gr": {
-    "2016": {
-      "sponsor": "Pame Stoixima",
-      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
-    },
-    "2017": {
-      "sponsor": "sin sponsor",
-      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
-    },
-    "2018": {
-      "sponsor": "sin sponsor",
-      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
-    },
-    "2023": {
-      "sponsor": "Animus Medical Group",
-      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
-    },
-    "2024": {
-      "sponsor": "Solis Constructions",
-      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
-    },
-    "2025": {
-      "sponsor": "Novibet",
-      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
-    }
+    "2016": { "sponsor": "Pame Stoixima", "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630" },
+    "2017": { "sponsor": "sin sponsor", "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630" },
+    "2018": { "sponsor": "sin sponsor", "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630" },
+    "2023": { "sponsor": "Animus Medical Group", "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630" },
+    "2024": { "sponsor": "Solis Constructions", "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630" },
+    "2025": { "sponsor": "Novibet", "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630" }
   },
   "levadiakos-gr": {
-    "2024": {
-      "sponsor": "Betshop",
-      "fuente": "https://www.footballkitarchive.com/levadiakos-kits/"
-    }
+    "2024": { "sponsor": "Betshop", "fuente": "https://www.footballkitarchive.com/levadiakos-kits/" }
   },
   "oficrete-gr": {
-    "2018": {
-      "sponsor": "Stoiximan",
-      "fuente": "https://www.newsit.gr/athlitika/i-stoiximan-gr-xorigos-tis-fanelas-toy-ofi/1241152/"
-    }
+    "2018": { "sponsor": "Stoiximan", "fuente": "https://www.newsit.gr/athlitika/i-stoiximan-gr-xorigos-tis-fanelas-toy-ofi/1241152/" }
   },
   "harjujklaagri-ee": {
-    "2025": {
-      "sponsor": "sin sponsor",
-      "fuente": "https://en.wikipedia.org/wiki/2025_Meistriliiga"
-    }
+    "2025": { "sponsor": "sin sponsor", "fuente": "https://en.wikipedia.org/wiki/2025_Meistriliiga" }
   },
   "liersesk-be": {
-    "2019": {
-      "estadio": "Herman Vanderpoortenstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)"
-    },
-    "2020": {
-      "estadio": "Herman Vanderpoortenstadion",
-      "sponsor": "Keukens Van Lommel",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)",
-      "fuentes": {
-        "sponsor": "https://www.lierse.com/nieuws/keukens-van-lommel-fiere-nieuwe-hoofdsponsor-van-lierse"
-      }
-    },
-    "2023": {
-      "estadio": "Herman Vanderpoortenstadion",
-      "sponsor": "Keukens Van Lommel",
-      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2022-23_(voetbal_Belgi%C3%AB)"
-    },
-    "2024": {
-      "estadio": "Herman Vanderpoortenstadion",
-      "sponsor": "Golden Palace",
-      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)"
-    },
-    "2025": {
-      "estadio": "Herman Vanderpoortenstadion",
-      "capacidad": 14538,
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
-    }
+    "2019": { "estadio": "Herman Vanderpoortenstadion", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)" },
+    "2020": { "estadio": "Herman Vanderpoortenstadion", "sponsor": "Keukens Van Lommel", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)", "fuentes": {"sponsor":"https://www.lierse.com/nieuws/keukens-van-lommel-fiere-nieuwe-hoofdsponsor-van-lierse"} },
+    "2023": { "estadio": "Herman Vanderpoortenstadion", "sponsor": "Keukens Van Lommel", "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2022-23_(voetbal_Belgi%C3%AB)" },
+    "2024": { "estadio": "Herman Vanderpoortenstadion", "sponsor": "Golden Palace", "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)" },
+    "2025": { "estadio": "Herman Vanderpoortenstadion", "capacidad": 14538, "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League" }
   },
   "lokerentemse-be": {
-    "2021": {
-      "estadio": "Daknamstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)"
-    },
-    "2022": {
-      "estadio": "Daknamstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)"
-    },
-    "2023": {
-      "estadio": "Daknamstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)"
-    },
-    "2024": {
-      "estadio": "Daknamstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)"
-    },
-    "2025": {
-      "estadio": "Daknamstadion",
-      "capacidad": 12136,
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
-    }
+    "2021": { "estadio": "Daknamstadion", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)" },
+    "2022": { "estadio": "Daknamstadion", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)" },
+    "2023": { "estadio": "Daknamstadion", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)" },
+    "2024": { "estadio": "Daknamstadion", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)" },
+    "2025": { "estadio": "Daknamstadion", "capacidad": 12136, "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League" }
   },
   "lommelsk-be": {
-    "2018": {
-      "estadio": "Soevereinstadion",
-      "fuente": "https://en.wikipedia.org/wiki/Lommel_S.K."
-    },
-    "2024": {
-      "estadio": "Soevereinstadion",
-      "sponsor": "AppSys ICT Group",
-      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)"
-    },
-    "2025": {
-      "estadio": "Soevereinstadion",
-      "capacidad": 8000,
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
-    }
+    "2018": { "estadio": "Soevereinstadion", "fuente": "https://en.wikipedia.org/wiki/Lommel_S.K." },
+    "2024": { "estadio": "Soevereinstadion", "sponsor": "AppSys ICT Group", "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)" },
+    "2025": { "estadio": "Soevereinstadion", "capacidad": 8000, "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League" }
   },
   "patroeisden-be": {
-    "2013": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2012-13: nl.wikipedia y en.wikipedia del club, en.wikipedia de la temporada (sin tabla de camisetas), búsqueda web general y kit archive (403): ninguna fuente nombra el sponsor de camiseta" }
-      }
-    },
-    "2014": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
-    },
-    "2015": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2014-15: nl.wikipedia y en.wikipedia del club, en.wikipedia de la temporada (sin tabla de camisetas), búsqueda web general y kit archive (403): ninguna fuente nombra el sponsor de camiseta" }
-      }
-    },
-    "2017": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
-    },
-    "2018": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
-    },
-    "2019": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
-    },
-    "2020": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
-    },
-    "2021": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
-    },
-    "2022": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
-    },
-    "2023": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
-    },
-    "2024": {
-      "sponsor": "PepperMill Casino",
-      "fuente": "https://www.limburgnieuws.be/maasmechelen/1692380237-peppermill-casino-nieuwe-hoofdsponsor-van-patro-eisden-maasmechelen-18-augustus-2023--a.html",
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "fuentes": {
-        "estadio": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
-      }
-    },
-    "2025": {
-      "estadio": "Gemeentelijk Sportparkstadion",
-      "capacidad": 5500,
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
-    }
+    "2013": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2012-13: nl.wikipedia y en.wikipedia del club, en.wikipedia de la temporada (sin tabla de camisetas), búsqueda web general y kit archive (403): ninguna fuente nombra el sponsor de camiseta"}} },
+    "2014": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen" },
+    "2015": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2014-15: nl.wikipedia y en.wikipedia del club, en.wikipedia de la temporada (sin tabla de camisetas), búsqueda web general y kit archive (403): ninguna fuente nombra el sponsor de camiseta"}} },
+    "2017": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen" },
+    "2018": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen" },
+    "2019": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen" },
+    "2020": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen" },
+    "2021": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen" },
+    "2022": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen" },
+    "2023": { "estadio": "Gemeentelijk Sportparkstadion", "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen" },
+    "2024": { "sponsor": "PepperMill Casino", "fuente": "https://www.limburgnieuws.be/maasmechelen/1692380237-peppermill-casino-nieuwe-hoofdsponsor-van-patro-eisden-maasmechelen-18-augustus-2023--a.html", "estadio": "Gemeentelijk Sportparkstadion", "fuentes": {"estadio":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"} },
+    "2025": { "estadio": "Gemeentelijk Sportparkstadion", "capacidad": 5500, "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League" }
   },
   "raallalouviere-be": {
-    "2018": {
-      "estadio": "Stade du Tivoli",
-      "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado: en.wikipedia RAAL La Louvière y la lista de la Second Amateur Division 2018-19 (sin tabla de camisetas); ninguna fuente nombra el sponsor de camiseta; liga del año sin fuente que distinga RAAL de La Louvière Centre" }
-      }
-    },
-    "2019": {
-      "estadio": "Stade du Tivoli",
-      "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado: en.wikipedia RAAL La Louvière y la lista de la Second Amateur Division 2018-19 (sin tabla de camisetas); ninguna fuente nombra el sponsor de camiseta; liga del año sin fuente que distinga RAAL de La Louvière Centre" }
-      }
-    },
-    "2020": {
-      "estadio": "Stade du Tivoli",
-      "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)"
-    },
-    "2021": {
-      "estadio": "Stade du Tivoli",
-      "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)"
-    },
-    "2022": {
-      "estadio": "Stade du Tivoli",
-      "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)"
-    },
-    "2023": {
-      "estadio": "Stade du Tivoli",
-      "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)"
-    },
-    "2024": {
-      "estadio": "Stade du Tivoli",
-      "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)"
-    },
-    "2025": {
-      "estadio": "Stade du Tivoli",
-      "capacidad": 12500,
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
-    }
+    "2018": { "estadio": "Stade du Tivoli", "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado: en.wikipedia RAAL La Louvière y la lista de la Second Amateur Division 2018-19 (sin tabla de camisetas); ninguna fuente nombra el sponsor de camiseta; liga del año sin fuente que distinga RAAL de La Louvière Centre"}} },
+    "2019": { "estadio": "Stade du Tivoli", "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado: en.wikipedia RAAL La Louvière y la lista de la Second Amateur Division 2018-19 (sin tabla de camisetas); ninguna fuente nombra el sponsor de camiseta; liga del año sin fuente que distinga RAAL de La Louvière Centre"}} },
+    "2020": { "estadio": "Stade du Tivoli", "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)" },
+    "2021": { "estadio": "Stade du Tivoli", "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)" },
+    "2022": { "estadio": "Stade du Tivoli", "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)" },
+    "2023": { "estadio": "Stade du Tivoli", "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)" },
+    "2024": { "estadio": "Stade du Tivoli", "fuente": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)" },
+    "2025": { "estadio": "Stade du Tivoli", "capacidad": 12500, "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League" }
   },
   "rwdm-be": {
-    "2019": {
-      "estadio": "Edmond Machtens",
-      "fuente": "https://bx1.be/sport/d1-amateurs-le-rwdm-partage-avec-le-lierse-pour-son-dernier-match-de-la-saison-a-domicile/"
-    },
-    "2020": {
-      "estadio": "Edmond Machtens",
-      "fuente": "https://bx1.be/communes/molenbeek-saint-jean/rwdm-molenbeek-signe-convention-doccupation-stade-machtens/"
-    },
-    "2024": {
-      "estadio": "Edmond Machtens",
-      "sponsor": "Golden Palace",
-      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_A_2023-24_(voetbal_Belgi%C3%AB)"
-    },
-    "2025": {
-      "estadio": "Edmond Machtens",
-      "capacidad": 12266,
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
-    }
+    "2019": { "estadio": "Edmond Machtens", "fuente": "https://bx1.be/sport/d1-amateurs-le-rwdm-partage-avec-le-lierse-pour-son-dernier-match-de-la-saison-a-domicile/" },
+    "2020": { "estadio": "Edmond Machtens", "fuente": "https://bx1.be/communes/molenbeek-saint-jean/rwdm-molenbeek-signe-convention-doccupation-stade-machtens/" },
+    "2024": { "estadio": "Edmond Machtens", "sponsor": "Golden Palace", "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_A_2023-24_(voetbal_Belgi%C3%AB)" },
+    "2025": { "estadio": "Edmond Machtens", "capacidad": 12266, "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League" }
   },
   "zultewaregem-be": {
-    "2025": {
-      "estadio": "Regenboogstadion",
-      "capacidad": 12500,
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
-    }
+    "2025": { "estadio": "Regenboogstadion", "capacidad": 12500, "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League" }
   },
   "ohleuven-be": {
-    "2022": {
-      "estadio": "Den Dreef",
-      "sponsor": "King Power",
-      "fuente": "https://nl.wikipedia.org/w/index.php?oldid=72035336"
-    },
-    "2023": {
-      "estadio": "Den Dreef",
-      "sponsor": "Star Casino",
-      "fuente": "https://nl.wikipedia.org/w/index.php?oldid=72035336"
-    },
-    "2024": {
-      "estadio": "Den Dreef",
-      "sponsor": "Star Casino",
-      "fuente": "https://nl.wikipedia.org/w/index.php?oldid=72035336"
-    }
+    "2022": { "estadio": "Den Dreef", "sponsor": "King Power", "fuente": "https://nl.wikipedia.org/w/index.php?oldid=72035336" },
+    "2023": { "estadio": "Den Dreef", "sponsor": "Star Casino", "fuente": "https://nl.wikipedia.org/w/index.php?oldid=72035336" },
+    "2024": { "estadio": "Den Dreef", "sponsor": "Star Casino", "fuente": "https://nl.wikipedia.org/w/index.php?oldid=72035336" }
   },
   "beerschot-be": {
-    "2022": {
-      "estadio": "Olympisch Stadion",
-      "sponsor": "Yelo",
-      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_A_2021-22_(voetbal_Belgi%C3%AB)"
-    },
-    "2024": {
-      "estadio": "Olympisch Stadion",
-      "sponsor": "Yelo",
-      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)"
-    }
+    "2022": { "estadio": "Olympisch Stadion", "sponsor": "Yelo", "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_A_2021-22_(voetbal_Belgi%C3%AB)" },
+    "2024": { "estadio": "Olympisch Stadion", "sponsor": "Yelo", "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)" }
   },
   "luzern-ch": {
-    "2020": {
-      "sponsor": "Otto's",
-      "fuente": "sponsor: Geschäftsbericht FC Luzern Gruppe 2019/20, 'Hauptsponsor: OTTO'S' (pág. 59 del visor, Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.pdf)"
-    },
-    "2024": {
-      "estadio": "Swissporarena",
-      "fuente": "estadio: Geschäftsbericht FC Luzern Gruppe 2023/24, 'Heimspiele der 1. Mannschaft Männer in der swissporarena' (Clubes/Suiza/Luzern/geschaeftsbericht-2023-24.md L33)"
-    },
-    "2025": {
-      "estadio": "Swissporarena",
-      "capacidad": 16490,
-      "sponsor": "Otto's",
-      "marca": "Erreà",
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League ; https://www.kleinreport.ch/news/ottos-geht-mit-dem-fc-luzern-die-verlangerung-102596/ ; capacidad 16.490: de.wikipedia Swissporarena y tabla de estadios de 2024–25 Swiss Super League"
-    }
+    "2020": { "sponsor": "Otto's", "fuente": "sponsor: Geschäftsbericht FC Luzern Gruppe 2019/20, 'Hauptsponsor: OTTO'S' (pág. 59 del visor, Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.pdf)" },
+    "2024": { "estadio": "Swissporarena", "fuente": "estadio: Geschäftsbericht FC Luzern Gruppe 2023/24, 'Heimspiele der 1. Mannschaft Männer in der swissporarena' (Clubes/Suiza/Luzern/geschaeftsbericht-2023-24.md L33)" },
+    "2025": { "estadio": "Swissporarena", "capacidad": 16490, "sponsor": "Otto's", "marca": "Erreà", "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League ; https://www.kleinreport.ch/news/ottos-geht-mit-dem-fc-luzern-die-verlangerung-102596/ ; capacidad 16.490: de.wikipedia Swissporarena y tabla de estadios de 2024–25 Swiss Super League" }
   },
   "stgallen-ch": {
-    "2020": {
-      "sponsor": "St.Galler Kantonalbank",
-      "fuente": "Geschäftsbericht FC St.Gallen 2019/20 (Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md, L27: \"unserem Hauptsponsor, der St.Galler Kantonalbank\")"
-    },
-    "2024": {
-      "estadio": "Kybunpark",
-      "sponsor": "St.Galler Kantonalbank",
-      "marca": "Puma",
-      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1377593185 (sponsor y marca, 2023–24 Swiss Super League); estadio: Geschäftsbericht FC St.Gallen 2023/24 (Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.md, L25 y L56: 'kybunpark'); sin capacidad"
-    },
-    "2025": {
-      "estadio": "Kybunpark",
-      "capacidad": 20660,
-      "sponsor": "St.Galler Kantonalbank",
-      "marca": "Puma",
-      "fuente": "https://en.wikipedia.org/wiki/Kybunpark ; https://www.footballkitarchive.com/fc-st-gallen-2024-25-special-kit-371785/"
-    }
+    "2020": { "sponsor": "St.Galler Kantonalbank", "fuente": "Geschäftsbericht FC St.Gallen 2019/20 (Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md, L27: \"unserem Hauptsponsor, der St.Galler Kantonalbank\")" },
+    "2024": { "estadio": "Kybunpark", "sponsor": "St.Galler Kantonalbank", "marca": "Puma", "fuente": "https://en.wikipedia.org/w/index.php?oldid=1377593185 (sponsor y marca, 2023–24 Swiss Super League); estadio: Geschäftsbericht FC St.Gallen 2023/24 (Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.md, L25 y L56: 'kybunpark'); sin capacidad" },
+    "2025": { "estadio": "Kybunpark", "capacidad": 20660, "sponsor": "St.Galler Kantonalbank", "marca": "Puma", "fuente": "https://en.wikipedia.org/wiki/Kybunpark ; https://www.footballkitarchive.com/fc-st-gallen-2024-25-special-kit-371785/" }
   },
   "fcutrecht-nl": {
-    "2025": {
-      "estadio": "Stadion Galgenwaard",
-      "capacidad": 23750,
-      "sponsor": "Conclusion Digital Transformation",
-      "marca": "Castore",
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Eredivisie (tablas de estadios y de Personnel and kits)"
-    }
+    "2025": { "estadio": "Stadion Galgenwaard", "capacidad": 23750, "sponsor": "Conclusion Digital Transformation", "marca": "Castore", "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Eredivisie (tablas de estadios y de Personnel and kits)" }
   },
   "fredrikstad-no": {
-    "2012": {
-      "estadio": "Fredrikstad Stadion",
-      "capacidad": 13300,
-      "sponsor": "Stabburet",
-      "marca": "Adidas",
-      "fuente": "sponsor: Stabburet fue el principal sponsor de FFK con el logo en el pecho desde marzo de 2010 (https://www.dagligvarehandelen.no/stabburet-blir-sponsor-for-ffk/1107374) durante siete temporadas, hasta diciembre de 2016 (https://www.fredrikstadfk.no/nyheter/takket-av-stabburet-og-orkla); marca: Aftenposten, febrero de 2012, 'Fredrikstad skifter fra Umbro til Adidas' (https://www.aftenposten.no/sport/fotball/i/dOJBPO/drakt-bloggen-finnes-fredrikstads-nye-drakt-her); estadio y capacidad: https://en.wikipedia.org/wiki/2012_Tippeligaen"
-    },
-    "2018": {
-      "estadio": "Fredrikstad Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Fredrikstad_Stadion"
-    }
+    "2012": { "estadio": "Fredrikstad Stadion", "capacidad": 13300, "sponsor": "Stabburet", "marca": "Adidas", "fuente": "sponsor: Stabburet fue el principal sponsor de FFK con el logo en el pecho desde marzo de 2010 (https://www.dagligvarehandelen.no/stabburet-blir-sponsor-for-ffk/1107374) durante siete temporadas, hasta diciembre de 2016 (https://www.fredrikstadfk.no/nyheter/takket-av-stabburet-og-orkla); marca: Aftenposten, febrero de 2012, 'Fredrikstad skifter fra Umbro til Adidas' (https://www.aftenposten.no/sport/fotball/i/dOJBPO/drakt-bloggen-finnes-fredrikstads-nye-drakt-her); estadio y capacidad: https://en.wikipedia.org/wiki/2012_Tippeligaen" },
+    "2018": { "estadio": "Fredrikstad Stadion", "fuente": "https://en.wikipedia.org/wiki/Fredrikstad_Stadion" }
   },
   "basel-ch": {
-    "2005": {
-      "sponsor": "Novartis",
-      "estadio": "St. Jakob-Park",
-      "capacidad": 33433,
-      "fuente": "https://en.wikipedia.org/wiki/FC_Basel (estadio y capacidad original de 33.433); Clubes/Suiza/Basel/geschaeftsbericht-2005.md L146 (\"Hauptsponsor Novartis\")"
-    },
-    "2006": {
-      "sponsor": "Novartis",
-      "estadio": "St. Jakob-Park",
-      "capacidad": 33433,
-      "fuente": "https://en.wikipedia.org/wiki/FC_Basel (estadio y capacidad original de 33.433); Clubes/Suiza/Basel/geschaeftsbericht-2006.md L318 (\"Hauptsponsor Novartis\")"
-    },
-    "2007": {
-      "sponsor": "Novartis",
-      "estadio": "St. Jakob-Park",
-      "fuente": "https://en.wikipedia.org/wiki/FC_Basel (estadio); Clubes/Suiza/Basel/geschaeftsbericht-2007.md L161 (\"Hauptsponsor Novartis\")"
-    },
-    "2008": {
-      "sponsor": "Novartis",
-      "fuente": "Clubes/Suiza/Basel/geschaeftsbericht-2008.md L292 (\"Hauptsponsor Novartis\")"
-    },
-    "2009": {
-      "sponsor": "Novartis",
-      "fuente": "Clubes/Suiza/Basel/geschaeftsbericht-2009.md L194 (\"Hauptsponsor Novartis\")"
-    },
-    "2010": {
-      "sponsor": "Novartis",
-      "fuente": "Clubes/Suiza/Basel/geschaeftsbericht-2010.md L382 (\"Hauptsponsor Novartis\")"
-    },
-    "2011": {
-      "sponsor": "Novartis",
-      "fuente": "Clubes/Suiza/Basel/geschaeftsbericht-2011.md L267 (\"Hauptsponsor Novartis\")"
-    }
+    "2005": { "sponsor": "Novartis", "estadio": "St. Jakob-Park", "capacidad": 33433, "fuente": "https://en.wikipedia.org/wiki/FC_Basel (estadio y capacidad original de 33.433); Clubes/Suiza/Basel/geschaeftsbericht-2005.md L146 (\"Hauptsponsor Novartis\")" },
+    "2006": { "sponsor": "Novartis", "estadio": "St. Jakob-Park", "capacidad": 33433, "fuente": "https://en.wikipedia.org/wiki/FC_Basel (estadio y capacidad original de 33.433); Clubes/Suiza/Basel/geschaeftsbericht-2006.md L318 (\"Hauptsponsor Novartis\")" },
+    "2007": { "sponsor": "Novartis", "estadio": "St. Jakob-Park", "fuente": "https://en.wikipedia.org/wiki/FC_Basel (estadio); Clubes/Suiza/Basel/geschaeftsbericht-2007.md L161 (\"Hauptsponsor Novartis\")" },
+    "2008": { "sponsor": "Novartis", "fuente": "Clubes/Suiza/Basel/geschaeftsbericht-2008.md L292 (\"Hauptsponsor Novartis\")" },
+    "2009": { "sponsor": "Novartis", "fuente": "Clubes/Suiza/Basel/geschaeftsbericht-2009.md L194 (\"Hauptsponsor Novartis\")" },
+    "2010": { "sponsor": "Novartis", "fuente": "Clubes/Suiza/Basel/geschaeftsbericht-2010.md L382 (\"Hauptsponsor Novartis\")" },
+    "2011": { "sponsor": "Novartis", "fuente": "Clubes/Suiza/Basel/geschaeftsbericht-2011.md L267 (\"Hauptsponsor Novartis\")" }
   },
   "sarpsborg08-no": {
-    "2008": {
-      "estadio": "Sarpsborg Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Sarpsborg_Stadion"
-    }
+    "2008": { "estadio": "Sarpsborg Stadion", "fuente": "https://en.wikipedia.org/wiki/Sarpsborg_Stadion" }
   },
   "molde-no": {
-    "2008": {
-      "estadio": "Aker Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Aker_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2008): en.wikipedia del club y de la temporada (sin tabla de camisetas de esa temporada), Football Kit Archive (lista a Sparebanken Møre desde 2003 sin separar temporadas) y búsqueda web general: ninguna fuente fecha el sponsor de camiseta de 2008." }
-      }
-    },
-    "2010": {
-      "estadio": "Aker Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Aker_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2010): en.wikipedia del club y de la temporada (sin tabla de camisetas de esa temporada), Football Kit Archive (lista a Sparebanken Møre desde 2003 sin separar temporadas) y búsqueda web general: ninguna fuente fecha el sponsor de camiseta de 2010." }
-      }
-    },
-    "2011": {
-      "estadio": "Aker Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Aker_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2011): en.wikipedia del club y de la temporada (sin tabla de camisetas de esa temporada), Football Kit Archive (lista a Sparebanken Møre desde 2003 sin separar temporadas) y búsqueda web general: ninguna fuente fecha el sponsor de camiseta de 2011." }
-      }
-    },
-    "2012": {
-      "estadio": "Aker Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Aker_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2012): en.wikipedia del club y de la temporada (sin tabla de camisetas de esa temporada), Football Kit Archive (lista a Sparebanken Møre desde 2003 sin separar temporadas) y búsqueda web general: ninguna fuente fecha el sponsor de camiseta de 2012." }
-      }
-    }
+    "2008": { "estadio": "Aker Stadion", "fuente": "https://en.wikipedia.org/wiki/Aker_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2008): en.wikipedia del club y de la temporada (sin tabla de camisetas de esa temporada), Football Kit Archive (lista a Sparebanken Møre desde 2003 sin separar temporadas) y búsqueda web general: ninguna fuente fecha el sponsor de camiseta de 2008."}} },
+    "2010": { "estadio": "Aker Stadion", "fuente": "https://en.wikipedia.org/wiki/Aker_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2010): en.wikipedia del club y de la temporada (sin tabla de camisetas de esa temporada), Football Kit Archive (lista a Sparebanken Møre desde 2003 sin separar temporadas) y búsqueda web general: ninguna fuente fecha el sponsor de camiseta de 2010."}} },
+    "2011": { "estadio": "Aker Stadion", "fuente": "https://en.wikipedia.org/wiki/Aker_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2011): en.wikipedia del club y de la temporada (sin tabla de camisetas de esa temporada), Football Kit Archive (lista a Sparebanken Møre desde 2003 sin separar temporadas) y búsqueda web general: ninguna fuente fecha el sponsor de camiseta de 2011."}} },
+    "2012": { "estadio": "Aker Stadion", "fuente": "https://en.wikipedia.org/wiki/Aker_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2012): en.wikipedia del club y de la temporada (sin tabla de camisetas de esa temporada), Football Kit Archive (lista a Sparebanken Møre desde 2003 sin separar temporadas) y búsqueda web general: ninguna fuente fecha el sponsor de camiseta de 2012."}} }
   },
   "rapidwien-at": {
-    "2013": {
-      "estadio": "Gerhard-Hanappi-Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Gerhard_Hanappi_Stadium",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2012-13): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2014": {
-      "estadio": "Gerhard-Hanappi-Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Gerhard_Hanappi_Stadium",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2013-14): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2015": {
-      "estadio": "Gerhard-Hanappi-Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Gerhard_Hanappi_Stadium",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2014-15): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2016": {
-      "estadio": "Gerhard-Hanappi-Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Gerhard_Hanappi_Stadium",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2015-16): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2017": {
-      "estadio": "Allianz Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2016-17): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2018": {
-      "estadio": "Allianz Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2017-18): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2019": {
-      "estadio": "Allianz Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2018-19): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2020": {
-      "estadio": "Allianz Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2019-20): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2021": {
-      "estadio": "Allianz Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2020-21): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2022": {
-      "estadio": "Allianz Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2021-22): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2023": {
-      "estadio": "Allianz Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2022-23): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2025": {
-      "estadio": "Allianz Stadion",
-      "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2024-25): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada." }
-      }
-    },
-    "2024": {
-      "estadio": "Allianz Stadion",
-      "marca": "Puma",
-      "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion",
-      "fuentes": {
-        "marca": "https://www.footyheadlines.com/2023/07/rapid-wien-23-24-away-kit.html"
-      },
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2023-24): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines (kit 2023-24) y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de 2023-24." }
-      }
-    }
+    "2013": { "estadio": "Gerhard-Hanappi-Stadion", "fuente": "https://en.wikipedia.org/wiki/Gerhard_Hanappi_Stadium", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2012-13): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2014": { "estadio": "Gerhard-Hanappi-Stadion", "fuente": "https://en.wikipedia.org/wiki/Gerhard_Hanappi_Stadium", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2013-14): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2015": { "estadio": "Gerhard-Hanappi-Stadion", "fuente": "https://en.wikipedia.org/wiki/Gerhard_Hanappi_Stadium", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2014-15): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2016": { "estadio": "Gerhard-Hanappi-Stadion", "fuente": "https://en.wikipedia.org/wiki/Gerhard_Hanappi_Stadium", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2015-16): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2017": { "estadio": "Allianz Stadion", "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2016-17): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2018": { "estadio": "Allianz Stadion", "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2017-18): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2019": { "estadio": "Allianz Stadion", "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2018-19): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2020": { "estadio": "Allianz Stadion", "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2019-20): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2021": { "estadio": "Allianz Stadion", "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2020-21): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2022": { "estadio": "Allianz Stadion", "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2021-22): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2023": { "estadio": "Allianz Stadion", "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2022-23): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} },
+    "2024": { "estadio": "Allianz Stadion", "marca": "Puma", "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion", "fuentes": {"marca":"https://www.footyheadlines.com/2023/07/rapid-wien-23-24-away-kit.html"}, "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2023-24): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines (kit 2023-24) y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de 2023-24."}} },
+    "2025": { "estadio": "Allianz Stadion", "fuente": "https://en.wikipedia.org/wiki/Allianz_Stadion", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2024-25): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de esa temporada."}} }
   },
   "valerenga-no": {
-    "2023": {
-      "estadio": "Intility Arena",
-      "fuente": "https://en.wikipedia.org/wiki/2023_V%C3%A5lerenga_Fotball_season",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el 2026-10-20 (temporada 2023): en.wikipedia de la temporada y del club, snl.no, efdn.org (Coop como socio, no como sponsor de camiseta) y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de 2023." }
-      }
-    },
-    "2024": {
-      "estadio": "Intility Arena",
-      "capacidad": 16556,
-      "sponsor": "OBOS",
-      "marca": "Adidas",
-      "fuente": "https://en.wikipedia.org/wiki/2024_Norwegian_First_Division"
-    }
+    "2023": { "estadio": "Intility Arena", "fuente": "https://en.wikipedia.org/wiki/2023_V%C3%A5lerenga_Fotball_season", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el 2026-10-20 (temporada 2023): en.wikipedia de la temporada y del club, snl.no, efdn.org (Coop como socio, no como sponsor de camiseta) y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de 2023."}} },
+    "2024": { "estadio": "Intility Arena", "capacidad": 16556, "sponsor": "OBOS", "marca": "Adidas", "fuente": "https://en.wikipedia.org/wiki/2024_Norwegian_First_Division" }
   },
   "girona-es": {
-    "2021": {
-      "sin-fuente": {
-        "sponsor": {
-          "buscado": "2026-10-21",
-          "por": "Claude (Onboarding 8)",
-          "intentos": [
-            { "clase": "informe-anual", "donde": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.md, informe de gestión L5520-5562: nombra a Puma como patrocinador técnico y a CaixaBank, Patronat de Turisme Costa Brava Pirineu de Girona y FactorEnergía como patrocinadores, sin decir cuál iba en el frente de la camiseta", "resultado": "sin-dato" },
-            { "clase": "prensa", "donde": "https://www.footyheadlines.com/2020/08/girona-20-21-home-away-third-kits.html (presentación de las camisetas 2020-21: solo Puma y la inscripción del 90 aniversario, no nombra sponsor de pecho)", "resultado": "sin-dato" },
-            { "clase": "club-oficial", "donde": "búsqueda web «gironafc.cat nueva camiseta 2020-21 Puma Girona FC presenta equipaciones patrocinador»: el sitio del club no aparece entre los resultados", "resultado": "sin-dato" },
-            { "clase": "archivo-web", "donde": "https://footballkitarchive.com/girona-kits", "resultado": "inaccesible" }
-          ]
-        }
-      }
-    }
+    "2021": { "sin-fuente": {"sponsor":{"buscado":"2026-10-21","por":"Claude (Onboarding 8)","intentos":[{"clase":"informe-anual","donde":"Clubes/España/Girona FC/cuentas-anuales-2020-2021.md, informe de gestión L5520-5562: nombra a Puma como patrocinador técnico y a CaixaBank, Patronat de Turisme Costa Brava Pirineu de Girona y FactorEnergía como patrocinadores, sin decir cuál iba en el frente de la camiseta","resultado":"sin-dato"},{"clase":"prensa","donde":"https://www.footyheadlines.com/2020/08/girona-20-21-home-away-third-kits.html (presentación de las camisetas 2020-21: solo Puma y la inscripción del 90 aniversario, no nombra sponsor de pecho)","resultado":"sin-dato"},{"clase":"club-oficial","donde":"búsqueda web «gironafc.cat nueva camiseta 2020-21 Puma Girona FC presenta equipaciones patrocinador»: el sitio del club no aparece entre los resultados","resultado":"sin-dato"},{"clase":"archivo-web","donde":"https://footballkitarchive.com/girona-kits","resultado":"inaccesible"}]}} }
   },
   "chapecoense-br": {
-    "2019": {
-      "estadio": "Arena Condá",
-      "capacidad": 20089,
-      "sponsor": "Aurora Coop",
-      "marca": "Umbro",
-      "fuente": "https://en.wikipedia.org/wiki/2019_Campeonato_Brasileiro_S%C3%A9rie_A"
-    }
+    "2019": { "estadio": "Arena Condá", "capacidad": 20089, "sponsor": "Aurora Coop", "marca": "Umbro", "fuente": "https://en.wikipedia.org/wiki/2019_Campeonato_Brasileiro_S%C3%A9rie_A" }
   },
   "fcemmen-nl": {
-    "2020": {
-      "estadio": "De Oude Meerdijk",
-      "capacidad": 8600,
-      "sponsor": "Hitachi Capital Mobility",
-      "marca": "Hummel",
-      "fuente": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Eredivisie"
-    },
-    "2021": {
-      "estadio": "De Oude Meerdijk",
-      "capacidad": 8600,
-      "sponsor": "EasyToys",
-      "marca": "Hummel",
-      "fuente": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Eredivisie"
-    }
+    "2020": { "estadio": "De Oude Meerdijk", "capacidad": 8600, "sponsor": "Hitachi Capital Mobility", "marca": "Hummel", "fuente": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Eredivisie" },
+    "2021": { "estadio": "De Oude Meerdijk", "capacidad": 8600, "sponsor": "EasyToys", "marca": "Hummel", "fuente": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Eredivisie" }
   },
   "fredericia-dk": {
-    "2021": {
-      "estadio": "Monjasa Park",
-      "capacidad": 4000,
-      "sponsor": "Monjasa",
-      "marca": "Hummel",
-      "fuente": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Danish_1st_Division"
-    },
-    "2022": {
-      "estadio": "Monjasa Park",
-      "capacidad": 4000,
-      "sponsor": "Monjasa",
-      "marca": "Hummel",
-      "fuente": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Danish_1st_Division"
-    },
-    "2023": {
-      "estadio": "Monjasa Park",
-      "capacidad": 4000,
-      "sponsor": "Monjasa",
-      "marca": "Hummel",
-      "fuente": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Danish_1st_Division"
-    },
-    "2024": {
-      "estadio": "Monjasa Park",
-      "capacidad": 6000,
-      "sponsor": "Monjasa",
-      "marca": "Hummel",
-      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Danish_1st_Division"
-    }
+    "2021": { "estadio": "Monjasa Park", "capacidad": 4000, "sponsor": "Monjasa", "marca": "Hummel", "fuente": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Danish_1st_Division" },
+    "2022": { "estadio": "Monjasa Park", "capacidad": 4000, "sponsor": "Monjasa", "marca": "Hummel", "fuente": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Danish_1st_Division" },
+    "2023": { "estadio": "Monjasa Park", "capacidad": 4000, "sponsor": "Monjasa", "marca": "Hummel", "fuente": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Danish_1st_Division" },
+    "2024": { "estadio": "Monjasa Park", "capacidad": 6000, "sponsor": "Monjasa", "marca": "Hummel", "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Danish_1st_Division" }
   },
   "celtic-gb": {
-    "2021": {
-      "estadio": "Celtic Park",
-      "capacidad": 60411,
-      "sponsor": "Dafabet",
-      "marca": "Adidas",
-      "fuente": "https://en.wikipedia.org/wiki/Celtic_Park",
-      "fuentes": {
-        "sponsor": "https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/",
-        "marca": "https://sportskhabri.com/celtic-fc-sponsors-2020-21/"
-      }
-    },
-    "2022": {
-      "estadio": "Celtic Park",
-      "capacidad": 60411,
-      "sponsor": "Dafabet",
-      "marca": "Adidas",
-      "fuente": "https://en.wikipedia.org/wiki/Celtic_Park",
-      "fuentes": {
-        "sponsor": "https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/",
-        "marca": "https://sportskhabri.com/celtic-fc-sponsors-2020-21/"
-      }
-    },
-    "2023": {
-      "estadio": "Celtic Park",
-      "capacidad": 60411,
-      "sponsor": "Dafabet",
-      "marca": "Adidas",
-      "fuente": "https://en.wikipedia.org/wiki/Celtic_Park",
-      "fuentes": {
-        "sponsor": "https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/",
-        "marca": "https://sportskhabri.com/celtic-fc-sponsors-2020-21/"
-      }
-    },
-    "2024": {
-      "estadio": "Celtic Park",
-      "capacidad": 60411,
-      "sponsor": "Dafabet",
-      "marca": "Adidas",
-      "fuente": "https://en.wikipedia.org/wiki/Celtic_Park",
-      "fuentes": {
-        "sponsor": "https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/",
-        "marca": "https://sportskhabri.com/celtic-fc-sponsors-2020-21/"
-      }
-    },
-    "2025": {
-      "estadio": "Celtic Park",
-      "capacidad": 60411,
-      "sponsor": "Dafabet",
-      "marca": "Adidas",
-      "fuente": "https://en.wikipedia.org/wiki/Celtic_Park",
-      "fuentes": {
-        "sponsor": "https://sponsorship.sportbusiness.com/news/celtic-lands-long-term-extension-with-kit-sponsor-dafabet",
-        "marca": "https://www.scotsman.com/sport/football/celtic/celtic-fc-new-kit-unveil-adidas-home-shirt-heres-when-it-is-available-to-buy-and-the-price-4645920"
-      }
-    }
+    "2021": { "estadio": "Celtic Park", "capacidad": 60411, "sponsor": "Dafabet", "marca": "Adidas", "fuente": "https://en.wikipedia.org/wiki/Celtic_Park", "fuentes": {"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"} },
+    "2022": { "estadio": "Celtic Park", "capacidad": 60411, "sponsor": "Dafabet", "marca": "Adidas", "fuente": "https://en.wikipedia.org/wiki/Celtic_Park", "fuentes": {"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"} },
+    "2023": { "estadio": "Celtic Park", "capacidad": 60411, "sponsor": "Dafabet", "marca": "Adidas", "fuente": "https://en.wikipedia.org/wiki/Celtic_Park", "fuentes": {"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"} },
+    "2024": { "estadio": "Celtic Park", "capacidad": 60411, "sponsor": "Dafabet", "marca": "Adidas", "fuente": "https://en.wikipedia.org/wiki/Celtic_Park", "fuentes": {"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"} },
+    "2025": { "estadio": "Celtic Park", "capacidad": 60411, "sponsor": "Dafabet", "marca": "Adidas", "fuente": "https://en.wikipedia.org/wiki/Celtic_Park", "fuentes": {"sponsor":"https://sponsorship.sportbusiness.com/news/celtic-lands-long-term-extension-with-kit-sponsor-dafabet","marca":"https://www.scotsman.com/sport/football/celtic/celtic-fc-new-kit-unveil-adidas-home-shirt-heres-when-it-is-available-to-buy-and-the-price-4645920"} }
   },
   "burnley-gb": {
-    "2022": {
-      "estadio": "Turf Moor",
-      "capacidad": 21944,
-      "sponsor": "Spreadex Sports",
-      "marca": "Umbro",
-      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1376972129"
-    },
-    "2023": {
-      "estadio": "Turf Moor",
-      "capacidad": 21944,
-      "sponsor": "Classic Football Shirts (Home & Third) EMA Equity Partners (Away)",
-      "marca": "Umbro",
-      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1376810302"
-    }
+    "2022": { "estadio": "Turf Moor", "capacidad": 21944, "sponsor": "Spreadex Sports", "marca": "Umbro", "fuente": "https://en.wikipedia.org/w/index.php?oldid=1376972129" },
+    "2023": { "estadio": "Turf Moor", "capacidad": 21944, "sponsor": "Classic Football Shirts (Home & Third) EMA Equity Partners (Away)", "marca": "Umbro", "fuente": "https://en.wikipedia.org/w/index.php?oldid=1376810302" }
   },
   "besiktas-tr": {
-    "2006": {
-      "estadio": "BJK İnönü Stadium",
-      "capacidad": 32086,
-      "sponsor": "Turkcell",
-      "fuente": "estadio y capacidad: https://en.wikipedia.org/wiki/2006%E2%80%9307_S%C3%BCper_Lig (tabla de estadios; mismo estadio en 2005-06); sponsor: Beşiktaş Futbol Yatırımları, balance 31.05.2006 (Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.md L1900: \"forma göğüs ve kol reklam sponsoru olan Turkcell\")"
-    },
-    "2007": {
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado el sponsor de camiseta 2006-07: en.wikipedia 2006-07 Süper Lig (sin tabla de camisetas), balance 31.05.2007 del club (sin mención del sponsor de camiseta): sin fuente" }
-      }
-    },
-    "2023": {
-      "estadio": "Vodafone Park",
-      "capacidad": 42590,
-      "sponsor": "Rain",
-      "marca": "Adidas",
-      "fuente": "https://en.wikipedia.org/wiki/2022%E2%80%9323_S%C3%BCper_Lig ; sponsor: https://www.turkgun.com/spor/besiktasta-yeni-sezon-forma-tanitimi-yapildi/184356 (Rain, patrocinio de pecho 2022-23)"
-    }
+    "2006": { "estadio": "BJK İnönü Stadium", "capacidad": 32086, "sponsor": "Turkcell", "fuente": "estadio y capacidad: https://en.wikipedia.org/wiki/2006%E2%80%9307_S%C3%BCper_Lig (tabla de estadios; mismo estadio en 2005-06); sponsor: Beşiktaş Futbol Yatırımları, balance 31.05.2006 (Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.md L1900: \"forma göğüs ve kol reklam sponsoru olan Turkcell\")" },
+    "2007": { "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado el sponsor de camiseta 2006-07: en.wikipedia 2006-07 Süper Lig (sin tabla de camisetas), balance 31.05.2007 del club (sin mención del sponsor de camiseta): sin fuente"}} },
+    "2023": { "estadio": "Vodafone Park", "capacidad": 42590, "sponsor": "Rain", "marca": "Adidas", "fuente": "https://en.wikipedia.org/wiki/2022%E2%80%9323_S%C3%BCper_Lig ; sponsor: https://www.turkgun.com/spor/besiktasta-yeni-sezon-forma-tanitimi-yapildi/184356 (Rain, patrocinio de pecho 2022-23)" }
   },
   "llaneros-co": {
-    "2025": {
-      "estadio": "Bello Horizonte – Rey Pelé",
-      "capacidad": 15000,
-      "sponsor": "Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta",
-      "marca": "Aerosport",
-      "fuente": "https://en.wikipedia.org/wiki/2025_Categor%C3%ADa_Primera_A_season (tablas Stadia y Personnel and kits; sponsors de camiseta listados: Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta)"
-    }
+    "2025": { "estadio": "Bello Horizonte – Rey Pelé", "capacidad": 15000, "sponsor": "Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta", "marca": "Aerosport", "fuente": "https://en.wikipedia.org/wiki/2025_Categor%C3%ADa_Primera_A_season (tablas Stadia y Personnel and kits; sponsors de camiseta listados: Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta)" }
   },
   "liersekempenzonen-be": {
-    "2018": {
-      "estadio": "Herman Vanderpoortenstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)"
-    },
-    "2019": {
-      "estadio": "Herman Vanderpoortenstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)"
-    },
-    "2020": {
-      "estadio": "Herman Vanderpoortenstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)"
-    },
-    "2021": {
-      "estadio": "Herman Vanderpoortenstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)"
-    }
+    "2018": { "estadio": "Herman Vanderpoortenstadion", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)" },
+    "2019": { "estadio": "Herman Vanderpoortenstadion", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)" },
+    "2020": { "estadio": "Herman Vanderpoortenstadion", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)" },
+    "2021": { "estadio": "Herman Vanderpoortenstadion", "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)" }
   },
   "alianzafc-co": {
-    "2023": {
-      "estadio": "Daniel Villa Zapata",
-      "capacidad": 10400,
-      "marca": "Pin-Go",
-      "fuente": "https://en.wikipedia.org/wiki/2023_Categor%C3%ADa_Primera_A_season (tablas de estadios y de camisetas, Alianza Petrolera)",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado: la celda de sponsor de camiseta de Alianza Petrolera está vacía en en.wikipedia 2023 Categoría Primera A; es.wikipedia del club sin sponsor; ninguna fuente lo nombra" }
-      }
-    }
+    "2023": { "estadio": "Daniel Villa Zapata", "capacidad": 10400, "marca": "Pin-Go", "fuente": "https://en.wikipedia.org/wiki/2023_Categor%C3%ADa_Primera_A_season (tablas de estadios y de camisetas, Alianza Petrolera)", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado: la celda de sponsor de camiseta de Alianza Petrolera está vacía en en.wikipedia 2023 Categoría Primera A; es.wikipedia del club sin sponsor; ninguna fuente lo nombra"}} }
   },
   "atleticobucaramanga-co": {
-    "2019": {
-      "estadio": "Alfonso López",
-      "capacidad": 28000,
-      "fuente": "https://en.wikipedia.org/wiki/2019_Categor%C3%ADa_Primera_A_season (tabla de estadios)",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado: en.wikipedia 2019 Categoría Primera A (tabla de camisetas sin la fila del club en lo leído), es.wikipedia del club y la web general: ninguna fuente nombra el sponsor de camiseta de ese año" }
-      }
-    },
-    "2020": {
-      "estadio": "Alfonso López",
-      "capacidad": 28000,
-      "fuente": "https://en.wikipedia.org/wiki/2020_Categor%C3%ADa_Primera_A_season (tabla de estadios) ; en 2020 jugó algunos partidos en el Daniel Villa Zapata de Barrancabermeja por el Preolímpico",
-      "sin-fuente": {
-        "sponsor": { "legacy": true, "texto": "Buscado: en.wikipedia 2020 Categoría Primera A (tabla de camisetas sin la fila del club en lo leído), es.wikipedia del club y la web general: ninguna fuente nombra el sponsor de camiseta de ese año" }
-      }
-    }
+    "2019": { "estadio": "Alfonso López", "capacidad": 28000, "fuente": "https://en.wikipedia.org/wiki/2019_Categor%C3%ADa_Primera_A_season (tabla de estadios)", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado: en.wikipedia 2019 Categoría Primera A (tabla de camisetas sin la fila del club en lo leído), es.wikipedia del club y la web general: ninguna fuente nombra el sponsor de camiseta de ese año"}} },
+    "2020": { "estadio": "Alfonso López", "capacidad": 28000, "fuente": "https://en.wikipedia.org/wiki/2020_Categor%C3%ADa_Primera_A_season (tabla de estadios) ; en 2020 jugó algunos partidos en el Daniel Villa Zapata de Barrancabermeja por el Preolímpico", "sin-fuente": {"sponsor":{"legacy":true,"texto":"Buscado: en.wikipedia 2020 Categoría Primera A (tabla de camisetas sin la fila del club en lo leído), es.wikipedia del club y la web general: ninguna fuente nombra el sponsor de camiseta de ese año"}} }
   },
   "bathrugby-gb": {
-    "2021": {
-      "estadio": "The Recreation Ground",
-      "capacidad": 14509,
-      "sponsor": "Dyson",
-      "marca": "Macron",
-      "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; Dyson, title sponsor desde 2014-15 sin interrupción: https://sponsorship.sportbusiness.com/news/dyson-fills-bath-rugbys-sponsorship-vacuum/ y cuentas 2021-22 de Bath Rugby Limited (Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md L159)"
-    },
-    "2022": {
-      "estadio": "The Recreation Ground",
-      "capacidad": 14509,
-      "sponsor": "Dyson",
-      "marca": "Macron",
-      "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; cuentas 2021-22 de Bath Rugby Limited, Strategic Report: 'Dyson as the title sponsor' (Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md L159)"
-    },
-    "2023": {
-      "estadio": "The Recreation Ground",
-      "capacidad": 14509,
-      "sponsor": "Dyson",
-      "marca": "Macron",
-      "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; cuentas 2022-23 de Bath Rugby Limited, Strategic Report: 'Dyson as the Club's title sponsor' (Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md L198)"
-    },
-    "2024": {
-      "estadio": "The Recreation Ground",
-      "capacidad": 14509,
-      "sponsor": "Dyson",
-      "marca": "Castore",
-      "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; Dyson en el frente de la camiseta, sponsor desde 2014 (https://rugbyworld.com/?p=170243 y https://www.the42.ie/article.php?id=6988895)"
-    },
-    "2025": {
-      "estadio": "The Recreation Ground",
-      "capacidad": 14509,
-      "sponsor": "Dyson",
-      "marca": "Castore",
-      "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; camisetas 2024-25 de la Premiership: Bath con Dyson al frente y Castore (https://rugbyworld.com/?p=170243)"
-    }
+    "2021": { "estadio": "The Recreation Ground", "capacidad": 14509, "sponsor": "Dyson", "marca": "Macron", "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; Dyson, title sponsor desde 2014-15 sin interrupción: https://sponsorship.sportbusiness.com/news/dyson-fills-bath-rugbys-sponsorship-vacuum/ y cuentas 2021-22 de Bath Rugby Limited (Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md L159)" },
+    "2022": { "estadio": "The Recreation Ground", "capacidad": 14509, "sponsor": "Dyson", "marca": "Macron", "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; cuentas 2021-22 de Bath Rugby Limited, Strategic Report: 'Dyson as the title sponsor' (Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md L159)" },
+    "2023": { "estadio": "The Recreation Ground", "capacidad": 14509, "sponsor": "Dyson", "marca": "Macron", "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; cuentas 2022-23 de Bath Rugby Limited, Strategic Report: 'Dyson as the Club's title sponsor' (Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md L198)" },
+    "2024": { "estadio": "The Recreation Ground", "capacidad": 14509, "sponsor": "Dyson", "marca": "Castore", "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; Dyson en el frente de la camiseta, sponsor desde 2014 (https://rugbyworld.com/?p=170243 y https://www.the42.ie/article.php?id=6988895)" },
+    "2025": { "estadio": "The Recreation Ground", "capacidad": 14509, "sponsor": "Dyson", "marca": "Castore", "fuente": "https://en.wikipedia.org/wiki/Bath_Rugby (infobox: The Recreation Ground, capacidad 14.509; tabla de marcas: Macron 2020-2023, Castore desde 2023-24) ; camisetas 2024-25 de la Premiership: Bath con Dyson al frente y Castore (https://rugbyworld.com/?p=170243)" }
   }
 }

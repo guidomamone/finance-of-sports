@@ -23,16 +23,22 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 
 ## A. En marcha
 
-### 1. 366 · (Pipeline): meter en el pipeline las tools que una sesión todavía tiene que acordarse de correr
+### 1. 366 · (Pipeline): lo que falta de meter las tools al pipeline (la puerta única ya está)
 
-TOOLS SUELTAS (Guido, 2026-10-22: «que tools se pueden meter en pipeline así no hay tantas tools dando vuelta»). Medido con el inventario de `tools/` (150 archivos, 2,9 MB; 13 se corren a mano, el resto son módulos que otra tool llama). Lo que una sesión sigue teniendo que recordar, de más a menos: (a) `segunda-fuente-liga.mjs`: la corre una sesión después de asignar una liga; sale de la cadena de `alta-club.mjs` si se arma, por país, la tabla de URLs de RSSSF (patrón `tables<letra>/<código><año>.html`, sacable de las fuentes ya guardadas en `tools/club-league-reference/`) y se mantiene la compuerta de las ligas en grupos; (b) las herramientas de medición (`medir-cargar`, `medir-verificar`, `medir-ixbrl-consolidado`, `lotes-prueba`, `prueba-escribir`) en un solo `medir.mjs <qué>`; (c) los adaptadores de sourcing (`wayback-*`, `exa-search`, `reddit-archive-search`, `twitterapiio-search`, `listar-brreg`, `fca-mutuals-fetch`, `companies-house-fetch`) en un `buscar-fuente.mjs <canal>`; (d) una sola puerta, `tools/fos.mjs <comando>`, que lista los comandos con una línea cada uno, para que el índice de tools lo arme la tool y no una sesión; (e) la compuerta de `cargar.mjs` (`estadio-sponsor.mjs`) escribe sola en `tools/contexto-manual.json` el estadio y la capacidad cuando `dato-publico.mjs` dice «confirmado» (dos fuentes que coinciden), con las dos citas, en vez de imprimirlos para que una sesión los pegue; (f) `tools/archivar.mjs <ruta>`: mueve a `Admin/Archive/`, corre `indice-md.mjs --escribir` y avisa qué documento queda huérfano (hoy es `git mv` a mano más el índice); (g) `tools/silenciar.mjs <código> <ruta o club> --motivo "..."`: agrega la entrada a `tools/audit-ignore.json` exigiendo el motivo y la verificación contra el documento (hoy se escribe el JSON a mano), con el mismo registro que `decision.mjs`.
-Terminado cuando: (a) `alta-club.mjs` deja la segunda fuente de la liga sin que una sesión la corra (o la línea de HALLAZGOS dice por qué no), (b) y (c) están hechos con los comandos viejos como alias que avisan, `node tools/fos.mjs` lista cada comando documentado en `Admin/PIPELINE.md`, (e) una carga con estadio «confirmado» no necesita pegar nada, y (f) y (g) existen, se prueban con un caso real y la skill de auditoría y `Admin/CONVENCIONES.md` los citan en lugar del paso a mano.
+HECHO: `tools/fos.mjs` (la lista y el atajo de las tools que se corren a mano, con los grupos `medir` y `buscar`; `--check` dice las que quedaron sueltas), `tools/archivar.mjs`, `tools/silenciar.mjs`, y la compuerta de `estadio-sponsor.mjs` escribe sola el estadio cuando Wikidata y Wikipedia coinciden. QUEDA: (a) `segunda-fuente-liga.mjs` sale de la cadena de `alta-club.mjs`. Medido: hoy solo dos liga-años la piden (Super League 2 griega 2025 y Liga 3 portuguesa 2023, las dos en grupos, que frenan en la compuerta a propósito), así que armar por país la tabla de URLs de RSSSF (patrón `tables<letra>/<código><año>.html`) y del título de cada tabla cuesta más de lo que ahorra; se hace si `liga-una-fuente` pasa de unas diez filas. (b) La CAPACIDAD que da Wikidata se escribe sola cuando el TODO 367 mida la tolerancia. (c) `fos.mjs` agrupa los comandos pero no fusiona el código: `medir-cargar`, `medir-verificar` y compañía siguen siendo archivos aparte (los comandos viejos no se tocaron); fusionarlos es un refactor que solo se justifica si dos de ellos repiten código.
+Terminado cuando: (a) se hace o la línea de `Admin/HALLAZGOS-pipeline.md` dice por qué no, y (b) está escrito con el umbral del 367. Si se decide que (a) y (c) no valen el costo, el punto se cierra con esa línea.
 
-Verificar: existe tools/fos.mjs
-Verificar: existe tools/archivar.mjs
-Verificar: existe tools/silenciar.mjs
+Verificar: manual
 
-### 2. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
+### 2. 367 · (Pipeline): una segunda fuente de estadio, capacidad y fundación que no sea Wikipedia, y un agente con reglas para lo que no coincide
+
+DATOS PÚBLICOS SIN DEPENDER DE UNA SOLA ENCICLOPEDIA (Guido, 2026-10-22). Hoy Wikidata es el candidato y el artículo de Wikipedia la «confirmación»; las dos se alimentan entre sí y Wikidata sola acierta el estadio en 43 % (`Admin/HALLAZGOS-pipeline.md`). Qué hacer: (1) elegir una fuente independiente que una tool pueda leer sin IA (la web oficial del club que da Wikidata en P856; la federación o la liga; OpenStreetMap para el estadio y su capacidad; Transfermarkt si sus términos lo permiten: se mide cuál responde mejor sobre los 185 club-años que hoy se completan a mano); (2) **regla de decisión por tolerancia**, medida y no supuesta: en la capacidad, si las dos fuentes difieren menos de X % (o menos de N plazas) se toma la de Wikipedia; en el estadio, si el nombre coincide tras normalizar (sin acentos, sin sponsor) se toma; si no, no se escribe; (3) lo que no pasa la regla lo resuelve **un agente con reglas** (Sonnet, no Opus) con la escalera de búsqueda de `Admin/PIPELINE.md` («Datos públicos de un club») como prompt fijo, que devuelve valor y cita o «no encontrado» y nunca inventa. Los umbrales X y N salen de medir sobre los 185 casos, no de este texto.
+Terminado cuando: hay una segunda fuente que no es Wikipedia ni Wikidata en `tools/dato-publico.mjs`, los umbrales medidos están en `Admin/HALLAZGOS-pipeline.md` con su tabla, y el agente tiene su prompt fijo en `Admin/PIPELINE.md`.
+
+Verificar: contiene tools/dato-publico.mjs | segundaFuente
+Verificar: manual
+
+### 3. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
 
 SUELDOS ADENTRO DE UNA SOLA LÍNEA (Auditora 4, 3ª corrida de P2 y P3, 2026-10-21). 12 británicos (Aston Villa, Brentford, Brighton,
 Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves; 47 club-años con el estado por función),
@@ -42,7 +48,7 @@ los 10 británicos nuevos del 356 (sus sueldos entraron con `incluye wages_squad
 
 Verificar: manual
 
-### 3. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
+### 4. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
 
 CATEGORÍA PARA SUBSIDIOS Y DONACIONES (Auditora 4, 2ª corrida de P2 y P3, 2026-10-21; Guido: «dejalo como to do»). Buena parte de los
 ~130 `catchall-dominante` son subsidios, donaciones y aportes (Subsídios, Επιχορηγήσεις, Целевые взносы; ligas bajas de Grecia, Rusia y
@@ -61,7 +67,7 @@ siempre igual (la propuesta de `hideIfZero` para la fila nueva y para Educación
 
 Verificar: manual
 
-### 4. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
+### 5. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
 
 LO QUE QUEDÓ SIN DUEÑO DEL RELEVAMIENTO DE SKILLS (une el 330). Aplicado: las cinco skills nuevas, las partes 1, 3 y 7 de
 `Admin/propuestas/257-skills.md`, la memoria vaciada y el candado de skills del hook. Falta: (a) que `perfil-en-cola` de `cargar.mjs`
@@ -70,7 +76,7 @@ nunca frene (Pipeline); (b) la duda de Deportes Tolima, `dudas-por-club.md:201`,
 
 Verificar: manual
 
-### 5. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
+### 6. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
 
 CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing buscó en Companies House los clubes que no tenemos y
 presentan en iXBRL y bajó los 198 `.xhtml` (84 MB, los 68 con PDF oficial al lado renombrados a `-ixbrl`); Onboarding los carga con
@@ -103,7 +109,7 @@ iXBRL que presenta y el sitio no tiene está cargado o descartado con motivo. Fa
 
 Verificar: manual
 
-### 6. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
+### 7. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
 
 FRENO DE DOCUMENTOS DE GRUPO (sale del 356, Fleetwood/Jaymel; regla votada 3 a 0 en CONVENCIONES-DATOS, «Un consolidado de grupo con
 negocios ajenos al club», umbral del 10 % sobre lo impreso). Terminado cuando: `perimetro-senales.mjs` o `cargar.mjs` frenan un documento de
@@ -113,7 +119,7 @@ skill de auditoría (la Auditora). Lo hace Pipeline.
 
 Verificar: manual
 
-### 7. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+### 8. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 LO APROBADO DE PIPELINE 15 QUE NO SE APLICÓ (Auditora 5 y 6, `Admin/registros/auditoria-proceso.jsonl`; el detalle
 en `Admin/Archive/sesion-pipeline-2026-10-21.md`, «Pipeline 15»). Terminado cuando: (a) barrido de lecturas recortadas: `jevDe` de
@@ -130,14 +136,6 @@ se saca `cabecera` de `perimetroHeredado` (`cargar.mjs:215-220`), que se calcula
 Guido). Lo hace Pipeline (a, b, c) y la principal (d). Las dos preguntas de la Auditora 5 ya están contestadas en CONVENCIONES-DATOS:
 el tramo corto va como C y la temporada COVID lleva la etiqueta en pantalla, sin publicNote.
 
-Verificar: manual
-
-### 8. 367 · (Pipeline): una segunda fuente de estadio, capacidad y fundación que no sea Wikipedia, y un agente con reglas para lo que no coincide
-
-DATOS PÚBLICOS SIN DEPENDER DE UNA SOLA ENCICLOPEDIA (Guido, 2026-10-22). Hoy Wikidata es el candidato y el artículo de Wikipedia la «confirmación»; las dos se alimentan entre sí y Wikidata sola acierta el estadio en 43 % (`Admin/HALLAZGOS-pipeline.md`). Qué hacer: (1) elegir una fuente independiente que una tool pueda leer sin IA (la web oficial del club que da Wikidata en P856; la federación o la liga; OpenStreetMap para el estadio y su capacidad; Transfermarkt si sus términos lo permiten: se mide cuál responde mejor sobre los 185 club-años que hoy se completan a mano); (2) **regla de decisión por tolerancia**, medida y no supuesta: en la capacidad, si las dos fuentes difieren menos de X % (o menos de N plazas) se toma la de Wikipedia; en el estadio, si el nombre coincide tras normalizar (sin acentos, sin sponsor) se toma; si no, no se escribe; (3) lo que no pasa la regla lo resuelve **un agente con reglas** (Sonnet, no Opus) con la escalera de búsqueda de `Admin/PIPELINE.md` («Datos públicos de un club») como prompt fijo, que devuelve valor y cita o «no encontrado» y nunca inventa. Los umbrales X y N salen de medir sobre los 185 casos, no de este texto.
-Terminado cuando: hay una segunda fuente que no es Wikipedia ni Wikidata en `tools/dato-publico.mjs`, los umbrales medidos están en `Admin/HALLAZGOS-pipeline.md` con su tabla, y el agente tiene su prompt fijo en `Admin/PIPELINE.md`.
-
-Verificar: contiene tools/dato-publico.mjs | segundaFuente
 Verificar: manual
 
 ## D. Orden de la casa

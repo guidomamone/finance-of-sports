@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 946 — Puerta única de tools, archivar, silenciar, estadio confirmado que se escribe solo (2026-10-22) [366]
+
+- `tools/fos.mjs` + `tools/fos-comandos.json`: lista y atajo de las tools que se corren a mano (grupos `medir` y `buscar`); `--check` dice las sueltas. `renombrar-ids.mjs` (migración terminada) pasó a `tools/archivo/`.
+- `tools/archivar.mjs` (mueve a `Admin/Archive/`, lista quién lo cita, regenera el índice) y `tools/silenciar.mjs` (entrada de `audit-ignore.json` con verificación y motivo obligatorios, solo si el hallazgo dispara hoy).
+- `estadio-sponsor.mjs`: si Wikidata y el artículo de Wikipedia nombran el mismo estadio, lo escribe en `contexto-manual.json` con las dos citas y vuelve a correr la compuerta (no probado con un caso vivo: hoy ningún club tiene el estadio faltante); la capacidad no se escribe sola. `contexto-manual.json` se normalizó de formato (mismo contenido).
+- `CLAUDE.md` recortado: «Cada PDF nuevo» y «Gotchas de tooling». TODO 367 pasó a prioridad 2; el 366 queda con lo que no se hizo (segunda fuente de liga en `alta-club`, capacidad automática, fusión de código).
+
 ## Versión 945 — Modo de trabajo en un solo archivo; sin candado de skills en una sesión (2026-10-22) [366]
 
 - `.claude/modo.json` (`node tools/modo.mjs`) dice si se trabaja en una sesión o en varias; `tools/hooks/pre-tool.mjs` aplica solo las reglas del modo (el candado de skills, archivar, Opus, permission_mode, docs de la principal, merge, plan y rsync son de varias sesiones). La prueba corre cada caso en su modo (31 casos).

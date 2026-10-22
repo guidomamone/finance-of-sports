@@ -1,6 +1,6 @@
 [
  {
-  "_comentario": "Hallazgos de tools/audit.js que alguien YA revisó contra el documento fuente y dio por buenos. `code` es el código del hallazgo, `match` un pedazo de su texto, `motivo` por qué está bien. REGLA: no se agrega una entrada sin haber MIRADO la fuente. Silenciar sin verificar es el atajo que este proyecto no se puede permitir: un hallazgo silenciado no vuelve a aparecer nunca.",
+  "_comentario": "Hallazgos de tools/audit.js que alguien YA revisó contra el documento fuente y dio por buenos. `code` es el código del hallazgo, `match` un pedazo de su texto, `motivo` por qué está bien. PARA AGREGAR UNA: node tools/silenciar.mjs <código> '<texto>' --verificado '<documento y línea>' --motivo '...'. REGLA: no se agrega una entrada sin haber MIRADO la fuente. Silenciar sin verificar es el atajo que este proyecto no se puede permitir: un hallazgo silenciado no vuelve a aparecer nunca.",
   "code": "_ejemplo_no_activo",
   "match": "_ejemplo_no_activo",
   "motivo": "Entrada de ejemplo, no silencia nada. Copiala para agregar una real."

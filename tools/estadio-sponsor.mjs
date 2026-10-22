@@ -30,6 +30,7 @@ import { resolve } from 'node:path';
 import { createRequire } from 'node:module';
 import vm from 'node:vm';
 import { deporteDeClub } from './deporte-club.mjs';
+import { serializar } from './contexto-manual-escribir.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const REF = resolve(ROOT, 'tools', 'club-league-reference');
@@ -624,13 +625,32 @@ async function main() {
     if (faltan.some((f) => f.includes('sin lista'))) console.log('Un ejercicio "sin lista": primero la lista de equipos de esa liga-año (node tools/listas-lote.mjs), y se vuelve a probar.');
     // Wikidata como CANDIDATO (no se escribe solo): coincide con el valor revisado a mano en ~43 % de los casos, difiere de nombre en ~17 % (nombres por época) y no tiene dato en el resto
     // (Admin/HALLAZGOS-pipeline.md). Un candidato con su cita ahorra la búsqueda web, que es lo que cuesta tokens y a veces sale mal.
+    // (TODO 366 e) Si Wikidata Y el artículo de Wikipedia del club nombran el mismo estadio, ese estadio se escribe solo en contexto-manual.json (con las dos citas) y la
+    // compuerta se vuelve a correr una vez; si no coinciden, solo se imprime. La CAPACIDAD no se escribe sola: sin cruzar coincide el 42 % (la regla de tolerancia es el TODO 367).
     if (soloClub && faltan.some((f) => /falta[^:]*estadio|falta estadio/i.test(f))) {
       try {
         const { datoPublico } = await import('./dato-publico.mjs'); const C = cargar().CLUBS[soloClub];
-        for (const f of faltan.filter((x) => /estadio/.test(x.split('falta')[1] || '')).slice(0, 4)) {
+        const confirmados = [];
+        for (const f of faltan.filter((x) => /estadio/.test(x.split('falta')[1] || '')).slice(0, 8)) {
           const y = Number((f.match(/^\S+ (\d{4})/) || [])[1]); if (!y || !C) continue;
           const r = await datoPublico([C.displayName, C.name].filter(Boolean), { pais: C.country, anio: y });
-          console.log(r.error ? `  Wikidata ${y}: ${r.error}` : `  Wikidata ${y}: ${r.delAnio?.error || `${r.delAnio.estadio}, capacidad ${r.delAnio.capacidad ?? '(sin dato)'}`} · fuente ${r.delAnio?.fuenteEstadio || r.fuente} · ${r.delAnio?.confirmadoPorWikipedia ? `confirmado por ${r.delAnio.confirmadoPorWikipedia} (dos fuentes: se puede pegar en contexto-manual)` : 'SOLO Wikidata: buscar una segunda fuente (la página del club) antes de pegarlo'}`);
+          const da = r.delAnio;
+          console.log(r.error ? `  Wikidata ${y}: ${r.error}` : `  Wikidata ${y}: ${da?.error || `${da.estadio}, capacidad ${da.capacidad ?? '(sin dato)'}`} · fuente ${da?.fuenteEstadio || r.fuente} · ${da?.confirmadoPorWikipedia ? `confirmado por ${da.confirmadoPorWikipedia}` : 'SOLO Wikidata: buscar una segunda fuente (la página del club) antes de pegarlo'}`);
+          if (!r.error && da?.estadio && da.confirmadoPorWikipedia) confirmados.push({ y, estadio: da.estadio, citas: `${da.fuenteEstadio} y ${da.confirmadoPorWikipedia}` });
+        }
+        if (confirmados.length && escribir && !process.env.ESTADIO_AUTO) {
+          const man = existsSync(MANUAL) ? JSON.parse(readFileSync(MANUAL, 'utf8')) : {};
+          for (const c of confirmados) {
+            const e = ((man[soloClub] ??= {})[c.y] ??= {});
+            if (e.estadio) continue; // lo manual no se pisa
+            e.estadio = c.estadio; (e.fuentes ??= {}).estadio = `${c.citas} (dato-publico.mjs: Wikidata y Wikipedia coinciden)`;
+            e.fuente ??= e.fuentes.estadio;
+          }
+          writeFileSync(MANUAL, serializar(man));
+          console.log(`escrito en tools/contexto-manual.json: estadio de ${soloClub} ${confirmados.map((c) => `${c.y} ${c.estadio}`).join(', ')} (dos fuentes). Se vuelve a correr la compuerta.`);
+          const { spawnSync } = await import('node:child_process');
+          const re = spawnSync(process.execPath, [import.meta.filename, ...process.argv.slice(2)], { stdio: 'inherit', env: { ...process.env, ESTADIO_AUTO: '1' } });
+          process.exit(re.status ?? 1);
         }
       } catch (e) { /* sin red o sin entidad: queda el paso a mano */ }
     }

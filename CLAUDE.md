@@ -51,6 +51,8 @@ Bash (no se pueden chequear antes de correr); su mensaje dice qué usar en cambi
   y `Admin/ESTADO.md` (qué hay armado hoy), sola, sin que Guido lo pida. `Admin/TODO.md` NO se lee entero nunca: `node tools/todo.mjs`
   da la lista ordenada (qué sigue) y `node tools/todo.mjs <id>` el cuerpo de un punto. Qué hay cargado de cada club:
   `Admin/ESTADO-clubes.md` (generado). `Admin/CONVENCIONES.md` (reglas de proceso) se lee cuando la skill de la tarea lo pide.
+- **Las tools que se corren a mano** están en una lista: `node tools/fos.mjs` (cada comando con una línea y cuándo se corre; `node tools/fos.mjs <comando> …` lo corre). Una tool nueva
+  que una sesión tenga que correr se agrega a `tools/fos-comandos.json`; `node tools/fos.mjs --check` dice cuáles quedaron sueltas.
 - **El índice de los `.md`** (`Admin/INDICE-md.md`, generado, 25 KB: no se lee entero, se consulta con grep): cada documento vivo con qué es, cuándo se
   lee, quién lo cita y a cuál manda. `node tools/indice-md.mjs` lista los huérfanos (nadie los cita: candidatos a archivar) y los que no declaran
   qué son (primera línea `<!-- md: qué es | leer: cuándo -->`). Al crear, mover o borrar un `.md`: `node tools/indice-md.mjs --escribir`.
@@ -84,13 +86,8 @@ Con cualquier cambio real (datos, features, estructura, copy), sin que Guido lo 
 
 ## Cada PDF nuevo: transcribirlo a Markdown ANTES de usarlo
 
-- Ningún PDF se usa sin transcribirlo antes a un `.md` completo y fiel. En el onboarding es la etapa 2 del pipeline
-  (`tools/pipeline.mjs --sin-jev`, ver la skill `club-or-year-onboarding`).
-- El PDF y su `.md` van juntos en `Clubes/<País>/<Club>/` (país y club capitalizados); nunca una carpeta por club o país en la raíz.
-- Los PDFs no se trackean (`.gitignore`); las transcripciones sí. Un documento que no es del dominio del club (una réplica de
-  hinchas, por ejemplo) se guarda pero no se trackea.
-- El detalle (estructura de carpetas, motores de transcripción y cuándo usar cada uno, Tesseract, chequeo de fidelidad, trampas de
-  PDF): `Admin/PIPELINE.md`, sección "Documentos fuente".
+Ningún PDF se usa sin transcribirlo antes a un `.md` completo y fiel; los dos van juntos en `Clubes/<País>/<Club>/` (los PDFs no se trackean; las
+transcripciones sí). Cómo, con qué motor y las trampas de PDF: `Admin/PIPELINE.md`, «Documentos fuente».
 
 ## Precisión antes que velocidad
 
@@ -99,12 +96,6 @@ los rubros suman el total oficial o de prensa conocido (`verifyTieOuts()` en `in
 
 ## Gotchas de tooling
 
-Viven donde se usan:
-
-- **Si el navegador de preview muestra algo viejo** (`data/*.js`, `js/*.js` o el propio `index.html`): no es un bug hasta probar lo
-  contrario. Lo único que funciona es cambiar la URL: subí `ASSET_V` (la constante y cada `?v=`) y navegá con `?cb=<algo nuevo>`.
-  El detalle, y las otras trampas del navegador (un `alert()` abierto congela todo; el screenshot sale en blanco con la página
-  scrolleada): `Admin/PANTALLA.md`, "Trampas del navegador de preview".
-- Trampas de PDF y de grep (`grep -oP` cerca de acentos, `pdfinfo` con bytes NUL, `pdftotext` que devuelve mojibake):
-  `Admin/PIPELINE.md`, "Documentos fuente".
-- Varios agentes en paralelo comparten el Browser pane: skill `club-sourcing`, "Gotcha de tooling".
+**Si el navegador de preview muestra algo viejo, no es un bug hasta probar lo contrario:** subí `ASSET_V` (la constante y cada `?v=`) y navegá con
+`?cb=<algo nuevo>`. Las demás trampas: del navegador, `Admin/PANTALLA.md`, «Trampas del navegador de preview»; de PDF y de grep, `Admin/PIPELINE.md`,
+«Documentos fuente»; varios agentes en el Browser pane, skill `club-sourcing`, «Gotcha de tooling».
