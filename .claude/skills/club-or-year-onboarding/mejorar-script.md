@@ -13,6 +13,8 @@
 
 ## 5. Lotes de prueba (medir CUALQUIER cambio de script antes y después)
 
+**No hay excepción: sin medición no se commitea un cambio a una tool del pipeline** (se incumplió el 2026-10-22 con `caja-deuda.mjs`, `cargar.mjs` y otras, y quedó como deuda en el TODO 371, que también pide el hook que lo exige y que las listas se regeneren solas). Qué lote: el CHICO (`prueba-rapida.txt`) siempre primero; el MEDIANO si el cambio está acotado a una etapa o a una familia de formato y el chico dio idéntico; el COMPLETO si toca lógica compartida (categorías, perímetro, escala o tipo de cambio, signos, parser común de tablas, `publicarCambios()`), si el mediano mostró cualquier diferencia o antes de cerrar un punto del TODO. Si el cambio apunta a un país o formato, además todos los documentos de esa familia (al menos 3). El resultado, «idéntico» o cada diferencia explicada, va a la entrada de CHANGELOG.
+
 Lo cargado tiene que dar idéntico. Tres listas, sin repetidos: `Admin/lotes/prueba-rapida.txt` (a mano: los casos que ya rompieron
 algo una vez, cada uno con su motivo en un comentario), `Admin/lotes/prueba-mediana.txt` (la rápida + 3 documentos por club: el más viejo,
 el del medio y el más nuevo) y `Admin/lotes/prueba-completa.txt` (todos los documentos con verificación). La mediana y la completa las arma

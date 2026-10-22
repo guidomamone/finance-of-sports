@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 952 — Puntos 371 a 372 y regla de medir antes de tocar el pipeline (2026-10-22) [371] [372]
+
+- TODO 371 (prioridad 1): registro de mediciones, hook de commit, tabla de qué lote usar por tool y lotes que se regeneran solos; deuda de medición de lo cambiado hoy sin medir (`caja-deuda.mjs`, `cargar.mjs`, `estadio-sponsor.mjs`, `segunda-fuente-liga.mjs`, `dato-publico.mjs`, `audit.js`). 368 con el detalle de los 20 años y la recursión; 370 en prioridad 3 (P2 23, P3 132); 372 (prioridad baja) para las 67 etiquetas excluidas.
+- `CLAUDE.md` y `mejorar-script.md`: la regla de medir antes y después, sin excepción, con el criterio de lote chico, mediano y completo.
+- Sin medición todavía de los cambios al pipeline de las versiones 944 a 951: ver el punto 371.
+
 ## Versión 951 — Sueldos de los británicos: 38 club-años resueltos y la cadena entera sola (2026-10-22) [351]
 
 - `caja-deuda.mjs --personal`: compuerta de plausibilidad (menos de 15 % de los ingresos no es el personal del club: descartó 8,3 M£ de Aston Villa 2020, que era la nota de la filial sin jugadores); `--partir` marca `incluye wages_squad --posible` cuando ninguna fila global alcanza; con `--escribir` corre ajustes → verificar → Jev → Claude → cargar; el segundo año de un club ya no figura como «ya tiene los ajustes»; un total sin rótulo se publica como «Staff costs (total de la nota de personal)».
