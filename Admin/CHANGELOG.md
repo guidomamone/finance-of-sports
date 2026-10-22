@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 948 — Tabla de relevancia de las filas del Formato simplificado (2026-10-22) [350]
+
+- `tools/relevancia-filas.mjs` (`fos filas`) + `Admin/mediciones/filas-formato-simplificado.md` (generado, entra a la lista de `tools/generadores.mjs`): por fila, club-años y clubes con número, peso cuando la tienen, cero real, «—», dónde (país y deporte), y la candidata «Subsidios y donaciones» (estricta y amplia). `--etiqueta` mide otra candidata; `--fila` lista los clubes.
+- Skill `club-or-year-onboarding`, `trampas.md`: qué hacer cuando la compuerta frena por estadio o capacidad (candidato, regla de 5 %, prompt fijo para un agente Sonnet).
+- TODO 350 queda solo con la decisión de Guido sobre Educación y subsidios.
+
 ## Versión 947 — Se cierran 366 y 367: segunda fuente medida, regla de capacidad, agente con prompt fijo (2026-10-22) [366] [367]
 
 - **Corrige la Versión 946:** el estadio «confirmado» NO se escribe solo. Medido en 73 club-años, aun confirmado por el artículo del club coincide con el manual en 70 %: el resto es el mismo estadio con el nombre de otra época. Se quitó esa escritura de `estadio-sponsor.mjs` (y `contexto-manual-escribir.mjs`); el candidato se imprime con el aviso de verificar el nombre de ese año. `contexto-manual.json` queda con el formato normalizado, mismo contenido.

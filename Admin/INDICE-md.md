@@ -5,7 +5,7 @@
 Lo escribe `node tools/indice-md.mjs --escribir`; no se edita a mano. Cada fila: ruta · KB · qué es · cuándo se lee · cuántos documentos o tools lo citan (←) · a qué otros documentos vivos manda (→).
 Huérfano = nadie lo cita; sin marca = no declara qué es ni cuándo se lee (primera línea `<!-- md: qué es | leer: cuándo -->`).
 
-Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 353, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 123, `Admin/lotes` 80.
+Carpetas que se cuentan sin listar: `Admin/mediciones` 77, `Admin/Archive` 353, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 123, `Admin/lotes` 80.
 
 ## CLAUDE.md y Admin
 
@@ -13,7 +13,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 353, 
 - `Admin/ARQUITECTURA.md` · ~70 KB · cómo funciona el motor de Finanzas y los scripts que escriben data/ · **leer:** al tocar el motor (js/finanzas-*) o los scripts que escriben data/; la sección que toca · ←9 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/CHANGELOG.md` · ~190 KB · qué cambió y cuándo (la última semana; lo anterior está en Archive) · **leer:** solo por grep de una palabra, nunca de corrido · ←27 · →CLAUDE.md, ARQUITECTURA.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md
 - `Admin/CONVENCIONES-DATOS.md` · ~60 KB · reglas de datos: categorías, perímetro, períodos, tipos de cambio · **leer:** al cargar o corregir datos de un club; la sección que toca · ←29 · →CLAUDE.md, CONVENCIONES.md, PANTALLA.md, dudas-por-club.md, propuestas/transicion-y-covid.md, club-data-mapping/SKILL.md
-- `Admin/CONVENCIONES.md` · ~15 KB · reglas de proceso vigentes · **leer:** cuando la skill de la tarea lo pide · ←21 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, PANTALLA.md, TODO.md, dudas-por-club.md
+- `Admin/CONVENCIONES.md` · ~15 KB · reglas de proceso vigentes · **leer:** cuando la skill de la tarea lo pide · ←22 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, PANTALLA.md, TODO.md, dudas-por-club.md
 - `Admin/ESTADO-clubes.md` · ~30 KB · qué hay cargado de cada club (generado) · **leer:** si hace falta el detalle club por club · ←18 · →ESTADO.md
 - `Admin/ESTADO.md` · ~20 KB · qué hay armado hoy (snapshot del proyecto) · **leer:** siempre, al arrancar una sesión · ←16 · →CLAUDE.md, ARQUITECTURA.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, HALLAZGOS-pipeline.md
 - `Admin/HALLAZGOS-pipeline.md` · ~50 KB · lo que se midió y no entró al pipeline, con el porqué · **leer:** antes de proponer una mejora al pipeline, por grep · ←16 · →PIPELINE.md, TODO.md, club-or-year-onboarding/club-nuevo.md
@@ -47,7 +47,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 353, 
 - `.claude/skills/auditoria-finance-of-sports/SKILL.md` · ~20 KB · Auditoría de rutina del proyecto finance-of-sports. El chequeo transversal y periódico de que el sitio entero está sano y va a seguir estándolo, disti · **leer:** la skill se carga sola cuando la tarea es la suya · ←1 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, PANTALLA.md, PIPELINE.md
 - `.claude/skills/club-data-mapping/SKILL.md` · ~20 KB · Supuestos y patrones para mapear el balance/presupuesto NATIVO de un club de fútbol (categorías propias del documento, ej. "Generales/Específicos/Dive · **leer:** la skill se carga sola cuando la tarea es la suya · ←5 · →ARQUITECTURA.md, CONVENCIONES-DATOS.md, PIPELINE.md, TODO.md, dudas-por-club.md, club-data-mapping/referencia/casos-por-pais-y-formato.md
 - `.claude/skills/club-data-mapping/referencia/casos-por-pais-y-formato.md` · ~10 KB · Casos por país y formato de documento · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←3 · →CONVENCIONES-DATOS.md, dudas-por-club.md
-- `.claude/skills/club-data-mapping/referencia/formato-simplificado.md` · ~10 KB · Formato simplificado: buckets de la pantalla, grossDebt y sector · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←8 · →CONVENCIONES-DATOS.md, PIPELINE.md
+- `.claude/skills/club-data-mapping/referencia/formato-simplificado.md` · ~10 KB · Formato simplificado: buckets de la pantalla, grossDebt y sector · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←10 · →CONVENCIONES-DATOS.md, PIPELINE.md
 - `.claude/skills/club-data-mapping/referencia/fx.md` · ~10 KB · Tipos de cambio y monedas · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←8 · →ARQUITECTURA.md
 - `.claude/skills/club-data-mapping/referencia/leer-pdf.md` · ~10 KB · Leer un PDF fuente difícil: escaneos, tablas rotadas, filas acumuladas · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←4 · →PIPELINE.md, club-sourcing/paises/Argentina.md
 - `.claude/skills/club-or-year-onboarding/SKILL.md` · <5 KB · Onboardear clubes en finance-of-sports con el pipeline (de un PDF a un año cargado en el sitio) — correr lotes en segundo plano, leer los resultados y · **leer:** la skill se carga sola cuando la tarea es la suya · ←5 · →CLAUDE.md, HALLAZGOS-pipeline.md, PIPELINE.md, TODO.md, club-or-year-onboarding/carga-con-tokens.md, club-or-year-onboarding/club-nuevo.md

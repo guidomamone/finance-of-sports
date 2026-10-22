@@ -14,7 +14,7 @@
 // queFalla(salida de audit.js): las claves de los chequeos P0 y P1 que fallaron ("faltantes-desfasado"), para decir en el aviso CUÁL.
 // ============================================================================
 
-export const GENERADORES = ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-club-pages.js', 'tools/entidades.mjs', 'tools/generate-como-corre-stats.js', 'tools/faltantes-liga.mjs', 'tools/estimar.mjs', 'tools/generate-sponsors.js', 'tools/generar-correcciones.mjs', 'tools/generate-fuentes-index.js', 'tools/auditoria.mjs', 'tools/indice-md.mjs'];
+export const GENERADORES = ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-club-pages.js', 'tools/entidades.mjs', 'tools/generate-como-corre-stats.js', 'tools/faltantes-liga.mjs', 'tools/estimar.mjs', 'tools/generate-sponsors.js', 'tools/generar-correcciones.mjs', 'tools/generate-fuentes-index.js', 'tools/auditoria.mjs', 'tools/indice-md.mjs', 'tools/relevancia-filas.mjs'];
 
 export function queFalla(salida) {
   const claves = []; let enP01 = false;

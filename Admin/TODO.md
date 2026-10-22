@@ -49,7 +49,9 @@ Hecho (Auditora 5): medición, votación 3 a 0 por `grants_donations` y texto de
 Guido (2026-10-21): todavía no se crea la categoría. Antes, al terminar el resto del bloque A, una tabla con cada fila del Formato
 simplificado y en cuántos club-años de cuántos queda en 0 (por deporte y por país). Ninguna fila se oculta en cero: el formato es
 siempre igual (la propuesta de `hideIfZero` para la fila nueva y para Educación queda descartada).
+HECHA LA TABLA (2026-10-22): `Admin/mediciones/filas-formato-simplificado.md`, generada por `tools/relevancia-filas.mjs` (se regenera sola al cerrar cada carga; `node tools/fos.mjs filas`). Por fila: club-años y clubes con número, cuánto pesa cuando la tienen (mediana y % de casos de 10 % o más de la sección), cero real, «—» sin saber, y dónde (países y deportes). Incluye la candidata «Subsidios y donaciones» medida sobre las líneas que hoy caen en «Otros ingresos» (estricta y amplia). QUEDA SOLO LA DECISIÓN DE GUIDO con esos números: Educación (¿se queda?), abrir o no la categoría de subsidios y donaciones (votación `votacion-de-criterios` si sigue), y el umbral que abre o cierra una fila para el proceso de revisión de categorías (`Admin/propuestas/350-revision-categorias.md`).
 
+Verificar: existe Admin/mediciones/filas-formato-simplificado.md
 Verificar: manual
 
 ### 3. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
