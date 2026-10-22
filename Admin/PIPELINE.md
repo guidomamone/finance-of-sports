@@ -703,6 +703,10 @@ Mitigaciones:
 
 - Commit local, un commit por año cargado. El push lo hace Guido.
 
+### Medir un cambio a una tool (`tools/medir-pipeline.mjs`)
+
+`tools/pipeline-tools.json` lista las tools del pipeline y, por tool, su alcance (etapa o compartida) y sus medidores (`medir-cargar`, `medir-verificar`, `caja-deuda --medir`, `audit.js --json`, …). `node tools/fos.mjs medir pipeline` toma de git las tools editadas, corre cada medidor con la versión de git (ANTES) y con lo editado (DESPUÉS) sobre el lote chico, y después el mediano o el completo según el alcance (cualquier diferencia en el mediano escala al completo); exige 3 documentos por familia afectada (país × formato, `tools/familias-docs.mjs`) y anota el resultado. Una diferencia se cierra con `--explicacion "…"`. `--base <commit>` mide retroactivamente. Una tool nueva del pipeline se suma a la tabla en el mismo commit. Las listas (`Admin/lotes/prueba-*.txt`) las regenera `tools/lotes-prueba.mjs` al cerrar cada carga. El hook de commit (`tools/hooks/pre-tool.mjs`) exige la línea del registro con la huella de la tool que se commitea. Un medidor que usa la red (`estadio-sponsor --ensayo`) baja las páginas que falten de Wikipedia; `medir-pipeline` revierte la caché que dejan.
+
 ### El lote con la Batch API (`tools/lote-batch.mjs`)
 
 Mismo lote y mismo modelo de cada tarea, a mitad de precio (Batch API de Anthropic). Corre `lote.mjs` tal cual con `FOS_CLAUDE_BATCH=1`
