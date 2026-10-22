@@ -5,7 +5,7 @@
 Lo escribe `node tools/indice-md.mjs --escribir`; no se edita a mano. Cada fila: ruta · KB · qué es · cuándo se lee · cuántos documentos o tools lo citan (←) · a qué otros documentos vivos manda (→).
 Huérfano = nadie lo cita; sin marca = no declara qué es ni cuándo se lee (primera línea `<!-- md: qué es | leer: cuándo -->`).
 
-Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 352, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 123, `Admin/lotes` 80.
+Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 353, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 123, `Admin/lotes` 80.
 
 ## CLAUDE.md y Admin
 
@@ -19,7 +19,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 352, 
 - `Admin/HALLAZGOS-pipeline.md` · 45.7 KB · lo que se midió y no entró al pipeline, con el porqué · **leer:** antes de proponer una mejora al pipeline, por grep · ←13 · →PIPELINE.md, TODO.md, club-or-year-onboarding/club-nuevo.md
 - `Admin/PANTALLA.md` · 87.0 KB · reglas de pantalla y código del sitio · **leer:** al tocar js/, index.html o css; la sección de la pantalla · ←15 · →CONVENCIONES.md, ESTADO.md, club-data-mapping/referencia/formato-simplificado.md, club-or-year-onboarding/club-nuevo.md, producto-y-pantalla-finance-of-sports/referencia/marca.md, producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md
 - `Admin/PIPELINE.md` · 130.1 KB · el pipeline etapa por etapa y las decisiones de Guido · **leer:** solo la etapa que se toca · ←39 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, dudas-por-club.md, club-data-mapping/referencia/leer-pdf.md
-- `Admin/TODO.md` · 23.2 KB · qué falta hacer, un punto por título y por prioridad · **leer:** con node tools/todo.mjs; nunca entero · ←24 · →ESTADO-clubes.md, HALLAZGOS-pipeline.md, PIPELINE.md, dudas-por-club.md, fuentes-externas.md, propuestas/257-skills.md
+- `Admin/TODO.md` · 23.2 KB · qué falta hacer, un punto por título y por prioridad · **leer:** con node tools/todo.mjs; nunca entero · ←23 · →ESTADO-clubes.md, HALLAZGOS-pipeline.md, PIPELINE.md, dudas-por-club.md, fuentes-externas.md, propuestas/257-skills.md
 - `Admin/dudas-por-club.md` · 120.0 KB · preguntas que solo el club puede contestar · **leer:** al escribirle a un club o al agregar una duda · ←34 · →TODO.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md, club-data-mapping/referencia/casos-por-pais-y-formato.md, club-data-mapping/referencia/formato-simplificado.md
 - `Admin/finance-of-sports-project.md` · 507.6 KB · diario narrativo: el porqué de las decisiones viejas · **leer:** solo por grep de una palabra, nunca de corrido · ←9 · →CLAUDE.md, CONVENCIONES.md, ESTADO.md, dudas-por-club.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md
 - `Admin/fuentes-externas.md` · 6.8 KB · términos de las fuentes externas (Wikipedia, RSSSF, bancos centrales) · **leer:** antes de publicar datos de una fuente externa nueva · ←3
@@ -32,7 +32,6 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 352, 
 - `Admin/propuestas/350-revision-categorias.md` · 10.2 KB · (sin marca) · ←1 · →CONVENCIONES-DATOS.md, PANTALLA.md
 - `Admin/propuestas/archivo-no-es-lo-que-dice.md` · 2.4 KB · (sin marca) · ←1 · →PIPELINE.md
 - `Admin/propuestas/estructurado-sin-ia.md` · 3.3 KB · (sin marca) · ←1 · →CONVENCIONES.md
-- `Admin/propuestas/p2-p3-y-roles.md` · 1.5 KB · (sin marca) · ←0 huérfano · →TODO.md
 - `Admin/propuestas/transicion-y-covid.md` · 11.0 KB · (sin marca) · ←1 · →CONVENCIONES-DATOS.md, dudas-por-club.md
 
 ## Admin: otras carpetas vivas
