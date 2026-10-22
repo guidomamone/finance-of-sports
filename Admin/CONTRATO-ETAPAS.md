@@ -7,7 +7,7 @@ Cada etapa le pasa a la siguiente un archivo, no una llamada. Esta página dice 
 
 - Un documento = `Clubes/<País>/<Club>/<doc>.pdf` y su transcripción `<doc>.md`. Nada más va ahí.
 - Todo lo que una tool deriva del documento = `Generados/<País>/<Club>/<doc><sufijo>`, mismo nombre base. La ruta la arma una sola función (`derivado()` de `tools/rutas.mjs`); ninguna tool arma la suya.
-- `Generados/` se trackea (el comentario de `rutas.mjs` que dice que está gitignoreado es viejo; `git ls-files Generados` lo muestra).
+- En `Generados/` se trackean los `.json` (son el caché que hace que un club cargado vuelva a cerrar igual: la IA de localizar y extraer no es determinista; regla en `.gitignore`); las transcripciones derivadas (`.previo-*.md`, `.mistral-redo.md`) quedan locales. El comentario de `rutas.mjs` que dice que todo `Generados/` está gitignoreado es viejo.
 - Lo que cruza documentos: la cola (`Admin/registros/cola-revision.jsonl`), el registro de estado (`transcripciones-estado.jsonl`, lo recalcula `estado.mjs`), los ajustes manuales (`ajustes-manuales.jsonl`, los escribe `tools/ajustes.mjs`) y las respuestas aprendidas de la cola (`categorias-aprendidas.jsonl`). Un solo proceso a la vez escribe el registro (`tools/candado.mjs`).
 
 ## Numeración
