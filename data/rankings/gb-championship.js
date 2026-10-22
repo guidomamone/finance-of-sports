@@ -7,7 +7,7 @@ window.RANKINGS["gb-championship"] = {
     clubs: [
       { id:"leeds-gb", revenue:221.613, reportType:"official_balance_sheet",
         sourceId:"leeds-gb-group-accounts-2025",
-        mix:[["Comercial / Sponsors",69.12],["Estadio",43.359],["Televisión",64.705],["Venta de Jugadores",33.93],["Educación",0.065],["Otros ingresos",10.432]] },
+        mix:[["Comercial / Sponsors",69.12],["Estadio",43.359],["Televisión",64.705],["Venta de Jugadores",33.93],["Otras actividades (educación y otros deportes)",0.065],["Otros ingresos",10.432]] },
       { id:"burnley-gb", revenue:180.355, reportType:"official_balance_sheet",
         sourceId:"burnley-gb-holdings-group-accounts-2025",
         mix:[["Comercial / Sponsors",3.604],["Estadio",12.501],["Televisión",73.08],["Venta de Jugadores",84.105],["Otros ingresos",7.065]] },
@@ -22,7 +22,7 @@ window.RANKINGS["gb-championship"] = {
     clubs: [
       { id:"leeds-gb", revenue:203.962, reportType:"official_balance_sheet",
         sourceId:"leeds-gb-group-accounts-2024",
-        mix:[["Comercial / Sponsors",44.152],["Estadio",38.747],["Televisión",67.852],["Venta de Jugadores",42.619],["Educación",0.076],["Otros ingresos",10.517]] },
+        mix:[["Comercial / Sponsors",44.152],["Estadio",38.747],["Televisión",67.852],["Venta de Jugadores",42.619],["Otras actividades (educación y otros deportes)",0.076],["Otros ingresos",10.517]] },
       { id:"sunderland-gb", revenue:59.406, reportType:"official_balance_sheet",
         sourceId:"sunderland-gb-full-accounts-2024",
         mix:[["Comercial / Sponsors",6.816],["Estadio",14.804],["Televisión",13.4],["Venta de Jugadores",11.315],["Otros ingresos",13.069]] },

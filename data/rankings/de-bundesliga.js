@@ -43,7 +43,7 @@ window.RANKINGS["de-bundesliga"] = {
         mix:[["Comercial / Sponsors",11.349],["Venta de Jugadores",206.861],["Fútbol profesional (sin desglosar por la fuente)",267.423],["Otros ingresos",14.172]] },
       { id:"eintrachtfrankfurt-de", revenue:418.234, reportType:"official_balance_sheet",
         sourceId:"eintrachtfrankfurt-de-konzernabschluss-2024",
-        mix:[["Comercial / Sponsors",119.528],["Estadio",26.309],["Televisión",99.19],["Venta de Jugadores",153.329],["Otras secciones deportivas",1.141],["Otros ingresos",18.737]] },
+        mix:[["Comercial / Sponsors",119.528],["Estadio",26.309],["Televisión",99.19],["Venta de Jugadores",153.329],["Otras actividades (educación y otros deportes)",1.141],["Otros ingresos",18.737]] },
       { id:"stuttgart-de", revenue:311.464, reportType:"official_balance_sheet",
         sourceId:"stuttgart-de-konzernabschluss-2024",
         mix:[["Comercial / Sponsors",41.323],["Estadio",55.571],["Televisión",93.383],["Fútbol profesional (sin desglosar por la fuente)",113.752],["Otros ingresos",7.434]] },

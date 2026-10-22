@@ -7,7 +7,7 @@ window.RANKINGS["it-serieb"] = {
     clubs: [
       { id:"cremonese-it", revenue:67.274, reportType:"official_balance_sheet",
         sourceId:"cremonese-it-bilancio-2025",
-        mix:[["Comercial / Sponsors",50.313],["Estadio",1.916],["Televisión",8.06],["Venta de Jugadores",6.658],["Otras secciones deportivas",0.096],["Otros ingresos",0.231]] },
+        mix:[["Comercial / Sponsors",50.313],["Estadio",1.916],["Televisión",8.06],["Venta de Jugadores",6.658],["Otras actividades (educación y otros deportes)",0.096],["Otros ingresos",0.231]] },
     ],
   },
   2024: {
@@ -19,7 +19,7 @@ window.RANKINGS["it-serieb"] = {
         mix:[["Comercial / Sponsors",42.207],["Estadio",2.868],["Televisión",18.462],["Venta de Jugadores",37.025],["Otros ingresos",5.509]] },
       { id:"cremonese-it", revenue:61.774, reportType:"official_balance_sheet",
         sourceId:"cremonese-it-bilancio-2024",
-        mix:[["Comercial / Sponsors",38.895],["Estadio",1.849],["Televisión",17.178],["Venta de Jugadores",2.967],["Otras secciones deportivas",0.071],["Otros ingresos",0.814]] },
+        mix:[["Comercial / Sponsors",38.895],["Estadio",1.849],["Televisión",17.178],["Venta de Jugadores",2.967],["Otras actividades (educación y otros deportes)",0.071],["Otros ingresos",0.814]] },
       { id:"como-it", revenue:10.512, reportType:"official_balance_sheet",
         sourceId:"como-it-fascicolo-bilancio-2024",
         mix:[["Comercial / Sponsors",0.699],["Estadio",1.655],["Otros ingresos",8.158]] },

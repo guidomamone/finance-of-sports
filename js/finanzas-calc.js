@@ -231,8 +231,7 @@
     {label:'Premios por competencias', gens:['prize_money']},
     ...(ABONOS_DENTRO_DE_ESTADIO ? [] : [{label:'Abonos', gens:['season_tickets']}]),
     {label:'Venta de Jugadores', gens:['player_transfers']},
-    {label:'Educación', gens:['non_sporting_activities']},
-    {label:'Otras secciones deportivas', gens:['other_sporting_sections']},
+    {label:'Otras actividades (educación y otros deportes)', gens:['non_sporting_activities','other_sporting_sections']},
     {label:'Fútbol profesional (sin desglosar por la fuente)', gens:['undisclosed'], hideIfZero:true},
   ];
 
@@ -243,8 +242,7 @@
     {label:'Salarios y primas (plantel y cuerpo técnico)', gens:['first_team_staff']},
     {label:'Inversiones (amortizaciones y depreciación)', gens:['depreciation','other_amortisation']},
     {label:'Organización de partidos', gens:['match_operations']},
-    {label:'Educación', gens:['non_sporting_activities']},
-    {label:'Otras secciones deportivas (juvenil, otros deportes, básquet)', gens:['other_sporting_sections']},
+    {label:'Otras actividades (educación, juvenil, otros deportes, básquet)', gens:['non_sporting_activities','other_sporting_sections']},
     {label:'Administración y gastos generales', gens:['admin_general']},
     {label:'Fútbol profesional (sin desglosar por la fuente)', gens:['undisclosed'], hideIfZero:true},
   ];
@@ -511,8 +509,7 @@
     {label:'Premios por competencias', color:'#2b8a99'},
     {label:'Abonos', color:'#e07b39'},
     {label:'Venta de Jugadores', color:'#b5372b'},
-    {label:'Educación', color:'#c98a00'},
-    {label:'Otras secciones deportivas', color:'#4a7c9e'},
+    {label:'Otras actividades (educación y otros deportes)', color:'#4a7c9e'},
     {label:'Fútbol profesional (sin desglosar por la fuente)', color:'#c2185b'},
     {label:'Rugby profesional (sin desglosar por la fuente)', color:'#c2185b'},
     {label:'Otros ingresos', color:'#6b6b6b'},

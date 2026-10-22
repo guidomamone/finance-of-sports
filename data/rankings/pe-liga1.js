@@ -8,7 +8,7 @@ window.RANKINGS["pe-liga1"] = {
       { id:"alianzalima-pe", revenue:32.005, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2024",
         mix:[["Comercial / Sponsors",9.07],["Televisión",7.202],["Premios por competencias",0.542],["Fútbol profesional (sin desglosar por la fuente)",15.191]],
-        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2023: {
@@ -18,7 +18,7 @@ window.RANKINGS["pe-liga1"] = {
       { id:"alianzalima-pe", revenue:29.176, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2023",
         mix:[["Comercial / Sponsors",7.453],["Televisión",7.281],["Premios por competencias",4.234],["Fútbol profesional (sin desglosar por la fuente)",10.208]],
-        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2022: {
@@ -28,7 +28,7 @@ window.RANKINGS["pe-liga1"] = {
       { id:"alianzalima-pe", revenue:23.37, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2022",
         mix:[["Comercial / Sponsors",5.566],["Televisión",6.586],["Premios por competencias",4.057],["Fútbol profesional (sin desglosar por la fuente)",7.16]],
-        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2021: {
@@ -37,7 +37,7 @@ window.RANKINGS["pe-liga1"] = {
     clubs: [
       { id:"alianzalima-pe", revenue:15.248, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2021",
-        mix:[["Cuotas Sociales",0.5],["Comercial / Sponsors",3.941],["Estadio",0.104],["Televisión",6.339],["Premios por competencias",3.613],["Venta de Jugadores",0.217],["Otras secciones deportivas",0.039],["Otros ingresos",0.494]] },
+        mix:[["Cuotas Sociales",0.5],["Comercial / Sponsors",3.941],["Estadio",0.104],["Televisión",6.339],["Premios por competencias",3.613],["Venta de Jugadores",0.217],["Otras actividades (educación y otros deportes)",0.039],["Otros ingresos",0.494]] },
     ],
   },
   2020: {
@@ -46,7 +46,7 @@ window.RANKINGS["pe-liga1"] = {
     clubs: [
       { id:"alianzalima-pe", revenue:12.413, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2020",
-        mix:[["Cuotas Sociales",0.218],["Comercial / Sponsors",2.896],["Estadio",1.675],["Televisión",5.301],["Premios por competencias",0.114],["Venta de Jugadores",1.624],["Otras secciones deportivas",0.154],["Otros ingresos",0.432]] },
+        mix:[["Cuotas Sociales",0.218],["Comercial / Sponsors",2.896],["Estadio",1.675],["Televisión",5.301],["Premios por competencias",0.114],["Venta de Jugadores",1.624],["Otras actividades (educación y otros deportes)",0.154],["Otros ingresos",0.432]] },
     ],
   },
   2019: {
@@ -55,7 +55,7 @@ window.RANKINGS["pe-liga1"] = {
     clubs: [
       { id:"alianzalima-pe", revenue:17.917, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2019",
-        mix:[["Cuotas Sociales",0.332],["Comercial / Sponsors",3.863],["Estadio",3.485],["Televisión",5.553],["Premios por competencias",3.396],["Venta de Jugadores",0.219],["Otras secciones deportivas",0.351],["Otros ingresos",0.719]] },
+        mix:[["Cuotas Sociales",0.332],["Comercial / Sponsors",3.863],["Estadio",3.485],["Televisión",5.553],["Premios por competencias",3.396],["Venta de Jugadores",0.219],["Otras actividades (educación y otros deportes)",0.351],["Otros ingresos",0.719]] },
     ],
   },
 };

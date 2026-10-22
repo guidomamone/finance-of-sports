@@ -7,7 +7,7 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"ferrocarriloeste-ar", revenue:13.809, reportType:"official_balance_sheet",
         sourceId:"ferrocarriloeste-ar-balance-ejercicio-121-2024-25",
-        mix:[["Comercial / Sponsors",0.299],["Estadio",0.247],["Televisión",0.452],["Premios por competencias",0.019],["Venta de Jugadores",1.039],["Educación",1.847],["Otras secciones deportivas",3.499],["Otros ingresos",6.406]] },
+        mix:[["Comercial / Sponsors",0.299],["Estadio",0.247],["Televisión",0.452],["Premios por competencias",0.019],["Venta de Jugadores",1.039],["Otras actividades (educación y otros deportes)",5.346],["Otros ingresos",6.406]] },
     ],
   },
   2023: {
@@ -16,10 +16,10 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"ferrocarriloeste-ar", revenue:11.776, reportType:"official_balance_sheet",
         sourceId:"ferrocarriloeste-ar-balance-119-2022-23",
-        mix:[["Cuotas Sociales",3.427],["Comercial / Sponsors",0.19],["Estadio",0.187],["Televisión",0.45],["Premios por competencias",0.032],["Venta de Jugadores",1.791],["Educación",1.031],["Otras secciones deportivas",3.438],["Otros ingresos",1.229]] },
+        mix:[["Cuotas Sociales",3.427],["Comercial / Sponsors",0.19],["Estadio",0.187],["Televisión",0.45],["Premios por competencias",0.032],["Venta de Jugadores",1.791],["Otras actividades (educación y otros deportes)",4.469],["Otros ingresos",1.229]] },
       { id:"almagro-ar", revenue:1.209, reportType:"official_balance_sheet",
         sourceId:"almagro-ar-balance-2023",
-        mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",0.188],["Estadio",0.301],["Televisión",0.405],["Premios por competencias",0.037],["Otras secciones deportivas",0.019],["Otros ingresos",0.197]] },
+        mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",0.188],["Estadio",0.301],["Televisión",0.405],["Premios por competencias",0.037],["Otras actividades (educación y otros deportes)",0.019],["Otros ingresos",0.197]] },
     ],
   },
   2022: {
@@ -28,10 +28,10 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"ferrocarriloeste-ar", revenue:9.05, reportType:"official_balance_sheet",
         sourceId:"ferrocarriloeste-ar-estados-contables-118-2021-22",
-        mix:[["Cuotas Sociales",2.903],["Comercial / Sponsors",0.333],["Estadio",0.157],["Televisión",0.544],["Premios por competencias",0.02],["Educación",0.885],["Otras secciones deportivas",2.862],["Otros ingresos",1.346]] },
+        mix:[["Cuotas Sociales",2.903],["Comercial / Sponsors",0.333],["Estadio",0.157],["Televisión",0.544],["Premios por competencias",0.02],["Otras actividades (educación y otros deportes)",3.746],["Otros ingresos",1.346]] },
       { id:"almagro-ar", revenue:0.915, reportType:"official_balance_sheet",
         sourceId:"almagro-ar-balance-2022",
-        mix:[["Cuotas Sociales",0.054],["Comercial / Sponsors",0.103],["Estadio",0.029],["Televisión",0.406],["Venta de Jugadores",0.107],["Otras secciones deportivas",0.017],["Otros ingresos",0.199]] },
+        mix:[["Cuotas Sociales",0.054],["Comercial / Sponsors",0.103],["Estadio",0.029],["Televisión",0.406],["Venta de Jugadores",0.107],["Otras actividades (educación y otros deportes)",0.017],["Otros ingresos",0.199]] },
     ],
   },
   2021: {
@@ -40,7 +40,7 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"almagro-ar", revenue:0.634, reportType:"official_balance_sheet",
         sourceId:"almagro-ar-balance-2021",
-        mix:[["Cuotas Sociales",0.05],["Comercial / Sponsors",0.007],["Estadio",0.02],["Televisión",0.375],["Venta de Jugadores",0.035],["Otras secciones deportivas",0.016],["Otros ingresos",0.131]] },
+        mix:[["Cuotas Sociales",0.05],["Comercial / Sponsors",0.007],["Estadio",0.02],["Televisión",0.375],["Venta de Jugadores",0.035],["Otras actividades (educación y otros deportes)",0.016],["Otros ingresos",0.131]] },
     ],
   },
   2020: {
@@ -49,7 +49,7 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"almagro-ar", revenue:0.696, reportType:"official_balance_sheet",
         sourceId:"almagro-ar-balance-2020",
-        mix:[["Cuotas Sociales",0.027],["Comercial / Sponsors",0.135],["Estadio",0.002],["Televisión",0.387],["Premios por competencias",0.02],["Venta de Jugadores",0.003],["Otras secciones deportivas",0.005],["Otros ingresos",0.117]] },
+        mix:[["Cuotas Sociales",0.027],["Comercial / Sponsors",0.135],["Estadio",0.002],["Televisión",0.387],["Premios por competencias",0.02],["Venta de Jugadores",0.003],["Otras actividades (educación y otros deportes)",0.005],["Otros ingresos",0.117]] },
     ],
   },
   2019: {
@@ -58,7 +58,7 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"almagro-ar", revenue:0.877, reportType:"official_balance_sheet",
         sourceId:"almagro-ar-balance-2019",
-        mix:[["Cuotas Sociales",0.033],["Comercial / Sponsors",0.079],["Estadio",0.013],["Televisión",0.482],["Premios por competencias",0.061],["Otras secciones deportivas",0.018],["Otros ingresos",0.191]] },
+        mix:[["Cuotas Sociales",0.033],["Comercial / Sponsors",0.079],["Estadio",0.013],["Televisión",0.482],["Premios por competencias",0.061],["Otras actividades (educación y otros deportes)",0.018],["Otros ingresos",0.191]] },
     ],
   },
   2018: {
@@ -76,7 +76,7 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"argentinosjuniors-ar", revenue:11.595, reportType:"official_balance_sheet",
         sourceId:"argentinosjuniors-ar-balance-2016-2017",
-        mix:[["Cuotas Sociales",1.509],["Comercial / Sponsors",0.963],["Estadio",0.083],["Televisión",2.092],["Venta de Jugadores",4.339],["Otras secciones deportivas",0.937],["Otros ingresos",1.672]] },
+        mix:[["Cuotas Sociales",1.509],["Comercial / Sponsors",0.963],["Estadio",0.083],["Televisión",2.092],["Venta de Jugadores",4.339],["Otras actividades (educación y otros deportes)",0.937],["Otros ingresos",1.672]] },
     ],
   },
 };

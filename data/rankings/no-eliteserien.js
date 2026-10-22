@@ -200,7 +200,7 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.042],["Comercial / Sponsors",3.804],["Estadio",3.721],["Televisión",6.44],["Premios por competencias",0.668],["Venta de Jugadores",0.086],["Otros ingresos",2.107]] },
       { id:"fredrikstad-no", revenue:4.143, reportType:"official_balance_sheet",
         sourceId:"fredrikstad-no-aarsregnskap-fotballklubb-fli-2012",
-        mix:[["Cuotas Sociales",0.016],["Otras secciones deportivas",0.011],["Otros ingresos",4.117]] },
+        mix:[["Cuotas Sociales",0.016],["Otras actividades (educación y otros deportes)",0.011],["Otros ingresos",4.117]] },
     ],
   },
   2010: {

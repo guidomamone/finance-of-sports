@@ -10,7 +10,7 @@ window.RANKINGS["es-segunda"] = {
         mix:[["Comercial / Sponsors",10.337],["Estadio",5.941],["Televisión",8.484],["Premios por competencias",2.312],["Otros ingresos",2.418]] },
       { id:"elche-es", revenue:24.087, reportType:"official_balance_sheet",
         sourceId:"elche-es-cuentas-anuales-2024-25",
-        mix:[["Comercial / Sponsors",3.549],["Estadio",3.11],["Televisión",7.451],["Premios por competencias",2.339],["Venta de Jugadores",5.489],["Otras secciones deportivas",0.06],["Otros ingresos",2.089]] },
+        mix:[["Comercial / Sponsors",3.549],["Estadio",3.11],["Televisión",7.451],["Premios por competencias",2.339],["Venta de Jugadores",5.489],["Otras actividades (educación y otros deportes)",0.06],["Otros ingresos",2.089]] },
       { id:"levante-es", revenue:19.078, reportType:"official_balance_sheet",
         sourceId:"levante-es-cuentas-anuales-consolidadas-2024-25",
         mix:[["Comercial / Sponsors",4.505],["Estadio",3.407],["Televisión",7.733],["Premios por competencias",2.035],["Otros ingresos",1.399]] },

@@ -16,7 +16,7 @@ window.RANKINGS["br-serieD"] = {
     clubs: [
       { id:"ferroviaria-br", revenue:3.548, reportType:"official_balance_sheet",
         sourceId:"ferroviaria-br-dre-2022",
-        mix:[["Cuotas Sociales",0.021],["Comercial / Sponsors",0.86],["Televisión",1.09],["Premios por competencias",0.05],["Venta de Jugadores",1.486],["Otras secciones deportivas",0.156],["Otros ingresos",-0.115]] },
+        mix:[["Cuotas Sociales",0.021],["Comercial / Sponsors",0.86],["Televisión",1.09],["Premios por competencias",0.05],["Venta de Jugadores",1.486],["Otras actividades (educación y otros deportes)",0.156],["Otros ingresos",-0.115]] },
     ],
   },
   2021: {

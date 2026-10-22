@@ -225,8 +225,8 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   desglose fino disponible (ver presupuesto-26-27.md), así que se usa donde
   hay dato real en vez de forzar una categoría vacía o aproximada en todos
   los ejercicios por igual. Si se carga un balance nuevo con este mismo
-  nivel de detalle (ej. el resto de los años de Boca, to-do #2), evaluar si
-  amerita el mismo tratamiento especial dentro de `simplifiedReportForBoca()`.
+  nivel de detalle, evaluar si amerita el mismo tratamiento especial en el
+  Formato simplificado (`js/finanzas-calc.js`).
 ## REGLA (a pedido de Guido): un presupuesto en año CALENDARIO se reconstruye a temporada, nunca se carga tal cual
 
 

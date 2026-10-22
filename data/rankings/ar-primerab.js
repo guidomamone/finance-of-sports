@@ -7,7 +7,7 @@ window.RANKINGS["ar-primerab"] = {
     clubs: [
       { id:"losandes-ar", revenue:1.311, reportType:"official_balance_sheet",
         sourceId:"losandes-ar-balance-ejercicio-105-2020-21",
-        mix:[["Cuotas Sociales",0.131],["Comercial / Sponsors",0.425],["Estadio",0.123],["Televisión",0.17],["Educación",0.235],["Otros ingresos",0.226]] },
+        mix:[["Cuotas Sociales",0.131],["Comercial / Sponsors",0.425],["Estadio",0.123],["Televisión",0.17],["Otras actividades (educación y otros deportes)",0.235],["Otros ingresos",0.226]] },
     ],
   },
   2020: {
@@ -16,7 +16,7 @@ window.RANKINGS["ar-primerab"] = {
     clubs: [
       { id:"losandes-ar", revenue:1.375, reportType:"official_balance_sheet",
         sourceId:"losandes-ar-balance-ejercicio-104-2019-20",
-        mix:[["Cuotas Sociales",0.117],["Comercial / Sponsors",0.82],["Estadio",0.011],["Televisión",0.195],["Educación",0.19],["Otros ingresos",0.041]] },
+        mix:[["Cuotas Sociales",0.117],["Comercial / Sponsors",0.82],["Estadio",0.011],["Televisión",0.195],["Otras actividades (educación y otros deportes)",0.19],["Otros ingresos",0.041]] },
     ],
   },
 };

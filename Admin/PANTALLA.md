@@ -543,17 +543,14 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   carácter por carácter. Bug real encontrado y corregido: Boca usa el label `'Televisión'` (fila
   del Ejercicio 2027), el motor genérico tenía `'Televisión / Derechos de TV'` para la misma
   categoría (`broadcasting`), corregido a `'Televisión'` exacto. Antes de dar por buena una
-  homologación de labels, comparar carácter por carácter contra `simplifiedReportForBoca()`, no de
+  cambio de labels, comparar carácter por carácter contra la lista de `js/finanzas-calc.js` y `data/site-labels.js`, no de
   memoria/aproximado.
-- REGLA PERMANENTE (extiende la regla de la, pedido explícito de Guido: "la
-  tabla tiene que quedar exactamente igual ordenada tambien. el orden importa"): el ORDEN de
-  `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS` (River/Racing) tiene que calzar con el
-  orden real de `simplifiedReportForBoca()`, no solo los nombres. ORDEN VIGENTE DESDE LA VERSIÓN
-  189: Cuotas Sociales, Comercial/Sponsors, Estadio, Televisión, Premios, Venta de Jugadores,
-  Educación, Otras secciones deportivas, catch-all "Otros ingresos" (con "Abonos" de vuelta en 6ta
-  posición si `ABONOS_DENTRO_DE_ESTADIO` se pone en `false`). Orden anterior, hasta la 188: Cuotas
-  Sociales, Comercial/Sponsors, Estadio, Televisión, Premios, Abonos, Venta de Jugadores,
-  catch-all. El bolsón «Fútbol profesional (sin desglosar por la fuente)» lleva `hideIfZero:true` en su definición: no se pinta si ese club/año no tiene
+- REGLA PERMANENTE: el ORDEN de las filas es el de `GENERIC_SIMPLIFIED_REVENUE_BUCKETS` / `_EXPENSE_BUCKETS` (`js/finanzas-calc.js`), igual para todos los clubes. Ingresos hoy:
+  Cuotas Sociales, Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Venta de Jugadores, Otras actividades (educación y otros deportes), Subsidios y
+  donaciones, el bolsón «sin desglosar» y el catch-all «Otros ingresos» (con «Abonos» de vuelta en 6.ª posición si `ABONOS_DENTRO_DE_ESTADIO` se pone en `false`).
+  Gastos: Compra de jugadores, Salarios y primas, Inversiones, Organización de partidos, Otras actividades, Administración y gastos generales, el bolsón y «Otros gastos».
+  Una fila se agrega o fusiona con la medición `node tools/fos.mjs filas`. Estadio y Abonos son dos conceptos (partido por partido / temporada completa).
+  El bolsón «Fútbol profesional (sin desglosar por la fuente)» lleva `hideIfZero:true` en su definición: no se pinta si ese club/año no tiene
   ninguna línea adentro (solo existe porque a veces el dato no desglosa más). Un bucket NORMAL en $0 (ej. Venta de Jugadores cuando no hubo ventas)
   se muestra igual; ninguna otra fila se oculta en cero. Ver `.claude/skills/club-data-mapping/referencia/formato-simplificado.md`.
 - REGLA PERMANENTE: el Formato simplificado de CUALQUIER club usa las mismas filas, en el mismo orden y con los mismos nombres, definidas en un solo lugar
