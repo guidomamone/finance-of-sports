@@ -3,7 +3,8 @@
 
 Referencia del proceso nuevo: qué hace cada etapa, sus escaleras y compuertas, y las decisiones de Guido que lo parametrizan.
 Se actualiza en la misma sesión en que cambia una tool. Cómo se trabaja con el pipeline (reglas, medición, arranque) está en el skill
-`club-or-year-onboarding`; lo que se midió y no entró, en `Admin/HALLAZGOS-pipeline.md`.
+`club-or-year-onboarding`; lo que se midió y no entró, en `Admin/HALLAZGOS-pipeline.md`. Qué archivo pasa de una etapa a otra, qué lo deja
+viejo y con qué comando se rehace: `Admin/CONTRATO-ETAPAS.md` (una página). Dónde está cada cosa dentro de una tool grande: `node tools/fos.mjs mapa <archivo>`.
 
 ---
 

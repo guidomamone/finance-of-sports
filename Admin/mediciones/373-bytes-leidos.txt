@@ -1,0 +1,19 @@
+ANTES (sin mapa ni contrato)
+    141.9 KB  tools/caja-deuda.mjs entero
+    216.9 KB  tools/verificar.mjs entero
+    165.6 KB  tools/cargar.mjs entero
+     12.1 KB  Admin/PIPELINE.md, sección «Caja y deuda»
+    536.5 KB  TOTAL
+
+DESPUÉS (mapa + tramos + contrato)
+      3.2 KB  mapa de caja-deuda.mjs
+     21.9 KB  caja-deuda.mjs, el bloque de personal y su arranque (líneas 1245 a 1442)
+      2.1 KB  caja-deuda.mjs, el despachador de opciones (líneas 1457 a 1473)
+      1.1 KB  mapa de verificar.mjs, buscando «ajustes»
+      5.5 KB  verificar.mjs, el escalón de ajustes de filas (líneas 789 a 833)
+      0.9 KB  mapa de cargar.mjs, buscando «categor»
+      0.8 KB  cargar.mjs, las compuertas de categorías (líneas 379 a 385)
+      7.3 KB  Admin/CONTRATO-ETAPAS.md
+     42.8 KB  TOTAL
+
+Leído después / antes: 8 %  (≈ 137 mil tokens contra ≈ 11 mil, a 4 bytes por token)

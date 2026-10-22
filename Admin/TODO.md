@@ -85,7 +85,7 @@ UNA SOLA LEY: movimiento puro, con re-exports para que los llamadores no cambien
 1. audit.js: una familia de chequeos por archivo, registrados en el mismo punto de entrada (los chequeos son independientes).
 2. caja-deuda.mjs: el bloque del costo de personal lo extrae el punto 368 como primer paso; acá siguen el parseo del .md, las propuestas y la escala.
 3. cargar.mjs, el corazón: por las regiones de sus banners.
-4. verificar.mjs al final o nunca: tiene 7 funciones de unas 270 líneas, partirlo es cortar adentro de funciones. alta-club.mjs (184 KB) se mapea antes de decidir. lote.mjs es un script lineal: solo se parte por etapas si el mapa del 373 muestra regiones claras.
+4. verificar.mjs al final o nunca: el mapa del 373 mostró que es UNA función `verificar()` de 1623 líneas (176 a 1798) con unos 30 tramos marcados («ESCALÓN …»), así que partirlo es cortar adentro de esa función. alta-club.mjs (184 KB, 65 funciones) se mapea antes de decidir. lote.mjs tiene 21 funciones: se parte por etapas solo si el mapa muestra regiones claras. Con `node tools/fos.mjs mapa <archivo>` se ve cada archivo.
 RIESGOS A NOMBRAR en cada partición: estado compartido a nivel de módulo, ciclos de imports, tools que corren como módulo y como comando (el bloque de arranque y `import.meta`), constantes que se evalúan al importar.
 OBJETIVO MEDIBLE: tamaño máximo por archivo de 40 KB y una cabecera de menos de 15 líneas por módulo; lo que quede arriba, con una excepción escrita con su motivo.
 DEPENDE DE: el 374 (comentarios limpios primero: no se mueve ruido), el 373 (el mapa dice dónde cortar) y el 368 (extrae el bloque de personal).
