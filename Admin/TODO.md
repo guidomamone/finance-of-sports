@@ -152,6 +152,11 @@ el motivo se traduce al inglés al curar (sin `motivo_en` la página en inglés 
 registro al Data Package (pasa por la skill `contrato-de-datos`); (d) revisado que los tipos «total» y «otro» de los eventos no tengan ruido
 de renombres. Lo hace Pantallas.
 
+Además, `correcciones.html` da tres avisos de `audit.js` que son de esta pantalla: `doc-interno-no-excluido` (es una página pública: se silencia con el motivo o se mueve), `raya-larga-visible` (línea 76) e `i18n-incompleto` (`corr.th.antes` y `corr.th.despues` sin traducción en `data/lang/en.js`).
+
+Verificar: audit doc-interno-no-excluido = 0
+Verificar: audit raya-larga-visible = 0
+Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
 ### 10. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
@@ -199,9 +204,16 @@ Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la
 
 Verificar: audit ejercicio-sin-rastro "liersekempenzonen-be" = 0
 
+### 12. 366 · (Pipeline): meter en el pipeline las tools que una sesión todavía tiene que acordarse de correr
+
+TOOLS SUELTAS (Guido, 2026-10-22: «que tools se pueden meter en pipeline así no hay tantas tools dando vuelta»). Medido con el inventario de `tools/` (150 archivos, 2,9 MB; 13 se corren a mano, el resto son módulos que otra tool llama). Lo que una sesión sigue teniendo que recordar, de más a menos: (a) `segunda-fuente-liga.mjs`: la corre una sesión después de asignar una liga; sale de la cadena de `alta-club.mjs` si se arma, por país, la tabla de URLs de RSSSF (patrón `tables<letra>/<código><año>.html`, sacable de las fuentes ya guardadas en `tools/club-league-reference/`) y se mantiene la compuerta de las ligas en grupos; (b) las herramientas de medición (`medir-cargar`, `medir-verificar`, `medir-ixbrl-consolidado`, `lotes-prueba`, `prueba-escribir`) en un solo `medir.mjs <qué>`; (c) los adaptadores de sourcing (`wayback-*`, `exa-search`, `reddit-archive-search`, `twitterapiio-search`, `listar-brreg`, `fca-mutuals-fetch`, `companies-house-fetch`) en un `buscar-fuente.mjs <canal>`; (d) una sola puerta, `tools/fos.mjs <comando>`, que lista los comandos con una línea cada uno, para que el índice de tools lo arme la tool y no una sesión.
+Terminado cuando: (a) `alta-club.mjs` deja la segunda fuente de la liga sin que una sesión la corra (o la línea de HALLAZGOS dice por qué no), (b) y (c) están hechos con los comandos viejos como alias que avisan, y `node tools/fos.mjs` lista cada comando documentado en `Admin/PIPELINE.md`.
+
+Verificar: manual
+
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 12. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 13. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -214,7 +226,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 13. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 14. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -230,7 +242,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 14. 335 · mails a clubes
+### 15. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -245,7 +257,7 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 15. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 16. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
@@ -254,7 +266,7 @@ SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en 
 
 Verificar: manual
 
-### 16. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 17. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo

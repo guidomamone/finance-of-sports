@@ -125,6 +125,8 @@ function imprimirProblemas() {
   for (const x of sinMarca) console.log(`  ${x.f}`);
 }
 
+// el tamaño va redondeado (<5, de 5 en 5, de 10 en 10): con KB exactos el índice quedaba viejo con cada edición de cualquier documento
+const tam = (kb) => (kb < 5 ? '<5 KB' : kb < 20 ? `~${Math.round(kb / 5) * 5} KB` : `~${Math.round(kb / 10) * 10} KB`);
 function indice() {
   const L = ['# Índice de documentos (generado)', '',
     '<!-- md: este índice (generado) | leer: para saber qué documento leer y cuáles no los cita nadie -->',
@@ -137,7 +139,7 @@ function indice() {
     L.push(`## ${t}`, '');
     for (const x of filas.filter((y) => ok(y.f))) {
       const marca_ = x.m ? `${x.m.que} · **leer:** ${x.m.leer}` : '(sin marca)';
-      L.push(`- \`${x.f}\` · ${x.kb} KB · ${marca_} · ←${x.quien.length}${x.quien.length ? '' : ' huérfano'}${x.sigue.length ? ` · →${x.sigue.map((s) => s.replace(/^Admin\//, '').replace(/^\.claude\/skills\//, '')).slice(0, 6).join(', ')}` : ''}`);
+      L.push(`- \`${x.f}\` · ${tam(+x.kb)} · ${marca_} · ←${x.quien.length}${x.quien.length ? '' : ' huérfano'}${x.sigue.length ? ` · →${x.sigue.map((s) => s.replace(/^Admin\//, '').replace(/^\.claude\/skills\//, '')).slice(0, 6).join(', ')}` : ''}`);
     }
     L.push('');
   }
