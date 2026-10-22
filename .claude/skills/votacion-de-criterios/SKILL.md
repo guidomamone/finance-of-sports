@@ -18,6 +18,14 @@ Buscar, en este orden, y si aparece, se aplica y NO se vota:
 
 Si aparece una regla, el resultado es "ya decidido por <regla>", con la cita, y cómo se aplica al caso. Fin.
 
+### Si la pregunta es sobre una FILA o una categoría (abrirla, cerrarla, fusionarla, renombrarla)
+
+Se mide ANTES de votar, y la medición es la evidencia de los tres votantes; sin ella no se vota:
+1. `node tools/fos.mjs filas` (regenera `Admin/mediciones/filas-formato-simplificado.md`): por fila, cuántos clubes la tienen alguna vez, cuánto pesa cuando la tienen y en qué países y deportes está.
+2. Para una fila que todavía no existe: `node tools/fos.mjs filas --etiqueta "<regex de las etiquetas>" [--lado gastos]` (el concepto hoy cae en «Otros ingresos» o «Otros gastos»); se miran la versión estricta y la amplia, y se revisa a mano una muestra de las líneas que matchean antes de creer el número.
+3. Los números se pegan en el caso que reciben los votantes, junto al umbral que usa el proceso de revisión de categorías (`Admin/propuestas/350-revision-categorias.md`). Una fila que solo existe en un par de países o en un par de clubes no abre; una que está en muchos países sí, aunque pese poco.
+4. Si se abre o se fusiona una fila, la aplicación incluye recategorizar lo ya cargado (los años que cambian se cuentan en la sección 4) y volver a correr `node tools/fos.mjs filas` para ver el resultado.
+
 ## 2. La escala (en este orden de peso)
 
 1. **Precedente del mismo club** (otros años del club, ya cargados).

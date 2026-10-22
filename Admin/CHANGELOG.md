@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 949 — Votación de filas con medición previa; 257 reducido a Tolima (2026-10-22) [257] [350]
+
+- `votacion-de-criterios`: paso explícito para una pregunta sobre una fila o categoría (medir con `fos filas` y `--etiqueta` antes de votar; los números son la evidencia de los votantes).
+- TODO 257: el cabo `perfil-en-cola` ya estaba resuelto (`cargar.mjs` nunca frena por eso); queda solo Deportes Tolima, que no está en el sitio. Se sacó del texto el candado de skills (no rige en una sola sesión).
+
 ## Versión 948 — Tabla de relevancia de las filas del Formato simplificado (2026-10-22) [350]
 
 - `tools/relevancia-filas.mjs` (`fos filas`) + `Admin/mediciones/filas-formato-simplificado.md` (generado, entra a la lista de `tools/generadores.mjs`): por fila, club-años y clubes con número, peso cuando la tienen, cero real, «—», dónde (país y deporte), y la candidata «Subsidios y donaciones» (estricta y amplia). `--etiqueta` mide otra candidata; `--fila` lista los clubes.
