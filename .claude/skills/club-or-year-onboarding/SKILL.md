@@ -25,7 +25,8 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 1. `git status` y `git log --oneline -5`.
 2. `node tools/estado.mjs` (gratis): cada PDF en su etapa y escalón.
 3. `node tools/cola.mjs`: qué está esperando a Guido.
-4. De `Admin/PIPELINE.md`, solo la etapa que se va a tocar.
+4. De `Admin/PIPELINE.md`, solo la etapa que se va a tocar. Si el cambio altera lo que pasa ENTRE etapas (un ajuste, una huella, qué archivo lee la siguiente), antes `Admin/CONTRATO-ETAPAS.md` (una página).
+5. Una tool de más de 50 KB no se lee entera: `node tools/fos.mjs mapa tools/<archivo>` y `Read` con `offset` y `limit` del tramo que el mapa señala (`--buscar <texto>` filtra).
 
 ## 3. Qué abrir y cuándo (cada archivo está en esta carpeta; las secciones conservan su número)
 

@@ -23,6 +23,8 @@ trae el modo de trabajo: una sola sesión, un rol por vez).
 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` |
 | `Admin/PANTALLA.md`: pantalla y código del sitio | si tocás `js/`, `index.html` o CSS (la sección de la pantalla, no entero) |
 | `Admin/PIPELINE.md`: el pipeline etapa por etapa | solo la etapa que se toca |
+| `Admin/CONTRATO-ETAPAS.md`: qué archivo pasa de una etapa a otra, qué lo deja viejo y cómo se rehace (una página) | si el cambio toca lo que pasa entre etapas |
+| `node tools/fos.mjs mapa tools/<archivo>` | antes de leer una tool de más de 50 KB: da las funciones con su rango de líneas; se lee solo ese tramo |
 | skill `club-data-mapping` | si cargás o categorizás a mano, o revisás la cola de categorías (su SKILL.md dice qué archivo de `referencia/` abrir) |
 | skill `club-sourcing` + `Admin/sourcing/README.md` y `_indice/<País>.md` | si BUSCÁS documentos: mirá qué ya se probó, solo el país que te toca |
 | skill `producto-y-pantalla-finance-of-sports` | una pantalla, un card, un cambio de diseño o un texto visible |
