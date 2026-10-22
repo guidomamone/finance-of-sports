@@ -622,6 +622,18 @@ async function main() {
     console.log(`\n${faltan.length} ejercicios sin estadio o sin sponsor${soloClub ? '' : ' (los primeros 40)'}:`);
     for (const f of faltan.slice(0, soloClub ? Infinity : 40)) console.log(`  ${f}`);
     if (faltan.some((f) => f.includes('sin lista'))) console.log('Un ejercicio "sin lista": primero la lista de equipos de esa liga-año (node tools/listas-lote.mjs), y se vuelve a probar.');
+    // Wikidata como CANDIDATO (no se escribe solo): coincide con el valor revisado a mano en ~43 % de los casos, difiere de nombre en ~17 % (nombres por época) y no tiene dato en el resto
+    // (Admin/HALLAZGOS-pipeline.md). Un candidato con su cita ahorra la búsqueda web, que es lo que cuesta tokens y a veces sale mal.
+    if (soloClub && faltan.some((f) => /falta[^:]*estadio|falta estadio/i.test(f))) {
+      try {
+        const { datoPublico } = await import('./dato-publico.mjs'); const C = cargar().CLUBS[soloClub];
+        for (const f of faltan.filter((x) => /estadio/.test(x.split('falta')[1] || '')).slice(0, 4)) {
+          const y = Number((f.match(/^\S+ (\d{4})/) || [])[1]); if (!y || !C) continue;
+          const r = await datoPublico([C.displayName, C.name].filter(Boolean), { pais: C.country, anio: y });
+          console.log(r.error ? `  Wikidata ${y}: ${r.error}` : `  Wikidata ${y}: ${r.delAnio?.error || `${r.delAnio.estadio}, capacidad ${r.delAnio.capacidad ?? '(sin dato)'}`} · fuente ${r.delAnio?.fuenteEstadio || r.fuente} (candidato: confirmar contra la página del club)`);
+        }
+      } catch (e) { /* sin red o sin entidad: queda el paso a mano */ }
+    }
     console.log('Se completan a mano en tools/contexto-manual.json: { "<clubId>": { "<año>": { "estadio": "...", "capacidad": 0, "sponsor": "...", "marca": "...", "fuente": "<url>" } } }');
     if (soloClub) process.exit(1);
   }

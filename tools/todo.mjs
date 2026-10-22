@@ -8,11 +8,18 @@
 // USO:
 //   node tools/todo.mjs                 la lista: orden, id y título, agrupada como el TODO (gratis, ~3 KB)
 //   node tools/todo.mjs 355             el cuerpo del punto con ese id
-//   node tools/todo.mjs --cerrar 355    borra el punto y renumera el orden de los de abajo (el historial va al CHANGELOG, a mano)
-// No toca nada más que Admin/TODO.md.
+//   node tools/todo.mjs --verificar [id]   comprueba la línea «Verificar:» de cada punto (o de uno) con una máquina: cumple / falta / manual (corre audit.js, unos segundos)
+//   node tools/todo.mjs --cerrar 355    borra el punto y renumera el orden de los de abajo (el historial va al CHANGELOG, a mano). Se NIEGA si el punto tiene una condición
+//                                       «Verificar:» comprobable y no se cumple; --forzar lo cierra igual (para un punto descartado, no cumplido)
+// Las condiciones y cómo se escriben: tools/todo-verificar.js. No toca nada más que Admin/TODO.md.
 // ============================================================================
 import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { createRequire } from 'node:module';
+import { execFileSync } from 'node:child_process';
+
+const T = createRequire(import.meta.url)('./todo-verificar.js');
+const ROOT = resolve(import.meta.dirname, '..');
 
 const RUTA = resolve(import.meta.dirname, '..', 'Admin', 'TODO.md');
 const A = process.argv.slice(2);
@@ -37,6 +44,27 @@ if (!A.length) {
   process.exit(0);
 }
 
+// los hallazgos de audit.js (sin silenciar), para las condiciones «audit <código> ...»
+function hallazgos() {
+  let out; try { out = execFileSync('node', ['tools/audit.js', '--json'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 }); } catch (e) { out = e.stdout; }
+  return JSON.parse(out).findings;
+}
+const condiciones = (p) => T.puntos(L.join('\n')).find((x) => x.id === p.id)?.verificar || [];
+function estadoDe(p, hs) {
+  const rs = condiciones(p).map((e) => T.evaluar(e, hs, ROOT));
+  const auto = rs.filter((r) => r.ok !== null);
+  return { rs, cumple: rs.length > 0 && rs.every((r) => r.ok === true), manual: rs.length > 0 && rs.every((r) => r.ok === null), falta: auto.some((r) => r.ok === false), sinCondicion: rs.length === 0 };
+}
+if (A[0] === '--verificar') {
+  const hs = hallazgos(); const solo = A[1];
+  for (const p of puntos.filter((x) => !solo || x.id === solo)) {
+    const e = estadoDe(p, hs);
+    const marca = e.sinCondicion ? '? sin «Verificar:»' : e.cumple ? '✓ CUMPLE: cerrarlo' : e.manual ? '· manual' : e.falta ? '✗ falta' : '· manual';
+    console.log(`${String(p.orden).padStart(2)}. ${p.id} · ${marca}${e.rs.filter((r) => r.ok !== null).map((r) => `\n      ${r.ok ? '✓' : '✗'} ${r.detalle}`).join('')}`);
+  }
+  process.exit(0);
+}
+
 const cerrar = A[0] === '--cerrar';
 const id = cerrar ? A[1] : A[0];
 const p = puntos.find((x) => x.id === id);
@@ -44,6 +72,11 @@ if (!p) { console.error(`No hay un punto con id ${id}. Los ids: ${puntos.map((x)
 
 if (!cerrar) { console.log(L.slice(p.i, p.fin).join('\n').trimEnd()); process.exit(0); }
 
+if (!A.includes('--forzar')) {
+  const e = estadoDe(p, hallazgos());
+  if (e.falta) { console.error(`No se cierra ${id}: su «Verificar:» no se cumple.\n${e.rs.filter((r) => r.ok === false).map((r) => `  ✗ ${r.detalle}`).join('\n')}\n(--forzar lo cierra igual, si el punto se descartó en vez de cumplirse)`); process.exit(1); }
+  if (e.manual) console.log('Su «Verificar:» es manual: confirmá contra «Terminado cuando:» del punto que está hecho.');
+}
 L.splice(p.i, p.fin - p.i);
 let n = 0;
 for (let i = 0; i < L.length; i++) {

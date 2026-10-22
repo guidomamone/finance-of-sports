@@ -1,0 +1,168 @@
+{
+ "_comentario": "Cuando pasa X, se hace Y. Una entrada por código de audit.js que dispara: `hacer` (la acción concreta, con el comando si lo hay), `quien` (script: lo hace una tool sola o con un comando; sesion: lo hace la sesión mirando un documento; guido: espera una decisión suya; nada: es informativo) y `donde` (el punto del TODO, la skill o el documento que lo cubre). `node tools/audit.js --acciones` lista los códigos que disparan hoy con su acción; un código que dispara sin entrada acá da `codigo-sin-accion` (P3). Sirve para que el proceso no dependa de que una sesión se acuerde qué hacer.",
+ "moneda-sin-meta": {
+  "hacer": "Agregar la moneda a CURRENCY_META (data/currency-map.js) con su tipo de cambio de referencia.",
+  "quien": "sesion",
+  "donde": "skill club-data-mapping, referencia/fx.md"
+ },
+ "club-sin-color-ni-null": {
+  "hacer": "Buscar el color de marca del club y escribirlo, o poner brandColor:null (se miró y no lleva).",
+  "quien": "sesion",
+  "donde": "skill club-or-year-onboarding, club-nuevo.md"
+ },
+ "balance-sin-pat": {
+  "hacer": "Cargar officialPAT (el resultado del ejercicio) del documento con tools/ajustes.mjs, o dejar anotado que el documento no lo trae.",
+  "quien": "sesion",
+  "donde": "skill club-or-year-onboarding"
+ },
+ "cobertura": {
+  "hacer": "Nada: cuenta cuántos ejercicios tienen un total oficial contra el cual verificar.",
+  "quien": "nada",
+  "donde": ""
+ },
+ "categoria-sin-bucket": {
+  "hacer": "Nada: son categorías que caen al catch-all del Formato simplificado, a propósito.",
+  "quien": "nada",
+  "donde": "Admin/PANTALLA.md, Formato simplificado"
+ },
+ "signos-menores": {
+  "hacer": "Nada: líneas con signo opuesto por debajo del 2 % de su sección (deducciones, variaciones de existencias).",
+  "quien": "nada",
+  "donde": ""
+ },
+ "dedu-fiscal-conocida": {
+  "hacer": "Nada: deducciones fiscales de ingreso ya verificadas en otros clubes.",
+  "quien": "nada",
+  "donde": ""
+ },
+ "outlier-liga": {
+  "hacer": "Mirar si el club tiene otro ejercicio a dos años o menos; si no, confirmar contra el documento que el importe es de la división y no un error de escala.",
+  "quien": "sesion",
+  "donde": "skill auditoria-finance-of-sports, P2 y P3"
+ },
+ "cambio-de-formato": {
+  "hacer": "Nada: un año imprime solo el margen bruto y el otro la cifra de negocios (formato abreviado belga); los dos años no son comparables.",
+  "quien": "nada",
+  "donde": "Admin/registros/auditoria-proceso.jsonl (salto-interanual)"
+ },
+ "nombres-repetidos-sourcing": {
+  "hacer": "Nada: nombres de club iguales en países distintos; la carpeta del país los separa.",
+  "quien": "nada",
+  "donde": ""
+ },
+ "liga-sin-verificar": {
+  "hacer": "Verificar la liga de esas filas contra la página de temporada (node tools/lookup-club-league.js) y escribirla en data/club-leagues/.",
+  "quien": "sesion",
+  "donde": "skill club-or-year-onboarding, club-nuevo.md"
+ },
+ "indice-md-desfasado": {
+  "hacer": "node tools/indice-md.mjs (publicarCambios lo corre solo al cerrar una carga)",
+  "quien": "script",
+  "donde": "CLAUDE.md, el índice de los .md"
+ },
+ "catchall-dominante": {
+  "hacer": "Esperar la categoría de subsidios y donaciones y la tabla de ceros del Formato simplificado; no se recategoriza lo cargado.",
+  "quien": "guido",
+  "donde": "TODO 350"
+ },
+ "sin-salarios": {
+  "hacer": "Partir los sueldos de la línea con tools/caja-deuda.mjs --personal y --partir; corrige datos publicados (trailer Corrige:).",
+  "quien": "sesion",
+  "donde": "TODO 351"
+ },
+ "proyeccion": {
+  "hacer": "Nada: proyecta cuánto pesa data/ a 1000 clubes.",
+  "quien": "nada",
+  "donde": "skill escala-finance-of-sports"
+ },
+ "doc-interno-no-excluido": {
+  "hacer": "Si es interno, moverlo a Admin/; si es una página pública del sitio, silenciarlo en tools/audit-ignore.json con el motivo.",
+  "quien": "sesion",
+  "donde": "CLAUDE.md, dónde poner un documento"
+ },
+ "sponsor-sin-registro": {
+  "hacer": "Al tocar ese club, completar el sponsor con el registro de búsqueda (tools/sponsor-busqueda.js).",
+  "quien": "sesion",
+  "donde": "skill club-sourcing, referencia/liga-y-sponsor.md"
+ },
+ "historia-en-doc-de-criterio": {
+  "hacer": "Sacar «Versión N», «to-do N» y las fechas de decisión del documento: la historia va a Admin/CHANGELOG.md y queda la regla vigente.",
+  "quien": "sesion",
+  "donde": "CLAUDE.md, documentos de criterio"
+ },
+ "duda-resuelta-en-dudas": {
+  "hacer": "Pasar la respuesta a Admin/carga-clubes/<clubId>.md y borrar la línea de Admin/dudas-por-club.md.",
+  "quien": "sesion",
+  "donde": "Admin/CONVENCIONES.md, dónde queda cada tipo de cosa"
+ },
+ "medicion-sin-destino": {
+  "hacer": "Poner «Conclusión:» y «Destino:» arriba del archivo de Admin/mediciones/ y una línea en Admin/HALLAZGOS-pipeline.md, o archivarlo.",
+  "quien": "sesion",
+  "donde": "Admin/CONVENCIONES.md"
+ },
+ "parrafo-repetido": {
+  "hacer": "Dejar el párrafo en un solo documento y citarlo desde el otro.",
+  "quien": "sesion",
+  "donde": "CLAUDE.md, documentos de criterio"
+ },
+ "raya-larga-visible": {
+  "hacer": "Reemplazar la raya larga del texto visible del sitio por punto, coma, dos puntos o paréntesis (el «—» como símbolo de «sin dato» en una celda se queda).",
+  "quien": "sesion",
+  "donde": "Admin/CONVENCIONES.md, regla de estilo"
+ },
+ "i18n-incompleto": {
+  "hacer": "Agregar a data/lang/en.js las claves que el sitio usa y no traduce.",
+  "quien": "sesion",
+  "donde": "Admin/PANTALLA.md, qué se traduce"
+ },
+ "gestion-club-inexistente": {
+  "hacer": "Nada hasta que se cargue el balance del club; si el id está mal escrito, `gestion-id-sospechoso` (P1) lo dice.",
+  "quien": "nada",
+  "donde": ""
+ },
+ "liga-una-fuente": {
+  "hacer": "node tools/segunda-fuente-liga.mjs <url> <ligaId> <año> --pais <iso2> --tabla \"<título>\" --escribir; las ligas en grupos frenan en la compuerta.",
+  "quien": "sesion",
+  "donde": "Admin/HALLAZGOS-pipeline.md, segunda fuente de una liga en grupos"
+ },
+ "ejercicio-sin-rastro": {
+  "hacer": "Cargar el ejercicio, anotarlo en data/faltantes (sourcing) o, si no hay documento publicado, silenciarlo en tools/audit-ignore.json con el motivo.",
+  "quien": "sesion",
+  "donde": "skill club-sourcing"
+ },
+ "fuente-xhtml-sin-url": {
+  "hacer": "node tools/fuente-url-xhtml.mjs <clubId> --escribir (cargar.mjs la corre sola al terminar una carga).",
+  "quien": "script",
+  "donde": "skill club-or-year-onboarding"
+ },
+ "audit-ignore-sin-uso": {
+  "hacer": "node tools/audit.js --podar-ignore",
+  "quien": "script",
+  "donde": "tools/audit-ignore.json"
+ },
+ "todo-cumplido": {
+  "hacer": "node tools/todo.mjs --cerrar <id> y la entrada en Admin/CHANGELOG.md.",
+  "quien": "script",
+  "donde": "Admin/TODO.md"
+ },
+ "todo-sin-verificar": {
+  "hacer": "Agregar al punto una línea «Verificar:» (audit <código> = 0, existe <ruta>, contiene <ruta> | <texto>) o «Verificar: manual».",
+  "quien": "sesion",
+  "donde": "tools/todo-verificar.js"
+ },
+ "todo-verificar-ilegible": {
+  "hacer": "Corregir la línea «Verificar:» del punto: la tool no entiende la condición.",
+  "quien": "sesion",
+  "donde": "tools/todo-verificar.js"
+ },
+ "codigo-sin-accion": {
+  "hacer": "Agregar una entrada a tools/audit-acciones.json por cada código que dispara y no está.",
+  "quien": "sesion",
+  "donde": "tools/audit-acciones.json"
+ },
+ "generador-sin-correr": {
+  "hacer": "Sumar el generador a la lista de tools/generadores.mjs (la que corre publicarCambios al cerrar una carga).",
+  "quien": "sesion",
+  "donde": "tools/generadores.mjs"
+ }
+}

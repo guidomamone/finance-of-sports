@@ -18,6 +18,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 943 — Verificación del TODO, mapa de acciones, Wikidata y generadores al día (2026-10-22)
+
+- `Admin/TODO.md`: cada punto lleva `Verificar: ...` (`audit <código> = 0`, `existe`, `contiene`, o `manual`; formato en `tools/todo-verificar.js`). `audit.js` avisa `todo-cumplido` (cerrarlo) y `todo-sin-verificar`; `node tools/todo.mjs --verificar` lo muestra y `--cerrar` se niega si la condición no se cumple (`--forzar` lo cierra igual). De los 16 puntos, solo el 365 tiene una condición comprobable hoy; los demás son `manual`, y todo punto nuevo tiene que declararla.
+- `tools/audit-acciones.json` y `node tools/audit.js --acciones`: para cada código que dispara, qué hacer, quién (script, sesión, Guido o nada) y dónde está cubierto; un código sin entrada da `codigo-sin-accion` (P3).
+- `tools/generadores.mjs` (lo que corre `publicarCambios()` al cerrar toda carga) suma `generate-fuentes-index.js`, `auditoria.mjs` e `indice-md.mjs`: audit.js verificaba los dos primeros como P1 y nadie los corría, así que una carga que los dejara viejos se revertía entera. `audit.js` avisa `generador-sin-correr` (P2) si vuelve a pasar. `indice-md.mjs` ahora escribe por defecto (`--problemas` solo imprime).
+- `tools/dato-publico.mjs`: fundación, estadio y capacidad por año y sitio web desde Wikidata, con cita. `estadio-sponsor.mjs` lo imprime como candidato cuando a un club le falta el estadio. Medición en `Admin/HALLAZGOS-pipeline.md`. `CLAUDE.md` pasa a tener la escalera para buscar un dato público.
+- Se borró `tools/fuente-companies-house.mjs` (reemplazada por `fuente-url-xhtml.mjs` en la 942).
+
 ## Versión 942 — La url del registro oficial se pone sola; decisiones con su aplicación; 352 medido (2026-10-21) [352]
 
 - `tools/fuente-url-xhtml.mjs` (reemplaza a `fuente-companies-house.mjs`): cubre Reino Unido (Companies House) y Dinamarca (Virk), elige el XHTML del club por la evidencia de carga (hay muchos `aarsrapport-2021-12-31.xhtml` de clubes distintos) y comprueba que los hechos etiquetados coincidan con el archivo local. `publicarCambios()` de `cargar.mjs` la corre con `--todos --escribir` al cerrar toda carga, alta o caja y deuda: nadie tiene que acordarse. Probada contra las 13 fuentes XHTML cargadas: coinciden 12; FC København 2025 no (su informe de grupo es el que el conversor deja afuera).

@@ -15,8 +15,8 @@
 // qué es ni cuándo se lee. «sigue a» = a qué otros documentos vivos manda ese (el orden de lectura).
 //
 // USO:
-//   node tools/indice-md.mjs                imprime solo los problemas (huérfanos y sin marca) y los totales
-//   node tools/indice-md.mjs --escribir     escribe Admin/INDICE-md.md (el índice entero, generado: no se edita a mano)
+//   node tools/indice-md.mjs                escribe Admin/INDICE-md.md (el índice entero, generado: no se edita a mano) e imprime los problemas; lo corre `publicarCambios()` (tools/generadores.mjs)
+//   node tools/indice-md.mjs --problemas    solo imprime los problemas (huérfanos y sin marca) y los totales, sin escribir
 //   node tools/indice-md.mjs --check        sale con 1 si Admin/INDICE-md.md quedó viejo
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs';
@@ -144,9 +144,9 @@ function indice() {
   return L.join('\n').replace(/\n{3,}/g, '\n\n').trimEnd() + '\n';
 }
 
-if (A.includes('--escribir')) { writeFileSync(SALIDA, indice(), 'utf8'); console.log(`escrito ${relative(ROOT, SALIDA)} (${filas.length} documentos)`); imprimirProblemas(); }
+if (A.includes('--problemas')) imprimirProblemas();
 else if (A.includes('--check')) {
   const hay = existsSync(SALIDA) ? readFileSync(SALIDA, 'utf8') : '';
-  if (hay !== indice()) { console.error('Admin/INDICE-md.md quedó viejo: node tools/indice-md.mjs --escribir'); process.exit(1); }
+  if (hay !== indice()) { console.error('Admin/INDICE-md.md quedó viejo: node tools/indice-md.mjs'); process.exit(1); }
   console.log('indice-md: al día');
-} else imprimirProblemas();
+} else { writeFileSync(SALIDA, indice(), 'utf8'); console.log(`escrito ${relative(ROOT, SALIDA)} (${filas.length} documentos)`); imprimirProblemas(); }

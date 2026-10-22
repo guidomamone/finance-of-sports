@@ -1064,9 +1064,16 @@ function checkGenerados() {
       else add('P1', code, `${que} quedó desactualizado. Corré: node tools/${script}${detalle ? ' — ' + detalle : ''}`);
     }
   }
+  // LA LISTA QUE CORRE Y LA QUE SE VERIFICA TIENEN QUE SER LA MISMA: un generador que audit.js verifica como P1 y que `publicarCambios()` (tools/generadores.mjs) no corre deja desfasada su salida
+  // en cada carga, y la carga se revierte entera (caso FC Volendam, faltantes-liga y estimar). generar-data lo corre publicar.mjs aparte y validar-esquema-json no genera nada.
+  try {
+    const corre = [...fs.readFileSync(path.join(ROOT, 'tools/generadores.mjs'), 'utf8').matchAll(/'tools\/([^']+)'/g)].map((m) => m[1]);
+    const sinCorrer = GENERADORES.map((g) => g[0]).filter((s) => !corre.includes(s) && !['generar-data.mjs', 'validar-esquema-json.mjs'].includes(s));
+    if (sinCorrer.length) add('P2', 'generador-sin-correr', `audit.js verifica ${sinCorrer.join(', ')} pero tools/generadores.mjs no lo corre al cerrar una carga: una carga que lo deje viejo se revierte. Sumalo a la lista de tools/generadores.mjs`);
+  } catch { /* sin generadores.mjs: otro chequeo lo dice */ }
   // el índice de documentos (Admin/INDICE-md.md) no frena un commit: P3
   try { execSync('node tools/indice-md.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
-  catch (e) { add('P3', 'indice-md-desfasado', 'Admin/INDICE-md.md quedó desactualizado (se creó, movió o borró un .md). Corré: node tools/indice-md.mjs --escribir'); }
+  catch (e) { add('P3', 'indice-md-desfasado', 'Admin/INDICE-md.md quedó desactualizado (se creó, movió o borró un .md). Corré: node tools/indice-md.mjs'); }
 }
 
 // to-do 247: un commit que corrige un dato publicado (importe, categoría, filas, totales, caja/deuda, moneda, fuente, perímetro) lleva el trailer
@@ -1492,6 +1499,22 @@ function checkFuentesPublicas(api) {
     if (usos.length) {
       add('P1', 'note-interna-renderizada', `${rel} interpola \`.note\` dentro de HTML (${usos.length} ${usos.length === 1 ? 'vez' : 'veces'}): esa es la nota interna, la que ve el visitante es publicNote`);
     }
+  }
+}
+
+// --- LOS PUNTOS DEL TODO: ¿ya se cumplieron? ¿declaran cómo se comprueba? ---------
+// Cada punto de Admin/TODO.md lleva líneas `Verificar: ...` (formato en tools/todo-verificar.js). Corre AL FINAL, con todos los hallazgos ya calculados, porque una condición puede ser
+// «audit <código> = 0». P3: un punto cumplido hay que cerrarlo (`node tools/todo.mjs --cerrar <id>`) y uno sin condición hay que completarlo (o `Verificar: manual`).
+function checkTodo() {
+  let T; try { T = require('./todo-verificar.js'); } catch { return; }
+  let texto; try { texto = fs.readFileSync(path.join(ROOT, 'Admin/TODO.md'), 'utf8'); } catch { return; }
+  const hasta = findings.slice();
+  for (const p of T.puntos(texto)) {
+    if (!p.verificar.length) { add('P3', 'todo-sin-verificar', `Admin/TODO.md, punto ${p.id}: sin línea «Verificar:». Agregá una condición que una máquina compruebe (audit <código> = 0, existe <ruta>, contiene <ruta> | <texto>) o «Verificar: manual»`); continue; }
+    const rs = p.verificar.map((e) => T.evaluar(e, hasta, ROOT));
+    const mal = rs.filter((r) => r.ok === null && !/^manual$/.test(r.detalle));
+    if (mal.length) add('P3', 'todo-verificar-ilegible', `Admin/TODO.md, punto ${p.id}: ${mal[0].detalle}`);
+    else if (rs.every((r) => r.ok === true)) add('P3', 'todo-cumplido', `Admin/TODO.md, punto ${p.id} («${p.titulo.slice(0, 60)}»): cumple su Verificar (${rs.map((r) => r.detalle).join('; ')}). Cerralo: node tools/todo.mjs --cerrar ${p.id}`);
   }
 }
 
@@ -2195,6 +2218,7 @@ function main() {
   checkRarezas();
   checkEjercicioSinRastro();
   pruebaDeDeporte(api);
+  checkTodo();
   // una entrada de audit-ignore.json que ya no silencia nada (el hallazgo se arregló o el chequeo cambió) es peso muerto y esconde un silencio viejo: P3
   const sinUso = IGNORADOS.filter((i) => !reglasUsadas.has(i) && i.code !== '_ejemplo_no_activo');
   if (ARGS.includes('--podar-ignore') && sinUso.length) { // saca esas entradas del archivo (el historial queda en git); el resto se escribe tal cual
@@ -2202,6 +2226,19 @@ function main() {
     console.error(`audit-ignore.json: ${sinUso.length} entradas sin uso sacadas`);
   }
   if (sinUso.length) add('P3', 'audit-ignore-sin-uso', `${sinUso.length} entradas de tools/audit-ignore.json no silencian nada hoy (sacarlas): ${sinUso.slice(0, 6).map((i) => `${i.code} «${String(i.match).slice(0, 40)}»`).join('; ')}${sinUso.length > 6 ? '; …' : ''}`);
+
+  // CUANDO PASA X, SE HACE Y: cada código que dispara tiene su acción en tools/audit-acciones.json (qué hacer, quién, dónde está cubierto). Uno que dispara sin entrada da P3.
+  let ACCIONES = {}; try { ACCIONES = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools/audit-acciones.json'), 'utf8')); } catch { /* sin archivo: todos los códigos dan codigo-sin-accion */ }
+  const sinAccion = [...new Set(findings.map((f) => f.code))].filter((c) => !ACCIONES[c] && c !== 'codigo-sin-accion');
+  if (sinAccion.length) add('P3', 'codigo-sin-accion', `${sinAccion.length} códigos de audit.js sin entrada en tools/audit-acciones.json (qué hacer cuando disparan): ${sinAccion.join(', ')}`);
+  if (ARGS.includes('--acciones')) { // la tabla de lo que dispara hoy: código · cuántos · quién · qué hacer
+    const por = {}; for (const f of findings) { por[f.code] = por[f.code] || { sev: f.sev, n: 0 }; por[f.code].n++; }
+    const orden = { P0: 0, P1: 1, P2: 2, P3: 3 };
+    for (const [c, v] of Object.entries(por).sort((x, y) => orden[x[1].sev] - orden[y[1].sev] || y[1].n - x[1].n)) {
+      const a = ACCIONES[c]; console.log(`${v.sev} ${String(v.n).padStart(3)}  ${c.padEnd(28)} ${a ? `[${a.quien}] ${a.hacer}${a.donde ? ` (${a.donde})` : ''}` : '(sin acción en tools/audit-acciones.json)'}`);
+    }
+    return;
+  }
 
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
   // (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.

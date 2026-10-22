@@ -33,8 +33,10 @@ Hoy se trabaja en UNA sesión, en la carpeta principal y en `main`, una cosa a l
 - **Hablarle a Guido.** Un mensaje por paso, con un ejemplo real antes de hacerlo y las decisiones numeradas con la recomendación al lado;
   tareas chicas, terminadas y commiteadas antes de abrir la siguiente. Lo que Guido tiene que correr o decidir va completo en el último
   mensaje del turno (el comando en un bloque `bash`), con **Te toca a vos** numerado o «nada», y **En curso** (rol, to-do, lote).
-- **Antes de preguntarle algo a un club, buscarlo en internet:** la pregunta va a `Admin/dudas-por-club.md` solo si el dato no es público
-  (fundación, licencia, número de registro y afiliación sí lo son).
+- **Un dato público (fundación, estadio y capacidad, sitio web, número de registro) se busca con una escalera, no con una búsqueda larga:**
+  (1) `node tools/dato-publico.mjs "<club>" --pais <iso2> --anio <año>` (Wikidata, con cita); (2) la ficha de Wikipedia del club abierta con
+  WebFetch, no el resumen del buscador; (3) una búsqueda corta, como la haría una persona (club + una palabra), y hasta tres reformulaciones antes
+  de dar el dato por no encontrado. A `Admin/dudas-por-club.md` va solo lo que únicamente el club sabe.
 - **Decide la sesión, cuenta en el resumen:** estructura y calidad de datos (ids, esquema, alias, consistencia, reglas objetivas). **Va a
   Guido:** el texto de una skill (Edit y Write piden el texto en `Admin/propuestas/`; Bash puede escribir en las skills), gastar fuera del presupuesto, push y deploy, un cambio de alcance, un mail a
   un club (solo si lo pidió con sus palabras).

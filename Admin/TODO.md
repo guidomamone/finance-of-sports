@@ -16,6 +16,9 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
   `Admin/finance-of-sports-project.md`. Si el punto sigue vivo en parte, se reescribe a lo que falta.
 - **Un punto nuevo arranca con «Terminado cuando:»**: la lista cerrada de lo que entra (clubes, años, archivos, tools) y la prueba de que está
   hecho. Lo que aparece en el camino y no está en esa lista es un punto nuevo.
+- **Cada punto termina con una o más líneas `Verificar: ...`** que una máquina comprueba: `audit <código> [«texto»] <op> <n>`, `existe <ruta>`,
+  `no-existe <ruta>`, `contiene <ruta> | <texto>`, `no-contiene <ruta> | <texto>`, o `Verificar: manual` si no se puede. `node tools/todo.mjs
+  --verificar` las corre; `audit.js` avisa `todo-cumplido` cuando un punto ya cumple (hay que cerrarlo) y `todo-sin-verificar` cuando falta la línea.
 - **Los pendientes de sourcing de un país no van acá**: viven en `Admin/sourcing/<País>/_notas-generales.md`.
 
 ## A. En marcha
@@ -27,6 +30,8 @@ Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West
 los 10 británicos nuevos del 356 (sus sueldos entraron con `incluye wages_squad --posible` en `other_expenses`; se parten con
 `caja-deuda --personal`) e Instituto 2025 (anexo de remuneraciones cargado entero en gastos generales). Cómo:
 `Admin/Archive/sesion-ligas-2026-10-21.md`, tercera corrida. Corrige datos publicados: trailer `Corrige:`.
+
+Verificar: manual
 
 ### 2. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
 
@@ -45,12 +50,16 @@ Guido (2026-10-21): todavía no se crea la categoría. Antes, al terminar el res
 simplificado y en cuántos club-años de cuántos queda en 0 (por deporte y por país). Ninguna fila se oculta en cero: el formato es
 siempre igual (la propuesta de `hideIfZero` para la fila nueva y para Educación queda descartada).
 
+Verificar: manual
+
 ### 3. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
 
 LO QUE QUEDÓ SIN DUEÑO DEL RELEVAMIENTO DE SKILLS (une el 330). Aplicado: las cinco skills nuevas, las partes 1, 3 y 7 de
 `Admin/propuestas/257-skills.md`, la memoria vaciada y el candado de skills del hook. Falta: (a) que `perfil-en-cola` de `cargar.mjs`
 nunca frene (Pipeline); (b) la duda de Deportes Tolima, `dudas-por-club.md:201`, que frena su carga. Los descartes 314 y 298 en
 `Admin/HALLAZGOS-pipeline.md` y el párrafo de Chrome headless ya se hicieron (Versión 931).
+
+Verificar: manual
 
 ### 4. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
 
@@ -83,6 +92,8 @@ iXBRL que presenta y el sitio no tiene está cargado o descartado con motivo. Fa
 - Daneses que esperan: los XHTML de SønderjyskE 2022-23, Hvidovre 2025, Brøndby 2025 (−130,578 M) y el PSE de København 2021-25, y los 9
   de 2025-26 cuyo PDF de Chrome sale sin texto (Horsens, Hobro, Lyngby, Næstved, Randers, Skive, Viborg; nota de Pipeline 14).
 
+Verificar: manual
+
 ### 5. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
 
 FRENO DE DOCUMENTOS DE GRUPO (sale del 356, Fleetwood/Jaymel; regla votada 3 a 0 en CONVENCIONES-DATOS, «Un consolidado de grupo con
@@ -90,6 +101,8 @@ negocios ajenos al club», umbral del 10 % sobre lo impreso). Terminado cuando: 
 grupo si el turnover por clase de negocio deja el deporte del club por debajo del 90 %, o si el ejercicio trae la venta o compra de la
 sociedad del club; medido, frena los 3 Jaymel y 0 de los 53 británicos cargados desde grupo. Antes de codear, pasa por la sección 7 de la
 skill de auditoría (la Auditora). Lo hace Pipeline.
+
+Verificar: manual
 
 ### 6. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
@@ -108,6 +121,8 @@ se saca `cabecera` de `perimetroHeredado` (`cargar.mjs:215-220`), que se calcula
 Guido). Lo hace Pipeline (a, b, c) y la principal (d). Las dos preguntas de la Auditora 5 ya están contestadas en CONVENCIONES-DATOS:
 el tramo corto va como C y la temporada COVID lleva la etiqueta en pantalla, sin publicNote.
 
+Verificar: manual
+
 ## D. Orden de la casa
 
 ### 7. 338 · correr todas las auditorías del proyecto (al final de A)
@@ -116,12 +131,16 @@ CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
 `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
 
+Verificar: manual
+
 ### 8. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
 3.000 ~200 KB. Todavía no. Se reabre cuando lo que se baja siempre pase 150 KB comprimidos (~2.200 clubes) o esos dos archivos pasen 1 MB
 crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy proyecta bytes crudos): condición nueva, va a la Auditora.
+
+Verificar: manual
 
 ### 9. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
@@ -132,6 +151,8 @@ cuerpo del commit y `Admin/registros/ajustes-manuales.jsonl`; el motivo es públ
 el motivo se traduce al inglés al curar (sin `motivo_en` la página en inglés muestra el español); (c) `tools/exportar-paquete.mjs` suma el
 registro al Data Package (pasa por la skill `contrato-de-datos`); (d) revisado que los tipos «total» y «otro» de los eventos no tengan ruido
 de renombres. Lo hace Pantallas.
+
+Verificar: manual
 
 ### 10. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
@@ -167,12 +188,16 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
 `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
 
+Verificar: manual
+
 ### 11. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
 Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la NV en esa temporada es `be-challengerproleague`) o se descarta con motivo, y
 `ejercicio-sin-rastro` de `liersekempenzonen-be` queda en 0 (2023-2025 silenciados en `tools/audit-ignore.json` con la cita de la nota de sourcing).
+
+Verificar: audit ejercicio-sin-rastro "liersekempenzonen-be" = 0
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
@@ -186,6 +211,8 @@ Medido (Onboarding 7, 2026-10-20; detalle en `Admin/Archive/sesion-onboarding-20
 Brasil 46/100, Bundesliga 24/90, LaLiga 18/60, Argentina 32/138, Ligue 1 0. Propuesta: umbral 90% (Argentina 60%) cargado o cerrado
 con motivo; ~US$160. Abiertas: el umbral y la plata (Guido); Ligue 1 desde el DNCG (criterio a la Auditora); listas de equipos que
 faltan (Pipeline).
+
+Verificar: manual
 
 ### 13. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
@@ -201,6 +228,8 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
  (f) material de difusión (era el 259): un deck para periodistas y sponsors, o un informe por liga («las finanzas de LaLiga 2025 en
      10 slides»), con el tipo Slides; sin código. Nada de esto sale antes del 337.
 
+Verificar: manual
+
 ### 14. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
@@ -214,12 +243,16 @@ PDF"), casi todos sin canal público; entre ellos Go Ahead Eagles 2025. Roma 202
 consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025 cambian de informe (los dos están bajados).
 (d) Las preguntas a cada club: `Admin/dudas-por-club.md`.
 
+Verificar: manual
+
 ### 15. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
 SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
 (`Admin/fuentes-externas.md`, "Consecuencias").
+
+Verificar: manual
 
 ### 16. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
@@ -228,3 +261,5 @@ dueño o los socios ponen como aumento de capital, aporte o préstamo va al patr
 muestra. Primero medir (Auditora o Pipeline): en cuántos club-años el documento lo imprime (estado de cambios en el patrimonio, flujo de
 fondos o notas) y con qué rótulos, por país. Después Pantallas propone dónde se ve, con mockup para el ok de Guido. Si suma un campo al
 JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios y aportes impresos como ingreso).
+
+Verificar: manual
