@@ -1,47 +1,44 @@
 # Formato simplificado: buckets de la pantalla, grossDebt y sector
 
-El set de categorías que ve la pantalla (filas, orden y nombres iguales a Boca), la regla de ingeniería al agregar una categoría, y los criterios de `grossDebt` y de gasto por sector. Leelo si vas a tocar un bucket, agregar una categoría o decidir `grossDebt` de un club.
+El set de categorías que ve la pantalla (filas, orden y nombres: los de `js/finanzas-calc.js`, iguales para todos los clubes), la regla de ingeniería al agregar una categoría, y los criterios de `grossDebt` y de gasto por sector. Leelo si vas a tocar un bucket, agregar una categoría o decidir `grossDebt` de un club.
 
-## "Formato Simplificado" de CUALQUIER club usa el mismo set de categorías, el mismo orden y los mismos nombres que Boca
+## El Formato simplificado de CUALQUIER club usa las mismas filas, en el mismo orden y con los mismos nombres
 
-El objetivo es poder comparar clubes con las MISMAS categorías. Boca lee `GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/
-`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` (`js/finanzas-calc.js`) en vivo igual que cualquier otro club: un bucket nuevo se agrega en UN
-SOLO lugar y afecta a todos.
+El objetivo es poder comparar clubes con las MISMAS categorías. Las filas se definen en UN solo lugar, `GENERIC_SIMPLIFIED_REVENUE_BUCKETS` y
+`GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` de `js/finanzas-calc.js`, y las lee igual cualquier club y cualquier deporte (Boca es un club más; ya no tiene un
+reporte propio). Agregar, quitar o fusionar una fila es un cambio en esa lista, más las etiquetas (`data/site-labels.js`, `data/lang/en.js`), el color
+(`js/finanzas-calc.js`, colores de ingresos) y las categorías que la alimentan (`data/category-map.js`).
 
-**Filas de referencia, en este orden exacto (el de Boca Ejercicio 2027, la referencia canónica):**
-- **Ingresos**: Cuotas Sociales, Comercial / Sponsors, **Estadio** (`matchday_competition` + `season_tickets` + `stadium_other`
-  combinadas en una fila; el acordeón las separa por `rawLabel`; el interruptor `ABONOS_DENTRO_DE_ESTADIO` en
-  `js/finanzas-calc.js` puede devolver `season_tickets` a su propia fila "Abonos" sin tocar ningún dato), Televisión, Premios por
-  competencias, Venta de Jugadores, Educación, Otras secciones deportivas, Fútbol profesional (sin desglosar por la fuente,
-  `hideIfZero:true`), catch-all **"Otros ingresos"**.
-- **Gastos**: Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación),
-  Organización de partidos, Otras secciones deportivas (juvenil/otros deportes/básquet), Administración y gastos generales,
-  catch-all **"Otros gastos"**. **Estas 7 filas son SIEMPRE las mismas para cualquier club/año**, aunque el documento no permita
-  separar las 3 del medio (Organización de partidos / Otras secciones / Administración): en ese caso esas 3 muestran $0 y el monto
-  completo cae en "Otros gastos". Mostrar la fila en $0 no es "esconder", es "no hay cómo separar esto". Una categoría que se
-  agregue a futuro va en la posición que le correspondería si Boca tuviera esa fila, no al final por comodidad.
+**Cómo se decide una fila.** Con datos, no a ojo: `node tools/fos.mjs filas` (cuántos clubes la usan, cuánto pesa, en qué países) y, para una candidata que
+hoy no es fila, `--etiqueta`. Una fila que existe en un par de clubes de un solo país se fusiona con la más parecida; una que está en muchos países se abre
+aunque pese poco. La votación (`votacion-de-criterios`) la corre quien lo pida; la medición es la evidencia.
 
-**REGLA NO OPCIONAL**: si el documento no permite categorizar de esta misma manera, consultale a Guido primero (está en la sección 1
-de `SKILL.md`).
+**Las filas son las del código; el orden es el que pide la lista.** Una fila nueva va donde corresponde por afinidad (lo deportivo junto, lo no deportivo
+después), no al final por comodidad. Una fila de gastos o de ingresos aparece siempre, aunque dé cero: mostrar 0 no es esconder, es «el documento no
+permite separarlo» (el caso más común: Organización de partidos, Otras actividades y Administración en un documento que las junta; el monto cae en
+«Otros gastos»).
 
-**Los nombres tienen que ser IDÉNTICOS carácter por carácter contra Boca**, "parecido" no alcanza. Ejemplo del bug: `'Televisión'`
-(Boca) vs. `'Televisión / Derechos de TV'` (motor genérico) para `broadcasting`. Copiá el label LITERAL del código de Boca, no lo
-reescribas de memoria.
+**Si el documento no permite categorizar de esta manera**, no se inventa una fila para ese club: el monto va al catch-all y la sesión lo anota. Un cambio de
+criterio para todos los clubes sí es del párrafo anterior (medición y votación).
 
-**`hideIfZero:true` es SOLO para categorías sin equivalente en Boca** ("Fútbol profesional, sin desglosar por la fuente" es la única):
-mostrar esa fila en $0 para un club bien desglosado sería una fila extra rompiendo la promesa de "igual que Boca". No es una regla
-de esconder cualquier $0: "Venta de Jugadores" en $0 (un club que no vendió a nadie) se muestra igual que en Boca. Cuando el bucket
-sin desglosar SÍ tiene plata (ej. River 2024, 67% del revenue ahí), la fila se muestra normal.
+**Los nombres tienen que ser IDÉNTICOS carácter por carácter** a los de la lista de `js/finanzas-calc.js` y a las claves de `data/site-labels.js`:
+«parecido» no alcanza (`'Televisión'` contra `'Televisión / Derechos de TV'` rompió la traducción). Copiá el label literal del código, no lo reescribas de
+memoria.
+
+**Estadio vs. Abonos son dos conceptos DISTINTOS de venta de acceso, nunca un label combinado tipo «Entradas / Abonos»**: «Estadio» es lo que el club vende
+PARTIDO POR PARTIDO (`matchday_competition`); «Abonos» es season tickets, pago adelantado por toda la temporada (`season_tickets`). Hoy una sola fila
+«Estadio» los junta (`ABONOS_DENTRO_DE_ESTADIO`) y el acordeón los separa por `rawLabel`. Mapeá cada rubro con la pregunta «¿esto se paga por partido o por
+temporada completa?».
+
+**`hideIfZero:true` es SOLO para el bolsón «Fútbol profesional (sin desglosar por la fuente)»**: mostrarlo en $0 para un club bien desglosado sería una
+fila extra que no dice nada. No es una regla de esconder cualquier $0: «Venta de Jugadores» en $0 (un club que no vendió a nadie) se muestra igual, y ninguna
+fila nueva se oculta en cero (el formato es siempre el mismo). Cuando el bolsón SÍ tiene plata (ej. River 2024, 67 % de los ingresos ahí), la fila se muestra normal.
 
 **Por qué combinar categorías esconde errores (Athletic Club)**: al fusionar "Estadio", Athletic pasó a mostrar 97% de sus ingresos
 ahí. La causa no era la fusión: su línea "Ingresos deportivos" (139,5 M€, 82% del club) estaba entera como `matchday_competition`,
 cuando la Nota 21.4 de sus cuentas la abre en 5 conceptos, el más grande 72,7 M€ de TELEVISIÓN (el sitio mostraba "Televisión 0,0").
 **Moraleja: una fila con un porcentaje absurdo del total es señal de sospechar de la línea más grande, no del bucket.**
 
-**Estadio vs. Abonos son dos conceptos DISTINTOS de venta de acceso, nunca un label combinado tipo "Entradas / Abonos"**: "Estadio" es
-lo que el club vende PARTIDO POR PARTIDO (`matchday_competition`, `r.exhibicionEspectaculos` en Boca); "Abonos" es season tickets,
-pago adelantado por toda la temporada (`season_tickets`, `r.abonos` en Boca). Mapeá cada rubro con la pregunta "¿esto se paga por
-partido o por temporada completa?".
 
 **Educación/Otras secciones deportivas no son una rareza de 2 clubes**: `auditorias/2026-09-22-catchall-no-futbol.md` midió que los
 11 clubes argentinos cargados tienen negocio no futbolístico (colegio, polideportivo, otros deportes) contra 0 de los 10 españoles y

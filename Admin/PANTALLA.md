@@ -553,24 +553,13 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   Educación, Otras secciones deportivas, catch-all "Otros ingresos" (con "Abonos" de vuelta en 6ta
   posición si `ABONOS_DENTRO_DE_ESTADIO` se pone en `false`). Orden anterior, hasta la 188: Cuotas
   Sociales, Comercial/Sponsors, Estadio, Televisión, Premios, Abonos, Venta de Jugadores,
-  catch-all. También: cualquier bucket que NO tenga equivalente en Boca (hoy: "Fútbol profesional
-  (sin desglosar por la fuente)", solo existe para Racing/River porque a veces el dato no
-  desglosa más) lleva `hideIfZero:true` en su definición, no se pinta la fila si ese club/año no
-  tiene ninguna línea ahí adentro (Guido lo pidió viendo esa fila en $0 para Racing). Un bucket
-  NORMAL en $0 (ej. Venta de Jugadores cuando no hubo ventas) se sigue mostrando igual que en Boca,
-  la regla `hideIfZero` es solo para categorías-excepción sin equivalente Boca. Ver
-  `.claude/skills/club-data-mapping/referencia/formato-simplificado.md` y `Admin/finance-of-sports-project.md`.
-- REGLA PERMANENTE (pedido explícito de Guido): "Formato simplificado" de CUALQUIER
-  club tiene que usar el mismo set de categorías y la misma lógica que ya usa Boca
-  (`simplifiedReportForBoca()`), no un set separado diseñado para el motor genérico. Si el dato
-  fuente de un club no permite categorizar así, consultar a Guido antes de decidir cómo resolverlo,
-  nunca improvisar. Detalle completo en `.claude/skills/club-data-mapping/referencia/formato-simplificado.md` y en
-  `Admin/finance-of-sports-project.md`. Esta sesión encontró 3 discrepancias reales, se las presentó a Guido con
-  `AskUserQuestion` antes de tocar nada, y ya están resueltas: Racing separó "Estadio: recaudación
-  de partidos" de un bucket nuevo "Premios por competencias" (el dato fuente ya los distinguía);
-  River se dejó como estaba (su dato no permite separarlo hoy); Gastos se dejó con la
-  categorización que ya tenía, solo renombrada para que coincida con el vocabulario de Boca (Compra
-  de jugadores / Salarios y primas / Inversiones / Otros gastos).
+  catch-all. El bolsón «Fútbol profesional (sin desglosar por la fuente)» lleva `hideIfZero:true` en su definición: no se pinta si ese club/año no tiene
+  ninguna línea adentro (solo existe porque a veces el dato no desglosa más). Un bucket NORMAL en $0 (ej. Venta de Jugadores cuando no hubo ventas)
+  se muestra igual; ninguna otra fila se oculta en cero. Ver `.claude/skills/club-data-mapping/referencia/formato-simplificado.md`.
+- REGLA PERMANENTE: el Formato simplificado de CUALQUIER club usa las mismas filas, en el mismo orden y con los mismos nombres, definidas en un solo lugar
+  (`GENERIC_SIMPLIFIED_REVENUE_BUCKETS` y `GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` de `js/finanzas-calc.js`); Boca es un club más. Si el documento de un club no
+  permite categorizar así, el monto va al catch-all y se anota; cambiar las filas para todos se decide con `node tools/fos.mjs filas` (cuántos clubes la
+  usan, cuánto pesa, en qué países). Detalle y cómo se agrega una fila: `.claude/skills/club-data-mapping/referencia/formato-simplificado.md`.
 - REGLA: el
   `<select id="gestionSelect">` también tiene ancho fijo por CSS
   (`#gestionSelect{width:200px;max-width:100%;}`, justo después de `#anioSelect{...}`), mismo

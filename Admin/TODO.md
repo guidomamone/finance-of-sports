@@ -61,6 +61,7 @@ Lo que quedaba de esta línea (la skill `perfil-en-cola` que frenaba la carga) y
 NOTAS, y el resultado neto de 2025 da tres cifras que no concilian (SIIS $359 M; la tabla histórica de la Nota 18(3), $914 M; sumando las notas 19 a 23, ~$3.185 M). Los ingresos de 2025 sí cierran exacto ($49.330,876 M).
 Cómo se resuelve sin preguntarle al club, porque es público: bajar de SIIS (siis.ia.supersociedades.gov.co, NIT 890700863) otro radicado de 2025 que traiga el Estado de Resultado Integral primario (`club-sourcing`); y
 mientras tanto cargar 2016 a 2024 (el año 2025 sin `officialPAT` queda con el aviso `balance-sin-pat`, que no frena). Falta el dictamen del revisor fiscal de 2024 (`dictamen-revisor-fiscal-2024.pdf` es idéntico al de 2025, `Admin/sourcing/Colombia/_notas-generales.md`).
+Decisión de Guido (2026-10-22): no es necesario resolver el resultado de 2025 para cargar; se cargan los años con el pipeline y 2025 queda sin `officialPAT` (aviso `balance-sin-pat`, no frena). La duda se anota en la nota de sourcing del club y se retoma. Se hace después del reset de tokens (≈10 documentos ya transcriptos; el costo es la categorización).
 Terminado cuando: Tolima está cargado (los años que el documento permite) y la duda de `dudas-por-club.md` se borró o quedó respondida con la fuente.
 
 Verificar: existe data/co/deportestolima-co.json
@@ -95,7 +96,11 @@ iXBRL que presenta y el sitio no tiene está cargado o descartado con motivo. Fa
   es Fleetwood Wanderers 2020-21.
 - Daneses que esperan: los XHTML de SønderjyskE 2022-23, Hvidovre 2025, Brøndby 2025 (−130,578 M) y el PSE de København 2021-25, y los 9
   de 2025-26 cuyo PDF de Chrome sale sin texto (Horsens, Hobro, Lyngby, Næstved, Randers, Skive, Viborg; nota de Pipeline 14).
+- ESTADO VERIFICADO (2026-10-22): ninguno de los clubes de las listas de arriba (Hibernian, Bolton… Tranmere, Falkirk, Morecambe, Ross County) está en el sitio todavía; `Scottish Championship` no existe en `data/leagues.js`; la cuota del Trust no está escrita en CONVENCIONES-DATOS. El gasto de IA citado arriba (~US$ 1,9) es de entonces: `node tools/gasto.mjs` da el actual.
+- HALLAZGO DEL 351 que cae acá: un `full-accounts` de la filial (Aston Villa Football Club Limited 2019-20) trae una nota de personal de 8,3 M£ (3 directores y personal comercial) y el plantel está en otra entidad del grupo; el gasto «Administrative expenses» (203 M£) no tiene los sueldos de los jugadores. Esa nota NO es el costo de personal del club: el conversor y `caja-deuda --personal` tienen que distinguir la nota de la entidad de la del grupo (y descartar un total que es menos del 15 % de los ingresos). Ver el 351.
 
+Verificar: contiene data/leagues.js | Scottish Championship
+Verificar: contiene Admin/CONVENCIONES-DATOS.md | Trust
 Verificar: manual
 
 ### 5. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo

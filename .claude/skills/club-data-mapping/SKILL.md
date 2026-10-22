@@ -22,7 +22,7 @@ está resumida en la sección 5 y el detalle en `referencia/fx.md`.
 | Archivo | Qué hay | Cuándo leerlo |
 |---|---|---|
 | `referencia/fx.md` | Detalle de la conversión a USD (la sección 5 es el resumen): qué tipo de cambio usar y en qué orden, `fxSource`/`fxRef`, sentido de `fx`, cotización que no aparece | El club no es ARS, aparece una moneda nueva o hay que fijar un `fx` |
-| `referencia/formato-simplificado.md` | Filas, orden y nombres de los buckets de la pantalla (iguales a Boca), regla de ingeniería al agregar una categoría, `grossDebt` por club, gasto por sector | Vas a tocar un bucket, agregar una categoría, decidir `grossDebt` o separar un gasto por sector |
+| `referencia/formato-simplificado.md` | Filas, orden y nombres de los buckets de la pantalla (los define `js/finanzas-calc.js`), regla de ingeniería al agregar una categoría, `grossDebt` por club, gasto por sector | Vas a tocar un bucket, agregar una categoría, decidir `grossDebt` o separar un gasto por sector |
 | `referencia/leer-pdf.md` | Medir si el PDF tiene texto, enderezar escaneos torcidos o rotados, OCR con Tesseract, fila acumulada que no concilia, verificación de un `.md` de Mistral OCR | El PDF es escaneado o sin capa de texto, o una fila no concilia |
 | `referencia/casos-por-pais-y-formato.md` | Presupuesto de caja con sección Extraordinaria, impuestos/cargas/moratoria, fuente que publica solo ingresos, rubros NIIF de Perú, balance danés (§ 32), ejemplo largo de `items` enterrados (Racing) | Tu club cae en uno de esos casos |
 
@@ -104,9 +104,10 @@ Dos mapeos generales más (el detalle está en `referencia/casos-por-pais-y-form
 - Impuestos, tasas, ART, seguros → `admin_general_expense`.
 - Cargas sociales: van con el sueldo de su sector, nunca como categoría propia.
 
-**REGLA NO OPCIONAL: si el documento de un club NO permite categorizar de esta misma manera (la del Formato simplificado de Boca, ver
+**REGLA NO OPCIONAL: si el documento de un club NO permite categorizar con las filas del Formato simplificado (las de `js/finanzas-calc.js`, ver
 `referencia/formato-simplificado.md`), no decidas solo cómo resolverlo (categoría inventada, catch-all sin avisar, aproximación
-forzada). Consultale a Guido primero, con la discrepancia concreta y las opciones, no en abstracto.**
+forzada). El monto va al catch-all, se anota, y un cambio de criterio para todos los clubes se mide con `node tools/fos.mjs filas` y se consulta a Guido
+con la discrepancia concreta y las opciones, no en abstracto.**
 
 ## 2. Resultados financieros (intereses, diferencias de cambio): NUNCA una línea
 
