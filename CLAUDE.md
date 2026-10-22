@@ -44,8 +44,8 @@ Hoy se trabaja en UNA sesión, en la carpeta principal y en `main`, una cosa a l
 ## Al empezar
 
 - **Leer, y parar ahí:** este archivo (ya cargado), la skill `start-session-finance-of-sports-project` (la tabla de qué leer según la tarea)
-  y `Admin/ESTADO.md` (qué hay armado hoy), sola, sin que Guido lo pida. `Admin/TODO.md` NO se lee al arrancar: se abre cuando
-  la tarea es elegir qué sigue, cuando Guido lo pide, o para agregar o borrar un punto. Qué hay cargado de cada club:
+  y `Admin/ESTADO.md` (qué hay armado hoy), sola, sin que Guido lo pida. `Admin/TODO.md` NO se lee entero nunca: `node tools/todo.mjs`
+  da la lista ordenada (qué sigue) y `node tools/todo.mjs <id>` el cuerpo de un punto. Qué hay cargado de cada club:
   `Admin/ESTADO-clubes.md` (generado). `Admin/CONVENCIONES.md` (reglas de proceso) se lee cuando la skill de la tarea lo pide.
 - **Las skills y los documentos de criterio** (`Admin/PIPELINE.md`, `CONVENCIONES*.md`, `PANTALLA.md`, `ESTADO.md`) dicen cómo se trabaja y qué hay HOY: sin historia (nada de «Versión N», fechas de decisión ni ramas mergeadas: eso va a `Admin/CHANGELOG.md`; un caso real que ilustra una regla se queda, sin la versión), sin contadores fijos (en su lugar, el comando que los da: `node tools/estado.mjs`, `node tools/audit.js`, `Admin/ESTADO-clubes.md`), sin «to-do N» (el pendiente vive solo en `Admin/TODO.md`) y con las menos palabras que una sesión siga entendiendo.
 - **Usá la skill que corresponde a la tarea; es obligatorio.** Sin ella, una sesión contradice un criterio ya decidido sin saber que
@@ -64,7 +64,8 @@ Con cualquier cambio real (datos, features, estructura, copy), sin que Guido lo 
 
 - **`Admin/ESTADO.md`** al día. Es un snapshot, no un log: lo que dejó de ser cierto se reemplaza o se borra.
   `Admin/ESTADO-clubes.md` no se escribe a mano: `node tools/generate-club-index.js`.
-- **`Admin/TODO.md`**: se BORRA lo resuelto (no se marca "RESUELTO"). Un punto nuevo toma el número siguiente al más alto.
+- **`Admin/TODO.md`**: se BORRA lo resuelto (`node tools/todo.mjs --cerrar <id>`; no se marca "RESUELTO"). Un punto nuevo toma el id siguiente al
+  más alto y un lugar en el orden (formato en la cabecera del propio TODO).
 - **`Admin/CHANGELOG.md`**: siempre una entrada, corta (qué cambió). `Admin/finance-of-sports-project.md` solo si amerita el porqué.
 - La lista de pendientes vive solo en `Admin/TODO.md`. El detalle del cierre: skill de arranque, sección 5.
 
