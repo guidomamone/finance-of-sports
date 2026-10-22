@@ -11,7 +11,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 352, 
 
 - `CLAUDE.md` · 11.2 KB · instrucciones permanentes del proyecto (se carga sola) · **leer:** siempre · ←24 · →CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md, PIPELINE.md
 - `Admin/ARQUITECTURA.md` · 72.0 KB · cómo funciona el motor de Finanzas y los scripts que escriben data/ · **leer:** al tocar el motor (js/finanzas-*) o los scripts que escriben data/; la sección que toca · ←9 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
-- `Admin/CHANGELOG.md` · 176.9 KB · qué cambió y cuándo (la última semana; lo anterior está en Archive) · **leer:** solo por grep de una palabra, nunca de corrido · ←26 · →CLAUDE.md, ARQUITECTURA.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md
+- `Admin/CHANGELOG.md` · 178.5 KB · qué cambió y cuándo (la última semana; lo anterior está en Archive) · **leer:** solo por grep de una palabra, nunca de corrido · ←26 · →CLAUDE.md, ARQUITECTURA.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md
 - `Admin/CONVENCIONES-DATOS.md` · 62.4 KB · reglas de datos: categorías, perímetro, períodos, tipos de cambio · **leer:** al cargar o corregir datos de un club; la sección que toca · ←29 · →CLAUDE.md, CONVENCIONES.md, PANTALLA.md, dudas-por-club.md, propuestas/transicion-y-covid.md, club-data-mapping/SKILL.md
 - `Admin/CONVENCIONES.md` · 17.3 KB · reglas de proceso vigentes · **leer:** cuando la skill de la tarea lo pide · ←21 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, PANTALLA.md, TODO.md, dudas-por-club.md
 - `Admin/ESTADO-clubes.md` · 26.7 KB · qué hay cargado de cada club (generado) · **leer:** si hace falta el detalle club por club · ←18 · →ESTADO.md
@@ -19,7 +19,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 352, 
 - `Admin/HALLAZGOS-pipeline.md` · 45.7 KB · lo que se midió y no entró al pipeline, con el porqué · **leer:** antes de proponer una mejora al pipeline, por grep · ←13 · →PIPELINE.md, TODO.md, club-or-year-onboarding/club-nuevo.md
 - `Admin/PANTALLA.md` · 87.0 KB · reglas de pantalla y código del sitio · **leer:** al tocar js/, index.html o css; la sección de la pantalla · ←15 · →CONVENCIONES.md, ESTADO.md, club-data-mapping/referencia/formato-simplificado.md, club-or-year-onboarding/club-nuevo.md, producto-y-pantalla-finance-of-sports/referencia/marca.md, producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md
 - `Admin/PIPELINE.md` · 130.1 KB · el pipeline etapa por etapa y las decisiones de Guido · **leer:** solo la etapa que se toca · ←39 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, dudas-por-club.md, club-data-mapping/referencia/leer-pdf.md
-- `Admin/TODO.md` · 24.5 KB · qué falta hacer, un punto por título y por prioridad · **leer:** con node tools/todo.mjs; nunca entero · ←24 · →ESTADO-clubes.md, HALLAZGOS-pipeline.md, PIPELINE.md, dudas-por-club.md, fuentes-externas.md, propuestas/257-skills.md
+- `Admin/TODO.md` · 23.2 KB · qué falta hacer, un punto por título y por prioridad · **leer:** con node tools/todo.mjs; nunca entero · ←24 · →ESTADO-clubes.md, HALLAZGOS-pipeline.md, PIPELINE.md, dudas-por-club.md, fuentes-externas.md, propuestas/257-skills.md
 - `Admin/dudas-por-club.md` · 120.0 KB · preguntas que solo el club puede contestar · **leer:** al escribirle a un club o al agregar una duda · ←34 · →TODO.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md, club-data-mapping/referencia/casos-por-pais-y-formato.md, club-data-mapping/referencia/formato-simplificado.md
 - `Admin/finance-of-sports-project.md` · 507.6 KB · diario narrativo: el porqué de las decisiones viejas · **leer:** solo por grep de una palabra, nunca de corrido · ←9 · →CLAUDE.md, CONVENCIONES.md, ESTADO.md, dudas-por-club.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md
 - `Admin/fuentes-externas.md` · 6.8 KB · términos de las fuentes externas (Wikipedia, RSSSF, bancos centrales) · **leer:** antes de publicar datos de una fuente externa nueva · ←3
@@ -32,7 +32,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 76, `Admin/Archive` 352, 
 - `Admin/propuestas/350-revision-categorias.md` · 10.2 KB · (sin marca) · ←1 · →CONVENCIONES-DATOS.md, PANTALLA.md
 - `Admin/propuestas/archivo-no-es-lo-que-dice.md` · 2.4 KB · (sin marca) · ←1 · →PIPELINE.md
 - `Admin/propuestas/estructurado-sin-ia.md` · 3.3 KB · (sin marca) · ←1 · →CONVENCIONES.md
-- `Admin/propuestas/p2-p3-y-roles.md` · 1.5 KB · (sin marca) · ←1 · →TODO.md
+- `Admin/propuestas/p2-p3-y-roles.md` · 1.5 KB · (sin marca) · ←0 huérfano · →TODO.md
 - `Admin/propuestas/transicion-y-covid.md` · 11.0 KB · (sin marca) · ←1 · →CONVENCIONES-DATOS.md, dudas-por-club.md
 
 ## Admin: otras carpetas vivas

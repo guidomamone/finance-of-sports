@@ -38,6 +38,6 @@ window.CLUB_GENERIC_DATA["exetercity-gb"] = {
   presupuestoOverlayByYear: exetercityGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"exetercity-gb-exeter-group-accounts-2024-25-ixbrl":{"id":"exetercity-gb-exeter-group-accounts-2024-25-ixbrl","clubId":"exetercity-gb","title":"Exeter City A.F.C. Limited — exeter-group-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)"}});
+Object.assign(sources, {"exetercity-gb-exeter-group-accounts-2024-25-ixbrl":{"id":"exetercity-gb-exeter-group-accounts-2024-25-ixbrl","clubId":"exetercity-gb","title":"Exeter City A.F.C. Limited — exeter-group-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","url":"https://find-and-update.company-information.service.gov.uk/company/00097808/filing-history/MzUxMzAwMzU3MmFkaXF6a2N4/document?format=xhtml&download=0"}});
 
 memberCountByClub["exetercity-gb"] = null;

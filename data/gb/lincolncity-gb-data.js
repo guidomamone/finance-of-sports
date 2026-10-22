@@ -35,6 +35,6 @@ window.CLUB_GENERIC_DATA["lincolncity-gb"] = {
   presupuestoOverlayByYear: lincolncityGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl":{"id":"lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl","clubId":"lincolncity-gb","title":"Lincoln City Football Club Company Limited — lincoln-medium-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)"}});
+Object.assign(sources, {"lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl":{"id":"lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl","clubId":"lincolncity-gb","title":"Lincoln City Football Club Company Limited — lincoln-medium-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","url":"https://find-and-update.company-information.service.gov.uk/company/00045611/filing-history/MzQ5OTMxNDk0MGFkaXF6a2N4/document?format=xhtml&download=0"}});
 
 memberCountByClub["lincolncity-gb"] = null;

@@ -6,51 +6,6 @@
   "motivo": "Entrada de ejemplo, no silencia nada. Copiala para agregar una real."
  },
  {
-  "code": "ruta-muerta",
-  "match": "Admin/test-costo-transcripcion.md",
-  "motivo": "Archivado el 2026-10-06 en Admin/Archive/test-costo-transcripcion.md (to-do 109). La ruta vieja sigue escrita en la advertencia de escaneo de las transcripciones de Mistral hechas antes de esa fecha (Clubes/**/*.md): son documentos ya generados, no se reescriben."
- },
- {
-  "code": "signo-invertido",
-  "match": "botafogosp-br 2024 ingreso \"Impostos Incidentes sobre Receitas (TEF)\"",
-  "motivo": "VERIFICADO (onboarding de Botafogo-SP, tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos por el propio documento (Nota 21), mismo tratamiento que las deducciones fiscales ya aceptadas de otros clubes brasileños. Tie-out exacto contra officialTotalRevenue."
- },
- {
-  "code": "signo-invertido",
-  "match": "ceara-br 2025 ingreso \"(-) Impostos (dedução da receita bruta)\"",
-  "motivo": "VERIFICADO (onboarding de Ceará, tanda de 20 transcripts, 2026-09-25). Deducción de la receita bruta impresa como línea negativa por el propio documento. Tie-out exacto contra officialTotalRevenue (2024 y 2025)."
- },
- {
-  "code": "signo-invertido",
-  "match": "ceara-br 2025 ingreso \"(-) Outras deduções da receita bruta\"",
-  "motivo": "Mismo caso que la entrada anterior de este club (deducción fiscal impresa como línea negativa)."
- },
- {
-  "code": "signo-invertido",
-  "match": "chapecoense-br 2017 ingreso \"Deduções Tributárias e Sindicais\"",
-  "motivo": "VERIFICADO (onboarding de Chapecoense 2017, tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos, mismo tratamiento que el ejercicio 2021 ya cargado de este club. Tie-out exacto contra officialTotalRevenue."
- },
- {
-  "code": "signo-invertido",
-  "match": "charleroi-be 2025 gasto \"Prélèvement sur les réserves immunisées\"",
-  "motivo": "VERIFICADO (onboarding de Charleroi, tanda de 20 transcripts, 2026-09-25). Crédito no-efectivo (desafectación de reservas inmunizadas) dentro de Gastos, `exceptional_items` — mismo patrón que el crédito equivalente ya aceptado de Club Brugge/Anderlecht. Tie-out exacto contra officialTotalExpenses (excluyendo exceptional_items, criterio ya usado para esos clubes)."
- },
- {
-  "code": "signo-invertido",
-  "match": "cruzeiro-br 2024 ingreso \"Impostos e contribuições / Vendas canceladas\"",
-  "motivo": "VERIFICADO (onboarding de Cruzeiro 2024, tanda de 20 transcripts, 2026-09-25). Deducción impresa por el propio documento (Nota 25) dentro de Receita operacional líquida, mismo tratamiento que el ejercicio 2025 ya cargado de este club. Tie-out exacto contra officialTotalRevenue."
- },
- {
-  "code": "signo-invertido",
-  "match": "sportrecife-br 2025 ingreso \"Deduções de receita (INSS Patronal, 5%)\"",
-  "motivo": "VERIFICADO (onboarding de Sport Recife, tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa por el propio documento (Nota 18/DRE). Tie-out exacto contra officialTotalRevenue."
- },
- {
-  "code": "catchall-dominante",
-  "match": "antwerp-be 2025 Ingresos",
-  "motivo": "VERIFICADO (onboarding de Antwerp, tanda de 20 transcripts, 2026-09-25). \"Andere bedrijfsopbrengsten\" (46,46M EUR) no tiene desglose completo en la Nota 6.10 del propio documento (el club solo completó el sub-detalle de subsidios operativos, 11,68M de los 46,46M) — límite de la fuente, no de la categorización. Pregunta abierta en Admin/dudas-por-club.md."
- },
- {
   "code": "catchall-dominante",
   "match": "antwerp-be 2025 Gastos",
   "motivo": "VERIFICADO (onboarding de Antwerp, tanda de 20 transcripts, 2026-09-25). \"Omzet\" (Nota 6.10, ticketing/sponsors/TV) no fue completada por el club en este filing — límite de la fuente. Ver la evidencia en Admin/carga-clubes/antwerp-be.md."
@@ -59,36 +14,6 @@
   "code": "catchall-dominante",
   "match": "coritiba-br 2023 Ingresos",
   "motivo": "VERIFICADO (onboarding de Coritiba 2023, tanda de 20 transcripts, 2026-09-25). La línea dominante es la cesión del 20% de los derechos comerciales del Brasileirão a Liga Forte União (R$152M de R$216,65M), un ingreso extraordinario real sin categoría propia mejor disponible en la taxonomía hoy. Ver Admin/dudas-por-club.md y Admin/TODO.md."
- },
- {
-  "code": "signo-invertido",
-  "match": "botafogo-br 2023 ingreso \"Deduções sobre a receita",
-  "motivo": "VERIFICADO (onboarding de Botafogo(Rio) 2023, 2da tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos por el propio documento (Nota 16.9), mismo tratamiento que las deducciones ya aceptadas de otros clubes brasileños. Tie-out exacto contra officialTotalRevenue."
- },
- {
-  "code": "signo-invertido",
-  "match": "botafogo-br 2025 ingreso \"Deduções sobre a receita",
-  "motivo": "Mismo caso que 2023 de este club (ver entrada arriba)."
- },
- {
-  "code": "signo-invertido",
-  "match": "cruzeiro-br 2022 ingreso \"Impostos e contribuições\"",
-  "motivo": "VERIFICADO (onboarding de Cruzeiro 2022, 2da tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos, mismo tratamiento que 2024/2025 ya cargados de este club. Tie-out exacto."
- },
- {
-  "code": "signo-invertido",
-  "match": "cruzeiro-br 2023 ingreso \"Impostos e contribuições\"",
-  "motivo": "Mismo caso que 2022 de este club (ver entrada arriba)."
- },
- {
-  "code": "signo-invertido",
-  "match": "zultewaregem-be 2025 ingreso \"Voorraad goederen in bewerking",
-  "motivo": "VERIFICADO (onboarding de Zulte Waregem, 2da tanda de 20 transcripts, 2026-09-25). Variación de existencias impresa como línea negativa (disminución de bienes en curso) por el propio esquema contable belga, no un signo dado vuelta. Tie-out exacto contra officialTotalRevenue."
- },
- {
-  "code": "catchall-dominante",
-  "match": "cerclebrugge-be 2025 Ingresos",
-  "motivo": "VERIFICADO (onboarding de Cercle Brugge, 2da tanda de 20 transcripts, 2026-09-25). \"Andere bedrijfsopbrengsten\" (24,4M EUR, 56% del revenue) casi sin desglose en la Nota 6.10 del propio documento (solo 1.619 EUR de subsidios identificados) — límite de la fuente. Ver Admin/dudas-por-club.md (sospecha razonable de player_sales por ser feeder de AS Monaco, sin confirmación textual)."
  },
  {
   "code": "catchall-dominante",
@@ -102,18 +27,8 @@
  },
  {
   "code": "catchall-dominante",
-  "match": "sinttruiden-be 2025 Ingresos",
-  "motivo": "VERIFICADO (onboarding de Sint-Truiden, 2da tanda de 20 transcripts, 2026-09-25). \"Andere bedrijfsopbrengsten\" (16,0M EUR, 44% del revenue) solo desglosa subsidios (3,3M); el resto (12,7M) sin explicación textual — límite de la fuente. Ver Admin/dudas-por-club.md (sospecha de player_sales por dueño japonés Spacenine/DMM, sin confirmación textual)."
- },
- {
-  "code": "catchall-dominante",
   "match": "sinttruiden-be 2025 Gastos",
   "motivo": "VERIFICADO (onboarding de Sint-Truiden, 2da tanda de 20 transcripts, 2026-09-25). \"Niet-recurrente bedrijfskosten\" (2,3M EUR, 7,4% del gasto) sin explicación en el documento — límite de la fuente."
- },
- {
-  "code": "catchall-dominante",
-  "match": "sonderjyske-dk 2022 Ingresos",
-  "motivo": "VERIFICADO (onboarding de SønderjyskE, 2da tanda de 20 transcripts, 2026-09-25). El documento usa la exención §32 de la Årsregnskabsloven danesa: la Resultatopgørelse arranca directo en \"Bruttofortjeneste\" (ya neto), sin desglose de Nettoomsætning disponible en ningún lado — mismo patrón documentado en club-data-mapping/referencia/casos-por-pais-y-formato.md (FCN/Randers/Vejle tienen el mismo límite de fuente)."
  },
  {
   "code": "catchall-dominante",
@@ -127,108 +42,8 @@
  },
  {
   "code": "catchall-dominante",
-  "match": "westerlo-be 2025 Ingresos",
-  "motivo": "VERIFICADO (onboarding de Westerlo, 2da tanda de 20 transcripts, 2026-09-25). Ninguno de los clubes belgas de esta tanda completó la Nota 6.10 de \"Uitsplitsing per bedrijfscategorie\" del Omzet — línea entera a lump_football_operations/other_income por límite de la fuente, mismo patrón que Charleroi/Anderlecht/Mechelen/Antwerp ya aceptados."
- },
- {
-  "code": "signo-invertido",
-  "match": "deportivopereira-co 2025 ingreso \"Devoluciones en ventas y servicios\"",
-  "motivo": "VERIFICADO (onboarding de Deportivo Pereira, 2026-09-25). Devolución real de ventas/servicios, línea negativa impresa por el propio documento como contra-revenue — mismo tratamiento que las deducciones fiscales ya aceptadas de otros clubes."
- },
- {
-  "code": "catchall-dominante",
-  "match": "bayernmunich-de 2024 Gastos",
-  "motivo": "VERIFICADO (onboarding de Bayern Munich, 2026-09-25). La fuente (comunicado oficial, no el Geschäftsbericht completo) da solo 2 líneas de gasto sin más desglose (\"Betriebliche Aufwendungen\" y \"Materialaufwand\"), ninguna de las 2 mapea a una categoría específica de la taxonomía del sitio — van a \"Otros gastos\" por falta de detalle en la fuente, no por error de categorización. Ver la evidencia en Admin/carga-clubes/bayernmunich-de.md."
- },
- {
-  "code": "catchall-dominante",
-  "match": "bayernmunich-de 2025 Gastos",
-  "motivo": "Mismo caso que 2024 de este club (ver entrada arriba)."
- },
- {
-  "code": "catchall-dominante",
   "match": "pontepreta-br 2024 Gastos",
   "motivo": "REVISADO (onboarding de Ponte Preta, 2026-09-25): mismo caso que otros clubes de este proyecto (Volta Redonda, Chapecoense) — exceptional_items no tiene fila propia en Formato Simplificado y cae al catch-all 'Otros gastos'. El ajuste extraordinario 'Depreciação/Contingência/Pept/CNRD' (-22,168 M, ligado a un pasivo laboral nuevo de 2024) es grande frente al total de gastos ordinarios del club (50,522 M), lo que empuja el catch-all a 42% — no es un error de categorización."
- },
- {
-  "code": "signo-invertido",
-  "match": "bahia-br 2024 ingreso \"Impostos e contribuições incidentes",
-  "motivo": "VERIFICADO (onboarding de Bahia, 2026-09-24). Deducción real de impuestos sobre la receita, impresa negativa por el propio balance en los 2 ejercicios — mismo tratamiento que el resto de los clubes brasileños ya cargados (Botafogo, América Mineiro, etc.). Tie-out cierra exacto con este signo."
- },
- {
-  "code": "signo-invertido",
-  "match": "bahia-br 2025 ingreso \"Impostos e contribuições incidentes",
-  "motivo": "Misma línea/criterio que 2024 de este club (ver entrada arriba)."
- },
- {
-  "code": "signo-invertido",
-  "match": "chapecoense-br 2021 ingreso \"Deduções Tributárias e Sindicais\"",
-  "motivo": "VERIFICADO (onboarding de Chapecoense, 2026-09-24). Deducción real de impuestos/sindicato sobre la receita, mismo tratamiento que el resto de los clubes brasileños."
- },
- {
-  "code": "signo-invertido",
-  "match": "corinthians-br 2024 ingreso \"Impostos e contribuições (dedução, segmento futebol)\"",
-  "motivo": "VERIFICADO (onboarding de Corinthians, 2026-09-24). Deducción real de impuestos, mismo tratamiento que el resto de los clubes brasileños."
- },
- {
-  "code": "signo-invertido",
-  "match": "corinthians-br 2024 gasto \"Rateio das despesas administrativas",
-  "motivo": "VERIFICADO (onboarding de Corinthians, 2026-09-24). Crédito real de la Nota 17 que cancela la línea espejo del mismo gasto registrada en el segmento fútbol — el balance reporta 2 segmentos (fútbol / clube social) y esta línea evita duplicar el gasto administrativo compartido. No es un signo dado vuelta, ver la evidencia en Admin/carga-clubes/corinthians-br.md."
- },
- {
-  "code": "signo-invertido",
-  "match": "corinthians-br 2025 ingreso \"Impostos e contribuições (dedução)\"",
-  "motivo": "Mismo criterio que el resto de las deducciones fiscales de este lote (ver entradas de Corinthians/Bahia/Chapecoense arriba)."
- },
- {
-  "code": "signo-invertido",
-  "match": "corinthians-br 2025 ingreso \"Outras deduções sobre a receita\"",
-  "motivo": "Mismo criterio que el resto de las deducciones fiscales de este lote."
- },
- {
-  "code": "signo-invertido",
-  "match": "fortaleza-br 2025 ingreso \"Deduções sobre a receita",
-  "motivo": "VERIFICADO (onboarding de Fortaleza, 2026-09-24). Deducción real de INSS/ISS/direito de arena/repasse LFU sobre la receita, impresa negativa por el propio balance."
- },
- {
-  "code": "signo-invertido",
-  "match": "internacional-br 2024 ingreso \"Dedução de direitos de televisionamento/marketing\"",
-  "motivo": "VERIFICADO (onboarding de Internacional, 2026-09-24). Deducción real sobre la receita de TV/marketing, impresa negativa por el propio balance."
- },
- {
-  "code": "signo-invertido",
-  "match": "internacional-br 2024 gasto \"Recuperação de custos\"",
-  "motivo": "VERIFICADO (onboarding de Internacional, 2026-09-24). Crédito real, la propia nota del balance lo describe como 'ganho nas renegociações com atletas e empresas' — no es un signo dado vuelta, ver la evidencia en Admin/carga-clubes/internacional-br.md."
- },
- {
-  "code": "signo-invertido",
-  "match": "internacional-br 2025 ingreso \"Dedução de direitos de televisionamento/marketing\"",
-  "motivo": "Misma línea/criterio que 2024 de este club (ver entrada arriba)."
- },
- {
-  "code": "signo-invertido",
-  "match": "internacional-br 2025 ingreso \"Dedução de premiação\"",
-  "motivo": "Deducción real sobre premios, mismo criterio que el resto de las deducciones de este club."
- },
- {
-  "code": "signo-invertido",
-  "match": "internacional-br 2025 gasto \"Recuperação de custos\"",
-  "motivo": "Misma línea/criterio que 2024 de este club (ver entrada arriba: 'ganho nas renegociações com atletas e empresas')."
- },
- {
-  "code": "signo-invertido",
-  "match": "saopaulo-br 2023 gasto \"Transferência para custo de formação de atletas",
-  "motivo": "VERIFICADO (onboarding de São Paulo, 2026-09-24). Reclasificación real de la Nota 9.2 del propio balance (transferencia hacia el costo de formación de atletas, dentro del mismo bloque de gastos) — no es un signo dado vuelta."
- },
- {
-  "code": "signo-invertido",
-  "match": "vascodagama-br 2023 ingreso \"Deduções sobre a receita",
-  "motivo": "VERIFICADO (onboarding de Vasco da Gama, 2026-09-24). Deducción real de impuestos sobre la receita, mismo tratamiento que el resto de los clubes brasileños."
- },
- {
-  "code": "outlier-liga",
-  "match": "voltaredonda-br 2024: 2.0 M USD contra una mediana de",
-  "motivo": "VERIFICADO, no es error de escala: Volta Redonda es un club chico de Série C (campeón 2024, ver data/br/voltaredonda-br-data.js, cargado en la Versión 217) y la mediana de la liga BR sigue moviéndose cada vez que este proyecto suma más clubes brasileños grandes (Flamengo, Corinthians, Palmeiras, Internacional, etc., todos con revenue de cientos de millones de USD) — por eso el `match` de esta entrada NO incluye el valor exacto de la mediana, para no tener que reescribirla cada vez que cambie. Es la mediana la que se mueve, no el dato de Volta Redonda, que ya estaba verificado con tie-out exacto en su propia carga."
  },
  {
   "code": "catchall-dominante",
@@ -276,74 +91,14 @@
   "motivo": "Mismo criterio que el ejercicio 2024 de este club (ver entradas arriba)."
  },
  {
-  "code": "signo-invertido",
-  "match": "athleticoparanaense-br 2024 ingreso \"(-) Impostos e deduções da receita\"",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Athletico Paranaense, 2026-09-24). Deducción real de impuestos sobre la receita bruta, impresa negativa por el propio balance — mismo tratamiento que 'Deduções sobre a receita' de Botafogo. El tie-out del ejercicio cierra exacto con este signo."
- },
- {
-  "code": "signo-invertido",
-  "match": "athleticoparanaense-br 2025 ingreso \"(-) Impostos e deduções da receita\"",
-  "motivo": "Misma línea/criterio que 2024 (ver entrada arriba)."
- },
- {
-  "code": "signo-invertido",
-  "match": "atleticomineiro-br 2023 ingreso \"(-) Impostos e contribuições\"",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Atlético Mineiro, 2026-09-24). Deducción real de impuestos/contribuições sobre la receita, impresa negativa por el propio balance en los 3 ejercicios — mismo tratamiento que Botafogo/América Mineiro. Tie-out cierra exacto con este signo en los 3 años."
- },
- {
-  "code": "signo-invertido",
-  "match": "atleticomineiro-br 2024 ingreso \"(-) Impostos e contribuições\"",
-  "motivo": "Misma línea/criterio que 2023 (ver entrada arriba)."
- },
- {
-  "code": "signo-invertido",
-  "match": "atleticomineiro-br 2025 ingreso \"(-) Impostos e contribuições",
-  "motivo": "Misma línea/criterio que 2023 (ver entrada arriba). El monto (-50,637) tiene un ajuste de redondeo de R$0,100 M documentado en el propio rawLabel y en el comentario de cabecera del archivo, para que la suma cierre contra el subtotal impreso de 'Deduções da receita' (-55,124)."
- },
- {
-  "code": "signo-invertido",
-  "match": "flamengo-br 2024 ingreso \"Impostos e contribuições + Direito de arena",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Flamengo, 2026-09-24). Deducción real de impuestos + direito de arena sobre la receita, impresa negativa por el propio balance — mismo tratamiento que Botafogo/América Mineiro/Atlético Mineiro. Tie-out cierra exacto con este signo en los 2 años."
- },
- {
-  "code": "signo-invertido",
-  "match": "flamengo-br 2025 ingreso \"Impostos e contribuições + Direito de arena",
-  "motivo": "Misma línea/criterio que 2024 (ver entrada arriba)."
- },
- {
-  "code": "signo-invertido",
-  "match": "vitoria-br 2025 ingreso \"(-) Impostos e contribuições\"",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Vitória, 2026-09-24). Deducción real de impuestos sobre la receita, impresa negativa por el propio balance — mismo tratamiento que el resto de los clubes brasileños cargados. Tie-out del ejercicio cierra exacto con este signo."
- },
- {
   "code": "salto-interanual",
   "match": "atleticomineiro-br: revenue salta de 15.6 M USD (2023) a 93.7 M USD (2024)",
   "motivo": "VERIFICADO, no es error de unidad: el ejercicio 2023 de Atlético Mineiro SAF cubre SOLO 14/set/2023 a 31/dic/2023 (~3,5 meses, el 'stub period' desde la constitución de la SAF), confirmado literal en el propio DRE del balance 2023 — no un año completo. Documentado en detalle en la evidencia en Admin/carga-clubes/atleticomineiro-br.md. El salto es real y estructural (duración distinta del ejercicio), no un error de carga."
  },
  {
   "code": "salto-interanual",
-  "match": "rbbragantino-br: revenue salta de 9.7 M USD (2019) a 81.7 M USD (2024)",
-  "motivo": "VERIFICADO, no es error de unidad: son 5 años de diferencia entre los 2 únicos ejercicios cargados (no consecutivos), período en el que Red Bull invirtió fuertemente en el club (ascenso a la Série A, sponsors, plantel) — crecimiento real documentado en Admin/sourcing/Brasil/RB Bragantino.md, no un salto interanual entre años consecutivos."
- },
- {
-  "code": "signo-invertido",
-  "match": "americamineiro-br 2023 ingreso \"(-) Deduções da receita bruta",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de América Mineiro, 2026-09-24). Línea de deducción de impuestos/INSS/Sindicato sobre la receita bruta, impresa por el propio balance con signo negativo dentro del bloque de Receitas — es contra-revenue real (mismo tratamiento que 'Deduções sobre a receita' de Botafogo), no un signo dado vuelta. El tie-out completo del ejercicio (revenueLines suma exacta contra el total impreso, revenue+expenses+netInterest = PAT oficial) cierra con este signo, ver la evidencia en Admin/carga-clubes/americamineiro-br.md."
- },
- {
-  "code": "signo-invertido",
-  "match": "americamineiro-br 2025 ingreso \"(-) Deduções da receita bruta",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de América Mineiro, 2026-09-24). Misma línea que el ejercicio 2023 (ver esa entrada arriba), mismo criterio: deducción real, contra-revenue, tie-out cierra exacto con este signo."
- },
- {
-  "code": "signo-invertido",
-  "match": "americamineiro-br 2023 gasto \"Apropriação despesas intangível",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de América Mineiro, 2026-09-24). Es un CRÉDITO de reclasificación (capitalización de costos de formación de juveniles hacia el activo intangible), impreso positivo por el propio balance dentro del bloque de despesas — mismo patrón que la reversión de Banfield 2020 (ver entrada de arriba). El tie-out del ejercicio 2023 cierra exacto con este signo, ver la evidencia en Admin/carga-clubes/americamineiro-br.md."
- },
- {
-  "code": "signo-invertido",
-  "match": "voltaredonda-br 2024 gasto \"Ganho Mensuração a Valor Justo",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Volta Redonda, 2026-09-24). Ganancia real por revalúo a valor justo de 2 inmuebles del club (Nota 9 del balance auditado 2024), un ítem no operativo/no recurrente categorizado 'exceptional_items' — mismo tratamiento que 'Resultado de equivalência patrimonial' de Botafogo, solo que acá el resultado es una GANANCIA (positivo) en vez de una pérdida. El 134% sobre la sección de Gastos es alto solo porque el total de Gastos de ese ejercicio es chico (R$11,9 M) y esta ganancia no-operativa es grande en comparación (R$6,8 M); el tie-out completo (revenue+expenses+netInterest+exceptional_items = PAT oficial, R$7.263.691,88 exacto) cierra con este signo, ver la evidencia en Admin/carga-clubes/voltaredonda-br.md."
+  "match": "novorizontino-br: revenue salta de 0.1 M USD (2010) a 0.6 M USD (2012)",
+  "motivo": "VERIFICADO contra el documento: balanco-2010.md L9 imprime Receita Líquida Operacional 130.350,36 BRL (0,13 M, igual al total oficial cargado) y balanco-2012.md trae 1,30 M BRL; no hay documento de 2011 en Clubes/. El año chico es real (el primer balance que existe del club), no un error de unidad; el crecimiento de 2010 a 2012 es el club saliendo de una estructura mínima. La Auditora 5 ya lo había mirado como outlier-liga."
  },
  {
   "code": "catchall-dominante",
@@ -354,16 +109,6 @@
   "code": "catchall-dominante",
   "match": "americamineiro-br 2025 Ingresos",
   "motivo": "Misma causa que el ejercicio 2024 (ver esa entrada arriba): 'Outras receitas operacionais' (R$31,7 M en 2025) sin desglose en el balance, cargada conservadoramente a other_income, duda abierta en Admin/dudas-por-club.md."
- },
- {
-  "code": "catchall-dominante",
-  "match": "voltaredonda-br 2024 Gastos",
-  "motivo": "REVISADO (onboarding de Volta Redonda, 2026-09-24): mismo caso que el signo-invertido de 'Ganho Mensuração a Valor Justo' de arriba. exceptional_items no tiene fila propia en Formato Simplificado (cae al catch-all 'Otros gastos', ver hallazgo P3 categoria-sin-bucket) y esta ganancia no-operativa grande frente a un total de Gastos chico hace que el catch-all muestre un 134% — no es un error de categorización, es el límite conocido de no tener una fila dedicada para ítems excepcionales."
- },
- {
-  "code": "signo-invertido",
-  "match": "banfield-ar 2020 gasto \"Apropiación de Costos Fútbol Amateur (reversión por capitalización, Nota 4)\"",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Banfield, 2026-09-23). El Anexo V (Sector Fútbol Amateur, 120.335.465,08) se capitaliza ENTERO como Bienes Intangibles (Nota 4: 'costo prorrateado incurrido en el fútbol amateur... con capacidad futura de generar ingresos'), y el Estado de Recursos y Gastos lo revierte con esta línea por el MISMO importe exacto — el Estado de Flujo de Efectivo confirma la capitalización ('Aumento Bienes Intangibles' = 120.335.465,08 exacto). No es un signo dado vuelta: son 2 líneas reales (el costo del sector, negativo, y su reversión por capitalización, positiva), efecto neto CERO en el Estado de Recursos y Gastos, ver la evidencia en Admin/carga-clubes/banfield-ar.md."
  },
  {
   "code": "categoria-cruzada",
@@ -394,36 +139,6 @@
   "code": "balance-sin-pat",
   "match": "clubamerica-mx 2025",
   "motivo": "VERIFICADO CONTRA EL DOCUMENTO (to-do 20(a), 2026-09-20). Club América no publica balance propio: la controladora pública es Ollamani, que reporta un 'Segmento de Fútbol' bajo IFRS 8 agrupando al club (varonil y femenil) CON el Estadio Banorte. Ese segmento informa 'UTILIDAD DEL SEGMENTO', que NO es el resultado neto del club: no le imputa costos financieros ni impuestos. Cargar esos $43.911 M como officialPAT publicaría un 'Resultado neto' que ningún documento afirma — exactamente lo que este proyecto no hace. officialTotalExpenses SÍ se carga porque es una identidad aritmética exacta del segmento. El razonamiento completo está en la cabecera de data/mx/clubamerica-mx-data.js."
- },
- {
-  "code": "signo-invertido",
-  "match": "botafogo-br 2024 ingreso \"Deduções sobre a receita",
-  "motivo": "VERIFICADO contra Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.md (to-do 20(c), 2026-09-20). La DRE lo imprime como 'Deduções sobre a receita ... (55.051)', entre paréntesis, que es la notación contable brasilera para negativo. Es una deducción real sobre la receita bruta (impostos, direito de arena), no un signo dado vuelta."
- },
- {
-  "code": "signo-invertido",
-  "match": "coritiba-br 2024 ingreso \"(-) Tributos sobre receitas",
-  "motivo": "VERIFICADO contra Clubes/Brasil/Coritiba/demonstracoes-financeiras-2024.md (to-do 20(c), 2026-09-20). Impreso '(3.501.142)' en dos lugares del documento (DRE y nota), entre paréntesis. Deducción real."
- },
- {
-  "code": "signo-invertido",
-  "match": "cruzeiro-br 2025 ingreso \"Impostos e contribuições",
-  "motivo": "VERIFICADO contra Clubes/Brasil/Cruzeiro/informativo-financeiro-2025.md (to-do 20(c), 2026-09-20). Impreso '(-) Impostos e contribuições/ Vendas canceladas (49.669)': lleva el signo menos explícito ADEMÁS de los paréntesis. Deducción real."
- },
- {
-  "code": "signo-invertido",
-  "match": "ituano-br 2024 ingreso \"(-) Impostos Incidentes",
-  "motivo": "VERIFICADO contra Clubes/Brasil/Ituano/relatorio-auditoria-2024.md (to-do 20(c), 2026-09-20). Impreso '(-) Impostos Incidentes s/ Vendas e Serviços (1.071.240,15)', con el menos explícito y entre paréntesis. Deducción real."
- },
- {
-  "code": "signo-invertido",
-  "match": "envigado-co 2025 ingreso \"Devoluciones, rebajas y descuentos",
-  "motivo": "VERIFICADO POR ARITMÉTICA contra Clubes/Colombia/Envigado/estados-financieros-2025.md (to-do 20(c), 2026-09-20). ES EL ÚNICO DE LOS CINCO QUE NO TRAE PARÉNTESIS NI SIGNO: la nota de ingresos lista 'Devoluciones rebajas y descuentos 6.956.359.533' como un número positivo más de la lista. Se resolvió sumando la nota entera: los 17 rubros dan 43.845.339.915 y el 'Total Ingresos de actividades ordinarias' impreso es 36.888.980.382. La resta da EXACTO al peso (43.845.339.915 - 6.956.359.533 = 36.888.980.382); sumarlo se va 13.912.719.066 de largo. O sea que el documento lo imprime en positivo y lo resta en el total. La política contable de la Nota dice lo mismo: los ingresos se reconocen netos de 'rebajas, descuentos comerciales y similares'."
- },
- {
-  "code": "signo-invertido",
-  "match": "gasto \"Costo de desarrollo de jugadores propios (reclasificación)\"",
-  "motivo": "VERIFICADO contra Clubes/Argentina/Velez Sarsfield/balance-general-2024.md, Nota 1.g y Anexo III (to-do 20(c), 2026-09-20). ESTA ENTRADA CUBRE LOS 11 EJERCICIOS DE VÉLEZ (2015 a 2025): es la MISMA línea repetida, con un solo motivo. No es un gasto con el signo dado vuelta: es un CRÉDITO contra los gastos del ejercicio. El costo de formar jugadores propios se capitaliza en el intangible 'Plantel profesional de fútbol' en vez de quedar como gasto del período, y el Anexo lo imprime negativo por eso — ej. 2024: '(5.536.859.420)'. Como los gastos se guardan en negativo, el crédito entra en POSITIVO, que es justo lo que el chequeo marca. Ya estaba descrito en club-data-mapping/referencia/leer-pdf.md, que documenta el bug de verifyTieOuts() que este mismo crédito destapó."
  },
  {
   "code": "clubid-hardcodeado",
@@ -461,39 +176,9 @@
   "motivo": "VERIFICADO 2026-09-22 (Versión 198): archivo borrado, citado como HISTORIA en la cabecera de data/club-leagues.js para explicar de dónde venía la idea de un campo `league` en clubs{} y por qué se descartó. Mismo criterio que `PROMPT-generador-indice-fuentes.md`."
  },
  {
-  "code": "signo-invertido",
-  "match": "santafe-co 2025 ingreso \"Ajuste de reconciliación contra el total impreso de la Nota 21",
-  "motivo": "VERIFICADO 2026-09-22 (onboarding de Independiente Santa Fe): la Nota 21 (Ingresos) del propio documento suma $2.294.550.661 MÁS que el total que el mismo documento imprime como oficial, aunque cada línea individual reconcilia exacta contra su propia variación 2024→2025 — es un error de cuadre de LA FUENTE, no de la transcripción ni un signo dado vuelta. Se cargó el total impreso (más fiel a lo declarado por el club) con esta línea de ajuste negativa explícita, en vez de esconder la diferencia prorrateada entre las demás líneas."
- },
- {
-  "code": "salto-interanual",
-  "match": "girona-es: revenue salta de",
-  "motivo": "VERIFICADO 2026-09-22 (onboarding de Girona FC): es un salto REAL, no un error de unidad. El ejercicio 2019/2020 (26,9 M EUR) es de Segunda División, recién descendido; el ejercicio 2024/2025 (143,9 M EUR) es de LaLiga con clasificación a la UEFA Champions League por el 3er puesto de 2023/24 — el club escaló 2 categorías y jugó competición europea entre un ejercicio y otro. Los dos años tienen su propio tie-out exacto contra el total impreso de su propio documento."
- },
- {
-  "code": "catchall-dominante",
-  "match": "depcali-co 2025 Ingresos",
-  "motivo": "VERIFICADO 2026-09-23 (to-do 48): ya se extrajeron del catch-all las 3 categorías reales que la Nota 22 \"Otros Ingresos\" del balance sí distinguía (ver la evidencia en Admin/carga-clubes/depcali-co.md y club-data-mapping SKILL.md sección 1). Lo que queda es justo lo que el documento agrupa sin más desglose, no una categorización pendiente."
- },
- {
-  "code": "catchall-dominante",
-  "match": "espanyol-es 2024 Ingresos",
-  "motivo": "VERIFICADO 2026-09-23 (to-do 48): \"Ingresos accesorios y otros de gestión corriente\" es una línea `disclosureLevel:'summary'` de las Cuentas Anuales, sin desglose adicional en ningún lado del documento (ver la evidencia en Admin/carga-clubes/espanyol-es.md)."
- },
- {
   "code": "catchall-dominante",
   "match": "girona-es 2020 Ingresos",
   "motivo": "VERIFICADO 2026-09-23 (to-do 48): misma \"Ingresos accesorios y otros de gestión corriente\" que espanyol-es, `disclosureLevel:'summary'` — la nota de club-data-mapping y la evidencia en Admin/carga-clubes/girona-es.md ya documentan que es una línea MUY grande sin desglose en la fuente."
- },
- {
-  "code": "catchall-dominante",
-  "match": "koln-de 2024 Gastos",
-  "motivo": "VERIFICADO 2026-09-23 (to-do 48): \"sonstige betriebliche Aufwendungen\" no tiene desglose numérico en el Anhang, solo un comentario narrativo en el Lagebericht (ver la evidencia en Admin/carga-clubes/koln-de.md). Mismo criterio para el ejercicio 2025, entrada aparte."
- },
- {
-  "code": "catchall-dominante",
-  "match": "koln-de 2025 Gastos",
-  "motivo": "VERIFICADO 2026-09-23 (to-do 48): mismo caso que koln-de 2024 — \"sonstige betriebliche Aufwendungen\" sin desglose numérico en el Anhang, ver la evidencia en Admin/carga-clubes/koln-de.md."
  },
  {
   "code": "catchall-dominante",
@@ -504,16 +189,6 @@
   "code": "catchall-dominante",
   "match": "stuttgart-de 2024 Gastos",
   "motivo": "VERIFICADO 2026-09-23 (to-do 48): mismo caso que stuttgart-de 2023 — \"Sonstige betriebliche Aufwendungen\" (~32% del gasto) sin desglose numerado en el Anhang, ver la evidencia en Admin/carga-clubes/stuttgart-de.md."
- },
- {
-  "code": "catchall-dominante",
-  "match": "werderbremen-de 2023 Gastos",
-  "motivo": "VERIFICADO 2026-09-23 (to-do 48): la evidencia en Admin/carga-clubes/werderbremen-de.md documenta que el Anhang 5.12 de 2023/2024 solo identifica un componente extraordinario del lado de INGRESOS (ya promovido a línea propia), no de gastos — el resto de \"Sonstige betriebliche Aufwendungen\" queda sin partir porque el documento no lo separa."
- },
- {
-  "code": "catchall-dominante",
-  "match": "werderbremen-de 2024 Gastos",
-  "motivo": "VERIFICADO 2026-09-23 (to-do 48): mismo caso que werderbremen-de 2023 — el Anhang 5.12 de ese ejercicio no identifica ningún componente extraordinario del lado de gastos, ver la evidencia en Admin/carga-clubes/werderbremen-de.md."
  },
  {
   "code": "catchall-dominante",
@@ -536,154 +211,9 @@
   "motivo": "VERIFICADO 2026-10-18: es contenido PARA EL VISITANTE (la metodología pública, to-do 242), no un documento interno: a propósito en la raíz, linkeado desde el footer de index.html y desde la tarjeta Citar y descargar, y en sitemap.xml."
  },
  {
-  "code": "escala-implausible",
-  "match": "novorizontino-br 2010: revenue",
-  "motivo": "VERIFICADO 2026-10-02 (onboarding de Novorizontino): año de fundación del club. balanco-2010.md L3 dice '(em reais)' y L10 'Receita Líquida Operacional' 130.350,36: unos US$ 78 mil reales, no un error de escala."
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2012 ingreso \"(-) Deduções da receita\"",
-  "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2012-2011.md (nota 19, por segmento)); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2013 ingreso \"(-) Deduções da receita\"",
-  "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2013-2012.md L795 (nota 17, por segmento)); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2014 ingreso \"(-) Deduções da receita\"",
-  "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2014-2013.md L941/L1022); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2015 ingreso \"(-) Deduções da receita\"",
-  "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2015-2014.md L853/L913); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2016 ingreso \"(-) Deduções das receitas\"",
-  "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2016-2015.md L906 (nota 17)); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2017 ingreso \"(-) Deduções das receitas\"",
-  "motivo": "VERIFICADO 2026-10-05 (to-do 138, hallazgo 11): deducción de la receita impresa en negativo por el propio documento (demonstracoes-contabeis-2017-2016.md L953 y nota (a) L956); va entera a other_income porque el documento no la abre por tipo de ingreso (Admin/CONVENCIONES-DATOS.md, 'Deducciones de ingresos que el documento no abre')."
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2013 gasto \"Provisões para contingências\"",
-  "motivo": "VERIFICADO 2026-10-05 (Versión 499): reversión de provisiones impresa en positivo en la nota 18 (demonstracoes-contabeis-2013-2012.md L820, 1.588.481,02); resta del gasto."
- },
- {
-  "code": "outlier-liga",
-  "match": "parma-it 2016:",
-  "motivo": "VERIFICADO 2026-10-08: ingresos 3.101.681 EUR impresos en el estado de resultados 2015-16 (Parma-bilancio-30.06.2016-individual.md, 'Totale valore della produzione'); el club jugó ese año en Serie D (admitido el 30/6/2015), sin derechos de TV."
- },
- {
   "code": "salto-interanual",
   "match": "parma-it: revenue salta de 13.4 M USD (2018) a 68.6 M USD (2019)",
   "motivo": "VERIFICADO 2026-10-08: los dos importes están impresos en el documento 2018-19 (Totale valore della produzione 60.242.772 contra 11.457.714 de la columna anterior, Parma-bilancio-30.06.2019-individual.md L550): el club pasó de Serie B a Serie A y a otro régimen de ingresos."
- },
- {
-  "code": "signo-invertido",
-  "match": "avai-br 2023 gasto \"(-) Transferência para o Intangível\": 5.605",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: es la activación de costos de formación al intangible, que la nota resta del costo del fútbol. Cargado +5,605 en gastos reduce el gasto; el año cierra (resultado 19,10 = oficial). Cita: Clubes/Brasil/Avai/demonstracoes-contabeis-2023.md:985, nota 15 Custos operacionais: '(-) Transferência para o Intangível | (5.605)' que resta dentro de 'Total Custos Futebol 55.639'"
- },
- {
-  "code": "signo-invertido",
-  "match": "criciuma-br 2023 gasto \"Receita Direitos Condomínio LFU\": 62.25",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: ganancia extraordinaria por la venta de derechos de la Liga Forte União, movida de ingresos a exceptional_items en positivo por criterio fijado (CHANGELOG l.456: LFU como exceptional_items, Criciúma 2023-2024). Ingresos 39,49 sin la LFU y resultado 57,186 = oficial. Cita: Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.md:708, nota 20: 'Receita Direitos Condomínio LFU | 62.250.000'; nota 7 (l.443-452) explica la venta del 20% a Sports Media"
- },
- {
-  "code": "signo-invertido",
-  "match": "cuiaba-br 2023 ingreso \"(-) Deduções Receitas – b)\": -10.599429",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real (Tributação Específica do Futebol de la SAF, nota b). Los ingresos suman 157,933 = total impreso. Cita: Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md:840, nota 30: '(-) Deduções Receitas – b) | (10.599.429)', Total Receitas Operacionais 157.933.413"
- },
- {
-  "code": "signo-invertido",
-  "match": "ferroviaria-br 2013 gasto \"(-) Estoque Final\": 0.858242",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: cálculo del costo de mercaderías (stock inicial + compras − stock final); el stock final es un crédito que resta. Gastos 5,018 = oficial. Cita: Clubes/Brasil/Ferroviaria/balanco-2013-b.md:79-84, Filial: 'Estoque Inicial 874.625,96 D', 'Compras 12.493,98 D', '(-) Estoque Final 858.242,46 C' => Filial 27.261,53 D"
- },
- {
-  "code": "signo-invertido",
-  "match": "ferroviaria-br 2022 ingreso \"DEDUÇÕES DA RECEITA BRUTA\": -1.033091",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducciones sobre ingreso bruto, una sola línea, va a other_income negativa (regla de CONVENCIONES-DATOS). Bruta − deducciones + otras (0,046 + 0,307) = 18,510 = cargado. Cita: Clubes/Brasil/Ferroviaria/dre-2022.md:19 y 50: 'RECEITA BRUTA 19.190.545,64', 'DEDUÇÕES DA RECEITA BRUTA (1.033.090,67)'"
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2010 gasto \"Provisões, acordos e indenizações\": 3.355708",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: reversión neta de provisiones, impresa positiva dentro de DESPESAS. Total despesas 34.393.317 = cargado. Cita: Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.md:368: 'Provisões, acordos e indenizações | 3.355.708 | (2.552.778)'; DFC l.468 'Provisão para contingências (3.355.708)'; nota 13 l.1009-1031: provisión baja de 14,9 M a 9,3 M"
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2021 ingreso \"(-) INSS Competições/Torneios\": -1.485264",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real del ingreso de competiciones; la nota abre las deducciones por ingreso y la regla las lleva a su ingreso. Receita líquida 46.859.524 = cargado. Cita: Clubes/Brasil/Goias/demonstracoes-contabeis-2021.md:1191, nota 21: '(-) INSS Competições/Torneios | (1.485.264)'"
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2021 ingreso \"(-) Direito de Arena Competições/Torneios\": -1.430108",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real (derecho de arena) asignada a broadcasting por la regla de deducciones abiertas por ingreso. Ingresos cierran con la Receita líquida. Cita: Clubes/Brasil/Goias/demonstracoes-contabeis-2021.md:1192, nota 21: '(-) Direito de Arena Competições/Torneios | (1.430.108)'"
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2022 ingreso \"(-) INSS Competições/Torneios\": -3.939121",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real. Receita líquida 97.172.059 + Outras Receitas e Despesas 8.918.100 (l.229) = 106,090 cargado. Cita: Clubes/Brasil/Goias/demonstracoes-contabeis-2022-fgf-go.md:1222, nota 19: '(-) INSS Competições/Torneios | (3.939.121)'"
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2022 ingreso \"(-) Direito de Arena Competições/Torneios\": -3.658099",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real, mismo tratamiento que 2021; el año cierra (resultado 13,158 = oficial). Cita: Clubes/Brasil/Goias/demonstracoes-contabeis-2022-fgf-go.md:1225, nota 19: '(-) Direito de Arena Competições/Torneios | (3.658.099)'"
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2023 ingreso \"(-) INSS Competições/Torneios\": -3.3035",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real. Receita líquida 89.972.753 = cargado. Cita: Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md:1060, nota 17: '(-) INSS Competições/Torneios | (3.303.500)'"
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2023 ingreso \"(-) Direito de Arena Compet./Torneios\": -2.892523",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real, mismo criterio. Ingresos cierran con la Receita líquida. Cita: Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md:1061, nota 17: '(-) Direito de Arena Compet./Torneios | (2.892.523)'"
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2023 gasto \"Outras Receitas e Despesas\": 140.214785",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: ganancia neta por la venta del 20% de la LFU, impresa positiva en la DRE; exceptional_items positivo es el criterio Goiás 2023 (CHANGELOG l.2212). Resultado 124.434.274 = cargado. Cita: Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md:219: 'Outras Receitas e Despesas | 23 | 140.214.785'; nota 23 l.1191-1199: Liga Forte 152.480.000 menos gastos LFU"
- },
- {
-  "code": "signo-invertido",
-  "match": "goias-br 2025 ingreso \"(-) Demais deduções da receita\": -2.364205",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real, una sola línea va a other_income negativa. Ingresos 45,375 = Receita líquida impresa; resultado −98,110 = oficial. Cita: Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md:1217, nota 18: '(-) Demais deduções da receita | (2.364.205)', Receita líquida 45.374.624"
- },
- {
-  "code": "signo-invertido",
-  "match": "juventus-it 2012 gasto \"Provisions and other write-downs/reverses and releases\": 10.443216",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: neto positivo por la reversión del archivo de la Juventus Library y liberación de provisiones. Resultado −48.654.550 = cargado. Cita: Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.md:1557: 'Provisions and other write-downs/reverses and releases | 44 | 10,443,216'; nota 44 l.3154-3163: write-back Juventus Library 14.460 + releases 1.921 − allocations 5.938"
- },
- {
-  "code": "signo-invertido",
-  "match": "lazio-it 2011 gasto \"Accantonamenti per rischi\": 8.925443",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: liberación del fondo de riesgos fiscales (IRAP) por sentencia favorable, impresa positiva. Resultado consolidado 9,982 = cargado. Cita: Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2010-11.md:3569 (consolidado): 'Accantonamenti per rischi | 8.925.443'; nota l.5425-5429: storno del fondo rischi IRAP"
- },
- {
-  "code": "signo-invertido",
-  "match": "parma-it 2016 gasto \"11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci\": 0.098402",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: aumento del inventario (de 0 a 98.402 en el primer ejercicio) que resta de los costos de producción. Resultado −1,679 = oficial. Cita: Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.md:253: '11) variazioni delle rimanenze ... | (98.402)' dentro de costi della produzione; l.127 rimanenze 98.402"
- },
- {
-  "code": "signo-invertido",
-  "match": "vilanova-br 2021 ingreso \"(-) DEDUÇÕES DA RECEITA BRUTA\": -1.511113",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real del ingreso bruto. Bruta − deducciones = 22,604 = cargado. Cita: Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md:253-258: 'RECEITA OPERACIONAL BRUTA 24.115.253,25', '(-) DEDUÇÕES DA RECEITA BRUTA -1.511.112,97'"
- },
- {
-  "code": "signo-invertido",
-  "match": "vilanova-br 2022 ingreso \"(-) DEDUÇÕES DA RECEITA BRUTA\": -1.051383",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: deducción real. Bruta − deducciones = 36,799 = cargado. Cita: Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md:140-145: 'RECEITA OPERACIONAL BRUTA 37.850.414,52', '(-) DEDUÇÕES DA RECEITA BRUTA (1.051.383,15)'"
- },
- {
-  "code": "signo-invertido",
-  "match": "vilanova-br 2025 gasto \"Adesão ao condomínio LFU\": 12.85",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Correcto: ingreso por la LFU que el documento pone en receita operacional, movido a exceptional_items en positivo por criterio fijado (CHANGELOG l.456, Vila Nova 2025). Resultado −2,842 = oficial. Cita: Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.md:2111, nota 15 (Diversos): 'Adesão ao condomínio LFU | 12.850 | 19.155'"
  },
  {
   "code": "outlier-liga",
@@ -691,69 +221,9 @@
   "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Es el ejercicio 2023-24, jugado en Serie C (el propio documento, l.362, dice que ascendió a Serie B al terminar esa temporada). La unidad son euros, bien convertidos a millones; la mediana la tiran para arriba los clubes de Serie A. Cita: Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md l.133-135: 'Amounts in euro', Revenues 3.910.360 (30/06/2024); + other incomes 190.721 → 4,10 M EUR cargados (EUR@2024-06-30)."
  },
  {
-  "code": "outlier-liga",
-  "match": "dynamomakhachkala-ru 2021: 0.8 M USD contra una mediana de 45.1 M USD en RU (1/56)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): En 2021 la ANO recién refundada no tenía ventas (2110 vacío) y vivía de aportes con destino específico, unos 59 mil miles de rublos. La escala en miles está bien leída y el monto es chico porque el club era de categoría baja antes de ascender. Cita: Clubes/Rusia/Dynamo Makhachkala/bfo-2021-datos.md l.7 'Единица измерения: тыс. руб.'; l.22 2340 Прочие доходы 500; l.50 6220 Целевые взносы 59.077 (JSON: current6220 59077.0) → 59,6 M RUB."
- },
- {
-  "code": "outlier-liga",
-  "match": "almagro-ar 2018: 1.1 M USD contra una mediana de 29.6 M USD en AR (1/28)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Es un club de Primera Nacional (segunda división) con un balance en pesos, y la suma cargada coincide exacta con el total impreso. Que sea chico contra la mediana argentina es real. Cita: Clubes/Argentina/Almagro/balance-2018.md l.214 'TOTAL DE RECURSOS | 38,350,264.58' (cifras en pesos, l.626) = 38,350 M ARS cargados."
- },
- {
-  "code": "outlier-liga",
-  "match": "almagro-ar 2019: 0.9 M USD contra una mediana de 29.6 M USD en AR (1/34)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Coincide con el total impreso en pesos, columna del año corriente. Es un club de segunda división. Cita: Clubes/Argentina/Almagro/balance-2019.md l.234 'TOTAL DE RECURSOS | 52,333,781.63' (pesos en moneda homogénea, l.225) = 52,334 M ARS cargados."
- },
- {
-  "code": "outlier-liga",
-  "match": "almagro-ar 2020: 0.7 M USD contra una mediana de 29.6 M USD en AR (1/43)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Coincide exacto con el total impreso. El monto en USD baja por la devaluación, no por un error de escala. Cita: Clubes/Argentina/Almagro/memoria-y-balance-2020.md l.352 'TOTAL DE RECURSOS | 54,472,633.15' (pesos, l.342) = 54,473 M ARS cargados."
- },
- {
-  "code": "outlier-liga",
-  "match": "almagro-ar 2021: 0.6 M USD contra una mediana de 29.6 M USD en AR (1/47)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Coincide exacto con el total impreso en pesos. Es un club chico de segunda división. Cita: Clubes/Argentina/Almagro/balance-2021.md l.193 'TOTAL DE RECURSOS | 63,239,067.49' (pesos, l.647) = 63,239 M ARS cargados."
- },
- {
-  "code": "outlier-liga",
-  "match": "almagro-ar 2022: 0.9 M USD contra una mediana de 29.6 M USD en AR (1/32)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Coincide exacto con el total impreso en pesos. Es un club chico de segunda división. Cita: Clubes/Argentina/Almagro/balance-2022.md l.207 'TOTAL DE RECURSOS | 143,589,036.64' (pesos, l.669) = 143,589 M ARS cargados."
- },
- {
-  "code": "outlier-liga",
-  "match": "botafogo-br 2025: 247.1 M USD contra una mediana de 9.6 M USD en BR (26×)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): La suma cargada da exacto lo impreso en miles de reales (columna Controladora). El monto es grande por R$733 M de venta de jugadores; es un club gigante contra una mediana que tiran para abajo los clubes chicos. Cita: Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.md l.1333-1351 'Valores expressos em milhares de reais': Receita Operacional 655.033, Deduções (81.027), Outras receitas operacionais 52.436, Receitas transações de direitos de atletas 733.361 → 1.359,803 M BRL (PTAX 5,5024)."
- },
- {
-  "code": "outlier-liga",
-  "match": "flamengo-br 2025: 347.6 M USD contra una mediana de 9.6 M USD en BR (36×)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Es el club más grande de Brasil; la escala en miles de reales está bien leída y el resultado reconcilia exacto. Además el informe de gestión del mismo documento (l.59) da una receita bruta total de alrededor de R$2.089 M. Cita: Clubes/Brasil/Flamengo/relatorio-anual-demonstracoes-financeiras-2025.md l.692-708 '(Em milhares de reais)': Receita operacional líquida 1.393.755, Outras receitas operacionais 236.718 (neto), Superávit 335.665; las filas cargadas (1.912,496 M BRL) reconcilian exacto con el resultado operacional 313.460 y el superávit impreso (Admin/carga-clubes/flamengo-br.md l.150)."
- },
- {
-  "code": "outlier-liga",
-  "match": "novorizontino-br 2010: 0.1 M USD contra una mediana de 9.6 M USD en BR (1/122)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): El documento está en reales, sin miles, y 2010 es el año de la refundación del Grêmio Novorizontino, con un convenio municipal y donaciones. Que el monto sea minúsculo es real. Cita: Clubes/Brasil/Novorizontino/balanco-2010.md l.3 'Balanço Patrimonial encerrado em 31/12/2010 (em reais)'; l.9 'Receita Líquida Operacional | 130.350,36'."
- },
- {
-  "code": "outlier-liga",
-  "match": "novorizontino-br 2015: 0.2 M USD contra una mediana de 9.6 M USD en BR (1/50)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Es el año completo, en reales, y el balance siguiente confirma unos R$746 mil. Lo cargado (746.574) queda unos R$2,3 mil por debajo del total impreso, una diferencia menor que no es de escala. Cita: Clubes/Brasil/Novorizontino/balanco-2015.md l.4 'PERIODO: 01/01/2015 A 31/12/2015', l.15 '3 - RECEITAS OPERACIONAIS | 748.828,26 C' (reales); lo confirma balanco-2016.md l.38, comparativa 2015 = 746 (en miles)."
- },
- {
-  "code": "outlier-liga",
-  "match": "palmeiras-br 2025: 296.0 M USD contra una mediana de 9.6 M USD en BR (31×)",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Coincide exacto con el total impreso en miles de reales. Es un club gigante, con premios de la Copa del Mundo de Clubes y venta de jugadores, contra una mediana tirada para abajo por los clubes chicos. Cita: Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2024-2025.md l.521 'Valores expressos em milhares de reais'; l.1133 'Receita operacional líquida 1.628.486' = 1.628,486 M BRL cargados (PTAX 5,5024)."
- },
- {
   "code": "salto-interanual",
   "match": "como-it: revenue salta de 10.5 M USD (2024) a 64.9 M USD (2025), 6.2×",
   "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): El salto es real: es el ascenso a Serie A en 2024-25, que trae €31,8 M de derechos de TV que el año anterior no había. Ojo, sin embargo: 2025 sale del pro-forma de grupo, tomando para algunos rubros la columna Como 1907 (55,4 M), y 2024 sale del balance individual, así que el perímetro no es idéntico. No es un error de unidad. Cita: 2024: Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md l.147 'ricavi e proventi finanziari ... Euro 9.837 migliaia' (Serie B). 2025: Como-gruppo-pro-forma-consolidamento-2025.md l.74-89 'migliaia di Euro', Proventi televisivi 31.782 (2024: 0), Totale valore della produzione 62.045 (2024: 11.669)."
- },
- {
-  "code": "salto-interanual",
-  "match": "novorizontino-br: revenue salta de 0.1 M USD (2010) a 0.7 M USD (2013), 9.3×",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Los dos años están en reales. 2010 es el año de la refundación, sin actividad deportiva plena, y en 2013 el club ya compite y tiene patrocinios. Lo cargado para 2013 (1.712.617) difiere del impreso en apenas R$214. Cita: 2010: balanco-2010.md l.9 'Receita Líquida Operacional 130.350,36' (em reais). 2013: balanco-2013.md l.105 'PERIODO: 01/01/2013 A 31/12/2013', l.114 '3 - RECEITAS OPERACIONAIS | 1.712.831,17 C' (reales)."
  },
  {
   "code": "salto-interanual",
@@ -769,31 +239,6 @@
   "code": "sin-salarios",
   "match": "novorizontino-br 2010: no hay ni una línea en 'wages_squad'",
   "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): año de fundación, sin plantel profesional; la Demonstração do Resultado (Clubes/Brasil/Novorizontino/balanco-2010.md L10-15) tiene 4 renglones de gasto y ninguno de personal. Ajuste manual cero-real 'Salarios del plantel' de Guido (Admin/registros/ajustes-manuales.jsonl, balanco-2010.pdf)."
- },
- {
-  "code": "signo-invertido",
-  "match": "olympiacos-gr 2021 ingreso",
-  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
- },
- {
-  "code": "signo-invertido",
-  "match": "olympiacos-gr 2022 ingreso",
-  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
- },
- {
-  "code": "signo-invertido",
-  "match": "olympiacos-gr 2023 ingreso",
-  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
- },
- {
-  "code": "signo-invertido",
-  "match": "olympiacos-gr 2024 ingreso",
-  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
- },
- {
-  "code": "signo-invertido",
-  "match": "olympiacos-gr 2025 ingreso",
-  "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14, decisión de Guido en la cola del lote 71): desde 2021 (NIIF) el estado de Olympiacos imprime solo el neto de la venta de jugadores (\"Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών\") y la nota lo abre en venta bruta menos estos costos; van como player_sales negativo (ajustes categoria en Admin/registros/ajustes-manuales.jsonl). 2016-2020 el estado imprime bruto y quedan como gasto."
  },
  {
   "code": "salto-interanual",
@@ -817,11 +262,6 @@
  },
  {
   "code": "coma-comida",
-  "match": "bath-rugby-medium-company-accounts-2024-25.md L207",
-  "motivo": "VERIFICADO contra el documento (to-do 339 c): Central income 4.4 | 5.3 | (0.9); el OCR se comió la coma de 4.4. El año se carga del estado de resultados y del ajuste desglose, no de esta cifra."
- },
- {
-  "code": "coma-comida",
   "match": "everton-group-accounts-2023-24.md L341",
   "motivo": "VERIFICADO (to-do 339 c, Auditora 4): Profit on player trading 48.5 | 47.5 | 1.0; la cifra dañada es la del año anterior. Los años cargados de Everton salen del estado de resultados y coinciden con la cifra buena."
  },
@@ -834,11 +274,6 @@
   "code": "ejercicio-sin-rastro",
   "match": "acmilan-it:",
   "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Italia/AC Milan.md): el sitio oficial publica solo desde 2017/18 y Wayback no capturó los PDF de dic-2014, dic-2015 y dic-2016; la prensa los comenta sin el documento."
- },
- {
-  "code": "ejercicio-sin-rastro",
-  "match": "almagro-ar:",
-  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Argentina/Almagro.md): sitio y Wayback agotados hasta 2026; el regulador (IGJ) exige clave fiscal y pago. Sin documento publicado del ejercicio 2024."
  },
  {
   "code": "ejercicio-sin-rastro",
@@ -859,16 +294,6 @@
   "code": "ejercicio-sin-rastro",
   "match": "losandes-ar:",
   "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Argentina/Los Andes.md): el archivo oficial llega al ejercicio 105 (2020-21); chequeos del 2026-09-12 y 09-22, sin ejercicio 106 o posterior en el dominio."
- },
- {
-  "code": "ejercicio-sin-rastro",
-  "match": "osasuna-es:",
-  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/España/CA Osasuna.md): 2022-23 solo se publica como memoria no financiera (memoria2023.pdf); las cuentas del ejercicio no están."
- },
- {
-  "code": "ejercicio-sin-rastro",
-  "match": "sampdoria-it:",
-  "motivo": "REVISADO (Pruebas 1; nota Admin/sourcing/Italia/Sampdoria.md): los fascicoli 2022-2025 no se publican; sitio y Wayback agotados."
  },
  {
   "code": "salto-interanual",

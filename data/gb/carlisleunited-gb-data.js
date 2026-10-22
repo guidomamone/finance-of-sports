@@ -40,6 +40,6 @@ window.CLUB_GENERIC_DATA["carlisleunited-gb"] = {
   presupuestoOverlayByYear: carlisleunitedGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl":{"id":"carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl","clubId":"carlisleunited-gb","title":"Carlisle United Association Football Club (1921) Limited — carlisle-full-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)"}});
+Object.assign(sources, {"carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl":{"id":"carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl","clubId":"carlisleunited-gb","title":"Carlisle United Association Football Club (1921) Limited — carlisle-full-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","url":"https://find-and-update.company-information.service.gov.uk/company/00175280/filing-history/MzUxMzI4MDAzNWFkaXF6a2N4/document?format=xhtml&download=0"}});
 
 memberCountByClub["carlisleunited-gb"] = null;

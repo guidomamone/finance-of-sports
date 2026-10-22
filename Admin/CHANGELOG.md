@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 941 — P2 y P3: fixes aprobados codeados y novena corrida (2026-10-21) [347]
+
+- `audit.js`, los fixes aprobados por la Auditora 5: `signo-invertido` no se emite si el lado del ejercicio cierra contra su total oficial, y sin total oficial es P3 (P2 20 → 0); `escala-implausible` sin la rama P3 de año vecino (P3 5 → 0, el P0 igual); `salto-interanual` solo entre años a 2 de distancia como mucho, y `cambio-de-formato` (P3) cuando un año imprime solo el margen bruto belga (P2 4 → 0; Novorizontino 2010-2012 verificado contra el documento y silenciado). `outlier-liga` y `gestion-club-inexistente` ya estaban codeados: el punto estaba desactualizado (premisa vencida). Totales: P2 86 → 62, P3 192 → 174; el resto de la salida idéntico (antes y después con `--json`).
+- Novena corrida, `fuente-xhtml-sin-url` (P3 7 → 0): las 7 fuentes iXBRL británicas ya llevan la url de Companies House. `tools/fuente-companies-house.mjs` la busca por número de empresa y cierre y comprueba que el XHTML publicado tenga los mismos hechos etiquetados que el archivo local; el aviso de `audit.js` la nombra.
+- `audit.js` avisa `audit-ignore-sin-uso` (P3) y `--podar-ignore` las saca: salieron 116 de las 179 entradas de `tools/audit-ignore.json`, que ya no silenciaban nada (la mayoría `signo-invertido`).
+- Registrado en `Admin/registros/auditoria-proceso.jsonl` (sesión única). Condiciones nuevas en una tool revisadas por la propia sesión, sin revisión independiente. Quedan para otros puntos: `catchall-dominante` (350), `sin-salarios` (351), `liga-una-fuente` (HALLAZGOS).
+
 ## Versión 940 — Sin worktrees, índice de .md y candado de Bash aflojado (2026-10-21)
 
 - Los 7 worktrees (`fos-*`) y sus ramas ya mergeadas se borraron. Antes se copiaron a `main`, sin pisar nada, los 2.317 archivos de `Clubes/` y `Generados/` que solo estaban ahí (transcripciones, XHTML y resultados de lotes); 214 archivos tracked modificados de `Generados/` del worktree de finanzas (salidas regenerables) no se copiaron.

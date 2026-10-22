@@ -38,6 +38,6 @@ window.CLUB_GENERIC_DATA["shrewsburytown-gb"] = {
   presupuestoOverlayByYear: shrewsburytownGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl":{"id":"shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl","clubId":"shrewsburytown-gb","title":"Shrewsbury Town Football Club Limited — shrewsbury-full-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)"}});
+Object.assign(sources, {"shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl":{"id":"shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl","clubId":"shrewsburytown-gb","title":"Shrewsbury Town Football Club Limited — shrewsbury-full-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","url":"https://find-and-update.company-information.service.gov.uk/company/00315587/filing-history/MzUwNzE1NjYzNGFkaXF6a2N4/document?format=xhtml&download=0"}});
 
 memberCountByClub["shrewsburytown-gb"] = null;

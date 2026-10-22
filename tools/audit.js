@@ -127,8 +127,10 @@ function loadEngine() {
 // ---------------------------------------------------------------------------
 const findings = [];
 const silenciados = [];
+const reglasUsadas = new Set();
 const add = (sev, code, msg) => {
   const regla = IGNORADOS.find(i => i.code === code && msg.includes(i.match));
+  if (regla) reglasUsadas.add(regla);
   (regla ? silenciados : findings).push({ sev, code, msg, ...(regla ? { motivo: regla.motivo } : {}) });
 };
 
@@ -360,13 +362,25 @@ const DEDUCCION_FISCAL_INGRESO_RE = /imposto|tribut[oaã]|dedu[çc][aã]o|deduc(
 const esDeduccionFiscalIngresoConocida = label => DEDUCCION_FISCAL_INGRESO_RE.test(label || '');
 // Un gasto positivo cuyo rótulo dice que es neto (reversión de provisiones, reducciones, pérdidas netas de recuperos) no es un signo dado
 // vuelta: el rótulo ya lo explica (Auditora 4, 4ª corrida de P2 y P3). Solo el lado gasto.
+// El formato abreviado belga imprime como único ingreso el margen bruto (Brutomarge, Marge brute): no es la cifra de negocios.
+const MARGEN_BRUTO_RE = /brutomarge|marge brute|bruttomarge|gross margin/i;
 const GASTO_NETO_RE = /revers[õo]es|redu[çc][õo]es|reprises|terugnemingen|perdas\//i;
+
+// ¿El lado (ingreso o gasto) del ejercicio suma, con el signo de cada línea, el total oficial que imprime el documento? Misma tolerancia que checkTieOuts.
+function cierraContraOficial(api, clubId, year, ym, sec) {
+  const oficial = sec === 'ingreso' ? ym.officialTotalRevenue : ym.officialTotalExpenses;
+  if (oficial == null) return false;
+  const c = api.computeYearGeneric(clubId, year);
+  const calculado = sec === 'ingreso' ? c.revenue : Math.abs(c.expenses + c.nonCash);
+  const objetivo = sec === 'ingreso' ? oficial : Math.abs(oficial);
+  return Math.abs(+(calculado - objetivo).toFixed(3)) < api.toleranciaTieOut(api.montosTieOut(c, sec === 'ingreso' ? 'revenue' : 'expenses'), objetivo);
+}
 
 // --- D6/D7/D8: higiene de las líneas ---------------------------------------
 function checkLineas(api) {
   let signosMenores = 0;
   let deduccionesFiscalesConocidas = 0;
-  for (const { clubId, year, rev, exp } of clubYears(api)) {
+  for (const { clubId, year, ym, rev, exp } of clubYears(api)) {
     // Un ingreso negativo o un gasto positivo casi siempre es legítimo (deducciones
     // sobre la receita en Brasil, variación de existencias en España). Lo que NO es
     // normal es que una línea así pese: se reporta solo cuando supera el 2% de su
@@ -381,8 +395,12 @@ function checkLineas(api) {
             deduccionesFiscalesConocidas++;
           } else if (sec === 'gasto' && GASTO_NETO_RE.test(l.rawLabel || '')) {
             // rótulo neto: no se marca (ver GASTO_NETO_RE)
+          } else if (cierraContraOficial(api, clubId, year, ym, sec)) {
+            // el lado cierra con el total que imprime el documento, con el signo de cada línea: un signo dado vuelta de verdad rompería ese tie-out
+            // antes que este aviso (Auditora 5: 20 de 20 hallazgos mirados contra el documento eran netos reales)
           } else {
-            add('P2', 'signo-invertido', `${ref(clubId, year)} ${sec} "${l.rawLabel}": ${l.amountNative} (${(peso * 100).toFixed(1)}% de la sección) — confirmar que es una deducción real y no un signo dado vuelta`);
+            // sin total oficial del lado no hay con qué comparar: P3, no P2
+            add('P3', 'signo-invertido', `${ref(clubId, year)} ${sec} "${l.rawLabel}": ${l.amountNative} (${(peso * 100).toFixed(1)}% de la sección) — confirmar que es una deducción real y no un signo dado vuelta`);
           }
         } else {
           signosMenores++;
@@ -474,7 +492,7 @@ function checkMoneda(api) {
     if ((ym.periodMonths || 12) < 12) continue;
     const pais =(api.clubs[clubId] || {}).country || '??';
     (porPais[pais] = porPais[pais] || []).push({ clubId, year, usd });
-    (serie[clubId] = serie[clubId] || []).push({ year, usd, currency: ym.currency });
+    (serie[clubId] = serie[clubId] || []).push({ year, usd, currency: ym.currency, soloMargenBruto: rev.filter((l) => l.amountNative).length === 1 && MARGEN_BRUTO_RE.test(rev.find((l) => l.amountNative).rawLabel || '') });
   }
 
   // ESCALA FUERA DE BANDA, CONFIRMADA POR EL AÑO VECINO (to-do 237 e). La banda frena a clubes chicos reales de tercera división (Alverca
@@ -483,8 +501,8 @@ function checkMoneda(api) {
   // 2 años o menos está DENTRO de la banda y a menos de 20 veces de este -> P3 (aviso); si no, P0 como siempre.
   for (const x of fueraDeBanda) {
     const vecino = (serie[x.clubId] || []).find((o) => o.year !== x.year && Math.abs(Number(o.year) - Number(x.year)) <= 2 && o.usd >= 0.2 && o.usd <= 2000 && Math.max(o.usd, x.usd) / Math.min(o.usd, x.usd) < 20);
-    if (vecino) add('P3', 'escala-implausible', `${ref(x.clubId, x.year)}: revenue = ${x.usd.toFixed(2)} M USD, fuera de la banda plausible pero a ${(Math.max(vecino.usd, x.usd) / Math.min(vecino.usd, x.usd)).toFixed(1)}× de ${vecino.year} (${vecino.usd.toFixed(2)} M USD): club chico, no error de escala`);
-    else add('P0', 'escala-implausible', `${ref(x.clubId, x.year)}: revenue = ${x.usd.toFixed(2)} M USD, fuera de toda banda plausible — sospechar error de escala (documento en miles) o fx equivocado`);
+    // Con año vecino ya no se avisa: el club chico y real no pide nada y repetía el aviso en cada corrida (Auditora 5, sacada la rama P3).
+    if (!vecino) add('P0', 'escala-implausible', `${ref(x.clubId, x.year)}: revenue = ${x.usd.toFixed(2)} M USD, fuera de toda banda plausible — sospechar error de escala (documento en miles) o fx equivocado`);
   }
 
   // Comparación entre pares de la misma liga: un tie-out no puede ver esto, porque
@@ -516,7 +534,13 @@ function checkMoneda(api) {
     for (let i = 1; i < años.length; i++) {
       const a = años[i - 1], b = años[i];
       const r = b.usd / a.usd;
+      if (b.year - a.year > 2) continue; // una brecha de años no es un salto interanual (Westerlo 2015 a 2025)
       if (r > 5 || r < 1 / 5) {
+        // el formato abreviado belga solo imprime el margen bruto, no la cifra de negocios: no es un error de unidad (Auditora 5)
+        if (a.soloMargenBruto || b.soloMargenBruto) {
+          add('P3', 'cambio-de-formato', `${clubId}: revenue pasa de ${a.usd.toFixed(1)} M USD (${a.year}) a ${b.usd.toFixed(1)} M USD (${b.year}) porque un año imprime solo el margen bruto y el otro la cifra de negocios — no son comparables`);
+          continue;
+        }
         add('P2', 'salto-interanual', `${clubId}: revenue salta de ${a.usd.toFixed(1)} M USD (${a.year}) a ${b.usd.toFixed(1)} M USD (${b.year}), ${r > 1 ? r.toFixed(1) + '×' : '/' + (1 / r).toFixed(1)} — confirmar que es real y no un error de unidad`);
       }
     }
@@ -1458,7 +1482,7 @@ function checkFuentesPublicas(api) {
     const md = cand.find((m) => /xhtml-aarsrapport\.mjs/.test(fs.readFileSync(m.abs, 'utf8').slice(0, 400)));
     if (!md) continue;
     if (/\.pdf(\?|#|$)/i.test(url) || url.startsWith('Clubes/')) add('P1', 'fuente-xhtml-sin-url', `sources['${id}'].url apunta a ${url}: el PDF de ancla es la impresión de Chrome de un XHTML, no el documento oficial; la url tiene que ser la del depósito oficial (Virk o el club)`);
-    else if (!url) add('P3', 'fuente-xhtml-sin-url', `sources['${id}'] salió de un informe XHTML (iXBRL) y no tiene la url del depósito oficial (Virk o el club): node tools/fuente.mjs ${s.clubId} ${id} --url "…" --nota "Informe oficial en formato XHTML (iXBRL)" --escribir`);
+    else if (!url) add('P3', 'fuente-xhtml-sin-url', `sources['${id}'] salió de un informe XHTML (iXBRL) y no tiene la url del depósito oficial. Reino Unido: node tools/fuente-companies-house.mjs ${s.clubId} --escribir (la busca en Companies House y comprueba que sea el mismo informe). Dinamarca (Virk) u otro: node tools/fuente.mjs ${s.clubId} ${id} --url "…" --nota "Informe oficial en formato XHTML (iXBRL)" --escribir`);
   }
 
   // El guardarraíl del bug de la 126: `note` no se renderiza en ningún lado.
@@ -2171,6 +2195,13 @@ function main() {
   checkRarezas();
   checkEjercicioSinRastro();
   pruebaDeDeporte(api);
+  // una entrada de audit-ignore.json que ya no silencia nada (el hallazgo se arregló o el chequeo cambió) es peso muerto y esconde un silencio viejo: P3
+  const sinUso = IGNORADOS.filter((i) => !reglasUsadas.has(i) && i.code !== '_ejemplo_no_activo');
+  if (ARGS.includes('--podar-ignore') && sinUso.length) { // saca esas entradas del archivo (el historial queda en git); el resto se escribe tal cual
+    fs.writeFileSync(IGNORE_FILE, JSON.stringify(IGNORADOS.filter((i) => !sinUso.includes(i)), null, 1) + '\n', 'utf8');
+    console.error(`audit-ignore.json: ${sinUso.length} entradas sin uso sacadas`);
+  }
+  if (sinUso.length) add('P3', 'audit-ignore-sin-uso', `${sinUso.length} entradas de tools/audit-ignore.json no silencian nada hoy (sacarlas): ${sinUso.slice(0, 6).map((i) => `${i.code} «${String(i.match).slice(0, 40)}»`).join('; ')}${sinUso.length > 6 ? '; …' : ''}`);
 
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
   // (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.

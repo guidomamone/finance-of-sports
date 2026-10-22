@@ -36,6 +36,6 @@ window.CLUB_GENERIC_DATA["burtonalbion-gb"] = {
   presupuestoOverlayByYear: burtonalbionGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"burtonalbion-gb-burton-full-accounts-2024-25-ixbrl":{"id":"burtonalbion-gb-burton-full-accounts-2024-25-ixbrl","clubId":"burtonalbion-gb","title":"The Albion Football Club (Burton on Trent) Limited — burton-full-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)"}});
+Object.assign(sources, {"burtonalbion-gb-burton-full-accounts-2024-25-ixbrl":{"id":"burtonalbion-gb-burton-full-accounts-2024-25-ixbrl","clubId":"burtonalbion-gb","title":"The Albion Football Club (Burton on Trent) Limited — burton-full-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","url":"https://find-and-update.company-information.service.gov.uk/company/00488096/filing-history/MzUwNTY2MDQyNWFkaXF6a2N4/document?format=xhtml&download=0"}});
 
 memberCountByClub["burtonalbion-gb"] = null;
