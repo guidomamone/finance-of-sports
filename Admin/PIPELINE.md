@@ -1012,15 +1012,16 @@ Cada club y cada liga con ranking tiene su página: `club/<id>.html` y `liga/<id
 
 ## Datos públicos de un club (estadio, capacidad, fundación, web, registro)
 
-Una tool agota las fuentes en orden y recién después pasa a una persona; no se googlea de entrada.
+Una tool agota las fuentes en orden y recién después pasa a un agente; no se googlea de entrada. Medido en `Admin/HALLAZGOS-pipeline.md` («Segunda fuente de estadio y capacidad»).
 
-1. **Estadio, capacidad y sponsor de un ejercicio:** los trae sola la compuerta de `cargar.mjs` (`tools/estadio-sponsor.mjs`): página de temporada de Wikipedia, ficha del club, Wikipedia del país (`--local`). Lo que falta, lo imprime con un candidato de Wikidata.
-2. **Candidato de Wikidata** (`node tools/dato-publico.mjs "<club>" --pais <iso2> --anio <año>`): estadio del año, capacidad, fundación y web, con la cita. Se cruza solo con el artículo del club en Wikipedia: **«confirmado por»** (dos fuentes que coinciden, se pega en `tools/contexto-manual.json`) o **«SOLO Wikidata»** (no se pega; sigue el paso 3). Medido: Wikidata sola da el mismo estadio que el revisado a mano en 43 % y otro nombre en 17 % (`Admin/HALLAZGOS-pipeline.md`).
-3. **Una persona o sesión busca** solo lo que quedó «SOLO Wikidata» o sin dato: la ficha del club abierta (WebFetch), no el resumen del buscador; una búsqueda corta (club + una palabra) y hasta tres reformulaciones antes de darlo por no encontrado.
+1. **Estadio, capacidad y sponsor de un ejercicio:** los trae sola la compuerta de `cargar.mjs` (`tools/estadio-sponsor.mjs`): página de temporada de Wikipedia, ficha del club, Wikipedia del país (`--local`). Lo que falta, lo imprime con el candidato del paso 2.
+2. **Candidato** (`node tools/dato-publico.mjs "<club>" --pais <iso2> --anio <año>`): Wikidata, con el artículo del club y el del estadio en Wikipedia como cruce.
+   - **Estadio:** identifica el estadio, no su nombre de ese año (Wikidata da el actual: aun «confirmado» por el artículo del club, el nombre coincide con el manual en 70 %). Nunca se escribe solo; se verifica el nombre que tenía ese año.
+   - **Capacidad, regla medida:** si Wikidata y el artículo del estadio difieren **menos de 5 %**, se toma el del artículo (76 % queda a menos de 3 % de lo revisado a mano y 90 % a menos de 10 %); si difieren más, o solo una fuente la da, pasa al paso 3. Cubre ~40 % de los casos. La constante es `TOL_CAPACIDAD` de `dato-publico.mjs`; se revisa con `node tools/fos.mjs medir segunda-fuente`.
+3. **El agente** resuelve lo que quedó sin decidir: `node tools/dato-publico.mjs --club <clubId> --anio <año> --prompt <estadio|capacidad|fundacion>` imprime el prompt fijo (búsqueda corta, ficha del club abierta, una confirmación fuera de Wikipedia y Wikidata, JSON con citas, nunca inventa); se lo pasa tal cual a un Agent **Sonnet**, no Opus. Lo que el agente devuelve como «encontrado» con dos fuentes que coinciden se pega en `tools/contexto-manual.json` con las citas; «fuentes en conflicto» o «no encontrado» va a la sesión.
 4. **A `Admin/dudas-por-club.md`** va solo lo que únicamente el club sabe. Fundación, licencia o número de registro son públicos: no se le preguntan.
 
-La fundación y la web de un club nuevo no las escribe ninguna tool todavía: es parte del punto 366 (`node tools/todo.mjs 366`).
-
+La fundación y la web de un club nuevo las da el paso 2 (`fundación`, `web`), pero ninguna tool las escribe todavía en `data/`: las pega la sesión.
 
 ---
 

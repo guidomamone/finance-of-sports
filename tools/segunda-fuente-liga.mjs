@@ -108,9 +108,44 @@ export function tablaRsssf(html, titulo) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (k) => { const i = A.indexOf(k); return i >= 0 ? A[i + 1] : null; };
-  const [url, leagueId, anio] = A.filter((a, i) => !a.startsWith('--') && !['--pais', '--tabla'].includes(A[i - 1]));
-  const pais = flag('--pais'); const titulo = flag('--tabla'); const ESCRIBIR = A.includes('--escribir');
-  if (!url || !leagueId || !anio || !pais || !titulo) { console.error('Uso: node tools/segunda-fuente-liga.mjs "<url>" <leagueId> <año> --pais <iso2> --tabla "<título>" [--escribir]'); process.exit(1); }
+  // --pendientes: toma de `audit.js --json` las ligas-año que tienen UNA sola fuente (`liga-una-fuente`) e intenta la segunda con --auto en cada una. Nunca frena: lo que no sale lo dice y queda para la sesión.
+  if (A.includes('--pendientes')) {
+    const { spawnSync } = await import('node:child_process'); const { readdirSync } = await import('node:fs');
+    const au = spawnSync('node', [resolve(ROOT, 'tools', 'audit.js'), '--json'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 });
+    let hallazgos = []; try { hallazgos = JSON.parse(au.stdout).findings.filter((f) => f.code === 'liga-una-fuente'); } catch { /* sin auditoría: nada */ }
+    const isos = readdirSync(REF).filter((f) => /^[a-z]{2}\.json$/.test(f)).map((f) => f.slice(0, 2));
+    let hechas = 0;
+    for (const h of hallazgos) {
+      const liga = h.msg.split(':')[0]; const anios = [...new Set([...h.msg.matchAll(/\b[a-z0-9]+-[a-z]{2} (\d{4})\b/g)].map((m) => m[1]))];
+      const iso = isos.find((i) => { try { return JSON.parse(readFileSync(resolve(REF, `${i}.json`), 'utf8')).leagues?.[liga]; } catch { return false; } });
+      for (const y of anios) {
+        if (!iso) { console.log(`  ${liga} ${y}: ninguna caché tiene esta liga`); continue; }
+        const r = spawnSync('node', [import.meta.filename, '--auto', liga, y, '--pais', iso, ...(A.includes('--escribir') ? ['--escribir'] : [])], { cwd: ROOT, encoding: 'utf8' });
+        const ult = (r.stderr || r.stdout || '').trim().split('\n').filter(Boolean).pop() || '';
+        console.log(`  ${liga} ${y}: ${r.status === 0 ? `segunda fuente ${A.includes('--escribir') ? 'guardada' : 'leída (ensayo)'}` : ult.slice(0, 200)}`);
+        if (r.status === 0) hechas++;
+      }
+    }
+    console.log(`segunda fuente de liga: ${hechas} guardada(s) de ${hallazgos.length} liga(s) con una sola fuente`);
+    process.exit(0);
+  }
+  let [url, leagueId, anio] = A.filter((a, i) => !a.startsWith('--') && !['--pais', '--tabla'].includes(A[i - 1]));
+  const pais = flag('--pais'); let titulo = flag('--tabla'); const ESCRIBIR = A.includes('--escribir');
+  // --auto <ligaId> <año> --pais <iso2>: la url y el título de la tabla salen de otro año de la MISMA liga que ya tiene su segunda fuente en la caché (la url cambia el año; el título, la temporada).
+  if (A.includes('--auto')) {
+    [leagueId, anio] = A.filter((a, i) => !a.startsWith('--') && !['--pais', '--tabla'].includes(A[i - 1]));
+    const c = existsSync(resolve(REF, `${pais}.json`)) ? JSON.parse(readFileSync(resolve(REF, `${pais}.json`), 'utf8')) : null;
+    const ys = c?.leagues?.[leagueId] || {}; const y = Number(anio);
+    const ref = Object.entries(ys).filter(([k, e]) => Number(k) !== y && (e.fuentes || []).some((f) => f.tipo === 'rsssf')).sort((a, b) => Math.abs(a[0] - y) - Math.abs(b[0] - y))[0];
+    if (!ref) { console.error(`NO SE ESCRIBE: ${leagueId} no tiene otro año con segunda fuente de RSSSF de donde sacar la url y el título (se da a mano: url, liga, año, --pais, --tabla)`); process.exit(2); }
+    const ry = Number(ref[0]); const f = ref[1].fuentes.find((x) => x.tipo === 'rsssf');
+    const m = /^(.*?)(\d{4}|\d{2})(\.html?)$/.exec(f.url); if (!m) { console.error(`NO SE ESCRIBE: la url de referencia ${f.url} no termina en un año`); process.exit(2); }
+    const nuevo = m[2].length === 4 ? String(y + (Number(m[2]) - ry)) : String((y + (Number(m[2]) - (ry % 100))) % 100).padStart(2, '0');
+    url = `${m[1]}${nuevo}${m[3]}`;
+    const temporadas = (a) => [`${a - 1}/${String(a).slice(2)}`, `${a - 1}-${String(a).slice(2)}`, `${a - 1}/${a}`, `${a - 1}-${a}`, `${a}`];
+    titulo = f.tabla; for (const [k, s] of temporadas(ry).entries()) if (titulo.includes(s)) { titulo = titulo.replace(s, temporadas(y)[k]); break; }
+  }
+  if (!url || !leagueId || !anio || !pais || !titulo) { console.error('Uso: node tools/segunda-fuente-liga.mjs "<url>" <leagueId> <año> --pais <iso2> --tabla "<título>" [--escribir]   |   --auto <ligaId> <año> --pais <iso2> [--escribir]   |   --pendientes [--escribir]'); process.exit(1); }
   const cachePath = resolve(REF, `${pais}.json`);
   const cache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : null;
   const entrada = cache?.leagues?.[leagueId]?.[anio];

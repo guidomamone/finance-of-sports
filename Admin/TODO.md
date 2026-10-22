@@ -23,22 +23,7 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 
 ## A. En marcha
 
-### 1. 366 · (Pipeline): lo que falta de meter las tools al pipeline (la puerta única ya está)
-
-HECHO: `tools/fos.mjs` (la lista y el atajo de las tools que se corren a mano, con los grupos `medir` y `buscar`; `--check` dice las que quedaron sueltas), `tools/archivar.mjs`, `tools/silenciar.mjs`, y la compuerta de `estadio-sponsor.mjs` escribe sola el estadio cuando Wikidata y Wikipedia coinciden. QUEDA: (a) `segunda-fuente-liga.mjs` sale de la cadena de `alta-club.mjs`. Medido: hoy solo dos liga-años la piden (Super League 2 griega 2025 y Liga 3 portuguesa 2023, las dos en grupos, que frenan en la compuerta a propósito), así que armar por país la tabla de URLs de RSSSF (patrón `tables<letra>/<código><año>.html`) y del título de cada tabla cuesta más de lo que ahorra; se hace si `liga-una-fuente` pasa de unas diez filas. (b) La CAPACIDAD que da Wikidata se escribe sola cuando el TODO 367 mida la tolerancia. (c) `fos.mjs` agrupa los comandos pero no fusiona el código: `medir-cargar`, `medir-verificar` y compañía siguen siendo archivos aparte (los comandos viejos no se tocaron); fusionarlos es un refactor que solo se justifica si dos de ellos repiten código.
-Terminado cuando: (a) se hace o la línea de `Admin/HALLAZGOS-pipeline.md` dice por qué no, y (b) está escrito con el umbral del 367. Si se decide que (a) y (c) no valen el costo, el punto se cierra con esa línea.
-
-Verificar: manual
-
-### 2. 367 · (Pipeline): una segunda fuente de estadio, capacidad y fundación que no sea Wikipedia, y un agente con reglas para lo que no coincide
-
-DATOS PÚBLICOS SIN DEPENDER DE UNA SOLA ENCICLOPEDIA (Guido, 2026-10-22). Hoy Wikidata es el candidato y el artículo de Wikipedia la «confirmación»; las dos se alimentan entre sí y Wikidata sola acierta el estadio en 43 % (`Admin/HALLAZGOS-pipeline.md`). Qué hacer: (1) elegir una fuente independiente que una tool pueda leer sin IA (la web oficial del club que da Wikidata en P856; la federación o la liga; OpenStreetMap para el estadio y su capacidad; Transfermarkt si sus términos lo permiten: se mide cuál responde mejor sobre los 185 club-años que hoy se completan a mano); (2) **regla de decisión por tolerancia**, medida y no supuesta: en la capacidad, si las dos fuentes difieren menos de X % (o menos de N plazas) se toma la de Wikipedia; en el estadio, si el nombre coincide tras normalizar (sin acentos, sin sponsor) se toma; si no, no se escribe; (3) lo que no pasa la regla lo resuelve **un agente con reglas** (Sonnet, no Opus) con la escalera de búsqueda de `Admin/PIPELINE.md` («Datos públicos de un club») como prompt fijo, que devuelve valor y cita o «no encontrado» y nunca inventa. Los umbrales X y N salen de medir sobre los 185 casos, no de este texto.
-Terminado cuando: hay una segunda fuente que no es Wikipedia ni Wikidata en `tools/dato-publico.mjs`, los umbrales medidos están en `Admin/HALLAZGOS-pipeline.md` con su tabla, y el agente tiene su prompt fijo en `Admin/PIPELINE.md`.
-
-Verificar: contiene tools/dato-publico.mjs | segundaFuente
-Verificar: manual
-
-### 3. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
+### 1. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
 
 SUELDOS ADENTRO DE UNA SOLA LÍNEA (Auditora 4, 3ª corrida de P2 y P3, 2026-10-21). 12 británicos (Aston Villa, Brentford, Brighton,
 Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves; 47 club-años con el estado por función),
@@ -48,7 +33,7 @@ los 10 británicos nuevos del 356 (sus sueldos entraron con `incluye wages_squad
 
 Verificar: manual
 
-### 4. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
+### 2. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
 
 CATEGORÍA PARA SUBSIDIOS Y DONACIONES (Auditora 4, 2ª corrida de P2 y P3, 2026-10-21; Guido: «dejalo como to do»). Buena parte de los
 ~130 `catchall-dominante` son subsidios, donaciones y aportes (Subsídios, Επιχορηγήσεις, Целевые взносы; ligas bajas de Grecia, Rusia y
@@ -67,7 +52,7 @@ siempre igual (la propuesta de `hideIfZero` para la fila nueva y para Educación
 
 Verificar: manual
 
-### 5. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
+### 3. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
 
 LO QUE QUEDÓ SIN DUEÑO DEL RELEVAMIENTO DE SKILLS (une el 330). Aplicado: las cinco skills nuevas, las partes 1, 3 y 7 de
 `Admin/propuestas/257-skills.md`, la memoria vaciada y el candado de skills del hook. Falta: (a) que `perfil-en-cola` de `cargar.mjs`
@@ -76,7 +61,7 @@ nunca frene (Pipeline); (b) la duda de Deportes Tolima, `dudas-por-club.md:201`,
 
 Verificar: manual
 
-### 6. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
+### 4. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
 
 CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing buscó en Companies House los clubes que no tenemos y
 presentan en iXBRL y bajó los 198 `.xhtml` (84 MB, los 68 con PDF oficial al lado renombrados a `-ixbrl`); Onboarding los carga con
@@ -109,7 +94,7 @@ iXBRL que presenta y el sitio no tiene está cargado o descartado con motivo. Fa
 
 Verificar: manual
 
-### 7. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
+### 5. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
 
 FRENO DE DOCUMENTOS DE GRUPO (sale del 356, Fleetwood/Jaymel; regla votada 3 a 0 en CONVENCIONES-DATOS, «Un consolidado de grupo con
 negocios ajenos al club», umbral del 10 % sobre lo impreso). Terminado cuando: `perimetro-senales.mjs` o `cargar.mjs` frenan un documento de
@@ -119,7 +104,7 @@ skill de auditoría (la Auditora). Lo hace Pipeline.
 
 Verificar: manual
 
-### 8. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+### 6. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 LO APROBADO DE PIPELINE 15 QUE NO SE APLICÓ (Auditora 5 y 6, `Admin/registros/auditoria-proceso.jsonl`; el detalle
 en `Admin/Archive/sesion-pipeline-2026-10-21.md`, «Pipeline 15»). Terminado cuando: (a) barrido de lecturas recortadas: `jevDe` de
@@ -140,7 +125,7 @@ Verificar: manual
 
 ## D. Orden de la casa
 
-### 9. 338 · correr todas las auditorías del proyecto (al final de A)
+### 7. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
@@ -148,7 +133,7 @@ CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al
 
 Verificar: manual
 
-### 10. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 8. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
@@ -157,7 +142,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 11. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 9. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -174,7 +159,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 12. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 10. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -210,7 +195,7 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 
 Verificar: manual
 
-### 13. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+### 11. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
@@ -221,7 +206,7 @@ Verificar: audit ejercicio-sin-rastro "liersekempenzonen-be" = 0
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 14. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 12. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -234,7 +219,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 15. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 13. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -250,7 +235,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 16. 335 · mails a clubes
+### 14. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -265,7 +250,7 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 17. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 15. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
@@ -274,7 +259,7 @@ SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en 
 
 Verificar: manual
 
-### 18. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 16. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo

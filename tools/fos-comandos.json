@@ -25,6 +25,7 @@
   { "cmd": "medir verificar", "script": "medir-verificar.mjs", "que": "mide un cambio de verificar.mjs antes y después", "cuando": "al tocar verificar.mjs" },
   { "cmd": "medir ixbrl-consolidado", "script": "medir-ixbrl-consolidado.mjs", "que": "si alcanza lo cargado para frenar el chequeo iXBRL consolidado", "cuando": "TODO 352" },
   { "cmd": "medir etiquetas", "script": "extraer-etiquetas.mjs", "que": "backtest: cifras ya etiquetadas en el XHTML (iXBRL) contra lo extraído", "cuando": "TODO 356, antes de engancharlo a extraer" },
+  { "cmd": "medir segunda-fuente", "script": "medir-segunda-fuente.mjs", "que": "mide Wikidata y OpenStreetMap contra lo cargado a mano (estadio y capacidad)", "cuando": "ajustar la regla de tolerancia del TODO 367" },
   { "cmd": "medir lotes", "script": "lotes-prueba.mjs", "que": "arma los lotes de prueba mediano y completo", "cuando": "al actualizar los lotes de prueba" },
   { "cmd": "medir escritura", "script": "prueba-escribir.mjs", "que": "regresión de la escritura de cargar.mjs", "cuando": "tras tocar la escritura" },
   { "cmd": "buscar wayback", "script": "wayback-cdx.mjs", "que": "cliente CDX de Wayback Machine", "cuando": "buscar capturas viejas de un sitio" },

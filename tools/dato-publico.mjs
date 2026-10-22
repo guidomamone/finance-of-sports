@@ -24,6 +24,7 @@ const UA = { 'User-Agent': 'finance-of-sports/1.0 (https://financeofsports.com; 
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 const get = async (url) => { for (let i = 0; i < 3; i++) { const r = await fetch(url, { headers: UA }); if (r.ok) return r.json(); if (r.status !== 429 && r.status < 500) return null; await dormir(1500 * (i + 1)); } return null; };
 const API = 'https://www.wikidata.org/w/api.php';
+export const TOL_CAPACIDAD = 0.05; // medido (tools/medir-segunda-fuente.mjs); Admin/HALLAZGOS-pipeline.md
 
 // clases que aceptamos como «un club deportivo» (association football club, sports club, rugby union club, basketball club, ...) y se resuelven por P31 y su cadena P279 corta
 const CLASES_CLUB = new Set(['Q476028', 'Q847017', 'Q5265', 'Q1051948', 'Q13027888', 'Q4438121', 'Q2088357', 'Q18558301', 'Q6519043', 'Q27547636', 'Q10484395']);
@@ -100,7 +101,7 @@ export async function datoPublico(nombre, { pais, anio, qid } = {}) {
     const desde = anioDe(c.qualifiers?.P580?.[0]?.datavalue?.value?.time); const hasta = anioDe(c.qualifiers?.P582?.[0]?.datavalue?.value?.time);
     const v = await entidad(q);
     const caps = (v?.claims?.P1083 || []).map((x) => ({ n: Number(x.mainsnak?.datavalue?.value?.amount), en: anioDe(x.qualifiers?.P585?.[0]?.datavalue?.value?.time) })).filter((x) => x.n > 0);
-    estadios.push({ qid: q, nombre: etiqueta(v), desde, hasta, capacidades: caps });
+    estadios.push({ qid: q, nombre: etiqueta(v), desde, hasta, capacidades: caps, enwiki: v?.sitelinks?.enwiki?.title || null });
   }
   out.estadios = estadios;
   if (anio) {
@@ -109,6 +110,19 @@ export async function datoPublico(nombre, { pais, anio, qid } = {}) {
     if (el) {
       const cap = el.capacidades.length ? el.capacidades.reduce((a, b) => (Math.abs((b.en ?? anio) - anio) < Math.abs((a.en ?? anio) - anio) ? b : a)) : null;
       out.delAnio = { anio, estadio: el.nombre, capacidad: cap ? cap.n : null, fuenteEstadio: `https://www.wikidata.org/wiki/${el.qid}` };
+      // la capacidad que dice el artículo del ESTADIO en Wikipedia (ficha, «capacity»): otra edición que la de Wikidata; se compara con la de Wikidata (regla medida del TODO 367)
+      if (el.enwiki) {
+        const j = await get(`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(el.enwiki)}&prop=wikitext&format=json&redirects=1`); await dormir(250);
+        const lin = (j?.parse?.wikitext?.['*'] || '').match(/\|\s*capacity\s*=\s*([^\n]*)/i)?.[1];
+        const num = lin ? Number(((lin.replace(/<ref[\s\S]*?(<\/ref>|\/>)/g, '').replace(/\{\{[^}]*\}\}/g, (m) => (/\d/.test(m) ? m.replace(/[^\d,.]/g, ' ') : '')).match(/\d[\d,.]*\d|\d/) || [''])[0]).replace(/[,.]/g, '')) : null;
+        if (num && num >= 100) out.delAnio.capacidadWikipedia = num;
+      }
+      // REGLA DE TOLERANCIA (TODO 367, medida sobre 73 club-años en Admin/HALLAZGOS-pipeline.md): si Wikidata y el artículo del estadio difieren menos de TOL_CAPACIDAD, se toma el del artículo
+      // (con ese corte, 76 % queda a menos de 3 % de lo revisado a mano y 90 % a menos de 10 %); si difieren más, o solo una fuente da el número, lo resuelve el agente (`--prompt capacidad`).
+      const wd = out.delAnio.capacidad; const wp = out.delAnio.capacidadWikipedia;
+      out.delAnio.capacidadDecidida = wd && wp && Math.abs(wd - wp) / Math.max(wd, wp) <= TOL_CAPACIDAD
+        ? { valor: wp, regla: `Wikidata (${wd}) y el artículo del estadio (${wp}) difieren menos de ${TOL_CAPACIDAD * 100} %`, fuente: `https://en.wikipedia.org/wiki/${encodeURIComponent(String(el.enwiki).replace(/ /g, '_'))}` }
+        : { agente: true, motivo: wd && wp ? `Wikidata (${wd}) y el artículo (${wp}) difieren más de ${TOL_CAPACIDAD * 100} %` : (wd || wp) ? 'una sola fuente da la capacidad' : 'ninguna fuente da la capacidad' };
       // SEGUNDA FUENTE: el artículo del club en Wikipedia (otra base que la de Wikidata) tiene que nombrar ese estadio; si no, es solo un candidato
       const titulo = e.sitelinks?.enwiki?.title;
       if (titulo) {
@@ -123,7 +137,7 @@ export async function datoPublico(nombre, { pais, anio, qid } = {}) {
 
 if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename)) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
-  let nombre = A.find((a, i) => !a.startsWith('--') && !['--pais', '--anio', '--qid', '--club'].includes(A[i - 1])); let pais = flag('--pais'); const anio = flag('--anio') ? Number(flag('--anio')) : undefined;
+  let nombre = A.find((a, i) => !a.startsWith('--') && !['--pais', '--anio', '--qid', '--club', '--prompt'].includes(A[i - 1])); let pais = flag('--pais'); const anio = flag('--anio') ? Number(flag('--anio')) : undefined;
   const club = flag('--club');
   if (club) {
     const ctx = vm.createContext({ window: {} }); vm.runInContext(readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8'), ctx);
@@ -131,6 +145,20 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename
     nombre = [c.displayName, c.name].filter(Boolean); pais = c.country;
   }
   if (!nombre) { console.error('uso: node tools/dato-publico.mjs "<club>" [--pais iso2] [--anio año] [--qid Q..] | --club <clubId> --anio <año> [--json]'); process.exit(1); }
+  // --prompt <estadio|capacidad|fundacion>: el PROMPT FIJO del agente que resuelve lo que las fuentes de la tool no resolvieron (TODO 367). Se pasa tal cual a un Agent (Sonnet, no Opus).
+  if (flag('--prompt')) {
+    const campo = flag('--prompt'); const quien = [].concat(nombre).join(' / ');
+    console.log(`Tarea: encontrar ${campo === 'estadio' ? `el estadio donde jugó de local ${quien} (${pais}) en ${anio}` : campo === 'capacidad' ? `la capacidad del estadio de ${quien} (${pais}) en ${anio}` : `el año de fundación de ${quien} (${pais})`}.
+Reglas, en este orden y sin saltarte ninguna:
+1. Buscá CORTO, como lo haría una persona: el nombre del club más una palabra (${campo === 'fundacion' ? '"founded"' : campo === 'capacidad' ? '"stadium capacity"' : '"stadium"'}). Nada de consultas largas. Hasta TRES reformulaciones; recién entonces "no encontrado".
+2. Abrí la ficha del club en Wikipedia (WebFetch) y leé el dato ahí; no te quedes con el resumen del buscador.
+3. Confirmalo en UNA fuente que no sea Wikipedia ni Wikidata: la web oficial del club, la federación o liga, o un informe anual. ${campo === 'capacidad' ? 'La capacidad cambia con los años: tiene que ser la de ' + anio + ' (o la más cercana, diciendo cuál año).' : ''}
+4. Si las dos fuentes no coinciden, devolvé las dos y no elijas.
+5. No inventes ni completes de memoria. Sin fuente leída en esta tarea, el valor es null.
+6. No escribas ningún archivo ni le preguntes nada al club: es un dato público.
+Devolvé solo este JSON: {"campo":"${campo}","valor":<valor o null>,"fuentes":[{"url":"...","dice":"lo que dice textual"}],"coinciden":true|false|null,"estado":"encontrado"|"no encontrado"|"fuentes en conflicto"}`);
+    process.exit(0);
+  }
   const r = await datoPublico(nombre, { pais, anio, qid: flag('--qid') });
   if (A.includes('--json')) console.log(JSON.stringify(r, null, 1));
   else if (r.error) console.log(`${[].concat(nombre).join(' / ')}: ${r.error}`);
@@ -138,6 +166,7 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename
     console.log(`${r.nombre} (${r.qid}) · ${r.fuente}`);
     console.log(`  fundación: ${r.fundacion ?? '(sin dato)'} · web: ${r.web ?? '(sin dato)'}`);
     for (const s of r.estadios) console.log(`  estadio: ${s.nombre} (${s.desde ?? '?'}-${s.hasta ?? 'hoy'}) · capacidad ${s.capacidades.map((c) => `${c.n}${c.en ? ` (${c.en})` : ''}`).join(', ') || '(sin dato)'}`);
-    if (r.delAnio) console.log(`  ${r.delAnio.anio}: ${r.delAnio.error || `${r.delAnio.estadio}, capacidad ${r.delAnio.capacidad ?? '(sin dato)'} · ${r.delAnio.confirmadoPorWikipedia ? `confirmado por ${r.delAnio.confirmadoPorWikipedia}` : 'SOLO Wikidata (el artículo de Wikipedia no lo nombra o no hay)'}`}`);
+    if (r.delAnio?.capacidadDecidida) console.log(`  capacidad: ${r.delAnio.capacidadDecidida.valor ? `${r.delAnio.capacidadDecidida.valor} (${r.delAnio.capacidadDecidida.regla})` : `AGENTE: ${r.delAnio.capacidadDecidida.motivo}  →  node tools/dato-publico.mjs --club <clubId> --anio ${r.delAnio.anio} --prompt capacidad`}`);
+    if (r.delAnio) console.log(`  ${r.delAnio.anio}: ${r.delAnio.error || `${r.delAnio.estadio}, capacidad ${r.delAnio.capacidad ?? '(sin dato)'} ·${r.delAnio.confirmadoPorWikipedia ? `confirmado por ${r.delAnio.confirmadoPorWikipedia}` : 'SOLO Wikidata (el artículo de Wikipedia no lo nombra o no hay)'}`}`);
   }
 }

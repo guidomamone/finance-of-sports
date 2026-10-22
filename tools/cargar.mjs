@@ -1260,6 +1260,11 @@ export function publicarCambios(snap, extra, escritos) {
   // encuentra o el informe no coincide con el archivo local, no escribe nada y el aviso `fuente-xhtml-sin-url` de audit.js queda.
   const urlXhtml = runNode('tools/fuente-url-xhtml.mjs', ['--todos', '--escribir']);
   if (/url escritas/.test(urlXhtml.out)) escritos.push('urls del registro oficial en fuentes XHTML (tools/fuente-url-xhtml.mjs)');
+  // la segunda fuente de la liga de lo recién cargado (regla «la liga de un año necesita dos fuentes»): sola, con la url y el título de otro año de la misma liga. No frena: una liga en grupos
+  // o sin año de referencia se queda con el aviso `liga-una-fuente` de audit.js y la resuelve una sesión (tools/segunda-fuente-liga.mjs).
+  const segFuente = runNode('tools/segunda-fuente-liga.mjs', ['--pendientes', '--escribir']);
+  const segN = (segFuente.out.match(/(\d+) guardada\(s\)/) || [])[1];
+  if (segN && Number(segN) > 0) escritos.push(`segunda fuente de ${segN} liga(s) (tools/segunda-fuente-liga.mjs --pendientes)`);
   // generadores + auditoría
   for (const g of GENERADORES.filter((g) => existsSync(resolve(ROOT, g)))) { // (to-do 298 x) la lista compartida con alta-club.mjs
     const r = runNode(g, []); if (r.code !== 0) throw new Error(`${g} falló (código ${r.code}): ${r.out.slice(-500)}`);

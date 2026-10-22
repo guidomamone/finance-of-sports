@@ -18,6 +18,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 947 — Se cierran 366 y 367: segunda fuente medida, regla de capacidad, agente con prompt fijo (2026-10-22) [366] [367]
+
+- **Corrige la Versión 946:** el estadio «confirmado» NO se escribe solo. Medido en 73 club-años, aun confirmado por el artículo del club coincide con el manual en 70 %: el resto es el mismo estadio con el nombre de otra época. Se quitó esa escritura de `estadio-sponsor.mjs` (y `contexto-manual-escribir.mjs`); el candidato se imprime con el aviso de verificar el nombre de ese año. `contexto-manual.json` queda con el formato normalizado, mismo contenido.
+- `tools/medir-segunda-fuente.mjs` (`fos medir segunda-fuente`): OpenStreetMap da capacidad en 5 % y Transfermarkt bloquea; descartados. Regla de capacidad en `tools/dato-publico.mjs` (`TOL_CAPACIDAD` = 5 %): Wikidata y el artículo del estadio difieren menos de 5 % → se toma el artículo; si no, agente. Tabla en `Admin/HALLAZGOS-pipeline.md`.
+- `dato-publico.mjs --prompt estadio|capacidad|fundacion`: prompt fijo del agente (Sonnet); sección «Datos públicos de un club» de `Admin/PIPELINE.md` reescrita con los cuatro pasos.
+- `segunda-fuente-liga.mjs --auto` y `--pendientes`: la url y el título salen de otro año de la misma liga; `publicarCambios()` lo corre sola al cerrar una carga (hoy los dos pendientes son ligas en grupos y siguen frenando en la compuerta).
+- 366 no fusiona `medir-*` ni los adaptadores de búsqueda: leídos `medir-cargar` y `medir-verificar`, comparten el patrón (antes, después, comparar) pero ningún código; fusionarlos no ahorra nada. `fos.mjs` es la puerta.
+
 ## Versión 946 — Puerta única de tools, archivar, silenciar, estadio confirmado que se escribe solo (2026-10-22) [366]
 
 - `tools/fos.mjs` + `tools/fos-comandos.json`: lista y atajo de las tools que se corren a mano (grupos `medir` y `buscar`); `--check` dice las sueltas. `renombrar-ids.mjs` (migración terminada) pasó a `tools/archivo/`.
