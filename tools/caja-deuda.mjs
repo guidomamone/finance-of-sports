@@ -1257,6 +1257,7 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
 //   περιόδου" 2.262.043,33 (Volos_notes_2022). PAOK no tiene una fila total (Αμοιβές προσωπικού por cuadro de función): sin dato.
 // ============================================================================
 const CACHE_JEV_P = resolve(ROOT, 'Generados', '_cache', 'jev-personal.jsonl');
+const PERSONAL_MIN_SOBRE_INGRESOS = 0.15; // plausibilidad del costo de personal contra los ingresos del año (TODO 351)
 function candidatosPersonal(md) {
   const txt = readFileSync(resolve(ROOT, md), 'utf8'); const L = txt.split('\n');
   const porLinea = new Map(filasDelMd(txt).map((f) => [f.linea, f]));
@@ -1324,6 +1325,11 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const valor = r6(x.fila.cifras[0] * x.factor); const ant = x.fila.cifras.length > 1 ? r6(x.fila.cifras[1] * x.factor) : null;
     const cita = `${x.fila.md.split('/').pop()} L${x.fila.linea} "${String(x.fila.etiqueta).slice(0, 50)}"`;
     if (valor === 0) { res.push({ ...base, valor: null, como: `${cita}: suma 0` }); continue; }
+    // COMPUERTA DE PLAUSIBILIDAD (TODO 351): el costo de personal de un club profesional es una parte grande de sus ingresos. Menos de PERSONAL_MIN_SOBRE_INGRESOS es casi seguro la nota de OTRA entidad
+    // (la filial del grupo sin los jugadores: Aston Villa Football Club Limited 2019-20, personal 8,3 M£ contra ingresos de 130 M£) o solo una parte (directores). El vecino no alcanza: la misma nota
+    // repetida en el documento siguiente coincide, y el valor es igual de equivocado.
+    const ingresosAnio = ((d.revenueLinesByYear || {})[anio] || []).reduce((s, l) => s + Math.max(0, l.amountNative || 0), 0);
+    if (ingresosAnio > 0 && valor / ingresosAnio < PERSONAL_MIN_SOBRE_INGRESOS) { res.push({ ...base, valor: null, como: `${cita} (${valor}): es ${(100 * valor / ingresosAnio).toFixed(1)} % de los ingresos (${r6(ingresosAnio)}); menos de ${PERSONAL_MIN_SOBRE_INGRESOS * 100} % no es el personal de un club profesional (¿nota de otra entidad del grupo o de una parte?). No se usa` }); continue; }
     const chequeos = [];
     const sig = porAnio.get(String(Number(anio) + 1)); if (sig?.fila && sig.factor && sig.fila.cifras.length > 1) chequeos.push(['documento siguiente', coincide(r6(sig.fila.cifras[1] * sig.factor), valor)]);
     const prevM = porAnio.get(String(Number(anio) - 1))?.a.m.staffCost; if (prevM != null && ant != null) chequeos.push(['año anterior', coincide(prevM, ant)]);
