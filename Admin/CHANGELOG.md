@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 955 — 373: mapa de código, contrato entre etapas y regla de no leer archivos grandes enteros (2026-10-22) [373]
+
+- `tools/mapa-codigo.mjs` (`node tools/fos.mjs mapa <archivo> [--buscar texto]`): funciones con su rango de líneas, regiones por banner, tramos adentro de las funciones largas, cabecera e imports. Probado en los 6 archivos de más de 70 KB: 237 rangos, todos parsean como función (3 dudosos marcados con «?»).
+- `Admin/CONTRATO-ETAPAS.md` (49 líneas): por etapa, qué lee, qué escribe, qué la deja vieja y con qué comando se rehace, más la cadena de huellas. Verificado contra el código en tres casos: la cadena de `--partir` de caja-deuda, `cargar.mjs --desde-verificacion` y `lote.mjs --rehacer`. La apertura de `PIPELINE.md` no servía como contrato; ahora la cita.
+- Regla en `CLAUDE.md`: ningún archivo de `tools/` de más de 50 KB se lee entero. Las skills de arranque y de onboarding citan el mapa y el contrato (commit aparte).
+- Medido (un modelo de lectura, no una sesión observada): el primer paso del 368 pasa de leer ≈ 537 KB a ≈ 43 KB (8 %). Hallazgos en `HALLAZGOS-pipeline.md`: `verificar()` es una sola función de 1623 líneas; dos comentarios dicen otra cosa que el código (para el 374).
+
 ## Versión 954 — TODO: puntos 373 a 377 para gastar menos tokens leyendo código (2026-10-22) [373 · 374 · 375 · 376 · 377]
 
 - Nuevos: 373 (regla de no leer archivos de más de 50 KB enteros, mapa de código, contrato entre etapas; la apertura de `PIPELINE.md` no sirve como contrato), 374 (comentarios de tools/ que no dicen nada: medir, criterio, limpiar solo comentarios), 375 (partir los archivos grandes en módulos, sin cambiar el comportamiento), 376 (aviso de `audit.js` para una tool nueva sin clasificar en `pipeline-tools.json`) y 377 (Alemania, Rusia, Ucrania y República Checa sin documentos con verificación).
