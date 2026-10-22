@@ -4,11 +4,35 @@
 // Cada caso: [nombre, entrada del hook, decisión esperada ('pasa', 'ask' o 'deny'), texto que tiene que contener el motivo (opcional), modo (opcional: 'varias-sesiones'; si no, 'una-sesion')].
 // Los casos de skills usan `Admin/propuestas/257-skills.md` commiteado en HEAD (el texto propuesto del primer caso 'ask').
 import { execFileSync } from 'node:child_process';
+import { mkdirSync, writeFileSync, readdirSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const raiz = resolve(import.meta.dirname, '..', '..');
 const skill = `${raiz}/.claude/skills/club-sourcing/SKILL.md`;
 const bash = (command) => ({ tool_name: 'Bash', tool_input: { command } });
+
+// medicion-antes-del-commit (TODO 371): el registro de cada caso es un archivo de prueba (gitignoreado) y los cambios del commit se simulan con
+// FOS_CAMBIADOS; la huella es la real de la tool, así que la prueba falla si la versión de la tool no es la que el caso espera.
+function casosMedicion() {
+  const dir = `${raiz}/Admin/mediciones/pipeline`;
+  mkdirSync(dir, { recursive: true });
+  const huella = (n) => execFileSync('git', ['hash-object', `tools/${n}`], { cwd: raiz, encoding: 'utf8' }).trim();
+  const registro = (nombre, lineas) => { const p = `${dir}/_prueba-hook-${nombre}.jsonl`; writeFileSync(p, lineas.map((l) => JSON.stringify(l)).join('\n') + (lineas.length ? '\n' : '')); return p; };
+  const linea = (resultado, despues) => ({ fecha: '2026-10-22', tools: { 'cargar.mjs': { antes: 'x', despues } }, lote: { nivel: 'completo' }, resultado });
+  const commit = (msg) => bash(`git commit -m "${msg}"`);
+  const env = (reg, cambiados = 'tools/cargar.mjs') => ({ FOS_REGISTRO: reg, FOS_CAMBIADOS: cambiados });
+  const h = huella('cargar.mjs');
+  return [
+    ['medición: tool del pipeline sin registro frena y dice el comando', commit('x [sin-audit]'), 'deny', 'node tools/medir-pipeline.mjs', 'una-sesion', env(registro('vacio', []))],
+    ['medición: con su línea idéntica pasa', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', env(registro('ok', [linea('idéntico', h)]))],
+    ['medición: diferencias explicadas pasa', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', env(registro('explicada', [linea('3 diferencias, todas explicadas', h)]))],
+    ['medición: diferencias sin explicar frena', commit('x [sin-audit]'), 'deny', 'cargar.mjs', 'una-sesion', env(registro('sin', [linea('3 diferencias sin explicar', h)]))],
+    ['medición: una tool editada después de medir frena', commit('x [sin-audit]'), 'deny', 'editada después de medir', 'una-sesion', env(registro('vieja', [linea('idéntico', 'a'.repeat(40))]))],
+    ['medición: [sin-medicion] lo saltea', commit('x [sin-audit] [sin-medicion]'), 'pasa', undefined, 'una-sesion', env(registro('vacio2', []))],
+    ['medición: una tool que no es del pipeline pasa', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', env(registro('vacio3', []), 'tools/fos.mjs,Admin/TODO.md')],
+    ['medición: un comando que no es commit pasa', bash('git status'), 'pasa', undefined, 'una-sesion', env(registro('vacio4', []))],
+  ];
+}
 const casos = [
   ['skill: texto que nadie propuso', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: 'Un texto que nadie propuso nunca en ningún archivo de propuestas.' } }, 'deny', 'no está en ningún archivo', 'varias-sesiones'],
   ['skill: texto propuesto y commiteado', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: '**Un club extinto o refundado vale** si sus balances siguen publicados: se bajan y se documentan como los de cualquier otro.' } }, 'ask', 'Admin/propuestas/', 'varias-sesiones'],
@@ -42,12 +66,13 @@ const casos = [
   ['una sesión: editar una skill con Edit pasa sin propuesta', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: 'Un texto que nadie propuso nunca en ningún archivo de propuestas.' } }, 'pasa'],
   ['una sesión: archivar una sesión pasa', { tool_name: 'mcp__ccd_session_mgmt__archive_session', tool_input: { session_id: 'local_x' } }, 'pasa'],
   ['varias: un Bash que escribe en skills se rechaza', bash("cat > .claude/skills/a/SKILL.md <<'EOF'\nhola\nEOF"), 'deny', 'Editá la skill', 'varias-sesiones'],
+  ...casosMedicion(),
 ];
 
 let mal = 0;
-for (const [nombre, entrada, esperado, texto, modo] of casos) {
+for (const [nombre, entrada, esperado, texto, modo, extra] of casos) {
   let salida = '';
-  try { salida = execFileSync('node', [`${raiz}/tools/hooks/pre-tool.mjs`], { input: JSON.stringify({ ...entrada, cwd: raiz }), encoding: 'utf8', env: { ...process.env, FOS_MODO: modo || 'una-sesion' } }); }
+  try { salida = execFileSync('node', [`${raiz}/tools/hooks/pre-tool.mjs`], { input: JSON.stringify({ ...entrada, cwd: raiz }), encoding: 'utf8', env: { ...process.env, FOS_MODO: modo || 'una-sesion', ...(extra || {}) } }); }
   catch (e) { salida = `ERROR ${e.message}`; }
   const j = salida && !salida.startsWith('ERROR') ? JSON.parse(salida).hookSpecificOutput : null;
   const real = j ? j.permissionDecision : 'pasa';
@@ -56,5 +81,6 @@ for (const [nombre, entrada, esperado, texto, modo] of casos) {
   if (!ok) mal++;
   console.log(`${ok ? 'ok ' : 'MAL'} ${nombre}: ${real}${ok ? '' : ` (esperado ${esperado}${texto ? ` con «${texto}»` : ''}): ${motivo.slice(0, 160)}`}`);
 }
+for (const f of readdirSync(`${raiz}/Admin/mediciones/pipeline`)) if (f.startsWith('_prueba-hook-')) unlinkSync(`${raiz}/Admin/mediciones/pipeline/${f}`);
 console.log(mal ? `\n${mal} caso(s) MAL` : `\n${casos.length} casos, todos ok`);
 process.exit(mal ? 1 : 0);

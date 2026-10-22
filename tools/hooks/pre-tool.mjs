@@ -39,6 +39,9 @@
 //   plan-en-worktree [varias]  (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
 //   subagente-con-regla     (deny) un Agent cuyo prompt no diga que Bash va «sin variables» (C-2).
 //   rsync-sin-no-links [varias]  (deny) `rsync -a` sin `--no-links` (C-6). `pdfs-con-ok` ahora también cubre `mv` sobre Clubes/ (ask).
+//   medicion-antes-del-commit  (deny) un `git commit` con una tool de tools/pipeline-tools.json sin una línea en Admin/registros/mediciones-pipeline.jsonl
+//                            con la huella de esa versión y resultado idéntico o explicado (TODO 371). `[sin-medicion]` en el mensaje lo saltea:
+//                            solo con el ok de Guido, igual que `[sin-audit]`. Va antes que audit-antes-del-commit.
 // Prueba con entradas simuladas (incluye los falsos positivos conocidos): node tools/hooks/probar-pre-tool.mjs
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
@@ -81,6 +84,35 @@ function auditAntesDelCommit(cmd) {
       + 'Arreglalo y volvé a commitear. Si el hallazgo no es de este cambio (ya venía de main), avisale a Guido; con su ok, '
       + 'agregá [sin-audit] al mensaje del commit.');
   }
+}
+
+// medicion-antes-del-commit (TODO 371): un commit que incluye una tool de tools/pipeline-tools.json necesita, en
+// Admin/registros/mediciones-pipeline.jsonl, una línea de `node tools/medir-pipeline.mjs` cuya huella de esa tool coincida con la que se commitea
+// (una tool editada después de medir no tiene medición) y cuyo resultado sea «idéntico» o «N diferencias, todas explicadas».
+// FOS_CAMBIADOS y FOS_REGISTRO (coma / ruta) reemplazan lo que se lee de git y el registro: los usa la prueba.
+function medicionAntesDelCommit(cmd) {
+  if (!GIT_SUB('commit').test(cmd) || cmd.includes('[sin-medicion]')) return;
+  let raiz;
+  try { raiz = git(['rev-parse', '--show-toplevel']).trim(); } catch { return; }
+  const tabla = join(raiz, 'tools', 'pipeline-tools.json');
+  if (!existsSync(tabla)) return; // otro repo
+  const tools = JSON.parse(readFileSync(tabla, 'utf8')).tools;
+  const cambiados = process.env.FOS_CAMBIADOS ? process.env.FOS_CAMBIADOS.split(',')
+    : [...git(['diff', 'HEAD', '--name-only']).split('\n'), ...git(['ls-files', '--others', '--exclude-standard']).split('\n')];
+  const tocadas = [...new Set(cambiados.filter(Boolean))].map((f) => f.match(/^tools\/([^/]+)$/)?.[1]).filter((n) => n && tools[n] && existsSync(join(raiz, 'tools', n)));
+  if (!tocadas.length) return;
+  const registro = process.env.FOS_REGISTRO || join(raiz, 'Admin', 'registros', 'mediciones-pipeline.jsonl');
+  const lineas = existsSync(registro) ? readFileSync(registro, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
+  const BUENO = /^(idéntico|\d+ diferencias, todas explicadas)$/;
+  const sinMedir = tocadas.filter((n) => {
+    const huella = git(['hash-object', `tools/${n}`]).trim();
+    return !lineas.some((l) => BUENO.test(l.resultado || '') && l.tools?.[n]?.despues === huella);
+  });
+  if (!sinMedir.length) return;
+  decidir('deny', `Commit frenado: ${sinMedir.join(', ')} ${sinMedir.length > 1 ? 'son tools del pipeline y no tienen' : 'es una tool del pipeline y no tiene'} una medición con su versión actual en Admin/registros/mediciones-pipeline.jsonl `
+    + '(una tool editada después de medir no cuenta). Ningún cambio al pipeline se commitea sin medir antes y después (CLAUDE.md).\n'
+    + 'Corré: node tools/medir-pipeline.mjs   (en segundo plano; elige medidor y lote por tools/pipeline-tools.json; si hay diferencias esperadas: --explicacion "cuáles y por qué").\n'
+    + 'Si es un caso de emergencia, con el ok de Guido agregá [sin-medicion] al mensaje del commit.');
 }
 
 // Un Bash que escribe: sed/perl en el lugar, redirección, tee, mv, cp, rm, o un intérprete que puede escribir cualquier cosa.
@@ -326,4 +358,4 @@ if (herramienta === 'Bash') comandoQueEdita(cmd);
 pushConOk(cmd);
 if (VARIAS) docsDeLaPrincipal(cmd);
 pdfsConOk(cmd);
-if (herramienta === 'Bash') auditAntesDelCommit(cmd);
+if (herramienta === 'Bash') { medicionAntesDelCommit(cmd); auditAntesDelCommit(cmd); }
