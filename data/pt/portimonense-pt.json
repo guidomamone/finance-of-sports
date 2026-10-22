@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "portimonense-pt",
@@ -55,7 +55,7 @@
       "revenue": [
         {"label":"Vendas","category":"commercial","subcategory":"sponsorship_commercial","amount":0.05209,"disclosure":"aggregated"},
         {"label":"Prestações de Serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":4.387657,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.001783,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.001783,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.895791,"disclosure":"aggregated"},
         {
           "label": "Rendimentos e ganhos em investimentos não financeiros",
@@ -197,7 +197,7 @@
       "revenue": [
         {"label":"Vendas","category":"commercial","subcategory":"sponsorship_commercial","amount":0.017622,"disclosure":"aggregated"},
         {"label":"Prestações de Serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":4.442864,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.006211,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.006211,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.346756,"disclosure":"aggregated"},
         {
           "label": "Rendimentos e ganhos nos restantes ativos financeiros",
@@ -336,7 +336,7 @@
       "revenue": [
         {"label":"Vendas","category":"commercial","subcategory":"sponsorship_commercial","amount":0.029731,"disclosure":"aggregated"},
         {"label":"Prestações de Serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":4.94831,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.000421,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.000421,"disclosure":"aggregated"},
         {"label":"Trabalhos para a própria entidade","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.844684,"disclosure":"aggregated"},
         {"label":"Descontos de pronto pagamento","category":"other_revenue","subcategory":"other_income","amount":0.000016,"disclosure":"aggregated"},
@@ -482,7 +482,7 @@
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
         {"label":"Vendas","category":"commercial","subcategory":"sponsorship_commercial","amount":0.078818,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.523798,"disclosure":"aggregated"},
         {"label":"Descontos de pronto pagamento","category":"other_revenue","subcategory":"other_income","amount":0.000033,"disclosure":"aggregated"},
         {

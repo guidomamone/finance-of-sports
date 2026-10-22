@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "uniaodeleiria-pt",
@@ -41,7 +41,7 @@
       "revenue": [
         {"label":"Vendas de mercadorias","category":"commercial","subcategory":"sponsorship_commercial","amount":0.041386,"disclosure":"aggregated"},
         {"label":"Prestação de serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":0.555973,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.005488,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.005488,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"other_revenue","subcategory":"other_income","amount":0.010666,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -106,12 +106,12 @@
         {"label":"Prestação de serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":1.546109,"disclosure":"aggregated"},
         {
           "label": "Subsídios do estado e outros entes públicas",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.013237,
           "disclosure": "aggregated"
         },
-        {"label":"Subsídios de outras entidades","category":"other_revenue","subcategory":"other_income","amount":0.011565,"disclosure":"aggregated"},
+        {"label":"Subsídios de outras entidades","category":"grants_donations","subcategory":"grants_donations","amount":0.011565,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.00234,"disclosure":"aggregated"},
         {"label":"Outros rendimentos e ganhos","category":"other_revenue","subcategory":"other_income","amount":0.025335,"disclosure":"aggregated"}
       ],

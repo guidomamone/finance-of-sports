@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "ferrocarriloeste-ar",
@@ -297,7 +297,7 @@
           "amount": 70.979941,
           "disclosure": "detailed"
         },
-        {"label":"Subsidios Recibidos","category":"other_revenue","subcategory":"other_income","amount":1.069756,"disclosure":"detailed"},
+        {"label":"Subsidios Recibidos","category":"grants_donations","subcategory":"grants_donations","amount":1.069756,"disclosure":"detailed"},
         {
           "label": "Recupero Decreto 1212/03 (ver nota de cabecera — duda genuina)",
           "category": "other_revenue",
@@ -513,7 +513,7 @@
           "amount": 138.616988,
           "disclosure": "aggregated"
         },
-        {"label":"Subsidios Recibidos","category":"other_revenue","subcategory":"other_income","amount":5.1795,"disclosure":"aggregated"},
+        {"label":"Subsidios Recibidos","category":"grants_donations","subcategory":"grants_donations","amount":5.1795,"disclosure":"aggregated"},
         {"label":"Recupero Decreto 510/23","category":"other_revenue","subcategory":"other_income","amount":1446.974563,"disclosure":"aggregated"}
       ],
       "expenses": [

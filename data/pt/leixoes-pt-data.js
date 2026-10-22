@@ -3,7 +3,7 @@ const leixoesPtRevenueLinesByYear = {
   2023: [
     {"rawLabel":"Venda de Bens","normalizedCategory":"sponsorship_commercial","amountNative":0.001367,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestação de Serviços","normalizedCategory":"lump_football_operations","amountNative":0.785473,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.225684,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.225684,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos e Ganhos em Investimento","normalizedCategory":"other_income","amountNative":0.001597,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros","normalizedCategory":"other_income","amountNative":0.000545,"disclosureLevel":"aggregated"},
     {"rawLabel":"Correcções relativas a períodos anteriores","normalizedCategory":"other_income","amountNative":0.002021,"disclosureLevel":"aggregated"},
@@ -16,7 +16,7 @@ const leixoesPtRevenueLinesByYear = {
   2024: [
     {"rawLabel":"Venda de Bens","normalizedCategory":"sponsorship_commercial","amountNative":0.001898,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestação de Serviços","normalizedCategory":"lump_football_operations","amountNative":1.001111,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.276225,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.276225,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos e Ganhos em Investimento","normalizedCategory":"other_income","amountNative":0.060024,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros","normalizedCategory":"other_income","amountNative":0.042252,"disclosureLevel":"aggregated"},
     {"rawLabel":"Correcções relativas a períodos anteriores","normalizedCategory":"other_income","amountNative":0.443361,"disclosureLevel":"aggregated"},
@@ -28,7 +28,7 @@ const leixoesPtRevenueLinesByYear = {
   2025: [
     {"rawLabel":"Venda de Bens","normalizedCategory":"sponsorship_commercial","amountNative":0.001471,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestação de Serviços","normalizedCategory":"lump_football_operations","amountNative":0.776457,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.696819,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.696819,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos e Ganhos em Investimento","normalizedCategory":"other_income","amountNative":0.0204,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros","normalizedCategory":"other_income","amountNative":0.016348,"disclosureLevel":"aggregated"},
     {"rawLabel":"Correcções relativas a períodos anteriores","normalizedCategory":"other_income","amountNative":0.069045,"disclosureLevel":"aggregated"},

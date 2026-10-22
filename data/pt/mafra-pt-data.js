@@ -1,7 +1,7 @@
 // GENERADO desde data/pt/mafra-pt.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const mafraPtRevenueLinesByYear = {
   2024: [
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.259913,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.259913,"disclosureLevel":"aggregated"},
     {"rawLabel":"Variação nos inventários da produção","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Trabalhos para a própria entidade","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos Suplementares","normalizedCategory":"other_income","amountNative":0.000272,"disclosureLevel":"aggregated"},

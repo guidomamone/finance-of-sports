@@ -10,7 +10,7 @@ const carlisleunitedGbRevenueLinesByYear = {
     {"rawLabel":"Donations","normalizedCategory":"other_income","amountNative":0.045671,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other operating income","normalizedCategory":"other_income","amountNative":0.13157,"disclosureLevel":"aggregated"},
     {"rawLabel":"Net rents receivable","normalizedCategory":"other_income","amountNative":0.029103,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Government grants receivable","normalizedCategory":"other_income","amountNative":0.028378,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Government grants receivable","normalizedCategory":"grants_donations","amountNative":0.028378,"disclosureLevel":"aggregated"},
     {"rawLabel":"Insurance claims receivable","normalizedCategory":"other_income","amountNative":0.01069,"disclosureLevel":"aggregated"},
   ],
 };

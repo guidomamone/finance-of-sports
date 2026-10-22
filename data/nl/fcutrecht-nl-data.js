@@ -7,7 +7,7 @@ const fcutrechtNlRevenueLinesByYear = {
     {"rawLabel":"Prijzengeld","normalizedCategory":"competition_bonus","amountNative":2.121984,"disclosureLevel":"aggregated"},
     {"rawLabel":"Horeca","normalizedCategory":"stadium_other","amountNative":4.397454,"disclosureLevel":"aggregated"},
     {"rawLabel":"Merchandise","normalizedCategory":"sponsorship_commercial","amountNative":0.730759,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies en giften","normalizedCategory":"other_income","amountNative":1.728019,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies en giften","normalizedCategory":"grants_donations","amountNative":1.728019,"disclosureLevel":"aggregated"},
     {"rawLabel":"Overige baten","normalizedCategory":"other_income","amountNative":2.133908,"disclosureLevel":"aggregated"},
     {"rawLabel":"Resultaat vergoedingssommen","normalizedCategory":"player_sales","amountNative":6.187523,"disclosureLevel":"aggregated"},
   ],

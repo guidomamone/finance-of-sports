@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "dinamozagreb-hr",
@@ -277,19 +277,19 @@
         },
         {
           "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.055,
           "disclosure": "aggregated"
         },
         {
           "label": "Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 1.799225,
           "disclosure": "aggregated"
         },
-        {"label":"Donacije nepovezanih strana","category":"other_revenue","subcategory":"other_income","amount":0.318535,"disclosure":"aggregated"},
+        {"label":"Donacije nepovezanih strana","category":"grants_donations","subcategory":"grants_donations","amount":0.318535,"disclosure":"aggregated"},
         {"label":"Bonovi za ručak","category":"other_revenue","subcategory":"other_income","amount":0.16937,"disclosure":"aggregated"},
         {"label":"Refundacije","category":"other_revenue","subcategory":"other_income","amount":0.123366,"disclosure":"aggregated"},
         {"label":"Dohodak u naravi","category":"other_revenue","subcategory":"other_income","amount":0.021267,"disclosure":"aggregated"},

@@ -5,7 +5,7 @@ const belenensesPtRevenueLinesByYear = {
   ],
   2025: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.536756,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.222067,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.222067,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros não especificados","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
   ],
 };

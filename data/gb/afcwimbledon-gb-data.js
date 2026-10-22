@@ -8,7 +8,7 @@ const afcwimbledonGbRevenueLinesByYear = {
     {"rawLabel":"Donations and sundry","normalizedCategory":"other_income","amountNative":0.446091,"disclosureLevel":"aggregated"},
     {"rawLabel":"Youth development income","normalizedCategory":"youth_football","amountNative":0.546023,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gain on disposal of players' registrations","normalizedCategory":"player_sales","amountNative":0.972266,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Grants receivable","normalizedCategory":"other_income","amountNative":0.025,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Grants receivable","normalizedCategory":"grants_donations","amountNative":0.025,"disclosureLevel":"aggregated"},
     {"rawLabel":"Insurance claim","normalizedCategory":"other_income","amountNative":0.960556,"disclosureLevel":"aggregated"},
     {"rawLabel":"Flood Donations","normalizedCategory":"other_income","amountNative":0.146424,"disclosureLevel":"aggregated"},
   ],

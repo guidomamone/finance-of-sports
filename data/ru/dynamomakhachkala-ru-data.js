@@ -2,15 +2,15 @@
 const dynamomakhachkalaRuRevenueLinesByYear = {
   2021: [
     {"rawLabel":"Прочие доходы (2340)","normalizedCategory":"other_income","amountNative":0.5,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"other_income","amountNative":59.077,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"grants_donations","amountNative":59.077,"disclosureLevel":"aggregated"},
   ],
   2022: [
-    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"other_income","amountNative":270,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"grants_donations","amountNative":270,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Выручка (2110)","normalizedCategory":"lump_football_operations","amountNative":86.821,"disclosureLevel":"aggregated"},
     {"rawLabel":"Прочие доходы (2340)","normalizedCategory":"other_income","amountNative":44.596,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"other_income","amountNative":51.845,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"grants_donations","amountNative":51.845,"disclosureLevel":"aggregated"},
     {"rawLabel":"Прочие поступления (6250, форма 6)","normalizedCategory":"other_income","amountNative":300,"disclosureLevel":"aggregated"},
   ],
   2024: [
@@ -19,7 +19,7 @@ const dynamomakhachkalaRuRevenueLinesByYear = {
     {"rawLabel":"Призовые ФНЛ, РФС","normalizedCategory":"competition_bonus","amountNative":58.079,"disclosureLevel":"detailed"},
     {"rawLabel":"Курсовые разницы","normalizedCategory":"other_income","amountNative":9.383,"disclosureLevel":"detailed"},
     {"rawLabel":"Прочее","normalizedCategory":"other_income","amountNative":1.281,"disclosureLevel":"detailed"},
-    {"rawLabel":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","normalizedCategory":"other_income","amountNative":344.622,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","normalizedCategory":"grants_donations","amountNative":344.622,"disclosureLevel":"aggregated"},
     {"rawLabel":"Прочие поступления (6250, форма 6)","normalizedCategory":"other_income","amountNative":500,"disclosureLevel":"aggregated"},
   ],
   2025: [
@@ -28,8 +28,8 @@ const dynamomakhachkalaRuRevenueLinesByYear = {
     {"rawLabel":"Призовые ФНЛ, РФС","normalizedCategory":"competition_bonus","amountNative":88.08,"disclosureLevel":"detailed"},
     {"rawLabel":"Курсовые разницы","normalizedCategory":"other_income","amountNative":19.969,"disclosureLevel":"detailed"},
     {"rawLabel":"Прочее","normalizedCategory":"other_income","amountNative":0.18,"disclosureLevel":"detailed"},
-    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"other_income","amountNative":4.365,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","normalizedCategory":"other_income","amountNative":576,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"grants_donations","amountNative":4.365,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","normalizedCategory":"grants_donations","amountNative":576,"disclosureLevel":"aggregated"},
     {"rawLabel":"Прочие поступления (6250, форма 6)","normalizedCategory":"other_income","amountNative":518.439,"disclosureLevel":"aggregated"},
   ],
 };

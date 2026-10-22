@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "alverca-pt",
@@ -54,7 +54,7 @@
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
         {"label":"Vendas e serviços prestados","category":"undisclosed","subcategory":"lump_football_operations","amount":0.09357,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.037669,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.037669,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"other_revenue","subcategory":"other_income","amount":0.02106,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -93,7 +93,7 @@
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
         {"label":"Vendas e serviços prestados","category":"undisclosed","subcategory":"lump_football_operations","amount":0.063878,"disclosure":"aggregated"},
-        {"label":"Subsídios a exploração","category":"other_revenue","subcategory":"other_income","amount":0.054882,"disclosure":"aggregated"},
+        {"label":"Subsídios a exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.054882,"disclosure":"aggregated"},
         {"label":"Descontos de pronto pagamento obtidos","category":"other_revenue","subcategory":"other_income","amount":0.000011,"disclosure":"aggregated"},
         {
           "label": "Alienações diretas de inscrição desportiva",
@@ -147,7 +147,7 @@
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
         {"label":"Vendas e serviços prestados","category":"undisclosed","subcategory":"lump_football_operations","amount":0.069051,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.063231,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.063231,"disclosure":"aggregated"},
         {"label":"Rendimentos Suplementares","category":"other_revenue","subcategory":"other_income","amount":0.024154,"disclosure":"aggregated"},
         {"label":"Descontos de pronto pagamento obtidos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
         {
@@ -200,7 +200,7 @@
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
         {"label":"Vendas e serviços prestados","category":"undisclosed","subcategory":"lump_football_operations","amount":0.637398,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.386886,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.386886,"disclosure":"aggregated"},
         {"label":"Indemnização FIFA - AL Wasl","category":"player_transfers","subcategory":"player_sales","amount":0.25383,"disclosure":"aggregated"},
         {
           "label": "Alienações direitos de inscrição desportiva",

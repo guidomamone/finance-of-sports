@@ -78,7 +78,7 @@ window.RANKINGS["no-1divisjon"] = {
     clubs: [
       { id:"sarpsborg08-no", revenue:4.8, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2012",
-        mix:[["Cuotas Sociales",0.066],["Comercial / Sponsors",2.13],["Estadio",0.58],["Televisión",0.472],["Venta de Jugadores",0.43],["Otros ingresos",1.121]] },
+        mix:[["Cuotas Sociales",0.066],["Comercial / Sponsors",2.13],["Estadio",0.58],["Televisión",0.472],["Venta de Jugadores",0.43],["Subsidios y donaciones",0.142],["Otros ingresos",0.979]] },
     ],
   },
   2008: {
@@ -87,7 +87,7 @@ window.RANKINGS["no-1divisjon"] = {
     clubs: [
       { id:"sarpsborg08-no", revenue:2.133, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2008",
-        mix:[["Cuotas Sociales",0.008],["Comercial / Sponsors",1.145],["Estadio",0.153],["Televisión",0.223],["Venta de Jugadores",0.348],["Otros ingresos",0.255]] },
+        mix:[["Cuotas Sociales",0.008],["Comercial / Sponsors",1.145],["Estadio",0.153],["Televisión",0.223],["Venta de Jugadores",0.348],["Subsidios y donaciones",0.032],["Otros ingresos",0.223]] },
     ],
   },
 };

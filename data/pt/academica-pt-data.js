@@ -3,7 +3,7 @@ const academicaPtRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Bilhetes de Jogo","normalizedCategory":"matchday_competition","amountNative":0.039359,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestações de Serviços","normalizedCategory":"other_income","amountNative":0.016609,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidios à exploração","normalizedCategory":"other_income","amountNative":0.23642,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidios à exploração","normalizedCategory":"grants_donations","amountNative":0.23642,"disclosureLevel":"aggregated"},
     {"rawLabel":"Publicidade","normalizedCategory":"sponsorship_commercial","amountNative":0.245723,"disclosureLevel":"aggregated"},
     {"rawLabel":"Direitos Televisivos","normalizedCategory":"broadcasting","amountNative":0.6,"disclosureLevel":"aggregated"},
     {"rawLabel":"Alienações e Direitos desportivos","normalizedCategory":"player_sales","amountNative":0.07,"disclosureLevel":"aggregated"},
@@ -12,7 +12,7 @@ const academicaPtRevenueLinesByYear = {
   2023: [
     {"rawLabel":"Bilhetes de logo","normalizedCategory":"matchday_competition","amountNative":0.01159,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestações de Serviços","normalizedCategory":"other_income","amountNative":0.00085,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.059183,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.059183,"disclosureLevel":"aggregated"},
     {"rawLabel":"Publicidade","normalizedCategory":"sponsorship_commercial","amountNative":0.090715,"disclosureLevel":"aggregated"},
     {"rawLabel":"Alienações e Direitos desportivos","normalizedCategory":"player_sales","amountNative":0.035745,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros","normalizedCategory":"other_income","amountNative":0.538593,"disclosureLevel":"aggregated"},
@@ -20,7 +20,7 @@ const academicaPtRevenueLinesByYear = {
   2024: [
     {"rawLabel":"Bilhetes de Jogo","normalizedCategory":"matchday_competition","amountNative":0.039085,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestações de Serviços","normalizedCategory":"other_income","amountNative":0.002505,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidios à exploração","normalizedCategory":"other_income","amountNative":0.097842,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidios à exploração","normalizedCategory":"grants_donations","amountNative":0.097842,"disclosureLevel":"aggregated"},
     {"rawLabel":"Publicidade","normalizedCategory":"sponsorship_commercial","amountNative":0.220206,"disclosureLevel":"aggregated"},
     {"rawLabel":"Alienações e Direitos desportivos","normalizedCategory":"player_sales","amountNative":0.0204,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros","normalizedCategory":"other_income","amountNative":0.073596,"disclosureLevel":"aggregated"},

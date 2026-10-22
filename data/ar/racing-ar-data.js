@@ -147,7 +147,7 @@ const racingArRevenueLinesByYear = {
     {"rawLabel":"Cobranza de ingresos por Socios y Abonados","normalizedCategory":"member_dues","amountNative":404.494},
     {"rawLabel":"Cobranza de Otros Ingresos Ordinarios","normalizedCategory":"other_income","amountNative":85.7},
     {"rawLabel":"Cobranza de Rentas Financieras Ordinarias","normalizedCategory":"other_income","amountNative":91.96},
-    {"rawLabel":"Cobro de Subv., Donaciones y Legados","normalizedCategory":"other_income","amountNative":3.4},
+    {"rawLabel":"Cobro de Subv., Donaciones y Legados","normalizedCategory":"grants_donations","amountNative":3.4},
     {"rawLabel":"Otros Cobros de Ing. Fros","normalizedCategory":"other_income","amountNative":72},
   ],
   2020: [

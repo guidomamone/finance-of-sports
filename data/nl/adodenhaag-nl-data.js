@@ -7,7 +7,7 @@ const adodenhaagNlRevenueLinesByYear = {
     {"rawLabel":"Prijzengeld","normalizedCategory":"competition_bonus","amountNative":0.377553,"disclosureLevel":"aggregated"},
     {"rawLabel":"Horeca","normalizedCategory":"stadium_other","amountNative":2.287066,"disclosureLevel":"aggregated"},
     {"rawLabel":"Merchandise","normalizedCategory":"sponsorship_commercial","amountNative":0.534193,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies en giften","normalizedCategory":"other_income","amountNative":0.048882,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies en giften","normalizedCategory":"grants_donations","amountNative":0.048882,"disclosureLevel":"aggregated"},
     {"rawLabel":"Overige baten","normalizedCategory":"other_income","amountNative":1.85163,"disclosureLevel":"aggregated"},
     {"rawLabel":"Resultaat vergoedingssommen","normalizedCategory":"player_sales","amountNative":1.098265,"disclosureLevel":"aggregated"},
   ],

@@ -22,7 +22,7 @@ window.RANKINGS["es-laliga"] = {
         mix:[["Comercial / Sponsors",17.201],["Estadio",41.942],["Televisión",85.224],["Premios por competencias",45.688],["Otros ingresos",10.964]] },
       { id:"girona-es", revenue:168.712, reportType:"official_balance_sheet",
         sourceId:"girona-es-informe-auditoria-cuentas-anuales-2024-25",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",129.998],["Otros ingresos",38.714]] },
+        mix:[["Subsidios y donaciones",0.687],["Fútbol profesional (sin desglosar por la fuente)",129.998],["Otros ingresos",38.027]] },
       { id:"sevillafc-es", revenue:143.664, reportType:"official_balance_sheet",
         sourceId:"sevillafc-es-cuentas-anuales-2024-25",
         mix:[["Comercial / Sponsors",33.836],["Estadio",16.837],["Televisión",75.9],["Premios por competencias",8.431],["Otros ingresos",8.66]] },
@@ -70,7 +70,7 @@ window.RANKINGS["es-laliga"] = {
     clubs: [
       { id:"girona-es", revenue:70.133, reportType:"official_balance_sheet",
         sourceId:"girona-es-cuentas-anuales-2022-2023",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",65.028],["Otros ingresos",5.105]] },
+        mix:[["Subsidios y donaciones",0.353],["Fútbol profesional (sin desglosar por la fuente)",65.028],["Otros ingresos",4.752]] },
     ],
   },
   2022: {

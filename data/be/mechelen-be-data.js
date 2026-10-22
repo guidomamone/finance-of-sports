@@ -2,7 +2,7 @@
 const mechelenBeRevenueLinesByYear = {
   2025: [
     {"rawLabel":"Omzet","normalizedCategory":"lump_football_operations","amountNative":20.890688,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen","normalizedCategory":"other_income","amountNative":4.059643,"disclosureLevel":"detailed"},
+    {"rawLabel":"Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen","normalizedCategory":"grants_donations","amountNative":4.059643,"disclosureLevel":"detailed"},
     {"rawLabel":"Andere bedrijfsopbrengsten — resto sin desglosar","normalizedCategory":"other_income","amountNative":8.5361,"disclosureLevel":"aggregated"},
   ],
 };

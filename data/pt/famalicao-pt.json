@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "famalicao-pt",
@@ -83,7 +83,7 @@
         {"label":"Apostas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.204446,"disclosure":"aggregated"},
         {"label":"Outras receitas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.055525,"disclosure":"aggregated"},
         {"label":"Descontos e Abatimentos","category":"other_revenue","subcategory":"other_income","amount":-0.011405,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.188401,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.188401,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"player_transfers","subcategory":"player_sales","amount":0.024638,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -161,7 +161,7 @@
         {"label":"Apostas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.21018,"disclosure":"aggregated"},
         {"label":"Outras receitas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.139509,"disclosure":"aggregated"},
         {"label":"Descontos e Abatimentos","category":"other_revenue","subcategory":"other_income","amount":-0.001368,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.193183,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.193183,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"player_transfers","subcategory":"player_sales","amount":0.158937,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -237,7 +237,7 @@
         {"label":"Direitos Clube","category":"media_rights","subcategory":"broadcasting","amount":4.3,"disclosure":"aggregated"},
         {"label":"Apostas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.303692,"disclosure":"aggregated"},
         {"label":"Outras receitas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.145711,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.166582,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.166582,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"player_transfers","subcategory":"player_sales","amount":8.734021,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -334,7 +334,7 @@
         {"label":"Direitos Clube","category":"media_rights","subcategory":"broadcasting","amount":3.6,"disclosure":"aggregated"},
         {"label":"Apostas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.347894,"disclosure":"aggregated"},
         {"label":"Outras receitas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.460113,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.167736,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.167736,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"player_transfers","subcategory":"player_sales","amount":5.141805,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -425,7 +425,7 @@
         {"label":"Direitos Clube","category":"media_rights","subcategory":"broadcasting","amount":3.6,"disclosure":"aggregated"},
         {"label":"Apostas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.310178,"disclosure":"aggregated"},
         {"label":"Outras receitas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.325847,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.229588,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.229588,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"player_transfers","subcategory":"player_sales","amount":11.345648,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -516,7 +516,7 @@
         {"label":"Direitos Clube","category":"media_rights","subcategory":"broadcasting","amount":3.6,"disclosure":"aggregated"},
         {"label":"Apostas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.366873,"disclosure":"aggregated"},
         {"label":"Outras receitas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.414502,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.338566,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.338566,"disclosure":"aggregated"},
         {
           "label": "Ganhos/perdas imputados de subsidiárias, associadas e empre",
           "category": "other_revenue",
@@ -614,7 +614,7 @@
         {"label":"Direitos Clube","category":"media_rights","subcategory":"broadcasting","amount":4,"disclosure":"aggregated"},
         {"label":"Apostas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.391934,"disclosure":"aggregated"},
         {"label":"Outras receitas desportivas","category":"other_revenue","subcategory":"other_income","amount":0.925115,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.605789,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.605789,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"player_transfers","subcategory":"player_sales","amount":16.44286,"disclosure":"aggregated"},
         {
           "label": "Ganhos/perdas imputados de subsidiárias, associadas e empresas",

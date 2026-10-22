@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "genoa-it",
@@ -64,7 +64,13 @@
           "disclosure": "aggregated"
         },
         {"label":"c) abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":1.274388,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":4.918278,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 4.918278,
+          "disclosure": "aggregated"
+        },
         {
           "label": "- Paracadute retrocesse ex art. 18, comma 3, dello Statuto LNPA",
           "category": "media_rights",
@@ -289,7 +295,7 @@
         {"label":"Altre gare","category":"matchday","subcategory":"matchday_competition","amount":0.113135,"disclosure":"aggregated"},
         {"label":"Gare coppa italia","category":"matchday","subcategory":"matchday_competition","amount":0.177797,"disclosure":"aggregated"},
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":3.721714,"disclosure":"aggregated"},
-        {"label":"contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":4.730058,"disclosure":"aggregated"},
+        {"label":"contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":4.730058,"disclosure":"aggregated"},
         {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":2.635423,"disclosure":"aggregated"},
         {"label":"Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.842,"disclosure":"aggregated"},
         {
@@ -499,7 +505,7 @@
       "revenue": [
         {"label":"Gare campionato","category":"matchday","subcategory":"matchday_competition","amount":0.717269,"disclosure":"aggregated"},
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":2.447476,"disclosure":"aggregated"},
-        {"label":"Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":3.434014,"disclosure":"aggregated"},
+        {"label":"Contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":3.434014,"disclosure":"aggregated"},
         {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":0.822569,"disclosure":"aggregated"},
         {"label":"Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":1.55,"disclosure":"aggregated"},
         {"label":"Proventi commerciali e royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.05232,"disclosure":"aggregated"},
@@ -701,7 +707,7 @@
         {"label":"Gare coppa italia","category":"matchday","subcategory":"matchday_competition","amount":0.686154,"disclosure":"aggregated"},
         {"label":"Altre gare","category":"matchday","subcategory":"matchday_competition","amount":0.02,"disclosure":"aggregated"},
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":5.951414,"disclosure":"aggregated"},
-        {"label":"Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":3.690013,"disclosure":"aggregated"},
+        {"label":"Contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":3.690013,"disclosure":"aggregated"},
         {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":1.589868,"disclosure":"aggregated"},
         {"label":"Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":3.2,"disclosure":"aggregated"},
         {

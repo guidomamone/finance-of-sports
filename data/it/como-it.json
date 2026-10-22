@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "como-it",
@@ -43,7 +43,13 @@
         {"label":"Percentuale squadra ospite","category":"matchday","subcategory":"matchday_competition","amount":0.071,"disclosure":"aggregated"},
         {"label":"Tornei e amichevoli","category":"matchday","subcategory":"matchday_competition","amount":0.028,"disclosure":"aggregated"},
         {"label":"b) abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":0.552687,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":7.356392,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 7.356392,
+          "disclosure": "aggregated"
+        },
         {"label":"b) sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":0.265358,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.2871,"disclosure":"aggregated"},
         {"label":"d) proventi commerciali e royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.1,"disclosure":"aggregated"},
@@ -259,7 +265,13 @@
         {"label":"Percentuale squadra ospite","category":"matchday","subcategory":"matchday_competition","amount":0.07,"disclosure":"aggregated"},
         {"label":"Tornei e amichevoli","category":"matchday","subcategory":"matchday_competition","amount":0.004,"disclosure":"aggregated"},
         {"label":"b) abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":2.962219,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":4.671024,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 4.671024,
+          "disclosure": "aggregated"
+        },
         {
           "label": "e) proventi da cessione diritti televisivi",
           "category": "media_rights",

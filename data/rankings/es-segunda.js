@@ -13,7 +13,7 @@ window.RANKINGS["es-segunda"] = {
         mix:[["Comercial / Sponsors",3.549],["Estadio",3.11],["Televisión",7.451],["Premios por competencias",2.339],["Venta de Jugadores",5.489],["Otras actividades (educación y otros deportes)",0.06],["Otros ingresos",2.089]] },
       { id:"levante-es", revenue:19.078, reportType:"official_balance_sheet",
         sourceId:"levante-es-cuentas-anuales-consolidadas-2024-25",
-        mix:[["Comercial / Sponsors",4.505],["Estadio",3.407],["Televisión",7.733],["Premios por competencias",2.035],["Otros ingresos",1.399]] },
+        mix:[["Comercial / Sponsors",4.505],["Estadio",3.407],["Televisión",7.733],["Premios por competencias",2.035],["Subsidios y donaciones",1.19],["Otros ingresos",0.209]] },
     ],
   },
   2024: {
@@ -34,7 +34,7 @@ window.RANKINGS["es-segunda"] = {
     clubs: [
       { id:"girona-es", revenue:17.297, reportType:"official_balance_sheet",
         sourceId:"girona-es-cuentas-anuales-2021-2022",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",14.104],["Otros ingresos",3.193]] },
+        mix:[["Subsidios y donaciones",0.613],["Fútbol profesional (sin desglosar por la fuente)",14.104],["Otros ingresos",2.58]] },
     ],
   },
   2021: {
@@ -43,7 +43,7 @@ window.RANKINGS["es-segunda"] = {
     clubs: [
       { id:"girona-es", revenue:15.584, reportType:"official_balance_sheet",
         sourceId:"girona-es-cuentas-anuales-2020-2021",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",12.739],["Otros ingresos",2.845]] },
+        mix:[["Subsidios y donaciones",0.146],["Fútbol profesional (sin desglosar por la fuente)",12.739],["Otros ingresos",2.699]] },
     ],
   },
   2020: {
@@ -52,7 +52,7 @@ window.RANKINGS["es-segunda"] = {
     clubs: [
       { id:"girona-es", revenue:30.13, reportType:"official_balance_sheet",
         sourceId:"girona-es-cuentas-anuales-2019-20",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",16.795],["Otros ingresos",13.335]] },
+        mix:[["Subsidios y donaciones",0.157],["Fútbol profesional (sin desglosar por la fuente)",16.795],["Otros ingresos",13.178]] },
     ],
   },
 };

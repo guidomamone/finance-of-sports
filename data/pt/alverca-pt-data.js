@@ -2,12 +2,12 @@
 const alvercaPtRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.09357,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.037669,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.037669,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":0.02106,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.063878,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios a exploração","normalizedCategory":"other_income","amountNative":0.054882,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios a exploração","normalizedCategory":"grants_donations","amountNative":0.054882,"disclosureLevel":"aggregated"},
     {"rawLabel":"Descontos de pronto pagamento obtidos","normalizedCategory":"other_income","amountNative":0.000011,"disclosureLevel":"aggregated"},
     {"rawLabel":"Alienações diretas de inscrição desportiva","normalizedCategory":"player_sales","amountNative":0.694021,"disclosureLevel":"aggregated"},
     {"rawLabel":"Correções relativas a períodos anteriores (rendimentos)","normalizedCategory":"other_income","amountNative":0.003093,"disclosureLevel":"aggregated"},
@@ -16,7 +16,7 @@ const alvercaPtRevenueLinesByYear = {
   ],
   2024: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.069051,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.063231,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.063231,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos Suplementares","normalizedCategory":"other_income","amountNative":0.024154,"disclosureLevel":"aggregated"},
     {"rawLabel":"Descontos de pronto pagamento obtidos","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Alienações diretas de inscrição desportiva","normalizedCategory":"player_sales","amountNative":0.5815,"disclosureLevel":"aggregated"},
@@ -26,7 +26,7 @@ const alvercaPtRevenueLinesByYear = {
   ],
   2025: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.637398,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.386886,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.386886,"disclosureLevel":"aggregated"},
     {"rawLabel":"Indemnização FIFA - AL Wasl","normalizedCategory":"player_sales","amountNative":0.25383,"disclosureLevel":"aggregated"},
     {"rawLabel":"Alienações direitos de inscrição desportiva","normalizedCategory":"player_sales","amountNative":0.76957,"disclosureLevel":"aggregated"},
     {"rawLabel":"Correcções relativas a períodos anteriores","normalizedCategory":"other_income","amountNative":0.000185,"disclosureLevel":"aggregated"},

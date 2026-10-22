@@ -4,7 +4,7 @@ const necNlRevenueLinesByYear = {
     {"rawLabel":"Wedstrijdbaten","normalizedCategory":"matchday_competition","amountNative":4.733426,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sponsoring","normalizedCategory":"sponsorship_commercial","amountNative":6.363533,"disclosureLevel":"aggregated"},
     {"rawLabel":"Media gerelateerde baten","normalizedCategory":"broadcasting","amountNative":2.787462,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies","normalizedCategory":"other_income","amountNative":0.171847,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies","normalizedCategory":"grants_donations","amountNative":0.171847,"disclosureLevel":"aggregated"},
     {"rawLabel":"Merchandise","normalizedCategory":"sponsorship_commercial","amountNative":0.937031,"disclosureLevel":"aggregated"},
     {"rawLabel":"Horeca","normalizedCategory":"stadium_other","amountNative":1.446526,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prijzengeld","normalizedCategory":"competition_bonus","amountNative":1.431144,"disclosureLevel":"aggregated"},

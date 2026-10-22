@@ -10,7 +10,7 @@ const famalicaoPtRevenueLinesByYear = {
     {"rawLabel":"Apostas desportivas","normalizedCategory":"other_income","amountNative":0.204446,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outras receitas desportivas","normalizedCategory":"other_income","amountNative":0.055525,"disclosureLevel":"aggregated"},
     {"rawLabel":"Descontos e Abatimentos","normalizedCategory":"other_income","amountNative":-0.011405,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.188401,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.188401,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"player_sales","amountNative":0.024638,"disclosureLevel":"aggregated"},
   ],
   2020: [
@@ -23,7 +23,7 @@ const famalicaoPtRevenueLinesByYear = {
     {"rawLabel":"Apostas desportivas","normalizedCategory":"other_income","amountNative":0.21018,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outras receitas desportivas","normalizedCategory":"other_income","amountNative":0.139509,"disclosureLevel":"aggregated"},
     {"rawLabel":"Descontos e Abatimentos","normalizedCategory":"other_income","amountNative":-0.001368,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.193183,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.193183,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"player_sales","amountNative":0.158937,"disclosureLevel":"aggregated"},
   ],
   2021: [
@@ -34,7 +34,7 @@ const famalicaoPtRevenueLinesByYear = {
     {"rawLabel":"Direitos Clube","normalizedCategory":"broadcasting","amountNative":4.3,"disclosureLevel":"aggregated"},
     {"rawLabel":"Apostas desportivas","normalizedCategory":"other_income","amountNative":0.303692,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outras receitas desportivas","normalizedCategory":"other_income","amountNative":0.145711,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.166582,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.166582,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"player_sales","amountNative":8.734021,"disclosureLevel":"aggregated"},
   ],
   2022: [
@@ -46,7 +46,7 @@ const famalicaoPtRevenueLinesByYear = {
     {"rawLabel":"Direitos Clube","normalizedCategory":"broadcasting","amountNative":3.6,"disclosureLevel":"aggregated"},
     {"rawLabel":"Apostas desportivas","normalizedCategory":"other_income","amountNative":0.347894,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outras receitas desportivas","normalizedCategory":"other_income","amountNative":0.460113,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.167736,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.167736,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"player_sales","amountNative":5.141805,"disclosureLevel":"aggregated"},
   ],
   2023: [
@@ -58,7 +58,7 @@ const famalicaoPtRevenueLinesByYear = {
     {"rawLabel":"Direitos Clube","normalizedCategory":"broadcasting","amountNative":3.6,"disclosureLevel":"aggregated"},
     {"rawLabel":"Apostas desportivas","normalizedCategory":"other_income","amountNative":0.310178,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outras receitas desportivas","normalizedCategory":"other_income","amountNative":0.325847,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.229588,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.229588,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"player_sales","amountNative":11.345648,"disclosureLevel":"aggregated"},
   ],
   2024: [
@@ -70,7 +70,7 @@ const famalicaoPtRevenueLinesByYear = {
     {"rawLabel":"Direitos Clube","normalizedCategory":"broadcasting","amountNative":3.6,"disclosureLevel":"aggregated"},
     {"rawLabel":"Apostas desportivas","normalizedCategory":"other_income","amountNative":0.366873,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outras receitas desportivas","normalizedCategory":"other_income","amountNative":0.414502,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.338566,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.338566,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ganhos/perdas imputados de subsidiárias, associadas e empre","normalizedCategory":"other_income","amountNative":0.003168,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"player_sales","amountNative":27.320521,"disclosureLevel":"aggregated"},
   ],
@@ -83,7 +83,7 @@ const famalicaoPtRevenueLinesByYear = {
     {"rawLabel":"Direitos Clube","normalizedCategory":"broadcasting","amountNative":4,"disclosureLevel":"aggregated"},
     {"rawLabel":"Apostas desportivas","normalizedCategory":"other_income","amountNative":0.391934,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outras receitas desportivas","normalizedCategory":"other_income","amountNative":0.925115,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.605789,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.605789,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"player_sales","amountNative":16.44286,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ganhos/perdas imputados de subsidiárias, associadas e empresas","normalizedCategory":"other_income","amountNative":0.005008,"disclosureLevel":"aggregated"},
   ],

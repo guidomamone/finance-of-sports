@@ -2,7 +2,7 @@
 const vizelaPtRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Vendas e Serviços Prestados","normalizedCategory":"lump_football_operations","amountNative":5.112926,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.343644,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.343644,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros Rendimentos","normalizedCategory":"other_income","amountNative":0.345797,"disclosureLevel":"aggregated"},
   ],
   2023: [

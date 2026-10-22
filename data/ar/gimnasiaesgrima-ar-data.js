@@ -15,7 +15,7 @@ const gimnasiaesgrimaArRevenueLinesByYear = {
     {"rawLabel":"Varios (Fútbol Profesional)","normalizedCategory":"other_income","amountNative":94.377925,"disclosureLevel":"detailed"},
     {"rawLabel":"Varios (Deportes y Actividades Sociales)","normalizedCategory":"other_sports","amountNative":89.592842,"disclosureLevel":"detailed"},
     {"rawLabel":"Varios (Generales)","normalizedCategory":"other_income","amountNative":344.445824,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones","normalizedCategory":"other_income","amountNative":221.155346,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones","normalizedCategory":"grants_donations","amountNative":221.155346,"disclosureLevel":"detailed"},
   ],
   2024: [
     {"rawLabel":"Cuotas Sociales","normalizedCategory":"member_dues","amountNative":3932.260239,"disclosureLevel":"detailed"},
@@ -35,7 +35,7 @@ const gimnasiaesgrimaArRevenueLinesByYear = {
     {"rawLabel":"Varios (Fútbol Profesional)","normalizedCategory":"other_income","amountNative":12.208945,"disclosureLevel":"detailed"},
     {"rawLabel":"Varios (Deportes y Actividades Sociales)","normalizedCategory":"other_sports","amountNative":259.330503,"disclosureLevel":"detailed"},
     {"rawLabel":"Varios (Generales)","normalizedCategory":"other_income","amountNative":1078.209461,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones","normalizedCategory":"other_income","amountNative":95.726368,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones","normalizedCategory":"grants_donations","amountNative":95.726368,"disclosureLevel":"detailed"},
   ],
   2025: [
     {"rawLabel":"Cuotas Sociales","normalizedCategory":"member_dues","amountNative":6789.210138,"disclosureLevel":"detailed"},
@@ -55,7 +55,7 @@ const gimnasiaesgrimaArRevenueLinesByYear = {
     {"rawLabel":"Varios (Deportes y Actividades Sociales)","normalizedCategory":"other_sports","amountNative":184.854752,"disclosureLevel":"detailed"},
     {"rawLabel":"Varios (Jardín de Infantes y Escuela)","normalizedCategory":"education","amountNative":11.312853,"disclosureLevel":"detailed"},
     {"rawLabel":"Varios (Generales)","normalizedCategory":"other_income","amountNative":2066.761021,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones","normalizedCategory":"other_income","amountNative":0.077372,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones","normalizedCategory":"grants_donations","amountNative":0.077372,"disclosureLevel":"detailed"},
   ],
   2026: [
     {"rawLabel":"1.- Recursos por Venta de Entradas","normalizedCategory":"matchday_competition","amountNative":201.5,"disclosureLevel":"detailed"},

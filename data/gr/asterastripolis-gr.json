@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "asterastripolis-gr",
@@ -78,7 +78,7 @@
         {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"media_rights","subcategory":"broadcasting","amount":0.9,"disclosure":"aggregated"},
         {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":0.590284,"disclosure":"aggregated"},
         {"label":"Έσοδα από πώληση λοιπών αποθεμάτων","category":"other_revenue","subcategory":"other_income","amount":0.006008,"disclosure":"aggregated"},
-        {"label":"Επιχορηγήσεις","category":"other_revenue","subcategory":"other_income","amount":0.752631,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":0.752631,"disclosure":"aggregated"},
         {"label":"Διάφορα έσοδα πωλήσεων","category":"other_revenue","subcategory":"other_income","amount":0.00079,"disclosure":"aggregated"},
         {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_revenue","subcategory":"other_income","amount":1.008293,"disclosure":"aggregated"},
         {"label":"Άλλα λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.000099,"disclosure":"aggregated"},
@@ -158,7 +158,7 @@
         {"label":"Έσοδα αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.180624,"disclosure":"aggregated"},
         {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"media_rights","subcategory":"broadcasting","amount":0.855,"disclosure":"aggregated"},
         {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":0.690353,"disclosure":"aggregated"},
-        {"label":"Επιχορηγήσεις","category":"other_revenue","subcategory":"other_income","amount":0.405879,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":0.405879,"disclosure":"aggregated"},
         {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_revenue","subcategory":"other_income","amount":1.239662,"disclosure":"aggregated"},
         {"label":"Έσοδα από συνεισφορά αλληλεγγύης","category":"player_transfers","subcategory":"player_sales","amount":0.053814,"disclosure":"aggregated"},
         {"label":"Άλλα λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.000097,"disclosure":"aggregated"},
@@ -234,7 +234,7 @@
       "revenue": [
         {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"media_rights","subcategory":"broadcasting","amount":0.95,"disclosure":"aggregated"},
         {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":0.818301,"disclosure":"aggregated"},
-        {"label":"Επιχορηγήσεις","category":"other_revenue","subcategory":"other_income","amount":0.360137,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":0.360137,"disclosure":"aggregated"},
         {
           "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
           "category": "other_revenue",
@@ -330,7 +330,7 @@
         {"label":"Έσοδα αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.072441,"disclosure":"aggregated"},
         {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"media_rights","subcategory":"broadcasting","amount":0.925,"disclosure":"aggregated"},
         {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":0.2,"disclosure":"aggregated"},
-        {"label":"Επιχορηγήσεις","category":"other_revenue","subcategory":"other_income","amount":0.430855,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":0.430855,"disclosure":"aggregated"},
         {"label":"Έσοδα από παροχή υπηρεσιών σε τρίτους","category":"other_revenue","subcategory":"other_income","amount":1.060297,"disclosure":"aggregated"},
         {
           "label": "Έσοδα από συνεισφορά αλληλεγγύης και τροφεία",
@@ -427,7 +427,7 @@
         {"label":"Έσοδα αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.070817,"disclosure":"aggregated"},
         {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"media_rights","subcategory":"broadcasting","amount":0.925,"disclosure":"aggregated"},
         {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":0.04,"disclosure":"aggregated"},
-        {"label":"Επιχορηγήσεις","category":"other_revenue","subcategory":"other_income","amount":0.413184,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":0.413184,"disclosure":"aggregated"},
         {
           "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
           "category": "other_revenue",
@@ -523,7 +523,7 @@
         {"label":"Έσοδα αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.188791,"disclosure":"aggregated"},
         {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"media_rights","subcategory":"broadcasting","amount":0.925,"disclosure":"aggregated"},
         {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":0.217707,"disclosure":"aggregated"},
-        {"label":"Επιχορηγήσεις","category":"other_revenue","subcategory":"other_income","amount":0.416949,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":0.416949,"disclosure":"aggregated"},
         {
           "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
           "category": "other_revenue",
@@ -614,7 +614,7 @@
         {"label":"Έσοδα αγώνων","category":"matchday","subcategory":"matchday_competition","amount":0.200212,"disclosure":"aggregated"},
         {"label":"Έσοδα από τηλεοπτικές μεταδόσεις αγώνων","category":"media_rights","subcategory":"broadcasting","amount":0.975,"disclosure":"aggregated"},
         {"label":"Έσοδα από παραχώρηση ποδοσφαιριστών","category":"player_transfers","subcategory":"player_sales","amount":0.703735,"disclosure":"aggregated"},
-        {"label":"Επιχορηγήσεις","category":"other_revenue","subcategory":"other_income","amount":1.168365,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":1.168365,"disclosure":"aggregated"},
         {
           "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
           "category": "other_revenue",

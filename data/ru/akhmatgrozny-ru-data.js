@@ -2,21 +2,21 @@
 const akhmatgroznyRuRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Прочие доходы (2340)","normalizedCategory":"other_income","amountNative":631.027,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"other_income","amountNative":688.263,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","normalizedCategory":"other_income","amountNative":130,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"grants_donations","amountNative":688.263,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","normalizedCategory":"grants_donations","amountNative":130,"disclosureLevel":"aggregated"},
     {"rawLabel":"Прочие поступления (6250, форма 6)","normalizedCategory":"other_income","amountNative":52.758,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Прочие доходы (2340)","normalizedCategory":"other_income","amountNative":963.028,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"other_income","amountNative":651.192,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"grants_donations","amountNative":651.192,"disclosureLevel":"aggregated"},
   ],
   2024: [
     {"rawLabel":"Прочие доходы (2340)","normalizedCategory":"other_income","amountNative":939.691,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"other_income","amountNative":667.263,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"grants_donations","amountNative":667.263,"disclosureLevel":"aggregated"},
   ],
   2025: [
     {"rawLabel":"Прочие доходы (2340)","normalizedCategory":"other_income","amountNative":683.308,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"other_income","amountNative":1501,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Целевые взносы (6220, форма 6)","normalizedCategory":"grants_donations","amountNative":1501,"disclosureLevel":"aggregated"},
     {"rawLabel":"Прочие поступления (6250, форма 6)","normalizedCategory":"other_income","amountNative":688.263,"disclosureLevel":"aggregated"},
   ],
 };

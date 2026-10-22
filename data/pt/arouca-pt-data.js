@@ -8,7 +8,7 @@ const aroucaPtRevenueLinesByYear = {
     {"rawLabel":"Subsídios e Prémios","normalizedCategory":"competition_bonus","amountNative":0.038642,"disclosureLevel":"aggregated"},
     {"rawLabel":"Receitas Apostas Desport.","normalizedCategory":"other_income","amountNative":0.289934,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros","normalizedCategory":"other_income","amountNative":0.033084,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Descontos pp obtidos","normalizedCategory":"other_income","amountNative":0.000293,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rend. Suplementares","normalizedCategory":"other_income","amountNative":0.02,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros Rendimentos","normalizedCategory":"other_income","amountNative":0.398211,"disclosureLevel":"aggregated"},

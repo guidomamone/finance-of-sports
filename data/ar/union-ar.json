@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "union-ar",
@@ -105,7 +105,7 @@
         },
         {"label":"Ingresos de Subcomisiones","category":"other_sporting_sections","subcategory":"other_sports","amount":23.552535,"disclosure":"detailed"},
         {"label":"Ingresos Fútbol Amateur","category":"other_sporting_sections","subcategory":"youth_football","amount":12.421668,"disclosure":"detailed"},
-        {"label":"Subsidios","category":"other_revenue","subcategory":"other_income","amount":0.027653,"disclosure":"detailed"}
+        {"label":"Subsidios","category":"grants_donations","subcategory":"grants_donations","amount":0.027653,"disclosure":"detailed"}
       ],
       "expenses": [
         {"label":"Sueldos y Jornales de Futbol","category":"first_team_staff","subcategory":"wages_squad","amount":-427.827998,"disclosure":"detailed"},
@@ -279,7 +279,7 @@
         },
         {"label":"Ingresos de Subcomisiones","category":"other_sporting_sections","subcategory":"other_sports","amount":74.28911,"disclosure":"detailed"},
         {"label":"Ingresos Fútbol Amateur","category":"other_sporting_sections","subcategory":"youth_football","amount":43.217287,"disclosure":"detailed"},
-        {"label":"Subsidios","category":"other_revenue","subcategory":"other_income","amount":42.915278,"disclosure":"detailed"}
+        {"label":"Subsidios","category":"grants_donations","subcategory":"grants_donations","amount":42.915278,"disclosure":"detailed"}
       ],
       "expenses": [
         {"label":"Sueldos y Jornales de Futbol","category":"first_team_staff","subcategory":"wages_squad","amount":-861.715644,"disclosure":"detailed"},
@@ -453,7 +453,7 @@
         },
         {"label":"Ingresos de Subcomisiones","category":"other_sporting_sections","subcategory":"other_sports","amount":219.706856,"disclosure":"detailed"},
         {"label":"Ingresos Fútbol Amateur","category":"other_sporting_sections","subcategory":"youth_football","amount":140.332766,"disclosure":"detailed"},
-        {"label":"Subsidios","category":"other_revenue","subcategory":"other_income","amount":83.909,"disclosure":"detailed"}
+        {"label":"Subsidios","category":"grants_donations","subcategory":"grants_donations","amount":83.909,"disclosure":"detailed"}
       ],
       "expenses": [
         {
@@ -563,7 +563,7 @@
         },
         {"label":"Ingresos de Subcomisiones","category":"other_sporting_sections","subcategory":"other_sports","amount":480.096085,"disclosure":"detailed"},
         {"label":"Ingresos Fútbol Amateur","category":"other_sporting_sections","subcategory":"youth_football","amount":183.019674,"disclosure":"detailed"},
-        {"label":"Subsidios","category":"other_revenue","subcategory":"other_income","amount":141.577709,"disclosure":"detailed"}
+        {"label":"Subsidios","category":"grants_donations","subcategory":"grants_donations","amount":141.577709,"disclosure":"detailed"}
       ],
       "expenses": [
         {"label":"Sueldos y Jornales de Fútbol","category":"first_team_staff","subcategory":"wages_squad","amount":-6510.993333,"disclosure":"detailed"},

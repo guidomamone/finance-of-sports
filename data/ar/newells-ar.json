@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "newells-ar",
@@ -76,8 +76,8 @@
         {"label":"Escuela de fútbol","category":"other_sporting_sections","subcategory":"youth_football","amount":6.921344,"disclosure":"detailed"},
         {
           "label": "Donaciones (Recursos y Gastos Extraordinarios, Nota 13)",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 2.982903,
           "disclosure": "detailed"
         }

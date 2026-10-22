@@ -14,7 +14,8 @@ const REVENUE_CATEGORIES = [
   'other_sports',             // básquet, otros deportes
   'youth_football',           // fútbol juvenil / derechos de formación
   'womens_football',          // fútbol femenino
-  'education', // colegio/escuela del club: aranceles y subsidios estatales a la educación (un negocio no futbolístico, con fila propia)
+  'education', // colegio/escuela del club: aranceles y subsidios estatales a la educación (un negocio no futbolístico; comparte fila con las otras secciones)
+  'grants_donations', // subsidio público de explotación, donación o aporte de socios o accionistas impreso como ingreso (no: la subvención de capital imputada al resultado, los premios y la solidaridad UEFA o de la liga, el subsidio de la educación, un aporte que el documento lleva al patrimonio neto)
   'other_income',             // diversos, intereses ganados, partidas sueltas
   'lump_football_operations', // bolsón sin desglosar (ver nota arriba)
 ];
@@ -32,6 +33,7 @@ const REVENUE_CATEGORY_LABELS = {
   youth_football: 'Fútbol juvenil',
   womens_football: 'Fútbol femenino',
   education: 'Educación',
+  grants_donations: 'Subsidios, donaciones y aportes',
   other_income: 'Otros ingresos',
   lump_football_operations: 'Fútbol profesional (sin desglosar por la fuente)',
 };
@@ -84,6 +86,7 @@ const GENERIC_REVENUE_CATEGORIES = [
   { id: 'player_transfers',        block: 'revenue', label: 'Venta de jugadores',             en: 'Player transfers' },
   { id: 'other_sporting_sections', block: 'revenue', label: 'Otras secciones deportivas',     en: 'Other sporting sections' },
   { id: 'non_sporting_activities', block: 'revenue', label: 'Actividades no deportivas',      en: 'Non-sporting activities' },
+  { id: 'grants_donations',        block: 'revenue', label: 'Subsidios, donaciones y aportes', en: 'Grants, donations and contributions' },
   { id: 'other_revenue',           block: 'revenue', label: 'Otros ingresos',                 en: 'Other revenue' },
   { id: 'undisclosed',             block: 'revenue', label: 'Sin desglosar por la fuente',    en: 'Not broken down by the source' },
 ];
@@ -163,7 +166,7 @@ const SPORT_TAXONOMIES = {
       member_dues: 'membership', matchday_competition: 'matchday', season_tickets: 'season_tickets', stadium_other: 'venue',
       broadcasting: 'media_rights', competition_bonus: 'prize_money', sponsorship_commercial: 'commercial', player_sales: 'player_transfers',
       other_sports: 'other_sporting_sections', youth_football: 'other_sporting_sections', womens_football: 'other_sporting_sections',
-      education: 'non_sporting_activities', other_income: 'other_revenue', lump_football_operations: 'undisclosed',
+      education: 'non_sporting_activities', grants_donations: 'grants_donations', other_income: 'other_revenue', lump_football_operations: 'undisclosed',
     },
     expense: {
       wages_squad: 'first_team_staff', match_organisation_expense: 'match_operations', youth_other_sports_expense: 'other_sporting_sections',

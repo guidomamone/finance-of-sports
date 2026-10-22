@@ -66,7 +66,7 @@ const almagroArRevenueLinesByYear = {
     {"rawLabel":"Publicidad","normalizedCategory":"sponsorship_commercial","amountNative":60.013253,"disclosureLevel":"detailed"},
     {"rawLabel":"Alquiler de Antena","normalizedCategory":"sponsorship_commercial","amountNative":5.724398,"disclosureLevel":"detailed"},
     {"rawLabel":"Partidos Amistosos","normalizedCategory":"matchday_competition","amountNative":92.406682,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subsidio Otorgado","normalizedCategory":"other_income","amountNative":1.391422,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subsidio Otorgado","normalizedCategory":"grants_donations","amountNative":1.391422,"disclosureLevel":"detailed"},
     {"rawLabel":"Intereses Fondo de Inversion","normalizedCategory":"other_income","amountNative":3.136055,"disclosureLevel":"detailed"},
   ],
 };

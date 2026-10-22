@@ -2,7 +2,7 @@
 const tallinnakalevEeRevenueLinesByYear = {
   2019: [
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.014369,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotstarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.148756,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotstarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.148756,"disclosureLevel":"aggregated"},
     {"rawLabel":"Renditulud","normalizedCategory":"other_income","amountNative":0.190502,"disclosureLevel":"aggregated"},
     {"rawLabel":"Reklaami müük","normalizedCategory":"sponsorship_commercial","amountNative":0.15999,"disclosureLevel":"aggregated"},
     {"rawLabel":"Muud tulud","normalizedCategory":"other_income","amountNative":0.008141,"disclosureLevel":"aggregated"},
@@ -10,7 +10,7 @@ const tallinnakalevEeRevenueLinesByYear = {
   ],
   2020: [
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.111613,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.149359,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.149359,"disclosureLevel":"aggregated"},
     {"rawLabel":"Renditulud staadionite või selle rajatiste väljarentimisest","normalizedCategory":"stadium_other","amountNative":0.146833,"disclosureLevel":"aggregated"},
     {"rawLabel":"Piletitulu","normalizedCategory":"matchday_competition","amountNative":0.004453,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tulu turniiride korraldamisest","normalizedCategory":"other_income","amountNative":0.002058,"disclosureLevel":"aggregated"},
@@ -22,7 +22,7 @@ const tallinnakalevEeRevenueLinesByYear = {
   ],
   2021: [
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.074663,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.033912,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.033912,"disclosureLevel":"aggregated"},
     {"rawLabel":"Renditulud staadionite või selle rajatiste väljarentimisest","normalizedCategory":"stadium_other","amountNative":0.087567,"disclosureLevel":"aggregated"},
     {"rawLabel":"Piletitulu","normalizedCategory":"matchday_competition","amountNative":0.001291,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tulu turniiride korraldamisest","normalizedCategory":"other_income","amountNative":0.00094,"disclosureLevel":"aggregated"},
@@ -34,7 +34,7 @@ const tallinnakalevEeRevenueLinesByYear = {
   ],
   2022: [
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.016982,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.249346,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.249346,"disclosureLevel":"aggregated"},
     {"rawLabel":"Renditulud staadionite või selle rajatiste väljarentimisest","normalizedCategory":"stadium_other","amountNative":0.094295,"disclosureLevel":"aggregated"},
     {"rawLabel":"Piletitulu","normalizedCategory":"matchday_competition","amountNative":0.002917,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tulu turniiride korraldamisest","normalizedCategory":"other_income","amountNative":0.000734,"disclosureLevel":"aggregated"},
@@ -47,7 +47,7 @@ const tallinnakalevEeRevenueLinesByYear = {
   2023: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.469225,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.492348,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.026335,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.026335,"disclosureLevel":"aggregated"},
     {"rawLabel":"Renditulu staadioni või selle rajatiste väljarentimisest","normalizedCategory":"stadium_other","amountNative":0.005907,"disclosureLevel":"aggregated"},
     {"rawLabel":"Piletitulu","normalizedCategory":"matchday_competition","amountNative":0.008517,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tulu turniiride korraldamisest","normalizedCategory":"other_income","amountNative":0.000638,"disclosureLevel":"aggregated"},
@@ -60,7 +60,7 @@ const tallinnakalevEeRevenueLinesByYear = {
   2024: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.624467,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.873808,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.032139,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.032139,"disclosureLevel":"aggregated"},
     {"rawLabel":"Renditulu staadioni või selle rajatiste väljarentimisest","normalizedCategory":"stadium_other","amountNative":0.105588,"disclosureLevel":"aggregated"},
     {"rawLabel":"Piletitulu","normalizedCategory":"matchday_competition","amountNative":0.012965,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tulu turniiride korraldamisest","normalizedCategory":"other_income","amountNative":0.011158,"disclosureLevel":"aggregated"},
@@ -73,7 +73,7 @@ const tallinnakalevEeRevenueLinesByYear = {
   2025: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.837426,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":1.033337,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.013105,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.013105,"disclosureLevel":"aggregated"},
     {"rawLabel":"Renditulu staadioni või selle rajatiste väljarentimisest","normalizedCategory":"stadium_other","amountNative":0.111873,"disclosureLevel":"aggregated"},
     {"rawLabel":"Piletitulu","normalizedCategory":"matchday_competition","amountNative":0.006859,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tulu turniiride korraldamisest","normalizedCategory":"other_income","amountNative":0.0096,"disclosureLevel":"aggregated"},

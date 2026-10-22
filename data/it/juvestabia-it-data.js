@@ -6,7 +6,7 @@ const juvestabiaItRevenueLinesByYear = {
     {"rawLabel":"Ticketing","normalizedCategory":"matchday_competition","amountNative":0.727035,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gain on transfer of players","normalizedCategory":"player_sales","amountNative":0.23,"disclosureLevel":"aggregated"},
     {"rawLabel":"Revenue from Television rights","normalizedCategory":"broadcasting","amountNative":0.05,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Revenue from Contributions","normalizedCategory":"other_income","amountNative":0.538644,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Revenue from Contributions","normalizedCategory":"grants_donations","amountNative":0.538644,"disclosureLevel":"aggregated"},
     {"rawLabel":"Revenue from store","normalizedCategory":"sponsorship_commercial","amountNative":0.074261,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other incomes","normalizedCategory":"other_income","amountNative":0.116954,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other incomes","normalizedCategory":"other_income","amountNative":0.190721,"disclosureLevel":"aggregated"},

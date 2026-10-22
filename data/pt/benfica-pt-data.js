@@ -2,7 +2,7 @@
 const benficaPtRevenueLinesByYear = {
   2006: [
     {"rawLabel":"Proveitos suplementares","normalizedCategory":"other_income","amountNative":12.765682,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.028136,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.028136,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros proveitos e ganhos operacionais","normalizedCategory":"other_income","amountNative":0.5625,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proveitos e ganhos extraordinários","normalizedCategory":"other_income","amountNative":11.442643,"disclosureLevel":"aggregated"},
     {"rawLabel":"Receitas de jogos","normalizedCategory":"matchday_competition","amountNative":11.687937,"disclosureLevel":"aggregated"},
@@ -26,7 +26,7 @@ const benficaPtRevenueLinesByYear = {
     {"rawLabel":"Receitas competições FPF","normalizedCategory":"competition_bonus","amountNative":0.23044,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outras","normalizedCategory":"other_income","amountNative":0.094505,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proveitos suplementares","normalizedCategory":"other_income","amountNative":11.683949,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.003516,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.003516,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros proveitos e ganhos operacionais","normalizedCategory":"other_income","amountNative":0.702353,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ganhos em imobilizações","normalizedCategory":"other_income","amountNative":24.114308,"disclosureLevel":"aggregated"},
     {"rawLabel":"Benefícios de penalidades contratuais","normalizedCategory":"other_income","amountNative":0.034333,"disclosureLevel":"aggregated"},
@@ -93,7 +93,7 @@ const benficaPtRevenueLinesByYear = {
     {"rawLabel":"OUTROS PROVEITOS SUPLEMENTARES","normalizedCategory":"other_income","amountNative":0.093453,"disclosureLevel":"aggregated"},
     {"rawLabel":"INDEMINIZAÇÕES DE SEGUROS","normalizedCategory":"other_income","amountNative":0.091633,"disclosureLevel":"aggregated"},
     {"rawLabel":"BENEFÍCIOS DE PENALIDADES CONTRATUAIS","normalizedCategory":"other_income","amountNative":0.024629,"disclosureLevel":"aggregated"},
-    {"rawLabel":"SUBSÍDIOS À EXPLORAÇÃO","normalizedCategory":"other_income","amountNative":0.009871,"disclosureLevel":"aggregated"},
+    {"rawLabel":"SUBSÍDIOS À EXPLORAÇÃO","normalizedCategory":"grants_donations","amountNative":0.009871,"disclosureLevel":"aggregated"},
     {"rawLabel":"REDUÇÃO DE IMPARIDADE DE CRÉDITOS","normalizedCategory":"other_income","amountNative":0.005077,"disclosureLevel":"aggregated"},
     {"rawLabel":"OUTROS PROVEITOS OPERACIONAIS","normalizedCategory":"other_income","amountNative":0.647498,"disclosureLevel":"aggregated"},
     {"rawLabel":"VENDA DE DIREITOS","normalizedCategory":"player_sales","amountNative":17.937821,"disclosureLevel":"aggregated"},

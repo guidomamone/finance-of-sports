@@ -19,7 +19,7 @@ window.RANKINGS["nl-eredivisie"] = {
         mix:[["Comercial / Sponsors",20.764],["Estadio",36.234],["Televisión",11.68],["Venta de Jugadores",34.573],["Otros ingresos",3.644]] },
       { id:"fctwente-nl", revenue:91.607, reportType:"official_balance_sheet",
         sourceId:"fctwente-nl-jaarrekening-2024-2025",
-        mix:[["Comercial / Sponsors",0.448],["Estadio",25.836],["Televisión",9.307],["Venta de Jugadores",19.303],["Otros ingresos",36.714]] },
+        mix:[["Comercial / Sponsors",0.448],["Estadio",25.836],["Televisión",9.307],["Venta de Jugadores",19.303],["Subsidios y donaciones",35.408],["Otros ingresos",1.306]] },
       { id:"scheerenveen-nl", revenue:37.528, reportType:"official_balance_sheet",
         sourceId:"scheerenveen-nl-jaarverslag-2024-2025",
         mix:[["Comercial / Sponsors",11.578],["Estadio",6.327],["Televisión",7.582],["Venta de Jugadores",8.856],["Otros ingresos",3.184]] },
@@ -28,10 +28,10 @@ window.RANKINGS["nl-eredivisie"] = {
         mix:[["Comercial / Sponsors",13.893],["Estadio",10.43],["Televisión",5.107],["Premios por competencias",2.022],["Venta de Jugadores",5.212],["Otros ingresos",0.826]] },
       { id:"goaheadeagles-nl", revenue:29.399, reportType:"official_balance_sheet",
         sourceId:"goaheadeagles-nl-wf-2024-2025-31bca08b",
-        mix:[["Comercial / Sponsors",10.818],["Estadio",6.072],["Televisión",3.691],["Premios por competencias",3.34],["Venta de Jugadores",4.935],["Otros ingresos",0.542]] },
+        mix:[["Comercial / Sponsors",10.818],["Estadio",6.072],["Televisión",3.691],["Premios por competencias",3.34],["Venta de Jugadores",4.935],["Subsidios y donaciones",0.047],["Otros ingresos",0.495]] },
       { id:"peczwolle-nl", revenue:25.926, reportType:"official_balance_sheet",
         sourceId:"peczwolle-nl-wf-2024-2025-aaba1b62",
-        mix:[["Comercial / Sponsors",9.245],["Estadio",3.236],["Televisión",4.229],["Premios por competencias",1.893],["Venta de Jugadores",5.91],["Otros ingresos",1.414]] },
+        mix:[["Comercial / Sponsors",9.245],["Estadio",3.236],["Televisión",4.229],["Premios por competencias",1.893],["Venta de Jugadores",5.91],["Subsidios y donaciones",0.298],["Otros ingresos",1.116]] },
       { id:"nacbreda-nl", revenue:25.482, reportType:"official_balance_sheet",
         sourceId:"nacbreda-nl-jaarrekening-2024-2025",
         mix:[["Comercial / Sponsors",9.202],["Estadio",6.175],["Televisión",3.322],["Venta de Jugadores",3.578],["Otras actividades (educación y otros deportes)",0.319],["Otros ingresos",2.886]] },
@@ -46,7 +46,7 @@ window.RANKINGS["nl-eredivisie"] = {
         mix:[["Venta de Jugadores",0.436],["Fútbol profesional (sin desglosar por la fuente)",18.04]] },
       { id:"fortunasittard-nl", revenue:16.336, reportType:"official_balance_sheet",
         sourceId:"fortunasittard-nl-jaarrekening-2024-2025",
-        mix:[["Comercial / Sponsors",5.713],["Estadio",2.57],["Televisión",4.339],["Premios por competencias",1.856],["Otros ingresos",1.858]] },
+        mix:[["Comercial / Sponsors",5.713],["Estadio",2.57],["Televisión",4.339],["Premios por competencias",1.856],["Subsidios y donaciones",0.1],["Otros ingresos",1.757]] },
     ],
   },
   2024: {
@@ -67,10 +67,10 @@ window.RANKINGS["nl-eredivisie"] = {
         mix:[["Comercial / Sponsors",17.38],["Estadio",17.942],["Televisión",8.872],["Venta de Jugadores",47.363],["Otros ingresos",2.928]] },
       { id:"nec-nl", revenue:24.011, reportType:"official_balance_sheet",
         sourceId:"nec-nl-holding-jaarrekening-2023-2024",
-        mix:[["Comercial / Sponsors",7.819],["Estadio",6.619],["Televisión",2.985],["Premios por competencias",1.533],["Venta de Jugadores",4.011],["Otros ingresos",1.044]] },
+        mix:[["Comercial / Sponsors",7.819],["Estadio",6.619],["Televisión",2.985],["Premios por competencias",1.533],["Venta de Jugadores",4.011],["Subsidios y donaciones",0.184],["Otros ingresos",0.86]] },
       { id:"vitesse-nl", revenue:23.671, reportType:"official_balance_sheet",
         sourceId:"vitesse-nl-wf-2023-2024-be6334b7",
-        mix:[["Comercial / Sponsors",7.889],["Estadio",3.384],["Televisión",6.586],["Premios por competencias",1.143],["Venta de Jugadores",2.13],["Otros ingresos",2.539]] },
+        mix:[["Comercial / Sponsors",7.889],["Estadio",3.384],["Televisión",6.586],["Premios por competencias",1.143],["Venta de Jugadores",2.13],["Subsidios y donaciones",0.263],["Otros ingresos",2.276]] },
       { id:"spartarotterdam-nl", revenue:22.264, reportType:"official_balance_sheet",
         sourceId:"spartarotterdam-nl-wf-2023-2024-7bc9c6f8",
         mix:[["Venta de Jugadores",2.923],["Fútbol profesional (sin desglosar por la fuente)",19.341]] },
@@ -108,7 +108,7 @@ window.RANKINGS["nl-eredivisie"] = {
     clubs: [
       { id:"fcemmen-nl", revenue:9.699, reportType:"official_balance_sheet",
         sourceId:"fcemmen-nl-f-04-fce-jaarverslag-2020-2021-incl-jaarcijfers-def",
-        mix:[["Comercial / Sponsors",4.346],["Estadio",0.273],["Televisión",2.656],["Premios por competencias",0.434],["Otros ingresos",1.99]] },
+        mix:[["Comercial / Sponsors",4.346],["Estadio",0.273],["Televisión",2.656],["Premios por competencias",0.434],["Subsidios y donaciones",1.521],["Otros ingresos",0.469]] },
     ],
   },
   2020: {
@@ -116,7 +116,7 @@ window.RANKINGS["nl-eredivisie"] = {
     clubs: [
       { id:"fcemmen-nl", revenue:11.072, reportType:"official_balance_sheet",
         sourceId:"fcemmen-nl-f-04-fce-jaarverslag-2019-2020-incl-jaarcijfers-def",
-        mix:[["Comercial / Sponsors",4.544],["Estadio",1.889],["Televisión",2.206],["Premios por competencias",0.353],["Venta de Jugadores",0.96],["Otros ingresos",1.12]] },
+        mix:[["Comercial / Sponsors",4.544],["Estadio",1.889],["Televisión",2.206],["Premios por competencias",0.353],["Venta de Jugadores",0.96],["Subsidios y donaciones",0.133],["Otros ingresos",0.987]] },
     ],
   },
   2019: {
@@ -125,7 +125,7 @@ window.RANKINGS["nl-eredivisie"] = {
     clubs: [
       { id:"fcemmen-nl", revenue:8.698, reportType:"official_balance_sheet",
         sourceId:"fcemmen-nl-f-04-fce-jaarverslag-2018-2019-incl-jaarcijfers-def",
-        mix:[["Comercial / Sponsors",4.084],["Estadio",2.017],["Televisión",2.012],["Premios por competencias",0.37],["Otros ingresos",0.215]] },
+        mix:[["Comercial / Sponsors",4.084],["Estadio",2.017],["Televisión",2.012],["Premios por competencias",0.37],["Subsidios y donaciones",0.064],["Otros ingresos",0.151]] },
     ],
   },
 };

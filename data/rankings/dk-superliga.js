@@ -76,7 +76,7 @@ window.RANKINGS["dk-superliga"] = {
         mix:[["Comercial / Sponsors",17.564],["Estadio",3.54],["Televisión",22.484],["Venta de Jugadores",7.653],["Otros ingresos",3.632]] },
       { id:"agf-dk", revenue:30.096, reportType:"official_balance_sheet",
         sourceId:"agf-aarsrapport-2020-21",
-        mix:[["Comercial / Sponsors",12.213],["Estadio",3.061],["Televisión",5.541],["Venta de Jugadores",4.577],["Otros ingresos",4.704]] },
+        mix:[["Comercial / Sponsors",12.213],["Estadio",3.061],["Televisión",5.541],["Venta de Jugadores",4.577],["Subsidios y donaciones",2.543],["Otros ingresos",2.161]] },
     ],
   },
   2020: {

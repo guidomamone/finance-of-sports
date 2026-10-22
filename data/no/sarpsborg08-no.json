@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sarpsborg08-no",
@@ -124,7 +124,7 @@
       "fx": {"ref":"NOK@2008-12-31"},
       "revenue": [
         {"label":"Medlemsinntekter","category":"membership","subcategory":"member_dues","amount":0.057,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":0.22305,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":0.22305,"disclosure":"aggregated"},
         {"label":"Kampbillettinntekter","category":"matchday","subcategory":"matchday_competition","amount":1.073252,"disclosure":"aggregated"},
         {"label":"Andre arrangementsinnt.","category":"other_revenue","subcategory":"other_income","amount":0.233742,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":1.56012,"disclosure":"aggregated"},
@@ -174,7 +174,7 @@
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":3.616825,"disclosure":"aggregated"},
         {"label":"Andre salgsinntekter","category":"other_revenue","subcategory":"other_income","amount":1.833703,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":2.628265,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":0.790476,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":0.790476,"disclosure":"aggregated"},
         {"label":"Reklame og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":11.858375,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":2.3942,"disclosure":"aggregated"}
       ],
@@ -225,7 +225,7 @@
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":4.282673,"disclosure":"aggregated"},
         {"label":"Andre salgsinntekter","category":"other_revenue","subcategory":"other_income","amount":2.271759,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":6.16638,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":1.931104,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":1.931104,"disclosure":"aggregated"},
         {"label":"Reklame og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":15.333625,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":9.440754,"disclosure":"aggregated"}
       ],
@@ -275,13 +275,13 @@
         {"label":"Billettinntekter","category":"matchday","subcategory":"matchday_competition","amount":5.46125,"disclosure":"aggregated"},
         {"label":"Cupoppgjør NFF","category":"prize_money","subcategory":"competition_bonus","amount":1.266028,"disclosure":"aggregated"},
         {"label":"Grasrotandel","category":"other_revenue","subcategory":"other_income","amount":1.235645,"disclosure":"aggregated"},
-        {"label":"Gaver/bidrag","category":"other_revenue","subcategory":"other_income","amount":1.039266,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"grants_donations","subcategory":"grants_donations","amount":1.039266,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":1.791653,"disclosure":"aggregated"},
         {"label":"Kiosk salg","category":"other_revenue","subcategory":"other_income","amount":1.191064,"disclosure":"aggregated"},
         {"label":"Supporterutstyr","category":"commercial","subcategory":"sponsorship_commercial","amount":1.841474,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.409081,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":6.513176,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":1.998957,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":1.998957,"disclosure":"aggregated"},
         {"label":"Reklame og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":16.5456,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":6.542138,"disclosure":"aggregated"}
       ],
@@ -364,7 +364,7 @@
         {"label":"Medlemsinntekter","category":"membership","subcategory":"member_dues","amount":0.450211,"disclosure":"aggregated"},
         {"label":"Cupoppgjør NFF","category":"prize_money","subcategory":"competition_bonus","amount":0.721254,"disclosure":"aggregated"},
         {"label":"Grasrotandel","category":"other_revenue","subcategory":"other_income","amount":1.343766,"disclosure":"aggregated"},
-        {"label":"Gaver/bidrag","category":"other_revenue","subcategory":"other_income","amount":1.6542,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"grants_donations","subcategory":"grants_donations","amount":1.6542,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":2.037584,"disclosure":"aggregated"},
         {"label":"Reklame og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":18.916052,"disclosure":"aggregated"},
         {"label":"Kiosk salg","category":"other_revenue","subcategory":"other_income","amount":1.180533,"disclosure":"aggregated"},
@@ -372,7 +372,7 @@
         {"label":"Solidaritetsmidler","category":"player_transfers","subcategory":"player_sales","amount":1.421302,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.265807,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":8.284169,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":2.051868,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":2.051868,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":12.740224,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -429,7 +429,7 @@
         {"label":"Medlemsinntekter","category":"membership","subcategory":"member_dues","amount":0.41888,"disclosure":"aggregated"},
         {"label":"Cupoppgjør NFF","category":"prize_money","subcategory":"competition_bonus","amount":1.179278,"disclosure":"aggregated"},
         {"label":"Grasrotandel","category":"other_revenue","subcategory":"other_income","amount":1.336056,"disclosure":"aggregated"},
-        {"label":"Gaver/bidrag","category":"other_revenue","subcategory":"other_income","amount":4.785,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"grants_donations","subcategory":"grants_donations","amount":4.785,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":1.720384,"disclosure":"aggregated"},
         {"label":"Reklame og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":21.688521,"disclosure":"aggregated"},
         {"label":"Kiosk salg","category":"other_revenue","subcategory":"other_income","amount":1.662776,"disclosure":"aggregated"},
@@ -437,7 +437,7 @@
         {"label":"Solidaritetsmidler/UEFA","category":"prize_money","subcategory":"competition_bonus","amount":3.461793,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":1.248519,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":12.615928,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":3.078983,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":3.078983,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":15.059868,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -534,7 +534,7 @@
         {"label":"Cupoppgjør NFF","category":"prize_money","subcategory":"competition_bonus","amount":0.179476,"disclosure":"aggregated"},
         {"label":"Media/tilskudd UEFA","category":"prize_money","subcategory":"competition_bonus","amount":53.339762,"disclosure":"aggregated"},
         {"label":"Grasrotandel","category":"other_revenue","subcategory":"other_income","amount":1.755421,"disclosure":"aggregated"},
-        {"label":"Gaver/bidrag","category":"other_revenue","subcategory":"other_income","amount":5.4875,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"grants_donations","subcategory":"grants_donations","amount":5.4875,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":1.419999,"disclosure":"aggregated"},
         {"label":"Reklame og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":27.920566,"disclosure":"aggregated"},
         {"label":"Kiosk salg","category":"other_revenue","subcategory":"other_income","amount":2.119448,"disclosure":"aggregated"},
@@ -542,7 +542,7 @@
         {"label":"Solidaritetsmidler","category":"player_transfers","subcategory":"player_sales","amount":1.240989,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.688182,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":17.441622,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":1.061454,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":1.061454,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":41.570877,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -652,7 +652,7 @@
         {"label":"Cupoppgjør NFF","category":"prize_money","subcategory":"competition_bonus","amount":0.18,"disclosure":"aggregated"},
         {"label":"Media/tilskudd UEFA","category":"prize_money","subcategory":"competition_bonus","amount":1.660498,"disclosure":"aggregated"},
         {"label":"Grasrotandel","category":"other_revenue","subcategory":"other_income","amount":1.740286,"disclosure":"aggregated"},
-        {"label":"Gaver/bidrag","category":"other_revenue","subcategory":"other_income","amount":10.682,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"grants_donations","subcategory":"grants_donations","amount":10.682,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.530236,"disclosure":"aggregated"},
         {"label":"Reklame og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":31.324296,"disclosure":"aggregated"},
         {"label":"Kiosk salg","category":"other_revenue","subcategory":"other_income","amount":1.575543,"disclosure":"aggregated"},
@@ -660,7 +660,7 @@
         {"label":"Solidaritetsmidler","category":"player_transfers","subcategory":"player_sales","amount":-0.861223,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.457778,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":7.63828,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":1.214901,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":1.214901,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":31.835973,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -768,7 +768,7 @@
         {"label":"Solidaritetsmidler","category":"player_transfers","subcategory":"player_sales","amount":1.689553,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.465674,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":8.650934,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":7.436111,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":7.436111,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":37.554448,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -853,11 +853,11 @@
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.445746,"disclosure":"aggregated"},
         {"label":"Cupoppgjør NFF","category":"prize_money","subcategory":"competition_bonus","amount":0.923839,"disclosure":"aggregated"},
         {"label":"Grasrotandel","category":"other_revenue","subcategory":"other_income","amount":1.766281,"disclosure":"aggregated"},
-        {"label":"Gaver/bidrag","category":"other_revenue","subcategory":"other_income","amount":0.887134,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"grants_donations","subcategory":"grants_donations","amount":0.887134,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.951984,"disclosure":"aggregated"},
         {"label":"Reklame og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":28.834355,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":9.841624,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":5.807216,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":5.807216,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":23.603583,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -948,7 +948,7 @@
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":44.756778,"disclosure":"aggregated"},
         {"label":"Andre salgsinntekter","category":"other_revenue","subcategory":"other_income","amount":5.510097,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":3.537229,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":1.869388,"disclosure":"aggregated"}
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":1.869388,"disclosure":"aggregated"}
       ],
       "expenses": [
         {
@@ -1013,7 +1013,7 @@
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":6.052044,"disclosure":"aggregated"},
         {"label":"Reklame- og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":32.037096,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":20.144288,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":1.236754,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":1.236754,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":73.670411,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -1074,7 +1074,7 @@
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":134.601796,"disclosure":"aggregated"},
         {"label":"Andre salgsinntekter","category":"other_revenue","subcategory":"other_income","amount":6.625487,"disclosure":"aggregated"},
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":6.280725,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":0.965469,"disclosure":"aggregated"}
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":0.965469,"disclosure":"aggregated"}
       ],
       "expenses": [
         {
@@ -1133,7 +1133,7 @@
         {"label":"Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":9.289541,"disclosure":"aggregated"},
         {"label":"Reklame- og sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":34.435007,"disclosure":"aggregated"},
         {"label":"Mediainntekter","category":"media_rights","subcategory":"broadcasting","amount":18.235206,"disclosure":"aggregated"},
-        {"label":"Tilskudd","category":"other_revenue","subcategory":"other_income","amount":0.76705,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":0.76705,"disclosure":"aggregated"},
         {"label":"Salg/utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":134.979734,"disclosure":"aggregated"}
       ],
       "expenses": [

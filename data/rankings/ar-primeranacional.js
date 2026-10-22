@@ -7,7 +7,7 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"ferrocarriloeste-ar", revenue:13.809, reportType:"official_balance_sheet",
         sourceId:"ferrocarriloeste-ar-balance-ejercicio-121-2024-25",
-        mix:[["Comercial / Sponsors",0.299],["Estadio",0.247],["Televisión",0.452],["Premios por competencias",0.019],["Venta de Jugadores",1.039],["Otras actividades (educación y otros deportes)",5.346],["Otros ingresos",6.406]] },
+        mix:[["Comercial / Sponsors",0.299],["Estadio",0.247],["Televisión",0.452],["Premios por competencias",0.019],["Venta de Jugadores",1.039],["Otras actividades (educación y otros deportes)",5.346],["Subsidios y donaciones",0.004],["Otros ingresos",6.402]] },
     ],
   },
   2023: {
@@ -16,10 +16,10 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"ferrocarriloeste-ar", revenue:11.776, reportType:"official_balance_sheet",
         sourceId:"ferrocarriloeste-ar-balance-119-2022-23",
-        mix:[["Cuotas Sociales",3.427],["Comercial / Sponsors",0.19],["Estadio",0.187],["Televisión",0.45],["Premios por competencias",0.032],["Venta de Jugadores",1.791],["Otras actividades (educación y otros deportes)",4.469],["Otros ingresos",1.229]] },
+        mix:[["Cuotas Sociales",3.427],["Comercial / Sponsors",0.19],["Estadio",0.187],["Televisión",0.45],["Premios por competencias",0.032],["Venta de Jugadores",1.791],["Otras actividades (educación y otros deportes)",4.469],["Subsidios y donaciones",0.004],["Otros ingresos",1.224]] },
       { id:"almagro-ar", revenue:1.209, reportType:"official_balance_sheet",
         sourceId:"almagro-ar-balance-2023",
-        mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",0.188],["Estadio",0.301],["Televisión",0.405],["Premios por competencias",0.037],["Otras actividades (educación y otros deportes)",0.019],["Otros ingresos",0.197]] },
+        mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",0.188],["Estadio",0.301],["Televisión",0.405],["Premios por competencias",0.037],["Otras actividades (educación y otros deportes)",0.019],["Subsidios y donaciones",0.004],["Otros ingresos",0.193]] },
     ],
   },
   2022: {

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "inter-it",
@@ -99,7 +99,7 @@
         {"label":"- Inter Tv","category":"media_rights","subcategory":"broadcasting","amount":3.921,"disclosure":"aggregated"},
         {"label":"- Diversi","category":"other_revenue","subcategory":"other_income","amount":0.07,"disclosure":"aggregated"},
         {"label":"4) Capitalizzazione costi vivaio","category":"other_revenue","subcategory":"other_income","amount":7.526234,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":2.58061,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":2.58061,"disclosure":"aggregated"},
         {
           "label": "b) proventi da sponsorizzazioni",
           "category": "commercial",
@@ -382,7 +382,7 @@
         {"label":"- Archivio Rai/Infront","category":"media_rights","subcategory":"broadcasting","amount":10.423,"disclosure":"aggregated"},
         {"label":"- Inter TV","category":"media_rights","subcategory":"broadcasting","amount":3.992,"disclosure":"aggregated"},
         {"label":"- Diversi","category":"other_revenue","subcategory":"other_income","amount":0.226,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":4.28444,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":4.28444,"disclosure":"aggregated"},
         {
           "label": "b) proventi da sponsorizzazioni",
           "category": "commercial",
@@ -609,7 +609,13 @@
         {"label":"- Inter Tv","category":"media_rights","subcategory":"broadcasting","amount":5.621,"disclosure":"aggregated"},
         {"label":"- Diversi","category":"other_revenue","subcategory":"other_income","amount":0.296,"disclosure":"aggregated"},
         {"label":"4) Capitalizzazione costi vivaio","category":"other_revenue","subcategory":"other_income","amount":8.634746,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":4.652909,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 4.652909,
+          "disclosure": "aggregated"
+        },
         {
           "label": "b) proventi da sponsorizzazioni",
           "category": "commercial",
@@ -889,7 +895,7 @@
         {"label":"Retirement management","category":"other_revenue","subcategory":"other_income","amount":0.564,"disclosure":"aggregated"},
         {"label":"Sport Facilities","category":"other_revenue","subcategory":"other_income","amount":2.167,"disclosure":"aggregated"},
         {"label":"Room and Board for the matches","category":"other_revenue","subcategory":"other_income","amount":0.142,"disclosure":"aggregated"},
-        {"label":"a) grants and contribution","category":"other_revenue","subcategory":"other_income","amount":8.524319,"disclosure":"aggregated"},
+        {"label":"a) grants and contribution","category":"grants_donations","subcategory":"grants_donations","amount":8.524319,"disclosure":"aggregated"},
         {"label":"b) sponsorships","category":"commercial","subcategory":"sponsorship_commercial","amount":41.605362,"disclosure":"aggregated"},
         {"label":"c) advertising income","category":"commercial","subcategory":"sponsorship_commercial","amount":0.007357,"disclosure":"aggregated"},
         {
@@ -1136,7 +1142,7 @@
           "amount": 8.899515,
           "disclosure": "aggregated"
         },
-        {"label":"a) grants and contribution","category":"other_revenue","subcategory":"other_income","amount":16.612651,"disclosure":"aggregated"},
+        {"label":"a) grants and contribution","category":"grants_donations","subcategory":"grants_donations","amount":16.612651,"disclosure":"aggregated"},
         {"label":"b) sponsorships","category":"commercial","subcategory":"sponsorship_commercial","amount":43.497058,"disclosure":"aggregated"},
         {"label":"c) advertising income","category":"commercial","subcategory":"sponsorship_commercial","amount":4.039383,"disclosure":"aggregated"},
         {
@@ -1380,7 +1386,7 @@
           "disclosure": "aggregated"
         },
         {"label":"4) Capitalization of youth programme costs","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
-        {"label":"a) grants and contribution","category":"other_revenue","subcategory":"other_income","amount":17.445533,"disclosure":"aggregated"},
+        {"label":"a) grants and contribution","category":"grants_donations","subcategory":"grants_donations","amount":17.445533,"disclosure":"aggregated"},
         {"label":"b) sponsorships","category":"commercial","subcategory":"sponsorship_commercial","amount":54.378034,"disclosure":"aggregated"},
         {"label":"c) advertising income","category":"commercial","subcategory":"sponsorship_commercial","amount":6.963657,"disclosure":"aggregated"},
         {
@@ -1611,7 +1617,7 @@
           "amount": 0.759266,
           "disclosure": "aggregated"
         },
-        {"label":"a) grants and contribution","category":"other_revenue","subcategory":"other_income","amount":18.243755,"disclosure":"aggregated"},
+        {"label":"a) grants and contribution","category":"grants_donations","subcategory":"grants_donations","amount":18.243755,"disclosure":"aggregated"},
         {"label":"b) sponsorships","category":"commercial","subcategory":"sponsorship_commercial","amount":79.87781,"disclosure":"aggregated"},
         {"label":"c) advertising income","category":"commercial","subcategory":"sponsorship_commercial","amount":8.112225,"disclosure":"aggregated"},
         {
@@ -1837,7 +1843,13 @@
           "amount": 2.022694,
           "disclosure": "aggregated"
         },
-        {"label":"- altri contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":16.374844,"disclosure":"aggregated"},
+        {
+          "label": "- altri contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 16.374844,
+          "disclosure": "aggregated"
+        },
         {
           "label": "b) proventi da sponsorizzazioni",
           "category": "commercial",

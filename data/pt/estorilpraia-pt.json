@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "estorilpraia-pt",
@@ -67,13 +67,13 @@
         },
         {
           "label": "Subsídio do Estado e Outros entes públicos",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.004199,
           "disclosure": "aggregated"
         },
         {"label":"Subsídio da UEFA","category":"prize_money","subcategory":"competition_bonus","amount":0.147702,"disclosure":"aggregated"},
-        {"label":"Outros subsídios","category":"other_revenue","subcategory":"other_income","amount":0.028145,"disclosure":"aggregated"},
+        {"label":"Outros subsídios","category":"grants_donations","subcategory":"grants_donations","amount":0.028145,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.029722,"disclosure":"aggregated"},
         {
           "label": "Correções relativas a períodos anteriores",
@@ -204,13 +204,13 @@
         },
         {
           "label": "Subsídio do Estado e Outros entes públicos",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.018011,
           "disclosure": "aggregated"
         },
         {"label":"Subsídio da UEFA","category":"prize_money","subcategory":"competition_bonus","amount":0.2074,"disclosure":"aggregated"},
-        {"label":"Outros subsídios","category":"other_revenue","subcategory":"other_income","amount":0.019721,"disclosure":"aggregated"},
+        {"label":"Outros subsídios","category":"grants_donations","subcategory":"grants_donations","amount":0.019721,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.028166,"disclosure":"aggregated"},
         {
           "label": "Correções relativas a períodos anteriores",
@@ -342,13 +342,13 @@
         },
         {
           "label": "Subsídio do Estado e Outros entes públicos",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.011783,
           "disclosure": "aggregated"
         },
         {"label":"Subsídio da UEFA","category":"prize_money","subcategory":"competition_bonus","amount":0.219033,"disclosure":"aggregated"},
-        {"label":"Outros subsídios","category":"other_revenue","subcategory":"other_income","amount":0.052314,"disclosure":"aggregated"},
+        {"label":"Outros subsídios","category":"grants_donations","subcategory":"grants_donations","amount":0.052314,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.020348,"disclosure":"aggregated"},
         {
           "label": "Correções relativas a períodos anteriores",
@@ -473,13 +473,13 @@
         },
         {
           "label": "Subsídio do Estado e Outros entes públicos",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.003794,
           "disclosure": "aggregated"
         },
         {"label":"Subsídio da UEFA","category":"prize_money","subcategory":"competition_bonus","amount":0.800451,"disclosure":"aggregated"},
-        {"label":"Outros subsídios","category":"other_revenue","subcategory":"other_income","amount":0.054498,"disclosure":"aggregated"},
+        {"label":"Outros subsídios","category":"grants_donations","subcategory":"grants_donations","amount":0.054498,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.00526,"disclosure":"aggregated"},
         {
           "label": "Correções relativas a períodos anteriores",

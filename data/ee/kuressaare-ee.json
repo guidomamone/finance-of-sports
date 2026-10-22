@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "kuressaare-ee",
@@ -79,12 +79,12 @@
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.068085,"disclosure":"aggregated"},
         {
           "label": "Riigi ja/või kohaliku omavalitsuse toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.021269,
           "disclosure": "aggregated"
         },
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.005607,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.005607,"disclosure":"aggregated"},
         {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.002675,"disclosure":"aggregated"},
         {"label":"Reklaam","category":"commercial","subcategory":"sponsorship_commercial","amount":0.048109,"disclosure":"aggregated"}
       ],
@@ -145,12 +145,12 @@
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.086747,"disclosure":"aggregated"},
         {
           "label": "Riigi ja/või kohaliku omavalitsuse toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.050559,
           "disclosure": "aggregated"
         },
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.001588,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.001588,"disclosure":"aggregated"},
         {"label":"Reklaam","category":"commercial","subcategory":"sponsorship_commercial","amount":0.015833,"disclosure":"aggregated"},
         {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.006307,"disclosure":"aggregated"},
         {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.000001,"disclosure":"aggregated"}
@@ -220,12 +220,12 @@
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.127947,"disclosure":"aggregated"},
         {
           "label": "Riigi ja/või kohaliku omavalitsuse toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.05982,
           "disclosure": "aggregated"
         },
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.001755,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.001755,"disclosure":"aggregated"},
         {"label":"Reklaam","category":"commercial","subcategory":"sponsorship_commercial","amount":0.012383,"disclosure":"aggregated"},
         {"label":"Mängijaõiguste müük","category":"player_transfers","subcategory":"player_sales","amount":0.036564,"disclosure":"aggregated"},
         {"label":"Muud tulud","category":"other_revenue","subcategory":"other_income","amount":0.0008,"disclosure":"aggregated"},
@@ -303,12 +303,12 @@
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.110149,"disclosure":"aggregated"},
         {
           "label": "Riigi ja/või kohaliku omavalitsuse toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.046766,
           "disclosure": "aggregated"
         },
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.002637,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.002637,"disclosure":"aggregated"},
         {"label":"Reklaam","category":"commercial","subcategory":"sponsorship_commercial","amount":0.0045,"disclosure":"aggregated"},
         {"label":"Mängijaõiguste müük","category":"player_transfers","subcategory":"player_sales","amount":0.060505,"disclosure":"aggregated"},
         {"label":"Piletitulu","category":"matchday","subcategory":"matchday_competition","amount":0.000042,"disclosure":"aggregated"},
@@ -378,12 +378,12 @@
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.115198,"disclosure":"aggregated"},
         {
           "label": "Riigi ja/või kohaliku omavalitsuse toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.02864,
           "disclosure": "aggregated"
         },
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.003047,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.003047,"disclosure":"aggregated"},
         {"label":"Reklaam","category":"commercial","subcategory":"sponsorship_commercial","amount":0.007117,"disclosure":"aggregated"},
         {"label":"Piletitulu","category":"matchday","subcategory":"matchday_competition","amount":0.000638,"disclosure":"aggregated"},
         {
@@ -468,12 +468,12 @@
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.112744,"disclosure":"aggregated"},
         {
           "label": "Riigi ja/või kohaliku omavalitsuse toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.015,
           "disclosure": "aggregated"
         },
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.003215,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.003215,"disclosure":"aggregated"},
         {"label":"Sponsorlus- ja reklaamitulu","category":"commercial","subcategory":"sponsorship_commercial","amount":0.003672,"disclosure":"aggregated"},
         {"label":"Piletitulu","category":"matchday","subcategory":"matchday_competition","amount":0.00585,"disclosure":"aggregated"},
         {
@@ -574,12 +574,12 @@
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.159819,"disclosure":"aggregated"},
         {
           "label": "Riigi ja/või kohaliku omavalitsuse toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.08998,
           "disclosure": "aggregated"
         },
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.005561,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.005561,"disclosure":"aggregated"},
         {"label":"Sponsorlus- ja reklaamitulu","category":"commercial","subcategory":"sponsorship_commercial","amount":0.012186,"disclosure":"aggregated"},
         {"label":"Piletitulu","category":"matchday","subcategory":"matchday_competition","amount":0.00536,"disclosure":"aggregated"},
         {

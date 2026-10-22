@@ -4,13 +4,13 @@ const estreladaamadoraPtRevenueLinesByYear = {
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.976145,"disclosureLevel":"aggregated"},
     {"rawLabel":"IEFP","normalizedCategory":"other_income","amountNative":0.080973,"disclosureLevel":"aggregated"},
     {"rawLabel":"PT2020","normalizedCategory":"other_income","amountNative":0.000786,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios de Outras Entidades","normalizedCategory":"other_income","amountNative":0.055844,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios de Outras Entidades","normalizedCategory":"grants_donations","amountNative":0.055844,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos nos Restantes Ativos Financeiros","normalizedCategory":"other_income","amountNative":0.000117,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos em Investimentos não Financeiros","normalizedCategory":"player_sales","amountNative":0.475764,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":1.07693,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":0.809546,"disclosureLevel":"aggregated"},
   ],
 };

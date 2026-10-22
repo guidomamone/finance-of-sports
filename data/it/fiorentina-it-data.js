@@ -60,7 +60,7 @@ const fiorentinaItRevenueLinesByYear = {
   ],
   2021: [
     {"rawLabel":"1) ricavi delle vendite e delle prestazioni","normalizedCategory":"matchday_competition","amountNative":0.005491,"disclosureLevel":"aggregated"},
-    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ricavi da sponsorizzazioni ufficiali","normalizedCategory":"sponsorship_commercial","amountNative":42.203549,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ricavi da sponsor tecnico","normalizedCategory":"sponsorship_commercial","amountNative":1.4,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ricavi da altre sponsorizzazioni commerciali","normalizedCategory":"sponsorship_commercial","amountNative":1.307355,"disclosureLevel":"aggregated"},
@@ -121,7 +121,7 @@ const fiorentinaItRevenueLinesByYear = {
   2024: [
     {"rawLabel":"a) ricavi da gare","normalizedCategory":"matchday_competition","amountNative":8.535557,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) abbonamenti","normalizedCategory":"season_tickets","amountNative":5.762819,"disclosureLevel":"aggregated"},
-    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"other_income","amountNative":28.844321,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":28.844321,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) proventi da sponsorizzazioni","normalizedCategory":"sponsorship_commercial","amountNative":31.405608,"disclosureLevel":"aggregated"},
     {"rawLabel":"c) proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":10.47712,"disclosureLevel":"aggregated"},
     {"rawLabel":"d) proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":3.683334,"disclosureLevel":"aggregated"},
@@ -135,7 +135,7 @@ const fiorentinaItRevenueLinesByYear = {
   2025: [
     {"rawLabel":"a) ricavi da gare","normalizedCategory":"matchday_competition","amountNative":6.58165,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) abbonamenti","normalizedCategory":"season_tickets","amountNative":4.700496,"disclosureLevel":"aggregated"},
-    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"other_income","amountNative":21.493476,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":21.493476,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) proventi da sponsorizzazioni","normalizedCategory":"sponsorship_commercial","amountNative":32.070851,"disclosureLevel":"aggregated"},
     {"rawLabel":"c) proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":9.745695,"disclosureLevel":"aggregated"},
     {"rawLabel":"d) proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":4.01346,"disclosureLevel":"aggregated"},

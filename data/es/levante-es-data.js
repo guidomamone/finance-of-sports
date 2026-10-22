@@ -8,7 +8,7 @@ const levanteEsRevenueLinesByYear = {
     {"rawLabel":"Ingresos por publicidad","normalizedCategory":"sponsorship_commercial","amountNative":1.37046,"disclosureLevel":"detailed"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":0.04463,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos accesorios y otros de gestión corriente","normalizedCategory":"other_income","amountNative":0.13348,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"other_income","amountNative":1.01511,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"grants_donations","amountNative":1.01511,"disclosureLevel":"detailed"},
   ],
 };
 

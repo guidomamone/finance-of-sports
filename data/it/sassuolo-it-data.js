@@ -22,7 +22,7 @@ const sassuoloItRevenueLinesByYear = {
     {"rawLabel":"Proventi da cessioni temporanee calciatori","normalizedCategory":"player_sales","amountNative":5.889,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi diversi","normalizedCategory":"other_income","amountNative":5.018,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) plusvalenze","normalizedCategory":"player_sales","amountNative":43.399333,"disclosureLevel":"aggregated"},
-    {"rawLabel":"f) Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":2.188567,"disclosureLevel":"aggregated"},
+    {"rawLabel":"f) Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":2.188567,"disclosureLevel":"aggregated"},
   ],
   2020: [
     {"rawLabel":"Ricavi da gare in casa","normalizedCategory":"matchday_competition","amountNative":0.226,"disclosureLevel":"aggregated"},

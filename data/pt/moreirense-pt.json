@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "moreirense-pt",
@@ -56,7 +56,7 @@
         {"label":"Vendas","category":"commercial","subcategory":"sponsorship_commercial","amount":0.001865,"disclosure":"aggregated"},
         {"label":"Direitos Televisivos","category":"media_rights","subcategory":"broadcasting","amount":3.6,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.755346,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.259935,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.259935,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.061432,"disclosure":"aggregated"},
         {
           "label": "Rendimentos em investimentos não financeiros",
@@ -322,7 +322,7 @@
         {"label":"Vendas","category":"commercial","subcategory":"sponsorship_commercial","amount":0.002756,"disclosure":"aggregated"},
         {"label":"Direitos Televisivos","category":"media_rights","subcategory":"broadcasting","amount":3.6,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.870241,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.683792,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.683792,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.036198,"disclosure":"aggregated"},
         {"label":"Descontos de pronto pagamento obtidos","category":"other_revenue","subcategory":"other_income","amount":0.020423,"disclosure":"aggregated"},
         {

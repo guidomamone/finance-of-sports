@@ -7,7 +7,7 @@ const fcemmenNlRevenueLinesByYear = {
     {"rawLabel":"Prijzengeld","normalizedCategory":"competition_bonus","amountNative":0.325,"disclosureLevel":"aggregated"},
     {"rawLabel":"Horeca","normalizedCategory":"stadium_other","amountNative":0.579,"disclosureLevel":"aggregated"},
     {"rawLabel":"Merchandise","normalizedCategory":"sponsorship_commercial","amountNative":0.114,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies & giften","normalizedCategory":"other_income","amountNative":0.056,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies & giften","normalizedCategory":"grants_donations","amountNative":0.056,"disclosureLevel":"aggregated"},
     {"rawLabel":"Overige baten","normalizedCategory":"other_income","amountNative":0.133,"disclosureLevel":"aggregated"},
   ],
   2020: [
@@ -17,7 +17,7 @@ const fcemmenNlRevenueLinesByYear = {
     {"rawLabel":"Prijzengeld","normalizedCategory":"competition_bonus","amountNative":0.315,"disclosureLevel":"aggregated"},
     {"rawLabel":"Horeca","normalizedCategory":"stadium_other","amountNative":0.453,"disclosureLevel":"aggregated"},
     {"rawLabel":"Merchandise","normalizedCategory":"sponsorship_commercial","amountNative":0.182,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies & giften","normalizedCategory":"other_income","amountNative":0.119,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies & giften","normalizedCategory":"grants_donations","amountNative":0.119,"disclosureLevel":"aggregated"},
     {"rawLabel":"Overige baten","normalizedCategory":"other_income","amountNative":0.881,"disclosureLevel":"aggregated"},
     {"rawLabel":"Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen","normalizedCategory":"player_sales","amountNative":0.857,"disclosureLevel":"aggregated"},
   ],
@@ -28,7 +28,7 @@ const fcemmenNlRevenueLinesByYear = {
     {"rawLabel":"Prijzengeld","normalizedCategory":"competition_bonus","amountNative":0.365,"disclosureLevel":"aggregated"},
     {"rawLabel":"Horeca","normalizedCategory":"stadium_other","amountNative":0.123,"disclosureLevel":"aggregated"},
     {"rawLabel":"Merchandise","normalizedCategory":"sponsorship_commercial","amountNative":0.222,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies & giften","normalizedCategory":"other_income","amountNative":1.28,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies & giften","normalizedCategory":"grants_donations","amountNative":1.28,"disclosureLevel":"aggregated"},
     {"rawLabel":"Overige baten","normalizedCategory":"other_income","amountNative":0.395,"disclosureLevel":"aggregated"},
   ],
 };

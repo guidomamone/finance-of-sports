@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fiorentina-it",
@@ -667,7 +667,7 @@
           "amount": 0.005491,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {
           "label": "Ricavi da sponsorizzazioni ufficiali",
           "category": "commercial",
@@ -1234,7 +1234,13 @@
       "revenue": [
         {"label":"a) ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":8.535557,"disclosure":"aggregated"},
         {"label":"b) abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":5.762819,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":28.844321,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 28.844321,
+          "disclosure": "aggregated"
+        },
         {
           "label": "b) proventi da sponsorizzazioni",
           "category": "commercial",
@@ -1404,7 +1410,13 @@
       "revenue": [
         {"label":"a) ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":6.58165,"disclosure":"aggregated"},
         {"label":"b) abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":4.700496,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":21.493476,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 21.493476,
+          "disclosure": "aggregated"
+        },
         {
           "label": "b) proventi da sponsorizzazioni",
           "category": "commercial",

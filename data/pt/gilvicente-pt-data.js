@@ -28,7 +28,7 @@ const gilvicentePtRevenueLinesByYear = {
     {"rawLabel":"Direitos Televisivos","normalizedCategory":"broadcasting","amountNative":4.8,"disclosureLevel":"aggregated"},
     {"rawLabel":"Participação nas Competições - Taça da Liga","normalizedCategory":"competition_bonus","amountNative":0.0295,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outras Prestações de Serviços","normalizedCategory":"other_income","amountNative":0.084168,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.005085,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.005085,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos suplementares","normalizedCategory":"other_income","amountNative":0.377716,"disclosureLevel":"aggregated"},
     {"rawLabel":"Correções relativas a períodos anteriores","normalizedCategory":"other_income","amountNative":0.16614,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros não especificados","normalizedCategory":"other_income","amountNative":0.000003,"disclosureLevel":"aggregated"},

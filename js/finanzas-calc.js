@@ -232,6 +232,7 @@
     ...(ABONOS_DENTRO_DE_ESTADIO ? [] : [{label:'Abonos', gens:['season_tickets']}]),
     {label:'Venta de Jugadores', gens:['player_transfers']},
     {label:'Otras actividades (educación y otros deportes)', gens:['non_sporting_activities','other_sporting_sections']},
+    {label:'Subsidios y donaciones', gens:['grants_donations']},
     {label:'Fútbol profesional (sin desglosar por la fuente)', gens:['undisclosed'], hideIfZero:true},
   ];
 
@@ -510,6 +511,7 @@
     {label:'Abonos', color:'#e07b39'},
     {label:'Venta de Jugadores', color:'#b5372b'},
     {label:'Otras actividades (educación y otros deportes)', color:'#4a7c9e'},
+    {label:'Subsidios y donaciones', color:'#7a9e4a'},
     {label:'Fútbol profesional (sin desglosar por la fuente)', color:'#c2185b'},
     {label:'Rugby profesional (sin desglosar por la fuente)', color:'#c2185b'},
     {label:'Otros ingresos', color:'#6b6b6b'},

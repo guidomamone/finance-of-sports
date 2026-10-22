@@ -7,7 +7,7 @@ window.RANKINGS["it-seriec"] = {
     clubs: [
       { id:"juvestabia-it", revenue:4.392, reportType:"official_balance_sheet",
         sourceId:"juvestabia-it-bilancio-2024-ifrs-sec-6k",
-        mix:[["Comercial / Sponsors",2.407],["Estadio",0.779],["Televisión",0.054],["Venta de Jugadores",0.246],["Otros ingresos",0.906]] },
+        mix:[["Comercial / Sponsors",2.407],["Estadio",0.779],["Televisión",0.054],["Venta de Jugadores",0.246],["Subsidios y donaciones",0.577],["Otros ingresos",0.33]] },
     ],
   },
   2017: {

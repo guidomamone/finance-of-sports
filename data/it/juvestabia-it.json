@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "juvestabia-it",
@@ -37,7 +37,7 @@
         {"label":"Ticketing","category":"matchday","subcategory":"matchday_competition","amount":0.727035,"disclosure":"aggregated"},
         {"label":"Gain on transfer of players","category":"player_transfers","subcategory":"player_sales","amount":0.23,"disclosure":"aggregated"},
         {"label":"Revenue from Television rights","category":"media_rights","subcategory":"broadcasting","amount":0.05,"disclosure":"aggregated"},
-        {"label":"Revenue from Contributions","category":"other_revenue","subcategory":"other_income","amount":0.538644,"disclosure":"aggregated"},
+        {"label":"Revenue from Contributions","category":"grants_donations","subcategory":"grants_donations","amount":0.538644,"disclosure":"aggregated"},
         {"label":"Revenue from store","category":"commercial","subcategory":"sponsorship_commercial","amount":0.074261,"disclosure":"aggregated"},
         {"label":"Other incomes","category":"other_revenue","subcategory":"other_income","amount":0.116954,"disclosure":"aggregated"},
         {"label":"Other incomes","category":"other_revenue","subcategory":"other_income","amount":0.190721,"disclosure":"aggregated"}

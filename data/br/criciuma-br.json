@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "criciuma-br",
@@ -128,7 +128,7 @@
         {"label":"Extraordinárias","category":"other_revenue","subcategory":"other_income","amount":0.303164,"disclosure":"aggregated"},
         {"label":"Venda de mercadorias","category":"commercial","subcategory":"sponsorship_commercial","amount":0.655157,"disclosure":"aggregated"},
         {"label":"Royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.186412,"disclosure":"aggregated"},
-        {"label":"Subvenções","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outras receitas","category":"other_revenue","subcategory":"other_income","amount":0.088605,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -564,7 +564,7 @@
         {"label":"Receita com transmissão televisíveis","category":"media_rights","subcategory":"broadcasting","amount":7.825593,"disclosure":"aggregated"},
         {"label":"Receita com mensalidades de sócios","category":"membership","subcategory":"member_dues","amount":3.601009,"disclosure":"aggregated"},
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":2.407857,"disclosure":"aggregated"},
-        {"label":"Receita de subvenções","category":"other_revenue","subcategory":"other_income","amount":0.536091,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.536091,"disclosure":"aggregated"},
         {"label":"Receita com negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":12.8675,"disclosure":"aggregated"},
         {"label":"Receita com jogos","category":"matchday","subcategory":"matchday_competition","amount":0.518477,"disclosure":"aggregated"},
         {"label":"Receita Loteria Esportiva/Timemania","category":"other_revenue","subcategory":"other_income","amount":0.250696,"disclosure":"aggregated"},
@@ -618,7 +618,7 @@
         {"label":"Receita com transmissão","category":"media_rights","subcategory":"broadcasting","amount":10.799073,"disclosure":"aggregated"},
         {"label":"Receita com sócios","category":"membership","subcategory":"member_dues","amount":3.003071,"disclosure":"aggregated"},
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":1.264179,"disclosure":"aggregated"},
-        {"label":"Receita de subvenções","category":"other_revenue","subcategory":"other_income","amount":1.417122,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"grants_donations","subcategory":"grants_donations","amount":1.417122,"disclosure":"aggregated"},
         {"label":"Receita com negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":7.58,"disclosure":"aggregated"},
         {"label":"Receita com jogos","category":"matchday","subcategory":"matchday_competition","amount":0.73129,"disclosure":"aggregated"},
         {"label":"Demais Receitas","category":"other_revenue","subcategory":"other_income","amount":1.344944,"disclosure":"aggregated"}
@@ -668,7 +668,7 @@
         {"label":"Receita com transmissão","category":"media_rights","subcategory":"broadcasting","amount":2.390861,"disclosure":"aggregated"},
         {"label":"Receita com sócios","category":"membership","subcategory":"member_dues","amount":1.804347,"disclosure":"aggregated"},
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":0.501123,"disclosure":"aggregated"},
-        {"label":"Receita de subvenções","category":"other_revenue","subcategory":"other_income","amount":0.449258,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.449258,"disclosure":"aggregated"},
         {"label":"Receita com negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":7.895414,"disclosure":"aggregated"},
         {"label":"Receita com jogos","category":"matchday","subcategory":"matchday_competition","amount":0.090646,"disclosure":"aggregated"},
         {"label":"Demais Receitas","category":"other_revenue","subcategory":"other_income","amount":0.69758,"disclosure":"aggregated"}
@@ -718,7 +718,7 @@
         {"label":"Receita com transmissão","category":"media_rights","subcategory":"broadcasting","amount":7.707719,"disclosure":"aggregated"},
         {"label":"Receita com sócios","category":"membership","subcategory":"member_dues","amount":1.721452,"disclosure":"aggregated"},
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":1.885235,"disclosure":"aggregated"},
-        {"label":"Receita de subvenções","category":"other_revenue","subcategory":"other_income","amount":0.342203,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.342203,"disclosure":"aggregated"},
         {"label":"Receita com negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":0.227584,"disclosure":"aggregated"},
         {"label":"Receita com jogos","category":"matchday","subcategory":"matchday_competition","amount":0.15963,"disclosure":"aggregated"},
         {
@@ -841,7 +841,7 @@
         {"label":"Receita com transmissão","category":"media_rights","subcategory":"broadcasting","amount":14.011212,"disclosure":"aggregated"},
         {"label":"Receita com sócios","category":"membership","subcategory":"member_dues","amount":15.373894,"disclosure":"aggregated"},
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":4.1016,"disclosure":"aggregated"},
-        {"label":"Receita de subvenções","category":"other_revenue","subcategory":"other_income","amount":0.51435,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.51435,"disclosure":"aggregated"},
         {"label":"Receita com negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":0.461839,"disclosure":"aggregated"},
         {"label":"Receita com jogos","category":"matchday","subcategory":"matchday_competition","amount":0.920438,"disclosure":"aggregated"},
         {
@@ -907,7 +907,7 @@
         {"label":"Receita com transmissão","category":"media_rights","subcategory":"broadcasting","amount":60.386671,"disclosure":"aggregated"},
         {"label":"Receita com sócios","category":"membership","subcategory":"member_dues","amount":20.169677,"disclosure":"aggregated"},
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":10.039129,"disclosure":"aggregated"},
-        {"label":"Receita de subvenções","category":"other_revenue","subcategory":"other_income","amount":0.529636,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.529636,"disclosure":"aggregated"},
         {"label":"Receita com negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":1.947359,"disclosure":"aggregated"},
         {"label":"Receita com jogos","category":"matchday","subcategory":"matchday_competition","amount":2.967683,"disclosure":"aggregated"},
         {
@@ -973,7 +973,7 @@
         {"label":"Receita com transmissão","category":"media_rights","subcategory":"broadcasting","amount":19.562719,"disclosure":"aggregated"},
         {"label":"Receita com sócios","category":"membership","subcategory":"member_dues","amount":17.899329,"disclosure":"aggregated"},
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":5.707084,"disclosure":"aggregated"},
-        {"label":"Receita de subvenções","category":"other_revenue","subcategory":"other_income","amount":0.978593,"disclosure":"aggregated"},
+        {"label":"Receita de subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.978593,"disclosure":"aggregated"},
         {"label":"Receita com negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":6.3372,"disclosure":"aggregated"},
         {"label":"Receita com jogos","category":"matchday","subcategory":"matchday_competition","amount":0.966982,"disclosure":"aggregated"},
         {

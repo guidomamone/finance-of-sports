@@ -7,7 +7,7 @@ const exetercityGbRevenueLinesByYear = {
     {"rawLabel":"Football League","normalizedCategory":"broadcasting","amountNative":2.710542,"disclosureLevel":"aggregated"},
     {"rawLabel":"Television income","normalizedCategory":"broadcasting","amountNative":0.01,"disclosureLevel":"aggregated"},
     {"rawLabel":"Food and drink sales","normalizedCategory":"stadium_other","amountNative":0.886029,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Grants and donations","normalizedCategory":"other_income","amountNative":0.615898,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Grants and donations","normalizedCategory":"grants_donations","amountNative":0.615898,"disclosureLevel":"aggregated"},
     {"rawLabel":"Insurance claims receivable","normalizedCategory":"other_income","amountNative":0.006475,"disclosureLevel":"aggregated"},
     {"rawLabel":"Transfer revenue","normalizedCategory":"player_sales","amountNative":4.929505,"disclosureLevel":"aggregated"},
   ],

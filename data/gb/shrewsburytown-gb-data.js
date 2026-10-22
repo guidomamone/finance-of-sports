@@ -7,7 +7,7 @@ const shrewsburytownGbRevenueLinesByYear = {
     {"rawLabel":"Sundry Income","normalizedCategory":"other_income","amountNative":1.353709,"disclosureLevel":"aggregated"},
     {"rawLabel":"Academy income","normalizedCategory":"youth_football","amountNative":0.555635,"disclosureLevel":"aggregated"},
     {"rawLabel":"Television and internet portal income","normalizedCategory":"broadcasting","amountNative":0.022903,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributions from support organisations","normalizedCategory":"other_income","amountNative":0.040037,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributions from support organisations","normalizedCategory":"grants_donations","amountNative":0.040037,"disclosureLevel":"aggregated"},
     {"rawLabel":"Food and Beverage sales","normalizedCategory":"stadium_other","amountNative":0.787364,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other operating income","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
   ],

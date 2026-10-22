@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "agf-dk",
@@ -65,8 +65,8 @@
         {"label":"Anden omsætning, tjenesteydelser","category":"other_revenue","subcategory":"other_income","amount":13.524,"disclosure":"detailed"},
         {
           "label": "Offentlige tilskud (subvenciones estatales COVID-19)",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 15.91,
           "disclosure": "detailed"
         },

@@ -7,7 +7,7 @@ const fceindhovenNlRevenueLinesByYear = {
     {"rawLabel":"Merchandise","normalizedCategory":"sponsorship_commercial","amountNative":0.053163,"disclosureLevel":"aggregated"},
     {"rawLabel":"Horeca","normalizedCategory":"stadium_other","amountNative":0.505989,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prijzengeld","normalizedCategory":"competition_bonus","amountNative":0.219257,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies","normalizedCategory":"other_income","amountNative":0.131255,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies","normalizedCategory":"grants_donations","amountNative":0.131255,"disclosureLevel":"aggregated"},
     {"rawLabel":"Overige baten","normalizedCategory":"other_income","amountNative":0.792862,"disclosureLevel":"aggregated"},
     {"rawLabel":"Resultaat vergoedingssommen","normalizedCategory":"player_sales","amountNative":0.561077,"disclosureLevel":"aggregated"},
   ],

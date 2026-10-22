@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "akrontolyatti-ru",
@@ -64,8 +64,8 @@
         {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":0.428,"disclosure":"aggregated"},
         {
           "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 321.341,
           "disclosure": "aggregated"
         }
@@ -144,11 +144,11 @@
       "revenue": [
         {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":13.166,"disclosure":"aggregated"},
         {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":1.087,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":42,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"grants_donations","subcategory":"grants_donations","amount":42,"disclosure":"aggregated"},
         {
           "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 351.134,
           "disclosure": "aggregated"
         }
@@ -227,11 +227,11 @@
       "revenue": [
         {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":55.338,"disclosure":"aggregated"},
         {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":49.914,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":0.253,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"grants_donations","subcategory":"grants_donations","amount":0.253,"disclosure":"aggregated"},
         {
           "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 466.986,
           "disclosure": "aggregated"
         }
@@ -310,11 +310,11 @@
       "revenue": [
         {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":337.147,"disclosure":"aggregated"},
         {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":56.645,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":0.634,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"grants_donations","subcategory":"grants_donations","amount":0.634,"disclosure":"aggregated"},
         {
           "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 1345.02,
           "disclosure": "aggregated"
         },
@@ -396,8 +396,8 @@
         {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":57.41,"disclosure":"aggregated"},
         {
           "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 1615.051,
           "disclosure": "aggregated"
         },

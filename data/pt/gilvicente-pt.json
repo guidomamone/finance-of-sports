@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "gilvicente-pt",
@@ -277,7 +277,7 @@
           "disclosure": "aggregated"
         },
         {"label":"Outras Prestações de Serviços","category":"other_revenue","subcategory":"other_income","amount":0.084168,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.005085,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.005085,"disclosure":"aggregated"},
         {"label":"Outros rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.377716,"disclosure":"aggregated"},
         {
           "label": "Correções relativas a períodos anteriores",

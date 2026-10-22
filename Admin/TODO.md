@@ -33,25 +33,12 @@ los 10 británicos nuevos del 356 (sus sueldos entraron con `incluye wages_squad
 
 Verificar: manual
 
-### 2. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
+### 2. 350 · (Auditora, al final de A): revisar con Guido la fila nueva y el proceso de revisión de categorías
 
-CATEGORÍA PARA SUBSIDIOS Y DONACIONES (Auditora 4, 2ª corrida de P2 y P3, 2026-10-21; Guido: «dejalo como to do»). Buena parte de los
-~130 `catchall-dominante` son subsidios, donaciones y aportes (Subsídios, Επιχορηγήσεις, Целевые взносы; ligas bajas de Grecia, Rusia y
-Portugal) que la taxonomía no tiene dónde poner. Es una votación de criterio (`votacion-de-criterios`); por la regla vigente no recategoriza
-lo ya cargado.
-Además (Guido, 2026-10-21): revisar si la categoría de educación tiene sentido (se abrió por Vélez y parece aplicar a pocos clubes
-argentinos), y antes de votar, un relevamiento exhaustivo de qué categorías y subcategorías de la taxonomía están en vano hoy: cuántos
-clubes y años usan cada una, con qué monto, y cuáles casi nadie usa.
-Y (Guido, 2026-10-21): una skill o un proceso para revisar categorías, «así no es un gut feeling»: cuándo se revisa la taxonomía, con
-qué medición (uso por categoría, monto, deportes y países), qué umbral abre o cierra una categoría y cómo se vota. Texto de skill para el
-ok de Guido.
-Hecho (Auditora 5): medición, votación 3 a 0 por `grants_donations` y texto del proceso en `Admin/propuestas/350-revision-categorias.md`.
-Guido (2026-10-21): todavía no se crea la categoría. Antes, al terminar el resto del bloque A, una tabla con cada fila del Formato
-simplificado y en cuántos club-años de cuántos queda en 0 (por deporte y por país). Ninguna fila se oculta en cero: el formato es
-siempre igual (la propuesta de `hideIfZero` para la fila nueva y para Educación queda descartada).
-HECHA LA TABLA (2026-10-22): `Admin/mediciones/filas-formato-simplificado.md`, generada por `tools/relevancia-filas.mjs` (se regenera sola al cerrar cada carga; `node tools/fos.mjs filas`). Por fila: club-años y clubes con número, cuánto pesa cuando la tienen (mediana y % de casos de 10 % o más de la sección), cero real, «—» sin saber, y dónde (países y deportes). Incluye la candidata «Subsidios y donaciones» medida sobre las líneas que hoy caen en «Otros ingresos» (estricta y amplia). QUEDA SOLO LA DECISIÓN DE GUIDO con esos números: Educación (¿se queda?), abrir o no la categoría de subsidios y donaciones (votación `votacion-de-criterios` si sigue), y el umbral que abre o cierra una fila para el proceso de revisión de categorías (`Admin/propuestas/350-revision-categorias.md`).
+HECHO (2026-10-22): Educación se fusionó con Otras secciones en una fila, «Otras actividades (educación y otros deportes)» (vista, sin tocar datos); se abrió la fila «Subsidios y donaciones» (categoría `grants_donations`, REGLA en CONVENCIONES-DATOS) y se recategorizó lo ya cargado por etiqueta (468 líneas en 111 clubes, `tools/recategorizar-subsidios.mjs`, decisiones en `tools/subsidios-etiquetas.json`). La tabla de relevancia es `Admin/mediciones/filas-formato-simplificado.md` (`node tools/fos.mjs filas`).
+QUEDA: (1) que Guido mire las dos filas en el navegador antes de publicar (Vélez para Otras actividades; Flora Tallinn y Académica para Subsidios); (2) revisar a mano las 67 etiquetas excluidas (`node tools/recategorizar-subsidios.mjs --listar --todas`), sobre todo las que reparte la federación o la liga (EJL, Contributi Federali, FPF/LPF): hoy quedan fuera por la REGLA de solidaridad; (3) decidir si el umbral de abrir o cerrar una fila (propuesta `Admin/propuestas/350-revision-categorias.md`, sección 3: 15 % de los clubes para una genérica) se escribe como texto de la skill `club-data-mapping`; con la tabla ya hay evidencia para usarlo; (4) el chequeo `revision-taxonomia-vencida` de audit.js de esa propuesta.
 
-Verificar: existe Admin/mediciones/filas-formato-simplificado.md
+Verificar: contiene js/finanzas-calc.js | Subsidios y donaciones
 Verificar: manual
 
 ### 3. 257 · (Orden 1): Deportes Tolima, sin cargar por una duda sobre el resultado de 2025

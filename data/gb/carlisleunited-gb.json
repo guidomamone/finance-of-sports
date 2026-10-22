@@ -43,7 +43,7 @@
         {"label":"Donations","category":"other_revenue","subcategory":"other_income","amount":0.045671,"disclosure":"aggregated"},
         {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0.13157,"disclosure":"aggregated"},
         {"label":"Net rents receivable","category":"other_revenue","subcategory":"other_income","amount":0.029103,"disclosure":"aggregated"},
-        {"label":"Government grants receivable","category":"other_revenue","subcategory":"other_income","amount":0.028378,"disclosure":"aggregated"},
+        {"label":"Government grants receivable","category":"grants_donations","subcategory":"grants_donations","amount":0.028378,"disclosure":"aggregated"},
         {"label":"Insurance claims receivable","category":"other_revenue","subcategory":"other_income","amount":0.01069,"disclosure":"aggregated"}
       ],
       "expenses": [

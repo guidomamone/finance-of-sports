@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "hellasverona-it",
@@ -122,7 +122,13 @@
           "disclosure": "aggregated"
         },
         {"label":"1h) Ricavi e proventi diversi","category":"other_revenue","subcategory":"other_income","amount":2.008318,"disclosure":"aggregated"},
-        {"label":"b) Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.909502,"disclosure":"aggregated"}
+        {
+          "label": "b) Contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.909502,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
         {
@@ -316,7 +322,7 @@
       "revenue": [
         {"label":"Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":0.006244,"disclosure":"aggregated"},
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":0,"disclosure":"aggregated"},
-        {"label":"a) Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.40173,"disclosure":"aggregated"},
+        {"label":"a) Contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":1.40173,"disclosure":"aggregated"},
         {"label":"b) Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":3.361284,"disclosure":"aggregated"},
         {"label":"c) Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.15,"disclosure":"aggregated"},
         {
@@ -525,7 +531,13 @@
         {"label":"Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":2.696165,"disclosure":"aggregated"},
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":1.29878,"disclosure":"aggregated"},
         {"label":"Corrispettivi","category":"matchday","subcategory":"matchday_competition","amount":1.320626,"disclosure":"aggregated"},
-        {"label":"a) Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.952128,"disclosure":"aggregated"},
+        {
+          "label": "a) Contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 1.952128,
+          "disclosure": "aggregated"
+        },
         {"label":"b) Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":9.073346,"disclosure":"aggregated"},
         {"label":"c) Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
         {
@@ -736,7 +748,13 @@
         {"label":"a) Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":2.502149,"disclosure":"aggregated"},
         {"label":"b) Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":1.953526,"disclosure":"aggregated"},
         {"label":"c) Corrispettivi Store","category":"commercial","subcategory":"sponsorship_commercial","amount":1.473301,"disclosure":"aggregated"},
-        {"label":"a) Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.324461,"disclosure":"aggregated"},
+        {
+          "label": "a) Contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 1.324461,
+          "disclosure": "aggregated"
+        },
         {"label":"b) Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":9.066377,"disclosure":"aggregated"},
         {"label":"c) Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
         {
@@ -958,7 +976,7 @@
         {"label":"Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":3.096307,"disclosure":"aggregated"},
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":2.140199,"disclosure":"aggregated"},
         {"label":"Corrispettivi Store","category":"commercial","subcategory":"sponsorship_commercial","amount":1.694135,"disclosure":"aggregated"},
-        {"label":"Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.907003,"disclosure":"aggregated"},
+        {"label":"Contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":1.907003,"disclosure":"aggregated"},
         {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":11.303402,"disclosure":"aggregated"},
         {"label":"Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
         {"label":"Proventi commerciali e royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":1.02,"disclosure":"aggregated"},
@@ -1203,7 +1221,7 @@
         {"label":"Ricavi da gare","category":"matchday","subcategory":"matchday_competition","amount":2.882969,"disclosure":"aggregated"},
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":2.631439,"disclosure":"aggregated"},
         {"label":"Corrispettivi Store","category":"commercial","subcategory":"sponsorship_commercial","amount":2.126867,"disclosure":"aggregated"},
-        {"label":"Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.530688,"disclosure":"aggregated"},
+        {"label":"Contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":1.530688,"disclosure":"aggregated"},
         {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":11.482452,"disclosure":"aggregated"},
         {
           "label": "Proventi commerciali e royalties",

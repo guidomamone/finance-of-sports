@@ -8,7 +8,7 @@ const chesterfieldGbRevenueLinesByYear = {
     {"rawLabel":"Other income","normalizedCategory":"other_income","amountNative":0.714996,"disclosureLevel":"aggregated"},
     {"rawLabel":"Amortisation of government grants receivable","normalizedCategory":"other_income","amountNative":0.073349,"disclosureLevel":"aggregated"},
     {"rawLabel":"Lease premium income","normalizedCategory":"other_income","amountNative":0.0056,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Other grants receivable","normalizedCategory":"other_income","amountNative":0.0024,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Other grants receivable","normalizedCategory":"grants_donations","amountNative":0.0024,"disclosureLevel":"aggregated"},
   ],
 };
 

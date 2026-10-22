@@ -4,12 +4,12 @@ const harjujklaagriEeRevenueLinesByYear = {
     {"rawLabel":"Tulu ettevõtlusest","normalizedCategory":"sponsorship_commercial","amountNative":0.168999,"disclosureLevel":"aggregated"},
   ],
   2024: [
-    {"rawLabel":"Annetused ja toetused","normalizedCategory":"other_income","amountNative":0.0025,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.0025,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tulu ettevõtlusest","normalizedCategory":"sponsorship_commercial","amountNative":0.048202,"disclosureLevel":"aggregated"},
   ],
   2025: [
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.005,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtotstarbelised annetused ja toetused-Riigi ja KOV toetused","normalizedCategory":"other_income","amountNative":0.0025,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.005,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtotstarbelised annetused ja toetused-Riigi ja KOV toetused","normalizedCategory":"grants_donations","amountNative":0.0025,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtotstarvelised annetused ja toetused-EJL","normalizedCategory":"other_income","amountNative":0.288916,"disclosureLevel":"aggregated"},
     {"rawLabel":"Reklaamitulu","normalizedCategory":"sponsorship_commercial","amountNative":0.0782,"disclosureLevel":"aggregated"},
     {"rawLabel":"Teenuste müük","normalizedCategory":"other_income","amountNative":0.00022,"disclosureLevel":"aggregated"},

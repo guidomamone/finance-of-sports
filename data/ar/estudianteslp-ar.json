@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "estudianteslp-ar",
@@ -83,7 +83,13 @@
           "amount": 147.605277,
           "disclosure": "detailed"
         },
-        {"label":"Recursos por subvención provincial","category":"other_revenue","subcategory":"other_income","amount":86.637846,"disclosure":"detailed"},
+        {
+          "label": "Recursos por subvención provincial",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 86.637846,
+          "disclosure": "detailed"
+        },
         {"label":"Abonos a plateas","category":"season_tickets","subcategory":"season_tickets","amount":84.81457,"disclosure":"detailed"},
         {
           "label": "Recursos fútbol infantil/amateur",
@@ -93,7 +99,7 @@
           "disclosure": "detailed"
         },
         {"label":"Colonia de vacaciones","category":"other_sporting_sections","subcategory":"other_sports","amount":16.333259,"disclosure":"detailed"},
-        {"label":"Subvenciones a la explotación","category":"other_revenue","subcategory":"other_income","amount":9.690346,"disclosure":"detailed"},
+        {"label":"Subvenciones a la explotación","category":"grants_donations","subcategory":"grants_donations","amount":9.690346,"disclosure":"detailed"},
         {
           "label": "Recursos por temporada de verano",
           "category": "other_sporting_sections",
@@ -265,7 +271,13 @@
           "disclosure": "detailed"
         },
         {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":203.502078,"disclosure":"detailed"},
-        {"label":"Recursos por subvención provincial","category":"other_revenue","subcategory":"other_income","amount":184.271364,"disclosure":"detailed"},
+        {
+          "label": "Recursos por subvención provincial",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 184.271364,
+          "disclosure": "detailed"
+        },
         {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":954.851714,"disclosure":"detailed"},
         {
           "label": "Recursos fútbol infantil/amateur",
@@ -291,7 +303,7 @@
           "amount": 5.695584,
           "disclosure": "detailed"
         },
-        {"label":"Subvenciones a la explotación","category":"other_revenue","subcategory":"other_income","amount":22.379121,"disclosure":"detailed"},
+        {"label":"Subvenciones a la explotación","category":"grants_donations","subcategory":"grants_donations","amount":22.379121,"disclosure":"detailed"},
         {"label":"Resultado por revaluación de jugadores","category":"other_revenue","subcategory":"other_income","amount":291.226786,"disclosure":"detailed"},
         {
           "label": "Participación en campeonatos internacionales",
@@ -453,7 +465,13 @@
           "disclosure": "detailed"
         },
         {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":641.959977,"disclosure":"detailed"},
-        {"label":"Recursos por subvención provincial","category":"other_revenue","subcategory":"other_income","amount":608.276048,"disclosure":"detailed"},
+        {
+          "label": "Recursos por subvención provincial",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 608.276048,
+          "disclosure": "detailed"
+        },
         {
           "label": "Participación en campeonatos nacionales",
           "category": "prize_money",
@@ -476,7 +494,7 @@
           "amount": 68.693469,
           "disclosure": "detailed"
         },
-        {"label":"Subvenciones a la explotación","category":"other_revenue","subcategory":"other_income","amount":60.588771,"disclosure":"detailed"},
+        {"label":"Subvenciones a la explotación","category":"grants_donations","subcategory":"grants_donations","amount":60.588771,"disclosure":"detailed"},
         {"label":"Licitaciones de palco","category":"venue","subcategory":"stadium_other","amount":9.707725,"disclosure":"detailed"},
         {"label":"Recuperos de cargas sociales Dto 1212","category":"other_revenue","subcategory":"other_income","amount":172.145497,"disclosure":"detailed"}
       ],
@@ -636,7 +654,13 @@
           "disclosure": "detailed"
         },
         {"label":"Recursos marketing","category":"commercial","subcategory":"sponsorship_commercial","amount":882.744685,"disclosure":"detailed"},
-        {"label":"Recursos por subvención provincial","category":"other_revenue","subcategory":"other_income","amount":753.533291,"disclosure":"detailed"},
+        {
+          "label": "Recursos por subvención provincial",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 753.533291,
+          "disclosure": "detailed"
+        },
         {"label":"Colonia de vacaciones","category":"other_sporting_sections","subcategory":"other_sports","amount":251.677071,"disclosure":"detailed"},
         {
           "label": "Recursos fútbol infantil/amateur",
@@ -652,7 +676,7 @@
           "amount": 106.711574,
           "disclosure": "detailed"
         },
-        {"label":"Subvenciones a la explotación","category":"other_revenue","subcategory":"other_income","amount":77.052581,"disclosure":"detailed"},
+        {"label":"Subvenciones a la explotación","category":"grants_donations","subcategory":"grants_donations","amount":77.052581,"disclosure":"detailed"},
         {"label":"Otros ingresos y egresos","category":"other_revenue","subcategory":"other_income","amount":1404.273084,"disclosure":"detailed"}
       ],
       "expenses": [

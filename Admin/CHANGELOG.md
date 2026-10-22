@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 950 — Fila «Subsidios y donaciones»; Educación se fusiona con Otras secciones (2026-10-22) [350]
+
+- `js/finanzas-calc.js`: ingresos y gastos fusionan Educación con Otras secciones («Otras actividades (educación y otros deportes)»); ingresos suma «Subsidios y donaciones» (`grants_donations`, sin ocultar en cero). Etiquetas en `data/site-labels.js` y `data/lang/en.js`.
+- Taxonomía del fútbol (`data/category-map.js`, `taxonomy-football-1.json`): categoría `grants_donations`; REGLA en `Admin/CONVENCIONES-DATOS.md` con prompt y ejemplo (`reglas-categoria.mjs`).
+- `tools/recategorizar-subsidios.mjs` + `tools/subsidios-etiquetas.json`: 468 líneas de 111 clubes pasaron de «Otros ingresos» a la fila nueva. `catchall-dominante` bajó de 174 a 131 avisos P3 en total. No cambia ningún total de ingresos.
+- La regla «igual que Boca» se reescribió: las filas las define `js/finanzas-calc.js` (skill `club-data-mapping`, `referencia/formato-simplificado.md`, `Admin/PANTALLA.md`).
+
 ## Versión 949 — Votación de filas con medición previa; 257 reducido a Tolima (2026-10-22) [257] [350]
 
 - `votacion-de-criterios`: paso explícito para una pregunta sobre una fila o categoría (medir con `fos filas` y `--etiqueta` antes de votar; los números son la evidencia de los votantes).

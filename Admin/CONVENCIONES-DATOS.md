@@ -635,3 +635,14 @@ el de `nationOf(clubId)`: la tabla `CLUB_NATION` solo lista a los clubes cuya na
 `WAL` a `COUNTRIES` (con su clave en `data/lang/en.js`), la Cymru Premier con `country:'WAL'` y cada club galés (Cardiff, Swansea) a `CLUB_NATION`, aunque juegue en la pirámide
 inglesa: su ficha dice Gales y su liga, la inglesa. Medido al hacerlo: un club afectado (Celtic) y una liga (la Premiership escocesa); cambian las agrupaciones por país de Ligas y
 del selector, el subtítulo de Finanzas y la página generada del club. `tools/generate-club-pages.js` usa `nationOf`. No hay condición nueva en `tools/`.
+
+## REGLA: subsidios, donaciones y aportes van a `grants_donations` (votación 3 a 0, 2026-10-21; fila «Subsidios y donaciones», 2026-10-22)
+
+Un ingreso sin contraprestación comercial (subsidio público de explotación, donación, aporte de socios o accionistas impreso como ingreso) va a
+`grants_donations`, no a `other_income`. No entran: la subvención de capital imputada al resultado (`other_income`: no es plata del año), los premios y la
+solidaridad UEFA o de la liga (`competition_bonus`), el subsidio de la educación (`education`) ni un aporte que el documento lleva al patrimonio neto. Lo ya
+cargado se recategoriza por etiqueta con `tools/recategorizar-subsidios.mjs` (se revisa a mano el listado agrupado antes de escribir). Caso: Flora Tallinn
+(Lisa 12, «Annetused ja toetused»), Nacional («Subsídios à exploração»), Sarpsborg Fotball Invest 2010 («Bidrag fra aksjonærene»).
+CATEGORÍA (prompt): un subsidio público, una donación o un aporte de socios o accionistas impreso como ingreso va a grants_donations; la subvención de capital imputada, los premios y la solidaridad UEFA o de la liga y el subsidio de la educación no.
+EJEMPLO-CATEGORÍA: floratallinn-ee | revenue | Riigi ja/või KOV toetus | grants_donations
+

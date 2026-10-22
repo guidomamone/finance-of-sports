@@ -2,17 +2,17 @@
 const felgueirasPtRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.138985,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.004029,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.004029,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.179315,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.008297,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.008297,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":0.009521,"disclosureLevel":"aggregated"},
   ],
   2024: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.418836,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.009517,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.009517,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
   ],
 };

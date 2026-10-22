@@ -7,7 +7,7 @@ window.RANKINGS["gb-leagueone"] = {
     clubs: [
       { id:"exetercity-gb", revenue:18.858, reportType:"official_balance_sheet",
         sourceId:"exetercity-gb-exeter-group-accounts-2024-25-ixbrl",
-        mix:[["Comercial / Sponsors",3.338],["Estadio",4.187],["Televisión",3.727],["Venta de Jugadores",6.754],["Otros ingresos",0.853]] },
+        mix:[["Comercial / Sponsors",3.338],["Estadio",4.187],["Televisión",3.727],["Venta de Jugadores",6.754],["Subsidios y donaciones",0.844],["Otros ingresos",0.009]] },
       { id:"barnsley-gb", revenue:15.328, reportType:"official_balance_sheet",
         sourceId:"barnsley-gb-medium-accounts-2024-25-ixbrl",
         mix:[["Comercial / Sponsors",1.751],["Estadio",5.294],["Televisión",4.483],["Venta de Jugadores",1.248],["Otros ingresos",2.552]] },
@@ -17,7 +17,7 @@ window.RANKINGS["gb-leagueone"] = {
         incluidos:[["Cuotas Sociales","Estadio",1]] },
       { id:"shrewsburytown-gb", revenue:9.884, reportType:"official_balance_sheet",
         sourceId:"shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl",
-        mix:[["Estadio",3.6],["Televisión",3.269],["Venta de Jugadores",0.344],["Otras actividades (educación y otros deportes)",0.761],["Otros ingresos",1.91]],
+        mix:[["Estadio",3.6],["Televisión",3.269],["Venta de Jugadores",0.344],["Otras actividades (educación y otros deportes)",0.761],["Subsidios y donaciones",0.055],["Otros ingresos",1.855]],
         incluidos:[["Cuotas Sociales","Otros ingresos",1]] },
       { id:"burtonalbion-gb", revenue:9.28, reportType:"official_balance_sheet",
         sourceId:"burtonalbion-gb-burton-full-accounts-2024-25-ixbrl",

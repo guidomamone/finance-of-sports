@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "paidelinnameeskond-ee",
@@ -163,8 +163,8 @@
         {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.077775,"disclosure":"aggregated"},
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.005188,
           "disclosure": "aggregated"
         },
@@ -248,8 +248,8 @@
         {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.100822,"disclosure":"aggregated"},
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.004,
           "disclosure": "aggregated"
         },
@@ -336,8 +336,8 @@
         {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.087326,"disclosure":"aggregated"},
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.023611,
           "disclosure": "aggregated"
         },
@@ -433,8 +433,8 @@
         {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.015706,"disclosure":"aggregated"},
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.002829,
           "disclosure": "aggregated"
         },
@@ -539,7 +539,7 @@
         },
         {"label":"UEFA solidarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":1.145177,"disclosure":"aggregated"},
         {"label":"Eesti Jalgpalliliidu toetused","category":"other_revenue","subcategory":"other_income","amount":0.04834,"disclosure":"aggregated"},
-        {"label":"KOV toetus","category":"other_revenue","subcategory":"other_income","amount":0.106724,"disclosure":"aggregated"},
+        {"label":"KOV toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.106724,"disclosure":"aggregated"},
         {
           "label": "Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam",
           "category": "commercial",
@@ -654,7 +654,7 @@
         },
         {"label":"UEFA solidarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":1.288571,"disclosure":"aggregated"},
         {"label":"Eesti Jalgpalliliidu toetused","category":"other_revenue","subcategory":"other_income","amount":0.04074,"disclosure":"aggregated"},
-        {"label":"KOV toetus","category":"other_revenue","subcategory":"other_income","amount":0.112611,"disclosure":"aggregated"},
+        {"label":"KOV toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.112611,"disclosure":"aggregated"},
         {"label":"FIFA RSTP","category":"player_transfers","subcategory":"player_sales","amount":0.002122,"disclosure":"aggregated"},
         {
           "label": "Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam",

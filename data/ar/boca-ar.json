@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "boca-ar",
@@ -144,7 +144,13 @@
           "amount": 53.951045,
           "disclosure": "detailed"
         },
-        {"label":"Otras contribuciones de asociados","category":"other_revenue","subcategory":"other_income","amount":52.380243,"disclosure":"detailed"},
+        {
+          "label": "Otras contribuciones de asociados",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 52.380243,
+          "disclosure": "detailed"
+        },
         {"label":"Cesión de jugadores a préstamo","category":"player_transfers","subcategory":"player_sales","amount":89.065287,"disclosure":"detailed"},
         {"label":"Departamento de básquet","category":"other_sporting_sections","subcategory":"other_sports","amount":15.866965,"disclosure":"detailed"}
       ],
@@ -572,7 +578,13 @@
         {"label":"Ingresos varios","category":"other_revenue","subcategory":"other_income","amount":1199.201315,"disclosure":"detailed"},
         {"label":"Cesión de jugadores a préstamo","category":"player_transfers","subcategory":"player_sales","amount":202.041217,"disclosure":"detailed"},
         {"label":"Mecanismo de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":156.552642,"disclosure":"detailed"},
-        {"label":"Otras contribuciones de asociados","category":"other_revenue","subcategory":"other_income","amount":144.827392,"disclosure":"detailed"},
+        {
+          "label": "Otras contribuciones de asociados",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 144.827392,
+          "disclosure": "detailed"
+        },
         {
           "label": "Departamento de educación física",
           "category": "other_sporting_sections",
@@ -1024,7 +1036,13 @@
           "disclosure": "detailed",
           "items": [["Fernandez Carballo, Ezequiel (100%)",27722.98288],["Medina, Cristian (100%)",20503.888921]]
         },
-        {"label":"Otras contribuciones de asociados","category":"other_revenue","subcategory":"other_income","amount":853.226812,"disclosure":"detailed"},
+        {
+          "label": "Otras contribuciones de asociados",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 853.226812,
+          "disclosure": "detailed"
+        },
         {"label":"Mecanismo de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":512.67994,"disclosure":"detailed"},
         {"label":"Departamento de básquet","category":"other_sporting_sections","subcategory":"other_sports","amount":157.094476,"disclosure":"detailed"},
         {"label":"Cesión de jugadores a préstamo","category":"player_transfers","subcategory":"player_sales","amount":375.211221,"disclosure":"detailed"},

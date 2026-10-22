@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "nommekalju-ee",
@@ -75,11 +75,17 @@
       "fx": {"ref":"EUR@2019-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.237298,"disclosure":"aggregated"},
-        {"label":"Omavalitsuste toetus","category":"other_revenue","subcategory":"other_income","amount":0.184059,"disclosure":"aggregated"},
+        {"label":"Omavalitsuste toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.184059,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":1.25584,"disclosure":"aggregated"},
         {"label":"EJL Kogukonnajuht","category":"other_revenue","subcategory":"other_income","amount":0.012165,"disclosure":"aggregated"},
-        {"label":"Toetused treeningute korraldamiseks","category":"other_revenue","subcategory":"other_income","amount":0.024336,"disclosure":"aggregated"},
-        {"label":"Muud toetused ECA, LHV","category":"other_revenue","subcategory":"other_income","amount":0.006838,"disclosure":"aggregated"},
+        {
+          "label": "Toetused treeningute korraldamiseks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.024336,
+          "disclosure": "aggregated"
+        },
+        {"label":"Muud toetused ECA, LHV","category":"grants_donations","subcategory":"grants_donations","amount":0.006838,"disclosure":"aggregated"},
         {"label":"Piletitulu Eesti sisesed võistlused","category":"matchday","subcategory":"matchday_competition","amount":0.004693,"disclosure":"aggregated"},
         {
           "label": "Piletitulu UEFA klubisarjades osalemisest",
@@ -194,12 +200,12 @@
         {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.07101,"disclosure":"aggregated"},
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.07616,
           "disclosure": "aggregated"
         },
-        {"label":"Omavalitsuste toetus","category":"other_revenue","subcategory":"other_income","amount":0.179906,"disclosure":"aggregated"},
+        {"label":"Omavalitsuste toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.179906,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":0.350266,"disclosure":"aggregated"},
         {"label":"EJL Kogukonnajuht","category":"other_revenue","subcategory":"other_income","amount":0.01146,"disclosure":"aggregated"},
         {"label":"EJL ECA","category":"other_revenue","subcategory":"other_income","amount":0.003602,"disclosure":"aggregated"},
@@ -210,8 +216,14 @@
           "amount": 0.008,
           "disclosure": "aggregated"
         },
-        {"label":"Toetused treeningute korraldamiseks","category":"other_revenue","subcategory":"other_income","amount":0.024884,"disclosure":"aggregated"},
-        {"label":"Muud toetused ECA, LHV","category":"other_revenue","subcategory":"other_income","amount":0.005431,"disclosure":"aggregated"},
+        {
+          "label": "Toetused treeningute korraldamiseks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.024884,
+          "disclosure": "aggregated"
+        },
+        {"label":"Muud toetused ECA, LHV","category":"grants_donations","subcategory":"grants_donations","amount":0.005431,"disclosure":"aggregated"},
         {"label":"Riiklik noorteraha","category":"other_sporting_sections","subcategory":"youth_football","amount":0.004877,"disclosure":"aggregated"},
         {"label":"Piletitulu Eesti sisesed võistlused","category":"matchday","subcategory":"matchday_competition","amount":0.002369,"disclosure":"aggregated"},
         {"label":"Mängijaõiguste müük","category":"player_transfers","subcategory":"player_sales","amount":0.01495,"disclosure":"aggregated"},
@@ -324,27 +336,33 @@
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.216026,"disclosure":"aggregated"},
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.031845,
           "disclosure": "aggregated"
         },
-        {"label":"Riigi ja omavalitsuste toetus","category":"other_revenue","subcategory":"other_income","amount":0.156914,"disclosure":"aggregated"},
+        {"label":"Riigi ja omavalitsuste toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.156914,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":0.041998,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.126805,"disclosure":"aggregated"},
-        {"label":"Toetused treeningute korraldamiseks","category":"other_revenue","subcategory":"other_income","amount":0.02341,"disclosure":"aggregated"},
+        {
+          "label": "Toetused treeningute korraldamiseks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.02341,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Muud toetused ECA, LHV, Töötukassa juhendustasu",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.013445,
           "disclosure": "aggregated"
         },
         {"label":"Riiklik noorteraha","category":"other_sporting_sections","subcategory":"youth_football","amount":0.004273,"disclosure":"aggregated"},
         {
           "label": "Töötukassa töötasu toetuse sihtfinantseerimine",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.129879,
           "disclosure": "aggregated"
         },
@@ -447,15 +465,21 @@
       "fx": {"ref":"EUR@2022-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.215129,"disclosure":"aggregated"},
-        {"label":"Riigi ja omavalitsuste toetus","category":"other_revenue","subcategory":"other_income","amount":0.167078,"disclosure":"aggregated"},
+        {"label":"Riigi ja omavalitsuste toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.167078,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":0.079665,"disclosure":"aggregated"},
         {"label":"Muud UEFA toetused","category":"prize_money","subcategory":"competition_bonus","amount":0.014636,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.159664,"disclosure":"aggregated"},
-        {"label":"Toetused treeningute korraldamiseks","category":"other_revenue","subcategory":"other_income","amount":0.05567,"disclosure":"aggregated"},
+        {
+          "label": "Toetused treeningute korraldamiseks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.05567,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Muud toetused ECA, LHV, Töötukassa juhendustasu",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.017654,
           "disclosure": "aggregated"
         },
@@ -580,11 +604,17 @@
       "fx": {"ref":"EUR@2023-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.262248,"disclosure":"aggregated"},
-        {"label":"Riigi ja omavalitsuste toetus","category":"other_revenue","subcategory":"other_income","amount":0.167495,"disclosure":"aggregated"},
+        {"label":"Riigi ja omavalitsuste toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.167495,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":0.066494,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.121327,"disclosure":"aggregated"},
-        {"label":"Toetused treeningute korraldamiseks","category":"other_revenue","subcategory":"other_income","amount":0.0721,"disclosure":"aggregated"},
-        {"label":"Muud toetused ECA, LHV","category":"other_revenue","subcategory":"other_income","amount":0.017516,"disclosure":"aggregated"},
+        {
+          "label": "Toetused treeningute korraldamiseks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.0721,
+          "disclosure": "aggregated"
+        },
+        {"label":"Muud toetused ECA, LHV","category":"grants_donations","subcategory":"grants_donations","amount":0.017516,"disclosure":"aggregated"},
         {"label":"Riiklik noorteraha","category":"other_sporting_sections","subcategory":"youth_football","amount":0.003214,"disclosure":"aggregated"},
         {"label":"Piletitulu Eesti sisesed võistlused","category":"matchday","subcategory":"matchday_competition","amount":0.005297,"disclosure":"aggregated"},
         {"label":"Mängijaõiguste müük","category":"player_transfers","subcategory":"player_sales","amount":0.010279,"disclosure":"aggregated"},
@@ -697,10 +727,10 @@
       "fx": {"ref":"EUR@2024-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.303963,"disclosure":"aggregated"},
-        {"label":"Riigi ja omavalitsuste toetus","category":"other_revenue","subcategory":"other_income","amount":0.187807,"disclosure":"aggregated"},
+        {"label":"Riigi ja omavalitsuste toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.187807,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":0.089271,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.13548,"disclosure":"aggregated"},
-        {"label":"Muud toetused ECA, LHV","category":"other_revenue","subcategory":"other_income","amount":0.057712,"disclosure":"aggregated"},
+        {"label":"Muud toetused ECA, LHV","category":"grants_donations","subcategory":"grants_donations","amount":0.057712,"disclosure":"aggregated"},
         {"label":"Riiklik noorteraha","category":"other_sporting_sections","subcategory":"youth_football","amount":0.002631,"disclosure":"aggregated"},
         {"label":"Piletitulu Eesti sisesed võistlused","category":"matchday","subcategory":"matchday_competition","amount":0.006955,"disclosure":"aggregated"},
         {"label":"Mängijaõiguste müük","category":"player_transfers","subcategory":"player_sales","amount":0.40075,"disclosure":"aggregated"},
@@ -817,10 +847,10 @@
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.258836,"disclosure":"aggregated"},
         {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.025511,"disclosure":"aggregated"},
-        {"label":"Riigi ja omavalitsuste toetus","category":"other_revenue","subcategory":"other_income","amount":0.22119,"disclosure":"aggregated"},
+        {"label":"Riigi ja omavalitsuste toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.22119,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":1.144759,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.056625,"disclosure":"aggregated"},
-        {"label":"Muud toetused ECA, LHV","category":"other_revenue","subcategory":"other_income","amount":0.010448,"disclosure":"aggregated"},
+        {"label":"Muud toetused ECA, LHV","category":"grants_donations","subcategory":"grants_donations","amount":0.010448,"disclosure":"aggregated"},
         {"label":"Riiklik noorteraha","category":"other_sporting_sections","subcategory":"youth_football","amount":0.002718,"disclosure":"aggregated"},
         {"label":"Piletitulu Eesti sisesed võistlused","category":"matchday","subcategory":"matchday_competition","amount":0.006652,"disclosure":"aggregated"},
         {

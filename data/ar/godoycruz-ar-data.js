@@ -19,7 +19,7 @@ const godoycruzArRevenueLinesByYear = {
     {"rawLabel":"Ingreso por Descuentos Comerciales","normalizedCategory":"other_income","amountNative":0.058276,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingreso por Rescisión de Contrato","normalizedCategory":"player_sales","amountNative":2.351826,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingreso por Derecho de Formación / Mec. Solidaridad","normalizedCategory":"player_sales","amountNative":1.847878,"disclosureLevel":"detailed"},
-    {"rawLabel":"Ingreso por Subsidio","normalizedCategory":"other_income","amountNative":0.036858,"disclosureLevel":"detailed"},
+    {"rawLabel":"Ingreso por Subsidio","normalizedCategory":"grants_donations","amountNative":0.036858,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingreso Recupero ART - Seguros","normalizedCategory":"other_income","amountNative":1.453859,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingreso por Alquiler Instalaciones Deportivas","normalizedCategory":"other_income","amountNative":1.403526,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingreso por Partido Amistoso","normalizedCategory":"matchday_competition","amountNative":18.229545,"disclosureLevel":"detailed"},

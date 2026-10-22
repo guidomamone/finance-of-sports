@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fcemmen-nl",
@@ -52,7 +52,7 @@
         {"label":"Prijzengeld","category":"prize_money","subcategory":"competition_bonus","amount":0.325,"disclosure":"aggregated"},
         {"label":"Horeca","category":"venue","subcategory":"stadium_other","amount":0.579,"disclosure":"aggregated"},
         {"label":"Merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":0.114,"disclosure":"aggregated"},
-        {"label":"Subsidies & giften","category":"other_revenue","subcategory":"other_income","amount":0.056,"disclosure":"aggregated"},
+        {"label":"Subsidies & giften","category":"grants_donations","subcategory":"grants_donations","amount":0.056,"disclosure":"aggregated"},
         {"label":"Overige baten","category":"other_revenue","subcategory":"other_income","amount":0.133,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -104,7 +104,7 @@
         {"label":"Prijzengeld","category":"prize_money","subcategory":"competition_bonus","amount":0.315,"disclosure":"aggregated"},
         {"label":"Horeca","category":"venue","subcategory":"stadium_other","amount":0.453,"disclosure":"aggregated"},
         {"label":"Merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":0.182,"disclosure":"aggregated"},
-        {"label":"Subsidies & giften","category":"other_revenue","subcategory":"other_income","amount":0.119,"disclosure":"aggregated"},
+        {"label":"Subsidies & giften","category":"grants_donations","subcategory":"grants_donations","amount":0.119,"disclosure":"aggregated"},
         {"label":"Overige baten","category":"other_revenue","subcategory":"other_income","amount":0.881,"disclosure":"aggregated"},
         {
           "label": "Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen",
@@ -156,7 +156,7 @@
         {"label":"Prijzengeld","category":"prize_money","subcategory":"competition_bonus","amount":0.365,"disclosure":"aggregated"},
         {"label":"Horeca","category":"venue","subcategory":"stadium_other","amount":0.123,"disclosure":"aggregated"},
         {"label":"Merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":0.222,"disclosure":"aggregated"},
-        {"label":"Subsidies & giften","category":"other_revenue","subcategory":"other_income","amount":1.28,"disclosure":"aggregated"},
+        {"label":"Subsidies & giften","category":"grants_donations","subcategory":"grants_donations","amount":1.28,"disclosure":"aggregated"},
         {"label":"Overige baten","category":"other_revenue","subcategory":"other_income","amount":0.395,"disclosure":"aggregated"}
       ],
       "expenses": [

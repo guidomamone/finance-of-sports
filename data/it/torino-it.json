@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "torino-it",
@@ -684,7 +684,7 @@
           "amount": 0.001,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Sponsor Ufficiali e Tecnico","category":"commercial","subcategory":"sponsorship_commercial","amount":6.96,"disclosure":"aggregated"},
         {"label":"Altri proventi da sponsorizzazione","category":"commercial","subcategory":"sponsorship_commercial","amount":1.612,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":2.281911,"disclosure":"aggregated"},
@@ -881,7 +881,13 @@
           "amount": 0.002,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":2.569713,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 2.569713,
+          "disclosure": "aggregated"
+        },
         {"label":"Sponsor Ufficiali e Tecnico","category":"commercial","subcategory":"sponsorship_commercial","amount":6.672,"disclosure":"aggregated"},
         {"label":"Altri proventi da sponsorizzazione","category":"commercial","subcategory":"sponsorship_commercial","amount":1.509,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":2.427895,"disclosure":"aggregated"},
@@ -1064,7 +1070,13 @@
           "disclosure": "aggregated"
         },
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":1.715,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":1.234817,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 1.234817,
+          "disclosure": "aggregated"
+        },
         {"label":"Sponsor Ufficiali e Tecnico","category":"commercial","subcategory":"sponsorship_commercial","amount":7.196,"disclosure":"aggregated"},
         {"label":"Altri proventi da sponsorizzazione","category":"commercial","subcategory":"sponsorship_commercial","amount":1.567,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":4.451469,"disclosure":"aggregated"},
@@ -1246,7 +1258,13 @@
           "disclosure": "aggregated"
         },
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":1.473,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":3.002211,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 3.002211,
+          "disclosure": "aggregated"
+        },
         {"label":"Sponsor Ufficiali e Tecnico","category":"commercial","subcategory":"sponsorship_commercial","amount":7.329,"disclosure":"aggregated"},
         {"label":"Altri proventi da sponsorizzazione","category":"commercial","subcategory":"sponsorship_commercial","amount":1.773,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":5.078304,"disclosure":"aggregated"},
@@ -1429,7 +1447,13 @@
           "disclosure": "aggregated"
         },
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":1.796,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.769231,"disclosure":"aggregated"},
+        {
+          "label": "a) contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.769231,
+          "disclosure": "aggregated"
+        },
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":9.310768,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":4.650916,"disclosure":"aggregated"},
         {

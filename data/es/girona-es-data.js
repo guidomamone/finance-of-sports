@@ -3,13 +3,13 @@ const gironaEsRevenueLinesByYear = {
   2020: [
     {"rawLabel":"Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)","normalizedCategory":"lump_football_operations","amountNative":14.998072,"disclosureLevel":"summary","items":[["Ventas",1.912708],["Prestación de servicios",13.085364]]},
     {"rawLabel":"Ingresos accesorios y otros de gestión corriente","normalizedCategory":"other_income","amountNative":11.542128,"disclosureLevel":"summary"},
-    {"rawLabel":"Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"other_income","amountNative":0.140148,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"grants_donations","amountNative":0.140148,"disclosureLevel":"detailed"},
     {"rawLabel":"Imputación de subvenciones de inmovilizado no financiero y otras","normalizedCategory":"other_income","amountNative":0.20503,"disclosureLevel":"detailed"},
     {"rawLabel":"Otros resultados","normalizedCategory":"other_income","amountNative":0.021034,"disclosureLevel":"detailed"},
   ],
   2021: [
     {"rawLabel":"a) Ingresos accesorios y otros de gestión corriente","normalizedCategory":"other_income","amountNative":1.532552,"disclosureLevel":"aggregated"},
-    {"rawLabel":"b) Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"other_income","amountNative":0.122984,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"grants_donations","amountNative":0.122984,"disclosureLevel":"aggregated"},
     {"rawLabel":"9. Imputación de subvenciones de inmovilizado no financiero y otras","normalizedCategory":"other_income","amountNative":0.20503,"disclosureLevel":"aggregated"},
     {"rawLabel":"10. Excesos de provisiones","normalizedCategory":"other_income","amountNative":0.026219,"disclosureLevel":"aggregated"},
     {"rawLabel":"Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)","normalizedCategory":"lump_football_operations","amountNative":10.719838,"disclosureLevel":"aggregated"},
@@ -17,21 +17,21 @@ const gironaEsRevenueLinesByYear = {
   ],
   2022: [
     {"rawLabel":"a) Ingresos accesorios y otros de gestión corriente","normalizedCategory":"other_income","amountNative":1.957088,"disclosureLevel":"aggregated"},
-    {"rawLabel":"b) Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"other_income","amountNative":0.590514,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"grants_donations","amountNative":0.590514,"disclosureLevel":"aggregated"},
     {"rawLabel":"9. Imputación de subvenciones de inmovilizado no financiero y otras","normalizedCategory":"other_income","amountNative":0.20503,"disclosureLevel":"aggregated"},
     {"rawLabel":"Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)","normalizedCategory":"lump_football_operations","amountNative":13.57771,"disclosureLevel":"aggregated"},
     {"rawLabel":"13. Otros resultados","normalizedCategory":"other_income","amountNative":0.321417,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"a) Ingresos accesorios y otros de gestión corriente","normalizedCategory":"other_income","amountNative":4.168106,"disclosureLevel":"aggregated"},
-    {"rawLabel":"b) Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"other_income","amountNative":0.324669,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"grants_donations","amountNative":0.324669,"disclosureLevel":"aggregated"},
     {"rawLabel":"9. Imputación de subvenciones de inmovilizado no financiero y otras","normalizedCategory":"other_income","amountNative":0.20503,"disclosureLevel":"aggregated"},
     {"rawLabel":"Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)","normalizedCategory":"lump_football_operations","amountNative":59.845616,"disclosureLevel":"aggregated"},
   ],
   2025: [
     {"rawLabel":"Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)","normalizedCategory":"lump_football_operations","amountNative":110.914404,"disclosureLevel":"summary","items":[["Ventas",12.231604],["Prestación de servicios",98.682799]]},
     {"rawLabel":"Ingresos accesorios y otros de gestión corriente","normalizedCategory":"other_income","amountNative":32.23921,"disclosureLevel":"summary"},
-    {"rawLabel":"Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"other_income","amountNative":0.586357,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subvenciones de explotación incorporadas al resultado del ejercicio","normalizedCategory":"grants_donations","amountNative":0.586357,"disclosureLevel":"detailed"},
     {"rawLabel":"Imputación de subvenciones de inmovilizado no financiero y otras","normalizedCategory":"other_income","amountNative":0.20503,"disclosureLevel":"detailed"},
   ],
 };

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "adodenhaag-nl",
@@ -38,7 +38,7 @@
         {"label":"Prijzengeld","category":"prize_money","subcategory":"competition_bonus","amount":0.377553,"disclosure":"aggregated"},
         {"label":"Horeca","category":"venue","subcategory":"stadium_other","amount":2.287066,"disclosure":"aggregated"},
         {"label":"Merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":0.534193,"disclosure":"aggregated"},
-        {"label":"Subsidies en giften","category":"other_revenue","subcategory":"other_income","amount":0.048882,"disclosure":"aggregated"},
+        {"label":"Subsidies en giften","category":"grants_donations","subcategory":"grants_donations","amount":0.048882,"disclosure":"aggregated"},
         {"label":"Overige baten","category":"other_revenue","subcategory":"other_income","amount":1.85163,"disclosure":"aggregated"},
         {"label":"Resultaat vergoedingssommen","category":"player_transfers","subcategory":"player_sales","amount":1.098265,"disclosure":"aggregated"}
       ],

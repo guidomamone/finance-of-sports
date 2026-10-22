@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "hajduksplit-hr",
@@ -286,13 +286,19 @@
         },
         {
           "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.182748,
           "disclosure": "aggregated"
         },
-        {"label":"Donacije nepovezanih strana","category":"other_revenue","subcategory":"other_income","amount":0.443602,"disclosure":"aggregated"},
-        {"label":"Donacije i doprinosi povezanih strana","category":"other_revenue","subcategory":"other_income","amount":6.303267,"disclosure":"aggregated"},
+        {"label":"Donacije nepovezanih strana","category":"grants_donations","subcategory":"grants_donations","amount":0.443602,"disclosure":"aggregated"},
+        {
+          "label": "Donacije i doprinosi povezanih strana",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 6.303267,
+          "disclosure": "aggregated"
+        },
         {"label":"Prihodi od refundacije","category":"other_revenue","subcategory":"other_income","amount":0.142382,"disclosure":"aggregated"},
         {"label":"Prihod od otpisa obveza","category":"other_revenue","subcategory":"other_income","amount":0.000971,"disclosure":"aggregated"},
         {

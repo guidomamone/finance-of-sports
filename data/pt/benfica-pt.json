@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "benfica-pt",
@@ -167,7 +167,7 @@
       "fx": {"ref":"EUR@2006-06-30"},
       "revenue": [
         {"label":"Proveitos suplementares","category":"other_revenue","subcategory":"other_income","amount":12.765682,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.028136,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.028136,"disclosure":"aggregated"},
         {"label":"Outros proveitos e ganhos operacionais","category":"other_revenue","subcategory":"other_income","amount":0.5625,"disclosure":"aggregated"},
         {"label":"Proveitos e ganhos extraordinários","category":"other_revenue","subcategory":"other_income","amount":11.442643,"disclosure":"aggregated"},
         {"label":"Receitas de jogos","category":"matchday","subcategory":"matchday_competition","amount":11.687937,"disclosure":"aggregated"},
@@ -240,7 +240,7 @@
         {"label":"Receitas competições FPF","category":"prize_money","subcategory":"competition_bonus","amount":0.23044,"disclosure":"aggregated"},
         {"label":"Outras","category":"other_revenue","subcategory":"other_income","amount":0.094505,"disclosure":"aggregated"},
         {"label":"Proveitos suplementares","category":"other_revenue","subcategory":"other_income","amount":11.683949,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.003516,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.003516,"disclosure":"aggregated"},
         {"label":"Outros proveitos e ganhos operacionais","category":"other_revenue","subcategory":"other_income","amount":0.702353,"disclosure":"aggregated"},
         {"label":"Ganhos em imobilizações","category":"other_revenue","subcategory":"other_income","amount":24.114308,"disclosure":"aggregated"},
         {"label":"Benefícios de penalidades contratuais","category":"other_revenue","subcategory":"other_income","amount":0.034333,"disclosure":"aggregated"},
@@ -690,7 +690,7 @@
         {"label":"OUTROS PROVEITOS SUPLEMENTARES","category":"other_revenue","subcategory":"other_income","amount":0.093453,"disclosure":"aggregated"},
         {"label":"INDEMINIZAÇÕES DE SEGUROS","category":"other_revenue","subcategory":"other_income","amount":0.091633,"disclosure":"aggregated"},
         {"label":"BENEFÍCIOS DE PENALIDADES CONTRATUAIS","category":"other_revenue","subcategory":"other_income","amount":0.024629,"disclosure":"aggregated"},
-        {"label":"SUBSÍDIOS À EXPLORAÇÃO","category":"other_revenue","subcategory":"other_income","amount":0.009871,"disclosure":"aggregated"},
+        {"label":"SUBSÍDIOS À EXPLORAÇÃO","category":"grants_donations","subcategory":"grants_donations","amount":0.009871,"disclosure":"aggregated"},
         {"label":"REDUÇÃO DE IMPARIDADE DE CRÉDITOS","category":"other_revenue","subcategory":"other_income","amount":0.005077,"disclosure":"aggregated"},
         {"label":"OUTROS PROVEITOS OPERACIONAIS","category":"other_revenue","subcategory":"other_income","amount":0.647498,"disclosure":"aggregated"},
         {"label":"VENDA DE DIREITOS","category":"player_transfers","subcategory":"player_sales","amount":17.937821,"disclosure":"aggregated"},

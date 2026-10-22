@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "harjujklaagri-ee",
@@ -77,7 +77,7 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-12-31"},
       "revenue": [
-        {"label":"Annetused ja toetused","category":"other_revenue","subcategory":"other_income","amount":0.0025,"disclosure":"aggregated"},
+        {"label":"Annetused ja toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.0025,"disclosure":"aggregated"},
         {"label":"Tulu ettevõtlusest","category":"commercial","subcategory":"sponsorship_commercial","amount":0.048202,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -114,15 +114,15 @@
       "revenue": [
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.005,
           "disclosure": "aggregated"
         },
         {
           "label": "Sihtotstarbelised annetused ja toetused-Riigi ja KOV toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.0025,
           "disclosure": "aggregated"
         },

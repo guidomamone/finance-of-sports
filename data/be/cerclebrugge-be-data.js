@@ -2,7 +2,7 @@
 const cerclebruggeBeRevenueLinesByYear = {
   2025: [
     {"rawLabel":"Omzet","normalizedCategory":"lump_football_operations","amountNative":19.306482,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen","normalizedCategory":"other_income","amountNative":0.001619,"disclosureLevel":"detailed"},
+    {"rawLabel":"Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen","normalizedCategory":"grants_donations","amountNative":0.001619,"disclosureLevel":"detailed"},
     {"rawLabel":"Andere bedrijfsopbrengsten — resto sin desglosar","normalizedCategory":"other_income","amountNative":24.415131,"disclosureLevel":"aggregated"},
   ],
 };

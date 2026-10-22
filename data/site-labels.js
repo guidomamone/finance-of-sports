@@ -24,6 +24,7 @@ window.SITE_LABEL_KEYS = {
   "Otros ingresos": "bucket.other_revenue",
   "Premios por competencias": "bucket.competition_bonus",
   "Salarios y primas (plantel y cuerpo técnico)": "bucket.wages",
+  "Subsidios y donaciones": "bucket.grants",
   "Televisión": "bucket.broadcasting",
   "Venta de Jugadores": "bucket.player_sales"
 };

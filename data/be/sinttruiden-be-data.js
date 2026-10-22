@@ -2,7 +2,7 @@
 const sinttruidenBeRevenueLinesByYear = {
   2025: [
     {"rawLabel":"Omzet","normalizedCategory":"lump_football_operations","amountNative":20.175525,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen","normalizedCategory":"other_income","amountNative":3.319965,"disclosureLevel":"detailed"},
+    {"rawLabel":"Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen","normalizedCategory":"grants_donations","amountNative":3.319965,"disclosureLevel":"detailed"},
     {"rawLabel":"Andere bedrijfsopbrengsten — resto sin desglosar","normalizedCategory":"other_income","amountNative":12.684099,"disclosureLevel":"aggregated"},
   ],
 };

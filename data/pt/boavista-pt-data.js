@@ -1,7 +1,7 @@
 // GENERADO desde data/pt/boavista-pt.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const boavistaPtRevenueLinesByYear = {
   2024: [
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.219358,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.219358,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":5.282976,"disclosureLevel":"aggregated"},
     {"rawLabel":"Bilhetes e Camarotes","normalizedCategory":"matchday_competition","amountNative":0.507075,"disclosureLevel":"aggregated"},
     {"rawLabel":"Direitos Televisivos","normalizedCategory":"broadcasting","amountNative":3.463889,"disclosureLevel":"aggregated"},

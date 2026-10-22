@@ -7,7 +7,7 @@ const casapiaPtRevenueLinesByYear = {
     {"rawLabel":"Lucros jogos Online e Placard","normalizedCategory":"other_income","amountNative":0.28793,"disclosureLevel":"aggregated"},
     {"rawLabel":"Serviços Scouting","normalizedCategory":"other_income","amountNative":0.0432,"disclosureLevel":"aggregated"},
     {"rawLabel":"Cedência direitos desportivos","normalizedCategory":"player_sales","amountNative":0.0097,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidios à exploração","normalizedCategory":"other_income","amountNative":0.003673,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidios à exploração","normalizedCategory":"grants_donations","amountNative":0.003673,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":3.78568,"disclosureLevel":"aggregated"},
   ],
   2023: [
@@ -45,7 +45,7 @@ const casapiaPtRevenueLinesByYear = {
     {"rawLabel":"Lucros jogos Online e Placard","normalizedCategory":"other_income","amountNative":0.348881,"disclosureLevel":"aggregated"},
     {"rawLabel":"Serviços Scouting","normalizedCategory":"other_income","amountNative":0.0105,"disclosureLevel":"aggregated"},
     {"rawLabel":"Cedência direitos desportivos","normalizedCategory":"player_sales","amountNative":2.618628,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.005129,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.005129,"disclosureLevel":"aggregated"},
     {"rawLabel":"Correções relativas a exercícios anteriores","normalizedCategory":"other_income","amountNative":0.000938,"disclosureLevel":"aggregated"},
     {"rawLabel":"Acordo de gestão","normalizedCategory":"other_income","amountNative":12.85698,"disclosureLevel":"aggregated"},
     {"rawLabel":"Alienações - ativos intangíveis","normalizedCategory":"player_sales","amountNative":9.717752,"disclosureLevel":"aggregated"},

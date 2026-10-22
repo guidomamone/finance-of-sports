@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "valerenga-no",
@@ -80,7 +80,7 @@
         {"label":"Elite · Solidaritetsinntekter","category":"player_transfers","subcategory":"player_sales","amount":0.501113,"disclosure":"aggregated"},
         {"label":"Elite · Viderefakturering","category":"other_revenue","subcategory":"other_income","amount":0.028372,"disclosure":"aggregated"},
         {"label":"Elite · Andre avtaler","category":"other_revenue","subcategory":"other_income","amount":1.387,"disclosure":"aggregated"},
-        {"label":"Elite · Tilskudd","category":"other_revenue","subcategory":"other_income","amount":2.994421,"disclosure":"aggregated"},
+        {"label":"Elite · Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":2.994421,"disclosure":"aggregated"},
         {"label":"Elite · Medlemskontigenter","category":"membership","subcategory":"member_dues","amount":0.279,"disclosure":"aggregated"},
         {"label":"Elite · Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.167179,"disclosure":"aggregated"}
       ],
@@ -201,7 +201,7 @@
         {"label":"Elite · Solidaritetsinntekter","category":"player_transfers","subcategory":"player_sales","amount":-0.054211,"disclosure":"aggregated"},
         {"label":"Elite · Viderefakturering (kostnad)","category":"other_revenue","subcategory":"other_income","amount":-0.221531,"disclosure":"aggregated"},
         {"label":"Elite · Andre avtaler","category":"other_revenue","subcategory":"other_income","amount":0.876639,"disclosure":"aggregated"},
-        {"label":"Elite · Tilskudd","category":"other_revenue","subcategory":"other_income","amount":4.10653,"disclosure":"aggregated"},
+        {"label":"Elite · Tilskudd","category":"grants_donations","subcategory":"grants_donations","amount":4.10653,"disclosure":"aggregated"},
         {"label":"Elite · Medlemskontigenter","category":"membership","subcategory":"member_dues","amount":0.3996,"disclosure":"aggregated"},
         {"label":"Elite · Andre inntekter (kostnad)","category":"other_revenue","subcategory":"other_income","amount":-0.348595,"disclosure":"aggregated"}
       ],

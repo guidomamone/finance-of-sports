@@ -22,7 +22,7 @@ window.RANKINGS["it-serieb"] = {
         mix:[["Comercial / Sponsors",38.895],["Estadio",1.849],["Televisión",17.178],["Venta de Jugadores",2.967],["Otras actividades (educación y otros deportes)",0.071],["Otros ingresos",0.814]] },
       { id:"como-it", revenue:10.512, reportType:"official_balance_sheet",
         sourceId:"como-it-fascicolo-bilancio-2024",
-        mix:[["Comercial / Sponsors",0.699],["Estadio",1.655],["Otros ingresos",8.158]] },
+        mix:[["Comercial / Sponsors",0.699],["Estadio",1.655],["Subsidios y donaciones",7.879],["Otros ingresos",0.28]] },
     ],
   },
   2023: {
@@ -31,7 +31,7 @@ window.RANKINGS["it-serieb"] = {
     clubs: [
       { id:"parma-it", revenue:31.924, reportType:"official_balance_sheet",
         sourceId:"parma-it-bilancio-31-12-2023-individual",
-        mix:[["Comercial / Sponsors",5.502],["Estadio",3.253],["Televisión",3.294],["Venta de Jugadores",6.75],["Otros ingresos",13.126]] },
+        mix:[["Comercial / Sponsors",5.502],["Estadio",3.253],["Televisión",3.294],["Venta de Jugadores",6.75],["Subsidios y donaciones",6.56],["Otros ingresos",6.566]] },
     ],
   },
   2022: {
@@ -40,10 +40,10 @@ window.RANKINGS["it-serieb"] = {
     clubs: [
       { id:"genoa-it", revenue:90.302, reportType:"official_balance_sheet",
         sourceId:"genoa-it-bilancio-31-12-2022-individual",
-        mix:[["Comercial / Sponsors",2.3],["Estadio",3.318],["Televisión",38.499],["Venta de Jugadores",24.639],["Otros ingresos",21.547]] },
+        mix:[["Comercial / Sponsors",2.3],["Estadio",3.318],["Televisión",38.499],["Venta de Jugadores",24.639],["Subsidios y donaciones",5.246],["Otros ingresos",16.301]] },
       { id:"parma-it", revenue:34.673, reportType:"official_balance_sheet",
         sourceId:"parma-it-bilancio-31-12-2022-consolidato",
-        mix:[["Comercial / Sponsors",5.208],["Estadio",1.465],["Televisión",3.259],["Venta de Jugadores",1.995],["Otros ingresos",22.747]] },
+        mix:[["Comercial / Sponsors",5.208],["Estadio",1.465],["Televisión",3.259],["Venta de Jugadores",1.995],["Subsidios y donaciones",18.694],["Otros ingresos",4.053]] },
       { id:"cremonese-it", revenue:29.196, reportType:"official_balance_sheet",
         sourceId:"cremonese-it-bilancio-2022",
         mix:[["Comercial / Sponsors",19.296],["Estadio",0.703],["Televisión",8.883],["Venta de Jugadores",0.208],["Otros ingresos",0.105]] },
@@ -55,7 +55,7 @@ window.RANKINGS["it-serieb"] = {
     clubs: [
       { id:"parma-it", revenue:46.076, reportType:"official_balance_sheet",
         sourceId:"parma-it-bilancio-31-12-2021-individual",
-        mix:[["Comercial / Sponsors",6.595],["Estadio",0.855],["Televisión",17.059],["Venta de Jugadores",2.44],["Otros ingresos",19.126]] },
+        mix:[["Comercial / Sponsors",6.595],["Estadio",0.855],["Televisión",17.059],["Venta de Jugadores",2.44],["Subsidios y donaciones",16.165],["Otros ingresos",2.961]] },
     ],
   },
   2018: {

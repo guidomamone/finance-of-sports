@@ -14,7 +14,7 @@ const oliveirensePtRevenueLinesByYear = {
   2024: [
     {"rawLabel":"Venda de mercadorias","normalizedCategory":"sponsorship_commercial","amountNative":0.031094,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestação de serviços","normalizedCategory":"lump_football_operations","amountNative":1.325492,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Não reembolsáveis: Subsídios relacionados com resultados - IEFP","normalizedCategory":"other_income","amountNative":0.005388,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Não reembolsáveis: Subsídios relacionados com resultados - IEFP","normalizedCategory":"grants_donations","amountNative":0.005388,"disclosureLevel":"aggregated"},
     {"rawLabel":"Não reembolsáveis: Subsídios relacionados com resultados - Federação Portuguesa de Futebol","normalizedCategory":"other_income","amountNative":0.007317,"disclosureLevel":"aggregated"},
     {"rawLabel":"Não reembolsáveis: Subsídios relacionados com resultados - Liga Portuguesa de Futebol Profissional","normalizedCategory":"other_income","amountNative":0.00625,"disclosureLevel":"aggregated"},
     {"rawLabel":"Não reembolsáveis: Subsídios relacionados com resultados - Fundo Infraestruturas - LPF","normalizedCategory":"other_income","amountNative":0.030654,"disclosureLevel":"aggregated"},

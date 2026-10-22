@@ -21,6 +21,7 @@ window.I18N.strings.en = {
   "bucket.stadium": "Stadium",
   "bucket.player_purchase": "Player acquisitions",
   "bucket.player_sales": "Player sales",
+  "bucket.grants": "Grants and donations",
   "bucket.season_tickets": "Season tickets",
   "bucket.sponsorship": "Commercial / Sponsors",
   "bucket.wages": "Wages and bonuses (squad and coaching staff)",

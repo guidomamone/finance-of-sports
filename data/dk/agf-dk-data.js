@@ -6,7 +6,7 @@ const agfDkRevenueLinesByYear = {
     {"rawLabel":"Anden omsætning, varesalg (merchandising)","normalizedCategory":"sponsorship_commercial","amountNative":9.45,"disclosureLevel":"detailed"},
     {"rawLabel":"Udlejningsvirksomhed + Restaurations- og cateringvirksomhed + Arrangementer/billetsalg (Ceres Park & Arena, segmento Faciliteter)","normalizedCategory":"stadium_other","amountNative":19.154,"disclosureLevel":"detailed","items":[["Udlejningsvirksomhed",7.148],["Restaurations- og cateringvirksomhed",8.385],["Arrangementer, billetsalg",3.621]]},
     {"rawLabel":"Anden omsætning, tjenesteydelser","normalizedCategory":"other_income","amountNative":13.524,"disclosureLevel":"detailed"},
-    {"rawLabel":"Offentlige tilskud (subvenciones estatales COVID-19)","normalizedCategory":"other_income","amountNative":15.91,"disclosureLevel":"detailed"},
+    {"rawLabel":"Offentlige tilskud (subvenciones estatales COVID-19)","normalizedCategory":"grants_donations","amountNative":15.91,"disclosureLevel":"detailed"},
     {"rawLabel":"Nettotransferindtægter","normalizedCategory":"player_sales","amountNative":28.637,"disclosureLevel":"detailed"},
   ],
 };

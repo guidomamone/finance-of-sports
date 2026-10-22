@@ -43,7 +43,7 @@ const ferrocarriloesteArRevenueLinesByYear = {
     {"rawLabel":"Fútbol Profesional: Ventas y Préstamos","normalizedCategory":"player_sales","amountNative":459.755138,"disclosureLevel":"detailed"},
     {"rawLabel":"Otros Ingresos","normalizedCategory":"other_income","amountNative":1.140521,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos de Formación y afines","normalizedCategory":"youth_football","amountNative":70.979941,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subsidios Recibidos","normalizedCategory":"other_income","amountNative":1.069756,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subsidios Recibidos","normalizedCategory":"grants_donations","amountNative":1.069756,"disclosureLevel":"detailed"},
     {"rawLabel":"Recupero Decreto 1212/03 (ver nota de cabecera — duda genuina)","normalizedCategory":"other_income","amountNative":183.954137,"disclosureLevel":"detailed"},
   ],
   2025: [
@@ -64,7 +64,7 @@ const ferrocarriloesteArRevenueLinesByYear = {
     {"rawLabel":"Futbol Profesional Ventas y Prestamos","normalizedCategory":"player_sales","amountNative":1210.638787,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros Ingresos","normalizedCategory":"other_income","amountNative":28.538147,"disclosureLevel":"aggregated"},
     {"rawLabel":"Derechos de Formacion y afines","normalizedCategory":"youth_football","amountNative":138.616988,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidios Recibidos","normalizedCategory":"other_income","amountNative":5.1795,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidios Recibidos","normalizedCategory":"grants_donations","amountNative":5.1795,"disclosureLevel":"aggregated"},
     {"rawLabel":"Recupero Decreto 510/23","normalizedCategory":"other_income","amountNative":1446.974563,"disclosureLevel":"aggregated"},
   ],
 };

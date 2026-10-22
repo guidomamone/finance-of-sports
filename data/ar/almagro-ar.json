@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "almagro-ar",
@@ -451,7 +451,7 @@
         {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":60.013253,"disclosure":"detailed"},
         {"label":"Alquiler de Antena","category":"commercial","subcategory":"sponsorship_commercial","amount":5.724398,"disclosure":"detailed"},
         {"label":"Partidos Amistosos","category":"matchday","subcategory":"matchday_competition","amount":92.406682,"disclosure":"detailed"},
-        {"label":"Subsidio Otorgado","category":"other_revenue","subcategory":"other_income","amount":1.391422,"disclosure":"detailed"},
+        {"label":"Subsidio Otorgado","category":"grants_donations","subcategory":"grants_donations","amount":1.391422,"disclosure":"detailed"},
         {"label":"Intereses Fondo de Inversion","category":"other_revenue","subcategory":"other_income","amount":3.136055,"disclosure":"detailed"}
       ],
       "expenses": [

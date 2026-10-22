@@ -47,11 +47,11 @@ const sampdoriaItRevenueLinesByYear = {
     {"rawLabel":"Proventi da contratto Rai – Library Sampdoria","normalizedCategory":"broadcasting","amountNative":0.237,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sopravvenienze attive","normalizedCategory":"other_income","amountNative":0.643,"disclosureLevel":"aggregated"},
     {"rawLabel":"1a) plusvalenze","normalizedCategory":"player_sales","amountNative":14.712647,"disclosureLevel":"aggregated"},
-    {"rawLabel":"b) Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":0,"disclosureLevel":"aggregated"},
   ],
   2021: [
     {"rawLabel":"a) ricavi da gare","normalizedCategory":"matchday_competition","amountNative":1.015668,"disclosureLevel":"aggregated"},
-    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"other_income","amountNative":0.577893,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":0.577893,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) proventi da sponsorizzazioni","normalizedCategory":"sponsorship_commercial","amountNative":3.261983,"disclosureLevel":"aggregated"},
     {"rawLabel":"c) proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":3.405,"disclosureLevel":"aggregated"},
     {"rawLabel":"d) proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":0.983088,"disclosureLevel":"aggregated"},

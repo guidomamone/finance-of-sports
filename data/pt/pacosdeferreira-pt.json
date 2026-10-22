@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "pacosdeferreira-pt",
@@ -72,7 +72,7 @@
         {"label":"Bilhetes, camarotes e cativos","category":"matchday","subcategory":"matchday_competition","amount":0.13732,"disclosure":"aggregated"},
         {"label":"Competições","category":"prize_money","subcategory":"competition_bonus","amount":0.094267,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.031569,"disclosure":"aggregated"},
-        {"label":"Subsidios Estado","category":"other_revenue","subcategory":"other_income","amount":0.01413,"disclosure":"aggregated"},
+        {"label":"Subsidios Estado","category":"grants_donations","subcategory":"grants_donations","amount":0.01413,"disclosure":"aggregated"},
         {"label":"Subsidios formação UEFA","category":"other_sporting_sections","subcategory":"youth_football","amount":0.150887,"disclosure":"aggregated"},
         {"label":"Subsidios Taça de Portugal","category":"prize_money","subcategory":"competition_bonus","amount":0.036539,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.059612,"disclosure":"aggregated"},
@@ -268,7 +268,7 @@
         {"label":"Bilhetes, camarotes e cativos","category":"matchday","subcategory":"matchday_competition","amount":0.221799,"disclosure":"aggregated"},
         {"label":"Competições","category":"prize_money","subcategory":"competition_bonus","amount":0.043903,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.015412,"disclosure":"aggregated"},
-        {"label":"Subsídios Estado","category":"other_revenue","subcategory":"other_income","amount":0.001008,"disclosure":"aggregated"},
+        {"label":"Subsídios Estado","category":"grants_donations","subcategory":"grants_donations","amount":0.001008,"disclosure":"aggregated"},
         {"label":"Subsídios formação UEFA","category":"other_sporting_sections","subcategory":"youth_football","amount":0.397614,"disclosure":"aggregated"},
         {"label":"Subsídios Taça de Portugal","category":"prize_money","subcategory":"competition_bonus","amount":0.001376,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.003584,"disclosure":"aggregated"},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "floratallinn-ee",
@@ -76,9 +76,9 @@
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.403391,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsus- ja auhinnaraha","category":"prize_money","subcategory":"competition_bonus","amount":0.792735,"disclosure":"aggregated"},
-        {"label":"Riigi ja/või KOV toetus","category":"other_revenue","subcategory":"other_income","amount":0.386104,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.386104,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.008618,"disclosure":"aggregated"},
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.012648,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.012648,"disclosure":"aggregated"},
         {"label":"Tulu piletimüügist","category":"matchday","subcategory":"matchday_competition","amount":0.050478,"disclosure":"aggregated"},
         {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.034,"disclosure":"aggregated"},
         {"label":"Tulu mängijaõiguste müügist","category":"player_transfers","subcategory":"player_sales","amount":0.060297,"disclosure":"aggregated"},
@@ -200,9 +200,9 @@
           "amount": 0.554451,
           "disclosure": "aggregated"
         },
-        {"label":"Riigi ja/või KOV toetus","category":"other_revenue","subcategory":"other_income","amount":0.65471,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.65471,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.016658,"disclosure":"aggregated"},
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.011863,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.011863,"disclosure":"aggregated"},
         {"label":"Tulu piletimüügist","category":"matchday","subcategory":"matchday_competition","amount":0.014287,"disclosure":"aggregated"},
         {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.013,"disclosure":"aggregated"},
         {"label":"Tulu mängijaõiguste müügist","category":"player_transfers","subcategory":"player_sales","amount":0.302891,"disclosure":"aggregated"},
@@ -333,9 +333,9 @@
           "disclosure": "aggregated"
         },
         {"label":"Muud toetused UEFA-lt","category":"prize_money","subcategory":"competition_bonus","amount":0.07,"disclosure":"aggregated"},
-        {"label":"Riigi ja/või KOV toetus","category":"other_revenue","subcategory":"other_income","amount":0.938472,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.938472,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.086672,"disclosure":"aggregated"},
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.007499,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.007499,"disclosure":"aggregated"},
         {"label":"Tulu piletimüügist","category":"matchday","subcategory":"matchday_competition","amount":0.069783,"disclosure":"aggregated"},
         {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.02255,"disclosure":"aggregated"},
         {"label":"Tulu mängijaõiguste müügist","category":"player_transfers","subcategory":"player_sales","amount":0.189835,"disclosure":"aggregated"},
@@ -446,9 +446,9 @@
           "disclosure": "aggregated"
         },
         {"label":"Muud toetused UEFA-lt","category":"prize_money","subcategory":"competition_bonus","amount":0.278084,"disclosure":"aggregated"},
-        {"label":"Riigi ja/või KOV toetus","category":"other_revenue","subcategory":"other_income","amount":0.471953,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.471953,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.082503,"disclosure":"aggregated"},
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.042932,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.042932,"disclosure":"aggregated"},
         {"label":"Tulu piletimüügist","category":"matchday","subcategory":"matchday_competition","amount":0.049467,"disclosure":"aggregated"},
         {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.002,"disclosure":"aggregated"},
         {"label":"Tulu mängijaõiguste müügist","category":"player_transfers","subcategory":"player_sales","amount":0.580723,"disclosure":"aggregated"},
@@ -559,9 +559,9 @@
           "amount": 1.42477,
           "disclosure": "aggregated"
         },
-        {"label":"Riigi ja/või KOV toetus","category":"other_revenue","subcategory":"other_income","amount":0.550314,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.550314,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.066611,"disclosure":"aggregated"},
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.012395,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.012395,"disclosure":"aggregated"},
         {"label":"Tulu piletimüügist","category":"matchday","subcategory":"matchday_competition","amount":0.040402,"disclosure":"aggregated"},
         {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.0225,"disclosure":"aggregated"},
         {"label":"Tulu mängijaõiguste müügist","category":"player_transfers","subcategory":"player_sales","amount":-0.011442,"disclosure":"aggregated"},
@@ -673,9 +673,9 @@
           "amount": 0.221426,
           "disclosure": "aggregated"
         },
-        {"label":"Riigi ja/või KOV toetus","category":"other_revenue","subcategory":"other_income","amount":0.510548,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.510548,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.062402,"disclosure":"aggregated"},
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.010343,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.010343,"disclosure":"aggregated"},
         {"label":"Tulu piletimüügist","category":"matchday","subcategory":"matchday_competition","amount":0.04422,"disclosure":"aggregated"},
         {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.0115,"disclosure":"aggregated"},
         {"label":"Tulu mängijaõiguste müügist","category":"player_transfers","subcategory":"player_sales","amount":0.062358,"disclosure":"aggregated"},
@@ -773,8 +773,8 @@
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":1.086623,"disclosure":"aggregated"},
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.111359,
           "disclosure": "aggregated"
         },
@@ -785,9 +785,9 @@
           "amount": 1.017835,
           "disclosure": "aggregated"
         },
-        {"label":"Riigi ja/või KOV toetus","category":"other_revenue","subcategory":"other_income","amount":0.469597,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.469597,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.064365,"disclosure":"aggregated"},
-        {"label":"Muud toetused","category":"other_revenue","subcategory":"other_income","amount":0.07276,"disclosure":"aggregated"},
+        {"label":"Muud toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.07276,"disclosure":"aggregated"},
         {"label":"Tulu piletimüügist","category":"matchday","subcategory":"matchday_competition","amount":0.027103,"disclosure":"aggregated"},
         {"label":"Tulu ülekandeõiguste müügist","category":"media_rights","subcategory":"broadcasting","amount":0.005,"disclosure":"aggregated"},
         {"label":"Tulu mängijaõiguste müügist","category":"player_transfers","subcategory":"player_sales","amount":0.080714,"disclosure":"aggregated"},

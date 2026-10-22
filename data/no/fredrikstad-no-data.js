@@ -6,8 +6,8 @@ const fredrikstadNoRevenueLinesByYear = {
     {"rawLabel":"GRASROTANDEL","normalizedCategory":"other_income","amountNative":0.677145,"disclosureLevel":"aggregated"},
     {"rawLabel":"Jeg er med","normalizedCategory":"other_income","amountNative":1.148488,"disclosureLevel":"aggregated"},
     {"rawLabel":"Spilleautomater","normalizedCategory":"other_income","amountNative":0.230242,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Tilskudd FFK Sport ASA","normalizedCategory":"other_income","amountNative":19.769761,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Tilskudd, gaver","normalizedCategory":"other_income","amountNative":1.088161,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Tilskudd FFK Sport ASA","normalizedCategory":"grants_donations","amountNative":19.769761,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Tilskudd, gaver","normalizedCategory":"grants_donations","amountNative":1.088161,"disclosureLevel":"aggregated"},
     {"rawLabel":"Treningsavgifter","normalizedCategory":"youth_football","amountNative":0.0625,"disclosureLevel":"aggregated"},
   ],
   2013: [

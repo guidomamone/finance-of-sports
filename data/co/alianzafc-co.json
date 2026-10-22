@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "alianzafc-co",
@@ -40,7 +40,7 @@
         {"label":"DIMAYOR (derechos de televisión)","category":"media_rights","subcategory":"broadcasting","amount":7966.544302,"disclosure":"aggregated"},
         {"label":"Federación Colombiana de Fútbol","category":"prize_money","subcategory":"competition_bonus","amount":462.875,"disclosure":"aggregated"},
         {"label":"Convenios","category":"other_revenue","subcategory":"other_income","amount":16,"disclosure":"aggregated"},
-        {"label":"Donaciones","category":"other_revenue","subcategory":"other_income","amount":20,"disclosure":"aggregated"},
+        {"label":"Donaciones","category":"grants_donations","subcategory":"grants_donations","amount":20,"disclosure":"aggregated"},
         {"label":"Venta artículos deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":2.415953,"disclosure":"aggregated"}
       ],
       "expenses": [

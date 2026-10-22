@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "casapia-pt",
@@ -71,7 +71,7 @@
         {"label":"Lucros jogos Online e Placard","category":"other_revenue","subcategory":"other_income","amount":0.28793,"disclosure":"aggregated"},
         {"label":"Serviços Scouting","category":"other_revenue","subcategory":"other_income","amount":0.0432,"disclosure":"aggregated"},
         {"label":"Cedência direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":0.0097,"disclosure":"aggregated"},
-        {"label":"Subsidios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.003673,"disclosure":"aggregated"},
+        {"label":"Subsidios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.003673,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"other_revenue","subcategory":"other_income","amount":3.78568,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -413,7 +413,7 @@
         {"label":"Lucros jogos Online e Placard","category":"other_revenue","subcategory":"other_income","amount":0.348881,"disclosure":"aggregated"},
         {"label":"Serviços Scouting","category":"other_revenue","subcategory":"other_income","amount":0.0105,"disclosure":"aggregated"},
         {"label":"Cedência direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":2.618628,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.005129,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.005129,"disclosure":"aggregated"},
         {
           "label": "Correções relativas a exercícios anteriores",
           "category": "other_revenue",

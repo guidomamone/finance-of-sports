@@ -7,7 +7,7 @@ const vitesseNlRevenueLinesByYear = {
     {"rawLabel":"Prijzengeld","normalizedCategory":"competition_bonus","amountNative":1.067324,"disclosureLevel":"aggregated"},
     {"rawLabel":"Horeca","normalizedCategory":"other_income","amountNative":0.655389,"disclosureLevel":"aggregated"},
     {"rawLabel":"Merchandise","normalizedCategory":"sponsorship_commercial","amountNative":0.749809,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies en giften","normalizedCategory":"other_income","amountNative":0.245589,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies en giften","normalizedCategory":"grants_donations","amountNative":0.245589,"disclosureLevel":"aggregated"},
     {"rawLabel":"Overige baten","normalizedCategory":"other_income","amountNative":1.469442,"disclosureLevel":"aggregated"},
     {"rawLabel":"Resultaat vergoedingssommen","normalizedCategory":"player_sales","amountNative":1.988774,"disclosureLevel":"aggregated"},
   ],

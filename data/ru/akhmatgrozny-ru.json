@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "akhmatgrozny-ru",
@@ -54,11 +54,11 @@
       "fx": {"ref":"RUB@2022-12-31"},
       "revenue": [
         {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":631.027,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":688.263,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"grants_donations","subcategory":"grants_donations","amount":688.263,"disclosure":"aggregated"},
         {
           "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 130,
           "disclosure": "aggregated"
         },
@@ -99,7 +99,7 @@
       "fx": {"ref":"RUB@2023-12-31"},
       "revenue": [
         {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":963.028,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":651.192,"disclosure":"aggregated"}
+        {"label":"Целевые взносы (6220, форма 6)","category":"grants_donations","subcategory":"grants_donations","amount":651.192,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1009.451,"disclosure":"aggregated"},
@@ -136,7 +136,7 @@
       "fx": {"ref":"RUB@2024-12-31"},
       "revenue": [
         {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":939.691,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":667.263,"disclosure":"aggregated"}
+        {"label":"Целевые взносы (6220, форма 6)","category":"grants_donations","subcategory":"grants_donations","amount":667.263,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1178.79,"disclosure":"aggregated"},
@@ -173,7 +173,7 @@
       "fx": {"ref":"RUB@2025-12-31"},
       "revenue": [
         {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":683.308,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":1501,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"grants_donations","subcategory":"grants_donations","amount":1501,"disclosure":"aggregated"},
         {"label":"Прочие поступления (6250, форма 6)","category":"other_revenue","subcategory":"other_income","amount":688.263,"disclosure":"aggregated"}
       ],
       "expenses": [

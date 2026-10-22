@@ -22,7 +22,7 @@ const kifisiaGrRevenueLinesByYear = {
     {"rawLabel":"Δικαιώματα αναμετάδοσης","normalizedCategory":"broadcasting","amountNative":0.04,"disclosureLevel":"aggregated"},
     {"rawLabel":"Εμπορικές δραστηριότητες","normalizedCategory":"sponsorship_commercial","amountNative":0.001904,"disclosureLevel":"aggregated"},
     {"rawLabel":"Επίδομα μηχανισμού αλληλεγγύης και χρηματικά έπαθλα UEFA","normalizedCategory":"competition_bonus","amountNative":0.3608,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση","normalizedCategory":"other_income","amountNative":0.244238,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση","normalizedCategory":"grants_donations","amountNative":0.244238,"disclosureLevel":"aggregated"},
     {"rawLabel":"Άλλα λειτουργικά έσοδα","normalizedCategory":"other_income","amountNative":0.002643,"disclosureLevel":"aggregated"},
     {"rawLabel":"λοιπά έσοδα /έξοδα μεταγραφών","normalizedCategory":"player_sales","amountNative":0.06,"disclosureLevel":"aggregated"},
   ],

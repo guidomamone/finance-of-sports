@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "lazio-it",
@@ -232,7 +232,7 @@
         {"label":"Sponsorizzazione","category":"commercial","subcategory":"sponsorship_commercial","amount":20035.644018,"disclosure":"aggregated"},
         {"label":"Diritti televisivi e d'immagine","category":"media_rights","subcategory":"broadcasting","amount":49497.183846,"disclosure":"aggregated"},
         {"label":"Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":5349.89989,"disclosure":"aggregated"},
-        {"label":"Contributi in c/esercizio","category":"other_revenue","subcategory":"other_income","amount":3917,"disclosure":"aggregated"},
+        {"label":"Contributi in c/esercizio","category":"grants_donations","subcategory":"grants_donations","amount":3917,"disclosure":"aggregated"},
         {"label":"Altri ricavi e proventi","category":"other_revenue","subcategory":"other_income","amount":23591.738993,"disclosure":"aggregated"},
         {"label":"a) Plusvalenze da alienazioni","category":"player_transfers","subcategory":"player_sales","amount":94123.906747,"disclosure":"aggregated"},
         {"label":"b) Altri proventi straordinari","category":"other_revenue","subcategory":"other_income","amount":4753.380558,"disclosure":"aggregated"}
@@ -355,7 +355,7 @@
         {"label":"c) Sponsorizzazione","category":"commercial","subcategory":"sponsorship_commercial","amount":25282.225546,"disclosure":"aggregated"},
         {"label":"d) Diritti televisivi e d'immagine","category":"media_rights","subcategory":"broadcasting","amount":132052.501541,"disclosure":"aggregated"},
         {"label":"e) Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":12360.532977,"disclosure":"aggregated"},
-        {"label":"f) Contributi in c/esercizio","category":"other_revenue","subcategory":"other_income","amount":1241.300001,"disclosure":"aggregated"},
+        {"label":"f) Contributi in c/esercizio","category":"grants_donations","subcategory":"grants_donations","amount":1241.300001,"disclosure":"aggregated"},
         {"label":"g) Altri ricavi e proventi","category":"other_revenue","subcategory":"other_income","amount":12661.016137,"disclosure":"aggregated"},
         {"label":"a) plusvalenze da alienazioni","category":"player_transfers","subcategory":"player_sales","amount":90216.54607,"disclosure":"aggregated"},
         {"label":"b) altri proventi straordinari","category":"other_revenue","subcategory":"other_income","amount":7552.356918,"disclosure":"aggregated"}
@@ -505,7 +505,7 @@
         {"label":"c) Sponsorizzazione","category":"commercial","subcategory":"sponsorship_commercial","amount":23451.857406,"disclosure":"aggregated"},
         {"label":"d) Diritti televisivi e d'immagine","category":"media_rights","subcategory":"broadcasting","amount":134777.367519,"disclosure":"aggregated"},
         {"label":"e) Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":11326.042549,"disclosure":"aggregated"},
-        {"label":"f) Contributi in c/esercizio","category":"other_revenue","subcategory":"other_income","amount":1069.333333,"disclosure":"aggregated"},
+        {"label":"f) Contributi in c/esercizio","category":"grants_donations","subcategory":"grants_donations","amount":1069.333333,"disclosure":"aggregated"},
         {"label":"g) Altri ricavi e proventi","category":"other_revenue","subcategory":"other_income","amount":13236.759256,"disclosure":"aggregated"},
         {"label":"a) plusvalenze da alienazioni","category":"player_transfers","subcategory":"player_sales","amount":83890.414806,"disclosure":"aggregated"},
         {"label":"b) altri proventi straordinari","category":"other_revenue","subcategory":"other_income","amount":4867.188671,"disclosure":"aggregated"}
@@ -2408,7 +2408,7 @@
         {"label":"Altri proventi da gestione calciatori","category":"player_transfers","subcategory":"player_sales","amount":0.019,"disclosure":"aggregated"},
         {"label":"Transazioni con creditori","category":"other_revenue","subcategory":"other_income","amount":1.508,"disclosure":"aggregated"},
         {"label":"Da altri","category":"other_revenue","subcategory":"other_income","amount":2.996,"disclosure":"aggregated"},
-        {"label":"Contributi in c/esercizio","category":"other_revenue","subcategory":"other_income","amount":5.976,"disclosure":"aggregated"},
+        {"label":"Contributi in c/esercizio","category":"grants_donations","subcategory":"grants_donations","amount":5.976,"disclosure":"aggregated"},
         {"label":"Proventi vari","category":"other_revenue","subcategory":"other_income","amount":0.466,"disclosure":"aggregated"},
         {"label":"Variazione delle rimanenze","category":"other_revenue","subcategory":"other_income","amount":0.629296,"disclosure":"aggregated"},
         {"label":"Materiale per vendita a terzi","category":"commercial","subcategory":"sponsorship_commercial","amount":1.339,"disclosure":"aggregated"},
@@ -3112,7 +3112,7 @@
         {"label":"Altri proventi da gestione calciatori","category":"player_transfers","subcategory":"player_sales","amount":0.063,"disclosure":"aggregated"},
         {"label":"Transazioni con creditori","category":"other_revenue","subcategory":"other_income","amount":3,"disclosure":"aggregated"},
         {"label":"Da altri","category":"other_revenue","subcategory":"other_income","amount":1.192,"disclosure":"aggregated"},
-        {"label":"Contributi in c/esercizio","category":"other_revenue","subcategory":"other_income","amount":3.711,"disclosure":"aggregated"},
+        {"label":"Contributi in c/esercizio","category":"grants_donations","subcategory":"grants_donations","amount":3.711,"disclosure":"aggregated"},
         {"label":"Proventi vari","category":"other_revenue","subcategory":"other_income","amount":0.445,"disclosure":"aggregated"},
         {"label":"Variazione delle rimanenze","category":"other_revenue","subcategory":"other_income","amount":0.597084,"disclosure":"aggregated"},
         {"label":"Materiale per vendita a terzi","category":"commercial","subcategory":"sponsorship_commercial","amount":1.451,"disclosure":"aggregated"},
@@ -3322,7 +3322,7 @@
           "disclosure": "aggregated"
         },
         {"label":"-) da altri","category":"other_revenue","subcategory":"other_income","amount":2.979865,"disclosure":"aggregated"},
-        {"label":"Contributi in c/esercizio","category":"other_revenue","subcategory":"other_income","amount":2.903226,"disclosure":"aggregated"},
+        {"label":"Contributi in c/esercizio","category":"grants_donations","subcategory":"grants_donations","amount":2.903226,"disclosure":"aggregated"},
         {"label":"Proventi vari","category":"other_revenue","subcategory":"other_income","amount":0.309345,"disclosure":"aggregated"},
         {"label":"Variazione delle rimanenze","category":"other_revenue","subcategory":"other_income","amount":0.316633,"disclosure":"aggregated"},
         {"label":"Ricavi da merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":1.543719,"disclosure":"aggregated"}
@@ -3483,7 +3483,7 @@
         },
         {"label":"Cessione temporanea calciatori","category":"player_transfers","subcategory":"player_sales","amount":1.946271,"disclosure":"aggregated"},
         {"label":"-) da altri","category":"other_revenue","subcategory":"other_income","amount":0.787425,"disclosure":"aggregated"},
-        {"label":"Contributi in c/esercizio","category":"other_revenue","subcategory":"other_income","amount":1.716286,"disclosure":"aggregated"},
+        {"label":"Contributi in c/esercizio","category":"grants_donations","subcategory":"grants_donations","amount":1.716286,"disclosure":"aggregated"},
         {"label":"Proventi vari","category":"other_revenue","subcategory":"other_income","amount":0.366393,"disclosure":"aggregated"},
         {"label":"Ricavi da merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":1.521904,"disclosure":"aggregated"},
         {
@@ -3664,7 +3664,7 @@
           "disclosure": "aggregated"
         },
         {"label":"-) da altri","category":"other_revenue","subcategory":"other_income","amount":1.104131,"disclosure":"aggregated"},
-        {"label":"Contributi in clesercizio","category":"other_revenue","subcategory":"other_income","amount":0.076339,"disclosure":"aggregated"},
+        {"label":"Contributi in clesercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.076339,"disclosure":"aggregated"},
         {"label":"Proventi vari","category":"other_revenue","subcategory":"other_income","amount":0.000598,"disclosure":"aggregated"},
         {"label":"Ricavi da merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":1.537481,"disclosure":"aggregated"},
         {

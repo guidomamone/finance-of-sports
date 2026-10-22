@@ -7,7 +7,7 @@ window.RANKINGS["pt-liga3"] = {
     clubs: [
       { id:"belenenses-pt", revenue:0.889, reportType:"official_balance_sheet",
         sourceId:"belenenses-pt-sduq-demonstracoes-financeiras-30junho2025",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.629],["Otros ingresos",0.26]] },
+        mix:[["Subsidios y donaciones",0.26],["Fútbol profesional (sin desglosar por la fuente)",0.629]] },
     ],
   },
   2024: {
@@ -16,13 +16,13 @@ window.RANKINGS["pt-liga3"] = {
     clubs: [
       { id:"alverca-pt", revenue:0.808, reportType:"official_balance_sheet",
         sourceId:"alverca-pt-relatorio-contas-2023-24",
-        mix:[["Venta de Jugadores",0.623],["Fútbol profesional (sin desglosar por la fuente)",0.074],["Otros ingresos",0.112]] },
+        mix:[["Venta de Jugadores",0.623],["Subsidios y donaciones",0.068],["Fútbol profesional (sin desglosar por la fuente)",0.074],["Otros ingresos",0.044]] },
       { id:"academica-pt", revenue:0.486, reportType:"official_balance_sheet",
         sourceId:"academica-pt-rc-sduq-2023-2024",
-        mix:[["Comercial / Sponsors",0.236],["Estadio",0.042],["Venta de Jugadores",0.022],["Otros ingresos",0.186]] },
+        mix:[["Comercial / Sponsors",0.236],["Estadio",0.042],["Venta de Jugadores",0.022],["Subsidios y donaciones",0.105],["Otros ingresos",0.082]] },
       { id:"felgueiras-pt", revenue:0.459, reportType:"official_balance_sheet",
         sourceId:"felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.449],["Otros ingresos",0.01]] },
+        mix:[["Subsidios y donaciones",0.01],["Fútbol profesional (sin desglosar por la fuente)",0.449]] },
     ],
   },
   2023: {
@@ -31,16 +31,16 @@ window.RANKINGS["pt-liga3"] = {
     clubs: [
       { id:"alverca-pt", revenue:0.899, reportType:"official_balance_sheet",
         sourceId:"alverca-pt-relatorio-contas-2022-23",
-        mix:[["Venta de Jugadores",0.754],["Fútbol profesional (sin desglosar por la fuente)",0.069],["Otros ingresos",0.075]] },
+        mix:[["Venta de Jugadores",0.754],["Subsidios y donaciones",0.06],["Fútbol profesional (sin desglosar por la fuente)",0.069],["Otros ingresos",0.016]] },
       { id:"academica-pt", revenue:0.8, reportType:"official_balance_sheet",
         sourceId:"academica-pt-10-rc-sduq-2022-2023",
-        mix:[["Comercial / Sponsors",0.099],["Estadio",0.013],["Venta de Jugadores",0.039],["Otros ingresos",0.65]] },
+        mix:[["Comercial / Sponsors",0.099],["Estadio",0.013],["Venta de Jugadores",0.039],["Subsidios y donaciones",0.064],["Otros ingresos",0.586]] },
       { id:"uniaodeleiria-pt", revenue:0.667, reportType:"official_balance_sheet",
         sourceId:"uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023",
-        mix:[["Comercial / Sponsors",0.045],["Fútbol profesional (sin desglosar por la fuente)",0.604],["Otros ingresos",0.018]] },
+        mix:[["Comercial / Sponsors",0.045],["Subsidios y donaciones",0.006],["Fútbol profesional (sin desglosar por la fuente)",0.604],["Otros ingresos",0.012]] },
       { id:"felgueiras-pt", revenue:0.214, reportType:"official_balance_sheet",
         sourceId:"felgueiras-pt-fecho-contas-2022-2023",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.195],["Otros ingresos",0.019]] },
+        mix:[["Subsidios y donaciones",0.009],["Fútbol profesional (sin desglosar por la fuente)",0.195],["Otros ingresos",0.01]] },
     ],
   },
   2022: {
@@ -49,13 +49,13 @@ window.RANKINGS["pt-liga3"] = {
     clubs: [
       { id:"torreense-pt", revenue:2.425, reportType:"official_balance_sheet",
         sourceId:"torreense-pt-sad-relatoriocontas2021-2022",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.06],["Otros ingresos",2.365]] },
+        mix:[["Subsidios y donaciones",0.009],["Fútbol profesional (sin desglosar por la fuente)",0.06],["Otros ingresos",2.356]] },
       { id:"alverca-pt", revenue:0.158, reportType:"official_balance_sheet",
         sourceId:"alverca-pt-relatorio-contas-2021-22",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.097],["Otros ingresos",0.061]] },
+        mix:[["Subsidios y donaciones",0.039],["Fútbol profesional (sin desglosar por la fuente)",0.097],["Otros ingresos",0.022]] },
       { id:"felgueiras-pt", revenue:0.149, reportType:"official_balance_sheet",
         sourceId:"felgueiras-pt-fecho-de-contas-sad-2021-2022",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.144],["Otros ingresos",0.004]] },
+        mix:[["Subsidios y donaciones",0.004],["Fútbol profesional (sin desglosar por la fuente)",0.144]] },
     ],
   },
 };

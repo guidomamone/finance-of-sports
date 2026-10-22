@@ -2,13 +2,13 @@
 const torreensePtRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.057377,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.008245,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.008245,"disclosureLevel":"aggregated"},
     {"rawLabel":"Aumentos/reduções de justo valor","normalizedCategory":"other_income","amountNative":2.127779,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":0.140701,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Vendas e serviços prestados","normalizedCategory":"lump_football_operations","amountNative":0.796703,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Aumentos/reduções de justo valor","normalizedCategory":"other_income","amountNative":4.23,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":0.497334,"disclosureLevel":"aggregated"},
   ],

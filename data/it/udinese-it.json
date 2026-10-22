@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "udinese-it",
@@ -43,7 +43,7 @@
         {"label":"- Gare Coppa Italia","category":"matchday","subcategory":"matchday_competition","amount":0.027534,"disclosure":"aggregated"},
         {"label":"- Gare Coppa Italia","category":"matchday","subcategory":"matchday_competition","amount":0.016281,"disclosure":"aggregated"},
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":2.212326,"disclosure":"aggregated"},
-        {"label":"Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":3.85834,"disclosure":"aggregated"},
+        {"label":"Contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":3.85834,"disclosure":"aggregated"},
         {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":2.2,"disclosure":"aggregated"},
         {"label":"Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":5.925334,"disclosure":"aggregated"},
         {
@@ -245,7 +245,7 @@
         {"label":"- Gare Coppa Italia","category":"matchday","subcategory":"matchday_competition","amount":0.069453,"disclosure":"aggregated"},
         {"label":"- Gare Coppa Italia","category":"matchday","subcategory":"matchday_competition","amount":0.241685,"disclosure":"aggregated"},
         {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":4.76569,"disclosure":"aggregated"},
-        {"label":"contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":4.478748,"disclosure":"aggregated"},
+        {"label":"contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":4.478748,"disclosure":"aggregated"},
         {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":3.285,"disclosure":"aggregated"},
         {"label":"Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":6.68376,"disclosure":"aggregated"},
         {"label":"Proventi commerciali e royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.66827,"disclosure":"aggregated"},

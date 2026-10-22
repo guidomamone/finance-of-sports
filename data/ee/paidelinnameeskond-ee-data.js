@@ -20,7 +20,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   2020: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.062457,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.077775,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.005188,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.005188,"disclosureLevel":"aggregated"},
     {"rawLabel":"Järvamaa Maavalitsus","normalizedCategory":"other_income","amountNative":0.012814,"disclosureLevel":"aggregated"},
     {"rawLabel":"Paide Linnavalitsus","normalizedCategory":"other_income","amountNative":0.05906,"disclosureLevel":"aggregated"},
     {"rawLabel":"Türi Spordikluubide Liit MTÜ","normalizedCategory":"other_income","amountNative":0.00225,"disclosureLevel":"aggregated"},
@@ -37,7 +37,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   2021: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.060994,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.100822,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.004,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.004,"disclosureLevel":"aggregated"},
     {"rawLabel":"Järvamaa Maavalitsus","normalizedCategory":"other_income","amountNative":0.0155,"disclosureLevel":"aggregated"},
     {"rawLabel":"Paide Linnavalitsus","normalizedCategory":"other_income","amountNative":0.07353,"disclosureLevel":"aggregated"},
     {"rawLabel":"Türi Spordikluubide Liit MTÜ","normalizedCategory":"other_income","amountNative":0.003564,"disclosureLevel":"aggregated"},
@@ -55,7 +55,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.094129,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.087326,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.023611,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.023611,"disclosureLevel":"aggregated"},
     {"rawLabel":"Järvamaa Maavalitsus","normalizedCategory":"other_income","amountNative":0.0155,"disclosureLevel":"aggregated"},
     {"rawLabel":"Paide Linnavalitsus","normalizedCategory":"other_income","amountNative":0.077684,"disclosureLevel":"aggregated"},
     {"rawLabel":"Türi Spordikluubide Liit MTÜ","normalizedCategory":"other_income","amountNative":0.0038,"disclosureLevel":"aggregated"},
@@ -74,7 +74,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   2023: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.112688,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.015706,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"other_income","amountNative":0.002829,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.002829,"disclosureLevel":"aggregated"},
     {"rawLabel":"Järvamaa Maavalitsus","normalizedCategory":"other_income","amountNative":0.013989,"disclosureLevel":"aggregated"},
     {"rawLabel":"Paide Linnavalitsus","normalizedCategory":"other_income","amountNative":0.0917,"disclosureLevel":"aggregated"},
     {"rawLabel":"Türi Spordikluubide Liit MTÜ","normalizedCategory":"other_income","amountNative":0.0037,"disclosureLevel":"aggregated"},
@@ -98,7 +98,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
     {"rawLabel":"Spordikoolituse ja-teabe SA Spordikoolituse ja-teabe S","normalizedCategory":"other_income","amountNative":0.105032,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA solidarsustoetus","normalizedCategory":"competition_bonus","amountNative":1.145177,"disclosureLevel":"aggregated"},
     {"rawLabel":"Eesti Jalgpalliliidu toetused","normalizedCategory":"other_income","amountNative":0.04834,"disclosureLevel":"aggregated"},
-    {"rawLabel":"KOV toetus","normalizedCategory":"other_income","amountNative":0.106724,"disclosureLevel":"aggregated"},
+    {"rawLabel":"KOV toetus","normalizedCategory":"grants_donations","amountNative":0.106724,"disclosureLevel":"aggregated"},
     {"rawLabel":"Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam","normalizedCategory":"sponsorship_commercial","amountNative":0.627521,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tulud mängijaõiguste müügist","normalizedCategory":"player_sales","amountNative":0.246337,"disclosureLevel":"aggregated"},
     {"rawLabel":"Piletitulu","normalizedCategory":"matchday_competition","amountNative":0.020752,"disclosureLevel":"aggregated"},
@@ -115,7 +115,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
     {"rawLabel":"Spordikoolituse ja-teabe SA Spordikoolituse ja-teabe S","normalizedCategory":"other_income","amountNative":0.084895,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA solidarsustoetus","normalizedCategory":"competition_bonus","amountNative":1.288571,"disclosureLevel":"aggregated"},
     {"rawLabel":"Eesti Jalgpalliliidu toetused","normalizedCategory":"other_income","amountNative":0.04074,"disclosureLevel":"aggregated"},
-    {"rawLabel":"KOV toetus","normalizedCategory":"other_income","amountNative":0.112611,"disclosureLevel":"aggregated"},
+    {"rawLabel":"KOV toetus","normalizedCategory":"grants_donations","amountNative":0.112611,"disclosureLevel":"aggregated"},
     {"rawLabel":"FIFA RSTP","normalizedCategory":"player_sales","amountNative":0.002122,"disclosureLevel":"aggregated"},
     {"rawLabel":"Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam","normalizedCategory":"sponsorship_commercial","amountNative":0.474835,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tulud mängijaõiguste müügist","normalizedCategory":"player_sales","amountNative":1.263734,"disclosureLevel":"aggregated"},

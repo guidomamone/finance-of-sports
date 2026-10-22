@@ -10,7 +10,7 @@ window.RANKINGS["gr-superleague2"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.696],["Otros ingresos",1.27]] },
       { id:"kifisia-gr", revenue:1.454, reportType:"official_balance_sheet",
         sourceId:"kifisia-gr-notes-2025-06-30",
-        mix:[["Comercial / Sponsors",0.604],["Estadio",0.02],["Televisión",0.047],["Premios por competencias",0.423],["Venta de Jugadores",0.07],["Otros ingresos",0.289]] },
+        mix:[["Comercial / Sponsors",0.604],["Estadio",0.02],["Televisión",0.047],["Premios por competencias",0.423],["Venta de Jugadores",0.07],["Subsidios y donaciones",0.286],["Otros ingresos",0.003]] },
     ],
   },
   2024: {

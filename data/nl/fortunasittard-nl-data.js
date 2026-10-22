@@ -7,7 +7,7 @@ const fortunasittardNlRevenueLinesByYear = {
     {"rawLabel":"Prijzengeld","normalizedCategory":"competition_bonus","amountNative":1.583777,"disclosureLevel":"aggregated"},
     {"rawLabel":"Horeca","normalizedCategory":"stadium_other","amountNative":0.465455,"disclosureLevel":"aggregated"},
     {"rawLabel":"Merchandise","normalizedCategory":"sponsorship_commercial","amountNative":0.4057,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies en giften","normalizedCategory":"other_income","amountNative":0.085618,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies en giften","normalizedCategory":"grants_donations","amountNative":0.085618,"disclosureLevel":"aggregated"},
     {"rawLabel":"Overige baten","normalizedCategory":"other_income","amountNative":1.499285,"disclosureLevel":"aggregated"},
   ],
 };

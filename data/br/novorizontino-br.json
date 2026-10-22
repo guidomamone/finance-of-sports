@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "novorizontino-br",
@@ -163,7 +163,13 @@
       "fx": {"ref":"BRL@2012-12-31"},
       "revenue": [
         {"label":"DOACOES RECEBIDAS","category":"other_revenue","subcategory":"other_income","amount":0.023534,"disclosure":"aggregated"},
-        {"label":"SUBVENCÕES E CONVÊNIOS MUNICIPAL","category":"other_revenue","subcategory":"other_income","amount":0.119143,"disclosure":"aggregated"},
+        {
+          "label": "SUBVENCÕES E CONVÊNIOS MUNICIPAL",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.119143,
+          "disclosure": "aggregated"
+        },
         {
           "label": "RECEITA PATROCINIO E PUBLICIDADE",
           "category": "commercial",
@@ -1742,7 +1748,7 @@
         {"label":"Negociação e empréstimo de atletas","category":"player_transfers","subcategory":"player_sales","amount":1.729,"disclosure":"aggregated"},
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":0.161,"disclosure":"aggregated"},
         {"label":"Vendas de ingressos e bar","category":"matchday","subcategory":"matchday_competition","amount":1.093,"disclosure":"aggregated"},
-        {"label":"Subvenções","category":"other_revenue","subcategory":"other_income","amount":0.25,"disclosure":"aggregated"}
+        {"label":"Subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.25,"disclosure":"aggregated"}
       ],
       "expenses": [
         {
@@ -1794,7 +1800,7 @@
         {"label":"Negociação e empréstimo de atletas","category":"player_transfers","subcategory":"player_sales","amount":3.392,"disclosure":"aggregated"},
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":0.728,"disclosure":"aggregated"},
         {"label":"Vendas de ingressos e bar","category":"matchday","subcategory":"matchday_competition","amount":0.899,"disclosure":"aggregated"},
-        {"label":"Subvenções","category":"other_revenue","subcategory":"other_income","amount":0.639,"disclosure":"aggregated"},
+        {"label":"Subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.639,"disclosure":"aggregated"},
         {"label":"Recuperação de despesas","category":"other_revenue","subcategory":"other_income","amount":0.077,"disclosure":"aggregated"},
         {"label":"Reversão de provisão de contingências","category":"other_revenue","subcategory":"other_income","amount":1.577,"disclosure":"aggregated"}
       ],
@@ -1854,7 +1860,7 @@
         },
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":0.314,"disclosure":"aggregated"},
         {"label":"Vendas de ingressos e bar","category":"matchday","subcategory":"matchday_competition","amount":0.349,"disclosure":"aggregated"},
-        {"label":"Subvenções","category":"other_revenue","subcategory":"other_income","amount":0.095,"disclosure":"aggregated"},
+        {"label":"Subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.095,"disclosure":"aggregated"},
         {"label":"Outras receitas operacionais","category":"other_revenue","subcategory":"other_income","amount":0.002,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -1906,7 +1912,7 @@
         },
         {"label":"Receita com patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":0.29,"disclosure":"aggregated"},
         {"label":"Vendas de ingressos e bar","category":"matchday","subcategory":"matchday_competition","amount":0.033,"disclosure":"aggregated"},
-        {"label":"Subvenções","category":"other_revenue","subcategory":"other_income","amount":0.432,"disclosure":"aggregated"},
+        {"label":"Subvenções","category":"grants_donations","subcategory":"grants_donations","amount":0.432,"disclosure":"aggregated"},
         {"label":"Receita do bar","category":"matchday","subcategory":"matchday_competition","amount":0.006,"disclosure":"aggregated"},
         {"label":"Outras receitas operacionais","category":"other_revenue","subcategory":"other_income","amount":0.035,"disclosure":"aggregated"}
       ],

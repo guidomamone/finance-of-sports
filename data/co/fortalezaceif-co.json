@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fortalezaceif-co",
@@ -419,7 +419,7 @@
           "disclosure": "aggregated"
         },
         {"label":"Alquiler Deportivo","category":"other_revenue","subcategory":"other_income","amount":148,"disclosure":"aggregated"},
-        {"label":"Subsidio Nomina Gobierno Nal","category":"other_revenue","subcategory":"other_income","amount":107.518,"disclosure":"aggregated"},
+        {"label":"Subsidio Nomina Gobierno Nal","category":"grants_donations","subcategory":"grants_donations","amount":107.518,"disclosure":"aggregated"},
         {"label":"Reintegro De Otros Costos Y Gastos","category":"other_revenue","subcategory":"other_income","amount":103.617,"disclosure":"aggregated"},
         {"label":"Aprovechamientos","category":"other_revenue","subcategory":"other_income","amount":11.524,"disclosure":"aggregated"},
         {"label":"Ajuste Al Peso","category":"other_revenue","subcategory":"other_income","amount":0.009,"disclosure":"aggregated"}
@@ -670,7 +670,7 @@
         {"label":"Transportes","category":"other_revenue","subcategory":"other_income","amount":120,"disclosure":"aggregated"},
         {"label":"Comercio al por mayor y menor","category":"commercial","subcategory":"sponsorship_commercial","amount":257.71,"disclosure":"aggregated"},
         {"label":"Alquiler deportivo","category":"other_revenue","subcategory":"other_income","amount":69.5,"disclosure":"aggregated"},
-        {"label":"Subsidio nomina gobierno nacional","category":"other_revenue","subcategory":"other_income","amount":43.995,"disclosure":"aggregated"},
+        {"label":"Subsidio nomina gobierno nacional","category":"grants_donations","subcategory":"grants_donations","amount":43.995,"disclosure":"aggregated"},
         {"label":"Reintegro de otros costos y gastos","category":"other_revenue","subcategory":"other_income","amount":438.185,"disclosure":"aggregated"},
         {"label":"Aprovechamientos","category":"other_revenue","subcategory":"other_income","amount":12.569,"disclosure":"aggregated"},
         {"label":"Ajuste al peso","category":"other_revenue","subcategory":"other_income","amount":0.004,"disclosure":"aggregated"}

@@ -34,7 +34,7 @@ window.RANKINGS["br-serieD"] = {
     clubs: [
       { id:"novorizontino-br", revenue:1.975, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-demonstracoes-financeiras-2020",
-        mix:[["Comercial / Sponsors",0.06],["Estadio",0.067],["Televisión",1.227],["Venta de Jugadores",0.602],["Otros ingresos",0.019]] },
+        mix:[["Comercial / Sponsors",0.06],["Estadio",0.067],["Televisión",1.227],["Venta de Jugadores",0.602],["Subsidios y donaciones",0.018],["Otros ingresos",0]] },
     ],
   },
   2019: {
@@ -43,7 +43,7 @@ window.RANKINGS["br-serieD"] = {
     clubs: [
       { id:"novorizontino-br", revenue:3.034, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-demonstracoes-financeiras-2019",
-        mix:[["Comercial / Sponsors",0.181],["Estadio",0.223],["Televisión",1.22],["Venta de Jugadores",0.842],["Otros ingresos",0.569]] },
+        mix:[["Comercial / Sponsors",0.181],["Estadio",0.223],["Televisión",1.22],["Venta de Jugadores",0.842],["Subsidios y donaciones",0.159],["Otros ingresos",0.41]] },
     ],
   },
   2018: {
@@ -55,7 +55,7 @@ window.RANKINGS["br-serieD"] = {
         mix:[["Cuotas Sociales",0.058],["Comercial / Sponsors",1.12],["Estadio",0.103],["Televisión",0.888],["Premios por competencias",0.264],["Venta de Jugadores",0.329],["Otros ingresos",0.339]] },
       { id:"novorizontino-br", revenue:1.848, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-demonstracoes-financeiras-2018",
-        mix:[["Comercial / Sponsors",0.042],["Estadio",0.282],["Televisión",1.014],["Venta de Jugadores",0.446],["Otros ingresos",0.065]] },
+        mix:[["Comercial / Sponsors",0.042],["Estadio",0.282],["Televisión",1.014],["Venta de Jugadores",0.446],["Subsidios y donaciones",0.065]] },
     ],
   },
 };

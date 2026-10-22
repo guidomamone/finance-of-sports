@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "academicoviseu-pt",
@@ -63,7 +63,7 @@
         },
         {"label":"Receitas de televisão","category":"media_rights","subcategory":"broadcasting","amount":0.45,"disclosure":"aggregated"},
         {"label":"Competições Nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.021067,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0.16251,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.16251,"disclosure":"aggregated"},
         {"label":"Associações/Federações/Liga","category":"other_revenue","subcategory":"other_income","amount":0.038951,"disclosure":"aggregated"},
         {"label":"Jogos e apostas (distribuição lucros)","category":"other_revenue","subcategory":"other_income","amount":0.290127,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.036372,"disclosure":"aggregated"}
@@ -203,7 +203,7 @@
         },
         {"label":"Receitas de televisão","category":"media_rights","subcategory":"broadcasting","amount":0.45,"disclosure":"aggregated"},
         {"label":"Competições Nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.209232,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0.26912,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.26912,"disclosure":"aggregated"},
         {"label":"Associações/Federações/Liga","category":"other_revenue","subcategory":"other_income","amount":0.023057,"disclosure":"aggregated"},
         {"label":"Jogos e apostas (distribuição lucros)","category":"other_revenue","subcategory":"other_income","amount":0.299624,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.057494,"disclosure":"aggregated"}
@@ -311,8 +311,8 @@
         {"label":"Subsídios Associações/FPF/Liga/UEFA","category":"other_revenue","subcategory":"other_income","amount":0.162111,"disclosure":"aggregated"},
         {
           "label": "Subsídios do Estado e outros entes públicos",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.012239,
           "disclosure": "aggregated"
         },
@@ -486,8 +486,8 @@
         {"label":"Subsídios Associações/FPF/Liga/UEFA","category":"other_revenue","subcategory":"other_income","amount":0.359044,"disclosure":"aggregated"},
         {
           "label": "Subsídios do Estado e outros entes públicos",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.016016,
           "disclosure": "aggregated"
         },

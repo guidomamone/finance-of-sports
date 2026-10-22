@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "rioave-pt",
@@ -389,7 +389,7 @@
         {"label":"Patrocínio e Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":1.164129,"disclosure":"aggregated"},
         {"label":"Atividades Comerciais","category":"commercial","subcategory":"sponsorship_commercial","amount":0.114175,"disclosure":"aggregated"},
         {"label":"O.Lucros de Exploração","category":"other_revenue","subcategory":"other_income","amount":0.000102,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0.272402,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.272402,"disclosure":"aggregated"},
         {"label":"Royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.002,"disclosure":"aggregated"},
         {
           "label": "Participação nas Competições Europeias",
@@ -536,7 +536,7 @@
         {"label":"Direitos Televisivos","category":"media_rights","subcategory":"broadcasting","amount":4.2,"disclosure":"aggregated"},
         {"label":"Patrocínio e Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":1.075253,"disclosure":"aggregated"},
         {"label":"Atividades Comerciais","category":"commercial","subcategory":"sponsorship_commercial","amount":0.090414,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0.158122,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.158122,"disclosure":"aggregated"},
         {"label":"Royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.008,"disclosure":"aggregated"},
         {"label":"Participação nas Competições Europeias","category":"prize_money","subcategory":"competition_bonus","amount":0.26,"disclosure":"aggregated"},
         {
@@ -686,12 +686,12 @@
         {"label":"O Lucros de Exploração","category":"other_revenue","subcategory":"other_income","amount":0.000483,"disclosure":"aggregated"},
         {
           "label": "Subsídios do Estado e outros entes públicos",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.070292,
           "disclosure": "aggregated"
         },
-        {"label":"Subsídios de outras entidades","category":"other_revenue","subcategory":"other_income","amount":0.023986,"disclosure":"aggregated"},
+        {"label":"Subsídios de outras entidades","category":"grants_donations","subcategory":"grants_donations","amount":0.023986,"disclosure":"aggregated"},
         {"label":"Royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.008,"disclosure":"aggregated"},
         {
           "label": "Participação nas Competições Europeias",
@@ -822,7 +822,7 @@
         {"label":"Direitos Televisivos","category":"media_rights","subcategory":"broadcasting","amount":1.04,"disclosure":"aggregated"},
         {"label":"Patrocinio e Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":0.136696,"disclosure":"aggregated"},
         {"label":"Atividades Comerciais","category":"commercial","subcategory":"sponsorship_commercial","amount":0.048594,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0.003801,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.003801,"disclosure":"aggregated"},
         {
           "label": "Participação nas Competições Nacionais",
           "category": "prize_money",
@@ -970,7 +970,7 @@
         {"label":"Direitos Televisivos","category":"media_rights","subcategory":"broadcasting","amount":5.15,"disclosure":"aggregated"},
         {"label":"Patrocínio e Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":0.404394,"disclosure":"aggregated"},
         {"label":"Atividades Comerciais","category":"commercial","subcategory":"sponsorship_commercial","amount":0.126578,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0.020483,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.020483,"disclosure":"aggregated"},
         {
           "label": "Participação nas Competições Nacionais",
           "category": "prize_money",
@@ -1108,7 +1108,7 @@
         {"label":"Direitos Televisivos","category":"media_rights","subcategory":"broadcasting","amount":0.424068,"disclosure":"aggregated"},
         {"label":"Patrocínio e Publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":5.15,"disclosure":"aggregated"},
         {"label":"Atividades Comerciais","category":"commercial","subcategory":"sponsorship_commercial","amount":0.131782,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0.009494,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.009494,"disclosure":"aggregated"},
         {"label":"Royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.010925,"disclosure":"aggregated"},
         {
           "label": "Participação nas Competições Nacionais",

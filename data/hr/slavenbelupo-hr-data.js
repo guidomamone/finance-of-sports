@@ -6,7 +6,7 @@ const slavenbelupoHrRevenueLinesByYear = {
     {"rawLabel":"Prihodi od prava emitiranja - Nacionalna natjecanja","normalizedCategory":"broadcasting","amountNative":0.942,"disclosureLevel":"detailed"},
     {"rawLabel":"Komercijalni prihodi od članstva","normalizedCategory":"member_dues","amountNative":0.041777,"disclosureLevel":"detailed"},
     {"rawLabel":"UEFA klupska natjecanja (Prihodi od UEFE)","normalizedCategory":"competition_bonus","amountNative":1.87375,"disclosureLevel":"detailed"},
-    {"rawLabel":"Ostali poslovni prihodi — donacije","normalizedCategory":"other_income","amountNative":0.485933,"disclosureLevel":"detailed","items":[["Donacije od nacionalnih nogometnih tijela",0.068298],["Donacije i dotacije od države i lokalne samouprave",0.232224],["Donacije - ostale",0.005645],["Ostali poslovni prihodi",0.179766]]},
+    {"rawLabel":"Ostali poslovni prihodi — donacije","normalizedCategory":"grants_donations","amountNative":0.485933,"disclosureLevel":"detailed","items":[["Donacije od nacionalnih nogometnih tijela",0.068298],["Donacije i dotacije od države i lokalne samouprave",0.232224],["Donacije - ostale",0.005645],["Ostali poslovni prihodi",0.179766]]},
     {"rawLabel":"Prihodi od raspolaganja registracijama igrača","normalizedCategory":"player_sales","amountNative":0.221147,"disclosureLevel":"detailed"},
   ],
 };

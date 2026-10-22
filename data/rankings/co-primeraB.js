@@ -25,7 +25,7 @@ window.RANKINGS["co-primeraB"] = {
     clubs: [
       { id:"fortalezaceif-co", revenue:0.903, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2021",
-        mix:[["Comercial / Sponsors",0.1],["Televisión",0.29],["Premios por competencias",0.137],["Venta de Jugadores",0.072],["Otros ingresos",0.304]] },
+        mix:[["Comercial / Sponsors",0.1],["Televisión",0.29],["Premios por competencias",0.137],["Venta de Jugadores",0.072],["Subsidios y donaciones",0.011],["Otros ingresos",0.293]] },
     ],
   },
   2020: {
@@ -34,7 +34,7 @@ window.RANKINGS["co-primeraB"] = {
     clubs: [
       { id:"fortalezaceif-co", revenue:0.648, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2020",
-        mix:[["Comercial / Sponsors",0.022],["Estadio",0.056],["Televisión",0.159],["Premios por competencias",0.12],["Venta de Jugadores",0.108],["Otros ingresos",0.183]] },
+        mix:[["Comercial / Sponsors",0.022],["Estadio",0.056],["Televisión",0.159],["Premios por competencias",0.12],["Venta de Jugadores",0.108],["Subsidios y donaciones",0.031],["Otros ingresos",0.152]] },
     ],
   },
   2019: {

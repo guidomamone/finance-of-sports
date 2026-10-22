@@ -3,14 +3,14 @@ const uniaodeleiriaPtRevenueLinesByYear = {
   2023: [
     {"rawLabel":"Vendas de mercadorias","normalizedCategory":"sponsorship_commercial","amountNative":0.041386,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestação de serviços","normalizedCategory":"lump_football_operations","amountNative":0.555973,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.005488,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.005488,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos","normalizedCategory":"other_income","amountNative":0.010666,"disclosureLevel":"aggregated"},
   ],
   2024: [
     {"rawLabel":"Vendas de mercadorias","normalizedCategory":"sponsorship_commercial","amountNative":0.097869,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestação de serviços","normalizedCategory":"lump_football_operations","amountNative":1.546109,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios do estado e outros entes públicas","normalizedCategory":"other_income","amountNative":0.013237,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios de outras entidades","normalizedCategory":"other_income","amountNative":0.011565,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios do estado e outros entes públicas","normalizedCategory":"grants_donations","amountNative":0.013237,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios de outras entidades","normalizedCategory":"grants_donations","amountNative":0.011565,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos suplementares","normalizedCategory":"other_income","amountNative":0.00234,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros rendimentos e ganhos","normalizedCategory":"other_income","amountNative":0.025335,"disclosureLevel":"aggregated"},
   ],

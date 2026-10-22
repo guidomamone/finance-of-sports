@@ -3,7 +3,7 @@ const bolognaItRevenueLinesByYear = {
   2018: [
     {"rawLabel":"1) ricavi delle vendite e delle prestazioni","normalizedCategory":"matchday_competition","amountNative":5.284022,"disclosureLevel":"aggregated"},
     {"rawLabel":"4) incrementi di immobilizzazioni per lavori interni","normalizedCategory":"other_income","amountNative":2.112772,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":1.698621,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":1.698621,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi da sponsorizzazioni","normalizedCategory":"sponsorship_commercial","amountNative":4.389407,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":0.558119,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":6.41123,"disclosureLevel":"aggregated"},
@@ -17,7 +17,7 @@ const bolognaItRevenueLinesByYear = {
   2019: [
     {"rawLabel":"1) ricavi delle vendite e delle prestazioni","normalizedCategory":"matchday_competition","amountNative":5.776763,"disclosureLevel":"aggregated"},
     {"rawLabel":"4) incrementi di immobilizzazioni per lavori interni","normalizedCategory":"other_income","amountNative":1.142206,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":1.238095,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":1.238095,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi da sponsorizzazioni","normalizedCategory":"sponsorship_commercial","amountNative":4.158432,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":0.59455,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":7.021703,"disclosureLevel":"aggregated"},
@@ -31,7 +31,7 @@ const bolognaItRevenueLinesByYear = {
   2020: [
     {"rawLabel":"1) ricavi delle vendite e delle prestazioni","normalizedCategory":"matchday_competition","amountNative":4.493215,"disclosureLevel":"aggregated"},
     {"rawLabel":"4) incrementi di immobilizzazioni per lavori interni","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":0.882444,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":0.882444,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi da sponsorizzazioni","normalizedCategory":"sponsorship_commercial","amountNative":4.093425,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":0.889771,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":6.495607,"disclosureLevel":"aggregated"},
@@ -44,7 +44,7 @@ const bolognaItRevenueLinesByYear = {
   ],
   2021: [
     {"rawLabel":"1) ricavi delle vendite e delle prestazioni","normalizedCategory":"matchday_competition","amountNative":0.00875,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":1.724809,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":1.724809,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi da sponsorizzazioni","normalizedCategory":"sponsorship_commercial","amountNative":4.426134,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":0.729673,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":4.110633,"disclosureLevel":"aggregated"},
@@ -57,7 +57,7 @@ const bolognaItRevenueLinesByYear = {
   ],
   2022: [
     {"rawLabel":"1) ricavi delle vendite e delle prestazioni","normalizedCategory":"matchday_competition","amountNative":4.50158,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":1.962486,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":1.962486,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi da sponsorizzazioni","normalizedCategory":"sponsorship_commercial","amountNative":4.051018,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":6.936721,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":1.921631,"disclosureLevel":"aggregated"},
@@ -72,7 +72,7 @@ const bolognaItRevenueLinesByYear = {
     {"rawLabel":"a) ricavi da gare","normalizedCategory":"matchday_competition","amountNative":4.026784,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) abbonamenti","normalizedCategory":"season_tickets","amountNative":2.377419,"disclosureLevel":"aggregated"},
     {"rawLabel":"c) altri","normalizedCategory":"other_income","amountNative":0.0125,"disclosureLevel":"aggregated"},
-    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"other_income","amountNative":2.540974,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":2.540974,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) proventi da sponsorizzazione","normalizedCategory":"sponsorship_commercial","amountNative":6.038556,"disclosureLevel":"aggregated"},
     {"rawLabel":"c) proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":9.597107,"disclosureLevel":"aggregated"},
     {"rawLabel":"d) proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":2.268162,"disclosureLevel":"aggregated"},
@@ -86,7 +86,7 @@ const bolognaItRevenueLinesByYear = {
   2024: [
     {"rawLabel":"a) ricavi da gare","normalizedCategory":"matchday_competition","amountNative":5.605794,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) abbonamenti","normalizedCategory":"season_tickets","amountNative":2.989694,"disclosureLevel":"aggregated"},
-    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"other_income","amountNative":3.319329,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":3.319329,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) proventi da sponsorizzazione","normalizedCategory":"sponsorship_commercial","amountNative":5.245655,"disclosureLevel":"aggregated"},
     {"rawLabel":"c) proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":11.88499,"disclosureLevel":"aggregated"},
     {"rawLabel":"d) proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":3.469603,"disclosureLevel":"aggregated"},
@@ -98,7 +98,7 @@ const bolognaItRevenueLinesByYear = {
   ],
   2025: [
     {"rawLabel":"a) ricavi da gare","normalizedCategory":"matchday_competition","amountNative":8.101739,"disclosureLevel":"aggregated"},
-    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"other_income","amountNative":1.064466,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":1.064466,"disclosureLevel":"aggregated"},
     {"rawLabel":"b) proventi da sponsorizzazione","normalizedCategory":"sponsorship_commercial","amountNative":6.377678,"disclosureLevel":"aggregated"},
     {"rawLabel":"c) proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":18.748548,"disclosureLevel":"aggregated"},
     {"rawLabel":"d) proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":2.877283,"disclosureLevel":"aggregated"},

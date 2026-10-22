@@ -3,7 +3,7 @@ const portimonensePtRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Vendas","normalizedCategory":"sponsorship_commercial","amountNative":0.05209,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestações de Serviços","normalizedCategory":"lump_football_operations","amountNative":4.387657,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.001783,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.001783,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos suplementares","normalizedCategory":"other_income","amountNative":0.895791,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos e ganhos em investimentos não financeiros","normalizedCategory":"player_sales","amountNative":15.573673,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos e ganhos nos outros Inv.Financ.","normalizedCategory":"other_income","amountNative":0.014113,"disclosureLevel":"aggregated"},
@@ -12,7 +12,7 @@ const portimonensePtRevenueLinesByYear = {
   2023: [
     {"rawLabel":"Vendas","normalizedCategory":"sponsorship_commercial","amountNative":0.017622,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestações de Serviços","normalizedCategory":"lump_football_operations","amountNative":4.442864,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.006211,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.006211,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos suplementares","normalizedCategory":"other_income","amountNative":0.346756,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos e ganhos nos restantes ativos financeiros","normalizedCategory":"other_income","amountNative":0.028528,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos e ganhos em investimentos não financeiros","normalizedCategory":"player_sales","amountNative":8.194311,"disclosureLevel":"aggregated"},
@@ -21,7 +21,7 @@ const portimonensePtRevenueLinesByYear = {
   2024: [
     {"rawLabel":"Vendas","normalizedCategory":"sponsorship_commercial","amountNative":0.029731,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prestações de Serviços","normalizedCategory":"lump_football_operations","amountNative":4.94831,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0.000421,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.000421,"disclosureLevel":"aggregated"},
     {"rawLabel":"Trabalhos para a própria entidade","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos suplementares","normalizedCategory":"other_income","amountNative":0.844684,"disclosureLevel":"aggregated"},
     {"rawLabel":"Descontos de pronto pagamento","normalizedCategory":"other_income","amountNative":0.000016,"disclosureLevel":"aggregated"},
@@ -31,7 +31,7 @@ const portimonensePtRevenueLinesByYear = {
   ],
   2025: [
     {"rawLabel":"Vendas","normalizedCategory":"sponsorship_commercial","amountNative":0.078818,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsídios à exploração","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos suplementares","normalizedCategory":"other_income","amountNative":0.523798,"disclosureLevel":"aggregated"},
     {"rawLabel":"Descontos de pronto pagamento","normalizedCategory":"other_income","amountNative":0.000033,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos e ganhos nos restantes ativos financeiros","normalizedCategory":"other_income","amountNative":0.000002,"disclosureLevel":"aggregated"},

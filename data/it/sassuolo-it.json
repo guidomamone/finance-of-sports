@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sassuolo-it",
@@ -259,7 +259,13 @@
         },
         {"label":"Proventi diversi","category":"other_revenue","subcategory":"other_income","amount":5.018,"disclosure":"aggregated"},
         {"label":"b) plusvalenze","category":"player_transfers","subcategory":"player_sales","amount":43.399333,"disclosure":"aggregated"},
-        {"label":"f) Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":2.188567,"disclosure":"aggregated"}
+        {
+          "label": "f) Contributi in conto esercizio",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 2.188567,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
         {

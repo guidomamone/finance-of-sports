@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "narvatrans-ee",
@@ -74,7 +74,7 @@
       "management_id": null,
       "fx": {"ref":"EUR@2019-12-31"},
       "revenue": [
-        {"label":"Omavalitsuse toetus","category":"other_revenue","subcategory":"other_income","amount":0.08998,"disclosure":"aggregated"},
+        {"label":"Omavalitsuse toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.08998,"disclosure":"aggregated"},
         {"label":"EJLiidu toetused noortoole","category":"other_sporting_sections","subcategory":"youth_football","amount":0.001792,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":0.011327,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":0.25747,"disclosure":"aggregated"},
@@ -143,7 +143,7 @@
       "fx": {"ref":"EUR@2020-12-31"},
       "revenue": [
         {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.102663,"disclosure":"aggregated"},
-        {"label":"Omavalitsuse toetus","category":"other_revenue","subcategory":"other_income","amount":0.09598,"disclosure":"aggregated"},
+        {"label":"Omavalitsuse toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.09598,"disclosure":"aggregated"},
         {"label":"EJLiidu toetused","category":"other_revenue","subcategory":"other_income","amount":0.036947,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":0.033357,"disclosure":"aggregated"},
         {"label":"muud","category":"other_revenue","subcategory":"other_income","amount":0.003713,"disclosure":"aggregated"},
@@ -197,7 +197,7 @@
       "fx": {"ref":"EUR@2021-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.056015,"disclosure":"aggregated"},
-        {"label":"Riigi ja/või KOV toetused","category":"other_revenue","subcategory":"other_income","amount":0.176628,"disclosure":"aggregated"},
+        {"label":"Riigi ja/või KOV toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.176628,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.149214,"disclosure":"aggregated"},
         {
           "label": "UEFA solidaarsustoetus noorte- ja kogukonnatööle",
@@ -208,8 +208,8 @@
         },
         {
           "label": "Mitteseotud osapoolte toetused/annetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.000928,
           "disclosure": "aggregated"
         },
@@ -259,7 +259,7 @@
         {"label":"Liikmemaksud","category":"membership","subcategory":"member_dues","amount":0.016,"disclosure":"aggregated"},
         {"label":"Treeningtasu","category":"membership","subcategory":"member_dues","amount":0.070651,"disclosure":"aggregated"},
         {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.02122,"disclosure":"aggregated"},
-        {"label":"Riigi ja KOV toetused","category":"other_revenue","subcategory":"other_income","amount":0.104429,"disclosure":"aggregated"},
+        {"label":"Riigi ja KOV toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.104429,"disclosure":"aggregated"},
         {"label":"EJLiidu toetused","category":"other_revenue","subcategory":"other_income","amount":0.16692,"disclosure":"aggregated"},
         {
           "label": "UEFA solidaarsustoetus noorte- ja kogukonnatööle",
@@ -270,8 +270,8 @@
         },
         {
           "label": "Mitteseotud osapoolte toetused/annetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.001616,
           "disclosure": "aggregated"
         },
@@ -427,16 +427,22 @@
         },
         {
           "label": "Mitteseotud osapoolte toetused/annetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.00008,
           "disclosure": "aggregated"
         },
-        {"label":"Seotud osapoolte toetused/annetused","category":"other_revenue","subcategory":"other_income","amount":0.009569,"disclosure":"aggregated"},
+        {
+          "label": "Seotud osapoolte toetused/annetused",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.009569,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Muud klassifitseerimata annetused ja toetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.001694,
           "disclosure": "aggregated"
         },
@@ -604,12 +610,18 @@
         },
         {
           "label": "Mitteseotud osapoolte toetused/annetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.003193,
           "disclosure": "aggregated"
         },
-        {"label":"Seotud osapoolte toetused/annetused","category":"other_revenue","subcategory":"other_income","amount":0.0055,"disclosure":"aggregated"},
+        {
+          "label": "Seotud osapoolte toetused/annetused",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.0055,
+          "disclosure": "aggregated"
+        },
         {
           "label": "UEFA solidaarsustoetus osalemise eest UEFA klubivõistlustel",
           "category": "prize_money",
@@ -750,12 +762,18 @@
         },
         {
           "label": "Mitteseotud osapoolte toetused/annetused",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.014319,
           "disclosure": "aggregated"
         },
-        {"label":"Seotud osapoolte toetused/annetused","category":"other_revenue","subcategory":"other_income","amount":0.013537,"disclosure":"aggregated"},
+        {
+          "label": "Seotud osapoolte toetused/annetused",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.013537,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam",
           "category": "commercial",

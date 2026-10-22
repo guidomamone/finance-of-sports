@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "felgueiras-pt",
@@ -47,7 +47,7 @@
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
         {"label":"Vendas e serviços prestados","category":"undisclosed","subcategory":"lump_football_operations","amount":0.138985,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.004029,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.004029,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -103,7 +103,7 @@
       "fx": {"rate":0.9203,"source":"manual"},
       "revenue": [
         {"label":"Vendas e serviços prestados","category":"undisclosed","subcategory":"lump_football_operations","amount":0.179315,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.008297,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.008297,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"other_revenue","subcategory":"other_income","amount":0.009521,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -165,7 +165,7 @@
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
         {"label":"Vendas e serviços prestados","category":"undisclosed","subcategory":"lump_football_operations","amount":0.418836,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.009517,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.009517,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
       ],
       "expenses": [

@@ -66,7 +66,7 @@ const parmaItRevenueLinesByYear = {
     {"rawLabel":"Proventi da cessione diritti audiovisivi","normalizedCategory":"broadcasting","amountNative":15.06204,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi da cessione diritti pluriennali prestazioni calciatori","normalizedCategory":"player_sales","amountNative":1.394738,"disclosureLevel":"aggregated"},
     {"rawLabel":"Altri proventi gestione calciatori","normalizedCategory":"player_sales","amountNative":0.75978,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":14.272881,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":14.272881,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ricavi e proventi diversi","normalizedCategory":"other_income","amountNative":1.992988,"disclosureLevel":"aggregated"},
   ],
   2022: [
@@ -79,7 +79,7 @@ const parmaItRevenueLinesByYear = {
     {"rawLabel":"e) Proventi da cessione diritti televisivi","normalizedCategory":"broadcasting","amountNative":3.05542,"disclosureLevel":"aggregated"},
     {"rawLabel":"h) Plusvalenze cess. diritti pluriennali prest. giocatori","normalizedCategory":"player_sales","amountNative":0.049782,"disclosureLevel":"aggregated"},
     {"rawLabel":"i) Altri proventi gest. giocatori","normalizedCategory":"player_sales","amountNative":1.820531,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":17.526423,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":17.526423,"disclosureLevel":"aggregated"},
     {"rawLabel":"Altri ricavi e proventi","normalizedCategory":"other_income","amountNative":3.799862,"disclosureLevel":"aggregated"},
   ],
   2023: [
@@ -92,7 +92,7 @@ const parmaItRevenueLinesByYear = {
     {"rawLabel":"Proventi da cessione diritti audiovisivi","normalizedCategory":"broadcasting","amountNative":2.98068,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi da cessione diritti prestazioni calciatori","normalizedCategory":"player_sales","amountNative":3.727064,"disclosureLevel":"aggregated"},
     {"rawLabel":"Altri proventi gestione calciatori","normalizedCategory":"player_sales","amountNative":2.381525,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":5.936768,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":5.936768,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ricavi e proventi diversi","normalizedCategory":"other_income","amountNative":5.334062,"disclosureLevel":"aggregated"},
   ],
   2024: [
@@ -105,7 +105,7 @@ const parmaItRevenueLinesByYear = {
     {"rawLabel":"Proventi da cessione diritti audiovisivi","normalizedCategory":"broadcasting","amountNative":16.649069,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi da cessione diritti prestazioni calciatori","normalizedCategory":"player_sales","amountNative":1.528672,"disclosureLevel":"aggregated"},
     {"rawLabel":"Altri Proventi gestione calciatori","normalizedCategory":"player_sales","amountNative":1.644396,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":4.394785,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":4.394785,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ricavi e proventi diversi","normalizedCategory":"other_income","amountNative":3.401614,"disclosureLevel":"aggregated"},
   ],
   2025: [
@@ -118,7 +118,7 @@ const parmaItRevenueLinesByYear = {
     {"rawLabel":"Proventi da cessione diritti audiovisivi","normalizedCategory":"broadcasting","amountNative":30.702866,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi da cessione diritti prestazioni calciatori","normalizedCategory":"player_sales","amountNative":69.449543,"disclosureLevel":"aggregated"},
     {"rawLabel":"Altri Proventi gestione calciatori","normalizedCategory":"player_sales","amountNative":1.811268,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":1.925497,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"grants_donations","amountNative":1.925497,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ricavi e proventi diversi","normalizedCategory":"other_income","amountNative":3.218559,"disclosureLevel":"aggregated"},
   ],
 };

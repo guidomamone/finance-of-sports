@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "salernitana-it",
@@ -139,7 +139,7 @@
           "disclosure": "aggregated"
         },
         {"label":"Sopravvenienze attive (non ricorrenti)","category":"other_revenue","subcategory":"other_income","amount":1.856368,"disclosure":"aggregated"},
-        {"label":"Contributi in c/esercizio","category":"other_revenue","subcategory":"other_income","amount":1.237855,"disclosure":"aggregated"},
+        {"label":"Contributi in c/esercizio","category":"grants_donations","subcategory":"grants_donations","amount":1.237855,"disclosure":"aggregated"},
         {"label":"Proventi vari","category":"other_revenue","subcategory":"other_income","amount":3.216209,"disclosure":"aggregated"},
         {"label":"Ricavi da merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.692534,"disclosure":"aggregated"},
         {

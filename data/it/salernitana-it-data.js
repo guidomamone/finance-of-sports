@@ -20,7 +20,7 @@ const salernitanaItRevenueLinesByYear = {
     {"rawLabel":"Cessione temporanea calciatori","normalizedCategory":"player_sales","amountNative":0.1,"disclosureLevel":"aggregated"},
     {"rawLabel":"Altri proventi da gestione calciatori","normalizedCategory":"player_sales","amountNative":0.068961,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sopravvenienze attive (non ricorrenti)","normalizedCategory":"other_income","amountNative":1.856368,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Contributi in c/esercizio","normalizedCategory":"other_income","amountNative":1.237855,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in c/esercizio","normalizedCategory":"grants_donations","amountNative":1.237855,"disclosureLevel":"aggregated"},
     {"rawLabel":"Proventi vari","normalizedCategory":"other_income","amountNative":3.216209,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ricavi da merchandising","normalizedCategory":"sponsorship_commercial","amountNative":0.692534,"disclosureLevel":"aggregated"},
     {"rawLabel":"Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori","normalizedCategory":"player_sales","amountNative":14.419294,"disclosureLevel":"aggregated"},

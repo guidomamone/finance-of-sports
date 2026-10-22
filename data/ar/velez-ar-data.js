@@ -47,7 +47,7 @@ const velezArRevenueLinesByYear = {
     {"rawLabel":"Por servicios de enseñanza","normalizedCategory":"education","amountNative":74.142554,"disclosureLevel":"detailed"},
     {"rawLabel":"Subsidios estatales a la educación","normalizedCategory":"education","amountNative":44.130538,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos de formación","normalizedCategory":"player_sales","amountNative":2.457832,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones recibidas","normalizedCategory":"other_income","amountNative":1.035933,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones recibidas","normalizedCategory":"grants_donations","amountNative":1.035933,"disclosureLevel":"detailed"},
   ],
   2019: [
     {"rawLabel":"Cuotas de asociados","normalizedCategory":"member_dues","amountNative":257.456932,"disclosureLevel":"detailed"},
@@ -61,7 +61,7 @@ const velezArRevenueLinesByYear = {
     {"rawLabel":"Subsidios estatales a la educación","normalizedCategory":"education","amountNative":75.66146,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos de formación","normalizedCategory":"player_sales","amountNative":20.402751,"disclosureLevel":"detailed"},
     {"rawLabel":"Recuperos","normalizedCategory":"other_income","amountNative":11.999658,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones recibidas","normalizedCategory":"other_income","amountNative":0.352516,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones recibidas","normalizedCategory":"grants_donations","amountNative":0.352516,"disclosureLevel":"detailed"},
   ],
   2020: [
     {"rawLabel":"Cuotas de asociados","normalizedCategory":"member_dues","amountNative":349.216139,"disclosureLevel":"detailed"},
@@ -75,8 +75,8 @@ const velezArRevenueLinesByYear = {
     {"rawLabel":"Subsidios estatales a la educación","normalizedCategory":"education","amountNative":106.288568,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos de formación","normalizedCategory":"player_sales","amountNative":30.262049,"disclosureLevel":"detailed"},
     {"rawLabel":"Recuperos","normalizedCategory":"other_income","amountNative":10.580707,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subsidio A.T.P.","normalizedCategory":"other_income","amountNative":24.838569,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones recibidas","normalizedCategory":"other_income","amountNative":34.653372,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subsidio A.T.P.","normalizedCategory":"grants_donations","amountNative":24.838569,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones recibidas","normalizedCategory":"grants_donations","amountNative":34.653372,"disclosureLevel":"detailed"},
   ],
   2021: [
     {"rawLabel":"Cuotas de asociados","normalizedCategory":"member_dues","amountNative":306.034127,"disclosureLevel":"detailed"},
@@ -89,7 +89,7 @@ const velezArRevenueLinesByYear = {
     {"rawLabel":"Subsidios estatales a la educación","normalizedCategory":"education","amountNative":145.790042,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos de formación","normalizedCategory":"player_sales","amountNative":84.149417,"disclosureLevel":"detailed"},
     {"rawLabel":"Recuperos","normalizedCategory":"other_income","amountNative":19.290314,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subsidio A.T.P.","normalizedCategory":"other_income","amountNative":91.966749,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subsidio A.T.P.","normalizedCategory":"grants_donations","amountNative":91.966749,"disclosureLevel":"detailed"},
   ],
   2022: [
     {"rawLabel":"Cuotas de asociados","normalizedCategory":"member_dues","amountNative":884.057424,"disclosureLevel":"detailed"},
@@ -116,7 +116,7 @@ const velezArRevenueLinesByYear = {
     {"rawLabel":"Subsidios estatales a la educación","normalizedCategory":"education","amountNative":513.318469,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos de formación","normalizedCategory":"player_sales","amountNative":111.683227,"disclosureLevel":"detailed"},
     {"rawLabel":"Recuperos","normalizedCategory":"other_income","amountNative":15.129878,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones recibidas","normalizedCategory":"other_income","amountNative":204.12611,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones recibidas","normalizedCategory":"grants_donations","amountNative":204.12611,"disclosureLevel":"detailed"},
   ],
   2024: [
     {"rawLabel":"Cuotas de asociados","normalizedCategory":"member_dues","amountNative":6600.197302,"disclosureLevel":"detailed"},
@@ -130,7 +130,7 @@ const velezArRevenueLinesByYear = {
     {"rawLabel":"Subsidios estatales a la educación","normalizedCategory":"education","amountNative":2192.799366,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos de formación","normalizedCategory":"player_sales","amountNative":806.03959,"disclosureLevel":"detailed"},
     {"rawLabel":"Recuperos","normalizedCategory":"other_income","amountNative":659.914609,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones recibidas","normalizedCategory":"other_income","amountNative":1323.9651,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones recibidas","normalizedCategory":"grants_donations","amountNative":1323.9651,"disclosureLevel":"detailed"},
   ],
   2025: [
     {"rawLabel":"Cuotas de asociados","normalizedCategory":"member_dues","amountNative":13933.217517,"disclosureLevel":"detailed"},
@@ -145,7 +145,7 @@ const velezArRevenueLinesByYear = {
     {"rawLabel":"Subsidios estatales a la educación","normalizedCategory":"education","amountNative":2943.636937,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos de formación","normalizedCategory":"player_sales","amountNative":1185.388266,"disclosureLevel":"detailed"},
     {"rawLabel":"Recuperos","normalizedCategory":"other_income","amountNative":198.781676,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones recibidas","normalizedCategory":"other_income","amountNative":1294.058437,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones recibidas","normalizedCategory":"grants_donations","amountNative":1294.058437,"disclosureLevel":"detailed"},
     {"rawLabel":"Ganancia reservada para obras de infraestructura","normalizedCategory":"other_income","amountNative":-549.202485,"disclosureLevel":"detailed"},
     {"rawLabel":"Recursos por desafectación del Fondo de reserva","normalizedCategory":"other_income","amountNative":1011.739903,"disclosureLevel":"detailed"},
   ],

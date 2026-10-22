@@ -13,7 +13,7 @@ const institutoArRevenueLinesByYear = {
     {"rawLabel":"Centros educativos","normalizedCategory":"education","amountNative":1480.506179,"disclosureLevel":"detailed"},
     {"rawLabel":"Recursos predio La Agustina","normalizedCategory":"other_sports","amountNative":148.864908,"disclosureLevel":"detailed"},
     {"rawLabel":"Ventas de salón Gloriamanía","normalizedCategory":"other_income","amountNative":816.979303,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subsidios recibidos","normalizedCategory":"other_income","amountNative":21.961181,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subsidios recibidos","normalizedCategory":"grants_donations","amountNative":21.961181,"disclosureLevel":"detailed"},
   ],
   2025: [
     {"rawLabel":"Para fines generales (Anexo III)","normalizedCategory":"other_income","amountNative":3858.67127,"disclosureLevel":"aggregated"},
@@ -28,7 +28,7 @@ const institutoArRevenueLinesByYear = {
     {"rawLabel":"Recursos predio La Agustina","normalizedCategory":"other_sports","amountNative":165.558451,"disclosureLevel":"aggregated"},
     {"rawLabel":"Transferencias y préstamos de jugadores","normalizedCategory":"player_sales","amountNative":4594.836822,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ventas de salón Gloriamanía","normalizedCategory":"other_income","amountNative":1047.529232,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidios recibidos","normalizedCategory":"other_income","amountNative":97.517794,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidios recibidos","normalizedCategory":"grants_donations","amountNative":97.517794,"disclosureLevel":"aggregated"},
   ],
 };
 

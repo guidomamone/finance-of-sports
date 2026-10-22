@@ -7,7 +7,7 @@ window.RANKINGS["ee-esiliiga"] = {
     clubs: [
       { id:"harjujklaagri-ee", revenue:0.053, reportType:"official_balance_sheet",
         sourceId:"harjujklaagri-ee-aruanne-2024",
-        mix:[["Comercial / Sponsors",0.05],["Otros ingresos",0.003]] },
+        mix:[["Comercial / Sponsors",0.05],["Subsidios y donaciones",0.003]] },
     ],
   },
   2021: {
@@ -16,7 +16,7 @@ window.RANKINGS["ee-esiliiga"] = {
     clubs: [
       { id:"tallinnakalev-ee", revenue:0.317, reportType:"official_balance_sheet",
         sourceId:"tallinnakalev-ee-aruanne-2021",
-        mix:[["Comercial / Sponsors",0.081],["Estadio",0.101],["Venta de Jugadores",0.002],["Otros ingresos",0.133]] },
+        mix:[["Comercial / Sponsors",0.081],["Estadio",0.101],["Venta de Jugadores",0.002],["Subsidios y donaciones",0.038],["Otros ingresos",0.095]] },
     ],
   },
 };

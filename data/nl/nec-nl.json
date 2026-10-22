@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "nec-nl",
@@ -35,7 +35,7 @@
         {"label":"Wedstrijdbaten","category":"matchday","subcategory":"matchday_competition","amount":4.733426,"disclosure":"aggregated"},
         {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":6.363533,"disclosure":"aggregated"},
         {"label":"Media gerelateerde baten","category":"media_rights","subcategory":"broadcasting","amount":2.787462,"disclosure":"aggregated"},
-        {"label":"Subsidies","category":"other_revenue","subcategory":"other_income","amount":0.171847,"disclosure":"aggregated"},
+        {"label":"Subsidies","category":"grants_donations","subcategory":"grants_donations","amount":0.171847,"disclosure":"aggregated"},
         {"label":"Merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":0.937031,"disclosure":"aggregated"},
         {"label":"Horeca","category":"venue","subcategory":"stadium_other","amount":1.446526,"disclosure":"aggregated"},
         {"label":"Prijzengeld","category":"prize_money","subcategory":"competition_bonus","amount":1.431144,"disclosure":"aggregated"},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "instituto-ar",
@@ -58,7 +58,7 @@
         {"label":"Centros educativos","category":"non_sporting_activities","subcategory":"education","amount":1480.506179,"disclosure":"detailed"},
         {"label":"Recursos predio La Agustina","category":"other_sporting_sections","subcategory":"other_sports","amount":148.864908,"disclosure":"detailed"},
         {"label":"Ventas de salón Gloriamanía","category":"other_revenue","subcategory":"other_income","amount":816.979303,"disclosure":"detailed"},
-        {"label":"Subsidios recibidos","category":"other_revenue","subcategory":"other_income","amount":21.961181,"disclosure":"detailed"}
+        {"label":"Subsidios recibidos","category":"grants_donations","subcategory":"grants_donations","amount":21.961181,"disclosure":"detailed"}
       ],
       "expenses": [
         {
@@ -274,7 +274,7 @@
           "disclosure": "aggregated"
         },
         {"label":"Ventas de salón Gloriamanía","category":"other_revenue","subcategory":"other_income","amount":1047.529232,"disclosure":"aggregated"},
-        {"label":"Subsidios recibidos","category":"other_revenue","subcategory":"other_income","amount":97.517794,"disclosure":"aggregated"}
+        {"label":"Subsidios recibidos","category":"grants_donations","subcategory":"grants_donations","amount":97.517794,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Remuneraciones y cargas","category":"admin_general","subcategory":"admin_general_expense","amount":-236.028547,"disclosure":"aggregated"},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fctwente-nl",
@@ -33,7 +33,7 @@
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
         {"label":"Wedstrijdbaten","category":"matchday","subcategory":"matchday_competition","amount":10.592,"disclosure":"aggregated"},
-        {"label":"Bijdragen in giften en geld","category":"other_revenue","subcategory":"other_income","amount":30.21,"disclosure":"aggregated"},
+        {"label":"Bijdragen in giften en geld","category":"grants_donations","subcategory":"grants_donations","amount":30.21,"disclosure":"aggregated"},
         {"label":"Televisiebaten","category":"media_rights","subcategory":"broadcasting","amount":7.941,"disclosure":"aggregated"},
         {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.382,"disclosure":"aggregated"},
         {"label":"Catering","category":"venue","subcategory":"stadium_other","amount":11.451,"disclosure":"aggregated"},

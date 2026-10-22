@@ -271,6 +271,7 @@
             "player_transfers",
             "other_sporting_sections",
             "non_sporting_activities",
+            "grants_donations",
             "other_revenue",
             "undisclosed"
           ]
@@ -289,6 +290,7 @@
             "education_expense",
             "exceptional_items",
             "gate_receipts",
+            "grants_donations",
             "lump_football_operations",
             "lump_football_operations_expense",
             "lump_rugby_operations",
@@ -474,6 +476,18 @@
         {
           "properties": {
             "category": {
+              "const": "grants_donations"
+            },
+            "subcategory": {
+              "enum": [
+                "grants_donations"
+              ]
+            }
+          }
+        },
+        {
+          "properties": {
+            "category": {
               "const": "other_revenue"
             },
             "subcategory": {
@@ -551,6 +565,7 @@
             "education_expense",
             "exceptional_items",
             "gate_receipts",
+            "grants_donations",
             "lump_football_operations",
             "lump_football_operations_expense",
             "lump_rugby_operations",
@@ -683,6 +698,7 @@
                 "competition_bonus",
                 "education",
                 "gate_receipts",
+                "grants_donations",
                 "lump_football_operations",
                 "lump_rugby_operations",
                 "matchday_competition",

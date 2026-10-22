@@ -8,7 +8,7 @@ const peczwolleNlRevenueLinesByYear = {
     {"rawLabel":"Merchandising & Business to consumeractiviteiten","normalizedCategory":"sponsorship_commercial","amountNative":0.160648,"disclosureLevel":"aggregated"},
     {"rawLabel":"Food & beverage","normalizedCategory":"stadium_other","amountNative":0.313929,"disclosureLevel":"aggregated"},
     {"rawLabel":"Overige omzet","normalizedCategory":"other_income","amountNative":0.951855,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Subsidies en giften","normalizedCategory":"other_income","amountNative":0.254179,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Subsidies en giften","normalizedCategory":"grants_donations","amountNative":0.254179,"disclosureLevel":"aggregated"},
     {"rawLabel":"Vergoedingssommen spelers","normalizedCategory":"player_sales","amountNative":3.826242,"disclosureLevel":"aggregated"},
     {"rawLabel":"Solidariteit- en opleidingsvergoedingen","normalizedCategory":"player_sales","amountNative":1.21625,"disclosureLevel":"aggregated"},
   ],

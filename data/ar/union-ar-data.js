@@ -16,7 +16,7 @@ const unionArRevenueLinesByYear = {
     {"rawLabel":"Departamento para la Actividad Educativa","normalizedCategory":"education","amountNative":293.406843,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos de Subcomisiones","normalizedCategory":"other_sports","amountNative":23.552535,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos Fútbol Amateur","normalizedCategory":"youth_football","amountNative":12.421668,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subsidios","normalizedCategory":"other_income","amountNative":0.027653,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subsidios","normalizedCategory":"grants_donations","amountNative":0.027653,"disclosureLevel":"detailed"},
   ],
   2023: [
     {"rawLabel":"Carnet Socios","normalizedCategory":"member_dues","amountNative":6.231108,"disclosureLevel":"detailed"},
@@ -34,7 +34,7 @@ const unionArRevenueLinesByYear = {
     {"rawLabel":"Departamento para la Actividad Educativa","normalizedCategory":"education","amountNative":677.011879,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos de Subcomisiones","normalizedCategory":"other_sports","amountNative":74.28911,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos Fútbol Amateur","normalizedCategory":"youth_football","amountNative":43.217287,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subsidios","normalizedCategory":"other_income","amountNative":42.915278,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subsidios","normalizedCategory":"grants_donations","amountNative":42.915278,"disclosureLevel":"detailed"},
   ],
   2024: [
     {"rawLabel":"Carnet Socios","normalizedCategory":"member_dues","amountNative":14.962775,"disclosureLevel":"detailed"},
@@ -52,7 +52,7 @@ const unionArRevenueLinesByYear = {
     {"rawLabel":"Departamento para la Actividad Educativa","normalizedCategory":"education","amountNative":2278.670012,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos de Subcomisiones","normalizedCategory":"other_sports","amountNative":219.706856,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos Fútbol Amateur","normalizedCategory":"youth_football","amountNative":140.332766,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subsidios","normalizedCategory":"other_income","amountNative":83.909,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subsidios","normalizedCategory":"grants_donations","amountNative":83.909,"disclosureLevel":"detailed"},
   ],
   2025: [
     {"rawLabel":"Cuotas Sociales","normalizedCategory":"member_dues","amountNative":6052.384512,"disclosureLevel":"detailed"},
@@ -70,7 +70,7 @@ const unionArRevenueLinesByYear = {
     {"rawLabel":"Departamento para la Actividad Educativa","normalizedCategory":"education","amountNative":3152.395103,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos de Subcomisiones","normalizedCategory":"other_sports","amountNative":480.096085,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos Fútbol Amateur","normalizedCategory":"youth_football","amountNative":183.019674,"disclosureLevel":"detailed"},
-    {"rawLabel":"Subsidios","normalizedCategory":"other_income","amountNative":141.577709,"disclosureLevel":"detailed"},
+    {"rawLabel":"Subsidios","normalizedCategory":"grants_donations","amountNative":141.577709,"disclosureLevel":"detailed"},
   ],
 };
 

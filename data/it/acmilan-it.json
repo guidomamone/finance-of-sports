@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "acmilan-it",
@@ -140,7 +140,7 @@
           "amount": 5.008,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.013,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.013,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":28.238,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.101,"disclosure":"aggregated"},
         {
@@ -347,7 +347,7 @@
           "amount": 6.097,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.013,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.013,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":29.389,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.103,"disclosure":"aggregated"},
         {
@@ -545,7 +545,7 @@
           "amount": 7.615,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.013,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.013,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":31.739,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.113,"disclosure":"aggregated"},
         {
@@ -725,7 +725,7 @@
           "amount": 8.408,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.013,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.013,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":35.497,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.317,"disclosure":"aggregated"},
         {
@@ -918,7 +918,7 @@
           "amount": 7.91,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.013,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.013,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":34.582,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0.319,"disclosure":"aggregated"},
         {
@@ -1112,7 +1112,7 @@
           "amount": 7.259,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.006,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.006,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":34.727,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
         {
@@ -2037,7 +2037,7 @@
           "amount": -0.054,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.173,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.173,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":57.799,"disclosure":"aggregated"},
         {
           "label": "d) proventi commerciali e royalties",
@@ -2193,7 +2193,7 @@
         {"label":"Rimanenze Finali E-Commerce","category":"other_revenue","subcategory":"other_income","amount":3.098,"disclosure":"aggregated"},
         {"label":"Rimanenze Finali Store Casa Milan","category":"other_revenue","subcategory":"other_income","amount":1.121,"disclosure":"aggregated"},
         {"label":"Acc. Fondo Obsolescenza E-commerce","category":"other_revenue","subcategory":"other_income","amount":-0.391,"disclosure":"aggregated"},
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.119,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.119,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":80.783,"disclosure":"aggregated"},
         {
           "label": "d) proventi commerciali e royalties",
@@ -2376,7 +2376,7 @@
           "amount": 3.258,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.109,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.109,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":90.529,"disclosure":"aggregated"},
         {
           "label": "d) proventi commerciali e royalties",
@@ -2558,7 +2558,7 @@
           "amount": 0.997,
           "disclosure": "aggregated"
         },
-        {"label":"a) contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":0.013,"disclosure":"aggregated"},
+        {"label":"a) contributi in conto esercizio","category":"grants_donations","subcategory":"grants_donations","amount":0.013,"disclosure":"aggregated"},
         {"label":"b) proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":91.111,"disclosure":"aggregated"},
         {"label":"c) proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"aggregated"},
         {

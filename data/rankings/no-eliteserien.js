@@ -10,10 +10,10 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Comercial / Sponsors",8.169],["Estadio",2.725],["Televisión",4.753],["Venta de Jugadores",6.127],["Otros ingresos",4.829]] },
       { id:"sarpsborg08-no", revenue:22.113, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2025",
-        mix:[["Cuotas Sociales",0.071],["Comercial / Sponsors",3.416],["Estadio",1.132],["Televisión",1.809],["Venta de Jugadores",13.392],["Otros ingresos",2.293]] },
+        mix:[["Cuotas Sociales",0.071],["Comercial / Sponsors",3.416],["Estadio",1.132],["Televisión",1.809],["Venta de Jugadores",13.392],["Subsidios y donaciones",0.076],["Otros ingresos",2.217]] },
       { id:"molde-no", revenue:12.813, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2025",
-        mix:[["Cuotas Sociales",0.032],["Comercial / Sponsors",2.772],["Estadio",1.422],["Televisión",5.981],["Premios por competencias",0.113],["Venta de Jugadores",0.508],["Otros ingresos",1.986]] },
+        mix:[["Cuotas Sociales",0.032],["Comercial / Sponsors",2.772],["Estadio",1.422],["Televisión",5.981],["Premios por competencias",0.113],["Venta de Jugadores",0.508],["Subsidios y donaciones",1.334],["Otros ingresos",0.652]] },
       { id:"valerenga-no", revenue:9.904, reportType:"official_balance_sheet",
         sourceId:"valerenga-no-aarsregnskap-valerenga-fotball-as-2025",
         mix:[["Comercial / Sponsors",4.419],["Estadio",2.531],["Televisión",2.831],["Otros ingresos",0.123]] },
@@ -31,7 +31,7 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Comercial / Sponsors",5.778],["Estadio",1.571],["Televisión",3.233],["Venta de Jugadores",6.762],["Otros ingresos",2.171]] },
       { id:"sarpsborg08-no", revenue:17.945, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2024",
-        mix:[["Cuotas Sociales",0.051],["Comercial / Sponsors",2.601],["Estadio",0.567],["Televisión",1.649],["Venta de Jugadores",11.856],["Otros ingresos",1.222]] },
+        mix:[["Cuotas Sociales",0.051],["Comercial / Sponsors",2.601],["Estadio",0.567],["Televisión",1.649],["Venta de Jugadores",11.856],["Subsidios y donaciones",0.085],["Otros ingresos",1.137]] },
       { id:"fredrikstad-no", revenue:8.167, reportType:"official_balance_sheet",
         sourceId:"fredrikstad-no-wf-src-ffk-arsmote-2025",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",8.167]],
@@ -44,16 +44,16 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:30.96, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2023",
-        mix:[["Cuotas Sociales",0.025],["Comercial / Sponsors",2.024],["Estadio",1.679],["Televisión",24.837],["Premios por competencias",0.836],["Venta de Jugadores",0.117],["Otros ingresos",1.443]] },
+        mix:[["Cuotas Sociales",0.025],["Comercial / Sponsors",2.024],["Estadio",1.679],["Televisión",24.837],["Premios por competencias",0.836],["Venta de Jugadores",0.117],["Subsidios y donaciones",0.685],["Otros ingresos",0.758]] },
       { id:"valerenga-no", revenue:19.765, reportType:"official_balance_sheet",
         sourceId:"valerenga-no-aarsregnskap-valerenga-fotball-as-2023",
-        mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",4.965],["Estadio",1.858],["Televisión",2.853],["Premios por competencias",0.091],["Venta de Jugadores",9.309],["Otros ingresos",0.649]] },
+        mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",4.965],["Estadio",1.858],["Televisión",2.853],["Premios por competencias",0.091],["Venta de Jugadores",9.309],["Subsidios y donaciones",0.404],["Otros ingresos",0.246]] },
       { id:"viking-no", revenue:15.856, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2023",
         mix:[["Comercial / Sponsors",5.562],["Estadio",1.814],["Televisión",2.937],["Venta de Jugadores",3.596],["Otros ingresos",1.946]] },
       { id:"sarpsborg08-no", revenue:14.406, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2023",
-        mix:[["Cuotas Sociales",0.065],["Comercial / Sponsors",3.149],["Estadio",0.62],["Televisión",1.98],["Venta de Jugadores",7.242],["Otros ingresos",1.349]] },
+        mix:[["Cuotas Sociales",0.065],["Comercial / Sponsors",3.149],["Estadio",0.62],["Televisión",1.98],["Venta de Jugadores",7.242],["Subsidios y donaciones",0.122],["Otros ingresos",1.228]] },
     ],
   },
   2022: {
@@ -68,10 +68,10 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Comercial / Sponsors",2.191],["Estadio",1.571],["Premios por competencias",0.816],["Venta de Jugadores",0.015],["Otros ingresos",10.772]] },
       { id:"sarpsborg08-no", revenue:10.794, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2022",
-        mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.658],["Estadio",0.535],["Televisión",0.892],["Venta de Jugadores",4.54],["Otros ingresos",1.107]] },
+        mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.658],["Estadio",0.535],["Televisión",0.892],["Venta de Jugadores",4.54],["Subsidios y donaciones",0.19],["Otros ingresos",0.918]] },
       { id:"valerenga-no", revenue:10.407, reportType:"official_balance_sheet",
         sourceId:"valerenga-no-aarsregnskap-valerenga-fotball-as-2022",
-        mix:[["Cuotas Sociales",0.028],["Comercial / Sponsors",4.584],["Estadio",1.398],["Televisión",1.803],["Premios por competencias",0.017],["Venta de Jugadores",1.35],["Otros ingresos",1.225]] },
+        mix:[["Cuotas Sociales",0.028],["Comercial / Sponsors",4.584],["Estadio",1.398],["Televisión",1.803],["Premios por competencias",0.017],["Venta de Jugadores",1.35],["Subsidios y donaciones",0.304],["Otros ingresos",0.921]] },
     ],
   },
   2021: {
@@ -80,13 +80,13 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:14.143, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2021",
-        mix:[["Cuotas Sociales",0.023],["Comercial / Sponsors",2.528],["Estadio",1.158],["Televisión",7.858],["Premios por competencias",0.155],["Venta de Jugadores",0.012],["Otros ingresos",2.408]] },
+        mix:[["Cuotas Sociales",0.023],["Comercial / Sponsors",2.528],["Estadio",1.158],["Televisión",7.858],["Premios por competencias",0.155],["Venta de Jugadores",0.012],["Subsidios y donaciones",1.585],["Otros ingresos",0.824]] },
       { id:"viking-no", revenue:14.081, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2021",
         mix:[["Comercial / Sponsors",5.516],["Estadio",0.987],["Televisión",2.613],["Venta de Jugadores",2.218],["Otros ingresos",2.747]] },
       { id:"sarpsborg08-no", revenue:9.227, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2021",
-        mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.333],["Estadio",0.507],["Televisión",1.116],["Premios por competencias",0.105],["Venta de Jugadores",2.908],["Otros ingresos",1.199]] },
+        mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.333],["Estadio",0.507],["Televisión",1.116],["Premios por competencias",0.105],["Venta de Jugadores",2.908],["Subsidios y donaciones",0.759],["Otros ingresos",0.44]] },
     ],
   },
   2020: {
@@ -95,13 +95,13 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:25.21, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2020",
-        mix:[["Cuotas Sociales",0.029],["Estadio",1.079],["Televisión",21.407],["Premios por competencias",0.077],["Venta de Jugadores",0.014],["Otros ingresos",2.605]] },
+        mix:[["Cuotas Sociales",0.029],["Estadio",1.079],["Televisión",21.407],["Premios por competencias",0.077],["Venta de Jugadores",0.014],["Subsidios y donaciones",1.758],["Otros ingresos",0.847]] },
       { id:"viking-no", revenue:13.101, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2020",
         mix:[["Comercial / Sponsors",4.689],["Estadio",0.575],["Televisión",1.736],["Venta de Jugadores",2.829],["Otros ingresos",3.272]] },
       { id:"sarpsborg08-no", revenue:10.843, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2020",
-        mix:[["Cuotas Sociales",0.072],["Comercial / Sponsors",3.638],["Estadio",0.03],["Televisión",1.014],["Venta de Jugadores",4.599],["Otros ingresos",1.49]] },
+        mix:[["Cuotas Sociales",0.072],["Comercial / Sponsors",3.638],["Estadio",0.03],["Televisión",1.014],["Venta de Jugadores",4.599],["Subsidios y donaciones",0.871],["Otros ingresos",0.618]] },
     ],
   },
   2019: {
@@ -110,13 +110,13 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:13.81, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2019",
-        mix:[["Cuotas Sociales",0.025],["Comercial / Sponsors",5.437],["Estadio",1.49],["Televisión",4.958],["Premios por competencias",0.331],["Otros ingresos",1.568]] },
+        mix:[["Cuotas Sociales",0.025],["Comercial / Sponsors",5.437],["Estadio",1.49],["Televisión",4.958],["Premios por competencias",0.331],["Subsidios y donaciones",0.254],["Otros ingresos",1.314]] },
       { id:"viking-no", revenue:11.761, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2019",
         mix:[["Comercial / Sponsors",5.288],["Estadio",1.453],["Televisión",1.709],["Venta de Jugadores",0.1],["Otros ingresos",3.211]] },
       { id:"sarpsborg08-no", revenue:10.834, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2019",
-        mix:[["Cuotas Sociales",0.076],["Comercial / Sponsors",3.68],["Estadio",0.626],["Televisión",0.87],["Premios por competencias",0.21],["Venta de Jugadores",3.528],["Otros ingresos",1.845]] },
+        mix:[["Cuotas Sociales",0.076],["Comercial / Sponsors",3.68],["Estadio",0.626],["Televisión",0.87],["Premios por competencias",0.21],["Venta de Jugadores",3.528],["Subsidios y donaciones",1.355],["Otros ingresos",0.49]] },
     ],
   },
   2018: {
@@ -125,10 +125,10 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"sarpsborg08-no", revenue:19.261, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2018",
-        mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",3.419],["Estadio",1.243],["Televisión",2.007],["Premios por competencias",6.16],["Venta de Jugadores",4.927],["Otros ingresos",1.442]] },
+        mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",3.419],["Estadio",1.243],["Televisión",2.007],["Premios por competencias",6.16],["Venta de Jugadores",4.927],["Subsidios y donaciones",0.754],["Otros ingresos",0.689]] },
       { id:"molde-no", revenue:11.975, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2018",
-        mix:[["Cuotas Sociales",0.027],["Comercial / Sponsors",4.298],["Estadio",1.553],["Televisión",4.633],["Premios por competencias",0.214],["Venta de Jugadores",0.002],["Otros ingresos",1.248]] },
+        mix:[["Cuotas Sociales",0.027],["Comercial / Sponsors",4.298],["Estadio",1.553],["Televisión",4.633],["Premios por competencias",0.214],["Venta de Jugadores",0.002],["Subsidios y donaciones",0.251],["Otros ingresos",0.997]] },
     ],
   },
   2017: {
@@ -137,13 +137,13 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:11.443, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2017",
-        mix:[["Cuotas Sociales",0.031],["Comercial / Sponsors",4.674],["Estadio",2.119],["Televisión",3.161],["Premios por competencias",0.004],["Otros ingresos",1.455]] },
+        mix:[["Cuotas Sociales",0.031],["Comercial / Sponsors",4.674],["Estadio",2.119],["Televisión",3.161],["Premios por competencias",0.004],["Subsidios y donaciones",0.314],["Otros ingresos",1.141]] },
       { id:"viking-no", revenue:10.061, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2017",
         mix:[["Comercial / Sponsors",4.817],["Estadio",0.92],["Televisión",1.342],["Venta de Jugadores",1.606],["Otros ingresos",1.375]] },
       { id:"sarpsborg08-no", revenue:9.869, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2017",
-        mix:[["Cuotas Sociales",0.051],["Comercial / Sponsors",2.914],["Estadio",1.28],["Televisión",1.538],["Premios por competencias",0.566],["Venta de Jugadores",1.835],["Otros ingresos",1.686]] },
+        mix:[["Cuotas Sociales",0.051],["Comercial / Sponsors",2.914],["Estadio",1.28],["Televisión",1.538],["Premios por competencias",0.566],["Venta de Jugadores",1.835],["Subsidios y donaciones",0.958],["Otros ingresos",0.727]] },
     ],
   },
   2016: {
@@ -152,10 +152,10 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:10.614, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2016",
-        mix:[["Cuotas Sociales",0.028],["Comercial / Sponsors",2.475],["Estadio",1.883],["Televisión",4.605],["Premios por competencias",0.227],["Otros ingresos",1.395]] },
+        mix:[["Cuotas Sociales",0.028],["Comercial / Sponsors",2.475],["Estadio",1.883],["Televisión",4.605],["Premios por competencias",0.227],["Subsidios y donaciones",0.311],["Otros ingresos",1.085]] },
       { id:"sarpsborg08-no", revenue:6.545, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2016",
-        mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",2.274],["Estadio",0.541],["Televisión",0.961],["Premios por competencias",0.084],["Venta de Jugadores",1.643],["Otros ingresos",0.99]] },
+        mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",2.274],["Estadio",0.541],["Televisión",0.961],["Premios por competencias",0.084],["Venta de Jugadores",1.643],["Subsidios y donaciones",0.43],["Otros ingresos",0.56]] },
     ],
   },
   2015: {
@@ -164,10 +164,10 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:13.215, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2015",
-        mix:[["Cuotas Sociales",0.026],["Comercial / Sponsors",1.164],["Estadio",2.108],["Televisión",7.564],["Premios por competencias",0.645],["Otros ingresos",1.709]] },
+        mix:[["Cuotas Sociales",0.026],["Comercial / Sponsors",1.164],["Estadio",2.108],["Televisión",7.564],["Premios por competencias",0.645],["Subsidios y donaciones",0.311],["Otros ingresos",1.397]] },
       { id:"sarpsborg08-no", revenue:5.242, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2015",
-        mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",2.087],["Estadio",0.62],["Televisión",0.739],["Premios por competencias",0.144],["Venta de Jugadores",0.743],["Otros ingresos",0.87]] },
+        mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",2.087],["Estadio",0.62],["Televisión",0.739],["Premios por competencias",0.144],["Venta de Jugadores",0.743],["Subsidios y donaciones",0.345],["Otros ingresos",0.525]] },
     ],
   },
   2014: {
@@ -176,10 +176,10 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:13.53, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2014",
-        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",4.974],["Estadio",2.791],["Televisión",3.501],["Premios por competencias",0.099],["Otros ingresos",2.131]] },
+        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",4.974],["Estadio",2.791],["Televisión",3.501],["Premios por competencias",0.099],["Subsidios y donaciones",0.327],["Otros ingresos",1.804]] },
       { id:"sarpsborg08-no", revenue:6.076, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2014",
-        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",2.063],["Estadio",0.737],["Televisión",0.83],["Venta de Jugadores",1.27],["Otros ingresos",1.142]] },
+        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",2.063],["Estadio",0.737],["Televisión",0.83],["Venta de Jugadores",1.27],["Subsidios y donaciones",0.26],["Otros ingresos",0.882]] },
     ],
   },
   2013: {
@@ -188,7 +188,7 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:15.189, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2013",
-        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",5.73],["Estadio",3.339],["Televisión",3.672],["Premios por competencias",0.196],["Otros ingresos",2.217]] },
+        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",5.73],["Estadio",3.339],["Televisión",3.672],["Premios por competencias",0.196],["Subsidios y donaciones",0.401],["Otros ingresos",1.816]] },
     ],
   },
   2012: {
@@ -197,10 +197,10 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:16.868, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2012",
-        mix:[["Cuotas Sociales",0.042],["Comercial / Sponsors",3.804],["Estadio",3.721],["Televisión",6.44],["Premios por competencias",0.668],["Venta de Jugadores",0.086],["Otros ingresos",2.107]] },
+        mix:[["Cuotas Sociales",0.042],["Comercial / Sponsors",3.804],["Estadio",3.721],["Televisión",6.44],["Premios por competencias",0.668],["Venta de Jugadores",0.086],["Subsidios y donaciones",0.269],["Otros ingresos",1.838]] },
       { id:"fredrikstad-no", revenue:4.143, reportType:"official_balance_sheet",
         sourceId:"fredrikstad-no-aarsregnskap-fotballklubb-fli-2012",
-        mix:[["Cuotas Sociales",0.016],["Otras actividades (educación y otros deportes)",0.011],["Otros ingresos",4.117]] },
+        mix:[["Cuotas Sociales",0.016],["Otras actividades (educación y otros deportes)",0.011],["Subsidios y donaciones",3.747],["Otros ingresos",0.369]] },
     ],
   },
   2010: {
@@ -218,7 +218,7 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:9.555, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2009",
-        mix:[["Cuotas Sociales",0.04],["Comercial / Sponsors",3.481],["Estadio",3.622],["Televisión",1.467],["Otros ingresos",0.945]] },
+        mix:[["Cuotas Sociales",0.04],["Comercial / Sponsors",3.481],["Estadio",3.622],["Televisión",1.467],["Subsidios y donaciones",0.065],["Otros ingresos",0.88]] },
     ],
   },
   2008: {
@@ -227,7 +227,7 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"molde-no", revenue:7.292, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2008",
-        mix:[["Cuotas Sociales",0.03],["Comercial / Sponsors",3.243],["Estadio",2.311],["Televisión",1.085],["Venta de Jugadores",0.001],["Otros ingresos",0.622]] },
+        mix:[["Cuotas Sociales",0.03],["Comercial / Sponsors",3.243],["Estadio",2.311],["Televisión",1.085],["Venta de Jugadores",0.001],["Subsidios y donaciones",0.048],["Otros ingresos",0.573]] },
     ],
   },
 };

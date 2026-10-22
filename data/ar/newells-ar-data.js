@@ -24,7 +24,7 @@ const newellsArRevenueLinesByYear = {
     {"rawLabel":"Derechos de fútbol","normalizedCategory":"other_income","amountNative":2.620518,"disclosureLevel":"detailed"},
     {"rawLabel":"Recupero de gastos fútbol profesional","normalizedCategory":"other_income","amountNative":3.949707,"disclosureLevel":"detailed"},
     {"rawLabel":"Escuela de fútbol","normalizedCategory":"youth_football","amountNative":6.921344,"disclosureLevel":"detailed"},
-    {"rawLabel":"Donaciones (Recursos y Gastos Extraordinarios, Nota 13)","normalizedCategory":"other_income","amountNative":2.982903,"disclosureLevel":"detailed"},
+    {"rawLabel":"Donaciones (Recursos y Gastos Extraordinarios, Nota 13)","normalizedCategory":"grants_donations","amountNative":2.982903,"disclosureLevel":"detailed"},
   ],
 };
 

@@ -20,7 +20,7 @@ const rijekaHrRevenueLinesByYear = {
     {"rawLabel":"Najam poslovnog prostora","normalizedCategory":"other_income","amountNative":0.249,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ostali prihodi od prodaje","normalizedCategory":"sponsorship_commercial","amountNative":1.185,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA nagrade i solidarne uplate","normalizedCategory":"competition_bonus","amountNative":8.824,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Donacije u zemlji","normalizedCategory":"other_income","amountNative":0.484,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Donacije u zemlji","normalizedCategory":"grants_donations","amountNative":0.484,"disclosureLevel":"aggregated"},
     {"rawLabel":"Prihodi od članarina","normalizedCategory":"member_dues","amountNative":0.315,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ostali nespomenuti prihodi","normalizedCategory":"other_income","amountNative":0.129,"disclosureLevel":"aggregated"},
   ],

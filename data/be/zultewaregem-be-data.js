@@ -3,7 +3,7 @@ const zultewaregemBeRevenueLinesByYear = {
   2025: [
     {"rawLabel":"Omzet","normalizedCategory":"lump_football_operations","amountNative":13.087991,"disclosureLevel":"aggregated"},
     {"rawLabel":"Voorraad goederen in bewerking: toename (afname)","normalizedCategory":"other_income","amountNative":-0.405752,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen","normalizedCategory":"other_income","amountNative":1.80018,"disclosureLevel":"detailed"},
+    {"rawLabel":"Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen","normalizedCategory":"grants_donations","amountNative":1.80018,"disclosureLevel":"detailed"},
     {"rawLabel":"Andere bedrijfsopbrengsten — resto sin desglosar","normalizedCategory":"other_income","amountNative":1.380334,"disclosureLevel":"aggregated"},
     {"rawLabel":"Niet-recurrente bedrijfsopbrengsten (probablemente venta de un inmueble comercial, según jaarverslag)","normalizedCategory":"other_income","amountNative":2.630436,"disclosureLevel":"aggregated"},
   ],

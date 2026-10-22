@@ -7,7 +7,7 @@ window.RANKINGS["nl-eerstedivisie"] = {
     clubs: [
       { id:"adodenhaag-nl", revenue:17.072, reportType:"official_balance_sheet",
         sourceId:"adodenhaag-nl-jaarrekening2024-25",
-        mix:[["Comercial / Sponsors",7.02],["Estadio",4.764],["Televisión",1.331],["Premios por competencias",0.443],["Venta de Jugadores",1.287],["Otros ingresos",2.228]] },
+        mix:[["Comercial / Sponsors",7.02],["Estadio",4.764],["Televisión",1.331],["Premios por competencias",0.443],["Venta de Jugadores",1.287],["Subsidios y donaciones",0.057],["Otros ingresos",2.17]] },
       { id:"fcvolendam-nl", revenue:12.559, reportType:"official_balance_sheet",
         sourceId:"fcvolendam-nl-volendam-jaarcijfers-2024-2025",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",12.559]] },
@@ -19,7 +19,7 @@ window.RANKINGS["nl-eerstedivisie"] = {
         mix:[["Venta de Jugadores",0.519],["Fútbol profesional (sin desglosar por la fuente)",9.233]] },
       { id:"fceindhoven-nl", revenue:6.995, reportType:"official_balance_sheet",
         sourceId:"fceindhoven-nl-wf-2024-2025-a6019b8e",
-        mix:[["Comercial / Sponsors",3.103],["Estadio",0.881],["Televisión",1.013],["Premios por competencias",0.257],["Venta de Jugadores",0.658],["Otros ingresos",1.083]] },
+        mix:[["Comercial / Sponsors",3.103],["Estadio",0.881],["Televisión",1.013],["Premios por competencias",0.257],["Venta de Jugadores",0.658],["Subsidios y donaciones",0.154],["Otros ingresos",0.929]] },
       { id:"vvvvenlo-nl", revenue:6.896, reportType:"official_balance_sheet",
         sourceId:"vvvvenlo-nl-jaarverslag-2024-2025-vvv-venlo-bv",
         mix:[["Venta de Jugadores",0.195],["Fútbol profesional (sin desglosar por la fuente)",6.702]] },
@@ -52,7 +52,7 @@ window.RANKINGS["nl-eerstedivisie"] = {
     clubs: [
       { id:"goaheadeagles-nl", revenue:7.114, reportType:"official_balance_sheet",
         sourceId:"goaheadeagles-nl-jaarrekening-2020-2021",
-        mix:[["Comercial / Sponsors",2.684],["Estadio",1.254],["Televisión",0.846],["Premios por competencias",0.137],["Venta de Jugadores",1.783],["Otros ingresos",0.411]] },
+        mix:[["Comercial / Sponsors",2.684],["Estadio",1.254],["Televisión",0.846],["Premios por competencias",0.137],["Venta de Jugadores",1.783],["Subsidios y donaciones",0.316],["Otros ingresos",0.095]] },
     ],
   },
 };

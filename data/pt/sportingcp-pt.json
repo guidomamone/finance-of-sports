@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sportingcp-pt",
@@ -208,7 +208,7 @@
       "fx": {"rate":216.9015,"source":"manual"},
       "revenue": [
         {"label":"Prestações de Serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":3117.769,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":13.457,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":13.457,"disclosure":"aggregated"},
         {"label":"Proveitos Suplementares","category":"other_revenue","subcategory":"other_income","amount":12.853,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":42.148,"disclosure":"aggregated"},
         {"label":"Proveitos e Ganhos Extraordinários","category":"other_revenue","subcategory":"other_income","amount":3590.408,"disclosure":"aggregated"}
@@ -268,7 +268,7 @@
       "fx": {"rate":228.9913,"source":"manual"},
       "revenue": [
         {"label":"Prestações de Serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":3178.865,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Proveitos Suplementares","category":"other_revenue","subcategory":"other_income","amount":1866.067,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":174.907,"disclosure":"aggregated"},
         {"label":"Proveitos e Ganhos Extraordinários","category":"other_revenue","subcategory":"other_income","amount":1199.614,"disclosure":"aggregated"}
@@ -328,7 +328,7 @@
       "management_id": null,
       "fx": {"rate":1.0222,"source":"manual"},
       "revenue": [
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":0.465,"disclosure":"aggregated"},
         {"label":"Ganhos em Imobiliz.","category":"other_revenue","subcategory":"other_income","amount":13.413,"disclosure":"aggregated"},
         {"label":"Benefícios Contratuais","category":"other_revenue","subcategory":"other_income","amount":0.028,"disclosure":"aggregated"},
@@ -394,7 +394,7 @@
       "management_id": null,
       "fx": {"ref":"EUR@2003-07-31"},
       "revenue": [
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":0.198,"disclosure":"aggregated"},
         {"label":"Ganhos em Imobiliz.","category":"other_revenue","subcategory":"other_income","amount":8.108,"disclosure":"aggregated"},
         {"label":"Benefícios Contratuais","category":"other_revenue","subcategory":"other_income","amount":0.086,"disclosure":"aggregated"},
@@ -460,7 +460,7 @@
       "management_id": null,
       "fx": {"ref":"EUR@2004-06-30"},
       "revenue": [
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":8.873,"disclosure":"aggregated"},
         {"label":"Ganhos em Imobiliz.","category":"other_revenue","subcategory":"other_income","amount":0.109,"disclosure":"aggregated"},
         {"label":"Benefícios Contratuais","category":"other_revenue","subcategory":"other_income","amount":0.172,"disclosure":"aggregated"},
@@ -526,7 +526,7 @@
       "management_id": null,
       "fx": {"ref":"EUR@2005-06-30"},
       "revenue": [
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":1.299,"disclosure":"aggregated"},
         {"label":"G. Imobilizações","category":"other_revenue","subcategory":"other_income","amount":64.981,"disclosure":"aggregated"},
         {"label":"Benef. Contratuais","category":"other_revenue","subcategory":"other_income","amount":0.176,"disclosure":"aggregated"},
@@ -588,7 +588,7 @@
       "management_id": null,
       "fx": {"ref":"EUR@2006-06-30"},
       "revenue": [
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":6.838,"disclosure":"aggregated"},
         {"label":"G. Imobilizações","category":"other_revenue","subcategory":"other_income","amount":0.013,"disclosure":"aggregated"},
         {"label":"Benef. Contratuais","category":"other_revenue","subcategory":"other_income","amount":0.233,"disclosure":"aggregated"},
@@ -653,7 +653,7 @@
       "management_id": null,
       "fx": {"ref":"EUR@2007-06-30"},
       "revenue": [
-        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":26.761,"disclosure":"aggregated"},
         {"label":"BENEF. CONTRATIAIS","category":"other_revenue","subcategory":"other_income","amount":0.208,"disclosure":"aggregated"},
         {"label":"CONR. EX. ANTERIORES","category":"other_revenue","subcategory":"other_income","amount":0.22,"disclosure":"aggregated"},
@@ -1863,7 +1863,7 @@
         {"label":"Outros prémios","category":"prize_money","subcategory":"competition_bonus","amount":0.742,"disclosure":"aggregated"},
         {"label":"Participação nas Competições Nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.063,"disclosure":"aggregated"},
         {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":2.355,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.204,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.204,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":1.034,"disclosure":"aggregated"},
         {"label":"Venda de direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":92.738,"disclosure":"aggregated"},
         {
@@ -2013,7 +2013,7 @@
         },
         {"label":"Prémio mundial 2018","category":"prize_money","subcategory":"competition_bonus","amount":1.584,"disclosure":"aggregated"},
         {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":2.096,"disclosure":"aggregated"},
-        {"label":"Subsidios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.264,"disclosure":"aggregated"},
+        {"label":"Subsidios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.264,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.6,"disclosure":"aggregated"},
         {"label":"Venda de direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":33.377,"disclosure":"aggregated"},
         {
@@ -2149,7 +2149,7 @@
         {"label":"Participação nas Competições Nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.563,"disclosure":"aggregated"},
         {"label":"Prémio Mundial 2018","category":"prize_money","subcategory":"competition_bonus","amount":0.147,"disclosure":"aggregated"},
         {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":1.986,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.191,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.191,"disclosure":"aggregated"},
         {"label":"Redébito de gastos","category":"other_revenue","subcategory":"other_income","amount":0.04,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.93,"disclosure":"aggregated"},
         {"label":"Venda de direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":71.404,"disclosure":"aggregated"},
@@ -2326,7 +2326,7 @@
           "disclosure": "aggregated"
         },
         {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":1.09,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.385,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.385,"disclosure":"aggregated"},
         {"label":"Recuperação de custos","category":"other_revenue","subcategory":"other_income","amount":0.013,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":1.173,"disclosure":"aggregated"},
         {
@@ -2477,7 +2477,7 @@
         {"label":"Participação nas Competições Europeias","category":"prize_money","subcategory":"competition_bonus","amount":0.277,"disclosure":"aggregated"},
         {"label":"Participação nas Competições Nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.241,"disclosure":"aggregated"},
         {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":0.47,"disclosure":"aggregated"},
-        {"label":"Subsidios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.263,"disclosure":"aggregated"},
+        {"label":"Subsidios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.263,"disclosure":"aggregated"},
         {"label":"Recuperação de custos","category":"other_revenue","subcategory":"other_income","amount":0.276,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":6.342,"disclosure":"aggregated"},
         {"label":"Venda de direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":35.298,"disclosure":"aggregated"},
@@ -2628,7 +2628,7 @@
         {"label":"Participação nas Competições Nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.464,"disclosure":"aggregated"},
         {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":1.263,"disclosure":"aggregated"},
         {"label":"Prémio Euro 2020","category":"prize_money","subcategory":"competition_bonus","amount":0.428,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.366,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.366,"disclosure":"aggregated"},
         {"label":"Recuperação de custos","category":"other_revenue","subcategory":"other_income","amount":0.163,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":1.33,"disclosure":"aggregated"},
         {"label":"Venda de direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":56.952,"disclosure":"aggregated"},
@@ -2800,7 +2800,7 @@
         {"label":"Participação nas Competições Nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.327,"disclosure":"aggregated"},
         {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":5.948,"disclosure":"aggregated"},
         {"label":"Prémio Mundial 2022","category":"prize_money","subcategory":"competition_bonus","amount":1.166,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.068,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.068,"disclosure":"aggregated"},
         {"label":"Recuperação de custos","category":"other_revenue","subcategory":"other_income","amount":0.217,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":1.033,"disclosure":"aggregated"},
         {"label":"Venda de direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":95.82,"disclosure":"aggregated"},
@@ -2971,7 +2971,7 @@
         },
         {"label":"Cedência e rendimentos com jogadores","category":"player_transfers","subcategory":"player_sales","amount":1.622,"disclosure":"aggregated"},
         {"label":"Recuperação de custos","category":"other_revenue","subcategory":"other_income","amount":0.409,"disclosure":"aggregated"},
-        {"label":"Subsidios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.346,"disclosure":"aggregated"},
+        {"label":"Subsidios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.346,"disclosure":"aggregated"},
         {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":2.039,"disclosure":"aggregated"},
         {"label":"Venda de direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":140.622,"disclosure":"aggregated"},
         {

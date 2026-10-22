@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "godoycruz-ar",
@@ -69,7 +69,7 @@
           "amount": 1.847878,
           "disclosure": "detailed"
         },
-        {"label":"Ingreso por Subsidio","category":"other_revenue","subcategory":"other_income","amount":0.036858,"disclosure":"detailed"},
+        {"label":"Ingreso por Subsidio","category":"grants_donations","subcategory":"grants_donations","amount":0.036858,"disclosure":"detailed"},
         {"label":"Ingreso Recupero ART - Seguros","category":"other_revenue","subcategory":"other_income","amount":1.453859,"disclosure":"detailed"},
         {
           "label": "Ingreso por Alquiler Instalaciones Deportivas",

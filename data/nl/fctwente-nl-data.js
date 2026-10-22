@@ -2,7 +2,7 @@
 const fctwenteNlRevenueLinesByYear = {
   2025: [
     {"rawLabel":"Wedstrijdbaten","normalizedCategory":"matchday_competition","amountNative":10.592,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Bijdragen in giften en geld","normalizedCategory":"other_income","amountNative":30.21,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Bijdragen in giften en geld","normalizedCategory":"grants_donations","amountNative":30.21,"disclosureLevel":"aggregated"},
     {"rawLabel":"Televisiebaten","normalizedCategory":"broadcasting","amountNative":7.941,"disclosureLevel":"aggregated"},
     {"rawLabel":"Merchandising","normalizedCategory":"sponsorship_commercial","amountNative":0.382,"disclosureLevel":"aggregated"},
     {"rawLabel":"Catering","normalizedCategory":"stadium_other","amountNative":11.451,"disclosureLevel":"aggregated"},

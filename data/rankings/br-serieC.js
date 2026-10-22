@@ -60,10 +60,10 @@ window.RANKINGS["br-serieC"] = {
         mix:[["Cuotas Sociales",0.268],["Comercial / Sponsors",0.314],["Otras actividades (educación y otros deportes)",0.211],["Fútbol profesional (sin desglosar por la fuente)",1.948],["Otros ingresos",1.197]] },
       { id:"criciuma-br", revenue:2.739, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-demonstrativo-financeiro-2021",
-        mix:[["Cuotas Sociales",0.308],["Comercial / Sponsors",0.338],["Estadio",0.029],["Televisión",1.381],["Venta de Jugadores",0.041],["Otros ingresos",0.642]] },
+        mix:[["Cuotas Sociales",0.308],["Comercial / Sponsors",0.338],["Estadio",0.029],["Televisión",1.381],["Venta de Jugadores",0.041],["Subsidios y donaciones",0.061],["Otros ingresos",0.581]] },
       { id:"novorizontino-br", revenue:1.623, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-demonstracoes-financeiras-2021",
-        mix:[["Comercial / Sponsors",0.052],["Estadio",0.007],["Televisión",1.364],["Venta de Jugadores",0.116],["Otros ingresos",0.084]] },
+        mix:[["Comercial / Sponsors",0.052],["Estadio",0.007],["Televisión",1.364],["Venta de Jugadores",0.116],["Subsidios y donaciones",0.077],["Otros ingresos",0.006]] },
     ],
   },
   2020: {
@@ -72,7 +72,7 @@ window.RANKINGS["br-serieC"] = {
     clubs: [
       { id:"criciuma-br", revenue:2.661, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-balanco-2020",
-        mix:[["Cuotas Sociales",0.347],["Comercial / Sponsors",0.096],["Estadio",0.017],["Televisión",0.46],["Venta de Jugadores",1.519],["Otros ingresos",0.221]] },
+        mix:[["Cuotas Sociales",0.347],["Comercial / Sponsors",0.096],["Estadio",0.017],["Televisión",0.46],["Venta de Jugadores",1.519],["Subsidios y donaciones",0.086],["Otros ingresos",0.134]] },
       { id:"remo-br", revenue:2.377, reportType:"official_balance_sheet",
         sourceId:"remo-br-relatorio-auditoria-2020",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.377]],
