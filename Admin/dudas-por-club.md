@@ -1514,6 +1514,11 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
 
 - **Informe del auditor (controleverklaring) del ejercicio 2020-21** (y el 2019-20): el F.04 que publica el club solo dice que las cifras salen de la jaarrekening de FC Emmen B.V., «waarbij een accountantsverklaring is verstrekt», pero no trae el informe. La jaarrekening completa solo existe en el Handelsregister de la KvK, de pago (€3,90 cada una; Guido decidió no comprarla). ¿Nos pueden mandar la jaarrekening 2020-21 (y la 2019-20) con la controleverklaring?
 
+## Lierse Kempenzonen y Lierse SK (Auditora 5, sesión 2026-10-21: no frena la carga)
+
+- **¿Cuál es el número de afiliación a la federación (stamnummer o matricule) de cada entidad, y cuándo se fundó cada una?** Son dos entidades legales: la vzw «Lierse Kempenzonen» (BCE 0412.539.416) y la NV «Koninklijke Lierse Sportkring» (BCE 0699.764.829, constituida el 09-07-2018); ya están como dos clubes y `liersesk-be` figura como sucesor de `liersekempenzonen-be`. La nota de sourcing dice que la vzw se fundó en 1972 (sin cita de la KBO) y la prensa 1943 (Oosterzonen).
+- **¿Cuál de las dos tiene hoy la licencia de la Pro League?** (la vzw no tiene depósito posterior a 2022).
+
 ## Juventude y Ponte Preta (onboarding, lote 103, sesión 2026-10-19: no frena la carga)
 
 - **Juventude 2021**: tiene planes de sócio-torcedor (Jaconero; búsqueda web), pero "Receitas Patrimoniais" y "Outras Receitas" no desglosan dónde registra las mensalidades. ¿En qué línea del balance están?

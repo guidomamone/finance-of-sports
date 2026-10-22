@@ -130,8 +130,15 @@ export function calcular() {
   }
   const nombresIso = {}; for (const l of ls) for (const n of l.clubs) (nombresIso[l.iso] ??= new Set()).add(n);
   const aliasRotos = new Set();
-  const unir = (iso, nombre) => {
-    const a = AL[iso]?.[nombre]; const m = cand[iso];
+  // Un mismo nombre de lista puede ser dos clubes en épocas distintas (Lierse Kempenzonen: la vzw hasta 2021 y la NV desde 2022). La entrada
+  // "Nombre (2019-2021)" de alias.json vale solo para listas de esos años y gana sobre la del nombre solo; las demás herramientas no la ven
+  // (ninguna lista se llama así).
+  const aliasDe = (iso, nombre, anio) => {
+    const q = Object.entries(AL[iso] || {}).find(([k]) => { const m = k.match(/^(.*) \((\d{4})-(\d{4})\)$/); return m && m[1] === nombre && anio >= +m[2] && anio <= +m[3]; });
+    return q ? q[1] : AL[iso]?.[nombre];
+  };
+  const unir = (iso, nombre, anio) => {
+    const a = aliasDe(iso, nombre, anio); const m = cand[iso];
     if (a) { // { clubId } o { carpeta: "País/Club" } o { sourcing: "País/Club" }: toma el resto de lo que ya se sabe de ese club
       const base = [...m.values()].find((o) => (a.clubId && o.clubId === a.clubId) || (a.carpeta && o.carpetas?.includes(a.carpeta))
         || (a.sourcing && o.sourcing?.archivo === `Admin/sourcing/${a.sourcing}.md`)) || {};
@@ -165,7 +172,7 @@ export function calcular() {
     const reciente = (HOY - cierre) / (1000 * 60 * 60 * 24 * 30.44) < RECIENTE_MESES;
     const faltan = []; let cargados = 0;
     for (const n of l.clubs) {
-      const u = unir(l.iso, n);
+      const u = unir(l.iso, n, l.anio);
       // posición final (to-do 270): el nombre de la lista de equipos en la tabla de posiciones de la misma página (mismo nombre, o la
       // misma familia de nombres si es uno solo). Un club que no está en el sitio va por su nombre ("#Las Palmas"): lo usa el estimado de
       // club nuevo.

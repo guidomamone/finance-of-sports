@@ -17,6 +17,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 939 — Lierse: dos clubes, sucesor y ligas; TODO por prioridad y skills partidas (2026-10-21) [355 · 365 · liersesk-be, liersekempenzonen-be]
+
+- 355: `club.predecessor_id` (opcional, aditivo en el esquema 2.0: `json-datos.mjs`, `generar-schema-json.mjs`, `Admin/mediciones/245-esquema.md`); `liersesk-be` lo lleva con `liersekempenzonen-be`. La NV pasa a liga null en 2019-2021 (no jugó; la vzw ocupa esa plaza). `faltantes-liga.mjs` acepta en `alias.json` una entrada «Nombre (2019-2021)» que vale solo para esas temporadas (el mismo nombre de lista era dos clubes): los alias que faltan bajan de 3 a 0; el resto de la salida de `--print` es idéntico. Condición nueva en una tool revisada por la propia sesión (sección 7 de la skill de auditoría): sin revisión independiente. Pregunta del stamnummer y la fundación en `Admin/dudas-por-club.md`.
+- 365 (nuevo): Lierse Kempenzonen 2022 y los años sin depósito.
+- `Admin/TODO.md` pasa a una sola lista por prioridad: cada punto es `### orden. id · título` con su cuerpo debajo; `node tools/todo.mjs` lista, `node tools/todo.mjs <id>` muestra un punto y `--cerrar <id>` lo borra y renumera. Arregla la contradicción entre «números = identificadores» y «prioridad = orden».
+- Skills partidas con el texto sin cambios: `club-or-year-onboarding` (18 KB → 3,5 KB, con `correr-clubes.md`, `mejorar-script.md`, `reglas.md`, `trampas.md`) y `club-sourcing` (47 KB → 20 KB, con `referencia/` por sección 0.x); cada `SKILL.md` dice cuándo abrir cada archivo y cuándo no.
+
 ## Versión 938 — Fuentes danesas con url, 359 cerrado (2026-10-21) [359 · silkeborg-dk, viborg-dk]
 
 - Silkeborg 2025 y Viborg 2025 (iXBRL) llevan la url del depósito de `regnskaber.virk.dk`, buscada por CVR en `distribution.virk.dk` (el número de la url del depósito no es el CVR). `audit.js` sigue en 0 P0 y 0 P1.

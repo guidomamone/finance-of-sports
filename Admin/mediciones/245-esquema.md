@@ -30,7 +30,7 @@ archivo
   schema_version      "2.0"
   exported_at         "2026-10-20"
   unit                { scale: 1000000, label: "millions of currency" }   // vale para todos los importes del archivo
-  club                { id, name, display_name, country, reporting_currency, fiscal_year_start, sport, taxonomy }   // sport en inglés ("football"); taxonomy = versión del mapa ("football-1")
+  club                { id, name, display_name, country, reporting_currency, fiscal_year_start, sport, predecessor_id?, taxonomy }   // sport en inglés ("football"); taxonomy = versión del mapa ("football-1"); predecessor_id (opcional): el club del que este es sucesor, otra entidad legal con el mismo nombre o estadio (Lierse SK, NV, sucesor de Lierse Kempenzonen, vzw)
   sources[]           { id, title, type, reliability, url }
   management[]        { id, name, first_year, last_year }               // gestionesByClub
   members             número o null                                      // memberCountByClub

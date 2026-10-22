@@ -79,7 +79,6 @@ window.RANKINGS["be-challengerproleague"] = {
   },
   2021: {
     leagueSize: 8,
-    sinDato: ["liersesk-be"],
     wiki: {"t":"2020–21 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [
       { id:"lommelsk-be", revenue:2.686, reportType:"official_balance_sheet",

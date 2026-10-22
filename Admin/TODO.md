@@ -19,13 +19,7 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 
 ## A. En marcha
 
-### 1. 355 · Lierse son dos clubes (BCE distintos, Auditora 5); falta que cada ficha diga de quién es sucesora y los 3 alias de liga (Onboarding)
-
-LIERSE CON DOS IDS (Auditora 5, 2026-10-21). `liersekempenzonen-be` (2018-21) y `liersesk-be` (2022-25), mismas ligas: parece el mismo
-club con otro nombre. Unirlos cambia un id público (contrato de datos): lo decide Guido. Antes, confirmar con los documentos que no sea el
-Lierse SK que quebró en 2018.
-
-### 2. 347 · (Auditora): corridas de P2 y P3 (hechas nueve códigos); faltan los fixes aprobados, que codea Pipeline
+### 1. 347 · (Auditora): corridas de P2 y P3 (hechas nueve códigos); faltan los fixes aprobados, que codea Pipeline
 
 P2 Y P3 SIN PROCESO (Guido, 2026-10-21: «armemos algo para los P2 y P3»). Propuesta en `Admin/propuestas/p2-p3-y-roles.md`: cada auditoría
 baja un código (muestra de cinco, decisión por el código entero, registro antes y después). Ya está en la skill de auditoría. Hechas doce
@@ -37,7 +31,7 @@ P3; `signo-invertido`: no emitir si el ejercicio cierra contra el total oficial;
 (b) la próxima corrida, de un código libre (no `registro-sin-lector` en las tres siguientes; quedan `historia-en-doc-de-criterio` 3 y
 `ruta-muerta` 2, de Orden). Los que esperan a otro: `catchall-dominante` (350), `sin-salarios` y `liga-una-fuente` (Onboarding).
 
-### 3. 352 · (Auditora): el iXBRL ya frena en el individual; falta medir el consolidado
+### 2. 352 · (Auditora): el iXBRL ya frena en el individual; falta medir el consolidado
 
 EL CHEQUEO DEL iXBRL PASA A FRENAR (Guido, 2026-10-21). Hechos: la fuente de un año en XHTML (`fuente-xhtml-sin-url`, nota pública) y
 `tools/ixbrl-resultado.mjs`, que avisa si el resultado cargado no coincide con el etiquetado. Decidido (Auditora 5, en
@@ -45,7 +39,7 @@ EL CHEQUEO DEL iXBRL PASA A FRENAR (Guido, 2026-10-21). Hechos: la fuente de un 
 el consolidado sigue como aviso. Terminado cuando: se midieron dos años consolidados de clubes distintos, uno con minoritarios, y la
 Auditora decide si el consolidado también frena o se queda en aviso.
 
-### 4. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
+### 3. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
 
 SUELDOS ADENTRO DE UNA SOLA LÍNEA (Auditora 4, 3ª corrida de P2 y P3, 2026-10-21). 12 británicos (Aston Villa, Brentford, Brighton,
 Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves; 47 club-años con el estado por función),
@@ -53,7 +47,7 @@ los 10 británicos nuevos del 356 (sus sueldos entraron con `incluye wages_squad
 `caja-deuda --personal`) e Instituto 2025 (anexo de remuneraciones cargado entero en gastos generales). Cómo:
 `Admin/Archive/sesion-ligas-2026-10-21.md`, tercera corrida. Corrige datos publicados: trailer `Corrige:`.
 
-### 5. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
+### 4. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
 
 CATEGORÍA PARA SUBSIDIOS Y DONACIONES (Auditora 4, 2ª corrida de P2 y P3, 2026-10-21; Guido: «dejalo como to do»). Buena parte de los
 ~130 `catchall-dominante` son subsidios, donaciones y aportes (Subsídios, Επιχορηγήσεις, Целевые взносы; ligas bajas de Grecia, Rusia y
@@ -70,14 +64,14 @@ Guido (2026-10-21): todavía no se crea la categoría. Antes, al terminar el res
 simplificado y en cuántos club-años de cuántos queda en 0 (por deporte y por país). Ninguna fila se oculta en cero: el formato es
 siempre igual (la propuesta de `hideIfZero` para la fila nueva y para Educación queda descartada).
 
-### 6. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
+### 5. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
 
 LO QUE QUEDÓ SIN DUEÑO DEL RELEVAMIENTO DE SKILLS (une el 330). Aplicado: las cinco skills nuevas, las partes 1, 3 y 7 de
 `Admin/propuestas/257-skills.md`, la memoria vaciada y el candado de skills del hook. Falta: (a) que `perfil-en-cola` de `cargar.mjs`
 nunca frene (Pipeline); (b) la duda de Deportes Tolima, `dudas-por-club.md:201`, que frena su carga. Los descartes 314 y 298 en
 `Admin/HALLAZGOS-pipeline.md` y el párrafo de Chrome headless ya se hicieron (Versión 931).
 
-### 7. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
+### 6. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
 
 CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing buscó en Companies House los clubes que no tenemos y
 presentan en iXBRL y bajó los 198 `.xhtml` (84 MB, los 68 con PDF oficial al lado renombrados a `-ixbrl`); Onboarding los carga con
@@ -108,7 +102,7 @@ iXBRL que presenta y el sitio no tiene está cargado o descartado con motivo. Fa
 - Daneses que esperan: los XHTML de SønderjyskE 2022-23, Hvidovre 2025, Brøndby 2025 (−130,578 M) y el PSE de København 2021-25, y los 9
   de 2025-26 cuyo PDF de Chrome sale sin texto (Horsens, Hobro, Lyngby, Næstved, Randers, Skive, Viborg; nota de Pipeline 14).
 
-### 8. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
+### 7. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
 
 FRENO DE DOCUMENTOS DE GRUPO (sale del 356, Fleetwood/Jaymel; regla votada 3 a 0 en CONVENCIONES-DATOS, «Un consolidado de grupo con
 negocios ajenos al club», umbral del 10 % sobre lo impreso). Terminado cuando: `perimetro-senales.mjs` o `cargar.mjs` frenan un documento de
@@ -116,7 +110,7 @@ grupo si el turnover por clase de negocio deja el deporte del club por debajo de
 sociedad del club; medido, frena los 3 Jaymel y 0 de los 53 británicos cargados desde grupo. Antes de codear, pasa por la sección 7 de la
 skill de auditoría (la Auditora). Lo hace Pipeline.
 
-### 9. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+### 8. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 LO APROBADO DE PIPELINE 15 QUE NO SE APLICÓ (Auditora 5 y 6, `Admin/registros/auditoria-proceso.jsonl`; el detalle
 en `Admin/Archive/sesion-pipeline-2026-10-21.md`, «Pipeline 15»). Terminado cuando: (a) barrido de lecturas recortadas: `jevDe` de
@@ -135,20 +129,20 @@ el tramo corto va como C y la temporada COVID lleva la etiqueta en pantalla, sin
 
 ## D. Orden de la casa
 
-### 10. 338 · correr todas las auditorías del proyecto (al final de A)
+### 9. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
 `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
 
-### 11. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 10. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
 3.000 ~200 KB. Todavía no. Se reabre cuando lo que se baja siempre pase 150 KB comprimidos (~2.200 clubes) o esos dos archivos pasen 1 MB
 crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy proyecta bytes crudos): condición nueva, va a la Auditora.
 
-### 12. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 11. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -158,7 +152,7 @@ el motivo se traduce al inglés al curar (sin `motivo_en` la página en inglés 
 registro al Data Package (pasa por la skill `contrato-de-datos`); (d) revisado que los tipos «total» y «otro» de los eventos no tengan ruido
 de renombres. Lo hace Pantallas.
 
-### 13. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 12. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -191,6 +185,13 @@ Amateur Division: Lokeren-Temse 2021-2022, Patro Eisden 2013-2014 y 2019) y la F
 de lote.mjs lista como frenados los originales que salteó por su -correction. El detalle de s a v, con líneas y montos, en
 `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
 `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
+
+### 13. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+
+LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
+con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
+Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la NV en esa temporada es `be-challengerproleague`) o se descarta con motivo, y
+`ejercicio-sin-rastro` de `liersekempenzonen-be` queda en 0 (2023-2025 silenciados en `tools/audit-ignore.json` con la cita de la nota de sourcing).
 
 ## E. Después de A a D (Guido, 2026-10-20)
 

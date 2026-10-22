@@ -51,6 +51,10 @@
           "type": "string",
           "pattern": "^\\d{2}-\\d{2}$"
         },
+        "predecessor_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
         "sport": {
           "enum": [
             "football",

@@ -50,7 +50,7 @@ const schema = {
     schema_version: { const: SCHEMA_VERSION },
     exported_at: { $ref: '#/$defs/fecha' },
     unit: objeto({ scale: { const: UNIT.scale }, label: texto }, ['scale', 'label']),
-    club: objeto({ id: { type: 'string', pattern: '^[a-z0-9][a-z0-9-]*$' }, name: texto, display_name: texto, country: { type: 'string', pattern: '^[A-Z]{2}$' }, reporting_currency: { $ref: '#/$defs/moneda' }, fiscal_year_start: { type: 'string', pattern: '^\\d{2}-\\d{2}$' }, sport: { enum: Object.values(C.DEPORTE) }, taxonomy: { enum: Object.values(cat.deportes).map((t) => t.version) } }, ['id', 'taxonomy']),
+    club: objeto({ id: { type: 'string', pattern: '^[a-z0-9][a-z0-9-]*$' }, name: texto, display_name: texto, country: { type: 'string', pattern: '^[A-Z]{2}$' }, reporting_currency: { $ref: '#/$defs/moneda' }, fiscal_year_start: { type: 'string', pattern: '^\\d{2}-\\d{2}$' }, predecessor_id: { type: 'string', pattern: '^[a-z0-9][a-z0-9-]*$' }, sport: { enum: Object.values(C.DEPORTE) }, taxonomy: { enum: Object.values(cat.deportes).map((t) => t.version) } }, ['id', 'taxonomy']),
     sources: { type: 'array', items: { $ref: '#/$defs/fuente' } },
     management: { type: 'array', items: objeto({ id: texto, name: texto, first_year: { type: 'integer' }, last_year: { type: 'integer' } }, ['id', 'name', 'first_year', 'last_year']) },
     members: numONull,
