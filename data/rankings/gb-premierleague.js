@@ -164,7 +164,7 @@ window.RANKINGS["gb-premierleague"] = {
         mix:[["Comercial / Sponsors",18.615],["Estadio",15.694],["Televisión",179.342],["Venta de Jugadores",0.421],["Otros ingresos",15.322]] },
       { id:"brentford-gb", revenue:223.343, reportType:"official_balance_sheet",
         sourceId:"brentford-gb-group-accounts-2022-23",
-        mix:[["Comercial / Sponsors",24.036],["Estadio",14.303],["Televisión",171.861],["Venta de Jugadores",11.759],["Subsidios y donaciones",0.203],["Otros ingresos",1.18]] },
+        mix:[["Comercial / Sponsors",24.036],["Estadio",14.303],["Televisión",171.861],["Venta de Jugadores",11.759],["Otros ingresos",1.383]] },
       { id:"nottinghamforest-gb", revenue:200.083, reportType:"official_balance_sheet",
         sourceId:"nottinghamforest-gb-full-accounts-2022-23",
         mix:[["Comercial / Sponsors",24.068],["Estadio",13.975],["Televisión",158.716],["Venta de Jugadores",3.323]] },
@@ -219,7 +219,7 @@ window.RANKINGS["gb-premierleague"] = {
         mix:[["Comercial / Sponsors",14.137],["Estadio",13.918],["Televisión",153.597],["Otros ingresos",12.635]] },
       { id:"brentford-gb", revenue:178.962, reportType:"official_balance_sheet",
         sourceId:"brentford-gb-group-accounts-2021-22",
-        mix:[["Comercial / Sponsors",18.184],["Estadio",12.647],["Televisión",139.576],["Venta de Jugadores",8.098],["Subsidios y donaciones",0.015],["Otros ingresos",0.442]] },
+        mix:[["Comercial / Sponsors",18.184],["Estadio",12.647],["Televisión",139.576],["Venta de Jugadores",8.098],["Otros ingresos",0.457]] },
     ],
   },
   2021: {

@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.pdf",
  "md": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.md",
- "generado": "2026-10-20T18:14:06.687Z",
+ "generado": "2026-10-22T21:38:18.769Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "liverpool-gb",
  "year": 2022,
@@ -11,7 +12,45 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "178.949,00",
+   "linea": 576,
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Administrative expenses",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2021-22.md L1158) está dentro de \"Administrative expenses\": queda 545.041,00 - 366.092,00",
+   "evidencia": "liverpool-group-accounts-2021-22.md L1158",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "366.092,00",
+   "linea": 576,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2021-22.md L1158) está dentro de \"Administrative expenses\": el costo de personal va aparte",
+   "evidencia": "liverpool-group-accounts-2021-22.md L1158",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2021-22.md L1158) está dentro de \"Administrative expenses\": costo de personal -> wages_squad",
+   "evidencia": "liverpool-group-accounts-2021-22.md L1158",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -31,18 +70,20 @@
    "dif": 2.220446049250313e-14
   },
   {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 622.395 en este documento y 622.395 en liverpool-group-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
   "la nota de \"Administrative expenses\" no suma el renglón (483.481 contra 545.041, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 178.949,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2021-22.md L1158) está dentro de \"Administrative expenses\": queda 545.041,00 - 366.092,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 366.092,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2021-22.md L1158) está dentro de \"Administrative expenses\": el costo de personal va aparte)",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Turnover\"): ¿Se dejan afuera de la carga las filas por mercado geográfico de la nota 2 (L1108-L1112), que son una segunda apertura del mismo Turnover?",
   "duda de extraer que no afecta la carga: L1154 no dice en qué renglón del estado se imputan los salarios; 'Wages and salaries' es la fila de salarios del plantel.",
   "duda de extraer que no afecta la carga: L1116 indica que son partidas incluidas, no una apertura completa."
@@ -108,12 +149,20 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Administrative expenses",
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
    "lado": "gasto",
-   "M": 545.041,
+   "M": 178.949,
    "pagina": 14,
    "linea": 576,
-   "origen": "estado"
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 366.092,
+   "pagina": 14,
+   "linea": 576,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -138,26 +187,5 @@
    "M": -5.033,
    "linea": 582
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "365b649218f74e2488734b2efe2b6a95e2f4c7a4",
-  "rango": [
-   570,
-   588
-  ],
-  "lineasCargadas": [
-   1104,
-   1105,
-   1106,
-   577,
-   574,
-   576,
-   579,
-   580,
-   582
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 570 a 588 del .md):\nL571: | | Note | 2022 £000 | 2021 £000 Restated* |\nL572: |---|---|---:|---:|\nL573: | Turnover | 2 | 594,271 | 487,365 |\nL574: | Cost of sales | | (67,305) | (51,599) |\nL575: | **Gross profit** | | 526,966 | 435,766 |\nL576: | Administrative expenses | 3 | (545,041) | (476,156) |\nL577: | Profit on disposal of players' registrations | | 28,124 | 39,340 |\nL578: | **Operating profit/ (loss)** | | 10,049 | (1,050) |\nL579: | Interest receivable and similar income | 6 | 893 | 547 |\nL580: | Interest payable and similar charges | 7 | (3,473) | (4,259) |\nL581: | **Profit/ (loss) on ordinary activities before taxation** | | 7,469 | (4,762) |\nL582: | Tax on profit/ loss on ordinary activities | 8 | (5,033) | (4,773) |\nL583: | **Profit/ (loss) for the financial year** | | 2,436 | (9,535) |\nL584: | **Other comprehensive loss for the period** | | (7) | - |\nL585: | **Total comprehensive income/ (loss) for the year attributable to the shareholders of the parent company** | | 2,429 | (9,535) |\nL587: The activities represent the continuing activities of the Group.\nL588: The notes on pages 18 to 36 form part of the financial statements.\n\nLO QUE SE CARGA:\n- ingreso · \"Media\" · 260.841 · L1104 (de una nota)\n- ingreso · \"Commercial\" · 246.663 · L1105 (de una nota)\n- ingreso · \"Match day\" · 86.767 · L1106 (de una nota)\n- ingreso · \"Profit on disposal of players' registrations\" · 28.124 · L577\n- gasto · \"Cost of sales\" · 67.305 · L574\n- gasto · \"Administrative expenses\" · 545.041 · L576\n- financiero · \"Interest receivable and similar income\" · 0.893 · L579\n- financiero · \"Interest payable and similar charges\" · -3.473 · L580\n- impuesto · \"Tax on profit/ loss on ordinary activities\" · -5.033 · L582"
- }
+ ]
 }

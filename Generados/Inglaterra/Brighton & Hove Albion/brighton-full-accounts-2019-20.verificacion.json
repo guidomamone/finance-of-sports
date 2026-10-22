@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.pdf",
  "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.md",
- "generado": "2026-10-19T17:11:10.521Z",
+ "generado": "2026-10-22T21:50:23.999Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "brighton-gb",
  "year": 2020,
@@ -11,7 +12,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (101.87, brighton-full-accounts-2019-20.md L907) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una",
+   "evidencia": "brighton-full-accounts-2019-20.md L907",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

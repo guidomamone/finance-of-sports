@@ -30,11 +30,13 @@ const liverpoolGbRevenueLinesByYear = {
 const liverpoolGbExpenseLinesByYear = {
   2022: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-67.305,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-545.041,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-178.949,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-366.092,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-70.543,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-561.517,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-188.636,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-372.881,"disclosureLevel":"aggregated"},
   ],
   2024: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-83.483,"disclosureLevel":"not_disclosed"},

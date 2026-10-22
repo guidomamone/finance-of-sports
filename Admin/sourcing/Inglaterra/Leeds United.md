@@ -56,3 +56,23 @@ Todos en `Clubes/Inglaterra/Leeds United/` (los PDF no se trackean; son escaneos
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2023 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.pdf` (sourceId `leeds-gb-group-accounts-2022-23`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2021 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf` (sourceId `leeds-gb-group-accounts-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2019 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf` (sourceId `leeds-gb-group-accounts-2018-19`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2020 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf` (sourceId `leeds-gb-group-accounts-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2021 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf` (sourceId `leeds-gb-group-accounts-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2022 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2021-22.pdf` (sourceId `leeds-gb-group-accounts-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2023 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.pdf` (sourceId `leeds-gb-group-accounts-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2019 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf` (sourceId `leeds-gb-group-accounts-2018-19`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2020 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf` (sourceId `leeds-gb-group-accounts-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2021 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf` (sourceId `leeds-gb-group-accounts-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2022 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2021-22.pdf` (sourceId `leeds-gb-group-accounts-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2023 desde `Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.pdf` (sourceId `leeds-gb-group-accounts-2022-23`).

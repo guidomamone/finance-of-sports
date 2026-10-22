@@ -1,90 +1,91 @@
 {
-  "md": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.md",
-  "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.pdf",
-  "club": "nottinghamforest-gb",
-  "year": 2023,
-  "generatedAt": "2026-10-20T17:50:59.050Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Gate receipts",
-      "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        10.992
-      ],
-      "glosa": "Ingresos por taquilla"
-    },
-    {
-      "label": "Media related activity",
-      "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        124.836
-      ],
-      "glosa": "Actividad relacionada con medios de comunicación"
-    },
-    {
-      "label": "Merchandising",
-      "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        7.127
-      ],
-      "glosa": "Merchandising"
-    },
-    {
-      "label": "Other commercial",
-      "lado": "revenue",
-      "page": 25,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        11.803
-      ],
-      "glosa": "Otros ingresos comerciales"
-    },
-    {
-      "label": "Profit on disposal of player registrations",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado",
-      "values": [
-        2.614
-      ],
-      "glosa": "Beneficio por enajenación de derechos federativos"
-    },
-    {
-      "label": "Cost of sales",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado",
-      "values": [
-        11.176
-      ],
-      "glosa": "Coste de ventas"
-    },
-    {
-      "label": "Administrative expenses",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado",
-      "values": [
-        203.14
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Other operating expenses",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Otros gastos de explotación"
-    }
-  ]
+ "md": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.md",
+ "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.pdf",
+ "club": "nottinghamforest-gb",
+ "year": 2023,
+ "generatedAt": "2026-10-22T21:38:18.804Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    10.992
+   ]
+  },
+  {
+   "label": "Media related activity",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    124.836
+   ]
+  },
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    7.127
+   ]
+  },
+  {
+   "label": "Other commercial",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    11.803
+   ]
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "values": [
+    2.614
+   ]
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "values": [
+    11.176
+   ]
+  },
+  {
+   "label": "Other operating expenses",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Administrative expenses (sin el costo de personal)",
+   "lado": "expense",
+   "page": 14,
+   "section": "ajuste manual",
+   "values": [
+    58.228
+   ]
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 14,
+   "section": "ajuste manual",
+   "values": [
+    144.912
+   ]
+  }
+ ]
 }

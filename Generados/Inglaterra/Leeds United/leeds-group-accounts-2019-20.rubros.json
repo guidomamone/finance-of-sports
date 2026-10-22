@@ -1,70 +1,73 @@
 {
-  "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md",
-  "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
-  "club": "leeds-gb",
-  "year": 2020,
-  "generatedAt": "2026-10-20T17:50:58.636Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Turnover",
-      "lado": "revenue",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        54.18398
-      ],
-      "glosa": "Cifra de negocios"
-    },
-    {
-      "label": "Other operating income",
-      "lado": "revenue",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        3.528322
-      ],
-      "glosa": "Otros ingresos de explotación"
-    },
-    {
-      "label": "Gain on disposal of players' registrations",
-      "lado": "revenue",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        10.128024
-      ],
-      "glosa": "Beneficio por enajenación de derechos federativos"
-    },
-    {
-      "label": "Cost of sales",
-      "lado": "expense",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        13.885858
-      ],
-      "glosa": "Coste de ventas"
-    },
-    {
-      "label": "Administrative expenses",
-      "lado": "expense",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        108.398516
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Television and broadcasting rebate",
-      "lado": "expense",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        7
-      ],
-      "glosa": "Reembolso por derechos de televisión y retransmisión"
-    }
-  ]
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md",
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+ "club": "leeds-gb",
+ "year": 2020,
+ "generatedAt": "2026-10-22T21:38:18.665Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Turnover",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "values": [
+    54.18398
+   ]
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "values": [
+    3.528322
+   ]
+  },
+  {
+   "label": "Gain on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "values": [
+    10.128024
+   ]
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "values": [
+    13.885858
+   ]
+  },
+  {
+   "label": "Television and broadcasting rebate",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "values": [
+    7
+   ]
+  },
+  {
+   "label": "Administrative expenses (sin el costo de personal)",
+   "lado": "expense",
+   "page": 10,
+   "section": "ajuste manual",
+   "values": [
+    30.10806
+   ]
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 10,
+   "section": "ajuste manual",
+   "values": [
+    78.290456
+   ]
+  }
+ ]
 }

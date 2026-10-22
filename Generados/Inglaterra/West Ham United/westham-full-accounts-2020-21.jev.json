@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.md",
- "generatedAt": "2026-10-20T17:55:35.559Z",
- "rubrosHuella": "2da06dda028c230ada3966dfc3bfde7c373d5898",
+ "generatedAt": "2026-10-22T21:38:19.820Z",
+ "rubrosHuella": "0f8e4a0b2e08d2eb4d8f1976f2ae3b2dbafa5d24",
  "rubros": [
   {
    "label": "Match receipts and related football activities",
@@ -67,12 +67,21 @@
    "desdeCache": true
   },
   {
-   "label": "Administrative expenses",
+   "label": "Administrative expenses (sin el costo de personal)",
    "lado": "expense",
    "page": 25,
-   "section": "estado",
+   "section": "ajuste manual",
    "choice": "admin_general_expense",
-   "confidence": 1,
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 25,
+   "section": "ajuste manual",
+   "choice": "wages_squad",
+   "confidence": 0.97,
    "desdeCache": true
   }
  ]

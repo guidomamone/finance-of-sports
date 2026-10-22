@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.md",
- "generado": "2026-10-20T18:14:07.054Z",
+ "generado": "2026-10-22T21:38:18.831Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "westham-gb",
  "year": 2021,
@@ -24,6 +25,43 @@
    "evidencia": ".md L960-L965",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.pdf",
+   "campo": "fila",
+   "valor": "103.151,00",
+   "linea": 960,
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Administrative expenses",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2020-21.md L1370) está dentro de \"Administrative expenses\": queda 231.602,00 - 128.451,00",
+   "evidencia": "westham-full-accounts-2020-21.md L1370",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.pdf",
+   "campo": "fila",
+   "valor": "128.451,00",
+   "linea": 960,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2020-21.md L1370) está dentro de \"Administrative expenses\": el costo de personal va aparte",
+   "evidencia": "westham-full-accounts-2020-21.md L1370",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2020-21.md L1370) está dentro de \"Administrative expenses\": costo de personal -> wages_squad",
+   "evidencia": "westham-full-accounts-2020-21.md L1370",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
   }
  ],
  "cola": [],
@@ -42,7 +80,12 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 3.907985046680551e-14
+   "dif": 6.750155989720952e-14
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 164.932; el sitio tiene 164.932"
   },
   {
    "nombre": "documento del año 2022",
@@ -53,17 +96,14 @@
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 164.932 en westham-full-accounts-2019-20.pdf y 164.932 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Administrative expenses\" no suma el renglón (206.526 contra 231.602, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Exceptional items\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "ajuste manual: sale la fila \"Exceptional items\" (2026-10-19, Exceptional items (1.443) ya está dentro de Administrative expenses ('Analysed as'): duplicaba el gasto)",
+  "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 103.151,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2020-21.md L1370) está dentro de \"Administrative expenses\": queda 231.602,00 - 128.451,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 128.451,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2020-21.md L1370) está dentro de \"Administrative expenses\": el costo de personal va aparte)",
   "duda de extraer que no afecta la carga: Los bloques no traen una fila específica de salarios del plantel; la nota 5 solo da sueldos totales (L1367)."
  ],
  "reintentar": null,
@@ -143,12 +183,20 @@
    "origen": "nota que desglosa \"Profit on disposal of players\""
   },
   {
-   "etiqueta": "Administrative expenses",
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
    "lado": "gasto",
-   "M": 231.602,
+   "M": 103.151,
    "pagina": 25,
    "linea": 960,
-   "origen": "estado"
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 128.451,
+   "pagina": 25,
+   "linea": 960,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

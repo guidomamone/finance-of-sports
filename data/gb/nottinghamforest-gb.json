@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "nottinghamforest-gb",
@@ -78,12 +78,25 @@
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5.512,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-73.684,"disclosure":"aggregated"},
         {
           "label": "Other operating (expenses)/income",
           "category": "other_operating_expenses",
           "subcategory": "other_expenses",
           "amount": -0.02,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -15.119,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -58.565,
           "disclosure": "aggregated"
         }
       ],
@@ -114,8 +127,21 @@
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-11.176,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-203.14,"disclosure":"aggregated"},
-        {"label":"Other operating expenses","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
+        {"label":"Other operating expenses","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -58.228,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -144.912,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.302,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":157.372,"expenses":214.316,"net_result":-67.246},

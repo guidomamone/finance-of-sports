@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.pdf",
  "md": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.md",
- "generado": "2026-10-20T18:51:26.540Z",
+ "generado": "2026-10-22T21:38:18.781Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "liverpool-gb",
  "year": 2023,
@@ -31,6 +32,43 @@
    "evidencia": "pág. 14 del visor",
    "autor": "Claude",
    "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.pdf",
+   "campo": "fila",
+   "valor": "188.636,00",
+   "linea": 526,
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Administrative expenses",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2022-23.md L1063) está dentro de \"Administrative expenses\": queda 561.517,00 - 372.881,00",
+   "evidencia": "liverpool-group-accounts-2022-23.md L1063",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.pdf",
+   "campo": "fila",
+   "valor": "372.881,00",
+   "linea": 526,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2022-23.md L1063) está dentro de \"Administrative expenses\": el costo de personal va aparte",
+   "evidencia": "liverpool-group-accounts-2022-23.md L1063",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2022-23.md L1063) está dentro de \"Administrative expenses\": costo de personal -> wages_squad",
+   "evidencia": "liverpool-group-accounts-2022-23.md L1063",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
   }
  ],
  "cola": [],
@@ -49,7 +87,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 6.217248937900877e-15
+   "dif": 1.199040866595169e-13
   },
   {
    "nombre": "año anterior cargado",
@@ -64,6 +102,8 @@
  ],
  "notas": [
   "la nota de \"Administrative expenses\" no suma el renglón (498.159 contra 561.517, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 188.636,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2022-23.md L1063) está dentro de \"Administrative expenses\": queda 561.517,00 - 372.881,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 372.881,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, liverpool-group-accounts-2022-23.md L1063) está dentro de \"Administrative expenses\": el costo de personal va aparte)",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Turnover\"): ¿Se deja afuera de la carga el desglose 'By geographical market' de Turnover (L1012-L1016) por duplicar el desglose por actividad?",
   "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): aceptar, en liverpool-group-accounts-2021-22.pdf"
  ],
@@ -128,12 +168,20 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Administrative expenses",
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
    "lado": "gasto",
-   "M": 561.517,
+   "M": 188.636,
    "pagina": 14,
    "linea": 526,
-   "origen": "estado"
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 372.881,
+   "pagina": 14,
+   "linea": 526,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

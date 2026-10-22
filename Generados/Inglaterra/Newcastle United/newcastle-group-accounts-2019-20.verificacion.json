@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.pdf",
  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.md",
- "generado": "2026-10-20T19:25:27.636Z",
+ "generado": "2026-10-22T21:52:24.767Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "newcastle-gb",
  "year": 2020,
@@ -11,7 +12,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (121.146, newcastle-group-accounts-2019-20.md L1067) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una",
+   "evidencia": "newcastle-group-accounts-2019-20.md L1067",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -31,6 +45,11 @@
    "dif": 1.7763568394002505e-14
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 201.031; el sitio tiene 201.031"
+  },
+  {
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2020: 178.914 en este documento y 178.914 en newcastle-group-accounts-2020-21.pdf (columna del año anterior)"
@@ -39,11 +58,6 @@
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2019: 201.031 en newcastle-group-accounts-2018-19.pdf y 201.031 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   }
  ],
  "notas": [

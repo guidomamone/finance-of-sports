@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
  "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md",
- "generado": "2026-10-20T18:14:06.542Z",
+ "generado": "2026-10-22T21:38:18.665Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "leeds-gb",
  "year": 2020,
@@ -11,7 +12,45 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "30.108.060,00",
+   "linea": 407,
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Administrative expenses",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de \"Administrative expenses\": queda 108.398.516,00 - 78.290.456,00",
+   "evidencia": "leeds-group-accounts-2019-20.md L865",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "78.290.456,00",
+   "linea": 407,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de \"Administrative expenses\": el costo de personal va aparte",
+   "evidencia": "leeds-group-accounts-2019-20.md L865",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de \"Administrative expenses\": costo de personal -> wages_squad",
+   "evidencia": "leeds-group-accounts-2019-20.md L865",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -31,18 +70,25 @@
    "dif": 1.4210854715202004e-14
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 64.572048; el sitio tiene 64.572048"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 67.840326 en este documento y 67.840326 en leeds-group-accounts-2020-21.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2019: 64.572048 en leeds-group-accounts-2018-19.pdf y 64.572048 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Administrative expenses\" no suma el renglón (78.290456 contra 108.398516, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 30.108.060,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de \"Administrative expenses\": queda 108.398.516,00 - 78.290.456,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 78.290.456,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de \"Administrative expenses\": el costo de personal va aparte)",
   "duda de localizar que no afecta la carga: Solo hay Consolidated Statement of Comprehensive Income (b2); el individual no se presenta, solo hay balance de la compañía en b4."
  ],
  "reintentar": null,
@@ -98,20 +144,28 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Administrative expenses",
-   "lado": "gasto",
-   "M": 108.398516,
-   "pagina": 10,
-   "linea": 407,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Television and broadcasting rebate",
    "lado": "gasto",
    "M": 7,
    "pagina": 10,
    "linea": 411,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "M": 30.10806,
+   "pagina": 10,
+   "linea": 407,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 78.290456,
+   "pagina": 10,
+   "linea": 407,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

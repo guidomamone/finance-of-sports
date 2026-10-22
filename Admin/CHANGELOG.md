@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 951 — Sueldos de los británicos: 38 club-años resueltos y la cadena entera sola (2026-10-22) [351]
+
+- `caja-deuda.mjs --personal`: compuerta de plausibilidad (menos de 15 % de los ingresos no es el personal del club: descartó 8,3 M£ de Aston Villa 2020, que era la nota de la filial sin jugadores); `--partir` marca `incluye wages_squad --posible` cuando ninguna fila global alcanza; con `--escribir` corre ajustes → verificar → Jev → Claude → cargar; el segundo año de un club ya no figura como «ya tiene los ajustes»; un total sin rótulo se publica como «Staff costs (total de la nota de personal)».
+- Datos: Leeds 2019-23, Liverpool 2022-23, Nottingham Forest 2022-23 y West Ham 2020-22 con el sueldo partido; 17 club-años de Brentford, Brighton, Newcastle, Sunderland y Wolves marcados «posiblemente dentro de…». `audit.js` acepta esa marca; P2 62 → 23.
+
 ## Versión 950 — Fila «Subsidios y donaciones»; Educación se fusiona con Otras secciones (2026-10-22) [350]
 
 - `js/finanzas-calc.js`: ingresos y gastos fusionan Educación con Otras secciones («Otras actividades (educación y otros deportes)»); ingresos suma «Subsidios y donaciones» (`grants_donations`, sin ocultar en cero). Etiquetas en `data/site-labels.js` y `data/lang/en.js`.

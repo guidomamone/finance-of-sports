@@ -6,7 +6,7 @@ const brentfordGbRevenueLinesByYear = {
     {"rawLabel":"Matchday","normalizedCategory":"matchday_competition","amountNative":10.415,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other","normalizedCategory":"player_sales","amountNative":0.579,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rents received","normalizedCategory":"other_income","amountNative":0.084,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Grant income","normalizedCategory":"grants_donations","amountNative":0.012,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Grant income","normalizedCategory":"other_income","amountNative":0.012,"disclosureLevel":"aggregated"},
     {"rawLabel":"Loan player revenue","normalizedCategory":"player_sales","amountNative":1.507,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other Income","normalizedCategory":"other_income","amountNative":0.28,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gain on disposal of players' registrations","normalizedCategory":"player_sales","amountNative":4.583,"disclosureLevel":"aggregated"},
@@ -17,7 +17,7 @@ const brentfordGbRevenueLinesByYear = {
     {"rawLabel":"Matchday","normalizedCategory":"matchday_competition","amountNative":11.25,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other","normalizedCategory":"player_sales","amountNative":1.178,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rents received","normalizedCategory":"other_income","amountNative":0.083,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Grant income","normalizedCategory":"grants_donations","amountNative":0.16,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Grant income","normalizedCategory":"other_income","amountNative":0.16,"disclosureLevel":"aggregated"},
     {"rawLabel":"Loan player revenue","normalizedCategory":"player_sales","amountNative":2.51,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other Income","normalizedCategory":"other_income","amountNative":0.845,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gain on disposal of players' registrations","normalizedCategory":"player_sales","amountNative":5.561,"disclosureLevel":"aggregated"},
@@ -64,8 +64,8 @@ const brentfordGbExpenseLinesByYear = {
 };
 
 const brentfordGbFiscalYearMeta = {
-  2022: {"currency":"GBP","sourceId":"brentford-gb-group-accounts-2021-22","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2022-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.215,"tax":-4.221,"grossDebt":null,"cash":null,"officialTotalRevenue":147.379,"officialTotalExpenses":116.751,"officialPAT":25.667,"extraRows":[{"label":"Interest receivable and similar income","value":1.412},{"label":"Interest payable and similar expenses","value":-1.197},{"label":"Tax (charge) / credit on profit / (loss)","value":-4.221}]},
-  2023: {"currency":"GBP","sourceId":"brentford-gb-group-accounts-2022-23","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.843,"tax":1.746,"grossDebt":null,"cash":null,"officialTotalRevenue":175.667,"officialTotalExpenses":165.585,"officialPAT":10.909,"extraRows":[{"label":"Interest receivable and similar income","value":1.165},{"label":"Interest payable and similar expenses","value":-2.008},{"label":"Tax credit / (charge) on profit","value":1.746}]},
+  2022: {"currency":"GBP","sourceId":"brentford-gb-group-accounts-2021-22","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2022-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.215,"tax":-4.221,"grossDebt":null,"cash":null,"officialTotalRevenue":147.379,"officialTotalExpenses":116.751,"officialPAT":25.667,"extraRows":[{"label":"Interest receivable and similar income","value":1.412},{"label":"Interest payable and similar expenses","value":-1.197},{"label":"Tax (charge) / credit on profit / (loss)","value":-4.221}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}}},
+  2023: {"currency":"GBP","sourceId":"brentford-gb-group-accounts-2022-23","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.843,"tax":1.746,"grossDebt":null,"cash":null,"officialTotalRevenue":175.667,"officialTotalExpenses":165.585,"officialPAT":10.909,"extraRows":[{"label":"Interest receivable and similar income","value":1.165},{"label":"Interest payable and similar expenses","value":-2.008},{"label":"Tax credit / (charge) on profit","value":1.746}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}}},
   2024: {"currency":"GBP","sourceId":"brentford-gb-group-accounts-2024","reportType":"official_balance_sheet","gestionId":"benham","fxRef":"GBP@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-3.852,"tax":0.356,"grossDebt":98.347,"cash":7.47,"officialTotalRevenue":197.134,"officialTotalExpenses":201.155,"officialPAT":-7.517},
   2025: {"currency":"GBP","sourceId":"brentford-gb-group-accounts-2025","reportType":"official_balance_sheet","gestionId":"benham","fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":8.796,"netInterest":-7.766,"tax":2.858,"grossDebt":132.072,"cash":1.977,"officialTotalRevenue":210.503,"officialTotalExpenses":232.06,"officialPAT":-17.669},
 };

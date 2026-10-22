@@ -1357,14 +1357,27 @@ async function partirFilaGlobal(clubId, d, res, { escribir }) {
     const ls = (d.expenseLinesByYear || {})[x.anio] || [];
     if (ls.some((l) => l.normalizedCategory === SUELDOS)) { console.log(`  ${x.anio} partir: ya tiene ${SUELDOS}; no se parte`); continue; }
     const glob = ls.filter((l) => (/^lump_.*_expense$/.test(l.normalizedCategory) || l.normalizedCategory === 'admin_general_expense') && Math.abs(l.amountNative) >= x.valor);
+    if (glob.length === 0) {
+      // (TODO 351) Ninguna fila global alcanza (el estado por función reparte los sueldos entre costo de ventas, distribución y administración): partirlos sería inventar de cuál salen.
+      // Se marca con `incluye` + `--posible` en la fila global más grande, que es lo que hizo Onboarding con los 10 británicos nuevos; el sitio dice «Posiblemente dentro de…».
+      const g0 = ls.filter((l) => /^lump_.*_expense$/.test(l.normalizedCategory) || ['admin_general_expense', 'other_expenses'].includes(l.normalizedCategory)).sort((p, q) => Math.abs(q.amountNative) - Math.abs(p.amountNative))[0];
+      if (!g0) { console.log(`  ${x.anio} partir: sin ninguna fila global de gasto; no decide`); continue; }
+      const pdf0 = x.md.replace(/\.md$/i, '.pdf'); const cita0 = `${x.fila.md.split('/').pop()} L${x.fila.linea}`;
+      if (ajustesTxt.split('\n').some((l) => l.includes(`"pdf":${JSON.stringify(pdf0)}`) && l.includes('"campo":"incluye"') && l.includes(`"valor":"${SUELDOS}"`))) { console.log(`  ${x.anio} partir: ya está marcado «incluye»`); continue; }
+      console.log(`  ${x.anio} partir: ninguna fila global >= staffCost (${x.valor}); se marca ${SUELDOS} «posiblemente dentro de ${g0.normalizedCategory}» (${cita0})`);
+      cmds.push([pdf0, 'incluye', '--valor', SUELDOS, '--categoria', g0.normalizedCategory, '--posible', '--motivo', `caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (${x.valor}, ${cita0}) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una`, '--evidencia', cita0]);
+      continue;
+    }
     if (glob.length !== 1) { console.log(`  ${x.anio} partir: ${glob.length} filas globales de gasto >= staffCost (${x.valor}); no decide`); continue; }
     const g = glob[0]; const pdf = x.md.replace(/\.md$/i, '.pdf');
     const v = (() => { try { return JSON.parse(readFileSync(resolve(ROOT, derivado(x.md, '.verificacion.json', { crear: false })), 'utf8')); } catch { return null; } })();
     const lin = (v?.lineas || []).find((l) => String(l.etiqueta).trim() === String(g.rawLabel).trim())?.linea ?? null;
     const resto = Math.abs(g.amountNative) / x.factor - x.fila.cifras[0];
-    const etiq = /\s/.test(String(x.fila.etiqueta).trim()) || !x.fila.tabla ? String(x.fila.etiqueta).trim() : `${String(x.fila.etiqueta).trim()} — ${x.fila.tabla}`;
+    // un total SIN RÓTULO (la suma de la nota «Staff costs» que no tiene etiqueta) no puede quedar como etiqueta publicada: se nombra por lo que es
+    const etiq = /^\(total sin rótulo/.test(String(x.fila.etiqueta)) ? 'Staff costs (total de la nota de personal)' : /\s/.test(String(x.fila.etiqueta).trim()) || !x.fila.tabla ? String(x.fila.etiqueta).trim() : `${String(x.fila.etiqueta).trim()} — ${x.fila.tabla}`;
     const cita = `${x.fila.md.split('/').pop()} L${x.fila.linea}`;
-    if (ajustesTxt.includes(`"pdf":${JSON.stringify(pdf)}`) && ajustesTxt.includes(`"etiqueta":${JSON.stringify(etiq)}`)) { console.log(`  ${x.anio} partir: ya tiene los ajustes`); continue; }
+    // (TODO 351) el pdf y la etiqueta tienen que estar en la MISMA línea: con dos `includes` sobre todo el archivo, el segundo año de un club (misma etiqueta, otro pdf) figuraba como «ya tiene los ajustes»
+    if (ajustesTxt.split('\n').some((l) => l.includes(`"pdf":${JSON.stringify(pdf)}`) && l.includes(`"etiqueta":${JSON.stringify(etiq)}`))) { console.log(`  ${x.anio} partir: ya tiene los ajustes`); continue; }
     console.log(`  ${x.anio} partir: "${g.rawLabel}" ${fmt(Math.abs(g.amountNative) / x.factor)} -> ${fmt(resto)} + "${etiq}" ${fmt(x.fila.cifras[0])} (${SUELDOS}, ${cita})`);
     const mot = `caja-deuda.mjs --personal --partir (to-do 229): el año no tiene ${SUELDOS} y el costo de personal confirmado (staffCost, ${cita}) está dentro de "${g.rawLabel}"`;
     cmds.push([pdf, 'fila', '--valor', fmt(resto), '--etiqueta', `${g.rawLabel} (sin el costo de personal)`, '--lado', 'gasto', '--reemplaza', g.rawLabel, ...(lin ? ['--linea', String(lin)] : []), '--motivo', `${mot}: queda ${fmt(Math.abs(g.amountNative) / x.factor)} - ${fmt(x.fila.cifras[0])}`, '--evidencia', cita]);
@@ -1374,7 +1387,19 @@ async function partirFilaGlobal(clubId, d, res, { escribir }) {
   if (!escribir || !cmds.length) { if (cmds.length) console.log(`\n${cmds.length / 3} año(s) para partir. Agregá --escribir (escribe los ajustes; después: node tools/cargar.mjs "<pdf>" --desde-verificacion --reemplazar --escribir por año).`); return; }
   const { execFileSync } = await import('node:child_process');
   for (const c of cmds) execFileSync('node', [resolve(ROOT, 'tools/ajustes.mjs'), '--agregar', ...c, '--autor', 'caja-deuda --personal'], { cwd: ROOT, stdio: 'inherit' });
-  console.log(`\nEscritos ${cmds.length} ajustes. Ahora, por año: node tools/cargar.mjs "<pdf>" --desde-verificacion --reemplazar --escribir`);
+  console.log(`\nEscritos ${cmds.length} ajustes.`);
+  // (TODO 351) LA CADENA ENTERA, sola: los ajustes los toma verificar.mjs, las filas nuevas hay que categorizarlas (etapa 5: Jev y, si no sabe, Claude) y recién ahí cargar.mjs reemplaza el año. Sin esto,
+  // cargar frena con «el .categorias.json NO está al día» y el año queda con la fila global sin partir (así quedaron los 12 club-años de los británicos hasta que se corrió a mano).
+  const pdfs = [...new Set(cmds.map((c) => c[0]))];
+  const { mkdirSync, writeFileSync } = await import('node:fs');
+  const lista = resolve(ROOT, 'Generados', '_cache', 'partir-lista.txt'); mkdirSync(resolve(ROOT, 'Generados', '_cache'), { recursive: true }); writeFileSync(lista, pdfs.join('\n') + '\n');
+  const nodo = (args) => execFileSync('node', args.map((a) => (a.startsWith('tools/') ? resolve(ROOT, a) : a)), { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 27, stdio: ['ignore', 'pipe', 'pipe'] });
+  try {
+    nodo(['tools/verificar.mjs', '--lista', lista, '--rubros']);
+    nodo(['tools/jev-categorizar.mjs', '--listos', '--lista', lista]);
+    nodo(['tools/categorizar-claude.mjs', '--listos', '--lista', lista]);
+    for (const p of pdfs) { nodo(['tools/cargar.mjs', p, '--desde-verificacion', '--reemplazar', '--escribir']); console.log(`  ${p.split('/').pop()}: cargado (cargar.mjs sale con 1 si frena)`); }
+  } catch (e) { console.log(`  la cadena frenó: ${String(e.stdout || e.message).slice(-300)}\n  A mano: verificar.mjs --lista, jev-categorizar.mjs --listos, categorizar-claude.mjs --listos y cargar.mjs <pdf> --desde-verificacion --reemplazar --escribir`); }
 }
 function registroDocs() {
   const m = new Map();

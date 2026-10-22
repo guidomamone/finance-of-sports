@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "wolves-gb",
@@ -94,7 +94,8 @@
           {"label":"Interest receivable and similar income","amount":0.121},
           {"label":"Interest payable and similar charges","amount":-4.812},
           {"label":"Tax on (loss)/profit","amount":0.681}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -128,7 +129,8 @@
           {"label":"Interest receivable and similar income","amount":null},
           {"label":"Interest payable and similar charges","amount":-5.372},
           {"label":"Tax on Profit/(loss)","amount":null}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -163,7 +165,8 @@
           {"label":"Interest receivable and similar income","amount":0.03},
           {"label":"Interest payable and similar charges","amount":-5.627},
           {"label":"Tax on (loss)/profit)","amount":null}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -198,7 +201,8 @@
           {"label":"Interest receivable and similar income","amount":0.308},
           {"label":"Interest payable and similar charges","amount":-10.71},
           {"label":"Tax on (loss)/profit)","amount":null}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {

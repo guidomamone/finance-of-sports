@@ -41,13 +41,15 @@ const nottinghamforestGbRevenueLinesByYear = {
 const nottinghamforestGbExpenseLinesByYear = {
   2022: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-5.512,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-73.684,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other operating (expenses)/income","normalizedCategory":"other_expenses","amountNative":-0.02,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-15.119,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-58.565,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-11.176,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-203.14,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other operating expenses","normalizedCategory":"other_expenses","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-58.228,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-144.912,"disclosureLevel":"aggregated"},
   ],
   2024: [
     {"rawLabel":"Staff costs","normalizedCategory":"wages_squad","amountNative":-166.399,"disclosureLevel":"detailed"},

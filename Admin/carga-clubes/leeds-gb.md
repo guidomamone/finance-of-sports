@@ -108,16 +108,16 @@ year 23.120370 = 60.297537, reconcilia EXACTO con cash-grossDebt=-55.288543 impr
 ### Ingresos
 
 ```text
-2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2023: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Leeds United/leeds-group-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Gate receipts | pág. 22, precedente |
-| 2 | Television and broadcasting income | pág. 22, Jev 1 |
+| 2 | Television and broadcasting income | pág. 22, precedente |
 | 3 | Merchandising income | pág. 22, precedente |
-| 4 | Central distributions | pág. 22, Jev 1 |
+| 4 | Central distributions | pág. 22, precedente |
 | 5 | Other commercial revenue | pág. 22, precedente |
 | 6 | Catering income | pág. 22, precedente |
 | 7 | Educational services | pág. 22, precedente |
@@ -128,18 +128,16 @@ Generados/Inglaterra/Leeds United/leeds-group-accounts-2022-23.categorias.json (
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Cost of sales | pág. 13, precedente |
-| 2 | Administrative expenses | pág. 13, Jev 1 |
+| 2 | Administrative expenses (sin el costo de personal) | pág. 13, precedente |
+| 3 | Staff costs (total de la nota de personal) | pág. 13, precedente |
 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Leeds United".
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 129.223.027,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2022-23.md L1079) está dentro de "Administrative expenses": queda 275.080.123,00 - 145.857.096,00
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 145.857.096,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2022-23.md L1079) está dentro de "Administrative expenses": el costo de personal va aparte
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2022-23.md L1079) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2022
@@ -147,20 +145,20 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Leeds United/leeds-group-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Gate receipts | pág. 22, precedente |
-| 2 | Television and broadcasting income | pág. 22, Jev 1 |
+| 2 | Television and broadcasting income | pág. 22, precedente |
 | 3 | Merchandising income | pág. 22, precedente |
-| 4 | Central distributions | pág. 22, Jev 1 |
+| 4 | Central distributions | pág. 22, precedente |
 | 5 | Other commercial revenue | pág. 22, precedente |
 | 6 | Catering income | pág. 22, precedente |
 | 7 | Educational services | pág. 22, precedente |
-| 8 | Other operating income | pág. 13, Jev 0.99 |
+| 8 | Other operating income | pág. 13, precedente |
 | 9 | Gain/ (loss) on disposal of players' registrations | pág. 13, Jev 0.98 |
 
 ### Gastos
@@ -168,19 +166,17 @@ Generados/Inglaterra/Leeds United/leeds-group-accounts-2021-22.categorias.json (
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Cost of sales | pág. 13, precedente |
-| 2 | Administrative expenses | pág. 13, Jev 1 |
-| 3 | Settlement of transfer dispute | pág. 13, ? 0.6 |
+| 2 | Settlement of transfer dispute | pág. 13, precedente |
+| 3 | Administrative expenses (sin el costo de personal) | pág. 13, precedente |
+| 4 | Staff costs (total de la nota de personal) | pág. 13, precedente |
 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Leeds United".
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 82.096.852,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2021-22.md L1051) está dentro de "Administrative expenses": queda 203.502.431,00 - 121.405.579,00
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 121.405.579,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2021-22.md L1051) está dentro de "Administrative expenses": el costo de personal va aparte
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2021-22.md L1051) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2021
@@ -188,7 +184,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2021: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Leeds United/leeds-group-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -209,21 +205,19 @@ Generados/Inglaterra/Leeds United/leeds-group-accounts-2020-21.categorias.json (
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Cost of sales | pág. 13, precedente |
-| 2 | Administrative expenses | pág. 13, precedente |
-| 3 | Settlement of transfer dispute | pág. 13, precedente |
+| 2 | Settlement of transfer dispute | pág. 13, precedente |
+| 3 | Administrative expenses (sin el costo de personal) | pág. 13, precedente |
+| 4 | Staff costs (total de la nota de personal) | pág. 13, precedente |
 
 ### Meta
 
 ```text
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): cierre = 2021-06-30. Consolidated Statement of Comprehensive Income 'Period from 1 August 2020 to 30 June 2021' (11 meses, pág. 13 del visor); el 2023-03-31 del registro es el sello de presentación
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): estado = b3. El estado de resultados (Consolidated Statement of Comprehensive Income, pág. 13 del visor) es el bloque b3; el lote lo dejaba 'sin estado de resultados'
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Leeds United".
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 43.732.796,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2020-21.md L1078) está dentro de "Administrative expenses": queda 151.985.475,00 - 108.252.679,00
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 108.252.679,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2020-21.md L1078) está dentro de "Administrative expenses": el costo de personal va aparte
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2020-21.md L1078) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2020
@@ -231,14 +225,14 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2020: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2020: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Leeds United/leeds-group-accounts-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Turnover | pág. 10, Jev 0.99 |
-| 2 | Other operating income | pág. 10, Jev 0.99 |
+| 2 | Other operating income | pág. 10, precedente |
 | 3 | Gain on disposal of players' registrations | pág. 10, precedente |
 
 ### Gastos
@@ -246,24 +240,22 @@ Generados/Inglaterra/Leeds United/leeds-group-accounts-2019-20.categorias.json (
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Cost of sales | pág. 10, precedente |
-| 2 | Administrative expenses | pág. 10, Jev 1 |
-| 3 | Television and broadcasting rebate | pág. 10, precedente |
+| 2 | Television and broadcasting rebate | pág. 10, precedente |
+| 3 | Administrative expenses (sin el costo de personal) | pág. 10, precedente |
+| 4 | Staff costs (total de la nota de personal) | pág. 10, precedente |
 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 30.108.060,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de "Administrative expenses": queda 108.398.516,00 - 78.290.456,00
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 78.290.456,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de "Administrative expenses": el costo de personal va aparte
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-championship, verificado contra roster cacheado de "2019–20 EFL Championship" (tools/club-league-reference/gb.json), coincidencia exacta "Leeds United".
+tools/dentro-de-otro.mjs (2026-10-22): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2021, 2022, 2023, 2024, 2025)
 ```
 
 ## 2019
@@ -271,19 +263,19 @@ tools/cargar.mjs (2026-10-20): gb-championship, verificado contra roster cachead
 ### Ingresos
 
 ```text
-2019: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2019: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Leeds United/leeds-group-accounts-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Gate receipts | pág. 19, precedente |
-| 2 | Television and broadcasting income | pág. 19, Jev 1 |
+| 2 | Television and broadcasting income | pág. 19, precedente |
 | 3 | Merchandising income | pág. 19, precedente |
-| 4 | Central distributions | pág. 19, Jev 1 |
+| 4 | Central distributions | pág. 19, precedente |
 | 5 | Other commercial revenue | pág. 19, precedente |
 | 6 | Catering income | pág. 19, precedente |
-| 7 | Other operating income | pág. 10, Jev 0.99 |
+| 7 | Other operating income | pág. 10, precedente |
 | 8 | Gain on disposal of players' registrations | pág. 10, precedente |
 
 ### Gastos
@@ -291,18 +283,16 @@ Generados/Inglaterra/Leeds United/leeds-group-accounts-2018-19.categorias.json (
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Cost of sales | pág. 10, precedente |
-| 2 | Administrative expenses | pág. 10, Jev 1 |
+| 2 | Administrative expenses (sin el costo de personal) | pág. 10, precedente |
+| 3 | Staff costs (total de la nota de personal) | pág. 10, precedente |
 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-championship, verificado contra roster cacheado de "2018–19 EFL Championship" (tools/club-league-reference/gb.json), coincidencia exacta "Leeds United".
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 28.938.179,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2018-19.md L836) está dentro de "Administrative expenses": queda 75.099.771,00 - 46.161.592,00
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 46.161.592,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2018-19.md L836) está dentro de "Administrative expenses": el costo de personal va aparte
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2018-19.md L836) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## Fuentes

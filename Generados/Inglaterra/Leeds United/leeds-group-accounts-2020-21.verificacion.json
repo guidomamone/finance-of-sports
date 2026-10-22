@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.md",
- "generado": "2026-10-20T18:51:26.531Z",
+ "generado": "2026-10-22T21:38:18.725Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "leeds-gb",
  "year": 2021,
@@ -31,6 +32,43 @@
    "evidencia": "pág. 13 del visor",
    "autor": "Claude",
    "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf",
+   "campo": "fila",
+   "valor": "43.732.796,00",
+   "linea": 572,
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Administrative expenses",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2020-21.md L1078) está dentro de \"Administrative expenses\": queda 151.985.475,00 - 108.252.679,00",
+   "evidencia": "leeds-group-accounts-2020-21.md L1078",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf",
+   "campo": "fila",
+   "valor": "108.252.679,00",
+   "linea": 572,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2020-21.md L1078) está dentro de \"Administrative expenses\": el costo de personal va aparte",
+   "evidencia": "leeds-group-accounts-2020-21.md L1078",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2020-21.md L1078) está dentro de \"Administrative expenses\": costo de personal -> wages_squad",
+   "evidencia": "leeds-group-accounts-2020-21.md L1078",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
   }
  ],
  "cola": [],
@@ -49,7 +87,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 3.019806626980426e-14
+   "dif": 1.7763568394002505e-15
   },
   {
    "nombre": "lectura",
@@ -74,6 +112,8 @@
  ],
  "notas": [
   "la nota de \"Administrative expenses\" no suma el renglón (108.252679 contra 151.985475, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 43.732.796,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2020-21.md L1078) está dentro de \"Administrative expenses\": queda 151.985.475,00 - 108.252.679,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 108.252.679,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2020-21.md L1078) está dentro de \"Administrative expenses\": el costo de personal va aparte)",
   "la lectura base no cerraba; cerró con la lectura 3",
   "duda de localizar que no afecta la carga: Las columnas del estado (b3) cubren períodos de distinta duración por cambio de fecha de cierre.",
   "duda de extraer ya contestada para el club (perimetro, \"Operating profit/(loss)\"): aceptar, en leeds-group-accounts-2020-21.pdf"
@@ -171,20 +211,28 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Administrative expenses",
-   "lado": "gasto",
-   "M": 151.985475,
-   "pagina": 13,
-   "linea": 572,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Settlement of transfer dispute",
    "lado": "gasto",
    "M": 15.555435,
    "pagina": 13,
    "linea": 574,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "M": 43.732796,
+   "pagina": 13,
+   "linea": 572,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 108.252679,
+   "pagina": 13,
+   "linea": 572,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "(Loss)/gain on disposal of players' registrations",

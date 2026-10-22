@@ -63,7 +63,7 @@
         {"label":"Matchday","category":"matchday","subcategory":"matchday_competition","amount":10.415,"disclosure":"aggregated"},
         {"label":"Other","category":"player_transfers","subcategory":"player_sales","amount":0.579,"disclosure":"aggregated"},
         {"label":"Rents received","category":"other_revenue","subcategory":"other_income","amount":0.084,"disclosure":"aggregated"},
-        {"label":"Grant income","category":"grants_donations","subcategory":"grants_donations","amount":0.012,"disclosure":"aggregated"},
+        {"label":"Grant income","category":"other_revenue","subcategory":"other_income","amount":0.012,"disclosure":"aggregated"},
         {"label":"Loan player revenue","category":"player_transfers","subcategory":"player_sales","amount":1.507,"disclosure":"aggregated"},
         {"label":"Other Income","category":"other_revenue","subcategory":"other_income","amount":0.28,"disclosure":"aggregated"},
         {
@@ -91,7 +91,8 @@
           {"label":"Interest receivable and similar income","amount":1.412},
           {"label":"Interest payable and similar expenses","amount":-1.197},
           {"label":"Tax (charge) / credit on profit / (loss)","amount":-4.221}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -108,7 +109,7 @@
         {"label":"Matchday","category":"matchday","subcategory":"matchday_competition","amount":11.25,"disclosure":"aggregated"},
         {"label":"Other","category":"player_transfers","subcategory":"player_sales","amount":1.178,"disclosure":"aggregated"},
         {"label":"Rents received","category":"other_revenue","subcategory":"other_income","amount":0.083,"disclosure":"aggregated"},
-        {"label":"Grant income","category":"grants_donations","subcategory":"grants_donations","amount":0.16,"disclosure":"aggregated"},
+        {"label":"Grant income","category":"other_revenue","subcategory":"other_income","amount":0.16,"disclosure":"aggregated"},
         {"label":"Loan player revenue","category":"player_transfers","subcategory":"player_sales","amount":2.51,"disclosure":"aggregated"},
         {"label":"Other Income","category":"other_revenue","subcategory":"other_income","amount":0.845,"disclosure":"aggregated"},
         {
@@ -130,7 +131,8 @@
           {"label":"Interest receivable and similar income","amount":1.165},
           {"label":"Interest payable and similar expenses","amount":-2.008},
           {"label":"Tax credit / (charge) on profit","amount":1.746}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {

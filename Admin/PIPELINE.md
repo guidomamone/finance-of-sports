@@ -916,8 +916,12 @@ cuenta, Genoa 2022 sí).
                    cifras ("7.1.3"); Grecia: Olympiacos 2017 "| Ταμειακά διαθέσιμα | 24. | 1.820.725,55 |", Aris 2019 "| ... | 7.1.3 | 420.500,00 |".
  PERSONAL         `caja-deuda.mjs --personal`: staffCost (costo de personal del ejercicio, interno) = la fila de total que
                   Jev elige entre las de todos los documentos del mismo cierre, con la compuerta del vecino (medido: 9 de 9 en Volos y
-                  Panetolikos). `--partir` propone ajustes para separarlo de una fila global de gasto cuando el año no tiene wages_squad y
-                  hay UNA sola fila global >= staffCost; se aplican con verificar.mjs + cargar.mjs --reemplazar (que conserva staffCost).
+                  Panetolikos). COMPUERTA DE PLAUSIBILIDAD: un total que es menos de 15 % de los ingresos del año no se usa (casi seguro la
+                  nota de otra entidad del grupo, sin los jugadores: Aston Villa 2019-22). `--partir` separa el sueldo de la fila global cuando el año no
+                  tiene wages_squad y hay UNA sola fila global >= staffCost; si ninguna alcanza (el estado por función reparte los sueldos entre costo de
+                  ventas y administración) marca `incluye wages_squad --posible` en la fila global más grande. Con `--escribir` corre SOLO la cadena
+                  entera: ajustes → verificar.mjs → jev-categorizar.mjs → categorizar-claude.mjs → cargar.mjs --reemplazar --escribir (los ajustes
+                  quedan en `Admin/registros/ajustes-manuales.jsonl`: una recarga posterior los vuelve a aplicar). Después, `node tools/publicar.mjs`.
  PÁGINAS DEL BALANCE  título o total del balance, y no el flujo de efectivo ni los cambios en el patrimonio (una FILA con esas palabras
                       no cuenta si la página tiene el título del balance como encabezado)
  PERÍMETRO  cada página del balance es consolidado o individual por su encabezado; con ajuste `perimetro` solo cuenta ese (si el .md

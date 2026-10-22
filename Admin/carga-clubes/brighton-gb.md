@@ -182,7 +182,7 @@ tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -205,13 +205,9 @@ Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.categ
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia única por palabras "Brighton & Hove Albion" = "Brighton".
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (112.718, brighton-full-accounts-2021-22.md L1082) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2021
@@ -219,7 +215,7 @@ tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2021: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -243,13 +239,9 @@ Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.categ
 
 ```text
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): cierre = 2021-06-30. El .md dice 'for the year ended 30 June 2021' (Finanzas 5, 2026-10-19)
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia única por palabras "Brighton & Hove Albion" = "Brighton".
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (107.404, brighton-full-accounts-2020-21.md L1033) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2020
@@ -257,7 +249,7 @@ tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2020: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2020: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -278,13 +270,9 @@ Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.categ
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2019–20 Premier League" (tools/club-league-reference/gb.json), coincidencia única por palabras "Brighton & Hove Albion" = "Brighton".
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (101.87, brighton-full-accounts-2019-20.md L907) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## Fuentes

@@ -1,110 +1,109 @@
 {
-  "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.md",
-  "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf",
-  "club": "leeds-gb",
-  "year": 2019,
-  "generatedAt": "2026-10-20T17:50:58.537Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Gate receipts",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        12.612796
-      ],
-      "glosa": "Ingresos por taquilla"
-    },
-    {
-      "label": "Television and broadcasting income",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        1.486
-      ],
-      "glosa": "Ingresos por retransmisión y televisión"
-    },
-    {
-      "label": "Merchandising income",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        9.436899
-      ],
-      "glosa": "Ingresos por merchandising"
-    },
-    {
-      "label": "Central distributions",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        7.649
-      ],
-      "glosa": "Distribuciones centrales"
-    },
-    {
-      "label": "Other commercial revenue",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        11.937394
-      ],
-      "glosa": "Otros ingresos comerciales"
-    },
-    {
-      "label": "Catering income",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        5.797676
-      ],
-      "glosa": "Ingresos por restauración"
-    },
-    {
-      "label": "Other operating income",
-      "lado": "revenue",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        0.00286
-      ],
-      "glosa": "Otros ingresos de explotación"
-    },
-    {
-      "label": "Gain on disposal of players' registrations",
-      "lado": "revenue",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        15.649423
-      ],
-      "glosa": "Beneficio por enajenación de derechos federativos de jugadores"
-    },
-    {
-      "label": "Cost of sales",
-      "lado": "expense",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        9.970908
-      ],
-      "glosa": "Coste de ventas"
-    },
-    {
-      "label": "Administrative expenses",
-      "lado": "expense",
-      "page": 10,
-      "section": "estado",
-      "values": [
-        75.099771
-      ],
-      "glosa": "Gastos de administración"
-    }
-  ]
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.md",
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf",
+ "club": "leeds-gb",
+ "year": 2019,
+ "generatedAt": "2026-10-22T21:38:18.649Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    12.612796
+   ]
+  },
+  {
+   "label": "Television and broadcasting income",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    1.486
+   ]
+  },
+  {
+   "label": "Merchandising income",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    9.436899
+   ]
+  },
+  {
+   "label": "Central distributions",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    7.649
+   ]
+  },
+  {
+   "label": "Other commercial revenue",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    11.937394
+   ]
+  },
+  {
+   "label": "Catering income",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    5.797676
+   ]
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "values": [
+    0.00286
+   ]
+  },
+  {
+   "label": "Gain on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "values": [
+    15.649423
+   ]
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "values": [
+    9.970908
+   ]
+  },
+  {
+   "label": "Administrative expenses (sin el costo de personal)",
+   "lado": "expense",
+   "page": 10,
+   "section": "ajuste manual",
+   "values": [
+    28.938179
+   ]
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 10,
+   "section": "ajuste manual",
+   "values": [
+    46.161592
+   ]
+  }
+ ]
 }

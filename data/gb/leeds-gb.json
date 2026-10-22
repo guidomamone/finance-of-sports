@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "leeds-gb",
@@ -95,7 +95,20 @@
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-9.970908,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-75.099771,"disclosure":"aggregated"}
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -28.938179,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -46.161592,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.900363,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":64.572048,"expenses":85.070679,"net_result":-21.398994},
@@ -128,12 +141,25 @@
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-13.885858,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-108.398516,"disclosure":"aggregated"},
         {
           "label": "Television and broadcasting rebate",
           "category": "other_operating_expenses",
           "subcategory": "other_expenses",
           "amount": -7,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -30.10806,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -78.290456,
           "disclosure": "aggregated"
         }
       ],
@@ -182,8 +208,21 @@
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-14.654409,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-151.985475,"disclosure":"aggregated"},
-        {"label":"Settlement of transfer dispute","category":"exceptional","subcategory":"exceptional_items","amount":-15.555435,"disclosure":"aggregated"}
+        {"label":"Settlement of transfer dispute","category":"exceptional","subcategory":"exceptional_items","amount":-15.555435,"disclosure":"aggregated"},
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -43.732796,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -108.252679,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.47533,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":170.725803,"expenses":166.639884,"net_result":-11.944846},
@@ -222,8 +261,21 @@
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-20.174675,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-203.502431,"disclosure":"aggregated"},
-        {"label":"Settlement of transfer dispute","category":"exceptional","subcategory":"exceptional_items","amount":0,"disclosure":"aggregated"}
+        {"label":"Settlement of transfer dispute","category":"exceptional","subcategory":"exceptional_items","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -82.096852,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -121.405579,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.129737,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":190.096416,"expenses":223.677106,"net_result":-36.710427},
@@ -261,7 +313,20 @@
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-20.577557,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-275.080123,"disclosure":"aggregated"}
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -129.223027,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -145.857096,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.075424,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":263.028974,"expenses":295.65768,"net_result":-33.70413},

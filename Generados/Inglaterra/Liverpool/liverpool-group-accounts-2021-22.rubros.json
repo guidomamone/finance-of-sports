@@ -1,70 +1,73 @@
 {
-  "md": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.md",
-  "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.pdf",
-  "club": "liverpool-gb",
-  "year": 2022,
-  "generatedAt": "2026-10-20T17:50:58.748Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Media",
-      "lado": "revenue",
-      "page": 26,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        260.841
-      ],
-      "glosa": "Derechos audiovisuales"
-    },
-    {
-      "label": "Commercial",
-      "lado": "revenue",
-      "page": 26,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        246.663
-      ],
-      "glosa": "Ingresos comerciales"
-    },
-    {
-      "label": "Match day",
-      "lado": "revenue",
-      "page": 26,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        86.767
-      ],
-      "glosa": "Día de partido"
-    },
-    {
-      "label": "Profit on disposal of players' registrations",
-      "lado": "revenue",
-      "page": 14,
-      "section": "estado",
-      "values": [
-        28.124
-      ],
-      "glosa": "Beneficio por enajenación de derechos federativos"
-    },
-    {
-      "label": "Cost of sales",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado",
-      "values": [
-        67.305
-      ],
-      "glosa": "Coste de las ventas"
-    },
-    {
-      "label": "Administrative expenses",
-      "lado": "expense",
-      "page": 14,
-      "section": "estado",
-      "values": [
-        545.041
-      ],
-      "glosa": "Gastos de administración"
-    }
-  ]
+ "md": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.md",
+ "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.pdf",
+ "club": "liverpool-gb",
+ "year": 2022,
+ "generatedAt": "2026-10-22T21:38:18.769Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Media",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    260.841
+   ]
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    246.663
+   ]
+  },
+  {
+   "label": "Match day",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    86.767
+   ]
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "values": [
+    28.124
+   ]
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "values": [
+    67.305
+   ]
+  },
+  {
+   "label": "Administrative expenses (sin el costo de personal)",
+   "lado": "expense",
+   "page": 14,
+   "section": "ajuste manual",
+   "values": [
+    178.949
+   ]
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 14,
+   "section": "ajuste manual",
+   "values": [
+    366.092
+   ]
+  }
+ ]
 }

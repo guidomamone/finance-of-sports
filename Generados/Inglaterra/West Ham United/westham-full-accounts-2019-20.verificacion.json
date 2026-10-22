@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.pdf",
  "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.md",
- "generado": "2026-10-20T18:14:07.020Z",
+ "generado": "2026-10-22T21:38:18.817Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "westham-gb",
  "year": 2020,
@@ -11,7 +12,45 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "94.593,00",
+   "linea": 915,
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Administrative expenses",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de \"Administrative expenses\": queda 224.542,00 - 129.949,00",
+   "evidencia": "westham-full-accounts-2019-20.md L1353",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "129.949,00",
+   "linea": 915,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de \"Administrative expenses\": el costo de personal va aparte",
+   "evidencia": "westham-full-accounts-2019-20.md L1353",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de \"Administrative expenses\": costo de personal -> wages_squad",
+   "evidencia": "westham-full-accounts-2019-20.md L1353",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -28,7 +67,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 1.4210854715202004e-14
+   "dif": 4.263256414560601e-14
   },
   {
    "nombre": "documento del año 2021",
@@ -42,7 +81,9 @@
   }
  ],
  "notas": [
-  "la nota de \"Administrative expenses\" no suma el renglón (195.515 contra 224.542, sumando sus renglones): quedó el renglón del estado"
+  "la nota de \"Administrative expenses\" no suma el renglón (195.515 contra 224.542, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 94.593,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de \"Administrative expenses\": queda 224.542,00 - 129.949,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 129.949,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de \"Administrative expenses\": el costo de personal va aparte)"
  ],
  "reintentar": null,
  "reintentado": true,
@@ -121,12 +162,20 @@
    "origen": "nota que desglosa \"Profit on disposal of players\""
   },
   {
-   "etiqueta": "Administrative expenses",
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
    "lado": "gasto",
-   "M": 224.542,
+   "M": 94.593,
    "pagina": 24,
    "linea": 915,
-   "origen": "estado"
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 129.949,
+   "pagina": 24,
+   "linea": 915,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

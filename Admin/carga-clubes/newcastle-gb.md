@@ -189,7 +189,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -212,13 +212,9 @@ Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.categoria
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Newcastle United".
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (170.204, newcastle-group-accounts-2021-22.md L1309) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2021
@@ -226,7 +222,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2021: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -249,13 +245,9 @@ Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.categoria
 
 ```text
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): cierre = 2021-06-30. 11 meses del 1-08-2020 al 30-06-2021 (cambio de cierre de julio a junio); contiguo con el ejercicio de 13 meses al 31-07-2020 ya cargado
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Newcastle United".
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (106.829, newcastle-group-accounts-2020-21.md L1360) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2020
@@ -263,7 +255,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2020: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2020: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -285,13 +277,9 @@ Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.categoria
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2019–20 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Newcastle United".
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (121.146, newcastle-group-accounts-2019-20.md L1067) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2019

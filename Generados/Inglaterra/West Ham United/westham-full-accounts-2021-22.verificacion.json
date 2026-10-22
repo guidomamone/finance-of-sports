@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
  "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md",
- "generado": "2026-10-20T18:14:07.085Z",
+ "generado": "2026-10-22T21:38:18.845Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "westham-gb",
  "year": 2022,
@@ -24,6 +25,43 @@
    "evidencia": ".md L996",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "99.662,00",
+   "linea": 992,
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Administrative expenses",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de \"Administrative expenses\": queda 234.059,00 - 134.397,00",
+   "evidencia": "westham-full-accounts-2021-22.md L1491",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "134.397,00",
+   "linea": 992,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de \"Administrative expenses\": el costo de personal va aparte",
+   "evidencia": "westham-full-accounts-2021-22.md L1491",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de \"Administrative expenses\": costo de personal -> wages_squad",
+   "evidencia": "westham-full-accounts-2021-22.md L1491",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
   }
  ],
  "cola": [],
@@ -45,6 +83,11 @@
    "dif": 8.881784197001252e-15
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 214.116; el sitio tiene 214.116"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2022: 254.906 en este documento y 254.906 en westham-full-accounts-2022-23.pdf (columna del año anterior)"
@@ -53,11 +96,6 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 214.116 en westham-full-accounts-2020-21.pdf y 214.116 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -65,6 +103,8 @@
   "la nota de \"Administrative expenses\" no suma el renglón (191.579 contra 234.059, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Exceptional items\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "ajuste manual: sale la fila \"Exceptional items\" (2026-10-19, Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto)",
+  "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 99.662,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de \"Administrative expenses\": queda 234.059,00 - 134.397,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 134.397,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de \"Administrative expenses\": el costo de personal va aparte)",
   "duda de extraer que no afecta la carga: No hay una fila 'Salarios del plantel'; L1488 es salarios de todos los empleados."
  ],
  "reintentar": null,
@@ -136,12 +176,20 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Administrative expenses",
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
    "lado": "gasto",
-   "M": 234.059,
+   "M": 99.662,
    "pagina": 24,
    "linea": 992,
-   "origen": "estado"
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 134.397,
+   "pagina": 24,
+   "linea": 992,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

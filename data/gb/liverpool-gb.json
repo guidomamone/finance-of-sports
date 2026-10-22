@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "liverpool-gb",
@@ -71,7 +71,20 @@
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-67.305,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-545.041,"disclosure":"aggregated"}
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -178.949,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -366.092,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.58,"tax":-5.033,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":622.395,"expenses":612.346,"net_result":2.436},
@@ -105,7 +118,20 @@
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-70.543,"disclosure":"aggregated"},
-        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-561.517,"disclosure":"aggregated"}
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -188.636,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -372.881,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.548,"tax":2.075,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":627.603,"expenses":632.06,"net_result":-6.93},

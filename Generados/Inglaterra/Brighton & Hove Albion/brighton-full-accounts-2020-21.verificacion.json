@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.md",
- "generado": "2026-10-19T17:11:10.546Z",
+ "generado": "2026-10-22T21:50:24.019Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "brighton-gb",
  "year": 2021,
@@ -21,6 +22,18 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (107.404, brighton-full-accounts-2020-21.md L1033) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una",
+   "evidencia": "brighton-full-accounts-2020-21.md L1033",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
   }
  ],
  "cola": [],
@@ -42,6 +55,11 @@
    "dif": 2.842170943040401e-14
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 123.89; el sitio tiene 123.291"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2021: 148.836 en este documento y 148.836 en brighton-full-accounts-2021-22.pdf (columna del año anterior)"
@@ -50,11 +68,6 @@
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 123.291 en brighton-full-accounts-2019-20.pdf y 123.89 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [

@@ -51,3 +51,9 @@ Todos en `Clubes/Inglaterra/Nottingham Forest/` (los PDF no se trackean; son esc
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2023 desde `Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.pdf` (sourceId `nottinghamforest-gb-full-accounts-2022-23`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2022 desde `Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf` (sourceId `nottinghamforest-gb-full-accounts-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2023 desde `Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.pdf` (sourceId `nottinghamforest-gb-full-accounts-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2023 desde `Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.pdf` (sourceId `nottinghamforest-gb-full-accounts-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2022 desde `Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf` (sourceId `nottinghamforest-gb-full-accounts-2021-22`).

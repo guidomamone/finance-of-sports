@@ -183,7 +183,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/West Ham United/westham-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -200,19 +200,17 @@ Generados/Inglaterra/West Ham United/westham-full-accounts-2021-22.categorias.js
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Administrative expenses | pág. 24, Jev 1 |
+| 1 | Administrative expenses (sin el costo de personal) | pág. 24, precedente |
+| 2 | Staff costs (total de la nota de personal) | pág. 24, precedente |
 
 ### Meta
 
 ```text
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 99.662,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de "Administrative expenses": queda 234.059,00 - 134.397,00
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 134.397,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de "Administrative expenses": el costo de personal va aparte
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2021
@@ -220,7 +218,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2021: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/West Ham United/westham-full-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -231,26 +229,24 @@ Generados/Inglaterra/West Ham United/westham-full-accounts-2020-21.categorias.js
 | 3 | Commercial activities | pág. 34, precedente |
 | 4 | Retail and merchandising | pág. 34, precedente |
 | 5 | Other operating income | pág. 25, precedente |
-| 6 | Profit on sale of players | pág. 36, Jev 1 |
-| 7 | Income from loan of players | pág. 36, Jev 0.99 |
+| 6 | Profit on sale of players | pág. 36, precedente |
+| 7 | Income from loan of players | pág. 36, precedente |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Administrative expenses | pág. 25, Jev 1 |
+| 1 | Administrative expenses (sin el costo de personal) | pág. 25, precedente |
+| 2 | Staff costs (total de la nota de personal) | pág. 25, precedente |
 
 ### Meta
 
 ```text
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items (1.443) ya está dentro de Administrative expenses ('Analysed as'): duplicaba el gasto
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 103.151,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2020-21.md L1370) está dentro de "Administrative expenses": queda 231.602,00 - 128.451,00
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 128.451,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2020-21.md L1370) está dentro de "Administrative expenses": el costo de personal va aparte
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2020-21.md L1370) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2020
@@ -258,7 +254,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2020: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2020: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/West Ham United/westham-full-accounts-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -269,25 +265,23 @@ Generados/Inglaterra/West Ham United/westham-full-accounts-2019-20.categorias.js
 | 3 | Commercial activities | pág. 32, precedente |
 | 4 | Retail and merchandising | pág. 32, precedente |
 | 5 | Other operating income | pág. 24, precedente |
-| 6 | Profit on sale of players | pág. 34, Jev 1 |
-| 7 | Income from loan of players | pág. 34, Jev 0.99 |
+| 6 | Profit on sale of players | pág. 34, precedente |
+| 7 | Income from loan of players | pág. 34, precedente |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Administrative expenses | pág. 24, Jev 1 |
+| 1 | Administrative expenses (sin el costo de personal) | pág. 24, precedente |
+| 2 | Staff costs (total de la nota de personal) | pág. 24, precedente |
 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2019–20 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 94.593,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de "Administrative expenses": queda 224.542,00 - 129.949,00
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 129.949,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de "Administrative expenses": el costo de personal va aparte
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## Fuentes

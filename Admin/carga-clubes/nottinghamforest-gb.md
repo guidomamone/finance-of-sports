@@ -123,7 +123,7 @@ pero cae enteramente dentro de la temporada 2024/25 de Premier League, sin ambig
 ### Ingresos
 
 ```text
-2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2023: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -140,19 +140,17 @@ Generados/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.ca
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Cost of sales | pág. 14, precedente |
-| 2 | Administrative expenses | pág. 14, Jev 1 |
-| 3 | Other operating expenses | pág. 14, Jev 1 |
+| 2 | Other operating expenses | pág. 14, Jev 1 |
+| 3 | Administrative expenses (sin el costo de personal) | pág. 14, precedente |
+| 4 | Staff costs (total de la nota de personal) | pág. 14, precedente |
 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Nottingham Forest".
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 58.228,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2022-23.md L936) está dentro de "Administrative expenses": queda 203.140,00 - 144.912,00
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 144.912,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2022-23.md L936) está dentro de "Administrative expenses": el costo de personal va aparte
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2022-23.md L936) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2022
@@ -160,7 +158,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -183,20 +181,18 @@ Generados/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.ca
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Cost of sales | pág. 13, precedente |
-| 2 | Administrative expenses | pág. 13, precedente |
-| 3 | Other operating (expenses)/income | pág. 13, Jev 1 |
+| 2 | Other operating (expenses)/income | pág. 13, Jev 1 |
+| 3 | Administrative expenses (sin el costo de personal) | pág. 13, precedente |
+| 4 | Staff costs (total de la nota de personal) | pág. 13, precedente |
 
 ### Meta
 
 ```text
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = -20. La extracción omitió esta fila del estado de resultados (L423, (20) en £000): sin ella el resultado da -45,59 y el impreso es -45,61
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-20): gb-championship, verificado contra roster cacheado de "2021–22 EFL Championship" (tools/club-league-reference/gb.json), coincidencia exacta "Nottingham Forest".
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 15.119,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2021-22.md L888) está dentro de "Administrative expenses": queda 73.684,00 - 58.565,00
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 58.565,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2021-22.md L888) está dentro de "Administrative expenses": el costo de personal va aparte
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2021-22.md L888) está dentro de "Administrative expenses": costo de personal -> wages_squad
+tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## Fuentes

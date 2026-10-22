@@ -54,13 +54,16 @@ const westhamGbRevenueLinesByYear = {
 
 const westhamGbExpenseLinesByYear = {
   2020: [
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-224.542,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-94.593,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-129.949,"disclosureLevel":"aggregated"},
   ],
   2021: [
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-231.602,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-103.151,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-128.451,"disclosureLevel":"aggregated"},
   ],
   2022: [
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-234.059,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-99.662,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-134.397,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Operating costs","normalizedCategory":"other_expenses","amountNative":-253.776,"disclosureLevel":"aggregated"},

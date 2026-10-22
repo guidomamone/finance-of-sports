@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "westham-gb",
@@ -90,7 +90,22 @@
         {"label":"Profit on sale of players","category":"player_transfers","subcategory":"player_sales","amount":22.833,"disclosure":"aggregated"},
         {"label":"Income from loan of players","category":"player_transfers","subcategory":"player_sales","amount":2.1,"disclosure":"aggregated"}
       ],
-      "expenses": [{"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-224.542,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -94.593,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -129.949,
+          "disclosure": "aggregated"
+        }
+      ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.134,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":164.932,"expenses":224.542,"net_result":-64.744},
       "adjustments": {
@@ -130,7 +145,22 @@
         {"label":"Profit on sale of players","category":"player_transfers","subcategory":"player_sales","amount":17.436,"disclosure":"aggregated"},
         {"label":"Income from loan of players","category":"player_transfers","subcategory":"player_sales","amount":0.148,"disclosure":"aggregated"}
       ],
-      "expenses": [{"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-231.602,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -103.151,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -128.451,
+          "disclosure": "aggregated"
+        }
+      ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.647,"tax":0.397,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":214.116,"expenses":231.602,"net_result":-25.736},
       "adjustments": {
@@ -169,7 +199,22 @@
         {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":2.406,"disclosure":"aggregated"},
         {"label":"Profit on disposal of players","category":"player_transfers","subcategory":"player_sales","amount":0.709,"disclosure":"aggregated"}
       ],
-      "expenses": [{"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-234.059,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Administrative expenses (sin el costo de personal)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -99.662,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Staff costs (total de la nota de personal)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -134.397,
+          "disclosure": "aggregated"
+        }
+      ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.532,"tax":-1.748,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":254.906,"expenses":234.059,"net_result":11.567},
       "adjustments": {

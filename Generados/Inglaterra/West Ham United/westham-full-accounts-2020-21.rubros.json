@@ -1,90 +1,91 @@
 {
-  "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.md",
-  "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.pdf",
-  "club": "westham-gb",
-  "year": 2021,
-  "generatedAt": "2026-10-20T17:50:59.443Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Match receipts and related football activities",
-      "lado": "revenue",
-      "page": 34,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        0.275
-      ],
-      "glosa": "Ingresos por taquilla y actividades futbolísticas relacionadas"
-    },
-    {
-      "label": "Broadcast and central sponsorship distributions",
-      "lado": "revenue",
-      "page": 34,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        163.104
-      ],
-      "glosa": "Distribuciones por retransmisión y patrocinios centrales"
-    },
-    {
-      "label": "Commercial activities",
-      "lado": "revenue",
-      "page": 34,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        19.045
-      ],
-      "glosa": "Actividades comerciales"
-    },
-    {
-      "label": "Retail and merchandising",
-      "lado": "revenue",
-      "page": 34,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        9.672
-      ],
-      "glosa": "Comercio minorista y merchandising"
-    },
-    {
-      "label": "Other operating income",
-      "lado": "revenue",
-      "page": 25,
-      "section": "estado",
-      "values": [
-        4.436
-      ],
-      "glosa": "Otros ingresos de explotación"
-    },
-    {
-      "label": "Profit on sale of players",
-      "lado": "revenue",
-      "page": 36,
-      "section": "nota que desglosa \"Profit on disposal of players\"",
-      "values": [
-        17.436
-      ],
-      "glosa": "Beneficio por venta de jugadores"
-    },
-    {
-      "label": "Income from loan of players",
-      "lado": "revenue",
-      "page": 36,
-      "section": "nota que desglosa \"Profit on disposal of players\"",
-      "values": [
-        0.148
-      ],
-      "glosa": "Ingresos por cesión de jugadores"
-    },
-    {
-      "label": "Administrative expenses",
-      "lado": "expense",
-      "page": 25,
-      "section": "estado",
-      "values": [
-        231.602
-      ],
-      "glosa": "Gastos de administración"
-    }
-  ]
+ "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.md",
+ "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.pdf",
+ "club": "westham-gb",
+ "year": 2021,
+ "generatedAt": "2026-10-22T21:38:18.831Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Match receipts and related football activities",
+   "lado": "revenue",
+   "page": 34,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    0.275
+   ]
+  },
+  {
+   "label": "Broadcast and central sponsorship distributions",
+   "lado": "revenue",
+   "page": 34,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    163.104
+   ]
+  },
+  {
+   "label": "Commercial activities",
+   "lado": "revenue",
+   "page": 34,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    19.045
+   ]
+  },
+  {
+   "label": "Retail and merchandising",
+   "lado": "revenue",
+   "page": 34,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    9.672
+   ]
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "values": [
+    4.436
+   ]
+  },
+  {
+   "label": "Profit on sale of players",
+   "lado": "revenue",
+   "page": 36,
+   "section": "nota que desglosa \"Profit on disposal of players\"",
+   "values": [
+    17.436
+   ]
+  },
+  {
+   "label": "Income from loan of players",
+   "lado": "revenue",
+   "page": 36,
+   "section": "nota que desglosa \"Profit on disposal of players\"",
+   "values": [
+    0.148
+   ]
+  },
+  {
+   "label": "Administrative expenses (sin el costo de personal)",
+   "lado": "expense",
+   "page": 25,
+   "section": "ajuste manual",
+   "values": [
+    103.151
+   ]
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 25,
+   "section": "ajuste manual",
+   "values": [
+    128.451
+   ]
+  }
+ ]
 }

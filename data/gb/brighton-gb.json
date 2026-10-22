@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "brighton-gb",
@@ -94,7 +94,8 @@
           {"label":"Interest receivable and similar income","amount":0.015},
           {"label":"Interest payable and similar charges","amount":-3.301},
           {"label":"Tax on loss","amount":null}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -124,7 +125,8 @@
           {"label":"Interest receivable and similar income","amount":0.005},
           {"label":"Interest payable and similar charges","amount":-3.036},
           {"label":"Tax on loss","amount":null}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -154,7 +156,8 @@
           {"label":"Interest receivable and similar income","amount":3.287},
           {"label":"Interest payable and similar charges","amount":-1.379},
           {"label":"Tax on profit/(loss)","amount":null}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {

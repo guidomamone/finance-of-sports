@@ -1583,7 +1583,8 @@ function checkCategorizacion(api) {
     const SUELDOS = Object.keys(tx.expense).find(k => tx.expense[k] === 'first_team_staff'); const BOLSON = (tx.lump || {}).expense;
     // Un ejercicio placeholder tiene sus líneas en cero: no es que falten los sueldos,
     // es que no hay datos todavía. Solo se mira donde hay plata cargada.
-    if (SUELDOS && sum(exp) !== 0 && cat(SUELDOS) === 0 && (!BOLSON || cat(BOLSON) === 0)) {
+    // (TODO 351) Los sueldos marcados «incluidos en» otra fila (`incluye`, el documento no permite separarlos) están resueltos: el sitio lo dice en la fila.
+    if (SUELDOS && sum(exp) !== 0 && cat(SUELDOS) === 0 && (!BOLSON || cat(BOLSON) === 0) && !(ym && ym.incluidoEn && ym.incluidoEn[SUELDOS])) {
       add('P2', 'sin-salarios', `${ref(clubId, year)}: no hay ni una línea en '${SUELDOS}' ni un bolsón sin desglosar — todo club paga sueldos, probablemente quedaron enterrados en otra categoría`);
     }
     // SUELDOS POSIBLEMENTE ESCONDIDOS (to-do 232 s): con el costo de personal del ejercicio ya leído de su nota (fiscalYearMeta.staffCost,

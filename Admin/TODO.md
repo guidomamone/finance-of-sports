@@ -23,15 +23,13 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 
 ## A. En marcha
 
-### 1. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
+### 1. 351 · (Onboarding): sueldos de los británicos y de Instituto 2025 que siguen sin separar (quedan 20 club-años)
 
-SUELDOS ADENTRO DE UNA SOLA LÍNEA (Auditora 4, 3ª corrida de P2 y P3, 2026-10-21). 12 británicos (Aston Villa, Brentford, Brighton,
-Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves; 47 club-años con el estado por función),
-los 10 británicos nuevos del 356 (sus sueldos entraron con `incluye wages_squad --posible` en `other_expenses`; se parten con
-`caja-deuda --personal`) e Instituto 2025 (anexo de remuneraciones cargado entero en gastos generales). Cómo:
-`Admin/Archive/sesion-ligas-2026-10-21.md`, tercera corrida. Corrige datos publicados: trailer `Corrige:`.
+HECHO (2026-10-22): de los 58 club-años con aviso `sin-salarios`, 38 quedaron resueltos: 12 con el sueldo partido de «Administrative expenses» (Leeds 2019-23, Liverpool 2022-23, Nottingham Forest 2022-23, West Ham 2020-22), 17 marcados «posiblemente dentro de…» donde el estado por función reparte los sueldos (Brentford 2022-23, Brighton 2020-22, Newcastle 2020-22, Sunderland 2019-23, Wolves 2020-23; todo con `tools/caja-deuda.mjs --personal --partir --escribir`) y 9 de los británicos nuevos del 356, que ya estaban marcados y ahora `audit.js` acepta. Se agregó la compuerta de plausibilidad (menos de 15 % de los ingresos no se usa), el respaldo `incluye`, la cadena entera sola (ajustes → verificar → Jev → Claude → cargar) y se arregló un defecto: el segundo año de un club figuraba como «ya tiene los ajustes». `audit.js` acepta la marca `incluye` sobre los sueldos como resuelto. Las recargas reaplican todo desde `Admin/registros/ajustes-manuales.jsonl`.
+QUEDAN (hay que leer el documento): Aston Villa 2019-22 (los documentos son de la sociedad filial: la nota de personal de 8 M£ no incluye a los jugadores; hay que ver si el consolidado del grupo NSWE trae el costo de personal del club o si los sueldos están en otra entidad), Celtic 2021-25 (sin filas de total), Fulham 2021-23 (el total de la nota da 0,1 % de los ingresos: tabla en £m), Newcastle 2019/2023/2024, Brighton 2023, West Ham 2023-24 («no coincide con el documento siguiente») e Instituto 2025 (anexo de remuneraciones en gastos generales) y Novorizontino 2010 (aviso viejo, no es de la serie británica). Para cada uno: leer la nota «Staff costs» del documento, cargar el total con `ajustes.mjs --agregar … fila` o ajustar la compuerta si es un formato nuevo; corre `caja-deuda.mjs --personal --club <id> --ejecutar --partir --escribir` y mira lo que dice.
+QUEDA DE PIPELINE: enganchar este paso al cierre de una carga de un club con aviso `sin-salarios` (hoy una sesión lo corre a mano; la cadena ya existe y está probada con 38 club-años). Corrige datos publicados: trailer `Corrige:`.
 
-Verificar: manual
+Verificar: audit sin-salarios = 0
 
 ### 2. 350 · (Auditora, al final de A): revisar con Guido la fila nueva y el proceso de revisión de categorías
 

@@ -1,80 +1,82 @@
 {
-  "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md",
-  "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
-  "club": "westham-gb",
-  "year": 2022,
-  "generatedAt": "2026-10-20T18:11:40.677Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Match receipts and related football activities",
-      "lado": "revenue",
-      "page": 33,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        40.852
-      ],
-      "glosa": "Ingresos por taquilla y actividades futbolísticas relacionadas"
-    },
-    {
-      "label": "Broadcast and central sponsorship distributions",
-      "lado": "revenue",
-      "page": 33,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        163.62
-      ],
-      "glosa": "Ingresos por retransmisión y patrocinios centralizados"
-    },
-    {
-      "label": "Commercial activities",
-      "lado": "revenue",
-      "page": 33,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        34.266
-      ],
-      "glosa": "Actividades comerciales"
-    },
-    {
-      "label": "Retail and merchandising",
-      "lado": "revenue",
-      "page": 33,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        13.053
-      ],
-      "glosa": "Venta minorista y merchandising"
-    },
-    {
-      "label": "Other operating income",
-      "lado": "revenue",
-      "page": 24,
-      "section": "estado",
-      "values": [
-        2.406
-      ],
-      "glosa": "Otros ingresos de explotación"
-    },
-    {
-      "label": "Profit on disposal of players",
-      "lado": "revenue",
-      "page": 24,
-      "section": "estado",
-      "values": [
-        0.709
-      ],
-      "glosa": "Beneficio por traspaso de jugadores"
-    },
-    {
-      "label": "Administrative expenses",
-      "lado": "expense",
-      "page": 24,
-      "section": "estado",
-      "values": [
-        234.059
-      ],
-      "glosa": "Gastos de administración"
-    }
-  ]
+ "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md",
+ "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
+ "club": "westham-gb",
+ "year": 2022,
+ "generatedAt": "2026-10-22T21:38:18.846Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Match receipts and related football activities",
+   "lado": "revenue",
+   "page": 33,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    40.852
+   ]
+  },
+  {
+   "label": "Broadcast and central sponsorship distributions",
+   "lado": "revenue",
+   "page": 33,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    163.62
+   ]
+  },
+  {
+   "label": "Commercial activities",
+   "lado": "revenue",
+   "page": 33,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    34.266
+   ]
+  },
+  {
+   "label": "Retail and merchandising",
+   "lado": "revenue",
+   "page": 33,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    13.053
+   ]
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 24,
+   "section": "estado",
+   "values": [
+    2.406
+   ]
+  },
+  {
+   "label": "Profit on disposal of players",
+   "lado": "revenue",
+   "page": 24,
+   "section": "estado",
+   "values": [
+    0.709
+   ]
+  },
+  {
+   "label": "Administrative expenses (sin el costo de personal)",
+   "lado": "expense",
+   "page": 24,
+   "section": "ajuste manual",
+   "values": [
+    99.662
+   ]
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 24,
+   "section": "ajuste manual",
+   "values": [
+    134.397
+   ]
+  }
+ ]
 }

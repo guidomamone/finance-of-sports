@@ -55,3 +55,9 @@ Todos en `Clubes/Inglaterra/Newcastle United/` (los PDF no se trackean; son esca
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2019 desde `Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.pdf` (sourceId `newcastle-gb-group-accounts-2018-19`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2021 desde `Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf` (sourceId `newcastle-gb-group-accounts-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2020 desde `Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.pdf` (sourceId `newcastle-gb-group-accounts-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2021 desde `Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf` (sourceId `newcastle-gb-group-accounts-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-22): ejercicio 2022 desde `Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.pdf` (sourceId `newcastle-gb-group-accounts-2021-22`).

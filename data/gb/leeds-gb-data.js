@@ -70,26 +70,31 @@ const leedsGbRevenueLinesByYear = {
 const leedsGbExpenseLinesByYear = {
   2019: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-9.970908,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-75.099771,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-28.938179,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-46.161592,"disclosureLevel":"aggregated"},
   ],
   2020: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-13.885858,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-108.398516,"disclosureLevel":"aggregated"},
     {"rawLabel":"Television and broadcasting rebate","normalizedCategory":"other_expenses","amountNative":-7,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-30.10806,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-78.290456,"disclosureLevel":"aggregated"},
   ],
   2021: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-14.654409,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-151.985475,"disclosureLevel":"aggregated"},
     {"rawLabel":"Settlement of transfer dispute","normalizedCategory":"exceptional_items","amountNative":-15.555435,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-43.732796,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-108.252679,"disclosureLevel":"aggregated"},
   ],
   2022: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-20.174675,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-203.502431,"disclosureLevel":"aggregated"},
     {"rawLabel":"Settlement of transfer dispute","normalizedCategory":"exceptional_items","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-82.096852,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-121.405579,"disclosureLevel":"aggregated"},
   ],
   2023: [
     {"rawLabel":"Cost of sales","normalizedCategory":"other_expenses","amountNative":-20.577557,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Administrative expenses","normalizedCategory":"admin_general_expense","amountNative":-275.080123,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrative expenses (sin el costo de personal)","normalizedCategory":"admin_general_expense","amountNative":-129.223027,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Staff costs (total de la nota de personal)","normalizedCategory":"wages_squad","amountNative":-145.857096,"disclosureLevel":"aggregated"},
   ],
   2024: [
     {"rawLabel":"Staff costs","normalizedCategory":"wages_squad","amountNative":-84.030436,"disclosureLevel":"detailed"},

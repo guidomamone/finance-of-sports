@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf",
  "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.md",
- "generado": "2026-10-20T18:14:06.508Z",
+ "generado": "2026-10-22T21:38:18.647Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "leeds-gb",
  "year": 2019,
@@ -11,7 +12,45 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf",
+   "campo": "fila",
+   "valor": "28.938.179,00",
+   "linea": 364,
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Administrative expenses",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2018-19.md L836) está dentro de \"Administrative expenses\": queda 75.099.771,00 - 46.161.592,00",
+   "evidencia": "leeds-group-accounts-2018-19.md L836",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf",
+   "campo": "fila",
+   "valor": "46.161.592,00",
+   "linea": 364,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2018-19.md L836) está dentro de \"Administrative expenses\": el costo de personal va aparte",
+   "evidencia": "leeds-group-accounts-2018-19.md L836",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2018-19.md L836) está dentro de \"Administrative expenses\": costo de personal -> wages_squad",
+   "evidencia": "leeds-group-accounts-2018-19.md L836",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -28,7 +67,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 1.0658141036401503e-14
+   "dif": 3.552713678800501e-15
   },
   {
    "nombre": "documento del año 2020",
@@ -42,7 +81,9 @@
   }
  ],
  "notas": [
-  "la nota de \"Administrative expenses\" no suma el renglón (46.161592 contra 75.099771, sumando sus renglones): quedó el renglón del estado"
+  "la nota de \"Administrative expenses\" no suma el renglón (46.161592 contra 75.099771, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 28.938.179,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2018-19.md L836) está dentro de \"Administrative expenses\": queda 75.099.771,00 - 46.161.592,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 46.161.592,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2018-19.md L836) está dentro de \"Administrative expenses\": el costo de personal va aparte)"
  ],
  "reintentar": null,
  "reintentado": true,
@@ -137,12 +178,20 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Administrative expenses",
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
    "lado": "gasto",
-   "M": 75.099771,
+   "M": 28.938179,
    "pagina": 10,
    "linea": 364,
-   "origen": "estado"
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 46.161592,
+   "pagina": 10,
+   "linea": 364,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

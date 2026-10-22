@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-22",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "newcastle-gb",
@@ -148,7 +148,8 @@
           {"label":"Interest receivable and similar income","amount":1.87},
           {"label":"Interest payable and expenses","amount":-0.108},
           {"label":"Tax on (loss)/profit","amount":3.432}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -195,7 +196,8 @@
           {"label":"Interest receivable and similar income","amount":0.385},
           {"label":"Interest payable and expenses","amount":-0.29},
           {"label":"Taxation","amount":1.43}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -249,7 +251,8 @@
           {"label":"Interest receivable and similar income","amount":0.186},
           {"label":"Interest payable and expenses","amount":-1.389},
           {"label":"Taxation","amount":2.217}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {

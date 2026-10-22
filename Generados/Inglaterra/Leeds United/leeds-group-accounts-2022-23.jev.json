@@ -1,8 +1,71 @@
 {
  "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.md",
- "generatedAt": "2026-10-20T17:55:35.557Z",
- "rubrosHuella": "de8d98f32acb6a290d45fc6fa9490cb2d269cd31",
+ "generatedAt": "2026-10-22T21:38:19.323Z",
+ "rubrosHuella": "f56de4d4c19b2c04228ab13ea7a06e06db6e616c",
  "rubros": [
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Television and broadcasting income",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Merchandising income",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Central distributions",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other commercial revenue",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Catering income",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Educational services",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "education",
+   "confidence": 1,
+   "desdeCache": true
+  },
   {
    "label": "Gain on disposal of players' registrations",
    "lado": "revenue",
@@ -22,174 +85,22 @@
    "desdeCache": true
   },
   {
-   "label": "Administrative expenses",
+   "label": "Administrative expenses (sin el costo de personal)",
    "lado": "expense",
    "page": 13,
-   "section": "estado",
+   "section": "ajuste manual",
    "choice": "admin_general_expense",
-   "confidence": 1,
+   "confidence": 0.96,
    "desdeCache": true
   },
   {
-   "label": "Educational services",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Turnover\"",
-   "choice": "education",
-   "confidence": 1,
-   "top3": [
-    [
-     "education",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1019
-  },
-  {
-   "label": "Merchandising income",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Turnover\"",
-   "choice": "sponsorship_commercial",
-   "confidence": 1,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1030
-  },
-  {
-   "label": "Gate receipts",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Turnover\"",
-   "choice": "matchday_competition",
-   "confidence": 1,
-   "top3": [
-    [
-     "matchday_competition",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1024
-  },
-  {
-   "label": "Other commercial revenue",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Turnover\"",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     0.99
-    ],
-    [
-     "other_income",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1013
-  },
-  {
-   "label": "Television and broadcasting income",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Turnover\"",
-   "choice": "broadcasting",
-   "confidence": 1,
-   "top3": [
-    [
-     "broadcasting",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1056
-  },
-  {
-   "label": "Catering income",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Turnover\"",
-   "choice": "other_income",
-   "confidence": 0.9,
-   "top3": [
-    [
-     "other_income",
-     0.91
-    ],
-    [
-     "stadium_other",
-     0.09
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1024
-  },
-  {
-   "label": "Central distributions",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Turnover\"",
-   "choice": "broadcasting",
-   "confidence": 1,
-   "top3": [
-    [
-     "broadcasting",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1015
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 13,
+   "section": "ajuste manual",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
   }
  ]
 }

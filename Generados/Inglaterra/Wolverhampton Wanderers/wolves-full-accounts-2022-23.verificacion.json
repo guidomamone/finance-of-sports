@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2022-23.pdf",
  "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2022-23.md",
- "generado": "2026-10-20T18:14:07.227Z",
+ "generado": "2026-10-22T21:58:18.010Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "wolves-gb",
  "year": 2023,
@@ -11,7 +12,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2022-23.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (141.599, wolves-full-accounts-2022-23.md L1096) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una",
+   "evidencia": "wolves-full-accounts-2022-23.md L1096",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -38,14 +52,14 @@
    "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 183.377; el sitio tiene 183.377"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 183.377 en wolves-full-accounts-2021-22.pdf y 183.377 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [

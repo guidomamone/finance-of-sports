@@ -1,150 +1,145 @@
 {
-  "md": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.md",
-  "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
-  "club": "nottinghamforest-gb",
-  "year": 2022,
-  "generatedAt": "2026-10-20T18:26:00.661Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Sponsorship and advertising",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        2.689
-      ],
-      "glosa": "Patrocinio y publicidad"
-    },
-    {
-      "label": "Catering",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        0.141
-      ],
-      "glosa": "Restauración y catering"
-    },
-    {
-      "label": "Grants & royalties",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        10.143
-      ],
-      "glosa": "Subvenciones y regalías"
-    },
-    {
-      "label": "TV & radio",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        2.016
-      ],
-      "glosa": "Televisión y radio"
-    },
-    {
-      "label": "Ticket & membership sales",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        8.227
-      ],
-      "glosa": "Venta de abonos y entradas"
-    },
-    {
-      "label": "Commercial",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        1.925
-      ],
-      "glosa": "Ingresos comerciales"
-    },
-    {
-      "label": "Programme & other match day income",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        0.484
-      ],
-      "glosa": "Venta de programas y otros ingresos de día de partido"
-    },
-    {
-      "label": "Other non match day income",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        0.036
-      ],
-      "glosa": "Otros ingresos no relacionados con día de partido"
-    },
-    {
-      "label": "Players",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        0.473
-      ],
-      "glosa": "Jugadores"
-    },
-    {
-      "label": "Retail",
-      "lado": "revenue",
-      "page": 24,
-      "section": "nota que desglosa \"Turnover\"",
-      "values": [
-        3.549
-      ],
-      "glosa": "Venta al por menor"
-    },
-    {
-      "label": "Profit on disposal of player registrations",
-      "lado": "revenue",
-      "page": 13,
-      "section": "estado",
-      "values": [
-        4.084
-      ],
-      "glosa": "Beneficio por enajenación de derechos federativos de jugadores"
-    },
-    {
-      "label": "Cost of sales",
-      "lado": "expense",
-      "page": 13,
-      "section": "estado",
-      "values": [
-        5.512
-      ],
-      "glosa": "Coste de ventas"
-    },
-    {
-      "label": "Administrative expenses",
-      "lado": "expense",
-      "page": 13,
-      "section": "estado",
-      "values": [
-        73.684
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Other operating (expenses)/income",
-      "lado": "expense",
-      "page": 13,
-      "section": "ajuste manual",
-      "values": [
-        0.02
-      ],
-      "glosa": "Otros (gastos)/ingresos de explotación"
-    }
-  ]
+ "md": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.md",
+ "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
+ "club": "nottinghamforest-gb",
+ "year": 2022,
+ "generatedAt": "2026-10-22T21:38:18.794Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Sponsorship and advertising",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    2.689
+   ]
+  },
+  {
+   "label": "Catering",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    0.141
+   ]
+  },
+  {
+   "label": "Grants & royalties",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    10.143
+   ]
+  },
+  {
+   "label": "TV & radio",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    2.016
+   ]
+  },
+  {
+   "label": "Ticket & membership sales",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    8.227
+   ]
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    1.925
+   ]
+  },
+  {
+   "label": "Programme & other match day income",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    0.484
+   ]
+  },
+  {
+   "label": "Other non match day income",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    0.036
+   ]
+  },
+  {
+   "label": "Players",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    0.473
+   ]
+  },
+  {
+   "label": "Retail",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "values": [
+    3.549
+   ]
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "values": [
+    4.084
+   ]
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "values": [
+    5.512
+   ]
+  },
+  {
+   "label": "Other operating (expenses)/income",
+   "lado": "expense",
+   "page": 13,
+   "section": "ajuste manual",
+   "values": [
+    0.02
+   ]
+  },
+  {
+   "label": "Administrative expenses (sin el costo de personal)",
+   "lado": "expense",
+   "page": 13,
+   "section": "ajuste manual",
+   "values": [
+    15.119
+   ]
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 13,
+   "section": "ajuste manual",
+   "values": [
+    58.565
+   ]
+  }
+ ]
 }

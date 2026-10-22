@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2021-22.pdf",
  "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2021-22.md",
- "generado": "2026-10-20T18:11:40.520Z",
+ "generado": "2026-10-22T21:54:30.714Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "sunderland-gb",
  "year": 2022,
@@ -11,7 +12,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2021-22.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (16.143, sunderland-full-accounts-2021-22.md L882) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una",
+   "evidencia": "sunderland-full-accounts-2021-22.md L882",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -36,6 +50,11 @@
    "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 11.909; el sitio tiene 11.909"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2022: 27.135 en este documento y 27.135 en sunderland-full-accounts-2022-23.pdf (columna del año anterior)"
@@ -44,11 +63,6 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 11.909 en sunderland-full-accounts-2020-21.pdf y 11.909 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

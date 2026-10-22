@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
  "md": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.md",
- "generado": "2026-10-20T18:26:00.661Z",
+ "generado": "2026-10-22T21:38:18.794Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "nottinghamforest-gb",
  "year": 2022,
@@ -24,6 +25,43 @@
    "evidencia": "pág. 13 del visor, .md L423",
    "autor": "Claude",
    "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "15.119,00",
+   "linea": 422,
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Administrative expenses",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2021-22.md L888) está dentro de \"Administrative expenses\": queda 73.684,00 - 58.565,00",
+   "evidencia": "nottinghamforest-full-accounts-2021-22.md L888",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "58.565,00",
+   "linea": 422,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2021-22.md L888) está dentro de \"Administrative expenses\": el costo de personal va aparte",
+   "evidencia": "nottinghamforest-full-accounts-2021-22.md L888",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2021-22.md L888) está dentro de \"Administrative expenses\": costo de personal -> wages_squad",
+   "evidencia": "nottinghamforest-full-accounts-2021-22.md L888",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
   }
  ],
  "cola": [],
@@ -57,6 +95,8 @@
  ],
  "notas": [
   "ajuste manual: fila \"Other operating (expenses)/income\" (gasto) -20 (2026-10-20, La extracción omitió esta fila del estado de resultados (L423, (20) en £000): sin ella el resultado da -45,59 y el impreso es -45,61)",
+  "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 15.119,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2021-22.md L888) está dentro de \"Administrative expenses\": queda 73.684,00 - 58.565,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 58.565,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, nottinghamforest-full-accounts-2021-22.md L888) está dentro de \"Administrative expenses\": el costo de personal va aparte)",
   "duda de localizar que no afecta la carga: La columna comparativa es '13 Months ended 30 June 2021'.",
   "duda de extraer que no afecta la carga: El costo de personal de b11 (L888) no coincide con ningún renglón del estado; no hay una fila específica de salarios del plantel, solo 'Wages and salaries' (L885) del total del personal.",
   "duda de extraer que no afecta la carga: La nota 7 lista cargos incluidos en el resultado operativo, no un desglose que sume a un renglón (L917)."
@@ -172,19 +212,27 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Administrative expenses",
-   "lado": "gasto",
-   "M": 73.684,
-   "pagina": 13,
-   "linea": 422,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Other operating (expenses)/income",
    "lado": "gasto",
    "M": 0.02,
    "pagina": 13,
    "linea": 423,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Administrative expenses (sin el costo de personal)",
+   "lado": "gasto",
+   "M": 15.119,
+   "pagina": 13,
+   "linea": 422,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 58.565,
+   "pagina": 13,
+   "linea": 422,
    "origen": "ajuste manual"
   }
  ],

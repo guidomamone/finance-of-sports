@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md",
- "generado": "2026-10-20T19:31:08.209Z",
+ "generado": "2026-10-22T21:52:24.783Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "newcastle-gb",
  "year": 2021,
@@ -21,6 +22,18 @@
    "evidencia": "estado de resultados, pág. 13 del visor",
    "autor": "Claude",
    "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (106.829, newcastle-group-accounts-2020-21.md L1360) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una",
+   "evidencia": "newcastle-group-accounts-2020-21.md L1360",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
   }
  ],
  "cola": [],

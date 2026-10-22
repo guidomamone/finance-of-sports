@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2018-19.pdf",
  "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2018-19.md",
- "generado": "2026-10-20T18:14:06.901Z",
+ "generado": "2026-10-22T21:54:30.672Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "sunderland-gb",
  "year": 2019,
@@ -11,7 +12,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2018-19.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (26.668, sunderland-full-accounts-2018-19.md L669) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una",
+   "evidencia": "sunderland-full-accounts-2018-19.md L669",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-22"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
