@@ -18,10 +18,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 942 — La url del registro oficial se pone sola; decisiones con su aplicación; 352 medido (2026-10-21) [352]
+
+- `tools/fuente-url-xhtml.mjs` (reemplaza a `fuente-companies-house.mjs`): cubre Reino Unido (Companies House) y Dinamarca (Virk), elige el XHTML del club por la evidencia de carga (hay muchos `aarsrapport-2021-12-31.xhtml` de clubes distintos) y comprueba que los hechos etiquetados coincidan con el archivo local. `publicarCambios()` de `cargar.mjs` la corre con `--todos --escribir` al cerrar toda carga, alta o caja y deuda: nadie tiene que acordarse. Probada contra las 13 fuentes XHTML cargadas: coinciden 12; FC København 2025 no (su informe de grupo es el que el conversor deja afuera).
+- `tools/decision.mjs`: registra una decisión en `Admin/registros/auditoria-proceso.jsonl` (el JSON lo arma la tool) y, con `--punto <id> --aplicar "paso"`, copia los pasos al cuerpo del punto del TODO. La regla está en la skill `auditoria-finance-of-sports` (P2 y P3, paso 3).
+- 352: `tools/medir-ixbrl-consolidado.mjs`. De los 317 XHTML, 37 traen un `ProfitLoss` de grupo y solo Burnley 2024-25 está cargado (coincide); sin minoritarios cargados, el consolidado sigue como aviso. Condición para retomar (un número que imprime la tool) en `Admin/HALLAZGOS-pipeline.md`; decisión de la Auditora registrada.
+- Se sacó de `CLAUDE.md` la regla de reportar `.md` tocados y leídos en vano: era de esta sesión.
+
 ## Versión 941 — P2 y P3: fixes aprobados codeados y novena corrida (2026-10-21) [347]
 
 - `audit.js`, los fixes aprobados por la Auditora 5: `signo-invertido` no se emite si el lado del ejercicio cierra contra su total oficial, y sin total oficial es P3 (P2 20 → 0); `escala-implausible` sin la rama P3 de año vecino (P3 5 → 0, el P0 igual); `salto-interanual` solo entre años a 2 de distancia como mucho, y `cambio-de-formato` (P3) cuando un año imprime solo el margen bruto belga (P2 4 → 0; Novorizontino 2010-2012 verificado contra el documento y silenciado). `outlier-liga` y `gestion-club-inexistente` ya estaban codeados: el punto estaba desactualizado (premisa vencida). Totales: P2 86 → 62, P3 192 → 174; el resto de la salida idéntico (antes y después con `--json`).
-- Novena corrida, `fuente-xhtml-sin-url` (P3 7 → 0): las 7 fuentes iXBRL británicas ya llevan la url de Companies House. `tools/fuente-companies-house.mjs` la busca por número de empresa y cierre y comprueba que el XHTML publicado tenga los mismos hechos etiquetados que el archivo local; el aviso de `audit.js` la nombra.
+- Novena corrida, `fuente-xhtml-sin-url` (P3 7 → 0): las 7 fuentes iXBRL británicas ya llevan la url de Companies House. `tools/fuente-url-xhtml.mjs` la busca por número de empresa y cierre y comprueba que el XHTML publicado tenga los mismos hechos etiquetados que el archivo local; el aviso de `audit.js` la nombra.
 - `audit.js` avisa `audit-ignore-sin-uso` (P3) y `--podar-ignore` las saca: salieron 116 de las 179 entradas de `tools/audit-ignore.json`, que ya no silenciaban nada (la mayoría `signo-invertido`).
 - Registrado en `Admin/registros/auditoria-proceso.jsonl` (sesión única). Condiciones nuevas en una tool revisadas por la propia sesión, sin revisión independiente. Quedan para otros puntos: `catchall-dominante` (350), `sin-salarios` (351), `liga-una-fuente` (HALLAZGOS).
 

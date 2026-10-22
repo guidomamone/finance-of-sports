@@ -114,7 +114,7 @@ export function xhtmlDelMismoEmisor(dir, mdTexto) {
 
 // Compara con lo cargado (en millones). -> { avisos: [texto], caso: texto|null, frena: bool }
 // FRENAZO (to-do 352, Auditora 5): `frena` solo si el hecho es único («ok»), la diferencia pasa la tolerancia y lo cargado es INDIVIDUAL (medido: 9 clubes, 0 falsos). En el
-// consolidado sigue siendo aviso y caso en la cola hasta medir dos años consolidados de clubes distintos, uno con minoritarios (el ProfitLoss de un grupo IFRS incluye la
+// consolidado sigue siendo aviso y caso en la cola hasta que `node tools/medir-ixbrl-consolidado.mjs` diga que se puede decidir: dos años consolidados de clubes distintos, uno con minoritarios (el ProfitLoss de un grupo IFRS incluye la
 // parte no controladora y lo cargado puede ser la atribuible). «ambiguo», «solo-matriz», «sin-hecho», «formato» y «perímetro» nunca frenan.
 export function chequearIxbrl(ix, { resultadoM, ingresosM, perimetro }) {
   const avisos = []; let caso = null; const r = ix.resultado;

@@ -1083,8 +1083,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   P.totales = T;
 
   // 6c. (to-do 345, Auditora 5) SEGUNDA LECTURA del resultado, independiente del texto: el `ProfitLoss` etiquetado en el XHTML del que salió este .md (solo el hermano del mismo cierre).
-  // (to-do 352, Auditora 5) Perímetro INDIVIDUAL: si no coincide, FRENA (medido: 9 clubes, 0 falsos frenos). CONSOLIDADO: sigue siendo AVISO y una fila en la cola, hasta medir dos
-  // años consolidados de clubes distintos, uno con minoritarios. Un hecho ambiguo, de la matriz o que no está nunca frena. Se apaga con el ajuste `ixbrl-omitir`, con su motivo.
+  // (to-do 352, Auditora 5) Perímetro INDIVIDUAL: si no coincide, FRENA (medido: 9 clubes, 0 falsos frenos). CONSOLIDADO: sigue siendo AVISO y una fila en la cola, hasta que
+  // `node tools/medir-ixbrl-consolidado.mjs` diga que se puede decidir (dos años consolidados de clubes distintos, uno con minoritarios). Un hecho ambiguo, de la matriz o que no está nunca frena. Se apaga con el ajuste `ixbrl-omitir`, con su motivo.
   try {
     // el XHTML de donde salió este .md (su hermano, con el encabezado de xhtml-aarsrapport.mjs) o, si el año salió de un PDF, un XHTML de la carpeta del club del MISMO emisor (su identificador está en el .md)
     // y del mismo cierre (lo exige el contexto del hecho): una segunda lectura independiente del PDF (Auditora 5). El perímetro es el de esta carga: sin él, no compara.
@@ -1256,6 +1256,10 @@ export function publicarCambios(snap, extra, escritos) {
     writeFileSync(idxPath, idx.replace(`window.ASSET_V = '${actual}'`, `window.ASSET_V = '${nuevo}'`).replace(new RegExp(`\\?v=${esc}(?=["'])`, 'g'), `?v=${nuevo}`));
     escritos.push(`index.html (ASSET_V ${actual} -> ${nuevo})`);
   }
+  // la url del registro oficial de los informes XHTML que quedaron sin ella (Companies House, Virk): sola, para que nadie tenga que acordarse. No frena: si no la
+  // encuentra o el informe no coincide con el archivo local, no escribe nada y el aviso `fuente-xhtml-sin-url` de audit.js queda.
+  const urlXhtml = runNode('tools/fuente-url-xhtml.mjs', ['--todos', '--escribir']);
+  if (/url escritas/.test(urlXhtml.out)) escritos.push('urls del registro oficial en fuentes XHTML (tools/fuente-url-xhtml.mjs)');
   // generadores + auditoría
   for (const g of GENERADORES.filter((g) => existsSync(resolve(ROOT, g)))) { // (to-do 298 x) la lista compartida con alta-club.mjs
     const r = runNode(g, []); if (r.code !== 0) throw new Error(`${g} falló (código ${r.code}): ${r.out.slice(-500)}`);

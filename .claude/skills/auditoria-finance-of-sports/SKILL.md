@@ -87,7 +87,9 @@ Los P2 y P3 no se miran de a uno: se baja la lista de a un código por corrida.
    - **real y lo arregla un script:** se arregla en la misma corrida, o va a `Admin/TODO.md` con el comando;
    - **real y aceptado** (un club que no publica, un formato del país): se silencia en `tools/audit-ignore.json`, con el motivo;
    - **el chequeo no sirve:** se propone sacarlo (sección 7).
-3. **Anotar** en `Admin/registros/auditoria-proceso.jsonl` el código, la decisión y cuántos hallazgos había antes y después.
+3. **Anotar** la decisión con `node tools/decision.mjs` (ver su cabecera): el código, la decisión y cuántos hallazgos había antes y después. Si la decisión deja trabajo por hacer, se pasa
+   `--punto <id del TODO> --aplicar "paso"` (uno por paso) y la tool copia los pasos al cuerpo de ese punto en `Admin/TODO.md`: quien toma el punto no tiene que buscarlos en el registro.
+   El JSON de `Admin/registros/auditoria-proceso.jsonl` no se escribe a mano; lo arma la tool.
 4. Un código que lleva tres corridas tratadas sin bajar va a `Admin/TODO.md`.
 
 ---

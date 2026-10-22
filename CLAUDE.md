@@ -33,9 +33,6 @@ Hoy se trabaja en UNA sesión, en la carpeta principal y en `main`, una cosa a l
 - **Hablarle a Guido.** Un mensaje por paso, con un ejemplo real antes de hacerlo y las decisiones numeradas con la recomendación al lado;
   tareas chicas, terminadas y commiteadas antes de abrir la siguiente. Lo que Guido tiene que correr o decidir va completo en el último
   mensaje del turno (el comando en un bloque `bash`), con **Te toca a vos** numerado o «nada», y **En curso** (rol, to-do, lote).
-- **Al cerrar cada tarea, un bloque corto de proceso** (Guido lo pidió): qué `.md` se tocaron; qué `.md` se leyeron en vano (no hacían falta
-  para la tarea) y qué lo evitaría; y qué decisiones de la sesión deberían ser una skill, una regla escrita o un script (con la frase que lo
-  justifica). Sin relleno: si no hubo, una línea que lo diga.
 - **Antes de preguntarle algo a un club, buscarlo en internet:** la pregunta va a `Admin/dudas-por-club.md` solo si el dato no es público
   (fundación, licencia, número de registro y afiliación sí lo son).
 - **Decide la sesión, cuenta en el resumen:** estructura y calidad de datos (ids, esquema, alias, consistencia, reglas objetivas). **Va a

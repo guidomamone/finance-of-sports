@@ -1482,7 +1482,7 @@ function checkFuentesPublicas(api) {
     const md = cand.find((m) => /xhtml-aarsrapport\.mjs/.test(fs.readFileSync(m.abs, 'utf8').slice(0, 400)));
     if (!md) continue;
     if (/\.pdf(\?|#|$)/i.test(url) || url.startsWith('Clubes/')) add('P1', 'fuente-xhtml-sin-url', `sources['${id}'].url apunta a ${url}: el PDF de ancla es la impresión de Chrome de un XHTML, no el documento oficial; la url tiene que ser la del depósito oficial (Virk o el club)`);
-    else if (!url) add('P3', 'fuente-xhtml-sin-url', `sources['${id}'] salió de un informe XHTML (iXBRL) y no tiene la url del depósito oficial. Reino Unido: node tools/fuente-companies-house.mjs ${s.clubId} --escribir (la busca en Companies House y comprueba que sea el mismo informe). Dinamarca (Virk) u otro: node tools/fuente.mjs ${s.clubId} ${id} --url "…" --nota "Informe oficial en formato XHTML (iXBRL)" --escribir`);
+    else if (!url) add('P3', 'fuente-xhtml-sin-url', `sources['${id}'] salió de un informe XHTML (iXBRL) y no tiene la url del depósito oficial. Reino Unido y Dinamarca: node tools/fuente-url-xhtml.mjs ${s.clubId} --escribir (la busca en Companies House o Virk y comprueba que sea el mismo informe; cargar.mjs la corre sola al terminar una carga). Otro país: node tools/fuente.mjs ${s.clubId} ${id} --url "…" --nota "Informe oficial en formato XHTML (iXBRL)" --escribir`);
   }
 
   // El guardarraíl del bug de la 126: `note` no se renderiza en ningún lado.
