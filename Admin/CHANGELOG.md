@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 938 — Fuentes danesas con url, 359 cerrado (2026-10-21) [359 · silkeborg-dk, viborg-dk]
+
+- Silkeborg 2025 y Viborg 2025 (iXBRL) llevan la url del depósito de `regnskaber.virk.dk`, buscada por CVR en `distribution.virk.dk` (el número de la url del depósito no es el CVR). `audit.js` sigue en 0 P0 y 0 P1.
+- Premisa vencida: el punto decía 15 fuentes danesas sin url y solo faltaban 2; las otras 13 las había resuelto Onboarding 9 y el TODO no se actualizó.
+- Emmen 2019-21 sigue como pregunta al club en `Admin/dudas-por-club.md` (no frena la carga; las líneas `falta_transcripcion` quedan hasta que conteste).
+
 ## Versión 937 — Menos archivos y menos lectura al arrancar (2026-10-21)
 
 - `CLAUDE.md`: apertura nueva (sin el repo hermano); el bloque «Modo de trabajo» queda como lo único que hay que leer del modo de una sola sesión.

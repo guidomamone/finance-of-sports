@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-21';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["cz-firstleague"] = {
   1997: {"size":16,"cargados":0,"faltan":[{"n":"Sparta Prague","e":"buscado"},{"n":"Baník Ostrava","e":"en-mano"},{"n":"Slavia Prague","e":"en-mano"},{"n":"Boby Brno","e":"buscado"},{"n":"Jablonec","e":"en-mano"},{"n":"Bohemians Prague","e":"buscado"},{"n":"České Budějovice","e":"buscado"},{"n":"Slovan Liberec","e":"en-mano"},{"n":"Drnovice","e":"sin-buscar"},{"n":"Hradec Králové","e":"buscado"},{"n":"Sigma Olomouc","e":"en-mano"},{"n":"Karviná","e":"buscado"},{"n":"Kaučuk Opava","e":"sin-buscar"},{"n":"Viktoria Plzeň","e":"buscado"},{"n":"Viktoria Žižkov","e":"sin-buscar"},{"n":"Teplice","e":"en-mano"}]},

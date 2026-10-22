@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-21';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["ar-primera"] = {
   2009: {"size":20,"cargados":1,"faltan":[{"n":"Argentinos Juniors","id":"argentinosjuniors-ar","e":"buscado"},{"n":"Arsenal","e":"sin-buscar"},{"n":"Banfield","id":"banfield-ar","e":"buscado"},{"n":"Boca Juniors","id":"boca-ar","e":"sin-buscar"},{"n":"Colón","e":"buscado"},{"n":"Estudiantes (LP)","id":"estudianteslp-ar","e":"sin-buscar"},{"n":"Gimnasia y Esgrima (J)","e":"buscado"},{"n":"Gimnasia y Esgrima (LP)","id":"gimnasiaesgrima-ar","e":"sin-buscar"},{"n":"Godoy Cruz","id":"godoycruz-ar","e":"buscado"},{"n":"Huracán","e":"buscado"},{"n":"Independiente","id":"independiente-ar","e":"buscado"},{"n":"Lanús","e":"buscado"},{"n":"Newell's Old Boys","id":"newells-ar","e":"sin-buscar"},{"n":"River Plate","id":"river-ar","e":"buscado"},{"n":"Rosario Central","id":"rosariocentral-ar","e":"buscado"},{"n":"San Lorenzo","id":"sanlorenzo-ar","e":"buscado"},{"n":"San Martín (T)","e":"buscado"},{"n":"Tigre","e":"buscado"},{"n":"Vélez Sársfield","id":"velez-ar","e":"buscado"}]},

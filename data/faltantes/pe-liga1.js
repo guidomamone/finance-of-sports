@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-21';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["pe-liga1"] = {
   2019: {"size":18,"cargados":1,"faltan":[{"n":"Academia Cantolao","e":"sin-buscar"},{"n":"Alianza Universidad","e":"sin-buscar"},{"n":"Ayacucho","e":"sin-buscar"},{"n":"Binacional","e":"buscado"},{"n":"Carlos A. Mannucci","e":"sin-buscar"},{"n":"Deportivo Municipal","e":"buscado"},{"n":"Melgar","e":"buscado"},{"n":"Pirata","e":"sin-buscar"},{"n":"Real Garcilaso","e":"sin-buscar"},{"n":"Sport Boys","e":"buscado"},{"n":"Sport Huancayo","e":"buscado"},{"n":"Sporting Cristal","e":"buscado"},{"n":"Unión Comercio","e":"sin-buscar"},{"n":"Universidad César Vallejo","e":"buscado"},{"n":"Universidad San Martín","e":"sin-buscar"},{"n":"Universitario","e":"buscado"},{"n":"UTC","e":"sin-buscar"}]},

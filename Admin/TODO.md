@@ -28,29 +28,28 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 359 (Onboarding): Emmen (pregunta al club) y las urls danesas que quedan, si se quieren
-2. 355: Lierse son dos clubes (BCE distintos, Auditora 5); falta que cada ficha diga de quién es sucesora y los 3 alias de liga (Onboarding)
-3. 347 (Auditora): corridas de P2 y P3 (hechas nueve códigos); faltan los fixes aprobados, que codea Pipeline
-4. 352 (Auditora): el iXBRL ya frena en el individual; falta medir el consolidado
-5. 351 (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
-6. 350 (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
-7. 257 (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
-8. 356 (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
-9. 362 (Pipeline, con la Auditora): el freno de documentos de grupo
-10. 363 (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+1. 355: Lierse son dos clubes (BCE distintos, Auditora 5); falta que cada ficha diga de quién es sucesora y los 3 alias de liga (Onboarding)
+2. 347 (Auditora): corridas de P2 y P3 (hechas nueve códigos); faltan los fixes aprobados, que codea Pipeline
+3. 352 (Auditora): el iXBRL ya frena en el individual; falta medir el consolidado
+4. 351 (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
+5. 350 (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
+6. 257 (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
+7. 356 (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
+8. 362 (Pipeline, con la Auditora): el freno de documentos de grupo
+9. 363 (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 **D. Orden de la casa**
-11. 338: correr todas las auditorías del proyecto (al final de A)
-12. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
-13. 364 (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
-14. 298 (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+10. 338: correr todas las auditorías del proyecto (al final de A)
+11. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+12. 364 (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+13. 298 (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 **E. Después de A a D (Guido, 2026-10-20)**
-15. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-16. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-17. 335: mails a clubes
-18. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
-19. 357: mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+14. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+15. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+16. 335: mails a clubes
+17. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+18. 357: mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 357. MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
    dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo
@@ -65,14 +64,6 @@ el número de la izquierda es el orden de trabajo.
    `Admin/propuestas/257-skills.md`, la memoria vaciada y el candado de skills del hook. Falta: (a) que `perfil-en-cola` de `cargar.mjs`
    nunca frene (Pipeline); (b) la duda de Deportes Tolima, `dudas-por-club.md:201`, que frena su carga. Los descartes 314 y 298 en
    `Admin/HALLAZGOS-pipeline.md` y el párrafo de Chrome headless ya se hicieron (Versión 931).
-359. CIERRE DE LOS AÑOS DEL 345 (sale del 345, cerrado: Onboarding 8, US$13,9). Hechos (Onboarding 9): las líneas del auditor de Omonia
-   2024, Fiorentina 2020, Atalanta 2022, Genoa 2024 y Girona 2021-23; Chapecoense 2019 y Goiás 2018 revisados (el «24 de abril de 2018» era
-   una errata); la url del depósito en las fuentes danesas del XHTML. Terminado cuando: (c) Emmen 2019-20 y 2020-21: el PDF F.04 no trae
-   el informe del auditor y la jaarrekening completa solo está en la KvK (de pago; Guido decidió no comprarla), así que se le pide al club
-   (pregunta en `Admin/dudas-por-club.md`, «FC Emmen»); mientras no conteste, las líneas `falta_transcripcion` quedan; y (d) las 15 fuentes
-   danesas que no son XHTML del depósito y siguen sin url (AGF 2020-21, Brøndby 2020, København 2024, Fredericia 2019 y 2020, Midtjylland 2019
-   y 2020, Nordsjælland 2024, Randers 2022-23, Silkeborg 2024 y 2025, SønderjyskE 2022, Vejle 2024, Viborg 2024 y 2025) llevan su url
-   (`fuente.mjs --url`, mismo método por CVR) o se decide que no hace falta. Lo hace Sourcing.
 347. P2 Y P3 SIN PROCESO (Guido, 2026-10-21: «armemos algo para los P2 y P3»). Propuesta en `Admin/propuestas/p2-p3-y-roles.md`: cada auditoría
    baja un código (muestra de cinco, decisión por el código entero, registro antes y después). Ya está en la skill de auditoría. Hechas doce
    corridas (`linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido` x2, `outlier-liga`, `gestion-club-inexistente`,

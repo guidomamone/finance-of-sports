@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-21';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["de-bundesliga"] = {
   2021: {"size":18,"cargados":1,"faltan":[{"n":"FC Augsburg","id":"augsburg-de","e":"buscado"},{"n":"Hertha BSC","e":"buscado"},{"n":"Union Berlin","e":"buscado"},{"n":"Arminia Bielefeld","e":"sin-buscar"},{"n":"Werder Bremen","id":"werderbremen-de","e":"buscado"},{"n":"Borussia Dortmund","id":"dortmund-de","e":"en-mano"},{"n":"Eintracht Frankfurt","id":"eintrachtfrankfurt-de","e":"buscado"},{"n":"SC Freiburg","e":"buscado"},{"n":"1899 Hoffenheim","id":"hoffenheim-de","e":"en-mano"},{"n":"1. FC Köln","id":"koln-de","e":"buscado"},{"n":"RB Leipzig","id":"rbleipzig-de","e":"en-mano"},{"n":"Bayer Leverkusen","e":"buscado"},{"n":"Mainz 05","e":"buscado"},{"n":"Borussia Mönchengladbach","id":"monchengladbach-de","e":"buscado"},{"n":"Schalke 04","e":"en-mano"},{"n":"VfB Stuttgart","id":"stuttgart-de","e":"buscado"},{"n":"VfL Wolfsburg","e":"buscado"}]},

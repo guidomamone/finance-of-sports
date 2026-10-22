@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-21';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["nl-eerstedivisie"] = {
   2015: {"size":20,"cargados":0,"faltan":[{"n":"Achilles '29","e":"sin-buscar"},{"n":"Jong Ajax","e":"sin-buscar"},{"n":"Almere City","id":"almerecity-nl","e":"buscado"},{"n":"Den Bosch","id":"fcdenbosch-nl","e":"en-mano"},{"n":"Eindhoven","id":"fceindhoven-nl","e":"buscado"},{"n":"Emmen","id":"fcemmen-nl","e":"en-mano"},{"n":"Fortuna Sittard","id":"fortunasittard-nl","e":"buscado"},{"n":"De Graafschap","id":"degraafschap-nl","e":"buscado"},{"n":"Helmond Sport","id":"helmondsport-nl","e":"buscado"},{"n":"MVV","e":"en-mano"},{"n":"NEC","id":"nec-nl","e":"en-mano"},{"n":"Oss","e":"sin-buscar"},{"n":"Jong PSV","e":"sin-buscar"},{"n":"RKC Waalwijk","e":"buscado"},{"n":"Roda JC","id":"rodajc-nl","e":"en-mano"},{"n":"Sparta Rotterdam","id":"spartarotterdam-nl","e":"buscado"},{"n":"Telstar","id":"telstar-nl","e":"buscado"},{"n":"Jong FC Twente","e":"sin-buscar"},{"n":"Volendam","id":"fcvolendam-nl","e":"buscado"},{"n":"VVV-Venlo","id":"vvvvenlo-nl","e":"buscado"}]},
