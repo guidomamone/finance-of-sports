@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md",
+ "generado": "2026-10-21T16:30:50.990Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "All amounts in DKK.",
+ "caja": {
+  "lineas": [
+   487
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   512,
+   532
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Para 2025 los préstamos bancarios (L512) y la parte corriente de la deuda a largo plazo (L532) valen 0; solo tenían saldo en 2024. Los importes están en kr. (DKK) sin escalar."
+}

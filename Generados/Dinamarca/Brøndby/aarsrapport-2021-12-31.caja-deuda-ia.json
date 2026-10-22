@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.md",
+ "generado": "2026-10-21T16:30:45.854Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "2021 tkr.",
+ "caja": {
+  "lineas": [
+   914
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Balance 2021 de Brøndby: los pasivos son solo 'Leverandørgæld og andre gældsforpligtelser' (proveedores y otras deudas, corriente y no corriente) y anticipos recibidos. No hay préstamos bancarios ni deuda financiera explícita, por lo que no se incluyó ninguna línea. Tkr. = miles de coronas danesas."
+}

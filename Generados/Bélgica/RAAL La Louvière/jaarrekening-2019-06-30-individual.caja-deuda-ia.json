@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2019-06-30-individual.md",
+ "generado": "2026-10-21T16:36:08.215Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Exercice (importes en euros, sin mención de miles; cifras completas como 2.677.147)",
+ "caja": {
+  "lineas": [
+   637
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   678,
+   684
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance belga no indica escala explícita; se asume euros en unidades. Deuda: L678 (establecimientos de crédito y dudas asimiladas, largo plazo, 713.412) y L684 (deudas a más de un año con vencimiento en el año, 87.310). L677 es subtotal de L678 y no se incluye. L684 se asume financiera por ser la parte corriente de la deuda a largo plazo."
+}

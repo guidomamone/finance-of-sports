@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2024-individual.md",
+ "generado": "2026-10-21T17:43:08.858Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debiti verso istituti di previdenza e di sicurezza sociale\" + \"riserv vers c futuro aumento capitale\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Valori in € ",
+ "caja": {
+  "lineas": [
+   251
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   332,
+   795
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Criterio del club: debiti verso istituti di previdenza (total L332: 2.846.388) + riserva versamenti c/aumento capitale (L795: 65.271.383, sin 'futuro' en este año; en el balance civilistico es L267 'Versamenti in conto aumento di capitale', mientras L268 'futuro aumento' es 0). Se eligió el total de previdenza y la reserva en la versión NOIF; el ejercicio cerrado es 30-06-2024."
+}

@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2020.md",
+ "generado": "2026-10-21T16:30:39.935Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "caja": {
+  "lineas": [
+   139
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   154,
+   162
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toman los préstamos y financiamientos corriente (L154) y no corriente (L162) del ejercicio 2020; no se incluyeron cuentas por pagar ni proveedores."
+}

@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md",
+ "generado": "2026-10-21T16:30:56.082Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "t.kr.",
+ "caja": {
+  "lineas": [
+   263
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   287,
+   288,
+   293
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera: leasing no corriente (L287), capital de préstamo subordinado (L288) y porción corriente de deuda a largo plazo (L293, que puede incluir leasing y otros conceptos). Se excluyen proveedores y otras deudas. El documento es de VB Alliancen A/S (matriz de Vejle)."
+}

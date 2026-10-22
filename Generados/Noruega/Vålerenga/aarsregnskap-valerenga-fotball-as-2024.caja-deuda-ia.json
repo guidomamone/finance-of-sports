@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.md",
+ "generado": "2026-10-21T16:34:15.117Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "alle poster oppgitt i hele tall",
+ "caja": {
+  "lineas": [
+   128
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   158
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda: 'Sertifikatlån' (L158, 18 465 613) es un préstamo en certificados; en la versión firmada (L286) figura como 'Konserngjeld' (deuda intragrupo), por lo que la clasificación es dudosa. 'Gjeld til kredittinstitusjoner' (L155) está vacío y no hay deuda a largo plazo. La moneda es NOK (L104)."
+}

@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.md",
+ "generado": "2026-10-21T16:35:11.417Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+ "caja": {
+  "lineas": [
+   345
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   393,
+   401
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance trae columnas Controladora y Consolidado; se tomó la columna Consolidado 2022. Las líneas elegidas son las del primer bloque (L345, L393, L401); el mismo balance se repite en L480, L528 y L536. En el consolidado 2022 los empréstimos corrientes son 0 (L393) y los no corrientes son 2.301 (L401). El 'Passivo em Recuperação Judicial' no se incluyó como deuda financiera por no ser claramente un préstamo."
+}

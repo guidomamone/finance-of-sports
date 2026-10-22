@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.md",
+ "generado": "2026-10-21T16:30:15.128Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "in EUR * 1.000",
+ "caja": {
+  "lineas": [
+   157
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance muestra Langlopende schulden de € - y solo Kortlopende schulden de € 1.066 sin desglose, que son deudas a corto plazo no identificadas como financieras. No hay préstamos bancarios explícitos. La caja se toma de Liquide middelen (L157), que coincide con el saldo al 30-6-2020."
+}

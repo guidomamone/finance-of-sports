@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.md",
+ "generado": "2026-10-21T16:36:17.728Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Exercice 1.471.409 (cifras en euros sin indicación de miles; formulario estándar BNB)",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   709,
+   715
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Solo se incluyeron las páginas del pasivo; el activo con la caja (código 54/58) no aparece, por lo que no se pudo identificar la caja. Deuda: L709 (créditos bancarios y leasing a más de un año) y L715 (porción corriente de deudas a más de un año, código 42); L708 es subtotal de L709/L710. No hay mención explícita de la escala en el texto, se asume unidades por formato estándar belga."
+}

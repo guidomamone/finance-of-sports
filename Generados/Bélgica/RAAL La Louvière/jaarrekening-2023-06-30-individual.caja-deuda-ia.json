@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.md",
+ "generado": "2026-10-21T16:36:24.842Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "BILAN APRÈS RÉPARTITION",
+ "caja": {
+  "lineas": [
+   860
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance está incompleto: el pasivo (dettes, códigos 17 y 42/48) no aparece en las páginas dadas, por lo que no se puede identificar deuda financiera. Los importes están en euros enteros, sin mención explícita de la escala; se asume unidades. Los códigos 164/5 (27.000) son provisiones, no deuda."
+}

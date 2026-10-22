@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2018.md",
+ "generado": "2026-10-21T16:30:34.637Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "caja": {
+  "lineas": [
+   120
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   120
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caixa e equivalentes de caixa 2018 = 310.709,50 (L120, lado del activo). Empréstimos e financiamentos corrientes 2018 = '-' (2017: 34.206,31), pero esa es la única línea de deuda financiera. No hay préstamos no corrientes. Las aplicaciones financieras (L123) quedan fuera de caja por ser inversiones aparte."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.md",
+ "generado": "2026-10-21T16:36:28.641Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Sin indicación explícita de escala; cifras en euros completos (ej. TOTAL DE L'ACTIF 10.217.052)",
+ "caja": {
+  "lineas": [
+   842
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   877
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El pasivo está incompleto en el texto: las filas de códigos (L855-L878) no tienen etiquetas. Se tomó el código 164/5 (27.000, 'Établissements de crédit, dettes de location-financement y otros préstamos') como deuda financiera no corriente; no figuran las deudas financieras a un año como máximo (código 42/43), por lo que podría faltar deuda corriente. La escala se infiere de las cifras, no de una frase del documento."
+}

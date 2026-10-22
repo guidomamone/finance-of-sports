@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2022.md",
+ "generado": "2026-10-21T16:34:09.664Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "caja": {
+  "lineas": [
+   134
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Cifras en NOK enteras. Gjeld til kredittinstitusjoner (L163) está vacía en 2022 (650 881 en 2021), por lo que no hay deuda financiera en el cierre 2022. Annen kortsiktig gjeld (L170) no se identifica como deuda financiera. Caja: L134 (la versión duplicada en L596 es equivalente)."
+}

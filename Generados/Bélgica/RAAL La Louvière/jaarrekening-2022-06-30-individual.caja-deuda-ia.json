@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2022-06-30-individual.md",
+ "generado": "2026-10-21T16:36:21.690Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Les créances vis-à-vis des structures liées ont été reclassées en 28 à raison de 5.696.569,89€",
+ "caja": {
+  "lineas": [
+   860
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   895
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está incompleto: el pasivo aparece sin etiquetas, solo códigos. Las líneas de dettes (17, 42/48, etc.) no figuran. La L895 (código 164/5, 27.000 en el ejercicio) es la única posible deuda financiera (otros préstamos a más de un año). No hay indicación explícita de escala; los importes están en euros enteros."
+}

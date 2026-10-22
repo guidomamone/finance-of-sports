@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md",
+ "generado": "2026-10-21T16:35:07.858Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+ "caja": {
+  "lineas": [
+   467
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   513,
+   520
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toma la columna Consolidado 2019 (los valores de Controladora son iguales en deuda). Deuda = Empréstimos corriente (L513) y no corriente (L520), nota 19."
+}

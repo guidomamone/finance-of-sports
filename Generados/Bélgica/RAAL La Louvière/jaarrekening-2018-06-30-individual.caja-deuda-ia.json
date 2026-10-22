@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md",
+ "generado": "2026-10-21T16:36:05.033Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "BILAN APRÈS RÉPARTITION (cifras en euros sin indicación de miles; el documento no declara escala explícita)",
+ "caja": {
+  "lineas": [
+   627
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Las líneas de deuda financiera (170/4, 172/3, 174/0, 42, 43, 430/8, 439) están todas vacías; las únicas deudas son comerciales, fiscales/sociales y 'Autres dettes' (4.081), que no se consideran deuda financiera. La escala no está indicada explícitamente; se asume euros en unidades por el tamaño de las cifras."
+}

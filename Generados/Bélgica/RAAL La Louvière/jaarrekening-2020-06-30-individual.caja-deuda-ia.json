@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.md",
+ "generado": "2026-10-21T16:36:12.297Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Sin mención explícita; cifras en euros completos (p. ej. 'TOTAL DE L'ACTIF 3.162.493')",
+ "caja": {
+  "lineas": [
+   626
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   667,
+   673
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda no corriente: L667 (establecimientos de crédito y leasing, 992.149; L666 es el subtotal y se excluye). Corriente: L673 (deudas a más de un año con vencimiento en el año, 146.305), que se asume financiera; L674-676 vacías. Escala inferida porque el documento no la indica."
+}
