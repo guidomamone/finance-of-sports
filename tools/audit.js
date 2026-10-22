@@ -1071,6 +1071,11 @@ function checkGenerados() {
     const sinCorrer = GENERADORES.map((g) => g[0]).filter((s) => !corre.includes(s) && !['generar-data.mjs', 'validar-esquema-json.mjs'].includes(s));
     if (sinCorrer.length) add('P2', 'generador-sin-correr', `audit.js verifica ${sinCorrer.join(', ')} pero tools/generadores.mjs no lo corre al cerrar una carga: una carga que lo deje viejo se revierte. Sumalo a la lista de tools/generadores.mjs`);
   } catch { /* sin generadores.mjs: otro chequeo lo dice */ }
+  // los lotes de prueba (TODO 371): una familia cargada sin documentos en la mediana, o un club cuyo último año con verificación no está en ella, y una medición no lo vería
+  if (fs.existsSync(path.join(ROOT, 'tools/lotes-prueba.mjs'))) {
+    try { execSync('node tools/lotes-prueba.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+    catch (e) { add('P2', 'lote-prueba-desfasado', `los lotes de prueba no cubren lo cargado: ${String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ').slice(0, 260)}`); }
+  }
   // el índice de documentos (Admin/INDICE-md.md) no frena un commit: P3
   try { execSync('node tools/indice-md.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
   catch (e) { add('P3', 'indice-md-desfasado', 'Admin/INDICE-md.md quedó desactualizado (se creó, movió o borró un .md). Corré: node tools/indice-md.mjs'); }

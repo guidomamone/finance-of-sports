@@ -144,7 +144,8 @@ for (const s of ['SIGINT', 'SIGTERM']) process.on(s, () => { volver(); process.e
 process.on('exit', volver);
 
 // ---- correr un medidor -----------------------------------------------------
-const instaladasHuella = () => Object.keys(T.tools).map((n) => `${n}:${huellaArchivo(`tools/${n}`)}`).join(',');
+// la huella de TODO tools/ (no solo las de la tabla): un medidor también lee tablas como audit-acciones.json o las que otra tool llama
+const instaladasHuella = () => sha1(readdirSync(resolve(ROOT, 'tools'), { withFileTypes: true }).filter((e) => e.isFile()).map((e) => `${e.name}:${huellaArchivo(`tools/${e.name}`)}`).join(','));
 function correr(m, nivel) {
   const med = T.medidores[m];
   const lista = med.usaLista ? T.lotes[nivel] : null;

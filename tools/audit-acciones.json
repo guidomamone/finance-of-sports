@@ -60,6 +60,11 @@
   "quien": "script",
   "donde": "CLAUDE.md, el índice de los .md"
  },
+ "lote-prueba-desfasado": {
+  "hacer": "node tools/lotes-prueba.mjs (publicarCambios lo corre solo al cerrar una carga)",
+  "quien": "script",
+  "donde": "skill club-or-year-onboarding, mejorar-script.md sección 5"
+ },
  "catchall-dominante": {
   "hacer": "Esperar la categoría de subsidios y donaciones y la tabla de ceros del Formato simplificado; no se recategoriza lo cargado.",
   "quien": "guido",

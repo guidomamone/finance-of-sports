@@ -1,6 +1,5 @@
-# Lista de PRUEBA (Versión 450, pedido de Guido 2026-10-04): para medir cualquier cambio de script antes y después. Sin repetidos.
-# GENERADA por `node tools/lotes-prueba.mjs --escribir`: no se edita a mano (los casos a mano van en prueba-rapida.txt).
-# Cómo medir un cambio de verificar.mjs o cargar.mjs: node tools/medir-verificar.mjs --lista <esta lista> antes y después (gratis, deja los registros como estaban).
+# Lista de PRUEBA para medir cualquier cambio de script antes y después (node tools/medir-pipeline.mjs). Sin repetidos.
+# GENERADA por `node tools/lotes-prueba.mjs` (la corre tools/generadores.mjs al cerrar cada carga): no se edita a mano; los casos a mano van en prueba-rapida.txt.
 # COMPLETA: la mediana + todos los demás documentos con verificación.
 Clubes/Brasil/Goias/demonstracoes-contabeis-2008-2007.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf
@@ -64,8 +63,36 @@ Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf
 Clubes/Estonia/FCI Levadia/aruanne-2020.pdf
 Clubes/Estonia/FCI Levadia/aruanne-2025.pdf
 Clubes/Países Bajos/Go Ahead Eagles/wf-2024-2025-31bca08b.pdf
+Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2015-16.pdf
+Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.pdf
+Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf
+Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.pdf
+Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf
+Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.pdf
+Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.pdf
+Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.pdf
+Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.pdf
+Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.pdf
+Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf
+Clubes/Estonia/FCI Levadia/aruanne-2023.pdf
+Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf
+Clubes/Inglaterra/Everton/everton-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Carlisle United/carlisle-full-accounts-2024-25-ixbrl.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.pdf
+Clubes/Países Bajos/PEC Zwolle/wf-2024-2025-aaba1b62.pdf
+Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2017.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf
+Clubes/Argentina/Instituto/balance-general-2024-2025.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2010-11-2012-13.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.pdf
 Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.pdf
 Clubes/Bélgica/Beerschot/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2020-06-30-individual.pdf
 Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.pdf
 Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.pdf
 Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf
@@ -77,13 +104,19 @@ Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.pdf
 Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.pdf
 Clubes/Bélgica/Patro Eisden/jaarrekening-2013-06-30-individual.pdf
 Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.pdf
 Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf
-Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.pdf
 Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.pdf
 Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf
+Clubes/Brasil/Amazonas/demonstracoes-contabeis-2025-faf-1.pdf
 Clubes/Brasil/Avai/demonstracoes-contabeis-2023.pdf
 Clubes/Brasil/Avai/demonstracoes-contabeis-2025.pdf
-Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf
+Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.pdf
+Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.pdf
+Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.pdf
+Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.pdf
 Clubes/Brasil/CRB/demonstracoes-contabeis-2025.pdf
 Clubes/Brasil/CRB/relatorio-auditoria-2022.pdf
 Clubes/Brasil/Criciuma/balanco-2018.pdf
@@ -95,22 +128,53 @@ Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf
 Clubes/Brasil/Ferroviaria/balanco-2010.pdf
 Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2025.pdf
 Clubes/Brasil/Ferroviaria/dre-2017.pdf
-Clubes/Brasil/Goias/demonstracoes-contabeis-2015-2014.pdf
-Clubes/Brasil/Novorizontino/balanco-2013.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2020.pdf
+Clubes/Brasil/Gremio/wf-2024-2025-1774995c.pdf
+Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf
+Clubes/Brasil/Novorizontino/balanco-2012.pdf
 Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.pdf
 Clubes/Brasil/Paysandu/dre-2021.pdf
 Clubes/Brasil/Paysandu/dre-2023.pdf
 Clubes/Brasil/Paysandu/dre-2025.pdf
+Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf
+Clubes/Brasil/RB Bragantino/balanco-2025-auditado.pdf
 Clubes/Brasil/Remo/demonstracoes-financeiras-2025.pdf
 Clubes/Brasil/Remo/dre-2019.pdf
 Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf
+Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.pdf
 Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.pdf
 Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.pdf
 Clubes/Brasil/Vila Nova/notas-explicativas-2014.pdf
+Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2017.pdf
 Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2025.pdf
+Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf
+Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2023.pdf
 Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2025.pdf
+Clubes/Colombia/Union Magdalena/estados-financieros-2025.pdf
+Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.pdf
+Clubes/Croacia/Dinamo Zagreb/dinamo-2025-nekonsolidirano.pdf
+Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf
+Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.pdf
+Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.pdf
+Clubes/Dinamarca/FC Fredericia/aarsrapport-2025-12-31.pdf
+Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.pdf
+Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.pdf
+Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf
+Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf
+Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf
+Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf
+Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.pdf
+Clubes/Escocia/Celtic/celtic-group-accounts-2022-23.pdf
+Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf
+Clubes/España/Girona FC/cuentas-anuales-2021-2022.pdf
+Clubes/España/Girona FC/cuentas-anuales-2022-2023.pdf
 Clubes/Estonia/FCI Levadia/aruanne-2019.pdf
 Clubes/Estonia/FCI Levadia/aruanne-2022.pdf
 Clubes/Estonia/Flora Tallinn/aruanne-2019.pdf
@@ -174,7 +238,67 @@ Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.pdf
 Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.pdf
 Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.pdf
 Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf
-Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf
+Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.pdf
+Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.pdf
+Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.pdf
+Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2022-23.pdf
+Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.pdf
+Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.pdf
+Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.pdf
+Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf
+Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.pdf
+Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.pdf
+Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.pdf
+Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf
+Clubes/Inglaterra/Brentford/brentford-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Brentford/brentford-group-accounts-2022-23.pdf
+Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.pdf
+Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.pdf
+Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.pdf
+Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.pdf
+Clubes/Inglaterra/Burton Albion/burton-full-accounts-2024-25-ixbrl.pdf
+Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.pdf
+Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.pdf
+Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf
+Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2022-23.pdf
+Clubes/Inglaterra/Everton/everton-group-accounts-2022-23.pdf
+Clubes/Inglaterra/Exeter City/exeter-group-accounts-2024-25-ixbrl.pdf
+Clubes/Inglaterra/Fulham/fulham-full-accounts-2020-21.pdf
+Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf
+Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.pdf
+Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.pdf
+Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf
+Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf
+Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.pdf
+Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf
+Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.pdf
+Clubes/Inglaterra/Manchester City/mancity-full-accounts-2020-21.pdf
+Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.pdf
+Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.pdf
+Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.pdf
+Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.pdf
+Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf
+Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.pdf
+Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf
+Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.pdf
+Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.pdf
+Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2018-19.pdf
+Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2020-21.pdf
+Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.pdf
+Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.pdf
+Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.pdf
+Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf
+Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.pdf
+Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf
+Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2019-20.pdf
+Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2020-21.pdf
+Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2022-23.pdf
 Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2017-18.pdf
 Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2024-25.pdf
 Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2008.pdf
@@ -194,7 +318,7 @@ Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf
 Clubes/Italia/Cremonese/Cremonese-bilancio-2022.pdf
 Clubes/Italia/Cremonese/Cremonese-bilancio-2023.pdf
 Clubes/Italia/Cremonese/Cremonese-bilancio-2025.pdf
-Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.pdf
+Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-21-issuu.pdf
 Clubes/Italia/Fiorentina/Fiorentina-bilancio-2024-25.pdf
 Clubes/Italia/Fiorentina/Fiorentina-bilancio-consolidato-2019-issuu.pdf
 Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.pdf
@@ -232,7 +356,18 @@ Clubes/Italia/Torino/Torino-bilancio-2021.pdf
 Clubes/Italia/Torino/Torino-bilancio-2025.pdf
 Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf
 Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2019.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2017.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2008.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.pdf
 Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2018.pdf
+Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2022.pdf
+Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.pdf
+Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.pdf
+Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2019.pdf
 Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.pdf
 Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.pdf
 Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf
@@ -241,16 +376,19 @@ Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.pdf
 Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf
 Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.pdf
 Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf
+Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.pdf
+Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.pdf
 Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf
 Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.pdf
 Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2024-2025.pdf
 Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.pdf
 Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.pdf
+Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarrekening-2020-2021.pdf
+Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.pdf
 Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.pdf
 Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2024-2025.pdf
 Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.pdf
 Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.pdf
-Clubes/Países Bajos/PEC Zwolle/wf-2024-2025-aaba1b62.pdf
 Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.pdf
 Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf
 Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf
@@ -306,7 +444,6 @@ Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2023-2024.pdf
 Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf
 Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2021.pdf
 Clubes/Portugal/Moreirense/relatorio-contas-2021-22.pdf
-Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf
 Clubes/Portugal/Nacional/relatorio-contas-2021-22.pdf
 Clubes/Portugal/Nacional/relatorio-contas-2022-23.pdf
 Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202223.pdf
@@ -339,13 +476,32 @@ Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf
 Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.pdf
 Clubes/Portugal/Vizela/Relatorio-e-Contas-2024-25-FCV.pdf
 Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2013.pdf
 Clubes/Suiza/Basel/geschaeftsbericht-unternehmen-2021.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2021-22.pdf
 Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2015.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2022.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2014-15.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2017-18.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2019-20.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2020-21.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2021-22.pdf
+Clubes/Austria/Rapid Wien/geschaeftsbericht-2022-23.pdf
 Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual.pdf
 Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.pdf
 Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.pdf
 Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf
 Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2021-06-30-individual.pdf
 Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.pdf
 Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf
 Clubes/Bélgica/Lierse SK/jaarrekening-2023-06-30-individual.pdf
@@ -374,6 +530,11 @@ Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.pdf
 Clubes/Bélgica/Patro Eisden/jaarrekening-2023-06-30-individual.pdf
 Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.pdf
 Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.pdf
 Clubes/Bélgica/RWDM/jaarrekening-2020-06-30-individual.pdf
 Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.pdf
 Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.pdf
@@ -410,11 +571,14 @@ Clubes/Brasil/Goias/demonstracoes-contabeis-2011-2010.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.pdf
-Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2015-2014.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2018.pdf
+Clubes/Brasil/Goias/demonstracoes-contabeis-2019.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2021.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2022-fgf-go.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2024.pdf
+Clubes/Brasil/Novorizontino/balanco-2013.pdf
 Clubes/Brasil/Novorizontino/balanco-2014-b.pdf
 Clubes/Brasil/Novorizontino/balanco-2016.pdf
 Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.pdf
@@ -447,10 +611,13 @@ Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2024.pdf
 Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf
 Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf
 Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf
-Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf
 Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf
+Clubes/Dinamarca/FC Fredericia/aarsrapport-2021-12-31.pdf
+Clubes/Dinamarca/FC Fredericia/aarsrapport-2023-12-31.pdf
+Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.pdf
+Clubes/Escocia/Celtic/celtic-group-accounts-2021-22.pdf
+Clubes/Escocia/Celtic/celtic-group-accounts-2023-24.pdf
 Clubes/Estonia/FCI Levadia/aruanne-2021.pdf
-Clubes/Estonia/FCI Levadia/aruanne-2023.pdf
 Clubes/Estonia/FCI Levadia/aruanne-2024.pdf
 Clubes/Estonia/Flora Tallinn/aruanne-2020.pdf
 Clubes/Estonia/Flora Tallinn/aruanne-2021.pdf
@@ -538,6 +705,23 @@ Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.pdf
 Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.pdf
 Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.pdf
 Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.pdf
+Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf
+Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.pdf
+Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.pdf
+Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.pdf
+Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.pdf
+Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2020-21.pdf
+Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.pdf
+Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf
+Clubes/Inglaterra/Leeds United/leeds-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.pdf
+Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.pdf
+Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.pdf
+Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2019-20.pdf
+Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2021-22.pdf
+Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.pdf
+Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.pdf
+Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2021-22.pdf
 Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2019-20.pdf
 Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2020-21.pdf
 Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.pdf
@@ -577,8 +761,10 @@ Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.pdf
 Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2022-23.pdf
 Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.pdf
 Clubes/Italia/Cremonese/Cremonese-bilancio-2024.pdf
-Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-21-issuu.pdf
+Clubes/Italia/Fiorentina/Fiorentina-bilancio-2020-giu-issuu.pdf
+Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.pdf
 Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.pdf
+Clubes/Italia/Genoa/Genoa-bilancio-30.06.2024-individual.pdf
 Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2021.pdf
 Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf
 Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2024.pdf
@@ -646,6 +832,53 @@ Clubes/Italia/Torino/Torino-bilancio-2019.pdf
 Clubes/Italia/Torino/Torino-bilancio-2022.pdf
 Clubes/Italia/Torino/Torino-bilancio-2023.pdf
 Clubes/Italia/Torino/Torino-bilancio-2024.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2020.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2022.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2014.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2015.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2009.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2010.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2011.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2012.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2013.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2014.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2015.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2017.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2018.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2019.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2020.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2021.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2022.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2023.pdf
+Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2024.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2012.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2014.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2017.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2020.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2021.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2022.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.pdf
+Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.pdf
+Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2022.pdf
+Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2023.pdf
+Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2014.pdf
+Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2015.pdf
+Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2016.pdf
+Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2017.pdf
+Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2018.pdf
+Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2020.pdf
+Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2021.pdf
+Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2022.pdf
+Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2023.pdf
+Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.pdf
+Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2023-2024.pdf
 Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.pdf
 Clubes/Portugal/Arouca/relatorio-contas-2023-24.pdf
 Clubes/Portugal/Benfica/prestacao-contas-2009-11-03.pdf
@@ -722,3 +955,36 @@ Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.pdf
 Clubes/Portugal/Vitória Guimarães/relatorio-contas-2021-22.pdf
 Clubes/Portugal/Vitória Guimarães/relatorio-contas-2023-24.pdf
 Clubes/Portugal/Vizela/Relatorio-Gestao-e-contas-FCV-2023-24-Ass.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2006.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2007.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2008.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2009.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2010.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2011.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2012.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2014.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2015.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2016.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2018.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2019.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2020.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2018-19.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2023-24.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2020-21.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2007.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2008.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2010.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2011.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2014.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2016.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2017.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2019.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2020.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2021.pdf

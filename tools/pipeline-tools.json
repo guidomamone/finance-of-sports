@@ -94,6 +94,7 @@
   "dato-publico.mjs": { "alcance": "etapa", "medidores": ["contexto"] },
   "segunda-fuente-liga.mjs": { "alcance": "etapa", "medidores": ["contexto", "audit"] },
   "fuente-url-xhtml.mjs": { "alcance": "etapa", "medidores": ["audit"], "familia": { "formato": "xhtml" } },
+  "lotes-prueba.mjs": { "alcance": "etapa", "medidores": ["audit"] },
   "generadores.mjs": { "alcance": "compartida", "medidores": ["audit"] },
   "publicar.mjs": { "alcance": "compartida", "medidores": ["audit"] },
   "audit.js": { "alcance": "compartida", "medidores": ["audit"] }
