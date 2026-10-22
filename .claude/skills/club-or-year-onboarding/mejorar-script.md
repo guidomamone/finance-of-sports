@@ -13,19 +13,15 @@
 
 ## 5. Lotes de prueba (medir CUALQUIER cambio de script antes y después)
 
-**No hay excepción: sin medición no se commitea un cambio a una tool del pipeline** (se incumplió el 2026-10-22 con `caja-deuda.mjs`, `cargar.mjs` y otras, y quedó como deuda en el TODO 371, que también pide el hook que lo exige y que las listas se regeneren solas). Qué lote: el CHICO (`prueba-rapida.txt`) siempre primero; el MEDIANO si el cambio está acotado a una etapa o a una familia de formato y el chico dio idéntico; el COMPLETO si toca lógica compartida (categorías, perímetro, escala o tipo de cambio, signos, parser común de tablas, `publicarCambios()`), si el mediano mostró cualquier diferencia o antes de cerrar un punto del TODO. Si el cambio apunta a un país o formato, además todos los documentos de esa familia (al menos 3). El resultado, «idéntico» o cada diferencia explicada, va a la entrada de CHANGELOG.
+**No hay excepción: sin medición no se commitea un cambio a una tool del pipeline** (un hook rechaza el commit; `[sin-medicion]` solo con el ok de Guido). Se mide con `node tools/fos.mjs medir pipeline` (en segundo plano): toma de git las tools editadas, elige medidor y lote por `tools/pipeline-tools.json` y anota `Admin/registros/mediciones-pipeline.jsonl`; una diferencia se explica con `--explicacion "…"`; una tool nueva del pipeline se suma a esa tabla. Qué lote (lo aplica la tool; esto es el criterio): el CHICO (`prueba-rapida.txt`) siempre primero; el MEDIANO si el cambio está acotado a una etapa o a una familia de formato y el chico dio idéntico; el COMPLETO si toca lógica compartida (categorías, perímetro, escala o tipo de cambio, signos, parser común de tablas, `publicarCambios()`), si el mediano mostró cualquier diferencia o antes de cerrar un punto del TODO. Si el cambio apunta a un país o formato, además todos los documentos de esa familia (al menos 3). El resultado, «idéntico» o cada diferencia explicada, va a la entrada de CHANGELOG.
 
 Lo cargado tiene que dar idéntico. Tres listas, sin repetidos: `Admin/lotes/prueba-rapida.txt` (a mano: los casos que ya rompieron
 algo una vez, cada uno con su motivo en un comentario), `Admin/lotes/prueba-mediana.txt` (la rápida + 3 documentos por club: el más viejo,
-el del medio y el más nuevo) y `Admin/lotes/prueba-completa.txt` (todos los documentos con verificación). La mediana y la completa las arma
-`node tools/lotes-prueba.mjs --escribir`; correrlo cuando entran clubes o años nuevos. Un caso nuevo que rompió algo va a la rápida, con su motivo.
+el del medio y el más nuevo) y `Admin/lotes/prueba-completa.txt` (todos los documentos con verificación). Las tres las
+regenera solo `tools/lotes-prueba.mjs` al cerrar cada carga, estratificadas por familia (país × formato × época × moneda × deporte): la rápida suma a lo
+que está a mano un documento de cada familia (un caso nuevo que rompió algo va a la mano, con su motivo). La regla de cobertura (3 documentos de cada familia
+afectada) la aplica `medir-pipeline`; `audit.js` avisa `lote-prueba-desfasado` si las listas dejan de cubrir lo cargado.
 
-```bash
-node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt > <carpeta de scratchpad de la sesión>/medir-antes.txt 2>&1     # antes del cambio
-node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt > <carpeta de scratchpad de la sesión>/medir-despues.txt 2>&1   # después; diff entre los dos
-# la ruta del scratchpad va escrita entera, sin /tmp ni variables
-```
-
-Además, según lo que toque: lo mismo con `--reintentar` (camino de error); `node tools/caja-deuda.mjs --medir` en TODOS los clubes (caja y deuda);
-`node tools/antes-de-localizar.mjs --lista <lista>` (compuerta de la etapa 3). Lo que no se puede ejercitar con lo cargado se simula en el
-scratchpad con copia de seguridad de `Admin/` y se restaura.
+Además, según lo que toque, en la tabla hay otros medidores (`caja-deuda --medir` y `--personal --medir` en TODOS los clubes, `audit.js` sobre el sitio, el ensayo del
+conversor XHTML, el de altas). Lo que no se puede ejercitar con lo cargado se simula en el scratchpad con copia de seguridad de `Admin/` y se restaura. Una medición
+retroactiva de lo ya commiteado: `--base <commit anterior>`.
