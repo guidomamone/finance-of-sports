@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 953 — 371: tabla de tools, medir-pipeline y deuda de medición del 2026-10-22 medida (2026-10-22) [371]
+
+- `tools/pipeline-tools.json` (31 tools con su medidor y alcance), `tools/medir-pipeline.mjs` (`node tools/fos.mjs medir pipeline`: elige medidor y lote, ANTES con la versión de git y DESPUÉS con lo editado, anota `Admin/registros/mediciones-pipeline.jsonl`) y `tools/familias-docs.mjs` (país × formato).
+- Deuda medida con `--base e2aba10226` sobre las 6 tools cambiadas hoy, lote completo (720 documentos): `cargar` (ensayo en cada documento), `caja-deuda` y `caja-deuda --personal`: idénticos; `estadio-sponsor` y `dato-publico`: idéntico; `audit.js`: 30 diferencias, todas el cambio esperado (27 avisos `sin-salarios` que ya no salen con la marca `incluye`, el texto de `indice-md-desfasado`, el chequeo nuevo `todo-cumplido`). Sin revisión independiente.
+- Compuerta del 15 % de `caja-deuda --personal`: 0 de los 9 `staffCost` cargados rechazados (mínimo 28,8 %); como solo hay 9, segunda vara con `wages_squad` sobre ingresos de 1109 club-años: 22 (2,0 %) quedan bajo el 15 %, casi todos sueldos escondidos o de otra entidad (Aston Villa, River, Estonia). `Admin/mediciones/371-compuerta-personal.mjs` y `.txt`.
+- Hallazgo: las listas de prueba solo cubren 12 países (los que tienen `.verificacion.json`); sin documentos de Inglaterra, Alemania, España, Francia, Argentina, Rusia, Dinamarca ni de ningún XHTML. Lo arregla el paso de `lotes-prueba.mjs` estratificado.
+
 ## Versión 952 — Puntos 371 a 372 y regla de medir antes de tocar el pipeline (2026-10-22) [371] [372]
 
 - TODO 371 (prioridad 1): registro de mediciones, hook de commit, tabla de qué lote usar por tool y lotes que se regeneran solos; deuda de medición de lo cambiado hoy sin medir (`caja-deuda.mjs`, `cargar.mjs`, `estadio-sponsor.mjs`, `segunda-fuente-liga.mjs`, `dato-publico.mjs`, `audit.js`). 368 con el detalle de los 20 años y la recursión; 370 en prioridad 3 (P2 23, P3 132); 372 (prioridad baja) para las 67 etiquetas excluidas.

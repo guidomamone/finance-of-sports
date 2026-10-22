@@ -41,7 +41,7 @@
    "comparar": "audit-json"
   },
   "contexto": {
-   "que": "estadio, capacidad y sponsor de cada ejercicio contra la caché ya bajada, sin red nueva",
+   "que": "estadio, capacidad y sponsor de cada ejercicio (el ensayo baja de Wikipedia las páginas que falten en la caché; medir-pipeline revierte esa caché después de cada corrida)",
    "usaLista": false,
    "correr": ["tools/estadio-sponsor.mjs", "--ensayo", "--detalle"],
    "comparar": "texto"

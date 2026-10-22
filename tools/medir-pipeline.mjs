@@ -108,7 +108,8 @@ if (A.includes('--ensayo')) { process.exit(0); }
 
 // ---- sin efectos al costado ------------------------------------------------
 const SENSIBLE = /^(data|Generados|Clubes|js|css|Admin\/registros)\b|^index\.html/;
-const propio = (p) => p.startsWith('tools/') || p.startsWith('Admin/mediciones/pipeline') || p === 'Admin/registros/mediciones-pipeline.jsonl';
+// lo que esta tool mueve a propósito: sus salidas, el registro y las tools que intercambia (no el resto de tools/: un medidor puede escribir ahí, p. ej. la caché de estadio-sponsor)
+const propio = (p) => p.startsWith('Admin/mediciones/pipeline') || p === 'Admin/registros/mediciones-pipeline.jsonl' || nombres.some((n) => p === `tools/${n}`);
 const estado = () => git('status', '--porcelain', '-uall').split('\n').filter(Boolean).filter((l) => !propio(l.slice(3).replace(/^"|"$/g, '')));
 const sucios = estado().filter((l) => SENSIBLE.test(l.slice(3)));
 if (sucios.length) { console.error(`Hay cambios sin commitear en datos o registros; el antes y el después se miden sobre los mismos datos. Commitealos o descartalos primero:\n  ${sucios.join('\n  ')}`); process.exit(1); }
