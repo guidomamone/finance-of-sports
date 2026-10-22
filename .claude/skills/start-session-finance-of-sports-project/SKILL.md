@@ -1,177 +1,85 @@
 ---
 name: start-session-finance-of-sports-project
-description: Checklist de arranque y de cierre de CUALQUIER sesión de trabajo en finance-of-sports (el sitio financeofsports.com, "El deporte en Números"). Qué leer antes de tocar nada y en qué orden, qué NO hace falta leer, cómo levantar el sitio local, cómo verificar que no se rompió nada, qué documentar antes de terminar, y la regla de git del proyecto. Usar SIEMPRE al empezar una sesión acá, sea cual sea la tarea (datos, UI, docs, onboarding de un club). Si la tarea además toca datos financieros de un club, este skill te manda a los otros 3 (club-sourcing, club-data-mapping, club-or-year-onboarding) en el momento correcto.
+description: Checklist de arranque y de cierre de CUALQUIER sesión de trabajo en finance-of-sports (el sitio financeofsports.com, "El deporte en Números"). Qué leer antes de tocar nada y en qué orden, qué NO hace falta leer, cómo levantar el sitio local, cómo verificar que no se rompió nada, qué documentar antes de terminar y la regla de git. Usar SIEMPRE al empezar una sesión acá, sea cual sea la tarea (datos, UI, docs, onboarding). Si la tarea toca datos financieros de un club, manda a las skills de sourcing, mapeo y onboarding en el momento correcto.
 ---
 
 # Arrancar (y cerrar) una sesión en finance-of-sports
 
-Este skill existe porque el costo más repetido del proyecto es el arranque en frío: una sesión que no
-sabe qué hay cargado ni qué criterios ya se decidieron, o que lee 600 KB de documentación para hacer
-un cambio de 3 líneas. Esto es el piso mínimo y el orden correcto.
+El costo más repetido del proyecto es el arranque en frío: una sesión que no sabe qué hay cargado ni qué criterios ya se decidieron, o que
+lee 600 KB de documentación para un cambio de 3 líneas. Esto es el piso mínimo y el orden. No reemplaza a `CLAUDE.md` (se carga solo y
+trae el modo de trabajo: una sola sesión, un rol por vez).
 
-**Este skill no reemplaza a `CLAUDE.md`.** CLAUDE.md se carga solo, siempre, y tiene las reglas
-permanentes. Esto es el procedimiento.
+## 1. Leer, y parar cuando alcance
 
----
+**Si la tarea es onboardear clubes o tocar las tools del pipeline, el arranque es el de la skill `club-or-year-onboarding`.**
 
-## 1. Leer, en este orden, y parar cuando alcance
+| Qué | Cuándo |
+|---|---|
+| `Admin/ESTADO.md`: qué hay armado hoy | **siempre** |
+| `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado) | si necesitás el detalle club por club |
+| `Admin/TODO.md`: qué falta, en orden | NO al arrancar: para elegir qué sigue, si Guido lo pide, o para agregar o borrar un punto |
+| `Admin/CONVENCIONES.md`: reglas de proceso | cuando la skill de la tarea lo pide |
+| `Admin/CONVENCIONES-DATOS.md`: reglas de datos | si cargás o corregís datos de un club |
+| `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` |
+| `Admin/PANTALLA.md`: pantalla y código del sitio | si tocás `js/`, `index.html` o CSS (la sección de la pantalla, no entero) |
+| `Admin/PIPELINE.md`: el pipeline etapa por etapa | solo la etapa que se toca |
+| skill `club-data-mapping` | si cargás o categorizás a mano, o revisás la cola de categorías (su SKILL.md dice qué archivo de `referencia/` abrir) |
+| skill `club-sourcing` + `Admin/sourcing/README.md` y `_indice/<País>.md` | si BUSCÁS documentos: mirá qué ya se probó, solo el país que te toca |
+| skill `producto-y-pantalla-finance-of-sports` | una pantalla, un card, un cambio de diseño o un texto visible |
+| skill `contenido-y-difusion-finance-of-sports` | una publicación, un hilo, una tarjeta o un informe |
+| skill `contrato-de-datos-finance-of-sports` | antes de renombrar, quitar o cambiar el significado de un campo, una categoría genérica, un id o una unidad |
+| skill `deploy-y-release-finance-of-sports` | cuando Guido va a publicar, pregunta si algo está listo o hay que confirmar que salió |
 
-**Si la tarea es onboardear clubes o tocar las tools del pipeline, el arranque es el del skill `club-or-year-onboarding`, no esta tabla.**
-
-| # | Qué | Cuándo |
-|---|---|---|
-| 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** |
-| 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club |
-| 2 | `Admin/CONVENCIONES.md`: reglas de proceso | cuando la skill de la tarea lo pide |
-| 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | NO al arrancar: cuando hay que elegir qué sigue, cuando Guido lo pide, o para agregar/borrar un punto |
-| 2c | `Admin/CONVENCIONES-DATOS.md`: reglas de datos | si cargás o corregís datos de un club |
-| 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` |
-| 3b | `Admin/PANTALLA.md`: reglas de pantalla y código del sitio | si tocás `js/`, `index.html` o CSS |
-| 4 | `.claude/skills/club-data-mapping` | si cargás o categorizás datos de un club A MANO, fuera del pipeline, o revisás la cola de categorías (el SKILL.md indica qué archivo de `referencia/` abrir) |
-| 5 | `.claude/skills/club-or-year-onboarding` | si onboardeás clubes o tocás el pipeline (trae su propio arranque) |
-| 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía |
-| 7 | `Admin/sourcing/README.md` (índice de países) → `Admin/sourcing/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca |
-| 8 | `worktree.md` (en esta carpeta) | si la sesión corre en un worktree (`git rev-parse --git-dir` no es `.git`) o Guido pide trabajar en paralelo |
-| 9 | `.claude/skills/principal-finance-of-sports` | si la sesión corre en la carpeta principal (no en un worktree) |
-| 10 | `.claude/skills/producto-y-pantalla-finance-of-sports` | si Guido pide una pantalla, un card, un cambio de diseño o un texto visible |
-| 11 | `.claude/skills/contenido-y-difusion-finance-of-sports` | si Guido pide una publicación, un hilo, una tarjeta o un informe para difundir el sitio |
-| 12 | `.claude/skills/contrato-de-datos-finance-of-sports` | antes de renombrar, quitar o cambiar el significado de un campo, una categoría genérica, un id o una unidad |
-| 13 | `.claude/skills/deploy-y-release-finance-of-sports` | cuando Guido diga que va a publicar, pregunte si algo está listo para subir o haya que confirmar que salió |
-
-**Lo que NO hace falta leer para trabajar**, y conviene no abrir por las dudas:
-
-- `Admin/finance-of-sports-project.md` (el archivo más pesado del proyecto): es el diario narrativo. Contesta POR QUÉ se decidió algo viejo. Se
-  consulta buscando una palabra puntual, nunca de corrido.
-- `Admin/CHANGELOG.md` (muy pesado): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
-
-Con el punto 1 ya podés trabajar. Todo lo demás es a demanda.
-
----
+**No abrir por las dudas:** `Admin/finance-of-sports-project.md` (diario narrativo: contesta POR QUÉ se decidió algo viejo) y
+`Admin/CHANGELOG.md` (QUÉ cambió y CUÁNDO). Se consultan buscando una palabra puntual, nunca de corrido.
 
 ## 2. Antes de tocar nada: preguntar, no asumir
 
-Las reglas «pedido explícito de Guido» de `Admin/CONVENCIONES.md` no se negocian sin preguntarle (ahí está también qué hacer si una decisión nueva contradice una).
+Las reglas «pedido explícito de Guido» de `Admin/CONVENCIONES.md` no se negocian sin preguntarle. Una pregunta genuina sobre un documento,
+que no se responde con la fuente ni con los criterios ya escritos, va a `Admin/dudas-por-club.md` (la lista con la que Guido les escribe a
+los clubes), no a un comentario perdido ni a un criterio inventado.
 
-Si al leer un documento fuente queda una pregunta genuina (algo que no se puede inferir con confianza
-de la fuente ni de los criterios ya documentados), va a `Admin/dudas-por-club.md`, no a un comentario
-perdido en el código ni a un criterio inventado. Esa es la lista que Guido usa para escribirle
-directo a los clubes.
-
-**Cómo se trabaja con Guido:** un paso por vez, con un ejemplo real antes de hacerlo; tareas chicas, cerradas y commiteadas antes de abrir la siguiente; un mensaje por paso con las decisiones numeradas y la recomendación al lado. Las skills, `Admin/ESTADO.md` y los documentos de criterio dicen cómo es hoy: sin versiones, fechas de decisión, contadores fijos ni «to-do N» (`node tools/audit.js` avisa: `historia-en-doc-de-criterio`).
-
----
+Cómo se trabaja con Guido: `CLAUDE.md`, «Modo de trabajo».
 
 ## 3. Levantar el sitio local
 
-El sitio es estático (HTML + CSS + JS, sin build, sin backend). Usá `preview_start` con la config de
-`.claude/launch.json`, nunca un server por Bash.
-
-Si tocás `js/` o `data/` y el navegador te muestra lo viejo: subí `ASSET_V` (la constante y cada `?v=`) y navegá con `?cb=<algo nuevo>`. La regla y las trampas del navegador de preview: `Admin/PANTALLA.md`, «CACHE DE ASSETS» y «Trampas del navegador de preview».
-
----
+El sitio es estático (HTML + CSS + JS, sin build ni backend). `preview_start` con la config de `.claude/launch.json`, nunca un server por
+Bash. Si tocás `js/` o `data/` y el navegador muestra lo viejo: subí `ASSET_V` (la constante y cada `?v=`) y navegá con `?cb=<algo nuevo>`
+(`Admin/PANTALLA.md`, «CACHE DE ASSETS» y «Trampas del navegador de preview»).
 
 ## 4. Verificar antes de dar algo por bueno
 
-**`auditAll()` es el chequeo real del proyecto.** Abrí `?audit=1` o corrélo en la consola: fuerza la
-carga de TODOS los clubes y corre las 2 verificaciones (`verifyTieOuts()` compara la suma de los
-rubros de cada ejercicio contra el total que ese balance imprime; `checkFxSanity()` revisa que cada
-tipo de cambio caiga en un rango plausible).
+- **`auditAll()`** (`?audit=1` o la consola): carga TODOS los clubes y corre `verifyTieOuts()` (la suma de los rubros de cada ejercicio contra
+  el total que ese balance imprime) y `checkFxSanity()` (cada tipo de cambio en un rango plausible). Una carga normal audita solo Boca, así que
+  un error en un club que nadie mira es invisible. Correlo siempre que se toquen datos: lo que importa es que los «no cierran» y los warnings no
+  crezcan; un «no cierra» nuevo sin nota en `Admin/carga-clubes/<clubId>.md` es el que amerita parar.
+- **`node tools/audit.js`**: lo que cierra igual pero está mal (ejercicios sin total contra qué compararse, categorías con typo, errores de
+  escala, desgloses que se contradicen, catch-all dominante) y que los generadores estén al día. Sale con código 1 si hay P0 o P1; lo que
+  importa es 0 P0 y 0 P1. `--json` da la lista, `--quiet` sirve de gate, `--fx` lista los tipos de cambio y su procedencia.
+  `tools/audit-ignore.json` silencia solo lo verificado a mano contra el documento, con el motivo.
+- Cualquier verificación total pasa por `computeYearGeneric()`, el motor real; nunca reimplementar la cascada del resultado por afuera.
+- Una auditoría de rutina (el chequeo periódico, cada ~5 clubes nuevos o antes de un cambio grande): skill `auditoria-finance-of-sports`.
 
-Por qué importa: los clubes se cargan por demanda, así que una carga normal de la página audita SOLO
-Boca. Sin `auditAll()`, un error en un club que nadie está mirando es invisible.
+## 5. Antes de terminar
 
-**Correlo siempre antes de dar por cerrado algo que toque datos.** El número de clubes y de checks sube con
-cada sesión, así que no se compara contra un total: lo que importa es que los "no cierran" y los
-"warnings" no crezcan sin explicación. Un "no cierra" nuevo que no tenga ya una nota en su
-evidencia (`Admin/carga-clubes/<clubId>.md`, el título de ese ejercicio) es el que amerita parar.
+Lo que dice `CLAUDE.md`, «Antes de terminar la sesión». Si tocaste datos de un club hay archivos generados que regenerar (`audit.js` lo
+chequea como P1): `cargar.mjs --escribir`, `alta-club.mjs` y `lote.mjs --cargar` ya los corren solos; si cargaste o corregiste a mano,
+`node tools/publicar.mjs` (genera el data file desde el JSON, sube `ASSET_V`, corre los generadores y `audit.js`, y revierte lo suyo si
+da P0 o P1; `--ensayo` dice qué haría). La fuente de un club es su JSON (`data/<país>/<club>.json`); el `-data.js` se genera. Una fuente
+(título, url, nota pública) se edita con `node tools/fuente.mjs` y después se publica.
 
-**`node tools/audit.js` es el otro lado de lo mismo.** `auditAll()` verifica que cada
-ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igual: ejercicios sin
-ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, errores de
-escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un número 1000 veces más
-grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
-Tarda unos segundos y sale con código 1 si hay P0 o P1. Lo que importa es que siga en 0 P0 y
-0 P1; el conteo de P2 y P3 sube y baja con cada sesión. **También chequea que los 4 generadores estén
-al día** (`checkGenerados()`, P1): rankings, `fuentes.html` y sus páginas de club, el índice de clubes
-y el índice de `Admin/sourcing/README.md`.
+Generadores: `generate-fuentes-page.js` (`fuentes.html`), `generate-club-index.js` (`Admin/ESTADO-clubes.md`), `generate-rankings.js`
+(`data/rankings/`), `generate-fuentes-index.js` (índice de `Admin/sourcing/README.md`; si aborta es por diseño: decidir a mano con
+`OVERRIDES`). Todos aceptan `--check`. Ninguno de sus archivos se edita a mano.
 
-Para una auditoría DE RUTINA (no la verificación de un cambio puntual: el chequeo periódico de que
-el proyecto entero está sano y va a seguir estándolo) el procedimiento completo está en
-`.claude/skills/auditoria-finance-of-sports/SKILL.md`. Cadencia sugerida: cada ~5 clubes nuevos,
-antes de un cambio grande, o cuando algo se sienta raro sin un síntoma concreto que perseguir.
+## 6. Git
 
-REGLA: cualquier verificación total tiene que pasar por `computeYearGeneric()`, el motor real. NUNCA
-reimplementar la cascada del resultado por afuera — se probó, y una fórmula simplificada tiró 12
-falsos positivos porque no contemplaba `nonCash`, `profitOnPlayerSales`, `assetSales` ni `tax`.
+- `git commit` local: libre, después de cada chunk verificado, sin preguntar.
+- `git push`: no se hace, no se pide y no se menciona. El push a `main` es un deploy en Netlify y lo decide Guido. Un commit sin publicar
+  se dice «commiteado» y nada más.
 
----
+## Cómo mantener esta skill
 
-## 5. Antes de terminar: documentar
-
-Con cualquier cambio real, sin que Guido lo pida: lo que dice `CLAUDE.md`, «Antes de terminar la sesión» (en un worktree, la nota `Admin/sesiones/<rama>.md` en lugar de tocar TODO, CHANGELOG y ESTADO: ver `worktree.md`). Si se decidió una regla nueva o se contradijo una vieja, va a `Admin/CONVENCIONES.md` (proceso), `Admin/CONVENCIONES-DATOS.md` (datos) o `Admin/PANTALLA.md` (pantalla y código).
-
-**SI TOCASTE DATOS DE UN CLUB, HAY ARCHIVOS GENERADOS QUE REGENERAR** (`node tools/audit.js` lo
-chequea como P1). `cargar.mjs --escribir`, `alta-club.mjs` y `lote.mjs --cargar` ya los corren solos
-(`generate-club-index`, `generate-fuentes-page`, `generate-rankings`, `generate-como-corre-stats`, `generate-club-pages`), y
-`cargar.mjs` sube `ASSET_V`: ahí no los repitas.
-
-Si cargaste o corregiste a mano: `node tools/publicar.mjs`. Genera el data file desde el JSON (`generar-data.mjs`), sube `ASSET_V` una
-vez, corre los generadores (índice de clubes, fuentes, rankings, páginas de club y liga) y `audit.js`; si `audit.js` da P0 o P1 revierte
-lo que hizo él, no tu edición a mano. `--ensayo` dice qué haría sin escribir. Una fuente (título, url, nota pública) se edita con
-`node tools/fuente.mjs` y después se publica.
-
-**La fuente de un club es su JSON** (`data/<país>/<club>.json`): a mano, se edita ese archivo y se corre `publicar.mjs` (el `-data.js` se
-genera, no se toca). `audit.js` lo vigila (`json-js-desfasado`, `json-no-valida`, P1). Si subiste `ASSET_V` a mano, `publicar.mjs` también
-regenera las páginas de fuentes y `club/` con el número nuevo.
-
----
-
-## 6. Git: la regla del proyecto
-
-- **`git commit` local: libre.** Después de cada chunk verificado, sin preguntar.
-- **`git push`: no se hace, no se pide y no se menciona.** El push a `main` es un deploy automático en Netlify y lo decide y lo hace Guido por su cuenta. Un commit sin publicar se dice «commiteado» y nada más.
-
----
-
-## 7. Herramientas del repo
-
-- `node tools/audit.js` — auditoría determinista del proyecto entero, agrupada en P0/P1/P2/P3.
-  `--json` para la lista completa, `--quiet` para usarlo como gate antes de un push.
-  `tools/audit-ignore.json` silencia un hallazgo YA verificado a mano contra el documento, con el
-  motivo escrito — nunca uno sin verificar, que es justo el atajo que este proyecto no se puede dar.
-  `--fx` no audita: LISTA. Imprime los tipos de cambio, uno por club-ejercicio,
-  agrupados por moneda y ordenados por año, con de dónde salió cada uno (lo declara el balance, es
-  la premisa de un presupuesto, es una cotización de mercado de `FX_CLOSE`, o todavía no se sabe).
-  Es la respuesta a "¿de dónde salió este número?" sin abrir un solo archivo de club.
-- `node tools/generate-fuentes-page.js`: regenera `fuentes.html`, el listado completo de documentos
-  fuente del sitio (la página pública que linkean la ficha de Finanzas y la pestaña Fuentes), desde
-  las fuentes (`sources[]`) y los ejercicios (`years[]`) del JSON de cada club. Corrélo después de cargar un club o de tocar una fuente.
-  `--check` avisa si quedó vieja. NO editar `fuentes.html` a mano: se sobrescribe.
-- `node tools/generate-club-index.js` — regenera, desde el JSON de cada club (`data/<país>/<club>.json`), la sección
-  "QUÉ ES REAL POR CLUB" de `Admin/ESTADO-clubes.md`. Corrélo después de onboardear un club
-  en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
-  desactualizada respecto de los datos.
-- `node tools/generate-rankings.js` — precalcula el ranking de ingresos de cada
-  liga-ejercicio en `data/rankings/<liga>.js`, uno por liga. Corrélo después de cargar un club o
-  un ejercicio. `--check` avisa si quedó viejo (y `audit.js` lo corre solo, como P1), `--print`
-  imprime los rankings para verificarlos contra la fuente. Es lo que alimenta la pestaña Ligas.
-- `node tools/generate-fuentes-index.js` — regenera, desde los propios
-  `Admin/sourcing/_indice/<País>.md`, la sección "Índice de países" de `Admin/sourcing/README.md`: la línea de
-  cada país con sus 3 números (clubes trackeados, cuántos con documento, chequeo más antiguo) y el
-  párrafo de totales. Corrélo después de CUALQUIER sesión de sourcing, en vez de actualizar la línea
-  del país a mano. `--check` avisa si quedó vieja; `--debug` imprime la clasificación club por club.
-  **Lo que hay que saber antes de usarlo**: "con documento encontrado" no es un campo, es prosa libre
-  del agente de sourcing, así que se infiere con dos listas de regex (señales de SÍ / señales de NO).
-  Cuando una línea matchea señales de los dos lados o de ninguno, el script ABORTA en vez de
-  adivinar, y la decisión se toma a mano leyendo el `Admin/sourcing/<País>/<Club>.md` y se escribe en
-  `OVERRIDES`, adentro del script, con el motivo de cada decisión. Si
-  aborta, no es un bug: es el diseño.
-
----
-
-## Cómo mantener este skill
-
-Si aparece un paso de arranque, de verificación o de cierre que no está acá, proponele a Guido el texto exacto y esperá su ok. El texto exacto va a `Admin/propuestas/<tema>.md`, commiteado, antes del cambio.
-Si un paso resultó innecesario, proponé sacarlo. Este archivo tiene que poder leerse entero en un
-minuto: si crece mucho, es señal de que algo debería vivir en `Admin/CONVENCIONES.md` (una regla) o en
-`Admin/ARQUITECTURA.md` (cómo funciona algo), no acá (qué hacer y en qué orden).
+Si aparece un paso de arranque, de verificación o de cierre que no está acá, proponele a Guido el texto exacto en
+`Admin/propuestas/<tema>.md`, commiteado, y esperá su ok. Si un paso resultó innecesario, proponé sacarlo. Esta skill tiene que poder
+leerse entera en un minuto: lo que crece va a `Admin/CONVENCIONES.md` (una regla) o a `Admin/ARQUITECTURA.md` (cómo funciona algo).

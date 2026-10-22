@@ -17,6 +17,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 937 — Menos archivos y menos lectura al arrancar (2026-10-21)
+
+- `CLAUDE.md`: apertura nueva (sin el repo hermano); el bloque «Modo de trabajo» queda como lo único que hay que leer del modo de una sola sesión.
+- Skill de arranque reescrita: de 13,5 KB a ~7 KB (una tabla de qué leer según la tarea, verificar, cerrar, git). La skill `principal-finance-of-sports` y `worktree.md` salieron; su contenido está en `Admin/Archive/modo-varias-sesiones.md`.
+- `Admin/ESTADO-pipeline.md` desaparece: su resumen vigente entró en `ESTADO.md` (sección Pipeline) y el detalle por país ya estaba en `PIPELINE.md` y `ESTADO-clubes.md`.
+- Sin «Versión N», «to-do N» ni fechas de decisión (se conserva quién decidió y el caso) en `CONVENCIONES-DATOS.md`, `CONVENCIONES.md`, `ESTADO.md`, `PIPELINE.md`, `PANTALLA.md` y `ARQUITECTURA.md`. Quedan frases sueltas con «Versión N» en `PANTALLA.md` y `PIPELINE.md` (`historia-en-doc-de-criterio`, P3).
+- 10 propuestas ya aplicadas pasaron a `Admin/Archive/propuestas/` y las 6 notas de `Admin/sesiones/` a `Admin/Archive/sesiones-modo-anterior/`.
+
 ## Versión 936 — Segunda fuente de las ligas, cerrada (2026-10-21) [358]
 
 - `segunda-fuente-liga.mjs` sobre las 22 liga-temporadas que quedaban (páginas de RSSSF ya bajadas, sin API): 20 escritas en `tools/club-league-reference/` (Argentina 2025; Bélgica 2018-24; Suiza 2011-12; Championship 2022; Grecia 2021 y Super League 2 2018; Eerste Divisie 2025; Liga Portugal 2 2022-25; Premier rusa 2022-23). `liga-una-fuente` baja de 10 ligas a 2; P3 de 192 a 184; `liga-fuentes-no-coinciden` queda en 0.
