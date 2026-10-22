@@ -1071,6 +1071,11 @@ function checkGenerados() {
     const sinCorrer = GENERADORES.map((g) => g[0]).filter((s) => !corre.includes(s) && !['generar-data.mjs', 'validar-esquema-json.mjs'].includes(s));
     if (sinCorrer.length) add('P2', 'generador-sin-correr', `audit.js verifica ${sinCorrer.join(', ')} pero tools/generadores.mjs no lo corre al cerrar una carga: una carga que lo deje viejo se revierte. Sumalo a la lista de tools/generadores.mjs`);
   } catch { /* sin generadores.mjs: otro chequeo lo dice */ }
+  // cada .js y .mjs de tools/ está clasificado respecto del pipeline (TODO 376): una tool nueva sin clasificar se commitea sin medir
+  if (fs.existsSync(path.join(ROOT, 'tools/clasificar-tools.mjs'))) {
+    try { execSync('node tools/clasificar-tools.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+    catch (e) { add('P1', 'tool-sin-clasificar', String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ').slice(0, 300)); }
+  }
   // los lotes de prueba (TODO 371): una familia cargada sin documentos en la mediana, o un club cuyo último año con verificación no está en ella, y una medición no lo vería
   if (fs.existsSync(path.join(ROOT, 'tools/lotes-prueba.mjs'))) {
     try { execSync('node tools/lotes-prueba.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }

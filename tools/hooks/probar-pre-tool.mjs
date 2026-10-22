@@ -13,9 +13,11 @@ const bash = (command) => ({ tool_name: 'Bash', tool_input: { command } });
 
 // medicion-antes-del-commit (TODO 371): el registro de cada caso es un archivo de prueba (gitignoreado) y los cambios del commit se simulan con
 // FOS_CAMBIADOS; la huella es la real de la tool, así que la prueba falla si la versión de la tool no es la que el caso espera.
+const SIN_CLASIFICAR = 'zz-prueba-hook-sin-clasificar.mjs'; // se crea para la prueba y se borra al final
 function casosMedicion() {
   const dir = `${raiz}/Admin/mediciones/pipeline`;
   mkdirSync(dir, { recursive: true });
+  writeFileSync(`${raiz}/tools/${SIN_CLASIFICAR}`, '// archivo de prueba del hook\n');
   const huella = (n) => execFileSync('git', ['hash-object', `tools/${n}`], { cwd: raiz, encoding: 'utf8' }).trim();
   const registro = (nombre, lineas) => { const p = `${dir}/_prueba-hook-${nombre}.jsonl`; writeFileSync(p, lineas.map((l) => JSON.stringify(l)).join('\n') + (lineas.length ? '\n' : '')); return p; };
   const linea = (resultado, despues) => ({ fecha: '2026-10-22', tools: { 'cargar.mjs': { antes: 'x', despues } }, lote: { nivel: 'completo' }, resultado });
@@ -30,6 +32,9 @@ function casosMedicion() {
     ['medición: una tool editada después de medir frena', commit('x [sin-audit]'), 'deny', 'editada después de medir', 'una-sesion', env(registro('vieja', [linea('idéntico', 'a'.repeat(40))]))],
     ['medición: [sin-medicion] lo saltea', commit('x [sin-audit] [sin-medicion]'), 'pasa', undefined, 'una-sesion', env(registro('vacio2', []))],
     ['medición: una tool que no es del pipeline pasa', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', env(registro('vacio3', []), 'tools/fos.mjs,Admin/TODO.md')],
+    ['medición: un módulo que usa una tool del pipeline sin medición frena', commit('x [sin-audit]'), 'deny', 'vocabulario.mjs', 'una-sesion', env(registro('modulo', []), 'tools/vocabulario.mjs')],
+    ['medición: una tool nueva sin clasificar frena y dice cómo clasificarla', commit('x [sin-audit]'), 'deny', 'no_pipeline', 'una-sesion', env(registro('nueva', []), `tools/${SIN_CLASIFICAR}`)],
+    ['medición: una tool de no_pipeline pasa', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', env(registro('afuera', []), 'tools/mapa-codigo.mjs')],
     ['medición: un comando que no es commit pasa', bash('git status'), 'pasa', undefined, 'una-sesion', env(registro('vacio4', []))],
   ];
 }
@@ -81,6 +86,7 @@ for (const [nombre, entrada, esperado, texto, modo, extra] of casos) {
   if (!ok) mal++;
   console.log(`${ok ? 'ok ' : 'MAL'} ${nombre}: ${real}${ok ? '' : ` (esperado ${esperado}${texto ? ` con «${texto}»` : ''}): ${motivo.slice(0, 160)}`}`);
 }
+unlinkSync(`${raiz}/tools/${SIN_CLASIFICAR}`);
 for (const f of readdirSync(`${raiz}/Admin/mediciones/pipeline`)) if (f.startsWith('_prueba-hook-')) unlinkSync(`${raiz}/Admin/mediciones/pipeline/${f}`);
 console.log(mal ? `\n${mal} caso(s) MAL` : `\n${casos.length} casos, todos ok`);
 process.exit(mal ? 1 : 0);

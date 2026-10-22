@@ -48,6 +48,7 @@
 import { execFileSync } from 'node:child_process';
 import { appendFileSync, existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { clasificar } from '../clasificar-tools.mjs';
 
 const entrada = JSON.parse(readFileSync(0, 'utf8') || '{}');
 const herramienta = entrada.tool_name || '';
@@ -96,10 +97,15 @@ function medicionAntesDelCommit(cmd) {
   try { raiz = git(['rev-parse', '--show-toplevel']).trim(); } catch { return; }
   const tabla = join(raiz, 'tools', 'pipeline-tools.json');
   if (!existsSync(tabla)) return; // otro repo
-  const tools = JSON.parse(readFileSync(tabla, 'utf8')).tools;
   const cambiados = process.env.FOS_CAMBIADOS ? process.env.FOS_CAMBIADOS.split(',')
     : [...git(['diff', 'HEAD', '--name-only']).split('\n'), ...git(['ls-files', '--others', '--exclude-standard']).split('\n')];
-  const tocadas = [...new Set(cambiados.filter(Boolean))].map((f) => f.match(/^tools\/([^/]+)$/)?.[1]).filter((n) => n && tools[n] && existsSync(join(raiz, 'tools', n)));
+  const nombresCambiados = [...new Set(cambiados.filter(Boolean))].map((f) => f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter((n) => n && existsSync(join(raiz, 'tools', n)));
+  if (!nombresCambiados.length) return;
+  // una tool de la tabla o un módulo que ellas usan (tools/clasificar-tools.mjs); una tool sin clasificar tampoco se commitea sin decir qué es
+  const C = clasificar(raiz);
+  const sinClasificar = nombresCambiados.filter((n) => C.clase(n) === 'sin_clasificar');
+  if (sinClasificar.length) decidir('deny', `Commit frenado: ${sinClasificar.join(', ')} no ${sinClasificar.length > 1 ? 'están clasificadas' : 'está clasificada'} respecto del pipeline. Sumá cada una a «tools» (con medidores y alcance) o a «no_pipeline» (con el motivo) en tools/pipeline-tools.json; node tools/clasificar-tools.mjs <archivo> dice en qué clase está.`);
+  const tocadas = nombresCambiados.filter((n) => ['tools', 'modulo'].includes(C.clase(n)));
   if (!tocadas.length) return;
   const registro = process.env.FOS_REGISTRO || join(raiz, 'Admin', 'registros', 'mediciones-pipeline.jsonl');
   const lineas = existsSync(registro) ? readFileSync(registro, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];

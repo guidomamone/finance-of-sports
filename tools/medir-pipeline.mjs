@@ -38,6 +38,7 @@ import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { resolve, join } from 'node:path';
 import { familiaDe } from './familias-docs.mjs';
+import { clasificar } from './clasificar-tools.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -74,14 +75,21 @@ const cambiadas = flag('--tools') ? flag('--tools').split(',').map((s) => s.trim
   ...git('diff', '--name-only', base, '--', 'tools').split('\n'),
   ...git('ls-files', '--others', '--exclude-standard', '--', 'tools').split('\n'),
 ].filter((f) => /^tools\/[^/]+$/.test(f)).map((f) => f.slice(6)))];
-const nombres = cambiadas.filter((n) => T.tools[n]);
-const fuera = cambiadas.filter((n) => !T.tools[n] && /\.(mjs|js)$/.test(n));
-if (fuera.length) console.log(`Tools cambiadas que NO están en pipeline-tools.json (si son del pipeline, sumarlas; si no, ignorar): ${fuera.join(', ')}`);
-if (!nombres.length) { console.log('Ninguna tool de pipeline-tools.json cambió respecto de ' + base + ': nada que medir.'); process.exit(0); }
+// una tool de la tabla, o un módulo que una de la tabla usa (sus medidores son los de quienes lo usan): tools/clasificar-tools.mjs
+const C = clasificar(ROOT);
+const info = (n) => T.tools[n] || { alcance: 'compartida', medidores: C.modulos.get(n)?.medidores || [] };
+const sinClasificar = cambiadas.filter((n) => /\.(mjs|js)$/.test(n) && C.clase(n) === 'sin_clasificar');
+if (sinClasificar.length) { console.error(`Tools sin clasificar: ${sinClasificar.join(', ')}. Sumalas a «tools» o a «no_pipeline» de tools/pipeline-tools.json (node tools/clasificar-tools.mjs <archivo>).`); process.exit(1); }
+const sinMedidor = cambiadas.filter((n) => C.clase(n) === 'sin_medidor');
+if (sinMedidor.length) console.log(`Del pipeline pero sin medidor que las ejercite (no se pueden medir todavía): ${sinMedidor.join(', ')}`);
+const nombres = cambiadas.filter((n) => ['tools', 'modulo'].includes(C.clase(n)));
+const modulosCambiados = nombres.filter((n) => !T.tools[n]);
+if (modulosCambiados.length) console.log(`Módulos que usan tools del pipeline (se miden con los medidores de quienes los usan): ${modulosCambiados.join(', ')}`);
+if (!nombres.length) { console.log('Ninguna tool del pipeline (ni módulo que usen) cambió respecto de ' + base + ': nada que medir.'); process.exit(0); }
 
 // ---- plan ------------------------------------------------------------------
-const medidores = [...new Set(nombres.flatMap((n) => T.tools[n].medidores))].filter((m) => !flag('--medidor') || flag('--medidor').split(',').includes(m));
-const minimo = nombres.some((n) => T.tools[n].alcance === 'compartida') ? 'completo' : 'mediano';
+const medidores = [...new Set(nombres.flatMap((n) => info(n).medidores))].filter((m) => !flag('--medidor') || flag('--medidor').split(',').includes(m));
+const minimo = nombres.some((n) => info(n).alcance === 'compartida') ? 'completo' : 'mediano';
 // los medidores que miden todo el sitio (audit, caja-deuda, contexto, xhtml, alta) no usan lista: con solo esos, el lote es «el sitio» y no hay cobertura que exigir
 const hayLista = medidores.some((m) => T.medidores[m].usaLista);
 let nivelFinal = hayLista ? (flag('--lote') || minimo) : 'chico';
@@ -92,8 +100,8 @@ const SOLO_CHICO = A.includes('--solo-chico'); // para probar la máquina: solo 
 const completa = leerLista('completo');
 const porFamilia = (docs) => docs.reduce((m, p) => { const k = familiaDe(p).clave; m.set(k, (m.get(k) || 0) + 1); return m; }, new Map());
 const total = porFamilia(completa);
-const filtros = nombres.map((n) => T.tools[n].familia).filter(Boolean);
-const todasConFiltro = nombres.every((n) => T.tools[n].familia);
+const filtros = nombres.map((n) => info(n).familia).filter(Boolean);
+const todasConFiltro = nombres.every((n) => info(n).familia);
 const afectadas = [...total.keys()].filter((k) => !todasConFiltro || filtros.some((f) => completa.some((p) => { const fa = familiaDe(p); return fa.clave === k && (!f.pais || f.pais === fa.pais) && (!f.formato || f.formato === fa.formato); })));
 if (hayLista && !afectadas.length) { console.error(`Ninguna familia (país × formato) con verificación coincide con ${JSON.stringify(filtros)}: el lote no puede cubrir lo que el cambio toca. Cargá o verificá documentos de esa familia antes de medir.`); process.exit(1); }
 const faltan = (nivel) => { const t = porFamilia(leerLista(nivel)); return afectadas.filter((k) => (t.get(k) || 0) < Math.min(3, total.get(k))); };

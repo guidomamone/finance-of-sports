@@ -60,6 +60,11 @@
   "quien": "script",
   "donde": "CLAUDE.md, el índice de los .md"
  },
+ "tool-sin-clasificar": {
+  "hacer": "Sumar la tool a «tools» (con sus medidores y alcance) o a «no_pipeline» (con el motivo) en tools/pipeline-tools.json; node tools/clasificar-tools.mjs <archivo> dice en qué clase está",
+  "quien": "sesion",
+  "donde": "Admin/PIPELINE.md, «Medir un cambio a una tool»"
+ },
  "lote-prueba-desfasado": {
   "hacer": "node tools/lotes-prueba.mjs (publicarCambios lo corre solo al cerrar una carga)",
   "quien": "script",

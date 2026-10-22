@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 956 — 376: cada tool de tools/ clasificada respecto del pipeline (2026-10-22) [376]
+
+- `tools/clasificar-tools.mjs`: cada .js y .mjs de primer nivel cae en una clase: en la tabla (38), módulo que una tool de la tabla usa (75, calculado por los imports; se miden con los medidores de quienes los usan), `no_pipeline` con motivo (44), `sin_medidor` (1: `armar-a-mano.mjs`). `audit.js` suma `tool-sin-clasificar` (P1). Se sumaron a la tabla `pipeline.mjs`, `lote-batch.mjs`, `extraer-etiquetas.mjs`, `bfo-rusia-notas.mjs`, `gestiones-tanda.mjs` y `recategorizar-subsidios.mjs`.
+- Lo que el 371 no cubría: un módulo compartido (`vocabulario.mjs`, `rutas.mjs`, `ajustes.mjs`…) cambiaba lo que da una tool del pipeline sin medición. Ahora `medir-pipeline` y el hook lo tratan como a la tool que lo usa (un cambio a `rutas.mjs` pide el lote completo con 7 medidores). El hook también frena una tool nueva sin clasificar. 42 casos de prueba del hook, todos ok; negativo del aviso probado con una tool de prueba y revertido.
+- Medido con `medir-pipeline` (audit): idéntico. Sin revisión independiente.
+
 ## Versión 955 — 373: mapa de código, contrato entre etapas y regla de no leer archivos grandes enteros (2026-10-22) [373]
 
 - `tools/mapa-codigo.mjs` (`node tools/fos.mjs mapa <archivo> [--buscar texto]`): funciones con su rango de líneas, regiones por banner, tramos adentro de las funciones largas, cabecera e imports. Probado en los 6 archivos de más de 70 KB: 237 rangos, todos parsean como función (3 dudosos marcados con «?»).
