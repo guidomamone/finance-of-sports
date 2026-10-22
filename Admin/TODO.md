@@ -23,16 +23,41 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 
 ## A. En marcha
 
-### 1. 368 · (Pipeline, con la Auditora): leer el costo de personal de un club inglés sin ajustes manuales y sin que lo vuelva a romper
+### 1. 373 · (Orden, prioridad 2): leer código sin quemar tokens: una regla, un mapa de código y el contrato entre etapas
+
+Barato y no toca la lógica del pipeline. MEDIDO el 2026-10-22: una sesión nueva que toma un punto de Pipeline gasta unos 90.000 tokens en leer código entero. Tamaños en bytes: verificar 222 KB (7 funciones de nivel superior, de unas 270 líneas cada una), alta-club 184 KB, cargar 170 KB (23 funciones), audit.js 161 KB (55 funciones, 43 son chequeos independientes), caja-deuda 145 KB (50 funciones), lote 73 KB (un script lineal, una sola función), vocabulario 73 KB, perimetro-senales 66 KB, y `Admin/PIPELINE.md` 136 KB. El pipeline está segmentado ENTRE etapas (se pasan archivos: .filas.json, .verificacion.json, .categorias.json, .jev.json; los módulos compartidos ya son ajustes, rutas, vocabulario, club-json, cierre-vecinos, deporte-club e ixbrl-resultado) pero no DENTRO de cada archivo. Un segmento alcanza para un arreglo local; no alcanza cuando el cambio altera lo que pasa entre etapas. Caso real: `--partir` de caja-deuda necesita que verificar aplique el ajuste, que la etapa 5 recategorice y que cargar con `--desde-verificacion` reemplace el año; sin saberlo, la cadena frenaba con «el .categorias.json NO está al día».
+DEPENDE DE: el 371 (cerrado: la medición de antes y después de este punto se hace con `node tools/fos.mjs medir pipeline` y los bytes leídos).
+1. REGLA en `CLAUDE.md` (se escribe al ejecutar el punto, con el ok de Guido): ningún archivo de tools/ de más de 50 KB se lee entero; se usa grep -n y Read con offset y limit.
+2. MAPA DE CÓDIGO: `node tools/fos.mjs mapa <archivo>` lista las funciones con su rango de líneas, el comentario de cabecera y los imports, y marca las regiones por los banners de comentario. Es como el índice de los .md pero para código. Lo que no se puede mapear (lote.mjs, una sola función) lo dice. Se prueba en los archivos de más de 50 KB.
+3. CONTRATO ENTRE ETAPAS. Revisada la apertura de `Admin/PIPELINE.md` (el bloque «El proceso nuevo», hasta la etapa 1): NO sirve como contrato. Es la lista de comandos de lote y viñetas sobre `lote.mjs`; no hay una tabla por etapa de qué archivos lee, cuáles escribe, qué los invalida (las huellas de `tools/huellas.mjs`, el `mdSha1`, la huella de la ubicación) y con qué comando se rehace; lo que hay está desparramado en viñetas. Entonces el punto es armar una página corta (menos de 150 líneas, adentro de Admin) con esa tabla, y que `PIPELINE.md` la cite. Cada fila se verifica contra el código en tres casos reales, no de memoria: la cadena de `--partir` de caja-deuda, `cargar.mjs --desde-verificacion` y `lote.mjs --rehacer`.
+4. La skill de onboarding y la de arranque citan el mapa y el contrato en lugar de mandar a leer archivos grandes (el texto de una skill lo ve Guido en el diff; commit aparte).
+5. MEDIR el efecto: el mismo punto de Pipeline, antes y después, contando los bytes leídos por la sesión.
+Terminado cuando: la regla está en CLAUDE.md, el mapa existe y se probó en los archivos de más de 50 KB, el contrato está verificado en los tres casos, las skills lo citan y la medición de bytes leídos antes y después está en `Admin/HALLAZGOS-pipeline.md`.
+
+Verificar: existe tools/mapa-codigo.mjs
+Verificar: existe Admin/CONTRATO-ETAPAS.md
+Verificar: contiene CLAUDE.md | 50 KB
+
+### 2. 376 · (Pipeline): que audit.js avise cuando una tool nueva de tools/ no está clasificada en pipeline-tools.json
+
+El 371 hizo que un cambio a una tool de `tools/pipeline-tools.json` no se commitee sin medir; pero una tool NUEVA del pipeline que nadie suma a la tabla se commitea sin medición y el hook ni se entera. Hoy solo `medir-pipeline` avisa de las tools que cambiaron y no están en la tabla (y `fos.mjs --check` lista las sueltas de `fos-comandos.json`), cuando ya es tarde. Propuesta: en `tools/pipeline-tools.json` una lista `no_pipeline` (las tools declaradas de afuera del pipeline, con una palabra de por qué: sitio, auditoría, utilidad) y un aviso nuevo de `audit.js`, `tool-sin-clasificar` (con su entrada en `tools/audit-acciones.json`): salta por cada .js o .mjs de tools/ que no esté ni en `tools` ni en `no_pipeline`. Prioridad del aviso: P1, así el hook de audit que ya corre antes de cada commit frena el commit que agrega la tool sin clasificar. Antes hay que clasificar las que ya existen (unos 170 archivos): proponer la clasificación por quién llama a quién y que la sesión la confirme; medir `audit.js` con `medir-pipeline` (el cambio es un chequeo nuevo: la salida de audit solo debe sumar ese código).
+DEPENDE DE: el 371 (cerrado).
+Terminado cuando: todas las tools de tools/ están clasificadas, el aviso existe y da 0, y una tool de prueba sin clasificar lo dispara (probado y revertido).
+
+Verificar: audit tool-sin-clasificar = 0
+Verificar: contiene tools/pipeline-tools.json | no_pipeline
+
+### 3. 368 · (Pipeline, con la Auditora): leer el costo de personal de un club inglés sin ajustes manuales y sin que lo vuelva a romper
 
 LA LIGA MÁS IMPORTANTE NO SE RESUELVE A PURO AJUSTE (Guido, 2026-10-22). El 351 resolvió 38 club-años a mano con `caja-deuda.mjs --personal --partir`; seguirán llegando años parecidos. Diagnóstico de por qué el script no lo hace solo en los 20 que quedan (y en los que vendrán): (1) la compuerta del vecino exige que el año SIGUIENTE (o el anterior) coincida, y una sola lectura mala o la falta del último año rompe la cadena (Newcastle 2023-24, West Ham 2023-24: el valor era plausible); (2) Jev elige entre 10 a 40 «filas de total» y a veces dice «ninguna» o elige con 0,48 (Brighton 2023, Celtic, Aston Villa 2019); (3) el documento trae dos notas de personal, la de la sociedad y la del grupo, y el script toma la primera (Aston Villa 2019-22: 8,3 M£ de la filial sin jugadores); (4) tablas en £m o £000 sin leer la escala de su encabezado (Fulham: 0,09 M£ en lugar de 90 M£); (5) un estado de resultados por función reparte los sueldos entre costo de ventas y administración: ninguna fila alcanza y `--partir` solo puede marcar «posiblemente dentro de…».
 POR QUÉ LOS 20 QUE QUEDAN NO SE LEEN A MANO TODAVÍA: casi todos son límites del script, no del documento. Por club: Newcastle 2019 (Jev dijo «ninguna» entre 9 filas), 2023 (valor plausible, 186,7 M£, rechazado porque el documento siguiente lo reexpresa) y 2024 (218,7 M£, sin vecino por ser el último año); West Ham 2023 y 2024 (igual: 135,3 y 161,0 M£ plausibles, sin vecino); Brighton 2023 (Jev ninguna entre 10 filas); Fulham 2021-23 (candidatos en tabla de £m leída como millones sin escala: 0,09 en vez de 90); Celtic 2021-25 (sin filas de total o 23 a 42 candidatos sin elegir); Aston Villa 2019-22 (la nota de 7 a 9 M£ es la de la sociedad filial, sin jugadores: sí hay que mirar el consolidado del grupo NSWE o confirmar que los sueldos están en otra entidad); Instituto 2025 (el anexo de remuneraciones no tiene fila de total: ese es de lectura, no de script). Recursión, por qué el enganche va aparte: si `publicarCambios()` (el cierre de una carga) corriera la cadena de sueldos, esa cadena recarga años con `cargar.mjs`, que vuelve a terminar en `publicarCambios()`: una carga abierta adentro de otra, con dos snapshots, y el que revierte por un P1 revierte mal.
-ANTES DE CODEAR NADA DE ESTO: el punto 371 (medir antes y después). Lo ya cambiado en `caja-deuda.mjs` en el 351 está sin medir y se mide primero.
+LO CAMBIADO EN `caja-deuda.mjs` EN EL 351 YA ESTÁ MEDIDO (371, `Admin/registros/mediciones-pipeline.jsonl`): idéntico en caja, deuda y `--personal`. Todo cambio de acá en adelante se mide con `node tools/fos.mjs medir pipeline` y el hook lo exige.
+PRIMER PASO, antes de mejorar nada: extraer el bloque del costo de personal (líneas ~1246 a 1441 de `caja-deuda.mjs`, autocontenido) a su módulo propio, sin cambios, y medirlo (idéntico). Mejorar después. Es la partición (2) del punto 375; el 375 no la repite.
 Propuesta, sin romper lo viejo (medir antes y después, sección 8 de `auditoria-finance-of-sports`):
 - ESCALÓN 0, gratis y exacto: en los `-ixbrl.md`/XHTML el costo de personal es un hecho etiquetado (`ifrs-full:EmployeeBenefitsExpense`, `uk-gaap`/`core:StaffCosts`, `EmployeesTotalStaffCosts`) con su contexto (grupo o sociedad: el mismo `ConsolidatedSoloDimension` que ya lee `ixbrl-resultado.mjs`). Hoy ningún club británico de los nuevos pasa por Jev para esto.
 - ESCALÓN 1, determinista, para los PDF: leer la nota «Staff costs/Employee costs» por su estructura (sueldos + seguridad social + pensiones = total, la identidad aritmética que ya usa el «total sin rótulo»), elegir la nota del PERÍMETRO del estado de resultados que se carga (columnas «Group»/«Company» o título «Consolidated») y leer la escala del encabezado de esa tabla. Cuando la identidad cierra y la nota es del perímetro, el vecino deja de ser obligatorio (hoy es la causa de 10 de los 20); sigue sumando a favor.
 - ESCALÓN 2: Jev, como hoy, sobre lo que el escalón 1 no resolvió; sin vecino ni identidad queda sin dato y el aviso lo dice.
-- La compuerta de plausibilidad (menos de 15 % de los ingresos no es el personal) no se probó contra lo ya aceptado: medirla contra todos los `staffCost` cargados (cuántos caen por debajo de 15 % o 20 %, en qué deportes y con qué ingreso: un año con una venta récord de jugadores baja el cociente) y contra `Admin/mediciones/personal-verdad.tsv`, que se amplía con los 38 valores del 351. Ajustar el umbral con esa tabla, no a ojo.
+- La compuerta de plausibilidad (menos de 15 % de los ingresos no es el personal) se midió (`Admin/mediciones/371-compuerta-personal.txt`): de los 9 `staffCost` cargados no rechaza ninguno (el mínimo es 28,8 %), pero 9 son pocos; con los sueldos cargados sobre ingresos de 1109 club-años, 22 (2,0 %) quedan bajo 15 %, casi todos sueldos escondidos o de otra entidad. Falta ampliar `Admin/mediciones/personal-verdad.tsv` (hoy 10 filas de 2 clubes) con los 38 valores del 351 y volver a medir; ajustar el umbral con esa tabla, no a ojo.
 - Dónde se estira cuando el estado es por función: guardar `staffCost` y mostrar en la fila «Salarios y primas» un valor informativo («dentro de Costo de ventas y Administración») sin mover los totales, en lugar de dejarla en 0 con «posiblemente». Decisión de pantalla para Guido antes de codear.
 - Enganche sin recursión: `publicarCambios()` NO corre la cadena adentro (cargar llamaría a cargar). Escribe el club en una lista de pendientes (un archivo de pendientes en Admin/registros) y un paso aparte (`node tools/fos.mjs personal`, y un aviso de `audit.js`, `sin-salarios` con la acción «correr `fos personal`») la consume después de que la carga cerró. Un hook de pre-commit no hace falta: el aviso P2 de la auditoría ya frena nada y obliga a verlo.
 DEPENDE DE ESTE PUNTO: el 351 (no leer a mano los 20 hasta que esto esté medido).
@@ -41,7 +66,34 @@ Terminado cuando: los 20 club-años que quedan del 351 salen solos o con el moti
 Verificar: audit sin-salarios = 0
 Verificar: existe tools/costo-personal.mjs
 
-### 2. 370 · (Auditora, prioridad 3): llevar los P2 y los P3 de la auditoría a 0, o decir por qué un aviso no puede llegar
+### 4. 374 · (Orden, con la Auditora): comentarios de tools/ que no dicen nada: medir, criterio, limpiar solo comentarios
+
+Muchos comentarios del código son ruido: historia («Versión N», «to-do N», fechas de decisión, «ver Admin/…» a documentos archivados), explicaciones de un caso viejo ya resuelto, comentarios que repiten el código, cabeceras largas con lo que ya está en `Admin/PIPELINE.md` y comentarios que dicen lo contrario de lo que el código hace hoy. Es el criterio que ya rige para los documentos de criterio en `CLAUDE.md` («sin historia, sin contadores, las menos palabras que una sesión siga entendiendo»), aplicado al código; y cada línea de ruido se lee en cada sesión que abre el archivo.
+DEPENDE DE: el 368 (después) y el 371 (cerrado: la prueba de comparación entra a la tabla de mediciones). Lo que ayuda al 373 (mapa).
+1. MEDIR primero, sin tocar nada: por archivo de tools/, bytes de comentarios sobre bytes totales, cantidad de referencias a «Versión N», «to-do N» y fechas AAAA-MM-DD, y cabeceras de más de 25 líneas. Una opción de audit.js o una tool (la sesión elige) que lo imprima, y un aviso P3 de audit.js que lo vigile, como `historia-en-doc-de-criterio`.
+2. CRITERIO escrito (en la skill de onboarding o en `Admin/CONVENCIONES.md`; la sesión elige): se queda el POR QUÉ no obvio, la invariante, el caso real que justifica una regla (sin la versión), el USO de la tool en pocas líneas y las trampas. Se va la historia, la numeración de to-dos, la narración de una sesión y lo que el código ya dice.
+3. LIMPIAR por archivo, de los más chicos y el que más ruido tenga hacia los grandes, SOLO comentarios. Prueba obligatoria de que no cambió la lógica: el código sin comentarios, antes y después, idéntico. Ya existe `tools/comparar-sin-comentarios.js` para index.html y js/ (no hay acorn en tools/node_modules): extenderla a tools/ (comparar contra HEAD, más `node --check`). Esa prueba entra a `tools/pipeline-tools.json` como el medidor de este tipo de cambio; por eso un cambio de solo comentarios no necesita el lote completo, pero sí esa comparación.
+4. Lo que un comentario dice y el código ya no hace se anota como hallazgo (en `Admin/HALLAZGOS-pipeline.md`); no se arregla en esta pasada.
+Terminado cuando: hay medición, criterio y prueba de comparación; los archivos de más de 50 KB están limpios y el aviso del paso 1 da 0 o un número aceptado.
+
+Verificar: audit comentario-historico-en-tools = 0
+Verificar: contiene tools/pipeline-tools.json | comparar-sin-comentarios
+
+### 5. 375 · (Pipeline): partir los archivos grandes de tools/ en módulos, sin cambiar el comportamiento
+
+UNA SOLA LEY: movimiento puro, con re-exports para que los llamadores no cambien, medido con `node tools/fos.mjs medir pipeline` (lote completo idéntico, salida de audit.js idéntica, los 39 casos de `tools/hooks/probar-pre-tool.mjs`). Cada partición, un commit y su línea en `Admin/registros/mediciones-pipeline.jsonl`. De menor a mayor riesgo:
+1. audit.js: una familia de chequeos por archivo, registrados en el mismo punto de entrada (los chequeos son independientes).
+2. caja-deuda.mjs: el bloque del costo de personal lo extrae el punto 368 como primer paso; acá siguen el parseo del .md, las propuestas y la escala.
+3. cargar.mjs, el corazón: por las regiones de sus banners.
+4. verificar.mjs al final o nunca: tiene 7 funciones de unas 270 líneas, partirlo es cortar adentro de funciones. alta-club.mjs (184 KB) se mapea antes de decidir. lote.mjs es un script lineal: solo se parte por etapas si el mapa del 373 muestra regiones claras.
+RIESGOS A NOMBRAR en cada partición: estado compartido a nivel de módulo, ciclos de imports, tools que corren como módulo y como comando (el bloque de arranque y `import.meta`), constantes que se evalúan al importar.
+OBJETIVO MEDIBLE: tamaño máximo por archivo de 40 KB y una cabecera de menos de 15 líneas por módulo; lo que quede arriba, con una excepción escrita con su motivo.
+DEPENDE DE: el 374 (comentarios limpios primero: no se mueve ruido), el 373 (el mapa dice dónde cortar) y el 368 (extrae el bloque de personal).
+Terminado cuando: ningún archivo de tools/ pasa del tamaño máximo acordado (o queda una excepción escrita con motivo) y cada partición tiene su línea en el registro de mediciones.
+
+Verificar: manual
+
+### 6. 370 · (Auditora, prioridad 3): llevar los P2 y los P3 de la auditoría a 0, o decir por qué un aviso no puede llegar
 
 DIAGNÓSTICO (2026-10-22), `node tools/audit.js --acciones`: P2 23 y P3 132 (131 con el índice de los .md al día). P2: 19 `sin-salarios` (el 368), `moneda-sin-meta` (Beşiktaş, TRY: agregar la moneda a `CURRENCY_META`, mecánico), `balance-sin-pat` (Aston Villa 2019, sale con el 368), y `doc-interno-no-excluido` + `raya-larga-visible` de `correcciones.html` (el 364). P3: 90 `catchall-dominante` (51 de ingresos y 39 de gastos; Portugal 23, Estonia 16, Bélgica 13, Grecia 10, Noruega 9). De esos 90, la mayoría NO se puede llevar a 0 con datos, es un límite de la fuente: la etiqueta más grande del catch-all es ella misma un «otros» del documento («diensten en diverse goederen» del esquema abreviado belga, «прочие затраты» ruso, «annen driftskostnad» noruego, «outros rendimentos»); unos 20 son subsidios sin la palabra (el 369). Otros 13 P3 son informativos que no piden nada (`gestion-club-inexistente`, `cambio-de-formato`, `cobertura`, `categoria-sin-bucket`, `signos-menores`, `dedu-fiscal-conocida`, `nombres-repetidos-sourcing`, `proyeccion`): mientras cuenten como P3 el total no baja de 13. El resto: 9 `ejercicio-sin-rastro`, 7 `outlier-liga`, 2 `liga-una-fuente`, 3 `historia-en-doc-de-criterio` y los sueltos.
 Propuesta: (1) `catchall-dominante` reconoce el límite de la fuente por el vocabulario (`tools/vocabulario.mjs` ya es multilingüe) y baja a un código informativo con la etiqueta; (2) un nivel P4 «informativo» para los 13 que no piden nada, con `audit.js` contándolos aparte; (3) la acción de `catchall-dominante` en `tools/audit-acciones.json` quedó vieja («esperar la categoría de subsidios»): reescribirla; (4) los avisos de datos que sí piden trabajo (TRY, 9 ejercicios sin rastro, 7 outliers) se hacen o se silencian con `tools/silenciar.mjs` y su verificación.
@@ -50,7 +102,7 @@ Terminado cuando: `node tools/audit.js` da P2 0 y P3 solo con lo que pide trabaj
 Verificar: audit moneda-sin-meta = 0
 Verificar: manual
 
-### 3. 369 · (Pipeline, con la Auditora): un proceso para aprobar etiquetas de una categoría nueva, sin que Guido lea cada una
+### 7. 369 · (Pipeline, con la Auditora): un proceso para aprobar etiquetas de una categoría nueva, sin que Guido lea cada una
 
 HOY LAS 164 ETIQUETAS DE SUBSIDIOS SE DECIDIERON CON MI EXPRESIÓN REGULAR, NO CON JEV (2026-10-22). Las 67 excluidas salen de reglas objetivas (mezcladas, solidaridad de la federación o la liga, subvención de capital imputada, impuestos), no de una confianza baja. Y la expresión no ve lo que no tiene la palabra: en los avisos `catchall-dominante` que quedan hay etiquetas que son subsidios sin decirlo («Tartu linnavalitsus» = ayuntamiento de Tartu, «Sihtfinantseerimine tegevuskuludeks» = financiación dirigida a gastos de operación, «Αποζημίωση ειδικού σκοπού αθλητικών σωματείων» = compensación del Estado a los clubes, «Acordo de gestão» = convenio con el municipio, «EJL toetused» = excluida por la regla de solidaridad). Se necesita un proceso, no una lista.
 Propuesta: una tool nueva, recategorizar-etiquetas, que recibe la categoría (generaliza `recategorizar-subsidios.mjs`): (1) las reglas objetivas deciden lo claro (se conservan); (2) a TODAS las líneas de `other_income`/`other_expenses` se les pregunta a Jev (Jev categoriza con la REGLA de la categoría como prompt, ya registrada por `reglas-categoria.mjs`): confianza de 0,90 o más pasa sola; (3) lo que queda entre 0,50 y 0,90 va a un agente Sonnet con prompt fijo (como `dato-publico.mjs --prompt`) que devuelve etiqueta, categoría, motivo y la cita; sin cita o en conflicto con las reglas de (1), a Guido en UNA lista corta, no a mano una por una; (4) todo queda en el JSON de decisiones (aprobada/excluida/motivo/quién); (5) un aviso P3 de `audit.js`, `etiqueta-sin-revisar`, cuando una línea nueva de `other_income` matchea una categoría con regla y no está en el JSON. Medir con el backtest de Jev (`jev-categorizar.mjs --backtest`) antes de confiar: cuántas de las 97 aprobadas y las 67 excluidas de hoy reproduce Jev solo.
@@ -59,7 +111,7 @@ Terminado cuando: las etiquetas que hoy se escapan (las de arriba) pasan por el 
 Verificar: existe tools/recategorizar-etiquetas.mjs
 Verificar: contiene tools/audit.js | etiqueta-sin-revisar
 
-### 4. 351 · (Onboarding): sueldos de los británicos y de Instituto 2025 que siguen sin separar (quedan 20 club-años)
+### 8. 351 · (Onboarding): sueldos de los británicos y de Instituto 2025 que siguen sin separar (quedan 20 club-años)
 
 HECHO (2026-10-22): de los 58 club-años con aviso `sin-salarios`, 38 quedaron resueltos: 12 con el sueldo partido de «Administrative expenses» (Leeds 2019-23, Liverpool 2022-23, Nottingham Forest 2022-23, West Ham 2020-22), 17 marcados «posiblemente dentro de…» donde el estado por función reparte los sueldos (Brentford 2022-23, Brighton 2020-22, Newcastle 2020-22, Sunderland 2019-23, Wolves 2020-23; todo con `tools/caja-deuda.mjs --personal --partir --escribir`) y 9 de los británicos nuevos del 356, que ya estaban marcados y ahora `audit.js` acepta. Se agregó la compuerta de plausibilidad (menos de 15 % de los ingresos no se usa), el respaldo `incluye`, la cadena entera sola (ajustes → verificar → Jev → Claude → cargar) y se arregló un defecto: el segundo año de un club figuraba como «ya tiene los ajustes». `audit.js` acepta la marca `incluye` sobre los sueldos como resuelto. Las recargas reaplican todo desde `Admin/registros/ajustes-manuales.jsonl`.
 QUEDAN (hay que leer el documento): Aston Villa 2019-22 (los documentos son de la sociedad filial: la nota de personal de 8 M£ no incluye a los jugadores; hay que ver si el consolidado del grupo NSWE trae el costo de personal del club o si los sueldos están en otra entidad), Celtic 2021-25 (sin filas de total), Fulham 2021-23 (el total de la nota da 0,1 % de los ingresos: tabla en £m), Newcastle 2019/2023/2024, Brighton 2023, West Ham 2023-24 («no coincide con el documento siguiente») e Instituto 2025 (anexo de remuneraciones en gastos generales) y Novorizontino 2010 (aviso viejo, no es de la serie británica). Para cada uno: leer la nota «Staff costs» del documento, cargar el total con `ajustes.mjs --agregar … fila` o ajustar la compuerta si es un formato nuevo; corre `caja-deuda.mjs --personal --club <id> --ejecutar --partir --escribir` y mira lo que dice.
@@ -67,7 +119,7 @@ QUEDA DE PIPELINE: enganchar este paso al cierre de una carga de un club con avi
 
 Verificar: audit sin-salarios = 0
 
-### 5. 350 · (Auditora, al final de A): revisar con Guido la fila nueva y el proceso de revisión de categorías
+### 9. 350 · (Auditora, al final de A): revisar con Guido la fila nueva y el proceso de revisión de categorías
 
 HECHO (2026-10-22): Educación se fusionó con Otras secciones en una fila, «Otras actividades (educación y otros deportes)» (vista, sin tocar datos); se abrió la fila «Subsidios y donaciones» (categoría `grants_donations`, REGLA en CONVENCIONES-DATOS) y se recategorizó lo ya cargado por etiqueta (468 líneas en 111 clubes, `tools/recategorizar-subsidios.mjs`, decisiones en `tools/subsidios-etiquetas.json`). La tabla de relevancia es `Admin/mediciones/filas-formato-simplificado.md` (`node tools/fos.mjs filas`).
 QUEDA: (1) que Guido mire las dos filas en el navegador antes de publicar (Vélez para Otras actividades; Flora Tallinn y Académica para Subsidios); (2) las 67 etiquetas excluidas: el punto 372 (prioridad baja), con el proceso del 369; (3) decidir si el umbral de abrir o cerrar una fila (propuesta `Admin/propuestas/350-revision-categorias.md`, sección 3: 15 % de los clubes para una genérica) se escribe como texto de la skill `club-data-mapping`; con la tabla ya hay evidencia para usarlo; (4) el chequeo `revision-taxonomia-vencida` de audit.js de esa propuesta.
@@ -75,7 +127,7 @@ QUEDA: (1) que Guido mire las dos filas en el navegador antes de publicar (Véle
 Verificar: contiene js/finanzas-calc.js | Subsidios y donaciones
 Verificar: manual
 
-### 6. 257 · (Orden 1): Deportes Tolima, sin cargar por una duda sobre el resultado de 2025
+### 10. 257 · (Orden 1): Deportes Tolima, sin cargar por una duda sobre el resultado de 2025
 
 Lo que quedaba de esta línea (la skill `perfil-en-cola` que frenaba la carga) ya está: `cargar.mjs` nunca frena por eso (se avisa y la pregunta queda en la cola). Queda un solo caso: **Deportes Tolima no está en el sitio**
 (no hay JSON de Tolima en la carpeta de Colombia de data) aunque `Clubes/Colombia/Deportes Tolima/` tiene los estados financieros de 2016 a 2025. La duda (`Admin/dudas-por-club.md`, sección Deportes Tolima): el documento de 2025 trae solo las
@@ -87,7 +139,7 @@ Terminado cuando: Tolima está cargado (los años que el documento permite) y la
 
 Verificar: existe data/co/deportestolima-co.json
 
-### 7. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
+### 11. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
 
 CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing buscó en Companies House los clubes que no tenemos y
 presentan en iXBRL y bajó los 198 `.xhtml` (84 MB, los 68 con PDF oficial al lado renombrados a `-ixbrl`); Onboarding los carga con
@@ -124,7 +176,7 @@ Verificar: contiene data/leagues.js | Scottish Championship
 Verificar: contiene Admin/CONVENCIONES-DATOS.md | Trust
 Verificar: manual
 
-### 8. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
+### 12. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
 
 FRENO DE DOCUMENTOS DE GRUPO (sale del 356, Fleetwood/Jaymel; regla votada 3 a 0 en CONVENCIONES-DATOS, «Un consolidado de grupo con
 negocios ajenos al club», umbral del 10 % sobre lo impreso). Terminado cuando: `perimetro-senales.mjs` o `cargar.mjs` frenan un documento de
@@ -134,7 +186,7 @@ skill de auditoría (la Auditora). Lo hace Pipeline.
 
 Verificar: manual
 
-### 9. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+### 13. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 LO APROBADO DE PIPELINE 15 QUE NO SE APLICÓ (Auditora 5 y 6, `Admin/registros/auditoria-proceso.jsonl`; el detalle
 en `Admin/Archive/sesion-pipeline-2026-10-21.md`, «Pipeline 15»). Terminado cuando: (a) barrido de lecturas recortadas: `jevDe` de
@@ -155,7 +207,7 @@ Verificar: manual
 
 ## D. Orden de la casa
 
-### 10. 338 · correr todas las auditorías del proyecto (al final de A)
+### 14. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
@@ -163,7 +215,7 @@ CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al
 
 Verificar: manual
 
-### 11. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 15. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
@@ -172,7 +224,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 12. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 16. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -189,7 +241,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 13. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 17. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -225,7 +277,7 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 
 Verificar: manual
 
-### 14. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+### 18. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
@@ -234,16 +286,25 @@ Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la
 
 Verificar: audit ejercicio-sin-rastro "liersekempenzonen-be" = 0
 
-### 15. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
+### 19. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
 
 Las 67 etiquetas excluidas en `tools/subsidios-etiquetas.json` las dejaron afuera reglas objetivas (no una confianza baja de Jev): mezcladas con otro concepto, lo que reparte la federación o la liga (solidaridad: `competition_bonus`), subvención de capital imputada, impuestos y deducciones. Guido no las va a revisar una por una (2026-10-22): el proceso para decidirlas es el punto 369. Este punto es lo que queda después de que el 369 corra: (a) la lista corta que el proceso no pudo decidir; (b) la decisión de criterio sobre lo que reparte la federación o la liga cuando el documento lo llama «subsidio» o «toetus» (EJL, Contributi Federali, FPF/LPF; hoy excluidas por la REGLA de solidaridad de `Admin/CONVENCIONES-DATOS.md`); se vota con `votacion-de-criterios` con la tabla de `node tools/fos.mjs filas` como evidencia. `node tools/recategorizar-subsidios.mjs --listar --todas` las muestra con su motivo.
 Terminado cuando: las etiquetas excluidas por la regla de la federación o la liga tienen una decisión escrita (entran o quedan afuera, con el caso) y el JSON de decisiones no tiene ninguna «SIN REVISAR».
 
 Verificar: manual
 
+### 20. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
+
+Tienen `.categorias.json` (Alemania 7, Rusia 2, Ucrania 2, República Checa 1) pero ningún `.verificacion.json`: las listas de prueba que arma `tools/lotes-prueba.mjs` salen de lo verificado y por eso no los incluyen, y `medir-pipeline` frena una tool dirigida a ellos (por ejemplo `bfo-rusia.mjs`, el camino del fisco ruso) porque no hay documentos que medir. Primero averiguar POR QUÉ no tienen verificación, sin asumir (¿su camino de entrada no pasa por la etapa 6, como el de Rusia, que sale del fisco y no del PDF? ¿se cargaron antes de que la etapa existiera? ¿quedaron frenados?). Según la causa: correr verificar donde corresponde, o declarar que su camino no pasa por verificación y darle un medidor propio en `tools/pipeline-tools.json` (y una familia propia en las listas) para que un cambio a su tool se pueda medir.
+DEPENDE DE: el 371 (cerrado).
+Terminado cuando: cada país con documentos cargados tiene verificación o un medidor propio documentado, y las listas de prueba tienen documentos de esa familia (o la tabla dice cuál es su medidor).
+
+Verificar: contiene Admin/lotes/prueba-completa.txt | Clubes/Alemania/
+Verificar: contiene Admin/lotes/prueba-completa.txt | Clubes/Rusia/
+
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 16. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 21. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -256,7 +317,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 17. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 22. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -272,7 +333,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 18. 335 · mails a clubes
+### 23. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -287,7 +348,7 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 19. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 24. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
@@ -296,7 +357,7 @@ SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en 
 
 Verificar: manual
 
-### 20. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 25. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo

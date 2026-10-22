@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 954 — TODO: puntos 373 a 377 para gastar menos tokens leyendo código (2026-10-22) [373 · 374 · 375 · 376 · 377]
+
+- Nuevos: 373 (regla de no leer archivos de más de 50 KB enteros, mapa de código, contrato entre etapas; la apertura de `PIPELINE.md` no sirve como contrato), 374 (comentarios de tools/ que no dicen nada: medir, criterio, limpiar solo comentarios), 375 (partir los archivos grandes en módulos, sin cambiar el comportamiento), 376 (aviso de `audit.js` para una tool nueva sin clasificar en `pipeline-tools.json`) y 377 (Alemania, Rusia, Ucrania y República Checa sin documentos con verificación).
+- 368 con el primer paso (extraer el bloque de personal a su módulo, sin cambios, medido) y al día con lo medido en el 371. Orden: 373, 376, 368, 374, 375.
+
 ## Versión 953 — 371: tabla de tools, medir-pipeline y deuda de medición del 2026-10-22 medida (2026-10-22) [371]
 
 - `tools/pipeline-tools.json` (31 tools con su medidor y alcance), `tools/medir-pipeline.mjs` (`node tools/fos.mjs medir pipeline`: elige medidor y lote, ANTES con la versión de git y DESPUÉS con lo editado, anota `Admin/registros/mediciones-pipeline.jsonl`) y `tools/familias-docs.mjs` (país × formato).
