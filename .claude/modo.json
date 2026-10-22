@@ -1,0 +1,4 @@
+{
+ "modo": "una-sesion",
+ "_comentario": "El modo de trabajo del proyecto: «una-sesion» (una sesión en la carpeta principal, sin worktrees) o «varias-sesiones» (una principal y worktrees que se hablan). Es el ÚNICO lugar donde se cambia: tools/hooks/pre-tool.mjs lo lee y aplica solo las reglas de ese modo. Las reglas de cada modo: CLAUDE.md, «Modo de trabajo» (una sesión) y Admin/Archive/modo-varias-sesiones.md (varias). Para cambiar: node tools/modo.mjs <modo>."
+}

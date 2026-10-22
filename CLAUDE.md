@@ -16,7 +16,10 @@ sirve y llevalo a donde se lee: una regla a `Admin/CONVENCIONES.md` (proceso), `
 ## Modo de trabajo: una sola sesión
 
 Hoy se trabaja en UNA sesión, en la carpeta principal y en `main`, una cosa a la vez. No se abren worktrees ni otras sesiones (cómo se hacía:
-`Admin/Archive/modo-varias-sesiones.md`, no se lee). Las reglas de este modo:
+`Admin/Archive/modo-varias-sesiones.md`, no se lee). **El modo vive en `.claude/modo.json`** (`node tools/modo.mjs` lo dice y lo cambia): el hook
+`tools/hooks/pre-tool.mjs` aplica solo las reglas de ese modo; si Guido pide trabajar en varias sesiones, se corre `node tools/modo.mjs varias-sesiones`
+y este bloque se reemplaza por el de `Admin/Archive/modo-varias-sesiones.md`. El hook rechaza en cualquier modo `cd … &&`, `$VAR` o `$(…)` y `/tmp` en un
+Bash (no se pueden chequear antes de correr); su mensaje dice qué usar en cambio. Las reglas de este modo:
 
 - **Un rol por vez, con su skill.** Los roles de `Admin/TODO.md` entre paréntesis (Onboarding, Pipeline, Auditora, Pantallas, Sourcing,
   Orden) dicen qué skill cargar: cargar clubes, `club-or-year-onboarding`; buscar documentos, `club-sourcing`; una pantalla,
@@ -35,7 +38,7 @@ Hoy se trabaja en UNA sesión, en la carpeta principal y en `main`, una cosa a l
   mensaje del turno (el comando en un bloque `bash`), con **Te toca a vos** numerado o «nada», y **En curso** (rol, to-do, lote).
 - **Un dato público de un club (fundación, estadio, web, registro)** se busca con la escalera de `Admin/PIPELINE.md`, «Datos públicos de un club»; no se le pregunta al club.
 - **Decide la sesión, cuenta en el resumen:** estructura y calidad de datos (ids, esquema, alias, consistencia, reglas objetivas). **Va a
-  Guido:** el texto de una skill (Edit y Write piden el texto en `Admin/propuestas/`; Bash puede escribir en las skills), gastar fuera del presupuesto, push y deploy, un cambio de alcance, un mail a
+  Guido:** el texto de una skill (se edita sin candado mecánico; Guido lo lee en el diff del commit, y por eso una tarea que toca skills se commitea sola), gastar fuera del presupuesto, push y deploy, un cambio de alcance, un mail a
   un club (solo si lo pidió con sus palabras).
 - **Cerrar un punto del TODO.** Se borra. Si el motivo por el que estaba trabado resultó falso (la transcripción que «nunca se hizo» ya
   estaba en disco), queda escrito en la entrada de CHANGELOG, y en el propio TODO si el punto sigue vivo en parte.

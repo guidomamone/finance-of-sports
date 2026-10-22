@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 945 — Modo de trabajo en un solo archivo; sin candado de skills en una sesión (2026-10-22) [366]
+
+- `.claude/modo.json` (`node tools/modo.mjs`) dice si se trabaja en una sesión o en varias; `tools/hooks/pre-tool.mjs` aplica solo las reglas del modo (el candado de skills, archivar, Opus, permission_mode, docs de la principal, merge, plan y rsync son de varias sesiones). La prueba corre cada caso en su modo (31 casos).
+- `CLAUDE.md`: el texto de una skill se edita sin candado mecánico; Guido lo lee en el diff.
+- TODO 366 suma la escritura automática del estadio «confirmado», `archivar.mjs` y `silenciar.mjs`; TODO 367 nuevo: segunda fuente que no sea Wikipedia y agente con reglas.
+
 ## Versión 944 — Escalera de datos públicos al pipeline, Wikidata cruzado con Wikipedia, 366 primero (2026-10-22) [366]
 
 - La escalera de búsqueda de un dato público salió de `CLAUDE.md` y vive en `Admin/PIPELINE.md` («Datos públicos de un club»).

@@ -25,10 +25,12 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 
 ### 1. 366 · (Pipeline): meter en el pipeline las tools que una sesión todavía tiene que acordarse de correr
 
-TOOLS SUELTAS (Guido, 2026-10-22: «que tools se pueden meter en pipeline así no hay tantas tools dando vuelta»). Medido con el inventario de `tools/` (150 archivos, 2,9 MB; 13 se corren a mano, el resto son módulos que otra tool llama). Lo que una sesión sigue teniendo que recordar, de más a menos: (a) `segunda-fuente-liga.mjs`: la corre una sesión después de asignar una liga; sale de la cadena de `alta-club.mjs` si se arma, por país, la tabla de URLs de RSSSF (patrón `tables<letra>/<código><año>.html`, sacable de las fuentes ya guardadas en `tools/club-league-reference/`) y se mantiene la compuerta de las ligas en grupos; (b) las herramientas de medición (`medir-cargar`, `medir-verificar`, `medir-ixbrl-consolidado`, `lotes-prueba`, `prueba-escribir`) en un solo `medir.mjs <qué>`; (c) los adaptadores de sourcing (`wayback-*`, `exa-search`, `reddit-archive-search`, `twitterapiio-search`, `listar-brreg`, `fca-mutuals-fetch`, `companies-house-fetch`) en un `buscar-fuente.mjs <canal>`; (d) una sola puerta, `tools/fos.mjs <comando>`, que lista los comandos con una línea cada uno, para que el índice de tools lo arme la tool y no una sesión.
-Terminado cuando: (a) `alta-club.mjs` deja la segunda fuente de la liga sin que una sesión la corra (o la línea de HALLAZGOS dice por qué no), (b) y (c) están hechos con los comandos viejos como alias que avisan, y `node tools/fos.mjs` lista cada comando documentado en `Admin/PIPELINE.md`.
+TOOLS SUELTAS (Guido, 2026-10-22: «que tools se pueden meter en pipeline así no hay tantas tools dando vuelta»). Medido con el inventario de `tools/` (150 archivos, 2,9 MB; 13 se corren a mano, el resto son módulos que otra tool llama). Lo que una sesión sigue teniendo que recordar, de más a menos: (a) `segunda-fuente-liga.mjs`: la corre una sesión después de asignar una liga; sale de la cadena de `alta-club.mjs` si se arma, por país, la tabla de URLs de RSSSF (patrón `tables<letra>/<código><año>.html`, sacable de las fuentes ya guardadas en `tools/club-league-reference/`) y se mantiene la compuerta de las ligas en grupos; (b) las herramientas de medición (`medir-cargar`, `medir-verificar`, `medir-ixbrl-consolidado`, `lotes-prueba`, `prueba-escribir`) en un solo `medir.mjs <qué>`; (c) los adaptadores de sourcing (`wayback-*`, `exa-search`, `reddit-archive-search`, `twitterapiio-search`, `listar-brreg`, `fca-mutuals-fetch`, `companies-house-fetch`) en un `buscar-fuente.mjs <canal>`; (d) una sola puerta, `tools/fos.mjs <comando>`, que lista los comandos con una línea cada uno, para que el índice de tools lo arme la tool y no una sesión; (e) la compuerta de `cargar.mjs` (`estadio-sponsor.mjs`) escribe sola en `tools/contexto-manual.json` el estadio y la capacidad cuando `dato-publico.mjs` dice «confirmado» (dos fuentes que coinciden), con las dos citas, en vez de imprimirlos para que una sesión los pegue; (f) `tools/archivar.mjs <ruta>`: mueve a `Admin/Archive/`, corre `indice-md.mjs --escribir` y avisa qué documento queda huérfano (hoy es `git mv` a mano más el índice); (g) `tools/silenciar.mjs <código> <ruta o club> --motivo "..."`: agrega la entrada a `tools/audit-ignore.json` exigiendo el motivo y la verificación contra el documento (hoy se escribe el JSON a mano), con el mismo registro que `decision.mjs`.
+Terminado cuando: (a) `alta-club.mjs` deja la segunda fuente de la liga sin que una sesión la corra (o la línea de HALLAZGOS dice por qué no), (b) y (c) están hechos con los comandos viejos como alias que avisan, `node tools/fos.mjs` lista cada comando documentado en `Admin/PIPELINE.md`, (e) una carga con estadio «confirmado» no necesita pegar nada, y (f) y (g) existen, se prueban con un caso real y la skill de auditoría y `Admin/CONVENCIONES.md` los citan en lugar del paso a mano.
 
-Verificar: manual
+Verificar: existe tools/fos.mjs
+Verificar: existe tools/archivar.mjs
+Verificar: existe tools/silenciar.mjs
 
 ### 2. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
 
@@ -130,9 +132,17 @@ el tramo corto va como C y la temporada COVID lleva la etiqueta en pantalla, sin
 
 Verificar: manual
 
+### 8. 367 · (Pipeline): una segunda fuente de estadio, capacidad y fundación que no sea Wikipedia, y un agente con reglas para lo que no coincide
+
+DATOS PÚBLICOS SIN DEPENDER DE UNA SOLA ENCICLOPEDIA (Guido, 2026-10-22). Hoy Wikidata es el candidato y el artículo de Wikipedia la «confirmación»; las dos se alimentan entre sí y Wikidata sola acierta el estadio en 43 % (`Admin/HALLAZGOS-pipeline.md`). Qué hacer: (1) elegir una fuente independiente que una tool pueda leer sin IA (la web oficial del club que da Wikidata en P856; la federación o la liga; OpenStreetMap para el estadio y su capacidad; Transfermarkt si sus términos lo permiten: se mide cuál responde mejor sobre los 185 club-años que hoy se completan a mano); (2) **regla de decisión por tolerancia**, medida y no supuesta: en la capacidad, si las dos fuentes difieren menos de X % (o menos de N plazas) se toma la de Wikipedia; en el estadio, si el nombre coincide tras normalizar (sin acentos, sin sponsor) se toma; si no, no se escribe; (3) lo que no pasa la regla lo resuelve **un agente con reglas** (Sonnet, no Opus) con la escalera de búsqueda de `Admin/PIPELINE.md` («Datos públicos de un club») como prompt fijo, que devuelve valor y cita o «no encontrado» y nunca inventa. Los umbrales X y N salen de medir sobre los 185 casos, no de este texto.
+Terminado cuando: hay una segunda fuente que no es Wikipedia ni Wikidata en `tools/dato-publico.mjs`, los umbrales medidos están en `Admin/HALLAZGOS-pipeline.md` con su tabla, y el agente tiene su prompt fijo en `Admin/PIPELINE.md`.
+
+Verificar: contiene tools/dato-publico.mjs | segundaFuente
+Verificar: manual
+
 ## D. Orden de la casa
 
-### 8. 338 · correr todas las auditorías del proyecto (al final de A)
+### 9. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
@@ -140,7 +150,7 @@ CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al
 
 Verificar: manual
 
-### 9. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 10. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
@@ -149,7 +159,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 10. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 11. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -166,7 +176,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 11. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 12. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -202,7 +212,7 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 
 Verificar: manual
 
-### 12. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+### 13. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
@@ -213,7 +223,7 @@ Verificar: audit ejercicio-sin-rastro "liersekempenzonen-be" = 0
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 13. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 14. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -226,7 +236,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 14. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 15. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -242,7 +252,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 15. 335 · mails a clubes
+### 16. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -257,7 +267,7 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 16. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 17. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
@@ -266,7 +276,7 @@ SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en 
 
 Verificar: manual
 
-### 17. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 18. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo

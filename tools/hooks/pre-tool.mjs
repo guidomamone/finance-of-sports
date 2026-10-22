@@ -6,23 +6,27 @@
 // herramienta corra. Corre en todas las sesiones (la principal y cada worktree, con su propia copia), así que tiene que ser rápido: lo que
 // no le toca sale en milisegundos, sin llamar a git. Cuando frena, dice por qué y qué hacer.
 //
+// MODO. `.claude/modo.json` dice si el proyecto trabaja en «una-sesion» o en «varias-sesiones» (cambiar: `node tools/modo.mjs <modo>`). Los chequeos marcados
+// [varias] solo se aplican en ese modo (el candado de las skills, archivar, Opus, permission_mode, docs de la principal, merge, plan y rsync de
+// worktrees); los demás valen siempre. `FOS_MODO=<modo>` en el entorno gana sobre el archivo (lo usa la prueba).
+//
 // CHEQUEOS:
-//   audit-antes-del-commit   un `git commit` con cambios publicables corre `audit.js --quiet` y se frena si da P0 o P1. Si los cambios son
+//   audit-antes-del-commit  un `git commit` con cambios publicables corre `audit.js --quiet` y se frena si da P0 o P1. Si los cambios son
 //                            solo internos (Admin/, .claude/, CLAUDE.md, auditorias/, Prototyping/), no audita. `[sin-audit]` en el mensaje
 //                            del commit lo saltea: solo con el ok de Guido, para un hallazgo que ya venía de main.
-//   skills-con-ok            escribir en .claude/skills/ solo pasa si el texto exacto ya está en un archivo de Admin/propuestas/ commiteado en HEAD (Edit: el
+//   skills-con-ok [varias]   escribir en .claude/skills/ solo pasa si el texto exacto ya está en un archivo de Admin/propuestas/ commiteado en HEAD (Edit: el
 //                            new_string entero; Write: cada párrafo de 40+ caracteres); si no, deny. Con el texto, ask: el permiso dice dónde está. Un Bash que
-//                            escribe en skills pasa (una sola sesión).
-//   archivar-con-ok          (ask) archive_session: una sesión se archiva solo con el sí de Guido (la Auditora queda abierta).
-//   modelo-opus-con-ok       (ask) start_session o set_session_model con un modelo Opus.
-//   worktree-sin-permission-mode  (ask) start_session con permission_mode distinto de auto.
+//                            escribe en skills se rechaza. En una sola sesión no hay candado: el texto de una skill lo ve Guido en el diff del commit (CLAUDE.md).
+//   archivar-con-ok [varias]  (ask) archive_session: una sesión se archiva solo con el sí de Guido (la Auditora queda abierta).
+//   modelo-opus-con-ok [varias]  (ask) start_session o set_session_model con un modelo Opus.
+//   worktree-sin-permission-mode [varias]  (ask) start_session con permission_mode distinto de auto.
 //   memoria-no-es-regla      (ask) escribir en la memoria de una sesión un archivo type feedback o project: una regla de trabajo va a una convención,
 //                            una skill o un chequeo; user y reference pasan.
 //   comando-que-edita        (ask) sed -i, perl -i o python por Bash que escriben: usá Edit o Write. Cada disparo se anota en
 //                            Admin/registros/.hooks-disparos.jsonl (gitignoreado) para medir cuántas veces pasa antes de pensar en deny.
 //                            Las herramientas de sesiones (archivar, iniciar, cambiar modelo) necesitan su matcher en .claude/settings.json.
 //   push-con-ok              `git push` le pide permiso a Guido cada vez: un push a main despliega en Netlify (free tier, ~25 deploys/mes).
-//   docs-de-la-principal     en un worktree, escribir Admin/TODO.md, CHANGELOG.md o ESTADO.md se rechaza: los escribe solo la principal; el
+//   docs-de-la-principal [varias]  en un worktree, escribir Admin/TODO.md, CHANGELOG.md o ESTADO.md se rechaza: los escribe solo la principal; el
 //                            cierre de la rama va en Admin/sesiones/<rama>.md (Admin/Archive/modo-varias-sesiones.md). En la principal no hace nada.
 //   pdfs-con-ok              (deny) borrar o pisar en Clubes/ (rm, unlink, trash, find -delete, mv sobre algo que existe) o un `git clean`
 //                            con -x/-X: los PDF no se trackean y no hay copia. No le pregunta a Guido: dice qué usar (preparar, mv a un nombre
@@ -31,10 +35,10 @@
 //   comandos-simples        (deny) un Bash con /tmp suelto, `cd … &&`, o `$(…)`/`${…}`/`$VAR` fuera de comillas simples: no se puede chequear antes de
 //                            correr y pide permiso cada vez (to-do 327, C-1). Pasan el scratchpad de la sesión y el heredoc de `git commit`.
 //   no-importar-tools       (deny) `node -e` con import()/require() de un archivo de tools/ (salvo data-clubes.js y rutas.mjs): lo ejecuta (C-5).
-//   merge-en-worktree       (deny) `git merge` / `git pull` dentro de un worktree (menos `merge-tree`, `merge-base` y `--abort`): lo hace la principal (C-4).
-//   plan-en-worktree        (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
+//   merge-en-worktree [varias]  (deny) `git merge` / `git pull` dentro de un worktree (menos `merge-tree`, `merge-base` y `--abort`): lo hace la principal (C-4).
+//   plan-en-worktree [varias]  (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
 //   subagente-con-regla     (deny) un Agent cuyo prompt no diga que Bash va «sin variables» (C-2).
-//   rsync-sin-no-links      (deny) `rsync -a` sin `--no-links` (C-6). `pdfs-con-ok` ahora también cubre `mv` sobre Clubes/ (ask).
+//   rsync-sin-no-links [varias]  (deny) `rsync -a` sin `--no-links` (C-6). `pdfs-con-ok` ahora también cubre `mv` sobre Clubes/ (ask).
 // Prueba con entradas simuladas (incluye los falsos positivos conocidos): node tools/hooks/probar-pre-tool.mjs
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
@@ -46,6 +50,8 @@ const entrada = JSON.parse(readFileSync(0, 'utf8') || '{}');
 const herramienta = entrada.tool_name || '';
 const params = entrada.tool_input || {};
 const cwd = entrada.cwd || process.env.CLAUDE_PROJECT_DIR || process.cwd();
+const MODO = process.env.FOS_MODO || (() => { try { return JSON.parse(readFileSync(join(cwd, '.claude', 'modo.json'), 'utf8')).modo; } catch { return 'una-sesion'; } })();
+const VARIAS = MODO === 'varias-sesiones';
 
 const decidir = (decision, motivo) => {
   process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: 'PreToolUse', permissionDecision: decision, permissionDecisionReason: motivo } }));
@@ -120,7 +126,7 @@ function skillsConOk(cmd) {
   const porBash = herramienta === 'Bash';
   const toca = EDITA.includes(herramienta) ? SKILLS.test(rutaEditada()) : bashEscribeEnSkills(cmd);
   if (!toca) return;
-  if (porBash) return; // una sola sesión: Bash puede escribir en las skills (el candado de texto en propuestas/ era del modo de varios worktrees); Edit y Write siguen pidiendo
+  if (porBash) decidir('deny', 'Editá la skill con Edit o Write (con el texto ya en Admin/propuestas/): en varias sesiones un Bash no escribe en .claude/skills/.');
   const textos = herramienta === 'Write' ? String(params.content || '').split(/\n\s*\n/).map(normalizarTexto).filter((p) => p.length >= 40)
     : herramienta === 'MultiEdit' ? (params.edits || []).map((e) => normalizarTexto(e.new_string)).filter(Boolean)
     : [normalizarTexto(params.new_string)].filter(Boolean);
@@ -309,17 +315,15 @@ function subagenteConReglaDeComandos() {
 }
 
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
-if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); mergeEnWorktree(cmd); }
-planEnWorktree();
-if (herramienta === 'Bash') rsyncSinNoLinks(cmd);
+if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); if (VARIAS) mergeEnWorktree(cmd); }
+if (VARIAS) planEnWorktree();
+if (herramienta === 'Bash' && VARIAS) rsyncSinNoLinks(cmd);
 subagenteConReglaDeComandos();
-archivarConOk();
-modeloOpusConOk();
-worktreeSinPermissionMode();
+if (VARIAS) { archivarConOk(); modeloOpusConOk(); worktreeSinPermissionMode(); }
 memoriaNoEsRegla();
-skillsConOk(cmd);
+if (VARIAS) skillsConOk(cmd);
 if (herramienta === 'Bash') comandoQueEdita(cmd);
 pushConOk(cmd);
-docsDeLaPrincipal(cmd);
+if (VARIAS) docsDeLaPrincipal(cmd);
 pdfsConOk(cmd);
 if (herramienta === 'Bash') auditAntesDelCommit(cmd);
