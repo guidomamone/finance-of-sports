@@ -630,7 +630,7 @@ async function main() {
         for (const f of faltan.filter((x) => /estadio/.test(x.split('falta')[1] || '')).slice(0, 4)) {
           const y = Number((f.match(/^\S+ (\d{4})/) || [])[1]); if (!y || !C) continue;
           const r = await datoPublico([C.displayName, C.name].filter(Boolean), { pais: C.country, anio: y });
-          console.log(r.error ? `  Wikidata ${y}: ${r.error}` : `  Wikidata ${y}: ${r.delAnio?.error || `${r.delAnio.estadio}, capacidad ${r.delAnio.capacidad ?? '(sin dato)'}`} · fuente ${r.delAnio?.fuenteEstadio || r.fuente} (candidato: confirmar contra la página del club)`);
+          console.log(r.error ? `  Wikidata ${y}: ${r.error}` : `  Wikidata ${y}: ${r.delAnio?.error || `${r.delAnio.estadio}, capacidad ${r.delAnio.capacidad ?? '(sin dato)'}`} · fuente ${r.delAnio?.fuenteEstadio || r.fuente} · ${r.delAnio?.confirmadoPorWikipedia ? `confirmado por ${r.delAnio.confirmadoPorWikipedia} (dos fuentes: se puede pegar en contexto-manual)` : 'SOLO Wikidata: buscar una segunda fuente (la página del club) antes de pegarlo'}`);
         }
       } catch (e) { /* sin red o sin entidad: queda el paso a mano */ }
     }

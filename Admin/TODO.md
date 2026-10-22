@@ -23,7 +23,14 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 
 ## A. En marcha
 
-### 1. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
+### 1. 366 · (Pipeline): meter en el pipeline las tools que una sesión todavía tiene que acordarse de correr
+
+TOOLS SUELTAS (Guido, 2026-10-22: «que tools se pueden meter en pipeline así no hay tantas tools dando vuelta»). Medido con el inventario de `tools/` (150 archivos, 2,9 MB; 13 se corren a mano, el resto son módulos que otra tool llama). Lo que una sesión sigue teniendo que recordar, de más a menos: (a) `segunda-fuente-liga.mjs`: la corre una sesión después de asignar una liga; sale de la cadena de `alta-club.mjs` si se arma, por país, la tabla de URLs de RSSSF (patrón `tables<letra>/<código><año>.html`, sacable de las fuentes ya guardadas en `tools/club-league-reference/`) y se mantiene la compuerta de las ligas en grupos; (b) las herramientas de medición (`medir-cargar`, `medir-verificar`, `medir-ixbrl-consolidado`, `lotes-prueba`, `prueba-escribir`) en un solo `medir.mjs <qué>`; (c) los adaptadores de sourcing (`wayback-*`, `exa-search`, `reddit-archive-search`, `twitterapiio-search`, `listar-brreg`, `fca-mutuals-fetch`, `companies-house-fetch`) en un `buscar-fuente.mjs <canal>`; (d) una sola puerta, `tools/fos.mjs <comando>`, que lista los comandos con una línea cada uno, para que el índice de tools lo arme la tool y no una sesión.
+Terminado cuando: (a) `alta-club.mjs` deja la segunda fuente de la liga sin que una sesión la corra (o la línea de HALLAZGOS dice por qué no), (b) y (c) están hechos con los comandos viejos como alias que avisan, y `node tools/fos.mjs` lista cada comando documentado en `Admin/PIPELINE.md`.
+
+Verificar: manual
+
+### 2. 351 · (Onboarding, después del 345): sueldos de 22 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
 
 SUELDOS ADENTRO DE UNA SOLA LÍNEA (Auditora 4, 3ª corrida de P2 y P3, 2026-10-21). 12 británicos (Aston Villa, Brentford, Brighton,
 Celtic, Fulham, Leeds, Liverpool, Newcastle, Nottingham Forest, Sunderland, West Ham, Wolves; 47 club-años con el estado por función),
@@ -33,7 +40,7 @@ los 10 británicos nuevos del 356 (sus sueldos entraron con `incluye wages_squad
 
 Verificar: manual
 
-### 2. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
+### 3. 350 · (Auditora, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
 
 CATEGORÍA PARA SUBSIDIOS Y DONACIONES (Auditora 4, 2ª corrida de P2 y P3, 2026-10-21; Guido: «dejalo como to do»). Buena parte de los
 ~130 `catchall-dominante` son subsidios, donaciones y aportes (Subsídios, Επιχορηγήσεις, Целевые взносы; ligas bajas de Grecia, Rusia y
@@ -52,7 +59,7 @@ siempre igual (la propuesta de `hideIfZero` para la fila nueva y para Educación
 
 Verificar: manual
 
-### 3. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
+### 4. 257 · (Orden 1): los dos cabos sueltos que quedan (perfil-en-cola, Tolima)
 
 LO QUE QUEDÓ SIN DUEÑO DEL RELEVAMIENTO DE SKILLS (une el 330). Aplicado: las cinco skills nuevas, las partes 1, 3 y 7 de
 `Admin/propuestas/257-skills.md`, la memoria vaciada y el candado de skills del hook. Falta: (a) que `perfil-en-cola` de `cargar.mjs`
@@ -61,7 +68,7 @@ nunca frene (Pipeline); (b) la duda de Deportes Tolima, `dudas-por-club.md:201`,
 
 Verificar: manual
 
-### 4. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
+### 5. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
 
 CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing buscó en Companies House los clubes que no tenemos y
 presentan en iXBRL y bajó los 198 `.xhtml` (84 MB, los 68 con PDF oficial al lado renombrados a `-ixbrl`); Onboarding los carga con
@@ -94,7 +101,7 @@ iXBRL que presenta y el sitio no tiene está cargado o descartado con motivo. Fa
 
 Verificar: manual
 
-### 5. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
+### 6. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
 
 FRENO DE DOCUMENTOS DE GRUPO (sale del 356, Fleetwood/Jaymel; regla votada 3 a 0 en CONVENCIONES-DATOS, «Un consolidado de grupo con
 negocios ajenos al club», umbral del 10 % sobre lo impreso). Terminado cuando: `perimetro-senales.mjs` o `cargar.mjs` frenan un documento de
@@ -104,7 +111,7 @@ skill de auditoría (la Auditora). Lo hace Pipeline.
 
 Verificar: manual
 
-### 6. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+### 7. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 LO APROBADO DE PIPELINE 15 QUE NO SE APLICÓ (Auditora 5 y 6, `Admin/registros/auditoria-proceso.jsonl`; el detalle
 en `Admin/Archive/sesion-pipeline-2026-10-21.md`, «Pipeline 15»). Terminado cuando: (a) barrido de lecturas recortadas: `jevDe` de
@@ -125,7 +132,7 @@ Verificar: manual
 
 ## D. Orden de la casa
 
-### 7. 338 · correr todas las auditorías del proyecto (al final de A)
+### 8. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
@@ -133,7 +140,7 @@ CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al
 
 Verificar: manual
 
-### 8. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 9. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
@@ -142,7 +149,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 9. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 10. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -159,7 +166,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 10. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 11. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -195,7 +202,7 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 
 Verificar: manual
 
-### 11. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+### 12. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
@@ -203,13 +210,6 @@ Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la
 `ejercicio-sin-rastro` de `liersekempenzonen-be` queda en 0 (2023-2025 silenciados en `tools/audit-ignore.json` con la cita de la nota de sourcing).
 
 Verificar: audit ejercicio-sin-rastro "liersekempenzonen-be" = 0
-
-### 12. 366 · (Pipeline): meter en el pipeline las tools que una sesión todavía tiene que acordarse de correr
-
-TOOLS SUELTAS (Guido, 2026-10-22: «que tools se pueden meter en pipeline así no hay tantas tools dando vuelta»). Medido con el inventario de `tools/` (150 archivos, 2,9 MB; 13 se corren a mano, el resto son módulos que otra tool llama). Lo que una sesión sigue teniendo que recordar, de más a menos: (a) `segunda-fuente-liga.mjs`: la corre una sesión después de asignar una liga; sale de la cadena de `alta-club.mjs` si se arma, por país, la tabla de URLs de RSSSF (patrón `tables<letra>/<código><año>.html`, sacable de las fuentes ya guardadas en `tools/club-league-reference/`) y se mantiene la compuerta de las ligas en grupos; (b) las herramientas de medición (`medir-cargar`, `medir-verificar`, `medir-ixbrl-consolidado`, `lotes-prueba`, `prueba-escribir`) en un solo `medir.mjs <qué>`; (c) los adaptadores de sourcing (`wayback-*`, `exa-search`, `reddit-archive-search`, `twitterapiio-search`, `listar-brreg`, `fca-mutuals-fetch`, `companies-house-fetch`) en un `buscar-fuente.mjs <canal>`; (d) una sola puerta, `tools/fos.mjs <comando>`, que lista los comandos con una línea cada uno, para que el índice de tools lo arme la tool y no una sesión.
-Terminado cuando: (a) `alta-club.mjs` deja la segunda fuente de la liga sin que una sesión la corra (o la línea de HALLAZGOS dice por qué no), (b) y (c) están hechos con los comandos viejos como alias que avisan, y `node tools/fos.mjs` lista cada comando documentado en `Admin/PIPELINE.md`.
-
-Verificar: manual
 
 ## E. Después de A a D (Guido, 2026-10-20)
 

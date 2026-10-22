@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 944 — Escalera de datos públicos al pipeline, Wikidata cruzado con Wikipedia, 366 primero (2026-10-22) [366]
+
+- La escalera de búsqueda de un dato público salió de `CLAUDE.md` y vive en `Admin/PIPELINE.md` («Datos públicos de un club»).
+- `tools/dato-publico.mjs` cruza el estadio de Wikidata con el artículo del club en Wikipedia: «confirmado por» o «SOLO Wikidata»; `estadio-sponsor.mjs` lo imprime así.
+- El punto 366 pasó a prioridad 1. `Admin/CONVENCIONES.md`: sale la regla de no transcribir PDFs nuevos (queda la nota de Bath Rugby).
+
 ## Versión 943 — Verificación del TODO, mapa de acciones, Wikidata y generadores al día (2026-10-22)
 
 - `Admin/TODO.md`: cada punto lleva `Verificar: ...` (`audit <código> = 0`, `existe`, `contiene`, o `manual`; formato en `tools/todo-verificar.js`). `audit.js` avisa `todo-cumplido` (cerrarlo) y `todo-sin-verificar`; `node tools/todo.mjs --verificar` lo muestra y `--cerrar` se niega si la condición no se cumple (`--forzar` lo cierra igual). De los 16 puntos, solo el 365 tiene una condición comprobable hoy; los demás son `manual`, y todo punto nuevo tiene que declararla.

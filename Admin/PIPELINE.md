@@ -1010,6 +1010,17 @@ Cada club y cada liga con ranking tiene su página: `club/<id>.html` y `liga/<id
    `Admin/CONVENCIONES-DATOS.md` ("qué perímetro se carga cuando la serie cambia"). Un ajuste `perimetro` a mano solo para lo que el lote
    frena e imprime. Casos de la regla: Boca, Racing, Panathinaikos, Juventus, Aris.
 
+## Datos públicos de un club (estadio, capacidad, fundación, web, registro)
+
+Una tool agota las fuentes en orden y recién después pasa a una persona; no se googlea de entrada.
+
+1. **Estadio, capacidad y sponsor de un ejercicio:** los trae sola la compuerta de `cargar.mjs` (`tools/estadio-sponsor.mjs`): página de temporada de Wikipedia, ficha del club, Wikipedia del país (`--local`). Lo que falta, lo imprime con un candidato de Wikidata.
+2. **Candidato de Wikidata** (`node tools/dato-publico.mjs "<club>" --pais <iso2> --anio <año>`): estadio del año, capacidad, fundación y web, con la cita. Se cruza solo con el artículo del club en Wikipedia: **«confirmado por»** (dos fuentes que coinciden, se pega en `tools/contexto-manual.json`) o **«SOLO Wikidata»** (no se pega; sigue el paso 3). Medido: Wikidata sola da el mismo estadio que el revisado a mano en 43 % y otro nombre en 17 % (`Admin/HALLAZGOS-pipeline.md`).
+3. **Una persona o sesión busca** solo lo que quedó «SOLO Wikidata» o sin dato: la ficha del club abierta (WebFetch), no el resumen del buscador; una búsqueda corta (club + una palabra) y hasta tres reformulaciones antes de darlo por no encontrado.
+4. **A `Admin/dudas-por-club.md`** va solo lo que únicamente el club sabe. Fundación, licencia o número de registro son públicos: no se le preguntan.
+
+La fundación y la web de un club nuevo no las escribe ninguna tool todavía: es parte del punto 366 (`node tools/todo.mjs 366`).
+
 
 ---
 

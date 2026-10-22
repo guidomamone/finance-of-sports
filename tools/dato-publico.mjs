@@ -36,6 +36,7 @@ async function entidad(q) {
 }
 const ids = (e, p) => (e?.claims?.[p] || []).map((c) => c.mainsnak?.datavalue?.value?.id).filter(Boolean);
 const etiqueta = (e) => e?.labels?.en?.value || Object.values(e?.labels || {})[0]?.value || null;
+const sinAcentos = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ');
 const anioDe = (t) => { const m = String(t || '').match(/([+-]\d{4})-/); return m ? Number(m[1]) : null; };
 
 async function isoDe(qPais) {
@@ -108,6 +109,13 @@ export async function datoPublico(nombre, { pais, anio, qid } = {}) {
     if (el) {
       const cap = el.capacidades.length ? el.capacidades.reduce((a, b) => (Math.abs((b.en ?? anio) - anio) < Math.abs((a.en ?? anio) - anio) ? b : a)) : null;
       out.delAnio = { anio, estadio: el.nombre, capacidad: cap ? cap.n : null, fuenteEstadio: `https://www.wikidata.org/wiki/${el.qid}` };
+      // SEGUNDA FUENTE: el artículo del club en Wikipedia (otra base que la de Wikidata) tiene que nombrar ese estadio; si no, es solo un candidato
+      const titulo = e.sitelinks?.enwiki?.title;
+      if (titulo) {
+        const j = await get(`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(titulo)}&prop=wikitext&format=json&redirects=1`); await dormir(250);
+        const txt = j?.parse?.wikitext?.['*'];
+        if (txt) out.delAnio.confirmadoPorWikipedia = sinAcentos(txt).includes(sinAcentos(el.nombre)) ? `https://en.wikipedia.org/wiki/${encodeURIComponent(titulo.replace(/ /g, '_'))}` : false;
+      }
     } else out.delAnio = { anio, error: estadios.length ? `${vigente.length} estadios posibles ese año: ${vigente.map((s) => s.nombre).join(', ') || 'ninguno'}` : 'sin «home venue» (P115)' };
   }
   return out;
@@ -130,6 +138,6 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename
     console.log(`${r.nombre} (${r.qid}) · ${r.fuente}`);
     console.log(`  fundación: ${r.fundacion ?? '(sin dato)'} · web: ${r.web ?? '(sin dato)'}`);
     for (const s of r.estadios) console.log(`  estadio: ${s.nombre} (${s.desde ?? '?'}-${s.hasta ?? 'hoy'}) · capacidad ${s.capacidades.map((c) => `${c.n}${c.en ? ` (${c.en})` : ''}`).join(', ') || '(sin dato)'}`);
-    if (r.delAnio) console.log(`  ${r.delAnio.anio}: ${r.delAnio.error || `${r.delAnio.estadio}, capacidad ${r.delAnio.capacidad ?? '(sin dato)'}`}`);
+    if (r.delAnio) console.log(`  ${r.delAnio.anio}: ${r.delAnio.error || `${r.delAnio.estadio}, capacidad ${r.delAnio.capacidad ?? '(sin dato)'} · ${r.delAnio.confirmadoPorWikipedia ? `confirmado por ${r.delAnio.confirmadoPorWikipedia}` : 'SOLO Wikidata (el artículo de Wikipedia no lo nombra o no hay)'}`}`);
   }
 }
