@@ -1,0 +1,99 @@
+{
+ "_comentario": "Qué tools son del pipeline y cómo se mide un cambio a cada una (TODO 371). Lo lee `tools/medir-pipeline.mjs` (elige medidor y lote, corre el ANTES con la versión de git y el DESPUÉS con lo editado, y escribe Admin/registros/mediciones-pipeline.jsonl) y el hook de commit de `tools/hooks/pre-tool.mjs` (un commit que toca una tool de esta lista sin una línea de medición con la misma huella se rechaza). Una tool nueva del pipeline se suma acá en el mismo commit que la crea. Regla de qué lote: `.claude/skills/club-or-year-onboarding/mejorar-script.md`, sección 5.",
+ "lotes": {
+  "chico": "Admin/lotes/prueba-rapida.txt",
+  "mediano": "Admin/lotes/prueba-mediana.txt",
+  "completo": "Admin/lotes/prueba-completa.txt"
+ },
+ "_alcance": "etapa: el cambio está acotado a una etapa o a una familia de formato, entonces el lote por defecto es el MEDIANO (si el CHICO dio idéntico). compartida: toca lógica que usan varias etapas (categorías, perímetro, escala o tipo de cambio, signos, parser común de tablas, publicarCambios), entonces el COMPLETO. En cualquier caso: el CHICO va primero (humo), cualquier diferencia en el mediano escala al completo, y antes de cerrar un punto del TODO se mide el completo.",
+ "medidores": {
+  "cargar": {
+   "que": "el ensayo de cargar.mjs en cada documento de la lista (frenos y cada fila: etiqueta, renglón, categoría, destino, cola, importe)",
+   "usaLista": true,
+   "correr": ["tools/medir-cargar.mjs", "--lista", "{lista}", "--salida", "{salida}.jsonl"],
+   "comparar": ["tools/medir-cargar.mjs", "--comparar", "{antes}.jsonl", "{despues}.jsonl"],
+   "restaurar": ["Admin/registros/categorias-aprendidas.jsonl"]
+  },
+  "verificar": {
+   "que": "verificar.mjs sobre la lista (estado, totales y cada línea que suma); deja los registros como estaban",
+   "usaLista": true,
+   "correr": ["tools/medir-verificar.mjs", "--lista", "{lista}", "--salida", "{salida}.jsonl", "--pasadas", "2"],
+   "comparar": ["tools/medir-verificar.mjs", "--comparar", "{antes}.jsonl", "{despues}.jsonl"]
+  },
+  "caja-deuda": {
+   "que": "caja y deuda: el escalón gratis en TODOS los años cargados (no depende de la lista)",
+   "usaLista": false,
+   "correr": ["tools/caja-deuda.mjs", "--medir", "--detalle"],
+   "comparar": "texto"
+  },
+  "caja-deuda-personal": {
+   "que": "el costo de personal (staffCost) contra Admin/mediciones/personal-verdad.tsv, en todos los clubes (no depende de la lista)",
+   "usaLista": false,
+   "correr": ["tools/caja-deuda.mjs", "--personal", "--medir"],
+   "comparar": "texto"
+  },
+  "audit": {
+   "que": "los hallazgos de audit.js por código y la lista completa, sobre todo el sitio (no depende de la lista)",
+   "usaLista": false,
+   "correr": ["tools/audit.js", "--json"],
+   "comparar": "audit-json"
+  },
+  "contexto": {
+   "que": "estadio, capacidad y sponsor de cada ejercicio contra la caché ya bajada, sin red nueva",
+   "usaLista": false,
+   "correr": ["tools/estadio-sponsor.mjs", "--ensayo", "--detalle"],
+   "comparar": "texto"
+  },
+  "xhtml": {
+   "que": "el conversor XHTML en ensayo sobre todos los .xhtml de Clubes/ (no escribe)",
+   "usaLista": false,
+   "correr": ["tools/xhtml-aarsrapport.mjs", "Clubes"],
+   "comparar": "texto"
+  },
+  "alta": {
+   "que": "el ensayo de altas de club sobre todos los documentos, sin API",
+   "usaLista": false,
+   "correr": ["tools/alta-club.mjs", "--todos"],
+   "comparar": "texto"
+  },
+  "lote-ensayo": {
+   "que": "localizar y extraer en ensayo (sin API) sobre la lista; solo la etapa 3 en adelante de lo que no está cargado",
+   "usaLista": true,
+   "correr": ["tools/lote.mjs", "--lista", "{lista}"],
+   "comparar": "texto"
+  }
+ },
+ "tools": {
+  "cargar.mjs": { "alcance": "compartida", "medidores": ["cargar", "audit"] },
+  "cargar-lote.mjs": { "alcance": "etapa", "medidores": ["cargar"] },
+  "categorizar-claude.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
+  "jev-categorizar.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
+  "reglas-categoria.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
+  "memoria-categorias.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
+  "suggest-category-precedent.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
+  "cuadro-sobrante.mjs": { "alcance": "etapa", "medidores": ["cargar"] },
+  "dentro-de-otro.mjs": { "alcance": "etapa", "medidores": ["cargar"] },
+  "verificar.mjs": { "alcance": "compartida", "medidores": ["verificar"] },
+  "perimetro-senales.mjs": { "alcance": "compartida", "medidores": ["verificar", "cargar"] },
+  "periodo.mjs": { "alcance": "compartida", "medidores": ["verificar"] },
+  "cierre-ejercicio.js": { "alcance": "compartida", "medidores": ["verificar"] },
+  "cierre-vecinos.mjs": { "alcance": "etapa", "medidores": ["verificar"] },
+  "extract-table-rows.mjs": { "alcance": "compartida", "medidores": ["lote-ensayo", "verificar"] },
+  "localizar.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"], "prueba_paga": "solo si cambia el prompt, con el costo a la vista" },
+  "extraer.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo", "verificar"], "prueba_paga": "solo si cambia el prompt, con el costo a la vista" },
+  "lote.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"] },
+  "caja-deuda.mjs": { "alcance": "etapa", "medidores": ["caja-deuda", "caja-deuda-personal", "audit"] },
+  "alta-club.mjs": { "alcance": "etapa", "medidores": ["alta"] },
+  "xhtml-aarsrapport.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },
+  "ixbrl-resultado.mjs": { "alcance": "etapa", "medidores": ["xhtml", "verificar"], "familia": { "formato": "xhtml" } },
+  "bfo-rusia.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Rusia" } },
+  "nbb.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Bélgica" } },
+  "estadio-sponsor.mjs": { "alcance": "etapa", "medidores": ["contexto", "cargar"] },
+  "dato-publico.mjs": { "alcance": "etapa", "medidores": ["contexto"] },
+  "segunda-fuente-liga.mjs": { "alcance": "etapa", "medidores": ["contexto", "audit"] },
+  "fuente-url-xhtml.mjs": { "alcance": "etapa", "medidores": ["audit"], "familia": { "formato": "xhtml" } },
+  "generadores.mjs": { "alcance": "compartida", "medidores": ["audit"] },
+  "publicar.mjs": { "alcance": "compartida", "medidores": ["audit"] },
+  "audit.js": { "alcance": "compartida", "medidores": ["audit"] }
+ }
+}
