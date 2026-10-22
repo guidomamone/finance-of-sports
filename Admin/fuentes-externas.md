@@ -1,3 +1,4 @@
+<!-- md: términos de las fuentes externas (Wikipedia, RSSSF, bancos centrales) | leer: antes de publicar datos de una fuente externa nueva -->
 # Fuentes externas: de dónde sale cada dato que no viene de un documento del club, y qué permite
 
 Lo que se publica en el sitio (`terminos.html`, "Licencia y reuso"; `metodologia.html`, "Fuentes externas") sale de acá. La licencia

@@ -1,3 +1,4 @@
+<!-- md: reglas de proceso vigentes | leer: cuando la skill de la tarea lo pide -->
 # Convenciones y gotchas vigentes
 
 Reglas permanentes y trampas ya encontradas que una sesión nueva TIENE que respetar: criterios vigentes, sin historia. El porqué de cada

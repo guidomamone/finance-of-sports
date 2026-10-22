@@ -1,3 +1,4 @@
+<!-- md: cómo funciona el motor de Finanzas y los scripts que escriben data/ | leer: al tocar el motor (js/finanzas-*) o los scripts que escriben data/; la sección que toca -->
 # Arquitectura: archivos del proyecto y modelo de datos
 
 Referencia técnica de cómo está armado el sitio: qué hace cada archivo, y cómo

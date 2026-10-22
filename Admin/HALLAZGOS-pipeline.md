@@ -1,3 +1,4 @@
+<!-- md: lo que se midió y no entró al pipeline, con el porqué | leer: antes de proponer una mejora al pipeline, por grep -->
 # HALLAZGOS del pipeline: lo que se midió y no entró
 
 Ideas que se probaron con casos reales y se descartaron, con el porqué, para no volver a probarlas. Una línea por hallazgo; el

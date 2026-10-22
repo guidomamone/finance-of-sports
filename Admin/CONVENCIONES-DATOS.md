@@ -1,3 +1,4 @@
+<!-- md: reglas de datos: categorías, perímetro, períodos, tipos de cambio | leer: al cargar o corregir datos de un club; la sección que toca -->
 # Convenciones de datos
 
 Reglas para cargar o corregir datos de un club: qué es un dato, qué se carga y cómo. Se lee cuando la tarea toca datos; las reglas de

@@ -1,3 +1,4 @@
+<!-- md: el pipeline etapa por etapa y las decisiones de Guido | leer: solo la etapa que se toca -->
 # PIPELINE: de un PDF a un año cargado en el sitio
 
 Referencia del proceso nuevo: qué hace cada etapa, sus escaleras y compuertas, y las decisiones de Guido que lo parametrizan.

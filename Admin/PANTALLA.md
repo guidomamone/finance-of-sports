@@ -1,3 +1,4 @@
+<!-- md: reglas de pantalla y código del sitio | leer: al tocar js/, index.html o css; la sección de la pantalla -->
 # Reglas de pantalla y código del sitio
 
 Cómo se ve y cómo está hecho el sitio. Primero, Finanzas multi-año; después, las reglas de la vista de

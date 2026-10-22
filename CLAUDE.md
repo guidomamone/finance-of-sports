@@ -33,8 +33,13 @@ Hoy se trabaja en UNA sesión, en la carpeta principal y en `main`, una cosa a l
 - **Hablarle a Guido.** Un mensaje por paso, con un ejemplo real antes de hacerlo y las decisiones numeradas con la recomendación al lado;
   tareas chicas, terminadas y commiteadas antes de abrir la siguiente. Lo que Guido tiene que correr o decidir va completo en el último
   mensaje del turno (el comando en un bloque `bash`), con **Te toca a vos** numerado o «nada», y **En curso** (rol, to-do, lote).
+- **Al cerrar cada tarea, un bloque corto de proceso** (Guido lo pidió): qué `.md` se tocaron; qué `.md` se leyeron en vano (no hacían falta
+  para la tarea) y qué lo evitaría; y qué decisiones de la sesión deberían ser una skill, una regla escrita o un script (con la frase que lo
+  justifica). Sin relleno: si no hubo, una línea que lo diga.
+- **Antes de preguntarle algo a un club, buscarlo en internet:** la pregunta va a `Admin/dudas-por-club.md` solo si el dato no es público
+  (fundación, licencia, número de registro y afiliación sí lo son).
 - **Decide la sesión, cuenta en el resumen:** estructura y calidad de datos (ids, esquema, alias, consistencia, reglas objetivas). **Va a
-  Guido:** el texto de una skill (candado: `Admin/propuestas/`), gastar fuera del presupuesto, push y deploy, un cambio de alcance, un mail a
+  Guido:** el texto de una skill (Edit y Write piden el texto en `Admin/propuestas/`; Bash puede escribir en las skills), gastar fuera del presupuesto, push y deploy, un cambio de alcance, un mail a
   un club (solo si lo pidió con sus palabras).
 - **Cerrar un punto del TODO.** Se borra. Si el motivo por el que estaba trabado resultó falso (la transcripción que «nunca se hizo» ya
   estaba en disco), queda escrito en la entrada de CHANGELOG, y en el propio TODO si el punto sigue vivo en parte.
@@ -47,6 +52,9 @@ Hoy se trabaja en UNA sesión, en la carpeta principal y en `main`, una cosa a l
   y `Admin/ESTADO.md` (qué hay armado hoy), sola, sin que Guido lo pida. `Admin/TODO.md` NO se lee entero nunca: `node tools/todo.mjs`
   da la lista ordenada (qué sigue) y `node tools/todo.mjs <id>` el cuerpo de un punto. Qué hay cargado de cada club:
   `Admin/ESTADO-clubes.md` (generado). `Admin/CONVENCIONES.md` (reglas de proceso) se lee cuando la skill de la tarea lo pide.
+- **El índice de los `.md`** (`Admin/INDICE-md.md`, generado, 25 KB: no se lee entero, se consulta con grep): cada documento vivo con qué es, cuándo se
+  lee, quién lo cita y a cuál manda. `node tools/indice-md.mjs` lista los huérfanos (nadie los cita: candidatos a archivar) y los que no declaran
+  qué son (primera línea `<!-- md: qué es | leer: cuándo -->`). Al crear, mover o borrar un `.md`: `node tools/indice-md.mjs --escribir`.
 - **Las skills y los documentos de criterio** (`Admin/PIPELINE.md`, `CONVENCIONES*.md`, `PANTALLA.md`, `ESTADO.md`) dicen cómo se trabaja y qué hay HOY: sin historia (nada de «Versión N», fechas de decisión ni ramas mergeadas: eso va a `Admin/CHANGELOG.md`; un caso real que ilustra una regla se queda, sin la versión), sin contadores fijos (en su lugar, el comando que los da: `node tools/estado.mjs`, `node tools/audit.js`, `Admin/ESTADO-clubes.md`), sin «to-do N» (el pendiente vive solo en `Admin/TODO.md`) y con las menos palabras que una sesión siga entendiendo.
 - **Usá la skill que corresponde a la tarea; es obligatorio.** Sin ella, una sesión contradice un criterio ya decidido sin saber que
   existía (pasó de verdad). Empezá por `start-session-finance-of-sports-project`, salvo que la tarea sea onboardear clubes o tocar

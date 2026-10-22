@@ -1,3 +1,4 @@
+<!-- md: diario narrativo: el porqué de las decisiones viejas | leer: solo por grep de una palabra, nunca de corrido -->
 # finance-of-sports — historia narrativa completa del proyecto
 
 (Este archivo se llamó `Proyecto Boca.md` hasta la Versión 121. El nombre venía

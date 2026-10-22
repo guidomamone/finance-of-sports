@@ -1,3 +1,4 @@
+<!-- md: qué hay armado hoy (snapshot del proyecto) | leer: siempre, al arrancar una sesión -->
 # ESTADO — finance-of-sports
 
 **Qué hay armado hoy.** Este archivo es el snapshot del proyecto: qué existe, cómo

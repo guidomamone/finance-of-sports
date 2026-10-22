@@ -1040,6 +1040,9 @@ function checkGenerados() {
       else add('P1', code, `${que} quedó desactualizado. Corré: node tools/${script}${detalle ? ' — ' + detalle : ''}`);
     }
   }
+  // el índice de documentos (Admin/INDICE-md.md) no frena un commit: P3
+  try { execSync('node tools/indice-md.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+  catch (e) { add('P3', 'indice-md-desfasado', 'Admin/INDICE-md.md quedó desactualizado (se creó, movió o borró un .md). Corré: node tools/indice-md.mjs --escribir'); }
 }
 
 // to-do 247: un commit que corrige un dato publicado (importe, categoría, filas, totales, caja/deuda, moneda, fuente, perímetro) lleva el trailer

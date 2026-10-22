@@ -1,3 +1,4 @@
+<!-- md: registro de las cotizaciones usadas como tipo de cambio | leer: al cargar un tipo de cambio de mercado -->
 # Cotizaciones de mercado: de dónde salió cada una
 
 Lo que había como comentario en `FX_CLOSE` de `data/currency-map.js` (data/ se publica: to-do 209), movido tal cual. Cada

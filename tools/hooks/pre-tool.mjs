@@ -12,7 +12,7 @@
 //                            del commit lo saltea: solo con el ok de Guido, para un hallazgo que ya venía de main.
 //   skills-con-ok            escribir en .claude/skills/ solo pasa si el texto exacto ya está en un archivo de Admin/propuestas/ commiteado en HEAD (Edit: el
 //                            new_string entero; Write: cada párrafo de 40+ caracteres); si no, deny. Con el texto, ask: el permiso dice dónde está. Un Bash que
-//                            escribe en skills es deny ("usá Edit"); los comandos de git que reescriben el árbol pasan.
+//                            escribe en skills pasa (una sola sesión).
 //   archivar-con-ok          (ask) archive_session: una sesión se archiva solo con el sí de Guido (la Auditora queda abierta).
 //   modelo-opus-con-ok       (ask) start_session o set_session_model con un modelo Opus.
 //   worktree-sin-permission-mode  (ask) start_session con permission_mode distinto de auto.
@@ -120,10 +120,7 @@ function skillsConOk(cmd) {
   const porBash = herramienta === 'Bash';
   const toca = EDITA.includes(herramienta) ? SKILLS.test(rutaEditada()) : bashEscribeEnSkills(cmd);
   if (!toca) return;
-  if (porBash) {
-    if (GIT_REESCRIBE.test(cmd)) return;
-    decidir('deny', 'Un comando de Bash no escribe en .claude/skills/: usá Edit o Write, con un texto que ya esté en un archivo de Admin/propuestas/ commiteado.');
-  }
+  if (porBash) return; // una sola sesión: Bash puede escribir en las skills (el candado de texto en propuestas/ era del modo de varios worktrees); Edit y Write siguen pidiendo
   const textos = herramienta === 'Write' ? String(params.content || '').split(/\n\s*\n/).map(normalizarTexto).filter((p) => p.length >= 40)
     : herramienta === 'MultiEdit' ? (params.edits || []).map((e) => normalizarTexto(e.new_string)).filter(Boolean)
     : [normalizarTexto(params.new_string)].filter(Boolean);

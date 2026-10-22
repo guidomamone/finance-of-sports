@@ -1,3 +1,4 @@
+<!-- md: qué cambió y cuándo (la última semana; lo anterior está en Archive) | leer: solo por grep de una palabra, nunca de corrido -->
 # Changelog
 
 Este archivo es la versión condensada del historial de `finance-of-sports`, versión
@@ -16,6 +17,13 @@ los documentos internos a `Admin/` y no reescribió el historial: una entrada de
 que dice `ESTADO.md` era verdad ese día.
 
 ---
+
+## Versión 940 — Sin worktrees, índice de .md y candado de Bash aflojado (2026-10-21)
+
+- Los 7 worktrees (`fos-*`) y sus ramas ya mergeadas se borraron. Antes se copiaron a `main`, sin pisar nada, los 2.317 archivos de `Clubes/` y `Generados/` que solo estaban ahí (transcripciones, XHTML y resultados de lotes); 214 archivos tracked modificados de `Generados/` del worktree de finanzas (salidas regenerables) no se copiaron.
+- `tools/indice-md.mjs` y `Admin/INDICE-md.md` (generado): cada `.md` vivo declara en su primera línea `<!-- md: qué es | leer: cuándo -->`; la tool cuenta quién lo cita y lista huérfanos y documentos sin marca. `audit.js` avisa `indice-md-desfasado` (P3). Archivados los 7 huérfanos que encontró (5 propuestas y 2 notas de transcripción, 76 KB de ellas de un registro de avance viejo).
+- Hook `pre-tool.mjs`: un Bash puede escribir en `.claude/skills/` (el candado era del modo de varios worktrees); Edit y Write siguen pidiendo el texto en `Admin/propuestas/`. Pruebas del hook al día (28 casos).
+- `CLAUDE.md`: al cerrar cada tarea, un bloque de proceso (qué `.md` se tocaron y cuáles se leyeron en vano, qué debería ser skill, regla o script); y no preguntarle a un club lo que está en internet. Se sacó de `dudas-por-club.md` la pregunta sobre Lierse (fundación, licencia y número de afiliación son públicos).
 
 ## Versión 939 — Lierse: dos clubes, sucesor y ligas; TODO por prioridad y skills partidas (2026-10-21) [355 · 365 · liersesk-be, liersekempenzonen-be]
 
