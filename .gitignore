@@ -177,3 +177,6 @@ tools/node_modules
 # tools/generar-correcciones.mjs: caché de lo ya comparado (to-do 247); se reconstruye solo
 Generados/.cache-correcciones.json
 Admin/registros/.hooks-disparos.jsonl
+
+# Salidas de tools/medir-pipeline.mjs (antes y despues de cada medicion; el registro que se trackea es Admin/registros/mediciones-pipeline.jsonl)
+Admin/mediciones/pipeline/

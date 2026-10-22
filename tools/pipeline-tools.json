@@ -12,13 +12,15 @@
    "usaLista": true,
    "correr": ["tools/medir-cargar.mjs", "--lista", "{lista}", "--salida", "{salida}.jsonl"],
    "comparar": ["tools/medir-cargar.mjs", "--comparar", "{antes}.jsonl", "{despues}.jsonl"],
+   "difRegex": "documentos distintos: (\\d+)",
    "restaurar": ["Admin/registros/categorias-aprendidas.jsonl"]
   },
   "verificar": {
    "que": "verificar.mjs sobre la lista (estado, totales y cada línea que suma); deja los registros como estaban",
    "usaLista": true,
    "correr": ["tools/medir-verificar.mjs", "--lista", "{lista}", "--salida", "{salida}.jsonl", "--pasadas", "2"],
-   "comparar": ["tools/medir-verificar.mjs", "--comparar", "{antes}.jsonl", "{despues}.jsonl"]
+   "comparar": ["tools/medir-verificar.mjs", "--comparar", "{antes}.jsonl", "{despues}.jsonl"],
+   "difRegex": "documentos idénticos, (\\d+) con diferencias"
   },
   "caja-deuda": {
    "que": "caja y deuda: el escalón gratis en TODOS los años cargados (no depende de la lista)",
