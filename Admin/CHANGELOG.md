@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 975 — TODO: cabeceras largas de tools/ [398]
+
+- Punto 398: las 77 cabeceras de más de 25 líneas que dejó la medición del 374, de las más largas a las más cortas, con un aviso P3 que las vigile.
+
 ## Versión 974 — Comentarios de tools/ sin historia: el aviso llega a 0 [374]
 
 - Limpieza a mano de las referencias históricas de los comentarios de las tools de más de 50 KB (`cargar`, `verificar`, `audit`, `alta-club`, `caja-deuda`, `lote`, `vocabulario`, `fetch-fx-reference` y las demás) y dos pasadas mecánicas más; las 1.629 referencias de la medición quedaron en 0. Cada tanda con el código sin comentarios idéntico a HEAD (`comparar-sin-comentarios.js --tools`) y medida por la vía de solo comentarios.
