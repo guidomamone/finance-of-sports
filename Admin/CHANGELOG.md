@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 999 — CONVENCIONES podada (402) y la auditoría en su criterio (370) [402 · 370]
+
+- 402: `Admin/CONVENCIONES.md` de 19,6 a 11,7 KB y con títulos (el circuito de tres sesiones, la historia de por qué los internos van en `Admin/` y el índice de reglas mudadas, a `Admin/Archive/convenciones-antes-de-podar.md`, íntegro). El arranque de Pipeline, de 37,4 a 16,9 KB. `TODO.md` (38,6 KB) no tiene qué podar: un punto cerrado se borra y los cuerpos largos son trabajo vivo.
+- 370: `node tools/audit.js` da P0 0, P1 0, P2 0 y P3 49, y los 49 piden trabajo (`--acciones`: 31 `catchall-dominante` que esperan la lista de Guido y 18 de la sesión, de a uno); queda la auditoría como lista, no el TODO.
+- Medición: solo documentos; no toca el pipeline.
+
 ## Versión 998 — Los lotes de prueba incorporan los casos raros (409) y los hallazgos con etiquetas (412) [409 · 412 · lotes-prueba.mjs, hallazgo.mjs, audit.js, cerrar.mjs]
 
 - 409: la rápida suma los casos raros (ajuste manual, freno de un script, respuesta de la cola que no fue «aceptar»), leídos de sus registros: de cada clase el documento más viejo y el más nuevo, hasta 40 (rápida 98 a 126, mediana 488 a 531); más una ranura que rota por semana ISO. `lotes-prueba.mjs --check` exige los casos raros en la mediana.
