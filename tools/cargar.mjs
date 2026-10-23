@@ -236,7 +236,44 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // preguntas de categoría, socios y gestión. `cortadoEn` es la etapa del freno que cortó; el RESULTADO de lote.mjs avisa con eso.
   const corta = (etapa, motivo) => { frena(etapa, motivo); P.cortadoEn = etapa; return P; };
 
+  const ctx = { P, frena, corta, agregarCaso, casosPendientes, sitio, registro, pdf, incluirNoRubro, voltearRespuestas };
   // ---- 1. registro
+  { const s = faseRegistro(ctx); if (s === P) return P; Object.assign(ctx, s); }
+
+  // ---- 2. club y año
+  { const s = faseClubYAnio(ctx); if (s === P) return P; Object.assign(ctx, s); }
+
+  // ---- 3. filas y montos
+  { const s = faseFilas(ctx); if (s === P) return P; Object.assign(ctx, s); }
+
+  // ---- 4. categoría de cada fila
+  { const s = faseCategorias(ctx); if (s === P) return P; Object.assign(ctx, s); }
+
+  { const s = faseCeros(ctx); if (s === P) return P; Object.assign(ctx, s); }
+  { const s = faseSinCategoria(ctx); if (s === P) return P; Object.assign(ctx, s); }
+
+  // ---- 5. signos
+  { const s = faseSignos(ctx); if (s === P) return P; Object.assign(ctx, s); }
+
+  // ---- 6. totales y tie-out
+  { const s = faseTotales(ctx); if (s === P) return P; Object.assign(ctx, s); }
+
+  if (faseIxbrl(ctx) === P) return P;
+
+  // ---- 7. fx, liga, sourceId
+  { const s = faseFxYLiga(ctx); if (s === P) return P; Object.assign(ctx, s); }
+
+  // ---- 8. fiscalYearMeta
+  if (faseEjercicio(ctx) === P) return P;
+  const { rev, exp, metaFilas, filas } = ctx;
+  Object.defineProperty(P, 'casosPendientes', { value: casosPendientes, enumerable: false }); // no va al .carga.json
+  P.resumen = { carga: P.frena.length === 0, motivos: P.frena.length, lineasIngreso: rev.length, lineasGasto: exp.length, metaFilas: metaFilas.length, excluidas: filas.filter((f) => f.destino === 'excluida').length };
+  return P;
+}
+
+// 1. El documento en el registro, su período (primer ejercicio, transición, tramo corto) y su .md / .categorias.json.
+function faseRegistro(ctx) {
+  const { registro, pdf, corta, P, frena, sitio } = ctx;
   const e = registro.find((x) => x.pdf === pdf);
   if (!e) { return corta('registro', 'el PDF no está en Admin/registros/transcripciones-estado.jsonl (correr tools/inventario-transcripciones.mjs)'); }
   P.md = e.md;
@@ -322,8 +359,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const AVISO_SIN_CAT = 'sin .categorias.json (año cargado a mano): cada fila sale de la escalera de categorías; una fila sin categoría frena igual';
   if (!existsSync(catPath)) { if (P.reemplaza) P.avisos.push(AVISO_SIN_CAT); else { frena('categorizacion', 'no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)'); frenosSinReemplazo.push(P.frena.at(-1)); } }
   else if (!categoriasAlDia(mdAbs)) frena('categorizacion', 'el .categorias.json NO está al día con su .rubros.json / .jev.json (huellas, tools/huellas.mjs): hay que volver a correr la etapa 5');
+  return { e, reemplaza, frenosSinReemplazo, per, mdAbs, catPath, AVISO_SIN_CAT };
+}
 
-  // ---- 2. club y año
+// 2. Club (o club provisional del alta), deporte, año, perímetro y moneda; los frenos que salen del alta.
+function faseClubYAnio(ctx) {
+  const { pdf, sitio, e, corta, frena, P, per, registro, frenosSinReemplazo, catPath, AVISO_SIN_CAT, reemplaza, agregarCaso } = ctx;
   const cr = clubDeRuta(pdf);
   const MSG_ALTA = 'el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa';
   // CLUB NUEVO EN EL ENSAYO: antes se cortaba acá y el ensayo de cargar-lote.mjs contaba el año como "se escribiría con alta"
@@ -417,8 +458,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (moneda && club.reportingCurrency && moneda !== club.reportingCurrency && ajusteDe(pdf, 'moneda')?.valor !== moneda) frena('moneda', `el ejercicio saldría en ${moneda} y el club reporta en ${club.reportingCurrency}`);
   const prevMonedas = new Set(Object.values(cd.fiscalYearMeta || {}).map((m) => m.currency).filter(Boolean));
   if (moneda && prevMonedas.size && !prevMonedas.has(moneda)) P.avisos.push(`los años cargados del club están en ${[...prevMonedas].join('/')} y este en ${moneda}`);
+  return { clubId, club, cd, ladoDeCat, CEROS, alta, campo, year, perimetro, ajPer, moneda };
+}
 
-  // ---- 3. filas y montos
+// 3. Las filas y los montos que dejó la verificación (con la suma de dos entidades si hay ajuste).
+function faseFilas(ctx) {
+  const { e, corta, pdf, P } = ctx;
   let sf; let notasVerif = []; let ingresosVerif = null; // lo que la verificación dice del estado, para el paso 6b
   {
     const pv = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false }));
@@ -456,8 +501,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   }
   if (!sf.ok) { return corta('filas', sf.motivo); }
   P.seleccion = { filas: sf.raw.length, notasUsadas: sf.extra?.notasUsadas || [], refM: sf.refM };
+  return { sf, notasVerif, ingresosVerif };
+}
 
-  // ---- 4. categoría de cada fila
+// 4. La categoría de cada fila: la escalera, la cola humana y el escalón de materialidad.
+function faseCategorias(ctx) {
+  const { catPath, P, club, cd, clubId, year, ladoDeCat, incluirNoRubro, sf, frena, pdf, e, per, reemplaza, voltearRespuestas, moneda, agregarCaso } = ctx;
   const cj = existsSync(catPath) ? JSON.parse(readFileSync(catPath, 'utf8')) : { rubros: [] };
   if (P.suma && existsSync(P.suma.categorias)) cj.rubros = [...(cj.rubros || []), ...(JSON.parse(readFileSync(P.suma.categorias, 'utf8')).rubros || [])]; // las del documento propio primero (porEtiqueta toma la primera)
   // Por etiqueta Y lado: la misma etiqueta puede estar de los dos lados en un documento (Fortaleza 2025 "Diversos"). Si el
@@ -747,7 +796,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   for (const f of enCola) if (f.casoCola) agregarCaso(f.casoCola);
   for (const f of filas) delete f.casoCola; // (no va al .carga.json)
   if (enCola.length) frena('categoria-en-cola', `${enCola.length} fila(s) esperan categoría en la cola humana (node tools/cola.mjs): ${enCola.slice(0, 5).map((f) => `"${f.label.slice(0, 40)}" -> ${f.cat} ${f.conf ?? ''}`).join('; ')}`);
+  return { cj, aceptable, filas };
+}
 
+// 4b. Categorías en 0 que deberían tener número (perfil del club, ajustes cero-real, ventana COVID) y el reintento.
+function faseCeros(ctx) {
+  const { club, pdf, filas, e, ingresosVerif, notasVerif, CEROS, frena, campo, clubId, cd, agregarCaso, year, P, sitio, alta } = ctx;
   // ---- 4b. CATEGORÍAS EN 0 -> REINTENTO (diseño aprobado por Guido; camino de error, solo con --desde-verificacion). Medido sobre
   // 241 años cargados: salarios del plantel nunca es 0, televisión 2%, estadio 1%: un 0 ahí es un desglose perdido (UC 2025, costo de ventas
   // sin abrir). Cuotas sociales (46% de ceros) y otras secciones deportivas (63-68%) solo cuentan si el perfil del club dice que tiene socios /
@@ -869,6 +923,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     if (ceros.length && !yaReintentado) { P.reintentar = ceros; frena('reintento', `categorías en 0 que deberían tener número: ${ceros.map((c) => c.categoria).join(', ')}. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar`); }
     else if (ceros.length) P.avisos.push(`categorías en 0 aun después del reintento (se carga así): ${ceros.map((c) => c.categoria).join(', ')}`);
   }
+  return { incluidoEn };
+}
+
+// 4c. Filas que nadie miró o sin categoría aceptable: avisos y tope.
+function faseSinCategoria(ctx) {
+  const { aceptable, frena, filas, ladoDeCat, P } = ctx;
   const suma = (arr) => arr.reduce((a, x) => a + Math.abs(x.native || 0), 0);
   // UNA FILA QUE NADIE MIRÓ. Una fila sin categoría aceptable que pesa menos del tope (MAX_SIN_CAT) es aviso y no se carga.
   // Eso vale para una fila que la categorización MIRÓ y no decidió; no para una que nunca vio: AEK 2024, la verificación abrió las entradas en
@@ -889,8 +949,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (contra.length) P.avisos.push(`${contra.length} fila(s) con categoría de un lado y el documento del otro: ${contra.slice(0, 4).map((f) => `"${f.label.slice(0, 40)}" -> ${f.cat}`).join('; ')}`);
   const noRubro = filas.filter((f) => f.destino === 'no-rubro');
   if (noRubro.length) P.avisos.push(`${noRubro.length} fila(s) elegidas por proponer-carga que la etapa 3 no tiene como rubro y sin lado (no se cargan): ${noRubro.slice(0, 4).map((f) => `"${f.label.slice(0, 30)}"`).join(', ')}`);
+  return { suma, contra };
+}
 
-  // ---- 5. signos
+// 5. Los signos: por tabla de origen y las lecturas alternativas de gastos y de financiero / impuesto.
+function faseSignos(ctx) {
+  const { filas, P, frena } = ctx;
   const rev = filas.filter((f) => f.destino === 'revenue'); const exp = filas.filter((f) => f.destino === 'expense');
   // POR TABLA DE ORIGEN, no por documento (bug de la primera versión, PSV 2020): el estado principal imprime "Afschrijving op
   // vergoedingssommen -22.305" con signo y la nota de gastos "Wedstrijdkosten 5.113" sin signo; mirando el documento entero ganaba "sin
@@ -927,8 +991,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     { nombre: 'financiero/impuesto como su tabla', v: (f) => ((conSigno.get(tablaDe(f)) ?? gastosConSigno) ? f.native : (f.ladoDoc === 'revenue' ? f.native : -f.native)) },
     { nombre: 'financiero/impuesto por palabras', v: signoPorPalabras },
   ];
+  return { rev, exp, metaFilas, ventaJugadoresFilas, lecturasGasto, lecturasMeta };
+}
 
-  // ---- 6. totales y tie-out
+// 6a y 6b. El resultado impreso, los totales de ingresos y gastos y la fila de redondeo.
+function faseTotales(ctx) {
+  const { rev, sf, suma, contra, club, filas, lecturasGasto, lecturasMeta, exp, metaFilas, ventaJugadoresFilas, P, frena, sitio, notasVerif, ingresosVerif, aceptable } = ctx;
   const revSum = rev.reduce((a, f) => a + f.amountNative, 0);
   const impresos = [];
   // Solo cuentan como "total impreso" los importes de tablas de ESTADO (título o lado de estado de resultados) y de las notas que abrió el
@@ -1043,7 +1111,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     }
   }
   P.totales = T;
+  return { meta, cierraPat, T, lado };
+}
 
+// 6c. La segunda lectura del resultado, desde el XHTML etiquetado.
+function faseIxbrl(ctx) {
+  const { frena, club, per, mdAbs, alta, e, pdf, perimetro, T, P, agregarCaso, year } = ctx;
   // 6c. SEGUNDA LECTURA del resultado, independiente del texto: el `ProfitLoss` etiquetado en el XHTML del que salió este .md (solo el hermano del mismo cierre).
   // Perímetro INDIVIDUAL: si no coincide, FRENA (medido: 9 clubes, 0 falsos frenos). CONSOLIDADO: sigue siendo AVISO y una fila en la cola, hasta que
   // `node tools/medir-ixbrl-consolidado.mjs` diga que se puede decidir (dos años consolidados de clubes distintos, uno con minoritarios). Un hecho ambiguo, de la matriz o que no está nunca frena. Se apaga con el ajuste `ixbrl-omitir`, con su motivo.
@@ -1060,8 +1133,11 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       else if (ch.caso) agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'ixbrl-resultado', detalle: String(year), que: `El resultado etiquetado en el XHTML (iXBRL) no coincide con el cargado: ${ch.caso}. Mirá la fila del estado de resultados en el .md; si el hecho no es el resultado del ejercicio (perímetro, minoritarios), ajuste \`ixbrl-omitir\` con su motivo.`, propuesta: 'revisar el signo y la escala del resultado en el .md; si el hecho es de otro perímetro, ixbrl-omitir' });
     }
   } catch (err) { P.avisos.push(`iXBRL: no se pudo comparar con el informe XHTML (${err.message})`); }
+}
 
-  // ---- 7. fx, liga, sourceId
+// 7. Tipo de cambio, fuente y liga.
+function faseFxYLiga(ctx) {
+  const { campo, moneda, P, frena, sitio, clubId, year, reemplaza, club } = ctx;
   const fxC = campo('fx'); const fxRefC = campo('fxRef');
   const m = { currency: moneda };
   if (fxC.valor != null && fxC.estado === 'ok' && fxC.fxSource) { m.fx = fxC.valor; m.fxSource = fxC.fxSource; }
@@ -1078,8 +1154,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // y 2013, cargados con liga null antes de que el roster estuviera en la caché.
   if (ligaExistente === null && ligaC.valor) ligaExistente = undefined;
   P.liga = { valor: ligaExistente !== undefined ? ligaExistente : (ligaC.valor ?? null), fuente: ligaExistente !== undefined ? 'la fila ya existe en data/club-leagues' : ligaC.fuente, estado: ligaExistente !== undefined ? 'existe' : ligaC.estado, nota: ligaC.nota };
+  return { m, sourceId };
+}
 
-  // ---- 8. fiscalYearMeta
+// 8. El ejercicio que se escribiría (fiscalYearMeta, líneas, fuente) y la pregunta por el presidente.
+function faseEjercicio(ctx) {
+  const { club, m, campo, cierraPat, metaFilas, lado, alta, per, moneda, registro, P, ajPer, perimetro, clubId, year, rev, exp, sourceId, meta, incluidoEn, T, pdf, e, cj, sitio, agregarCaso, frena } = ctx;
   // rawLabel: tal cual el documento (nunca se traduce ni se "prolija", club-data-mapping §0), salvo la referencia a nota del final
   // ("Otros ingresos (Nota 15)", "Renteresultaat (21)"), que en producción no se copia.
   const limpiar = (l) => String(l).replace(/\s*\((nota|notas|note|notes|anexo|annex|nr\.?)?\s*[\d.,\s]+\)\s*$/i, '').replace(/^\**\s*|\s*\**$/g, '').trim();
@@ -1132,9 +1212,6 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       P.avisos.push(`gestión: ningún presidente confirmado cubre ${year} (cierre ${cierreY}); pregunta en la cola (no frena)`);
     }
   }
-  Object.defineProperty(P, 'casosPendientes', { value: casosPendientes, enumerable: false }); // no va al .carga.json
-  P.resumen = { carga: P.frena.length === 0, motivos: P.frena.length, lineasIngreso: rev.length, lineasGasto: exp.length, metaFilas: metaFilas.length, excluidas: filas.filter((f) => f.destino === 'excluida').length };
-  return P;
 }
 
 // ============================================================================
