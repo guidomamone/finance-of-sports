@@ -641,7 +641,7 @@ del selector, el subtítulo de Finanzas y la página generada del club. `tools/g
 Un ingreso sin contraprestación comercial (subsidio público de explotación, donación, aporte de socios o accionistas impreso como ingreso) va a
 `grants_donations`, no a `other_income`. No entran: la subvención de capital imputada al resultado (`other_income`: no es plata del año), los premios y la
 solidaridad UEFA o de la liga (`competition_bonus`), el subsidio de la educación (`education`) ni un aporte que el documento lleva al patrimonio neto. Lo ya
-cargado se recategoriza por etiqueta con `tools/recategorizar-subsidios.mjs` (se revisa a mano el listado agrupado antes de escribir). Caso: Flora Tallinn
+cargado se recategoriza por etiqueta con `node tools/fos.mjs etiquetas --categoria grants_donations` (el proceso de `Admin/PIPELINE.md`, «Categoría nueva: recategorizar lo cargado»). Caso: Flora Tallinn
 (Lisa 12, «Annetused ja toetused»), Nacional («Subsídios à exploração»), Sarpsborg Fotball Invest 2010 («Bidrag fra aksjonærene»).
 CATEGORÍA (prompt): un subsidio público, una donación o un aporte de socios o accionistas impreso como ingreso va a grants_donations; la subvención de capital imputada, los premios y la solidaridad UEFA o de la liga y el subsidio de la educación no.
 EJEMPLO-CATEGORÍA: floratallinn-ee | revenue | Riigi ja/või KOV toetus | grants_donations

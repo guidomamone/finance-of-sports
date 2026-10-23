@@ -117,7 +117,7 @@
   "extraer-etiquetas.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },
   "bfo-rusia-notas.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Rusia" } },
   "gestiones-tanda.mjs": { "alcance": "etapa", "medidores": ["audit"] },
-  "recategorizar-subsidios.mjs": { "alcance": "etapa", "medidores": ["audit"] }
+  "recategorizar-etiquetas.mjs": { "alcance": "etapa", "medidores": ["audit"] }
  },
  "_modulos": "Los módulos que una tool de la tabla importa (directa o indirectamente) o llama como comando NO se escriben acá: tools/clasificar-tools.mjs los calcula, y sus medidores son los de las tools que los usan.",
  "sin_medidor": {

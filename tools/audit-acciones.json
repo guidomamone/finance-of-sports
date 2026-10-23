@@ -85,6 +85,11 @@
   "quien": "guido",
   "donde": "TODO 350"
  },
+ "etiqueta-sin-revisar": {
+  "hacer": "node tools/recategorizar-etiquetas.mjs --categoria <id> --proponer (reglas objetivas), --jev (Jev con el criterio de la REGLA), --prompt y --respuestas (agente con cita), --guido (lo que queda); después --ensayo y --escribir.",
+  "quien": "script",
+  "donde": "Admin/PIPELINE.md, «Categoría nueva: recategorizar lo cargado»"
+ },
  "import-sin-export": {
   "hacer": "Exportar el nombre en el módulo (o re-exportarlo desde el original, `export { … } from './x.mjs'`), o corregir el import: `node tools/imports-sin-export.mjs` lista los casos.",
   "quien": "sesion",

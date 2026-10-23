@@ -488,7 +488,9 @@ function checkMoneda(api) {
     const mediana = vals[Math.floor(vals.length / 2)];
     for (const x of list) {
       const ratio = x.usd / mediana;
-      if (ratio > 25 || ratio < 1 / 25) {
+      // 100×: un error de escala de verdad (×1.000 por «en miles») deja a un club típico (0,2 a 5 veces la mediana) a 200× o más; entre 25× y 100× están los
+      // clubes grandes y chicos reales de una liga con varias divisiones cargadas (la mediana mezcla divisiones).
+      if (ratio > 100 || ratio < 1 / 100) {
         // Un error de escala salta contra los otros años del club; un club realmente chico o grande de su liga, no. Mismo criterio que
         // `escala-implausible` (arriba): otro ejercicio del club a 2 años o menos, dentro de la banda y a menos de 20 veces -> no se marca.
         // Sin ese año vecino queda como aviso P3, no P2 (Auditora 5): la mediana de una liga con pocos clubes cargados no alcanza para
@@ -1589,6 +1591,20 @@ function checkFxProcedencia(api) {
   }
 }
 
+// Una línea cuya etiqueta puede ser de una categoría con regla (la expresión amplia de tools/etiquetas-reglas.mjs) y está en la categoría de origen sin
+// una decisión (aprobada o excluida) en las decisiones de esa categoría: el proceso de `recategorizar-etiquetas.mjs` no la vio. P3.
+function checkEtiquetaSinRevisar(api) {
+  let E; try { E = require('./etiquetas-reglas.mjs'); } catch (e) { add('P2', 'json-aviso', `no se pudo cargar tools/etiquetas-reglas.mjs: ${e.message}`); return; }
+  for (const [cat, R] of Object.entries(E.REGLAS)) {
+    const D = E.leerDecisiones(cat); const sin = new Map();
+    for (const { clubId, year, rev, exp } of clubYears(api)) for (const l of (R.lado === 'revenue' ? rev : exp)) {
+      if (l.normalizedCategory !== R.desde || !R.amplia.test(String(l.rawLabel)) || E.decidida(D, l.rawLabel)) continue;
+      const k = E.norm(l.rawLabel); if (!sin.has(k)) sin.set(k, `«${String(l.rawLabel).slice(0, 50)}» (${clubId} ${year})`);
+    }
+    if (sin.size) add('P3', 'etiqueta-sin-revisar', `${sin.size} etiqueta(s) de ${R.desde} que pueden ser ${cat} y no tienen decisión: ${[...sin.values()].slice(0, 5).join('; ')}${sin.size > 5 ? '; …' : ''}`);
+  }
+}
+
 // Un nombre que una tool importa de otra y la otra no exporta (tras partir un módulo): un import dinámico solo falla al correr esa rama. P1.
 function checkImportsSinExport() {
   try {
@@ -2231,6 +2247,7 @@ function main() {
   checkCorreccionesSinMotivo();
   checkRankings(api);
   checkCategorizacion(api);
+  checkEtiquetaSinRevisar(api);
   checkEscala(api);
   checkDeployInterno();
   checkIndexFileRoto();

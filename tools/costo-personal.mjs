@@ -44,25 +44,43 @@ export function candidatosPersonal(md) {
     const enc = celdas(L[a]).filter((c) => c && !/^:?-+:?$/.test(c) && /\p{L}/u.test(c)).join(' / ');
     const arriba = []; for (let k = a - 1; k >= 0 && arriba.length < 2 && a - k < 6; k--) { const t = L[k].trim(); if (t && !t.startsWith('|') && !/^-+\s*p[aá]g/i.test(t) && !/^!\[/.test(t)) arriba.unshift(t.replace(/[#*>]/g, '').trim().slice(0, 160)); }
     const primeras = []; for (let k = a; k < b && primeras.length < 3; k++) { const f = porLinea.get(k + 1); if (f && !esTotal(f.etiqueta)) primeras.push(String(f.etiqueta).slice(0, 50)); }
+    let seg = a; // principio del segmento actual: después de cada fila sin etiqueta con cifras
     for (let k = a; k < b; k++) {
       const f = porLinea.get(k + 1);
       if (f && esTotal(f.etiqueta) && f.cifras.length) out.push({ md, linea: k + 1, etiqueta: f.etiqueta, cifras: f.cifras, tabla: (celdas(L[a]).find((c) => /\p{L}{3,}/u.test(c)) || '').slice(0, 80), contexto: [arriba.join(' '), enc && `encabezado: ${enc}`, primeras.length && `filas: ${primeras.join(' / ')}`].filter(Boolean).join(' · ').slice(0, 300) });
-      // TOTAL SIN RÓTULO: la última fila de una tabla que no tiene etiqueta ("| | 14,885,763 | 12,165,369 |" debajo de los tres renglones de la nota «Staff costs»).
-      // Sin vocabulario ni idioma: es candidata SOLO si su primera cifra es la suma EXACTA de la primera cifra de las filas con etiqueta que tiene arriba en la misma tabla (al menos dos).
-      if (k === b - 1) {
-        const cs = celdas(L[k]); const sinRotulo = cs.length >= 2 && !cs[0] && cs.slice(1).some((c) => /\d/.test(c));
-        const nums = sinRotulo ? cs.slice(1).map(parseNumber).filter((n) => n !== null) : [];
+      // TOTAL SIN RÓTULO: una fila de una tabla sin etiqueta ("| | 14,885,763 | 12,165,369 |" debajo de los tres renglones de la nota «Staff costs»).
+      // Sin vocabulario ni idioma: es candidata SOLO si su primera cifra es la suma EXACTA de la primera cifra de las filas con etiqueta que tiene arriba (al menos dos), desde la fila sin
+      // etiqueta anterior (dos tablas pegadas sin línea en blanco, la nota de personal y la de cantidad de empleados, son dos segmentos) o, si es la última del bloque, desde su principio.
+      const cs = celdas(L[k]); const sinRotulo = cs.length >= 2 && !cs[0] && cs.slice(1).some((c) => /\d/.test(c));
+      if (sinRotulo) {
+        const nums = cs.slice(1).map(parseNumber).filter((n) => n !== null);
         if (nums.length) {
-          const arribaFilas = []; for (let q = a; q < k; q++) { const g = porLinea.get(q + 1); if (g && g.etiqueta && !esTotal(g.etiqueta) && g.cifras.length) arribaFilas.push(Math.abs(g.cifras[0])); }
-          const suma = arribaFilas.reduce((x, y) => x + y, 0);
-          if (arribaFilas.length >= 2 && Math.abs(suma - Math.abs(nums[0])) <= Math.max(0.5, 5e-4 * Math.abs(nums[0]))) out.push({ md, linea: k + 1, etiqueta: '(total sin rótulo: suma las filas de arriba)', cifras: nums.map(Math.abs), tabla: (celdas(L[a]).find((c) => /\p{L}{3,}/u.test(c)) || '').slice(0, 80), contexto: [arriba.join(' '), enc && `encabezado: ${enc}`, primeras.length && `filas: ${primeras.join(' / ')}`].filter(Boolean).join(' · ').slice(0, 300) });
+          for (const desde of (k === b - 1 && seg !== a ? [seg, a] : [seg])) {
+            // la primera cifra de cada fila se toma ALINEADA A LA DERECHA con las del total (las filas con columna de nota o con un importe chico, «| Other pension costs | 78 | 299 |», que filasDelMd
+            // lee como número de nota y descarta, tendrían una cifra de menos y correrían la columna)
+            const arribaFilas = []; const filas = [];
+            for (let q = desde; q < k; q++) { const g = porLinea.get(q + 1); if (g && g.etiqueta && !esTotal(g.etiqueta) && g.cifras.length) { const crudas = celdas(L[q]).slice(1).map(parseNumber).filter((n) => n !== null); arribaFilas.push(Math.abs(crudas.length >= nums.length ? crudas[crudas.length - nums.length] : g.cifras[0])); if (filas.length < 3) filas.push(String(g.etiqueta).slice(0, 50)); } }
+            const suma = arribaFilas.reduce((x, y) => x + y, 0);
+            if (arribaFilas.length >= 2 && Math.abs(suma - Math.abs(nums[0])) <= Math.max(0.5, 5e-4 * Math.abs(nums[0]))) { out.push({ md, linea: k + 1, etiqueta: '(total sin rótulo: suma las filas de arriba)', cifras: nums.map(Math.abs), tabla: (celdas(L[a]).find((c) => /\p{L}{3,}/u.test(c)) || '').slice(0, 80), contexto: [arriba.join(' '), enc && `encabezado: ${enc}`, filas.length && `filas: ${filas.join(' / ')}`].filter(Boolean).join(' · ').slice(0, 300) }); break; }
+          }
         }
+        seg = k + 1;
       }
     }
     a = b;
   }
+  // FILA CON RÓTULO DE PERSONAL: «Staff costs (Note 9) 74.763 65.595» en la nota de resultado de explotación (fuera de una tabla, o dentro de una) es el total que el propio documento imprime.
+  // Jev elige entre estas y las de total; la compuerta del vecino (el año siguiente trae el mismo valor en su columna anterior) decide si se usa.
+  const yaEstan = new Set(out.map((o) => o.linea));
+  for (const f of porLinea.values()) {
+    if (yaEstan.has(f.linea) || !f.cifras.length || !ROTULO_PERSONAL_RE.test(String(f.etiqueta).trim())) continue;
+    const arriba = []; for (let k = f.linea - 2; k >= 0 && arriba.length < 2 && f.linea - 2 - k < 6; k--) { const t = L[k].trim(); if (t && !/^-+\s*p[aá]g/i.test(t) && !/^!\[/.test(t)) arriba.unshift(t.replace(/[#*>|]/g, '').trim().slice(0, 160)); }
+    out.push({ md, linea: f.linea, etiqueta: f.etiqueta, cifras: f.cifras, tabla: '', contexto: arriba.join(' ').slice(0, 300) });
+  }
   return out;
 }
+// el rótulo de una fila que ES el costo de personal del ejercicio (no una parte: «wages and salaries», «social security»); el principio del rótulo, sin importar la nota entre paréntesis
+const ROTULO_PERSONAL_RE = /^(total )?(staff|personnel|employee)s?(?:'s)? (costs?|expenses?|benefits?)\b|^(total )?(gastos|costes?|costos) de personal\b|^personalaufwand\b|^personalkosten\b|^personeelskosten\b|^(custos|gastos) com (o )?pessoal\b|^(spese|costi) (per il |del )?personale\b/i;
 // ESCALÓN 1: la nota de personal por su ESTRUCTURA, sin preguntarle a Jev. Es candidata la tabla cuyo total sin rótulo es la suma EXACTA de las filas de arriba (la identidad que
 // candidatosPersonal ya exige) y cuyas primeras filas son de personal: al menos dos de {sueldos, cargas sociales, pensiones}. Se prefieren las del propio documento del año; si hay más de una,
 // no decide (Jev elige). La escala la dice el encabezado de la tabla (£000, £m…), no el documento.

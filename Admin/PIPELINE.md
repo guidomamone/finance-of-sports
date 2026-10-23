@@ -868,6 +868,18 @@ sección Rusia de `Admin/COMO-CORRE-EL-PROYECTO.html`; el detalle de cada escal�
 - Lo ya etiquetado no se paga con IA: `lote.mjs --ejecutar` no corre si la lista tiene un documento de motor `xhtml-ixbrl (determinista)` (frena el lote entero, antes de escribir nada) salvo con `--pagar-ia-xhtml "<motivo>"` (queda en `Admin/registros/pagar-ia-xhtml.jsonl`). El ensayo pone «se frenaría (determinista)» al lado del costo de cada uno y separa el total entre lo que corre (los demás documentos) y lo que se frena. `audit.js` da P1 `pago-ia-sobre-determinista` si un log de API registra una llamada paga sobre uno de esos documentos sin la bandera.
 - Después el documento es un PDF más: `lote.mjs` lo localiza, extrae, verifica y carga con las etapas de siempre; las compuertas aritméticas son las de siempre. Ensayo: `node tools/xhtml-aarsrapport.mjs "<xhtml>|<carpeta>"`; `--escribir` escribe el `.md` y el `.pdf` (no pisa los que existen; `--rehacer` sí).
 
+## Categoría nueva: recategorizar lo cargado (`tools/recategorizar-etiquetas.mjs`)
+
+Cuando una REGLA de `Admin/CONVENCIONES-DATOS.md` abre una categoría (con su línea `CATEGORÍA (prompt)`), lo ya cargado que cae en la categoría de origen se pasa por ETIQUETA, sin que Guido lea cada una. Las reglas objetivas y la expresión amplia de cada categoría están en `tools/etiquetas-reglas.mjs`; las decisiones (aprobada o excluida, con motivo y quién: regla, jev, agente, guido) en `tools/etiquetas/<categoría>.json` (`tools/subsidios-etiquetas.json` para `grants_donations`). `node tools/fos.mjs etiquetas --categoria <id>`, en este orden:
+
+1. `--proponer`: lo claro (mezclado, solidaridad de la federación o la liga, subvención de capital, impuestos) se decide solo.
+2. `--jev`: Jev recibe TODAS las etiquetas sin decidir con el criterio de la REGLA como prompt; confianza de 0,90 o más pasa sola, entre 0,50 y 0,90 va a `revisar`. Cuesta centavos; las respuestas quedan en `Admin/registros/etiquetas-jev.jsonl` y no se vuelven a preguntar. `--backtest` mide cuánto de lo ya decidido reproduce Jev (cuántas con confianza alta, y los errores de confianza alta, que son lo que importa).
+3. `--prompt`: el prompt fijo para un agente (Sonnet) con las etiquetas en `revisar`; devuelve si es, el motivo y una CITA textual del `.md`. `--respuestas <json>` verifica la cita contra el archivo: sin cita verificable, o en conflicto con una regla objetiva, la etiqueta va a Guido.
+4. `--guido`: la lista corta, una sola; se decide con `--decidir "<etiqueta>" aprobada|excluida --motivo "…"`.
+5. `--ensayo` y `--escribir` mueven las líneas aprobadas (JSON de cada club); después `node tools/publicar.mjs` y un commit con `Corrige:`.
+
+`audit.js` avisa `etiqueta-sin-revisar` (P3) cuando una línea de la categoría de origen puede ser de una categoría con regla y no tiene decisión. Una categoría nueva agrega su entrada a `REGLAS` en `tools/etiquetas-reglas.mjs`.
+
 ## Caja y deuda (`tools/caja-deuda.mjs`)
 
 Comando aparte, con el club ya publicado: completa `cash` y `grossDebt` de cada año cargado donde el sitio tiene null (nunca pisa un valor
