@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1000 — El P3 de la auditoría de 49 a 1, y las cargas a mano controladas [409 · 413 · 414 · 415 · audit.js, cargas-manuales.mjs, lotes-prueba.mjs, hallazgo.mjs, con-worktree.mjs, prueba-escribir.mjs]
+
+- P3: 44 hallazgos silenciados en `audit-ignore.json` con su verificación (31 `catchall-dominante` con la cifra hallada en el documento; 8 `ejercicio-sin-rastro` con la nota de sourcing o el descarte) o aceptados sin verificar por pedido de Guido (5, dicho en su motivo); 5 respuestas de `dudas-por-club.md` a `carga-clubes` o sourcing, un párrafo repetido, 21 mediciones con destino en `Admin/mediciones/README.md` y los comentarios con historia de 3 tools. Queda `sonderjyske-dk` (413).
+- 409 opción C: `fos cargas-manuales` encuentra los años cargados a mano (sin `cargar.mjs`) sin ajuste, freno ni respuesta de la cola (`audit.js`: `carga-manual-sin-rastro`; línea de base de 134 documentos aceptados); los lotes de prueba los incluyen como la clase `carga-manual`.
+- Puntos nuevos: 413 (SønderjyskE), 414 («Ganhos em imobilizações»: ¿ventas de jugadores?), 415 (deducciones de ingresos como «Otros ingresos» negativo, caso Flamengo: cierra con el total oficial).
+- Medición: lote completo idéntico; veredicto general.
+
 ## Versión 999 — CONVENCIONES podada (402) y la auditoría en su criterio (370) [402 · 370]
 
 - 402: `Admin/CONVENCIONES.md` de 19,6 a 11,7 KB y con títulos (el circuito de tres sesiones, la historia de por qué los internos van en `Admin/` y el índice de reglas mudadas, a `Admin/Archive/convenciones-antes-de-podar.md`, íntegro). El arranque de Pipeline, de 37,4 a 16,9 KB. `TODO.md` (38,6 KB) no tiene qué podar: un punto cerrado se borra y los cuerpos largos son trabajo vivo.
