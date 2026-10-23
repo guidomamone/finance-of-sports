@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 963 — TODO: hooks Stop y SessionStart, y la regla de «Jev dijo ninguna» [388 · 389 · 390]
+
+- Puntos nuevos: 388 (hook `Stop` con chequeos baratos al terminar un turno), 389 (hook `SessionStart` con el estado en menos de 10 líneas) y 390 (regla para los 7 casos de «Jev dijo ninguna» de `fos causas`, al fondo de A, prioridad baja). Orden: 383, 384, 374, 388, 389, 379, 375.
+
 ## Versión 962 — registro de casos sin resolver con causa, prueba de medir-pipeline y `fos cerrar` [387 · 380 · 382]
 
 - `tools/casos-sin-resolver.mjs` + `Admin/registros/casos-sin-resolver.jsonl`: las tools anotan lo que no pudieron resolver con una causa de código fijo (`costo-personal.mjs`: sin-filas-de-total, jev-ninguna, otra-entidad, sin-escala, suma-cero, vecino-no-coincide, sin-vecino) solo al escribir y solo para los años del aviso (`--anios`); un caso que se resuelve deja una línea «resuelto». `node tools/fos.mjs causas` cuenta por tool y causa y marca «candidata a regla» a la de 3 casos de 2 clubes o más. Primera lectura de los 12 `sin-salarios`: «Jev dijo ninguna» son 7 casos de 5 clubes (candidata a regla); «otra entidad» son 3 casos de Aston Villa (de a uno). Medido: idéntico en `caja-deuda`, `--personal --medir` y los ensayos de 31 clubes; la única diferencia es un `todo-cumplido`, artefacto de que el módulo nuevo no existía en el ANTES. Sin revisión independiente.
