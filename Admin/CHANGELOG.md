@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 983 — Primera partición de tools/: caja-deuda.mjs → caja-deuda-md.mjs [375]
+
+- `fos mover caja-deuda.mjs 53-465 caja-deuda-md.mjs`: el parseo del `.md` de un balance (importes, columnas de notas, filas y totales; 413 líneas, 38 KB) sale de `caja-deuda.mjs` (de 113 a 78 KB) a su módulo; `caja-deuda.mjs` lo importa y re-exporta `coincide`, `parseNumber`, `filasDelMd` y `r6` (los llamadores no cambian). Seis constantes puras se duplican en el módulo (`PAG_RE`, `IMPORTE_RE`, …). Medido (caja-deuda, caja-deuda-personal, personal-ensayos, audit): idéntico salvo `indice-md-desfasado` (el índice cuenta cuántas tools citan cada `.md` y el módulo cita uno más; explicado, índice regenerado).
+- `patron.mjs`: una mudanza (sin los imports, sin el `export` del principio y sin líneas ya existentes duplicadas, lo agregado es lo quitado) no pide veredicto; `medir pipeline` sigue usando las diferencias exactas, así que una mudanza va por los lotes. `que-pide` juzga el conjunto de tools cambiadas, como el hook.
+
 ## Versión 982 — `fos mover`: mudar un bloque de una tool a un módulo sin cambiarlo [379]
 
 - `tools/mover-bloque.mjs` (`node tools/fos.mjs mover <tool> <desde>-<hasta> <destino.mjs> ["porqué"] [--escribir]`): con una máscara de código (sin comentarios, cadenas ni regex; el código de un `${…}` sí) calcula qué nombres de la tool usa el bloque y cuáles del bloque usa el resto. Lo que el bloque usa de los imports de la tool se importa igual; una constante pura de una línea (`const ROOT = resolve(import.meta.dirname, '..')`) se duplica en el módulo; el resto se importa de la tool (con `export` agregado); lo que el resto usa del bloque se exporta y se importa, y lo que el bloque ya exportaba se re-exporta. Comprueba bloque idéntico salvo el `export`, `node --check` de los dos y avisa de ciclos, código que se ejecuta al importar y un TDZ (constante del bloque que usa al evaluarse un nombre que importaría de la tool: no escribe sin `--forzar`). Ensayo por defecto.

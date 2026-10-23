@@ -27,6 +27,9 @@ export function quePide(archivos, { staged = false } = {}) {
   const BUENO = /^(idéntico|\d+ diferencias, todas explicadas)$/;
   const huella = (n) => git(...(staged ? ['rev-parse', `:tools/${n}`] : ['hash-object', `tools/${n}`])).trim();
   const filas = [];
+  // una mudanza (un bloque que pasa de una tool a otra) se juzga con todas las tools cambiadas juntas, como hace el hook de commit
+  const conjunto = archivos.map((f) => f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter((n) => n && existsSync(join(ROOT, 'tools', n)) && ['tools', 'modulo'].includes(C.clase(n)));
+  const difConjunto = conjunto.length ? cambioDeCodigo(conjunto, { destino: staged ? 'indice' : null }) : null;
   for (const f of archivos) {
     const tool = f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1];
     if (tool && existsSync(join(ROOT, f))) {
@@ -34,7 +37,7 @@ export function quePide(archivos, { staged = false } = {}) {
       if (clase === 'sin_clasificar') { filas.push({ f, ok: false, texto: `sin clasificar: sumala a «tools» o «no_pipeline» de tools/pipeline-tools.json (node tools/clasificar-tools.mjs ${tool})` }); continue; }
       if (!['tools', 'modulo'].includes(clase)) { filas.push({ f, ok: true, texto: `${clase === 'no_pipeline' ? 'no es del pipeline' : clase}: no pide medición ni veredicto` }); continue; }
       const medidores = T.tools[tool]?.medidores || C.modulos.get(tool)?.medidores || [];
-      const dif = cambioDeCodigo([tool], { destino: staged ? 'indice' : null });
+      const dif = difConjunto || cambioDeCodigo([tool], { destino: staged ? 'indice' : null });
       const solo = !dif.agregado.length && !dif.quitado.length;
       const h = huella(tool);
       const medida = mediciones.some((l) => BUENO.test(l.resultado || '') && l.tools?.[tool]?.despues === h);

@@ -60,18 +60,26 @@ function sobran(a, b) { // líneas de a que b no tiene (con multiplicidad)
 }
 
 // El código agregado y el quitado por un cambio a esas tools. base/destino: una revisión, 'indice' (lo staged) o null (el árbol de trabajo / HEAD).
+// Para decidir si un cambio es una mudanza: los imports y el `export` del principio de una línea no son lógica.
+const sinImports = (t) => t.replace(/^import[\s\S]*?from\s*['"][^'"]+['"];?[ \t]*$/gm, '').replace(/^export\s*\{[\s\S]*?\}\s*from\s*['"][^'"]+['"];?[ \t]*$/gm, '');
+const sinExport = (l) => l.replace(/^export\s+(default\s+)?/, '');
+
 export function cambioDeCodigo(nombres, { base = 'HEAD', destino = null } = {}) {
-  const viejo = [], nuevo = [];
+  const viejo = [], nuevo = [], viejoNorm = [], nuevoNorm = [];
   for (const n of nombres) {
     const ruta = `tools/${n}`;
     let a = ''; try { a = git(['show', `${base}:${ruta}`], { stdio: ['ignore', 'pipe', 'ignore'] }); } catch { /* tool nueva */ }
     let b = '';
     try { b = destino === 'indice' ? git(['show', `:${ruta}`], { stdio: ['ignore', 'pipe', 'ignore'] }) : destino ? git(['show', `${destino}:${ruta}`], { stdio: ['ignore', 'pipe', 'ignore'] }) : readFileSync(join(ROOT, ruta), 'utf8'); } catch { /* borrada */ }
     viejo.push(...codigoSinComentarios(a)); nuevo.push(...codigoSinComentarios(b));
+    viejoNorm.push(...codigoSinComentarios(sinImports(a)).map(sinExport)); nuevoNorm.push(...codigoSinComentarios(sinImports(b)).map(sinExport));
   }
   const agregado = sobran(nuevo, viejo), quitado = sobran(viejo, nuevo);
-  // solo comentarios: nada agregado ni quitado. Mudanza: lo agregado es, línea por línea, lo quitado.
-  const mudanza = agregado.length === quitado.length && JSON.stringify([...agregado].sort()) === JSON.stringify([...quitado].sort());
+  // solo comentarios: nada agregado ni quitado (agregado y quitado quedan EXACTOS: medir pipeline los usa para no correr lotes). Mudanza: sin los imports, sin el `export` del principio y sin las líneas
+  // que ya existían (una constante pura duplicada en el módulo nuevo), lo agregado es, línea por línea, lo quitado; no pide veredicto.
+  const existentes = new Set(viejoNorm);
+  const agregadoNorm = sobran(nuevoNorm, viejoNorm).filter((l) => !existentes.has(l)), quitadoNorm = sobran(viejoNorm, nuevoNorm);
+  const mudanza = agregadoNorm.length === quitadoNorm.length && JSON.stringify([...agregadoNorm].sort()) === JSON.stringify([...quitadoNorm].sort());
   return { agregado, quitado, hayCodigo: !(mudanza || (!agregado.length && !quitado.length)) };
 }
 
