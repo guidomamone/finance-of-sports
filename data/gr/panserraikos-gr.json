@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "panserraikos-gr",
@@ -43,7 +43,7 @@
         {"label":"Χορηγίες και διαφημίσεις","category":"commercial","subcategory":"sponsorship_commercial","amount":0.387016,"disclosure":"aggregated"},
         {"label":"Δικαιώματα αναμετάδοσης","category":"media_rights","subcategory":"broadcasting","amount":0.077492,"disclosure":"aggregated"},
         {"label":"Άλλα λειτουργικά έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.043795,"disclosure":"aggregated"},
-        {"label":"Αποζημίωση ειδικού σκοπού COVID","category":"other_revenue","subcategory":"other_income","amount":0.005336,"disclosure":"aggregated"},
+        {"label":"Αποζημίωση ειδικού σκοπού COVID","category":"grants_donations","subcategory":"grants_donations","amount":0.005336,"disclosure":"aggregated"},
         {
           "label": "Κέρδη/ζημίες από τη διάθεση (μετεγγραφών) και αποχώρηση ποδοσφαιριστών",
           "category": "player_transfers",

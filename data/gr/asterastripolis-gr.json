@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "asterastripolis-gr",
@@ -237,8 +237,8 @@
         {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":0.360137,"disclosure":"aggregated"},
         {
           "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 1.571428,
           "disclosure": "aggregated"
         },
@@ -430,8 +430,8 @@
         {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":0.413184,"disclosure":"aggregated"},
         {
           "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 1.5,
           "disclosure": "aggregated"
         },
@@ -526,8 +526,8 @@
         {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":0.416949,"disclosure":"aggregated"},
         {
           "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 1.50282,
           "disclosure": "aggregated"
         },
@@ -617,8 +617,8 @@
         {"label":"Επιχορηγήσεις","category":"grants_donations","subcategory":"grants_donations","amount":1.168365,"disclosure":"aggregated"},
         {
           "label": "Αποζημίωση ειδικού σκοπού αθλητικών σωματείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 1.495569,
           "disclosure": "aggregated"
         },

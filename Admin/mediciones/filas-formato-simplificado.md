@@ -16,7 +16,7 @@ Lo escribe `node tools/relevancia-filas.mjs --escribir` (lo corre solo `publicar
 | Premios por competencias | 461 de 1319 (35 %) | 140 de 331 (42 %) | 6.9 % · 39 % | 538 (41 %) | 320 | 0 |
 | Venta de Jugadores | 907 de 1319 (69 %) | 234 de 331 (71 %) | 16.4 % · 65 % | 129 (10 %) | 283 | 0 |
 | Otras actividades (educación y otros deportes) | 236 de 1319 (18 %) | 78 de 331 (24 %) | 1.9 % · 14 % | 769 (58 %) | 314 | 0 |
-| Subsidios y donaciones | 392 de 1319 (30 %) | 119 de 331 (36 %) | 2.7 % · 30 % | 648 (49 %) | 279 | 0 |
+| Subsidios y donaciones | 400 de 1319 (30 %) | 123 de 331 (37 %) | 2.7 % · 31 % | 640 (49 %) | 279 | 0 |
 | Fútbol profesional (sin desglosar por la fuente) | 329 de 1319 (25 %) | 120 de 331 (36 %) | 77.3 % · 95 % | 990 (75 %) | 0 | 0 |
 | Otros ingresos (catch-all) | 1187 de 1319 (90 %) | 297 de 331 (90 %) | 7.4 % · 40 % | 132 (10 %) | 0 | 0 |
 
@@ -25,7 +25,7 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 - **Cuotas Sociales** — países: BR 32/42 · AR 19/19 · EE 8/9 · PT 7/33 · HR 5/8 · NO 4/6 · CO 2/15 · CH 2/3 · IT 1/22 · PE 1/1 · BE 1/23 · CL 1/3 · CY 1/1
 - **Premios por competencias** — países: BR 25/42 · PT 22/33 · CO 15/15 · ES 15/19 · NL 14/31 · HR 8/8 · AR 7/19 · EE 7/9 · IT 6/22 · GR 6/14 · NO 3/6 · GB 3/31 · RU 3/16 · CH 2/3 · DK 1/11 · PE 1/1 · TR 1/1 · CL 1/3
 - **Otras actividades (educación y otros deportes)** — países: AR 19/19 · BR 17/42 · CO 9/15 · IT 6/22 · GB 6/31 · EE 5/9 · PT 4/33 · CH 3/3 · NL 2/31 · NO 1/6 · GR 1/14 · RU 1/16 · PE 1/1 · ES 1/19 · DE 1/11 · CL 1/3
-- **Subsidios y donaciones** — países: PT 30/33 · IT 19/22 · NL 10/31 · AR 10/19 · EE 9/9 · BR 8/42 · GB 7/31 · NO 4/6 · GR 4/14 · RU 4/16 · BE 4/23 · HR 4/8 · DK 2/11 · CO 2/15 · ES 2/19
+- **Subsidios y donaciones** — países: PT 30/33 · IT 19/22 · NL 10/31 · AR 10/19 · BR 10/42 · EE 9/9 · GB 7/31 · GR 5/14 · NO 4/6 · RU 4/16 · BE 4/23 · HR 4/8 · DK 2/11 · CO 2/15 · ES 2/19 · CH 1/3
 - **Fútbol profesional (sin desglosar por la fuente)** — países: BE 22/23 · RU 15/16 · PT 13/33 · NL 12/31 · BR 12/42 · GR 10/14 · JP 10/10 · DK 7/11 · GB 3/31 · ES 3/19 · DE 3/11 · NO 2/6 · AR 2/19 · CO 1/15 · PE 1/1 · CH 1/3 · MX 1/1 · EE 1/9 · AT 1/1
 
 ### Gastos

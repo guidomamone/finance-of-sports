@@ -13,7 +13,7 @@ window.RANKINGS["br-serieA"] = {
         mix:[["Cuotas Sociales",26.3],["Comercial / Sponsors",43.046],["Estadio",25.304],["Televisión",32.728],["Premios por competencias",57.965],["Venta de Jugadores",109.445],["Otras actividades (educación y otros deportes)",0.163],["Otros ingresos",1.009]] },
       { id:"botafogo-br", revenue:247.129, reportType:"official_balance_sheet",
         sourceId:"botafogo-br-demonstracoes-2025",
-        mix:[["Cuotas Sociales",9.536],["Comercial / Sponsors",28.412],["Estadio",7.5],["Televisión",20.205],["Premios por competencias",48.904],["Venta de Jugadores",135.569],["Otros ingresos",-2.998]] },
+        mix:[["Cuotas Sociales",9.536],["Comercial / Sponsors",28.412],["Estadio",7.5],["Televisión",20.205],["Premios por competencias",48.904],["Venta de Jugadores",135.569],["Subsidios y donaciones",0.147],["Otros ingresos",-3.145]] },
       { id:"saopaulo-br", revenue:195.173, reportType:"official_balance_sheet",
         sourceId:"saopaulo-br-wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1-completo",
         mix:[["Cuotas Sociales",19.989],["Comercial / Sponsors",40.749],["Estadio",17.856],["Televisión",44.543],["Venta de Jugadores",51.569],["Otras actividades (educación y otros deportes)",2.912],["Otros ingresos",17.555]] },

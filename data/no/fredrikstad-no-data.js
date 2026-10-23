@@ -3,7 +3,7 @@ const fredrikstadNoRevenueLinesByYear = {
   2012: [
     {"rawLabel":"Diverseinntekter","normalizedCategory":"other_income","amountNative":0.000354,"disclosureLevel":"aggregated"},
     {"rawLabel":"Medlemskontingent","normalizedCategory":"member_dues","amountNative":0.08649,"disclosureLevel":"aggregated"},
-    {"rawLabel":"GRASROTANDEL","normalizedCategory":"other_income","amountNative":0.677145,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GRASROTANDEL","normalizedCategory":"grants_donations","amountNative":0.677145,"disclosureLevel":"aggregated"},
     {"rawLabel":"Jeg er med","normalizedCategory":"other_income","amountNative":1.148488,"disclosureLevel":"aggregated"},
     {"rawLabel":"Spilleautomater","normalizedCategory":"other_income","amountNative":0.230242,"disclosureLevel":"aggregated"},
     {"rawLabel":"Tilskudd FFK Sport ASA","normalizedCategory":"grants_donations","amountNative":19.769761,"disclosureLevel":"aggregated"},

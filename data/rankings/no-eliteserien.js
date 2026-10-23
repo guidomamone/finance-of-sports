@@ -86,7 +86,7 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Comercial / Sponsors",5.516],["Estadio",0.987],["Televisión",2.613],["Venta de Jugadores",2.218],["Otros ingresos",2.747]] },
       { id:"sarpsborg08-no", revenue:9.227, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2021",
-        mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.333],["Estadio",0.507],["Televisión",1.116],["Premios por competencias",0.105],["Venta de Jugadores",2.908],["Subsidios y donaciones",0.759],["Otros ingresos",0.44]] },
+        mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.333],["Estadio",0.507],["Televisión",1.116],["Premios por competencias",0.105],["Venta de Jugadores",2.908],["Subsidios y donaciones",0.959],["Otros ingresos",0.239]] },
     ],
   },
   2020: {
@@ -116,7 +116,7 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Comercial / Sponsors",5.288],["Estadio",1.453],["Televisión",1.709],["Venta de Jugadores",0.1],["Otros ingresos",3.211]] },
       { id:"sarpsborg08-no", revenue:10.834, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2019",
-        mix:[["Cuotas Sociales",0.076],["Comercial / Sponsors",3.68],["Estadio",0.626],["Televisión",0.87],["Premios por competencias",0.21],["Venta de Jugadores",3.528],["Subsidios y donaciones",1.355],["Otros ingresos",0.49]] },
+        mix:[["Cuotas Sociales",0.076],["Comercial / Sponsors",3.68],["Estadio",0.626],["Televisión",0.87],["Premios por competencias",0.21],["Venta de Jugadores",3.528],["Subsidios y donaciones",1.553],["Otros ingresos",0.292]] },
     ],
   },
   2018: {
@@ -125,7 +125,7 @@ window.RANKINGS["no-eliteserien"] = {
     clubs: [
       { id:"sarpsborg08-no", revenue:19.261, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2018",
-        mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",3.419],["Estadio",1.243],["Televisión",2.007],["Premios por competencias",6.16],["Venta de Jugadores",4.927],["Subsidios y donaciones",0.754],["Otros ingresos",0.689]] },
+        mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",3.419],["Estadio",1.243],["Televisión",2.007],["Premios por competencias",6.16],["Venta de Jugadores",4.927],["Subsidios y donaciones",0.956],["Otros ingresos",0.487]] },
       { id:"molde-no", revenue:11.975, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2018",
         mix:[["Cuotas Sociales",0.027],["Comercial / Sponsors",4.298],["Estadio",1.553],["Televisión",4.633],["Premios por competencias",0.214],["Venta de Jugadores",0.002],["Subsidios y donaciones",0.251],["Otros ingresos",0.997]] },
@@ -143,7 +143,7 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Comercial / Sponsors",4.817],["Estadio",0.92],["Televisión",1.342],["Venta de Jugadores",1.606],["Otros ingresos",1.375]] },
       { id:"sarpsborg08-no", revenue:9.869, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2017",
-        mix:[["Cuotas Sociales",0.051],["Comercial / Sponsors",2.914],["Estadio",1.28],["Televisión",1.538],["Premios por competencias",0.566],["Venta de Jugadores",1.835],["Subsidios y donaciones",0.958],["Otros ingresos",0.727]] },
+        mix:[["Cuotas Sociales",0.051],["Comercial / Sponsors",2.914],["Estadio",1.28],["Televisión",1.538],["Premios por competencias",0.566],["Venta de Jugadores",1.835],["Subsidios y donaciones",1.121],["Otros ingresos",0.564]] },
     ],
   },
   2016: {
@@ -155,7 +155,7 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.028],["Comercial / Sponsors",2.475],["Estadio",1.883],["Televisión",4.605],["Premios por competencias",0.227],["Subsidios y donaciones",0.311],["Otros ingresos",1.085]] },
       { id:"sarpsborg08-no", revenue:6.545, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2016",
-        mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",2.274],["Estadio",0.541],["Televisión",0.961],["Premios por competencias",0.084],["Venta de Jugadores",1.643],["Subsidios y donaciones",0.43],["Otros ingresos",0.56]] },
+        mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",2.274],["Estadio",0.541],["Televisión",0.961],["Premios por competencias",0.084],["Venta de Jugadores",1.643],["Subsidios y donaciones",0.586],["Otros ingresos",0.404]] },
     ],
   },
   2015: {
@@ -167,7 +167,7 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.026],["Comercial / Sponsors",1.164],["Estadio",2.108],["Televisión",7.564],["Premios por competencias",0.645],["Subsidios y donaciones",0.311],["Otros ingresos",1.397]] },
       { id:"sarpsborg08-no", revenue:5.242, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2015",
-        mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",2.087],["Estadio",0.62],["Televisión",0.739],["Premios por competencias",0.144],["Venta de Jugadores",0.743],["Subsidios y donaciones",0.345],["Otros ingresos",0.525]] },
+        mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",2.087],["Estadio",0.62],["Televisión",0.739],["Premios por competencias",0.144],["Venta de Jugadores",0.743],["Subsidios y donaciones",0.485],["Otros ingresos",0.385]] },
     ],
   },
   2014: {
@@ -200,7 +200,7 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.042],["Comercial / Sponsors",3.804],["Estadio",3.721],["Televisión",6.44],["Premios por competencias",0.668],["Venta de Jugadores",0.086],["Subsidios y donaciones",0.269],["Otros ingresos",1.838]] },
       { id:"fredrikstad-no", revenue:4.143, reportType:"official_balance_sheet",
         sourceId:"fredrikstad-no-aarsregnskap-fotballklubb-fli-2012",
-        mix:[["Cuotas Sociales",0.016],["Otras actividades (educación y otros deportes)",0.011],["Subsidios y donaciones",3.747],["Otros ingresos",0.369]] },
+        mix:[["Cuotas Sociales",0.016],["Otras actividades (educación y otros deportes)",0.011],["Subsidios y donaciones",3.869],["Otros ingresos",0.248]] },
     ],
   },
   2010: {

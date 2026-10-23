@@ -23,7 +23,7 @@ window.RANKINGS["ch-superleague"] = {
         mix:[["Cuotas Sociales",1.356],["Comercial / Sponsors",11.831],["Estadio",15.663],["Venta de Jugadores",5.434],["Otras actividades (educación y otros deportes)",1.545],["Otros ingresos",9.002]] },
       { id:"luzern-ch", revenue:33.9, reportType:"official_balance_sheet",
         sourceId:"luzern-ch-geschaeftsbericht-2023-24",
-        mix:[["Comercial / Sponsors",5.852],["Estadio",12.546],["Televisión",1.957],["Venta de Jugadores",7.898],["Otras actividades (educación y otros deportes)",2.848],["Otros ingresos",2.799]] },
+        mix:[["Comercial / Sponsors",5.852],["Estadio",12.546],["Televisión",1.957],["Venta de Jugadores",7.898],["Otras actividades (educación y otros deportes)",2.848],["Subsidios y donaciones",0.271],["Otros ingresos",2.528]] },
     ],
   },
   2023: {
@@ -36,7 +36,7 @@ window.RANKINGS["ch-superleague"] = {
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"luzern-ch", revenue:31.888, reportType:"official_balance_sheet",
         sourceId:"luzern-ch-geschaeftsbericht-2022-23",
-        mix:[["Comercial / Sponsors",6.591],["Estadio",10.864],["Televisión",2.454],["Premios por competencias",0.7],["Venta de Jugadores",1.921],["Otras actividades (educación y otros deportes)",2.567],["Otros ingresos",6.791]] },
+        mix:[["Comercial / Sponsors",6.591],["Estadio",10.864],["Televisión",2.454],["Premios por competencias",0.7],["Venta de Jugadores",1.921],["Otras actividades (educación y otros deportes)",2.567],["Subsidios y donaciones",-0.093],["Otros ingresos",6.885]] },
     ],
   },
   2022: {
@@ -49,7 +49,7 @@ window.RANKINGS["ch-superleague"] = {
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"luzern-ch", revenue:27.974, reportType:"official_balance_sheet",
         sourceId:"luzern-ch-geschaeftsbericht-2021-22",
-        mix:[["Comercial / Sponsors",6.49],["Estadio",10.375],["Televisión",2.128],["Venta de Jugadores",4.553],["Otras actividades (educación y otros deportes)",2.186],["Otros ingresos",2.243]] },
+        mix:[["Comercial / Sponsors",6.49],["Estadio",10.375],["Televisión",2.128],["Venta de Jugadores",4.553],["Otras actividades (educación y otros deportes)",2.186],["Subsidios y donaciones",0.17],["Otros ingresos",2.073]] },
     ],
   },
   2021: {
@@ -77,7 +77,7 @@ window.RANKINGS["ch-superleague"] = {
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Otros ingresos",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"luzern-ch", revenue:22.721, reportType:"official_balance_sheet",
         sourceId:"luzern-ch-geschaeftsbericht-2019-20",
-        mix:[["Comercial / Sponsors",5.577],["Estadio",6.144],["Televisión",2.533],["Premios por competencias",1.37],["Venta de Jugadores",3.776],["Otras actividades (educación y otros deportes)",1.782],["Otros ingresos",1.54]] },
+        mix:[["Comercial / Sponsors",5.577],["Estadio",6.144],["Televisión",2.533],["Premios por competencias",1.37],["Venta de Jugadores",3.776],["Otras actividades (educación y otros deportes)",1.782],["Subsidios y donaciones",0.528],["Otros ingresos",1.011]] },
     ],
   },
   2019: {

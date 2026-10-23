@@ -4,7 +4,7 @@ const ituanoBrRevenueLinesByYear = {
     {"rawLabel":"Direito de Transmissão de TV (FPF/CBF)","normalizedCategory":"broadcasting","amountNative":13.888289,"disclosureLevel":"detailed"},
     {"rawLabel":"Patrocínio e Publicidades","normalizedCategory":"sponsorship_commercial","amountNative":8.228219,"disclosureLevel":"detailed"},
     {"rawLabel":"Arrecadação de Jogos","normalizedCategory":"matchday_competition","amountNative":2.550598,"disclosureLevel":"detailed"},
-    {"rawLabel":"Receita de Incentivos, Doações e Loterias","normalizedCategory":"other_income","amountNative":2.598796,"disclosureLevel":"detailed"},
+    {"rawLabel":"Receita de Incentivos, Doações e Loterias","normalizedCategory":"grants_donations","amountNative":2.598796,"disclosureLevel":"detailed"},
     {"rawLabel":"Cessão Temp. Direitos Federativos de Atletas (Empréstimo)","normalizedCategory":"player_sales","amountNative":1.671683,"disclosureLevel":"detailed"},
     {"rawLabel":"Outras Receitas","normalizedCategory":"other_income","amountNative":1.048817,"disclosureLevel":"detailed"},
     {"rawLabel":"Sócio Torcedor","normalizedCategory":"member_dues","amountNative":0.324055,"disclosureLevel":"detailed"},

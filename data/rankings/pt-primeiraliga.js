@@ -157,7 +157,7 @@ window.RANKINGS["pt-primeiraliga"] = {
         mix:[["Comercial / Sponsors",0.528],["Estadio",0.063],["Televisión",5.324],["Premios por competencias",0.355],["Venta de Jugadores",2.798],["Otros ingresos",0.467]] },
       { id:"chaves-pt", revenue:9.45, reportType:"official_balance_sheet",
         sourceId:"chaves-pt-rc-2022-2023-com",
-        mix:[["Cuotas Sociales",0.159],["Comercial / Sponsors",1.054],["Estadio",0.764],["Televisión",3.912],["Premios por competencias",0.041],["Venta de Jugadores",2.763],["Subsidios y donaciones",0.005],["Otros ingresos",0.752]] },
+        mix:[["Cuotas Sociales",0.159],["Comercial / Sponsors",1.054],["Estadio",0.764],["Televisión",3.912],["Premios por competencias",0.041],["Venta de Jugadores",2.763],["Subsidios y donaciones",0.017],["Otros ingresos",0.74]] },
       { id:"rioave-pt", revenue:8.383, reportType:"official_balance_sheet",
         sourceId:"rioave-pt-relatorio-sduq-2022-2023",
         mix:[["Comercial / Sponsors",0.577],["Estadio",0.121],["Televisión",5.596],["Premios por competencias",0.048],["Venta de Jugadores",1.329],["Subsidios y donaciones",0.022],["Otros ingresos",0.691]] },

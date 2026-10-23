@@ -60,8 +60,8 @@
         {"label":"Mecanismo de apoio à descida","category":"other_revenue","subcategory":"other_income","amount":0.113741,"disclosure":"aggregated"},
         {"label":"Mecanismo Solidariedade","category":"player_transfers","subcategory":"player_sales","amount":0.036657,"disclosure":"aggregated"},
         {"label":"Transferências","category":"player_transfers","subcategory":"player_sales","amount":3.15,"disclosure":"aggregated"},
-        {"label":"Fundo de Apoio Tesousararia","category":"other_revenue","subcategory":"other_income","amount":0.025,"disclosure":"aggregated"},
-        {"label":"Apoio à Contratação de ARDs","category":"other_revenue","subcategory":"other_income","amount":0.005,"disclosure":"aggregated"},
+        {"label":"Fundo de Apoio Tesousararia","category":"grants_donations","subcategory":"grants_donations","amount":0.025,"disclosure":"aggregated"},
+        {"label":"Apoio à Contratação de ARDs","category":"grants_donations","subcategory":"grants_donations","amount":0.005,"disclosure":"aggregated"},
         {"label":"Descontos de Pronto Pagamento","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
         {
           "label": "Correções relativas a periodos anteriores",
@@ -203,8 +203,8 @@
         {"label":"Transferências","category":"player_transfers","subcategory":"player_sales","amount":2.514115,"disclosure":"aggregated"},
         {
           "label": "Fundo de Apoio Desenvolvimento Infrastruras Tecnológicas",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.010851,
           "disclosure": "aggregated"
         },

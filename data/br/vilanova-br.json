@@ -406,7 +406,7 @@
         {"label":"Venda/Empréstimos de atletas","category":"player_transfers","subcategory":"player_sales","amount":1.199337,"disclosure":"aggregated"},
         {"label":"Programa socio-torcedor","category":"membership","subcategory":"member_dues","amount":1.079868,"disclosure":"aggregated"},
         {"label":"Cota televisiva","category":"media_rights","subcategory":"broadcasting","amount":9.320801,"disclosure":"aggregated"},
-        {"label":"Incentivo Governo Federal","category":"other_revenue","subcategory":"other_income","amount":1.514364,"disclosure":"aggregated"},
+        {"label":"Incentivo Governo Federal","category":"grants_donations","subcategory":"grants_donations","amount":1.514364,"disclosure":"aggregated"},
         {"label":"Premiação","category":"prize_money","subcategory":"competition_bonus","amount":2.654,"disclosure":"aggregated"},
         {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":3.251231,"disclosure":"aggregated"},
         {"label":"Uso de imagem / royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.932899,"disclosure":"aggregated"},
@@ -551,7 +551,7 @@
         {"label":"Associações quadro social","category":"membership","subcategory":"member_dues","amount":0.866,"disclosure":"aggregated"},
         {"label":"Repasse loterias","category":"other_revenue","subcategory":"other_income","amount":0.795,"disclosure":"aggregated"},
         {"label":"Bares e lanchonetes","category":"venue","subcategory":"stadium_other","amount":0.376,"disclosure":"aggregated"},
-        {"label":"Incentivos governamentais","category":"other_revenue","subcategory":"other_income","amount":0.277,"disclosure":"aggregated"},
+        {"label":"Incentivos governamentais","category":"grants_donations","subcategory":"grants_donations","amount":0.277,"disclosure":"aggregated"},
         {"label":"(-) Impostos e deduções da receita","category":"other_revenue","subcategory":"other_income","amount":-0.717,"disclosure":"aggregated"},
         {
           "label": "Venda de atletas e participações em direitos econômicos",

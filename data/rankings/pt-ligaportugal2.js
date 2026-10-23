@@ -117,7 +117,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
         mix:[["Comercial / Sponsors",0.192],["Estadio",0.028],["Televisión",1.08],["Premios por competencias",0.204],["Venta de Jugadores",4.052],["Subsidios y donaciones",0.004],["Otros ingresos",1.54]] },
       { id:"chaves-pt", revenue:5.592, reportType:"official_balance_sheet",
         sourceId:"chaves-pt-rc-2021-2022-compressed-1",
-        mix:[["Cuotas Sociales",0.054],["Comercial / Sponsors",0.884],["Estadio",0.089],["Televisión",0.623],["Premios por competencias",0.011],["Venta de Jugadores",3.31],["Subsidios y donaciones",0.001],["Otros ingresos",0.62]] },
+        mix:[["Cuotas Sociales",0.054],["Comercial / Sponsors",0.884],["Estadio",0.089],["Televisión",0.623],["Premios por competencias",0.011],["Venta de Jugadores",3.31],["Subsidios y donaciones",0.032],["Otros ingresos",0.589]] },
       { id:"casapia-pt", revenue:5.075, reportType:"official_balance_sheet",
         sourceId:"casapia-pt-relatorio-contas-2021-22",
         mix:[["Comercial / Sponsors",0.167],["Estadio",0.01],["Televisión",0.607],["Venta de Jugadores",0.01],["Subsidios y donaciones",0.004],["Otros ingresos",4.276]] },

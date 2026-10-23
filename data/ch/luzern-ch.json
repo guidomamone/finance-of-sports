@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "luzern-ch",
@@ -619,7 +619,13 @@
         {"label":"Events","category":"venue","subcategory":"stadium_other","amount":0.431603,"disclosure":"aggregated"},
         {"label":"Fanshop Präsenzgeschäft","category":"commercial","subcategory":"sponsorship_commercial","amount":0.193708,"disclosure":"aggregated"},
         {"label":"Onlineshop, Distanzgeschäft","category":"commercial","subcategory":"sponsorship_commercial","amount":0.051247,"disclosure":"aggregated"},
-        {"label":"Unterstützungsbeitrag Stadion Luzern AG","category":"other_revenue","subcategory":"other_income","amount":0.5,"disclosure":"aggregated"},
+        {
+          "label": "Unterstützungsbeitrag Stadion Luzern AG",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.5,
+          "disclosure": "aggregated"
+        },
         {"label":"Ausmietung Stewards","category":"other_revenue","subcategory":"other_income","amount":0.147344,"disclosure":"aggregated"},
         {"label":"Anpassung Delkredere","category":"other_revenue","subcategory":"other_income","amount":0.198257,"disclosure":"aggregated"},
         {"label":"Sonstiges","category":"other_revenue","subcategory":"other_income","amount":0.098195,"disclosure":"aggregated"},
@@ -872,7 +878,13 @@
         {"label":"Onlineshop, Distanzgeschäft","category":"commercial","subcategory":"sponsorship_commercial","amount":0.091255,"disclosure":"aggregated"},
         {"label":"Ausmietung Stewards","category":"other_revenue","subcategory":"other_income","amount":0.364474,"disclosure":"aggregated"},
         {"label":"Anpassung Delkredere","category":"other_revenue","subcategory":"other_income","amount":0.071401,"disclosure":"aggregated"},
-        {"label":"Swiss-Olympic-Stabilisierungspaket","category":"other_revenue","subcategory":"other_income","amount":0.162499,"disclosure":"aggregated"},
+        {
+          "label": "Swiss-Olympic-Stabilisierungspaket",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.162499,
+          "disclosure": "aggregated"
+        },
         {"label":"Sonstiges","category":"other_revenue","subcategory":"other_income","amount":0.082834,"disclosure":"aggregated"},
         {
           "label": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
@@ -1122,7 +1134,13 @@
         {"label":"Onlineshop, Distanzgeschäft","category":"commercial","subcategory":"sponsorship_commercial","amount":0.105982,"disclosure":"aggregated"},
         {"label":"Ausmietung Stewards","category":"other_revenue","subcategory":"other_income","amount":0.340834,"disclosure":"aggregated"},
         {"label":"Anpassung Delkredere","category":"other_revenue","subcategory":"other_income","amount":-0.202727,"disclosure":"aggregated"},
-        {"label":"Swiss-Olympic-Stabilisierungspaket","category":"other_revenue","subcategory":"other_income","amount":-0.08364,"disclosure":"aggregated"},
+        {
+          "label": "Swiss-Olympic-Stabilisierungspaket",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": -0.08364,
+          "disclosure": "aggregated"
+        },
         {"label":"Sonstiges","category":"other_revenue","subcategory":"other_income","amount":0.127068,"disclosure":"aggregated"},
         {
           "label": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
@@ -1371,7 +1389,13 @@
         {"label":"Onlineshop Distanzgeschäft","category":"commercial","subcategory":"sponsorship_commercial","amount":0.094879,"disclosure":"aggregated"},
         {"label":"Ausmietung Stewards","category":"other_revenue","subcategory":"other_income","amount":0.396943,"disclosure":"aggregated"},
         {"label":"Anpassung Delkredere","category":"other_revenue","subcategory":"other_income","amount":-0.304229,"disclosure":"aggregated"},
-        {"label":"Swiss-Olympic-Stabilisierungspaket","category":"other_revenue","subcategory":"other_income","amount":0.24364,"disclosure":"aggregated"},
+        {
+          "label": "Swiss-Olympic-Stabilisierungspaket",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.24364,
+          "disclosure": "aggregated"
+        },
         {"label":"Sonstiges","category":"other_revenue","subcategory":"other_income","amount":0.081593,"disclosure":"aggregated"},
         {
           "label": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",

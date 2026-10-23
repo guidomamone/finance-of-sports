@@ -64,7 +64,7 @@ const botafogoBrRevenueLinesByYear = {
     {"rawLabel":"Operação de estádio","normalizedCategory":"matchday_competition","amountNative":4.902,"disclosureLevel":"detailed"},
     {"rawLabel":"Locações de camarotes","normalizedCategory":"season_tickets","amountNative":11.369,"disclosureLevel":"detailed"},
     {"rawLabel":"Permuta","normalizedCategory":"other_income","amountNative":8.759,"disclosureLevel":"detailed"},
-    {"rawLabel":"Projetos incentivados","normalizedCategory":"other_income","amountNative":0.807,"disclosureLevel":"detailed"},
+    {"rawLabel":"Projetos incentivados","normalizedCategory":"grants_donations","amountNative":0.807,"disclosureLevel":"detailed"},
     {"rawLabel":"Bonificação de produtos","normalizedCategory":"other_income","amountNative":2.524,"disclosureLevel":"detailed"},
     {"rawLabel":"Outras (Nota 20.6)","normalizedCategory":"other_income","amountNative":0.005,"disclosureLevel":"detailed"},
     {"rawLabel":"Deduções sobre a receita (impostos e contribuições, direito de arena, outras deduções)","normalizedCategory":"other_income","amountNative":-81.027,"disclosureLevel":"detailed"},

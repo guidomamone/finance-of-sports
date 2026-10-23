@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "botafogo-br",
@@ -336,7 +336,7 @@
         {"label":"Operação de estádio","category":"matchday","subcategory":"matchday_competition","amount":4.902,"disclosure":"detailed"},
         {"label":"Locações de camarotes","category":"season_tickets","subcategory":"season_tickets","amount":11.369,"disclosure":"detailed"},
         {"label":"Permuta","category":"other_revenue","subcategory":"other_income","amount":8.759,"disclosure":"detailed"},
-        {"label":"Projetos incentivados","category":"other_revenue","subcategory":"other_income","amount":0.807,"disclosure":"detailed"},
+        {"label":"Projetos incentivados","category":"grants_donations","subcategory":"grants_donations","amount":0.807,"disclosure":"detailed"},
         {"label":"Bonificação de produtos","category":"other_revenue","subcategory":"other_income","amount":2.524,"disclosure":"detailed"},
         {"label":"Outras (Nota 20.6)","category":"other_revenue","subcategory":"other_income","amount":0.005,"disclosure":"detailed"},
         {

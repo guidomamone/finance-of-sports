@@ -5,7 +5,7 @@ const panserraikosGrRevenueLinesByYear = {
     {"rawLabel":"Χορηγίες και διαφημίσεις","normalizedCategory":"sponsorship_commercial","amountNative":0.387016,"disclosureLevel":"aggregated"},
     {"rawLabel":"Δικαιώματα αναμετάδοσης","normalizedCategory":"broadcasting","amountNative":0.077492,"disclosureLevel":"aggregated"},
     {"rawLabel":"Άλλα λειτουργικά έσοδα","normalizedCategory":"other_income","amountNative":0.043795,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Αποζημίωση ειδικού σκοπού COVID","normalizedCategory":"other_income","amountNative":0.005336,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Αποζημίωση ειδικού σκοπού COVID","normalizedCategory":"grants_donations","amountNative":0.005336,"disclosureLevel":"aggregated"},
     {"rawLabel":"Κέρδη/ζημίες από τη διάθεση (μετεγγραφών) και αποχώρηση ποδοσφαιριστών","normalizedCategory":"player_sales","amountNative":0.186319,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά έσοδα/έξοδα μετεγγραφών","normalizedCategory":"player_sales","amountNative":0.1,"disclosureLevel":"aggregated"},
   ],
