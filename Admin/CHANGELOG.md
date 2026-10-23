@@ -29,6 +29,7 @@ que dice `ESTADO.md` era verdad ese día.
 - `resolver-inventario.mjs` 65-415 → `resolver-inventario-motores.mjs` (23 KB: las voces de la transcripción, el voto por mayoría y la aritmética que desempata; `resolver-inventario.mjs` queda en 33 KB). Medido con `lote-ensayo` en los tres lotes (987 documentos): idéntico.
 - `categorizar-claude.mjs` 381-484 → `categorizar-claude-backtest.mjs` (10 KB: el backtest contra lo cargado y su informe; `categorizar-claude.mjs` baja de 49 a 42 KB). Medido con `cargar` en los tres lotes: idéntico.
 - `categorizar-claude.mjs` 383-466 → `categorizar-claude-listos.mjs` (los documentos LISTOS de producción; `categorizar-claude.mjs` queda en 33 KB). Medido con `cargar` en los tres lotes: idéntico.
+- `fetch-fx-reference.mjs` 37-471 → `fetch-fx-fuentes.mjs` (21 KB: los lectores de cada banco central; `fetch-fx-reference.mjs` queda en 33 KB). Herramienta de referencia (`no_pipeline`): sin lote; la salida de `--currency ZZZ` es idéntica y una bajada real de dos días de ARS anduvo (esa prueba pisó `tools/fx-reference/ars-usd.json` y se revirtió con git: las pruebas de un fetcher no se corren sobre el archivo real).
 - `patron.mjs`: una mudanza (sin los imports, sin el `export` del principio y sin líneas ya existentes duplicadas, lo agregado es lo quitado) no pide veredicto; `medir pipeline` sigue usando las diferencias exactas, así que una mudanza va por los lotes. `que-pide` juzga el conjunto de tools cambiadas, como el hook.
 
 ## Versión 982 — `fos mover`: mudar un bloque de una tool a un módulo sin cambiarlo [379]

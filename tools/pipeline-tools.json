@@ -127,6 +127,7 @@
   "archivar.mjs": "orden: archiva un documento cerrado",
   "cerrar.mjs": "orden: el cierre de una tarea (TODO, índice, auditoría, CHANGELOG)",
   "limpiar-comentarios.mjs": "orden: saca la historia de los comentarios de tools/ (solo texto de comentarios; se prueba con comparar-sin-comentarios --tools)",
+  "fetch-fx-fuentes.mjs": "referencia: los lectores de cada banco central (módulo de fetch-fx-reference.mjs)",
   "mover-bloque.mjs": "orden: muda un bloque de líneas de una tool a un módulo sin cambiarlo (fos mover); ensayo por defecto",
   "probar-mover-bloque.mjs": "prueba: mover-bloque.mjs rehaciendo la mudanza del 368",
   "acortar-cabecera.mjs": "orden: acorta la cabecera de una tool (el resto va tal cual a Admin/NOTAS-DE-TOOLS.md); solo toca comentarios",
