@@ -100,3 +100,5 @@ sección de arriba).
 - Último chequeo: 2026-10-21.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-23): ejercicio 2022 desde `Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf` (sourceId `monchengladbach-de-jahresabschluss-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-23): ejercicio 2021 desde `Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf` (sourceId `monchengladbach-de-jahresabschluss-2021`).

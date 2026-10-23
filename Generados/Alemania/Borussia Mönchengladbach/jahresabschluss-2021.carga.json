@@ -1,0 +1,488 @@
+{
+ "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+ "generado": "2026-10-23T16:42:01.817Z",
+ "frena": [],
+ "avisos": [
+  "\"Estadio\" en 0 con cierre 2021-12-31, dentro de la ventana COVID: real (partidos suspendidos, a puertas cerradas o con aforo limitado)",
+  "categorías en 0 aun después del reintento (se carga así): Televisión"
+ ],
+ "ejercicio": {
+  "clubId": "monchengladbach-de",
+  "year": 2021,
+  "cierre": "2021-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "1. Umsatzerlöse",
+    "normalizedCategory": "other_income",
+    "amountNative": 166.965704,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "2. Sonstige betriebliche Erträge",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.204596,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Aufwendungen für bezogene Waren",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -8.909332,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Löhne und Gehälter",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -94.307255,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Soziale Abgaben",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -3.78539,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "6. Sonstige betriebliche Aufwendungen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -33.145494,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -37.213304,
+    "disclosureLevel": "aggregated",
+    "_pag": null,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-23): partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577"
+   },
+   {
+    "rawLabel": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)",
+    "normalizedCategory": "depreciation",
+    "amountNative": -8.417475,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-23): partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-12-31",
+   "sourceId": "monchengladbach-de-jahresabschluss-2021",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1.585509,
+   "tax": 3.583613,
+   "extraRows": [
+    {
+     "label": "7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens",
+     "value": 0.000048
+    },
+    {
+     "label": "8. Sonstige Zinsen und ähnliche Erträge",
+     "value": 0.021611
+    },
+    {
+     "label": "9. Zinsen und ähnliche Aufwendungen",
+     "value": -1.607168
+    },
+    {
+     "label": "10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)",
+     "value": 3.627211
+    },
+    {
+     "label": "12. Sonstige Steuern",
+     "value": -0.043598
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 169.1703,
+   "officialTotalExpenses": 185.778249,
+   "officialPAT": -14.609845
+  },
+  "source": {
+   "id": "monchengladbach-de-jahresabschluss-2021",
+   "clubId": "monchengladbach-de",
+   "title": "Borussia VfL 1900 Mönchengladbach GmbH — jahresabschluss-2021 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-23) desde la transcripción Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Jahresabschluss zum Geschäftsjahr vom 01.01.2021 bis zum 31.12.2021"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "monchengladbach-de",
+ "year": 2021,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+   "campo": "fila",
+   "valor": "37.213.303,94",
+   "linea": null,
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 110,
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "evidencia": "L554 (jugadores) y el cuadro de L550 a L577",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+   "campo": "fila",
+   "valor": "8.417.474,69",
+   "linea": 110,
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "evidencia": "L554 (jugadores) y el cuadro de L550 a L577",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)",
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "evidencia": "L554 (jugadores) y el cuadro de L550 a L577",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)",
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "evidencia": "L554 (jugadores) y el cuadro de L550 a L577",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-23"
+  }
+ ],
+ "seleccion": {
+  "filas": 13,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "1. Umsatzerlöse",
+   "page": 3,
+   "native": 166.965704,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 166.965704,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 166.965704
+  },
+  {
+   "label": "2. Sonstige betriebliche Erträge",
+   "page": 3,
+   "native": 2.204596,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.204596,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.204596
+  },
+  {
+   "label": "Aufwendungen für bezogene Waren",
+   "page": 3,
+   "native": 8.909332,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 8.909332,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.909332
+  },
+  {
+   "label": "a) Löhne und Gehälter",
+   "page": 3,
+   "native": 94.307255,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 94.307255,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -94.307255
+  },
+  {
+   "label": "b) Soziale Abgaben",
+   "page": 3,
+   "native": 3.78539,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.78539,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.78539
+  },
+  {
+   "label": "6. Sonstige betriebliche Aufwendungen",
+   "page": 3,
+   "native": 33.145494,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 33.145494,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -33.145494
+  },
+  {
+   "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)",
+   "page": null,
+   "native": 37.213304,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 37.213304,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-23): partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -37.213304
+  },
+  {
+   "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)",
+   "page": 3,
+   "native": 8.417475,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 8.417475,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-23): partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -8.417475
+  },
+  {
+   "label": "7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens",
+   "page": null,
+   "native": 0.000048,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "8. Sonstige Zinsen und ähnliche Erträge",
+   "page": null,
+   "native": 0.021611,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "9. Zinsen und ähnliche Aufwendungen",
+   "page": null,
+   "native": -1.607168,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)",
+   "page": null,
+   "native": 3.627211,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "12. Sonstige Steuern",
+   "page": null,
+   "native": -0.043598,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 169.1703,
+  "expSum": -185.77825,
+  "officialTotalRevenue": 169.1703,
+  "officialTotalExpenses": 185.778249,
+  "officialPAT": -14.609845,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -14.609845,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 169.1703
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 185.778249
+  }
+ },
+ "liga": {
+  "valor": "de-bundesliga",
+  "fuente": "roster cacheado de \"2021–22 Bundesliga\" (tools/club-league-reference/de.json), coincidencia exacta \"Borussia Mönchengladbach\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (38 de 40 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (1 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Alemania (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-12-31 = 0.882924 (Tipo de referencia del Banco Central Europeo al 2021-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "monchengladbach-de-jahresabschluss-2021",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "de-bundesliga",
+   "fuente": "roster cacheado de \"2021–22 Bundesliga\" (tools/club-league-reference/de.json), coincidencia exacta \"Borussia Mönchengladbach\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 6,
+  "metaFilas": 5,
+  "excluidas": 0
+ }
+}

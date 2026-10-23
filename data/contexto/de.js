@@ -34,6 +34,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"RheinEnergieStadion","capacidad":49698,"sponsor":"REWE","marca":"Hummel","temporada":"2024–25 2. Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378004529"},
   },
   'monchengladbach-de': {
+    2021: {"estadio":"Borussia-Park","capacidad":54057,"sponsor":"flatex","marca":"Puma","temporada":"2021–22 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376214669"},
     2022: {"estadio":"Borussia-Park","capacidad":54057,"sponsor":"flatex","marca":"Puma","temporada":"2022–23 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376800528"},
     2023: {"estadio":"Borussia-Park","capacidad":54042,"sponsor":"Flatex","marca":"Puma","temporada":"2023–24 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379169331"},
     2024: {"estadio":"Borussia-Park","capacidad":54042,"sponsor":"Reuter Gruppe","marca":"Puma","temporada":"2024–25 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378493397"},

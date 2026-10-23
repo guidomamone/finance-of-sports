@@ -1,0 +1,134 @@
+{
+ "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md",
+ "mdSha1": "ceaff96eec99f75c7042b91f70853dba559782e1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-23T16:41:09.483Z",
+ "perimetroClub": null,
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    20,
+    40
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    50,
+    59
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    63,
+    84
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    94,
+    97
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    101,
+    120
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    342,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    395,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    422,
+    428
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    533,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    550,
+    560
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    572,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    581,
+    595
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la Gewinn- und Verlustrechnung: '01.01.-31.12.2021 EUR'",
+ "moneda": "EUR",
+ "columna_ejercicio": "01.01.-31.12.2021 EUR",
+ "columna_anterior": "01.01.-31.12.2020 EUR",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Umsatzerlöse' como un único renglón sin abrir Televisión, dado que el documento (extracto del Unternehmensregister) no trae ningún cuadro que desglose los ingresos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "1. Umsatzerlöse",
+   "texto": "El índice no muestra ninguna nota tabular con desglose de Umsatzerlöse por categoría (TV, Sponsoring, Spielbetrieb); solo balance, GuV, Verbindlichkeitenspiegel, empleados y Anlagenspiegel.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Jahresabschluss individual de Borussia VfL 1900 Mönchengladbach GmbH (HGB), en EUR. La GuV es b5 (pág. 3). No hay bloques con desglose de ingresos (Televisión) ni de gastos: b6 es Verbindlichkeitenspiegel, b7 número de empleados, b9-b12 Anlagenspiegel; ninguno se elige. Si el Anhang tiene un desglose de Umsatzerlöse en texto, no aparece como bloque con cifras en este índice."
+}

@@ -106,6 +106,9 @@ window.RANKINGS["de-bundesliga"] = {
         sourceId:"bayernmunich-de-jahresabschluss-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",765.181]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"monchengladbach-de", revenue:191.602, reportType:"official_balance_sheet",
+        sourceId:"monchengladbach-de-jahresabschluss-2021",
+        mix:[["Otros ingresos",191.602]] },
     ],
   },
 };

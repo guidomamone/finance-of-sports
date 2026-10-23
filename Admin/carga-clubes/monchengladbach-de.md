@@ -241,6 +241,47 @@ tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-23): de-bundesliga, verificado contra roster cacheado de "2022–23 Bundesliga" (tools/club-league-reference/de.json), coincidencia exacta "Borussia Mönchengladbach".
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | 1. Umsatzerlöse | pág. 3, precedente |
+| 2 | 2. Sonstige betriebliche Erträge | pág. 3, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aufwendungen für bezogene Waren | pág. 3, precedente |
+| 2 | a) Löhne und Gehälter | pág. 3, precedente |
+| 3 | b) Soziale Abgaben | pág. 3, precedente |
+| 4 | 6. Sonstige betriebliche Aufwendungen | pág. 3, precedente |
+| 5 | Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento) | pág. ?, precedente |
+| 6 | Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento) | pág. 3, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, partir-amortizacion 2026-10-23): fila = 37.213.303,94. partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, partir-amortizacion 2026-10-23): fila = 8.417.474,69. partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, partir-amortizacion 2026-10-23): categoria = player_amortisation. partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, partir-amortizacion 2026-10-23): categoria = depreciation. partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-23): de-bundesliga, verificado contra roster cacheado de "2021–22 Bundesliga" (tools/club-league-reference/de.json), coincidencia exacta "Borussia Mönchengladbach".
+```
+
 ## Fuentes
 
 ### monchengladbach-de-jahresabschluss-2023
@@ -265,4 +306,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-23) desde la transcripción Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### monchengladbach-de-jahresabschluss-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-23) desde la transcripción Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

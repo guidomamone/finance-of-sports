@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 331 clubes, 1337 ejercicios, 24 países.
+TOTAL: 331 clubes, 1338 ejercicios, 24 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -156,7 +156,7 @@ ALEMANIA (11)
   1. FC Köln                2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   Bayern Munich             4 ejercicios (2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Borussia Dortmund         2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  Borussia Mönchengladbach  3 ejercicios (2022 a 2024), balance, EUR
+  Borussia Mönchengladbach  4 ejercicios (2021 a 2024), balance, EUR
   Eintracht Frankfurt       2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   FC Augsburg               2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   Hamburger SV              2 ejercicios (2023/2024 a 2024/2025), balance, EUR

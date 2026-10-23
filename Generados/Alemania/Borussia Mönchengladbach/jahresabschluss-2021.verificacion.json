@@ -1,0 +1,212 @@
+{
+ "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md",
+ "generado": "2026-10-23T16:42:00.165Z",
+ "scriptHuella": "2d94a50110ce",
+ "estado": "ok",
+ "clubId": "monchengladbach-de",
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+   "campo": "fila",
+   "valor": "37.213.303,94",
+   "linea": null,
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 110,
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "evidencia": "L554 (jugadores) y el cuadro de L550 a L577",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+   "campo": "fila",
+   "valor": "8.417.474,69",
+   "linea": 110,
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "evidencia": "L554 (jugadores) y el cuadro de L550 a L577",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)",
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "evidencia": "L554 (jugadores) y el cuadro de L550 a L577",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)",
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577",
+   "evidencia": "L554 (jugadores) y el cuadro de L550 a L577",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-23"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 1.9539925233402755e-14
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 169.1703 en este documento y 169.1703 en jahresabschluss-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)\" (gasto) 37.213.303,94, en lugar de la fila de L110 (2026-10-23, partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577)",
+  "ajuste manual: fila \"Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)\" (gasto) 8.417.474,69 (2026-10-23, partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen» (45.630.778,63, L110) = jugadores 37.213.303,94 + resto 8.417.474,69, según cuadro de movimiento: L554 (jugadores) y el cuadro de L550 a L577)",
+  "duda de extraer que no afecta la carga: L114 imprime en la columna de totales 1.585.557,05 = 1.607.167,65 - 21.610,60, neto sin etiqueta propia."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 169.1703,
+  "gastos": 185.778249,
+  "financiero": 1.628826,
+  "impuesto": -3.583613,
+  "resultadoImpreso": -14.609845,
+  "resultadoParaCargar": -14.609845,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "1. Umsatzerlöse",
+   "lado": "ingreso",
+   "M": 166.965704,
+   "pagina": 3,
+   "linea": 103,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "2. Sonstige betriebliche Erträge",
+   "lado": "ingreso",
+   "M": 2.204596,
+   "pagina": 3,
+   "linea": 104,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwendungen für bezogene Waren",
+   "lado": "gasto",
+   "M": 8.909332,
+   "pagina": 3,
+   "linea": 106,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Löhne und Gehälter",
+   "lado": "gasto",
+   "M": 94.307255,
+   "pagina": 3,
+   "linea": 108,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Soziale Abgaben",
+   "lado": "gasto",
+   "M": 3.78539,
+   "pagina": 3,
+   "linea": 109,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "6. Sonstige betriebliche Aufwendungen",
+   "lado": "gasto",
+   "M": 33.145494,
+   "pagina": 3,
+   "linea": 111,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)",
+   "lado": "gasto",
+   "M": 37.213304,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)",
+   "lado": "gasto",
+   "M": 8.417475,
+   "pagina": 3,
+   "linea": 110,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens",
+   "M": 0.000048,
+   "linea": 112
+  },
+  {
+   "etiqueta": "8. Sonstige Zinsen und ähnliche Erträge",
+   "M": 0.021611,
+   "linea": 113
+  },
+  {
+   "etiqueta": "9. Zinsen und ähnliche Aufwendungen",
+   "M": -1.607168,
+   "linea": 114
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)",
+   "M": 3.627211,
+   "linea": 116
+  },
+  {
+   "etiqueta": "12. Sonstige Steuern",
+   "M": -0.043598,
+   "linea": 119
+  }
+ ]
+}

@@ -1,134 +1,79 @@
 {
  "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md",
- "generatedAt": "2026-09-30T22:48:16.340Z",
- "rubrosHuella": "ba811ededd24b76951b9e6f5bffd2e11228a5566",
+ "generatedAt": "2026-10-23T16:41:44.233Z",
+ "rubrosHuella": "82ecdff7d72a7122f7e995f368ab92aede977837",
  "rubros": [
   {
-   "label": "a) Löhne und Gehälter",
-   "lado": null,
+   "label": "1. Umsatzerlöse",
+   "lado": "revenue",
    "page": 3,
-   "section": "Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2021",
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "2. Sonstige betriebliche Erträge",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwendungen für bezogene Waren",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Löhne und Gehälter",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
    "choice": "wages_squad",
-   "confidence": 0.98,
+   "confidence": 0.99,
    "desdeCache": true
   },
   {
    "label": "b) Soziale Abgaben",
-   "lado": null,
+   "lado": "expense",
    "page": 3,
-   "section": "Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2021",
+   "section": "estado",
    "choice": "wages_squad",
-   "confidence": 0.48,
+   "confidence": 0.88,
    "desdeCache": true
   },
   {
-   "label": "2. Spielerwerte",
+   "label": "6. Sonstige betriebliche Aufwendungen",
    "lado": "expense",
-   "page": 10,
-   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)",
+   "lado": "expense",
+   "page": null,
+   "section": "ajuste manual",
    "choice": "player_amortisation",
-   "confidence": 0.7,
-   "desdeCache": true
-  },
-  {
-   "label": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
-   "lado": "expense",
-   "page": 10,
-   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-   "choice": "depreciation",
-   "confidence": 0.66,
-   "desdeCache": true
-  },
-  {
-   "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
-   "lado": "expense",
-   "page": 10,
-   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-   "choice": "other_expenses",
-   "confidence": 0.68,
-   "desdeCache": true
-  },
-  {
-   "label": "3. Geleistete Anzahlungen und Anlagen im Bau",
-   "lado": "expense",
-   "page": 10,
-   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-   "choice": "other_expenses",
-   "confidence": 0.93,
-   "desdeCache": true
-  },
-  {
-   "label": "1. Anteile an verbundenen Unternehmen",
-   "lado": "expense",
-   "page": 10,
-   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-   "choice": "other_expenses",
-   "confidence": 0.86,
-   "desdeCache": true
-  },
-  {
-   "label": "2. Beteiligungen",
-   "lado": "expense",
-   "page": 10,
-   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-   "choice": "other_expenses",
-   "confidence": 0.85,
-   "desdeCache": true
-  },
-  {
-   "label": "3. Sonstige Finanzanlagen",
-   "lado": "expense",
-   "page": 10,
-   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-   "choice": "other_expenses",
-   "confidence": 0.95,
-   "desdeCache": true
-  },
-  {
-   "label": "9. Zinsen und ähnliche Aufwendungen",
-   "lado": "expense",
-   "page": 3,
-   "section": "Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2021",
-   "choice": "other_expenses",
-   "confidence": 0.95,
-   "top3": [
-    [
-     "other_expenses",
-     0.96
-    ],
-    [
-     "admin_general_expense",
-     0.04
-    ],
-    [
-     "player_impairment",
-     0
-    ]
-   ],
-   "tokens": 1080
-  },
-  {
-   "label": "8. Sonstige Zinsen und ähnliche Erträge",
-   "lado": "revenue",
-   "page": 3,
-   "section": "Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2021",
-   "choice": "other_income",
    "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "youth_football",
-     0
-    ],
-    [
-     "broadcasting",
-     0
-    ]
-   ],
-   "tokens": 1049
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)",
+   "lado": "expense",
+   "page": 3,
+   "section": "ajuste manual",
+   "choice": "other_amortisation",
+   "confidence": 0.71,
+   "desdeCache": true
   }
  ]
 }

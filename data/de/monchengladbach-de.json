@@ -33,11 +33,74 @@
       "title": "Borussia VfL 1900 Mönchengladbach GmbH — jahresabschluss-2022 (ejercicio 2022)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "monchengladbach-de-jahresabschluss-2021",
+      "club_id": "monchengladbach-de",
+      "title": "Borussia VfL 1900 Mönchengladbach GmbH — jahresabschluss-2021 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2023,"last_year":2024}],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "EUR",
+      "source_id": "monchengladbach-de-jahresabschluss-2021",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-12-31"},
+      "revenue": [
+        {"label":"1. Umsatzerlöse","category":"other_revenue","subcategory":"other_income","amount":166.965704,"disclosure":"aggregated"},
+        {"label":"2. Sonstige betriebliche Erträge","category":"other_revenue","subcategory":"other_income","amount":2.204596,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Aufwendungen für bezogene Waren",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -8.909332,
+          "disclosure": "aggregated"
+        },
+        {"label":"a) Löhne und Gehälter","category":"first_team_staff","subcategory":"wages_squad","amount":-94.307255,"disclosure":"aggregated"},
+        {"label":"b) Soziale Abgaben","category":"first_team_staff","subcategory":"wages_squad","amount":-3.78539,"disclosure":"aggregated"},
+        {
+          "label": "6. Sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -33.145494,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — derechos de jugadores (según cuadro de movimiento)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -37.213304,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlage- vermögens und Sachanlagen — resto: bienes de uso y licencias (según cuadro de movimiento)",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -8.417475,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.585509,"tax":3.583613,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":169.1703,"expenses":185.778249,"net_result":-14.609845},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens","amount":0.000048},
+          {"label":"8. Sonstige Zinsen und ähnliche Erträge","amount":0.021611},
+          {"label":"9. Zinsen und ähnliche Aufwendungen","amount":-1.607168},
+          {"label":"10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)","amount":3.627211},
+          {"label":"12. Sonstige Steuern","amount":-0.043598}
+        ]
+      }
+    },
     {
       "fiscal_year": 2022,
       "period_end": "2022-12-31",

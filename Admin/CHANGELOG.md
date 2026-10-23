@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 993 — La amortización junta se parte sola (`fos partir`) y Mönchengladbach 2021 [406 · 407 · monchengladbach-de]
+
+- `tools/partir-amortizacion.mjs`: busca la línea de depreciación y amortización junta del estado y la parte con el cuadro de movimiento del inmovilizado (la columna del cargo del ejercicio, con la extraordinaria, suma la línea) o con dos notas (intangibles + bienes de uso) SOLO si la suma cierra con una única solución; si no, no escribe y queda en la cola. Escribe los ajustes `fila` y `categoria` con su cita. `lote.mjs --ejecutar` lo corre antes de verificar. Sobre los 988 documentos de la lista completa propone 3 y los 3 reproducen exacto lo que se había partido a mano (Mönchengladbach 2022: 32.294.038,76 + 13.629.219,22; Silkeborg 2025: 6.502 + 6.168; Viborg 2025: 15.751.691 + 2.624.046); en 172 más hay una línea junta cuyas notas no cierran: no decide.
+- `cargar.mjs`: la cola ya no propone «sí» para una línea junta con categoría de amortización de jugadores o depreciación: dice que no se acepte y cómo se parte. Medido (cargar, lote-ensayo, escribir, tres lotes): idéntico; veredicto general.
+- Ejemplo de punta a punta: Mönchengladbach 2021 (el otro ejercicio sin cargar del club) salió con la amortización partida sola; la cola solo pidió lo que va a sesión (impuesto con signo aclarado y Umsatzerlöse sin tabla, contestadas con nota). Cargado.
+- 407: las preguntas que la sesión contesta siempre igual deben contestarlas las tools (sin Anhang, perfil sabido, aclaración de signo, caso que reaparece).
+
 ## Versión 992 — Un ejercicio real por el pipeline: Mönchengladbach 2022 [406 · monchengladbach-de]
 
 - Ejemplo real: `jahresabschluss-2022` (el club tenía 2023 y 2024). `lote.mjs --ejecutar` (etapas 3 a 8) US$ 0,20 con el reintento; frenó por la línea de Abschreibungen junta (propuesta de la cola: «sí», que habría puesto 13,6 M€ de bienes de uso como amortización de jugadores), dos preguntas de perfil y los Umsatzerlöse sin tabla. Cargado con 4 ajustes (partido con el Anlagenspiegel: jugadores 32.294.038,76 + resto 13.629.219,22). Defecto de script anotado: 406 (partir la línea junta con una tool enganchada en `verificar.mjs`).
