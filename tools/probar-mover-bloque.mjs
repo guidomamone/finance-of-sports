@@ -30,6 +30,10 @@ try {
   caso('un destino que ya existe no se pisa', correr('tools/mover-bloque.mjs', '_prueba-orig.mjs', '1245-1457', '_prueba-costo.mjs', 'x', '--escribir').status === 1);
   r = correr('tools/mover-bloque.mjs', '_prueba-orig.mjs', '1300-1310', '_prueba-otro.mjs');
   caso('un rango que no empieza y termina a nivel de módulo se rechaza', r.status === 1 && /nivel de módulo/.test(r.stderr), r.stdout + r.stderr);
-} finally { limpiar(); }
+  // una constante que otro código cambia (un objeto que se llena después, una regex con /g) NO se duplica en el módulo: la alta-club.mjs de 2026-10 cambió de comportamiento por un `const MESES = {}` duplicado
+  writeFileSync(T('_prueba-mut.mjs'), ["import { resolve } from 'node:path';", "const RAIZ = resolve('x');", 'const MESES = {};', 'const RE = /a/g;', "MESES.enero = 1;", 'function leer() { return [MESES.enero, RE.test(RAIZ)]; }', 'export function usa() { return leer(); }', ''].join('\n'));
+  r = correr('tools/mover-bloque.mjs', '_prueba-mut.mjs', '6-6', '_prueba-mut2.mjs', 'x');
+  caso('un objeto que se llena después y una regex /g se importan, no se duplican; una constante pura sí', r.status === 0 && /se les agrega export\): MESES, RE/.test(r.stdout) && /duplicadas en el módulo \(constantes puras, mismo valor\): RAIZ/.test(r.stdout), r.stdout + r.stderr);
+} finally { limpiar(); rmSync(T('_prueba-mut.mjs'), { force: true }); rmSync(T('_prueba-mut2.mjs'), { force: true }); }
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');
 process.exit(mal ? 1 : 0);

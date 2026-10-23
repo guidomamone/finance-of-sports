@@ -133,6 +133,11 @@ export function planear(origen, srcOrigen, desde, hasta, destino, porque = '') {
     if (camino.has(n) || !delResto.has(n)) return null;
     const l = D.L[delResto.get(n).linea]; const mm = /^\s*const\s+([\w$]+)\s*=\s*(.+);\s*$/.exec(l);
     if (!mm || mm[1] !== n) return null;
+    // no se duplica lo que otro código puede cambiar (un objeto o arreglo que se llena después, `const MESES = {}`) ni una regex con estado (/g, /y: lastIndex)
+    const nom = n.replace(/\$/g, '\\$');
+    const orig = (/^\s*const\s+[\w$]+\s*=\s*(.+);\s*$/.exec(L[delResto.get(n).linea]) || [])[1] || ''; // el texto real (en `D.L` las regex y cadenas están borradas)
+    if (/^\s*[[{]/.test(orig) && new RegExp(`(?<![\\w$.])${nom}\\s*(?:\\[[^\\]]*\\]|\\.[\\w$]+)?\\s*(?:=(?![=>])|\\+=|-=)|(?<![\\w$.])${nom}\\.(?:push|pop|shift|unshift|splice|sort|reverse|set|add|delete|clear|fill|assign)\\b|Object\\.(?:assign|defineProperty)\\(\\s*${nom}\\b`).test(D.codigo.split('\n').filter((_, i) => i !== delResto.get(n).linea).join('\n'))) return null;
+    if (/\/[a-z]*[gy][a-z]*\s*$/.test(orig.trim())) return null;
     const lineas = [], imps = new Set(), cam = new Set(camino).add(n);
     for (const x of idsConPunto(mm[2].replace(/'[^']*'|"[^"]*"|\d[\d._]*/g, ' ')).filter((y) => y !== n)) {
       if (D.imports.has(x)) { imps.add(x); continue; }
