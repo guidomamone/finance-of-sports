@@ -1,370 +1,352 @@
 {
-  "md": "Clubes/Argentina/Instituto/balance-general-2024-2025.md",
-  "pdf": "Clubes/Argentina/Instituto/balance-general-2024-2025.pdf",
-  "club": "instituto",
-  "year": 2025,
-  "generatedAt": "2026-10-19T17:54:09.950Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Para fines generales (Anexo III)",
-      "lado": "revenue",
-      "page": 3,
-      "section": "estado",
-      "values": [
-        3858.67127
-      ],
-      "glosa": "Para fines generales (Anexo III)"
-    },
-    {
-      "label": "Centros educativos",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        1860.968991
-      ],
-      "glosa": "Centros educativos"
-    },
-    {
-      "label": "Abonos deportivos sede",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        138.046758
-      ],
-      "glosa": "Abonos deportivos sede"
-    },
-    {
-      "label": "Derechos de TV",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        5322.741218
-      ],
-      "glosa": "Derechos de TV"
-    },
-    {
-      "label": "Entradas generales fútbol",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        35.396554
-      ],
-      "glosa": "Entradas generales fútbol"
-    },
-    {
-      "label": "Entradas plateas y palcos fútbol",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        2324.40866
-      ],
-      "glosa": "Entradas plateas y palcos fútbol"
-    },
-    {
-      "label": "Publicidad institucional",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        14.985783
-      ],
-      "glosa": "Publicidad institucional"
-    },
-    {
-      "label": "Publicidad otras competencias",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        1993.057168
-      ],
-      "glosa": "Publicidad otras competencias"
-    },
-    {
-      "label": "Publicidad y sponsors fútbol",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        5939.360046
-      ],
-      "glosa": "Publicidad y sponsors fútbol"
-    },
-    {
-      "label": "Recursos predio La Agustina",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        165.558451
-      ],
-      "glosa": "Recursos predio La Agustina"
-    },
-    {
-      "label": "Transferencias y préstamos de jugadores",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        4594.836822
-      ],
-      "glosa": "Transferencias y préstamos de jugadores"
-    },
-    {
-      "label": "Ventas de salón Gloriamanía",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        1047.529232
-      ],
-      "glosa": "Ventas de salón Gloriamanía"
-    },
-    {
-      "label": "Subsidios recibidos",
-      "lado": "revenue",
-      "page": 15,
-      "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
-      "values": [
-        97.517794
-      ],
-      "glosa": "Subsidios recibidos"
-    },
-    {
-      "label": "Remuneraciones y cargas",
-      "lado": "expense",
-      "page": 16,
-      "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
-      "values": [
-        236.028547
-      ],
-      "glosa": "Remuneraciones y cargas"
-    },
-    {
-      "label": "Honorarios",
-      "lado": "expense",
-      "page": 16,
-      "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
-      "values": [
-        652.169935
-      ],
-      "glosa": "Honorarios"
-    },
-    {
-      "label": "Servicios, luz, agua, gas, etc.",
-      "lado": "expense",
-      "page": 16,
-      "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
-      "values": [
-        44.698891
-      ],
-      "glosa": "Servicios, luz, agua, gas, etc."
-    },
-    {
-      "label": "Gastos bancarios",
-      "lado": "expense",
-      "page": 16,
-      "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
-      "values": [
-        650.310626
-      ],
-      "glosa": "Gastos bancarios"
-    },
-    {
-      "label": "Gastos de juicios",
-      "lado": "expense",
-      "page": 16,
-      "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
-      "values": [
-        63.781236
-      ],
-      "glosa": "Gastos de juicios"
-    },
-    {
-      "label": "(Recuperos) / Quebranto por Juicios",
-      "lado": "expense",
-      "page": 16,
-      "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
-      "values": [
-        -103.020172
-      ],
-      "glosa": "(Recuperos) / Quebranto por Juicios"
-    },
-    {
-      "label": "Remuneraciones y cargas",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        6086.836134
-      ],
-      "glosa": "Remuneraciones y cargas"
-    },
-    {
-      "label": "Seguros",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        0.773435
-      ],
-      "glosa": "Seguros"
-    },
-    {
-      "label": "Honorarios",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        1288.3452
-      ],
-      "glosa": "Honorarios"
-    },
-    {
-      "label": "Diversos",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        4146.2258
-      ],
-      "glosa": "Diversos"
-    },
-    {
-      "label": "Mantenimiento de bienes de uso",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        884.606457
-      ],
-      "glosa": "Mantenimiento de bienes de uso"
-    },
-    {
-      "label": "Vigilancia sede",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        119.384419
-      ],
-      "glosa": "Vigilancia sede"
-    },
-    {
-      "label": "Servicios de energía, agua, gas, etc..",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        342.901711
-      ],
-      "glosa": "Servicios de energía, agua, gas, etc.."
-    },
-    {
-      "label": "Gastos generales por eventos deportivos",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        1130.207552
-      ],
-      "glosa": "Gastos generales por eventos deportivos"
-    },
-    {
-      "label": "Viajes y concentraciones",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        1386.761148
-      ],
-      "glosa": "Viajes y concentraciones"
-    },
-    {
-      "label": "Compras de mercadería",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        828.320664
-      ],
-      "glosa": "Compras de mercadería"
-    },
-    {
-      "label": "Comisiones y acuerdos de rescisión",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        4740.976594
-      ],
-      "glosa": "Comisiones y acuerdos de rescisión"
-    },
-    {
-      "label": "Limpieza y vigilancia",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        205.527311
-      ],
-      "glosa": "Limpieza y vigilancia"
-    },
-    {
-      "label": "Compras y préstamos de jugadores",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        1650.86088
-      ],
-      "glosa": "Compras y préstamos de jugadores"
-    },
-    {
-      "label": "Vigilancia La Agustina",
-      "lado": "expense",
-      "page": 17,
-      "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
-      "values": [
-        536.244319
-      ],
-      "glosa": "Vigilancia La Agustina"
-    },
-    {
-      "label": "Depreciación de bienes de uso (Anexo I)",
-      "lado": "expense",
-      "page": 3,
-      "section": "estado",
-      "values": [
-        494.536348
-      ],
-      "glosa": "Depreciación de bienes de uso (Anexo I)"
-    },
-    {
-      "label": "Amortización de Intangibles (Anexo II)",
-      "lado": "expense",
-      "page": 3,
-      "section": "estado",
-      "values": [
-        474.310568
-      ],
-      "glosa": "Amortización de Intangibles (Anexo II)"
-    },
-    {
-      "label": "Gastos extraordinarios(Nota 3 y 2.9.)",
-      "lado": "expense",
-      "page": 3,
-      "section": "estado",
-      "values": [
-        1.038794
-      ],
-      "glosa": "Gastos extraordinarios(Nota 3 y 2.9.)"
-    }
-  ]
+ "md": "Clubes/Argentina/Instituto/balance-general-2024-2025.md",
+ "pdf": "Clubes/Argentina/Instituto/balance-general-2024-2025.pdf",
+ "club": "instituto-ar",
+ "year": 2025,
+ "generatedAt": "2026-10-23T12:49:02.377Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Para fines generales (Anexo III)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "values": [
+    3858.67127
+   ]
+  },
+  {
+   "label": "Centros educativos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    1860.968991
+   ]
+  },
+  {
+   "label": "Abonos deportivos sede",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    138.046758
+   ]
+  },
+  {
+   "label": "Derechos de TV",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    5322.741218
+   ]
+  },
+  {
+   "label": "Entradas generales fútbol",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    35.396554
+   ]
+  },
+  {
+   "label": "Entradas plateas y palcos fútbol",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    2324.40866
+   ]
+  },
+  {
+   "label": "Publicidad institucional",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    14.985783
+   ]
+  },
+  {
+   "label": "Publicidad otras competencias",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    1993.057168
+   ]
+  },
+  {
+   "label": "Publicidad y sponsors fútbol",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    5939.360046
+   ]
+  },
+  {
+   "label": "Recursos predio La Agustina",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    165.558451
+   ]
+  },
+  {
+   "label": "Transferencias y préstamos de jugadores",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    4594.836822
+   ]
+  },
+  {
+   "label": "Ventas de salón Gloriamanía",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    1047.529232
+   ]
+  },
+  {
+   "label": "Subsidios recibidos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "values": [
+    97.517794
+   ]
+  },
+  {
+   "label": "Remuneraciones y cargas",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "values": [
+    236.028547
+   ]
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "values": [
+    652.169935
+   ]
+  },
+  {
+   "label": "Servicios, luz, agua, gas, etc.",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "values": [
+    44.698891
+   ]
+  },
+  {
+   "label": "Gastos bancarios",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "values": [
+    650.310626
+   ]
+  },
+  {
+   "label": "Gastos de juicios",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "values": [
+    63.781236
+   ]
+  },
+  {
+   "label": "(Recuperos) / Quebranto por Juicios",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "values": [
+    -103.020172
+   ]
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    0.773435
+   ]
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    1288.3452
+   ]
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    4146.2258
+   ]
+  },
+  {
+   "label": "Mantenimiento de bienes de uso",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    884.606457
+   ]
+  },
+  {
+   "label": "Vigilancia sede",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    119.384419
+   ]
+  },
+  {
+   "label": "Servicios de energía, agua, gas, etc..",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    342.901711
+   ]
+  },
+  {
+   "label": "Gastos generales por eventos deportivos",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    1130.207552
+   ]
+  },
+  {
+   "label": "Viajes y concentraciones",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    1386.761148
+   ]
+  },
+  {
+   "label": "Compras de mercadería",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    828.320664
+   ]
+  },
+  {
+   "label": "Comisiones y acuerdos de rescisión",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    4740.976594
+   ]
+  },
+  {
+   "label": "Limpieza y vigilancia",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    205.527311
+   ]
+  },
+  {
+   "label": "Compras y préstamos de jugadores",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    1650.86088
+   ]
+  },
+  {
+   "label": "Vigilancia La Agustina",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "values": [
+    536.244319
+   ]
+  },
+  {
+   "label": "Depreciación de bienes de uso (Anexo I)",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "values": [
+    494.536348
+   ]
+  },
+  {
+   "label": "Amortización de Intangibles (Anexo II)",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "values": [
+    474.310568
+   ]
+  },
+  {
+   "label": "Gastos extraordinarios(Nota 3 y 2.9.)",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "values": [
+    1.038794
+   ]
+  },
+  {
+   "label": "Remuneraciones y cargas (Fútbol Profesional)",
+   "lado": "expense",
+   "page": null,
+   "section": "ajuste manual",
+   "values": [
+    4068.248882
+   ]
+  },
+  {
+   "label": "Remuneraciones y cargas (Colegio)",
+   "lado": "expense",
+   "page": 17,
+   "section": "ajuste manual",
+   "values": [
+    1174.886574
+   ]
+  },
+  {
+   "label": "Remuneraciones y cargas (Básquet/La Agustina/Sede/Tienda)",
+   "lado": "expense",
+   "page": 17,
+   "section": "ajuste manual",
+   "values": [
+    843.700678
+   ]
+  }
+ ]
 }

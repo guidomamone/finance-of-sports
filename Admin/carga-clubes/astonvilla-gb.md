@@ -326,8 +326,8 @@ tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2019: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null.
+2019: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
@@ -346,13 +346,8 @@ Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.categorias.jso
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): gb-championship, verificado contra roster cacheado de "2018–19 EFL Championship" (tools/club-league-reference/gb.json), coincidencia exacta "Aston Villa".
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): resultado-final = (111,776,896). El estado de resultados imprime 'Loss for the financial year (111,776,896)' (en texto, sin tabla) y la extracción no lo localizó: officialPAT quedaba vacío (TODO 370, balance-sin-pat)
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## Fuentes

@@ -206,6 +206,31 @@
   "motivo": "VERIFICADO 2026-09-28: es contenido PARA EL VISITANTE (términos de uso, mismo motivo que privacidad.html), no un documento interno — a propósito en la raíz, linkeado desde el footer de index.html."
  },
  {
+  "code": "sin-salarios",
+  "match": "astonvilla-gb 2019",
+  "motivo": "VERIFICADO 2026-10-23 contra el documento: las cuentas son las de Aston Villa Football Club Limited, la sociedad que no emplea al plantel. La nota de personal (astonvilla-full-accounts-2019-20.md L731-L739, 2020-21 L707, 2021-22 L768) declara 658 empleados SIN jugadores (directores, comercial, mantenimiento, personal de día de partido) y 7,0 a 9,4 M£ de costo de personal contra ingresos de 51 a 205 M£: los sueldos del plantel no están en este documento (límite de la fuente; haría falta el consolidado del grupo, que no se publica). No es un sueldo escondido en otra línea."
+ },
+ {
+  "code": "sin-salarios",
+  "match": "astonvilla-gb 2020",
+  "motivo": "Mismo caso que astonvilla-gb 2019 (ver esa entrada): nota de personal de la sociedad sin el plantel, 8,3 M£ contra 107,9 M£ de ingresos (astonvilla-full-accounts-2019-20.md L731-L739)."
+ },
+ {
+  "code": "sin-salarios",
+  "match": "astonvilla-gb 2021",
+  "motivo": "Mismo caso que astonvilla-gb 2019: nota de personal de la sociedad sin el plantel (astonvilla-full-accounts-2020-21.md L707)."
+ },
+ {
+  "code": "sin-salarios",
+  "match": "astonvilla-gb 2022",
+  "motivo": "Mismo caso que astonvilla-gb 2019: nota de personal de la sociedad sin el plantel, 9,4 M£ de costo total (astonvilla-full-accounts-2021-22.md L768-L771)."
+ },
+ {
+  "code": "sin-salarios",
+  "match": "novorizontino-br 2010",
+  "motivo": "VERIFICADO 2026-10-23 contra el documento: el balanço 2010 de un club amateur (ingresos de R$ 0,13 M) imprime solo tres renglones de gasto (Administrativas, Despesas Gerais e Manutenção, Projeto Escola de Futebol) y ninguna línea de personal (balanco-2010.md L12-L14); no hay sueldos que separar."
+ },
+ {
   "code": "doc-interno-no-excluido",
   "match": "correcciones.html",
   "motivo": "VERIFICADO 2026-10-23: es contenido PARA EL VISITANTE (el registro público de correcciones de datos ya publicados, generado desde data/correcciones/), no un documento interno: a propósito en la raíz, linkeado desde el sitio."

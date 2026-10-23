@@ -1,60 +1,55 @@
 {
-  "md": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md",
-  "pdf": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.pdf",
-  "club": "celtic",
-  "year": 2025,
-  "generatedAt": "2026-10-20T17:02:25.155Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Revenue",
-      "lado": "revenue",
-      "page": 56,
-      "section": "estado",
-      "values": [
-        143.597
-      ],
-      "glosa": "Ingresos ordinarios"
-    },
-    {
-      "label": "Profit on disposal of intangible assets",
-      "lado": "revenue",
-      "page": 56,
-      "section": "estado",
-      "values": [
-        31.488
-      ],
-      "glosa": "Beneficio por enajenación de activos intangibles"
-    },
-    {
-      "label": "Operating expenses (before intangible asset transactions and exceptional items)",
-      "lado": "expense",
-      "page": 56,
-      "section": "estado",
-      "values": [
-        117.062
-      ],
-      "glosa": "Gastos de explotación (antes de transacciones de activos intangibles y partidas excepcionales)"
-    },
-    {
-      "label": "Exceptional operating (expense)/income",
-      "lado": "expense",
-      "page": 56,
-      "section": "estado",
-      "values": [
-        2.005
-      ],
-      "glosa": "(Gastos)/ingresos de explotación excepcionales"
-    },
-    {
-      "label": "Amortisation of intangible assets",
-      "lado": "expense",
-      "page": 56,
-      "section": "estado",
-      "values": [
-        13.845
-      ],
-      "glosa": "Amortización de activos intangibles"
-    }
-  ]
+ "md": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md",
+ "pdf": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.pdf",
+ "club": "celtic-gb",
+ "year": 2025,
+ "generatedAt": "2026-10-23T12:41:31.188Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Revenue",
+   "lado": "revenue",
+   "page": 56,
+   "section": "estado",
+   "values": [
+    143.597
+   ]
+  },
+  {
+   "label": "Profit on disposal of intangible assets",
+   "lado": "revenue",
+   "page": 56,
+   "section": "estado",
+   "values": [
+    31.488
+   ]
+  },
+  {
+   "label": "Operating expenses (before intangible asset transactions and exceptional items)",
+   "lado": "expense",
+   "page": 56,
+   "section": "estado",
+   "values": [
+    117.062
+   ]
+  },
+  {
+   "label": "Exceptional operating (expense)/income",
+   "lado": "expense",
+   "page": 56,
+   "section": "estado",
+   "values": [
+    2.005
+   ]
+  },
+  {
+   "label": "Amortisation of intangible assets",
+   "lado": "expense",
+   "page": 56,
+   "section": "estado",
+   "values": [
+    13.845
+   ]
+  }
+ ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "celtic-gb",
@@ -99,14 +99,15 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.201,"tax":-1.109,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.201,"tax":-1.109,"gross_debt":null,"cash":null,"staff_cost":51.71},
       "official_totals": {"revenue":75.216,"expenses":86.174,"net_result":-12.601},
       "adjustments": {
         "extra_rows": [
           {"label":"Finance income","amount":0.855},
           {"label":"Finance expense","amount":-1.056},
           {"label":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":-1.109}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -177,9 +178,12 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.093,"tax":-0.287,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.093,"tax":-0.287,"gross_debt":null,"cash":null,"staff_cost":58.883},
       "official_totals": {"revenue":117.264,"expenses":104.773,"net_result":5.849},
-      "adjustments": {"extra_rows":[{"label":"Finance income","amount":0.876},{"label":"Finance expense","amount":-0.969},{"label":"Tax expense","amount":-0.287}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finance income","amount":0.876},{"label":"Finance expense","amount":-0.969},{"label":"Tax expense","amount":-0.287}],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+      }
     },
     {
       "fiscal_year": 2023,
@@ -222,9 +226,12 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.556,"tax":-7.365,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.556,"tax":-7.365,"gross_debt":null,"cash":null,"staff_cost":60.844},
       "official_totals": {"revenue":147.792,"expenses":107.52,"net_result":33.332},
-      "adjustments": {"extra_rows":[{"label":"Finance income","amount":2.041},{"label":"Finance expense","amount":-1.485},{"label":"Tax expense","amount":-7.365}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finance income","amount":2.041},{"label":"Finance expense","amount":-1.485},{"label":"Tax expense","amount":-7.365}],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+      }
     },
     {
       "fiscal_year": 2024,
@@ -267,9 +274,12 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.282,"tax":-4.441,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.282,"tax":-4.441,"gross_debt":null,"cash":null,"staff_cost":65.595},
       "official_totals": {"revenue":131.42,"expenses":116.877,"net_result":13.384},
-      "adjustments": {"extra_rows":[{"label":"Finance income","amount":4.726},{"label":"Finance expense","amount":-1.444},{"label":"Tax expense","amount":-4.441}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finance income","amount":4.726},{"label":"Finance expense","amount":-1.444},{"label":"Tax expense","amount":-4.441}],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+      }
     },
     {
       "fiscal_year": 2025,
@@ -312,7 +322,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.514,"tax":-11.753,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.514,"tax":-11.753,"gross_debt":null,"cash":null,"staff_cost":74.763},
       "official_totals": {"revenue":175.085,"expenses":130.907,"net_result":33.934},
       "adjustments": {
         "extra_rows": [{"label":"Finance income","amount":5.082},{"label":"Finance expense","amount":-1.568},{"label":"Tax expense","amount":-11.753}],
@@ -325,6 +335,7 @@
           }
         ],
         "included_in": {
+          "wages_squad": {"in":"other_expenses","possible":true},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},

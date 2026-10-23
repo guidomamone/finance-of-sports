@@ -74,7 +74,6 @@ const institutoArExpenseLinesByYear = {
     {"rawLabel":"Gastos bancarios","normalizedCategory":"admin_general_expense","amountNative":-650.310626,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos de juicios","normalizedCategory":"admin_general_expense","amountNative":-63.781236,"disclosureLevel":"aggregated"},
     {"rawLabel":"(Recuperos) / Quebranto por Juicios","normalizedCategory":"admin_general_expense","amountNative":103.020172,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Remuneraciones y cargas","normalizedCategory":"admin_general_expense","amountNative":-6086.836134,"disclosureLevel":"aggregated"},
     {"rawLabel":"Seguros","normalizedCategory":"education_expense","amountNative":-0.773435,"disclosureLevel":"aggregated"},
     {"rawLabel":"Honorarios","normalizedCategory":"admin_general_expense","amountNative":-1288.3452,"disclosureLevel":"aggregated"},
     {"rawLabel":"Diversos","normalizedCategory":"other_expenses","amountNative":-4146.2258,"disclosureLevel":"aggregated"},
@@ -91,6 +90,9 @@ const institutoArExpenseLinesByYear = {
     {"rawLabel":"Depreciación de bienes de uso (Anexo I)","normalizedCategory":"depreciation","amountNative":-494.536348,"disclosureLevel":"aggregated"},
     {"rawLabel":"Amortización de Intangibles (Anexo II)","normalizedCategory":"player_amortisation","amountNative":-474.310568,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos extraordinarios(Nota 3 y 2.9.)","normalizedCategory":"exceptional_items","amountNative":-1.038794,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Remuneraciones y cargas (Fútbol Profesional)","normalizedCategory":"wages_squad","amountNative":-4068.248882,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Remuneraciones y cargas (Colegio)","normalizedCategory":"education_expense","amountNative":-1174.886574,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Remuneraciones y cargas (Básquet/La Agustina/Sede/Tienda)","normalizedCategory":"youth_other_sports_expense","amountNative":-843.700678,"disclosureLevel":"aggregated"},
   ],
 };
 

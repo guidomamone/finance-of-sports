@@ -46,7 +46,7 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ### Ingresos
 
 ```text
-2025: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2025: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Escocia/Celtic/celtic-plc-group-accounts-2024-25.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -66,12 +66,18 @@ Generados/Escocia/Celtic/celtic-plc-group-accounts-2024-25.categorias.json (esca
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 74.763 (compuerta: documento anterior): Jev (confianza 0.4): celtic-plc-group-accounts-2024-25.md L4992 "Staff costs (Note"
+```
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (74.763, celtic-plc-group-accounts-2024-25.md L4992) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2024): Comercial / Sponsors, Estadio, Televisión
+tools/dentro-de-otro.mjs (2026-10-23): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2023, 2024)
 ```
 
 ### Liga
@@ -85,7 +91,7 @@ alta-club.mjs (2026-10-20): gb-scottishpremiership, verificado contra roster cac
 ### Ingresos
 
 ```text
-2024: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Escocia/Celtic/celtic-group-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2024: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Escocia/Celtic/celtic-group-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Escocia/Celtic/celtic-group-accounts-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -111,13 +117,13 @@ Generados/Escocia/Celtic/celtic-group-accounts-2023-24.categorias.json (escalón
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 65.595 (compuerta: documento siguiente): Jev (confianza 0.68): celtic-group-accounts-2023-24.md L3102 "Staff costs (Note 10)"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-20): gb-scottishpremiership, verificado contra roster cacheado de "2023–24 Scottish Premiership" (tools/club-league-reference/gb.json), coincidencia exacta "Celtic".
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (65.595, celtic-group-accounts-2023-24.md L3102) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2023
@@ -125,7 +131,7 @@ tools/cargar.mjs (2026-10-20): gb-scottishpremiership, verificado contra roster 
 ### Ingresos
 
 ```text
-2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Escocia/Celtic/celtic-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2023: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Escocia/Celtic/celtic-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Escocia/Celtic/celtic-group-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -151,13 +157,13 @@ Generados/Escocia/Celtic/celtic-group-accounts-2022-23.categorias.json (escalón
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 60.844 (compuerta: documento siguiente): Jev (confianza 0.67): celtic-group-accounts-2022-23.md L3440 "Staff costs (Note 11)"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2023 (gb-premierleague, gb-championship, gb-leagueone, gb-leaguetwo): puede haber jugado otra división).
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (60.844, celtic-group-accounts-2022-23.md L3440) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2022
@@ -165,7 +171,7 @@ tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no aparece en los rosters ca
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Escocia/Celtic/celtic-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Escocia/Celtic/celtic-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Escocia/Celtic/celtic-group-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -194,13 +200,13 @@ Generados/Escocia/Celtic/celtic-group-accounts-2021-22.categorias.json (escalón
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 58.883 (compuerta: documento siguiente): Jev (confianza 0.89): celtic-group-accounts-2021-22.md L3464 "Staff costs (Note 9)"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2022 (gb-premierleague, gb-championship, gb-leagueone): puede haber jugado otra división).
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (58.883, celtic-group-accounts-2021-22.md L3464) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2021
@@ -208,7 +214,7 @@ tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no aparece en los rosters ca
 ### Ingresos
 
 ```text
-2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2021: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Escocia/Celtic/celtic-group-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -235,15 +241,15 @@ Generados/Escocia/Celtic/celtic-group-accounts-2020-21.categorias.json (escalón
 ### Meta
 
 ```text
-2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = -1056. El estado quedó transcripto como texto y el bloque corta en Finance income (L2987): falta Finance expense (1,056), impreso en L2989
-2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): resultado-final = -12601. Resultado del ejercicio impreso (12,601) en L2999, fuera del bloque elegido (texto plano); verificar deduce el impuesto por diferencia (1,109 impreso en L2992)
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 51.71 (compuerta: documento siguiente): Jev (confianza 0.3): celtic-group-accounts-2020-21.md L4005 "Staff costs (Note"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2021 (gb-premierleague, gb-championship, gb-leagueone): puede haber jugado otra división).
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = -1056. El estado quedó transcripto como texto y el bloque corta en Finance income (L2987): falta Finance expense (1,056), impreso en L2989
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): resultado-final = -12601. Resultado del ejercicio impreso (12,601) en L2999, fuera del bloque elegido (texto plano); verificar deduce el impuesto por diferencia (1,109 impreso en L2992)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (51.71, celtic-group-accounts-2020-21.md L4005) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## Fuentes

@@ -144,7 +144,7 @@ position" en 2024/25).
 ### Ingresos
 
 ```text
-2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2023: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -168,13 +168,13 @@ Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.categ
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 124.371 (compuerta: año anterior): estructura de la nota (la suma cierra): brighton-full-accounts-2022-23.md L958 "(total sin rótulo: suma las filas de arriba)"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia única por palabras "Brighton & Hove Albion" = "Brighton".
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (124.371, brighton-full-accounts-2022-23.md L958) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2022

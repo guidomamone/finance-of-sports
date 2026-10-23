@@ -66,13 +66,13 @@ ascendido para 2023, ya en Primera al cierre
 ### Ingresos
 
 ```text
-2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Argentina/Instituto/balance-general-2024-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2025: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Argentina/Instituto/balance-general-2024-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Argentina/Instituto/balance-general-2024-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Para fines generales (Anexo III) | pág. 3, Jev 0.92 |
+| 1 | Para fines generales (Anexo III) | pág. 3, Jev 0.99 |
 | 2 | Centros educativos | pág. 15, precedente |
 | 3 | Abonos deportivos sede | pág. 15, precedente |
 | 4 | Derechos de TV | pág. 15, precedente |
@@ -96,35 +96,37 @@ Generados/Argentina/Instituto/balance-general-2024-2025.categorias.json (escaló
 | 4 | Gastos bancarios | pág. 16, precedente |
 | 5 | Gastos de juicios | pág. 16, precedente |
 | 6 | (Recuperos) / Quebranto por Juicios | pág. 16, Claude 0.85 |
-| 7 | Remuneraciones y cargas | pág. 17, Claude 0.9 |
-| 8 | Seguros | pág. 17, precedente |
-| 9 | Honorarios | pág. 17, Claude 0.9 |
-| 10 | Diversos | pág. 17, precedente |
-| 11 | Mantenimiento de bienes de uso | pág. 17, precedente |
-| 12 | Vigilancia sede | pág. 17, precedente |
-| 13 | Servicios de energía, agua, gas, etc.. | pág. 17, precedente |
-| 14 | Gastos generales por eventos deportivos | pág. 17, precedente |
-| 15 | Viajes y concentraciones | pág. 17, precedente |
-| 16 | Compras de mercadería | pág. 17, precedente |
-| 17 | Comisiones y acuerdos de rescisión | pág. 17, precedente |
-| 18 | Limpieza y vigilancia | pág. 17, precedente |
-| 19 | Compras y préstamos de jugadores | pág. 17, precedente |
-| 20 | Vigilancia La Agustina | pág. 17, precedente |
-| 21 | Depreciación de bienes de uso (Anexo I) | pág. 3, precedente |
-| 22 | Amortización de Intangibles (Anexo II) | pág. 3, Jev 0.96 |
-| 23 | Gastos extraordinarios(Nota 3 y 2.9.) | pág. 3, precedente |
+| 7 | Seguros | pág. 17, precedente |
+| 8 | Honorarios | pág. 17, Claude 0.9 |
+| 9 | Diversos | pág. 17, precedente |
+| 10 | Mantenimiento de bienes de uso | pág. 17, precedente |
+| 11 | Vigilancia sede | pág. 17, precedente |
+| 12 | Servicios de energía, agua, gas, etc.. | pág. 17, precedente |
+| 13 | Gastos generales por eventos deportivos | pág. 17, precedente |
+| 14 | Viajes y concentraciones | pág. 17, precedente |
+| 15 | Compras de mercadería | pág. 17, precedente |
+| 16 | Comisiones y acuerdos de rescisión | pág. 17, precedente |
+| 17 | Limpieza y vigilancia | pág. 17, precedente |
+| 18 | Compras y préstamos de jugadores | pág. 17, precedente |
+| 19 | Vigilancia La Agustina | pág. 17, precedente |
+| 20 | Depreciación de bienes de uso (Anexo I) | pág. 3, precedente |
+| 21 | Amortización de Intangibles (Anexo II) | pág. 3, Jev 0.91 |
+| 22 | Gastos extraordinarios(Nota 3 y 2.9.) | pág. 3, precedente |
+| 23 | Remuneraciones y cargas (Fútbol Profesional) | pág. ?, precedente |
+| 24 | Remuneraciones y cargas (Colegio) | pág. 17, precedente |
+| 25 | Remuneraciones y cargas (Básquet/La Agustina/Sede/Tienda) | pág. 17, precedente |
 
 ### Meta
 
 ```text
 2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. L99 repite 'Gastos extraordinarios' (L98, 1.038.794): las dos estaban como gasto y las filas sumaban 2 x 1.038.794 de más (diferencia 2.077.588 contra el total impreso); con la fila en 0 el resultado cierra con el Superávit final impreso 2.087.261.474. Claude 2026-10-19 (subagente Sonnet, revisado contra el .md L98-100)
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): ar-primera, verificado contra roster cacheado de "2025 Argentine Primera División" (tools/club-league-reference/ar.json), coincidencia única por palabras "Instituto" = "Instituto ACC".
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): fila = 4.068.248.882. Anexo V (gastos específicos de sectores) imprime 'Remuneraciones y cargas' por columna de sector; la fila total (6.086.836.134) mezclaba el fútbol con el colegio y el resto. Se parte por columna como en el ejercicio 2023-24 (TODO 351): columna FUTBOL
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): fila = 1.174.886.574. Anexo V, columna COLEGIO de 'Remuneraciones y cargas' (TODO 351)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): fila = 843.700.678. Anexo V, columnas BASQUET (--) + LA AGUSTINA 468.718.384 + SEDE 312.325.195 + TIENDA 62.657.099 de 'Remuneraciones y cargas' (TODO 351)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): categoria = wages_squad. Columna FUTBOL del Anexo V: sueldos del fútbol profesional (precedente del ejercicio 2023-24)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): categoria = education_expense. Columna COLEGIO del Anexo V (precedente del ejercicio 2023-24)
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): categoria = youth_other_sports_expense. Resto de las columnas del Anexo V (precedente del ejercicio 2023-24)
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2024

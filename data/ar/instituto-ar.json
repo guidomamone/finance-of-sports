@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "instituto-ar",
@@ -295,7 +295,6 @@
           "amount": 103.020172,
           "disclosure": "aggregated"
         },
-        {"label":"Remuneraciones y cargas","category":"admin_general","subcategory":"admin_general_expense","amount":-6086.836134,"disclosure":"aggregated"},
         {"label":"Seguros","category":"non_sporting_activities","subcategory":"education_expense","amount":-0.773435,"disclosure":"aggregated"},
         {"label":"Honorarios","category":"admin_general","subcategory":"admin_general_expense","amount":-1288.3452,"disclosure":"aggregated"},
         {"label":"Diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4146.2258,"disclosure":"aggregated"},
@@ -388,6 +387,27 @@
           "category": "exceptional",
           "subcategory": "exceptional_items",
           "amount": -1.038794,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Remuneraciones y cargas (Fútbol Profesional)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -4068.248882,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Remuneraciones y cargas (Colegio)",
+          "category": "non_sporting_activities",
+          "subcategory": "education_expense",
+          "amount": -1174.886574,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Remuneraciones y cargas (Básquet/La Agustina/Sede/Tienda)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -843.700678,
           "disclosure": "aggregated"
         }
       ],

@@ -86,3 +86,5 @@ se destrabó desde el 2026-09-22) y ver si ya existe algo del 2025-26.
 - Último chequeo: 2026-10-18.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Argentina/Instituto/balance-general-2024-2025.pdf` (sourceId `instituto-ar-balance-general-2024-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-23): ejercicio 2025 desde `Clubes/Argentina/Instituto/balance-general-2024-2025.pdf` (sourceId `instituto-ar-balance-general-2024-2025`).

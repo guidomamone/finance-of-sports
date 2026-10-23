@@ -1,9 +1,10 @@
 {
  "pdf": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.pdf",
  "md": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md",
- "generado": "2026-10-20T17:08:29.306Z",
+ "generado": "2026-10-23T12:41:31.187Z",
+ "scriptHuella": "2d94a50110ce",
  "estado": "ok",
- "clubId": null,
+ "clubId": "celtic-gb",
  "year": 2025,
  "escala": {
   "valor": "miles",
@@ -11,7 +12,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (74.763, celtic-plc-group-accounts-2024-25.md L4992) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una",
+   "evidencia": "celtic-plc-group-accounts-2024-25.md L4992",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-23"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -32,21 +46,21 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 131.217; el sitio tiene 131.42"
   },
   {
-   "nombre": "primer año",
+   "nombre": "documento del año 2024",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "ingresos de 2024: 131.42 en celtic-group-accounts-2023-24.pdf y 131.217 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
   "la nota de \"Revenue\" no suma el renglón (287.194 contra 143.597, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Operating expenses (before intangible asset transactions and exceptional items)\" no suma el renglón (94.603 contra 117.062, sumando sus renglones): quedó el renglón del estado",
   "duda de localizar cerrada por la regla 1 de perímetro (el documento trae un solo estado, consolidado): ¿Se carga el estado consolidado del Grupo (b12, pág. 56) aunque los años anteriores se cargaron como individual?",
-  "duda de localizar ya contestada para el club (perimetro, \"Wages and salaries\"): aceptar, en celtic-plc-group-accounts-2024-25.pdf",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Revenue\"): ¿Se usa el cuadro 'Revenue by category' (b24, L4946-L4951) como desglose principal de Revenue y se deja el de segmentos (b25, L4973-L4975) como alternativo?",
+  "duda de localizar ya contestada para el club (antes de su alta) (perimetro, \"Wages and salaries\"): aceptar, en celtic-plc-group-accounts-2024-25.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Revenue\"): corregir sí, en celtic-group-accounts-2022-23.pdf",
   "duda de extraer que no afecta la carga: El cuadro de Staff costs (L5058-L5061) no separa salarios del plantel; la nota L5062 solo menciona personal de agencia."
  ],
  "reintentar": null,
@@ -137,25 +151,5 @@
    "M": -11.753,
    "linea": 3820
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "663911c533085c8a0f326d54eacfeaefc86edcfb",
-  "rango": [
-   3807,
-   3824
-  ],
-  "lineasCargadas": [
-   3810,
-   3815,
-   3811,
-   3813,
-   3814,
-   3817,
-   3818,
-   3820
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 3807 a 3824 del .md):\nL3808: Notes £000 £000\nL3810: Revenue 4,5 143,597 124,580\nL3811: Operating expenses (before intangible asset transactions and exceptional items) (117,062) (105,394)\nL3812: Profit from trading before intangible asset transactions and exceptional items 26,535 19,186\nL3813: Exceptional operating (expense)/income 8 (2,005) 203\nL3814: Amortisation of intangible assets 17 (13,845) (11,483)\nL3815: Profit on disposal of intangible assets 31,488 6,637\nL3816: Operating profit 6 42,173 14,543\nL3817: Finance income 12 5,082 4,726\nL3818: Finance expense 12 (1,568) (1,444)\nL3819: Profit before tax 45,687 17,825\nL3820: Tax expense 13 (11,753) (4,441)\nL3821: Profit and total comprehensive profit for the year 33,934 13,384\nL3822: Basic profit per Ordinary Share for the year 15 35.78p 14.14p\nL3823: Diluted profit per Share for the year 15 25.22p 10.21p\n\nLO QUE SE CARGA:\n- ingreso · \"Revenue\" · 143.597 · L3810\n- ingreso · \"Profit on disposal of intangible assets\" · 31.488 · L3815\n- gasto · \"Operating expenses (before intangible asset transactions and exceptional items)\" · 117.062 · L3811\n- gasto · \"Exceptional operating (expense)/income\" · 2.005 · L3813\n- gasto · \"Amortisation of intangible assets\" · 13.845 · L3814\n- financiero · \"Finance income\" · 5.082 · L3817\n- financiero · \"Finance expense\" · -1.568 · L3818\n- impuesto · \"Tax expense\" · -11.753 · L3820"
- }
+ ]
 }

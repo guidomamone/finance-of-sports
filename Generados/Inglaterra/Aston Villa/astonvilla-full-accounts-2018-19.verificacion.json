@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.md",
- "generado": "2026-10-19T17:02:55.316Z",
+ "generado": "2026-10-23T12:47:48.027Z",
+ "scriptHuella": "2d94a50110ce",
  "estado": "ok",
  "clubId": "astonvilla-gb",
  "year": 2019,
@@ -11,7 +12,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.pdf",
+   "campo": "resultado-final",
+   "valor": "(111,776,896)",
+   "linea": 383,
+   "motivo": "El estado de resultados imprime 'Loss for the financial year (111,776,896)' (en texto, sin tabla) y la extracción no lo localizó: officialPAT quedaba vacío (TODO 370, balance-sin-pat)",
+   "evidencia": "astonvilla-full-accounts-2018-19.md L383",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -34,6 +46,11 @@
    "detalle": "extraer.mjs no encontró el resultado impreso"
   },
   {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-111.776896 por ajuste manual ((111,776,896): El estado de resultados imprime 'Loss for the financial year (111,776,896)' (en texto, sin tabla) y la extracción no lo localizó: officialPAT quedaba vacío (TODO 370, balance-sin-pat)); impuesto deducido 0 (antes de impuestos -111.776896; el documento imprimía 0)"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2019: 51.426474 en este documento y 51.426474 en astonvilla-full-accounts-2019-20.pdf (columna del año anterior)"
@@ -46,6 +63,7 @@
  ],
  "notas": [
   "la nota de \"Administrative expenses\" no suma el renglón (40.408071 contra 163.043101, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: resultado final (111,776,896) (2026-10-23, El estado de resultados imprime 'Loss for the financial year (111,776,896)' (en texto, sin tabla) y la extracción no lo localizó: officialPAT quedaba vacío (TODO 370, balance-sin-pat))",
   "duda de extraer que no afecta la carga: No aparece 'Salarios del plantel' en los bloques; el único dato salarial es Wages and salaries en L743 (£6,123,278), llamativamente bajo para un club, posiblemente porque los jugadores están empleados en otra sociedad del grupo.",
   "duda de extraer que no afecta la carga: La nota b11 lista solo algunos cargos incluidos ('after charging') y no suma 163,043,101."
  ],
@@ -64,8 +82,15 @@
   "financiero": -0.160269,
   "impuesto": 0,
   "resultadoImpreso": null,
-  "resultadoParaCargar": null,
-  "resultadoFinal": null,
+  "resultadoParaCargar": -111.776896,
+  "resultadoFinal": {
+   "valor": -111.776896,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/registros/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": 0
+  },
   "lecturaSignos": null
  },
  "lineas": [
@@ -112,7 +137,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -126,5 +151,10 @@
    "linea": 380
   }
  ],
- "impuesto": []
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": 0
+  }
+ ]
 }
