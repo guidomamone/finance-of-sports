@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 989 — Lo que dejó pensando la 988, el hook de diff para los documentos de criterio y `fos lecturas` [402]
+
+- Hook `post-tool.mjs`: el aviso de abrir el diff con `show_pane` ahora cubre también `CLAUDE.md` y `Admin/CONVENCIONES*.md`, `PANTALLA.md`, `PIPELINE.md`, `ESTADO.md` (antes solo las skills) y es imperativo (abrirlo ya, no al cierre). El hook de commit no pide veredicto a una tool que sola es solo comentarios o mudanza.
+- `fos personal` es un ensayo por defecto (`--escribir` escribe); `reemplazar --forzar`; `publicar --correcciones` (regenera el registro de correcciones antes de publicar); `medir pipeline` no cuenta las tools borradas; `patron` no toma «2000 *» por un año.
+- `tools/lecturas.mjs` (`fos lecturas`): tokens por documento leído en las últimas sesiones. Primera medición: `ESTADO.md` 23 %, `TODO.md` 15 %, `CONVENCIONES.md` 10 %. `ESTADO.md` de 25,2 KB a 17,3 KB (las tools del pipeline pasaron a `Admin/ESTADO-pipeline.md`).
+- Medido (audit): idéntico; veredicto general.
+
 ## Versión 988 — Etiquetas por proceso (Jev + agente con cita), sueldos de Brighton, Celtic, Newcastle e Instituto, P2 a 0 [369 · 351 · 370 · 372 · 350 · 390 · astonvilla-gb, brighton-gb, celtic-gb, instituto-ar, newcastle-gb]
 
 - **369:** `tools/recategorizar-etiquetas.mjs` (+ `etiquetas-reglas.mjs`; reemplaza a `recategorizar-subsidios.mjs`; `fos etiquetas --categoria <id>`): (1) reglas objetivas, (2) Jev sobre TODAS las etiquetas de `other_income` con el criterio de la REGLA como prompt (≥ 0,90 pasa sola), (3) un agente Sonnet con prompt fijo y cita textual que la tool verifica contra el `.md`, (4) a Guido solo lo que no tiene cita o choca con una regla. Cada decisión queda con quién la tomó. Backtest de Jev contra las 164 decididas con la expresión: reproduce solo 21 de 97 aprobadas y 36 de 67 excluidas con confianza alta, **0 errores de confianza alta**. Corrida real: 1.060 etiquetas, Jev aprobó 13 solas (12 son «donation(s)/doações» que la expresión no veía), 33 + 16 al agente (22 aprobadas, 8 excluidas, 19 sin cita); **81 líneas de 23 clubes pasan de Otros ingresos a Subsidios y donaciones** (Tartu, Narva, Vizela, Luzern, Gremio, Paysandu…), totales sin cambio; `catchall-dominante` 46 a 35 por eso. 24 etiquetas quedan en la lista corta de Guido (`fos etiquetas --categoria grants_donations --guido`). `audit.js` avisa `etiqueta-sin-revisar` (P3). Costo de Jev: centavos.

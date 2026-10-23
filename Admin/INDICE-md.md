@@ -5,23 +5,24 @@
 Lo escribe `node tools/indice-md.mjs --escribir`; no se edita a mano. Cada fila: ruta · KB · qué es · cuándo se lee · cuántos documentos o tools lo citan (←) · a qué otros documentos vivos manda (→).
 Huérfano = nadie lo cita; sin marca = no declara qué es ni cuándo se lee (primera línea `<!-- md: qué es | leer: cuándo -->`).
 
-Carpetas que se cuentan sin listar: `Admin/mediciones` 79, `Admin/Archive` 353, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 126, `Admin/lotes` 81.
+Carpetas que se cuentan sin listar: `Admin/mediciones` 79, `Admin/Archive` 353, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 127, `Admin/lotes` 81.
 
 ## CLAUDE.md y Admin
 
-- `CLAUDE.md` · ~10 KB · instrucciones permanentes del proyecto (se carga sola) · **leer:** siempre · ←30 · →CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
+- `CLAUDE.md` · ~10 KB · instrucciones permanentes del proyecto (se carga sola) · **leer:** siempre · ←31 · →CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/ARQUITECTURA.md` · ~70 KB · cómo funciona el motor de Finanzas y los scripts que escriben data/ · **leer:** al tocar el motor (js/finanzas-*) o los scripts que escriben data/; la sección que toca · ←9 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/CHANGELOG.md` · ~230 KB · qué cambió y cuándo (la última semana; lo anterior está en Archive) · **leer:** solo por grep de una palabra, nunca de corrido · ←26 · →CLAUDE.md, ARQUITECTURA.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md
 - `Admin/CONTRATO-ETAPAS.md` · ~10 KB · qué archivo lee y escribe cada etapa del pipeline, qué lo deja viejo y con qué comando se rehace · **leer:** antes de tocar algo que pasa de una etapa a otra (un arreglo local a una etapa no lo necesita) · ←5 · →PIPELINE.md
 - `Admin/CONVENCIONES-DATOS.md` · ~60 KB · reglas de datos: categorías, perímetro, períodos, tipos de cambio · **leer:** al cargar o corregir datos de un club; la sección que toca · ←32 · →CLAUDE.md, CONVENCIONES.md, PANTALLA.md, PIPELINE.md, dudas-por-club.md, propuestas/transicion-y-covid.md
-- `Admin/CONVENCIONES.md` · ~20 KB · reglas de proceso vigentes · **leer:** cuando la skill de la tarea lo pide · ←24 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, NOTAS-DE-TOOLS.md, PANTALLA.md, PIPELINE.md
-- `Admin/ESTADO-clubes.md` · ~30 KB · qué hay cargado de cada club (generado) · **leer:** si hace falta el detalle club por club · ←19 · →ESTADO.md
-- `Admin/ESTADO.md` · ~20 KB · qué hay armado hoy (snapshot del proyecto) · **leer:** siempre, al arrancar una sesión · ←18 · →CLAUDE.md, ARQUITECTURA.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md
-- `Admin/HALLAZGOS-pipeline.md` · ~50 KB · lo que se midió y no entró al pipeline, con el porqué · **leer:** antes de proponer una mejora al pipeline, por grep · ←17 · →PIPELINE.md, TODO.md, club-or-year-onboarding/club-nuevo.md
+- `Admin/CONVENCIONES.md` · ~20 KB · reglas de proceso vigentes · **leer:** cuando la skill de la tarea lo pide · ←26 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, NOTAS-DE-TOOLS.md, PANTALLA.md, PIPELINE.md
+- `Admin/ESTADO-clubes.md` · ~30 KB · qué hay cargado de cada club (generado) · **leer:** si hace falta el detalle club por club · ←20 · →ESTADO.md
+- `Admin/ESTADO-pipeline.md` · ~10 KB · estado de las tools del pipeline hoy (qué hace cada una, qué se decide solo, qué no se transcribe) · **leer:** al tocar una tool del pipeline o el proceso de carga; no en el arranque · ←2 · →CLAUDE.md, CONTRATO-ETAPAS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, HALLAZGOS-pipeline.md
+- `Admin/ESTADO.md` · ~15 KB · qué hay armado hoy (snapshot del proyecto) · **leer:** siempre, al arrancar una sesión · ←19 · →CLAUDE.md, ARQUITECTURA.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO-pipeline.md
+- `Admin/HALLAZGOS-pipeline.md` · ~50 KB · lo que se midió y no entró al pipeline, con el porqué · **leer:** antes de proponer una mejora al pipeline, por grep · ←18 · →PIPELINE.md, TODO.md, club-or-year-onboarding/club-nuevo.md
 - `Admin/NOTAS-DE-TOOLS.md` · ~90 KB · lo que las cabeceras de las tools tenían de más (campos, casos, medidas), tal cual, una sección por tool · **leer:** al tocar una tool cuya cabecera apunta acá · ←31 · →CLAUDE.md, CONVENCIONES.md, ESTADO.md, PANTALLA.md, TODO.md, dudas-por-club.md
 - `Admin/PANTALLA.md` · ~90 KB · reglas de pantalla y código del sitio · **leer:** al tocar js/, index.html o css; la sección de la pantalla · ←18 · →CONVENCIONES.md, ESTADO.md, club-data-mapping/referencia/formato-simplificado.md, club-or-year-onboarding/club-nuevo.md, producto-y-pantalla-finance-of-sports/referencia/marca.md, producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md
-- `Admin/PIPELINE.md` · ~140 KB · el pipeline etapa por etapa y las decisiones de Guido · **leer:** solo la etapa que se toca · ←40 · →CLAUDE.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, dudas-por-club.md, club-data-mapping/referencia/leer-pdf.md
-- `Admin/TODO.md` · ~40 KB · qué falta hacer, un punto por título y por prioridad · **leer:** con node tools/todo.mjs; nunca entero · ←31 · →CLAUDE.md, CONVENCIONES-DATOS.md, ESTADO-clubes.md, ESTADO.md, HALLAZGOS-pipeline.md, PANTALLA.md
+- `Admin/PIPELINE.md` · ~140 KB · el pipeline etapa por etapa y las decisiones de Guido · **leer:** solo la etapa que se toca · ←41 · →CLAUDE.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, dudas-por-club.md, club-data-mapping/referencia/leer-pdf.md
+- `Admin/TODO.md` · ~40 KB · qué falta hacer, un punto por título y por prioridad · **leer:** con node tools/todo.mjs; nunca entero · ←32 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO-pipeline.md, ESTADO.md
 - `Admin/dudas-por-club.md` · ~120 KB · preguntas que solo el club puede contestar · **leer:** al escribirle a un club o al agregar una duda · ←35 · →TODO.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md, club-data-mapping/referencia/casos-por-pais-y-formato.md, club-data-mapping/referencia/formato-simplificado.md
 - `Admin/finance-of-sports-project.md` · ~510 KB · diario narrativo: el porqué de las decisiones viejas · **leer:** solo por grep de una palabra, nunca de corrido · ←9 · →CLAUDE.md, CONVENCIONES.md, ESTADO.md, dudas-por-club.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md
 - `Admin/fuentes-externas.md` · ~5 KB · términos de las fuentes externas (Wikipedia, RSSSF, bancos centrales) · **leer:** antes de publicar datos de una fuente externa nueva · ←3
@@ -39,7 +40,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 79, `Admin/Archive` 353, 
 ## Admin: otras carpetas vivas
 
 - `Admin/transcripcion-subagentes/INSTRUCCIONES.md` · <5 KB · Transcribir PDFs de cuentas de clubes del Reino Unido a Markdown · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←1
-- `Admin/transcripcion-subagentes/README.md` · <5 KB · Transcripción de PDFs del Reino Unido con subagentes · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←17 · →transcripcion-subagentes/INSTRUCCIONES.md
+- `Admin/transcripcion-subagentes/README.md` · <5 KB · Transcripción de PDFs del Reino Unido con subagentes · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←18 · →transcripcion-subagentes/INSTRUCCIONES.md
 - `Admin/transcripcion-subagentes/reglas.md` · <5 KB · Reglas para transcribir UN PDF digital a Markdown (finance-of-sports) · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←1
 - `Admin/outreach/checkin-2026-10-24.md` · <5 KB · check-in del proceso de mails a clubes a los 30 días · **leer:** el 2026-10-24, cuando la tarea programada lo pregunta · ←3 · →club-outreach/SKILL.md
 - `Admin/difusion/calendario.md` · <5 KB · calendario de publicaciones para difundir el sitio · **leer:** al armar una publicación (skill contenido-y-difusion) · ←2
