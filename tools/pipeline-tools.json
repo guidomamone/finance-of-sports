@@ -32,19 +32,22 @@
    "que": "el costo de personal (staffCost) contra Admin/mediciones/personal-verdad.tsv, en todos los clubes (no depende de la lista)",
    "usaLista": false,
    "correr": ["tools/caja-deuda.mjs", "--personal", "--medir"],
-   "comparar": "texto"
+   "comparar": "texto",
+   "resumir": "valores-personal"
   },
   "personal-ensayos": {
    "que": "las opciones --personal de caja-deuda con un club (candidatos, partir, ver-candidatos) en ensayo, sobre 8 clubes: lo que --personal --medir no recorre",
    "usaLista": false,
    "correr": ["tools/medir-personal-ensayos.mjs"],
-   "comparar": "texto"
+   "comparar": "texto",
+   "resumir": "valores-personal"
   },
   "audit": {
    "que": "los hallazgos de audit.js por código y la lista completa, sobre todo el sitio (no depende de la lista)",
    "usaLista": false,
    "correr": ["tools/audit.js", "--json"],
-   "comparar": "audit-json"
+   "comparar": "audit-json",
+   "resumir": "audit-codigos"
   },
   "contexto": {
    "que": "estadio, capacidad y sponsor de cada ejercicio (el ensayo baja de Wikipedia las páginas que falten en la caché; medir-pipeline revierte esa caché después de cada corrida)",

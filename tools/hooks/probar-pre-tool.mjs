@@ -35,6 +35,11 @@ function casosMedicion() {
     ['medición: un módulo que usa una tool del pipeline sin medición frena', commit('x [sin-audit]'), 'deny', 'vocabulario.mjs', 'una-sesion', env(registro('modulo', []), 'tools/vocabulario.mjs')],
     ['medición: una tool nueva sin clasificar frena y dice cómo clasificarla', commit('x [sin-audit]'), 'deny', 'no_pipeline', 'una-sesion', env(registro('nueva', []), `tools/${SIN_CLASIFICAR}`)],
     ['medición: una tool de no_pipeline pasa', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', env(registro('afuera', []), 'tools/mapa-codigo.mjs')],
+    // TODO 385: el hook mira lo staged (aunque el árbol de trabajo tenga una tool sin medir) y dice qué hacer cuando la auditoría frena
+    ['staged: un commit de datos pasa aunque haya una tool sin medir sin stagear', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', { FOS_REGISTRO: registro('staged1', []), FOS_STAGED: 'data/gb/x.json' }],
+    ['staged: una tool staged sin medición frena', commit('x [sin-audit]'), 'deny', 'cargar.mjs', 'una-sesion', { FOS_REGISTRO: registro('staged2', []), FOS_STAGED: 'tools/cargar.mjs' }],
+    ['staged: la huella es la del blob del índice (HEAD) y pasa con su línea', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', { FOS_REGISTRO: registro('staged3', [linea('idéntico', execFileSync('git', ['rev-parse', ':tools/cargar.mjs'], { cwd: raiz, encoding: 'utf8' }).trim())]), FOS_STAGED: 'tools/cargar.mjs' }],
+    ['auditoría que frena: el hook dice qué hacer con el código', commit('x'), 'deny', 'node tools/publicar.mjs', 'una-sesion', { FOS_REGISTRO: registro('audit1', []), FOS_STAGED: 'data/gb/x.js', FOS_AUDIT_SALIDA: 'P1 1\n  [asset-v-sin-subir] 1\n    · Hay cambios sin commitear en js/ o data/' }],
     ['medición: un comando que no es commit pasa', bash('git status'), 'pasa', undefined, 'una-sesion', env(registro('vacio4', []))],
   ];
 }

@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+// tools/hooks/probar-post-tool.mjs — prueba de tools/hooks/post-tool.mjs con entradas simuladas. No escribe nada.
+// USO: node tools/hooks/probar-post-tool.mjs    (sale con código 1 si algún caso no da lo esperado)
+// Usa dos commits reales del repo: 321bd3f1b7 (toca skills) y 83bbf62a97 (solo Admin/).
+import { execFileSync } from 'node:child_process';
+import { resolve } from 'node:path';
+
+const raiz = resolve(import.meta.dirname, '..', '..');
+const bash = (command, tool_name = 'Bash') => ({ tool_name, tool_input: { command }, cwd: raiz });
+const casos = [
+  ['un commit que toca una skill avisa del diff', bash('git commit -m "x"'), '321bd3f1b7', true],
+  ['un commit que no toca skills no dice nada', bash('git commit -m "x"'), '83bbf62a97', false],
+  ['un comando que no es commit no dice nada', bash('git status'), '321bd3f1b7', false],
+  ['una herramienta que no es Bash no dice nada', bash('git commit -m "x"', 'Edit'), '321bd3f1b7', false],
+  ['git -C … commit también cuenta', bash('git -C . commit -m "x"'), '321bd3f1b7', true],
+];
+let mal = 0;
+for (const [nombre, entrada, commit, avisa] of casos) {
+  let salida = '';
+  try { salida = execFileSync('node', [`${raiz}/tools/hooks/post-tool.mjs`], { input: JSON.stringify(entrada), encoding: 'utf8', env: { ...process.env, FOS_COMMIT: commit } }); } catch (e) { salida = `ERROR ${e.message}`; }
+  const ok = avisa ? salida.includes('show_pane') && salida.includes(commit.slice(0, 10)) : salida === '';
+  if (!ok) mal++;
+  console.log(`${ok ? 'ok ' : 'MAL'} ${nombre}`);
+}
+console.log(mal ? `\n${mal} caso(s) MAL` : `\n${casos.length} casos, todos ok`);
+process.exit(mal ? 1 : 0);

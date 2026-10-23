@@ -18,6 +18,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 961 — hook del diff de skills, hook de commit sobre lo staged, medidores que resumen, reglas sin diseño para Guido [378 · 385 · 386]
+
+- `tools/hooks/post-tool.mjs` (PostToolUse sobre Bash): un `git commit` que toca `.claude/skills/` devuelve «mostrale a Guido el diff con show_pane»; 5 casos de prueba (`probar-post-tool.mjs`). Hace falta reabrir la sesión para que la configuración nueva de hooks rija.
+- `tools/hooks/pre-tool.mjs`: el hook de medición y el de auditoría miran lo staged cuando el comando no agrega todo (y la huella es la del blob del índice); cuando la auditoría frena, imprime el «hacer» de `audit-acciones.json` de cada código (se sumaron `asset-v-sin-subir` y `correcciones-desfasado`). 46 casos de prueba, todos ok.
+- `tools/medir-pipeline.mjs`: `resumir` en la tabla (valores de personal: aceptados idénticos, que cambian, que se pierden y nuevos; auditoría: avisos por código). Solo lo que cambia o se pierde (o un aviso nuevo) pide `--explicacion`; lo demás queda explicado por el resumen, que va a la línea del registro. Probado retroactivamente sobre el arreglo del 368: salen los dos valores de Aston Villa que se pierden.
+- Reglas: el diseño de un cambio a una tool no se le muestra a Guido (`CLAUDE.md`, `mejorar-script.md`); lo deciden el lote y el veredicto general o parche.
+- Reproducibilidad de lo cargado en el 368: rehacer `verificar` desde cero da lo mismo que quedó guardado (11 de 11 documentos), el ensayo de `cargar` reproduce lo publicado (11 de 11), y sin las líneas de `ajustes-manuales.jsonl` la herramienta vuelve a proponer las mismas marcas (Fulham).
+
 ## Versión 960 — 368: dos arreglos al aplicar el escalón 1 a los datos (2026-10-22) [368]
 
 - `audit.js`: el aviso `sueldos-escondidos` acepta la marca `incluye` como resuelta, igual que `sin-salarios` (15 avisos menos, ninguno nuevo). `fos personal` también trata los clubes con ese aviso (Bath Rugby 2021-23 y 2025 quedaron con los sueldos partidos).

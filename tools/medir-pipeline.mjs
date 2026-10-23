@@ -180,7 +180,7 @@ function difTexto(a, b) {
   return out;
 }
 function comparar(m, antes, despues) {
-  const med = T.medidores[m]; let lineas = []; let n = 0;
+  const med = T.medidores[m]; let lineas = []; let n = 0; let textos = null;
   if (Array.isArray(med.comparar)) {
     const args = med.comparar.map((a) => a.replace('{antes}', antes.salida).replace('{despues}', despues.salida));
     const r = spawnSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 30 });
@@ -190,42 +190,80 @@ function comparar(m, antes, despues) {
   } else {
     const leer = (d) => readFileSync(join(d.dir, 'stdout.txt'), 'utf8');
     let [a, b] = [leer(antes), leer(despues)];
+    const [raw0, raw1] = [a, b];
     if (med.comparar === 'audit-json') {
       const f = (s) => { try { return JSON.parse(s).findings.map((x) => `${x.sev} ${x.code} ${x.msg}`).join('\n'); } catch { return s; } };
       [a, b] = [f(a), f(b)];
     }
     lineas = difTexto(norm(a), norm(b)); n = lineas.length;
+    textos = [raw0, raw1];
   }
-  return { n, lineas };
+  return { n, lineas, textos };
 }
+
+// ---- resúmenes por medidor (TODO 386) ----------------------------------------
+// Un medidor con `resumir` en la tabla cuenta qué cambió en vez de volcar cientos de líneas. `atencion` es lo que SÍ pide una razón escrita por la sesión
+// (un valor aceptado que cambia o se pierde; un aviso nuevo de la auditoría); lo demás (valores nuevos, avisos que desaparecen, una etiqueta distinta) queda explicado por el resumen.
+const RESUMIDORES = {
+  // costo de personal: la salida de --personal --medir (club año: valor · verdad …) y la de medir-personal-ensayos ($ caja-deuda --personal --club X … año personal: valor)
+  'valores-personal': (lineas, [a, b]) => {
+    const leer = (s) => {
+      const m = new Map(); let bloque = '';
+      for (const l of s.split('\n')) {
+        const c = l.match(/^\$ caja-deuda --personal --club (\S+)\s+\(salió/); if (c) { bloque = c[1]; continue; }
+        if (/^\$ /.test(l)) { bloque = ''; continue; }
+        let v = l.match(/^\s+(\d{4}) personal: (\S+)/);
+        if (v && bloque) { m.set(`${bloque} ${v[1]}`, v[2]); continue; }
+        v = l.match(/^\s+(\S+) (\d{4}): (\S+) ·/); if (v) m.set(`${v[1]} ${v[2]}`, v[3] === 'sin' ? 'null' : v[3]);
+      }
+      return m;
+    };
+    const [ma, mb] = [leer(a), leer(b)]; let iguales = 0; const cambian = []; const pierden = []; const nuevos = [];
+    for (const [k, v] of ma) { const w = mb.get(k); if (v === 'null') { if (w && w !== 'null') nuevos.push(`${k}: ${w}`); } else if (w === v) iguales++; else if (!w || w === 'null') pierden.push(`${k}: ${v} → sin dato`); else cambian.push(`${k}: ${v} → ${w}`); }
+    for (const [k, w] of mb) if (!ma.has(k) && w !== 'null') nuevos.push(`${k}: ${w}`);
+    return { atencion: cambian.length + pierden.length, lineas: [`valores aceptados idénticos ${iguales} · que CAMBIAN ${cambian.length} · que se PIERDEN ${pierden.length} · nuevos ${nuevos.length}`, ...cambian.map((x) => `CAMBIA ${x}`), ...pierden.map((x) => `PIERDE ${x}`), ...(nuevos.length ? [`nuevos: ${nuevos.join('; ')}`] : [])] };
+  },
+  // auditoría: avisos por código que aparecen o desaparecen (las líneas de diferencia son «- P3 código …» y «+ P2 código …»)
+  'audit-codigos': (lineas) => {
+    const por = new Map();
+    for (const l of lineas) { const m = l.match(/^([-+]) (P\d) (\S+)/); if (m) { const c = por.get(m[3]) || { mas: 0, menos: 0 }; if (m[1] === '+') c.mas++; else c.menos++; por.set(m[3], c); } }
+    let atencion = 0; const out = [];
+    for (const [cod, c] of por) { const neto = c.mas - c.menos; if (neto > 0) atencion += neto; out.push(`${cod}: ${c.menos} que se van, ${c.mas} que aparecen${neto > 0 ? ` (${neto} NUEVO${neto > 1 ? 'S' : ''})` : ''}`); }
+    return { atencion, lineas: out };
+  },
+};
 
 // ---- niveles ---------------------------------------------------------------
 const explicacion = flag('--explicacion');
 const registroMedidores = [];
 const niveles = ['chico', ...NIVELES.slice(1, NIVELES.indexOf(nivelFinal) + 1)];
-let nivelUsado = 'chico'; let difTotal = 0; let cortado = false;
+let nivelUsado = 'chico'; let difTotal = 0; let cortado = false; let autoN = 0; let resumenes = [];
 for (let k = 0; k < niveles.length; k++) {
-  const nivel = niveles[k]; nivelUsado = nivel; difTotal = 0; registroMedidores.length = 0;
+  const nivel = niveles[k]; nivelUsado = nivel; difTotal = 0; autoN = 0; resumenes = []; registroMedidores.length = 0;
   console.log(`\n== Lote ${nivel} (${leerLista(nivel).length} documentos) ==`);
   for (const m of medidores) {
     // un medidor que no usa la lista (todo el sitio) da la misma clave en cada nivel: se reutiliza
     instalarBase(); const antes = correr(m, nivel); volver();
     const despues = correr(m, nivel);
-    const { n, lineas } = comparar(m, antes, despues);
-    difTotal += n;
+    const { n, lineas, textos } = comparar(m, antes, despues);
+    const res = n && T.medidores[m].resumir && RESUMIDORES[T.medidores[m].resumir] ? RESUMIDORES[T.medidores[m].resumir](lineas, textos || []) : null;
+    // con resumen, solo lo que pide atención cuenta como diferencia sin explicar; el resto queda explicado por el resumen
+    if (res && res.atencion === 0) { autoN += n; resumenes.push(`${m}: ${res.lineas.join(' · ')}`); } else difTotal += n;
     writeFileSync(join(despues.dir, `diferencias-${nivel}.txt`), lineas.join('\n'));
     console.log(`  ${m}: ${n ? `${n} diferencia(s)` : 'idéntico'}${antes.reutilizado ? ' (antes reutilizado)' : ''}`);
-    if (n) console.log(lineas.slice(0, 25).map((l) => '     ' + l).join('\n'));
-    registroMedidores.push({ medidor: m, nivel, diferencias: n, antes: antes.dir.slice(ROOT.length + 1), despues: despues.dir.slice(ROOT.length + 1), resumen: lineas.filter(Boolean).slice(0, 15) });
+    if (res) console.log(res.lineas.map((l) => '     ' + l).join('\n') + (res.atencion ? `\n     → ${res.atencion} piden razón escrita (--explicacion)` : '\n     → explicado por el resumen'));
+    else if (n) console.log(lineas.slice(0, 25).map((l) => '     ' + l).join('\n'));
+    registroMedidores.push({ medidor: m, nivel, diferencias: n, antes: antes.dir.slice(ROOT.length + 1), despues: despues.dir.slice(ROOT.length + 1), resumen: res ? res.lineas.slice(0, 15) : lineas.filter(Boolean).slice(0, 15) });
   }
   if (nivel === 'chico' && difTotal && !explicacion) { console.log('\nEl lote chico ya muestra diferencias: explicalas (--explicacion "…") o arreglá el cambio antes de seguir con lotes más grandes.'); cortado = true; break; }
-  if (nivel === 'mediano' && difTotal && !niveles.includes('completo')) { niveles.push('completo'); nivelFinal = 'completo'; console.log('El mediano mostró diferencias: escala al completo.'); }
+  if (nivel === 'mediano' && (difTotal || autoN) && !niveles.includes('completo')) { niveles.push('completo'); nivelFinal = 'completo'; console.log('El mediano mostró diferencias: escala al completo.'); }
 }
-const resultado = !difTotal ? 'idéntico' : explicacion ? `${difTotal} diferencias, todas explicadas` : `${difTotal} diferencias sin explicar`;
+const textoExplicacion = explicacion || (autoN && !difTotal ? `Explicadas por el resumen del medidor: ${resumenes.join(' | ')}` : null);
+const resultado = !difTotal && !autoN ? 'idéntico' : (difTotal ? !!explicacion : true) ? `${difTotal + autoN} diferencias, todas explicadas` : `${difTotal + autoN} diferencias sin explicar`;
 const linea = {
   fecha: new Date().toISOString().slice(0, 10), base: baseRev, tools: Object.fromEntries(nombres.map((n) => [n, { antes: huellasAntes[n], despues: huellasDespues[n] }])),
   lote: { nivel: nivelUsado, lista: T.lotes[nivelUsado], listaSha: sha1(readFileSync(resolve(ROOT, T.lotes[nivelUsado]), 'utf8')).slice(0, 12), documentos: leerLista(nivelUsado).length },
-  medidores: registroMedidores, resultado, ...(explicacion ? { explicacion } : {}),
+  medidores: registroMedidores, resultado, ...(textoExplicacion ? { explicacion: textoExplicacion } : {}),
 };
 if (A.includes('--no-anotar') || SOLO_CHICO) console.log(`\nResultado: ${resultado} (no se escribió el registro).`);
 else if (!cortado && nivelUsado === nivelFinal) { appendFileSync(REGISTRO, JSON.stringify(linea) + '\n'); console.log(`\nResultado: ${resultado}. Anotado en Admin/registros/mediciones-pipeline.jsonl.`); }

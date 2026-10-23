@@ -68,20 +68,40 @@ const GIT_SUB = (sub) => new RegExp(`\\bgit(?:\\s+-[cC]\\s+\\S+|\\s+--?[\\w-]+(?
 // Lo que no se publica (netlify.toml lo borra del deploy) y no cambia nada que audit.js mire.
 const INTERNO = /^(Admin\/|\.claude\/|CLAUDE\.md$|auditorias\/|Prototyping\/)/;
 
+// Qué entra en el commit (TODO 385). Si el comando no agrega nada (ni `git add` ni `-a`) y hay algo staged, es lo staged; si no, lo cambiado respecto de HEAD más lo nuevo sin trackear
+// (el comando puede hacer el `git add` antes del commit). FOS_CAMBIADOS y FOS_STAGED reemplazan lo que se lee de git: los usa la prueba.
+function archivosDelCommit(cmd) {
+  if (process.env.FOS_CAMBIADOS) return { archivos: process.env.FOS_CAMBIADOS.split(',').filter(Boolean), staged: false };
+  const sinTextos = cmd.replace(/"(?:[^"\\]|\\.)*"|'[^']*'/g, '""');
+  const agregaTodo = /\bgit\b[^|;&]*\badd\b/.test(sinTextos) || /\bcommit\b[^|;&]*\s(-[a-zA-Z]*a[a-zA-Z]*|--all)(\s|$)/.test(sinTextos);
+  const staged = (process.env.FOS_STAGED !== undefined ? process.env.FOS_STAGED.split(',') : git(['diff', '--cached', '--name-only']).split('\n')).filter(Boolean);
+  if (!agregaTodo && staged.length) return { archivos: staged, staged: true };
+  return { archivos: [...git(['diff', 'HEAD', '--name-only']).split('\n'), ...git(['ls-files', '--others', '--exclude-standard']).split('\n')].filter(Boolean), staged: false };
+}
+// Lo que dice tools/audit-acciones.json que se hace con cada código que frenó: el hook lo imprime al lado del hallazgo.
+function queHacer(raiz, salida) {
+  let acciones = {}; try { acciones = JSON.parse(readFileSync(join(raiz, 'tools', 'audit-acciones.json'), 'utf8')); } catch { return ''; }
+  const codigos = [...new Set([...String(salida).matchAll(/^\s*\[([a-z0-9-]+)\]\s+\d+/gm)].map((m) => m[1]))];
+  const lineas = codigos.map((c) => acciones[c]?.hacer && `  [${c}] ${acciones[c].hacer}`).filter(Boolean);
+  return lineas.length ? `\nQué hacer (tools/audit-acciones.json):\n${lineas.join('\n')}\n` : '';
+}
+
 function auditAntesDelCommit(cmd) {
   if (!GIT_SUB('commit').test(cmd) || cmd.includes('[sin-audit]')) return;
   let raiz;
   try { raiz = git(['rev-parse', '--show-toplevel']).trim(); } catch { return; }
   if (!existsSync(join(raiz, 'tools', 'audit.js'))) return; // otro repo
-  // Lo cambiado respecto de HEAD más lo nuevo sin trackear: el comando puede hacer el `git add` antes del commit.
-  const cambiados = [...git(['diff', 'HEAD', '--name-only']).split('\n'), ...git(['ls-files', '--others', '--exclude-standard']).split('\n')]
-    .filter(Boolean);
+  const cambiados = archivosDelCommit(cmd).archivos;
   if (!cambiados.some((f) => !INTERNO.test(f))) return;
-  try {
-    execFileSync('node', ['tools/audit.js', '--quiet'], { cwd: raiz, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], timeout: 90_000 });
-  } catch (e) {
-    const salida = `${e.stdout || ''}${e.stderr || ''}`.trim().split('\n').slice(0, 40).join('\n');
-    decidir('deny', `Commit frenado: node tools/audit.js no da P0 0 / P1 0.\n${salida}\n\n`
+  let falla = null;
+  if (process.env.FOS_AUDIT_SALIDA) falla = process.env.FOS_AUDIT_SALIDA; // la prueba simula un audit que frena
+  else {
+    try { execFileSync('node', ['tools/audit.js', '--quiet'], { cwd: raiz, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], timeout: 90_000 }); }
+    catch (e) { falla = `${e.stdout || ''}${e.stderr || ''}`.trim(); }
+  }
+  if (falla != null) {
+    const salida = falla.split('\n').slice(0, 40).join('\n');
+    decidir('deny', `Commit frenado: node tools/audit.js no da P0 0 / P1 0.\n${salida}\n${queHacer(raiz, falla)}\n`
       + 'Arreglalo y volvé a commitear. Si el hallazgo no es de este cambio (ya venía de main), avisale a Guido; con su ok, '
       + 'agregá [sin-audit] al mensaje del commit.');
   }
@@ -97,8 +117,7 @@ function medicionAntesDelCommit(cmd) {
   try { raiz = git(['rev-parse', '--show-toplevel']).trim(); } catch { return; }
   const tabla = join(raiz, 'tools', 'pipeline-tools.json');
   if (!existsSync(tabla)) return; // otro repo
-  const cambiados = process.env.FOS_CAMBIADOS ? process.env.FOS_CAMBIADOS.split(',')
-    : [...git(['diff', 'HEAD', '--name-only']).split('\n'), ...git(['ls-files', '--others', '--exclude-standard']).split('\n')];
+  const { archivos: cambiados, staged } = archivosDelCommit(cmd);
   const nombresCambiados = [...new Set(cambiados.filter(Boolean))].map((f) => f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter((n) => n && existsSync(join(raiz, 'tools', n)));
   if (!nombresCambiados.length) return;
   // una tool de la tabla o un módulo que ellas usan (tools/clasificar-tools.mjs); una tool sin clasificar tampoco se commitea sin decir qué es
@@ -111,7 +130,8 @@ function medicionAntesDelCommit(cmd) {
   const lineas = existsSync(registro) ? readFileSync(registro, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
   const BUENO = /^(idéntico|\d+ diferencias, todas explicadas)$/;
   const sinMedir = tocadas.filter((n) => {
-    const huella = git(['hash-object', `tools/${n}`]).trim();
+    // lo staged se compara por el blob del índice (lo que entra al commit), no por lo que haya hoy en el archivo
+    const huella = git(staged ? ['rev-parse', `:tools/${n}`] : ['hash-object', `tools/${n}`]).trim();
     return !lineas.some((l) => BUENO.test(l.resultado || '') && l.tools?.[n]?.despues === huella);
   });
   if (!sinMedir.length) return;

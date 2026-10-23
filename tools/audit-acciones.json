@@ -60,6 +60,16 @@
   "quien": "script",
   "donde": "CLAUDE.md, el índice de los .md"
  },
+ "asset-v-sin-subir": {
+  "hacer": "node tools/publicar.mjs (sube ASSET_V, regenera lo que se genera y corre la auditoría); después commitear",
+  "quien": "script",
+  "donde": "skill start-session-finance-of-sports-project, sección 5"
+ },
+ "correcciones-desfasado": {
+  "hacer": "node tools/generar-correcciones.mjs; si cambió data/, después node tools/publicar.mjs; commitear el registro",
+  "quien": "script",
+  "donde": "Admin/CONVENCIONES.md, trailer Corrige:"
+ },
  "tool-sin-clasificar": {
   "hacer": "Sumar la tool a «tools» (con sus medidores y alcance) o a «no_pipeline» (con el motivo) en tools/pipeline-tools.json; node tools/clasificar-tools.mjs <archivo> dice en qué clase está",
   "quien": "sesion",

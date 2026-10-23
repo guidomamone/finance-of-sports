@@ -5,7 +5,7 @@
 Lo escribe `node tools/indice-md.mjs --escribir`; no se edita a mano. Cada fila: ruta · KB · qué es · cuándo se lee · cuántos documentos o tools lo citan (←) · a qué otros documentos vivos manda (→).
 Huérfano = nadie lo cita; sin marca = no declara qué es ni cuándo se lee (primera línea `<!-- md: qué es | leer: cuándo -->`).
 
-Carpetas que se cuentan sin listar: `Admin/mediciones` 449, `Admin/Archive` 353, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 124, `Admin/lotes` 81.
+Carpetas que se cuentan sin listar: `Admin/mediciones` 469, `Admin/Archive` 353, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 124, `Admin/lotes` 81.
 
 ## CLAUDE.md y Admin
 
@@ -19,7 +19,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 449, `Admin/Archive` 353,
 - `Admin/ESTADO.md` · ~20 KB · qué hay armado hoy (snapshot del proyecto) · **leer:** siempre, al arrancar una sesión · ←17 · →CLAUDE.md, ARQUITECTURA.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md
 - `Admin/HALLAZGOS-pipeline.md` · ~50 KB · lo que se midió y no entró al pipeline, con el porqué · **leer:** antes de proponer una mejora al pipeline, por grep · ←16 · →PIPELINE.md, TODO.md, club-or-year-onboarding/club-nuevo.md
 - `Admin/PANTALLA.md` · ~90 KB · reglas de pantalla y código del sitio · **leer:** al tocar js/, index.html o css; la sección de la pantalla · ←15 · →CONVENCIONES.md, ESTADO.md, club-data-mapping/referencia/formato-simplificado.md, club-or-year-onboarding/club-nuevo.md, producto-y-pantalla-finance-of-sports/referencia/marca.md, producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md
-- `Admin/PIPELINE.md` · ~130 KB · el pipeline etapa por etapa y las decisiones de Guido · **leer:** solo la etapa que se toca · ←40 · →CLAUDE.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, dudas-por-club.md, club-data-mapping/referencia/leer-pdf.md
+- `Admin/PIPELINE.md` · ~140 KB · el pipeline etapa por etapa y las decisiones de Guido · **leer:** solo la etapa que se toca · ←40 · →CLAUDE.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, dudas-por-club.md, club-data-mapping/referencia/leer-pdf.md
 - `Admin/TODO.md` · ~50 KB · qué falta hacer, un punto por título y por prioridad · **leer:** con node tools/todo.mjs; nunca entero · ←27 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, HALLAZGOS-pipeline.md
 - `Admin/dudas-por-club.md` · ~120 KB · preguntas que solo el club puede contestar · **leer:** al escribirle a un club o al agregar una duda · ←34 · →TODO.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md, club-data-mapping/referencia/casos-por-pais-y-formato.md, club-data-mapping/referencia/formato-simplificado.md
 - `Admin/finance-of-sports-project.md` · ~510 KB · diario narrativo: el porqué de las decisiones viejas · **leer:** solo por grep de una palabra, nunca de corrido · ←9 · →CLAUDE.md, CONVENCIONES.md, ESTADO.md, dudas-por-club.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md
