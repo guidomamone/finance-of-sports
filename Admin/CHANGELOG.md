@@ -22,6 +22,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 - `fos mover caja-deuda.mjs 53-465 caja-deuda-md.mjs`: el parseo del `.md` de un balance (importes, columnas de notas, filas y totales; 413 líneas, 38 KB) sale de `caja-deuda.mjs` (de 113 a 78 KB) a su módulo; `caja-deuda.mjs` lo importa y re-exporta `coincide`, `parseNumber`, `filasDelMd` y `r6` (los llamadores no cambian). Seis constantes puras se duplican en el módulo (`PAG_RE`, `IMPORTE_RE`, …). Medido (caja-deuda, caja-deuda-personal, personal-ensayos, audit): idéntico salvo `indice-md-desfasado` (el índice cuenta cuántas tools citan cada `.md` y el módulo cita uno más; explicado, índice regenerado).
 - `caja-deuda.mjs` 55-261 → `caja-deuda-propuestas.mjs` (20 KB: las propuestas de la escalera, precedente, vocabulario, IA y Jev; `caja-deuda.mjs` queda en 59 KB). Medido: idéntico en los cuatro medidores.
+- `caja-deuda.mjs` 253-502 → `caja-deuda-escala.mjs` (el sitio, la escala, las lecturas por IA, la medición y los balances NBB y rusos; 250 líneas). Medido: idéntico (el aviso del índice se va).
 - `patron.mjs`: una mudanza (sin los imports, sin el `export` del principio y sin líneas ya existentes duplicadas, lo agregado es lo quitado) no pide veredicto; `medir pipeline` sigue usando las diferencias exactas, así que una mudanza va por los lotes. `que-pide` juzga el conjunto de tools cambiadas, como el hook.
 
 ## Versión 982 — `fos mover`: mudar un bloque de una tool a un módulo sin cambiarlo [379]
