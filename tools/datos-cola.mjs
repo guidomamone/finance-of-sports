@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/datos-cola.mjs — LOS DATOS QUE VAN EN UNA PREGUNTA DE LA COLA (407, propuesta Admin/propuestas/407-cola-con-datos.md)
+// tools/datos-cola.mjs — LOS DATOS QUE VAN EN UNA PREGUNTA DE LA COLA
 //
 // POR QUÉ. La cola ofrecía «Propuesta del sistema: sí» como respuesta por defecto: invita a aceptar sin mirar, y la sesión cambió la categoría propuesta en 18 % de las
 // preguntas de categoría (medido contra Admin/registros/cola-revision.jsonl). Ahora la pregunta trae lo que la sesión iba a buscar a mano, y no decide por ella:

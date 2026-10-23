@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/changelog.mjs — EL CHANGELOG POR TOOL (408, propuesta Admin/propuestas/408-changelog-por-tool.md)
+// tools/changelog.mjs — EL CHANGELOG POR TOOL
 //
 // POR QUÉ. Si mañana una tool falla, la sesión tiene que saber en una línea qué entradas la tocaron y qué leer, sin abrir un CHANGELOG de 240 KB. El título de cada entrada lleva
 // `[ids · tools · clubes]`; las tools por su nombre de archivo (`cola.mjs`), derivadas de git al cerrar (`fos cerrar`), no de memoria. Una tool nombrada en una entrada vieja solo

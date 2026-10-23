@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/arranque.mjs — `fos arranque <rol>`: LAS SECCIONES DE Admin/ESTADO.md QUE LE TOCAN A UN ROL (410, propuesta Admin/propuestas/410-lectura-en-vano.md)
+// tools/arranque.mjs — `fos arranque <rol>`: LAS SECCIONES DE Admin/ESTADO.md QUE LE TOCAN A UN ROL
 //
 // POR QUÉ. ESTADO.md (17 KB) es el snapshot de todo el proyecto y se leía entero en cada arranque; una tarea de Pipeline usa 2 de sus 11 secciones. Cada sección lleva bajo su título una marca
 // `<!-- roles: pipeline, onboarding -->` (o `*` si es para todos). Sin marca, la sección se imprime siempre (lo seguro). El documento sigue siendo el snapshot completo: esto solo elige.
