@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 998 — Los lotes de prueba incorporan los casos raros (409) y los hallazgos con etiquetas (412) [409 · 412 · lotes-prueba.mjs, hallazgo.mjs, audit.js, cerrar.mjs]
+
+- 409: la rápida suma los casos raros (ajuste manual, freno de un script, respuesta de la cola que no fue «aceptar»), leídos de sus registros: de cada clase el documento más viejo y el más nuevo, hasta 40 (rápida 98 a 126, mediana 488 a 531); más una ranura que rota por semana ISO. `lotes-prueba.mjs --check` exige los casos raros en la mediana.
+- 412: `fos hallazgo` escribe la viñeta `[tema · tools · fecha]`; `audit.js`: `hallazgo-sin-etiquetas`; aviso suave del hook (PostToolUse) la primera vez que una sesión edita una tool con historial.
+- `fos cerrar --cerrar` archiva el CHANGELOG al pasar de 60 entradas (quedan 40).
+- Medición: `audit.js` y `lotes-prueba.mjs` por `fos medir pipeline`; `probar-post-tool` 12 casos ok.
+
 ## Versión 997 — CHANGELOG por tool (408), lectura por rol (410) y fricciones de sesión (411) [408 · 410 · 411 · 412 · audit.js, cerrar.mjs, changelog.mjs, arranque.mjs, existe.mjs, cola-historial.mjs, fuente-documento.mjs]
 
 - 408: `fos changelog` (`historial <tool>`, `archivar`, `migrar`, `check`); el CHANGELOG pasó de 242 KB a 48 KB (284 entradas a `Archive/CHANGELOG-v673-v956.md`), 607 títulos con `~tool`; `fos cerrar` exige que el título nombre las tools tocadas; `audit.js`: `changelog-entrada-larga` y `changelog-grande`.
