@@ -2,9 +2,9 @@
 const paidelinnameeskondEeRevenueLinesByYear = {
   2019: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.065457,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.017318,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.017318,"disclosureLevel":"aggregated"},
     {"rawLabel":"Järvamaa Maavalitsus","normalizedCategory":"other_income","amountNative":0.008107,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Tapa Vallavalitsus","normalizedCategory":"other_income","amountNative":0.005231,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Tapa Vallavalitsus","normalizedCategory":"grants_donations","amountNative":0.005231,"disclosureLevel":"aggregated"},
     {"rawLabel":"Paide Linnavalitsus","normalizedCategory":"other_income","amountNative":0.049544,"disclosureLevel":"aggregated"},
     {"rawLabel":"Türi Spordikluubide Liit MTÜ","normalizedCategory":"other_income","amountNative":0.0035,"disclosureLevel":"aggregated"},
     {"rawLabel":"LHV","normalizedCategory":"other_income","amountNative":0.001023,"disclosureLevel":"aggregated"},
@@ -19,7 +19,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   ],
   2020: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.062457,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.077775,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.077775,"disclosureLevel":"aggregated"},
     {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.005188,"disclosureLevel":"aggregated"},
     {"rawLabel":"Järvamaa Maavalitsus","normalizedCategory":"other_income","amountNative":0.012814,"disclosureLevel":"aggregated"},
     {"rawLabel":"Paide Linnavalitsus","normalizedCategory":"other_income","amountNative":0.05906,"disclosureLevel":"aggregated"},
@@ -36,7 +36,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   ],
   2021: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.060994,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.100822,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.100822,"disclosureLevel":"aggregated"},
     {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.004,"disclosureLevel":"aggregated"},
     {"rawLabel":"Järvamaa Maavalitsus","normalizedCategory":"other_income","amountNative":0.0155,"disclosureLevel":"aggregated"},
     {"rawLabel":"Paide Linnavalitsus","normalizedCategory":"other_income","amountNative":0.07353,"disclosureLevel":"aggregated"},
@@ -54,7 +54,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   ],
   2022: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.094129,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.087326,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.087326,"disclosureLevel":"aggregated"},
     {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.023611,"disclosureLevel":"aggregated"},
     {"rawLabel":"Järvamaa Maavalitsus","normalizedCategory":"other_income","amountNative":0.0155,"disclosureLevel":"aggregated"},
     {"rawLabel":"Paide Linnavalitsus","normalizedCategory":"other_income","amountNative":0.077684,"disclosureLevel":"aggregated"},
@@ -73,7 +73,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   ],
   2023: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.112688,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.015706,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.015706,"disclosureLevel":"aggregated"},
     {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.002829,"disclosureLevel":"aggregated"},
     {"rawLabel":"Järvamaa Maavalitsus","normalizedCategory":"other_income","amountNative":0.013989,"disclosureLevel":"aggregated"},
     {"rawLabel":"Paide Linnavalitsus","normalizedCategory":"other_income","amountNative":0.0917,"disclosureLevel":"aggregated"},
@@ -91,7 +91,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   ],
   2024: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.145653,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.02592,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.02592,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtfinantseerimine põhivarade soetamiseks","normalizedCategory":"other_income","amountNative":0.161489,"disclosureLevel":"aggregated"},
     {"rawLabel":"Türi Spordikluubide Liit MTÜ","normalizedCategory":"other_income","amountNative":0.002,"disclosureLevel":"aggregated"},
     {"rawLabel":"LHV","normalizedCategory":"other_income","amountNative":0.003677,"disclosureLevel":"aggregated"},
@@ -108,7 +108,7 @@ const paidelinnameeskondEeRevenueLinesByYear = {
   ],
   2025: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.153759,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.032842,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.032842,"disclosureLevel":"aggregated"},
     {"rawLabel":"Sihtfinantseerimine põhivarade soetamiseks","normalizedCategory":"other_income","amountNative":0.483102,"disclosureLevel":"aggregated"},
     {"rawLabel":"Türi Spordikluubide Liit MTÜ","normalizedCategory":"other_income","amountNative":0.001,"disclosureLevel":"aggregated"},
     {"rawLabel":"LHV","normalizedCategory":"other_income","amountNative":0.004653,"disclosureLevel":"aggregated"},

@@ -21,7 +21,7 @@ const nommekaljuEeRevenueLinesByYear = {
   ],
   2020: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.229495,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.07101,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.07101,"disclosureLevel":"aggregated"},
     {"rawLabel":"Mittesihtotsatarbelised annetused ja toetused","normalizedCategory":"grants_donations","amountNative":0.07616,"disclosureLevel":"aggregated"},
     {"rawLabel":"Omavalitsuste toetus","normalizedCategory":"grants_donations","amountNative":0.179906,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA solidaarsustoetus","normalizedCategory":"competition_bonus","amountNative":0.350266,"disclosureLevel":"aggregated"},
@@ -110,7 +110,7 @@ const nommekaljuEeRevenueLinesByYear = {
   ],
   2025: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.258836,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.025511,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.025511,"disclosureLevel":"aggregated"},
     {"rawLabel":"Riigi ja omavalitsuste toetus","normalizedCategory":"grants_donations","amountNative":0.22119,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA solidaarsustoetus","normalizedCategory":"competition_bonus","amountNative":1.144759,"disclosureLevel":"aggregated"},
     {"rawLabel":"EJL toetused","normalizedCategory":"other_income","amountNative":0.056625,"disclosureLevel":"aggregated"},

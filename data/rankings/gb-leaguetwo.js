@@ -7,7 +7,7 @@ window.RANKINGS["gb-leaguetwo"] = {
     clubs: [
       { id:"afcwimbledon-gb", revenue:16.288, reportType:"official_balance_sheet",
         sourceId:"afcwimbledon-gb-full-accounts-2024-25-ixbrl",
-        mix:[["Comercial / Sponsors",2.839],["Estadio",8.026],["Venta de Jugadores",1.332],["Otras actividades (educación y otros deportes)",0.748],["Subsidios y donaciones",0.034],["Otros ingresos",3.307]],
+        mix:[["Comercial / Sponsors",2.839],["Estadio",8.026],["Venta de Jugadores",1.332],["Otras actividades (educación y otros deportes)",0.748],["Subsidios y donaciones",0.235],["Otros ingresos",3.107]],
         incluidos:[["Televisión","Estadio",1]] },
       { id:"chesterfield-gb", revenue:10.803, reportType:"official_balance_sheet",
         sourceId:"chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl",
@@ -18,7 +18,7 @@ window.RANKINGS["gb-leaguetwo"] = {
         incluidos:[["Televisión","Estadio",1]] },
       { id:"carlisleunited-gb", revenue:9.727, reportType:"official_balance_sheet",
         sourceId:"carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl",
-        mix:[["Comercial / Sponsors",2.422],["Estadio",2.925],["Televisión",3.213],["Premios por competencias",0.831],["Subsidios y donaciones",0.039],["Otros ingresos",0.297]] },
+        mix:[["Comercial / Sponsors",2.422],["Estadio",2.925],["Televisión",3.213],["Premios por competencias",0.831],["Subsidios y donaciones",0.101],["Otros ingresos",0.235]] },
     ],
   },
 };

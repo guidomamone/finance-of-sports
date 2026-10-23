@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "gremio-br",
@@ -57,7 +57,7 @@
         },
         {"label":"Venda de Atletas","category":"player_transfers","subcategory":"player_sales","amount":105.303,"disclosure":"detailed"},
         {"label":"Mecanismo de Solidariedade","category":"player_transfers","subcategory":"player_sales","amount":1.017,"disclosure":"detailed"},
-        {"label":"Doações","category":"other_revenue","subcategory":"other_income","amount":0.011,"disclosure":"detailed"},
+        {"label":"Doações","category":"grants_donations","subcategory":"grants_donations","amount":0.011,"disclosure":"detailed"},
         {"label":"Recuperação de Despesas","category":"other_revenue","subcategory":"other_income","amount":15.523,"disclosure":"detailed"},
         {
           "label": "Valor justo (cessão de crédito Arena Porto-Alegrense, Nota 6-e)",
@@ -164,9 +164,9 @@
         {"label":"(-) Devoluções de vendas (b)","category":"other_revenue","subcategory":"other_income","amount":-0.809,"disclosure":"aggregated"},
         {"label":"(-) Impostos sobre vendas (b)","category":"other_revenue","subcategory":"other_income","amount":-5.358,"disclosure":"aggregated"},
         {"label":"Outras Receitas do Desporto","category":"other_revenue","subcategory":"other_income","amount":1.942,"disclosure":"aggregated"},
-        {"label":"Doações operação Arena","category":"other_revenue","subcategory":"other_income","amount":135,"disclosure":"aggregated"},
+        {"label":"Doações operação Arena","category":"grants_donations","subcategory":"grants_donations","amount":135,"disclosure":"aggregated"},
         {"label":"Valor justo","category":"other_revenue","subcategory":"other_income","amount":248.161,"disclosure":"aggregated"},
-        {"label":"Doações","category":"other_revenue","subcategory":"other_income","amount":12.507,"disclosure":"aggregated"},
+        {"label":"Doações","category":"grants_donations","subcategory":"grants_donations","amount":12.507,"disclosure":"aggregated"},
         {"label":"Venda de Atletas (b)","category":"player_transfers","subcategory":"player_sales","amount":123.804,"disclosure":"aggregated"},
         {
           "label": "Reversão despesas renegociação comissões e outras",

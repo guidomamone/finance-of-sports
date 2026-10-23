@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "gilvicente-pt",
@@ -671,7 +671,7 @@
         {"label":"Bilheteira","category":"matchday","subcategory":"matchday_competition","amount":0.476997,"disclosure":"aggregated"},
         {"label":"Direitos Televisivos","category":"media_rights","subcategory":"broadcasting","amount":3.6,"disclosure":"aggregated"},
         {"label":"Outras Prestações de serviços","category":"other_revenue","subcategory":"other_income","amount":0.16094,"disclosure":"aggregated"},
-        {"label":"Donativos","category":"other_revenue","subcategory":"other_income","amount":0.097275,"disclosure":"aggregated"},
+        {"label":"Donativos","category":"grants_donations","subcategory":"grants_donations","amount":0.097275,"disclosure":"aggregated"},
         {"label":"Quotas","category":"membership","subcategory":"member_dues","amount":0.212297,"disclosure":"aggregated"},
         {
           "label": "Liga Portuguesa de Futebol profissional",
@@ -683,7 +683,7 @@
         {"label":"Federação Portuguesa de Futebol","category":"other_revenue","subcategory":"other_income","amount":0.009245,"disclosure":"aggregated"},
         {"label":"UEFA","category":"other_revenue","subcategory":"other_income","amount":0.003659,"disclosure":"aggregated"},
         {"label":"IEFP","category":"other_revenue","subcategory":"other_income","amount":0.01154,"disclosure":"aggregated"},
-        {"label":"Município de Barcelos","category":"other_revenue","subcategory":"other_income","amount":0.2067,"disclosure":"aggregated"},
+        {"label":"Município de Barcelos","category":"grants_donations","subcategory":"grants_donations","amount":0.2067,"disclosure":"aggregated"},
         {"label":"Mecanismo de Solidariedade","category":"player_transfers","subcategory":"player_sales","amount":0.02285,"disclosure":"aggregated"},
         {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.326373,"disclosure":"aggregated"},
         {"label":"Outros rendimentos e ganhos","category":"other_revenue","subcategory":"other_income","amount":0.346323,"disclosure":"aggregated"}

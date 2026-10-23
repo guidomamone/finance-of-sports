@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "narvatrans-ee",
@@ -142,7 +142,13 @@
       "management_id": null,
       "fx": {"ref":"EUR@2020-12-31"},
       "revenue": [
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.102663,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.102663,
+          "disclosure": "aggregated"
+        },
         {"label":"Omavalitsuse toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.09598,"disclosure":"aggregated"},
         {"label":"EJLiidu toetused","category":"other_revenue","subcategory":"other_income","amount":0.036947,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":0.033357,"disclosure":"aggregated"},
@@ -258,7 +264,13 @@
       "revenue": [
         {"label":"Liikmemaksud","category":"membership","subcategory":"member_dues","amount":0.016,"disclosure":"aggregated"},
         {"label":"Treeningtasu","category":"membership","subcategory":"member_dues","amount":0.070651,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.02122,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.02122,
+          "disclosure": "aggregated"
+        },
         {"label":"Riigi ja KOV toetused","category":"grants_donations","subcategory":"grants_donations","amount":0.104429,"disclosure":"aggregated"},
         {"label":"EJLiidu toetused","category":"other_revenue","subcategory":"other_income","amount":0.16692,"disclosure":"aggregated"},
         {
@@ -409,11 +421,11 @@
       "fx": {"ref":"EUR@2023-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.08444,"disclosure":"aggregated"},
-        {"label":"sh eraldis riigieelarvest","category":"other_revenue","subcategory":"other_income","amount":0.039461,"disclosure":"aggregated"},
+        {"label":"sh eraldis riigieelarvest","category":"grants_donations","subcategory":"grants_donations","amount":0.039461,"disclosure":"aggregated"},
         {
           "label": "sh eraldis kohaliku omavalitsuse eelarvest",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.115149,
           "disclosure": "aggregated"
         },
@@ -592,11 +604,11 @@
       "fx": {"ref":"EUR@2024-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.081781,"disclosure":"aggregated"},
-        {"label":"sh eraldis riigieelarvest","category":"other_revenue","subcategory":"other_income","amount":0.047824,"disclosure":"aggregated"},
+        {"label":"sh eraldis riigieelarvest","category":"grants_donations","subcategory":"grants_donations","amount":0.047824,"disclosure":"aggregated"},
         {
           "label": "sh eraldis kohaliku omavalitsuse eelarvest",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.100581,
           "disclosure": "aggregated"
         },
@@ -744,11 +756,11 @@
       "fx": {"ref":"EUR@2025-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.100436,"disclosure":"aggregated"},
-        {"label":"sh eraldis riigieelarvest","category":"other_revenue","subcategory":"other_income","amount":0.042848,"disclosure":"aggregated"},
+        {"label":"sh eraldis riigieelarvest","category":"grants_donations","subcategory":"grants_donations","amount":0.042848,"disclosure":"aggregated"},
         {
           "label": "sh eraldis kohaliku omavalitsuse eelarvest",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
           "amount": 0.109938,
           "disclosure": "aggregated"
         },

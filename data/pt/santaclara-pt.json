@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "santaclara-pt",
@@ -86,7 +86,7 @@
         {"label":"Diversos","category":"other_revenue","subcategory":"other_income","amount":0.004892,"disclosure":"aggregated"},
         {"label":"Direção Regional do Turismo","category":"other_revenue","subcategory":"other_income","amount":1,"disclosure":"aggregated"},
         {"label":"Inst. Seg Social Layoff","category":"other_revenue","subcategory":"other_income","amount":0.023629,"disclosure":"aggregated"},
-        {"label":"RAA - Fundo Regional Emprego","category":"other_revenue","subcategory":"other_income","amount":0.018144,"disclosure":"aggregated"},
+        {"label":"RAA - Fundo Regional Emprego","category":"grants_donations","subcategory":"grants_donations","amount":0.018144,"disclosure":"aggregated"},
         {"label":"Vice Presidencia Deslocações","category":"other_revenue","subcategory":"other_income","amount":0.051593,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"other_revenue","subcategory":"other_income","amount":2.517276,"disclosure":"aggregated"}
       ],
@@ -215,9 +215,9 @@
         {"label":"Diversos","category":"other_revenue","subcategory":"other_income","amount":0.002234,"disclosure":"aggregated"},
         {"label":"Direção Regional do Turismo","category":"other_revenue","subcategory":"other_income","amount":1,"disclosure":"aggregated"},
         {"label":"Inst.Seg Social Layoff","category":"other_revenue","subcategory":"other_income","amount":0.011814,"disclosure":"aggregated"},
-        {"label":"RAA - Fundo Regional Emprego","category":"other_revenue","subcategory":"other_income","amount":0.000168,"disclosure":"aggregated"},
+        {"label":"RAA - Fundo Regional Emprego","category":"grants_donations","subcategory":"grants_donations","amount":0.000168,"disclosure":"aggregated"},
         {"label":"Vice-Presidência Deslocações","category":"other_revenue","subcategory":"other_income","amount":0.05158,"disclosure":"aggregated"},
-        {"label":"Donativos","category":"other_revenue","subcategory":"other_income","amount":0.016068,"disclosure":"aggregated"},
+        {"label":"Donativos","category":"grants_donations","subcategory":"grants_donations","amount":0.016068,"disclosure":"aggregated"},
         {"label":"Cedência de direitos desportivos","category":"player_transfers","subcategory":"player_sales","amount":6.495,"disclosure":"aggregated"},
         {"label":"Outros rendimentos","category":"other_revenue","subcategory":"other_income","amount":0.000797,"disclosure":"aggregated"}
       ],

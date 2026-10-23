@@ -19,7 +19,7 @@ const ferrocarriloesteArRevenueLinesByYear = {
     {"rawLabel":"Ingresos por Buffet","normalizedCategory":"other_income","amountNative":2.995336,"disclosureLevel":"detailed"},
     {"rawLabel":"Otros Ingresos","normalizedCategory":"other_income","amountNative":4.013933,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos de Formación y afines","normalizedCategory":"youth_football","amountNative":12.13965,"disclosureLevel":"detailed"},
-    {"rawLabel":"Programa de Asistencia de Emergencia al Trabajo y la Producción (ATP)","normalizedCategory":"other_income","amountNative":58.388019,"disclosureLevel":"detailed"},
+    {"rawLabel":"Programa de Asistencia de Emergencia al Trabajo y la Producción (ATP)","normalizedCategory":"grants_donations","amountNative":58.388019,"disclosureLevel":"detailed"},
     {"rawLabel":"Otros ingresos Fútbol Profesional","normalizedCategory":"other_income","amountNative":0.84638,"disclosureLevel":"detailed"},
     {"rawLabel":"Recupero Decreto 1212/03 (ver nota de cabecera — duda genuina)","normalizedCategory":"other_income","amountNative":82.579039,"disclosureLevel":"detailed"},
   ],

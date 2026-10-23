@@ -11,7 +11,7 @@ const narvatransEeRevenueLinesByYear = {
     {"rawLabel":"Kaubandustegevus","normalizedCategory":"sponsorship_commercial","amountNative":0.008503,"disclosureLevel":"aggregated"},
   ],
   2020: [
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.102663,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.102663,"disclosureLevel":"aggregated"},
     {"rawLabel":"Omavalitsuse toetus","normalizedCategory":"grants_donations","amountNative":0.09598,"disclosureLevel":"aggregated"},
     {"rawLabel":"EJLiidu toetused","normalizedCategory":"other_income","amountNative":0.036947,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA solidaarsustoetus","normalizedCategory":"competition_bonus","amountNative":0.033357,"disclosureLevel":"aggregated"},
@@ -33,7 +33,7 @@ const narvatransEeRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Liikmemaksud","normalizedCategory":"member_dues","amountNative":0.016,"disclosureLevel":"aggregated"},
     {"rawLabel":"Treeningtasu","normalizedCategory":"member_dues","amountNative":0.070651,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"other_income","amountNative":0.02122,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sihtfinantseerimine tegevuskuludeks","normalizedCategory":"grants_donations","amountNative":0.02122,"disclosureLevel":"aggregated"},
     {"rawLabel":"Riigi ja KOV toetused","normalizedCategory":"grants_donations","amountNative":0.104429,"disclosureLevel":"aggregated"},
     {"rawLabel":"EJLiidu toetused","normalizedCategory":"other_income","amountNative":0.16692,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA solidaarsustoetus noorte- ja kogukonnatööle","normalizedCategory":"youth_football","amountNative":0.05119,"disclosureLevel":"aggregated"},
@@ -46,8 +46,8 @@ const narvatransEeRevenueLinesByYear = {
   ],
   2023: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.08444,"disclosureLevel":"aggregated"},
-    {"rawLabel":"sh eraldis riigieelarvest","normalizedCategory":"other_income","amountNative":0.039461,"disclosureLevel":"aggregated"},
-    {"rawLabel":"sh eraldis kohaliku omavalitsuse eelarvest","normalizedCategory":"other_income","amountNative":0.115149,"disclosureLevel":"aggregated"},
+    {"rawLabel":"sh eraldis riigieelarvest","normalizedCategory":"grants_donations","amountNative":0.039461,"disclosureLevel":"aggregated"},
+    {"rawLabel":"sh eraldis kohaliku omavalitsuse eelarvest","normalizedCategory":"grants_donations","amountNative":0.115149,"disclosureLevel":"aggregated"},
     {"rawLabel":"EJLiidu toetused","normalizedCategory":"other_income","amountNative":0.077303,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA solidaarsustoetus noorte- ja kogukonnatööle","normalizedCategory":"youth_football","amountNative":0.304098,"disclosureLevel":"aggregated"},
     {"rawLabel":"Mitteseotud osapoolte toetused/annetused","normalizedCategory":"grants_donations","amountNative":0.00008,"disclosureLevel":"aggregated"},
@@ -64,8 +64,8 @@ const narvatransEeRevenueLinesByYear = {
   ],
   2024: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.081781,"disclosureLevel":"aggregated"},
-    {"rawLabel":"sh eraldis riigieelarvest","normalizedCategory":"other_income","amountNative":0.047824,"disclosureLevel":"aggregated"},
-    {"rawLabel":"sh eraldis kohaliku omavalitsuse eelarvest","normalizedCategory":"other_income","amountNative":0.100581,"disclosureLevel":"aggregated"},
+    {"rawLabel":"sh eraldis riigieelarvest","normalizedCategory":"grants_donations","amountNative":0.047824,"disclosureLevel":"aggregated"},
+    {"rawLabel":"sh eraldis kohaliku omavalitsuse eelarvest","normalizedCategory":"grants_donations","amountNative":0.100581,"disclosureLevel":"aggregated"},
     {"rawLabel":"EJLiidu toetused","normalizedCategory":"other_income","amountNative":0.169574,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA solidaarsustoetus noorte- ja kogukonnatööle","normalizedCategory":"youth_football","amountNative":0.053783,"disclosureLevel":"aggregated"},
     {"rawLabel":"Mitteseotud osapoolte toetused/annetused","normalizedCategory":"grants_donations","amountNative":0.003193,"disclosureLevel":"aggregated"},
@@ -79,8 +79,8 @@ const narvatransEeRevenueLinesByYear = {
   ],
   2025: [
     {"rawLabel":"Liikmetelt saadud tasud","normalizedCategory":"member_dues","amountNative":0.100436,"disclosureLevel":"aggregated"},
-    {"rawLabel":"sh eraldis riigieelarvest","normalizedCategory":"other_income","amountNative":0.042848,"disclosureLevel":"aggregated"},
-    {"rawLabel":"sh eraldis kohaliku omavalitsuse eelarvest","normalizedCategory":"other_income","amountNative":0.109938,"disclosureLevel":"aggregated"},
+    {"rawLabel":"sh eraldis riigieelarvest","normalizedCategory":"grants_donations","amountNative":0.042848,"disclosureLevel":"aggregated"},
+    {"rawLabel":"sh eraldis kohaliku omavalitsuse eelarvest","normalizedCategory":"grants_donations","amountNative":0.109938,"disclosureLevel":"aggregated"},
     {"rawLabel":"EJLiidu toetused","normalizedCategory":"other_income","amountNative":0.14693,"disclosureLevel":"aggregated"},
     {"rawLabel":"UEFA solidaarsustoetus noorte- ja kogukonnatööle","normalizedCategory":"youth_football","amountNative":0.2601,"disclosureLevel":"aggregated"},
     {"rawLabel":"Mitteseotud osapoolte toetused/annetused","normalizedCategory":"grants_donations","amountNative":0.014319,"disclosureLevel":"aggregated"},

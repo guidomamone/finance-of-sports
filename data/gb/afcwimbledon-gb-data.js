@@ -10,7 +10,7 @@ const afcwimbledonGbRevenueLinesByYear = {
     {"rawLabel":"Gain on disposal of players' registrations","normalizedCategory":"player_sales","amountNative":0.972266,"disclosureLevel":"aggregated"},
     {"rawLabel":"Grants receivable","normalizedCategory":"grants_donations","amountNative":0.025,"disclosureLevel":"aggregated"},
     {"rawLabel":"Insurance claim","normalizedCategory":"other_income","amountNative":0.960556,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Flood Donations","normalizedCategory":"other_income","amountNative":0.146424,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Flood Donations","normalizedCategory":"grants_donations","amountNative":0.146424,"disclosureLevel":"aggregated"},
   ],
 };
 

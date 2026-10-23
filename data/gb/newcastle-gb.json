@@ -100,14 +100,15 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.674,"tax":-6.476,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.674,"tax":-6.476,"gross_debt":null,"cash":null,"staff_cost":96.798},
       "official_totals": {"revenue":201.031,"expenses":161.555,"net_result":34.674},
       "adjustments": {
         "extra_rows": [
           {"label":"Interest receivable and similar income","amount":2.179},
           {"label":"Interest payable and expenses","amount":-0.505},
           {"label":"Tax on profit","amount":-6.476}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {

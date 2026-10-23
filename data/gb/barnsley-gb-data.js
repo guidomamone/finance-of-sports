@@ -8,7 +8,7 @@ const barnsleyGbRevenueLinesByYear = {
     {"rawLabel":"Sponsorship & advertising","normalizedCategory":"sponsorship_commercial","amountNative":1.039282,"disclosureLevel":"aggregated"},
     {"rawLabel":"Catering","normalizedCategory":"other_income","amountNative":0.818572,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other receipts","normalizedCategory":"other_income","amountNative":1.00783,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Donation income","normalizedCategory":"other_income","amountNative":0.036136,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Donation income","normalizedCategory":"grants_donations","amountNative":0.036136,"disclosureLevel":"aggregated"},
     {"rawLabel":"Profit on player sales and compensation","normalizedCategory":"player_sales","amountNative":0.910655,"disclosureLevel":"aggregated"},
   ],
 };

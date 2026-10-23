@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "paidelinnameeskond-ee",
@@ -75,9 +75,15 @@
       "fx": {"ref":"EUR@2019-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.065457,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.017318,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.017318,
+          "disclosure": "aggregated"
+        },
         {"label":"Järvamaa Maavalitsus","category":"other_revenue","subcategory":"other_income","amount":0.008107,"disclosure":"aggregated"},
-        {"label":"Tapa Vallavalitsus","category":"other_revenue","subcategory":"other_income","amount":0.005231,"disclosure":"aggregated"},
+        {"label":"Tapa Vallavalitsus","category":"grants_donations","subcategory":"grants_donations","amount":0.005231,"disclosure":"aggregated"},
         {"label":"Paide Linnavalitsus","category":"other_revenue","subcategory":"other_income","amount":0.049544,"disclosure":"aggregated"},
         {"label":"Türi Spordikluubide Liit MTÜ","category":"other_revenue","subcategory":"other_income","amount":0.0035,"disclosure":"aggregated"},
         {"label":"LHV","category":"other_revenue","subcategory":"other_income","amount":0.001023,"disclosure":"aggregated"},
@@ -160,7 +166,13 @@
       "fx": {"ref":"EUR@2020-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.062457,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.077775,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.077775,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -245,7 +257,13 @@
       "fx": {"ref":"EUR@2021-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.060994,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.100822,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.100822,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -333,7 +351,13 @@
       "fx": {"ref":"EUR@2022-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.094129,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.087326,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.087326,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -430,7 +454,13 @@
       "fx": {"ref":"EUR@2023-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.112688,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.015706,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.015706,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -520,7 +550,13 @@
       "fx": {"ref":"EUR@2024-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.145653,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.02592,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.02592,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Sihtfinantseerimine põhivarade soetamiseks",
           "category": "other_revenue",
@@ -635,7 +671,13 @@
       "fx": {"ref":"EUR@2025-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.153759,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.032842,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.032842,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Sihtfinantseerimine põhivarade soetamiseks",
           "category": "other_revenue",

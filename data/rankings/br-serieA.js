@@ -25,7 +25,7 @@ window.RANKINGS["br-serieA"] = {
         mix:[["Cuotas Sociales",16.707],["Comercial / Sponsors",50.47],["Estadio",21.554],["Televisión",42.501],["Premios por competencias",23.413],["Venta de Jugadores",19.52],["Otros ingresos",-6.405]] },
       { id:"gremio-br", revenue:164.209, reportType:"official_balance_sheet",
         sourceId:"gremio-br-wf-2024-2025-1774995c",
-        mix:[["Cuotas Sociales",12.692],["Comercial / Sponsors",25.336],["Estadio",0.711],["Televisión",28.269],["Premios por competencias",0.006],["Venta de Jugadores",23.1],["Otros ingresos",74.096]] },
+        mix:[["Cuotas Sociales",12.692],["Comercial / Sponsors",25.336],["Estadio",0.711],["Televisión",28.269],["Premios por competencias",0.006],["Venta de Jugadores",23.1],["Subsidios y donaciones",26.808],["Otros ingresos",47.288]] },
       { id:"atleticomineiro-br", revenue:120.813, reportType:"official_balance_sheet",
         sourceId:"atleticomineiro-br-relatorio-integrado-2025",
         mix:[["Cuotas Sociales",6.64],["Comercial / Sponsors",10.579],["Estadio",9.245],["Televisión",33.353],["Venta de Jugadores",36.887],["Otros ingresos",24.109]] },
@@ -47,7 +47,7 @@ window.RANKINGS["br-serieA"] = {
         mix:[["Comercial / Sponsors",72.254],["Estadio",0.711],["Premios por competencias",24.475],["Venta de Jugadores",2.038],["Otros ingresos",-3.648]] },
       { id:"fortaleza-br", revenue:72.811, reportType:"official_balance_sheet",
         sourceId:"fortaleza-br-demonstracoes-saf-2025",
-        mix:[["Cuotas Sociales",7.815],["Comercial / Sponsors",8.759],["Estadio",4.299],["Televisión",28.18],["Premios por competencias",5.397],["Venta de Jugadores",17.769],["Otras actividades (educación y otros deportes)",0.029],["Otros ingresos",0.563]] },
+        mix:[["Cuotas Sociales",7.815],["Comercial / Sponsors",8.759],["Estadio",4.299],["Televisión",28.18],["Premios por competencias",5.397],["Venta de Jugadores",17.769],["Otras actividades (educación y otros deportes)",0.029],["Subsidios y donaciones",0.192],["Otros ingresos",0.37]] },
       { id:"vitoria-br", revenue:43.002, reportType:"official_balance_sheet",
         sourceId:"vitoria-br-demonstracoes-2025",
         mix:[["Comercial / Sponsors",6.93],["Estadio",1.65],["Televisión",20.819],["Premios por competencias",5.889],["Venta de Jugadores",9.629],["Otros ingresos",-1.914]],
@@ -84,7 +84,7 @@ window.RANKINGS["br-serieA"] = {
         mix:[["Cuotas Sociales",7.852],["Comercial / Sponsors",20.262],["Estadio",7.033],["Televisión",16.308],["Premios por competencias",41.585],["Venta de Jugadores",16.265],["Otros ingresos",-1.963]] },
       { id:"gremio-br", revenue:99.32, reportType:"official_balance_sheet",
         sourceId:"gremio-br-demonstracoes-2023-2024",
-        mix:[["Cuotas Sociales",15.995],["Comercial / Sponsors",13.556],["Estadio",1.937],["Televisión",28.845],["Venta de Jugadores",17.17],["Otros ingresos",21.818]] },
+        mix:[["Cuotas Sociales",15.995],["Comercial / Sponsors",13.556],["Estadio",1.937],["Televisión",28.845],["Venta de Jugadores",17.17],["Subsidios y donaciones",0.002],["Otros ingresos",21.816]] },
       { id:"atleticomineiro-br", revenue:93.686, reportType:"official_balance_sheet",
         sourceId:"atleticomineiro-br-demonstracoes-2024",
         mix:[["Cuotas Sociales",5.199],["Comercial / Sponsors",9.603],["Estadio",13.03],["Televisión",40.008],["Venta de Jugadores",29.527],["Otros ingresos",-3.681]] },
@@ -171,7 +171,7 @@ window.RANKINGS["br-serieA"] = {
         mix:[["Comercial / Sponsors",0.925],["Estadio",0.082],["Televisión",9.992],["Venta de Jugadores",0.513],["Otros ingresos",0.72]] },
       { id:"chapecoense-br", revenue:10.948, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-2020-2021",
-        mix:[["Cuotas Sociales",0.767],["Comercial / Sponsors",0.91],["Estadio",0.07],["Televisión",7.453],["Premios por competencias",0.345],["Venta de Jugadores",0.776],["Otros ingresos",0.627]] },
+        mix:[["Cuotas Sociales",0.767],["Comercial / Sponsors",0.91],["Estadio",0.07],["Televisión",7.453],["Premios por competencias",0.345],["Venta de Jugadores",0.776],["Subsidios y donaciones",0.024],["Otros ingresos",0.603]] },
     ],
   },
   2020: {
@@ -193,7 +193,7 @@ window.RANKINGS["br-serieA"] = {
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"chapecoense-br", revenue:18.668, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-financeiras-2019",
-        mix:[["Cuotas Sociales",2.101],["Comercial / Sponsors",3.672],["Estadio",0.848],["Televisión",9.765],["Premios por competencias",1.86],["Venta de Jugadores",1.378],["Otros ingresos",-0.956]] },
+        mix:[["Cuotas Sociales",2.101],["Comercial / Sponsors",3.672],["Estadio",0.848],["Televisión",9.765],["Premios por competencias",1.86],["Venta de Jugadores",1.378],["Subsidios y donaciones",0],["Otros ingresos",-0.956]] },
     ],
   },
   2017: {
@@ -202,7 +202,7 @@ window.RANKINGS["br-serieA"] = {
     clubs: [
       { id:"chapecoense-br", revenue:29.581, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-2017",
-        mix:[["Cuotas Sociales",4.192],["Comercial / Sponsors",3.253],["Estadio",1.246],["Televisión",11.445],["Premios por competencias",3.09],["Venta de Jugadores",3.415],["Otros ingresos",2.94]] },
+        mix:[["Cuotas Sociales",4.192],["Comercial / Sponsors",3.253],["Estadio",1.246],["Televisión",11.445],["Premios por competencias",3.09],["Venta de Jugadores",3.415],["Subsidios y donaciones",3.061],["Otros ingresos",-0.121]] },
     ],
   },
   2015: {

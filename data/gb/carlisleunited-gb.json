@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "carlisleunited-gb",
@@ -40,7 +40,7 @@
         {"label":"Football fortune","category":"prize_money","subcategory":"competition_bonus","amount":0.606311,"disclosure":"aggregated"},
         {"label":"Football league","category":"media_rights","subcategory":"broadcasting","amount":2.24186,"disclosure":"aggregated"},
         {"label":"Website and streaming income","category":"media_rights","subcategory":"broadcasting","amount":0.103397,"disclosure":"aggregated"},
-        {"label":"Donations","category":"other_revenue","subcategory":"other_income","amount":0.045671,"disclosure":"aggregated"},
+        {"label":"Donations","category":"grants_donations","subcategory":"grants_donations","amount":0.045671,"disclosure":"aggregated"},
         {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0.13157,"disclosure":"aggregated"},
         {"label":"Net rents receivable","category":"other_revenue","subcategory":"other_income","amount":0.029103,"disclosure":"aggregated"},
         {"label":"Government grants receivable","category":"grants_donations","subcategory":"grants_donations","amount":0.028378,"disclosure":"aggregated"},

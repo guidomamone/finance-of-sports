@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "novorizontino-br",
@@ -162,7 +162,7 @@
       "management_id": null,
       "fx": {"ref":"BRL@2012-12-31"},
       "revenue": [
-        {"label":"DOACOES RECEBIDAS","category":"other_revenue","subcategory":"other_income","amount":0.023534,"disclosure":"aggregated"},
+        {"label":"DOACOES RECEBIDAS","category":"grants_donations","subcategory":"grants_donations","amount":0.023534,"disclosure":"aggregated"},
         {
           "label": "SUBVENCÕES E CONVÊNIOS MUNICIPAL",
           "category": "grants_donations",
@@ -185,7 +185,7 @@
           "disclosure": "aggregated"
         },
         {"label":"VENDAS DE INGRESSOS","category":"matchday","subcategory":"matchday_competition","amount":0.387359,"disclosure":"aggregated"},
-        {"label":"CONVENIO PREF. MUN. CMDCA","category":"other_revenue","subcategory":"other_income","amount":0.012,"disclosure":"aggregated"},
+        {"label":"CONVENIO PREF. MUN. CMDCA","category":"grants_donations","subcategory":"grants_donations","amount":0.012,"disclosure":"aggregated"},
         {"label":"DIREITOS FEDERATIVOS DE ATLETAS","category":"player_transfers","subcategory":"player_sales","amount":0.00424,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -279,7 +279,13 @@
           "amount": 0.032154,
           "disclosure": "aggregated"
         },
-        {"label":"117 3.1.01.01.0009 - DOAÇOES RECEBIDAS","category":"other_revenue","subcategory":"other_income","amount":0.004419,"disclosure":"aggregated"},
+        {
+          "label": "117 3.1.01.01.0009 - DOAÇOES RECEBIDAS",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.004419,
+          "disclosure": "aggregated"
+        },
         {
           "label": "119 3.1.01.02.0002 - CONV.PROJETO NOVOS HORIZONTES",
           "category": "other_revenue",
@@ -702,7 +708,13 @@
           "amount": 0.04,
           "disclosure": "aggregated"
         },
-        {"label":"117 3.1.01.01.0009 - DOAÇÕES RECEBIDAS","category":"other_revenue","subcategory":"other_income","amount":0.00242,"disclosure":"aggregated"},
+        {
+          "label": "117 3.1.01.01.0009 - DOAÇÕES RECEBIDAS",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.00242,
+          "disclosure": "aggregated"
+        },
         {
           "label": "35 3.1.01.01.0004 - LOCAÇÃO DE CADEIRA S/ASSENTOS",
           "category": "season_tickets",
@@ -1158,7 +1170,13 @@
       "management_id": null,
       "fx": {"ref":"BRL@2015-12-31"},
       "revenue": [
-        {"label":"117 3.1.01.01.0009 - DOAÇOES RECEBIDAS","category":"other_revenue","subcategory":"other_income","amount":0.003576,"disclosure":"aggregated"},
+        {
+          "label": "117 3.1.01.01.0009 - DOAÇOES RECEBIDAS",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.003576,
+          "disclosure": "aggregated"
+        },
         {
           "label": "35 3.1.01.01.0004 - LOCAÇÃO DE CADEIRA S/ASSENTOS",
           "category": "season_tickets",

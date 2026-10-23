@@ -7,7 +7,7 @@ window.RANKINGS["br-paulistaA3"] = {
     clubs: [
       { id:"novorizontino-br", revenue:0.399, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-balanco-2014-b",
-        mix:[["Comercial / Sponsors",0.085],["Estadio",0.114],["Venta de Jugadores",0.205],["Otros ingresos",-0.005]] },
+        mix:[["Comercial / Sponsors",0.085],["Estadio",0.114],["Venta de Jugadores",0.205],["Subsidios y donaciones",0.001],["Otros ingresos",-0.006]] },
     ],
   },
   2013: {
@@ -16,7 +16,7 @@ window.RANKINGS["br-paulistaA3"] = {
     clubs: [
       { id:"novorizontino-br", revenue:0.731, reportType:"official_balance_sheet",
         sourceId:"novorizontino-br-balanco-2013",
-        mix:[["Comercial / Sponsors",0.544],["Estadio",0.079],["Televisión",0.014],["Venta de Jugadores",0.028],["Otros ingresos",0.066]] },
+        mix:[["Comercial / Sponsors",0.544],["Estadio",0.079],["Televisión",0.014],["Venta de Jugadores",0.028],["Subsidios y donaciones",0.002],["Otros ingresos",0.065]] },
     ],
   },
   2010: {

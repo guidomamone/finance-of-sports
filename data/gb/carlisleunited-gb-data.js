@@ -7,7 +7,7 @@ const carlisleunitedGbRevenueLinesByYear = {
     {"rawLabel":"Football fortune","normalizedCategory":"competition_bonus","amountNative":0.606311,"disclosureLevel":"aggregated"},
     {"rawLabel":"Football league","normalizedCategory":"broadcasting","amountNative":2.24186,"disclosureLevel":"aggregated"},
     {"rawLabel":"Website and streaming income","normalizedCategory":"broadcasting","amountNative":0.103397,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Donations","normalizedCategory":"other_income","amountNative":0.045671,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Donations","normalizedCategory":"grants_donations","amountNative":0.045671,"disclosureLevel":"aggregated"},
     {"rawLabel":"Other operating income","normalizedCategory":"other_income","amountNative":0.13157,"disclosureLevel":"aggregated"},
     {"rawLabel":"Net rents receivable","normalizedCategory":"other_income","amountNative":0.029103,"disclosureLevel":"aggregated"},
     {"rawLabel":"Government grants receivable","normalizedCategory":"grants_donations","amountNative":0.028378,"disclosureLevel":"aggregated"},

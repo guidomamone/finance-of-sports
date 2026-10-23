@@ -24,7 +24,7 @@ const avsPtRevenueLinesByYear = {
     {"rawLabel":"Competições da UEFA e nacionais","normalizedCategory":"competition_bonus","amountNative":0.122228,"disclosureLevel":"aggregated"},
     {"rawLabel":"Subsídios e donativos de Associações/Federações/Liga","normalizedCategory":"other_income","amountNative":0.227073,"disclosureLevel":"aggregated"},
     {"rawLabel":"Subsídios do Estado e outros entes públicos","normalizedCategory":"grants_donations","amountNative":0.021038,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Donativos de partes não relacionadas","normalizedCategory":"other_income","amountNative":0.003773,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Donativos de partes não relacionadas","normalizedCategory":"grants_donations","amountNative":0.003773,"disclosureLevel":"aggregated"},
     {"rawLabel":"Contribuições/Donativos de partes relacionadas","normalizedCategory":"grants_donations","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Rendimentos de operações extra-futebol não relacionadas com clube (l)","normalizedCategory":"other_income","amountNative":0.033751,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros ganhos extraordinários","normalizedCategory":"other_income","amountNative":0.351414,"disclosureLevel":"aggregated"},

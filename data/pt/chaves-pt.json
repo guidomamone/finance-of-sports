@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "chaves-pt",
@@ -45,7 +45,7 @@
         {"label":"Cessao direitos televisivos","category":"media_rights","subcategory":"broadcasting","amount":0.6,"disclosure":"aggregated"},
         {"label":"Gold Pass/Cativos/Camarotes","category":"venue","subcategory":"stadium_other","amount":0.050374,"disclosure":"aggregated"},
         {"label":"UEFA","category":"other_revenue","subcategory":"other_income","amount":0.16283,"disclosure":"aggregated"},
-        {"label":"Inst. Apoio às PMI","category":"other_revenue","subcategory":"other_income","amount":0.000898,"disclosure":"aggregated"},
+        {"label":"Inst. Apoio às PMI","category":"grants_donations","subcategory":"grants_donations","amount":0.000898,"disclosure":"aggregated"},
         {"label":"Jogos Placard","category":"other_revenue","subcategory":"other_income","amount":0.023626,"disclosure":"aggregated"},
         {
           "label": "Distribuição de lucros dos jogos e apostas on-line",
@@ -168,7 +168,7 @@
         {"label":"Cessao direitos televisivos","category":"media_rights","subcategory":"broadcasting","amount":3.6,"disclosure":"aggregated"},
         {"label":"Gold Pass/Cativos/Camarotes","category":"venue","subcategory":"stadium_other","amount":0.232416,"disclosure":"aggregated"},
         {"label":"UEFA","category":"other_revenue","subcategory":"other_income","amount":0.2074,"disclosure":"aggregated"},
-        {"label":"Inst. Apoio às PME","category":"other_revenue","subcategory":"other_income","amount":0.004692,"disclosure":"aggregated"},
+        {"label":"Inst. Apoio às PME","category":"grants_donations","subcategory":"grants_donations","amount":0.004692,"disclosure":"aggregated"},
         {"label":"Jogos Placard","category":"other_revenue","subcategory":"other_income","amount":0.071968,"disclosure":"aggregated"},
         {
           "label": "Distribuição de lucros dos jogos e apostas on-line",

@@ -73,7 +73,7 @@ window.RANKINGS["dk-superliga"] = {
     clubs: [
       { id:"brondby-dk", revenue:54.874, reportType:"official_balance_sheet",
         sourceId:"brondby-dk-aarsrapport-2021-12-31",
-        mix:[["Comercial / Sponsors",17.564],["Estadio",3.54],["Televisión",22.484],["Venta de Jugadores",7.653],["Otros ingresos",3.632]] },
+        mix:[["Comercial / Sponsors",17.564],["Estadio",3.54],["Televisión",22.484],["Venta de Jugadores",7.653],["Subsidios y donaciones",3.02],["Otros ingresos",0.612]] },
       { id:"agf-dk", revenue:30.096, reportType:"official_balance_sheet",
         sourceId:"agf-aarsrapport-2020-21",
         mix:[["Comercial / Sponsors",12.213],["Estadio",3.061],["Televisión",5.541],["Venta de Jugadores",4.577],["Subsidios y donaciones",2.543],["Otros ingresos",2.161]] },

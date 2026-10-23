@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "nommekalju-ee",
@@ -197,7 +197,13 @@
       "fx": {"ref":"EUR@2020-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.229495,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.07101,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.07101,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -846,7 +852,13 @@
       "fx": {"ref":"EUR@2025-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.258836,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.025511,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.025511,
+          "disclosure": "aggregated"
+        },
         {"label":"Riigi ja omavalitsuste toetus","category":"grants_donations","subcategory":"grants_donations","amount":0.22119,"disclosure":"aggregated"},
         {"label":"UEFA solidaarsustoetus","category":"prize_money","subcategory":"competition_bonus","amount":1.144759,"disclosure":"aggregated"},
         {"label":"EJL toetused","category":"other_revenue","subcategory":"other_income","amount":0.056625,"disclosure":"aggregated"},

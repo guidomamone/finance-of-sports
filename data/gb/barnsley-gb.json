@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "barnsley-gb",
@@ -40,7 +40,7 @@
         {"label":"Sponsorship & advertising","category":"commercial","subcategory":"sponsorship_commercial","amount":1.039282,"disclosure":"aggregated"},
         {"label":"Catering","category":"other_revenue","subcategory":"other_income","amount":0.818572,"disclosure":"aggregated"},
         {"label":"Other receipts","category":"other_revenue","subcategory":"other_income","amount":1.00783,"disclosure":"aggregated"},
-        {"label":"Donation income","category":"other_revenue","subcategory":"other_income","amount":0.036136,"disclosure":"aggregated"},
+        {"label":"Donation income","category":"grants_donations","subcategory":"grants_donations","amount":0.036136,"disclosure":"aggregated"},
         {
           "label": "Profit on player sales and compensation",
           "category": "player_transfers",

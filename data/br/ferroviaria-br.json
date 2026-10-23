@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "ferroviaria-br",
@@ -188,12 +188,12 @@
         {"label":"Renda de jogos","category":"matchday","subcategory":"matchday_competition","amount":0.528637,"disclosure":"aggregated"},
         {"label":"Venda de atletas","category":"player_transfers","subcategory":"player_sales","amount":0.217007,"disclosure":"aggregated"},
         {"label":"Cotas de TV Campeonato Paulista Série A-2","category":"media_rights","subcategory":"broadcasting","amount":0.106,"disclosure":"aggregated"},
-        {"label":"Doação de Materiais esportivos","category":"other_revenue","subcategory":"other_income","amount":0.067626,"disclosure":"aggregated"},
+        {"label":"Doação de Materiais esportivos","category":"grants_donations","subcategory":"grants_donations","amount":0.067626,"disclosure":"aggregated"},
         {"label":"Vendas líquidas de produtos","category":"commercial","subcategory":"sponsorship_commercial","amount":0.050868,"disclosure":"aggregated"},
         {"label":"Patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":1.061,"disclosure":"aggregated"},
         {"label":"Recuperação de despesas","category":"other_revenue","subcategory":"other_income","amount":0.229608,"disclosure":"aggregated"},
         {"label":"Contratos de parcerias","category":"commercial","subcategory":"sponsorship_commercial","amount":0.909721,"disclosure":"aggregated"},
-        {"label":"Com doação","category":"other_revenue","subcategory":"other_income","amount":1,"disclosure":"aggregated"},
+        {"label":"Com doação","category":"grants_donations","subcategory":"grants_donations","amount":1,"disclosure":"aggregated"},
         {"label":"Publicidades","category":"commercial","subcategory":"sponsorship_commercial","amount":0.105254,"disclosure":"aggregated"},
         {"label":"Aviso prévio descontado","category":"other_revenue","subcategory":"other_income","amount":0.0004,"disclosure":"aggregated"},
         {"label":"deduções das receitas","category":"other_revenue","subcategory":"other_income","amount":-0.014119,"disclosure":"aggregated"}
@@ -251,7 +251,7 @@
         {"label":"Patrocínios","category":"commercial","subcategory":"sponsorship_commercial","amount":2.262274,"disclosure":"aggregated"},
         {"label":"Contratos de Parcerias","category":"commercial","subcategory":"sponsorship_commercial","amount":0.188,"disclosure":"aggregated"},
         {"label":"Publicidades","category":"commercial","subcategory":"sponsorship_commercial","amount":0.032752,"disclosure":"aggregated"},
-        {"label":"Doações","category":"other_revenue","subcategory":"other_income","amount":1.1,"disclosure":"aggregated"},
+        {"label":"Doações","category":"grants_donations","subcategory":"grants_donations","amount":1.1,"disclosure":"aggregated"},
         {"label":"Patrocínios e Doações","category":"commercial","subcategory":"sponsorship_commercial","amount":0.04,"disclosure":"aggregated"},
         {"label":"Multa Contratual","category":"other_revenue","subcategory":"other_income","amount":0.0001,"disclosure":"aggregated"}
       ],
@@ -448,7 +448,7 @@
         {"label":"Patrocinios","category":"commercial","subcategory":"sponsorship_commercial","amount":2.83474,"disclosure":"aggregated"},
         {"label":"Contratos de Parcerias","category":"commercial","subcategory":"sponsorship_commercial","amount":0.15,"disclosure":"aggregated"},
         {"label":"Publicidades","category":"commercial","subcategory":"sponsorship_commercial","amount":0.491249,"disclosure":"aggregated"},
-        {"label":"Doações","category":"other_revenue","subcategory":"other_income","amount":1.314316,"disclosure":"aggregated"},
+        {"label":"Doações","category":"grants_donations","subcategory":"grants_donations","amount":1.314316,"disclosure":"aggregated"},
         {"label":"Recuperação de Despesas","category":"other_revenue","subcategory":"other_income","amount":0.009106,"disclosure":"aggregated"},
         {"label":"AVlso Prévio Descontado","category":"other_revenue","subcategory":"other_income","amount":0.0081,"disclosure":"aggregated"},
         {"label":"Multa Contratual","category":"other_revenue","subcategory":"other_income","amount":0.000836,"disclosure":"aggregated"}
@@ -705,7 +705,7 @@
         {"label":"Patrocinios","category":"commercial","subcategory":"sponsorship_commercial","amount":3.26,"disclosure":"aggregated"},
         {"label":"Contratos de Parcerias","category":"commercial","subcategory":"sponsorship_commercial","amount":0.01,"disclosure":"aggregated"},
         {"label":"Publicidades","category":"commercial","subcategory":"sponsorship_commercial","amount":0.0008,"disclosure":"aggregated"},
-        {"label":"Doações","category":"other_revenue","subcategory":"other_income","amount":0.38,"disclosure":"aggregated"},
+        {"label":"Doações","category":"grants_donations","subcategory":"grants_donations","amount":0.38,"disclosure":"aggregated"},
         {"label":"Pis","category":"other_revenue","subcategory":"other_income","amount":-0.002002,"disclosure":"aggregated"},
         {"label":"Cofins","category":"other_revenue","subcategory":"other_income","amount":-0.00922,"disclosure":"aggregated"},
         {"label":"Icms","category":"other_revenue","subcategory":"other_income","amount":-0.021838,"disclosure":"aggregated"},

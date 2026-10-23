@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "chapecoense-br",
@@ -72,7 +72,7 @@
         {"label":"Time-Mania","category":"other_revenue","subcategory":"other_income","amount":0.20112,"disclosure":"detailed"},
         {"label":"Royalties/Direito de Uso de Marca","category":"commercial","subcategory":"sponsorship_commercial","amount":1.521739,"disclosure":"detailed"},
         {"label":"Receitas Diversas","category":"other_revenue","subcategory":"other_income","amount":1.346781,"disclosure":"detailed"},
-        {"label":"Doações/PAF","category":"other_revenue","subcategory":"other_income","amount":10.125631,"disclosure":"detailed"},
+        {"label":"Doações/PAF","category":"grants_donations","subcategory":"grants_donations","amount":10.125631,"disclosure":"detailed"},
         {
           "label": "Receitas Federações (Copa do Brasil/Sul-Americana/Brasileirão)",
           "category": "prize_money",
@@ -199,7 +199,7 @@
           "disclosure": "aggregated"
         },
         {"label":"Receitas Diversas","category":"other_revenue","subcategory":"other_income","amount":1.176,"disclosure":"aggregated"},
-        {"label":"Doações/PAF","category":"other_revenue","subcategory":"other_income","amount":0.001,"disclosure":"aggregated"},
+        {"label":"Doações/PAF","category":"grants_donations","subcategory":"grants_donations","amount":0.001,"disclosure":"aggregated"},
         {"label":"Receita Federações","category":"prize_money","subcategory":"competition_bonus","amount":7.496,"disclosure":"aggregated"},
         {"label":"Deduções Tributárias e Sindicais","category":"other_revenue","subcategory":"other_income","amount":-6.542,"disclosure":"aggregated"},
         {"label":"Dividendos Recebidos","category":"other_revenue","subcategory":"other_income","amount":0.015,"disclosure":"aggregated"},
@@ -290,7 +290,7 @@
           "disclosure": "detailed"
         },
         {"label":"Receitas Diversas","category":"other_revenue","subcategory":"other_income","amount":4.465,"disclosure":"detailed"},
-        {"label":"Doações/PAF","category":"other_revenue","subcategory":"other_income","amount":0.135,"disclosure":"detailed"},
+        {"label":"Doações/PAF","category":"grants_donations","subcategory":"grants_donations","amount":0.135,"disclosure":"detailed"},
         {"label":"Receita Federações (Copa do Brasil)","category":"prize_money","subcategory":"competition_bonus","amount":1.923,"disclosure":"detailed"},
         {"label":"Deduções Tributárias e Sindicais","category":"other_revenue","subcategory":"other_income","amount":-5.26,"disclosure":"detailed"},
         {"label":"Dividendos Recebidos","category":"other_revenue","subcategory":"other_income","amount":0.029,"disclosure":"detailed"},
@@ -418,7 +418,7 @@
           "disclosure": "aggregated"
         },
         {"label":"Outras Receitas","category":"other_revenue","subcategory":"other_income","amount":0.192,"disclosure":"aggregated"},
-        {"label":"Doações/PAF","category":"other_revenue","subcategory":"other_income","amount":0.202,"disclosure":"aggregated"},
+        {"label":"Doações/PAF","category":"grants_donations","subcategory":"grants_donations","amount":0.202,"disclosure":"aggregated"},
         {"label":"Receita Federações","category":"prize_money","subcategory":"competition_bonus","amount":3.558,"disclosure":"aggregated"},
         {"label":"Deduções Tributárias e Sindicais","category":"other_revenue","subcategory":"other_income","amount":-2.523,"disclosure":"aggregated"},
         {"label":"Outros Resultados Operacionais","category":"other_revenue","subcategory":"other_income","amount":0.307,"disclosure":"aggregated"}

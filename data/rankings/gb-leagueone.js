@@ -10,7 +10,7 @@ window.RANKINGS["gb-leagueone"] = {
         mix:[["Comercial / Sponsors",3.338],["Estadio",4.187],["Televisión",3.727],["Venta de Jugadores",6.754],["Subsidios y donaciones",0.844],["Otros ingresos",0.009]] },
       { id:"barnsley-gb", revenue:15.328, reportType:"official_balance_sheet",
         sourceId:"barnsley-gb-medium-accounts-2024-25-ixbrl",
-        mix:[["Comercial / Sponsors",1.751],["Estadio",5.294],["Televisión",4.483],["Venta de Jugadores",1.248],["Otros ingresos",2.552]] },
+        mix:[["Comercial / Sponsors",1.751],["Estadio",5.294],["Televisión",4.483],["Venta de Jugadores",1.248],["Subsidios y donaciones",0.05],["Otros ingresos",2.502]] },
       { id:"lincolncity-gb", revenue:12.567, reportType:"official_balance_sheet",
         sourceId:"lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl",
         mix:[["Comercial / Sponsors",2.616],["Estadio",3.907],["Televisión",3.117],["Otras actividades (educación y otros deportes)",1.063],["Otros ingresos",1.863]],

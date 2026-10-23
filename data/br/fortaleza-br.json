@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fortaleza-br",
@@ -76,7 +76,7 @@
         {"label":"Multas rescisórias de atletas (recebida)","category":"other_revenue","subcategory":"other_income","amount":2.227,"disclosure":"detailed"},
         {"label":"Recuperação de despesas","category":"other_revenue","subcategory":"other_income","amount":6.668,"disclosure":"detailed"},
         {"label":"Receita com estacionamento","category":"other_revenue","subcategory":"other_income","amount":1.308,"disclosure":"detailed"},
-        {"label":"Doações","category":"other_revenue","subcategory":"other_income","amount":1.059,"disclosure":"detailed"},
+        {"label":"Doações","category":"grants_donations","subcategory":"grants_donations","amount":1.059,"disclosure":"detailed"},
         {"label":"Reversão de PECLD","category":"other_revenue","subcategory":"other_income","amount":0.026,"disclosure":"detailed"},
         {"label":"Alienação de imobilizado","category":"other_revenue","subcategory":"other_income","amount":0.019,"disclosure":"detailed"},
         {

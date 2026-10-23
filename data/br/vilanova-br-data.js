@@ -103,7 +103,7 @@ const vilanovaBrRevenueLinesByYear = {
     {"rawLabel":"Mecanismo de solidariedade","normalizedCategory":"player_sales","amountNative":0.26,"disclosureLevel":"aggregated"},
     {"rawLabel":"Estorno de provisões (ii)","normalizedCategory":"other_income","amountNative":2.555,"disclosureLevel":"aggregated"},
     {"rawLabel":"Multas contratuais recebidas (iii)","normalizedCategory":"other_income","amountNative":1.884,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Doações","normalizedCategory":"other_income","amountNative":0.815,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Doações","normalizedCategory":"grants_donations","amountNative":0.815,"disclosureLevel":"aggregated"},
     {"rawLabel":"Receita com aluguéis","normalizedCategory":"other_income","amountNative":0.146,"disclosureLevel":"aggregated"},
     {"rawLabel":"Arrecadação do futebol de base","normalizedCategory":"youth_football","amountNative":0.144,"disclosureLevel":"aggregated"},
     {"rawLabel":"Brindes recebidos","normalizedCategory":"other_income","amountNative":0.088,"disclosureLevel":"aggregated"},

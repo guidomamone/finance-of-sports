@@ -20,7 +20,7 @@ const fortalezaBrRevenueLinesByYear = {
     {"rawLabel":"Multas rescisórias de atletas (recebida)","normalizedCategory":"other_income","amountNative":2.227,"disclosureLevel":"detailed"},
     {"rawLabel":"Recuperação de despesas","normalizedCategory":"other_income","amountNative":6.668,"disclosureLevel":"detailed"},
     {"rawLabel":"Receita com estacionamento","normalizedCategory":"other_income","amountNative":1.308,"disclosureLevel":"detailed"},
-    {"rawLabel":"Doações","normalizedCategory":"other_income","amountNative":1.059,"disclosureLevel":"detailed"},
+    {"rawLabel":"Doações","normalizedCategory":"grants_donations","amountNative":1.059,"disclosureLevel":"detailed"},
     {"rawLabel":"Reversão de PECLD","normalizedCategory":"other_income","amountNative":0.026,"disclosureLevel":"detailed"},
     {"rawLabel":"Alienação de imobilizado","normalizedCategory":"other_income","amountNative":0.019,"disclosureLevel":"detailed"},
     {"rawLabel":"Outras receitas (Nota 20; 14,626 impreso, ajustado a 14,686 — ver comentario de cabecera sobre el redondeo de 0,060 M BRL)","normalizedCategory":"other_income","amountNative":14.686,"disclosureLevel":"detailed"},

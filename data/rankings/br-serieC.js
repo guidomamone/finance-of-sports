@@ -35,7 +35,7 @@ window.RANKINGS["br-serieC"] = {
     clubs: [
       { id:"paysandu-br", revenue:9.31, reportType:"official_balance_sheet",
         sourceId:"paysandu-br-dre-2023",
-        mix:[["Cuotas Sociales",0.859],["Comercial / Sponsors",2.335],["Otras actividades (educación y otros deportes)",0.175],["Fútbol profesional (sin desglosar por la fuente)",4.165],["Otros ingresos",1.775]] },
+        mix:[["Cuotas Sociales",0.859],["Comercial / Sponsors",2.335],["Otras actividades (educación y otros deportes)",0.175],["Subsidios y donaciones",0.348],["Fútbol profesional (sin desglosar por la fuente)",4.165],["Otros ingresos",1.428]] },
       { id:"remo-br", revenue:6.988, reportType:"official_balance_sheet",
         sourceId:"remo-br-dre-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.988]],
@@ -57,7 +57,7 @@ window.RANKINGS["br-serieC"] = {
     clubs: [
       { id:"paysandu-br", revenue:3.938, reportType:"official_balance_sheet",
         sourceId:"paysandu-br-dre-2021",
-        mix:[["Cuotas Sociales",0.268],["Comercial / Sponsors",0.314],["Otras actividades (educación y otros deportes)",0.211],["Fútbol profesional (sin desglosar por la fuente)",1.948],["Otros ingresos",1.197]] },
+        mix:[["Cuotas Sociales",0.268],["Comercial / Sponsors",0.314],["Otras actividades (educación y otros deportes)",0.211],["Subsidios y donaciones",0.615],["Fútbol profesional (sin desglosar por la fuente)",1.948],["Otros ingresos",0.582]] },
       { id:"criciuma-br", revenue:2.739, reportType:"official_balance_sheet",
         sourceId:"criciuma-br-demonstrativo-financeiro-2021",
         mix:[["Cuotas Sociales",0.308],["Comercial / Sponsors",0.338],["Estadio",0.029],["Televisión",1.381],["Venta de Jugadores",0.041],["Subsidios y donaciones",0.061],["Otros ingresos",0.581]] },

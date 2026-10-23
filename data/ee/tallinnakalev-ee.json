@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "tallinnakalev-ee",
@@ -74,7 +74,13 @@
       "management_id": null,
       "fx": {"ref":"EUR@2019-12-31"},
       "revenue": [
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.014369,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.014369,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotstarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -130,7 +136,13 @@
       "management_id": null,
       "fx": {"ref":"EUR@2020-12-31"},
       "revenue": [
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.111613,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.111613,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -228,7 +240,13 @@
       "management_id": null,
       "fx": {"ref":"EUR@2021-12-31"},
       "revenue": [
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.074663,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.074663,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -327,7 +345,13 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-12-31"},
       "revenue": [
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.016982,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.016982,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -434,7 +458,13 @@
       "fx": {"ref":"EUR@2023-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.469225,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.492348,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.492348,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -544,7 +574,13 @@
       "fx": {"ref":"EUR@2024-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.624467,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":0.873808,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 0.873808,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",
@@ -655,7 +691,13 @@
       "fx": {"ref":"EUR@2025-12-31"},
       "revenue": [
         {"label":"Liikmetelt saadud tasud","category":"membership","subcategory":"member_dues","amount":0.837426,"disclosure":"aggregated"},
-        {"label":"Sihtfinantseerimine tegevuskuludeks","category":"other_revenue","subcategory":"other_income","amount":1.033337,"disclosure":"aggregated"},
+        {
+          "label": "Sihtfinantseerimine tegevuskuludeks",
+          "category": "grants_donations",
+          "subcategory": "grants_donations",
+          "amount": 1.033337,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Mittesihtotsatarbelised annetused ja toetused",
           "category": "grants_donations",

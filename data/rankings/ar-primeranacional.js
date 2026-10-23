@@ -28,7 +28,7 @@ window.RANKINGS["ar-primeranacional"] = {
     clubs: [
       { id:"ferrocarriloeste-ar", revenue:9.05, reportType:"official_balance_sheet",
         sourceId:"ferrocarriloeste-ar-estados-contables-118-2021-22",
-        mix:[["Cuotas Sociales",2.903],["Comercial / Sponsors",0.333],["Estadio",0.157],["Televisión",0.544],["Premios por competencias",0.02],["Otras actividades (educación y otros deportes)",3.746],["Otros ingresos",1.346]] },
+        mix:[["Cuotas Sociales",2.903],["Comercial / Sponsors",0.333],["Estadio",0.157],["Televisión",0.544],["Premios por competencias",0.02],["Otras actividades (educación y otros deportes)",3.746],["Subsidios y donaciones",0.466],["Otros ingresos",0.88]] },
       { id:"almagro-ar", revenue:0.915, reportType:"official_balance_sheet",
         sourceId:"almagro-ar-balance-2022",
         mix:[["Cuotas Sociales",0.054],["Comercial / Sponsors",0.103],["Estadio",0.029],["Televisión",0.406],["Venta de Jugadores",0.107],["Otras actividades (educación y otros deportes)",0.017],["Otros ingresos",0.199]] },
