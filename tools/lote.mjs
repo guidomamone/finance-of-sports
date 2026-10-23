@@ -489,6 +489,8 @@ if (docsXhtml.length) { // costo de los deterministas (con --ejecutar, lo gastad
   if (EJECUTAR && PAGAR_XHTML) appendFileSync(resolve(ROOT, 'Admin', 'registros', 'pagar-ia-xhtml.jsonl'), JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, cierre: true, docs: docsXhtml.length, costoUsd: +costo.toFixed(4) }) + '\n');
 }
 console.log('\n=== 2/5 · Sumar y cruzar con lo impreso (etapa 6, gratis) ===');
+// LA LÍNEA DE DEPRECIACIÓN Y AMORTIZACIÓN JUNTA se parte sola con las notas cuando la aritmética cierra (REGLA de CONVENCIONES-DATOS); si no cierra, queda para la cola. Escribe ajustes solo con --ejecutar.
+{ const { partirDocumentos } = await import('./partir-amortizacion.mjs'); const n = partirDocumentos(docs.filter((d) => String(estado[d]).startsWith('extraído')), { escribir: EJECUTAR, avisar: false }); if (n) console.log(`  ${n} documento(s) con la amortización junta ${EJECUTAR ? 'partidos' : 'que se partirían'} con las notas (partir-amortizacion.mjs)`); }
 // startsWith: el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no
 // pasaba a verificar en la misma corrida (UC 2015, lote 06: re-transcripto y extraído, y la etapa 6 lo salteaba).
 // verificarLista: repite la pasada si un documento tomó la escala del año vecino (la cadena de escala depende del orden).

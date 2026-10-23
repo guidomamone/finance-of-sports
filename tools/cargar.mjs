@@ -61,6 +61,7 @@ const agregarCasoCola = agregarCaso; // proponer() usa su propio agregarCaso (pu
 const { guardarPerfil, perfilVigente, perfilCercano, anioDeDoc, VENTANA_PERFIL } = await import('./perfil-clubes.mjs');
 const { ajusteDe, ajustesDe, ajustePerimetroDe, ceroRealDelClub } = await import('./ajustes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
+const { esLineaJunta } = await import('./partir-amortizacion.mjs');
 const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS, padreDe } = await import('./memoria-categorias.mjs');
 const { padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca } = await import('./padres-filas.mjs'); // en qué nota está cada fila
@@ -704,7 +705,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       const nombre = NOMBRE_CAT[f.cat] || f.cat;
       f.casoCola = ({ pdf, md: e.md, etapa: 'cargar', motivo: 'categoria', detalle: claveCola, categoriaPropuesta: f.cat, pagina: r.page || null,
         que: `¿"${r.label}" (${Math.abs(r.native)} en millones de la moneda del documento) va como "${nombre}"?  (por qué: la categorización le dio ${f.conf ?? '?'} de confianza, menos que el mínimo ${UMBRAL_CLAUDE}${f.choque ? `; en otro año del club se aceptó como "${NOMBRE_CAT[f.choque] || f.choque}"` : ''})`,
-        propuesta: `sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)` });
+        // una línea que JUNTA amortización de jugadores y depreciación de bienes de uso no se acepta entera: la parte partir-amortizacion.mjs cuando las notas cierran (REGLA de CONVENCIONES-DATOS)
+        propuesta: esLineaJunta(r.label) && /player_amortisation|depreciation/.test(f.cat) ? `NO aceptar: la línea junta jugadores y bienes de uso. Se parte con las notas: node tools/partir-amortizacion.mjs "${pdf}" --escribir (y se vuelve a correr el lote). Si las notas no la abren, la REGLA manda la línea entera a player_amortisation con incluidoEn: corregir --valor player_amortisation` : `sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)` });
       enCola.push(f); f.enCola = true; f.destino = ladoDeCat(f.cat);
     }
     else f.destino = ladoDeCat(f.cat);
