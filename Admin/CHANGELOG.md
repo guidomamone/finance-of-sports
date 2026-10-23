@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 964 — `todo.mjs --nuevo`: un punto nuevo sin encabezados ni renumeración a mano [383]
+
+- `node tools/todo.mjs --nuevo --pos <n> --rol "…" --titulo "…"`: crea el punto con el id siguiente al más alto, en el lugar <n> (1 al último+1), renumera los de abajo y deja «Terminado cuando:» y «Verificar: manual» para completar. Rechaza una posición fuera de rango y avisa de un título repetido. Probado insertando al principio, al medio y al final y cerrando los tres con `--cerrar`: `Admin/TODO.md` quedó idéntico. Tool de mantenimiento, no del pipeline: sin medición.
+
 ## Versión 963 — TODO: hooks Stop y SessionStart, y la regla de «Jev dijo ninguna» [388 · 389 · 390]
 
 - Puntos nuevos: 388 (hook `Stop` con chequeos baratos al terminar un turno), 389 (hook `SessionStart` con el estado en menos de 10 líneas) y 390 (regla para los 7 casos de «Jev dijo ninguna» de `fos causas`, al fondo de A, prioridad baja). Orden: 383, 384, 374, 388, 389, 379, 375.

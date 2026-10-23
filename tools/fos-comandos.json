@@ -1,7 +1,7 @@
 {
  "_comentario": "Los comandos de tools/ que una sesión corre a mano, en un solo lugar: `node tools/fos.mjs` los lista y `node tools/fos.mjs <comando> [argumentos]` los corre (los argumentos pasan tal cual). Cada uno: cmd (una palabra o «grupo sub»), script (en tools/), que (una línea) y cuando (cuándo se corre). Una tool nueva que una sesión tenga que correr se agrega acá; `node tools/fos.mjs --check` dice qué falta. Los módulos que otra tool llama (la mayoría de tools/) no van.",
  "comandos": [
-  { "cmd": "todo", "script": "todo.mjs", "que": "lista el TODO, un punto, --verificar, --cerrar", "cuando": "al empezar y al cerrar una tarea" },
+  { "cmd": "todo", "script": "todo.mjs", "que": "lista el TODO, un punto, --verificar, --cerrar, --nuevo", "cuando": "al empezar y al cerrar una tarea" },
   { "cmd": "estado", "script": "estado.mjs", "que": "tablero del inventario: dónde está cada PDF y qué le falta", "cuando": "para saber qué cargar" },
   { "cmd": "modo", "script": "modo.mjs", "que": "dice o cambia el modo de trabajo (una sesión / varias)", "cuando": "si Guido cambia de modo" },
   { "cmd": "indice-md", "script": "indice-md.mjs", "que": "índice de los .md y huérfanos", "cuando": "al crear, mover o borrar un .md" },
