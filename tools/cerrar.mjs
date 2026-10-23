@@ -77,6 +77,11 @@ if (tocoTools) (docs ? ok : mal)(docs ? 'cambió tools/ y se tocó ESTADO.md o P
 if (cambiados.some((f) => f.startsWith('.claude/skills/'))) aviso('cambió una skill: commit APARTE y mostrale el diff a Guido con show_pane (pane diff, el hash)');
 if (cambiados.some((f) => /^data\/(?!faltantes|estimados|rankings|auditoria|entidades|correcciones|sponsors)/.test(f))) aviso('cambió un dato publicado: el mensaje del commit lleva un trailer «Corrige: …» (qué dato y por qué)');
 if (!cambiados.length) aviso('no hay nada para commitear');
+// lo que va a pedir el commit (clasificación, medición, veredicto): tools/que-pide.mjs
+if (tocoTools) {
+  let pide = ''; try { pide = execFileSync('node', ['tools/que-pide.mjs'], { cwd: ROOT, encoding: 'utf8' }); } catch (e) { pide = e.stdout || ''; }
+  for (const l of pide.split('\n').filter((x) => x.startsWith('✗'))) mal(`el commit va a pedir: ${l.slice(2)}`);
+}
 
 console.log(`\n${lineas.join('\n')}\n`);
 console.log(faltan ? `Faltan ${faltan} cosa(s) (✗). Después: git add -A y commit local (sin push).` : 'Todo en orden. Siguiente: git add -A y commit local (sin push).');

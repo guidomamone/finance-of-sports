@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 973 — `fos que-pide`: qué va a pedir el commit, antes de commitear [393]
+
+- `tools/que-pide.mjs`: por archivo cambiado (o los que se le pasen; `--staged` mira el índice), dice si una tool está sin clasificar, si es del pipeline o módulo de una y le falta la medición (con su medidor) o el veredicto, si el cambio es solo de comentarios o una mudanza, o si es una skill (commit aparte) o un dato publicable; ✗ y salida 1 si algo falta. Los rechazos de medición y de veredicto del hook de commit lo nombran, y `fos cerrar` marca ✗ lo que el commit va a pedir. Herramienta de orden (`no_pipeline`): sin medición.
+
 ## Versión 972 — El índice de los .md no cuenta las salidas de medir-pipeline [391]
 
 - `indice-md.mjs`: la cuenta de `Admin/mediciones` salta `Admin/mediciones/pipeline` (gitignoreado, lo escribe `medir-pipeline`); ya ninguna medición deja `indice-md-desfasado` NUEVO. Medido (audit, chico): 1 diferencia, el aviso viejo que se va; veredicto GENERAL.

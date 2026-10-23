@@ -146,6 +146,7 @@ function medicionAntesDelCommit(cmd) {
   if (!sinMedir.length) return veredictoAntesDelCommit(cmd, raiz, tocadas, staged);
   decidir('deny', `Commit frenado: ${sinMedir.join(', ')} ${sinMedir.length > 1 ? 'son tools del pipeline y no tienen' : 'es una tool del pipeline y no tiene'} una medición con su versión actual en Admin/registros/mediciones-pipeline.jsonl `
     + '(una tool editada después de medir no cuenta). Ningún cambio al pipeline se commitea sin medir antes y después (CLAUDE.md).\n'
+    + 'Todo lo que pide este commit, por archivo: node tools/fos.mjs que-pide\n'
     + 'Corré: node tools/medir-pipeline.mjs   (en segundo plano; elige medidor y lote por tools/pipeline-tools.json; si hay diferencias esperadas: --explicacion "cuáles y por qué").\n'
     + 'Si es un caso de emergencia, con el ok de Guido agregá [sin-medicion] al mensaje del commit.');
 }
@@ -169,6 +170,7 @@ function veredictoAntesDelCommit(cmd, raiz, tocadas, staged) {
   });
   if (!sinVeredicto.length) return;
   decidir('deny', `Commit frenado: el cambio de código a ${sinVeredicto.join(', ')} no tiene la línea de veredicto «general» en Admin/registros/auditoria-proceso.jsonl con su versión actual.\n`
+    + 'Todo lo que pide este commit, por archivo: node tools/fos.mjs que-pide\n'
     + 'Corré: node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" --escribir   (cuenta documentos y clubes, mira que el código no nombre nada y toma la medición). '
     + 'Si da PARCHE o RECHAZADA, el cambio no va al código: va como ajuste (la tool imprime el comando).\n'
     + 'Si es una mudanza o solo comentarios y la tool no lo vio así, o es un caso de emergencia, con el ok de Guido agregá [sin-veredicto] al mensaje del commit.');

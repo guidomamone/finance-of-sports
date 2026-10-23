@@ -60,7 +60,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   «Modo de trabajo»). Esta sesión escribe TODO, CHANGELOG y ESTADO al cerrar cada tarea. El modo de varios worktrees (`tools/worktree.mjs`,
   `Admin/Archive/modo-varias-sesiones.md`) y los roles de `Admin/CONVENCIONES.md` («ONBOARDING CARGA, PIPELINE
   ARREGLA, AUDITORA APRUEBA») siguen escritos, pero hoy no se usan. El gasto por sesión: `node tools/gasto.mjs --sesion <carpeta>`.
-- Un punto nuevo del TODO: `node tools/todo.mjs --nuevo --pos <n> --rol "…" --titulo "…"`. Cerrar una tarea: `node tools/fos.mjs cerrar <id>` (TODO, índice, auditoría, CHANGELOG; no commitea). Lo que una tool no resuelve: `node tools/fos.mjs causas` (registro `Admin/registros/casos-sin-resolver.jsonl`).
+- Un punto nuevo del TODO: `node tools/todo.mjs --nuevo --pos <n> --rol "…" --titulo "…"`. Qué va a pedir el commit de lo cambiado (clasificación, medición, veredicto): `node tools/fos.mjs que-pide`. Cerrar una tarea: `node tools/fos.mjs cerrar <id>` (TODO, índice, auditoría, CHANGELOG; no commitea). Lo que una tool no resuelve: `node tools/fos.mjs causas` (registro `Admin/registros/casos-sin-resolver.jsonl`).
 - Leer código sin quemar tokens: `node tools/fos.mjs mapa tools/<archivo>` (funciones con rango de líneas) y `Admin/CONTRATO-ETAPAS.md` (qué pasa entre etapas); una tool de más de 50 KB no se lee entera (`CLAUDE.md`).
 - Medir cambios al pipeline: `node tools/fos.mjs medir pipeline` (tabla `tools/pipeline-tools.json`, registro `Admin/registros/mediciones-pipeline.jsonl`,
   listas de prueba estratificadas `Admin/lotes/prueba-*.txt` que regenera `lotes-prueba.mjs`; `Admin/PIPELINE.md`, «Medir un cambio a una tool»).
