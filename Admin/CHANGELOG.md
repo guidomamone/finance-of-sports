@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 976 — `fos muestra`: una muestra repartida de un patrón [397]
+
+- `tools/muestra.mjs` (`node tools/fos.mjs muestra "<regex>" [--en tools|Clubes|Admin] [--n 30] [--ext …]`): junta las líneas que cumplen la regex y imprime n repartidas a intervalo fijo (primera y última incluidas), con archivo:línea y un recorte; solo lee. Herramienta de orden (`no_pipeline`).
+
 ## Versión 975 — TODO: cabeceras largas de tools/ [398]
 
 - Punto 398: las 77 cabeceras de más de 25 líneas que dejó la medición del 374, de las más largas a las más cortas, con un aviso P3 que las vigile.
