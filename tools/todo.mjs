@@ -11,6 +11,8 @@
 //   node tools/todo.mjs --verificar [id]   comprueba la línea «Verificar:» de cada punto (o de uno) con una máquina: cumple / falta / manual (corre audit.js, unos segundos)
 //   node tools/todo.mjs --cerrar 355    borra el punto y renumera el orden de los de abajo (el historial va al CHANGELOG, a mano). Se NIEGA si el punto tiene una condición
 //                                       «Verificar:» comprobable y no se cumple; --forzar lo cierra igual (para un punto descartado, no cumplido)
+//   node tools/todo.mjs --nuevo --pos <n> --rol "Orden, prioridad alta" --titulo "…"   un punto nuevo con el id siguiente al más alto, en el lugar <n> (1..último+1);
+//                                       renumera los de abajo y deja «Terminado cuando:» y «Verificar: manual» para completar. Rechaza una posición fuera de rango; avisa de un título repetido
 // Las condiciones y cómo se escriben: tools/todo-verificar.js. No toca nada más que Admin/TODO.md.
 // ============================================================================
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -62,6 +64,27 @@ if (A[0] === '--verificar') {
     const marca = e.sinCondicion ? '? sin «Verificar:»' : e.cumple ? '✓ CUMPLE: cerrarlo' : e.manual ? '· manual' : e.falta ? '✗ falta' : '· manual';
     console.log(`${String(p.orden).padStart(2)}. ${p.id} · ${marca}${e.rs.filter((r) => r.ok !== null).map((r) => `\n      ${r.ok ? '✓' : '✗'} ${r.detalle}`).join('')}`);
   }
+  process.exit(0);
+}
+
+if (A[0] === '--nuevo') {
+  const v = (k) => { const j = A.indexOf(k); return j < 0 ? undefined : A[j + 1]; };
+  const pos = Number(v('--pos')), rol = v('--rol'), titulo = v('--titulo');
+  if (!rol || !titulo || !Number.isInteger(pos)) { console.error('Uso: --nuevo --pos <n> --rol "…" --titulo "…"'); process.exit(1); }
+  if (pos < 1 || pos > puntos.length + 1) { console.error(`--pos ${pos} fuera de rango: va de 1 a ${puntos.length + 1}.`); process.exit(1); }
+  const igual = puntos.find((x) => x.titulo.toLowerCase().includes(titulo.toLowerCase()));
+  if (igual) console.error(`Aviso: ya hay un punto con ese título (${igual.id}).`);
+  const id = String(Math.max(...puntos.map((x) => Number(x.id))) + 1);
+  const bloque = [`### ${pos}. ${id} · (${rol}): ${titulo}`, '', '…', 'Terminado cuando: …', '', 'Verificar: manual', ''];
+  // antes del punto que hoy ocupa ese lugar; al final, después del cuerpo del último
+  let en = pos <= puntos.length ? puntos[pos - 1].i : puntos[puntos.length - 1].fin;
+  while (en > 0 && L[en - 1].trim() === '' && pos > puntos.length) en--;
+  if (pos > puntos.length) bloque.unshift('');
+  L.splice(en, 0, ...bloque);
+  let n = 0;
+  for (let i = 0; i < L.length; i++) { const m = TITULO.exec(L[i]); if (m) L[i] = `### ${++n}. ${m[2]} · ${m[3]}`; }
+  writeFileSync(RUTA, L.join('\n').replace(/\n{3,}/g, '\n\n'), 'utf8');
+  console.log(`Punto ${id} creado en el lugar ${pos}. Completá el cuerpo, «Terminado cuando:» y «Verificar:».`);
   process.exit(0);
 }
 
