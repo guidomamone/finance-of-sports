@@ -31,6 +31,7 @@ import { resolve, join, relative } from 'node:path';
 import { familiaDe } from './familias-docs.mjs';
 import { deporteDePdf } from './deporte-club.mjs';
 import { loadSite } from './datos-sitio.mjs';
+import { cargasManuales } from './cargas-manuales.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const GEN = resolve(ROOT, 'Generados');
@@ -93,6 +94,8 @@ function casosRaros(todos) {
   const porPdf = new Map(todos.map((d) => [d.pdf, d])); const eventos = [];
   for (const a of jsonl('Admin/registros/ajustes-manuales.jsonl')) if (a.pdf && a.campo && !a.anulado) eventos.push({ pdf: String(a.pdf).normalize('NFC'), clase: `ajuste:${a.campo}`, fecha: a.fecha || '' });
   for (const f of jsonl('Admin/registros/frenados-por-script.jsonl')) if (f.pdf) eventos.push({ pdf: String(f.pdf).normalize('NFC'), clase: `freno:${f.defecto || '?'}`, fecha: f.fecha || '' });
+  // una carga hecha a mano (sin tools/cargar.mjs) es un caso raro por sí misma, tenga o no ajuste: su documento entra como la clase `carga-manual` (cargas-manuales.mjs)
+  for (const doc of cargasManuales().manuales) eventos.push({ pdf: doc, clase: 'carga-manual', fecha: '' });
   const casos = new Map(); const L = jsonl('Admin/registros/cola-revision.jsonl');
   for (const r of L) if (r.tipo === 'caso') casos.set(r.id, r);
   for (const r of L) if (r.tipo === 'respuesta' && ['corregir', 'descartar', 'preguntar-club'].includes(r.decision)) { const c = casos.get(r.id); if (c?.pdf) eventos.push({ pdf: String(c.pdf).normalize('NFC'), clase: `cola:${c.etapa}|${c.motivo}|${r.decision}`, fecha: String(r.ts || '').slice(0, 10) }); }
