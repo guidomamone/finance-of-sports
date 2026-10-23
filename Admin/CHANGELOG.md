@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 969 — Hooks Stop y SessionStart [388 · 389]
+
+- `tools/hooks/stop.mjs` (evento `Stop`): si el turno dejó cambios (árbol sucio o un commit de los últimos 20 minutos) corre chequeos de segundos y bloquea UNA vez (`stop_hook_active`): archivos sin commitear, `indice-md.mjs --check` y `.md` sin marca, y un punto del TODO que ya cumple un «Verificar:» sin `audit` (esos son de `fos cerrar`). Sin cambios no dice nada; salida de 8 líneas como máximo. Prueba de 6 casos: `probar-stop.mjs`.
+- `tools/hooks/session-start.mjs` (evento `SessionStart`): modo, árbol sin commitear, respaldo de una medición muerta (con `--restaurar`), los tres primeros puntos del TODO y una línea de comandos; 10 líneas como máximo. Prueba de 3 casos: `probar-session-start.mjs`. Los dos en `.claude/settings.json`. Sin sesión de prueba todavía: rigen al abrir la próxima sesión.
+
 ## Versión 968 — TODO: lo que dejó pensando el 383, el 384 y el 374 [391 · 392 · 393 · 394]
 
 - Puntos nuevos (creados con `todo.mjs --nuevo`): 391 (el índice de los `.md` cuenta `Admin/mediciones` y toda medición muestra `indice-md-desfasado`), 392 (`fos reemplazar`: edición en masa sin que el hook la rechace), 393 (`fos que-pide`: qué va a pedir el commit), 394 (candado de medición: el hook rechaza editar trackeados mientras corre).

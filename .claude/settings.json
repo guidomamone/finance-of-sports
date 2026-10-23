@@ -30,6 +30,30 @@
           }
         ]
       }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=\"$CLAUDE_PROJECT_DIR/tools/hooks/stop.mjs\"; [ ! -f \"$f\" ] || node \"$f\"",
+            "timeout": 60,
+            "statusMessage": "Mirando cómo queda el trabajo (tools/hooks/stop.mjs)"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=\"$CLAUDE_PROJECT_DIR/tools/hooks/session-start.mjs\"; [ ! -f \"$f\" ] || node \"$f\"",
+            "timeout": 30,
+            "statusMessage": "Poniendo el estado (tools/hooks/session-start.mjs)"
+          }
+        ]
+      }
     ]
   }
 }
