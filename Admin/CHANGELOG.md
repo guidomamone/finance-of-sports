@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 971 — TODO: tres puntos de la limpieza de comentarios [395 · 396 · 397]
+
+- 395 (`limpiar-comentarios --revisar`: lo que una limpieza borraría y conserva contenido), 396 (la tool se niega a reescribir con `tools/` sin commitear) y 397 (`fos muestra`: una muestra repartida de las líneas que cumplen un patrón, sin `shuf`).
+
 ## Versión 970 — Segunda limpieza de comentarios de tools/: otras 662 referencias [374]
 
 - `limpiar-comentarios.mjs` saca también un paréntesis corto con una referencia y a lo sumo 4 palabras más, y la etiqueta de historia con que empieza un comentario; un paréntesis con información («KNVB para la Eredivisie…, decisión de Guido») se deja. 662 referencias en 83 tools; en total 1.165 de 1.629 (quedan 464 en 105 tools y 77 cabeceras largas). Código sin comentarios idéntico en las 83 (`--tools`), medido «idéntico» (solo comentarios).
