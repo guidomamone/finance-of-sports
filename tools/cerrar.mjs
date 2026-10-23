@@ -13,7 +13,7 @@
 //      --forzar: cierra aunque su «Verificar:» no se cumpla; --sin-doc: ESTADO.md y PIPELINE.md se miraron y siguen siendo ciertos)
 //      Por defecto no se cierra porque un cierre sin querer borra un punto con trabajo pendiente (pasó con el 407).
 import { execFileSync, spawnSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync, mkdirSync, writeFileSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -46,6 +46,17 @@ if (!ENSAYO) {
   const v = node(['tools/todo.mjs', '--verificar']);
   const l = (v.stdout || '').split('\n').find((x) => new RegExp(`\\b${id} ·`).test(x));
   l ? (/CUMPLE/.test(l) ? ok(`TODO: el punto ${id} cumple su «Verificar:»`) : mal(`TODO: el punto ${id} no cumple su «Verificar:» (${l.trim().slice(0, 100)})`)) : mal(`TODO: no existe el punto ${id}`);
+}
+
+// 1b. la propuesta del punto (Admin/propuestas/<id>-*.md) cumplió su función al cerrarlo: pasa a Admin/Archive/propuestas/ con un banner (lo que servía ya está en PIPELINE, HALLAZGOS o el CHANGELOG)
+if (!ENSAYO) {
+  const dir = resolve(ROOT, 'Admin', 'propuestas'); let movidas = [];
+  try { movidas = readdirSync(dir).filter((f) => f.startsWith(`${id}-`) && f.endsWith('.md')); } catch { /* sin carpeta */ }
+  if (movidas.length) {
+    const dest = resolve(ROOT, 'Admin', 'Archive', 'propuestas'); mkdirSync(dest, { recursive: true });
+    for (const f of movidas) { const t = readFileSync(resolve(dir, f), 'utf8'); writeFileSync(resolve(dest, f), `> **ARCHIVADO el ${new Date().toISOString().slice(0, 10)}** al cerrar el punto ${id}: lo que servía quedó en \`Admin/PIPELINE.md\`, \`Admin/HALLAZGOS-pipeline.md\` o el CHANGELOG. Las rutas y números son los de ese día.\n\n${t}`); unlinkSync(resolve(dir, f)); }
+    ok(`propuesta archivada: ${movidas.map((f) => `Admin/Archive/propuestas/${f}`).join(', ')}`);
+  }
 }
 
 // 2. el índice de los .md
