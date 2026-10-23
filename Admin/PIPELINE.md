@@ -654,8 +654,8 @@ solo esos 4 cambian, 0 filas a la cola, 0 categorías distintas.
                   club la tiene con monto (Beerschot 2019, 2020 y 2022 toman el de 2025: "Cuotas sociales") ─► taquilla o entradas en 0 (en fútbol, Estadio) con cierre del 2020-03-31 al 2021-12-31:
                   real (ventana COVID; sin cierre conocido, el año 2021; el ajuste `covid-omitir` lo apaga) ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
                   (298 p1) EL PERFIL ES POR AÑO: cada chequeo (respuesta de la cola, forma jurídica, revisión) guarda el año del documento y
-                  vale para los años a menos de 5 (perfil-clubes.mjs, perfilVigente). Fuera de toda ventana se vuelve a preguntar, UNA vez por
-                  club, campo y tramo, y la respuesta de cualquier documento del club en la ventana sirve. Un chequeo que contradice al más
+                  vale para los años a menos de 5 (perfil-clubes.mjs, perfilVigente). Fuera de la ventana vale igual el chequeo más cercano
+                  del club (perfilCercano), con un aviso del año del que sale: no se vuelve a preguntar. Un chequeo nuevo que contradice al más
                   cercano abre `perfil-cambio` (revisar los años cargados entre los dos; no frena). Las líneas viejas sin año no cuentan.
  LO QUE CERRÓ EN LA ETAPA 6 (Versiones 375-378): financiero e impuesto con el signo con que cerró; una fila verificada con lado no se mueve
                   por palabras ni se excluye sola por "no es rubro" dudoso

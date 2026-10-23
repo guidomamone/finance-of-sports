@@ -6,7 +6,7 @@
 
 ---
 
-## Versión 299 — to-do 105 #1: `tools/prepare-onboarding.mjs`, construido y probado (todavía sin conectar a ningún skill)
+## Versión 299 — to-do 105 #1: `tools/prepare-onboarding.mjs`, construido y probado (todavía sin conectar a ningún skill) [~prepare-onboarding.mjs, ~sum-check.mjs, ~extract-table-rows.mjs]
 
 - **Nueva tool, pensada para correr desde la terminal de Guido** (no desde una sesión de Claude):
   orquesta extract-table-rows + sum-check + suggest-category-precedent + lookup-club-league de una
@@ -22,7 +22,7 @@
 - **Todavía NO conectada a `club-or-year-onboarding`/`club-data-mapping`** a pedido explícito de
   Guido, para seguir probando antes de fijar el paso en los skills.
 
-## Versión 298 — to-do 103 cerrado: SEGUNDO error real encontrado en River 2021 "Amortización de software" ($12.326.234, no $12.326.254)
+## Versión 298 — to-do 103 cerrado: SEGUNDO error real encontrado en River 2021 "Amortización de software" ($12.326.234, no $12.326.254) [~sum-check.mjs, ~audit.js, ~gemini-transcribe.mjs]
 
 - **`data/river-data.js`, Ejercicio 2021**: el dato que estaba cargado en producción para
   "Amortización de software" (`-12.326254`, $12.326.254) era en sí mismo un error, distinto del que
@@ -38,7 +38,7 @@
   `data/rankings/*.js` (afectado además por el fix de `ceara-br` de la Versión 297),
   `Admin/ESTADO-clubes.md` y `fuentes.html`/páginas de club.
 
-## Versión 297 — to-do 104 arreglado (heurística de tabla en `fetch-club-league-reference.mjs`), 2 ligas más cacheadas, y guía de ritmo de onboarding en el skill
+## Versión 297 — to-do 104 arreglado (heurística de tabla en `fetch-club-league-reference.mjs`), 2 ligas más cacheadas, y guía de ritmo de onboarding en el skill [~fetch-club-league-reference.mjs, ~suggest-category-precedent.mjs]
 
 - **to-do 104 cerrado**: `tools/fetch-club-league-reference.mjs` tomaba la PRIMERA tabla wikitable de
   la sección "Teams", que a veces no es el roster (Grecia). Ahora extrae todas las tablas de la
@@ -67,7 +67,7 @@
 - León (venta sin cerrar) y SIIS Colombia/León-Pachuca (ya resueltos) quedan como estaban, solo
   reordenados para separar lo cerrado de lo que sigue en puro monitoreo.
 
-## Versión 295 — ronda de 5 onboardings de prueba de los tools del to-do 98/95, y plan de velocidad (to-do 105)
+## Versión 295 — ronda de 5 onboardings de prueba de los tools del to-do 98/95, y plan de velocidad (to-do 105) [~suggest-category-precedent.mjs, ~audit.js, ~fetch-club-league-reference.mjs, ~prepare-onboarding.mjs]
 
 - **Once Caldas Ejercicios 2022 y 2023 cargados** (Colombia, años nuevos de club ya cargado):
   ingresos/gastos reconciliados exacto en los dos. `suggest-category-precedent.mjs` sugirió 15/16
@@ -98,7 +98,7 @@
   `tools/prepare-onboarding.mjs` que corra todo lo mecánico de una sola vez antes de que arranque
   la sesión de Claude, sin construir todavía.
 
-## Versión 294 — to-do 98, paso 5 (tier 0): sugerir categoría por precedente del mismo club, y skills al día
+## Versión 294 — to-do 98, paso 5 (tier 0): sugerir categoría por precedente del mismo club, y skills al día [~suggest-category-precedent.mjs, ~extract-table-rows.mjs, ~sum-check.mjs, ~resolve-wikipedia-season-page.mjs, ~fetch-club-league-reference.mjs, +1]
 
 - **`tools/suggest-category-precedent.mjs` nuevo**: si un rubro nuevo tiene el mismo texto que uno ya
   categorizado en un año anterior del MISMO club, lo sugiere en vez de que Claude decida de cero.
@@ -114,7 +114,7 @@
   del to-do 95 (`resolve-wikipedia-season-page.mjs` → `fetch-club-league-reference.mjs` →
   `lookup-club-league.js`) en el paso de `data/club-leagues/<iso2>.js`.
 
-## Versión 293 — Once Caldas Ejercicio 2024 cargado: validación real del to-do 98 (y el to-do 95 en simultáneo)
+## Versión 293 — Once Caldas Ejercicio 2024 cargado: validación real del to-do 98 (y el to-do 95 en simultáneo) [~extract-table-rows.mjs, ~sum-check.mjs]
 
 - **to-do 98 validado con un onboarding real**: Once Caldas Ejercicio 2024 (Colombia), usando
   `tools/extract-table-rows.mjs` para navegar el documento. Ingresos y gastos reconciliados EXACTO
@@ -132,7 +132,7 @@
   Ejercicio 2025 de este club. `tax` cargado como residuo, documentado explícito.
 - `ASSET_V` 289→290 (tocó `data/`), 3 generadores corridos.
 
-## Versión 292 — to-do 95 corregido: sí se puede automatizar, con las páginas de TEMPORADA de Wikipedia
+## Versión 292 — to-do 95 corregido: sí se puede automatizar, con las páginas de TEMPORADA de Wikipedia [~resolve-wikipedia-season-page.mjs, ~fetch-club-league-reference.mjs, ~lookup-club-league.js]
 
 - La evaluación de la Versión 291 había mirado las fuentes equivocadas (página del club, RSSSF) y
   concluyó que no alcanzaba. Guido corrigió: la página de la TEMPORADA en Wikipedia (no la del club)
@@ -144,7 +144,7 @@
   Boyacá Chicó) y Noruega 2019 (16 equipos, incluido Lillestrøm).
 - Detalle completo en el to-do 95 de `Admin/TODO.md` y en `tools/club-league-reference/README.md`.
 
-## Versión 291 — to-do 98 (paso 4) y to-do 95: prototipos probados, sin integrar todavía
+## Versión 291 — to-do 98 (paso 4) y to-do 95: prototipos probados, sin integrar todavía [~extract-table-rows.mjs, ~lookup-club-league.js]
 
 - **to-do 98, paso 4**: `tools/extract-table-rows.mjs` (prototipo, no integrado a ningún flujo) saca
   las tablas Markdown de un `.md` transcripto a JSON compacto, sin convertir los números a float.
@@ -238,7 +238,7 @@
   año (no se les cargó el detalle por ejercicio, no hay entre qué elegir) — trade-off aceptado a
   propósito por la diferencia de costo.
 
-## Versión 284 — fix real: `--redo-mistral-scanned` podía borrar transcripciones sin reemplazo
+## Versión 284 — fix real: `--redo-mistral-scanned` podía borrar transcripciones sin reemplazo [~gemini-transcribe.mjs]
 
 - **Incidente, 2026-09-28**: Guido corrió `node tools/gemini-transcribe.mjs --redo-mistral-scanned`
   (Grecia/Italia/Noruega, ~203 PDFs marcados como escaneados por Mistral) y lo cerró a mitad de
@@ -283,7 +283,7 @@
   activa, agrupado por continente igual que el picker: cambiar de liga ahí recalcula la simulación
   para el mismo club sin volver atrás (ej. Brasileirão Série A → Série B en un clic).
 
-## Versión 281 — to-do 83: "¿cómo le iría este club en otra liga?"
+## Versión 281 — to-do 83: "¿cómo le iría este club en otra liga?" [~generate-rankings.js]
 
 - Simulación por plata (NO predicción deportiva): desde la ficha de Finanzas de un club, botón
   "¿Cómo le iría en otra liga?" → se elige la liga destino → el club se inserta en el ranking real
@@ -307,7 +307,7 @@
   principio que ya usaba con `pickClub`/`goFinanzas`. El botón se esconde en modo "Por gestión": la
   simulación es de UN ejercicio puntual, el motor real no calcula por rango de gestión.
 
-## Versión 280 — River Plate: 4 balances reales nuevos encontrados vía CNV, y un fix a `wayback-verify-download.mjs`
+## Versión 280 — River Plate: 4 balances reales nuevos encontrados vía CNV, y un fix a `wayback-verify-download.mjs` [~wayback-verify-download.mjs]
 
 - **Hallazgo grande, sourcing (pedido explícito de Guido)**: River es emisor regulado por la
   Comisión Nacional de Valores desde su primera Obligación Negociable (feb. 2025) y al inscribirse
@@ -477,7 +477,7 @@
   el sourcing normal ya dejó anotado un video como lead (no se sale a buscar videos de forma
   proactiva en cada club). Ambos to-dos borrados de `Admin/TODO.md`.
 
-## Versión 269 — to-do 80: X/Twitter sí rinde como sourcing en Argentina, pagando un revendedor barato
+## Versión 269 — to-do 80: X/Twitter sí rinde como sourcing en Argentina, pagando un revendedor barato [~twitterapiio-search.mjs]
 
 - Investigado si X tenía un atajo gratis tipo Arctic Shift/PullPush (Reddit, to-do 81): no lo tiene,
   y su situación es peor — la API oficial no tiene NINGÚN tier gratis desde 2026 (pay-per-use puro,
@@ -497,7 +497,7 @@
   club esté agotado en las 4 familias de siempre y tenga cuenta oficial de X activa. To-do 80 cerrado
   y borrado de `Admin/TODO.md`.
 
-## Versión 268 — to-do 81 cerrado: Reddit rinde como sourcing, pero por tamaño de subreddit, no por país
+## Versión 268 — to-do 81 cerrado: Reddit rinde como sourcing, pero por tamaño de subreddit, no por país [~reddit-archive-search.mjs]
 
 - Piloto en 3 pasos. (1) `WebSearch`/Exa no llegan a `reddit.com` en absoluto (confirmado con
   `includeDomains` real y una query de control sin fútbol) — mismo límite de HERRAMIENTA que el
@@ -533,7 +533,7 @@
   para un lead sin verificar todavía. No se carga ni categoriza nada hasta confirmarlo contra el
   original.
 
-## Versión 266 — to-do 80, paso 1: confirmado que Exa no cubre X/Twitter gratis
+## Versión 266 — to-do 80, paso 1: confirmado que Exa no cubre X/Twitter gratis [~exa-search.mjs]
 
 - 4 queries de prueba con `tools/exa-search.mjs` (2 generales de asambleas/balances mencionando
   Twitter, 1 puntual sobre Argentinos Juniors/@AAAJoficial, 1 con `site:twitter.com OR site:x.com`
@@ -564,7 +564,7 @@
 - To-do 72 borrado (resuelto); su referencia cruzada en el to-do 59 actualizada para no apuntar a un
   to-do ya cerrado.
 
-## Versión 264 — to-do 91 cierra el loop: skills apuntan a las herramientas nuevas, y un "miss" queda registrado para que Guido lo prepopule
+## Versión 264 — to-do 91 cierra el loop: skills apuntan a las herramientas nuevas, y un "miss" queda registrado para que Guido lo prepopule [~lookup-fx-close.js, ~lookup-brand-color.js]
 
 - `club-data-mapping/SKILL.md` sección 5 y `club-or-year-onboarding/SKILL.md` sección 3 punto 1b:
   ambas apuntan ahora a `tools/lookup-fx-close.js`/`tools/lookup-brand-color.js` ANTES de salir a
@@ -578,7 +578,7 @@
   rastro. Nuevo flag `--misses` en los dos scripts para ver el resumen (deduplicado) sin abrir el
   JSONL a mano.
 
-## Versión 263 — to-do 91 ampliado: 3 monedas (no solo ARS) y 5 ligas (no solo 3), a pedido de Guido
+## Versión 263 — to-do 91 ampliado: 3 monedas (no solo ARS) y 5 ligas (no solo 3), a pedido de Guido [~fetch-fx-reference.mjs, ~lookup-fx-close.js, ~fetch-brand-color-reference.mjs]
 
 - `tools/fetch-fx-reference.mjs` ahora baja 3 series, no solo ARS — las 3 monedas con más clubes ya
   cargados en el sitio: **BRL** (BCB, API pública, PTAX de cierre-venda, 4.203 cotizaciones desde
@@ -598,7 +598,7 @@
   verdad (`node tools/fetch-brand-color-reference.mjs <slug> <nombre>`, un comando), no
   preemptivamente las 29.
 
-## Versión 262 — to-do 91: FX y brandColor precargados en lote, en vez de buscar uno por uno por club
+## Versión 262 — to-do 91: FX y brandColor precargados en lote, en vez de buscar uno por uno por club [~fetch-fx-reference.mjs, ~lookup-fx-close.js, ~fetch-brand-color-reference.mjs, ~lookup-brand-color.js]
 
 - `tools/fetch-fx-reference.mjs` + `tools/fx-reference/ars-usd.json`: serie histórica completa del
   dólar mayorista BCRA (Comunicación A 3500), 5.828 cotizaciones de 2003 a hoy, bajada de la API
@@ -660,7 +660,7 @@
 - `start-session-finance-of-sports-project/SKILL.md`: corregido el peso declarado de `club-sourcing`
   en la tabla de arranque (113 KB → 33 KB + el archivo del país).
 
-## Versión 258 — to-do 86: limpieza completa de `Clubes/Colombia/Envigado/estados-financieros-2023.md` y `2024.md`
+## Versión 258 — to-do 86: limpieza completa de `Clubes/Colombia/Envigado/estados-financieros-2023.md` y `2024.md` [~check-transcripcion-fidelidad.js]
 
 - `2023.md`: los 5 placeholders en inglés (obligaciones financieras y beneficios a empleados en el
   Estado de Situación Financiera, firmas del Estado de Resultado Integral, movimientos de capital,
@@ -691,7 +691,7 @@
   P3 de "página corta", señal débil, sin resolver — no ameritan más que revisión humana eventual).
 - `Admin/TODO.md`: to-do 86 borrado (resuelto).
 
-## Versión 257 — el chequeo de fidelidad de transcripción queda cableado al pipeline, no es un paso suelto
+## Versión 257 — el chequeo de fidelidad de transcripción queda cableado al pipeline, no es un paso suelto [~mistral-ocr-transcribe.mjs, ~gemini-transcribe.mjs, ~check-transcripcion-fidelidad.js]
 
 - `tools/mistral-ocr-transcribe.mjs` y `tools/gemini-transcribe.mjs`: corren `check-transcripcion-fidelidad.js`
   automáticamente sobre cada `.md` recién escrito (un `execFileSync` a Node, sin costo — el chequeo no
@@ -704,7 +704,7 @@
   chequeo tiene más chance real de encontrar algo que en Mistral (que es un motor de extracción, no un
   chat, y no debería caer en este patrón).
 
-## Versión 256 — `tools/check-transcripcion-fidelidad.js` (to-do 90): chequeo de fidelidad de transcripción por contenido, no solo páginas
+## Versión 256 — `tools/check-transcripcion-fidelidad.js` (to-do 90): chequeo de fidelidad de transcripción por contenido, no solo páginas [~check-transcripcion-fidelidad.js, ~audit.js]
 
 - Script nuevo, corre sobre cualquier `.md` bajo `Clubes/` con marcas de página: detecta placeholders
   de contenido en inglés (bloque entero, ej. `[Complex depreciation table...]`, o cortos dentro de una
@@ -760,7 +760,7 @@
   de sus primeras ~15-20 páginas (y las de `2024.md`) también vienen corridas — no se tocó por
   estar fuera del rango pedido. Ver to-do 86.
 
-## Versión 253 — Club Almagro (Argentina, Primera Nacional): club nuevo, 6 ejercicios reales (2018-2023)
+## Versión 253 — Club Almagro (Argentina, Primera Nacional): club nuevo, 6 ejercicios reales (2018-2023) [~generate-club-index.js, ~generate-fuentes-page.js, ~generate-rankings.js]
 
 - `data/almagro-ar-data.js` nuevo: 6 balances auditados reales (Ejercicios 80-85, cierre 31/10 de
   cada año 2018-2023), motor genérico. Los 6 cierran exacto contra sus propios totales impresos.
@@ -780,7 +780,7 @@
 - 2 preguntas nuevas en `Admin/dudas-por-club.md` (categorización de "Asignacion Extraordinaria
   A.F.A." y "Gastos de alimentos", ninguna cubierta al 100% por `club-data-mapping/SKILL.md`).
 
-## Versión 252 — dos herramientas nuevas en `tools/` para el gotcha de Wayback CDX (to-dos 78 y 79)
+## Versión 252 — dos herramientas nuevas en `tools/` para el gotcha de Wayback CDX (to-dos 78 y 79) [~wayback-cdx.mjs, ~wayback-verify-download.mjs]
 
 - `tools/wayback-cdx.mjs`: cliente de la CDX API de Wayback Machine con paginación real
   (`resumeKey`, no solo la primera página de 1000 filas) y reintento con backoff exponencial ante
@@ -816,7 +816,7 @@
   estilo de terminal (`.term`, nuevo en el CSS) — antes los 2 comandos estaban sueltos en una tabla
   sin el resto del flujo.
 
-## Versión 250 — `COMO-CORRE-EL-PROYECTO.html` remedido entero + sus 4 números clave ya no se tipean a mano
+## Versión 250 — `COMO-CORRE-EL-PROYECTO.html` remedido entero + sus 4 números clave ya no se tipean a mano [~generate-como-corre-stats.js, ~audit.js, ~generate-fuentes-page.js, ~gemini-transcribe.mjs, ~mistral-ocr-transcribe.mjs]
 
 - Pedido de Guido: "hay más clubes, más países, más ligas, se puede hacer que no esté hardcoded eso?",
   después de notar que el mapa de procesos seguía diciendo "41 clubes · 6 países" con el sitio ya en
@@ -860,7 +860,7 @@
   el paso 02 con quién transcribe, cuándo, costo por documento y el límite conocido de cada uno).
   Ningún archivo repite el detalle completo — los tres apuntan a `Admin/test-costo-transcripcion.md`.
 
-## Versión 248 — `tools/mistral-ocr-transcribe.mjs`: 3 bugs reales y advertencia de escaneo
+## Versión 248 — `tools/mistral-ocr-transcribe.mjs`: 3 bugs reales y advertencia de escaneo [~mistral-ocr-transcribe.mjs]
 
 - **Bug de tablas (crítico)**: el `markdown` de cada página de Mistral OCR trae las tablas como un
   link-placeholder (`[tbl-0.md](tbl-0.md)`) en vez del contenido — vive aparte en `page.tables[]`.
@@ -924,7 +924,7 @@
   `fuentes/_indice/Argentina.md` completo; regenerado `fuentes/README.md` (369 de 571 clubes con
   documento, +1). `Admin/inventario-pendiente.md` suma la entrada de Almagro.
 
-## Versión 245 — `gemini-transcribe.mjs` pasa a `tools/` con modo lote `--all`
+## Versión 245 — `gemini-transcribe.mjs` pasa a `tools/` con modo lote `--all` [~gemini-transcribe.mjs, ~audit.js, ~generate-rankings.js]
 
 - Guido preguntó cuántos tokens de Claude le costaría pedirme que mande 1000 PDFs a Gemini uno por
   uno — la respuesta honesta es "bastantes, y no entra en una sola sesión" si lo hago yo archivo por
@@ -936,7 +936,7 @@
   con el resto de las herramientas del proyecto (`audit.js`, `generate-rankings.js`, etc.). La API key
   se movió con él, a `Admin/gemini/.env` (gitignoreada, mismo criterio que la de Resend).
 
-## Versión 244 — test de costo/calidad de transcripción Sonnet vs Haiku vs Gemini (cierra el to-do 66)
+## Versión 244 — test de costo/calidad de transcripción Sonnet vs Haiku vs Gemini (cierra el to-do 66) [~gemini-transcribe.mjs]
 
 - **Resultado en `Admin/test-costo-transcripcion.md`**: 30 PDFs reales de Colombia, 10 por pata.
   Gemini 3.8 Flash salió más barato ($0,09/doc en promedio, 0 tokens de Claude), más rápido, y el
@@ -951,7 +951,7 @@
   26 completas y usables, 4 (de la pata Haiku) marcadas con una advertencia al principio del archivo
   por páginas faltantes, pendientes de completar antes de usarse para cargar datos.
 
-## Versión 243 — tres mejoras a la pestaña Ligas (cierra el to-do 68)
+## Versión 243 — tres mejoras a la pestaña Ligas (cierra el to-do 68) [~generate-rankings.js]
 
 - **Orden por división, no alfabético** (`ligasDePaisAlfa()`, `js/liga.js`): cuando un país tiene
   más de una liga cargada, la grilla de `estadoFrio()` ahora las ordena por `LEAGUES[lid].tier`
@@ -969,7 +969,7 @@
   en `data/rankings/<liga>.js` viene de la Versión 182, hasta ahora solo se leía para el aviso del
   bolsón sin desglosar. No hizo falta tocar `tools/generate-rankings.js`.
 
-## Versión 242 — tooltip "?" en México, explica por qué el país casi no tiene clubes (cierra el to-do 47)
+## Versión 242 — tooltip "?" en México, explica por qué el país casi no tiene clubes (cierra el to-do 47) [~audit.js]
 
 - **El paso "País" del selector (`js/selector.js`)**: la fila de México, además del flag y "1 club",
   ahora lleva un círculo "?" (`op.info` en `PASOS_FILTRO`, sección `country`). Hover en desktop,
@@ -993,7 +993,7 @@
   recortado), no selecciona México al abrirse, y seleccionar la fila (fuera del "?") sigue marcando el
   país con normalidad. `node tools/audit.js`: 0 P0, 0 P1, 0 P2 (igual que antes de esta sesión).
 
-## Versión 241 — brandColor al onboarding, eje `datos` de la auditoría por país, sentinel de liga sin catálogo (to-dos 56 y 64)
+## Versión 241 — brandColor al onboarding, eje `datos` de la auditoría por país, sentinel de liga sin catálogo (to-dos 56 y 64) [~audit.js]
 
 - **`club-or-year-onboarding/SKILL.md`**: nuevo paso en el checklist de cierre — un club NUEVO
   verifica su `brandColor` contra el escudo real (Browser pane) antes de cerrar la sesión, una sola
@@ -1023,7 +1023,7 @@
 - `ASSET_V` 239 → 240 (se tocaron `data/clubs.js` y `data/club-leagues.js`); regenerados
   `fuentes.html` + sus 161 páginas de club y `sitemap.xml`.
 
-## Versión 240 — unificar "derechos de formación / mecanismo de solidaridad" a `player_sales` (to-do 43)
+## Versión 240 — unificar "derechos de formación / mecanismo de solidaridad" a `player_sales` (to-do 43) [~audit.js]
 
 - Recategorizadas a `player_sales` las líneas de ingreso que representan derechos de
   formación/mecanismo de solidaridad FIFA (plata cobrada por jugadores formados en el club y
@@ -1052,7 +1052,7 @@
   `data/rankings/{ar-primera,br-serieA,br-serieB}.js`, `fuentes.html` + sus 161 páginas de club y
   `sitemap.xml`.
 
-## Versión 239 — se parte el bloque CLUB-INDEX de `Admin/ESTADO.md` a un archivo propio (to-do 63)
+## Versión 239 — se parte el bloque CLUB-INDEX de `Admin/ESTADO.md` a un archivo propio (to-do 63) [~audit.js, ~generate-club-index.js]
 
 - `Admin/ESTADO.md` se acercaba al umbral de 60 KB que usa `tools/audit.js` (55,98 KB a 161 clubes,
   de los cuales 12,35 KB eran el bloque `CLUB-INDEX:START`...`CLUB-INDEX:END` generado por
@@ -1072,7 +1072,7 @@
 - `node tools/audit.js`: P0 0, P1 0 (los P1 que aparecen en una corrida en paralelo son de datos sin
   commitear de otra sesión concurrente en el mismo working tree, no de este cambio).
 
-## Versión 238 — CSS de `index.html` a `js/styles.css` (to-do 65)
+## Versión 238 — CSS de `index.html` a `js/styles.css` (to-do 65) [~generate-fuentes-page.js, ~audit.js]
 
 - Sacado el bloque `<style>` inline de `index.html` (754 líneas, líneas 31-786) a
   `js/styles.css` nuevo, referenciado con `<link rel="stylesheet" href="js/styles.css?v=238">`,
@@ -1087,7 +1087,7 @@
 - Verificado en el navegador (desktop y mobile, Inicio y Finanzas) que el sitio se ve idéntico
   antes/después del split. `node tools/audit.js`: P0 0, P1 0 (igual que antes del cambio).
 
-## Versión 237 — chequeo de git post-auditorías + 2 to-dos nuevos (saved searches, commit pendiente)
+## Versión 237 — chequeo de git post-auditorías + 2 to-dos nuevos (saved searches, commit pendiente) [~audit.js]
 
 - `tools/audit-ignore.json`: 2 entradas nuevas para `ruta-muerta` (`Admin/ESTADO-clubes.md` y
   `Admin/test-costo-transcripcion.md`, ambos nombres de archivo PROPUESTOS dentro de to-dos
@@ -1105,7 +1105,7 @@
   todavía, así que se deja para que alguien lo revise y commitee con criterio en vez de hacerlo a
   ciegas.
 
-## Versión 236 — decisión de Guido: partir el eje `datos` por país + mover `brandColor` al onboarding
+## Versión 236 — decisión de Guido: partir el eje `datos` por país + mover `brandColor` al onboarding [~audit.js]
 
 - Sesión de consejo (sin tocar código ni skills): midió en frío `tools/audit.js` — 0,56-0,58s CPU a
   161 clubes contra 0,28s a 41 (2026-09-17), sub-lineal (exponente ~0,53), proyectado ~2,8s incluso
@@ -1122,7 +1122,7 @@
   la dependencia entre (a) y (b), y los tamaños reales por país (Brasil 32, España/Reino Unido 19,
   Argentina 18) para calibrar el alcance de una corrida — sin implementar todavía.
 
-## Versión 235 — auditoría de tokens (161 clubes, eje `tokens`), cierra la tercera vuelta de la rotación
+## Versión 235 — auditoría de tokens (161 clubes, eje `tokens`), cierra la tercera vuelta de la rotación [~audit.js]
 
 - `auditorias/2026-09-26-tokens.md`, corrida completa del eje `tokens`, contra la línea de base
   `2026-09-20-tokens.md` (41 clubes). El piso de arranque obligatorio creció 49% (119→179 KB)
@@ -1147,7 +1147,7 @@
 - Corrida en paralelo con `docs` (Versión 234) y el mismo día que `datos`/`escala`/`código`
   (231-233): con las cinco, se cierra la tercera vuelta completa de la rotación.
 
-## Versión 234 — auditoría de docs (161 clubes, eje `docs`), corrida en paralelo con `tokens`
+## Versión 234 — auditoría de docs (161 clubes, eje `docs`), corrida en paralelo con `tokens` [~audit.js]
 
 - `auditorias/2026-09-26-docs.md`, corrida completa del eje `docs` (la anterior era
   `2026-09-20-docs.md`, 41 clubes).
@@ -1197,7 +1197,7 @@
   `auditorias/2026-09-26-escala.md` (`escala`, Versión 230, otra sesión). Con las tres, faltan
   `docs` y `tokens` para cerrar la tercera vuelta completa de la rotación.
 
-## Versión 232 — pestaña Ligas: botón de volver, cards por continente
+## Versión 232 — pestaña Ligas: botón de volver, cards por continente [~generate-fuentes-page.js]
 
 - `js/liga.js`: al elegir una liga no había forma de volver al estado frío (la grilla de ligas) más
   que el nav, que además la reconstruye de cero. Nuevo botón "‹ Volver a Ligas" arriba de la liga
@@ -1214,7 +1214,7 @@
 - `ASSET_V` 229 → 231 (231 para no pisar la 230 de la auditoría de escala concurrente) y
   `node tools/generate-fuentes-page.js` corrido de nuevo por el bump.
 
-## Versión 231 — auditoría de datos (161 clubes, eje `datos`), se cierra la segunda vuelta de la rotación
+## Versión 231 — auditoría de datos (161 clubes, eje `datos`), se cierra la segunda vuelta de la rotación [~audit.js, ~generate-fuentes-page.js]
 
 - `auditorias/2026-09-26.md`, corrida completa del eje `datos` de `auditoria-finance-of-sports`,
   contra la última corrida de este eje (`2026-09-13.md`, 41 clubes). Los 7 grupos de P2 de esa línea
@@ -1237,7 +1237,7 @@
 - Corrida concurrente el mismo día: `auditorias/2026-09-26-escala.md` (Versión 230, otra sesión). Los
   dos reportes se referencian entre sí para no duplicar mediciones.
 
-## Versión 230 — auditoría de escala (161 clubes, eje `escala`)
+## Versión 230 — auditoría de escala (161 clubes, eje `escala`) [~audit.js]
 
 - `auditorias/2026-09-26-escala.md`, corrida completa del eje `escala` de
   `.claude/skills/escala-finance-of-sports/`, la primera desde el 2026-09-17 (41→161 clubes en 9
@@ -1315,7 +1315,7 @@
 - `Admin/TODO.md` punto 61 apunta a este archivo con los números resumidos, sin duplicar el detalle.
   No se tocó ningún `data/*.js` ni `ASSET_V` — es trabajo puramente de documentación/sourcing.
 
-## Versión 227 — 20 transcripts más (15 clubes nuevos + 7 ejercicios), sin dead-ends esta vez
+## Versión 227 — 20 transcripts más (15 clubes nuevos + 7 ejercicios), sin dead-ends esta vez [~audit.js]
 
 - De 146 a 161 clubes cargados, 269 a 291 ejercicios. Pedido de Guido: "20 más" (misma sesión que la
   Versión 226). A diferencia de la tanda anterior, esta vez se priorizó a propósito PAÍSES YA
@@ -1365,7 +1365,7 @@
   Sint-Truiden/DMM, Cercle Brugge/Monaco—, un restatement de Botafogo 2024 sin resolver) — detalle
   completo ahí, sección "2da tanda de 20 transcripts más".
 
-## Versión 226 — 20 transcripts al azar, sin prioridad de país (15 clubes nuevos + 5 ejercicios)
+## Versión 226 — 20 transcripts al azar, sin prioridad de país (15 clubes nuevos + 5 ejercicios) [~generate-club-index.js, ~generate-fuentes-page.js, ~generate-rankings.js, ~audit.js]
 
 - De 131 a 146 clubes cargados, 248 a 269 ejercicios. Pedido de Guido: elegir 20 transcripciones ya
   hechas y sin cargar, "no me importa un orden específico" — se armó una lista de ~51 candidatos
@@ -1428,7 +1428,7 @@
   en la fuente, un grossDebt ambiguo, brandColor ambiguo de Sport Recife) — detalle completo ahí,
   sección "Tanda de 20 transcripts al azar".
 
-## Versión 225 — 3 países europeos nuevos (10 clubes): Croacia, Bélgica, Dinamarca
+## Versión 225 — 3 países europeos nuevos (10 clubes): Croacia, Bélgica, Dinamarca [~audit.js]
 
 - De 121 a 131 clubes cargados, 238 a 248 ejercicios. Pedido de Guido esta vez sin prioridad de país
   ("de donde sea, cualquier año, repetir club o no, no importa") — con Sudamérica/España/Inglaterra
@@ -1462,7 +1462,7 @@
   necesitó verificación de descenso salvo Brøndby (Superliga los 2 tramos de su ejercicio calendario
   2020, 4° y luego campeón) — confirmado contra Wikipedia, no asumido.
 
-## Versión 224 — Países Bajos país nuevo (4 clubes) + 6 clubes alemanes grandes: Ajax, PSV, Feyenoord, AZ, Bayern Munich, Borussia Dortmund, RB Leipzig, TSG Hoffenheim, Hamburger SV, Borussia Mönchengladbach
+## Versión 224 — Países Bajos país nuevo (4 clubes) + 6 clubes alemanes grandes: Ajax, PSV, Feyenoord, AZ, Bayern Munich, Borussia Dortmund, RB Leipzig, TSG Hoffenheim, Hamburger SV, Borussia Mönchengladbach [~audit.js]
 
 - De 111 a 121 clubes cargados, 218 a 238 ejercicios. Con Sudamérica/España/Inglaterra ya agotados
   (Versiones 222-223), esta sesión siguió a pedido de Guido "más en Europa": Alemania (país ya
@@ -1524,7 +1524,7 @@
   de amortización de pases; Crystal Palace y Fulham quedan con `brandColor:null` (franjas rojo/azul
   sin predominancia declarada, camiseta blanca, respectivamente, mismo bucket que Levante/River).
 
-## Versión 222 — 3 países sudamericanos nuevos (Chile, Perú) y evaluación de Ecuador: Colo-Colo, Universidad de Chile, Universidad Católica, Alianza Lima
+## Versión 222 — 3 países sudamericanos nuevos (Chile, Perú) y evaluación de Ecuador: Colo-Colo, Universidad de Chile, Universidad Católica, Alianza Lima [~audit.js]
 
 - De 92 a 96 clubes cargados, 178 a 193 ejercicios. Prioridad explícita de Guido: Sudamérica primero.
   3 sesiones en paralelo (worktrees aislados) sobre el pool ya transcripto sin cargar: **Chile**
@@ -1552,7 +1552,7 @@
   worktree). `node tools/audit.js` y `auditAll()` en el navegador, 0 P0/P1/P2, 96 clubes, 551 checks,
   0 mismatches, 0 warnings de fx, 0 clubes sin cargar.
 
-## Versión 221 — 7 clubes nuevos (4to batch de 10 PDF transcriptos pendientes, prioridad Sudamérica): Millonarios, Deportivo Pereira, Guarani, Ponte Preta, RCD Mallorca, Real Oviedo, Rayo Vallecano
+## Versión 221 — 7 clubes nuevos (4to batch de 10 PDF transcriptos pendientes, prioridad Sudamérica): Millonarios, Deportivo Pereira, Guarani, Ponte Preta, RCD Mallorca, Real Oviedo, Rayo Vallecano [~audit.js]
 
 - De 85 a 92 clubes cargados. Pedido explícito: prioridad Sudamérica, España como respaldo si no
   alcanzaba. El pool limpio de Sudamérica ya transcripto y sin cargar dio 8 ejercicios (Colombia:
@@ -1585,7 +1585,7 @@
   creciendo sin límite en cada tanda — el detalle club por club de cada versión ya vive acá, no hace
   falta repetirlo ahí), `fuentes.html` (92 páginas de club) y `data/rankings/<liga>.js`.
 
-## Versión 220 — 11 clubes nuevos (3er batch de 20 PDF transcriptos pendientes, priorizando Brasil y Argentina): Corinthians, Palmeiras, São Paulo, Santos, Internacional, Fluminense, Fortaleza, Bahia, Chapecoense, Vasco da Gama, Ferro Carril Oeste
+## Versión 220 — 11 clubes nuevos (3er batch de 20 PDF transcriptos pendientes, priorizando Brasil y Argentina): Corinthians, Palmeiras, São Paulo, Santos, Internacional, Fluminense, Fortaleza, Bahia, Chapecoense, Vasco da Gama, Ferro Carril Oeste [~audit.js]
 
 - De 74 a 85 clubes cargados. Mismo criterio que las Versiones 217/219 pero pedido explícito de
   priorizar Brasil y Argentina: se relevó `Clubes/Brasil/` y `Clubes/Argentina/` completos y aparecieron
@@ -1631,7 +1631,7 @@
 - Los 3 generadores corridos: `Admin/ESTADO.md`, `fuentes.html` (85 páginas de club) y
   `data/rankings/<liga>.js`.
 
-## Versión 219 — 5 clubes brasileños grandes nuevos (2do batch de 10 PDF transcriptos pendientes): Flamengo, Atlético Mineiro, Athletico Paranaense, Vitória, RB Bragantino
+## Versión 219 — 5 clubes brasileños grandes nuevos (2do batch de 10 PDF transcriptos pendientes): Flamengo, Atlético Mineiro, Athletico Paranaense, Vitória, RB Bragantino [~audit.js]
 
 - De 69 a 74 clubes cargados. Mismo criterio que la Versión 217 pero un pool distinto: en vez de
   ampliar a países nuevos, se relevó `Clubes/Brasil/` completo y aparecieron varios clubes GRANDES
@@ -1665,7 +1665,7 @@
 - Los 3 generadores corridos: `Admin/ESTADO.md`, `fuentes.html` (74 páginas de club) y
   `data/rankings/<liga>.js`.
 
-## Versión 218 — Pipeline de outreach (Etapa 1) probado de punta a punta
+## Versión 218 — Pipeline de outreach (Etapa 1) probado de punta a punta [~outreach-send.js]
 
 - Guido creó la cuenta de Resend, verificó `outreach.financeofsports.com` (DNS en Netlify DNS: DKIM,
   SPF vía 2 CNAME, MX para Receiving, DMARC `p=none` correctamente en `_dmarc.outreach`, no en la
@@ -1684,7 +1684,7 @@
   más clubes brasileños al cerrar esta entrada) — sin conflicto real, pero confirma que sigue siendo
   un riesgo vivo del proyecto (ver `CLAUDE.md`).
 
-## Versión 217 — 4 clubes nuevos (10 PDF transcriptos onboardeados en paralelo): América Mineiro, Operário Ferroviário, Volta Redonda (Brasil) y Unión Magdalena (Colombia)
+## Versión 217 — 4 clubes nuevos (10 PDF transcriptos onboardeados en paralelo): América Mineiro, Operário Ferroviário, Volta Redonda (Brasil) y Unión Magdalena (Colombia) [~audit.js]
 
 - De 65 a 69 clubes cargados. 4 agentes en paralelo (uno por club, sin tocar `data/clubs.js`/
   `category-map.js`/`currency-map.js` para no pisarse) onboardearon los 10 PDF ya transcriptos
@@ -1719,7 +1719,7 @@
 
 ---
 
-## Versión 216 — Proceso de email a clubes rediseñado, Etapa 1 (to-do 51)
+## Versión 216 — Proceso de email a clubes rediseñado, Etapa 1 (to-do 51) [~outreach-send.js]
 
 - Skill nuevo `club-outreach`: reemplaza el diseño original del to-do 51 ("Claude redacta, Guido
   aprueba en el chat, envío por Gmail") por un pipeline que saca el paso de ENVÍO afuera de
@@ -1841,7 +1841,7 @@
 - Se agrega el to-do 60 a `Admin/TODO.md`: re-chequear a mano las 4 transcripciones con OCR de mala
   calidad de esta sesión antes de usarlas para cargar datos.
 
-## Versión 213 — `club-or-year-onboarding` separa criterio de historia, cierra el to-do 57 (3 de 3)
+## Versión 213 — `club-or-year-onboarding` separa criterio de historia, cierra el to-do 57 (3 de 3) [~audit.js]
 
 ### Docs
 - `.claude/skills/club-or-year-onboarding/SKILL.md` — mismo criterio ya aplicado a `club-sourcing`
@@ -1871,7 +1871,7 @@
 - **Con esto se cierra el to-do 57 completo** (las 3 partes: `club-sourcing` Versión 211,
   `club-data-mapping` Versión 212, `club-or-year-onboarding` acá) — se borra de `Admin/TODO.md`.
 
-## Versión 212 — Las 19 secciones de `club-data-mapping` separan criterio de historia (to-do 57, parte 2 de 3)
+## Versión 212 — Las 19 secciones de `club-data-mapping` separan criterio de historia (to-do 57, parte 2 de 3) [~audit.js]
 
 ### Docs
 - `.claude/skills/club-data-mapping/SKILL.md` — mismo criterio de separación ya aplicado a
@@ -1900,7 +1900,7 @@
 - Pendiente (to-do 57, parte 3 de 3): `club-or-year-onboarding/SKILL.md` (885 líneas), mismo
   criterio, sesión aparte.
 
-## Versión 211 — Las 29 secciones de país de `club-sourcing` separan criterio de historia (to-do 57, parte 1 de 3)
+## Versión 211 — Las 29 secciones de país de `club-sourcing` separan criterio de historia (to-do 57, parte 1 de 3) [~audit.js]
 
 ### Docs
 - `.claude/skills/club-sourcing/SKILL.md` — pasada completa sobre las 29 secciones de país (sección
@@ -1929,7 +1929,7 @@
 - Pendiente (to-do 57, partes 2 y 3): `club-data-mapping/SKILL.md` (1049 líneas) y
   `club-or-year-onboarding/SKILL.md` (885 líneas), mismo criterio, sesiones separadas.
 
-## Versión 210 — Metodología de sourcing: escalera de ángulos, snapshot de intentos y criterio de escalada (to-do 52)
+## Versión 210 — Metodología de sourcing: escalera de ángulos, snapshot de intentos y criterio de escalada (to-do 52) [~generate-fuentes-index.js]
 
 ### Docs
 - `.claude/skills/club-sourcing/SKILL.md`, sección 0 ampliada con tres subsecciones nuevas (91 → 115
@@ -1953,7 +1953,7 @@
   `fuentes/_indice/<País>.md` que parsea `tools/generate-fuentes-index.js` — verificado que el
   snapshot nuevo vive en el archivo de club, que ese script ni abre.
 
-## Versión 209 — Rosario Central e Independiente suman un 2do ejercicio cada uno, cierra el to-do 58
+## Versión 209 — Rosario Central e Independiente suman un 2do ejercicio cada uno, cierra el to-do 58 [~generate-fuentes-index.js]
 
 ### Datos
 - **Rosario Central, Ejercicio 2024-25 (cierre 30/6/2025)**: la nota de sourcing decía "escaneo sin
@@ -2013,7 +2013,7 @@
   River/Vélez/Sevilla). Liga confirmada Primera División en los 4 ejercicios (sin descenso desde
   ~2015, según en.wikipedia.org).
 
-## Versión 207 — Talleres, Newell's Old Boys y Banfield: los primeros 3 de la 58, los 3 sin OCR
+## Versión 207 — Talleres, Newell's Old Boys y Banfield: los primeros 3 de la 58, los 3 sin OCR [~audit.js]
 
 ### Datos
 - **Talleres (Córdoba), club nuevo (`talleres-ar`) → 2 ejercicios completos**: Estados Contables
@@ -2099,7 +2099,7 @@
   CUIT, para cuando Guido decida iniciarlo. El to-do 53 sale de la lista: la parte buscable ya se
   buscó.
 
-## Versión 203 — Limpieza rápida: audit.js en verde, título de ESTADO.md y Riesgos de escala afuera
+## Versión 203 — Limpieza rápida: audit.js en verde, título de ESTADO.md y Riesgos de escala afuera [~audit.js, ~generate-fuentes-index.js, ~generate-club-index.js]
 
 ### Arreglado
 - `node tools/audit.js` vuelve a 0 P0/P1/P2 (to-do 48). El P1 `fuentes-indice-desfasado` se resolvió
@@ -2147,7 +2147,7 @@
 ### Pendiente
 - Pasó a `Admin/TODO.md`, puntos 48, 49 y 50 (la lista de pendientes vive solo ahí).
 
-## Versión 201 — 20 clubes nuevos, 2 países nuevos (Alemania e Inglaterra) y la libra esterlina
+## Versión 201 — 20 clubes nuevos, 2 países nuevos (Alemania e Inglaterra) y la libra esterlina [~audit.js]
 
 ### Agregado
 - 20 clubes nuevos, todos sus ejercicios ya transcriptos en `Clubes/` (ninguno requirió sourcing
@@ -2206,7 +2206,7 @@
 - Los 4 generadores corridos: `Admin/ESTADO.md`, `fuentes.html` (61 páginas de club),
   `data/rankings/*.js` (12 ligas) y `fuentes/README.md`.
 
-## Versión 200 — Una ruta gitignoreada deja de contar como ruta muerta, y queda el protocolo de trabajo en paralelo
+## Versión 200 — Una ruta gitignoreada deja de contar como ruta muerta, y queda el protocolo de trabajo en paralelo [~audit.js]
 
 ### Arreglado
 - `checkRutasMuertas()` (Versión 198) daba un falso positivo en un worktree recién creado:
@@ -2227,7 +2227,7 @@
 ### Resultado
 - `node tools/audit.js`: 0 P0, 0 P1, 0 P2, 7 P3, en `main` y en el worktree. Sin ASSET_V nuevo.
 
-## Versión 199 — `Admin/COMO-CORRE-EL-PROYECTO.html` puesto al día (to-do 44)
+## Versión 199 — `Admin/COMO-CORRE-EL-PROYECTO.html` puesto al día (to-do 44) [~audit.js]
 
 ### Cambiado
 - El documento estaba parcialmente vencido desde antes de la Versión 127: decía "222 checks" en
@@ -2259,7 +2259,7 @@
 - `node tools/audit.js`: 0 P0, 0 P1, 0 P2, 7 P3, sin `ruta-muerta` nuevo para este archivo.
 - Sin ASSET_V nuevo: no se tocó `index.html`, `js/` ni `data/`.
 
-## Versión 198 — Chequeo de rutas muertas en `audit.js`, y los dos links que la 196 dejó rotos
+## Versión 198 — Chequeo de rutas muertas en `audit.js`, y los dos links que la 196 dejó rotos [~audit.js, ~generate-fuentes-index.js]
 
 ### Agregado
 - `checkRutasMuertas()` en `tools/audit.js` (to-do 46, P2 `ruta-muerta`). Recorre los archivos
@@ -2296,7 +2296,7 @@
   —backtick y link Markdown— se probaron rompiéndolas a propósito.
 - Sin ASSET_V nuevo: no se tocó `index.html`, `js/` ni `data/`.
 
-## Versión 197 — `Admin/ARQUITECTURA.md` puesta al día (to-do 45)
+## Versión 197 — `Admin/ARQUITECTURA.md` puesta al día (to-do 45) [~generate-rankings.js, ~generate-fuentes-page.js, ~generate-fuentes-index.js, ~audit.js]
 
 ### Cambiado
 - `Admin/ARQUITECTURA.md` no mencionaba nada de las Versiones 162-184: `js/liga.js`, `js/i18n.js` +
@@ -2314,7 +2314,7 @@
 - `node tools/audit.js`: **0 P0, 0 P1, 0 P2, 7 P3**, sin `doc-peso-desfasado` para `ARQUITECTURA.md`.
 - Sin cambios de código ni de datos: no hace falta ASSET_V nuevo ni regenerar nada.
 
-## Versión 196 — Los documentos internos se mudan a `Admin/`, y la exclusión del deploy pasa a ser una sola línea
+## Versión 196 — Los documentos internos se mudan a `Admin/`, y la exclusión del deploy pasa a ser una sola línea [~audit.js, ~generate-club-index.js, ~generate-fuentes-index.js]
 
 ### Movido
 - `ESTADO.md`, `TODO.md`, `CONVENCIONES.md`, `ARQUITECTURA.md`, `CHANGELOG.md`, `dudas-por-club.md`,
@@ -2404,7 +2404,7 @@
   (esto es sourcing, no onboarding — el informe de Rijeka queda documentado y transcripto, no
   cargado a `data/`).
 
-## Versión 194: "Educación" también del lado de Gastos (cierra el to-do 42)
+## Versión 194: "Educación" también del lado de Gastos (cierra el to-do 42) [~audit.js]
 
 - `education_expense` nueva en `data/category-map.js`, y fila "Educación" en
   `GENERIC_SIMPLIFIED_EXPENSE_BUCKETS` (`js/finanzas-calc.js`), al lado de "Otras secciones
@@ -2439,7 +2439,7 @@
 - To-do 40 (CMS sin código): mismo criterio, en pausa ~un mes.
 - Sin ASSET_V nuevo: no se tocó `js/`, `data/` ni `index.html`.
 
-## Versión 192: la vidriera de Inicio deja de dibujar sus gráficos dos veces
+## Versión 192: la vidriera de Inicio deja de dibujar sus gráficos dos veces [~audit.js]
 
 - **To-do 41 cerrado.** `grafico()` (`js/liga.js`) creaba el `<canvas>` de forma síncrona pero
   pintaba el `Chart` adentro de un `setTimeout`, y ese callback volvía a buscar el canvas con
@@ -2463,7 +2463,7 @@
   `<script src>`; `fuentes.html` y las 41 páginas de club regeneradas (`checkGenerados()` lo pedía
   como P1, ya resuelto). `node tools/audit.js`: 0 P0, 0 P1.
 
-## Versión 189: "Estadio" es una fila sola, y el colegio de un club deja de ser "otros"
+## Versión 189: "Estadio" es una fila sola, y el colegio de un club deja de ser "otros" [~generate-rankings.js, ~audit.js]
 
 - **Formato simplificado, Ingresos: "Estadio: recaudación de partidos" pasa a "Estadio" a secas y
   absorbe los abonos y el uso/alquiler del estadio** (decisión de Guido). Es UNA fila con
@@ -2493,7 +2493,7 @@
 - `auditAll()`: 41 clubes, 228 checks, 0 que no cierran, 0 warnings de fx. `node tools/audit.js`:
   0 P0, 0 P1. ASSET_V 188 → 189, los 4 generados al día.
 
-## Versión 188: el header móvil ya no desborda a 375px, y 3 decisiones de Guido sin código
+## Versión 188: el header móvil ya no desborda a 375px, y 3 decisiones de Guido sin código [~audit.js]
 
 - **To-do 26 cerrado, opción (a).** `.header-right` (moneda, botón de club, contacto, idioma) ya
   no comparte una sola fila sin envolver: dentro del breakpoint de 900px pasa a ser su propia fila
@@ -2539,7 +2539,7 @@
 - **Nada implementado.** El to-do 20(b) sigue abierto hasta que Guido decida sobre las tres
   alternativas del documento.
 
-## Versión 187: el sufijo del `<select>` de ejercicio en Finanzas, traducido (cierra el to-do 44)
+## Versión 187: el sufijo del `<select>` de ejercicio en Finanzas, traducido (cierra el to-do 44) [~audit.js]
 
 - **`anioDropdownSuffix()`** (`js/finanzas-calc.js`): las 4 palabras (" (Presupuesto)"/" (Balance)"/
   " (Presupuesto y Balance)"/" (Placeholder)") pasan por `t()`. Queda como función aparte de
@@ -2554,7 +2554,7 @@
   Racing (Budget and balance sheet, todas las combinaciones) ya no muestra nada en castellano; en
   castellano, idéntico a antes. `node tools/audit.js`: 0 P0, 0 P1 (igual que antes de esta sesión).
 
-## Versión 186: los 4 últimos textos que se veían en castellano en medio de una tabla en inglés (cierra el to-do 42)
+## Versión 186: los 4 últimos textos que se veían en castellano en medio de una tabla en inglés (cierra el to-do 42) [~audit.js]
 
 - **`tierLabel()`** (`data/leagues.js`): "1ª división"/"2ª división" ahora pasan por `I18N.t()`
   (`league.tier1`/`league.tier2`). Solo 2 claves, no una plantilla con placeholder: LEAGUES no
@@ -2589,7 +2589,7 @@
   Finanzas, banner de calidad de dato, Formato simplificado); en castellano, todo idéntico a antes.
   `node tools/audit.js`: 0 P0, 0 P1 (igual que antes de esta sesión).
 
-## Versión 185: la deducción negativa ya no se pierde en "Composición de ingresos" (to-do 41)
+## Versión 185: la deducción negativa ya no se pierde en "Composición de ingresos" (to-do 41) [~generate-rankings.js, ~audit.js]
 
 - `mezclaDe()` (`js/selector.js`) filtraba `r.value > 0` y tiraba enteros los buckets
   negativos reales: Botafogo 2024, Cruzeiro 2025 y Envigado 2025 informan ingreso bruto y
@@ -2619,7 +2619,7 @@
   Botafogo 2024 y Envigado 2025 también cierran ahora (`mezclaNeto === revenue` en los tres).
   `node tools/audit.js`: 0 P0, 0 P1.
 
-## Versión 184: Inicio es la pregunta y la vidriera de rankings (tanda 3 de 3, cierra el to-do 33)
+## Versión 184: Inicio es la pregunta y la vidriera de rankings (tanda 3 de 3, cierra el to-do 33) [~generate-club-index.js, ~audit.js]
 
 - **Inicio deja de mostrar el club activo.** Se borró `#inicioClub` entero: los 4 KPIs y los 3
   gráficos de evolución. Decisión de Guido (2026-09-22): "en Inicio quedan las ligas que dejamos
@@ -2660,7 +2660,7 @@
   cierran / 0 warnings; `node tools/audit.js` 0 P0 y 0 P1; los 4 generadores al día; cero
   `ReferenceError` en consola.
 
-## Versión 183: la pestaña Ligas (tanda 2 de 3, cierra el to-do 23(c))
+## Versión 183: la pestaña Ligas (tanda 2 de 3, cierra el to-do 23(c)) [~audit.js, ~generate-fuentes-page.js]
 
 - **Pestaña nueva "Ligas"** (`<section id="liga">` + `js/liga.js`): el ranking de ingresos de los
   clubes de una liga en UN ejercicio. Barras verticales ascendentes, cada una en el `brandColor`
@@ -2710,7 +2710,7 @@
   de una fila a Finanzas. `auditAll()` 41 clubes / 228 checks / 0 que no cierran / 0 warnings;
   `node tools/audit.js` 0 P0 y 0 P1; los 4 generadores al día.
 
-## Versión 182: los rankings de liga, precalculados (tanda 1 de 3 del to-do 23(c)/33)
+## Versión 182: los rankings de liga, precalculados (tanda 1 de 3 del to-do 23(c)/33) [~generate-rankings.js, ~audit.js]
 
 - **`tools/generate-rankings.js` nuevo**: corre el motor real (`computeYearGeneric()` +
   `simplifiedReportForClub()` en un contexto de `vm`, mismo loader que `tools/audit.js`) y
@@ -2761,7 +2761,7 @@
   porque no cierra nada, solo cambia CÓMO se va a encarar esa sesión.
 - Sin ASSET_V nuevo: no se tocó `js/`, `data/` ni `index.html`.
 
-## Versión 180 — La procedencia del color de los 39 clubes que ya lo tenían (to-do 37)
+## Versión 180 — La procedencia del color de los 39 clubes que ya lo tenían (to-do 37) [~audit.js, ~generate-fuentes-page.js, ~generate-fuentes-index.js, ~generate-club-index.js]
 
 - Los 39 clubes con `brandColor` ya tienen su procedencia escrita en `fuentes/<País>/<Club>.md`,
   una línea por club, en el formato que la Versión 179 dejó fijado para el onboarding de un club
@@ -2790,7 +2790,7 @@
 - Verificado: `node tools/audit.js` 0 P0 y 0 P1; `generate-fuentes-page.js --check`,
   `generate-fuentes-index.js --check` y `generate-club-index.js --check` los tres al día.
 
-## Versión 179 — Resolver el color de un club nuevo es un paso del onboarding, no una barrida que se repite
+## Versión 179 — Resolver el color de un club nuevo es un paso del onboarding, no una barrida que se repite [~audit.js]
 
 - **`club-or-year-onboarding/SKILL.md` §3 punto 1b** (el punto donde se escribe la fila del club en
   `clubs{}`) ahora incluye `sport` y `brandColor` en la lista de campos —le faltaban los dos, de las
@@ -2829,7 +2829,7 @@
   (celeste con iniciales negras), sin errores de consola; y el chequeo P3 probado en negativo,
   sacándole el campo a un club y viéndolo aparecer.
 
-## Versión 178 — Cada club se muestra con SU color, no con el azul del sitio
+## Versión 178 — Cada club se muestra con SU color, no con el azul del sitio [~audit.js]
 
 - To-do 23(e), con el alcance recortado a propósito: **solo color, no escudos-imagen** (una imagen
   hay que alojarla en el dominio propio, que es justo lo que un club puede objetar).
@@ -2867,7 +2867,7 @@
   0 P1, y los 4 círculos mirados en el navegador (incluido el fallback de Real Madrid entrando
   DESPUÉS de un club con color).
 
-## Versión 177 — Cuántos equipos tuvo la liga, por temporada (to-do 23(b))
+## Versión 177 — Cuántos equipos tuvo la liga, por temporada (to-do 23(b)) [~generate-fuentes-page.js]
 
 - `LEAGUE_SIZE_BY_YEAR` nuevo: (liga, ejercicio) -> cuántos equipos jugaron esa liga ese año, con
   `leagueSizeAt(liga, año)` y `leagueSizeCoverage()`. Las reglas en `data/club-leagues.js`, las
@@ -2901,7 +2901,7 @@
   las 42 páginas ya escritas siguen diciendo la fecha vieja hasta la próxima regeneración por un
   cambio de contenido real; ahí se corrigen solas.
 
-## Versión 176: `tools/audit.js` avisa si un .md nuevo de la raíz no está cubierto por netlify.toml
+## Versión 176: `tools/audit.js` avisa si un .md nuevo de la raíz no está cubierto por netlify.toml [~audit.js]
 
 - **Chequeo nuevo, `doc-interno-no-excluido` (P2).** Surgió de un hallazgo lateral de la sesión del
   to-do 35: `PROMPT-generador-indice-fuentes.md` no estaba en el `rm -f` de `netlify.toml` y se
@@ -2919,7 +2919,7 @@
   bloquea nada (P2, `--quiet` sigue en verde) porque nada de esto llegó a producción todavía — el
   repo local sigue sin pushear desde antes de que `netlify.toml` existiera.
 
-## Versión 175: el índice de países de `fuentes-por-club.md` se genera, no se escribe
+## Versión 175: el índice de países de `fuentes-por-club.md` se genera, no se escribe [~generate-fuentes-index.js, ~generate-club-index.js]
 
 - **To-do 35 cerrado.** `tools/generate-fuentes-index.js` nuevo: regenera la sección "Índice de
   países" de `fuentes-por-club.md` (las 44 líneas de país con sus 3 números, más el párrafo de
@@ -2945,7 +2945,7 @@
 - El script sumado a la sección de herramientas de `ESTADO.md` y del skill
   `start-session-finance-of-sports-project`.
 
-## Versión 174: la grilla de "elegir clubes" de Mezcla tiene su propio filtro
+## Versión 174: la grilla de "elegir clubes" de Mezcla tiene su propio filtro [~audit.js]
 
 - **To-do 38 cerrado.** La grilla de clubes del constructor de Mezcla suma un campo de filtro
   propio (`panelAgregar()` en `js/selector.js`), con el mismo markup y CSS que el buscador del
@@ -2966,7 +2966,7 @@
 - `auditAll()` en 41 clubes / 228 checks / 0 que no cierran, `node tools/audit.js` en 0 P0 / 0 P1.
   `ASSET_V` a 174, `fuentes.html` y las 41 páginas de club regeneradas por el bump.
 
-## Versión 173: lo interno se saca en el deploy, no del repo — y las 5 cotizaciones van a la tabla
+## Versión 173: lo interno se saca en el deploy, no del repo — y las 5 cotizaciones van a la tabla [~audit.js]
 
 - **Se revierte el destrackeo de las Versiones 167 y 172 y se resuelve bien.** Lo levantó Guido:
   *"si pierdo la mac pierdo semanas de trabajo"*. Tenía razón — destrackear sacaba los archivos del
@@ -2996,7 +2996,7 @@
   con 10 clubes, LaLiga 2025 con 9, Primera Argentina 2024 con 8), no cero.
 - `node tools/audit.js` en 0 P0 / 0 P1 / 2 P2 / 7 P3. `ASSET_V` a 173.
 
-## Versión 172: el sitio deja de decir que un club japonés no cobra televisación
+## Versión 172: el sitio deja de decir que un club japonés no cobra televisación [~audit.js]
 
 - **To-do 20(h) cerrado, decisión de Guido: se hacen los dos cambios.** `bucketize()` marca `unknown`
   toda fila de Formato simplificado que dé cero **cuando su sección tiene un bolsón "sin desglosar
@@ -3037,7 +3037,7 @@
   que quedan son el catch-all de Vélez, diferido por Guido. `auditAll()` sigue en 228 checks, 0 no
   cierran. `ASSET_V` a 172.
 
-## Versión 171: auditorías de rutina de los ejes `docs` y `tokens` — se cierra la rotación
+## Versión 171: auditorías de rutina de los ejes `docs` y `tokens` — se cierra la rotación [~audit.js, ~generate-club-index.js]
 
 - Dos corridas más el mismo día (`auditorias/2026-09-20-docs.md` y `-tokens.md`), a pedido de Guido.
   **Con estas se completó la vuelta entera** `datos` → `escala` → `codigo` → `docs` → `tokens`. El
@@ -3063,7 +3063,7 @@
   resultó falso, eso se escribe — es la única señal de que los otros puntos pueden estar igual.
 - Ninguna de las dos corridas agregó puntos a la to-do.
 
-## Versión 170: Racing 2009-2011 dejan de ser inverificables, y la auditoría deja de pedir lo que no existe
+## Versión 170: Racing 2009-2011 dejan de ser inverificables, y la auditoría deja de pedir lo que no existe [~audit.js]
 
 - **To-do 20(e) cerrado.** Los 3 ejercicios reales que no tenían NINGÚN número de control ahora
   cargan `officialTotalRevenue` y `officialPAT`, leídos del Estado de Recursos y Gastos de cada
@@ -3099,7 +3099,7 @@
 - `node tools/audit.js` pasa de 39 P2 / 8 P3 a **20 P2 / 8 P3** (6 silenciados con motivo escrito).
   `ASSET_V` a 170.
 
-## Versión 169: los 5 tipos de cambio sin procedencia resultaron los 5 declarados por su propio balance
+## Versión 169: los 5 tipos de cambio sin procedencia resultaron los 5 declarados por su propio balance [~audit.js]
 
 - **To-do 21(a) cerrado.** San Lorenzo 2015/2016/2017 y Vélez 2015/2016 pasan de
   `fxSource:'unknown'` a `'document_close'`, verificados uno por uno contra el Anexo de moneda
@@ -3140,7 +3140,7 @@
   vive el test: ahora dice que va en una función compartida (`informaDeuda()`, `deudaNoDesglosada()`)
   y nunca en línea adentro de un render.
 
-## Versión 167: el KPI de deuda deja de publicar un cero que ninguna fuente dice, y el aviso de deuda se traduce
+## Versión 167: el KPI de deuda deja de publicar un cero que ninguna fuente dice, y el aviso de deuda se traduce [~audit.js]
 
 - **To-do 25.** `renderFinanzasStatsGeneric()` publicaba "Deuda neta · 0,0 M USD" en el cuerpo de
   letra más grande de la ficha para cualquier ejercicio cuyo documento no desglosa deuda ni caja,
@@ -3182,7 +3182,7 @@
   `financeofsports.com`), y el dashboard de Cloudflare registró visitas reales tras cargar el sitio
   en un navegador.
 
-## Versión 165: debounce y tope de resultados en el selector (punto 4 del plan de escala)
+## Versión 165: debounce y tope de resultados en el selector (punto 4 del plan de escala) [~audit.js]
 
 - Debounce de 160 ms en el `input` del buscador del modal. VA EN EL LISTENER Y NO EN
   `renderBusqueda()`: esa función también se llama desde adentro de sí misma al elegir un club o
@@ -3206,7 +3206,7 @@
 - **Con esto quedan cerrados los 8 puntos de `PLAN-REMEDIACION-ESCALA.md`** (7 hechos y el punto 3
   descartado con mediciones).
 
-## Versión 164: `club-leagues` se parte por país y sale del camino eager (punto 9 del plan de escala)
+## Versión 164: `club-leagues` se parte por país y sale del camino eager (punto 9 del plan de escala) [~audit.js]
 
 - Las filas de `data/club-leagues.js` se mudaron a `data/club-leagues/<iso2>.js` (6 archivos, uno
   por país), cada uno autoregistrándose con `Object.assign` en la misma tabla, el patrón de
@@ -3240,7 +3240,7 @@
   regiones y dos países (Argentina 11 clubes, España 10, 21 en el paso de clubes). 0 recursos
   fallidos, `auditAll()` en 222 checks, `node tools/audit.js` en 0 P0 / 0 P1. `ASSET_V` a 164.
 
-## Versión 163: la colisión de `clubId` se avisa al sourcear, no al cargar (punto 7 del plan de escala)
+## Versión 163: la colisión de `clubId` se avisa al sourcear, no al cargar (punto 7 del plan de escala) [~audit.js]
 
 - `checkColisionSourcing()` nueva en `tools/audit.js`: lee los 44 `fuentes/_indice/<País>.md` y
   reporta P3 cuando un club que se está sourceando coincide en nombre con un `clubId` heredado sin
@@ -3259,7 +3259,7 @@
   excluyen por el destino del link, que empieza con `_`.
 - `node tools/audit.js`: 0 P0, 0 P1, 44 P2, 9 P3 (uno más, la línea agregada).
 
-## Versión 162: `fuentes.html` se parte en una página por club, más sitemap (punto 2 del plan de escala)
+## Versión 162: `fuentes.html` se parte en una página por club, más sitemap (punto 2 del plan de escala) [~generate-fuentes-page.js, ~audit.js]
 
 - `tools/generate-fuentes-page.js` pasa de generar 1 archivo a generar 43: `fuentes/<clubId>.html`
   (41, una por club, con solo sus documentos), `fuentes.html` (ahora el índice: una fila por club
@@ -3293,7 +3293,7 @@
   con 0 que no cierran, índice y páginas de club renderizando y traduciendo en el navegador, links
   de la ficha apuntando donde corresponde, y el barrido de huérfanas probado a mano.
 
-## Versión 161: chequeo de carpetas duplicadas en `Clubes/` (punto 8 del plan de escala)
+## Versión 161: chequeo de carpetas duplicadas en `Clubes/` (punto 8 del plan de escala) [~audit.js]
 
 - `checkCarpetasClubes()` nueva en `tools/audit.js`: recorre `Clubes/<País>/` y reporta P2 cuando
   dos carpetas del mismo país normalizan al mismo nombre (sin acentos, minúsculas, sin
@@ -3313,7 +3313,7 @@
   confirmar que los dos avisos salen de verdad, y se corrió una copia del repo sin `Clubes/` para
   confirmar que no rompe: 0 P0, 0 P1, 44 P2, 8 P3 en los tres casos.
 
-## Versión 160: `auditAll()` carga los clubes en tandas paralelas (punto 5 del plan de escala)
+## Versión 160: `auditAll()` carga los clubes en tandas paralelas (punto 5 del plan de escala) [~audit.js]
 
 - `auditAll()` (`index.html`) pasa de un `for` con `await` adentro (41 requests en fila) a tandas
   de 25 con `Promise.allSettled`. Es el primer punto ejecutado de `PLAN-REMEDIACION-ESCALA.md`
@@ -3354,7 +3354,7 @@
   sesión lo hizo el mismo día sin que las dos se vieran. Se renumeró esta entrada a 159 para no
   chocar, y el to-do 22(g) se marcó resuelto apuntando al commit de `main`.
 
-## Versión 158: `fuentes-por-club.md` se parte por país (índice de países + `fuentes/_indice/`)
+## Versión 158: `fuentes-por-club.md` se parte por país (índice de países + `fuentes/_indice/`) [~generate-fuentes-index.js, ~generate-fuentes-page.js]
 
 - `fuentes-por-club.md` pasa de tener una línea por club (570 líneas, 940 en total, ~97 KB) a ser
   solo un índice de PAÍSES de 132 líneas / 10 KB: una línea por país con cuántos clubes trackea,
@@ -3460,7 +3460,7 @@
   el año por bloque en la mezcla, el aporte en plata, promedio + sumatoria, y que los datos son
   flacos para lo que la interfaz ya permite).
 
-## Versión 152-154: se retira la comparación de chips, y se conserva lo que hacía mejor
+## Versión 152-154: se retira la comparación de chips, y se conserva lo que hacía mejor [~audit.js]
 
 - Etapa 5. **Se borra `js/comparar-clubes.js` entero** (870 líneas) y con él la bandeja de chips, el
   botón "Comparar" del header, la tarjeta de Inicio, el banner y la barra de confirmación del modal,
@@ -3550,7 +3550,7 @@
   llama en cada cambio de club activo.
 - ASSET_V 142 → 143.
 
-## Versión 142: la to-do list pasó de 18 puntos a 8, y Japón pasó de tarea a pregunta
+## Versión 142: la to-do list pasó de 18 puntos a 8, y Japón pasó de tarea a pregunta [~audit.js, ~generate-club-index.js, ~generate-fuentes-page.js]
 
 - Sacados de `TODO.md` por decisión de Guido, con el motivo escrito en el propio archivo para que
   quede el registro: los 6 puntos de sourcing y onboarding por país (eran 12 a 18 — Argentina,
@@ -4083,7 +4083,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   podrían tener más detalle). P2 total: 44, eran 54 al empezar el día.
 - `auditAll()`: 41 clubes, 222 checks, 0 que no cierran. Ningún total se movió.
 
-## Versión 140: la home dejó de publicar el presupuesto como si fuera el último balance
+## Versión 140: la home dejó de publicar el presupuesto como si fuera el último balance [~audit.js]
 
 - INICIO mostraba, para Boca, "Último resultado: +2,0 M USD" y "Deuda neta actual: 0,0 M USD". Los
   dos salían del PRESUPUESTO 2026/27, porque `renderInicioStats()` usaba "el último ejercicio de la
@@ -4133,7 +4133,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
 - 30 claves nuevas en `data/lang/en.js`. Cobertura: 204 de 204 claves usadas, y 28 de 28 en
   `fuentes.html`. To-do 19 borrado.
 
-## Versión 138: el estado y la to-do list salen de index.html, y se van los ejercicios placeholder
+## Versión 138: el estado y la to-do list salen de index.html, y se van los ejercicios placeholder [~generate-club-index.js, ~audit.js]
 
 - `ESTADO.md` y `TODO.md` nuevos. Hasta acá el estado del proyecto, la lista de qué es real por club
   y la to-do list entera vivían en un comentario HTML de 830 líneas al principio de `index.html`:
@@ -4161,7 +4161,7 @@ Seis correcciones de Guido probando el flujo, todas en `prototipo-pasos.html`:
   222: ningún ejercicio borrado tenía total oficial contra qué cerrar). `node tools/audit.js` 0 P0,
   0 P1.
 
-## Versión 137: el selector jerárquico de club, el cold start y la comparación entre clubes
+## Versión 137: el selector jerárquico de club, el cold start y la comparación entre clubes [~audit.js]
 
 - `data/leagues.js` nuevo: el CATÁLOGO de la taxonomía del selector (6 deportes, 6 regiones, 6
   países, 8 ligas con su escalón). NO tiene membresía a propósito. REGLA DE ARQUITECTURA: no existe
@@ -4266,7 +4266,7 @@ documentados, listos para una sesión de onboarding futura.)*
 - Dos de esas 7 filas brasileñas corrigen la suposición del prototipo: Coritiba e Ituano jugaron la Série B 2024, y Atlético Goianiense la Série B 2025 (había descendido de la Série A 2024). Mirassol 2024 también es Série B, y ascendió para 2025, que es justo el caso que el prototipo usaba de ejemplo.
 - Faltan las 55 argentinas, que necesitan la historia año por año de cada club.
 
-## Versión 132: en qué liga jugó cada club, cada ejercicio
+## Versión 132: en qué liga jugó cada club, cada ejercicio [~audit.js]
 
 - `data/club-leagues.js` nuevo, a pedido de Guido: la liga de cada club en cada ejercicio, en UN archivo que se actualiza una vez por temporada, en vez de un campo `league` repartido en los 41 `data/<club>-data.js` como proponía el prompt del selector.
 - Nace con las 85 filas en `null`, y `null` significa "nadie lo verificó todavía". No se rellena de memoria ni por deducción: se mira la temporada en la fuente y recién ahí se escribe. El archivo ES la lista de pendientes.
@@ -4289,7 +4289,7 @@ documentados, listos para una sesión de onboarding futura.)*
 - No pasaba hasta ahora porque el sitio carga un club por vez. La comparación multi-club lo va a hacer todo el tiempo: 5 sujetos en paralelo, el mismo club en dos ejercicios, o el promedio de una liga que incluye al club activo.
 - Arreglado cacheando la promesa en vuelo, y borrándola también al fallar para que un reintento después de un error de red vuelva a intentar de verdad. Verificado con 3 llamadas simultáneas en pestaña limpia: 1 solo `<script>`, 0 errores.
 
-## Versión 129: los dos prerrequisitos del selector jerárquico
+## Versión 129: los dos prerrequisitos del selector jerárquico [~generate-club-index.js, ~audit.js]
 
 - `data/club-index.js` nuevo, GENERADO por `tools/generate-club-index.js` (que ahora emite dos artefactos y los chequea con `--check`): nombre, país, calidad del dato, cuántos ejercicios y el más reciente, por club. ~76 bytes por club contra los ~366 de `clubs.js`.
 - Por qué existía el problema: el panel jerárquico tiene que mostrar el punto de calidad y el conteo de ejercicios de cada club SIN cargar ninguno, y las dos cosas viven adentro de `data/<club>-data.js`. Verificado en el navegador con la página recién abierta: `clubs{}` 41 entradas, `sources{}` 3, todas de Boca.
@@ -4307,7 +4307,7 @@ documentados, listos para una sesión de onboarding futura.)*
 - 6 cuellos de escala medidos, con el número en el que aparece cada uno, a la to-do 22: `clubId` sin país (ya hay un Olimpia en Honduras y otro en Paraguay), los 50 KB de comentario interno que baja cada visitante y crecen 102 bytes por club, `fuentes.html` como página única de 767 bytes por documento, `clubs.js` entero en cada visita, el `<select>` plano de clubes, y `auditAll()` cargando en serie.
 - Anotado el techo del modelo: la taxonomía y 3 pestañas asumen fútbol.
 
-## Versión 127: la pestaña Fuentes revisada, y la nota interna deja de publicarse
+## Versión 127: la pestaña Fuentes revisada, y la nota interna deja de publicarse [~generate-fuentes-page.js, ~audit.js]
 
 - BUG DE PRIVACIDAD, encontrado por Guido al revisar la Versión 126: `sources[].note` es la nota que una sesión le deja a la siguiente, y 64 de las 91 mencionan su nombre o rutas de su disco ("PDF subido directamente por Guido", "Transcripción completa en Clubes/España/..."). Se publicaban tal cual en la pestaña Fuentes y en la ficha de Finanzas.
 - `note` pasa a ser explícitamente interna y no se renderiza en ningún lado. Lo que ve el visitante es `publicNote`, nueva: una o dos oraciones escritas para un lector, solo donde hay una salvedad que no se deduce de los datos. La tienen 17 de 91 documentos (River, Club América, los 10 de Japón, Argentinos, la cobertura de prensa de Racing y los 3 placeholders).
@@ -4319,7 +4319,7 @@ documentados, listos para una sesión de onboarding futura.)*
 - `tools/audit.js` suma 2 guardarraíles: `nota-publica-con-interno` (P1) si un `publicNote` menciona un nombre propio, una ruta del repo o un detalle de transcripción, y `note-interna-renderizada` (P1) si alguien vuelve a interpolar `.note` dentro de HTML. Probado inyectando la fuga a propósito.
 - `auditAll()`: 222 checks, 0 mismatches, 0 warnings. `node tools/audit.js`: 0 P0, 0 P1.
 
-## Versión 126: Cada número cita su documento: ficha de Fuentes en Finanzas y `fuentes.html`
+## Versión 126: Cada número cita su documento: ficha de Fuentes en Finanzas y `fuentes.html` [~generate-fuentes-page.js, ~audit.js]
 
 - Card "Fuentes" al final de Finanzas, por ejercicio: documento (con link), nivel de fuente, tipo de cambio usado CON su procedencia, y las salvedades. Si el ejercicio tiene balance y presupuesto, muestra los DOS tipos de cambio (Racing 2020: el balance declara 73,98, el presupuesto asumió 70).
 - Reemplaza a `finanzasClubSourceText`, un objeto escrito a mano con 3 entradas (Boca, Racing, River) que dejaba a los otros 38 clubes sin citar nada.
@@ -4330,7 +4330,7 @@ documentados, listos para una sesión de onboarding futura.)*
 - BUG en el chequeo de i18n de `tools/audit.js`: buscaba las claves definidas entre comillas simples y `data/lang/en.js` las escribe entre dobles, así que el conjunto de definidas quedaba VACÍO y reportaba como sin traducir TODAS las claves usadas. De ahí las "88 claves" de la primera auditoría, que nunca fueron el número real. Con el regex arreglado (y salteando los prefijos de clave dinámica) el faltante real es 0.
 - `auditAll()`: 222 checks, 0 mismatches, 0 warnings. `node tools/audit.js`: 0 P0, 0 P1.
 
-## Versión 125: Cada tipo de cambio dice de dónde salió, y las cotizaciones de mercado se dicen una sola vez
+## Versión 125: Cada tipo de cambio dice de dónde salió, y las cotizaciones de mercado se dicen una sola vez [~audit.js]
 
 - `fxSource` nuevo en cada ejercicio: `document_close` (lo declara el balance), `document_assumption` (la premisa de un presupuesto), `market_close`, `market_approx`, `placeholder`, `unknown`. Son las 4 reglas de `club-data-mapping` §5 hechas campo, más el estado "todavía no se sabe".
 - `document_assumption` es una categoría propia a pedido de Guido ("para Presupuesto, los clubes toman assumption de FX siempre"): un presupuesto declara un pronóstico que puede terminar equivocado, no un cierre ya ocurrido. Boca 2027 usa 1660, el promedio entre el dólar de inicio ($1.480) y el de cierre ($1.840) que asume el propio documento.
@@ -4351,7 +4351,7 @@ documentados, listos para una sesión de onboarding futura.)*
 - Aprovechado para que la lista sea completa: eran 3 skills enumerados de 5. Faltaban `start-session-finance-of-sports-project` (que es por dónde hay que empezar) y `auditoria-finance-of-sports` (Versión 123).
 
 
-## Versión 123 — Skill de auditoría de rutina, y el primer reporte
+## Versión 123 — Skill de auditoría de rutina, y el primer reporte [~audit.js]
 
 - `.claude/skills/auditoria-finance-of-sports/SKILL.md` nuevo: el procedimiento de la auditoría de rutina, que es una tercera cosa distinta de las dos verificaciones que ya existían. El onboarding audita lo que se acaba de tocar; `auditAll()` audita que los totales sigan cerrando; esto audita lo que nadie tocó hace meses, que es donde nadie mira.
 - Tres capas, de lo más determinista a lo más caro, cada una acotando a la siguiente: `node tools/audit.js` (5 segundos, 0 juicio) → lectura dirigida SOLO de lo que el script marcó → un eje de juicio por corrida, rotando entre `datos`, `escala`, `codigo`, `docs` y `tokens`. Es lo que hace que una auditoría no cueste leer el repo entero.
@@ -4361,7 +4361,7 @@ documentados, listos para una sesión de onboarding futura.)*
 - `auditorias/2026-09-13.md`: primer reporte, línea de base. 0 P0, 0 P1, 52 P2, 7 P3, eje de juicio `datos`.
 - Hallazgo principal de ese eje, que el script marcaba pero no podía interpretar: **el sitio muestra igual "la fuente reporta cero" y "la fuente no lo desglosa"**. Los 10 clubes de Japón tienen 3 líneas de ingreso porque es todo lo que publica la J.League por club, así que muestran Televisión = $0 con la mitad de sus ingresos en un catch-all rotulado "Otras secciones deportivas y otros ingresos", que afirma algo que la fuente no dice. `river 2024` tiene el mismo efecto por otra causa: sus 8 rubros de gasto están en `other_expenses` con etiquetas por sector, con los sueldos adentro de "Fútbol profesional" (80% de los gastos) — la trampa de "costos por destino, no por naturaleza" ya documentada con Coritiba. Quedó como to-do 20 (h), con las 2 opciones propuestas; ninguna mueve un número.
 
-## Versión 122 — `tools/audit.js`: auditoría determinista de lo que un total correcto no delata
+## Versión 122 — `tools/audit.js`: auditoría determinista de lo que un total correcto no delata [~audit.js, ~generate-club-index.js]
 
 - `tools/audit.js` nuevo: audita el proyecto entero en Node y agrupa los hallazgos en P0 (un número publicado puede estar mal) / P1 (algo roto que el visitante ve) / P2 (riesgo) / P3 (limpieza). `--json` para la lista completa, `--quiet` para usarlo de gate, código de salida 1 si hay P0 o P1.
 - Complementa a `auditAll()`, no lo reemplaza: `auditAll()` verifica que cada ejercicio CIERRE contra el total que su documento imprime. Esto busca lo que cierra igual — ejercicios sin ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, categorías que el motor no suma, errores de escala, desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club en el código.
@@ -4381,7 +4381,7 @@ documentados, listos para una sesión de onboarding futura.)*
 - `Proyecto Boca.md` renombrado a **`finance-of-sports-project.md`**. El nombre venía de cuando el sitio era solo de Boca; hoy son 41 clubes de 6 países. Actualizadas las ~40 referencias en `index.html`, `CLAUDE.md`, `CONVENCIONES.md`, `ARQUITECTURA.md`, los 4 skills, `data/river-data.js`, `fuentes/` y el propio encabezado del archivo (que deja constancia del nombre viejo).
 - Skill `start-session` renombrado a **`start-session-finance-of-sports-project`**, para que el nombre diga a qué proyecto pertenece cuando aparezca en una lista de skills junto con los de otros proyectos.
 
-## Versión 120 — "Qué es real por club" se GENERA desde los datos, y skill de arranque de sesión
+## Versión 120 — "Qué es real por club" se GENERA desde los datos, y skill de arranque de sesión [~generate-club-index.js]
 
 - `tools/generate-club-index.js` nuevo: la sección "QUÉ ES REAL Y QUÉ ES PLACEHOLDER, POR CLUB" del comentario de `index.html` deja de escribirse a mano y pasa a generarse desde `data/clubs.js` + los `fiscalYearMeta` de cada club. Deja de ser prosa paralela y pasa a ser una VISTA de los datos: no puede desincronizarse, porque no hay nada que sincronizar. `--check` sale con código 1 si quedó desactualizada, para chequear antes de un push.
 - Esto resuelve la "fuga 1" del mapa de procesos: esa sección decía lo mismo que el comentario de cabecera de cada `data/<club>-data.js` ya decía, y era la copia que se desactualizaba. Onboardear un club pasa de tocar 6 archivos de documentación a tocar 2.

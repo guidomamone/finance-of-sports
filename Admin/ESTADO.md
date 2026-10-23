@@ -18,6 +18,7 @@ deja de ser cierto, se reemplaza, no se apila una línea nueva al lado de la vie
 ---
 
 ## Objetivo del proyecto
+<!-- roles: pantallas, contenido, deploy, orden -->
 
 Un sitio de finanzas de clubes de fútbol (multi-club), pensado para hinchas, periodistas y
 creadores de contenido. **Todo el sitio es gratis. Licencia (decisión de Guido): el Formato simplificado bajo CC BY-NC 4.0 (libre citando,
@@ -35,11 +36,13 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 ## Estado actual
 
 ### Pipeline: de un PDF a un año cargado
+<!-- roles: pipeline, onboarding, auditora, orden, sourcing -->
 
 - Qué hace cada tool, qué se decide solo y qué no se transcribe: `Admin/ESTADO-pipeline.md` (no se lee en el arranque; se consulta con grep). Proceso etapa por etapa: `Admin/PIPELINE.md`; descartes medidos: `Admin/HALLAZGOS-pipeline.md`; cuántos documentos hay en cada etapa y cuánto cuesta el paso siguiente: `node tools/estado.mjs` (gratis).
 - Lo esencial: `lote.mjs` corre las etapas 3 a 8 en segundo plano, `cargar.mjs` escribe el año y revierte si algo falla, `caja-deuda.mjs` completa caja, deuda y personal, `cola.mjs` guarda lo que no se resuelve solo. Un dato publicado mal se corrige con un ajuste manual (`tools/ajustes.mjs`) además de en `data/`, para que una corrida futura no lo deshaga.
 
 ### Qué falta de cada liga y estimados
+<!-- roles: sourcing, onboarding, pantallas -->
 
 - Por liga y año se sabe qué clubes faltan y en qué estado (`tools/faltantes-liga.mjs`, generado en cada carga); la lista de pendientes de
   sourcing es `Admin/sourcing/pendientes.md` (generada, no se edita): una sesión de sourcing puede arrancar de ahí.
@@ -55,6 +58,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Las listas de Wikipedia (`tools/club-league-reference/`) cubren 376 liga-años y guardan la posición final donde la tabla está completa.
 
 ### Finanzas multi-año
+<!-- roles: pantallas, contenido -->
 
 - Finanzas tiene la tarjeta Estructura ("De quién son estos números": entidad y perímetro, cadena de dueños, controladas, clubes del
   mismo grupo y nota para periodistas) y la página del grupo multiclub (`?tab=grupo`, clubes que controla y total por año), desde
@@ -79,6 +83,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   sin presidente que lo cubra abre un caso `gestion` en la cola al cargarlo).
 
 ### Inicio, Ligas y navegación
+<!-- roles: pantallas, contenido -->
 
 - Inicio: qué es el sitio, el buscador como acción principal y rankings del mundo y de América por ejercicio más tarjetas de liga, desde
   `data/rankings/_regiones.js` (lo escribe `tools/generate-rankings.js` en cada carga). Ligas: buscador, regiones y una fila por país; la
@@ -91,6 +96,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   "Pantallas FoS".
 
 ### Comparar con el diseño de Finanzas
+<!-- roles: pantallas -->
 
 - Comparar se lee como Finanzas: los dos cards de lado son el título, con los chips de ejercicio de Finanzas (un club puede elegir
   varios ejercicios, cada lado con "Promedio | Suma"); sin botón, el resultado se arma solo con los dos lados llenos; barra con
@@ -100,11 +106,13 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   Finanzas". Mockup: `Prototyping/Comparar/mockup-23.html`.
 
 ### Techo del modelo (no es una tarea)
+<!-- roles: pantallas, orden -->
 
 - La taxonomía es de fútbol (`player_sales`, `wages_squad`, `youth_football`) y las pestañas Resultados/Títulos y
   `gestionesByClub` también. Un club de otro deporte entra hoy con media taxonomía vacía y 2 pestañas sin sentido.
 
 ### Sitio, publicación y analytics
+<!-- roles: deploy, orden, auditora -->
 
 - SITIO: estático puro (HTML + CSS + JS, Chart.js por CDN), sin backend, sin build step, servido desde la raíz. Deploy continuo en
   Netlify al pushear a `main` del repo de GitHub. Dominio propio: **financeofsports.com**.
@@ -141,6 +149,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   con al menos un ejercicio REAL (balance o presupuesto oficial).
 
 ### Dónde vive cada cosa
+<!-- roles: * -->
 
 - Raíz: las páginas del sitio (`index.html`, `fuentes.html`, `metodologia.html`, `privacidad.html`, `terminos.html`, `sitemap.xml`), `netlify.toml` y `CLAUDE.md`.
 - `club/<id>.html` y `liga/<id>.html` (generadas por `tools/generate-club-pages.js`, con la imagen de `og/`): el link propio de cada club y liga,
@@ -164,6 +173,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 ---
 
 ## Si algo no cierra (números, totales)
+<!-- roles: pipeline, onboarding, auditora, pantallas -->
 
 Antes de tocar nada, correr una verificación aritmética simple (sumar las
 categorías de Revenue del club/ejercicio en cuestión y comparar contra el
