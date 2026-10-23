@@ -362,11 +362,11 @@ Mitigaciones:
             cierra exacto
             Si la suma no da el total de C, las sumas eligen el signo de las filas del 17-bis: la ÚNICA combinación (hasta 4 filas) que da
             exacto el total de C perdite su cambi", Atalanta 2019)
-            Versión 621: si el .md no trae el 17) a la altura de la tabla, vale el nombre fijo del renglón en las filas
+            si el .md no trae el 17) a la altura de la tabla, vale el nombre fijo del renglón en las filas
             del financiero; y si con el último subtotal la compuerta no cierra, se prueban los anteriores, del último al primero (caso Torino
             2019: etiquetas como texto arriba de una tabla sin nombres; el último subtotal es el 0 de la D). Medido en los 242 documentos con
             verificación: idéntico.
-            Versión 623: si la extracción dejó filas de la D en el financiero, la compuerta de C mira solo las filas de C,
+            si la extracción dejó filas de la D en el financiero, la compuerta de C mira solo las filas de C,
             y en la D una fila que cuelga de un 19) resta y una de un 18) suma; compuerta: el total de D impreso, exacto (casos Bologna 2023-24
             y 2024-25, "19) svalutazioni, a) di partecipazioni"). Medido en los 242: idéntico.
  ESCALÓN    "financiero dentro de un subtotal", el ÚLTIMO: solo si ninguna lectura ni escalón cerró. Un subtotal de
@@ -395,15 +395,15 @@ Mitigaciones:
             financiero y el resultado y sin ajuste manual del financiero en esa zona: las filas sin lado de ahí van al financiero (las de un 18)
             suman |valor|, las de un 19) restan |valor|); compuerta: su suma da exacto el total de D impreso; después las lecturas 0-6 y gana la
             primera que cierra exacto (caso Bologna 2019-20).
-            Versión 610: el encabezado también se reconoce con la "D)" y el título en celdas separadas (Inter 2023 y 2024) y con el
+            el encabezado también se reconoce con la "D)" y el título en celdas separadas (Inter 2023 y 2024) y con el
             "E) Proventi e oneri straordinari" (Chievo 2014-16, sin D impresa); en esa zona un "21) oneri" resta. Medido en los 177 documentos de Italia:
             cierran Chievo e Inter; Parma 2016 mejora (el total de gastos pasa a coincidir con el impreso); Lazio 2000-01 pasa de la lectura 6 a la 4
             (sigue OK y sus totales ahora cierran); el resto, idéntico.
-            Versión 611: ESCALÓN "financiero sin hojas": en las lecturas 5 y 6 (solo hojas), si el estado no trae hojas de financiero, se usan sus renglones o su total único
+            ESCALÓN "financiero sin hojas": en las lecturas 5 y 6 (solo hojas), si el estado no trae hojas de financiero, se usan sus renglones o su total único
             (Lazio 2016: "Oneri finanziari netti e differenze cambio (1.866.421)" era una sola fila impresa como subtotal y quedaba en 0). Medido en 242 documentos: Roma 2007 y Lazio 2011-12 y
             2012-13 dejan de marcar totales en rojo; Lazio 2012-13 pasa de cola a ok y su año anterior coincide con 2011-12; Lazio 2012-13 cargado daría ingresos 109.794312 (antes 109.794296) y
             gastos 114.569607 (antes 114.568051), pero lo ya cargado no se toca; el resto, idéntico.
-            Versión 611, ESCALÓN "columna anterior con signo": al decidir si un total es la suma de sus renglones, la columna del año anterior también acepta la suma con el signo impreso
+            ESCALÓN "columna anterior con signo": al decidir si un total es la suma de sus renglones, la columna del año anterior también acepta la suma con el signo impreso
             (como la lectura 4 para la columna actual). Cambian solo el chequeo del año vecino y "año anterior cargado" de AC Milan 2017-18 y 2018-19 y Lazio 2015-16 y 2016-17: los
             totales que se cargan, idénticos; los 4 pasan de cola a ok
             To-do 298 ah, SUBTOTAL CON HIJOS: al decidir si un total es la suma de lo de arriba (solo en la decisión final, después de los escalones previos), un subtotal con 2 hijas o más
@@ -451,7 +451,7 @@ Mitigaciones:
   negativo como gasto. Compuerta: las lecturas 0-6 con esa selección y gana la primera que cierra el resultado EXACTO. El año vecino no se compara con un
   documento que no usa este escalón (otro régimen).
 - **Chequeos cruzados**: si ninguna fila trae la columna del año anterior, "no se puede".
-  Versión 625: escalón 1 de los dos chequeos, solo si las columnas crudas no coinciden: cada columna actual con los ajustes `fila` de
+  escalón 1 de los dos chequeos, solo si las columnas crudas no coinciden: cada columna actual con los ajustes `fila` de
   su documento (reemplazar y agregar); en la columna anterior solo los ajustes que sacan una fila (valor 0 con reemplaza). Misma compuerta (2%).
   Caso: Roma 2007 contra 2008 (crudo 157.589 contra 162.017; con el ajuste de 2007, 162.255). Medido en los 242: 14 chequeos pasan a ok, 0 al revés, carga idéntica.
   Escalón 2, solo si el 1 tampoco coincide: la columna del año en común con LAS MISMAS FILAS que cerraron la columna que se carga

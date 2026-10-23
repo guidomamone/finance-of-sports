@@ -13,7 +13,7 @@ Los colores de marca, el chequeo contra el escudo y la liga de cada temporada de
 
 ## Finanzas multi-año: cómo es y qué no romper
 
-Desde la Versión 542 es la vista por default; `?multi=0` vuelve a la vieja de un ejercicio con el dropdown "Año" (salida de
+Es la vista por default; `?multi=0` vuelve a la vieja de un ejercicio con el dropdown "Año" (salida de
 emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión: `Prototyping/Finanzas/mockup-147.html`.
 
 - **Encabezado.** El H1 es el club y la bajada dice liga · país · cuántos balances y presupuestos, de qué ejercicio a cuál
@@ -471,7 +471,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   Comparar, un lado de UN ejercicio lo muestra en la celda igual que Finanzas; uno de varios ejercicios no tiene una celda única que
   marcar, y lo dice en prosa en el card de ese lado, con el rubro nombrado ("está dentro de X").
 
-- QUÉ SE TRADUCE Y QUÉ NO (Versión 138, cierra la decisión que el to-do 19(c) dejaba abierta).
+- QUÉ SE TRADUCE Y QUÉ NO.
   Se traduce el CHROME y toda etiqueta NUESTRA: nav, títulos, controles, headers de tabla, los
   buckets de "Formato simplificado", el tipo y el nivel de cada fuente, y la procedencia de cada
   tipo de cambio. NO se traduce nada que salga TEXTUAL de un documento o que sea un nombre propio:
@@ -528,7 +528,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   `selected` explícito (no es la primera opción alfabética — esa es Argentinos Juniors—, pero
   sigue siendo el club default de la app). `verifyTieOuts()` sigue dando 240/240 checks, 0 errores,
   en los 11 clubes. Detalle completo en `Admin/finance-of-sports-project.md`.
-- REGLA (Versión 50, Guido: "(presupuestado)" pegado al año se superponía con el header "% DEL
+- REGLA (Guido: "(presupuestado)" pegado al año se superponía con el header "% DEL
   TOTAL" de al lado, difícil de leer): `ejercicioLabel(year, isPresupuesto)` cambió de firma, antes
   el 2do parámetro era un `suffix` de texto libre agregado AL FINAL ("Ejercicio 2026/2027
   (presupuestado)"), ahora es un booleano que cambia el PREFIJO ("Presupuesto 2026/2027" en vez de
@@ -583,7 +583,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
 - REGLA PARA EL FUTURO (pedido explícito de Guido: "es mi manera de hacerte un
   control"): toda fila de "Formato simplificado" tiene que llevar `items` con el desglose real de
   qué campo(s) nativo(s) se sumaron para llegar a ese número, nunca `items:null`. Implementado para
-  Boca en la Versión 40 y para River/Racing en la Versión 42 (ver bullet más arriba), así que hoy
+  Boca, River y Racing (ver bullet más arriba), así que hoy
   ya cubre a los 3 clubes.
 - REGLA:
   `#finanzasPLTable` (card "Estado de resultados") tiene `table-layout:fixed` + un `<colgroup>` de 6
@@ -672,7 +672,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   `renderNativePLTable()`, mismo número que "Total Gastos" de la tabla), NUNCA
   de `cur.expenses` directo, `cur.expenses` (computeYear) es solo
   wages+otherExpenses, sin amortizaciones, y quedó desalineado con la tabla
-  hasta la Versión 23 (bug real, no un tema de Inversiones/Obras como se
+  (bug real, no un tema de Inversiones/Obras como se
   sospechaba al principio). Si se agrega un nuevo lugar que muestre "Gastos"
   del ejercicio, usar ese mismo patrón (renderNativePLTable primero, después
   el stat con su total), no recalcular aparte.
@@ -686,7 +686,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   data file no está cargado (Ligas, selector, Comparar) `CLUB_INDEX[id].ci` (lo genera tools/generate-club-index.js con el mismo criterio, desde
   tools/cierre-ejercicio.js, que también usa generate-fuentes-page.js); al final, la regla del club. Una serie puede quedar mezclada (Atalanta
   "2018 … 2021, 22/23 …"): es correcto, no se avisa aparte.
-- REGLA DEL COLOR DE CADA CLUB (Versión 178, decisión de Guido al cerrar el to-do
+- REGLA DEL COLOR DE CADA CLUB (decisión de Guido, cerrada en el to-do
   23(e)): `clubs[id].brandColor` es el color del club en el círculo de iniciales, y
   **es opcional a propósito — un club sin un color primario claro y sin ambigüedad se
   queda SIN el campo, con el azul del sitio, y eso no es un pendiente.** Un color
@@ -719,7 +719,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   nunca compartido con el `#modalQ` del modal principal.
 - OJO Chart.js: el script tag pinea la versión exacta de cdnjs
   (`https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js`).
-  La Versión 22 corrigió un 404 real acá (la versión vieja, 4.4.4, nunca
+  Un 404 real se corrigió acá (la versión vieja, 4.4.4, nunca
   existió en cdnjs), si en el futuro se sube de versión, verificar SIEMPRE
   con `curl -I` contra la URL exacta antes de pinear un número de versión
   nuevo, no asumirlo.
@@ -796,7 +796,7 @@ Texto movido sin cambios.
   una liga" del header, desde Inicio o desde "Cambiar de club" en Finanzas. Vive en `js/selector.js`
   y se alimenta de `clubs.js` + `club-index.js` + `leagues.js` +
   `club-leagues/<iso2>.js`, sin bajar ningún archivo de club. Esos últimos NO son
-  eager desde la Versión 164: se bajan al abrir el modal, que es el único lugar
+  eager: se bajan al abrir el modal, que es el único lugar
   que los usa, detrás de una sola frontera async en `abrirModal()`.
   DESDE LA VERSIÓN 165 el buscador tiene debounce de 160 ms (en el listener, no
   en `renderBusqueda()`, que también se llama a sí misma y tiene que correr en el
@@ -821,9 +821,9 @@ Texto movido sin cambios.
   no se ve; esos dos se quedan con el azul del sitio, que es el fallback. El `null`
   explícito es lo que distingue "se miró y no lleva color" de "nadie lo chequeó": el
   ausente lo marca `node tools/audit.js` (`club-sin-color-ni-null`, P3), y resolver el
-  color es desde la Versión 179 un paso del onboarding de cada club nuevo
+  color es un paso del onboarding de cada club nuevo
   (`club-or-year-onboarding/club-nuevo.md`, sección "Color de marca"), no una barrida que se repite. Desde la
-  Versión 180 los 39 hexes tienen su PROCEDENCIA escrita, una línea por club en
+  hoy los 39 hexes tienen su PROCEDENCIA escrita, una línea por club en
   `Admin/sourcing/<País>/<Club>.md` ("Color de marca: `#XXXXXX` — <fuente>, verificado
   <fecha>"), el mismo formato con el que la anota un club nuevo: 5 del sitio oficial
   del club, 20 de la tabla por liga de footylogos, 9 de logotyp.us (los japoneses),
@@ -901,17 +901,17 @@ Texto movido sin cambios.
   Desde el to-do 23 la pantalla se lee como Finanzas: ver la sección
   "Comparar con el diseño de Finanzas" de arriba. Los números salen de
   `computeYearGeneric()`, el motor real. Vive todo en `js/selector.js`:
-  `js/comparar-clubes.js` se borró en la Versión 152.
+  `js/comparar-clubes.js` ya no existe.
 - Toggle de moneda nativa/USD y toggle "Formato del club"/"Formato simplificado"
   (este último es el default). El toggle "Año a año"/"Por gestión" está OCULTO
-  desde la Versión 112 (pedido de Guido), código y datos intactos.
+  por pedido de Guido, código y datos intactos.
 - IDIOMAS: el sitio tiene selector de idioma (globo, arriba a la derecha) desde
-  la Versión 115. Castellano (idioma fuente, ES EL HTML mismo, sin archivo de
+  siempre. Castellano (idioma fuente, ES EL HTML mismo, sin archivo de
   diccionario) e inglés (`data/lang/en.js`, ~105 claves). Detecta el idioma del
   navegador en la primera visita y recuerda la elección en localStorage.
   AGREGAR UN IDIOMA = crear `data/lang/<code>.js` + una línea en
   `data/lang/langs.js`. Nada más: ni el HTML ni `js/i18n.js` se tocan.
-  TRADUCCIÓN COMPLETA desde la Versión 138: las 204 claves que el sitio usa están
+  TRADUCCIÓN COMPLETA: las 204 claves que el sitio usa están
   las 204 en `en.js`, y `fuentes.html` también se traduce sola, con el mismo motor
   y el mismo diccionario (no se genera un archivo por idioma). Lo que NO se traduce
   es a propósito y ahora es una regla escrita en `Admin/CONVENCIONES.md`: los rubros de
@@ -929,13 +929,13 @@ Texto movido sin cambios.
   `currency-map.js` cacheado sin `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, y
   la página entera falló). Lo chequea `node tools/audit.js` (`asset-v-desfasado`, P1):
   compara la constante contra cada tag.
-- BRANDING: RESUELTO en la Versión 117 (decisión de Guido). La marca es distinta
+- BRANDING: RESUELTO (decisión de Guido). La marca es distinta
   por idioma, a propósito: "El deporte en Números" en castellano, "Finance of
   Sports" en inglés (clave `site.name`, `data/lang/en.js`), que es además el
   dominio. Antes decía "Tu club en números", que ya no era cierto: el sitio dejó
   de ser solo de fútbol de clubes argentinos hace rato. El mail del formulario de
   contacto dejó de ser el placeholder `contacto@bocaennumeros.example` en la
-  Versión 167: hoy el mailto va a `guidomamone91@gmail.com`.
+  hoy el mailto va a `guidomamone91@gmail.com`.
 
 
 ---
