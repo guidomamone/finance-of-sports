@@ -13,6 +13,7 @@ import { execFileSync } from 'node:child_process';
 import { resolve, join } from 'node:path';
 import { clasificar } from './clasificar-tools.mjs';
 import { cambioDeCodigo } from './patron.mjs';
+import { perdidos } from './limpiar-comentarios.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const git = (...a) => { try { return execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); } catch { return ''; } };
@@ -43,6 +44,7 @@ export function quePide(archivos, { staged = false } = {}) {
       if (igual) piezas.push('sin cambios contra HEAD');
       else if (!dif.hayCodigo && !solo) piezas.push('mudanza de código');
       else if (solo) piezas.push('solo comentarios');
+      if (solo && !igual) { const p = perdidos([tool], {}); if (p.length) piezas.push(`${p.length} línea(s) de comentario con contenido que ya no está (node tools/fos.mjs limpiar-comentarios --perdidos)`); }
       piezas.push(medida ? 'medida ✓' : `falta medir: node tools/fos.mjs medir pipeline (${solo ? 'la comparación sin comentarios, sin lote' : `medidores ${medidores.join(', ') || '—'}`})`);
       if (dif.hayCodigo) piezas.push(conVeredicto ? 'veredicto GENERAL ✓' : 'falta el veredicto: node tools/fos.mjs patron --cambio "…" --patron "…" --escribir');
       filas.push({ f, ok: medida && (!dif.hayCodigo || conVeredicto), texto: `${clase === 'modulo' ? 'módulo de una tool del pipeline' : 'tool del pipeline'}: ${piezas.join('; ')}` });

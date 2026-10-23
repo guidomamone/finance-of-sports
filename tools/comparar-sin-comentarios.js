@@ -230,7 +230,10 @@ function medirTool(f) {
   return { f, total: Buffer.byteLength(src), bytes, historia, cabecera };
 }
 
-module.exports = { scan, comentarios, normalizar, publicados, herramientas, medirTool, HISTORIA };
+// Más líneas que esto en la cabecera de una tool es mucho para leer en cada sesión que la abre (aviso `cabecera-larga-en-tools` de audit.js; excepciones con motivo: tools/cabeceras-aceptadas.json).
+const CABECERA_MAX = 40;
+
+module.exports = { scan, comentarios, normalizar, publicados, herramientas, medirTool, HISTORIA, CABECERA_MAX };
 
 if (require.main === module) {
   const args = process.argv.slice(2);

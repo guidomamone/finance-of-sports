@@ -98,10 +98,16 @@ if (base === 'HEAD' && !A.includes('--ensayo') && !flag('--lote') && !flag('--me
     const salida = (r.stdout || '').trim();
     console.log(`Solo comentarios en ${nombres.join(', ')}: ${salida}`);
     if (r.status !== 0) { console.error('La comparación sin comentarios falla: el cambio no es solo de comentarios o no compila.'); process.exit(1); }
+    // lo que una limpieza se lleva y tiene contenido se imprime siempre (no frena): nadie tiene que acordarse de pedir `limpiar-comentarios --perdidos`
+    let perdidos = '';
+    if (existsSync(resolve(ROOT, 'tools/limpiar-comentarios.mjs'))) {
+      perdidos = (spawnSync('node', ['tools/limpiar-comentarios.mjs', '--perdidos'], { cwd: ROOT, encoding: 'utf8' }).stdout || '').trim();
+      console.log(`Comentarios con contenido que se pierden (mirá si alguno se quiere conservar; no frena):\n${perdidos.split('\n').slice(-9).join('\n')}`);
+    }
     const linea = {
       fecha: new Date().toISOString().slice(0, 10), base: baseRev,
       tools: Object.fromEntries(nombres.map((n) => [n, { antes: gitOk('rev-parse', `${baseRev}:tools/${n}`)?.trim() || null, despues: huellaArchivo(`tools/${n}`) }])),
-      lote: { nivel: 'solo-comentarios' }, medidores: [{ medidor: 'sin-comentarios', nivel: 'solo-comentarios', diferencias: 0, resumen: [salida] }], resultado: 'idéntico',
+      lote: { nivel: 'solo-comentarios' }, medidores: [{ medidor: 'sin-comentarios', nivel: 'solo-comentarios', diferencias: 0, resumen: [salida, perdidos.split('\n').at(-1)].filter(Boolean) }], resultado: 'idéntico',
     };
     if (!A.includes('--no-anotar')) { appendFileSync(REGISTRO, JSON.stringify(linea) + '\n'); console.log('Resultado: idéntico. Anotado en Admin/registros/mediciones-pipeline.jsonl.'); }
     process.exit(0);

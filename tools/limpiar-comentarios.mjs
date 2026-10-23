@@ -8,6 +8,9 @@
 //   node tools/limpiar-comentarios.mjs --escribir [a.mjs b.js …]   las reescribe (default: todas); después `node tools/comparar-sin-comentarios.js --tools`
 //   node tools/limpiar-comentarios.mjs --revisar [--min 3] [--rev <commit>]   las líneas donde la limpieza quitaría al menos --min palabras que no son referencia, fecha ni atribución,
 //                                                    para leerlas ANTES de --escribir (--rev las mira sobre las tools como estaban en ese commit)
+//   node tools/limpiar-comentarios.mjs --perdidos [--desde <rev>] [--hasta <rev>] [--min 3] [a.mjs …]   mirando hacia atrás, de CUALQUIER cambio (no solo de esta tool): las líneas de
+//                                                    comentario que había en --desde (HEAD) y ya no están en --hasta (el árbol), con las palabras con contenido que ningún comentario del archivo conserva.
+//                                                    Lo corren solos `medir pipeline` (cambio de solo comentarios), `que-pide` y `cerrar`.
 // ============================================================================
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
@@ -45,10 +48,35 @@ export function limpiarTexto(texto) {
 // Las palabras que una limpieza quita y que NO son referencia, fecha ni atribución: lo que quedaría sin leer (--revisar).
 const VACIAS = new Set(['de', 'del', 'la', 'el', 'los', 'las', 'en', 'por', 'y', 'o', 'a', 'al', 'con', 'que', 'se', 'un', 'una', 'es', 'ok', 'hasta', 'desde']);
 export function conContenido(viejo, nuevo) {
-  const palabras = (t) => t.replace(new RegExp(ALGO, 'gi'), ' ').replace(ATRIBUCION, ' ').split(/[\s(),;:·—«»"]+/).filter((w) => /[\p{L}\p{N}]/u.test(w) && !VACIAS.has(w.toLowerCase()));
+  const palabras = (t) => t.replace(new RegExp(ALGO, 'gi'), ' ').replace(ATRIBUCION, ' ').split(/[\s(),;:·—«»"]+/).map((w) => w.replace(/^[.¿¡]+|[.?!]+$/g, '')).filter((w) => /[\p{L}\p{N}]/u.test(w) && !VACIAS.has(w.toLowerCase()));
   const resto = new Map();
   for (const w of palabras(nuevo)) resto.set(w, (resto.get(w) || 0) + 1);
   return palabras(viejo).filter((w) => { if (resto.get(w) > 0) { resto.set(w, resto.get(w) - 1); return false; } return true; });
+}
+
+// Mirar hacia atrás: las líneas de comentario de `desde` (HEAD por defecto) que ya no están en `hasta` (el árbol de trabajo por defecto, o una revisión) y cuyas
+// palabras con contenido tampoco aparecen en ningún otro comentario del archivo nuevo. Sirve para ver qué se perdió en cualquier limpieza o commit, no solo en la de esta tool.
+export function perdidos(nombres, { desde = 'HEAD', hasta = null, min = 3 } = {}) {
+  const git = (...a) => { try { return execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 1 << 26 }); } catch { return null; } };
+  const lineasDe = (rel, src) => scan(rel, src).comments.flatMap((c) => { const l0 = src.slice(0, c.pos).split('\n').length; return c.text.split('\n').map((t, k) => ({ linea: l0 + k, texto: t.trim() })); });
+  const sinPunt = (t) => t.replace(/^(?:\/\/+|\/\*+|\*+\/?)\s*/, '').trim();
+  const out = [];
+  for (const f of nombres) {
+    const rel = `tools/${f}`;
+    const viejo = git('show', `${desde}:${rel}`);
+    const nuevo = hasta ? git('show', `${hasta}:${rel}`) : (() => { try { return readFileSync(join(ROOT, rel), 'utf8'); } catch { return null; } })();
+    if (viejo === null || nuevo === null) continue;
+    const L1 = lineasDe(rel, viejo), L2 = lineasDe(rel, nuevo);
+    const esta = new Set(L2.map((x) => sinPunt(x.texto)));
+    const palabrasNuevas = new Set(L2.flatMap((x) => conContenido(sinPunt(x.texto), '')));
+    for (const x of L1) {
+      const t = sinPunt(x.texto);
+      if (!t || esta.has(t)) continue;
+      const perdidas = [...new Set(conContenido(t, ''))].filter((w) => !palabrasNuevas.has(w));
+      if (perdidas.length >= min) out.push({ f, linea: x.linea, perdidas, texto: t });
+    }
+  }
+  return out;
 }
 
 export function limpiar(rel, src) {
@@ -75,8 +103,20 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const escribir = A.includes('--escribir');
   const revisar = A.includes('--revisar');
   const rev = v('--rev');
-  const dados = A.filter((a, k) => !a.startsWith('--') && !['--rev', '--min'].includes(A[k - 1]));
+  const dados = A.filter((a, k) => !a.startsWith('--') && !['--rev', '--min', '--desde', '--hasta'].includes(A[k - 1]));
+  if (A.includes('--perdidos')) {
+    const desde = v('--desde') || 'HEAD';
+    const nombres = dados.length ? dados : [...new Set(execFileSync('git', ['diff', '--name-only', desde, ...(v('--hasta') ? [v('--hasta')] : []), '--', 'tools'], { cwd: ROOT, encoding: 'utf8' }).split('\n').map((x) => x.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter(Boolean))];
+    const r = perdidos(nombres, { desde, hasta: v('--hasta') || null, min: Number(v('--min')) || 3 });
+    for (const x of r) console.log(`${x.f}:${x.linea}: se perdió «${x.perdidas.join(' ')}»   (${x.texto.slice(0, 90)})`);
+    console.log(`${r.length} línea(s) de comentario con contenido que ya no está (${nombres.length} tool(s) entre ${desde} y ${v('--hasta') || 'el árbol'}).`);
+    process.exit(0);
+  }
   const archivos = dados.length ? dados : readdirSync(join(ROOT, 'tools')).filter((f) => /\.(mjs|js)$/.test(f) && f !== 'limpiar-comentarios.mjs').sort();
+  if (escribir && !A.includes('--forzar')) { // reescribe decenas de tools: con tools/ sin commitear no hay vuelta atrás limpia (un `git checkout -- tools` se llevaría también lo ajeno)
+    const sucias = execFileSync('git', ['status', '--porcelain', '--', 'tools'], { cwd: ROOT, encoding: 'utf8' }).split('\n').filter(Boolean);
+    if (sucias.length) { console.error(`No se escribe: tools/ tiene ${sucias.length} archivo(s) sin commitear (${sucias.slice(0, 4).map((l) => l.slice(3)).join(', ')}${sucias.length > 4 ? ', …' : ''}). Commitealos primero, así la pasada se revierte sola con git; --forzar lo salta.`); process.exit(1); }
+  }
   let total = 0, tocadas = 0, aLeer = 0;
   for (const f of archivos) {
     const ruta = join(ROOT, 'tools', f);

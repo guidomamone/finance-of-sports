@@ -127,6 +127,7 @@
   "archivar.mjs": "orden: archiva un documento cerrado",
   "cerrar.mjs": "orden: el cierre de una tarea (TODO, índice, auditoría, CHANGELOG)",
   "limpiar-comentarios.mjs": "orden: saca la historia de los comentarios de tools/ (solo texto de comentarios; se prueba con comparar-sin-comentarios --tools)",
+  "acortar-cabecera.mjs": "orden: acorta la cabecera de una tool (el resto va tal cual a Admin/NOTAS-DE-TOOLS.md); solo toca comentarios",
   "reemplazar.mjs": "orden: reemplazos en varios archivos (el mismo texto, o una lista de cambios exactos por línea), con ensayo por defecto",
   "probar-reemplazar.mjs": "prueba: reemplazar.mjs en un repo de juguete",
   "muestra.mjs": "orden: una muestra repartida de las líneas que cumplen un patrón (solo lee)",

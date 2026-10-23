@@ -132,6 +132,8 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
 ## Comentarios en tools/
 
 Se quedan: el porqué que el código no dice, la invariante, el caso real que justifica una regla (sin la versión), el uso de la tool en pocas líneas y las trampas. Se van: la historia («Versión N», «to-do N», fechas de decisión), la narración de una sesión, lo que el código ya dice, las cabeceras con lo que ya está en `Admin/PIPELINE.md` y todo comentario que contradice lo que el código hace hoy (eso se anota en `Admin/HALLAZGOS-pipeline.md`, no se arregla en la limpieza).
+- Una cabecera pasa de 40 líneas solo con una excepción escrita (`tools/cabeceras-aceptadas.json`, con motivo); si no, `node tools/fos.mjs acortar-cabecera <tool>` deja el principio y el USO y manda el resto, tal cual, a `Admin/NOTAS-DE-TOOLS.md` (aviso P3 `cabecera-larga-en-tools`).
+- Qué perdió una limpieza: `node tools/limpiar-comentarios.mjs --perdidos [--desde <rev>] [--hasta <rev>]` (lo corren solos `medir pipeline` de un cambio de solo comentarios, `que-pide` y `cerrar`).
 - Medir: `node tools/comparar-sin-comentarios.js --medir` (bytes de comentarios, referencias históricas y cabeceras largas por tool); el aviso P3 es `comentario-historico-en-tools`.
 - Limpiar toca SOLO comentarios, y se prueba: `node tools/comparar-sin-comentarios.js --tools` (mismo código contra HEAD sin comentarios, más `node --check`). `node tools/fos.mjs medir pipeline` reconoce un cambio de solo comentarios y usa esa comparación en vez de un lote (`solo_comentarios` de `tools/pipeline-tools.json`); el hook de commit no pide veredicto. Una mudanza de código sigue pasando por los lotes.
 

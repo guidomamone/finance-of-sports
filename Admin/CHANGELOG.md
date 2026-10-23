@@ -18,6 +18,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 981 — Cabeceras largas de tools/: aviso y `fos acortar-cabecera` [398]
+
+- Aviso P3 `cabecera-larga-en-tools` en `audit.js` (más de 40 líneas, `CABECERA_MAX` del comparador; excepciones con motivo en `tools/cabeceras-aceptadas.json`). Se eligió 40 y no 25: es el número que pedía el cierre del punto para las más largas, y a 25 entraban 77 tools. `tools/acortar-cabecera.mjs` (`fos acortar-cabecera`): deja el principio (cortado en un renglón vacío o una raya) y el bloque USO y manda el resto, tal cual, a `Admin/NOTAS-DE-TOOLS.md`; ensayo por defecto; prueba que el código no cambió. Medido (audit, chico): el aviso nuevo; veredicto general.
+
+## Versión 980 — Mover un punto del TODO, limpiar-comentarios sin pisar, qué se pierde y cerrar sin ruido [396]
+
+- `todo.mjs --mover <id> --antes|--despues <id>` (renumera): el 357 pasó a estar antes del 337. `limpiar-comentarios --escribir` se niega con `tools/` sin commitear (`--forzar` lo salta) [396].
+- `limpiar-comentarios --perdidos [--desde <rev>] [--hasta <rev>]`: mirando hacia atrás de cualquier cambio, las líneas de comentario que ya no están y cuyas palabras con contenido ningún comentario del archivo conserva (entre las limpiezas de hoy: 24). Enganchado: `medir pipeline` de un cambio de solo comentarios lo imprime solo, `que-pide` lo anota en la línea de la tool y `cerrar` lo avisa.
+- `fos cerrar`: el ✗ de ESTADO/PIPELINE solo sale si una tool cambiada figura por nombre en ellos y ninguno se tocó; `--sin-doc "motivo"` deja constancia de que se miraron.
+
 ## Versión 979 — Candado de medición: el hook no deja editar lo trackeado mientras mide [394]
 
 - `medir-pipeline.mjs` deja `Admin/mediciones/pipeline/_corriendo` (pid, desde cuándo, tools) mientras corre los lotes y lo suelta al salir (también por error o Ctrl-C). `pre-tool.mjs` rechaza `Edit`/`Write`/`MultiEdit` de un archivo trackeado del repo con el candado vivo, diciendo que espere la notificación; un pid muerto, el scratchpad y lo sin trackear pasan. El hook `Stop` calla mientras haya un candado vivo.

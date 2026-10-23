@@ -13,6 +13,7 @@
 //                                       «Verificar:» comprobable y no se cumple; --forzar lo cierra igual (para un punto descartado, no cumplido)
 //   node tools/todo.mjs --nuevo --pos <n> --rol "Orden, prioridad alta" --titulo "…"   un punto nuevo con el id siguiente al más alto, en el lugar <n> (1..último+1);
 //                                       renumera los de abajo y deja «Terminado cuando:» y «Verificar: manual» para completar. Rechaza una posición fuera de rango; avisa de un título repetido
+//   node tools/todo.mjs --mover 357 --antes 337       cambia el lugar de un punto (--antes o --despues de otro; queda en el grupo del otro) y renumera el orden
 // Las condiciones y cómo se escriben: tools/todo-verificar.js. No toca nada más que Admin/TODO.md.
 // ============================================================================
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -85,6 +86,22 @@ if (A[0] === '--nuevo') {
   for (let i = 0; i < L.length; i++) { const m = TITULO.exec(L[i]); if (m) L[i] = `### ${++n}. ${m[2]} · ${m[3]}`; }
   writeFileSync(RUTA, L.join('\n').replace(/\n{3,}/g, '\n\n'), 'utf8');
   console.log(`Punto ${id} creado en el lugar ${pos}. Completá el cuerpo, «Terminado cuando:» y «Verificar:».`);
+  process.exit(0);
+}
+
+if (A[0] === '--mover') { // --mover <id> --antes <otro id> | --despues <otro id>: cambia el lugar de un punto (y su grupo) y renumera el orden
+  const v = (k) => { const j = A.indexOf(k); return j < 0 ? undefined : A[j + 1]; };
+  const id = A[1], destino = v('--antes') ?? v('--despues'), antes = v('--antes') !== undefined;
+  const p = puntos.find((x) => x.id === id), d = puntos.find((x) => x.id === destino);
+  if (!p || !d || p === d || (!antes && v('--despues') === undefined)) { console.error('Uso: --mover <id> --antes <id> | --despues <id> (dos ids de puntos distintos).'); process.exit(1); }
+  const bloque = L.slice(p.i, p.fin);
+  L.splice(p.i, p.fin - p.i);
+  const dd = puntos.filter((x) => x !== p).map((x) => ({ ...x, i: x.i > p.i ? x.i - bloque.length : x.i, fin: x.fin > p.i ? x.fin - bloque.length : x.fin })).find((x) => x.id === destino);
+  L.splice(antes ? dd.i : dd.fin, 0, ...(antes || bloque.at(-1)?.trim() === '' ? bloque : ['', ...bloque]));
+  let n = 0;
+  for (let i = 0; i < L.length; i++) { const m = TITULO.exec(L[i]); if (m) L[i] = `### ${++n}. ${m[2]} · ${m[3]}`; }
+  writeFileSync(RUTA, L.join('\n').replace(/\n{3,}/g, '\n\n'), 'utf8');
+  console.log(`Movido ${id} ${antes ? 'antes' : 'después'} de ${destino}.`);
   process.exit(0);
 }
 

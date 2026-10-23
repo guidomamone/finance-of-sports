@@ -105,6 +105,11 @@
   "quien": "sesion",
   "donde": "skill club-sourcing, referencia/liga-y-sponsor.md"
  },
+ "cabecera-larga-en-tools": {
+  "hacer": "node tools/fos.mjs acortar-cabecera <tool> (ensayo) y --escribir: deja el principio y el USO y manda el resto, tal cual, a Admin/NOTAS-DE-TOOLS.md; prueba solo que el código no cambió. Una excepción va con su motivo en tools/cabeceras-aceptadas.json.",
+  "quien": "sesion",
+  "donde": "Admin/CONVENCIONES.md, «Comentarios en tools/»"
+ },
  "comentario-historico-en-tools": {
   "hacer": "Sacar «Versión N», «to-do N» y las fechas de los comentarios de la tool (node tools/comparar-sin-comentarios.js --medir da las peores); queda el porqué. Probar con node tools/comparar-sin-comentarios.js --tools.",
   "quien": "sesion",

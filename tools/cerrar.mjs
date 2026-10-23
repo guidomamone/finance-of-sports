@@ -7,9 +7,10 @@
 //   2. regenera el índice de los .md y dice si algún .md nuevo no tiene la marca de primera línea,
 //   3. vuelve a correr la auditoría: P0 y P1 en cero, y qué avisos aparecieron o desaparecieron por código,
 //   4. comprueba que Admin/CHANGELOG.md tiene una entrada reciente que nombra el id,
-//   5. avisa si cambió algo de tools/ y ni Admin/ESTADO.md ni Admin/PIPELINE.md se tocaron, si cambió una skill (commit aparte, y el diff con show_pane) o datos (trailer Corrige:),
+//   5. avisa si cambió una tool que figura por nombre en Admin/ESTADO.md o Admin/PIPELINE.md y ninguno se tocó (--sin-doc "motivo" lo da por visto), si cambió una skill (commit aparte, y el diff con show_pane) o datos (trailer Corrige:),
 //   6. imprime los pendientes con ✓ y ✗ y el `git add` sugerido. NO commitea.
-// USO: node tools/fos.mjs cerrar <id> [--ensayo] [--forzar]     (--ensayo: no cierra el punto ni regenera el índice, solo revisa; --forzar: cierra aunque su «Verificar:» no se cumpla)
+// USO: node tools/fos.mjs cerrar <id> [--ensayo] [--forzar] [--sin-doc "motivo"]     (--ensayo: no cierra el punto ni regenera el índice, solo revisa; --forzar: cierra aunque su «Verificar:» no se cumpla;
+//      --sin-doc: ESTADO.md y PIPELINE.md se miraron y siguen siendo ciertos)
 import { execFileSync, spawnSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -73,7 +74,17 @@ new RegExp(`(\\[[^\\]]*\\b${id}\\b[^\\]]*\\]|\\b(?:TODO|to-do|punto|puntos)s? ${
 const cambiados = git('status', '--porcelain', '-uall').split('\n').filter(Boolean).map((l) => l.slice(3).replace(/^"|"$/g, ''));
 const tocoTools = cambiados.some((f) => /^tools\/[^/]+\.(mjs|js)$/.test(f));
 const docs = cambiados.some((f) => f === 'Admin/ESTADO.md' || f === 'Admin/PIPELINE.md');
-if (tocoTools) (docs ? ok : mal)(docs ? 'cambió tools/ y se tocó ESTADO.md o PIPELINE.md' : 'cambió algo de tools/ y ni Admin/ESTADO.md ni Admin/PIPELINE.md se tocaron (¿sigue siendo cierto lo que dicen?)');
+if (tocoTools) {
+  // ESTADO y PIPELINE dicen cómo se usa cada tool: solo molestan si una tool cambiada figura en ellos por nombre y no se tocaron; --sin-doc "motivo" deja constancia de que se miraron
+  const motivo = A.includes('--sin-doc') ? A[A.indexOf('--sin-doc') + 1] : null;
+  const doc = (f) => { try { return readFileSync(resolve(ROOT, f), 'utf8'); } catch { return ''; } };
+  const textoDocs = `${doc('Admin/ESTADO.md')}\n${doc('Admin/PIPELINE.md')}`;
+  const nombradas = cambiados.map((f) => f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter((n) => n && textoDocs.includes(n));
+  if (docs) ok('cambió tools/ y se tocó ESTADO.md o PIPELINE.md');
+  else if (motivo) ok(`ESTADO.md y PIPELINE.md revisados sin cambios: ${motivo}`);
+  else if (!nombradas.length) ok('ninguna de las tools cambiadas figura por nombre en ESTADO.md ni en PIPELINE.md: no hay qué actualizar');
+  else mal(`cambió ${nombradas.slice(0, 4).join(', ')}${nombradas.length > 4 ? ', …' : ''} (figura en ESTADO.md o PIPELINE.md) y no se tocaron: ¿sigue siendo cierto lo que dicen? Si sí: node tools/fos.mjs cerrar ${id} --sin-doc "por qué sigue siendo cierto"`);
+}
 if (cambiados.some((f) => f.startsWith('.claude/skills/'))) aviso('cambió una skill: commit APARTE y mostrale el diff a Guido con show_pane (pane diff, el hash)');
 if (cambiados.some((f) => /^data\/(?!faltantes|estimados|rankings|auditoria|entidades|correcciones|sponsors)/.test(f))) aviso('cambió un dato publicado: el mensaje del commit lleva un trailer «Corrige: …» (qué dato y por qué)');
 if (!cambiados.length) aviso('no hay nada para commitear');
@@ -81,6 +92,7 @@ if (!cambiados.length) aviso('no hay nada para commitear');
 if (tocoTools) {
   let pide = ''; try { pide = execFileSync('node', ['tools/que-pide.mjs'], { cwd: ROOT, encoding: 'utf8' }); } catch (e) { pide = e.stdout || ''; }
   for (const l of pide.split('\n').filter((x) => x.startsWith('✗'))) mal(`el commit va a pedir: ${l.slice(2)}`);
+  for (const l of pide.split('\n').filter((x) => /comentario con contenido/.test(x))) aviso(`comentarios: ${l.slice(2)}`);
 }
 
 console.log(`\n${lineas.join('\n')}\n`);

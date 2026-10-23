@@ -942,6 +942,16 @@ function checkComentarioHistoricoEnTools() {
   add('P3', 'comentario-historico-en-tools', `${total} referencias a «Versión N», «to-do N» o fechas en comentarios de ${filas.length} tools; las que más (archivo:primera línea): ${top}. Un comentario dice el porqué y la invariante, no cuándo se decidió`);
 }
 
+// Una cabecera de más de CABECERA_MAX líneas se lee en cada sesión que abre la tool: el porqué, el uso y las trampas en pocas líneas; lo demás está en Admin/PIPELINE.md. P3: la lista de limpieza.
+// Una excepción se escribe con su motivo en tools/cabeceras-aceptadas.json ({ "<tool>": "motivo" }).
+function checkCabeceraLargaEnTools() {
+  const { herramientas, medirTool, CABECERA_MAX } = require('./comparar-sin-comentarios.js');
+  let aceptadas = {}; try { aceptadas = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools', 'cabeceras-aceptadas.json'), 'utf8')); } catch (e) { /* sin excepciones */ }
+  const largas = herramientas().map(medirTool).filter(r => r.cabecera > CABECERA_MAX && !aceptadas[r.f]).sort((a, b) => b.cabecera - a.cabecera);
+  if (!largas.length) return;
+  add('P3', 'cabecera-larga-en-tools', `${largas.length} tools con una cabecera de más de ${CABECERA_MAX} líneas; las más largas: ${largas.slice(0, 5).map(r => `${r.f} (${r.cabecera})`).join(', ')}. Dejá el porqué, el uso y las trampas; el resto está en Admin/PIPELINE.md`);
+}
+
 function checkHistoriaEnDocs() {
   const archivos = [...DOCS_DE_CRITERIO, ...mdsDeSkills()].filter(f => fs.existsSync(path.join(ROOT, f)));
   for (const [clave, re, nombre] of HISTORIA_EN_DOCS) {
@@ -2226,6 +2236,7 @@ function main() {
   checkRutasMuertas();
   checkHistoriaEnDocs();
   checkComentarioHistoricoEnTools();
+  checkCabeceraLargaEnTools();
   checkDudasResueltas();
   checkRegistrosSinLector();
   checkMedicionesSinDestino();
