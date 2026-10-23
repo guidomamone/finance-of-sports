@@ -80,11 +80,11 @@ hay nada que investigar en ninguno de esos, es ejecutar el mismo procedimiento.
 
 ## Redes sociales y sitios de fans
 
-**Reddit: SÍ rinde, pero no con WebSearch/Exa ni con la API oficial — piloto del 2026-09-27, to-do
-81 de `Admin/TODO.md`.** `WebSearch` (`site:reddit.com`) y Exa (con `includeDomains` real) no
-devuelven NINGÚN contenido de `reddit.com`, mismo patrón que `twitter.com`/`x.com` (to-do 80) — es
+**Reddit: SÍ rinde, pero no con WebSearch/Exa ni con la API oficial (piloto).**
+`WebSearch` (`site:reddit.com`) y Exa (con `includeDomains` real) no
+devuelven NINGÚN contenido de `reddit.com`, mismo patrón que `twitter.com`/`x.com` — es
 un límite de esas dos herramientas, no de Reddit. La API oficial de Reddit también está cerrada para
-este uso (solo aprueba apps nuevas con "valid moderation use case", ver to-do 81 para el detalle).
+este uso (solo aprueba apps nuevas con "valid moderation use case").
 
 **Lo que sí funcionó: Arctic Shift (`arctic-shift.photon-reddit.com`) y PullPush (`pullpush.io`)**,
 dos archivos comunitarios de Reddit (sucesores de Pushshift) gratis y sin cuenta. Con ellos, 4 de 5
@@ -102,7 +102,7 @@ angloparlantes" quedó refutada por los datos. Antes de descartar un club por es
 tamaño de su subreddit real (`/api/subreddits/search?subreddit_prefix=` de Arctic Shift), no su
 país.
 
-## Barrido de profundidad y EFL (2026-10-03) — herramientas y reglas
+## Barrido de profundidad y EFL: herramientas y reglas
 
 **No hace falta bajar a mano**: `node tools/companies-house-fetch.mjs <número|nombre> --list` lista los
 ejercicios (con un nombre en vez de número busca la sociedad); `--club "<Carpeta>" --slug <x> --want 5`

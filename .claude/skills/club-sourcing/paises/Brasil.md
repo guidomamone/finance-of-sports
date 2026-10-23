@@ -142,8 +142,8 @@ sección "Transparência"/"SAF"/"Governança").
 
 ## Redes sociales y sitios de fans
 
-**Reddit: HIT en los 2 clubes con subreddit grande, MISS en el más chico — piloto del 2026-09-27,
-to-do 81 de `Admin/TODO.md`.** Con Arctic Shift/PullPush (gratis, sin cuenta — ver `Reino-Unido.md`
+**Reddit: HIT en los 2 clubes con subreddit grande, MISS en el más chico (piloto).**
+Con Arctic Shift/PullPush (gratis, sin cuenta — ver `Reino-Unido.md`
 para por qué WebSearch/Exa/la API oficial no sirven), `r/Corinthians` (125k miembros) y
 `r/palmeiras` (75k) dieron HIT real: posts propios discutiendo el "balanço financeiro" oficial de
 2025 con cifras concretas (ej. "Corinthians registra déficit de quase R$ 150 milhões no balanço

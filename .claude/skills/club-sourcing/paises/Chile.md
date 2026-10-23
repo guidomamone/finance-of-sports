@@ -37,7 +37,7 @@ completo: series de 16-17 años consecutivos para Universidad Católica/Universi
 ## Redes sociales y sitios de fans
 
 **Reddit: MISS para los clubes chilenos probados, pero por tamaño de subreddit, no por ser Chile**
-— piloto del 2026-09-27, to-do 81 de `Admin/TODO.md`. `WebSearch`/Exa no sirven para este ángulo en
+(piloto). `WebSearch`/Exa no sirven para este ángulo en
 ningún país (ver `Reino-Unido.md` para el detalle). Con las herramientas que sí llegan a Reddit de
 verdad (Arctic Shift, PullPush — gratis, sin cuenta), `r/colocolo` (706 miembros) y `r/udechile` (5
 miembros, subreddit casi muerto) dieron 0 HIT en varios términos financieros (`balance`, `estados
