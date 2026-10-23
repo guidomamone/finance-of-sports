@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 982 — `fos mover`: mudar un bloque de una tool a un módulo sin cambiarlo [379]
+
+- `tools/mover-bloque.mjs` (`node tools/fos.mjs mover <tool> <desde>-<hasta> <destino.mjs> ["porqué"] [--escribir]`): con una máscara de código (sin comentarios, cadenas ni regex; el código de un `${…}` sí) calcula qué nombres de la tool usa el bloque y cuáles del bloque usa el resto. Lo que el bloque usa de los imports de la tool se importa igual; una constante pura de una línea (`const ROOT = resolve(import.meta.dirname, '..')`) se duplica en el módulo; el resto se importa de la tool (con `export` agregado); lo que el resto usa del bloque se exporta y se importa, y lo que el bloque ya exportaba se re-exporta. Comprueba bloque idéntico salvo el `export`, `node --check` de los dos y avisa de ciclos, código que se ejecuta al importar y un TDZ (constante del bloque que usa al evaluarse un nombre que importaría de la tool: no escribe sin `--forzar`). Ensayo por defecto.
+- Prueba (`probar-mover-bloque.mjs`, 7 casos): rehace la mudanza del 368 sobre una copia de la versión anterior de `caja-deuda.mjs` (líneas 1245-1457): el bloque queda idéntico y la tool partida da EXACTAMENTE la misma salida que la entera con tres comandos de `--personal` (`--club brighton-gb`, `celtic-gb --partir`, `--ver-candidatos newcastle-gb --anio 2023`). La primera versión chocaba con un TDZ (`ROOT` en el ciclo): de ahí la duplicación de constantes puras. Interpretación de «byte a byte»: el BLOQUE es el mismo (el 368 lo tenía idéntico salvo `export`); la cabecera y los imports del módulo son los de la tool, no los que escribió a mano el 368. Herramienta de orden (`no_pipeline`).
+
 ## Versión 981 — Cabeceras largas de tools/: aviso y `fos acortar-cabecera` [398]
 
 - Aviso P3 `cabecera-larga-en-tools` en `audit.js` (más de 40 líneas, `CABECERA_MAX` del comparador; excepciones con motivo en `tools/cabeceras-aceptadas.json`). Se eligió 40 y no 25: es el número que pedía el cierre del punto para las más largas, y a 25 entraban 77 tools. `tools/acortar-cabecera.mjs` (`fos acortar-cabecera`): deja el principio (cortado en un renglón vacío o una raya) y el bloque USO y manda el resto, tal cual, a `Admin/NOTAS-DE-TOOLS.md`; ensayo por defecto; prueba que el código no cambió. Medido (audit, chico): el aviso nuevo; veredicto general.
