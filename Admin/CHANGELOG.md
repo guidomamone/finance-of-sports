@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 968 — TODO: lo que dejó pensando el 383, el 384 y el 374 [391 · 392 · 393 · 394]
+
+- Puntos nuevos (creados con `todo.mjs --nuevo`): 391 (el índice de los `.md` cuenta `Admin/mediciones` y toda medición muestra `indice-md-desfasado`), 392 (`fos reemplazar`: edición en masa sin que el hook la rechace), 393 (`fos que-pide`: qué va a pedir el commit), 394 (candado de medición: el hook rechaza editar trackeados mientras corre).
+
 ## Versión 967 — Primera limpieza de comentarios de tools/: 505 referencias históricas [374]
 
 - `tools/limpiar-comentarios.mjs` (`node tools/fos.mjs limpiar-comentarios [--escribir]`): saca de los comentarios «(to-do N)», «(Versión N)», fechas entre paréntesis y un «TODO N:» inicial, solo dentro de comentarios; ensayo por defecto.
