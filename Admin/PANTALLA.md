@@ -746,8 +746,8 @@ Texto movido sin cambios.
   mira queda guardado solo (sin botón), con favoritos primero y el resto del historial después.
   No es un paywall (la decisión de ir todo gratis sigue en pie): es que quien se
   loguea puede volver a ver lo que ya miró. Pendiente antes de que sirva para un visitante real,
-  no solo Guido: to-do 94 (publicar la pantalla de consentimiento OAuth de Google, que arranca en
-  modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase).
+  no solo Guido: publicar la pantalla de consentimiento OAuth de Google, que arranca en
+  modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase.
   Desde el 2026-10-30, una tabla NUEVA en el esquema `public` de Supabase necesita su `grant` explícito en la misma
   migración (aviso de Supabase del 2026-10-20); `saved_searches` ya existe y ya tiene el suyo (`tools/supabase/schema.sql`), así que no cambia nada.
 - TARJETA "LAS CUENTAS DE LA LIGA" (Ligas; `cardLiga` en `js/auditoria.js`, datos en `data/auditoria/_ligas.js`, que genera
@@ -898,7 +898,7 @@ Texto movido sin cambios.
   Clubes / Mezcla — las dos primeras son atajos de un bloque, la mezcla es el
   modelo completo). `año === null` es "el ejercicio más reciente de ESE club"; en un
   bloque de liga el año NO puede ser null, define quiénes la integraban.
-  Desde el to-do 23 la pantalla se lee como Finanzas: ver la sección
+  La pantalla se lee como Finanzas: ver la sección
   "Comparar con el diseño de Finanzas" de arriba. Los números salen de
   `computeYearGeneric()`, el motor real. Vive todo en `js/selector.js`:
   `js/comparar-clubes.js` ya no existe.

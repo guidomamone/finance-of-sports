@@ -92,7 +92,7 @@ Mitigaciones:
   transcripto no se relee: medido, ninguna llegó a un dato publicado.
 - c3) **Control "sin tablas"** (`pipeline.mjs`, gratis): una transcripción vieja (no de Mistral) de 2+ páginas con menos de 5 renglones de
   tabla que todavía no pasó por verificar (sin `.verificacion.json`) se marca `sin-tablas` y la corrida siguiente la rehace con Mistral,
-  una sola vez. Hasta el to-do 298 e la condición era "sin la marca de Jev" de la preparación vieja, que casi todos los `.md` viejos tienen:
+  una sola vez. La condición vieja era "sin la marca de Jev" de la preparación vieja, que casi todos los `.md` viejos tienen:
   marcaba 0; con la regla nueva, 238 (95 belgas; 100 de la lista de los 319 de la 292, decisión de Guido: Mistral, no subagentes; unas
   8.334 páginas). Un `.md` que ya pasó por verificar no se rehace (OH Leuven 2019 y 2021, que cierran por sus códigos NBB sin tablas).
   El ensayo (`--lista`/`--dir` sin `--ejecutar`) también lee esos candidatos y, si hay, imprime cuántos son, por país, y su
@@ -406,14 +406,14 @@ Mitigaciones:
             ESCALÓN "columna anterior con signo": al decidir si un total es la suma de sus renglones, la columna del año anterior también acepta la suma con el signo impreso
             (como la lectura 4 para la columna actual). Cambian solo el chequeo del año vecino y "año anterior cargado" de AC Milan 2017-18 y 2018-19 y Lazio 2015-16 y 2016-17: los
             totales que se cargan, idénticos; los 4 pasan de cola a ok
-            To-do 298 ah, SUBTOTAL CON HIJOS: al decidir si un total es la suma de lo de arriba (solo en la decisión final, después de los escalones previos), un subtotal con 2 hijas o más
+            SUBTOTAL CON HIJOS: al decidir si un total es la suma de lo de arriba (solo en la decisión final, después de los escalones previos), un subtotal con 2 hijas o más
             (que detallan_a él) que suman su importe cuenta como componente: las hijas no están en la lista de renglones y sin esto "Total Ertrag" de Basel (38,2 M) se contaba además de
             sus componentes (ingresos 76,4 M). Medido en 725 documentos (los 722 de la lista de prueba más los 3 Basel): 722 idénticos; cambian Basel 2005, 2009 y 2012 (siguen en cola por la
             fila "Verlustabdeckung", otro tema). La primera versión, que tocaba también los escalones previos, cambiaba Parma 2016, Sassuolo 2018 y Milan 2020-21: no entró
-            To-do 298 ah (cobertura de pérdidas): una fila SIN LADO cuyo rótulo dice "cobertura de pérdidas" (`COBERTURA_PERDIDAS_RE` en `tools/vocabulario.mjs`: Verlustabdeckung, Verlustübernahme, Verlustausgleich…) no es un ingreso
+            Cobertura de pérdidas: una fila SIN LADO cuyo rótulo dice "cobertura de pérdidas" (`COBERTURA_PERDIDAS_RE` en `tools/vocabulario.mjs`: Verlustabdeckung, Verlustübernahme, Verlustausgleich…) no es un ingreso
             operativo (Guido): en verificar cuenta en el resultado como el financiero, fuera de ingresos y gastos; en cargar va como `exceptional_items` (ganancia dentro de los gastos, como la venta del 20% de Goiás 2023), no en netInterest.
             Basel 2005: ingresos 38,217415 (= Total Ertrag), gastos 38,844639, resultado 0,101193, netInterest 0,263711 (cola → ok). Solo Basel 2005, 2006 (en 0, se ignora) y 2009 tienen esa fila en todo el proyecto.
-            To-do 232 m, ESCALÓN "presentación distinta": si el año vecino da distinto y la diferencia es exactamente UNA fila de gasto (no un
+            ESCALÓN "presentación distinta": si el año vecino da distinto y la diferencia es exactamente UNA fila de gasto (no un
             total) de uno de los dos documentos, el chequeo queda sin decidir (uno la netea), sin casos en la cola. Olympiacos 2020/2021,
             Cuiabá 2022/2023; medido en los 112 casos de año vecino de la cola: 5 aciertos, 0 errores
  ESCALÓN    si la lectura que ganó (0-4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o
