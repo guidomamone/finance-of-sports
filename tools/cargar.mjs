@@ -62,6 +62,7 @@ const { guardarPerfil, perfilVigente, perfilCercano, anioDeDoc, VENTANA_PERFIL }
 const { ajusteDe, ajustesDe, ajustePerimetroDe, ceroRealDelClub } = await import('./ajustes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { esLineaJunta } = await import('./partir-amortizacion.mjs');
+const { datosCategoria } = await import('./datos-cola.mjs');
 const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS, padreDe } = await import('./memoria-categorias.mjs');
 const { padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca } = await import('./padres-filas.mjs'); // en qué nota está cada fila
@@ -722,11 +723,25 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   for (const lado of ['revenue', 'expense']) {
     const total = filas.filter((f) => f.destino === lado).reduce((a, f) => a + Math.abs(f.native || 0), 0);
     const dudas = enCola.filter((f) => f.destino === lado); const enDuda = dudas.reduce((a, f) => a + Math.abs(f.native || 0), 0);
-    if (!dudas.length || !total || enDuda > 0.01 * total) continue;
-    for (const f of dudas.filter((x) => (x.conf ?? 0) >= 0.6)) {
+    if (!dudas.length || !total) continue;
+    // TOPE ACUMULADO (407, aprobado por Guido): ya no es todo o nada. Las dudas se toman de la más chica a la más grande mientras lo que se carga SIN preguntar
+    // no pase el 1% del total de su lado (el error posible está acotado por ese tope, aunque todas estuvieran mal); las que quedan van a la cola. Piso de confianza 0,5
+    // (antes 0,6). Medido contra las respuestas de la cola (1.870 preguntas): con tope de 1% por lado el error acumulado por documento quedó en 1,5% p90.
+    // Nunca sin preguntar: la línea que junta amortización de jugadores y depreciación (se parte con las notas) ni una fila cuya categoría chocó con otro año del club.
+    let acumulado = 0;
+    for (const f of [...dudas].sort((a, b) => Math.abs(a.native || 0) - Math.abs(b.native || 0))) {
+      const monto = Math.abs(f.native || 0);
+      if ((f.conf ?? 0) < 0.5 || f.choque || esLineaJunta(f.label) || acumulado + monto > 0.01 * total) continue;
+      acumulado += monto;
       enCola.splice(enCola.indexOf(f), 1); f.enCola = false; f.casoCola = null; f.escalon = 'materialidad';
-      f.fuenteCat = `${f.fuenteCat} · escalón de materialidad: las dudas de ${lado === 'revenue' ? 'ingresos' : 'gastos'} suman ${(100 * enDuda / total).toFixed(2)}% (≤ 1%) y esta tiene ${f.conf}`;
-      P.avisos.push(`materialidad: "${f.label}" va como ${f.cat} con ${f.conf} (las dudas de ${lado === 'revenue' ? 'ingresos' : 'gastos'} suman ${(100 * enDuda / total).toFixed(2)}% de su lado)`);
+      f.fuenteCat = `${f.fuenteCat} · escalón de materialidad: ${(100 * monto / total).toFixed(2)}% de su lado, acumulado ${(100 * acumulado / total).toFixed(2)}% (tope 1%) y confianza ${f.conf}`;
+      P.avisos.push(`materialidad: "${f.label}" va como ${f.cat} con ${f.conf} (${(100 * monto / total).toFixed(2)}% de ${lado === 'revenue' ? 'ingresos' : 'gastos'}; acumulado sin preguntar ${(100 * acumulado / total).toFixed(2)}%)`);
+    }
+    // lo que queda en la cola llega con sus datos y sin «sí» por defecto (407): peso, lo contestado a la misma etiqueta y qué dijo cada modelo
+    for (const f of enCola.filter((x) => x.destino === lado && x.casoCola)) {
+      const datos = datosCategoria({ etiqueta: f.label, pdf, md: e.md, lado, monto: f.native, totalLado: total, propuesta: f.cat, confClaude: f.conf });
+      if (datos) f.casoCola.que += `  ${datos}`;
+      if (!/^NO aceptar/.test(f.casoCola.propuesta)) f.casoCola.propuesta = `sin respuesta por defecto: mirá los datos. Si la categoría propuesta (${f.cat}) está bien, responder aceptar; si no, corregir --valor <categoría> con una de data/category-map.js`;
     }
   }
   for (const f of enCola) if (f.casoCola) agregarCaso(f.casoCola);
@@ -787,6 +802,13 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         // ajuste `incluye`: la categoría está dentro de otra línea (el documento las junta): no es un 0 a revisar ni una pregunta.
         if (catsIng.every((c) => incluidoEn[c]) && catsGas.every((c) => incluidoEn[c])) { P.avisos.push(`"${nombre}" da 0 porque está incluida en otra línea (ajuste manual \`incluye\`)`); continue; }
         let tiene = perfilVigente(clubId, campo, year)?.valor; if (tiene === undefined || tiene === null) tiene = respPerfil(campo, nombre);
+        // UN CHEQUEO CERCANO FUERA DE LA VENTANA TAMBIÉN VALE: el perfil de un club contestado en otro año no cambió nunca al volver a preguntar (medido en
+        // perfil-clubes.jsonl y la cola: 201 de 201, y las 26 respuestas «sí» siguieron en «sí»); la cola ya no repite la pregunta por club, campo y tramo de 5 años.
+        // No se registra como chequeo nuevo (no extiende la ventana): queda el aviso con el año del que sale, y un documento que sí traiga la línea no pasa por acá.
+        if (tiene === undefined || tiene === null) {
+          const cer = perfilCercano(clubId, campo, year);
+          if (cer && cer.valor !== undefined && cer.valor !== null) { tiene = cer.valor; P.avisos.push(`perfil de "${nombre}": se usa el chequeo de ${cer.anio} (${cer.valor ? 'sí' : 'no'}), fuera de la ventana de ${VENTANA_PERFIL - 1} años`); }
+        }
         // FORMA JURÍDICA: una ΠΑΕ (Ποδοσφαιρική Ανώνυμη Εταιρεία) es por ley una sociedad solo de
         // fútbol, con accionistas y no socios; las 12 griegas contestadas en la cola dieron "no" y "no". UNA compuerta: la forma está en la
         // PORTADA del documento (hasta la pág. 3 del visor), y esa línea es la cita (la portada nombra a quien presenta el balance; no se busca el

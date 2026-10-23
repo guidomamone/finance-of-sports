@@ -96,16 +96,43 @@ const pendiente = (c, { resp, cerrado }) => !resp.has(c.id) && !cerrado.get(c.id
 // Agrega un caso (si su clave ya existe, devuelve el id existente sin duplicar). `caso`: { pdf, md, etapa, motivo, que, pagina, lineas,
 // propuesta, detalle }. `que` es la frase que lee Guido: qué mirar y por qué (ej. "Mistral leyó 1.284.567 y Gemini 1.234.567 en
 // 'Cuotas sociales'; la tabla suma con 1.234.567").
+// LA MISMA PREGUNTA CON OTRO TEXTO. En las dudas de localizar y extraer el `detalle` (y por eso el id) sale del texto que redacta la IA: la misma
+// pregunta, reformulada en otra corrida, nacía como un caso nuevo y volvía a la cola aunque ya estuviera contestada. La clave estable es lo que no
+// depende de la redacción: documento, etapa, motivo, las etiquetas entre comillas de la pregunta y los bloques (bNN) que nombra. Sin etiqueta citada no hay
+// clave (la pregunta sigue como siempre). Medido sobre el registro: con etiquetas y bloques, 34 de 37 grupos con respuesta real coinciden (los otros 3 son una respuesta
+// corregida después: vale la última).
+const normClave = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+export function claveEstable(caso) {
+  if (caso.etapa !== 'verificar' || !/^duda-de-(localizar|extraer)$/.test(caso.motivo || '') || !caso.que) return null;
+  const q = String(caso.que).split('(por qué')[0];
+  const etiquetas = [...new Set([...q.matchAll(/'([^']{3,80})'|«([^»]{3,80})»|"([^"]{3,80})"/g)].map((m) => normClave(m[1] || m[2] || m[3])))].sort();
+  if (!etiquetas.length) return null;
+  const bloques = [...new Set([...q.matchAll(/\bb(\d{1,4})\b/g)].map((m) => `b${m[1]}`))].sort();
+  return `${caso.pdf}|${caso.etapa}|${caso.motivo}|${etiquetas.join('+')}|${bloques.join(',')}`;
+}
 export function agregarCaso(caso) {
   const clave = `${caso.pdf}|${caso.etapa}|${caso.motivo}|${caso.detalle || ''}`;
   const id = createHash('sha1').update(clave).digest('hex').slice(0, 7);
   const { casos, resp, cerrado } = leer();
+  const estable = claveEstable(caso);
+  if (estable && !casos.has(id)) {
+    // si una pregunta con la misma clave estable ya tiene respuesta real, la nueva nace contestada igual (con la última respuesta), y dice de dónde salió
+    let previa = null;
+    for (const c of casos.values()) if (c.claveEstable === estable && resp.has(c.id) && (!previa || resp.get(c.id).ts > resp.get(previa.id).ts)) previa = c;
+    if (!previa) for (const c of casos.values()) if (!c.claveEstable && resp.has(c.id) && claveEstable(c) === estable && (!previa || resp.get(c.id).ts > resp.get(previa.id).ts)) previa = c;
+    if (previa) {
+      const r = resp.get(previa.id);
+      appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'caso', id, ts: new Date().toISOString(), clave, claveEstable: estable, ...caso }) + '\n');
+      appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: r.decision, valor: r.valor ?? null, nota: `misma pregunta que ${previa.id} (otra redacción): ${r.nota || ''}`.trim() }) + '\n');
+      return id;
+    }
+  }
   if (casos.has(id)) {
     // Un caso cerrado como obsoleto que la etapa vuelve a levantar se REABRE: vuelve a la cola, no queda escondido.
     if (cerrado.get(id) && !resp.has(id)) appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: 'reabierto', nota: 'la etapa volvió a levantar este caso' }) + '\n');
     return id;
   }
-  appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'caso', id, ts: new Date().toISOString(), clave, ...caso }) + '\n');
+  appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'caso', id, ts: new Date().toISOString(), clave, ...(estable ? { claveEstable: estable } : {}), ...caso }) + '\n');
   return id;
 }
 export function respuestaDe(pdf, etapa, motivo, detalle = '') {

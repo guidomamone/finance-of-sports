@@ -79,7 +79,9 @@ const cambiadas = flag('--tools') ? flag('--tools').split(',').map((s) => s.trim
 const C = clasificar(ROOT);
 const info = (n) => T.tools[n] || { alcance: 'compartida', medidores: C.modulos.get(n)?.medidores || [] };
 const sinClasificar = cambiadas.filter((n) => /\.(mjs|js)$/.test(n) && C.clase(n) === 'sin_clasificar');
-if (sinClasificar.length) { console.error(`Tools sin clasificar: ${sinClasificar.join(', ')}. Sumalas a «tools» o a «no_pipeline» de tools/pipeline-tools.json (node tools/clasificar-tools.mjs <archivo>).`); process.exit(1); }
+// los problemas de arranque se juntan y se dicen TODOS juntos (antes cada uno frenaba por separado y costaba un arranque por problema)
+const problemas = [];
+if (sinClasificar.length) problemas.push(`Tools sin clasificar: ${sinClasificar.join(', ')}. Sumalas a «tools» o a «no_pipeline» de tools/pipeline-tools.json (node tools/clasificar-tools.mjs <archivo>).`);
 const sinMedidor = cambiadas.filter((n) => C.clase(n) === 'sin_medidor');
 if (sinMedidor.length) console.log(`Del pipeline pero sin medidor que las ejercite (no se pueden medir todavía): ${sinMedidor.join(', ')}`);
 const nombres = cambiadas.filter((n) => ['tools', 'modulo'].includes(C.clase(n)));
@@ -160,7 +162,8 @@ const SENSIBLE = /^(data|Generados|Clubes|js|css|Admin\/registros)\b|^index\.htm
 const propio = (p) => p.startsWith('Admin/mediciones/pipeline') || p === 'Admin/registros/mediciones-pipeline.jsonl' || nombres.some((n) => p === `tools/${n}`);
 const estado = () => git('status', '--porcelain', '-uall').split('\n').filter(Boolean).filter((l) => !propio(l.slice(3).replace(/^"|"$/g, '')));
 const sucios = estado().filter((l) => SENSIBLE.test(l.slice(3)));
-if (sucios.length) { console.error(`Hay cambios sin commitear en datos o registros; el antes y el después se miden sobre los mismos datos. Commitealos o descartalos primero:\n  ${sucios.join('\n  ')}`); process.exit(1); }
+if (sucios.length) problemas.push(`Hay cambios sin commitear en datos o registros; el antes y el después se miden sobre los mismos datos. Commitealos o descartalos primero:\n  ${sucios.join('\n  ')}`);
+if (problemas.length) { console.error(problemas.join('\n\n')); process.exit(1); }
 const estadoInicial = new Set(estado());
 function limpiarEfectos(med) {
   const nuevos = estado().filter((l) => !estadoInicial.has(l));
