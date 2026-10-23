@@ -93,6 +93,9 @@ window.RANKINGS["de-bundesliga"] = {
       { id:"rbleipzig-de", revenue:359.936, reportType:"official_balance_sheet",
         sourceId:"rbleipzig-de-jahresabschluss-2022",
         mix:[["Comercial / Sponsors",2.347],["Fútbol profesional (sin desglosar por la fuente)",265.29],["Otros ingresos",92.299]] },
+      { id:"monchengladbach-de", revenue:189.1, reportType:"official_balance_sheet",
+        sourceId:"monchengladbach-de-jahresabschluss-2022",
+        mix:[["Otros ingresos",189.1]] },
     ],
   },
   2021: {

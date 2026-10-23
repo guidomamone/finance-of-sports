@@ -1,5 +1,9 @@
 // GENERADO desde data/de/monchengladbach-de.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const monchengladbachDeRevenueLinesByYear = {
+  2022: [
+    {"rawLabel":"1. Umsatzerlöse","normalizedCategory":"other_income","amountNative":170.807016,"disclosureLevel":"aggregated"},
+    {"rawLabel":"2. Sonstige betriebliche Erträge","normalizedCategory":"other_income","amountNative":6.485637,"disclosureLevel":"aggregated"},
+  ],
   2023: [
     {"rawLabel":"Erlöse aus dem Spielbetrieb","normalizedCategory":"matchday_competition","amountNative":21.268,"disclosureLevel":"detailed"},
     {"rawLabel":"Erlöse aus Werbung","normalizedCategory":"sponsorship_commercial","amountNative":40.189,"disclosureLevel":"detailed"},
@@ -21,6 +25,15 @@ const monchengladbachDeRevenueLinesByYear = {
 };
 
 const monchengladbachDeExpenseLinesByYear = {
+  2022: [
+    {"rawLabel":"Aufwendungen für bezogene Waren","normalizedCategory":"other_expenses","amountNative":-10.457183,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) Löhne und Gehälter","normalizedCategory":"wages_squad","amountNative":-95.811057,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) Soziale Abgaben","normalizedCategory":"wages_squad","amountNative":-7.429105,"disclosureLevel":"aggregated"},
+    {"rawLabel":"6. Sonstige betriebliche Aufwendungen","normalizedCategory":"other_expenses","amountNative":-40.675398,"disclosureLevel":"aggregated"},
+    {"rawLabel":"12. Sonstige Steuern","normalizedCategory":"admin_general_expense","amountNative":-0.371267,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)","normalizedCategory":"player_amortisation","amountNative":-32.294039,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel","normalizedCategory":"depreciation","amountNative":-13.629219,"disclosureLevel":"aggregated"},
+  ],
   2023: [
     {"rawLabel":"Aufwendungen für bezogene Waren (Materialaufwand)","normalizedCategory":"other_expenses","amountNative":-12.949497,"disclosureLevel":"detailed"},
     {"rawLabel":"Personalaufwand","normalizedCategory":"wages_squad","amountNative":-102.008369,"disclosureLevel":"detailed","items":[["Löhne und Gehälter",-94.60714],["Soziale Abgaben",-7.401229]]},
@@ -38,6 +51,7 @@ const monchengladbachDeExpenseLinesByYear = {
 };
 
 const monchengladbachDeFiscalYearMeta = {
+  2022: {"currency":"EUR","sourceId":"monchengladbach-de-jahresabschluss-2022","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2022-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.50788,"tax":0.203214,"grossDebt":null,"cash":null,"officialTotalRevenue":177.292653,"officialTotalExpenses":200.667267,"officialPAT":-24.67928,"extraRows":[{"label":"7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens","value":0.000018},{"label":"8. Sonstige Zinsen und ähnliche Erträge","value":0.017175},{"label":"9. Zinsen und ähnliche Aufwendungen","value":-1.525073},{"label":"10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)","value":0.203214}]},
   2023: {"currency":"EUR","sourceId":"monchengladbach-de-jahresabschluss-2023","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":-5.823501,"grossDebt":107.105528,"cash":0.493335,"officialTotalRevenue":198.33571,"officialTotalExpenses":188.225663,"officialPAT":4.286546},
   2024: {"currency":"EUR","sourceId":"monchengladbach-de-jahresabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0.079976,"grossDebt":107.921968,"cash":0.740841,"officialTotalRevenue":182.392068,"officialTotalExpenses":184.904447,"officialPAT":-2.432403},
 };
@@ -56,7 +70,7 @@ window.CLUB_GENERIC_DATA["monchengladbach-de"] = {
   presupuestoOverlayByYear: monchengladbachDePresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"monchengladbach-de-jahresabschluss-2023":{"id":"monchengladbach-de-jahresabschluss-2023","clubId":"monchengladbach-de","title":"Jahresabschluss zum Geschäftsjahr vom 01.01.2023 bis zum 31.12.2023","type":"official_balance_sheet","reliability":"primary"},"monchengladbach-de-jahresabschluss-2024":{"id":"monchengladbach-de-jahresabschluss-2024","clubId":"monchengladbach-de","title":"Jahresabschluss zum Geschäftsjahr vom 01.01.2024 bis zum 31.12.2024","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"monchengladbach-de-jahresabschluss-2023":{"id":"monchengladbach-de-jahresabschluss-2023","clubId":"monchengladbach-de","title":"Jahresabschluss zum Geschäftsjahr vom 01.01.2023 bis zum 31.12.2023","type":"official_balance_sheet","reliability":"primary"},"monchengladbach-de-jahresabschluss-2024":{"id":"monchengladbach-de-jahresabschluss-2024","clubId":"monchengladbach-de","title":"Jahresabschluss zum Geschäftsjahr vom 01.01.2024 bis zum 31.12.2024","type":"official_balance_sheet","reliability":"primary"},"monchengladbach-de-jahresabschluss-2022":{"id":"monchengladbach-de-jahresabschluss-2022","clubId":"monchengladbach-de","title":"Borussia VfL 1900 Mönchengladbach GmbH — jahresabschluss-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"}});
 
 gestionesByClub["monchengladbach-de"] = {"actual":{"nombre":"Gestión actual","firstYear":2023,"lastYear":2024}};
 

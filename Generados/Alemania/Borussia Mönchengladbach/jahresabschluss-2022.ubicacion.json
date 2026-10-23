@@ -1,0 +1,151 @@
+{
+ "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md",
+ "mdSha1": "e0fc5e531aa1af2f1ddac33f63082bc4357833ed",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-23T16:05:24.338Z",
+ "perimetroClub": null,
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    13
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    148,
+    158
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    168,
+    187
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    191,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    209,
+    225
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    230,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    248,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    378,
+    385
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    421,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    476,
+    481
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    575,
+    588
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    592,
+    598
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    610,
+    618
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    622,
+    635
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6",
+  "b7"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la Gewinn- und Verlustrechnung: '01.01.-31.12.2022 EUR'",
+ "moneda": "EUR",
+ "columna_ejercicio": "01.01.-31.12.2022 EUR",
+ "columna_anterior": "01.01.-31.12.2021 EUR",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se acepta cargar los Umsatzerlöse sin abrir en Televisión y Estadio, dado que el documento no trae ningún cuadro que desglose los ingresos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "1. Umsatzerlöse",
+   "texto": "El índice no muestra ninguna nota con desglose de Umsatzerlöse; puede que el desglose esté solo en texto del Anhang o del Lagebericht, sin tabla.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Jahresabschluss individual (HGB, § 275 Abs. 2) de Borussia VfL 1900 Mönchengladbach GmbH. La GuV está en b6 (pág. 5) y continúa en b7 (pág. 6). Las importes están en EUR exactos, mientras que las notas están en TEUR. No hay ningún cuadro de desglose de ingresos (Televisión/Estadio) ni de gastos entre los bloques. Los demás bloques no se eligen: b2-b5 son el balance, b8 son las Forderungen, b9 las Verbindlichkeiten, b10 los empleados y b11-b14 el Anlagespiegel. Por lo que muestra el balance, es una sociedad de tamaño reducido; no parece ser la sociedad principal de la Bundesliga."
+}

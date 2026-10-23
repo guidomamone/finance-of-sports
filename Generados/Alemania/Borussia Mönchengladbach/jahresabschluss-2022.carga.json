@@ -1,0 +1,495 @@
+{
+ "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+ "generado": "2026-10-23T16:06:31.523Z",
+ "frena": [],
+ "avisos": [
+  "categorías en 0 aun después del reintento (se carga así): Televisión, Estadio"
+ ],
+ "ejercicio": {
+  "clubId": "monchengladbach-de",
+  "year": 2022,
+  "cierre": "2022-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "1. Umsatzerlöse",
+    "normalizedCategory": "other_income",
+    "amountNative": 170.807016,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "2. Sonstige betriebliche Erträge",
+    "normalizedCategory": "other_income",
+    "amountNative": 6.485637,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Aufwendungen für bezogene Waren",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -10.457183,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a) Löhne und Gehälter",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -95.811057,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "b) Soziale Abgaben",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -7.429105,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "6. Sonstige betriebliche Aufwendungen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -40.675398,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "12. Sonstige Steuern",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.371267,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -32.294039,
+    "disclosureLevel": "aggregated",
+    "_pag": null,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-23): derechos de jugadores"
+   },
+   {
+    "rawLabel": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+    "normalizedCategory": "depreciation",
+    "amountNative": -13.629219,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-23): bienes de uso y licencias"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2022-12-31",
+   "sourceId": "monchengladbach-de-jahresabschluss-2022",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1.50788,
+   "tax": 0.203214,
+   "extraRows": [
+    {
+     "label": "7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens",
+     "value": 0.000018
+    },
+    {
+     "label": "8. Sonstige Zinsen und ähnliche Erträge",
+     "value": 0.017175
+    },
+    {
+     "label": "9. Zinsen und ähnliche Aufwendungen",
+     "value": -1.525073
+    },
+    {
+     "label": "10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)",
+     "value": 0.203214
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 177.292653,
+   "officialTotalExpenses": 200.667267,
+   "officialPAT": -24.67928
+  },
+  "source": {
+   "id": "monchengladbach-de-jahresabschluss-2022",
+   "clubId": "monchengladbach-de",
+   "title": "Borussia VfL 1900 Mönchengladbach GmbH — jahresabschluss-2022 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-23) desde la transcripción Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Jahresabschluss zum Geschäftsjahr vom 01.01.2022 bis zum 31.12.2022"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "monchengladbach-de",
+ "year": 2022,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+   "campo": "fila",
+   "valor": "32.294.038,76",
+   "linea": null,
+   "etiqueta": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 250,
+   "motivo": "REGLA de la línea de depreciación y amortización junta (votación 3 a 0): el estado junta Abschreibungen (45.923.257,98) y el Anlagenspiegel las abre; jugadores = 32.294.038,76 (L596), resto 13.629.219,22. Mismo criterio que 2023 y 2024 de este club",
+   "evidencia": "jahresabschluss-2022.md L250 y L596",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+   "campo": "fila",
+   "valor": "13.629.219,22",
+   "linea": 250,
+   "etiqueta": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Resto de la línea 5 Abschreibungen: 1.795.355,54 + 5.673.611,13 (a.o.) + 4.644.522,57 + 1.515.729,98 del Anlagenspiegel (L594-L626), suma 13.629.219,22",
+   "evidencia": "jahresabschluss-2022.md L250 y Anlagenspiegel",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+   "motivo": "derechos de jugadores",
+   "evidencia": "L596",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+   "motivo": "bienes de uso y licencias",
+   "evidencia": "Anlagenspiegel",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  }
+ ],
+ "seleccion": {
+  "filas": 13,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "1. Umsatzerlöse",
+   "page": 5,
+   "native": 170.807016,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 170.807016,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 170.807016
+  },
+  {
+   "label": "2. Sonstige betriebliche Erträge",
+   "page": 5,
+   "native": 6.485637,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.485637,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.485637
+  },
+  {
+   "label": "Aufwendungen für bezogene Waren",
+   "page": 5,
+   "native": 10.457183,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 10.457183,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.457183
+  },
+  {
+   "label": "a) Löhne und Gehälter",
+   "page": 5,
+   "native": 95.811057,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 95.811057,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -95.811057
+  },
+  {
+   "label": "b) Soziale Abgaben",
+   "page": 5,
+   "native": 7.429105,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.429105,
+   "cat": "wages_squad",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -7.429105
+  },
+  {
+   "label": "6. Sonstige betriebliche Aufwendungen",
+   "page": 6,
+   "native": 40.675398,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 40.675398,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -40.675398
+  },
+  {
+   "label": "12. Sonstige Steuern",
+   "page": 6,
+   "native": 0.371267,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.371267,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.371267
+  },
+  {
+   "label": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+   "page": null,
+   "native": 32.294039,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 32.294039,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-23): derechos de jugadores",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -32.294039
+  },
+  {
+   "label": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+   "page": 6,
+   "native": 13.629219,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 13.629219,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-23): bienes de uso y licencias",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -13.629219
+  },
+  {
+   "label": "7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens",
+   "page": null,
+   "native": 0.000018,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "8. Sonstige Zinsen und ähnliche Erträge",
+   "page": null,
+   "native": 0.017175,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "9. Zinsen und ähnliche Aufwendungen",
+   "page": null,
+   "native": -1.525073,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)",
+   "page": null,
+   "native": 0.203214,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 177.292653,
+  "expSum": -200.667268,
+  "officialTotalRevenue": 177.292653,
+  "officialTotalExpenses": 200.667267,
+  "officialPAT": -24.67928,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -24.67928,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 177.292653
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 200.667267
+  }
+ },
+ "liga": {
+  "valor": "de-bundesliga",
+  "fuente": "roster cacheado de \"2022–23 Bundesliga\" (tools/club-league-reference/de.json), coincidencia exacta \"Borussia Mönchengladbach\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (39 de 42 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (1 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Alemania (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2022-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2022-12-31 = 0.937559 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2022-12-30, 2022-12-31 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "monchengladbach-de-jahresabschluss-2022",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "de-bundesliga",
+   "fuente": "roster cacheado de \"2022–23 Bundesliga\" (tools/club-league-reference/de.json), coincidencia exacta \"Borussia Mönchengladbach\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 7,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

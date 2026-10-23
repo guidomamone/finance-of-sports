@@ -98,3 +98,5 @@ sección de arriba).
 - `unternehmensregister.de` ahora responde (200), pero su búsqueda es un formulario con sesión (ver `paises/Alemania.md`) y no se abrió. Se miró North Data, que replica las publicaciones del registro: la lista de Jahresabschlüsse de la GmbH va de 2019 a 2024 y **no trae ninguno con cierre 31/12/2025**. `bundesanzeiger.de` redirige (302), no sirve desde la terminal.
 - Sigue lo de arriba: se espera hacia enero de 2027, cuando el club use el plazo legal. Reintentar entonces, directo en el Unternehmensregister.
 - Último chequeo: 2026-10-21.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-23): ejercicio 2022 desde `Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf` (sourceId `monchengladbach-de-jahresabschluss-2022`).

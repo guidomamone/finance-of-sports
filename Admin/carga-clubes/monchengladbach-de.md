@@ -199,6 +199,48 @@ _investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/
 Rolf Königs (2004-04-01 a 2024-03-19): fohlen-hautnah (19-3-2024) dice que era presidente desde abril de 2004 y que Bonhof asume 'mit sofortiger Wirkung' ese mismo día tras la elección del nuevo Präsidium por el Aufsichtsrat; por eso hasta 2024-03-19 (coincide con el 'desde' ya cargado de Bonhof). La fuente da solo mes para el inicio: desde con día 01 (de.wikipedia.org/wiki/Rolf_Königs da el 6-4-2004 como elección, sucediendo al fallecido Adalbert Jordan). Corroboración en los documentos: jahresabschluss-2023.md:18 (Geschäftsführung 2023 con Rolf Königs) y jahresabschluss-2024-aufsichtsratsbericht-nachtrag.md:105 ('Rolf Königs (bis 19. März 2024)'). El cierre 2023-12-31 queda dentro de su gestión.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | 1. Umsatzerlöse | pág. 5, precedente |
+| 2 | 2. Sonstige betriebliche Erträge | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aufwendungen für bezogene Waren | pág. 5, precedente |
+| 2 | a) Löhne und Gehälter | pág. 5, Jev 0.99 |
+| 3 | b) Soziale Abgaben | pág. 5, Claude 0.88 |
+| 4 | 6. Sonstige betriebliche Aufwendungen | pág. 6, precedente |
+| 5 | 12. Sonstige Steuern | pág. 6, Jev 0.99 |
+| 6 | Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres) | pág. ?, precedente |
+| 7 | Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel | pág. 6, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): fila = 32.294.038,76. REGLA de la línea de depreciación y amortización junta (votación 3 a 0): el estado junta Abschreibungen (45.923.257,98) y el Anlagenspiegel las abre; jugadores = 32.294.038,76 (L596), resto 13.629.219,22. Mismo criterio que 2023 y 2024 de este club
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): fila = 13.629.219,22. Resto de la línea 5 Abschreibungen: 1.795.355,54 + 5.673.611,13 (a.o.) + 4.644.522,57 + 1.515.729,98 del Anlagenspiegel (L594-L626), suma 13.629.219,22
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): categoria = player_amortisation. derechos de jugadores
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): categoria = depreciation. bienes de uso y licencias
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-23): de-bundesliga, verificado contra roster cacheado de "2022–23 Bundesliga" (tools/club-league-reference/de.json), coincidencia exacta "Borussia Mönchengladbach".
+```
+
 ## Fuentes
 
 ### monchengladbach-de-jahresabschluss-2023
@@ -215,4 +257,12 @@ _note (data/):_
 
 ```text
 Jahresabschluss INDIVIDUAL, ejercicio CALENDARIO. Bajado de unternehmensregister.de. Transcripción completa en Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2024-completo.md. Existe además jahresabschluss-2024-aufsichtsratsbericht-nachtrag.md (informe del Consejo de Vigilancia, narrativo, NO se usó como fuente de datos — ver comentario de cabecera de monchengladbach-de-data.js). Mismo problema de tabla de GuV incompleta que 2023.
+```
+
+### monchengladbach-de-jahresabschluss-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-23) desde la transcripción Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

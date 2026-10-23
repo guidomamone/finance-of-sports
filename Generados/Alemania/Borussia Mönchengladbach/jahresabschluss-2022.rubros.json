@@ -3,185 +3,98 @@
   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
   "club": "monchengladbach-de",
   "year": 2022,
-  "numberFormat": "eu (punto miles, coma decimal)",
-  "generatedAt": "2026-09-30T21:50:18.963Z",
-  "tieOuts": {
-    "cierran": 0,
-    "noCierran": 0
-  },
-  "warnings": [],
-  "estadoDeResultados": true,
-  "seleccion": {
-    "ok": true,
-    "filas": 15,
-    "notasUsadas": []
-  },
-  "ladoConocido": 10,
+  "generatedAt": "2026-10-23T16:05:47.336Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "Kaderspieler",
-      "lado": null,
-      "page": 10,
-      "section": "UNTERNEHMENSREGISTER / 4. Erläuterungen zur Gewinn- und Verlustrechnung / 5. Arbeitnehmer",
+      "label": "1. Umsatzerlöse",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
       "values": [
-        39
+        170.807016
       ],
-      "origen": "estado 8",
-      "glosa": "Jugadores de la plantilla"
+      "glosa": "1. Cifra de negocios"
     },
     {
-      "label": "Angestellte",
-      "lado": null,
-      "page": 10,
-      "section": "UNTERNEHMENSREGISTER / 4. Erläuterungen zur Gewinn- und Verlustrechnung / 5. Arbeitnehmer",
+      "label": "2. Sonstige betriebliche Erträge",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
       "values": [
-        347
+        6.485637
       ],
-      "origen": "estado 8",
-      "glosa": "Empleados"
+      "glosa": "2. Otros ingresos de explotación"
     },
     {
-      "label": "Aushilfen",
-      "lado": null,
-      "page": 10,
-      "section": "UNTERNEHMENSREGISTER / 4. Erläuterungen zur Gewinn- und Verlustrechnung / 5. Arbeitnehmer",
+      "label": "Aufwendungen für bezogene Waren",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
       "values": [
-        749
+        10.457183
       ],
-      "origen": "estado 8",
-      "glosa": "Personal temporal"
+      "glosa": "Gastos por mercancías adquiridas"
     },
     {
       "label": "a) Löhne und Gehälter",
-      "lado": null,
+      "lado": "expense",
       "page": 5,
-      "section": "# Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2022",
+      "section": "estado",
       "values": [
         95.811057
       ],
-      "origen": "estado 4",
       "glosa": "a) Sueldos y salarios"
     },
     {
       "label": "b) Soziale Abgaben",
-      "lado": null,
+      "lado": "expense",
       "page": 5,
-      "section": "# Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2022",
+      "section": "estado",
       "values": [
         7.429105
       ],
-      "origen": "estado 4",
       "glosa": "b) Cargas sociales"
     },
     {
-      "label": "8. Sonstige Zinsen und ähnliche Erträge",
-      "lado": "revenue",
-      "page": 6,
-      "section": "UNTERNEHMENSREGISTER",
-      "values": [
-        0.017175
-      ],
-      "origen": "estado 5",
-      "glosa": "8. Otros intereses e ingresos asimilados"
-    },
-    {
-      "label": "9. Zinsen und ähnliche Aufwendungen",
+      "label": "6. Sonstige betriebliche Aufwendungen",
       "lado": "expense",
       "page": 6,
-      "section": "UNTERNEHMENSREGISTER",
+      "section": "estado",
       "values": [
-        1.525073
+        40.675398
       ],
-      "origen": "estado 5",
-      "glosa": "9. Intereses y gastos asimilados"
+      "glosa": "6. Otros gastos de explotación"
     },
     {
-      "label": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+      "label": "12. Sonstige Steuern",
       "lado": "expense",
-      "page": 12,
-      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "page": 6,
+      "section": "estado",
       "values": [
-        19.15247
+        0.371267
       ],
-      "origen": "estado 9",
-      "glosa": "1. Concesiones, derechos de propiedad industrial y derechos y valores similares adquiridos a título oneroso, así como licencias sobre tales derechos y valores"
+      "glosa": "12. Otros impuestos"
     },
     {
-      "label": "2. Spielerwerte",
+      "label": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
       "lado": "expense",
-      "page": 12,
-      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "page": null,
+      "section": "ajuste manual",
       "values": [
-        173.506935
+        32.294039
       ],
-      "origen": "estado 9",
-      "glosa": "2. Derechos federativos"
+      "glosa": "Amortizaciones — Valor de jugadores, según el cuadro de inmovilizado (amortización del ejercicio)"
     },
     {
-      "label": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+      "label": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
       "lado": "expense",
-      "page": 12,
-      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "page": 6,
+      "section": "ajuste manual",
       "values": [
-        150.507983
+        13.629219
       ],
-      "origen": "estado 9",
-      "glosa": "1. Terrenos, derechos análogos y construcciones, incluidas las construcciones en terrenos ajenos"
-    },
-    {
-      "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
-      "lado": "expense",
-      "page": 12,
-      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-      "values": [
-        15.828028
-      ],
-      "origen": "estado 9",
-      "glosa": "2. Otras instalaciones, equipamiento operativo y de oficina"
-    },
-    {
-      "label": "3. Geleistete Anzahlungen und Anlagen im Bau",
-      "lado": "expense",
-      "page": 12,
-      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-      "values": [
-        0.226098
-      ],
-      "origen": "estado 9",
-      "glosa": "3. Anticipos e inmovilizado en curso"
-    },
-    {
-      "label": "1. Anteile an verbundenen Unternehmen",
-      "lado": "expense",
-      "page": 12,
-      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-      "values": [
-        0.3
-      ],
-      "origen": "estado 9",
-      "glosa": "1. Participaciones en empresas del grupo"
-    },
-    {
-      "label": "2. Beteiligungen",
-      "lado": "expense",
-      "page": 12,
-      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-      "values": [
-        2.44284
-      ],
-      "origen": "estado 9",
-      "glosa": "2. Participaciones"
-    },
-    {
-      "label": "3. Sonstige Finanzanlagen",
-      "lado": "expense",
-      "page": 12,
-      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
-      "values": [
-        0.0006
-      ],
-      "origen": "estado 9",
-      "glosa": "3. Otras inversiones financieras"
+      "glosa": "Amortizaciones — Concesiones adquiridas a título oneroso + inmovilizado material, según el cuadro de inmovilizado"
     }
   ]
 }

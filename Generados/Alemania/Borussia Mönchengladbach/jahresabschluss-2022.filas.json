@@ -1,0 +1,211 @@
+{
+ "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md",
+ "mdSha1": "e0fc5e531aa1af2f1ddac33f63082bc4357833ed",
+ "ubicacionSha1": "181c1e3912e754c3dc98336745080da54a6afe40",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-23T16:05:47.077Z",
+ "ubicacion": {
+  "estado": [
+   "b6",
+   "b7"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L230: columnas '01.01.-31.12.2022 EUR' con importes en euros con decimales"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L248: columnas '01.01.-31.12.2022 EUR' con importes en euros con decimales"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 232,
+   "etiqueta": "1. Umsatzerlöse",
+   "actual": "170.807.015,84",
+   "anterior": "166.965.704,39",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 233,
+   "etiqueta": "2. Sonstige betriebliche Erträge",
+   "actual": "6.485.636,95",
+   "anterior": "2.204.595,62",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 235,
+   "etiqueta": "Aufwendungen für bezogene Waren",
+   "actual": "10.457.182,66",
+   "anterior": "8.909.331,81",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 237,
+   "etiqueta": "a) Löhne und Gehälter",
+   "actual": "95.811.057,28",
+   "anterior": "94.307.254,78",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 238,
+   "etiqueta": "b) Soziale Abgaben",
+   "actual": "7.429.104,69",
+   "anterior": "3.785.389,58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 238,
+   "etiqueta": "4. Personalaufwand",
+   "actual": "103.240.161,97",
+   "anterior": "98.092.644,36",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 250,
+   "etiqueta": "5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+   "actual": "45.923.257,98",
+   "anterior": "45.630.778,63",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 251,
+   "etiqueta": "6. Sonstige betriebliche Aufwendungen",
+   "actual": "40.675.398,07",
+   "anterior": "33.145.493,96",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 252,
+   "etiqueta": "7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens",
+   "actual": "18,00",
+   "anterior": "48,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 253,
+   "etiqueta": "8. Sonstige Zinsen und ähnliche Erträge",
+   "actual": "17.175,37",
+   "anterior": "21.610,60",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 254,
+   "etiqueta": "9. Zinsen und ähnliche Aufwendungen",
+   "actual": "1.525.072,67",
+   "anterior": "1.607.167,65",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 254,
+   "etiqueta": "9. Zinsen und ähnliche Aufwendungen",
+   "actual": "1.507.897,30",
+   "anterior": "1.585.557,05",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 256,
+   "etiqueta": "10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)",
+   "actual": "-203.214,00",
+   "anterior": "-3.627.210,84",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 258,
+   "etiqueta": "11. Ergebnis nach Steuern",
+   "actual": "-24.308.013,19",
+   "anterior": "-14.566.246,96",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 259,
+   "etiqueta": "12. Sonstige Steuern",
+   "actual": "371.266,72",
+   "anterior": "43.597,99",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 260,
+   "etiqueta": "13. Jahresfehlbetrag",
+   "actual": "-24.679.279,91",
+   "anterior": "-14.609.844,95",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 260,
+  "actual": "-24.679.279,91",
+  "anterior": "-14.609.844,95"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el importe 1.507.897,30 de L254 como resultado financiero neto (gasto neto, sin signo impreso) sumando las filas 7-9?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "9. Zinsen und ähnliche Aufwendungen",
+   "texto": "En L254 la columna de totales muestra 1.507.897,30, que es el neto de L252-L254 sin rótulo propio ni signo.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "No se recibieron notas de ingresos ni de gastos, por lo que no hay filas de 'Televisión' ni 'Estadio' en estos bloques: Umsatzerlöse (L232) no tiene desglose aquí. El documento no imprime total de ingresos ni de gastos. Las líneas 'davon' (L255, L257) son informativas y no se cargaron."
+}

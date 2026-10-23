@@ -1,7 +1,7 @@
 <!-- md: qué tan relevante es cada fila del Formato simplificado (cuántos clubes la usan, cuánto pesa, dónde) | leer: al revisar filas o antes de abrir una categoría; lo escribe node tools/relevancia-filas.mjs -->
 # Relevancia de las filas del Formato simplificado (generado)
 
-Lo escribe `node tools/relevancia-filas.mjs --escribir` (lo corre solo `publicarCambios()`); no se edita a mano. Base: 331 clubes y 1319 club-años que son balance oficial (presupuestos y estimaciones no cuentan). Las filas son las que ve el visitante.
+Lo escribe `node tools/relevancia-filas.mjs --escribir` (lo corre solo `publicarCambios()`); no se edita a mano. Base: 331 clubes y 1320 club-años que son balance oficial (presupuestos y estimaciones no cuentan). Las filas son las que ve el visitante.
 
 **Cómo leerla.** «Cero real» = la página muestra 0: el concepto no está en el documento. «—» = hay un bolsón «sin desglosar» con plata y la fila está en 0: no se sabe. La pregunta de una fila nueva o de Educación es la columna «Clubes que la tienen alguna vez» y, cuando la tienen, si pasa de 10 % de la sección; la línea «Dónde está» dice si son pocos países.
 
@@ -9,16 +9,16 @@ Lo escribe `node tools/relevancia-filas.mjs --escribir` (lo corre solo `publicar
 
 | Fila | Club-años con número | Clubes que la tienen alguna vez | Cuando la tiene: mediana de la sección · casos ≥ 10 % | Cero real | «—» sin saber | Dentro de otro |
 |---|---|---|---|---|---|---|
-| Cuotas Sociales | 328 de 1319 (25 %) | 84 de 331 (25 %) | 7.0 % · 39 % | 667 (51 %) | 244 | 80 |
-| Comercial / Sponsors | 1012 de 1319 (77 %) | 259 de 331 (78 %) | 16.1 % · 74 % | 23 (2 %) | 218 | 66 |
-| Estadio | 955 de 1319 (72 %) | 252 de 331 (76 %) | 8.9 % · 45 % | 45 (3 %) | 240 | 79 |
-| Televisión | 926 de 1319 (70 %) | 234 de 331 (71 %) | 27.2 % · 84 % | 62 (5 %) | 245 | 86 |
-| Premios por competencias | 461 de 1319 (35 %) | 140 de 331 (42 %) | 6.9 % · 39 % | 538 (41 %) | 320 | 0 |
-| Venta de Jugadores | 907 de 1319 (69 %) | 234 de 331 (71 %) | 16.4 % · 65 % | 129 (10 %) | 283 | 0 |
-| Otras actividades (educación y otros deportes) | 236 de 1319 (18 %) | 78 de 331 (24 %) | 1.9 % · 14 % | 769 (58 %) | 314 | 0 |
-| Subsidios y donaciones | 400 de 1319 (30 %) | 123 de 331 (37 %) | 2.7 % · 31 % | 640 (49 %) | 279 | 0 |
-| Fútbol profesional (sin desglosar por la fuente) | 329 de 1319 (25 %) | 120 de 331 (36 %) | 77.3 % · 95 % | 990 (75 %) | 0 | 0 |
-| Otros ingresos (catch-all) | 1187 de 1319 (90 %) | 297 de 331 (90 %) | 7.4 % · 40 % | 132 (10 %) | 0 | 0 |
+| Cuotas Sociales | 328 de 1320 (25 %) | 84 de 331 (25 %) | 7.0 % · 39 % | 668 (51 %) | 244 | 80 |
+| Comercial / Sponsors | 1012 de 1320 (77 %) | 259 de 331 (78 %) | 16.1 % · 74 % | 24 (2 %) | 218 | 66 |
+| Estadio | 955 de 1320 (72 %) | 252 de 331 (76 %) | 8.9 % · 45 % | 46 (3 %) | 240 | 79 |
+| Televisión | 926 de 1320 (70 %) | 234 de 331 (71 %) | 27.2 % · 84 % | 63 (5 %) | 245 | 86 |
+| Premios por competencias | 461 de 1320 (35 %) | 140 de 331 (42 %) | 6.9 % · 39 % | 539 (41 %) | 320 | 0 |
+| Venta de Jugadores | 907 de 1320 (69 %) | 234 de 331 (71 %) | 16.4 % · 65 % | 130 (10 %) | 283 | 0 |
+| Otras actividades (educación y otros deportes) | 236 de 1320 (18 %) | 78 de 331 (24 %) | 1.9 % · 14 % | 770 (58 %) | 314 | 0 |
+| Subsidios y donaciones | 400 de 1320 (30 %) | 123 de 331 (37 %) | 2.7 % · 31 % | 641 (49 %) | 279 | 0 |
+| Fútbol profesional (sin desglosar por la fuente) | 329 de 1320 (25 %) | 120 de 331 (36 %) | 77.3 % · 95 % | 991 (75 %) | 0 | 0 |
+| Otros ingresos (catch-all) | 1188 de 1320 (90 %) | 297 de 331 (90 %) | 7.4 % · 40 % | 132 (10 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
 
@@ -32,14 +32,14 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 
 | Fila | Club-años con número | Clubes que la tienen alguna vez | Cuando la tiene: mediana de la sección · casos ≥ 10 % | Cero real | «—» sin saber | Dentro de otro |
 |---|---|---|---|---|---|---|
-| Compra de jugadores | 805 de 1319 (61 %) | 225 de 331 (68 %) | 14.2 % · 65 % | 337 (26 %) | 177 | 0 |
-| Salarios y primas (plantel y cuerpo técnico) | 1101 de 1319 (83 %) | 288 de 331 (87 %) | 48.8 % · 99 % | 11 (1 %) | 88 | 119 |
-| Inversiones (amortizaciones y depreciación) | 963 de 1319 (73 %) | 266 de 331 (80 %) | 1.9 % · 7 % | 192 (15 %) | 164 | 0 |
-| Organización de partidos | 749 de 1319 (57 %) | 201 de 331 (61 %) | 7.1 % · 31 % | 386 (29 %) | 184 | 0 |
-| Otras actividades (educación, juvenil, otros deportes, básquet) | 197 de 1319 (15 %) | 61 de 331 (18 %) | 5.7 % · 27 % | 947 (72 %) | 171 | 4 |
-| Administración y gastos generales | 1089 de 1319 (83 %) | 277 de 331 (84 %) | 15.9 % · 73 % | 207 (16 %) | 23 | 0 |
-| Fútbol profesional (sin desglosar por la fuente) | 204 de 1319 (15 %) | 57 de 331 (17 %) | 70.3 % · 88 % | 1115 (85 %) | 0 | 0 |
-| Otros gastos (catch-all) | 1196 de 1319 (91 %) | 297 de 331 (90 %) | 10.5 % · 52 % | 123 (9 %) | 0 | 0 |
+| Compra de jugadores | 806 de 1320 (61 %) | 225 de 331 (68 %) | 14.3 % · 65 % | 337 (26 %) | 177 | 0 |
+| Salarios y primas (plantel y cuerpo técnico) | 1102 de 1320 (83 %) | 288 de 331 (87 %) | 48.8 % · 99 % | 11 (1 %) | 88 | 119 |
+| Inversiones (amortizaciones y depreciación) | 964 de 1320 (73 %) | 266 de 331 (80 %) | 1.9 % · 7 % | 192 (15 %) | 164 | 0 |
+| Organización de partidos | 749 de 1320 (57 %) | 201 de 331 (61 %) | 7.1 % · 31 % | 387 (29 %) | 184 | 0 |
+| Otras actividades (educación, juvenil, otros deportes, básquet) | 197 de 1320 (15 %) | 61 de 331 (18 %) | 5.7 % · 27 % | 948 (72 %) | 171 | 4 |
+| Administración y gastos generales | 1090 de 1320 (83 %) | 278 de 331 (84 %) | 15.9 % · 73 % | 207 (16 %) | 23 | 0 |
+| Fútbol profesional (sin desglosar por la fuente) | 204 de 1320 (15 %) | 57 de 331 (17 %) | 70.3 % · 88 % | 1116 (85 %) | 0 | 0 |
+| Otros gastos (catch-all) | 1197 de 1320 (91 %) | 297 de 331 (90 %) | 10.5 % · 52 % | 123 (9 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
 
@@ -50,8 +50,8 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 
 | Fila | Club-años con número | Clubes que la tienen alguna vez | Cuando la tiene: mediana de la sección · casos ≥ 10 % | Cero real | «—» sin saber | Dentro de otro |
 |---|---|---|---|---|---|---|
-| Subsidios y donaciones, estricta (subsidio, subvención, donación, grant…) | 65 de 1319 (5 %) | 36 de 331 (11 %) | 1.6 % · 23 % | 1254 (95 %) | 0 | 0 |
-| Subsidios, donaciones y aportes, amplia (cota superior) | 95 de 1319 (7 %) | 49 de 331 (15 %) | 2.6 % · 17 % | 1224 (93 %) | 0 | 0 |
+| Subsidios y donaciones, estricta (subsidio, subvención, donación, grant…) | 65 de 1320 (5 %) | 36 de 331 (11 %) | 1.6 % · 23 % | 1255 (95 %) | 0 | 0 |
+| Subsidios, donaciones y aportes, amplia (cota superior) | 95 de 1320 (7 %) | 49 de 331 (15 %) | 2.6 % · 17 % | 1225 (93 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "monchengladbach-de",
@@ -26,11 +26,74 @@
       "title": "Jahresabschluss zum Geschäftsjahr vom 01.01.2024 bis zum 31.12.2024",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "monchengladbach-de-jahresabschluss-2022",
+      "club_id": "monchengladbach-de",
+      "title": "Borussia VfL 1900 Mönchengladbach GmbH — jahresabschluss-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2023,"last_year":2024}],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "EUR",
+      "source_id": "monchengladbach-de-jahresabschluss-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-12-31"},
+      "revenue": [
+        {"label":"1. Umsatzerlöse","category":"other_revenue","subcategory":"other_income","amount":170.807016,"disclosure":"aggregated"},
+        {"label":"2. Sonstige betriebliche Erträge","category":"other_revenue","subcategory":"other_income","amount":6.485637,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Aufwendungen für bezogene Waren",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -10.457183,
+          "disclosure": "aggregated"
+        },
+        {"label":"a) Löhne und Gehälter","category":"first_team_staff","subcategory":"wages_squad","amount":-95.811057,"disclosure":"aggregated"},
+        {"label":"b) Soziale Abgaben","category":"first_team_staff","subcategory":"wages_squad","amount":-7.429105,"disclosure":"aggregated"},
+        {
+          "label": "6. Sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -40.675398,
+          "disclosure": "aggregated"
+        },
+        {"label":"12. Sonstige Steuern","category":"admin_general","subcategory":"admin_general_expense","amount":-0.371267,"disclosure":"aggregated"},
+        {
+          "label": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -32.294039,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -13.629219,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.50788,"tax":0.203214,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":177.292653,"expenses":200.667267,"net_result":-24.67928},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens","amount":0.000018},
+          {"label":"8. Sonstige Zinsen und ähnliche Erträge","amount":0.017175},
+          {"label":"9. Zinsen und ähnliche Aufwendungen","amount":-1.525073},
+          {"label":"10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)","amount":0.203214}
+        ]
+      }
+    },
     {
       "fiscal_year": 2023,
       "period_end": "2023-12-31",

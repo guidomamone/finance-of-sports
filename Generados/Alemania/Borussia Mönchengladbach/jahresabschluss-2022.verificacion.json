@@ -1,0 +1,239 @@
+{
+ "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md",
+ "generado": "2026-10-23T16:06:29.862Z",
+ "scriptHuella": "2d94a50110ce",
+ "estado": "ok",
+ "clubId": "monchengladbach-de",
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+   "campo": "fila",
+   "valor": "32.294.038,76",
+   "linea": null,
+   "etiqueta": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 250,
+   "motivo": "REGLA de la línea de depreciación y amortización junta (votación 3 a 0): el estado junta Abschreibungen (45.923.257,98) y el Anlagenspiegel las abre; jugadores = 32.294.038,76 (L596), resto 13.629.219,22. Mismo criterio que 2023 y 2024 de este club",
+   "evidencia": "jahresabschluss-2022.md L250 y L596",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+   "campo": "fila",
+   "valor": "13.629.219,22",
+   "linea": 250,
+   "etiqueta": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Resto de la línea 5 Abschreibungen: 1.795.355,54 + 5.673.611,13 (a.o.) + 4.644.522,57 + 1.515.729,98 del Anlagenspiegel (L594-L626), suma 13.629.219,22",
+   "evidencia": "jahresabschluss-2022.md L250 y Anlagenspiegel",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+   "motivo": "derechos de jugadores",
+   "evidencia": "L596",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+   "motivo": "bienes de uso y licencias",
+   "evidencia": "Anlagenspiegel",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 3.907985046680551e-14
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)\" (gasto) 32.294.038,76, en lugar de la fila de L250 (2026-10-23, REGLA de la línea de depreciación y amortización junta (votación 3 a 0): el estado junta Abschreibungen (45.923.257,98) y el Anlagenspiegel las abre; jugadores = 32.294.038,76 (L596), resto 13.629.219,22. Mismo criterio que 2023 y 2024 de este club)",
+  "ajuste manual: fila \"Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel\" (gasto) 13.629.219,22 (2026-10-23, Resto de la línea 5 Abschreibungen: 1.795.355,54 + 5.673.611,13 (a.o.) + 4.644.522,57 + 1.515.729,98 del Anlagenspiegel (L594-L626), suma 13.629.219,22)",
+  "duda de extraer que no afecta la carga: En L254 la columna de totales muestra 1.507.897,30, que es el neto de L252-L254 sin rótulo propio ni signo."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 177.292653,
+  "gastos": 200.667267,
+  "financiero": 1.542266,
+  "impuesto": -0.203214,
+  "resultadoImpreso": -24.67928,
+  "resultadoParaCargar": -24.67928,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "1. Umsatzerlöse",
+   "lado": "ingreso",
+   "M": 170.807016,
+   "pagina": 5,
+   "linea": 232,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "2. Sonstige betriebliche Erträge",
+   "lado": "ingreso",
+   "M": 6.485637,
+   "pagina": 5,
+   "linea": 233,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwendungen für bezogene Waren",
+   "lado": "gasto",
+   "M": 10.457183,
+   "pagina": 5,
+   "linea": 235,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "a) Löhne und Gehälter",
+   "lado": "gasto",
+   "M": 95.811057,
+   "pagina": 5,
+   "linea": 237,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "b) Soziale Abgaben",
+   "lado": "gasto",
+   "M": 7.429105,
+   "pagina": 5,
+   "linea": 238,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "6. Sonstige betriebliche Aufwendungen",
+   "lado": "gasto",
+   "M": 40.675398,
+   "pagina": 6,
+   "linea": 251,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "12. Sonstige Steuern",
+   "lado": "gasto",
+   "M": 0.371267,
+   "pagina": 6,
+   "linea": 259,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+   "lado": "gasto",
+   "M": 32.294039,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+   "lado": "gasto",
+   "M": 13.629219,
+   "pagina": 6,
+   "linea": 250,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens",
+   "M": 0.000018,
+   "linea": 252
+  },
+  {
+   "etiqueta": "8. Sonstige Zinsen und ähnliche Erträge",
+   "M": 0.017175,
+   "linea": 253
+  },
+  {
+   "etiqueta": "9. Zinsen und ähnliche Aufwendungen",
+   "M": -1.525073,
+   "linea": 254
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)",
+   "M": 0.203214,
+   "linea": 256
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "f3fa328a8293d53dc807748924582f6147d2165f",
+  "rango": [
+   229,
+   263
+  ],
+  "lineasCargadas": [
+   232,
+   233,
+   235,
+   237,
+   238,
+   251,
+   259,
+   250,
+   252,
+   253,
+   254,
+   256
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 229 a 263 del .md):\nL230: | | 01.01.-31.12.2022 EUR | EUR | 01.01.-31.12.2021 EUR | EUR |\nL231: |---|---|---|---|---|\nL232: | 1. Umsatzerlöse | | 170.807.015,84 | | 166.965.704,39 |\nL233: | 2. Sonstige betriebliche Erträge | | 6.485.636,95 | | 2.204.595,62 |\nL234: | 3. Materialaufwand | | | | |\nL235: | Aufwendungen für bezogene Waren | | 10.457.182,66 | | 8.909.331,81 |\nL236: | 4. Personalaufwand | | | | |\nL237: | a) Löhne und Gehälter | 95.811.057,28 | | 94.307.254,78 | |\nL238: | b) Soziale Abgaben | 7.429.104,69 | 103.240.161,97 | 3.785.389,58 | 98.092.644,36 |\nL240: --- pág. 6 ---\nL242: UNTERNEHMENSREGISTER\nL244: – Seite 6 von 16 –\nL245: Tag der Erstellung : 13.10.2023\nL246: Auszug aus dem Unternehmensregister\nL248: | | 01.01.-31.12.2022 EUR | EUR | 01.01.-31.12.2021 EUR | EUR |\nL249: |---|---|---|---|---|\nL250: | 5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen | | 45.923.257,98 | | 45.630.778,63 |\nL251: | 6. Sonstige betriebliche Aufwendungen | | 40.675.398,07 | | 33.145.493,96 |\nL252: | 7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens | | 18,00 | | 48,00 |\nL253: | 8. Sonstige Zinsen und ähnliche Erträge | 17.175,37 | | 21.610,60 | |\nL254: | 9. Zinsen und ähnliche Aufwendungen | 1.525.072,67 | 1.507.897,30 | 1.607.167,65 | 1.585.557,05 |\nL255: | --davon an verbundene Unternehmen EUR 48.396,83 (i. Vj. EUR 38.513,38)-- | | | | |\nL256: | 10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag) | | -203.214,00 | | -3.627.210,84 |\nL257: | --davon Aufwand aus latenten Steuern EUR 0,00 (i. Vj. EUR -2.835.953,00)-- | | | | |\nL258: | **11. Ergebnis nach Steuern** | | **-24.308.013,19** | | **-14.566.246,96** |\nL259: | 12. Sonstige Steuern | | 371.266,72 | | 43.597,99 |\nL260: | **13. Jahresfehlbetrag** | | **-24.679.279,91** | | **-14.609.844,95** |\nL262: # Anhang für das Geschäftsjahr 2022\n\nLO QUE SE CARGA:\n- ingreso · \"1. Umsatzerlöse\" · 170.807016 · L232\n- ingreso · \"2. Sonstige betriebliche Erträge\" · 6.485637 · L233\n- gasto · \"Aufwendungen für bezogene Waren\" · 10.457183 · L235\n- gasto · \"a) Löhne und Gehälter\" · 95.811057 · L237\n- gasto · \"b) Soziale Abgaben\" · 7.429105 · L238\n- gasto · \"6. Sonstige betriebliche Aufwendungen\" · 40.675398 · L251\n- gasto · \"12. Sonstige Steuern\" · 0.371267 · L259\n- gasto · \"Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)\" · 32.294039 · L?\n- gasto · \"Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel\" · 13.629219 · L250\n- financiero · \"7. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens\" · 0.000018 · L252\n- financiero · \"8. Sonstige Zinsen und ähnliche Erträge\" · 0.017175 · L253\n- financiero · \"9. Zinsen und ähnliche Aufwendungen\" · -1.525073 · L254\n- impuesto · \"10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)\" · 0.203214 · L256"
+ }
+}
