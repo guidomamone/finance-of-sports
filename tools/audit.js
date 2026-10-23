@@ -1600,7 +1600,8 @@ function checkCategorizacion(api) {
     // SUELDOS POSIBLEMENTE ESCONDIDOS (to-do 232 s): con el costo de personal del ejercicio ya leído de su nota (fiscalYearMeta.staffCost,
     // caja-deuda.mjs --personal), las líneas wages_squad suman menos de la mitad. Caso que lo motivó: PAOK, 42 M en "Αμοιβές τρίτων" del
     // cuadro de fútbol contra 9,2 M de costo de personal en la nota 17; un subagente lo notó leyendo, esto lo hace aparecer solo.
-    if (SUELDOS && ym.staffCost > 0 && Math.abs(cat(SUELDOS)) < ym.staffCost / 2) {
+    // (TODO 368) también acá la marca `incluye` es lo resuelto: el costo de personal se leyó y el documento no deja separarlo
+    if (SUELDOS && ym.staffCost > 0 && Math.abs(cat(SUELDOS)) < ym.staffCost / 2 && !(ym.incluidoEn && ym.incluidoEn[SUELDOS])) {
       add('P2', 'sueldos-escondidos', `${ref(clubId, year)}: el costo de personal de la nota es ${ym.staffCost} y '${SUELDOS}' suma ${Math.abs(cat(SUELDOS))}: los sueldos pueden estar dentro de otra línea (caja-deuda.mjs --personal --partir, o la cola por renglón)`);
     }
     for (const [sec, lines, buckets, catchAll] of [

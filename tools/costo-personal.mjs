@@ -106,11 +106,12 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const escalaDeFila = (fila, delEncabezado) => (fila ? (delEncabezado ?? escalaDe(fila.md, a.anio, filasDe(fila.md), d.revenueLinesByYear?.[a.anio], anios) ?? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios)) : null);
     const ingresos = ((d.revenueLinesByYear || {})[a.anio] || []).reduce((s, l) => s + Math.max(0, l.amountNative || 0), 0);
     const plausible = (fila, factor) => !fila || !factor || !(ingresos > 0) || (fila.cifras[0] * factor) / ingresos >= PERSONAL_MIN_SOBRE_INGRESOS;
-    // ESCALÓN 1: la nota de personal por su estructura. Si no hay, o su valor no es plausible (la nota de la sociedad sola, sin los jugadores, cuando el grupo tiene otra), Jev elige entre todas las filas de total.
+    // ESCALÓN 1: la nota de personal por su estructura, en el documento del año. Si no pasa la plausibilidad (otra tabla con filas parecidas, o la sociedad sola sin los jugadores), Jev elige, pero SOLO entre las
+    // filas de ese documento: la nota de OTRO documento del grupo es de otro perímetro que el cargado, y un costo de personal que no coincide con las líneas del año produce un aviso `sueldos-escondidos` falso (Aston Villa 2023-24).
     const est = estructuraDePersonal(cands, a.md);
     const factorEst = est ? escalaDeFila(est.fila, est.factor) : null;
     const usaEstructura = !!est && plausible(est.fila, factorEst);
-    const r = usaEstructura ? { estructura: true, fila: est.fila, datos: { conf: 'estructura' } } : await jevPersonal(cands, ejecutar, deporteDeClub(clubId));
+    const r = usaEstructura ? { estructura: true, fila: est.fila, datos: { conf: 'estructura' } } : await jevPersonal(est ? cands.filter((c) => c.md === a.md) : cands, ejecutar, deporteDeClub(clubId));
     if (r.ensayo) { usd += r.usd; ensayos++; }
     else usd += r.costo || 0;
     const fila = r.fila || null;

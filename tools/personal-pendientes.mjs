@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/personal-pendientes.mjs — `fos personal`: el costo de personal de los clubes que tienen un aviso `sin-salarios`, en un comando (TODO 368)
 // ============================================================================
-// Para cada club con `sin-salarios` en audit.js corre, en orden, lo que antes se hacía a mano:
+// Para cada club con `sin-salarios` o `sueldos-escondidos` en audit.js corre, en orden, lo que antes se hacía a mano:
 //   1. caja-deuda.mjs --personal --club <id> --escribir     completa staffCost donde la nota de personal lo da (estructura de la nota; Jev solo con --ejecutar)
 //   2. caja-deuda.mjs --personal --club <id> --partir --escribir   parte o marca los sueldos y recarga el año (verificar, categorizar, cargar)
 // y al final cuenta los avisos que quedan. NO commitea: lo que cambia son datos publicados, así que el commit lleva el trailer `Corrige:`.
@@ -20,7 +20,7 @@ const pendientes = () => {
   const r = node(['tools/audit.js', '--json']);
   const clubs = new Map();
   for (const f of JSON.parse(r.stdout).findings) {
-    const m = f.code === 'sin-salarios' && f.msg.match(/^(\S+) (\d{4}):/);
+    const m = (f.code === 'sin-salarios' || f.code === 'sueldos-escondidos') && f.msg.match(/^(\S+) (\d{4}):/);
     if (m) clubs.set(m[1], [...(clubs.get(m[1]) || []), m[2]]);
   }
   return clubs;

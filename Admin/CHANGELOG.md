@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 960 — 368: dos arreglos al aplicar el escalón 1 a los datos (2026-10-22) [368]
+
+- `audit.js`: el aviso `sueldos-escondidos` acepta la marca `incluye` como resuelta, igual que `sin-salarios` (15 avisos menos, ninguno nuevo). `fos personal` también trata los clubes con ese aviso (Bath Rugby 2021-23 y 2025 quedaron con los sueldos partidos).
+- `costo-personal.mjs`: si la nota por estructura del documento del año no es plausible (tabla parecida o la sociedad sola), Jev elige solo entre las filas de ESE documento. Corrige que Leeds 2019 perdiera su valor y que Aston Villa 2023-24 tomara la nota del grupo (194 y 252 M£) contra los 10,8 y 15,2 M£ de sueldos cargados de la sociedad: esos dos valores aceptados antes se pierden a propósito (eran de otro perímetro). Medido con `medir-pipeline`: 23 diferencias, todas explicadas; `caja-deuda` y `--personal --medir` idénticos. Auditoría: P0 0, P1 0, P2 16.
+
 ## Versión 959 — 368 cerrado: `fos personal` y los datos del escalón 1 (2026-10-22) [368 · 351]
 
 - `node tools/fos.mjs personal` (`tools/personal-pendientes.mjs`): para cada club con aviso `sin-salarios` completa `staffCost` por la estructura de la nota y parte o marca los sueldos, y cuenta lo que queda; no commitea. La acción del aviso `sin-salarios` en `audit-acciones.json` ya manda ahí. El enganche a `publicarCambios()` se descartó a propósito (una carga abierta dentro de otra).
