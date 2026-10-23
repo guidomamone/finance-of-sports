@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 987 — La auditoría separa lo informativo (P4), y un import que se rompió al partir `cargar.mjs` [370]
+
+- `audit.js`: nivel P4 «informativo» (un código con `quien: nada` en `audit-acciones.json` pasa de P3 a P4; `P3` queda para lo que pide trabajo); `catchall-dominante` se parte: si la línea más grande del catch-all es un «otros» del documento (raíz multilingüe) el código es `catchall-limite-fuente` (P4), si tiene nombre propio sigue `catchall-dominante` y el aviso dice la etiqueta; las entradas de `audit-ignore.json` de 11 club-años pasaron al código nuevo; `i18n-incompleto` deja de dar falsas claves (en.js tiene varias por línea). `moneda-sin-meta`: TRY en `CURRENCY_META`. `correcciones.html` declarada pública en `audit-ignore.json` y sin raya larga en el pie.
+- **Rotura real de la 375 (4), encontrada al correr `publicar`:** `cargar.mjs` dejó de re-exportar `snapshot`, `revertir` y `runNode`, y fallaban `publicar`, `caja-deuda --escribir`, `costo-personal`, `dentro-de-otro`, `worktree` y `gestiones-tanda` (que ni cargaba). Un ensayo no pasa por esos imports dinámicos, y `medir pipeline` tampoco. Se re-exportan, y el chequeo nuevo `imports-sin-export.mjs` (`fos imports`; P1 `import-sin-export` en `audit.js`) lee los fuentes y marca todo nombre que una tool pide a otra y la otra no exporta: hoy 0, y con el re-export quitado marca los 12 casos.
+- Medido (audit y cargar, tres lotes): `cargar` idéntico; `audit` 220 diferencias, todas del cambio de código (catchall 90 → 46 dominante + 55 límite; el resto, P3 → P4 con el mismo mensaje).
+
 ## Versión 986 — El informe del backtest de alta salta un club que ya no está [400]
 
 - `alta-club-backtest.mjs`: `--informe-backtest` salta con un aviso cada fila cuyo club ya no está en el sitio (`velez`, `oncecaldas`, `clubamerica`: ids viejos) en vez de caer con un TypeError; el informe se imprime y sale con 0. Medido (alta y cargar, tres lotes): idéntico; veredicto general.

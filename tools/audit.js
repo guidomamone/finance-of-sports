@@ -1589,6 +1589,20 @@ function checkFxProcedencia(api) {
   }
 }
 
+// Un nombre que una tool importa de otra y la otra no exporta (tras partir un módulo): un import dinámico solo falla al correr esa rama. P1.
+function checkImportsSinExport() {
+  try {
+    for (const x of require('./imports-sin-export.mjs').importsSinExport()) add('P1', 'import-sin-export', `tools/${x.archivo} pide «${x.nombre}» de ${x.modulo} y ese módulo no lo exporta`);
+  } catch (e) { add('P2', 'json-aviso', `no se pudo correr tools/imports-sin-export.mjs: ${e.message}`); }
+}
+
+// Una etiqueta que ya dice «otros» en el idioma del documento (la raíz, sin acentos ni mayúsculas, al principio o tras un no-letra).
+const ETIQUETA_OTROS_RE = new RegExp('(?:^|[^\\p{L}])(?:' + [
+  'otros?', 'otras?', 'varios', 'diversos?', 'resto', 'other', 'others', 'miscellaneous', 'sundry', 'various', 'outros?', 'outras?', 'altri', 'altre', 'altro', 'autres?', 'divers',
+  'diversas?', 'andere', 'διάφορ\\p{L}*', 'net operating expenses', 'operating expenses',
+  'sonstige\\p{L}*', 'overig\\p{L}*', 'diverse','annen', 'annet', 'andre', 'övriga', 'muut', 'muud', 'muu', 'prochi\\p{L}*', 'прочи\\p{L}*', 'иные', 'λοιπ\\p{L}*', 'άλλ\\p{L}*', 'inne',
+].join('|') + ')(?![\\p{L}])', 'iu');
+
 function checkCategorizacion(api) {
   for (const { clubId, year, ym, rev, exp } of clubYears(api)) {
     if (!exp.length && !rev.length) continue;
@@ -1624,7 +1638,11 @@ function checkCategorizacion(api) {
       // línea del documento, como "Otros ingresos" o "Otros gastos", ES el catch-all).
       const lineasEnLaFila = ((rows.find(r => r.label === catchAll) || {}).items || []).length;
       if (pct > 0.4 && lineasEnLaFila > 2) {
-        add('P3', 'catchall-dominante', `${ref(clubId, year)} ${sec}: el catch-all "${catchAll}" se lleva ${(pct * 100).toFixed(0)}% del total — Formato simplificado no dice casi nada para este ejercicio`);
+        // La línea más grande del catch-all: si es ella misma un «otros» del documento, es el límite de la fuente y no hay nada que recategorizar
+        // (`catchall-limite-fuente`, informativo); si tiene nombre propio, queda `catchall-dominante` con la etiqueta a la vista.
+        const mayor = (rows.find(r => r.label === catchAll).items || []).reduce((a, it) => (Math.abs(it[1]) > Math.abs(a[1]) ? it : a));
+        const esOtros = ETIQUETA_OTROS_RE.test(String(mayor[0]));
+        add('P3', esOtros ? 'catchall-limite-fuente' : 'catchall-dominante', `${ref(clubId, year)} ${sec}: el catch-all "${catchAll}" se lleva ${(pct * 100).toFixed(0)}% del total, la línea más grande es «${String(mayor[0]).slice(0, 70)}» (${(Math.abs(mayor[1]) / total * 100).toFixed(0)}%) — Formato simplificado no dice casi nada para este ejercicio`);
       }
     }
   }
@@ -1884,7 +1902,8 @@ function checkHigiene(api) {
     // simples y `data/lang/en.js` escribe sus 134 claves con dobles, así que `definidas`
     // quedaba VACÍO y el chequeo reportaba como "sin traducir" absolutamente todas las
     // claves usadas, de ahí las "88 claves" de la primera corrida, que no era el número real.
-    const definidas = new Set([...src.matchAll(/^\s*['"]([^'"]+)['"]\s*:/gm)].map(m => m[1]));
+    // Una clave abre la línea o sigue a una coma: en.js escribe varias por línea, y solo la primera de cada una se contaba.
+    const definidas = new Set([...src.matchAll(/(?:^\s*|,\s*)['"]([^'"]+)['"]\s*:/gm)].map(m => m[1]));
     const faltan = [...usadas].filter(k => !definidas.has(k)).sort();
     if (faltan.length) {
       add('P3', 'i18n-incompleto', `data/lang/${f}: ${faltan.length} claves usadas en el sitio sin traducción (el visitante las ve en castellano): ${faltan.slice(0, 6).join(', ')}${faltan.length > 6 ? '…' : ''}`);
@@ -1907,7 +1926,8 @@ const SEV_TITULO = {
   P0: 'P0 — un número publicado está mal, o puede estarlo',
   P1: 'P1 — algo roto o ausente que el visitante ve',
   P2: 'P2 — riesgo: no está mal hoy, se rompe o no escala mañana',
-  P3: 'P3 — limpieza e informativo',
+  P3: 'P3 — limpieza: pide trabajo de una sesión',
+  P4: 'P4 — informativo: no pide nada',
 };
 
 function imprimir(api) {
@@ -1916,11 +1936,11 @@ function imprimir(api) {
   const cuenta = s => findings.filter(f => f.sev === s).length;
 
   console.log(`\nAUDITORÍA finance-of-sports — ${nClubes} clubes, ${nAños} ejercicios`);
-  console.log(`P0 ${cuenta('P0')} · P1 ${cuenta('P1')} · P2 ${cuenta('P2')} · P3 ${cuenta('P3')}` +
+  console.log(`P0 ${cuenta('P0')} · P1 ${cuenta('P1')} · P2 ${cuenta('P2')} · P3 ${cuenta('P3')} · P4 ${cuenta('P4')}` +
     (silenciados.length ? ` · ${silenciados.length} silenciados por tools/audit-ignore.json` : '') + '\n');
 
-  for (const sev of ['P0', 'P1', 'P2', 'P3']) {
-    if (QUIET && (sev === 'P2' || sev === 'P3')) continue;
+  for (const sev of ['P0', 'P1', 'P2', 'P3', 'P4']) {
+    if (QUIET && sev >= 'P2') continue;
     const list = findings.filter(f => f.sev === sev);
     if (!list.length) continue;
     console.log(`${'='.repeat(78)}\n${SEV_TITULO[sev]}  (${list.length})\n${'='.repeat(78)}`);
@@ -2227,6 +2247,7 @@ function main() {
   checkMedicionesSinDestino();
   checkParrafosRepetidos();
   checkRayaLarga();
+  checkImportsSinExport();
   checkHigiene(api);
   checkGestiones(api);
   checkPagoSobreDeterminista();
@@ -2249,11 +2270,13 @@ function main() {
 
   // CUANDO PASA X, SE HACE Y: cada código que dispara tiene su acción en tools/audit-acciones.json (qué hacer, quién, dónde está cubierto). Uno que dispara sin entrada da P3.
   let ACCIONES = {}; try { ACCIONES = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools/audit-acciones.json'), 'utf8')); } catch { /* sin archivo: todos los códigos dan codigo-sin-accion */ }
+  // P4, informativo: un código cuya acción es «nada» (quien: nada) no pide trabajo; se cuenta aparte para que P3 sea solo lo que sí lo pide
+  for (const f of findings) if (f.sev === 'P3' && (ACCIONES[f.code] || {}).quien === 'nada') f.sev = 'P4';
   const sinAccion = [...new Set(findings.map((f) => f.code))].filter((c) => !ACCIONES[c] && c !== 'codigo-sin-accion');
   if (sinAccion.length) add('P3', 'codigo-sin-accion', `${sinAccion.length} códigos de audit.js sin entrada en tools/audit-acciones.json (qué hacer cuando disparan): ${sinAccion.join(', ')}`);
   if (ARGS.includes('--acciones')) { // la tabla de lo que dispara hoy: código · cuántos · quién · qué hacer
     const por = {}; for (const f of findings) { por[f.code] = por[f.code] || { sev: f.sev, n: 0 }; por[f.code].n++; }
-    const orden = { P0: 0, P1: 1, P2: 2, P3: 3 };
+    const orden = { P0: 0, P1: 1, P2: 2, P3: 3, P4: 4 };
     for (const [c, v] of Object.entries(por).sort((x, y) => orden[x[1].sev] - orden[y[1].sev] || y[1].n - x[1].n)) {
       const a = ACCIONES[c]; console.log(`${v.sev} ${String(v.n).padStart(3)}  ${c.padEnd(28)} ${a ? `[${a.quien}] ${a.hacer}${a.donde ? ` (${a.donde})` : ''}` : '(sin acción en tools/audit-acciones.json)'}`);
     }

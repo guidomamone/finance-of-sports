@@ -43,7 +43,7 @@ import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs';
 import { combinar as combinarEntidades } from './suma-entidades.mjs';
 import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs';
 import { compuertaContexto, escribir, comparar, citaPAE, citaSADpt, cambiadosEnGit, lineaGitAdd } from './cargar-escribir.mjs';
-export { publicarCambios, compuertaContexto, escribir } from './cargar-escribir.mjs';
+export { publicarCambios, compuertaContexto, escribir, snapshot, revertir, runNode } from './cargar-escribir.mjs';
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.

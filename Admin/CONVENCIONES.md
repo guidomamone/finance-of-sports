@@ -131,7 +131,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
 
 ## Tamaño de las tools
 
-Una tool de más de 40 KB no se lee entera (`CLAUDE.md`): se parte con `node tools/fos.mjs mapa <tool>` y `node tools/fos.mjs mover` (movimiento puro, ensayo por defecto; `medir pipeline` después) o queda con su motivo en `tools/tamanos-aceptados.json`. Aviso P3 `tool-grande`. Los módulos que salen de una tool se llaman `<tool>-<parte>.mjs` y la tool los re-exporta, así los llamadores no cambian.
+Una tool de más de 40 KB no se lee entera (`CLAUDE.md`): se parte con `node tools/fos.mjs mapa <tool>` y `node tools/fos.mjs mover` (movimiento puro, ensayo por defecto; `medir pipeline` después) o queda con su motivo en `tools/tamanos-aceptados.json`. Aviso P3 `tool-grande`. Después de partir, `node tools/fos.mjs imports` (P1 `import-sin-export` en `audit.js`): un import dinámico que pide un nombre que el original re-exportaba solo falla al correr esa rama (`--escribir`), que `medir pipeline` no toca. Los módulos que salen de una tool se llaman `<tool>-<parte>.mjs` y la tool los re-exporta, así los llamadores no cambian.
 
 ## Comentarios en tools/
 

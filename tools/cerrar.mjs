@@ -58,7 +58,7 @@ const despues = auditoria();
 if (!despues) mal('la auditoría no devolvió un JSON');
 else {
   const p01 = despues.sev('P0') + despues.sev('P1');
-  (p01 === 0 ? ok : mal)(`auditoría: P0 ${despues.sev('P0')} · P1 ${despues.sev('P1')} · P2 ${despues.sev('P2')} · P3 ${despues.sev('P3')}`);
+  (p01 === 0 ? ok : mal)(`auditoría: P0 ${despues.sev('P0')} · P1 ${despues.sev('P1')} · P2 ${despues.sev('P2')} · P3 ${despues.sev('P3')} · P4 ${despues.sev('P4')}`);
   if (antes) {
     const dif = [];
     for (const k of new Set([...antes.por.keys(), ...despues.por.keys()])) { const d = (despues.por.get(k) || 0) - (antes.por.get(k) || 0); if (d) dif.push(`${k} ${d > 0 ? '+' : ''}${d}`); }

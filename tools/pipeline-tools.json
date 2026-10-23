@@ -111,6 +111,7 @@
   "generadores.mjs": { "alcance": "compartida", "medidores": ["audit"] },
   "publicar.mjs": { "alcance": "compartida", "medidores": ["audit"] },
   "audit.js": { "alcance": "compartida", "medidores": ["audit"] },
+  "imports-sin-export.mjs": { "alcance": "compartida", "medidores": ["audit"] },
   "pipeline.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"] },
   "lote-batch.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"] },
   "extraer-etiquetas.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },

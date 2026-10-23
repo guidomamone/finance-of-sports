@@ -85,6 +85,16 @@
   "quien": "guido",
   "donde": "TODO 350"
  },
+ "import-sin-export": {
+  "hacer": "Exportar el nombre en el módulo (o re-exportarlo desde el original, `export { … } from './x.mjs'`), o corregir el import: `node tools/imports-sin-export.mjs` lista los casos.",
+  "quien": "sesion",
+  "donde": "Admin/CONVENCIONES.md, «Tamaño de las tools»"
+ },
+ "catchall-limite-fuente": {
+  "hacer": "Nada: la línea más grande del catch-all es un «otros» del propio documento (límite de la fuente: «annen driftskostnad», «прочие затраты», «diensten en diverse goederen», «outros rendimentos»); queda así.",
+  "quien": "nada",
+  "donde": "Admin/PANTALLA.md, Formato simplificado"
+ },
  "sin-salarios": {
   "hacer": "node tools/fos.mjs personal (completa staffCost por la estructura de la nota y parte o marca los sueldos); lo que no resuelve es un caso de a uno: ajuste a mano con motivo y cita. Corrige datos publicados (trailer Corrige:).",
   "quien": "script",
