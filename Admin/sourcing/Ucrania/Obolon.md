@@ -9,3 +9,12 @@
 - Último chequeo: 2026-10-03.
 
 Color de marca: #008000 — en.wikipedia (infobox, camiseta body 008000 verde; local verde con shorts blancos según el texto; escudo verde con cruz blanca), verificado 2026-10-09
+
+
+## Resuelto desde Admin/dudas-por-club.md (2026-10-23)
+
+- **RESUELTA (2026-10-03, sesión Europa del Este)**: el formulario de balance de 2021-2024 dice
+  `Товариство з обмеженою відповідальністю "Футбольний клуб "ОБОЛОНЬ"`, actividad "Діяльність
+  спортивних клубів", y el PDF de 2020 se llama `Finansova-zvitnist-TOV-FK-Obolon-za-2020-rik.pdf`:
+  el documento es de la ТОВ del club, no de la cervecera ПрАТ "ОБОЛОНЬ" (EDRPOU 05391057). Falta
+  solo confirmar el EDRPOU exacto de la ТОВ al cargar (el de 2025 tiene el dictamen de Євроаудит).

@@ -259,7 +259,7 @@ MODELO DE DATOS: UN SOLO MOTOR GENÉRICO PARA TODOS LOS CLUBES
 
 Venía del skill `club-or-year-onboarding`, sin cambios de texto. Sirve al tocar el motor de Finanzas o los scripts de carga.
 
-Los colores de marca, el chequeo contra el escudo y la liga de cada temporada de un club nuevo están en `.claude/skills/club-or-year-onboarding/club-nuevo.md`, secciones "Color de marca", "Chequeo contra el escudo" y "Liga de cada temporada".
+Color de marca, escudo y liga de cada temporada de un club nuevo: ver el comienzo de `Admin/PANTALLA.md`.
 
 ### Arquitectura ya generalizada, no reinventar por club (ex §2)
 

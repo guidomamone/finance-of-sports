@@ -136,3 +136,10 @@ _note (data/):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+
+## Resuelto desde Admin/dudas-por-club.md (2026-10-23)
+
+- **Gestión resuelta por Guido el 2026-10-09:** Andrea Langella (borsaefinanza.it, 19/4/2024; 2021-2026 por el título de un artículo) y, desde junio de 2026, Alfredo Guerri (dato de Guido, con una
+  búsqueda como fuente); cargadas en `data/gestiones/it.js` con mes y año (día 01). Sin preguntas pendientes para el club. Solo queda, si algún día hace falta, quién tenía el resto de las cuotas
+  antes de Brera Holdings.

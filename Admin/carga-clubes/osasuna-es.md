@@ -155,3 +155,13 @@ _note (data/):_
 ```text
 PDF con texto nativo, transcripción completa en Clubes/España/CA Osasuna/auditoria2024.md. Este ejercicio desglosa ingresos y gastos con sub-letras directo en la cara de la Cuenta de Pérdidas y Ganancias, mucho más fino que el ejercicio 2021/2022.
 ```
+
+
+## Resuelto desde Admin/dudas-por-club.md (2026-10-23)
+
+*(Resuelto, sesión 2026-09-22, al cargar los ejercicios 2021/2022 y 2023/2024: los dos
+PDFs SÍ tienen capa de texto real (la premisa "escaneado sin capa de texto" del sourcing del
+2026-09-16 estaba vencida) y los dos son el informe de auditoría + cuentas anuales completo (balance,
+cuenta de pérdidas y ganancias, memoria), no un fragmento — se confirmó leyendo el texto interno de
+cada uno, con período jul-jun literal en la carátula: "1 de julio de 2021 al 30 de junio de 2022" y
+"1 de julio de 2023 al 30 de junio de 2024". Ver `data/es/osasuna-es-data.js`.)*

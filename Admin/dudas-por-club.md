@@ -354,26 +354,12 @@ distintas, y conviene hacer las dos porque cualquiera de las dos que salga bien 
 
 ## CA Osasuna
 
-*(RESUELTO en gran parte, sesión 2026-09-22, al cargar los ejercicios 2021/2022 y 2023/2024: los dos
-PDFs SÍ tienen capa de texto real (la premisa "escaneado sin capa de texto" del sourcing del
-2026-09-16 estaba vencida) y los dos son el informe de auditoría + cuentas anuales completo (balance,
-cuenta de pérdidas y ganancias, memoria), no un fragmento — se confirmó leyendo el texto interno de
-cada uno, con período jul-jun literal en la carátula: "1 de julio de 2021 al 30 de junio de 2022" y
-"1 de julio de 2023 al 30 de junio de 2024". Ver `data/es/osasuna-es-data.js`.
-
 Lo que SIGUE abierto: si el club cambió a ejercicio CALENDARIO después de 2024 — la noticia de
 `osasuna.es/en/noticia151` sobre un cierre a 31/12/2025 puede ser real para un ejercicio de
 TRANSICIÓN posterior a los 2 ya cargados (no contradice lo confirmado acá). Si se carga un ejercicio
 2025 o posterior de Osasuna, confirmar el período exacto antes de asumir jul-jun — a quién
-preguntarle: prensa deportiva navarra, o directo al club vía su área de socios.)*
+preguntarle: prensa deportiva navarra, o directo al club vía su área de socios.
 
-## Borussia Mönchengladbach
-
-*(RESUELTO, sesión 2026-09-17: se bajó el PDF pendiente y el Lagebericht 2024 confirma
-explícitamente que la "Borussia VfL 1900 Mönchengladbach GmbH" es la operadora de la
-Lizenzspielermannschaft — el fútbol profesional, no otra unidad de negocio. La prensa que la
-describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
-`Admin/sourcing/Alemania/Borussia Mönchengladbach.md`.)*
 
 ## FK Austria Wien (sourcing de Austria, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
 
@@ -587,22 +573,6 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   Süper Lig 2025/26?**: el club tuvo un historial reciente de refundaciones/dificultades
   institucionales — antes de comparar series o cargar cualquier dato, confirmar si es la misma
   entidad legal o si hubo una refundación en el medio.
-
-## Trabzonspor
-
-*(RESUELTO, sesión 2026-09-18: el propio İzahname 2025 dice textualmente que "Trabzonspor Sportif
-Yatırım ve Futbol İşletmeciliği A.Ş., payları 2005 yılında halka arz edilmiş olup..." — salió a
-bolsa en 2005. La entidad operativa (Futbol A.Ş.) se constituyó el 21 de abril de 2004 en Trabzon.
-De paso se completó la serie completa 2015/16-2024/25, así que el hueco que motivaba la pregunta ya
-no existe. Ver `Admin/sourcing/Turquía/Trabzonspor.md`.)*
-
-## Obolon (sourcing de Ucrania, sesión 2026-09-18, pregunta real, no bloqueó nada)
-
-- **RESUELTA (2026-10-03, sesión Europa del Este)**: el formulario de balance de 2021-2024 dice
-  `Товариство з обмеженою відповідальністю "Футбольний клуб "ОБОЛОНЬ"`, actividad "Діяльність
-  спортивних клубів", y el PDF de 2020 se llama `Finansova-zvitnist-TOV-FK-Obolon-za-2020-rik.pdf`:
-  el documento es de la ТОВ del club, no de la cervecera ПрАТ "ОБОЛОНЬ" (EDRPOU 05391057). Falta
-  solo confirmar el EDRPOU exacto de la ТОВ al cargar (el de 2025 tiene el dictamen de Євроаудит).
 
 ## Kolos Kovalivka (sourcing de Ucrania, sesión 2026-09-18, pregunta real para el club)
 
@@ -1414,12 +1384,6 @@ sin leerlo.
   págs. 15 y 16 no se leen y el OCR erró unas 25 cifras. El ejercicio 2022 se cargó con la columna "2022" del bilancio al 30/6/2023, que cierra con el resultado
   impreso (-16.787.729). Mismo total de costos operativos (58.952.860) pero ese comparativo está reclasificado: "Oneri per servizi esterni" 6.216.789 y "Altri oneri"
   4.960.945, mientras las notas del propio documento de 2022 dicen 6.489 y 4.689 (miles; la suma de los dos es la misma, 11,18 M).
-
-## Juve Stabia (onboarding de Italia, sesión 2026-10-08, ejercicio 2024 cargado)
-
-- **Gestión resuelta por Guido el 2026-10-09:** Andrea Langella (borsaefinanza.it, 19/4/2024; 2021-2026 por el título de un artículo) y, desde junio de 2026, Alfredo Guerri (dato de Guido, con una
-  búsqueda como fuente); cargadas en `data/gestiones/it.js` con mes y año (día 01). Sin preguntas pendientes para el club. Solo queda, si algún día hace falta, quién tenía el resto de las cuotas
-  antes de Brera Holdings.
 
 ## Volos NFC (auditoría de rutina, to-do 219, sesión 2026-10-13: no frena ninguna carga)
 

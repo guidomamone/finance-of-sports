@@ -28,3 +28,13 @@ Los archivos que una tool, una skill o un documento de criterio ya nombran no fi
 | `test-motores-lista.txt`, `test-motores-resultados.jsonl` | lista y salida cruda del test de tres motores de transcripción | resumen en `test-motores-resultados.md` |
 | `test-proponer-carga.jsonl` | salida cruda de `test-proponer-carga.md` | acompaña a esa medición |
 | `companies-house-ixbrl.md` | cuántos clubes británicos presentan sus cuentas en iXBRL en Companies House (9 de 36; los grandes, PDF) | falta una descarga de 3 archivos para saber si `xhtml-aarsrapport.mjs` los lee (ok de Guido) |
+| `318-open-notebook.md`, `320-browser-use.md`, `321-higgsfield-mcp.md`, `322-zapier-omniroute.md`, `349-herramientas.md` | herramientas externas revisadas sin instalar nada (Open Notebook, Browser Use, Higgsfield MCP, Zapier MCP y OmniRoute, OpenSEO, Book to Skill, Open Generative AI) | ninguna entra; archivables |
+| `350-uso-categorias.txt` | salida cruda de `350-uso-categorias.mjs` (uso de cada categoría por club) | acompaña a esa medición |
+| `371-compuerta-personal.mjs`, `371-compuerta-personal.txt` | la compuerta de plausibilidad del costo de personal (15 % de los ingresos) contra los 9 `staffCost` cargados: rechazaría 0 de 9 | aplicada en `caja-deuda.mjs`; archivables |
+| `373-bytes-leidos.mjs` | cuántos bytes lee una sesión que toma el mismo punto de Pipeline, antes y después del mapa de código | aplicado (`fos mapa`, `Admin/CONTRATO-ETAPAS.md`); archivable |
+| `escalon0-estado-vs-notas.md` | cuánto del costo de localizar y extraer es el estado de resultados | a confirmar |
+| `246-ids.md`, `246-ensayo.txt` | diseño y ensayo de renombrar ids estables (`<slug>-<iso2>`, 41 ids) | aplicado (ids con país, `data/club-aliases.js`); archivables |
+| `317-supabase.md`, `317-supabase/` | Supabase como espejo de lectura (experimento descartable: `exportar.mjs`, `auditorias.sql`) | quedó como la pestaña «Mi cuenta» (`Admin/ESTADO.md`, «Sitio, publicación y analytics»); archivables |
+| `350-categorias-en-vano.md`, `350-subsidios-en-otros-ingresos.mjs` | relevamiento de categorías sin uso y barrido de etiquetas de subsidios en Otros ingresos | alimentó el 372 (revisión de etiquetas de subsidios); archivables |
+| `test-altas-claude.md` | registro de altas y Claude por API para las preguntas del alta (tres cambios en `alta-club.mjs`) | aplicado (`Admin/PIPELINE.md`, alta de un club); archivable |
+| `test-jev-resultados_lado_ej_otrosclubes.md` | backtest de la confiabilidad de Jev contra 3.975 rubros ya cargados (`jev-categorizar.mjs --backtest`) | lo usan la propuesta de categorías y `fos cola-historial categoria`; vigente |

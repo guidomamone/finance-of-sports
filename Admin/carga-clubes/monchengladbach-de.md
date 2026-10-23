@@ -315,3 +315,12 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-23) desde la transcripción Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+
+## Resuelto desde Admin/dudas-por-club.md (2026-10-23)
+
+*(RESUELTO, sesión 2026-09-17: se bajó el PDF pendiente y el Lagebericht 2024 confirma
+explícitamente que la "Borussia VfL 1900 Mönchengladbach GmbH" es la operadora de la
+Lizenzspielermannschaft — el fútbol profesional, no otra unidad de negocio. La prensa que la
+describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
+`Admin/sourcing/Alemania/Borussia Mönchengladbach.md`.)*

@@ -58,3 +58,12 @@ confirmó el año de IPO, ver abajo).
 - Último chequeo: 2026-09-18.
 
 Color de marca: #5A0E27 — bordo y celeste (tr.wikipedia infobox, bordo primero; en.wikipedia camiseta 5a1129); coincide con el escudo bordo, verificado 2026-10-09
+
+
+## Resuelto desde Admin/dudas-por-club.md (2026-10-23)
+
+*(RESUELTO, sesión 2026-09-18: el propio İzahname 2025 dice textualmente que "Trabzonspor Sportif
+Yatırım ve Futbol İşletmeciliği A.Ş., payları 2005 yılında halka arz edilmiş olup..." — salió a
+bolsa en 2005. La entidad operativa (Futbol A.Ş.) se constituyó el 21 de abril de 2004 en Trabzon.
+De paso se completó la serie completa 2015/16-2024/25, así que el hueco que motivaba la pregunta ya
+no existe. Ver `Admin/sourcing/Turquía/Trabzonspor.md`.)*
