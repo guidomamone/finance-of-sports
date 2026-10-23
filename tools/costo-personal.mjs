@@ -62,6 +62,24 @@ export function candidatosPersonal(md) {
   }
   return out;
 }
+// ESCALÓN 1 (TODO 368): la nota de personal por su ESTRUCTURA, sin preguntarle a Jev. Es candidata la tabla cuyo total sin rótulo es la suma EXACTA de las filas de arriba (la identidad que
+// candidatosPersonal ya exige) y cuyas primeras filas son de personal: al menos dos de {sueldos, cargas sociales, pensiones}. Se prefieren las del propio documento del año; si hay más de una,
+// no decide (Jev elige). La escala la dice el encabezado de la tabla (£000, £m…), no el documento.
+const ROLES_PERSONAL = [/wages|salar|sueldo|gehalt|l[öo]hne|ordenado|remunera/i, /social (security|charges|insurance|contributions)|national insurance|cargas sociales|sociale (lasten|zekerheid)|encargos sociais/i, /pension|retirement|jubila|aposentad/i];
+const REEXPRESADO_RE = /restat|reexpres|reformulad/i;
+export function escalaDeEncabezado(ctx) {
+  const enc = String(ctx || '').match(/encabezado: (.*?)(?: · filas:|$)/)?.[1] || '';
+  if (/(?<!\d)['’]?000\b|thousand|tusind|tuhat|duizend/i.test(enc)) return 0.001;
+  if (/(?:^|[\s£€$])m(?:$|\s)|million|millones/i.test(enc)) return 1;
+  return null;
+}
+export function estructuraDePersonal(cands, md) {
+  const esNota = (c) => /^\(total sin rótulo/.test(String(c.etiqueta)) && ROLES_PERSONAL.filter((re) => re.test(String(c.contexto).match(/filas: (.*)$/)?.[1] || '')).length >= 2;
+  const propias = cands.filter((c) => c.md === md && esNota(c));
+  const grupo = propias.length ? propias : cands.filter(esNota);
+  if (grupo.length !== 1) return null;
+  return { fila: grupo[0], factor: escalaDeEncabezado(grupo[0].contexto) };
+}
 async function jevPersonal(cands, ejecutar, deporte) {
   if (!cands.length) return { error: 'sin filas de total' };
   const cs = cands.slice(0, 150); avisarRecorte(cands[0].md, 'Jev (personal), filas de total', cs.length, cands.length);
@@ -83,13 +101,21 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const cierre = cierreDeMd(a.md, reg);
     const mds = [a.md, ...[...reg.values()].filter((e) => e.md && e.md !== a.md && e.pdf.startsWith(carpeta(a.md)) && cierre && cierreDeMd(e.md, reg) === cierre && existsSync(resolve(ROOT, e.md))).map((e) => e.md)];
     const cands = mds.flatMap(candidatosPersonal);
-    const r = await jevPersonal(cands, ejecutar, deporteDeClub(clubId));
+    // (to-do 339) la escala del año con la misma escalera que caja y deuda (ajuste `escala`, líneas cargadas, y la escala del estado que registró verificar.mjs si contradice a la escala 1).
+    // La escala que imprime el encabezado de la propia tabla de personal manda sobre la del documento (una nota en £m dentro de un documento en £000).
+    const escalaDeFila = (fila, delEncabezado) => (fila ? (delEncabezado ?? escalaDe(fila.md, a.anio, filasDe(fila.md), d.revenueLinesByYear?.[a.anio], anios) ?? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios)) : null);
+    const ingresos = ((d.revenueLinesByYear || {})[a.anio] || []).reduce((s, l) => s + Math.max(0, l.amountNative || 0), 0);
+    const plausible = (fila, factor) => !fila || !factor || !(ingresos > 0) || (fila.cifras[0] * factor) / ingresos >= PERSONAL_MIN_SOBRE_INGRESOS;
+    // ESCALÓN 1: la nota de personal por su estructura. Si no hay, o su valor no es plausible (la nota de la sociedad sola, sin los jugadores, cuando el grupo tiene otra), Jev elige entre todas las filas de total.
+    const est = estructuraDePersonal(cands, a.md);
+    const factorEst = est ? escalaDeFila(est.fila, est.factor) : null;
+    const usaEstructura = !!est && plausible(est.fila, factorEst);
+    const r = usaEstructura ? { estructura: true, fila: est.fila, datos: { conf: 'estructura' } } : await jevPersonal(cands, ejecutar, deporteDeClub(clubId));
     if (r.ensayo) { usd += r.usd; ensayos++; }
     else usd += r.costo || 0;
     const fila = r.fila || null;
-    // (to-do 339) la escala del año con la misma escalera que caja y deuda (ajuste `escala`, líneas cargadas, y la escala del estado que registró verificar.mjs si contradice a la escala 1)
-    const factor = fila ? (escalaDe(fila.md, a.anio, filasDe(fila.md), d.revenueLinesByYear?.[a.anio], anios) ?? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios)) : null;
-    porAnio.set(a.anio, { a, fila, factor, jev: r, ndocs: mds.length, ncands: cands.length });
+    const factor = usaEstructura ? factorEst : escalaDeFila(fila, null);
+    porAnio.set(a.anio, { a, fila, factor, jev: r, estructura: usaEstructura, ndocs: mds.length, ncands: cands.length });
   }
   const res = [];
   for (const [anio, x] of porAnio) {
@@ -105,12 +131,14 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const ingresosAnio = ((d.revenueLinesByYear || {})[anio] || []).reduce((s, l) => s + Math.max(0, l.amountNative || 0), 0);
     if (ingresosAnio > 0 && valor / ingresosAnio < PERSONAL_MIN_SOBRE_INGRESOS) { res.push({ ...base, valor: null, como: `${cita} (${valor}): es ${(100 * valor / ingresosAnio).toFixed(1)} % de los ingresos (${r6(ingresosAnio)}); menos de ${PERSONAL_MIN_SOBRE_INGRESOS * 100} % no es el personal de un club profesional (¿nota de otra entidad del grupo o de una parte?). No se usa` }); continue; }
     const chequeos = [];
-    const sig = porAnio.get(String(Number(anio) + 1)); if (sig?.fila && sig.factor && sig.fila.cifras.length > 1) chequeos.push(['documento siguiente', coincide(r6(sig.fila.cifras[1] * sig.factor), valor)]);
+    // el documento siguiente que REEXPRESA el año («Restated» en el encabezado de su columna anterior) no contradice: la diferencia es una reexpresión, no un error de lectura
+    const sig = porAnio.get(String(Number(anio) + 1)); if (sig?.fila && sig.factor && sig.fila.cifras.length > 1) { const c = coincide(r6(sig.fila.cifras[1] * sig.factor), valor); if (c || !REEXPRESADO_RE.test(sig.fila.contexto || '')) chequeos.push(['documento siguiente', c]); }
     const prevM = porAnio.get(String(Number(anio) - 1))?.a.m.staffCost; if (prevM != null && ant != null) chequeos.push(['año anterior', coincide(prevM, ant)]);
     const antD = porAnio.get(String(Number(anio) - 1)); if (antD?.fila && antD.factor && ant != null && coincide(r6(antD.fila.cifras[0] * antD.factor), ant)) chequeos.push(['documento anterior', true]);
     const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
-    if (malos.length || !buenos.length) { res.push({ ...base, valor: null, como: `${cita} (${valor}): ${malos.length ? `no coincide con ${malos.map((c) => c[0]).join(' ni ')}` : 'ningún vecino para comparar'}` }); continue; }
-    res.push({ ...base, valor, validacion: buenos[0][0], como: `Jev (confianza ${x.jev.datos?.conf ?? '?'}): ${cita}`, fila: x.fila, factor: x.factor, md: x.a.md });
+    // la estructura (la suma de la nota cierra, es la nota de personal, la escala la dice su encabezado y pasó la plausibilidad) no necesita vecino; si un vecino la contradice, no se usa
+    if (malos.length || (!buenos.length && !x.estructura)) { res.push({ ...base, valor: null, como: `${cita} (${valor}): ${malos.length ? `no coincide con ${malos.map((c) => c[0]).join(' ni ')}` : 'ningún vecino para comparar'}` }); continue; }
+    res.push({ ...base, valor, validacion: buenos[0]?.[0] || 'estructura de la nota', como: x.estructura ? `estructura de la nota (la suma cierra): ${cita}` : `Jev (confianza ${x.jev.datos?.conf ?? '?'}): ${cita}`, fila: x.fila, factor: x.factor, md: x.a.md });
   }
   return { res, usd, ensayos };
 }

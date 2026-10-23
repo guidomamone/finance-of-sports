@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 958 — 368 escalón 1: la nota de personal por su estructura (2026-10-22) [368 · 351]
+
+- `tools/costo-personal.mjs`: antes de preguntarle a Jev, toma la tabla de personal cuyo total es la suma exacta de sus filas (sueldos, cargas sociales, pensiones) en el documento del año; la escala sale del encabezado de esa tabla (£000 o £m); sin estructura o con un valor no plausible (menos del 15 % de los ingresos: la nota de la sociedad sola), sigue Jev como antes; un documento siguiente que reexpresa («Restated») ya no contradice. El vecino deja de ser obligatorio cuando la estructura cierra.
+- Medido (`medir-pipeline`, 169 diferencias explicadas): `caja-deuda` y la auditoría idénticos; tabla de verdad ampliada a 27 filas (los 17 valores del 351 que quedaron en los ajustes): 26 iguales y 0 distintos antes y después; en los 31 clubes británicos, 41 valores aceptados idénticos, 0 cambian, 0 se pierden y 25 club-años nuevos (50 en total resueltos por estructura, de 19 clubes). Veredicto «general» en `auditoria-proceso.jsonl`. Sin revisión independiente.
+- De los 20 pendientes del 351 salen 7 (Newcastle 2023-24, West Ham 2023-24, Fulham 2021-23); quedan 13. Valores verificados contra las notas en Newcastle 2024, West Ham 2024 y Fulham 2022-23.
+
 ## Versión 957 — 368 paso 1: el costo de personal en su módulo, sin cambios (2026-10-22) [368 · 375]
 
 - El bloque del costo de personal (212 líneas) se mudó de `tools/caja-deuda.mjs` a `tools/costo-personal.mjs`, idéntico salvo `export` (5 en el bloque, 9 ayudantes exportados de caja-deuda; los dos se importan entre sí, seguro porque nada se evalúa al cargar). `caja-deuda.mjs` pasó de 142 a 119 KB.
