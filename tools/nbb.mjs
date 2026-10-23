@@ -20,22 +20,7 @@
 // Los escalones solo proponen: si el documento tiene un ajuste `fila` que suma una fila (no la reemplaza), el ajuste manda y este escalón no
 // corre (el ajuste se puso a mano para algo que este lector ya hace: se anula con `tools/ajustes.mjs --anular` cuando se mide que da igual).
 //
-// QUÉ ES CADA CÓDIGO (hojas que se cargan; los totales solo son compuerta):
-//   ingreso   70, 71, 72, 73 (vzw), 74, 76A (y el 76 "uitzonderlijke opbrengsten" del esquema anterior a 2016)
-//   gasto     60 (o 600/8 + 609 si el 60 no está), 61, 60/61 (abreviado), 62, 630, 631/4, 635/8 (635/9 en vzw), 640/8, 649 (resta), 66A
-//             (y el 66 "uitzonderlijke kosten" del esquema anterior)
-//   financiero +75 (o 750, 751, 752/9) +76B, −65 (o 650, 651, 652/9) −66B
-//   impuesto  −670/3, +77, +780, −680 (o −67/77 si no está el detalle)
-//   Signo: el impreso. Un renglón "(+)/(-)" negativo resta en su lado (reversiones: 631/4, 635/8, 609; un 71 negativo).
-// ESQUEMA ABREVIADO (VKT, micro): la Brutomarge 9900 = 70 + 71 + 72 + 73 + 74 + 76A − 60/61.
-//   a) con Omzet (70, 73 o 70/74) o 60/61 impresos: se abre en esos renglones + el residuo implícito ("Overige bedrijfsopbrengsten (implícito
-//      en la Brutomarge)", como el ajuste de Lokeren-Temse 2025 y Dender EH) + el 60/61 como gasto, SOLO si el residuo no es negativo;
-//   b) si no (o el residuo es negativo: el desglose no cierra con la Brutomarge impresa, Patro Eisden 2020 -correction, decisión de Guido):
-//      la Brutomarge sin abrir; positiva, ingreso; negativa, GASTO por su valor absoluto. El "waarvan" 76A
-//      no se suma aparte (está adentro).
-// FORMATO DEL .md: tabla con una celda de código (cualquier columna) o texto suelto "70/76A 11.399.352 7.628.061" (OH Leuven 2019 y 2021).
-// En texto, una línea con UN solo importe no dice de qué año es ("67/77 610"): se prueban las dos columnas y gana la ÚNICA asignación con
-// la que la columna del año cierra (compuerta de arriba).
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «nbb.mjs».
 //
 // USO (ensayo, gratis): node tools/nbb.mjs "<archivo.md>" [...]   imprime las hojas, los totales y si cierra
 // ============================================================================

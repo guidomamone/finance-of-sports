@@ -20,16 +20,7 @@
 // 20 líneas cada uno, los últimos 10 clubes compartiendo un bullet); al objetivo
 // de ~1000 clubes es inmantenible.
 //
-// CÓMO LO RESUELVE: la sección deja de ser prosa paralela y pasa a ser una VISTA
-// de los datos. Todo lo que imprime sale de `data/clubs.js` y de los
-// `fiscalYearMeta` de cada club — o sea, de los mismos campos que el sitio usa
-// para renderizar. No puede desincronizarse, porque no hay nada que sincronizar.
-//
-// QUÉ NO HACE, A PROPÓSITO: no intenta resumir el "por qué" de cada club (qué
-// supuesto se tomó, qué salvedad tiene una cifra, qué quedó sin cargar). Eso NO
-// es derivable de los datos y vive en la evidencia de carga de cada club,
-// `Admin/carga-clubes/<clubId>.md`. El índice contesta "qué hay"; la evidencia
-// contesta "por qué".
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «generate-club-index.js».
 //
 // USO:
 //   node tools/generate-club-index.js           reescribe la sección en Admin/ESTADO-clubes.md
@@ -43,7 +34,6 @@
 //   n: nombre corto · c: país ISO-2 · q: calidad del dato (ver clubQuality() en data/sources-view.js) · y: ejercicios cargados ·
 //   last: el más reciente · yrs: los ejercicios, del más reciente al más viejo, como [año, reportType] ·
 //   ci: solo si hay, los ejercicios que no cierran en la fecha del club, { año: 'MM-DD' }
-// El archivo publicado lleva UNA línea de comentario.
 // ============================================================================
 
 const fs = require('fs');

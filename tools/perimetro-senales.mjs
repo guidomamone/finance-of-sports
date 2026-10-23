@@ -6,33 +6,7 @@
 // MENCIONES de "consolidato": 5 de 12 clubes frenaron por un falso positivo (Torino, Sassuolo, Monza, Napoli, Sampdoria: las menciones
 // son del grupo dueño del club, no un estado del club). Y donde el documento trae los dos, nadie le dice a Guido cuál conviene.
 //
-// DÓNDE SE USA: lote.mjs y antes-de-localizar.mjs llaman a fijarPerimetroDeClubes() (abajo)
-// antes de la compuerta del perímetro. Medido contra Admin/mediciones/perimetro-verdad.tsv: 77 bien, 0 mal, 23 sin decidir. Cualquier cambio acá
-// se mide otra vez con esa verdad (--verdad ... --jev) y tiene que seguir en 0 mal.
-//
-// LA ESCALERA (solo propone; lo que no se decide va a la cola humana):
-//
-//  PASO A (gratis)  ¿Qué estados trae el documento COMO TABLA? Cada fila de tabla con el total de ingresos ("Totale valore della
-//                   produzione", "Totale ricavi", "Total revenue"...) se etiqueta con el título más cercano hacia arriba que nombra un
-//                   perímetro (CONSOLIDADO: "bilancio consolidato", "conto economico gruppo X"...; INDIVIDUAL: "bilancio d'esercizio",
-//                   "separato", "individual"...). Títulos sin perímetro ("Fatti di rilievo...") se saltean.
-//                     solo tablas consolidadas, y ningún título individual de estado en el documento → consolidado
-//                     solo tablas individuales (o sin etiqueta), y ningún título consolidado de estado     → individual
-//                     sin tablas de total de ingresos                                                       → PASO A2
-//                     tablas de los dos                                                                     → PASO B
-//                     (un título del otro perímetro sin su tabla —por ejemplo la tabla no se reconoció— → cola, no decide)
-//  PASO A2 (Claude) El paso A reconoce italiano e inglés. Sin ninguna tabla reconocida (Aris, en griego), Claude ubica el estado de
-//                   resultados y vota cinco criterios con peso (título 4, texto del estado 4, auditor 1, grupo 1, portada 1), cada sí con su
-//                   línea: 4 o más → consolidado · 0 a 2 → individual · 3 → cola; con columnas o estados de los dos perímetros → cola. Pago: solo con --jev / al ejecutar.
-//  PASO A3 (Claude) A2 vio los dos estados sin totales para votar: ¿alguna controlada hace el negocio del fútbol del club?
-//                   Con la línea que la nombra; solo "consolidado" decide (cuenta como el voto del documento). Ver pasoA3().
-//  PASO B (voto)    Tres criterios, uno por voto:
-//                     C1 (gratis) los ingresos consolidados superan a los individuales en 5% o más, en el año o en el anterior
-//                        (las controladas tienen negocio propio: Roma, Lazio). Escala: miles vs unidades se normaliza.
-//                     C2 (gratis) el individual crece 15 puntos o más distinto que el consolidado (fusión de controladas: Milan 2023-24)
-//                     C3 (Jev)    ¿alguna controlada consolidada hace negocio del fútbol del club (sponsors, medios, merchandising,
-//                                 marketing, entradas, estadio)? Se le pasa el texto del área de consolidación / controladas.
-//                   2 o 3 votos → consolidado · 0 → individual · 1 → cola.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «perimetro-senales.mjs».
 //
 // USO:
 //   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-verdad.tsv          # ensayo: pasos A y B sin Jev (C3 = "?")
@@ -46,9 +20,6 @@
 //   node tools/perimetro-senales.mjs --decidir-clubes <lista de carpetas> --solo-cache   # ensayo de la decisión de perímetro de cada club (gratis)
 //   node tools/perimetro-senales.mjs --lista <txt> --exportar-a2 <carpeta>             # los pedidos de A2 sin caché, para contestarlos sin API
 //   node tools/perimetro-senales.mjs --auditar-a2 <carpeta>                             # auditoría a posteriori: lo que decidió A2 en corridas reales
-//   node tools/perimetro-senales.mjs --lista <txt> --exportar-a3 <carpeta>             # los pedidos de A3, para un subagente
-//   node tools/perimetro-senales.mjs --evaluar-a3 <carpeta>                             # la compuerta de A3 sobre <n>.json contra el perímetro fijado
-// Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname, relative, isAbsolute, sep } from 'node:path';

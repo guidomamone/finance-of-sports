@@ -67,8 +67,12 @@ export function perdidos(nombres, { desde = 'HEAD', hasta = null, min = 3 } = {}
     const nuevo = hasta ? git('show', `${hasta}:${rel}`) : (() => { try { return readFileSync(join(ROOT, rel), 'utf8'); } catch { return null; } })();
     if (viejo === null || nuevo === null) continue;
     const L1 = lineasDe(rel, viejo), L2 = lineasDe(rel, nuevo);
-    const esta = new Set(L2.map((x) => sinPunt(x.texto)));
-    const palabrasNuevas = new Set(L2.flatMap((x) => conContenido(sinPunt(x.texto), '')));
+    // lo que `acortar-cabecera` mandó a Admin/NOTAS-DE-TOOLS.md tampoco se perdió
+    let notas = '';
+    try { notas = (readFileSync(join(ROOT, 'Admin', 'NOTAS-DE-TOOLS.md'), 'utf8').split(/\n## /).find((s) => s.startsWith(`${f}\n`)) || ''); } catch { /* sin notas */ }
+    const delNotas = notas.split('\n').map((t) => t.trim()).filter(Boolean);
+    const esta = new Set([...L2.map((x) => sinPunt(x.texto)), ...delNotas]);
+    const palabrasNuevas = new Set([...L2.map((x) => sinPunt(x.texto)), ...delNotas].flatMap((t) => conContenido(t, '')));
     for (const x of L1) {
       const t = sinPunt(x.texto);
       if (!t || esta.has(t)) continue;

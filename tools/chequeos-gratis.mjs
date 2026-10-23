@@ -21,42 +21,7 @@
 //   ~8 de 17 dudas eran prosa con un "3000" suelto; Rio Ave: 13 de 19 dudas, 1 real) y que la aritmética casi no se usaba. La
 //   regla nueva: la validación paga se hace SOLO sobre páginas con números y SOLO si esta cascada gratis no alcanza.
 //
-// LA CASCADA (por página; cada chequeo "respalda" celdas/cifras, y la página se valida si no queda ninguna sin respaldo)
-//   1. texto-pdf   : la cifra está en el texto que el PDF trae adentro (pdftotext -layout, página por página). Se cuenta como
-//                    MULTICONJUNTO: si el .md tiene tres veces "8821" y el PDF una sola, dos quedan sin respaldo (caso real de los
-//                    formularios belgas, donde los códigos de rubro 8821/8321 aparecen en la misma página y un 3 leído como 8
-//                    se "respaldaba" con el otro código). Solo aplica a PDFs con capa de texto real (mismos umbrales que
-//                    tools/verify-numbers.mjs: >= 30 cifras y >= 150 caracteres por página en el documento, y que el texto no
-//                    sea mojibake — cobertura >= 25%).
-//   2. sumas       : dentro de cada tabla Markdown, columna por columna, una celda que es la suma EXACTA (con tolerancia de
-//                    redondeo de la unidad impresa, ver `tolSuma`) de >= `minSumandos` celdas contiguas de arriba (o de abajo,
-//                    si `sumasHaciaAbajo`) respalda a esa celda y a todos sus sumandos. Una lectura mal hecha de un dígito en un
-//                    sumando rompe la suma, así que ese sumando queda sin respaldo. Es la misma idea que filasSuma() de
-//                    tools/filas-rubro.mjs, pero con tolerancia de redondeo en vez del 0,05% de allá (con 0,05%, en 1.000.000 se
-//                    toleran 500 unidades: un 3 leído como 8 en las centenas pasaba como "cierra").
-//   3. produccion  : si el club-año N-1 está cargado en el sitio (data/<país>/<club>-data.js, cargado con vm como hace
-//                    tools/proponer-carga.mjs), una celda que coincide EXACTO (a la precisión impresa, probando escala en
-//                    unidades / miles / millones) con un amountNative o un total oficial de N-1 queda respaldada: es la columna
-//                    comparativa del año anterior.
-//   4. balance     : en todo el documento, si un "Total activo" es igual a un "Total pasivo + patrimonio" (etiquetas en ~12
-//                    idiomas), esas celdas quedan respaldadas en sus páginas.
-//
-// NÚMEROS MEDIDOS (node tools/chequeos-gratis.mjs --prueba; curva completa y cada caso en Admin/mediciones/test-chequeos-gratis.md)
-//   Base: los 104 documentos que el resolver ya resolvió (3.134 páginas, $38,98 registrados). Entrada = lo que el resolver tenía en
-//   la mano (previo-mistral 67, previo-legado 21, mistral-redo 15, previo-gemini 1); verdad = el .md corregido de hoy. 178 páginas
-//   con un error real de lectura (163 en páginas con números según tools/paginas-con-numeros.mjs; las otras 15 son identificadores
-//   en prosa: INN/cuentas bancarias rusas, números de organización noruegos, sellos manuscritos).
-//   Con los umbrales por defecto (G2 en la curva):
-//     - validada-gratis 750 (23,9%), prosa 1.102 (35,2%), dudosa 1.282 (40,9%).
-//     - recall en páginas con números 163/163 (100%); total 163/178 (los 15 escapes son todos `prosa`, ninguno `validada-gratis`).
-//     - ahorro aproximado por proporción de páginas: $19,14 de $38,98 (49%); de las 603 páginas que el resolver pagó, 177 no se
-//       habrían mandado.
-//     - de las 1.282 dudosas, 1.136 son de documentos SIN capa de texto (escaneos): ahí la aritmética rescata muy poco (~25 páginas) y
-//       el ahorro sale casi todo de no mandar la prosa. En los documentos con texto quedan 146 dudosas de 1.171 páginas.
-//   La propuesta literal ("una tabla que cierra con >= 3 sumandos valida la página") deja pasar 37 páginas con errores reales como
-//   buenas (recall 77%): por eso la validación es CELDA POR CELDA, no por tabla.
-//   El chequeo 3 (producción N-1) no se pudo medir: ninguno de los 104 documentos tiene su año anterior cargado en el sitio (son
-//   ejercicios históricos de clubes cuyo sitio arranca años después). Queda implementado, apagable con usarProduccion:false.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «chequeos-gratis.mjs».
 //
 // USO
 //   node tools/chequeos-gratis.mjs <archivo.md> [--pdf <archivo.pdf>] [--json]   # clasifica las páginas de un documento

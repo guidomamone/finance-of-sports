@@ -15,30 +15,7 @@
 // la canónica cuando corresponde. Una página en la que las tres voces discrepan queda marcada para
 // revisión humana, no se adivina.
 //
-// FLUJO POR DOCUMENTO
-//   PDF con texto:  páginas con dudas (gratis) -> Claude solo esas -> se reemplazan -> revalida
-//                   con tools/verify-numbers.mjs -> listo / revisar.
-//   Escaneo:        Gemini solo en las páginas con números que los chequeos gratis dejan dudosas (por tramos), como
-//                   segunda voz
-//                     - Gemini rechaza por RECITATION -> Gemini página por página (una página sola suele pasar el
-//                       filtro) y Claude solo en las que rechace; si nadie más valida una página, gana Claude y la
-//                       página queda anotada como "reserva" (al onboardear, cerrarla con el chequeo de sumas).
-//                     - Gemini responde -> páginas donde canónica y Gemini difieren -> Claude solo esas.
-//   .md sin marcas de página (no se puede trabajar por página): se re-hace entero con Mistral.
-//
-// FALLOS POR CRÉDITO / LÍMITE (pedido de Guido: las APIs tienen recarga automática, pero un PDF o dos
-// se rechazaron mientras entraba el pago): se distinguen de un rechazo PERMANENTE.
-//   - crédito / cuota / límite de velocidad / servidor caído / timeout  -> se ESPERA y se reintenta el
-//     MISMO motor (con espera creciente, para darle tiempo a la recarga). Nunca se pasa al motor
-//     siguiente por esto: un motor sin crédito no es un motor que rechaza el documento.
-//   - Si tras esperar sigue fallando, el documento queda en estado "reintentar" y la corrida SE DETIENE
-//     si pasa 3 veces seguidas (para no marcar cientos de documentos por un problema de cuenta).
-//     La próxima corrida los retoma solos.
-//   - RECITATION (Gemini) es permanente para ese documento y sí pasa a Claude.
-//
-// COSTO: nada corre sin --ejecutar. Sin él, es un ensayo (--dry-run implícito) que no llama a ninguna
-// API y estima el costo. Cada corrida real anota en Admin/registros/transcripciones-verificaciones.jsonl qué se
-// hizo, qué páginas reemplazó cada motor y cuánto costó.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «resolver-inventario.mjs».
 //
 // USO:
 //   node tools/resolver-inventario.mjs --dir Clubes/Chile                 # ensayo: qué haría y cuánto costaría

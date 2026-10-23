@@ -9,43 +9,7 @@
 // pagar 41 archivos por visita. Calcularlo en vivo cuesta, medido archivo por
 // archivo:
 //
-//     jp-j1 2025      10 clubes    41 KB crudo     18 KB gzip
-//     es-laliga 2025   9 clubes    83 KB crudo     29 KB gzip
-//     ar-primera 2024  8 clubes   496 KB crudo    101 KB gzip
-//
-// Los argentinos pesan porque Racing trae 16 ejercicios y Vélez otros tantos:
-// un ranking usa UNO y se bajaría todos. Y el costo se paga de nuevo en cada
-// liga que el visitante mire.
-//
-// PERO EL ARGUMENTO DECISIVO NO ES LA VISTA DE LIGA, ES INICIO: la
-// vista de liga está detrás de un click, o sea que el visitante la pidió; el
-// ranking de Inicio lo paga TODO visitante, incluido el que rebota. Hoy el
-// sitio no carga ni un solo `data/<país>/<club>-data.js` de forma eager, y eso es un
-// logro explícito de la arquitectura (ver Admin/ESTADO.md). Un ranking en vivo en
-// Inicio lo rompe.
-//
-// POR QUÉ UN ARCHIVO POR LIGA y no uno solo: mismo patrón y mismo motivo que
-// `data/club-leagues/<iso2>.js`. La vista de la pestaña Ligas
-// baja EXACTAMENTE la liga que se está mirando, y el día que haya 200 ligas no
-// hay que re-particionar nada. Hoy los 8 archivos juntos son ~3 KB gzip.
-//
-// LO QUE ESTE ARCHIVO ES, Y LO QUE NO ES. Es una VISTA de los datos, como
-// `data/club-index.js`: todo lo que imprime sale de `computeYearGeneric()` y
-// `simplifiedReportForClub()`, el MOTOR REAL. No reimplementa ni una cuenta.
-// Pero a diferencia de `club-index.js`, que copia metadatos, este copia
-// NÚMEROS — o sea que es una segunda verdad sobre plata, que es lo más
-// peligroso que este proyecto puede tener suelto. El seguro es `--check`
-// corriendo dentro de `node tools/audit.js` como P1: si alguien carga un
-// balance y no regenera esto, la auditoría falla ANTES del push.
-//
-// POR QUÉ SE PUEDE PRECALCULAR SIN MENTIR: el ranking fuerza USD y Formato
-// simplificado y lo dice en pantalla, igual que hace Comparar desde la Versión
-// 148. O sea que no depende del toggle de moneda ni del de formato, que son las
-// dos cosas que podrían cambiar debajo de un número congelado.
-//
-// EL ORDEN GUARDADO ES DESCENDENTE (el 1 del ranking primero), que es el orden
-// de la TABLA. El gráfico de barras lo dibuja al revés, ascendente, que es un
-// pedido explícito de Guido — pero eso es decisión de la vista, no del dato.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «generate-rankings.js».
 //
 // USO:
 //   node tools/generate-rankings.js           reescribe data/rankings/*.js
@@ -59,7 +23,6 @@
 // archivo de cada club) y agrupados en Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero. `leagueSize` = el verificado (LEAGUE_SIZE_BY_YEAR) o,
 // sin él, los equipos de la lista de Wikipedia (`wiki.n`); null = ni lo uno ni lo otro. `wiki` = { t, lang, at, n }: la página de Wikipedia de la que salió la lista de equipos de
 // esa liga-año (tools/club-league-reference/), con el día en que se leyó y cuántos clubes trae; la vista la cita con su licencia
-// (CC BY-SA 4.0). Sin lista bajada, no va. El archivo publicado lleva UNA línea de comentario.
 // ============================================================================
 
 const fs = require('fs');

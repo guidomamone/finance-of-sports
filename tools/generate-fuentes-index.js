@@ -15,31 +15,7 @@
 // sourcing toca `Admin/sourcing/_indice/<País>.md`, y actualizar la línea del país acá
 // es un paso aparte que se puede olvidar sin que nada se rompa visiblemente.
 //
-// CÓMO LO RESUELVE: el índice deja de ser prosa paralela y pasa a ser una VISTA
-// de los archivos de país. No puede desincronizarse porque no hay nada que
-// sincronizar.
-//
-// LO QUE NO ES MECÁNICO, Y POR QUÉ ESTE SCRIPT ABORTA EN VEZ DE ADIVINAR:
-// "cuántos clubes con documento encontrado" no sale de ningún campo
-// estructurado. El estado de cada club es PROSA LIBRE que escribe el agente de
-// sourcing ("sin PDFs, pendiente todo", "8 ejercicios reales (2018-2025), sin
-// cargar aún", "2 memorias descargadas, sin datos financieros cargables"). No
-// existe un booleano en ningún lado.
-//
-// La clasificación original se hizo con las dos listas de
-// regex de abajo, y quedó verificada así: de 530 clubes, 518 matchearon señales
-// de un solo lado, 0 no matchearon ninguna, y 12 matchearon señales de los dos
-// lados — esos 12 se resolvieron A MANO leyendo el estado completo, y están
-// abajo en OVERRIDES con su motivo.
-//
-// Lo importante del diseño: cuando una línea matchea señales de los dos lados,
-// o de ninguno, y no tiene override, el script ABORTA (o, con `--check`, la
-// marca para revisión). NO adivina. Un heurístico silencioso clasifica mal sin
-// que nadie se entere — ej.: "dead-end propio, solo agregado SFL (5 años)"
-// matchea un "N años" que PARECE señal de documento y no lo es. Que aborte es
-// el mecanismo que hace confiable al script, no un detalle: el costo de una
-// línea que hay que resolver a mano cada tanto es mucho menor que el de un
-// número publicado que nadie sabe que está mal.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «generate-fuentes-index.js».
 //
 // USO:
 //   node tools/generate-fuentes-index.js           reescribe la sección

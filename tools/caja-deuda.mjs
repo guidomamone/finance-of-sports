@@ -12,35 +12,7 @@
 // precedente, el criterio por defecto es DEUDA FINANCIERA (préstamos y obligaciones bancarias/financieras, corriente + no corriente), nunca el
 // total del pasivo. Caja: efectivo y equivalentes / caja y bancos / disponibilidades.
 //
-// LA ESCALERA (rehecha a pedido de Guido: "SIEMPRE ESCALERA, sin reglas una encima de otra"). Cada dato por separado.
-//
-//   ESCALA   UNA por documento, para todos los escalones: la del estado de resultados de ESE documento, la que hace coincidir sus cifras con
-//            los rubros ya cargados en el sitio (factorPorIngresos). Ningún escalón trae su propia escala.
-//   ESCALÓN 0  precedente del club: qué filas del balance de otro año del club (con la escala de ESE documento) suman lo cargado; se
-//              PROPONEN las filas con las mismas familias de etiqueta en este documento.
-//   ESCALÓN 1  vocabulario (vocabulario.mjs CAJA / DEUDA_FINANCIERA): se PROPONEN las filas del balance con esos nombres (una sola por
-//              familia). "Ninguna fila" es una propuesta para la deuda (= 0, decisión de Guido) si el balance está completo (tiene su total del
-//              pasivo) y el club usa filas de deuda financiera en otros años.
-//   ESCALÓN 1b Jev (fijo en --club, en --medir con --jev): una llamada barata por documento; la caja como opción cerrada entre las
-//              filas del balance y la deuda como sí/no por fila. Solo propone filas; decide la misma compuerta. Respuestas en
-//              Generados/_cache/jev-caja-deuda.jsonl.
-//   ESCALÓN 2  IA (Claude, ~US$ 0,03 por documento, una llamada para caja y deuda, solo si 0 y 1 no pasaron): PROPONE números de línea del
-//              balance. Nada más (ni importes, ni escala, ni "no hay").
-//   COMPUERTA  la MISMA para los tres: valor = suma de las cifras de las filas propuestas x la escala; y un año vecino tiene que decir lo mismo:
-//              el AÑO ANTERIOR CARGADO (las mismas filas, en su columna del año anterior, dan lo cargado) o el DOCUMENTO SIGUIENTE (las mismas
-//              familias, en su columna del año anterior, dan este valor). Pasa si al menos uno coincide y ninguno contradice. Si no pasa, el
-//              siguiente escalón. Si ninguno pasa: null. Nunca frena. El DOCUMENTO ANTERIOR (la columna del año anterior de estas
-//              filas contra el año en ese documento) también confirma, pero solo a favor: un documento puede reexpresar el año anterior. Y
-//              dos números por debajo del piso de la tolerancia (1.500 unidades) coinciden solo si son el mismo número.
-//   DOS LECTURAS: cada propuesta se evalúa con las filas como se leen siempre y, si alguna fila (de este documento o de los
-//              vecinos) tiene una celda en una columna con forma de nota ("6.8", "6.13"), también sin esa celda. Decide la misma compuerta:
-//              pasa una sola lectura → esa; las dos con valores distintos → no decide. Caso: AEK 2019, "| Ταμειακά διαθέσιμα | 6.8 |
-//              7.935.425 | 1.650.370 |" se leía 6,8; sin la celda, 7.935.425, que confirma el documento 2020.
-//   LEER UNA FILA: el importe en valor absoluto (hay balances que imprimen el pasivo entre paréntesis: Tottenham 2023-24).
-// Respuesta de la IA guardada en Generados/<doc>.caja-deuda-ia.json.
-// Solo se leen las páginas del BALANCE: las que tienen el título (TITULO_BALANCE) o un total del activo / del pasivo, sin el título del flujo
-// de efectivo. La columna es la PRIMERA cifra de la fila que no sea una referencia a nota (un entero de 1-2 dígitos al principio), salvo
-// que la tabla tenga una columna de notas antes de esa cifra: entonces la cifra es un importe.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «caja-deuda.mjs».
 //
 // USO:
 //   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle] [--escalas]                         MEDICIÓN sobre los años ya cargados (ver abajo)
@@ -54,17 +26,6 @@
 //   node tools/caja-deuda.mjs --personal --club <id> --partir [--escribir]                    (229) ajustes que separan staffCost de la fila global
 //        de gasto; después verificar.mjs + cargar.mjs --reemplazar --escribir por año
 //   node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]                       COMPLETAR un club ya publicado (ver abajo)
-//
-// --club (decisión de Guido: "dos scripts"; caja y deuda NO van en el lote, se completan con el club ya en el sitio):
-// recorre los años cargados del club, de más viejo a más nuevo, y lee caja y deuda SOLO donde el sitio tiene null (nunca pisa un valor cargado
-// a mano). Corrido después de cargar, el año anterior ya está en el sitio y sirve de compuerta. Un valor que se completa en esta
-// misma corrida NO cuenta como cargado para el año siguiente. Sin --ejecutar, el escalón 2 es ensayo (costo estimado). --escribir: lo escribe en
-// data/<país>/<club>-data.js (el valor, sin comentario: data/ se publica) y en Admin/carga-clubes/<club>.md una nota de dónde salió cada dato, en la
-// meta del año; sube ASSET_V, corre los generadores y audit.js; si da P0/P1, revierte los dos.
-//
-// --medir: para cada año ya cargado con grossDebt/cash y con transcripción (la fuente nombra el .md), lee el balance como si fuera un año nuevo
-// y lo compara con lo cargado a mano. El precedente sale SOLO de los OTROS años del club (nunca del mismo: si no, se aprendería la respuesta).
-// Misma escalera y misma compuerta que --club. No escribe nada.
 // ============================================================================
 
 import { readFileSync, existsSync, writeFileSync } from 'node:fs';

@@ -7,59 +7,7 @@
 // Corre en tu terminal, 0 tokens de Claude Code (gasta dólares de API, que es lo aceptado; ver la memoria
 // "Scripts y API antes que tokens"). NO escribe nada en data/: solo deja resultados para que otra etapa decida.
 //
-// ---------------------------------------------------------------------------------------------------------
-// LA CATEGORIZACIÓN EN ESCALONES (de más barato a más caro)
-//
-//   (0) Precedente del mismo club: el mismo texto (normalizado) ya está cargado en otro año del mismo club,
-//       del mismo lado (ingreso/gasto), siempre con la misma categoría -> se copia. Gratis, sin API.
-//       Es el "tier 0" (tools/suggest-category-precedent.mjs hace lo mismo como consulta a mano).
-//   (1) Jev (tools/jev-categorizar.mjs) con confianza >= 0,90 -> se acepta. Backtest sobre 3.975 rubros ya
-//       cargados (Admin/mediciones/test-jev-resultados_lado_ej_otrosclubes.md): 94,4% de acierto en esa banda, que cubre
-//       ~69% de los rubros. Jev cuesta casi nada, pero ve un rubro por vez y sin las convenciones del club.
-//   (2) El resto -> Claude (este archivo). Una llamada por documento, con:
-//         - la lista de categorías de data/category-map.js con su lado y su descripción completa (el comentario
-//           de cada categoría en ese archivo es el criterio curado; se lee de ahí, no se reescribe acá);
-//         - un resumen de los criterios del skill club-data-mapping que más errores evitan (sección CRITERIOS);
-//         - las líneas YA CARGADAS de ese club en otros años (rawLabel -> normalizedCategory): son las
-//           convenciones curadas del club, que es justo donde Jev más falla (Argentina 74%, Brasil 80%);
-//         - las filas del mismo documento en orden (vecinas y encabezado de sección), con la categoría ya
-//           resuelta por los escalones 0-1 cuando la hay, para que Claude vea la estructura del estado;
-//         - para cada rubro pendiente, 6 ejemplos parecidos de OTROS clubes (misma búsqueda por palabras que Jev).
-//       Salida en JSON estricto (structured outputs): categoría + confianza + motivo corto, por rubro.
-//   (3) Lo que Claude tampoco deja con confianza alta -> se frena y va a la cola humana (cola.mjs; la escribe
-//       cargar.mjs). No se inventa.
-//
-// ---------------------------------------------------------------------------------------------------------
-// NÚMEROS MEDIDOS (backtest, detalle en Admin/mediciones/test-categorizar-claude.md)
-//   Sobre los 1.217 rubros que Jev deja < 0,90 (de 3.975; 224 club-años), Opus 5.5, esfuerzo low, con contexto del club:
-//     - acierto 76,6% (Jev en esos mismos rubros: 57,1%). Por confianza de Claude: >= 0,90 -> 98,5% (132 rubros);
-//       0,80-0,90 -> 94,3% (296); 0,60-0,80 -> 75,2% (488); < 0,60 -> 51,8% (301). La confianza SÍ separa.
-//     - sistema combinado (precedente aparte): Jev >= 0,90 + Claude >= 0,80 -> 80,2% de los rubros automáticos con 94,5%
-//       de acierto (Jev solo: 69,4% con 94,4%); queda 19,8% para revisar. Todo automático sin umbral: 88,9%.
-//     - las líneas ya cargadas del club valen ~8 puntos: en la misma muestra de 259 rubros, 81,1% con ellas vs 72,6% sin;
-//       y con ellas hay 93 rubros >= 0,80 (94,6%) contra 59 (89,8%).
-//     - Sonnet 5.5 en esos 259: 74,9% (vs 81,1% de Opus), 44% más barato; su confianza está peor calibrada.
-//   Costo (Opus 5.5): US$ 0,0036 por rubro, mediana US$ 0,015 por club-año (p90 0,039, máx. 0,108); sin thinking a esfuerzo low.
-//   OJO: la regla de "gastos accesorios de transferencias -> other_expenses" de CRITERIOS se agregó DESPUÉS del backtest
-//   (el error más frecuente fue other_expenses -> player_amortisation, 23 casos, con producción dividida 40/31): no está medida.
-//
-// ---------------------------------------------------------------------------------------------------------
-// MODOS
-//
-//   --backtest   ¿Cuánto acierta Claude en lo que Jev deja < 0,90? Toma las filas de un backtest de Jev
-//                (por defecto Admin/mediciones/backtests/jev/backtest_lado_ej_otrosclubes.jsonl: una línea por rubro único de un club
-//                ya cargado, con `truth` = la categoría de producción y `confidence` = la de Jev), se queda con
-//                las < 0,90, les asigna el club-año donde aparecen (el ejercicio más reciente del club que tiene
-//                ese texto) y manda una llamada por club-año.
-//                SIN FUGA DE LA RESPUESTA: del contexto del club se sacan TODAS las líneas de ese mismo club-año
-//                y cualquier línea de otro año con el mismo texto que un rubro pendiente (eso lo habría resuelto
-//                el escalón 0, así que el caso que llega a Claude es justamente el que NO tiene precedente
-//                exacto). Las filas del documento se muestran sin su categoría real; las que Jev resolvió con
-//                >= 0,90 van con la categoría DE JEV (no la real), igual que pasaría en producción.
-//                Reanudable: los club-años ya respondidos en el .jsonl de salida no se vuelven a pagar.
-//   --informe    Solo lee el/los .jsonl del backtest y muestra las tablas (sin API).
-//   --listos     Producción: para cada `<md>.jev.json` que dejó jev-categorizar.mjs --listos, aplica el escalón 0,
-//                acepta Jev >= 0,90 y manda el resto a Claude. Deja `<md>.categorias.json` al lado.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «categorizar-claude.mjs».
 //
 // USO:
 //   node tools/categorizar-claude.mjs --backtest --limit 50 --dry-run           # arma los pedidos, estima tokens, no llama
@@ -73,13 +21,6 @@
 //       contestar. Escalones 0 y 1 y la memoria como siempre; deja el mismo <md>.categorias.json (modelo 'sesión (Claude Code)', costo 0) y registra las aprendidas. Si falta un rubro, no escribe nada.
 //   Extras: --modelo (default claude-opus-5-5), --esfuerzo low|medium|high (default low; Haiku no lo usa),
 //           --concurrencia 4, --semilla 7, --umbral-jev 0.9, --jev-jsonl <ruta>
-//
-// COSTO: cada llamada queda en Admin/registros/api/claude-api.jsonl (mismo archivo que las tools de transcripción,
-// lo suma tools/gasto.mjs) con `tarea: "categorizar"`, sin campo `md` a propósito: inventario-transcripciones.mjs
-// usa `md` de ese log para saber qué motor hizo cada transcripción, y esto no es una transcripción.
-//
-// RAW HTTP, sin SDK: mismo criterio que claude-api-transcribe.mjs (el proyecto no tiene package.json a propósito).
-// Necesita Admin/api-keys/claude-api.env con ANTHROPIC_API_KEY=... (gitignoreado).
 // ============================================================================
 
 import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';

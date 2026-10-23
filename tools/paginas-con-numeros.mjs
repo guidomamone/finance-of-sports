@@ -16,47 +16,7 @@
 //      (a escala 1, 1e3 o 1e6). 1.121 páginas útiles, 4.103 importes distintos encontrados en algún lado del .md.
 //   B) 420 `Clubes/**/*.rubros.json` con `page` por rubro: 15.858 páginas, 2.173 páginas con rubros, 20.407 rubros.
 //
-// Regla elegida (sobre el .md):   (>= 8 cifras y cifras/palabras >= 0,05)   o   (tabla markdown de >= 5 filas y >= 5 cifras)
-//   - "cifra" = número de >= 3 dígitos con valor >= 100 ("1.234", "(12 345)", "2024", "123456"): mismo regex que la medición previa.
-//   - "palabras" NO cuenta los separadores de tabla ("|", "---", ":--"): con ellos una tabla con muchas columnas vacías parecía prosa.
-//   - la segunda mitad (tabla con cifras) rescata las tablas cortas de 2 columnas que la densidad sola perdía.
-//     Selecciona 45,7% de las páginas | cubre 96,5% de las páginas útiles y 98,7% de los importes (A) | 98,0% de las páginas con rubros
-//     y 98,7% de los rubros (B).
-//   + vecinas "suaves" (DEFAULT): se agrega la página anterior y la siguiente de cada seleccionada SI tienen >= 3 cifras (una tabla que
-//     sigue en la página de al lado, el título del estado arriba y las cifras abajo).
-//     Selecciona 58,3% | 99,0% de las páginas útiles y 99,7% de los importes (A) | 98,9% de las páginas con rubros y 99,0% de los rubros (B).
-//     Por motor del .md (con vecinas): legado 58,5% -> 99,0% / 99,7% (A); mistral 55,8% -> 100% / 99,5% (A, 14 docs), 99,2% pág. B (205 docs).
-//
-// Lo que se probó y NO se eligió:
-//   - Palabras clave de estado de resultados (STATEMENT_RE de tools/pipeline.mjs, en la página + >= 3 cifras): +12 puntos de páginas
-//     seleccionadas para ganar ~1 punto de cobertura. No paga.
-//   - Umbrales más duros (densidad 0,08 o 0,10): bajan a 36-38% de páginas pero pierden 7-14 puntos de páginas útiles.
-//   - pdftotext -layout página por página (ANTES de tener el .md): en los PDFs con capa de texto sana selecciona lo mismo (45%) con
-//     menos cobertura (92,4% de las útiles vs 97,2% con el .md, mismos documentos), y el 23% de los PDFs medidos (233 de 1.005) no
-//     tiene capa de texto usable (escaneo o mojibake, incluidos dígitos: Ferro 2024-25 sale como "!""#$%"). Además hay PDFs "mixtos"
-//     que pasan el chequeo por documento pero traen justo el estado financiero como imagen (Flamengo 2024, Sevilla 2024-25, Alianza
-//     Lima). Como el .md de Mistral se hace SIEMPRE y antes de la segunda voz, no hay razón para decidir con pdftotext. Queda solo
-//     como plan B cuando se llama sin .md (ver abajo).
-//
-// Qué se pierde (los ~1% de importes): casi todo es prosa con cifras sueltas — el Lagebericht alemán ("die Umsatzerlöse stiegen auf
-// TEUR 123.456"), notas de políticas contables inglesas, el informe del auditor que cita el resultado. Esas cifras casi siempre están
-// también en el estado financiero, que sí se selecciona.
-//
-// ----------------------------------------------------------------------------------------------------------------------------------
-// CÓMO SE USA
-// ----------------------------------------------------------------------------------------------------------------------------------
-//   import { paginasConNumeros } from './paginas-con-numeros.mjs';
-//   const { paginas, metodo, detalle } = paginasConNumeros({ mdText });            // lo normal: el .md de Mistral ya está hecho
-//   const r = paginasConNumeros({ pdfPath: 'Clubes/X/Y/balance.pdf' });             // plan B, sin .md: pdftotext
-//   const r = paginasConNumeros({ mdText, vecinas: false });                        // sin vecinas (45,7% de las páginas en vez de 58,3%)
-//
-//   paginas  -> números de página (1-based, los de "--- pág. N ---" del .md = página física del PDF), ordenados.
-//   metodo   -> 'md' | 'pdftotext' | 'sin-capa-de-texto' (con pdfPath y un PDF escaneado/mojibake: paginas = TODAS, no se puede filtrar
-//               gratis; lo correcto ahí es transcribir con Mistral primero y volver a llamar con mdText).
-//   detalle  -> { total, seleccionadas, porRegla: {densidad, tabla, vecina}, porPagina: [{n, cifras, palabras, filasTabla, motivo}] }
-//
-//   CLI:  node tools/paginas-con-numeros.mjs <archivo.md | archivo.pdf> [--sin-vecinas] [--json]
-//         Con un .pdf usa el .md hermano si existe (mismo nombre base); si no, pdftotext.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «paginas-con-numeros.mjs».
 // ============================================================================
 
 import { readFileSync, existsSync } from 'fs';

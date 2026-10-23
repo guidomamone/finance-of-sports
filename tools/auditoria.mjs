@@ -6,37 +6,7 @@
 // que leen el informe del auditor (no hay regex que clasifique un dictamen en veinte idiomas: "continuidad" aparece en las notas de casi
 // todos los balances). Este script arma lo que el subagente lee, verifica lo que escribió y genera lo que lee el sitio.
 //
-//   {"clubId":"chelsea-gb","anio":2025,"auditor":{"nombre":"Deloitte","tipo":"firma"},"dictamen":"sin_salvedades","continuidad":false,
-//    "citas":{"auditor":{"md":"Clubes/…/x.md","linea":120,"texto":"Deloitte LLP"},"dictamen":{"md":…,"linea":…,"texto":"In our opinion…"}}}
-//
-//   auditor.tipo: firma | persona | organismo. Una persona va con su nombre como lo imprime el documento (decisión de Guido).
-//   dictamen: sin_salvedades | con_salvedades | adverso | abstencion | sin_informe (el documento no trae informe del auditor: sin auditor
-//   ni cita de dictamen). Vocabulario provisorio: se ajusta con los casos.
-//   falta_transcripcion: el documento muestra que el informe existe (el índice lo lista, los estados remiten a él, el fisco nombra al
-//   auditor) pero el .md no lo trae; no se publica (no es "sin informe") y cuenta como pendiente hasta transcribirlo. Lleva nota.
-//   auditor.nombre puede ser null cuando el informe no imprime quién firma; la nota lo dice.
-//   continuidad: true si el informe marca una incertidumbre material sobre la continuidad (empresa en funcionamiento, going concern),
-//   con su cita en citas.continuidad; es aparte del dictamen. Otros párrafos de énfasis no se registran.
-//   CRITERIO: (1) un énfasis que habla de continuidad, patrimonio negativo o apoyo del accionista sin decir que haya
-//   una incertidumbre material es continuidad false, con nota "ÉNFASIS CONTINUIDAD:"; (2) alcanza con que lo diga el título del párrafo;
-//   (3) si el título de la base dice "con salvedades" y el párrafo de opinión es limpio, manda el párrafo de opinión; (4) opinión limpia
-//   sobre una parte del balance y abstención sobre el resto es abstencion.
-//   La entidad que organiza una liga (AFA, LFP) va con "ligaId" (de data/leagues.js) en vez de "clubId" y con "entidad":{"nombre","legal"?};
-//   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]);
-//   una liga con `falta_transcripcion` no sale (queda pendiente en `--pendientes`, como un club).
-//   alcance (opcional, con nota; sin el campo es una auditoría plena de las cuentas del club). Decisión de Guido:
-//     revision_limitada         revisión limitada (ISRE 2410 y similares): "no encontramos nada", no es una auditoría (Como 2025).
-//     procedimientos_acordados  procedimientos acordados: la firma comprobó cifras puntuales; ni auditoría ni revisión (Osijek 2025).
-//     proposito_especial        auditoría de estados preparados para la licencia de la federación, no de las cuentas legales (Kifisia).
-//     grupo                     auditoría de las cuentas del grupo dueño del club, no del club solo (Club América 2025, Ollamani).
-//     federacion                (solo en una línea de liga) el balance es el de la federación entera, no el de la liga: la sociedad que organiza la
-//                               liga no publica el suyo (KNVB para la Eredivisie y la Eerste Divisie, decisión de Guido).
-//   Un "relatório de revisão especial" que audita con seguridad razonable y da opinión es una auditoría plena (Criciúma 2015-2019).
-//   nota (opcional): una aclaración interna para la próxima sesión; no se publica.
-//
-// CHEQUEOS (código 1 si alguno falla): JSON y códigos válidos; el club y el año tienen un balance cargado; cada cita está en su línea
-// del .md (±3, espacios normalizados) y el .md es de ese club y ese año (tools/quien.mjs); sin repetidos. AVISO (no frena): cuántos
-// balances cargados no tienen línea todavía.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «auditoria.mjs».
 //
 // USO:
 //   node tools/auditoria.mjs                         verifica y escribe data/auditoria/

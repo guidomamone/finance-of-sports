@@ -18,59 +18,7 @@
 //   - Raíces cortas sueltas daban falsos positivos: 'venta' está adentro de "inventario"; 'ertrag' adentro de "Vertrag" (contrato);
 //     'cost' adentro de "Costa Rica"; 'zisk' / 'zysk' adentro de cualquier palabra.
 //
-// CÓMO SE COMPARA UN TEXTO (UNA sola normalización para todo el proyecto: `normalizar()`, más abajo). Antes de comparar, TODO texto (la
-// sección de una tabla, sus columnas, la etiqueta de una fila, una línea de título) pasa por `normalizar()`, y LOS TÉRMINOS DE ESTE ARCHIVO
-// TAMBIÉN (al compilar las regex). Por eso los términos se escriben como se escriben en el idioma, con sus acentos ("výkaz zisku a ztráty",
-// "Erträge", "Hasılat", "звіт про фінансові результати"): los dos lados quedan iguales. `normalizar()`:
-//   1. minúsculas (con la regla de la sigma final griega: ς -> σ, para que "αποτελεσματος" y "αποτελεσματοσ" sean lo mismo);
-//   2. descompone por COMPATIBILIDAD (NFKD) y saca los signos diacríticos combinantes: á->a, ü->u, č->c, ř->r, ё->е, й->и, ї->і, ş->s,
-//      ğ->g, İ->i; NFKD además deshace las ligaduras de los PDF ("Deﬁcit" -> "deficit", Estudiantes LP 2022-23), los caracteres de ancho
-//      completo del japonés ("Ｊ１" -> "j1"), "º" -> "o" y los superíndices;
-//      también la vocalización del árabe y el hebreo (harakat, niqqud) y el tatweel árabe;
-//   3. letras que NO se descomponen y que hay que llevar a mano: ß->ss, æ->ae, œ->oe, ø->o, ð->d, đ->d, ł->l, ı->i (turco), ħ->h, þ->th;
-//      y las alef árabes con hamza/madda a alef simple (أ إ آ -> ا);
-//   4. recompone (NFC): las sílabas de Hangul (coreano) y los kana con dakuten (japonés) vuelven a ser un solo carácter;
-//   5. espacios (incluido el no separable) colapsados en uno, sin espacios al principio ni al final.
-//   OJO: la ä alemana/sueca queda 'a' (NO 'ae'): "Erträge" -> "ertrage", "omsättning" -> "omsattning". Si un documento escribe "Ertraege"
-//   (sin diéresis, como en un teclado sin ä), es OTRA forma y necesita su propia entrada (por eso hay pares 'ertrag'/'ertraeg').
-//
-// CÓMO SE ESCRIBE UN TÉRMINO (notación propia, compilada a regex por `fuente()`):
-//   'palabra'          palabra o frase ENTERA: no puede tener letras ni dígitos pegados ni antes ni después ("kar" no encuentra "karakter").
-//   'raiz*'            raíz: nada pegado ANTES, cualquier terminación DESPUÉS ("ingreso*" = ingreso, ingresos; "výnos*" = výnosy, výnosů).
-//                      Es la forma normal para idiomas con flexión (checo, polaco, ruso, ucraniano, croata, turco, finés, griego...).
-//   '*infijo*'         en cualquier lugar, también DENTRO de otra palabra: para idiomas que pegan palabras (alemán "Personalaufwand",
-//                      noruego "Billettinntekter", neerlandés "Sponsoropbrengsten", danés "Sponsorindtægter", húngaro "árbevétel", finés
-//                      "Pääsylipputuotot"). Solo con raíces largas o muy específicas: una raíz de 3-4 letras como infijo encuentra basura.
-//   ' ' (espacio)      cualquier separador entre palabras (espacio, guion, barra, apóstrofo, coma...): "chiffre d affaires" encuentra
-//                      "chiffre d'affaires"; "kar zarar" encuentra "Kâr/Zarar".
-//   '-' (guion)        separador OPCIONAL: "sub-total" encuentra "subtotal", "sub total", "sub-total"; "gewinn- und verlust*" encuentra
-//                      "Gewinn- und Verlustrechnung" y "Gewinn und Verlust".
-//   '*' en el medio    cualquier cantidad de letras: "vykaz zisk* a ztrat*" = "výkaz zisku a ztráty" y "výkaz zisků a ztrát".
-//   { re: '...' }      regex cruda (ya escrita en texto normalizado, con la bandera `u`), solo cuando la notación no alcanza: la
-//                      exclusión de "Vertrag" en 'ertrag', o "concepto (del )?ingreso".
-//   Chino, japonés, coreano, árabe y hebreo NO usan límites de palabra aunque el término no lleve '*': el chino y el japonés no tienen
-//   espacios, el coreano pega partículas, y el árabe y el hebreo pegan prefijos al sustantivo (ال "el", و "y", ב "en", ה "el"). Se buscan
-//   en cualquier lugar.
-//
-// CÓMO AGREGAR UN IDIOMA (o una palabra que faltó en un piloto):
-//   1. Buscá el concepto en VOCABULARIO (abajo) y agregá la clave del idioma (código ISO de 2 letras; 'hr' cubre croata/bosnio/serbio en
-//      alfabeto latino y 'sr' el serbio en cirílico) con sus términos. Escribilos tal como aparecen en el documento, con acentos.
-//   2. Preferí la palabra o frase entera, o una raíz con '*' al final. Usá '*infijo*' solo para idiomas que componen palabras y con raíces
-//      de 5+ letras. Probá una raíz corta contra palabras comunes del mismo idioma antes de agregarla (ya pasó: 'resultado' en prosa hacía
-//      que cualquier nota contara como estado de resultados; 'zisk' dentro de otras palabras).
-//   3. `node tools/vocabulario.mjs "texto de prueba"` dice qué conceptos encuentra en ese texto; `node tools/vocabulario.mjs --cobertura`
-//      imprime la matriz concepto x idioma (qué idioma falta en qué concepto).
-//   4. Medí antes y después sobre el inventario (así se hizo, informe en Admin/mediciones/test-vocabulario.md): un término nuevo en
-//      RELEVANTE o en INGRESOS/GASTOS puede volver "relevantes" tablas de notas y de balance y multiplicar los rubros (una regla probada en la
-//      una versión anterior llevó Real Madrid de 32 a 253 rubros: eso es un error, no una mejora).
-//
-// QUIÉN LO USA: extract-table-rows.mjs (relevancia de una tabla y de sus filas), filas-rubro.mjs (lado, resultados, subtotales,
-// columna de notas), proponer-carga.mjs y cargar.mjs (título de estado, totales, resultado, financiero, impuestos), caja-deuda.mjs
-// (caja, deuda, títulos de balance), chequeos-gratis.mjs (TOTAL_ACTIVO / TOTAL_PASIVO); solo normalizar() / familia:
-// categorizar-claude, cola, memoria-categorias, padres-filas y respuestas-cache.
-// ============================================================================
-
-// ---------------------------------------------------------------- normalización (la ÚNICA del pipeline)
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «vocabulario.mjs».
 const ARABE_HEBREO_MARCAS = /[֑-ׇؐ-ًؚ-ٰٟۖ-ۭـ]/g;
 export function normalizar(t) {
   return String(t ?? '').toLowerCase().replace(/ς/g, 'σ')

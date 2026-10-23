@@ -20,19 +20,7 @@
 //     Sigue siendo 100% criterio de Claude (SKILL.md sección 1: primera
 //     categorización de un club/rubro sin precedente).
 //
-// INGRESO Y GASTO SE BUSCAN POR SEPARADO, NUNCA MEZCLADOS (bug real
-// encontrado probando esta tool): Boca tiene "Futbol Femenino"
-// como INGRESO (-> womens_football, 2027) y "Fútbol femenino" como GASTO
-// (-> youth_other_sports_expense, 2022/2023/2025) — mismo texto, dos rubros
-// distintos según el lado del balance. La primera versión los mezclaba en un
-// solo mapa y los marcaba como "conflicto" (categoría inconsistente), que era
-// un falso positivo: no es el MISMO rubro repetido con criterio distinto, son
-// dos rubros distintos que comparten nombre. Por default busca en los dos
-// lados y devuelve un resultado por cada uno (`--side revenue`/`--side
-// expense` para acotar a uno solo).
-//
-// Reusa el mismo patrón de carga que tools/generate-club-index.js (vm, no
-// require: estos archivos están escritos para el navegador).
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «suggest-category-precedent.mjs».
 //
 // USO:
 //   node tools/suggest-category-precedent.mjs oncecaldas "DIMAYOR" "Patrocinio"

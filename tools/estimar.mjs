@@ -21,16 +21,7 @@
 // MODELO: regresión lineal (mínimos cuadrados) del log ingreso. Con historia: log = a + b*M + c*H + d*I + tier + q. Sin historia
 // (club nuevo): log = a + b*M + tier + q.
 //
-// VALIDACIÓN CRUZADA:
-//   por año  saca UN club-año (simula un año que falta de un club que tenemos)
-//   por club saca el club ENTERO (simula un club que nunca cargamos)
-// Contra las bases: la mediana de la liga-año (M sola), el año real más cercano del propio club y el club interpolado (I solo).
-// Métricas: error mediano en % (|estimado/real - 1|), cuántos caen a ±25%, y cuántos reales caen dentro del rango del 80% (cuantiles
-// 10-90 de los residuos del ajuste de entrenamiento).
-//
-// MEDIDO (891 club-años, 827 con posición):
-//   falta un año   modelo 22% (20% entre dos reales, 26% antes o después) = interpolar a mano 22%: la regresión NO agrega nada.
-//   club nuevo     modelo 50% (sin posición 61%) contra 56% de la mediana de la liga: gana gracias a la posición, pero el error es grande.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «estimar.mjs».
 //
 // USO:
 //   node tools/estimar.mjs --medir [--sin-posicion] [--detalle | --detalle-clubes]

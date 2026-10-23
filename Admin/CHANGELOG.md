@@ -21,6 +21,7 @@ que dice `ESTADO.md` era verdad ese día.
 ## Versión 981 — Cabeceras largas de tools/: aviso y `fos acortar-cabecera` [398]
 
 - Aviso P3 `cabecera-larga-en-tools` en `audit.js` (más de 40 líneas, `CABECERA_MAX` del comparador; excepciones con motivo en `tools/cabeceras-aceptadas.json`). Se eligió 40 y no 25: es el número que pedía el cierre del punto para las más largas, y a 25 entraban 77 tools. `tools/acortar-cabecera.mjs` (`fos acortar-cabecera`): deja el principio (cortado en un renglón vacío o una raya) y el bloque USO y manda el resto, tal cual, a `Admin/NOTAS-DE-TOOLS.md`; ensayo por defecto; prueba que el código no cambió. Medido (audit, chico): el aviso nuevo; veredicto general.
+- Corrida: 27 cabeceras acortadas (la de `alta-club.mjs` de 245 a 24 líneas, `cargar` de 93 a 30, `ajustes` de 88 a 21), 1.110 líneas pasaron tal cual a `Admin/NOTAS-DE-TOOLS.md` (una sección por tool). El código sin comentarios idéntico en las 27, medido por la vía de solo comentarios; `--perdidos` da 0 (cuenta lo que quedó en las notas). El aviso `cabecera-larga-en-tools` da 0 y las cinco más largas quedan en 30 líneas o menos.
 
 ## Versión 980 — Mover un punto del TODO, limpiar-comentarios sin pisar, qué se pierde y cerrar sin ruido [396]
 

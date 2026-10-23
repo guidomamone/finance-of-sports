@@ -18,39 +18,7 @@
 //   {"tipo":"carga","clubId":"chelsea-gb","anio":2025,"entidad":"chelsea-fc-holdings","perimetro":"consolidado","cita":{…}}
 //       de qué entidad son los números de ese ejercicio. La cita es del documento fuente de ese año.
 //
-//   {"tipo":"carga-club","clubId":"lommelsk-be","entidad":"lommel-sk","perimetro":"individual","desde":2019,"hasta":2025,"cita":{…}}
-// lo mismo para un RANGO de ejercicios con UNA sola cita: cada ejercicio cargado en el sitio dentro de [desde, hasta]
-//       (hasta null = abierto) que no tenga su propia línea `carga` toma esta entidad y este perímetro. Para un club que no cambia de entidad
-//       (un club con dueño y balance individual): una línea al dar el alta en lugar de una por año, que además no se puede agregar antes de
-//       cargar el año. La cita es de un documento del club dentro del rango; una `carga` explícita del mismo año gana. Dos rangos del mismo
-//       club que se pisan son un error.
-//   {"tipo":"ingresos","entidad":"vitoria-sport-clube","anio":2022,"cierre":"2022-06-30","moneda":"EUR","total":4566468.26,
-//    "filas":[{"md":"Clubes/…/x.md","linea":1348,"texto":"Vendas e serviços prestados | 13;22 | 3 820 068,63 €","valor":3820068.63},…]}
-//       los ingresos de una entidad que NO se carga ese año, en la unidad del documento: los renglones de ingresos de su
-//       estado de resultados (o su total impreso, un solo renglón), sin la ganancia por su parte de la sociedad que se carga (en Portugal,
-//       "Ganhos imputados de subsidiárias"), que es resultado de esa sociedad y se contaría dos veces. `cierre` es su fecha de cierre, que
-//       puede no ser la del club (una asociación con año calendario). `unidad` (1000 si el documento está en miles; sin ella, 1).
-//   Cita de un documento: {"md":"Clubes/…/x.md","linea":3043,"texto":"The immediate parent company is Blueco 22 Midco Limited"}
-//   Cita externa (lo que el balance no dice, p. ej. los otros clubes del dueño): {"url":"https://…","fecha":"","texto":"…"}
-//   `que` ({es,en}) en una entidad: a qué se dedica, según el documento citado.
-//   `nota` ({es,en}) solo donde las frases fijas de la pantalla no alcanzan (p. ej. dos entidades sumadas).
-//
-// CHEQUEOS (sale con código 1 si alguno falla):
-//   - cada cita de documento: el texto está en esa línea del .md (±3 líneas, espacios normalizados) y el .md está trackeado en Clubes/;
-//   - cada cita externa: url https, fecha AAAA-MM-DD y texto;
-//   - (los ingresos del total de cada grupo salen de data/rankings/: si cambian, --check avisa que esto quedó viejo)
-//   - cada carga: el club y el año están cargados en el sitio y el documento citado es de ese club y ese año (tools/quien.mjs);
-//   - cada línea de ingresos: cada renglón está en su línea del .md y su texto trae el valor; la suma de los renglones da el total;
-//     la entidad no es la que se carga ese año;
-//   - ids únicos, relaciones y cargas que apuntan a entidades que existen, códigos de forma/rel/perímetro conocidos, sin ciclos de control.
-// AVISOS (no frenan): clubes del sitio con una línea "otra entidad" en documentos-descartados.txt y sin ninguna entidad en el registro.
-//
-// QUÉ GENERA: `data/entidades/<país>.js` (window.CLUB_ENTIDADES[clubId] = { cargas, entidades, relaciones }, solo lo que toca a ese club:
-// la cadena hacia arriba de cada entidad cargada, sus controladas y las vinculadas), `data/entidades/_grupos.js` (window.GRUPOS_INDICE =
-// [{ id, nombre, alias, clubIds, clubes }], chico y eager: lo leen el buscador de js/selector.js y la tarjeta Estructura de Finanzas, con
-// window.ENTIDADES_PAISES, los países que tienen archivo) y `data/entidades/_grupos-detalle.js` (window.GRUPOS[id] =
-// { nombre, alias, clubes:[{ clubId|null, nombre, control, pct, desde, hasta }] }). Las citas de documento se publican como
-// { md, linea } (la transcripción se publica); las externas, como { url }.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «entidades.mjs».
 //
 // USO:
 //   node tools/entidades.mjs            verifica y escribe data/entidades/

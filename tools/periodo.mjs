@@ -19,18 +19,7 @@
 //   confianza  'alta' (meses leídos explícitamente) | 'media' (palabra de período intermedio sin meses, o anual por descarte con cierre
 //              leído) | 'baja' (anual por descarte, sin cierre leído)
 //
-// CÓMO DECIDE (en este orden; solo mira las 6 primeras páginas y las líneas cortas, donde están los títulos, para no confundirse con la
-// prosa de las notas, que habla de "trimestres" o "seis meses" por cualquier motivo):
-//   0. Si el .md salió de un informe XHTML (iXBRL) y se pasa el XHTML ({ xhtml }, xhtmlHermano()): el período ETIQUETADO (periodoIxbrl), antes del texto.
-//   1. "N meses" explícito cerca de una palabra de cierre/período ("three months ended", "seis meses terminados", "üç aylık", "за 9 месяцев",
-//      "sechs Monate", "9M", "H1", "1T", "Q3"), en ~15 idiomas. Número en cifras o en palabras.
-//   2. Rango de fechas explícito ("del 1 de enero al 30 de junio de 2019", "01.01.2019 - 30.09.2019", "1 July 2018 to 31 December 2018"):
-//      los meses salen de la diferencia.
-//   2b. Rango que no empieza el día 1, único en los títulos y de menos de 12 meses: primer ejercicio corto ("09/08/2021 – 30/06/2022").
-//   3. Palabra de período intermedio SIN meses ("interim", "ara dönem", "Zwischenbericht", "delårsrapport", "полугодие", "中期"): 'intermedio'.
-//   4. Nada de lo anterior: 'anual' (lo normal en este proyecto), con el cierre = la fecha de fin de mes más citada en los títulos.
-//   Fecha de cierre, escalera: escalón 0 la más citada en los títulos; escalón 1 los encabezados de columna de las tablas
-//   (ejercicio | mismo día un año antes); compuerta: nunca más de 2 años después de hoy.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «periodo.mjs».
 //
 // USO:
 //   import { periodoDe } from './periodo.mjs';

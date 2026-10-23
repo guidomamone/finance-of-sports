@@ -12,67 +12,7 @@
 // por año es tools/cargar-lote.mjs (lo que corre `lote.mjs --cargar`), que llama a este script para cada documento. Todo lo que requiera criterio se FRENA con el motivo escrito; no se
 // inventa nada. Sin tokens de sesión y sin ninguna API: lee lo que dejaron las etapas anteriores y archivos locales.
 //
-// ----------------------------------------------------------------------------
-// QUÉ HACE, EN ORDEN (cada paso puede FRENAR; la propuesta junta TODOS los motivos, no solo el primero, para que una sesión vea de una vez
-// qué falta)
-// ----------------------------------------------------------------------------
-//  1. REGISTRO (Admin/registros/transcripciones-estado.jsonl, lo arma tools/inventario-transcripciones.mjs):
-//       - el PDF tiene que estar `listo-para-jev` (transcripto, validado y con su lista de rubros) y NO `cargado`;
-//       - `periodo.tipo` tiene que ser 'anual' y `periodo.nombreNoCoincide` falso (tools/periodo.mjs): un trimestral o un documento cuyo
-//         nombre dice otro cierre que el contenido no se carga como ejercicio (se junta con los otros períodos, `periodo.mjs --grupos`);
-//       - el `.categorias.json` tiene que estar AL DÍA con su lista de rubros y su `.jev.json` (tools/huellas.mjs): si la lista cambió
-//         después de categorizar, las categorías son de otra lista.
-//  2. CLUB Y AÑO: el club sale de tools/carpetas-clubes.mjs (la única regla del proyecto) y tiene que existir; el año, del mismo análisis
-//     que usa el alta (`analizar()` de tools/alta-club.mjs: nombre del archivo confirmado por las fechas de cierre del contenido) y de
-//     `quien.mjs --quien` (el que usa el registro): si no coinciden, frena. Si el club ya tiene ese año en su fiscalYearMeta, frena.
-//  3. FILAS Y MONTOS: las de la verificación (Generados/.../<doc>.verificacion.json, etapa 6), con el signo y el lado que decidió
-//     verificar.mjs. Había además una selección por palabras (proponer-carga.mjs, archivada).
-//     Todo en MILLONES de moneda nativa (convención del sitio, club-data-mapping/referencia/fx.md).
-//  4. CATEGORÍA DE CADA FILA: la del `.categorias.json` del pipeline (escalón 0 precedente del club, 1 Jev >= 0,90, 2 Claude >= 0,80). Si
-//     la fila no está en esa lista (antes la etapa 3 del pipeline y la selección de filas de acá NO elegían las mismas filas:
-//     Admin/mediciones/test-cargar.md 4.1; desde la 321 la etapa 3 prepara exactamente esta selección, así que esto pasa solo con listas viejas),
-//     se prueba el precedente del mismo club, exacto o por familia de etiquetas (precedenteFamilia(), gratis). Lo que queda sin categoría o con confianza baja
-//     NO se carga; si eso es más del --max-sin-categoria (default 5%) del dinero de su lado, frena.
-//       - `no_es_rubro` no se carga como línea. Los resultados financieros (intereses, diferencias de cambio, participaciones) y el impuesto
-//         a las ganancias NUNCA son una línea (club-data-mapping §2): van a `netInterest` / `tax` del fiscalYearMeta.
-//       - Una categoría de un lado en una fila que la estructura del documento pone del otro lado se marca `ladoContradictorio` (aviso).
-//  5. SIGNOS: el sitio guarda ingresos en positivo y gastos en NEGATIVO (computeYearGeneric() suma todo). Si el documento imprime los
-//     gastos en positivo (la mayoría de sus filas de gasto sin signo), se invierten; si ya los imprime negativos, quedan como están (así
-//     una reversión impresa en positivo dentro de los gastos queda positiva).
-//  6. TOTALES Y TIE-OUT (club-data-mapping §6, "precisión antes que velocidad"): se buscan en el documento (tablas preparadas de
-//     proponer-carga, año del ejercicio) un total impreso igual a la suma de las líneas de ingresos, otro igual a la de gastos (sin
-//     `exceptional_items`: es lo que compara audit.js, |expenses + nonCash|) y el resultado del ejercicio igual a ingresos + gastos +
-//     netInterest + tax. Un total que solo cierra por redondeo no frena: se agrega la línea "Diferencia de redondeo"
-//     por la diferencia (other_income / other_expenses, ver L852) y el aviso lo dice. Sin total de ingresos que cierre, frena. Gastos o resultado impresos que no
-//     cierran, frena; que no se encuentran, quedan en null con aviso (el sitio acepta un club-año con solo el total de ingresos, decisión
-//     de Guido).
-//  7. TIPO DE CAMBIO, LIGA, REPORTTYPE, SOURCEID: los mismos campos que calcula el alta (`analizar()` de tools/alta-club.mjs): fx declarado
-//     por el documento (regla #0) -> `fx` + `fxSource:'document_close'`; si no, `fxRef` a FX_CLOSE (y si la cotización sale de la serie
-//     local de tools/fx-reference/, --escribir la agrega a FX_CLOSE); sin cotización, frena. La liga del año con la regla "categoría al
-//     cierre" de proponerLiga(); sin dato, la fila se escribe en `null` (= nadie lo verificó, P3). Una `pregunta` del alta sobre el año, el
-//     cierre, la moneda, el tipo de documento o el fx FRENA. El perímetro (individual/consolidado) se HEREDA de los años ya cargados del
-//     club cuando el documento es del mismo tipo (ver perimetroHeredado()); si no se puede, frena.
-//  8. fiscalYearMeta: currency, fx/fxSource o fxRef, sourceId, reportType, gestionId null (club-data-mapping §7: no se inventa una
-//     gestión), profitOnPlayerSales 0 y assetSales 0 (van como líneas si el documento las trae en el estado), netInterest y tax (de las
-//     filas del paso 4), grossDebt y cash en null (los completa después `caja-deuda.mjs --club`: "sin dato no es cero"), y los tres official*.
-//  9. `sources`: la entrada nueva, SIN `note` ni publicNote (la nota interna, con la ruta del .md que cita carpetas-clubes.mjs, va a
-//     "## Fuentes" de Admin/carga-clubes/<club>.md; audit.js checkFuentesPublicas: las salvedades públicas las deriva sourceCaveats() de los campos). Y una línea en
-//     Admin/sourcing/<País>/<Club>.md si ese archivo existe.
-//
-// --escribir (solo si no quedó NINGÚN motivo para frenar, y si el ejercicio tiene estadio y sponsor: compuertaContexto()): escribe el año en el JSON del club (data/<país>/<club>.json: ingresos, gastos, meta y la fuente) y regenera su data/<país>/<club>-data.js,
-// la fila de liga en data/club-leagues/<iso2>.js, la cotización de mercado nueva en FX_CLOSE si hace falta, la línea de fuentes/, sube
-// ASSET_V (la constante Y cada `?v=` literal de index.html, salvo que ya esté subido respecto de HEAD), corre los 4 generadores y
-// `node tools/audit.js --quiet`. Si la auditoría da algún P0/P1, o cualquier paso falla, RESTAURA cada archivo tocado y borra lo creado
-// (mismo mecanismo que alta-club.mjs). Este script solo NO commitea (el commit por año lo hace tools/cargar-lote.mjs). No toca `.claude/skills/`, `Admin/TODO.md` ni `CHANGELOG.md`.
-//
-// ----------------------------------------------------------------------------
-// MEDIDO (informe completo en Admin/mediciones/test-cargar.md)
-// ----------------------------------------------------------------------------
-// Backtest de 18 ejercicios ya cargados (8 países, año borrado en un worktree y reconstruido con las etapas 3-5 reales): 1 carga (Alianza
-// Lima 2023, idéntico a producción, audit.js 0 P0/P1 al escribir) y 17 frenan, TODOS con algo mal en la propuesta o un dato faltante: el
-// tie-out no dejó pasar ningún número falso. Lo que más frena viene de etapas anteriores: la lista de rubros de la etapa 3 no es la misma
-// selección que usa la carga, la escala se elige por tabla, entran tablas de balance / bienes de uso / presupuesto, y la categorización
-// deja < 0,80 filas grandes y genéricas. Con --umbral-claude 0.7, PSV 2019-20 (año nuevo) carga y cierra exacto contra su resultado.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «cargar.mjs».
 //
 // ----------------------------------------------------------------------------
 // USO
@@ -86,10 +26,6 @@
 //   node tools/cargar.mjs --lista Admin/mi-lista.txt      una línea por documento (carga / frena y por qué)
 //   node tools/cargar.mjs --lista <x> --salida <x.jsonl>  además deja la propuesta completa de cada uno
 //   node tools/cargar.mjs --lista <x> --comparar <raíz de otro checkout>
-//        BACKTEST: compara cada propuesta contra el MISMO ejercicio cargado en otro checkout (producción). Se corre en un worktree donde se
-//        BORRÓ ese año del data file (si no, frena por "ya cargado") y se rehicieron las etapas 3-5 del pipeline sobre esos documentos.
-//        Mide totales (ingresos / gastos / resultado), % del dinero en la categoría correcta, fx y liga. Ver Admin/mediciones/test-cargar.md.
-//   Extras: --max-sin-categoria 0.05, --umbral-claude 0.8, --json (con --lista: JSON en vez de una línea)
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, appendFileSync } from 'node:fs';

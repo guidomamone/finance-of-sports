@@ -19,46 +19,7 @@
 //       ocupa una marca de página como cualquier contenido real, así que tampoco
 //       lo agarra un conteo de páginas.
 //
-// QUÉ CHEQUEA, por cada .md bajo Clubes/ que tenga al menos una marca de página:
-//   1. Cobertura de marcas de página contra la cantidad real de páginas del PDF
-//      hermano (mismo nombre base), vía `pdfinfo`: páginas faltantes, marcas
-//      duplicadas, marcas "colapsadas" (`--- pág. 15-17 ---`, un rango en vez de
-//      una marca por página). SOLO para archivos cuyas marcas usan el formato
-//      simple/estándar (`--- pág. N ---` o `--- pág. N-M ---`) — un archivo con
-//      marcas anotadas a mano (`--- pág. 12: Anexo III — Detalle de gastos ---`,
-//      `--- pág. N de N ---`, "pág. impresa") se marca como formato no estándar y
-//      NO se le exige cobertura estricta, para no reventar de falsos positivos
-//      sobre convenciones ad-hoc ya usadas en el proyecto.
-//   2. Placeholders de contenido: una línea ENTERA entre corchetes, con
-//      vocabulario en inglés de tabla/sección/resumen, en un documento que por lo
-//      demás está en español/portugués/otro idioma. El inglés mismo es la señal:
-//      nadie transcribe un balance colombiano describiéndolo en inglés, así que
-//      una línea así es casi seguro un resumen del modelo, no contenido real. Se
-//      excluyen a propósito los placeholders CORTOS ya usados como convención
-//      legítima en el proyecto (`[LOGO]`, `[Firma]`, `[encabezado]`, notas de
-//      procedencia tipo `[OCR, Tesseract ...]`, `[TRANSCRIPCION VERIFICADA...]`).
-//   3. Páginas con muy poco texto comparadas con la mediana del propio documento
-//      (señal DÉBIL, para revisión humana — una carátula o una página en blanco
-//      real también da esto, no es un error por sí solo).
-//
-// QUÉ NO HACE, A PROPÓSITO (mismo espíritu que tools/audit.js): no dice si un
-// NÚMERO está bien contra el PDF — esto es fidelidad de la TRANSCRIPCIÓN (¿está
-// todo el texto?), no verificación de datos (eso es club-data-mapping, al
-// onboardear). No reemplaza la verificación humana obligatoria de un documento
-// marcado como escaneado (club-data-mapping/referencia/leer-pdf.md, "Documento transcripto con Mistral OCR").
-//
-// LIMITACIÓN REAL DEL CHEQUEO DE COBERTURA (encontrada verificando este mismo
-// script contra Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.md).
-// El chequeo asume que la marca "--- pág. N ---" es la página FÍSICA
-// N del PDF (posición N en el archivo), pero no siempre es así — ese archivo
-// puntual arrancó su numeración de marcas más adelante que la página física 1
-// (offset constante de +4, probablemente por páginas de portada/legales al
-// principio que no recibieron marca propia), así que un hueco DENTRO de la
-// numeración de marcas (ej. de la 13 a la 18) puede no corresponder a ningún
-// contenido real faltante — puede ser simplemente que las marcas más chicas
-// numeran páginas físicas más grandes de lo que su propio número sugiere. Por
-// eso `paginas-faltantes` es P2 (revisar), no P1 (confiar y bloquear): es
-// evidencia de que algo no cuadra, no un veredicto de que falta contenido.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «check-transcripcion-fidelidad.js».
 //
 // USO:
 //   node tools/check-transcripcion-fidelidad.js               todo Clubes/

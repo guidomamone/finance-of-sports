@@ -22,17 +22,7 @@
 //   continuaDe  el id del bloque anterior si este parece su continuación en la página siguiente (tabla sin fila separadora "| --- |" y con la
 //               misma cantidad de columnas, inmediatamente después de otra tabla de la página anterior o la misma)
 //
-// CÓMO PUEDE FALLAR (y dónde se ataja):
-//   - Mistral partió una tabla en dos por un membrete o una imagen en el medio: quedan dos bloques; el segundo se marca `continuaDe` si no
-//     repite el encabezado. Si lo repite, son dos bloques y la IA de localizar ve que tienen el mismo encabezado.
-//   - Dos tablas distintas pegadas sin línea en el medio: quedan como una. La IA lo ve en `primeras` / `ultimas` y puede pedir ver el bloque
-//     entero; la etapa 6 (verificar) lo frena si mezcla cosas (no cierra).
-//   - Un estado transcripto como texto con los importes en otra línea que la etiqueta: no forma bloque (cada línea tiene que tener su importe).
-//     Lo detecta localizar ("no encuentro el estado") -> cola humana con la página para mirar.
-//   - Cifras sin separador (menos de 1.000, o años): se cuentan como cifras si tienen 4+ dígitos; un "25" suelto no. Pero una línea que
-//     termina en 2+ números chicos ("Receitas financeiras 23 77 742") sí es fila.
-//   - Un hueco de más de 3 líneas, o con una línea de texto que trae cifras, corta el bloque: el resto queda como otro bloque (marcado
-//     `continuaDe` si está a 3 líneas o menos) o, si tiene menos de 3 filas, en ninguno. La etapa 6 lo frena (no cierra con el resultado).
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «indice-bloques.mjs».
 //
 // USO:
 //   node tools/indice-bloques.mjs "<pdf o md>"            imprime el índice (lo que vería la IA)

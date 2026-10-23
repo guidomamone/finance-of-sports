@@ -14,15 +14,7 @@
 // para sacar {rawLabel, values} de cada transcripción, empareja por
 // rawLabel normalizado, y compara los valores numéricos.
 //
-// LO QUE CUENTA COMO DISCREPANCIA (exit code 1): un rawLabel que aparece UNA
-// SOLA VEZ en cada transcripción (sin ambigüedad de cuál-con-cuál) con
-// valores numéricos distintos. Un rawLabel que aparece en una transcripción
-// y no en la otra, o que se repite dentro de la MISMA transcripción (ej.
-// "Total", que aparece en decenas de Notas), queda listado como informativo
-// pero NO bloquea -- exigir estructura idéntica entre 2 motores de OCR
-// distintos daría falsos positivos en casi cualquier documento real, y el
-// caso que de verdad importa (un rubro real, mismo texto, número distinto)
-// es justo el que SÍ se puede comparar sin ambigüedad.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «compare-transcripts.mjs».
 //
 // USO:
 //   node tools/compare-transcripts.mjs archivo.md archivo.gemini-check.md
@@ -36,14 +28,6 @@
 // script sabe si el match es porque coincidieron solas o porque Claude
 // arregló algo?"): el criterio de "listo" es SIEMPRE correr esto de nuevo y
 // que dé match -- nunca un flag guardado aparte, que se puede desincronizar
-// del contenido real. Cuando Claude corrige la celda que estaba mal (contra
-// el PDF, nunca a ciegas) en el .md CANÓNICO, deja al principio del archivo
-// una línea "DISCREPANCIA MISTRAL/GEMINI RESUELTA (ver tools/compare-
-// transcripts.mjs), <fecha>, <qué cambió y por qué>" -- onboard.mjs (etapas viejas)
-// busca ese texto y, si está, lo dice al confirmar el match. Es una
-// convención para que cualquiera que lea el .md sepa que ese match no es
-// casualidad de que las 2 IAs acertaron solas, no un mecanismo que bloquee
-// nada si falta.
 // ============================================================================
 
 import { execFileSync } from 'node:child_process';

@@ -11,24 +11,7 @@
 // que manda plata al catch-all sin cambiar ningún total, ni a la categoría que
 // el motor directamente no suma. Todo eso cierra los tie-outs igual.
 //
-// Esta auditoría es el complemento: busca lo que un total correcto no delata, y
-// lo que solo se ve mirando los 41 clubes JUNTOS (este club factura 300 veces lo
-// que sus pares de la misma liga; estos 5 no tienen ningún check encima).
-//
-// LA REGLA HEREDADA DE `auditAll()`, QUE ACÁ SE RESPETA: cualquier verificación
-// numérica pasa por `computeYearGeneric()`, el motor real. NUNCA se reimplementa
-// la cascada del resultado (se probó una vez, y una fórmula simplificada tiró 12
-// falsos positivos por no contemplar nonCash/profitOnPlayerSales/assetSales/tax).
-// Por eso este script CARGA `js/finanzas-calc.js` en un contexto de `vm` y llama
-// a las funciones de verdad, en vez de rehacer las cuentas por afuera.
-//
-// QUÉ NO HACE, A PROPÓSITO:
-//   - No dice si un número está bien contra el PDF. Eso solo lo puede hacer quien
-//     tiene el documento delante, al onboardear (ver el skill
-//     `Admin/PANTALLA.md`, ex §8). Esto audita CONSISTENCIA, no fuente.
-//   - No toca nada. Solo lee y reporta.
-//   - No reemplaza a `auditAll()` en el navegador: los chequeos de consola,
-//     listeners y Chart.js solo se ven con el sitio corriendo.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «audit.js».
 //
 // USO:
 //   node tools/audit.js              informe completo, agrupado por severidad
@@ -42,14 +25,6 @@
 // la receita que parece un signo invertido y no lo es). Cada entrada es
 // `{code, match, motivo}` — `match` es un pedazo del texto del hallazgo — y el
 // informe dice cuántos se silenciaron. REGLA: solo se agrega una entrada después
-// de MIRAR la fuente, nunca para bajar el número de hallazgos. Silenciar algo sin
-// verificarlo es exactamente el atajo que este proyecto no se puede permitir.
-//
-// SEVERIDADES:
-//   P0  un número publicado está mal, o puede estarlo. Se arregla antes que nada.
-//   P1  algo roto o ausente que el visitante ve (dato en cero, conversión que falla).
-//   P2  riesgo: no está mal hoy, pero se va a romper o no escala.
-//   P3  limpieza / informativo.
 // ============================================================================
 
 const fs = require('fs');

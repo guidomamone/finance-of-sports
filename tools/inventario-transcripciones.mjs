@@ -20,21 +20,7 @@
 //                                                Si el .md cambia después, el hash ya no coincide y el
 //                                                estado vuelve a "sin-verificar" solo.
 //
-// ESTADOS de validación:
-//   cargado                 el ejercicio ya está en el sitio (verificado a mano en su momento). No se toca.
-//   listo                   validado: listo para las tools de onboarding.
-//   revisar                 la validación encontró algo (cifra mal leída, transcripción incompleta,
-//                           dos versiones que no coinciden): hay que resolverlo antes de onboardear.
-//   pendiente-segunda-voz   es un escaneo (no hay texto en el PDF contra qué comparar): necesita una
-//                           segunda transcripción independiente (Gemini o Claude por API).
-//   sin-md                  el PDF todavía no tiene ninguna transcripción (tools/pipeline.mjs la hace).
-//   reintentar              la última corrida de tools/resolver-inventario.mjs no pudo terminar por un
-//                           problema de crédito / límite / red (NO por el documento): se retoma sola.
-//   sin-verificar           todavía no se corrió ninguna validación.
-//
-// MÉTODOS de validación (campo "method" de cada verificación):
-//   numeros-vs-texto-pdf    tools/verify-numbers.mjs: los números del .md contra el texto interno del PDF.
-//   comparacion:<voz>       tools/compare-transcripts.mjs contra otra transcripción independiente.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «inventario-transcripciones.mjs».
 //
 // USO:
 //   node tools/inventario-transcripciones.mjs                     # regenera el registro y muestra el resumen
@@ -48,12 +34,6 @@
 //
 // ALCANCE. Recalcular el registro entero tarda ~1-2 min (12.184 PDFs; ~70 s
 // son la pregunta de qué está cargado, hoy `quien.mjs --pendientes`) y pipeline.mjs y lote.mjs lo disparaban varias veces por corrida
-// aunque la corrida fuera de 62 PDFs (lote 56, Brasil). Con --solo <lista|carpeta> se recalculan SOLO esos PDFs (también la pregunta
-// a quien.mjs, acotada a sus carpetas) y las demás líneas del registro se copian tal cual de la versión anterior; los duplicados se
-// siguen buscando contra el registro entero (la huella de cada PDF ya está guardada). La escalera: escalón 0 = --solo (lo usan
-// pipeline.mjs --lista/--dir y lote.mjs con su lista); escalón 1 = el recálculo completo (estado.mjs --actualizar, o sin alcance).
-// Compuerta medida: las líneas de los PDFs del alcance salen idénticas a las del recálculo completo, y las demás, idénticas a las
-// anteriores. Un PDF borrado del disco fuera del alcance sigue en el registro hasta el próximo recálculo completo.
 // ============================================================================
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync } from 'node:fs';

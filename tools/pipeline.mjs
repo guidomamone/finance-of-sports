@@ -9,27 +9,7 @@
 // todavía no tienen un .md validado —sin .md, o con uno que nadie confirmó— y los lleva hasta "listo". De ahí en adelante sigue el lote
 // (tools/lote.mjs: localizar, validar bloques, extraer, verificar, categorizar, proponer la carga) y tools/cargar.mjs escribe el sitio.
 //
-//   ¿DE QUÉ CLUB ES?  tools/carpetas-clubes.mjs (vía inventario-transcripciones.mjs): con eso el registro sabe qué ejercicio ya está cargado.
-//   TRANSCRIBIR       Sin .md -> Mistral OCR transcribe el documento ENTERO (queda como documentación, decisión de Guido). Un .md viejo SIN
-//                     TABLAS se rehace con Mistral una sola vez (`sin-tablas`, control "sin tablas" más abajo). PDFs dañados o con imágenes
-//                     gigantes: tools/reparar-pdf.mjs.
-//   VALIDAR           (tools/resolver-inventario.mjs) SOLO páginas con números que los chequeos gratis no respaldan:
-//                       a. tools/paginas-con-numeros.mjs descarta la prosa (58% de páginas elegidas, 99,7% de los importes cubiertos);
-//                       b. tools/chequeos-gratis.mjs valida gratis cada página con el texto del PDF, las sumas de sus tablas, la columna
-//                          del año anterior ya cargada y el balance (163/163 errores reales siguen yendo a pagar; ~49% de ahorro);
-//                       c. lo que queda `dudosa`: PDF con texto -> Claude solo esas páginas; escaneo -> Gemini (página por página si
-//                          rechaza por RECITATION) y Claude como desempate, en lotes de hasta 8 páginas; voto entre voces, cuarta voz,
-//                          aritmética, y "reserva" como último recurso.
-//                     Fallos por crédito/límite: espera y reintenta el mismo motor; tras 3 seguidos corta la corrida (`reintentar`).
-//   MARCAR            registro Admin/registros/transcripciones-estado.jsonl (se regenera solo); historial en Admin/registros/transcripciones-verificaciones.jsonl.
-// (Antes hacía además la preparación para Jev y la categorización con Jev y Claude: ver "PROCESO VIEJO, RETIRADO".)
-//
-// COSTO medido (piloto C, 10 PDFs): ~US$ 0,20 por documento; PDF con texto US$ 0,08-0,18 (casi todo Mistral); escaneo US$ 0,13-0,21;
-// un escaneo malo (Real Madrid 2005) ~US$ 1. `node tools/gasto.mjs --lista <lista>` da el costo real de una corrida.
-//
-// NO toca los ejercicios que ya están cargados en el sitio. Se puede cortar con Control+C (en Mac, la tecla control, no command) y volver
-// a correr: sigue donde quedó. Cerrar la pestaña de la terminal NO corta los procesos.
-// Toma una MUESTRA repartida por tamaño (--limit) y deja para el final los documentos de más de 100 páginas (--max-paginas).
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «pipeline.mjs».
 //
 // USO:
 //   node tools/pipeline.mjs                          # ENSAYO: qué haría y cuánto costaría (no llama a ninguna API)

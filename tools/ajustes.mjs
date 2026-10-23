@@ -8,75 +8,7 @@
 // por la fuerza" terminó escrita en el HANDOFF, que ningún script lee. Guido: "no puede ir en handoff eso. debería ir en el script".
 // Un ajuste está atado a cosas ESTABLES: el documento (pdf) y el campo.
 //
-// EN CADA ESCALERA, EL AJUSTE ES EL ESCALÓN 0: si hay un ajuste para ese documento y ese campo, gana siempre. Queda escrito en el
-// .verificacion.json ("ajustes") y cargar.mjs lo copia como comentario en la meta del año.
-//
-// CAMPOS (cada uno existe por un caso real; un campo nuevo se agrega acá y en el script que lo aplica):
-//   resultado-final   valor: el resultado del ejercicio TAL CUAL está impreso (en la escala del documento). verificar.mjs lo toma como
-//                     resultado final y DEDUCE el impuesto (resultado antes de impuestos según las filas − final). Casos: Fortaleza CEIF
-//                     2023 (1.021.768: el impuesto contable no es el "a cargo" de la conciliación) y 2017 (1.347.094: el documento no
-//                     imprime el impuesto en ningún lado).
-//                     Con --linea (la del .md donde está impreso), también es la PISTA para localizar: un documento que quedó
-//                     como fuente y tiene este ajuste repite una vez "las notas hacen de estado" con ese dato (lote.mjs --reintentar).
-//                     Casos: Fortaleza 2018 ("Resultado Año 2018 (639,077)", L542) y 2019 ("Utilidad Contable (52,122)", L455).
-//   filas-a-mano sin valor: el .ubicacion.json y el .filas.json de ese documento se armaron o se corrigieron a mano. Escalón 0 de tools/localizar.mjs y de
-//                     tools/extraer.mjs: con --rehacer (y con lote.mjs --rehacer) NO se vuelven a pedir a la IA ni se pisan; quedan como están. Para rehacerlos de verdad hay
-//                     que quitar este ajuste a conciencia (se agrega otro con --valor no). Casos: Torino 2020 y 2025, Inter 2017-18, Lazio 2021, Salernitana 2022.
-//   ixbrl-omitir sin valor, con --motivo: apaga para ese documento el freno o el aviso (consolidado) de cargar.mjs que compara el resultado cargado con el
-//                     `ProfitLoss` etiquetado en su XHTML (tools/ixbrl-resultado.mjs). Para un hecho que no es el resultado del ejercicio (perímetro distinto, minoritarios).
-//   covid-omitir      sin valor, con --motivo: el documento cierra dentro de la ventana COVID pero su taquilla o entradas en 0
-//                     NO son por la pandemia (un club que jugó con público): cargar.mjs vuelve a pedir el reintento como en cualquier otro año.
-//   no-recargar sin valor: lo publicado de ese año es mejor que lo que da una corrida nueva (más desglose, de notas que el script no abre)
-//                     y no se reproduce con ajustes razonables. tools/cargar.mjs frena (también con --reemplazar). Casos: Lazio 2012-13, Roma 2021.
-//   estado valor = los ids de los bloques del estado de resultados de ese documento, separados por coma ("b107,b108,b109"): escalón 0 de tools/localizar.mjs,
-//                     que lo pone en `estado` del .ubicacion.json aunque la IA elija otros (una corrida con --rehacer no lo deshace). Los ids son los del .md actual: si el .md
-//                     cambia, se revisan. Caso: AS Roma 2005, la IA tomó b85 (la tabla de la controlada Roma International Football Service, en euros) y el estado del
-//                     consolidado es b107-b112 (pág. 136-137).
-//   sin-dudas         sin valor: las dudas de localizar/extraer de ese documento quedan como nota y no van a la cola. Caso: Fortaleza
-//                     CEIF 2023 ("que nunca más vuelva como problema o duda").
-//   cero-real valor = una categoría del aviso "categorías en 0" ("Estadio", "Televisión", "Salarios del plantel"...):
-//                     Guido dice que ese 0 es real; escalón 0 del aviso de cargar.mjs (no frena, no pide reintento). Varias por documento.
-//                     Caso: Fortaleza CEIF 2021, Estadio en 0 (boletería "-" en 2021, L1141; en 2020 fue 191.189).
-//   desglose etiqueta = el renglón; valor = la diferencia TAL CUAL impresa entre el renglón y la suma de su detalle (un
-//                     error del documento); --categoria opcional para la fila de la diferencia. verificar.mjs abre el desglose con una fila
-//                     más, "Diferencia en el documento", si la diferencia es exactamente esa. Caso: Fortaleza 2022 "Patrocinios (1)", 54.000.
-//   suma-con sobre el PDF de una entidad: el ejercicio suma el de otra entidad del mismo año (Vålerenga: el AS y el Elite no consolidan). valor = el PDF
-//                     de la otra entidad; --etiqueta = el renglón de gasto propio del que se resta la transferencia; --etiqueta-otra = el ingreso espejo del otro documento
-//                     (se saca entero); --evidencia = las dos líneas. cargar.mjs suma los dos documentos sin contar dos veces la transferencia (tools/suma-entidades.mjs).
-//   anio valor: el año del ejercicio cuando el NOMBRE DEL ARCHIVO lo dice mal: escalón 0 del año en
-//                     tools/alta-club.mjs (analizar, que también usa cargar.mjs) y en tools/quien.mjs --quien. Caso: Goiás,
-//                     "demonstracoes-contabeis-2017-2016.pdf" es el ejercicio 2017 (con 2016 de comparativo) y el nombre daba 2016.
-//   categoria etiqueta = la fila tal cual; valor = una categoría de data/category-map.js. Escalón 0 de la escalera de
-//                     categorías de cargar.mjs: gana sobre todo, también sobre la COMPUERTA DEL LADO. Si la categoría es del otro lado, la
-//                     fila se muda de lado sin cambiar su efecto en el resultado (un ingreso de 140 pasa a gasto de +140). Caso: Goiás 2023,
-//                     "Outras Receitas e Despesas" 140.214.785 (venta del 20% de la Liga Forte União) como exceptional_items.
-//   incluye valor = una categoría que da 0 porque el documento la junta con otra en una línea; --categoria = donde
-//                     está; --posible si no está confirmado. cargar.mjs lo escribe en fiscalYearMeta.incluidoEn (el sitio pinta "Incluido en"
-//                     o "Posiblemente incluido en") y no lo trata como un 0 a revisar. Casos: Bahia, Vitória, América Mineiro (member_dues).
-//   moneda valor = el código ISO de la moneda LEGADO del país (ITL, DEM, ESP...) en la que está un ejercicio anterior a
-//                     la entrada del euro: Guido decide que se carga en esa moneda y no convertido. Escalón 0 de la moneda en tools/alta-club.mjs
-//                     (la pregunta "¿se carga en ITL o se convierte a EUR?" queda respondida) y autoriza el cambio de moneda del club en la
-//                     compuerta 'moneda' de cargar.mjs. Hace falta además el tipo de cambio de ese cierre en FX_CLOSE (data/currency-map.js).
-//                     Caso: Lazio 1998-99, 1999-00 y 2000-01 en liras.
-//   escala valor = unidades | miles | millones: la escala de las cifras de ESE año en el documento, tal cual la imprime.
-//                     Escalón 0 de la escala del año en tools/caja-deuda.mjs (escalaDe), antes de factorPorIngresos; con --anio si el PDF
-//                     alimenta dos años. Casos: RB Leipzig 2024 (comparativo "30.06.2024 TEUR"; el 2025 del mismo PDF está en EUR), RB Leipzig
-//                     2023 y HSV 2024 (transcripciones viejas sin tablas: factorPorIngresos no encuentra escala).
-//   fx el tipo de cambio de cierre, en moneda por 1 USD: escalón 0 de la escalera del tipo de cambio
-//                     (tools/alta-club.mjs proponerFx, que también usa cargar.mjs). Casos: AC Milan 2021-22 y 2022-23.
-//   fila una fila del resultado que la extracción no trajo, o trajo mal: etiqueta, lado (ingreso, gasto,
-//                     financiero, impuesto), valor TAL CUAL impreso (con su signo: un costo financiero en negativo), línea del .md y,
-//                     opcional, `reemplaza` = la etiqueta de la fila extraída que sale (TODAS las que se llaman así), o `reemplazaLinea` =
-//                     la línea del .md de la ÚNICA fila que sale (en el formato italiano "altri" es a la vez ingreso, financiero
-//                     + y financiero −; Bologna 2020-21, L833, L871 y L875). Varias por documento (la clave incluye la etiqueta).
-//                     Del lado financiero, `--destino profit_on_player_sales` la manda a financial.profit_on_player_sales en vez de net_interest
-//                     (Auditora 5): «b) Resultados por enajenaciones y otras» del PGC español (Girona 2021-23: +8,50 / −0,297 / −0,76 M), con
-//                     `--reemplaza` para sacar la línea de ingreso o gasto que la extracción hizo con ella.
-//                     Casos: Fortaleza CEIF 2017, nota 23 "Otros gastos" 41.780 perdida en un salto de página, y "Total Otros Ingresos"
-//                     3.581 que en el PDF rotula los costos financieros (etiquetas cruzadas en el propio documento).
-//
-// ARCHIVO: Admin/registros/ajustes-manuales.jsonl, una línea por ajuste: { pdf, campo, valor, motivo, evidencia, autor, fecha }. Si hay dos para el
-// mismo pdf y campo (y etiqueta, en `fila`), gana el último (para cambiar uno se agrega otro; el historial queda).
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «ajustes.mjs».
 //
 // USO:
 //   node tools/ajustes.mjs                                     lista todos (club, año, campo, valor, motivo)

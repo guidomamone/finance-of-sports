@@ -22,33 +22,7 @@
 // `--dudas` de alta-club.mjs lista qué páginas se revisaron, para que Guido decida). Este módulo NO
 // escribe en dudas-por-club.md.
 //
-// QUÉ PREGUNTAS SE MANDAN (tipo -> de qué campos de alta-club.mjs sale):
-//   perimetro   <- perimetro                     ¿individual o consolidado? (con el criterio del proyecto)
-//   reportType  <- reportType                    ¿estado contable anual, presupuesto, intermedio, no cargable?
-//   cierre      <- anio, cierre, fiscalYearStart ¿fecha de cierre del ejercicio que presenta el documento?
-//   moneda      <- currency, reportingCurrency   ¿en qué moneda están los importes?
-//   fx          <- fx                            ¿qué tipo de cambio de CIERRE a USD declara el documento?
-//   sport       <- sport                         ¿de qué deporte es el club?
-//   name        <- name (cuando quedó `pendiente`, típico en griego/cirílico/coreano)   nombre legal
-// Y qué NO se manda, a propósito: id / country (Escocia, renombrar un id heredado), liga (no está en
-// el documento), brandColor. Son decisiones de producto o datos externos, no lectura.
-// Hay además respuestas que resuelven el HECHO pero no la pregunta, porque la pregunta tiene una parte
-// de producto: un deporte que no es fútbol (¿entra al sitio?) o una moneda anterior al euro (¿se
-// convierte?) quedan abiertas aunque Claude conteste bien; se guarda igual lo que dijo, con su cita.
-//
-// FRAGMENTOS: el `.md` se parte por las marcas de página ("--- pág. N ---", o "## Página N" en las
-// transcripciones viejas). Si entero pesa <= 45.000 caracteres va entero; si no, van las 3 primeras
-// páginas (portada, índice, nombre legal) + para cada pregunta las 4 páginas con más palabras clave
-// de su tema (consolidado/individual, fechas de fin de mes, tipo de cambio, dictamen...), hasta
-// ~45.000 caracteres (~12.000 tokens en alfabeto latino). Cada página va con su marca, así Claude
-// puede citarla.
-//
-// MODELO: claude-opus-5-5 (default de la skill claude-api), effort `low` (es lectura, no razonamiento
-// largo), salida JSON estricta (`output_config.format` json_schema), system prompt cacheado,
-// `fallbacks: "default"`. HTTP sin SDK, como categorizar-claude.mjs. Costo registrado en
-// Admin/registros/api/claude-api.jsonl con `tarea: "alta-club"` (sin campo `md`, igual que "categorizar":
-// inventario-transcripciones.mjs cuenta como "pagado" cualquier línea con `md`).
-// Números medidos: ver Admin/mediciones/test-altas-claude.md.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «alta-claude.mjs».
 // ============================================================================
 
 import { readFileSync, appendFileSync } from 'node:fs';

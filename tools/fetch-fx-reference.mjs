@@ -11,59 +11,7 @@
 // Almagro, 6 búsquedas para 6 cierres de 31/10 que la serie histórica completa
 // ya tiene todas juntas en un solo lugar.
 //
-// MONEDAS SOPORTADAS HOY (agregar otra es sumarle una entrada a CURRENCIES con
-// su propia fuente, no hay una API única que sirva para todos los países; el
-// detalle de qué tasa exacta es cada una está en el comentario de su entrada):
-//   - ARS: API pública del BCRA (Comunicación A 3500 / "dólar mayorista").
-//   - BRL: API pública del BCB, PTAX de cierre (venda).
-//   - COP: API pública de datos.gov.co (dataset de la TRM, Banco de la
-//     República / Superintendencia Financiera).
-//   - NOK: Norges Bank, tipo medio (API SDMX pública).
-//   - CZK: Česká národní banka, fixing diario (year.txt).
-//   - CHF: Reserva Federal H.10 vía FRED (el SNB no publica serie
-//     diaria descargable).
-//   - TRY: TCMB, döviz alış, un XML por día (EVDS pide key).
-//   - RUB: Banco de Rusia, tipo oficial (XML_dynamic).
-//   - UAH: Banco Nacional de Ucrania, tipo oficial.
-//   - KRW: Reserva Federal H.10 vía FRED (ECOS del Banco de Corea
-//     pide key).
-//   - CLP: dólar observado (Banco Central de Chile) tal como lo publica
-//     el SII, el fisco chileno; la API del BCCh y la de la CMF piden
-//     usuario/key.
-//   - EUR: Banco Central Europeo, tipo de referencia diario EUR/USD
-//     (publicado USD por EUR, se invierte a EUR por USD).
-//   - DKK: Danmarks Nationalbank, tipo oficial diario (Statbank DNVALD,
-//     DKK por 100 USD, se divide por 100).
-//   - GBP: Bank of England, IADB serie XUDLUSS (publicado USD por GBP,
-//     se invierte a GBP por USD).
-//   - SEK: Sveriges Riksbank, tipo medio (API SWEA).
-//   - PLN: Narodowy Bank Polski, tabla A, tipo medio.
-//   - HRK: Hrvatska narodna banka, tipo medio (la kuna termina en
-//     2022: desde 2023 Croacia reporta en EUR).
-//   - JPY, CNY, MXN: Reserva Federal H.10 vía FRED, como CHF y KRW.
-//   - PEN: Banco de Pagos Internacionales (BIS), que la recibe del BCRP.
-//     El BCRP, la SBS y la SUNAT bloquean la descarga automática.
-// Todas son endpoints públicos sin API key, pensados para descarga. Ninguna es
-// una tasa cruzada vía EUR: todas cotizan directo contra el USD (EUR y GBP se
-// publican como USD por unidad y acá se invierten; es una inversión exacta, no
-// una cruz).
-// ARS/BRL/COP verificadas dígito por dígito contra los valores YA
-// cargados a mano en FX_CLOSE (data/currency-map.js) para Almagro (ARS),
-// y para BRL/COP contra las entradas ya existentes de otros clubes — coincide
-// exacto en todos los casos probados. Las 7 siguientes no tenían todavía
-// ningún club cargado ni entrada en FX_CLOSE contra qué comparar: se
-// verificaron contra el tipo que declaran las transcripciones de Clubes/ (RUB:
-// Krasnodar 2020 y 2021, exacto; TRY: Fenerbahçe 10/8/2020) y contra una
-// segunda fuente independiente día por día (BCE cruzado, SNB fin de mes, ČNB) —
-// ver el comentario de cada entrada para las diferencias esperables.
-//
-// ARQUITECTURA: esta serie completa NUNCA va a
-// `data/currency-map.js` — ese archivo es eager, se baja en cada pageview del
-// sitio, y `FX_CLOSE` tiene que seguir siendo la lista CURADA y chica de
-// cotizaciones que algún club realmente usa. La serie completa vive acá, en
-// `tools/fx-reference/`, fuera de lo que el sitio sirve — es insumo de
-// onboarding, no dato de producción. Un archivo de este directorio nunca se
-// referencia desde `data/` ni desde ningún `<script src>` del sitio.
+// Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «fetch-fx-reference.mjs».
 //
 // USO:
 //   node tools/fetch-fx-reference.mjs                  baja/actualiza todas (las 21)
@@ -77,8 +25,6 @@
 // No necesita ninguna API key (todos los endpoints son públicos). Volver a
 // correrlo pisa el archivo con la serie más actualizada. Todas bajan en
 // segundos salvo TRY: la primera vez son ~6.800 requests (~5 minutos); después
-// solo pide los días que faltan (ver fetchTRY). CHF y KRW (FRED/H.10) llegan
-// con ~1 semana de atraso: la Fed publica la H.10 los lunes.
 // ============================================================================
 
 import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'node:fs';
