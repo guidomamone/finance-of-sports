@@ -43,7 +43,25 @@ try {
   const fuentes = JSON.parse(readFileSync(jf, 'utf8')).sources || []; const fuente = fuentes.find((s) => s.id === ID_FUENTE);
   if (!fuente) throw new Error(`la carga no creó la fuente ${ID_FUENTE} (fuentes: ${fuentes.map((s) => s.id).join(', ')}; exit ${r.status}; salida: ${JSON.stringify(salida.slice(0, 600))})`);
   if (fuente.public_note !== 'Informe oficial en formato XHTML (iXBRL)') throw new Error(`la fuente nueva no trae la nota XHTML (public_note: ${fuente.public_note})`);
-  ok = true; console.log('prueba-escribir: la escritura de cargar.mjs anduvo (fuente nueva con su nota XHTML) en un worktree descartable.');
+  // LAS DEMÁS TOOLS QUE ESCRIBEN, en el mismo worktree y sobre los datos de HEAD (idempotentes: no cambian lo cargado). Un ensayo no pasa por los imports dinámicos ni por snapshot/revertir/publicarCambios, que
+  // son lo que se rompió cuando se partió cargar.mjs (TODO 401). Cada una tiene que salir con 0 y sin un error de código en la salida; qué se escribe lo mira la prueba de cada tool.
+  const ESCRIBEN = [
+    ['caja-deuda --personal --escribir', ['tools/caja-deuda.mjs', '--personal', '--club', 'brighton-gb', '--escribir']],
+    ['caja-deuda --personal --partir --escribir', ['tools/caja-deuda.mjs', '--personal', '--club', 'newcastle-gb', '--partir', '--escribir']],
+    ['recategorizar-etiquetas --escribir', ['tools/recategorizar-etiquetas.mjs', '--categoria', 'grants_donations', '--escribir']],
+    ['generar-correcciones', ['tools/generar-correcciones.mjs']],
+    ['ajustes --agregar', ['tools/ajustes.mjs', '--agregar', PDF, 'sin-dudas', '--motivo', 'prueba-escribir (worktree descartable)', '--autor', 'prueba']],
+    ['publicar', ['tools/publicar.mjs']],
+  ];
+  writeFileSync(join(W, PDF), ''); // los PDF no se trackean: ajustes.mjs pide que el documento exista
+  const ERROR_DE_CODIGO =/is not a function|is not defined|Cannot find (module|package)|SyntaxError|does not provide an export|REVERTIDO|TypeError|ReferenceError/;
+  for (const [nombre, args] of ESCRIBEN) {
+    const s = spawnSync('node', [join(W, args[0]), ...args.slice(1)], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
+    const out = (s.stdout || '') + (s.stderr || '');
+    if (s.status !== 0 || ERROR_DE_CODIGO.test(out)) throw new Error(`${nombre} salió con ${s.status}: ${(out.match(ERROR_DE_CODIGO) ? out.slice(Math.max(0, out.search(ERROR_DE_CODIGO) - 120), out.search(ERROR_DE_CODIGO) + 200) : out.trim().split('\n').slice(-3).join(' | ')).replace(/\n/g, ' | ')}`);
+    console.log(`  ok ${nombre}`);
+  }
+  ok = true; console.log(`prueba-escribir: la escritura de cargar.mjs anduvo (fuente nueva con su nota XHTML) y la de ${ESCRIBEN.length} tools más, en un worktree descartable.`);
 } catch (err) {
   console.error(`prueba-escribir: FALLÓ: ${err.message}`);
 } finally {

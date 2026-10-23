@@ -35,6 +35,17 @@ if (sucios.length) {
   const top = Object.entries(carpetas).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([c, n]) => `${c} ${n}`).join(', ');
   fallas.push(`${sucios.length} archivos sin commitear (${top}): commiteá, o decí en el mensaje que quedan así.`);
 }
+// DIFF SIN ABRIR: un commit de los últimos 30 minutos que cambió texto que Guido lee en el diff (skills, CLAUDE.md, convenciones, pantalla, pipeline, estado; la misma lista que post-tool.mjs)
+// y cuyo hash no figura en el transcript junto a un show_pane. El aviso de post-tool.mjs es un consejo; esto lo comprueba al cerrar el turno.
+{
+  const paraGuido = (f) => f.startsWith('.claude/skills/') || f === 'CLAUDE.md' || /^Admin\/(CONVENCIONES(-DATOS)?|PANTALLA|PIPELINE|ESTADO)\.md$/.test(f);
+  let transcript = ''; try { transcript = entrada.transcript_path ? readFileSync(entrada.transcript_path, 'utf8') : ''; } catch { /* sin transcript: no se puede comprobar */ }
+  if (transcript) {
+    const log = sh('git', ['log', '--since=30 minutes ago', '--name-only', '--format=@@%H']).out.split('@@').filter(Boolean);
+    const sinAbrir = log.map((b) => { const [h, ...fs] = b.split('\n').filter(Boolean); return { h, fs }; }).filter((c) => c.fs.some(paraGuido) && !transcript.includes(`"diff_scope":"${c.h.slice(0, 7)}`) && !transcript.includes(`diff_scope\\":\\"${c.h.slice(0, 7)}`));
+    if (sinAbrir.length) fallas.push(`el commit ${sinAbrir.map((c) => c.h.slice(0, 10)).join(', ')} cambia texto que Guido lee en el diff y no lo abriste: show_pane con pane diff y diff_scope el hash.`);
+  }
+}
 if (existsSync(join(raiz, 'tools', 'indice-md.mjs'))) {
   if (!sh('node', ['tools/indice-md.mjs', '--check']).ok) fallas.push('Admin/INDICE-md.md quedó viejo: node tools/indice-md.mjs --escribir');
   const sinMarca = /Sin marca \((\d+)\)/.exec(sh('node', ['tools/indice-md.mjs', '--problemas']).out);

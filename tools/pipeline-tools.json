@@ -42,6 +42,12 @@
    "comparar": "texto",
    "resumir": "valores-personal"
   },
+  "escribir": {
+   "que": "la ESCRITURA de verdad de las tools que escriben (cargar, caja-deuda --personal, recategorizar-etiquetas, generar-correcciones, ajustes, publicar) en un worktree descartable: un ensayo no pasa por los imports que se rompen al partir un módulo",
+   "usaLista": false,
+   "correr": ["tools/prueba-escribir.mjs"],
+   "comparar": "texto"
+  },
   "audit": {
    "que": "los hallazgos de audit.js por código y la lista completa, sobre todo el sitio (no depende de la lista)",
    "usaLista": false,
@@ -79,7 +85,7 @@
   "correr": ["tools/comparar-sin-comentarios.js", "--tools"]
  },
  "tools": {
-  "cargar.mjs": { "alcance": "compartida", "medidores": ["cargar", "audit"] },
+  "cargar.mjs": { "alcance": "compartida", "medidores": ["cargar", "audit", "escribir"] },
   "cargar-lote.mjs": { "alcance": "etapa", "medidores": ["cargar"] },
   "categorizar-claude.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
   "jev-categorizar.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
@@ -97,7 +103,7 @@
   "localizar.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"], "prueba_paga": "solo si cambia el prompt, con el costo a la vista" },
   "extraer.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo", "verificar"], "prueba_paga": "solo si cambia el prompt, con el costo a la vista" },
   "lote.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"] },
-  "caja-deuda.mjs": { "alcance": "etapa", "medidores": ["caja-deuda", "caja-deuda-personal", "personal-ensayos", "audit"] },
+  "caja-deuda.mjs": { "alcance": "etapa", "medidores": ["caja-deuda", "caja-deuda-personal", "personal-ensayos", "audit", "escribir"] },
   "alta-club.mjs": { "alcance": "compartida", "medidores": ["alta", "cargar"] },
   "xhtml-aarsrapport.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },
   "ixbrl-resultado.mjs": { "alcance": "etapa", "medidores": ["xhtml", "verificar"], "familia": { "formato": "xhtml" } },
@@ -109,7 +115,7 @@
   "fuente-url-xhtml.mjs": { "alcance": "etapa", "medidores": ["audit"], "familia": { "formato": "xhtml" } },
   "lotes-prueba.mjs": { "alcance": "etapa", "medidores": ["audit"] },
   "generadores.mjs": { "alcance": "compartida", "medidores": ["audit"] },
-  "publicar.mjs": { "alcance": "compartida", "medidores": ["audit"] },
+  "publicar.mjs": { "alcance": "compartida", "medidores": ["audit", "escribir"] },
   "audit.js": { "alcance": "compartida", "medidores": ["audit"] },
   "imports-sin-export.mjs": { "alcance": "compartida", "medidores": ["audit"] },
   "pipeline.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"] },
@@ -117,7 +123,7 @@
   "extraer-etiquetas.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },
   "bfo-rusia-notas.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Rusia" } },
   "gestiones-tanda.mjs": { "alcance": "etapa", "medidores": ["audit"] },
-  "recategorizar-etiquetas.mjs": { "alcance": "etapa", "medidores": ["audit"] }
+  "recategorizar-etiquetas.mjs": { "alcance": "etapa", "medidores": ["audit", "escribir"] }
  },
  "_modulos": "Los módulos que una tool de la tabla importa (directa o indirectamente) o llama como comando NO se escriben acá: tools/clasificar-tools.mjs los calcula, y sus medidores son los de las tools que los usan.",
  "sin_medidor": {
