@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/temporada.js — A QUÉ TEMPORADA DE UNA LIGA PERTENECE UN EJERCICIO (to-do 266, Auditora 5). Una sola función, para que faltantes-liga.mjs y audit.js no usen dos convenciones.
+// tools/temporada.js — A QUÉ TEMPORADA DE UNA LIGA PERTENECE UN EJERCICIO. Una sola función, para que faltantes-liga.mjs y audit.js no usen dos convenciones.
 //
 // La lista de equipos de cada liga (tools/club-league-reference/) está por la temporada que TERMINA en `anio` ("2024–25" = 2025). `club-leagues` pone a cada club en la categoría
 // que tenía al cierre del ejercicio. Entonces, en una liga de temporada partida: un ejercicio que cierra entre septiembre y diciembre del año y (Sassuolo, los rusos: 31/12) es de la

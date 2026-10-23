@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/estimar.mjs — MODELO QUE ESTIMA EL INGRESO DE UN CLUB-AÑO SIN BALANCE. Mide (--medir) y escribe data/estimados/.
 //
-// POR QUÉ (pedido de Guido, 2026-10-17). Ligas con 3 clubes cargados de 20 no dicen cuánto mueve la liga. Una estimación puede llenar
+// POR QUÉ. Ligas con 3 clubes cargados de 20 no dicen cuánto mueve la liga. Una estimación puede llenar
 // el hueco, pero solo si su error está medido contra años reales y se muestra aparte, rotulada "estimado". Regla: si el modelo no le
 // gana a la base simple, no se muestra.
 //
@@ -48,7 +48,7 @@ const { cierreDelClub } = createRequire(import.meta.url)('./cierre-ejercicio.js'
 
 const ROOT = resolve(import.meta.dirname, '..');
 
-// PAÍSES SIN ESTIMADOS (Guido, 2026-10-20): el modelo erra demasiado ahí (Estonia 86%). Un país de esta lista no publica ningún estimado en Ligas
+// PAÍSES SIN ESTIMADOS: el modelo erra demasiado ahí (Estonia 86%). Un país de esta lista no publica ningún estimado en Ligas
 // (ni club nuevo ni año que falta); sus años reales siguen entrando al ajuste del resto. Es el único lugar donde se declara: sacar el país de acá
 // y correr `node tools/estimar.mjs --escribir` lo vuelve a prender. Volver a medir cuando entren más años (`--medir --detalle`).
 const PAISES_SIN_ESTIMAR = new Set(['ee']);

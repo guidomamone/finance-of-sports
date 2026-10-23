@@ -98,14 +98,14 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import vm from 'node:vm';
 import { archivosData, rutaData } from './data-clubes.js';
-import { modificarClub, rutaJson } from './club-json.mjs'; // (to-do 245, fase 2) el JSON es la fuente de cada club
+import { modificarClub, rutaJson } from './club-json.mjs'; // el JSON es la fuente de cada club
 import { TOCA_UNA_CARGA } from './rutas.mjs';
 import { parseNumber } from './datos-sitio.mjs';
-import { validacionAlDia } from './cache-al-dia.mjs'; // (to-do 237 ak)
-import { GENERADORES, queFalla } from './generadores.mjs'; // (to-do 298 x)
-import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs'; // (to-do 298 ah)
+import { validacionAlDia } from './cache-al-dia.mjs';
+import { GENERADORES, queFalla } from './generadores.mjs';
+import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs';
 import { combinar as combinarEntidades } from './suma-entidades.mjs';
-import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs'; // (to-do 345, Auditora 5)
+import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs';
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.
@@ -136,7 +136,7 @@ const { normalizar, claveFamilia, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCIC
 const ROOT = resolve(import.meta.dirname, '..');
 const flagVal = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const ESCRIBIR = ARGS.includes('--escribir');
-// --reemplazar (Versión 358, paso 4 del plan aprobado por Guido): rehace con el script un ejercicio YA cargado (UC 2022-2024, cargados a mano:
+// --reemplazar: rehace con el script un ejercicio YA cargado (UC 2022-2024, cargados a mano:
 // "Servicios de Seguridad" dentro de gastos de administración). "Ya cargado", "la fuente ya existe" y "sin .categorias.json" (Jev y Claude
 // nunca corrieron sobre años cargados a mano) pasan de frenar a aviso; todo lo demás frena igual (en particular, una fila sin categoría). Al
 // escribir, borra los bloques del año y escribe los nuevos, y CONSERVA lo que el script no genera: grossDebt/cash/staffCost (si el script no los trae),
@@ -189,7 +189,7 @@ function quien(pdf) {
 // VOCABULARIO PROPIO DE ESTA ETAPA (candidato a mudarse a tools/vocabulario.mjs si otra tool lo necesita)
 // ============================================================================
 // Resultado financiero (FINANCIERO_RE) e impuesto a las ganancias (IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE): viven en tools/vocabulario.mjs desde la
-// Versión 321, porque la selección de filas de proponer-carga.mjs también los usa (no abre esos renglones en una nota).
+// porque la selección de filas de proponer-carga.mjs también los usa (no abre esos renglones en una nota).
 // Resultado ANTES de impuestos y operativo (solo para mostrar en la propuesta y ayudar a quien revise).
 const ANTES_IMPUESTOS_RE = /(before tax|before taxation|vor steuern|antes de(l)? impuesto|antes do imposto|antes dos impostos|antes de impuestos|for skat|foer skat|fore skatt|voor belasting|ante imposte|avant impot|до налогообложения|prije oporezivanja|pred zdanenim|vergi oncesi)/;
 const PERDIDA_RE = /(loss|verlust|fehlbetrag|perdida|prejuizo|deficit|underskud|tap\b|verlies|perdita|gubitak|ztrata|убыток|збиток|zarar)/;
@@ -232,13 +232,13 @@ export function perimetroCercano(her, year) {
 // ============================================================================
 // LA PROPUESTA
 // ============================================================================
-// ESCALERA DE "NO ES RUBRO" (Versión 462, aprobado por Guido el 2026-10-04): una fila VERIFICADA con lado que la IA (escalón 2) marcó "no es
+// ESCALERA DE "NO ES RUBRO": una fila VERIFICADA con lado que la IA (escalón 2) marcó "no es
 // rubro" se EXCLUYE primero (escalón 0, como siempre); si la carga no cierra (tie-out), se prueba INCLUIRLA (escalón 1: va a la cola para su
 // categoría) y gana solo si con ella la carga cierra. La compuerta es la de siempre (el tie-out). Caso: Fortaleza 2017 (notas como estado),
 // Claude dio "no es rubro" con 0,85 a "Total Ingresos actividades ordinarias" 5.319,891 (pág. 14, L543): sin ella los ingresos sumaban 0,006.
 const frenaTieOut = (P) => (P.frena || []).some((f) => String(f.etapa).startsWith('tie-out'));
 const noRubroVerificadas = (P) => (P.filas || []).filter((f) => f.destino === 'excluida' && f.cat === 'no_es_rubro' && f.escalon === 2 && String(f.origen || '').startsWith('verificacion') && f.ladoDoc);
-// RESPUESTA DE LA COLA DEL OTRO LADO (to-do 237 f, ok de Guido). Una respuesta con una categoría del otro lado que la fila en el documento
+// RESPUESTA DE LA COLA DEL OTRO LADO. Una respuesta con una categoría del otro lado que la fila en el documento
 // (Nacional 2024 "Correções relativas a períodos anteriores", ingreso 229.792 en L793, contestada exceptional_items, que es de gastos) iba al
 // otro lado CAMBIANDO su efecto: un ingreso de 0,229792 quedaba como gasto de −0,229792 y el resultado no cerraba por el doble. Segunda
 // pasada, solo si la primera no cierra el resultado: esas filas se mudan como el ajuste `categoria` (sin cambiar su efecto: el ingreso queda
@@ -263,7 +263,7 @@ export async function proponerConEscalera(pdfArg, opts = {}) {
   P1.avisos.push(`escalón 1 de "no es rubro": excluir ${nombres} no cerraba; incluida, la carga cierra (su categoría va a la cola)`);
   return P1;
 }
-// POR QUÉ UN DOCUMENTO NO ESTÁ `listo-para-jev` (to-do 159, ok de Guido). El texto viejo ("no está listo-para-jev (estado listo, jev -)")
+// POR QUÉ UN DOCUMENTO NO ESTÁ `listo-para-jev`. El texto viejo ("no está listo-para-jev (estado listo, jev -)")
 // hablaba del proceso viejo y no decía la causa. En el proceso nuevo la marca la pone avisarRegistro() de verificar.mjs, y SOLO cuando corre
 // dentro del lote, la etapa 6 cerró y la etapa 4 no dejó números sin confirmar en los bloques que se cargan. Acá se dice cuál de esas falta,
 // con lo que ya está en disco (gratis). El conteo de la etapa 4 es de TODOS los bloques (avisarRegistro filtra por los que se cargan y por
@@ -277,7 +277,7 @@ function porQueNoListo(e) {
   const val = leer('.validacion.json');
   if (!val) return 'la etapa 6 cerró, pero no hay .validacion.json (etapa 4): correr el lote';
   // Misma condición que avisarRegistro(): una validación anterior al .md es de otra versión del .md (UC 2009: .md del 04/10, validación del 01/10).
-  if (!validacionAlDia(e.md)) return 'la etapa 6 cerró, pero la etapa 4 (validar-bloques.mjs) es de una versión anterior del .md: correr el lote'; // (to-do 237 ak) misma compuerta que lote.mjs: huella del .md, o fecha si no la tiene
+  if (!validacionAlDia(e.md)) return 'la etapa 6 cerró, pero la etapa 4 (validar-bloques.mjs) es de una versión anterior del .md: correr el lote'; // misma compuerta que lote.mjs: huella del .md, o fecha si no la tiene
   const nc = (val.noConfirmados || []).length;
   if (nc) return `la etapa 6 cerró, pero la etapa 4 dejó hasta ${nc} número(s) sin confirmar (${derivado(e.md, '.validacion.json', { crear: false })}, "noConfirmados"; ver to-do 160)`;
   return 'la etapa 6 cerró y la etapa 4 no deja números sin confirmar, pero el registro no se actualizó: correr el lote (la marca solo la pone el lote, ver to-do 160)';
@@ -290,7 +290,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const pdf = relative(ROOT, resolve(ROOT, pdfArg));
   const P = { pdf, generado: new Date().toISOString(), frena: [], avisos: [], ejercicio: null };
   const frena = (etapa, motivo) => P.frena.push({ etapa, motivo });
-  // FRENO QUE CORTA EL ANÁLISIS (to-do 159, ok de Guido): los frenos de abajo que no pueden seguir sin un dato (sin club, sin .md, sin
+  // FRENO QUE CORTA EL ANÁLISIS: los frenos de abajo que no pueden seguir sin un dato (sin club, sin .md, sin
   // verificación...) devuelven la propuesta ahí mismo, y lo que viene después (categorías, socios, gestión, tie-out) NO se calculó. Sin esta
   // marca el lote mostraba "es un alta" como si fuera lo único que faltaba: en el lote 15 se dieron las 5 altas y recién ahí aparecieron 64
   // preguntas de categoría, socios y gestión. `cortadoEn` es la etapa del freno que cortó; el RESULTADO de lote.mjs avisa con eso.
@@ -313,7 +313,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   let per = e.periodo || null;
   // con ajuste manual `cierre`, el período del registro ya es el del ajuste (inventario-transcripciones.mjs): no se recalcula.
   if (!ajusteDe(pdf, 'cierre')) try { const mdT = readFileSync(resolve(ROOT, e.md), 'utf8'); const vivo = periodoDe(mdT, basename(pdf), { xhtml: xhtmlHermano(resolve(ROOT, e.md), mdT) }); if (per && (vivo.tipo !== per.tipo || !!vivo.nombreNoCoincide !== !!per.nombreNoCoincide)) P.avisos.push(`el período del registro (${per.tipo}${per.nombreNoCoincide ? ', nombre no coincide' : ''}) está desactualizado: tools/periodo.mjs hoy dice ${vivo.tipo}${vivo.nombreNoCoincide ? ', nombre no coincide' : ''} (regenerar el registro)`); per = vivo; } catch { /* sin .md: frena abajo */ }
-  // Sin fecha de cierre: se deduce de los documentos vecinos del club (tools/cierre-vecinos.mjs, Versión 342), con aviso. Si no se puede, sigue
+  // Sin fecha de cierre: se deduce de los documentos vecinos del club, con aviso. Si no se puede, sigue
   // como antes (frena más abajo por período o por año).
   if (per && !per.cierre) { const cv = cierrePorVecinos(pdf, registro); if (cv) { per = { ...per, cierre: cv.cierre, cierreDeducido: true }; P.avisos.push(`fecha de cierre ${cv.cierre} ${cv.evidencia}`); } }
   P.periodo = per;
@@ -330,14 +330,14 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // Sint-Truiden 2013, 15; Zulte Waregem 2012, 17). Misma compuerta: sin importes del año anterior. Los importes van tal cual (sin
     // prorratear: el fútbol arranca con la temporada; Anderlecht 2011 vendió 39,1 M y 2012, de 12 meses, 67,9 M).
     let primero = null;
-    // (to-do 298 w2) también de 12 meses redondeados cuando el período no es anual (Lierse SK 2019: 09-07-2018 a 30-06-2019, 11,7 meses): la
+    // también de 12 meses redondeados cuando el período no es anual (Lierse SK 2019: 09-07-2018 a 30-06-2019, 11,7 meses): la
     // compuerta es la misma (sin importes del año anterior); un período 'anual' no entra acá.
     if (per.tipo !== 'anual' && per.meses && e.md) {
       const fp = resolve(ROOT, derivado(e.md, '.filas.json', { crear: false }));
       const fs = existsSync(fp) ? (JSON.parse(readFileSync(fp, 'utf8')).filas || []) : [];
       if (fs.length && fs.every((x) => x.anterior == null || String(x.anterior).trim() === '' || parseNumber(x.anterior) === 0)) primero = { meses: per.meses, inicio: per.inicio || null, cierre: per.cierre || null };
     }
-    // EJERCICIO DE TRANSICIÓN POR CAMBIO DE CIERRE (to-do 237 ab; decisión de Guido, 2026-10-15, Admin/CONVENCIONES-DATOS.md). Cuando el club
+    // EJERCICIO DE TRANSICIÓN POR CAMBIO DE CIERRE. Cuando el club
     // pasa el cierre de julio a junio, el ejercicio de 11 meses contiene la temporada entera y no hay otro tramo que buscar. UNA compuerta, la
     // "cadena de cierres" con los otros documentos del club (registro): el cierre anterior + los meses del período = este cierre, Y el
     // siguiente cierra 12 meses después (se comparan año y mes). Benfica 2007-08: 2007-07-31 + 11 = 2008-06; el siguiente, 2009-06. Un
@@ -425,10 +425,10 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const year = alta.ejercicio.anio ?? (per?.cierreDeducido ? Number(per.cierre.slice(0, 4)) : null); P.year = year;
   const q = quien(pdf);
   if (q.year && Number(q.year) !== Number(year)) frena('año', `alta-club.mjs dice ejercicio ${year} y quien.mjs --quien (el que usa el registro) dice ${q.year}`);
-  if (q.clubId && !q.clubDeCarpeta && q.clubId !== clubId) frena('club', // clubDeCarpeta: sin cita, el id de quien es el nombre de la carpeta (to-do 232 f)
+  if (q.clubId && !q.clubDeCarpeta && q.clubId !== clubId) frena('club', // clubDeCarpeta: sin cita, el id de quien es el nombre de la carpeta
     `carpetas-clubes.mjs dice ${clubId} y quien.mjs --quien dice ${q.clubId}`);
   if (!year) { return corta('año', 'no se pudo determinar el año del ejercicio'); }
-  // ¿ESTÁ CARGADO? (to-do 236 a, ok de Guido el 2026-10-15) Escalón 0: el registro (`cargado` de transcripciones-estado.jsonl). Escalón 1:
+  // ¿ESTÁ CARGADO? Escalón 0: el registro (`cargado` de transcripciones-estado.jsonl). Escalón 1:
   // data/ (el repo local, no el sitio deployado) ya tiene el año. El registro queda viejo después de cargar hasta que alguien corre el
   // inventario: con --reemplazar frenaban 21 años griegos ya publicados ("ya tiene el ejercicio cargado").
   if ((cd.fiscalYearMeta || {})[year] && REEMPLAZAR && !P.reemplaza) {
@@ -479,7 +479,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (moneda && prevMonedas.size && !prevMonedas.has(moneda)) P.avisos.push(`los años cargados del club están en ${[...prevMonedas].join('/')} y este en ${moneda}`);
 
   // ---- 3. filas y montos
-  let sf; let notasVerif = []; let ingresosVerif = null; // (to-do 298 ae) lo que la verificación dice del estado, para el paso 6b
+  let sf; let notasVerif = []; let ingresosVerif = null; // lo que la verificación dice del estado, para el paso 6b
   {
     const pv = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false }));
     if (!existsSync(pv)) { return corta('filas', 'no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)'); }
@@ -492,7 +492,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       VV = S.V; P.suma = { nota: S.nota, otra: S.otra.pdf, transferencia: S.T, categorias: S.otra.categorias }; P.avisos.push(`suma de dos entidades: ${S.otra.pdf.split('/').pop()} se suma a este documento; transferencia ${S.T} fuera de ingresos y gastos`);
     }
     notasVerif = VV.notas || []; ingresosVerif = VV.totales?.ingresos ?? null;
-    // (to-do 298 a3) AVISO, no freno: el caché lo hizo otra versión de verificar.mjs (o de sus reglas). Correr tools/verificar.mjs sobre este PDF (gratis) antes de cargar.
+    // AVISO, no freno: el caché lo hizo otra versión de verificar.mjs (o de sus reglas). Correr tools/verificar.mjs sobre este PDF (gratis) antes de cargar.
     if (VV.scriptHuella && VV.scriptHuella !== huellaVerificar()) P.avisos.push(`caché viejo: el .verificacion.json es de otra versión de verificar.mjs (sello ${VV.scriptHuella}, hoy ${huellaVerificar()}); correr node tools/verificar.mjs "${pdf}" --rubros (gratis) por si hoy da otra cosa (to-do 298 a3)`);
     if (VV.estado !== 'ok') { return corta('filas', `la verificación tiene ${VV.cola.length} caso(s) pendientes en la cola humana (node tools/cola.mjs)`); }
     P.ajustes = VV.ajustes || null; // ajustes manuales que aplicó verificar.mjs: se escriben como comentario en la meta del año
@@ -503,7 +503,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       // −15.597" de UC 2020, una reversión de la provisión de vacaciones dentro de los gastos de administración). El paso 5 lo usa tal cual en
       // vez de adivinarlo por tabla: hasta la 337 se perdía y la fila quedaba sumando gasto (UC 2020 frenaba con 31.194 de diferencia).
       ...VV.lineas.map((l) => ({ label: l.etiqueta, page: l.pagina, section: l.origen, native: Math.abs(l.M), signoFijo: l.M, tside: l.lado === 'ingreso' ? 'revenue' : 'expense', origen: `verificacion (${l.origen})`, ...(l.categoria ? { catAjuste: l.categoria } : {}) })),
-      // (to-do 298 ah, Guido 2026-10-19) la cobertura de pérdidas del holding no es interés neto: va como una ganancia dentro de los gastos, categoría exceptional_items (fuera del total de gastos
+      // la cobertura de pérdidas del holding no es interés neto: va como una ganancia dentro de los gastos, categoría exceptional_items (fuera del total de gastos
       // que se compara con el impreso, dentro del resultado), igual que la venta del 20% de Goiás 2023. signoFijo negativo = reduce el gasto.
       // (Auditora 5, Girona 2021-23) un ajuste `fila` del lado financiero con destino profit_on_player_sales («Resultados por enajenaciones», rubro 13 del PGC
       // español) va a profitOnPlayerSales: cuenta en el resultado como el financiero, pero no es interés neto ni una línea de ingreso o de gasto.
@@ -580,11 +580,11 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     let { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', clave);
     // Si no hay respuesta para ESTE documento, vale la de otro documento del MISMO club con la misma etiqueta (Versión 344: "Otras ganancias
     // (pérdidas)" de UC llegaba a la cola una vez por año, 2010-2014). La carpeta del documento identifica al club.
-    // (Versión 403, cambio C) la respuesta de OTRO documento del club vale solo si la fila está en la MISMA nota allá y acá (si no se sabe la
+    // la respuesta de OTRO documento del club vale solo si la fila está en la MISMA nota allá y acá (si no se sabe la
     // nota de alguna de las dos, como antes). Caso: "Serviços de terceiros", contestado para la fila de "Custo com futebol" (Goiás 2024-2025),
     // se aplicaba a 2008-2016, donde está en el bloque administrativo.
     const mismaNota = (c) => { if (!padre || !lado) return true; const otro = padreEnDoc(c.md || c.pdf.replace(/\.pdf$/i, '.md'), lado, label); return otro == null || mismoPadre(otro, padre); };
-    // (to-do 237 ad) UN `aceptar` DE OTRO DOCUMENTO VALE SOLO CON LA MISMA PROPUESTA. `aceptar` dice "la propuesta de ESE caso está bien", no
+    // UN `aceptar` DE OTRO DOCUMENTO VALE SOLO CON LA MISMA PROPUESTA. `aceptar` dice "la propuesta de ESE caso está bien", no
     // "esta etiqueta va siempre ahí": si en este documento la fila tiene otra propuesta, la respuesta de allá no decide (sigue la escalera:
     // su propia categoría o la cola con su pregunta). `corregir` nombra la categoría y vale como antes. Casos de daño silencioso: Fortaleza
     // "auxilio de transporte", Goiás "servicos de terceiros", Avaí "viagens e hospedagens", Ferroviária "aluguel".
@@ -599,7 +599,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       const otra = respuestaPorDetalle('cargar', 'categoria', clave, (c, x) => delClub(c) && !choca(c, x)); if (otra) ({ caso, resp } = otra);
       else { const ch = respuestaPorDetalle('cargar', 'categoria', clave, (c, x) => delClub(c) && choca(c, x)); if (ch) return { choque: ch.caso.categoriaPropuesta, choqueDe: ch.caso.pdf.split('/').pop() }; }
     }
-    // ESCALÓN A (to-do 152, ok de Guido): la respuesta de otro documento del MISMO club con una etiqueta de la MISMA FAMILIA (mismaFamilia() de
+    // ESCALÓN A: la respuesta de otro documento del MISMO club con una etiqueta de la MISMA FAMILIA (mismaFamilia() de
     // tools/vocabulario.mjs: sin la marca de lista "b)", "c)", "-", sin mayúsculas ni acentos). Hasta acá solo valía la etiqueta exacta y la
     // familia solo se usaba con los años ya CARGADOS. Caso: Atalanta 2024 "oneri sociali" volvió a preguntar lo contestado en 2021 como
     // "b) oneri sociali" (2021 no estaba cargado todavía). Compuertas: mismo lado (si la clave lo lleva), misma nota (la fila del otro
@@ -620,8 +620,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       const cats = new Set(fam.map(catDe).filter(Boolean));
       if (cats.size === 1 && (!lado || [...cats][0] === '(descartar)' || !ladoDeCat([...cats][0]) || ladoDeCat([...cats][0]) === lado)) { const ult = fam.filter((x) => catDe(x)).sort((a, b) => String(b.resp.ts).localeCompare(String(a.resp.ts)))[0]; ({ caso, resp } = ult); viaFamilia = `familia de "${String(caso.detalle).split('|')[0]}" (${caso.pdf.split('/').pop()})`; }
     }
-    // ESCALÓN B (to-do 152, ok de Guido): la respuesta de OTROS CLUBES DEL MISMO PAÍS, solo para una fila que iba a la cola. Mínimo 1 club
-    // (to-do 215, ok de Guido 2026-10-13; antes 2): en Grecia solo AEL Larissa había contestado "Κόστος πωλήσεων" y Asteras, Levadiakos y OFI
+    // ESCALÓN B: la respuesta de OTROS CLUBES DEL MISMO PAÍS, solo para una fila que iba a la cola. Mínimo 1 club
+    //: en Grecia solo AEL Larissa había contestado "Κόστος πωλήσεων" y Asteras, Levadiakos y OFI
     // volvieron a preguntarlo. Medido sobre las respuestas existentes: con 2 clubes decide 34 y acierta 34; con 1, decide 59 y acierta 59.
     // Una respuesta que saca la fila (descartar) no decide desde otro club (sacaFila, abajo).
     // Compuertas: misma etiqueta (claveFamilia), mismo lado, mismo CONTEXTO (contextoFila(): la nota que la abre o, en el estado, el renglón
@@ -642,7 +642,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     }
     // Y si ESTE documento tenía su propio caso pendiente con esa etiqueta, la respuesta del club ya lo resolvió: se cierra (Versión 348; UC
     // 2013, caso 6c69d0a, seguía en la cola aunque la carga ya usaba la respuesta de 2014).
-    // SACAR UNA FILA VALE SOLO PARA SU DOCUMENTO (to-do 205, cambio 2). Una respuesta que saca la fila (`descartar`, o `corregir --valor
+    // SACAR UNA FILA VALE SOLO PARA SU DOCUMENTO. Una respuesta que saca la fila (`descartar`, o `corregir --valor
     // no_es_rubro`, que la reemplaza desde cola.mjs) decide en el escalón 0 (el caso de ESTE documento) y en ningún otro: si viene de otro
     // documento del club (escalón 1), de la familia (A) o de otros clubes (B), no decide y la fila sigue su camino normal (precedente, Jev, la
     // cola). Caso: diez `descartar` de Novorizontino 2020/2021/2024 con nota "obsoleto: año ya cargado" sacaban "Com pessoal" (wages_squad,
@@ -658,7 +658,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     return null;
   };
   const aprendidasYa = existsSync(ARCHIVO_APRENDIDAS) ? readFileSync(ARCHIVO_APRENDIDAS, 'utf8') : '';
-  // LA MISMA ETIQUETA BAJO DOS RENGLONES (to-do 232 h, aprobado por Guido el 2026-10-14). La categoría se decide por etiqueta, y en un estado
+  // LA MISMA ETIQUETA BAJO DOS RENGLONES. La categoría se decide por etiqueta, y en un estado
   // por función la misma etiqueta cae en dos notas con sentido distinto: PAOK "Αποσβέσεις" en el cuadro de fútbol (amortización de pases) y
   // en los de administración y ventas (bienes y software, 0,2-0,3 M por año), que heredaba player_amortisation; Olympiacos 2025 "Εισφορές
   // κοινωνικής ασφάλισης" en la nota de jugadores y en la de otros empleados. Medido: 227 etiquetas en 81 documentos. UNA compuerta: la
@@ -682,7 +682,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // departamento de fútbol y la de administración (PAOK), no. Medido en prueba-completa + PAOK: sin esto, 9 documentos que cargaban
   // pasaban a la cola con ~60 preguntas (34 solo en Fortaleza 2017). Un renglón sin categoría conocida (un "Total ..." que no está en el
   // .categorias.json) no cuenta: hacen falta dos categorías conocidas y distintas.
-  // ESCALERA DE LA CATEGORÍA DEL RENGLÓN (to-do 234, ok de Guido el 2026-10-15). Escalón 0: la del propio renglón (.categorias.json o
+  // ESCALERA DE LA CATEGORÍA DEL RENGLÓN. Escalón 0: la del propio renglón (.categorias.json o
   // precedente del club). Escalón 1: si no hay, la de las OTRAS filas que lo abren, si son al menos 2 y todas dicen lo mismo; no cuentan las
   // filas cuya etiqueta también está bajo otro renglón (son las que están en duda). Olympiacos 2025 (pág. 35): los renglones de la nota 6 no
   // están en el .categorias.json (solo las hojas); las otras filas de "jugadores" dan wages_squad y las de "otros empleados",
@@ -706,13 +706,13 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       if (p?.via === 'exacto-con-contexto' && !delOtroLado(p.cat, r.tside)) Object.assign(f, { cat: p.cat, conf: 1, escalon: 0, fuenteCat: `precedente del club con la misma nota ("${pd}"): la etiqueta está bajo renglones de categoría distinta`, enLista: true });
       else Object.assign(f, { conf: 0, escalon: 2, fuenteCat: `la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (${f.cat || 'ninguna'}) no decide para la fila de "${pd}"`, enLista: true, ...(f.cat ? {} : { cat: r.tside === 'revenue' ? 'other_income' : 'other_expenses' }) });
     }
-    // COMPUERTA DEL LADO (Versión 374, aprobada por Guido el 2026-10-02): la respuesta de Guido se aplica solo si su categoría es del MISMO
+    // COMPUERTA DEL LADO: la respuesta de Guido se aplica solo si su categoría es del MISMO
     // lado que la fila en el documento. Hasta la 373 se aplicaba por etiqueta en todos los años del club: en Fortaleza CEIF, "Auxilio de
     // transporte" es gasto en 2020 y 2023 (nómina) e ingreso en 2021-2024 (de la Dimayor), y "Comisiones" es gasto en 2024 e ingreso en 2025.
     // Si el lado no coincide, la fila sigue por la escalera (y, si no se resuelve, llega a la cola con su propia pregunta).
     // Categoría que trae un ajuste manual (Versión 382: la fila "Diferencia en el documento" de un ajuste `desglose`): escalón 0, gana siempre.
     if (r.catAjuste && ladoDeCat(r.catAjuste) === r.tside) Object.assign(f, { cat: r.catAjuste, conf: 1, escalon: 0, fuenteCat: 'ajuste manual (Admin/registros/ajustes-manuales.jsonl)', enLista: true });
-    // AJUSTE MANUAL `categoria` (Versión 394; tools/ajustes.mjs): escalón 0, gana sobre todo, también sobre la compuerta del lado (es una
+    // AJUSTE MANUAL `categoria`: escalón 0, gana sobre todo, también sobre la compuerta del lado (es una
     // decisión explícita de Guido). Si la categoría es del OTRO lado, la fila se muda sin cambiar su efecto en el resultado: un ingreso de
     // 140 pasa a gasto de +140 (ganancia). Caso: Goiás 2023, la venta del 20% de la Liga Forte União como exceptional_items.
     const ajCat = ajustesDe(pdf).find((a) => a.campo === 'categoria' && norm(a.etiqueta) === norm(r.label) && ladoDeCat(a.valor));
@@ -720,19 +720,19 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       Object.assign(f, { cat: ajCat.valor, conf: 1, escalon: 0, fuenteCat: `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${ajCat.fecha}): ${ajCat.motivo}`, enLista: true, ladoRechazado: false });
       if (r.tside && ladoDeCat(ajCat.valor) !== r.tside) { f.signoFijo = f.signoFijo !== undefined ? -f.signoFijo : -Math.abs(f.native); f.ladoDoc = ladoDeCat(ajCat.valor); }
     }
-    const claveBase = repetida(r) ? `${norm(r.label)}@${norm(padreDe(r.origen) || 'estado')}` : norm(r.label); // (to-do 232 h) una pregunta por renglón
+    const claveBase = repetida(r) ? `${norm(r.label)}@${norm(padreDe(r.origen) || 'estado')}` : norm(r.label); // una pregunta por renglón
     let rg = (r.catAjuste || ajCat) ? null : respuestaCat(r.label, claveBase, padreDe(r.origen), r.tside, { familia: !aceptable(f) && !repetida(r), propuesta: f.cat }); let claveCola = claveBase;
     if (!ajCat && ((rg?.cat && r.tside && ladoDeCat(rg.cat) && ladoDeCat(rg.cat) !== r.tside) || (f.ladoRechazado && !rg))) { claveCola = `${claveBase}|${r.tside}`; rg = respuestaCat(r.label, claveCola, padreDe(r.origen), r.tside, { familia: !aceptable(f), propuesta: f.cat }); }
     if (rg?.cat) {
       Object.assign(f, { cat: rg.cat, conf: 1, escalon: 0, fuenteCat: 'respuesta de Guido en la cola', enLista: true, notaGuido: rg.nota });
       const lado = ladoDeCat(rg.cat);
-      // (to-do 237 f) segunda pasada de proponerConEscalera: la respuesta del otro lado muda la fila como el ajuste `categoria`
+      // segunda pasada de proponerConEscalera: la respuesta del otro lado muda la fila como el ajuste `categoria`
       if (voltearRespuestas && lado && r.tside && lado !== r.tside) { f.signoFijo = f.signoFijo !== undefined ? -f.signoFijo : -Math.abs(f.native); f.ladoDoc = lado; f.fuenteCat += ' (del otro lado: se muda sin cambiar su efecto, to-do 237 f)'; }
       if (lado && !aprendidasYa.includes(`"label":${JSON.stringify(r.label)},"padre":${JSON.stringify(padreDe(r.origen))},"glosa":null,"categoria":${JSON.stringify(rg.cat)},"confianza":1`)) appendFileSync(ARCHIVO_APRENDIDAS, JSON.stringify({ ts: new Date().toISOString(), club: clubId, year: year != null ? String(year) : null, lado, label: r.label, padre: padreDe(r.origen), glosa: null, categoria: rg.cat, confianza: 1, motivo: 'respuesta de Guido en la cola humana (cargar.mjs)', jevDecia: null, jevConf: null, modelo: 'guido', md: e.md }) + '\n');
     }
     if (rg?.choque) Object.assign(f, { conf: 0, escalon: 2, choque: rg.choque, fuenteCat: `${f.fuenteCat}; en ${rg.choqueDe} se aceptó ${rg.choque} con otra propuesta: no decide, segunda mirada (to-do 237 ad)` });
     if (rg?.descartar) { f.destino = 'excluida'; f.fuenteCat = 'Guido la descartó en la cola'; return f; }
-    // (to-do 237 n) "OUTROS" CON LA GENÉRICA DE SU LADO. Una etiqueta genérica de lista cerrada (Outros, Outras, Otros, Otras, Others, Other,
+    // "OUTROS" CON LA GENÉRICA DE SU LADO. Una etiqueta genérica de lista cerrada (Outros, Outras, Otros, Otras, Others, Other,
     // Altri, Altre; con o sin marca de lista o nota) cuya propuesta es la genérica de su lado (other_income / other_expenses) se carga sin
     // preguntar: no hay otra lectura posible de la fila. En el formato SNC cada nota cierra con "Outros" y eso solo eran 96 preguntas en
     // Portugal; backtest contra la cola: 34 de 34 respuestas de Portugal coinciden. COMPUERTA: el renglón que abre la fila no tiene una
@@ -807,15 +807,15 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     const suma = (cats) => conCat.filter((f) => cats.includes(f.cat)).reduce((a, f) => a + Math.abs(f.native || 0), 0);
     const yaReintentado = (() => { try { const v = JSON.parse(readFileSync(resolve(ROOT, derivado(e.md, '.ubicacion.json', { crear: false })), 'utf8')).indiceAmpliado; return Number(v === true ? 1 : v || 0) >= VERSION_AMPLIADO; } catch { return false; } })();
     const ceros = [];
-    // (to-do 298 ae) un año sin ingresos (estado belga abreviado con la Brutomarge negativa, ver el paso 6b) no tiene televisión ni estadio que buscar.
+    // un año sin ingresos (estado belga abreviado con la Brutomarge negativa, ver el paso 6b) no tiene televisión ni estadio que buscar.
     const sinIngresosNBB = ingresosVerif != null && Math.abs(Number(ingresosVerif)) < 1e-9 && /escalón "códigos NBB"/.test(notasVerif.join(' '));
-    // (Versión 405, auditoría del pipeline) una fila "sin desglosar por la fuente" apaga SOLO los avisos de SU lado: ingresos sin desglosar ->
+    // una fila "sin desglosar por la fuente" apaga SOLO los avisos de SU lado: ingresos sin desglosar ->
     // no se revisan televisión, estadio, cuotas sociales ni otros deportes; gastos sin desglosar -> no se revisa sueldos del plantel. Hasta la
     // 404 cualquier fila lump_ apagaba todo. Caso: Fortaleza 2017, "Actividades Deportivas" (ingresos, 4.220,7) sin desglosar apagaba el aviso
     // de sueldos en 0, y los sueldos (nota 21, "Sueldos 705.432") quedaron adentro de "Total Gastos de Administración".
     const lumpIng = conCat.some((f) => f.destino === 'revenue' && /^lump_/.test(f.cat)); const lumpGas = conCat.some((f) => f.destino === 'expense' && /^lump_/.test(f.cat));
     {
-      for (const { nombre, cats, lado } of CEROS.filter((x) => x.lado)) if (!(lado === 'gasto' ? lumpGas : (lumpIng || sinIngresosNBB)) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* (to-do 237 g) un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // el lado lo usa verificar.mjs
+      for (const { nombre, cats, lado } of CEROS.filter((x) => x.lado)) if (!(lado === 'gasto' ? lumpGas : (lumpIng || sinIngresosNBB)) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // el lado lo usa verificar.mjs
       // (to-do 298 p1, decisión de Guido 2026-10-19: "que cada 5 años se chequee, y ahí se puede ir para atrás y corregir") EL PERFIL POR AÑO:
       // vale el chequeo más cercano dentro de la ventana (tools/perfil-clubes.mjs, perfilVigente); la respuesta de la cola puede venir de
       // CUALQUIER documento del club dentro de la ventana (antes, solo la de este documento: 391 casos para 181 preguntas). Un chequeo nuevo
@@ -847,7 +847,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         // ajuste `incluye`: la categoría está dentro de otra línea (el documento las junta): no es un 0 a revisar ni una pregunta.
         if (catsIng.every((c) => incluidoEn[c]) && catsGas.every((c) => incluidoEn[c])) { P.avisos.push(`"${nombre}" da 0 porque está incluida en otra línea (ajuste manual \`incluye\`)`); continue; }
         let tiene = perfilVigente(clubId, campo, year)?.valor; if (tiene === undefined || tiene === null) tiene = respPerfil(campo, nombre);
-        // (to-do 232 c, aprobado por Guido el 2026-10-14) FORMA JURÍDICA: una ΠΑΕ (Ποδοσφαιρική Ανώνυμη Εταιρεία) es por ley una sociedad solo de
+        // FORMA JURÍDICA: una ΠΑΕ (Ποδοσφαιρική Ανώνυμη Εταιρεία) es por ley una sociedad solo de
         // fútbol, con accionistas y no socios; las 12 griegas contestadas en la cola dieron "no" y "no". UNA compuerta: la forma está en la
         // PORTADA del documento (hasta la pág. 3 del visor), y esa línea es la cita (la portada nombra a quien presenta el balance; no se busca el
         // nombre del club porque está en griego y el del sitio en latín). Solo ΠΑΕ: la SAF brasileña no sirve (Cuiabá y Ferroviária tienen
@@ -861,16 +861,16 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
             P.avisos.push(`"${nombre}" en 0: real (${clubId} es una ΠΑΕ, sin ${campo === 'socios' ? 'socios' : 'otros deportes'}; ${e.md} L${cita.linea})`);
           }
         }
-        // (to-do 237 y) SAD/SDUQ portuguesa en la portada: el 0 es real en ESTE documento; no se guarda en el perfil del club (ver citaSADpt).
+        // SAD/SDUQ portuguesa en la portada: el 0 es real en ESTE documento; no se guarda en el perfil del club (ver citaSADpt).
         if ((tiene === undefined || tiene === null) && /^Clubes\/Portugal\//.test(pdf)) {
           const cita = citaSADpt(readFileSync(resolve(ROOT, e.md), 'utf8'));
           if (cita) { tiene = false; P.avisos.push(`"${nombre}" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: ${e.md} L${cita.linea} "${cita.texto}"; to-do 237 y)`); }
         }
         if (tiene === true) ceros.push({ categoria: nombre });
         else if (tiene === undefined || tiene === null) {
-          // (to-do 298 p1) UNA pregunta por club, campo y tramo: si otro documento del club ya la tiene abierta dentro de la ventana, no se abre otra.
+          // UNA pregunta por club, campo y tramo: si otro documento del club ya la tiene abierta dentro de la ventana, no se abre otra.
           const abierta = pendientes().find((c) => c.etapa === 'cargar' && c.motivo === 'perfil' && c.detalle === `${clubId}:${campo}` && c.pdf !== pdf && Math.abs((c.anio ?? anioDeDoc(c.pdf) ?? 0) - year) < VENTANA_PERFIL);
-          // (to-do 354 a, Orden 1) NUNCA frena la carga: un caso de perfil se contesta googleando el club (club-or-year-onboarding, «La cola»); mientras tanto el 0 queda con este aviso
+          // NUNCA frena la carga: un caso de perfil se contesta googleando el club (club-or-year-onboarding, «La cola»); mientras tanto el 0 queda con este aviso
           if (abierta) P.avisos.push(`perfil-en-cola (no frena): "${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'} en ${year}: la pregunta ya está en la cola por ${abierta.pdf.split('/').pop()} (${abierta.id}) y vale para este año`);
           else {
             const prev = perfilCercano(clubId, campo, year);
@@ -882,7 +882,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     }
     // ESCALÓN 0 DEL AVISO: un ajuste manual `cero-real` de Guido para esa categoría dice que el 0 es real (tools/ajustes.mjs).
     for (const c of [...ceros]) { const aj = ajusteDe(pdf, 'cero-real') && ajustesDe(pdf).find((x) => x.campo === 'cero-real' && String(x.valor).toLowerCase() === c.categoria.toLowerCase()); if (aj) { ceros.splice(ceros.indexOf(c), 1); P.avisos.push(`"${c.categoria}" en 0: real, por ajuste manual (${aj.fecha}, ${aj.motivo})`); } }
-    // ESCALÓN 0b DEL AVISO (to-do 298 p2, ok de Guido 2026-10-19): el `cero-real` de esa categoría en OTRO documento del club vale para este
+    // ESCALÓN 0b DEL AVISO: el `cero-real` de esa categoría en OTRO documento del club vale para este
     // año, con UNA compuerta: ningún año cargado del club tiene esa categoría con monto (si alguno la tuvo, el 0 puede ser un desglose perdido
     // y sigue pidiendo reintento). Caso: Tallinna Kalev, "Televisión" en 0 con 7 ajustes, uno por año; 94 ajustes `cero-real` para 36
     // combinaciones de club y categoría.
@@ -1005,7 +1005,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     return { meta, cierraPat, lecturaGasto };
   };
   let { meta, cierraPat, lecturaGasto } = buscarPat();
-  // ESCALÓN p2 (to-do 298 p2): un rótulo financiero ("Intereses") contestado no_es_rubro en la cola con el lado del documento a la vista, que
+  // ESCALÓN p2: un rótulo financiero ("Intereses") contestado no_es_rubro en la cola con el lado del documento a la vista, que
   // no es una línea de ingreso ni de gasto (club-data-mapping §2: los intereses van al resultado financiero) y que el resultado impreso
   // necesita: si ninguna lectura cerró, las filas así pasan a netInterest con su signo y se vuelve a buscar. Compuerta: cierra el resultado
   // impreso; si no cierra, vuelven a excluidas. Caso: Boyacá Chicó 2025 (Intereses L839 de ingreso y L999 de gasto, mismo rótulo).
@@ -1030,7 +1030,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   else P.avisos.push('no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)');
   // 6b. total de ingresos y de gastos: un total IMPRESO igual a la suma de las líneas; si el documento no lo imprime pero el resultado cerró,
   // se usa la suma de las líneas y se marca `por-resultado` (verificado por el resultado, no por un total propio).
-  // FILA DE REDONDEO (decisión 3 de Guido, 2026-09-30): si la suma de las líneas y el total impreso difieren SOLO por redondeo, se agrega una
+  // FILA DE REDONDEO: si la suma de las líneas y el total impreso difieren SOLO por redondeo, se agrega una
   // línea explícita "Diferencia de redondeo" por la diferencia (other_income en ingresos, other_expenses en gastos) y el total oficial es el
   // IMPRESO: el total cierra exacto contra el documento (audit.js exige < 0,01) y la diferencia queda a la vista en vez de escondida. "Solo por
   // redondeo" es estricto: menos de MEDIA UNIDAD de lo impreso por cada fila sumada (n filas en miles -> hasta n x 0,0005 millones). NO la
@@ -1042,7 +1042,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const lado = (nombre, arr, objetivo, clave, filtro) => {
     if (!arr.length) {
       if (nombre === 'gastos') P.avisos.push('ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra "sin dato")');
-      // (to-do 298 ae, ok de Guido 2026-10-19) INGRESOS 0 DE UN ESTADO BELGA ABREVIADO: el escalón de los códigos NBB leyó el estado (esquema
+      // INGRESOS 0 DE UN ESTADO BELGA ABREVIADO: el escalón de los códigos NBB leyó el estado (esquema
       // abreviado, la Brutomarge 9900 negativa va como gasto), todos sus totales impresos cierran exacto, no hay ninguna fila de ingresos y el
       // resultado del ejercicio cierra. Entonces el documento no informa ingresos: el total es 0. Caso: Lierse SK 2019-2021 (Omzet 70 vacío,
       // Brutomarge −1.372 / −1.475 / −1.436) y Patro Eisden 2021 (Brutomarge −140.857).
@@ -1082,8 +1082,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   }
   P.totales = T;
 
-  // 6c. (to-do 345, Auditora 5) SEGUNDA LECTURA del resultado, independiente del texto: el `ProfitLoss` etiquetado en el XHTML del que salió este .md (solo el hermano del mismo cierre).
-  // (to-do 352, Auditora 5) Perímetro INDIVIDUAL: si no coincide, FRENA (medido: 9 clubes, 0 falsos frenos). CONSOLIDADO: sigue siendo AVISO y una fila en la cola, hasta que
+  // 6c. SEGUNDA LECTURA del resultado, independiente del texto: el `ProfitLoss` etiquetado en el XHTML del que salió este .md (solo el hermano del mismo cierre).
+  // Perímetro INDIVIDUAL: si no coincide, FRENA (medido: 9 clubes, 0 falsos frenos). CONSOLIDADO: sigue siendo AVISO y una fila en la cola, hasta que
   // `node tools/medir-ixbrl-consolidado.mjs` diga que se puede decidir (dos años consolidados de clubes distintos, uno con minoritarios). Un hecho ambiguo, de la matriz o que no está nunca frena. Se apaga con el ajuste `ixbrl-omitir`, con su motivo.
   try {
     // el XHTML de donde salió este .md (su hermano, con el encabezado de xhtml-aarsrapport.mjs) o, si el año salió de un PDF, un XHTML de la carpeta del club del MISMO emisor (su identificador está en el .md)
@@ -1132,7 +1132,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // declarado" en las categorías que esa línea esconde (UC 2025: los sueldos del plantel están adentro del costo de ventas). Las sumas no
   // cambian: el importe está una sola vez, en la línea.
   const sinDesglose = [...rev, ...exp].filter((f) => { const b = bolsonDeDeporte(club.sport); return b && (f.cat === b.revenue || f.cat === b.expense); }).map((f) => ({ renglon: f.label, lado: f.destino, importe: r6(Math.abs(f.amountNative ?? f.native ?? 0)), motivo: f.notaGuido || 'el documento no desglosa este renglón' }));
-  // (Versión 525, to-do 140(h), aprobado por Guido el 2026-10-05) DE DÓNDE SALIÓ CADA DATO DE LAS ESCALERAS CHICAS: el texto que ya arma
+  // DE DÓNDE SALIÓ CADA DATO DE LAS ESCALERAS CHICAS: el texto que ya arma
   // alta-club.mjs para cada campo (año, cierre, perímetro, moneda, tipo de cambio, liga), más lo que cargar.mjs decidió encima (perímetro
   // por ajuste, heredado o por la cola). Solo registro: no cambia ninguna decisión. Lo junta `node tools/estado.mjs --escalones`.
   P.procedencia = Object.fromEntries(alta.ejercicio.campos.map((c) => [c.campo, { valor: c.valor ?? null, fuente: c.fuente || null, estado: c.estado || null }]));
@@ -1266,7 +1266,7 @@ export function publicarCambios(snap, extra, escritos) {
   const segN = (segFuente.out.match(/(\d+) guardada\(s\)/) || [])[1];
   if (segN && Number(segN) > 0) escritos.push(`segunda fuente de ${segN} liga(s) (tools/segunda-fuente-liga.mjs --pendientes)`);
   // generadores + auditoría
-  for (const g of GENERADORES.filter((g) => existsSync(resolve(ROOT, g)))) { // (to-do 298 x) la lista compartida con alta-club.mjs
+  for (const g of GENERADORES.filter((g) => existsSync(resolve(ROOT, g)))) { // la lista compartida con alta-club.mjs
     const r = runNode(g, []); if (r.code !== 0) throw new Error(`${g} falló (código ${r.code}): ${r.out.slice(-500)}`);
   }
   const audit = runNode('tools/audit.js', ['--quiet']);
@@ -1276,7 +1276,7 @@ export function publicarCambios(snap, extra, escritos) {
 }
 export { snapshot, revertir, runNode };
 
-// COMPUERTA DE ESTADIO Y SPONSOR (to-do 273, pedido de Guido): un ejercicio nuevo no se escribe sin el estadio y el sponsor de camiseta de
+// COMPUERTA DE ESTADIO Y SPONSOR: un ejercicio nuevo no se escribe sin el estadio y el sponsor de camiseta de
 // ese club y año. tools/estadio-sponsor.mjs los lee de la página de temporada de Wikipedia (gratis), los guarda en data/contexto/<iso>.js
 // y sale con 1 si falta alguno; lo que falta se completa en tools/contexto-manual.json, con fuente. Función aparte, llamada en un solo
 // punto antes de escribir (la compuerta del auditor, to-do 282, va al lado).
@@ -1371,7 +1371,7 @@ export function escribir(P) {
     };
 
     const S = E.source;
-    // la nota INTERNA de la fuente va a la evidencia del club (to-do 209: data/ se publica), no a un campo `note` de sources{}
+    // la nota INTERNA de la fuente va a la evidencia del club, no a un campo `note` de sources{}
     let fuenteNueva = null; let notaASumar = null;
     const dmy = (f) => f.split('-').reverse().join('/');
     const fuenteExistente = P.reemplaza ? cargarSitio().sources?.[S.id] : null;
@@ -1379,7 +1379,7 @@ export function escribir(P) {
       const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).`
         : P.transicion && P.transicion.meses < 12 && P.transicion.inicio ? `Ejercicio de transición de ${P.transicion.meses} meses por cambio de la fecha de cierre: del ${dmy(P.transicion.inicio)} al ${dmy(P.transicion.cierre)}. No es comparable con un año de 12 meses.`
         : P.transicion ? `Ejercicio de transición por cambio de fecha de cierre: ${P.transicion.inicio ? `del ${dmy(P.transicion.inicio)} ` : ''}al ${dmy(P.transicion.cierre)} (${P.transicion.meses} meses).` : null;
-      // (to-do 345, Auditora 5) el año salió de un informe XHTML (iXBRL): lo dice el encabezado del .md que escribe xhtml-aarsrapport.mjs. La fuente nace sin url, así que la página de fuentes lo dice con esta frase
+      // el año salió de un informe XHTML (iXBRL): lo dice el encabezado del .md que escribe xhtml-aarsrapport.mjs. La fuente nace sin url, así que la página de fuentes lo dice con esta frase
       // (el PDF de ancla es la impresión de Chrome, no se publica como si fuera el original; la url del depósito oficial la pone fuente.mjs).
       // (`e` no existe en escribir(P): el .md de la propuesta es P.md; sin él, o ilegible, no hay nota)
       const notaXhtml = (() => { try { return P.md && /xhtml-aarsrapport\.mjs/.test(readFileSync(resolve(ROOT, P.md), 'utf8').slice(0, 400)) ? 'Informe oficial en formato XHTML (iXBRL)' : null; } catch { return null; } })();
@@ -1392,7 +1392,7 @@ export function escribir(P) {
       // de 6 meses, quedaba sin la nota de transición y Onboarding la puso a mano con fuente.mjs --nota.
       } else if (notaPrimero && !String(fuenteExistente.publicNote || '').includes(notaPrimero)) notaASumar = notaPrimero;
     }
-    // (to-do 245, fase 2) el club se escribe en su JSON (la fuente) y de ahí se regenera el data file: se convierte a los nombres de siempre, se
+    // el club se escribe en su JSON (la fuente) y de ahí se regenera el data file: se convierte a los nombres de siempre, se
     // cambia el año y se valida contra el esquema antes de escribir nada.
     const [rj, rd] = modificarClub(id, (c) => {
       c.datos.revenueLinesByYear[y] = E.revenueLines.map(lineaJ);
@@ -1426,7 +1426,7 @@ export function escribir(P) {
     escritos.push(EV.guardar(id, ev));
     // Admin/sourcing/<País>/<Club>.md (interno, no se publica)
     if (extra.length) { appendFileSync(resolve(ROOT, fuentesMd), `\n- Cargado en el sitio por tools/cargar.mjs (${HOY}): ejercicio ${y} desde \`${P.pdf}\` (sourceId \`${E.source.id}\`).\n`); escritos.push(fuentesMd); }
-    // (Versión 518, to-do 140(i) paso 3) "POSIBLEMENTE DENTRO DE OTRO RUBRO": la misma escalera de tools/dentro-de-otro.mjs, sobre el club
+    // "POSIBLEMENTE DENTRO DE OTRO RUBRO": la misma escalera de tools/dentro-de-otro.mjs, sobre el club
     // entero y con el año recién escrito: el año nuevo nace con sus marcas y un año viejo gana o pierde las suyas si este año le cambia el
     // precedente. Antes de publicar, así un P0/P1 lo revierte todo junto.
     const marcas = marcarClub(id);
@@ -1465,7 +1465,7 @@ function comparar(P, prod) {
   };
 }
 
-// ΠΑΕ EN LA PORTADA (to-do 232 c): la primera línea, hasta la pág. 3 del visor, con la forma jurídica griega de sociedad de fútbol.
+// ΠΑΕ EN LA PORTADA: la primera línea, hasta la pág. 3 del visor, con la forma jurídica griega de sociedad de fútbol.
 const PAE_RE = /(?<![\p{L}])(?:Π\.\s?Α\.\s?Ε\.?|ΠΑΕ|ΠΟΔΟΣΦΑΙΡΙΚ\p{L}*\s+ΑΝΩΝΥΜ\p{L}*\s+ΕΤΑΙΡ\p{L}*|Ποδοσφαιρικ\p{L}*\s+Ανώνυμ\p{L}*\s+Εταιρ\p{L}*)(?![\p{L}])/u;
 function citaEnPortada(md, re) {
   const L = md.split('\n'); let fin = L.findIndex((l) => /^---\s*p[aá]g\.\s*4\s*---/i.test(l)); if (fin < 0) fin = Math.min(L.length, 200);
@@ -1473,7 +1473,7 @@ function citaEnPortada(md, re) {
   return null;
 }
 const citaPAE = (md) => citaEnPortada(md, PAE_RE);
-// SAD O SDUQ PORTUGUESA EN LA PORTADA (to-do 237 y, ok de Guido el 2026-10-15): la sociedad desportiva (SAD, SDUQ) que presenta el documento
+// SAD O SDUQ PORTUGUESA EN LA PORTADA: la sociedad desportiva (SAD, SDUQ) que presenta el documento
 // participa solo en el fútbol profesional; las cuotas de socios y las otras modalidades son del club, que es otra entidad. A diferencia de
 // la ΠΑΕ NO se guarda en el perfil del club: Porto publica años del club (2016-2023, con socios y modalidades) y años de la SAD (2024-2025),
 // así que la cita vale para ESE documento ("el 0 es real acá") y un documento del club sigue preguntando. Solo Portugal. Medido sobre los
@@ -1483,7 +1483,7 @@ const citaPAE = (md) => citaEnPortada(md, PAE_RE);
 const SAD_PT_RE = /(?<![\p{L}])(?:S\.\s?A\.\s?D\.|SAD|SDUQ|Sociedade\s+An[óo]nima\s+Desportiva|Sociedade\s+Desportiva\s+Unipessoal\s+por\s+Quotas)(?![\p{L}])/u;
 const citaSADpt = (md) => citaEnPortada(md, SAD_PT_RE);
 
-// QUÉ TOCÓ UNA CARGA A MANO (to-do 232 y). AEK 2024 se cargó con `--escribir` y su `Admin/sourcing/Grecia/AEK Athens.md` quedó fuera de
+// QUÉ TOCÓ UNA CARGA A MANO. AEK 2024 se cargó con `--escribir` y su `Admin/sourcing/Grecia/AEK Athens.md` quedó fuera de
 // los commits de esa sesión: la línea "Escrito (...)" lo nombraba, pero sale debajo del JSON entero, separada por comas y sin lo que tocan
 // los generadores (fuentes/*.html, ESTADO-clubes.md...) ni los registros (cola, categorías aprendidas). Al final se imprime un `git add`
 // listo para pegar con lo que CAMBIÓ en esta corrida dentro de lo que commitea cargar-lote.mjs (TOCA_UNA_CARGA de tools/rutas.mjs): se

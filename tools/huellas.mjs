@@ -4,7 +4,7 @@
 //     <md>.rubros.json  ->  <md>.jev.json  ->  <md>.categorias.json
 //     (verificar.mjs)      (jev-categorizar)    (categorizar-claude)
 //
-// POR QUÉ EXISTE (bug real, 2026-09-30, piloto C): cada etapa decidía si tenía trabajo mirando SOLO si su archivo de salida
+// POR QUÉ EXISTE: cada etapa decidía si tenía trabajo mirando SOLO si su archivo de salida
 // existía. Esa tarde se regeneraron 438 `.rubros.json` (lado ingreso/gasto y columna de importes corregidos), pero sus `.jev.json`
 // seguían ahí, hechos sobre la lista VIEJA: Jev no los rehizo y categorizar-claude.mjs mandó 44 documentos a Claude por API
 // (US$ 1,90) mezclando la lista nueva con las categorías de la vieja. Ninguna sesión se dio cuenta hasta mirar el gasto.
@@ -31,7 +31,7 @@ const sha1 = (s) => createHash('sha1').update(s).digest('hex');
 const leer = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
 const rutas = (mdAbs) => ({ rubros: derivado(mdAbs, '.rubros.json', { crear: false }), jev: derivado(mdAbs, '.jev.json', { crear: false }), cats: derivado(mdAbs, '.categorias.json', { crear: false }) });
 
-// (to-do 298 a3) LA HUELLA DEL CÓDIGO DE LA VERIFICACIÓN. verificar.mjs la guarda en cada .verificacion.json (`scriptHuella`); cargar.mjs la compara con la de hoy
+// LA HUELLA DEL CÓDIGO DE LA VERIFICACIÓN. verificar.mjs la guarda en cada .verificacion.json (`scriptHuella`); cargar.mjs la compara con la de hoy
 // y AVISA (no frena) si no coincide: ese caché lo hizo otra versión del verificador. Caso: St. Gallen 2019 y 2022 se cargaron con un caché anterior a la 298 ai y
 // quedaron con la compensación intragrupo sumada. Qué entra: verificar.mjs y los tres archivos de reglas que cambian lo que da (vocabulario, nbb, verify-numbers);
 // no la cola, los ajustes ni los registros, que cambian todos los días sin cambiar el algoritmo. Un caché sin el campo (hecho antes de este sello) no avisa.
@@ -66,7 +66,7 @@ export function leerLista(ruta) {
   return new Set(readFileSync(ruta, 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')));
 }
 
-// (to-do 328, tool 3) CLI: las huellas de un documento, para armar a mano los archivos de las etapas pagas (armar-a-mano.mjs las calcula igual) o para ver
+// CLI: las huellas de un documento, para armar a mano los archivos de las etapas pagas (armar-a-mano.mjs las calcula igual) o para ver
 // por qué una etapa dice "no al día". Gratis, solo lectura.   USO: node tools/huellas.mjs --documento "Clubes/<País>/<Club>/<doc>.pdf"
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const i = process.argv.indexOf('--documento');

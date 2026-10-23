@@ -3,7 +3,7 @@
 // tools/inventario-transcripciones.mjs — el REGISTRO de cada transcripción: quién la hizo y si está
 // validada para las tools de onboarding.
 //
-// Por qué existe (pedido de Guido, 2026-09-29): "dejar todo el inventario actual de .md validado para
+// Por qué existe: "dejar todo el inventario actual de .md validado para
 // onboarding" y "cada transcripción necesita conservar quién la hizo". Antes esa información estaba
 // repartida: el motor solo en los logs de cada API (Admin/registros/api/<motor>.jsonl), sin marca dentro
 // del .md salvo en los escaneos de Mistral, y el estado de verificación en ningún lado.
@@ -46,7 +46,7 @@
 //   node tools/inventario-transcripciones.mjs --solo Admin/lotes/lote-NN.txt          # ALCANCE: recalcula solo esos PDFs (ver abajo)
 //   node tools/inventario-transcripciones.mjs --solo "Clubes/Brasil/Remo"       # ... o los de esa carpeta
 //
-// ALCANCE (--solo, Versión 640, aprobado por Guido el 2026-10-09). Recalcular el registro entero tarda ~1-2 min (12.184 PDFs; ~70 s
+// ALCANCE. Recalcular el registro entero tarda ~1-2 min (12.184 PDFs; ~70 s
 // son la pregunta de qué está cargado, hoy `quien.mjs --pendientes`) y pipeline.mjs y lote.mjs lo disparaban varias veces por corrida
 // aunque la corrida fuera de 62 PDFs (lote 56, Brasil). Con --solo <lista|carpeta> se recalculan SOLO esos PDFs (también la pregunta
 // a quien.mjs, acotada a sus carpetas) y las demás líneas del registro se copian tal cual de la versión anterior; los duplicados se
@@ -162,7 +162,7 @@ function currentState(entry, verif) {
   if (!entry.tieneMd && !entry.cargado) return { status: 'sin-md', method: null, detail: entry.costoUsd ? `PAGADO SIN .md: Mistral lo transcribió el ${entry.fecha} (US$ ${entry.costoUsd}) y el .md no está en disco; volver a transcribir lo paga de nuevo` : 'todavía no hay ninguna transcripción de este PDF' };
   if (entry.cargado) return { status: 'cargado', method: null, detail: 'el ejercicio ya está en el sitio' };
   if (verif && verif.mdSha1 === entry.mdSha1) return { status: verif.status, method: verif.method, detail: verif.detail };
-  // VALIDACIÓN POR PÁGINA (Versión 443, punto 1b.iii del HANDOFF): si el .md cambió pero la última validación "listo" guardó la huella de
+  // VALIDACIÓN POR PÁGINA: si el .md cambió pero la última validación "listo" guardó la huella de
   // cada página, se mira QUÉ páginas cambiaron. Ninguna (cambió solo lo de antes de la primera marca, o espacios al final) -> el estado se
   // conserva. Alguna -> "sin-verificar" con la lista: el resolver vuelve a validar solo esas (las demás se reusan). Antes, cualquier cambio
   // dejaba el documento entero sin verificar (Juventus 2021-22: 3 páginas rearmadas, 17 pagadas otra vez).

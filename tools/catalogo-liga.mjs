@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/catalogo-liga.mjs — PROPONE (y, con aprobación, ESCRIBE) la liga de un club en el catálogo data/leagues.js, y el deporte si es nuevo (to-do 341, #5 y #14).
+// tools/catalogo-liga.mjs — PROPONE (y, con aprobación, ESCRIBE) la liga de un club en el catálogo data/leagues.js, y el deporte si es nuevo.
 //
 // POR QUÉ. alta-club.mjs deja la fila de liga en null cuando la caché de rosters ubica al club en una liga que no está en LEAGUES («liga no catalogada»), y nunca
 // toca SPORTS. Cada liga y cada deporte nuevo se armaban a mano (Bath: gb-premiershiprugby y rugby active:true), sin que nadie viera de dónde salía cada dato ni qué

@@ -35,7 +35,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const flag = (f) => { const i = A.indexOf(f); return i >= 0 ? A[i + 1] : null; };
 
-// (to-do 237 ah) EN PARALELO Y ACOTABLE: un pool de procesos (--trabajadores N, default 8; 1 = en serie como antes). Los documentos de un
+// EN PARALELO Y ACOTABLE: un pool de procesos (--trabajadores N, default 8; 1 = en serie como antes). Los documentos de un
 // mismo club van al MISMO trabajador y en orden (cargar.mjs aplica respuestas de la cola a otros años del club), cada trabajador con su
 // copia de la cola, y la salida se escribe al final ordenada por pdf: --comparar entre una corrida en serie y una en paralelo da idéntico.
 // --lista <archivo> o --dir <carpeta> miden solo esos documentos (los que tienen .categorias.json).

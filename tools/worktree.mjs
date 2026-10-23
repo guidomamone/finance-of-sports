@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/worktree.mjs — SESIONES EN PARALELO: cada una en su copia del repo (git worktree) y su rama; la principal mergea.
 //
-// POR QUÉ (ok de Guido, 2026-10-17). Con dos sesiones en la misma carpeta cada una tenía que cuidarse de no commitear lo de la otra, y
+// POR QUÉ. Con dos sesiones en la misma carpeta cada una tenía que cuidarse de no commitear lo de la otra, y
 // los worktrees probados antes terminaban en conflictos. Dos causas: (1) todas editaban TODO, CHANGELOG y ESTADO; (2) cada carga regenera
 // lo mismo (ASSET_V de index.html, las páginas de fuentes/, ESTADO-clubes, club-index, rankings, sitemap). La (1) la resuelve una regla
 // (solo la principal escribe esos tres; ver Admin/Archive/modo-varias-sesiones.md); la (2), `mergear`. Además, una copia nueva no tiene lo que
@@ -118,7 +118,7 @@ async function mergear(rama) {
   git(['commit', '-q', '-m', `Merge de ${rama}${conflictos.length ? ` (${conflictos.length} generados resueltos con main y regenerados)` : ''}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`]);
   console.log(`mergeado ${rama}: ${tocados.length} archivos de la rama, ${conflictos.length} conflictos en lo generado (resueltos), auditoría ${r.audit}.`);
   if (cierres.length) console.log(`Cierre de la sesión para pasar a TODO / CHANGELOG / ESTADO: ${cierres.join(', ')}`);
-  // (to-do 354 b, Orden 1) AVISO, no frena: cada punto de «Qué queda» de la nota de sesión termina con su flecha (`→ TODO n`, `→ regla`, `→ HALLAZGOS`, `→ descartado`), que es lo que dice a dónde va (CONVENCIONES).
+  // AVISO, no frena: cada punto de «Qué queda» de la nota de sesión termina con su flecha (`→ TODO n`, `→ regla`, `→ HALLAZGOS`, `→ descartado`), que es lo que dice a dónde va (CONVENCIONES).
   for (const c of cierres) {
     const ruta = resolve(ROOT, c); if (!existsSync(ruta)) continue;
     const sinFlecha = []; let dentro = false, punto = null;

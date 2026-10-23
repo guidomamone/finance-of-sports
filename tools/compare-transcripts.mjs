@@ -123,7 +123,7 @@ function sameNumber(rawA, rawB) {
 const isNoteRef = (raw) => /^\d{1,2}(\.\d{1,2})?$/.test(String(raw).trim());
 const isEmpty = (raw) => String(raw).trim() === '';
 
-// BUG REAL (test de motores, 2026-09-29): un motor que transcribe la columna "Nota" y otro que no
+// BUG REAL: un motor que transcribe la columna "Nota" y otro que no
 // producen listas de valores de DISTINTO LARGO para la MISMA fila, y la comparación posicional daba
 // una discrepancia falsa (10-65 por documento) aunque todos los importes coincidieran. Ahora:
 //   1. igual, posición por posición (el caso de siempre);

@@ -62,7 +62,7 @@ export function armar(spec, { sesion = new Date().toISOString().slice(0, 10), ah
   const escalas = lista('escalas');
   for (const id of Object.keys(bloques)) if (!escalas.some((e) => e.bloque === id)) err(`falta la escala del bloque ${id} (\`escalas\`)`);
   for (const e of escalas) if (!ESCALAS.has(e.escala) || !e.evidencia) err(`escala del bloque ${e.bloque}: unidades | miles | millones, con su evidencia`);
-  // (to-do 339, frenado de Bath) UN SUBTOTAL O TOTAL IMPRESO SIN RÓTULO («| | (100,113) |» debajo de las filas de una nota) no tiene etiqueta que citar y la tool lo rechazaba («falta etiqueta o
+  // UN SUBTOTAL O TOTAL IMPRESO SIN RÓTULO («| | (100,113) |» debajo de las filas de una nota) no tiene etiqueta que citar y la tool lo rechazaba («falta etiqueta o
   // importe»). Solo ese caso (tipo subtotal o total, con línea e importe) recibe una etiqueta sintética «subtotal L671» / «total L671»; la validación contra la línea del .md sigue siendo por
   // el importe. Un renglón sin etiqueta sigue siendo un error.
   const filas = lista('filas').map((f) => (!String(f.etiqueta ?? '').trim() && (f.tipo === 'subtotal' || f.tipo === 'total') && f.linea && f.actual !== undefined && f.actual !== null && String(f.actual).trim() !== '' ? { ...f, etiqueta: `${f.tipo} L${f.linea}` } : f));

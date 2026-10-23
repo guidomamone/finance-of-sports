@@ -54,7 +54,7 @@ const MAX_RETRIES = 4;
 const DEFAULT_TIMEOUT_MS = 600_000; // 10 min -- más largo que Mistral/Gemini (150s) porque streamea
 const MAX_TOKENS = 64000;
 // Un documento de más de CHUNK_PAGES páginas se parte en tramos (con qpdf) y se transcribe tramo por
-// tramo. Motivo real (test de motores, 2026-09-29): una memoria de 88 páginas se cortó en la página 46
+// tramo. Motivo real: una memoria de 88 páginas se cortó en la página 46
 // por el tope de salida y la tool guardó el .md incompleto sin avisar; y un balance de 46 páginas
 // usó 57.7k de los 64k tokens posibles. Con tramos de 25 páginas queda mucho margen.
 const CHUNK_PAGES = 25;

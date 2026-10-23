@@ -201,7 +201,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const tmp = join(tmpdir(), 'xhtml-aarsrapport'); mkdirSync(tmp, { recursive: true }); let mal = 0;
   for (const x of xs) {
     const rel = x.replace(ROOT + '/', ''); const mdAbs = x.replace(/\.xhtml$/, '.md'); const pdfAbs = x.replace(/\.xhtml$/, '.pdf');
-    // CANDADO (Auditora 5, to-do 353/356): la tool NUNCA escribe, ni con --rehacer, un .md o un .pdf que no generó ella. Un .md es suyo si empieza con su encabezado («Generado de … por tools/xhtml-aarsrapport.mjs»); un .pdf,
+    // CANDADO: la tool NUNCA escribe, ni con --rehacer, un .md o un .pdf que no generó ella. Un .md es suyo si empieza con su encabezado («Generado de … por tools/xhtml-aarsrapport.mjs»); un .pdf,
     // solo si el .md hermano lo es (el PDF sale del mismo XHTML y no lleva marca propia). Así un .xhtml con el mismo nombre que el PDF oficial de Companies House no lo pisa: se renombra el .xhtml (-ixbrl.xhtml).
     const mdPropio = existsSync(mdAbs) && /xhtml-aarsrapport\.mjs/.test(readFileSync(mdAbs, 'utf8').slice(0, 400));
     const ajeno = (existsSync(mdAbs) && !mdPropio) ? mdAbs : (existsSync(pdfAbs) && !mdPropio) ? pdfAbs : null;

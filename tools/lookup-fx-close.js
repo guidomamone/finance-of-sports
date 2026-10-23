@@ -14,7 +14,7 @@
 // fetch-fx-reference.mjs para esa moneda, o la fecha es más vieja que el rango
 // bajado), lo dice explícito -- NUNCA inventa un número ni cae a un valor por
 // default. CUALQUIER caso de estos queda anotado en
-// tools/fx-reference/misses.jsonl (pedido de Guido, 2026-09-27): la idea es
+// tools/fx-reference/misses.jsonl: la idea es
 // que él pueda revisar ese archivo de vez en cuando y correr
 // fetch-fx-reference.mjs para la moneda/rango que haga falta, en vez de que
 // cada sesión se tope con el mismo hueco por separado sin dejar rastro.
@@ -48,7 +48,7 @@ const CURRENCIES = {
   TRY: { file: 'try-usd.json', fuente: 'Döviz alış del TCMB' },
   RUB: { file: 'rub-usd.json', fuente: 'Tipo oficial del Banco de Rusia' },
   UAH: { file: 'uah-usd.json', fuente: 'Tipo oficial del Banco Nacional de Ucrania' },
-  // diaCierre 'siguiente' (Versión 339, diseño aprobado por Guido): el dólar observado de un día se publica al día hábil siguiente, así que la
+  // diaCierre 'siguiente': el dólar observado de un día se publica al día hábil siguiente, así que la
   // cotización de un cierre es la del PRIMER día con dato POSTERIOR a la fecha. Verificado contra los 12 cierres que declaran UC (2016-2025) y
   // Palestino (2018, 2019): 11 exactos y uno a 0,02. Las demás monedas toman el día del cierre o el hábil anterior (por defecto).
   CLP: { file: 'clp-usd.json', fuente: 'Dólar observado (Banco Central de Chile, publicado por el SII)', diaCierre: 'siguiente' },

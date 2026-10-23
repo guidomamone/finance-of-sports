@@ -68,7 +68,7 @@ function findPdfsUnder(dir) {
 }
 
 export function quien(pdfPath, club = null, year = null) {
-  // clubDeCarpeta (to-do 232 f): el club NO salió de carpetas-clubes.mjs (sin cita en un data file ni nombre igual en el sitio) y el id es
+  // clubDeCarpeta: el club NO salió de carpetas-clubes.mjs (sin cita en un data file ni nombre igual en el sitio) y el id es
   // el nombre de la carpeta normalizado ("paok" para un club todavía sin alta). Ese id no es información sobre el club: cargar.mjs no lo
   // compara con el del alta (frenaba los 40 años de los 7 griegos nuevos con "carpetas-clubes.mjs dice paok-gr y quien.mjs dice paok").
   let clubId = club; let clubDeCarpeta = false;

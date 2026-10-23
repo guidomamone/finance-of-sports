@@ -1,7 +1,7 @@
 // ============================================================================
 // tools/grupos-pais.mjs — los GRUPOS DE PAÍSES del pipeline y lo que cada grupo tiene de propio en cada etapa. Gratis (no lee nada pesado).
 //
-// POR QUÉ EXISTE (pedido de Guido, 2026-09-30): "debemos analizar partir lógicas según país. Argentina tiene el tema de la inflación, otros
+// POR QUÉ EXISTE: "debemos analizar partir lógicas según país. Argentina tiene el tema de la inflación, otros
 // tienen otras lógicas. Podemos presentar un Formato Simplificado de todos modos para todos, pero el proceso para llevar puede partirse".
 // El formato simplificado del sitio es el destino COMÚN; lo que cambia por país es el camino hasta él: qué documento publica cada país, con
 // qué estructura, en qué escala y moneda, y qué convenciones de carga tiene. Medido el mismo día: de 40 ejercicios cargados cuya

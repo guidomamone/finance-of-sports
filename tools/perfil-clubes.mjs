@@ -3,7 +3,7 @@
 // tools/perfil-clubes.mjs — EL PERFIL DE CADA CLUB que hace falta para saber si un 0 en el formato simplificado es real o es un desglose que
 // se perdió. Gratis (solo lee y escribe Admin/registros/perfil-clubes.jsonl).
 //
-// POR QUÉ EXISTE (Versión 340, diseño aprobado por Guido el 2026-10-01). La etapa 8 (cargar.mjs) dispara un REINTENTO cuando una categoría
+// POR QUÉ EXISTE. La etapa 8 (cargar.mjs) dispara un REINTENTO cuando una categoría
 // da 0 en un año. Medido sobre 241 años ya cargados: salarios del plantel nunca da 0, televisión 2% y estadio 1% (un 0 ahí es casi seguro un
 // desglose perdido: UC 2025 tenía salarios en 0 porque el costo de ventas no estaba abierto); pero cuotas sociales da 0 en el 46% (clubes que
 // son sociedades sin socios) y "otras secciones deportivas" en el 63-68% (clubes sin básquet ni otros deportes). Para esas dos, el 0 solo
@@ -43,13 +43,13 @@ function leer() {
 export function perfilDe(clubId) { return leer().get(clubId) || null; }
 
 // Guarda un campo (socios / otrosDeportes) para un club; lo usa cargar.mjs cuando Guido contesta la pregunta de la cola.
-// (to-do 298 p1) `anio`: el ejercicio del documento que se chequeó; el valor vale para los años de su ventana (perfilVigente).
+// `anio`: el ejercicio del documento que se chequeó; el valor vale para los años de su ventana (perfilVigente).
 export function guardarPerfil(clubId, campo, valor, evidencia, fuente = 'guido-cola', anio = null) {
   if (!CAMPOS.includes(campo)) throw new Error(`campo desconocido: ${campo}`);
   appendFileSync(ARCHIVO, JSON.stringify({ clubId, [campo]: valor, [`${campo}Evidencia`]: evidencia, fuente, ...(anio ? { anio: Number(anio) } : {}), fecha: new Date().toISOString().slice(0, 10) }) + '\n');
 }
 
-// ---------------------------------------------------------------- EL PERFIL POR AÑO (to-do 298 p1, decisión de Guido 2026-10-19)
+// ---------------------------------------------------------------- EL PERFIL POR AÑO
 // "Los clubes pueden cambiar. Está bien que responda por año vecino, pero si siempre responden por vecinos puede haber un error: que cada
 // 5 años se chequee, y ahí se puede ir para atrás y corregir." Antes, una respuesta valía para todos los años del club, para siempre.
 // Ahora cada CHEQUEO tiene un año (el ejercicio del documento que se miró) y vale para los años a menos de VENTANA_PERFIL de él. Un año

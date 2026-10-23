@@ -21,7 +21,7 @@
 // los ya cargados a mano en data/clubs.js (ej. Boca #182A4E/#F9BB31, San
 // Lorenzo #00325A ya confirmado en clubs.js).
 //
-// ARQUITECTURA (ver to-do 91): igual que tools/fx-reference/, este archivo
+// ARQUITECTURA: igual que tools/fx-reference/, este archivo
 // NUNCA se referencia desde `data/` ni se sirve al visitante — es insumo de
 // onboarding en `tools/brand-color-reference/`, no dato de producción.
 //

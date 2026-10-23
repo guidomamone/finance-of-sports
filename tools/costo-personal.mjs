@@ -18,7 +18,7 @@ import { coincide, parseNumber, filasDelMd, r6, avisarRecorte, pedirJev, sitio, 
 const ROOT = resolve(import.meta.dirname, '..');
 
 // ============================================================================
-// EL DATO "PERSONAL" (to-do 229 + 232 s, diseño aprobado por Guido el 2026-10-14): fiscalYearMeta.staffCost, el TOTAL del costo de personal
+// EL DATO "PERSONAL": fiscalYearMeta.staffCost, el TOTAL del costo de personal
 // del ejercicio (sueldos + cargas sociales + otros beneficios). Interno (el sitio no lo muestra): lo usan cargar.mjs para separar los sueldos
 // de una fila global (229) y audit.js para avisar sueldos escondidos (232 s). Modo aparte (--personal), así caja y deuda no se tocan.
 //   CANDIDATOS  las filas de TOTAL (esTotal, de vocabulario.mjs, ya multilingüe) de TODAS las tablas de TODOS los documentos del club con
@@ -47,7 +47,7 @@ export function candidatosPersonal(md) {
     for (let k = a; k < b; k++) {
       const f = porLinea.get(k + 1);
       if (f && esTotal(f.etiqueta) && f.cifras.length) out.push({ md, linea: k + 1, etiqueta: f.etiqueta, cifras: f.cifras, tabla: (celdas(L[a]).find((c) => /\p{L}{3,}/u.test(c)) || '').slice(0, 80), contexto: [arriba.join(' '), enc && `encabezado: ${enc}`, primeras.length && `filas: ${primeras.join(' / ')}`].filter(Boolean).join(' · ').slice(0, 300) });
-      // (to-do 339, frenado de Bath) TOTAL SIN RÓTULO: la última fila de una tabla que no tiene etiqueta ("| | 14,885,763 | 12,165,369 |" debajo de los tres renglones de la nota «Staff costs»).
+      // TOTAL SIN RÓTULO: la última fila de una tabla que no tiene etiqueta ("| | 14,885,763 | 12,165,369 |" debajo de los tres renglones de la nota «Staff costs»).
       // Sin vocabulario ni idioma: es candidata SOLO si su primera cifra es la suma EXACTA de la primera cifra de las filas con etiqueta que tiene arriba en la misma tabla (al menos dos).
       if (k === b - 1) {
         const cs = celdas(L[k]); const sinRotulo = cs.length >= 2 && !cs[0] && cs.slice(1).some((c) => /\d/.test(c));
@@ -146,7 +146,7 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
   }
   return { res, usd, ensayos };
 }
-// PARTIR LA FILA GLOBAL (to-do 229, paso 2, aprobado por Guido el 2026-10-14): lo que se hizo a mano con Volos 2021-2025, como AJUSTES (fila +
+// PARTIR LA FILA GLOBAL: lo que se hizo a mano con Volos 2021-2025, como AJUSTES (fila +
 // categoria) que después aplica cargar.mjs --reemplazar (el único que escribe filas). UNA compuerta: el año tiene staffCost confirmado por la
 // compuerta del vecino, NO tiene ninguna fila wages_squad, y tiene UNA SOLA fila global de gasto (lump_*_expense o admin_general_expense)
 // de monto >= staffCost (el resto no queda negativo). Esa fila pasa a valer el resto; una fila nueva = staffCost va a wages_squad con la cita.
@@ -249,7 +249,7 @@ export async function completarPersonal(clubId, { ejecutar = false, escribir = f
   const snap = snapshot([evRel]); const escritos = [evRel];
   try {
     let ev = EV.leer(clubId);
-    // (to-do 245, fase 2) el costo de personal va al JSON del club (financial.staff_cost del año) y se regenera el data file
+    // el costo de personal va al JSON del club (financial.staff_cost del año) y se regenera el data file
     const aEscribir = [];
     for (const x of nuevos) aEscribir.push(x);
     const [rj, rd] = modificarClub(clubId, (c) => {

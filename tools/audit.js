@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/audit.js — auditoría determinista del proyecto entero, en Node.
 //
-// EL PROBLEMA QUE RESUELVE: `auditAll()` (js/principal.js; nació en index.html, Versión 118) verifica que
+// EL PROBLEMA QUE RESUELVE: `auditAll()` verifica que
 // cada ejercicio CIERRE contra el total que su propio documento imprime. Es la
 // verificación más importante del sitio, pero solo ve una clase de error: la
 // suma que no da. No ve al ejercicio que no tiene ningún total oficial contra
@@ -346,7 +346,7 @@ function checkTaxonomiaDeporte(api, dep, tax) {
 // Vocabulario de deducción fiscal SOBRE INGRESOS, en los idiomas de los países
 // ya cargados (pt-BR, es). No es una lista inventada para esta corrida: es la
 // generalización de 20+ entradas ya verificadas a mano una por una en
-// tools/audit-ignore.json (auditoría de tokens del 2026-09-26) y del propio
+// tools/audit-ignore.json y del propio
 // CLAUDE.md/sección 6 ("Un ingreso negativo... casi siempre es legítimo:
 // deducciones sobre a receita en Brasil"). Cada club brasileño nuevo trae 1-3
 // líneas de este tipo (impuestos/contribuciones sobre la receita bruta, según
@@ -410,7 +410,7 @@ function checkLineas(api) {
     for (const [sec, lines] of [['ingreso', rev], ['gasto', exp]]) {
       const vistos = new Map();
       for (const l of lines) {
-        // (to-do 237 aa) "Diferencia de redondeo" no es una copia pegada: verificar.mjs agrega una por cada nota que abre un renglón y
+        // "Diferencia de redondeo" no es una copia pegada: verificar.mjs agrega una por cada nota que abre un renglón y
         // no suma exacto al centavo (±media unidad impresa), así que dos con el mismo ±0,001 son legítimas. Caso: Sporting 2017-18
         // (personal −0,001, provisiones −0,001, otros gastos +0,001, plantel +0,001), que la guarda revertía aunque los totales cierran.
         if (l.rawLabel === 'Diferencia de redondeo') continue;
@@ -486,7 +486,7 @@ function checkMoneda(api) {
     // Banda absoluta ancha a propósito: agarra el error de escala (×1.000 por un
     // documento "expresado en miles") sin opinar sobre si un club es grande o
     // chico. Un club profesional del mundo real no factura 0,2 M USD ni 2.000 M.
-    // (to-do 237 e) La decisión se toma después del recorrido (fueraDeBanda, abajo): hace falta la serie entera del club.
+    // La decisión se toma después del recorrido (fueraDeBanda, abajo): hace falta la serie entera del club.
     if (usd < 0.2 || usd > 2000) fueraDeBanda.push({ clubId, year, usd });
     // Un tramo corto de transición (period_months < 12, Admin/CONVENCIONES-DATOS.md) no se compara con años de 12 meses: fuera de outlier-liga y salto-interanual.
     if ((ym.periodMonths || 12) < 12) continue;
@@ -495,7 +495,7 @@ function checkMoneda(api) {
     (serie[clubId] = serie[clubId] || []).push({ year, usd, currency: ym.currency, soloMargenBruto: rev.filter((l) => l.amountNative).length === 1 && MARGEN_BRUTO_RE.test(rev.find((l) => l.amountNative).rawLabel || '') });
   }
 
-  // ESCALA FUERA DE BANDA, CONFIRMADA POR EL AÑO VECINO (to-do 237 e). La banda frena a clubes chicos reales de tercera división (Alverca
+  // ESCALA FUERA DE BANDA, CONFIRMADA POR EL AÑO VECINO. La banda frena a clubes chicos reales de tercera división (Alverca
   // 2022, 152.299,54 € ≈ US$ 0,16 M; Novorizontino 2015; Felgueiras 2021-22) y hasta acá cada uno pedía una entrada en audit-ignore.json.
   // Un error de escala (×1.000 por "en miles") salta contra los otros años del club; un club chico, no. COMPUERTA: otro ejercicio del club a
   // 2 años o menos está DENTRO de la banda y a menos de 20 veces de este -> P3 (aviso); si no, P0 como siempre.
@@ -556,12 +556,12 @@ function checkMoneda(api) {
 // nace con todas las filas en `null` a propósito: null es "nadie lo verificó
 // todavía". Esto cuenta lo que falta (para que el pendiente no dependa de que
 // alguien se acuerde) y avisa si un ejercicio real no tiene ni siquiera su fila.
-// --- CAJA Y DEUDA DESPROPORCIONADAS (to-do 260 e) ---------------------------
+// --- CAJA Y DEUDA DESPROPORCIONADAS ---------------------------
 // Un techo por proporción con los ingresos del mismo año, solo hacia arriba: caja más de 3 veces los ingresos o deuda más de 20 veces es un
 // error de escala o de fila, no un dato. Medido en lo cargado: el máximo real de caja es 2,53 veces (Atlético Mineiro 2023) y
 // el de deuda 13,7 veces (Novorizontino 2015). Casos que frena (corrida de caja-deuda.mjs del 2026-10-16, revertidos a mano): Hellas
 // Verona 2024 deuda 1,8e16; Milan 2009 deuda 163.739 M; Inter 2021 caja 97.884 M; Lazio 2008-2019. P1: caja-deuda.mjs y cargar.mjs
-// revierten solos lo que lo pase. (to-do 260 a, aprobado por Guido el 2026-10-17) PISO de caja, el mismo de caja-deuda.mjs: menos de 7e-5
+// revierten solos lo que lo pase. PISO de caja, el mismo de caja-deuda.mjs: menos de 7e-5
 // veces los ingresos es una tabla en miles leída en unidades (Porto 2016 4,8e-5, Milan 2008 2e-5, Lazio 2001 1,5e-6). Las cajas chicas de
 // verdad quedan arriba: Nottingham Forest 2024 1,0e-4 (29 mil £ con 290 M), Casa Pia 2025 1,5e-4. Sin piso de deuda: puede ser casi 0.
 const TECHO_CAJA = 3; const TECHO_DEUDA = 20; const PISO_CAJA = 7e-5;
@@ -678,7 +678,7 @@ function checkIndexFileRoto() {
   }
 }
 
-// --- El sponsor sin fuente lleva el registro de búsqueda (to-do 343, skill club-sourcing 0.5) -----------------------------------------------
+// --- El sponsor sin fuente lleva el registro de búsqueda -----------------------------------------------
 // tools/contexto-manual.json: `sin-fuente.sponsor` solo vale como registro { buscado, por, intentos } con tres clases sin contar Wikipedia, o como { legacy: true, texto } de un club y
 // año que están en tools/sponsor-legacy.json (la lista no crece). La compuerta de estadio-sponsor.mjs lo comprueba al cargar; esto no depende de que alguien la corra.
 function checkSponsorBusqueda() {
@@ -727,7 +727,7 @@ function checkComentariosPublicados() {
 }
 
 // --- D17b: el párrafo que explica netlify.toml, copiado en 3 archivos, con -
-//     números que se desincronizan (auditoría de docs, 2026-09-26) ----------
+//     números que se desincronizan ----------
 // POR QUÉ. `CLAUDE.md`, `Admin/ESTADO.md` y `Admin/CONVENCIONES.md` explican los
 // tres la misma mecánica de netlify.toml ("YA NO ES CIERTO DESDE EL 2026-09-20:
 // AHORA SÍ HAY netlify.toml...") con el mismo párrafo copiado a mano, y cada uno
@@ -830,7 +830,7 @@ function archivosVivos() {
     ...dir('js', js), ...dir('tools', n => js(n) || n.endsWith('.json')),
     ...dir('data', js), ...dir('data/lang', js),
     ...dir('data/club-leagues', js), ...dir('data/rankings', js),
-    // Todos los .md de las skills (to-do 327, C-10): paises/, referencia/, worktree.md… no solo cada SKILL.md.
+    // Todos los .md de las skills: paises/, referencia/, worktree.md… no solo cada SKILL.md.
     ...mdsDeSkills(),
     // Admin/ menos los dos históricos. Archive/ no entra: es una subcarpeta.
     ...dir('Admin', n => n.endsWith('.md') || n.endsWith('.html'))
@@ -920,7 +920,7 @@ function checkRutasMuertas() {
   }
 }
 
-// --- HISTORIA EN LOS DOCUMENTOS DE CRITERIO (to-do 327, C-9) -----------------
+// --- HISTORIA EN LOS DOCUMENTOS DE CRITERIO -----------------
 // Las skills, CLAUDE.md y los documentos de criterio dicen cómo se trabaja y qué hay HOY: sin «Versión N», sin fechas de decisión y
 // sin «to-do N» (eso va a Admin/CHANGELOG.md y Admin/TODO.md; ver CLAUDE.md, «Al empezar»). P3: es la lista de limpieza, no una alarma.
 // No mira contadores fijos («58 clubes»): el patrón da falsos positivos y no se midió su precisión.
@@ -961,7 +961,7 @@ function checkHistoriaEnDocs() {
   }
 }
 
-// --- PÁRRAFOS REPETIDOS ENTRE DOCUMENTOS VIVOS (to-do 327, C-11) -------------
+// --- PÁRRAFOS REPETIDOS ENTRE DOCUMENTOS VIVOS -------------
 // Una regla escrita en dos lugares se desincroniza: es lo que ensució las skills antes de la consolidación del 255. Compara párrafos de
 // 200 caracteres o más (normalizados) entre CLAUDE.md, las skills y los Admin/*.md de primer nivel. Las subcarpetas de Admin/ (plantillas
 // por país o por club, instrucciones de tandas, archivo) repiten texto a propósito y quedan afuera. P3.
@@ -1000,7 +1000,7 @@ function checkParrafosRepetidos() {
   }
 }
 
-// --- RAYA LARGA EN EL TEXTO VISIBLE (to-do 327, C-12) -------------------------
+// --- RAYA LARGA EN EL TEXTO VISIBLE -------------------------
 // Regla de estilo de Admin/CONVENCIONES.md: ni un em dash (—, U+2014) en el texto que ve el visitante. Mira data/lang/, js/, las páginas
 // .html de la raíz y las generadas (club/, liga/). Sin comentarios (JS y HTML) ni <script>/<style>. Permitido: «—» como símbolo de
 // «sin dato» (solo entre comillas, solo en una celda `>—<` o como leyenda `— = …`). No mira data/<país>/*.js: ahí un «—» es el texto
@@ -1056,8 +1056,8 @@ const GENERADORES = [
   ['faltantes-liga.mjs',        'data/faltantes/ y Admin/sourcing/pendientes.md', 'faltantes-desfasado'], // cambia con cada carga y cada sourcing
   ['auditoria.mjs',             'data/auditoria/ (quién audita cada balance, to-do 282)', 'auditoria-desfasado'],
   ['entidades.mjs',             'data/entidades/ (estructura de cada club, to-do 280)', 'entidades-desfasado'],
-  ['estimar.mjs',               'data/estimados/ (y ningún estimado al lado de un año real)', 'estimados-desfasado'], // to-do 270; sin la carpeta, no chequea
-  ['generate-sponsors.js',      'data/sponsors.js (sponsors y marcas de cada liga)', 'sponsors-desfasado'], // to-do 273; une equipos a clubes del sitio
+  ['estimar.mjs',               'data/estimados/ (y ningún estimado al lado de un año real)', 'estimados-desfasado'], // sin la carpeta, no chequea
+  ['generate-sponsors.js',      'data/sponsors.js (sponsors y marcas de cada liga)', 'sponsors-desfasado'], // une equipos a clubes del sitio
   ['generar-data.mjs',          'los data/<país>/<id>-data.js (se generan de su JSON: nunca a mano)', 'json-js-desfasado'], // el JSON es la fuente
   ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v2.json)', 'json-no-valida'],
   ['generar-correcciones.mjs',  'data/correcciones/ (el registro público de correcciones, to-do 247)', 'correcciones-desfasado'],
@@ -1498,7 +1498,7 @@ function checkFuentesPublicas(api) {
     add('P3', 'fuente-no-primaria-sin-nota', `${sinNota} documentos que no son fuente primaria y no tienen publicNote. El nivel solo dice "réplica" o "prensa": conviene una frase que diga por qué`);
   }
 
-  // (to-do 345, Auditora 5) UNA FUENTE QUE SALIÓ DE UN INFORME XHTML (iXBRL) Y NO TIENE LA URL DEL DEPÓSITO OFICIAL (Virk o el club). Se la reconoce por el mismo cruce que
+  // UNA FUENTE QUE SALIÓ DE UN INFORME XHTML (iXBRL) Y NO TIENE LA URL DEL DEPÓSITO OFICIAL (Virk o el club). Se la reconoce por el mismo cruce que
   // `fuente.mjs --propuesta`: el id de la fuente es <clubId>-<nombre del .md sin el club>, y el encabezado del .md dice que lo escribió xhtml-aarsrapport.mjs. La url nunca puede ser
   // nuestro PDF de ancla (la impresión de Chrome, no el original): P1 si termina en .pdf o empieza con Clubes/. Sin url: P3.
   const slugN = (t) => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -1608,7 +1608,7 @@ function checkCategorizacion(api) {
     if (SUELDOS && sum(exp) !== 0 && cat(SUELDOS) === 0 && (!BOLSON || cat(BOLSON) === 0) && !(ym && ym.incluidoEn && ym.incluidoEn[SUELDOS])) {
       add('P2', 'sin-salarios', `${ref(clubId, year)}: no hay ni una línea en '${SUELDOS}' ni un bolsón sin desglosar — todo club paga sueldos, probablemente quedaron enterrados en otra categoría`);
     }
-    // SUELDOS POSIBLEMENTE ESCONDIDOS (to-do 232 s): con el costo de personal del ejercicio ya leído de su nota (fiscalYearMeta.staffCost,
+    // SUELDOS POSIBLEMENTE ESCONDIDOS: con el costo de personal del ejercicio ya leído de su nota (fiscalYearMeta.staffCost,
     // caja-deuda.mjs --personal), las líneas wages_squad suman menos de la mitad. Caso que lo motivó: PAOK, 42 M en "Αμοιβές τρίτων" del
     // cuadro de fútbol contra 9,2 M de costo de personal en la nota 17; un subagente lo notó leyendo, esto lo hace aparecer solo.
     // también acá la marca `incluye` es lo resuelto: el costo de personal se leyó y el documento no deja separarlo
@@ -1686,12 +1686,12 @@ function checkEscala(api) {
   // son deliberadamente altos y solo existen para avisar si algún día se van de escala.
   // EL DÍA QUE SÍ HAYA QUE PARTIRLOS no va a ser por el tamaño: va a ser cuando un grep
   // devuelva decenas de bloques irrelevantes, y eso se arregla con un índice, no partiendo.
-  // (Versión 598, 2026-10-08, decisión de Guido) `Admin/CHANGELOG.md` llegó a 724 KB con dos mitades en orden contrario y se partió UNA vez, por
+  // `Admin/CHANGELOG.md` llegó a 724 KB con dos mitades en orden contrario y se partió UNA vez, por
   // ÉPOCA y no por tamaño ni por año: las Versiones 10 a 299 (sourcing y onboarding manual, antes del pipeline) viven en
   // `Admin/Archive/CHANGELOG-v010-v299.md`, de la más nueva a la más vieja; el CHANGELOG sigue desde la 300 y su cabecera dice dónde está lo anterior.
   // No se parte en rangos: una búsqueda tiene que elegir entre dos archivos como mucho.
   for (const [f, limite] of [['Admin/CHANGELOG.md', 400], ['Admin/finance-of-sports-project.md', 1200], ['index.html', 150], ['Admin/ESTADO.md', 60], ['Admin/TODO.md', 60],
-    // (to-do 325 c) el resto de Admin/*.md con un umbral común: avisa si alguno se va de escala.
+    // el resto de Admin/*.md con un umbral común: avisa si alguno se va de escala.
     ...fs.readdirSync(path.join(ROOT, 'Admin')).filter(n => /\.md$/.test(n) && !/^(CHANGELOG|finance-of-sports-project|ESTADO|TODO)\.md$/.test(n)).map(n => ['Admin/' + n, 250])]) {
     const kb = fs.statSync(path.join(ROOT, f)).size / 1024;
     if (kb > limite) add('P3', 'archivo-pesado', `${f}: ${kb.toFixed(0)} KB (umbral ${limite} KB) — candidato a partir`);
@@ -1699,7 +1699,7 @@ function checkEscala(api) {
 }
 
 // --- H: higiene de runtime que sí se puede ver desde Node -------------------
-// GESTIONES (to-do 147, paso 12): data/gestiones/<país>.js. Lo que el sitio muestra como botón y como
+// GESTIONES: data/gestiones/<país>.js. Lo que el sitio muestra como botón y como
 // franja tiene que ser verificable: una gestión confirmada sin fuente es un dato sin respaldo (P1);
 // una fecha mal escrita, un "hasta" antes del "desde" o dos gestiones del mismo club que se pisan
 // asignan mal los ejercicios en silencio (P1); un club que no existe es una gestión que nunca se ve
@@ -1886,7 +1886,7 @@ function checkHigiene(api) {
   }
   for (const f of fs.readdirSync(path.join(ROOT, 'data/lang')).filter(f => f.endsWith('.js') && f !== 'langs.js')) {
     const src = fs.readFileSync(path.join(ROOT, 'data/lang', f), 'utf8');
-    // Comillas simples O dobles (arreglado en la Versión 125): el regex solo aceptaba
+    // Comillas simples O dobles: el regex solo aceptaba
     // simples y `data/lang/en.js` escribe sus 134 claves con dobles, así que `definidas`
     // quedaba VACÍO y el chequeo reportaba como "sin traducir" absolutamente todas las
     // claves usadas, de ahí las "88 claves" de la primera corrida, que no era el número real.
@@ -1984,7 +1984,7 @@ function listarFx(api) {
 }
 
 // ---------------------------------------------------------------------------
-// DATOS COMO JSON CON ESQUEMA (to-do 245, fase 2): el JSON de cada club (data/<país>/<id>.json) es la FUENTE. Que valide contra el esquema (`json-no-valida`)
+// DATOS COMO JSON CON ESQUEMA: el JSON de cada club (data/<país>/<id>.json) es la FUENTE. Que valide contra el esquema (`json-no-valida`)
 // y que el data file generado coincida con él (`json-js-desfasado`) lo chequean, como P1, los generadores de checkGenerados() (validar-esquema-json.mjs y
 // generar-data.mjs --check). Acá van solo los AVISOS del validador (el JSON valida pero tiene algo raro: una fuente o una gestión que vive fuera del archivo),
 // P2 que no frenan.
@@ -2022,7 +2022,7 @@ function checkDeportes() {
   if (fallo) add('P2', 'deporte-sin-tabla', lineas.filter((l) => l.startsWith('ERROR')).slice(0, 3).join(' | ') || lineas.slice(-1)[0] || 'tools/deporte-club.mjs falló');
 }
 
-// (to-do 339 c) LA COMA DECIMAL QUE EL OCR SE COME. Una tabla en £m / M con un decimal sale de la transcripción con «Central income 5.3 74 (2.1)» por 7.4 (Bath 2023-24 L162).
+// LA COMA DECIMAL QUE EL OCR SE COME. Una tabla en £m / M con un decimal sale de la transcripción con «Central income 5.3 74 (2.1)» por 7.4 (Bath 2023-24 L162).
 // Regla: una fila de tres cifras A B C con al menos una con decimal, donde C NO es la diferencia de A y B, pero SÍ lo es si un entero sin coma (A o B) se divide por 10.
 // Aviso P2, no frena nada: Admin/mediciones/339-condicion-coma.md (medida: 4 marcadas en 3.677 .md, 0 falsas). Se silencia con tools/audit-ignore.json (code coma-comida) tras mirar la fuente.
 // Una cifra registrada en Admin/registros/rarezas.jsonl (tools/rarezas.mjs: ya se miró y es así en el documento) no se marca; otra cifra de la misma tabla, sí.
@@ -2096,7 +2096,7 @@ function pruebaDeDeporte(api) {
 // P3 por club, con la lista de años. Se silencia por club en tools/audit-ignore.json, con motivo, después de mirarlo. Medido al nacer: 84 club-años en 51 clubes (24 de hueco y 60 de cola).
 const { temporada: temporadaDe } = require('./temporada.js'); // la misma que usa tools/faltantes-liga.mjs
 function checkEjercicioSinRastro() {
-  const RECIENTE_MESES = 9; // el mismo de tools/faltantes-liga.mjs (Guido, 2026-10-17): si cambia allá, cambia acá (el .mjs corre su main al importarlo)
+  const RECIENTE_MESES = 9; // el mismo de tools/faltantes-liga.mjs: si cambia allá, cambia acá (el .mjs corre su main al importarlo)
   const dirFal = path.join(ROOT, 'data/faltantes');
   if (!fs.existsSync(dirFal)) return;
   const enFaltantes = {}; // clubId -> Set de años, con cualquier estado

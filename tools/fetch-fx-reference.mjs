@@ -57,7 +57,7 @@
 // segunda fuente independiente día por día (BCE cruzado, SNB fin de mes, ČNB) —
 // ver el comentario de cada entrada para las diferencias esperables.
 //
-// ARQUITECTURA (to-do 91, ya cerrado): esta serie completa NUNCA va a
+// ARQUITECTURA: esta serie completa NUNCA va a
 // `data/currency-map.js` — ese archivo es eager, se baja en cada pageview del
 // sitio, y `FX_CLOSE` tiene que seguir siendo la lista CURADA y chica de
 // cotizaciones que algún club realmente usa. La serie completa vive acá, en
@@ -873,7 +873,7 @@ async function runOne(code, from, to) {
 }
 
 // ============================================================================
-// DEFLACTORES DEL PBI (to-do 147, paso 11). Viven al lado de las series de tipo de cambio porque son
+// DEFLACTORES DEL PBI. Viven al lado de las series de tipo de cambio porque son
 // la otra mitad de la misma cuenta: el tipo de cambio de cada cierre lleva un monto a USD (o EUR) de
 // ESE año, y el deflactor lo lleva a USD de hoy. Mismo criterio que el resto de este archivo: fuente
 // oficial, endpoint público sin key, la serie completa guardada en tools/fx-reference/. A diferencia

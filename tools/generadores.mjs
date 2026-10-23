@@ -1,11 +1,11 @@
 // ============================================================================
-// tools/generadores.mjs — LOS GENERADORES QUE SE CORREN ANTES DE LA AUDITORÍA al escribir en el sitio (to-do 298 x), en UN solo lugar.
+// tools/generadores.mjs — LOS GENERADORES QUE SE CORREN ANTES DE LA AUDITORÍA al escribir en el sitio, en UN solo lugar.
 //
 // POR QUÉ. cargar.mjs (publicarCambios) y alta-club.mjs (el alta) tenían cada uno su lista. La del alta no tenía faltantes-liga.mjs ni
 // estimar.mjs: un club nuevo deja desfasados data/faltantes/ y data/estimados/, audit.js da dos P1 (faltantes-desfasado,
 // estimados-desfasado) y el alta se revierte entera. Caso: FC Volendam (lote 93), "Alta REVERTIDA ... P1 2"; frenaba toda alta nueva.
 //
-// (to-do 298 ad, ok de Guido 2026-10-19) tools/entidades.mjs va DESPUÉS de generate-rankings.js: los totales de ingresos de cada grupo multiclub
+// tools/entidades.mjs va DESPUÉS de generate-rankings.js: los totales de ingresos de cada grupo multiclub
 // salen de data/rankings/, así que al escribir un año de un club de un grupo (Lommel SK, de City Football Group) data/entidades/ queda viejo, la
 // auditoría da `entidades-desfasado` (P1) y el año se revertía. Medido: cambiar el ingreso de Lommel 2025 en el ranking dejaba
 // "data/entidades/ desactualizado: _grupos-detalle.js".

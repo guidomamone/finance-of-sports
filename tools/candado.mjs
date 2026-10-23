@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/candado.mjs — UN SOLO PROCESO A LA VEZ ESCRIBIENDO EL REGISTRO (to-dos 162 y 164, ok de Guido).
+// tools/candado.mjs — UN SOLO PROCESO A LA VEZ ESCRIBIENDO EL REGISTRO.
 //
 // POR QUÉ. lote.mjs, pipeline.mjs y cargar.mjs --escribir reescriben enteros el registro (Admin/registros/transcripciones-estado.jsonl) y otros
 // archivos compartidos (la lista temporal del lote, el historial, la cola). Dos a la vez se pisan. Caso: el lote 20 se lanzó dos veces

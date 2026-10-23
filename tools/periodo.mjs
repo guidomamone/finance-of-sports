@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/periodo.mjs — qué PERÍODO cubre un documento, leído del CONTENIDO del .md (no del nombre del archivo). Gratis, sin API.
 //
-// POR QUÉ EXISTE (pedido de Guido, 2026-09-30): "cuando haya balances trimestrales, anuales (no temporada sino año), bimestrales o lo que
+// POR QUÉ EXISTE: "cuando haya balances trimestrales, anuales (no temporada sino año), bimestrales o lo que
 // fuera, deberían quedar marcados para que luego se los agrupe cuando se consigan los otros reportes". El caso que lo disparó: Galatasaray
 // `galatasaray-sportif-bilanco-31-05-2019.pdf`, cuyo nombre dice cierre anual al 31/05/2019 pero cuyo contenido es un informe INTERMEDIO de
 // tres meses al 31/08/2019 ("31 Ağustos 2019 ... Sona Eren Üç Aylık Ara Hesap Dönemi"). Cargarlo como ejercicio sería un error; tirarlo,
@@ -101,14 +101,14 @@ function fechasDe(linea) {
   for (const x of t.matchAll(/(?<!\d)(\d{1,2})[./-](\d{1,2})[./-](\d{4})(?!\d)/g)) { const d = +x[1], m = +x[2]; if (m >= 1 && m <= 12 && d >= 1 && d <= 31) out.push({ a: +x[3], m, d, i: x.index, fin: x.index + x[0].length }); }
   for (const x of t.matchAll(/(?<!\d)(\d{4})-(\d{2})-(\d{2})(?!\d)/g)) out.push({ a: +x[1], m: +x[2], d: +x[3], i: x.index, fin: x.index + x[0].length });
   for (const x of t.matchAll(new RegExp(`(?<!\\d)(\\d{1,2})\\.?\\s*(?:de\\s+)?(${MES_RE})\\.?,?\\s*(?:de\\s+|del\\s+)?(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[2]), d: +x[1], i: x.index, fin: x.index + x[0].length });
-  // (to-do 298 m2, ok de Guido 2026-10-19) "mes día de año" con el "de" antes del año ("diciembre 31 de 2025"): no se leía y el cierre salía de la otra fecha del título
+  // "mes día de año" con el "de" antes del año ("diciembre 31 de 2025"): no se leía y el cierre salía de la otra fecha del título
   // ("... y diciembre 31 2024"): Unión Magdalena 2025 quedó con cierre 2024-12-31 y se extrajo la columna 2024. Medido sobre 3.646 .md: 31 pasan de sin cierre a cierre leído, 1 cambia (Deportes Tolima 2016, 2015 -> 2016, correcto y sin cargar).
   for (const x of t.matchAll(new RegExp(`(${MES_RE})\\.?\\s+(\\d{1,2}),?\\s+(?:de\\s+|del\\s+)?(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[1]), d: +x[2], i: x.index, fin: x.index + x[0].length });
   return out.sort((p, q) => p.i - q.i);
 }
 const iso = (f) => `${f.a}-${String(f.m).padStart(2, '0')}-${String(f.d).padStart(2, '0')}`;
 
-// ---------------------------------------------------------------- ESCALÓN 0: el período etiquetado del iXBRL (to-do 356, pedido de Onboarding 9)
+// ---------------------------------------------------------------- ESCALÓN 0: el período etiquetado del iXBRL
 // Un .md que salió de un informe XHTML (tools/xhtml-aarsrapport.mjs) tiene al lado el XHTML, y el XHTML ETIQUETA el período: Companies House
 // `EndDateForPeriodCoveredByReport` / `StartDateForPeriodCoveredByReport`, el registro danés `ReportingPeriodEndDate` / `ReportingPeriodStartDate`
 // (sin el prefijo, que cambia: d, ns10, e). El texto de esos .md no lo dice en un título: 16 de los 68 británicos del lote 133 salían «anual, sin
@@ -218,7 +218,7 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
     }
     if (res) break;
   }
-  // 2b. (to-do 232 i) RANGO QUE NO EMPIEZA EL DÍA 1: el primer ejercicio de una sociedad recién constituida. Kifisia 2022 dice "09/08/2021 –
+  // 2b. RANGO QUE NO EMPIEZA EL DÍA 1: el primer ejercicio de una sociedad recién constituida. Kifisia 2022 dice "09/08/2021 –
   // 30/06/2022" (L93) y el paso 2 lo ignoraba (exige inicio el día 1): salía anual por descarte, 12 meses, y había que anotarlo a mano en
   // Admin/registros/documentos-parciales.txt. Solo si el paso 2 no decidió, con UNA compuerta: inicio anterior al fin (fin de mes) y MENOS de
   // 12 meses entre los dos, y es el ÚNICO rango de ese ejercicio en los títulos. "Rango" = dos fechas unidas SOLO por un separador
@@ -250,7 +250,7 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
   // futuro de verdad (Boca "Presupuesto 26-27" y Racing "presupuesto2026-27", 2027-06-30, quedaban sin fecha).
   const TOPE = `${new Date().getFullYear() + 2}-12-31`;
   const cuenta = new Map();
-  // (to-do 298 m2, ok de Guido 2026-10-19) EJERCICIO Y COMPARATIVO EN UN MISMO TÍTULO: si la línea trae otra fecha del mismo día y mes un año DESPUÉS, esta es el comparativo y no cuenta
+  // EJERCICIO Y COMPARATIVO EN UN MISMO TÍTULO: si la línea trae otra fecha del mismo día y mes un año DESPUÉS, esta es el comparativo y no cuenta
   // como cierre ("diciembre 31 de 2025 y diciembre 31 2024": solo cuenta 2025). Unión Magdalena 2025 salía con cierre 2024-12-31 (tres títulos con 2024 contra dos con 2025) y el pipeline
   // extrajo la columna 2024. Medido sobre 3.646 .md: 31 pasan de sin cierre a cierre leído, 2 cambian y quedan bien (Deportes Tolima 2016, Universidad de Chile 2014; sin cargar).
   for (const l of lineas) { const fl = fechasDe(l.texto); for (const f of fl) { if (!(finDeMes(f) && f.a >= 1950 && iso(f) <= TOPE)) continue; if (fl.some((g) => g !== f && finDeMes(g) && g.a === f.a + 1 && g.m === f.m && g.d === f.d)) continue; cuenta.set(iso(f), (cuenta.get(iso(f)) || 0) + 1); } }
@@ -264,7 +264,7 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
         : { tipo: 'intermedio', meses: null, cierre: masCitado, evidencia: { pagina: l.pagina, texto: l.texto.slice(0, 200) }, confianza: 'media' };
     }
   }
-  // 3b. (to-do 298 f) EL PERÍODO QUE DECLARA EL FORMULARIO. Las cuentas NBB belgas y las estonias dicen el ejercicio en una frase fija, en
+  // 3b. EL PERÍODO QUE DECLARA EL FORMULARIO. Las cuentas NBB belgas y las estonias dicen el ejercicio en una frase fija, en
   // celdas de una tabla o en prosa, que los pasos de arriba no ven (solo leen títulos fuera de tablas): "| met betrekking tot het boekjaar
   // dat de periode dekt van | 01-07-2018 | tot | 30-06-2019 |" (Lommel SK 2019), "| ... dekt van | 01-07-2020 tot 30-06-2021 |" (RWDM 2021),
   // "... dekt van 29-06-2018 tot 30-06-2019" en prosa (Beerschot 2019 -correction), "exercice couvrant la période du ... au ...", y en
@@ -281,7 +281,7 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
       let tx = limpio(raw); const t = norm(tx);
       const k = FRASES.map((re) => t.search(re)).find((x) => x >= 0);
       if (k === undefined) return;
-      // (to-do 298 z) la frase sola en su línea y las fechas en las siguientes ("…la période du" / "12-05-2017" / "au" / "30-06-2018", RAAL La
+      // la frase sola en su línea y las fechas en las siguientes ("…la période du" / "12-05-2017" / "au" / "30-06-2018", RAAL La
       // Louvière 2018, Sint-Truiden 2013, Zulte Waregem 2012): se siguen leyendo hasta 8 líneas más mientras falten las dos fechas
       for (let j = i + 1; j <= i + 8 && j < lineas.length && fechasDe(tx).filter((f) => f.i >= k).length < 2; j++) tx = `${tx} ${limpio(lineas[j])}`.trim();
       const fs = fechasDe(tx).filter((f) => f.i >= k); if (fs.length >= 2) cands.push({ a: fs[0], b: fs[1], pagina: p.n, texto: tx });
@@ -329,7 +329,7 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
   if (!res) res = { tipo: 'anual', meses: 12, cierre: masCitado, evidencia: null, confianza: masCitado ? 'media' : 'baja' };
   if (res.cierre && res.cierre > TOPE) res.cierre = null; // la compuerta, también para lo leído en los pasos 1-3
   if (!res.cierre) res.cierre = masCitado;
-  // ESCALÓN 1 DE LA FECHA DE CIERRE (Versión 369, aprobado por Guido el 2026-10-02): si los títulos de las 6 primeras páginas no traen el
+  // ESCALÓN 1 DE LA FECHA DE CIERRE: si los títulos de las 6 primeras páginas no traen el
   // cierre, se lee de los ENCABEZADOS DE COLUMNA de las tablas del documento entero: la fecha de la primera columna con fecha, la más repetida.
   // COMPUERTA: la columna de al lado es la misma fecha un año antes (el par ejercicio + comparativo) y no pasa el tope de arriba. Caso real:
   // Fortaleza CEIF 2017-2020, cuyas primeras páginas son políticas contables; sus notas dicen "| | A 31 de Diciembre de 2020 | A 31 de
@@ -348,7 +348,7 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
     const [mejor, v] = [...votos].sort((a, b) => b[1].n - a[1].n || (a[0] < b[0] ? 1 : -1))[0] || [];
     if (mejor) { res.cierre = mejor; res.cierreDe = 'encabezados de tablas (escalón 1)'; res.evidencia = res.evidencia || { pagina: v.pagina, texto: v.texto }; res.confianza = 'media'; }
   }
-  // ESCALÓN "PAR DE ENCABEZADO" (to-do 237 a + ac). En un anual por descarte, el cierre salía de la fecha MÁS CITADA en los títulos, y la más
+  // ESCALÓN "PAR DE ENCABEZADO". En un anual por descarte, el cierre salía de la fecha MÁS CITADA en los títulos, y la más
   // citada puede ser otra cosa: la fecha de firma (Alverca 2022-23: "Alverca, 29 de Setembro de 2023" dos veces, cuando el documento dice
   // "Período findo em 30 de Junho de 2023" y sus columnas "30/06/2023 | 30/06/2022") o el fin de mandato de los órganos sociales (Benfica
   // 2013-14: "30/06/2016" en la tabla de mandatos; quedó con cierre 2017-06-30). Las dos se arreglaron con ajustes `cierre`. Escalón, UNA
@@ -383,7 +383,7 @@ function terminar(res, nombreArchivo) {
   else if (res.cierre && !fn) {
     const ys = [...nom.matchAll(/(?<!\d)(19|20)\d{2}(?!\d)/g)].map((x) => x[0]);
     // Temporada abreviada "2009-10" / "2023_24": el año de CIERRE es el segundo (misma regla que guessYear() de onboard.mjs). BUG REAL
-    // (encontrado probando tools/cargar.mjs, 2026-09-30): el regex de arriba solo veía "2009", y 165 de los 226 documentos marcados
+    //: el regex de arriba solo veía "2009", y 165 de los 226 documentos marcados
     // `nombreNoCoincide` eran temporadas así (Los Andes 2009-10 con cierre 2010-06-30, Nacional 2023-24, Lazio 2024-25, los alemanes).
     for (const m of nom.matchAll(/(?<!\d)((?:19|20)\d{2})[-_](\d{2})(?!\d)/g)) { const fin = Number(m[1].slice(0, 2) + m[2]); if (fin === Number(m[1]) + 1) ys.push(String(fin)); }
     if (ys.length && !ys.includes(res.cierre.slice(0, 4))) res.nombreNoCoincide = true;

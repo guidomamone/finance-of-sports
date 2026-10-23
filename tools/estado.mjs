@@ -81,7 +81,7 @@ const edad = Math.round((Date.now() - statSync(regPath).mtimeMs) / 60000);
 // En qué etapa está cada documento lo decide tools/etapa-doc.mjs, la MISMA función que usa el resumen del inventario. Cada fila: clave de
 // etapa-doc, qué significa, qué le falta, con qué se avanza, US$ por PDF (número, o función del PDF: localizar + extraer estimado, V446).
 const usdLocalizarYExtraer = (pdf) => 0.05 + estimarExtraerSinBloques(pdf).usd;
-// ETAPA 2 SIN .md, POR PÁGINAS (Versión 488, to-do 140m): con un costo fijo de US$ 0,20 por PDF el tablero subestimaba los PDFs largos (Lazio,
+// ETAPA 2 SIN .md, POR PÁGINAS: con un costo fijo de US$ 0,20 por PDF el tablero subestimaba los PDFs largos (Lazio,
 // 19 PDFs de 151-208 páginas: ~US$ 4 acá contra US$ 25,60 del ensayo de pipeline.mjs). Ahora usa la MISMA cuenta que ese ensayo
 // (tools/resolver-inventario.mjs, dryRunDoc, caso "sin .md"): Mistral en todas las páginas + segunda voz en el 58% que tiene números
 // = 0,004 + 0,58 × (0,002 + 0,6 × 0,25 × 0,02 + 0,15 × 0,02) ≈ US$ 0,0086 por página. Las páginas salen de la caché que mantiene
@@ -124,7 +124,7 @@ const ETAPAS = [
     ['e9-cargado', 'Ejercicio cargado', 'Nada (caja y deuda: caja-deuda.mjs --club <id>).', '—', 0],
   ]],
 ];
-// QUÉ TOOLS HACEN CADA ETAPA (pedido de Guido, 2026-09-30). En orden de uso; el detalle de cada una está en su cabecera. Si una tool entra o
+// QUÉ TOOLS HACEN CADA ETAPA. En orden de uso; el detalle de cada una está en su cabecera. Si una tool entra o
 // sale de una etapa, actualizar esta lista (no se deduce sola del código).
 const TOOLS = {
   '2': [
@@ -184,7 +184,7 @@ for (const k of Object.keys(cuenta).filter((k) => !conocidas.has(k))) console.lo
 // cada parcial con lo que falta, en cada corrida: es el aviso para buscar el otro tramo en el sourcing.
 for (const [pdf, p] of PARCIALES) console.log(`         ${pdf.replace(/^Clubes\//, '')}: cubre ${p.cubre}; falta ${p.falta}`);
 console.log(`\n  Costo estimado para llevar todo hasta "propuesta de carga": ~US$ ${Math.round(total)} (API; sesión de Claude: 0 tokens)`);
-// PROCESO VIEJO, solo como referencia (Versión 448, decisión de Guido): los .rubros.json que armó pipeline.mjs (sin `origen`) no cuentan
+// PROCESO VIEJO, solo como referencia: los .rubros.json que armó pipeline.mjs (sin `origen`) no cuentan
 // como avance del proceso nuevo. El proceso viejo se retiró de pipeline.mjs en la Versión 529: estos son los que quedaron de antes.
 const viejos = R.filter((e) => !e.cargado && e.md && rubrosViejo(e)).length;
 if (viejos) console.log(`  Referencia, proceso viejo: ${viejos} documentos sin cargar tienen lista de rubros de pipeline.mjs (no cuenta como avance acá).`);

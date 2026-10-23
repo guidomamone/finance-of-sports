@@ -3,9 +3,9 @@
 // tools/validar-bloques.mjs — ETAPA 4 del proceso nuevo: cada número de los bloques que eligió localizar.mjs se confirma contra una FUENTE
 // INDEPENDIENTE DE MISTRAL. Gratis en PDFs digitales; ~US$ 0,003 por página en escaneos (Gemini).
 //
-// POR QUÉ (Versión 324; Admin/PIPELINE.md, etapa 4). Mistral puede INVENTAR un número en un escaneo con la misma
+// POR QUÉ. Mistral puede INVENTAR un número en un escaneo con la misma
 // seguridad que uno bien leído (Admin/Archive/test-costo-transcripcion.md). El chequeo "el importe está tal cual en la página" del test
-// localizar-extraer compara contra la TRANSCRIPCIÓN, así que un número inventado por Mistral pasaba igual (lo vio Guido el 2026-10-01). Y hoy
+// localizar-extraer compara contra la TRANSCRIPCIÓN, así que un número inventado por Mistral pasaba igual. Y hoy
 // la etapa 3 del pipeline valida el documento ENTERO (~US$ 140 pendientes) cuando solo importan las tablas que se cargan. Acá se valida solo
 // eso, y contra el PDF:
 //   a) PDF DIGITAL (texto propio usable, según verifyNumbers() de tools/verify-numbers.mjs): cada número del bloque tiene que estar en el texto
@@ -137,7 +137,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     else { usd += r.costo; console.log(`  ${pdf}: ${r.datos.modo}, ${r.datos.confirmados} números confirmados, ${r.datos.noConfirmados.length} sin confirmar`); }
   }
   console.log(`\n${ARGS.includes('--ejecutar') ? 'Gastado' : 'Costo estimado'}: US$ ${usd.toFixed(2)}`);
-  // (to-do 339, frenado de Bath) Validar a mano dejaba el registro sin la marca listo-para-jev: la pone verificar.mjs --rubros (avisarRegistro) y la línea del registro la refresca
+  // Validar a mano dejaba el registro sin la marca listo-para-jev: la pone verificar.mjs --rubros (avisarRegistro) y la línea del registro la refresca
   // inventario-transcripciones.mjs; sin eso jev-categorizar --listos decía «0 documentos». Se encadenan acá (gratis, lo mismo que hace el lote). `--sin-seguir` los apaga.
   if (ARGS.includes('--ejecutar') && validados.length && !ARGS.includes('--sin-seguir')) {
     console.log(`\nRegistro al día para ${validados.length} documento(s): verificar --rubros e inventario (gratis)...`);

@@ -3,7 +3,7 @@
 // filas ya verificadas. Gratis: lee los Generados/**/<doc>.verificacion.json (la etapa 6 deja escrito el origen de cada línea:
 // 'nota que desglosa "Custo com futebol"').
 //
-// POR QUÉ (Versión 403, auditoría del pipeline del 2026-10-02, diseño aprobado por Guido): lo CARGADO en el sitio (data/*/*-data.js) no guarda
+// POR QUÉ: lo CARGADO en el sitio (data/*/*-data.js) no guarda
 // en qué nota estaba cada fila, y el precedente "sin contexto" de la etapa 7 decidía por la etiqueta sola. Casos reales, Goiás:
 //   - "Despesa com pessoal" 2014 (nota de fútbol, 21.628.163) tomó el precedente de 2022-2023, donde la misma etiqueta está en la nota
 //     ADMINISTRATIVA: salió gastos generales en vez de sueldos del plantel;
@@ -30,8 +30,8 @@ export const sinMarca = (s) => normalizar(String(s || '')).replace(/\s*\((?:[a-z
 // al menos una -> misma nota. "(-) Despesas com futebol profissional e amador" y "Custo com futebol" comparten "futeb"; con "Despesas
 // administrativas e gerais" no comparten nada. 'estado' solo es igual a 'estado'.
 const GENERICAS = new Set(['gasto', 'gastos', 'despesa', 'despesas', 'custo', 'custos', 'costo', 'costos', 'total', 'totales', 'ingreso', 'ingresos', 'receita', 'receitas', 'liquida', 'liquidas', 'nota', 'notas', 'otros', 'otras', 'outros', 'outras', 'siguiente', 'detalle', 'conformados', 'diciembre', 'dezembro', 'terminados', 'anos', 'años', 'actividades', 'atividades', 'ordinarias', 'operacion', 'operacionales', 'operacionais', 'expenses', 'income', 'revenue', 'other', 'costs',
-  'εξοδα', 'εσοδα', 'κοστοσ', 'συνολο', 'λοιπα', 'λοιπεσ', 'σημειωση', 'расходы', 'доходы', 'итого', 'прочие']); // (to-do 232 h) griego y cirílico, normalizados
-// (to-do 232 h) también letras GRIEGAS y CIRÍLICAS: con [a-z] un título griego no dejaba ninguna raíz y "sin raíces" da "misma nota", así
+  'εξοδα', 'εσοδα', 'κοστοσ', 'συνολο', 'λοιπα', 'λοιπεσ', 'σημειωση', 'расходы', 'доходы', 'итого', 'прочие']); // griego y cirílico, normalizados
+// también letras GRIEGAS y CIRÍLICAS: con [a-z] un título griego no dejaba ninguna raíz y "sin raíces" da "misma nota", así
 // que en PAOK la nota del departamento de fútbol ("Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος") y la de administración ("Έξοδα διοίκησης")
 // eran la misma. El texto latino se parte igual que antes.
 const raices = (t) => new Set(sinMarca(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^a-z\u03b1-\u03c9\u0430-\u044f\u0451]+/).filter((w) => w.length > 3 && !GENERICAS.has(w)).map((w) => w.slice(0, 5)));
@@ -83,7 +83,7 @@ export const padreEnDoc = (md, lado, label) => padres().porDoc.get(md)?.get(`${l
 export const padreEnClub = (club, year, lado, label) => padres().porClub.get(`${club}|${year}|${lado}|${sinMarca(label)}`) ?? null;
 void relative;
 
-// CONTEXTO DE UNA FILA PARA COMPARAR ENTRE CLUBES (to-do 152, escalón B). Si una nota la abre: la nota ("nota:per servizi"). Si es una fila del
+// CONTEXTO DE UNA FILA PARA COMPARAR ENTRE CLUBES. Si una nota la abre: la nota ("nota:per servizi"). Si es una fila del
 // ESTADO, padreEnDoc() dice solo "estado", que no distingue nada: ahí el contexto es el RENGLÓN TÍTULO más cercano de arriba en la misma tabla
 // (la fila sin importes: "titulo:per il personale"). Caso: "altri costi" es wages_squad bajo "9) per il personale" y otra cosa bajo
 // "14) oneri diversi". Sin contexto, null (y el escalón B no decide).

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/texto-propio-a-md.mjs — ETAPA 2 (transcribir), ESCALÓN 1 (Versión 395, escalera aprobada por Guido el 2026-10-02): rearma
+// tools/texto-propio-a-md.mjs — ETAPA 2 (transcribir), ESCALÓN 1: rearma
 // páginas del .md con el TEXTO PROPIO del PDF (el que escribió el programa que generó el PDF, no una lectura de imagen). Gratis, sin API.
 //
 // POR QUÉ. En un PDF digital, el texto propio es el original: no se "lee", así que no puede confundir un dígito. Mistral, en cambio,
@@ -98,7 +98,7 @@ function cortesHorizontales(ws) {
 
 const soloImportes = (ws) => renglones(ws).every((r) => r.ws.every((w) => NUM_RE.test(w.t) || /^(19|20)\d{2}$/.test(w.t) || /^\d{2}\/\d{2}\/\d{4}$/.test(w.t)));
 
-// MÉTODO "regiones" (escalón 1 del rearmado, Versión 397): cortes alternados (XY-cut), SOLO si el documento rearmado con "columnas" no
+// MÉTODO "regiones": cortes alternados (XY-cut), SOLO si el documento rearmado con "columnas" no
 // cerró (lote.mjs, camino de error). Una página de diario no tiene columnas parejas en toda la altura
 // (Goiás 2010, pág. 1: arriba el balance con sus columnas, abajo el estado de resultados y el flujo de caja con otras; un solo corte vertical
 // para toda la página no existía y el estado salió mezclado con el flujo de caja, renglón por renglón). Se prueba un corte vertical; si no
@@ -126,7 +126,7 @@ function regiones(ws, prof = 0) {
   return [ws];
 }
 
-// MÉTODO "columnas" (escalón 0 del rearmado, Versión 395): huecos verticales que casi ningún renglón cruza EN TODA LA PÁGINA
+// MÉTODO "columnas": huecos verticales que casi ningún renglón cruza EN TODA LA PÁGINA
 function columnas(ws, ancho) {
   const R = renglones(ws);
   const W = Math.ceil(ancho || Math.max(...ws.map((w) => w.x1)) + 1);
@@ -261,7 +261,7 @@ export function paginasARearmar(pdfRel, mdRel, registroDoc = null) {
   const vf = resolve(ROOT, derivado(mdRel, '.verificacion.json', { crear: false }));
   // (el estado final, no solo el resultado: Goiás 2015 "cerraba" con ingresos de 0,00007 millones leídos mal y el año vecino lo frenaba)
   if (existsSync(vf) && JSON.parse(readFileSync(vf, 'utf8')).estado === 'ok') return null;
-  // (to-do 162, ok de Guido) TAMPOCO si los chequeos de NÚMEROS de la etapa 6 cierran todos (el resultado del ejercicio cierra y ningún
+  // TAMPOCO si los chequeos de NÚMEROS de la etapa 6 cierran todos (el resultado del ejercicio cierra y ningún
   // chequeo da mal: totales, año vecino, año anterior cargado) aunque el estado sea "cola" por dudas de la IA que no son de números. Caso:
   // AC Milan 2022-23, sumas cerradas y 2 dudas en la cola (un "Totale" de una nota, la escala en miles); el rearmado de la pág. 84 rompía
   // "42 | 2.456", bien en el .md y partido en el texto propio. Goiás 2015 (la razón de mirar el estado y no solo el resultado) se sigue
@@ -271,7 +271,7 @@ export function paginasARearmar(pdfRel, mdRel, registroDoc = null) {
     if (ch.some((c) => /^resultado/.test(c.nombre) && c.ok === true) && !ch.some((c) => c.ok === false)) return null;
   }
   const o = JSON.parse(readFileSync(v, 'utf8')); const m = String(o.motivoModo || '');
-  // SOLO LOS BLOQUES ELEGIDOS HOY (Versión 458, punto 2 del HANDOFF, aprobado por Guido el 2026-10-04): los números sin confirmar cuentan si su
+  // SOLO LOS BLOQUES ELEGIDOS HOY: los números sin confirmar cuentan si su
   // bloque sigue elegido en el .ubicacion.json vigente (estado + notas de ingresos + notas de gastos). Caso: Juventus 2021-22, la validación del
   // 10-03 se hizo con el CONSOLIDADO (notas b54, b55, b67-b71, págs. 92, 93 y 100) y un --reintentar del 10-04 rearmó con ella después de que
   // el perímetro pasó a individual. Sin .ubicacion.json, como antes.
@@ -290,7 +290,7 @@ export function paginasARearmar(pdfRel, mdRel, registroDoc = null) {
   return pags.length ? { paginas: pags, metodo: 'columnas' } : null;
 }
 
-// COMPUERTA DEL REARMADO (Versión 411, escalera aprobada por Guido el 2026-10-02): el rearmado es un escalón que PROPONE una página nueva;
+// COMPUERTA DEL REARMADO: el rearmado es un escalón que PROPONE una página nueva;
 // se usa solo si conserva las filas de tabla (etiqueta + número) que tenía la página anterior. Si pierde más de la mitad, se queda la
 // anterior, con una marca (para que el escalón no se repita: la marca dice "TEXTO PROPIO del PDF" y el método, como una página rearmada).
 // Caso: Novorizontino 2025, pág. 7 (estado de resultados dibujado girado 90° en una hoja vertical): el texto propio sale en columnas de

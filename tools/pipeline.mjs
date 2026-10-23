@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/pipeline.mjs — la ETAPA 2 (transcribir y validar); hasta la Versión 528 era el comando único de punta a punta
-// (pedido de Guido, 2026-09-29):
+//:
 //
 //     node tools/pipeline.mjs --ejecutar
 //
@@ -112,7 +112,7 @@ const listSet = listFile ? new Set(readFileSync(resolve(root, listFile), 'utf8')
 const inScope = (e) => (!dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/')) && (!listSet || listSet.has(e.pdf));
 const needsResolve = (e) => ['sin-md', 'sin-tablas', 'revisar', 'pendiente-segunda-voz', 'sin-verificar', 'reintentar'].includes(e.estado);
 // Validado y todavía sin pasar por verificar.mjs: el único control que queda de la preparación vieja es "sin tablas" (abajo).
-// (to-do 298 e, ok de Guido 2026-10-18) "Sin pasar por el lote" = sin .verificacion.json, no "sin la marca de Jev": la preparación vieja
+// "Sin pasar por el lote" = sin .verificacion.json, no "sin la marca de Jev": la preparación vieja
 // dejó "listo-para-jev" o "sin-rubros" en casi todos los .md viejos y con `!e.jev` el control no marcaba ninguno (OH Leuven 2022, Llaneros
 // 2022; medido: 0 marcados, contra 238 con esta regla). Un .md que ya pasó por verificar no se rehace (OH Leuven 2019 y 2021 cierran por
 // sus códigos NBB sin tablas).

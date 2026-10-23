@@ -18,7 +18,7 @@ import { createHash } from 'node:crypto';
 const ROOT = resolve(import.meta.dirname, '..');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export const idBatch = (body) => createHash('sha1').update(JSON.stringify(body)).digest('hex');
-// EL COSTO SE ANOTA UNA VEZ, AL RECOGER (2026-10-17, prueba de Rapid Wien): anotarlo al USAR la respuesta lo repetía en cada pasada cuando una
+// EL COSTO SE ANOTA UNA VEZ, AL RECOGER: anotarlo al USAR la respuesta lo repetía en cada pasada cuando una
 // tool encadena dos llamadas (localizar → localizar-2: la primera se vuelve a leer hasta que vuelve la segunda). Una línea por pedido
 // cobrado en Admin/registros/api/claude-api.jsonl, con el precio batch (la mitad de PRICES de categorizar-claude.mjs, copiado acá para no
 // importarlo: categorizar-claude.mjs importa este módulo). Escritura y lectura de caché como costOf: 1,25 y 0,1 de la entrada.
@@ -69,7 +69,7 @@ export async function enviarColaBatch({ cadaSeg = 60, avisar = console.log } = {
   const cola = leerJsonl(COLA);
   for (let i = 0; i < cola.length; i += 5000) {
     const parte = cola.slice(i, i + 5000);
-    // `fallbacks` (reintento del lado del servidor ante un rechazo) no se acepta en batch (HTTP 400, probado el 2026-10-17): se saca al mandar.
+    // `fallbacks` (reintento del lado del servidor ante un rechazo) no se acepta en batch: se saca al mandar.
     // El custom_id sigue siendo la huella del pedido completo, así la tool encuentra su respuesta en la pasada siguiente.
     const sinFallbacks = ({ fallbacks, ...resto }) => resto;
     const res = await pedir(API, { method: 'POST', body: JSON.stringify({ requests: parte.map((x) => ({ custom_id: x.custom_id, params: sinFallbacks(x.params) })) }) });

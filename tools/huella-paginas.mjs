@@ -2,7 +2,7 @@
 // tools/huella-paginas.mjs — la HUELLA DE CADA PÁGINA de una transcripción .md, para que cambiar una página no obligue a volver a
 // validar (y pagar) las que no cambiaron.
 //
-// POR QUÉ (Versión 443, punto 1b.iii del HANDOFF, aprobado por Guido el 2026-10-04). Hasta acá la validación de una transcripción quedaba
+// POR QUÉ. Hasta acá la validación de una transcripción quedaba
 // atada a la huella del .md ENTERO (inventario-transcripciones.mjs, `mdSha1`): cambiar una sola página la dejaba entera "sin verificar" y
 // el resolver volvía a revisar todas. Caso: Juventus 2021-22. El 10-03 el resolver le pagó a Claude 17 páginas (US$ 1,13); el 10-04 se
 // rearmaron las págs. 92, 93 y 100 con el texto propio del PDF, y el resolver volvió a pagar las MISMAS 17 páginas más la 233 (US$ 1,02).

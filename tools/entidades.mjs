@@ -19,7 +19,7 @@
 //       de qué entidad son los números de ese ejercicio. La cita es del documento fuente de ese año.
 //
 //   {"tipo":"carga-club","clubId":"lommelsk-be","entidad":"lommel-sk","perimetro":"individual","desde":2019,"hasta":2025,"cita":{…}}
-//       (to-do 298 ad) lo mismo para un RANGO de ejercicios con UNA sola cita: cada ejercicio cargado en el sitio dentro de [desde, hasta]
+// lo mismo para un RANGO de ejercicios con UNA sola cita: cada ejercicio cargado en el sitio dentro de [desde, hasta]
 //       (hasta null = abierto) que no tenga su propia línea `carga` toma esta entidad y este perímetro. Para un club que no cambia de entidad
 //       (un club con dueño y balance individual): una línea al dar el alta en lugar de una por año, que además no se puede agregar antes de
 //       cargar el año. La cita es de un documento del club dentro del rango; una `carga` explícita del mismo año gana. Dos rangos del mismo
@@ -156,7 +156,7 @@ for (const g of ingresos) {
   if (!entidades.has(g.entidad)) err(g._n, `entidad "${g.entidad}" no está en el registro`);
   if (cargas.some(c => c.entidad === g.entidad && c.anio === g.anio)) err(g._n, `"${g.entidad}" es la entidad cargada en ${g.anio}: sus ingresos ya están en el sitio`);
 }
-// (to-do 298 ad) Los rangos: se expanden a una carga por ejercicio cargado en el sitio, salvo los que tienen su propia línea `carga`.
+// Los rangos: se expanden a una carga por ejercicio cargado en el sitio, salvo los que tienen su propia línea `carga`.
 const rangosPorClub = new Map();
 for (const r of rangos) {
   if (!entidades.has(r.entidad)) err(r._n, `entidad "${r.entidad}" no está en el registro`);

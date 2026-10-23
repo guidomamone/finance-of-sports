@@ -144,7 +144,7 @@ function equiposDeSportsTable(wikitext, todas = false) {
   // Norte y Sur) daba solo el primer grupo. Si hay 2 tablas o más SIN NINGÚN equipo en común y de al menos 8 equipos cada una, son los
   // grupos y se juntan. Una tabla anual o de playoff repite equipos de las otras, así que no entra.
   const grupos = []; for (const t of tablas) if (t.length >= 8 && !t.incompleta && !grupos.some((g) => g.some((x) => t.includes(x)))) grupos.push(t);
-  // (to-do 298 u2) cuántos grupos juntó va en el --json (GRUPOS), como en equiposPorGrupo: listas-lote.mjs ajusta el tope de 40 por grupo
+  // cuántos grupos juntó va en el --json (GRUPOS), como en equiposPorGrupo: listas-lote.mjs ajusta el tope de 40 por grupo
   // (Second Amateur Division 2019-20 y Division 2 2021-22: tres grupos de 16, 48 equipos)
   if (grupos.length >= 2 && tablas.every((t) => grupos.includes(t) || t.every((x) => grupos.flat().includes(x)))) { GRUPOS = grupos.length; return [...new Set(grupos.flat())]; }
   return [...new Set(tablas[0] || [])];
@@ -154,7 +154,7 @@ function tablasDeSportsTable(wikitext) {
   const inicios = [...wikitext.matchAll(/\{\{\s*#invoke:\s*sports table/gi)].map((m) => m.index);
   return inicios.map((ini, k) => {
     const t = wikitext.slice(ini, Math.min(inicios[k + 1] ?? Infinity, ini + 20000));
-    // (to-do 298 u2) el código puede traer guion o punto ("B-W", Beerschot Wilrijk en la First Division B 2017-18): con [\p{L}\p{N}_]+ se cortaba en
+    // el código puede traer guion o punto ("B-W", Beerschot Wilrijk en la First Division B 2017-18): con [\p{L}\p{N}_]+ se cortaba en
     // "B", no encontraba su name_ y la tabla quedaba incompleta (un equipo menos; en las ligas por grupos, el escalón de grupos la descartaba).
     // Empieza con letra o número: un enlace de un cuadro de play-off ("team1=[[Olsa Brakel]]") no es un código.
     let orden = [...t.matchAll(/\|\s*team(\d+)\s*=\s*([\p{L}\p{N}_][\p{L}\p{N}_.\-]*)(?=\s|\||\}|$)/gu)].sort((a, b) => Number(a[1]) - Number(b[1])).map((m) => m[2]);
@@ -253,7 +253,7 @@ async function main() {
   // de `clubs` (la lista de equipos) y solo si cubre la liga; faltantes-liga.mjs y estimar.mjs la unen por nombre.
   POSICIONES = tablasDeSportsTable(conPlantillas).sort((a, b) => b.length - a.length)[0] || null;
 
-  // ESCALERA DE LA FUENTE DEL ROSTER (Versión 401, pedido de Guido):
+  // ESCALERA DE LA FUENTE DEL ROSTER:
   //   ESCALÓN 0  una tabla wikitable en la sección de equipos ("Teams", "Clubs"...) — lo de siempre
   //   ESCALÓN 1  si no hay, la tabla de posiciones hecha con la plantilla {{#invoke:sports table}} en CUALQUIER parte de la página: se
   //              leen sus `name_XXX=[[...|Nombre]]` en el orden de `teamN`. Caso: Brasileirão 2009 y 2010 Série A y 2011 Série B (Goiás
@@ -293,7 +293,7 @@ async function main() {
   for (const teams of parsed) {
     if (teams.length > best.uniqueCount) best = { teams, uniqueCount: teams.length };
   }
-  // ESCALÓN "tabla limpia" (2026-10-15, ok de Guido). La regla de arriba se equivoca cuando la tabla de cambios de técnico tiene MÁS
+  // ESCALÓN "tabla limpia". La regla de arriba se equivoca cuando la tabla de cambios de técnico tiene MÁS
   // nombres únicos que el roster porque, en un club con dos técnicos, la fila siguiente arranca con el técnico (rowspan): "2024–25
   // Primeira Liga" daba 19 nombres (14 clubes, 4 técnicos y "rowspan=2|") y le ganaba a la tabla de estadios de 18; faltaban Santa Clara,
   // Casa Pia, Estoril y Nacional. SUELTO = un nombre que no aparece en ninguna OTRA tabla de la sección (los clubes se repiten entre

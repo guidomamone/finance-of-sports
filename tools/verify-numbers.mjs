@@ -32,7 +32,7 @@ import { execFileSync } from 'node:child_process';
 // referencia de nota con el importe que le sigue ("13 228.106" son 13 y 228.106).
 export const NUM_RE = /\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?|\d{1,3}(?: \d{3})+(?:,\d{1,2}(?!\d))?(?![.,]?\d)|\d+[.,]\d{2}\b|\d{4,}/g;
 export const norm = (t) => t.replace(/[\s.,]/g, '');
-// UNA CIFRA CON FORMA IMPOSIBLE (to-do 232 ac y ad): dos separadores distintos y el último repetido ("13.950,790,99") o el de miles después
+// UNA CIFRA CON FORMA IMPOSIBLE: dos separadores distintos y el último repetido ("13.950,790,99") o el de miles después
 // del decimal ("4,205.265,42"). Es un error del OCR: ningún documento imprime así. La usan tools/caja-deuda.mjs (la fila no se lee) y
 // tools/chequeos-gratis.mjs (la página no se valida gratis). Medido el 2026-10-14: 1.960 cifras así en 118 transcripciones.
 export const formaImposible = (c) => {

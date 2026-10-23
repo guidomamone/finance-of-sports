@@ -2,7 +2,7 @@
 // tools/memoria-categorias.mjs — lo que Claude por API resolvió y Jev no sabía, guardado para la próxima vez. Gratis (solo lee y escribe
 // un archivo).
 //
-// POR QUÉ EXISTE (pedido de Guido, 2026-09-30): "cuando Claude API resuelve algo que Jev no sabía resolver, debería quedar documentado en
+// POR QUÉ EXISTE: "cuando Claude API resuelve algo que Jev no sabía resolver, debería quedar documentado en
 // algún lado para que Jev la próxima vez sepa". Hasta la Versión 318, Jev (tools/jev-categorizar.mjs) y el escalón de precedente
 // (categorizar-claude.mjs precedente()) solo aprendían de lo YA CARGADO en el sitio (data/*/*-data.js). Lo que Claude categorizaba quedaba en
 // el `.categorias.json` de ese documento (Generados/) y nadie lo volvía a leer: el año siguiente del mismo club pagaba a Claude por el
@@ -42,7 +42,7 @@ export const MIN_PRECEDENTE = 0.9;
 // renglón del estado); la clave lo incluye, así dos respuestas de la misma etiqueta con padres distintos no se pisan.
 export const padreDe = (section) => { const m = String(section || '').match(/desglosa "([^"]+)"/); return m ? m[1] : section ? 'estado' : null; };
 const clave = (club, lado, label, padre = null) => `${club}|${lado}|${normalizar(label)}${padre ? `|${normalizar(padre)}` : ''}`;
-// EL CLUB SE RECALCULA DESDE LA CARPETA DEL DOCUMENTO al leer, no se confía en el guardado (BUG REAL al sembrar, 2026-09-30): respuestas de
+// EL CLUB SE RECALCULA DESDE LA CARPETA DEL DOCUMENTO al leer, no se confía en el guardado: respuestas de
 // Claude de antes de la Versión 309 traían el club EQUIVOCADO (el Athletic Club brasileño figuraba como 'athleticclub-es', que es el Athletic de
 // Bilbao), y un club nuevo tiene un id PROVISORIO (el slug de su carpeta, 'vitoria-guimaraes') distinto del que recibe al darse de alta
 // ('vitoriaguimaraes-pt'). Con la regla única de tools/carpetas-clubes.mjs: club del sitio si la carpeta resuelve, si no el mismo slug

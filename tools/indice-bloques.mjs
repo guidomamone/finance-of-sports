@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/indice-bloques.mjs — ETAPA 3a del proceso nuevo (localizar): el ÍNDICE DE BLOQUES de una transcripción. Gratis, sin IA.
 //
-// POR QUÉ EXISTE (Versión 324, diseño acordado con Guido el 2026-10-01; ver Admin/PIPELINE.md). El test
+// POR QUÉ EXISTE. El test
 // tools/archivo/localizar-extraer.mjs elegía PÁGINAS enteras, y Guido lo descartó con razón: "a veces el estado de resultados puede arrancar por la mitad de
 // la página". Una página puede tener el final del balance y el comienzo del resultado, y un estado puede seguir en la página siguiente.
 // Entonces se localiza por BLOQUE: cada tabla de la transcripción (y cada bloque de texto con cifras que no quedó como tabla) es una unidad,
@@ -11,7 +11,7 @@
 //   tipo        'tabla' (líneas que empiezan con "|") o 'texto' (3+ líneas con importes y sin "|": estados que Mistral transcribió
 //               como texto plano, como Corinthians 2024-25, listas con viñetas como el Einzelabschluss de Bayern, o las transcripciones
 //               viejas hechas con pdftotext -layout, como Bahia y Athletic Club). Entre filas se toleran huecos chicos: blancos, hasta dos
-//               líneas de texto sin cifras (encabezado de grupo, traducción) o un número de página suelto (Versión 325, ver HUECOS abajo)
+//               líneas de texto sin cifras (encabezado de grupo, traducción) o un número de página suelto
 //   pagina      la de la marca "--- pág. N ---" anterior
 //   lineas      [desde, hasta] en el .md (1 = primera línea): con esto la cola humana dice "abrí el .md en las líneas X-Y"
 //   arriba      las 3 líneas de texto no vacías de arriba (el título, "en miles de pesos", "Nota 20 - Ingresos"...)
@@ -84,7 +84,7 @@ export function indiceBloques(md, { ampliado = false } = {}) {
     // (un solo espacio entre columnas: el .md no es -layout). Un año suelto al final ("31 de dezembro de 2020") es UN número, no dos.
     const COLS_CHICAS_RE = /\p{L}.*?(?:\s+\(?-?\d[\d.,]*\)?){2,}\s*$/u;
     const conImporteBase = (l) => l.trim() && !l.trim().startsWith('|') && !PAG_RE.test(l) && /\p{L}{2,}/u.test(l) && /[\d)]\s*$/.test(l.trim()) && ((l.match(IMPORTE_RE) || []).length >= 1 || COLS_CHICAS_RE.test(l));
-    // Ampliado, además (versión 2 del índice ampliado, Versión 345): un renglón SOLO de números (2+ importes) justo debajo de un renglón SOLO de
+    // Ampliado, además: un renglón SOLO de números (2+ importes) justo debajo de un renglón SOLO de
     // texto es la segunda mitad de una fila con la etiqueta partida en dos (UC 2013, cuadro por segmento: "Ingresos Matrículas de Escuelas de
     // Fútbol" / "0 0 158.130 146.225 158.130 146.225"). El renglón de texto entra como hueco (hasta dos líneas de texto) y este como fila.
     const soloNumeros = (k) => { const t = String(L[k] || '').trim(); return t && !/\p{L}/u.test(t) && (t.match(IMPORTE_RE) || []).length >= 2; };

@@ -23,7 +23,7 @@
 //   node tools/fetch-brand-color-reference.mjs <slug-liga-footylogos> <nombre-local>
 //
 // Sin coincidencias (o liga no cacheada) queda anotado en
-// tools/brand-color-reference/misses.jsonl (pedido de Guido, 2026-09-27) --
+// tools/brand-color-reference/misses.jsonl --
 // para que él revise ese archivo de vez en cuando y decida qué liga nueva
 // vale la pena cachear, en vez de que cada sesión se tope con el mismo hueco
 // sin dejar rastro. Ver también --misses.

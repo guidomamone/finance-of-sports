@@ -1,6 +1,6 @@
 // ============================================================================
 // tools/claude-llamada.mjs — UNA llamada a Claude por API con salida en JSON con esquema, para las tools del proceso "localizar, validar,
-// extraer, verificar" (Versión 324: localizar.mjs, extraer.mjs). No es un comando: se importa.
+// extraer, verificar". No es un comando: se importa.
 //
 // POR QUÉ UN MÓDULO APARTE: categorizar-claude.mjs y localizar-extraer.mjs (el test) tenían cada una su copia del pedido HTTP. Las tools nuevas
 // usan esta, con las lecciones ya aprendidas:

@@ -570,7 +570,7 @@ async function listos(opt) {
   const lines = [...prod, ...aprendidas]; const retriever = makeRetriever(lines); const apiKey = opt.dry || sesion ? null : readKey(); let cost = 0;
   const aprendidasFirmes = aprendidas.filter((l) => l.conf >= MIN_PRECEDENTE);
   if (aprendidas.length) console.log(`Memoria de categorías: ${aprendidas.length} rubros aprendidos de Claude (${aprendidasFirmes.length} usables como precedente del mismo club).`);
-  // Memoria de respuestas (Versión 321, tools/respuestas-cache.mjs): lo que Claude ya contestó para este club y lado no se vuelve a mandar.
+  // Memoria de respuestas: lo que Claude ya contestó para este club y lado no se vuelve a mandar.
   // `--sin-cache` pregunta todo de nuevo.
   const cacheClaude = abrirCache('claude'); let nDesdeCache = 0;
   for (const e of docs) {
@@ -594,7 +594,7 @@ async function listos(opt) {
       const conCtx = precedenteFamilia([...prod, ...aprendidasFirmes], rj.club, r.lado || null, r.label, { ...ey, padre: padreFila });
       const prec = conCtx?.via === 'exacto-con-contexto' ? conCtx : (precProd || precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, { ...ey, padre: padreFila }));
       const base = { label: r.label, lado: r.lado || null, section: r.section, glosa: r.glosa, page: r.page };
-      // ESCALÓN 5a (Versión 403, cambio D): "¿Claude ya respondió esto?" con clave carpeta del club + lado + etiqueta + NOTA. La carpeta y no
+      // ESCALÓN 5a: "¿Claude ya respondió esto?" con clave carpeta del club + lado + etiqueta + NOTA. La carpeta y no
       // el id del club: Goiás tenía 'goias' (antes del alta) y 'goias-br' (después) con respuestas distintas para la misma etiqueta.
       const guardada = opt.sinCache ? null : cacheClaude.get(carpetaClub, r.lado, r.label, padreFila);
       if (prec) rubros.push({ ...base, pendiente: false, ya: prec.cat, escalon: 0, precedenteDe: `${precProd ? 'sitio' : 'memoria-claude'}:${prec.via}` });

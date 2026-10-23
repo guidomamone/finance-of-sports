@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Cliente CDX de Wayback Machine — to-do 78 (cerrado: Admin/Archive/CHANGELOG-v010-v299.md, Versión 252). La CDX API se cae en silencio con
+// Cliente CDX de Wayback Machine — to-do 78. La CDX API se cae en silencio con
 // dominios grandes: en la sesión del 2026-09-26 devolvió 504 Gateway Timeout para
 // bocajuniors.com.ar (100k+ URLs archivadas), racingclub.com.ar y riverplate.com, y en un caso un
 // subagente Haiku interpretó ese 504 como "0 documentos, dominio no indexado" — un falso negativo

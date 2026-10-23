@@ -3,7 +3,7 @@
 // que pueden terminar en el sitio (estado de resultados, anexos de ingresos/gastos, notas con tablas). El resto (prosa, carta del
 // presidente, informe del auditor, fotos) no se manda a la segunda voz.
 //
-// Por qué existe (decisión de Guido, 2026-09-30): el pipeline transcribe CADA PDF entero con Mistral OCR (eso no cambia, es barato). La
+// Por qué existe: el pipeline transcribe CADA PDF entero con Mistral OCR (eso no cambia, es barato). La
 // segunda voz (Gemini, y Claude por API como desempate) cuesta bastante más por página, y su único trabajo es confirmar o desmentir
 // NÚMEROS. En la prosa no hay nada que confirmar. Esta función es el filtro que decide a qué páginas va esa segunda voz.
 //

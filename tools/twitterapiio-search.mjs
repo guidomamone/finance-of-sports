@@ -8,7 +8,7 @@
 // Necesita Admin/api-keys/twitterapiio.env con TWITTERAPI_IO_KEY=... (gitignoreado, mismo criterio que
 // Exa/Gemini/Mistral/Firecrawl).
 //
-// NO es parte de la escalera rutinaria de sourcing (decisión de Guido, to-do 80 cerrado): correrlo a
+// NO es parte de la escalera rutinaria de sourcing: correrlo a
 // mano, club por club, cuando las 4 familias de siempre (sitio oficial, Wayback CDX, búsqueda web,
 // regulador) ya se agotaron y el club tiene una cuenta oficial de X activa — no por default en cada
 // club nuevo (tiene costo por lectura, a diferencia de Arctic Shift/PullPush para Reddit).

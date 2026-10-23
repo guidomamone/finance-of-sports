@@ -3,7 +3,7 @@
 // tools/localizar.mjs — ETAPA 3 del proceso nuevo: qué BLOQUES de la transcripción son el estado de resultados del ejercicio y qué bloques
 // son las notas que desglosan sus ingresos y sus gastos. IA (Claude Opus 5.5, esfuerzo bajo), ~US$ 0,02 por documento.
 //
-// POR QUÉ (Versión 324; proceso completo en Admin/PIPELINE.md): la selección por palabras clave
+// POR QUÉ: la selección por palabras clave
 // (proponer-carga.mjs seleccionarFilas) reproduce los ingresos de producción en 7-11% de los años ya cargados; el test por página
 // (tools/archivo/localizar-extraer.mjs) llegó a 42% de ingresos y 69% de gastos, pero Guido descartó elegir páginas enteras ("el estado de resultados puede
 // arrancar por la mitad de la página"). Acá la IA ve el ÍNDICE DE BLOQUES (tools/indice-bloques.mjs: una ficha por tabla o bloque de texto con
@@ -20,7 +20,7 @@
 //   necesito_ver        ids que la IA quiere ver enteros antes de decidir: se hace UNA segunda llamada con el texto completo de esos bloques
 //   dudas               lo que no pudo resolver y tiene que mirar una persona (va a la cola humana, tools/cola.mjs)
 //
-// DESGLOSES ANIDADOS Y SEGMENTOS (Versión 335, diseño aprobado por Guido): una nota puede desglosar un renglón de OTRA nota, y un cuadro por
+// DESGLOSES ANIDADOS Y SEGMENTOS: una nota puede desglosar un renglón de OTRA nota, y un cuadro por
 // segmento sirve cuando la columna de un segmento abre un renglón que nadie más abre. Caso real, UC 2021-2025: "Ingresos Comerciales" (nota 19)
 // solo se abre en la nota de segmentos, columna "Comerciales" (socios, escuelas de fútbol, publicidad, tienda, merchandising); 2022-2024 se
 // cargaron así. Los cuadros por jugador no se eligen: abrirían "Préstamo de jugadores" en nombres propios.
@@ -83,7 +83,7 @@ NO elijas: balance (activo/pasivo), flujo de efectivo, evolución del patrimonio
 - Si para decidir necesitás ver un bloque entero, ponelo en necesito_ver (máximo 6) y no lo elijas todavía.
 - Lo que no puedas resolver con lo que ves, escribilo en dudas (una frase cada una): lo va a mirar una persona. No adivines. Cada duda: pregunta (UNA pregunta concreta que una persona contesta con sí o no mirando el PDF: qué tabla o fila, qué importe, qué se haría; ej. "¿Se deja afuera de la carga el cuadro 'Venta de jugadores al 31-12-2024' (L4070-L4072)?"), propuesta (sí o no: lo que harías vos), tema (uno de: usar-cuadro-por-segmento, cuadro-duplicado, cuadro-de-otro-anio, perimetro, escala, columna, fila-ilegible, otro), renglon (la etiqueta del renglón al que afecta, tal cual, o vacío), texto (por qué, una frase, con la línea si la hay), bloques (los ids que nombra) y afecta_carga: true SOLO si resolverla puede cambiar qué filas se cargan o un importe que se carga en más que el redondeo. NO son dudas (o van con afecta_carga false): una diferencia de 1 unidad impresa entre dos tablas (es redondeo), un total que el documento no imprime (se resuelve sumando), un cuadro de detalle de una fila que ya está en otra tabla.`;
 
-// (to-do 324 e, ok de Guido 2026-10-19) ENTIDAD DEL CLUB. Hay informes que traen los estados de varias entidades (FC Basel: el Verein, la FC Basel
+// ENTIDAD DEL CLUB. Hay informes que traen los estados de varias entidades (FC Basel: el Verein, la FC Basel
 // 1893 AG y la Stadiondienst AG, uno tras otro). La IA elegía la primera tabla que veía y tomó la del Verein en 2006, 2010 y 2018 (ingresos de
 // 0,68 M, 1,1 M y 2,6 M en vez de 51 M, 57 M y 98 M). El pedido ahora dice el nombre legal con que el club está en el sitio (`name` de
 // data/clubs.js) y que, si hay estados separados de varias entidades, se elija el de esa. No cambia SYSTEM ni invalida lo guardado: solo
@@ -119,7 +119,7 @@ export const PEDIDO_NOTAS_COMO_ESTADO = `REINTENTO SIN ESTADO DE RESULTADOS: en 
 // dónde está impreso el resultado, se le da a la IA el bloque y el valor, y ese bloque se muestra aunque tenga una sola cifra. Caso real:
 // Fortaleza CEIF 2018 y 2019, que quedaron como fuente porque la IA no vio "Resultado Año 2018 (639,077)" (L542) ni "Utilidad Contable
 // (52,122)" (L455).
-// AJUSTE MANUAL `estado` (Versión 614, tools/ajustes.mjs): Guido fijó los bloques del estado de resultados; gana sobre lo que haya elegido la IA (escalón 0), así una corrida
+// AJUSTE MANUAL `estado`: Guido fijó los bloques del estado de resultados; gana sobre lo que haya elegido la IA (escalón 0), así una corrida
 // con --rehacer no lo deshace. Caso: AS Roma 2005 (la IA tomó b85, la tabla de una controlada en euros; el consolidado es b107-b112).
 export function aplicarAjusteEstado(datos, pdf, ajuste = ajusteDe(pdf, 'estado')) {
   const ids = String(ajuste?.valor || '').split(/[,\s]+/).filter(Boolean);
@@ -138,14 +138,14 @@ export async function localizar(pdf, { registro, perimetroClub, ejecutar = false
   const out = resolve(ROOT, derivado(md, modelo ? `.ubicacion.${modelo}.json` : '.ubicacion.json'));
   // AJUSTE MANUAL `filas-a-mano`: la ubicación de este documento se armó o corrigió a mano; ni --rehacer la pisa.
   if (existsSync(out) && esAMano(pdf)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, protegido: true };
-  // (to-do 298 ac, ok de Guido 2026-10-19) El perímetro del ajuste que se usó al localizar queda en el archivo (`perimetroClub`). Si después se
+  // El perímetro del ajuste que se usó al localizar queda en el archivo (`perimetroClub`). Si después se
   // fija otro ajuste `perimetro`, la localización guardada está vieja y se rehace. Los archivos sin ese campo, o quien llama sin pasar el
   // perímetro (undefined), no se comparan: nada se invalida por esto salvo lo que ya registre el perímetro. Caso: Sarpsborg 08 2023 se
   // localizó a las 09:39 y el ajuste `perimetro individual` llegó a las 09:54; siguió leyendo el consolidado (166,5 M y no 146,5 M).
   if (!rehacer && existsSync(out)) {
     const guardada = JSON.parse(readFileSync(out, 'utf8'));
     const vieja = perimetroClub !== undefined && Object.hasOwn(guardada, 'perimetroClub') && (guardada.perimetroClub ?? null) !== (perimetroClub ?? null);
-    // (to-do 298 v2) El ajuste `estado` que llegó DESPUÉS de la localización también vale sobre lo guardado: gana sobre lo que eligió la IA,
+    // El ajuste `estado` que llegó DESPUÉS de la localización también vale sobre lo guardado: gana sobre lo que eligió la IA,
     // como al localizar (aplicarAjusteEstado), sin llamar a la API. Caso: Fulham 2021-22 quedó sin_estado (la IA tomó el sello de presentación
     // como cierre); con el ajuste `estado` b2 y el cierre arreglado el lote lo salteaba igual.
     if (!vieja && !modelo) { const aj = ajusteDe(pdf, 'estado'); const ids = String(aj?.valor || '').split(/[,\s]+/).filter(Boolean); if (ids.length && (guardada.sin_estado || (guardada.estado || []).join(',') !== ids.join(','))) { aplicarAjusteEstado(guardada, pdf, aj); writeFileSync(out, JSON.stringify(guardada, null, 1)); } }

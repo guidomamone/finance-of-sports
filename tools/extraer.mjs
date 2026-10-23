@@ -3,7 +3,7 @@
 // tools/extraer.mjs — ETAPA 5 del proceso nuevo: las FILAS de los bloques que eligió localizar.mjs, tal cual están impresas. IA (Claude Opus
 // 5.5, esfuerzo bajo), ~US$ 0,05-0,10 por documento.
 //
-// POR QUÉ (Versión 324; proceso en Admin/PIPELINE.md). La IA COPIA Y ETIQUETA; no suma, no convierte, no
+// POR QUÉ. La IA COPIA Y ETIQUETA; no suma, no convierte, no
 // categoriza (eso lo hace un script en verificar.mjs: un LLM no sirve para verificar aritmética, FinVerBench, arXiv 2605.29586; y la categoría
 // es la etapa 7). Desgloses anidados y cuadros por segmento: ver la regla de detalla_a en SYSTEM. Lecciones del test por página (tools/archivo/localizar-extraer.mjs) ya incorporadas:
 //   - ESCALA POR BLOQUE, no por documento: en 1. FC Köln la nota de ingresos está en miles y el estado en euros con céntimos; con una escala
@@ -34,7 +34,7 @@ import { ajusteDe } from './ajustes.mjs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // «club de fútbol» de los prompts de lectura es el deporte del club
-import { aplicarCuadroSobrante } from './cuadro-sobrante.mjs'; // (to-do 237 al) un cuadro que localizar eligió y extraer no usó abre un renglón del estado
+import { aplicarCuadroSobrante } from './cuadro-sobrante.mjs'; // un cuadro que localizar eligió y extraer no usó abre un renglón del estado
 import { shaMd, huellaUbicacion } from './cache-al-dia.mjs'; // huella del .md con el que se hizo el caché; (237 ai) y de la ubicación
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
@@ -119,7 +119,7 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   if (ub.sin_estado) return { sinEstado: true };
   const out = resolve(ROOT, derivado(md, modelo ? `.filas.${modelo}.json` : '.filas.json'));
   if (modelo && esAMano(pdf)) return { error: 'filas-a-mano: no se mide' };
-  // AJUSTE MANUAL `filas-a-mano` (Versión 614, tools/ajustes.mjs): las filas de este documento se armaron o corrigieron a mano; ni --rehacer las pisa.
+  // AJUSTE MANUAL `filas-a-mano`: las filas de este documento se armaron o corrigieron a mano; ni --rehacer las pisa.
   if (existsSync(out) && esAMano(pdf)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, protegido: true };
   if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
   const L = readFileSync(resolve(ROOT, md), 'utf8').split('\n');
@@ -128,12 +128,12 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   // Cada bloque con sus 3 líneas de arriba (el título y la escala suelen estar ahí), numeradas.
   const texto = ids.map((id) => { const b = ub.bloques[id]; const desde = Math.max(1, b.lineas[0] - 3); return `[${id}] pág. ${b.pagina}\n${L.slice(desde - 1, b.lineas[1]).map((l, k) => `L${desde + k}: ${l}`).join('\n')}`; }).join('\n\n');
   const user = `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: columna "${ub.columna_ejercicio}" (cierre ${e.periodo?.cierre || '?'}); año anterior: columna "${ub.columna_anterior || '?'}". Bloques del estado: ${ub.estado.join(', ')}; notas de ingresos: ${ub.notas_ingresos.join(', ') || '-'}; notas de gastos: ${ub.notas_gastos.join(', ') || '-'}.\n\n${texto}`;
-  // ENSAYO (Versión 446, punto 1.v del HANDOFF, aprobado por Guido el 2026-10-04): la salida se estima como 2 x la entrada. Medido contra
+  // ENSAYO: la salida se estima como 2 x la entrada. Medido contra
   // las 155 extracciones reales (US$ 24,03): con 4.000 tokens de salida fijos el ensayo daba US$ 14,76 y subestimaba más de 30% en 68
   // llamadas; con 2 x la entrada da US$ 25,96 y subestima en 5 (la salida real es 1 a 2,5 veces la entrada, mediana 1,9). Juventus 2023-24:
   // entrada 6.951, real US$ 0,31, antes US$ 0,11, ahora US$ 0,31.
   if (!ejecutar) { const t = tokensDe(SYSTEM + user); return { ensayo: true, tokens: t, usd: usdEstimado(t, 2 * t, idModelo) }; }
-  // LAS NOTAS HACEN DE ESTADO (Versión 360; ver localizar.mjs PEDIDO_NOTAS_COMO_ESTADO): solo si localizar las eligió así.
+  // LAS NOTAS HACEN DE ESTADO: solo si localizar las eligió así.
   const notasComoEstado = ub.estadoDesdeNotas ? `\n\n${INSTRUCCION_NOTAS_COMO_ESTADO}` : '';
   const extra = notasComoEstado + (reintento?.length ? `\n\nREINTENTO: en la extracción anterior ${reintento.map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}" (buscala en el cuadro que abre el renglón que la contiene)` : `el desglose de "${x.renglon}" no sumó su renglón (las filas sumaron ${x.suma}, el renglón es ${x.objetivo})`)).join('; ')}. Revisá que estén TODAS las filas del cuadro, también las que tienen "-" en alguna columna. En un cuadro por segmento: si el renglón es de un segmento, usá la columna de ese segmento; si el renglón es del total (un renglón del estado de resultados, como "Costo de ventas"), usá la columna de TOTALES.` : '');
   // TOPE DE SALIDA, ESCALERA. Escalón 0: una llamada con tope de 32.000 tokens (cubre casi todos: de 389 extracciones medidas se
@@ -151,7 +151,7 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   }
   if (r.error) return { error: r.error, costo: r.costo };
   const datos = { pdf, md, mdSha1: shaMd(md), ubicacionSha1: huellaUbicacion(ub), modelo: idModelo, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos }; // ubicacionSha1: to-do 237 ai (cache-al-dia.mjs, ubicacionAlDia)
-  // (to-do 237 al, tools/cuadro-sobrante.mjs) solo en una extracción nueva (no en la medición con otro modelo) y nunca en un ejercicio que ya está en el sitio: ahí solo dice qué habría reemplazado
+  // solo en una extracción nueva (no en la medición con otro modelo) y nunca en un ejercicio que ya está en el sitio: ahí solo dice qué habría reemplazado
   if (!modelo) { const cs = aplicarCuadroSobrante(datos, { ub, L, pdf, cierre: e.periodo?.cierre || null, anio: ajusteDe(pdf, 'anio')?.valor ?? null }); for (const x of cs.aplicados) console.log('  cuadro sobrante (237 al): ' + x); for (const x of cs.saltados) console.log('  cuadro sobrante (237 al) se salta: ' + x); }
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo: r.costo };

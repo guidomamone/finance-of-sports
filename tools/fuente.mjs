@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/fuente.mjs — ver y editar las FUENTES de un club (to-do 339, frenado de Bath).
+// tools/fuente.mjs — ver y editar las FUENTES de un club.
 //
 // POR QUÉ. cargar.mjs escribe la fuente de un año con un título genérico («Bath Rugby Limited — bath-rugby-full-accounts-2020-21 (ejercicio 2021)»), sin url y sin nota pública.
 // Para ponerle el título del documento, el link del registro y una nota pública (CVC, fair value, redondeo, gasto por función) no había tool: se editaba a mano el JSON del club y

@@ -3,7 +3,7 @@
 // tools/gestiones-tanda.mjs — LAS TANDAS DE GESTIONES (quién condujo cada club en cada cierre) desde la cola, y su carga. Gratis: la
 // investigación la hacen subagentes de la sesión, con WebSearch, uno por club.
 //
-// POR QUÉ (to-do 232 b, aprobado por Guido el 2026-10-14). Cada año cargado de un club sin gestión que cubra su cierre deja un caso
+// POR QUÉ. Cada año cargado de un club sin gestión que cubra su cierre deja un caso
 // "cargar · gestion" en la cola (cargar.mjs, PRESIDENTES; no frena). Hasta acá cada tanda se armaba a mano (Admin/gestiones-por-pais/
 // tanda-2026-10-13 y tanda-2026-10-14: un lote-N.json por club, unas instrucciones copiadas con el criterio del país adentro), el cargador
 // y el validador vivían sueltos en la carpeta de la primera tanda (con una lista fija de clubes en espera de esa tanda), y los casos de la
@@ -39,7 +39,7 @@ const { cargarSitio, snapshot, revertir, publicarCambios } = await import('./car
 
 const cubre = (gs, cierre) => (gs || []).some((g) => g.confirmada && ((g.desde && g.desde <= cierre && (!g.hasta || g.hasta >= cierre)) || (g.firmo || []).includes(Number(cierre.slice(0, 4)))));
 // El club de un caso de gestión: cargar.mjs escribe el detalle como "<clubId>" el primer caso del club y "<clubId>:<año>" los siguientes
-// (L957, cuando ya hubo una respuesta). Sin esto la tanda no encontraba el club de esos casos y los dejaba como estaban (to-do 236 b).
+// (L957, cuando ya hubo una respuesta). Sin esto la tanda no encontraba el club de esos casos y los dejaba como estaban.
 const clubDeCaso = (c) => String(c.detalle || '').split(':')[0];
 const cierreDe = (c) => (String(c.que || '').match(/\(cierre (\d{4}-\d{2}-\d{2})\)/) || [])[1] || null;
 const responder = (id, decision, nota) => appendFileSync(COLA, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision, nota }) + '\n');
@@ -158,7 +158,7 @@ function validar(dir) {
 const q = (s) => "'" + String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'") + "'";
 function cargar(dir) {
   const rel = relative(ROOT, dir); const porPais = {}; const evid = []; let n = 0;
-  // Solo tandas armadas por --armar (tanda.json): las de antes (tanda-2026-10-13) dejaban afuera a propósito clubes que esperaban una
+  // Solo tandas armadas por --armar (tanda.json): las de antes dejaban afuera a propósito clubes que esperaban una
   // decisión de criterio (la lista HOLD de su cargar-gestiones.mjs); recargarlas acá los metería sin esa decisión.
   if (!existsSync(resolve(dir, 'tanda.json')) && !ARGS.includes('--forzar')) { console.error(`${rel} no la armó tools/gestiones-tanda.mjs --armar (falta tanda.json): se carga con su propio cargador. --forzar si es a propósito.`); process.exit(1); }
   for (const { k, L, R } of lotesDe(dir)) {

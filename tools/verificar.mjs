@@ -3,7 +3,7 @@
 // tools/verificar.mjs — ETAPA 6 del proceso nuevo: ¿lo que extrajo extraer.mjs es el estado de resultados correcto, completo y con los
 // números del papel? Script determinista, GRATIS, sin IA (un LLM no sirve para verificar aritmética: FinVerBench, arXiv 2605.29586).
 //
-// POR QUÉ (Versión 324; Admin/PIPELINE.md, etapa 6). Es la red que ataja los errores de las etapas anteriores
+// POR QUÉ. Es la red que ataja los errores de las etapas anteriores
 // (localizar eligió la tabla equivocada, extraer puso una fila del lado equivocado, Mistral inventó un número) sin confiar en ninguna IA.
 //
 // LOS CHEQUEOS, en orden (cada uno queda en `chequeos` con ok / detalle):
@@ -86,7 +86,7 @@ const unidad = (txt, mult) => { const d = (String(txt).match(/[.,](\d{1,2})\)?$/
 //   nota a la que le faltaba un renglón chico. El factor de escala se deduce del cierre (x1, x1.000, x1.000.000: 1. FC Köln tiene la nota
 //   en miles y el estado en euros). Signos: se prueba primero la suma con los signos impresos (un descuento en una nota de ingresos resta);
 //   si no, en valor absoluto (notas de gastos con unas filas entre paréntesis y otras no). Hojas en 0 o sin importe ("-") no se cargan.
-// Medición antes de adoptarla (Versión 327, Admin/CHANGELOG.md): las 26 extracciones del test por página + UC 2025.
+// Medición antes de adoptarla: las 26 extracciones del test por página + UC 2025.
 // ============================================================================
 // Renglón normalizado para la clave de una duda por tema: minúsculas, sin acentos, sin "(1)" ni números de nota.
 const normalizarRenglon = (r) => String(r || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\(\s*[\d.,]+\s*\)/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -97,7 +97,7 @@ function paginaDeLinea(md, linea) {
   return null;
 }
 
-// (to-do 298 t) El .filas.json con el estado NBB leído por sus códigos (tools/nbb.mjs), o null si el escalón no corre: el .md no trae el
+// El .filas.json con el estado NBB leído por sus códigos (tools/nbb.mjs), o null si el escalón no corre: el .md no trae el
 // estado con códigos, la columna del año no cierra exacto, o el documento tiene un ajuste `fila` (el ajuste manual es el escalón 0 y manda).
 function nbbDe(F, md, pdf, opciones = {}) {
   if (ajustesDe(pdf).some((a) => a.campo === 'fila')) return null;
@@ -106,7 +106,7 @@ function nbbDe(F, md, pdf, opciones = {}) {
   if (r) r.bloque.pagina = paginaDeLinea(md, r.bloque.lineas[0]);
   return r;
 }
-// (to-do 298 t) Los códigos NBB impresos del .md (para comparar con el año vecino), haya o no ajustes: null si no trae el estado con códigos.
+// Los códigos NBB impresos del .md (para comparar con el año vecino), haya o no ajustes: null si no trae el estado con códigos.
 function codigosNBBde(md) { try { return leerEstadoNBB(readFileSync(resolve(ROOT, md), 'utf8')); } catch { return null; } }
 
 export function cerrarNota(obj, hijas, campo = 'M', uObj = 0) {
@@ -177,13 +177,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
   const pF = resolve(ROOT, derivado(md, '.filas.json', { crear: false }));
   if (!existsSync(pF)) return { error: 'falta el .filas.json (extraer.mjs)' };
-  // (to-do 298 t, ok de Guido 2026-10-18) ESCALÓN "códigos NBB": un estado belga que cierra por sus códigos legales reemplaza al estado que
+  // ESCALÓN "códigos NBB": un estado belga que cierra por sus códigos legales reemplaza al estado que
   // extrajo la IA (tools/nbb.mjs, con la escalera y los casos). No corre si no cierra exacto ni si el documento tiene ajustes `fila` (manda el ajuste).
-  // (to-do 298 g) un año ya publicado no parte el 630 por la nota: sus filas son las que se categorizaron y se publicaron
+  // un año ya publicado no parte el 630 por la nota: sus filas son las que se categorizaron y se publicaron
   const publicado = (() => { const id = clubDeRuta(pdf).clubId; const y = e.periodo?.cierre ? Number(e.periodo.cierre.slice(0, 4)) : null; return !!(id && y && sitio.generic?.[id]?.fiscalYearMeta?.[y]); })();
   const nbbV = nbbDe(JSON.parse(readFileSync(pF, 'utf8')), md, pdf, { partir630: !publicado });
   const F = nbbV ? nbbV.F : JSON.parse(readFileSync(pF, 'utf8'));
-  const nbbPropio = nbbV ? nbbV.N : codigosNBBde(md); // (to-do 298 t) para el chequeo del año vecino
+  const nbbPropio = nbbV ? nbbV.N : codigosNBBde(md); // para el chequeo del año vecino
   const pV = resolve(ROOT, derivado(md, '.validacion.json', { crear: false }));
   const V = existsSync(pV) ? JSON.parse(readFileSync(pV, 'utf8')) : null;
   // CAMINO DE ERROR: la última propuesta de carga marcó categorías en 0 que deberían tener número ("Televisión en 0"). Solo así
@@ -197,16 +197,16 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // esto, la corrida siguiente lo apagaba y la TV volvía a 0 (oscilaba; medido en Bologna 2019-20). La verificación anterior lo anota.
   { const pVf = resolve(ROOT, derivado(md, '.verificacion.json', { crear: false })); try { if (existsSync(pVf)) for (const l of JSON.parse(readFileSync(pVf, 'utf8')).notaSubtotal || []) ladosCero.add(l); } catch { /* sin verificación anterior */ } }
   const confirmadosPorSumas = []; // números de filas que se cargan confirmados por las sumas
-  let forzarNotaSub = false; let totIngForz = 0; const notasNotaSub = []; // (to-do 175, escalón 2) la nota del subtotal en la primera pasada, ver abajo
-  const signoAcum = new Map(); const notasAcum = []; let escalonAcum = false; // (to-do 237 q) escalón "acumulados": fila del financiero (por línea) -> signo de su lado
-  const signoFinBloque = new Map(); const notasFinBloque = []; let escalonFinBloque = false; // (to-do 199, patrón C) fila del financiero (por línea) -> signo según el bloque que la contiene
-  const partesSubRep = new Map(); // (to-do 298 y3, escalón b) línea del total que salteó el patrón B -> etiquetas de las filas de arriba que suma
-  const notasSubRep = []; // (to-do 175, escalón 1) las notas del escalón "subtotal repetido": se escriben solo si gana
+  let forzarNotaSub = false; let totIngForz = 0; const notasNotaSub = []; // la nota del subtotal en la primera pasada, ver abajo
+  const signoAcum = new Map(); const notasAcum = []; let escalonAcum = false; // escalón "acumulados": fila del financiero (por línea) -> signo de su lado
+  const signoFinBloque = new Map(); const notasFinBloque = []; let escalonFinBloque = false; // fila del financiero (por línea) -> signo según el bloque que la contiene
+  const partesSubRep = new Map(); // línea del total que salteó el patrón B -> etiquetas de las filas de arriba que suma
+  const notasSubRep = []; // las notas del escalón "subtotal repetido": se escriben solo si gana
   const notaSubtotalLados = new Set(); // lados donde este escalón abrió la nota del subtotal (se escribe en el .verificacion.json)
   const pU = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
   const U = existsSync(pU) ? JSON.parse(readFileSync(pU, 'utf8')) : {};
   if (nbbV) U.bloques = { ...(U.bloques || {}), nbb: nbbV.bloque }; // el bloque de las filas NBB: su página y sus líneas (solo en memoria)
-  // Sin fecha de cierre detectada: se deduce de los documentos vecinos del club (tools/cierre-vecinos.mjs, Versión 342), con nota.
+  // Sin fecha de cierre detectada: se deduce de los documentos vecinos del club, con nota.
   const cierreDeducido = e.periodo?.cierre ? null : cierrePorVecinos(pdf, registro);
   const year = e.periodo?.cierre ? Number(e.periodo.cierre.slice(0, 4)) : cierreDeducido?.anio ?? null;
   const clubId = clubDeRuta(pdf).clubId; const cd = clubId ? sitio.generic[clubId] : null;
@@ -235,10 +235,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const pagDe = (bloque) => U.bloques?.[bloque]?.pagina ?? null;
   const filas = (F.filas || []).map((f) => ({ ...f, pagina: pagDe(f.bloque), M: (parseNumber(f.actual) ?? NaN) * mult(f.bloque), A: f.anterior != null ? (parseNumber(f.anterior) ?? NaN) * mult(f.bloque) : null, u: unidad(f.actual, mult(f.bloque)) }));
   const estado = filas.filter((f) => !f.detalla_a && (F.ubicacion?.estado || []).includes(f.bloque));
-  // (to-do 298 ah, Guido 2026-10-19) COBERTURA DE PÉRDIDAS DE UN SOCIO O DEL HOLDING: no es un ingreso operativo. Una fila SIN LADO cuyo rótulo dice "cobertura de pérdidas"
+  // COBERTURA DE PÉRDIDAS DE UN SOCIO O DEL HOLDING: no es un ingreso operativo. Una fila SIN LADO cuyo rótulo dice "cobertura de pérdidas"
   // ("Verlustabdeckung FC Basel Marketing AG" +470.000 entre el "Ergebnis vor Verlustabdeckung" y el "Ergebnis vor Steuern") entraba como ingreso por su signo (lectura 3) y
   // los ingresos no daban el "Total Ertrag" impreso. Ahora cuenta en el resultado, como el financiero, y queda afuera de los ingresos y de los gastos.
-  // (to-do 324 e) También si el año actual es 0 y solo el anterior tiene importe (Basel 2020: "Defizitgarantie FC Basel Holding AG" 0,00 | 18,7 M): la columna del año anterior
+  // También si el año actual es 0 y solo el anterior tiene importe (Basel 2020: "Defizitgarantie FC Basel Holding AG" 0,00 | 18,7 M): la columna del año anterior
   // que se compara con el documento vecino la contaba como ingreso.
   for (const f of estado) if (f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && (f.M || f.A) && COBERTURA_PERDIDAS_RE.test(String(f.etiqueta || ''))) { f.lado = 'financiero'; notas.push(`"${f.etiqueta}" (L${f.linea}) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos`); }
 
@@ -253,10 +253,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const b = cand.find((x) => x !== a && x.lado !== 'intragrupo' && x.M < 0 && x.bloque === a.bloque && Math.abs(x.M + a.M) <= 0.5 * Math.max(a.u || 0, x.u || 0) + 1e-12 && Math.abs(x.A + a.A) <= 0.5 * Math.max(a.u || 0, x.u || 0) + 1e-12 && norm1(x.etiqueta).length >= 6 && norm1(x.etiqueta) === norm1(a.etiqueta));
       if (b) { a.lado = 'intragrupo'; b.lado = 'intragrupo'; notas.push(`"${a.etiqueta}" (L${a.linea}) y "${b.etiqueta}" (L${b.linea}) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación`); } } }
   // 2. notas: renglón del estado reemplazado por su desglose si cierra (escala deducida del cierre)
-  // DESGLOSES ANIDADOS (Versión 335, diseño aprobado por Guido): una hoja de una nota puede, a su vez, estar desglosada por otro cuadro (filas
+  // DESGLOSES ANIDADOS: una hoja de una nota puede, a su vez, estar desglosada por otro cuadro (filas
   // con detalla_a = la etiqueta de esa hoja). Se reemplaza con la MISMA regla (cerrarNota: tiene que sumar), hasta 3 niveles. Caso real, UC
   // 2021-2025: "Ingresos Comerciales" de la nota 19 se abre con la columna "Comerciales" de la nota de segmentos. Si no suma, queda la hoja.
-  // AJUSTE MANUAL `desglose` (Versión 382; tools/ajustes.mjs): escalón 0 del cierre de una nota (se prueba ANTES de cerrarNota(): una nota que cierra solo por
+  // AJUSTE MANUAL `desglose`: escalón 0 del cierre de una nota (se prueba ANTES de cerrarNota(): una nota que cierra solo por
   // redondeo dentro de la tolerancia reemplazaba el renglón y la diferencia que Guido había dicho se perdía; Bath 2022-23, 44.435 £). Si el desglose de un renglón no suma por un
   // error del PROPIO documento, Guido dice cuánto es la diferencia impresa; la nota se abre igual, con una fila más ("Diferencia en el
   // documento") por esa diferencia. COMPUERTA: la diferencia entre el renglón y la suma de sus filas es la que dijo Guido (media unidad
@@ -273,7 +273,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (conNotas && !notas.some((n) => n.startsWith(`ajuste manual: el desglose de "${h.etiqueta}"`))) notas.push(`ajuste manual: el desglose de "${h.etiqueta}" se abre con una fila "${aj.etiquetaDiferencia || 'Diferencia en el documento'}" de ${aj.valor} (${aj.fecha}, ${aj.motivo})`);
     return { hojas: [...hojasNota.map((x) => ({ ...x, valorNota: Math.abs(x.M) })), { etiqueta: aj.etiquetaDiferencia || 'Diferencia en el documento', lado: h.lado, tipo: 'renglon', valorNota: dif, pagina: h.pagina, linea: aj.linea ?? h.linea, bloque: h.bloque, u: h.u, catAjuste: aj.categoria || null }] };
   };
-  // DESGLOSE TRIVIAL (Versión 429, cambio B, aprobado por Guido el 2026-10-03): una nota con UNA sola fila con importe (o ninguna) que da
+  // DESGLOSE TRIVIAL: una nota con UNA sola fila con importe (o ninguna) que da
   // exacto su renglón no es un desglose que falló: cerrarNota() pide 2 hojas y la rechaza, queda el renglón (mismo importe) y antes se marcaba
   // el documento para reintento (~US$ 0,30 para nada). Ahora deja una nota y no marca reintento. Solo toca el aviso: lo cargado no cambia.
   // Casos: AEL Larissa 2022 "Κύκλος εργασιών" (venta de mercadería 0,00 + servicios 2.068.146,00 = total, .md L566-570); 2023 "Λοιπά
@@ -307,7 +307,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // normal de su lado (un renglón negativo dentro de los ingresos resta: "(-) Dedução da receita (1.290.613)"), y los subtotales se
   // reconocen por la suma con signo. Caso: Goiás 2008, los renglones de "Futebol profissional e de base" con la deducción restando dan
   // 19.389.721 (el subtotal impreso); en valor absoluto daban 21.970.947, el subtotal no se reconocía y se contaba además de sus renglones.
-  // ESCALÓN 1 DE LAS NOTAS (Versión 427, diseño aprobado por Guido el 2026-10-03): una nota que no dice qué renglón abre (ninguna fila con
+  // ESCALÓN 1 DE LAS NOTAS: una nota que no dice qué renglón abre (ninguna fila con
   // detalla_a) puede desglosar un GRUPO de renglones del estado. Caso real, AEL Larissa (Grecia) 2019-2025: el estado presenta el gasto por
   // función (costo de ventas, administración, comercialización) y la nota "Έξοδα" lo abre por naturaleza (personal, terceros, amortizaciones)
   // con un total igual a la suma de los TRES renglones (2022: 1.221.827,55 + 505.583,81 + 379.187,86 = 2.106.599,22, .md L236-245 y
@@ -346,7 +346,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     return null;
   };
-  // (to-do 158, ok de Guido) cada hoja de una nota abierta recuerda de qué línea(s) del .md venía su renglón del estado, para que un ajuste
+  // cada hoja de una nota abierta recuerda de qué línea(s) del .md venía su renglón del estado, para que un ajuste
   // `fila` con `reemplazaLinea` saque las hojas si el renglón estaba abierto. Propiedad NO enumerable: no se escribe en el .verificacion.json
   // ni cambia nada de lo que se carga (se pierde en un {...spread}, y no hace falta después de aplicarAjustesFila).
   const conLineas = (hojas, renglones) => { const ls = renglones.map((x) => Number(x.linea)).filter(Number.isFinite); for (const h of hojas) Object.defineProperty(h, 'desdeLineas', { value: ls, enumerable: false, configurable: true }); return hojas; };
@@ -379,7 +379,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // de sus renglones si cierra CON SU SIGNO impreso (como la lectura 4 para la actual): una "Variazione delle rimanenze (608.641)" negativa suma en valor
         // absoluto 95,04 M contra el total impreso de 93,82 M, y el total se contaba además de sus renglones (188,86 M). La compuerta es la misma suma exacta.
         const esSumaDe = (lista) => { let acc = 0; let accF = 0; for (let j = 0; j < lista.length; j++) { acc += Math.abs(lista[j][campo] || 0); accF += lista[j][campo] || 0; if (j >= 1 && (cerca(acc, Math.abs(f[campo] || 0)) || ((conOtros || firmado || campo === 'A') && cerca(Math.abs(accF), Math.abs(f[campo] || 0))))) return true; } return false; };
-        // (to-do 298 ah, ok de Guido 2026-10-19) UN SUBTOTAL CON SUS HIJOS ES UN COMPONENTE DEL TOTAL: "Matcheinnahmen" 16,13 M (Basel 2005) es un subtotal con 4 filas
+        // UN SUBTOTAL CON SUS HIJOS ES UN COMPONENTE DEL TOTAL: "Matcheinnahmen" 16,13 M (Basel 2005) es un subtotal con 4 filas
         // debajo (aus Meisterschaft…, que detallan_a Matcheinnahmen) que suman exacto su importe; el "Total Ertrag" 38,22 M suma ese subtotal y 7 renglones más. Las filas
         // hijas no están en `delLado`, así que con solo renglones daba 22,09 y el total se contaba además de sus componentes (ingresos 76,43 M). Cuenta como
         // componente un subtotal de arriba con 2 hijas o más que suman su importe (así no entra un subtotal que suma renglones de arriba).
@@ -393,12 +393,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // nota si la tiene, o entra entero: el mismo importe). Casos: Parma 2025 (.md L525 "altri" 118.887.215, L526 "Totale altri ricavi e
         // proventi" 118.887.215; "altri" abierto con la nota b31) y Parma 2024 (la nota b46, L1527-L1534, cuelga del subtotal): sin esto los
         // ingresos daban el doble, ninguna lectura 0-4 cerraba y ganaba la 5, que no abre notas (Televisión en 0).
-        // (to-do 199, patrón A) Y una fila que no es renglón con el MISMO importe que la fila INMEDIATA DE ABAJO del estado (mismo lado, nada
+        // Y una fila que no es renglón con el MISMO importe que la fila INMEDIATA DE ABAJO del estado (mismo lado, nada
         // en el medio: ni otra fila de otro lado) es el mismo número impreso dos veces: no se cuenta y queda la de abajo (la más detallada, o el
         // total). Casos: Remo 2023 y 2024 ("Receita Operacional Bruta" 33.831.604 y "Receita Operacional Líquida" 33.831.604, sin deducciones,
         // L10 y L12); Remo 2020 (total "(+) Receita Bruta Operacional" 12.351.668,08, L191, y su único renglón con el mismo importe, L192).
         // esSumaDe pide dos renglones, así que un subtotal de un solo renglón o repetido por el total se contaba además.
-        // (to-do 199, patrón B) Y una fila que no es renglón y es la suma CON SIGNO de las filas de arriba de su lado CONTANDO LOS SUBTOTALES
+        // Y una fila que no es renglón y es la suma CON SIGNO de las filas de arriba de su lado CONTANDO LOS SUBTOTALES
         // (esSumaDe(arriba) mira solo renglones): "RECEITA LÍQUIDA" = "RECEITA OPERACIONAL BRUTA" (subtotal, abierto con su nota) − "Deduções".
         // No se cuenta: sus partes ya están. Caso: Ferroviária 2016 (.md L113-115: 9.221.750 − 10.553 = 9.211.197), se sumaba además de la nota.
         if (subRepetido && !esSumaDe(arriba) && !esSumaDe(abajo) && esSumaDe(delLado.slice(0, k).filter((x) => x.tipo !== 'resultado' && x.lado === lado).reverse())) {
@@ -406,7 +406,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           if (campo === 'M') partesSubRep.set(f.linea, delLado.slice(0, k).filter((x) => x.tipo !== 'resultado' && x.lado === lado).map((x) => x.etiqueta));
           continue;
         }
-        // (to-do 199, patrón C) Y una fila que no es renglón y es la suma de los RENGLONES DE ABAJO DE CUALQUIER LADO, cuando esa suma incluye
+        // Y una fila que no es renglón y es la suma de los RENGLONES DE ABAJO DE CUALQUIER LADO, cuando esa suma incluye
         // una fila del financiero distinta de cero (esSumaDe(abajo) mira solo su lado): un subtotal de ingresos o de gastos que tiene adentro
         // una fila del financiero. No se cuenta (cada parte está en su lado) y esa fila del financiero toma el signo de su bloque: suma dentro
         // de los ingresos, resta dentro de los gastos (impresas las dos en positivo). Caso: Avaí 2021 (.md L121-148): "Receitas do Futebol
@@ -425,7 +425,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
             continue;
           }
         }
-        // (to-do 237 q) ESCALÓN "ACUMULADOS": el estado del POC portugués (antes de 2010) imprime totales que ACUMULAN: (C) = (A) + juros,
+        // ESCALÓN "ACUMULADOS": el estado del POC portugués (antes de 2010) imprime totales que ACUMULAN: (C) = (A) + juros,
         // (E) = (C) + extraordinarios, (G) = (E) + imposto; (D) = (B) + juros obtidos, (F) = (D) + extraordinarios. Ninguno es la suma de
         // renglones de su lado (esSumaDe), así que se contaban como filas. Un subtotal/total que es EXACTO el subtotal/total anterior de su
         // lado + los renglones de su lado que hay entre los dos + algunas filas del financiero o del impuesto de ese tramo no se cuenta; esas
@@ -469,7 +469,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           if (abierto) continue;
           const quitar = new Set(salio); for (let i = out.length - 1; i >= 0; i--) if (quitar.has(out[i])) out.splice(i, 1);
         } else if (esSumaDe(arriba) || esSumaDe(abajo) || esSumaDe(arribaConCompuestos)) {
-          // ESCALÓN: LA NOTA DEL SUBTOTAL (to-do 163, problema 2; ok de Guido, como escalón). La extracción puede asignar las filas de una nota
+          // ESCALÓN: LA NOTA DEL SUBTOTAL. La extracción puede asignar las filas de una nota
           // al SUBTOTAL del grupo ("Totale altri ricavi e proventi") y no a un renglón: la nota reparte el grupo distinto que el estado
           // (Sassuolo 2025: a) 50,29 M y f) 15,41 M en el estado; sponsors, TV, Lega... en la nota) y no cierra ningún renglón. Hasta acá el
           // subtotal se salteaba (es la suma de los de arriba) y su nota no se usaba nunca: TV y sponsors quedaban en "otros ingresos". Si 2+
@@ -483,12 +483,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           // e proventi: 68.086.429" impreso arriba de a), b) y f)). Los de abajo todavía no pasaron: se exige que ninguno tenga nota propia.
           let comp = componentes(arriba); const deAbajo = !comp && (comp = componentes(abajo));
           const sueltos = comp && (deAbajo ? comp.every((x) => !filas.some((h) => h.detalla_a && h.detalla_a.trim() === String(x.etiqueta).trim())) : comp.every((x) => (salidaDe.get(x) || []).length === 1 && String(salidaDe.get(x)[0].origen || '').startsWith('estado')));
-          // (to-do 175, escalón 2) en la primera pasada, solo un grupo que el estado NO desglosa: 3 renglones o menos y uno de ellos de 20% o
+          // en la primera pasada, solo un grupo que el estado NO desglosa: 3 renglones o menos y uno de ellos de 20% o
           // más de los ingresos (Cremonese 2024: "altri" 42,8 + contributi 13,1; Sassuolo: a), b), f)). Un grupo ya desglosado en el estado
           // (Atalanta 2022/2024 y Genoa 2022: ~9 renglones) no se toca: su nota reparte distinto (Atalanta 2024: la TV 107,5 -> 101,8 M).
           const forzOk = forzarNotaSub && lado === 'ingreso' && comp && comp.length <= 3 && comp.some((x) => Math.abs(x[campo] || 0) >= 0.2 * totIngForz);
           let cn = (ladosCero.has(lado) || forzOk) && hijasSub.length >= 2 && sueltos ? cerrarNota(Math.abs(f[campo] || 0), hijasSub, campo, f.u || 0) : null;
-          // (to-do 298 ab, ok de Guido 2026-10-19) GANA EL ESTADO SI ABRE MÁS: la nota reemplaza a los renglones del estado solo si trae al menos
+          // GANA EL ESTADO SI ABRE MÁS: la nota reemplaza a los renglones del estado solo si trae al menos
           // tantas filas como las que reemplaza. Si trae menos es más gruesa que el estado y pierde el desglose. Caso: Sarpsborg 08 2024, la Note 1
           // trae 2 áreas (Arrangement 69,1 M y Salg/utleie spillere 134,6 M) para los 8 renglones de ingresos del estado (L116-124).
           if (cn && comp && cn.hojas.length < comp.length) cn = null;
@@ -529,7 +529,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         }
         if (conjunto.size > hijas.length) { const ampliadas = filas.filter((h) => conjunto.has(h)); c = cerrarConAjuste(f, ampliadas, campo) || cerrarNota(obj, ampliadas, campo, f.u || 0); }
       }
-      // ESCALÓN DEL LADO (to-do 163, problema 1; ok de Guido): si las filas que dicen abrir este renglón no lo cierran, se prueba SOLO con las
+      // ESCALÓN DEL LADO: si las filas que dicen abrir este renglón no lo cierran, se prueba SOLO con las
       // del mismo lado que el renglón. Nombres repetidos: en el formato italiano "altri" es el renglón de ingresos 5), el 16) y el 17), y las
       // notas de intereses (lado financiero) también dicen abrir "altri" (Bologna 2020-21: 9 filas de ingresos 79.927.218 + 8 de intereses =
       // 81.433.661 contra 79.927.219). Escalón y no regla: probado como regla, rompía Goiás 2025 (cargado), cuya nota "Outras Receitas e
@@ -539,7 +539,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const mismas = hijas.filter(ladoOk);
         if (mismas.length >= 2 && mismas.length < hijas.length) { c = cerrarConAjuste(f, mismas, campo) || cerrarNota(obj, mismas, campo, f.u || 0); if (c) { const n = `la nota de "${f.etiqueta}" cierra solo con sus filas del lado ${f.lado} (${hijas.length - mismas.length} filas de otro lado dicen abrir un renglón con el mismo nombre)`; if (!notas.includes(n)) notas.push(n); } }
       }
-      // (to-do 298 y3, escalón a, ok de Guido 2026-10-18) en la lectura 4 (signos impresos) un renglón que RESTA en su lado le pasa ese signo
+      // en la lectura 4 (signos impresos) un renglón que RESTA en su lado le pasa ese signo
       // a las filas de su nota: cerrarNota() las devuelve relativas al renglón en valor absoluto, y sin esto la nota de una deducción sumaba.
       // Caso: St. Gallen 2024-25, "Ertragsminderungen" −463 (L260) abierto en +21 (L330) y −484 (L403): se leían −21 y +484.
       if (c) { const sg = firmado && f.tipo === 'renglon' && (f[campo] || 0) * signoNormal < 0 ? -1 : 1; out.push(...conLineas(abrirAnidadas(c.hojas.map((h) => ({ ...h, [campo]: h.valorNota * sg, origen: `nota que desglosa "${f.etiqueta}"` })), campo, 1), [f])); }
@@ -557,12 +557,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const vecinoDe = (dy) => {
     if (!year) return null;
     const carpeta = pdf.split('/').slice(0, 3).join('/');
-    // el año del otro documento: su fecha de cierre o, si no la tiene, la deducida de sus vecinos (Versión 344: UC 2010 contra 2011)
+    // el año del otro documento: su fecha de cierre o, si no la tiene, la deducida de sus vecinos
     const anioDe = (x) => (x.periodo?.cierre ? Number(x.periodo.cierre.slice(0, 4)) : cierrePorVecinos(x.pdf, registro)?.anio ?? null);
     // De los documentos del club con ese año, el que pasó por extraer. Hasta la Versión 361 se tomaba el PRIMERO del año y, si no tenía
     // .filas.json, no había chequeo: Fortaleza CEIF 2023 nunca se comparó con 2024 porque el primero de 2024 es certificacion-ef-2024.pdf.
     const filasDe = (x) => resolve(ROOT, derivado(x.md, '.filas.json', { crear: false }));
-    // (to-do 237 l) un documento descartado o parcial no es vecino: no es del club o no cubre el año (Rio Ave 2014-15, de la asociación).
+    // un documento descartado o parcial no es vecino: no es del club o no cubre el año (Rio Ave 2014-15, de la asociación).
     // en una carpeta con dos entidades que se suman (ajuste `suma-con`: Vålerenga AS y Elite) el vecino es de la MISMA entidad: el documento que es la
     // "otra entidad" de una suma solo se compara con otros de su rol, y los demás no se comparan con él.
     const esOtra = (p) => registro.some((r) => r.pdf.startsWith(carpeta + '/') && ajusteDe(r.pdf, 'suma-con')?.valor === p);
@@ -570,7 +570,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const otro = registro.find((x) => x.pdf !== pdf && x.pdf.startsWith(carpeta + '/') && !DESCARTADOS.has(x.pdf) && !PARCIALES.has(x.pdf) && x.md && existsSync(filasDe(x)) && anioDe(x) === year + dy && esOtra(x.pdf) === miRol);
     if (!otro) return null;
     const pF2 = filasDe(otro);
-    // (to-do 298 t) el vecino también por sus códigos NBB (si los trae y cierran)
+    // el vecino también por sus códigos NBB (si los trae y cierran)
     const F2 = JSON.parse(readFileSync(pF2, 'utf8')); const n2 = nbbDe(F2, otro.md, otro.pdf);
     const pU2 = resolve(ROOT, derivado(otro.md, '.ubicacion.json', { crear: false })); const U2 = existsSync(pU2) ? JSON.parse(readFileSync(pU2, 'utf8')) : {};
     if (n2) U2.bloques = { ...(U2.bloques || {}), nbb: n2.bloque };
@@ -580,7 +580,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const lect2 = existsSync(pV2) ? Number(((JSON.parse(readFileSync(pV2, 'utf8')).chequeos || []).find((c) => c.nombre === 'lectura')?.detalle?.match(/lectura (\d)/) || [])[1] || 0) : 0;
     const subRep2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "subtotal repetido"')) : false;
     const ventana2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "gestión de jugadores neta"')) : false;
-    const acumNotas2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).filter((n) => String(n).startsWith('escalón "acumulados"')) : []; const otrosRes2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "otros con el signo del resultado"')) : false; const acum2 = acumNotas2.length ? (acumNotas2.some((n) => n.includes('(sin-otros)')) ? 'sin-otros' : true) : otrosRes2 ? 'otros-resultado' : false; // (to-do 237 q)
+    const acumNotas2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).filter((n) => String(n).startsWith('escalón "acumulados"')) : []; const otrosRes2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "otros con el signo del resultado"')) : false; const acum2 = acumNotas2.length ? (acumNotas2.some((n) => n.includes('(sin-otros)')) ? 'sin-otros' : true) : otrosRes2 ? 'otros-resultado' : false;
     return { otro, U2, k2, lect2, subRep2, ventana2, acum2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, nbb2: n2 ? n2.N : codigosNBBde(otro.md), A2: armar(n2 ? n2.F : F2, U2, false, k2) };
   };
   // Los ingresos de un documento leídos con UNA lectura de la escalera: 3 suma los renglones sin lado por su signo (y lee los
@@ -590,7 +590,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // VENTANA de las filas sin lado: las que están entre el total de costos y el "resultado antes de impuestos" del estado de A. La usa el
   // escalón "gestión de jugadores neta" de la lectura 6, en la columna actual y en la del año anterior (y la del documento vecino).
   const enVentanaOtros = (A) => { const e = A.estado; const tc = e.filter((f) => f.tipo === 'total' && f.lado === 'gasto' && isFinite(f.linea)).sort((a, b) => a.linea - b.linea)[0]; const an = e.filter((f) => f.tipo === 'resultado' && /antes\s+de(l)?\s+impuesto|before\s+(income\s+)?tax|vor\s+(ertrag)?steuern|antes\s+dos\s+impostos|avant\s+imp[oô]t|voor\s+belasting|ante\s+imposte|prima\s+delle\s+imposte/i.test(f.etiqueta) && isFinite(f.linea)).sort((a, b) => a.linea - b.linea)[0]; return (f) => !!(tc && an && f.linea > tc.linea && f.linea < an.linea); };
-  const ingresosConLectura = (A, campo, nivel, subRep = false, ventana = false, acum = false) => { // acum: cerró con el escalón "acumulados" (to-do 237 q) // subRep: la lectura 4 cerró con el escalón "subtotal repetido"
+  const ingresosConLectura = (A, campo, nivel, subRep = false, ventana = false, acum = false) => { // acum: cerró con el escalón "acumulados" // subRep: la lectura 4 cerró con el escalón "subtotal repetido"
     if (nivel < 3) return A.lineasDeLado('ingreso', campo);
     if (nivel >= 5) { // las mismas hojas con signo C/D de la lectura 5, en la columna pedida (actual o año anterior)
       const r = A.estado.filter((f) => f.lado === 'ingreso' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo]); const normal = r.filter((f) => f[campo] < 0).length > r.length / 2 ? -1 : 1;
@@ -602,7 +602,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     const g = A.estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); const neg = g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true;
     const otrosI = A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && !repiteResultado(A.estado, f, campo) && (neg ? f[campo] > 0 : f[campo] < 0)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) }));
-    const acumB = acum === true || acum === 'sin-otros'; // (to-do 237 q) 'sin-otros': el escalón "acumulados" cerró sin las filas sin lado; 'otros-resultado': cerró con ellas al signo del resultado
+    const acumB = acum === true || acum === 'sin-otros'; // 'sin-otros': el escalón "acumulados" cerró sin las filas sin lado; 'otros-resultado': cerró con ellas al signo del resultado
     const otrosV = nivel !== 4 ? otrosI : acum === 'sin-otros' ? [] : acum === 'otros-resultado' ? A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] > 0 && !repiteResultado(A.estado, f, campo)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) })) : otrosI;
     return [...A.lineasDeLado('ingreso', campo, true, nivel >= 4, (subRep || acumB) && nivel === 4, false, acumB && nivel === 4), ...otrosV];
   };
@@ -651,14 +651,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const s2 = campoSuyo === 'M' ? (V2v?.totales?.ingresos ?? null) : colConFilas(lin2, (l) => V2.A2.estado.find((f) => f.linea === l.linea));
       if (m2 != null && s2 && cerca(m2, s2, 0.02)) { mio = m2; suyo = s2; }
     }
-    // COMPUERTA DEL ESCALÓN 0 (Versión 416, escalera aprobada por Guido el 2026-10-02): la columna del año en común ("año anterior", la mía o
+    // COMPUERTA DEL ESCALÓN 0: la columna del año en común ("año anterior", la mía o
     // la del siguiente) tiene que existir: alguna fila del estado la trae leída. Si no, "no se puede comparar" (null), como sin vecino. Caso:
     // Novorizontino 2014 y 2015, balancetes de una sola columna: se comparaba 0 contra 1.060.016 y mandaba un falso "no coincide" a la cola.
-    // (to-do 237, paridad PTE) ESCALÓN 3: UN DOCUMENTO EN MONEDA LEGADO Y EL OTRO EN EUROS. Sporting 2001 (miles de escudos, ajuste `moneda`
+    // ESCALÓN 3: UN DOCUMENTO EN MONEDA LEGADO Y EL OTRO EN EUROS. Sporting 2001 (miles de escudos, ajuste `moneda`
     // PTE) contra la columna 2001 del documento 2002 (euros): 6.419,453 M PTE contra 32,02 M EUR; con la paridad fija, 6.419,453 / 200,482 =
     // 32,02. COMPUERTA: solo uno de los dos tiene ajuste `moneda` y esa moneda tiene `euroFijo` en data/currency-map.js; con la conversión,
     // la misma del escalón 0 (2%). Dos documentos en la misma moneda nunca pasan por acá.
-    // (to-do 298 t) ESCALÓN "códigos NBB": si los dos documentos traen el estado NBB con códigos, la columna del año en común se compara por
+    // ESCALÓN "códigos NBB": si los dos documentos traen el estado NBB con códigos, la columna del año en común se compara por
     // sus resultados impresos, el 9904 (del ejercicio) y el 9901 (operativo), no por los ingresos: el esquema abreviado abre o no la
     // Brutomarge según lo que imprima cada año y un documento puede reclasificar el año anterior entre la Brutomarge y otros gastos con el
     // mismo 9901 (Patro Eisden 2023: 9900 −246.781, y −232.016 en la columna 2023 de 2024); el año siguiente puede pasar del esquema
@@ -684,7 +684,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   };
   const vecinosDoc = [[1, vecinoDe(1)], [-1, vecinoDe(-1)]].filter(([, v]) => v);
 
-  // ESCALERA DE ESCALA (Versión 362, diseño aprobado por Guido el 2026-10-01). Caso que la originó: Fortaleza CEIF 2023 y 2024 dicen
+  // ESCALERA DE ESCALA. Caso que la originó: Fortaleza CEIF 2023 y 2024 dicen
   // "Expresados en pesos colombianos" (.md 2024 L1125) y las cifras son miles; extraer/localizar dejaron "no se sabe" y se leían en unidades
   // (ingresos 2024 = 12,2 millones). El documento de 2025 declara miles (L1149) y repite 2024 como 12.206 millones. Peligro: 2023 y 2024
   // coinciden ENTRE SÍ en la escala equivocada; por eso solo propone un vecino ANCLADO (la declara o ya la resolvió acá), y la cadena se arma
@@ -735,7 +735,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const finSegun = (lect, arr) => (/por rótulo/.test(String(lect)) ? conSignoRotulo(arr, /con signo/.test(String(lect))) : (/financiero e impuesto invertidos|financiero invertido/.test(String(lect)) ? -1 : 1) * conSigno(arr));
   const siSegun = (lect) => (/financiero e impuesto invertidos|impuesto invertido/.test(String(lect)) ? -1 : 1);
 
-  // 3. totales y resultado: LA ESCALERA DE LECTURAS (Versión 342, flujo aprobado por Guido el 2026-10-01). Se prueba una lectura; si no cierra
+  // 3. totales y resultado: LA ESCALERA DE LECTURAS. Se prueba una lectura; si no cierra
   // con un número impreso (resultado o totales), la siguiente, que agrega una interpretación más a la anterior. Gana la primera que cierra y
   // queda escrito cuál fue. El camino limpio es la lectura 0: si cierra, ningún escalón se usa. Ningún escalón se acepta si no cierra.
   //   0  las filas tal cual las extrajo la IA
@@ -759,7 +759,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // F.resultado apuntaba a L719 "Utilidad contable antes de impuesto" 1.609.817 y se le restaba el impuesto; sin restarlo cierra exacto.
   const filaDeRes = F.resultado ? estado.find((f) => f.linea === F.resultado.linea && f.tipo === 'resultado') : null;
   const resEsAntes = !!(filaDeRes && ANTES_RE.test(filaDeRes.etiqueta));
-  // RESULTADO IMPRESO, ESCALÓN 2 (Versión 415, aprobado por Guido el 2026-10-02): si extraer no encontró el resultado en los bloques (ni el
+  // RESULTADO IMPRESO, ESCALÓN 2: si extraer no encontró el resultado en los bloques (ni el
   // de antes de impuestos), una línea PREJUÍZO / SUPERÁVIT / DÉFICIT / LUCRO con un número, pegada al último bloque del estado (hasta 4
   // líneas después), PROPONE el resultado. COMPUERTA: alguna lectura tiene que cerrar con él EXACTO (a media unidad por fila, como la
   // lectura 5), no con la tolerancia de siempre. Casos: Novorizontino 2015 ("PREJUIZO: 5.598.142,50", L158; el bloque termina en L156) y
@@ -786,12 +786,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const gastosNeg = (() => { const g = estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); return g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true; })();
   const otros = estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && f.M && !repiteResultado(estado, f, 'M'));
   const ing0 = lineasDeLado('ingreso'); const gas0 = lineasDeLado('gasto');
-  // AJUSTES MANUALES DE FILAS (Versión 368; tools/ajustes.mjs, campo `fila`): escalón 0, antes de la escalera de lecturas. Agrega la fila
+  // AJUSTES MANUALES DE FILAS: escalón 0, antes de la escalera de lecturas. Agrega la fila
   // que la extracción no trajo, o reemplaza la que trajo mal (`reemplaza`), en la escala del documento; los chequeos corren igual sobre el
   // resultado. Caso: Fortaleza CEIF 2017 (nota 23 "Otros gastos" 41.780 perdida en un salto de página; costos financieros rotulados
   // "Total Otros Ingresos" en el PDF).
   // la misma pasada se aplica también a la base de la lectura 3 (ing3/gas3); ahí solo ingresos y gastos, sin repetir notas.
-  // (Versión 493, aprobado por Guido el 2026-10-05) `firmado` = la base de la lectura 4: ahí el ajuste lleva su signo impreso relativo al signo
+  // `firmado` = la base de la lectura 4: ahí el ajuste lleva su signo impreso relativo al signo
   // normal de los AJUSTES de su lado (la mayoría), igual que un renglón respecto de su lado en lineasDeLado(firmado): un ingreso impreso en
   // negativo entre ingresos positivos resta. El signo normal sale de los ajustes y no del estado porque vienen de otra tabla (una nota que
   // imprime los gastos entre paréntesis bajo un estado que los imprime en positivo). En las demás lecturas sigue el valor absoluto. No es una
@@ -807,7 +807,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const sale = (f) => saleDelAjuste(a, f);
     if (a.reemplaza || a.reemplazaLinea != null) for (const arr of [ingB, gasB, fin, imp]) for (let i = arr.length - 1; i >= 0; i--) if (sale(arr[i])) arr.splice(i, 1);
     const m = mult(estado[0]?.bloque); const v = parseNumber(a.valor) * m;
-    // (Versión 435, cambio G) con valor 0 y `reemplaza`, el ajuste SOLO saca la fila: no agrega una línea en cero (Juventus 2018-19, la fila
+    // con valor 0 y `reemplaza`, el ajuste SOLO saca la fila: no agrega una línea en cero (Juventus 2018-19, la fila
     // de la ganancia por acción "(0,040)", .md L1160, no es un importe del estado)
     if (v === 0 && (a.reemplaza || a.reemplazaLinea != null)) { if (primera) notas.push(`ajuste manual: sale la fila "${a.reemplaza ?? `L${a.reemplazaLinea}`}" (${a.fecha}, ${a.motivo})`); continue; }
     destino.push({ etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', M: ['ingreso', 'gasto'].includes(a.lado) ? (firmado === 'estado' ? v * signoDelEstado(a.lado) : firmado ? v * signoNormalDe(a.lado) : Math.abs(v)) : v, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual', ...(a.destino ? { destino: a.destino } : {}) });
@@ -819,15 +819,15 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (otros.length) aplicarAjustesFila(ing3, gas3, false);
   // base de la lectura 4: signos impresos (lineasDeLado, firmado), con los renglones sin lado como en la lectura 3
   const ing4 = lineasDeLado('ingreso', 'M', true, true); const gas4 = lineasDeLado('gasto', 'M', true, true);
-  // base del escalón "subtotal repetido" (to-do 175, escalón 1): la lectura 4 con los subtotales que repiten el renglón de arriba sin contar
+  // base del escalón "subtotal repetido": la lectura 4 con los subtotales que repiten el renglón de arriba sin contar
   const ing4r = lineasDeLado('ingreso', 'M', true, true, true); const gas4r = lineasDeLado('gasto', 'M', true, true, true);
   aplicarAjustesFila(ing4, gas4, false, true);
   aplicarAjustesFila(ing4r, gas4r, false, true);
-  // (to-do 199, patrón C) base del escalón "financiero dentro de un subtotal" (el último de la escalera) y el financiero con el signo de su bloque
+  // base del escalón "financiero dentro de un subtotal" (el último de la escalera) y el financiero con el signo de su bloque
   const ing4c = lineasDeLado('ingreso', 'M', true, true, true, true); const gas4c = lineasDeLado('gasto', 'M', true, true, true, true);
   aplicarAjustesFila(ing4c, gas4c, false, true);
   const finBloque = signoFinBloque.size ? fin.map((f) => (signoFinBloque.has(f.linea) ? { ...f, M: signoFinBloque.get(f.linea) * Math.abs(f.M), origen: `${f.origen || 'estado'} (signo de su bloque)` } : f)) : null;
-  // (to-do 237 q) base del escalón "acumulados" (el último de la escalera, después del patrón C) y el financiero con el signo de su lado
+  // base del escalón "acumulados" (el último de la escalera, después del patrón C) y el financiero con el signo de su lado
   const ing4a = lineasDeLado('ingreso', 'M', true, true, true, false, true); const gas4a = lineasDeLado('gasto', 'M', true, true, true, false, true);
   aplicarAjustesFila(ing4a, gas4a, false, true);
   const finAcum = notasAcum.length ? fin.map((f) => (signoAcum.has(f.linea) ? { ...f, M: signoAcum.get(f.linea) * Math.abs(f.M), origen: `${f.origen || 'estado'} (signo de su lado, escalón acumulados)` } : f)) : null;
@@ -843,7 +843,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const cambiaSigno4e = ajustesDe(pdf).some((a) => a.campo === 'fila' && ['ingreso', 'gasto'].includes(a.lado) && parseNumber(a.valor) && signoDelEstado(a.lado) !== signoNormalDe(a.lado));
   const hayRepetido = notasSubRep.length > 0;
   const NOMBRES_LECTURA = ['las filas tal cual', 'resultado antes de impuestos si no hay resultado final', 'el total impreso puede ser un renglón', 'renglones sin lado según su signo', 'signos impresos (un renglón negativo resta en su lado)', 'solo las hojas con su signo (C/D del balancete), sin subtotales ni totales', 'la 5 más los renglones sin lado según su signo'];
-  // LECTURA 5 (Versión 414, escalera aprobada por Guido el 2026-10-02): SOLO LAS HOJAS del estado (renglones), ningún subtotal ni total, cada
+  // LECTURA 5: SOLO LAS HOJAS del estado (renglones), ningún subtotal ni total, cada
   // una con su signo: la marca C/D de un balancete si la trae (D en ingresos resta, C en gastos resta, financiero C suma y D resta) y si no,
   // el signo impreso como en la lectura 4. No adivina qué subtotal suma qué: los ignora a todos. Tampoco usa los totales como chequeo (en un
   // balancete jerárquico mezclan lados): su ÚNICA compuerta es el resultado impreso, EXACTO (a media unidad por fila). Casos (diagnóstico
@@ -851,7 +851,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // que mezclan lados (2017: "(-) DESPESAS OPERACIONAIS" incluye el financiero y la recuperação), marcas C/D descartadas (2014: "DEV. DE
   // CONVÊNIO" 14.754,86 D sumaba dentro de ingresos).
   const cdDe = (f) => { const m = String(f.actual ?? '').trim().match(/\s([CD])$/i); return m ? m[1].toUpperCase() : null; };
-  // (Versión 435, cambio G, aprobado por Guido el 2026-10-03) el ajuste manual `fila` (escalón 0) actúa también en las lecturas 5 y 6: la
+  // el ajuste manual `fila` (escalón 0) actúa también en las lecturas 5 y 6: la
   // fila que nombra `reemplaza` sale de las hojas (y de los renglones sin lado de la 6) y, si el ajuste trae un valor, entra la suya.
   const reemplazadas = new Set(ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.reemplaza).map((x) => String(x.reemplaza).trim()));
   const lineasReemplazadas = new Set(ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.reemplazaLinea != null).map((x) => Number(x.reemplazaLinea)));
@@ -861,17 +861,17 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     return r.map((f) => { const cd = cdDe(f); return { ...f, M: cd ? (cd === cdResta ? -Math.abs(f.M) : Math.abs(f.M)) : f.M * normal, origen: `estado (lectura 5: hoja${cd ? ` con ${cd}` : ''})` }; }); };
   const ing5 = conSigno5('ingreso', 'D'); const gas5 = conSigno5('gasto', 'C');
   if (reemplazadas.size || lineasReemplazadas.size) aplicarAjustesFila(ing5, gas5, false);
-  // ESCALÓN "financiero sin hojas" (to-do 179 y 187, Lazio 2016): si el estado trae el financiero como UNA fila impresa como subtotal ("Oneri
+  // ESCALÓN "financiero sin hojas": si el estado trae el financiero como UNA fila impresa como subtotal ("Oneri
   // finanziari netti e differenze cambio (1.866.421)") y no hay hojas debajo, las lecturas 5 y 6 (solo hojas) lo dejaban en 0 y el resultado
   // no cerraba. Una sola compuerta: sin hojas de financiero, se usan los renglones o el total único de `fin` (el resultado impreso sigue siendo
   // la compuerta de la lectura).
   const fin5 = (hojas5('financiero').length ? hojas5('financiero') : fin.filter((f) => isFinite(f.M) && f.M && !reemplazada(f))).map((f) => { const cd = cdDe(f); return { ...f, M: cd ? (cd === 'D' ? -Math.abs(f.M) : Math.abs(f.M)) : f.M }; });
-  // (Versión 437, arreglo de G) un ajuste `fila` del lado financiero con `reemplaza` también ENTRA en la lectura 5/6 (antes solo salía la
+  // un ajuste `fila` del lado financiero con `reemplaza` también ENTRA en la lectura 5/6 (antes solo salía la
   // fila vieja). Caso: Juventus 2003-2006, gastos financieros impresos en positivo bajo "17) INTEREST AND OTHER FINANCIAL EXPENSES".
   for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === 'financiero' && (x.reemplaza || x.reemplazaLinea != null) && isFinite(parseNumber(x.valor)) && parseNumber(x.valor) !== 0)) {
     const m = mult(estado[0]?.bloque); fin5.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual', ...(a.destino ? { destino: a.destino } : {}) });
   }
-  // ESCALÓN "ajustes del financiero sin reemplaza" (to-do 156 B, como troubleshoot): la lectura 5 de arriba solo suma los ajustes del
+  // ESCALÓN "ajustes del financiero sin reemplaza": la lectura 5 de arriba solo suma los ajustes del
   // financiero que reemplazan una fila. fin5Todos les suma también los que no reemplazan nada (una fila que la extracción no trajo). No es
   // una regla de la lectura 5 (así rompía Roma 2018, que cierra el resultado desde la lectura 0 y falla solo por los totales): es un
   // escalón aparte, que corre SOLO si ninguna lectura 0-6 cerró el RESULTADO (lo único que el financiero puede arreglar). Compuerta: la
@@ -884,11 +884,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const evaluar = (nivel, conAjustesFin = false, finForzado = null, bases = null, excluirOtros = null) => {
     const ch = []; let ing = [...(bases ? bases.ing : nivel >= 5 ? ing5 : nivel >= 4 ? ing4 : nivel >= 3 ? ing3 : ing0)]; let gas = [...(bases ? bases.gas : nivel >= 5 ? gas5 : nivel >= 4 ? gas4 : nivel >= 3 ? gas3 : gas0)];
     const finL = finForzado || (nivel >= 5 ? (conAjustesFin ? fin5Todos : fin5) : fin);
-    // LECTURA 6 (Versión 434, cambio F, aprobado por Guido el 2026-10-03): la 5 (solo hojas, sin totales, resultado impreso EXACTO) + los
+    // LECTURA 6: la 5 (solo hojas, sin totales, resultado impreso EXACTO) + los
     // renglones sin lado según su signo, como la lectura 3. Caso: Juventus 2015-16 a 2019-20, "Other non-recurring revenues and costs"
     // (+10.638.769, 2015-16 .md L1880) y "Group's share of results of associates" (−661.133, L1884) quedan sin lado; las lecturas 3-4 los
     // suman pero fallan por el total impreso de ingresos, y la 5 no los suma. Solo se llega acá si fallaron la 0 a la 5.
-    // (to-do 298 y3, escalón c, ok de Guido 2026-10-18) un ajuste `fila` que saca un renglón sin lado se respeta también en las lecturas 3 y 4
+    // un ajuste `fila` que saca un renglón sin lado se respeta también en las lecturas 3 y 4
     // (antes, solo en la 6): la fila volvía a entrar por su signo. Caso: St. Gallen 2024-25, la compensación entre sociedades "Entschädigung"
     // +11.500 / −11.500 (L268-269), sacada con ajustes: entraba igual como ingreso y como gasto e inflaba los dos lados.
     if ((nivel >= 3 && nivel < 5) || nivel >= 6) for (const f of otros) { if (excluirOtros && excluirOtros.has(f)) continue; if (reemplazada(f)) continue; const esGasto = bases?.otrosResultado ? f.M < 0 : gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura ${nivel >= 6 ? 6 : 3})` }); } // el origen le llega a Jev y a Claude como sección
@@ -900,7 +900,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // con otras líneas del mismo lado fuera de ese total. Nottingham Forest: "Turnover" + "Profit on disposal" aparte.
       const filaTotal = estado.find((f) => f.tipo !== 'renglon' && cerca(Math.abs(f.M || 0), total)) || (nivel >= 2 ? estado.find((f) => (lineaTotal != null && f.linea === lineaTotal) || (f.tipo === 'renglon' && cerca(Math.abs(f.M || 0), total))) : null);
       if (filaTotal) {
-        // (to-do 298 y3, escalón b, ok de Guido 2026-10-18) si el escalón "subtotal repetido" (patrón B) salteó ese total por ser la suma de
+        // si el escalón "subtotal repetido" (patrón B) salteó ese total por ser la suma de
         // las filas de arriba, el total cierra con lo que salió de ESAS filas (ellas mismas o las hojas de su nota). Caso: St. Gallen 2024-25,
         // "Erträge netto" 45.057 (L261) = "Erträge brutto" (abierto en su nota) + "Ertragsminderungen"; "Ausserordentlicher Ertrag" queda afuera.
         const partes = (!arr.some((f) => f.etiqueta === filaTotal.etiqueta) && partesSubRep.get(filaTotal.linea)) || [filaTotal.etiqueta];
@@ -933,7 +933,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       return arr;
     };
     if (nivel >= 5) for (const nm of ['ingresos', 'gastos']) ch.push({ nombre: `total de ${nm}`, ok: null, detalle: 'la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso' });
-    // (to-do 199, patrón C) con filas del financiero adentro de los subtotales, los totales impresos también mezclan lados: como en la lectura 5,
+    // con filas del financiero adentro de los subtotales, los totales impresos también mezclan lados: como en la lectura 5,
     // no son compuerta y el resultado tiene que cerrar EXACTO
     else if (bases?.sinTotales) for (const nm of ['ingresos', 'gastos']) ch.push({ nombre: `total de ${nm}`, ok: null, detalle: 'el total impreso incluye filas del financiero (escalón "subtotal repetido"): la compuerta es el resultado impreso exacto' });
     else if (!bases?.sinTotales) { ing = ajuste(ing, tI, 'ingresos', F.total_ingresos?.linea); gas = ajuste(gas, tG, 'gastos', F.total_gastos?.linea); }
@@ -942,12 +942,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if ((objetivo == null || !isFinite(objetivo)) && nivel >= 1 && filaAntes) { objetivo = filaAntes.M; conImp = false; nombreRes = 'resultado antes de impuestos'; }
     let okRes = null; let lect = null; let exactoRes = false; let difRes = null; // difRes: lo usa el escalón del primer año
     if (objetivo != null && isFinite(objetivo)) {
-      // (to-do 155, escalón 1, aprobado por Guido el 2026-10-07) ESCALERA DE LA COMPUERTA DEL RESULTADO: primero las 4 combinaciones de signo
+      // ESCALERA DE LA COMPUERTA DEL RESULTADO: primero las 4 combinaciones de signo
       // pidiendo el resultado EXACTO (media unidad impresa por fila, como la lectura 5); solo si ninguna es exacta, la tolerancia de siempre
       // (cerca). Antes ganaba la primera que entraba en la tolerancia aunque otra fuera exacta. Caso: Cremonese 2025 (.md L183-198),
       // ingresos − gastos −8.054.278; "financiero e impuesto invertidos" daba −6.976.885 (8.522 EUR de diferencia, dentro de la tolerancia) y
       // ganaba, con el financiero cargado +4.261 contra (4.261) impreso; "impuesto invertido" da −6.985.407, el impreso exacto.
-      // (to-do 298 a, ok de Guido 2026-10-18) UN RESULTADO IMPRESO NEGATIVO TRAE SU SIGNO: tiene que cerrar con signo. La comparación en valor
+      // UN RESULTADO IMPRESO NEGATIVO TRAE SU SIGNO: tiene que cerrar con signo. La comparación en valor
       // absoluto queda para el impreso positivo o sin signo (la pérdida impresa sin signo, escalera del to-do 198 más abajo). Antes una lectura con
       // las filas dadas vuelta cerraba contra un negativo impreso. Caso: Lierse Kempenzonen 2022, impreso −4.591; Brutomarge −2.369 leída como
       // ingreso +2.369 y el financiero invertido daban +4.590 y "cierra (financiero invertido)". Medido: 376 documentos idénticos (prueba-completa,
@@ -963,7 +963,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           if (cierraRes(pat, exacto, tol5)) { okRes = true; difRes = Math.abs(Math.abs(pat) - Math.abs(objetivo)); lect = nm; exactoRes = exacto; break; }
         }
         if (okRes) break;
-        // (to-do 212, escalón 2, aprobado por Guido el 2026-10-13) EL SIGNO DE CADA FILA DEL FINANCIERO POR SU RÓTULO, entre los signos en
+        // EL SIGNO DE CADA FILA DEL FINANCIERO POR SU RÓTULO, entre los signos en
         // bloque exactos (arriba) y la tolerancia (la vuelta siguiente). Volos 2023-24 imprime "Πιστωτικοί τόκοι" 5.104,81 y "Χρεωστικοί
         // τόκοι" 5.967,01, los dos en positivo: en bloque daba 482.369,93 o 504.513,57 contra 492.579,55 impreso; por rótulo, 493.441,75 +
         // 5.104,81 − 5.967,01 = 492.579,55 exacto. Y en Volos 2020-21 "los dos como gasto" entraba en la tolerancia (125,6 = 2 × 62,83 de
@@ -975,7 +975,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           }
           if (okRes) break;
         }
-        // (to-do 298 ag, ok de Guido 2026-10-19) EL SIGNO POR RÓTULO, CON EL VALOR IMPRESO CON SU SIGNO: el escalón de arriba toma el valor absoluto
+        // EL SIGNO POR RÓTULO, CON EL VALOR IMPRESO CON SU SIGNO: el escalón de arriba toma el valor absoluto
         // de cada fila, y una reversión negativa dentro de los costos ("Annen finanskostnad" −136.202, dentro de "Sum finanskostnader" 1.313.085)
         // debe restar de verdad, no sumar. Mismo orden y misma compuerta (resultado EXACTO), antes de la tolerancia. Caso: Sarpsborg 08 2023,
         // netInterest 2,63 M en vez de 8.446 (L136-145 del .md; 0,1809 + 1,1406 − 1,4493 + 0,1362). Medido: 722 documentos, 721 idénticos.
@@ -997,21 +997,21 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   let E = null; let E0 = null;
   let algunaCierraRes = false; let escalonAjFin = false;
   let escalonSubRep = false; let escalonSignoDoc = false;
-  // (to-do 298 t) con las filas NBB, primero la lectura 4 (signo impreso: una reversión "(+)/(-)" negativa resta en su lado). La 0 lee en
+  // con las filas NBB, primero la lectura 4 (signo impreso: una reversión "(+)/(-)" negativa resta en su lado). La 0 lee en
   // valor absoluto y, con la tolerancia, podía dar por bueno un estado con una reversión sumada (Patro Eisden 2025 cerraba así).
   for (const n of nbbV ? [4, 0, 1, 2, 3, 5, 6] : [0, 1, 2, 3, 4, 5, 6]) {
     const e = evaluar(n); if (!E0) E0 = e; if (e.okRes) algunaCierraRes = true; if (e.cierra) { E = e; break; }
-    // (to-do 175, escalón 1) después de la lectura 4 y antes de la 5: la 4 sin los subtotales que repiten el renglón de arriba. Misma
+    // después de la lectura 4 y antes de la 5: la 4 sin los subtotales que repiten el renglón de arriba. Misma
     // compuerta que la 4 (totales impresos y resultado). Solo si la base cambia (hay un subtotal repetido).
     if (n === 4 && hayRepetido) { const er = evaluar(4, false, null, { ing: ing4r, gas: gas4r }); if (er.okRes) algunaCierraRes = true; if (er.cierra) { E = er; escalonSubRep = true; break; } }
     if (n === 4 && cambiaSigno4e) { const es = evaluar(4, false, null, { ing: ing4e, gas: gas4e }); if (es.okRes) algunaCierraRes = true; if (es.cierra) { E = es; escalonSignoDoc = true; notas.push('escalón "signo del documento": los ajustes `fila` con el signo contrario al de su lado en el estado restan; cerró la lectura 4'); break; } }
   }
-  // ESCALÓN "de los cuales" (to-do 298 b3, ok de Guido 2026-10-18). Una fila que empieza con "Waarvan:" / "dont" / "davon" / "of which" /
+  // ESCALÓN "de los cuales". Una fila que empieza con "Waarvan:" / "dont" / "davon" / "of which" /
   // "de los cuales" (vocabulario.mjs DE_LOS_CUALES) es una PARTE de la de arriba: sumada aparte, cuenta dos veces. No se saca siempre (manta
   // corta): solo si NINGUNA lectura cerró, se prueban las lecturas 4 y 5 sin esas filas. Compuerta: cierra EXACTO. Caso: Lierse SK 2025 (L255-256),
   // Brutomarge 2.706.155 y debajo "Waarvan: niet-recurrente bedrijfsopbrengsten" 82.200; Patro Eisden 2025 (1.810). Antes, un ajuste `fila` en 0.
   let escalonDeLosCuales = false;
-  // (to-do 298 r2) También una fila que el .md imprime debajo de un encabezado "Analysed as" (hasta 3 líneas antes, en la misma tabla): el
+  // También una fila que el .md imprime debajo de un encabezado "Analysed as" (hasta 3 líneas antes, en la misma tabla): el
   // desglose del renglón de arriba ("Exceptional items" ya dentro de "Administrative expenses", West Ham 2020-21 a 2023-24). Misma compuerta.
   const lineasMdAs = (() => { try { return readFileSync(resolve(ROOT, md), 'utf8').split('\n'); } catch { return []; } })();
   const bajoAnalysedAs = (f) => { for (let i = f.linea - 2; i >= Math.max(0, f.linea - 4); i--) { const t = lineasMdAs[i] || ''; if (!t.startsWith('|')) return false; if (/^\|\s*[*_]*\s*analysed as\b/i.test(t)) return true; } return false; };
@@ -1024,7 +1024,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (escalonDeLosCuales) notas.push(`escalón "de los cuales": cerró la lectura ${E.nivel} sin las filas ${[...ing4, ...gas4, ...ing5, ...gas5].filter(esDeLosCuales).map((f) => `"${String(f.etiqueta).slice(0, 50)}" L${f.linea}`).filter((x, i, a) => a.indexOf(x) === i).join(', ')} (una parte de la fila de arriba)`);
   }
   if (!E && !algunaCierraRes && fin5Todos.length > fin5.length) { const e = evaluar(5, true); if (e.cierra) { E = e; escalonAjFin = true; } } // to-do 156 B
-  // ESCALÓN "17) resta" (to-do 155, escalón 2, aprobado por Guido el 2026-10-07). El formato del Codice Civile imprime el renglón 17)
+  // ESCALÓN "17) resta". El formato del Codice Civile imprime el renglón 17)
   // "interessi e altri oneri finanziari" en positivo y lo resta por POSICIÓN ("TOTALE (C) (15+16-17)"); el financiero se lee con el signo
   // impreso y lo suma. Solo corre si el resultado no cerró EXACTO en ninguna lectura. Propone: el 17) y lo que cuelga de él (hasta el 17-bis o
   // el total de C) como −|valor|; 16) y 17-bis con su signo. Compuerta ÚNICA: la suma da EXACTO el total de C impreso (el último subtotal del
@@ -1032,7 +1032,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // cierra el resultado exacto. Caso: Torino 2024 (.md L515-520), 16) 438.730, 17) 3.226.978, TOTALE (C) (2.788.248): 438.730 − 3.226.978 =
   // −2.788.248; resultado 19.682.867 − 2.788.248 − 6.496.317 = 10.398.302. No corre donde el 17) ya viene entre paréntesis y cierra
   // (Atalanta, Sassuolo, Monza, Lazio, Roma 2022). No mira la etiqueta del renglón ("oneri"), solo la numeración del formato; el nombre fijo del 17) en las filas vale solo si el .md no
-  // trae el 17) (to-do 188, peldaño A, abajo).
+  // trae el 17).
   let escalon17 = false; let fin17 = null; let nota17bis = null; let nota17D = null;
   const finEst = estado.filter((f) => f.lado === 'financiero');
   // El encabezado del 17) se busca en el .md, no en las filas: la extracción a veces no lo trae (Cremonese 2025: "17) interessi e altri oneri
@@ -1045,7 +1045,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const iniC = finEst.length ? Math.min(...finEst.map((f) => f.linea || Infinity)) : null;
   let cab17 = null;
   if (iniC != null && isFinite(iniC)) for (let i = iniC - 1; i < Math.min(lineasMd.length, iniC + 80); i++) if (RX17.test(lineasMd[i] || '')) { cab17 = { linea: i + 1, etiqueta: lineasMd[i].trim().slice(0, 60) }; break; }
-  // (to-do 188, peldaño A) Si el .md no trae el 17) a la altura de la tabla (Torino 2019: la transcripción dejó las etiquetas como texto arriba,
+  // Si el .md no trae el 17) a la altura de la tabla (Torino 2019: la transcripción dejó las etiquetas como texto arriba,
   // L600-612, y los importes en una tabla sin nombres, L644-650), vale el nombre fijo del renglón que le puso la extracción a la fila del
   // financiero ("Interessi e altri oneri finanziari", L646). Misma compuerta de abajo.
   if (!cab17) { const h = finEst.filter((f) => isFinite(f.linea) && RX17NOMBRE.test(String(f.etiqueta))).sort((a, b) => a.linea - b.linea)[0]; if (h) cab17 = { linea: h.linea, etiqueta: String(h.etiqueta).slice(0, 60), deFilas: true }; }
@@ -1057,7 +1057,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const RXDE = /(^|\|)\s*(\*\*)?\s*[DE]\s*\)/; // D) / E) en mayúscula: "d) oneri diversi" es un renglón del 17)
     let finC = null; for (let i = cab17.linea; i < Math.min(lineasMd.length, cab17.linea + 80); i++) if (RXFINC.test(lineasMd[i] || '') || RXDE.test(lineasMd[i] || '')) { finC = i + 1; break; }
     const finSeccion = finC ?? estado.find((f) => f.linea > cab17.linea && f.lado !== 'financiero')?.linea;
-    // (to-do 188, peldaño A) El total de C es el último subtotal antes del fin de la sección; si con él la compuerta no cierra, se prueban los
+    // El total de C es el último subtotal antes del fin de la sección; si con él la compuerta no cierra, se prueban los
     // anteriores, del último al primero, y vale el primero que cierra. Hace falta cuando el .md no tiene etiquetas y no se sabe dónde termina C
     // (Torino 2019: el último es el 0 de la D, L650; el de C es (108.044), L648). La compuerta es la misma: el total impreso, exacto.
     const candTotC = finEst.filter((f) => f.tipo !== 'renglon' && isFinite(f.M) && f.linea > cab17.linea && (!finSeccion || f.linea < finSeccion)).sort((a, b) => b.linea - a.linea);
@@ -1067,11 +1067,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const hasta = bis || totC.linea;
       let prop = fin5Todos.map((f) => (f.origen !== 'ajuste manual' && f.linea >= cab17.linea && f.linea < hasta ? { ...f, M: -Math.abs(f.M), origen: 'estado (escalón 17) resta)' } : f));
       const tolC = Math.max(1e-6, 0.5 * [...prop, totC].reduce((a, f) => a + (f.u || 0), 0));
-      // (to-do 166, 17-bis) si no da el total de C, LAS SUMAS ELIGEN EL SIGNO de las filas del 17-bis (utili suma, perdite resta, pero impreso
+      // si no da el total de C, LAS SUMAS ELIGEN EL SIGNO de las filas del 17-bis (utili suma, perdite resta, pero impreso
       // las dos en positivo; o el 17-bis metido dentro del total del 17): se prueban las combinaciones de signo de esas filas (hasta 4) y se
       // usa la ÚNICA que da exacto el total de C impreso. Casos: Napoli 2024 (L287 a) utili 30, L288 b) perdite 4.559, 17bis impreso (4.529));
       // Atalanta 2019 (L429 "17-bis" 923 dentro de "Totale 17)" 1.027.884). Sin combinación única, como antes.
-      // (to-do 188, peldaño B) la compuerta de C mira solo las filas de C: si la extracción dejó filas de la D en el financiero (Bologna 2023-24,
+      // la compuerta de C mira solo las filas de C: si la extracción dejó filas de la D en el financiero (Bologna 2023-24,
       // L1279), quedan después del total de C y no entran en esta suma.
       const sumaC = () => conSigno(prop.filter((f) => !(f.linea > totC.linea)));
       if (bis && Math.abs(sumaC() - totC.M) > tolC) {
@@ -1082,7 +1082,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           if (sirven.length === 1) { const m = sirven[0]; const ids = new Map(amb.map((f, i) => [f, (m >> i) & 1 ? -1 : 1])); prop = prop.map((f) => (ids.has(f) ? { ...f, M: ids.get(f) * Math.abs(f.M), origen: 'estado (escalón 17) resta, 17-bis por las sumas)' } : f)); nota17bis = (`escalón "17) resta": el signo del 17-bis lo eligen las sumas (${amb.map((f) => `L${f.linea} ${ids.get(f) < 0 ? 'resta' : 'suma'}`).join(', ')}): única combinación que da el total de C impreso`); }
         }
       }
-      // (to-do 188, peldaño B) La D que la extracción dejó en el FINANCIERO (Bologna 2023-24 y 2024-25: "19) svalutazioni, a) di partecipazioni
+      // La D que la extracción dejó en el FINANCIERO (Bologna 2023-24 y 2024-25: "19) svalutazioni, a) di partecipazioni
       // 259.314" impreso en positivo y restado por posición: "Totale delle rettifiche (18-19) (259.314)"). Después del total de C, una fila que cuelga
       // de un 19) resta y una de un 18) suma (el encabezado se busca en el .md, hacia arriba hasta el total de C). COMPUERTA: la suma de esas filas
       // con ese signo da EXACTO el total de D impreso (el último subtotal del financiero antes de salir de la sección). Si no cierra, la D queda como estaba.
@@ -1108,7 +1108,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     }
   }
-  // ESCALÓN "sección D" (to-do 166, aprobado por Guido el 2026-10-08). Las rettifiche di valore di attività finanziarie (D del Codice
+  // ESCALÓN "sección D". Las rettifiche di valore di attività finanziarie (D del Codice
   // Civile: 18) rivalutazioni suma, 19) svalutazioni resta) llegan de la extracción sin lado y la lectura 3 las suma como ingreso o gasto
   // por su signo, o la tolerancia las tapa. Solo corre si el resultado no cerró EXACTO. Propone: las filas sin lado entre la última fila del
   // financiero y "Risultato prima delle imposte" van al financiero; las que cuelgan de un 18) (encabezado buscado en el .md) suman |valor|,
@@ -1134,14 +1134,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (resD && conSeccionD && !ajusteEnD) {
     const dRows = otros.filter((f) => f.linea > ultFin && f.linea < resD.linea);
     if (dRows.length) {
-      // (to-do 166, E) con una sección E (proventi e oneri straordinari) a continuación de la D, el total a igualar es la SUMA de los totales de D y de E
+      // con una sección E (proventi e oneri straordinari) a continuación de la D, el total a igualar es la SUMA de los totales de D y de E
       // ("TOTALE ... (D)" y "TOTALE ... (E)"); sin E, el último subtotal como siempre. Caso: AC Milan 2008 a 2013 (D y E al final de cada estado).
       const totalesZona = estado.filter((f) => f.lado === 'otro' && f.tipo !== 'renglon' && isFinite(f.M) && f.M && f.linea > ultFin && f.linea < resD.linea).sort((a, b) => a.linea - b.linea);
       const totDE = totalesZona.filter((f) => /\(\s*[DE]\s*\)\s*$/i.test(String(f.etiqueta).trim()));
       const dTot = totDE.length >= 2 ? { ...totDE[totDE.length - 1], M: totDE.reduce((a, f) => a + f.M, 0), combinadoDE: totDE.map((f) => f.linea) } : totalesZona.pop();
       const RX18 = /(^|\|)\s*(\*\*)?\s*18\s*\)?\s+(rivalutaz|revaluat)|rivalutazion|revaluation/i;
       const RX19 = /(^|\|)\s*(\*\*)?\s*19\s*\)?\s+(svalutaz|write)|svalutazion|write-?downs?|impairment/i;
-      // (to-do 166, E) la búsqueda hacia arriba se corta en el encabezado de la sección E (proventi e oneri straordinari): sus filas llevan el signo impreso, no el
+      // la búsqueda hacia arriba se corta en el encabezado de la sección E (proventi e oneri straordinari): sus filas llevan el signo impreso, no el
       // del 19) de la D que queda más arriba. Caso: AC Milan 2008 a 2013 (plusvalenze +40 contadas como −40).
       const RXE = /(^|\|)\s*#*\s*(\*\*)?\s*E\s*\)\s*(\*\*)?\s*(PROVENTI E ONERI STRAORDINARI|Proventi e oneri straordinari)/;
       const RX21 = /(^|\|)\s*#*\s*(\*\*)?\s*21\s*\)\s*(\*\*)?\s*oneri/i; const signoD = (f) => { for (let i = f.linea - 1; i > ultFin; i--) { const t = lineasMd[i - 1] || ''; if (RX21.test(t)) return -1; if (RXE.test(t)) return 0; if (RX19.test(t)) return -1; if (RX18.test(t)) return 1; } return 0; };
@@ -1157,7 +1157,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       }
     }
   }
-  // ESCALÓN "gestión de jugadores neta" (to-do 170, aprobado por Guido el 2026-10-08). En la tabla reclasificada de la relación de gestión
+  // ESCALÓN "gestión de jugadores neta". En la tabla reclasificada de la relación de gestión
   // (AS Roma 2012-2017) la compraventa de jugadores sale NETA en una fila sin lado ("Gestione operativa netta calciatori") entre el total de
   // costos y el EBITDA, y debajo del resultado vienen otras filas sin lado ("Risultato di terzi", "Utili/perdite attuariali", otro resultado
   // integral) que la lectura 6 también suma. Solo corre si ninguna lectura cerró. Propone: de las filas sin lado, SOLO las que están entre el
@@ -1181,7 +1181,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       }
     }
   }
-  // ESCALÓN "renglón grande sin abrir" (to-do 175, escalón 2, aprobado por Guido el 2026-10-08). La nota del subtotal solo
+  // ESCALÓN "renglón grande sin abrir". La nota del subtotal solo
   // corría en el camino de error (la propuesta de carga marcó una categoría en 0), y un lump_* apaga esa marca: un renglón agregado del
   // modelo italiano ("altri" 42,8 M, el 74% de los ingresos de Cremonese 2024) quedaba entero aunque el documento traiga su desglose.
   // Solo corre si la lectura que ganó deja un renglón de ingresos del estado de 20% o más del total. Propone: la MISMA lectura con la nota
@@ -1213,10 +1213,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // EXACTO (como en la lectura 5). Caso: Avaí 2021 sin sus ajustes a mano: cierra exacto con lo mismo que dejaron los ajustes. Más arriba en
   // la escalera (dentro del "subtotal repetido") le ganaba a la lectura 5 en Ferroviária 2012 y le cambiaba el signo del financiero.
   if (!E && finBloque) { const ec = evaluar(4, false, finBloque, { ing: ing4c, gas: gas4c, sinTotales: true }); if (ec.cierra && ec.exacto) { E = ec; escalonFinBloque = true; } }
-  // (to-do 237 q) ESCALÓN "ACUMULADOS" (el último: solo si nada cerró). Los totales (A)-(G) del POC no se cuentan y el financiero toma el
+  // ESCALÓN "ACUMULADOS" (el último: solo si nada cerró). Los totales (A)-(G) del POC no se cuentan y el financiero toma el
   // signo de su lado (ver lineasDeLado). Como los totales impresos acumulan lados, la compuerta es el resultado impreso EXACTO.
   if (!E && finAcum) { let ea = evaluar(4, false, finAcum, { ing: ing4a, gas: gas4a, sinTotales: true }); let sinOtros = false; if (!(ea.cierra && ea.exacto) && otros.length) { ea = evaluar(4, false, finAcum, { ing: ing4a, gas: gas4a, sinTotales: true }, new Set(otros)); sinOtros = true; } if (ea.cierra && ea.exacto) { E = ea; escalonAcum = sinOtros ? 'sin-otros' : true; } }
-  // (to-do 237 q) ESCALÓN "OTROS CON EL SIGNO DEL RESULTADO" (después de "acumulados"): una fila sin lado cuyo rótulo es neto, "(Custos)/Proveitos
+  // ESCALÓN "OTROS CON EL SIGNO DEL RESULTADO" (después de "acumulados"): una fila sin lado cuyo rótulo es neto, "(Custos)/Proveitos
   // com transacções de passes de jogadores", se imprime con el signo del RESULTADO (negativo = costo) y no con el de los gastos; y el total
   // de costos impreso excluye la amortización de pases, así que no es compuerta. Compuerta: resultado impreso EXACTO.
   let escalonOtrosRes = false;
@@ -1224,12 +1224,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const sinNumero = !E && E0.ch.every((c) => c.ok === null) && !filaAntes;
   if (!E) E = E0;
   let ing = E.ing; let gas = E.gas; chequeos.push(...E.ch);
-  // (to-do 220, escalón aprobado por Guido el 2026-10-13) LA NOTA EXACTA TAMBIÉN EN LAS LECTURAS 5 Y 6. Esas lecturas (pensadas para los
+  // LA NOTA EXACTA TAMBIÉN EN LAS LECTURAS 5 Y 6. Esas lecturas (pensadas para los
   // balancetes) leen solo los renglones del estado y nunca abren notas. Si cerraron el resultado, un renglón se reemplaza igual por las filas
   // de la nota que extraer.mjs marcó como su desglose (detalla_a) cuando esas filas suman el renglón AL CENTAVO (cerrarNota() y además
   // diferencia cero: con la media unidad por fila de cerrarNota, el redondeo corría los totales de 42 documentos). Totales y resultado no
   // cambian; solo el detalle. Medido: 22 documentos ganan detalle (Roma 2006-2022, AC Milan, Avaí, Ferroviária, Remo, Vila Nova, AEK
-  // 2022-2025), 0 con totales distintos; los ya cargados no cambian hasta que se recarguen (decisión de Guido 2026-10-13). Caso:
+  // 2022-2025), 0 con totales distintos; los ya cargados no cambian hasta que se recarguen. Caso:
   // AEK 2023, "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες" 25.364.542 (L481) = Μισθοδοσία 10.744.231 + Αποσβέσεις συμβολαίων ποδοσφαιριστών
   // 14.620.311 (nota 6.19, L1462-1463): la nómina y la amortización de pases dejan de cargarse juntas como salarios, como en 2016-2021.
   if (E.cierra && E.nivel >= 5) {
@@ -1237,7 +1237,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === String(f.etiqueta).trim());
       const c = hijas.length >= 2 ? cerrarNota(Math.abs(f.M || 0), hijas, 'M', f.u || 0) : null;
       if (!c) return [f];
-      // al centavo; o (escalón siguiente, decisión de Guido 2026-10-13) a UNA unidad impresa como máximo, con la diferencia como fila
+      // al centavo; o a UNA unidad impresa como máximo, con la diferencia como fila
       // "Diferencia de redondeo" para que los totales no cambien. Caso: AEK 2024, 16.703.249 + 19.075.580 = 35.778.829 contra 35.778.830.
       const dif = Math.abs(f.M || 0) - c.hojas.reduce((t, h) => t + h.valorNota, 0);
       if (Math.abs(dif) > 1e-9 && Math.abs(dif) > (f.u || 0) + 1e-12) return [f];
@@ -1262,7 +1262,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (E.cierra && E.nivel > 0) { chequeos.push({ nombre: 'lectura', ok: true, detalle: `cerró con la lectura ${E.nivel} (${NOMBRES_LECTURA.slice(1, E.nivel + 1).join(' + ')})` }); notas.push(`la lectura base no cerraba; cerró con la lectura ${E.nivel}`); }
   if (sinNumero) chequeos.push({ nombre: 'número impreso para cerrar', ok: false, detalle: 'el documento no imprime totales ni resultado en los bloques elegidos: no hay cómo confirmar las sumas' });
 
-  // AJUSTES MANUALES (Versión 366; tools/ajustes.mjs, Admin/registros/ajustes-manuales.jsonl): el escalón 0 de cada escalera. Una decisión de Guido
+  // AJUSTES MANUALES: el escalón 0 de cada escalera. Una decisión de Guido
   // atada al documento y al campo, no al texto de una pregunta de la cola.
   // resultado-final: el resultado del ejercicio impreso que fijó Guido. El IMPUESTO pasa a ser la diferencia con el resultado antes de
   // impuestos (el impreso si la lectura 1 cerró; si no, el de las filas: ingresos − gastos ± financiero como impreso), con la convención
@@ -1287,14 +1287,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // 1. números no confirmados contra el PDF: la aritmética los confirma si todo cerró; si no, se prueba con lo que leyó la segunda fuente
   const cerro = okRes === true || chequeos.filter((c) => c.nombre.startsWith('total')).some((c) => c.ok === true);
   const usadas = [...ing, ...gas, ...fin, ...imp];
-  const confirmadosAManoZ = ajustesDe(pdf).filter((a) => a.campo === 'confirmado'); // (to-do 237 z)
+  const confirmadosAManoZ = ajustesDe(pdf).filter((a) => a.campo === 'confirmado');
   for (const nc of V?.noConfirmados || []) {
-    // (to-do 237 z) un número confirmado a mano (ajuste `confirmado`, misma línea y mismo valor: la compuerta de avisarRegistro) no vuelve a
+    // un número confirmado a mano (ajuste `confirmado`, misma línea y mismo valor: la compuerta de avisarRegistro) no vuelve a
     // la cola como "número no confirmado" (Santa Clara 2024-25, L1542 "40 646").
     if (confirmadosAManoZ.some((a) => Number(a.linea) === Number(nc.linea) && String(a.valor).trim() === String(nc.numero).trim())) continue;
     const fila = usadas.find((f) => f.linea === nc.linea && normNum(String(f.actual || '')).includes(normNum(nc.numero)));
     if (!fila) continue; // número de otra columna o de una fila que no se usa
-    // (to-do 176, escalón b, aprobado por Guido el 2026-10-08) con la etapa 6 cerrada, LAS SUMAS ELIGEN ENTRE LAS DOS LECTURAS: el número de
+    // con la etapa 6 cerrada, LAS SUMAS ELIGEN ENTRE LAS DOS LECTURAS: el número de
     // una fila que se carga queda confirmado si el resultado cierra con él y deja de cerrar con el de la segunda lectura (misma compuerta del
     // resultado: exacta si la lectura cerró exacto, la tolerancia de siempre si no). Sin segunda lectura con un número parecido, solo un cierre
     // EXACTO lo confirma. Si las dos lecturas cierran (o no hay con qué distinguir), va a la cola como pregunta en vez de frenar en silencio.
@@ -1310,7 +1310,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const dM = Math.sign(fila.M || 1) * (Math.abs(alt) - Math.abs(actualN)) * mult(fila.bloque);
         const efecto = ing.includes(fila) ? dM : gas.includes(fila) ? -dM : fin.includes(fila) ? sf * dM : imp.includes(fila) && conImpR ? si * dM : 0;
         const tolR = Math.max(1e-6, 0.5 * [...ing, ...gas, ...fin].reduce((a, f) => a + (f.u || 0), 0));
-        const cierraCon = (x) => (objetivo < 0 ? (E.exacto ? Math.abs(x - objetivo) <= tolR : cerca(x, objetivo)) : (E.exacto ? Math.abs(Math.abs(x) - Math.abs(objetivo)) <= tolR : cerca(Math.abs(x), Math.abs(objetivo)))); // (to-do 298 a) como cierraRes
+        const cierraCon = (x) => (objetivo < 0 ? (E.exacto ? Math.abs(x - objetivo) <= tolR : cerca(x, objetivo)) : (E.exacto ? Math.abs(Math.abs(x) - Math.abs(objetivo)) <= tolR : cerca(Math.abs(x), Math.abs(objetivo)))); // como cierraRes
         if (efecto && cierraCon(pat) && !cierraCon(pat + efecto)) { confirma = true; porque = `con la segunda lectura (${nc.segundaLeyo}) el resultado daría ${r6(pat + efecto)} y no cierra`; }
       } else if (alt == null && E.exacto) { confirma = true; porque = 'sin segunda lectura parecida, y el resultado cierra exacto con él'; }
       if (confirma) { confirmadosPorSumas.push({ linea: nc.linea, numero: nc.numero }); notas.push(`línea ${nc.linea}: ${nc.numero} no está en el ${V.modo === 'digital' ? 'texto del PDF' : 'segunda lectura'}; las sumas lo confirman (${porque})`); continue; }
@@ -1362,7 +1362,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (sinColumna) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} no trae la columna del año anterior` }); continue; }
     if (codigosNBB) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `códigos NBB del año ${dy === 1 ? year : year - 1} iguales en este documento y en ${otro.pdf.split('/').pop()} (${codigosNBB.join(', ')}); los ingresos se presentan distinto (${r6(dy === 1 ? mio : suyo)} y ${r6(dy === 1 ? suyo : mio)})` }); continue; }
     chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `${paridad ? `en euros, con la paridad fija de ${paridad} (1 EUR = ${EURO_FIJO[paridad]}): ` : ''}ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
-    // (to-do 232 m, aprobado por Guido el 2026-10-14) PRESENTACIÓN DISTINTA: la diferencia es exactamente UNA fila de GASTO (no un total) de
+    // PRESENTACIÓN DISTINTA: la diferencia es exactamente UNA fila de GASTO (no un total) de
     // uno de los dos documentos: uno la presenta y el otro la netea. Casos: Olympiacos 2020 (82,46 M bruto) contra la columna anterior de 2021
     // (74,81 M neto): "Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών" 7.645.064,67; Cuiabá 2022 y 2023, "(-) Deduções das receitas" (bruto
     // contra neto). Medido sobre los 112 casos de año vecino de la cola: 5 aciertos, 0 errores; con "una fila cualquiera" entraban 3 descartados
@@ -1375,7 +1375,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         .flatMap((f) => [f.actual, f.anterior].map((x) => ({ f, v: Math.abs(parseNumber(x) ?? 0) }))).find(({ v }) => v && [1e6, 1e3, 1].some((e) => Math.abs(v / e - dif) <= Math.max(2e-6, dif * 1e-7)));
       if (neteada) { chequeos[chequeos.length - 1] = { ...chequeos[chequeos.length - 1], ok: null, detalle: `presentación distinta: ingresos de ${dy === 1 ? year : year - 1} ${r6(mio)} y ${r6(suyo)}; la diferencia es exactamente "${neteada.f.etiqueta}" (${neteada.f.lado}, ${neteada.f.actual}), que uno de los dos documentos netea` }; vecinos[vecinos.length - 1] = null; continue; }
     }
-    // (to-do 298 n, ok de Guido 2026-10-19) PERÍMETROS DISTINTOS: si no coinciden y los dos documentos tienen perímetro fijado (ajuste del
+    // PERÍMETROS DISTINTOS: si no coinciden y los dos documentos tienen perímetro fijado (ajuste del
     // documento o del club) distinto, la columna del año anterior es de otro perímetro: no se puede comparar (como `otroRegimen`). Solo
     // baja una comparación que FALLA; una que coincide sigue valiendo (Roma 2005, Benfica 2005-06). Casos: FCI Levadia 2020 (la MTÜ sola,
     // 786.551) contra la columna del consolidado 2021 (1.073.554), 15 casos estonios todos aceptados; Benfica 2018-19 y Aris 2021.
@@ -1385,7 +1385,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     if (ok === false) caso('anio-vecino', String(year + dy), `Los ingresos de ${dy === 1 ? year : year - 1} no coinciden entre este documento y ${otro.pdf.split('/').pop()} (${r6(mio)} contra ${r6(suyo)}). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.`, { pagina: estado[0]?.pagina });
   }
-  let primerAnio = null; // (to-do 214, escalón 3) el pedido a Claude y su estado, para tools/primer-anio-ia.mjs
+  let primerAnio = null; // el pedido a Claude y su estado, para tools/primer-anio-ia.mjs
   let primerAnio214 = null; // hace falta el caso "primer año" salvo que lo confirme el escalón 3 (se decide abajo)
   // El escalón 3 del primer año: arma el pedido con las líneas del estado y lo que se carga, y aplica la compuerta si la respuesta está guardada.
   // `filas`: lo que se carga, con los signos de la carga (financiero e impuesto como su efecto en el resultado): se arma abajo, junto al
@@ -1411,7 +1411,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const res214 = chequeos.find((x) => x.nombre === 'resultado del ejercicio');
     const resOk214 = (base) => res214?.ok === true && res214.dif != null && res214.dif <= REL214 * Math.abs(base);
     const imprime3 = ti214 != null && tg214 != null && resOk214(ti214);
-    // (to-do 214, escalón 2, aprobado por Guido el 2026-10-13) imprime UN total y el resultado, los dos a 0,01%, y el otro total NO está
+    // imprime UN total y el resultado, los dos a 0,01%, y el otro total NO está
     // impreso: ese otro queda determinado por la cuenta. Solo la suma directa (`suma`/`impreso`), no las variantes interpretadas (un renglón
     // como total, deducciones aparte). Medido: 7 más de los 77 aceptados (Volos 2024: ingresos 5.872.569 = impreso, sin total de gastos,
     // resultado 383.182,45 exacto), ninguno de los 2 descartados.
@@ -1419,12 +1419,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const imprime1 = !imprime3 && ((ti214 != null && sinImp214('gastos') && resOk214(ti214)) || (tg214 != null && sinImp214('ingresos') && resOk214(tg214)));
     if (imprime3) chequeos.push({ nombre: 'primer año', ok: true, detalle: 'ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)' });
     if (imprime1) chequeos.push({ nombre: 'primer año', ok: true, detalle: `${ti214 != null ? 'ingresos' : 'gastos'} y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)` });
-    // (to-do 214, escalón 3, aprobado por Guido el 2026-10-13) SOLO EL RESULTADO coincide a 0,01% (de los ingresos): con el resultado exacto,
+    // SOLO EL RESULTADO coincide a 0,01% (de los ingresos): con el resultado exacto,
     // lo único que se escapa es un error que se compensa (la misma cifra en los dos lados, una fila que falta de un lado y sobra del otro).
     // Se le pregunta a Claude con las líneas del estado y lo que se carga (tools/primer-anio-ia.mjs): sin ninguna fila marcada, no hace
     // falta el caso; con alguna, el caso lleva la cita. Sin respuesta guardada, el caso queda como antes y el pedido queda "pendiente".
     // El escalón 3 y el caso "primer año" se resuelven abajo, con los signos de la carga (ver escalon3_214).
-    // (to-do 298 t) el estado salió de sus códigos NBB y cerró exacto: cada código tiene UN lado y todos los totales impresos cierran, así
+    // el estado salió de sus códigos NBB y cerró exacto: cada código tiene UN lado y todos los totales impresos cierran, así
     // que el error que se compensa que busca esta revisión no puede pasar (una fila del lado equivocado rompe el 9901 o el 70/76A y 60/66A).
     const porNBB = !!(nbbV && E?.exacto && E?.okRes && !imprime3 && !imprime1);
     if (porNBB) chequeos.push({ nombre: 'primer año', ok: true, detalle: 'el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)' });
@@ -1468,7 +1468,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     }
     return null;
   };
-  // (to-do 222, escalón aprobado por Guido el 2026-10-13) CUADRO POR NATURALEZA: "¿Se carga <cuadro> como desglose conjunto / por naturaleza /
+  // CUADRO POR NATURALEZA: "¿Se carga <cuadro> como desglose conjunto / por naturaleza /
   // transversal…?" lo decide una cuenta, no una persona. Hasta acá siempre se contestó así a mano (Asteras 2020-2025, OFI 2020 y 2025, Levadiakos
   // 2020). El cuadro es el PRIMER bloque de la duda (no del estado); su total es su fila de total o subtotal de un lado (si hay varias, todas con
   // el mismo importe: Asteras imprime "Σύνολο" bajo el cuadro y bajo su "Κατανομή ανά κατηγορία"); a ese total se le restan sus filas de otro
@@ -1499,7 +1499,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     if (!dan.length && ![...ing, ...gas].some((f) => f.bloque === C)) return { decision: 'no', porque: `el cuadro ${C} (${String(tots[0].actual)}) no es la suma de ningún grupo de renglones del estado, y la carga no usa sus filas` };
     return null;
   };
-  // (to-do 237 v) EL CUADRO DE INVENTARIOS. "Apuramento do custo das mercadorias vendidas" (inicial + compras ± regularizações − final = costo)
+  // EL CUADRO DE INVENTARIOS. "Apuramento do custo das mercadorias vendidas" (inicial + compras ± regularizações − final = costo)
   // no es un desglose aditivo y abría 2 dudas por club con la misma respuesta (Porto b102, Santa Clara b20, Braga b38; 31 en la cola). La
   // respuesta es siempre la misma, aunque la pregunta venga redactada al revés ("¿se cargan…?" / "¿se dejan afuera…?"): el cuadro queda afuera
   // y se carga el renglón del estado. COMPUERTA, una sola: el bloque de la duda tiene UNA fila de inventario inicial, UNA de final, compras y
@@ -1545,17 +1545,17 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // localizar y extraer escriben cada duda como una pregunta que se contesta sí o no, con su propuesta; la cola muestra eso. Las dudas en
       // formato viejo (sin `pregunta`) se muestran con su texto, como antes.
       const que = d.pregunta ? `${d.pregunta}  (por qué: ${d.texto})` : `La IA de ${origen === 'localizar' ? 'localizar (qué bloques son el estado y sus notas)' : 'extraer (las filas)'} dejó esta duda: ${d.texto}`;
-      // POR TEMA (Versión 341, diseño aprobado por Guido): si la IA clasificó la duda en un tema de la lista fija (no 'otro'), se reconoce por
+      // POR TEMA: si la IA clasificó la duda en un tema de la lista fija (no 'otro'), se reconoce por
       // club + tema + renglón, no por el texto. Si Guido ya la contestó en CUALQUIER año del club, se aplica sola y no vuelve a la cola.
       const propuesta = d.propuesta ? `${d.propuesta} (responder aceptar si estás de acuerdo; corregir --valor "${d.propuesta === 'sí' ? 'no' : 'sí'}" si no)` : null;
       if (d.tema && d.tema !== 'otro') {
         const club = clubId || pdf.split('/')[2];
         const det = `${club}|${d.tema}|${normalizarRenglon(d.renglon)}`;
-        // (to-do 323 e, ok de Guido 2026-10-19) UN SOLO ESTADO DE RESULTADOS: la IA de localizar vio un único perímetro en el documento (perimetro individual o consolidado, no "ambos") y
+        // UN SOLO ESTADO DE RESULTADOS: la IA de localizar vio un único perímetro en el documento (perimetro individual o consolidado, no "ambos") y
         // pregunta, sin nombrar un renglón, si se carga aunque los años ya cargados sean del otro. La regla 1 de perímetro (CONVENCIONES-DATOS) ya lo decide: un ejercicio publicado con un solo
         // perímetro se carga con ese. Medido sobre 3.702 documentos: cierra 17 dudas, todas las que tenían respuesta guardada (7) eran "aceptar"; ningún caso contestado "no" (AS Roma 2005 y 2011 separato, Juventus 2022-23, Narva Trans, Kuressaare) se cierra. COMPUERTA: ningún otro documento de la carpeta del club cierra el mismo día (AS Roma 2011: el separato se descartó porque existe el consolidado del mismo ejercicio). La pregunta del perímetro DEL CLUB sigue en la etapa de cargar.
         if (origen === 'localizar' && d.tema === 'perimetro' && !String(d.renglon || '').trim() && d.propuesta === 'sí' && ['individual', 'consolidado'].includes(U.perimetro) && !registro.some((x) => x.pdf !== pdf && x.pdf.split('/').slice(0, 3).join('/') === pdf.split('/').slice(0, 3).join('/') && x.estado !== 'duplicado' && x.md && (e.periodo?.cierre ? x.periodo?.cierre === e.periodo.cierre : false))) { notas.push(`duda de localizar cerrada por la regla 1 de perímetro (el documento trae un solo estado, ${U.perimetro}): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
-        // ESCALÓN 1 (to-do 153, ok de Guido): la respuesta dada ANTES DEL ALTA del club. Sin alta, la clave lleva el nombre de la carpeta
+        // ESCALÓN 1: la respuesta dada ANTES DEL ALTA del club. Sin alta, la clave lleva el nombre de la carpeta
         // ("Hellas Verona|escala|"); con alta, el id del sitio ("hellasverona-it|escala|"), y la respuesta vieja no se encontraba: la pregunta
         // volvía con otro id (56 repetidas en Goiás, Lazio, Hellas Verona...). Compuerta: el caso respondido es de la MISMA carpeta de club
         // (un "Nacional" de otro país no cuenta). Solo decisiones de verdad: una respuesta automática 'obsoleto' no contesta nada.
@@ -1563,14 +1563,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const antesDelAlta = clubId && clubId !== pdf.split('/')[2] ? respuestaPorDetalle('verificar', 'duda-tema', `${pdf.split('/')[2]}|${d.tema}|${normalizarRenglon(d.renglon)}`, mismaCarpeta) : null;
         const ya = respuestaPorDetalle('verificar', 'duda-tema', det) || (antesDelAlta && antesDelAlta.resp.decision !== 'obsoleto' ? antesDelAlta : null);
         if (ya) { notas.push(`duda de ${origen} ya contestada para el club${ya === antesDelAlta ? ' (antes de su alta)' : ''} (${d.tema}, "${d.renglon || '-'}"): ${ya.resp.decision}${ya.resp.valor ? ` ${ya.resp.valor}` : ''}, en ${ya.caso.pdf.split('/').pop()}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); contestadas.push({ origen, bloques: d.bloques || [], lineas, tema: d.tema, resp: ya.resp, que: ya.caso.que, propuesta: ya.caso.propuesta }); continue; }
-        // (to-do 213, escalón aprobado por Guido el 2026-10-13) DUDA DE ESCALA QUE OTRO DOCUMENTO DEL CLUB RESPONDE: si la carga usó UNIDADES para
+        // DUDA DE ESCALA QUE OTRO DOCUMENTO DEL CLUB RESPONDE: si la carga usó UNIDADES para
         // el estado y otro .md de la carpeta imprime uno de sus importes con su moneda (citaMoneda, arriba), la duda se cierra con la cita. Si la
         // carga usó miles o no hay cita, sigue a la cola como siempre. Sin vigentes.push: un caso viejo abierto se cierra como obsoleto.
         if (d.tema === 'escala' && Math.abs(mult(estado[0]?.bloque) - 1e-6) < 1e-12) {
           const c = citaMoneda();
           if (c) { notas.push(`duda de ${origen} de escala confirmada por otro documento del club (to-do 213): ${c.doc} L${c.linea} imprime ${c.numero} con su moneda; la carga usó unidades`); continue; }
         }
-        // ESCALÓN 2 DE LAS DUDAS (Versión 346, diseño aprobado por Guido): la aritmética la confirma. Si la escalera de lecturas cerró con un
+        // ESCALÓN 2 DE LAS DUDAS: la aritmética la confirma. Si la escalera de lecturas cerró con un
         // número impreso, ningún año vecino da distinto, el tema es de los que las sumas pueden confirmar y la propuesta de la IA es "sí" (lo que
         // extraer ya aplicó), se acepta sola. Perímetro, cuadro de otro año, fila ilegible y "otro" nunca: un perímetro equivocado cierra igual.
         // Caso real: de las 5 preguntas de UC 2010-2014 que Guido contestó "sí" en un minuto, 4 eran de este tipo.
@@ -1579,7 +1579,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // en miles?" y "¿están en unidades y no en miles?"), así que el tema 'escala' no está en la lista de abajo y va a la cola (o a un ajuste).
         { const inv = cuadroInventario(d); if (inv) { notas.push(`duda de ${origen} decidida por la identidad de inventarios (to-do 237 v): ${inv}. "${d.pregunta}"`); continue; } }
         if (E.cierra && !vecinos.includes(false) && ['usar-cuadro-por-segmento', 'cuadro-duplicado', 'columna'].includes(d.tema) && d.propuesta === 'sí') { notas.push(`duda de ${origen} confirmada por las sumas (${d.tema}, "${d.renglon || '-'}"): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
-        // ESCALÓN 2b (to-do 173, aprobado por Guido el 2026-10-09): lo mismo cuando lo ÚNICO que frenó al escalón 2 es un año vecino que da distinto.
+        // ESCALÓN 2b: lo mismo cuando lo ÚNICO que frenó al escalón 2 es un año vecino que da distinto.
         // En estos 3 temas la duda es qué cuadro o qué columna del MISMO documento se usa, y eso lo confirma la suma del propio documento; el
         // vecino falla por reexpresiones o columnas perdidas (Juventus 2005-06, Inter 2019-21, Roma 2012 y 2018, Lazio 2006-07). Compuerta: la del
         // escalón 2 sin la condición del vecino (la escalera de lecturas cerró el resultado). Medido contra las respuestas de Guido en los 242 documentos
@@ -1595,7 +1595,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       pendientes.push({ origen, motivo: `duda-de-${origen}`, detalle: (d.pregunta || d.texto).slice(0, 80), que, pregunta: d.pregunta || d.texto, bloques: d.bloques || [], extra: { pagina, lineas, propuesta } });
     }
   }
-  // MISMO CUADRO: LA RESPUESTA A UNA DUDA CONTESTA LA OTRA (to-do 211, escalón aprobado por Guido el 2026-10-13). localizar y extraer preguntan
+  // MISMO CUADRO: LA RESPUESTA A UNA DUDA CONTESTA LA OTRA. localizar y extraer preguntan
   // por separado sobre el mismo cuadro: AEK 2016-17, cuadro 6.23 'Παροχές στο προσωπικό' (L1612-1618), "¿se carga como desglose?" y "¿se deja
   // afuera?". Las dos siguen yendo a la cola; este escalón solo CIERRA una cuando Guido ya contestó la otra y esa respuesta la contesta.
   //   - Mismo cuadro = mismo PRIMER bloque de las dos dudas (los demás son contexto), y que no sea un bloque del estado de resultados (casi
@@ -1632,7 +1632,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     caso(a.motivo, a.detalle, a.que, a.extra);
   }
 
-  // ESCALERA DEL RESULTADO FINAL (Versión 364, diseño aprobado por Guido el 2026-10-02). Si se cerró contra "resultado antes de impuestos"
+  // ESCALERA DEL RESULTADO FINAL. Si se cerró contra "resultado antes de impuestos"
   // (lectura 1), el resultado final es antes ± impuesto, y el signo con que el documento imprime el impuesto no lo dice: hasta la Versión 363
   // se SUMABA el impuesto tal como está impreso (UC 2013: 57.521 + 163.095 = 220.616), y en Fortaleza CEIF 2025 eso daba 685.847 + 372.407 =
   // 1.058.254 cuando la nota de patrimonio imprime "Resultados del ejercicio 313.440" (= 685.847 − 372.407, .md L1047).
@@ -1706,7 +1706,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       if (res > 0 && PERDIDA.test(etRes) && !GANANCIA.test(etRes)) senales.push(`la etiqueta "${etRes.trim().replace(/\*/g, '')}" es de pérdida`);
       if (res > 0 && /\bD\s*$/.test(String(F.resultado?.actual || ''))) senales.push(`el importe impreso "${F.resultado.actual}" lleva la marca D`);
       if (ingImpresos.length && dinero(ingImpresos.filter((f) => /^\s*[-(−]/.test(String(f.actual)))) > dinero(ingImpresos) / 2) senales.push('los ingresos vienen impresos en negativo (signos de balancete)');
-      // (to-do 237 am) señales nuevas: el signo VA AL FINAL del importe impreso ("3 041 302,19 € -", AVS 2023-24), o el MISMO resultado
+      // señales nuevas: el signo VA AL FINAL del importe impreso ("3 041 302,19 € -", AVS 2023-24), o el MISMO resultado
       // (misma etiqueta, mismo importe) está impreso en otra línea del documento con signo negativo explícito (el estado, el resumen o el
       // patrimonio: AVS L229/L513, Portimonense L1036). Misma compuerta de arriba: el resultado cerró EXACTO con el signo opuesto.
       if (res > 0 && /\d[\s€*]*[-−]\s*\**\s*$/.test(String(F.resultado?.actual || ''))) senales.push(`el importe impreso "${F.resultado.actual}" lleva el signo menos al final`);
@@ -1739,7 +1739,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const finCarga = (f) => (porRotulo ? (signoRotulo(f) ? signoRotulo(f) * (/con signo/.test(lect) ? (f.M || 0) : Math.abs(f.M || 0)) : f.M) : sfCarga * f.M);
   const siCarga = forzado || resultadoFinal?.impuesto === 'restado' ? -1 : resultadoFinal?.impuesto === 'sumado' ? 1 : /financiero e impuesto invertidos|impuesto invertido/.test(lect) ? -1 : 1;
 
-  // (to-do 214, escalón 3, aprobado por Guido el 2026-10-13) SOLO EL RESULTADO coincide a 0,01% (de los ingresos): con el resultado exacto,
+  // SOLO EL RESULTADO coincide a 0,01% (de los ingresos): con el resultado exacto,
   // lo único que se escapa es un error que se compensa (la misma cifra en los dos lados, una fila que falta de un lado y sobra del otro).
   // Se le pregunta a Claude con las líneas del estado y lo que se carga (tools/primer-anio-ia.mjs), con los signos de la carga: sin ninguna
   // fila marcada, no hace falta el caso; con alguna, el caso lleva la cita. Sin respuesta guardada, el caso queda como antes y el pedido queda
@@ -1771,12 +1771,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // una hoja de nota de un lado que quedó RESTANDO dentro del otro (Goiás 2025: "Outras Receitas (b)" 1.439.848, ingreso,
     // dentro de "Outras Receitas e Despesas", renglón de gastos) se escribe en SU lado y en positivo: es lo mismo que cerró, sin decidir
     // nada nuevo. Hasta la 391 salía como ingreso negativo y la carga no cerraba.
-    lineas: [...ing.map((f) => [f, 'ingreso']), ...gas.map((f) => [f, 'gasto'])].map(([f0, lista]) => { const opuesto = lista === 'ingreso' ? 'gasto' : 'ingreso'; const f1 = f0.lado === opuesto && f0.M < 0 ? { ...f0, M: -f0.M } : f0; return f1.lado === 'financiero' ? { ...f1, lado: lista } : f1; /* (to-do 237 w) una fila del financiero que suma dentro de los ingresos o de los gastos (una nota de Outros rendimentos que trae 'Juros') se escribe con el lado de esa lista: cargar.mjs manda a gasto todo lo que no es 'ingreso' (Marítimo 2023-24, Paços 2021-22, Santa Clara) */ }).map((f) => ({ etiqueta: f.etiqueta, lado: f.lado, M: r6(f.M), pagina: f.pagina, linea: f.linea ?? null, origen: f.origen || 'estado', ...(f.catAjuste ? { categoria: f.catAjuste } : {}) })),
+    lineas: [...ing.map((f) => [f, 'ingreso']), ...gas.map((f) => [f, 'gasto'])].map(([f0, lista]) => { const opuesto = lista === 'ingreso' ? 'gasto' : 'ingreso'; const f1 = f0.lado === opuesto && f0.M < 0 ? { ...f0, M: -f0.M } : f0; return f1.lado === 'financiero' ? { ...f1, lado: lista } : f1; /* una fila del financiero que suma dentro de los ingresos o de los gastos (una nota de Outros rendimentos que trae 'Juros') se escribe con el lado de esa lista: cargar.mjs manda a gasto todo lo que no es 'ingreso' (Marítimo 2023-24, Paços 2021-22, Santa Clara) */ }).map((f) => ({ etiqueta: f.etiqueta, lado: f.lado, M: r6(f.M), pagina: f.pagina, linea: f.linea ?? null, origen: f.origen || 'estado', ...(f.catAjuste ? { categoria: f.catAjuste } : {}) })),
     // financiero / impuesto: su efecto en el resultado (ver SIGNOS ... PARA LA CARGA arriba); `signosCarga` dice qué se invirtió.
     signosCarga: { financiero: porRotulo ? 'rótulo' : sfCarga, impuesto: siCarga },
     // `destino` (ajuste `fila` del lado financiero con --destino profit_on_player_sales, Auditora 5): cargar.mjs la manda a profitOnPlayerSales y no a netInterest
     financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(finCarga(f)), linea: f.linea, ...(f.destino ? { destino: f.destino } : {}) })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(siCarga * f.M), linea: f.linea })) };
-  if (primerAnio) out.primerAnio = primerAnio; // (to-do 214, escalón 3) lo lee tools/primer-anio-ia.mjs
+  if (primerAnio) out.primerAnio = primerAnio; // lo lee tools/primer-anio-ia.mjs
   if (notaSubtotalLados.size) out.notaSubtotal = [...notaSubtotalLados]; // la señal que se queda prendida, ver ladosCero
   if (confirmadosPorSumas.length) out.confirmadosPorSumas = confirmadosPorSumas; // los lee avisarRegistro()
   writeFileSync(resolve(ROOT, derivado(md, '.verificacion.json')), JSON.stringify(out, null, 1));
@@ -1785,7 +1785,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (escribirRubros) {
     const club = clubId || pdf.split('/')[2].toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const rubros = out.lineas.filter((l) => l.origen !== 'redondeo').map((l) => ({ label: l.etiqueta, lado: l.lado === 'ingreso' ? 'revenue' : 'expense', page: l.pagina, section: l.origen, values: [l.M] }));
-    // (to-do 237 an) Si el .rubros.json que ya está tiene EXACTAMENTE lo mismo (md, pdf, club, año y cada rubro) salvo la fecha y las glosas,
+    // Si el .rubros.json que ya está tiene EXACTAMENTE lo mismo (md, pdf, club, año y cada rubro) salvo la fecha y las glosas,
     // no se reescribe: reescribirlo borraba las glosas y glosar-rubros.mjs volvía a pagar a Gemini por cada documento de cada corrida del lote
     // (~19 s por documento), aunque no hubiera cambiado nada. Jev y Claude ya no se rehacían (huellas.mjs excluye la glosa y la fecha).
     const pR = resolve(ROOT, derivado(md, '.rubros.json'));
@@ -1797,7 +1797,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   return out;
 }
 
-// AVISO AL REGISTRO VIEJO (Versión 349, ok de Guido). Jev, Claude y cargar.mjs solo trabajan los documentos `listo-para-jev` del registro
+// AVISO AL REGISTRO VIEJO. Jev, Claude y cargar.mjs solo trabajan los documentos `listo-para-jev` del registro
 // (Admin/registros/transcripciones-estado.jsonl), que arma inventario-transcripciones.mjs con la ÚLTIMA línea del historial
 // (Admin/registros/transcripciones-verificaciones.jsonl) para la huella del .md actual. Esa línea la escribía solo el proceso viejo (pipeline.mjs, al
 // preparar). Un documento que entra SOLO por el proceso nuevo, o cuyo .md cambió, quedaba "sin-verificar" aunque el proceso nuevo lo hubiera
@@ -1821,7 +1821,7 @@ function avisarRegistro(md, nRubros, registro, out = null) {
   if (!existsSync(vPath)) return false;
   let v; try { v = JSON.parse(readFileSync(vPath, 'utf8')); } catch { return false; }
   const confirmadosAMano = ajustesDe(md.replace(/\.md$/i, '.pdf')).filter((a) => a.campo === 'confirmado'); // ajuste manual
-  // SOLO LOS BLOQUES QUE SE CARGAN (Versión 457, punto 2 del HANDOFF, aprobado por Guido el 2026-10-04): se exigen confirmados los números de
+  // SOLO LOS BLOQUES QUE SE CARGAN: se exigen confirmados los números de
   // los bloques que usa la lectura que cerró (los de las filas que se cargan: ingresos, gastos, financiero e impuesto, por su línea en el
   // .filas.json); un número de un bloque que no se carga no frena. Caso: Juventus 2021-22, 30 números sin confirmar, todos de notas que la
   // lectura no usó (ej. L6462, b133, "Ticket sales | 32,293 | 7,752 | 24,541" en miles): se destrabó con 29 ajustes `confirmado` que con
@@ -1835,13 +1835,13 @@ function avisarRegistro(md, nRubros, registro, out = null) {
       return bs.size ? bs : null;
     } catch { return null; }
   })();
-  // COMPUERTA DEL ESCALÓN 2b DE LA ETAPA 4 (to-do 160 parte 1, ok de Guido): validar-bloques.mjs marca `propuesta: 'anio-encabezado'` en un año
+  // COMPUERTA DEL ESCALÓN 2b DE LA ETAPA 4: validar-bloques.mjs marca `propuesta: 'anio-encabezado'` en un año
   // de la fila de encabezado de una tabla. La marca sola no alcanza: el número deja de frenar solo si su línea NO es la de ninguna fila que
   // se carga (ingresos, gastos, financiero, impuesto de la lectura que cerró). Sin `out` no se puede saber qué se carga: frena como antes.
   // Caso: Napoli 2024, "2023" en L276 (encabezado); las filas que se cargan están en L280, L281, L284...
   const lineasCargadas = out ? new Set([...(out.lineas || []), ...(out.financiero || []), ...(out.impuesto || [])].map((l) => Number(l.linea))) : null;
   const pasaCompuerta = (n) => n.propuesta === 'anio-encabezado' && lineasCargadas && !lineasCargadas.has(Number(n.linea));
-  // (to-do 176, escalón a, aprobado por Guido el 2026-10-08) UN NÚMERO QUE NO ENTRA EN LA CARGA NO FRENA: el que no es el valor del año de una
+  // UN NÚMERO QUE NO ENTRA EN LA CARGA NO FRENA: el que no es el valor del año de una
   // fila que se carga (una fila del resultado, el total de una nota, la columna del año anterior). Si fuera el resultado impreso o un total mal
   // leído, la etapa 6 no habría cerrado (avisarRegistro solo corre con la etapa 6 en "ok"). Caso: AS Roma 2021, 13 números sin confirmar,
   // ninguno de una fila que se carga (L2157-L2165, el resultado; L4204-L4616, totales de notas). Y (escalón b) los que verificar() confirmó
@@ -1850,7 +1850,7 @@ function avisarRegistro(md, nRubros, registro, out = null) {
   const nn = (x) => String(x ?? '').replace(/[^0-9]/g, '');
   const entraEnLaCarga = (n) => !lineasCargadas || !filasX || filasX.some((f) => Number(f.linea) === Number(n.linea) && lineasCargadas.has(Number(n.linea)) && nn(f.actual) === nn(n.numero));
   const porSumas = (n) => (out?.confirmadosPorSumas || []).some((c) => Number(c.linea) === Number(n.linea) && nn(c.numero) === nn(n.numero));
-  // SIN NINGUNA SEGUNDA LECTURA (to-do 160 parte 2, ok de Guido): la página es una imagen y Gemini y Claude la rechazaron los dos (RECITATION,
+  // SIN NINGUNA SEGUNDA LECTURA: la página es una imagen y Gemini y Claude la rechazaron los dos (RECITATION,
   // poco probable pero posible), así que no hay contra qué confirmar. Ahí manda el escalón 3 de la etapa 4: las sumas de la etapa 6, y
   // avisarRegistro() solo corre con la etapa 6 en "ok". Si las sumas no cierran, verificar() ya manda cada número a la cola
   // ('numero-no-confirmado', "no se pudo confirmar contra el PDF").

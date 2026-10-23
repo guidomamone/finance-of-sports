@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/faltantes-liga.mjs — QUÉ CLUBES LE FALTAN A CADA LIGA POR AÑO, Y LA LISTA DE PENDIENTES DE SOURCING.
 //
-// POR QUÉ (pedido de Guido, 2026-10-17). data/club-leagues/ dice en qué liga jugó cada club NUESTRO; no dice quién falta. El universo de
+// POR QUÉ. data/club-leagues/ dice en qué liga jugó cada club NUESTRO; no dice quién falta. El universo de
 // cada liga-año sale de la tabla de equipos de Wikipedia ya bajada en tools/club-league-reference/<iso2>.json. Cruzado con lo
 // cargado (data/club-index.js), los PDF en mano (Clubes/, vía quien.mjs) y lo ya buscado (Admin/sourcing/<País>/<Club>.md), cada
 // club-año que jugó la liga queda en UN estado:
@@ -165,7 +165,7 @@ export function calcular() {
   };
   const resultado = {}; const sinUnir = {}; const pendientes = {}; // pendientes[pais][club] = { años: [{anio, liga, e}] }
   const unidos = new Set(); // "liga|año|clubId" que la lista reconoció como cargados
-  const posiciones = {}; // "liga|temporada|clubId" -> { pos, de, partida } (to-do 270, lo usa estimar.mjs)
+  const posiciones = {}; // "liga|temporada|clubId" -> { pos, de, partida }
   for (const l of ls) {
     const partida = /[–-]\d{2,4}\b/.test(l.pagina); // "2024–25 ..." = temporada que cruza años
     const cierre = new Date(Date.UTC(l.anio, partida ? 5 : 11, partida ? 30 : 31));

@@ -3,7 +3,7 @@
 // tools/cola.mjs — LA COLA DE REVISIÓN HUMANA del proceso nuevo: todo lo que una etapa no puede resolver sola va acá, con instrucciones para
 // que Guido lo mire en el PDF o en la transcripción, y su respuesta se guarda y se REUSA. Gratis.
 //
-// POR QUÉ (Versión 324, diseño acordado con Guido el 2026-10-01; ver Admin/PIPELINE.md). Hasta acá, lo que no
+// POR QUÉ. Hasta acá, lo que no
 // cerraba quedaba "frenado" y nadie lo miraba hasta que una sesión lo encontraba. Los que hacen esto a escala (Moody's CreditLens, nCino,
 // Ocrolus) tienen la revisión humana como una ETAPA NORMAL, ruteada por confianza, y las correcciones vuelven al sistema. Guido lo pidió así:
 // "vos me podés decir 'revisar tal cosa en el PDF y tal otra en el md' y yo abro el PDF por mi cuenta o la transcripción".
@@ -29,7 +29,7 @@
 // USO:
 //   node tools/cola.mjs                                  los casos pendientes, agrupados por documento, con qué abrir y qué mirar
 //   node tools/cola.mjs --todas                          también los respondidos
-//   node tools/cola.mjs --lista Admin/lotes/lote-NN.txt  solo los casos de los documentos de ese lote (to-do 323 b); también --dir "Clubes/<País>/<Club>"
+//   node tools/cola.mjs --lista Admin/lotes/lote-NN.txt  solo los casos de los documentos de ese lote; también --dir "Clubes/<País>/<Club>"
 //   node tools/cola.mjs --responder <id> aceptar
 //   node tools/cola.mjs --responder <id> corregir --valor "1.234.567" --nota "en el PDF dice 1.234.567, Mistral leyó 1.284.567"
 //   node tools/cola.mjs --responder <id> preguntar-club --nota "¿el ingreso por transferencias es bruto o neto?"
@@ -59,7 +59,7 @@ const DECISIONES = ['aceptar', 'corregir', 'descartar', 'preguntar-club'];
 // releía y parseaba el archivo entero cada vez: 14 de los 36 s de `verificar.mjs --lista` sobre 237 documentos. Ahora guarda lo leído y
 // vuelve a leer solo si el archivo cambió (tamaño o fecha de modificación): una escritura de esta misma corrida (agregarCaso, responder)
 // lo cambia y la consulta siguiente la ve. Lo devuelto no se modifica en ningún llamador.
-// (to-do 298 h) ¿Sacar la fila de este caso de categoría (no_es_rubro), junto con las otras no_es_rubro ya contestadas del documento, deja
+// ¿Sacar la fila de este caso de categoría (no_es_rubro), junto con las otras no_es_rubro ya contestadas del documento, deja
 // sin filas al renglón que su nota abría? Devuelve { padre, hermanas, lado } o null. Lee las líneas del .verificacion.json del documento.
 const normFila = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\(\s*[\d.,]+\s*\)/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 function padreSinFilas(caso, { casos, resp }) {
@@ -112,7 +112,7 @@ export function respuestaDe(pdf, etapa, motivo, detalle = '') {
   const id = createHash('sha1').update(`${pdf}|${etapa}|${motivo}|${detalle}`).digest('hex').slice(0, 7);
   return leer().resp.get(id) || null;
 }
-// LAS DOS PÁGINAS (Versión 326, pedido de Guido el 2026-10-01). `pagina` en un caso es la de la marca "--- pág. N ---" del .md, que es la
+// LAS DOS PÁGINAS. `pagina` en un caso es la de la marca "--- pág. N ---" del .md, que es la
 // página del PDF COMO LA CUENTA EL VISOR. El número impreso al pie de la hoja casi nunca coincide: la portada no se numera, y en Bahia 2021
 // el estado de resultados está en la página 8 del visor con un "7" impreso (en el documento de 2022, página 7 del visor e impreso "6").
 // Guido abrió la hoja con el "6" impreso buscando "pág. 8" y no lo encontró. Ahora la cola dice las dos. El número impreso se busca en el
@@ -166,7 +166,7 @@ export function respuestasDonde(etapa, motivo, filtro = () => true) {
   return out;
 }
 
-// (to-do 237 af) ¿Tiene este documento alguna respuesta (de Guido o de un subagente) a un caso de la etapa `etapa` posterior a `desde` (ISO)?
+// ¿Tiene este documento alguna respuesta (de Guido o de un subagente) a un caso de la etapa `etapa` posterior a `desde` (ISO)?
 // La usa lote.mjs para volver a verificar un documento cuya verificación guardada es anterior a las respuestas de su cola.
 export function respuestaPosterior(pdf, etapa, desde) {
   const L = leer(); const t = Date.parse(desde || 0) || 0;
@@ -186,7 +186,7 @@ export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
   return n;
 }
 
-// CASOS DE AÑOS YA CARGADOS (Versión 487, to-do 141a, pedido de Guido). La cola mostraba casos que no esperaban nada: el año del documento
+// CASOS DE AÑOS YA CARGADOS. La cola mostraba casos que no esperaban nada: el año del documento
 // ya estaba en el sitio (Juventus 2003, 2004, 2016, 2017, 2019 y 2020: 11 casos). Cerrarlos a mano no servía: 'descartar' quiere decir "este
 // documento no se carga" y 'aceptar' se vuelve regla del club, y las dos tienen efecto en las corridas siguientes. Se cierran con el ESTADO
 // 'obsoleto' (no es una respuesta: respuestaDe() y casoYRespuesta() no lo ven, así que ninguna tool cambia lo que hace), y si una etapa vuelve
@@ -233,7 +233,7 @@ export function cerrarResueltoPorClub(pdf, etapa, motivo, detalle, casoOrigen) {
   return true;
 }
 
-// PERFIL YA SABIDO (to-do 232 c): cuando el perfil de un club se decide sin una respuesta de la cola (por la forma jurídica, con su cita), los
+// PERFIL YA SABIDO: cuando el perfil de un club se decide sin una respuesta de la cola (por la forma jurídica, con su cita), los
 // casos de perfil pendientes de ese club y campo se cierran con decision 'obsoleto' y la nota dice de dónde salió. Solo casos pendientes.
 export function cerrarPerfilSabido(detalle, nota) {
   const { casos, resp, cerrado } = leer(); let n = 0;
@@ -281,7 +281,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       console.error('En un caso de categoría, "descartar" sacaría la FILA de la carga (no la pregunta). Usá:\n  aceptar                              la categoría propuesta está bien\n  corregir --valor <categoría>         va en otra categoría\n  corregir --valor no_es_rubro         la fila no se carga (no es un renglón del estado, es un subtotal, etc.)\nSi el año ya está cargado: contestá con la categoría con la que está publicado (aceptar si es la propuesta, corregir si no).');
       process.exit(1);
     }
-    // (to-do 298 h, ok de Guido 2026-10-18) UN no_es_rubro QUE DEJA UN RENGLÓN SIN FILAS NO SE GUARDA (salvo --igual). Si la fila vino de una
+    // UN no_es_rubro QUE DEJA UN RENGLÓN SIN FILAS NO SE GUARDA (salvo --igual). Si la fila vino de una
     // nota que abre un renglón del estado (su origen en el .verificacion.json: "nota que desglosa X" o "desglose de X"; vale el padre más
     // cercano) y con esta respuesta y las otras no_es_rubro del documento a X no le queda ninguna fila, el renglón se pierde entero. Caso:
     // Narva Trans 2025, las dos filas "sh" (del cual) 42.848 + 109.938 eran todo "Riigi ja KOV toetused" 152.786 (.md L572, 579-580); la
@@ -296,18 +296,18 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
     appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision, valor: flag('--valor'), nota: flag('--nota') }) + '\n');
     console.log(`Respuesta guardada para ${id}: ${decision}${flag('--valor') ? ` (${flag('--valor')})` : ''}. La toma la próxima corrida de la etapa que mandó el caso.`);
-    // PERFIL: UNA RESPUESTA VALE PARA TODO EL CLUB (to-do 232 r). El perfil (socios, otros deportes) es del club, pero la respuesta llegaba
+    // PERFIL: UNA RESPUESTA VALE PARA TODO EL CLUB. El perfil (socios, otros deportes) es del club, pero la respuesta llegaba
     // al perfil recién cuando cargar.mjs volvía a correr ESE documento, y los casos de los otros años seguían abiertos (Olympiacos: 10+10
     // contestados de a uno; OFI Crete: 5+5 pendientes). Al contestar `corregir --valor sí|no`, se guarda en el perfil en el momento (la misma
     // lectura de sí/no que cargar.mjs) y la compuerta cierra como `obsoleto` SOLO los otros casos pendientes con el mismo motivo y el mismo
     // detalle (`<clubId>:<campo>`), con cerrarResueltoPorClub(). Con el perfil ya sabido, cargar.mjs no los vuelve a levantar.
-    // CATEGORÍA: UNA RESPUESTA CIERRA LOS OTROS AÑOS PENDIENTES DEL CLUB (to-do 232 d, aprobado por Guido el 2026-10-14). Un lote levanta los
+    // CATEGORÍA: UNA RESPUESTA CIERRA LOS OTROS AÑOS PENDIENTES DEL CLUB. Un lote levanta los
     // casos de todos los años antes de que nadie conteste (PAOK: 70 casos para 13 etiquetas), y la respuesta de otro documento del club ya la
     // toma cargar.mjs (respuestaCat, Versiones 344 y 403, con la compuerta de la MISMA NOTA). Al contestar uno, la compuerta cierra como
     // `obsoleto` solo los pendientes de la MISMA carpeta y el MISMO detalle (etiqueta, o etiqueta|lado). La nota no se mira acá: si en un año
     // la fila está en otra nota, cargar.mjs no aplica la respuesta, vuelve a levantar el caso y agregarCaso() lo reabre. Medido en la cola: de
     // 264 grupos club+etiqueta con 2+ respuestas, 260 dieron la misma categoría. `no_es_rubro` vale solo para su documento: no cierra otros.
-    // (to-do 237 ad) Un `aceptar` cierra solo los casos con la MISMA categoriaPropuesta: aceptar la propuesta de un año no dice nada de otra
+    // Un `aceptar` cierra solo los casos con la MISMA categoriaPropuesta: aceptar la propuesta de un año no dice nada de otra
     // propuesta en otro año (cargar.mjs tampoco la aplica allá). `corregir` nombra la categoría y cierra todos, como antes.
     if (casos.get(id).etapa === 'cargar' && casos.get(id).motivo === 'categoria' && (decision === 'aceptar' || (decision === 'corregir' && flag('--valor') !== 'no_es_rubro'))) {
       const o = casos.get(id); const carpeta = o.pdf.split('/').slice(0, -1).join('/'); let n = 0;
@@ -317,7 +317,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const c0 = casos.get(id); const v = decision === 'corregir' ? (/^s[ií]/i.test(flag('--valor')) ? true : /^no/i.test(flag('--valor')) ? false : undefined) : undefined;
     if (c0.motivo === 'perfil' && v !== undefined) {
       const [clubId, campo] = String(c0.detalle).split(':');
-      // (to-do 298 p1) el chequeo lleva su año y vale para los años a menos de VENTANA_PERFIL; cierra solo las preguntas iguales de esa ventana,
+      // el chequeo lleva su año y vale para los años a menos de VENTANA_PERFIL; cierra solo las preguntas iguales de esa ventana,
       // y si contradice al chequeo más cercano abre la revisión de los años entre los dos (perfil-cambio).
       const { guardarPerfil, perfilCercano, anioDeDoc, VENTANA_PERFIL } = await import('./perfil-clubes.mjs');
       const anioCh = c0.anio ?? anioDeDoc(c0.pdf);
@@ -332,7 +332,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const cerradosPorCarga = await cerrarCargados();
   if (cerradosPorCarga.length) console.log(`Cerré ${cerradosPorCarga.length} caso(s) de años que ya están en el sitio (no esperaban nada; si una etapa los vuelve a levantar, se reabren solos).\n`);
   const L = leer(); const { casos, resp, cerrado } = L;
-  // (to-do 323 b, ok de Guido 2026-10-19) FILTRO POR LOTE O CARPETA, solo para el listado: `--lista <lote.txt>` deja los casos de los documentos de
+  // FILTRO POR LOTE O CARPETA, solo para el listado: `--lista <lote.txt>` deja los casos de los documentos de
   // esa lista (un caso de alta apunta a una carpeta: entra si algún documento de la lista está adentro) y `--dir <carpeta>` los de esa carpeta.
   // No cambia ninguna respuesta ni ninguna etapa.
   const docsLista = flag('--lista') ? readFileSync(resolve(ROOT, flag('--lista')), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : null;
@@ -353,7 +353,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       const r = resp.get(c.id);
       console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : cerrado.get(c.id) ? '   -> CERRADO: obsoleto' : ''}`);
       console.log(`      ${(c.motivo.startsWith('duda-') || c.motivo === 'categoria' || c.motivo === 'perimetro' || c.motivo === 'perfil') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
-      // (to-do 323 d, ok de Guido 2026-10-19, camino 3) la IA escribe la pregunta de una duda en dos formas: "¿Se carga X?" (sí = se carga) y "¿Se deja
+      // la IA escribe la pregunta de una duda en dos formas: "¿Se carga X?" (sí = se carga) y "¿Se deja
       // afuera X?" (sí = queda afuera), con la misma propuesta "sí": el mismo criterio daba `aceptar` o `corregir "no"` y confundía. Solo se agrega una
       // aclaración al listado; lo guardado (la pregunta, la propuesta, las respuestas) no cambia, porque verificar.mjs lee las dos formas.
       if (/^¿\s*Se\s+dejan?\s+afuera\b/i.test(String(c.que || ''))) console.log('      (en esta pregunta «sí» = queda AFUERA de la carga; «no» = se carga)');

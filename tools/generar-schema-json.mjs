@@ -8,7 +8,7 @@
 // `disclosure` es una lista cerrada (DISCLOSURE de json-datos.mjs, los valores que hoy usan los clubes): un valor nuevo hace fallar el schema a propósito,
 // igual que una categoría desconocida.
 //
-// Esquema 2.0 (to-do 248, Admin/mediciones/248-plan.md): cada línea lleva `category` (la genérica, igual para cualquier deporte) y `subcategory` (la
+// Esquema 2.0: cada línea lleva `category` (la genérica, igual para cualquier deporte) y `subcategory` (la
 // del deporte); el par se valida con un `oneOf` por genérica, así un validador externo también lo exige. Escribe además la tabla pública del mapa de cada
 // deporte (data/schema/taxonomy-<versión>.json). data/schema/club-v1.json queda publicado y congelado: este script ya no lo toca.
 //

@@ -190,7 +190,7 @@ function checkCobertura(relFile, absFile, lines) {
 // 2. placeholders de contenido (bloque entero reemplazado por un resumen)
 // ---------------------------------------------------------------------------
 
-// Vocabulario visto en los placeholders reales (Envigado 2023, Versión 254):
+// Vocabulario visto en los placeholders reales:
 // frases descriptivas EN INGLÉS sobre una tabla/sección, en documentos que por lo
 // demás están en español/portugués. Un bracket corto y en el idioma del
 // documento ("[LOGO]", "[Firma]", "[Escudo del Club X]") es una convención

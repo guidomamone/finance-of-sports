@@ -99,7 +99,7 @@ const NOTA_REF_RE = /\(\s*(nota|notas|note|notes|anexo|anexos|annex|n\.?)?\s*[0-
 export function claveFamilia(etiqueta) {
   let t = String(etiqueta ?? '').split(/<br\s*\/?>/i)[0];
   t = normalizar(t.replace(/[*_#`]/g, ' '));
-  // (to-do 290, ok de Guido 2026-10-18) la numeración italiana "4 bis)", "5-bis)", "17bis)", "15 bis )" (y "ter") sale igual que "4)". Antes
+  // la numeración italiana "4 bis)", "5-bis)", "17bis)", "15 bis )" (y "ter") sale igual que "4)". Antes
   // "4 bis) Debiti verso banche oltre l'esercizio successivo" no empezaba con "debiti verso banche" y el diccionario de deuda no la veía.
   // Caso: Genoa 2022 (pág. 8, L304-312), 3 bis) soci 1.300.000 y 4 bis) banche 48.266.122.
   t = t.replace(/^\s*(\(?[0-9]{1,2}(\.[0-9]{1,2})*(\s?-?\s?(bis|ter)\s?)?[.)]|\(?[a-z][.)]|\(?[ivx]{1,5}[.)])\s+/, '');
@@ -297,7 +297,7 @@ export const VOCABULARIO = {
 
   // ---- Palabras de ingreso que hacen relevante una tabla y dicen el lado de una TABLA, pero NO el de una FILA suelta: "Cuotas entidades
   // deportivas" (cuotas que el club PAGA a la federación, gasto) y "Operacionales de venta" (gastos de ventas, Colombia) quedaban como
-  // ingreso (medido en la Versión 316). Hasta la Versión 313 estaban en la relevancia y en el lado de la tabla, no en el de la fila.
+  // ingreso. Hasta la Versión 313 estaban en la relevancia y en el lado de la tabla, no en el de la fila.
   INGRESOS_TABLA: { es: [{ re: '(?<!cost[oe]s? de )(?<!cost[oe]s? de las )(?<![\\p{L}\\p{N}])venta' }, 'cuota*'] },
 
   // ---- Palabras de GASTOS / costos / egresos.
@@ -461,12 +461,12 @@ export const VOCABULARIO = {
     es: ['gastos financieros', 'gasto financiero', 'intereses pagados', 'costos financieros', 'costes financieros'],
     pt: ['despesas financeiras', 'despesa financeira', 'juros passivos', 'juros pagos', 'encargos financeiros', 'gastos similares suportados'],
     en: ['finance costs', 'finance cost', 'financial expense*', 'financial costs', 'interest expense', 'interest payable', 'interest paid'],
-    // (to-do 298 b1, ok de Guido 2026-10-18) el esquema NBB belga: "Financiële kosten" (65/66B), "Recurrente/Andere financiële kosten",
+    // el esquema NBB belga: "Financiële kosten" (65/66B), "Recurrente/Andere financiële kosten",
     // "Kosten van schulden" (650) y en francés "Charges des dettes" se imprimen positivos; con el rótulo, verificar.mjs les pone el signo
     // (escalón "financiero por rótulo"). Caso: Beerschot 2025 cierra exacto sin sus ajustes `fila` de signo. Medido: 376 documentos, 375 idénticos.
     de: ['zinsaufwand', 'zinsaufwendungen', 'zinsen und ahnliche aufwendungen', 'finanzaufwand', 'finanzaufwendungen'], fr: ['charges financieres', 'charges des dettes'],
     it: ['oneri finanziari', 'interessi passivi'], nl: ['financiele lasten', 'rentelasten', 'financiele kosten', 'kosten van schulden'],
-    // (to-do 298 y1, ok de Guido 2026-10-18) el formato noruego NRS imprime los costos financieros en positivo y en SINGULAR: "Annen
+    // el formato noruego NRS imprime los costos financieros en positivo y en SINGULAR: "Annen
     // finanskostnad", "Annen rentekostnad", "Rentekostnad". Con el plural solo, no se reconocían y se sumaban como ingreso financiero. El
     // singular cubre el plural. Casos: Viking AS 2025 L296 y Fredrikstad FLI 2018 L545 cierran exacto sin ajustes; Vålerenga AS 2025 L123,
     // Aalesund AS 2025 L593-594 y Sarpsborg 08 FLI 2025 L1383-1384 dejan de dar "no cierra".
@@ -476,7 +476,7 @@ export const VOCABULARIO = {
     el: ['χρεωστικοι τοκοι', 'χρηματοοικονομικα εξοδα', 'εξοδα τοκων'], ru: ['проценты к уплате', 'финансовые расходы'], ja: ['支払利息', '金融費用'],
   },
 
-  // ---- "DE LOS CUALES" al comienzo de una etiqueta (to-do 298 b3, verificar.mjs): la fila es una PARTE de la de arriba, no un renglón más.
+  // ---- "DE LOS CUALES" al comienzo de una etiqueta: la fila es una PARTE de la de arriba, no un renglón más.
   // Caso: Bélgica, esquema abreviado, "Waarvan: niet-recurrente bedrijfsopbrengsten" (76A) debajo de la Brutomarge (Lierse SK 2025, L256).
   DE_LOS_CUALES: {
     es: ['de los cuales', 'de las cuales', 'del cual', 'de la cual'], pt: ['dos quais', 'das quais'], en: ['of which'], de: ['davon'],
@@ -575,7 +575,7 @@ export const VOCABULARIO = {
     zh: ['资产负债表', '資產負債表'], ja: ['貸借対照表'], ko: ['재무상태표', '대차대조표'], ar: ['الميزانية العمومية', 'قائمة المركز المالي'], he: ['מאזן'],
   },
 
-  // ---- CAJA y DEUDA FINANCIERA del balance (Versión 352, tools/caja-deuda.mjs, escalón 1). Al comienzo de una etiqueta. Caja: lo que el sitio
+  // ---- CAJA y DEUDA FINANCIERA del balance. Al comienzo de una etiqueta. Caja: lo que el sitio
   // guarda en fiscalYearMeta.cash. Deuda financiera: el criterio por defecto de grossDebt para un club sin precedente (club-data-mapping/referencia/formato-simplificado.md, "grossDebt", ok de Guido 2026-10-01): préstamos y obligaciones bancarias/financieras, corriente + no corriente; NUNCA el total del pasivo.
   CAJA: {
     es: ['efectivo y equivalente*', 'caja y banco*', 'caja y equivalente*', 'disponibilidades', 'caja'], pt: ['caixa e equivalente*', 'disponibilidades', 'caixa e bancos', 'caixa e depositos bancarios'], // el último: rubro del formato SNC (to-do caja y deuda, 2026-10-16; 135 de 186 documentos de Portugal)
@@ -585,19 +585,19 @@ export const VOCABULARIO = {
   },
   DEUDA_FINANCIERA: {
     es: ['prestamo*', 'otros pasivos financieros', 'pasivos financieros', 'deudas bancarias*', 'deudas financieras', 'obligaciones financieras', 'obligaciones con bancos*', 'deudas con entidades de credito'],
-    pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos', 'mutuo*', 'dividas a instituicoes de credito*'], // mutuo: Versión 422 (Novorizontino, préstamo de I-9 Sports); dívidas a instituições de crédito: la deuda bancaria del formato POC (to-do 260 f, Sporting 2000-2008)
+    pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos', 'mutuo*', 'dividas a instituicoes de credito*'], // mutuo: Versión 422 (Novorizontino, préstamo de I-9 Sports); dívidas a instituições de crédito: la deuda bancaria del formato POC
     // la lista `en` había quedado DENTRO del comentario de arriba desde la Versión 422: ningún balance en inglés encontraba su
     // deuda por diccionario. Más los términos del formato italiano en inglés (Juventus: "Due to banks" 2005-2006, "Loans and other
     // financial payables/liabilities" 2007 y 2011-2021, "Bonds and other financial liabilities" 2008-2010).
     en: ['borrowings', 'bank loans*', 'loans and borrowings', 'bank overdraft*', 'loans', 'due to banks', 'loans and other financial*', 'bonds and other financial liabilities'],
     de: ['verbindlichkeiten gegenuber kreditinstitut*', 'darlehen', 'finanzverbindlichkeiten'], fr: ['emprunts*', 'dettes financieres'],
-    // (to-do 262, ok de Guido 2026-10-17) italiano: además de banche, las obligaciones y los préstamos de socios (cuentan como deuda,
+    // italiano: además de banche, las obligaciones y los préstamos de socios (cuentan como deuda,
     // decisión del 2026-10-17). Con solo banche la compuerta aceptaba el error porque el vecino lo repetía (Bologna 2025: 19,36 M de banche
     // contra 28,59 M con soci 9.235.000, .md L1033-1035). "altri finanziatori" NO entra: es factoring, que en Monza 2024 no es deuda y en
     // Genoa 2022 sí (medido: metía un error nuevo en Monza 2024).
     it: ['debiti verso banche', 'debiti finanziari', 'obbligazioni*', 'debiti verso soci per finanziament*'], nl: ['schulden aan kredietinstellingen', 'leningen'], da: ['gaeld til kreditinstitutter', 'bankgaeld'],
     no: ['gjeld til kredittinstitusjoner', 'banklan'], sv: ['skulder till kreditinstitut', 'banklan'],
-    // (to-do 298 c3, ok de Guido 2026-10-18) estonio: sin "Bilanss", "Raha" ni "Laenukohustised" ninguna fila estonia era del balance y
+    // estonio: sin "Bilanss", "Raha" ni "Laenukohustised" ninguna fila estonia era del balance y
     // caja-deuda escribía 0 de 126 datos ("sin páginas de balance"). Medido con los 9 clubes de la principal: de 2 a 32 datos; --medir idéntico.
     et: ['laenukohustised'],
   },
@@ -676,9 +676,9 @@ export const TOTAL_FIN_RE = compilar(T('TOTAL_FIN'), 'fin');
 // signo de una fila del financiero por su rótulo; se prueban sobre normalizar(etiqueta)
 export const FIN_INGRESO_RE = compilar(T('FIN_INGRESO'));
 export const FIN_GASTO_RE = compilar(T('FIN_GASTO'));
-// (to-do 298 ah) Cobertura de pérdidas de un socio o del holding: no es un ingreso operativo. La usan verificar.mjs (cuenta en el resultado, fuera de
+// Cobertura de pérdidas de un socio o del holding: no es un ingreso operativo. La usan verificar.mjs (cuenta en el resultado, fuera de
 // ingresos y gastos) y cargar.mjs (la carga como exceptional_items, una ganancia dentro de los gastos, como la venta del 20% de Goiás 2023).
-// (to-do 324 e, ok de Guido 2026-10-19) Se amplía a las transferencias entre la sociedad del club y su holding o su asociación, que el informe de
+// Se amplía a las transferencias entre la sociedad del club y su holding o su asociación, que el informe de
 // FC Basel imprime SIN LADO debajo del resultado operativo: la garantía de déficit (Defizitgarantie, de la Holding a la AG o de la AG al Verein) y la
 // transferencia de ganancia (Gewinnüberführung/-übertrag/-abführung, también su "Korrektur"). Solo actúan sobre filas sin lado: una Defizitgarantie
 // que el documento cuenta DENTRO de Total Aufwand (Basel 2015 y 2019) ya viene como gasto y no se toca.

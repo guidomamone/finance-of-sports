@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/publicar.mjs — PUBLICAR después de editar a mano (to-do 339, frenado de Bath).
+// tools/publicar.mjs — PUBLICAR después de editar a mano.
 //
 // POR QUÉ. cargar.mjs y alta-club.mjs suben ASSET_V y corren los generadores solos al escribir. Pero una edición a mano del JSON de un club
 // (la fuente de un año: título, url, nota pública; un dato corregido) deja el data file, las páginas de fuentes y club/, y el ASSET_V

@@ -1,8 +1,8 @@
 // ============================================================================
-// tools/json-datos.mjs — LOS DATOS DE UN CLUB COMO JSON CON ESQUEMA (to-do 245, fase 1; esquema aprobado por Guido el 2026-10-20).
+// tools/json-datos.mjs — LOS DATOS DE UN CLUB COMO JSON CON ESQUEMA.
 // El esquema, con sus dos ejemplos reales y las cuatro decisiones: Admin/mediciones/245-esquema.md.
 //
-// La biblioteca de los datos de un club (to-do 245, fase 2): el JSON `data/<país>/<id>.json` es la FUENTE y `data/<país>/<id>-data.js` se GENERA de ahí
+// La biblioteca de los datos de un club: el JSON `data/<país>/<id>.json` es la FUENTE y `data/<país>/<id>-data.js` se GENERA de ahí
 // (`generarJs`); el sitio sigue cargando el JS. Las herramientas que la usan:
 //   node tools/generar-data.mjs        JSON -> JS de todos los clubes (o --club; --check avisa si algún JS quedó viejo)
 //   node tools/validar-esquema-json.mjs  valida los JSON contra el esquema
@@ -341,7 +341,7 @@ export function categoriasDelSitio() { return taxonomia(); }
 export { ErrorDeEsquema };
 export const CAMPOS = { LINEA, FUENTE, GESTION, SIN_DESGLOSE, INCLUIDO, FINANCIERO, TOTALES, FX, META_DIRECTA, META_ADJ, OVERLAY, EXTRAS, CLUB, CLAVES_LIBRES, DEPORTE };
 
-// El paquete que se publica (Frictionless, tools/exportar-paquete.mjs) lleva SOLO lo financiero (decisión de Guido, 2026-10-20): sin el contenido editorial de
+// El paquete que se publica (Frictionless, tools/exportar-paquete.mjs) lleva SOLO lo financiero: sin el contenido editorial de
 // pocos clubes (resultados, títulos, pases) ni los `extras`. Es una copia; el JSON completo de cada club no pierde nada.
 export function soloFinanciero(j) {
   const { squad_transfers, results, titles, extras, ...resto } = j;

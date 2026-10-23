@@ -12,9 +12,9 @@
 //                           de una lectura mal hecha). SOLO estas páginas deberían ir a Gemini / Claude por API.
 //
 //   "Cifra significativa" = un número de 4 o más dígitos (umbral `minDigitos`) que no sea un año suelto (1987, 2024), ni parte
-//   de una fecha (31.12.2005, 2024-06-30). Los números de página y de nota tienen 1-3 dígitos y quedan afuera solos.
+//   de una fecha. Los números de página y de nota tienen 1-3 dígitos y quedan afuera solos.
 //
-// POR QUÉ (decisión de Guido del 2026-09-30)
+// POR QUÉ
 //   Hasta ahora tools/resolver-inventario.mjs mandaba a Claude/Gemini cualquier página que no coincidiera con el texto del PDF, y
 //   en los escaneos, el documento entero a Gemini y las páginas que difieren a Claude — incluidas páginas de prosa. En el HANDOFF
 //   (Admin/Archive/HANDOFF-pipeline-hasta-2026-10-01.md, "Qué falta" 2a y 2b) quedó medido que el chequeo contra el texto del PDF marcaba de más (Alverca:
@@ -356,7 +356,7 @@ export async function chequearPaginas({ pdfPath, mdText, club, year, umbrales = 
       casi = occ.filter((o) => !o.r.size).map((o) => [o.d, casiIgual(o.d, pdfSet)]).filter(([, q]) => q);
     }
 
-    // ESCALÓN 0: UNA CIFRA CON FORMA IMPOSIBLE (to-do 232 ad, ok de Guido el 2026-10-15) no se da por buena con ningún chequeo: el texto
+    // ESCALÓN 0: UNA CIFRA CON FORMA IMPOSIBLE no se da por buena con ningún chequeo: el texto
     // del PDF compara solo los dígitos, y la tolerancia de hasta 3 cifras sin respaldo la dejaba pasar. Caso: Ceará 2019 pág. 36,
     // "6.571,340,66" (una sola cifra sin respaldo, tolerada): la página salía validada gratis con la cifra rota adentro. La página queda
     // dudosa y la relee la validación paga. Medido: 32 páginas más a pagar en las 155 transcripciones con cifras así; en --prueba, 1

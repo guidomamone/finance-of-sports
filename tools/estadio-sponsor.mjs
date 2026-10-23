@@ -245,7 +245,7 @@ async function paginaLocal(iso, liga, anio, partida, equiposEn) {
   return null;
 }
 
-// TERCERA FUENTE: LA TABLA DE HISTORIA DE CAMISETAS DE LA PÁGINA DEL CLUB (diseño aprobado por Guido, 2026-10-18). Para los ejercicios a
+// TERCERA FUENTE: LA TABLA DE HISTORIA DE CAMISETAS DE LA PÁGINA DEL CLUB. Para los ejercicios a
 // los que las páginas de temporada no les dieron sponsor o marca (ligas de ascenso, años viejos): la página del club trae una tabla
 // "Período | Marca | Sponsor" ("Kit manufacturers and shirt sponsors", "Material e patrocinadores", "Indumentaria y patrocinador").
 // QUÉ PÁGINA: la que la página de temporada enlaza en la fila del club (no una búsqueda por nombre: "Racing" o "Nacional" serían de otro
@@ -256,7 +256,7 @@ async function paginaLocal(iso, liga, anio, partida, equiposEn) {
 // campos en `club`).
 const LANG_PAIS = { pt: 'pt', br: 'pt', ar: 'es', co: 'es', pe: 'es', cl: 'es', uy: 'es', mx: 'es', es: 'es', it: 'it', ru: 'ru', gr: 'el', ee: 'et', be: 'nl', nl: 'nl', de: 'de', dk: 'da', tr: 'tr', fr: 'fr', ch: 'de' };
 const FICHA_CLUB = /\{\{\s*(Infobox football club|Info\/Futebol|Info\/Clube de futebol|Info\/Clube|Ficha de club|Ficha de equipo de fútbol|Squadra di calcio|Sportverein|Футбольный клуб|Карточка футбольного клуба|Κουτί πληροφοριών ποδοσφαιρικής ομάδας|Infobox voetbalclub|Infobox Fußballverein|Jalgpalliklubi)/i;
-// (to-do 341, #11) La ficha de un club de RUGBY (Bath Rugby: «Infobox rugby team»). Cada deporte usa SU ficha: un club de fútbol sigue pasando solo por FICHA_CLUB (su
+// La ficha de un club de RUGBY (Bath Rugby: «Infobox rugby team»). Cada deporte usa SU ficha: un club de fútbol sigue pasando solo por FICHA_CLUB (su
 // resultado no cambia) y uno de rugby, solo por esta. La página de TEMPORADA de una liga de rugby (estadio, capacidad y «Kit supplier») ya la lee leerPagina sin cambios.
 // Un deporte sin ficha acá (o un club sin deporte en data/clubs.js) usa la de fútbol, como hasta ahora.
 const FICHA_RUGBY = /\{\{\s*Infobox rugby (?:team|union club|league club)/i;
@@ -389,7 +389,7 @@ ${orden}
 
 async function main() {
   const { CI, CL, CLUBS, LEAGUES, cache, alias } = cargar();
-  // LIGA AMATEUR (decisión de Guido, 2026-10-18): un año en una liga amateur (la del catálogo nombra "amateur": las tres divisiones
+  // LIGA AMATEUR: un año en una liga amateur (la del catálogo nombra "amateur": las tres divisiones
   // amateur belgas) pasa la compuerta sin sponsor, con el estadio cargado; en esas ligas no hay fuente que diga el sponsor por temporada
   // (decisión de Guido, 2026-10-19, traída por Onboarding 2: "En la Eerste Divisie alcanza el estadio, como en las ligas amateur") la
   // Eerste Divisie neerlandesa tampoco tiene fuente del sponsor por temporada: sus páginas de en.wikipedia no traen la tabla de camisetas
@@ -570,7 +570,7 @@ async function main() {
     // (to-do 298 b3, REGLA de CONVENCIONES-DATOS "un dato de contexto sin fuente pública queda en null", ok de Guido 2026-10-20) `"sin-fuente": { "<campo>": "dónde se buscó" }`
     // en contexto-manual.json: el campo (estadio, capacidad, sponsor o marca) queda en null y cuenta como RESUELTO para la compuerta (no frena). Vale solo con el texto de dónde
     // se buscó; un campo que sí tiene valor no se pisa.
-    // (to-do 343, skill club-sourcing 0.5) El SPONSOR no se resuelve con un texto: hace falta el registro de búsqueda ({ buscado, por, intentos }, tres clases sin contar Wikipedia) o, para los
+    // El SPONSOR no se resuelve con un texto: hace falta el registro de búsqueda ({ buscado, por, intentos }, tres clases sin contar Wikipedia) o, para los
     // años que ya tenían un texto libre, { legacy: true, texto } con el club y el año en tools/sponsor-legacy.json (tools/sponsor-busqueda.js). Estadio, capacidad y marca siguen con el texto.
     const sf = {}; const sfMotivo = {};
     if (m && m['sin-fuente'] && typeof m['sin-fuente'] === 'object') for (const [k, v] of Object.entries(m['sin-fuente'])) {

@@ -11,13 +11,13 @@
 //
 //   auditor.tipo: firma | persona | organismo. Una persona va con su nombre como lo imprime el documento (decisión de Guido).
 //   dictamen: sin_salvedades | con_salvedades | adverso | abstencion | sin_informe (el documento no trae informe del auditor: sin auditor
-//   ni cita de dictamen). Vocabulario provisorio: se ajusta con los casos (Guido, 2026-10-18).
+//   ni cita de dictamen). Vocabulario provisorio: se ajusta con los casos.
 //   falta_transcripcion: el documento muestra que el informe existe (el índice lo lista, los estados remiten a él, el fisco nombra al
 //   auditor) pero el .md no lo trae; no se publica (no es "sin informe") y cuenta como pendiente hasta transcribirlo. Lleva nota.
 //   auditor.nombre puede ser null cuando el informe no imprime quién firma; la nota lo dice.
 //   continuidad: true si el informe marca una incertidumbre material sobre la continuidad (empresa en funcionamiento, going concern),
 //   con su cita en citas.continuidad; es aparte del dictamen. Otros párrafos de énfasis no se registran.
-//   CRITERIO (Guido, 2026-10-18): (1) un énfasis que habla de continuidad, patrimonio negativo o apoyo del accionista sin decir que haya
+//   CRITERIO: (1) un énfasis que habla de continuidad, patrimonio negativo o apoyo del accionista sin decir que haya
 //   una incertidumbre material es continuidad false, con nota "ÉNFASIS CONTINUIDAD:"; (2) alcanza con que lo diga el título del párrafo;
 //   (3) si el título de la base dice "con salvedades" y el párrafo de opinión es limpio, manda el párrafo de opinión; (4) opinión limpia
 //   sobre una parte del balance y abstención sobre el resto es abstencion.
@@ -87,7 +87,7 @@ const tracked = execSync('git -c core.quotepath=off ls-files -z "Clubes/*.md"', 
 const trackedSet = new Set([...tracked, ...execSync('git -c core.quotepath=off ls-files -z "Ligas/*.md"', { cwd: ROOT, encoding: 'utf8' }).split('\0').filter(Boolean)].map(f => f.normalize('NFC'))); // Ligas/: balances de la entidad que organiza una liga
 const conBalance = (id, y) => /balance/.test(generic[id]?.fiscalYearMeta?.[y]?.reportType || '');
 // Un documento parcial (documentos-parciales.txt) cuenta solo si el sitio igual publica ese año desde él: su informe opina sobre lo que se
-// muestra. Caso: Atalanta 2022 (Guido, 2026-10-18). El sourceId es el clubId más el nombre del archivo, a veces sin su primera palabra
+// muestra. Caso: Atalanta 2022. El sourceId es el clubId más el nombre del archivo, a veces sin su primera palabra
 // (el club): "atalanta-it-bilancio-consolidato-2022" de "Atalanta-bilancio-consolidato-2022.pdf".
 const slug = (s) => s.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const esFuenteDe = (pdf, id, y) => {
@@ -164,7 +164,7 @@ const ANCLA = new RegExp([
   'bestätigungsvermerk', 'revisionsstelle', 'prüfungsurteil', 'bericht der revisionsstelle', 'eingeschränkt',
   'controleverklaring', 'oordeel', 'continuïteit', 'revisors beretning', 'uavhengig revisor', 'fortsatt drift', 'konklusion',
   'έκθεση ελέγχου', 'γνώμη', 'ορκωτ', 'аудиторское заключение', 'мнение', '監査報告', '意見',
-  // (to-do 282 g, ok de Guido 2026-10-18) estonio, del criterio de Finanzas (Generados/auditoria/_criterio-ee.md): "SÕLTUMATU VANDEAUDIITORI
+  // estonio, del criterio de Finanzas (Generados/auditoria/_criterio-ee.md): "SÕLTUMATU VANDEAUDIITORI
   // ARUANNE", la opinión, con salvedades, adverso, abstención, continuidad y énfasis. Medido: 43 de 66 .md estonios con extracto (antes 0),
   // los 43 con línea "sin_salvedades"; los 23 sin ninguna mención de auditoría siguen "sin frases" (los "sin_informe").
   'vandeaudiitor', 'meie arvates', 'märkusega arvamus', 'vastupidine arvamus', 'arvamuse avaldamisest loobumine', 'tegevuse jätkuvus', 'asjaolu rõhutamine',

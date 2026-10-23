@@ -2,7 +2,7 @@
 // tools/gasto-doc.mjs — LO GASTADO EN CADA DOCUMENTO en una corrida, por tarea, y si esa tarea ya se había pagado antes para el mismo PDF.
 // Gratis: solo lee los registros de gasto que ya existen.
 //
-// POR QUÉ (Versión 449, punto 1.vi del HANDOFF, aprobado por Guido el 2026-10-04). El lote decía solo "Gastado: US$ X" en total, y así no
+// POR QUÉ. El lote decía solo "Gastado: US$ X" en total, y así no
 // se veían las repeticiones: Juventus 2022-23 pagó localizar 4 veces y extraer 3 (la corrida del 10-04 habría mostrado "3.ª vez").
 // Una repetición es cualquier pago anterior de la misma tarea para el mismo PDF (decisión de Guido): es información, no frena nada; las
 // fechas al lado dejan ver si fue justificada.

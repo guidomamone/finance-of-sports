@@ -43,7 +43,7 @@
 //   n: nombre corto · c: país ISO-2 · q: calidad del dato (ver clubQuality() en data/sources-view.js) · y: ejercicios cargados ·
 //   last: el más reciente · yrs: los ejercicios, del más reciente al más viejo, como [año, reportType] ·
 //   ci: solo si hay, los ejercicios que no cierran en la fecha del club, { año: 'MM-DD' }
-// El archivo publicado lleva UNA línea de comentario (data/ se publica: to-do 209).
+// El archivo publicado lleva UNA línea de comentario.
 // ============================================================================
 
 const fs = require('fs');
@@ -59,7 +59,7 @@ const ROOT = path.resolve(__dirname, '..');
 const ESTADO = path.join(ROOT, 'Admin/ESTADO-clubes.md');
 const CLUB_INDEX_FILE = path.join(ROOT, 'data/club-index.js');
 // Los marcadores se mantuvieron como texto plano en las dos mudanzas (a Admin/ESTADO.md en la
-// Versión 138, a Admin/ESTADO-clubes.md en la 239), aunque un comentario HTML no rompería nada
+// a Admin/ESTADO-clubes.md en la 239), aunque un comentario HTML no rompería nada
 // ahí: cambiarlos habría obligado a tocar el archivo a mano justo en la migración, que es cuando
 // más fácil se rompe algo.
 const START = '===== CLUB-INDEX:START (generado por tools/generate-club-index.js, no editar a mano) =====';
@@ -122,7 +122,7 @@ const COUNTRY_NAME = {
 
 function fmtYears(years, clubEntry, meta = {}) {
   // Un ejercicio que cierra en diciembre muestra el año suelto ("2024"); uno de temporada,
-  // el rango ("2023/2024"). Mismo criterio que `ejercicioLabel()` en el sitio (to-do 177: por ejercicio).
+  // el rango ("2023/2024"). Mismo criterio que `ejercicioLabel()` en el sitio.
   const label = y => (esCalendario(meta[y], clubEntry, y) ? String(y) : `${y - 1}/${y}`);
   if (years.length === 1) return label(years[0]);
   // rango contiguo -> "2015/2016 a 2019/2020"; con huecos -> lista

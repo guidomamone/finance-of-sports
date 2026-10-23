@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/club-json.mjs — leer y escribir el JSON FUENTE de un club (to-do 245, fase 2). `data/<país>/<id>.json` es lo que se edita; el
+// tools/club-json.mjs — leer y escribir el JSON FUENTE de un club. `data/<país>/<id>.json` es lo que se edita; el
 // `data/<país>/<id>-data.js` que carga el sitio se GENERA de ahí cada vez que se escribe (tools/json-datos.mjs, `generarJs`).
 //
 // USO (las tools que cargan datos):

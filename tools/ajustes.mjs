@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/ajustes.mjs — AJUSTES MANUALES: la base de consulta de las decisiones de Guido que fuerzan un dato de un documento.
 //
-// POR QUÉ (Versión 366, diseño aprobado por Guido el 2026-10-02). Hasta la 365 una decisión manual vivía como respuesta a un caso de la cola,
+// POR QUÉ. Hasta la 365 una decisión manual vivía como respuesta a un caso de la cola,
 // atada al TEXTO de la pregunta (tools/cola.mjs: el id del caso es un hash de pdf|etapa|motivo|detalle, y en las dudas de la IA el detalle es
 // la pregunta). Si el documento se volvía a extraer y la IA redactaba distinto, el caso volvía. Y la decisión "Fortaleza CEIF 2023 se cierra
 // por la fuerza" terminó escrita en el HANDOFF, que ningún script lee. Guido: "no puede ir en handoff eso. debería ir en el script".
@@ -22,9 +22,9 @@
 //   filas-a-mano sin valor: el .ubicacion.json y el .filas.json de ese documento se armaron o se corrigieron a mano. Escalón 0 de tools/localizar.mjs y de
 //                     tools/extraer.mjs: con --rehacer (y con lote.mjs --rehacer) NO se vuelven a pedir a la IA ni se pisan; quedan como están. Para rehacerlos de verdad hay
 //                     que quitar este ajuste a conciencia (se agrega otro con --valor no). Casos: Torino 2020 y 2025, Inter 2017-18, Lazio 2021, Salernitana 2022.
-//   ixbrl-omitir      (to-do 345, Auditora 5) sin valor, con --motivo: apaga para ese documento el freno (perímetro individual, to-do 352) o el aviso (consolidado) de cargar.mjs que compara el resultado cargado con el
+//   ixbrl-omitir sin valor, con --motivo: apaga para ese documento el freno o el aviso (consolidado) de cargar.mjs que compara el resultado cargado con el
 //                     `ProfitLoss` etiquetado en su XHTML (tools/ixbrl-resultado.mjs). Para un hecho que no es el resultado del ejercicio (perímetro distinto, minoritarios).
-//   covid-omitir      sin valor, con --motivo: el documento cierra dentro de la ventana COVID (2020-03-31 a 2021-12-31) pero su taquilla o entradas en 0
+//   covid-omitir      sin valor, con --motivo: el documento cierra dentro de la ventana COVID pero su taquilla o entradas en 0
 //                     NO son por la pandemia (un club que jugó con público): cargar.mjs vuelve a pedir el reintento como en cualquier otro año.
 //   no-recargar sin valor: lo publicado de ese año es mejor que lo que da una corrida nueva (más desglose, de notas que el script no abre)
 //                     y no se reproduce con ajustes razonables. tools/cargar.mjs frena (también con --reemplazar). Casos: Lazio 2012-13, Roma 2021.
@@ -82,7 +82,7 @@
 //   node tools/ajustes.mjs                                     lista todos (club, año, campo, valor, motivo)
 //   node tools/ajustes.mjs --agregar "<pdf>" <campo> [--valor "..."] --motivo "..." [--evidencia "pág. N del visor, .md L..."]
 //        fila además: --etiqueta "..." --lado ingreso|gasto|financiero|impuesto [--linea N] [--reemplaza "etiqueta extraída" | --reemplaza-linea N]
-//        caja / deuda / escala además: [--anio AAAA] si el PDF alimenta dos años del sitio (to-do 263, ajusteDelAnio).
+//        caja / deuda / escala además: [--anio AAAA] si el PDF alimenta dos años del sitio.
 //        [--autor X]: quién lo decidió. Sin --autor firma quien corre el comando (autorPorDefecto, abajo).
 //   import { ajusteDe, ajustesDe } from './ajustes.mjs'        lo que usan los scripts
 // ============================================================================
@@ -117,7 +117,7 @@ export function ajustesDe(pdf) {
 export function ajusteDe(pdf, campo) {
   return ajustesDe(pdf).find((a) => a.campo === campo) || null;
 }
-// AJUSTE POR PDF Y AÑO (to-do 263, ok de Guido 2026-10-17). Un mismo PDF puede alimentar dos años del sitio (el del documento y su
+// AJUSTE POR PDF Y AÑO. Un mismo PDF puede alimentar dos años del sitio (el del documento y su
 // comparativo): Dortmund 2024 y 2025 salen de geschaeftsbericht-2024-25, RB Leipzig 2024 y 2025 de jahresabschluss-2024-25. Con el ajuste
 // buscado solo por PDF los dos años recibían el mismo valor (el de 2025). `caja`, `deuda` y `escala` pueden llevar `anio` (--anio AAAA).
 // COMPUERTA (una sola): el ajuste con `anio` vale solo para ese año; el ajuste SIN `anio` vale solo si el PDF alimenta UN año del sitio
@@ -138,7 +138,7 @@ export function ajusteClubODoc(pdf, campo) {
   const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length && !delDoc[delDoc.length - 1].anulado) return delDoc[delDoc.length - 1];
   const delClub = todos.filter((a) => a.pdf.endsWith('/') && pdf.startsWith(a.pdf)); return delClub.length && !delClub[delClub.length - 1].anulado ? delClub[delClub.length - 1] : null;
 }
-// (to-do 298 p2, ok de Guido 2026-10-19) CERO REAL DEL CLUB: el ajuste `cero-real` vigente de esa categoría en OTRO documento del mismo club
+// CERO REAL DEL CLUB: el ajuste `cero-real` vigente de esa categoría en OTRO documento del mismo club
 // (la carpeta), o null. cargar.mjs lo usa como escalón del aviso de categoría en 0, con su compuerta (ningún año cargado con monto).
 export function ceroRealDelClub(pdf, categoria) {
   const carpeta = pdf.split('/').slice(0, 3).join('/') + '/'; const cat = String(categoria).toLowerCase();
@@ -148,7 +148,7 @@ export function ceroRealDelClub(pdf, categoria) {
 }
 // QUIÉN FIRMA. Escalón 0: --autor X (o `autor` cuando lo escribe un script, como perimetro-senales.mjs). Escalón 1: sin --autor,
 // quien corre el comando: los comandos que corre Claude Code (la sesión y sus subagentes) llevan la variable CLAUDECODE=1 y firman "Claude";
-// la terminal de Guido no la tiene (comprobado el 2026-10-09) y firma "Guido". Antes firmaba "Guido" siempre: ~800 ajustes que decidió
+// la terminal de Guido no la tiene y firma "Guido". Antes firmaba "Guido" siempre: ~800 ajustes que decidió
 // Claude el 2026-10-07/09 dicen "Guido" en el jsonl y en el comentario del año en data/ (Guido: el histórico queda como está).
 export const autorPorDefecto = () => (process.env.CLAUDECODE === '1' ? 'Claude' : 'Guido');
 // Escribe un ajuste desde un script (mismo formato que --agregar; `autor` dice quién lo decidió). Caso: perimetro-senales.mjs fija el
@@ -229,7 +229,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   } else {
     const vigentes = [...new Set(leer().map((a) => a.pdf))].flatMap((p) => ajustesDe(p));
     console.log(`AJUSTES MANUALES (${vigentes.length}) — Admin/registros/ajustes-manuales.jsonl\n`);
-    // Al lado de cada documento con `resultado-final`, el IMPUESTO que calculó verificar.mjs por diferencia (Versión 372, pedido de Guido): el
+    // Al lado de cada documento con `resultado-final`, el IMPUESTO que calculó verificar.mjs por diferencia: el
     // ajuste no tiene compuerta, así que un error en las filas termina en el impuesto. Fortaleza 2018 daba 248.440 sobre una pérdida antes de
     // impuestos (un costo financiero sumado como ingreso); con el signo bien, 40.604, y el documento imprime 40.612.
     const impuestoDe = (pdf) => { try { const V = JSON.parse(readFileSync(resolve(ROOT, derivado(pdf.replace(/\.pdf$/i, '.md'), '.verificacion.json', { crear: false })), 'utf8')); const r = V.totales?.resultadoFinal; return r?.impuestoDeducido != null ? `impuesto calculado ${r.impuestoDeducido} (antes de impuestos ${Number((V.totales.resultadoParaCargar + r.impuestoDeducido).toFixed(3))}, resultado ${r.valor}; millones)` : null; } catch { return null; } };

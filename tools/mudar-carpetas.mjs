@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/mudar-carpetas.mjs — mueve archivos entre carpetas de Clubes/ SIN BORRAR NADA (to-do 278 y 287, ok de Guido 2026-10-19).
+// tools/mudar-carpetas.mjs — mueve archivos entre carpetas de Clubes/ SIN BORRAR NADA.
 //
 // POR QUÉ: los PDFs no se trackean (.gitignore), así que no hay git para recuperarlos y un borrado se pierde. Esta tool unifica
 // carpetas duplicadas de un club con tres garantías: (1) un archivo se mueve, nunca se borra; (2) un duplicado idéntico (misma huella

@@ -3,7 +3,7 @@
 //
 // POR QUÉ. El tie-out de cargar.mjs compara contra el resultado que sale del MISMO .md: un signo o una escala mal leídos del texto se repiten en los dos lados. El hecho
 // iXBRL (`ProfitLoss`) es una segunda lectura independiente y estructurada: valor, escala, signo y decimales vienen en atributos, no en el texto impreso. Lo usa `cargar.mjs`:
-// FRENA si lo cargado es individual y no coincide; en el consolidado, AVISO (to-do 352, Auditora 5; ver chequearIxbrl).
+// FRENA si lo cargado es individual y no coincide; en el consolidado, AVISO.
 //
 // LA CONDICIÓN (veredicto de la Auditora 5, Admin/registros/auditoria-proceso.jsonl):
 //   (a) solo contra el XHTML del MISMO cierre: lo decide quien llama (el .xhtml hermano del .md del año, que lo generó); además el contexto del hecho tiene que terminar en `cierre`.
@@ -113,7 +113,7 @@ export function xhtmlDelMismoEmisor(dir, mdTexto) {
 }
 
 // Compara con lo cargado (en millones). -> { avisos: [texto], caso: texto|null, frena: bool }
-// FRENAZO (to-do 352, Auditora 5): `frena` solo si el hecho es único («ok»), la diferencia pasa la tolerancia y lo cargado es INDIVIDUAL (medido: 9 clubes, 0 falsos). En el
+// FRENAZO: `frena` solo si el hecho es único («ok»), la diferencia pasa la tolerancia y lo cargado es INDIVIDUAL (medido: 9 clubes, 0 falsos). En el
 // consolidado sigue siendo aviso y caso en la cola hasta que `node tools/medir-ixbrl-consolidado.mjs` diga que se puede decidir: dos años consolidados de clubes distintos, uno con minoritarios (el ProfitLoss de un grupo IFRS incluye la
 // parte no controladora y lo cargado puede ser la atribuible). «ambiguo», «solo-matriz», «sin-hecho», «formato» y «perímetro» nunca frenan.
 export function chequearIxbrl(ix, { resultadoM, ingresosM, perimetro }) {

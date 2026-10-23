@@ -31,7 +31,7 @@
 //   a) con Omzet (70, 73 o 70/74) o 60/61 impresos: se abre en esos renglones + el residuo implícito ("Overige bedrijfsopbrengsten (implícito
 //      en la Brutomarge)", como el ajuste de Lokeren-Temse 2025 y Dender EH) + el 60/61 como gasto, SOLO si el residuo no es negativo;
 //   b) si no (o el residuo es negativo: el desglose no cierra con la Brutomarge impresa, Patro Eisden 2020 -correction, decisión de Guido):
-//      la Brutomarge sin abrir; positiva, ingreso; negativa, GASTO por su valor absoluto (decisión de Guido 2026-10-18). El "waarvan" 76A
+//      la Brutomarge sin abrir; positiva, ingreso; negativa, GASTO por su valor absoluto. El "waarvan" 76A
 //      no se suma aparte (está adentro).
 // FORMATO DEL .md: tabla con una celda de código (cualquier columna) o texto suelto "70/76A 11.399.352 7.628.061" (OH Leuven 2019 y 2021).
 // En texto, una línea con UN solo importe no dice de qué año es ("67/77 610"): se prueban las dos columnas y gana la ÚNICA asignación con
@@ -187,7 +187,7 @@ export function leerEstadoNBB(md) {
   return { desde: r.desde, hasta: r.hasta, filas, actual: columna(filas, 'actual'), anterior: columna(filas, 'anterior'), ambiguas: amb.length, aLaAnterior: resueltas };
 }
 
-// (to-do 298 g, ok de Guido 2026-10-18) EL 630 POR LA NOTA DE ACTIVOS FIJOS. El 630 (amortizaciones) junta los pases de jugadores y los
+// EL 630 POR LA NOTA DE ACTIVOS FIJOS. El 630 (amortizaciones) junta los pases de jugadores y los
 // bienes de uso, y la cola da una sola categoría por fila: en los años cargados se partía a mano con ajustes `fila` (Lommel SK 2025: pases
 // 5.674.313 + materiales 590.106). La nota del esquema NBB trae lo amortizado en el año ("Geboekt" / "Actées") con códigos fijos: 8072
 // concesiones y derechos (en un club, los pases; 8079 en el abreviado), 8073 goodwill, 8271 a 8276 materiales (8279 en el abreviado).
@@ -241,7 +241,7 @@ export function filasNBB(F, md, { partir630: partir = true } = {}) {
   // Louvière 2024-25, 635/8 y 649). El chequeo del año vecino compara por los códigos impresos (verificar.mjs, escalón "códigos NBB").
   const res = N.filas['9904'];
   nuevas.push({ bloque: 'nbb', linea: res.linea, etiqueta: deLinea.get(res.linea) || res.etiqueta, actual: fmt(res.actual), anterior: fmt(res.anterior), tipo: 'resultado', lado: 'resultado', detalla_a: null, codigoNBB: '9904' });
-  // (to-do 298 g) el 630 partido por la nota de activos fijos, si sus códigos lo suman exacto (ver partir630). No en un año ya publicado
+  // el 630 partido por la nota de activos fijos, si sus códigos lo suman exacto (ver partir630). No en un año ya publicado
   // (`partir630: false`, lo decide verificar.mjs): sus filas son las que se categorizaron y publicaron (Lommel SK 2018, RWDM 2020).
   const i630 = nuevas.findIndex((x) => x.codigoNBB === '630');
   const p630 = i630 >= 0 && partir ? partir630(md, N.actual.hojas.find((h) => h.codigo === '630').valor) : null;

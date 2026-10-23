@@ -6,7 +6,7 @@
 // MENCIONES de "consolidato": 5 de 12 clubes frenaron por un falso positivo (Torino, Sassuolo, Monza, Napoli, Sampdoria: las menciones
 // son del grupo dueño del club, no un estado del club). Y donde el documento trae los dos, nadie le dice a Guido cuál conviene.
 //
-// DÓNDE SE USA (Versión 561, aprobado por Guido el 2026-10-06): lote.mjs y antes-de-localizar.mjs llaman a fijarPerimetroDeClubes() (abajo)
+// DÓNDE SE USA: lote.mjs y antes-de-localizar.mjs llaman a fijarPerimetroDeClubes() (abajo)
 // antes de la compuerta del perímetro. Medido contra Admin/mediciones/perimetro-verdad.tsv: 77 bien, 0 mal, 23 sin decidir. Cualquier cambio acá
 // se mide otra vez con esa verdad (--verdad ... --jev) y tiene que seguir en 0 mal.
 //
@@ -24,7 +24,7 @@
 //  PASO A2 (Claude) El paso A reconoce italiano e inglés. Sin ninguna tabla reconocida (Aris, en griego), Claude ubica el estado de
 //                   resultados y vota cinco criterios con peso (título 4, texto del estado 4, auditor 1, grupo 1, portada 1), cada sí con su
 //                   línea: 4 o más → consolidado · 0 a 2 → individual · 3 → cola; con columnas o estados de los dos perímetros → cola. Pago: solo con --jev / al ejecutar.
-//  PASO A3 (Claude) (to-do 298 w) A2 vio los dos estados sin totales para votar: ¿alguna controlada hace el negocio del fútbol del club?
+//  PASO A3 (Claude) A2 vio los dos estados sin totales para votar: ¿alguna controlada hace el negocio del fútbol del club?
 //                   Con la línea que la nombra; solo "consolidado" decide (cuenta como el voto del documento). Ver pasoA3().
 //  PASO B (voto)    Tres criterios, uno por voto:
 //                     C1 (gratis) los ingresos consolidados superan a los individuales en 5% o más, en el año o en el anterior
@@ -46,7 +46,7 @@
 //   node tools/perimetro-senales.mjs --decidir-clubes <lista de carpetas> --solo-cache   # ensayo de la decisión de perímetro de cada club (gratis)
 //   node tools/perimetro-senales.mjs --lista <txt> --exportar-a2 <carpeta>             # los pedidos de A2 sin caché, para contestarlos sin API
 //   node tools/perimetro-senales.mjs --auditar-a2 <carpeta>                             # auditoría a posteriori: lo que decidió A2 en corridas reales
-//   node tools/perimetro-senales.mjs --lista <txt> --exportar-a3 <carpeta>             # (to-do 298 w) los pedidos de A3, para un subagente
+//   node tools/perimetro-senales.mjs --lista <txt> --exportar-a3 <carpeta>             # los pedidos de A3, para un subagente
 //   node tools/perimetro-senales.mjs --evaluar-a3 <carpeta>                             # la compuerta de A3 sobre <n>.json contra el perímetro fijado
 // Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
 // ============================================================================
@@ -58,7 +58,7 @@ import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // «club de 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
 const flagVal = (f) => { const i = args.indexOf(f); return i >= 0 ? args[i + 1] : null; };
-// --auditar-a2 y --exportar-a2 escriben en la carpeta que reciben (to-do 232 u): con `--auditar-a2 Clubes/Grecia/Aris` los pedidos
+// --auditar-a2 y --exportar-a2 escriben en la carpeta que reciben: con `--auditar-a2 Clubes/Grecia/Aris` los pedidos
 // quedaron al lado de los PDFs, en lo que se publica. Antes de escribir, la carpeta tiene que estar fuera del repo (scratch) o dentro
 // de una carpeta que netlify.toml borra del deploy (`rm -rf X || true`, la misma lectura que checkDeployInterno() de audit.js; así no
 // hay una segunda lista que mantener). Si no, frena sin escribir nada.
@@ -78,7 +78,7 @@ const MODELOS_A2 = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
 const MODELO_A2 = flagVal('--modelo');
 if (MODELO_A2 != null && (!MODELOS_A2[MODELO_A2] || !USE_JEV)) { console.error('--modelo opus|sonnet va solo con --jev'); process.exit(1); }
 const DETALLE = args.includes('--detalle');
-const SOLO_CACHE = args.includes('--solo-cache'); // (to-do 298 d) A2 solo con respuestas guardadas (ver --decidir-clubes)
+const SOLO_CACHE = args.includes('--solo-cache'); // A2 solo con respuestas guardadas (ver --decidir-clubes)
 
 export const UMBRAL_C1 = 0.05;
 export const UMBRAL_C2 = 0.15;
@@ -370,8 +370,8 @@ async function pasoA2(mdRel, lineas, { soloCache = false } = {}) {
   return { estado: est.linea, otro: otro?.linea ?? null, columnasDeLosDos: !!datos.columnas_de_los_dos, votos, puntos };
 }
 
-// ---------------------------------------------------------------- PASO A3: qué hacen las controladas (to-do 298 w, escalón 2)
-// POR QUÉ (ok de Guido 2026-10-19): cuando A2 ve los DOS estados (el de la sociedad y el del grupo) pero no hay totales reconocidos para el
+// ---------------------------------------------------------------- PASO A3: qué hacen las controladas
+// POR QUÉ: cuando A2 ve los DOS estados (el de la sociedad y el del grupo) pero no hay totales reconocidos para el
 // voto del paso B, el club quedaba sin decidir y el lote frenaba. Lotes 93 y 94: 10 documentos; los 8 que se decidieron a mano se
 // decidieron con la pregunta de la regla (Admin/CONVENCIONES-DATOS.md, "qué perímetro se carga"): ¿las controladas hacen el negocio del
 // fútbol del club? Sí -> consolidado (Viking: Viking Stadion AS, el estadio); no -> individual (Sarpsborg 08: Prozo AS, un comercio aparte).
@@ -408,7 +408,7 @@ export function compuertaA3(datos, mandadas, lineas) {
   if (!mandadas.has(datos.linea)) return { motivo: `L${datos.linea} no está entre las líneas mandadas` };
   const nombre = sinAcentos(datos.controlada);
   if (nombre.length < 4 || !sinAcentos(lineas[datos.linea - 1]).includes(nombre)) return { motivo: `L${datos.linea} no nombra a "${datos.controlada}"` };
-  // SOLO "consolidado" decide (ok de Guido 2026-10-19): nombrar una controlada que hace fútbol, con su línea, se comprueba; "ninguna lo hace"
+  // SOLO "consolidado" decide: nombrar una controlada que hace fútbol, con su línea, se comprueba; "ninguna lo hace"
   // no se prueba con fragmentos. Medido con un subagente Sonnet sobre los 10 casos de los lotes 93-94: 6 consolidado bien; el único
   // individual, mal (PEC Zwolle: la Stichting Regio Zwolle United trabaja para el club, L778). Un "individual" frena como antes.
   if (datos.perimetro !== 'consolidado') return { motivo: `A3 dice ${datos.perimetro} ("${datos.controlada}" L${datos.linea}): solo "consolidado" decide` };
@@ -440,7 +440,7 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
   if (!tablas.length) {
     r.pasoA = 'sin-tablas'; r.motivo = 'no encontré ninguna tabla con el total de ingresos';
     // PASO A2 (Claude; pago, así que solo al ejecutar: en el ensayo queda pendiente).
-    // (to-do 298 w, escalón 1, ok de Guido 2026-10-19) `soloCache`: el ensayo usa la respuesta GUARDADA de A2 si la hay (gratis) y dice lo
+    // `soloCache`: el ensayo usa la respuesta GUARDADA de A2 si la hay (gratis) y dice lo
     // que va a pasar; sin respuesta guardada queda pendiente. Antes el ensayo daba siempre "se decide al ejecutar" y el lote frenaba igual
     // cuando A2 veía los dos estados sin totales para votar (lotes 93 y 94: 10 documentos).
     if (!jev && !soloCache) { r.a2 = { pendiente: true }; return r; }
@@ -451,7 +451,7 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
     const v = Object.entries(a.votos).map(([k, x]) => `${k} ${x.si ? `sí L${x.linea}` : x.rechazado ? `rechazado L${x.linea}` : 'no'}`).join(', ');
     if (a.otro != null || a.columnasDeLosDos) {
       r.pasoA = 'a2-los-dos'; r.motivo = `A2 (Claude): estado L${a.estado} ${a.otro != null ? `y otro de distinto perímetro L${a.otro}` : 'con columnas de los dos perímetros'}, sin totales reconocidos para votar`;
-      // PASO A3 (to-do 298 w, escalón 2): sin totales para votar, qué hacen las controladas. Decide como un voto del paso B.
+      // PASO A3: sin totales para votar, qué hacen las controladas. Decide como un voto del paso B.
       const a3 = await pasoA3(mdRel, md.split('\n'), { soloCache: !jev }); r.a3 = a3;
       if (a3.perimetro) { r.propuesta = a3.perimetro; r.motivo += `; A3 (Claude): ${a3.perimetro}, "${a3.controlada}" L${a3.linea} (${a3.motivo})`; }
       else r.motivo += a3.pendiente ? '; A3 pendiente (se pregunta al ejecutar)' : `; A3: ${a3.error || a3.motivo}`;
@@ -471,7 +471,7 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
     if (titulos.consolidado) { r.pasoA = 'dudoso'; r.motivo = `solo tablas individuales, pero hay ${titulos.consolidado} título(s) de estado consolidado sin tabla reconocida`; return r; }
     if (/consolidat/i.test(mdRel.split('/').pop())) { r.pasoA = 'dudoso'; r.motivo = 'solo tablas individuales o sin perímetro, pero el nombre del archivo dice consolidado'; return r; }
     r.pasoA = 'solo-individual'; r.propuesta = 'individual'; r.motivo = `solo tablas individuales o sin perímetro (${ind.length}); ningún título de estado consolidado`;
-    r.sinTituloDePerimetro = !ind.some((t) => t.per === 'individual'); // (to-do 298 o2) ninguna tabla dice "individual": el "individual" es por descarte, no una señal
+    r.sinTituloDePerimetro = !ind.some((t) => t.per === 'individual'); // ninguna tabla dice "individual": el "individual" es por descarte, no una señal
     return r;
   }
   r.pasoA = 'los-dos';
@@ -525,7 +525,7 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
 //   ejecutar = false (ensayo): sin API ni escritura; dice qué fijaría, o que se decide al ejecutar.
 // faltaPerimetro(pdf): la compuerta (antes-de-localizar.mjs) dice que ese documento frena por perímetro; solo se miran esos clubes.
 // Devuelve, por club: { carpeta, valor (del club o null), porDocumento: [{ pdf, valor }], escrito, pendienteJev, detalle }.
-// (to-do 298 o2, ok de Guido 2026-10-19) LOS AÑOS YA CARGADOS TAMBIÉN SON EVIDENCIA. Burnley (lote 97): 2024 y 2025 están cargados como consolidado (Burnley FC Holdings) y el
+// LOS AÑOS YA CARGADOS TAMBIÉN SON EVIDENCIA. Burnley (lote 97): 2024 y 2025 están cargados como consolidado (Burnley FC Holdings) y el
 // documento 2022-23 trae una sola tabla de ingresos SIN título de perímetro; el paso A la daba por "individual" (por descarte) y fijó `individual` para todo el club. Ahora, si los
 // años cargados del club son consolidado (la heurística de perimetroHeredado(): al menos uno, y ninguno individual), un documento cuyo "solo individual" es por descarte (ninguna tabla lo dice) no vota,
 // Si hay un título que dice "individual", el documento vota individual como siempre.
@@ -569,7 +569,7 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
     const evidencia = `${votos.size} documento(s) con los dos estados votan ${valoresVoto.join('/') || '—'}; ${unicos.length} ejercicio(s) con un solo perímetro (${valoresUnicos.join('/') || '—'}); ${props.length} documento(s) mirados`;
     if (valoresVoto.length > 1) { out.push({ carpeta: c, valor: null, porDocumento: [], detalle: `los documentos que traen los dos estados no eligen lo mismo (${[...votos].map(([m, v]) => `${m.split('/').pop()}: ${v}`).join('; ')})` }); continue; }
     // 2. El perímetro del club.
-    // (to-do 298 d, ok de Guido 2026-10-18) el punto 2 de la regla dice "sin ningún ejercicio con los dos": si algún ejercicio trae los dos
+    // el punto 2 de la regla dice "sin ningún ejercicio con los dos": si algún ejercicio trae los dos
     // estados y no votó (Estonia: A2 ve los dos, pero sin total de ingresos reconocido no hay paso B), el perímetro del club NO sale de los
     // ejercicios de un solo estado; queda sin decidir (frena) y esos ejercicios reciben su ajuste propio (punto 1). Antes, Kuressaare,
     // Tallinna Kalev, Narva Trans y FCI Levadia quedaban "individual" por 2019-2020 y hubo que corregirlos a "consolidado" y repagar
@@ -626,7 +626,7 @@ async function main() {
     writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((p) => JSON.stringify(p)).join('\n') + (pedidos.length ? '\n' : ''));
     console.log(`${pedidos.length} documento(s) decididos por A2 para auditar en ${auditarF}${pedidos.length ? ' (instruccion.txt + pedidos.jsonl)' : ''}.`); return;
   }
-  // (to-do 298 d) --decidir-clubes <lista de carpetas> [--solo-cache]: ENSAYO de la decisión de perímetro de cada club (la misma de lote.mjs),
+  // --decidir-clubes <lista de carpetas> [--solo-cache]: ENSAYO de la decisión de perímetro de cada club (la misma de lote.mjs),
   // sin escribir ajustes; con --solo-cache, A2 solo usa respuestas guardadas (lo que falta queda pendiente, no se paga).
   const decidirF = flagVal('--decidir-clubes');
   if (decidirF) {
@@ -689,7 +689,7 @@ async function main() {
     writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((x) => JSON.stringify(x)).join('\n') + '\n');
     console.log(`${pedidos.length} pedido(s) en ${exportarF}`); return;
   }
-  // (to-do 298 w, escalón 2) --exportar-a3 <carpeta>: los pedidos de A3 de los documentos de la lista donde A2 (guardado) ve los dos
+  // --exportar-a3 <carpeta>: los pedidos de A3 de los documentos de la lista donde A2 (guardado) ve los dos
   // estados: <n>.txt con el texto que recibiría Claude, sistema.txt, esquema.json y pedidos.jsonl { n, md, clave }. Las respuestas van en
   // <n>.json (las escribe un subagente). --evaluar-a3 <carpeta>: aplica la compuerta a cada <n>.json y lo compara con el ajuste `perimetro`
   // ya fijado (del documento o del club). No escribe en la caché: es una medición.

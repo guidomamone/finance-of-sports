@@ -244,7 +244,7 @@ async function transcribePages(engine, pdfAbs, pageList, opts = {}) {
     const map = new Map();
     for (const batch of batches) {
       const r = await callEngine(engine, batch.file, '', opts);
-      // BUG REAL del piloto C (Real Madrid 2005-06, 2026-09-30): 18 páginas densas en un solo lote superaron el tope de salida de Claude
+      // BUG REAL del piloto C: 18 páginas densas en un solo lote superaron el tope de salida de Claude
       // (stop_reason=max_tokens); la tool descarta la transcripción cortada (bien) y el documento entero quedaba en `revisar`. El tope es
       // por llamada, así que se reparte el lote en mitades y se reintenta cada una, igual que cuando un motor devuelve menos páginas.
       if (!r.ok && batch.pages.length > 1 && /TRUNCADA|max_tokens|MAX_TOKENS/i.test(r.text || '')) {
@@ -473,7 +473,7 @@ async function resolveDoc(e0) {
     e = { ...e, motor: 'mistral' };
   }
   let canon = splitPages(readFileSync(mdAbs, 'utf8'));
-  // PÁGINAS QUE NO CAMBIARON (Versión 443, punto 1b.iii del HANDOFF): una página con la misma huella que en la última validación "listo"
+  // PÁGINAS QUE NO CAMBIARON: una página con la misma huella que en la última validación "listo"
   // de este .md ya está validada: no se vuelve a mandar a Claude ni a Gemini, y su resolución se conserva. Se recalcula sobre el .md
   // canónico ACTUAL (si arriba se rehace con Mistral, cambian todas y no se reusa nada). Caso: Juventus 2021-22, 17 páginas pagadas dos veces.
   const previaPags = ultimaConPaginas(e.md, { releer: true });
@@ -530,7 +530,7 @@ async function resolveDoc(e0) {
   // ejercicios cargados, elige el 58% de las páginas y cubre el 99,7% de los importes de producción (Admin/mediciones/test-seleccion-paginas.md).
   // Se calcula sobre el .md canónico ACTUAL (puede haber cambiado arriba, al rehacerlo con Mistral) y se recalcula si vuelve a cambiar.
   //
-  // CHEQUEOS GRATIS ANTES DE PAGAR (Versión 307, tools/chequeos-gratis.mjs): de las páginas con números, las que quedan respaldadas cifra
+  // CHEQUEOS GRATIS ANTES DE PAGAR: de las páginas con números, las que quedan respaldadas cifra
   // por cifra por el texto del PDF, las sumas de sus tablas, la columna del año anterior ya cargada en producción o el balance, quedan
   // `validada-gratis` y tampoco van a la segunda voz. Solo las `dudosa` se pagan. Medido sobre los 104 documentos que este resolver ya
   // había resuelto (Admin/mediciones/test-chequeos-gratis.md): de las 163 páginas con números que tenían un error real de lectura, las 163 quedan
@@ -737,7 +737,7 @@ function dryRunDoc(e) {
   const FRAC_NUM = 0.58;
   if (!existsSync(resolve(root, e.md))) return { plan: 'sin .md: Mistral + Gemini/Claude en págs. dudosas', nPages, cost: nPages * EST.mistral + nPages * FRAC_NUM * (EST.gemini + 0.6 * 0.25 * EST.claude + 0.15 * EST.claude) };
   const mdText = readFileSync(resolve(root, e.md), 'utf8');
-  // (to-do 298 e3, ok de Guido 2026-10-19) LA MISMA CONDICIÓN QUE EL PASO -0.5 DE resolveDoc(): un .md viejo sin tablas (menos de 5
+  // LA MISMA CONDICIÓN QUE EL PASO -0.5 DE resolveDoc(): un .md viejo sin tablas (menos de 5
   // renglones "|", 2+ páginas, motor que no es Mistral) se rehace entero con Mistral antes de validar. El ensayo no lo contaba: cotizaba
   // solo la validación del .md viejo. Caso: la corrida de Admin/lotes/sin-tablas-298e.txt (238 documentos), ensayo US$ 7,26 y real
   // US$ 43,09 (Mistral 8.335 páginas, US$ 33,34). La validación del .md nuevo se estima con la del viejo (en esa corrida, 7,26 contra ~10).

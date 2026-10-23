@@ -257,7 +257,7 @@ async function listos() {
   const prodLineas = [...banco.values()].map((x) => ({ club: x.club, side: x.side, label: x.label }));
   for (const l of lineasAprendidas({ produccion: prodLineas })) { const k = `${l.side}|${l.club}|${l.label.toLowerCase().replace(/\s+/g, ' ').trim()}`; if (!banco.has(k)) banco.set(k, { label: l.label, side: l.side, truth: l.cat, club: l.club, aprendido: true }); }
   const retrieve = K_EXAMPLES ? makeRetriever([...banco.values()].filter((x) => !x.conflict)) : null;
-  // Memoria de respuestas (Versión 321, tools/respuestas-cache.mjs): un rubro que Jev ya contestó para este club y lado no se vuelve a preguntar
+  // Memoria de respuestas: un rubro que Jev ya contestó para este club y lado no se vuelve a preguntar
   // (ni se paga, ni cambia de respuesta entre corridas). `--sin-cache` pregunta todo de nuevo.
   const cache = abrirCache('jev'); const SIN_CACHE = args.includes('--sin-cache'); let desdeCache = 0;
   for (const e of docs) {

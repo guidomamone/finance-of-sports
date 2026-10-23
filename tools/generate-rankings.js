@@ -59,7 +59,7 @@
 // archivo de cada club) y agrupados en Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero. `leagueSize` = el verificado (LEAGUE_SIZE_BY_YEAR) o,
 // sin él, los equipos de la lista de Wikipedia (`wiki.n`); null = ni lo uno ni lo otro. `wiki` = { t, lang, at, n }: la página de Wikipedia de la que salió la lista de equipos de
 // esa liga-año (tools/club-league-reference/), con el día en que se leyó y cuántos clubes trae; la vista la cita con su licencia
-// (CC BY-SA 4.0). Sin lista bajada, no va. El archivo publicado lleva UNA línea de comentario (data/ se publica: to-do 209).
+// (CC BY-SA 4.0). Sin lista bajada, no va. El archivo publicado lleva UNA línea de comentario.
 // ============================================================================
 
 const fs = require('fs');

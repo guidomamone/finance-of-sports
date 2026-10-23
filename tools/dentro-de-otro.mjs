@@ -43,7 +43,7 @@ import vm from 'node:vm';
 import { ajustesDe } from './ajustes.mjs';
 import * as EV from './evidencia-club.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
-import { modificarClub, leerJsonClub, rutaJson } from './club-json.mjs'; // (to-do 245, fase 2) las marcas se escriben en el JSON del club
+import { modificarClub, leerJsonClub, rutaJson } from './club-json.mjs'; // las marcas se escriben en el JSON del club
 
 const ROOT = resolve(import.meta.dirname, '..');
 const HOY = new Date().toISOString().slice(0, 10);
@@ -134,7 +134,7 @@ function cierreDe(txt, abre) { let n = 0; for (let i = abre; i < txt.length; i++
 const esMarca = (v) => v && typeof v === 'object' && v.posible === true && v.por === 'precedente';
 const contarMarcas = (j) => (j.years || []).reduce((k, y) => k + Object.values(y.adjustments?.included_in || {}).filter((v) => v && typeof v === 'object' && v.possible === true && v.by === 'precedente').length, 0);
 
-// La marca no lleva comentario (to-do 209: data/ se publica); la nota que explica de dónde sale cada marca la devuelve, por año,
+// La marca no lleva comentario; la nota que explica de dónde sale cada marca la devuelve, por año,
 // para la evidencia del club (marcarClub la escribe en Admin/carga-clubes/<club>.md).
 function escribirClub(id, porAnio) {
   const notas = {};
@@ -158,7 +158,7 @@ function escribirClub(id, porAnio) {
   return notas;
 }
 
-// LO QUE USA tools/cargar.mjs (Versión 518, paso 3): recalcula y escribe las marcas de UN club con el motor sobre lo que hay en disco
+// LO QUE USA tools/cargar.mjs: recalcula y escribe las marcas de UN club con el motor sobre lo que hay en disco
 // (el año recién escrito incluido). Sin publicar: quien llama sube ASSET_V, corre los generadores y audit.js, y revierte si falla.
 // Devuelve { cambio, antes, despues, lineas } (cambio = si el archivo quedó distinto).
 export function marcarClub(id, { M = motor(), log = () => {} } = {}) {

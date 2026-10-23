@@ -3,7 +3,7 @@
 // tools/medir-pipeline.mjs — MIDE un cambio a las tools del pipeline ANTES y DESPUÉS y lo anota
 // ============================================================================
 //
-// POR QUÉ: «no podés nunca jamás escribir algo que cambie el pipeline si no medís que no rompa algo anterior» (Guido, 2026-10-22). Una regla que
+// POR QUÉ: «no podés nunca jamás escribir algo que cambie el pipeline si no medís que no rompa algo anterior». Una regla que
 // depende de que una sesión se acuerde se rompe; esto es la máquina que la cumple. El hook de commit (tools/hooks/pre-tool.mjs) rechaza un
 // commit de una tool de tools/pipeline-tools.json que no tenga acá su línea.
 //

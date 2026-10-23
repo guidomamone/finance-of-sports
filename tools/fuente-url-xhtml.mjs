@@ -40,7 +40,7 @@ const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 const hechos = (buf) => (buf.toString('utf8').match(/<ix:nonFraction[^>]*>[^<]*<\/ix:nonFraction>/g) || []).map((x) => x.replace(/<[^>]+>/g, '').trim()).join('|');
 const slug = (x) => String(x).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 // los .xhtml de Clubes/ por slug de su nombre (el id de una fuente es <clubId>-<slug del archivo>); se recorre una sola vez. Muchos clubes tienen el mismo nombre de archivo
-// (aarsrapport-2021-12-31.xhtml): de varios candidatos vale el que cita la evidencia de carga del club (Admin/carga-clubes/<clubId>.md); si ninguno la cita, es ambiguo y no se elige.
+//: de varios candidatos vale el que cita la evidencia de carga del club (Admin/carga-clubes/<clubId>.md); si ninguno la cita, es ambiguo y no se elige.
 let INDICE_XHTML = null;
 function xhtmlDe(clubId, base) {
   if (!INDICE_XHTML) {

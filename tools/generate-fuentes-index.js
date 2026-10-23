@@ -26,7 +26,7 @@
 // cargar aún", "2 memorias descargadas, sin datos financieros cargables"). No
 // existe un booleano en ningún lado.
 //
-// La clasificación original (sesión 2026-09-20) se hizo con las dos listas de
+// La clasificación original se hizo con las dos listas de
 // regex de abajo, y quedó verificada así: de 530 clubes, 518 matchearon señales
 // de un solo lado, 0 no matchearon ninguna, y 12 matchearon señales de los dos
 // lados — esos 12 se resolvieron A MANO leyendo el estado completo, y están

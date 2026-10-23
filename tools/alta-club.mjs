@@ -89,7 +89,7 @@
 //                  mes que aparecen (en 15 idiomas, numéricas, ISO y CJK) y el mes
 //                  de cierre es el más frecuente; el ejercicio arranca el día 1 del
 //                  mes siguiente. Si el nombre del archivo trae una fecha ISO
-//                  (`OFI_FS_2025-06-30`) se usa como confirmación. Si el documento
+// se usa como confirmación. Si el documento
 //                  no alcanza, se mira el resto de los `.md` de la carpeta del club;
 //                  si tampoco, el patrón del país (lo que usan los clubes del mismo
 //                  país ya cargados, solo si son unánimes). Si nada de eso alcanza,
@@ -257,7 +257,7 @@ import { agregarCaso, casoYRespuesta } from './cola.mjs';
 import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
 import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
-import { crearClub } from './club-json.mjs'; // (to-do 245, fase 2) el JSON es la fuente de cada club
+import { crearClub } from './club-json.mjs'; // el JSON es la fuente de cada club
 import { GENERADORES, queFalla } from './generadores.mjs';
 import { derivado } from './rutas.mjs';
 export { resumenAltas };
@@ -332,7 +332,7 @@ const PAISES = {
   'Turquía':         { iso2: 'TR', moneda: 'TRY', region: 'europa', en: 'Turkey', legado: { codigo: 'TRL', desde: 2005, tokens: ['trl', 'türk lirası', 'turk lirasi'] } },
   'Ucrania':         { iso2: 'UA', moneda: 'UAH', region: 'europa', en: 'Ukraine' },
 };
-// (to-do 298 i, ok de Guido 2026-10-18) ESCALÓN DEL PAÍS. Escalón 0: la tabla PAISES de arriba. Escalón 1, solo si la carpeta no está ahí:
+// ESCALÓN DEL PAÍS. Escalón 0: la tabla PAISES de arriba. Escalón 1, solo si la carpeta no está ahí:
 // la tabla de referencia ISO (tools/paises-referencia.json: ISO2, moneda ISO 4217, región, nombre en inglés y la moneda vieja de antes del
 // euro). COMPUERTA: el nombre de la carpeta, sin tildes ni mayúsculas, coincide con UNA sola entrada. Antes, un país nuevo frenaba el alta con
 // 3 preguntas (id, país, moneda) hasta agregar su fila a mano (Estonia); en Clubes/ hay 32 carpetas así (Polonia, Suecia, Uruguay...).
@@ -755,7 +755,7 @@ function fxDeSerie(moneda, fecha) {
 
 // Nombre legal: línea con un token del nombre del club + una forma societaria.
 export function nombreLegal(md, displayName) {
-  // (to-do 323 f, ok de Guido 2026-10-19) un nombre en plural ("Harlequins") se busca también en singular ("HARLEQUIN FOOTBALL CLUB LIMITED"): sin eso la línea del nombre legal no pasaba
+  // un nombre en plural ("Harlequins") se busca también en singular ("HARLEQUIN FOOTBALL CLUB LIMITED"): sin eso la línea del nombre legal no pasaba
   // el filtro y ganaba una frase del texto ("Harlequins' position as"). Medido en la primera transcripción de 400 carpetas de club: solo cambia Harlequins.
   const base = norm(displayName).split(/[^a-z0-9]+/).filter((t) => t.length >= 4);
   const tokens = [...new Set(base.flatMap((t) => (t.length >= 7 && t.endsWith('s') ? [t, t.slice(0, -1)] : [t])))];
@@ -785,7 +785,7 @@ export function nombreLegal(md, displayName) {
   return orden.length ? { nombre: orden[0][0], veces: orden[0][1], otros: orden.slice(1, 4).map(([k, v]) => `${k} (${v})`) } : null;
 }
 
-// NOMBRE DE LA PORTADA (to-do 161, escalón 1 del nombre, diseño aprobado por Guido). La portada (las primeras líneas del .md, hasta la pág. 3)
+// NOMBRE DE LA PORTADA. La portada (las primeras líneas del .md, hasta la pág. 3)
 // nombra la sociedad que presenta el balance; lo más frecuente del documento entero, no: en un consolidado (y también en un individual, en las
 // notas) las controladas aparecen más veces que el club (Hellas Verona 2020: "Hellas Verona Service S.r.l." 9 veces contra 1). Medido en las
 // 16 altas italianas: la portada acierta la entidad en las 5 que se corrigieron a mano. Recorte: desde la primera palabra del club hacia atrás,
@@ -824,7 +824,7 @@ export function nombreBienEscrito(nombre, md) {
   return nombre.split(/\s+/).map((w, i, arr) => { const k = w.toLowerCase(); if (i === arr.length - 1 && FORMA_BIEN[k]) return FORMA_BIEN[k]; if (/\./.test(w) || /\d/.test(w)) return w; return w.charAt(0) + w.slice(1).toLowerCase(); }).join(' ');
 }
 
-// ESCALERA DEL NOMBRE LEGAL (to-do 161, decidido por Guido el 2026-10-07):
+// ESCALERA DEL NOMBRE LEGAL:
 //   ESCALÓN 0  ajuste manual `name` (del documento o de la carpeta del club) · respuesta de Guido en la cola ── gana siempre
 //   ESCALÓN 1  la portada y lo más frecuente del documento dicen LA MISMA entidad ── se usa, bien escrita
 //   ESCALÓN 2  no coinciden, o hay una sola de las dos ── PREGUNTA A LA COLA (el alta es una sola vez por club y se averigua fácil).
@@ -887,7 +887,7 @@ export function analizar(docArg, sitio, ov = {}) {
   const pais = paisDe(paisCarpeta);
 
   // ---------------------------------------------------------------- ¿ya existe?
-  // UNA sola regla en todo el proyecto (tools/carpetas-clubes.mjs, 2026-09-30): cita en algún
+  // UNA sola regla en todo el proyecto: cita en algún
   // data/<país>/<id>-data.js o en su evidencia (Admin/carga-clubes/<id>.md) -> ese club; si no, nombre IGUAL a un club del mismo país; si no, club nuevo.
   // Hasta la Versión 309 este script tenía su propia versión (mapa de citas + `onboard.mjs --quien` +
   // desempate por país) y onboard.mjs otra distinta: dos reglas que podían dar respuestas distintas
@@ -919,7 +919,7 @@ export function analizar(docArg, sitio, ov = {}) {
   else if (cierreTxt && ((cierreTxt.n >= 3 && cierreTxt.share >= 0.6) || (cierreTxt.n >= 2 && cierreTxt.share === 1))) { mesCierre = cierreTxt.mes; fuenteCierre = `contenido del .md (${cierreTxt.n} de ${cierreTxt.total} fechas de fin de mes caen en el mes ${cierreTxt.mes})`; if (cierreNom && cierreNom.mes !== cierreTxt.mes) { estadoCierre = 'pregunta'; preguntaCierre = `El nombre del archivo dice cierre ${cierreNom.fecha}, pero el contenido cierra en el mes ${cierreTxt.mes}. ¿Cuál es el cierre de este ejercicio?`; } }
 
   // El resto de los .md del club, para ver si el cierre cambió en el tiempo.
-  // (to-do 237 m) Sin los documentos que están en documentos-descartados.txt o documentos-parciales.txt (la misma lista que saltea
+  // Sin los documentos que están en documentos-descartados.txt o documentos-parciales.txt (la misma lista que saltea
   // lote.mjs y que `--todos` usa para `faltan-datos`): un documento descartado no es un hermano. Caso: Tondela 2021, el relatório del
   // Clube Desportivo de Tondela (asociación, descartado con ok de Guido) hacía preguntar "dos entidades" aunque el perímetro estuviera fijado.
   const dirClub = resolve(ROOT, 'Clubes', paisCarpeta, clubCarpeta);
@@ -979,7 +979,7 @@ export function analizar(docArg, sitio, ov = {}) {
     else if (cierreTxt.anio === anio) fuenteAnio += ', confirmado por las fechas de cierre del .md';
     else if (!anioForzado) {
       const aniosTxt = Object.keys(cierreTxt.porMes).length ? fechasFinDeMes(md).filter((f) => f.mes === mesCierre).map((f) => f.anio) : [];
-      // (Versión 519, to-do 140(a), aprobado por Guido el 2026-10-05) NOMBRE CON DOS AÑOS SEGUIDOS QUE BAJAN ("2017-2016"): es ambiguo.
+      // NOMBRE CON DOS AÑOS SEGUIDOS QUE BAJAN ("2017-2016"): es ambiguo.
       // En Goiás es "ejercicio 2017 con su comparativo 2016" (la regla del nombre da 2016, mal: 10 ajustes `anio`); en Suduva
       // "up2021-2020.12.31" es "subido en 2021, ejercicio 2020" (da 2020, bien). Decide el contenido: si el año de las fechas de cierre del
       // .md (con la misma evidencia fuerte de arriba) es uno de los dos del nombre, gana ese. Sin esa evidencia, la regla de siempre. Medido:
@@ -1114,7 +1114,7 @@ export function analizar(docArg, sitio, ov = {}) {
   else if (esIntermedio) { estadoRT = 'pregunta'; fuenteRT = `el documento parece un estado intermedio (${nIntermedio} señales en el texto: semestral, seis meses, interim...)`; preguntaRT = 'El documento parece un estado financiero INTERMEDIO, no el anual: el sitio carga ejercicios completos. ¿Es así (y hay que buscar el anual), o es el anual de un ejercicio corto?'; }
   else if (NO_BALANCE.test(nomNorm)) { estadoRT = 'pregunta'; fuenteRT = 'nombre del archivo'; preguntaRT = `El nombre del archivo ("${nombreArchivo}") sugiere que no es un estado contable anual (acta, informe intermedio, memoria, dictamen...). ¿Trae un estado de resultados anual cargable, o es un documento de contexto?`; }
   else if (!tieneEstado) { estadoRT = 'pregunta'; fuenteRT = filasNumericas < 10 ? `el .md casi no tiene tablas con números (${filasNumericas} filas numéricas): parece un informe/dictamen que nombra los estados sin traerlos` : 'el .md no tiene ninguna palabra de estado contable reconocible'; preguntaRT = '¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?'; }
-  // (to-do 298 l, ok de Guido 2026-10-19) ESCALÓN 2: la pregunta "¿trae un estado de resultados?" (no hay palabras de estado que reconozca
+  // ESCALÓN 2: la pregunta "¿trae un estado de resultados?" (no hay palabras de estado que reconozca
   // STATEMENT, o casi no hay tablas) la contesta la VERIFICACIÓN del propio documento: si cerró con el resultado impreso (etapa 6), el
   // documento trae un estado de resultados anual. Solo esa pregunta: presupuesto, intermedio y nombre de archivo siguen preguntando (un
   // intermedio también cierra). Casos: 59 ajustes `reportType` estonios (majandusaasta aruanne con tulemiaruanne, palabras que STATEMENT no
@@ -1275,7 +1275,7 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
   if (dec.grupos && dec.grupos.length) {
     const grupos = dec.grupos;
     const deCierre = grupos.filter((g) => g.items.some((i) => i.cierre));
-    // VARIOS VALORES EN UNA TABLA (decisión de Guido, 2026-10-01): gana la columna con la fecha MÁS NUEVA. Caso real, UC 2025, línea 797:
+    // VARIOS VALORES EN UNA TABLA: gana la columna con la fecha MÁS NUEVA. Caso real, UC 2025, línea 797:
     // "Dólar Estadounidense 907,13 996,48" debajo de "Conversiones a pesos chilenos 31-12-2025 31-12-2024": gana 907,13. Solo se usa si hay
     // más de un valor (con uno solo no cambia nada) y solo si la fila y el encabezado se corresponden uno a uno (ver fechaDeColumna); si no,
     // sigue como antes y termina en la pregunta (cola). Ver la medición en Admin/CHANGELOG.md, Versión 328.
@@ -1341,8 +1341,8 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
   const q = norm(nombre).replace(/[^a-z0-9]+/g, ' ').trim();
   const exactos = []; const parciales = [];
   // QUÉ TEMPORADA: la caché guarda una temporada partida ("2020–21") bajo el año en que TERMINA. La regla del sitio es "la
-  // categoría al CIERRE del ejercicio" (data/club-leagues.js, decisión de Guido, Versión 132): un ejercicio que cierra entre septiembre y
-  // diciembre en una liga partida está jugando la temporada que empezó ese año -> clave anio + 1. (to-do 298 n2, ok de Guido 2026-10-19) Era "entre julio y diciembre": julio y agosto
+  // categoría al CIERRE del ejercicio": un ejercicio que cierra entre septiembre y
+  // diciembre en una liga partida está jugando la temporada que empezó ese año -> clave anio + 1. Era "entre julio y diciembre": julio y agosto
   // son el FIN de la temporada (Burnley cierra el 31/7), como en faltantes-liga, estadio-sponsor, listas-lote y ligas-sin-verificar (mes >= 9). Con >= 7 la liga salía de la temporada
   // siguiente y estadio-sponsor la usaba con la anterior (Burnley 2022 "2021–22 EFL Championship", 2023 "2022–23 Premier League"). Medido: las 8 filas cargadas que cierran en jul-ago coinciden con >= 9. Antes se buscaba siempre `anio` y a un
   // club que cierra en diciembre (Atalanta 2020, Sassuolo 2021, Genoa 2022, Thun 2019, los rusos) le tocaba la temporada ANTERIOR.
@@ -1361,7 +1361,7 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
       // primera versión, proponía a AEL Larissa como Aris).
       const tn = sinGen(n); const tq = sinGen(q);
       if (!tn.length || !tq.length) continue;
-      // (to-do 298 u, ok de Guido 2026-10-18) un alias confirmado del club en tools/club-league-reference/alias.json vale como el nombre
+      // un alias confirmado del club en tools/club-league-reference/alias.json vale como el nombre
       // exacto: "Oud-Heverlee Leuven" = OH Leuven, "RWDM47" = RWDM (los mismos alias que ya usan faltantes-liga y ligas-sin-verificar)
       if (n === q || aliasDe(iso, clubId).includes(n)) exactos.push({ leagueId, club: c, page: e.wikipediaPage });
       else if (tn.every((t) => tq.includes(t)) || tq.every((t) => tn.includes(t))) parciales.push({ leagueId, club: c, page: e.wikipediaPage });
@@ -1371,7 +1371,7 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
   if (exactos.length === 1) {
     const cat = enCatalogo(exactos[0].leagueId);
     if (cat) return campo('liga', cat, `roster cacheado de "${exactos[0].page}" (tools/club-league-reference/${iso}.json), coincidencia exacta "${exactos[0].club}"`);
-    // `pendiente`, no `pregunta` (cambio del 2026-09-30): agregar una liga al catálogo es UNA decisión de
+    // `pendiente`, no `pregunta`: agregar una liga al catálogo es UNA decisión de
     // Guido por liga, no por club, y no cambia si el alta es correcta. Con la caché de rosters creciendo
     // (it, kr...), dejarlo como `pregunta` hacía que MÁS datos dieran MENOS clubes listos (21 carpetas
     // frenadas solo por esto). La fila se escribe en `null` (= "nadie lo verificó", P3) y la pregunta
@@ -1480,7 +1480,7 @@ function escribir(r) {
       `FISCAL YEAR META PROPUESTO para ${r.ejercicio.anio} (NO registrado: un ejercicio con meta y`,
       'sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):',
       `  ${r.ejercicio.anio}: ${JSON.stringify(metaProp)}`]);
-    // (to-do 245, fase 2) el esqueleto es el JSON del club (la fuente) y de ahí sale su data file
+    // el esqueleto es el JSON del club (la fuente) y de ahí sale su data file
     const ficha = { id, name: val('name'), displayName: val('displayName'), country: val('country'), reportingCurrency: val('reportingCurrency'), fiscalYearStart: val('fiscalYearStart'), sport: val('sport') };
     escritos.push(...crearClub(id, ficha, { pais: val('country') }));
 
@@ -1502,7 +1502,7 @@ function escribir(r) {
         else writeFileSync(ligaPath, txt.replace(enLinea, `$1${ya[2].replace(/\s+$/, '')}, ${anio}: ${liga.valor ? jsStr(liga.valor) : 'null'} $3`));
       } else writeFileSync(ligaPath, insertarAntes(txt, 'Object.assign(window.CLUB_LEAGUE_BY_YEAR, {', /^\}\);$/m, filaLiga, `data/club-leagues/${iso}.js`));
     } else {
-      // sin cabecera de comentario (to-do 209: data/ se publica); las reglas de estos archivos están en data/club-leagues.js
+      // sin cabecera de comentario; las reglas de estos archivos están en data/club-leagues.js
       writeFileSync(ligaPath, `window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
@@ -1563,7 +1563,7 @@ ${filaLiga}});
     }
 
     // 8. Generadores + auditoría
-    // (to-do 298 x) la misma lista que cargar.mjs (tools/generadores.mjs): sin faltantes-liga y estimar, toda alta se revertía por 2 P1
+    // la misma lista que cargar.mjs (tools/generadores.mjs): sin faltantes-liga y estimar, toda alta se revertía por 2 P1
     const gens = GENERADORES.filter((g) => existsSync(resolve(ROOT, g)));
     const salidaGen = [];
     for (const g of gens) {
@@ -1838,7 +1838,7 @@ async function modoTodos() {
   const solo = flagVal('--solo');
   if (solo) carpetas = carpetas.filter((c) => `${c.pais}/${c.carpeta}`.includes(solo));
   const previo = leerRegistro();
-  // SIN DOCUMENTO QUE SIRVA (to-do 232 a). Athens Kallithea (su único documento es el balance del municipio, descartado) y Catania
+  // SIN DOCUMENTO QUE SIRVA. Athens Kallithea (su único documento es el balance del municipio, descartado) y Catania
   // (su único documento está en una de las dos listas) salían "listo-para-alta". Escalón antes de la huella, con UNA compuerta: TODOS los .md de la carpeta
   // están en Admin/registros/documentos-descartados.txt o documentos-parciales.txt (la misma lectura que cargar-lote.mjs, 232 j). Si
   // pasa, la carpeta no se analiza y queda `faltan-datos` con la lista (no se borra: un parcial espera el otro tramo). Una carpeta con
@@ -1883,7 +1883,7 @@ async function modoTodos() {
     }
     console.error(`Claude: gastado US$ ${gastado.toFixed(3)}.`);
   }
-  // YA DADAS DE ALTA (Versión 641, aprobado por Guido el 2026-10-09). Una carpeta deja de ser `nuevo` cuando su club entra al sitio, y
+  // YA DADAS DE ALTA. Una carpeta deja de ser `nuevo` cuando su club entra al sitio, y
   // desde ahí este bucle no la mira: su línea vieja ("listo-para-alta" del día del ensayo) quedaba congelada y el resumen del pipeline
   // seguía ofreciendo dar de alta a Atalanta, Inter, Lazio... (25 líneas así al medirlo, 21 italianas y 4 de Brasil). Escalón nuevo,
   // gratis y sin analizar nada: si la carpeta ya resuelve a un club del sitio, su línea pasa a `existe` con ese clubId. Las demás no cambian.
@@ -2067,7 +2067,7 @@ async function modoBacktest() {
 }
 
 // ============================================================================
-// --deshacer <clubId> [--escribir] — (to-do 339, frenado de Bath) deshace un alta ESCRITA y no commiteada. Una carga a mano que fallaba (cargar.mjs se revertía solo, el alta no) dejaba
+// --deshacer <clubId> [--escribir] — deshace un alta ESCRITA y no commiteada. Una carga a mano que fallaba (cargar.mjs se revertía solo, el alta no) dejaba
 // el alta en el árbol y había que revertirla a mano con git checkout y borrando los archivos nuevos, tres veces. Sin --escribir es un ENSAYO que dice qué haría.
 //   - SOLO si el alta no está commiteada (el id no está en data/clubs.js de HEAD): lo commiteado se revierte con git.
 //   - Lo que escribió el alta Y SE EDITA A MANO se deshace por líneas, sin pisar el resto del archivo: la entrada del club en data/clubs.js y sus líneas en data/club-leagues/*.js.

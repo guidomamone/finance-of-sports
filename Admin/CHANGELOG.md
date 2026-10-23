@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 970 — Segunda limpieza de comentarios de tools/: otras 662 referencias [374]
+
+- `limpiar-comentarios.mjs` saca también un paréntesis corto con una referencia y a lo sumo 4 palabras más, y la etiqueta de historia con que empieza un comentario; un paréntesis con información («KNVB para la Eredivisie…, decisión de Guido») se deja. 662 referencias en 83 tools; en total 1.165 de 1.629 (quedan 464 en 105 tools y 77 cabeceras largas). Código sin comentarios idéntico en las 83 (`--tools`), medido «idéntico» (solo comentarios).
+
 ## Versión 969 — Hooks Stop y SessionStart [388 · 389]
 
 - `tools/hooks/stop.mjs` (evento `Stop`): si el turno dejó cambios (árbol sucio o un commit de los últimos 20 minutos) corre chequeos de segundos y bloquea UNA vez (`stop_hook_active`): archivos sin commitear, `indice-md.mjs --check` y `.md` sin marca, y un punto del TODO que ya cumple un «Verificar:» sin `audit` (esos son de `fos cerrar`). Sin cambios no dice nada; salida de 8 líneas como máximo. Prueba de 6 casos: `probar-stop.mjs`.

@@ -67,7 +67,7 @@ let frenaSinApi = () => {}; // se define abajo, cuando existe `estado` // al fin
 // última verificación marcó desgloses que no suman (verificacion.reintentar) vuelven a localizar con el índice ampliado (filas que terminan
 // en "-") y a extraer con la lista de lo que no sumó. Una sola vez por documento (después queda `reintentado`). El resto del lote no se toca.
 const REINTENTAR = ARGS.includes('--reintentar');
-// --detalle (Versión 442, punto 1b.ii del HANDOFF, aprobado por Guido el 2026-10-04): QUIÉN ENTRA al escalón 1 de la etapa 3 (el reintento).
+// --detalle: QUIÉN ENTRA al escalón 1 de la etapa 3 (el reintento).
 // Un desglose que no suma en un documento cuya etapa 6 CERRÓ (verificación "ok") no bloquea la carga: el año se carga igual, con el renglón
 // sin abrir. Ese reintento es DETALLE OPCIONAL y solo entra con --reintentar --detalle. Sin --detalle entran los que destraban la carga:
 // categoría en 0, o desglose que no suma con la etapa 6 sin cerrar. Caso: un --reintentar del 2026-10-04 sobre Juventus 2022-2024 volvió a
@@ -75,7 +75,7 @@ const REINTENTAR = ARGS.includes('--reintentar');
 // cuya etapa 6 no cerraba.
 const DETALLE = ARGS.includes('--detalle');
 const leerDerivado = (e, suf) => { try { const p = resolve(ROOT, derivado(e.md, suf, { crear: false })); return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null; } catch { return null; } };
-// Lo que hay que reintentar: desgloses que no suman (verificar.mjs) y categorías en 0 que deberían tener número (cargar.mjs, Versión 340).
+// Lo que hay que reintentar: desgloses que no suman (verificar.mjs) y categorías en 0 que deberían tener número.
 // `detalle`: los desgloses que no suman de un documento cuya etapa 6 cerró (opcionales, ver --detalle); `reintentar`: lo que
 // destraba la carga, más el detalle si se pidió --detalle.
 // UNA VEZ POR DOCUMENTO también para "categoría en 0": el intento queda en <doc>.reintento-categorias.json (lo escribe el lote al
@@ -92,7 +92,7 @@ if (!LISTA) { console.error('Uso: node tools/lote.mjs --lista <archivo> [--ejecu
 // CANDADO: un solo proceso a la vez escribiendo el registro, también en el ensayo (to-dos 162 y 164; el porqué y el cómo, en
 // tools/candado.mjs). Lo comparten lote.mjs, pipeline.mjs y cargar.mjs --escribir.
 tomarCandado('lote.mjs', { lista: LISTA, modo: EJECUTAR ? '--ejecutar' : 'ensayo' });
-// TESTIGOS (Versión 334, ok de Guido): una línea "testigo <pdf>" es un documento que entra SOLO para verificar a otro (su columna "año
+// TESTIGOS: una línea "testigo <pdf>" es un documento que entra SOLO para verificar a otro (su columna "año
 // anterior" contra el año actual del otro: chequeo de año vecino de verificar.mjs). Pasa por localizar, validar y extraer, y nada más: no se
 // verifica, no se categoriza ni se propone cargar (UC 2022 en el lote 03: ya cargado, llenaba la terminal con 7 frenos esperables).
 const lineas = readFileSync(resolve(ROOT, LISTA), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
@@ -102,7 +102,7 @@ const descartados = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'doc
 // PARCIALES: los balances de menos de 12 meses (Admin/registros/documentos-parciales.txt) tampoco entran: falta el otro tramo.
 const parciales = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
 const docs0 = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if (descartados.has(d)) { console.log(`  ${d}: descartado (Admin/registros/documentos-descartados.txt)`); return false; } if (parciales.has(d)) { console.log(`  ${d}: parcial, menos de 12 meses (Admin/registros/documentos-parciales.txt)`); return false; } return true; });
-// LA VERSIÓN CORREGIDA REEMPLAZA AL ORIGINAL (to-do 298 o, ok de Guido 2026-10-18). El registro belga publica a veces el balance del mismo
+// LA VERSIÓN CORREGIDA REEMPLAZA AL ORIGINAL. El registro belga publica a veces el balance del mismo
 // año otra vez, corregido ("verbeterde neerlegging"): quedan "<doc>.pdf" y "<doc>-correction.pdf" en la carpeta y entraban los dos al lote
 // (se pagaban dos veces y la cola preguntaba lo mismo dos veces). UNA compuerta: los dos están en la lista (misma carpeta, mismo nombre más
 // "-correction") y la corrección tiene su .md. Entonces entra solo la corrección; el original se saltea en esta corrida y queda como
@@ -113,7 +113,7 @@ const reemplazadosPorCorreccion = docs0.filter((d) => !testigos.has(d) && !/-cor
 for (const d of reemplazadosPorCorreccion) console.log(`  ${d}: salteado, la versión corregida (${correccionDe(d).split('/').pop()}) lo reemplaza`);
 const docs = docs0.filter((d) => !reemplazadosPorCorreccion.includes(d));
 const avisoCorrecciones = () => { if (reemplazadosPorCorreccion.length) console.log(`\nREEMPLAZADOS POR SU VERSIÓN CORREGIDA (no entraron; propuesta para Admin/registros/documentos-descartados.txt, con el ok de Guido):\n${reemplazadosPorCorreccion.map((d) => `  ${d}`).join('\n')}`); };
-// EN OTRA LISTA ACTIVA (to-do 232 g). lote-71.txt siguió listando los 10 documentos de Olympiacos después de pasarlos al lote 74 y la
+// EN OTRA LISTA ACTIVA. lote-71.txt siguió listando los 10 documentos de Olympiacos después de pasarlos al lote 74 y la
 // segunda corrida del 71 los pagó de nuevo. Aviso (no frena: a veces se repite a propósito): un documento de esta lista que también está
 // en otra Admin/lotes/lote-*.txt. Las prueba-*.txt repiten documentos por diseño y no cuentan; los testigos tampoco, de ningún lado.
 {
@@ -128,7 +128,7 @@ const avisoCorrecciones = () => { if (reemplazadosPorCorreccion.length) console.
 const ajustesTodos = (() => { let cache = null; return () => (cache ??= (existsSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return {}; } }) : [])); })();
 const leerRegistro = () => readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 let registro = leerRegistro();
-// UN AÑO DEL CLUB QUE QUEDA AFUERA (to-do 232 q). Aris 2022 (Aris_FS_audited_art47_2022-06-30) quedó fuera de lote-71.txt, con los
+// UN AÑO DEL CLUB QUE QUEDA AFUERA. Aris 2022 quedó fuera de lote-71.txt, con los
 // demás años de Aris adentro, y nada lo avisó. Aviso (no frena), de la etapa de etapa-doc.mjs (la misma que muestra estado.mjs): un
 // documento de un club de la lista, fuera de la lista y "sin localizar" (e3-localizar). UNA compuerta: su ejercicio (periodo.cierre del
 // registro) está identificado y no es el de ningún documento de la lista ni de uno ya cargado del club. Sin ella avisaba 24 en el
@@ -143,7 +143,7 @@ let registro = leerRegistro();
     if (etapaDe(e).clave === 'e3-localizar') console.log(`Aviso (no frena): ${e.pdf} está transcripto y nadie lo localizó, y su año (cierre ${e.periodo.cierre}) no está en esta lista. Decíselo a Claude: lo suma a un lote o lo descarta.`);
   }
 }
-// (Versión 521, to-do 140(c)) DUPLICADOS: el mismo PDF que otro (misma huella, inventario-transcripciones.mjs) no se procesa: se procesa el otro.
+// DUPLICADOS: el mismo PDF que otro (misma huella, inventario-transcripciones.mjs) no se procesa: se procesa el otro.
 for (let i = docs.length - 1; i >= 0; i--) { const e = registro.find((x) => x.pdf === docs[i]); if (e && e.estado === 'duplicado') { console.log(`  ${docs[i]}: duplicado de ${e.duplicadoDe} (misma huella): se saltea`); docs.splice(i, 1); } }
 // AVISO: UN ALTA ENTRA CON UN SOLO EJERCICIO (skill club-or-year-onboarding, 3a.2; pedido de Onboarding 9). Un club que todavía no está en el sitio
 // (quien.mjs: `clubDeCarpeta`) va con el ejercicio más reciente que traiga el estado de resultados completo; el resto de sus años, en el lote siguiente,
@@ -191,7 +191,7 @@ const sitio = loadSite(); // antes del loop: "año ya cargado" mira también el 
 // lo tiene: la propuesta puede ser de antes del ajuste. Caso: Sporting 2001 (relatorio-contas-2000.pdf), la propuesta vieja decía 2000 (el
 // nombre del archivo), 2000 está cargado y el lote lo salteaba como "ya en el sitio".
 const propuestaEnSitio = (e) => { const c = leerDerivado(e, '.carga.json'); const anio = ajusteDe(e.pdf, 'anio')?.valor ?? c?.year; return !!(c?.clubId && anio && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[anio]); };
-// (to-do 298 q) `cotizados`: los que el ensayo cotiza para localizar o extraer; también van a categorizar
+// `cotizados`: los que el ensayo cotiza para localizar o extraer; también van a categorizar
 let usd = 0; const estado = {}; const cotizados = new Set(); const aRetranscribir = []; const aTextoPropio = []; const aFijar = [];
 frenaSinApi = (pdf, etapa, costo) => { if (SIN_API) estado[pdf] = `frena (--sin-api): ${etapa} llamaría a la API${costo ? ` (~US$ ${Number(costo).toFixed(3)})` : ''}`; };
 // Páginas interiores (sin las 2 primeras ni la última) con menos de 200 caracteres de texto propio: son imágenes.
@@ -201,7 +201,7 @@ const paginasEnImagen = (pdf) => {
   return out;
 };
 console.log(`\n=== 1/5 · Leer el documento (etapas 3-5: localizar, validar, extraer)${API ? '' : SIN_API ? ' — SIN API: frena donde llamaría a una' : ' — ENSAYO: no llama a ninguna API'} ===`);
-// ETAPA 3, ANTES DE LA COMPUERTA: EL PERÍMETRO DEL CLUB POR SEÑALES (tools/perimetro-senales.mjs, aprobado por Guido el 2026-10-06). Para cada
+// ETAPA 3, ANTES DE LA COMPUERTA: EL PERÍMETRO DEL CLUB POR SEÑALES. Para cada
 // club de la lista que frenaría por perímetro, mira todos sus .md y, si coinciden (tablas de cada perímetro y el voto de 3 criterios, uno de
 // Jev), fija el ajuste del club; si no, la compuerta frena como siempre y Guido decide. En el ensayo no pregunta a Jev ni escribe: dice qué
 // fijaría. Caso: lote 14, 12 clubes italianos nuevos, 29 documentos frenados por perímetro.
@@ -209,7 +209,7 @@ const { fijarPerimetroDeClubes } = await import('./perimetro-senales.mjs');
 const PS = await fijarPerimetroDeClubes(docs, { registro, ejecutar: API, descartados, faltaPerimetro: (p) => faltaAntesDeLocalizar(p, { registro })?.falta === 'perimetro' });
 const previstoPerimetro = API ? null : new Map([...PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']), ...PS.flatMap((x) => x.porDocumento.map((d) => [d.pdf, d.valor]))]);
 for (const x of PS) console.log(`  perímetro ${x.carpeta}: ${x.valor || x.porDocumento.length ? `${x.escrito ? 'fijado' : 'se fija al ejecutar'}: ${x.valor || 'sin perímetro del club, uno por documento'} (${x.detalle})` : x.pendienteJev ? `se decide al ejecutar, con Jev o Claude (${x.detalle})` : `no se fija solo: ${x.detalle}`}`);
-// PROPUESTAS FRESCAS ANTES DE REINTENTAR (Versión 643, to-do 196, ok de Guido el 2026-10-09). Qué reintentar por "categoría en 0" sale de la
+// PROPUESTAS FRESCAS ANTES DE REINTENTAR. Qué reintentar por "categoría en 0" sale de la
 // propuesta guardada (<doc>.carga.json), que solo se escribe cuando corre el lote. Si después el club se dio de alta fuera del lote, la propuesta
 // guardada sigue diciendo "el club no existe" y no menciona los ceros: --reintentar decía "sin desgloses que reintentar" (Vila Nova 2021-2024 y
 // Avaí 2021, lote 62). Escalón 0 del camino de error: se vuelve a proponer la carga de los documentos que no están en el sitio (gratis: cargar.mjs
@@ -235,7 +235,7 @@ for (const pdf of docs) {
   // el registro puede tener la ruta del .md sin el archivo en disco (tieneMd: false, "PAGADO SIN .md": Novorizontino 2022);
   // antes pasaba a localizar.mjs y el lote entero se caía con ENOENT.
   if (!e?.md || !existsSync(resolve(ROOT, e.md))) { estado[pdf] = 'sin transcripción (etapa 2)'; console.log(`  ${pdf}: sin .md`); continue; }
-  // AÑO YA EN EL SITIO (to-do 237 ag, ok de Guido el 2026-10-15): un documento cuyo año ya está cargado no pasa por ninguna etapa más (ni
+  // AÑO YA EN EL SITIO: un documento cuyo año ya está cargado no pasa por ninguna etapa más (ni
   // verificar, ni categorizar, ni la propuesta de carga): cargar-lote.mjs no lo iba a tocar igual, y la tabla final lo cuenta en "ya estaba en
   // el sitio" por su cuenta (yaEnSitio, abajo). Misma compuerta que "año ya cargado según el sitio": el registro o el sitio por
   // el clubId y el año de la última propuesta. Caso: lote 80, quinta corrida, 52 documentos verificados, glosados y categorizados para que 44
@@ -244,7 +244,7 @@ for (const pdf of docs) {
   if (!REINTENTAR && !testigos.has(pdf) && (e.cargado || propuestaEnSitio(e))) {
     estado[pdf] = 'ya en el sitio'; console.log(`  ${pdf}: ya en el sitio (no se verifica, categoriza ni propone de nuevo)`); continue;
   }
-  // ETAPA 2, ESCALÓN 1a (Versión 433, cambio E, aprobado por Guido el 2026-10-03): si el inventario dice "revisar", primero las VOCES
+  // ETAPA 2, ESCALÓN 1a: si el inventario dice "revisar", primero las VOCES
   // (tools/resolver-inventario.mjs, la herramienta que ya existía en el proceso viejo): compara cada página del .md con el texto del PDF,
   // ignora las dudas en prosa y manda a Claude solo las páginas con cifras que no coinciden. COMPUERTA: se regenera el inventario y el
   // documento queda "listo" -> sigue. Si no, el escalón 1b de abajo (rearmar con el texto propio) como antes. Hasta acá el lote iba directo
@@ -277,7 +277,7 @@ for (const pdf of docs) {
       console.log(`  ${pdf}: resolver-inventario (etapa 2, escalón 1a): el inventario ahora dice "${e.estado}"${e.estado === 'listo' ? '' : ` (${String(e.detalle || '').slice(0, 120)}): sigue el escalón 1b`}`);
     }
   }
-  // AÑO YA CARGADO (Versión 406, auditoría del pipeline): con --reintentar, un documento cuyo año ya está en el sitio NO se reintenta por
+  // AÑO YA CARGADO: con --reintentar, un documento cuyo año ya está en el sitio NO se reintenta por
   // "desglose que no suma" (se cargó con el renglón sin abrir, a propósito; en Fortaleza 2018-2020 esas marcas eran ruido: 5.867,807 contra
   // 5.867,804). Solo por "categoría en 0" de su propuesta de carga, y solo si esa propuesta es posterior al último ajuste manual (si no, es
   // vieja: Goiás 2025 y 2017 se reprocesaron por una propuesta anterior a sus ajustes cero-real, US$ 0,45). Caso que sí: Fortaleza 2017,
@@ -291,7 +291,7 @@ for (const pdf of docs) {
   // data/it/juventus-it-data.js y `cargado: false` en el registro; un --reintentar lo volvía a pagar). Se mira también el sitio, por el clubId y
   // el año de la última propuesta de carga del documento.
   const cargado = e.cargado || propuestaEnSitio(e);
-  // (to-do 237 af y s) RESPUESTA POSTERIOR A LA VERIFICACIÓN: si la cola tiene respuestas a casos de la etapa 6 de este documento más nuevas
+  // RESPUESTA POSTERIOR A LA VERIFICACIÓN: si la cola tiene respuestas a casos de la etapa 6 de este documento más nuevas
   // que su .verificacion.json, se vuelve a verificar (gratis) ANTES de decidir el reintento y el rearmado, que se deciden con esa verificación.
   // Sin esto, un documento con la cola ya contestada seguía con la verificación vieja: no pasaba a "extraído", pedía rearmar con el texto
   // propio (paginasARearmar) o un --reintentar pagaba localizar y extraer de nuevo y abría preguntas nuevas (lote 80: Sporting 2007-08 y
@@ -303,7 +303,7 @@ for (const pdf of docs) {
   const reintento = !REINTENTAR ? null : cargado ? (cargaFresca && categoriasPendientes(e).length ? categoriasPendientes(e) : null) : verifDe(e)?.reintentar || null;
   if (REINTENTAR && cargado && !reintento) { estado[pdf] = 'ya cargado, sin categorías en 0 que reintentar'; console.log(`  ${pdf}: ya cargado (no se reintenta por desgloses)`); continue; }
   const sinEstadoAntes = !!leerDerivado(e, '.ubicacion.json')?.sin_estado; // candidato al escalón 1 de la etapa 2 (re-transcribir)
-  // ETAPA 3, ESCALÓN 2 (Versión 360, aprobado por Guido): "las notas hacen de estado". Solo con --reintentar, una vez por documento, si la
+  // ETAPA 3, ESCALÓN 2: "las notas hacen de estado". Solo con --reintentar, una vez por documento, si la
   // localización anterior no encontró estado (sin_estado, o la lista del estado vacía) pero sí notas de ingresos Y de gastos, y la transcripción
   // no es candidata al escalón 1 de la etapa 2 (re-transcribir: no es de Mistral y tiene páginas en imagen; ese va primero). Caso real: Fortaleza
   // CEIF, Colombia (solo notas; 2022 con transcripción vieja, sin páginas en imagen).
@@ -313,7 +313,7 @@ for (const pdf of docs) {
   // CON AJUSTE MANUAL (Versión 370, idea de Guido: "el camino de error es ¿tiene un ajuste manual? si está, aplicarlo; si no, seguir la
   // escalera"): un documento que quedó como fuente y tiene un ajuste `resultado-final` con línea repite UNA vez las notas como estado, con el
   // dato del ajuste como pista para localizar. Casos: Fortaleza CEIF 2018 y 2019.
-  // PERÍMETRO, ESCALÓN 0 EN LA ETAPA 3 (Versión 436, cambio H, aprobado por Guido el 2026-10-03): el ajuste manual `perimetro` (del documento
+  // PERÍMETRO, ESCALÓN 0 EN LA ETAPA 3: el ajuste manual `perimetro` (del documento
   // o del club) se le pasa a localizar, que hasta acá elegía el consolidado por defecto y el ajuste recién lo leía cargar (etapa 8). Caso:
   // Juventus 2020-21, localizar eligió el consolidado (b15, pág. 32) con el individual al lado (b87, pág. 69) y el ajuste del club en
   // "individual"; no cerraba ninguna lectura. Sin ajuste, localizar elige como antes.
@@ -332,12 +332,12 @@ for (const pdf of docs) {
     estado[pdf] = 'extraído (las notas hacen de estado)'; console.log(`  ${pdf}: las notas hacen de estado · ${X3.datos.filas.length} filas · US$ ${usd.toFixed(2)} acumulado`);
     continue;
   }
-  // ETAPA 2, ESCALÓN 1 (Versión 395, escalera aprobada por Guido el 2026-10-02): la etapa 4 de una corrida anterior dijo que el .md NO
+  // ETAPA 2, ESCALÓN 1: la etapa 4 de una corrida anterior dijo que el .md NO
   // coincide con el texto propio del PDF (cifras con un dígito distinto, o casi nada en común) y el PDF sí tiene texto propio: esas páginas
   // se rearman con él (tools/texto-propio-a-md.mjs, gratis) y el documento vuelve a localizar, validar y extraer. Una vez por documento
   // (el .md queda marcado). Compuerta: la etapa 4 sobre el .md nuevo y, después, la etapa 6. Caso: Goiás 2008-2016 (balances de diario).
   // el rearmado tiene su propia escalera: método "columnas" primero; "regiones" solo si con "columnas" la etapa 6 no cerró.
-  // LOTE CORTADO: LA ETAPA 6 ANTES DEL REARMADO (to-do 162, ok de Guido). Un lote que se corta (lote 14: se reinició la terminal) deja
+  // LOTE CORTADO: LA ETAPA 6 ANTES DEL REARMADO. Un lote que se corta (lote 14: se reinició la terminal) deja
   // documentos con la etapa 4 hecha (.validacion.json) y la 6 sin hacer (sin .verificacion.json). paginasARearmar() decide con los "no
   // confirmados" de la etapa 4 y, sin verificación, rearma; pero esos números casi siempre son falsos (medido en los lotes 14 y 19: 193 de
   // 193 en páginas que validó la etapa 2) y el rearmado con el texto propio puede EMPEORAR la página. Caso: AC Milan 2022-23, pág. 84,
@@ -361,20 +361,20 @@ for (const pdf of docs) {
     continue;
   }
   if (REINTENTAR && !reintento && !sinEstadoAntes) { const op = !DETALLE && verifDe(e).detalle; estado[pdf] = op ? 'cierra; detalle opcional (--detalle)' : 'sin reintento pendiente'; console.log(`  ${pdf}: ${op ? `cierra; desgloses que no suman como detalle opcional (--detalle): ${op.map((x) => `"${x.renglon}"`).join(', ')}` : 'sin desgloses que reintentar'}`); continue; }
-  // ETAPA 3, COMPUERTA ANTES DE PAGAR (Versión 441, punto 1b.i del HANDOFF, aprobado por Guido el 2026-10-04): si el documento todavía no
+  // ETAPA 3, COMPUERTA ANTES DE PAGAR: si el documento todavía no
   // se localizó y le falta fijar el CIERRE o el PERÍMETRO (trae consolidado e individual y no hay ajuste ni año cargado de dónde heredarlo),
   // no se localiza: se imprime el ajuste que falta y el resto del lote sigue. Caso: Juventus, lote 13, localizó 2020-21 a 2024-25 con el
   // consolidado y hubo que pagar localizar y extraer otra vez (~US$ 2,8). La escalera está en tools/antes-de-localizar.mjs.
   const FP = faltaAntesDeLocalizar(pdf, { registro, previsto: previstoPerimetro });
   if (FP?.aviso) console.log(`  ${pdf}: compuerta antes de localizar: ${FP.aviso}`);
   else if (FP) { aFijar.push({ pdf, ...FP }); estado[pdf] = `falta fijar el ${FP.falta} antes de localizar`; console.log(`  ${pdf}: FALTA FIJAR EL ${FP.falta.toUpperCase()} antes de localizar (no se paga): ${FP.detalle}`); continue; }
-  // ETAPAS 3-5, ¿EL CACHÉ SIGUE SIRVIENDO? (Versión 445, punto 1.iv del HANDOFF, aprobado por Guido el 2026-10-04): si el .md cambió
+  // ETAPAS 3-5, ¿EL CACHÉ SIGUE SIRVIENDO?: si el .md cambió
   // desde extraer y las filas ya no están en su línea (tools/cache-al-dia.mjs), un año sin cargar se rehace (localizar, validar y extraer;
   // el ensayo dice el costo) y un año cargado solo avisa (no se paga nada). Caso: Juventus 2021-22, 148 de 149 filas corridas.
   const CA = REHACER || reintento ? null : cacheAlDia(e.md);
   const cacheViejo = CA && !CA.alDia && !cargado;
   if (CA && !CA.alDia) console.log(`  ${pdf}: ${CA.detalle}${cargado ? ' (año cargado: solo aviso, no se rehace)' : ': se rehace localizar, validar y extraer'}`);
-  // (Versión 460, punto del reintento, aprobado por Guido el 2026-10-04) EL REINTENTO EN EL MISMO MODO: si la localización vigente es "las notas
+  // EL REINTENTO EN EL MISMO MODO: si la localización vigente es "las notas
   // hacen de estado" (etapa 3, escalón 2), el reintento relocaliza en ese modo (con el índice ampliado y la lista de lo que faltó). Caso:
   // Fortaleza 2017 (solo notas) relocalizó en el modo normal, dio "sin estado" y pisó la localización buena.
   const enModoNotas = !!reintento && !!ubAntes?.estadoDesdeNotas;
@@ -394,7 +394,7 @@ for (const pdf of docs) {
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
   if (L.datos.sin_estado) {
-    // ETAPA 2, ESCALÓN 1 (Versión 343, escalera aprobada por Guido): "no hay estado de resultados" puede ser culpa de la TRANSCRIPCIÓN. Caso
+    // ETAPA 2, ESCALÓN 1: "no hay estado de resultados" puede ser culpa de la TRANSCRIPCIÓN. Caso
     // real, UC 2015: PDF híbrido, las páginas 4-9 (los estados) son imágenes; la transcripción vieja salió del texto propio del PDF y no las
     // tiene. Si la transcripción no la hizo Mistral y el PDF tiene páginas interiores casi sin texto, se marca para re-transcribir con Mistral
     // (que lee las imágenes); con --reintentar se hace y se vuelve a localizar. Si no, queda como fuente (como siempre).
@@ -419,7 +419,7 @@ for (const pdf of docs) {
     }
     if (candidato) aRetranscribir.push({ pdf, paginas: enImagen });
     estado[pdf] = candidato ? `sin estado en la transcripción; ${enImagen.length} páginas en imagen: re-transcribir (--reintentar)` : 'sin estado de resultados (queda como fuente)';
-    // (to-do 323 a, ok de Guido 2026-10-19) el costo que se imprime por documento (Mistral + localizar y extraer) también entra en el total del ensayo: antes el total daba
+    // el costo que se imprime por documento (Mistral + localizar y extraer) también entra en el total del ensayo: antes el total daba
     // "~US$ 0,00" aunque cada línea decía ~0,13 + 0,15 (Fulham 2021-22: 29 páginas en imagen).
     const costoMistral = candidato && REINTENTAR && !EJECUTAR ? 0.004 * Number((spawnSync('pdfinfo', [resolve(ROOT, pdf)], { encoding: 'utf8' }).stdout.match(/Pages:\s+(\d+)/) || [])[1] || 0) : 0;
     if (costoMistral) usd += costoMistral + 0.15;
@@ -428,7 +428,7 @@ for (const pdf of docs) {
   }
   // En el ensayo, validar y extraer TAMBIÉN van en ensayo (hasta la Versión 326 iban con ejecutar: true fijo: con localizar ya hecho, el
   // ensayo llamaba a extraer de verdad y gastaba). validar en un PDF digital es gratis y corre igual; en un escaneo estima.
-  // (to-do 237 ai y ak) Las filas se rehacen si son de otra localización (relocalizar cambió columna, bloques o escala) y la validación si es
+  // Las filas se rehacen si son de otra localización (relocalizar cambió columna, bloques o escala) y la validación si es
   // de otra versión del .md (una cifra corregida a mano). Un año cargado no se toca. Lo mismo deciden cargar.mjs (validación) y extraer (huella).
   const ubVieja = !cargado && !REHACER && !reintento && !cacheViejo && !ubicacionAlDia(e.md);
   const valVieja = !cargado && !REHACER && !reintento && !cacheViejo && !validacionAlDia(e.md);
@@ -436,7 +436,7 @@ for (const pdf of docs) {
   else if (valVieja) console.log(`  ${pdf}: la validación es de otra versión del .md: se rehace validar (no localizar ni extraer)`);
   const rehacerVal = REHACER || !!reintento || cacheViejo || ubVieja || valVieja;
   let V = await validar(pdf, { registro, ejecutar: API, rehacer: rehacerVal });
-  // (to-do 339, frenado de Bath) --sin-api no validaba nunca, ni siquiera un PDF digital (gratis), y el documento frenaba más adelante con «faltan las categorías». Ahora: la validación
+  // --sin-api no validaba nunca, ni siquiera un PDF digital (gratis), y el documento frenaba más adelante con «faltan las categorías». Ahora: la validación
   // gratis corre igual (no usa API) y la que llamaría a Gemini frena AHÍ, diciendo que falta validar-bloques y cuánto cuesta.
   if (SIN_API && EJECUTAR && V.ensayo) {
     if (!V.usd) V = await validar(pdf, { registro, ejecutar: true, rehacer: rehacerVal });
@@ -459,7 +459,7 @@ const imprimirAFijar = () => {
 };
 if (!API) imprimirAFijar();
 avisoCorrecciones();
-// (to-do 298 q, ok de Guido 2026-10-19) LA CATEGORIZACIÓN DEL ENSAYO cuenta solo los documentos que van a llegar a categorizar (quedaron
+// LA CATEGORIZACIÓN DEL ENSAYO cuenta solo los documentos que van a llegar a categorizar (quedaron
 // "extraído" o el ensayo los cotiza para localizar o extraer; no testigos) y cuyo .categorias.json no está al día (huellas, tools/huellas.mjs: categoriasAlDia, la misma compuerta de
 // cargar.mjs). Antes cobraba US$ 0,03 por cada documento de la lista: los ya en el sitio, los sin .md y los que frenan antes de localizar.
 // Caso: lote 91, 26 años en el sitio y el resto ya categorizado, estimaba US$ 1,62.
@@ -574,7 +574,7 @@ if (aDetalle.length) {
   console.log(`  Solo si hace falta el detalle (~US$ 0,50 por documento): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar --detalle`);
 }
 imprimirAFijar();
-// GASTO POR DOCUMENTO (Versión 449, punto 1.vi del HANDOFF, aprobado por Guido el 2026-10-04): lo gastado en esta corrida en cada documento,
+// GASTO POR DOCUMENTO: lo gastado en esta corrida en cada documento,
 // por tarea, y "N.ª vez" si esa tarea ya se había pagado antes para el mismo PDF (tools/gasto-doc.mjs; solo información, no frena).
 const GD = gastoPorDocumento(docs, { desde: INICIO, registro, extra: gastoValidar });
 if (GD.length) { console.log('\nGASTO POR DOCUMENTO (esta corrida; "N.ª vez" = esa tarea ya se había pagado antes para el mismo PDF):'); for (const l of lineasGasto(GD)) console.log(l); }
@@ -611,13 +611,13 @@ for (const pdf of docs.filter((d) => !testigos.has(d))) {
   else if (!c) resultado.sinPropuesta.push({ anio, motivo: estado[pdf] || 'sin propuesta de carga' });
   else if (!(c.frena || []).length) resultado.listo.push({ anio });
   else if ((c.frena || []).some((f) => f.etapa === 'año' && /ya tiene el ejercicio/.test(f.motivo))) resultado.yaCargado.push({ anio });
-  // (to-do 159, ok de Guido) TODOS los motivos, uno por línea (antes solo c.frena[0]: Sampdoria 2021 frenaba por 4 y mostraba solo el
+  // TODOS los motivos, uno por línea (antes solo c.frena[0]: Sampdoria 2021 frenaba por 4 y mostraba solo el
   // primero, y el del período quedaba escondido), y si cargar.mjs cortó el análisis en un freno (`cortadoEn`), el aviso de que después de
   // resolverlo pueden aparecer más (lote 15: las 5 altas escondían 64 preguntas de categoría, socios y gestión que todavía no se calculaban).
   else resultado.frenado.push({ anio, motivos: c.frena.map((f) => `[${f.etapa}] ${String(f.motivo).slice(0, 160)}`), cortadoEn: c.cortadoEn || null, etapaFreno: etapaDeFrenos(c.frena) });
 }
 const anios = (xs) => xs.map((x) => x.anio).sort().join(', ');
-// (pedido de Guido, 2026-10-15) El título dice qué es: la propuesta de carga de la etapa 7, antes de escribir; lo escrito de verdad lo
+// El título dice qué es: la propuesta de carga de la etapa 7, antes de escribir; lo escrito de verdad lo
 // cuenta la etapa 8 y la tabla final "Dónde quedó cada PDF de la lista".
 console.log('\n=== Propuesta de carga (etapa 8): qué se escribiría ===');
 console.log(`Listo para cargar ${resultado.listo.length}${resultado.listo.length ? `   (${anios(resultado.listo)})` : ''}`);
@@ -630,13 +630,13 @@ for (const x of resultado.frenado.sort((a, b) => String(a.anio).localeCompare(St
 if (resultado.yaCargado.length) console.log(`Ya en el sitio ${resultado.yaCargado.length}   (${anios(resultado.yaCargado)})`);
 if (resultado.sinPropuesta.length) { console.log(`Sin propuesta de carga ${resultado.sinPropuesta.length}`); for (const x of resultado.sinPropuesta) console.log(`   ${x.anio}: ${x.motivo}`); }
 
-// ETAPA 8 ESCRITA EN EL SITIO (Versión 642, ok de Guido el 2026-10-09): con --cargar, lo que quedó "listo para cargar" se escribe en el sitio con
+// ETAPA 8 ESCRITA EN EL SITIO: con --cargar, lo que quedó "listo para cargar" se escribe en el sitio con
 // tools/cargar-lote.mjs (alta del club nuevo con su color, cargar.mjs --escribir con su auditoría, un commit por año; sin push). Sin
 // --ejecutar es su ensayo. El candado del lote se suelta antes: cargar.mjs --escribir toma el suyo.
 let escritos = 0;
 if (CARGAR) {
   soltarCandado();
-  // (to-do 298 u, ok de Guido 2026-10-18) antes de cargar, las listas de equipos que faltan para los años de la lista (gratis: Wikipedia),
+  // antes de cargar, las listas de equipos que faltan para los años de la lista (gratis: Wikipedia),
   // para que la carga de un año nuevo encuentre su liga (alta-club.mjs, el club en UNA sola lista) y la compuerta de estadio y sponsor
   // tenga su página. Sin --ejecutar es el ensayo de listas-lote (no guarda nada). Lo que guarda queda en tools/club-league-reference/.
   const rl = spawnSync('node', [resolve(ROOT, 'tools/listas-lote.mjs'), '--lote', LISTA, ...(EJECUTAR ? [] : ['--ensayo'])], { cwd: ROOT, stdio: ['inherit', 'pipe', 'inherit'], encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });

@@ -1,7 +1,7 @@
 // ============================================================================
 // tools/cache-al-dia.mjs — ¿el caché de las etapas 3-5 (localizar, validar, extraer) sigue sirviendo para el .md de HOY?
 //
-// POR QUÉ (Versión 445, punto 1.iv del HANDOFF, aprobado por Guido el 2026-10-04). Hasta acá el caché se reusaba con solo existir el archivo
+// POR QUÉ. Hasta acá el caché se reusaba con solo existir el archivo
 // (`.ubicacion.json`, `.validacion.json`, `.filas.json`). Si el .md cambia después (el resolver de transcripciones o el rearmado con el
 // texto propio del PDF reescriben páginas), las filas citan líneas que ya no son. Medido: Juventus 2021-22, 148 de 149 filas fuera de su
 // línea (corridas -5, -9 y -12; "Ticket sales" 32,293,161 citada en L4855, hoy en L4850).
@@ -50,7 +50,7 @@ export function cacheAlDia(mdRel) {
   return { alDia: false, escalon: null, detalle: `el .md cambió desde extraer: ${fuera.length} de ${filas.length} filas fuera de su línea (ej. "${String(ej.etiqueta).slice(0, 40)}" ${ej.actual}, citada en L${ej.linea})` };
 }
 
-// (to-do 237 ak) ¿La validación (etapa 4) es de esta versión del .md? Por su huella mdSha1 si la tiene; si no, por fecha (generado >= mtime
+// ¿La validación (etapa 4) es de esta versión del .md? Por su huella mdSha1 si la tiene; si no, por fecha (generado >= mtime
 // del .md). Una cifra corregida a mano en el .md que no es de ninguna fila extraída deja cacheAlDia() "al día" (las filas siguen en su
 // línea) pero la validación quedaba vieja y cargar.mjs frenaba ("la etapa 4 es de una versión anterior del .md"; AVS y Casa Pia, lote 81;
 // UC 2009). Lo usan lote.mjs (rehace SOLO validar) y cargar.mjs (la misma compuerta, así un `touch` sin cambios ya no frena).
@@ -62,7 +62,7 @@ export function validacionAlDia(mdRel) {
   return !!V.generado && new Date(V.generado).getTime() >= statSync(resolve(ROOT, mdRel)).mtimeMs;
 }
 
-// (to-do 237 ai) Huella de lo que localizar eligió y de lo que extraer usa: bloques elegidos (con sus líneas), columnas, escala y perímetro.
+// Huella de lo que localizar eligió y de lo que extraer usa: bloques elegidos (con sus líneas), columnas, escala y perímetro.
 export function huellaUbicacion(ub) {
   if (!ub) return null;
   const ids = [...new Set([...(ub.estado || []), ...(ub.notas_ingresos || []), ...(ub.notas_gastos || [])])].sort();

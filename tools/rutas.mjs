@@ -48,7 +48,7 @@ function base(ruta) {
 
 // Ruta del derivado `sufijo` del documento `ruta` (PDF, .md o cualquier derivado del mismo documento).
 // Lo que toca una carga o un alta (cargar.mjs, alta-club.mjs y sus generadores): cargar-lote.mjs lo commitea y `cargar.mjs --escribir`
-// imprime de acá el `git add` de una carga a mano (to-do 232 y). Una sola lista para los dos.
+// imprime de acá el `git add` de una carga a mano. Una sola lista para los dos.
 export const TOCA_UNA_CARGA = {
   SITIO: ['data', 'index.html', 'fuentes', 'club', 'liga', 'og', 'Admin/sourcing', 'fuentes.html', 'sitemap.xml'],
   ADMIN: ['Admin/registros/ajustes-manuales.jsonl', 'Admin/registros/documentos-descartados.txt', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/registros/categorias-aprendidas.jsonl', 'Admin/registros/perfil-clubes.jsonl', 'Admin/registros/cola-revision.jsonl', 'Admin/registros/cargar-ultimo.jsonl', 'Admin/registros/altas-club.jsonl', 'Admin/carga-clubes'],

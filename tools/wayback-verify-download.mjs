@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Descarga + chequeo de integridad para capturas de Wayback Machine — to-do 79 (cerrado: Admin/Archive/CHANGELOG-v010-v299.md, Versión 252).
+// Descarga + chequeo de integridad para capturas de Wayback Machine — to-do 79.
 //
 // El gotcha (encontrado en la sesión del 2026-09-26, ver .claude/skills/club-sourcing/SKILL.md
 // sección 0.1, familia 3): una captura de Wayback puede truncarse a EXACTAMENTE 1.048.576 bytes

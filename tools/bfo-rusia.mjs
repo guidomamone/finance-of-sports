@@ -18,7 +18,7 @@
 //     desglose. Este script lee lo que ese otro deja en Generados/Rusia/<Club>/<nota>.bfo-notas.json (ver `escalon2` más abajo; con
 //     --reemplazar reescribe los años ya cargados). Decisión de Guido: si hay información útil fuera del JSON, se usa.
 //
-//   escalón 3 (Versión 647, ok de Guido el 2026-10-09): el FORMULARIO 6 (Отчет о целевом использовании средств). Los clubes que son ANO
+//   escalón 3: el FORMULARIO 6 (Отчет о целевом использовании средств). Los clubes que son ANO
 //     (sin fines de lucro: Akhmat, Akron) o que reciben aportes del dueño o del gobierno regional (Dynamo Makhachkala, Pari NN, Orenburg) los
 //     reportan ahí y no en el formulario 2: Akron 2024, 337 M de ingresos en el 2110 contra 1.415 M de aportes en el 6200. Se suman: aportes
 //     6210/6215 (cuotas) → member_dues, 6220/6230/6250 → other_income; usos 6310 (programa: el fútbol) → costo del fútbol sin desglosar, 6320

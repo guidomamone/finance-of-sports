@@ -5,7 +5,7 @@
 //
 // POR QUÉ (Versión 642, pedido de Guido el 2026-10-09: "¿por qué cuando dice 'listo para cargar' no se carga solo directamente si es todo
 // muy mecánico ya?"). Hasta acá el lote terminaba en una PROPUESTA y una sesión hacía a mano lo que faltaba: el alta del club nuevo, el color
-// de marca, `cargar.mjs --escribir` y el commit. En el onboarding de Brasil (to-do 165, 37 años) eso se hizo con un script de scratchpad, y
+// de marca, `cargar.mjs --escribir` y el commit. En el onboarding de Brasil eso se hizo con un script de scratchpad, y
 // su paso del color falló una vez y dejó un alta a medias. Nada de eso es una decisión: el alta la propone `alta-club.mjs`, el color ya lo
 // eligió la revisión del alta (Admin/registros/altas-revision.jsonl) y `cargar.mjs --escribir` corre la auditoría y revierte solo si da P0/P1.
 //
@@ -60,7 +60,7 @@ const ultimaLinea = (r) => { const ls = `${r.stdout || ''}\n${r.stderr || ''}`.s
 const { SITIO, ADMIN } = TOCA_UNA_CARGA; // tools/rutas.mjs: la misma lista imprime cargar.mjs --escribir
 
 const descartados = new Set(leerLineas('Admin/registros/documentos-descartados.txt'));
-// PARCIALES (to-do 232 j): un balance de menos de 12 meses no se carga solo (regla de los 12 meses, Admin/CONVENCIONES-DATOS.md). lote.mjs
+// PARCIALES: un balance de menos de 12 meses no se carga solo (regla de los 12 meses, Admin/CONVENCIONES-DATOS.md). lote.mjs
 // ya lo salteaba al empezar, pero acá se leía la lista entera: si el documento tenía un .carga.json de una corrida anterior, se escribía
 // igual. Caso: Kifisia 2022 (9/8/2021-30/6/2022), marcado parcial antes del lote 71 y publicado por la corrida (be8e6849b; se sacó a mano).
 const parciales = new Set(leerLineas('Admin/registros/documentos-parciales.txt'));
@@ -87,7 +87,7 @@ for (const pdf of docs) {
 }
 
 // 2) Por club: si hace falta alta, ¿se puede? (registro de altas listo + color elegido en la revisión).
-// (to-do 237 t) ANTES DE DECIDIR, EL REGISTRO DE ALTAS AL DÍA para los clubes de la lista que necesitan alta: `alta-club.mjs --todos --solo
+// ANTES DE DECIDIR, EL REGISTRO DE ALTAS AL DÍA para los clubes de la lista que necesitan alta: `alta-club.mjs --todos --solo
 // "<país>/<club>"` (gratis, recalcula solo si la huella de la carpeta cambió). Se leía el registro viejo: en el lote 79 el alta frenó por
 // "faltan-datos" dos veces (Sporting; después Porto, Braga y Benfica) aunque ya estaba lista, y correr --todos a mano la destrababa.
 const paraAlta = [...clubes].filter(([, xs]) => xs.some((x) => x.alta)).map(([carpeta]) => carpeta.split('/').slice(1, 3).join('/'));
@@ -134,7 +134,7 @@ function revertirAlta(clubId) {
   git('checkout', '-q', '--', ...SITIO.filter((x) => x !== 'fuentes' && x !== 'Admin/sourcing'), 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html');
   git('checkout', '-q', '--', 'fuentes', 'Admin/sourcing');
   for (const f of [rutaData(clubId), `fuentes/${clubId}.html`, EV.rutaRel(clubId)]) { try { unlinkSync(resolve(ROOT, f)); } catch { /* no estaba */ } }
-  // (to-do 237 d) Y TODO LO NUEVO que dejó el alta en data/ y fuentes/, no solo los tres archivos de arriba: el checkout restaura lo que
+  // Y TODO LO NUEVO que dejó el alta en data/ y fuentes/, no solo los tres archivos de arriba: el checkout restaura lo que
   // existía, pero un archivo NUEVO (el de ligas de un país nuevo, data/club-leagues/pt.js con Alverca) quedaba sin trackear y el alta
   // siguiente de la misma corrida (Rio Ave 2018, lista) frenaba por "cambios sin commitear en el sitio". Seguro: la corrida exige data/ y
   // fuentes/ sin cambios ni archivos nuevos al empezar (git status --porcelain, arriba), así que lo que hay sin trackear lo creó la corrida.
@@ -168,7 +168,7 @@ for (const p of plan) {
 }
 console.log(`\nEscritos en el sitio: ${commits === 1 ? '1 año' : `${commits} años`}${commits ? ` (${escritosTodos.join(', ')})` : ''}${commits ? ', un commit cada uno' : ''}. No se pusheó nada.`);
 if (noEscritos.length) { console.log(`No escritos ${noEscritos.length}:`); for (const x of noEscritos) console.log(`   ${x.pdf.split('/').slice(2).join('/')}: ${x.motivo}`); }
-// (to-do 282 f, ok de Guido 2026-10-19) QUIÉN AUDITA: NO FRENA LA CARGA, PERO AVISA. Los años que se acaban de escribir y todavía no tienen su línea en Admin/registros/auditoria.jsonl
+// QUIÉN AUDITA: NO FRENA LA CARGA, PERO AVISA. Los años que se acaban de escribir y todavía no tienen su línea en Admin/registros/auditoria.jsonl
 // (la escribe un subagente que lee el informe del auditor) quedan listados acá, con sus extractos ya armados en Generados/auditoria/<club>-<año>.txt (gratis).
 if (mdsEscritos.length) {
   const pend = String(node('tools/auditoria.mjs', ['--pendientes']).stdout || '').split('\n').map((l) => l.split('\t')).filter(([k, mds]) => k && mds && mds.split(' | ').some((m) => mdsEscritos.includes(m)));

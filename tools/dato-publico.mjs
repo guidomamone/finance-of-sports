@@ -110,7 +110,7 @@ export async function datoPublico(nombre, { pais, anio, qid } = {}) {
     if (el) {
       const cap = el.capacidades.length ? el.capacidades.reduce((a, b) => (Math.abs((b.en ?? anio) - anio) < Math.abs((a.en ?? anio) - anio) ? b : a)) : null;
       out.delAnio = { anio, estadio: el.nombre, capacidad: cap ? cap.n : null, fuenteEstadio: `https://www.wikidata.org/wiki/${el.qid}` };
-      // la capacidad que dice el artículo del ESTADIO en Wikipedia (ficha, «capacity»): otra edición que la de Wikidata; se compara con la de Wikidata (regla medida del TODO 367)
+      // la capacidad que dice el artículo del ESTADIO en Wikipedia (ficha, «capacity»): otra edición que la de Wikidata; se compara con la de Wikidata
       if (el.enwiki) {
         const j = await get(`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(el.enwiki)}&prop=wikitext&format=json&redirects=1`); await dormir(250);
         const lin = (j?.parse?.wikitext?.['*'] || '').match(/\|\s*capacity\s*=\s*([^\n]*)/i)?.[1];
