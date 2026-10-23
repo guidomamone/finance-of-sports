@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 974 — Comentarios de tools/ sin historia: el aviso llega a 0 [374]
+
+- Limpieza a mano de las referencias históricas de los comentarios de las tools de más de 50 KB (`cargar`, `verificar`, `audit`, `alta-club`, `caja-deuda`, `lote`, `vocabulario`, `fetch-fx-reference` y las demás) y dos pasadas mecánicas más; las 1.629 referencias de la medición quedaron en 0. Cada tanda con el código sin comentarios idéntico a HEAD (`comparar-sin-comentarios.js --tools`) y medida por la vía de solo comentarios.
+- El aviso `comentario-historico-en-tools` cuenta «Versión N», «to-do N» (de 1 a 3 cifras: «todo 2010» no es un punto) y fechas de 2026 que no son parte de un nombre, una ruta o un flag; una fecha de otro año es un dato o un ejemplo. Medido con el lote completo (audit, lote-ensayo, verificar): el aviso se va y aparece `todo-cumplido` del propio 374; veredicto GENERAL.
+- Quedan 77 cabeceras de más de 25 líneas: no entraban en lo que cerraba el punto; la medición las sigue contando (`--medir`).
+
 ## Versión 973 — `fos que-pide`: qué va a pedir el commit, antes de commitear [393]
 
 - `tools/que-pide.mjs`: por archivo cambiado (o los que se le pasen; `--staged` mira el índice), dice si una tool está sin clasificar, si es del pipeline o módulo de una y le falta la medición (con su medidor) o el veredicto, si el cambio es solo de comentarios o una mudanza, o si es una skill (commit aparte) o un dato publicable; ✗ y salida 1 si algo falta. Los rechazos de medición y de veredicto del hook de commit lo nombran, y `fos cerrar` marca ✗ lo que el commit va a pedir. Herramienta de orden (`no_pipeline`): sin medición.

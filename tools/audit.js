@@ -617,7 +617,7 @@ function checkLigasPorEjercicio(api) {
 // escrito para Guido, que este mismo chequeo no veía porque solo miraba `.md`.
 // O sea: "acordate de agregarlo" ya falló tres veces.
 //
-// QUÉ VERIFICA DESDE LA VERSIÓN 196, que cambió la forma de excluir. Ya no hay una
+// QUÉ VERIFICA HOY: cambió la forma de excluir. Ya no hay una
 // lista de nombres sueltos que mantener: los documentos internos viven todos en
 // `Admin/` y sale una sola línea (`rm -rf Admin`). Así que son dos invariantes:
 //   1. `Admin/` TIENE que estar cubierto por un `rm -rf` de netlify.toml. Si no,

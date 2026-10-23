@@ -131,7 +131,7 @@ function detectNumberFormat(text) {
   return { format: labels[winners[0]], evidence: counts };
 }
 
-// Palabras clave de ingresos/gastos/resultados, multi-idioma: DESDE LA VERSIÓN 314 viven en tools/vocabulario.mjs (RELEVANTE_RE = título de
+// Palabras clave de ingresos/gastos/resultados, multi-idioma: viven ahora en tools/vocabulario.mjs (RELEVANTE_RE = título de
 // estado de resultados + ingresos + gastos + palabras de resultado, en 29 idiomas), junto con la ÚNICA normalización del pipeline
 // (normalizar(): minúsculas, sin acentos/diéresis, ß->ss, æ->ae, ø->o, ł->l, ı->i, Hangul recompuesto...). Se usa para MARCAR relevancia, no
 // para descartar filas — con --relevant se filtra, pero por default se conserva todo (una palabra clave que falta para un idioma nuevo no puede

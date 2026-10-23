@@ -214,7 +214,8 @@ function comparar(rel) {
 }
 
 // Lo que un comentario de una tool no debería llevar: historia («Versión N», «to-do N», fechas AAAA-MM-DD). audit.js lo cuenta (`comentario-historico-en-tools`).
-const HISTORIA = /Versi[oó]n \d+|\bto-?do \d+|\bTODO \d+|\b20\d\d-\d\d-\d\d\b/gi;
+// Las fechas son las de 2026 (el año del proyecto: lo anterior es un dato, un ejemplo o el nombre de un documento) y no cuentan dentro de un nombre, una ruta ni un flag.
+const HISTORIA = /Versi[oó]n \d+|\bto-?do \d{1,3}\b|\bTODO \d{1,3}\b|(?<![-\w/@])(?<!--desde )(?<!--hasta )(?<!--fecha )\b2026-\d\d-\d\d\b/gi;
 function herramientas() {
   return fs.readdirSync(path.join(ROOT, 'tools')).filter(f => /\.(mjs|js)$/.test(f)).sort();
 }

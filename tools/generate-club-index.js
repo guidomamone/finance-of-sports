@@ -5,7 +5,7 @@
 // PLACEHOLDER, POR CLUB" — ya no queda ningún ejercicio placeholder cargado,
 // así que esa mitad del título describía algo que ya no existe).
 //
-// DESDE LA VERSIÓN 239 el destino es `Admin/ESTADO-clubes.md`, un archivo propio, y ya
+// HOY el destino es `Admin/ESTADO-clubes.md`, un archivo propio, y ya
 // no `Admin/ESTADO.md`: el bloque pesaba 12,35 KB de los 55,98 KB de ese archivo (161 clubes),
 // cerca del umbral de 60 KB que usa `tools/audit.js` (a ese ritmo, ~218 clubes). Mismo mecanismo
 // que sacó la to-do list de `index.html`: el bloque generado se muda a un
