@@ -7,13 +7,14 @@
 //   2. caja-deuda.mjs --personal --club <id> --partir --escribir   parte o marca los sueldos y recarga el año (verificar, categorizar, cargar)
 // y al final cuenta los avisos que quedan. NO commitea: lo que cambia son datos publicados, así que el commit lleva el trailer `Corrige:`.
 // El enganche es aparte a propósito: cargar.mjs no puede correr esto adentro (una carga abierta dentro de otra, con dos snapshots).
-// USO: node tools/fos.mjs personal [--ejecutar] [--club <id>]     (--ejecutar deja que Jev conteste lo que la estructura no resuelve; cuesta centavos)
+// USO: node tools/fos.mjs personal [--escribir] [--ejecutar] [--club <id>]     (sin --escribir es un ensayo: dice qué completaría y marcaría; --ejecutar deja que Jev conteste lo que la estructura no resuelve; cuesta centavos)
 import { spawnSync } from 'node:child_process';
 import { resolve } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const EJECUTAR = A.includes('--ejecutar');
+const ESCRIBIR = A.includes('--escribir') ? ['--escribir'] : []; // sin --escribir es un ensayo: no escribe datos ni ajustes
 const SOLO = A.includes('--club') ? A[A.indexOf('--club') + 1] : null;
 const node = (args) => spawnSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 });
 const pendientes = () => {
@@ -31,8 +32,8 @@ console.log(`sin-salarios: ${[...antes.values()].flat().length} club-años en ${
 for (const club of clubes) {
   const extra = EJECUTAR ? ['--ejecutar'] : [];
   const anios = ['--anios', antes.get(club).join(',')]; // los años con aviso: solo esos se registran con su causa si siguen sin dato
-  const a = node(['tools/caja-deuda.mjs', '--personal', '--club', club, '--escribir', ...anios, ...extra]);
-  const b = node(['tools/caja-deuda.mjs', '--personal', '--club', club, '--partir', '--escribir', ...anios, ...extra]);
+  const a = node(['tools/caja-deuda.mjs', '--personal', '--club', club, ...ESCRIBIR, ...anios, ...extra]);
+  const b = node(['tools/caja-deuda.mjs', '--personal', '--club', club, '--partir', ...ESCRIBIR, ...anios, ...extra]);
   const resumen = (o) => (o.stdout || '').split('\n').filter((l) => /dato\(s\) para completar|Escrit|NO se escribió|cadena frenó|ya está marcado/.test(l)).map((l) => l.trim().slice(0, 90)).join(' | ');
   console.log(`  ${club} (${antes.get(club).join(', ')}): ${resumen(a)} || ${resumen(b)}`);
 }

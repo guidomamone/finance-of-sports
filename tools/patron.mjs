@@ -98,7 +98,8 @@ export function nombresEn(lineas, ignorar = []) {
     const bajo = l.toLowerCase();
     const club = [...prohibidos].find((p) => !ignorar.includes(p) && new RegExp(`(^|[^a-z0-9-])${p.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^a-z0-9-])`).test(bajo));
     if (club) halladas.push({ linea: l, motivo: `nombra un club («${club}»)` });
-    else if (año.test(l)) halladas.push({ linea: l, motivo: 'año literal' });
+    // un número de cuatro cifras que se multiplica («2000 * (intento + 1)», milisegundos) no es un año
+    else if (año.test(l.replace(/\b\d{4}\s*\*|\*\s*\d{4}\b/g, ''))) halladas.push({ linea: l, motivo: 'año literal' });
     else if (ruta.test(l)) halladas.push({ linea: l, motivo: 'ruta de Clubes/' });
   }
   return halladas;

@@ -15,6 +15,7 @@
 //
 // USO:   node tools/publicar.mjs            (hace los 4 pasos)
 //        node tools/publicar.mjs --ensayo   (dice qué haría: ASSET_V actual contra HEAD y la lista de generadores; no escribe)
+//        node tools/publicar.mjs --correcciones   (regenera antes el registro de correcciones: se corre después de commitear un cambio con trailer Corrige:)
 // ============================================================================
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -38,6 +39,9 @@ if (ENSAYO) {
 
 const snap = snapshot();
 const escritos = [];
+// --correcciones: después de commitear un cambio con trailer `Corrige:`, el registro de correcciones se regenera antes de publicar (si no, audit.js da P1 correcciones-desfasado) y
+// queda un solo comando en vez de generar-correcciones + publicar: commitear el registro con otro trailer `Corrige:`
+if (process.argv.includes('--correcciones')) { const gc = runNode('tools/generar-correcciones.mjs', []); if (gc.code !== 0) { revertir(snap, []); console.error(`generar-correcciones.mjs falló (código ${gc.code}): ${gc.out.slice(-500)}`); process.exit(1); } }
 const gd = runNode('tools/generar-data.mjs', []);
 if (gd.code !== 0) { const rv = revertir(snap, []); console.error(`generar-data.mjs falló (código ${gd.code}): ${gd.out.slice(-500)}\nSe revirtió lo que cambió (${rv.restaurados} restaurados, ${rv.borrados} borrados).`); process.exit(1); }
 let r;

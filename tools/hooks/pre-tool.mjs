@@ -164,14 +164,16 @@ function veredictoAntesDelCommit(cmd, raiz, tocadas, staged) {
   if (exento === 'si') return;
   const registro = process.env.FOS_VEREDICTOS || join(raiz, 'Admin', 'registros', 'auditoria-proceso.jsonl');
   const lineas = existsSync(registro) ? readFileSync(registro, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
+  // una tool que SOLA es solo comentarios o una mudanza (`patron.mjs --exento <tool>`) no necesita su línea aunque otras del mismo commit sí
+  const exentaSola = (n) => { if (process.env.FOS_EXENTO) return false; try { return execFileSync('node', ['tools/patron.mjs', '--exento', n, ...(staged ? ['--indice'] : [])], { cwd: raiz, encoding: 'utf8' }).trim() === 'si'; } catch { return false; } };
   const sinVeredicto = tocadas.filter((n) => {
     const huella = git(staged ? ['rev-parse', `:tools/${n}`] : ['hash-object', `tools/${n}`]).trim();
-    return !lineas.some((l) => /^GENERAL/.test(l.veredicto || '') && l.tools?.[n] === huella);
+    return !lineas.some((l) => /^GENERAL/.test(l.veredicto || '') && l.tools?.[n] === huella) && !exentaSola(n);
   });
   if (!sinVeredicto.length) return;
   decidir('deny', `Commit frenado: el cambio de código a ${sinVeredicto.join(', ')} no tiene la línea de veredicto «general» en Admin/registros/auditoria-proceso.jsonl con su versión actual.\n`
     + 'Todo lo que pide este commit, por archivo: node tools/fos.mjs que-pide\n'
-    + 'Corré: node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" --escribir   (cuenta documentos y clubes, mira que el código no nombre nada y toma la medición). '
+    + 'Corré: node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" --tools <todas las tools del commit, separadas por coma> --escribir   (una línea cubre solo las tools que lista; cuenta documentos y clubes, mira que el código no nombre nada y toma la medición). '
     + 'Si da PARCHE o RECHAZADA, el cambio no va al código: va como ajuste (la tool imprime el comando).\n'
     + 'Si es una mudanza o solo comentarios y la tool no lo vio así, o es un caso de emergencia, con el ok de Guido agregá [sin-veredicto] al mensaje del commit.');
 }

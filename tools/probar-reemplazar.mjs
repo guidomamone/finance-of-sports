@@ -40,6 +40,8 @@ r = correr('--lista', 'cambios.json', '--escribir');
 caso('--lista aplica los cambios exactos y los de regex', r.status === 0 && leer('a.js').includes('const y = 2;') && leer('b.js').includes("'adeu'"), r.out + leer('b.js'));
 r = correr('a.js', '--de', 'const y = 2;', '--a', 'const y = 3;', '--escribir');
 caso('se niega a escribir un archivo con cambios sin commitear', r.status === 1 && /sin commitear/.test(r.out) && leer('a.js').includes('const y = 2;'), r.out);
+r = correr('a.js', '--de', 'const y = 2;', '--a', 'const y = 3;', '--escribir', '--forzar');
+caso('--forzar escribe aunque el archivo tenga cambios sin commitear', r.status === 0 && leer('a.js').includes('const y = 3;'), r.out);
 r = correr('c.txt', '--de', 'nadie', '--a', 'x');
 caso('sin apariciones sale con 1', r.status === 1 && /Nada que reemplazar/.test(r.out), r.out);
 

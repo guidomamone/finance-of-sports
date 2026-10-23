@@ -10,7 +10,7 @@
 //       cambios.json: [{ "file": "tools/x.mjs", "edits": [[linea, "viejo", "nuevo"], [linea, "regex", "nuevo", "re"]] }]: cada "viejo" tiene que estar en esa
 //       línea (una vez, o que el regex coincida); si alguno falla no se escribe ningún archivo.
 // Sin --escribir es un ensayo: dice qué cambiaría (archivo:línea, antes y después). Se niega a escribir con cambios sin commitear en el archivo
-// (se pisaría lo que no está respaldado): commitealo antes. Sale con 1 si no hay nada que reemplazar o algo falla.
+// (se pisaría lo que no está respaldado): commitealo antes, o --forzar si lo sucio es tu propio cambio. Sale con 1 si no hay nada que reemplazar o algo falla.
 // ============================================================================
 import { readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
@@ -97,7 +97,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   for (const t of trabajos) { console.log(`${t.rel}: ${t.n} reemplazo(s)`); mostrar(t.rel, t.antes, t.despues); }
   const total = trabajos.reduce((s, t) => s + t.n, 0);
   if (!escribir) { console.log(`\nEnsayo: ${total} reemplazo(s) en ${trabajos.length} archivo(s). --escribir los aplica.`); process.exit(0); }
-  const sucios = trabajos.filter((t) => sucio(t.rel));
+  const sucios = A.includes('--forzar') ? [] : trabajos.filter((t) => sucio(t.rel)); // --forzar: el cambio sin commitear es tuyo (un error recién hecho que se corrige)
   if (sucios.length) { console.error(`\nNo se escribe: ${sucios.map((t) => t.rel).join(', ')} tiene cambios sin commitear que se pisarían. Commitealos primero.`); process.exit(1); }
   for (const t of trabajos) writeFileSync(resolve(ROOT, t.rel), t.despues);
   console.log(`\nEscritos ${total} reemplazo(s) en ${trabajos.length} archivo(s).`);

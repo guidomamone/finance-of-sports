@@ -66,7 +66,7 @@
   "donde": "skill start-session-finance-of-sports-project, sección 5"
  },
  "correcciones-desfasado": {
-  "hacer": "node tools/generar-correcciones.mjs; si cambió data/, después node tools/publicar.mjs; commitear el registro",
+  "hacer": "node tools/publicar.mjs --correcciones (regenera el registro, y si cambió data/ publica); commitear el registro",
   "quien": "script",
   "donde": "Admin/CONVENCIONES.md, trailer Corrige:"
  },
@@ -101,7 +101,7 @@
   "donde": "Admin/PANTALLA.md, Formato simplificado"
  },
  "sin-salarios": {
-  "hacer": "node tools/fos.mjs personal (completa staffCost por la estructura de la nota y parte o marca los sueldos); lo que no resuelve es un caso de a uno: ajuste a mano con motivo y cita. Corrige datos publicados (trailer Corrige:).",
+  "hacer": "node tools/fos.mjs personal --escribir (completa staffCost por la estructura de la nota y parte o marca los sueldos); lo que no resuelve es un caso de a uno: ajuste a mano con motivo y cita. Corrige datos publicados (trailer Corrige:).",
   "quien": "script",
   "donde": "Admin/PIPELINE.md, «Caja y deuda»"
  },

@@ -72,7 +72,7 @@ if (existsSync(RESPALDO) && readdirSync(RESPALDO).length) {
 const base = flag('--base') || 'HEAD';
 const baseRev = git('rev-parse', base).trim();
 const cambiadas = flag('--tools') ? flag('--tools').split(',').map((s) => s.trim()) : [...new Set([
-  ...git('diff', '--name-only', base, '--', 'tools').split('\n'),
+  ...git('diff', '--name-only', '--diff-filter=d', base, '--', 'tools').split('\n'), // sin las tools borradas: ya no existen, no hay qué medir ni clasificar
   ...git('ls-files', '--others', '--exclude-standard', '--', 'tools').split('\n'),
 ].filter((f) => /^tools\/[^/]+$/.test(f)).map((f) => f.slice(6)))];
 // una tool de la tabla, o un módulo que una de la tabla usa (sus medidores son los de quienes lo usan): tools/clasificar-tools.mjs
