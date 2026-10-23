@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "union-ar",
@@ -18,14 +18,16 @@
       "club_id": "union-ar",
       "title": "Memoria y Balance (Rectificativo), Ejercicio N°116 (1°/7/2021 al 30/6/2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Union/memoria-y-balance-116.pdf"
     },
     {
       "id": "union-ar-memoria-y-balance-117",
       "club_id": "union-ar",
       "title": "Memoria y Balance (Rectificativo), Ejercicio N°117 (1°/7/2022 al 30/6/2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Union/memoria-y-balance-117.pdf"
     },
     {
       "id": "union-ar-estados-contables-118-2023-24",
@@ -39,7 +41,8 @@
       "club_id": "union-ar",
       "title": "Memoria y Balance (estados contables auditados), Ejercicio N°119, 1°/7/2024 al 30/6/2025",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Union/memoria-y-balance-119.pdf"
     }
   ],
   "management": [{"id":"spahn","name":"Spahn (2009-actual)","first_year":2025,"last_year":2025}],

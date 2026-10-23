@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "argentinosjuniors-ar",
@@ -26,21 +26,24 @@
       "club_id": "argentinosjuniors-ar",
       "title": "Estados Contables auditados, Ejercicio N°112 (1°/7/2015 al 30/6/2016)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Argentinos Juniors/balance-2015-2016.pdf"
     },
     {
       "id": "argentinosjuniors-ar-balance-2016-2017",
       "club_id": "argentinosjuniors-ar",
       "title": "Estados Contables auditados, Ejercicio N°113 (1°/7/2016 al 30/6/2017)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Argentinos Juniors/balance-2016-2017.pdf"
     },
     {
       "id": "argentinosjuniors-ar-balance-2017-2018",
       "club_id": "argentinosjuniors-ar",
       "title": "Estados Contables auditados, Ejercicio N°114 (1°/7/2017 al 30/6/2018)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Argentinos Juniors/balance-2017-2018.pdf"
     }
   ],
   "management": [{"id":"malaspina","name":"Malaspina (2015-actual)","first_year":2016,"last_year":2019}],

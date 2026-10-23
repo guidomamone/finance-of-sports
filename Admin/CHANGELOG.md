@@ -20,12 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 997 — CHANGELOG por tool (408), lectura por rol (410) y fricciones de sesión (411) [408 · 410 · 411 · audit.js, cerrar.mjs, changelog.mjs, arranque.mjs, existe.mjs, cola-historial.mjs]
+## Versión 997 — CHANGELOG por tool (408), lectura por rol (410) y fricciones de sesión (411) [408 · 410 · 411 · 412 · audit.js, cerrar.mjs, changelog.mjs, arranque.mjs, existe.mjs, cola-historial.mjs, fuente-documento.mjs]
 
 - 408: `fos changelog` (`historial <tool>`, `archivar`, `migrar`, `check`); el CHANGELOG pasó de 242 KB a 48 KB (284 entradas a `Archive/CHANGELOG-v673-v956.md`), 607 títulos con `~tool`; `fos cerrar` exige que el título nombre las tools tocadas; `audit.js`: `changelog-entrada-larga` y `changelog-grande`.
 - 410: `fos arranque <rol>` imprime de ESTADO.md solo las secciones del rol (pipeline: 4,3 de 17,1 KB; marcas `<!-- roles: … -->` en el documento).
 - 411: `fos cerrar <id>` solo revisa (`--cerrar` cierra); el hook rechaza `Write`/`Edit` a /tmp fuera del scratchpad (64 casos de prueba ok); `fos existe <palabras>`; `fos cola-historial tipos|categoria|materialidad|reaparece`.
-- Medición: `audit.js` por `fos medir pipeline`; el resto no toca el pipeline de carga (probado a mano y con `probar-pre-tool`).
+- `fuente-documento.mjs` completó 35 `document` más por el id (1.104 de 1.344; el resto no tiene PDF en el repo: cargas manuales viejas o Rusia sin PDF). Abre el 412 (hallazgos consultables, propuesta).
+- Medición: `audit.js` por `fos medir pipeline`, idéntico; el resto no toca el pipeline de carga (probado a mano y con `probar-pre-tool`).
 
 ## Versión 996 — La cola cierra el 407: gestión por club, historial de casos parecidos, aclaración de signo [407 · cola.mjs]
 

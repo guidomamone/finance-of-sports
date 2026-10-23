@@ -53,6 +53,15 @@ for (const id of clubes) {
       const rutas = enCarpeta.flatMap(([, v]) => [...v].filter((r) => r.startsWith(dentro + '/')));
       if (rutas.length === 1) hallado = rutas[0];
     }
+    // sin carpeta conocida (o sin hallazgo en ella): el nombre sale del título o del id de la fuente, y el archivo es el ÚNICO de ese nombre cuya carpeta se parece al club
+    if (!hallado) {
+      const nombre = m ? m[1] : s.id.startsWith(id + '-') ? s.id.slice(id.length + 1) : null;
+      if (nombre) {
+        const rutas = [...porNombre.entries()].filter(([k]) => k === nombre || plano(k) === plano(nombre)).flatMap(([, v]) => [...v])
+          .filter((r) => { const p = plano(r.split('/')[2].replace(/\s*\(.*$/, '')); return p.length >= 4 && (p.includes(slugClub.slice(0, 5)) || slugClub.includes(p.slice(0, 5))); });
+        if (new Set(rutas).size === 1) hallado = rutas[0];
+      }
+    }
     if (hallado) cambios.push([s.id, hallado]);
     else if (cand.length) ambiguas.push(`${id} ${s.id}: ${cand.length} archivos`);
     else if (m) sinCandidato.push(`${id} ${s.id} («${m[1]}»)`);

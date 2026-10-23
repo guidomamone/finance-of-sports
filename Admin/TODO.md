@@ -23,21 +23,14 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 
 ## A. En marcha
 
-### 1. 408 · (Orden, con Pipeline): el CHANGELOG por tool: grepear qué tool tuvo un problema y saber qué leer sin gastar tokens (propuesta en Admin/propuestas/408-changelog-por-tool.md)
-
-Hoy el CHANGELOG (242 KB, 321 entradas; dice «la última semana» y nada lo archiva) no permite preguntar «¿qué tool tuvo problemas y qué leo?» sin leerlo. La propuesta (pros y contras, formato, tool de historial, archivado y migración) está en `Admin/propuestas/408-changelog-por-tool.md`; espera el ok de Guido para implementarla.
-Terminado cuando: cada entrada nueva nombra las tools que tocó en el título (derivado de git por `fos cerrar`, no de memoria), `node tools/fos.mjs historial <tool>` imprime sus entradas con commit y enlaces a qué leer, el archivado lo hace una tool y `audit.js` avisa de una entrada larga o sin tool.
-
-Verificar: manual
-
-### 2. 399 · (Pipeline): partir las funciones enormes de tools/ (verificar 1.600 líneas, proponer 892, analizar 365) y audit.js sin tocar el comportamiento
+### 1. 399 · (Pipeline): partir las funciones enormes de tools/ (verificar 1.600 líneas, proponer 892, analizar 365) y audit.js sin tocar el comportamiento
 
 Lo que el 375 dejó con motivo escrito (`tools/tamanos-aceptados.json`, aviso `tool-grande`): `verificar.mjs` 217 KB (UNA función `verificar()` de ~1.600 líneas con ~30 tramos de escalones), `cargar.mjs` 129 KB (`proponer()`, 892 líneas), `alta-club.mjs` 51 KB (`analizar()`, 365 líneas), `audit.js` 161 KB (CommonJS con un contexto compartido), `lote.mjs` 70 KB (un solo flujo a nivel de módulo), `perimetro-senales.mjs` 62 KB (`cacheA2` lo reasigna `main`) y `vocabulario-datos.mjs` 48 KB (una tabla). Partirlas ya no es un movimiento sino un refactor: cada función enorme se corta en funciones que reciben un contexto, o el estado compartido pasa a un objeto. Una función por vez, de menor a mayor riesgo (`analizar`, `proponer`, `verificar`), cada una con su medición completa y un commit; `audit.js` primero necesita que `fos mover` entienda CommonJS (`require`/`module.exports`).
 Terminado cuando: cada tool de la lista pasa a tener menos de 40 KB o su motivo sigue escrito; cada corte tiene su línea de medición idéntica en el registro.
 
 Verificar: manual
 
-### 3. 370 · (Auditora, prioridad 3): llevar los P2 y los P3 de la auditoría a 0, o decir por qué un aviso no puede llegar
+### 2. 370 · (Auditora, prioridad 3): llevar los P2 y los P3 de la auditoría a 0, o decir por qué un aviso no puede llegar
 
 HECHO (2026-10-23): P2 en 0; nivel P4 «informativo» (los códigos con `quien: nada` de `audit-acciones.json`); `catchall-dominante` se parte en `catchall-limite-fuente` (P4: la línea mayor es un «otros» del documento) y el que queda muestra la etiqueta; TRY en `CURRENCY_META`; `outlier-liga` a 100×; `correcciones.html` declarada pública. Hoy `node tools/audit.js`: P0 0, P1 0, P2 0, P3 57, P4 56.
 QUEDA en P3 (lo que pide trabajo, `node tools/audit.js --acciones`): unos 35 `catchall-dominante` con nombre propio (cada uno es un ejercicio a leer: subsidios que esperan la lista de Guido del 372, «Ganhos em…», «Net operating expenses»; lo cargado no se recategoriza en masa), 9 `ejercicio-sin-rastro` (cargar, anotar en `data/faltantes` o silenciar con motivo), 3 `historia-en-doc-de-criterio` (23 «Versión N» en PANTALLA.md y PIPELINE.md, 53 fechas en 36 documentos, 13 «to-do N»: reescribir cada frase sin la historia, a mano), 2 `liga-una-fuente`, y de a uno: `club-sin-color-ni-null` (Bath Rugby: la identidad por la camiseta, no se completa a ojo), `liga-sin-verificar`, `sponsor-sin-registro` (26 años de antes: al tocar el club), `duda-resuelta-en-dudas`, `medicion-sin-destino` (19 archivos de Admin/mediciones), `parrafo-repetido`, `etiqueta-sin-revisar` (la lista del 372).
@@ -46,7 +39,7 @@ Terminado cuando: `node tools/audit.js` da P2 0 y P3 solo con lo que pide trabaj
 Verificar: audit moneda-sin-meta = 0
 Verificar: manual
 
-### 4. 401 · (Pipeline): una prueba que escribe de verdad en cada tool que escribe, porque un ensayo no pasa por los imports que se rompen
+### 3. 401 · (Pipeline): una prueba que escribe de verdad en cada tool que escribe, porque un ensayo no pasa por los imports que se rompen
 
 La partición de `cargar.mjs` (375) dejó sin re-exportar `snapshot`, `revertir` y `runNode`: `publicar`, `caja-deuda --escribir`, `costo-personal`, `dentro-de-otro`, `worktree` y `gestiones-tanda` fallaron un día entero sin que `medir pipeline` lo viera, porque sus medidores corren en ensayo y el import dinámico solo se evalúa al escribir. Hoy hay un chequeo estático (`fos imports`, P1 `import-sin-export`) que atrapa ESA clase, pero no otras (una ruta rota, un argumento que cambió, un archivo que la tool partida ya no escribe). `node tools/prueba-escribir.mjs` ya escribe de verdad un año con fuente nueva en un worktree descartable (solo `cargar.mjs`).
 Propuesta: extenderla a cada tool que escribe datos o registros (`caja-deuda --escribir`, `costo-personal`/`fos personal --escribir`, `recategorizar-etiquetas --escribir`, `ajustes --agregar`, `publicar`, `generar-correcciones`, `alta-club --escribir`, `fetch-fx-reference` sobre una copia): una lista en `tools/pipeline-tools.json` de qué tools escriben y con qué comando se prueban, cada una sobre una copia del repo en un worktree, comparando archivo por archivo con lo esperado. Que el medidor las corra cuando cambia una de ellas (o un módulo que importa) y que `medir pipeline` se niegue a dar «idéntico» si una tool que escribe no tiene su prueba.
@@ -55,7 +48,7 @@ Terminado cuando: cada tool que escribe tiene su prueba de escritura en un workt
 
 Verificar: manual
 
-### 5. 402 · (Auditora, con Orden): el eje tokens: medir lo que se lee en cada arranque y en cada tarea, y recortar lo que se lee en vano
+### 4. 402 · (Auditora, con Orden): el eje tokens: medir lo que se lee en cada arranque y en cada tarea, y recortar lo que se lee en vano
 
 El costo más repetido del proyecto es el arranque en frío (`CLAUDE.md`, la skill de arranque, `ESTADO.md`, la skill del rol, el cuerpo de un punto del TODO) y lo que una sesión lee «por si acaso». Guido pidió (2026-10-23) que al cerrar cada tarea la sesión diga qué .md o skill leyó en vano, qué .md modificó y qué cosa clara se pudo hacer más clara; esas notas hay que juntarlas en un lugar para que alimenten este punto.
 Propuesta: (1) una tool `fos lecturas` que lea el transcript de la sesión (`~/.claude/projects/<proyecto>/*.jsonl`) y cuente por archivo los tokens aproximados de cada Read, y cuántas veces se leyó el mismo; (2) con 5 a 10 sesiones, el ranking de documentos por tokens leídos y por «leído y no usado» (ningún Edit, ningún comando ni cita después); (3) por cada uno del tope: o se acorta (lo que es historia o contador se va al CHANGELOG, `Admin/CONVENCIONES*.md` y las skills dicen solo la regla), o se parte en lo que se lee siempre y lo que se lee por grep, o se convierte en un comando que da la respuesta; (4) un registro `Admin/registros/lecturas.jsonl` con la medición de antes y de después, para no recortar a ciegas. No se recorta lo que la skill de auditoría prohíbe recortar (§4: verificación fila por fila, tie-outs, transcripciones fieles).
@@ -64,7 +57,7 @@ Terminado cuando: hay un ranking medido de lo que se lee, los cinco documentos d
 
 Verificar: manual
 
-### 6. 404 · (Pipeline): las mediciones de personal y de deuda con Jev no se invalidan cuando cambia la lista de candidatos (hoy muestran pérdidas falsas)
+### 5. 404 · (Pipeline): las mediciones de personal y de deuda con Jev no se invalidan cuando cambia la lista de candidatos (hoy muestran pérdidas falsas)
 
 La caché de Jev (`Generados/_cache/jev-personal.jsonl`, y la de deuda y caja) se indexa por el texto de la pregunta, que lleva la lista de filas candidatas. Si un cambio al código agrega o quita candidatos (el 351 sumó filas «Staff costs» y totales por segmento), toda pregunta cambia de clave, el ensayo de `medir pipeline` no puede preguntarle a Jev y muestra como «PIERDE» 14 valores que con Jev real (`--ejecutar`) vuelven idénticos (Leeds, Liverpool, Forest, Chelsea, Volos, Panetolikos). El medidor pide una «razón escrita» por algo que no es una pérdida real, y quien lo mide puede perder tiempo, o peor, aceptarlo sin mirar.
 Propuesta: (1) que el medidor, cuando la caché no tiene la pregunta, la pida con `--ejecutar` en la medición y la deje caliente (costo: centavos, medido por la propia caché), y marque en el informe «preguntado a Jev: N»; (2) o que la clave de la caché sea la fila elegida y no la lista, con una verificación de que la fila elegida sigue entre los candidatos; (3) que el informe distinga «pierde por caché» de «pierde por la lógica» (si con Jev real vuelve igual, no pide razón). Elegir una con una medición de cuántas preguntas cambian de clave por un cambio típico.
@@ -73,7 +66,7 @@ Terminado cuando: un cambio a `costo-personal.mjs` o `caja-deuda.mjs` que cambie
 
 Verificar: manual
 
-### 7. 409 · (Pipeline, prioridad media): los lotes de prueba incorporan todo caso raro (carga manual, ajuste, freno, respuesta de la cola) y la chica no crece sin tope
+### 6. 409 · (Pipeline, prioridad media): los lotes de prueba incorporan todo caso raro (carga manual, ajuste, freno, respuesta de la cola) y la chica no crece sin tope
 
 Pedido de Guido (2026-10-23): (1) la chica incorpora sola los casos raros nuevos; (2) toda carga, manual o no, entra a los lotes, y las manuales con más razón (tuvieron problemas); (3) «el más nuevo» no alcanza como criterio (lo viejo también se mantiene) y la chica no puede volverse enorme; (4) usar lo que ya se recomienda para proyectos parecidos, no inventar.
 Hoy (`tools/lotes-prueba.mjs`): la parte a mano de la chica no se actualiza sola, su bloque automático guarda para siempre el mismo documento por familia, y las listas se regeneran solo si la carga pasa por los generadores.
@@ -82,21 +75,14 @@ Terminado cuando: una carga o un ajuste manual de prueba aparece en la chica en 
 
 Verificar: manual
 
-### 8. 410 · (Orden, con Auditora (eje tokens), prioridad media): leer menos en vano al arrancar: fos estado <rol>, saltar la skill de arranque en Pipeline (propuesta en Admin/propuestas/410-lectura-en-vano.md)
+### 7. 412 · (Orden, con Pipeline, prioridad media): hallazgos que se consultan sin depender de la memoria: viñeta con tema y tools, fos hallazgo, aviso al editar una tool (propuesta en Admin/propuestas/412-hallazgos-que-se-consultan.md)
 
-Una tarea de Pipeline leyó ≈25 KB antes de empezar y ≈20 KB no cambiaron ninguna decisión (ESTADO.md entero, 17 KB, de los que se usan 2 de 11 secciones; la skill de arranque, que manda a otra). La propuesta (pros y contras) marca las secciones de ESTADO por rol, agrega `fos estado <rol>` y saltea la skill de arranque en Pipeline y Onboarding. Es un caso del eje tokens del 402. Espera el ok de Guido; el cambio de skill va en commit aparte.
-Terminado cuando: `node tools/fos.mjs estado pipeline` imprime solo sus secciones, `CLAUDE.md` lo usa en «Al empezar» y se midió el arranque antes y después (KB leídos).
-
-Verificar: manual
-
-### 9. 411 · (Orden, con Pipeline, prioridad media): las fricciones de sesión: fos cerrar seguro por defecto, Write fuera del scratchpad, fos existe, fos cola-historial (propuesta en Admin/propuestas/411-fricciones-de-sesion.md)
-
-Cinco fricciones de la sesión del 2026-10-23, cada una con su arreglo y su pro y contra en la propuesta: (1) `fos cerrar` cierra de verdad sin `--ensayo` (borró el 407 con trabajo pendiente); (2) el hook no mira `Write` fuera del scratchpad; (3) rechazos del hook por hábito; (4) casi se duplica una regla de Guido ya hecha (`fos existe`); (5) las cifras de una medición no se podían repetir (`fos cola-historial`).
-Terminado cuando: `fos cerrar <id>` sin banderas no toca el TODO, `Write` a `/tmp` fuera del scratchpad se rechaza, `fos existe materialidad` encuentra el escalón de `cargar.mjs`, y `fos cola-historial` reproduce las cifras de la propuesta 407.
+Guido preguntó (2026-10-23) si `HALLAZGOS-pipeline.md` (53 KB, 5 secciones de prosa) puede depender de que la sesión se acuerde de buscar y si hace falta un orden o un hook. La propuesta recomienda: viñeta con tema y tools, `fos hallazgo` para escribirla, un aviso suave (PostToolUse) la primera vez que se edita una tool con historial, y NO una compuerta dura (se cumple sin consultar de verdad). Espera el ok de Guido.
+Terminado cuando: `fos hallazgo` escribe una viñeta en el formato canónico, `fos existe` la encuentra por tema o por tool, el aviso al editar una tool aparece solo si hay historial, y `audit.js` avisa de una viñeta sin etiquetas.
 
 Verificar: manual
 
-### 10. 257 · (Orden 1): Deportes Tolima, sin cargar por una duda sobre el resultado de 2025
+### 8. 257 · (Orden 1): Deportes Tolima, sin cargar por una duda sobre el resultado de 2025
 
 Lo que quedaba de esta línea (la skill `perfil-en-cola` que frenaba la carga) ya está: `cargar.mjs` nunca frena por eso (se avisa y la pregunta queda en la cola). Queda un solo caso: **Deportes Tolima no está en el sitio**
 (no hay JSON de Tolima en la carpeta de Colombia de data) aunque `Clubes/Colombia/Deportes Tolima/` tiene los estados financieros de 2016 a 2025. La duda (`Admin/dudas-por-club.md`, sección Deportes Tolima): el documento de 2025 trae solo las
@@ -108,7 +94,7 @@ Terminado cuando: Tolima está cargado (los años que el documento permite) y la
 
 Verificar: existe data/co/deportestolima-co.json
 
-### 11. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
+### 9. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
 
 CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing buscó en Companies House los clubes que no tenemos y
 presentan en iXBRL y bajó los 198 `.xhtml` (84 MB, los 68 con PDF oficial al lado renombrados a `-ixbrl`); Onboarding los carga con
@@ -145,7 +131,7 @@ Verificar: contiene data/leagues.js | Scottish Championship
 Verificar: contiene Admin/CONVENCIONES-DATOS.md | Trust
 Verificar: manual
 
-### 12. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
+### 10. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
 
 FRENO DE DOCUMENTOS DE GRUPO (sale del 356, Fleetwood/Jaymel; regla votada 3 a 0 en CONVENCIONES-DATOS, «Un consolidado de grupo con
 negocios ajenos al club», umbral del 10 % sobre lo impreso). Terminado cuando: `perimetro-senales.mjs` o `cargar.mjs` frenan un documento de
@@ -155,7 +141,7 @@ skill de auditoría (la Auditora). Lo hace Pipeline.
 
 Verificar: manual
 
-### 13. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+### 11. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 LO APROBADO DE PIPELINE 15 QUE NO SE APLICÓ (Auditora 5 y 6, `Admin/registros/auditoria-proceso.jsonl`; el detalle
 en `Admin/Archive/sesion-pipeline-2026-10-21.md`, «Pipeline 15»). Terminado cuando: (a) barrido de lecturas recortadas: `jevDe` de
@@ -176,7 +162,7 @@ Verificar: manual
 
 ## D. Orden de la casa
 
-### 14. 338 · correr todas las auditorías del proyecto (al final de A)
+### 12. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
@@ -185,7 +171,7 @@ CORRIDO a medias (2026-10-23, sesión sola): `audit.js` P0 0 · P1 0 · P2 16 ·
 
 Verificar: manual
 
-### 15. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 13. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
@@ -194,7 +180,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 16. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 14. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -211,7 +197,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 17. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 15. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -247,7 +233,7 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 
 Verificar: manual
 
-### 18. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+### 16. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
@@ -256,14 +242,14 @@ Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la
 
 Verificar: audit ejercicio-sin-rastro "liersekempenzonen-be" = 0
 
-### 19. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
+### 17. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
 
 Las 67 etiquetas excluidas en `tools/subsidios-etiquetas.json` las dejaron afuera reglas objetivas (no una confianza baja de Jev): mezcladas con otro concepto, lo que reparte la federación o la liga (solidaridad: `competition_bonus`), subvención de capital imputada, impuestos y deducciones. Guido no las va a revisar una por una (2026-10-22): el proceso es `node tools/fos.mjs etiquetas` (369, hecho). Este punto es lo que queda después de que corrió. La lista corta de 24 etiquetas ya está decidida por Guido (2026-10-23). Falta la decisión de criterio sobre lo que reparte la federación o la liga cuando el documento lo llama «subsidio» o «toetus» (EJL, Contributi Federali, FPF/LPF; hoy excluidas por la REGLA de solidaridad de `Admin/CONVENCIONES-DATOS.md`); se vota con `votacion-de-criterios` con la tabla de `node tools/fos.mjs filas` como evidencia. `node tools/fos.mjs etiquetas --categoria grants_donations --listar --todas` las muestra con su motivo.
 Terminado cuando: las etiquetas excluidas por la regla de la federación o la liga tienen una decisión escrita (entran o quedan afuera, con el caso) y el JSON de decisiones no tiene ninguna «SIN REVISAR».
 
 Verificar: manual
 
-### 20. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
+### 18. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
 
 Tienen `.categorias.json` (Alemania 7, Rusia 2, Ucrania 2, República Checa 1) pero ningún `.verificacion.json`: las listas de prueba que arma `tools/lotes-prueba.mjs` salen de lo verificado y por eso no los incluyen, y `medir-pipeline` frena una tool dirigida a ellos (por ejemplo `bfo-rusia.mjs`, el camino del fisco ruso) porque no hay documentos que medir. Primero averiguar POR QUÉ no tienen verificación, sin asumir (¿su camino de entrada no pasa por la etapa 6, como el de Rusia, que sale del fisco y no del PDF? ¿se cargaron antes de que la etapa existiera? ¿quedaron frenados?). Según la causa: correr verificar donde corresponde, o declarar que su camino no pasa por verificación y darle un medidor propio en `tools/pipeline-tools.json` (y una familia propia en las listas) para que un cambio a su tool se pueda medir.
 DEPENDE DE: el 371 (cerrado).
@@ -274,7 +260,7 @@ Verificar: contiene Admin/lotes/prueba-completa.txt | Clubes/Rusia/
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 21. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 19. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo
@@ -284,7 +270,7 @@ JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios 
 
 Verificar: manual
 
-### 22. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 20. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -297,7 +283,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 23. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 21. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -313,7 +299,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 24. 335 · mails a clubes
+### 22. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -328,7 +314,7 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 25. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 23. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,

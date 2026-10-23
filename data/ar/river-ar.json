@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "river-ar",
@@ -18,7 +18,8 @@
       "club_id": "river-ar",
       "title": "Estados Contables (balance auditado, individual), Ejercicio N°120, 1°/9/2020 al 31/8/2021",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/River/estados-contables-2020-2021.pdf"
     },
     {
       "id": "river-ar-estados-contables-2023-24",

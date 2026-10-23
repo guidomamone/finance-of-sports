@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "gimnasiaesgrima-ar",
@@ -26,7 +26,8 @@
       "title": "Balance General, 137° Ejercicio Económico (1°/7/2023 al 30/6/2024)",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "public_note": "El documento no explica la fila \"Incremento Valor Jugadores FP\"; se muestra tal como figura, en otros ingresos."
+      "public_note": "El documento no explica la fila \"Incremento Valor Jugadores FP\"; se muestra tal como figura, en otros ingresos.",
+      "document": "Clubes/Argentina/Gimnasia y Esgrima LP/balance-2023-2024.pdf"
     },
     {
       "id": "gimnasiaesgrima-ar-balance-2024-2025",
@@ -34,28 +35,32 @@
       "title": "Balance General, 138° Ejercicio Económico (1°/7/2024 al 30/6/2025)",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "public_note": "El documento no explica la fila \"Incremento Valor Jugadores FP\"; se muestra tal como figura, en otros ingresos."
+      "public_note": "El documento no explica la fila \"Incremento Valor Jugadores FP\"; se muestra tal como figura, en otros ingresos.",
+      "document": "Clubes/Argentina/Gimnasia y Esgrima LP/balance-2024-2025.pdf"
     },
     {
       "id": "gimnasiaesgrima-ar-presupuesto-2023-2024",
       "club_id": "gimnasiaesgrima-ar",
       "title": "Presupuesto Económico de Recursos y Gastos, Ejercicio 2023-2024",
       "type": "official_budget",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Gimnasia y Esgrima LP/presupuesto-2023-2024.pdf"
     },
     {
       "id": "gimnasiaesgrima-ar-presupuesto-2024-2025",
       "club_id": "gimnasiaesgrima-ar",
       "title": "Presupuesto Económico de Recursos y Gastos, Ejercicio 2024-2025",
       "type": "official_budget",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Gimnasia y Esgrima LP/presupuesto-2024-2025.pdf"
     },
     {
       "id": "gimnasiaesgrima-ar-presupuesto-2025-2026",
       "club_id": "gimnasiaesgrima-ar",
       "title": "Presupuesto Económico de Recursos y Gastos, Ejercicio 2025-2026",
       "type": "official_budget",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Gimnasia y Esgrima LP/presupuesto-2025-2026.pdf"
     }
   ],
   "management": [{"id":"cowen","name":"Cowen (2022-presente)","first_year":2024,"last_year":2026}],
