@@ -362,7 +362,8 @@
           {"label":"Interest receivable and similar income","amount":2.127},
           {"label":"Interest payable and similar expenses","amount":-14.419},
           {"label":"Taxation","amount":-0.018}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {

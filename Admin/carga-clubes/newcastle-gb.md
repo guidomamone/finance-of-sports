@@ -114,7 +114,7 @@ Duda: Discrepancia de fecha entre PIF (7/10/2021) y Wikipedia (19/11/2021).
 ### Ingresos
 
 ```text
-2024: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2024: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -139,17 +139,13 @@ Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.categoria
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-```text
 tools/caja-deuda.mjs --personal (2026-10-23): staffCost 218.738 (compuerta: estructura de la nota): estructura de la nota (la suma cierra): newcastle-group-accounts-2023-24.md L1466 "(total sin rótulo: suma las filas de arriba)"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2023–24 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Newcastle United".
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (218.738, newcastle-group-accounts-2023-24.md L1466) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2023
