@@ -749,7 +749,7 @@ Texto movido sin cambios.
   no solo Guido: publicar la pantalla de consentimiento OAuth de Google, que arranca en
   modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase.
   Desde el 2026-10-30, una tabla NUEVA en el esquema `public` de Supabase necesita su `grant` explícito en la misma
-  migración (aviso de Supabase del 2026-10-20); `saved_searches` ya existe y ya tiene el suyo (`tools/supabase/schema.sql`), así que no cambia nada.
+  migración (aviso de Supabase); `saved_searches` ya existe y ya tiene el suyo (`tools/supabase/schema.sql`), así que no cambia nada.
 - TARJETA "LAS CUENTAS DE LA LIGA" (Ligas; `cardLiga` en `js/auditoria.js`, datos en `data/auditoria/_ligas.js`, que genera
   `tools/auditoria.mjs`). Sale solo si la liga-año tiene ranking. Una liga cuya línea es `falta_transcripcion` NO se publica (se veía el
   código crudo y una frase falsa); queda en `--pendientes`. Con `alcance: federacion` (KNVB, HNS) la tarjeta dice que es la federación

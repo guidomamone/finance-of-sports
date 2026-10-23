@@ -905,8 +905,11 @@ const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/PIPELINE.md', '
 const HISTORIA_EN_DOCS = [
   ['version', /\bVersi[óo]n \d+/g, '«Versión N»'],
   ['fecha', /\b20\d\d-\d\d-\d\d\b/g, 'fechas AAAA-MM-DD'],
-  ['todo', /\bto-?dos? (?:n[°º] ?)?\d{2,3}\b/gi, '«to-do N»'],
+  ['todo', /\bto-dos? (?:n[°º] ?)?\d{2,3}\b|\btodo (?:n[°º] ?)?\d{2,3}\b/gi, '«to-do N»'], // «todos» seguido de un código de respuesta HTTP no es un número de tarea
 ];
+
+// Una fecha que es un dato del mundo y no la historia de una decisión: el último chequeo de un país, el nombre de un archivo con fecha, una referencia de tipo de cambio, el cierre de un ejercicio.
+const FECHA_QUE_ES_DATO_RE = /[úu]ltimo chequeo|chequeo[: ]+20\d\d|confirmado|probado el|barrido:|\w[\w/-]*20\d\d-\d\d-\d\d[\w-]*\.md|fxRef|desde el 20\d\d|period_end|cierre|ejercicio|fiscal|"buscado"/i;
 
 // Los comentarios de tools/ llevan el porqué, la invariante y las trampas; la historia («Versión N», «to-do N», fechas) va a Admin/CHANGELOG.md. P3: la lista de limpieza.
 // Cuenta por tool; tools/archivo/ no entra. Cómo se limpia y la prueba de que no cambió el código: Admin/CONVENCIONES.md, «Comentarios en tools/».
@@ -944,7 +947,9 @@ function checkHistoriaEnDocs() {
     const porArchivo = new Map();
     const primera = new Map();   // la primera línea con el patrón: dónde empezar a limpiar
     for (const f of archivos) {
-      const texto = fs.readFileSync(path.join(ROOT, f), 'utf8');
+      let texto = fs.readFileSync(path.join(ROOT, f), 'utf8');
+      // la línea o la anterior (la frase sigue en la línea de abajo: «Último chequeo» y debajo la fecha); el número de línea no cambia
+      if (clave === 'fecha') texto = texto.split('\n').map((l, i, ls) => (FECHA_QUE_ES_DATO_RE.test(l) || (i > 0 && FECHA_QUE_ES_DATO_RE.test(ls[i - 1])) ? '' : l)).join('\n');
       const n = (texto.match(re) || []).length;
       if (!n) continue;
       porArchivo.set(f, n);

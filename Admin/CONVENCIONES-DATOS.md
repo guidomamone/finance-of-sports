@@ -636,7 +636,7 @@ el de `nationOf(clubId)`: la tabla `CLUB_NATION` solo lista a los clubes cuya na
 inglesa: su ficha dice Gales y su liga, la inglesa. Medido al hacerlo: un club afectado (Celtic) y una liga (la Premiership escocesa); cambian las agrupaciones por país de Ligas y
 del selector, el subtítulo de Finanzas y la página generada del club. `tools/generate-club-pages.js` usa `nationOf`. No hay condición nueva en `tools/`.
 
-## REGLA: subsidios, donaciones y aportes van a `grants_donations` (votación 3 a 0, 2026-10-21; fila «Subsidios y donaciones», 2026-10-22)
+## REGLA: subsidios, donaciones y aportes van a `grants_donations` (votación 3 a 0; fila «Subsidios y donaciones»)
 
 Un ingreso sin contraprestación comercial (subsidio público de explotación, donación, aporte de socios o accionistas impreso como ingreso) va a
 `grants_donations`, no a `other_income`. No entran: la subvención de capital imputada al resultado (`other_income`: no es plata del año), los premios y la

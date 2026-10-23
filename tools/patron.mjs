@@ -116,7 +116,8 @@ function recorrer(dir, salida = [], ext = '.md') {
 export function contar(patron, en = 'Clubes') {
   const re = new RegExp(patron, 'im');
   const docs = [], clubes = new Set();
-  for (const f of recorrer(join(ROOT, en), [], en === 'Clubes' ? '.md' : '.js')) {
+  const md = en === 'Clubes' || en.startsWith('.claude') || en.startsWith('Admin'); // documentos: Clubes, las skills, Admin; el resto son tools (.js)
+  for (const f of recorrer(join(ROOT, en), [], md ? '.md' : '.js')) {
     if (!re.test(readFileSync(f, 'utf8'))) continue;
     const r = relative(join(ROOT, en), f).split(sep);
     docs.push(r.join('/')); clubes.add(en === 'Clubes' ? r.slice(0, 2).join('/') : r.join('/')); // en otra carpeta, cada archivo es su propio grupo

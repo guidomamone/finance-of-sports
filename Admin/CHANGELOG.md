@@ -18,12 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 989 — Lo que dejó pensando la 988, el hook de diff para los documentos de criterio y `fos lecturas` [402]
+## Versión 989 — Lo que dejó pensando la 988, el hook de diff para los documentos de criterio y `fos lecturas` [402 · 405]
 
 - Hook `post-tool.mjs`: el aviso de abrir el diff con `show_pane` ahora cubre también `CLAUDE.md` y `Admin/CONVENCIONES*.md`, `PANTALLA.md`, `PIPELINE.md`, `ESTADO.md` (antes solo las skills) y es imperativo (abrirlo ya, no al cierre). El hook de commit no pide veredicto a una tool que sola es solo comentarios o mudanza.
 - `fos personal` es un ensayo por defecto (`--escribir` escribe); `reemplazar --forzar`; `publicar --correcciones` (regenera el registro de correcciones antes de publicar); `medir pipeline` no cuenta las tools borradas; `patron` no toma «2000 *» por un año.
 - `tools/lecturas.mjs` (`fos lecturas`): tokens por documento leído en las últimas sesiones. Primera medición: `ESTADO.md` 23 %, `TODO.md` 15 %, `CONVENCIONES.md` 10 %. `ESTADO.md` de 25,2 KB a 17,3 KB (las tools del pipeline pasaron a `Admin/ESTADO-pipeline.md`).
-- Medido (audit): idéntico; veredicto general.
+- **405:** `tools/historia.mjs` (`fos historia`) lista cada fecha, «to-do N» y «Versión N» de los documentos de criterio con su frase y la clasifica (decisión / dato). Se reescribieron sin la historia `PANTALLA.md`, `PIPELINE.md`, `CONVENCIONES*.md`, `CLAUDE.md` y las skills de `club-sourcing` (commit aparte de skills). `audit.js` ya no cuenta como historia una fecha que es un dato (último chequeo de un país, nombre de archivo con fecha, `fxRef`) ni «todos 404» como número de tarea: 53 fechas y 12 «to-do N» a 0.
+- Medido (audit): idéntico salvo `historia-en-doc-de-criterio`; veredicto general.
 
 ## Versión 988 — Etiquetas por proceso (Jev + agente con cita), sueldos de Brighton, Celtic, Newcastle e Instituto, P2 a 0 [369 · 351 · 370 · 372 · 350 · 390 · astonvilla-gb, brighton-gb, celtic-gb, instituto-ar, newcastle-gb]
 

@@ -64,7 +64,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     (qué quedó, qué pide, cuánto gastó), y el detalle va en la nota de la sesión, no en el chat.
   - **Bath Rugby es un club de prueba** (la taxonomía por deporte): no abre el rugby ni otros deportes al sourcing ni a los lotes.
   - **Un documento que la localización ya marcó `sin_estado` no se vuelve a correr** con `--rehacer` ni `--reintentar`: el ensayo ya
-    lo avisa a costo 0, y reintentar no hace aparecer una tabla que el `.md` no tiene (Auditora, 2026-10-20; Colombia corrió tres veces por eso).
+    lo avisa a costo 0, y reintentar no hace aparecer una tabla que el `.md` no tiene (Colombia corrió tres veces por eso).
   - **El número de lote lo da la principal.** Las listas de corrida (`Admin/registros/.lote-lista-actual.txt` y compañía) son de cada
     carpeta; dos lotes en carpetas distintas pueden correr a la vez, dos en la misma no.
   - **Un commit que corrige un dato publicado lleva el trailer `Corrige: <motivo>`**: una frase en español, para un hincha o un
