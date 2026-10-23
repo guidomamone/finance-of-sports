@@ -18,6 +18,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 995 — La cola con datos y menos preguntas: clave estable, perfil por club, tope de materialidad [407 · cola.mjs, cargar.mjs, datos-cola.mjs, casos-sin-resolver.mjs, medir-pipeline.mjs]
+
+- `cola.mjs`: una pregunta de localizar/extraer con otra redacción pero el mismo documento, etiquetas y bloques nace contestada con la última respuesta (antes volvía a la cola).
+- `cargar.mjs`: perfil de club contestado en cualquier año vale (aviso con el año); materialidad con tope acumulado de 1 % por lado (más chica primero, confianza ≥ 0,5, no la línea junta de amortización); la pregunta de categoría ya no ofrece «sí» y trae los datos (`datos-cola.mjs`: peso, lo contestado a la misma etiqueta, Jev aparte).
+- `casos-sin-resolver.mjs`: `fos causas` cruza con el dato cargado y los ajustes del documento; cerró 5 casos resueltos (Aston Villa 2019-22, Instituto 2025).
+- `medir-pipeline.mjs`: junta los problemas de arranque (tool sin clasificar y datos sin commitear) en un solo aviso.
+- Medición: lote completo, 3 diferencias, todas explicadas (filas que pasan por el tope, misma categoría). Veredicto general.
+- Puntos nuevos: 408 (CHANGELOG por tool, propuesta pendiente de ok), 409 (lotes de prueba con casos raros).
+
 ## Versión 994 — El JSON de cada club guarda el PDF de origen de cada fuente [407]
 
 - `sources[].document` (opcional, ruta `Clubes/<País>/<Club>/<archivo>.pdf`, esquema club-v2): `cargar.mjs` y `cargar-escribir.mjs` lo escriben en toda fuente nueva. `tools/fuente-documento.mjs` lo completó en 1.069 de las 1.344 fuentes ya cargadas (nombre del archivo en el título genérico, carpeta del club para desempatar; solo si hay un único archivo). Quedan 271 sin nombre en el título (Rusia `bfo`, que no son PDF, y fuentes con título propio) y 4 ambiguas: se completan con `fuente.mjs`.
