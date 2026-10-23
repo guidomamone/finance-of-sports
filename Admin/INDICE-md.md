@@ -18,7 +18,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 79, `Admin/Archive` 353, 
 - `Admin/ESTADO-clubes.md` · ~30 KB · qué hay cargado de cada club (generado) · **leer:** si hace falta el detalle club por club · ←20 · →ESTADO.md
 - `Admin/ESTADO-pipeline.md` · ~10 KB · estado de las tools del pipeline hoy (qué hace cada una, qué se decide solo, qué no se transcribe) · **leer:** al tocar una tool del pipeline o el proceso de carga; no en el arranque · ←2 · →CLAUDE.md, CONTRATO-ETAPAS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, HALLAZGOS-pipeline.md
 - `Admin/ESTADO.md` · ~15 KB · qué hay armado hoy (snapshot del proyecto) · **leer:** siempre, al arrancar una sesión · ←20 · →CLAUDE.md, ARQUITECTURA.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO-pipeline.md
-- `Admin/HALLAZGOS-pipeline.md` · ~50 KB · lo que se midió y no entró al pipeline, con el porqué · **leer:** antes de proponer una mejora al pipeline, por grep · ←18 · →PIPELINE.md, TODO.md, club-or-year-onboarding/club-nuevo.md
+- `Admin/HALLAZGOS-pipeline.md` · ~50 KB · lo que se midió y no entró al pipeline, con el porqué · **leer:** antes de proponer una mejora al pipeline, por grep · ←19 · →PIPELINE.md, TODO.md, club-or-year-onboarding/club-nuevo.md
 - `Admin/NOTAS-DE-TOOLS.md` · ~90 KB · lo que las cabeceras de las tools tenían de más (campos, casos, medidas), tal cual, una sección por tool · **leer:** al tocar una tool cuya cabecera apunta acá · ←31 · →CLAUDE.md, CONVENCIONES.md, ESTADO.md, PANTALLA.md, TODO.md, dudas-por-club.md
 - `Admin/PANTALLA.md` · ~90 KB · reglas de pantalla y código del sitio · **leer:** al tocar js/, index.html o css; la sección de la pantalla · ←19 · →CONVENCIONES.md, ESTADO.md, club-data-mapping/referencia/formato-simplificado.md, club-or-year-onboarding/club-nuevo.md, producto-y-pantalla-finance-of-sports/referencia/marca.md, producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md
 - `Admin/PIPELINE.md` · ~140 KB · el pipeline etapa por etapa y las decisiones de Guido · **leer:** solo la etapa que se toca · ←42 · →CLAUDE.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, dudas-por-club.md, club-data-mapping/referencia/leer-pdf.md
@@ -33,6 +33,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 79, `Admin/Archive` 353, 
 - `Admin/propuestas/257-skills.md` · ~40 KB · (sin marca) · ←2 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/propuestas/330-donde-se-pierde.md` · ~15 KB · (sin marca) · ←2 · →ARQUITECTURA.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO.md, HALLAZGOS-pipeline.md, PIPELINE.md
 - `Admin/propuestas/350-revision-categorias.md` · ~10 KB · (sin marca) · ←2 · →CONVENCIONES-DATOS.md, PANTALLA.md
+- `Admin/propuestas/407-cola-con-datos.md` · ~5 KB · propuesta del punto 407, qué datos suma la cola a cada tipo de pregunta en vez de una respuesta por defecto · **leer:** antes de tocar la propuesta de la cola (cargar.mjs, cola.mjs, verificar) · ←0 huérfano · →HALLAZGOS-pipeline.md
 - `Admin/propuestas/archivo-no-es-lo-que-dice.md` · <5 KB · (sin marca) · ←1 · →PIPELINE.md
 - `Admin/propuestas/estructurado-sin-ia.md` · <5 KB · (sin marca) · ←1 · →CONVENCIONES.md
 - `Admin/propuestas/transicion-y-covid.md` · ~10 KB · (sin marca) · ←1 · →CONVENCIONES-DATOS.md, dudas-por-club.md
