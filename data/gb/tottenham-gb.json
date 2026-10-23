@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "tottenham-gb",
@@ -99,7 +99,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-40.646,"tax":11.211,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-40.646,"tax":11.211,"gross_debt":null,"cash":null,"staff_cost":209.18},
       "official_totals": {"revenue":468.134,"expenses":488.816,"net_result":-50.117},
       "adjustments": {"extra_rows":[{"label":"Finance income","amount":1.537},{"label":"Finance costs","amount":-42.183},{"label":"Tax","amount":11.211}]}
     },
@@ -159,7 +159,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-44.763,"tax":7.88,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-44.763,"tax":7.88,"gross_debt":null,"cash":null,"staff_cost":251.121},
       "official_totals": {"revenue":582.049,"expenses":631.96,"net_result":-86.794},
       "adjustments": {"extra_rows":[{"label":"Finance income","amount":1.566},{"label":"Finance costs","amount":-46.329},{"label":"Tax","amount":7.88}]}
     },

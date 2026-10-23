@@ -78,6 +78,10 @@ tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 5.352978 (compuerta: estructura de la nota): estructura de la nota (la suma cierra): shrewsbury-full-accounts-2024-25-ixbrl.md L518 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text

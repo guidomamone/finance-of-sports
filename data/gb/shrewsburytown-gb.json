@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "shrewsburytown-gb",
@@ -54,7 +54,7 @@
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-6.948641,"disclosure":"aggregated"},
         {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-1.188028,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003898,"tax":0.327092,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003898,"tax":0.327092,"gross_debt":null,"cash":null,"staff_cost":5.352978},
       "official_totals": {"revenue":7.214063,"expenses":8.136669,"net_result":-0.599412},
       "adjustments": {
         "extra_rows": [

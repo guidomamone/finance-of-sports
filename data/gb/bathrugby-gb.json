@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "bathrugby-gb",
@@ -84,7 +84,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.056372,"tax":-0.230837,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.056372,"tax":-0.230837,"gross_debt":null,"cash":null,"staff_cost":11.915009},
       "official_totals": {"revenue":18.416623,"expenses":18.522498,"net_result":-0.393084},
       "adjustments": {
         "extra_rows": [
@@ -134,7 +134,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.104184,"tax":0.387584,"gross_debt":21.776336,"cash":0.644132},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.104184,"tax":0.387584,"gross_debt":21.776336,"cash":0.644132,"staff_cost":12.165369},
       "official_totals": {"revenue":19.819557,"expenses":20.266397,"net_result":-0.16344},
       "adjustments": {
         "extra_rows": [
@@ -176,7 +176,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.100113,"tax":1.167663,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.100113,"tax":1.167663,"gross_debt":null,"cash":null,"staff_cost":14.885763},
       "official_totals": {"revenue":20.240335,"expenses":24.569226,"net_result":-3.261341},
       "adjustments": {
         "extra_rows": [
@@ -256,7 +256,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.127574,"tax":0.250554,"gross_debt":null,"cash":0.396443},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.127574,"tax":0.250554,"gross_debt":null,"cash":0.396443,"staff_cost":14.627513},
       "official_totals": {"revenue":23.409603,"expenses":26.310648,"net_result":-2.778065},
       "adjustments": {
         "extra_rows": [

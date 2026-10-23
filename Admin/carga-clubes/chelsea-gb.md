@@ -118,6 +118,10 @@ Generados/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.categori
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 338.021 (compuerta: estructura de la nota): estructura de la nota (la suma cierra): chelsea-fc-holdings-group-accounts-2023-24.md L1741 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text

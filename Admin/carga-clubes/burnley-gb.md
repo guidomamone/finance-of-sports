@@ -168,6 +168,10 @@ Generados/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.categorias.
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 53.661 (compuerta: documento anterior): estructura de la nota (la suma cierra): burnley-holdings-group-accounts-2022-23.md L1177 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text
@@ -208,6 +212,10 @@ Generados/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.categorias.
 
 ```text
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 91.978 (compuerta: documento siguiente): estructura de la nota (la suma cierra): burnley-holdings-group-accounts-2021-22.md L1029 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ### Liga

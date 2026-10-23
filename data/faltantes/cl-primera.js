@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["cl-primera"] = {
   2010: {"size":18,"cargados":1,"faltan":[{"n":"Audax Italiano","e":"en-mano"},{"n":"Cobreloa","e":"buscado"},{"n":"Cobresal","e":"sin-buscar"},{"n":"Colo-Colo","id":"colocolo-cl","e":"en-mano"},{"n":"Everton","e":"buscado"},{"n":"Huachipato","e":"buscado"},{"n":"Deportes La Serena","e":"buscado"},{"n":"Ñublense","e":"buscado"},{"n":"O'Higgins","e":"buscado"},{"n":"Palestino","e":"buscado"},{"n":"San Luis","e":"sin-buscar"},{"n":"Santiago Morning","e":"sin-buscar"},{"n":"Santiago Wanderers","e":"buscado"},{"n":"Unión Española","e":"buscado"},{"n":"Unión San Felipe","e":"sin-buscar"},{"n":"Universidad de Chile","id":"udechile-cl","e":"en-mano"},{"n":"Universidad de Concepción","e":"sin-buscar"}]},

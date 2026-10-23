@@ -212,6 +212,10 @@ Generados/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.categoria
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 61.381 (compuerta: estructura de la nota): estructura de la nota (la suma cierra): bournemouth-full-accounts-2021-22.md L1101 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text

@@ -180,6 +180,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2024, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 234.766 (compuerta: documento anterior): estructura de la nota (la suma cierra): arsenal-holdings-group-accounts-2022-23.md L1347 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text
@@ -224,6 +228,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2024, 2025): Comercial / Sponsors, Estadio, Televisión
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 212.345 (compuerta: documento siguiente): estructura de la nota (la suma cierra): arsenal-holdings-group-accounts-2021-22.md L1347 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ### Liga

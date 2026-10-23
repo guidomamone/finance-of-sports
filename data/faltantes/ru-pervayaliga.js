@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["ru-pervayaliga"] = {
   2022: {"size":20,"cargados":2,"faltan":[{"n":"Torpedo Moscow","e":"sin-buscar"},{"n":"Fakel Voronezh","e":"sin-buscar"},{"n":"Alania Vladikavkaz","e":"sin-buscar"},{"n":"Baltika Kaliningrad","id":"baltikakaliningrad-ru","e":"buscado"},{"n":"SKA-Khabarovsk","e":"sin-buscar"},{"n":"Yenisey Krasnoyarsk","e":"sin-buscar"},{"n":"KAMAZ","e":"sin-buscar"},{"n":"Krasnodar-2","e":"sin-buscar"},{"n":"Spartak-2 Moscow","e":"sin-buscar"},{"n":"Kuban Krasnodar","e":"sin-buscar"},{"n":"Neftekhimik Nizhnekamsk","e":"sin-buscar"},{"n":"Metallurg Lipetsk","e":"sin-buscar"},{"n":"Olimp-Dolgoprudny","e":"sin-buscar"},{"n":"Rotor Volgograd","e":"sin-buscar"},{"n":"Veles Moscow","e":"sin-buscar"},{"n":"Tom Tomsk","e":"sin-buscar"},{"n":"Tekstilshchik Ivanovo","e":"sin-buscar"},{"n":"Volgar Astrakhan","e":"sin-buscar"}]},

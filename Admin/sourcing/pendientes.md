@@ -1,6 +1,6 @@
 # Pendientes de sourcing por liga
 
-GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-22): no editar a mano. Club-años que jugaron una liga con lista de equipos en
+GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-23): no editar a mano. Club-años que jugaron una liga con lista de equipos en
 `tools/club-league-reference/`, sin cargar, sin PDF en mano y sin búsqueda de los últimos 12 meses (`sin-buscar`: nunca se buscó;
 `rebuscar`: el último chequeo es más viejo). Excluye los años cerrados hace menos de 9 meses. Orden: liga más alta, año más reciente.
 

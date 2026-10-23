@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["gb-scottishpremiership"] = {
   2021: {"size":12,"cargados":1,"faltan":[{"n":"Rangers","e":"sin-buscar"},{"n":"Aberdeen","e":"sin-buscar"},{"n":"Dundee United","e":"sin-buscar"},{"n":"Hamilton Academical","e":"sin-buscar"},{"n":"Hibernian","e":"sin-buscar"},{"n":"Kilmarnock","e":"sin-buscar"},{"n":"Livingston","e":"sin-buscar"},{"n":"Motherwell","e":"sin-buscar"},{"n":"St Johnstone","e":"sin-buscar"},{"n":"Ross County","e":"sin-buscar"},{"n":"St Mirren","e":"sin-buscar"}]},

@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["br-paulistaA2"] = {
   2012: {"size":20,"cargados":1,"faltan":[{"n":"América","id":"americamineiro-br","e":"buscado"},{"n":"Atlético Sorocaba","e":"sin-buscar"},{"n":"Audax","e":"sin-buscar"},{"n":"Grêmio Barueri","e":"sin-buscar"},{"n":"Monte Azul","e":"sin-buscar"},{"n":"Noroeste","e":"sin-buscar"},{"n":"Palmeiras B","e":"sin-buscar"},{"n":"Penapolense","e":"sin-buscar"},{"n":"Red Bull Brasil","e":"sin-buscar"},{"n":"Rio Claro","e":"sin-buscar"},{"n":"Rio Preto","e":"sin-buscar"},{"n":"Santacruzense","e":"sin-buscar"},{"n":"Santo André","e":"sin-buscar"},{"n":"São Bernardo","e":"sin-buscar"},{"n":"São Carlos","e":"sin-buscar"},{"n":"São José","e":"sin-buscar"},{"n":"União Barbarense","e":"sin-buscar"},{"n":"União São João","e":"sin-buscar"},{"n":"Velo Clube","e":"sin-buscar"}]},

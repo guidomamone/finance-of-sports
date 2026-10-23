@@ -196,6 +196,10 @@ Generados/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.categori
 tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 251.121 (compuerta: documento anterior): estructura de la nota (la suma cierra): tottenham-group-accounts-2022-23.md L1418 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text
@@ -237,6 +241,10 @@ Generados/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.categori
 
 ```text
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 209.18 (compuerta: documento siguiente): estructura de la nota (la suma cierra): tottenham-group-accounts-2021-22.md L1282 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ### Liga

@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["gb-championship"] = {
   2019: {"size":24,"cargados":2,"faltan":[{"n":"Norwich City","e":"en-mano"},{"n":"Sheffield United","e":"en-mano"},{"n":"Birmingham City","e":"en-mano"},{"n":"Blackburn Rovers","e":"en-mano"},{"n":"West Bromwich Albion","e":"en-mano"},{"n":"Bolton Wanderers","e":"buscado"},{"n":"Brentford","id":"brentford-gb","e":"en-mano"},{"n":"Derby County","e":"buscado"},{"n":"Bristol City","e":"en-mano"},{"n":"Middlesbrough","e":"en-mano"},{"n":"Hull City","e":"en-mano"},{"n":"Nottingham Forest","id":"nottinghamforest-gb","e":"en-mano"},{"n":"Ipswich Town","e":"en-mano"},{"n":"Swansea City","e":"sin-buscar"},{"n":"Sheffield Wednesday","e":"en-mano"},{"n":"Millwall","e":"en-mano"},{"n":"Preston North End","e":"en-mano"},{"n":"Stoke City","e":"en-mano"},{"n":"Queens Park Rangers","e":"en-mano"},{"n":"Reading","e":"en-mano"},{"n":"Wigan Athletic","id":"wiganathletic-gb","e":"buscado"},{"n":"Rotherham United","e":"en-mano"}]},

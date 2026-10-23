@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "arsenal-gb",
@@ -115,7 +115,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.21,"tax":-0.001,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.21,"tax":-0.001,"gross_debt":null,"cash":null,"staff_cost":212.345},
       "official_totals": {"revenue":394.145,"expenses":434.416,"net_result":-45.482},
       "adjustments": {
         "extra_rows": [{"label":"Net finance charges","amount":-5.21},{"label":"Tax (charge)/credit on loss","amount":-0.001}],
@@ -208,7 +208,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.222,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.222,"tax":0,"gross_debt":null,"cash":null,"staff_cost":234.766},
       "official_totals": {"revenue":477.417,"expenses":523.319,"net_result":-52.124},
       "adjustments": {
         "extra_rows": [{"label":"Net finance charges","amount":-6.222},{"label":"Tax on loss","amount":null}],

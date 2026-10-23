@@ -142,6 +142,10 @@ Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.categoria
 tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 218.738 (compuerta: estructura de la nota): estructura de la nota (la suma cierra): newcastle-group-accounts-2023-24.md L1466 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text
@@ -153,7 +157,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2023: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -175,13 +179,13 @@ Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.categoria
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 186.679 (compuerta: documento anterior): estructura de la nota (la suma cierra): newcastle-group-accounts-2022-23.md L1564 "(total sin rótulo: suma las filas de arriba)"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Newcastle United".
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (186.679, newcastle-group-accounts-2022-23.md L1564) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2022
@@ -217,6 +221,10 @@ tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 170.204 (compuerta: documento siguiente): estructura de la nota (la suma cierra): newcastle-group-accounts-2021-22.md L1309 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ## 2021
 
 ### Ingresos
@@ -250,6 +258,10 @@ tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 106.829 (compuerta: documento siguiente): estructura de la nota (la suma cierra): newcastle-group-accounts-2020-21.md L1360 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ## 2020
 
 ### Ingresos
@@ -280,6 +292,10 @@ Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.categoria
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (121.146, newcastle-group-accounts-2019-20.md L1067) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
 tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 121.146 (compuerta: documento siguiente): estructura de la nota (la suma cierra): newcastle-group-accounts-2019-20.md L1067 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ## 2019

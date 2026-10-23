@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "westham-gb",
@@ -106,7 +106,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.134,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.134,"tax":0,"gross_debt":null,"cash":null,"staff_cost":129.949},
       "official_totals": {"revenue":164.932,"expenses":224.542,"net_result":-64.744},
       "adjustments": {
         "extra_rows": [
@@ -161,7 +161,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.647,"tax":0.397,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.647,"tax":0.397,"gross_debt":null,"cash":null,"staff_cost":128.451},
       "official_totals": {"revenue":214.116,"expenses":231.602,"net_result":-25.736},
       "adjustments": {
         "extra_rows": [
@@ -215,7 +215,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.532,"tax":-1.748,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.532,"tax":-1.748,"gross_debt":null,"cash":null,"staff_cost":134.397},
       "official_totals": {"revenue":254.906,"expenses":234.059,"net_result":11.567},
       "adjustments": {
         "extra_rows": [
@@ -254,14 +254,15 @@
         {"label":"Profit on disposal of players","category":"player_transfers","subcategory":"player_sales","amount":16.98,"disclosure":"aggregated"}
       ],
       "expenses": [{"label":"Operating costs","category":"other_operating_expenses","subcategory":"other_expenses","amount":-253.776,"disclosure":"aggregated"}],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.446,"tax":1.217,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.446,"tax":1.217,"gross_debt":null,"cash":null,"staff_cost":135.343},
       "official_totals": {"revenue":254.836,"expenses":253.776,"net_result":-16.169},
       "adjustments": {
         "extra_rows": [
           {"label":"Interest receivable and similar income","amount":0.579},
           {"label":"Interest payable and similar expenses","amount":-19.025},
           {"label":"Tax on (loss)/profit","amount":1.217}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -293,14 +294,15 @@
         {"label":"Profit on disposal of players","category":"player_transfers","subcategory":"player_sales","amount":96.313,"disclosure":"aggregated"}
       ],
       "expenses": [{"label":"Operating costs","category":"other_operating_expenses","subcategory":"other_expenses","amount":-304.572,"disclosure":"aggregated"}],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.328,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.328,"tax":0,"gross_debt":null,"cash":null,"staff_cost":159.04},
       "official_totals": {"revenue":371.442,"expenses":304.572,"net_result":58.543},
       "adjustments": {
         "extra_rows": [
           {"label":"Interest receivable and similar income","amount":5.013},
           {"label":"Interest payable and similar expenses","amount":-13.341},
           {"label":"Tax on profit/(loss)","amount":null}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {

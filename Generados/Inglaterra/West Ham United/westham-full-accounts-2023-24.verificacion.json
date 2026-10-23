@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.pdf",
  "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.md",
- "generado": "2026-10-20T18:14:07.114Z",
+ "generado": "2026-10-23T00:51:50.512Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "westham-gb",
  "year": 2024,
@@ -24,6 +25,18 @@
    "evidencia": ".md L1037",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (159.04, westham-full-accounts-2023-24.md L1512) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una",
+   "evidencia": "westham-full-accounts-2023-24.md L1512",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-23"
   }
  ],
  "cola": [],

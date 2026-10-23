@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "mancity-gb",
@@ -107,7 +107,7 @@
         {"label":"Owned","category":"depreciation","subcategory":"depreciation","amount":-9.376,"disclosure":"aggregated"},
         {"label":"Leased","category":"depreciation","subcategory":"depreciation","amount":-1.452,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.753,"tax":-2.681,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.753,"tax":-2.681,"gross_debt":null,"cash":null,"staff_cost":354.689},
       "official_totals": {"revenue":639.638,"expenses":629.837,"net_result":2.367},
       "adjustments": {
         "extra_rows": [
@@ -175,7 +175,7 @@
         {"label":"Owned","category":"depreciation","subcategory":"depreciation","amount":-9.999,"disclosure":"aggregated"},
         {"label":"Leased","category":"depreciation","subcategory":"depreciation","amount":-1.452,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.567,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.567,"tax":0,"gross_debt":null,"cash":null,"staff_cost":353.881},
       "official_totals": {"revenue":686.781,"expenses":640.488,"net_result":41.726},
       "adjustments": {
         "extra_rows": [
@@ -244,7 +244,7 @@
         {"label":"Owned","category":"depreciation","subcategory":"depreciation","amount":-10.613,"disclosure":"aggregated"},
         {"label":"Leased","category":"depreciation","subcategory":"depreciation","amount":-1.452,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.711,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.711,"tax":0,"gross_debt":null,"cash":null,"staff_cost":422.895},
       "official_totals": {"revenue":839.944,"expenses":753.862,"net_result":80.371},
       "adjustments": {
         "extra_rows": [

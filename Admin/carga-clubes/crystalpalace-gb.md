@@ -139,6 +139,10 @@ Generados/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2022-23.categorias.
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 130.626 (compuerta: documento anterior): estructura de la nota (la suma cierra): cpfc-2010-group-accounts-2022-23.md L904 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text
@@ -178,6 +182,10 @@ Generados/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2021-22.categorias.
 
 ```text
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 123.835 (compuerta: documento siguiente): estructura de la nota (la suma cierra): cpfc-2010-group-accounts-2021-22.md L933 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ### Liga

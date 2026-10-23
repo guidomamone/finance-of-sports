@@ -109,7 +109,7 @@ Sullivan y Gold compraron el club el 19/1/2010; Sullivan es el cabeza (Gold, co-
 ### Ingresos
 
 ```text
-2024: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2024: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/West Ham United/westham-full-accounts-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -131,14 +131,14 @@ Generados/Inglaterra/West Ham United/westham-full-accounts-2023-24.categorias.js
 ### Meta
 
 ```text
-2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 159.04 (compuerta: documento anterior): estructura de la nota (la suma cierra): westham-full-accounts-2023-24.md L1512 "(total sin rótulo: suma las filas de arriba)"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2023–24 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (159.04, westham-full-accounts-2023-24.md L1512) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2023
@@ -146,7 +146,7 @@ tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2023: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/West Ham United/westham-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -168,14 +168,14 @@ Generados/Inglaterra/West Ham United/westham-full-accounts-2022-23.categorias.js
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 135.343 (compuerta: documento siguiente): estructura de la nota (la suma cierra): westham-full-accounts-2022-23.md L1470 "(total sin rótulo: suma las filas de arriba)"
 ```
 
-### Liga
-
 ```text
-tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (135.343, westham-full-accounts-2022-23.md L1470) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2022
@@ -211,6 +211,10 @@ Generados/Inglaterra/West Ham United/westham-full-accounts-2021-22.categorias.js
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 134.397,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de "Administrative expenses": el costo de personal va aparte
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2021-22.md L1491) está dentro de "Administrative expenses": costo de personal -> wages_squad
 tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 134.397 (compuerta: documento siguiente): estructura de la nota (la suma cierra): westham-full-accounts-2021-22.md L1491 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ## 2021
@@ -249,6 +253,10 @@ Generados/Inglaterra/West Ham United/westham-full-accounts-2020-21.categorias.js
 tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 128.451 (compuerta: documento siguiente): estructura de la nota (la suma cierra): westham-full-accounts-2020-21.md L1370 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ## 2020
 
 ### Ingresos
@@ -282,6 +290,10 @@ Generados/Inglaterra/West Ham United/westham-full-accounts-2019-20.categorias.js
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 129.949,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de "Administrative expenses": el costo de personal va aparte
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, westham-full-accounts-2019-20.md L1353) está dentro de "Administrative expenses": costo de personal -> wages_squad
 tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 129.949 (compuerta: documento siguiente): estructura de la nota (la suma cierra): westham-full-accounts-2019-20.md L1353 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ## Fuentes

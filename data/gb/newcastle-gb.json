@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "newcastle-gb",
@@ -141,7 +141,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.762,"tax":3.432,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.762,"tax":3.432,"gross_debt":null,"cash":null,"staff_cost":121.146},
       "official_totals": {"revenue":178.914,"expenses":206.648,"net_result":-22.54},
       "adjustments": {
         "extra_rows": [
@@ -189,7 +189,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.095,"tax":1.43,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.095,"tax":1.43,"gross_debt":null,"cash":null,"staff_cost":106.829},
       "official_totals": {"revenue":141.893,"expenses":155.61,"net_result":-12.192},
       "adjustments": {
         "extra_rows": [
@@ -244,7 +244,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.203,"tax":2.217,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.203,"tax":2.217,"gross_debt":null,"cash":null,"staff_cost":170.204},
       "official_totals": {"revenue":185.818,"expenses":257.482,"net_result":-70.65},
       "adjustments": {
         "extra_rows": [
@@ -292,14 +292,15 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.873,"tax":-0.091,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.873,"tax":-0.091,"gross_debt":null,"cash":null,"staff_cost":186.679},
       "official_totals": {"revenue":253.101,"expenses":319.558,"net_result":-73.421},
       "adjustments": {
         "extra_rows": [
           {"label":"Interest receivable and similar income","amount":0.617},
           {"label":"Interest payable and similar expenses","amount":-7.49},
           {"label":"Taxation","amount":-0.091}
-        ]
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
       }
     },
     {
@@ -354,7 +355,7 @@
           "disclosure": "aggregated"
         }
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-12.292,"tax":-0.018,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-12.292,"tax":-0.018,"gross_debt":null,"cash":null,"staff_cost":218.738},
       "official_totals": {"revenue":390.242,"expenses":389.029,"net_result":-11.097},
       "adjustments": {
         "extra_rows": [

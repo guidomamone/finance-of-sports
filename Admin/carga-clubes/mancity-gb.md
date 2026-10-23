@@ -218,6 +218,10 @@ Generados/Inglaterra/Manchester City/mancity-full-accounts-2022-23.categorias.js
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 422.895 (compuerta: documento anterior): estructura de la nota (la suma cierra): mancity-full-accounts-2022-23.md L1317 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text
@@ -265,6 +269,10 @@ Generados/Inglaterra/Manchester City/mancity-full-accounts-2021-22.categorias.js
 tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 353.881 (compuerta: documento siguiente): estructura de la nota (la suma cierra): mancity-full-accounts-2021-22.md L1090 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ### Liga
 
 ```text
@@ -307,6 +315,10 @@ Generados/Inglaterra/Manchester City/mancity-full-accounts-2020-21.categorias.js
 
 ```text
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 354.689 (compuerta: documento siguiente): estructura de la nota (la suma cierra): mancity-full-accounts-2020-21.md L1064 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ### Liga

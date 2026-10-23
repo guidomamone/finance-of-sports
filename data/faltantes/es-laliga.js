@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["es-laliga"] = {
   2021: {"size":20,"cargados":0,"faltan":[{"n":"Alavés","id":"deportivoalaves-es","e":"en-mano"},{"n":"Athletic Bilbao","id":"athleticclub-es","e":"en-mano"},{"n":"Atlético Madrid","id":"atleticomadrid-es","e":"en-mano"},{"n":"Barcelona","id":"fcbarcelona-es","e":"en-mano"},{"n":"Cádiz","e":"buscado"},{"n":"Celta Vigo","id":"celtavigo-es","e":"en-mano"},{"n":"Eibar","e":"buscado"},{"n":"Elche","id":"elche-es","e":"en-mano"},{"n":"Getafe","id":"getafe-es","e":"en-mano"},{"n":"Granada","e":"buscado"},{"n":"Huesca","e":"sin-buscar"},{"n":"Levante","id":"levante-es","e":"buscado"},{"n":"Osasuna","id":"osasuna-es","e":"buscado"},{"n":"Real Betis","id":"realbetis-es","e":"en-mano"},{"n":"Real Madrid","id":"realmadrid-es","e":"en-mano"},{"n":"Real Sociedad","e":"buscado"},{"n":"Sevilla","id":"sevillafc-es","e":"buscado"},{"n":"Valencia","id":"valenciacf-es","e":"buscado"},{"n":"Valladolid","e":"buscado"},{"n":"Villarreal","id":"villarrealcf-es","e":"buscado"}]},

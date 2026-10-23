@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["pt-liga3"] = {
   2022: {"size":24,"cargados":3,"faltan":[{"n":"Cova da Piedade","e":"sin-buscar"},{"n":"Oliveirense","id":"oliveirense-pt","e":"buscado"},{"n":"Anadia","e":"sin-buscar"},{"n":"Pevidém","e":"sin-buscar"},{"n":"Braga B","e":"sin-buscar"},{"n":"Vitória de Setúbal","e":"sin-buscar"},{"n":"União de Leiria","id":"uniaodeleiria-pt","e":"buscado"},{"n":"Montalegre","e":"sin-buscar"},{"n":"Vitória de Guimarães B","e":"sin-buscar"},{"n":"Fafe","e":"sin-buscar"},{"n":"São João de Ver","e":"sin-buscar"},{"n":"Sanjoanense","e":"sin-buscar"},{"n":"Canelas 2010","e":"sin-buscar"},{"n":"Lusitânia Lourosa","e":"sin-buscar"},{"n":"Oliveira do Hospital","e":"sin-buscar"},{"n":"Caldas","e":"sin-buscar"},{"n":"União de Santarém","e":"sin-buscar"},{"n":"Oriental Dragon","e":"sin-buscar"},{"n":"Sporting B","e":"sin-buscar"},{"n":"Amora","e":"sin-buscar"},{"n":"Real SC","e":"sin-buscar"}]},

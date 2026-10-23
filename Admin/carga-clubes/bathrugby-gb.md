@@ -79,6 +79,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-21): cash escalón 1 (compuerta: documento anterior): "Cash at bank and in hand" pág. 21
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 14.627513 (compuerta: estructura de la nota): estructura de la nota (la suma cierra): bath-rugby-medium-company-accounts-2024-25.md L1132 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ## 2024
 
 ### Ingresos
@@ -153,6 +157,10 @@ tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 14.885763 (compuerta: documento siguiente): estructura de la nota (la suma cierra): bath-rugby-full-accounts-2022-23.md L1046 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ## 2022
 
 ### Ingresos
@@ -193,6 +201,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 1b (compuerta: documento siguiente): "Creditors: Amounts falling due after more than one" pág. 18; cash escalón 1 (compuerta: documento siguiente): "Cash at bank and in hand" pág. 18
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 12.165369 (compuerta: documento siguiente): estructura de la nota (la suma cierra): bath-rugby-full-accounts-2021-22.md L968 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ## 2021
 
 ### Ingresos
@@ -225,6 +237,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-21): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025)
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 11.915009 (compuerta: documento siguiente): estructura de la nota (la suma cierra): bath-rugby-full-accounts-2020-21.md L779 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ### Liga

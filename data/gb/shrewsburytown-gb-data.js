@@ -21,7 +21,7 @@ const shrewsburytownGbExpenseLinesByYear = {
 };
 
 const shrewsburytownGbFiscalYearMeta = {
-  2025: {"currency":"GBP","sourceId":"shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.003898,"tax":0.327092,"grossDebt":null,"cash":null,"officialTotalRevenue":7.214063,"officialTotalExpenses":8.136669,"officialPAT":-0.599412,"extraRows":[{"label":"Other interest receivable and similar income","value":null},{"label":"Interest payable and similar expenses","value":-0.003898},{"label":"Tax on loss","value":0.327092}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true},"member_dues":{"en":"other_income","posible":true}}},
+  2025: {"currency":"GBP","sourceId":"shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.003898,"tax":0.327092,"grossDebt":null,"cash":null,"staffCost":5.352978,"officialTotalRevenue":7.214063,"officialTotalExpenses":8.136669,"officialPAT":-0.599412,"extraRows":[{"label":"Other interest receivable and similar income","value":null},{"label":"Interest payable and similar expenses","value":-0.003898},{"label":"Tax on loss","value":0.327092}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true},"member_dues":{"en":"other_income","posible":true}}},
 };
 
 const shrewsburytownGbPresupuestoOverlayByYear = {};

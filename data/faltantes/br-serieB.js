@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-22';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["br-serieB"] = {
   2011: {"size":20,"cargados":1,"faltan":[{"n":"Portuguesa","e":"sin-buscar"},{"n":"ABC","e":"sin-buscar"},{"n":"Náutico","e":"sin-buscar"},{"n":"Americana","e":"sin-buscar"},{"n":"Ponte Preta","id":"pontepreta-br","e":"buscado"},{"n":"ASA","e":"sin-buscar"},{"n":"Sport Recife","id":"sportrecife-br","e":"buscado"},{"n":"Barueri","e":"sin-buscar"},{"n":"Vitória","id":"vitoria-br","e":"buscado"},{"n":"Boa Esporte","e":"sin-buscar"},{"n":"Bragantino","id":"rbbragantino-br","e":"buscado"},{"n":"Criciúma","id":"criciuma-br","e":"buscado"},{"n":"Duque de Caxias","e":"sin-buscar"},{"n":"Guarani","id":"guarani-br","e":"buscado"},{"n":"Icasa","e":"sin-buscar"},{"n":"Paraná","e":"sin-buscar"},{"n":"São Caetano","e":"sin-buscar"},{"n":"Salgueiro","e":"sin-buscar"},{"n":"Vila Nova","id":"vilanova-br","e":"buscado"}]},
