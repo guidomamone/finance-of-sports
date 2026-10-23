@@ -34,6 +34,7 @@ que dice `ESTADO.md` era verdad ese día.
 - `alta-club.mjs` 63-236 → `alta-club-tablas.mjs` (las tablas fijas: países, monedas, meses, formas societarias). Medido con `alta` y `cargar` en los tres lotes: idéntico.
 - `alta-club.mjs` 483-837 → `alta-club-escribir.mjs` (el tipo de cambio y la liga que se proponen y la escritura del alta con su reversión). Medido con `alta` y `cargar` en los tres lotes: idéntico.
 - `alta-club.mjs` 832-1021 → `alta-club-backtest.mjs` (el backtest de las preguntas del alta y `--deshacer`). Medido con `alta` y `cargar` en los tres lotes: idéntico; esos caminos no los ejercita ningún medidor, así que además se comparó a mano: `--deshacer` de un club inexistente da lo mismo y `--informe-backtest` falla igual antes y después (TypeError de `fiscalYearMeta` sobre un backtest viejo: error que ya estaba, anotado).
+- `alta-club.mjs` 484-831 → `alta-club-registro.mjs` (las preguntas a Claude, el registro de altas y los modos `--todos`, `--resumen` y `--dudas`). Medido con `alta` y `cargar` en los tres lotes: idéntico. `alta-club.mjs` quedó en la mitad (de 162 a unos 62 KB), con `analizar()` (365 líneas) adentro.
 - `patron.mjs`: una mudanza (sin los imports, sin el `export` del principio y sin líneas ya existentes duplicadas, lo agregado es lo quitado) no pide veredicto; `medir pipeline` sigue usando las diferencias exactas, así que una mudanza va por los lotes. `que-pide` juzga el conjunto de tools cambiadas, como el hook.
 
 ## Versión 982 — `fos mover`: mudar un bloque de una tool a un módulo sin cambiarlo [379]
