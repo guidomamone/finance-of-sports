@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 990 — La medición de la taxonomía (`fos categorias`) y su aviso de vencimiento [403 · 404]
+
+- `tools/uso-categorias.mjs` (`fos categorias`): por lado, deporte, categoría y subcategoría, club-años, clubes, países y peso (mediana, máximo, club-años con 5 % o más), y las etiquetas del catch-all que llegan al umbral de abrir una categoría (20 club-años, 5 clubes, 3 países). Hoy (331 clubes): una sola, «Otros Ingresos» (genérica); ninguna etiqueta con nombre propio llega, así que los `catchall-dominante` con nombre son casos de a uno. Anotado como la primera revisión («taxonomía: sin cambios»).
+- `audit.js`: `revision-taxonomia-vencida` (P3: más de 6 meses o 100 clubes desde la última revisión anotada con `decision.mjs`). Medido (audit): idéntico salvo `todo-cumplido`; veredicto general.
+- El texto de umbrales para la skill `club-data-mapping` NO se aplicó: queda en `Admin/propuestas/350-revision-categorias.md` §3 hasta que Guido lo pida.
+- **404:** `medir-personal-ensayos.mjs` corre `--personal` con `--ejecutar` (Jev responde lo que no está en la caché): sin «PIERDE» falsos al cambiar la lista de candidatos.
+
 ## Versión 989 — Lo que dejó pensando la 988, el hook de diff para los documentos de criterio y `fos lecturas` [402 · 405]
 
 - Hook `post-tool.mjs`: el aviso de abrir el diff con `show_pane` ahora cubre también `CLAUDE.md` y `Admin/CONVENCIONES*.md`, `PANTALLA.md`, `PIPELINE.md`, `ESTADO.md` (antes solo las skills) y es imperativo (abrirlo ya, no al cierre). El hook de commit no pide veredicto a una tool que sola es solo comentarios o mudanza.

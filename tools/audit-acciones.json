@@ -85,6 +85,11 @@
   "quien": "guido",
   "donde": "TODO 350"
  },
+ "revision-taxonomia-vencida": {
+  "hacer": "node tools/fos.mjs categorias (la medición: uso por categoría y etiquetas del catch-all contra el umbral de abrir una categoría); lo que el umbral decide no se vota, lo dudoso va a votacion-de-criterios; anotarlo con node tools/decision.mjs (cambio «taxonomía: …»).",
+  "quien": "sesion",
+  "donde": "Admin/propuestas/350-revision-categorias.md, §3 y §5"
+ },
  "etiqueta-sin-revisar": {
   "hacer": "node tools/recategorizar-etiquetas.mjs --categoria <id> --proponer (reglas objetivas), --jev (Jev con el criterio de la REGLA), --prompt y --respuestas (agente con cita), --guido (lo que queda); después --ensayo y --escribir.",
   "quien": "script",

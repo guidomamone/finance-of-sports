@@ -1610,6 +1610,17 @@ function checkEtiquetaSinRevisar(api) {
   }
 }
 
+// La taxonomía se revisa con una medición (tools/uso-categorias.mjs) cada 6 meses o cada 100 clubes cargados: la última línea de auditoria-proceso.jsonl cuyo `cambio` empieza con «taxonomía:».
+// Los clubes de esa revisión salen de «(N clubes» en el texto. Sin ninguna, avisa. P3.
+function checkRevisionTaxonomia(api) {
+  let ultima = null;
+  try { for (const l of fs.readFileSync(path.join(ROOT, 'Admin/registros/auditoria-proceso.jsonl'), 'utf8').split('\n')) { if (!l.trim()) continue; try { const r = JSON.parse(l); if (/^taxonom[ií]a:/i.test(r.cambio || '')) ultima = r; } catch { /* línea rota */ } } } catch { /* sin registro */ }
+  const hoy = Object.keys(api.generic).length;
+  if (!ultima) { add('P3', 'revision-taxonomia-vencida', 'la taxonomía nunca se revisó con una medición (node tools/uso-categorias.mjs; el resultado se anota con node tools/decision.mjs, «cambio» que empieza con «taxonomía:»)'); return; }
+  const dias = (Date.now() - new Date(ultima.fecha).getTime()) / 864e5; const antes = Number((String(ultima.cambio).match(/\((\d+) clubes/) || [])[1]) || 0;
+  if (dias > 183 || (antes && hoy - antes >= 100)) add('P3', 'revision-taxonomia-vencida', `la última revisión de la taxonomía fue el ${ultima.fecha} (${Math.round(dias)} días, ${antes} clubes; hoy ${hoy}): pasaron más de 6 meses o 100 clubes. node tools/uso-categorias.mjs y anotarlo con node tools/decision.mjs`);
+}
+
 // Un nombre que una tool importa de otra y la otra no exporta (tras partir un módulo): un import dinámico solo falla al correr esa rama. P1.
 function checkImportsSinExport() {
   try {
@@ -2253,6 +2264,7 @@ function main() {
   checkRankings(api);
   checkCategorizacion(api);
   checkEtiquetaSinRevisar(api);
+  checkRevisionTaxonomia(api);
   checkEscala(api);
   checkDeployInterno();
   checkIndexFileRoto();
