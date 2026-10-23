@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.md",
- "generatedAt": "2026-10-21T02:17:12.059Z",
- "rubrosHuella": "a7a76fc4b9b4a8fd52d18f1e9192b28f8cee0d94",
+ "generatedAt": "2026-10-23T01:05:48.007Z",
+ "rubrosHuella": "63afd83473351fca3199c947ac19df269d8fcb4e",
  "rubros": [
   {
    "label": "Central income",
@@ -9,8 +9,8 @@
    "page": 6,
    "section": "nota que desglosa \"TURNOVER\"",
    "choice": "central_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.87,
+   "desdeCache": true
   },
   {
    "label": "Gate receipts",
@@ -18,8 +18,8 @@
    "page": 6,
    "section": "nota que desglosa \"TURNOVER\"",
    "choice": "gate_receipts",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.99,
+   "desdeCache": true
   },
   {
    "label": "Commercial activities",
@@ -27,8 +27,8 @@
    "page": 6,
    "section": "nota que desglosa \"TURNOVER\"",
    "choice": "commercial_activities",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.94,
+   "desdeCache": true
   },
   {
    "label": "Other income",
@@ -36,8 +36,8 @@
    "page": 6,
    "section": "nota que desglosa \"TURNOVER\"",
    "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 1,
+   "desdeCache": true
   },
   {
    "label": "Diferencia en el documento",
@@ -45,8 +45,8 @@
    "page": 20,
    "section": "nota que desglosa \"TURNOVER\"",
    "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.98,
+   "desdeCache": true
   },
   {
    "label": "Other operating income",
@@ -54,26 +54,35 @@
    "page": 20,
    "section": "estado",
    "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
-  },
-  {
-   "label": "Cost of sales",
-   "lado": "expense",
-   "page": 20,
-   "section": "estado",
-   "choice": "lump_rugby_operations_expense",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 1,
+   "desdeCache": true
   },
   {
    "label": "Administrative expenses",
    "lado": "expense",
    "page": 20,
    "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Cost of sales (sin el costo de personal)",
+   "lado": "expense",
+   "page": 20,
+   "section": "ajuste manual",
    "choice": "lump_rugby_operations_expense",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 20,
+   "section": "ajuste manual",
+   "choice": "squad_wages",
+   "confidence": 0.83,
+   "desdeCache": true
   }
  ]
 }

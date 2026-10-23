@@ -1,16 +1,53 @@
 {
  "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md",
- "generatedAt": "2026-10-21T02:17:10.088Z",
- "rubrosHuella": "b343602eb87fdfd744d76bfb64dc7fc4ea759f4d",
+ "generatedAt": "2026-10-23T01:05:47.646Z",
+ "rubrosHuella": "3c71c33d74d5173b61b5485e8169a2ae3ea3caad",
  "rubros": [
   {
-   "label": "Turnover",
-   "lado": "revenue",
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
    "page": 11,
-   "section": "estado",
-   "choice": "lump_rugby_operations",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "section": "ajuste manual",
+   "choice": "squad_wages",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "squad_wages",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "lump_rugby_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Cost of sales (sin el costo de personal)",
+   "lado": "expense",
+   "page": 11,
+   "section": "ajuste manual",
+   "choice": "lump_rugby_operations_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "lump_rugby_operations_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1068
   },
   {
    "label": "Fair value movements",
@@ -18,8 +55,22 @@
    "page": 11,
    "section": "estado",
    "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "central_income",
+     0
+    ],
+    [
+     "gate_receipts",
+     0
+    ]
+   ],
+   "tokens": 821
   },
   {
    "label": "Other operating income",
@@ -27,26 +78,68 @@
    "page": 11,
    "section": "estado",
    "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "central_income",
+     0
+    ],
+    [
+     "gate_receipts",
+     0
+    ]
+   ],
+   "tokens": 940
   },
   {
-   "label": "Cost of sales",
-   "lado": "expense",
+   "label": "Turnover",
+   "lado": "revenue",
    "page": 11,
    "section": "estado",
-   "choice": "lump_rugby_operations_expense",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "lump_rugby_operations",
+     0.38
+    ],
+    [
+     "commercial_activities",
+     0.05
+    ]
+   ],
+   "tokens": 807
   },
   {
    "label": "Administrative expenses",
    "lado": "expense",
    "page": 11,
    "section": "estado",
-   "choice": "lump_rugby_operations_expense",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "squad_wages",
+     0
+    ]
+   ],
+   "tokens": 1031
   }
  ]
 }

@@ -3,7 +3,7 @@
  "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.pdf",
  "club": "bathrugby-gb",
  "year": 2021,
- "generatedAt": "2026-10-21T02:16:27.602Z",
+ "generatedAt": "2026-10-23T01:05:46.834Z",
  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
  "rubros": [
   {
@@ -34,21 +34,30 @@
    ]
   },
   {
-   "label": "Cost of sales",
-   "lado": "expense",
-   "page": 11,
-   "section": "estado",
-   "values": [
-    14.103734
-   ]
-  },
-  {
    "label": "Administrative expenses",
    "lado": "expense",
    "page": 11,
    "section": "estado",
    "values": [
     4.418764
+   ]
+  },
+  {
+   "label": "Cost of sales (sin el costo de personal)",
+   "lado": "expense",
+   "page": 11,
+   "section": "ajuste manual",
+   "values": [
+    2.188725
+   ]
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 11,
+   "section": "ajuste manual",
+   "values": [
+    11.915009
    ]
   }
  ]

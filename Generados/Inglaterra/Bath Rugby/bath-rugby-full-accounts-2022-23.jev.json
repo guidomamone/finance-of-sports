@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md",
- "generatedAt": "2026-10-21T02:17:11.075Z",
- "rubrosHuella": "f1afeea150228b0c912e5175656c2dd504b7e349",
+ "generatedAt": "2026-10-23T01:05:48.007Z",
+ "rubrosHuella": "51daa91b14ab8ac7e42e4ff9c0bbd08744f9ab3c",
  "rubros": [
   {
    "label": "Central income",
@@ -9,8 +9,8 @@
    "page": 6,
    "section": "nota que desglosa \"Turnover\"",
    "choice": "central_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.87,
+   "desdeCache": true
   },
   {
    "label": "Gate receipts",
@@ -18,8 +18,8 @@
    "page": 6,
    "section": "nota que desglosa \"Turnover\"",
    "choice": "gate_receipts",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.99,
+   "desdeCache": true
   },
   {
    "label": "Commercial activities",
@@ -27,8 +27,8 @@
    "page": 6,
    "section": "nota que desglosa \"Turnover\"",
    "choice": "commercial_activities",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.94,
+   "desdeCache": true
   },
   {
    "label": "CVC income",
@@ -36,8 +36,8 @@
    "page": 6,
    "section": "nota que desglosa \"Turnover\"",
    "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.94,
+   "desdeCache": true
   },
   {
    "label": "Other income",
@@ -45,8 +45,8 @@
    "page": 6,
    "section": "nota que desglosa \"Turnover\"",
    "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 1,
+   "desdeCache": true
   },
   {
    "label": "Diferencia en el documento",
@@ -54,17 +54,35 @@
    "page": 19,
    "section": "nota que desglosa \"Turnover\"",
    "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.98,
+   "desdeCache": true
   },
   {
-   "label": "Miscellaneous other operating income",
-   "lado": "revenue",
-   "page": 28,
-   "section": "nota que desglosa \"Other operating income\"",
-   "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Cost of sales (sin el costo de personal)",
+   "lado": "expense",
+   "page": 19,
+   "section": "ajuste manual",
+   "choice": "lump_rugby_operations_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 19,
+   "section": "ajuste manual",
+   "choice": "squad_wages",
+   "confidence": 0.83,
+   "desdeCache": true
   },
   {
    "label": "Other revenue",
@@ -72,26 +90,45 @@
    "page": 28,
    "section": "nota que desglosa \"Other operating income\"",
    "choice": "other_income",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "commercial_activities",
+     0.01
+    ],
+    [
+     "central_income",
+     0
+    ]
+   ],
+   "tokens": 911
   },
   {
-   "label": "Cost of sales",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "choice": "lump_rugby_operations_expense",
-   "confidence": 0.5,
-   "origen": "sesión"
-  },
-  {
-   "label": "Administrative expenses",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "choice": "lump_rugby_operations_expense",
-   "confidence": 0.5,
-   "origen": "sesión"
+   "label": "Miscellaneous other operating income",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "central_income",
+     0
+    ],
+    [
+     "gate_receipts",
+     0
+    ]
+   ],
+   "tokens": 952
   }
  ]
 }

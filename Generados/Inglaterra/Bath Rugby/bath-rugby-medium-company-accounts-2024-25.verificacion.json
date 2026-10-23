@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
  "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.md",
- "generado": "2026-10-21T02:18:03.677Z",
- "scriptHuella": "f4b024927cf8",
+ "generado": "2026-10-23T01:05:46.865Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "bathrugby-gb",
  "year": 2025,
@@ -34,6 +34,43 @@
    "evidencia": "pág. 6 del visor, .md L167-174; pág. 20 del visor, .md L709",
    "autor": "Claude",
    "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
+   "campo": "fila",
+   "valor": "5.431.641,00",
+   "linea": 710,
+   "etiqueta": "Cost of sales (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Cost of sales",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-medium-company-accounts-2024-25.md L1132) está dentro de \"Cost of sales\": queda 20.059.154,00 - 14.627.513,00",
+   "evidencia": "bath-rugby-medium-company-accounts-2024-25.md L1132",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
+   "campo": "fila",
+   "valor": "14.627.513,00",
+   "linea": 710,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-medium-company-accounts-2024-25.md L1132) está dentro de \"Cost of sales\": el costo de personal va aparte",
+   "evidencia": "bath-rugby-medium-company-accounts-2024-25.md L1132",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "squad_wages",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-medium-company-accounts-2024-25.md L1132) está dentro de \"Cost of sales\": costo de personal -> squad_wages",
+   "evidencia": "bath-rugby-medium-company-accounts-2024-25.md L1132",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-23"
   }
  ],
  "cola": [],
@@ -55,18 +92,20 @@
    "dif": 0
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 20.888503; el sitio tiene 20.904488"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2024: 20.881503 en bath-rugby-full-accounts-2023-24.pdf y 20.888503 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
-  "ajuste manual: el desglose de \"TURNOVER\" se abre con una fila \"Diferencia en el documento\" de 39,778 (2026-10-21, 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 23,3); el Turnover del estado es 23.339.778. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.)"
+  "ajuste manual: el desglose de \"TURNOVER\" se abre con una fila \"Diferencia en el documento\" de 39,778 (2026-10-21, 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 23,3); el Turnover del estado es 23.339.778. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.)",
+  "ajuste manual: fila \"Cost of sales (sin el costo de personal)\" (gasto) 5.431.641,00, en lugar de \"Cost of sales\" (2026-10-23, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-medium-company-accounts-2024-25.md L1132) está dentro de \"Cost of sales\": queda 20.059.154,00 - 14.627.513,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 14.627.513,00 (2026-10-23, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-medium-company-accounts-2024-25.md L1132) está dentro de \"Cost of sales\": el costo de personal va aparte)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -132,20 +171,28 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Cost of sales",
-   "lado": "gasto",
-   "M": 20.059154,
-   "pagina": 20,
-   "linea": 710,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Administrative expenses",
    "lado": "gasto",
    "M": 6.251494,
    "pagina": 20,
    "linea": 712,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales (sin el costo de personal)",
+   "lado": "gasto",
+   "M": 5.431641,
+   "pagina": 20,
+   "linea": 710,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 14.627513,
+   "pagina": 20,
+   "linea": 710,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

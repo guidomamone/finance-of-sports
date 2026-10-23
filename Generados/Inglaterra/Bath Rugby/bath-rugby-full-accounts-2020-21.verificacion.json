@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md",
- "generado": "2026-10-21T02:18:03.560Z",
- "scriptHuella": "f4b024927cf8",
+ "generado": "2026-10-23T01:05:46.830Z",
+ "scriptHuella": "ffd3f13bb18c",
  "estado": "ok",
  "clubId": "bathrugby-gb",
  "year": 2021,
@@ -22,6 +22,43 @@
    "evidencia": "bath-rugby-full-accounts-2020-21.md L331-L734",
    "autor": "Claude",
    "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.pdf",
+   "campo": "fila",
+   "valor": "2.188.725,00",
+   "linea": 332,
+   "etiqueta": "Cost of sales (sin el costo de personal)",
+   "lado": "gasto",
+   "reemplaza": "Cost of sales",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2020-21.md L779) está dentro de \"Cost of sales\": queda 14.103.734,00 - 11.915.009,00",
+   "evidencia": "bath-rugby-full-accounts-2020-21.md L779",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.pdf",
+   "campo": "fila",
+   "valor": "11.915.009,00",
+   "linea": 332,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2020-21.md L779) está dentro de \"Cost of sales\": el costo de personal va aparte",
+   "evidencia": "bath-rugby-full-accounts-2020-21.md L779",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.pdf",
+   "campo": "categoria",
+   "valor": "squad_wages",
+   "linea": null,
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "motivo": "caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2020-21.md L779) está dentro de \"Cost of sales\": costo de personal -> squad_wages",
+   "evidencia": "bath-rugby-full-accounts-2020-21.md L779",
+   "autor": "caja-deuda --personal",
+   "fecha": "2026-10-23"
   }
  ],
  "cola": [],
@@ -53,7 +90,10 @@
    "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: fila \"Cost of sales (sin el costo de personal)\" (gasto) 2.188.725,00, en lugar de \"Cost of sales\" (2026-10-23, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2020-21.md L779) está dentro de \"Cost of sales\": queda 14.103.734,00 - 11.915.009,00)",
+  "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 11.915.009,00 (2026-10-23, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2020-21.md L779) está dentro de \"Cost of sales\": el costo de personal va aparte)"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
@@ -93,20 +133,28 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Cost of sales",
-   "lado": "gasto",
-   "M": 14.103734,
-   "pagina": 11,
-   "linea": 332,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Administrative expenses",
    "lado": "gasto",
    "M": 4.418764,
    "pagina": 11,
    "linea": 334,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales (sin el costo de personal)",
+   "lado": "gasto",
+   "M": 2.188725,
+   "pagina": 11,
+   "linea": 332,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Staff costs (total de la nota de personal)",
+   "lado": "gasto",
+   "M": 11.915009,
+   "pagina": 11,
+   "linea": 332,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

@@ -2,10 +2,10 @@
  "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md",
  "club": "bathrugby-gb",
  "year": 2023,
- "generatedAt": "2026-10-21T02:17:49.468Z",
- "rubrosHuella": "f1afeea150228b0c912e5175656c2dd504b7e349",
- "jevHuella": "131cc9e0abc64c7c088c3403a84a73ff91703533",
- "modelo": "sesión (Claude Code)",
+ "generatedAt": "2026-10-23T01:05:52.162Z",
+ "rubrosHuella": "51daa91b14ab8ac7e42e4ff9c0bbd08744f9ab3c",
+ "jevHuella": "777847c392296337b6b0087a989bd6d9584cce6b",
+ "modelo": "claude-opus-5-5",
  "costUsd": 0,
  "rubros": [
   {
@@ -16,7 +16,7 @@
    "pendiente": false,
    "ya": "central_income",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "central_income",
    "confianza": 1
   },
@@ -28,7 +28,7 @@
    "pendiente": false,
    "ya": "gate_receipts",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "gate_receipts",
    "confianza": 1
   },
@@ -40,7 +40,7 @@
    "pendiente": false,
    "ya": "commercial_activities",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "commercial_activities",
    "confianza": 1
   },
@@ -52,7 +52,7 @@
    "pendiente": false,
    "ya": "other_income",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
    "confianza": 1
   },
@@ -64,7 +64,7 @@
    "pendiente": false,
    "ya": "other_income",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
    "confianza": 1
   },
@@ -76,7 +76,7 @@
    "pendiente": false,
    "ya": "other_income",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
    "confianza": 1
   },
@@ -85,38 +85,24 @@
    "lado": "revenue",
    "section": "nota que desglosa \"Other operating income\"",
    "page": 28,
-   "pendiente": true,
-   "jev": "other_income",
-   "jevConf": 0.5,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 1,
    "categoria": "other_income",
-   "confianza": 0.9,
-   "motivo": "otros ingresos operativos varios (nota 4)"
+   "confianza": 1
   },
   {
    "label": "Other revenue",
    "lado": "revenue",
    "section": "nota que desglosa \"Other operating income\"",
    "page": 28,
-   "pendiente": true,
-   "jev": "other_income",
-   "jevConf": 0.5,
-   "escalon": 2,
-   "categoria": "other_income",
-   "confianza": 0.9,
-   "motivo": "otros ingresos operativos (nota 4)"
-  },
-  {
-   "label": "Cost of sales",
-   "lado": "expense",
-   "section": "estado",
-   "page": 19,
    "pendiente": false,
-   "ya": "lump_rugby_operations_expense",
-   "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
-   "categoria": "lump_rugby_operations_expense",
-   "confianza": 1
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
   },
   {
    "label": "Administrative expenses",
@@ -126,9 +112,37 @@
    "pendiente": false,
    "ya": "lump_rugby_operations_expense",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "lump_rugby_operations_expense",
    "confianza": 1
+  },
+  {
+   "label": "Cost of sales (sin el costo de personal)",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "page": 19,
+   "pendiente": false,
+   "ya": "lump_rugby_operations_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "lump_rugby_operations_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "page": 19,
+   "pendiente": false,
+   "ya": "squad_wages",
+   "escalon": 2,
+   "confCache": 0.85,
+   "motivo": "Total de la nota de personal sin separar; criterio: squad_wages toma el total si no se separa.",
+   "jev": "squad_wages",
+   "jevConf": 0.83,
+   "desdeCache": true,
+   "categoria": "squad_wages",
+   "confianza": 0.85
   }
  ]
 }

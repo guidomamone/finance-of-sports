@@ -3,7 +3,7 @@
  "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.pdf",
  "club": "bathrugby-gb",
  "year": 2023,
- "generatedAt": "2026-10-21T02:16:27.670Z",
+ "generatedAt": "2026-10-23T01:05:46.858Z",
  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
  "rubros": [
   {
@@ -79,21 +79,30 @@
    ]
   },
   {
-   "label": "Cost of sales",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    18.505213
-   ]
-  },
-  {
    "label": "Administrative expenses",
    "lado": "expense",
    "page": 19,
    "section": "estado",
    "values": [
     6.064013
+   ]
+  },
+  {
+   "label": "Cost of sales (sin el costo de personal)",
+   "lado": "expense",
+   "page": 19,
+   "section": "ajuste manual",
+   "values": [
+    3.61945
+   ]
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "page": 19,
+   "section": "ajuste manual",
+   "values": [
+    14.885763
    ]
   }
  ]

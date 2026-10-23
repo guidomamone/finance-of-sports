@@ -46,7 +46,7 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 ### Ingresos
 
 ```text
-2025: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2025: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -63,17 +63,11 @@ Generados/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.categ
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Cost of sales | pág. 20, precedente |
-| 2 | Administrative expenses | pág. 20, precedente |
+| 1 | Administrative expenses | pág. 20, precedente |
+| 2 | Cost of sales (sin el costo de personal) | pág. 20, precedente |
+| 3 | Staff costs (total de la nota de personal) | pág. 20, precedente |
 
 ### Meta
-
-```text
-2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): filas-a-mano. Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
-2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): desglose = 39,778. 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 23,3); el Turnover del estado es 23.339.778. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.
-tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
 
 ```text
 tools/caja-deuda.mjs (2026-10-21): cash escalón 1 (compuerta: documento anterior): "Cash at bank and in hand" pág. 21
@@ -81,6 +75,16 @@ tools/caja-deuda.mjs (2026-10-21): cash escalón 1 (compuerta: documento anterio
 
 ```text
 tools/caja-deuda.mjs --personal (2026-10-23): staffCost 14.627513 (compuerta: estructura de la nota): estructura de la nota (la suma cierra): bath-rugby-medium-company-accounts-2024-25.md L1132 "(total sin rótulo: suma las filas de arriba)"
+```
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): filas-a-mano. Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): desglose = 39,778. 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 23,3); el Turnover del estado es 23.339.778. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): fila = 5.431.641,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-medium-company-accounts-2024-25.md L1132) está dentro de "Cost of sales": queda 20.059.154,00 - 14.627.513,00
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): fila = 14.627.513,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-medium-company-accounts-2024-25.md L1132) está dentro de "Cost of sales": el costo de personal va aparte
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): categoria = squad_wages. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-medium-company-accounts-2024-25.md L1132) está dentro de "Cost of sales": costo de personal -> squad_wages
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ## 2024
@@ -126,7 +130,7 @@ tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 1b (compuerta: documento a
 ### Ingresos
 
 ```text
-2023: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2023: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -138,27 +142,31 @@ Generados/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.categorias.json
 | 4 | CVC income | pág. 6, precedente |
 | 5 | Other income | pág. 6, precedente |
 | 6 | Diferencia en el documento | pág. 19, precedente |
-| 7 | Miscellaneous other operating income | pág. 28, Claude 0.9 |
-| 8 | Other revenue | pág. 28, Claude 0.9 |
+| 7 | Miscellaneous other operating income | pág. 28, Jev 1 |
+| 8 | Other revenue | pág. 28, Jev 0.99 |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Cost of sales | pág. 19, precedente |
-| 2 | Administrative expenses | pág. 19, precedente |
+| 1 | Administrative expenses | pág. 19, precedente |
+| 2 | Cost of sales (sin el costo de personal) | pág. 19, precedente |
+| 3 | Staff costs (total de la nota de personal) | pág. 19, precedente |
 
 ### Meta
 
 ```text
-2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): filas-a-mano. Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
-2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): desglose = 44,435. 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 19,7); el Turnover del estado es 19.744.435. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.
-tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 14.885763 (compuerta: documento siguiente): estructura de la nota (la suma cierra): bath-rugby-full-accounts-2022-23.md L1046 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ```text
-tools/caja-deuda.mjs --personal (2026-10-23): staffCost 14.885763 (compuerta: documento siguiente): estructura de la nota (la suma cierra): bath-rugby-full-accounts-2022-23.md L1046 "(total sin rótulo: suma las filas de arriba)"
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): filas-a-mano. Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): desglose = 44,435. 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 19,7); el Turnover del estado es 19.744.435. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): fila = 3.619.450,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2022-23.md L1046) está dentro de "Cost of sales": queda 18.505.213,00 - 14.885.763,00
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): fila = 14.885.763,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2022-23.md L1046) está dentro de "Cost of sales": el costo de personal va aparte
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): categoria = squad_wages. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2022-23.md L1046) está dentro de "Cost of sales": costo de personal -> squad_wages
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ## 2022
@@ -166,17 +174,17 @@ tools/caja-deuda.mjs --personal (2026-10-23): staffCost 14.885763 (compuerta: do
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Central income | pág. 5, Claude 0.9 |
-| 2 | Gate receipts | pág. 5, Claude 0.9 |
-| 3 | Commercial activities | pág. 5, Claude 0.9 |
-| 4 | CVC income | pág. 5, Claude 0.9 |
-| 5 | Other income | pág. 5, Claude 0.9 |
+| 1 | Central income | pág. 5, precedente |
+| 2 | Gate receipts | pág. 5, precedente |
+| 3 | Commercial activities | pág. 5, precedente |
+| 4 | CVC income | pág. 5, precedente |
+| 5 | Other income | pág. 5, precedente |
 | 6 | Diferencia en el documento | pág. 17, precedente |
 | 7 | Fair value movements | pág. 17, precedente |
 | 8 | Other operating income | pág. 17, precedente |
@@ -185,17 +193,11 @@ Generados/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.categorias.json
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Cost of sales | pág. 17, precedente |
-| 2 | Administrative expenses | pág. 17, precedente |
+| 1 | Administrative expenses | pág. 17, precedente |
+| 2 | Cost of sales (sin el costo de personal) | pág. 17, precedente |
+| 3 | Staff costs (total de la nota de personal) | pág. 17, precedente |
 
 ### Meta
-
-```text
-2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): filas-a-mano. Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
-2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): desglose = 19,557. 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 19,8); el Turnover del estado es 19.819.557. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.
-tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
 
 ```text
 tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 1b (compuerta: documento siguiente): "Creditors: Amounts falling due after more than one" pág. 18; cash escalón 1 (compuerta: documento siguiente): "Cash at bank and in hand" pág. 18
@@ -205,42 +207,56 @@ tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 1b (compuerta: documento s
 tools/caja-deuda.mjs --personal (2026-10-23): staffCost 12.165369 (compuerta: documento siguiente): estructura de la nota (la suma cierra): bath-rugby-full-accounts-2021-22.md L968 "(total sin rótulo: suma las filas de arriba)"
 ```
 
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): filas-a-mano. Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): desglose = 19,557. 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 19,8); el Turnover del estado es 19.819.557. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): fila = 3.440.133,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2021-22.md L968) está dentro de "Cost of sales": queda 15.605.502,00 - 12.165.369,00
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): fila = 12.165.369,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2021-22.md L968) está dentro de "Cost of sales": el costo de personal va aparte
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): categoria = squad_wages. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2021-22.md L968) está dentro de "Cost of sales": costo de personal -> squad_wages
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## 2021
 
 ### Ingresos
 
 ```text
-2021: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2021: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Turnover | pág. 11, Claude 0.9 |
-| 2 | Fair value movements | pág. 11, Claude 0.9 |
-| 3 | Other operating income | pág. 11, Claude 0.9 |
+| 2 | Fair value movements | pág. 11, precedente |
+| 3 | Other operating income | pág. 11, precedente |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Cost of sales | pág. 11, Claude 0.9 |
-| 2 | Administrative expenses | pág. 11, Claude 0.9 |
+| 1 | Administrative expenses | pág. 11, precedente |
+| 2 | Cost of sales (sin el costo de personal) | pág. 11, precedente |
+| 3 | Staff costs (total de la nota de personal) | pág. 11, precedente |
 
 ### Meta
 
 ```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 11.915009 (compuerta: documento siguiente): estructura de la nota (la suma cierra): bath-rugby-full-accounts-2020-21.md L779 "(total sin rótulo: suma las filas de arriba)"
+```
+
+```text
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): filas-a-mano. Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
-tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): fila = 2.188.725,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2020-21.md L779) está dentro de "Cost of sales": queda 14.103.734,00 - 11.915.009,00
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): fila = 11.915.009,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2020-21.md L779) está dentro de "Cost of sales": el costo de personal va aparte
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-23): categoria = squad_wages. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene squad_wages y el costo de personal confirmado (staffCost, bath-rugby-full-accounts-2020-21.md L779) está dentro de "Cost of sales": costo de personal -> squad_wages
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-21): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025)
-```
-
-```text
-tools/caja-deuda.mjs --personal (2026-10-23): staffCost 11.915009 (compuerta: documento siguiente): estructura de la nota (la suma cierra): bath-rugby-full-accounts-2020-21.md L779 "(total sin rótulo: suma las filas de arriba)"
+tools/dentro-de-otro.mjs (2026-10-23): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025)
 ```
 
 ### Liga

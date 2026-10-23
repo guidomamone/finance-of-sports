@@ -2,10 +2,10 @@
  "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md",
  "club": "bathrugby-gb",
  "year": 2022,
- "generatedAt": "2026-10-21T02:17:48.723Z",
- "rubrosHuella": "79f36ac6dd0c7567c53ac4cfc1a09e23628aa37d",
- "jevHuella": "eb1c9d25ab1eabe92ccdc08cdcca9bbd4d1a0400",
- "modelo": "sesión (Claude Code)",
+ "generatedAt": "2026-10-23T01:05:52.151Z",
+ "rubrosHuella": "dff0775f78cf8c3e703e61058432b2dc06e73e5d",
+ "jevHuella": "610984050ce5befde2e22eb21823482eb3d5fd25",
+ "modelo": "claude-opus-5-5",
  "costUsd": 0,
  "rubros": [
   {
@@ -13,78 +13,72 @@
    "lado": "revenue",
    "section": "nota que desglosa \"Turnover\"",
    "page": 5,
-   "pendiente": true,
-   "jev": "central_income",
-   "jevConf": 0.5,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "central_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "central_income",
-   "confianza": 0.9,
-   "motivo": "reparto de Premiership Rugby (TV y comercial central) y de la RFU, fila Central income del Strategic Report"
+   "confianza": 1
   },
   {
    "label": "Gate receipts",
    "lado": "revenue",
    "section": "nota que desglosa \"Turnover\"",
    "page": 5,
-   "pendiente": true,
-   "jev": "gate_receipts",
-   "jevConf": 0.5,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "gate_receipts",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "gate_receipts",
-   "confianza": 0.9,
-   "motivo": "entradas y abonos de los partidos, fila Gate receipts del Strategic Report"
+   "confianza": 1
   },
   {
    "label": "Commercial activities",
    "lado": "revenue",
    "section": "nota que desglosa \"Turnover\"",
    "page": 5,
-   "pendiente": true,
-   "jev": "commercial_activities",
-   "jevConf": 0.5,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "commercial_activities",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "commercial_activities",
-   "confianza": 0.9,
-   "motivo": "hospitalidad, comida y bebida, sponsors, merchandising y eventos, fila Commercial activities"
+   "confianza": 1
   },
   {
    "label": "CVC income",
    "lado": "revenue",
    "section": "nota que desglosa \"Turnover\"",
    "page": 5,
-   "pendiente": true,
-   "jev": "other_income",
-   "jevConf": 0.5,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.9,
-   "motivo": "anticipo del acuerdo de CVC con Premiership Rugby reconocido en 48 meses; votación 3 a 0 (CONVENCIONES-DATOS): other_income"
+   "confianza": 1
   },
   {
    "label": "Other income",
    "lado": "revenue",
    "section": "nota que desglosa \"Turnover\"",
    "page": 5,
-   "pendiente": true,
-   "jev": "other_income",
-   "jevConf": 0.5,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.9,
-   "motivo": "ingresos varios sin otra categoría, fila Other income del Strategic Report"
+   "confianza": 1
   },
   {
    "label": "Diferencia en el documento",
    "lado": "revenue",
    "section": "nota que desglosa \"Turnover\"",
    "page": 17,
-   "pendiente": true,
-   "jev": "other_income",
-   "jevConf": 0.5,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.9,
-   "motivo": "diferencia de redondeo entre el Turnover exacto y la tabla en £m del Strategic Report (decisión 11 del plan 248)"
+   "confianza": 1
   },
   {
    "label": "Fair value movements",
@@ -94,7 +88,7 @@
    "pendiente": false,
    "ya": "other_income",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
    "confianza": 1
   },
@@ -106,20 +100,8 @@
    "pendiente": false,
    "ya": "other_income",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 1
-  },
-  {
-   "label": "Cost of sales",
-   "lado": "expense",
-   "section": "estado",
-   "page": 17,
-   "pendiente": false,
-   "ya": "lump_rugby_operations_expense",
-   "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
-   "categoria": "lump_rugby_operations_expense",
    "confianza": 1
   },
   {
@@ -130,9 +112,37 @@
    "pendiente": false,
    "ya": "lump_rugby_operations_expense",
    "escalon": 0,
-   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "lump_rugby_operations_expense",
    "confianza": 1
+  },
+  {
+   "label": "Cost of sales (sin el costo de personal)",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "page": 17,
+   "pendiente": false,
+   "ya": "lump_rugby_operations_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "lump_rugby_operations_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Staff costs (total de la nota de personal)",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "page": 17,
+   "pendiente": false,
+   "ya": "squad_wages",
+   "escalon": 2,
+   "confCache": 0.85,
+   "motivo": "Total de la nota de personal sin separar; criterio: squad_wages toma el total si no se separa.",
+   "jev": "squad_wages",
+   "jevConf": 0.83,
+   "desdeCache": true,
+   "categoria": "squad_wages",
+   "confianza": 0.85
   }
  ]
 }
