@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1005 — `verificar()` partida en 13 fases con un `ctx` [399 · verificar.mjs]
+
+- `verificar()` (1.623 líneas) queda en ~25: `faseEntrada`, `faseArmar`, `faseVecinos`, `faseLecturas`, `faseEvaluar`, `faseEscalones`, `faseEscalonesD`, `faseCierre`, `faseAnioAnterior`, `faseDudas`, `faseRespuestas`, `faseResultadoFinal` y `faseSalida` (la mayor, `armar()`, 324). Las 27 variables `let` que se reasignan entre fases o dentro de una función (`E`, `ing`, `gas`, `okRes`, `escalon17`, `forzado`, …) viven en el `ctx` y cada uso se escribe `ctx.N`; el resto pasa por copia.
+- El script que corta (en el scratchpad) mide llaves, strings, plantillas y regex, avisa de una variable que cambia entre fases y no deja cortar en medio de un bloque.
+- Medición: lote chico, mediano y completo, `verificar` con 2 pasadas: idéntico; además una corrida con un `ctx` que falla si una fase pide algo que nadie dejó (989 documentos, 0 errores). `fos imports`: ningún faltante. Veredicto general (mudanza dentro del archivo).
+
 ## Versión 1004 — `proponer()` de cargar.mjs partida en 11 fases con un `ctx` [399 · cargar.mjs]
 
 - `proponer()` (914 líneas) queda en ~50: `faseRegistro`, `faseClubYAnio`, `faseFilas`, `faseCategorias`, `faseCeros`, `faseSinCategoria`, `faseSignos`, `faseTotales`, `faseIxbrl`, `faseFxYLiga` y `faseEjercicio`. Cada fase lee de un `ctx` lo que usa y deja lo que las siguientes necesitan; un `return corta(…)` devuelve `P` y corta todo. Mismo texto de cada tramo, cortado por línea con un script (que decide qué lee y qué deja cada fase); sigue en un archivo, el motivo de `tool-grande` queda.
