@@ -1,0 +1,56 @@
+#!/usr/bin/env node
+// ============================================================================
+// tools/limpiar-comentarios.mjs — saca de los comentarios de tools/ la historia que se puede sacar sin leer: «(to-do 345)», «(Versión 812)»,
+// «(2026-10-21)» entre paréntesis y un «TODO 371:» al empezar un comentario. Toca SOLO texto de comentarios (los ubica
+// `scan` de comparar-sin-comentarios.js); lo que no es un caso así queda para limpiar a mano (Admin/CONVENCIONES.md, «Comentarios en tools/»).
+//
+//   node tools/limpiar-comentarios.mjs                 ensayo: cuántas referencias saca en cada tool, sin escribir
+//   node tools/limpiar-comentarios.mjs --escribir [a.mjs b.js …]   las reescribe (default: todas); después `node tools/comparar-sin-comentarios.js --tools`
+// ============================================================================
+import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { createRequire } from 'node:module';
+import { join, resolve } from 'node:path';
+
+const ROOT = resolve(import.meta.dirname, '..');
+const { scan, HISTORIA } = createRequire(import.meta.url)('./comparar-sin-comentarios.js');
+
+const REF = '(?:Versi[oó]n(?:es)?|to-?dos?|TODO)\\s*(?:n[°º]\\s*)?\\d{1,4}(?:\\s*(?:,|y|e|/|·)\\s*\\d{1,4})*';
+const FECHA = '20\\d\\d-\\d\\d-\\d\\d';
+const ALGO = `(?:${REF}|${FECHA})`;
+// un paréntesis que contiene solo referencias y fechas
+const PAREN = new RegExp(`\\s*\\(\\s*${ALGO}(?:\\s*(?:,|;|·|y|/|—)?\\s*${ALGO})*\\s*\\)`, 'gi');
+// «TODO 371: …» o «to-do 345 — …» al empezar el comentario
+const INICIO = new RegExp(`^((?://|/\\*+|\\*)\\s*)${REF}\\s*[:—-]\\s*`, 'i');
+
+export function limpiarTexto(texto) {
+  return texto.split('\n').map((l) => l.replace(PAREN, '').replace(INICIO, '$1')).join('\n');
+}
+
+export function limpiar(rel, src) {
+  const { comments } = scan(rel, src);
+  let out = '', i = 0, sacadas = 0;
+  for (const c of comments) {
+    const nuevo = limpiarTexto(c.text);
+    sacadas += (c.text.match(HISTORIA) || []).length - (nuevo.match(HISTORIA) || []).length;
+    out += src.slice(i, c.pos) + nuevo; i = c.pos + c.text.length;
+  }
+  return { src: out + src.slice(i), sacadas };
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const A = process.argv.slice(2);
+  const escribir = A.includes('--escribir');
+  const dados = A.filter((a) => !a.startsWith('--'));
+  const archivos = dados.length ? dados : readdirSync(join(ROOT, 'tools')).filter((f) => /\.(mjs|js)$/.test(f) && f !== 'limpiar-comentarios.mjs').sort();
+  let total = 0, tocadas = 0;
+  for (const f of archivos) {
+    const ruta = join(ROOT, 'tools', f);
+    const src = readFileSync(ruta, 'utf8');
+    const r = limpiar(`tools/${f}`, src);
+    if (!r.sacadas) continue;
+    total += r.sacadas; tocadas++;
+    if (escribir) writeFileSync(ruta, r.src);
+    else console.log(`  ${f.padEnd(36)} -${r.sacadas}`);
+  }
+  console.log(`${escribir ? 'Reescritas' : 'Sacaría'} ${total} referencias en ${tocadas} tools.${escribir ? ' Probá: node tools/comparar-sin-comentarios.js --tools' : ' (--escribir las saca)'}`);
+}

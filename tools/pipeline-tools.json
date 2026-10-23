@@ -126,6 +126,7 @@
  "no_pipeline": {
   "archivar.mjs": "orden: archiva un documento cerrado",
   "cerrar.mjs": "orden: el cierre de una tarea (TODO, índice, auditoría, CHANGELOG)",
+  "limpiar-comentarios.mjs": "orden: saca la historia de los comentarios de tools/ (solo texto de comentarios; se prueba con comparar-sin-comentarios --tools)",
   "patron.mjs": "orden: el veredicto general, parche o rechazada de una mejora a una tool (cuenta documentos, mira los nombres, toma la medición)",
   "probar-medir-pipeline.mjs": "prueba: medir-pipeline.mjs en un repo de juguete",
   "personal-pendientes.mjs":"orden: corre caja-deuda --personal en los clubes con sin-salarios (sin lógica propia)",
