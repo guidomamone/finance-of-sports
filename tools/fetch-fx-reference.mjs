@@ -369,6 +369,7 @@ async function runOne(code, from, to) {
     console.error(`  ${code}: la API no devolvió ningún dato -- no piso el archivo existente.`);
     return;
   }
+  if (process.argv.includes('--ensayo')) { console.log(`  Ensayo: ${dates.length} cotizaciones (${dates[0]} a ${dates[dates.length - 1]}); no se escribió nada.`); return; }
   mkdirSync(outDir, { recursive: true });
   const out = {
     label: cfg.label,

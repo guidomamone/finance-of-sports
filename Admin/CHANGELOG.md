@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 985 — Lo que dejó pensando la noche de las particiones [375]
+
+- `medir pipeline`: `indice-md-desfasado` ya no pide razón escrita (cualquier tool nueva o mudada mueve el conteo de citas del índice; se regenera al commitear y `audit.js` lo avisa si no); y `--medidor X` avisa cuando X no es medidor de las tools cambiadas (antes se ignoraba en silencio y se creía medido con ese: pasó con `cargar` y `alta-club.mjs`, que ahora lo lleva).
+- `fetch-fx-reference.mjs --ensayo`: baja y cuenta sin escribir (una prueba con `--from/--to` había pisado `tools/fx-reference/ars-usd.json`; se revirtió con git).
+- Anotado: `alta-club.mjs --informe-backtest` falla con un TypeError de `fiscalYearMeta` sobre un backtest viejo, antes y después de las particiones.
+
 ## Versión 984 — Tamaño de las tools: aviso `tool-grande`, excepciones con motivo, ids que no se reutilizan [375 · 399]
 
 - Aviso P3 `tool-grande` en `audit.js` (más de 40 KB sin motivo en `tools/tamanos-aceptados.json`); regla en `Admin/CONVENCIONES.md`, «Tamaño de las tools». Quedan con motivo siete tools que no se pueden partir moviendo un bloque: `verificar.mjs` (una función de ~1.600 líneas), `cargar.mjs` (`proponer()`, 892), `alta-club.mjs` (`analizar()`, 365), `audit.js` (CommonJS con contexto compartido), `lote.mjs` (un solo flujo), `perimetro-senales.mjs` (estado compartido `cacheA2`) y `vocabulario-datos.mjs` (una tabla). Lo que sigue es el punto 399 (refactor de esas funciones, una por vez). Medido: audit idéntico; veredicto general.

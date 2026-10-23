@@ -115,7 +115,11 @@ if (base === 'HEAD' && !A.includes('--ensayo') && !flag('--lote') && !flag('--me
 }
 
 // ---- plan ------------------------------------------------------------------
-const medidores = [...new Set(nombres.flatMap((n) => info(n).medidores))].filter((m) => !flag('--medidor') || flag('--medidor').split(',').includes(m));
+const medidoresDelPlan = [...new Set(nombres.flatMap((n) => info(n).medidores))];
+const medidores = medidoresDelPlan.filter((m) => !flag('--medidor') || flag('--medidor').split(',').includes(m));
+// --medidor solo ELIGE entre los de las tools cambiadas: uno que no es de ninguna se ignoraba en silencio (se creía medido con ese)
+const noAplican = (flag('--medidor') || '').split(',').filter((m) => m && !medidoresDelPlan.includes(m));
+if (noAplican.length) console.log(`Aviso: ${noAplican.join(', ')} no es medidor de ${nombres.join(', ')} (sus medidores: ${medidoresDelPlan.join(', ')}); no se corre. Para sumarlo, agregalo a la tool en tools/pipeline-tools.json.`);
 const minimo = nombres.some((n) => info(n).alcance === 'compartida') ? 'completo' : 'mediano';
 // los medidores que miden todo el sitio (audit, caja-deuda, contexto, xhtml, alta) no usan lista: con solo esos, el lote es «el sitio» y no hay cobertura que exigir
 const hayLista = medidores.some((m) => T.medidores[m].usaLista);
@@ -264,7 +268,8 @@ const RESUMIDORES = {
     const por = new Map();
     for (const l of lineas) { const m = l.match(/^([-+]) (P\d) (\S+)/); if (m) { const c = por.get(m[3]) || { mas: 0, menos: 0 }; if (m[1] === '+') c.mas++; else c.menos++; por.set(m[3], c); } }
     let atencion = 0; const out = [];
-    for (const [cod, c] of por) { const neto = c.mas - c.menos; if (neto > 0) atencion += neto; out.push(`${cod}: ${c.menos} que se van, ${c.mas} que aparecen${neto > 0 ? ` (${neto} NUEVO${neto > 1 ? 'S' : ''})` : ''}`); }
+    // `indice-md-desfasado` no pide razón: el índice cuenta cuántas tools citan cada .md y cualquier tool nueva o mudada lo mueve; se regenera al commitear y audit.js lo avisa si no
+    for (const [cod, c] of por) { const neto = c.mas - c.menos; if (neto > 0 && cod !== 'indice-md-desfasado') atencion += neto; out.push(`${cod}: ${c.menos} que se van, ${c.mas} que aparecen${neto > 0 ? ` (${neto} NUEVO${neto > 1 ? 'S' : ''})` : ''}`); }
     return { atencion, lineas: out };
   },
 };
