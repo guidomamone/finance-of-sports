@@ -927,6 +927,15 @@ function checkCabeceraLargaEnTools() {
   add('P3', 'cabecera-larga-en-tools', `${largas.length} tools con una cabecera de más de ${CABECERA_MAX} líneas; las más largas: ${largas.slice(0, 5).map(r => `${r.f} (${r.cabecera})`).join(', ')}. Dejá el porqué, el uso y las trampas; el resto está en Admin/PIPELINE.md`);
 }
 
+// Una tool de más de TOOL_MAX_KB no se lee entera (CLAUDE.md): se parte en módulos (`node tools/fos.mjs mover`) o queda con su motivo en tools/tamanos-aceptados.json ({ "<tool>": "motivo" }). P3.
+const TOOL_MAX_KB = 40;
+function checkToolGrande() {
+  let aceptadas = {}; try { aceptadas = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools', 'tamanos-aceptados.json'), 'utf8')); } catch (e) { /* sin excepciones */ }
+  const grandes = fs.readdirSync(path.join(ROOT, 'tools')).filter(f => /\.(mjs|js)$/.test(f)).map(f => ({ f, kb: fs.statSync(path.join(ROOT, 'tools', f)).size / 1024 })).filter(x => x.kb > TOOL_MAX_KB && !aceptadas[x.f]).sort((a, b) => b.kb - a.kb);
+  if (!grandes.length) return;
+  add('P3', 'tool-grande', `${grandes.length} tools de más de ${TOOL_MAX_KB} KB sin motivo escrito: ${grandes.slice(0, 5).map(x => `${x.f} (${Math.round(x.kb)} KB)`).join(', ')}. Partila con node tools/fos.mjs mover (rango de fos mapa) o escribí el motivo en tools/tamanos-aceptados.json`);
+}
+
 function checkHistoriaEnDocs() {
   const archivos = [...DOCS_DE_CRITERIO, ...mdsDeSkills()].filter(f => fs.existsSync(path.join(ROOT, f)));
   for (const [clave, re, nombre] of HISTORIA_EN_DOCS) {
@@ -2212,6 +2221,7 @@ function main() {
   checkHistoriaEnDocs();
   checkComentarioHistoricoEnTools();
   checkCabeceraLargaEnTools();
+  checkToolGrande();
   checkDudasResueltas();
   checkRegistrosSinLector();
   checkMedicionesSinDestino();

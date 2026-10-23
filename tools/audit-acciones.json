@@ -105,6 +105,11 @@
   "quien": "sesion",
   "donde": "skill club-sourcing, referencia/liga-y-sponsor.md"
  },
+ "tool-grande": {
+  "hacer": "node tools/fos.mjs mapa <tool> y node tools/fos.mjs mover <tool> <desde>-<hasta> <destino.mjs> (ensayo por defecto), después node tools/fos.mjs medir pipeline. Si no se puede partir sin cambiar el código (una sola función enorme, estado compartido), el motivo va en tools/tamanos-aceptados.json.",
+  "quien": "sesion",
+  "donde": "Admin/CONVENCIONES.md, «Tamaño de las tools»"
+ },
  "cabecera-larga-en-tools": {
   "hacer": "node tools/fos.mjs acortar-cabecera <tool> (ensayo) y --escribir: deja el principio y el USO y manda el resto, tal cual, a Admin/NOTAS-DE-TOOLS.md; prueba solo que el código no cambió. Una excepción va con su motivo en tools/cabeceras-aceptadas.json.",
   "quien": "sesion",

@@ -75,7 +75,10 @@ if (A[0] === '--nuevo') {
   if (pos < 1 || pos > puntos.length + 1) { console.error(`--pos ${pos} fuera de rango: va de 1 a ${puntos.length + 1}.`); process.exit(1); }
   const igual = puntos.find((x) => x.titulo.toLowerCase().includes(titulo.toLowerCase()));
   if (igual) console.error(`Aviso: ya hay un punto con ese título (${igual.id}).`);
-  const id = String(Math.max(...puntos.map((x) => Number(x.id))) + 1);
+  // el id siguiente al más alto USADO alguna vez: los de los puntos abiertos y los que los títulos del CHANGELOG (y su archivo) ya citaron entre corchetes
+  const citados = [resolve(ROOT, 'Admin', 'CHANGELOG.md'), ...['CHANGELOG-v300-v672.md', 'CHANGELOG-v010-v299.md'].map((f) => resolve(ROOT, 'Admin', 'Archive', f))]
+    .flatMap((f) => { try { return [...readFileSync(f, 'utf8').matchAll(/^## .*\[(\d{3}[^\]]*)\]\s*$/gm)].flatMap((m) => m[1].match(/\b\d{3}\b/g) || []); } catch { return []; } }).map(Number);
+  const id = String(Math.max(...puntos.map((x) => Number(x.id)), ...citados) + 1);
   const bloque = [`### ${pos}. ${id} · (${rol}): ${titulo}`, '', '…', 'Terminado cuando: …', '', 'Verificar: manual', ''];
   // antes del punto que hoy ocupa ese lugar; al final, después del cuerpo del último
   let en = pos <= puntos.length ? puntos[pos - 1].i : puntos[puntos.length - 1].fin;

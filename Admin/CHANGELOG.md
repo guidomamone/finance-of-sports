@@ -18,7 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 983 — Primera partición de tools/: caja-deuda.mjs → caja-deuda-md.mjs [375]
+## Versión 984 — Tamaño de las tools: aviso `tool-grande`, excepciones con motivo, ids que no se reutilizan [375 · 399]
+
+- Aviso P3 `tool-grande` en `audit.js` (más de 40 KB sin motivo en `tools/tamanos-aceptados.json`); regla en `Admin/CONVENCIONES.md`, «Tamaño de las tools». Quedan con motivo siete tools que no se pueden partir moviendo un bloque: `verificar.mjs` (una función de ~1.600 líneas), `cargar.mjs` (`proponer()`, 892), `alta-club.mjs` (`analizar()`, 365), `audit.js` (CommonJS con contexto compartido), `lote.mjs` (un solo flujo), `perimetro-senales.mjs` (estado compartido `cacheA2`) y `vocabulario-datos.mjs` (una tabla). Lo que sigue es el punto 399 (refactor de esas funciones, una por vez). Medido: audit idéntico; veredicto general.
+- `todo.mjs --nuevo`: el id nuevo es el siguiente al más alto usado alguna vez, mirando también los títulos del CHANGELOG y su archivo: antes reutilizaba el de un punto cerrado (se vio al crear el 399). Medido: audit idéntico; veredicto general.
+
+## Versión 983 — Particiones de tools/ con `fos mover`: caja-deuda, cargar, vocabulario, estadio-sponsor, resolver-inventario, categorizar-claude, fetch-fx y alta-club [375]
 
 - `fos mover caja-deuda.mjs 53-465 caja-deuda-md.mjs`: el parseo del `.md` de un balance (importes, columnas de notas, filas y totales; 413 líneas, 38 KB) sale de `caja-deuda.mjs` (de 113 a 78 KB) a su módulo; `caja-deuda.mjs` lo importa y re-exporta `coincide`, `parseNumber`, `filasDelMd` y `r6` (los llamadores no cambian). Seis constantes puras se duplican en el módulo (`PAG_RE`, `IMPORTE_RE`, …). Medido (caja-deuda, caja-deuda-personal, personal-ensayos, audit): idéntico salvo `indice-md-desfasado` (el índice cuenta cuántas tools citan cada `.md` y el módulo cita uno más; explicado, índice regenerado).
 - `caja-deuda.mjs` 55-261 → `caja-deuda-propuestas.mjs` (20 KB: las propuestas de la escalera, precedente, vocabulario, IA y Jev; `caja-deuda.mjs` queda en 59 KB). Medido: idéntico en los cuatro medidores.
