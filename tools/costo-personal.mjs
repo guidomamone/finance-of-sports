@@ -11,6 +11,7 @@ import * as EV from './evidencia-club.mjs';
 import { esTotal } from './vocabulario.mjs';
 import { modificarClub } from './club-json.mjs';
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
+import { registrarCaso, resolverCaso } from './casos-sin-resolver.mjs';
 import { categoriaDeSueldos, deporteDeClub, deporteEnFrase } from './deporte-club.mjs';
 import { coincide, parseNumber, filasDelMd, r6, avisarRecorte, pedirJev, sitio, escalaDe, aniosDe, filasCache, HOY } from './caja-deuda.mjs';
 
@@ -121,16 +122,17 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
   const res = [];
   for (const [anio, x] of porAnio) {
     const base = { clubId, anio, real: x.a.m.staffCost ?? null };
-    if (!x.fila) { res.push({ ...base, valor: null, como: x.jev.ensayo ? `ensayo Jev (~US$ ${x.jev.usd.toFixed(4)})` : x.jev.error || `Jev: ninguna (${x.ncands} filas de total en ${x.ndocs} doc.)` }); continue; }
-    if (!x.factor) { res.push({ ...base, valor: null, como: 'sin escala del documento' }); continue; }
+    // `causa`: el código fijo de por qué un año queda sin dato (tools/casos-sin-resolver.mjs; `fos causas` los cuenta)
+    if (!x.fila) { res.push({ ...base, valor: null, causa: x.jev.ensayo ? 'ensayo-jev' : x.jev.error === 'sin filas de total' || x.ncands === 0 ? 'sin-filas-de-total' : x.jev.error ? 'jev-error' : 'jev-ninguna', como: x.jev.ensayo ? `ensayo Jev (~US$ ${x.jev.usd.toFixed(4)})` : x.jev.error || `Jev: ninguna (${x.ncands} filas de total en ${x.ndocs} doc.)` }); continue; }
+    if (!x.factor) { res.push({ ...base, valor: null, causa: 'sin-escala', como: 'sin escala del documento' }); continue; }
     const valor = r6(x.fila.cifras[0] * x.factor); const ant = x.fila.cifras.length > 1 ? r6(x.fila.cifras[1] * x.factor) : null;
     const cita = `${x.fila.md.split('/').pop()} L${x.fila.linea} "${String(x.fila.etiqueta).slice(0, 50)}"`;
-    if (valor === 0) { res.push({ ...base, valor: null, como: `${cita}: suma 0` }); continue; }
+    if (valor === 0) { res.push({ ...base, valor: null, causa: 'suma-cero', como: `${cita}: suma 0` }); continue; }
     // COMPUERTA DE PLAUSIBILIDAD (TODO 351): el costo de personal de un club profesional es una parte grande de sus ingresos. Menos de PERSONAL_MIN_SOBRE_INGRESOS es casi seguro la nota de OTRA entidad
     // (la filial del grupo sin los jugadores: Aston Villa Football Club Limited 2019-20, personal 8,3 M£ contra ingresos de 130 M£) o solo una parte (directores). El vecino no alcanza: la misma nota
     // repetida en el documento siguiente coincide, y el valor es igual de equivocado.
     const ingresosAnio = ((d.revenueLinesByYear || {})[anio] || []).reduce((s, l) => s + Math.max(0, l.amountNative || 0), 0);
-    if (ingresosAnio > 0 && valor / ingresosAnio < PERSONAL_MIN_SOBRE_INGRESOS) { res.push({ ...base, valor: null, como: `${cita} (${valor}): es ${(100 * valor / ingresosAnio).toFixed(1)} % de los ingresos (${r6(ingresosAnio)}); menos de ${PERSONAL_MIN_SOBRE_INGRESOS * 100} % no es el personal de un club profesional (¿nota de otra entidad del grupo o de una parte?). No se usa` }); continue; }
+    if (ingresosAnio > 0 && valor / ingresosAnio < PERSONAL_MIN_SOBRE_INGRESOS) { res.push({ ...base, valor: null, causa: 'otra-entidad', como: `${cita} (${valor}): es ${(100 * valor / ingresosAnio).toFixed(1)} % de los ingresos (${r6(ingresosAnio)}); menos de ${PERSONAL_MIN_SOBRE_INGRESOS * 100} % no es el personal de un club profesional (¿nota de otra entidad del grupo o de una parte?). No se usa` }); continue; }
     const chequeos = [];
     // el documento siguiente que REEXPRESA el año («Restated» en el encabezado de su columna anterior) no contradice: la diferencia es una reexpresión, no un error de lectura
     const sig = porAnio.get(String(Number(anio) + 1)); if (sig?.fila && sig.factor && sig.fila.cifras.length > 1) { const c = coincide(r6(sig.fila.cifras[1] * sig.factor), valor); if (c || !REEXPRESADO_RE.test(sig.fila.contexto || '')) chequeos.push(['documento siguiente', c]); }
@@ -139,7 +141,7 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const antD = porAnio.get(String(Number(anio) - 1)); if (antD?.fila && antD.factor && ant != null && coincide(r6(antD.fila.cifras[0] * antD.factor), ant)) chequeos.push(['documento anterior', true]);
     const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
     // la estructura (la suma de la nota cierra, es la nota de personal, la escala la dice su encabezado y pasó la plausibilidad) no necesita vecino; si un vecino la contradice, no se usa
-    if (malos.length || (!buenos.length && !x.estructura)) { res.push({ ...base, valor: null, como: `${cita} (${valor}): ${malos.length ? `no coincide con ${malos.map((c) => c[0]).join(' ni ')}` : 'ningún vecino para comparar'}` }); continue; }
+    if (malos.length || (!buenos.length && !x.estructura)) { res.push({ ...base, valor: null, causa: malos.length ? 'vecino-no-coincide' : 'sin-vecino', como: `${cita} (${valor}): ${malos.length ? `no coincide con ${malos.map((c) => c[0]).join(' ni ')}` : 'ningún vecino para comparar'}` }); continue; }
     res.push({ ...base, valor, validacion: buenos[0]?.[0] || 'estructura de la nota', como: x.estructura ? `estructura de la nota (la suma cierra): ${cita}` : `Jev (confianza ${x.jev.datos?.conf ?? '?'}): ${cita}`, fila: x.fila, factor: x.factor, md: x.a.md });
   }
   return { res, usd, ensayos };
@@ -228,9 +230,15 @@ export async function medirPersonal({ ejecutar = false, club = null }) {
   console.log(`\nPERSONAL: ${JSON.stringify(t)}${ensayos ? ` · JEV (ENSAYO): ${ensayos} pedido(s), ~US$ ${usd.toFixed(3)} (cota alta); agregá --ejecutar` : ` · Jev US$ ${usd.toFixed(4)}`}`);
 }
 // --personal --club <id> [--ejecutar] [--escribir]: completa staffCost donde el año no lo tiene (nunca pisa uno cargado).
-export async function completarPersonal(clubId, { ejecutar = false, escribir = false, partir = false }) {
+export async function completarPersonal(clubId, { ejecutar = false, escribir = false, partir = false, anios = null }) {
   const { G, S } = sitio(); const d = G[clubId]; if (!d) { console.log(`no existe ${clubId}`); return; }
   const r = await personalDelClub(clubId, d, S, { ejecutar, reg: registroDocs() });
+  // (TODO 387) los años sin dato se registran con su causa SOLO al escribir de verdad y SOLO los años que alguien necesita (`anios`: los del aviso de audit.js); uno que se resuelve cierra su caso
+  if (escribir) for (const x of r.res) {
+    if (x.valor != null) { resolverCaso({ tool: 'costo-personal', club: clubId, anio: x.anio }); continue; }
+    if (!anios?.includes(x.anio) || x.real != null || !x.causa || x.causa === 'ensayo-jev') continue;
+    registrarCaso({ tool: 'costo-personal', club: clubId, anio: x.anio, causa: x.causa, detalle: x.como });
+  }
   const nuevos = r.res.filter((x) => x.valor != null && x.real == null);
   for (const x of r.res) console.log(`  ${x.anio} personal: ${x.valor ?? 'null'}${x.real != null ? ` (ya cargado: ${x.real})` : ''}  (${x.validacion ? `compuerta: ${x.validacion}; ` : ''}${x.como})`);
   console.log(`\n${clubId}: ${nuevos.length} dato(s) para completar.${r.ensayos ? ` Jev en ensayo: ~US$ ${r.usd.toFixed(3)}; agregá --ejecutar.` : ''}`);

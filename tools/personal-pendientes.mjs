@@ -30,8 +30,9 @@ const clubes = [...antes.keys()].filter((c) => !SOLO || c === SOLO);
 console.log(`sin-salarios: ${[...antes.values()].flat().length} club-años en ${antes.size} clubes${SOLO ? ` (solo ${SOLO})` : ''}`);
 for (const club of clubes) {
   const extra = EJECUTAR ? ['--ejecutar'] : [];
-  const a = node(['tools/caja-deuda.mjs', '--personal', '--club', club, '--escribir', ...extra]);
-  const b = node(['tools/caja-deuda.mjs', '--personal', '--club', club, '--partir', '--escribir', ...extra]);
+  const anios = ['--anios', antes.get(club).join(',')]; // los años con aviso: solo esos se registran con su causa si siguen sin dato
+  const a = node(['tools/caja-deuda.mjs', '--personal', '--club', club, '--escribir', ...anios, ...extra]);
+  const b = node(['tools/caja-deuda.mjs', '--personal', '--club', club, '--partir', '--escribir', ...anios, ...extra]);
   const resumen = (o) => (o.stdout || '').split('\n').filter((l) => /dato\(s\) para completar|Escrit|NO se escribió|cadena frenó|ya está marcado/.test(l)).map((l) => l.trim().slice(0, 90)).join(' | ');
   console.log(`  ${club} (${antes.get(club).join(', ')}): ${resumen(a)} || ${resumen(b)}`);
 }

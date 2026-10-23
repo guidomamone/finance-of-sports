@@ -39,6 +39,8 @@ function casosMedicion() {
     ['staged: un commit de datos pasa aunque haya una tool sin medir sin stagear', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', { FOS_REGISTRO: registro('staged1', []), FOS_STAGED: 'data/gb/x.json' }],
     ['staged: una tool staged sin medición frena', commit('x [sin-audit]'), 'deny', 'cargar.mjs', 'una-sesion', { FOS_REGISTRO: registro('staged2', []), FOS_STAGED: 'tools/cargar.mjs' }],
     ['staged: la huella es la del blob del índice (HEAD) y pasa con su línea', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', { FOS_REGISTRO: registro('staged3', [linea('idéntico', execFileSync('git', ['rev-parse', ':tools/cargar.mjs'], { cwd: raiz, encoding: 'utf8' }).trim())]), FOS_STAGED: 'tools/cargar.mjs' }],
+    ['staged: git add de una ruta de datos + commit pasa aunque haya una tool sin medir sin agregar', bash('git add data/gb/x.json && git commit -m "x [sin-audit]"'), 'pasa', undefined, 'una-sesion', { FOS_REGISTRO: registro('staged4', []), FOS_STAGED: '' }],
+    ['staged: git add -A + commit mira todo el árbol (usa FOS_CAMBIADOS en la prueba)', bash('git add -A && git commit -m "x [sin-audit]"'), 'deny', 'cargar.mjs', 'una-sesion', { FOS_REGISTRO: registro('staged5', []), FOS_CAMBIADOS: 'tools/cargar.mjs' }],
     ['auditoría que frena: el hook dice qué hacer con el código', commit('x'), 'deny', 'node tools/publicar.mjs', 'una-sesion', { FOS_REGISTRO: registro('audit1', []), FOS_STAGED: 'data/gb/x.js', FOS_AUDIT_SALIDA: 'P1 1\n  [asset-v-sin-subir] 1\n    · Hay cambios sin commitear en js/ o data/' }],
     ['medición: un comando que no es commit pasa', bash('git status'), 'pasa', undefined, 'una-sesion', env(registro('vacio4', []))],
   ];

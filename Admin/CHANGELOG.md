@@ -18,6 +18,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 962 — registro de casos sin resolver con causa, prueba de medir-pipeline y `fos cerrar` [387 · 380 · 382]
+
+- `tools/casos-sin-resolver.mjs` + `Admin/registros/casos-sin-resolver.jsonl`: las tools anotan lo que no pudieron resolver con una causa de código fijo (`costo-personal.mjs`: sin-filas-de-total, jev-ninguna, otra-entidad, sin-escala, suma-cero, vecino-no-coincide, sin-vecino) solo al escribir y solo para los años del aviso (`--anios`); un caso que se resuelve deja una línea «resuelto». `node tools/fos.mjs causas` cuenta por tool y causa y marca «candidata a regla» a la de 3 casos de 2 clubes o más. Primera lectura de los 12 `sin-salarios`: «Jev dijo ninguna» son 7 casos de 5 clubes (candidata a regla); «otra entidad» son 3 casos de Aston Villa (de a uno). Medido: idéntico en `caja-deuda`, `--personal --medir` y los ensayos de 31 clubes; la única diferencia es un `todo-cumplido`, artefacto de que el módulo nuevo no existía en el ANTES. Sin revisión independiente.
+- `tools/probar-medir-pipeline.mjs`: la prueba de `medir-pipeline` en un repo de juguete (10 casos, menos de 1 minuto): idéntico, sin explicar, `--explicacion`, clave de la caché, efectos revertidos, corrida muerta y `--restaurar`, nada que medir. Con la clave vieja de la caché sembrada a propósito, falla el caso correspondiente.
+- `node tools/fos.mjs cerrar <id>` (`tools/cerrar.mjs`): cierra el punto del TODO, regenera el índice de los .md, audita (qué avisos cambiaron) y comprueba la entrada del CHANGELOG, ESTADO/PIPELINE si cambió tools/, skills y datos (trailer `Corrige:`). No commitea; `--ensayo` solo revisa.
+- Hook de commit: `git add <rutas> && git commit` se mira por esas rutas más lo staged (no por todo el árbol); 48 casos de prueba.
+- Defecto de proceso encontrado: editar un archivo trackeado MIENTRAS corre una medición hace que `medir-pipeline` lo revierta (lo toma por efecto del medidor). Anotado en la skill de mejora de scripts.
+
 ## Versión 961 — hook del diff de skills, hook de commit sobre lo staged, medidores que resumen, reglas sin diseño para Guido [378 · 385 · 386]
 
 - `tools/hooks/post-tool.mjs` (PostToolUse sobre Bash): un `git commit` que toca `.claude/skills/` devuelve «mostrale a Guido el diff con show_pane»; 5 casos de prueba (`probar-post-tool.mjs`). Hace falta reabrir la sesión para que la configuración nueva de hooks rija.

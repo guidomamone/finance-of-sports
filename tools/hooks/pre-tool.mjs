@@ -73,10 +73,19 @@ const INTERNO = /^(Admin\/|\.claude\/|CLAUDE\.md$|auditorias\/|Prototyping\/)/;
 function archivosDelCommit(cmd) {
   if (process.env.FOS_CAMBIADOS) return { archivos: process.env.FOS_CAMBIADOS.split(',').filter(Boolean), staged: false };
   const sinTextos = cmd.replace(/"(?:[^"\\]|\\.)*"|'[^']*'/g, '""');
-  const agregaTodo = /\bgit\b[^|;&]*\badd\b/.test(sinTextos) || /\bcommit\b[^|;&]*\s(-[a-zA-Z]*a[a-zA-Z]*|--all)(\s|$)/.test(sinTextos);
   const staged = (process.env.FOS_STAGED !== undefined ? process.env.FOS_STAGED.split(',') : git(['diff', '--cached', '--name-only']).split('\n')).filter(Boolean);
-  if (!agregaTodo && staged.length) return { archivos: staged, staged: true };
-  return { archivos: [...git(['diff', 'HEAD', '--name-only']).split('\n'), ...git(['ls-files', '--others', '--exclude-standard']).split('\n')].filter(Boolean), staged: false };
+  const todoElArbol = () => ({ archivos: [...git(['diff', 'HEAD', '--name-only']).split('\n'), ...git(['ls-files', '--others', '--exclude-standard']).split('\n')].filter(Boolean), staged: false });
+  if (/\bcommit\b[^|;&]*\s(-[a-zA-Z]*a[a-zA-Z]*|--all)(\s|$)/.test(sinTextos)) return todoElArbol(); // commit -a
+  // `git add <rutas> && git commit`: entra lo staged más esas rutas; con `-A`, `.` o `-u` entra todo el árbol
+  const adds = [...sinTextos.matchAll(/\bgit\b[^|;&]*?\badd\b([^|;&]*)/g)].map((m) => m[1].trim().split(/\s+/).filter(Boolean));
+  if (adds.some((t) => !t.length || t.some((x) => x === '.' || x === '-A' || x === '--all' || x === '-u' || x === '--update'))) return todoElArbol();
+  if (adds.length) {
+    const rutas = adds.flat().filter((x) => !x.startsWith('-') && x !== '--').map((x) => x.replace(/^["']|["']$/g, '').replace(/\/$/, ''));
+    const todos = todoElArbol().archivos;
+    return { archivos: [...new Set([...staged, ...todos.filter((f) => rutas.some((r) => f === r || f.startsWith(`${r}/`)))])], staged: true };
+  }
+  if (staged.length) return { archivos: staged, staged: true };
+  return todoElArbol();
 }
 // Lo que dice tools/audit-acciones.json que se hace con cada código que frenó: el hook lo imprime al lado del hallazgo.
 function queHacer(raiz, salida) {
