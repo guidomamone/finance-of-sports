@@ -23,6 +23,7 @@ const CURRENCY_META = {
   RUB: { scale: 1, unitSuffix: 'M' }, // Rusia
   NOK: { scale: 1, unitSuffix: 'M' },
   CHF: { scale: 1, unitSuffix: 'M' },
+  TRY: { scale: 1, unitSuffix: 'M' },  // Turquía
 };
 
 // Fallback para un código ISO sin entrada propia: nunca rompe ni muestra la unidad equivocada.
