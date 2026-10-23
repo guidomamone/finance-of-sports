@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-23** al cerrar el punto 412: lo que servía quedó en `Admin/PIPELINE.md`, `Admin/HALLAZGOS-pipeline.md` o el CHANGELOG. Las rutas y números son los de ese día.
+
 <!-- md: propuesta del punto 412, que los hallazgos medidos se consulten sin depender de la memoria de la sesión | leer: antes de tocar HALLAZGOS-pipeline.md, el hook de edición de tools o fos existe -->
 # 412 — Que los hallazgos se consulten sin depender de la memoria
 

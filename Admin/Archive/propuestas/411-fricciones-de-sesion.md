@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-23** al cerrar el punto 411: lo que servía quedó en `Admin/PIPELINE.md`, `Admin/HALLAZGOS-pipeline.md` o el CHANGELOG. Las rutas y números son los de ese día.
+
 <!-- md: propuesta del punto 411, las fricciones que costaron tiempo en una sesión de Pipeline y cómo evitarlas con tools | leer: antes de tocar fos cerrar, el hook pre-tool o las tools de consulta de historial -->
 # 411 — Fricciones de sesión: que lo que costó tiempo no cueste dos veces
 

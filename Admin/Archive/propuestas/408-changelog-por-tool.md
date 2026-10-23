@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-23** al cerrar el punto 408: lo que servía quedó en `Admin/PIPELINE.md`, `Admin/HALLAZGOS-pipeline.md` o el CHANGELOG. Las rutas y números son los de ese día.
+
 <!-- md: propuesta del punto 408, el CHANGELOG organizado por tool para grepear qué tool tuvo problemas | leer: antes de tocar el formato del CHANGELOG, fos cerrar o su archivado -->
 # 408 — El CHANGELOG por tool
 

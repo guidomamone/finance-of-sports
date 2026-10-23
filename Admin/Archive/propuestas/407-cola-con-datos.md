@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-23** al cerrar el punto 407: lo que servía quedó en `Admin/PIPELINE.md`, `Admin/HALLAZGOS-pipeline.md` o el CHANGELOG. Las rutas y números son los de ese día.
+
 <!-- md: propuesta del punto 407, qué datos suma la cola a cada tipo de pregunta en vez de una respuesta por defecto | leer: antes de tocar la propuesta de la cola (cargar.mjs, cola.mjs, verificar) -->
 # 407 — La cola con datos, no con «sí» por defecto
 
