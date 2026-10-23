@@ -193,11 +193,13 @@ export function convertir(xhtmlAbs, { pdfDestino }) {
   r.md = armarMd(nombre, lineas, al.pagina); return r;
 }
 
+// los .xhtml de una carpeta y de las de adentro (con `Clubes` entero, el medidor del pipeline los ve todos)
+const xhtmlsDe = (dir) => readdirSync(dir).sort().flatMap((f) => { const p = join(dir, f); return statSync(p).isDirectory() ? xhtmlsDe(p) : f.endsWith('.xhtml') ? [p] : []; });
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const ESCRIBIR = A.includes('--escribir'); const REHACER = A.includes('--rehacer');
   const entradas = A.filter((a) => !a.startsWith('--'));
   if (!entradas.length) { console.error('Uso: node tools/xhtml-aarsrapport.mjs "<xhtml>|<carpeta>" [...] [--escribir] [--rehacer]'); process.exit(1); }
-  const xs = entradas.flatMap((e) => { const abs = resolve(ROOT, e); return existsSync(abs) && statSync(abs).isDirectory() ? readdirSync(abs).filter((f) => f.endsWith('.xhtml')).map((f) => join(abs, f)) : [abs]; });
+  const xs = entradas.flatMap((e) => { const abs = resolve(ROOT, e); return existsSync(abs) && statSync(abs).isDirectory() ? xhtmlsDe(abs) : [abs]; });
   const tmp = join(tmpdir(), 'xhtml-aarsrapport'); mkdirSync(tmp, { recursive: true }); let mal = 0;
   for (const x of xs) {
     const rel = x.replace(ROOT + '/', ''); const mdAbs = x.replace(/\.xhtml$/, '.md'); const pdfAbs = x.replace(/\.xhtml$/, '.pdf');

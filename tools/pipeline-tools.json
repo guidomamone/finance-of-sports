@@ -62,9 +62,9 @@
    "comparar": "texto"
   },
   "xhtml": {
-   "que": "el conversor XHTML en ensayo sobre todos los .xhtml de Clubes/ (no escribe)",
+   "que": "el conversor XHTML en ensayo sobre todos los .xhtml de Clubes/, también los que ya tienen .md (--rehacer; no escribe): líneas, hechos y líneas ubicadas en el PDF de cada uno",
    "usaLista": false,
-   "correr": ["tools/xhtml-aarsrapport.mjs", "Clubes"],
+   "correr": ["tools/xhtml-aarsrapport.mjs", "Clubes", "--rehacer"],
    "comparar": "texto"
   },
   "alta": {

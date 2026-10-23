@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1007 — El medidor `xhtml` ahora mide de verdad: recorre `Clubes/` y reconvierte [356 · xhtml-aarsrapport.mjs]
+
+- Defecto: `medir pipeline` corría el conversor sobre `Clubes` y la tool solo miraba los `.xhtml` del nivel superior (cero archivos): toda medición del conversor daba «idéntico» sin leer nada. Ahora la tool recorre las carpetas de adentro y el medidor usa `--rehacer` (reconvierte los que ya tienen `.md`, sin escribir); la base queda en 317 archivos, con líneas, hechos y líneas ubicadas en el PDF de cada uno.
+- Medición: la anterior estaba vacía, así que las 330 líneas que imprime son nuevas (explicadas); es la base del cambio siguiente. Un corte (FC København 2025 PSE) ya no cierra la compuerta (b) con 96 %, igual que antes de este cambio.
+
 ## Versión 1006 — `fos partir-fases`: la herramienta con la que se partieron `proponer()` y `verificar()` [399 · partir-fases.mjs, lexico-js.mjs, fos-comandos.json]
 
 - `tools/partir-fases.mjs` + `tools/lexico-js.mjs`: parte una función enorme en fases que comparten un `ctx` sin cambiar el texto de cada tramo, avisa de una reasignación entre fases, reescribe a `ctx.N` las variables compartidas y no deja cortar en medio de un bloque (`--mapa` lista dónde se puede; `--proxy` genera la versión estricta). Quedan fuera de la tabla del pipeline (`no_pipeline`).
