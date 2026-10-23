@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 959 — 368 cerrado: `fos personal` y los datos del escalón 1 (2026-10-22) [368 · 351]
+
+- `node tools/fos.mjs personal` (`tools/personal-pendientes.mjs`): para cada club con aviso `sin-salarios` completa `staffCost` por la estructura de la nota y parte o marca los sueldos, y cuenta lo que queda; no commitea. La acción del aviso `sin-salarios` en `audit-acciones.json` ya manda ahí. El enganche a `publicarCambios()` se descartó a propósito (una carga abierta dentro de otra).
+- Datos aplicados: `staffCost` de 12 clubes británicos (25 club-años) y los sueldos marcados «posiblemente dentro de otra fila» en Fulham 2021-23, Newcastle 2023-24 y West Ham 2023-24 (los totales no cambian). Arreglo extra medido: un «Restated» en la columna anterior de la propia tabla no contradice al año anterior cargado (Newcastle 2024); una sola diferencia, la esperada.
+- `sin-salarios`: de 20 a 12 club-años, todos casos de a uno (Aston Villa 2019-22, Celtic 2021-25, Newcastle 2019, Brighton 2023, Instituto 2025, Novorizontino 2010): el 351 queda como lista de ajustes a mano, con prioridad baja.
+
 ## Versión 958 — 368 escalón 1: la nota de personal por su estructura (2026-10-22) [368 · 351]
 
 - `tools/costo-personal.mjs`: antes de preguntarle a Jev, toma la tabla de personal cuyo total es la suma exacta de sus filas (sueldos, cargas sociales, pensiones) en el documento del año; la escala sale del encabezado de esa tabla (£000 o £m); sin estructura o con un valor no plausible (menos del 15 % de los ingresos: la nota de la sociedad sola), sigue Jev como antes; un documento siguiente que reexpresa («Restated») ya no contradice. El vecino deja de ser obligatorio cuando la estructura cierra.

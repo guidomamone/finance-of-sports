@@ -76,9 +76,9 @@
   "donde": "TODO 350"
  },
  "sin-salarios": {
-  "hacer": "Partir los sueldos de la línea con tools/caja-deuda.mjs --personal y --partir; corrige datos publicados (trailer Corrige:).",
-  "quien": "sesion",
-  "donde": "TODO 351"
+  "hacer": "node tools/fos.mjs personal (completa staffCost por la estructura de la nota y parte o marca los sueldos); lo que no resuelve es un caso de a uno: ajuste a mano con motivo y cita. Corrige datos publicados (trailer Corrige:).",
+  "quien": "script",
+  "donde": "Admin/PIPELINE.md, «Caja y deuda»"
  },
  "proyeccion": {
   "hacer": "Nada: proyecta cuánto pesa data/ a 1000 clubes.",

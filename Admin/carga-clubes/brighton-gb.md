@@ -210,6 +210,10 @@ tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 112.718 (compuerta: documento anterior): estructura de la nota (la suma cierra): brighton-full-accounts-2021-22.md L1082 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ## 2021
 
 ### Ingresos
@@ -244,6 +248,10 @@ tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 107.404 (compuerta: documento siguiente): estructura de la nota (la suma cierra): brighton-full-accounts-2020-21.md L1033 "(total sin rótulo: suma las filas de arriba)"
+```
+
 ## 2020
 
 ### Ingresos
@@ -273,6 +281,10 @@ Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.categ
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): incluye = wages_squad. caja-deuda.mjs --personal --partir (TODO 351): el costo de personal (101.87, brighton-full-accounts-2019-20.md L907) es mayor que cada fila global de gasto; el documento reparte los sueldos entre varias funciones y no dice cuánto va en cada una
 tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+```
+
+```text
+tools/caja-deuda.mjs --personal (2026-10-23): staffCost 101.87 (compuerta: documento siguiente): estructura de la nota (la suma cierra): brighton-full-accounts-2019-20.md L907 "(total sin rótulo: suma las filas de arriba)"
 ```
 
 ## Fuentes
