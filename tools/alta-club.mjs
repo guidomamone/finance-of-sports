@@ -155,6 +155,80 @@ export function analizar(docArg, sitio, ov = {}) {
   r.club = existente ? { existe: true, ...existente } : { existe: false };
 
   // ---------------------------------------------------------------- año y cierre
+  const { nombreArchivo, cierreTxt, nIntermedio, esIntermedio, hermanos, cierresClub, fuentePatronPais, mesCierre, anio, estadoAnio, fuenteAnio, preguntaAnio, cierre, fiscalYearStart, estadoCierre, preguntaCierre, fuenteCierre } = cierreYAnio({ abs, r, md, mdPath, paisCarpeta, clubCarpeta, pais, sitio, ov });
+
+  // ---------------------------------------------------------------- moneda del ejercicio
+  let { moneda, estadoMoneda, fuenteMoneda, preguntaMoneda } = monedaDelEjercicio({ r, pais, paisCarpeta, anio, mdNorm });
+
+  // ---------------------------------------------------------------- deporte
+  const { nFutbol, otros, deporte, fuenteDeporteClaude } = deporteDelTexto({ mdNorm, clubCarpeta, ov });
+
+  // ---------------------------------------------------------------- campos del club
+  camposDelClub({ r, md, pais, paisCarpeta, clubCarpeta, sitio, ov, cierresClub, fiscalYearStart, estadoCierre, preguntaCierre, fuenteCierre, fuentePatronPais, cierreTxt, deporte, nFutbol, otros, fuenteDeporteClaude });
+
+  // ---------------------------------------------------------------- campos del ejercicio
+  const clubId = r.club.existe ? r.club.clubId : (r.campos.find((c) => c.campo === 'id') || {}).valor;
+  const E = r.ejercicio.campos;
+  r.ejercicio.anio = anio; r.ejercicio.cierre = cierre;
+  E.push(campo('anio', anio, fuenteAnio, estadoAnio, preguntaAnio ? { pregunta: preguntaAnio } : {}));
+  E.push(campo('cierre', cierre, cierre ? `año del ejercicio + mes de cierre (${fuenteCierre})` : null, cierre ? (estadoCierre === 'pregunta' ? 'pregunta' : 'ok') : 'pregunta', cierre ? (preguntaCierre ? { pregunta: preguntaCierre } : {}) : { pregunta: 'No se pudo determinar la fecha de cierre del ejercicio.' }));
+
+  // Tipo de documento
+  const { reportType, nomNorm } = tipoDeDocumento({ r, md, mdNorm, nombreArchivo, esIntermedio, nIntermedio, ov, E });
+
+  // Perímetro: qué entidad es "el club"
+  perimetroDelDocumento({ r, mdNorm, mdPath, hermanos, anio, nomNorm, nombreArchivo, ov, E });
+
+  // Moneda del ejercicio
+  if (ov.moneda && pais && ov.moneda.valor === pais.moneda && estadoMoneda === 'pregunta') { moneda = pais.moneda; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `claude-api con cita verificada: ${ov.moneda.fuente}`; }
+  // AJUSTE MANUAL `moneda`: escalón 0 de la pregunta "¿se carga en la moneda legado o se convierte a EUR?". Solo cuando el ejercicio es
+  // anterior a la entrada del euro y el valor del ajuste es la moneda legado del país. Caso: Lazio 1998-99, 1999-00 y 2000-01 en liras.
+  { const aMon = r.pdf ? ajusteDe(r.pdf, 'moneda') : null;
+    if (aMon && pais && pais.legado && anio && anio < pais.legado.desde && aMon.valor === pais.legado.codigo && estadoMoneda === 'pregunta') { moneda = aMon.valor; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${aMon.autor} ${aMon.fecha}): ${aMon.motivo}`; } }
+  E.push(campo('currency', moneda, fuenteMoneda, estadoMoneda, preguntaMoneda ? { pregunta: preguntaMoneda } : {}));
+
+  // Tipo de cambio
+  const fxCampos = proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ov.fx, r.pdf ? ajusteDe(r.pdf, 'fx') : null);
+  E.push(...fxCampos);
+
+  // sourceId
+  // Si el nombre del archivo ya arranca con el nombre del club ("SlaviaPraha_SL108_2019-06-30",
+  // "Genoa-bilancio-..."), esas palabras se sacan para no repetir el club dos veces en el id.
+  let tokensArchivo = slugGuion(basename(abs, extname(abs))).split('-').filter(Boolean);
+  const baseClub = clubId ? clubId.replace(/-[a-z]{2}$/, '').replace(/-/g, '') : '';
+  for (let k = 1; k <= Math.min(4, tokensArchivo.length - 1); k++) {
+    if (tokensArchivo.slice(0, k).join('') === baseClub || tokensArchivo.slice(0, k).join('') === slug(clubCarpeta)) { tokensArchivo = tokensArchivo.slice(k); break; }
+  }
+  const sourceId = clubId ? `${clubId}-${tokensArchivo.join('-')}` : null;
+  E.push(campo('sourceId', sourceId, 'clubId + nombre del archivo en slug'));
+
+  // Liga
+  E.push(proponerLiga(clubId, r.club.existe ? (sitio.clubs[clubId] || {}).displayName : clubCarpeta, pais, anio, sitio, cierre));
+
+  // DEPORTE DECLARADO, en este orden: la ficha del club (data/clubs.js) -> la liga del club (data/leagues.js tiene `sport`: es un dato, no un supuesto) -> las menciones del .md
+  // (la regla de arriba). Pregunta solo si ninguna responde: sin fútbol nombrado, sin otro deporte nombrado y sin ficha ni liga el deporte NO se supone fútbol. Medido sobre Clubes/:
+  // 31 de 400 carpetas no nombran el fútbol (los clubes coreanos, estonios, All Boys...); sin mirar la liga y la ficha se frenarían a la cola por nada.
+  {
+    const iSp = r.campos.findIndex((c) => c.campo === 'sport'); const ligaC = E.find((c) => c.campo === 'liga');
+    const deLaFicha = r.club.existe ? (sitio.clubs[clubId] || {}).sport : null;
+    const deLaLiga = ligaC && ligaC.valor ? (sitio.LEAGUES[ligaC.valor] || {}).sport : null;
+    const decl = deLaFicha ? { v: deLaFicha, f: `la ficha de ${clubId} en data/clubs.js dice ${deLaFicha}` } : deLaLiga ? { v: deLaLiga, f: `la liga ${ligaC.valor} del catálogo (data/leagues.js) es de ${deLaLiga}` } : null;
+    if (iSp >= 0 && decl && deportesActivos().includes(decl.v)) r.campos[iSp] = campo('sport', decl.v, decl.f);
+    else if (iSp >= 0 && !decl && r.campos[iSp].estado !== 'pregunta' && !fuenteDeporteClaude && nFutbol <= 0) r.campos[iSp] = campo('sport', null, 'ni la ficha, ni la liga, ni el .md nombran un deporte', 'pregunta', { pregunta: '¿De qué deporte es el club? El .md no nombra el fútbol ni ningún otro deporte y todavía no hay ficha ni liga del club en el catálogo.' });
+  }
+
+  contextoYAvisos({ r, E, pais, paisCarpeta, sitio, clubId, mesCierre, fuentePatronPais });
+
+  // Resumen
+  const todos = [...r.campos, ...E];
+  const cnt = (e) => todos.filter((c) => c.estado === e).length;
+  r.resumen = { campos: todos.length, ok: cnt('ok'), pregunta: cnt('pregunta'), pendiente: cnt('pendiente'), pctOk: Math.round((100 * cnt('ok')) / todos.length), bloqueaEscribir: cnt('pregunta') > 0 || r.club.existe };
+  r.preguntas = todos.filter((c) => c.estado === 'pregunta').map((c) => ({ campo: c.campo, pregunta: c.pregunta }));
+  return r;
+}
+
+// Año y cierre del ejercicio (nombre del archivo, fechas del .md, los demás .md del club, patrón del país, respuesta de Claude por API).
+function cierreYAnio({ abs, r, md, mdPath, paisCarpeta, clubCarpeta, pais, sitio, ov }) {
   const nombreArchivo = basename(abs);
   // ESCALÓN 0: ajuste manual de Guido (tools/ajustes.mjs, campo `anio`) cuando el nombre del archivo dice mal el año.
   const ajAnio = r.pdf ? ajusteDe(r.pdf, 'anio') : null;
@@ -255,8 +329,11 @@ export function analizar(docArg, sitio, ov = {}) {
   }
   const cierre = anio && mesCierre ? `${anio}-${pad2(mesCierre)}-${pad2(ultimoDia(anio, mesCierre))}` : null;
   const fiscalYearStart = mesCierre ? `${pad2(mesCierre === 12 ? 1 : mesCierre + 1)}-01` : null;
+  return { nombreArchivo, cierreTxt, nIntermedio, esIntermedio, hermanos, cierresClub, fuentePatronPais, mesCierre, anio, estadoAnio, fuenteAnio, preguntaAnio, cierre, fiscalYearStart, estadoCierre, preguntaCierre, fuenteCierre };
+}
 
-  // ---------------------------------------------------------------- moneda del ejercicio
+// Moneda del ejercicio: la del país, o la pregunta si el documento dice otra o es anterior al cambio de moneda.
+function monedaDelEjercicio({ r, pais, paisCarpeta, anio, mdNorm }) {
   let moneda = pais ? pais.moneda : null;
   let estadoMoneda = 'ok'; let fuenteMoneda = pais ? `moneda de curso legal de ${paisCarpeta} (${pais.referencia ? 'tabla de referencia ISO, tools/paises-referencia.json' : 'tabla PAISES de alta-club.mjs'})` : null; let preguntaMoneda = null;
   if (!pais) { estadoMoneda = 'pregunta'; preguntaMoneda = `País "${paisCarpeta}" sin entrada en la tabla PAISES de tools/alta-club.mjs: ¿qué ISO2 y qué moneda?`; }
@@ -272,8 +349,11 @@ export function analizar(docArg, sitio, ov = {}) {
     if (nPropia === 0 && otras[0] && otras[0][1] >= 10) { estadoMoneda = 'pregunta'; preguntaMoneda = `El documento no nombra nunca ${moneda} y nombra ${otras[0][0]} ${otras[0][1]} veces: ¿en qué moneda está?`; }
     else if (nPropia === 0) r.avisos.push(`El documento no nombra la moneda (${moneda}) en ningún lado reconocible: se asume la del país.`);
   }
+  return { moneda, estadoMoneda, fuenteMoneda, preguntaMoneda };
+}
 
-  // ---------------------------------------------------------------- deporte
+// Deporte según cuántas veces nombra el .md cada uno.
+function deporteDelTexto({ mdNorm, clubCarpeta, ov }) {
   // "football" en inglés también es el de la NFL ("National Football League"), y "cricket" aparece
   // en el nombre legal del Genoa ("Genoa Cricket and Football Club"): esas frases no cuentan para
   // ningún lado.
@@ -286,8 +366,11 @@ export function analizar(docArg, sitio, ov = {}) {
   let deporte = otros[0][1] >= 3 && otros[0][1] >= nFutbol ? otros[0][0] : 'futbol';
   const fuenteDeporteClaude = ov.sport && ov.sport.valor === 'futbol' && deporte !== 'futbol' ? `claude-api con cita verificada: ${ov.sport.fuente}` : null;
   if (fuenteDeporteClaude) deporte = 'futbol';
+  return { nFutbol, otros, deporte, fuenteDeporteClaude };
+}
 
-  // ---------------------------------------------------------------- campos del club
+// Los campos de un club NUEVO (id, nombre, país, moneda, inicio del ejercicio, deporte, color); los agrega a r.campos.
+function camposDelClub({ r, md, pais, paisCarpeta, clubCarpeta, sitio, ov, cierresClub, fiscalYearStart, estadoCierre, preguntaCierre, fuenteCierre, fuentePatronPais, cierreTxt, deporte, nFutbol, otros, fuenteDeporteClaude }) {
   if (!r.club.existe) {
     const displayName = clubCarpeta.replace(/\s*\([^)]*\)\s*/g, ' ').trim();
     if (displayName !== clubCarpeta) r.avisos.push(`La carpeta "${clubCarpeta}" tiene un paréntesis: se usó "${displayName}" como nombre corto.`);
@@ -329,15 +412,10 @@ export function analizar(docArg, sitio, ov = {}) {
     const candidatos = candidatosColor(displayName);
     r.campos.push(campo('brandColor', undefined, candidatos.length ? `tools/brand-color-reference/ (footylogos): ${candidatos.map((c) => `[${c.liga}] ${c.name}: ${c.swatches.slice(0, 4).map((s) => s.hex + ' ' + s.label.replace(/ #.*/, '')).join(', ')}`).join(' | ')}` : 'la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)', 'pendiente', { nota: 'el campo queda AUSENTE (= nadie lo chequeó, P3 club-sin-color-ni-null). La decisión es identidad primero (¿de qué color es la camiseta?, Wikipedia del país) y hex después, club-or-year-onboarding/club-nuevo.md: no la toma un script. NUNCA escribir null sin haberlo mirado.' }));
   }
+}
 
-  // ---------------------------------------------------------------- campos del ejercicio
-  const clubId = r.club.existe ? r.club.clubId : (r.campos.find((c) => c.campo === 'id') || {}).valor;
-  const E = r.ejercicio.campos;
-  r.ejercicio.anio = anio; r.ejercicio.cierre = cierre;
-  E.push(campo('anio', anio, fuenteAnio, estadoAnio, preguntaAnio ? { pregunta: preguntaAnio } : {}));
-  E.push(campo('cierre', cierre, cierre ? `año del ejercicio + mes de cierre (${fuenteCierre})` : null, cierre ? (estadoCierre === 'pregunta' ? 'pregunta' : 'ok') : 'pregunta', cierre ? (preguntaCierre ? { pregunta: preguntaCierre } : {}) : { pregunta: 'No se pudo determinar la fecha de cierre del ejercicio.' }));
-
-  // Tipo de documento
+// Tipo de documento (estado contable, presupuesto, intermedio, informe sin tablas); agrega el campo reportType a E.
+function tipoDeDocumento({ r, md, mdNorm, nombreArchivo, esIntermedio, nIntermedio, ov, E }) {
   const nomNorm = norm(nombreArchivo);
   const STATEMENT = /resultado|recursos y gastos|income statement|profit and loss|profit or loss|comprehensive income|statement of operations|statement of financial position|conto economico|resultatregnskap|resultatopgorelse|resultatenrekening|winst-en-verliesrekening|compte de resultat|gewinn- ?und verlust|erfolgsrechnung|racun dobiti|dobiti i gubitka|demonstrac(ao|oes) d[oe]s? result|demonstracoes (financeiras|contabeis)|balanc[oe]s? patrimon|αποτελεσματ|gelir tablosu|kar veya zarar|finansal durum|vykaz zisku|vysledovka|rozvaha|финансовых результат|бухгалтерск\S* баланс|фінансові результати|фінансовии результат|фінансовии стан|сукупнии дохід|손익계산서|재무상태표|利润表|资产负债表|損益計算書|balance sheet|estado de situacion|estados? de resultados|stato patrimoniale|jahresabschluss|jaarrekening|jaarcijfers|aarsregnskap|arsregnskap|arsrapport|aarsrapport|bilancio|bilanco|financijsko izvjesce|financni izkaz/;
   const esPresupuesto = /presupuesto|orcamento|budget|previsional/.test(nomNorm);
@@ -382,8 +460,11 @@ export function analizar(docArg, sitio, ov = {}) {
   }
   if (ov.reportType) { reportType = ov.reportType.valor; estadoRT = 'ok'; preguntaRT = null; fuenteRT = `${ov.reportType.manual ? '' : 'claude-api con cita verificada: '}${ov.reportType.fuente}`; }
   E.push(campo('reportType', reportType, fuenteRT, estadoRT, preguntaRT ? { pregunta: preguntaRT } : {}));
+  return { reportType, nomNorm };
+}
 
-  // Perímetro: qué entidad es "el club"
+// Perímetro: qué entidad es «el club» (individual, consolidado, dos entidades en la carpeta); agrega el campo perimetro a E.
+function perimetroDelDocumento({ r, mdNorm, mdPath, hermanos, anio, nomNorm, nombreArchivo, ov, E }) {
   const CONSOL = /consolidad|consolidated|consolidato|geconsolideerd|konsolid|konzern|konsern|koncern|консолид|консолідов|ενοποιημεν|연결재무|合并|group accounts|consolide/g;
   const INDIV = /individual|separate financial statements|company only|standalone|stand-alone|enkelvoudig|selskapsregnskap|morselskap|einzelabschluss|η εταιρεια|bireysel|individuais|separado|별도재무|отдельн|bilancio d.esercizio|jahresabschluss der/g;
   const nCons = contar(mdNorm, CONSOL); const nInd = contar(mdNorm, INDIV);
@@ -414,45 +495,10 @@ export function analizar(docArg, sitio, ov = {}) {
   const ajusteCoincide = ov.perimetro?.manual && otraEntidad && perDelNombre === ov.perimetro.valor;
   if (ov.perimetro && (!otraEntidad || ajusteCoincide)) { valorPer = ov.perimetro.valor; estadoPer = 'ok'; preguntaPer = null; fuentePer = ov.perimetro.manual ? ov.perimetro.fuente : `claude-api con cita verificada: ${ov.perimetro.fuente}`; }
   E.push(campo('perimetro', valorPer, fuentePer, estadoPer, { ...(preguntaPer ? { pregunta: preguntaPer } : {}), ...(otraEntidad ? { dosEntidades: basename(otraEntidad) } : {}) }));
+}
 
-  // Moneda del ejercicio
-  if (ov.moneda && pais && ov.moneda.valor === pais.moneda && estadoMoneda === 'pregunta') { moneda = pais.moneda; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `claude-api con cita verificada: ${ov.moneda.fuente}`; }
-  // AJUSTE MANUAL `moneda`: escalón 0 de la pregunta "¿se carga en la moneda legado o se convierte a EUR?". Solo cuando el ejercicio es
-  // anterior a la entrada del euro y el valor del ajuste es la moneda legado del país. Caso: Lazio 1998-99, 1999-00 y 2000-01 en liras.
-  { const aMon = r.pdf ? ajusteDe(r.pdf, 'moneda') : null;
-    if (aMon && pais && pais.legado && anio && anio < pais.legado.desde && aMon.valor === pais.legado.codigo && estadoMoneda === 'pregunta') { moneda = aMon.valor; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${aMon.autor} ${aMon.fecha}): ${aMon.motivo}`; } }
-  E.push(campo('currency', moneda, fuenteMoneda, estadoMoneda, preguntaMoneda ? { pregunta: preguntaMoneda } : {}));
-
-  // Tipo de cambio
-  const fxCampos = proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ov.fx, r.pdf ? ajusteDe(r.pdf, 'fx') : null);
-  E.push(...fxCampos);
-
-  // sourceId
-  // Si el nombre del archivo ya arranca con el nombre del club ("SlaviaPraha_SL108_2019-06-30",
-  // "Genoa-bilancio-..."), esas palabras se sacan para no repetir el club dos veces en el id.
-  let tokensArchivo = slugGuion(basename(abs, extname(abs))).split('-').filter(Boolean);
-  const baseClub = clubId ? clubId.replace(/-[a-z]{2}$/, '').replace(/-/g, '') : '';
-  for (let k = 1; k <= Math.min(4, tokensArchivo.length - 1); k++) {
-    if (tokensArchivo.slice(0, k).join('') === baseClub || tokensArchivo.slice(0, k).join('') === slug(clubCarpeta)) { tokensArchivo = tokensArchivo.slice(k); break; }
-  }
-  const sourceId = clubId ? `${clubId}-${tokensArchivo.join('-')}` : null;
-  E.push(campo('sourceId', sourceId, 'clubId + nombre del archivo en slug'));
-
-  // Liga
-  E.push(proponerLiga(clubId, r.club.existe ? (sitio.clubs[clubId] || {}).displayName : clubCarpeta, pais, anio, sitio, cierre));
-
-  // DEPORTE DECLARADO, en este orden: la ficha del club (data/clubs.js) -> la liga del club (data/leagues.js tiene `sport`: es un dato, no un supuesto) -> las menciones del .md
-  // (la regla de arriba). Pregunta solo si ninguna responde: sin fútbol nombrado, sin otro deporte nombrado y sin ficha ni liga el deporte NO se supone fútbol. Medido sobre Clubes/:
-  // 31 de 400 carpetas no nombran el fútbol (los clubes coreanos, estonios, All Boys...); sin mirar la liga y la ficha se frenarían a la cola por nada.
-  {
-    const iSp = r.campos.findIndex((c) => c.campo === 'sport'); const ligaC = E.find((c) => c.campo === 'liga');
-    const deLaFicha = r.club.existe ? (sitio.clubs[clubId] || {}).sport : null;
-    const deLaLiga = ligaC && ligaC.valor ? (sitio.LEAGUES[ligaC.valor] || {}).sport : null;
-    const decl = deLaFicha ? { v: deLaFicha, f: `la ficha de ${clubId} en data/clubs.js dice ${deLaFicha}` } : deLaLiga ? { v: deLaLiga, f: `la liga ${ligaC.valor} del catálogo (data/leagues.js) es de ${deLaLiga}` } : null;
-    if (iSp >= 0 && decl && deportesActivos().includes(decl.v)) r.campos[iSp] = campo('sport', decl.v, decl.f);
-    else if (iSp >= 0 && !decl && r.campos[iSp].estado !== 'pregunta' && !fuenteDeporteClaude && nFutbol <= 0) r.campos[iSp] = campo('sport', null, 'ni la ficha, ni la liga, ni el .md nombran un deporte', 'pregunta', { pregunta: '¿De qué deporte es el club? El .md no nombra el fútbol ni ningún otro deporte y todavía no hay ficha ni liga del club en el catálogo.' });
-  }
-
+// Lo que el alta escribe aparte (país y moneda nuevos) y los cruces que no bloquean pero conviene ver.
+function contextoYAvisos({ r, E, pais, paisCarpeta, sitio, clubId, mesCierre, fuentePatronPais }) {
   // Contexto que el alta necesita escribir aparte (país/moneda nuevos)
   r.contexto = {
     paisNuevo: pais && pais.iso2 && !sitio.COUNTRIES[pais.iso2] ? { iso2: pais.iso2, name: NOMBRE_PAIS_ES[pais.iso2] || paisCarpeta, en: pais.en, flag: bandera(pais.iso2), region: pais.region } : null,
@@ -475,13 +521,6 @@ export function analizar(docArg, sitio, ov = {}) {
       r.avisos.push(`Todos los clubes de ${pais.iso2} ya cargados arrancan el ejercicio el ${delPais[0]} y este documento dice ${fysPropio}: no es un error necesariamente (Almagro, FC Midtjylland), pero vale mirarlo.`);
     }
   }
-
-  // Resumen
-  const todos = [...r.campos, ...E];
-  const cnt = (e) => todos.filter((c) => c.estado === e).length;
-  r.resumen = { campos: todos.length, ok: cnt('ok'), pregunta: cnt('pregunta'), pendiente: cnt('pendiente'), pctOk: Math.round((100 * cnt('ok')) / todos.length), bloqueaEscribir: cnt('pregunta') > 0 || r.club.existe };
-  r.preguntas = todos.filter((c) => c.estado === 'pregunta').map((c) => ({ campo: c.campo, pregunta: c.pregunta }));
-  return r;
 }
 
 // ============================================================================

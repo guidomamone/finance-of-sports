@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1003 — `analizar()` de alta-club.mjs partida en 7 funciones [399 · alta-club.mjs]
+
+- `analizar()` (365 líneas) queda en ~110: año y cierre (`cierreYAnio`), moneda (`monedaDelEjercicio`), deporte por menciones (`deporteDelTexto`), campos del club nuevo (`camposDelClub`), tipo de documento (`tipoDeDocumento`), perímetro (`perimetroDelDocumento`) y contexto y avisos (`contextoYAvisos`). Mismo texto de cada tramo, cortado por línea con un script; cada función recibe lo que usa y devuelve lo que el resto necesita. Sigue en un solo archivo (no hay import circular): el aviso `tool-grande` y su motivo quedan.
+- Medición: lote completo (989 documentos), medidores `alta` y `cargar`: idéntico. Sin cambio de lógica; no aplica veredicto de patrón.
+
 ## Versión 1002 — El resumen de personal-ensayos cuenta de verdad: el 404 probado con el cambio del 351 [404 · medir-pipeline.mjs]
 
 - `medir-pipeline.mjs` (resumen `valores-personal`): la línea `$ caja-deuda --personal --club X --ejecutar (salió…` no entraba en el patrón (había banderas entre el club y «(salió»), así que `personal-ensayos` contaba todo en cero (184 diferencias, «0 pierden, 0 nuevos»). Ahora cada combinación club/`--partir` es un bloque.
