@@ -129,6 +129,10 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
 | Registro | `Admin/registros/` | con lector declarado en un README | `audit.js` `registro-sin-lector` |
 | Historia en un doc de criterio | texto | `Admin/CHANGELOG.md` | `audit.js` `historia-en-doc-de-criterio` |
 
+## Tamaño de las tools
+
+Una tool de más de 40 KB no se lee entera (`CLAUDE.md`): se parte con `node tools/fos.mjs mapa <tool>` y `node tools/fos.mjs mover` (movimiento puro, ensayo por defecto; `medir pipeline` después) o queda con su motivo en `tools/tamanos-aceptados.json`. Aviso P3 `tool-grande`. Los módulos que salen de una tool se llaman `<tool>-<parte>.mjs` y la tool los re-exporta, así los llamadores no cambian.
+
 ## Comentarios en tools/
 
 Se quedan: el porqué que el código no dice, la invariante, el caso real que justifica una regla (sin la versión), el uso de la tool en pocas líneas y las trampas. Se van: la historia («Versión N», «to-do N», fechas de decisión), la narración de una sesión, lo que el código ya dice, las cabeceras con lo que ya está en `Admin/PIPELINE.md` y todo comentario que contradice lo que el código hace hoy (eso se anota en `Admin/HALLAZGOS-pipeline.md`, no se arregla en la limpieza).
