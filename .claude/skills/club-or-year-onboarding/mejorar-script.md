@@ -22,6 +22,6 @@ regenera solo `tools/lotes-prueba.mjs` al cerrar cada carga, estratificadas por 
 que está a mano un documento de cada familia (un caso nuevo que rompió algo va a la mano, con su motivo). La regla de cobertura (3 documentos de cada familia
 afectada) la aplica `medir-pipeline`; `audit.js` avisa `lote-prueba-desfasado` si las listas dejan de cubrir lo cargado.
 
-Además, según lo que toque, en la tabla hay otros medidores (`caja-deuda --medir` y `--personal --medir` en TODOS los clubes, `audit.js` sobre el sitio, el ensayo del
+Mientras corre una medición no se edita ningún archivo trackeado (ni la tabla, ni `fos-comandos.json`): `medir-pipeline` lo toma por un efecto del medidor y lo revierte. Si se toca `medir-pipeline.mjs`, se corre `node tools/fos.mjs probar medir-pipeline`. Además, según lo que toque, en la tabla hay otros medidores (`caja-deuda --medir` y `--personal --medir` en TODOS los clubes, `audit.js` sobre el sitio, el ensayo del
 conversor XHTML, el de altas). Lo que no se puede ejercitar con lo cargado se simula en el scratchpad con copia de seguridad de `Admin/` y se restaura. Una medición
 retroactiva de lo ya commiteado: `--base <commit anterior>`.

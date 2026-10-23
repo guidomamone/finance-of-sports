@@ -24,7 +24,7 @@
    con una tabla etapa · ejercicios · qué significa la etapa · qué falta (solo lo pendiente: los cargados y descartados van en una línea
    aparte), y las decisiones numeradas con la recomendación al lado.
 7. Lo que frena se resuelve en este orden: un ajuste manual (gratis, sin preguntar); la cola, que contesta un subagente (ver "La cola" en la sección 4); si es
-   un defecto de un script, se anota en `Admin/registros/frenados-por-script.jsonl` (pdf, defecto, detalle, sesión, fecha), se deja ese
+   un defecto de un script, se anota en `Admin/registros/frenados-por-script.jsonl` (pdf, defecto, detalle, sesión, fecha; lo que una tool ya registra sola con su causa, como el costo de personal, se ve con `node tools/fos.mjs causas`), se deja ese
    documento y se sigue con el resto. Lo arregla la sesión de pipeline, la única que edita `tools/` (`Admin/CONVENCIONES.md`, "ONBOARDING
    CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA"). Si un año sigue frenado por datos (no cierra, casos de la cola sin precedente, o iría a
    `Admin/dudas-por-club.md`), antes de dejarlo el caso va a la Auditora, que lo clasifica: (a) ajuste con precedente, que Onboarding carga;

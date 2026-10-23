@@ -64,7 +64,7 @@ Bash. Si tocás `js/` o `data/` y el navegador muestra lo viejo: subí `ASSET_V`
 
 ## 5. Antes de terminar
 
-Lo que dice `CLAUDE.md`, «Antes de terminar la sesión». Si tocaste datos de un club hay archivos generados que regenerar (`audit.js` lo
+Lo que dice `CLAUDE.md`, «Antes de terminar la sesión». El cierre de cada tarea se hace con `node tools/fos.mjs cerrar <id>`: cierra el punto del TODO, regenera el índice de los .md, audita y revisa la entrada del CHANGELOG y ESTADO/PIPELINE; no commitea y dice qué falta con ✓ y ✗. Si tocaste datos de un club hay archivos generados que regenerar (`audit.js` lo
 chequea como P1): `cargar.mjs --escribir`, `alta-club.mjs` y `lote.mjs --cargar` ya los corren solos; si cargaste o corregiste a mano,
 `node tools/publicar.mjs` (genera el data file desde el JSON, sube `ASSET_V`, corre los generadores y `audit.js`, y revierte lo suyo si
 da P0 o P1; `--ensayo` dice qué haría). La fuente de un club es su JSON (`data/<país>/<club>.json`); el `-data.js` se genera. Una fuente
