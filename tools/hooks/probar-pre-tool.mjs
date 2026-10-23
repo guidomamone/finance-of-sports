@@ -55,6 +55,10 @@ function casosMedicion() {
 const casos = [
   ['skill: texto que nadie propuso', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: 'Un texto que nadie propuso nunca en ningún archivo de propuestas.' } }, 'deny', 'no está en ningún archivo', 'varias-sesiones'],
   ['skill: texto propuesto y commiteado', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: '**Un club extinto o refundado vale** si sus balances siguen publicados: se bajan y se documentan como los de cualquier otro.' } }, 'ask', 'Admin/propuestas/', 'varias-sesiones'],
+  ['tmp: Write a /private/tmp suelto', { tool_name: 'Write', tool_input: { file_path: '/private/tmp/claude-501/-Users-x-proyecto/prueba.mjs', content: 'x' } }, 'deny', 'archivo suelto'],
+  ['tmp: Write a /tmp', { tool_name: 'Write', tool_input: { file_path: '/tmp/prueba.txt', content: 'x' } }, 'deny', 'archivo suelto'],
+  ['tmp: Write al scratchpad de la sesión', { tool_name: 'Write', tool_input: { file_path: '/private/tmp/claude-501/-Users-x-proyecto/0469c398-7116-46dd/scratchpad/prueba.mjs', content: 'x' } }, 'pasa'],
+  ['tmp: Edit de un archivo del proyecto', { tool_name: 'Edit', tool_input: { file_path: `${raiz}/Admin/TODO.md`, old_string: 'zzzz-no-existe', new_string: 'y' } }, 'pasa'],
   ['skill: sed -i a skills', bash("sed -i 's/a/b/' .claude/skills/club-sourcing/SKILL.md"), 'deny', 'Editá con Edit'],
   ['skill: redirección a skills', bash("cat > .claude/skills/a/SKILL.md <<'EOF'\nhola\nEOF"), 'pasa'],
   ['skill: python que abre skills', bash("python3 -c \"open('.claude/skills/a/SKILL.md','w').write('x')\""), 'deny', 'Editá con Edit'],

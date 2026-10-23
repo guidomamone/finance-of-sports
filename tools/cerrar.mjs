@@ -9,8 +9,9 @@
 //   4. comprueba que Admin/CHANGELOG.md tiene una entrada reciente que nombra el id,
 //   5. avisa si cambió una tool que figura por nombre en Admin/ESTADO.md o Admin/PIPELINE.md y ninguno se tocó (--sin-doc "motivo" lo da por visto), si cambió una skill (commit aparte, y el diff con show_pane) o datos (trailer Corrige:),
 //   6. imprime los pendientes con ✓ y ✗ y el `git add` sugerido. NO commitea.
-// USO: node tools/fos.mjs cerrar <id> [--ensayo] [--forzar] [--sin-doc "motivo"]     (--ensayo: no cierra el punto ni regenera el índice, solo revisa; --forzar: cierra aunque su «Verificar:» no se cumpla;
-//      --sin-doc: ESTADO.md y PIPELINE.md se miraron y siguen siendo ciertos)
+// USO: node tools/fos.mjs cerrar <id> [--cerrar] [--forzar] [--sin-doc "motivo"]     (SIN --cerrar solo revisa: no toca el TODO ni regenera el índice; con --cerrar borra el punto del TODO y regenera el índice;
+//      --forzar: cierra aunque su «Verificar:» no se cumpla; --sin-doc: ESTADO.md y PIPELINE.md se miraron y siguen siendo ciertos)
+//      Por defecto no se cierra porque un cierre sin querer borra un punto con trabajo pendiente (pasó con el 407).
 import { execFileSync, spawnSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -18,8 +19,8 @@ import { resolve } from 'node:path';
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const id = A.find((a) => /^\d+$/.test(a));
-if (!id) { console.error('Uso: node tools/fos.mjs cerrar <id del punto> [--ensayo] [--forzar]'); process.exit(1); }
-const ENSAYO = A.includes('--ensayo');
+if (!id) { console.error('Uso: node tools/fos.mjs cerrar <id del punto> [--cerrar] [--forzar] [--sin-doc "motivo"]   (sin --cerrar solo revisa; con --cerrar borra el punto del TODO)'); process.exit(1); }
+const ENSAYO = !A.includes('--cerrar');
 const node = (args) => spawnSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 });
 const git = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 });
 const lineas = []; let faltan = 0;
@@ -69,6 +70,15 @@ else {
 // 4. el CHANGELOG
 const cl = readFileSync(resolve(ROOT, 'Admin/CHANGELOG.md'), 'utf8').split('\n').slice(0, 90).join('\n');
 new RegExp(`(\\[[^\\]]*\\b${id}\\b[^\\]]*\\]|\\b(?:TODO|to-do|punto|puntos)s? ${id}\\b|\\b${id}[:·])`).test(cl) ? ok(`CHANGELOG: hay una entrada reciente que nombra el ${id}`) : mal(`CHANGELOG: ninguna entrada reciente nombra el ${id} (título con [${id}] al final, como las demás)`);
+
+// 4b. las tools que cambiaron desde la última entrada tienen que estar nombradas en el título de una entrada nueva ([ids · tools · clubes]; fos changelog historial <tool> las busca)
+{
+  let s = null; try { s = JSON.parse(execFileSync('node', ['tools/changelog.mjs', 'tools-sin-entrada'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch (e) { try { s = JSON.parse(e.stdout); } catch { /* sin respuesta */ } }
+  if (!s) aviso('no pude calcular las tools cambiadas para el título del CHANGELOG');
+  else if (!s.cambiadas.length) ok('CHANGELOG: no cambió ninguna tool desde la última entrada');
+  else if (!s.faltan.length) ok(`CHANGELOG: los títulos nombran las ${s.cambiadas.length} tool(s) cambiadas`);
+  else mal(`CHANGELOG: el título de la entrada no nombra ${s.faltan.join(', ')} (corchete: [${id} · ${s.cambiadas.join(', ')}])`);
+}
 
 // 5. lo que cambió
 const cambiados = git('status', '--porcelain', '-uall').split('\n').filter(Boolean).map((l) => l.slice(3).replace(/^"|"$/g, ''));

@@ -285,6 +285,16 @@ function worktreeSinPermissionMode() {
   }
 }
 
+// escritura-en-tmp-suelto (deny): un Write/Edit a /tmp o /private/tmp que NO sea la carpeta scratchpad de la sesión (/private/tmp/claude-<uid>/<proyecto>/<sesión>/scratchpad/)
+// deja un archivo perdido fuera del proyecto (pasó: un .mjs de prueba en /private/tmp/claude-501/<proyecto>/ sin la carpeta de sesión). El Bash ya tiene la misma regla.
+function escrituraEnTmpSuelto() {
+  if (!EDITA.includes(herramienta)) return;
+  const ruta = rutaEditada();
+  if (!/^\/(?:private\/)?tmp(?:\/|$)/.test(ruta)) return;
+  if (/^\/private\/tmp\/claude-\d+\/.+\/scratchpad\//.test(ruta)) return;
+  decidir('deny', `Escribir en ${ruta} deja un archivo suelto fuera del proyecto. Usá la carpeta scratchpad de esta sesión (/private/tmp/claude-<uid>/<proyecto>/<sesión>/scratchpad/, la que da el sistema) o una ruta del proyecto.`);
+}
+
 // memoria-no-es-regla: una regla de trabajo no vive en la memoria de una sesión. Una preferencia de trato (type user o reference) sí.
 function memoriaNoEsRegla() {
   if (!EDITA.includes(herramienta)) return;
@@ -381,7 +391,7 @@ function comandosSimples(cmd) {
   const tmpSuelto = sinTextos.replace(/\/private\/tmp\/claude-501\//g, '').match(/(^|[\s"'=:(<>])\/(?:private\/)?tmp(?:\/|\b)/);
   if (tmpSuelto) decidir('deny', 'Nada de /tmp: usá la carpeta de scratchpad de la sesión (la que da el sistema) o una ruta del proyecto. /tmp pide permiso cada vez.');
   if (/(^|\n|&&|;|\|)\s*cd\s+\S+\s*(&&|;)/.test(sinTextos)) {
-    decidir('deny', 'Nada de `cd … &&` ni `cd …;`: el comando con cd no se puede chequear y pide permiso. Escribí la ruta completa en el comando; git y node se corren directo desde la carpeta de la sesión.');
+    decidir('deny', 'Nada de `cd … &&` ni `cd …;`: el comando con cd no se puede chequear y pide permiso. Escribí la ruta completa en el comando; git y node se corren directo desde la carpeta de la sesión. Para un script de una sola vez: Write en el scratchpad y `node <ruta completa>` (nada de `node -e`).');
   }
   if (/\$\(|\$\{|\$[A-Za-z_]/.test(sinTextos)) {
     decidir('deny', 'Nada de `$(…)`, `${…}` ni `$VARIABLE` en un comando: una ruta que se resuelve al correr pide permiso cada vez. Escribí la ruta o el valor entero; para encadenar dos pasos, un pipe o dos llamadas. (Pasa el heredoc de `git commit -m "$(cat <<\'EOF\' … EOF)"`.)');
@@ -433,6 +443,7 @@ if (herramienta === 'Bash' && VARIAS) rsyncSinNoLinks(cmd);
 subagenteConReglaDeComandos();
 if (VARIAS) { archivarConOk(); modeloOpusConOk(); worktreeSinPermissionMode(); }
 memoriaNoEsRegla();
+escrituraEnTmpSuelto();
 if (VARIAS) skillsConOk(cmd);
 if (herramienta === 'Bash') comandoQueEdita(cmd);
 pushConOk(cmd);

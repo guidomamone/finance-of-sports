@@ -132,6 +132,10 @@
  "_no_pipeline": "Tools de primer nivel declaradas de afuera del pipeline, con el motivo. Una tool de la tabla no puede importar una de estas (clasificar-tools.mjs lo avisa). tools/hooks, tools/archivo y las carpetas de datos no se clasifican.",
  "no_pipeline": {
   "archivar.mjs": "orden: archiva un documento cerrado",
+  "arranque.mjs": "orden: imprime las secciones de ESTADO.md de un rol (solo lee)",
+  "existe.mjs": "orden: busca si ya hay una regla o decisión sobre un tema (solo lee)",
+  "cola-historial.mjs": "orden: las cifras de la cola con su definición (solo lee)",
+  "changelog.mjs": "orden: el CHANGELOG por tool (historial, migración, archivado, chequeos); no lo corre ninguna etapa",
   "fuente-documento.mjs": "datos: completa `document` (el PDF de origen) en las fuentes ya cargadas; no lo corre ninguna etapa",
   "cerrar.mjs": "orden: el cierre de una tarea (TODO, índice, auditoría, CHANGELOG)",
   "limpiar-comentarios.mjs": "orden: saca la historia de los comentarios de tools/ (solo texto de comentarios; se prueba con comparar-sin-comentarios --tools)",

@@ -1096,6 +1096,9 @@ function checkGenerados() {
   // el índice de documentos (Admin/INDICE-md.md) no frena un commit: P3
   try { execSync('node tools/indice-md.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
   catch (e) { add('P3', 'indice-md-desfasado', 'Admin/INDICE-md.md quedó desactualizado (se creó, movió o borró un .md). Corré: node tools/indice-md.mjs'); }
+  // el CHANGELOG: una entrada de más de 1.500 caracteres o el archivo de más de 120 KB (tools/changelog.mjs check; P3)
+  try { execSync('node tools/changelog.mjs check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+  catch (e) { for (const l of String(e.stdout || '').split('\n').filter(Boolean)) { const m = l.match(/^(changelog-[a-z-]+): (.*)$/); if (m) add('P3', m[1], m[2]); } }
 }
 
 // un commit que corrige un dato publicado (importe, categoría, filas, totales, caja/deuda, moneda, fuente, perímetro) lleva el trailer
