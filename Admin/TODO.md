@@ -30,10 +30,10 @@ Terminado cuando: cada tool de la lista pasa a tener menos de 40 KB o su motivo 
 
 Verificar: manual
 
-### 2. 413 · (Onboarding, con Pipeline): cargar Fredrikstad 2019-2023 (PDFs en mano) y SønderjyskE 2023 y 2025 (informes XHTML en mano)
+### 2. 413 · (Onboarding, con Pipeline): cargar SønderjyskE 2023 (informe de transición de 15 meses) y 2025 (informe XHTML en mano)
 
-Salió de la auditoría (`ejercicio-sin-rastro`, P3): los documentos EXISTEN en `Clubes/` y no se cargaron, así que no se silencian. Fredrikstad Fotballinvest AS: serie completa 2008-2025 en `Clubes/Noruega/Fredrikstad/` (sourcing 2026-09-17); cargados 2012-2018 y 2024; hueco 2019-2023 (y 2008-2011 y 2025 si se quieren). SønderjyskE: cargados 2022 y 2024; hueco 2023 (informe de transición de 15 meses, 01/07/2022-30/09/2023) y 2025 (`aarsrapport-2025-09-30`). Se corre con `node tools/estado.mjs` y `node tools/lote.mjs --lista … --ejecutar` (ensayo primero para el costo; los informes XHTML y los PDF de Brønnøysund son estructurados, costo bajo).
-Terminado cuando: Fredrikstad 2019-2023 y SønderjyskE 2023 y 2025 están cargados con su verificación, `node tools/audit.js` no da `ejercicio-sin-rastro` para esos dos clubes y `fos cola-historial` no queda con casos nuevos sin responder.
+Salió de la auditoría (`ejercicio-sin-rastro`, P3): los documentos EXISTEN en `Clubes/Dinamarca/SønderjyskE/` y no se cargaron, así que no se silencian. Cargados 2022 y 2024. 2023: `aarsrapport-2022-2023-09-30-transicion` (01/07/2022-30/09/2023, con `.md`, `.pdf` y `.xhtml`). 2025: `aarsrapport-2025-09-30.xhtml`, sin `.md` (hay que convertirlo con `tools/xhtml-aarsrapport.mjs`). El ensayo del lote 142 (`Admin/lotes/lote-142.txt`) da US$ 0,12 para 2023: el motor determinista de XHTML/iXBRL todavía no lee las cifras etiquetadas, así que `--ejecutar` frena el lote hasta pasar `--pagar-ia-xhtml "<motivo>"` (gasto que decide Guido). (Fredrikstad 2019-2023 NO va: esos PDF son de Fredrikstad Fotballinvest AS, descartados el 2026-10-21 porque no es el club; el aviso quedó silenciado con esa cita.)
+Terminado cuando: SønderjyskE 2023 y 2025 están cargados con su verificación y `node tools/audit.js` no da `ejercicio-sin-rastro` para `sonderjyske-dk`.
 
 Verificar: manual
 
