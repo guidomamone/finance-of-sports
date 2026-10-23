@@ -128,10 +128,26 @@ export function planear(origen, srcOrigen, desde, hasta, destino, porque = '') {
   const usadosBloque = new Set(idsConPunto(bloqueCodigo)), usadosResto = new Set(idsConPunto(restoCodigo));
   const localesUsados = [...delResto.keys()].filter((n) => usadosBloque.has(n) && !enBloque.has(n));
   // una constante de una línea que solo usa imports y literales (`const ROOT = resolve(import.meta.dirname, '..')`) se DUPLICA en el módulo: importarla de la tool en un ciclo falla (TDZ) y su valor es el mismo
-  const pura = (n) => { const l = D.L[delResto.get(n).linea]; const mm = /^\s*const\s+([\w$]+)\s*=\s*(.+);\s*$/.exec(l); if (!mm || mm[1] !== n) return null; const usa = idsConPunto(mm[2].replace(/'[^']*'|"[^"]*"|\d[\d._]*/g, ' ')); return usa.every((x) => D.imports.has(x)) ? { linea: L[delResto.get(n).linea], usa } : null; };
-  const duplicadas = localesUsados.filter((n) => pura(n));
+  // una constante de una línea que solo usa imports, literales y OTRAS constantes puras (`const REF = resolve(ROOT, 'x')`, con `const ROOT = resolve(import.meta.dirname, '..')`)
+  const puraRec = (n, camino = new Set()) => {
+    if (camino.has(n) || !delResto.has(n)) return null;
+    const l = D.L[delResto.get(n).linea]; const mm = /^\s*const\s+([\w$]+)\s*=\s*(.+);\s*$/.exec(l);
+    if (!mm || mm[1] !== n) return null;
+    const lineas = [], imps = new Set(), cam = new Set(camino).add(n);
+    for (const x of idsConPunto(mm[2].replace(/'[^']*'|"[^"]*"|\d[\d._]*/g, ' ')).filter((y) => y !== n)) {
+      if (D.imports.has(x)) { imps.add(x); continue; }
+      const r = puraRec(x, cam); if (!r) return null;
+      for (const y of r.lineas) if (!lineas.includes(y)) lineas.push(y);
+      r.imps.forEach((y) => imps.add(y));
+    }
+    lineas.push(L[delResto.get(n).linea]);
+    return { lineas, imps };
+  };
+  const dupInfo = new Map(localesUsados.map((n) => [n, puraRec(n)]).filter(([, r]) => r));
+  const duplicadas = [...dupInfo.keys()];
+  const lineasDuplicadas = []; for (const r of dupInfo.values()) for (const y of r.lineas) if (!lineasDuplicadas.includes(y)) lineasDuplicadas.push(y);
   const localesDelBloque = localesUsados.filter((n) => !duplicadas.includes(n));
-  const usadosPorDuplicadas = new Set(duplicadas.flatMap((n) => pura(n).usa));
+  const usadosPorDuplicadas = new Set([...dupInfo.values()].flatMap((r) => [...r.imps]));
   const importsBloque = [...D.imports].filter(([n, v]) => (usadosBloque.has(n) || usadosPorDuplicadas.has(n)) && (v.linea < a || v.linea > b));
   const importsEnBloque = [...D.imports].filter(([, v]) => v.linea >= a && v.linea <= b);
   if (importsEnBloque.length) throw new Error('el bloque contiene imports: movelos aparte');
@@ -153,6 +169,11 @@ export function planear(origen, srcOrigen, desde, hasta, destino, porque = '') {
   }
   if (alImportar.length) riesgos.push(`TDZ: una constante del bloque usa al evaluarse un nombre que importaría de la tool: ${alImportar.join(', ')}; en el ciclo falla al importar. Mové también esa declaración, o hacela función`);
   if (localesDelBloque.length) riesgos.push(`import circular: ${basename(destino)} importa ${localesDelBloque.length} nombre(s) de ${basename(origen)} y ${basename(origen)} importa de ${basename(destino)}; seguro mientras ninguna constante del bloque use ${localesDelBloque.filter((n) => !/^(function|class)/.test(D.L[delResto.get(n).linea].trim().replace(/^export\s+/, '').replace(/^async\s+/, ''))).slice(0, 4).join(', ') || 'esos nombres'} al evaluarse`);
+  // estado compartido: una variable `let`/`var` que cruza el borde y se REASIGNA del otro lado no funciona (un import es de solo lectura): se frena
+  const asignada = (n, codigo) => new RegExp(`(?<![\\w$.])${n.replace(/\$/g, '\\$')}\\s*(?:=(?![=>])|\\+=|-=|\\*=|/=|\\|\\|=|&&=|\\?\\?=|\\+\\+|--)|(?:\\+\\+|--)\\s*${n.replace(/\$/g, '\\$')}\\b`).test(codigo);
+  const compartidas = [];
+  for (const n of exportarDelBloque) if (/^\s*(?:export\s+)?(?:let|var)\b/.test(D.L[enBloque.get(n).linea]) && asignada(n, restoCodigo)) compartidas.push(n);
+  for (const n of localesDelBloque) if (/^\s*(?:export\s+)?(?:let|var)\b/.test(D.L[delResto.get(n).linea]) && asignada(n, bloqueCodigo)) compartidas.push(n);
   // el módulo nuevo
   const exportarEnBloque = new Set([...exportarDelBloque, ...yaExportadas]);
   const lineasBloque = L.slice(a, b + 1).map((l, i) => {
@@ -167,7 +188,7 @@ export function planear(origen, srcOrigen, desde, hasta, destino, porque = '') {
     `// tools/${basename(destino)} — ${porque || `bloque mudado TAL CUAL de tools/${basename(origen)} (movimiento puro, TODO 375)`}`,
     `// Mudado de tools/${basename(origen)} sin cambiar una línea (salvo \`export\`); tools/${basename(origen)} lo importa y re-exporta lo que ya exportaba.`,
     '// ============================================================================'];
-  const modulo = [...cab, ...lineasImport, ...(duplicadas.length ? ['', ...duplicadas.map((n) => pura(n).linea)] : []), '', ...lineasBloque, ''].join('\n');
+  const modulo = [...cab, ...lineasImport, ...(lineasDuplicadas.length ? ['', ...lineasDuplicadas] : []), '', ...lineasBloque, ''].join('\n');
   // la tool de origen: sin el bloque, con el import del módulo y el export de lo que el bloque necesita de ella
   const Lo = [...L];
   const aExportar = new Set(localesDelBloque);
@@ -186,6 +207,7 @@ export function planear(origen, srcOrigen, desde, hasta, destino, porque = '') {
   const original = Lo.join('\n');
   // comprobaciones
   const problemas = [];
+  if (compartidas.length) problemas.push(`estado compartido: ${compartidas.join(', ')} es let/var y se reasigna del otro lado del corte (un import es de solo lectura): mové también quien lo reasigna, o cambiá el rango`);
   const quitarExport = lineasBloque.map((l, i) => (l !== L[a + i] ? l.replace(/^(\s*)export /, '$1') : l));
   if (quitarExport.join('\n') !== L.slice(a, b + 1).join('\n')) problemas.push('el bloque no quedó idéntico salvo el export');
   const e1 = chequear(modulo); if (e1) problemas.push(`node --check falla en el módulo: ${e1}`);
