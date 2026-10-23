@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md",
- "generado": "2026-10-19T17:11:10.368Z",
+ "generado": "2026-10-23T13:12:49.252Z",
+ "scriptHuella": "2d94a50110ce",
  "estado": "ok",
  "clubId": "astonvilla-gb",
  "year": 2020,
@@ -11,7 +12,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "admin_general_expense",
+   "posible": true,
+   "motivo": "Aston Villa 2020 (a pedido de Guido): una sola línea de gasto, «Administrative expenses» 203 M£ sin desglose (L394); la nota de personal (L731-L739, 8,3 M£) no incluye al plantel; los sueldos del plantel están posiblemente dentro de esa línea",
+   "evidencia": "astonvilla-full-accounts-2019-20.md L394",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.md",
- "generado": "2026-10-23T12:47:48.027Z",
+ "generado": "2026-10-23T13:12:49.238Z",
  "scriptHuella": "2d94a50110ce",
  "estado": "ok",
  "clubId": "astonvilla-gb",
@@ -20,6 +20,18 @@
    "linea": 383,
    "motivo": "El estado de resultados imprime 'Loss for the financial year (111,776,896)' (en texto, sin tabla) y la extracción no lo localizó: officialPAT quedaba vacío (TODO 370, balance-sin-pat)",
    "evidencia": "astonvilla-full-accounts-2018-19.md L383",
+   "autor": "Claude",
+   "fecha": "2026-10-23"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "admin_general_expense",
+   "posible": true,
+   "motivo": "Aston Villa 2019 (a pedido de Guido): el documento imprime una sola línea de gasto, «Administrative expenses», sin desglose, y la nota de personal de la sociedad (8 M£) no incluye al plantel; los sueldos del plantel están posiblemente dentro de esa línea",
+   "evidencia": "astonvilla-full-accounts-2018-19.md, estado de resultados",
    "autor": "Claude",
    "fecha": "2026-10-23"
   }

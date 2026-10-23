@@ -207,26 +207,6 @@
  },
  {
   "code": "sin-salarios",
-  "match": "astonvilla-gb 2019",
-  "motivo": "VERIFICADO 2026-10-23 contra el documento: las cuentas son las de Aston Villa Football Club Limited, la sociedad que no emplea al plantel. La nota de personal (astonvilla-full-accounts-2019-20.md L731-L739, 2020-21 L707, 2021-22 L768) declara 658 empleados SIN jugadores (directores, comercial, mantenimiento, personal de día de partido) y 7,0 a 9,4 M£ de costo de personal contra ingresos de 51 a 205 M£: los sueldos del plantel no se pueden separar con este documento: la nota de personal no los incluye y los 203 M£ de «Administrative expenses» (2019-20, L394) no tienen desglose; pueden estar dentro de esa línea o en otra sociedad del grupo (REVISADO 2026-10-23 a pedido de Guido: la nota «operating loss … after charging» L704 solo lista depreciación y partidas excepcionales). Límite de la fuente; el consolidado del grupo no se publica."
- },
- {
-  "code": "sin-salarios",
-  "match": "astonvilla-gb 2020",
-  "motivo": "Mismo caso que astonvilla-gb 2019 (ver esa entrada): nota de personal de la sociedad sin el plantel, 8,3 M£ contra 107,9 M£ de ingresos (astonvilla-full-accounts-2019-20.md L731-L739)."
- },
- {
-  "code": "sin-salarios",
-  "match": "astonvilla-gb 2021",
-  "motivo": "Mismo caso que astonvilla-gb 2019: nota de personal de la sociedad sin el plantel (astonvilla-full-accounts-2020-21.md L707)."
- },
- {
-  "code": "sin-salarios",
-  "match": "astonvilla-gb 2022",
-  "motivo": "Mismo caso que astonvilla-gb 2019: nota de personal de la sociedad sin el plantel, 9,4 M£ de costo total (astonvilla-full-accounts-2021-22.md L768-L771)."
- },
- {
-  "code": "sin-salarios",
   "match": "novorizontino-br 2010",
   "motivo": "VERIFICADO 2026-10-23 contra el documento: el balanço 2010 de un club amateur (ingresos de R$ 0,13 M) imprime solo tres renglones de gasto (Administrativas, Despesas Gerais e Manutenção, Projeto Escola de Futebol) y ninguna línea de personal (balanco-2010.md L12-L14); no hay sueldos que separar."
  },
@@ -259,11 +239,6 @@
   "code": "salto-interanual",
   "match": "panserraikos-gr: revenue salta de 1.1 M USD (2023) a 7.3 M USD (2025), 6.9×",
   "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): Los dos años están en euros y cargados bien. 2022-23 es Super League 2, y 2024-25 ya es Super League, primera división. El año del medio, que no está cargado, da unos 3,8 M EUR según la comparativa de 2025, así que la progresión es real. Cita: 2023: Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.md l.6 '(Ποσά σε Ευρώ)', l.19 'Σύνολο λειτουργικών εσόδων 686.723,21' + μετεγγραφές 186.319,43 + 100.000. 2025: Panserraikos_income_stmt_2025-06-30.md l.9 '(Ποσά σε Ευρώ)', l.15 Κύκλος εργασιών 4.700.403,44 (2024: 2.312.994,45), l.18 Λοιπά συνήθη έσοδα 1.501.129,12."
- },
- {
-  "code": "sin-salarios",
-  "match": "novorizontino-br 2010: no hay ni una línea en 'wages_squad'",
-  "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): año de fundación, sin plantel profesional; la Demonstração do Resultado (Clubes/Brasil/Novorizontino/balanco-2010.md L10-15) tiene 4 renglones de gasto y ninguno de personal. Ajuste manual cero-real 'Salarios del plantel' de Guido (Admin/registros/ajustes-manuales.jsonl, balanco-2010.pdf)."
  },
  {
   "code": "salto-interanual",

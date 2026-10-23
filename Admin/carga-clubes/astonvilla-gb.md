@@ -220,7 +220,7 @@ tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -242,13 +242,9 @@ Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.categorias.jso
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Aston Villa".
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): incluye = wages_squad. Aston Villa 2022 (a pedido de Guido): igual que 2020, «Administrative expenses» sin desglose y nota de personal de la sociedad sin el plantel (L768-L771)
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2021
@@ -256,7 +252,7 @@ tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2021: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -277,13 +273,9 @@ Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.categorias.jso
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Aston Villa".
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): incluye = wages_squad. Aston Villa 2021 (a pedido de Guido): igual que 2020, «Administrative expenses» sin desglose y nota de personal de la sociedad sin el plantel (L707)
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2020
@@ -291,7 +283,7 @@ tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cachea
 ### Ingresos
 
 ```text
-2020: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2020: cargado por tools/cargar.mjs (2026-10-23) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -312,13 +304,9 @@ Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.categorias.jso
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2019–20 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Aston Villa".
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): incluye = wages_squad. Aston Villa 2020 (a pedido de Guido): una sola línea de gasto, «Administrative expenses» 203 M£ sin desglose (L394); la nota de personal (L731-L739, 8,3 M£) no incluye al plantel; los sueldos del plantel están posiblemente dentro de esa línea
+tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## 2019
@@ -347,7 +335,9 @@ Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.categorias.jso
 
 ```text
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): resultado-final = (111,776,896). El estado de resultados imprime 'Loss for the financial year (111,776,896)' (en texto, sin tabla) y la extracción no lo localizó: officialPAT quedaba vacío (TODO 370, balance-sin-pat)
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-23): incluye = wages_squad. Aston Villa 2019 (a pedido de Guido): el documento imprime una sola línea de gasto, «Administrative expenses», sin desglose, y la nota de personal de la sociedad (8 M£) no incluye al plantel; los sueldos del plantel están posiblemente dentro de esa línea
 tools/cargar.mjs (2026-10-23). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
 ```
 
 ## Fuentes
