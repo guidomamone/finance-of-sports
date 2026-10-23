@@ -200,6 +200,9 @@
         },
         "public_note": {
           "type": "string"
+        },
+        "document": {
+          "type": "string"
         }
       },
       "required": [
