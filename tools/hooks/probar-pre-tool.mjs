@@ -22,7 +22,7 @@ function casosMedicion() {
   const registro = (nombre, lineas) => { const p = `${dir}/_prueba-hook-${nombre}.jsonl`; writeFileSync(p, lineas.map((l) => JSON.stringify(l)).join('\n') + (lineas.length ? '\n' : '')); return p; };
   const linea = (resultado, despues) => ({ fecha: '2026-10-22', tools: { 'cargar.mjs': { antes: 'x', despues } }, lote: { nivel: 'completo' }, resultado });
   const commit = (msg) => bash(`git commit -m "${msg}"`);
-  const env = (reg, cambiados = 'tools/cargar.mjs') => ({ FOS_REGISTRO: reg, FOS_CAMBIADOS: cambiados });
+  const env = (reg, cambiados = 'tools/cargar.mjs') => ({ FOS_REGISTRO: reg, FOS_CAMBIADOS: cambiados, FOS_EXENTO: 'si' });
   const h = huella('cargar.mjs');
   return [
     ['medición: tool del pipeline sin registro frena y dice el comando', commit('x [sin-audit]'), 'deny', 'node tools/medir-pipeline.mjs', 'una-sesion', env(registro('vacio', []))],
@@ -35,6 +35,13 @@ function casosMedicion() {
     ['medición: un módulo que usa una tool del pipeline sin medición frena', commit('x [sin-audit]'), 'deny', 'vocabulario.mjs', 'una-sesion', env(registro('modulo', []), 'tools/vocabulario.mjs')],
     ['medición: una tool nueva sin clasificar frena y dice cómo clasificarla', commit('x [sin-audit]'), 'deny', 'no_pipeline', 'una-sesion', env(registro('nueva', []), `tools/${SIN_CLASIFICAR}`)],
     ['medición: una tool de no_pipeline pasa', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', env(registro('afuera', []), 'tools/mapa-codigo.mjs')],
+    // TODO 384: un cambio de código a una tool del pipeline ya medida necesita la línea GENERAL de patron.mjs con su huella
+    ['veredicto: código cambiado sin línea de veredicto frena y dice el comando', commit('x [sin-audit]'), 'deny', 'node tools/patron.mjs', 'una-sesion', { ...env(registro('v1', [linea('idéntico', h)])), FOS_EXENTO: 'no', FOS_VEREDICTOS: registro('v1v', []) }],
+    ['veredicto: con su línea GENERAL pasa', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', { ...env(registro('v2', [linea('idéntico', h)])), FOS_EXENTO: 'no', FOS_VEREDICTOS: registro('v2v', [{ veredicto: 'GENERAL: SE COMMITEA', tools: { 'cargar.mjs': h } }]) }],
+    ['veredicto: una línea RECHAZADA no alcanza', commit('x [sin-audit]'), 'deny', 'cargar.mjs', 'una-sesion', { ...env(registro('v3', [linea('idéntico', h)])), FOS_EXENTO: 'no', FOS_VEREDICTOS: registro('v3v', [{ veredicto: 'RECHAZADA', tools: { 'cargar.mjs': h } }]) }],
+    ['veredicto: una línea de otra versión de la tool no alcanza', commit('x [sin-audit]'), 'deny', 'cargar.mjs', 'una-sesion', { ...env(registro('v4', [linea('idéntico', h)])), FOS_EXENTO: 'no', FOS_VEREDICTOS: registro('v4v', [{ veredicto: 'GENERAL: SE COMMITEA', tools: { 'cargar.mjs': 'b'.repeat(40) } }]) }],
+    ['veredicto: solo comentarios o mudanza (exento) pasa sin línea', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', { ...env(registro('v5', [linea('idéntico', h)])), FOS_EXENTO: 'si', FOS_VEREDICTOS: registro('v5v', []) }],
+    ['veredicto: [sin-veredicto] lo saltea', commit('x [sin-audit] [sin-veredicto]'), 'pasa', undefined, 'una-sesion', { ...env(registro('v6', [linea('idéntico', h)])), FOS_EXENTO: 'no', FOS_VEREDICTOS: registro('v6v', []) }],
     // TODO 385: el hook mira lo staged (aunque el árbol de trabajo tenga una tool sin medir) y dice qué hacer cuando la auditoría frena
     ['staged: un commit de datos pasa aunque haya una tool sin medir sin stagear', commit('x [sin-audit]'), 'pasa', undefined, 'una-sesion', { FOS_REGISTRO: registro('staged1', []), FOS_STAGED: 'data/gb/x.json' }],
     ['staged: una tool staged sin medición frena', commit('x [sin-audit]'), 'deny', 'cargar.mjs', 'una-sesion', { FOS_REGISTRO: registro('staged2', []), FOS_STAGED: 'tools/cargar.mjs' }],

@@ -143,11 +143,35 @@ function medicionAntesDelCommit(cmd) {
     const huella = git(staged ? ['rev-parse', `:tools/${n}`] : ['hash-object', `tools/${n}`]).trim();
     return !lineas.some((l) => BUENO.test(l.resultado || '') && l.tools?.[n]?.despues === huella);
   });
-  if (!sinMedir.length) return;
+  if (!sinMedir.length) return veredictoAntesDelCommit(cmd, raiz, tocadas, staged);
   decidir('deny', `Commit frenado: ${sinMedir.join(', ')} ${sinMedir.length > 1 ? 'son tools del pipeline y no tienen' : 'es una tool del pipeline y no tiene'} una medición con su versión actual en Admin/registros/mediciones-pipeline.jsonl `
     + '(una tool editada después de medir no cuenta). Ningún cambio al pipeline se commitea sin medir antes y después (CLAUDE.md).\n'
     + 'Corré: node tools/medir-pipeline.mjs   (en segundo plano; elige medidor y lote por tools/pipeline-tools.json; si hay diferencias esperadas: --explicacion "cuáles y por qué").\n'
     + 'Si es un caso de emergencia, con el ok de Guido agregá [sin-medicion] al mensaje del commit.');
+}
+
+// veredicto-antes-del-commit (TODO 384): un cambio de código a una tool del pipeline ya medida necesita, en Admin/registros/auditoria-proceso.jsonl, una línea
+// GENERAL de `node tools/patron.mjs --escribir` con la huella de esa tool. No la necesita un cambio de solo comentarios ni una mudanza (`patron.mjs --exento`).
+// FOS_EXENTO (si/no) y FOS_VEREDICTOS (ruta) reemplazan lo que se calcula y el registro: los usa la prueba.
+function veredictoAntesDelCommit(cmd, raiz, tocadas, staged) {
+  if (cmd.includes('[sin-veredicto]')) return;
+  let exento = process.env.FOS_EXENTO;
+  if (!exento) {
+    try { exento = execFileSync('node', ['tools/patron.mjs', '--exento', tocadas.join(','), ...(staged ? ['--indice'] : [])], { cwd: raiz, encoding: 'utf8' }).trim(); }
+    catch { return; } // sin la tool no hay con qué juzgar: no frena
+  }
+  if (exento === 'si') return;
+  const registro = process.env.FOS_VEREDICTOS || join(raiz, 'Admin', 'registros', 'auditoria-proceso.jsonl');
+  const lineas = existsSync(registro) ? readFileSync(registro, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
+  const sinVeredicto = tocadas.filter((n) => {
+    const huella = git(staged ? ['rev-parse', `:tools/${n}`] : ['hash-object', `tools/${n}`]).trim();
+    return !lineas.some((l) => /^GENERAL/.test(l.veredicto || '') && l.tools?.[n] === huella);
+  });
+  if (!sinVeredicto.length) return;
+  decidir('deny', `Commit frenado: el cambio de código a ${sinVeredicto.join(', ')} no tiene la línea de veredicto «general» en Admin/registros/auditoria-proceso.jsonl con su versión actual.\n`
+    + 'Corré: node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" --escribir   (cuenta documentos y clubes, mira que el código no nombre nada y toma la medición). '
+    + 'Si da PARCHE o RECHAZADA, el cambio no va al código: va como ajuste (la tool imprime el comando).\n'
+    + 'Si es una mudanza o solo comentarios y la tool no lo vio así, o es un caso de emergencia, con el ok de Guido agregá [sin-veredicto] al mensaje del commit.');
 }
 
 // Un Bash que escribe: sed/perl en el lugar, redirección, tee, mv, cp, rm, o un intérprete que puede escribir cualquier cosa.

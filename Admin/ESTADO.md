@@ -66,7 +66,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   listas de prueba estratificadas `Admin/lotes/prueba-*.txt` que regenera `lotes-prueba.mjs`; `Admin/PIPELINE.md`, «Medir un cambio a una tool»).
 - Hook posterior a Bash (`tools/hooks/post-tool.mjs`): un commit que toca una skill recuerda mostrar el diff.
 - Hooks de Claude Code (`.claude/settings.json` → `tools/hooks/pre-tool.mjs`): `audit.js` antes de cada commit publicable (frena con P0/P1;
-  `[sin-audit]` con el ok de Guido), el commit de una tool de `pipeline-tools.json` (o de un módulo que ellas usan) sin medición con su huella, o de una tool nueva sin clasificar (`[sin-medicion]` con el ok de Guido), y piden permiso editar skills, `git push` y borrar en `Clubes/`; en un worktree rechazan escribir TODO,
+  `[sin-audit]` con el ok de Guido), el commit de una tool de `pipeline-tools.json` (o de un módulo que ellas usan) sin medición con su huella o, si cambia el código (no solo comentarios ni una mudanza), sin la línea GENERAL de `node tools/fos.mjs patron` (`[sin-veredicto]`), o de una tool nueva sin clasificar (`[sin-medicion]` con el ok de Guido), y piden permiso editar skills, `git push` y borrar en `Clubes/`; en un worktree rechazan escribir TODO,
   CHANGELOG y ESTADO. También rechazan (con el motivo y cómo reescribirlo) rutas en `/tmp`, `$(...)` y variables, `cd ... &&`, `node -e`
   que importa una tool, un subagente sin la regla de solo Read, Grep y Write, el modo plan o un `git merge`/`pull` en un worktree y `rsync`
   sin `--no-links`; `mv` en `Clubes/` pide permiso. Qué chequea cada uno: la cabecera del script.

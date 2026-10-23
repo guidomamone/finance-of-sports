@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 965 — `fos patron`: el veredicto general, parche o rechazada por una tool, y el hook lo pide [384]
+
+- `tools/patron.mjs` (`node tools/fos.mjs patron --cambio "…" --patron "<regex>" [--rango A..B] [--escribir]`): (1) sin nombres: el código agregado (sin comentarios) no nombra un club de `data/clubs.js`, un año literal ni una ruta de `Clubes/`; (2) cuántos: documentos y clubes de `Clubes/**/*.md` con el patrón (general desde 3 de 2); (3) no rompe: la medición con la huella actual de cada tool. Veredicto GENERAL, PARCHE (imprime el `ajustes.mjs --agregar`), RECHAZADA o PENDIENTE; `--escribir` anota GENERAL y RECHAZADA en `auditoria-proceso.jsonl` con la huella. Solo juzga tools del pipeline y sus módulos, no los medidores.
+- Reproduce dos casos viejos: el 368 escalón 1 (`--rango b64a936596^..b64a936596`: 304 documentos de 71 clubes, sin nombres, medición explicada → GENERAL, como el registro) y el ajuste de Fortaleza 2023 («Total impuesto a cargo»: 4 documentos de 1 club → PARCHE).
+- Hook de commit: un cambio de código a una tool del pipeline ya medida pide la línea GENERAL con su huella (`[sin-veredicto]` con el ok de Guido); solo comentarios o mudanza (`patron.mjs --exento`) no la piden. 6 casos nuevos en `probar-pre-tool.mjs` (54, todos ok).
+- Skills: auditoría sección 8 y `mejorar-script.md` apuntan a la tool (el diseño ya no se le mostraba a Guido). PIPELINE.md, «Medir un cambio a una tool», con el veredicto. Tool de orden (`no_pipeline`): sin medición de pipeline.
+
 ## Versión 964 — `todo.mjs --nuevo`: un punto nuevo sin encabezados ni renumeración a mano [383]
 
 - `node tools/todo.mjs --nuevo --pos <n> --rol "…" --titulo "…"`: crea el punto con el id siguiente al más alto, en el lugar <n> (1 al último+1), renumera los de abajo y deja «Terminado cuando:» y «Verificar: manual» para completar. Rechaza una posición fuera de rango y avisa de un título repetido. Probado insertando al principio, al medio y al final y cerrando los tres con `--cerrar`: `Admin/TODO.md` quedó idéntico. Tool de mantenimiento, no del pipeline: sin medición.
