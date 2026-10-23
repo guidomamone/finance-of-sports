@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/bfo-rusia.mjs — RUSIA DESDE LOS DATOS OFICIALES DEL FISCO (GIR BO, bo.nalog.gov.ru): de cada `bfo-AAAA-datos.json` al año cargado.
 //
-// POR QUÉ (Versión 645, pedido y ok de Guido el 2026-10-09: "si rusia es muy distinto pero tiene info de revenue y costs, avisame y planeamos algo
+// POR QUÉ (pedido y ok de Guido: "si rusia es muy distinto pero tiene info de revenue y costs, avisame y planeamos algo
 // aunque no sea parecido al script de siempre"). En Clubes/Rusia/<Club>/ no hay un PDF de estados contables por año: hay informes del auditor
 // (muchos de 3 páginas, solo la opinión) y notas explicativas. Lo que sí está, para los 16 clubes y 2021-2025, es el JSON que publica el
 // Servicio Federal de Impuestos (GIR BO) con el FORMULARIO 2 ruso (Отчет о финансовых результатах): renglones de código fijo, iguales para

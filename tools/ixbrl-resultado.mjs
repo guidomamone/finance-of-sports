@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/ixbrl-resultado.mjs — EL RESULTADO DEL EJERCICIO TAL COMO LO ETIQUETA EL INFORME XHTML (iXBRL), para contrastarlo con lo cargado (to-do 345, condición de la Auditora 5).
+// tools/ixbrl-resultado.mjs — EL RESULTADO DEL EJERCICIO TAL COMO LO ETIQUETA EL INFORME XHTML (iXBRL), para contrastarlo con lo cargado (condición de la Auditora 5).
 //
 // POR QUÉ. El tie-out de cargar.mjs compara contra el resultado que sale del MISMO .md: un signo o una escala mal leídos del texto se repiten en los dos lados. El hecho
 // iXBRL (`ProfitLoss`) es una segunda lectura independiente y estructurada: valor, escala, signo y decimales vienen en atributos, no en el texto impreso. Lo usa `cargar.mjs`:

@@ -32,7 +32,7 @@
 // pipeline mecánico. 1 = al menos una discrepancia, necesita que alguien
 // (Claude, cuando lo convoquen) la resuelva contra el PDF.
 //
-// CÓMO SE RESUELVE UNA DISCREPANCIA (pregunta real de Guido, 2026-09-29: "¿el
+// CÓMO SE RESUELVE UNA DISCREPANCIA (pregunta real de Guido: "¿el
 // script sabe si el match es porque coincidieron solas o porque Claude
 // arregló algo?"): el criterio de "listo" es SIEMPRE correr esto de nuevo y
 // que dé match -- nunca un flag guardado aparte, que se puede desincronizar
@@ -64,8 +64,8 @@ function normalize(s) {
 
 // Copia deliberada de tools/sum-check.mjs (parseNumber), NO un import: ese archivo corre su propio
 // main() al cargarse (leería el argv de ESTE script, no el suyo). Mismo criterio de
-// auto-detección de separador de miles/decimal, incluido el espacio escandinavo (Admin/CHANGELOG.md
-// Versión 299) -- si se corrige un bug de parseo ahí, corregir acá también.
+// auto-detección de separador de miles/decimal, incluido el espacio escandinavo
+// -- si se corrige un bug de parseo ahí, corregir acá también.
 function parseNumber(raw) {
   let s = String(raw).trim();
   s = s.replace(/(\d)\s+(?=\d)/g, '$1');

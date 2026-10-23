@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/cierre-vecinos.mjs — LA FECHA DE CIERRE DE UN DOCUMENTO QUE NO LA DICE, deducida de los documentos vecinos del mismo club. Gratis.
 //
-// POR QUÉ (Versión 342, idea de Guido el 2026-10-01: "fijate cuándo cierra 2010 y cuándo abre 2012 y eso te sirve como best guess"). UC 2011
+// POR QUÉ (idea de Guido: "fijate cuándo cierra 2010 y cuándo abre 2012 y eso te sirve como best guess"). UC 2011
 // no tiene la fecha de cierre detectada por tools/periodo.mjs (campo `periodo.cierre` vacío en el registro), y sin fecha no hay año: la
 // verificación no podía hacer el chequeo de años vecinos y la carga no sabía qué ejercicio era.
 //

@@ -2,7 +2,7 @@
 // tools/primer-anio-ia.mjs — EL PRIMER AÑO DE UN CLUB, ESCALÓN 3: una pregunta a Claude cuando del estado solo se puede
 // confirmar el resultado.
 //
-// POR QUÉ (decisión de Guido, 2026-10-13: "no quiero revisar yo el primer año del club"). Sin año anterior cargado ni documento vecino,
+// POR QUÉ (decisión de Guido: "no quiero revisar yo el primer año del club"). Sin año anterior cargado ni documento vecino,
 // verificar.mjs confirma un primer año con lo impreso: escalón 1, ingresos, gastos y resultado a 0,01%; escalón 2, un total y el resultado,
 // con el otro total sin imprimir. En 42 de los 77 primeros años aceptados por la cola solo coincide el RESULTADO (Volos 2021-2023 y
 // Panserraikos 2025 no imprimen totales; Roma, Lazio, Ferroviária cerraron con la lectura que no usa totales). Con el resultado exacto, lo

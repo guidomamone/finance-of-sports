@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/reglas-categoria.mjs — to-do 329. Las REGLAS DE CATEGORÍA que salen de una votación o de una decisión de Guido (`## REGLA:` de
+// tools/reglas-categoria.mjs — Las REGLAS DE CATEGORÍA que salen de una votación o de una decisión de Guido (`## REGLA:` de
 // Admin/CONVENCIONES-DATOS.md) tienen que llegarles a Jev y a Claude, que solo veían ejemplos ya cargados y categorias-aprendidas.jsonl.
 //
 // LA CONVENCIÓN (dos líneas dentro de la sección `## REGLA:` de la regla, al final, una por cada cosa que la regla decide):

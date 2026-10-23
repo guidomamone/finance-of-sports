@@ -1,8 +1,8 @@
 // ============================================================================
 // tools/rutas.mjs — DÓNDE viven los archivos GENERADOS de cada documento. La única regla, para todas las tools.
 //
-// POR QUÉ EXISTE (pedido de Guido, 2026-09-30: "hay miles de files de pilotos... re-organizate y seguimos sobre un pipeline limpio";
-// to-do 109): hasta la Versión 316 cada tool escribía sus derivados AL LADO del PDF, en Clubes/<País>/<Club>/, armando la ruta a mano
+// POR QUÉ EXISTE (pedido de Guido: "hay miles de files de pilotos... re-organizate y seguimos sobre un pipeline limpio").
+// Antes cada tool escribía sus derivados AL LADO del PDF, en Clubes/<País>/<Club>/, armando la ruta a mano
 // (`md.replace(/\.md$/, '.rubros.json')` en ~45 lugares de 19 tools). Resultado: ~2.700 archivos generados mezclados con los PDFs y sus
 // transcripciones (1.018 .briefing.json, 754 .rubros.json, 412 .jev.json, 175 .previo-*.md, 113 .mistral-redo.md, 130 -check.md...).
 //

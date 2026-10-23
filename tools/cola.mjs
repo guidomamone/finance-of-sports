@@ -51,7 +51,7 @@ const DECISIONES = ['aceptar', 'corregir', 'descartar', 'preguntar-club'];
 
 // RESPUESTAS Y ESTADOS. `resp` tiene SOLO las respuestas de Guido (DECISIONES: aceptar, corregir, descartar,
 // preguntar-club); la última gana. 'obsoleto' (la etapa ya no levanta el caso) y 'reabierto' (la etapa lo volvió a levantar) son ESTADOS, no
-// respuestas: van a `cerrado` (true si el último de los dos es 'obsoleto'). Hasta la Versión 349 'obsoleto' se guardaba como una respuesta
+// respuestas: van a `cerrado` (true si el último de los dos es 'obsoleto'). Antes 'obsoleto' se guardaba como una respuesta
 // más, y un caso cerrado que volvía a aparecer quedaba "contestado" sin que nadie lo contestara: cargar.mjs frenaba por un caso que la cola
 // no mostraba (UC 2013, "Otras ganancias (pérdidas)", ni siquiera buscaba la respuesta de 2014), y verificar.mjs lo daba por respondido y no
 // lo mandaba a la cola (un "no cierra" o un "año vecino distinto" pasaba sin que nadie lo viera).
@@ -151,7 +151,7 @@ export function casoYRespuesta(pdf, etapa, motivo, detalle = '') {
 // La respuesta a una duda POR TEMA de un club: busca en TODOS los documentos un caso con ese motivo y ese detalle
 // ("club|tema|renglón") que Guido ya contestó. Así una duda contestada para un año del club vale para todos sus años, aunque la IA la redacte
 // distinto (pasó tres veces con "¿se usa el cuadro por segmento para abrir 'Ingresos Comerciales'?" de UC 2018-2025).
-// El filtro recibe el caso y su respuesta (to-do 237 ad: cargar.mjs mira si la respuesta es un `aceptar`).
+// El filtro recibe el caso y su respuesta (cargar.mjs mira si la respuesta es un `aceptar`).
 export function respuestaPorDetalle(etapa, motivo, detalle, filtro = () => true) {
   const { casos, resp } = leer(); let mejor = null;
   for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && c.detalle === detalle && resp.has(c.id) && filtro(c, resp.get(c.id))) { const r = resp.get(c.id); if (!mejor || r.ts > mejor.resp.ts) mejor = { caso: c, resp: r }; }

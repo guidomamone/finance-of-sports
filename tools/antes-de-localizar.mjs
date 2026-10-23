@@ -1,7 +1,7 @@
 // ============================================================================
 // tools/antes-de-localizar.mjs — ETAPA 3, COMPUERTA ANTES DE PAGAR: ¿está fijado todo lo que cambia lo que localizar elige?
 //
-// POR QUÉ (Versión 441, punto 1b.i del HANDOFF, aprobado por Guido el 2026-10-04: "una dinámica que no haga pasar lo mismo por las APIs
+// POR QUÉ (aprobado por Guido: "una dinámica que no haga pasar lo mismo por las APIs
 // varias veces"). Con Juventus, el lote 13 localizó 2020-21 a 2024-25 antes de que el perímetro llegara a localizar (cambio H): localizar
 // eligió el consolidado (su default), no cerró ninguna lectura, y hubo que pagar localizar y extraer otra vez con el individual (~US$ 2,8).
 // Lo que cambia la elección de localizar es el PERÍMETRO (consolidado o individual) y el CIERRE (qué columna es el ejercicio). Si alguno de

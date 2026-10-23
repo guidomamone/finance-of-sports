@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/sum-check.mjs — pedido de Guido (2026-09-28, mismo espíritu del to-do
+// tools/sum-check.mjs — pedido de Guido (mismo espíritu del to-do
 // 98): la ARITMÉTICA de verificar que un grupo de rubros suma el total
 // impreso de un documento es mecánica, no juicio — sacarla de Claude, que
 // haga la suma un script en vez de sumar a mano en el razonamiento. Lo que

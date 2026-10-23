@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/suggest-category-precedent.mjs — to-do 98, paso 5, TIER 0 (el que no
+// tools/suggest-category-precedent.mjs — TIER 0 (el que no
 // necesita Jev ni ningún modelo): si un rubro nuevo tiene el MISMO texto que
 // uno YA categorizado en un año anterior del MISMO club, sugerir esa
 // categoría en vez de que Claude la vuelva a decidir de cero.
@@ -21,7 +21,7 @@
 //     categorización de un club/rubro sin precedente).
 //
 // INGRESO Y GASTO SE BUSCAN POR SEPARADO, NUNCA MEZCLADOS (bug real
-// encontrado probando esta tool, 2026-09-28): Boca tiene "Futbol Femenino"
+// encontrado probando esta tool): Boca tiene "Futbol Femenino"
 // como INGRESO (-> womens_football, 2027) y "Fútbol femenino" como GASTO
 // (-> youth_other_sports_expense, 2022/2023/2025) — mismo texto, dos rubros
 // distintos según el lado del balance. La primera versión los mezclaba en un

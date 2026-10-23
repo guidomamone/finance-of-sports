@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Búsqueda en X/Twitter vía TwitterAPI.io — revendedor de terceros, no la API oficial de X (esa no
 // tiene tier gratis y el archivo histórico completo arranca en el contrato Enterprise de
-// USD 42.000+/mes, ver Admin/Archive/CHANGELOG-v010-v299.md, Versión 269, to-do 80). TwitterAPI.io cobra $0,15 cada
+// USD 42.000+/mes, ver Admin/Archive/CHANGELOG-v010-v299.md). TwitterAPI.io cobra $0,15 cada
 // 1.000 tweets leídos, sin suscripción, y SÍ busca en el archivo histórico completo (no solo los
 // últimos 7 días).
 //

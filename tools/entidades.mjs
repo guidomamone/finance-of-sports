@@ -31,9 +31,9 @@
 //       "Ganhos imputados de subsidiárias"), que es resultado de esa sociedad y se contaría dos veces. `cierre` es su fecha de cierre, que
 //       puede no ser la del club (una asociación con año calendario). `unidad` (1000 si el documento está en miles; sin ella, 1).
 //   Cita de un documento: {"md":"Clubes/…/x.md","linea":3043,"texto":"The immediate parent company is Blueco 22 Midco Limited"}
-//   Cita externa (lo que el balance no dice, p. ej. los otros clubes del dueño): {"url":"https://…","fecha":"2026-10-18","texto":"…"}
+//   Cita externa (lo que el balance no dice, p. ej. los otros clubes del dueño): {"url":"https://…","fecha":"","texto":"…"}
 //   `que` ({es,en}) en una entidad: a qué se dedica, según el documento citado.
-//   `nota` ({es,en}) solo donde las frases fijas de la pantalla no alcanzan (p. ej. dos entidades sumadas, to-do 283).
+//   `nota` ({es,en}) solo donde las frases fijas de la pantalla no alcanzan (p. ej. dos entidades sumadas).
 //
 // CHEQUEOS (sale con código 1 si alguno falla):
 //   - cada cita de documento: el texto está en esa línea del .md (±3 líneas, espacios normalizados) y el .md está trackeado en Clubes/;

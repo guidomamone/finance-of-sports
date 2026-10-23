@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Tablas de un .md a JSON (nació para el to-do 98, paso 4). Lo llaman compare-transcripts.mjs y prepare-onboarding.mjs.
+// Tablas de un .md a JSON. Lo llaman compare-transcripts.mjs y prepare-onboarding.mjs.
 //
 // Lee un .md transcripto (Mistral/Gemini) y saca SOLO las filas de sus tablas
 // Markdown a JSON compacto: {page, section, columns, rows:[{rawLabel,values,bold}]}.
@@ -136,14 +136,14 @@ function detectNumberFormat(text) {
 // (normalizar(): minúsculas, sin acentos/diéresis, ß->ss, æ->ae, ø->o, ł->l, ı->i, Hangul recompuesto...). Se usa para MARCAR relevancia, no
 // para descartar filas — con --relevant se filtra, pero por default se conserva todo (una palabra clave que falta para un idioma nuevo no puede
 // perder datos en silencio).
-// Historia de la lista (antes RELEVANT_KEYWORDS, acá): ampliada el 2026-09-29 porque los balances en ALEMÁN (Mönchengladbach, Hamburger),
+// Historia de la lista (antes RELEVANT_KEYWORDS, acá): ampliada porque los balances en ALEMÁN (Mönchengladbach, Hamburger),
 // CROATA (Dinamo, Gorica), GRIEGO con acentos, FRANCÉS/NEERLANDÉS (Anderlecht) y DANÉS no marcaban NINGUNA tabla como relevante (0 de 13-35) y
 // el precedente de categorías se saltaba en silencio; después ruso/ucraniano, checo, neerlandés, japonés, coreano y chino (segundo lote de 50) y
 // el turco "Kâr veya Zarar" / "Hasılat" (piloto C, Galatasaray). Era una comparación por substring ('includes'): ahora cada término tiene su
 // límite de palabra (ver la notación en vocabulario.mjs), así 'venta' ya no encuentra "inventario" ni 'ertrag' encuentra "Vertrag".
 import { normalizar as normalizeText, RELEVANTE_RE } from './vocabulario.mjs';
 
-// Versión 312 (piloto D, Baník Ostrava 1997): en los formularios oficiales checos, ucranianos y rusos la PRIMERA columna es un código
+// (piloto D, Baník Ostrava 1997): en los formularios oficiales checos, ucranianos y rusos la PRIMERA columna es un código
 // ("I.", "A.", "B. 1.", "II. 1.") y el texto del rubro está en la SEGUNDA ("Tržby za prodej zboží"). Sin esto los rubros salían como "I.",
 // "A." (sin nada que categorizar). Si en al menos el 60% de las filas la primera celda es un código corto y la segunda es texto (no un
 // número), la etiqueta pasa a ser la segunda celda y el código se descarta.

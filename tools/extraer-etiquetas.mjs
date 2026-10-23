@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/extraer-etiquetas.mjs — ESCALÓN 0 DE EXTRAER: las cifras que ya vienen etiquetadas en el informe XHTML (iXBRL) no se pagan con IA (to-do 356; regla de Guido: lo estructurado no se paga con IA;
+// tools/extraer-etiquetas.mjs — ESCALÓN 0 DE EXTRAER: las cifras que ya vienen etiquetadas en el informe XHTML (iXBRL) no se pagan con IA (regla de Guido: lo estructurado no se paga con IA;
 // diseño aprobado por la Auditora 5 con tres condiciones). HOY ES SOLO ENSAYO/BACKTEST: no está enganchado a localizar.mjs ni a extraer.mjs (ver «Qué queda» en Admin/Archive/sesion-pipeline-2026-10-21.md).
 //
 // QUÉ HACE. Para un ejercicio (cierre + perímetro cargado), toma los hechos iXBRL del periodo (sin ejes si el perímetro es individual; con el único eje de grupo consolidado si es consolidado: la regla de

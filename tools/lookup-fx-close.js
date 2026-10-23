@@ -41,7 +41,7 @@ const CURRENCIES = {
   ARS: { file: 'ars-usd.json', fuente: 'Dólar mayorista BCRA' },
   BRL: { file: 'brl-usd.json', fuente: 'PTAX de cierre (venda) del Banco Central do Brasil' },
   COP: { file: 'cop-usd.json', fuente: 'TRM oficial (Banco de la República / Superfinanciera de Colombia)' },
-  // Agregadas el 2026-09-30 (ver fetch-fx-reference.mjs para qué tasa es cada una).
+  // Agregadas (ver fetch-fx-reference.mjs para qué tasa es cada una).
   NOK: { file: 'nok-usd.json', fuente: 'Tipo medio de referencia de Norges Bank' },
   CZK: { file: 'czk-usd.json', fuente: 'Fixing del Česká národní banka' },
   CHF: { file: 'chf-usd.json', fuente: 'Noon buying rate de Nueva York (Reserva Federal, H.10)' },
@@ -56,7 +56,7 @@ const CURRENCIES = {
   EUR: { file: 'eur-usd.json', fuente: 'Tipo de referencia del Banco Central Europeo' },
   DKK: { file: 'dkk-usd.json', fuente: 'Tipo oficial de Danmarks Nationalbank' },
   GBP: { file: 'gbp-usd.json', fuente: 'Tipo spot del Bank of England' },
-  // Agregadas por el to-do 112 (ver fetch-fx-reference.mjs para qué tasa es cada una).
+  // Agregadas después (ver fetch-fx-reference.mjs para qué tasa es cada una).
   SEK: { file: 'sek-usd.json', fuente: 'Tipo medio del Sveriges Riksbank' },
   PLN: { file: 'pln-usd.json', fuente: 'Tipo medio del Narodowy Bank Polski (tabla A)' },
   HRK: { file: 'hrk-usd.json', fuente: 'Tipo medio de la Hrvatska narodna banka' },

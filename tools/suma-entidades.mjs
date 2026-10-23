@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/suma-entidades.mjs — to-do 283: UN EJERCICIO QUE SUMA DOS ENTIDADES. Lo usa cargar.mjs cuando el documento tiene el ajuste manual `suma-con`.
+// tools/suma-entidades.mjs — UN EJERCICIO QUE SUMA DOS ENTIDADES. Lo usa cargar.mjs cuando el documento tiene el ajuste manual `suma-con`.
 //
 // POR QUÉ: Vålerenga y Ålesund no consolidan. El AS (Vålerenga Fotball AS) tiene los ingresos comerciales; el FLI/Elite (Vålerenga Fotball Elite) los sueldos y
 // los jugadores, y el AS le transfiere el dinero para pagarlos: el Elite lo imprime como ingreso («Overføring fra samarbeidsselskap», 87,5 M en 2023) y el

@@ -41,7 +41,7 @@
 //   4. balance     : en todo el documento, si un "Total activo" es igual a un "Total pasivo + patrimonio" (etiquetas en ~12
 //                    idiomas), esas celdas quedan respaldadas en sus páginas.
 //
-// NÚMEROS MEDIDOS (node tools/chequeos-gratis.mjs --prueba, 2026-09-30; curva completa y cada caso en Admin/mediciones/test-chequeos-gratis.md)
+// NÚMEROS MEDIDOS (node tools/chequeos-gratis.mjs --prueba; curva completa y cada caso en Admin/mediciones/test-chequeos-gratis.md)
 //   Base: los 104 documentos que el resolver ya resolvió (3.134 páginas, $38,98 registrados). Entrada = lo que el resolver tenía en
 //   la mano (previo-mistral 67, previo-legado 21, mistral-redo 15, previo-gemini 1); verdad = el .md corregido de hoy. 178 páginas
 //   con un error real de lectura (163 en páginas con números según tools/paginas-con-numeros.mjs; las otras 15 son identificadores

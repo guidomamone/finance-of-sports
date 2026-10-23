@@ -4,7 +4,7 @@
 // ("Clubes cargados", "Países", "Ligas", "Documentos fuente") de la cabecera
 // de Admin/COMO-CORRE-EL-PROYECTO.html desde los propios datos del sitio.
 //
-// POR QUÉ EXISTE: hasta la Versión 249 esos 5 números eran texto tipeado a
+// POR QUÉ EXISTE: Antes esos 5 números eran texto tipeado a
 // mano, y quedaron desactualizados (decían "41 clubes · 6 países" cuando el
 // sitio ya tenía 161 clubes de 14 países) — el mismo problema de fondo que ya
 // resolvieron los otros 4 generadores de `tools/`, así que este sigue el mismo

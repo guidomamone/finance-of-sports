@@ -1877,7 +1877,7 @@ function checkHigiene(api) {
   // se contaban, o sea que el chequeo pasaba mientras el visitante veía castellano.
   // Hoy se leen TODOS los `js/*.js` más index.html, así un archivo nuevo de js/ (js/principal.js, js/cuenta.js) no queda afuera. Salvo
   // js/i18n.js: es el motor de t() y sus `t('clave', ...)` son ejemplos de su cabecera, no claves del sitio.
-  for (const rel of [...fs.readdirSync(path.join(ROOT, 'js')).filter(f => f.endsWith('.js') && f !== 'i18n.js').sort().map(f => 'js/' + f), 'index.html']) { // + js/liga.js, que llamaba a t() y no estaba; + los dos archivos del to-do 147
+  for (const rel of [...fs.readdirSync(path.join(ROOT, 'js')).filter(f => f.endsWith('.js') && f !== 'i18n.js').sort().map(f => 'js/' + f), 'index.html']) { // + js/liga.js, que llamaba a t() y no estaba; + los dos archivos
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
     // Una clave que termina en "." no es una clave sino un PREFIJO de clave dinámica
     // (`t('fx.source.' + meta.fxSource, ...)`): el valor real se arma en runtime y no se

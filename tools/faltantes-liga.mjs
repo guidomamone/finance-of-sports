@@ -37,8 +37,8 @@ import { quien } from './quien.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const REF = resolve(ROOT, 'tools', 'club-league-reference');
-const RECIENTE_MESES = 9;   // Guido, 2026-10-17
-const REBUSCAR_MESES = 12;  // Guido, 2026-10-17
+const RECIENTE_MESES = 9;   // Guido
+const REBUSCAR_MESES = 12;  // Guido
 // A medianoche UTC del día: el archivo generado guarda esa fecha en su cabecera y `--check` recalcula con ELLA (no con la de hoy), así el calendario solo no lo deja viejo.
 let HOY = new Date(new Date().toISOString().slice(0, 10));
 

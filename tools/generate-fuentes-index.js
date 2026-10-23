@@ -5,7 +5,7 @@
 // `Admin/sourcing/README.md` (la lista de países con sus tres números, más el
 // párrafo de totales que la encabeza).
 //
-// EL PROBLEMA QUE RESUELVE: desde el split del 2026-09-20 (REGLA 4 de
+// EL PROBLEMA QUE RESUELVE: desde el split (REGLA 4 de
 // `Admin/sourcing/README.md`), el detalle línea-por-club vive en un archivo por país
 // y acá quedó solo el índice. Los tres números de cada línea de país —clubes
 // trackeados, cuántos con documento, chequeo más antiguo— se escribieron UNA
@@ -68,7 +68,7 @@ const DESTINO = path.join(ROOT, 'Admin/sourcing/README.md');
 // 403), ni un agregado que solo publica el total de la liga (como la DFL
 // alemana).
 //
-// Estas dos listas son las de la corrida original del 2026-09-20, reproducidas
+// Estas dos listas son las de la corrida original, reproducidas
 // tal cual. Si agregás una señal nueva, corré el script sobre todo el repo y
 // mirá que no reclasifique ninguna línea vieja en silencio.
 // ---------------------------------------------------------------------------
@@ -124,7 +124,7 @@ const SENAL_NO = [
 ];
 
 // ---------------------------------------------------------------------------
-// LOS 12 CONFLICTOS RESUELTOS A MANO en la corrida del 2026-09-20, leyendo el
+// LOS 12 CONFLICTOS RESUELTOS A MANO en la corrida, leyendo el
 // estado completo de cada uno. Clave: `País|Club` con el nombre EXACTO como
 // aparece en el texto del link de su línea.
 //
@@ -187,7 +187,7 @@ const OVERRIDES = {
   'Marruecos|Raja Casablanca': { doc: false, motivo: 'bilan 2025 depositado en OMPIC (75 MAD) pero requiere cuenta+pago de Guido; no descargado' },
   'Túnez|Espérance Sportive de Tunis': { doc: false, motivo: 'Taraji Holding sin visa CMF ni prospecto todavía' },
 
-  // Sesión Europa del Este, 2026-10-03: 14 líneas ambiguas de países nuevos.
+  // Sesión Europa del Este: 14 líneas ambiguas de países nuevos.
   'Armenia|Ararat-Armenia, Alashkert y otros': { doc: false, motivo: 'sin documentos' },
   'Azerbaiyan|Qarabag': { doc: true, motivo: 'sin balance propio, pero los informes de licenciamiento AFFA 2015-2025 desglosan ingresos club por club' },
   'Azerbaiyan|Neftci, Sabah, Zira, Sumqayit y otros': { doc: true, motivo: 'sin balance individual, pero el agregado AFFA desglosa ingresos club por club' },
@@ -203,8 +203,8 @@ const OVERRIDES = {
   'Rumania|Unirea Slobozia': { doc: false, motivo: 'dominio no identificado, sin documento' },
   'Ucrania|Shakhtar': { doc: true, motivo: '8 ejercicios 2018-2025 del sitio oficial; el "sin cerrar" es la frase de la nota vieja que se reemplazó' },
 
-  // 13 CONFLICTOS de la corrida del 2026-09-23, tras sumarse el sourcing
-  // de Brasil/Colombia/México de la Versión 201-202.
+  // 13 CONFLICTOS de la corrida, tras sumarse el sourcing
+  // de Brasil/Colombia/México de aquella corrida.
   'Brasil|Amazonas': { doc: true, motivo: 'balanços resumidos sin auditar, 2022-2024, rescatados de Wayback' },
   'Brasil|America Mineiro': { doc: true, motivo: 'dead-end viejo destrabado, 3 ejercicios 2023-2025 vía CDN del sitio oficial' },
   'Brasil|Criciúma': { doc: true, motivo: 'dead-end destrabado, 14 ejercicios consecutivos 2012-2025' },
@@ -366,7 +366,7 @@ function main() {
   }
 
   // Un país con clubes pero sin ninguna fecha de chequeo sale sin el tercer
-  // número. No es un error, pero conviene verlo: la REGLA del 2026-09-12 pide
+  // número. No es un error, pero conviene verlo: la REGLA pide
   // fecha en cada línea que se revisa.
   const sinFecha = paises.filter(p => p.clubes.length && !p.fechaMasVieja);
   if (sinFecha.length) {

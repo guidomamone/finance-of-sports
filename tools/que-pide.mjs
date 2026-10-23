@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/que-pide.mjs — qué va a pedir el commit de lo que cambiaste, ANTES de commitear (TODO 393). Los hooks de commit piden, según el archivo:
+// tools/que-pide.mjs — qué va a pedir el commit de lo que cambiaste, ANTES de commitear. Los hooks de commit piden, según el archivo:
 // la clasificación de una tool nueva, la medición de una tool del pipeline o de un módulo que ellas usan, el veredicto de un cambio de código,
 // el commit aparte de una skill. Esto lo dice por adelantado, con el comando, en una línea por archivo.
 //

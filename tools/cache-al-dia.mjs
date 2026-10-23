@@ -7,10 +7,10 @@
 // línea (corridas -5, -9 y -12; "Ticket sales" 32,293,161 citada en L4855, hoy en L4850).
 //
 // LA ESCALERA (gratis):
-//   ESCALÓN 0  la huella (sha1) del .md es la misma con la que se hizo el caché (`mdSha1`, se guarda desde la Versión 445) ──► al día
+//   ESCALÓN 0  la huella (sha1) del .md es la misma con la que se hizo el caché (`mdSha1`, se guarda en los cachés nuevos) ──► al día
 //   ESCALÓN 1  cada fila del .filas.json sigue en su línea (la línea citada tiene el comienzo de la etiqueta o el importe, y el importe
 //              está ahí o en las 3 siguientes: etiquetas partidas en dos renglones) ──► al día
-//              (sirve también para los cachés anteriores a la Versión 445, que no tienen huella)
+//              (sirve también para los cachés viejos, que no tienen huella)
 //   nada ──► VIEJO. Qué se hace con eso lo decide lote.mjs: año cargado, solo aviso; sin cargar, se rehace (el ensayo dice el costo).
 // Sin .filas.json (todavía no se extrajo) no hay nada que mirar: al día (lo que había antes).
 // ============================================================================

@@ -12,7 +12,7 @@
 //   node tools/mistral-ocr-transcribe.mjs --all [--dir Clubes/Colombia] [--limit 1000] [--concurrency 2]
 // Recuperación (SOLO los que Gemini rechazó por RECITATION, leyendo Admin/registros/api/gemini-fallidos.jsonl):
 //   node tools/mistral-ocr-transcribe.mjs --retry-gemini-failures
-// REHACER UNA PÁGINA (to-do 339, frenado de Bath: una página del estado de resultados salió con las cifras en una columna aparte y se rehízo a mano con qpdf y pegando):
+// REHACER UNA PÁGINA (frenado de Bath: una página del estado de resultados salió con las cifras en una columna aparte y se rehízo a mano con qpdf y pegando):
 //   node tools/mistral-ocr-transcribe.mjs "Clubes/<País>/<Club>/doc.pdf" --pagina 22[,23] [--ejecutar]
 //   Ensayo sin --ejecutar (dice el costo, ~US$ 0,004 por página). Con --ejecutar: corta esas páginas del PDF (qpdf), las transcribe con Mistral y reemplaza SOLO ese cuerpo en el .md
 //   entre las marcas «--- pág. N ---»; el .md anterior queda en Generados/ (.antes-pagina.md). Cambia la huella de esas páginas (tools/huella-paginas.mjs): validar-bloques y el
@@ -166,7 +166,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, ou
       // sin que el cuerpo de la respuesta haya terminado de llegar. Por eso `resp.json()` va DENTRO
       // del mismo try, con el mismo `signal`, para que un cuerpo que se cuelga a mitad de camino
       // también aborte a los `timeoutMs` en vez de colgar el proceso entero sin límite (bug real,
-      // encontrado en el test de comparación del 2026-09-26: un solo documento colgó >15 minutos).
+      // encontrado en un test de comparación: un solo documento colgó >15 minutos).
       if (resp.ok) json = await resp.json();
     } catch (networkErr) {
       const isTimeout = networkErr.name === 'AbortError';
@@ -191,7 +191,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, ou
       // El `markdown` de cada página trae las tablas como un link-placeholder (ej. "[tbl-0.md](tbl-0.md)")
       // en vez del contenido -- el contenido real vive aparte, en `page.tables[]` (cada una con `id` +
       // `content`). Hay que resolver esos placeholders antes de guardar, si no el .md queda con links
-      // rotos y CERO cifras (bug real, encontrado en el test de comparación del 2026-09-26: sin este
+      // rotos y CERO cifras (bug real, encontrado en un test de comparación: sin este
       // fix, el chequeo automático no encontraba ninguna cifra porque literalmente no estaban).
       function resolveTables(page) {
         let md = page.markdown ?? '';

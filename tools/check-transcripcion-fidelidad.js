@@ -3,8 +3,8 @@
 // tools/check-transcripcion-fidelidad.js — ¿esta transcripción .md es fiel a su
 // PDF fuente? Mira CONTENIDO, no solo cantidad de páginas.
 //
-// EL PROBLEMA QUE RESUELVE (to-do 90, encontrado resolviendo el to-do 71,
-// 2026-09-27): el chequeo que se usó en el test de costo de transcripción
+// EL PROBLEMA QUE RESUELVE (encontrado resolviendo un test de costo).
+// El chequeo que se usó en el test de costo de transcripción
 // (Admin/Archive/test-costo-transcripcion.md) solo contaba páginas, y eso dejó pasar dos
 // fallas reales sin detectar:
 //   (a) marcas de página `--- pág. N ---` CORRIDAS — páginas reales del PDF
@@ -48,8 +48,8 @@
 // marcado como escaneado (club-data-mapping/referencia/leer-pdf.md, "Documento transcripto con Mistral OCR").
 //
 // LIMITACIÓN REAL DEL CHEQUEO DE COBERTURA (encontrada verificando este mismo
-// script contra Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.md,
-// 2026-09-27): el chequeo asume que la marca "--- pág. N ---" es la página FÍSICA
+// script contra Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.md).
+// El chequeo asume que la marca "--- pág. N ---" es la página FÍSICA
 // N del PDF (posición N en el archivo), pero no siempre es así — ese archivo
 // puntual arrancó su numeración de marcas más adelante que la página física 1
 // (offset constante de +4, probablemente por páginas de portada/legales al

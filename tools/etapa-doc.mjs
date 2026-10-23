@@ -2,7 +2,7 @@
 // tools/etapa-doc.mjs — EN QUÉ ETAPA Y ESCALÓN DEL PROCESO NUEVO está cada documento del registro. Gratis: solo lee el registro
 // (Admin/registros/transcripciones-estado.jsonl) y lo que las etapas 3-8 dejaron en Generados/.
 //
-// POR QUÉ (Versiones 447-448, pedido de Guido el 2026-10-04: "que marquen en qué etapa o escalón está"). La usan los DOS que muestran estados,
+// POR QUÉ (pedido de Guido: "que marquen en qué etapa o escalón está"). La usan los DOS que muestran estados,
 // para que nunca digan cosas distintas: tools/inventario-transcripciones.mjs (el resumen "Por estado") y tools/estado.mjs (el tablero).
 // Las etapas son las de Admin/PIPELINE.md: 1 conseguir, 2 transcribir, 3 localizar, 4 validar, 5 extraer,
 // 6 verificar, 7 categorizar, 8 cargar, 9 en el sitio. "listo" en el registro solo dice que la transcripción terminó (etapa 2); hasta dónde

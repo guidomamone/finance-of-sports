@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/relevancia-filas.mjs — ¿CUÁNTO SIRVE CADA FILA DEL FORMATO SIMPLIFICADO? (TODO 350; pedido de Guido: decidir con datos si una fila, o una candidata como «subsidios y donaciones», es útil para muchos clubes o para un par).
+// tools/relevancia-filas.mjs — ¿CUÁNTO SIRVE CADA FILA DEL FORMATO SIMPLIFICADO? (pedido de Guido: decidir con datos si una fila, o una candidata como «subsidios y donaciones», es útil para muchos clubes o para un par).
 //
 // QUÉ DA. Con el motor de la página (js/finanzas-calc.js en Node, las mismas filas que ve el visitante; dentro-de-otro.mjs lo usa igual), para cada fila de Ingresos y de Gastos, sobre los club-años que son BALANCE
 // (reportType official_balance_sheet; un presupuesto o una estimación no cuenta):

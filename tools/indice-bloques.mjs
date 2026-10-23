@@ -51,7 +51,7 @@ const esSeparador = (l) => celdas(l).every((c) => /^:?-{2,}:?$/.test(c) || c ===
 const limpia = (s) => String(s || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, ' ').trim();
 const cuantas = (s) => (String(s).match(IMPORTE_RE) || []).length;
 
-// AMPLIADO (Versión 336, SOLO PARA EL REINTENTO: decisión de Guido, "que sea para cuando haya errores"): además, una línea que termina en
+// AMPLIADO (SOLO PARA EL REINTENTO: decisión de Guido, "que sea para cuando haya errores"): además, una línea que termina en
 // guiones después de números ("Ingresos E-Commerce   0   -   531.143   -", el cero impreso como "-") cuenta como fila. Caso real, UC 2025
 // pág. 77: esas filas partían el cuadro por segmento y faltaban 2.760.156 en "Comerciales" y 823.684 en el costo de ventas. No es el
 // índice por defecto: lo pide localizar.mjs cuando verificar.mjs encontró un desglose que no suma (ver lote.mjs --reintentar).

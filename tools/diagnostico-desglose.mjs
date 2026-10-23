@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/diagnostico-desglose.mjs — TROUBLESHOOTING de un desglose que sigue sin sumar DESPUÉS del reintento. Gratis, sin IA.
 //
-// POR QUÉ (Versión 346, pedido de Guido el 2026-10-01: "si al momento de cargar da error, arreglar el índice ampliado sea parte del
+// POR QUÉ (pedido de Guido: "si al momento de cargar da error, arreglar el índice ampliado sea parte del
 // troubleshooting", en vez de cambiar a ciegas lo que se transcribe). Caso real: UC 2013, el cuadro por segmento sumaba 319.134 contra 2.354.149
 // en "Ingresos Comerciales". Las filas ESTABAN en la transcripción: las etiquetas partidas en dos renglones cortaban el bloque. Hubo que mirarlo
 // a mano para saber si era un problema del índice (etapa 3) o de la transcripción (etapa 2). Esta tool hace esa primera mirada.

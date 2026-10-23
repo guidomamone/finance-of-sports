@@ -117,7 +117,7 @@ export async function datoPublico(nombre, { pais, anio, qid } = {}) {
         const num = lin ? Number(((lin.replace(/<ref[\s\S]*?(<\/ref>|\/>)/g, '').replace(/\{\{[^}]*\}\}/g, (m) => (/\d/.test(m) ? m.replace(/[^\d,.]/g, ' ') : '')).match(/\d[\d,.]*\d|\d/) || [''])[0]).replace(/[,.]/g, '')) : null;
         if (num && num >= 100) out.delAnio.capacidadWikipedia = num;
       }
-      // REGLA DE TOLERANCIA (TODO 367, medida sobre 73 club-años en Admin/HALLAZGOS-pipeline.md): si Wikidata y el artículo del estadio difieren menos de TOL_CAPACIDAD, se toma el del artículo
+      // REGLA DE TOLERANCIA (medida sobre 73 club-años en Admin/HALLAZGOS-pipeline.md): si Wikidata y el artículo del estadio difieren menos de TOL_CAPACIDAD, se toma el del artículo
       // (con ese corte, 76 % queda a menos de 3 % de lo revisado a mano y 90 % a menos de 10 %); si difieren más, o solo una fuente da el número, lo resuelve el agente (`--prompt capacidad`).
       const wd = out.delAnio.capacidad; const wp = out.delAnio.capacidadWikipedia;
       out.delAnio.capacidadDecidida = wd && wp && Math.abs(wd - wp) / Math.max(wd, wp) <= TOL_CAPACIDAD

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/lote-batch.mjs — EL LOTE CON LA BATCH API DE ANTHROPIC: mismo lote, mismo modelo de cada tarea, mitad de precio (ok de Guido
-// 2026-10-17: "Batch API con el mismo modelo"; el paso de Opus a Sonnet es un cambio aparte, medido tarea por tarea).
+// tools/lote-batch.mjs — EL LOTE CON LA BATCH API DE ANTHROPIC: mismo lote, mismo modelo de cada tarea, mitad de precio (ok de Guido:
+// "Batch API con el mismo modelo"; el paso de Opus a Sonnet es un cambio aparte, medido tarea por tarea).
 //
 // CÓMO: corre `tools/lote.mjs` TAL CUAL, con FOS_CLAUDE_BATCH=1 (tools/claude-batch.mjs). En esa pasada, cada llamada a Claude que todavía no
 // tiene respuesta se anota en una cola y su documento se corta en esa etapa ("esperando la Batch API"). Al terminar la pasada, manda la cola
@@ -25,7 +25,7 @@ import { tomarCandado } from './candado.mjs';
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
 if (args.includes('--reintentar')) { console.error('lote-batch.mjs no acepta --reintentar: esos documentos van con node tools/lote.mjs --reintentar (ver la cabecera).'); process.exit(1); }
-// UNA CORRIDA A LA VEZ (2026-10-17, prueba de Rapid Wien: el mismo comando lanzado dos veces mandó cada pedido dos veces). Candado propio: el
+// UNA CORRIDA A LA VEZ (prueba de Rapid Wien: el mismo comando lanzado dos veces mandó cada pedido dos veces). Candado propio: el
 // lote.mjs hijo toma el de siempre (Admin/registros/.candado.lock). Un candado de una corrida cortada se reemplaza con aviso (candado.mjs).
 tomarCandado('lote-batch.mjs', { lista: args[args.indexOf('--lista') + 1] || null, modo: args.includes('--ejecutar') ? '--ejecutar' : 'ensayo', archivo: resolve(ROOT, 'Generados', '_cache', 'claude-batch.lock') });
 const env = { ...process.env, FOS_CLAUDE_BATCH: '1' };

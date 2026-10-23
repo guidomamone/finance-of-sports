@@ -36,7 +36,7 @@ function clubFolderName(absPath) {
 // El año de CIERRE si el nombre trae un rango ("2021-2022" -> 2022, "2022-23" -> 2023), o el único
 // año de 4 dígitos que encuentre.
 function guessYear(filename) {
-  // BUG REAL (2026-09-29, encontrado al correr las tools de onboarding sobre los 21 documentos del piloto del
+  // BUG REAL (encontrado al correr las tools de onboarding sobre los 21 documentos del piloto del
   // inventario): "acta-...-2025-12-31.pdf" se leía como el rango "2025-12" -> 2012, y "jaarrekening-2011-06-30"
   // como 2006. Una fecha ISO (AAAA-MM-DD) es la fecha de CIERRE: el año es el primero. Y un sufijo de 2 dígitos solo
   // es "el final de un rango" (2021-22) si es el año siguiente: si no, es otra cosa (un mes, un día).

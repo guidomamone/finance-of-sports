@@ -34,7 +34,7 @@ export const UNIT = { scale: 1000000, label: 'millions of currency' };
 export const DISCLOSURE = ['aggregate', 'aggregated', 'aggregated_residual', 'detailed', 'estimated', 'lump', 'not_disclosed', 'partial', 'summary'];
 
 // ---------------------------------------------------------------- diccionario (campo de hoy <-> campo del JSON)
-// to-do 248 (esquema 2.0): la categoría de cada línea es la SUBCATEGORÍA del deporte (`subcategory`, la que eligen el pipeline y la cola); `category`
+// (esquema 2.0): la categoría de cada línea es la SUBCATEGORÍA del deporte (`subcategory`, la que eligen el pipeline y la cola); `category`
 // es la genérica, que no viene del data file: la deriva aJson de data/category-map.js (genericCategoryOf) y validar exige que el par coincida.
 const LINEA = { rawLabel: 'label', normalizedCategory: 'subcategory', amountNative: 'amount', disclosureLevel: 'disclosure', items: 'items' };
 const FUENTE = { id: 'id', clubId: 'club_id', title: 'title', type: 'type', reliability: 'reliability', url: 'url', publicNote: 'public_note' };

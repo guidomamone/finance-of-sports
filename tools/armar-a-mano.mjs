@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/armar-a-mano.mjs — to-do 328, tool 1. Arma el `.ubicacion.json` y el `.filas.json` de un documento desde una ESPECIFICACIÓN corta que escribe la sesión
+// tools/armar-a-mano.mjs — Arma el `.ubicacion.json` y el `.filas.json` de un documento desde una ESPECIFICACIÓN corta que escribe la sesión
 // (cargar con tokens de sesión, sin localizar ni extraer por API; procedimiento en Admin/carga-con-tokens-328.md). Gratis: no llama a nadie.
 //
 // QUÉ HACE: (1) lee la especificación (JSON), (2) toma del índice de bloques del .md (indice-bloques.mjs) la página y las líneas de cada bloque elegido,

@@ -3,7 +3,7 @@
 // tools/cargar-lote.mjs — ETAPA 8 DE PUNTA A PUNTA: escribe en el sitio cada documento de una lista que quedó "listo para cargar", con el
 // alta del club si es nuevo, y un commit por año.
 //
-// POR QUÉ (Versión 642, pedido de Guido el 2026-10-09: "¿por qué cuando dice 'listo para cargar' no se carga solo directamente si es todo
+// POR QUÉ (pedido de Guido: "¿por qué cuando dice 'listo para cargar' no se carga solo directamente si es todo
 // muy mecánico ya?"). Hasta acá el lote terminaba en una PROPUESTA y una sesión hacía a mano lo que faltaba: el alta del club nuevo, el color
 // de marca, `cargar.mjs --escribir` y el commit. En el onboarding de Brasil eso se hizo con un script de scratchpad, y
 // su paso del color falló una vez y dejó un alta a medias. Nada de eso es una decisión: el alta la propone `alta-club.mjs`, el color ya lo

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/reparar-pdf.mjs — diagnostica y ARREGLA PDFs que un motor de transcripción no puede leer, para que el pipeline no se frene ni
-// dependa de que alguien adivine qué pasó (pedido de Guido 2026-09-30, tras PEC Zwolle y Thun). Sin API, sin internet, sin tokens.
+// dependa de que alguien adivine qué pasó (pedido de Guido, tras PEC Zwolle y Thun). Sin API, sin internet, sin tokens.
 //
 // Lo usan los motores (hoy tools/mistral-ocr-transcribe.mjs) y el resolver; también anda solo:
 //   node tools/reparar-pdf.mjs <pdf>            diagnostica e imprime el veredicto (no escribe nada)

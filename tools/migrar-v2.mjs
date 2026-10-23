@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/migrar-v2.mjs — to-do 248: la migración de una sola vez de los JSON de club del esquema 1.0 al 2.0 (Admin/mediciones/248-plan.md, sección 4).
+// tools/migrar-v2.mjs — la migración de una sola vez de los JSON de club del esquema 1.0 al 2.0 (Admin/mediciones/248-plan.md, sección 4).
 // Cada línea: `category` (v1) pasa a `subcategory`, sin tocarla, y se le agrega la genérica (`category`) de data/category-map.js (genericCategoryOf).
 // En `club`: `sport` con su nombre del JSON ("futbol" -> "football") y `taxonomy` (la versión del mapa). Ningún importe se toca.
 //

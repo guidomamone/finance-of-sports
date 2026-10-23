@@ -7,7 +7,7 @@
 // clubes que la integraron ESE ejercicio, y esos números viven en los
 // `data/<país>/<club>-data.js`, que el sitio carga POR DEMANDA justamente para no
 // pagar 41 archivos por visita. Calcularlo en vivo cuesta, medido archivo por
-// archivo el 2026-09-22:
+// archivo:
 //
 //     jp-j1 2025      10 clubes    41 KB crudo     18 KB gzip
 //     es-laliga 2025   9 clubes    83 KB crudo     29 KB gzip

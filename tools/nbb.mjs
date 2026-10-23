@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/nbb.mjs — el estado de resultados belga LEÍDO POR SUS CÓDIGOS (to-do 298 t, ok de Guido 2026-10-18: "escalón, no manta corta").
+// tools/nbb.mjs — el estado de resultados belga LEÍDO POR SUS CÓDIGOS (ok de Guido: "escalón, no manta corta").
 //
 // POR QUÉ. El esquema de la NBB (Banco Nacional de Bélgica: VOL/VKT/micro, sociedades y vzw, antes y después de la reforma de 2016) trae al
 // lado de cada renglón un CÓDIGO LEGAL FIJO: 70 Omzet, 60/66A total de gastos, 9901 resultado operativo, 9904 resultado del ejercicio. La

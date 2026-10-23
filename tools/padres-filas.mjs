@@ -24,7 +24,7 @@ import { padreDe } from './memoria-categorias.mjs';
 const ROOT = resolve(import.meta.dirname, '..');
 
 export const sinMarca = (s) => normalizar(String(s || '')).replace(/\s*\((?:[a-z]|\d{1,2}|nota \d+)\)\s*$/i, '').trim();
-// MISMA NOTA por las PALABRAS DE CONTENIDO del título (Versión 403, medido: comparar el texto exacto dejaba sin precedente cientos de filas
+// MISMA NOTA por las PALABRAS DE CONTENIDO del título (medido: comparar el texto exacto dejaba sin precedente cientos de filas
 // que salían bien, porque cada año nombra distinto la misma nota: "Gasto de administración" / "Gastos de Administración" en UC, frases
 // largas en Fortaleza). Se sacan palabras genéricas (gastos, despesas, total, ingresos, nota...) y se compara por raíz de 5 letras: comparten
 // al menos una -> misma nota. "(-) Despesas com futebol profissional e amador" y "Custo com futebol" comparten "futeb"; con "Despesas

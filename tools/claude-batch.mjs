@@ -1,6 +1,6 @@
 // ============================================================================
 // tools/claude-batch.mjs — MODO BATCH de las llamadas a Claude (Batch API de Anthropic: mitad de precio, respuesta en menos de una hora casi
-// siempre y 24 horas como máximo; ok de Guido 2026-10-17). Librería: no corre nada al importarla. La usan claude-llamada.mjs (localizar,
+// siempre y 24 horas como máximo; ok de Guido). Librería: no corre nada al importarla. La usan claude-llamada.mjs (localizar,
 // extraer, primer-anio, perimetro-a2) y categorizar-claude.mjs; el que manda las olas es tools/lote-batch.mjs.
 //
 // Se prende con FOS_CLAUDE_BATCH=1 (lo pone lote-batch.mjs; lo heredan los subprocesos del lote). Mismo modelo, mismo pedido:

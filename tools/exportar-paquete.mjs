@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/exportar-paquete.mjs — to-do 245, estándares abiertos (2): un Data Package de Frictionless Data (datapackage.json, perfil 2.0) que describe el conjunto
+// tools/exportar-paquete.mjs — un Data Package de Frictionless Data (datapackage.json, perfil 2.0) que describe el conjunto
 // de datos: título, licencia, fuentes, un recurso por club (el JSON del esquema de data/schema/club-v2.json), la tabla de la taxonomía de cada deporte
 // y el diccionario de campos.
 //

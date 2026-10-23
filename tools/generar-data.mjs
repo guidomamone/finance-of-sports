@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/generar-data.mjs — to-do 245, fase 2. Genera `data/<país>/<id>-data.js` (lo que carga el sitio) desde `data/<país>/<id>.json` (la fuente).
+// tools/generar-data.mjs — Genera `data/<país>/<id>-data.js` (lo que carga el sitio) desde `data/<país>/<id>.json` (la fuente).
 // El JS generado no se edita a mano: si cambia el JSON, se corre esto (las tools de carga ya lo hacen solas al escribir).
 //
 // USO: node tools/generar-data.mjs               regenera el JS de todos los clubes

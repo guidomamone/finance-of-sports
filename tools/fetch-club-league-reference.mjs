@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/fetch-club-league-reference.mjs — to-do 95. Baja, vía la API de
+// tools/fetch-club-league-reference.mjs — Baja, vía la API de
 // Wikipedia (wikitext crudo, NO un resumen de un modelo — mismo criterio que
 // tools/fetch-brand-color-reference.mjs: un LLM resumiendo un dato exacto es
 // el mismo riesgo de "inventar un número" que este proyecto evita en todo lo
 // demás), el roster completo de una liga-temporada desde su página de
 // TEMPORADA en Wikipedia (NO la página del club — esa no trae la tabla).
 //
-// CORREGIDO 2026-09-28 (Guido, mirando https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League):
+// CORREGIDO (Guido, mirando https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League):
 // la evaluación anterior de este to-do había mirado la página del CLUB y RSSSF,
 // y concluyó que no alcanzaba. Mirando la página de la TEMPORADA en cambio, la
 // tabla "Teams"/"Clubs" es un wikitable estándar de MediaWiki, consistente
@@ -18,7 +18,7 @@
 //
 // Cachea por RÁSTER de nombres (NO por clubId): la mayoría de los clubes que
 // esto tiene que cubrir todavía no tienen clubId (están sourceados, no
-// onboardeados — ver to-do 50, Boyacá Chicó). `tools/lookup-club-league.js`
+// onboardeados — Boyacá Chicó). `tools/lookup-club-league.js`
 // busca por nombre normalizado, como `lookup-brand-color.js`.
 //
 // USO:
@@ -66,7 +66,7 @@ function extractTeamsSection(wikitext, sectionNames) {
 }
 
 function extractAllWikitables(sectionText) {
-  // CORREGIDO 2026-09-28: antes tomaba solo la PRIMERA tabla de la
+  // CORREGIDO: antes tomaba solo la PRIMERA tabla de la
   // sección, y no siempre es el roster (Grecia: la primera es un resumen
   // "Promoted from/Relegated from" de 2 equipos, el roster real de 14 está en
   // la SEGUNDA tabla). Ahora se extraen todas las tablas de la sección, y
@@ -283,7 +283,7 @@ async function main() {
     process.exit(1);
   }
   // Nos quedamos con la tabla que más equipos ÚNICOS parsea, NO con la de más
-  // FILAS (probado con Grecia, to-do 104: la tabla de "Managerial changes" trae
+  // FILAS (probado con Grecia: la tabla de "Managerial changes" trae
   // 21 filas pero solo 13 equipos únicos, con nombres de técnico mezclados y
   // clubes repetidos por cada cambio de DT; la tabla real de "Team" de la
   // sección trae 14 filas = 14 equipos únicos, sin repetir ninguno -- ese es el

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/ejercicios-nuevos.mjs — LA REVISIÓN MENSUAL DE EJERCICIOS NUEVOS (to-do 252; pedido de Guido: mensual, que baje el PDF a Clubes/).
+// tools/ejercicios-nuevos.mjs — LA REVISIÓN MENSUAL DE EJERCICIOS NUEVOS (pedido de Guido: mensual, que baje el PDF a Clubes/).
 //
 // POR QUÉ. Los clubes publican una vez por año, casi todos entre septiembre y diciembre. Esto mira, para cada club cargado, si ya salió el
 // ejercicio que sigue al último cargado, y si salió baja el PDF a su carpeta de Clubes/ y deja el link en Admin/sourcing/README.md (sección

@@ -105,7 +105,7 @@ function pedido(pdf, registro, sitio) {
   return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}${entidad ? ` Entidad con la que el club está en el sitio: ${entidad}. Si el documento trae estados de resultados separados de VARIAS entidades (por ejemplo la sociedad que juega el ${deporteEnFrase(deporteDePdf(pdf))}, la asociación o club deportivo, el holding o la sociedad del estadio), elegí los de esa entidad y no los de las otras; la regla del consolidado y el individual de la misma entidad no cambia.` : ''}` };
 }
 
-// LAS NOTAS HACEN DE ESTADO (Versión 360, etapa 3, escalón 2, camino de error; diseño aprobado por Guido el 2026-10-02). Hay documentos que
+// LAS NOTAS HACEN DE ESTADO (etapa 3, escalón 2, camino de error; diseño aprobado por Guido). Hay documentos que
 // traen SOLO las notas (Fortaleza CEIF, Colombia: "Notas a los estados financieros", sin balance ni estado de resultados), pero las notas de
 // ingresos y gastos tienen su total impreso y la nota del impuesto imprime el resultado antes de impuestos (2023: notas 19 a 25 suman
 // 1.609.817 = "Utilidad contable antes de impuesto", nota 8). Con `notasComoEstado`, se le pide a la IA que elija esas notas COMO estado y el
@@ -115,7 +115,7 @@ export const PEDIDO_NOTAS_COMO_ESTADO = `REINTENTO SIN ESTADO DE RESULTADOS: en 
 - notas_ingresos / notas_gastos: los cuadros que abren una fila de esas notas (un desglose dentro de otro), si los hay.
 - sin_estado = false solo si encontraste esas notas Y un resultado impreso; si no, sin_estado = true.`;
 
-// PISTA DEL AJUSTE MANUAL (Versión 370; tools/ajustes.mjs, `resultado-final` con --linea): si las notas hacen de estado y Guido ya dijo
+// PISTA DEL AJUSTE MANUAL (tools/ajustes.mjs, `resultado-final` con --linea): si las notas hacen de estado y Guido ya dijo
 // dónde está impreso el resultado, se le da a la IA el bloque y el valor, y ese bloque se muestra aunque tenga una sola cifra. Caso real:
 // Fortaleza CEIF 2018 y 2019, que quedaron como fuente porque la IA no vio "Resultado Año 2018 (639,077)" (L542) ni "Utilidad Contable
 // (52,122)" (L455).

@@ -48,7 +48,7 @@ function cargar() {
   const citas = {};
   for (const f of archivosData()) {
     const id = idDeArchivo(f);
-    // la cita está en el data file o, desde el to-do 209 (data/ sin comentarios ni `note`), en la evidencia del club: se leen los dos
+    // la cita está en el data file o, ahora (data/ sin comentarios ni `note`), en la evidencia del club: se leen los dos
     const ev = resolve(ROOT, 'Admin', 'carga-clubes', `${id}.md`);
     const txt = readFileSync(resolve(ROOT, f), 'utf8') + (existsSync(ev) ? `\n${readFileSync(ev, 'utf8')}` : '');
     for (const m of txt.matchAll(/Clubes\/([^/\n`'"]+)\/([^/\n`'"]+)\//g)) (citas[`${m[1]}/${m[2]}`] ??= new Set()).add(id);
@@ -100,7 +100,7 @@ export function todasLasCarpetas() {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const todas = todasLasCarpetas();
   // salir recién cuando terminó de escribir: con process.exit() inmediato, por un pipe se perdía todo lo que pasaba de
-  // 64 KB y audit.js daba P1 'carpetas-clubes-fallo' (JSON cortado en 65.536 bytes cuando la lista llegó a ~68 KB, 2026-10-03)
+  // 64 KB y audit.js daba P1 'carpetas-clubes-fallo' (JSON cortado en 65.536 bytes cuando la lista llegó a ~68 KB)
   if (process.argv.includes('--json')) { process.stdout.write(JSON.stringify(todas, null, 1) + '\n', () => process.exit(0)); }
   else {
   const by = {}; for (const t of todas) (by[t.via] ??= []).push(t);

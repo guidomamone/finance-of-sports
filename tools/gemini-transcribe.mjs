@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Transcribe PDFs a .md usando Gemini directo (multimodal, sin Tesseract/pdftotext previo -- ese es
-// el punto: la API lee el PDF nativamente). Nace del test de costo del to-do 66 (ver
+// el punto: la API lee el PDF nativamente). Nace del test de costo (ver
 // Admin/Archive/test-costo-transcripcion.md) -- promovido a herramienta permanente porque el resultado salió
 // 10/10 en la verificación, más barato y más rápido que transcribir con un subagente de Claude.
 //
@@ -87,8 +87,8 @@ const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidel
 
 // Corre tools/check-transcripcion-fidelidad.js sobre el .md recién escrito. A diferencia
 // de Mistral (motor de extracción), Gemini SÍ es un modelo de chat -- el mismo tipo de modelo que
-// produjo los placeholders en inglés del test de costo de Haiku (Admin/Archive/test-costo-transcripcion.md,
-// to-do 71) -- así que acá el chequeo tiene más chance real de encontrar algo, no es solo una
+// produjo los placeholders en inglés del test de costo de Haiku (Admin/Archive/test-costo-transcripcion.md)
+// -- así que acá el chequeo tiene más chance real de encontrar algo, no es solo una
 // formalidad. No bloquea la transcripción si encuentra algo (ni si el chequeo mismo falla): solo
 // avisa, para revisar antes de onboardear.
 function checkFidelidad(mdPath) {
@@ -145,7 +145,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, op
   // sufijo es LA transcripción del documento y queda al lado del PDF, en Clubes/.
   const mdPath = outSuffix ? derivado(pdfPath, outSuffix + '.md') : resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
   // `opts.redo`: --redo-mistral-scanned SÍ quiere pisar un .md que ya existe (el de Mistral).
-  // BUG REAL, 2026-09-28: la versión anterior de este flag borraba TODOS los .md del lote entero
+  // BUG REAL: la versión anterior de este flag borraba TODOS los .md del lote entero
   // ANTES de arrancar a procesarlos uno por uno -- si la corrida se cortaba a mitad de camino
   // (cerrar la terminal, Ctrl+C), quedaban cientos de archivos borrados y sin reemplazo, el
   // trabajo de Mistral ya hecho perdido de verdad (recuperado a mano con `git restore` porque

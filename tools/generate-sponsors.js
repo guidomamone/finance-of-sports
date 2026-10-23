@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/generate-sponsors.js — EL ÍNDICE DE SPONSORS Y MARCAS TÉCNICAS (to-do 273, pedido de Guido: cada sponsor con su página, su
+// tools/generate-sponsors.js — EL ÍNDICE DE SPONSORS Y MARCAS TÉCNICAS (pedido de Guido: cada sponsor con su página, su
 // histórico y los equipos que sponsorea hoy; las marcas técnicas también; los equipos de toda la liga, los que el sitio no tiene en gris).
 //
 // DE DÓNDE. La caché por liga-año de tools/estadio-sponsor.mjs (tools/club-league-reference/contexto/<iso>.json: las tablas de kits de cada

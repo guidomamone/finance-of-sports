@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/medir-ixbrl-consolidado.mjs — ¿alcanza lo cargado para decidir si el chequeo iXBRL FRENA también en el perímetro consolidado? (condición de la Auditora 5, to-do 352)
+// tools/medir-ixbrl-consolidado.mjs — ¿alcanza lo cargado para decidir si el chequeo iXBRL FRENA también en el perímetro consolidado? (condición de la Auditora 5)
 //
 // POR QUÉ. `cargar.mjs` frena si el resultado cargado de un año INDIVIDUAL no coincide con el `ProfitLoss` etiquetado en el XHTML (medido: 9 clubes, 0 falsos frenos), pero en el CONSOLIDADO solo avisa: el
 // ProfitLoss de un grupo con minoritarios incluye la parte no controladora y lo cargado podría ser la atribuible. Antes de pasarlo a freno hay que haberlo visto en dos años consolidados de clubes

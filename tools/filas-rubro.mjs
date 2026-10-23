@@ -2,7 +2,7 @@
 // tools/filas-rubro.mjs — funciones GRATIS (sin API, sin tokens) que limpian y ordenan las filas de una tabla ANTES de mandarlas a Jev.
 // Lo usan tools/proponer-carga.mjs (el lado de cada fila) y tools/chequeos-gratis.mjs (numeroDe, norm).
 //
-// Por qué existe (piloto de 9 documentos, 2026-09-30, y análisis de los 14.246 rubros de la corrida de 50): Jev no era el problema, lo era lo que
+// Por qué existe (piloto de 9 documentos, y análisis de los 14.246 rubros de la corrida de 50): Jev no era el problema, lo era lo que
 // se le mandaba.
 //   - El 27% de las etiquetas no tenían letras (cifras partidas como "8.206.844") y Jev les asignaba categoría con confianza >= 0,90.
 //   - Subtotales y resultados ("DRIFTSRESULTAT", "Μικτό αποτέλεσμα", "Netto finans"), metadatos ("Forretningsadresse:", "Единица измерения:")
@@ -16,7 +16,7 @@
 //   noEsRubro(etiqueta, esSuma)         -> true si la fila no es un rubro de ingresos/gastos (número suelto, símbolo, subtotal, resultado, metadato).
 //   ladosPorEstructura(filas)           -> para cada fila 'revenue' | 'expense' | null, deducido de la estructura de la tabla: el subtotal que cierra
 //                                          un bloque ("Sum driftsinntekter", "Total gastos") dice de qué lado son las filas de arriba.
-//                                          Desde el test del 2026-09-30 combina estructura > posición > palabras (ver más abajo los números).
+//                                          Desde el test combina estructura > posición > palabras (ver más abajo los números).
 //   ladoPorPalabras(etiqueta)           -> lado por las palabras de la etiqueta (impuestos = gasto; deducciones de la receita = ingreso).
 //   esResultado(etiqueta)               -> la etiqueta es un resultado/margen en cualquier parte ("Profit/(loss) before...", "Gewinn vor Steuern").
 //   columnaDeImportes(cols, filas, año) -> la columna de importes, sin confundirla con la de "Notas" (hoy no la usa ninguna tool).
@@ -74,7 +74,7 @@ export function noEsRubro(label, esSuma) {
   if (/:\s*$/.test(String(label).trim())) return true;               // "Forretningsadresse:", "Единица измерения:" (metadato)
   if (SUBTOTAL_RE.test(l)) return true;
   // "(Loss) for the financial year", "Profit/(loss) before net finance charges": el paréntesis del comienzo y el "/(loss)" hacían que
-  // RESULTADO_RE (que mira el comienzo) no los reconociera y llegaban a Jev como rubros (test de elección de tabla, 2026-09-30, Arsenal).
+  // RESULTADO_RE (que mira el comienzo) no los reconociera y llegaban a Jev como rubros (test de elección de tabla, Arsenal).
   const l2 = sinNumeracion(label).replace(/^\(([^)]*)\)\s*/, '$1 ').replace(/\/\s*\(?(loss|perdida|prejuizo|verlust)\)?/g, '').replace(/\s+/g, ' ').trim();
   if (l2.split(' ').length <= 5 && (RESULTADO_RE.test(l) || RESULTADO_RE.test(l2))) return true; // resultados y márgenes calculados
   // Resultado largo: "Resultado antes de depreciações, gastos de financiamentos e impostos" (Alverca) pasaba el límite de 5 palabras, que
@@ -90,7 +90,7 @@ const RESULTADO_LARGO_RE = /^(resultado|result|ergebnis|resultat|risultato|resul
 export const esResultado = (label) => { const l = sinNumeracion(label); return RESULTADO_RE.test(l) || RESULTADO_EN_CUALQUIER_LUGAR.test(l); };
 
 // ---- lado (ingreso o gasto) por la estructura de la tabla
-// Versión 312 (piloto D): ucraniano (дохід, виручка, витрати, собівартість), checo con y sin diacríticos (výnosy, tržby, náklady) y turco
+// (piloto D): ucraniano (дохід, виручка, витрати, собівартість), checo con y sin diacríticos (výnosy, tržby, náklady) y turco
 // (hasılat, gelir, gider, maliyet): Karpaty Lviv tenía lado en 11 de 41 filas porque solo estaban las palabras en ruso.
 export const REV_W = INGRESOS_RE;
 export const EXP_W = GASTOS_RE;
@@ -113,7 +113,7 @@ export function ladoPorPalabras(label) {
   return r && !x ? 'revenue' : x && !r ? 'expense' : null;
 }
 
-// LADO DE CADA FILA (test del 2026-09-30 contra producción, detalle en Admin/mediciones/test-eleccion-tabla.md). Verdad: 913 filas de 150 documentos
+// LADO DE CADA FILA (test contra producción, detalle en Admin/mediciones/test-eleccion-tabla.md). Verdad: 913 filas de 150 documentos
 // (los .rubros.json del pipeline + los ejercicios ya cargados) cuyo importe coincide con una línea de producción del mismo club (año o año
 // anterior): esa línea da el lado. 70 de esas 913 son coincidencias de importe sin ninguna palabra en común ("verdad dudosa").
 //   Cada regla sola (cubre = cuántas filas decide; acierto sobre las que decide):

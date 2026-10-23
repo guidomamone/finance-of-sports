@@ -16,7 +16,7 @@
 // siguen aplicando igual sobre estos datos cacheados.
 //
 // FUENTE: footylogos.com/color-codes/<liga>, una página por liga con una
-// card por club (nombre, slug, y sus swatches en orden). Verificado 2026-09-27
+// card por club (nombre, slug, y sus swatches en orden). Verificado
 // contra la Liga Profesional Argentina: 31 clubes, colores consistentes con
 // los ya cargados a mano en data/clubs.js (ej. Boca #182A4E/#F9BB31, San
 // Lorenzo #00325A ya confirmado en clubs.js).

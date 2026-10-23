@@ -15,7 +15,7 @@
 //   - Jev no registra costo (solo tokens en los backtests); se informa aparte como "sin registro".
 //
 // PLATA TIRADA que detecta (bloque "Pagado sin .md"): transcripciones de Mistral registradas cuyo `.md` ya no existe en disco.
-// Encontrado el 2026-09-30: 21 PDFs (River, AEK, Olympiacos), US$ 4,52, transcriptos el 27-28/09 y nunca commiteados; el registro los
+// Encontrado: 21 PDFs (River, AEK, Olympiacos), US$ 4,52, transcriptos el 27-28/09 y nunca commiteados; el registro los
 // mostraba como `sin-md` y el pipeline los habría vuelto a pagar sin avisar. (Los `-mistral-test.md` y `.mistral-redo.md` de los tests se
 // ignoran: tienen otro nombre a propósito.)
 //

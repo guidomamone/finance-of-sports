@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/lookup-club-league.js — arquitectura del to-do 95, ver
+// tools/lookup-club-league.js — arquitectura, ver
 // tools/club-league-reference/README.md para el porqué. Busca por NOMBRE
 // (no por clubId: la mayoría de los clubes que esto cubre todavía no están
 // onboardeados, así que no tienen clubId todavía) contra los rosters de

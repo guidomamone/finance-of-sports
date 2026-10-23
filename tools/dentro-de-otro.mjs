@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/dentro-de-otro.mjs — "POSIBLEMENTE DENTRO DE OTRO RUBRO" (to-do 140(i), Versión 517, diseño aprobado por Guido el 2026-10-05).
+// tools/dentro-de-otro.mjs — "POSIBLEMENTE DENTRO DE OTRO RUBRO" (diseño aprobado por Guido).
 // Gratis, sin IA. No cambia ningún número: solo agrega fiscalYearMeta.incluidoEn, que cambia el TEXTO de una fila que hoy dice "—".
 //
 // POR QUÉ. Cuando el documento no desglosa un renglón, ese renglón entero va a "Fútbol profesional (sin desglosar por la fuente)"
 // (lump_football_operations / _expense) y las filas que puede esconder (televisión, sueldos…) quedan en "—" (`unknown` en bucketize,
 // js/finanzas-calc.js). Si el club tiene esa fila en TODOS sus otros balances desglosados, lo más probable es que esté adentro del
-// renglón: la página lo dice ("Posiblemente dentro de otro rubro", con el rubro en el bocadillo; Versión 515).
+// renglón: la página lo dice ("Posiblemente dentro de otro rubro", con el rubro en el bocadillo).
 //
 // LA ESCALERA, por fila (club, año, lado, fila), solo si la fila está en "—" (el lado tiene un renglón sin desglosar con plata):
 //   ESCALÓN 0  la decisión de Guido, en los dos sentidos (tools/ajustes.mjs): `incluye` ya está en incluidoEn (lo escribe cargar.mjs) y la
@@ -19,7 +19,7 @@
 //   ESCALÓN 2  la cola humana, para años nuevos del pipeline sin precedente: se diseña con el primer caso real (decisión de Guido).
 //   Si ninguno: queda "—", como hoy.
 // MEDIDO (--medir, backtest): aplicada a los años COMPLETOS, donde se sabe la verdad, la regla marcaría una fila que en realidad está en
-// "—" el 1,1% de las veces (2026-10-05, antes de sacar los presupuestos: 17 de 1.493; casos: pandemia, premios que un año no hubo). La
+// "—" el 1,1% de las veces (antes de sacar los presupuestos: 17 de 1.493; casos: pandemia, premios que un año no hubo). La
 // variante "en ALGÚN otro año" daba 7,4% (Premios 37%): descartada, Admin/HALLAZGOS-pipeline.md.
 //
 // REESCRIBE SUS PROPIAS MARCAS: en cada corrida saca TODAS las que escribió antes (`por:'precedente'`, más su comentario) y las vuelve a

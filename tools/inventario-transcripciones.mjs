@@ -99,7 +99,7 @@ function walkPdfs(dir, out = []) {
   return out;
 }
 
-// Qué ejercicios ya están cargados en el sitio: tools/quien.mjs --pendientes (lo que NO lista es lo que ya está cargado; hasta el to-do 218
+// Qué ejercicios ya están cargados en el sitio: tools/quien.mjs --pendientes (lo que NO lista es lo que ya está cargado; antes
 // era `onboard.mjs --all --dry-run`, el mismo código). Se le pregunta a él en vez
 // de duplicar la lógica de resolver club+año, que ya tiene sus casos raros resueltos.
 // Con `dirs` (el alcance de --solo) se le pregunta solo por esas carpetas (una corrida por carpeta, --dir). Una carpeta sin nada pendiente
@@ -156,7 +156,7 @@ function motorFinal(base, verif, sha) {
 
 function currentState(entry, verif) {
   if (verif && verif.status === 'no-es-pdf' && !entry.cargado) return { status: 'no-es-pdf', method: verif.method, detail: verif.detail };
-  // Un sin-md con costoUsd de Mistral registrado es PLATA PAGADA cuyo .md no está en disco (encontrado 2026-09-30: 25 transcripciones,
+  // Un sin-md con costoUsd de Mistral registrado es PLATA PAGADA cuyo .md no está en disco (encontrado: 25 transcripciones,
   // US$ 5,01, River/AEK/Olympiacos, hechas el 27-28/09 y nunca commiteadas). El estado sigue siendo sin-md (hay que volver a
   // transcribir), pero el detalle lo dice, y `node tools/gasto.mjs` los lista, para que nadie lo pague otra vez sin enterarse.
   if (!entry.tieneMd && !entry.cargado) return { status: 'sin-md', method: null, detail: entry.costoUsd ? `PAGADO SIN .md: Mistral lo transcribió el ${entry.fecha} (US$ ${entry.costoUsd}) y el .md no está en disco; volver a transcribir lo paga de nuevo` : 'todavía no hay ninguna transcripción de este PDF' };
@@ -209,7 +209,7 @@ const pending = pendingByOnboard(soloPdfs ? [...new Set(soloPdfs.map((a) => rela
 const prov = loadProvenance();
 const verifs = latestVerifications();
 
-// HUELLA DEL PDF (Versión 521, to-do 140(c), aprobado por Guido el 2026-10-05): el sha1 de los bytes del PDF, para marcar el MISMO
+// HUELLA DEL PDF (aprobado por Guido): el sha1 de los bytes del PDF, para marcar el MISMO
 // documento bajado dos veces con nombres distintos (22 grupos al medirlo, todos dentro de la carpeta de un club: Envigado
 // certificacion-ef-2021 = estados-financieros-2021, Mirassol 2024-laudo-auditoria = relatorio-auditoria-contabil-2024...). Hashear 10 GB
 // tarda minutos, así que se reusa la huella del registro anterior si el PDF tiene el mismo tamaño y la misma fecha de modificación.
@@ -306,7 +306,7 @@ if (listState) {
 const tally = (arr, key) => arr.reduce((a, e) => ((a[key(e)] = (a[key(e)] || 0) + 1), a), {});
 const scopeE = entries.filter((e) => !dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'));
 console.log(`\n${scopeE.length} PDFs (${scopeE.filter((e) => e.tieneMd).length} con .md)${dirFilter ? ` en ${dirFilter}` : ''}. Registro en Admin/registros/transcripciones-estado.jsonl\n`);
-// POR ETAPA (Versión 447, pedido de Guido el 2026-10-04: "que marquen en qué etapa o escalón está"): cada estado del registro con la etapa
+// POR ETAPA (pedido de Guido: "que marquen en qué etapa o escalón está"): cada estado del registro con la etapa
 // y el escalón del proceso nuevo; los "listo" se abren según lo que dejaron las etapas 3-8 en Generados/. La lógica vive en
 // tools/etapa-doc.mjs, la misma que usa el tablero (tools/estado.mjs).
 console.log('Por estado (con la etapa y el escalón del proceso, Admin/PIPELINE.md):');

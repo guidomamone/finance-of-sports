@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/xhtml-aarsrapport.mjs — LOS INFORMES DANESES EN XHTML (ESEF / iXBRL) AL FORMATO DEL PIPELINE: .md fiel + PDF de ancla (to-do 345, diseño aprobado por la Auditora 4).
+// tools/xhtml-aarsrapport.mjs — LOS INFORMES DANESES EN XHTML (ESEF / iXBRL) AL FORMATO DEL PIPELINE: .md fiel + PDF de ancla (diseño aprobado por la Auditora 4).
 // Gratis, determinista, sin IA ni OCR.
 //
 // POR QUÉ. Clubes/Dinamarca/ trae informes `aarsrapport-AAAA-MM-DD.xhtml` (el formato oficial que presentan los clubes). El registro (transcripciones-estado.jsonl), lote.mjs y cargar.mjs

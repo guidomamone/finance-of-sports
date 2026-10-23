@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/sponsor-busqueda.js — ¿el registro de búsqueda del sponsor de camiseta vale? (to-do 343; skill club-sourcing, sección 0.5)
+// tools/sponsor-busqueda.js — ¿el registro de búsqueda del sponsor de camiseta vale? (skill club-sourcing, sección 0.5)
 //
 // Un año sin sponsor solo pasa la compuerta de estadio-sponsor.mjs si `sin-fuente.sponsor` (en tools/contexto-manual.json) es:
 //   - { legacy: true, texto } y el club y el año están en tools/sponsor-legacy.json (los años que ya tenían un texto libre cuando se puso la regla; la lista no crece), o

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Búsqueda puntual en el archivo comunitario de Reddit (Arctic Shift / PullPush) — NO es parte de
-// la escalera rutinaria de sourcing (ver Admin/Archive/CHANGELOG-v010-v299.md, Versión 268, to-do 81 cerrado). Se probó
+// la escalera rutinaria de sourcing (ver Admin/Archive/CHANGELOG-v010-v299.md). Se probó
 // en 12 clubes y el hallazgo fue: rinde solo en subreddits de ~20-25k miembros para arriba, y muy
 // pocos clubes de fútbol del mundo tienen un subreddit así de grande — por eso este script queda
 // guardado para una corrida ocasional/manual cuando un club puntual lo amerite, no para correrlo por

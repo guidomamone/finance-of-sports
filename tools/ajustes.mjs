@@ -67,7 +67,7 @@
 //   fila una fila del resultado que la extracción no trajo, o trajo mal: etiqueta, lado (ingreso, gasto,
 //                     financiero, impuesto), valor TAL CUAL impreso (con su signo: un costo financiero en negativo), línea del .md y,
 //                     opcional, `reemplaza` = la etiqueta de la fila extraída que sale (TODAS las que se llaman así), o `reemplazaLinea` =
-//                     la línea del .md de la ÚNICA fila que sale (to-do 158: en el formato italiano "altri" es a la vez ingreso, financiero
+//                     la línea del .md de la ÚNICA fila que sale (en el formato italiano "altri" es a la vez ingreso, financiero
 //                     + y financiero −; Bologna 2020-21, L833, L871 y L875). Varias por documento (la clave incluye la etiqueta).
 //                     Del lado financiero, `--destino profit_on_player_sales` la manda a financial.profit_on_player_sales en vez de net_interest
 //                     (Auditora 5): «b) Resultados por enajenaciones y otras» del PGC español (Girona 2021-23: +8,50 / −0,297 / −0,76 M), con
@@ -128,7 +128,7 @@ export function ajusteDelAnio(pdf, campo, anio, unSoloAnio) {
   const vivos = ajustesDe(pdf).filter((a) => a.campo === campo);
   return vivos.find((a) => a.anio != null && String(a.anio) === String(anio)) || (unSoloAnio ? vivos.find((a) => a.anio == null) || null : null);
 }
-// PERÍMETRO (Versión 412, pedido de Guido el 2026-10-02: "ruta de ajuste manual para que no joda"): `perimetro` = individual | consolidado.
+// PERÍMETRO (pedido de Guido: "ruta de ajuste manual para que no joda"): `perimetro` = individual | consolidado.
 // Se puede fijar para UN documento o para TODO EL CLUB (en vez del pdf, la carpeta `Clubes/<País>/<Club>/`); el del documento gana sobre el
 // del club. Escalón 0 del perímetro en cargar.mjs: gana sobre lo que detecta el documento y sobre la cola. Caso: Novorizontino, una sola
 // entidad; "Consolidado" aparece en el membrete del auditor (2018-2020) y el script preguntaba cada año.
@@ -149,7 +149,7 @@ export function ceroRealDelClub(pdf, categoria) {
 // QUIÉN FIRMA. Escalón 0: --autor X (o `autor` cuando lo escribe un script, como perimetro-senales.mjs). Escalón 1: sin --autor,
 // quien corre el comando: los comandos que corre Claude Code (la sesión y sus subagentes) llevan la variable CLAUDECODE=1 y firman "Claude";
 // la terminal de Guido no la tiene y firma "Guido". Antes firmaba "Guido" siempre: ~800 ajustes que decidió
-// Claude el 2026-10-07/09 dicen "Guido" en el jsonl y en el comentario del año en data/ (Guido: el histórico queda como está).
+// Claude dicen "Guido" en el jsonl y en el comentario del año en data/ (Guido: el histórico queda como está).
 export const autorPorDefecto = () => (process.env.CLAUDECODE === '1' ? 'Claude' : 'Guido');
 // Escribe un ajuste desde un script (mismo formato que --agregar; `autor` dice quién lo decidió). Caso: perimetro-senales.mjs fija el
 // perímetro de un club cuando sus documentos coinciden (autor "perimetro-senales"); el motivo cita los documentos y los criterios.

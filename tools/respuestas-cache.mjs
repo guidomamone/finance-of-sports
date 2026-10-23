@@ -41,7 +41,7 @@ import { padreDe } from './memoria-categorias.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const DIR = resolve(ROOT, 'Generados', '_cache');
-// (Versión 403, cambio D de la auditoría del pipeline) Con `nota` (el renglón que la fila desglosa, o 'estado'), la clave la incluye: la misma
+// (cambio D de la auditoría del pipeline) Con `nota` (el renglón que la fila desglosa, o 'estado'), la clave la incluye: la misma
 // etiqueta en otra nota es OTRA pregunta. Caso: Goiás "Despesa com pessoal": la respuesta guardada para la nota administrativa
 // ("gastos generales") se reusaba para la fila de la nota de fútbol de 2024 (44.603.582). Sin `nota` (Jev, que no ve la nota), como antes.
 const clave = (club, lado, label, nota) => `${club}|${lado || ''}|${normalizar(label)}${nota !== undefined ? `|nota:${nota == null ? '?' : normalizar(nota)}` : ''}`;

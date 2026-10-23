@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/ida-y-vuelta.mjs — to-do 245, fase 1 (d). La prueba: data/<país>/*-data.js -> JSON (aJson, pasando por texto como en un archivo) -> validar ->
+// tools/ida-y-vuelta.mjs — La prueba: data/<país>/*-data.js -> JSON (aJson, pasando por texto como en un archivo) -> validar ->
 // JS generado (generarJs) -> se evalúa en un entorno limpio -> se compara, objeto por objeto, con el JS actual. Estricto: -0, null y clave ausente
 // se distinguen; el orden de las claves no cuenta. Solo lectura: no escribe nada (con --escribir deja el JS generado en una carpeta para mirarlo).
 //

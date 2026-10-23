@@ -28,7 +28,7 @@
 // Métricas: error mediano en % (|estimado/real - 1|), cuántos caen a ±25%, y cuántos reales caen dentro del rango del 80% (cuantiles
 // 10-90 de los residuos del ajuste de entrenamiento).
 //
-// MEDIDO (2026-10-17, 891 club-años, 827 con posición):
+// MEDIDO (891 club-años, 827 con posición):
 //   falta un año   modelo 22% (20% entre dos reales, 26% antes o después) = interpolar a mano 22%: la regresión NO agrega nada.
 //   club nuevo     modelo 50% (sin posición 61%) contra 56% de la mediana de la liga: gana gracias a la posición, pero el error es grande.
 //
@@ -196,7 +196,7 @@ function estimaciones() {
   const lc = { window: {} }; vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'leagues.js'), 'utf8').replace(/^const /gm, 'var '), lc);
   const dc = { window: {} }; vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'deflactores.js'), 'utf8'), dc);
   const D = dc.window.DEFLACTORES.USD.valores; const ultimo = Math.max(...Object.keys(D).map(Number));
-  // INTERPOLACIÓN SIMPLE (decisión de Guido, 2026-10-18: la regresión empata con ella, 22% contra 22%, y esta se explica en una línea).
+  // INTERPOLACIÓN SIMPLE (decisión de Guido: la regresión empata con ella, 22% contra 22%, y esta se explica en una línea).
   // Su error y su rango salen de los años reales: cada club-año real a 2 años o menos de otro, interpolado SIN él (validación por año),
   // separado en "entre dos reales" y "antes o después" (en ese caso, el año real más cercano).
   const errs = { entre: [], afuera: [] };

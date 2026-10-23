@@ -24,13 +24,13 @@
 //   La entidad que organiza una liga (AFA, LFP) va con "ligaId" (de data/leagues.js) en vez de "clubId" y con "entidad":{"nombre","legal"?};
 //   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]);
 //   una liga con `falta_transcripcion` no sale (queda pendiente en `--pendientes`, como un club).
-//   alcance (opcional, con nota; sin el campo es una auditoría plena de las cuentas del club). Decisión de Guido, 2026-10-18:
+//   alcance (opcional, con nota; sin el campo es una auditoría plena de las cuentas del club). Decisión de Guido:
 //     revision_limitada         revisión limitada (ISRE 2410 y similares): "no encontramos nada", no es una auditoría (Como 2025).
 //     procedimientos_acordados  procedimientos acordados: la firma comprobó cifras puntuales; ni auditoría ni revisión (Osijek 2025).
 //     proposito_especial        auditoría de estados preparados para la licencia de la federación, no de las cuentas legales (Kifisia).
 //     grupo                     auditoría de las cuentas del grupo dueño del club, no del club solo (Club América 2025, Ollamani).
 //     federacion                (solo en una línea de liga) el balance es el de la federación entera, no el de la liga: la sociedad que organiza la
-//                               liga no publica el suyo (KNVB para la Eredivisie y la Eerste Divisie, decisión de Guido, 2026-10-19).
+//                               liga no publica el suyo (KNVB para la Eredivisie y la Eerste Divisie, decisión de Guido).
 //   Un "relatório de revisão especial" que audita con seguridad razonable y da opinión es una auditoría plena (Criciúma 2015-2019).
 //   nota (opcional): una aclaración interna para la próxima sesión; no se publica.
 //

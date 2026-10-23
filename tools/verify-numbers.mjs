@@ -34,7 +34,7 @@ export const NUM_RE = /\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?|\d{1,3}(?: \d{3})+(
 export const norm = (t) => t.replace(/[\s.,]/g, '');
 // UNA CIFRA CON FORMA IMPOSIBLE: dos separadores distintos y el último repetido ("13.950,790,99") o el de miles después
 // del decimal ("4,205.265,42"). Es un error del OCR: ningún documento imprime así. La usan tools/caja-deuda.mjs (la fila no se lee) y
-// tools/chequeos-gratis.mjs (la página no se valida gratis). Medido el 2026-10-14: 1.960 cifras así en 118 transcripciones.
+// tools/chequeos-gratis.mjs (la página no se valida gratis). Medido: 1.960 cifras así en 118 transcripciones.
 export const formaImposible = (c) => {
   const t = String(c).replace(/[^\d.,]/g, ''); if (!(t.includes('.') && t.includes(','))) return false;
   const ultimo = Math.max(t.lastIndexOf('.'), t.lastIndexOf(',')); const sep = t[ultimo]; const otro = sep === '.' ? ',' : '.';
@@ -63,7 +63,7 @@ function pageCount(pdfPath) {
   return m ? Number(m[1]) : null;
 }
 
-// Umbrales (calibrados con los 15 documentos del test de motores del 2026-09-29 -- ver
+// Umbrales (calibrados con los 15 documentos del test de motores -- ver
 // Admin/mediciones/test-motores-resultados.md; si se cambian, volver a correr ese test,
 // tools/archivo/test-motores.mjs):
 export const THRESHOLDS = {

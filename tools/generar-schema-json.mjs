@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/generar-schema-json.mjs — to-do 245, estándares abiertos (1): el JSON Schema formal (draft 2020-12) del archivo de un club, para que lo valide
+// tools/generar-schema-json.mjs — el JSON Schema formal (draft 2020-12) del archivo de un club, para que lo valide
 // CUALQUIER validador estándar (Ajv, check-jsonschema, jsonschema de Python...) y no solo tools/validar-esquema-json.mjs.
 //
 // Sale de la misma fuente que el exportador: los nombres de campo del diccionario de tools/json-datos.mjs (CAMPOS) y las categorías de data/category-map.js,

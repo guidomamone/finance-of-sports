@@ -18,11 +18,11 @@
 // clubes. La pestaña Fuentes muestra el club que el visitante está mirando y
 // linkea acá para el listado completo.
 //
-// QUÉ SE MUESTRA Y QUÉ NO (Versión 127, después de que Guido revisara la
+// QUÉ SE MUESTRA Y QUÉ NO (después de que Guido revisara la
 // primera versión): una tabla de País, Equipo, Fuente y Notas. En Notas va
 // `publicNote` (escrita para un lector) más las salvedades que `sourceCaveats()`
 // deriva de los datos. NUNCA va `note`, que es la nota interna que una sesión le
-// deja a la siguiente: en la Versión 126 se publicaba tal cual y el visitante
+// deja a la siguiente: antes se publicaba tal cual y el visitante
 // terminaba leyendo rutas del disco de Guido. Ver `data/sources-view.js`.
 //
 // Las etiquetas de tipo y nivel tampoco viven acá: salen del mismo
@@ -84,7 +84,7 @@ const fmtFx = fx => fx.toLocaleString('es-AR', {
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // El ejercicio se nombra como en el resto del sitio: año suelto si ESE ejercicio
-// cierra en diciembre, rango si es temporada (to-do 177: por ejercicio, no por club).
+// cierra en diciembre, rango si es temporada (por ejercicio, no por club).
 function etiquetaEjercicio(year, club, ym) {
   return esCalendario(ym, club, year) ? String(year) : `${year - 1}/${year}`;
 }
@@ -101,14 +101,14 @@ function notaPlegable(texto) {
         <details><summary>Ver más</summary>${esc(texto.slice(corte).trim())}</details>`;
 }
 // ============================================================================
-// DE UNA PÁGINA A N+1 (Versión 162, punto 2 del plan de escala).
+// DE UNA PÁGINA A N+1 (punto 2 del plan de escala).
 // Hasta acá esto generaba UN `fuentes.html` con la fila de todos los documentos de
 // todos los clubes: 86 KB con ~90 documentos, y crecía con cada balance nuevo.
 // Ahora genera:
 //   - `fuentes/<clubId>.html`, una por club, con SOLO sus documentos.
 //   - `fuentes.html`, que pasa a ser el ÍNDICE: nombre de cada club, cuántos
 //     documentos tiene y el link a su página. Sin contenido de fuentes adentro.
-//   - (el `sitemap.xml` lo escribe tools/generate-club-pages.js desde el to-do 241.)
+//   - (el `sitemap.xml` lo escribe tools/generate-club-pages.js.)
 // La ganancia principal es la misma razón por la que `fuentes.html` existe (ver la
 // cabecera de este archivo): una URL propia es rankeable. Hasta acá los 41 clubes
 // compartían una sola, así que ninguno podía rankear por su nombre.
@@ -235,7 +235,7 @@ function construir(api) {
   // LA FECHA DEL PIE ES LOCAL, NO UTC. Acá decía
   // `new Date().toISOString().slice(0, 10)`, y `toISOString()` es SIEMPRE UTC: generar
   // estas páginas a las 20:24 de un 21 en EDT (o a las 21:24 en Argentina) escribía
-  // "Generado desde los datos del sitio el 2026-09-22", un día que todavía no pasó para
+  // "Generado desde los datos del sitio", un día que todavía no pasó para
   // quien la lee. Le pasaba a cualquier corrida nocturna, o sea a buena parte de las
   // sesiones de este proyecto, y el síntoma es especialmente feo acá: es la página cuyo
   // argumento entero es que sus datos son verificables.

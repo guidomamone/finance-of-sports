@@ -1,7 +1,7 @@
 // ============================================================================
 // tools/datos-sitio.mjs — dos utilidades que usan las etapas del pipeline: leer los datos del sitio (loadSite) y leer un importe impreso
 // (parseNumber). Vivían en tools/proponer-carga.mjs, el camino viejo de la carga (selección de filas por palabras y su backtest), que se
-// archivó en el to-do 218: hoy toda carga sale de la verificación (cargar.mjs, Generados/.../<doc>.verificacion.json).
+// archivó: hoy toda carga sale de la verificación (cargar.mjs, Generados/.../<doc>.verificacion.json).
 //
 // USO:
 //   import { loadSite, parseNumber } from './datos-sitio.mjs';

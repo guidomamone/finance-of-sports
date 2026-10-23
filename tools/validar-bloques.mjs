@@ -71,7 +71,7 @@ export async function validar(pdf, { registro, ejecutar = false, rehacer = false
   const L = readFileSync(mdAbs, 'utf8').split('\n');
   const ids = [...new Set([...ub.estado, ...ub.notas_ingresos, ...ub.notas_gastos])].filter((id) => ub.bloques[id]);
   const paginas = [...new Set(ids.map((id) => ub.bloques[id].pagina))].sort((a, b) => a - b);
-  // PDF HÍBRIDO (to-do 160 parte 2, excepción pedida por Guido aunque sea un solo caso): en un PDF digital, una página SIN texto propio (menos
+  // PDF HÍBRIDO (excepción pedida por Guido aunque sea un solo caso): en un PDF digital, una página SIN texto propio (menos
   // de MIN_TEXTO caracteres) es una imagen, y comparar contra su texto vacío deja todos sus números "sin confirmar". Esa página se valida
   // como en un escaneo: Gemini lee la imagen y, si la rechaza (RECITATION: el falso positivo de copyright con documentos financieros),
   // Claude (segundaLectura). Si ninguno la lee, sus números quedan con sinSegunda y decide la etapa 6 (verificar.mjs, avisarRegistro).
@@ -79,7 +79,7 @@ export async function validar(pdf, { registro, ejecutar = false, rehacer = false
   // 200 dpi) dentro de un PDF de Acrobat; los 120 números de la tabla quedaban sin confirmar. Medido: 1 de 632 páginas de 99 PDFs digitales.
   const textos = new Map(); const hibridas = [];
   if (modo === 'digital') for (const n of paginas) { try { const tx = textoPagina(pdfAbs, n); textos.set(n, tx); if (tx.replace(/\s/g, '').length < MIN_TEXTO) hibridas.push(n); } catch { textos.set(n, null); } }
-  // (to-do 179, Genoa 2023, pág. 13 del visor) ESCALÓN "página con texto que no trae sus números": en un PDF digital, la página del estado
+  // (Genoa 2023, pág. 13 del visor) ESCALÓN "página con texto que no trae sus números": en un PDF digital, la página del estado
   // tiene el texto del encabezado y del pie pero la TABLA es una imagen (más de MIN_TEXTO caracteres, así que no cuenta como híbrida), y sus
   // 71 números quedaban "sin confirmar" con la etapa 6 cerrada al centavo. Compuerta única, la misma de verifyNumbers() para un documento
   // entero: si de los números de los bloques de la página (de 4 cifras o más) menos del 25% están en su texto propio (y son al menos 10),
@@ -107,7 +107,7 @@ export async function validar(pdf, { registro, ejecutar = false, rehacer = false
         const num = normNum(m[0]); if (num.length < 4) continue; // números chicos no se validan acá (lo cubre la suma); los años SÍ (4 cifras)
         if (segunda && segunda.has(num)) { confirmados++; continue; }
         const parecido = segunda ? [...segunda].find((x) => unDigito(x, num)) : null;
-        // ESCALÓN 2b (to-do 160 parte 1, ok de Guido; Admin/PIPELINE.md, etapa 4): un 1900-2099 escrito tal cual en la FILA DE ENCABEZADO de una tabla (la línea siguiente
+        // ESCALÓN 2b (ok de Guido; Admin/PIPELINE.md, etapa 4): un 1900-2099 escrito tal cual en la FILA DE ENCABEZADO de una tabla (la línea siguiente
         // es el separador "| --- |") es un año de columna, no un importe. NO se confirma ni se saca de la lista: solo se marca `propuesta`. La
         // compuerta está en avisarRegistro() de verificar.mjs (la línea no es la de ninguna fila que se carga). Caso: Napoli 2024, L276
         // "| C PROVENTI ED ONERI FINANZIARI | al 30.06.2024 | al 30.06.2023 |": Gemini dejó el encabezado vacío y "2023" era el único de 567

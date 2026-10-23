@@ -4,7 +4,7 @@
 //
 // POR QUÉ UN MÓDULO APARTE: categorizar-claude.mjs y localizar-extraer.mjs (el test) tenían cada una su copia del pedido HTTP. Las tools nuevas
 // usan esta, con las lecciones ya aprendidas:
-//   - TOPE DE TIEMPO por llamada (5 minutos por defecto). Sin tope, una conexión colgada frena la corrida para siempre (el 2026-09-30 la Mac se
+//   - TOPE DE TIEMPO por llamada (5 minutos por defecto). Sin tope, una conexión colgada frena la corrida para siempre (la Mac se
 //     durmió a mitad de una corrida y quedaron huecos de 46 y 125 minutos).
 //   - REINTENTOS solo para lo transitorio (red, 429, 5xx), con espera creciente; un 4xx de pedido mal armado no se reintenta.
 //   - `fallbacks: "default"`: si un clasificador de seguridad rechaza el pedido (stop_reason "refusal"), la API lo reintenta con otro modelo.
@@ -19,7 +19,7 @@
 //   import { llamarClaude } from './claude-llamada.mjs';
 //   const r = await llamarClaude({ system, user, schema, tarea: 'localizar', pdf });   // r = { datos, costo } o { error, costo } o { pendiente }
 //
-// MODO BATCH (Batch API de Anthropic, mitad de precio; ok de Guido 2026-10-17). Se prende con la variable FOS_CLAUDE_BATCH=1, que pone
+// MODO BATCH (Batch API de Anthropic, mitad de precio; ok de Guido). Se prende con la variable FOS_CLAUDE_BATCH=1, que pone
 // tools/lote-batch.mjs y heredan los subprocesos del lote. Mismo modelo y mismo pedido; cambia solo cómo se manda:
 //   - si la respuesta de ESE pedido (huella sha1 del cuerpo = custom_id) ya volvió de la Batch API, está en Generados/_cache/claude-batch.jsonl
 //     y se devuelve como si acabara de llegar (mismo registro en claude-api.jsonl, con el costo x0,5 y `batch: true`);

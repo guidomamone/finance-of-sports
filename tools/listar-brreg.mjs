@@ -1,5 +1,5 @@
 // Lista qué ejercicios publica el Regnskapsregisteret (Noruega) para unas entidades, SIN bajar nada:
-// un HEAD por <orgnr>/<año> a la URL de "kopi" (200 = hay PDF, 404 = no hay). Prueba del to-do 315.
+// un HEAD por <orgnr>/<año> a la URL de "kopi" (200 = hay PDF, 404 = no hay).
 // Uso: node tools/listar-brreg.mjs [desde] [hasta]   (default 2008 2025). Salida: Markdown a stdout.
 const ENTIDADES = [
   ['Molde', 'Molde Fotballklubb FLI', '942562241'],

@@ -182,7 +182,7 @@ export function paginaAMd(pdf, pag, metodo = 'columnas') {
     for (const r of R) {
       let { etiqueta, importes } = partir(r);
       const y0 = Math.min(...r.ws.map((w) => w.y0)); const y1 = Math.max(...r.ws.map((w) => w.y1)); const h = y1 - y0;
-      // ETIQUETA PARTIDA EN DOS RENGLONES (Versión 400, escalera con compuerta, pedido de Guido):
+      // ETIQUETA PARTIDA EN DOS RENGLONES (escalera con compuerta, pedido de Guido):
       //   ESCALÓN 0  el renglón tal cual
       //   ESCALÓN 1  se une con el renglón de texto inmediatamente de arriba, SOLO si la COMPUERTA dice que es su continuación: el de
       //              arriba termina en un conector ("RECEITA LÍQUIDA DAS" / "ATIVIDADES") o este empieza en minúscula ("Despesas com futebol"
@@ -223,7 +223,7 @@ function reemplazarPaginas(md, nuevas) {
 
 // ¿Hay que rearmar este documento? (lo usa lote.mjs). Sí si la etapa 4 dijo que el .md no coincide con el texto propio del PDF y todavía no
 // se rearmó (el .md trae la marca). Páginas: las de los números no confirmados; si el .md casi no tiene nada en común con el PDF, todas.
-// Devuelve { paginas, metodo } o null. ESCALERA DEL REARMADO (Versión 397, pedido de Guido: "una escalera en vez de cambiarlo para todos"):
+// Devuelve { paginas, metodo } o null. ESCALERA DEL REARMADO (pedido de Guido: "una escalera en vez de cambiarlo para todos"):
 //   ESCALÓN 0  método "columnas" (cortes verticales en toda la página) — el .md todavía no se rearmó
 //   ESCALÓN 1  método "regiones" (cortes alternados) — el .md ya se rearmó con "columnas" y la etapa 6 SIGUE sin cerrar el resultado
 //              impreso (Goiás 2010: el balance de arriba y el estado de abajo tienen columnas en lugares distintos)
@@ -279,7 +279,7 @@ export function paginasARearmar(pdfRel, mdRel, registroDoc = null) {
     const pu = resolve(ROOT, derivado(mdRel, '.ubicacion.json', { crear: false }));
     if (existsSync(pu)) { const u = JSON.parse(readFileSync(pu, 'utf8')); const elegidos = new Set([...(u.estado || []), ...(u.notas_ingresos || []), ...(u.notas_gastos || [])]); o.noConfirmados = (o.noConfirmados || []).filter((x) => !x.bloque || elegidos.has(x.bloque)); }
   } catch { /* .ubicacion.json ilegible: como antes */ }
-  // "texto parcial" (Versión 395, medido en UC 2015: PDF híbrido, los estados en imagen) NO alcanza para rearmar todo: ahí manda la lista de
+  // "texto parcial" (medido en UC 2015: PDF híbrido, los estados en imagen) NO alcanza para rearmar todo: ahí manda la lista de
   // números no confirmados, y una página en imagen no tiene texto propio que usar (se descarta abajo).
   const casiNada = /no coincide con casi nada del \.md|solo tiene el \d+% de los números del PDF/.test(m);
   const digitos = /casi iguales a una del PDF pero con un dígito distinto|el PDF trae texto parcial/.test(m) && (o.noConfirmados || []).length > 0;

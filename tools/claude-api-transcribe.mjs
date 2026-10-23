@@ -47,7 +47,7 @@ import { execFileSync, spawnSync } from 'node:child_process';
 
 const MODEL = 'claude-sonnet-5-5';
 // Precios de la API de Anthropic para claude-sonnet-5-5 (ver la skill claude-api de este proyecto,
-// cacheada 2026-09-25): $2/$10 por millón de tokens de entrada/salida.
+// cacheada): $2/$10 por millón de tokens de entrada/salida.
 const PRICE_IN_PER_MTOK = 2.0;
 const PRICE_OUT_PER_MTOK = 10.0;
 const MAX_RETRIES = 4;

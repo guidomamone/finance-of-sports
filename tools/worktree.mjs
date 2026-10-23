@@ -36,7 +36,7 @@ const GENERADO = (f) => f === 'index.html' || f === 'fuentes.html' || f === 'sit
   || /^data\/[a-z]{2}\/[a-z0-9-]+-data\.js$/.test(f); // el -data.js se genera de su JSON: un conflicto ahí se resuelve con el JSON mergeado y generar-data
 const DOCS_PRINCIPAL = ['Admin/TODO.md', 'Admin/CHANGELOG.md', 'Admin/ESTADO.md'];
 // Lo que escribe cada corrida de lote.mjs o pipeline.mjs para sus propias etapas: cada carpeta tiene el suyo. Enlazado a la principal, dos
-// lotes que corrían a la vez en worktrees distintos se pisaban la lista de la etapa 7 (2026-10-19: el lote 103 categorizó dos años de Basel y
+// lotes que corrían a la vez en worktrees distintos se pisaban la lista de la etapa 7 (el lote 103 categorizó dos años de Basel y
 // la carga de Basel se quedó sin categorizar).
 const ESTADO_DE_CORRIDA = ['Admin/registros/.lote-lista-actual.txt', 'Admin/registros/.lote-primer-anio.txt',
   'Admin/registros/.pipeline-lista-actual.txt', 'Admin/registros/.pipeline-lista-jev.txt', 'Admin/registros/.candado.lock'];

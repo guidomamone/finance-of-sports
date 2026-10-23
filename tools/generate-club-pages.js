@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/generate-club-pages.js — to-do 241: UN LINK PROPIO POR CLUB Y POR LIGA, con título, descripción y tarjeta al compartir.
+// tools/generate-club-pages.js — UN LINK PROPIO POR CLUB Y POR LIGA, con título, descripción y tarjeta al compartir.
 //
 // POR QUÉ. `index.html` no tiene etiquetas Open Graph y su <title> es el genérico; el club y la liga se eligen con JS. WhatsApp, Telegram y
 // Google leen el HTML sin ejecutar JS: todo link mostraba la misma tarjeta. El plan, con el mockup y las decisiones de Guido

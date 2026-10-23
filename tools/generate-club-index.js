@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/generate-club-index.js — genera, desde los propios datos, la sección
-// "QUÉ ES REAL POR CLUB" de `Admin/ESTADO-clubes.md` (hasta la Versión 202 se llamaba "...Y QUÉ ES
-// PLACEHOLDER, POR CLUB" — desde la Versión 138 no queda ningún ejercicio placeholder cargado,
-// así que esa mitad del título describía algo que ya no existe; ver to-do 54).
+// "QUÉ ES REAL POR CLUB" de `Admin/ESTADO-clubes.md` (Antes se llamaba "...Y QUÉ ES
+// PLACEHOLDER, POR CLUB" — ya no queda ningún ejercicio placeholder cargado,
+// así que esa mitad del título describía algo que ya no existe).
 //
 // DESDE LA VERSIÓN 239 el destino es `Admin/ESTADO-clubes.md`, un archivo propio, y ya
 // no `Admin/ESTADO.md`: el bloque pesaba 12,35 KB de los 55,98 KB de ese archivo (161 clubes),
 // cerca del umbral de 60 KB que usa `tools/audit.js` (a ese ritmo, ~218 clubes). Mismo mecanismo
-// que sacó la to-do list de `index.html` en la Versión 138: el bloque generado se muda a un
+// que sacó la to-do list de `index.html`: el bloque generado se muda a un
 // archivo propio y queda un puntero de una línea donde vivía.
 //
 // EL PROBLEMA QUE RESUELVE (la "fuga 1" del mapa de procesos): esa sección se
@@ -54,7 +54,7 @@ const { cierreEjercicio, cierreDelClub, esCalendario } = require('./cierre-ejerc
 
 const ROOT = path.resolve(__dirname, '..');
 // el destino pasó a ser Admin/ESTADO.md (hasta la 137 esta sección vivía dentro del
-// comentario HTML de index.html). Versión 239: el destino es Admin/ESTADO-clubes.md, un archivo
+// comentario HTML de index.html). Hoy el destino es Admin/ESTADO-clubes.md, un archivo
 // propio — ver el comentario de cabecera del script.
 const ESTADO = path.join(ROOT, 'Admin/ESTADO-clubes.md');
 const CLUB_INDEX_FILE = path.join(ROOT, 'data/club-index.js');
@@ -243,7 +243,7 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
       // placeholder, para que `y === yrs.length` siempre y el índice sea un espejo
       // fiel del dato. Filtrar los que no se pueden mostrar es decisión de quien
       // consume (el selector ya sabe que 'placeholder' y 'pending_official' no son
-      // navegables, mismo criterio que usaba `goToFinanzasYear()`, borrada en la Versión 184).
+      // navegables, mismo criterio que usaba `goToFinanzasYear()`, borrada).
       //
       // SOBRE EL PESO, que es la objeción obvia a meter esto en un archivo que se
       // baja en cada visita: son ~30 bytes por ejercicio, o sea ~2,5 KB para los 85

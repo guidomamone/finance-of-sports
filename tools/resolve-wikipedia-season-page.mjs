@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/resolve-wikipedia-season-page.mjs — la pieza que faltaba en el
-// pipeline del to-do 95: tools/fetch-club-league-reference.mjs necesita el
+// pipeline: tools/fetch-club-league-reference.mjs necesita el
 // TÍTULO EXACTO de la página de temporada en Wikipedia, y esa convención
 // varía por liga ("2016 Categoría Primera A season" vs "2019 Eliteserien" vs
 // "2025–26 Premier League", sin una fórmula única entre países). En vez de

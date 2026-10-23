@@ -2,9 +2,9 @@
 // ============================================================================
 // tools/estado.mjs — EL tablero del inventario: dónde está cada PDF, qué le falta, con qué comando se avanza y cuánto cuesta. Gratis.
 //
-// POR QUÉ EXISTE (pedido de Guido, 2026-09-30: "tenemos demasiados estados abiertos y me marea. Pasame un código para que la terminal
+// POR QUÉ EXISTE (pedido de Guido: "tenemos demasiados estados abiertos y me marea. Pasame un código para que la terminal
 // pueda hacer esa consulta siempre que quiera"). Los estados vienen de Admin/registros/transcripciones-estado.jsonl (lo escribe
-// tools/inventario-transcripciones.mjs) y de lo que las etapas 3-8 dejaron en Generados/ (tools/etapa-doc.mjs, Versión 448: las etapas del
+// tools/inventario-transcripciones.mjs) y de lo que las etapas 3-8 dejaron en Generados/ (tools/etapa-doc.mjs: las etapas del
 // proceso nuevo, las mismas que muestra el inventario).
 //
 // USO:
@@ -15,7 +15,7 @@
 //   node tools/estado.mjs --logica [grupo]       qué tiene de PROPIO cada grupo de países en cada etapa (tools/grupos-pais.mjs), con el
 //                                                ejemplo real donde se vio; sin grupo, todos. Grupos: argentina, brasil, latam, iberica,
 //                                                britanica, germanica, benelux, nordica, este, mediterranea, asia, otros.
-// DESGLOSE POR GRUPO DE PAÍSES (pedido de Guido, 2026-09-30: "para los pasos relevantes, breakdown de los números parciales según el cluster de
+// DESGLOSE POR GRUPO DE PAÍSES (pedido de Guido: "para los pasos relevantes, breakdown de los números parciales según el cluster de
 // país"): debajo de cada estado con PDFs, una línea con cuántos son de cada grupo (siglas: ARG, BRA, LAT, IBE, GBR, GER, BNL, NOR, EST, MED,
 // ASI, OTR; `node tools/grupos-pais.mjs` dice qué países tiene cada uno).
 // ============================================================================
@@ -55,12 +55,12 @@ if (args.includes('--actualizar') || !existsSync(regPath) || registroViejo()) {
   console.log('listo.');
 }
 // --logica: solo imprime la lógica por grupo y sale (no necesita el registro).
-// --escalones (Versión 525, to-do 140(h)): en qué escalón salió cada dato de las etapas 4 y 8 (tools/escalones.mjs).
+// --escalones: en qué escalón salió cada dato de las etapas 4 y 8 (tools/escalones.mjs).
 if (args.includes('--escalones')) { await import('./escalones.mjs'); process.exit(0); }
 if (args.includes('--logica')) {
   const pedido = flagVal('--logica'); const lista = pedido && !pedido.startsWith('--') ? GRUPOS.filter((g) => g.id === pedido) : GRUPOS;
   if (!lista.length) { console.error(`Grupo desconocido: ${pedido}. Grupos: ${GRUPOS.map((g) => g.id).join(', ')}`); process.exit(1); }
-  // Las etapas del proceso nuevo (Admin/PIPELINE.md); hasta la Versión 466 eran las del viejo (2-6, con "4. Preparar").
+  // Las etapas del proceso nuevo (Admin/PIPELINE.md); Antes eran las del viejo (2-6, con "4. Preparar").
   const ETAPA = { 2: '2. Transcribir', 3: '3. Localizar (qué bloques, escala, perímetro)', 4: '4. Validar', 5: '5. Extraer', 6: '6. Verificar', 7: '7. Categorizar', 8: '8. Cargar' };
   for (const g of lista) {
     console.log(`\n${g.corto} ${g.nombre.toUpperCase()}  (${g.paises.join(', ') || 'el resto'})\n  ${g.marco}`);
@@ -76,7 +76,7 @@ if (args.includes('--logica')) {
 const R = readFileSync(regPath, 'utf8').trim().split('\n').map((l) => JSON.parse(l)).filter((e) => !dir || e.pdf.startsWith(dir.replace(/\/$/, '') + '/'));
 const edad = Math.round((Date.now() - statSync(regPath).mtimeMs) / 60000);
 
-// ETAPAS DEL PROCESO NUEVO, EN ORDEN (Versión 448, aprobado por Guido el 2026-10-04: el tablero con las etapas de Admin/PIPELINE.md,
+// ETAPAS DEL PROCESO NUEVO, EN ORDEN (aprobado por Guido: el tablero con las etapas de Admin/PIPELINE.md,
 // "El proceso nuevo"; hasta acá usaba las secciones del proceso viejo, "4. Preparar lista de rubros", y contaba distinto que el inventario).
 // En qué etapa está cada documento lo decide tools/etapa-doc.mjs, la MISMA función que usa el resumen del inventario. Cada fila: clave de
 // etapa-doc, qué significa, qué le falta, con qué se avanza, US$ por PDF (número, o función del PDF: localizar + extraer estimado, V446).
@@ -175,7 +175,7 @@ const imprimirEtapa = ([etapa, filas]) => {
     if (k === 'e8-frenado' && n) { const m = {}; for (const e of docs) { const x = ETAPA_R.get(e.pdf).motivo; m[x] = (m[x] || 0) + 1; } console.log(`         motivos: ${Object.entries(m).map(([a, b]) => `${a} ${b}`).join(' · ')}`); }
   }
 };
-// PDFs ROTOS (pedido de Guido, 2026-10-01: "cuando se descarga un PDF que no es, en fuentes se lo da por caso cerrado pero en realidad debe
+// PDFs ROTOS (pedido de Guido: "cuando se descarga un PDF que no es, en fuentes se lo da por caso cerrado pero en realidad debe
 // volver"): se listan con el archivo de fuentes que hay que reabrir, para que vuelvan a la etapa 1.
 const rotos = R.filter((e) => clave(e) === 'e1-roto');
 const reabrir = () => { if (!rotos.length) return; console.log('     Reabrir el sourcing (el archivo de fuentes todavía puede darlo por conseguido):'); for (const e of rotos.slice(0, 10)) { const [, pais, club] = e.pdf.split('/'); console.log(`       ${e.pdf}  ->  fuentes/${pais}/${club}.md`); } };
@@ -185,7 +185,7 @@ for (const k of Object.keys(cuenta).filter((k) => !conocidas.has(k))) console.lo
 for (const [pdf, p] of PARCIALES) console.log(`         ${pdf.replace(/^Clubes\//, '')}: cubre ${p.cubre}; falta ${p.falta}`);
 console.log(`\n  Costo estimado para llevar todo hasta "propuesta de carga": ~US$ ${Math.round(total)} (API; sesión de Claude: 0 tokens)`);
 // PROCESO VIEJO, solo como referencia: los .rubros.json que armó pipeline.mjs (sin `origen`) no cuentan
-// como avance del proceso nuevo. El proceso viejo se retiró de pipeline.mjs en la Versión 529: estos son los que quedaron de antes.
+// como avance del proceso nuevo. El proceso viejo se retiró de pipeline.mjs: estos son los que quedaron de antes.
 const viejos = R.filter((e) => !e.cargado && e.md && rubrosViejo(e)).length;
 if (viejos) console.log(`  Referencia, proceso viejo: ${viejos} documentos sin cargar tienen lista de rubros de pipeline.mjs (no cuenta como avance acá).`);
 // ÚLTIMA PROPUESTA DE CARGA (Admin/registros/cargar-ultimo.jsonl, lo escribe `cargar.mjs --lista`, también desde lote.mjs).

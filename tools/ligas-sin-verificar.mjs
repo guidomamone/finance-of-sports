@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/ligas-sin-verificar.mjs — LA LIGA DE LOS EJERCICIOS CARGADOS QUE data/club-leagues/ TIENE EN null (to-do 273, pedido de Guido:
+// tools/ligas-sin-verificar.mjs — LA LIGA DE LOS EJERCICIOS CARGADOS QUE data/club-leagues/ TIENE EN null (pedido de Guido:
 // "completa"; sin liga no hay página de temporada de dónde leer estadio y sponsor, y el ejercicio no entra en Ligas).
 //
 // CÓMO. Para cada ejercicio cargado con la liga en null, sin fila o "liga-no-catalogada": las ligas CANDIDATAS son las que data/club-leagues/

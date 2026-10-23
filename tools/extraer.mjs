@@ -81,7 +81,7 @@ Por fila:
 Además: la escala de CADA bloque (unidades, miles, millones; pueden ser distintas entre el estado y las notas) con la frase que lo dice; la línea y el importe del total de ingresos, del total de gastos y del resultado del ejercicio si están impresos (si no, null).
 No sumes, no conviertas, no inventes. Si algo no se lee o es ambiguo, dejalo afuera y escribilo en dudas (una frase cada una, con la línea): lo va a mirar una persona. Cada duda: pregunta (UNA pregunta concreta que una persona contesta con sí o no mirando el PDF: qué tabla o fila, qué importe, qué se haría; ej. "¿Se deja afuera de la carga el cuadro 'Venta de jugadores al 31-12-2024' (L4070-L4072)?"), propuesta (sí o no: lo que harías vos), tema (uno de: usar-cuadro-por-segmento, cuadro-duplicado, cuadro-de-otro-anio, perimetro, escala, columna, fila-ilegible, otro), renglon (la etiqueta del renglón al que afecta, tal cual, o vacío), texto (por qué, una frase, con la línea si la hay), bloques (los ids que nombra) y afecta_carga: true SOLO si resolverla puede cambiar qué filas se cargan o un importe que se carga en más que el redondeo. NO son dudas (o van con afecta_carga false): una diferencia de 1 unidad impresa entre dos tablas (es redondeo), un total que el documento no imprime (se resuelve sumando), un cuadro de detalle de una fila que ya está en otra tabla.`;
 
-// LAS NOTAS HACEN DE ESTADO (Versión 360, etapa 3 escalón 2; ver localizar.mjs PEDIDO_NOTAS_COMO_ESTADO). Se agrega SOLO si localizar marcó
+// LAS NOTAS HACEN DE ESTADO (etapa 3 escalón 2; ver localizar.mjs PEDIDO_NOTAS_COMO_ESTADO). Se agrega SOLO si localizar marcó
 // estadoDesdeNotas (camino de error). Cada nota es un renglón del estado: su etiqueta es el TÍTULO de la nota (los totales se llaman todos
 // "TOTAL" y detalla_a necesita una etiqueta única), su importe el del TOTAL impreso; sus filas lo desglosan.
 export const INSTRUCCION_NOTAS_COMO_ESTADO = `ESTE DOCUMENTO NO TIENE ESTADO DE RESULTADOS: los bloques "del estado" son NOTAS. Armá el estado con ellas:
@@ -93,7 +93,7 @@ export const INSTRUCCION_NOTAS_COMO_ESTADO = `ESTE DOCUMENTO NO TIENE ESTADO DE 
 // REINTENTO: `reintento` = la lista de desgloses que no sumaron en la verificación anterior ({renglon, suma, objetivo}). Se le
 // agrega a la IA una instrucción SOLO en ese caso (decisión de Guido: las reglas extra son para cuando hay errores, no para el camino limpio).
 // EXTRAER SIN LOCALIZAR TODAVÍA: no se conocen los bloques, así que el ensayo usa lo que costó extraer en ESE club (mediana de
-// sus llamadas en Admin/registros/api/claude-api.jsonl); sin historia, el techo de las extracciones medidas (percentil 90). Medido el 2026-10-10
+// sus llamadas en Admin/registros/api/claude-api.jsonl); sin historia, el techo de las extracciones medidas (percentil 90). Medido
 // sobre 389 extracciones: mediana US$ 0,20, percentil 90 US$ 0,33, máximo 0,72. Antes era US$ 0,07 fijo: Juventus costó US$ 0,18-0,34 por año.
 const TECHO_EXTRAER = 0.33; const MEDIANA_EXTRAER = 0.20;
 let _costosExtraer = null;
@@ -150,7 +150,7 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
     r = { ...r, costo: (r.costo || 0) + costo0 };
   }
   if (r.error) return { error: r.error, costo: r.costo };
-  const datos = { pdf, md, mdSha1: shaMd(md), ubicacionSha1: huellaUbicacion(ub), modelo: idModelo, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos }; // ubicacionSha1: to-do 237 ai (cache-al-dia.mjs, ubicacionAlDia)
+  const datos = { pdf, md, mdSha1: shaMd(md), ubicacionSha1: huellaUbicacion(ub), modelo: idModelo, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos }; // ubicacionSha1 (cache-al-dia.mjs, ubicacionAlDia)
   // solo en una extracción nueva (no en la medición con otro modelo) y nunca en un ejercicio que ya está en el sitio: ahí solo dice qué habría reemplazado
   if (!modelo) { const cs = aplicarCuadroSobrante(datos, { ub, L, pdf, cierre: e.periodo?.cierre || null, anio: ajusteDe(pdf, 'anio')?.valor ?? null }); for (const x of cs.aplicados) console.log('  cuadro sobrante (237 al): ' + x); for (const x of cs.saltados) console.log('  cuadro sobrante (237 al) se salta: ' + x); }
   writeFileSync(out, JSON.stringify(datos, null, 1));

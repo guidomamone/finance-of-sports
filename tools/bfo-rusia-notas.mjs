@@ -3,7 +3,7 @@
 // tools/bfo-rusia-notas.mjs — RUSIA, ESCALÓN 2: abrir los renglones del formulario 2 (2110 ingresos, 2340 otros ingresos, 2350 otros
 // gastos, 2120+2210+2220 costos) con las tablas de las NOTAS EXPLICATIVAS (`<año>-poyasneniya.md`, transcriptas en el lote 60).
 //
-// POR QUÉ (Versión 646, ok de Guido el 2026-10-09: "si hay info útil, usémosla, no la descartes por no ser un json"). El escalón 1
+// POR QUÉ (ok de Guido: "si hay info útil, usémosla, no la descartes por no ser un json"). El escalón 1
 // (tools/bfo-rusia.mjs) carga los ingresos del fútbol en un solo renglón (2110) y deja "otros ingresos" (2340) entero, que en Rusia suele ser
 // más grande que los ingresos (aporte del dueño, venta de jugadores). Las notas de varios clubes los abren: Krasnodar 2025, tabla 12
 // "Структура продаж по видам": sponsors 1.815.143, TV 1.199.719, publicidad 914.103, merchandising 525.112, entradas 519.266, abonos

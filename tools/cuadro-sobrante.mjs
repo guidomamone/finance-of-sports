@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/cuadro-sobrante.mjs — UN CUADRO QUE LOCALIZAR ELIGIÓ Y EXTRAER NO USÓ ABRE UN RENGLÓN DEL ESTADO (to-do 237 al, diseño aprobado por la Auditora 4).
+// tools/cuadro-sobrante.mjs — UN CUADRO QUE LOCALIZAR ELIGIÓ Y EXTRAER NO USÓ ABRE UN RENGLÓN DEL ESTADO (diseño aprobado por la Auditora).
 // Gratis, sin IA. Lo llama extraer.mjs DESPUÉS de la respuesta del modelo, solo en extracciones nuevas; el .filas.json guardado no se toca.
 //
 // POR QUÉ. Mafra 2023-24: localizar eligió el Anexo 3 de la Liga (b28/b29, «Contas Anuais ED*-1») y extraer lo dejó afuera («duplica el estado con otra estructura»).

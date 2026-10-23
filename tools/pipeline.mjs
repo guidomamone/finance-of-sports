@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/pipeline.mjs — la ETAPA 2 (transcribir y validar); hasta la Versión 528 era el comando único de punta a punta
+// tools/pipeline.mjs — la ETAPA 2 (transcribir y validar); Antes era el comando único de punta a punta
 //:
 //
 //     node tools/pipeline.mjs --ejecutar
@@ -22,7 +22,7 @@
 //                          aritmética, y "reserva" como último recurso.
 //                     Fallos por crédito/límite: espera y reintenta el mismo motor; tras 3 seguidos corta la corrida (`reintentar`).
 //   MARCAR            registro Admin/registros/transcripciones-estado.jsonl (se regenera solo); historial en Admin/registros/transcripciones-verificaciones.jsonl.
-// (Hasta la Versión 528 hacía además la preparación para Jev y la categorización con Jev y Claude: ver "PROCESO VIEJO, RETIRADO".)
+// (Antes hacía además la preparación para Jev y la categorización con Jev y Claude: ver "PROCESO VIEJO, RETIRADO".)
 //
 // COSTO medido (piloto C, 10 PDFs): ~US$ 0,20 por documento; PDF con texto US$ 0,08-0,18 (casi todo Mistral); escaneo US$ 0,13-0,21;
 // un escaneo malo (Real Madrid 2005) ~US$ 1. `node tools/gasto.mjs --lista <lista>` da el costo real de una corrida.
@@ -38,7 +38,7 @@
 //   node tools/pipeline.mjs --ejecutar --dir Clubes/Chile --concurrencia 4
 //   node tools/pipeline.mjs --ejecutar --lista Admin/mi-lista.txt
 //   node tools/pipeline.mjs --ejecutar --max-paginas 0       # incluye los documentos de más de 100 páginas (caros)
-//   (--sin-jev, --solo-preparar y --repreparar se aceptan pero no hacen nada desde la Versión 529: ver "PROCESO VIEJO, RETIRADO" abajo)
+//   (--sin-jev, --solo-preparar y --repreparar se aceptan pero no hacen nada: ver "PROCESO VIEJO, RETIRADO" abajo)
 //   node tools/pipeline.mjs --resumen                # solo el estado actual del inventario, sin correr nada
 // ============================================================================
 
@@ -64,7 +64,7 @@ tomarCandado('pipeline.mjs', { lista: listFile || dirFilter || null, modo: EXECU
 const concurrency = flagVal('--concurrencia') || '4';
 // Tope de páginas por documento (0 = sin tope). Un informe anual de 230 páginas (Borussia Dortmund) cuesta unas 10 veces
 // más que un balance de 25 y se lleva el tiempo de toda la corrida: por defecto quedan para el final, listados aparte.
-// PROCESO VIEJO, RETIRADO (Versión 529, to-do 142(c), aprobado por Guido el 2026-10-05): esta tool hacía además la preparación para Jev
+// PROCESO VIEJO, RETIRADO (aprobado por Guido): esta tool hacía además la preparación para Jev
 // (prepare-onboarding.mjs, la lista de rubros, la marca listo-para-jev / sin-rubros) y la categorización con Jev y Claude. El proceso nuevo
 // cargó 6 clubes enteros sin eso: la lista de rubros y la marca las pone verificar.mjs (etapa 6) y la categorización es la etapa 7 del lote.
 // La preparación vieja además era una trampa: verificar.mjs no pisa una marca listo-para-jev ya puesta, así que su lista de rubros vieja
@@ -144,7 +144,7 @@ if (limit > 0 && selected.length > limit) {
 }
 if (grandes.length) console.log(`\n${grandes.length} documento(s) de más de ${maxPages} páginas quedan para el final (usá --max-paginas 0 para incluirlos): ${grandes.slice(0, 4).map((e) => `${e.pdf.split('/').slice(-2).join('/')} (${e.paginas} pág.)`).join(', ')}${grandes.length > 4 ? ', ...' : ''}`);
 const toResolve = selected.filter(needsResolve);
-// CONTROL "SIN TABLAS" (lo único que queda de la preparación vieja, Versión 529): una transcripción vieja (no de Mistral) de 2+ páginas con
+// CONTROL "SIN TABLAS" (lo único que queda de la preparación vieja): una transcripción vieja (no de Mistral) de 2+ páginas con
 // menos de 5 renglones de tabla no sirve para sacar filas (etiquetas e importes en bloques separados): se marca `sin-tablas` y la corrida
 // siguiente la rehace con Mistral (una sola vez: formatoIntentado). Gratis. Corre sobre TODOS los validados que todavía no pasaron por el
 // lote (no entra en la selección ni en --limit: si no, ~660 validados le quitaban lugar a lo que hay que transcribir).

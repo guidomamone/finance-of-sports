@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/exportar-json.mjs — to-do 245. Lee data/<país>/*-data.js y escribe UN JSON por club con el esquema de Admin/mediciones/245-esquema.md.
+// tools/exportar-json.mjs — Lee data/<país>/*-data.js y escribe UN JSON por club con el esquema de Admin/mediciones/245-esquema.md.
 // Fase 2: es la MIGRACIÓN de una sola vez (JS -> JSON fuente en data/<país>/<id>.json). Desde que el JSON es la fuente ya no se usa: leería un JS
 // generado. Default: escribe en data/<país>/<id>.json (--salida <carpeta> para mirar sin tocar data/).
 //

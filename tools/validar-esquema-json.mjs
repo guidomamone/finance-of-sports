@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/validar-esquema-json.mjs — to-do 245, fase 1 (c). Valida los JSON de club contra el esquema de Admin/mediciones/245-esquema.md:
+// tools/validar-esquema-json.mjs — Valida los JSON de club contra el esquema de Admin/mediciones/245-esquema.md:
 // claves permitidas y obligatorias, tipos, años ordenados y sin repetir, source_id y management_id que existan, moneda ISO, fechas, importes finitos y
 // categorías que estén en data/category-map.js. Solo lectura.
 //
