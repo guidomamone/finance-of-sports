@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/acortar-cabecera.mjs — acorta la cabecera de una tool sin perder nada: deja el principio (el porqué y qué hace) y el USO, y el resto va TAL CUAL a
-// Admin/NOTAS-DE-TOOLS.md, en una sección con el nombre de la tool, con una línea que la cita (TODO 398). Solo toca comentarios.
+// Admin/NOTAS-DE-TOOLS.md, en una sección con el nombre de la tool, con una línea que la cita. Solo toca comentarios.
 //
 //   node tools/acortar-cabecera.mjs <tool.mjs …> | --todas [--cabeza 22] [--uso 12] [--escribir]
 //

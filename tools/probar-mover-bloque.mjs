@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// tools/probar-mover-bloque.mjs — la prueba de mover-bloque.mjs (TODO 379): rehace la mudanza del 368 (el bloque del costo de personal de caja-deuda.mjs,
+// tools/probar-mover-bloque.mjs — la prueba de mover-bloque.mjs: rehace la mudanza del 368 (el bloque del costo de personal de caja-deuda.mjs,
 // líneas 1245-1457 de la versión anterior a 2ac49ffb5f) sobre una copia y comprueba que el bloque es idéntico salvo `export` y que la tool partida
 // da, con tres comandos de --personal, EXACTAMENTE la misma salida que la copia sin partir. Usa tools/_prueba-*.mjs y los borra al terminar.
 // Uso: node tools/probar-mover-bloque.mjs (unos segundos; sale con 1 si algo falla).

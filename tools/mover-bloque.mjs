@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/mover-bloque.mjs — `fos mover`: muda un bloque de líneas de una tool a un módulo nuevo SIN cambiarlo (TODO 379, para partir los archivos grandes, 375).
+// tools/mover-bloque.mjs — `fos mover`: muda un bloque de líneas de una tool a un módulo nuevo SIN cambiarlo, para partir los archivos grandes.
 //
 //   node tools/mover-bloque.mjs <tool.mjs> <desde>-<hasta> <destino.mjs> ["porqué del módulo"] [--escribir]
 //

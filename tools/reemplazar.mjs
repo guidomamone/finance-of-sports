@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/reemplazar.mjs — reemplazos en varios archivos sin un script ad hoc (TODO 392). El hook rechaza `sed -i`, `python` y `node -e`; Edit hace una
+// tools/reemplazar.mjs — reemplazos en varios archivos sin un script ad hoc. El hook rechaza `sed -i`, `python` y `node -e`; Edit hace una
 // sola sustitución. Esto cubre las dos formas que hicieron falta: el mismo texto en muchos archivos y una lista de cambios exactos por línea.
 //
 //   node tools/reemplazar.mjs <archivo …> --de "<texto>" --a "<texto>" [--regex] [--solo-comentarios] [--escribir]

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// tools/probar-reemplazar.mjs — la prueba de reemplazar.mjs (TODO 392) en un repo de juguete en Admin/mediciones/pipeline/_prueba-reemplazar.
+// tools/probar-reemplazar.mjs — la prueba de reemplazar.mjs en un repo de juguete en Admin/mediciones/pipeline/_prueba-reemplazar.
 // Uso: node tools/probar-reemplazar.mjs (sale con 1 si un caso falla; no toca nada fuera de su carpeta).
 import { mkdirSync, writeFileSync, readFileSync, copyFileSync, rmSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';

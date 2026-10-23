@@ -145,7 +145,7 @@ if (SOLO_CHICO) nivelFinal = 'chico';
 console.log(`Tools: ${nombres.join(', ')}\nMedidores: ${medidores.join(', ')}\n` + (hayLista ? `Lote: chico primero, hasta ${nivelFinal} (mínimo por tabla: ${minimo}); ${afectadas.length} familia(s) afectada(s) de ${total.size}.` : 'Lote: ningún medidor usa lista; miden el sitio entero.'));
 if (A.includes('--ensayo')) { process.exit(0); }
 
-// ---- candado (TODO 394) ------------------------------------------------------
+// ---- candado ------------------------------------------------------
 // Mientras mide, deja Admin/mediciones/pipeline/_corriendo con su pid: el hook de pre-tool rechaza editar un archivo trackeado (esta tool lo revierte) hasta que termine.
 // Se suelta al salir, también por un error o Ctrl-C; si la corrida muere sin soltarlo, el hook ignora un pid que ya no existe.
 const CANDADO = join(BASE_DIR, '_corriendo');
