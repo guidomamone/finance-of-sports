@@ -1,5 +1,5 @@
 // tools/deporte-club.mjs — el DEPORTE de un club del sitio (de `sport` en data/clubs.js) y las categorías que su taxonomía admite
-// (SPORT_TAXONOMIES de data/category-map.js), para que Jev, Claude y las compuertas de carga sepan de qué deporte es el rubro (to-do 339).
+// (SPORT_TAXONOMIES de data/category-map.js), para que Jev, Claude y las compuertas de carga sepan de qué deporte es el rubro.
 // Gemela de tools/pais-club.mjs (el país). Gratis: solo lee archivos de data/. El valor es el id interno del sitio ('futbol', 'rugby'), no el
 // del JSON ('football', 'rugby_union'). No decide nada: filtra la lista de categorías y desempata ejemplos.
 import { readFileSync } from 'node:fs';
@@ -114,7 +114,7 @@ export function afinidadDeporte(clubA, clubB) {
 }
 
 // ---------------------------------------------------------------------------------------------------------
-// CEROS POR DEPORTE (to-do 339). UNA tabla de lo que un año no debería tener en 0, por deporte. La leen cargar.mjs (aviso de «categorías en 0» y reintento, preguntas de
+// CEROS POR DEPORTE. UNA tabla de lo que un año no debería tener en 0, por deporte. La leen cargar.mjs (aviso de «categorías en 0» y reintento, preguntas de
 // perfil, ajustes cero-real) y verificar.mjs (de qué lado es cada categoría en 0). Antes eran tres listas sueltas (CATS_CERO, el chequeo de tres categorías y LADO_CERO).
 //   nombre   como lo nombra el aviso y los ajustes `cero-real`.
 //   cats     las subcategorías del deporte que cuentan (si alguna tiene monto, el 0 no es tal).

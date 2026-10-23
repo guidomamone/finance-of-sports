@@ -79,7 +79,7 @@ import { diagnosticar } from './reparar-pdf.mjs';
 import { paginasConNumeros } from './paginas-con-numeros.mjs';
 import { derivado, ubicar } from './rutas.mjs';
 import { chequearPaginas, quien, tablasDe, respaldoSumas, respaldoFilas } from './chequeos-gratis.mjs';
-// splitPages vive en huella-paginas.mjs (Versión 443): la huella por página usa el mismo corte.
+// splitPages vive en huella-paginas.mjs: la huella por página usa el mismo corte.
 import { splitPages, huellasDePaginas, huellasDelTexto, ultimaConPaginas, compararPaginas } from './huella-paginas.mjs';
 
 // ---------------------------------------------------------------- utilidades
@@ -222,7 +222,7 @@ function sizedBatches(pdfAbs, pageList, tmp, counter = { n: 0 }) {
 }
 
 // Recorta páginas del PDF y las transcribe con un motor; devuelve Map<páginaReal, texto> o un error.
-// Tope de páginas por llamada a Claude (Versión 310). El tope de salida de claude-api-transcribe.mjs es 64.000 tokens por llamada y una
+// Tope de páginas por llamada a Claude. El tope de salida de claude-api-transcribe.mjs es 64.000 tokens por llamada y una
 // página densa de un escaneo se transcribe en ~2.300 tokens (medido en el piloto C: Real Madrid 2005-06, 18 páginas = 41.763 tokens de
 // salida, US$ 0,45). Con 18-25 páginas en un lote se queda al borde del tope, y un intento cortado por max_tokens se PAGA ENTERO y se tira
 // (la tool descarta la transcripción truncada). De a 8 páginas (~20.000 tokens) el tope no se alcanza; el costo por página es el mismo.
@@ -417,7 +417,7 @@ function patchToMajority(cands, best) {
 // PASO 2 (gratis): ARITMÉTICA DEL DOCUMENTO. Entre versiones distintas de una página gana la que deja más celdas respaldadas por
 // sumas (sumScore(), abajo). Comprobado a mano en
 // Argentinos Juniors: 425.204.023 + 233.796.753 - 275.518.976 = 383.481.800 decidía cuál de las lecturas era la correcta.
-// Versión 313: el puntaje es la cantidad de CELDAS que quedan respaldadas por sumas genéricas de tools/chequeos-gratis.mjs — verticales
+// el puntaje es la cantidad de CELDAS que quedan respaldadas por sumas genéricas de tools/chequeos-gratis.mjs — verticales
 // (una fila = suma de las contiguas) y horizontales (en una fila, una celda = combinación con signo de las demás: tablas de movimiento,
 // saldo inicial + altas - bajas = saldo final). Antes se usaba un puntaje de prepare-onboarding.mjs (tieScore(), borrado en el to-do 218), que solo veía filas rotuladas "total":
 // en las notas rusas de Rubin Kazan 2025 daba 0 en las 11 páginas, todas terminaron "con reserva", y en 2 (págs. 18 y 32) la lectura
@@ -539,7 +539,7 @@ async function resolveDoc(e0) {
   const q = quien(e.pdf);
   const cascada = async () => {
     const r = await chequearPaginas({ pdfPath: pdfAbs, mdText: joinPages(canon.pre, canon.pages), club: q.clubId, year: q.year });
-    const reus = reusadas(); // (Versión 443) una página sin cambios desde la última validación "listo" no es dudosa
+    const reus = reusadas(); // una página sin cambios desde la última validación "listo" no es dudosa
     return { numericas: new Set(r.filter((x) => x.estado !== 'prosa').map((x) => x.pagina)), dudosas: new Set(r.filter((x) => x.estado === 'dudosa' && !reus.has(x.pagina)).map((x) => x.pagina)), validadas: r.filter((x) => x.estado === 'validada-gratis').length };
   };
   let cas = await cascada();
@@ -755,7 +755,7 @@ function dryRunDoc(e) {
     const all = textLayerDoubts(pt, canon);
     if (all.length > 0.5 * pt.filter((t) => numsOf(t).size > 0).length) return { plan: 'escaneo: Gemini + Claude en págs. que difieran', nPages, cost: nNum * EST.gemini + nNum * 0.6 * 0.25 * EST.claude };
     const prev = ultimaConPaginas(e.md); const reus = new Set(prev ? compararPaginas(prev.paginasSha, huellasDePaginas(canon.pages)).iguales : []);
-    const nr = all.filter((n) => numericas.has(n) && reus.has(n)).length; // (Versión 443) sin cambios desde la última validación: no se pagan
+    const nr = all.filter((n) => numericas.has(n) && reus.has(n)).length; // sin cambios desde la última validación: no se pagan
     const d = all.filter((n) => numericas.has(n) && !reus.has(n)).length;
     return { plan: `texto: ${d} pág. dudosas (${all.length - d - nr} en prosa${nr ? `, ${nr} sin cambios` : ''}, no se pagan)`, nPages, doubts: d, cost: d * EST.claude };
   }
@@ -811,7 +811,7 @@ async function worker() {
     }
     appendFileSync(verifPath, JSON.stringify({
       ts: new Date().toISOString(), md: e.md, mdSha1: existsSync(resolve(root, e.md)) ? sha1(resolve(root, e.md)) : null, status: res.status, method: res.method || 'resolver-inventario', detail: res.detail,
-      // (Versión 443) la huella de cada página del .md tal como quedó: la próxima validación reusa las que no cambien.
+      // la huella de cada página del .md tal como quedó: la próxima validación reusa las que no cambien.
       paginasSha: existsSync(resolve(root, e.md)) ? huellasDelTexto(readFileSync(resolve(root, e.md), 'utf8')) : null,
       proveniencia: res.prov, reserva: res.reserva, sinConsenso: res.sinConsenso, parches: res.parches || [], resolucion: res.resolucion || {}, formatoIntentado: Boolean(res.formatoIntentado), previo: res.previo || null, costoUsd: Number((res.cost || 0).toFixed(4)),
     }) + '\n');

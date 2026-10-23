@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/cierre-ejercicio.js — la fecha de cierre de UN ejercicio, para los generadores (to-do 177, Versión 627).
+// tools/cierre-ejercicio.js — la fecha de cierre de UN ejercicio, para los generadores.
 //
 // Es la misma escalera que `cierreEjercicio()` de js/finanzas-calc.js (el sitio), para que fuentes.html y data/club-index.js
 // nombren cada ejercicio igual que la página: 1) el campo `cierre` de su fiscalYearMeta; 2) la fecha de su `fxRef`

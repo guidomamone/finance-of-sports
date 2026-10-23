@@ -190,7 +190,7 @@ export function respaldoSumas(tablas, U = UMBRALES) {
   return { ok, cierres };
 }
 
-// ---------------------------------------------------------------- chequeo 2b: sumas HORIZONTALES (Versión 313)
+// ---------------------------------------------------------------- chequeo 2b: sumas HORIZONTALES
 // Las tablas de movimiento (saldo inicial + altas - bajas = saldo final; notas rusas, IFRS, "movimiento de bienes de uso") hacen la cuenta
 // por FILA, no por columna: las sumas de arriba no las ven (Rubin Kazan 2025, 8 de 11 páginas "con reserva" sin ninguna suma vertical que
 // cierre). En cada fila con 3 a 7 celdas numéricas se prueba si ALGUNA celda es igual a una combinación con signo (+/-) de TODAS las
@@ -215,7 +215,7 @@ export function respaldoFilas(tablas) {
 }
 
 // ---------------------------------------------------------------- chequeo 4: activo = pasivo + patrimonio (todo el documento)
-// Versión 316: las listas de "total del activo" / "total del pasivo" salen de tools/vocabulario.mjs (29 idiomas; antes ~12 a mano acá).
+// las listas de "total del activo" / "total del pasivo" salen de tools/vocabulario.mjs (29 idiomas; antes ~12 a mano acá).
 const ACTIVO_RE = TOTAL_ACTIVO_RE;
 const PASIVO_RE = TOTAL_PASIVO_RE;
 function respaldoBalance(paginas) {

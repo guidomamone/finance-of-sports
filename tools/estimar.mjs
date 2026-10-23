@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/estimar.mjs — MODELO QUE ESTIMA EL INGRESO DE UN CLUB-AÑO SIN BALANCE (to-do 270). Mide (--medir) y escribe data/estimados/.
+// tools/estimar.mjs — MODELO QUE ESTIMA EL INGRESO DE UN CLUB-AÑO SIN BALANCE. Mide (--medir) y escribe data/estimados/.
 //
 // POR QUÉ (pedido de Guido, 2026-10-17). Ligas con 3 clubes cargados de 20 no dicen cuánto mueve la liga. Una estimación puede llenar
 // el hueco, pero solo si su error está medido contra años reales y se muestra aparte, rotulada "estimado". Regla: si el modelo no le
@@ -178,7 +178,7 @@ const pct = (errs) => {
 // Dos casos. (1) "Falta un año de un club que tenemos", a 2 años o menos de un balance real: la INTERPOLACIÓN SIMPLE entre sus años
 // reales (la regresión empata con ella). (2) Todo otro club de la lista de la liga sin balance ese año (club que nunca cargamos, o uno
 // cargado pero a más de 2 años): la regresión sin historia (`caso: "nuevo"`: mediana de la liga-año, división y posición en la tabla),
-// con ~50% de error medido. Prendido por Guido (2026-10-18): en Ligas todo club sin balance figura como estimado. Un club que no está en
+// con ~50% de error medido. Prendido por Guido: en Ligas todo club sin balance figura como estimado. Un club que no está en
 // el sitio va por su nombre (`n`, sin `id`) y su ejercicio es la temporada (cierre a mitad de año, el de casi todos los clubes de liga
 // partida). El año es el del EJERCICIO, el mismo de data/rankings/: así el día que se
 // carga el real el choque se ve directo. LO REAL GANA: nunca se escribe un estimado para un club-año cargado (data/club-index.js), y

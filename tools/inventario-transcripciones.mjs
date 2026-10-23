@@ -119,7 +119,7 @@ function pendingByOnboard(dirs = null) {
 // es ese archivo. Si un motor re-hizo el archivo (Gemini sobre un escaneo de Mistral), gana el último.
 function loadProvenance() {
   const byMd = new Map();
-  const sources = [['mistral', 'Admin/registros/api/mistral.jsonl'], ['gemini', 'Admin/registros/api/gemini.jsonl'], ['claude-api', 'Admin/registros/api/claude-api.jsonl'], ['xhtml-ixbrl (determinista)', 'Admin/registros/api/xhtml-ixbrl.jsonl']]; // (to-do 345) los informes daneses en XHTML: tools/xhtml-aarsrapport.mjs, sin API; el PDF de al lado es la impresión de Chrome del mismo XHTML
+  const sources = [['mistral', 'Admin/registros/api/mistral.jsonl'], ['gemini', 'Admin/registros/api/gemini.jsonl'], ['claude-api', 'Admin/registros/api/claude-api.jsonl'], ['xhtml-ixbrl (determinista)', 'Admin/registros/api/xhtml-ixbrl.jsonl']]; // los informes daneses en XHTML: tools/xhtml-aarsrapport.mjs, sin API; el PDF de al lado es la impresión de Chrome del mismo XHTML
   for (const [engine, rel] of sources) {
     for (const r of readJsonl(resolve(root, rel))) {
       if (!r.md) continue;
@@ -235,12 +235,12 @@ let entries = pdfsAll.map((pdfAbs) => {
     cargado: !pending.has(pdf),
     mdSha1: tieneMd ? sha1(mdAbs) : null,
     ...huellaPdf(pdf, pdfAbs),
-    // Versión 314: qué período cubre el documento, leído del CONTENIDO (tools/periodo.mjs): 'anual' (con `anual` = 'calendario' si cierra
+    // qué período cubre el documento, leído del CONTENIDO (tools/periodo.mjs): 'anual' (con `anual` = 'calendario' si cierra
     // en diciembre o 'temporada' si no), 'trimestral', 'semestral', 'nueve-meses', 'bimestral', 'intermedio', 'otro' (13, 18 meses...).
     // Un documento no anual NO se carga como ejercicio: queda marcado para juntarlo con los otros períodos cuando lleguen
     // (`node tools/periodo.mjs --grupos`). `nombreNoCoincide` avisa cuando el nombre del archivo dice otra fecha (Galatasaray: el nombre
     // dice cierre anual 31/05/2019 y el contenido es el primer trimestre al 31/08/2019).
-    // (Versión 413) el ajuste manual `cierre` (tools/ajustes.mjs) es el escalón 0 del período: de acá lo toman localizar, verificar (año y
+    // el ajuste manual `cierre` (tools/ajustes.mjs) es el escalón 0 del período: de acá lo toman localizar, verificar (año y
     // año vecino) y cargar. Caso: Novorizontino 2022, el contenido daba la fecha de la firma (28/04/2023).
     periodo: tieneMd ? (() => { const aj = ajusteDe(pdf, 'cierre'); if (aj) return { tipo: 'anual', meses: 12, cierre: aj.valor, anual: aj.valor.slice(5) === '12-31' ? 'calendario' : 'temporada', confianza: 'alta', evidencia: `ajuste manual (${aj.fecha}): ${aj.motivo}` }; try { const mdT = readFileSync(mdAbs, 'utf8'); const r = periodoDe(mdT, pdf, { xhtml: xhtmlHermano(mdAbs, mdT) }); return { tipo: r.tipo, meses: r.meses, cierre: r.cierre, anual: r.anual, confianza: r.confianza, nombreNoCoincide: r.nombreNoCoincide || undefined, evidencia: r.evidencia || undefined }; } catch { return null; } })() : null,
   };
@@ -249,7 +249,7 @@ let entries = pdfsAll.map((pdfAbs) => {
 const scope = entries.filter((e) => !dirFilter || e.pdf.startsWith(dirFilter.replace(/\/$/, '') + '/'));
 
 if (doVerify) {
-  // `--estado <x>` (Versión 320): solo los que están en ese estado (ej. sin-verificar); sin él, todos los no listos (revalida también los
+  // `--estado <x>`: solo los que están en ese estado (ej. sin-verificar); sin él, todos los no listos (revalida también los
   // `revisar` y `pendiente-segunda-voz` ya validados con el mismo contenido: gratis pero lento).
   const soloEstado = flagVal('--estado');
   const todo = scope.filter((e) => e.tieneMd && !e.cargado && currentState(e, verifs.get(e.md)).status !== 'listo' && (!soloEstado || currentState(e, verifs.get(e.md)).status === soloEstado)).slice(0, limit);
@@ -280,7 +280,7 @@ if (soloPdfs) {
   entries = [...[...previoHuella.values()].filter((x) => x && x.pdf && !enAlcance.has(x.pdf)), ...entries]
     .sort((a, b) => (a.pdf < b.pdf ? -1 : a.pdf > b.pdf ? 1 : 0));
 }
-// DUPLICADOS (Versión 521): de cada grupo de PDFs con la misma huella queda UNO (el cargado, si no el que tiene .md, si no la primera
+// DUPLICADOS: de cada grupo de PDFs con la misma huella queda UNO (el cargado, si no el que tiene .md, si no la primera
 // ruta); los demás pasan al estado `duplicado` con `duplicadoDe` (salvo uno ya cargado: Elche y Mirassol tienen las dos copias
 // registradas como cargadas y ahí no hay nada que ahorrar). Ninguna etapa los procesa (pipeline.mjs elige por estado; lote.mjs los
 // saltea), así no se paga dos veces la misma transcripción ni la misma localización. Son los mismos bytes: no hay nada que interpretar.
@@ -308,7 +308,7 @@ const scopeE = entries.filter((e) => !dirFilter || e.pdf.startsWith(dirFilter.re
 console.log(`\n${scopeE.length} PDFs (${scopeE.filter((e) => e.tieneMd).length} con .md)${dirFilter ? ` en ${dirFilter}` : ''}. Registro en Admin/registros/transcripciones-estado.jsonl\n`);
 // POR ETAPA (Versión 447, pedido de Guido el 2026-10-04: "que marquen en qué etapa o escalón está"): cada estado del registro con la etapa
 // y el escalón del proceso nuevo; los "listo" se abren según lo que dejaron las etapas 3-8 en Generados/. La lógica vive en
-// tools/etapa-doc.mjs (Versión 448), la misma que usa el tablero (tools/estado.mjs).
+// tools/etapa-doc.mjs, la misma que usa el tablero (tools/estado.mjs).
 console.log('Por estado (con la etapa y el escalón del proceso, Admin/PIPELINE.md):');
 for (const [k, v] of Object.entries(tally(scopeE, (e) => e.estado)).sort((a, b) => b[1] - a[1])) {
   if (k !== 'listo') { const nd = scopeE.filter((e) => e.estado === k && !e.cargado && DESCARTADOS.has(e.pdf)).length; console.log(`  ${String(v).padStart(5)}  ${k.padEnd(22)} ${ETAPAS_DOC[claveDeEstado(k)]?.[1] || ''}${nd ? ` (${nd} descartados como fuente)` : ''}`); continue; }
@@ -318,7 +318,7 @@ for (const [k, v] of Object.entries(tally(scopeE, (e) => e.estado)).sort((a, b) 
 console.log('\nPor motor que hizo el .md (solo lo NO cargado todavía):');
 const notLoaded = scopeE.filter((e) => !e.cargado);
 const matrix = {};
-// (Versión 447) sin la lista de páginas reemplazadas: "mistral + claude-api (págs. 3, 5)" y "(págs. 8)" cuentan juntos (antes ~120 renglones).
+// sin la lista de páginas reemplazadas: "mistral + claude-api (págs. 3, 5)" y "(págs. 8)" cuentan juntos (antes ~120 renglones).
 const motorCorto = (m) => String(m).replace(/\s*\(págs\.[^)]*\)/g, '');
 for (const e of notLoaded) { const m = motorCorto(e.motor); (matrix[m] ||= {})[e.estado] = (matrix[m][e.estado] || 0) + 1; }
 for (const [motor, st] of Object.entries(matrix)) console.log(`  ${motor.padEnd(11)} ${Object.entries(st).map(([k, v]) => `${k}: ${v}`).join(' | ')}`);

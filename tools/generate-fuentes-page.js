@@ -232,7 +232,7 @@ function construir(api) {
   const totalPaises = new Set(filas.map(f => f.pais)).size;
   const conLink = filas.filter(f => f.s.url).length;
 
-  // LA FECHA DEL PIE ES LOCAL, NO UTC (Versión 178). Acá decía
+  // LA FECHA DEL PIE ES LOCAL, NO UTC. Acá decía
   // `new Date().toISOString().slice(0, 10)`, y `toISOString()` es SIEMPRE UTC: generar
   // estas páginas a las 20:24 de un 21 en EDT (o a las 21:24 en Argentina) escribía
   // "Generado desde los datos del sitio el 2026-09-22", un día que todavía no pasó para
@@ -371,7 +371,7 @@ ${idx.join('\n')}
   </div>`,
   });
 
-  // El sitemap lo escribe tools/generate-club-pages.js (to-do 241): dos escritores se pisan.
+  // El sitemap lo escribe tools/generate-club-pages.js: dos escritores se pisan.
   return { indice, porClub };
 }
 

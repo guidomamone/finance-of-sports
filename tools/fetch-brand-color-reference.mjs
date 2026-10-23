@@ -3,7 +3,7 @@
 // tools/fetch-brand-color-reference.mjs — baja UNA VEZ la tabla de colores de
 // una liga completa desde footylogos.com y la guarda local, para que
 // `tools/lookup-brand-color.js` resuelva los colores CANDIDATOS de un club sin
-// salir a buscar uno por uno (to-do 91, 2026-09-27).
+// salir a buscar uno por uno.
 //
 // OJO, ESTO NO DECIDE el `brandColor` de un club — solo cachea los swatches que
 // footylogos publica para esa liga, en el mismo orden en que la fuente los

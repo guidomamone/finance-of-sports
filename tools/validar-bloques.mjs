@@ -32,14 +32,14 @@ import { resolve, join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
-import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
+import { shaMd } from './cache-al-dia.mjs'; // huella del .md con el que se hizo el caché
 import { verifyNumbers, extractNumbers, norm as normNum, NUM_RE } from './verify-numbers.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
 const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const USD_PAGINA_GEMINI = 0.003;
-const MIN_NUMS_PAGINA = 10; const COBERTURA_MIN_PAGINA = 0.25; // (to-do 179) ver el escalón "página con texto que no trae sus números"
+const MIN_NUMS_PAGINA = 10; const COBERTURA_MIN_PAGINA = 0.25; // ver el escalón "página con texto que no trae sus números"
 const MIN_TEXTO = 50; // caracteres de texto propio (sin espacios) por debajo de los cuales una página de un PDF digital es una imagen
 
 const textoPagina = (pdf, n) => execFileSync('pdftotext', ['-layout', '-f', String(n), '-l', String(n), pdf, '-'], { maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).toString('utf8');

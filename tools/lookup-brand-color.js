@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/lookup-brand-color.js — busca LOCAL, contra las tablas de
 // tools/brand-color-reference/, los swatches que footylogos publica para un
-// club (to-do 91). Reemplaza el fetch puntual por club cuando la liga ya está
+// club. Reemplaza el fetch puntual por club cuando la liga ya está
 // cacheada (`tools/fetch-brand-color-reference.mjs`).
 //
 // ESTO NO DECIDE `brandColor` — solo evita volver a pedirle la página a

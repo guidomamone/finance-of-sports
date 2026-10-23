@@ -5,7 +5,7 @@
 //
 // LA CONVENCIÓN (dos líneas dentro de la sección `## REGLA:` de la regla, al final, una por cada cosa que la regla decide):
 //   CATEGORÍA (prompt): <una frase: qué rubros y a qué categoría>       va al prompt de categorizar-claude.mjs (b), de todos los deportes
-//   CATEGORÍA (prompt, rugby): <frase>                                   (to-do 339) solo al prompt de ese deporte (id de SPORTS en data/leagues.js)
+//   CATEGORÍA (prompt, rugby): <frase> solo al prompt de ese deporte (id de SPORTS en data/leagues.js)
 // Todo id de categoría (con guion bajo) que nombra la frase tiene que ser una subcategoría del deporte de la regla, o de TODOS los deportes activos si no lleva deporte
 // (más las genéricas del 248 y las claves financieras del JSON, que no son subcategorías). Un id de un solo deporte en una regla de todos hace que el prompt de otro
 // deporte le pida una categoría que no existe: `node tools/reglas-categoria.mjs` lo marca y sale con código 1.
@@ -20,7 +20,7 @@
 // ============================================================================
 import { readFileSync, appendFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { categoriasDeDeporte, deporteDeClub, deportes, deportesActivos, genericasIds } from './deporte-club.mjs'; // (to-do 339) la regla puede ser de un deporte
+import { categoriasDeDeporte, deporteDeClub, deportes, deportesActivos, genericasIds } from './deporte-club.mjs'; // la regla puede ser de un deporte
 
 const ROOT = resolve(import.meta.dirname, '..');
 const DOC = resolve(ROOT, 'Admin', 'CONVENCIONES-DATOS.md');
@@ -47,11 +47,11 @@ export function reglasParaPrompt(deporte = 'futbol') {
   return leerReglasCategoria().flatMap((r) => r.promptItems.filter((x) => !x.deporte || x.deporte === deporte).map((x) => `- ${x.texto} (${r.titulo.replace(/\s*\(.*$/, '')})`));
 }
 
-// (to-do 341) Las frases CATEGORÍA (prompt) contra los deportes dados (por defecto, los activos): una regla sin deporte tiene que ser válida en cada uno. El alta de un deporte nuevo
+// Las frases CATEGORÍA (prompt) contra los deportes dados (por defecto, los activos): una regla sin deporte tiene que ser válida en cada uno. El alta de un deporte nuevo
 // (tools/catalogo-liga.mjs) la corre ANTES de activarlo, con el candidato agregado, y lista las reglas que quedarían inválidas. Devuelve { errores: [texto], reglas: [{ titulo, linea, deporte, texto, ok }] }.
 export function validarReglasPrompt({ activos = deportesActivos() } = {}) {
   const reglas = leerReglasCategoria(); const errores = []; const detalle = [];
-  // (to-do 339) las categorías válidas son las de la taxonomía del deporte (data/category-map.js, SPORT_TAXONOMIES); no se importa categorizar-claude.mjs: él importa este archivo
+  // las categorías válidas son las de la taxonomía del deporte (data/category-map.js, SPORT_TAXONOMIES); no se importa categorizar-claude.mjs: él importa este archivo
   // claves que una frase puede nombrar sin ser subcategorías de un deporte: las genéricas del 248 y las financieras del JSON
   const NO_SUBCATEGORIAS = new Set([...genericasIds(), 'profit_on_player_sales', 'asset_sales', 'net_interest', 'gross_debt', 'staff_cost', 'no_es_rubro']);
   for (const r of reglas) for (const x of r.promptItems) {

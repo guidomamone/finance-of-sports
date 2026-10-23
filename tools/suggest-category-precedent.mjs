@@ -14,7 +14,7 @@
 //     categorías distintas en años distintos de ese mismo lado, se marca
 //     CONFLICTO en vez de sugerir a ciegas).
 //   - PARECIDO: comparten palabras pero no son el mismo texto. Confianza
-//     BAJA a propósito — esto es un candidato para JEV a futuro (to-do 99),
+//     BAJA a propósito — esto es un candidato para JEV a futuro,
 //     no algo para aceptar sin revisar acá.
 //   - SIN PRECEDENTE: no hay nada parecido cargado para este club todavía.
 //     Sigue siendo 100% criterio de Claude (SKILL.md sección 1: primera

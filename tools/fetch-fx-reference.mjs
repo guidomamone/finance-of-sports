@@ -880,7 +880,7 @@ async function runOne(code, from, to) {
 // de las cotizaciones (que se curan a mano en FX_CLOSE), esta serie es chica (un valor por año), así
 // que data/deflactores.js se GENERA desde estos archivos: no se edita a mano.
 //   USD: deflactor implícito del PBI de EE.UU. (BEA), archivo anual público de las cuentas nacionales (NipaDataA.txt, serie A191RD), 2017=100.
-//        (to-do 302) Antes salía de FRED, que prohíbe el scraping y guardar copias. El archivo pesa ~12 MB y es de uso público, sin key.
+// Antes salía de FRED, que prohíbe el scraping y guardar copias. El archivo pesa ~12 MB y es de uso público, sin key.
 //   EUR: deflactor del PBI de la zona euro (Eurostat nama_10_gdp, EA20, PD15_EUR, B1GQ), 2015=100.
 // Se corre una vez por año, cuando las dos fuentes publican el año que cerró.
 // DESDE 1995 (antes 2000): Lazio 1998-99 cierra en 1999 y sin su valor `fac()` de js/finanzas-multi.js devuelve 1, así que ese año

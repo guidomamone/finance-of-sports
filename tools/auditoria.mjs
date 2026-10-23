@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/auditoria.mjs — QUIÉN AUDITA CADA BALANCE Y QUÉ DICE EL INFORME (to-do 282).
+// tools/auditoria.mjs — QUIÉN AUDITA CADA BALANCE Y QUÉ DICE EL INFORME.
 //
 // DE DÓNDE SALE. De un registro, `Admin/registros/auditoria.jsonl`, una línea por club y ejercicio con balance, escrita por subagentes
 // que leen el informe del auditor (no hay regex que clasifique un dictamen en veinte idiomas: "continuidad" aparece en las notas de casi
@@ -84,7 +84,7 @@ const desc = new Set(readFileSync(join(ROOT, 'Admin/registros/documentos-descart
 const parciales = readFileSync(join(ROOT, 'Admin/registros/documentos-parciales.txt'), 'utf8').normalize('NFC');
 const tracked = execSync('git -c core.quotepath=off ls-files -z "Clubes/*.md"', { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26 })
   .split('\0').filter(f => f && !/\/(_|README)/.test(f));
-const trackedSet = new Set([...tracked, ...execSync('git -c core.quotepath=off ls-files -z "Ligas/*.md"', { cwd: ROOT, encoding: 'utf8' }).split('\0').filter(Boolean)].map(f => f.normalize('NFC'))); // Ligas/: balances de la entidad que organiza una liga (to-do 295)
+const trackedSet = new Set([...tracked, ...execSync('git -c core.quotepath=off ls-files -z "Ligas/*.md"', { cwd: ROOT, encoding: 'utf8' }).split('\0').filter(Boolean)].map(f => f.normalize('NFC'))); // Ligas/: balances de la entidad que organiza una liga
 const conBalance = (id, y) => /balance/.test(generic[id]?.fiscalYearMeta?.[y]?.reportType || '');
 // Un documento parcial (documentos-parciales.txt) cuenta solo si el sitio igual publica ese año desde él: su informe opina sobre lo que se
 // muestra. Caso: Atalanta 2022 (Guido, 2026-10-18). El sourceId es el clubId más el nombre del archivo, a veces sin su primera palabra

@@ -3,7 +3,7 @@
 //
 // POR QUÉ. lote.mjs, pipeline.mjs y cargar.mjs --escribir reescriben enteros el registro (Admin/registros/transcripciones-estado.jsonl) y otros
 // archivos compartidos (la lista temporal del lote, el historial, la cola). Dos a la vez se pisan. Caso: el lote 20 se lanzó dos veces
-// seguidas (2026-10-07). El candado nació en lote.mjs (to-do 162) y se sacó acá para que lo usen las tres (to-do 164).
+// seguidas. El candado nació en lote.mjs y se sacó acá para que lo usen las tres.
 //
 // CÓMO. El candado (Admin/registros/.candado.lock, en .gitignore) se crea atómico ('wx': si existe, falla) con herramienta, PID, lista, modo y hora.
 //   - Si ya existe y su proceso sigue vivo y es esa herramienta (`ps`: el PID puede haberse reusado), este proceso sale sin tocar nada.
@@ -46,7 +46,7 @@ export function tomarCandado(herramienta, { lista = null, modo = null, archivo =
   process.on('exit', () => { try { if (JSON.parse(readFileSync(LOCK_, 'utf8')).pid === process.pid) unlinkSync(LOCK_); } catch { /* sin candado */ } });
 }
 
-// (Versión 642) Suelta el candado ANTES de terminar, solo si es de este proceso. Lo usa lote.mjs --cargar: al final del lote corre
+// Suelta el candado ANTES de terminar, solo si es de este proceso. Lo usa lote.mjs --cargar: al final del lote corre
 // tools/cargar-lote.mjs, que llama a cargar.mjs --escribir, y cargar.mjs toma el candado (con el del lote vivo, se negaría).
 export function soltarCandado() {
   try { if (JSON.parse(readFileSync(LOCK, 'utf8')).pid === process.pid) unlinkSync(LOCK); } catch { /* sin candado */ }

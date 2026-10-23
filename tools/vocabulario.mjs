@@ -82,7 +82,7 @@ export function normalizar(t) {
 }
 
 // ---------------------------------------------------------------- FAMILIA DE UNA ETIQUETA (Versión 321, arreglo 1d del HANDOFF de entonces, hoy en Admin/Archive/)
-// Pedido de Guido (2026-09-30): "una familia de palabras similares, como la del PSV con dos S o una". El precedente del club (escalón 0 de la
+// Pedido de Guido: "una familia de palabras similares, como la del PSV con dos S o una". El precedente del club (escalón 0 de la
 // categorización: si el club ya cargó ese renglón en otro año, se copia su categoría gratis) comparaba el texto EXACTO, y el mismo renglón de un
 // año a otro cambia en detalles que no cambian qué es: PSV 2019-20 imprime "Vergoedingsommen" y 2024/2025 "Vergoedingssommen
 // (transferopbrengsten)"; el número de nota ("Belastingen (22)"), la numeración ("1. Umsatzerlöse"), la traducción bilingüe ("Andre finansielle
@@ -586,7 +586,7 @@ export const VOCABULARIO = {
   DEUDA_FINANCIERA: {
     es: ['prestamo*', 'otros pasivos financieros', 'pasivos financieros', 'deudas bancarias*', 'deudas financieras', 'obligaciones financieras', 'obligaciones con bancos*', 'deudas con entidades de credito'],
     pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos', 'mutuo*', 'dividas a instituicoes de credito*'], // mutuo: Versión 422 (Novorizontino, préstamo de I-9 Sports); dívidas a instituições de crédito: la deuda bancaria del formato POC (to-do 260 f, Sporting 2000-2008)
-    // (Versión 439) la lista `en` había quedado DENTRO del comentario de arriba desde la Versión 422: ningún balance en inglés encontraba su
+    // la lista `en` había quedado DENTRO del comentario de arriba desde la Versión 422: ningún balance en inglés encontraba su
     // deuda por diccionario. Más los términos del formato italiano en inglés (Juventus: "Due to banks" 2005-2006, "Loans and other
     // financial payables/liabilities" 2007 y 2011-2021, "Bonds and other financial liabilities" 2008-2010).
     en: ['borrowings', 'bank loans*', 'loans and borrowings', 'bank overdraft*', 'loans', 'due to banks', 'loans and other financial*', 'bonds and other financial liabilities'],
@@ -673,7 +673,7 @@ export const GANANCIA_PERDIDA_RE = compilar(T('GANANCIA_PERDIDA'));
 // Subtotal/total: al comienzo O al final de la etiqueta.
 export const TOTAL_INICIO_RE = compilar(T('TOTAL_INICIO'), 'inicio');
 export const TOTAL_FIN_RE = compilar(T('TOTAL_FIN'), 'fin');
-// (to-do 212) signo de una fila del financiero por su rótulo; se prueban sobre normalizar(etiqueta)
+// signo de una fila del financiero por su rótulo; se prueban sobre normalizar(etiqueta)
 export const FIN_INGRESO_RE = compilar(T('FIN_INGRESO'));
 export const FIN_GASTO_RE = compilar(T('FIN_GASTO'));
 // (to-do 298 ah) Cobertura de pérdidas de un socio o del holding: no es un ingreso operativo. La usan verificar.mjs (cuenta en el resultado, fuera de

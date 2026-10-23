@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/tablero.mjs — los datos del tablero del pipeline (to-do 253), el artifact "Tablero del pipeline" de Claude que Guido abre desde
+// tools/tablero.mjs — los datos del tablero del pipeline, el artifact "Tablero del pipeline" de Claude que Guido abre desde
 // el celular. GRATIS: corre estado.mjs y cola.mjs (que solo leen) y lee los registros de gasto de API y Admin/outreach/.
 //
 // Escribe un CSV por cuadro en Generados/tablero/ (no se trackean: Generados/** está en .gitignore salvo los .json, y netlify.toml borra

@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 967 — Primera limpieza de comentarios de tools/: 505 referencias históricas [374]
+
+- `tools/limpiar-comentarios.mjs` (`node tools/fos.mjs limpiar-comentarios [--escribir]`): saca de los comentarios «(to-do N)», «(Versión N)», fechas entre paréntesis y un «TODO N:» inicial, solo dentro de comentarios; ensayo por defecto.
+- Corrida: 505 referencias en 91 tools (de 1.629 a 1.132). Probado con `comparar-sin-comentarios.js --tools`: el código sin comentarios de las 91 tools es idéntico al de HEAD y `node --check` pasa; `medir pipeline` lo anotó «idéntico» (lote `solo-comentarios`). Quedan 1.132 en 125 tools y 77 cabeceras largas.
+
 ## Versión 966 — Comentarios de tools/: medición, criterio, aviso y prueba de «solo comentarios» [374]
 
 - Medido (`node tools/comparar-sin-comentarios.js --medir`): 166 tools, 36 % de los bytes son comentarios (1,1 MB), 1.629 referencias a «Versión N», «to-do N» o fechas en 145 tools, 13 cabeceras de más de 25 líneas; las peores: `verificar.mjs` (241), `cargar.mjs` (157), `caja-deuda.mjs` (130), `audit.js` (98), `lote.mjs` (96).

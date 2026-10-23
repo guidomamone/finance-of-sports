@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/listas-lote.mjs — BAJA EN LOTE LAS LISTAS DE EQUIPOS QUE FALTAN, CON UNA COMPUERTA (to-do 266).
+// tools/listas-lote.mjs — BAJA EN LOTE LAS LISTAS DE EQUIPOS QUE FALTAN, CON UNA COMPUERTA.
 //
 // POR QUÉ. tools/faltantes-liga.mjs necesita la lista completa de cada liga-año, y tools/fetch-club-league-reference.mjs la baja de a una
 // con un título de Wikipedia que alguien confirma a mano (resolve-wikipedia-season-page.mjs imprime candidatos). Para decenas de
@@ -38,7 +38,7 @@ const NOMBRES = {
   'jp-j1': ['J1 League', false], 'mx-ligamx': ['Liga MX', true], 'pe-liga1': ['Liga 1 (Peru)', false], 'ru-pervayaliga': ['Russian First League', true],
 };
 
-// (to-do 276) Ligas sin página en la Wikipedia en inglés: el título en otro idioma, en las dos formas ("2019-20" y "2021"), y la sección de
+// Ligas sin página en la Wikipedia en inglés: el título en otro idioma, en las dos formas ("2019-20" y "2021"), y la sección de
 // equipos. Se prueban solo si ningún título en inglés pasó la compuerta, con la misma compuerta (tamaño y todos los clubes del sitio).
 const OTRO_IDIOMA = {
   'ar-primerab': { lang: 'es', titulos: (a) => [`Campeonato de Primera B ${a - 1}-${String(a).slice(2)} (Argentina)`, `Campeonato de Primera B ${a} (Argentina)`], seccion: 'Equipos participantes' },
@@ -89,7 +89,7 @@ async function buscar(q) {
 async function main() {
   const { CI, CL, CLUBS, cache, alias, SIZE } = cargar();
   if (process.argv.includes('--posiciones')) {
-    // to-do 270: a cada liga-año guardada sin `posiciones` le suma el orden final de la tabla, sin tocar `clubs`. Escribe cada país
+    // a cada liga-año guardada sin `posiciones` le suma el orden final de la tabla, sin tocar `clubs`. Escribe cada país
     // apenas termina (un corte a la mitad no pierde lo hecho).
     const { writeFileSync } = await import('node:fs'); let con = 0, sin = 0;
     for (const [iso, j] of Object.entries(cache)) {
@@ -107,7 +107,7 @@ async function main() {
     // --revalidar compara la regla vieja con la nueva EN LA MISMA corrida: un cambio que afecta a las dos (el filtro de estadios de
     // cleanWikilinkCell) no se ve. Esto compara lo que baja hoy con lo GUARDADO. Primero sin --aplicar, leyendo cada diferencia;
     // después `--aplicar liga:año,liga:año` guarda SOLO esas.
-    // MEDIDO (2026-10-17): una regla automática ("aplicar si solo saca nombres") sacaba clubes reales (Huila y Quindío en Colombia 2021).
+    // MEDIDO: una regla automática ("aplicar si solo saca nombres") sacaba clubes reales (Huila y Quindío en Colombia 2021).
     // Por eso --aplicar recibe la lista EXPLÍCITA de liga:año a guardar, decidida leyendo la corrida sin --aplicar.
     const { writeFileSync } = await import('node:fs'); const iA = process.argv.indexOf('--aplicar');
     const aplicarSet = iA >= 0 ? new Set((process.argv[iA + 1] || '').split(',').filter(Boolean)) : null; let n = 0, dif = 0, hechos = 0;
@@ -157,7 +157,7 @@ async function main() {
   for (const [id, ys] of Object.entries(CL)) for (const [y, liga] of Object.entries(ys)) {
     if (!NOMBRES[liga]) continue;
     // el cierre de ESE ejercicio (club-index `ci`), como faltantes-liga.mjs: Parma cerró el 30/6 de 2016 a 2019 aunque su regla sea el
-    // 31/12, y con la regla su 2017 (Serie C 2016-17) caía en la temporada 2017-18 (to-do 277)
+    // 31/12, y con la regla su 2017 (Serie C 2016-17) caía en la temporada 2017-18
     const mes = Number((CI[id]?.ci?.[y] || cierreDelClub(CLUBS[id], +y).slice(5)).slice(0, 2)); const partida = NOMBRES[liga][1];
     const anio = partida && mes >= 9 ? +y + 1 : +y;
     const iso = liga.slice(0, 2); if (cache[iso]?.leagues?.[liga]?.[anio]) continue;
@@ -177,7 +177,7 @@ async function main() {
     const tam = SIZE[o.liga]?.[o.anio];
     let hecho = null; const probados = new Set(); let mejor = null;
     const nombresDe = (id) => [CI[id]?.n, CLUBS[id]?.displayName, CLUBS[id]?.name, ...Object.entries(alias[o.iso] || {}).filter(([, a]) => a.clubId === id).map(([n]) => n)].filter(Boolean);
-    // una liga por grupos (Serie C: 3 de 20) puede pasar los 40: el tope es 40 por grupo (to-do 276)
+    // una liga por grupos (Serie C: 3 de 20) puede pasar los 40: el tope es 40 por grupo
     const prueba = (t, r, extra) => {
       const faltan = [...o.ids].filter((id) => !r.teams.some((tm) => nombresDe(id).some((n) => pega(n, tm))));
       const tamOk = tam ? r.teams.length === tam : r.teams.length >= 8 && r.teams.length <= 40 * (r.grupos || 1);

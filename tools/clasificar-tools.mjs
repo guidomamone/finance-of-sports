@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/clasificar-tools.mjs — ¿cada .js y .mjs de tools/ está clasificado respecto del pipeline? (TODO 376)
+// tools/clasificar-tools.mjs — ¿cada .js y .mjs de tools/ está clasificado respecto del pipeline?
 //
 // POR QUÉ: el hook de commit (tools/hooks/pre-tool.mjs) exige una medición para las tools de tools/pipeline-tools.json. Una tool nueva que nadie
 // clasifica se commitea sin medir, y un módulo compartido (vocabulario, ajustes, rutas…) que una tool del pipeline importa cambia lo que esa tool da

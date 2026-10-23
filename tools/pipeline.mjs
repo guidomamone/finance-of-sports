@@ -5,7 +5,7 @@
 //
 //     node tools/pipeline.mjs --ejecutar
 //
-// QUÉ HACE HOY (Versión 529): la ETAPA 2 del proceso nuevo (Admin/PIPELINE.md): transcribir y validar. Busca los PDFs de Clubes/ que
+// QUÉ HACE HOY: la ETAPA 2 del proceso nuevo (Admin/PIPELINE.md): transcribir y validar. Busca los PDFs de Clubes/ que
 // todavía no tienen un .md validado —sin .md, o con uno que nadie confirmó— y los lleva hasta "listo". De ahí en adelante sigue el lote
 // (tools/lote.mjs: localizar, validar bloques, extraer, verificar, categorizar, proponer la carga) y tools/cargar.mjs escribe el sitio.
 //
@@ -58,7 +58,7 @@ const SUMMARY_ONLY = args.includes('--resumen');
 const limit = flagVal('--limit') !== null ? Number(flagVal('--limit')) : 50;
 const dirFilter = flagVal('--dir');
 const listFile = flagVal('--lista');
-// CANDADO (to-do 164): un solo proceso a la vez escribiendo el registro, también en el ensayo (refreshLedger lo reescribe). Ver tools/candado.mjs.
+// CANDADO: un solo proceso a la vez escribiendo el registro, también en el ensayo (refreshLedger lo reescribe). Ver tools/candado.mjs.
 const { tomarCandado } = await import('./candado.mjs');
 tomarCandado('pipeline.mjs', { lista: listFile || dirFilter || null, modo: EXECUTE ? '--ejecutar' : 'ensayo' });
 const concurrency = flagVal('--concurrencia') || '4';
@@ -79,7 +79,7 @@ const node = (script, argv, opts = {}) => spawnSync('node', [resolve(root, scrip
 
 function refreshLedger() {
   process.stdout.write('Actualizando el registro de transcripciones (qué está cargado, qué tiene .md, en qué estado)... ');
-  // (Versión 640) con --lista o --dir, solo esos PDFs (inventario --solo: ~1 s en vez de ~1 min; las demás líneas quedan como estaban).
+  // con --lista o --dir, solo esos PDFs (inventario --solo: ~1 s en vez de ~1 min; las demás líneas quedan como estaban).
   const alcance = listFile || dirFilter;
   const r = node('tools/inventario-transcripciones.mjs', alcance ? ['--solo', alcance] : [], { stdio: ['ignore', 'pipe', 'inherit'] });
   if (r.status !== 0) { console.error('FALLÓ\n' + (r.stderr || r.stdout)); process.exit(1); }
@@ -148,7 +148,7 @@ const toResolve = selected.filter(needsResolve);
 // menos de 5 renglones de tabla no sirve para sacar filas (etiquetas e importes en bloques separados): se marca `sin-tablas` y la corrida
 // siguiente la rehace con Mistral (una sola vez: formatoIntentado). Gratis. Corre sobre TODOS los validados que todavía no pasaron por el
 // lote (no entra en la selección ni en --limit: si no, ~660 validados le quitaban lugar a lo que hay que transcribir).
-// (to-do 286) La parte que solo lee: qué documentos marcaría el control (con su registro de verificación previo). El ensayo la usa para
+// La parte que solo lee: qué documentos marcaría el control (con su registro de verificación previo). El ensayo la usa para
 // cotizar el rehacer con Mistral antes de la corrida real, que es la que escribe la marca.
 function candidatosSinTablas(led) {
   const out = [];

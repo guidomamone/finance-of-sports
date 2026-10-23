@@ -36,7 +36,7 @@ export function archivosDeOtra(pdfOtra) {
   return { md, verificacion: resolve(ROOT, derivado(md, '.verificacion.json', { crear: false })), categorias: resolve(ROOT, derivado(md, '.categorias.json', { crear: false })), ubicacion: resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false })) };
 }
 
-// (to-do 334) El nombre corto de cada entidad sale de los nombres de los dos PDFs del ajuste: se sacan el año y los tramos que comparten
+// El nombre corto de cada entidad sale de los nombres de los dos PDFs del ajuste: se sacan el año y los tramos que comparten
 // («aarsregnskap-valerenga-fotball-as-2022» y «...-elite-2022» dan «AS» y «Elite»). Hasta 3 letras va en mayúsculas; el resto, capitalizado.
 export function nombresCortos(pdfPropio, pdfOtra) {
   const toks = (p) => p.split('/').pop().replace(/\.pdf$/i, '').replace(/-?(19|20)\d\d(-\d+)?$/, '').split('-');

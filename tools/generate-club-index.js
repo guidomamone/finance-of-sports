@@ -5,7 +5,7 @@
 // PLACEHOLDER, POR CLUB" — desde la Versión 138 no queda ningún ejercicio placeholder cargado,
 // así que esa mitad del título describía algo que ya no existe; ver to-do 54).
 //
-// DESDE LA VERSIÓN 239 (to-do 63) el destino es `Admin/ESTADO-clubes.md`, un archivo propio, y ya
+// DESDE LA VERSIÓN 239 el destino es `Admin/ESTADO-clubes.md`, un archivo propio, y ya
 // no `Admin/ESTADO.md`: el bloque pesaba 12,35 KB de los 55,98 KB de ese archivo (161 clubes),
 // cerca del umbral de 60 KB que usa `tools/audit.js` (a ese ritmo, ~218 clubes). Mismo mecanismo
 // que sacó la to-do list de `index.html` en la Versión 138: el bloque generado se muda a un
@@ -53,7 +53,7 @@ const vm = require('vm');
 const { cierreEjercicio, cierreDelClub, esCalendario } = require('./cierre-ejercicio.js');
 
 const ROOT = path.resolve(__dirname, '..');
-// Versión 138: el destino pasó a ser Admin/ESTADO.md (hasta la 137 esta sección vivía dentro del
+// el destino pasó a ser Admin/ESTADO.md (hasta la 137 esta sección vivía dentro del
 // comentario HTML de index.html). Versión 239: el destino es Admin/ESTADO-clubes.md, un archivo
 // propio — ver el comentario de cabecera del script.
 const ESTADO = path.join(ROOT, 'Admin/ESTADO-clubes.md');
@@ -199,7 +199,7 @@ function buildIndex({ clubs, sources, generic }) {
 }
 
 // ---------------------------------------------------------------------------
-// SEGUNDO ARTEFACTO (Versión 129): `data/club-index.js`, el índice LIVIANO que
+// SEGUNDO ARTEFACTO: `data/club-index.js`, el índice LIVIANO que
 // el sitio carga en cada visita.
 //
 // EL PROBLEMA QUE RESUELVE, encontrado auditando el plan del selector jerárquico
@@ -218,7 +218,7 @@ function buildIndex({ clubs, sources, generic }) {
 // Formato: claves cortas a propósito, porque esto viaja en cada pageview.
 //   n: displayName · c: país ISO-2 · q: calidad (ver CLUB_QUALITY)
 //   y: cuántos ejercicios cargados · last: el ejercicio más reciente
-//   yrs: [[año, reportType], ...] del más reciente al más viejo (Versión 146)
+//   yrs: [[año, reportType], ...] del más reciente al más viejo
 // Son ~60 bytes por club contra los ~366 de `clubs.js`, o sea ~60 KB contra
 // ~366 KB proyectados a 1000 clubes.
 function buildClubIndex({ clubs, sources, generic, clubQuality }) {
@@ -232,7 +232,7 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
       q: clubQuality(sources, id),
       y: years.length,
       last: years.length ? years[years.length - 1] : null,
-      // `yrs` (Versión 146): la LISTA de ejercicios, no solo el conteo, del más
+      // `yrs`: la LISTA de ejercicios, no solo el conteo, del más
       // reciente al más viejo, cada uno con su reportType. Lo pidió el selector:
       // para ofrecer "Balance 2024/2025" o "Presupuesto 2026/2027" al lado de cada
       // club hace falta saber qué años tiene y de qué tipo es cada uno, y eso vivía
@@ -254,7 +254,7 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
       // que el transporte ya ahorra.
       yrs: years.slice().reverse().map(y => [y, meta[y].reportType]),
     };
-    // `ci` (to-do 177, Versión 627): los ejercicios cuya fecha de cierre NO es la de la regla del club, como { año: 'MM-DD' }. Es lo que
+    // `ci`: los ejercicios cuya fecha de cierre NO es la de la regla del club, como { año: 'MM-DD' }. Es lo que
     // usa cierreEjercicio() del sitio (js/finanzas-calc.js) cuando el data file del club todavía no se cargó (Ligas, el selector, Comparar).
     // Solo las excepciones (hoy 18 ejercicios de 6 clubes), para que el índice no crezca con un dato que ya da la regla.
     const ci = {};

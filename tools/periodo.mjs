@@ -29,7 +29,7 @@
 //   2b. Rango que no empieza el día 1, único en los títulos y de menos de 12 meses: primer ejercicio corto ("09/08/2021 – 30/06/2022").
 //   3. Palabra de período intermedio SIN meses ("interim", "ara dönem", "Zwischenbericht", "delårsrapport", "полугодие", "中期"): 'intermedio'.
 //   4. Nada de lo anterior: 'anual' (lo normal en este proyecto), con el cierre = la fecha de fin de mes más citada en los títulos.
-//   Fecha de cierre, escalera (Versión 369): escalón 0 la más citada en los títulos; escalón 1 los encabezados de columna de las tablas
+//   Fecha de cierre, escalera: escalón 0 la más citada en los títulos; escalón 1 los encabezados de columna de las tablas
 //   (ejercicio | mismo día un año antes); compuerta: nunca más de 2 años después de hoy.
 //
 // USO:
@@ -244,7 +244,7 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
       res = { tipo: n >= 12 ? 'otro' : tipoDeMeses(n), meses: n, inicio: iso(cand.a), cierre: iso(cand.b), evidencia: { pagina: cand.l.pagina, texto: cand.l.texto.slice(0, 200) }, confianza: 'alta' };
     }
   }
-  // cierre más citado en los títulos (para el anual y para completar). COMPUERTA (Versión 369): un cierre no puede ser de más de 2 años
+  // cierre más citado en los títulos (para el anual y para completar). COMPUERTA: un cierre no puede ser de más de 2 años
   // después de hoy. Caso real: Fortaleza CEIF 2022, "La duración legal del Club es definida hasta el 31 de diciembre del 2050" (L28) ganaba
   // como cierre 2050-12-31 y el año nunca entraba como 2022. No "posterior a hoy" (lo primero que se probó): un PRESUPUESTO cierra en el
   // futuro de verdad (Boca "Presupuesto 26-27" y Racing "presupuesto2026-27", 2027-06-30, quedaban sin fecha).

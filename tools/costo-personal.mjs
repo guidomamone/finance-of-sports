@@ -32,7 +32,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 //   περιόδου" 2.262.043,33 (Volos_notes_2022). PAOK no tiene una fila total (Αμοιβές προσωπικού por cuadro de función): sin dato.
 // ============================================================================
 const CACHE_JEV_P = resolve(ROOT, 'Generados', '_cache', 'jev-personal.jsonl');
-const PERSONAL_MIN_SOBRE_INGRESOS = 0.15; // plausibilidad del costo de personal contra los ingresos del año (TODO 351)
+const PERSONAL_MIN_SOBRE_INGRESOS = 0.15; // plausibilidad del costo de personal contra los ingresos del año
 export function candidatosPersonal(md) {
   const txt = readFileSync(resolve(ROOT, md), 'utf8'); const L = txt.split('\n');
   const porLinea = new Map(filasDelMd(txt).map((f) => [f.linea, f]));
@@ -63,7 +63,7 @@ export function candidatosPersonal(md) {
   }
   return out;
 }
-// ESCALÓN 1 (TODO 368): la nota de personal por su ESTRUCTURA, sin preguntarle a Jev. Es candidata la tabla cuyo total sin rótulo es la suma EXACTA de las filas de arriba (la identidad que
+// ESCALÓN 1: la nota de personal por su ESTRUCTURA, sin preguntarle a Jev. Es candidata la tabla cuyo total sin rótulo es la suma EXACTA de las filas de arriba (la identidad que
 // candidatosPersonal ya exige) y cuyas primeras filas son de personal: al menos dos de {sueldos, cargas sociales, pensiones}. Se prefieren las del propio documento del año; si hay más de una,
 // no decide (Jev elige). La escala la dice el encabezado de la tabla (£000, £m…), no el documento.
 const ROLES_PERSONAL = [/wages|salar|sueldo|gehalt|l[öo]hne|ordenado|remunera/i, /social (security|charges|insurance|contributions)|national insurance|cargas sociales|sociale (lasten|zekerheid)|encargos sociais/i, /pension|retirement|jubila|aposentad/i];
@@ -102,7 +102,7 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const cierre = cierreDeMd(a.md, reg);
     const mds = [a.md, ...[...reg.values()].filter((e) => e.md && e.md !== a.md && e.pdf.startsWith(carpeta(a.md)) && cierre && cierreDeMd(e.md, reg) === cierre && existsSync(resolve(ROOT, e.md))).map((e) => e.md)];
     const cands = mds.flatMap(candidatosPersonal);
-    // (to-do 339) la escala del año con la misma escalera que caja y deuda (ajuste `escala`, líneas cargadas, y la escala del estado que registró verificar.mjs si contradice a la escala 1).
+    // la escala del año con la misma escalera que caja y deuda (ajuste `escala`, líneas cargadas, y la escala del estado que registró verificar.mjs si contradice a la escala 1).
     // La escala que imprime el encabezado de la propia tabla de personal manda sobre la del documento (una nota en £m dentro de un documento en £000).
     const escalaDeFila = (fila, delEncabezado) => (fila ? (delEncabezado ?? escalaDe(fila.md, a.anio, filasDe(fila.md), d.revenueLinesByYear?.[a.anio], anios) ?? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios)) : null);
     const ingresos = ((d.revenueLinesByYear || {})[a.anio] || []).reduce((s, l) => s + Math.max(0, l.amountNative || 0), 0);
@@ -128,7 +128,7 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const valor = r6(x.fila.cifras[0] * x.factor); const ant = x.fila.cifras.length > 1 ? r6(x.fila.cifras[1] * x.factor) : null;
     const cita = `${x.fila.md.split('/').pop()} L${x.fila.linea} "${String(x.fila.etiqueta).slice(0, 50)}"`;
     if (valor === 0) { res.push({ ...base, valor: null, causa: 'suma-cero', como: `${cita}: suma 0` }); continue; }
-    // COMPUERTA DE PLAUSIBILIDAD (TODO 351): el costo de personal de un club profesional es una parte grande de sus ingresos. Menos de PERSONAL_MIN_SOBRE_INGRESOS es casi seguro la nota de OTRA entidad
+    // COMPUERTA DE PLAUSIBILIDAD: el costo de personal de un club profesional es una parte grande de sus ingresos. Menos de PERSONAL_MIN_SOBRE_INGRESOS es casi seguro la nota de OTRA entidad
     // (la filial del grupo sin los jugadores: Aston Villa Football Club Limited 2019-20, personal 8,3 M£ contra ingresos de 130 M£) o solo una parte (directores). El vecino no alcanza: la misma nota
     // repetida en el documento siguiente coincide, y el valor es igual de equivocado.
     const ingresosAnio = ((d.revenueLinesByYear || {})[anio] || []).reduce((s, l) => s + Math.max(0, l.amountNative || 0), 0);
@@ -156,7 +156,7 @@ async function partirFilaGlobal(clubId, d, res, { escribir }) {
   const fmt = (x) => { const [e, c] = Math.abs(x).toFixed(2).split('.'); return `${e.replace(/\B(?=(\d{3})+(?!\d))/g, '.')},${c}`; };
   const ajustesTxt = readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8');
   const cmds = [];
-  // (to-do 339) la categoría de los sueldos es la del deporte del club (wages_squad en fútbol, squad_wages en rugby)
+  // la categoría de los sueldos es la del deporte del club (wages_squad en fútbol, squad_wages en rugby)
   const SUELDOS = categoriaDeSueldos(deporteDeClub(clubId));
   if (!SUELDOS) { console.log(`  partir: el deporte de ${clubId} no tiene categoría de sueldos del primer equipo en su taxonomía; no decide`); return; }
   for (const x of res.filter((y) => y.valor != null && (y.real == null || coincide(y.real, y.valor)))) {
@@ -164,7 +164,7 @@ async function partirFilaGlobal(clubId, d, res, { escribir }) {
     if (ls.some((l) => l.normalizedCategory === SUELDOS)) { console.log(`  ${x.anio} partir: ya tiene ${SUELDOS}; no se parte`); continue; }
     const glob = ls.filter((l) => (/^lump_.*_expense$/.test(l.normalizedCategory) || l.normalizedCategory === 'admin_general_expense') && Math.abs(l.amountNative) >= x.valor);
     if (glob.length === 0) {
-      // (TODO 351) Ninguna fila global alcanza (el estado por función reparte los sueldos entre costo de ventas, distribución y administración): partirlos sería inventar de cuál salen.
+      // Ninguna fila global alcanza (el estado por función reparte los sueldos entre costo de ventas, distribución y administración): partirlos sería inventar de cuál salen.
       // Se marca con `incluye` + `--posible` en la fila global más grande, que es lo que hizo Onboarding con los 10 británicos nuevos; el sitio dice «Posiblemente dentro de…».
       const g0 = ls.filter((l) => /^lump_.*_expense$/.test(l.normalizedCategory) || ['admin_general_expense', 'other_expenses'].includes(l.normalizedCategory)).sort((p, q) => Math.abs(q.amountNative) - Math.abs(p.amountNative))[0];
       if (!g0) { console.log(`  ${x.anio} partir: sin ninguna fila global de gasto; no decide`); continue; }
@@ -182,7 +182,7 @@ async function partirFilaGlobal(clubId, d, res, { escribir }) {
     // un total SIN RÓTULO (la suma de la nota «Staff costs» que no tiene etiqueta) no puede quedar como etiqueta publicada: se nombra por lo que es
     const etiq = /^\(total sin rótulo/.test(String(x.fila.etiqueta)) ? 'Staff costs (total de la nota de personal)' : /\s/.test(String(x.fila.etiqueta).trim()) || !x.fila.tabla ? String(x.fila.etiqueta).trim() : `${String(x.fila.etiqueta).trim()} — ${x.fila.tabla}`;
     const cita = `${x.fila.md.split('/').pop()} L${x.fila.linea}`;
-    // (TODO 351) el pdf y la etiqueta tienen que estar en la MISMA línea: con dos `includes` sobre todo el archivo, el segundo año de un club (misma etiqueta, otro pdf) figuraba como «ya tiene los ajustes»
+    // el pdf y la etiqueta tienen que estar en la MISMA línea: con dos `includes` sobre todo el archivo, el segundo año de un club (misma etiqueta, otro pdf) figuraba como «ya tiene los ajustes»
     if (ajustesTxt.split('\n').some((l) => l.includes(`"pdf":${JSON.stringify(pdf)}`) && l.includes(`"etiqueta":${JSON.stringify(etiq)}`))) { console.log(`  ${x.anio} partir: ya tiene los ajustes`); continue; }
     console.log(`  ${x.anio} partir: "${g.rawLabel}" ${fmt(Math.abs(g.amountNative) / x.factor)} -> ${fmt(resto)} + "${etiq}" ${fmt(x.fila.cifras[0])} (${SUELDOS}, ${cita})`);
     const mot = `caja-deuda.mjs --personal --partir (to-do 229): el año no tiene ${SUELDOS} y el costo de personal confirmado (staffCost, ${cita}) está dentro de "${g.rawLabel}"`;
@@ -194,7 +194,7 @@ async function partirFilaGlobal(clubId, d, res, { escribir }) {
   const { execFileSync } = await import('node:child_process');
   for (const c of cmds) execFileSync('node', [resolve(ROOT, 'tools/ajustes.mjs'), '--agregar', ...c, '--autor', 'caja-deuda --personal'], { cwd: ROOT, stdio: 'inherit' });
   console.log(`\nEscritos ${cmds.length} ajustes.`);
-  // (TODO 351) LA CADENA ENTERA, sola: los ajustes los toma verificar.mjs, las filas nuevas hay que categorizarlas (etapa 5: Jev y, si no sabe, Claude) y recién ahí cargar.mjs reemplaza el año. Sin esto,
+  // LA CADENA ENTERA, sola: los ajustes los toma verificar.mjs, las filas nuevas hay que categorizarlas (etapa 5: Jev y, si no sabe, Claude) y recién ahí cargar.mjs reemplaza el año. Sin esto,
   // cargar frena con «el .categorias.json NO está al día» y el año queda con la fila global sin partir (así quedaron los 12 club-años de los británicos hasta que se corrió a mano).
   const pdfs = [...new Set(cmds.map((c) => c[0]))];
   const { mkdirSync, writeFileSync } = await import('node:fs');
@@ -233,7 +233,7 @@ export async function medirPersonal({ ejecutar = false, club = null }) {
 export async function completarPersonal(clubId, { ejecutar = false, escribir = false, partir = false, anios = null }) {
   const { G, S } = sitio(); const d = G[clubId]; if (!d) { console.log(`no existe ${clubId}`); return; }
   const r = await personalDelClub(clubId, d, S, { ejecutar, reg: registroDocs() });
-  // (TODO 387) los años sin dato se registran con su causa SOLO al escribir de verdad y SOLO los años que alguien necesita (`anios`: los del aviso de audit.js); uno que se resuelve cierra su caso
+  // los años sin dato se registran con su causa SOLO al escribir de verdad y SOLO los años que alguien necesita (`anios`: los del aviso de audit.js); uno que se resuelve cierra su caso
   if (escribir) for (const x of r.res) {
     if (x.valor != null) { resolverCaso({ tool: 'costo-personal', club: clubId, anio: x.anio }); continue; }
     if (!anios?.includes(x.anio) || x.real != null || !x.causa || x.causa === 'ensayo-jev') continue;

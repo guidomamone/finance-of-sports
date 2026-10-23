@@ -145,7 +145,7 @@ if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename
     nombre = [c.displayName, c.name].filter(Boolean); pais = c.country;
   }
   if (!nombre) { console.error('uso: node tools/dato-publico.mjs "<club>" [--pais iso2] [--anio año] [--qid Q..] | --club <clubId> --anio <año> [--json]'); process.exit(1); }
-  // --prompt <estadio|capacidad|fundacion>: el PROMPT FIJO del agente que resuelve lo que las fuentes de la tool no resolvieron (TODO 367). Se pasa tal cual a un Agent (Sonnet, no Opus).
+  // --prompt <estadio|capacidad|fundacion>: el PROMPT FIJO del agente que resuelve lo que las fuentes de la tool no resolvieron. Se pasa tal cual a un Agent (Sonnet, no Opus).
   if (flag('--prompt')) {
     const campo = flag('--prompt'); const quien = [].concat(nombre).join(' / ');
     console.log(`Tarea: encontrar ${campo === 'estadio' ? `el estadio donde jugó de local ${quien} (${pais}) en ${anio}` : campo === 'capacidad' ? `la capacidad del estadio de ${quien} (${pais}) en ${anio}` : `el año de fundación de ${quien} (${pais})`}.

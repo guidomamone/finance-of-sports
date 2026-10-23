@@ -3,7 +3,7 @@
 // tools/alta-club.mjs deja en estado `pregunta`), leyendo el propio documento, y el SCRIPT verifica
 // que cada respuesta venga con una CITA TEXTUAL que existe de verdad en esa página del `.md`.
 //
-// POR QUÉ EXISTE (2026-09-30): de 141 clubes nuevos con `.md`, ~86 quedaban frenados por al menos una
+// POR QUÉ EXISTE: de 141 clubes nuevos con `.md`, ~86 quedaban frenados por al menos una
 // `pregunta` (perímetro, tipo de documento, cierre, deporte, tipo de cambio). Criterio de Guido: "no
 // mandarle a un club algo que se responde leyendo la prosa del propio documento". Muchas de esas
 // preguntas se contestan leyendo la portada, la nota de "bases de preparación" o el dictamen del

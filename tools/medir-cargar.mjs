@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// medir-cargar.mjs — mide un cambio de tools/cargar.mjs ANTES y DESPUÉS en todos los documentos (to-do 234, 2026-10-15)
+// medir-cargar.mjs — mide un cambio de tools/cargar.mjs ANTES y DESPUÉS en todos los documentos
 // ============================================================================
 //
 // POR QUÉ: los lotes de prueba (`lote.mjs --lista Admin/lotes/prueba-*.txt`) en ensayo cubren localizar y extraer, no la carga: un cambio en
@@ -16,14 +16,14 @@
 //   node tools/medir-cargar.mjs --salida /tmp/antes.jsonl          # antes del cambio (--trabajadores N, --lista <archivo>, --dir <carpeta>)
 //   node tools/medir-cargar.mjs --salida /tmp/despues.jsonl        # después
 //   node tools/medir-cargar.mjs --comparar /tmp/antes.jsonl /tmp/despues.jsonl
-//   node tools/medir-cargar.mjs --contra-sitio /tmp/despues.jsonl  # ¿el ensayo reproduce lo publicado? (to-do 236)
+//   node tools/medir-cargar.mjs --contra-sitio /tmp/despues.jsonl  # ¿el ensayo reproduce lo publicado?
 //
 // --contra-sitio: por documento cuyo año está publicado CON ESE MISMO documento (mismo sourceId), la suma por categoría del ensayo contra
 // la de data/ (diferencia de más de 0,001 M); y los que el ensayo frena aunque estén publicados. Un año publicado con otra fuente, a mano
 // o desde otro documento, no se compara.
 //
 // Lo que se espera de un cambio que entra: lo cargado idéntico; las diferencias, solo filas que pasan a la cola (explicadas una por una).
-// Medido así: el escalón de la categoría del renglón (to-do 234): 25 preguntas nuevas en 11 de 570 documentos.
+// Medido así: el escalón de la categoría del renglón: 25 preguntas nuevas en 11 de 570 documentos.
 // ============================================================================
 
 import { readdirSync, statSync, existsSync, readFileSync, appendFileSync, writeFileSync, copyFileSync } from 'node:fs';

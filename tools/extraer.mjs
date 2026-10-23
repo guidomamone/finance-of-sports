@@ -5,7 +5,7 @@
 //
 // POR QUÉ (Versión 324; proceso en Admin/PIPELINE.md). La IA COPIA Y ETIQUETA; no suma, no convierte, no
 // categoriza (eso lo hace un script en verificar.mjs: un LLM no sirve para verificar aritmética, FinVerBench, arXiv 2605.29586; y la categoría
-// es la etapa 7). Desgloses anidados y cuadros por segmento (Versión 335): ver la regla de detalla_a en SYSTEM. Lecciones del test por página (tools/archivo/localizar-extraer.mjs) ya incorporadas:
+// es la etapa 7). Desgloses anidados y cuadros por segmento: ver la regla de detalla_a en SYSTEM. Lecciones del test por página (tools/archivo/localizar-extraer.mjs) ya incorporadas:
 //   - ESCALA POR BLOQUE, no por documento: en 1. FC Köln la nota de ingresos está en miles y el estado en euros con céntimos; con una escala
 //     por documento la suma salía mil veces chica.
 //   - LÍNEA DEL .md de cada fila (las líneas se le pasan numeradas): la cola humana dice "mirá la línea 412 del .md" sin buscar.
@@ -25,7 +25,7 @@
 //   node tools/extraer.mjs "<pdf>" [...]        ENSAYO (sin API)
 //   node tools/extraer.mjs "<pdf>" --ejecutar   (necesita el .ubicacion.json de localizar.mjs; --rehacer fuerza)
 //   node tools/extraer.mjs --lista <archivo> [--ejecutar]
-//   node tools/extraer.mjs --lista <archivo> --modelo opus|sonnet [--ejecutar]   (to-do 288) MEDICIÓN: la extracción con ese modelo, en
+//   node tools/extraer.mjs --lista <archivo> --modelo opus|sonnet [--ejecutar] MEDICIÓN: la extracción con ese modelo, en
 //        .filas.<modelo>.json (no pisa ni usa el .filas.json; los documentos `filas-a-mano` se saltean). La lee medir-verificar.mjs --filas.
 // ============================================================================
 
@@ -33,9 +33,9 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { ajusteDe } from './ajustes.mjs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
-import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // (to-do 341) «club de fútbol» de los prompts de lectura es el deporte del club
+import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // «club de fútbol» de los prompts de lectura es el deporte del club
 import { aplicarCuadroSobrante } from './cuadro-sobrante.mjs'; // (to-do 237 al) un cuadro que localizar eligió y extraer no usó abre un renglón del estado
-import { shaMd, huellaUbicacion } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché; (237 ai) y de la ubicación
+import { shaMd, huellaUbicacion } from './cache-al-dia.mjs'; // huella del .md con el que se hizo el caché; (237 ai) y de la ubicación
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -90,9 +90,9 @@ export const INSTRUCCION_NOTAS_COMO_ESTADO = `ESTE DOCUMENTO NO TIENE ESTADO DE 
 - El resultado impreso (del ejercicio, o antes de impuestos en la conciliación del impuesto): tipo resultado, lado resultado, con su etiqueta tal cual.
 - No inventes renglones ni totales: si una nota no tiene total impreso, no la uses como renglón y escribilo en dudas.`;
 
-// REINTENTO (Versión 336): `reintento` = la lista de desgloses que no sumaron en la verificación anterior ({renglon, suma, objetivo}). Se le
+// REINTENTO: `reintento` = la lista de desgloses que no sumaron en la verificación anterior ({renglon, suma, objetivo}). Se le
 // agrega a la IA una instrucción SOLO en ese caso (decisión de Guido: las reglas extra son para cuando hay errores, no para el camino limpio).
-// EXTRAER SIN LOCALIZAR TODAVÍA (Versión 446): no se conocen los bloques, así que el ensayo usa lo que costó extraer en ESE club (mediana de
+// EXTRAER SIN LOCALIZAR TODAVÍA: no se conocen los bloques, así que el ensayo usa lo que costó extraer en ESE club (mediana de
 // sus llamadas en Admin/registros/api/claude-api.jsonl); sin historia, el techo de las extracciones medidas (percentil 90). Medido el 2026-10-10
 // sobre 389 extracciones: mediana US$ 0,20, percentil 90 US$ 0,33, máximo 0,72. Antes era US$ 0,07 fijo: Juventus costó US$ 0,18-0,34 por año.
 const TECHO_EXTRAER = 0.33; const MEDIANA_EXTRAER = 0.20;
@@ -108,7 +108,7 @@ export function estimarExtraerSinBloques(pdf) {
 // `filas-a-mano` con valor distinto de "no" (el último ajuste del documento gana)
 export const esAMano = (pdf) => { const a = ajusteDe(pdf, 'filas-a-mano'); return !!a && String(a.valor ?? '').trim().toLowerCase() !== 'no'; };
 
-// (to-do 288) `modelo` (opus | sonnet), solo desde la medición del CLI: otro archivo y ese modelo en las llamadas.
+// `modelo` (opus | sonnet), solo desde la medición del CLI: otro archivo y ese modelo en las llamadas.
 const MODELOS = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
 export async function extraer(pdf, { registro, ejecutar = false, rehacer = false, reintento = null, modelo = null } = {}) {
   const idModelo = modelo ? MODELOS[modelo] : MODELO; const SYSTEM = sistemaDe(deporteDePdf(pdf));
@@ -136,7 +136,7 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   // LAS NOTAS HACEN DE ESTADO (Versión 360; ver localizar.mjs PEDIDO_NOTAS_COMO_ESTADO): solo si localizar las eligió así.
   const notasComoEstado = ub.estadoDesdeNotas ? `\n\n${INSTRUCCION_NOTAS_COMO_ESTADO}` : '';
   const extra = notasComoEstado + (reintento?.length ? `\n\nREINTENTO: en la extracción anterior ${reintento.map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}" (buscala en el cuadro que abre el renglón que la contiene)` : `el desglose de "${x.renglon}" no sumó su renglón (las filas sumaron ${x.suma}, el renglón es ${x.objetivo})`)).join('; ')}. Revisá que estén TODAS las filas del cuadro, también las que tienen "-" en alguna columna. En un cuadro por segmento: si el renglón es de un segmento, usá la columna de ese segmento; si el renglón es del total (un renglón del estado de resultados, como "Costo de ventas"), usá la columna de TOTALES.` : '');
-  // TOPE DE SALIDA, ESCALERA (to-do 197). Escalón 0: una llamada con tope de 32.000 tokens (cubre casi todos: de 389 extracciones medidas se
+  // TOPE DE SALIDA, ESCALERA. Escalón 0: una llamada con tope de 32.000 tokens (cubre casi todos: de 389 extracciones medidas se
   // cortó una sola; las más largas, Napoli 2018-2022, rondan los 21.000-24.000). Escalón 1: SOLO si la respuesta se cortó por el tope, se
   // reintenta una vez con 128.000 (el máximo del modelo) por streaming, que hace falta para salidas largas. Compuerta, la misma de siempre:
   // la respuesta termina sola y el JSON es válido; si tampoco, el error sigue como antes (cola). Caso: Ferroviária dre-2022, libro contable

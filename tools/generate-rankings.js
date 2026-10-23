@@ -17,7 +17,7 @@
 // un ranking usa UNO y se bajaría todos. Y el costo se paga de nuevo en cada
 // liga que el visitante mire.
 //
-// PERO EL ARGUMENTO DECISIVO NO ES LA VISTA DE LIGA, ES INICIO (to-do 33): la
+// PERO EL ARGUMENTO DECISIVO NO ES LA VISTA DE LIGA, ES INICIO: la
 // vista de liga está detrás de un click, o sea que el visitante la pidió; el
 // ranking de Inicio lo paga TODO visitante, incluido el que rebota. Hoy el
 // sitio no carga ni un solo `data/<país>/<club>-data.js` de forma eager, y eso es un
@@ -25,7 +25,7 @@
 // Inicio lo rompe.
 //
 // POR QUÉ UN ARCHIVO POR LIGA y no uno solo: mismo patrón y mismo motivo que
-// `data/club-leagues/<iso2>.js` (Versión 164). La vista de la pestaña Ligas
+// `data/club-leagues/<iso2>.js`. La vista de la pestaña Ligas
 // baja EXACTAMENTE la liga que se está mirando, y el día que haya 200 ligas no
 // hay que re-particionar nada. Hoy los 8 archivos juntos son ~3 KB gzip.
 //
@@ -196,7 +196,7 @@ function rankingDe(api, leagueId, year) {
         + `desglose que no cierra contra su propio total.`);
     }
 
-    // (Versión 510) "INCLUIDO EN …": las filas en 0 que el año declara incluidas en otra (`fiscalYearMeta.incluidoEn`, js/finanzas-calc.js
+    // "INCLUIDO EN …": las filas en 0 que el año declara incluidas en otra (`fiscalYearMeta.incluidoEn`, js/finanzas-calc.js
     // bucketize). Van APARTE de `mix` (que solo lleva importes y tiene que sumar el ingreso): [fila, fila que la contiene].
     const incluidos = (rep.ingresos || []).filter(row => row.incluidoEn).map(row => [row.label, row.incluidoEn, ...(row.incluidoPosible ? [1] : [])]);
     filas.push({
@@ -239,7 +239,7 @@ function rankingDe(api, leagueId, year) {
     // las verificó. El null viaja tal cual, y la vista NO puede escribir un "de
     // M" sin él. Rellenarlo con "los que tenemos cargados" sería exactamente el
     // dato inventado que `data/club-leagues.js` existe para no inventar.
-    // Decisión de Guido (2026-10-19, to-do 309): sin tamaño verificado, el de la lista de equipos de Wikipedia de esa liga-año (`wiki.n`).
+    // Decisión de Guido: sin tamaño verificado, el de la lista de equipos de Wikipedia de esa liga-año (`wiki.n`).
     leagueSize: api.leagueSizeAt(leagueId, year),
     clubs: filas,
   };
@@ -280,7 +280,7 @@ function archivoDe(api, leagueId, porAnio) {
 }
 
 // ---------------------------------------------------------------------------
-// LOS RANKINGS POR REGIÓN DE INICIO (to-do 267): los que más facturan en el mundo y en América, sumando todas las ligas. Salen de los
+// LOS RANKINGS POR REGIÓN DE INICIO: los que más facturan en el mundo y en América, sumando todas las ligas. Salen de los
 // rankings de liga ya calculados, así que no hay una cuenta nueva. Reglas: UN solo ejercicio por ranking, nunca años mezclados (pedido
 // de Guido); el ejercicio es el que tiene más clubes (la misma regla del default de la pestaña Ligas, porque los balances tardan en
 // publicarse), y a igual cantidad el más reciente; un presupuesto solo (`official_budget`) no entra, porque es una proyección y no lo

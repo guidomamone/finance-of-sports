@@ -228,7 +228,7 @@ function reemplazarPaginas(md, nuevas) {
 //   ESCALÓN 1  método "regiones" (cortes alternados) — el .md ya se rearmó con "columnas" y la etapa 6 SIGUE sin cerrar el resultado
 //              impreso (Goiás 2010: el balance de arriba y el estado de abajo tienen columnas en lugares distintos)
 //   COMPUERTA  la misma de siempre: etapa 4 y etapa 6 sobre el .md nuevo. Cada escalón, una vez por documento (la marca del .md lo dice).
-//   ESCALÓN 1c (Versión 399) el REGISTRO de transcripciones (tools/inventario-transcripciones.mjs, que compara el .md entero con el texto
+//   ESCALÓN 1c el REGISTRO de transcripciones (tools/inventario-transcripciones.mjs, que compara el .md entero con el texto
 //              propio) dice "revisar" por cifras con un dígito distinto: eso frena la carga aunque la etapa 6 cierre. Se rearman las páginas
 //              con texto propio que todavía no se rearmaron (método "columnas"). Casos: Goiás 2016 (la pág. 2, nota 17 de ingresos, seguía
 //              con la lectura de Mistral: 94 cifras distintas) y 2014 (cierra, pero 10 cifras mal leídas en otras páginas).

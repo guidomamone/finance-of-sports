@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/lookup-fx-close.js — busca LOCAL, contra la serie de tools/fx-reference/,
-// el tipo de cambio de cierre de una fecha puntual (to-do 91). Reemplaza la
+// el tipo de cambio de cierre de una fecha puntual. Reemplaza la
 // búsqueda web ad-hoc que hasta ahora se repetía club por club (ver
 // club-data-mapping/referencia/fx.md, regla 1).
 //

@@ -49,13 +49,13 @@ const ROOT = resolve(import.meta.dirname, '..');
 export const ARCHIVO = process.env.COLA_ARCHIVO || resolve(ROOT, 'Admin', 'registros', 'cola-revision.jsonl');
 const DECISIONES = ['aceptar', 'corregir', 'descartar', 'preguntar-club'];
 
-// RESPUESTAS Y ESTADOS (Versión 350). `resp` tiene SOLO las respuestas de Guido (DECISIONES: aceptar, corregir, descartar,
+// RESPUESTAS Y ESTADOS. `resp` tiene SOLO las respuestas de Guido (DECISIONES: aceptar, corregir, descartar,
 // preguntar-club); la última gana. 'obsoleto' (la etapa ya no levanta el caso) y 'reabierto' (la etapa lo volvió a levantar) son ESTADOS, no
 // respuestas: van a `cerrado` (true si el último de los dos es 'obsoleto'). Hasta la Versión 349 'obsoleto' se guardaba como una respuesta
 // más, y un caso cerrado que volvía a aparecer quedaba "contestado" sin que nadie lo contestara: cargar.mjs frenaba por un caso que la cola
 // no mostraba (UC 2013, "Otras ganancias (pérdidas)", ni siquiera buscaba la respuesta de 2014), y verificar.mjs lo daba por respondido y no
 // lo mandaba a la cola (un "no cierra" o un "año vecino distinto" pasaba sin que nadie lo viera).
-// (to-do 224) UNA LECTURA POR PROCESO: leer() se llama en cada respuestaDe/casoYRespuesta (miles de veces en un verificar --lista) y
+// UNA LECTURA POR PROCESO: leer() se llama en cada respuestaDe/casoYRespuesta (miles de veces en un verificar --lista) y
 // releía y parseaba el archivo entero cada vez: 14 de los 36 s de `verificar.mjs --lista` sobre 237 documentos. Ahora guarda lo leído y
 // vuelve a leer solo si el archivo cambió (tamaño o fecha de modificación): una escritura de esta misma corrida (agregarCaso, responder)
 // lo cambia y la consulta siguiente la ve. Lo devuelto no se modifica en ningún llamador.
@@ -101,7 +101,7 @@ export function agregarCaso(caso) {
   const id = createHash('sha1').update(clave).digest('hex').slice(0, 7);
   const { casos, resp, cerrado } = leer();
   if (casos.has(id)) {
-    // Un caso cerrado como obsoleto que la etapa vuelve a levantar se REABRE (Versión 350): vuelve a la cola, no queda escondido.
+    // Un caso cerrado como obsoleto que la etapa vuelve a levantar se REABRE: vuelve a la cola, no queda escondido.
     if (cerrado.get(id) && !resp.has(id)) appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: 'reabierto', nota: 'la etapa volvió a levantar este caso' }) + '\n');
     return id;
   }
@@ -148,7 +148,7 @@ export function casoYRespuesta(pdf, etapa, motivo, detalle = '') {
   return { caso: casos.get(id) || null, resp: resp.get(id) || null };
 }
 
-// La respuesta a una duda POR TEMA de un club (Versión 341): busca en TODOS los documentos un caso con ese motivo y ese detalle
+// La respuesta a una duda POR TEMA de un club: busca en TODOS los documentos un caso con ese motivo y ese detalle
 // ("club|tema|renglón") que Guido ya contestó. Así una duda contestada para un año del club vale para todos sus años, aunque la IA la redacte
 // distinto (pasó tres veces con "¿se usa el cuadro por segmento para abrir 'Ingresos Comerciales'?" de UC 2018-2025).
 // El filtro recibe el caso y su respuesta (to-do 237 ad: cargar.mjs mira si la respuesta es un `aceptar`).
@@ -159,7 +159,7 @@ export function respuestaPorDetalle(etapa, motivo, detalle, filtro = () => true)
 }
 
 // Todas las respuestas reales (aceptar, corregir, descartar, preguntar-club; nunca 'obsoleto') de una etapa y motivo cuyos casos cumplen el
-// filtro, con su caso. La usa cargar.mjs para buscar respuestas de categoría por FAMILIA de etiqueta (to-do 152), no solo por el detalle exacto.
+// filtro, con su caso. La usa cargar.mjs para buscar respuestas de categoría por FAMILIA de etiqueta, no solo por el detalle exacto.
 export function respuestasDonde(etapa, motivo, filtro = () => true) {
   const { casos, resp } = leer(); const out = [];
   for (const c of casos.values()) if (c.etapa === etapa && c.motivo === motivo && resp.has(c.id) && filtro(c)) out.push({ caso: c, resp: resp.get(c.id) });
@@ -174,7 +174,7 @@ export function respuestaPosterior(pdf, etapa, desde) {
   return false;
 }
 export function pendientes() { const L = leer(); return [...L.casos.values()].filter((c) => pendiente(c, L)); }
-// OBSOLETOS (Versión 327). Un caso que la última corrida de su etapa YA NO levanta (la duda desapareció porque extraer se rehízo, la nota
+// OBSOLETOS. Un caso que la última corrida de su etapa YA NO levanta (la duda desapareció porque extraer se rehízo, la nota
 // ahora cierra, el total ahora cuadra) se cierra solo con decision 'obsoleto', para que la cola muestre únicamente lo vigente. Lo llama la
 // etapa al terminar un documento con las claves que levantó (respondidas o no). No toca casos ya respondidos por Guido.
 export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
@@ -195,7 +195,7 @@ export function cerrarObsoletos(pdf, etapa, clavesVigentes) {
 // QUÉ SE CIERRA: solo los casos de 'verificar' (deciden si un año se carga; si ya se cargó, no frenan nada) y los de 'cargar · perimetro' (si
 // el año se cargó, el perímetro ya se decidió). NUNCA 'cargar · categoria' (puede ser una categoría dudosa de un dato ya publicado: contestarla
 // puede cambiar lo que se ve) ni 'cargar · perfil' (es sobre el club, no sobre ese año, y sirve para los años que vienen).
-// "AÑO CARGADO", igual que lote.mjs (Versión 442): el registro (`cargado` en Admin/registros/transcripciones-estado.jsonl) o, si el registro quedó
+// "AÑO CARGADO", igual que lote.mjs: el registro (`cargado` en Admin/registros/transcripciones-estado.jsonl) o, si el registro quedó
 // viejo, el sitio: el club y el año de la última propuesta de carga del documento (`.carga.json`) están en su fiscalYearMeta.
 const cierraSiCargado = (c) => c.etapa === 'verificar' || (c.etapa === 'cargar' && c.motivo === 'perimetro');
 export async function cerrarCargados() {
@@ -220,7 +220,7 @@ export async function cerrarCargados() {
   return cerrados;
 }
 
-// RESUELTO POR UNA RESPUESTA DEL CLUB (Versión 348). Una etapa aplicó a ESTE documento la respuesta que Guido dio en OTRO documento del
+// RESUELTO POR UNA RESPUESTA DEL CLUB. Una etapa aplicó a ESTE documento la respuesta que Guido dio en OTRO documento del
 // mismo club (cargar.mjs, categoría por etiqueta: "Otras ganancias (pérdidas)" de UC contestada en 2014). Si este documento tiene su propio
 // caso pendiente con la misma clave, ya no hace falta: se cierra con decision 'obsoleto' y la nota dice qué respuesta lo resolvió. Solo toca
 // un caso pendiente (nunca uno que Guido contestó) y solo el de esa clave exacta.
@@ -246,20 +246,20 @@ export function cerrarPerfilSabido(detalle, nota) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
-  // --corregir-categoria (Versión 332): Guido fija la categoría de UNA fila de un documento aunque la categorización no haya tenido dudas (UC
+  // --corregir-categoria: Guido fija la categoría de UNA fila de un documento aunque la categorización no haya tenido dudas (UC
   // 2025: "Costo de ventas" sin desglose -> "sin desglosar por la fuente", no "Otros gastos"). Crea el caso y su respuesta de una vez; la toma
   // cargar.mjs en la próxima corrida (respuestaCat) y queda como precedente del club. La etiqueta se escribe como en el documento.
   if (A.includes('--corregir-categoria')) {
     const i = A.indexOf('--corregir-categoria'); const [pdf, etiqueta, categoria] = A.slice(i + 1, i + 4);
     if (!pdf || !etiqueta || !categoria) { console.error('Uso: node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta tal cual>" <categoría> [--nota "..."]'); process.exit(1); }
-    // (to-do 339) la categoría tiene que ser de la taxonomía del deporte del club del documento (data/category-map.js, SPORT_TAXONOMIES)
+    // la categoría tiene que ser de la taxonomía del deporte del club del documento (data/category-map.js, SPORT_TAXONOMIES)
     const { clubDeRuta } = await import('./carpetas-clubes.mjs'); const { categoriasDeDeporte, resolverDeporte, MENSAJE_SIN_DEPORTE } = await import('./deporte-club.mjs');
     const deporteDoc = resolverDeporte({ club: clubDeRuta(pdf).clubId, pdf });
     if (!deporteDoc) { console.error(MENSAJE_SIN_DEPORTE(pdf.split('/').slice(1, 3).join('/'))); process.exit(1); }
     if (!categoriasDeDeporte(deporteDoc)?.todas.has(categoria)) { console.error(`"${categoria}" no es una categoría de ${deporteDoc} (SPORT_TAXONOMIES de data/category-map.js)`); process.exit(1); }
     const { normalizar } = await import('./vocabulario.mjs');
     const id = agregarCaso({ pdf, md: pdf.replace(/\.pdf$/i, '.md'), etapa: 'cargar', motivo: 'categoria', detalle: normalizar(etiqueta), categoriaPropuesta: categoria, que: `Corrección de Guido: "${etiqueta}" va como ${categoria}.` });
-    // 'corregir' con la categoría, no 'aceptar' (Versión 408): agregarCaso devuelve el caso YA ABIERTO de esa fila si existe, con SU
+    // 'corregir' con la categoría, no 'aceptar': agregarCaso devuelve el caso YA ABIERTO de esa fila si existe, con SU
     // categoriaPropuesta; 'aceptar' aceptaba esa propuesta vieja y no la corrección. Caso: Novorizontino 2021, "Repasse da federação" seguía
     // como competition_bonus después de fijarlo como broadcasting.
     appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: 'corregir', valor: categoria, nota: flag('--nota') }) + '\n');
@@ -272,7 +272,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (!casos.has(id)) { console.error(`No hay ningún caso ${id} (node tools/cola.mjs para verlos).`); process.exit(1); }
     if (!DECISIONES.includes(decision)) { console.error(`La decisión tiene que ser una de: ${DECISIONES.join(', ')}`); process.exit(1); }
     if (decision === 'corregir' && !flag('--valor')) { console.error('Para corregir hace falta --valor "..."'); process.exit(1); }
-    // `descartar` EN UN CASO DE CATEGORÍA (to-do 205): ahí parece "descarto la pregunta", pero cargar.mjs saca la FILA de la carga (Vila Nova
+    // `descartar` EN UN CASO DE CATEGORÍA: ahí parece "descarto la pregunta", pero cargar.mjs saca la FILA de la carga (Vila Nova
     // 2025 "Adesão ao condomínio LFU", corregido a tiempo; Novorizontino 2020/2021/2024, diez respuestas "obsoleto: año ya cargado" que sacaban
     // "Com pessoal" de 2022, 2023 y 2025). Sacar una fila es una decisión con nombre propio: corregir --valor no_es_rubro (cargar.mjs la
     // excluye). Un caso de categoría de un año ya cargado NO se cierra solo (cerrarCargados() no los toca: pueden tocar un dato publicado): se
@@ -355,7 +355,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       console.log(`      ${(c.motivo.startsWith('duda-') || c.motivo === 'categoria' || c.motivo === 'perimetro' || c.motivo === 'perfil') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
       // (to-do 323 d, ok de Guido 2026-10-19, camino 3) la IA escribe la pregunta de una duda en dos formas: "¿Se carga X?" (sí = se carga) y "¿Se deja
       // afuera X?" (sí = queda afuera), con la misma propuesta "sí": el mismo criterio daba `aceptar` o `corregir "no"` y confundía. Solo se agrega una
-      // aclaración al listado; lo guardado (la pregunta, la propuesta, las respuestas) no cambia, porque verificar.mjs (to-do 211) lee las dos formas.
+      // aclaración al listado; lo guardado (la pregunta, la propuesta, las respuestas) no cambia, porque verificar.mjs lee las dos formas.
       if (/^¿\s*Se\s+dejan?\s+afuera\b/i.test(String(c.que || ''))) console.log('      (en esta pregunta «sí» = queda AFUERA de la carga; «no» = se carga)');
       if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);

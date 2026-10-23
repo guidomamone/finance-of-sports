@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/personal-pendientes.mjs — `fos personal`: el costo de personal de los clubes que tienen un aviso `sin-salarios`, en un comando (TODO 368)
+// tools/personal-pendientes.mjs — `fos personal`: el costo de personal de los clubes que tienen un aviso `sin-salarios`, en un comando
 // ============================================================================
 // Para cada club con `sin-salarios` o `sueldos-escondidos` en audit.js corre, en orden, lo que antes se hacía a mano:
 //   1. caja-deuda.mjs --personal --club <id> --escribir     completa staffCost donde la nota de personal lo da (estructura de la nota; Jev solo con --ejecutar)

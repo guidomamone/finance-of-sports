@@ -39,7 +39,7 @@
 //   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-verdad.tsv --jev    # con Jev (~US$ 0,0001 por documento)
 //   node tools/perimetro-senales.mjs --lista Admin/lotes/lote-NN.txt [--jev]                  # sin verdad: solo la propuesta
 //   node tools/perimetro-senales.mjs --lista Admin/mediciones/perimetro-a2-lista.txt --jev   # medición del paso A2 (clubes con ajuste, otro idioma)
-//   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-a2-verdad-ajustes.tsv --jev [--modelo sonnet]   # (to-do 288) A2 contra
+//   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-a2-verdad-ajustes.tsv --jev [--modelo sonnet]   # A2 contra
 //        el ajuste `perimetro` de cada documento; --modelo opus|sonnet: el paso A2 con ese modelo (Sonnet con su propia clave de caché, no pisa las de Opus)
 //   node tools/perimetro-senales.mjs --md "Clubes/Italia/AC Milan/x.md" --detalle      # un documento, con cada tabla encontrada
 //   node tools/perimetro-senales.mjs --md "Clubes/Grecia/Aris/x.md" --ver-a2           # el texto que recibiría Claude en A2 (gratis)
@@ -53,7 +53,7 @@
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname, relative, isAbsolute, sep } from 'node:path';
 import { createHash } from 'node:crypto';
-import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // (to-do 341) «club de fútbol» de los prompts de lectura es el deporte del club
+import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // «club de fútbol» de los prompts de lectura es el deporte del club
 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -72,7 +72,7 @@ function carpetaDeTrabajo(flag, ruta) {
   process.exit(1);
 }
 const USE_JEV = args.includes('--jev');
-// (to-do 288) --modelo: el modelo del paso A2 en ESTA corrida, para medir. Opus (sin --modelo) es el de siempre y usa las claves de caché de
+// --modelo: el modelo del paso A2 en ESTA corrida, para medir. Opus (sin --modelo) es el de siempre y usa las claves de caché de
 // siempre; con otro modelo, la clave incluye el modelo y la respuesta no se mezcla con las de Opus.
 const MODELOS_A2 = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
 const MODELO_A2 = flagVal('--modelo');
@@ -583,7 +583,7 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
     for (const [k, v] of unicos) if (v !== valor) for (const { e } of props.filter(({ e, r }) => (e.periodo?.cierre || e.md) === k && r.propuesta === v)) porDocumento.push({ pdf: e.pdf, valor: v, cierre: k });
     if (!valor && !porDocumento.length && pendJev && !ejecutar) { out.push({ carpeta: c, valor: null, porDocumento, pendienteJev: true, detalle: `${evidencia}; ${pendJev} documento(s) sin respuesta guardada de Claude (A2) o de Jev: se deciden al ejecutar solo si A2 ve un único estado o el voto alcanza; si no, el lote frena` }); continue; }
     if (!valor && !porDocumento.length) { out.push({ carpeta: c, valor: null, porDocumento, detalle: 'ningún documento del club decide' }); continue; }
-    // (to-do 227) los documentos que decidió el paso A2 (Claude) quedan en la `evidencia` del ajuste ("A2 (Claude): <md>; <md>"), para la
+    // los documentos que decidió el paso A2 (Claude) quedan en la `evidencia` del ajuste ("A2 (Claude): <md>; <md>"), para la
     // auditoría a posteriori (--auditar-a2).
     const a2 = props.filter(({ r }) => r.propuesta && /^A2 \(Claude\)/.test(r.motivo || '')).map(({ e }) => e.md);
     const evA2 = (mds) => (mds.length ? `A2 (Claude): ${mds.join('; ')}` : null);
@@ -606,7 +606,7 @@ function linea(r) {
 }
 
 async function main() {
-  // --auditar-a2 <carpeta> (to-do 227): la auditoría a posteriori del paso A2. Junta los documentos que decidió A2 en una corrida real (los
+  // --auditar-a2 <carpeta>: la auditoría a posteriori del paso A2. Junta los documentos que decidió A2 en una corrida real (los
   // que nombra la `evidencia` de un ajuste `perimetro` firmado por perimetro-senales) y deja un pedido por documento para un subagente de la
   // sesión, que abre el .md y dice, con cita, si el estado de resultados es del grupo o de la sociedad sola (instruccion.txt). Un error se
   // corrige con un ajuste del documento, y sube el umbral, cambia un peso o agrega un criterio; después se mide otra vez con

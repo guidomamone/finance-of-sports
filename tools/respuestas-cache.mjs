@@ -2,7 +2,7 @@
 // tools/respuestas-cache.mjs — MEMORIA DE RESPUESTAS PAGAS de la categorización (Jev y Claude por API), por (club, lado, rubro). Gratis: solo
 // lee y agrega líneas a un archivo.
 //
-// POR QUÉ EXISTE (Versión 321, 2026-09-30). Dos problemas medidos en el test de la etapa 6 (Admin/mediciones/test-cargar.md):
+// POR QUÉ EXISTE. Dos problemas medidos en el test de la etapa 6 (Admin/mediciones/test-cargar.md):
 //   1. PAGAR DOS VECES LO MISMO. La categorización de un documento se invalida entera cuando cambia su lista de rubros (huellas,
 //      tools/huellas.mjs), y cada arreglo de la preparación (etapa 3: qué filas, qué escala, qué tablas) cambia las listas de cientos de
 //      documentos a la vez. Sin memoria, cada arreglo volvía a mandar a Jev y a Claude las MISMAS filas que ya habían contestado (~US$ 0,04 por
@@ -75,7 +75,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       if (e.name.endsWith('.jev.json')) { const j = leer(p); const rj = leer(p.replace(/\.jev\.json$/, '.rubros.json')); if (!j || !rj?.club) continue;
         for (const r of j.rubros || []) if (!r.error && r.choice && !r.desdeCache) { jev.set(rj.club, r.lado, r.label, { choice: r.choice, confidence: r.confidence ?? null }); nj++; } }
       if (e.name.endsWith('.categorias.json')) { const c = leer(p); if (!c?.club || c.error) continue;
-        const carpeta = (String(c.md || '').match(/Clubes\/([^/]+\/[^/]+)\//) || [])[1] || c.club; // (Versión 403) clave de Claude: carpeta + nota
+        const carpeta = (String(c.md || '').match(/Clubes\/([^/]+\/[^/]+)\//) || [])[1] || c.club; // clave de Claude: carpeta + nota
         for (const r of c.rubros || []) if (r.escalon === 2 && !r.desdeCache && r.categoria) { claude.set(carpeta, r.lado, r.label, { categoria: r.categoria, confianza: r.confianza ?? null, motivo: r.motivo || null, modelo: c.modelo || null }, padreDe(r.section)); nc++; } } } };
     if (existsSync(resolve(ROOT, 'Generados'))) walk(resolve(ROOT, 'Generados'));
     console.log(`Sembrado: ${nj} respuestas de Jev y ${nc} de Claude, de lo que ya estaba en Generados/.`);

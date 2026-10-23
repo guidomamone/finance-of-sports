@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/primer-anio-ia.mjs — EL PRIMER AÑO DE UN CLUB, ESCALÓN 3 (to-do 214): una pregunta a Claude cuando del estado solo se puede
+// tools/primer-anio-ia.mjs — EL PRIMER AÑO DE UN CLUB, ESCALÓN 3: una pregunta a Claude cuando del estado solo se puede
 // confirmar el resultado.
 //
 // POR QUÉ (decisión de Guido, 2026-10-13: "no quiero revisar yo el primer año del club"). Sin año anterior cargado ni documento vecino,

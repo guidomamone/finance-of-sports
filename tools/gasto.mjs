@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/gasto.mjs — cuánta plata de API se gastó, en qué motor, en qué día y en qué documento. GRATIS: solo lee logs, no llama a nada.
 //
-// Por qué existe (2026-09-30): el objetivo del pipeline es "barato en dólares de API", y hasta ahora no había una forma de mirar
+// Por qué existe: el objetivo del pipeline es "barato en dólares de API", y hasta ahora no había una forma de mirar
 // el gasto sin sumar a mano los `resultados.jsonl`. Sin este número no se puede comparar un piloto contra otro ("¿el flujo nuevo
 // cuesta menos por documento?") ni detectar plata tirada.
 //
@@ -114,7 +114,7 @@ if (listaPath) {
   docsSel = docsSel.filter(([pdf]) => lista.has(pdf));
 }
 const total = Object.values(porMotor).reduce((a, m) => a + m.usd, 0);
-// (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: se sale cuando la escritura terminó.
+// process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: se sale cuando la escritura terminó.
 const a2 = { usd: usdA2, parteDelGasto: total > 0 ? usdA2 / total : 0, techo: TECHO_A2, retomar: total > 0 && usdA2 / total > TECHO_A2 };
 if (JSON_OUT) { await new Promise((fin) => process.stdout.write(JSON.stringify({ desde, sesion: sesionSel, a2, porMotor, porSesion, porDia, porDoc: Object.fromEntries(docsSel), pagadoSinMd }, null, 1) + '\n', fin)); process.exit(0); }
 

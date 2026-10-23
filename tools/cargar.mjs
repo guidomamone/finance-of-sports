@@ -104,7 +104,7 @@ import { parseNumber } from './datos-sitio.mjs';
 import { validacionAlDia } from './cache-al-dia.mjs'; // (to-do 237 ak)
 import { GENERADORES, queFalla } from './generadores.mjs'; // (to-do 298 x)
 import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs'; // (to-do 298 ah)
-import { combinar as combinarEntidades } from './suma-entidades.mjs'; // (to-do 283)
+import { combinar as combinarEntidades } from './suma-entidades.mjs';
 import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs'; // (to-do 345, Auditora 5)
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
@@ -116,21 +116,21 @@ const { categoriasAlDia, huellaVerificar } = await import('./huellas.mjs');
 const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
-const { marcarClub } = await import('./dentro-de-otro.mjs'); // (Versión 518) "Posiblemente dentro de otro rubro", ver escribir()
-const EV = await import('./evidencia-club.mjs'); // (to-do 209) la evidencia de carga va a Admin/carga-clubes/<clubId>.md, no a data/
+const { marcarClub } = await import('./dentro-de-otro.mjs'); // "Posiblemente dentro de otro rubro", ver escribir()
+const EV = await import('./evidencia-club.mjs'); // la evidencia de carga va a Admin/carga-clubes/<clubId>.md, no a data/
 const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, cerrarPerfilSabido, pendientes } = await import('./cola.mjs');
-const agregarCasoCola = agregarCaso; // (Versión 462) proponer() usa su propio agregarCaso (puede no escribir)
+const agregarCasoCola = agregarCaso; // proponer() usa su propio agregarCaso (puede no escribir)
 const { guardarPerfil, perfilVigente, perfilCercano, anioDeDoc, VENTANA_PERFIL } = await import('./perfil-clubes.mjs');
 const { ajusteDe, ajustesDe, ajustePerimetroDe, ceroRealDelClub } = await import('./ajustes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS, padreDe } = await import('./memoria-categorias.mjs');
-const { padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca } = await import('./padres-filas.mjs'); // en qué nota está cada fila (Versión 403)
+const { padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca } = await import('./padres-filas.mjs'); // en qué nota está cada fila
 // Nombres en castellano de las categorías (los de data/category-map.js), para que la pregunta de la cola diga "Administración y gastos
 // generales" y no "admin_general_expense".
 const NOMBRE_CAT = (() => { try { const t = readFileSync(resolve(import.meta.dirname, '..', 'data', 'category-map.js'), 'utf8'); const o = {}; for (const b of t.match(/_CATEGORY_LABELS = \{[\s\S]*?\n\};/g) || []) for (const m of b.matchAll(/^\s*(\w+): '([^']+)'/gm)) o[m[1]] = m[2]; return o; } catch { return {}; } })();
 const { periodoDe, xhtmlHermano } = await import('./periodo.mjs');
-const { categoriasDeDeporte, cerosDeDeporte, bolsonDeDeporte } = await import('./deporte-club.mjs'); // (to-do 339) las categorías de un deporte
+const { categoriasDeDeporte, cerosDeDeporte, bolsonDeDeporte } = await import('./deporte-club.mjs'); // las categorías de un deporte
 const { normalizar, claveFamilia, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } = await import('./vocabulario.mjs');
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -148,10 +148,10 @@ const COMPARAR = flagVal('--comparar');
 const JSON_OUT = ARGS.includes('--json');
 const MAX_SIN_CAT = flagVal('--max-sin-categoria') !== null ? Number(flagVal('--max-sin-categoria')) : 0.05;
 const UMBRAL_CLAUDE = flagVal('--umbral-claude') !== null ? Number(flagVal('--umbral-claude')) : 0.8;
-// LAS FILAS SALEN DE LA VERIFICACIÓN (Versión 324): Generados/.../<doc>.verificacion.json (localizar -> validar -> extraer -> verificar), y
+// LAS FILAS SALEN DE LA VERIFICACIÓN: Generados/.../<doc>.verificacion.json (localizar -> validar -> extraer -> verificar), y
 // solo si quedó en estado 'ok' (sin casos pendientes en la cola humana). Hasta el to-do 218 había otro camino, sin --desde-verificacion: la
 // selección de filas por palabras de proponer-carga.mjs (seleccionarFilas + briefingFor, que corría prepare-onboarding.mjs). Ningún proceso
-// lo usaba (el lote y cargar-lote siempre pasan el flag) y se sacó con el ok de Guido (2026-10-13); proponer-carga.mjs está en tools/archivo/.
+// lo usaba (el lote y cargar-lote siempre pasan el flag) y se sacó con el ok de Guido; proponer-carga.mjs está en tools/archivo/.
 // El flag se sigue aceptando y no cambia nada.
 const CON_VALOR = new Set(['--lista', '--salida', '--comparar', '--max-sin-categoria', '--umbral-claude']);
 const DOCS = ARGS.filter((a, i) => !a.startsWith('--') && !CON_VALOR.has(ARGS[i - 1]));
@@ -170,12 +170,12 @@ export function cargarSitio(root = ROOT) {
   const files = ['data/clubs.js', 'data/currency-map.js', 'data/sources-view.js', 'data/leagues.js', 'data/club-leagues.js',
     ...readdirSync(resolve(root, 'data/club-leagues')).filter((f) => f.endsWith('.js')).sort().map((f) => 'data/club-leagues/' + f),
     ...archivosData(),
-    // (Versión 552, to-do 149) quién condujo cada club: data/gestiones/<país>.js
+    // quién condujo cada club: data/gestiones/<país>.js
     ...(existsSync(resolve(root, 'data/gestiones')) ? readdirSync(resolve(root, 'data/gestiones')).filter((f) => f.endsWith('.js')).sort().map((f) => 'data/gestiones/' + f) : [])];
   for (const f of files) vm.runInContext(readFileSync(resolve(root, f), 'utf8'), ctx, { filename: f });
   return vm.runInContext('({ clubs, sources, CURRENCY_META, FX_CLOSE, FX_PLAUSIBLE_RANGE, COUNTRIES, LEAGUES, CLUB_LEAGUE_BY_YEAR: window.CLUB_LEAGUE_BY_YEAR, generic: window.CLUB_GENERIC_DATA || {}, gestiones: window.CLUB_GESTIONES || {} })', ctx);
 }
-// (to-do 339) el lado de una categoría sale de la taxonomía del deporte del club (ladoDeCat, dentro de proponer), no de una lista global de fútbol
+// el lado de una categoría sale de la taxonomía del deporte del club (ladoDeCat, dentro de proponer), no de una lista global de fútbol
 
 function leerRegistro(root = ROOT) {
   const p = resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl');
@@ -211,7 +211,7 @@ function perimetroDeTexto(t) {
 }
 export function perimetroHeredado(sitio, clubId) {
   const cd = sitio.generic[clubId] || {};
-  // (to-do 209) la cabecera del club (antes, el comentario del principio del data file) y la nota de cada fuente viven en su evidencia
+  // la cabecera del club (antes, el comentario del principio del data file) y la nota de cada fuente viven en su evidencia
   const header = EV.cabeceraDe(clubId).slice(0, 6000);
   const porAnio = {};
   for (const [y, m] of Object.entries(cd.fiscalYearMeta || {})) { const s = sitio.sources[m.sourceId] || {}; porAnio[y] = perimetroDeTexto(`${s.title || ''} ${s.note || (s.id ? EV.textoDeFuente(EV.leer(clubId), s.id) : '')}`); }
@@ -283,7 +283,7 @@ function porQueNoListo(e) {
   return 'la etapa 6 cerró y la etapa 4 no deja números sin confirmar, pero el registro no se actualizó: correr el lote (la marca solo la pone el lote, ver to-do 160)';
 }
 export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false, escribirCola = true, voltearRespuestas = false } = {}) {
-  // (Versión 462) escribirCola false: el intento del escalón 1 no escribe casos en la cola; los deja en P.casosPendientes (se escriben si gana).
+  // escribirCola false: el intento del escalón 1 no escribe casos en la cola; los deja en P.casosPendientes (se escriben si gana).
   const casosPendientes = [];
   const agregarCaso = (c) => (escribirCola ? agregarCasoCola(c) : casosPendientes.push(c));
   sitio ??= cargarSitio(); registro ??= leerRegistro();
@@ -311,7 +311,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // El período se recalcula con tools/periodo.mjs sobre el .md actual: el del registro puede ser de una versión anterior de periodo.mjs
   // (el arreglo de las temporadas "2009-10" del 2026-09-30 cambió 165 marcas `nombreNoCoincide`). Si difiere del registro, se avisa.
   let per = e.periodo || null;
-  // (Versión 413) con ajuste manual `cierre`, el período del registro ya es el del ajuste (inventario-transcripciones.mjs): no se recalcula.
+  // con ajuste manual `cierre`, el período del registro ya es el del ajuste (inventario-transcripciones.mjs): no se recalcula.
   if (!ajusteDe(pdf, 'cierre')) try { const mdT = readFileSync(resolve(ROOT, e.md), 'utf8'); const vivo = periodoDe(mdT, basename(pdf), { xhtml: xhtmlHermano(resolve(ROOT, e.md), mdT) }); if (per && (vivo.tipo !== per.tipo || !!vivo.nombreNoCoincide !== !!per.nombreNoCoincide)) P.avisos.push(`el período del registro (${per.tipo}${per.nombreNoCoincide ? ', nombre no coincide' : ''}) está desactualizado: tools/periodo.mjs hoy dice ${vivo.tipo}${vivo.nombreNoCoincide ? ', nombre no coincide' : ''} (regenerar el registro)`); per = vivo; } catch { /* sin .md: frena abajo */ }
   // Sin fecha de cierre: se deduce de los documentos vecinos del club (tools/cierre-vecinos.mjs, Versión 342), con aviso. Si no se puede, sigue
   // como antes (frena más abajo por período o por año).
@@ -386,7 +386,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // ---- 2. club y año
   const cr = clubDeRuta(pdf);
   const MSG_ALTA = 'el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa';
-  // (to-do 210) CLUB NUEVO EN EL ENSAYO: antes se cortaba acá y el ensayo de cargar-lote.mjs contaba el año como "se escribiría con alta"
+  // CLUB NUEVO EN EL ENSAYO: antes se cortaba acá y el ensayo de cargar-lote.mjs contaba el año como "se escribiría con alta"
   // sin haber mirado ningún freno de abajo (categorías en la cola, perfil, tie-outs, fx, fuente). Caso: lote 67 (Grecia), el ensayo prometía
   // 21 años y --escribir no escribió ninguno (alta hecha y revertida 5 veces). Ahora, SOLO sin --escribir y con la ficha del alta completa
   // (id, país, moneda e inicio del ejercicio sin preguntas, de analizar()), se anota el freno `club` y se sigue con un CLUB PROVISIONAL
@@ -411,11 +411,11 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const clubId = cr.clubId || provisional.id; P.clubId = clubId;
   const club = provisional ? provisional.club : sitio.clubs[clubId]; const cd = provisional ? provisional.cd : sitio.generic[clubId];
   if (!club || !cd) { return corta('club', `${clubId} no tiene ${rutaData(clubId)} registrado en CLUB_GENERIC_DATA`); }
-  // (to-do 339) las categorías válidas son las del deporte del club (SPORT_TAXONOMIES de data/category-map.js); sin deporte o sin taxonomía no se categoriza
+  // las categorías válidas son las del deporte del club (SPORT_TAXONOMIES de data/category-map.js); sin deporte o sin taxonomía no se categoriza
   const TX = club.sport ? categoriasDeDeporte(club.sport) : null;
   if (!TX) { return corta('deporte', club.sport ? `el deporte «${club.sport}» de ${clubId} no tiene taxonomía en data/category-map.js (SPORT_TAXONOMIES)` : `${clubId} no declara deporte (sport en data/clubs.js)`); }
   const ladoDeCat = (c) => (TX.revenue.has(c) ? 'revenue' : TX.expense.has(c) ? 'expense' : null);
-  // (to-do 339) lo que no debería dar 0, y las preguntas de perfil, son los del deporte del club (CEROS_POR_DEPORTE: una sola tabla; [] = ninguno, a propósito)
+  // lo que no debería dar 0, y las preguntas de perfil, son los del deporte del club (CEROS_POR_DEPORTE: una sola tabla; [] = ninguno, a propósito)
   const CEROS = cerosDeDeporte(club.sport);
   if (!CEROS) { return corta('deporte', `el deporte «${club.sport}» no tiene clave en CEROS_POR_DEPORTE (tools/deporte-club.mjs): una tabla vacía ([]) o con lo que no puede dar 0`); }
   const alta = analizar(pdf, sitio);
@@ -437,7 +437,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     if (!existsSync(catPath)) P.avisos.push(AVISO_SIN_CAT);
   }
   if ((cd.fiscalYearMeta || {})[year]) { if (P.reemplaza) P.avisos.push(`${clubId} ${year} ya cargado: se reemplaza`); else frena('año', `${clubId} ya tiene el ejercicio ${year} cargado`); }
-  // (Versión 637) ajuste manual `no-recargar`: lo publicado de ese año no lo reproduce una corrida nueva y es mejor que ella (Lazio 2012-13, Roma 2021: el
+  // ajuste manual `no-recargar`: lo publicado de ese año no lo reproduce una corrida nueva y es mejor que ella (Lazio 2012-13, Roma 2021: el
   // desglose de las notas en miles, que el script no abre). `--reemplazar` frena; para recargar de verdad hay que anular el ajuste a conciencia.
   { const nr = ajusteDe(pdf, 'no-recargar'); if (nr && (cd.fiscalYearMeta || {})[year]) frena('no-recargar', `ajuste manual no-recargar (${nr.fecha}): ${nr.motivo}`); }
   for (const n of ['anio', 'cierre', 'currency', 'reportType', 'fx']) { const c = campo(n); if (c.estado === 'pregunta') frena(`alta:${n}`, c.pregunta); }
@@ -445,7 +445,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // perímetro
   const perC = campo('perimetro'); const her = perimetroHeredado(sitio, clubId);
   let perimetro = perC.valor;
-  const ajPer = ajustePerimetroDe(pdf); // escalón 0 (Versión 412): ajuste manual del documento o del club
+  const ajPer = ajustePerimetroDe(pdf); // escalón 0: ajuste manual del documento o del club
   if (ajPer) { perimetro = ajPer.valor; P.avisos.push(`perímetro: ${perimetro} (ajuste manual ${ajPer.pdf.endsWith('/') ? 'del club' : 'del documento'}, ${ajPer.fecha}: ${ajPer.motivo})`); }
   else if (perC.estado === 'pregunta') {
     // Qué dice el documento, según la pregunta del alta: solo el grupo consolidado, consolidado + individual, o dos entidades en la carpeta.
@@ -484,7 +484,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     const pv = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false }));
     if (!existsSync(pv)) { return corta('filas', 'no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)'); }
     let VV = JSON.parse(readFileSync(pv, 'utf8'));
-    // (to-do 283) UN EJERCICIO QUE SUMA DOS ENTIDADES: el ajuste `suma-con` junta este documento con el de la otra entidad (tools/suma-entidades.mjs).
+    // UN EJERCICIO QUE SUMA DOS ENTIDADES: el ajuste `suma-con` junta este documento con el de la otra entidad (tools/suma-entidades.mjs).
     const ajSuma = ajusteDe(pdf, 'suma-con');
     if (ajSuma && VV.estado === 'ok') {
       const S = combinarEntidades(pdf, VV, ajSuma);
@@ -495,11 +495,11 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // (to-do 298 a3) AVISO, no freno: el caché lo hizo otra versión de verificar.mjs (o de sus reglas). Correr tools/verificar.mjs sobre este PDF (gratis) antes de cargar.
     if (VV.scriptHuella && VV.scriptHuella !== huellaVerificar()) P.avisos.push(`caché viejo: el .verificacion.json es de otra versión de verificar.mjs (sello ${VV.scriptHuella}, hoy ${huellaVerificar()}); correr node tools/verificar.mjs "${pdf}" --rubros (gratis) por si hoy da otra cosa (to-do 298 a3)`);
     if (VV.estado !== 'ok') { return corta('filas', `la verificación tiene ${VV.cola.length} caso(s) pendientes en la cola humana (node tools/cola.mjs)`); }
-    P.ajustes = VV.ajustes || null; // ajustes manuales que aplicó verificar.mjs (Versión 366): se escriben como comentario en la meta del año
+    P.ajustes = VV.ajustes || null; // ajustes manuales que aplicó verificar.mjs: se escriben como comentario en la meta del año
     // Formato de cada fila: {label, page, section, native, tside, origen}. Ingresos y gastos en positivo (los signos los decide
     // el paso 5 de abajo); financiero e impuesto con su signo impreso y su destino ya decidido por extraer.mjs (no por palabras).
     const raw = [
-      // signoFijo (Versión 338): el signo que ya decidió verificar.mjs (positivo = suma a su lado; negativo = lo reduce, como "Feriado Legal
+      // signoFijo: el signo que ya decidió verificar.mjs (positivo = suma a su lado; negativo = lo reduce, como "Feriado Legal
       // −15.597" de UC 2020, una reversión de la provisión de vacaciones dentro de los gastos de administración). El paso 5 lo usa tal cual en
       // vez de adivinarlo por tabla: hasta la 337 se perdía y la fila quedaba sumando gasto (UC 2020 frenaba con 31.194 de diferencia).
       ...VV.lineas.map((l) => ({ label: l.etiqueta, page: l.pagina, section: l.origen, native: Math.abs(l.M), signoFijo: l.M, tside: l.lado === 'ingreso' ? 'revenue' : 'expense', origen: `verificacion (${l.origen})`, ...(l.categoria ? { catAjuste: l.categoria } : {}) })),
@@ -520,7 +520,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // ---- 4. categoría de cada fila
   const cj = existsSync(catPath) ? JSON.parse(readFileSync(catPath, 'utf8')) : { rubros: [] };
   if (P.suma && existsSync(P.suma.categorias)) cj.rubros = [...(cj.rubros || []), ...(JSON.parse(readFileSync(P.suma.categorias, 'utf8')).rubros || [])]; // las del documento propio primero (porEtiqueta toma la primera)
-  // Por etiqueta Y lado (Versión 377): la misma etiqueta puede estar de los dos lados en un documento (Fortaleza 2025 "Diversos"). Si el
+  // Por etiqueta Y lado: la misma etiqueta puede estar de los dos lados en un documento (Fortaleza 2025 "Diversos"). Si el
   // rubro no trae lado, vale solo por etiqueta.
   const porEtiqueta = new Map(); for (const r of cj.rubros || []) { const k = norm(r.label); if (!porEtiqueta.has(k)) porEtiqueta.set(k, r); if (r.lado && !porEtiqueta.has(`${k}|${r.lado}`)) porEtiqueta.set(`${k}|${r.lado}`, r); }
   // Precedente del mismo club (todos sus años cargados; el año que se carga no está, por definición): exacto o por FAMILIA de etiquetas, con
@@ -544,7 +544,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     const noRubroDudoso = verificada && lado && c?.categoria === 'no_es_rubro' && (c.escalon === 2 && (incluirNoRubro || (c.confianza ?? 0) < UMBRAL_CLAUDE));
     const rechazada = c && (delOtroLado(c.categoria, lado) || noRubroDudoso) ? c.categoria : null;
     if (c && !rechazada) return { cat: c.categoria || null, conf: c.confianza ?? null, escalon: c.escalon, fuenteCat: 'categorias.json', enLista: true };
-    const p = precedenteFamilia(lineasClub, clubId, lado || null, label, { padre }); // (Versión 403) con la nota de la fila: cambios A y B
+    const p = precedenteFamilia(lineasClub, clubId, lado || null, label, { padre }); // con la nota de la fila: cambios A y B
     if (p && !delOtroLado(p.cat, lado) && !(noRubroDudoso && p.cat === 'no_es_rubro')) return { cat: p.cat, conf: 1, escalon: 0, fuenteCat: `precedente del club, ${p.via} (${rechazada ? `categorias.json decía ${rechazada}` : 'la fila no estaba en categorias.json'})`, enLista: true };
     if (rechazada) return { cat: lado === 'revenue' ? 'other_income' : 'other_expenses', conf: 0, escalon: 2, fuenteCat: `categorias.json decía ${rechazada}${noRubroDudoso ? ` con ${c.confianza} (fila verificada: no se excluye sola)` : ', del otro lado que la fila'}: se propone la genérica de su lado`, enLista: true, ladoRechazado: true };
     return { cat: null, fuenteCat: 'la fila no está en categorias.json ni tiene precedente', enLista: false };
@@ -574,7 +574,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   //   - la respuesta de Guido gana sobre cualquier otra categoría de esa fila (aceptar -> la propuesta; corregir --valor <categoría> -> esa;
   //     descartar -> la fila no se carga), y queda en Admin/registros/categorias-aprendidas.jsonl con confianza 1: los años siguientes del mismo club la
   //     toman como precedente gratis (memoria-categorias.mjs).
-  // `clave` (Versión 374): la etiqueta normalizada, o "etiqueta|lado" para la pregunta propia de una fila cuyo lado contradice la respuesta
+  // `clave`: la etiqueta normalizada, o "etiqueta|lado" para la pregunta propia de una fila cuyo lado contradice la respuesta
   // que ya hay para la etiqueta (ver COMPUERTA DEL LADO abajo).
   const respuestaCat = (label, clave = norm(label), padre = null, lado = null, { familia = false, propuesta = null } = {}) => {
     let { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', clave);
@@ -625,7 +625,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // volvieron a preguntarlo. Medido sobre las respuestas existentes: con 2 clubes decide 34 y acierta 34; con 1, decide 59 y acierta 59.
     // Una respuesta que saca la fila (descartar) no decide desde otro club (sacaFila, abajo).
     // Compuertas: misma etiqueta (claveFamilia), mismo lado, mismo CONTEXTO (contextoFila(): la nota que la abre o, en el estado, el renglón
-    // título de arriba), respondida en al menos 1 club (to-do 215) y todos con la misma categoría. Caso: "c) trattamento di fine rapporto" bajo
+    // título de arriba), respondida en al menos 1 club y todos con la misma categoría. Caso: "c) trattamento di fine rapporto" bajo
     // "per il personale" (wages_squad en varios clubes); "altri costi" no se generaliza porque cada club lo tiene bajo otro título.
     if (!resp && familia && lado) {
       const ctx = contextoFila(P.md, label, lado);
@@ -666,7 +666,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // categoría por etiqueta (.categorias.json, y el precedente sin contexto, que se arma con lo publicado y puede traer el error) no decide:
   // solo el precedente del club con la MISMA nota; si no hay, a la cola con la clave "etiqueta@renglón" y la categoría por etiqueta como
   // propuesta, así se contesta (o se corrige) una sola de las dos.
-  // RENGLÓN DISTINTO = TÍTULO DISTINTO (to-do 234): acá los renglones se separan por su título exacto (sin la marca de nota), no por
+  // RENGLÓN DISTINTO = TÍTULO DISTINTO: acá los renglones se separan por su título exacto (sin la marca de nota), no por
   // mismoPadre(), que junta dos títulos con una palabra en común. Olympiacos 2025: "Δαπάνη παροχών ποδοσφαιριστών" (jugadores) y "Δαπάνη
   // παροχών λοιπών εργαζομένων" (otros empleados) comparten "Δαπάνη παροχών" y quedaban como una sola nota, así que "Εισφορές κοινωνικής
   // ασφάλισης" de los otros empleados (1,20 M) heredaba wages_squad sin pregunta. Lo que decide si son distintos de verdad es la compuerta
@@ -799,7 +799,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // otros deportes (tools/perfil-clubes.mjs). Si el perfil no lo sabe, la pregunta va a la cola (sí o no) y su respuesta queda en el perfil.
   // Un documento con una línea "sin desglosar por la fuente" no se revisa (ya se sabe que no abre). Un documento ya reintentado
   // (.ubicacion.json con indiceAmpliado) no se vuelve a reintentar: se carga con aviso.
-  // (Versión 511) INCLUIDO EN: ajustes `incluye` del documento -> fiscalYearMeta.incluidoEn ({ member_dues: 'matchday_competition' }, o
+  // INCLUIDO EN: ajustes `incluye` del documento -> fiscalYearMeta.incluidoEn ({ member_dues: 'matchday_competition' }, o
   // { member_dues: { en: 'other_income', posible: true } } si no está confirmado). Lo lee la vista simplificada (js/finanzas-calc.js bucketize).
   const incluidoEn = Object.fromEntries(ajustesDe(pdf).filter((a) => a.campo === 'incluye' && a.valor && a.categoria).map((a) => [a.valor, a.posible ? { en: a.categoria, posible: true } : a.categoria]));
   {
@@ -815,7 +815,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // de sueldos en 0, y los sueldos (nota 21, "Sueldos 705.432") quedaron adentro de "Total Gastos de Administración".
     const lumpIng = conCat.some((f) => f.destino === 'revenue' && /^lump_/.test(f.cat)); const lumpGas = conCat.some((f) => f.destino === 'expense' && /^lump_/.test(f.cat));
     {
-      for (const { nombre, cats, lado } of CEROS.filter((x) => x.lado)) if (!(lado === 'gasto' ? lumpGas : (lumpIng || sinIngresosNBB)) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* (to-do 237 g) un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // (to-do 163) el lado lo usa verificar.mjs
+      for (const { nombre, cats, lado } of CEROS.filter((x) => x.lado)) if (!(lado === 'gasto' ? lumpGas : (lumpIng || sinIngresosNBB)) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* (to-do 237 g) un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // el lado lo usa verificar.mjs
       // (to-do 298 p1, decisión de Guido 2026-10-19: "que cada 5 años se chequee, y ahí se puede ir para atrás y corregir") EL PERFIL POR AÑO:
       // vale el chequeo más cercano dentro de la ventana (tools/perfil-clubes.mjs, perfilVigente); la respuesta de la cola puede venir de
       // CUALQUIER documento del club dentro de la ventana (antes, solo la de este documento: 391 casos para 181 preguntas). Un chequeo nuevo
@@ -844,7 +844,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       };
       for (const [campo, nombre, catsIng, catsGas, pregunta] of CEROS.filter((x) => x.perfil).map((x) => [x.perfil.campo, x.nombre, x.perfil.catsIng, x.perfil.catsGas, x.perfil.pregunta(club.name || clubId)])) {
         if (lumpIng || suma(catsIng) || (catsGas.length && suma(catsGas))) continue;
-        // (Versión 511) ajuste `incluye`: la categoría está dentro de otra línea (el documento las junta): no es un 0 a revisar ni una pregunta.
+        // ajuste `incluye`: la categoría está dentro de otra línea (el documento las junta): no es un 0 a revisar ni una pregunta.
         if (catsIng.every((c) => incluidoEn[c]) && catsGas.every((c) => incluidoEn[c])) { P.avisos.push(`"${nombre}" da 0 porque está incluida en otra línea (ajuste manual \`incluye\`)`); continue; }
         let tiene = perfilVigente(clubId, campo, year)?.valor; if (tiene === undefined || tiene === null) tiene = respPerfil(campo, nombre);
         // (to-do 232 c, aprobado por Guido el 2026-10-14) FORMA JURÍDICA: una ΠΑΕ (Ποδοσφαιρική Ανώνυμη Εταιρεία) es por ley una sociedad solo de
@@ -880,7 +880,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         }
       }
     }
-    // ESCALÓN 0 DEL AVISO (Versión 381): un ajuste manual `cero-real` de Guido para esa categoría dice que el 0 es real (tools/ajustes.mjs).
+    // ESCALÓN 0 DEL AVISO: un ajuste manual `cero-real` de Guido para esa categoría dice que el 0 es real (tools/ajustes.mjs).
     for (const c of [...ceros]) { const aj = ajusteDe(pdf, 'cero-real') && ajustesDe(pdf).find((x) => x.campo === 'cero-real' && String(x.valor).toLowerCase() === c.categoria.toLowerCase()); if (aj) { ceros.splice(ceros.indexOf(c), 1); P.avisos.push(`"${c.categoria}" en 0: real, por ajuste manual (${aj.fecha}, ${aj.motivo})`); } }
     // ESCALÓN 0b DEL AVISO (to-do 298 p2, ok de Guido 2026-10-19): el `cero-real` de esa categoría en OTRO documento del club vale para este
     // año, con UNA compuerta: ningún año cargado del club tiene esa categoría con monto (si alguno la tuvo, el 0 puede ser un desglose perdido
@@ -1112,7 +1112,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   else if (sitio.sources[sourceId]) { if (P.reemplaza) P.avisos.push(`sources['${sourceId}'] ya existe: se conserva`); else frena('fuente', `sources['${sourceId}'] ya existe`); }
   const ligaC = campo('liga');
   let ligaExistente = ((sitio.CLUB_LEAGUE_BY_YEAR || {})[clubId] || {})[year];
-  // (Versión 402) una fila existente en null ("nadie lo verificó") no frena una liga verificada nueva: se reemplaza. Caso: Goiás 2009-2011
+  // una fila existente en null ("nadie lo verificó") no frena una liga verificada nueva: se reemplaza. Caso: Goiás 2009-2011
   // y 2013, cargados con liga null antes de que el roster estuviera en la caché.
   if (ligaExistente === null && ligaC.valor) ligaExistente = undefined;
   P.liga = { valor: ligaExistente !== undefined ? ligaExistente : (ligaC.valor ?? null), fuente: ligaExistente !== undefined ? 'la fila ya existe en data/club-leagues' : ligaC.fuente, estado: ligaExistente !== undefined ? 'existe' : ligaC.estado, nota: ligaC.nota };
@@ -1170,7 +1170,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       P.avisos.push(`gestión: ningún presidente confirmado cubre ${year} (cierre ${cierreY}); pregunta en la cola (no frena)`);
     }
   }
-  Object.defineProperty(P, 'casosPendientes', { value: casosPendientes, enumerable: false }); // (Versión 462) no va al .carga.json
+  Object.defineProperty(P, 'casosPendientes', { value: casosPendientes, enumerable: false }); // no va al .carga.json
   P.resumen = { carga: P.frena.length === 0, motivos: P.frena.length, lineasIngreso: rev.length, lineasGasto: exp.length, metaFilas: metaFilas.length, excluidas: filas.filter((f) => f.destino === 'excluida').length };
   return P;
 }
@@ -1191,7 +1191,7 @@ function cierreDe(src, abre) {
   }
   return -1;
 }
-// (to-do 279) LA LIGA DE UN AÑO EN data/club-leagues/<iso>.js, como texto (función pura: la prueba tools/../scratch del to-do 279 la corre
+// LA LIGA DE UN AÑO EN data/club-leagues/<iso>.js, como texto (función pura: la prueba tools/../scratch del to-do 279 la corre
 // sola). Si el club ya tiene ese año: en null se reemplaza; con la misma liga no se toca; con OTRA liga gana la que estaba y vuelve un aviso.
 // Antes, un año con liga se agregaba OTRA VEZ dentro del objeto del club cuando quien llamaba no avisaba que "existe": bfo-rusia.mjs arma la
 // liga con estado "pendiente", y las reescrituras de los años rusos del 2026-10-09 dejaron 58 claves repetidas en ru.js (limpiadas a mano).
@@ -1207,7 +1207,7 @@ function ligaEnTexto(lt, id, y, val, archivo) {
   return { texto: lt.slice(0, abre + 1) + dentro + `${dentro.trim() && !dentro.trim().endsWith(',') ? ',' : ''} ${y}: ${val} ` + lt.slice(cierra) };
 }
 function insertarEnObjeto(src, apertura, texto, archivo) {
-  // la apertura se busca al PRINCIPIO de una línea (Versión 391): el esqueleto de alta-club.mjs tenía un comentario que nombraba
+  // la apertura se busca al PRINCIPIO de una línea: el esqueleto de alta-club.mjs tenía un comentario que nombraba
   // "Object.assign(sources, {" y la búsqueda caía ahí (caso: Goiás 2021, "no pude cerrar el bloque"). Todas las aperturas son sentencias de primer nivel.
   const a = src.search(new RegExp('^' + apertura.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'm')); if (a < 0) throw new Error(`${archivo}: no encontré "${apertura}"`);
   const abre = src.indexOf('{', a + apertura.length - 1); const cierra = cierreDe(src, abre);
@@ -1227,7 +1227,7 @@ function snapshot(extra = []) {
   const add = (p) => { if (existsSync(p) && statSync(p).isFile()) archivos.set(p, readFileSync(p)); };
   (function walk(d) { for (const e of readdirSync(d)) { const f = join(d, e); statSync(f).isDirectory() ? walk(f) : add(f); } })(resolve(ROOT, 'data'));
   for (const e of readdirSync(resolve(ROOT, 'fuentes'))) if (e.endsWith('.html')) add(resolve(ROOT, 'fuentes', e));
-  for (const d of ['club', 'liga', 'og']) if (existsSync(resolve(ROOT, d))) (function walk(x) { for (const e of readdirSync(x)) { const f = join(x, e); statSync(f).isDirectory() ? walk(f) : add(f); } })(resolve(ROOT, d)); // to-do 241: las páginas de club y de liga y sus imágenes
+  for (const d of ['club', 'liga', 'og']) if (existsSync(resolve(ROOT, d))) (function walk(x) { for (const e of readdirSync(x)) { const f = join(x, e); statSync(f).isDirectory() ? walk(f) : add(f); } })(resolve(ROOT, d)); // las páginas de club y de liga y sus imágenes
   for (const f of ['index.html', 'fuentes.html', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', ...extra]) add(resolve(ROOT, f));
   return archivos;
 }
@@ -1299,7 +1299,7 @@ export function escribir(P) {
   const [paisCarpeta, clubCarpeta] = P.pdf.split('/').slice(1, 3);
   const fuentesMd = `Admin/sourcing/${paisCarpeta}/${clubCarpeta}.md`;
   const extra = existsSync(resolve(ROOT, fuentesMd)) ? [fuentesMd] : [];
-  // (to-do 209) la evidencia de carga (cabecera del año, nota de cada fila, ajustes, liga) va a Admin/carga-clubes/<clubId>.md: entra en
+  // la evidencia de carga (cabecera del año, nota de cada fila, ajustes, liga) va a Admin/carga-clubes/<clubId>.md: entra en
   // el snapshot para que un P0/P1 de la auditoría también lo revierta (y lo borre si lo creó esta carga).
   const evRel = EV.rutaRel(id);
   const extraRev = [...extra, evRel];
@@ -1311,7 +1311,7 @@ export function escribir(P) {
     // la nota de cada fila (página y escalón de su categoría) va a la tabla del año en la evidencia, con su número de fila
     const notaFila = (l) => `pág. ${l._pag ?? '?'}, ${['precedente', 'Jev', 'Claude'][l._escalon] ?? '?'}${l._conf != null && l._escalon ? ` ${l._conf}` : ''}`;
     const tabla = (ls) => ls.map((l, i) => ({ fila: i + 1, rawLabel: l.rawLabel, nota: notaFila(l) }));
-    // (to-do 206) quien arma la propuesta puede decir de dónde salen las filas: `P.herramienta` y `P.origenFilas` (tools/bfo-rusia.mjs: el JSON
+    // quien arma la propuesta puede decir de dónde salen las filas: `P.herramienta` y `P.origenFilas` (tools/bfo-rusia.mjs: el JSON
     // del fisco ruso, sin proponer-carga ni categorías.json). Sin eso, el texto de siempre.
     const origenFilas = P.origenFilas || `Filas: proponer-carga.mjs (ancla-listas); categorías:\n${derivado(P.md, '.categorias.json', { crear: false })} (escalón de cada fila en la tabla).`;
     const cab = `${y}: cargado por ${P.herramienta || 'tools/cargar.mjs'} (${HOY}) desde ${P.md}. ${origenFilas} Tie-out contra lo impreso: ${P.totales.revImpreso ? `ingresos "${String(P.totales.revImpreso.label).slice(0, 60)}" pág. ${P.totales.revImpreso.pag}` : '-'}${P.totales.expImpreso ? `; gastos "${String(P.totales.expImpreso.label).slice(0, 60)}" pág. ${P.totales.expImpreso.pag}` : ''}${P.totales.patImpreso ? `; resultado "${String(P.totales.patImpreso.label).slice(0, 60)}"` : ''}.`.split('\n');
@@ -1324,7 +1324,7 @@ export function escribir(P) {
       const M0 = E.fiscalYearMeta;
       if (M0.grossDebt == null && vm0.grossDebt != null) M0.grossDebt = vm0.grossDebt;
       if (M0.cash == null && vm0.cash != null) M0.cash = vm0.cash;
-      // (to-do 229) staffCost, el costo de personal que completa caja-deuda.mjs --personal: también se conserva (se perdía al rehacer
+      // staffCost, el costo de personal que completa caja-deuda.mjs --personal: también se conserva (se perdía al rehacer
       // Panetolikos 2021-2025 con los sueldos separados).
       if (M0.staffCost == null && vm0.staffCost != null) M0.staffCost = vm0.staffCost;
       if (M0.gestionId == null && vm0.gestionId != null) M0.gestionId = vm0.gestionId;
@@ -1337,7 +1337,7 @@ export function escribir(P) {
 
 
 
-      // (to-do 206 y 209) también la evidencia que este script escribió para el año que se reemplaza (su cabecera "cargado por", sus
+      // también la evidencia que este script escribió para el año que se reemplaza (su cabecera "cargado por", sus
       // AJUSTE MANUAL, sus notas de meta y liga, y las tablas de filas): se vuelve a escribir abajo con lo de ahora, sin apilarse. Lo que
       // se escribió a mano en ese año no se toca.
       ev = EV.quitarLineas(ev, y, 'Ingresos', [new RegExp(`^${y}: cargado por `), /\.categorias\.json \(escalón (por línea al lado|de cada fila en la tabla)\)/]);
@@ -1352,7 +1352,7 @@ export function escribir(P) {
     ev = EV.ponerTabla(ev, y, 'Ingresos', tabla(E.revenueLines));
     ev = EV.ponerTabla(ev, y, 'Gastos', tabla(E.expenseLines));
     const M = E.fiscalYearMeta;
-    // AJUSTES MANUALES (Versión 366): lo que Guido forzó para este documento queda a la vista en la evidencia del club, en la meta del año.
+    // AJUSTES MANUALES: lo que Guido forzó para este documento queda a la vista en la evidencia del club, en la meta del año.
     const ajTxt = (P.ajustes || []).map((a) => `${y}: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.campo}${a.valor ? ` = ${a.valor}` : ''}. ${String(a.motivo).replace(/\n/g, ' ')}`);
     ev = EV.agregarTexto(ev, y, 'Meta', [...ajTxt, `tools/cargar.mjs (${HOY}). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.`,
       ...(M.incluidoEn ? ['incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.'] : []),
@@ -1410,7 +1410,7 @@ export function escribir(P) {
       if (!existsSync(ligaPath)) throw new Error(`no existe data/club-leagues/${iso}.js`);
       const r = ligaEnTexto(readFileSync(ligaPath, 'utf8'), id, y, P.liga.valor ? js(P.liga.valor) : 'null', `data/club-leagues/${iso}.js`);
       let lt = r.texto; if (r.aviso) P.avisos.push(r.aviso);
-      // de dónde salió la liga: a la evidencia del club (to-do 209), no a data/club-leagues/
+      // de dónde salió la liga: a la evidencia del club, no a data/club-leagues/
       ev = EV.agregarTexto(ev, y, 'Liga', [`tools/cargar.mjs (${HOY}): ${P.liga.valor || 'null'}, ${P.liga.valor ? `verificado contra ${P.liga.fuente}` : `SIN VERIFICAR (${P.liga.fuente})`}.`]);
       writeFileSync(ligaPath, lt); escritos.push(`data/club-leagues/${iso}.js`);
     }
@@ -1418,7 +1418,7 @@ export function escribir(P) {
     if (P.fxCloseNuevo) {
       const cmPath = resolve(ROOT, 'data/currency-map.js'); const cm = readFileSync(cmPath, 'utf8');
       if (!cm.includes(`'${P.fxCloseNuevo.key}':`)) {
-        // sin comentario (to-do 209): el `label` ya dice de dónde sale la cotización
+        // sin comentario: el `label` ya dice de dónde sale la cotización
         writeFileSync(cmPath, insertarEnObjeto(cm, 'const FX_CLOSE = {', `  '${P.fxCloseNuevo.key}': { fx: ${P.fxCloseNuevo.fx}, source: 'market_close', label: ${js(P.fxCloseNuevo.label)} },\n`, 'data/currency-map.js'));
         escritos.push('data/currency-map.js');
       }
@@ -1517,7 +1517,7 @@ async function main() {
   const docs = LISTA ? readFileSync(resolve(ROOT, LISTA), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : DOCS;
   if (!docs.length) { console.error('Uso: node tools/cargar.mjs "<pdf>" [--escribir]  |  --lista <archivo> [--salida x.jsonl] [--comparar <raíz>] (ver la cabecera)'); process.exit(1); }
   if (ESCRIBIR && docs.length > 1) { console.error('--escribir va de a un documento por vez.'); process.exit(1); }
-  // CANDADO (to-do 164): con --escribir, un solo proceso a la vez escribiendo el registro y el sitio (tools/candado.mjs). La propuesta no lo
+  // CANDADO: con --escribir, un solo proceso a la vez escribiendo el registro y el sitio (tools/candado.mjs). La propuesta no lo
   // toma: el lote la corre como hija mientras tiene el candado.
   if (ESCRIBIR) { const { tomarCandado } = await import('./candado.mjs'); tomarCandado('cargar.mjs', { lista: docs[0], modo: '--escribir' }); }
   const antesDeEscribir = ESCRIBIR ? cambiadosEnGit() : null;

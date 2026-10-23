@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/mapa-codigo.mjs — EL MAPA DE UN ARCHIVO DE CÓDIGO: funciones con su rango de líneas, regiones por banner, cabecera e imports (TODO 373)
+// tools/mapa-codigo.mjs — EL MAPA DE UN ARCHIVO DE CÓDIGO: funciones con su rango de líneas, regiones por banner, cabecera e imports
 //
 // POR QUÉ: un archivo de tools/ de más de 50 KB no se lee entero (CLAUDE.md). El mapa dice dónde está cada cosa para leer solo ese tramo con
 // Read (offset y límite). Es lo que indice-md.mjs hace con los .md, pero para código.

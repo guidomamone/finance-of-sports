@@ -47,7 +47,7 @@ import { modificarClub, leerJsonClub, rutaJson } from './club-json.mjs'; // (to-
 
 const ROOT = resolve(import.meta.dirname, '..');
 const HOY = new Date().toISOString().slice(0, 10);
-// (to-do 339) el bolsón es el del deporte del club (la taxonomía lo declara: `lump`); para el fútbol, lump_football_operations / _expense
+// el bolsón es el del deporte del club (la taxonomía lo declara: `lump`); para el fútbol, lump_football_operations / _expense
 import { bolsonDeDeporte, deporteDeClub } from './deporte-club.mjs';
 const lumpDe = (clubId, lado) => (bolsonDeDeporte(deporteDeClub(clubId)) || {})[lado === 'ingresos' ? 'revenue' : 'expense'];
 
@@ -86,7 +86,7 @@ const completo = (filas) => !filas.some((f) => f.unknown);
 const sinAcento = (x) => String(x).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 const primera = (x) => sinAcento(x).split(/\s+/)[0];
 function ceroRealDe(M, a) {
-  const md = (EV.textoFuenteCompleto(M.S[a.meta.sourceId]).match(/Clubes\/[^"`\n]+?\.md/) || [])[0]; if (!md) return []; // (to-do 209) la nota de la fuente está en la evidencia
+  const md = (EV.textoFuenteCompleto(M.S[a.meta.sourceId]).match(/Clubes\/[^"`\n]+?\.md/) || [])[0]; if (!md) return []; // la nota de la fuente está en la evidencia
   return ajustesDe(md.replace(/\.md$/i, '.pdf')).filter((x) => x.campo === 'cero-real' && x.valor).map((x) => primera(x.valor));
 }
 const conPlata = (f) => f && f.value !== 0 && !f.unknown && !f.incluidoEn;
@@ -196,7 +196,7 @@ async function main() {
   const escribir = A.includes('--escribir');
   let snap = null; let revertir = null; let publicarCambios = null;
   if (escribir) ({ snapshot: snap, revertir, publicarCambios } = await import('./cargar.mjs'));
-  // (to-do 209) las evidencias de Admin/carga-clubes/ entran en el snapshot: un P0/P1 también las revierte
+  // las evidencias de Admin/carga-clubes/ entran en el snapshot: un P0/P1 también las revierte
   const evExtra = escribir ? ids.map((id) => EV.rutaRel(id)) : [];
   const s0 = escribir ? snap(evExtra) : null; const escritos = []; let antes = 0; let despues = 0; let filas = 0;
   try {

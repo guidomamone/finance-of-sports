@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/medir-segunda-fuente.mjs — MIDE la segunda fuente de estadio y capacidad (TODO 367) sobre los club-años que hoy están en tools/contexto-manual.json (revisados a mano, con fuente).
+// tools/medir-segunda-fuente.mjs — MIDE la segunda fuente de estadio y capacidad sobre los club-años que hoy están en tools/contexto-manual.json (revisados a mano, con fuente).
 //
 // QUÉ MIDE. Para cada club-año con estadio y capacidad manual (la verdad de referencia): (1) lo que da Wikidata + el cruce con el artículo de Wikipedia (tools/dato-publico.mjs);
 // (2) lo que da OpenStreetMap (Nominatim, `extratags.capacity`) buscando el estadio que propone Wikidata, SIN la cita de Wikidata: es una base independiente de Wikipedia.

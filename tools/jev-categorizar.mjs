@@ -8,7 +8,7 @@
 //
 // DOS MODOS:
 //
-//   --backtest   ¿Es CONFIABLE Jev? (to-do 99). Toma rubros de ejercicios YA CARGADOS en el sitio, cuya categoría real ya
+//   --backtest   ¿Es CONFIABLE Jev?. Toma rubros de ejercicios YA CARGADOS en el sitio, cuya categoría real ya
 //                decidió una sesión con criterio humano, se los pregunta a Jev SIN mostrarle esa respuesta, y compara.
 //                Lo que importa no es el acierto promedio: es si hay errores con confianza ALTA (el caso peligroso, el que
 //                una integración automática aceptaría sin que nadie lo mire). Deja Admin/mediciones/test-jev-resultados.md.
@@ -26,7 +26,7 @@
 //   node tools/jev-categorizar.mjs --backtest --limit 200            # 200 rubros ya cargados (~$0.01)
 //   node tools/jev-categorizar.mjs --backtest --limit 0              # TODOS los rubros únicos cargados (miles)
 //   node tools/jev-categorizar.mjs --listos [--limit 10]             # los documentos listo-para-jev (10 documentos)
-//   --listos --desde-sesion <respuestas.json> --lista <lista>   (to-do 328) SIN API: las categorías las puso la sesión. El JSON es {"pdf":"<pdf>","respuestas":[{"label":"<etiqueta>","choice":"<categoria>","confidence":0.9}]}
+//   --listos --desde-sesion <respuestas.json> --lista <lista> SIN API: las categorías las puso la sesión. El JSON es {"pdf":"<pdf>","respuestas":[{"label":"<etiqueta>","choice":"<categoria>","confidence":0.9}]}
 //                 con UNA respuesta por rubro único del .rubros.json del documento; deja el mismo <md>.jev.json con `origen: 'sesión'`. Si falta algún rubro o una categoría no existe, no escribe nada.
 //   Extras: --concurrencia 8, --semilla 7, --lado-conocido, --ejemplos 8 (le muestra 8 rubros parecidos ya categorizados),
 //           --sin-mismo-club (los ejemplos salen solo de otros clubes: el caso de un club nuevo), --etiqueta _nombre (no pisa el informe de otra variante), --club river, --dry-run
@@ -40,8 +40,8 @@ import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { abrirCache } from './respuestas-cache.mjs';
 import { derivado, ubicar } from './rutas.mjs';
-import { deporteDeClub, resolverDeporte, MENSAJE_SIN_DEPORTE, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) el deporte del club: su lista de categorías y los ejemplos del mismo deporte primero
-import { paisDeClub, afinidad } from './pais-club.mjs'; // (to-do 331) el país del club en el texto y los ejemplos del mismo país primero
+import { deporteDeClub, resolverDeporte, MENSAJE_SIN_DEPORTE, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // el deporte del club: su lista de categorías y los ejemplos del mismo deporte primero
+import { paisDeClub, afinidad } from './pais-club.mjs'; // el país del club en el texto y los ejemplos del mismo país primero
 import { lineasAprendidas } from './memoria-categorias.mjs';
 import vm from 'node:vm';
 import { archivosData } from './data-clubes.js';
@@ -52,7 +52,7 @@ const flagVal = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] 
 const BACKTEST = args.includes('--backtest');
 const LISTOS = args.includes('--listos');
 const DRY = args.includes('--dry-run');
-const DESDE_SESION = flagVal('--desde-sesion'); // (to-do 328) archivo con las respuestas de la sesión; no se llama a Jev
+const DESDE_SESION = flagVal('--desde-sesion'); // archivo con las respuestas de la sesión; no se llama a Jev
 const SIDE_KNOWN = args.includes('--lado-conocido');
 const limit = flagVal('--limit') !== null ? Number(flagVal('--limit')) : (BACKTEST ? 200 : 10);
 const concurrency = Number(flagVal('--concurrencia') || 8);
@@ -73,7 +73,7 @@ const readKey = () => {
 };
 
 // ---------------------------------------------------------------- categorías con descripción
-// (to-do 339) Las categorías que Jev puede elegir son las de la taxonomía del DEPORTE del club (tools/deporte-club.mjs, leerCategorias): etiqueta + la primera oración del
+// Las categorías que Jev puede elegir son las de la taxonomía del DEPORTE del club (tools/deporte-club.mjs, leerCategorias): etiqueta + la primera oración del
 // comentario de cada una en data/category-map.js; no se reescriben acá. Un deporte sin taxonomía devuelve null: no se cae a la lista del fútbol.
 const _criterios = new Map();
 function criteriosDe(deporte) {
@@ -101,7 +101,7 @@ async function askJev(key, { label, section, club, side, examples, useSide, depo
   if (!cd) return { error: `el deporte «${deporte}» no tiene taxonomía en data/category-map.js (SPORT_TAXONOMIES): no se le pregunta a Jev` };
   const criteria = (SIDE_KNOWN || useSide) && side ? Object.fromEntries(Object.entries(cd.todas).filter(([k]) => cd.lado[k] === side)) : cd.todas;
   const exText = examples && examples.length ? `Ejemplos de rubros parecidos que ya están categorizados en el sitio (los clubes tienen convenciones propias; guiate por ellos):\n${examples.map((x) => `- "${x.label}" (${x.club}) -> ${x.truth}`).join('\n')}\n` : '';
-  const pc = club ? paisDeClub(club) : null; // (to-do 331) el país del club: la misma palabra puede ser otra cosa en otro país del mismo idioma
+  const pc = club ? paisDeClub(club) : null; // el país del club: la misma palabra puede ser otra cosa en otro país del mismo idioma
   const state = [`Rubro de un estado financiero de un club de ${nombreDeporte(deporte)}${club ? ` (${club}${pc ? `, de ${pc.nombre}` : ''})` : ''}${section ? `, sección: ${section}` : ''}.`, exText, `Texto del rubro, tal cual figura en el documento: "${label}"`].filter(Boolean).join('\n');
   const body = { state, model: 'jev-latest', questions: { categoria: { type: 'choice', instructions: 'Elegí la categoría de la lista a la que corresponde este rubro. Si no encaja en ninguna, elegí la más genérica (other_income / other_expenses).', criteria } } };
   for (let attempt = 0; attempt < 5; attempt++) {
@@ -144,7 +144,7 @@ function makeRetriever(bank) {
   const prepared = bank.map((b) => ({ ...b, w: words(b.label), key: `${b.club}|${b.label.toLowerCase().replace(/\s+/g, ' ').trim()}` }));
   return (q) => {
     const qw = words(q.label); const qkey = `${q.club}|${q.label.toLowerCase().replace(/\s+/g, ' ').trim()}`;
-    const scored = []; const admite = categoriasDeDeporte(q.deporte || deporteDeClub(q.club))?.todas; // (to-do 339) solo ejemplos cuya categoría existe en la taxonomía del deporte del club (ingreso + gasto)
+    const scored = []; const admite = categoriasDeDeporte(q.deporte || deporteDeClub(q.club))?.todas; // solo ejemplos cuya categoría existe en la taxonomía del deporte del club (ingreso + gasto)
     for (const b of prepared) {
       if (admite && !admite.has(b.truth)) continue;
       if (NO_SAME_CLUB && b.club === q.club) continue;
@@ -154,7 +154,7 @@ function makeRetriever(bank) {
       if (!inter) continue;
       scored.push([inter / (qw.size + b.w.size - inter), b]);
     }
-    // (to-do 331, 339) a igual parecido de palabras: primero los del mismo deporte, después los del mismo país, después los del mismo idioma
+    // a igual parecido de palabras: primero los del mismo deporte, después los del mismo país, después los del mismo idioma
     scored.sort((a, b) => (b[0] - a[0] > 1e-12 || a[0] - b[0] > 1e-12) ? b[0] - a[0] : (afinidadDeporte(q.club, b[1].club) - afinidadDeporte(q.club, a[1].club)) || (afinidad(q.club, b[1].club) - afinidad(q.club, a[1].club)));
     const seen = new Set(); const out = [];
     for (const [, b] of scored) { const k = `${b.label.toLowerCase()}|${b.truth}`; if (seen.has(k)) continue; seen.add(k); out.push(b); if (out.length >= K_EXAMPLES) break; }
@@ -250,7 +250,7 @@ async function listos() {
   const deSesion = DESDE_SESION ? new Map((JSON.parse(readFileSync(resolve(root, DESDE_SESION), 'utf8')).respuestas || []).map((x) => [nl(x.label), x])) : null;
   // Ejemplos parecidos ya categorizados en el sitio (de todos los clubes) y, cuando el documento indica si la tabla es de
   // ingresos o de gastos, solo las categorías de ese lado: son las dos mejoras que llevaron el acierto de 69,5% a 86,6%.
-  // Versión 319: a los ejemplos de lo cargado en el sitio se suman los rubros que Claude ya resolvió con confianza >= 0,80
+  // a los ejemplos de lo cargado en el sitio se suman los rubros que Claude ya resolvió con confianza >= 0,80
   // (tools/memoria-categorias.mjs): así Jev ve la respuesta que le faltaba la vez anterior. Producción gana si el mismo rubro está en las dos.
   // (El --backtest NO los usa: mediría con respuestas de Claude sobre esos mismos rubros.)
   const banco = buildBank(loadClubData());
@@ -262,14 +262,14 @@ async function listos() {
   const cache = abrirCache('jev'); const SIN_CACHE = args.includes('--sin-cache'); let desdeCache = 0;
   for (const e of docs) {
     const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
-    // (to-do 339) el deporte del documento: la ficha del club, o el registro de altas de su carpeta; sin ninguno no se categoriza (no se supone fútbol)
+    // el deporte del documento: la ficha del club, o el registro de altas de su carpeta; sin ninguno no se categoriza (no se supone fútbol)
     const depDoc = resolverDeporte({ club: rj.club, pdf: e.pdf });
     if (!depDoc) { console.log(`  ${e.pdf}: NO SE CATEGORIZA: ${MENSAJE_SIN_DEPORTE(rj.club)}`); continue; }
     const uniqLabels = [...new Map(rj.rubros.map((r) => [r.label.toLowerCase(), r])).values()];
     const results = []; const faltan = []; const malas = [];
     await pool(uniqLabels, async (r) => {
       const base = { label: r.label, lado: r.lado || null, page: r.page, section: r.section };
-      // (to-do 339) la respuesta de la sesión vale si existe en la taxonomía del deporte del club (no la del fútbol)
+      // la respuesta de la sesión vale si existe en la taxonomía del deporte del club (no la del fútbol)
       if (deSesion) { const s = deSesion.get(nl(r.label)); if (!s) faltan.push(r.label); else if (!criteriosDe(depDoc)?.lado[s.choice]) malas.push(`${r.label} -> ${s.choice}`); else results.push({ ...base, choice: s.choice, confidence: s.confidence ?? null, origen: 'sesión' }); return; }
       const guardada = SIN_CACHE ? null : cache.get(rj.club, r.lado, r.label);
       if (guardada) { desdeCache++; results.push({ ...base, ...guardada, desdeCache: true }); return; }

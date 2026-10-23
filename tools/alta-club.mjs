@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/alta-club.mjs — el ALTA de un club nuevo y los DATOS DE CONTEXTO de un
 // ejercicio (tipo de cambio, liga, moneda, cierre), por script, sin tokens de
-// sesión. Pedido de Guido (2026-09-30): de 3.042 PDFs pendientes, ~2.200 son de
+// sesión. Pedido de Guido: de 3.042 PDFs pendientes, ~2.200 son de
 // clubes que todavía no existen en el sitio, y todo lo que es mecánico del alta
 // no tiene por qué pasar por Claude.
 //
@@ -250,7 +250,7 @@ import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { clubDeCarpeta } from './carpetas-clubes.mjs';
-import { deportesActivos, deporteDeClub } from './deporte-club.mjs'; // (to-do 339) deportes activos del catálogo
+import { deportesActivos, deporteDeClub } from './deporte-club.mjs'; // deportes activos del catálogo
 import * as EV from './evidencia-club.mjs';
 import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
 import { agregarCaso, casoYRespuesta } from './cola.mjs';
@@ -353,7 +353,7 @@ const NOMBRE_PAIS_ES = { DE: 'Alemania', AR: 'Argentina', AT: 'Austria', BR: 'Br
 // atrapa un fx invertido o con el orden de magnitud mal, no exige precisión), y
 // las formas en que el texto de un balance nombra la moneda.
 //
-// RANGOS REVISADOS (2026-09-30) contra el mínimo y el máximo REAL de cada serie de tools/fx-reference/
+// RANGOS REVISADOS contra el mínimo y el máximo REAL de cada serie de tools/fx-reference/
 // (bug real: TRY estaba en [1, 45] y la lira cotiza 48,93 al 30/9/2026, así que un tipo de cambio
 // declarado de hoy se descartaba como "no plausible"). Criterio: [~90% del mínimo histórico, máximo
 // histórico + margen para lo que puede moverse en ~1-2 años]. Mín./máx. medidos (fecha):
@@ -810,7 +810,7 @@ export function nombrePortada(md, displayName) {
   }
   const c = cands.find((x) => x.titulo) || cands[0]; return c ? c.s : null;
 }
-// MAYÚSCULAS (to-do 161): un nombre en mayúsculas ("BOLOGNA F.C. 1909 S.P.A.") toma la variante bien escrita que el propio documento use
+// MAYÚSCULAS: un nombre en mayúsculas ("BOLOGNA F.C. 1909 S.P.A.") toma la variante bien escrita que el propio documento use
 // para la misma entidad ("Bologna F.C. 1909 S.p.A.", 4 veces); si no hay, se escribe con inicial mayúscula, sin tocar abreviaturas con punto
 // y con la forma societaria en su escritura usual (S.p.A., S.r.l.).
 const FORMA_BIEN = { 's.p.a.': 'S.p.A.', 'spa': 'S.p.A.', 's.r.l.': 'S.r.l.', 'srl': 'S.r.l.', 's.a.': 'S.A.', 's.a.d.': 'S.A.D.', 'sad': 'S.A.D.', 'gmbh': 'GmbH', 'ag': 'AG', 'e.v.': 'e.V.', 'n.v.': 'N.V.', 'b.v.': 'B.V.', 'plc': 'plc', 'ltd': 'Ltd', 'ltd.': 'Ltd.', 'limited': 'Limited' };
@@ -872,9 +872,9 @@ export function analizar(docArg, sitio, ov = {}) {
   const r = { documento: rel(abs), pdf: existsSync(pdf) ? rel(pdf) : null, md: existsSync(mdPath) ? rel(mdPath) : null, club: {}, campos: [], ejercicio: { campos: [] }, avisos: [] };
   const partes = relative(resolve(ROOT, 'Clubes'), abs).split('/');
   if (partes.length < 3 || partes[0].startsWith('..')) { r.error = 'el documento no está en Clubes/<País>/<Club>/'; return r; }
-  // AJUSTES MANUALES de cierre y reportType (Versión 413): escalón 0, ganan sobre la respuesta de Claude por API y sobre lo detectado.
+  // AJUSTES MANUALES de cierre y reportType: escalón 0, ganan sobre la respuesta de Claude por API y sobre lo detectado.
   for (const c of ['cierre', 'reportType']) { const a = r.pdf ? ajusteDe(r.pdf, c) : null; if (a) ov = { ...ov, [c]: { valor: a.valor, fuente: `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.motivo}`, manual: true } }; }
-  // (Versión 562) Lo mismo para el PERÍMETRO, del documento o de todo el club (ajustePerimetroDe, el mismo escalón 0 que usa cargar.mjs).
+  // Lo mismo para el PERÍMETRO, del documento o de todo el club (ajustePerimetroDe, el mismo escalón 0 que usa cargar.mjs).
   // Caso: lote 14, el ajuste "Bologna -> consolidado" (perimetro-senales.mjs) lo leía cargar.mjs pero no el alta, que volvía a preguntar
   // y bloqueaba --escribir.
   { const a = r.pdf ? ajustePerimetroDe(r.pdf) : null; if (a) ov = { ...ov, perimetro: { valor: a.valor, fuente: `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.motivo}`, manual: true } }; }
@@ -901,7 +901,7 @@ export function analizar(docArg, sitio, ov = {}) {
 
   // ---------------------------------------------------------------- año y cierre
   const nombreArchivo = basename(abs);
-  // ESCALÓN 0 (Versión 390): ajuste manual de Guido (tools/ajustes.mjs, campo `anio`) cuando el nombre del archivo dice mal el año.
+  // ESCALÓN 0: ajuste manual de Guido (tools/ajustes.mjs, campo `anio`) cuando el nombre del archivo dice mal el año.
   const ajAnio = r.pdf ? ajusteDe(r.pdf, 'anio') : null;
   const anioForzado = ANIO_FORZADO || (ajAnio ? Number(ajAnio.valor) : null);
   const anioNombre = anioForzado || anioDelNombre(nombreArchivo);
@@ -1093,7 +1093,7 @@ export function analizar(docArg, sitio, ov = {}) {
   const filasPipe = lineasMd.filter((l) => l.trim().startsWith('|') && (l.match(/\|\s*\(?-?\s*\d[\d.,\s]*\)?\s*(?=\|)/g) || []).length >= 2).length;
   const filasMontos = lineasMd.filter((l) => (l.match(/(?<![\d.,])\(?-?\d{1,3}(?:[.,   ]\d{3})+(?:[.,]\d{1,2})?\)?(?![\d])/g) || []).length >= 2).length;
   const filasNumericas = Math.max(filasPipe, filasMontos);
-  // ESCALÓN 1 del estado contable (to-do 202): un estado de resultados CORTO de una sola columna (un monto por fila) no llega a las 10 filas
+  // ESCALÓN 1 del estado contable: un estado de resultados CORTO de una sola columna (un monto por fila) no llega a las 10 filas
   // con 2+ montos. Vale si la PRIMERA PÁGINA trae el título de un estado de resultados y un PERÍODO impreso de 12 meses ("01/01/2019 a
   // 31/12/2019"), con al menos 5 filas con un monto. Un informe del auditor nombra el estado pero no imprime ese encabezado de período.
   // Casos: Remo dre-2019/2023/2024 y Ferroviária 2013-b a 2018 (DRE del sistema contable), que preguntaban reportType y se fijaban a mano.
@@ -1162,7 +1162,7 @@ export function analizar(docArg, sitio, ov = {}) {
 
   // Moneda del ejercicio
   if (ov.moneda && pais && ov.moneda.valor === pais.moneda && estadoMoneda === 'pregunta') { moneda = pais.moneda; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `claude-api con cita verificada: ${ov.moneda.fuente}`; }
-  // (Versión 607) AJUSTE MANUAL `moneda`: escalón 0 de la pregunta "¿se carga en la moneda legado o se convierte a EUR?". Solo cuando el ejercicio es
+  // AJUSTE MANUAL `moneda`: escalón 0 de la pregunta "¿se carga en la moneda legado o se convierte a EUR?". Solo cuando el ejercicio es
   // anterior a la entrada del euro y el valor del ajuste es la moneda legado del país. Caso: Lazio 1998-99, 1999-00 y 2000-01 en liras.
   { const aMon = r.pdf ? ajusteDe(r.pdf, 'moneda') : null;
     if (aMon && pais && pais.legado && anio && anio < pais.legado.desde && aMon.valor === pais.legado.codigo && estadoMoneda === 'pregunta') { moneda = aMon.valor; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${aMon.autor} ${aMon.fecha}): ${aMon.motivo}`; } }
@@ -1186,7 +1186,7 @@ export function analizar(docArg, sitio, ov = {}) {
   // Liga
   E.push(proponerLiga(clubId, r.club.existe ? (sitio.clubs[clubId] || {}).displayName : clubCarpeta, pais, anio, sitio, cierre));
 
-  // (to-do 339) DEPORTE DECLARADO, en este orden: la ficha del club (data/clubs.js) -> la liga del club (data/leagues.js tiene `sport`: es un dato, no un supuesto) -> las menciones del .md
+  // DEPORTE DECLARADO, en este orden: la ficha del club (data/clubs.js) -> la liga del club (data/leagues.js tiene `sport`: es un dato, no un supuesto) -> las menciones del .md
   // (la regla de arriba). Pregunta solo si ninguna responde: sin fútbol nombrado, sin otro deporte nombrado y sin ficha ni liga el deporte NO se supone fútbol. Medido sobre Clubes/:
   // 31 de 400 carpetas no nombran el fútbol (los clubes coreanos, estonios, All Boys...); sin mirar la liga y la ficha se frenarían a la cola por nada.
   {
@@ -1247,7 +1247,7 @@ function candidatosColor(displayName) {
 
 function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = null, ajFx = null) {
   const out = [];
-  // ESCALÓN 0 (Versión 373): ajuste manual de Guido (tools/ajustes.mjs, campo `fx`, en moneda por 1 USD).
+  // ESCALÓN 0: ajuste manual de Guido (tools/ajustes.mjs, campo `fx`, en moneda por 1 USD).
   if (ajFx && isFinite(Number(String(ajFx.valor).replace(',', '.')))) {
     out.push(campo('fx', Number(String(ajFx.valor).replace(',', '.')), `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${ajFx.autor} ${ajFx.fecha}): ${ajFx.motivo}`, 'ok', { fxSource: 'manual' }));
     return out;
@@ -1340,7 +1340,7 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
   const data = JSON.parse(readFileSync(cachePath, 'utf8'));
   const q = norm(nombre).replace(/[^a-z0-9]+/g, ' ').trim();
   const exactos = []; const parciales = [];
-  // QUÉ TEMPORADA (Versión 315): la caché guarda una temporada partida ("2020–21") bajo el año en que TERMINA. La regla del sitio es "la
+  // QUÉ TEMPORADA: la caché guarda una temporada partida ("2020–21") bajo el año en que TERMINA. La regla del sitio es "la
   // categoría al CIERRE del ejercicio" (data/club-leagues.js, decisión de Guido, Versión 132): un ejercicio que cierra entre septiembre y
   // diciembre en una liga partida está jugando la temporada que empezó ese año -> clave anio + 1. (to-do 298 n2, ok de Guido 2026-10-19) Era "entre julio y diciembre": julio y agosto
   // son el FIN de la temporada (Burnley cierra el 31/7), como en faltantes-liga, estadio-sponsor, listas-lote y ligas-sin-verificar (mes >= 9). Con >= 7 la liga salía de la temporada
@@ -1406,7 +1406,7 @@ function snapshot(extra = []) {
   const add = (p) => { if (existsSync(p) && statSync(p).isFile()) archivos.set(p, readFileSync(p)); };
   (function walk(d) { for (const e of readdirSync(d)) { const f = join(d, e); statSync(f).isDirectory() ? walk(f) : add(f); } })(resolve(ROOT, 'data'));
   for (const e of readdirSync(resolve(ROOT, 'fuentes'))) if (e.endsWith('.html')) add(resolve(ROOT, 'fuentes', e));
-  for (const d of ['club', 'liga', 'og']) if (existsSync(resolve(ROOT, d))) (function walk(x) { for (const e of readdirSync(x)) { const f = join(x, e); statSync(f).isDirectory() ? walk(f) : add(f); } })(resolve(ROOT, d)); // to-do 241: las páginas de club y de liga y sus imágenes
+  for (const d of ['club', 'liga', 'og']) if (existsSync(resolve(ROOT, d))) (function walk(x) { for (const e of readdirSync(x)) { const f = join(x, e); statSync(f).isDirectory() ? walk(f) : add(f); } })(resolve(ROOT, d)); // las páginas de club y de liga y sus imágenes
   for (const f of ['index.html', 'fuentes.html', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', ...extra]) add(resolve(ROOT, f));
   return archivos;
 }
@@ -1438,7 +1438,7 @@ function escribir(r) {
   const id = val('id');
   const hoy = new Date().toISOString().slice(0, 10);
   const escritos = [];
-  // (to-do 209) data/ se publica y no lleva comentarios: lo que el alta dice de dónde salió cada cosa va a la evidencia del club
+  // data/ se publica y no lleva comentarios: lo que el alta dice de dónde salió cada cosa va a la evidencia del club
   const evExtra = [EV.rutaRel(id)];
   const snap = snapshot(evExtra);
   let ev = EV.leer(id);
@@ -1493,7 +1493,7 @@ function escribir(r) {
     ev = EV.agregarTexto(ev, anio, 'Liga', [`alta-club.mjs (${hoy}): ${liga.valor || 'null'}, ${liga.valor ? `verificado contra ${liga.fuente}` : `SIN VERIFICAR (${liga.fuente})`}.`]);
     if (existsSync(ligaPath)) {
       const txt = readFileSync(ligaPath, 'utf8');
-      // (to-do 339) Si el club YA tiene su línea (a mano, con otros años), el año se agrega a ESA línea o, si ya está, no se escribe nada: una segunda línea del mismo id pisa la primera
+      // Si el club YA tiene su línea (a mano, con otros años), el año se agrega a ESA línea o, si ya está, no se escribe nada: una segunda línea del mismo id pisa la primera
       // entera (Object.assign) y el club queda con un solo año. Caso: bathrugby-gb, la línea 2021 a 2025 quedó pisada por una de solo 2021.
       const enLinea = new RegExp(`^(\\s*(?:'${id}'|"${id}"|${id})\\s*:\\s*\\{)([^}]*)(\\},?)\\s*$`, 'm');
       const ya = txt.match(enLinea);
@@ -1730,7 +1730,7 @@ function armarEntrada({ paisCarpeta, clubCarpeta, r, huella, detalle, claude, pr
     const x = respPorTipo.get(TIPO_DE_CAMPO[c.campo]) || {};
     return { campo: c.campo, valor: c.valor, fuente: 'claude-api', modelo: claude && claude.modelo, confianza: x.confianza, respuesta: x.respuesta, citas: (x.citas || []).map(({ pagina, texto }) => ({ pagina, texto })) };
   });
-  // (to-do 339) El deporte que el alta calculó, para el registro: lo leen Jev, Claude y la cola de un club que todavía no tiene ficha (tools/deporte-club.mjs, deporteDeCarpeta).
+  // El deporte que el alta calculó, para el registro: lo leen Jev, Claude y la cola de un club que todavía no tiene ficha (tools/deporte-club.mjs, deporteDeCarpeta).
   // `origen` dice de dónde salió (ficha, liga, menciones del .md o claude); `pregunta` = se preguntó y nadie contestó (valor null). Una entrada sin `sport` = nadie lo calculó.
   const spC = r.campos.find((c) => c.campo === 'sport');
   const sport = r.club.existe ? { valor: deporteDeClub(clubId), origen: 'ficha' }
@@ -1779,7 +1779,7 @@ function analizarCarpeta(paisCarpeta, clubCarpeta, sitio, previo, docForzado = n
   // Respuestas de Claude reusables si se hicieron sobre el MISMO .md y las MISMAS preguntas (y modelo).
   // Un cambio del prompt de alta-claude.mjs NO las invalida solo (costaría volver a pagar todo): para
   // rehacerlas, --forzar-claude.
-  // BUG REAL (2026-09-30): una corrida que no reusaba las respuestas (otra versión de las preguntas, o un recálculo de otra sesión) escribía
+  // BUG REAL: una corrida que no reusaba las respuestas (otra versión de las preguntas, o un recálculo de otra sesión) escribía
   // la entrada SIN el campo `claude`, y las respuestas ya pagadas se perdían del registro (quedaron 12 de 36; se recuperaron de git). Ahora
   // las respuestas anteriores viajan siempre en `claudeAnterior` hasta que una corrida con --claude las reemplace, y se reusan desde ahí si
   // la huella de las preguntas coincide.
@@ -1964,7 +1964,7 @@ function perimetroCargado(nota) {
 //     entidad de fútbol sola, que NO consolida ("der ikke udarbejdet koncernregnskab") -> individual.
 //   osijek-hr 2025: se cargó el informe COMBINADO (NK Osijek s.d.d. + FM 20 d.o.o. + la escuela) -> grupo.
 const VERDAD_MANUAL = { 'fckobenhavn-dk|2024': { perimetro: 'individual' }, 'osijek-hr|2025': { perimetro: 'consolidado' } };
-// la nota interna de la fuente vive en la evidencia del club (to-do 209), "## Fuentes" / "### <sourceId>"; `src.note` solo si quedara alguna vieja
+// la nota interna de la fuente vive en la evidencia del club, "## Fuentes" / "### <sourceId>"; `src.note` solo si quedara alguna vieja
 const notaFuente = (src) => `${src.title || ''} ${src.label || ''} ${src.note || (src.clubId && src.id ? EV.textoDeFuente(EV.leer(src.clubId), src.id) : '')}`;
 // Lo cargado en el sitio para ese club-año, en el mismo formato que las respuestas de Claude.
 function verdadCargada(club, meta, y, nota) {

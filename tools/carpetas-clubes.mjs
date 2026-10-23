@@ -3,7 +3,7 @@
 // La usan tools/quien.mjs (--quien, --pendientes, y con eso inventario-transcripciones.mjs y pipeline.mjs), alta-club.mjs, cargar.mjs,
 // verificar.mjs, padres-filas.mjs, memoria-categorias.mjs y audit.js (que falla con P1 si la regla deja de ser inequívoca).
 //
-// POR QUÉ EXISTE (2026-09-30): onboard.mjs adivinaba el club comparando el NOMBRE de la carpeta con el nombre de cada club de
+// POR QUÉ EXISTE: onboard.mjs adivinaba el club comparando el NOMBRE de la carpeta con el nombre de cada club de
 // data/clubs.js, por substring y sin mirar el país. Resultado medido:
 //   - 17 clubes que YA están en el sitio (Racing, Almagro, Newell's, Botafogo, Gent, U. de Chile...) no se reconocían ("Racing"
 //     matchea Racing Club y Genk; "Nacional" matchea Internacional y Atlético Nacional), así que el registro contaba como pendientes
@@ -99,7 +99,7 @@ export function todasLasCarpetas() {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const todas = todasLasCarpetas();
-  // (Versión 438) salir recién cuando terminó de escribir: con process.exit() inmediato, por un pipe se perdía todo lo que pasaba de
+  // salir recién cuando terminó de escribir: con process.exit() inmediato, por un pipe se perdía todo lo que pasaba de
   // 64 KB y audit.js daba P1 'carpetas-clubes-fallo' (JSON cortado en 65.536 bytes cuando la lista llegó a ~68 KB, 2026-10-03)
   if (process.argv.includes('--json')) { process.stdout.write(JSON.stringify(todas, null, 1) + '\n', () => process.exit(0)); }
   else {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/medir-personal-ensayos.mjs — MEDIDOR de lo que `--medir` de caja-deuda.mjs no ejercita: las opciones --personal con un club (TODO 368)
+// tools/medir-personal-ensayos.mjs — MEDIDOR de lo que `--medir` de caja-deuda.mjs no ejercita: las opciones --personal con un club
 // ============================================================================
 // `caja-deuda.mjs --personal --medir` solo recorre los clubes de personal-verdad.tsv y no llega a partirFilaGlobal, completarPersonal ni --ver-candidatos. Este corre, en ENSAYO
 // (sin --ejecutar ni --escribir: no llama a ninguna API ni escribe nada), esas opciones y junta las salidas para compararlas antes y después:

@@ -17,7 +17,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { derivado, ubicar } from './rutas.mjs';
 import { resolve, join } from 'node:path';
-import { resolverDeporte, deporteEnFrase } from './deporte-club.mjs'; // (to-do 341) «club de fútbol» de los prompts de lectura es el deporte del club
+import { resolverDeporte, deporteEnFrase } from './deporte-club.mjs'; // «club de fútbol» de los prompts de lectura es el deporte del club
 
 const root = resolve(import.meta.dirname, '..');
 const MODEL = 'gemini-3.8-flash';

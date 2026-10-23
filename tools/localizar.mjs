@@ -31,7 +31,7 @@
 //   node tools/localizar.mjs "<pdf>" [...]          ENSAYO: arma el pedido y estima el costo, sin API
 //   node tools/localizar.mjs "<pdf>" --ejecutar     llama a Claude (no repite si ya existe el .ubicacion.json; --rehacer lo fuerza)
 //   node tools/localizar.mjs --lista <archivo> [--ejecutar]
-//   node tools/localizar.mjs --lista <archivo> --modelo opus|sonnet [--ejecutar]   (to-do 288) MEDICIÓN: la localización con ese modelo, en
+//   node tools/localizar.mjs --lista <archivo> --modelo opus|sonnet [--ejecutar] MEDICIÓN: la localización con ese modelo, en
 //        .ubicacion.<modelo>.json (no pisa ni usa el .ubicacion.json), con el perímetro del club como en lote.mjs. Nada más la lee.
 // ============================================================================
 
@@ -39,10 +39,10 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { clubDeRuta } from './carpetas-clubes.mjs';
-import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // (to-do 341) «club de fútbol» de los prompts de lectura es el deporte del club
+import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // «club de fútbol» de los prompts de lectura es el deporte del club
 import { indiceBloques, ficha, textoDeBloque, VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { derivado } from './rutas.mjs';
-import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
+import { shaMd } from './cache-al-dia.mjs'; // huella del .md con el que se hizo el caché
 import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
 import { esAMano } from './extraer.mjs';
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
@@ -100,7 +100,7 @@ function nombreLegalDe(pdf) {
 }
 function pedido(pdf, registro, sitio) {
   const e = registro.find((x) => x.pdf === pdf) || {};
-  const cierre = ajusteDe(pdf, 'cierre')?.valor || e.periodo?.cierre || null; // (Versión 413) el ajuste manual `cierre` es el escalón 0
+  const cierre = ajusteDe(pdf, 'cierre')?.valor || e.periodo?.cierre || null; // el ajuste manual `cierre` es el escalón 0
   const entidad = nombreLegalDe(pdf);
   return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}${entidad ? ` Entidad con la que el club está en el sitio: ${entidad}. Si el documento trae estados de resultados separados de VARIAS entidades (por ejemplo la sociedad que juega el ${deporteEnFrase(deporteDePdf(pdf))}, la asociación o club deportivo, el holding o la sociedad del estadio), elegí los de esa entidad y no los de las otras; la regla del consolidado y el individual de la misma entidad no cambia.` : ''}` };
 }
@@ -130,13 +130,13 @@ export function aplicarAjusteEstado(datos, pdf, ajuste = ajusteDe(pdf, 'estado')
   return datos;
 }
 
-// (to-do 288) `modelo` (opus | sonnet), solo desde la medición del CLI: otro archivo (.ubicacion.<modelo>.json) y ese modelo en las dos llamadas.
+// `modelo` (opus | sonnet), solo desde la medición del CLI: otro archivo (.ubicacion.<modelo>.json) y ese modelo en las dos llamadas.
 const MODELOS = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
 export async function localizar(pdf, { registro, perimetroClub, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false, pistaResultado = null, modelo = null } = {}) {
   const { md, texto } = pedido(pdf, registro, perimetroClub ?? null); const SYSTEM = sistemaDe(deporteDePdf(pdf));
   const idModelo = modelo ? MODELOS[modelo] : MODELO;
   const out = resolve(ROOT, derivado(md, modelo ? `.ubicacion.${modelo}.json` : '.ubicacion.json'));
-  // AJUSTE MANUAL `filas-a-mano` (Versión 614): la ubicación de este documento se armó o corrigió a mano; ni --rehacer la pisa.
+  // AJUSTE MANUAL `filas-a-mano`: la ubicación de este documento se armó o corrigió a mano; ni --rehacer la pisa.
   if (existsSync(out) && esAMano(pdf)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, protegido: true };
   // (to-do 298 ac, ok de Guido 2026-10-19) El perímetro del ajuste que se usó al localizar queda en el archivo (`perimetroClub`). Si después se
   // fija otro ajuste `perimetro`, la localización guardada está vieja y se rehace. Los archivos sin ese campo, o quien llama sin pasar el
@@ -156,7 +156,7 @@ export async function localizar(pdf, { registro, perimetroClub, ejecutar = false
   const bPista = pistaResultado?.linea ? bloques.find((b) => b.lineas[0] <= pistaResultado.linea && pistaResultado.linea <= b.lineas[1]) : null;
   const visibles = bloques.filter((b) => b.cifras >= 2 || b === bPista);
   const pista = pistaResultado ? `\n\nAJUSTE MANUAL DE GUIDO: el resultado del ejercicio impreso es ${pistaResultado.valor}, en la línea ${pistaResultado.linea} del .md${bPista ? ` (bloque ${bPista.id})` : ''}. Elegí ese bloque como el del resultado impreso, junto con las notas de ingresos y gastos; si las encontrás, sin_estado = false.` : '';
-  // REINTENTO (Versión 340): qué faltó en el intento anterior, para que elija también el cuadro que lo abre (por ejemplo, uno por segmento).
+  // REINTENTO: qué faltó en el intento anterior, para que elija también el cuadro que lo abre (por ejemplo, uno por segmento).
   const faltas = (reintento || []).map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}"` : `el desglose de "${x.renglon}" no sumó (${x.suma} contra ${x.objetivo})`));
   const user = `${texto}${faltas.length ? `\n\nREINTENTO: en el intento anterior ${faltas.join('; ')}. Elegí también los cuadros que abren esos renglones (notas, anexos o cuadros por segmento).` : ''}${notasComoEstado ? `\n\n${PEDIDO_NOTAS_COMO_ESTADO}` : ''}${pista}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
   if (!ejecutar) return { ensayo: true, tokens: tokensDe(SYSTEM + user), usd: usdEstimado(tokensDe(SYSTEM + user), 1500, idModelo) };

@@ -91,7 +91,7 @@ function loadEngine() {
   const files = [
     'data/clubs.js', 'data/category-map.js', 'data/currency-map.js',
     'data/sources-view.js', 'data/club-leagues.js', 'data/site-labels.js',
-    // Versión 164: las filas de club-leagues se partieron en un archivo por país, que
+    // las filas de club-leagues se partieron en un archivo por país, que
     // en el navegador se cargan al abrir el selector. Acá no hay selector, así que se
     // cargan todos, siempre: la auditoría tiene que ver la tabla completa.
     ...fs.readdirSync(path.join(ROOT, 'data/club-leagues')).filter(f => f.endsWith('.js')).sort()
@@ -170,11 +170,11 @@ function checkEstructura(api) {
     }
     const cur = api.clubs[id].reportingCurrency;
     if (cur && !api.CURRENCY_META[cur]) add('P2', 'moneda-sin-meta', `${id}: reportingCurrency '${cur}' no está en CURRENCY_META, cae al fallback de currency-map.js`);
-    // Versión 179: `brandColor:null` es el resultado CERRADO de "se miró y no lleva color" (blanco
+    // `brandColor:null` es el resultado CERRADO de "se miró y no lleva color" (blanco
     // o ambiguo). El campo AUSENTE es otra cosa: nadie lo chequeó. Los dos se ven igual en pantalla
     // (`pintarCrest()` hace `if(!c)`), así que sin esta distinción la única forma de saber cuál es
     // cuál sería rebarrer todos los clubes, que es justo lo que el paso de onboarding evita.
-    // (to-do 339) todo club declara su deporte (sport en data/clubs.js): las tools lo leen de ahí y ya no suponen fútbol; el sitio y audit.js todavía caen a fútbol si falta
+    // todo club declara su deporte (sport en data/clubs.js): las tools lo leen de ahí y ya no suponen fútbol; el sitio y audit.js todavía caen a fútbol si falta
     if (!api.clubs[id].sport || !api.SPORT_TAXONOMIES[api.clubs[id].sport]) add('P1', 'club-sin-deporte', `${id}: sport ${api.clubs[id].sport ? `«${api.clubs[id].sport}» no tiene taxonomía en SPORT_TAXONOMIES` : 'falta'} en data/clubs.js`);
     if (!('brandColor' in api.clubs[id])) add('P3', 'club-sin-color-ni-null', `${id}: sin brandColor ni brandColor:null en data/clubs.js — no se distingue "se miró y no lleva color" de "nadie lo chequeó" (ver club-or-year-onboarding/club-nuevo.md)`);
   }
@@ -239,7 +239,7 @@ function checkTieOuts(api) {
 
 // --- D4/D5: taxonomía y categorías que el motor no suma --------------------
 function checkCategorias(api) {
-  // (to-do 339) las categorías válidas de un club son las de la taxonomía de SU deporte (SPORT_TAXONOMIES): una línea de rugby con lump_rugby_operations no es un typo.
+  // las categorías válidas de un club son las de la taxonomía de SU deporte (SPORT_TAXONOMIES): una línea de rugby con lump_rugby_operations no es un typo.
   // Para el fútbol es la misma lista de siempre (REVENUE_CATEGORIES / EXPENSE_CATEGORIES). Un club sin deporte (o sin taxonomía) cae al fútbol acá y lo marca club-sin-deporte.
   const listasDe = (clubId) => { const t = api.SPORT_TAXONOMIES[(api.clubs[clubId] || {}).sport] || api.SPORT_TAXONOMIES.futbol; return { revOk: new Set(Object.keys(t.revenue)), expOk: new Set(Object.keys(t.expense)) }; };
   for (const { clubId, year, rev, exp } of clubYears(api)) {
@@ -272,7 +272,7 @@ function checkCategorias(api) {
   // TODO el sitio en silencio (KPI Gastos, EBITDA, PAT, deuda, comparar gestiones).
   // Es exactamente el bug de la Versión 53 con las 3 categorías nuevas de Racing,
   // que se encontró de casualidad; esto lo encuentra siempre.
-  // (to-do 339) por cada deporte con taxonomía: el club sintético lleva su `sport` (el motor lee la genérica y el bloque de SPORT_TAXONOMIES[sport]).
+  // por cada deporte con taxonomía: el club sintético lleva su `sport` (el motor lee la genérica y el bloque de SPORT_TAXONOMIES[sport]).
   const PROBE = '__sonda_de_auditoria__', YEAR = 9999;
   for (const [dep, cat] of Object.entries(api.SPORT_TAXONOMIES).flatMap(([d, t]) => Object.keys(t.expense).map(c => [d, c]))) {
     api.clubs[PROBE] = { id: PROBE, sport: dep };
@@ -286,7 +286,7 @@ function checkCategorias(api) {
     if (Math.abs(visto - (-100)) > 0.01) {
       add('P0', 'categoria-huerfana', `la taxonomía de ${dep} incluye '${cat}' (gasto) pero computeYearGeneric() no la suma en ninguna rama: la plata de esa categoría desaparece de todo cálculo del sitio`);
     }
-    // to-do 248: la rama del motor donde cayó tiene que ser el bloque de su genérica (data/category-map.js), que es lo que publica el JSON.
+    // la rama del motor donde cayó tiene que ser el bloque de su genérica (data/category-map.js), que es lo que publica el JSON.
     const rama = c.expenses === -100 ? 'operating' : c.nonCash === -100 ? 'non_cash' : c.exceptionalItems === -100 ? 'exceptional' : null;
     const gen = api.SPORT_TAXONOMIES[dep].expense[cat];
     const bloque = (api.GENERIC_EXPENSE_CATEGORIES.find(g => g.id === gen) || {}).block;
@@ -333,7 +333,7 @@ function checkTaxonomiaDeporte(api, dep, tax) {
   // Una línea con una subcategoría del otro lado tiene genérica (la catch-all de su lado, genericCategoryOf); una que no existe ya es P0
   // (categoria-inexistente). Acá queda solo el caso de una subcategoría declarada en category-map.js que el mapa no resuelve.
   for (const { clubId, year, rev, exp } of clubYears(api)) {
-    if (((api.clubs[clubId] || {}).sport || 'futbol') !== dep) continue; // (to-do 339) cada club con la taxonomía de su deporte
+    if (((api.clubs[clubId] || {}).sport || 'futbol') !== dep) continue; // cada club con la taxonomía de su deporte
     for (const [lado, side, lines] of [['ingreso', 'revenue', rev], ['gasto', 'expense', exp]]) {
       for (const l of lines) {
         const declarada = listas.revenue.includes(l.normalizedCategory) || listas.expense.includes(l.normalizedCategory);
@@ -461,7 +461,7 @@ function checkMoneda(api) {
     // callada, que es distinto. Por eso acá se mira el dato CRUDO (dónde falta el fx
     // del documento) y se reserva el ruido para los ejercicios reales: un placeholder
     // ya se le anuncia al visitante como tal.
-    // "Crudo" pero resuelto (Versión 125): un ejercicio puede traer `fxRef` en vez de
+    // "Crudo" pero resuelto: un ejercicio puede traer `fxRef` en vez de
     // `fx`, con el número en FX_CLOSE. Leer `ym.fx` a secas daría "sin fx" para los 33
     // que usan la tabla.
     const fxCrudo = api.fxMetaFor(ym).fx;
@@ -551,14 +551,14 @@ function checkMoneda(api) {
 // El bug de `lump_football_operations` (ver club-data-mapping) pasó los 16
 // tie-outs de su ejercicio sin problema: el total cerraba, la plata estaba, solo
 // estaba en el bucket equivocado. Estas 2 señales son las que lo delatan.
-// --- D15: la liga de cada ejercicio (Versión 132) ---------------------------
+// --- D15: la liga de cada ejercicio ---------------------------
 // `data/club-leagues.js` dice en qué categoría jugó cada club cada ejercicio, y
 // nace con todas las filas en `null` a propósito: null es "nadie lo verificó
 // todavía". Esto cuenta lo que falta (para que el pendiente no dependa de que
 // alguien se acuerde) y avisa si un ejercicio real no tiene ni siquiera su fila.
 // --- CAJA Y DEUDA DESPROPORCIONADAS (to-do 260 e) ---------------------------
 // Un techo por proporción con los ingresos del mismo año, solo hacia arriba: caja más de 3 veces los ingresos o deuda más de 20 veces es un
-// error de escala o de fila, no un dato. Medido (2026-10-17) en lo cargado: el máximo real de caja es 2,53 veces (Atlético Mineiro 2023) y
+// error de escala o de fila, no un dato. Medido en lo cargado: el máximo real de caja es 2,53 veces (Atlético Mineiro 2023) y
 // el de deuda 13,7 veces (Novorizontino 2015). Casos que frena (corrida de caja-deuda.mjs del 2026-10-16, revertidos a mano): Hellas
 // Verona 2024 deuda 1,8e16; Milan 2009 deuda 163.739 M; Inter 2021 caja 97.884 M; Lazio 2008-2019. P1: caja-deuda.mjs y cargar.mjs
 // revierten solos lo que lo pase. (to-do 260 a, aprobado por Guido el 2026-10-17) PISO de caja, el mismo de caja-deuda.mjs: menos de 7e-5
@@ -592,7 +592,7 @@ function checkLigasPorEjercicio(api) {
   }
 }
 
-// --- D16: los KB que la guía de arranque promete (Versión 171) --------------
+// --- D16: los KB que la guía de arranque promete --------------
 // POR QUÉ ESTO ES UN CHEQUEO Y NO UN DETALLE COSMÉTICO. La tabla de
 // `.claude/skills/start-session-finance-of-sports-project/SKILL.md` §1 existe
 // para una sola cosa: que una sesión decida QUÉ ABRIR y qué no, antes de
@@ -603,7 +603,7 @@ function checkLigasPorEjercicio(api) {
 // abrir de corrido, anunciados como si fueran livianos.
 // Es P3 porque no rompe nada y no publica un número malo; sale igual en cada
 // corrida porque el desfasaje vuelve solo (los docs crecen todas las sesiones).
-// (Versión 546) checkPesoDocs() se borró: chequeaba los KB que la guía de arranque anotaba de cada
+// checkPesoDocs() se borró: chequeaba los KB que la guía de arranque anotaba de cada
 // documento, y Guido decidió sacar esos números de la guía para no tener que actualizarlos nunca más.
 
 // --- D17: documentos internos que netlify.toml NO saca del deploy (V176) ----
@@ -700,7 +700,7 @@ function checkSponsorBusqueda() {
   if (legacy) add('P3', 'sponsor-sin-registro', `${legacy} año(s) con el sponsor sin fuente como texto libre de antes (tools/sponsor-legacy.json): completar con el registro de búsqueda cuando alguien toque el club`);
 }
 
-// --- Comentarios internos en lo que se publica (to-do 208 y 209) -------------
+// --- Comentarios internos en lo que se publica -------------
 // Todo comentario de index.html, js/ y data/ viaja al visitante. La regla (Admin/PANTALLA.md, "Comentarios en lo que se publica") deja
 // solo el porqué técnico: nada de nombres, "Versión N", "to-do N", fechas ni contadores de clubes. Un hallazgo por archivo, con el total y
 // el primer caso; la lista completa sale con --json. Además, un data/<país>/<club>-data.js no lleva NINGÚN comentario (Admin/CONVENCIONES-DATOS.md):
@@ -775,7 +775,7 @@ function checkParrafoNetlifyDuplicado() {
   }
 }
 
-// --- D18: rutas de archivo que ya no existen (Versión 198, to-do 46) --------
+// --- D18: rutas de archivo que ya no existen --------
 // POR QUÉ. La reorganización de la Versión 196 movió 11 documentos y actualizó 203
 // referencias en 31 archivos. Esa verificación se hizo con un script de una sola
 // corrida, y una sola referencia olvidada manda a una sesión futura a un archivo que
@@ -893,7 +893,7 @@ function checkRutasMuertas() {
     }
   }
 
-  // UNA RUTA GITIGNOREADA NO CUENTA (Versión 200). Su presencia no es una propiedad
+  // UNA RUTA GITIGNOREADA NO CUENTA. Su presencia no es una propiedad
   // del repo sino de ESTE checkout: `Clubes/Argentina/River/estados-contables-leads/`
   // (la fuente no oficial, que se guarda y no se trackea) está en el árbol principal y
   // NO en un worktree recién creado, así que el data file de River citándola daba
@@ -1031,7 +1031,7 @@ function checkRayaLarga() {
   add('P2', 'raya-larga-visible', `${hallazgos.length} línea(s) del texto visible del sitio con raya larga (—): ${hallazgos.slice(0, 8).join(', ')}${hallazgos.length > 8 ? ', …' : ''}. Regla de estilo de Admin/CONVENCIONES.md: punto, coma, dos puntos o paréntesis. Solo se permite «—» entre comillas como símbolo de «sin dato»`);
 }
 
-// --- D19: TODO LO GENERADO, AL DÍA (Versión 183) ---------------------------
+// --- D19: TODO LO GENERADO, AL DÍA ---------------------------
 // El proyecto tiene 6 generadores (estos 5 tienen --check; el sexto es generate-como-corre-stats.js) y dependen de que alguien se acuerde de
 // correrlos. "Acordate" ya falló antes acá (ver `checkDeployInterno`), y esta
 // sesión encontró el caso más silencioso de todos: `generate-fuentes-page.js`
@@ -1053,12 +1053,12 @@ const GENERADORES = [
   ['generate-club-pages.js',    'club/, liga/ y sitemap.xml (links propios con tarjeta, to-do 241)', 'club-pages-desfasado'],
   ['generate-club-index.js',    'Admin/ESTADO-clubes.md (generado)',         'club-index-desfasado'],
   ['generate-fuentes-index.js', 'el índice de Admin/sourcing/README.md',    'fuentes-indice-desfasado'],
-  ['faltantes-liga.mjs',        'data/faltantes/ y Admin/sourcing/pendientes.md', 'faltantes-desfasado'], // to-do 266: cambia con cada carga y cada sourcing
+  ['faltantes-liga.mjs',        'data/faltantes/ y Admin/sourcing/pendientes.md', 'faltantes-desfasado'], // cambia con cada carga y cada sourcing
   ['auditoria.mjs',             'data/auditoria/ (quién audita cada balance, to-do 282)', 'auditoria-desfasado'],
   ['entidades.mjs',             'data/entidades/ (estructura de cada club, to-do 280)', 'entidades-desfasado'],
   ['estimar.mjs',               'data/estimados/ (y ningún estimado al lado de un año real)', 'estimados-desfasado'], // to-do 270; sin la carpeta, no chequea
   ['generate-sponsors.js',      'data/sponsors.js (sponsors y marcas de cada liga)', 'sponsors-desfasado'], // to-do 273; une equipos a clubes del sitio
-  ['generar-data.mjs',          'los data/<país>/<id>-data.js (se generan de su JSON: nunca a mano)', 'json-js-desfasado'], // to-do 245: el JSON es la fuente
+  ['generar-data.mjs',          'los data/<país>/<id>-data.js (se generan de su JSON: nunca a mano)', 'json-js-desfasado'], // el JSON es la fuente
   ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v2.json)', 'json-no-valida'],
   ['generar-correcciones.mjs',  'data/correcciones/ (el registro público de correcciones, to-do 247)', 'correcciones-desfasado'],
 ];
@@ -1082,12 +1082,12 @@ function checkGenerados() {
     const sinCorrer = GENERADORES.map((g) => g[0]).filter((s) => !corre.includes(s) && !['generar-data.mjs', 'validar-esquema-json.mjs'].includes(s));
     if (sinCorrer.length) add('P2', 'generador-sin-correr', `audit.js verifica ${sinCorrer.join(', ')} pero tools/generadores.mjs no lo corre al cerrar una carga: una carga que lo deje viejo se revierte. Sumalo a la lista de tools/generadores.mjs`);
   } catch { /* sin generadores.mjs: otro chequeo lo dice */ }
-  // cada .js y .mjs de tools/ está clasificado respecto del pipeline (TODO 376): una tool nueva sin clasificar se commitea sin medir
+  // cada .js y .mjs de tools/ está clasificado respecto del pipeline: una tool nueva sin clasificar se commitea sin medir
   if (fs.existsSync(path.join(ROOT, 'tools/clasificar-tools.mjs'))) {
     try { execSync('node tools/clasificar-tools.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
     catch (e) { add('P1', 'tool-sin-clasificar', String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ').slice(0, 300)); }
   }
-  // los lotes de prueba (TODO 371): una familia cargada sin documentos en la mediana, o un club cuyo último año con verificación no está en ella, y una medición no lo vería
+  // los lotes de prueba: una familia cargada sin documentos en la mediana, o un club cuyo último año con verificación no está en ella, y una medición no lo vería
   if (fs.existsSync(path.join(ROOT, 'tools/lotes-prueba.mjs'))) {
     try { execSync('node tools/lotes-prueba.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
     catch (e) { add('P2', 'lote-prueba-desfasado', `los lotes de prueba no cubren lo cargado: ${String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ').slice(0, 260)}`); }
@@ -1097,7 +1097,7 @@ function checkGenerados() {
   catch (e) { add('P3', 'indice-md-desfasado', 'Admin/INDICE-md.md quedó desactualizado (se creó, movió o borró un .md). Corré: node tools/indice-md.mjs'); }
 }
 
-// to-do 247: un commit que corrige un dato publicado (importe, categoría, filas, totales, caja/deuda, moneda, fuente, perímetro) lleva el trailer
+// un commit que corrige un dato publicado (importe, categoría, filas, totales, caja/deuda, moneda, fuente, perímetro) lleva el trailer
 // `Corrige: <motivo en una frase>` (o una línea en Admin/registros/correcciones.jsonl). Sin eso el registro público dice «Motivo no registrado».
 function checkCorreccionesSinMotivo() {
   if (!fs.existsSync(path.join(ROOT, 'tools/generar-correcciones.mjs'))) return;
@@ -1241,7 +1241,7 @@ function checkReferenciaAClub(api, aliasesDeIds) {
   }
 }
 
-// --- D12c: colisión de clubId adelantada al SOURCING (Versión 163) ----------
+// --- D12c: colisión de clubId adelantada al SOURCING ----------
 // checkClubIds() avisa cuando un id heredado sin país deja de ser inequívoco, pero recién
 // cuando el club que colisiona YA ESTÁ CARGADO en clubs{}. Para entonces renombrar el
 // viejo cuesta tres cosas (el archivo data/<país>/<id>-data.js, el clubId y el prefijo de cada
@@ -1328,7 +1328,7 @@ function checkColisionSourcing(api) {
   }
 }
 
-// --- D12b: carpetas de Clubes/<País>/<Club>/ (Versión 160) ------------------
+// --- D12b: carpetas de Clubes/<País>/<Club>/ ------------------
 // OJO CON QUÉ PUEDE Y QUÉ NO PUEDE DETECTAR ESTO, porque el punto del plan de escala que lo
 // pidió lo planteaba de otra manera. La idea original era "avisar si dos clubes del mismo país
 // comparten nombre corto y sus carpetas chocan". Eso NO es detectable por construcción: un
@@ -1380,7 +1380,7 @@ function checkCarpetasClubes() {
     }
   }
 
-  // (to-do 287) Dos carpetas de club de un mismo país con PDFs de la MISMA huella: el club quedó con dos carpetas por una grafía distinta
+  // Dos carpetas de club de un mismo país con PDFs de la MISMA huella: el club quedó con dos carpetas por una grafía distinta
   // (la que no atrapa 'carpeta-club-duplicada', que solo mira nombres). Se compara por tamaño y solo si coincide se calcula el sha1.
   // Sigue los symlinks (en un worktree, `worktree.mjs preparar` enlaza Clubes/ a la carpeta principal); las carpetas de agregado ("_...") alimentan varios clubes y quedan afuera.
   for (const pais of paises) {
@@ -1417,7 +1417,7 @@ function checkCarpetasClubes() {
     add('P2', 'carpeta-sin-pais', `Clubes/${pais}/ tiene ${docs.length} documento(s) sueltos (${docs.slice(0, 3).join(', ')}${docs.length > 3 ? ', ...' : ''}) en vez de subcarpetas de club. Si es un club, le falta la carpeta de país en el medio: la convención es Clubes/<País>/<Club>/, nunca una carpeta de club al nivel de arriba (ver CLAUDE.md)`);
   }
 
-  // Versión 309: ¿cada carpeta de club resuelve a UN club sin ambigüedad? La regla vive en tools/carpetas-clubes.mjs (cita en
+  // ¿cada carpeta de club resuelve a UN club sin ambigüedad? La regla vive en tools/carpetas-clubes.mjs (cita en
   // data/<país>/<id>-data.js, y si no, nombre IGUAL dentro del mismo país) y la usan onboard.mjs, el registro de transcripciones y el pipeline.
   // Con la regla vieja (substring, sin país) 17 clubes del sitio no se reconocían y 11 carpetas caían en un club EQUIVOCADO (Porto ->
   // Grêmio, Inter -> Internacional): el registro marcaba "ya cargado" PDFs que no lo estaban, y al revés. Si una carpeta vuelve a ser
@@ -1435,7 +1435,7 @@ function checkCarpetasClubes() {
   for (const f of archivosData()) {
     const id = idDeArchivo(f);
     if (resueltos.has(id)) continue;
-    // (to-do 209) la cita de la carpeta puede estar en la evidencia del club y no en data/: se leen los dos, como carpetas-clubes.mjs
+    // la cita de la carpeta puede estar en la evidencia del club y no en data/: se leen los dos, como carpetas-clubes.mjs
     const ev = path.join(ROOT, 'Admin', 'carga-clubes', `${id}.md`);
     const txt = fs.readFileSync(path.join(ROOT, f), 'utf8') + (fs.existsSync(ev) ? `\n${fs.readFileSync(ev, 'utf8')}` : '');
     if (/Clubes\/[^/\n`'"]+\/_/.test(txt)) continue; // se alimenta de una carpeta de agregado (J.League)
@@ -1473,7 +1473,7 @@ function checkArchivoNoEsLoQueDice() {
   })(CLUBES_DIR);
 }
 
-// --- D13: qué de las fuentes se le muestra al visitante (Versión 127) -------
+// --- D13: qué de las fuentes se le muestra al visitante -------
 // `sources[].note` es una nota INTERNA: una sesión se la escribe a la siguiente, con
 // rutas del repo, cómo se leyó el PDF y qué quedó pendiente. En la Versión 126 se
 // publicó tal cual, y el visitante terminó leyendo "PDF subido directamente por Guido"
@@ -1490,7 +1490,7 @@ function checkFuentesPublicas(api) {
     }
     if (s.reliability !== 'primary' && !s.publicNote) sinNota++;
   }
-  // (to-do 209) la nota INTERNA de una fuente ya no vive en data/ (que se publica entero): va a "## Fuentes" del
+  // la nota INTERNA de una fuente ya no vive en data/ (que se publica entero): va a "## Fuentes" del
   // Admin/carga-clubes/<club>.md (tools/evidencia-club.mjs, agregarFuente). Un `note` que vuelva a aparecer en sources{} viaja al visitante.
   const conNote = Object.keys(api.sources).filter((id) => 'note' in api.sources[id]);
   if (conNote.length) add('P2', 'note-interna-en-data', `${conNote.length} fuentes con \`note\` en data/ (ej. ${conNote.slice(0, 3).join(', ')}): la nota interna va a "## Fuentes" de Admin/carga-clubes/<club>.md, no a sources{}`);
@@ -1539,7 +1539,7 @@ function checkTodo() {
   }
 }
 
-// --- D12: procedencia del tipo de cambio (Versión 125) ---------------------
+// --- D12: procedencia del tipo de cambio ---------------------
 // `checkMoneda()` revisa que el fx EXISTA y sea plausible. Esto revisa de DÓNDE
 // SALIÓ: si lo declara el documento, si es una cotización de mercado, o si nadie
 // lo sabe. Antes de la Versión 125 eso vivía en prosa y no se podía chequear.
@@ -1599,19 +1599,19 @@ function checkCategorizacion(api) {
   for (const { clubId, year, ym, rev, exp } of clubYears(api)) {
     if (!exp.length && !rev.length) continue;
     const cat = c => exp.filter(l => l.normalizedCategory === c).reduce((s, l) => s + l.amountNative, 0);
-    // (to-do 339) los sueldos del primer equipo y el bolsón sin desglosar son los de la taxonomía del deporte del club (wages_squad / lump_football_operations_expense en fútbol)
+    // los sueldos del primer equipo y el bolsón sin desglosar son los de la taxonomía del deporte del club (wages_squad / lump_football_operations_expense en fútbol)
     const tx = api.SPORT_TAXONOMIES[(api.clubs[clubId] || {}).sport || 'futbol'] || api.SPORT_TAXONOMIES.futbol;
     const SUELDOS = Object.keys(tx.expense).find(k => tx.expense[k] === 'first_team_staff'); const BOLSON = (tx.lump || {}).expense;
     // Un ejercicio placeholder tiene sus líneas en cero: no es que falten los sueldos,
     // es que no hay datos todavía. Solo se mira donde hay plata cargada.
-    // (TODO 351) Los sueldos marcados «incluidos en» otra fila (`incluye`, el documento no permite separarlos) están resueltos: el sitio lo dice en la fila.
+    // Los sueldos marcados «incluidos en» otra fila (`incluye`, el documento no permite separarlos) están resueltos: el sitio lo dice en la fila.
     if (SUELDOS && sum(exp) !== 0 && cat(SUELDOS) === 0 && (!BOLSON || cat(BOLSON) === 0) && !(ym && ym.incluidoEn && ym.incluidoEn[SUELDOS])) {
       add('P2', 'sin-salarios', `${ref(clubId, year)}: no hay ni una línea en '${SUELDOS}' ni un bolsón sin desglosar — todo club paga sueldos, probablemente quedaron enterrados en otra categoría`);
     }
     // SUELDOS POSIBLEMENTE ESCONDIDOS (to-do 232 s): con el costo de personal del ejercicio ya leído de su nota (fiscalYearMeta.staffCost,
     // caja-deuda.mjs --personal), las líneas wages_squad suman menos de la mitad. Caso que lo motivó: PAOK, 42 M en "Αμοιβές τρίτων" del
     // cuadro de fútbol contra 9,2 M de costo de personal en la nota 17; un subagente lo notó leyendo, esto lo hace aparecer solo.
-    // (TODO 368) también acá la marca `incluye` es lo resuelto: el costo de personal se leyó y el documento no deja separarlo
+    // también acá la marca `incluye` es lo resuelto: el costo de personal se leyó y el documento no deja separarlo
     if (SUELDOS && ym.staffCost > 0 && Math.abs(cat(SUELDOS)) < ym.staffCost / 2 && !(ym.incluidoEn && ym.incluidoEn[SUELDOS])) {
       add('P2', 'sueldos-escondidos', `${ref(clubId, year)}: el costo de personal de la nota es ${ym.staffCost} y '${SUELDOS}' suma ${Math.abs(cat(SUELDOS))}: los sueldos pueden estar dentro de otra línea (caja-deuda.mjs --personal --partir, o la cola por renglón)`);
     }
@@ -1791,7 +1791,7 @@ function checkGestiones(api) {
   const fecha = /^\d{4}-\d{2}-\d{2}$/;
   const sinBalance = [];
   for (const [club, gs] of Object.entries(sandbox.window.CLUB_GESTIONES || {})) {
-    // P3 (to-do 219): las gestiones se cargan por país antes que los balances; un club sin balance todavía es esperable, no un riesgo.
+    // P3: las gestiones se cargan por país antes que los balances; un club sin balance todavía es esperable, no un riesgo.
     // Una línea por país en vez de una por club (Auditora 5): son 26 avisos del mismo hecho. Y un id sin balance que se parece a uno cargado
     // (mismo país y mismos cinco primeros caracteres del slug) sí puede ser un id mal escrito: ese es P1 (`gestion-id-sospechoso`).
     if (!api.clubs[club]) sinBalance.push(club);
@@ -1841,7 +1841,7 @@ function checkHigiene(api) {
     }
   } catch { /* sin git, no es un error de datos */ }
 
-  // ASSET_V, la otra mitad (Versión 125): los `?v=` de los <script src> estáticos
+  // ASSET_V, la otra mitad: los `?v=` de los <script src> estáticos
   // son LITERALES, no salen de la constante, subir `window.ASSET_V` y olvidarse
   // de los tags deja al navegador sirviendo los archivos viejos de su caché, con
   // el HTML nuevo. Pasó de verdad al migrar los fx: `currency-map.js` llegó
@@ -1860,7 +1860,7 @@ function checkHigiene(api) {
   // i18n: una clave usada y no definida degrada al castellano en silencio.
   const usadas = new Set();
   for (const m of html.matchAll(/data-i18n(?:-title)?="([^"]+)"/g)) usadas.add(m[1]);
-  // Versión 162: `tools/generate-fuentes-page.js` también EMITE atributos data-i18n, para
+  // `tools/generate-fuentes-page.js` también EMITE atributos data-i18n, para
   // `fuentes.html` y para las N páginas por club. No estaba en ningún escaneo, así que una
   // clave nueva de esas páginas quedaba invisible: el chequeo pasaba en verde mientras el
   // visitante de habla inglesa las leía en castellano. Es la misma regla que ya existía para
@@ -1871,13 +1871,13 @@ function checkHigiene(api) {
     const gen = fs.readFileSync(path.join(ROOT, 'tools/generate-fuentes-page.js'), 'utf8');
     for (const m of gen.matchAll(/data-i18n(?:-title)?="([^"$]+)"/g)) usadas.add(m[1]);
   }
-  // Versión 137: se suma js/selector.js (js/comparar-clubes.js estuvo en esta lista
+  // se suma js/selector.js (js/comparar-clubes.js estuvo en esta lista
   // hasta la Versión 152, cuando ese archivo se borró). Sin esto el chequeo
   // miraba 3 archivos fijos y las claves nuevas del selector y de la comparación no
   // se contaban, o sea que el chequeo pasaba mientras el visitante veía castellano.
   // Hoy se leen TODOS los `js/*.js` más index.html, así un archivo nuevo de js/ (js/principal.js, js/cuenta.js) no queda afuera. Salvo
   // js/i18n.js: es el motor de t() y sus `t('clave', ...)` son ejemplos de su cabecera, no claves del sitio.
-  for (const rel of [...fs.readdirSync(path.join(ROOT, 'js')).filter(f => f.endsWith('.js') && f !== 'i18n.js').sort().map(f => 'js/' + f), 'index.html']) { // (Versión 515) + js/liga.js, que llamaba a t() y no estaba; (Versión 535) + los dos archivos del to-do 147
+  for (const rel of [...fs.readdirSync(path.join(ROOT, 'js')).filter(f => f.endsWith('.js') && f !== 'i18n.js').sort().map(f => 'js/' + f), 'index.html']) { // + js/liga.js, que llamaba a t() y no estaba; + los dos archivos del to-do 147
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
     // Una clave que termina en "." no es una clave sino un PREFIJO de clave dinámica
     // (`t('fx.source.' + meta.fxSource, ...)`): el valor real se arma en runtime y no se
@@ -2002,7 +2002,7 @@ function checkDatosJson() {
   }
 }
 
-// (to-do 329) Las reglas de categoría de Admin/CONVENCIONES-DATOS.md (líneas «CATEGORÍA (prompt)» y «EJEMPLO-CATEGORÍA») tienen que ser válidas y sus ejemplos tienen que estar
+// Las reglas de categoría de Admin/CONVENCIONES-DATOS.md (líneas «CATEGORÍA (prompt)» y «EJEMPLO-CATEGORÍA») tienen que ser válidas y sus ejemplos tienen que estar
 // registrados en categorias-aprendidas.jsonl (tools/reglas-categoria.mjs --escribir). Aviso, no frena.
 function checkReglasCategoria() {
   let out = ''; let fallo = false;
@@ -2013,7 +2013,7 @@ function checkReglasCategoria() {
   else if (lineas.filter((l) => l.startsWith('falta registrar')).length) add('P2', 'regla-categoria-sin-registrar', `${lineas.filter((l) => l.startsWith('falta registrar')).length} ejemplo(s) de reglas de categoría sin registrar: node tools/reglas-categoria.mjs --escribir`);
 }
 
-// (to-do 339) Cada deporte activo (o con taxonomía) tiene su tabla de «ceros que no pueden ser cero» en tools/deporte-club.mjs (CEROS_POR_DEPORTE; [] si la vacía es a propósito) y su taxonomía.
+// Cada deporte activo (o con taxonomía) tiene su tabla de «ceros que no pueden ser cero» en tools/deporte-club.mjs (CEROS_POR_DEPORTE; [] si la vacía es a propósito) y su taxonomía.
 function checkDeportes() {
   let out = ''; let fallo = false;
   try { out = execSync('node tools/deporte-club.mjs', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); }
@@ -2054,7 +2054,7 @@ function checkRarezas() {
   for (const r of R_.sinSuTexto()) add('P3', 'rareza-sin-su-texto', `Admin/registros/rarezas.jsonl: ${r.md}:${r.linea} «${r.texto}» ya no está en esa línea ±3 (¿se re-transcribió?). Buscá el texto en el .md y registrala de nuevo con tools/rarezas.mjs, o sacala`);
 }
 
-// (to-do 339) PRUEBA DE DEPORTE: por cada deporte con taxonomía distinto del fútbol se arma EN MEMORIA un club de muestra (una línea por subcategoría de ingreso y de gasto) y se
+// PRUEBA DE DEPORTE: por cada deporte con taxonomía distinto del fútbol se arma EN MEMORIA un club de muestra (una línea por subcategoría de ingreso y de gasto) y se
 // corren con él TODOS los chequeos. Nada de lo que la muestra provoque como P0 o P1 puede ser por el deporte: si pasa, es un chequeo con una lista o un id del fútbol fijo y sale como
 // P1 `deporte-muestra`. Los P2 y P3 de la muestra (sin fuente, sin total oficial...) son ruido de ser sintético y no se publican. Cuando se cargue un club real de ese deporte
 // (Bath Rugby), el mismo `node tools/audit.js` lo audita con la misma exigencia.
@@ -2265,7 +2265,7 @@ function main() {
   }
 
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
-  // (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.
+  // process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.
   if (JSON_OUT) { process.stdout.write(JSON.stringify({ findings, silenciados }, null, 2) + '\n', () => process.exit(bloqueantes ? 1 : 0)); return; }
   imprimir(api);
   process.exit(bloqueantes ? 1 : 0);

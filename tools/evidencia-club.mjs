@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/evidencia-club.mjs — leer y editar Admin/carga-clubes/<clubId>.md, la evidencia de carga de cada club (to-do 209).
+// tools/evidencia-club.mjs — leer y editar Admin/carga-clubes/<clubId>.md, la evidencia de carga de cada club.
 //
 // POR QUÉ: data/<país>/<club>-data.js se publica y NO lleva comentarios (Admin/CONVENCIONES-DATOS.md). Lo que los scripts del pipeline antes
 // escribían como comentario al lado del dato (cabecera del año, nota de cada fila, ajustes manuales, caja y deuda, liga, marcas de

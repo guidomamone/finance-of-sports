@@ -29,10 +29,10 @@
 //   COMPUERTA  la MISMA para los tres: valor = suma de las cifras de las filas propuestas x la escala; y un año vecino tiene que decir lo mismo:
 //              el AÑO ANTERIOR CARGADO (las mismas filas, en su columna del año anterior, dan lo cargado) o el DOCUMENTO SIGUIENTE (las mismas
 //              familias, en su columna del año anterior, dan este valor). Pasa si al menos uno coincide y ninguno contradice. Si no pasa, el
-//              siguiente escalón. Si ninguno pasa: null. Nunca frena. (to-do 223) El DOCUMENTO ANTERIOR (la columna del año anterior de estas
+//              siguiente escalón. Si ninguno pasa: null. Nunca frena. El DOCUMENTO ANTERIOR (la columna del año anterior de estas
 //              filas contra el año en ese documento) también confirma, pero solo a favor: un documento puede reexpresar el año anterior. Y
 //              dos números por debajo del piso de la tolerancia (1.500 unidades) coinciden solo si son el mismo número.
-//   DOS LECTURAS (to-do 223): cada propuesta se evalúa con las filas como se leen siempre y, si alguna fila (de este documento o de los
+//   DOS LECTURAS: cada propuesta se evalúa con las filas como se leen siempre y, si alguna fila (de este documento o de los
 //              vecinos) tiene una celda en una columna con forma de nota ("6.8", "6.13"), también sin esa celda. Decide la misma compuerta:
 //              pasa una sola lectura → esa; las dos con valores distintos → no decide. Caso: AEK 2019, "| Ταμειακά διαθέσιμα | 6.8 |
 //              7.935.425 | 1.650.370 |" se leía 6,8; sin la celda, 7.935.425, que confirma el documento 2020.
@@ -45,7 +45,7 @@
 // USO:
 //   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle] [--escalas]                         MEDICIÓN sobre los años ya cargados (ver abajo)
 //   node tools/caja-deuda.mjs --medir --ia [--ejecutar]                                       ...con el escalón 2 (sin --ejecutar: ensayo; con: API)
-//   node tools/caja-deuda.mjs --medir --ia --modelo opus|sonnet [--ejecutar]                  ...el escalón 2 con ESE modelo, para comparar (to-do 288):
+//   node tools/caja-deuda.mjs --medir --ia --modelo opus|sonnet [--ejecutar]                  ...el escalón 2 con ESE modelo, para comparar:
 //        respuestas aparte (.caja-deuda-ia.<modelo>.json), que no pisan ni usan las guardadas; solo medición, no escribe nada más.
 //   node tools/caja-deuda.mjs --medir --jev [--ejecutar]                                      ...con el escalón 1b, Jev (sin --ejecutar: ensayo con cota alta)
 //   node tools/caja-deuda.mjs --personal --medir [--ejecutar]                                 el dato "personal" (staffCost) contra Admin/mediciones/personal-verdad.tsv
@@ -60,7 +60,7 @@
 // a mano). Corrido después de cargar, el año anterior ya está en el sitio y sirve de compuerta. Un valor que se completa en esta
 // misma corrida NO cuenta como cargado para el año siguiente (Versión 502: un error se encadenaba). Sin --ejecutar, el escalón 2 es ensayo (costo estimado). --escribir: lo escribe en
 // data/<país>/<club>-data.js (el valor, sin comentario: data/ se publica) y en Admin/carga-clubes/<club>.md una nota de dónde salió cada dato, en la
-// meta del año (to-do 209); sube ASSET_V, corre los generadores y audit.js; si da P0/P1, revierte los dos.
+// meta del año; sube ASSET_V, corre los generadores y audit.js; si da P0/P1, revierte los dos.
 //
 // --medir: para cada año ya cargado con grossDebt/cash y con transcripción (la fuente nombra el .md), lee el balance como si fuera un año nuevo
 // y lo compara con lo cargado a mano. El precedente sale SOLO de los OTROS años del club (nunca del mismo: si no, se aprendería la respuesta).
@@ -77,9 +77,9 @@ import { ajusteDe, ajusteDelAnio, ajusteClubODoc, ajustePerimetroDe } from './aj
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
 import { modificarClub } from './club-json.mjs'; // (to-do 245, fase 2) el JSON es la fuente de cada club
-import { candidatosPersonal, cierreDeMd, registroDocs, medirPersonal, completarPersonal } from './costo-personal.mjs'; // (TODO 368) el costo de personal, mudado tal cual
+import { candidatosPersonal, cierreDeMd, registroDocs, medirPersonal, completarPersonal } from './costo-personal.mjs'; // el costo de personal, mudado tal cual
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
-import { categoriaDeSueldos, deporteDeClub, deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // (to-do 339) la categoría de sueldos es la del deporte del club
+import { categoriaDeSueldos, deporteDeClub, deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // la categoría de sueldos es la del deporte del club
 import { formaImposible } from './verify-numbers.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -87,7 +87,7 @@ const PAG_RE = /^---\s*pág\.\s*(\d+)\s*---/i;
 const IMPORTE_RE = /\(?-?\d{1,3}(?:[.,' ]\d{3})+(?:[.,]\d{1,2})?\)?|\(?-?\d+[.,]\d{1,2}\)?|\(?-?\b\d{1,}\b\)?/g;
 const FACTORES = [1e-6, 1e-3, 1];
 const TOL = (v) => Math.max(0.0015, Math.abs(v) * 1e-4);
-// (to-do 223) Dos números por debajo del piso de la tolerancia (0,0015 millones = 1.500 unidades) coinciden solo si son el mismo número: con
+// Dos números por debajo del piso de la tolerancia (0,0015 millones = 1.500 unidades) coinciden solo si son el mismo número: con
 // el piso, 6,80 (una nota leída como importe, AEK 2020) "coincidía" con 31,92 (un porcentaje de la fila de ratios del documento siguiente).
 export const coincide = (a, b) => (Math.max(Math.abs(a), Math.abs(b)) < 0.0015 ? Math.abs(a - b) <= Math.max(Math.abs(a), Math.abs(b)) * 1e-4 : Math.abs(a - b) <= TOL(b));
 
@@ -106,7 +106,7 @@ export function parseNumber(raw) {
   return Number.isNaN(n) ? null : (neg ? -n : n);
 }
 
-// COLUMNAS DE NOTAS de cada tabla markdown (Versión 513, to-do 143): para cada renglón de una tabla, los índices de celda de las columnas
+// COLUMNAS DE NOTAS de cada tabla markdown: para cada renglón de una tabla, los índices de celda de las columnas
 // que son de notas SIN AMBIGÜEDAD: mirando solo las filas con la cantidad de celdas más común de la tabla (una fila despareja corre las
 // columnas: Novorizontino 2023 L330), todas sus celdas con número son referencias a nota ("4", "5,6", "18/26", "6; 21") y hay al menos 2.
 // El encabezado ("Nota", "Note", "Σημ.") y la fila separadora no cuentan: tienen letras o guiones. Un renglón con otra cantidad de celdas
@@ -132,7 +132,7 @@ function columnasDeNotas(L) {
   return res;
 }
 
-// (to-do 221) COLUMNA DE NOTAS DE VARIOS NIVELES ("6.1", "6.8", "5.4.14"; Grecia: AEK), para SACAR esa celda de la fila (filasDelMd). Más
+// COLUMNA DE NOTAS DE VARIOS NIVELES ("6.1", "6.8", "5.4.14"; Grecia: AEK), para SACAR esa celda de la fila (filasDelMd). Más
 // estricta que columnasDeNotas() porque acá un error saca un importe: la PRIMERA columna con cifras después de la etiqueta, al menos 2
 // valores, todos números de nota con punto o enteros chicos (al menos uno con punto, ninguno con coma) y EN ORDEN creciente bajando por la
 // tabla, como se numeran las notas (una columna de importes chicos en millones, "6.8", "12.4", no viene ordenada).
@@ -156,7 +156,7 @@ function columnasDeNotasConPunto(L) {
   return res;
 }
 
-// (to-do 223) COLUMNA CON FORMA DE NOTA, para la LECTURA B de una fila (escalera()): la primera columna con cifras después de la etiqueta,
+// COLUMNA CON FORMA DE NOTA, para la LECTURA B de una fila (escalera()): la primera columna con cifras después de la etiqueta,
 // al menos 2 valores, todos números de nota ("6.8", "6.13", enteros chicos) o "-", al menos uno con punto, ninguno con coma. Sin pedir orden
 // ni encabezado (AEK 2019 repite "6.9" e imprime "6.13" antes que "6.12"): acá no decide nada, solo arma la otra lectura; decide la compuerta.
 function columnasConFormaDeNota(L) {
@@ -183,7 +183,7 @@ function columnasConFormaDeNota(L) {
   return res;
 }
 
-// (to-do 228) LA NOTA DE UNA FILA DEL BALANCE ("6.15"), para el escalón "la nota de la fila" (escalera()). Busca el título de la nota (un
+// LA NOTA DE UNA FILA DEL BALANCE ("6.15"), para el escalón "la nota de la fila" (escalera()). Busca el título de la nota (un
 // encabezado que empieza con ese número) y, en sus tablas con columnas de AÑO (el encabezado trae el año), el TOTAL de cada tabla: la última
 // fila que suma las de arriba (se reconoce por los números, no por la palabra "total"; "-" cuenta como 0). Devuelve { linea, valor, anterior,
 // totales, numeros } en unidades del documento: valor/anterior = la suma de los totales de las tablas en la columna del año y del anterior;
@@ -217,7 +217,7 @@ function notaDeFila(L, ref) {
   return hay ? { linea: ini + 1, valor, anterior, totales, numeros } : null;
 }
 
-// (to-do 224) RENGLÓN DE TEXTO CON CIFRAS ("Caja      1.234 5.678"): lo mismo que /^(.*?\p{L}[^\d(]*?)\s+(CIFRAS)\s*$/u, que se usaba
+// RENGLÓN DE TEXTO CON CIFRAS ("Caja      1.234 5.678"): lo mismo que /^(.*?\p{L}[^\d(]*?)\s+(CIFRAS)\s*$/u, que se usaba
 // directo y era el 95% del tiempo de `--medir` (140 de 146 s): en una línea con una letra DESPUÉS de una tira de cifras con espacios, antes de
 // fallar probaba todas las maneras de repartir esos espacios entre "dentro del número" y "separador". Acá se prueban los mismos cortes en el
 // mismo orden (el rótulo más corto primero, como el .*? perezoso) y un corte se descarta enseguida si lo que sigue tiene un carácter que no
@@ -318,7 +318,7 @@ export function filasDelMd(md) {
         if (sinCifras && SECCION_PNC_RE.test(t0)) seccion = 'no-corriente';
         else if (sinCifras && SECCION_PC_RE.test(t0)) seccion = 'corriente';
         else if ((sinCifras && SECCION_FIN_RE.test(t0)) || TOTAL_PASIVO_FIN_RE.test(t0)) seccion = null; }
-      // (Versión 424) BALANCE DE DOS LADOS EN UNA FILA: "| Caixa | 4 | 952 | 85 | Empréstimos e financiamentos | 8 | 87 | 79 |". Cada etiqueta
+      // BALANCE DE DOS LADOS EN UNA FILA: "| Caixa | 4 | 952 | 85 | Empréstimos e financiamentos | 8 | 87 | 79 |". Cada etiqueta
       // con sus cifras es una fila (antes las del pasivo quedaban pegadas a la caja y la deuda no existía como fila). Caso: Novorizontino
       // 2018-2025 (la IA terminaba eligiendo la fila de "Caixa" como deuda porque esa línea dice "Empréstimos").
       // (Versión 430, B2, aprobado por Guido el 2026-10-03) una celda con 1-2 letras y un número ("Γ.9", "C.7", "N4") es una REFERENCIA A
@@ -340,7 +340,7 @@ export function filasDelMd(md) {
       // Eisden y RWDM. Medido: --medir deuda 168 → 170 iguales (Académico de Viseu 2023-2024), sin distintos nuevos; ensayo de 259 clubes igual
       // salvo Estrela da Amadora 2023 (sigue sin dato).
       const esRefNota = (c) => /^\d{1,4}\/\d{1,4}[AB]?$/.test(c) || /^\d{2,4}[AB]$/.test(c) || /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c) || /^\d{1,3}\.$/.test(c) || /^\d{1,2}(?:\.\d{1,2}){2,3}\.?$/.test(c) || /^\d{1,2}(?:\.\d{1,2})*\.?(?:\s*;\s*\d{1,2}(?:\.\d{1,2})*\.?)+\s*;?$/.test(c);
-      // (to-do 223) una celda que termina en "%" es un porcentaje, nunca un importe. Caso: AEK 2019, la fila de ratios "| Άμεση ρευστότητα |
+      // una celda que termina en "%" es un porcentaje, nunca un importe. Caso: AEK 2019, la fila de ratios "| Άμεση ρευστότητα |
       // Ταμειακά διαθέσιμα | 7.935.424,59 | 52,44% |" (L161) daba 52,44 como "año anterior" de la caja, y la compuerta de 2018 la encontraba
       // antes que la fila del balance.
       const esTexto = (c) => /\p{L}{3,}/u.test(c); const esCifra = (c) => /\d/.test(c) && !/\p{L}{2,}/u.test(c) && !esRefNota(c) && !/%\s*$/.test(c);
@@ -362,7 +362,7 @@ export function filasDelMd(md) {
     let nums = crudos.map(parseNumber).filter((n) => n !== null);
     // Referencia a nota: un entero chico (1-2 dígitos, sin separador) al principio, seguido de más cifras.
     // (Versión 383: un 0 no es un número de nota. Fortaleza 2023 "Caja | 0 | 2.152" se leía 2.152, la columna del año anterior.)
-    // (Versión 421) UNA sola referencia a nota, no en bucle: el importe de al lado también puede ser un entero chico (miles). Caso:
+    // UNA sola referencia a nota, no en bucle: el importe de al lado también puede ser un entero chico (miles). Caso:
     // Novorizontino 2020 "Caixa e equivalentes de caixa | 4 | 85 | 695 |" sacaba el 4 (nota) y el 85 (la caja, en miles) y leía 695 (2019).
     // (Versión 513, to-do 143, aprobado por Guido el 2026-10-05) ESCALERA DE LA LECTURA: escalón 1, si la tabla tiene una COLUMNA DE NOTAS
     // (columnasDeNotas) entre la etiqueta y la primera cifra, esa cifra es un importe: la celda de nota de esta fila está vacía. Escalón 2,
@@ -374,7 +374,7 @@ export function filasDelMd(md) {
     const colPunto = ix0 ? notasPunto.get(i) : null;
     const sacoNota = colPunto != null && ix0.includes(colPunto);
     if (sacoNota) { const k = ix0.indexOf(colPunto); crudos = crudos.filter((_, q) => q !== k); nums = crudos.map(parseNumber).filter((n) => n !== null); }
-    // (to-do 223) LECTURA B: la fila sin la celda que cae en una columna con forma de nota (si la lectura de siempre no la sacó ya).
+    // LECTURA B: la fila sin la celda que cae en una columna con forma de nota (si la lectura de siempre no la sacó ya).
     const colForma = !sacoNota && ix0 ? notasForma.get(i) : null;
     let lecturaB = null;
     if (colForma != null && ix0.includes(colForma)) {
@@ -385,16 +385,16 @@ export function filasDelMd(md) {
     if (!notaAntes && nums.length > 1 && Number.isInteger(nums[0]) && Math.abs(nums[0]) >= 1 && Math.abs(nums[0]) < 100 && !/[.,]/.test(String(crudos[0]))) { nums = nums.slice(1); crudos = crudos.slice(1); }
     if (!nums.length) continue;
     nums = nums.map(Math.abs); // LEER UNA FILA: valor absoluto (ver cabecera)
-    // (Versión 422) para el DICCIONARIO (vocabulario.mjs, que busca la palabra al principio) la etiqueta va sin el código de cuenta de un
+    // para el DICCIONARIO (vocabulario.mjs, que busca la palabra al principio) la etiqueta va sin el código de cuenta de un
     // balancete ("2.2.01 EMPRESTIMOS...", "29 2201010001 - I-9 SPORTS"): la familia y la etiqueta impresa no cambian. Caso: Novorizontino
     // 2013-2017, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" no la reconocía el escalón 1 de deuda.
-    // (Versión 459) también una numeración de lista al principio ("4)", "a)", "IV.", "12."): Juventus 2005-06 L1967 "4) Due to banks".
+    // también una numeración de lista al principio ("4)", "a)", "IV.", "12."): Juventus 2005-06 L1967 "4) Due to banks".
     // (to-do 290, ok de Guido 2026-10-18) y la numeración italiana "4 bis)", "5-bis)", "15 bis )" (y "ter"), antes que lo de arriba: sin esto
     // "4 bis) Debiti verso banche" quedaba "bis) Debiti verso banche" y el diccionario no la veía. Caso: Genoa 2022 (pág. 8, L304-312).
     const sinCodigo = etiqueta.replace(/^\s*\d{1,2}\s?-?\s?(?:bis|ter)\s?[.)]\s+(?=\p{L})/iu, '').replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '').replace(/^\s*(?:\d{1,2}|[a-z]|[ivxlc]{1,5})[.)]\s+(?=\p{L})/iu, '');
-    const cd = (String(crudos[0] ?? '').match(/\s([CD])\s*$/i) || [])[1]?.toUpperCase() || null; // (Versión 423) marca de balancete
+    const cd = (String(crudos[0] ?? '').match(/\s([CD])\s*$/i) || [])[1]?.toUpperCase() || null; // marca de balancete
     const codigo = ((etiqueta.match(/^\s*(?:\d{1,4}\s+)?(\d+(?:\.\d+)+|\d{4,})\s/) || [])[1] || '').replace(/\./g, '') || null;
-    // (to-do 228) el número de nota de la fila (la celda de la columna de notas, "6.15") y lo que dice su nota.
+    // el número de nota de la fila (la celda de la columna de notas, "6.15") y lo que dice su nota.
     const celdaNota = ix0 && (colPunto ?? colForma) != null ? (l.trim().replace(/^\||\|$/g, '').split('|')[colPunto ?? colForma] || '').replace(/\*\*/g, '').trim() : null;
     const nota = celdaNota && /^\d{1,2}(?:\.\d{1,2}){1,3}$/.test(celdaNota) ? notaDeFila(L, celdaNota) : null;
     // (to-do 232 w) con columnas de perímetro: las cifras de cada uno, por separado. UNA compuerta: las cifras de la fila que caen en columnas
@@ -430,7 +430,7 @@ export function filasDelMd(md) {
     if ((TITULO_BALANCE_RE.test(n) || TITULO_BALANCE_PLURAL_RE.test(n) || conTotal) && !FLUJO_O_PATRIMONIO_RE.test(tituloFuera ? fuera : n)) balance.add(p);
   }
   // La página siguiente a una del balance también (el pasivo suele seguir), si no es el flujo.
-  // (Versión 452) la siguiente: con el mismo criterio (las filas no excluyen si la página trae su propio título de balance fuera de la tabla).
+  // la siguiente: con el mismo criterio (las filas no excluyen si la página trae su propio título de balance fuera de la tabla).
   for (const p of [...balance]) {
     const t = (textoPag.get(p + 1) || '').slice(0, 1500); const fuera = normalizar(sinTablas(t)); const enc = normalizar(encabezados(t));
     const tituloFuera = TITULO_BALANCE_RE.test(enc) || TITULO_BALANCE_PLURAL_RE.test(enc);
@@ -559,7 +559,7 @@ function propuestaPrecedente(filas, club, cual = null) {
   return { escalon: 0, filas: elegidas, como: `precedente del club (${club.anio}: ${club.familias.join(' + ')})${conPar ? ', con corriente + no corriente' : ''}`, ...(conPar ? { enOtroDoc: (doc) => filasDe(doc) } : {}) };
 }
 // En OTRO documento del club, el total de su nota de efectivo (la tabla con una fila de caja que termina en un total que suma sus filas):
-// lo usa la compuerta para la propuesta "partes de la nota" (Versión 383), porque las filas cambian de nombre entre años (Fortaleza 2025:
+// lo usa la compuerta para la propuesta "partes de la nota", porque las filas cambian de nombre entre años (Fortaleza 2025:
 // "Bancos nacionales" / "Bancos en el exterior"), y el total no. Devuelve [fila del total] o null.
 function totalDeNotaDeCaja(filas) {
   for (const f of filas.filter((x) => x.balance && CAJA_RE.test(x.norm) && !esTotal(x.etiqueta))) {
@@ -573,10 +573,10 @@ function totalDeNotaDeCaja(filas) {
 }
 // ESCALÓN 1: las filas del balance con nombre de caja / deuda financiera (una por familia), o "ninguna fila" de deuda (= 0).
 function propuestaVocabulario(filas, cual, club, extraDeuda = []) {
-  // (Versión 425) ESCALÓN 0 del diccionario: términos de deuda propios del club (ajuste manual `deuda-incluye`), al principio de la etiqueta.
+  // ESCALÓN 0 del diccionario: términos de deuda propios del club (ajuste manual `deuda-incluye`), al principio de la etiqueta.
   const extra = cual === 'deuda' ? extraDeuda.map((t) => normalizar(t)).filter(Boolean) : [];
   const re = { test: (n) => (cual === 'cash' ? CAJA_RE : DEUDA_FINANCIERA_RE).test(n) || extra.some((t) => n.startsWith(t)) };
-  // (Versión 423) JERARQUÍA Y LADO, para un balancete por cuenta: (a) una fila hija de otra que también coincide sale (la de arriba ya la
+  // JERARQUÍA Y LADO, para un balancete por cuenta: (a) una fila hija de otra que también coincide sale (la de arriba ya la
   // suma): hija = su código de cuenta empieza con el de la otra, o, sin códigos, viene pegada abajo (hasta 2 líneas) con el mismo importe;
   // (b) en deuda, una fila con marca D (deudora: activo) no es deuda. Caso: Novorizontino 2016, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" y
   // "2.2.01.01 EMPRESTIMOS E MUTUOS" (15.965.049 cada una) se sumaban, más "1.2.02.05 CONTRATOS DE MUTUOS 4.000 D" (un préstamo dado).
@@ -585,7 +585,7 @@ function propuestaVocabulario(filas, cual, club, extraDeuda = []) {
   const hija = (f) => cand.some((g) => g !== f && ((g.codigo && f.codigo && f.codigo.length > g.codigo.length && f.codigo.startsWith(g.codigo))
     || (!f.codigo && g.linea < f.linea && f.linea - g.linea <= 2 && g.valor === f.valor)));
   const m = dedupe(soloTablaDelBalance(cand.filter((f) => !hija(f)), filas, cual)); // (deuda, mejora 1)
-  // EL TOTAL DE LA NOTA DE DEUDA (Versión 385): si no hay filas de deuda pero sí el TOTAL de una nota de deuda financiera, se propone ese
+  // EL TOTAL DE LA NOTA DE DEUDA: si no hay filas de deuda pero sí el TOTAL de una nota de deuda financiera, se propone ese
   // total (misma compuerta). Antes caía en "ninguna fila = 0". Caso: Fortaleza 2018 y 2019, cuya nota es solo "Total Prestamos y Sobregiros
   // Bancarios 4,398 / 794" (2018 L396, 2019 L582): se escribía deuda 0, y la compuerta lo dejaba pasar porque 2017 también es 0.
   if (!m.length && cual === 'deuda') {
@@ -711,10 +711,10 @@ export async function pedirJev(body, archivo, ejecutar, extraer) {
 }
 
 // LA COMPUERTA, la misma para los tres escalones.
-// (Versión 418) las cifras del documento SIGUIENTE se pasan a millones con la escala de ESE documento (factorSiguiente), no con la de este;
+// las cifras del documento SIGUIENTE se pasan a millones con la escala de ESE documento (factorSiguiente), no con la de este;
 // si no se conoce (su año no está cargado), la de este, como antes. Caso: Novorizontino 2021 (en miles): caja 0,952 contra 951.927 del 2022
 // (en reales), el mismo número.
-// (Versión 451) Las dos filas de una familia de deuda, una a cada lado del total del pasivo no corriente del mismo balance; si no son
+// Las dos filas de una familia de deuda, una a cada lado del total del pasivo no corriente del mismo balance; si no son
 // exactamente dos así, null.
 // (deuda, mejora 2) también el portugués de Portugal: "Total do passivo não corrente" (Porto 2016-17 L867) y "Total - Passivo não corrente"
 // (AVS 2023-24 L506).
@@ -779,7 +779,7 @@ export function compuerta(prop, ctx) {
 function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguiente = null, cual = null, anteriorDoc = null, factorAnterior = null }, over) {
   if (over == null && !factor) return { ok: false, valor: null, motivo: 'sin escala del documento' };
   const esc = over ?? factor;
-  // (Versión 420) LA FAMILIA DE LA FILA: deuda nunca con una fila de caja, caja nunca con una fila de deuda financiera (el mismo filtro que
+  // LA FAMILIA DE LA FILA: deuda nunca con una fila de caja, caja nunca con una fila de deuda financiera (el mismo filtro que
   // los escalones 0 y 1 aplican al buscar, ahora también para la propuesta de la IA). La comparación con el vecino no lo atrapa: si el error
   // se repite en los dos años, coincide. Caso: Novorizontino 2024 y 2025, la IA propuso "Caixa e equivalentes de caixa" como deuda.
   const otraFamilia = (prop.filas || []).find((f) => (cual === 'deuda' ? CAJA_RE : cual === 'cash' ? DEUDA_FINANCIERA_RE : null)?.test(f.norm || ''));
@@ -796,12 +796,12 @@ function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguie
     if (prop.ninguna) chequeos.push(['año anterior', Math.abs(anterior) <= TOL(0), `cargado ${anterior}`]);
     else if (prop.filas.every((f) => f.cifras.length > 1)) { const prev = r6(prop.filas.reduce((a, f) => a + f.cifras[1], 0) * esc); chequeos.push(['año anterior', coincide(prev, anterior), `${prev} contra ${anterior} cargado`]); }
   }
-  // (Versión 385) una fila que no está en las páginas del balance (una nota) se busca también en las notas del documento vecino.
+  // una fila que no está en las páginas del balance (una nota) se busca también en las notas del documento vecino.
   if (siguiente) {
     if (prop.ninguna) { const fs = siguiente.filter((x) => x.balance && prop.familias.includes(x.familia) && x.cifras.length > 1); chequeos.push(['documento siguiente', fs.every((x) => x.cifras[1] === 0), fs.length ? `${fs.map((x) => x.cifras[1]).join(' + ')} en el siguiente` : 'el siguiente tampoco tiene esas filas']); }
-    else { const fs = prop.enOtroDoc ? (prop.enOtroDoc(siguiente) || [null]) : prop.filas.map((f) => siguiente.find((x) => (x.balance || !f.balance) && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * (factorSiguiente ?? factor)); let okS = coincide(prev, valor); if (!okS && over != null) { const p2 = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * over); okS = coincide(p2, valor); } /* (Versión 459) con una escala forzada, el siguiente también puede ir en esa escala */ chequeos.push(['documento siguiente', okS, `${prev} en el siguiente`]); } }
+    else { const fs = prop.enOtroDoc ? (prop.enOtroDoc(siguiente) || [null]) : prop.filas.map((f) => siguiente.find((x) => (x.balance || !f.balance) && x.familia === f.familia && x.cifras.length > 1)); if (fs.every(Boolean)) { const prev = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * (factorSiguiente ?? factor)); let okS = coincide(prev, valor); if (!okS && over != null) { const p2 = r6(fs.reduce((a, x) => a + x.cifras[1], 0) * over); okS = coincide(p2, valor); } /* con una escala forzada, el siguiente también puede ir en esa escala */ chequeos.push(['documento siguiente', okS, `${prev} en el siguiente`]); } }
   }
-  // (to-do 223) DOCUMENTO ANTERIOR: la cifra del año anterior de la fila, contra la del año en el documento anterior (la
+  // DOCUMENTO ANTERIOR: la cifra del año anterior de la fila, contra la del año en el documento anterior (la
   // misma fila, la misma lectura). Es el chequeo del documento siguiente, hacia atrás. AEK 2019 leído con la nota ("6.8"): su "año anterior"
   // es 7.935.425 y el documento de 2018 tiene 1.650.370; sin la nota, 1.650.370 contra 1.650.370.
   if (anteriorDoc && !prop.ninguna && prop.filas.every((f) => f.cifras.length > 1)) {
@@ -820,7 +820,7 @@ function evaluar(prop, { factor, anterior = null, siguiente = null, factorSiguie
 }
 
 // La escalera para un dato: cada escalón propone, la compuerta decide, y si no pasa se baja. `ia`: la respuesta de la IA (o null).
-// (to-do 228) La propuesta "la nota de la fila": una fila sintética con la suma de los totales de la nota (año y anterior). Solo si la nota
+// La propuesta "la nota de la fila": una fila sintética con la suma de los totales de la nota (año y anterior). Solo si la nota
 // muestra que la fila es una parte: la fila es uno de sus totales, o la diferencia está impresa en la nota. En el documento vecino se arma
 // igual desde la fila de la misma familia que tenga nota.
 function propuestaNota(f) {
@@ -864,9 +864,9 @@ export function escalera(filas, cual, { precedentes = [], factor = null, anterio
   for (let i = 0; i < propuestas.length; i++) {
     const e = ESC[i]; const p = propuestas[i];
     if (!p) { if (i < 2 || (e === '1b' && jev) || (e === 2 && ia)) intentos.push(`escalón ${e}: sin propuesta`); continue; }
-    const ctxC = { factor, anterior, siguiente, factorSiguiente, cual, referencia: precedentes[0]?.valor ?? null, anteriorDoc, factorAnterior, ingresos}; // (Versión 459) el año cargado más cercano, para la plausibilidad
+    const ctxC = { factor, anterior, siguiente, factorSiguiente, cual, referencia: precedentes[0]?.valor ?? null, anteriorDoc, factorAnterior, ingresos}; // el año cargado más cercano, para la plausibilidad
     let c = compuerta(p, ctxC);
-    // (to-do 310) caja de un año sin vecino: la compuerta del propio balance del documento (cajaSinVecinoAceptable)
+    // caja de un año sin vecino: la compuerta del propio balance del documento (cajaSinVecinoAceptable)
     if (!c.ok && cual === 'cash' && c.motivo === 'ningún año vecino para comparar' && !p.ninguna && cajaSinVecinoAceptable(filas, p.filas))
       c = { ...c, ok: true, validacion: 'balance del documento' };
     // (to-do 223, A/B medido el 2026-10-13 contra una compuerta con votos, descartada: ver Admin/HALLAZGOS-pipeline.md) DOS LECTURAS: si alguna fila de la propuesta o de los documentos vecinos tiene lectura B (sin la celda con
@@ -973,7 +973,7 @@ Elegí, para la columna del ejercicio pedido (la del cierre más reciente):
 - observaciones: una frase si algo es dudoso. No inventes líneas: si no está, dejá la lista vacía.`;
 
 // Pide a la IA las líneas (una llamada por documento). ejecutar=false: ensayo (tokens y costo estimados).
-// (to-do 288) `modelo` (opus | sonnet), solo desde --medir --modelo: la respuesta va a su propio archivo y no se mezcla con la guardada.
+// `modelo` (opus | sonnet), solo desde --medir --modelo: la respuesta va a su propio archivo y no se mezcla con la guardada.
 const MODELOS_IA = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
 // (to-do 288, ok de Guido 2026-10-18) EL MODELO DEL ESCALÓN 2 ES SONNET. Medido en los 606 documentos de los años cargados (--medir --ia
 // --modelo sonnet, US$ 12,37): deuda 210 iguales / 14 distintos contra 211 / 18 de Opus, caja 421 / 7 contra 417 / 7; ningún distinto que
@@ -1024,7 +1024,7 @@ function contexto({ d, anios, a, cual, filasDe, conocidos }) {
     ingresos: (d.revenueLinesByYear?.[a.anio] || []).reduce((s, l) => s + (l.amountNative || 0), 0) || null }; // (to-do 260 e) para el techo de la compuerta
 }
 export const aniosDe = (d, S) => Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).sort((a, b) => Number(a.anio) - Number(b.anio));
-// (Versión 454) con ajuste `perimetro` (del documento o del club) y páginas de balance de ese perímetro en el .md, las filas del balance del
+// con ajuste `perimetro` (del documento o del club) y páginas de balance de ese perímetro en el .md, las filas del balance del
 // OTRO perímetro dejan de contar como balance (para todos los escalones y para los precedentes). Sin ajuste, o si el .md no marca ese
 // perímetro en ninguna página, como antes.
 const conPerimetro = (filas0, md) => {
@@ -1053,7 +1053,7 @@ async function medir({ club = null, detalle = false, ia = false, jev = false, ej
   for (const [clubId, d] of Object.entries(G)) {
     if (club && clubId !== club) continue;
     const anios = aniosDe(d, S).filter((x) => x.md); const filasDe = filasCache();
-    // (Versión 456) --escalas: la escala que eligió factorPorIngresos para cada año (para medir cambios de la escala).
+    // --escalas: la escala que eligió factorPorIngresos para cada año (para medir cambios de la escala).
     if (escalas) for (const a of anios) console.log(`  escala ${clubId} ${a.anio}: ${a.md ? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios) : null}`);
     // Cada año se lee como nuevo: los conocidos son lo cargado en el sitio, SIN el propio año (no se aprende la respuesta).
     for (const a of anios) for (const cual of ['grossDebt', 'cash']) {
@@ -1170,11 +1170,11 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
     const res = {};
     for (const k of faltan) {
       const ctx = contexto({ d, anios, a, cual: k, filasDe, conocidos });
-      // ESCALÓN 0 DE TODO (Versión 419): ajuste manual `caja` (tools/ajustes.mjs), el número TAL CUAL impreso en el documento del año; se pasa
+      // ESCALÓN 0 DE TODO: ajuste manual `caja` (tools/ajustes.mjs), el número TAL CUAL impreso en el documento del año; se pasa
       // a millones con la escala del documento. Gana sobre la escalera y no pasa por la compuerta (es una decisión de Guido). Caso:
       // Novorizontino 2022, el documento dice 721.730 (con aplicaciones de proyectos incentivados) y el 2023 lo reclasificó a 146.924.
-      // (Versión 495) lo mismo para la deuda: ajuste manual `deuda`. Caso: Fortaleza CEIF 2021 (295.846, cuadro de instrumentos financieros).
-      // (to-do 263) por PDF Y AÑO: si el PDF alimenta dos años del club (el año y su comparativo), solo vale el ajuste con `anio` de ese año
+      // lo mismo para la deuda: ajuste manual `deuda`. Caso: Fortaleza CEIF 2021 (295.846, cuadro de instrumentos financieros).
+      // por PDF Y AÑO: si el PDF alimenta dos años del club (el año y su comparativo), solo vale el ajuste con `anio` de ese año
       // (ajusteDelAnio en ajustes.mjs). Caso: Dortmund 2024 y 2025, los dos desde geschaeftsbericht-2024-25.
       const aj = ajusteDelAnio(a.md.replace(/\.md$/i, '.pdf'), k === 'cash' ? 'caja' : 'deuda', a.anio, anios.filter((x) => x.md === a.md).length === 1);
       if (aj && ctx.factor) { res[k] = { ctx, valor: r6(Math.abs(parseNumber(aj.valor)) * ctx.factor), escalon: 0, validacion: 'ajuste manual', como: `ajuste manual (${aj.fecha}): ${aj.motivo}`, filas: [] }; continue; }
@@ -1208,7 +1208,7 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
     }
     // (Versión 502, aprobado por Guido el 2026-10-05) un valor completado en esta corrida YA NO cuenta como cargado para el año siguiente: un
     // vecino es lo cargado en el sitio o el documento vecino, nunca una propuesta que nadie confirmó (si no, un error se encadena: Fortaleza
-    // 2020-2022, la caja chica de 2020 validaba la de 2021 y esa la de 2022). Antes (Versión 356) sí contaba.
+    // 2020-2022, la caja chica de 2020 validaba la de 2021 y esa la de 2022). Antes sí contaba.
     for (const k of faltan) { const { ctx, ...x } = res[k]; propuestas.push({ anio: a.anio, cual: k, ...x }); }
   }
   for (const p of propuestas) console.log(`  ${p.anio} ${p.cual === 'cash' ? 'caja ' : 'deuda'}: ${p.valor ?? 'null'}  (${p.escalon != null ? `escalón ${p.escalon}, compuerta: ${p.validacion}; ` : ''}${p.como})${(p.filas || []).map((f) => `\n        "${String(f.etiqueta).slice(0, 60)}" ${f.importe} · pág. ${f.pagina} del visor · L${f.linea}`).join('')}`);

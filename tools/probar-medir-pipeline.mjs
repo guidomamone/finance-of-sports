@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/probar-medir-pipeline.mjs — LA PRUEBA DE medir-pipeline.mjs (TODO 380)
+// tools/probar-medir-pipeline.mjs — LA PRUEBA DE medir-pipeline.mjs
 // ============================================================================
 // Todo el 371 depende de que «idéntico» sea cierto: un medidor que reutiliza un resultado viejo o deja un archivo escrito es peor que no medir. Esta prueba arma un repo de juguete (una tool falsa, un
 // medidor falso, una tabla propia) en Admin/mediciones/pipeline/_prueba-repo, le copia medir-pipeline.mjs y lo hace correr contra cambios conocidos:
@@ -91,7 +91,7 @@ volver();
 r = medir();
 caso('sin tools cambiadas dice «nada que medir»', r.status === 0 && /nada que medir/.test(r.out), r.out.slice(-200));
 
-// 7. solo comentarios (TODO 374)
+// 7. solo comentarios
 w('tools/fake-tool.mjs', 'export const VALOR = 1; // otro comentario, más largo\n');
 r = medir();
 let ult = registro().at(-1);

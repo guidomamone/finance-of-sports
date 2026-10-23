@@ -159,7 +159,7 @@ function proponer({ carpeta, anio, A, clubId, club, alta }) {
   const md = `${carpeta}/bfo-${anio}-datos.md`;
   return {
     pdf: `${carpeta}/bfo-${anio}-datos.json`, md, reemplaza: false, ajustes: [], escalon2: [...Object.keys(T), ...(F6 ? ['formulario 6'] : [])],
-    // (to-do 206) la cabecera del año en data/ dice de dónde salen las filas (no de proponer-carga.mjs ni de un categorias.json)
+    // la cabecera del año en data/ dice de dónde salen las filas (no de proponer-carga.mjs ni de un categorias.json)
     herramienta: 'tools/bfo-rusia.mjs',
     origenFilas: `Filas y categorías: formulario 2 del GIR BO (código del fisco → categoría, mapa fijo de bfo-rusia.mjs)${Object.keys(T).length ? `; escalón 2: notas explicativas (${Object.keys(T).join(', ')})` : ''}${F6 ? '; formulario 6' : ''}.`,
     totales: { patImpreso: { label: `Чистая прибыль (убыток), código 2400 (suma verificada contra el 2300)`, pag: null } },
@@ -221,7 +221,7 @@ for (const nombre of carpetas) {
     const k = L.findIndex((l) => l.startsWith(`  '${clubId}': {`));
     if (k < 0 || L[k].includes('brandColor')) { console.log('      no pude poner el color: revierto'); revertirAlta(); continue; }
     L[k] = `${L[k].trimEnd().slice(0, -3)}, brandColor:${color === null ? 'null' : `'${color}'`} },`;
-    // la nota del alta (to-do 209) está en la evidencia del club, no en data/clubs.js
+    // la nota del alta está en la evidencia del club, no en data/clubs.js
     let ev = EV.leer(clubId);
     ev = EV.reemplazarTexto(ev, 'brandColor AUSENTE a propósito', color === null ? 'brandColor:null a propósito' : `brandColor ${color}`);
     ev = EV.reemplazarTexto(ev, '(nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).', `(procedencia en Admin/sourcing/Rusia/${nombre}.md; tools/bfo-rusia.mjs).`);
@@ -235,7 +235,7 @@ for (const nombre of carpetas) {
     const P = proponer({ carpeta, anio: y, A, clubId, club, alta });
     if (!P.ejercicio.fiscalYearMeta.sourceId || (!P.ejercicio.fiscalYearMeta.fxRef)) { console.log(`      ${y}: sin sourceId o sin tipo de cambio (${JSON.stringify(alta.ejercicio?.campos?.find((c) => c.campo === 'fxRef') || {}).slice(0, 160)})`); continue; }
     if (yaEnSitio(y)) { if (!P.escalon2.length) continue; P.reemplaza = true; }
-    // la compuerta de estadio y sponsor de cargar.mjs (to-do 273) vale también acá, que escribe sin pasar por su main(); un año ya
+    // la compuerta de estadio y sponsor de cargar.mjs vale también acá, que escribe sin pasar por su main(); un año ya
     // cargado que solo se reescribe no se frena
     if (!P.reemplaza && !compuertaContexto(P)) { console.log(`      ${y}: NO escrito: falta estadio o sponsor (tools/contexto-manual.json)`); continue; }
     const res = escribir(P);

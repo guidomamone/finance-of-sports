@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/casos-sin-resolver.mjs — EL REGISTRO DE LO QUE UNA TOOL NO PUDO RESOLVER, CON SU CAUSA, y `fos causas` (TODO 387)
+// tools/casos-sin-resolver.mjs — EL REGISTRO DE LO QUE UNA TOOL NO PUDO RESOLVER, CON SU CAUSA, y `fos causas`
 // ============================================================================
 // El aviso de audit.js dice QUÉ falta; el porqué (sin filas de total, Jev dijo «ninguna», la nota es de otra entidad…) se imprimía en una corrida y se perdía. Las tools lo anotan acá, con una causa de
 // código FIJO (una lista corta por tool, no texto libre), y `fos causas` las cuenta: la causa con 3 o más casos de 2 o más clubes es candidata a una regla (el umbral del veredicto general o parche de la skill de

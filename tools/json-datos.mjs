@@ -90,7 +90,7 @@ function sitio() {
 }
 export function clubes() { return sitio().clubs; }
 
-// data/category-map.js: subcategorías, genéricas y el mapa por deporte (to-do 248). Una sola lectura por proceso.
+// data/category-map.js: subcategorías, genéricas y el mapa por deporte. Una sola lectura por proceso.
 let _tax = null;
 export function taxonomia() {
   if (_tax) return _tax;
@@ -131,7 +131,7 @@ export function leerClub(rel) {
 export const todosLosArchivos = () => archivosData();
 
 // El bloque `club` del JSON desde la ficha de data/clubs.js: los nombres en inglés, el deporte con su nombre del JSON y `taxonomy`, la versión del mapa
-// de ese deporte (to-do 248). Lo usan aJson y tools/generar-data.mjs (--identidad y --check), para que no haya dos copias de esta traducción.
+// de ese deporte. Lo usan aJson y tools/generar-data.mjs (--identidad y --check), para que no haya dos copias de esta traducción.
 export function clubDeFicha(id, ficha) {
   const club = ficha ? Object.fromEntries(Object.entries(CLUB).filter(([k]) => has(ficha, k)).map(([k, n]) => [n, ficha[k]])) : { id };
   const deporte = (ficha && ficha.sport) || 'futbol';

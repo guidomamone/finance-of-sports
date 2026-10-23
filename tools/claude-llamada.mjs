@@ -9,9 +9,9 @@
 //   - REINTENTOS solo para lo transitorio (red, 429, 5xx), con espera creciente; un 4xx de pedido mal armado no se reintenta.
 //   - `fallbacks: "default"`: si un clasificador de seguridad rechaza el pedido (stop_reason "refusal"), la API lo reintenta con otro modelo.
 //   - REGISTRO de cada llamada en Admin/registros/api/claude-api.jsonl con su tarea y su costo, para que tools/gasto.mjs la cuente.
-//   - `stream: true` (to-do 197): la respuesta llega por streaming (SSE). Hace falta para topes de salida grandes (más de ~16.000 tokens): sin
+//   - `stream: true`: la respuesta llega por streaming (SSE). Hace falta para topes de salida grandes (más de ~16.000 tokens): sin
 //     streaming, una respuesta larga puede pasar el tiempo máximo de la conexión. La usa el escalón 1 de extraer.mjs (128.000 tokens).
-// Modelo: Claude Opus 5.5 (el del proyecto), esfuerzo bajo por defecto. (to-do 288) `modelo` cambia el de UNA llamada (el pedido, el costo y
+// Modelo: Claude Opus 5.5 (el del proyecto), esfuerzo bajo por defecto. `modelo` cambia el de UNA llamada (el pedido, el costo y
 // la estimación); sin `modelo`, Opus como siempre. Cada tarea pasa a Sonnet solo después de medirla. Sin SDK: el proyecto no tiene package.json (mismo criterio que
 // categorizar-claude.mjs, que tiene la clave en Admin/api-keys/claude-api.env y la tabla de precios).
 //

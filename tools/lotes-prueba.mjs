@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/lotes-prueba.mjs — ARMA LOS LOTES DE PRUEBA a partir de lo que hoy tiene verificación, ESTRATIFICADOS por familia (TODO 371)
+// tools/lotes-prueba.mjs — ARMA LOS LOTES DE PRUEBA a partir de lo que hoy tiene verificación, ESTRATIFICADOS por familia
 //
 // POR QUÉ: las tres listas (Admin/lotes/prueba-rapida.txt, prueba-mediana.txt, prueba-completa.txt) son la vara de cualquier cambio de script
 // (skill club-or-year-onboarding, `mejorar-script.md` sección 5: «lo cargado tiene que dar idéntico»). Armadas a mano o corridas «cuando entran

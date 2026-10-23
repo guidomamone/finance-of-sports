@@ -23,7 +23,7 @@
 //   REV_W / EXP_W                       -> palabras de ingreso / gasto en 29 idiomas (INGRESOS_RE / GASTOS_RE de tools/vocabulario.mjs).
 //   norm(t)                             -> la normalización ÚNICA del pipeline (normalizar() de tools/vocabulario.mjs; la usa también chequeos-gratis).
 //
-// VOCABULARIO (Versión 316): las palabras (ingreso, gasto, impuesto, resultado, total, notas) ya no están acá sino en tools/vocabulario.mjs,
+// VOCABULARIO: las palabras (ingreso, gasto, impuesto, resultado, total, notas) ya no están acá sino en tools/vocabulario.mjs,
 // un solo módulo con todos los idiomas y la notación de cada término (palabra entera / raíz / infijo). Lo que queda acá es la LÓGICA.
 // ============================================================================
 

@@ -4,7 +4,7 @@
 // de datos: título, licencia, fuentes, un recurso por club (el JSON del esquema de data/schema/club-v2.json), la tabla de la taxonomía de cada deporte
 // (data/schema/taxonomy-<versión>.json, to-do 248) y el diccionario de campos.
 //
-// Decisiones de Guido (2026-10-20): (1) licencia CC BY-NC 4.0, con el enlace a terminos.html ("Licencia y reuso"); (2) las cotizaciones `market_approx`
+// Decisiones de Guido: (1) licencia CC BY-NC 4.0, con el enlace a terminos.html ("Licencia y reuso"); (2) las cotizaciones `market_approx`
 // (ARS y CLP, 10 ejercicios) quedan, anotadas en `sources` con BCRA y SII y su restricción de uso comercial; (3) el paquete lleva SOLO lo financiero: los
 // archivos del paquete no traen squad_transfers, results, titles ni extras (soloFinanciero() de tools/json-datos.mjs).
 //

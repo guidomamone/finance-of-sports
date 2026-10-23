@@ -5,7 +5,7 @@
 // POR QUÉ (Admin/Archive/auditoria-pipeline-2026-10-02.md, "propuesta transversal"): sin un conteo por escalón no se puede ver qué escalón no se
 // usa nunca o cuál carga con todo. Junta lo que el pipeline ya deja en Generados/:
 //   ETAPA 4  `.validacion.json` → `fuentes`: con qué se confirmó cada PÁGINA (texto propio del PDF, Gemini, Claude).
-//   ETAPA 8  `.carga.json` → `_escalon` de cada línea (categoría) y `procedencia` (Versión 525): de dónde salió el año, el cierre, el
+//   ETAPA 8  `.carga.json` → `_escalon` de cada línea (categoría) y `procedencia`: de dónde salió el año, el cierre, el
 //            perímetro, la moneda, el tipo de cambio y la liga (el texto que arma alta-club.mjs, más lo que cargar.mjs decide encima).
 // Una propuesta de carga anterior a la Versión 525 no tiene `procedencia`: --rehacer-procedencia la completa con alta-club.mjs (gratis),
 // escribiendo SOLO ese campo (no cambia `generado`, que lote.mjs usa para saber si la propuesta está al día).

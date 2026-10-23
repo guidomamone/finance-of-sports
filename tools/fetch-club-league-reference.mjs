@@ -66,7 +66,7 @@ function extractTeamsSection(wikitext, sectionNames) {
 }
 
 function extractAllWikitables(sectionText) {
-  // CORREGIDO 2026-09-28 (to-do 104): antes tomaba solo la PRIMERA tabla de la
+  // CORREGIDO 2026-09-28: antes tomaba solo la PRIMERA tabla de la
   // sección, y no siempre es el roster (Grecia: la primera es un resumen
   // "Promoted from/Relegated from" de 2 equipos, el roster real de 14 está en
   // la SEGUNDA tabla). Ahora se extraen todas las tablas de la sección, y
@@ -90,7 +90,7 @@ function cleanWikilinkCell(cell) {
   let c = cell.trim().replace(/^(?:\s*(?:rowspan|colspan|style|align)\s*=\s*"?[^|"]*"?\s*)+\|/i, '').trim();
   // primer wikilink de la celda: [[Target|Display]] o [[Target]]
   const m = c.match(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/);
-  // (to-do 266) un enlace a un ESTADIO no es un equipo: "[[Estadio Mario Alberto Kempes|Mario Alberto Kempes]]" se colaba en la tabla
+  // un enlace a un ESTADIO no es un equipo: "[[Estadio Mario Alberto Kempes|Mario Alberto Kempes]]" se colaba en la tabla
   // de equipos argentina por la fila de un estadio compartido
   if (m && /^(Estadio|Estádio|Stadium|Stadion|Stade|Stadio|Arena)\b|\b(Stadium|Stadion)$/i.test(m[1].trim())) return ''; // "Arena da Amazônia"
   if (m) return (m[2] || m[1]).replace(/&nbsp;/g, ' ').trim();
@@ -101,7 +101,7 @@ function cleanWikilinkCell(cell) {
 function parseWikitableTeams(tableWikitext) {
   const rows = tableWikitext.split(/\n\|-/).slice(1); // el primer trozo es el header (! ...)
   const teams = [];
-  // TABLA "EQUIPOS POR ESTADO" (2026-10-02): si la ÚLTIMA columna del encabezado es plural ("Team(s)", "Teams", "Clubs"), cada fila lista
+  // TABLA "EQUIPOS POR ESTADO": si la ÚLTIMA columna del encabezado es plural ("Team(s)", "Teams", "Clubs"), cada fila lista
   // VARIOS equipos en esa celda; se toman todos sus wikilinks. Caso: "2017 Campeonato Brasileiro Série B", la única tabla de la sección
   // "Teams" es "Number of teams by state" (| 2 | {{flag|Goiás}} || [[Goiás Esporte Clube|Goiás]] and [[Vila Nova ...|Vila Nova]]); con
   // la regla de la primera celda salían 12 números de rowspan y nombres sueltos, y Goiás no aparecía. Los rowspan corren las columnas, por
@@ -117,14 +117,14 @@ function parseWikitableTeams(tableWikitext) {
   }
   for (const row of rows) {
     const lines = row.split('\n').map((l) => l.trim()).filter(Boolean);
-    // (Versión 410) una celda de ESTADO con rowspan (`|rowspan=4 |{{flagicon|São Paulo}} [[Federação Paulista...|São Paulo]]`) abre un
+    // una celda de ESTADO con rowspan (`|rowspan=4 |{{flagicon|São Paulo}} [[Federação Paulista...|São Paulo]]`) abre un
     // grupo de clubes: en esa fila el club es la celda siguiente. Antes se guardaba el estado y se perdía el primer club del grupo. Caso:
     // "2020 Campeonato Brasileiro Série D", fila São Paulo | Novorizontino | Novo Horizonte.
     const esEstado = (l) => /^\|\s*rowspan\s*=\s*"?\d+"?[^|]*\|.*\{\{\s*flag(icon)?\s*\|/i.test(l); // también {{nowrap|{{flagicon|...}}}}
     const firstCellLine = lines.find((l) => l.startsWith('|') && !l.startsWith('|}') && !esEstado(l));
     if (!firstCellLine) continue;
     let name = cleanWikilinkCell(firstCellLine.replace(/^\|\s*/, ''));
-    // (to-do 276) una 1ª celda que es solo un número (la matrícula belga: "| 35" y después "| [[R.S.C. Anderlecht|Anderlecht]]") no es el
+    // una 1ª celda que es solo un número (la matrícula belga: "| 35" y después "| [[R.S.C. Anderlecht|Anderlecht]]") no es el
     // club: el club es la celda siguiente. Caso: "2024–25 Belgian Pro League", que daba 16 números.
     if (name && !/\p{L}/u.test(name)) {
       const sig = lines.slice(lines.indexOf(firstCellLine) + 1).find((l) => l.startsWith('|') && !l.startsWith('|}') && !esEstado(l));
@@ -137,10 +137,10 @@ function parseWikitableTeams(tableWikitext) {
 
 // lee los equipos de una plantilla {{#invoke:sports table|...}}: `teamN=XXX` da el orden y `name_XXX=[[Destino|Nombre]]` el nombre
 function equiposDeSportsTable(wikitext, todas = false) {
-  // `todas` (to-do 266): la unión de TODAS las plantillas de la página (Argentina tiene una por zona más la tabla anual)
+  // `todas`: la unión de TODAS las plantillas de la página (Argentina tiene una por zona más la tabla anual)
   const tablas = tablasDeSportsTable(wikitext);
   if (todas) return [...new Set(tablas.flat())];
-  // GRUPOS (to-do 273): una liga jugada en grupos sin tabla de equipos ("2021–22 Super League Greece 2": una tabla de posiciones por grupo,
+  // GRUPOS: una liga jugada en grupos sin tabla de equipos ("2021–22 Super League Greece 2": una tabla de posiciones por grupo,
   // Norte y Sur) daba solo el primer grupo. Si hay 2 tablas o más SIN NINGÚN equipo en común y de al menos 8 equipos cada una, son los
   // grupos y se juntan. Una tabla anual o de playoff repite equipos de las otras, así que no entra.
   const grupos = []; for (const t of tablas) if (t.length >= 8 && !t.incompleta && !grupos.some((g) => g.some((x) => t.includes(x)))) grupos.push(t);
@@ -149,7 +149,7 @@ function equiposDeSportsTable(wikitext, todas = false) {
   if (grupos.length >= 2 && tablas.every((t) => grupos.includes(t) || t.every((x) => grupos.flat().includes(x)))) { GRUPOS = grupos.length; return [...new Set(grupos.flat())]; }
   return [...new Set(tablas[0] || [])];
 }
-// cada plantilla de la página por separado, en orden de posición (to-do 266); el texto de cada una se corta en la siguiente
+// cada plantilla de la página por separado, en orden de posición; el texto de cada una se corta en la siguiente
 function tablasDeSportsTable(wikitext) {
   const inicios = [...wikitext.matchAll(/\{\{\s*#invoke:\s*sports table/gi)].map((m) => m.index);
   return inicios.map((ini, k) => {
@@ -172,7 +172,7 @@ function tablasDeSportsTable(wikitext) {
   }).filter((l) => l.length);
 }
 
-// (to-do 276) LIGAS POR GRUPOS: la Serie C trae una sección por grupo ("== Group A (North) ==" o "==== Group A ... ====" dentro de
+// LIGAS POR GRUPOS: la Serie C trae una sección por grupo ("== Group A (North) ==" o "==== Group A ... ====" dentro de
 // "Teams"), con una tabla de equipos cada una; la regla de la tabla más grande se queda con un solo grupo, y sin sección "Teams" no
 // encuentra nada ("2023–24 Serie C"). Acá: la mejor tabla de cada grupo (la de más equipos únicos), y la unión de todas. Solo con 2 grupos
 // o más y al menos 8 equipos en cada uno; si una letra aparece dos veces (estadios y tablas de posiciones), vale la que más equipos da.
@@ -192,7 +192,7 @@ function equiposPorGrupo(wikitext) {
 }
 
 let GRUPOS = 0; // cuántos grupos tuvo la lista (equiposPorGrupo); va en el --json para que listas-lote ajuste el tope de equipos
-let SOLO_JSON = false; // --json (to-do 266): imprime { teams, seccion } y NO escribe la caché; lo usa tools/listas-lote.mjs para la compuerta
+let SOLO_JSON = false; // --json: imprime { teams, seccion } y NO escribe la caché; lo usa tools/listas-lote.mjs para la compuerta
 
 let POSICIONES = null; // ver main()
 function guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion }) {
@@ -249,7 +249,7 @@ async function main() {
   for (const m of [...new Set([...wikitext.matchAll(/\{\{\s*([^{}|\n]+ table)\s*[|}]/g)].map((x) => x[1].trim()))].slice(0, 3)) {
     try { conPlantillas += '\n' + await fetchWikitext(`Template:${m}`, lang); } catch { /* sin plantilla: sigue con lo que hay */ }
   }
-  // POSICIONES (to-do 270): el orden final de la tabla de posiciones más grande de la página, en sus propios nombres. Se guarda aparte
+  // POSICIONES: el orden final de la tabla de posiciones más grande de la página, en sus propios nombres. Se guarda aparte
   // de `clubs` (la lista de equipos) y solo si cubre la liga; faltantes-liga.mjs y estimar.mjs la unen por nombre.
   POSICIONES = tablasDeSportsTable(conPlantillas).sort((a, b) => b.length - a.length)[0] || null;
 
@@ -261,7 +261,7 @@ async function main() {
   //   COMPUERTA  al menos 4 equipos únicos (si no, no se escribe nada, como antes)
   const sec = extractTeamsSection(wikitext, section);
   const tables = sec ? extractAllWikitables(sec.text) : [];
-  // ESCALÓN "grupos" (to-do 276): si la unión de los grupos es MÁS grande que lo que da la sección de equipos y contiene todo lo que da,
+  // ESCALÓN "grupos": si la unión de los grupos es MÁS grande que lo que da la sección de equipos y contiene todo lo que da,
   // es la liga entera (la sección daba un solo grupo, o nada). Con la misma lista (Série C de Brasil, grupos de una fase) no cambia nada.
   if (!COMPARAR) {
     const g = equiposPorGrupo(wikitext);
@@ -300,9 +300,9 @@ async function main() {
   // estadios y personal; un técnico o un estadio no). Se cambia de tabla SOLO si hay otra SIN sueltos que contiene TODOS los nombres
   // confirmados de la elegida (los que sí aparecen en otra tabla) y además AGREGA alguno que a la elegida le faltaba: o sea, solo cuando
   // la elegida está perdiendo clubes, y con MENOS nombres que ella (la basura infla la cuenta; con la misma cuenta solo cambiaban variantes de
-  // nombre: "Estoril Praia" por "Estoril", "Chievo Verona" por "Chievo"). Medido sobre toda la caché (2026-10-15): una versión más laxa sacaba clubes reales en Colombia
+  // nombre: "Estoril Praia" por "Estoril", "Chievo Verona" por "Chievo"). Medido sobre toda la caché: una versión más laxa sacaba clubes reales en Colombia
   // 2017-2020 y cambiaba Brasil Série B 2022-2025 (sacaba estadios, sin agregar ningún club); con esta solo cambia Portugal 2025. Con
-  // una sola tabla no cambia nada. Grecia (to-do 104) sigue igual.
+  // una sola tabla no cambia nada. Grecia sigue igual.
   const elegidaVieja = best.teams;
   if (parsed.length > 1) {
     const sueltos = (i) => parsed[i].filter((n) => !parsed.some((o, j) => j !== i && o.includes(n))).length;
@@ -315,7 +315,7 @@ async function main() {
       if (limpias.length) { const l = limpias.sort((a, b) => b.ts.length - a.ts.length)[0]; best = { teams: l.ts, uniqueCount: l.ts.length }; }
     }
   }
-  // ESCALÓN "tabla de posiciones" (to-do 266). Si los equipos de TODAS las plantillas {{#invoke:sports table}} de la página están en la
+  // ESCALÓN "tabla de posiciones". Si los equipos de TODAS las plantillas {{#invoke:sports table}} de la página están en la
   // tabla elegida y la tabla elegida tiene nombres de más, lo que sobra es basura (un estadio compartido con rowspan corre las columnas:
   // "2023 AFA Liga Profesional", 30 nombres con "Alfredo Terrera" y "Malvinas Argentinas" para 28 equipos). Se usa la de posiciones.
   // FRENOS (medidos con --revalidar sobre las 320 listas guardadas: sin ellos salían clubes reales, Paços de Ferreira, Hønefoss,

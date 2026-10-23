@@ -203,7 +203,7 @@ const OVERRIDES = {
   'Rumania|Unirea Slobozia': { doc: false, motivo: 'dominio no identificado, sin documento' },
   'Ucrania|Shakhtar': { doc: true, motivo: '8 ejercicios 2018-2025 del sitio oficial; el "sin cerrar" es la frase de la nota vieja que se reemplazó' },
 
-  // 13 CONFLICTOS de la corrida del 2026-09-23 (to-do 48), tras sumarse el sourcing
+  // 13 CONFLICTOS de la corrida del 2026-09-23, tras sumarse el sourcing
   // de Brasil/Colombia/México de la Versión 201-202.
   'Brasil|Amazonas': { doc: true, motivo: 'balanços resumidos sin auditar, 2022-2024, rescatados de Wayback' },
   'Brasil|America Mineiro': { doc: true, motivo: 'dead-end viejo destrabado, 3 ejercicios 2023-2025 vía CDN del sitio oficial' },

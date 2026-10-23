@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/estadio-sponsor.mjs — ESTADIO Y SPONSOR DE CADA EJERCICIO CARGADO (to-do 273).
+// tools/estadio-sponsor.mjs — ESTADIO Y SPONSOR DE CADA EJERCICIO CARGADO.
 //
 // QUÉ. Para cada ejercicio cargado del sitio (data/club-index.js), su liga (data/club-leagues/) y la página de temporada de Wikipedia que
 // ya usa la lista de equipos (tools/club-league-reference/<iso>.json): de esa página, la fila del club en la tabla de estadios ("Stadiums
 // and locations": estadio y capacidad) y en la de kits ("Personnel and kits": marca técnica y sponsor de camiseta del frente). Campos que
-// decidió Guido (2026-10-18): estadio, capacidad, sponsor del frente, marca técnica; sin monto. La fuente es la revisión exacta de la página
+// decidió Guido: estadio, capacidad, sponsor del frente, marca técnica; sin monto. La fuente es la revisión exacta de la página
 // (permalink con oldid), no el título: la página cambia.
 //
 // TRAMPA. Muchas tablas de kits son "solo la actual" (comentario <!--ONLY CURRENT-->): en una temporada vieja pueden traer el sponsor de
@@ -34,7 +34,7 @@ import { deporteDeClub } from './deporte-club.mjs';
 const ROOT = resolve(import.meta.dirname, '..');
 const REF = resolve(ROOT, 'tools', 'club-league-reference');
 const { cierreDelClub } = createRequire(import.meta.url)('./cierre-ejercicio.js');
-const SPONSOR = createRequire(import.meta.url)('./sponsor-busqueda.js'); // (to-do 343) el registro de búsqueda del sponsor
+const SPONSOR = createRequire(import.meta.url)('./sponsor-busqueda.js'); // el registro de búsqueda del sponsor
 
 // mismo emparejamiento de nombres que tools/listas-lote.mjs
 const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -548,7 +548,7 @@ async function main() {
       // lo que la inglesa no dio, de la Wikipedia del país (si se bajó con --local)
       if (p.local) {
         const rl = delClub(p.local, nombres); if (rl.soloActual && !e.ultima) { rl.sponsor = null; rl.marca = null; }
-        // SOLO estadio y capacidad. MEDIDO (2026-10-18): en "Liga1 2022 (Perú)" la tabla de kits tiene las columnas corridas (ADT con
+        // SOLO estadio y capacidad. MEDIDO: en "Liga1 2022 (Perú)" la tabla de kits tiene las columnas corridas (ADT con
         // sponsor "Huancayo", la ciudad; Alianza Lima con "Nike", la marca); los estadios de las páginas locales salieron bien en la muestra
         const puso = ['estadio', 'capacidad'].filter((k) => d[k] == null && rl[k] != null);
         for (const k of puso) d[k] = rl[k];
@@ -617,7 +617,7 @@ async function main() {
     console.log('\npor liga (ejercicios · con estadio · con sponsor):');
     for (const [l, x] of Object.entries(porLiga).sort((a, b) => b[1].n - a[1].n)) console.log(`  ${l.padEnd(22)} ${x.n} · ${x.est} · ${x.sp}`);
   }
-  // COMPUERTA (to-do 273): con --club, sale con 1 si a algún ejercicio le falta estadio o sponsor; lo usa el pipeline antes de cargar
+  // COMPUERTA: con --club, sale con 1 si a algún ejercicio le falta estadio o sponsor; lo usa el pipeline antes de cargar
   if (faltan.length) {
     console.log(`\n${faltan.length} ejercicios sin estadio o sin sponsor${soloClub ? '' : ' (los primeros 40)'}:`);
     for (const f of faltan.slice(0, soloClub ? Infinity : 40)) console.log(`  ${f}`);

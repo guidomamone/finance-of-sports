@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/entidades.mjs — LA ESTRUCTURA DE CADA CLUB: de qué entidad son los números de cada ejercicio, qué empresas hay arriba (la dueña
 // inmediata y la última) y abajo (las controladas, dentro o fuera del consolidado), las otras entidades del club que no se cargan, y los
-// grupos multiclub (to-do 280).
+// grupos multiclub.
 //
 // DE DÓNDE SALE. De un registro escrito a mano o por subagentes, `Admin/registros/entidades.jsonl`, donde cada línea lleva una cita
 // obligatoria. Este script no adivina entidades de las portadas (cada país las escribe distinto): verifica las citas y genera lo que lee el
@@ -26,7 +26,7 @@
 //       club que se pisan son un error.
 //   {"tipo":"ingresos","entidad":"vitoria-sport-clube","anio":2022,"cierre":"2022-06-30","moneda":"EUR","total":4566468.26,
 //    "filas":[{"md":"Clubes/…/x.md","linea":1348,"texto":"Vendas e serviços prestados | 13;22 | 3 820 068,63 €","valor":3820068.63},…]}
-//       los ingresos de una entidad que NO se carga ese año (to-do 281), en la unidad del documento: los renglones de ingresos de su
+//       los ingresos de una entidad que NO se carga ese año, en la unidad del documento: los renglones de ingresos de su
 //       estado de resultados (o su total impreso, un solo renglón), sin la ganancia por su parte de la sociedad que se carga (en Portugal,
 //       "Ganhos imputados de subsidiárias"), que es resultado de esa sociedad y se contaría dos veces. `cierre` es su fecha de cierre, que
 //       puede no ser la del club (una asociación con año calendario). `unidad` (1000 si el documento está en miles; sin ella, 1).
@@ -188,7 +188,7 @@ for (const c of cargas) {
     if (q.error || q.year !== c.anio) err(c._n, `el documento citado es del ejercicio ${q.year ?? '?'} según tools/quien.mjs, no del ${c.anio}`);
   } else err(c._n, 'una carga se cita con su documento fuente, no con una url');
 }
-// Un ejercicio con dos cargas es una suma (to-do 283): todas sus cargas dicen perimetro "suma" y alguna lleva la nota.
+// Un ejercicio con dos cargas es una suma: todas sus cargas dicen perimetro "suma" y alguna lleva la nota.
 const porAnio = new Map();
 for (const c of cargas) { const k = `${c.clubId}|${c.anio}`; porAnio.set(k, [...(porAnio.get(k) || []), c]); }
 for (const [k, cs] of porAnio) if (cs.length > 1 && (cs.some(c => c.perimetro !== 'suma') || !cs.some(c => c.nota))) err(cs[0]._n, `${k} tiene ${cs.length} entidades: van con perimetro "suma" y una nota`);

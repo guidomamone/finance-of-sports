@@ -1,5 +1,5 @@
 // tools/pais-club.mjs — el PAÍS y el IDIOMA de un club del sitio (de `country` en data/clubs.js), para que Jev y Claude sepan de qué país es el rubro y, entre ejemplos igual de
-// parecidos por palabras, vengan primero los del mismo país y después los del mismo idioma (to-do 331). Gratis, solo lee data/clubs.js.
+// parecidos por palabras, vengan primero los del mismo país y después los del mismo idioma. Gratis, solo lee data/clubs.js.
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 

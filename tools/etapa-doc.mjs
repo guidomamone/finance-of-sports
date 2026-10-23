@@ -44,7 +44,7 @@ const leerGen = (e, suf) => { try { const q = resolve(ROOT, derivado(e.md, suf, 
 // Descartados por Guido como fuente: lote.mjs los saltea; no son "pendientes".
 export const DESCARTADOS = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-descartados.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-descartados.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
 
-// Balances de menos de 12 meses (to-do 190, Versión 631): tampoco se cargan, pero no son "descartados": falta el otro tramo del ejercicio.
+// Balances de menos de 12 meses: tampoco se cargan, pero no son "descartados": falta el otro tramo del ejercicio.
 // Admin/registros/documentos-parciales.txt, una línea por documento: ruta # cubre AAAA-MM-DD a AAAA-MM-DD # falta: ... # quién y cuándo.
 export const PARCIALES = new Map((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt'), 'utf8') : '').split('\n')
   .filter((l) => l.trim() && !l.trim().startsWith('#')).map((l) => { const [ruta, cubre = '', falta = ''] = l.split(' # ').map((x) => x.trim()); return [ruta, { cubre: cubre.replace(/^cubre\s+/, ''), falta: falta.replace(/^falta:\s*/, '') }]; }));

@@ -24,7 +24,7 @@ export function loadSite() {
 }
 
 export function parseNumber(raw) {
-  // (to-do 163) sin las marcas de negrita del Markdown: "**67.881.535**" se leía 67,881 y "**(727.914)**" positivo (Bologna 2019-20, UC 2009)
+  // sin las marcas de negrita del Markdown: "**67.881.535**" se leía 67,881 y "**(727.914)**" positivo (Bologna 2019-20, UC 2009)
   let s = String(raw).trim().replace(/\*\*|__/g, '').replace(/R\$|[$€£¥]/g, '').replace(/^\s*-\s+(?=\()/, '').trim();
   if (!/\d/.test(s)) return null;
   s = s.replace(/(\d)\s+(?=\d)/g, '$1');

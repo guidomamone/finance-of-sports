@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/generar-correcciones.mjs — EL REGISTRO PÚBLICO DE CORRECCIONES (to-do 247). Diseño y decisiones de Guido: Admin/mediciones/247-plan.md.
+// tools/generar-correcciones.mjs — EL REGISTRO PÚBLICO DE CORRECCIONES. Diseño y decisiones de Guido: Admin/mediciones/247-plan.md.
 //
 // Qué hace. Recorre el historial de git de los data files de los clubes (data/**/<id>-data.js; el JSON y el JS cambian en el mismo commit, y el JS
 // existe desde el principio del historial) y compara cada versión con la anterior. Un cambio sobre un año YA publicado que toca un importe, una
@@ -29,7 +29,7 @@ import { createRequire } from 'node:module';
 const ROOT = resolve(import.meta.dirname, '..');
 const require = createRequire(import.meta.url);
 const { idDeArchivo } = require('./data-clubes.js');
-export const REGISTRO_DESDE = '2026-10-20'; // el día en que el JSON pasó a ser la fuente (to-do 245)
+export const REGISTRO_DESDE = '2026-10-20'; // el día en que el JSON pasó a ser la fuente
 const OBLIGA_DESDE = '2026-10-21'; // desde este día un commit que corrige un dato publicado necesita motivo (trailer `Corrige:`); audit.js: correccion-sin-motivo, P2
 const SCHEMA = '1.0';
 const DIR = resolve(ROOT, 'data/correcciones');

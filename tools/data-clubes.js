@@ -34,7 +34,7 @@ function paisDe(clubId) {
   return paises[clubId] || null;
 }
 
-// Los ids viejos (to-do 246) y a qué id apuntan hoy: data/club-aliases.js. Un `--club boca` de memoria sigue andando y avisa.
+// Los ids viejos y a qué id apuntan hoy: data/club-aliases.js. Un `--club boca` de memoria sigue andando y avisa.
 let aliases = null;
 function normalizarId(id, { avisar = true } = {}) {
   if (!aliases) {

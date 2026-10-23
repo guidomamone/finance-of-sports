@@ -38,7 +38,7 @@ const failuresPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'mistral-
 const geminiFailuresPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'gemini-fallidos.jsonl');
 const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidelidad.js');
 
-// Corre tools/check-transcripcion-fidelidad.js (to-do 90) sobre el .md recién escrito -- placeholders
+// Corre tools/check-transcripcion-fidelidad.js sobre el .md recién escrito -- placeholders
 // de contenido en inglés (Mistral es un motor de extracción, no un chat, así que esto no debería
 // pasar nunca acá, pero el chequeo es tan barato que no hay motivo para no correrlo igual, gratis) y
 // huecos de página. No bloquea la transcripción si encuentra algo (ni si el chequeo mismo falla) --
@@ -125,7 +125,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, ou
   // outSuffix sirve para tests de comparación (ej. "-mistral-test"): escribe a un archivo aparte en
   // vez de al `.md` canónico, así se puede correr sobre un PDF que YA tiene transcripción (de otra
   // pata) sin pisarla, para comparar los dos resultados lado a lado.
-  // Versión 317: con --out-suffix (una segunda voz, un rehacer, un test) el .md es un DERIVADO y va a Generados/ (tools/rutas.mjs); sin
+  // con --out-suffix (una segunda voz, un rehacer, un test) el .md es un DERIVADO y va a Generados/ (tools/rutas.mjs); sin
   // sufijo es LA transcripción del documento y queda al lado del PDF, en Clubes/.
   const mdPath = outSuffix ? derivado(pdfPath, outSuffix + '.md') : resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
   if (existsSync(mdPath)) return { skipped: true, pdf: pdfPath };
@@ -332,7 +332,7 @@ async function main() {
     return;
   }
 
-  // (to-do 339) REHACER UNA PÁGINA: ver la cabecera.
+  // REHACER UNA PÁGINA: ver la cabecera.
   const iPag = args.indexOf('--pagina');
   if (iPag >= 0) {
     const pdfP = args.find((a) => !a.startsWith('--') && /\.pdf$/i.test(a));

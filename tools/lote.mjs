@@ -12,7 +12,7 @@
 //   4  validar-bloques.mjs  cada número de esos bloques contra el PDF (texto propio o Gemini)         gratis / ~US$ 0,003 por página escaneada
 //   5  extraer.mjs          las filas tal cual, con escala por bloque y la columna del año anterior   IA, ~US$ 0,20 (mediana de lo gastado; hasta ~0,35 en documentos largos)
 //   6  verificar.mjs        chequeos gratis; lo que no cierra va a la cola; deja el .rubros.json     gratis
-//      + primer-anio-ia.mjs (to-do 214) el primer año de un club cuando solo coincide el resultado: Claude revisa las filas  ~US$ 0,02
+//      + primer-anio-ia.mjs el primer año de un club cuando solo coincide el resultado: Claude revisa las filas  ~US$ 0,02
 //   7  categorización de siempre: glosar-rubros.mjs, jev-categorizar.mjs, categorizar-claude.mjs (con precedente, familia y memoria)  ~US$ 0,03
 //   8  cargar.mjs --desde-verificacion   PROPUESTA (no escribe el sitio): qué cargaría y por qué frena                gratis
 // Un documento que va a la cola en la 6 sigue igual hasta la 8 (para ver todo lo que le falta de una vez), pero la 8 lo frena.
@@ -40,7 +40,7 @@ import { pendientes, respuestaPosterior } from './cola.mjs';
 import { derivado } from './rutas.mjs';
 import { etapaDe } from './etapa-doc.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
-import { resolverDeporte, olvidarDeportes } from './deporte-club.mjs'; // (to-do 339) el deporte de cada documento antes de Jev y Claude
+import { resolverDeporte, olvidarDeportes } from './deporte-club.mjs'; // el deporte de cada documento antes de Jev y Claude
 import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
 import { tomarCandado, soltarCandado } from './candado.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
@@ -57,12 +57,12 @@ const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
 const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const LISTA = flag('--lista'); const EJECUTAR = ARGS.includes('--ejecutar'); const REHACER = ARGS.includes('--rehacer');
-// --sin-api (to-do 328): con --ejecutar, corre todo lo gratis y FRENA, documento por documento, donde hoy llamaría a una API (localizar, extraer, validar un escaneo,
+// --sin-api: con --ejecutar, corre todo lo gratis y FRENA, documento por documento, donde hoy llamaría a una API (localizar, extraer, validar un escaneo,
 // resolver el inventario, el perímetro por Jev, el primer año, Jev, Claude). Lo que ya está hecho (caché al día, categorías al día, o escrito por la sesión con
 // armar-a-mano.mjs y --desde-sesion) sigue de largo. `API` = puede llamar a una API: es EJECUTAR salvo con --sin-api.
 const SIN_API = ARGS.includes('--sin-api'); const API = EJECUTAR && !SIN_API;
 const CARGAR = ARGS.includes('--cargar');
-let frenaSinApi = () => {}; // se define abajo, cuando existe `estado` // (Versión 642) al final, tools/cargar-lote.mjs: altas, cargas y un commit por año (ensayo sin --ejecutar)
+let frenaSinApi = () => {}; // se define abajo, cuando existe `estado` // al final, tools/cargar-lote.mjs: altas, cargas y un commit por año (ensayo sin --ejecutar)
 // --reintentar (Versión 336, CAMINO DE ERROR: decisión de Guido, las reglas extra son "para cuando haya errores"): solo los documentos cuya
 // última verificación marcó desgloses que no suman (verificacion.reintentar) vuelven a localizar con el índice ampliado (filas que terminan
 // en "-") y a extraer con la lista de lo que no sumó. Una sola vez por documento (después queda `reintentado`). El resto del lote no se toca.
@@ -76,9 +76,9 @@ const REINTENTAR = ARGS.includes('--reintentar');
 const DETALLE = ARGS.includes('--detalle');
 const leerDerivado = (e, suf) => { try { const p = resolve(ROOT, derivado(e.md, suf, { crear: false })); return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null; } catch { return null; } };
 // Lo que hay que reintentar: desgloses que no suman (verificar.mjs) y categorías en 0 que deberían tener número (cargar.mjs, Versión 340).
-// (Versión 442) `detalle`: los desgloses que no suman de un documento cuya etapa 6 cerró (opcionales, ver --detalle); `reintentar`: lo que
+// `detalle`: los desgloses que no suman de un documento cuya etapa 6 cerró (opcionales, ver --detalle); `reintentar`: lo que
 // destraba la carga, más el detalle si se pidió --detalle.
-// (Versión 460) UNA VEZ POR DOCUMENTO también para "categoría en 0": el intento queda en <doc>.reintento-categorias.json (lo escribe el lote al
+// UNA VEZ POR DOCUMENTO también para "categoría en 0": el intento queda en <doc>.reintento-categorias.json (lo escribe el lote al
 // reintentar); con esa marca, las categorías en 0 de la propuesta de carga ya no piden otro reintento. Caso: Fortaleza 2017, el lote volvía a
 // ofrecer el mismo reintento después de intentarlo (y se pagaba cada vez).
 const categoriasPendientes = (e) => (leerDerivado(e, '.reintento-categorias.json') ? [] : ((leerDerivado(e, '.carga.json') || {}).reintentar || []).filter((x) => x.categoria));
@@ -97,9 +97,9 @@ tomarCandado('lote.mjs', { lista: LISTA, modo: EJECUTAR ? '--ejecutar' : 'ensayo
 // verifica, no se categoriza ni se propone cargar (UC 2022 en el lote 03: ya cargado, llenaba la terminal con 7 frenos esperables).
 const lineas = readFileSync(resolve(ROOT, LISTA), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
 const testigos = new Set(lineas.filter((l) => /^testigo\s+/i.test(l)).map((l) => l.replace(/^testigo\s+/i, '')));
-// DESCARTADOS (Versión 344): Admin/registros/documentos-descartados.txt lista los documentos que Guido descartó como fuente; el lote los saltea.
+// DESCARTADOS: Admin/registros/documentos-descartados.txt lista los documentos que Guido descartó como fuente; el lote los saltea.
 const descartados = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-descartados.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-descartados.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
-// PARCIALES (to-do 190, Versión 631): los balances de menos de 12 meses (Admin/registros/documentos-parciales.txt) tampoco entran: falta el otro tramo.
+// PARCIALES: los balances de menos de 12 meses (Admin/registros/documentos-parciales.txt) tampoco entran: falta el otro tramo.
 const parciales = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
 const docs0 = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if (descartados.has(d)) { console.log(`  ${d}: descartado (Admin/registros/documentos-descartados.txt)`); return false; } if (parciales.has(d)) { console.log(`  ${d}: parcial, menos de 12 meses (Admin/registros/documentos-parciales.txt)`); return false; } return true; });
 // LA VERSIÓN CORREGIDA REEMPLAZA AL ORIGINAL (to-do 298 o, ok de Guido 2026-10-18). El registro belga publica a veces el balance del mismo
@@ -183,11 +183,11 @@ const node = (tool, argv, { silencioso = false } = {}) => {
   return r;
 };
 
-const INICIO = new Date().toISOString(); // (Versión 449) desde cuándo cuenta el gasto por documento
-const gastoValidar = {}; // (Versión 449) lo que costó validar escaneos (Gemini con rutas temporales: no queda en ningún log con el PDF)
+const INICIO = new Date().toISOString(); // desde cuándo cuenta el gasto por documento
+const gastoValidar = {}; // lo que costó validar escaneos (Gemini con rutas temporales: no queda en ningún log con el PDF)
 const anotarValidar = (pdf, V) => { const c = V?.costo || 0; if (c) gastoValidar[pdf] = { validar: (gastoValidar[pdf]?.validar || 0) + c }; return c; };
-const sitio = loadSite(); // (Versión 442) antes del loop: "año ya cargado" mira también el sitio
-// (to-do 239) ¿el año de la última propuesta de carga (<doc>.carga.json) ya está en el sitio? El año sale del ajuste `anio` si el documento
+const sitio = loadSite(); // antes del loop: "año ya cargado" mira también el sitio
+// ¿el año de la última propuesta de carga (<doc>.carga.json) ya está en el sitio? El año sale del ajuste `anio` si el documento
 // lo tiene: la propuesta puede ser de antes del ajuste. Caso: Sporting 2001 (relatorio-contas-2000.pdf), la propuesta vieja decía 2000 (el
 // nombre del archivo), 2000 está cargado y el lote lo salteaba como "ya en el sitio".
 const propuestaEnSitio = (e) => { const c = leerDerivado(e, '.carga.json'); const anio = ajusteDe(e.pdf, 'anio')?.valor ?? c?.year; return !!(c?.clubId && anio && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[anio]); };
@@ -223,7 +223,7 @@ if (REINTENTAR) {
     try { unlinkSync(tmp); } catch { /* ya no está */ }
   }
 }
-// (to-do 341) EL DEPORTE ANTES DE LEER. Localizar, extraer, caja-deuda y perimetro-senales dicen en su prompt el deporte del club (deporteDePdf); un club nuevo todavía no tiene ficha, así que el alta
+// EL DEPORTE ANTES DE LEER. Localizar, extraer, caja-deuda y perimetro-senales dicen en su prompt el deporte del club (deporteDePdf); un club nuevo todavía no tiene ficha, así que el alta
 // (gratis, recalcula solo si cambió la huella) corre sobre las carpetas sin deporte ANTES de la primera lectura. Si no, los clubes nuevos de fútbol leerían con otro prompt (y otra clave de caché).
 const sinDeporte = [...new Set(docs.filter((d) => !resolverDeporte({ club: clubDeRuta(d).clubId, pdf: d })).map((d) => d.split('/').slice(1, 3).join('/')))];
 for (const solo of sinDeporte) { console.log(`  alta-club (gratis) sobre ${solo}: el club no tiene deporte todavía`); node('tools/alta-club.mjs', ['--todos', '--solo', solo], { silencioso: true }); }
@@ -232,12 +232,12 @@ const inicioUsd = {};
 for (const pdf of docs) {
   inicioUsd[pdf] = usd;
   let e = registro.find((x) => x.pdf === pdf);
-  // (Versión 407) el registro puede tener la ruta del .md sin el archivo en disco (tieneMd: false, "PAGADO SIN .md": Novorizontino 2022);
+  // el registro puede tener la ruta del .md sin el archivo en disco (tieneMd: false, "PAGADO SIN .md": Novorizontino 2022);
   // antes pasaba a localizar.mjs y el lote entero se caía con ENOENT.
   if (!e?.md || !existsSync(resolve(ROOT, e.md))) { estado[pdf] = 'sin transcripción (etapa 2)'; console.log(`  ${pdf}: sin .md`); continue; }
   // AÑO YA EN EL SITIO (to-do 237 ag, ok de Guido el 2026-10-15): un documento cuyo año ya está cargado no pasa por ninguna etapa más (ni
   // verificar, ni categorizar, ni la propuesta de carga): cargar-lote.mjs no lo iba a tocar igual, y la tabla final lo cuenta en "ya estaba en
-  // el sitio" por su cuenta (yaEnSitio, abajo). Misma compuerta que "año ya cargado según el sitio" (Versión 442): el registro o el sitio por
+  // el sitio" por su cuenta (yaEnSitio, abajo). Misma compuerta que "año ya cargado según el sitio": el registro o el sitio por
   // el clubId y el año de la última propuesta. Caso: lote 80, quinta corrida, 52 documentos verificados, glosados y categorizados para que 44
   // terminaran en "ya en el sitio: no se tocan". Con --reintentar sigue el camino de siempre (reintenta categorías en 0 de un año cargado).
   // Los testigos tampoco se saltean: entran solo para que otro documento compare su año anterior.
@@ -272,7 +272,7 @@ for (const pdf of docs) {
       console.log(`  ${pdf}: el inventario dice "revisar" -> resolver-inventario (etapa 2, escalón 1a): ${l.replace(pdf, '').replace(/\s+/g, ' ').trim()}`);
       resolverEnsayo = true;
     } else {
-      node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // (Versión 640) --solo: solo la lista del lote
+      node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // --solo: solo la lista del lote
       e = registro.find((x) => x.pdf === pdf) || e;
       console.log(`  ${pdf}: resolver-inventario (etapa 2, escalón 1a): el inventario ahora dice "${e.estado}"${e.estado === 'listo' ? '' : ` (${String(e.detalle || '').slice(0, 120)}): sigue el escalón 1b`}`);
     }
@@ -287,7 +287,7 @@ for (const pdf of docs) {
   // que antes). Hasta acá se comparaba con la fecha del archivo de ajustes ENTERO: un ajuste de Novorizontino dejaba "vieja" la propuesta
   // de Fortaleza 2017 y su reintento no corría (86 de 87 propuestas de prueba-completa contaban como viejas; por documento y club, 58).
   const cargaFresca = (() => { try { const c = leerDerivado(e, '.carga.json'); if (!c?.generado) return false; const dia = String(c.generado).slice(0, 10); const carpeta = pdf.split('/').slice(0, 3).join('/') + '/'; return !ajustesTodos().some((a) => (a.pdf === pdf || a.pdf === carpeta) && String(a.fecha || '') >= dia); } catch { return false; } })();
-  // AÑO YA CARGADO SEGÚN EL SITIO (Versión 442): el registro se queda viejo si no se regenera después de cargar (Juventus 2021-22: en
+  // AÑO YA CARGADO SEGÚN EL SITIO: el registro se queda viejo si no se regenera después de cargar (Juventus 2021-22: en
   // data/it/juventus-it-data.js y `cargado: false` en el registro; un --reintentar lo volvía a pagar). Se mira también el sitio, por el clubId y
   // el año de la última propuesta de carga del documento.
   const cargado = e.cargado || propuestaEnSitio(e);
@@ -336,7 +336,7 @@ for (const pdf of docs) {
   // coincide con el texto propio del PDF (cifras con un dígito distinto, o casi nada en común) y el PDF sí tiene texto propio: esas páginas
   // se rearman con él (tools/texto-propio-a-md.mjs, gratis) y el documento vuelve a localizar, validar y extraer. Una vez por documento
   // (el .md queda marcado). Compuerta: la etapa 4 sobre el .md nuevo y, después, la etapa 6. Caso: Goiás 2008-2016 (balances de diario).
-  // (Versión 397) el rearmado tiene su propia escalera: método "columnas" primero; "regiones" solo si con "columnas" la etapa 6 no cerró.
+  // el rearmado tiene su propia escalera: método "columnas" primero; "regiones" solo si con "columnas" la etapa 6 no cerró.
   // LOTE CORTADO: LA ETAPA 6 ANTES DEL REARMADO (to-do 162, ok de Guido). Un lote que se corta (lote 14: se reinició la terminal) deja
   // documentos con la etapa 4 hecha (.validacion.json) y la 6 sin hacer (sin .verificacion.json). paginasARearmar() decide con los "no
   // confirmados" de la etapa 4 y, sin verificación, rearma; pero esos números casi siempre son falsos (medido en los lotes 14 y 19: 193 de
@@ -347,7 +347,7 @@ for (const pdf of docs) {
     const [[, VR]] = verificarLista([pdf], { registro, sitio });
     console.log(`  ${pdf}: tenía la etapa 4 sin la 6 (un lote cortado): etapa 6 primero, gratis -> ${VR?.estado || VR?.error || '?'}`);
   }
-  const TP = resolverEnsayo ? null : paginasARearmar(pdf, e.md, e); const pagsTP = TP?.paginas; // (Versión 433) en el ensayo, el 1a va primero
+  const TP = resolverEnsayo ? null : paginasARearmar(pdf, e.md, e); const pagsTP = TP?.paginas; // en el ensayo, el 1a va primero
   if (pagsTP) {
     if (!(REINTENTAR && API)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar ~US$ 0,05 + extraer ${estimarExtraerSinBloques(pdf).texto}${frenaria(pdf)}`); if (!EJECUTAR) usd += 0.05 + estimarExtraerSinBloques(pdf).usd; continue; }
     const RA = rearmar(pdf, pagsTP, TP.metodo);
@@ -382,7 +382,7 @@ for (const pdf of docs) {
   // MODO BATCH (tools/lote-batch.mjs, Batch API): la respuesta de localizar llega en la ola siguiente; el documento se corta acá.
   if (L.pendiente) { estado[pdf] = 'esperando la Batch API (localizar)'; console.log(`  ${pdf}: localizar pendiente de la Batch API`); continue; }
   if (!L.ensayo && !L.error && reintento && reintento.some((x) => x.categoria)) { try { writeFileSync(resolve(ROOT, derivado(e.md, '.reintento-categorias.json')), JSON.stringify({ fecha: new Date().toISOString(), categorias: reintento.filter((x) => x.categoria).map((x) => x.categoria), modoNotas: enModoNotas }, null, 1)); } catch { /* sin marca: como antes */ } }
-  // (Versión 460) COMPUERTA: un reintento que da "sin estado" cuando la localización anterior sí tenía estado NO la pisa (sin estado nunca se
+  // COMPUERTA: un reintento que da "sin estado" cuando la localización anterior sí tenía estado NO la pisa (sin estado nunca se
   // puede cargar): el intento queda en <doc>.ubicacion-reintento.json y vuelve la anterior.
   if (!L.ensayo && !L.error && reintento && L.datos?.sin_estado && ubAntes && !ubAntes.sin_estado && (ubAntes.estado || []).length) {
     writeFileSync(resolve(ROOT, derivado(e.md, '.ubicacion-reintento.json')), JSON.stringify(L.datos, null, 1));
@@ -408,7 +408,7 @@ for (const pdf of docs) {
       console.log(`  ${pdf}: re-transcribiendo con Mistral (páginas en imagen: ${enImagen.join(', ')})...`);
       const r = node('tools/mistral-ocr-transcribe.mjs', [pdf]);
       if (r.status !== 0 || !existsSync(mdAbs)) { if (!existsSync(mdAbs)) copyFileSync(previo, mdAbs); estado[pdf] = 'escalón 1 de la etapa 2: Mistral falló (se restauró la transcripción anterior)'; continue; }
-      node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // (Versión 640) --solo: solo la lista del lote
+      node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // --solo: solo la lista del lote
       const L2 = await localizar(pdf, { registro, perimetroClub, ejecutar: true, rehacer: true }); usd += L2.costo || 0;
       if (L2.error || L2.datos?.sin_estado) { estado[pdf] = 'sin estado de resultados aun re-transcripto (queda como fuente)'; continue; }
       const V2 = await validar(pdf, { registro, ejecutar: true, rehacer: true }); usd += anotarValidar(pdf, V2);
@@ -451,7 +451,7 @@ for (const pdf of docs) {
   estado[pdf] = testigos.has(pdf) ? 'testigo (solo hasta extraer)' : 'extraído';
   console.log(`  ${pdf}: estado ${L.datos.estado.join(',')} · ${V.datos?.modo || '?'} · ${X.datos.filas.length} filas · US$ ${usd.toFixed(2)} acumulado`);
 }
-// Lo que falta fijar antes de localizar (Versión 441): un comando por club (perímetro) o por documento (cierre), sin repetir.
+// Lo que falta fijar antes de localizar: un comando por club (perímetro) o por documento (cierre), sin repetir.
 const imprimirAFijar = () => {
   if (!aFijar.length) return;
   console.log(`\nFALTA FIJAR ANTES DE LOCALIZAR (etapa 3; ${aFijar.length} documento(s) sin pagar hasta que esté fijado; gratis):`);
@@ -489,9 +489,9 @@ if (docsXhtml.length) { // costo de los deterministas (con --ejecutar, lo gastad
   if (EJECUTAR && PAGAR_XHTML) appendFileSync(resolve(ROOT, 'Admin', 'registros', 'pagar-ia-xhtml.jsonl'), JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, cierre: true, docs: docsXhtml.length, costoUsd: +costo.toFixed(4) }) + '\n');
 }
 console.log('\n=== 2/5 · Sumar y cruzar con lo impreso (etapa 6, gratis) ===');
-// startsWith (Versión 347): el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no
+// startsWith: el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no
 // pasaba a verificar en la misma corrida (UC 2015, lote 06: re-transcripto y extraído, y la etapa 6 lo salteaba).
-// verificarLista (Versión 362): repite la pasada si un documento tomó la escala del año vecino (la cadena de escala depende del orden).
+// verificarLista: repite la pasada si un documento tomó la escala del año vecino (la cadena de escala depende del orden).
 for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).startsWith('extraído')), { registro, sitio, escribirRubros: true })) {
   estado[pdf] = r.error ? `verificar: ${r.error}` : r.estado === 'ok' ? 'verificado' : `verificado con ${r.cola.length} caso(s) en la cola`;
   if (!r.error) for (const c of r.chequeos) console.log(`  ${pdf.split('/').slice(2).join('/')}: ${c.ok === true ? 'ok' : c.ok === false ? 'NO' : '-'} ${c.nombre}: ${c.detalle}`);
@@ -515,7 +515,7 @@ for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).start
 
 console.log('\n=== 3/5 · Categorizar las filas (etapa 7) ===');
 let conRubros = docs.filter((d) => String(estado[d]).startsWith('verificado'));
-// (to-do 339) Jev y Claude necesitan el deporte de cada documento; el alta que lo calcula corre más arriba (to-do 341), antes de la primera lectura.
+// Jev y Claude necesitan el deporte de cada documento; el alta que lo calcula corre más arriba, antes de la primera lectura.
 if (SIN_API) {
   // Sin API: solo siguen los documentos con Jev y las categorías al día (los dejó la sesión con --desde-sesion o ya estaban); el resto frena.
   const alDia = (d) => { const e = registro.find((x) => x.pdf === d); try { return !!e?.md && jevAlDia(resolve(ROOT, e.md)) && categoriasAlDia(resolve(ROOT, e.md)); } catch { return false; } };
@@ -524,7 +524,7 @@ if (SIN_API) {
 }
 if (conRubros.length) {
   writeFileSync(resolve(ROOT, 'Admin', 'registros', '.lote-lista-actual.txt'), conRubros.join('\n') + '\n');
-  node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // (Versión 640) --solo: solo la lista del lote
+  node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // --solo: solo la lista del lote
   if (!SIN_API) {
     node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
     node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
@@ -537,7 +537,7 @@ if (conRubros.length) {
 console.log('\n=== Resumen: en qué quedó cada documento ===');
 for (const pdf of docs) console.log(`  ${String(estado[pdf] || 'sin novedad en esta corrida').padEnd(42)} ${pdf}`);
 const cola = pendientes().filter((c) => docs.includes(c.pdf));
-// TROUBLESHOOTING (Versión 346): desgloses que siguen sin sumar DESPUÉS del reintento -> diagnóstico (¿índice o transcripción?).
+// TROUBLESHOOTING: desgloses que siguen sin sumar DESPUÉS del reintento -> diagnóstico (¿índice o transcripción?).
 const sinArreglo = docs.filter((d) => { const e = registro.find((x) => x.pdf === d); const v = e?.md ? leerDerivado(e, '.verificacion.json') : null; return v?.reintentado && v?.faltasDesglose; });
 if (sinArreglo.length) {
   console.log(`\nDESGLOSES QUE SIGUEN SIN SUMAR DESPUÉS DEL REINTENTO (se cargan con el renglón sin abrir; diagnóstico gratis):`);
@@ -603,9 +603,9 @@ function etapaDeFrenos(frenos) {
 const resultado = { listo: [], frenado: [], yaCargado: [], sinPropuesta: [] };
 for (const pdf of docs.filter((d) => !testigos.has(d))) {
   const e = registro.find((x) => x.pdf === pdf); const c = e?.md ? leerDerivado(e, '.carga.json') : null;
-  // (Versión 562) el club adelante del año: con varios clubes en un lote, "2021" solo no dice cuál (lote 14, 12 clubes italianos).
+  // el club adelante del año: con varios clubes en un lote, "2021" solo no dice cuál (lote 14, 12 clubes italianos).
   const anio = `${pdf.split('/')[2] || ''} ${c?.year || (pdf.match(/(\d{4})(?!.*\d{4})/) || [])[1] || pdf}`.trim();
-  // (Versión 461) un año que ya está en el sitio va a "Ya en el sitio" aunque su última propuesta sea vieja (Novorizontino 2018-2021 y
+  // un año que ya está en el sitio va a "Ya en el sitio" aunque su última propuesta sea vieja (Novorizontino 2018-2021 y
   // 2024, Juventus 2012: propuestas de antes del alta del club decían "el club no existe en el sitio").
   if (e?.md && yaEnSitio(e)) resultado.yaCargado.push({ anio });
   else if (!c) resultado.sinPropuesta.push({ anio, motivo: estado[pdf] || 'sin propuesta de carga' });

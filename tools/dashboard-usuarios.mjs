@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/dashboard-usuarios.mjs — los datos del dashboard de usuarios y visitas (to-dos 268 y 300), el artifact de Claude
+// tools/dashboard-usuarios.mjs — los datos del dashboard de usuarios y visitas, el artifact de Claude
 // https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA. GRATIS: solo lee (Supabase y Cloudflare, con las claves de Admin/api-keys/).
 //
 // Corre tools/supabase/stats.mjs --json y tools/cloudflare-visitas.mjs --json y parte lo que escriben en un archivo por dataset del

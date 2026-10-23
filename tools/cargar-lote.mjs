@@ -123,7 +123,7 @@ function ponerColor({ clubId, color, club, pais }) {
   if (k < 0 || !L[k].trimEnd().endsWith(' },') || L[k].includes('brandColor')) return false;
   L[k] = `${L[k].trimEnd().slice(0, -3)}, brandColor:${color === null ? 'null' : `'${color}'`} },`;
   writeFileSync(p, L.join('\n'));
-  // la nota del alta (to-do 209) está en la evidencia del club, no en data/clubs.js
+  // la nota del alta está en la evidencia del club, no en data/clubs.js
   let ev = EV.leer(clubId);
   ev = EV.reemplazarTexto(ev, 'brandColor AUSENTE a propósito', color === null ? 'brandColor:null a propósito' : `brandColor ${color}`);
   ev = EV.reemplazarTexto(ev, '(nadie lo chequeó todavía: club-or-year-onboarding/club-nuevo.md, identidad primero).', `(procedencia en Admin/sourcing/${pais}/${club}.md; tools/cargar-lote.mjs).`);

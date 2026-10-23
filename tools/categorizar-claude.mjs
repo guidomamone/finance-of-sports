@@ -68,7 +68,7 @@
 //   node tools/categorizar-claude.mjs --backtest --sin-club --etiqueta _sinclub # variante sin las líneas del club
 //   node tools/categorizar-claude.mjs --informe [--etiqueta _x]
 //   node tools/categorizar-claude.mjs --listos [--limit 10] [--dry-run] [--lista Admin/mi-piloto.txt]
-//   node tools/categorizar-claude.mjs --listos --desde-sesion <respuestas.json>   (to-do 328) SIN API: la sesión contesta los rubros que quedan para Claude (escalón 2).
+//   node tools/categorizar-claude.mjs --listos --desde-sesion <respuestas.json> SIN API: la sesión contesta los rubros que quedan para Claude (escalón 2).
 //       {"pdf":"<pdf>","respuestas":[{"label":"<etiqueta>","categoria":"<categoria>","confianza":0.9,"motivo":"<una frase>"}]}; el --dry-run dice cuántos rubros faltan
 //       contestar. Escalones 0 y 1 y la memoria como siempre; deja el mismo <md>.categorias.json (modelo 'sesión (Claude Code)', costo 0) y registra las aprendidas. Si falta un rubro, no escribe nada.
 //   Extras: --modelo (default claude-opus-5-5), --esfuerzo low|medium|high (default low; Haiku no lo usa),
@@ -84,17 +84,17 @@
 
 import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
 import { SESION } from './sesion.mjs'; // gasto por sesión
-import { deporteDeClub, resolverDeporte, MENSAJE_SIN_DEPORTE, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) lista de categorías, criterios y ejemplos del deporte del club
-import { afinidad } from './pais-club.mjs'; // (to-do 331) ejemplos del mismo país primero, a igual parecido
-import { reglasParaPrompt } from './reglas-categoria.mjs'; // (to-do 329) las reglas de categoría de CONVENCIONES-DATOS al prompt
+import { deporteDeClub, resolverDeporte, MENSAJE_SIN_DEPORTE, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // lista de categorías, criterios y ejemplos del deporte del club
+import { afinidad } from './pais-club.mjs'; // ejemplos del mismo país primero, a igual parecido
+import { reglasParaPrompt } from './reglas-categoria.mjs'; // las reglas de categoría de CONVENCIONES-DATOS al prompt
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { derivado, ubicar } from './rutas.mjs';
 import { registrarAprendidas, lineasAprendidas, MIN_PRECEDENTE, padreDe } from './memoria-categorias.mjs';
 import { mismaFamilia } from './vocabulario.mjs';
-import { sinMarca, mismoPadre, padreEnClub } from './padres-filas.mjs'; // en qué nota está cada fila cargada (Versión 403)
-import { abrirCache } from './respuestas-cache.mjs'; // respuestas ya pagadas (Versión 321) // familia de etiquetas del precedente (Versión 321)
+import { sinMarca, mismoPadre, padreEnClub } from './padres-filas.mjs'; // en qué nota está cada fila cargada
+import { abrirCache } from './respuestas-cache.mjs'; // respuestas ya pagadas // familia de etiquetas del precedente
 import vm from 'node:vm';
 import { archivosData } from './data-clubes.js';
 
@@ -132,10 +132,10 @@ export function loadCategories() {
   return { revenue: build('REVENUE_CATEGORIES', 'REVENUE_CATEGORY_LABELS'), expense: build('EXPENSE_CATEGORIES', 'EXPENSE_CATEGORY_LABELS') };
 }
 const CATS = loadCategories();
-// (to-do 339) el lado de una categoría: las del fútbol primero y después las de los otros deportes (un id compartido tiene el mismo lado en todos)
+// el lado de una categoría: las del fútbol primero y después las de los otros deportes (un id compartido tiene el mismo lado en todos)
 export const sideOf = (cat) => { for (const d of new Set(['futbol', ...deportesConTaxonomia()])) { const c = catsDe(d); if (c && cat in c.revenue) return 'revenue'; if (c && cat in c.expense) return 'expense'; } return '?'; };
 const ALL_CATS = [...Object.keys(CATS.revenue), ...Object.keys(CATS.expense)];
-// (to-do 339) Las categorías de un deporte: las de SU taxonomía, con etiqueta y comentario completo de su propia lista en data/category-map.js (tools/deporte-club.mjs,
+// Las categorías de un deporte: las de SU taxonomía, con etiqueta y comentario completo de su propia lista en data/category-map.js (tools/deporte-club.mjs,
 // leerCategorias; el fútbol lee REVENUE_CATEGORIES, el rugby RUGBY_REVENUE_CATEGORIES...). Sin taxonomía del deporte: null, nunca la del fútbol.
 const _catsDe = new Map();
 function catsDe(deporte) {
@@ -187,7 +187,7 @@ export function precedente(lines, club, side, label, { excludeYear = null } = {}
 //   - lado DESCONOCIDO: antes no había precedente (la fila iba entera a Jev/Claude). Ahora: exacto si todas las coincidencias del club son de UN
 //     solo lado (4.732 líneas, 99,7%), y si no, familia SIN tolerar el paréntesis final (60 más, 100%). Con la tolerancia bajaba a 91,9%.
 // Siempre del MISMO club y con UNA sola categoría entre todas las coincidencias: si el club la cargó distinto en años distintos, no hay precedente.
-// ESCALERA DE LA ETAPA 7 (Versión 343): precedente exacto CON CONTEXTO (misma etiqueta y mismo renglón que desglosa) -> exacto -> familia ->
+// ESCALERA DE LA ETAPA 7: precedente exacto CON CONTEXTO (misma etiqueta y mismo renglón que desglosa) -> exacto -> familia ->
 // Jev >= 0,90 -> Claude >= 0,80 -> cola. Si la misma etiqueta tiene categorías distintas en el club (sin contexto que las separe), `unico`
 // devuelve null y se baja al escalón siguiente: el precedente nunca elige entre dos respuestas distintas.
 export function precedenteFamilia(lines, club, side, label, { excludeYear = null, padre = null } = {}) {
@@ -216,14 +216,14 @@ export function makeRetriever(lines) {
   for (const l of lines) { const k = `${l.club}|${l.side}|${norm(l.label)}`; const cur = uniq.get(k); if (!cur) uniq.set(k, { ...l, w: words(l.label) }); else if (cur.cat !== l.cat) cur.conflict = true; }
   const bank = [...uniq.values()].filter((x) => !x.conflict);
   return (q, k = K_EXAMPLES) => {
-    const qw = words(q.label); const scored = []; const admite = categoriasDeDeporte(q.deporte || deporteDeClub(q.club))?.todas; // (to-do 339) solo ejemplos cuya categoría existe en la taxonomía del deporte del club (ingreso + gasto)
+    const qw = words(q.label); const scored = []; const admite = categoriasDeDeporte(q.deporte || deporteDeClub(q.club))?.todas; // solo ejemplos cuya categoría existe en la taxonomía del deporte del club (ingreso + gasto)
     for (const b of bank) {
       if (admite && !admite.has(b.cat)) continue;
       if (b.club === q.club) continue; // el mismo club va aparte (contexto del club), con sus propias exclusiones
       if (q.side && b.side !== q.side) continue;
       const s = jaccard(qw, b.w); if (s > 0) scored.push([s, b]);
     }
-    // (to-do 331, 339) a igual parecido de palabras: primero los del mismo deporte, después los del mismo país, después los del mismo idioma
+    // a igual parecido de palabras: primero los del mismo deporte, después los del mismo país, después los del mismo idioma
     scored.sort((a, b) => (b[0] - a[0] > 1e-12 || a[0] - b[0] > 1e-12) ? b[0] - a[0] : (afinidadDeporte(q.club, b[1].club) - afinidadDeporte(q.club, a[1].club)) || (afinidad(q.club, b[1].club) - afinidad(q.club, a[1].club)));
     const seen = new Set(); const out = [];
     for (const [, b] of scored) { const kk = `${norm(b.label)}|${b.cat}`; if (seen.has(kk)) continue; seen.add(kk); out.push(b); if (out.length >= k) break; }
@@ -261,11 +261,11 @@ const CRITERIOS = `CRITERIOS DEL SITIO (resumen del skill club-data-mapping; si 
 - Premios por avance de ronda/participación: competition_bonus solo si el documento los separa de la recaudación; si no, matchday_competition.
 - Intereses, diferencias de cambio, resultado financiero, impuesto a las ganancias, subtotales y totales NO son líneas del sitio: respondé ${NOT_A_LINE}.`;
 
-// (to-do 329) Las reglas de categoría que salieron de una votación o de una decisión de Guido (líneas «CATEGORÍA (prompt):» de Admin/CONVENCIONES-DATOS.md). Mandan sobre los criterios de arriba.
-// (to-do 339) las reglas sin deporte van a todos; las marcadas `CATEGORÍA (prompt, <deporte>)`, solo al prompt de ese deporte
+// Las reglas de categoría que salieron de una votación o de una decisión de Guido (líneas «CATEGORÍA (prompt):» de Admin/CONVENCIONES-DATOS.md). Mandan sobre los criterios de arriba.
+// las reglas sin deporte van a todos; las marcadas `CATEGORÍA (prompt, <deporte>)`, solo al prompt de ese deporte
 const reglasDecididas = (deporte) => { const r = reglasParaPrompt(deporte); return r.length ? `\n\nREGLAS YA DECIDIDAS (votaciones y decisiones de Guido; mandan sobre los criterios de arriba):\n${r.join('\n')}` : ''; };
 
-// (to-do 339) Los criterios son del fútbol. Otro deporte recibe solo lo que no depende del deporte (la convención del club y qué no es una línea) hasta que
+// Los criterios son del fútbol. Otro deporte recibe solo lo que no depende del deporte (la convención del club y qué no es una línea) hasta que
 // alguien escriba los suyos: sin criterios propios el prompt lo dice, no aplica los del fútbol.
 function criteriosDe(deporte) {
   if (deporte === 'futbol') return CRITERIOS;
@@ -418,7 +418,7 @@ export async function categorizarConClaude({ club, year = null, rubros, modelo =
   const exclude = excludeLabels || new Set(pend.map((r) => `${r.lado}|${norm(r.label)}`));
   const conventions = contextoClub ? clubConventions(lines, club, { excludeYear: excludeYear ?? (year != null ? String(year) : null), excludeLabels: exclude, pendingLabels: pend.map((r) => r.glosa || r.label) }) : null;
   retriever ||= makeRetriever(lines);
-  // (to-do 339) el deporte del documento lo da quien llama (ficha o registro de altas); sin él, el de la ficha del club; sin ninguno no se categoriza (no se supone fútbol)
+  // el deporte del documento lo da quien llama (ficha o registro de altas); sin él, el de la ficha del club; sin ninguno no se categoriza (no se supone fútbol)
   const deporte = deporteDado || deporteDeClub(club);
   if (!deporte) return { resultados: [], error: MENSAJE_SIN_DEPORTE(club), costUsd: 0 };
   const examplesFor = ejemplos ? (r) => retriever({ label: r.glosa && r.glosa !== r.label ? `${r.label} ${r.glosa}` : r.label, club, deporte, side: r.lado }) : null;
@@ -564,7 +564,7 @@ async function listos(opt) {
   docs = [...new Map(docs.map((e) => [e.md, e])).values()];
   if (opt.limit > 0) docs = docs.slice(0, opt.limit);
   console.log(`${docs.length} documento(s) con Jev hecho y sin categorías finales.${opt.dry ? ' (dry-run)' : ''}`);
-  // Versión 319: además de lo cargado en el sitio, lo que Claude ya resolvió antes (tools/memoria-categorias.mjs, Admin/registros/categorias-aprendidas.jsonl,
+  // además de lo cargado en el sitio, lo que Claude ya resolvió antes (tools/memoria-categorias.mjs, Admin/registros/categorias-aprendidas.jsonl,
   // confianza >= 0,80): entra como contexto del club y como ejemplos de otros clubes; producción siempre gana sobre lo aprendido.
   const prod = allLines(); const aprendidas = lineasAprendidas({ produccion: prod });
   const lines = [...prod, ...aprendidas]; const retriever = makeRetriever(lines); const apiKey = opt.dry || sesion ? null : readKey(); let cost = 0;
@@ -586,11 +586,11 @@ async function listos(opt) {
       const j = jevBy.get(norm(r.label));
       // Escalón 0: precedente de lo CARGADO en el sitio; si no hay, de lo que Claude ya resolvió para este club con >= 0,90 (memoria).
       const ey = { excludeYear: rj.year != null ? String(rj.year) : null };
-      // Versión 321: con familia de etiquetas y también para filas sin lado (precedenteFamilia(), arriba).
+      // con familia de etiquetas y también para filas sin lado (precedenteFamilia(), arriba).
       const padreFila = padreDe(r.section);
       const precProd = precedenteFamilia(prod, rj.club, r.lado || null, r.label, { ...ey, padre: padreFila });
       // El escalón con contexto va primero: una respuesta de la misma etiqueta Y del mismo renglón que desglosa gana sobre el precedente sin
-      // contexto. (Versión 403) Con lo cargado Y lo aprendido: lo cargado ahora también sabe su nota (padres-filas.mjs).
+      // contexto. Con lo cargado Y lo aprendido: lo cargado ahora también sabe su nota (padres-filas.mjs).
       const conCtx = precedenteFamilia([...prod, ...aprendidasFirmes], rj.club, r.lado || null, r.label, { ...ey, padre: padreFila });
       const prec = conCtx?.via === 'exacto-con-contexto' ? conCtx : (precProd || precedenteFamilia(aprendidasFirmes, rj.club, r.lado || null, r.label, { ...ey, padre: padreFila }));
       const base = { label: r.label, lado: r.lado || null, section: r.section, glosa: r.glosa, page: r.page };
@@ -603,7 +603,7 @@ async function listos(opt) {
       else if (guardada) { rubros.push({ ...base, pendiente: false, ya: guardada.categoria, escalon: 2, confCache: guardada.confianza, motivo: guardada.motivo, jev: j?.choice, jevConf: j?.confidence, desdeCache: true }); nDesdeCache++; }
       else rubros.push({ ...base, pendiente: true, jev: j?.choice, jevConf: j?.confidence });
     }
-    // (to-do 328) --desde-sesion: el mismo resultado que devolvería categorizarConClaude, con las respuestas del archivo (sin API, costo 0).
+    // --desde-sesion: el mismo resultado que devolvería categorizarConClaude, con las respuestas del archivo (sin API, costo 0).
     const deSesion = (pend) => {
       const porLabel = new Map((sesion.respuestas || []).map((x) => [norm(x.label), x]));
       const faltan = []; const malas = []; const resultados = [];

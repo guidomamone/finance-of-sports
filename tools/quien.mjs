@@ -1,7 +1,7 @@
 // ============================================================================
 // tools/quien.mjs — DE QUÉ CLUB Y EJERCICIO ES UN PDF, Y QUÉ PDF TODAVÍA NO ESTÁN CARGADOS.
 //
-// POR QUÉ (to-do 218): son las dos funciones que seguían vivas de tools/onboard.mjs, el onboarding viejo (transcribir con Mistral y Gemini,
+// POR QUÉ: son las dos funciones que seguían vivas de tools/onboard.mjs, el onboarding viejo (transcribir con Mistral y Gemini,
 // comparar, armar el briefing con prepare-onboarding.mjs), que se archivó en tools/archivo/ junto con prepare-onboarding.mjs. El pipeline es
 // pipeline.mjs (etapa 2) + lote.mjs (3 a 8) + cargar.mjs. El código de las dos funciones es el de onboard.mjs, sin cambios.
 //
@@ -73,7 +73,7 @@ export function quien(pdfPath, club = null, year = null) {
   // compara con el del alta (frenaba los 40 años de los 7 griegos nuevos con "carpetas-clubes.mjs dice paok-gr y quien.mjs dice paok").
   let clubId = club; let clubDeCarpeta = false;
   if (!clubId) {
-    // Versión 309: el club sale de tools/carpetas-clubes.mjs (la cita en data/<país>/<id>-data.js, y si no, nombre IGUAL dentro del mismo país),
+    // el club sale de tools/carpetas-clubes.mjs (la cita en data/<país>/<id>-data.js, y si no, nombre IGUAL dentro del mismo país),
     // no de guessClubId() por substring y sin país. Esa regla vieja no reconocía 17 clubes del sitio (Racing, Botafogo, Gent...) y asignaba
     // 11 carpetas a un club EQUIVOCADO en silencio (Porto -> Grêmio, Inter -> Internacional, Lazio y Rubin Kazan -> AZ, Braga ->
     // Bragantino...): si ese club tenía el mismo año cargado, el PDF figuraba como "ya cargado" y el pipeline no lo tocaba nunca.
@@ -85,7 +85,7 @@ export function quien(pdfPath, club = null, year = null) {
   }
   let resolvedYear = year;
   if (!resolvedYear) {
-    // escalón 0 (Versión 390): ajuste manual `anio` (tools/ajustes.mjs), el mismo que lee alta-club.mjs
+    // escalón 0: ajuste manual `anio` (tools/ajustes.mjs), el mismo que lee alta-club.mjs
     const ajAnio = ajusteDe(relative(projectRoot, resolve(pdfPath)), 'anio');
     resolvedYear = ajAnio ? Number(ajAnio.valor) : guessYear(basename(pdfPath));
     if (!resolvedYear) return { error: 'No pude adivinar el año del nombre del archivo -- pasá --year explícito.' };

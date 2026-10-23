@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/worktree.mjs — SESIONES EN PARALELO: cada una en su copia del repo (git worktree) y su rama; la principal mergea (to-do 251).
+// tools/worktree.mjs — SESIONES EN PARALELO: cada una en su copia del repo (git worktree) y su rama; la principal mergea.
 //
 // POR QUÉ (ok de Guido, 2026-10-17). Con dos sesiones en la misma carpeta cada una tenía que cuidarse de no commitear lo de la otra, y
 // los worktrees probados antes terminaban en conflictos. Dos causas: (1) todas editaban TODO, CHANGELOG y ESTADO; (2) cada carga regenera
@@ -33,7 +33,7 @@ const OTROS_GENERADOS = ['data/sponsors.js', 'data/sponsors-indice.js', 'data/en
 const GENERADO = (f) => f === 'index.html' || f === 'fuentes.html' || f === 'sitemap.xml' || f.startsWith('fuentes/') || f.startsWith('club/') || f.startsWith('liga/') || f.startsWith('og/') || f === 'Admin/ESTADO-clubes.md'
   || f === 'data/club-index.js' || f.startsWith('data/rankings/') || f.startsWith('data/faltantes/') || f === 'Admin/sourcing/pendientes.md' || f.startsWith('data/estimados/')
   || OTROS_GENERADOS.some((p) => f === p || f.startsWith(`${p}/`))
-  || /^data\/[a-z]{2}\/[a-z0-9-]+-data\.js$/.test(f); // el -data.js se genera de su JSON (to-do 245): un conflicto ahí se resuelve con el JSON mergeado y generar-data
+  || /^data\/[a-z]{2}\/[a-z0-9-]+-data\.js$/.test(f); // el -data.js se genera de su JSON: un conflicto ahí se resuelve con el JSON mergeado y generar-data
 const DOCS_PRINCIPAL = ['Admin/TODO.md', 'Admin/CHANGELOG.md', 'Admin/ESTADO.md'];
 // Lo que escribe cada corrida de lote.mjs o pipeline.mjs para sus propias etapas: cada carpeta tiene el suyo. Enlazado a la principal, dos
 // lotes que corrían a la vez en worktrees distintos se pisaban la lista de la etapa 7 (2026-10-19: el lote 103 categorizó dos años de Basel y
@@ -49,7 +49,7 @@ function preparar(destino) {
     // Ni una carpeta con su propio .git (git la lista entera, con / al final) ni lo de .claude/worktrees/ (los otros worktrees, que en la
     // principal figuran como ignorados): enlazarlos hacía fallar el comando.
     .filter((f) => !/(^|\/)\.DS_Store$/.test(f) && !f.endsWith('/') && !f.startsWith('.claude/worktrees/') && !ESTADO_DE_CORRIDA.includes(f)
-      && !f.startsWith('tools/node_modules/')); // (to-do 339) node_modules se enlaza ENTERO, abajo: archivo por archivo quedaba una carpeta a medias y el binding nativo de resvg no aparecía
+      && !f.startsWith('tools/node_modules/')); // node_modules se enlaza ENTERO, abajo: archivo por archivo quedaba una carpeta a medias y el binding nativo de resvg no aparecía
   let hechos = 0, ya = 0;
   // tools/node_modules (las dependencias de las tools, p. ej. @resvg/resvg-js de generate-club-pages.js): UN enlace a la carpeta de la principal. Sin esto un worktree no encuentra el
   // módulo y la carga se revierte sola (Bath). Si ya hay una carpeta real (a medias), no se pisa: se avisa.

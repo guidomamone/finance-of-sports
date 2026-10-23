@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/faltantes-liga.mjs — QUÉ CLUBES LE FALTAN A CADA LIGA POR AÑO, Y LA LISTA DE PENDIENTES DE SOURCING (to-do 266).
+// tools/faltantes-liga.mjs — QUÉ CLUBES LE FALTAN A CADA LIGA POR AÑO, Y LA LISTA DE PENDIENTES DE SOURCING.
 //
 // POR QUÉ (pedido de Guido, 2026-10-17). data/club-leagues/ dice en qué liga jugó cada club NUESTRO; no dice quién falta. El universo de
-// cada liga-año sale de la tabla de equipos de Wikipedia ya bajada en tools/club-league-reference/<iso2>.json (to-do 95). Cruzado con lo
+// cada liga-año sale de la tabla de equipos de Wikipedia ya bajada en tools/club-league-reference/<iso2>.json. Cruzado con lo
 // cargado (data/club-index.js), los PDF en mano (Clubes/, vía quien.mjs) y lo ya buscado (Admin/sourcing/<País>/<Club>.md), cada
 // club-año que jugó la liga queda en UN estado:
 //   cargado     el año está en el sitio.
@@ -173,7 +173,7 @@ export function calcular() {
     const faltan = []; let cargados = 0;
     for (const n of l.clubs) {
       const u = unir(l.iso, n, l.anio);
-      // posición final (to-do 270): el nombre de la lista de equipos en la tabla de posiciones de la misma página (mismo nombre, o la
+      // posición final: el nombre de la lista de equipos en la tabla de posiciones de la misma página (mismo nombre, o la
       // misma familia de nombres si es uno solo). Un club que no está en el sitio va por su nombre ("#Las Palmas"): lo usa el estimado de
       // club nuevo.
       if (l.posiciones) {

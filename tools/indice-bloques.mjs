@@ -30,7 +30,7 @@
 //   - Un estado transcripto como texto con los importes en otra línea que la etiqueta: no forma bloque (cada línea tiene que tener su importe).
 //     Lo detecta localizar ("no encuentro el estado") -> cola humana con la página para mirar.
 //   - Cifras sin separador (menos de 1.000, o años): se cuentan como cifras si tienen 4+ dígitos; un "25" suelto no. Pero una línea que
-//     termina en 2+ números chicos ("Receitas financeiras 23 77 742") sí es fila (Versión 325).
+//     termina en 2+ números chicos ("Receitas financeiras 23 77 742") sí es fila.
 //   - Un hueco de más de 3 líneas, o con una línea de texto que trae cifras, corta el bloque: el resto queda como otro bloque (marcado
 //     `continuaDe` si está a 3 líneas o menos) o, si tiene menos de 3 filas, en ninguno. La etapa 6 lo frena (no cierra con el resultado).
 //
@@ -79,7 +79,7 @@ export function indiceBloques(md, { ampliado = false } = {}) {
     }
     // Bloque de texto con importes: 3+ líneas que terminan en importes, con huecos chicos en el medio (ver HUECOS abajo).
     // Una línea cuenta como fila si tiene letras, termina en número o ")" y: tiene un importe (IMPORTE_RE), o termina en 2+ números chicos
-    // (columnas). Casos reales (Versión 325): Bahia 2021 pág. 8, "Receitas financeiras   23   77   742" (nota, 2021, 2020; ninguno con
+    // (columnas). Casos reales: Bahia 2021 pág. 8, "Receitas financeiras   23   77   742" (nota, 2021, 2020; ninguno con
     // separador ni de 4 dígitos) quedaba afuera del bloque del resultado; FC Midtjylland 2021 pág. 17, "Finansielle omkostninger 6 -950 -566"
     // (un solo espacio entre columnas: el .md no es -layout). Un año suelto al final ("31 de dezembro de 2020") es UN número, no dos.
     const COLS_CHICAS_RE = /\p{L}.*?(?:\s+\(?-?\d[\d.,]*\)?){2,}\s*$/u;
@@ -90,7 +90,7 @@ export function indiceBloques(md, { ampliado = false } = {}) {
     const soloNumeros = (k) => { const t = String(L[k] || '').trim(); return t && !/\p{L}/u.test(t) && (t.match(IMPORTE_RE) || []).length >= 2; };
     const previoEsTexto = (k) => { let j = k - 1; while (j >= 0 && !L[j].trim()) j--; const t = String(L[j] || '').trim(); return j >= 0 && /\p{L}{2,}/u.test(t) && !/\d/.test(t); };
     const conImporte = (l, k = -1) => conImporteBase(l) || (ampliado && (conImporteBase(String(l).replace(/(\s+[-–—])+\s*$/, '')) || (k >= 0 && soloNumeros(k) && previoEsTexto(k))));
-    // HUECOS (Versión 325): hasta la 324 se toleraba UNA línea en blanco entre filas, y un renglón suelto entre dos encabezados de grupo se
+    // HUECOS: hasta la 324 se toleraba UNA línea en blanco entre filas, y un renglón suelto entre dos encabezados de grupo se
     // perdía. Caso real, Bahia 2021 pág. 8: "Itens extraordinários" / "Outras receitas (despesas), líquidas  22  64.283  (4.998)" / "" /
     // "Resultado financeiro": el renglón de 64.283 (más que todo el superávit, 27.751) no quedaba en ningún bloque (1 fila < 3) ni en las 3
     // líneas de arriba que ve extraer.mjs. Ahora se toleran hasta 3 líneas de hueco si son blancas, hasta DOS líneas de texto sin dígitos
@@ -98,7 +98,7 @@ export function indiceBloques(md, { ampliado = false } = {}) {
     // impairment of intangible assets and property, plant" / "and equipment" debajo del renglón danés), o un número suelto de 1-3 dígitos
     // (el número de página impreso que pdftotext dejó en el medio: Midtjylland pág. 17, un "2" entre dos renglones del resultado). El título
     // de otro estado en la misma página no entra porque su subtítulo trae la fecha ("para os exercícios findos em 31 de dezembro de 2021").
-    // Medición sobre las 2.249 transcripciones (Versión 325): ninguna pierde filas; ver Admin/CHANGELOG.md.
+    // Medición sobre las 2.249 transcripciones: ninguna pierde filas; ver Admin/CHANGELOG.md.
     const huecoHasta = (j) => {
       let k = j; let textos = 0;
       while (k < L.length && k - j < 3 && !conImporte(L[k], k)) {

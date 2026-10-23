@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/medir-pipeline.mjs — MIDE un cambio a las tools del pipeline ANTES y DESPUÉS y lo anota (TODO 371)
+// tools/medir-pipeline.mjs — MIDE un cambio a las tools del pipeline ANTES y DESPUÉS y lo anota
 // ============================================================================
 //
 // POR QUÉ: «no podés nunca jamás escribir algo que cambie el pipeline si no medís que no rompa algo anterior» (Guido, 2026-10-22). Una regla que
@@ -87,7 +87,7 @@ const modulosCambiados = nombres.filter((n) => !T.tools[n]);
 if (modulosCambiados.length) console.log(`Módulos que usan tools del pipeline (se miden con los medidores de quienes los usan): ${modulosCambiados.join(', ')}`);
 if (!nombres.length) { console.log('Ninguna tool del pipeline (ni módulo que usen) cambió respecto de ' + base + ': nada que medir.'); process.exit(0); }
 
-// ---- solo comentarios (TODO 374) ----------------------------------------------
+// ---- solo comentarios ----------------------------------------------
 // Si el código sin comentarios de cada tool es el de la base, no hay nada que ejercitar con un lote: la prueba es la comparación
 // (tools/comparar-sin-comentarios.js --tools: mismo código contra HEAD y node --check). Una mudanza de código sí pasa por los lotes.
 if (base === 'HEAD' && !A.includes('--ensayo') && !flag('--lote') && !flag('--medidor') && existsSync(resolve(ROOT, 'tools/patron.mjs')) && existsSync(resolve(ROOT, 'tools/comparar-sin-comentarios.js'))) {
@@ -222,7 +222,7 @@ function comparar(m, antes, despues) {
   return { n, lineas, textos };
 }
 
-// ---- resúmenes por medidor (TODO 386) ----------------------------------------
+// ---- resúmenes por medidor ----------------------------------------
 // Un medidor con `resumir` en la tabla cuenta qué cambió en vez de volcar cientos de líneas. `atencion` es lo que SÍ pide una razón escrita por la sesión
 // (un valor aceptado que cambia o se pierde; un aviso nuevo de la auditoría); lo demás (valores nuevos, avisos que desaparecen, una etiqueta distinta) queda explicado por el resumen.
 const RESUMIDORES = {

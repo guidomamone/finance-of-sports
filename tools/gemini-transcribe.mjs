@@ -85,7 +85,7 @@ const resultsPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'gemini.js
 const failuresPath = resolve(projectRoot, 'Admin', 'registros', 'api', 'gemini-fallidos.jsonl');
 const fidelidadScript = resolve(projectRoot, 'tools', 'check-transcripcion-fidelidad.js');
 
-// Corre tools/check-transcripcion-fidelidad.js (to-do 90) sobre el .md recién escrito. A diferencia
+// Corre tools/check-transcripcion-fidelidad.js sobre el .md recién escrito. A diferencia
 // de Mistral (motor de extracción), Gemini SÍ es un modelo de chat -- el mismo tipo de modelo que
 // produjo los placeholders en inglés del test de costo de Haiku (Admin/Archive/test-costo-transcripcion.md,
 // to-do 71) -- así que acá el chequeo tiene más chance real de encontrar algo, no es solo una
@@ -141,7 +141,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, op
   // PARALELO a Mistral (no como redo de un escaneo), sin pisar el .md de Mistral, así
   // compare-transcripts.mjs puede comparar los dos.
   const outSuffix = opts.outSuffix || '';
-  // Versión 317: con --out-suffix (una segunda voz, un rehacer, un test) el .md es un DERIVADO y va a Generados/ (tools/rutas.mjs); sin
+  // con --out-suffix (una segunda voz, un rehacer, un test) el .md es un DERIVADO y va a Generados/ (tools/rutas.mjs); sin
   // sufijo es LA transcripción del documento y queda al lado del PDF, en Clubes/.
   const mdPath = outSuffix ? derivado(pdfPath, outSuffix + '.md') : resolve(dirname(pdfPath), basename(pdfPath, extname(pdfPath)) + '.md');
   // `opts.redo`: --redo-mistral-scanned SÍ quiere pisar un .md que ya existe (el de Mistral).

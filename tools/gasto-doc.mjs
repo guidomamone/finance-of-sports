@@ -25,7 +25,7 @@ import { resolve } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const leer = (rel) => { const p = resolve(ROOT, rel); if (!existsSync(p)) return []; const out = []; for (const l of readFileSync(p, 'utf8').split('\n')) { if (!l) continue; try { out.push(JSON.parse(l)); } catch { /* línea rota */ } } return out; };
-const familia = (t) => String(t).replace(/-2$/, '').replace(/-tope-largo$/, '').replace(/-reintento$/, ''); // extraer-tope-largo (to-do 197) = otra vez extraer
+const familia = (t) => String(t).replace(/-2$/, '').replace(/-tope-largo$/, '').replace(/-reintento$/, ''); // extraer-tope-largo = otra vez extraer
 const fecha = (ts) => String(ts).slice(5, 16).replace('T', ' ');
 
 // docs: [pdf]; desde/hasta: ISO; registro: entradas del registro (para pasar de .md a .pdf); extra: { pdf: { tarea: usd } }.

@@ -181,7 +181,7 @@ const rotos = R.filter((e) => clave(e) === 'e1-roto');
 const reabrir = () => { if (!rotos.length) return; console.log('     Reabrir el sourcing (el archivo de fuentes todavía puede darlo por conseguido):'); for (const e of rotos.slice(0, 10)) { const [, pais, club] = e.pdf.split('/'); console.log(`       ${e.pdf}  ->  fuentes/${pais}/${club}.md`); } };
 ETAPAS.forEach((et) => { imprimirEtapa(et); if (et[0].startsWith('1.')) reabrir(); });
 for (const k of Object.keys(cuenta).filter((k) => !conocidas.has(k))) console.log(`  ${String(cuenta[k]).padStart(5)}  ${k === 'descartado' ? 'descartados como fuente (Admin/registros/documentos-descartados.txt; el lote los saltea)' : k === 'parcial' ? 'balances parciales, de menos de 12 meses (Admin/registros/documentos-parciales.txt; el lote los saltea hasta que aparezca el otro tramo)' : `(estado sin describir: ${k})`}`);
-// (to-do 190) cada parcial con lo que falta, en cada corrida: es el aviso para buscar el otro tramo en el sourcing.
+// cada parcial con lo que falta, en cada corrida: es el aviso para buscar el otro tramo en el sourcing.
 for (const [pdf, p] of PARCIALES) console.log(`         ${pdf.replace(/^Clubes\//, '')}: cubre ${p.cubre}; falta ${p.falta}`);
 console.log(`\n  Costo estimado para llevar todo hasta "propuesta de carga": ~US$ ${Math.round(total)} (API; sesión de Claude: 0 tokens)`);
 // PROCESO VIEJO, solo como referencia (Versión 448, decisión de Guido): los .rubros.json que armó pipeline.mjs (sin `origen`) no cuentan

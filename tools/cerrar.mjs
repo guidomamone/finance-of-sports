@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/cerrar.mjs — `fos cerrar <id>`: el cierre de una tarea en un comando (TODO 382)
+// tools/cerrar.mjs — `fos cerrar <id>`: el cierre de una tarea en un comando
 // ============================================================================
 // Cada cierre repetía a mano los mismos pasos y alguno se olvidaba (el índice de los .md, la entrada del CHANGELOG, el ESTADO). Este comando:
 //   1. corre la auditoría (antes) y cierra el punto del TODO (`todo.mjs --cerrar`; si su «Verificar:» no se cumple, lo dice y sigue con el resto),

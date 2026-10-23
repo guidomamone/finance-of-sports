@@ -155,7 +155,7 @@ function etiquetaEnSegundaColumna({ columns, rows }) {
   return { columns: [columns[1] ?? '', ...(columns.slice(2) || [])], rows: rows.map((r) => ({ ...r, rawLabel: String(r.values[0] ?? '').trim(), codigo: r.rawLabel, values: r.values.slice(1) })) };
 }
 
-// Versión 312: una tabla cuyo título quedó en otra tabla o en un bloque de metadatos (Baník 1997: "VÝKAZ ZISKŮ A ZTRÁT" arriba, la tabla
+// una tabla cuyo título quedó en otra tabla o en un bloque de metadatos (Baník 1997: "VÝKAZ ZISKŮ A ZTRÁT" arriba, la tabla
 // con encabezados "Označení | TEXT | čís. řád.") no tenía nada relevante en su sección ni en sus columnas, pero sus FILAS son "Tržby...",
 // "Náklady...". Si al menos 3 etiquetas de fila tienen una palabra de ingresos/gastos/resultado, se marca `filasDeResultados`. NO cambia
 // `likelyRelevant`: probado así, balances y notas se volvían relevantes y los rubros explotaban (Real Madrid 32 -> 253, Polissya 0 -> 200).

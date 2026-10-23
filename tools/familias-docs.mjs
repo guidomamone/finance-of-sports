@@ -1,5 +1,5 @@
 // ============================================================================
-// tools/familias-docs.mjs — la FAMILIA de un documento: país × formato (TODO 371).
+// tools/familias-docs.mjs — la FAMILIA de un documento: país × formato.
 //
 // POR QUÉ: un cambio a una tool puede romper un país o un formato entero sin que una lista de prueba lo vea si esa familia casi no está en la
 // lista. `medir-pipeline.mjs` exige al menos 3 documentos de cada familia afectada, y `lotes-prueba.mjs` arma las listas con cupo por familia.

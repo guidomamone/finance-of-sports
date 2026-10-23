@@ -11,7 +11,7 @@
 // "data/entidades/ desactualizado: _grupos-detalle.js".
 // (sesión única) Se sumaron generate-fuentes-index.js, auditoria.mjs (los dos los verifica audit.js como P1 pero no los corría nadie: una carga que los dejaba viejos se revertía entera)
 // e indice-md.mjs (el índice de los .md, escribe por defecto). audit.js avisa `generador-sin-correr` si un generador que verifica no está en esta lista.
-// (TODO 371) tools/lotes-prueba.mjs: los lotes de prueba (Admin/lotes/prueba-*.txt) se regeneran solos al cerrar cada carga, estratificados por familia; antes se corría a mano y se olvidaba.
+// tools/lotes-prueba.mjs: los lotes de prueba (Admin/lotes/prueba-*.txt) se regeneran solos al cerrar cada carga, estratificados por familia; antes se corría a mano y se olvidaba.
 //            audit.js avisa `lote-prueba-desfasado` (P2) si una familia cargada no tiene documentos en la mediana.
 // queFalla(salida de audit.js): las claves de los chequeos P0 y P1 que fallaron ("faltantes-desfasado"), para decir en el aviso CUÁL.
 // ============================================================================
