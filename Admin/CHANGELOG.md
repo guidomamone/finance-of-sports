@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 991 — La prueba de escritura cubre más tools y el cierre de turno comprueba el diff [401]
+
+- `prueba-escribir.mjs`: además de `cargar.mjs`, escribe de verdad (worktree descartable, datos de HEAD) `caja-deuda --personal [--partir]`, `recategorizar-etiquetas`, `generar-correcciones`, `ajustes --agregar` y `publicar`. Con el re-export de `cargar.mjs` quitado, falla. Medidor `escribir` asignado a `cargar.mjs`, `caja-deuda.mjs`, `publicar.mjs` y `recategorizar-etiquetas.mjs` (medido: idéntico).
+- Hook `stop.mjs`: al cerrar el turno comprueba, contra el transcript, que cada commit de los últimos 30 minutos que tocó una skill o un documento de criterio tiene su `show_pane` del diff; si no, frena.
+
 ## Versión 990 — La medición de la taxonomía (`fos categorias`) y su aviso de vencimiento [403 · 404]
 
 - `tools/uso-categorias.mjs` (`fos categorias`): por lado, deporte, categoría y subcategoría, club-años, clubes, países y peso (mediana, máximo, club-años con 5 % o más), y las etiquetas del catch-all que llegan al umbral de abrir una categoría (20 club-años, 5 clubes, 3 países). Hoy (331 clubes): una sola, «Otros Ingresos» (genérica); ninguna etiqueta con nombre propio llega, así que los `catchall-dominante` con nombre son casos de a uno. Anotado como la primera revisión («taxonomía: sin cambios»).

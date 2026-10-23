@@ -9,7 +9,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 79, `Admin/Archive` 353, 
 
 ## CLAUDE.md y Admin
 
-- `CLAUDE.md` · ~10 KB · instrucciones permanentes del proyecto (se carga sola) · **leer:** siempre · ←32 · →CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
+- `CLAUDE.md` · ~10 KB · instrucciones permanentes del proyecto (se carga sola) · **leer:** siempre · ←33 · →CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/ARQUITECTURA.md` · ~70 KB · cómo funciona el motor de Finanzas y los scripts que escriben data/ · **leer:** al tocar el motor (js/finanzas-*) o los scripts que escriben data/; la sección que toca · ←9 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/CHANGELOG.md` · ~230 KB · qué cambió y cuándo (la última semana; lo anterior está en Archive) · **leer:** solo por grep de una palabra, nunca de corrido · ←26 · →CLAUDE.md, ARQUITECTURA.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md
 - `Admin/CONTRATO-ETAPAS.md` · ~10 KB · qué archivo lee y escribe cada etapa del pipeline, qué lo deja viejo y con qué comando se rehace · **leer:** antes de tocar algo que pasa de una etapa a otra (un arreglo local a una etapa no lo necesita) · ←5 · →PIPELINE.md
