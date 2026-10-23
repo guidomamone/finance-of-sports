@@ -289,7 +289,7 @@ function comandoQueEdita(cmd) {
   const py = /(?:^|[;&|]\s*)python3?\s+(?:-[ce]\b|-\s*<<)/.test(cmd) && PY_ESCRIBE.test(cmd);
   if (!sedPerl && !py) return;
   try { appendFileSync(join(cwd, 'Admin', 'registros', '.hooks-disparos.jsonl'), JSON.stringify({ ts: new Date().toISOString(), chequeo: 'comando-que-edita', cmd: cmd.slice(0, 120) }) + '\n'); } catch { /* sin carpeta */ }
-  decidir('deny', 'Editá con Edit o Write; una transformación en masa va en un archivo de script que se corre.');
+  decidir('deny', 'Editá con Edit o Write. Para el mismo texto en muchos archivos, o una lista de cambios exactos por línea: node tools/fos.mjs reemplazar (ensayo por defecto; --de/--a, --regex, --solo-comentarios, --lista cambios.json, --escribir).');
 }
 
 function pushConOk(cmd) {

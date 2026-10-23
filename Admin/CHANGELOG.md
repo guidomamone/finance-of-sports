@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 978 — `fos reemplazar`: edición en masa sin que el hook la rechace [392]
+
+- `tools/reemplazar.mjs` (`node tools/fos.mjs reemplazar <archivo …> --de … --a … [--regex] [--solo-comentarios] [--escribir]` y `--lista cambios.json`): el mismo texto en varios archivos (solo dentro de comentarios si se pide, con el `scan` del comparador) o una lista de cambios exactos por línea (la forma que hizo falta en el 374); ensayo por defecto con archivo:línea y antes/después; si un cambio de la lista falla no se escribe ningún archivo; se niega a escribir un archivo con cambios sin commitear. Prueba de 8 casos en `probar-reemplazar.mjs`. El rechazo del hook a `sed -i`/`python`/`node -e` ahora la nombra. Herramienta de orden (`no_pipeline`).
+
 ## Versión 977 — `limpiar-comentarios --revisar`: lo que una limpieza quitaría con contenido [395]
 
 - `node tools/limpiar-comentarios.mjs --revisar [--min 3] [--rev <commit>]`: por línea de comentario que la limpieza cambiaría, cuenta las palabras que quita y que no son referencia, fecha ni atribución, e imprime las que llegan a `--min` (archivo:línea y las palabras) para leerlas antes de `--escribir`; `--rev` lo corre sobre las tools como estaban en un commit. Sobre las tools anteriores a la primera pasada lista 79 líneas (casi todas punteros a un HANDOFF o a un paso, ninguna del caso «KNVB para la Eredivisie…», que la regla ya deja).
