@@ -24,8 +24,16 @@ const PAREN_CON_RESTO = new RegExp(`\\s*\\((?=[^()]{0,90}\\))[^()«»"]*?(?:${RE
 // «TODO 371: …» o «to-do 345 — …» (con una letra de sub-punto: «to-do 298 l:») al empezar el comentario
 const INICIO = new RegExp(`^((?://|/\\*+|\\*)\\s*)${REF}(?:\\s+[a-z]\\d?)?\\s*[:—-]\\s*`, 'i');
 
+// El paréntesis se va solo si, sin las referencias, las fechas y quién lo aprobó, quedan 4 palabras o menos («fase 2», «cambio B», «auditoría del pipeline»):
+// con más es información («KNVB para la Eredivisie…, decisión de Guido, 2026-10-19») y se deja para limpiar a mano.
+const ATRIBUCION = /\b(?:ok|aprobad[oa]s?|decidid[oa]s?|decisión|diseño|escalón|aprobación)\b[^,;:)]*\bGuido\b[^,;:)]*/gi;
+function soloHistoria(paren) {
+  const resto = paren.replace(new RegExp(ALGO, 'gi'), ' ').replace(ATRIBUCION, ' ').replace(/[(),;:·—-]/g, ' ');
+  return resto.split(/\s+/).filter((p) => /[\p{L}\p{N}]/u.test(p)).length <= 4 ? '' : paren;
+}
+
 export function limpiarTexto(texto) {
-  const t = texto.split('\n').map((l) => l.replace(PAREN, '').replace(PAREN_CON_RESTO, '').replace(INICIO, '$1')).join('\n');
+  const t = texto.split('\n').map((l) => l.replace(PAREN, '').replace(PAREN_CON_RESTO, soloHistoria).replace(INICIO, '$1')).join('\n');
   return t !== texto && /^\/\/\s*$/.test(t) ? '' : t; // un comentario que la limpieza dejó vacío se va (los «//» de separación que ya estaban, no)
 }
 
