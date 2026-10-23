@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1006 — `fos partir-fases`: la herramienta con la que se partieron `proponer()` y `verificar()` [399 · partir-fases.mjs, lexico-js.mjs, fos-comandos.json]
+
+- `tools/partir-fases.mjs` + `tools/lexico-js.mjs`: parte una función enorme en fases que comparten un `ctx` sin cambiar el texto de cada tramo, avisa de una reasignación entre fases, reescribe a `ctx.N` las variables compartidas y no deja cortar en medio de un bloque (`--mapa` lista dónde se puede; `--proxy` genera la versión estricta). Quedan fuera de la tabla del pipeline (`no_pipeline`).
+- Medición: no es una tool del pipeline; su resultado se midió en los tres cortes anteriores (idéntico).
+
 ## Versión 1005 — `verificar()` partida en 13 fases con un `ctx` [399 · verificar.mjs]
 
 - `verificar()` (1.623 líneas) queda en ~25: `faseEntrada`, `faseArmar`, `faseVecinos`, `faseLecturas`, `faseEvaluar`, `faseEscalones`, `faseEscalonesD`, `faseCierre`, `faseAnioAnterior`, `faseDudas`, `faseRespuestas`, `faseResultadoFinal` y `faseSalida` (la mayor, `armar()`, 324). Las 27 variables `let` que se reasignan entre fases o dentro de una función (`E`, `ing`, `gas`, `okRes`, `escalon17`, `forzado`, …) viven en el `ctx` y cada uso se escribe `ctx.N`; el resto pasa por copia.
