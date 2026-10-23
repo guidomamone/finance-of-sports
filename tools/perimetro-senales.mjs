@@ -1,7 +1,7 @@
 // ============================================================================
 // tools/perimetro-senales.mjs — PROPUESTA DE PERÍMETRO (individual o consolidado) para un documento, con señales y voto.
 //
-// POR QUÉ (2026-10-06, lote 14, los 12 clubes italianos nuevos). tools/antes-de-localizar.mjs frena todo documento que trae estados
+// POR QUÉ (lote 14, los 12 clubes italianos nuevos). tools/antes-de-localizar.mjs frena todo documento que trae estados
 // consolidados y cuyo club no tiene años cargados, y pide un ajuste `perimetro` sin decir cuál. El detector de alta-club.mjs CUENTA
 // MENCIONES de "consolidato": 5 de 12 clubes frenaron por un falso positivo (Torino, Sassuolo, Monza, Napoli, Sampdoria: las menciones
 // son del grupo dueño del club, no un estado del club). Y donde el documento trae los dos, nadie le dice a Guido cuál conviene.
@@ -280,7 +280,7 @@ async function preguntarJev(texto, deporte) {
 //   puntos >= UMBRAL_A2_CONS (4) → consolidado · <= UMBRAL_A2_IND (2) → individual · 3 → cola. Las tres pistas débiles suman 3 como
 //   máximo: sin el título o el texto del estado nunca sale consolidado (OB 2021: auditor + grupo, con los pesos 2 y 1 y umbral 3, salía
 //   consolidado y es individual). Medido en Admin/mediciones/perimetro-a2-medicion.txt (75 documentos de 15 clubes fuera de Italia): 46 bien,
-//   0 errores de A2 (los 2 que no coinciden son de Trabzonspor, donde el ajuste del club está mal: to-do 226).
+//   0 errores de A2 (los 2 que no coinciden son de Trabzonspor, donde el ajuste del club está mal).
 // Si Claude dice que el documento trae además un estado de resultados del otro perímetro, o que la tabla del estado trae columnas de los
 // dos (OB: "Koncern" y "Moderselskab" en la misma tabla) → cola: no hay totales reconocidos para el paso B, y el perímetro del club decide. Los pesos y umbrales se ajustan midiendo (Admin/mediciones/perimetro-a2-*.txt), nunca por un caso suelto.
 // Respuestas guardadas en Generados/_cache/claude-perimetro.jsonl (no se paga dos veces). ~US$ 0,02 por documento (Opus, esfuerzo bajo).

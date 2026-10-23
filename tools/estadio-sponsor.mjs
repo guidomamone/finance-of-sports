@@ -391,11 +391,11 @@ async function main() {
   const { CI, CL, CLUBS, LEAGUES, cache, alias } = cargar();
   // LIGA AMATEUR: un año en una liga amateur (la del catálogo nombra "amateur": las tres divisiones
   // amateur belgas) pasa la compuerta sin sponsor, con el estadio cargado; en esas ligas no hay fuente que diga el sponsor por temporada
-  // (decisión de Guido, 2026-10-19, traída por Onboarding 2: "En la Eerste Divisie alcanza el estadio, como en las ligas amateur") la
+  // (decisión de Guido: "En la Eerste Divisie alcanza el estadio, como en las ligas amateur") la
   // Eerste Divisie neerlandesa tampoco tiene fuente del sponsor por temporada: sus páginas de en.wikipedia no traen la tabla de camisetas
   // (frenaban 11 altas del lote 93: ADO Den Haag, De Graafschap, FC Den Bosch, FC Dordrecht, FC Eindhoven, FC Volendam...).
-  // (decisión de Guido, 2026-10-19: lo mismo para la 1. divisjon noruega: Fredrikstad 2013-2017.)
-  // (to-do 298 b3, votación de Patro Eisden 2015, opción C, ok de Guido 2026-10-20) la segunda división belga (be-challengerproleague, también cuando se llamaba
+  // (decisión de Guido: lo mismo para la 1. divisjon noruega: Fredrikstad 2013-2017.)
+  // (votación de Patro Eisden 2015, opción C, ok de Guido) la segunda división belga (be-challengerproleague, también cuando se llamaba
   // Second Division) tampoco tiene fuente del sponsor por temporada: alcanza el estadio.
   const SOLO_ESTADIO = new Set(['nl-eerstedivisie', 'no-1divisjon', 'no-2divisjon', 'be-challengerproleague']);
   const amateur = (liga) => !!liga && (SOLO_ESTADIO.has(liga) || /amateur/i.test(`${LEAGUES[liga]?.name || ''} ${LEAGUES[liga]?.full || ''}`));
@@ -567,7 +567,7 @@ async function main() {
     if (d?.estadio && aliasEst[e.id]?.[d.estadio]) d.estadio = aliasEst[e.id][d.estadio];
     // lo manual gana, campo por campo; sin fuente no vale
     const m = manual[e.id]?.[e.y];
-    // (to-do 298 b3, REGLA de CONVENCIONES-DATOS "un dato de contexto sin fuente pública queda en null", ok de Guido 2026-10-20) `"sin-fuente": { "<campo>": "dónde se buscó" }`
+    // (REGLA de CONVENCIONES-DATOS "un dato de contexto sin fuente pública queda en null", ok de Guido) `"sin-fuente": { "<campo>": "dónde se buscó" }`
     // en contexto-manual.json: el campo (estadio, capacidad, sponsor o marca) queda en null y cuenta como RESUELTO para la compuerta (no frena). Vale solo con el texto de dónde
     // se buscó; un campo que sí tiene valor no se pisa.
     // El SPONSOR no se resuelve con un texto: hace falta el registro de búsqueda ({ buscado, por, intentos }, tres clases sin contar Wikipedia) o, para los
@@ -624,7 +624,7 @@ async function main() {
     if (faltan.some((f) => f.includes('sin lista'))) console.log('Un ejercicio "sin lista": primero la lista de equipos de esa liga-año (node tools/listas-lote.mjs), y se vuelve a probar.');
     // Wikidata como CANDIDATO (no se escribe solo): coincide con el valor revisado a mano en ~43 % de los casos, difiere de nombre en ~17 % (nombres por época) y no tiene dato en el resto
     // (Admin/HALLAZGOS-pipeline.md). Un candidato con su cita ahorra la búsqueda web, que es lo que cuesta tokens y a veces sale mal.
-    // MEDIDO (TODO 367, tools/medir-segunda-fuente.mjs, Admin/HALLAZGOS-pipeline.md): aun «confirmado» por el artículo del club, el estadio de Wikidata coincide con el manual en 70 % de los
+    // MEDIDO (tools/medir-segunda-fuente.mjs, Admin/HALLAZGOS-pipeline.md): aun «confirmado» por el artículo del club, el estadio de Wikidata coincide con el manual en 70 % de los
     // casos; el resto es el MISMO estadio con otro nombre (Wikidata da el actual: SMH Group Stadium era Proact; Swissporarena era thermoplan arena). Por eso NO se escribe solo: el candidato dice
     // qué estadio es y la sesión (o el agente de `dato-publico.mjs --prompt estadio`) verifica el nombre que tenía ESE año.
     if (soloClub && faltan.some((f) => /falta[^:]*estadio|falta estadio/i.test(f))) {

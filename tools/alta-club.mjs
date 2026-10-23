@@ -17,7 +17,7 @@
 //      inventario-transcripciones.mjs, pipeline.mjs y audit.js): (a) algún
 //      `data/<país>/<id>-data.js` o su evidencia (`Admin/carga-clubes/<id>.md`) cita la carpeta `Clubes/<País>/<Club>/` -> ese club; (b) si
 //      no, el nombre de la carpeta es IGUAL al de un club del mismo país; (c) si no,
-//      club nuevo. Hasta la Versión 309 este script tenía su propia regla (citas +
+//      club nuevo. Antes este script tenía su propia regla (citas +
 //      `onboard.mjs --quien` + desempate por país) y onboard.mjs otra: se reemplazó
 //      para que no haya dos respuestas posibles para la misma carpeta. (Contexto: el
 //      registro de transcripciones daba ~205 carpetas "sin cargar" y 17 eran clubes que
@@ -68,7 +68,7 @@
 // DE DÓNDE SALE CADA CAMPO (y qué decide solo y qué NO)
 // ----------------------------------------------------------------------------
 // id               slug del nombre de la carpeta + '-' + ISO2 del país (convención
-//                  de la Versión 129, `Admin/CONVENCIONES.md`: 'agf-dk',
+//                  de `Admin/CONVENCIONES.md`: 'agf-dk',
 //                  'racingsantander-es'). `pregunta` si choca con un id existente.
 // displayName      el nombre de la carpeta (que ya es el nombre corto legible que
 //                  eligió el sourcing), sin lo que vaya entre paréntesis.
@@ -122,7 +122,7 @@
 //                  EXACTA del nombre normalizado, única, y con la liga en el
 //                  catálogo -> `ok`. Coincidencia parcial ("OFI Crete" / "OFI") o liga
 //                  fuera del catálogo -> `pendiente` con la duda en `nota` (hasta el
-//                  2026-09-30 era `pregunta`: con la caché de rosters creciendo, más
+//                  era `pregunta`: con la caché de rosters creciendo, más
 //                  datos daban MENOS clubes listos, 21 carpetas frenadas solo por esto,
 //                  y la fila en `null` es la verdad mientras nadie lo confirme). Sin caché
 //                  para esa liga-temporada -> `pendiente` y la fila se escribe en `null`
@@ -195,7 +195,7 @@
 //     primera prueba de `--escribir`, que se revirtió sola por eso). Subirlo regenera las
 //     ~165 páginas `fuentes/<clubId>.html`, que leen la constante: es esperado.
 //   - Corre los generadores de `tools/generadores.mjs` (los mismos que cargar.mjs, con
-//     faltantes-liga y estimar: to-do 298 x), y después
+//     faltantes-liga y estimar), y después
 //     `node tools/audit.js --quiet`. Si sale con P0/P1 (el aviso dice cuál), RESTAURA cada archivo que
 //     cambió y borra cada archivo que creó (snapshot previo de `data/`, las páginas
 //     de fuentes, el sitemap y los dos documentos generados de `Admin/`).
@@ -229,7 +229,7 @@
 //        elegido no sirve de base —no es un balance anual, no se le saca el año— prueba
 //        hasta 4 candidatos) y recalcula SOLO las carpetas cuya huella cambió.
 //        ~5 s para 212 carpetas. --forzar recalcula todo; --solo <texto> filtra.
-//        Las carpetas cuyo club YA está en el sitio pasan a `existe` (Versión 641; antes su línea vieja quedaba congelada).
+//        Las carpetas cuyo club YA está en el sitio pasan a `existe` (antes su línea vieja quedaba congelada).
 //   node tools/alta-club.mjs --todos --claude [--tope-usd 1]
 //        además manda a Claude las preguntas de documento todavía sin preguntar
 //        (primero las carpetas que Claude puede dejar listas). Reusa respuestas ya
@@ -304,8 +304,8 @@ const PAISES = {
   'Croacia':         { iso2: 'HR', moneda: 'EUR', region: 'europa', en: 'Croatia', legado: { codigo: 'HRK', desde: 2023, tokens: ['hrk', 'kuna', 'kuna', 'kn'] } },
   'Dinamarca':       { iso2: 'DK', moneda: 'DKK', region: 'europa', en: 'Denmark' },
   'Ecuador':         { iso2: 'EC', moneda: 'USD', region: 'sudamerica', en: 'Ecuador' },
-  // Escocia NO tiene ISO2 propio (es parte de GB): va como GB, igual que Inglaterra, Gales e Irlanda del Norte (decisión de Guido,
-  // 2026-10-18, to-do 298 i). El sitio muestra GB como "Inglaterra" con la bandera inglesa: el nombre y la bandera son de pantalla.
+  // Escocia NO tiene ISO2 propio (es parte de GB): va como GB, igual que Inglaterra, Gales e Irlanda del Norte (decisión de Guido).
+  // El sitio muestra GB como "Inglaterra" con la bandera inglesa: el nombre y la bandera son de pantalla.
   'Escocia':         { iso2: 'GB', moneda: 'GBP', region: 'europa', en: 'Scotland' },
   'España':          { iso2: 'ES', moneda: 'EUR', region: 'europa', en: 'Spain', legado: { codigo: 'ESP', desde: 2002, tokens: ['pesetas', 'ptas', 'esp'] } },
   'Estonia':         { iso2: 'EE', moneda: 'EUR', region: 'europa', en: 'Estonia', legado: { codigo: 'EEK', desde: 2011, tokens: ['eek', 'kroon', 'krooni'] } },
@@ -398,7 +398,7 @@ const MONEDAS = {
 };
 // Monedas casi a la par del dólar: por el número solo no se puede saber si el
 // documento escribió "moneda por USD" o "USD por moneda" (1,08 es EUR/USD al
-// derecho o al revés según quién lo escriba). El bug de España de la Versión 111
+// derecho o al revés según quién lo escriba). El bug de España de una versión anterior
 // fue exactamente esto. Un fx declarado en estas monedas siempre es `pregunta`.
 const MONEDAS_A_LA_PAR = new Set(['EUR', 'GBP', 'CHF']);
 
@@ -550,7 +550,7 @@ function cierreDelTexto(texto) {
   return { mes: +mesTop, n: nTop, total: fechas.length, share, anio, porMes };
 }
 
-// La fecha que trae el propio nombre del archivo (OFI_FS_2025-06-30, Genoa-bilancio-30.06.2024,
+// La fecha que trae el propio nombre del archivo (OFI_FS_AAAA-MM-DD, Genoa-bilancio-30.06.2024,
 // trabzonspor-...-31-05-2021), si es un fin de mes.
 function cierreDelNombre(nombre) {
   const f = fechasFinDeMes(nombre.replace(/_/g, ' '));
@@ -620,7 +620,7 @@ function numerosDe(linea) {
 }
 
 // REGLA #0 de club-data-mapping/referencia/fx.md: ¿el documento declara su propio tipo de cambio a USD?
-// COMPUERTA DE FECHA (Versión 373, escalera del tipo de cambio aprobada por Guido el 2026-10-02): una cotización cuya frase (la línea y sus
+// COMPUERTA DE FECHA (escalera del tipo de cambio aprobada por Guido): una cotización cuya frase (la línea y sus
 // vecinas) trae una fecha completa que NO es la del cierre no es la de cierre: es la de una operación. Se descarta y la escalera sigue (tabla,
 // serie oficial). Caso real: Fortaleza CEIF 2025, L534 "El 20 de noviembre del año 2025, se realizó un traslado de dineros ... por USD
 // 150.000 a la TRM de $ 3.716,73": se tomaba como declarado; la TRM oficial al 31-12-2025 es 3.757,08. Una cotización SIN fecha en su frase
@@ -728,7 +728,7 @@ const FUENTE_SERIE = { ARS: 'Dólar mayorista BCRA', BRL: 'PTAX de cierre (venda
   JPY: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', CNY: 'Noon buying rate de Nueva York (Reserva Federal, H.10)', MXN: 'Noon buying rate de Nueva York (Reserva Federal, H.10)',
   PEN: 'Tipo de cambio del BCRP, publicado por el Banco de Pagos Internacionales' };
 // Monedas cuya cotización de un cierre es la del PRIMER día con dato POSTERIOR (la serie publica el valor de un día al día siguiente). Mismo
-// criterio que `diaCierre: 'siguiente'` en tools/lookup-fx-close.js (Versión 339; verificado para CLP contra los cierres declarados de UC y
+// criterio que `diaCierre: 'siguiente'` en tools/lookup-fx-close.js (verificado para CLP contra los cierres declarados de UC y
 // Palestino). Si se agrega otra moneda con esa convención, va en los dos lugares.
 const FX_DIA_SIGUIENTE = new Set(['CLP']);
 function fxDeSerie(moneda, fecha) {
@@ -889,7 +889,7 @@ export function analizar(docArg, sitio, ov = {}) {
   // ---------------------------------------------------------------- ¿ya existe?
   // UNA sola regla en todo el proyecto: cita en algún
   // data/<país>/<id>-data.js o en su evidencia (Admin/carga-clubes/<id>.md) -> ese club; si no, nombre IGUAL a un club del mismo país; si no, club nuevo.
-  // Hasta la Versión 309 este script tenía su propia versión (mapa de citas + `onboard.mjs --quien` +
+  // Antes este script tenía su propia versión (mapa de citas + `onboard.mjs --quien` +
   // desempate por país) y onboard.mjs otra distinta: dos reglas que podían dar respuestas distintas
   // para la misma carpeta. Ahora las dos (y audit.js, que vigila que la regla sea inequívoca) usan esta.
   const res = clubDeCarpeta(paisCarpeta, clubCarpeta);
@@ -1278,7 +1278,7 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
     // VARIOS VALORES EN UNA TABLA: gana la columna con la fecha MÁS NUEVA. Caso real, UC 2025, línea 797:
     // "Dólar Estadounidense 907,13 996,48" debajo de "Conversiones a pesos chilenos 31-12-2025 31-12-2024": gana 907,13. Solo se usa si hay
     // más de un valor (con uno solo no cambia nada) y solo si la fila y el encabezado se corresponden uno a uno (ver fechaDeColumna); si no,
-    // sigue como antes y termina en la pregunta (cola). Ver la medición en Admin/CHANGELOG.md, Versión 328.
+    // sigue como antes y termina en la pregunta (cola). Ver la medición en Admin/CHANGELOG.md.
     const conFecha = grupos.length > 1 ? grupos.flatMap((g) => g.items.map((i) => ({ g, f: fechaDeColumna(md, i) || fechaDeBloque(md, i) }))).filter((x) => x.f) : [];
     const fechas = [...new Set(conFecha.map((x) => x.f))].sort();
     const masNueva = fechas.length >= 2 ? conFecha.filter((x) => x.f === fechas[fechas.length - 1]) : [];
@@ -1319,7 +1319,7 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
   return out;
 }
 
-// Palabras genéricas de nombre de club que no identifican al club (Versión 315, pedido de Guido: "AC Milan y Milan son lo mismo, ídem
+// Palabras genéricas de nombre de club que no identifican al club (pedido de Guido: "AC Milan y Milan son lo mismo, ídem
 // OFI Crete y OFI"): se sacan de los dos lados antes de comparar por palabras.
 const GENERICAS = new Set(['fc', 'ac', 'sc', 'cf', 'afc', 'cfc', 'sk', 'fk', 'nk', 'hnk', 'gnk', 'pfc', 'nfc', 'bk', 'if', 'il', 'ik', 'ssc', 'us', 'as', 'ss', 'cd', 'ud', 'sd', 'ca', 'club', 'calcio', 'fotball', 'fotbal', 'futebol', 'football', 'fussball', 'tj', 'jk', 'spor', 'kulubu', 'sv', 'vfb', 'vfl', 'tsv', 'fsv', 'rsc', 'kv', 'kaa', 'kvc', 'krc', 'sport', 'de', 'the', 'and', 'a', 's', 'as']);
 // Los nombres de lista de Wikipedia que alias.json da como el MISMO club (normalizados como en proponerLiga)
@@ -1959,7 +1959,7 @@ function perimetroCargado(nota) {
 }
 
 // Perímetro revisado A MANO donde la heurística de palabras de perimetroCargado() se equivoca (leyendo la
-// cabecera del data file y la nota de la fuente, 2026-09-30):
+// cabecera del data file y la nota de la fuente):
 //   fckobenhavn-dk 2024: la nota dice "distinta de la holding consolidada PARKEN (no cargada)": se cargó la
 //     entidad de fútbol sola, que NO consolida ("der ikke udarbejdet koncernregnskab") -> individual.
 //   osijek-hr 2025: se cargó el informe COMBINADO (NK Osijek s.d.d. + FM 20 d.o.o. + la escuela) -> grupo.

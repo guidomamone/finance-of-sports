@@ -221,8 +221,8 @@ function checkTieOuts(api) {
     if (ym.officialTotalExpenses != null) cmp('Expenses', Math.abs(c.expenses + c.nonCash), Math.abs(ym.officialTotalExpenses), 'expenses');
     if (ym.officialPAT != null) cmp('PAT', c.pat, ym.officialPAT, 'pat');
 
-    // OJO CON LA CONDICIÓN, Y POR QUÉ NO ALCANZA CON "es un balance y no tiene PAT" (to-do 20(a),
-    // 2026-09-20). Este chequeo tiraba 11 hallazgos y 10 eran de la misma clase y no eran
+    // OJO CON LA CONDICIÓN, Y POR QUÉ NO ALCANZA CON "es un balance y no tiene PAT".
+    // Este chequeo tiraba 11 hallazgos y 10 eran de la misma clase y no eran
     // accionables: los 10 clubes de la J.League publican el INGRESO de cada club y no su
     // estructura de costos, así que tienen `officialTotalExpenses: null`. Un ejercicio del que no
     // se publican los gastos NO PUEDE tener un resultado que cargar — pedirle el PAT es pedirle un
@@ -270,7 +270,7 @@ function checkCategorias(api) {
   // cuánto de eso terminó sumando. Una categoría que existe en la taxonomía pero
   // que `computeYearGeneric()` no toca en ninguna rama hace desaparecer plata de
   // TODO el sitio en silencio (KPI Gastos, EBITDA, PAT, deuda, comparar gestiones).
-  // Es exactamente el bug de la Versión 53 con las 3 categorías nuevas de Racing,
+  // Es exactamente el bug que ya hubo con las 3 categorías nuevas de Racing,
   // que se encontró de casualidad; esto lo encuentra siempre.
   // por cada deporte con taxonomía: el club sintético lleva su `sport` (el motor lee la genérica y el bloque de SPORT_TAXONOMIES[sport]).
   const PROBE = '__sonda_de_auditoria__', YEAR = 9999;
@@ -305,7 +305,7 @@ function checkCategorias(api) {
   }
 }
 
-// --- to-do 248: la capa genérica (data/category-map.js, SPORT_TAXONOMIES) -----------------------------------------------------
+// --- la capa genérica (data/category-map.js, SPORT_TAXONOMIES) -----------------------------------------------------
 // taxonomia-incompleta (P1): una subcategoría sin genérica, una genérica que no existe o sin bloque, o una línea cargada cuyo par
 // (lado, subcategoría) no está en el mapa: su JSON no se podría escribir (tools/json-datos.mjs exige el par).
 // fila-parte-generica (P2): una genérica cuyas subcategorías caen en dos filas de Formato simplificado; la pantalla y la capa genérica
@@ -559,7 +559,7 @@ function checkMoneda(api) {
 // --- CAJA Y DEUDA DESPROPORCIONADAS ---------------------------
 // Un techo por proporción con los ingresos del mismo año, solo hacia arriba: caja más de 3 veces los ingresos o deuda más de 20 veces es un
 // error de escala o de fila, no un dato. Medido en lo cargado: el máximo real de caja es 2,53 veces (Atlético Mineiro 2023) y
-// el de deuda 13,7 veces (Novorizontino 2015). Casos que frena (corrida de caja-deuda.mjs del 2026-10-16, revertidos a mano): Hellas
+// el de deuda 13,7 veces (Novorizontino 2015). Casos que frena (corrida de caja-deuda.mjs, revertidos a mano): Hellas
 // Verona 2024 deuda 1,8e16; Milan 2009 deuda 163.739 M; Inter 2021 caja 97.884 M; Lazio 2008-2019. P1: caja-deuda.mjs y cargar.mjs
 // revierten solos lo que lo pase. PISO de caja, el mismo de caja-deuda.mjs: menos de 7e-5
 // veces los ingresos es una tabla en miles leída en unidades (Porto 2016 4,8e-5, Milan 2008 2e-5, Lazio 2001 1,5e-6). Las cajas chicas de
@@ -598,7 +598,7 @@ function checkLigasPorEjercicio(api) {
 // para una sola cosa: que una sesión decida QUÉ ABRIR y qué no, antes de
 // gastar el token de abrirlo. Un número 3 veces más chico que el archivo real
 // hace exactamente lo contrario de lo que la tabla promete. Medido en la
-// auditoría de docs del 2026-09-20: `club-sourcing` decía 33 KB y pesaba 91, y
+// una auditoría de docs: `club-sourcing` decía 33 KB y pesaba 91, y
 // `Admin/CHANGELOG.md` decía 68 y pesaba 189 — los dos archivos que más conviene NO
 // abrir de corrido, anunciados como si fueran livianos.
 // Es P3 porque no rompe nada y no publica un número malo; sale igual en cada
@@ -610,9 +610,9 @@ function checkLigasPorEjercicio(api) {
 // POR QUÉ ESTO ES UN CHEQUEO Y NO ALGO QUE SE MIRA A OJO. netlify.toml (Versión
 // 173) explica su propia razón de ser con un caso real: `financeofsports.com/
 // CLAUDE.md` devolvía 200 hasta que se armó el `rm` que lo saca del artefacto de
-// deploy. Después hubo DOS casos más del mismo problema: la Versión 175 encontró
+// deploy. Después hubo DOS casos más del mismo problema: uno encontró
 // `PROMPT-generador-indice-fuentes.md` (creado en la misma sesión que escribió la
-// advertencia, nunca sumado a la lista), y la reorganización de la Versión 196
+// advertencia, nunca sumado a la lista), y la reorganización de los documentos internos
 // encontró `COMO-CORRE-EL-PROYECTO.html` SERVIDO EN PRODUCCIÓN — un documento
 // escrito para Guido, que este mismo chequeo no veía porque solo miraba `.md`.
 // O sea: "acordate de agregarlo" ya falló tres veces.
@@ -729,12 +729,12 @@ function checkComentariosPublicados() {
 // --- D17b: el párrafo que explica netlify.toml, copiado en 3 archivos, con -
 //     números que se desincronizan ----------
 // POR QUÉ. `CLAUDE.md`, `Admin/ESTADO.md` y `Admin/CONVENCIONES.md` explican los
-// tres la misma mecánica de netlify.toml ("YA NO ES CIERTO DESDE EL 2026-09-20:
+// tres la misma mecánica de netlify.toml ("YA NO ES CIERTO:
 // AHORA SÍ HAY netlify.toml...") con el mismo párrafo copiado a mano, y cada uno
 // nombra cuántas páginas `fuentes/<clubId>.html` se publican y cuántas notas
 // `fuentes/**/*.md` quedan afuera del deploy. Un crecimiento de clubes actualiza
 // esos números en UN archivo (el que tocó la sesión que cargó el club) y dos
-// quedan atrás — encontrado de verdad el 2026-09-26: `CONVENCIONES.md` seguía
+// quedan atrás — encontrado de verdad: `CONVENCIONES.md` seguía
 // diciendo "41 páginas" / "613 notas" mientras `CLAUDE.md` ya decía 161/655.
 // QUÉ VERIFICA: en cada archivo que tenga el párrafo, que sus dos números
 // coincidan con el conteo real de `fuentes/*.html` y `fuentes/**/*.md`.
@@ -776,7 +776,7 @@ function checkParrafoNetlifyDuplicado() {
 }
 
 // --- D18: rutas de archivo que ya no existen --------
-// POR QUÉ. La reorganización de la Versión 196 movió 11 documentos y actualizó 203
+// POR QUÉ. La reorganización de los documentos internos movió 11 documentos y actualizó 203
 // referencias en 31 archivos. Esa verificación se hizo con un script de una sola
 // corrida, y una sola referencia olvidada manda a una sesión futura a un archivo que
 // no está, sin que nada se queje. No es hipotético: este chequeo, la primera vez que
@@ -1039,7 +1039,7 @@ function checkRayaLarga() {
 // cualquier subida de ASSET_V las desactualiza a todas — sin tocar un solo dato,
 // sin que nada se vea roto, y dejando al visitante con el JS nuevo en el sitio y
 // el viejo de su caché en la página de fuentes, que es EXACTAMENTE el estado en
-// el que la Versión 125 tiró `ReferenceError` en toda la página.
+// el que una vez tiró `ReferenceError` en toda la página.
 //
 // Cuesta 0,2s para los 4 (cada uno levanta su propio proceso). Medido.
 //
@@ -1107,7 +1107,7 @@ function checkCorreccionesSinMotivo() {
   } catch (e) { /* si el generador falla, lo dice correcciones-desfasado */ }
 }
 
-// --- D18: los rankings precalculados (Versión 182, to-dos 23(c) y 33) ------
+// --- D18: los rankings precalculados ------
 // POR QUÉ ESTE CHEQUEO ES LA CONDICIÓN PARA QUE `data/rankings/` PUEDA EXISTIR.
 // Ese directorio es lo único del proyecto que guarda NÚMEROS DE PLATA copiados
 // de otro lado: `data/club-index.js` también es generado, pero copia metadatos
@@ -1162,7 +1162,7 @@ function checkRankings(api) {
   const destacados = sandbox.DESTACADOS || [];
   const rankings = sandbox.RANKINGS || {};
 
-  // "Hasta 10" es la decisión de Guido del 2026-09-22, y es editorial: una
+  // "Hasta 10" es decisión de Guido, y es editorial: una
   // portada con 20 rankings deja de ser una vidriera. P2 porque nada está MAL,
   // simplemente dejó de cumplirse el criterio con el que se diseñó la pantalla.
   if (destacados.length > 10) {
@@ -1198,7 +1198,7 @@ function checkRankings(api) {
 // --- D14: el espacio de nombres de clubId ---------------------------------
 // `clubId` nombra el archivo de datos (`data/<país>/<clubId>-data.js`, por convención de loadClubData()) y prefija cada sourceId.
 // Formato: `<slug>-<iso2>`, con el `country` de clubs.js (Admin/CONVENCIONES-DATOS.md, "Identidad del club"). Los ids que no lo cumplían
-// se renombraron en el to-do 246; los viejos viven en `data/club-aliases.js` para siempre, y `alias-roto` vigila ese mapa.
+// se renombraron; los viejos viven en `data/club-aliases.js` para siempre, y `alias-roto` vigila ese mapa.
 function checkClubIds(api) {
   for (const id of Object.keys(api.clubs)) {
     const iso = (api.clubs[id].country || 'xx').toLowerCase();
@@ -1247,7 +1247,7 @@ function checkReferenciaAClub(api, aliasesDeIds) {
 // viejo cuesta tres cosas (el archivo data/<país>/<id>-data.js, el clubId y el prefijo de cada
 // sourceId) y encima ya se transcribió el documento del club nuevo. Esto mira el escalón
 // anterior: los clubes que alguien está SOURCEANDO, que viven en Admin/sourcing/_indice/<País>.md
-// desde la Versión 158, y avisa el día que uno de ellos empieza a amenazar a un id pelado.
+// y avisa el día que uno de ellos empieza a amenazar a un id pelado.
 //
 // QUÉ SE REPORTA Y QUÉ NO, que es la parte que se midió antes de escribirlo:
 //   - Comparación EXACTA del nombre normalizado, nunca difusa. Medido sobre los 530 clubes
@@ -1259,7 +1259,7 @@ function checkReferenciaAClub(api, aliasesDeIds) {
 //     ese es el que obliga a una migración. Hoy son 0 y el chequeo calla, que es lo
 //     correcto.
 //   - Los pares entre dos clubes trackeados (ninguno cargado) van en UNA línea agregada,
-//     no una por par: no obligan a nada hoy, y desde la Versión 129 un club nuevo ya nace
+//     no una por par: no obligan a nada hoy, y un club nuevo ya nace
 //     con el país en el id.
 const INDICE_FUENTES = path.join(ROOT, 'Admin/sourcing/_indice');
 
@@ -1445,7 +1445,7 @@ function checkCarpetasClubes() {
 }
 
 // Un archivo bajado que no es lo que dice su extensión (Admin/propuestas/archivo-no-es-lo-que-dice.md, ok de Guido). Caso: Brøndby 2025,
-// aarsrapport-2025-06-30.xhtml venía comprimido con gzip (el depósito lo sirvió así) y ninguna tool lo leía; nadie lo vio hasta medir los XHTML.
+// aarsrapport-AAAA-MM-DD.xhtml venía comprimido con gzip (el depósito lo sirvió así) y ninguna tool lo leía; nadie lo vio hasta medir los XHTML.
 // Un .pdf, .xhtml o .xml de Clubes/ cuyos primeros bytes son gzip (1f 8b) o Zip (PK\3\4), o un .pdf que es una página HTML (de error o de login),
 // salvo que al lado exista <base>-descomprimido.<ext> (la copia que se lee; el original queda). Solo esas tres firmas: un PDF con basura antes
 // de %PDF lo lee poppler igual y no es este caso. Lee 64 bytes por archivo (sigue los enlaces de un worktree preparado).
@@ -1475,7 +1475,7 @@ function checkArchivoNoEsLoQueDice() {
 
 // --- D13: qué de las fuentes se le muestra al visitante -------
 // `sources[].note` es una nota INTERNA: una sesión se la escribe a la siguiente, con
-// rutas del repo, cómo se leyó el PDF y qué quedó pendiente. En la Versión 126 se
+// rutas del repo, cómo se leyó el PDF y qué quedó pendiente. Una vez se
 // publicó tal cual, y el visitante terminó leyendo "PDF subido directamente por Guido"
 // y rutas de su disco. Esto vigila las dos mitades de ese arreglo: que lo público no
 // filtre nada interno, y que nadie vuelva a renderizar `note` sin darse cuenta.
@@ -1542,7 +1542,7 @@ function checkTodo() {
 // --- D12: procedencia del tipo de cambio ---------------------
 // `checkMoneda()` revisa que el fx EXISTA y sea plausible. Esto revisa de DÓNDE
 // SALIÓ: si lo declara el documento, si es una cotización de mercado, o si nadie
-// lo sabe. Antes de la Versión 125 eso vivía en prosa y no se podía chequear.
+// lo sabe. Antes eso vivía en prosa y no se podía chequear.
 function checkFxProcedencia(api) {
   const fueraDeTabla = [];
   let sinProcedencia = 0;
@@ -1638,13 +1638,13 @@ function checkCategorizacion(api) {
 
 // --- S: escalabilidad -------------------------------------------------------
 function checkEscala(api) {
-  // El invariante del proyecto desde la Versión 102 es que NO hay ramas por club
+  // El invariante del proyecto es que NO hay ramas por club
   // en el código. Un `clubId` literal en index.html o en js/ es la primera grieta.
   const archivos = ['index.html', ...fs.readdirSync(path.join(ROOT, 'js')).filter(f => f.endsWith('.js')).map(f => 'js/' + f)];
   const ids = Object.keys(api.clubs);
   const hits = [];
   for (const rel of archivos) {
-    // Los comentarios HTML se blanquean ANTES de buscar (Versión 129, falso positivo
+    // Los comentarios HTML se blanquean ANTES de buscar (falso positivo
     // real): el comentario de cabecera de index.html eran 50 KB de prosa donde nombrar
     // `racing` o `boca` es lo normal, y cada mención se reportaba como si fuera una
     // rama por club en el código. Se reemplaza por líneas vacías, no se borra, para
@@ -1674,7 +1674,7 @@ function checkEscala(api) {
   const porClub = Math.round(bytesData / n);
   add('P3', 'proyeccion', `data/*.js: ${(bytesData / 1024).toFixed(0)} KB en ${n} clubes (~${(porClub / 1024).toFixed(1)} KB/club). A 1000 clubes: ~${(porClub * 1000 / 1024 / 1024).toFixed(1)} MB en disco; el que se baja por visita sigue siendo 1 (lazy load), pero clubs.js se carga entero SIEMPRE (hoy ${(fs.statSync(path.join(ROOT, 'data/clubs.js')).size / 1024).toFixed(0)} KB).`);
 
-  // UMBRALES POR CÓMO SE LEE EL ARCHIVO, no por tamaño a secas (Versión 140, decisión de
+  // UMBRALES POR CÓMO SE LEE EL ARCHIVO, no por tamaño a secas (decisión de
   // Guido después de plantearle el trade-off). Un archivo que se lee ENTERO paga su tamaño
   // en cada lectura: `index.html` lo baja cada visitante en cada pageview, y `Admin/ESTADO.md` y
   // `Admin/TODO.md` los lee entera cada sesión que arranca acá. Esos tienen umbral apretado.
@@ -1752,7 +1752,7 @@ function checkLigaDosFuentes(api) {
   for (const [liga, cs] of Object.entries(unaFuente).sort()) add('P3', 'liga-una-fuente', `${liga}: ${cs.length} club-año(s) con la liga de una sola fuente (Wikipedia) que salieron de una coincidencia no exacta o son nuevos: ${cs.slice(0, 6).join(', ')}${cs.length > 6 ? ', …' : ''}. La segunda: node tools/segunda-fuente-liga.mjs`);
 }
 
-// (Auditora 5, to-do 356; regla de Guido: lo que ya viene estructurado no se paga con IA) PAGO DE IA SOBRE UN DOCUMENTO DETERMINISTA. Un .md que escribió tools/xhtml-aarsrapport.mjs (primera línea: «motor: xhtml-ixbrl»)
+// (regla de Guido: lo que ya viene estructurado no se paga con IA) PAGO DE IA SOBRE UN DOCUMENTO DETERMINISTA. Un .md que escribió tools/xhtml-aarsrapport.mjs (primera línea: «motor: xhtml-ixbrl»)
 // trae sus cifras etiquetadas. P1 si un log de API (los que lee tools/gasto.mjs) registra, desde FRENO_DESDE, una llamada de localizar o extraer sobre uno de esos documentos sin que Admin/registros/pagar-ia-xhtml.jsonl
 // tenga antes la bandera `--pagar-ia-xhtml "<motivo>"` de lote.mjs para ese documento. Cuando exista el escalón que lee las etiquetas, el «sin la bandera» pasa a ser «sin haber corrido el escalón».
 const FRENO_DESDE = '2026-10-22T00:00:00Z';
@@ -1872,7 +1872,7 @@ function checkHigiene(api) {
     for (const m of gen.matchAll(/data-i18n(?:-title)?="([^"$]+)"/g)) usadas.add(m[1]);
   }
   // se suma js/selector.js (js/comparar-clubes.js estuvo en esta lista
-  // hasta la Versión 152, cuando ese archivo se borró). Sin esto el chequeo
+  // hasta que ese archivo se borró). Sin esto el chequeo
   // miraba 3 archivos fijos y las claves nuevas del selector y de la comparación no
   // se contaban, o sea que el chequeo pasaba mientras el visitante veía castellano.
   // Hoy se leen TODOS los `js/*.js` más index.html, así un archivo nuevo de js/ (js/principal.js, js/cuenta.js) no queda afuera. Salvo
@@ -1943,7 +1943,7 @@ function imprimir(api) {
 
 // `--fx`: la planilla de tipos de cambio, un renglón por club-ejercicio. El
 // resto del script reporta lo que está MAL; esto muestra lo que HAY, que es la
-// pregunta con la que nació el campo `fxSource` (Guido, Versión 125: "si yo
+// pregunta con la que nació el campo `fxSource` (Guido: "si yo
 // mañana quiero auditar los tipos de cambio usado para cada club para cada año
 // y entender si salieron de internet o del club"). Sale ordenado por moneda y
 // año para que dos clubes con el mismo cierre queden uno al lado del otro, que
@@ -2091,7 +2091,7 @@ function pruebaDeDeporte(api) {
   for (const f of malos) findings.push({ sev: 'P1', code: 'deporte-muestra', msg: `el club de muestra de ${MUESTRAS.find(id => f.msg.includes(id)).replace(/^muestra|-gb$/g, '')} da ${f.sev} ${f.code}: ${f.msg.slice(0, 220)}` });
 }
 
-// (to-do 317, aprobado por la Auditora 4) EJERCICIO SIN RASTRO. Un club-año entre el primer ejercicio cargado de un club y el más reciente cargado de su país que ni está
+// (aprobado por la Auditora) EJERCICIO SIN RASTRO. Un club-año entre el primer ejercicio cargado de un club y el más reciente cargado de su país que ni está
 // cargado ni figura en data/faltantes/ con ningún estado (buscado, en-mano, sin-buscar: esos ya tienen su lugar). Cubre el hueco entre dos ejercicios y la cola hasta el último año del país.
 // P3 por club, con la lista de años. Se silencia por club en tools/audit-ignore.json, con motivo, después de mirarlo. Medido al nacer: 84 club-años en 51 clubes (24 de hueco y 60 de cola).
 const { temporada: temporadaDe } = require('./temporada.js'); // la misma que usa tools/faltantes-liga.mjs

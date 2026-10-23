@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/lote.mjs — EL PROCESO NUEVO de punta a punta sobre un LOTE CHICO (5 PDFs), para ir refinando y viendo dónde hace falta la cola humana.
 //
-// POR QUÉ (Versión 324; pedido de Guido el 2026-10-01: "la idea es hacer 5 PDFs juntos e ir refinando y viendo dónde se necesita cola humana;
+// POR QUÉ (pedido de Guido: "la idea es hacer 5 PDFs juntos e ir refinando y viendo dónde se necesita cola humana;
 // vos me podés decir 'revisar tal cosa en el PDF y tal otra en el md' y yo abro el PDF por mi cuenta o la transcripción; arrancar por los
 // clubes para los cuales ya tenemos transcripción pero no están cargados"). El proceso entero, con riesgos y mitigaciones etapa por etapa,
 // está en Admin/PIPELINE.md.
@@ -63,14 +63,14 @@ const LISTA = flag('--lista'); const EJECUTAR = ARGS.includes('--ejecutar'); con
 const SIN_API = ARGS.includes('--sin-api'); const API = EJECUTAR && !SIN_API;
 const CARGAR = ARGS.includes('--cargar');
 let frenaSinApi = () => {}; // se define abajo, cuando existe `estado` // al final, tools/cargar-lote.mjs: altas, cargas y un commit por año (ensayo sin --ejecutar)
-// --reintentar (Versión 336, CAMINO DE ERROR: decisión de Guido, las reglas extra son "para cuando haya errores"): solo los documentos cuya
+// --reintentar (CAMINO DE ERROR: decisión de Guido, las reglas extra son "para cuando haya errores"): solo los documentos cuya
 // última verificación marcó desgloses que no suman (verificacion.reintentar) vuelven a localizar con el índice ampliado (filas que terminan
 // en "-") y a extraer con la lista de lo que no sumó. Una sola vez por documento (después queda `reintentado`). El resto del lote no se toca.
 const REINTENTAR = ARGS.includes('--reintentar');
 // --detalle: QUIÉN ENTRA al escalón 1 de la etapa 3 (el reintento).
 // Un desglose que no suma en un documento cuya etapa 6 CERRÓ (verificación "ok") no bloquea la carga: el año se carga igual, con el renglón
 // sin abrir. Ese reintento es DETALLE OPCIONAL y solo entra con --reintentar --detalle. Sin --detalle entran los que destraban la carga:
-// categoría en 0, o desglose que no suma con la etapa 6 sin cerrar. Caso: un --reintentar del 2026-10-04 sobre Juventus 2022-2024 volvió a
+// categoría en 0, o desglose que no suma con la etapa 6 sin cerrar. Caso: un --reintentar sobre Juventus 2022-2024 volvió a
 // localizar y extraer 2022-23 y 2023-24, que verificaban ok (US$ 0,79 de más). Sirve igual para UC 2013 (el caso del índice ampliado),
 // cuya etapa 6 no cerraba.
 const DETALLE = ARGS.includes('--detalle');
@@ -157,7 +157,7 @@ for (let i = docs.length - 1; i >= 0; i--) { const e = registro.find((x) => x.pd
     for (const [c, ds] of varios) console.log(`  ${c}: ${ds.length} ejercicios (${ds.map((d) => d.split('/').pop()).join(', ')})`);
   }
 }
-// FRENO DE IA SOBRE UN DOCUMENTO DETERMINISTA (Auditora 5, to-do 356; regla de Guido: lo que ya viene estructurado no se paga con IA, Admin/propuestas/estructurado-sin-ia.md). Un .md que escribió
+// FRENO DE IA SOBRE UN DOCUMENTO DETERMINISTA (regla de Guido: lo que ya viene estructurado no se paga con IA, Admin/propuestas/estructurado-sin-ia.md). Un .md que escribió
 // tools/xhtml-aarsrapport.mjs (primera línea: «motor: xhtml-ixbrl (determinista)») trae sus cifras etiquetadas; localizar y extraer con IA es plata tirada si el escalón que lee las etiquetas puede
 // cerrarlo. Mientras ese escalón no exista, --ejecutar NO paga IA sobre esos documentos salvo con --pagar-ia-xhtml "<motivo>" (la bandera es el apagado: queda en
 // Admin/registros/pagar-ia-xhtml.jsonl con el motivo y los documentos, y audit.js da P1 si gasto.mjs registra una llamada paga sin ella). El ensayo dice, por documento, que hoy iría por IA.
@@ -176,7 +176,7 @@ if (docsXhtml.length) {
   }
 }
 // silencioso: para las tools que se llaman solo por su efecto y imprimen un resumen de TODO el proyecto (inventario-transcripciones.mjs
-// imprimía ~150 líneas del registro entero en medio de la etapa 7; Versión 327). Si fallan, se muestra su salida igual.
+// imprimía ~150 líneas del registro entero en medio de la etapa 7). Si fallan, se muestra su salida igual.
 const node = (tool, argv, { silencioso = false } = {}) => {
   const r = spawnSync('node', [resolve(ROOT, tool), ...argv], { cwd: ROOT, stdio: silencioso ? 'pipe' : 'inherit', encoding: 'utf8' });
   if (silencioso && r.status !== 0) process.stdout.write(`${r.stdout || ''}${r.stderr || ''}`);
@@ -250,7 +250,7 @@ for (const pdf of docs) {
   // documento queda "listo" -> sigue. Si no, el escalón 1b de abajo (rearmar con el texto propio) como antes. Hasta acá el lote iba directo
   // al rearmado, que con la marca "dígito distinto" reescribía TODAS las páginas por un código postal (Juventus 2017-18: "10121 Torino"
   // contra "10151 Turin"; 1 página con cifras dudosas de 117). Se llama como comando aparte: una sola versión de la lógica.
-  // ETAPA 2, ESCALÓN 1a, "SIN VERIFICAR" (Versión 463, grupo C de los defectos chicos, aprobado por Guido el 2026-10-04): el .md cambió
+  // ETAPA 2, ESCALÓN 1a, "SIN VERIFICAR" (grupo C de los defectos chicos, aprobado por Guido): el .md cambió
   // después de su última validación (desde la V443, el registro dice qué páginas). Antes de localizar (que se paga) va la validación GRATIS
   // del inventario (números del .md contra el texto del PDF), solo para la carpeta del club: si queda "listo", sigue; si queda "revisar",
   // el resolver de abajo (que paga solo las páginas cambiadas). Corre también en el ensayo: es gratis. Hasta acá un "sin verificar" iba
@@ -282,7 +282,7 @@ for (const pdf of docs) {
   // 5.867,804). Solo por "categoría en 0" de su propuesta de carga, y solo si esa propuesta es posterior al último ajuste manual (si no, es
   // vieja: Goiás 2025 y 2017 se reprocesaron por una propuesta anterior a sus ajustes cero-real, US$ 0,45). Caso que sí: Fortaleza 2017,
   // sueldos en 0 (Admin/Archive/lotes/lote-08b.txt).
-  // (Versión 461, grupo A de los defectos chicos, aprobado por Guido el 2026-10-04) AL DÍA POR DOCUMENTO: la propuesta es vieja solo si hay un
+  // (grupo A de los defectos chicos, aprobado por Guido) AL DÍA POR DOCUMENTO: la propuesta es vieja solo si hay un
   // ajuste manual del MISMO documento o de su CLUB con fecha igual o posterior al día de la propuesta (mismo día = vieja, igual de prudente
   // que antes). Hasta acá se comparaba con la fecha del archivo de ajustes ENTERO: un ajuste de Novorizontino dejaba "vieja" la propuesta
   // de Fortaleza 2017 y su reintento no corría (86 de 87 propuestas de prueba-completa contaban como viejas; por documento y club, 58).
@@ -310,7 +310,7 @@ for (const pdf of docs) {
   const ubAntes = leerDerivado(e, '.ubicacion.json');
   const candidatoNotas = REINTENTAR && ubAntes && !ubAntes.intentoNotasComoEstado && (ubAntes.sin_estado || !(ubAntes.estado || []).length)
     && (ubAntes.notas_ingresos || []).length && (ubAntes.notas_gastos || []).length && (String(e.motor || '').includes('mistral') || e.retranscritoPorLote || paginasEnImagen(pdf).length < 2);
-  // CON AJUSTE MANUAL (Versión 370, idea de Guido: "el camino de error es ¿tiene un ajuste manual? si está, aplicarlo; si no, seguir la
+  // CON AJUSTE MANUAL (idea de Guido: "el camino de error es ¿tiene un ajuste manual? si está, aplicarlo; si no, seguir la
   // escalera"): un documento que quedó como fuente y tiene un ajuste `resultado-final` con línea repite UNA vez las notas como estado, con el
   // dato del ajuste como pista para localizar. Casos: Fortaleza CEIF 2018 y 2019.
   // PERÍMETRO, ESCALÓN 0 EN LA ETAPA 3: el ajuste manual `perimetro` (del documento
@@ -426,7 +426,7 @@ for (const pdf of docs) {
     console.log(`  ${pdf}: ${estado[pdf]}${costoMistral ? ` · Mistral ~US$ ${costoMistral.toFixed(2)} + localizar y extraer ~US$ 0,15` : ''}`);
     continue;
   }
-  // En el ensayo, validar y extraer TAMBIÉN van en ensayo (hasta la Versión 326 iban con ejecutar: true fijo: con localizar ya hecho, el
+  // En el ensayo, validar y extraer TAMBIÉN van en ensayo (antes iban con ejecutar: true fijo: con localizar ya hecho, el
   // ensayo llamaba a extraer de verdad y gastaba). validar en un PDF digital es gratis y corre igual; en un escaneo estima.
   // Las filas se rehacen si son de otra localización (relocalizar cambió columna, bloques o escala) y la validación si es
   // de otra versión del .md (una cifra corregida a mano). Un año cargado no se toca. Lo mismo deciden cargar.mjs (validación) y extraer (huella).
@@ -497,7 +497,7 @@ for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).start
   if (!r.error) for (const c of r.chequeos) console.log(`  ${pdf.split('/').slice(2).join('/')}: ${c.ok === true ? 'ok' : c.ok === false ? 'NO' : '-'} ${c.nombre}: ${c.detalle}`);
 }
 
-// (to-do 214, escalón 3 del primer año) los documentos que verificar dejó con el pedido a Claude pendiente: se pregunta y se vuelven a
+// (escalón 3 del primer año) los documentos que verificar dejó con el pedido a Claude pendiente: se pregunta y se vuelven a
 // verificar, para que la respuesta confirme el año (o deje el caso con la cita) en esta misma corrida.
 {
   const pend214 = docs.filter((d) => String(estado[d]).startsWith('verificado') && leerDerivado(registro.find((x) => x.pdf === d) || { md: d.replace(/\.pdf$/i, '.md') }, '.verificacion.json')?.primerAnio?.estado === 'pendiente');
@@ -553,7 +553,7 @@ if (aRetranscribir.length) {
   for (const x of aRetranscribir) console.log(`  ${x.pdf.split('/').slice(2).join('/')}: páginas ${x.paginas.join(', ')}`);
   console.log(`  Re-transcribir con Mistral y volver a localizar (~US$ 0,004 por página + localizar y extraer): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
 }
-// Camino de error: qué documentos quedaron para reintentar (Versión 442: en dos bloques, lo que destraba la carga y el detalle opcional).
+// Camino de error: qué documentos quedaron para reintentar (en dos bloques, lo que destraba la carga y el detalle opcional).
 const yaEnSitio = (e) => e.cargado || propuestaEnSitio(e);
 const motivos = (xs) => xs.map((x) => (x.categoria ? `"${x.categoria}" en 0` : `"${x.renglon}" ${x.suma} contra ${x.objetivo}`)).join('; ');
 const aReintentar = []; const aDetalle = [];
@@ -581,7 +581,7 @@ if (GD.length) { console.log('\nGASTO POR DOCUMENTO (esta corrida; "N.ª vez" = 
 avisoCorrecciones();
 console.log(`\nGastado: US$ ${usd.toFixed(2).replace('.', ',')} en localizar y extraer (la categorización: node tools/gasto.mjs).${cola.length ? ` ${cola.length === 1 ? 'Quedó 1 pregunta' : `Quedaron ${cola.length} preguntas`} en la cola: no tenés que hacer nada, ${cola.length === 1 ? 'la contesta' : 'las contesta'} Claude.` : ''}`);
 
-// RESULTADO (Versión 351, pedido de Guido: "que al final de la corrida diga 'Frenados X' 'Listo para cargar Y'"). Lee la última propuesta de
+// RESULTADO (pedido de Guido: "que al final de la corrida diga 'Frenados X' 'Listo para cargar Y'"). Lee la última propuesta de
 // carga (<doc>.carga.json) de CADA documento de la lista, no solo de los que pasaron por la etapa 8 en esta corrida (en un --reintentar la
 // etapa 8 corre solo sobre los reintentados). "Ya en el sitio" va aparte: un año ya cargado frena por diseño (cargar.mjs no pisa un
 // ejercicio), y contarlo como frenado escondería los frenados de verdad.
@@ -648,7 +648,7 @@ if (CARGAR) {
   escritos = (String(r.stdout || '').match(/: escrito y commiteado/g) || []).length;
 }
 
-// TABLA FINAL "Dónde quedó cada PDF de la lista" (pedido de Guido, 2026-10-15; título del to-do 237 r): cada documento de la lista una sola vez, en la etapa más temprana donde frenó.
+// TABLA FINAL "Dónde quedó cada PDF de la lista" (pedido de Guido): cada documento de la lista una sola vez, en la etapa más temprana donde frenó.
 // Solo lee lo que ya se calculó arriba (la propuesta de carga de cada documento) y lo escrito por la etapa 8: no cambia nada.
 {
   const filas = new Map(); const sumar = (k, n = 1) => filas.set(k, (filas.get(k) || 0) + n);

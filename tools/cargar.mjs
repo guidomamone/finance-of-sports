@@ -5,7 +5,7 @@
 //     node tools/cargar.mjs "Clubes/Países Bajos/PSV/PSV-Jaarverslag-2019-2020.pdf"            # propuesta (default): no escribe el sitio
 //     node tools/cargar.mjs "<pdf>" --escribir                                                  # escribe, audita y revierte si algo falla
 //
-// POR QUÉ EXISTE (pedido de Guido, 2026-09-30, to-do 108 sección 3b y to-do 112): el pipeline (tools/pipeline.mjs) llevaba un PDF hasta la
+// POR QUÉ EXISTE (pedido de Guido): el pipeline (tools/pipeline.mjs) llevaba un PDF hasta la
 // categorización de sus rubros (etapa 5, `<md>.categorias.json`) y ahí se cortaba: el ejercicio lo cargaba a mano una sesión de Claude. Esta
 // herramienta es el paso que faltaba, SOLO para el caso fácil que decidió Guido: un AÑO NUEVO de un club que YA existe en el sitio (el alta de
 // clubes nuevos es tools/alta-club.mjs y este script no la encadena: si el club no existe, frena). Quien sí encadena el alta y hace un commit
@@ -26,10 +26,10 @@
 //     que usa el alta (`analizar()` de tools/alta-club.mjs: nombre del archivo confirmado por las fechas de cierre del contenido) y de
 //     `quien.mjs --quien` (el que usa el registro): si no coinciden, frena. Si el club ya tiene ese año en su fiscalYearMeta, frena.
 //  3. FILAS Y MONTOS: las de la verificación (Generados/.../<doc>.verificacion.json, etapa 6), con el signo y el lado que decidió
-//     verificar.mjs. Hasta el to-do 218 había además una selección por palabras (proponer-carga.mjs, archivada).
+//     verificar.mjs. Había además una selección por palabras (proponer-carga.mjs, archivada).
 //     Todo en MILLONES de moneda nativa (convención del sitio, club-data-mapping/referencia/fx.md).
 //  4. CATEGORÍA DE CADA FILA: la del `.categorias.json` del pipeline (escalón 0 precedente del club, 1 Jev >= 0,90, 2 Claude >= 0,80). Si
-//     la fila no está en esa lista (hasta la Versión 320 la etapa 3 del pipeline y la selección de filas de acá NO elegían las mismas filas:
+//     la fila no está en esa lista (antes la etapa 3 del pipeline y la selección de filas de acá NO elegían las mismas filas:
 //     Admin/mediciones/test-cargar.md 4.1; desde la 321 la etapa 3 prepara exactamente esta selección, así que esto pasa solo con listas viejas),
 //     se prueba el precedente del mismo club, exacto o por familia de etiquetas (precedenteFamilia(), gratis). Lo que queda sin categoría o con confianza baja
 //     NO se carga; si eso es más del --max-sin-categoria (default 5%) del dinero de su lado, frena.
@@ -59,14 +59,14 @@
 //     "## Fuentes" de Admin/carga-clubes/<club>.md; audit.js checkFuentesPublicas: las salvedades públicas las deriva sourceCaveats() de los campos). Y una línea en
 //     Admin/sourcing/<País>/<Club>.md si ese archivo existe.
 //
-// --escribir (solo si no quedó NINGÚN motivo para frenar, y si el ejercicio tiene estadio y sponsor: compuertaContexto(), to-do 273): escribe el año en el JSON del club (data/<país>/<club>.json: ingresos, gastos, meta y la fuente) y regenera su data/<país>/<club>-data.js,
+// --escribir (solo si no quedó NINGÚN motivo para frenar, y si el ejercicio tiene estadio y sponsor: compuertaContexto()): escribe el año en el JSON del club (data/<país>/<club>.json: ingresos, gastos, meta y la fuente) y regenera su data/<país>/<club>-data.js,
 // la fila de liga en data/club-leagues/<iso2>.js, la cotización de mercado nueva en FX_CLOSE si hace falta, la línea de fuentes/, sube
 // ASSET_V (la constante Y cada `?v=` literal de index.html, salvo que ya esté subido respecto de HEAD), corre los 4 generadores y
 // `node tools/audit.js --quiet`. Si la auditoría da algún P0/P1, o cualquier paso falla, RESTAURA cada archivo tocado y borra lo creado
 // (mismo mecanismo que alta-club.mjs). Este script solo NO commitea (el commit por año lo hace tools/cargar-lote.mjs). No toca `.claude/skills/`, `Admin/TODO.md` ni `CHANGELOG.md`.
 //
 // ----------------------------------------------------------------------------
-// MEDIDO (2026-09-30, informe completo en Admin/mediciones/test-cargar.md)
+// MEDIDO (informe completo en Admin/mediciones/test-cargar.md)
 // ----------------------------------------------------------------------------
 // Backtest de 18 ejercicios ya cargados (8 países, año borrado en un worktree y reconstruido con las etapas 3-5 reales): 1 carga (Alianza
 // Lima 2023, idéntico a producción, audit.js 0 P0/P1 al escribir) y 17 frenan, TODOS con algo mal en la propuesta o un dato faltante: el
@@ -149,7 +149,7 @@ const JSON_OUT = ARGS.includes('--json');
 const MAX_SIN_CAT = flagVal('--max-sin-categoria') !== null ? Number(flagVal('--max-sin-categoria')) : 0.05;
 const UMBRAL_CLAUDE = flagVal('--umbral-claude') !== null ? Number(flagVal('--umbral-claude')) : 0.8;
 // LAS FILAS SALEN DE LA VERIFICACIÓN: Generados/.../<doc>.verificacion.json (localizar -> validar -> extraer -> verificar), y
-// solo si quedó en estado 'ok' (sin casos pendientes en la cola humana). Hasta el to-do 218 había otro camino, sin --desde-verificacion: la
+// solo si quedó en estado 'ok' (sin casos pendientes en la cola humana). Había otro camino, sin --desde-verificacion: la
 // selección de filas por palabras de proponer-carga.mjs (seleccionarFilas + briefingFor, que corría prepare-onboarding.mjs). Ningún proceso
 // lo usaba (el lote y cargar-lote siempre pasan el flag) y se sacó con el ok de Guido; proponer-carga.mjs está en tools/archivo/.
 // El flag se sigue aceptando y no cambia nada.
@@ -219,7 +219,7 @@ export function perimetroHeredado(sitio, clubId) {
   const cab = perimetroDeTexto(header);
   return { porAnio, cabecera: cab, unico: vals.size === 1 ? [...vals][0] : null };
 }
-// El perímetro del año YA CARGADO más cercano a `year` (a igual distancia, el posterior: es el formato vigente). Versión 337, diseño aprobado
+// El perímetro del año YA CARGADO más cercano a `year` (a igual distancia, el posterior: es el formato vigente). Diseño aprobado
 // por Guido: un club puede cambiar de perímetro (UC: individual hasta 2021, consolidado desde 2022), así que se hereda del vecino, no de
 // "todos los años iguales" (con 2021 individual cargado, UC 2025 frenaba aunque 2022-2024 eran consolidados).
 export function perimetroCercano(her, year) {
@@ -309,7 +309,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (e.jev !== 'listo-para-jev' && !reemplaza) { frena('registro', `todavía no se puede categorizar: ${porQueNoListo(e)}`); frenosSinReemplazo.push(P.frena.at(-1)); }
   P.reemplaza = reemplaza;
   // El período se recalcula con tools/periodo.mjs sobre el .md actual: el del registro puede ser de una versión anterior de periodo.mjs
-  // (el arreglo de las temporadas "2009-10" del 2026-09-30 cambió 165 marcas `nombreNoCoincide`). Si difiere del registro, se avisa.
+  // (el arreglo de las temporadas "2009-10" cambió 165 marcas `nombreNoCoincide`). Si difiere del registro, se avisa.
   let per = e.periodo || null;
   // con ajuste manual `cierre`, el período del registro ya es el del ajuste (inventario-transcripciones.mjs): no se recalcula.
   if (!ajusteDe(pdf, 'cierre')) try { const mdT = readFileSync(resolve(ROOT, e.md), 'utf8'); const vivo = periodoDe(mdT, basename(pdf), { xhtml: xhtmlHermano(resolve(ROOT, e.md), mdT) }); if (per && (vivo.tipo !== per.tipo || !!vivo.nombreNoCoincide !== !!per.nombreNoCoincide)) P.avisos.push(`el período del registro (${per.tipo}${per.nombreNoCoincide ? ', nombre no coincide' : ''}) está desactualizado: tools/periodo.mjs hoy dice ${vivo.tipo}${vivo.nombreNoCoincide ? ', nombre no coincide' : ''} (regenerar el registro)`); per = vivo; } catch { /* sin .md: frena abajo */ }
@@ -319,13 +319,13 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   P.periodo = per;
   if (!per) frena('periodo', 'el registro no tiene `periodo` (tools/periodo.mjs) para este documento');
   else {
-    // PRIMER EJERCICIO DE UNA SOCIEDAD NUEVA (decisión de Guido, 2026-10-14; Admin/CONVENCIONES-DATOS.md, "Balances parciales"). Un período
+    // PRIMER EJERCICIO DE UNA SOCIEDAD NUEVA (decisión de Guido; Admin/CONVENCIONES-DATOS.md, "Balances parciales"). Un período
     // de menos de 12 meses es parcial (falta el otro tramo) SALVO que no haya otro tramo: la sociedad no existía antes, y como la liga no se
     // juega todos los meses, el período contiene la temporada entera. UNA compuerta, del propio documento: la columna del año anterior no tiene
     // ningún importe distinto de cero (o no existe) en las filas extraídas. Casos: Kifisia 2022 (09/08/2021 – 30/06/2022, sin columna) y Volos
     // 2019 (24/07/2018 – 30/06/2019, plantilla griega con la columna 2017-2018 toda en 0,00) se cargan; Atalanta 2022 (semestral, 147 importes
     // del año anterior) sigue parcial. Se carga con una publicNote en la fuente.
-    // (to-do 298 z, decisión de Guido 2026-10-19: "cargarlo como el año del cierre, con su nota") también MÁS de 12 meses: el primer ejercicio
+    // (decisión de Guido: "cargarlo como el año del cierre, con su nota") también MÁS de 12 meses: el primer ejercicio
     // de una sociedad constituida antes de la temporada (Anderlecht 2011, 24-02-2010 a 30-06-2011, 16 meses; RAAL La Louvière 2018, 14;
     // Sint-Truiden 2013, 15; Zulte Waregem 2012, 17). Misma compuerta: sin importes del año anterior. Los importes van tal cual (sin
     // prorratear: el fútbol arranca con la temporada; Anderlecht 2011 vendió 39,1 M y 2012, de 12 meses, 67,9 M).
@@ -344,7 +344,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // semestral no pasa (el siguiente cierra 6 meses después) y un tramo suelto tampoco (no encadena). Se carga con nota pública, como el
     // primer ejercicio.
     let transicion = null;
-    // (to-do 298 z2, votación 2026-10-20, 2 a 1: Admin/CONVENCIONES-DATOS.md) También el ejercicio de MÁS de 12 meses por cambio de cierre, que trae
+    // (votación 2 a 1: Admin/CONVENCIONES-DATOS.md) También el ejercicio de MÁS de 12 meses por cambio de cierre, que trae
     // importes del año anterior (no es un primer ejercicio): se carga como el año del cierre, sin tope de meses. UNA compuerta, la contigüidad
     // con el anterior: el cierre anterior + los meses del período = este cierre. El "siguiente cierra 12 meses después" es solo para los de
     // menos de 12 (descarta el semestral); un período largo no tiene ese riesgo. Casos: Westerlo 2015 (18 meses), Aston Villa 2023-24 (13).
@@ -525,17 +525,17 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const porEtiqueta = new Map(); for (const r of cj.rubros || []) { const k = norm(r.label); if (!porEtiqueta.has(k)) porEtiqueta.set(k, r); if (r.lado && !porEtiqueta.has(`${k}|${r.lado}`)) porEtiqueta.set(`${k}|${r.lado}`, r); }
   // Precedente del mismo club (todos sus años cargados; el año que se carga no está, por definición): exacto o por FAMILIA de etiquetas, con
   // la MISMA regla que el escalón 0 de la categorización (precedenteFamilia() de tools/categorizar-claude.mjs, medida en su comentario). Hasta la
-  // Versión 320 acá había una copia propia, solo exacta y solo con lado conocido.
+  // Acá había una copia propia, solo exacta y solo con lado conocido.
   const lineasClub = [];
   for (const [side, key] of [['revenue', 'revenueLinesByYear'], ['expense', 'expenseLinesByYear']]) for (const [y, ls] of Object.entries(cd[key] || {})) for (const l of ls || []) if (l.rawLabel && l.normalizedCategory) lineasClub.push({ club: clubId, year: String(y), side, label: l.rawLabel.trim(), cat: l.normalizedCategory, padre: padreEnClub(clubId, String(y), side, l.rawLabel) });
   // Categoría "aceptable" de una etiqueta: la del .categorias.json (escalón 0/1, o Claude >= --umbral-claude) o, si la etiqueta no está en
   // esa lista, el precedente del club.
-  // COMPUERTA DEL LADO en toda la escalera de categorización (Versión 377, escalón a de "lo que cerró en la etapa 6 no se vuelve a decidir"):
+  // COMPUERTA DEL LADO en toda la escalera de categorización (escalón a de "lo que cerró en la etapa 6 no se vuelve a decidir"):
   // una categoría del OTRO lado que la fila en el documento no se acepta. La fila baja al precedente del club DE SU LADO; si tampoco hay,
   // se propone la genérica de su lado (otros ingresos / otros gastos) con confianza 0, así llega a la cola como pregunta de sí o no, con la
   // clave "etiqueta|lado". Caso: Fortaleza 2025 "Diversos" 1.986 en otros ingresos, que Jev categorizó other_expenses con 0,99.
   const delOtroLado = (cat, lado) => lado && cat && ladoDeCat(cat) && ladoDeCat(cat) !== lado;
-  // NO ES RUBRO (Versión 378, escalón c; pendiente del HANDOFF desde UC 2010): en una fila VERIFICADA (la etapa 6 la usó para cerrar el
+  // NO ES RUBRO (escalón c): en una fila VERIFICADA (la etapa 6 la usó para cerrar el
   // resultado), un "no_es_rubro" por debajo del umbral no la excluye en silencio: sigue el mismo camino que una categoría del otro lado
   // (precedente de su lado, o la genérica a la cola). Caso: Fortaleza 2019 "Total Costo de Ventas" 137.713 y 2020 52.995 (Claude, 0,6).
   const catDe = (label, lado, verificada = false, padre = null) => {
@@ -564,7 +564,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     else raw.push(...g.hijas);
   }
   if (colapsadas.length) P.avisos.push(`${colapsadas.length} renglón(es) del estado cargados SIN abrir su nota, porque la nota no está en la lista de rubros categorizada: ${colapsadas.slice(0, 5).map((l) => `"${l.slice(0, 50)}"`).join('; ')}`);
-  // CATEGORÍA DUDOSA -> COLA HUMANA (Versión 331, decisión 1 de Guido: lo que Claude categorizó con menos de 0,80 no se carga solo). Hasta la
+  // CATEGORÍA DUDOSA -> COLA HUMANA (decisión de Guido: lo que Claude categorizó con menos de 0,80 no se carga solo). Hasta la
   // 330 esas filas quedaban afuera de la carga sin preguntarle a nadie, las sumas dejaban de cerrar y el documento frenaba con un "no cierra"
   // engañoso (UC 2025: "Transporte", "Arriendo de Bienes" y "Provisión No Operacionales" afuera = 322.108 de menos, resultado −407.737 en vez
   // de −729.845). Ahora:
@@ -578,7 +578,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // que ya hay para la etiqueta (ver COMPUERTA DEL LADO abajo).
   const respuestaCat = (label, clave = norm(label), padre = null, lado = null, { familia = false, propuesta = null } = {}) => {
     let { caso, resp } = casoYRespuesta(pdf, 'cargar', 'categoria', clave);
-    // Si no hay respuesta para ESTE documento, vale la de otro documento del MISMO club con la misma etiqueta (Versión 344: "Otras ganancias
+    // Si no hay respuesta para ESTE documento, vale la de otro documento del MISMO club con la misma etiqueta ("Otras ganancias
     // (pérdidas)" de UC llegaba a la cola una vez por año, 2010-2014). La carpeta del documento identifica al club.
     // la respuesta de OTRO documento del club vale solo si la fila está en la MISMA nota allá y acá (si no se sabe la
     // nota de alguna de las dos, como antes). Caso: "Serviços de terceiros", contestado para la fila de "Custo com futebol" (Goiás 2024-2025),
@@ -640,7 +640,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         }
       }
     }
-    // Y si ESTE documento tenía su propio caso pendiente con esa etiqueta, la respuesta del club ya lo resolvió: se cierra (Versión 348; UC
+    // Y si ESTE documento tenía su propio caso pendiente con esa etiqueta, la respuesta del club ya lo resolvió: se cierra (UC
     // 2013, caso 6c69d0a, seguía en la cola aunque la carga ya usaba la respuesta de 2014).
     // SACAR UNA FILA VALE SOLO PARA SU DOCUMENTO. Una respuesta que saca la fila (`descartar`, o `corregir --valor
     // no_es_rubro`, que la reemplaza desde cola.mjs) decide en el escalón 0 (el caso de ESTE documento) y en ningún otro: si viene de otro
@@ -710,7 +710,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // lado que la fila en el documento. Hasta la 373 se aplicaba por etiqueta en todos los años del club: en Fortaleza CEIF, "Auxilio de
     // transporte" es gasto en 2020 y 2023 (nómina) e ingreso en 2021-2024 (de la Dimayor), y "Comisiones" es gasto en 2024 e ingreso en 2025.
     // Si el lado no coincide, la fila sigue por la escalera (y, si no se resuelve, llega a la cola con su propia pregunta).
-    // Categoría que trae un ajuste manual (Versión 382: la fila "Diferencia en el documento" de un ajuste `desglose`): escalón 0, gana siempre.
+    // Categoría que trae un ajuste manual (la fila "Diferencia en el documento" de un ajuste `desglose`): escalón 0, gana siempre.
     if (r.catAjuste && ladoDeCat(r.catAjuste) === r.tside) Object.assign(f, { cat: r.catAjuste, conf: 1, escalon: 0, fuenteCat: 'ajuste manual (Admin/registros/ajustes-manuales.jsonl)', enLista: true });
     // AJUSTE MANUAL `categoria`: escalón 0, gana sobre todo, también sobre la compuerta del lado (es una
     // decisión explícita de Guido). Si la categoría es del OTRO lado, la fila se muda sin cambiar su efecto en el resultado: un ingreso de
@@ -753,7 +753,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     if (r.destinoForzado) f.destino = r.destinoForzado; // proceso nuevo: financiero / impuesto decididos por extraer.mjs
     else if (!f.enLista && !f.ladoDoc) f.destino = 'no-rubro';
     // Resultado financiero e impuesto a las ganancias: al fiscalYearMeta, salvo que el precedente del club diga otra cosa (su convención).
-    // DESTINO POR PALABRAS (Versión 375, escalón b de "lo que cerró en la etapa 6 no se vuelve a decidir"): "impuesto" / "intereses" en la
+    // DESTINO POR PALABRAS (escalón b de "lo que cerró en la etapa 6 no se vuelve a decidir"): "impuesto" / "intereses" en la
     // etiqueta mueven a impuesto o financiero solo una fila SIN lado. Una fila que viene de la verificación con lado ya cerró de ese lado.
     // Casos: Fortaleza 2025 "Impuestos" 11.98 (gasto del equipo profesional) iba a impuesto a las ganancias; 2019 "Intereses por mora"
     // 55.745 (otros ingresos) iba a financiero.
@@ -774,7 +774,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     return f;
   });
   P.filas = filas;
-  // ESCALÓN DE MATERIALIDAD (Versión 386, pedido de Guido el 2026-10-02: "si lo que queda en duda representa 1% o menos del total, bajalo a
+  // ESCALÓN DE MATERIALIDAD (pedido de Guido: "si lo que queda en duda representa 1% o menos del total, bajalo a
   // 60%; si son muchas dudas distintas y suman más de 1% de su lado, cola"). Después de todos los escalones de la categorización: por lado
   // (ingresos / gastos), si la suma de TODAS las filas en duda de ese lado es como mucho el 1% del total de ese lado (COMPUERTA), las que
   // tienen confianza 0,60 o más se cargan con su categoría y una nota; las de menos de 0,60 siguen a la cola. Si la suma pasa el 1%, todas a
@@ -793,7 +793,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   for (const f of filas) delete f.casoCola; // (no va al .carga.json)
   if (enCola.length) frena('categoria-en-cola', `${enCola.length} fila(s) esperan categoría en la cola humana (node tools/cola.mjs): ${enCola.slice(0, 5).map((f) => `"${f.label.slice(0, 40)}" -> ${f.cat} ${f.conf ?? ''}`).join('; ')}`);
 
-  // ---- 4b. CATEGORÍAS EN 0 -> REINTENTO (Versión 340, diseño aprobado por Guido; camino de error, solo con --desde-verificacion). Medido sobre
+  // ---- 4b. CATEGORÍAS EN 0 -> REINTENTO (diseño aprobado por Guido; camino de error, solo con --desde-verificacion). Medido sobre
   // 241 años cargados: salarios del plantel nunca es 0, televisión 2%, estadio 1%: un 0 ahí es un desglose perdido (UC 2025, costo de ventas
   // sin abrir). Cuotas sociales (46% de ceros) y otras secciones deportivas (63-68%) solo cuentan si el perfil del club dice que tiene socios /
   // otros deportes (tools/perfil-clubes.mjs). Si el perfil no lo sabe, la pregunta va a la cola (sí o no) y su respuesta queda en el perfil.
@@ -816,7 +816,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     const lumpIng = conCat.some((f) => f.destino === 'revenue' && /^lump_/.test(f.cat)); const lumpGas = conCat.some((f) => f.destino === 'expense' && /^lump_/.test(f.cat));
     {
       for (const { nombre, cats, lado } of CEROS.filter((x) => x.lado)) if (!(lado === 'gasto' ? lumpGas : (lumpIng || sinIngresosNBB)) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // el lado lo usa verificar.mjs
-      // (to-do 298 p1, decisión de Guido 2026-10-19: "que cada 5 años se chequee, y ahí se puede ir para atrás y corregir") EL PERFIL POR AÑO:
+      // (decisión de Guido: "que cada 5 años se chequee, y ahí se puede ir para atrás y corregir") EL PERFIL POR AÑO:
       // vale el chequeo más cercano dentro de la ventana (tools/perfil-clubes.mjs, perfilVigente); la respuesta de la cola puede venir de
       // CUALQUIER documento del club dentro de la ventana (antes, solo la de este documento: 391 casos para 181 preguntas). Un chequeo nuevo
       // que contradice al más cercano abre una revisión de los años cargados entre los dos (motivo perfil-cambio; no frena).
@@ -908,7 +908,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     else if (ceros.length) P.avisos.push(`categorías en 0 aun después del reintento (se carga así): ${ceros.map((c) => c.categoria).join(', ')}`);
   }
   const suma = (arr) => arr.reduce((a, x) => a + Math.abs(x.native || 0), 0);
-  // UNA FILA QUE NADIE MIRÓ (to-do 232 x(1)). Una fila sin categoría aceptable que pesa menos del tope (MAX_SIN_CAT) es aviso y no se carga.
+  // UNA FILA QUE NADIE MIRÓ. Una fila sin categoría aceptable que pesa menos del tope (MAX_SIN_CAT) es aviso y no se carga.
   // Eso vale para una fila que la categorización MIRÓ y no decidió; no para una que nunca vio: AEK 2024, la verificación abrió las entradas en
   // su nota ("Έσοδα από διεθνείς διοργανώσεις", 1,87 M, pág. 41) después de la etapa 5, el .categorias.json era del día anterior, y la fila
   // se cayó con un aviso (3,2% de los ingresos); solo frenó el tie-out del resultado, sin decir qué fila faltaba. Escalón antes del tope,
@@ -1126,7 +1126,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // Alianza Lima 2023, cargada a mano: "Ingresos y gastos financieros, neto" y "Diferencia de cambio, neta" por separado).
   const extraRows = cierraPat && metaFilas.length >= 2 ? metaFilas.map((f) => ({ label: limpiar(f.label), value: r6(cierraPat.L.v(f)) })) : null;
   const disclosure = (f) => (/^nota|lista|cierre|precedente/.test(f.origen || '') ? 'detailed' : 'aggregated');
-  // SIN DESGLOSE (Versión 332, pedido de Guido para UC 2025: "la página tiene que decir No declarado sin romper las sumas"). Una línea que va
+  // SIN DESGLOSE (pedido de Guido para UC 2025: "la página tiene que decir No declarado sin romper las sumas"). Una línea que va
   // a la categoría "sin desglosar por la fuente" (lump_football_operations / _expense) queda además anotada en fiscalYearMeta.sinDesglose, con
   // el motivo (la nota de Guido en la cola, si la hay). Hoy la página no lee este campo: es la marca para que otra sesión muestre "No
   // declarado" en las categorías que esa línea esconde (UC 2025: los sueldos del plantel están adentro del costo de ventas). Las sumas no
@@ -1146,7 +1146,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: meta.profitOnPlayerSales || 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(Object.keys(incluidoEn).length ? { incluidoEn } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
     source: sourceId ? { id: sourceId, clubId, title: `${club.name || club.displayName} — ${basename(pdf, '.pdf')} (ejercicio ${year})`, type: campo('reportType').valor || 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/cargar.mjs (${HOY}) desde la transcripción ${e.md}; categorías del pipeline (${cj.modelo || 'Jev/Claude'}). Perímetro: ${perimetro || '?'}.` } : null,
   };
-  // PRESIDENTES (Versión 552, to-do 149, decisión de Guido el 2026-10-05: "cuando se hace el alta se pregunta si hay socios, consolidado,
+  // PRESIDENTES (decisión de Guido: "cuando se hace el alta se pregunta si hay socios, consolidado,
   // etc.; acá debería agregarse lo de presidentes"). Si ninguna gestión confirmada de data/gestiones/<país>.js cubre el cierre de este año,
   // va un caso a la cola (lo contesta el subagente de Guido, como las preguntas de perfil). NO FRENA: el año se carga igual, sin presidente.
   // Un club ya contestado "descartar" (sociedad sin dueño persona) no se vuelve a preguntar; uno contestado "aceptar" que igual quedó sin
@@ -1191,10 +1191,10 @@ function cierreDe(src, abre) {
   }
   return -1;
 }
-// LA LIGA DE UN AÑO EN data/club-leagues/<iso>.js, como texto (función pura: la prueba tools/../scratch del to-do 279 la corre
+// LA LIGA DE UN AÑO EN data/club-leagues/<iso>.js, como texto (función pura: la prueba la corre
 // sola). Si el club ya tiene ese año: en null se reemplaza; con la misma liga no se toca; con OTRA liga gana la que estaba y vuelve un aviso.
 // Antes, un año con liga se agregaba OTRA VEZ dentro del objeto del club cuando quien llamaba no avisaba que "existe": bfo-rusia.mjs arma la
-// liga con estado "pendiente", y las reescrituras de los años rusos del 2026-10-09 dejaron 58 claves repetidas en ru.js (limpiadas a mano).
+// liga con estado "pendiente", y las reescrituras de los años rusos dejaron 58 claves repetidas en ru.js (limpiadas a mano).
 function ligaEnTexto(lt, id, y, val, archivo) {
   const clave = new RegExp(`(^|\\n)\\s*['"]?${id.replace(/[-]/g, '\\-')}['"]?\\s*:\\s*\\{`);
   const mm = lt.match(clave);
@@ -1242,7 +1242,7 @@ function runNode(script, args) {
   catch (e) { return { code: e.status ?? 1, out: (e.stdout || '') + (e.stderr || '') }; }
 }
 
-// PUBLICAR (Versión 356, sacado de escribir() sin cambios para que lo reuse tools/caja-deuda.mjs): sube ASSET_V, corre los generadores y la
+// PUBLICAR (sacado de escribir() sin cambios para que lo reuse tools/caja-deuda.mjs): sube ASSET_V, corre los generadores y la
 // auditoría; si audit.js da P0/P1, revierte todo lo que cambió desde `snap`. Lanza si un generador falla (quien llama revierte).
 export function publicarCambios(snap, extra, escritos) {
   // ASSET_V (mismo criterio que alta-club.mjs: la constante Y cada ?v= literal, salvo que ya esté subido respecto de HEAD)
@@ -1279,7 +1279,7 @@ export { snapshot, revertir, runNode };
 // COMPUERTA DE ESTADIO Y SPONSOR: un ejercicio nuevo no se escribe sin el estadio y el sponsor de camiseta de
 // ese club y año. tools/estadio-sponsor.mjs los lee de la página de temporada de Wikipedia (gratis), los guarda en data/contexto/<iso>.js
 // y sale con 1 si falta alguno; lo que falta se completa en tools/contexto-manual.json, con fuente. Función aparte, llamada en un solo
-// punto antes de escribir (la compuerta del auditor, to-do 282, va al lado).
+// punto antes de escribir (la compuerta del auditor va al lado).
 export function compuertaContexto(P) {
   const E = P.ejercicio; const meta = E?.fiscalYearMeta || {};
   const cierre = meta.cierre || String(meta.fxRef || '').split('@')[1] || null;
@@ -1531,7 +1531,7 @@ async function main() {
     salidas.push(P);
     if (SALIDA) appendFileSync(resolve(ROOT, SALIDA), JSON.stringify(P) + '\n');
     // Con --lista (lo que usa lote.mjs) se imprime SIEMPRE el resumen, aunque la lista tenga un solo documento, y la propuesta completa va a
-    // Generados/.../<doc>.carga.json. Hasta la Versión 329 un lote de un documento imprimía el JSON entero en la terminal (~400 líneas;
+    // Generados/.../<doc>.carga.json. Antes un lote de un documento imprimía el JSON entero en la terminal (~400 líneas;
     // pedido de Guido: "solo el resumen"). El JSON completo en pantalla queda para un documento suelto sin --lista, o con --json.
     if (LISTA && P.md) { try { writeFileSync(resolve(ROOT, derivado(P.md, '.carga.json')), JSON.stringify(P, null, 1)); } catch { /* sin .md */ } }
     if ((docs.length > 1 || LISTA) && !JSON_OUT) {
@@ -1543,7 +1543,7 @@ async function main() {
       if (c && !c.sinProduccion) console.log(`         vs producción: ingresos ${c.prop.revenue} / ${c.prod.revenue}; gastos ${c.prop.expenses} / ${c.prod.expenses}; PAT ${c.prop.officialPAT} / ${c.prod.officialPAT}; dinero bien ubicado ${c.dineroIngresosBien} / ${c.dineroGastosBien}; fx ${c.fxIgual}; liga ${c.ligaIgual}`);
     }
   }
-  // ÚLTIMA CORRIDA EN LISTA (Versión 323, pedido de Guido: ver en el tablero por qué frena la etapa 6, por grupo de países): un resumen por
+  // ÚLTIMA CORRIDA EN LISTA (pedido de Guido: ver en el tablero por qué frena la etapa 6, por grupo de países): un resumen por
   // documento en Admin/registros/cargar-ultimo.jsonl (se PISA en cada corrida con --lista; no con un documento suelto ni con --comparar, que es un
   // backtest en otro checkout). Lo lee tools/estado.mjs. La propuesta completa sigue yendo a --salida si se la pide.
   if (LISTA && !COMPARAR) {

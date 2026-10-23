@@ -4,7 +4,7 @@
 // "listo" (o explica por qué no puede). Trabaja sobre lo que tools/inventario-transcripciones.mjs
 // dejó en revisar / pendiente-segunda-voz / sin-verificar / reintentar.
 //
-// IDEA CENTRAL (pedido de Guido, 2026-09-29, "MUST"): Claude NUNCA ve un documento entero si alcanza
+// IDEA CENTRAL (pedido de Guido, "MUST"): Claude NUNCA ve un documento entero si alcanza
 // con ver unas páginas. Se detectan primero, gratis, las PÁGINAS con dudas comparando los números de
 // cada página:
 //   - PDF con texto seleccionable: los números de la página del .md contra los del texto de esa página
@@ -299,7 +299,7 @@ async function voiceByChunks(engine, pdfAbs, pageList, log) {
 }
 
 // Gemini rechaza documentos ENTEROS por "RECITATION" (falso positivo de copyright: 124 de 141 fallos registrados) pero, medido el
-// 2026-09-30, acepta la mayoría de esas mismas páginas de a una (Ituano 2013: 7 de 8; Alverca 2023-24: 21 de 29). Gemini cuesta ~$0,003 por página
+// acepta la mayoría de esas mismas páginas de a una (Ituano 2013: 7 de 8; Alverca 2023-24: 21 de 29). Gemini cuesta ~$0,003 por página
 // y Claude ~$0,016, así que antes de mandarle el documento entero a Claude se prueba página por página con Gemini y Claude recibe SOLO las
 // rechazadas. Devuelve { ok, voice:{pre,pages}, claudeOnly:Set<n> } (claudeOnly = páginas que solo tienen la voz de Claude).
 async function voiceGeminiPerPage(pdfAbs, pageList, log) {
@@ -419,7 +419,7 @@ function patchToMajority(cands, best) {
 // Argentinos Juniors: 425.204.023 + 233.796.753 - 275.518.976 = 383.481.800 decidía cuál de las lecturas era la correcta.
 // el puntaje es la cantidad de CELDAS que quedan respaldadas por sumas genéricas de tools/chequeos-gratis.mjs — verticales
 // (una fila = suma de las contiguas) y horizontales (en una fila, una celda = combinación con signo de las demás: tablas de movimiento,
-// saldo inicial + altas - bajas = saldo final). Antes se usaba un puntaje de prepare-onboarding.mjs (tieScore(), borrado en el to-do 218), que solo veía filas rotuladas "total":
+// saldo inicial + altas - bajas = saldo final). Antes se usaba un puntaje de prepare-onboarding.mjs (tieScore(), borrado), que solo veía filas rotuladas "total":
 // en las notas rusas de Rubin Kazan 2025 daba 0 en las 11 páginas, todas terminaron "con reserva", y en 2 (págs. 18 y 32) la lectura
 // elegida era la que NO cerraba ninguna suma. Con este puntaje se deciden 5 de esas 11; el resto no tiene aritmética y sigue con reserva.
 function sumScore(body) {
@@ -524,7 +524,7 @@ async function resolveDoc(e0) {
     prov.base = 'mistral (re-hecho)';
   }
 
-  // SOLO PÁGINAS CON NÚMEROS (decisión de Guido, 2026-09-30: "gemini solo donde hay números, no la prosa"). Mistral transcribe el
+  // SOLO PÁGINAS CON NÚMEROS (decisión de Guido: "gemini solo donde hay números, no la prosa"). Mistral transcribe el
   // documento entero (queda como documentación), pero la segunda voz y el desempate de Claude solo tienen trabajo donde hay cifras
   // que pueden terminar en el sitio. tools/paginas-con-numeros.mjs decide cuáles son, gratis, con el propio .md: medido sobre 222
   // ejercicios cargados, elige el 58% de las páginas y cubre el 99,7% de los importes de producción (Admin/mediciones/test-seleccion-paginas.md).
@@ -585,7 +585,7 @@ async function resolveDoc(e0) {
     }
     // La decisión de arriba ("¿más de la mitad no coincide?") se toma con TODAS las dudas, porque mide si el .md o el texto del PDF están
     // rotos en general. Pero a Claude solo van las dudas de páginas con números: una duda en prosa (un "3000" suelto, un número de
-    // registro) no cambia nada del sitio. Medido en el piloto de la Versión 306: Alverca ~8 de 17 dudas eran prosa; Rio Ave 13 dudas, 1 real.
+    // registro) no cambia nada del sitio. Medido en el piloto: Alverca ~8 de 17 dudas eran prosa; Rio Ave 13 dudas, 1 real.
     const dudasProsa = doubts.filter((n) => !numericas.has(n));
     if (dudasProsa.length) { log(`${dudasProsa.length} duda(s) en páginas de prosa, no se mandan a Claude: ${dudasProsa.join(', ')}`); doubts = doubts.filter((n) => numericas.has(n)); }
     // Y de las dudas en páginas con números, las que la cascada dejó respaldadas (por sumas o balance, aunque el texto del PDF difiera en
@@ -628,7 +628,7 @@ async function resolveDoc(e0) {
   // (tolerancia 0 sin capa de texto); el resto de las páginas con números va a la segunda voz.
   const list = voicePages || [...cas.dudosas].sort((x, y) => x - y);
   if (!list.length) return fin('listo', `${method}${cas.validadas ? `${cas.validadas} páginas con números validadas gratis (sumas/balance/texto del PDF)` : 'sin páginas con números'}: nada que validar con una segunda voz`, { method: method + 'chequeos-gratis' });
-  // Si la lista no es el documento entero (lo normal desde la Versión 307: solo páginas dudosas con números), Gemini recibe SOLO esas
+  // Si la lista no es el documento entero (lo normal: solo páginas dudosas con números), Gemini recibe SOLO esas
   // páginas recortadas (por tramos). Antes, con una lista chica, se le mandaba el PDF entero y después se comparaban solo esas páginas:
   // se pagaba el documento completo igual.
   const big = list.length > BIG_DOC_PAGES || Boolean(voicePages) || list.length < nPages;
@@ -687,7 +687,7 @@ async function resolveDoc(e0) {
         pageCands.set(n, cands);
         if (!settleFree(n, cands)) pending.push(n);
       } else if (cands.length === 2 && bClaude) {
-        // Gemini rechazó también esa página: solo hay dos voces (la canónica y Claude). Primero la aritmética (Versión 313: sumas verticales
+        // Gemini rechazó también esa página: solo hay dos voces (la canónica y Claude). Primero la aritmética (sumas verticales
         // y horizontales); si decide, gana esa lectura sin reserva. Si no, gana Claude, con reserva.
         const idx2 = A !== undefined ? settleByArithmetic(cands) : null;
         if (idx2 !== null) apply(n, cands, idx2, 'sumas');

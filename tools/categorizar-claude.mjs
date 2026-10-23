@@ -12,7 +12,7 @@
 //
 //   (0) Precedente del mismo club: el mismo texto (normalizado) ya está cargado en otro año del mismo club,
 //       del mismo lado (ingreso/gasto), siempre con la misma categoría -> se copia. Gratis, sin API.
-//       Es el "tier 0" del to-do 98 (tools/suggest-category-precedent.mjs hace lo mismo como consulta a mano).
+//       Es el "tier 0" (tools/suggest-category-precedent.mjs hace lo mismo como consulta a mano).
 //   (1) Jev (tools/jev-categorizar.mjs) con confianza >= 0,90 -> se acepta. Backtest sobre 3.975 rubros ya
 //       cargados (Admin/mediciones/test-jev-resultados_lado_ej_otrosclubes.md): 94,4% de acierto en esa banda, que cubre
 //       ~69% de los rubros. Jev cuesta casi nada, pero ve un rubro por vez y sin las convenciones del club.
@@ -30,7 +30,7 @@
 //       cargar.mjs). No se inventa.
 //
 // ---------------------------------------------------------------------------------------------------------
-// NÚMEROS MEDIDOS (backtest del 2026-09-30, detalle en Admin/mediciones/test-categorizar-claude.md)
+// NÚMEROS MEDIDOS (backtest, detalle en Admin/mediciones/test-categorizar-claude.md)
 //   Sobre los 1.217 rubros que Jev deja < 0,90 (de 3.975; 224 club-años), Opus 5.5, esfuerzo low, con contexto del club:
 //     - acierto 76,6% (Jev en esos mismos rubros: 57,1%). Por confianza de Claude: >= 0,90 -> 98,5% (132 rubros);
 //       0,80-0,90 -> 94,3% (296); 0,60-0,80 -> 75,2% (488); < 0,60 -> 51,8% (301). La confianza SÍ separa.
@@ -103,7 +103,7 @@ const envPath = resolve(root, 'Admin', 'api-keys', 'claude-api.env');
 const costLogPath = resolve(root, 'Admin', 'registros', 'api', 'claude-api.jsonl');
 const outDir = resolve(root, 'Admin', 'mediciones', 'backtests', 'categorizar-claude');
 
-// Precios por millón de tokens (skill claude-api, tabla cacheada 2026-09-25). La escritura de caché cuesta 1,25x la
+// Precios por millón de tokens (skill claude-api, tabla cacheada). La escritura de caché cuesta 1,25x la
 // entrada y la lectura 0,1x. Los tokens de "thinking" se cobran como salida (vienen dentro de output_tokens).
 export const PRICES = {
   'claude-opus-5-5': { in: 4, out: 20 },
@@ -180,7 +180,7 @@ export function precedente(lines, club, side, label, { excludeYear = null } = {}
   return cats.size === 1 ? [...cats][0] : null;
 }
 
-// Escalón 0 con FAMILIA DE ETIQUETAS (Versión 321, pedido de Guido: "una familia de palabras similares, como la del PSV con dos S o una"; la regla
+// Escalón 0 con FAMILIA DE ETIQUETAS (pedido de Guido: "una familia de palabras similares, como la del PSV con dos S o una"; la regla
 // está en mismaFamilia() de tools/vocabulario.mjs). Primero el precedente exacto; si no hay, la familia. Devuelve { cat, via } o null.
 // MEDIDO contra producción (7.098 líneas cargadas; para cada línea, el precedente sale de los OTROS años del mismo club):
 //   - lado conocido:    exacto 4.782 líneas con 99,9% de acierto; la familia resuelve 110 más con 96,4% (Claude >= 0,80 da 94,5% en su backtest).
@@ -194,7 +194,7 @@ export function precedenteFamilia(lines, club, side, label, { excludeYear = null
   const delClub = lines.filter((l) => l.club === club && l.year !== excludeYear && (!side || l.side === side));
   const unico = (arr) => { const cats = new Set(arr.map((l) => l.cat)); const lados = new Set(arr.map((l) => l.side)); return cats.size === 1 && lados.size === 1 ? [...cats][0] : null; };
   const nl = norm(label);
-  // (Versión 403, cambios A y B de la auditoría del pipeline) Con el padre (la nota) de la fila:
+  // (cambios A y B de la auditoría del pipeline) Con el padre (la nota) de la fila:
   //   A  el escalón con contexto compara las etiquetas SIN la marca de nota del final ("(a)", "(1)"): la marca cambia de nota entre años;
   //   B  si la etiqueta tiene precedentes con nota conocida y NINGUNO está en la nota de esta fila, el precedente sin contexto NO decide (la
   //      fila baja a Jev/Claude, que reciben la nota). Caso: Goiás 2014 "Despesa com pessoal" (nota de fútbol) tomaba 2022-2023 (nota
@@ -549,7 +549,7 @@ async function listos(opt) {
   const ledger = readJsonl(ledgerPath);
   // Trabajo = documentos con .rubros.json y .jev.json cuyo .categorias.json falta o se hizo sobre otra lista de rubros u otro .jev.json
   // (huellas, ver tools/huellas.mjs). Y si el .jev.json mismo está desactualizado respecto de la lista de rubros, NO se manda a Claude:
-  // primero tiene que rehacerlo Jev (bug real 2026-09-30: 44 documentos, US$ 1,90, categorizados con un .jev.json de la lista vieja).
+  // primero tiene que rehacerlo Jev (bug real: 44 documentos, US$ 1,90, categorizados con un .jev.json de la lista vieja).
   // `--lista <archivo>`: solo esos PDFs (lo pasa pipeline.mjs, así la etapa 5b toca SOLO los documentos de la corrida).
   const lista = opt.lista ? leerLista(resolve(root, opt.lista)) : null;
   const rubrosDe = (md) => { try { return JSON.parse(readFileSync(resolve(root, derivado(md, '.rubros.json')), 'utf8')); } catch { return null; } };

@@ -2,8 +2,8 @@
 // ============================================================================
 // tools/fetch-fx-reference.mjs — baja UNA VEZ la serie histórica completa de un
 // tipo de cambio y la guarda local, para que `tools/lookup-fx-close.js` pueda
-// resolver la cotización de cualquier fecha sin salir a buscar en la web (to-do
-// 91, 2026-09-27).
+// resolver la cotización de cualquier fecha sin salir a buscar en la web.
+//
 //
 // EL PROBLEMA QUE RESUELVE: cada club nuevo que no declara su propio `fx` en el
 // documento dispara una búsqueda web puntual de la cotización de SU fecha de
@@ -18,39 +18,39 @@
 //   - BRL: API pública del BCB, PTAX de cierre (venda).
 //   - COP: API pública de datos.gov.co (dataset de la TRM, Banco de la
 //     República / Superintendencia Financiera).
-//   - NOK: Norges Bank, tipo medio (API SDMX pública).                [2026-09-30]
-//   - CZK: Česká národní banka, fixing diario (year.txt).             [2026-09-30]
+//   - NOK: Norges Bank, tipo medio (API SDMX pública).
+//   - CZK: Česká národní banka, fixing diario (year.txt).
 //   - CHF: Reserva Federal H.10 vía FRED (el SNB no publica serie
-//     diaria descargable).                                              [2026-09-30]
-//   - TRY: TCMB, döviz alış, un XML por día (EVDS pide key).          [2026-09-30]
-//   - RUB: Banco de Rusia, tipo oficial (XML_dynamic).                [2026-09-30]
-//   - UAH: Banco Nacional de Ucrania, tipo oficial.                   [2026-09-30]
+//     diaria descargable).
+//   - TRY: TCMB, döviz alış, un XML por día (EVDS pide key).
+//   - RUB: Banco de Rusia, tipo oficial (XML_dynamic).
+//   - UAH: Banco Nacional de Ucrania, tipo oficial.
 //   - KRW: Reserva Federal H.10 vía FRED (ECOS del Banco de Corea
-//     pide key).                                                        [2026-09-30]
+//     pide key).
 //   - CLP: dólar observado (Banco Central de Chile) tal como lo publica
 //     el SII, el fisco chileno; la API del BCCh y la de la CMF piden
-//     usuario/key.                                                      [2026-10-01]
+//     usuario/key.
 //   - EUR: Banco Central Europeo, tipo de referencia diario EUR/USD
-//     (publicado USD por EUR, se invierte a EUR por USD).               [2026-10-01]
+//     (publicado USD por EUR, se invierte a EUR por USD).
 //   - DKK: Danmarks Nationalbank, tipo oficial diario (Statbank DNVALD,
-//     DKK por 100 USD, se divide por 100).                              [2026-10-01]
+//     DKK por 100 USD, se divide por 100).
 //   - GBP: Bank of England, IADB serie XUDLUSS (publicado USD por GBP,
-//     se invierte a GBP por USD).                                       [2026-10-01]
-//   - SEK: Sveriges Riksbank, tipo medio (API SWEA).                  [to-do 112]
-//   - PLN: Narodowy Bank Polski, tabla A, tipo medio.                 [to-do 112]
+//     se invierte a GBP por USD).
+//   - SEK: Sveriges Riksbank, tipo medio (API SWEA).
+//   - PLN: Narodowy Bank Polski, tabla A, tipo medio.
 //   - HRK: Hrvatska narodna banka, tipo medio (la kuna termina en
-//     2022: desde 2023 Croacia reporta en EUR).                        [to-do 112]
-//   - JPY, CNY, MXN: Reserva Federal H.10 vía FRED, como CHF y KRW.   [to-do 112]
+//     2022: desde 2023 Croacia reporta en EUR).
+//   - JPY, CNY, MXN: Reserva Federal H.10 vía FRED, como CHF y KRW.
 //   - PEN: Banco de Pagos Internacionales (BIS), que la recibe del BCRP.
-//     El BCRP, la SBS y la SUNAT bloquean la descarga automática.      [to-do 112]
+//     El BCRP, la SBS y la SUNAT bloquean la descarga automática.
 // Todas son endpoints públicos sin API key, pensados para descarga. Ninguna es
 // una tasa cruzada vía EUR: todas cotizan directo contra el USD (EUR y GBP se
 // publican como USD por unidad y acá se invierten; es una inversión exacta, no
 // una cruz).
-// ARS/BRL/COP verificadas 2026-09-27 dígito por dígito contra los valores YA
+// ARS/BRL/COP verificadas dígito por dígito contra los valores YA
 // cargados a mano en FX_CLOSE (data/currency-map.js) para Almagro (ARS),
 // y para BRL/COP contra las entradas ya existentes de otros clubes — coincide
-// exacto en todos los casos probados. Las 7 de 2026-09-30 no tenían todavía
+// exacto en todos los casos probados. Las 7 siguientes no tenían todavía
 // ningún club cargado ni entrada en FX_CLOSE contra qué comparar: se
 // verificaron contra el tipo que declaran las transcripciones de Clubes/ (RUB:
 // Krasnodar 2020 y 2021, exacto; TRY: Fenerbahçe 10/8/2020) y contra una
@@ -68,7 +68,7 @@
 // USO:
 //   node tools/fetch-fx-reference.mjs                  baja/actualiza todas (las 21)
 //   node tools/fetch-fx-reference.mjs --currency ARS   solo una
-//   node tools/fetch-fx-reference.mjs --currency COP --from 2015-01-01
+//   node tools/fetch-fx-reference.mjs --currency COP --from AAAA-MM-DD
 //   node tools/fetch-fx-reference.mjs --currency TRY --full   TRY desde cero
 //
 //   node tools/fetch-fx-reference.mjs --deflactores   los deflactores del PBI (USD y EUR) y
@@ -169,7 +169,7 @@ async function fetchCOP(from, to) {
   return series;
 }
 
-// --- Helpers compartidos por las fuentes agregadas el 2026-09-30 ------------
+// --- Helpers compartidos por las fuentes agregadas después ------------
 // fetch con reintentos (los portales de bancos centrales cortan de vez en
 // cuando una conexión larga). Devuelve la Response; 404 se devuelve tal cual
 // (para TCMB es "no hubo fixing ese día", no un error).
@@ -439,7 +439,7 @@ async function fetchTRY(from, to) {
       const buy = block?.[0].match(/<ForexBuying>([\d.]+)<\/ForexBuying>/);
       if (!buy) continue;
       let v = parseFloat(buy[1]);
-      // Antes del 2005-01-01 la moneda era la lira vieja (TRL): 1 TRY = 1.000.000
+      // Antes de 2005 la moneda era la lira vieja (TRL): 1 TRY = 1.000.000
       // TRL. Se convierte a TRY para que toda la serie esté en la misma unidad.
       if (iso < '2005-01-01') v = +(v / 1e6).toFixed(6);
       series[iso] = v;
@@ -488,7 +488,7 @@ async function fetchSEK(from, to) {
 
 // --- PLN: Narodowy Bank Polski, tabla A (tipo medio) ------------------------
 // La API acepta como máximo 367 días por consulta: se pide año por año. Datos
-// desde 2002-01-02 (antes de esa fecha la API no tiene la tabla A).
+// desde 2002 (antes de esa fecha la API no tiene la tabla A).
 async function fetchPLN(from, to) {
   const series = {};
   const start = from < '2002-01-02' ? '2002-01-02' : from;
@@ -505,8 +505,8 @@ async function fetchPLN(from, to) {
 }
 
 // --- HRK: Hrvatska narodna banka, tečajna lista v2 (srednji tečaj) ----------
-// Se pide año por año. La kuna dejó de existir el 2023-01-01 (Croacia pasó al
-// euro): la serie termina el 2022-12-31 aunque se pida más.
+// Se pide año por año. La kuna dejó de existir en 2023 (Croacia pasó al
+// euro): la serie termina en 2022 aunque se pida más.
 async function fetchHRK(from, to) {
   const series = {};
   const end = to > '2022-12-31' ? '2022-12-31' : to;
@@ -532,7 +532,7 @@ const CURRENCIES = {
   COP: { file: 'cop-usd.json', label: 'COP por 1 USD (TRM oficial, Banco de la República / Superfinanciera de Colombia)', fetch: fetchCOP, defaultFrom: '2010-01-01',
     source: 'datos.gov.co, dataset 32sa-8pi3 (TRM)' },
 
-  // --- Las 7 de abajo se agregaron el 2026-09-30 (pedido de Guido: que el
+  // --- Las 7 de abajo se agregaron (pedido de Guido: que el
   // pipeline resuelva el cierre de Noruega, Chequia, Suiza, Turquía, Rusia,
   // Ucrania y Corea sin salir a la web). Todas son unidades de moneda local por
   // 1 USD, igual que las 3 de arriba y que `fx` en los archivos de club.
@@ -594,7 +594,7 @@ const CURRENCIES = {
   // (TFRS/VUK) para valuar activos y pasivos en moneda extranjera al cierre. El
   // XML trae también ForexSelling y los de billete (Banknote); no se guardan.
   // Directa contra el USD. Dirección: TRY por 1 USD. CAMBIO DE UNIDAD: antes del
-  // 2005-01-01 la moneda era la lira vieja (TRL, 1 TRY = 1.000.000 TRL); el TCMB
+  // 2005 la moneda era la lira vieja (TRL, 1 TRY = 1.000.000 TRL); el TCMB
   // la publicaba en TRL (~540.000 en 2000) y el script la divide por 1.000.000
   // para que toda la serie quede en TRY (~0,54 en 2000, ~29 al cierre de 2023).
   // Días sin XML (404): fines de semana y feriados turcos, incluidos los
@@ -643,7 +643,7 @@ const CURRENCIES = {
   // durante 2012-2013; 29,2549 desde el 24/2/2022 hasta el 20/7/2022; 36,5686
   // desde el 21/7/2022 hasta el 2/10/2023. En esos tramos, y en las crisis de
   // 2008-09 y 2014-15, el tipo oficial se separó del mercado interbancario
-  // hasta un ~10% (verificado 2026-09-30 contra el cruzado del ČNB): un balance
+  // hasta un ~10% (verificado contra el cruzado del ČNB): un balance
   // ucraniano usa el oficial, que es el que está acá.
   UAH: { file: 'uah-usd.json', label: 'UAH por 1 USD (Banco Nacional de Ucrania, tipo oficial)', fetch: fetchUAH, defaultFrom: '2000-01-01',
     source: 'NBU, bank.gov.ua/NBU_Exchange/exchange_site?valcode=usd (rate_per_unit)' },
@@ -673,7 +673,7 @@ const CURRENCIES = {
   // feriados chilenos; OJO: el observado de un día se fija con el mercado de ESE
   // día pero el SII/BCCh lo publican al hábil siguiente — la fecha de la serie es
   // la del día de vigencia tal como figura en la tabla del SII.
-  // VERIFICADO 2026-10-01 contra los tipos de cierre declarados por Universidad
+  // VERIFICADO contra los tipos de cierre declarados por Universidad
   // Católica (31/12/2016-2025) y Palestino (30/6/2018 y 2019): los 12 coinciden
   // CON EL VALOR DE LA SERIE DEL PRIMER DÍA CON DATO POSTERIOR a la fecha de
   // cierre (2016: 669,47 = 3/1/2017; 2018: 694,77 = 2/1/2019; 2023: 877,12 =
@@ -707,7 +707,7 @@ const CURRENCIES = {
   // valor por día TARGET aunque EE.UU. esté de feriado, y es la tasa que los
   // clubes declaran. H.10 (DEXUSEU) da un "noon buying rate" de Nueva York que
   // difiere hasta ~0,4% (31/12/2024: 1,0351 vs 1,0389 del BCE).
-  // VERIFICADO 2026-10-01 contra el EUR/USD declarado por Hajduk Split (HNB, en
+  // VERIFICADO contra el EUR/USD declarado por Hajduk Split (HNB, en
   // las notas de los informes 2023-2025): 31/12/2022 1,0666 = serie 30/12/2022
   // (exacto; 31/12 era sábado); 31/12/2023 1,1050 = serie 29/12/2023 (exacto;
   // domingo); 31/12/2024 1,0444 = serie del 30/12/2024 (exacto, NO la del 31/12,
@@ -764,7 +764,7 @@ const CURRENCIES = {
   GBP: { file: 'gbp-usd.json', label: 'GBP por 1 USD (Bank of England, tipo spot diario, invertido de USD por GBP)', fetch: fetchGBP, defaultFrom: '2000-01-01',
     source: 'Bank of England, Interactive Database, serie XUDLUSS (valor invertido a GBP por USD)' },
 
-  // --- Las 6 de abajo se agregaron por el to-do 112 (pedido de Guido: las
+  // --- Las 6 de abajo se agregaron (pedido de Guido: las
   // monedas de los clubes con documentos transcriptos y sin serie, más SEK y PLN).
 
   // SEK — Sveriges Riksbank, API SWEA, serie SEKUSDPMI. Qué tasa es: el tipo
@@ -780,7 +780,7 @@ const CURRENCIES = {
   // medio que el NBP publica cada día hábil polaco; es el que manda la ley
   // contable polaca para valuar al cierre ("średni kurs NBP z ostatniego dnia
   // roboczego"). Directo contra el USD. Dirección: PLN por 1 USD (~3,9 en 2002,
-  // ~4,0 en 2024). Sin key. La API tiene la tabla A desde 2002-01-02.
+  // ~4,0 en 2024). Sin key. La API tiene la tabla A desde 2002.
   PLN: { file: 'pln-usd.json', label: 'PLN por 1 USD (Narodowy Bank Polski, tabla A, tipo medio)', fetch: fetchPLN, defaultFrom: '2002-01-02',
     source: 'NBP, api.nbp.pl/api/exchangerates/rates/a/usd (campo mid)' },
 
@@ -790,8 +790,8 @@ const CURRENCIES = {
   // un dato por cada día calendario. Es el que declaran los balances croatas
   // ("srednji tečaj HNB na dan bilance"). Directo contra el USD. Dirección: HRK
   // por 1 USD (~7,6 en 2000, ~7,1 a fines de 2022). La kuna dejó de existir el
-  // 2023-01-01: desde ahí los clubes croatas reportan en EUR (serie del BCE) y
-  // esta serie termina el 2022-12-31.
+  // 2023: desde ahí los clubes croatas reportan en EUR (serie del BCE) y
+  // esta serie termina en 2022.
   HRK: { file: 'hrk-usd.json', label: 'HRK por 1 USD (Hrvatska narodna banka, tipo medio, hasta 2022)', fetch: fetchHRK, defaultFrom: '2000-01-01',
     source: 'HNB, api.hnb.hr/tecajn/v2?valuta=USD (srednji_tecaj)' },
 

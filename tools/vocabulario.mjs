@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/vocabulario.mjs — EL vocabulario contable multi-idioma del pipeline, en UN solo lugar (Versión 316, pedido de Guido 2026-09-30:
+// tools/vocabulario.mjs — EL vocabulario contable multi-idioma del pipeline, en UN solo lugar (pedido de Guido:
 // "deberías anticipar que los PDFs van a estar en múltiples idiomas, y todos los que faltan").
 //
-// POR QUÉ EXISTE. Hasta la Versión 313 las palabras que reconocen un estado de resultados, un ingreso, un gasto, un total o un flujo de
+// POR QUÉ EXISTE. Antes las palabras que reconocen un estado de resultados, un ingreso, un gasto, un total o un flujo de
 // efectivo vivían en 5+ regex y listas sueltas, en 4 herramientas distintas, y cada una se había ido parchando de a un idioma cuando un piloto
 // fallaba: STATEMENT_RE (pipeline.mjs y proponer-carga.mjs, con contenidos distintos), NO_RESULTADOS_RE / SIDE_REV / SIDE_EXP / isTotal
 // (pipeline.mjs), RELEVANT_KEYWORDS (extract-table-rows.mjs), REV_W / EXP_W / RESULTADO_RE / SUBTOTAL_RE (filas-rubro.mjs), REV_TOTAL_RE /
 // RESULT_RE / TOTAL_RE (proponer-carga.mjs). Consecuencias reales de tenerlas separadas:
 //   - Un idioma se agregaba en una lista y no en las otras (el ucraniano estaba en SIDE_REV pero no en REV_W; Karpaty Lviv tenía lado en 11
-//     de 41 filas hasta la Versión 312).
+//     de 41 filas antes).
 //   - Cada tool normalizaba el texto a su manera, y algunas palabras de las listas NUNCA podían coincidir: el turco "Hasılat" / "nakit akış"
 //     (la ı sin punto no se convertía en i, así que 'hasilat' y 'nakit akis' no encontraban nada), el alemán "Umsatzerlöse" (la lista decía
 //     'umsatzerloese' y la ö normalizada da 'o'), el coreano (NFD parte las sílabas de Hangul en letras sueltas y '손익계산서' dejaba de ser
@@ -60,9 +60,9 @@
 //      que cualquier nota contara como estado de resultados; 'zisk' dentro de otras palabras).
 //   3. `node tools/vocabulario.mjs "texto de prueba"` dice qué conceptos encuentra en ese texto; `node tools/vocabulario.mjs --cobertura`
 //      imprime la matriz concepto x idioma (qué idioma falta en qué concepto).
-//   4. Medí antes y después sobre el inventario (así se hizo en la Versión 316, informe en Admin/mediciones/test-vocabulario.md): un término nuevo en
+//   4. Medí antes y después sobre el inventario (así se hizo, informe en Admin/mediciones/test-vocabulario.md): un término nuevo en
 //      RELEVANTE o en INGRESOS/GASTOS puede volver "relevantes" tablas de notas y de balance y multiplicar los rubros (una regla probada en la
-//      Versión 312 llevó Real Madrid de 32 a 253 rubros: eso es un error, no una mejora).
+//      una versión anterior llevó Real Madrid de 32 a 253 rubros: eso es un error, no una mejora).
 //
 // QUIÉN LO USA: extract-table-rows.mjs (relevancia de una tabla y de sus filas), filas-rubro.mjs (lado, resultados, subtotales,
 // columna de notas), proponer-carga.mjs y cargar.mjs (título de estado, totales, resultado, financiero, impuestos), caja-deuda.mjs
@@ -81,7 +81,7 @@ export function normalizar(t) {
     .replace(/\s+/g, ' ').trim();
 }
 
-// ---------------------------------------------------------------- FAMILIA DE UNA ETIQUETA (Versión 321, arreglo 1d del HANDOFF de entonces, hoy en Admin/Archive/)
+// ---------------------------------------------------------------- FAMILIA DE UNA ETIQUETA
 // Pedido de Guido: "una familia de palabras similares, como la del PSV con dos S o una". El precedente del club (escalón 0 de la
 // categorización: si el club ya cargó ese renglón en otro año, se copia su categoría gratis) comparaba el texto EXACTO, y el mismo renglón de un
 // año a otro cambia en detalles que no cambian qué es: PSV 2019-20 imprime "Vergoedingsommen" y 2024/2025 "Vergoedingssommen
@@ -247,7 +247,7 @@ export const VOCABULARIO = {
   // y hacen "relevante" una tabla (extract-table-rows.mjs).
   INGRESOS: {
     // "venta(s)" / "vendas" / "ventes" / "πωλήσεις" NO cuentan dentro de "costo de ventas", "custo das vendas", "coût des ventes", "κόστος πωλήσεων"
-    // (medido en la Versión 316: sin esta exclusión "COSTO DE VENTAS" de Universidad Católica quedaba sin lado y sus filas heredaban el lado
+    // (medido: sin esta exclusión "COSTO DE VENTAS" de Universidad Católica quedaba sin lado y sus filas heredaban el lado
     // 'revenue' de la tabla).
     es: ['ingres*', 'recurso*', 'recaudac*'],
     pt: ['receita*', 'rendiment*', { re: '(?<!custos? das )(?<!custos? de )(?<![\\p{L}\\p{N}])venda' }, 'faturamento*', 'proveito*'],
@@ -284,7 +284,7 @@ export const VOCABULARIO = {
 
   // ---- Palabras de ingreso que dicen el lado de una FILA pero NO hacen relevante una tabla ni dan el lado de una tabla entera: aparecen en
   // títulos de notas de balance ("Subvenciones, donaciones y legados", "Investments in subsidiaries", "Related party transactions: sales"),
-  // y medido en la Versión 316, sumarlas a la relevancia metía esas notas como rubros (Atlético de Madrid 70 -> 128, Mercedes F1 45 -> 77).
+  // y medido, sumarlas a la relevancia metía esas notas como rubros (Atlético de Madrid 70 -> 128, Mercedes F1 45 -> 77).
   INGRESOS_FILA: {
     es: ['subsidio*', 'subvenc*'], pt: ['subsidio*', 'subvenc*'], en: [{ re: '(?<!cost of )(?<![\\p{L}\\p{N}])sales(?![\\p{L}\\p{N}])' }, 'grant* receivable', 'subsidy', 'subsidies'],
     de: ['*zuschuss*', '*zuschuess*', '*zuschusse*'], fr: ['subvention*'], it: ['contribut* in conto esercizio'],
@@ -292,12 +292,12 @@ export const VOCABULARIO = {
 
   // ---- Palabras de ingreso que dicen el lado de una fila Y de una tabla, pero NO hacen relevante una tabla: 'turnover' aparece en la prosa
   // de las notas inglesas ("All turnover arose within the United Kingdom. 5. Operating loss ... stated after charging:") y volvía relevante la
-  // tabla de gastos de abajo, con lado 'revenue' (Wolverhampton 2023-24). Hasta la Versión 313 tampoco estaba en la relevancia.
+  // tabla de gastos de abajo, con lado 'revenue' (Wolverhampton 2023-24). Antes tampoco estaba en la relevancia.
   INGRESOS_LADO: { en: ['turnover'] },
 
   // ---- Palabras de ingreso que hacen relevante una tabla y dicen el lado de una TABLA, pero NO el de una FILA suelta: "Cuotas entidades
   // deportivas" (cuotas que el club PAGA a la federación, gasto) y "Operacionales de venta" (gastos de ventas, Colombia) quedaban como
-  // ingreso. Hasta la Versión 313 estaban en la relevancia y en el lado de la tabla, no en el de la fila.
+  // ingreso. Antes estaban en la relevancia y en el lado de la tabla, no en el de la fila.
   INGRESOS_TABLA: { es: [{ re: '(?<!cost[oe]s? de )(?<!cost[oe]s? de las )(?<![\\p{L}\\p{N}])venta' }, 'cuota*'] },
 
   // ---- Palabras de GASTOS / costos / egresos.
@@ -350,7 +350,7 @@ export const VOCABULARIO = {
   // "Gewinne aus Transfers" son rubros: por eso "perdida", "winst", "gewinn" solos NO están acá, solo en frases.
   // El RESULTADO INTEGRAL ("Total comprehensive income", "Toplam Kapsamlı Gelir", "Сукупний дохід") también es un resultado: sin esto, un
   // renglón "Toplam Kapsamlı Gelir" (que ahora se reconoce como total por 'toplam') le daba lado 'revenue' a todo el estado de resultados de
-  // arriba por la regla de posición (Trabzonspor 2021 y Fenerbahçe 2016, medido en la Versión 316).
+  // arriba por la regla de posición (Trabzonspor 2021 y Fenerbahçe 2016, medido).
   RESULTADO_INICIO: {
     xx: ['total comprehensive*', 'comprehensive income*', 'other comprehensive*', 'total resultado*', 'total do resultado*', 'toplam kapsamli*',
       'kapsamli gelir*', 'diger kapsamli*', 'gesamtergebnis*', 'совокупн* доход*', 'совокупн* финансов* результат*', 'сукупн* дохід*',
@@ -442,7 +442,7 @@ export const VOCABULARIO = {
     zh: ['合计', '总计', '合計'], ja: ['合計'], ko: ['합계', '총계', '소계'], ar: ['الاجمالي'],
   },
 
-  // ---- SIGNO DE UNA FILA DEL FINANCIERO POR SU RÓTULO (to-do 212, escalón 2 de la compuerta del resultado en verificar.mjs). Un documento
+  // ---- SIGNO DE UNA FILA DEL FINANCIERO POR SU RÓTULO (escalón 2 de la compuerta del resultado en verificar.mjs). Un documento
   // puede imprimir los intereses cobrados y los pagados los dos en positivo (Volos 2021-2025: "Πιστωτικοί τόκοι" y "Χρεωστικοί τόκοι"); el
   // rótulo dice cuál suma y cuál resta. Una fila que matchea los dos (o ninguno) queda con su signo impreso.
   FIN_INGRESO: {
@@ -451,7 +451,7 @@ export const VOCABULARIO = {
     en: ['finance income', 'financial income', 'interest income', 'interest receivable', 'interest received', 'investment income'],
     de: ['zinsertrage', 'zinsen und ahnliche ertrage', 'finanzertrage', 'finanzertrag'], fr: ['produits financiers'],
     it: ['proventi finanziari', 'interessi attivi'], nl: ['financiele baten', 'rentebaten', 'financiele opbrengsten'],
-    // noruego en singular: cubre el plural ("finansinntekt" está dentro de "finansinntekter"); ver FIN_GASTO, to-do 298 y1.
+    // noruego en singular: cubre el plural ("finansinntekt" está dentro de "finansinntekter"); ver FIN_GASTO.
     da: ['finansielle indtaegter', 'renteindtaegter'], no: ['finansinntekt', 'renteinntekt', 'finansielle inntekter'],
     sv: ['finansiella intakter', 'ranteintakter'], hr: ['financijski prihodi', 'prihodi od kamata'], cs: ['financni vynosy', 'vynosove uroky'],
     pl: ['przychody finansowe'], tr: ['finansman gelirleri', 'finansal gelirler', 'faiz gelirleri'],
@@ -569,30 +569,30 @@ export const VOCABULARIO = {
   TITULO_BALANCE: {
     es: ['balance general', 'estado de situacion*', 'balance de situacion'], pt: ['balanco patrimonial', 'demonstracao da posicao financeira', 'balanco'],
     en: ['balance sheet*', 'statement* of financial position'], de: ['bilanz'], fr: ['bilan'], it: ['stato patrimoniale'], nl: ['balans'],
-    no: ['balanse'], sv: ['balansrakning'], fi: ['tase'], et: ['bilanss'], // et: to-do 298 c3 (Estonia: "Bilanss") cs: ['rozvaha'], sk: ['suvaha'], pl: ['bilans'], hr: ['bilanca*', 'bilans stanja'],
+    no: ['balanse'], sv: ['balansrakning'], fi: ['tase'], et: ['bilanss'], // et: (Estonia: "Bilanss") cs: ['rozvaha'], sk: ['suvaha'], pl: ['bilans'], hr: ['bilanca*', 'bilans stanja'],
     sr: ['биланс стања'], sl: ['bilanca stanja'], hu: ['merleg'], ro: ['bilant*'], bg: ['счетоводен баланс'], el: ['ισολογισμ*'],
     tr: ['bilanco', 'finansal durum tablosu'], ru: ['бухгалтерский баланс', 'баланс'], uk: ['баланс', 'звіт про фінансовий стан'],
     zh: ['资产负债表', '資產負債表'], ja: ['貸借対照表'], ko: ['재무상태표', '대차대조표'], ar: ['الميزانية العمومية', 'قائمة المركز المالي'], he: ['מאזן'],
   },
 
   // ---- CAJA y DEUDA FINANCIERA del balance. Al comienzo de una etiqueta. Caja: lo que el sitio
-  // guarda en fiscalYearMeta.cash. Deuda financiera: el criterio por defecto de grossDebt para un club sin precedente (club-data-mapping/referencia/formato-simplificado.md, "grossDebt", ok de Guido 2026-10-01): préstamos y obligaciones bancarias/financieras, corriente + no corriente; NUNCA el total del pasivo.
+  // guarda en fiscalYearMeta.cash. Deuda financiera: el criterio por defecto de grossDebt para un club sin precedente (club-data-mapping/referencia/formato-simplificado.md, "grossDebt", ok de Guido): préstamos y obligaciones bancarias/financieras, corriente + no corriente; NUNCA el total del pasivo.
   CAJA: {
     es: ['efectivo y equivalente*', 'caja y banco*', 'caja y equivalente*', 'disponibilidades', 'caja'], pt: ['caixa e equivalente*', 'disponibilidades', 'caixa e bancos', 'caixa e depositos bancarios'], // el último: rubro del formato SNC (to-do caja y deuda, 2026-10-16; 135 de 186 documentos de Portugal)
     en: ['cash and cash equivalent*', 'cash at bank*', 'cash and bank*', 'cash'], de: ['flussige mittel', 'kassenbestand*', 'guthaben bei kreditinstitut*', 'liquide mittel'],
-    fr: ['tresorerie et equivalent*', 'disponibilites'], it: ['disponibilita liquide', 'cassa e disponibilita*'], nl: ['liquide middelen', 'geldmiddelen'], et: ['raha'], // et: to-do 298 c3 ("Raha", Tallinna Kalev 2019 L90)
+    fr: ['tresorerie et equivalent*', 'disponibilites'], it: ['disponibilita liquide', 'cassa e disponibilita*'], nl: ['liquide middelen', 'geldmiddelen'], et: ['raha'], // et: ("Raha", Tallinna Kalev 2019 L90)
     da: ['likvide beholdninger', 'likvide midler'], no: ['bankinnskudd*', 'kontanter og bankinnskudd'], sv: ['kassa och bank', 'likvida medel'],
   },
   DEUDA_FINANCIERA: {
     es: ['prestamo*', 'otros pasivos financieros', 'pasivos financieros', 'deudas bancarias*', 'deudas financieras', 'obligaciones financieras', 'obligaciones con bancos*', 'deudas con entidades de credito'],
-    pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos', 'mutuo*', 'dividas a instituicoes de credito*'], // mutuo: Versión 422 (Novorizontino, préstamo de I-9 Sports); dívidas a instituições de crédito: la deuda bancaria del formato POC
-    // la lista `en` había quedado DENTRO del comentario de arriba desde la Versión 422: ningún balance en inglés encontraba su
+    pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos', 'mutuo*', 'dividas a instituicoes de credito*'], // mutuo: (Novorizontino, préstamo de I-9 Sports); dívidas a instituições de crédito: la deuda bancaria del formato POC
+    // la lista `en` había quedado DENTRO del comentario de arriba : ningún balance en inglés encontraba su
     // deuda por diccionario. Más los términos del formato italiano en inglés (Juventus: "Due to banks" 2005-2006, "Loans and other
     // financial payables/liabilities" 2007 y 2011-2021, "Bonds and other financial liabilities" 2008-2010).
     en: ['borrowings', 'bank loans*', 'loans and borrowings', 'bank overdraft*', 'loans', 'due to banks', 'loans and other financial*', 'bonds and other financial liabilities'],
     de: ['verbindlichkeiten gegenuber kreditinstitut*', 'darlehen', 'finanzverbindlichkeiten'], fr: ['emprunts*', 'dettes financieres'],
     // italiano: además de banche, las obligaciones y los préstamos de socios (cuentan como deuda,
-    // decisión del 2026-10-17). Con solo banche la compuerta aceptaba el error porque el vecino lo repetía (Bologna 2025: 19,36 M de banche
+    // decisión). Con solo banche la compuerta aceptaba el error porque el vecino lo repetía (Bologna 2025: 19,36 M de banche
     // contra 28,59 M con soci 9.235.000, .md L1033-1035). "altri finanziatori" NO entra: es factoring, que en Monza 2024 no es deuda y en
     // Genoa 2022 sí (medido: metía un error nuevo en Monza 2024).
     it: ['debiti verso banche', 'debiti finanziari', 'obbligazioni*', 'debiti verso soci per finanziament*'], nl: ['schulden aan kredietinstellingen', 'leningen'], da: ['gaeld til kreditinstitutter', 'bankgaeld'],
@@ -603,7 +603,7 @@ export const VOCABULARIO = {
   },
 
   // ---- TOTAL DEL ACTIVO y TOTAL DEL PASIVO (+ patrimonio) al comienzo de una etiqueta. Para chequeos-gratis.mjs (activo = pasivo + patrimonio);
-  // hoy esa tool tiene sus propias ACTIVO_RE / PASIVO_RE (no se editó en la Versión 316): estas listas las amplían.
+  // hoy esa tool tiene sus propias ACTIVO_RE / PASIVO_RE (no se editó): estas listas las amplían.
   TOTAL_ACTIVO: {
     es: ['total del activo', 'total de activo', 'total activo*', 'activo total'], pt: ['total do ativo', 'total ativo', 'ativo total'],
     en: ['total assets'], de: ['summe aktiva', 'aktiva gesamt', 'bilanzsumme', 'summe der aktiva'], fr: ['total de l actif', 'total actif', 'actif total'],
@@ -695,7 +695,7 @@ export const TOTAL_ACTIVO_RE = compilar(T('TOTAL_ACTIVO'), 'inicio');
 export const TOTAL_PASIVO_RE = compilar(T('TOTAL_PASIVO'), 'inicio');
 export const CAJA_RE = compilar(T('CAJA'), 'inicio');
 export const DEUDA_FINANCIERA_RE = compilar(T('DEUDA_FINANCIERA'), 'inicio');
-// ---- Resultado financiero e impuesto a las ganancias (Versión 321: se mudaron acá desde tools/cargar.mjs, porque ahora también los usa la
+// ---- Resultado financiero e impuesto a las ganancias (se mudaron acá desde tools/cargar.mjs, porque ahora también los usa la
 // selección de filas de tools/proponer-carga.mjs). Son expresiones regulares escritas a mano y no conceptos del VOCABULARIO porque mezclan
 // raíces con comodín en el medio de la palabra y frases con alternativas internas que compilar() no sabe armar. Se prueban sobre texto
 // NORMALIZADO (normalizar(): minúsculas, sin acentos).

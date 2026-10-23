@@ -3,7 +3,7 @@
 // tools/caja-deuda.mjs — CAJA y DEUDA del balance (fiscalYearMeta.cash y .grossDebt), con el club ya publicado (no va en el lote). Gratis
 // salvo los escalones 1b (Jev, centavos por club) y 2 (IA). NUNCA FRENA.
 //
-// POR QUÉ (Versión 352, plan aprobado por Guido el 2026-10-01: "enrich the process para tener caja y debt, pero que no tenerlo NO FRENE").
+// POR QUÉ (plan aprobado por Guido: "enrich the process para tener caja y debt, pero que no tenerlo NO FRENE").
 // cargar.mjs escribía grossDebt y cash en null ("sin dato no es cero"), así que todo año cargado por el script quedaba sin el cuadro "Deuda
 // bruta / Caja / Deuda neta" del sitio (UC 2018-2021 y 2025), mientras 289 de los 310 años cargados a mano los tienen.
 //
@@ -12,7 +12,7 @@
 // precedente, el criterio por defecto es DEUDA FINANCIERA (préstamos y obligaciones bancarias/financieras, corriente + no corriente), nunca el
 // total del pasivo. Caja: efectivo y equivalentes / caja y bancos / disponibilidades.
 //
-// LA ESCALERA (Versión 357, rehecha a pedido de Guido: "SIEMPRE ESCALERA, sin reglas una encima de otra"). Cada dato por separado.
+// LA ESCALERA (rehecha a pedido de Guido: "SIEMPRE ESCALERA, sin reglas una encima de otra"). Cada dato por separado.
 //
 //   ESCALA   UNA por documento, para todos los escalones: la del estado de resultados de ESE documento, la que hace coincidir sus cifras con
 //            los rubros ya cargados en el sitio (factorPorIngresos). Ningún escalón trae su propia escala.
@@ -21,7 +21,7 @@
 //   ESCALÓN 1  vocabulario (vocabulario.mjs CAJA / DEUDA_FINANCIERA): se PROPONEN las filas del balance con esos nombres (una sola por
 //              familia). "Ninguna fila" es una propuesta para la deuda (= 0, decisión de Guido) si el balance está completo (tiene su total del
 //              pasivo) y el club usa filas de deuda financiera en otros años.
-//   ESCALÓN 1b Jev (to-do 233 + 232 t; fijo en --club desde el 2026-10-14, en --medir con --jev): una llamada barata por documento; la caja como opción cerrada entre las
+//   ESCALÓN 1b Jev (fijo en --club, en --medir con --jev): una llamada barata por documento; la caja como opción cerrada entre las
 //              filas del balance y la deuda como sí/no por fila. Solo propone filas; decide la misma compuerta. Respuestas en
 //              Generados/_cache/jev-caja-deuda.jsonl.
 //   ESCALÓN 2  IA (Claude, ~US$ 0,03 por documento, una llamada para caja y deuda, solo si 0 y 1 no pasaron): PROPONE números de línea del
@@ -55,7 +55,7 @@
 //        de gasto; después verificar.mjs + cargar.mjs --reemplazar --escribir por año
 //   node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]                       COMPLETAR un club ya publicado (ver abajo)
 //
-// --club (Versión 356, decisión de Guido 2026-10-01: "dos scripts"; caja y deuda NO van en el lote, se completan con el club ya en el sitio):
+// --club (decisión de Guido: "dos scripts"; caja y deuda NO van en el lote, se completan con el club ya en el sitio):
 // recorre los años cargados del club, de más viejo a más nuevo, y lee caja y deuda SOLO donde el sitio tiene null (nunca pisa un valor cargado
 // a mano). Corrido después de cargar, el año anterior ya está en el sitio y sirve de compuerta. Un valor que se completa en esta
 // misma corrida NO cuenta como cargado para el año siguiente. Sin --ejecutar, el escalón 2 es ensayo (costo estimado). --escribir: lo escribe en
@@ -361,7 +361,7 @@ export function filasDelMd(md) {
     if ((cr0 || []).some(formaImposible)) continue;
     let nums = crudos.map(parseNumber).filter((n) => n !== null);
     // Referencia a nota: un entero chico (1-2 dígitos, sin separador) al principio, seguido de más cifras.
-    // (Versión 383: un 0 no es un número de nota. Fortaleza 2023 "Caja | 0 | 2.152" se leía 2.152, la columna del año anterior.)
+    // (un 0 no es un número de nota. Fortaleza 2023 "Caja | 0 | 2.152" se leía 2.152, la columna del año anterior.)
     // UNA sola referencia a nota, no en bucle: el importe de al lado también puede ser un entero chico (miles). Caso:
     // Novorizontino 2020 "Caixa e equivalentes de caixa | 4 | 85 | 695 |" sacaba el 4 (nota) y el 85 (la caja, en miles) y leía 695 (2019).
     // ESCALERA DE LA LECTURA: escalón 1, si la tabla tiene una COLUMNA DE NOTAS
@@ -436,7 +436,7 @@ export function filasDelMd(md) {
     const tituloFuera = TITULO_BALANCE_RE.test(enc) || TITULO_BALANCE_PLURAL_RE.test(enc);
     if (textoPag.has(p + 1) && !FLUJO_O_PATRIMONIO_RE.test(tituloFuera ? fuera : normalizar(t))) balance.add(p + 1);
   }
-  // (Probado y DESCARTADO en la Versión 352: leer solo el "balance principal", el primer tramo de páginas seguidas: manta corta.)
+  // (Probado y DESCARTADO: leer solo el "balance principal", el primer tramo de páginas seguidas: manta corta.)
   for (const f of filas) f.balance = balance.has(f.pagina);
   // PERÍMETRO DE CADA PÁGINA DEL BALANCE: una página con su propio título
   // de balance como encabezado es "consolidado" si el encabezado lo dice, "individual" si no; la página siguiente sin título (el pasivo)
@@ -465,7 +465,7 @@ function esTotalBalance(n) {
 // grandes repiten las filas en tablas resumen del informe de gestión, en miles (Porto 2016-17: "Empréstimos Bancários" en L594/L598 y en el
 // balance L860/L869; Porto 2015-16: "Caixa e depósitos bancários" 7.392 en L657 contra 7.392.033 en L976).
 const ladoDelTotal = (cual) => (cual === 'cash' ? /\b(activos?|ativos?|assets)\b/u : /\b(pasivos?|passivos?|liabilities)\b/u);
-// (to-do 260 b, idea de Guido aprobada el 2026-10-17) LA TABLA RESUMEN DE VARIOS AÑOS ES UN DESGLOSE: si el total del activo / pasivo de una
+// (idea de Guido) LA TABLA RESUMEN DE VARIOS AÑOS ES UN DESGLOSE: si el total del activo / pasivo de una
 // tabla aparece, impreso, en la fila del total de una tabla ANTERIOR, y ahí está de la tercera columna en adelante (una serie de varios
 // años, no el año ni el año anterior), esa tabla anterior es un resumen del informe de gestión: sus filas no cuentan para caja ni deuda.
 // Tolera una unidad de redondeo. Caso: Benfica 2022-23, pág. 37 L939 "TOTAL PASSIVO | 364.619 | 325.917 | 379.606 | 424.718 | 444.617 |
@@ -869,7 +869,7 @@ export function escalera(filas, cual, { precedentes = [], factor = null, anterio
     // caja de un año sin vecino: la compuerta del propio balance del documento (cajaSinVecinoAceptable)
     if (!c.ok && cual === 'cash' && c.motivo === 'ningún año vecino para comparar' && !p.ninguna && cajaSinVecinoAceptable(filas, p.filas))
       c = { ...c, ok: true, validacion: 'balance del documento' };
-    // (to-do 223, A/B medido el 2026-10-13 contra una compuerta con votos, descartada: ver Admin/HALLAZGOS-pipeline.md) DOS LECTURAS: si alguna fila de la propuesta o de los documentos vecinos tiene lectura B (sin la celda con
+    // (A/B medido contra una compuerta con votos, descartada: ver Admin/HALLAZGOS-pipeline.md) DOS LECTURAS: si alguna fila de la propuesta o de los documentos vecinos tiene lectura B (sin la celda con
     // forma de nota), la propuesta se evalúa también con todos los documentos leídos así (AEK 2018: su fila ya sale bien, la del documento
     // siguiente trae la nota). La misma compuerta decide: pasa una sola → esa; las dos con valores distintos → no decide.
     const hayB = (xs) => (xs || []).some((f) => f.lecturaB);
@@ -912,12 +912,12 @@ export function sitio() {
   return { G: vm.runInContext('window.CLUB_GENERIC_DATA', ctx), S: vm.runInContext('typeof sources !== "undefined" ? sources : {}', ctx) };
 }
 // El .md de un año cargado: la ruta que nombra su fuente (220 de los 284 años con deuda/caja la tienen).
-// la ruta de la transcripción está en la nota de la fuente, que desde el to-do 209 vive en la evidencia del club (textoFuenteCompleto)
+// la ruta de la transcripción está en la nota de la fuente, que vive en la evidencia del club (textoFuenteCompleto)
 const mdDeFuente = (S, sourceId) => { const m = EV.textoFuenteCompleto(S[sourceId]).match(/Clubes\/[^"`\n]+?\.md/); return m && existsSync(resolve(ROOT, m[0])) ? m[0] : null; };
 
 // Factor del estado de resultados de un documento contra lo cargado (para el escalón 1 en la medición): la escala con la que más rubros de
 // ingresos cargados aparecen tal cual entre las cifras del documento.
-export function factorPorIngresos(filas, lineas, md = null) { // `md` sin uso (lo pasan los llamados; Versión 456, probado y no adoptado)
+export function factorPorIngresos(filas, lineas, md = null) { // `md` sin uso (lo pasan los llamados; probado y no adoptado)
   let mejor = null;
   for (const fac of FACTORES) {
     const n = (lineas || []).filter((l) => l.amountNative && filas.some((f) => f.cifras.some((c) => Math.abs(Math.abs(c) * fac - Math.abs(l.amountNative)) <= TOL(l.amountNative)))).length;
@@ -1190,7 +1190,7 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
       const nbb = cajaNBB(readFileSync(resolve(ROOT, a.md), 'utf8'));
       if (nbb) res.cash = { ctx: res.cash.ctx, valor: r6(nbb.caja * res.cash.ctx.factor), escalon: 1, validacion: 'balance del documento (NBB)', como: `código NBB 54/58 = ${nbb.caja} (L${nbb.linea}); el balance cuadra: 20/58 = 10/49 = ${nbb.total} (año sin vecino)`, filas: [] };
     }
-    // ESCALÓN 1b, Jev (to-do 233 + 232 t; entró el 2026-10-14 tras medirlo en todos los clubes: caja 9 de 9 iguales, deuda 5 de 7 y los 2
+    // ESCALÓN 1b, Jev (entró tras medirlo en todos los clubes: caja 9 de 9 iguales, deuda 5 de 7 y los 2
     // distintos eran errores del sitio, PAOK 2021 y Panetolikos 2022; US$ 0,11 en total). Antes de la IA cara; sin --ejecutar, ensayo.
     let sinDato = faltan.filter((k) => res[k].valor == null);
     if (sinDato.length) {
