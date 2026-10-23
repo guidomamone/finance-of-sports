@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 992 — Un ejercicio real por el pipeline: Mönchengladbach 2022 [406 · monchengladbach-de]
+
+- Ejemplo real: `jahresabschluss-2022` (el club tenía 2023 y 2024). `lote.mjs --ejecutar` (etapas 3 a 8) US$ 0,20 con el reintento; frenó por la línea de Abschreibungen junta (propuesta de la cola: «sí», que habría puesto 13,6 M€ de bienes de uso como amortización de jugadores), dos preguntas de perfil y los Umsatzerlöse sin tabla. Cargado con 4 ajustes (partido con el Anlagenspiegel: jugadores 32.294.038,76 + resto 13.629.219,22). Defecto de script anotado: 406 (partir la línea junta con una tool enganchada en `verificar.mjs`).
+- `tools/con-worktree.mjs` (`conWorktree(fn)`): el worktree descartable de las pruebas de escritura; `prueba-escribir.mjs` lo usa y comprueba que `caja-deuda --personal [--partir]` y `recategorizar-etiquetas` no cambian ningún JSON de club.
+
 ## Versión 991 — La prueba de escritura cubre más tools y el cierre de turno comprueba el diff [401]
 
 - `prueba-escribir.mjs`: además de `cargar.mjs`, escribe de verdad (worktree descartable, datos de HEAD) `caja-deuda --personal [--partir]`, `recategorizar-etiquetas`, `generar-correcciones`, `ajustes --agregar` y `publicar`. Con el re-export de `cargar.mjs` quitado, falla. Medidor `escribir` asignado a `cargar.mjs`, `caja-deuda.mjs`, `publicar.mjs` y `recategorizar-etiquetas.mjs` (medido: idéntico).

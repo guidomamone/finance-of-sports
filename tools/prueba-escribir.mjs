@@ -12,21 +12,16 @@
 //
 // USO:  node tools/prueba-escribir.mjs        (sale con 0 si la escritura anduvo; con 1 y el motivo si no)
 // ============================================================================
-import { execFileSync, spawnSync } from 'node:child_process';
-import { copyFileSync, readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, existsSync, realpathSync } from 'node:fs';
-import { resolve, join } from 'node:path';
-import { tmpdir } from 'node:os';
+import { spawnSync, execFileSync } from 'node:child_process';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { conWorktree } from './con-worktree.mjs'; // el worktree descartable con las tools de este árbol (una prueba nueva es solo el escenario)
 
-const ROOT = resolve(import.meta.dirname, '..');
-const git = (args, cwd = ROOT) => execFileSync('git', args, { cwd, encoding: 'utf8', maxBuffer: 1 << 28 });
-const principal = resolve(git(['rev-parse', '--path-format=absolute', '--git-common-dir']).trim(), '..');
-const W = join(realpathSync(tmpdir()), `prueba-escribir-${process.pid}`); // la ruta REAL: con /var → /private/var el `import.meta.url === file://argv[1]` de cargar.mjs no se cumple y sale en silencio con 0
 const PDF = 'Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.pdf';
 const ID_FUENTE = 'sonderjyske-dk-aarsrapport-2024-09-30';
 let ok = false;
 try {
-  git(['worktree', 'add', '--detach', W, 'HEAD']);
-  for (const f of readdirSync(join(ROOT, 'tools'))) if (/\.(mjs|js|json)$/.test(f)) copyFileSync(join(ROOT, 'tools', f), join(W, 'tools', f));
+  await conWorktree(async ({ W, ROOT, principal }) => {
   mkdirSync(join(W, 'Admin', 'registros'), { recursive: true });
   const regOrigen = [join(ROOT, 'Admin/registros/transcripciones-estado.jsonl'), join(principal, 'Admin/registros/transcripciones-estado.jsonl')].find(existsSync);
   const reg = readFileSync(regOrigen, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l));
@@ -55,16 +50,18 @@ try {
   ];
   writeFileSync(join(W, PDF), ''); // los PDF no se trackean: ajustes.mjs pide que el documento exista
   const ERROR_DE_CODIGO =/is not a function|is not defined|Cannot find (module|package)|SyntaxError|does not provide an export|REVERTIDO|TypeError|ReferenceError/;
-  for (const [nombre, args] of ESCRIBEN) {
+  const antes = execFileSync('git', ['status', '--porcelain', '--', 'data'], { cwd: W, encoding: 'utf8' });
+  for (const [i, [nombre, args]] of ESCRIBEN.entries()) {
     const s = spawnSync('node', [join(W, args[0]), ...args.slice(1)], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
     const out = (s.stdout || '') + (s.stderr || '');
     if (s.status !== 0 || ERROR_DE_CODIGO.test(out)) throw new Error(`${nombre} salió con ${s.status}: ${(out.match(ERROR_DE_CODIGO) ? out.slice(Math.max(0, out.search(ERROR_DE_CODIGO) - 120), out.search(ERROR_DE_CODIGO) + 200) : out.trim().split('\n').slice(-3).join(' | ')).replace(/\n/g, ' | ')}`);
+    // las tres primeras son idempotentes sobre los datos de HEAD: no pueden dejar ningún JSON de club distinto de como estaba tras la carga de arriba
+    if (i < 3) { const ahora = execFileSync('git', ['status', '--porcelain', '--', 'data'], { cwd: W, encoding: 'utf8' }); if (ahora !== antes) throw new Error(`${nombre} cambió datos que no tenía que cambiar:\n${ahora}`); }
     console.log(`  ok ${nombre}`);
   }
   ok = true; console.log(`prueba-escribir: la escritura de cargar.mjs anduvo (fuente nueva con su nota XHTML) y la de ${ESCRIBEN.length} tools más, en un worktree descartable.`);
+  }, 'prueba-escribir');
 } catch (err) {
   console.error(`prueba-escribir: FALLÓ: ${err.message}`);
-} finally {
-  try { git(['worktree', 'remove', '--force', W]); } catch { rmSync(W, { recursive: true, force: true }); }
 }
 process.exit(ok ? 0 : 1);
