@@ -33,8 +33,9 @@ Bash (no se pueden chequear antes de correr); su mensaje dice qué usar en cambi
   colapsa: Onboarding no edita `tools/` y Pipeline sí, pero acá es la misma sesión, una tarea después de la otra.
 - **Tokens.** Una tarea por tramo de conversación; al terminar una grande, si el contexto pasa de la mitad, pedirle a Guido que compacte.
   Los lotes corren en segundo plano, de a uno. Leer lo justo: de un `.md` de club, la parte que se usa.
-- **Hablarle a Guido.** Un mensaje por paso, con un ejemplo real antes de hacerlo y las decisiones numeradas con la recomendación al lado;
-  tareas chicas, terminadas y commiteadas antes de abrir la siguiente. Lo que Guido tiene que correr o decidir va completo en el último
+- **Hablarle a Guido.** El diseño de un cambio a una tool no se le muestra ni se le pide el ok: lo deciden el lote y el veredicto general-o-parche; se hace, se
+  mide y, si da mal, se revierte. Se le cuenta al terminar, corto: qué cambió y qué se midió. Las decisiones numeradas con la recomendación al lado son solo
+  para lo que es suyo (más abajo); tareas chicas, terminadas y commiteadas antes de abrir la siguiente. Lo que Guido tiene que correr o decidir va completo en el último
   mensaje del turno (el comando en un bloque `bash`), con **Te toca a vos** numerado o «nada», y **En curso** (rol, to-do, lote).
 - **Un cambio a una tool del pipeline se mide antes y después, SIN excepción** (Guido, 2026-10-22: «nunca jamás escribir algo que cambie el pipeline si no medís que no rompa algo anterior»). Cómo y con qué lote: skill `club-or-year-onboarding`, `mejorar-script.md`, sección 5 (chico siempre primero; mediano si el cambio es de una etapa; completo si toca lógica compartida). Se mide con `node tools/fos.mjs medir pipeline` (en segundo plano; elige medidor y lote por `tools/pipeline-tools.json` y anota `Admin/registros/mediciones-pipeline.jsonl`) y un hook rechaza el commit de una tool del pipeline sin esa medición (`[sin-medicion]` solo con el ok de Guido). El resultado también va a la entrada de CHANGELOG.
 - **Un dato público de un club (fundación, estadio, web, registro)** se busca con la escalera de `Admin/PIPELINE.md`, «Datos públicos de un club»; no se le pregunta al club.
