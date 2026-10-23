@@ -34,6 +34,12 @@
    "correr": ["tools/caja-deuda.mjs", "--personal", "--medir"],
    "comparar": "texto"
   },
+  "personal-ensayos": {
+   "que": "las opciones --personal de caja-deuda con un club (candidatos, partir, ver-candidatos) en ensayo, sobre 8 clubes: lo que --personal --medir no recorre",
+   "usaLista": false,
+   "correr": ["tools/medir-personal-ensayos.mjs"],
+   "comparar": "texto"
+  },
   "audit": {
    "que": "los hallazgos de audit.js por código y la lista completa, sobre todo el sitio (no depende de la lista)",
    "usaLista": false,
@@ -84,7 +90,7 @@
   "localizar.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"], "prueba_paga": "solo si cambia el prompt, con el costo a la vista" },
   "extraer.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo", "verificar"], "prueba_paga": "solo si cambia el prompt, con el costo a la vista" },
   "lote.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"] },
-  "caja-deuda.mjs": { "alcance": "etapa", "medidores": ["caja-deuda", "caja-deuda-personal", "audit"] },
+  "caja-deuda.mjs": { "alcance": "etapa", "medidores": ["caja-deuda", "caja-deuda-personal", "personal-ensayos", "audit"] },
   "alta-club.mjs": { "alcance": "etapa", "medidores": ["alta"] },
   "xhtml-aarsrapport.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },
   "ixbrl-resultado.mjs": { "alcance": "etapa", "medidores": ["xhtml", "verificar"], "familia": { "formato": "xhtml" } },
@@ -130,6 +136,7 @@
   "mudar-carpetas.mjs": "sesión: mueve carpetas de Clubes/ sin borrar",
   "mapa-codigo.mjs": "sesión: mapa de un archivo de código (solo lee)",
   "medir-pipeline.mjs": "medidor: mide los cambios al pipeline",
+  "medir-personal-ensayos.mjs": "medidor: las opciones --personal de caja-deuda en ensayo",
   "medir-cargar.mjs": "medidor: ensayo de cargar en cada documento",
   "medir-verificar.mjs": "medidor: verificar sobre una lista",
   "medir-ixbrl-consolidado.mjs": "medidor: chequeo iXBRL consolidado",

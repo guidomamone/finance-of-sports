@@ -5,13 +5,13 @@
 Lo escribe `node tools/indice-md.mjs --escribir`; no se edita a mano. Cada fila: ruta · KB · qué es · cuándo se lee · cuántos documentos o tools lo citan (←) · a qué otros documentos vivos manda (→).
 Huérfano = nadie lo cita; sin marca = no declara qué es ni cuándo se lee (primera línea `<!-- md: qué es | leer: cuándo -->`).
 
-Carpetas que se cuentan sin listar: `Admin/mediciones` 213, `Admin/Archive` 353, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 124, `Admin/lotes` 81.
+Carpetas que se cuentan sin listar: `Admin/mediciones` 377, `Admin/Archive` 353, `Admin/carga-clubes` 331, `Admin/sourcing` 1571, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 124, `Admin/lotes` 81.
 
 ## CLAUDE.md y Admin
 
 - `CLAUDE.md` · ~10 KB · instrucciones permanentes del proyecto (se carga sola) · **leer:** siempre · ←27 · →CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/ARQUITECTURA.md` · ~70 KB · cómo funciona el motor de Finanzas y los scripts que escriben data/ · **leer:** al tocar el motor (js/finanzas-*) o los scripts que escriben data/; la sección que toca · ←9 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
-- `Admin/CHANGELOG.md` · ~190 KB · qué cambió y cuándo (la última semana; lo anterior está en Archive) · **leer:** solo por grep de una palabra, nunca de corrido · ←27 · →CLAUDE.md, ARQUITECTURA.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md
+- `Admin/CHANGELOG.md` · ~200 KB · qué cambió y cuándo (la última semana; lo anterior está en Archive) · **leer:** solo por grep de una palabra, nunca de corrido · ←27 · →CLAUDE.md, ARQUITECTURA.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md
 - `Admin/CONTRATO-ETAPAS.md` · ~10 KB · qué archivo lee y escribe cada etapa del pipeline, qué lo deja viejo y con qué comando se rehace · **leer:** antes de tocar algo que pasa de una etapa a otra (un arreglo local a una etapa no lo necesita) · ←5 · →PIPELINE.md
 - `Admin/CONVENCIONES-DATOS.md` · ~60 KB · reglas de datos: categorías, perímetro, períodos, tipos de cambio · **leer:** al cargar o corregir datos de un club; la sección que toca · ←31 · →CLAUDE.md, CONVENCIONES.md, PANTALLA.md, dudas-por-club.md, propuestas/transicion-y-covid.md, club-data-mapping/SKILL.md
 - `Admin/CONVENCIONES.md` · ~15 KB · reglas de proceso vigentes · **leer:** cuando la skill de la tarea lo pide · ←23 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, PANTALLA.md, TODO.md, dudas-por-club.md

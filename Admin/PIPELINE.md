@@ -919,7 +919,7 @@ cuenta, Genoa 2022 sí).
                    Company, Konzern / Gesellschaft...) da las cifras de cada uno por separado y se toman las del ajuste `perimetro`. Una fila con una cifra de forma imposible ("13.950,790,99", OCR) no se usa. La columna con forma de nota se juzga sin el encabezado del bloque. Una celda que no puede ser
                    importe en ningún formato tampoco es cifra: entero con punto final ("24.") o dos o más puntos con grupos de menos de 3
                    cifras ("7.1.3"); Grecia: Olympiacos 2017 "| Ταμειακά διαθέσιμα | 24. | 1.820.725,55 |", Aris 2019 "| ... | 7.1.3 | 420.500,00 |".
- PERSONAL         `caja-deuda.mjs --personal`: staffCost (costo de personal del ejercicio, interno) = la fila de total que
+ PERSONAL         `caja-deuda.mjs --personal` (el código vive en `tools/costo-personal.mjs`; el despachador de opciones sigue en caja-deuda.mjs): staffCost (costo de personal del ejercicio, interno) = la fila de total que
                   Jev elige entre las de todos los documentos del mismo cierre, con la compuerta del vecino (medido: 9 de 9 en Volos y
                   Panetolikos). COMPUERTA DE PLAUSIBILIDAD: un total que es menos de 15 % de los ingresos del año no se usa (casi seguro la
                   nota de otra entidad del grupo, sin los jugadores: Aston Villa 2019-22). `--partir` separa el sueldo de la fila global cuando el año no

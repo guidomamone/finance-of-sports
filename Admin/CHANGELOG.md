@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 957 — 368 paso 1: el costo de personal en su módulo, sin cambios (2026-10-22) [368 · 375]
+
+- El bloque del costo de personal (212 líneas) se mudó de `tools/caja-deuda.mjs` a `tools/costo-personal.mjs`, idéntico salvo `export` (5 en el bloque, 9 ayudantes exportados de caja-deuda; los dos se importan entre sí, seguro porque nada se evalúa al cargar). `caja-deuda.mjs` pasó de 142 a 119 KB.
+- Medido con `medir-pipeline`: idéntico en `caja-deuda --medir`, `--personal --medir`, la auditoría y un medidor nuevo, `personal-ensayos` (`tools/medir-personal-ensayos.mjs`: las opciones `--personal` de un club en ensayo sobre 8 clubes, lo que `--personal --medir` no recorre). Sensibilidad probada: subir el umbral del 15 % al 45 % da 28 diferencias; revertido. Sin revisión independiente.
+- Rendimiento del 371: la mudanza se hizo con un script de una sola vez (el bloque verbatim y la comprobación de que quedó idéntico), que es lo que el 375 va a necesitar como herramienta.
+
 ## Versión 956 — 376: cada tool de tools/ clasificada respecto del pipeline (2026-10-22) [376]
 
 - `tools/clasificar-tools.mjs`: cada .js y .mjs de primer nivel cae en una clase: en la tabla (38), módulo que una tool de la tabla usa (75, calculado por los imports; se miden con los medidores de quienes los usan), `no_pipeline` con motivo (44), `sin_medidor` (1: `armar-a-mano.mjs`). `audit.js` suma `tool-sin-clasificar` (P1). Se sumaron a la tabla `pipeline.mjs`, `lote-batch.mjs`, `extraer-etiquetas.mjs`, `bfo-rusia-notas.mjs`, `gestiones-tanda.mjs` y `recategorizar-subsidios.mjs`.
