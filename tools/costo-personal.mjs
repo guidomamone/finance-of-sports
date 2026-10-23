@@ -133,7 +133,8 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const chequeos = [];
     // el documento siguiente que REEXPRESA el año («Restated» en el encabezado de su columna anterior) no contradice: la diferencia es una reexpresión, no un error de lectura
     const sig = porAnio.get(String(Number(anio) + 1)); if (sig?.fila && sig.factor && sig.fila.cifras.length > 1) { const c = coincide(r6(sig.fila.cifras[1] * sig.factor), valor); if (c || !REEXPRESADO_RE.test(sig.fila.contexto || '')) chequeos.push(['documento siguiente', c]); }
-    const prevM = porAnio.get(String(Number(anio) - 1))?.a.m.staffCost; if (prevM != null && ant != null) chequeos.push(['año anterior', coincide(prevM, ant)]);
+    // lo mismo hacia atrás: si el encabezado de la columna anterior de ESTA tabla dice «Restated», que no coincida con el año anterior ya cargado es una reexpresión
+    const prevM = porAnio.get(String(Number(anio) - 1))?.a.m.staffCost; if (prevM != null && ant != null) { const c = coincide(prevM, ant); if (c || !REEXPRESADO_RE.test(x.fila.contexto || '')) chequeos.push(['año anterior', c]); }
     const antD = porAnio.get(String(Number(anio) - 1)); if (antD?.fila && antD.factor && ant != null && coincide(r6(antD.fila.cifras[0] * antD.factor), ant)) chequeos.push(['documento anterior', true]);
     const malos = chequeos.filter((c) => !c[1]); const buenos = chequeos.filter((c) => c[1]);
     // la estructura (la suma de la nota cierra, es la nota de personal, la escala la dice su encabezado y pasó la plausibilidad) no necesita vecino; si un vecino la contradice, no se usa
