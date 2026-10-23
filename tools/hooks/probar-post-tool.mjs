@@ -12,6 +12,7 @@ const casos = [
   ['un commit que no toca skills no dice nada', bash('git commit -m "x"'), '83bbf62a97', false],
   ['un comando que no es commit no dice nada', bash('git status'), '321bd3f1b7', false],
   ['una herramienta que no es Bash no dice nada', bash('git commit -m "x"', 'Edit'), '321bd3f1b7', false],
+  ['un commit que toca PANTALLA.md y PIPELINE.md también avisa', bash('git commit -m "x"'), '80867eb0c5', true],
   ['git -C … commit también cuenta', bash('git -C . commit -m "x"'), '321bd3f1b7', true],
 ];
 let mal = 0;
