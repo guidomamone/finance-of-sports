@@ -32,7 +32,8 @@ const lista = (dir, filtro, recursivo = false) => {
   if (!existsSync(p)) return out;
   for (const e of readdirSync(p, { withFileTypes: true })) {
     const f = join(p, e.name);
-    if (e.isDirectory()) { if (recursivo) out.push(...lista(join(dir, e.name), filtro, true)); } else if (filtro(e.name)) out.push(relative(ROOT, f));
+    // Admin/mediciones/pipeline son las salidas de medir-pipeline (gitignoreadas): contarlas movería el índice con cada medición
+    if (e.isDirectory()) { if (recursivo && join(dir, e.name) !== 'Admin/mediciones/pipeline') out.push(...lista(join(dir, e.name), filtro, true)); } else if (filtro(e.name)) out.push(relative(ROOT, f));
   }
   return out;
 };

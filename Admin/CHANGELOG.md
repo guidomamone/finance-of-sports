@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 972 — El índice de los .md no cuenta las salidas de medir-pipeline [391]
+
+- `indice-md.mjs`: la cuenta de `Admin/mediciones` salta `Admin/mediciones/pipeline` (gitignoreado, lo escribe `medir-pipeline`); ya ninguna medición deja `indice-md-desfasado` NUEVO. Medido (audit, chico): 1 diferencia, el aviso viejo que se va; veredicto GENERAL.
+
 ## Versión 971 — TODO: tres puntos de la limpieza de comentarios [395 · 396 · 397]
 
 - 395 (`limpiar-comentarios --revisar`: lo que una limpieza borraría y conserva contenido), 396 (la tool se niega a reescribir con `tools/` sin commitear) y 397 (`fos muestra`: una muestra repartida de las líneas que cumplen un patrón, sin `shuf`).
