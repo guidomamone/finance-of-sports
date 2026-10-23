@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1002 — El resumen de personal-ensayos cuenta de verdad: el 404 probado con el cambio del 351 [404 · medir-pipeline.mjs]
+
+- `medir-pipeline.mjs` (resumen `valores-personal`): la línea `$ caja-deuda --personal --club X --ejecutar (salió…` no entraba en el patrón (había banderas entre el club y «(salió»), así que `personal-ensayos` contaba todo en cero (184 diferencias, «0 pierden, 0 nuevos»). Ahora cada combinación club/`--partir` es un bloque.
+- Repetido el cambio del 351 (`--base 385b905c0b^ --tools costo-personal.mjs`, con las preguntas a Jev hechas de verdad, centavos): ninguna pérdida falsa por caché (Leeds, Liverpool, Forest, Chelsea, Volos, Panetolikos ya no aparecen). El motivo de «PIERDE» que queda es de lógica: Fulham 2023 (139,064, ya cargado), porque la fila nueva «Total staff costs (£m)» (0,1548) del documento siguiente no coincide; no cambia ningún dato publicado. Nuevos: 14 club-años (Bournemouth, Brighton, Celtic, Chelsea, Everton, Newcastle) que el ensayo ahora propone.
+- Medición: `probar medir-pipeline` ok (13 casos); `medir pipeline` chico sobre el 351: caja-deuda, audit y escribir idénticos; personal-ensayos explicado arriba. Sin revisión independiente (solo cambia un resumen del medidor).
+
 ## Versión 1001 — Las propuestas de los puntos cerrados se archivan solas [416 · 417 · cerrar.mjs, datos-cola.mjs, arranque.mjs, changelog.mjs]
 
 - `fos cerrar <id> --cerrar` pasa `Admin/propuestas/<id>-*.md` a `Admin/Archive/propuestas/` con un banner; las de 407, 408, 410, 411 y 412 ya están ahí. `Admin/CONVENCIONES.md`: una propuesta existe solo si Guido tiene que aprobar con pros y contras o va un cambio de skill.

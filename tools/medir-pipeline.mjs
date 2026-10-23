@@ -253,7 +253,8 @@ const RESUMIDORES = {
     const leer = (s) => {
       const m = new Map(); let bloque = '';
       for (const l of s.split('\n')) {
-        const c = l.match(/^\$ caja-deuda --personal --club (\S+)\s+\(salió/); if (c) { bloque = c[1]; continue; }
+        // la línea lleva más banderas entre el club y «(salió» (--ejecutar, --partir): cada combinación es un bloque propio
+        const c = l.match(/^\$ caja-deuda --personal --club (\S+)(.*)\(salió/); if (c) { bloque = c[1] + (/--partir/.test(c[2]) ? ' partir' : ''); continue; }
         if (/^\$ /.test(l)) { bloque = ''; continue; }
         let v = l.match(/^\s+(\d{4}) personal: (\S+)/);
         if (v && bloque) { m.set(`${bloque} ${v[1]}`, v[2]); continue; }
