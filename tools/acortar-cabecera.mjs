@@ -25,8 +25,9 @@ export function partir(src, { cabeza = 22, uso = 12 } = {}) {
   const L = src.split('\n');
   let fin = 0;
   while (fin < L.length && (L[fin].startsWith('//') || L[fin].startsWith('#!') || L[fin].trim() === '')) fin++;
+  const finBruto = fin; // el aviso de audit.js cuenta también los renglones vacíos del final
   while (fin > 0 && L[fin - 1].trim() === '') fin--;
-  if (fin <= CABECERA_MAX) return null;
+  if (finBruto <= CABECERA_MAX) return null;
   const cierre = esRaya(L[fin - 1]) && /=/.test(L[fin - 1]) ? 1 : 0; // la raya final se conserva
   const cuerpoFin = fin - cierre;
   // dónde empieza el bloque USO (con su raya de arriba, si la hay)
@@ -40,6 +41,14 @@ export function partir(src, { cabeza = 22, uso = 12 } = {}) {
   while (q > Math.max(3, p - 14) && !buena(q)) q--; // el renglón vacío o la raya más cercana hacia arriba (hasta 14 líneas)…
   if (!buena(q)) { q = p; while (q < Math.min(finCuerpoCabeza, p + 10) && !buena(q)) q++; } // …o hacia abajo (hasta 10)
   if (buena(q)) p = q;
+  // un título huérfano (rayas y un párrafo de hasta 3 líneas justo antes del corte) no se deja sin su cuerpo: se va con él
+  let k = p;
+  while (k > 6) {
+    while (k > 6 && buena(k - 1)) k--;
+    let j = k; while (j > 6 && !buena(j - 1)) j--;
+    if (k - j <= 3 && j > 6) k = j; else break;
+  }
+  if (k > 6) p = k;
   const medio = L.slice(p, finCuerpoCabeza);
   const bloqueUso = u >= 0 ? L.slice(u, cuerpoFin) : [];
   const usoCorto = bloqueUso.slice(0, uso);
