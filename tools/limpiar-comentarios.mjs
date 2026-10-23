@@ -23,7 +23,8 @@ const PAREN = new RegExp(`\\s*\\(\\s*${ALGO}(?:\\s*(?:,|;|·|y|/|—)?\\s*${ALGO
 const INICIO = new RegExp(`^((?://|/\\*+|\\*)\\s*)${REF}\\s*[:—-]\\s*`, 'i');
 
 export function limpiarTexto(texto) {
-  return texto.split('\n').map((l) => l.replace(PAREN, '').replace(INICIO, '$1')).join('\n');
+  const t = texto.split('\n').map((l) => l.replace(PAREN, '').replace(INICIO, '$1')).join('\n');
+  return t !== texto && /^\/\/\s*$/.test(t) ? '' : t; // un comentario que la limpieza dejó vacío se va (los «//» de separación que ya estaban, no)
 }
 
 export function limpiar(rel, src) {
@@ -32,7 +33,8 @@ export function limpiar(rel, src) {
   for (const c of comments) {
     const nuevo = limpiarTexto(c.text);
     sacadas += (c.text.match(HISTORIA) || []).length - (nuevo.match(HISTORIA) || []).length;
-    out += src.slice(i, c.pos) + nuevo; i = c.pos + c.text.length;
+    const antes = src.slice(i, c.pos);
+    out += (nuevo === '' && c.text !== '' ? antes.replace(/[ \t]+$/, '') : antes) + nuevo; i = c.pos + c.text.length;
   }
   return { src: out + src.slice(i), sacadas };
 }
@@ -47,7 +49,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const ruta = join(ROOT, 'tools', f);
     const src = readFileSync(ruta, 'utf8');
     const r = limpiar(`tools/${f}`, src);
-    if (!r.sacadas) continue;
+    if (r.src === src) continue;
     total += r.sacadas; tocadas++;
     if (escribir) writeFileSync(ruta, r.src);
     else console.log(`  ${f.padEnd(36)} -${r.sacadas}`);
