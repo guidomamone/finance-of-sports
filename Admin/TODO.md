@@ -117,16 +117,9 @@ el tramo corto va como C y la temporada COVID lleva la etiqueta en pantalla, sin
 
 Verificar: manual
 
-### 7. 390 · (Pipeline, con la Auditora, prioridad baja): una regla para «Jev dijo ninguna» en el costo de personal, si el patrón se confirma
-
-No bloquea nada hoy (el costo de personal es interno y los 12 club-años quedan marcados). `fos causas` cuenta 7 casos de 5 clubes en «Jev dijo ninguna» (Newcastle 2019, Brighton 2023, Celtic 2022-24, Aston Villa 2019, Instituto 2025): cruzan el umbral de regla (3 casos de 2 clubes o más). Primero se miran los 7 para ver QUÉ tienen en común, con `fos causas --todas` y `caja-deuda.mjs --personal --ver-candidatos --club <id> --anio <año>`, sin suponer: ¿la nota tiene un total rotulado distinto («Total», «Staff costs») sin la identidad de la suma?, ¿no tiene total?, ¿es una tabla en dos columnas de grupo y sociedad? Si es una sola cosa, la regla es UN ESCALÓN NUEVO en `costo-personal.mjs` (al lado del de estructura, sin tocarlo), medido contra la tabla de verdad de 27 filas y los ensayos de 31 clubes: ningún valor aceptado puede cambiar ni perderse. Si son tres cosas distintas, ninguna llega al umbral por separado y siguen siendo casos de a uno (ajuste manual). DEPENDE DE: el 387 (cerrado) y, para el veredicto, el 384.
-Terminado cuando: las 7 están clasificadas por lo que tienen en común, y o hay un escalón medido que resuelve las que llegan al umbral o queda escrito en `fos causas` que no hay patrón.
-
-Verificar: manual
-
 ## D. Orden de la casa
 
-### 8. 338 · correr todas las auditorías del proyecto (al final de A)
+### 7. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
@@ -135,7 +128,7 @@ CORRIDO a medias (2026-10-23, sesión sola): `audit.js` P0 0 · P1 0 · P2 16 ·
 
 Verificar: manual
 
-### 9. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 8. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
@@ -144,7 +137,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 10. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 9. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -161,7 +154,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 11. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 10. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -197,7 +190,7 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 
 Verificar: manual
 
-### 12. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+### 11. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
@@ -206,14 +199,14 @@ Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la
 
 Verificar: audit ejercicio-sin-rastro "liersekempenzonen-be" = 0
 
-### 13. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
+### 12. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
 
-Las 67 etiquetas excluidas en `tools/subsidios-etiquetas.json` las dejaron afuera reglas objetivas (no una confianza baja de Jev): mezcladas con otro concepto, lo que reparte la federación o la liga (solidaridad: `competition_bonus`), subvención de capital imputada, impuestos y deducciones. Guido no las va a revisar una por una (2026-10-22): el proceso es `node tools/fos.mjs etiquetas` (369, hecho). Este punto es lo que queda después de que corrió: (a) la lista corta de 24 etiquetas que el proceso no pudo decidir sin cita (`node tools/fos.mjs etiquetas --categoria grants_donations --guido`; cada una se decide con `--decidir "<etiqueta>" aprobada|excluida --motivo "…"`; mi lectura: aprobar las que nombran al Estado, un municipio o una donación («Incentivo Governo Federal», «Incentivos governamentais», «Swiss-Olympic-Stabilisierungspaket», «Unterstützungsbeitrag Stadion Luzern AG», «Αποζημίωση ειδικού σκοπού…», «Receita de Incentivos, Doações e Loterias», «Projetos incentivados») y dejar en Otros ingresos las que mezclan o no dicen quién paga («Donations and sundry», «Sundry income and donation», los «Auxilio…» colombianos, «Mecanismo de apoio à descida»); (b) la decisión de criterio sobre lo que reparte la federación o la liga cuando el documento lo llama «subsidio» o «toetus» (EJL, Contributi Federali, FPF/LPF; hoy excluidas por la REGLA de solidaridad de `Admin/CONVENCIONES-DATOS.md`); se vota con `votacion-de-criterios` con la tabla de `node tools/fos.mjs filas` como evidencia. `node tools/fos.mjs etiquetas --categoria grants_donations --listar --todas` las muestra con su motivo.
+Las 67 etiquetas excluidas en `tools/subsidios-etiquetas.json` las dejaron afuera reglas objetivas (no una confianza baja de Jev): mezcladas con otro concepto, lo que reparte la federación o la liga (solidaridad: `competition_bonus`), subvención de capital imputada, impuestos y deducciones. Guido no las va a revisar una por una (2026-10-22): el proceso es `node tools/fos.mjs etiquetas` (369, hecho). Este punto es lo que queda después de que corrió. La lista corta de 24 etiquetas ya está decidida por Guido (2026-10-23). Falta la decisión de criterio sobre lo que reparte la federación o la liga cuando el documento lo llama «subsidio» o «toetus» (EJL, Contributi Federali, FPF/LPF; hoy excluidas por la REGLA de solidaridad de `Admin/CONVENCIONES-DATOS.md`); se vota con `votacion-de-criterios` con la tabla de `node tools/fos.mjs filas` como evidencia. `node tools/fos.mjs etiquetas --categoria grants_donations --listar --todas` las muestra con su motivo.
 Terminado cuando: las etiquetas excluidas por la regla de la federación o la liga tienen una decisión escrita (entran o quedan afuera, con el caso) y el JSON de decisiones no tiene ninguna «SIN REVISAR».
 
 Verificar: manual
 
-### 14. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
+### 13. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
 
 Tienen `.categorias.json` (Alemania 7, Rusia 2, Ucrania 2, República Checa 1) pero ningún `.verificacion.json`: las listas de prueba que arma `tools/lotes-prueba.mjs` salen de lo verificado y por eso no los incluyen, y `medir-pipeline` frena una tool dirigida a ellos (por ejemplo `bfo-rusia.mjs`, el camino del fisco ruso) porque no hay documentos que medir. Primero averiguar POR QUÉ no tienen verificación, sin asumir (¿su camino de entrada no pasa por la etapa 6, como el de Rusia, que sale del fisco y no del PDF? ¿se cargaron antes de que la etapa existiera? ¿quedaron frenados?). Según la causa: correr verificar donde corresponde, o declarar que su camino no pasa por verificación y darle un medidor propio en `tools/pipeline-tools.json` (y una familia propia en las listas) para que un cambio a su tool se pueda medir.
 DEPENDE DE: el 371 (cerrado).
@@ -224,7 +217,7 @@ Verificar: contiene Admin/lotes/prueba-completa.txt | Clubes/Rusia/
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 15. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 14. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo
@@ -234,7 +227,7 @@ JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios 
 
 Verificar: manual
 
-### 16. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 15. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -247,7 +240,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 17. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 16. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -263,7 +256,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 18. 335 · mails a clubes
+### 17. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -278,7 +271,7 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 19. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 18. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
