@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/hallazgo.mjs — `fos hallazgo`: ESCRIBE UN HALLAZGO EN SU FORMATO (412, propuesta Admin/propuestas/412-hallazgos-que-se-consultan.md)
+// tools/hallazgo.mjs — `fos hallazgo`: ESCRIBE UN HALLAZGO EN SU FORMATO
 //
 // POR QUÉ. Admin/HALLAZGOS-pipeline.md guarda lo que se midió y no entró, para que el próximo que piense lo mismo no lo repita. En prosa suelta solo se encuentra si la sesión se acuerda de buscar
-// con la palabra justa. Cada hallazgo nuevo es UNA viñeta que empieza con sus etiquetas: `- [tema: identidad del cuadro · tools: cola.mjs, verificar.mjs · 2026-10-23] Qué se midió y por qué no entró.`
+// con la palabra justa. Cada hallazgo nuevo es UNA viñeta que empieza con sus etiquetas: `- [tema: identidad del cuadro · tools: cola.mjs, verificar.mjs · AAAA-MM-DD] Qué se midió y por qué no entró.`
 // `fos existe` y `fos changelog historial <tool>` la encuentran por tema o por tool; un aviso suave (hook) la nombra la primera vez que una sesión edita una de esas tools.
 //
 // USO: node tools/fos.mjs hallazgo "<tema>" --tools a.mjs,b.mjs --texto "qué se midió y por qué no entró"    agrega la viñeta en la sección «## <fecha>, hallazgos» (la crea si no está)
-//      node tools/fos.mjs hallazgo check                                                                      las viñetas nuevas (sección con fecha desde 2026-10-24) sin etiquetas (audit.js: hallazgo-sin-etiquetas)
+//      node tools/fos.mjs hallazgo check                                                                      las viñetas nuevas (de las secciones con fecha desde la constante DESDE) sin etiquetas (audit.js: hallazgo-sin-etiquetas)
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';

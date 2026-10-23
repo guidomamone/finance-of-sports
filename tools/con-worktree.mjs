@@ -1,5 +1,5 @@
 // tools/con-worktree.mjs — `conWorktree(fn)`: prepara un git worktree descartable en HEAD con las tools de ESTE árbol (lo que tengas sin commitear), corre fn({ W, ROOT, principal }) y lo borra.
-// POR QUÉ. Probar que una tool ESCRIBE de verdad (TODO 401) pide un árbol entero que se pueda ensuciar sin riesgo; cada prueba armaba el suyo. Con esto una prueba nueva es solo el
+// POR QUÉ. Probar que una tool ESCRIBE de verdad pide un árbol entero que se pueda ensuciar sin riesgo; cada prueba armaba el suyo. Con esto una prueba nueva es solo el
 // escenario. La ruta es la REAL de la carpeta temporal (con /var → /private/var el `import.meta.url === file://argv[1]` de las tools no se cumple y salen en silencio con 0).
 import { execFileSync } from 'node:child_process';
 import { copyFileSync, readdirSync, realpathSync } from 'node:fs';

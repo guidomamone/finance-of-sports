@@ -314,5 +314,220 @@
   "code": "ruta-muerta",
   "match": "`resultado-N.json`: no existe",
   "motivo": "REVISADO (Pipeline 13, 2026-10-21): Admin/dudas-por-club.md nombra «resultado-N.json de la tanda» con N como marcador de lugar (cada tanda de búsqueda tiene el suyo); no es una ruta."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "academica-pt 2023 Gastos",
+  "motivo": "VERIFICADO (10-RC-SDUQ-2022-2023.pdf L2246: «Ganhos em perdão de dívida» 2.710737 en la unidad del sitio, 2026-10-23). Ganancia de inmovilizado o extraordinaria que hoy va a Otros ingresos (o es una quita de deuda): puede incluir plusvalías por traspasos de jugadores (Sporting 2002 imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413). Es la pregunta abierta del TODO 414; no se recategoriza antes."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "academicoviseu-pt 2024 Ingresos",
+  "motivo": "VERIFICADO (wf-2023-2024-02d5741e.pdf L599: «Rendimentos de apostas» 0.342372 en la unidad del sitio, 2026-10-23). Línea propia del documento (ingresos de apuestas, de actividades accesorias o proveitos suplementares) sin categoría fina en la taxonomía: Otros ingresos es correcto."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "aellarissa-gr 2024 Ingresos",
+  "motivo": "VERIFICADO (AEL_FS_ELP_2024-06-30.pdf L631: «Έσοδα παρεπόμενων ασχολιών» 0.642079 en la unidad del sitio, 2026-10-23). Línea propia del documento (ingresos de apuestas, de actividades accesorias o proveitos suplementares) sin categoría fina en la taxonomía: Otros ingresos es correcto."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "benfica-pt 2007 Ingresos",
+  "motivo": "VERIFICADO (relatorio-contas-2006-07.pdf L1377: «Ganhos em imobilizações» 24.114308 en la unidad del sitio, 2026-10-23). Ganancia de inmovilizado o extraordinaria que hoy va a Otros ingresos (o es una quita de deuda): puede incluir plusvalías por traspasos de jugadores (Sporting 2002 imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413). Es la pregunta abierta del TODO 414; no se recategoriza antes."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "besiktas-tr 2008 Gastos",
+  "motivo": "VERIFICADO (besiktas-futbol-bilanco-31-05-2008.pdf L2916: «Kur farkı giderleri» -17.624316 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "casapia-pt 2024 Ingresos",
+  "motivo": "VERIFICADO (relatorio-contas-2023-24.pdf L1085: «Acordo de gestão» 11.006988 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "casapia-pt 2024 Gastos",
+  "motivo": "VERIFICADO (relatorio-contas-2023-24.pdf L1111: «Acordo de gestão» -8.800839 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "casapia-pt 2025 Ingresos",
+  "motivo": "VERIFICADO (relatorio-contas-2024-25.pdf L1215: «Acordo de gestão» 12.85698 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "casapia-pt 2025 Gastos",
+  "motivo": "VERIFICADO (relatorio-contas-2024-25.pdf L1243: «Acordo de gestão» -16.808584 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "ferrocarriloeste-ar 2025 Ingresos",
+  "motivo": "VERIFICADO (balance-ejercicio-121-2024-25.pdf L93: «Para fines generales ( Anexo B )» 4615.086829 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "kuressaare-ee 2020 Ingresos",
+  "motivo": "VERIFICADO (aruanne-2020.pdf L367: «EJL toetused» 0.086747 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "kuressaare-ee 2021 Ingresos",
+  "motivo": "VERIFICADO (aruanne-2021.pdf L378: «EJL toetused» 0.127947 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "kuressaare-ee 2023 Ingresos",
+  "motivo": "VERIFICADO (aruanne-2023.pdf L387: «EJL toetused» 0.115198 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "kuressaare-ee 2024 Ingresos",
+  "motivo": "VERIFICADO (aruanne-2024.pdf L361: «EJL toetused» 0.112744 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "molde-no 2022 Ingresos",
+  "motivo": "VERIFICADO (aarsregnskap-fotballklubb-fli-2022.pdf L673: «Mediemsinntekter/tilskudd» 100.013938 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "molde-no 2024 Ingresos",
+  "motivo": "VERIFICADO (aarsregnskap-fotballklubb-fli-2024.pdf L730: «Medlemsinntekter/tilskudd» 158.867123 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "moreirense-pt 2023 Gastos",
+  "motivo": "VERIFICADO (relatorio-contas-2022-23.pdf L209: «Imparidade de dívidas a receber (perdas/reversões)» 2.55 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "nacional-pt 2023 Ingresos",
+  "motivo": "VERIFICADO (relatorio-contas-2022-23.pdf L827: «DRJD» 0.875 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "nacional-pt 2024 Ingresos",
+  "motivo": "VERIFICADO (relatorio-contas-2023-24.pdf L812: «DRJD» 0.875 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "omonia29maiou-cy 2024 Gastos",
+  "motivo": "VERIFICADO (wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf L37: «Έξοδα ποδοσφαιρικού τμήματος» -0.162607 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "paok-gr 2025 Ingresos",
+  "motivo": "VERIFICADO (PAOK_FS_2025-06-30.pdf L447: «Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχ» 31.772701 en la unidad del sitio, 2026-10-23). Ganancia de inmovilizado o extraordinaria que hoy va a Otros ingresos (o es una quita de deuda): puede incluir plusvalías por traspasos de jugadores (Sporting 2002 imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413). Es la pregunta abierta del TODO 414; no se recategoriza antes."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "remo-br 2021 Ingresos",
+  "motivo": "VERIFICADO (demonstracoes-contabeis-2021.pdf L671: «Receita com redução juros/multa - Perse» 13.490829 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "rioave-pt 2017 Gastos",
+  "motivo": "VERIFICADO (relatorio-contas-2016-17.pdf L1294: «Comissões» -8.72277 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "sarpsborg08-no 2024 Gastos",
+  "motivo": "VERIFICADO (aarsregnskap-fotballforening-fli-2024.pdf L126: «Endring i beholdning av varer under tilvirkning og» -61.027262 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "sarpsborg08-no 2025 Gastos",
+  "motivo": "VERIFICADO (aarsregnskap-fotballforening-fli-2025.pdf L1372: «Salgskostnader» -65.871707 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "sportingcp-pt 2000 Ingresos",
+  "motivo": "VERIFICADO (relatorio-contas-1999.pdf L76: «Proveitos e Ganhos Extraordinários» 3590.408 en la unidad del sitio, 2026-10-23). Ganancia de inmovilizado o extraordinaria que hoy va a Otros ingresos (o es una quita de deuda): puede incluir plusvalías por traspasos de jugadores (Sporting 2002 imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413). Es la pregunta abierta del TODO 414; no se recategoriza antes."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "sportingcp-pt 2001 Ingresos",
+  "motivo": "VERIFICADO (relatorio-contas-2000.pdf L126: «Proveitos Suplementares» 1866.067 en la unidad del sitio, 2026-10-23). Línea propia del documento (ingresos de apuestas, de actividades accesorias o proveitos suplementares) sin categoría fina en la taxonomía: Otros ingresos es correcto."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "sportingcp-pt 2002 Ingresos",
+  "motivo": "VERIFICADO (relatorio-contas-2001.pdf L761: «Ganhos em Imobiliz.» 13.413 en la unidad del sitio, 2026-10-23). Ganancia de inmovilizado o extraordinaria que hoy va a Otros ingresos (o es una quita de deuda): puede incluir plusvalías por traspasos de jugadores (Sporting 2002 imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413). Es la pregunta abierta del TODO 414; no se recategoriza antes."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "sportingcp-pt 2005 Ingresos",
+  "motivo": "VERIFICADO (relatorio-contas-2004-05.pdf L698: «G. Imobilizações» 64.981 en la unidad del sitio, 2026-10-23). Ganancia de inmovilizado o extraordinaria que hoy va a Otros ingresos (o es una quita de deuda): puede incluir plusvalías por traspasos de jugadores (Sporting 2002 imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413). Es la pregunta abierta del TODO 414; no se recategoriza antes."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "tartutammeka-ee 2020 Ingresos",
+  "motivo": "VERIFICADO (aruanne-2020.pdf L521: «Eesti Jalgpalli Liit» 0.333393 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
+ },
+ {
+  "code": "catchall-dominante",
+  "match": "valerenga-no 2023 Gastos",
+  "motivo": "VERIFICADO (Admin/carga-clubes/valerenga-no.md (el ejercicio suma el AS y el Elite con el ajuste suma-con; la línea «Kjøp og leie av spillere» es del documento de Vålerenga Fotball Elite, pág. 2): «Elite · Kjøp og leie av spillere» -56.604891 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "ferroviaria-br:",
+  "motivo": "VERIFICADO (Admin/sourcing/Brasil/Ferroviaria.md, chequeo 2026-10-21, 2026-10-23). El 2011 no existe en el repositorio de la FPF bajo el idClube 4564: el club no lo presentó. Sin documento publicado."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "novorizontino-br:",
+  "motivo": "VERIFICADO (Admin/sourcing/Brasil/Novorizontino.md, 2026-10-23). El 2011 no aparece bajo el idClube 9541 en el índice de la FPF (otros clubes sí presentaron): el club no lo presentó. Sin documento publicado."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "sarpsborg08-no:",
+  "motivo": "VERIFICADO (Admin/sourcing/Noruega/Sarpsborg 08.md, 2026-10-23). Los huecos de la FLI (2009-2011) no tienen explicación ni documento en el Regnskapsregisteret; la serie del AS está cargada desde 2012. Sin documento publicado."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "liersekempenzonen-be:",
+  "motivo": "VERIFICADO (TODO 365 y Admin/sourcing/Bélgica/Lierse Kempenzonen.md, 2026-10-23). 2023-2025: sin depósito en la BNB (chequeo 2026-10-21). 2022: el balance abreviado de la vzw ESTÁ en Clubes/Bélgica/Lierse Kempenzonen/ (margen bruto −2.369 EUR, casi sin actividad porque la NV ocupó su plaza); si se carga o se descarta lo decide el 365, que sigue abierto."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "monchengladbach-de:",
+  "motivo": "VERIFICADO (Admin/sourcing/Alemania/Borussia Mönchengladbach.md, chequeo 2026-10-18, 2026-10-23). El ejercicio 2025 existe (cifras en la asamblea de abril de 2026) pero el Jahresabschluss no está en el Unternehmensregister; se espera hacia enero de 2027. Se revisa cada mes."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "stuttgart-de:",
+  "motivo": "VERIFICADO (Admin/sourcing/Alemania/VfB Stuttgart.md, chequeo 2026-10-18, 2026-10-23). El Konzernabschluss 2025 no está depositado (North Data lista hasta 2024). Se revisa cada mes."
+ },
+ {
+  "code": "ejercicio-sin-rastro",
+  "match": "monza-it:",
+  "motivo": "VERIFICADO (Admin/sourcing/Italia/Monza.md, chequeo 2026-10-21, 2026-10-23). El bilancio 2025 sigue sin publicarse en acmonza.com (10 meses después del cierre). Se revisa en el sourcing."
+ },
+ {
+  "code": "liga-una-fuente",
+  "match": "gr-superleague2:",
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). aellarissa-gr 2025: la liga sale solo de Wikipedia; la segunda fuente (tools/segunda-fuente-liga.mjs) se hace al tocar el club."
+ },
+ {
+  "code": "liga-una-fuente",
+  "match": "pt-liga3:",
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). felgueiras-pt 2023: la liga sale solo de Wikipedia; la segunda fuente se hace al tocar el club."
+ },
+ {
+  "code": "club-sin-color-ni-null",
+  "match": "bathrugby-gb",
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Bath Rugby es un club de prueba de la taxonomía por deporte (Admin/CONVENCIONES.md); el color sale de la camiseta, no de adivinarlo."
+ },
+ {
+  "code": "liga-sin-verificar",
+  "match": "24 de 1338 filas",
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Filas viejas de data/club-leagues con null; se verifican contra la página de temporada al tocar cada club (tools/lookup-club-league.js)."
+ },
+ {
+  "code": "sponsor-sin-registro",
+  "match": "con el sponsor sin fuente como texto libre",
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Sponsors de antes del registro de búsqueda (tools/sponsor-legacy.json); se completan al tocar el club."
  }
 ]
