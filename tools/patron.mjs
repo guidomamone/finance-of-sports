@@ -4,6 +4,7 @@
 //
 // USO:
 //   node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" [--rango A..B] [--tools a.mjs,b.mjs] [--sesion unica] [--motivo "…"] [--escribir]
+//   --en <carpeta>   busca el patrón en los .js y .mjs de esa carpeta (p. ej. tools, para una condición nueva de audit.js) en vez de en Clubes/**/*.md
 //   node tools/patron.mjs --patron "<regex>"      solo cuenta (documentos y clubes) y dice parche o general; no mira ningún cambio
 //
 // Sin --rango mira lo que cambió en tools/ contra HEAD (más las tools nuevas); con --rango A..B, ese rango (para reproducir un caso viejo).
@@ -96,20 +97,20 @@ export function nombresEn(lineas, ignorar = []) {
 }
 
 // 2. cuántos documentos y clubes tienen el patrón
-function recorrer(dir, salida = []) {
+function recorrer(dir, salida = [], ext = '.md') {
   for (const e of readdirSync(dir, { withFileTypes: true })) {
     const p = join(dir, e.name);
-    if (e.isDirectory()) recorrer(p, salida); else if (e.name.endsWith('.md')) salida.push(p);
+    if (e.isDirectory()) { if (e.name !== 'node_modules') recorrer(p, salida, ext); } else if (e.name.endsWith(ext) || (ext === '.js' && e.name.endsWith('.mjs'))) salida.push(p);
   }
   return salida;
 }
-export function contar(patron) {
+export function contar(patron, en = 'Clubes') {
   const re = new RegExp(patron, 'im');
   const docs = [], clubes = new Set();
-  for (const f of recorrer(join(ROOT, 'Clubes'))) {
+  for (const f of recorrer(join(ROOT, en), [], en === 'Clubes' ? '.md' : '.js')) {
     if (!re.test(readFileSync(f, 'utf8'))) continue;
-    const r = relative(join(ROOT, 'Clubes'), f).split(sep);
-    docs.push(r.join('/')); clubes.add(r.slice(0, 2).join('/'));
+    const r = relative(join(ROOT, en), f).split(sep);
+    docs.push(r.join('/')); clubes.add(en === 'Clubes' ? r.slice(0, 2).join('/') : r.join('/')); // en otra carpeta, cada archivo es su propio grupo
   }
   return { documentos: docs.length, clubes: clubes.size, ejemplos: docs.slice(0, 5) };
 }
@@ -142,7 +143,7 @@ function principal() {
     nombres = [...new Set(cambiados.split('\n').map((f) => f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter((n) => n && ['tools', 'modulo'].includes(C.clase(n))))];
   }
   const dif = nombres.length ? cambioDeCodigo(nombres, { base, destino }) : { agregado: [], quitado: [], hayCodigo: false };
-  const cont = patron ? contar(patron) : null;
+  const cont = patron ? contar(patron, v('--en') || 'Clubes') : null;
   const bajoUmbral = cont && (cont.documentos < UMBRAL.documentos || cont.clubes < UMBRAL.clubes);
   const nom = dif.hayCodigo ? nombresEn(dif.agregado, (v('--ignorar-nombre') || '').split(',').filter(Boolean)) : [];
   const med = dif.hayCodigo ? medicion(nombres, destino) : null;

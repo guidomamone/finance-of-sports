@@ -9,7 +9,8 @@
 //   3. cambiar un archivo de tools/ que NO es de la tabla (lo que lee el medidor) cambia la clave de la caché: no se reutiliza lo viejo;
 //   4. lo que el medidor escribe en un archivo trackeado de tools/ se revierte;
 //   5. una corrida que murió a la mitad deja un respaldo: la siguiente se niega, y --restaurar devuelve las tools;
-//   6. sin tools cambiadas dice «nada que medir».
+//   6. sin tools cambiadas dice «nada que medir»;
+//   7. un cambio de solo comentarios no corre el lote: pasa por la comparación sin comentarios y anota «idéntico» (lote «solo-comentarios»); si además cambia el código, va por los lotes.
 // USO: node tools/probar-medir-pipeline.mjs    (menos de 1 minuto; sale con 1 si algún caso falla; no toca nada fuera de su carpeta de prueba)
 import { mkdirSync, writeFileSync, readFileSync, copyFileSync, rmSync, existsSync, readdirSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
@@ -19,10 +20,10 @@ const ROOT = resolve(import.meta.dirname, '..');
 const T = resolve(ROOT, 'Admin', 'mediciones', 'pipeline', '_prueba-repo');
 rmSync(T, { recursive: true, force: true });
 for (const d of ['tools', 'Admin/lotes', 'Admin/registros']) mkdirSync(join(T, d), { recursive: true });
-for (const f of ['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs']) copyFileSync(join(ROOT, 'tools', f), join(T, 'tools', f));
+for (const f of ['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js']) copyFileSync(join(ROOT, 'tools', f), join(T, 'tools', f));
 const w = (rel, txt) => writeFileSync(join(T, rel), txt);
 const leer = (rel) => readFileSync(join(T, rel), 'utf8');
-const NP = Object.fromEntries(['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'fake-medidor.mjs'].map((f) => [f, 'prueba']));
+const NP = Object.fromEntries(['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'fake-medidor.mjs'].map((f) => [f, 'prueba']));
 w('tools/pipeline-tools.json', JSON.stringify({
   lotes: { chico: 'Admin/lotes/prueba-rapida.txt', mediano: 'Admin/lotes/prueba-mediana.txt', completo: 'Admin/lotes/prueba-completa.txt' },
   medidores: { salida: { que: 'prueba', usaLista: false, correr: ['tools/fake-medidor.mjs'], comparar: 'texto' } },
@@ -50,7 +51,7 @@ let mal = 0;
 const caso = (nombre, cond, detalle = '') => { if (!cond) mal++; console.log(`${cond ? 'ok ' : 'MAL'} ${nombre}${cond ? '' : ` — ${detalle}`}`); };
 
 // 1. cambio sin efecto
-w('tools/fake-tool.mjs', 'export const VALOR = 1; // un comentario\n');
+w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 0; // un comentario\n');
 let r = medir();
 caso('un cambio sin efecto da idéntico y sale con 0', r.status === 0 && /idéntico/.test(r.out) && registro().at(-1)?.resultado === 'idéntico', r.out.slice(-300));
 caso('la tool queda como se editó (no la versión de git)', leer('tools/fake-tool.mjs').includes('un comentario'));
@@ -89,6 +90,18 @@ volver();
 // 6. nada cambió
 r = medir();
 caso('sin tools cambiadas dice «nada que medir»', r.status === 0 && /nada que medir/.test(r.out), r.out.slice(-200));
+
+// 7. solo comentarios (TODO 374)
+w('tools/fake-tool.mjs', 'export const VALOR = 1; // otro comentario, más largo\n');
+r = medir();
+let ult = registro().at(-1);
+caso('un cambio de solo comentarios pasa por la comparación y anota idéntico, sin lote', r.status === 0 && /Solo comentarios/.test(r.out) && ult?.resultado === 'idéntico' && ult?.lote?.nivel === 'solo-comentarios', r.out.slice(-300));
+caso('un cambio de solo comentarios no corre el medidor', !/Lote chico/.test(r.out), r.out.slice(-200));
+volver();
+w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 5; // otro comentario\n');
+r = medir();
+caso('si además cambia el código, va por los lotes', !/Solo comentarios/.test(r.out) && /Lote chico/.test(r.out), r.out.slice(-300));
+volver();
 
 rmSync(T, { recursive: true, force: true });
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');

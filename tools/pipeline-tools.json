@@ -74,6 +74,10 @@
    "comparar": "texto"
   }
  },
+ "solo_comentarios": {
+  "que": "el medidor de un cambio que solo toca comentarios: el código de cada tool cambiada, sin comentarios, igual al de HEAD, y node --check; sin lote (Admin/CONVENCIONES.md, «Comentarios en tools/»)",
+  "correr": ["tools/comparar-sin-comentarios.js", "--tools"]
+ },
  "tools": {
   "cargar.mjs": { "alcance": "compartida", "medidores": ["cargar", "audit"] },
   "cargar-lote.mjs": { "alcance": "etapa", "medidores": ["cargar"] },

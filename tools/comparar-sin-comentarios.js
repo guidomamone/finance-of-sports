@@ -7,6 +7,8 @@
 //
 //   node tools/comparar-sin-comentarios.js index.html js/liga.js   # compara cada uno contra HEAD
 //   node tools/comparar-sin-comentarios.js --todos                 # index.html y todo js/
+//   node tools/comparar-sin-comentarios.js --tools                 # las tools/ cambiadas contra HEAD: mismo código sin comentarios y `node --check` (limpiar comentarios de tools/)
+//   node tools/comparar-sin-comentarios.js --medir [N]             # por tool de tools/: bytes de comentarios, referencias a «Versión N», «to-do N» y fechas, cabecera larga; las N peores (default 15)
 //
 // Normalización: se borra cada comentario, se recorta el espacio al final de cada línea y se descartan las líneas vacías. Todo lo
 // demás (indentación, espacios dentro de una línea, strings) tiene que coincidir byte a byte.
@@ -211,10 +213,46 @@ function comparar(rel) {
   return { rel, ok: true, msg: `mismo código (comentarios: ${nAntes} → ${nAhora})` };
 }
 
-module.exports = { scan, comentarios, normalizar, publicados };
+// Lo que un comentario de una tool no debería llevar: historia («Versión N», «to-do N», fechas AAAA-MM-DD). audit.js lo cuenta (`comentario-historico-en-tools`).
+const HISTORIA = /Versi[oó]n \d+|\bto-?do \d+|\bTODO \d+|\b20\d\d-\d\d-\d\d\b/gi;
+function herramientas() {
+  return fs.readdirSync(path.join(ROOT, 'tools')).filter(f => /\.(mjs|js)$/.test(f)).sort();
+}
+function medirTool(f) {
+  const rel = 'tools/' + f;
+  const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
+  const { comments } = scan(rel, src);
+  const bytes = comments.reduce((a, c) => a + Buffer.byteLength(c.text), 0);
+  const historia = comments.flatMap(c => (c.text.match(HISTORIA) || []).map(t => ({ t, line: src.slice(0, c.pos).split('\n').length })));
+  let cabecera = 0;
+  for (const l of src.split('\n')) { if (l.startsWith('//') || l.startsWith('#!') || l.trim() === '') cabecera++; else break; }
+  return { f, total: Buffer.byteLength(src), bytes, historia, cabecera };
+}
+
+module.exports = { scan, comentarios, normalizar, publicados, herramientas, medirTool, HISTORIA };
 
 if (require.main === module) {
   const args = process.argv.slice(2);
+  if (args.includes('--medir')) {
+    const filas = herramientas().map(medirTool);
+    const T = filas.reduce((a, r) => [a[0] + r.total, a[1] + r.bytes, a[2] + r.historia.length], [0, 0, 0]);
+    console.log(`${filas.length} tools · ${T[0]} bytes, ${T[1]} de comentarios (${(100 * T[1] / T[0]).toFixed(1)} %) · ${T[2]} referencias históricas en ${filas.filter(r => r.historia.length).length} tools · ${filas.filter(r => r.cabecera > 25).length} cabeceras de más de 25 líneas`);
+    const n = Number(args[args.indexOf('--medir') + 1]) || 15;
+    for (const r of filas.sort((a, b) => b.historia.length - a.historia.length || b.bytes - a.bytes).slice(0, n)) console.log(`  ${r.f.padEnd(34)} ${String(r.total).padStart(7)} B · comentarios ${String(Math.round(100 * r.bytes / r.total)).padStart(2)} % · historia ${String(r.historia.length).padStart(3)} · cabecera ${r.cabecera} líneas`);
+    process.exit(0);
+  }
+  if (args.includes('--tools')) { // las tools cambiadas contra HEAD (más las nuevas): mismo código y sintaxis; la salida no cambia con los comentarios, para usarla de medidor
+    const cambiadas = [...new Set((execFileSync('git', ['diff', '--name-only', 'HEAD', '--', 'tools'], { cwd: ROOT }).toString() + '\n' + execFileSync('git', ['ls-files', '--others', '--exclude-standard', 'tools'], { cwd: ROOT }).toString()).split('\n').map(f => f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter(Boolean))];
+    let mal = 0;
+    for (const f of cambiadas) {
+      const r = comparar('tools/' + f);
+      let sintaxis = true; try { execFileSync('node', ['--check', path.join(ROOT, 'tools', f)], { stdio: 'ignore' }); } catch { sintaxis = false; }
+      if (!r.ok && r.msg !== 'no está en HEAD') { console.log(`MAL tools/${f}: ${r.msg}`); mal++; }
+      if (!sintaxis) { console.log(`MAL tools/${f}: node --check falla`); mal++; }
+    }
+    console.log(mal ? `${mal} problema(s)` : `${cambiadas.length} tools cambiadas: mismo código sin comentarios y sintaxis válida`);
+    process.exit(mal ? 1 : 0);
+  }
   const files = args.includes('--todos') ? publicados() : args.filter(a => !a.startsWith('--'));
   if (!files.length) { console.error('uso: node tools/comparar-sin-comentarios.js <archivo...> | --todos'); process.exit(2); }
   let mal = 0;

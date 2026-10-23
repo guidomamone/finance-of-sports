@@ -87,6 +87,27 @@ const modulosCambiados = nombres.filter((n) => !T.tools[n]);
 if (modulosCambiados.length) console.log(`Módulos que usan tools del pipeline (se miden con los medidores de quienes los usan): ${modulosCambiados.join(', ')}`);
 if (!nombres.length) { console.log('Ninguna tool del pipeline (ni módulo que usen) cambió respecto de ' + base + ': nada que medir.'); process.exit(0); }
 
+// ---- solo comentarios (TODO 374) ----------------------------------------------
+// Si el código sin comentarios de cada tool es el de la base, no hay nada que ejercitar con un lote: la prueba es la comparación
+// (tools/comparar-sin-comentarios.js --tools: mismo código contra HEAD y node --check). Una mudanza de código sí pasa por los lotes.
+if (base === 'HEAD' && !A.includes('--ensayo') && !flag('--lote') && !flag('--medidor') && existsSync(resolve(ROOT, 'tools/patron.mjs')) && existsSync(resolve(ROOT, 'tools/comparar-sin-comentarios.js'))) {
+  const { cambioDeCodigo } = await import('./patron.mjs');
+  const dif = cambioDeCodigo(nombres, { base: baseRev });
+  if (!dif.agregado.length && !dif.quitado.length) {
+    const r = spawnSync('node', T.solo_comentarios?.correr || ['tools/comparar-sin-comentarios.js', '--tools'],{ cwd: ROOT, encoding: 'utf8' });
+    const salida = (r.stdout || '').trim();
+    console.log(`Solo comentarios en ${nombres.join(', ')}: ${salida}`);
+    if (r.status !== 0) { console.error('La comparación sin comentarios falla: el cambio no es solo de comentarios o no compila.'); process.exit(1); }
+    const linea = {
+      fecha: new Date().toISOString().slice(0, 10), base: baseRev,
+      tools: Object.fromEntries(nombres.map((n) => [n, { antes: gitOk('rev-parse', `${baseRev}:tools/${n}`)?.trim() || null, despues: huellaArchivo(`tools/${n}`) }])),
+      lote: { nivel: 'solo-comentarios' }, medidores: [{ medidor: 'sin-comentarios', nivel: 'solo-comentarios', diferencias: 0, resumen: [salida] }], resultado: 'idéntico',
+    };
+    if (!A.includes('--no-anotar')) { appendFileSync(REGISTRO, JSON.stringify(linea) + '\n'); console.log('Resultado: idéntico. Anotado en Admin/registros/mediciones-pipeline.jsonl.'); }
+    process.exit(0);
+  }
+}
+
 // ---- plan ------------------------------------------------------------------
 const medidores = [...new Set(nombres.flatMap((n) => info(n).medidores))].filter((m) => !flag('--medidor') || flag('--medidor').split(',').includes(m));
 const minimo = nombres.some((n) => info(n).alcance === 'compartida') ? 'completo' : 'mediano';

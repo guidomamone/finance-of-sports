@@ -931,6 +931,17 @@ const HISTORIA_EN_DOCS = [
   ['todo', /\bto-?dos? (?:n[°º] ?)?\d{2,3}\b/gi, '«to-do N»'],
 ];
 
+// Los comentarios de tools/ llevan el porqué, la invariante y las trampas; la historia («Versión N», «to-do N», fechas) va a Admin/CHANGELOG.md. P3: la lista de limpieza.
+// Cuenta por tool; tools/archivo/ no entra. Cómo se limpia y la prueba de que no cambió el código: Admin/CONVENCIONES.md, «Comentarios en tools/».
+function checkComentarioHistoricoEnTools() {
+  const { herramientas, medirTool } = require('./comparar-sin-comentarios.js');
+  const filas = herramientas().map(medirTool).filter(r => r.historia.length);
+  if (!filas.length) return;
+  const total = filas.reduce((a, r) => a + r.historia.length, 0);
+  const top = filas.sort((a, b) => b.historia.length - a.historia.length).slice(0, 5).map(r => `${r.f}:${r.historia[0].line} (${r.historia.length})`).join(', ');
+  add('P3', 'comentario-historico-en-tools', `${total} referencias a «Versión N», «to-do N» o fechas en comentarios de ${filas.length} tools; las que más (archivo:primera línea): ${top}. Un comentario dice el porqué y la invariante, no cuándo se decidió`);
+}
+
 function checkHistoriaEnDocs() {
   const archivos = [...DOCS_DE_CRITERIO, ...mdsDeSkills()].filter(f => fs.existsSync(path.join(ROOT, f)));
   for (const [clave, re, nombre] of HISTORIA_EN_DOCS) {
@@ -2214,6 +2225,7 @@ function main() {
   checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
   checkHistoriaEnDocs();
+  checkComentarioHistoricoEnTools();
   checkDudasResueltas();
   checkRegistrosSinLector();
   checkMedicionesSinDestino();
