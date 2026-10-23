@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 977 — `limpiar-comentarios --revisar`: lo que una limpieza quitaría con contenido [395]
+
+- `node tools/limpiar-comentarios.mjs --revisar [--min 3] [--rev <commit>]`: por línea de comentario que la limpieza cambiaría, cuenta las palabras que quita y que no son referencia, fecha ni atribución, e imprime las que llegan a `--min` (archivo:línea y las palabras) para leerlas antes de `--escribir`; `--rev` lo corre sobre las tools como estaban en un commit. Sobre las tools anteriores a la primera pasada lista 79 líneas (casi todas punteros a un HANDOFF o a un paso, ninguna del caso «KNVB para la Eredivisie…», que la regla ya deja).
+
 ## Versión 976 — `fos muestra`: una muestra repartida de un patrón [397]
 
 - `tools/muestra.mjs` (`node tools/fos.mjs muestra "<regex>" [--en tools|Clubes|Admin] [--n 30] [--ext …]`): junta las líneas que cumplen la regex y imprime n repartidas a intervalo fijo (primera y última incluidas), con archivo:línea y un recorte; solo lee. Herramienta de orden (`no_pipeline`).
