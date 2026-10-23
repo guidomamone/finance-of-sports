@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "pontepreta-br",
@@ -19,7 +19,8 @@
       "title": "Associação Atlética Ponte Preta — Demonstrações Financeiras, Balanços Patrimoniais em 31/12/2022 e 31/12/2021",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "url": "https://futebolpaulista.com.br/Repositorio/Institucional/2022/DF%20para%20jornal%202022.pdf"
+      "url": "https://futebolpaulista.com.br/Repositorio/Institucional/2022/DF%20para%20jornal%202022.pdf",
+      "document": "Clubes/Brasil/Ponte Preta/balanco-2021-2022.pdf"
     },
     {
       "id": "pontepreta-br-balanco-2022-2023",
@@ -27,7 +28,8 @@
       "title": "Associação Atlética Ponte Preta — Demonstrações Financeiras, Balanços Patrimoniais em 31/12/2023 e 31/12/2022",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "url": "https://futebolpaulista.com.br/Repositorio/Institucional/2023/Balanco%20Associacao%20Atletica%20Ponte%20Preta..pdf"
+      "url": "https://futebolpaulista.com.br/Repositorio/Institucional/2023/Balanco%20Associacao%20Atletica%20Ponte%20Preta..pdf",
+      "document": "Clubes/Brasil/Ponte Preta/balanco-2022-2023.pdf"
     },
     {
       "id": "pontepreta-br-balanco-2023-2024",
@@ -35,14 +37,16 @@
       "title": "Associação Atlética Ponte Preta — Demonstrações Financeiras, Balanços Patrimoniais em 31/12/2024 e 31/12/2023",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "url": "https://futebolpaulista.com.br/Repositorio/Institucional/2024/Balanco%20Publicacao%20FPF.pdf"
+      "url": "https://futebolpaulista.com.br/Repositorio/Institucional/2024/Balanco%20Publicacao%20FPF.pdf",
+      "document": "Clubes/Brasil/Ponte Preta/balanco-2023-2024.pdf"
     },
     {
       "id": "pontepreta-br-balanco-2024-2025",
       "club_id": "pontepreta-br",
       "title": "Associação Atlética Ponte Preta — balanco-2024-2025 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf"
     }
   ],
   "management": [

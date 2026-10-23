@@ -36,6 +36,6 @@ window.CLUB_GENERIC_DATA["aalesund-no"] = {
   presupuestoOverlayByYear: aalesundNoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"aalesund-no-aarsregnskap-aalesund-fotball-as-2025":{"id":"aalesund-no-aarsregnskap-aalesund-fotball-as-2025","clubId":"aalesund-no","title":"Ålesund Fotball AS — aarsregnskap-aalesund-fotball-as-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"aalesund-no-aarsregnskap-aalesund-fotball-as-2025":{"id":"aalesund-no-aarsregnskap-aalesund-fotball-as-2025","clubId":"aalesund-no","title":"Ålesund Fotball AS — aarsregnskap-aalesund-fotball-as-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf"}});
 
 memberCountByClub["aalesund-no"] = null;

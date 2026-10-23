@@ -52,6 +52,6 @@ window.CLUB_GENERIC_DATA["fcutrecht-nl"] = {
   presupuestoOverlayByYear: fcutrechtNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fcutrecht-nl-jaarverslag-2024-2025":{"id":"fcutrecht-nl-jaarverslag-2024-2025","clubId":"fcutrecht-nl","title":"Football Club Utrecht BV — FC-Utrecht-Jaarverslag-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fcutrecht-nl-jaarverslag-2024-2025":{"id":"fcutrecht-nl-jaarverslag-2024-2025","clubId":"fcutrecht-nl","title":"Football Club Utrecht BV — FC-Utrecht-Jaarverslag-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2024-2025.pdf"}});
 
 memberCountByClub["fcutrecht-nl"] = null;

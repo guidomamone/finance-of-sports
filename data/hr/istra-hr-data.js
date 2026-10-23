@@ -39,6 +39,6 @@ window.CLUB_GENERIC_DATA["istra-hr"] = {
   presupuestoOverlayByYear: istraHrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"istra-hr-financijsko-izvjesce-2025":{"id":"istra-hr-financijsko-izvjesce-2025","clubId":"istra-hr","title":"Financijski izvještaji na dan 31. prosinca 2025. godine s izvješćem revizora (Pravilnik o licenciranju i financijskoj održivosti klubova HNS-a)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"istra-hr-financijsko-izvjesce-2025":{"id":"istra-hr-financijsko-izvjesce-2025","clubId":"istra-hr","title":"Financijski izvještaji na dan 31. prosinca 2025. godine s izvješćem revizora (Pravilnik o licenciranju i financijskoj održivosti klubova HNS-a)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Istra 1961/financijsko-izvjesce-2025.pdf"}});
 
 memberCountByClub["istra-hr"] = null;

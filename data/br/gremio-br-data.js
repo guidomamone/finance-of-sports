@@ -110,7 +110,7 @@ window.CLUB_GENERIC_DATA["gremio-br"] = {
   presupuestoOverlayByYear: gremioBrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"gremio-br-demonstracoes-2023-2024":{"id":"gremio-br-demonstracoes-2023-2024","clubId":"gremio-br","title":"Demonstrações Contábeis dos Exercícios Findos em 31 de Dezembro de 2024 e de 2023 (Reapresentado)","type":"official_balance_sheet","reliability":"primary","url":"https://gremio.net/documentos/"},"gremio-br-wf-2024-2025-1774995c":{"id":"gremio-br-wf-2024-2025-1774995c","clubId":"gremio-br","title":"Grêmio Foot-Ball Porto Alegrense — wf-2024-2025-1774995c (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"gremio-br-demonstracoes-2023-2024":{"id":"gremio-br-demonstracoes-2023-2024","clubId":"gremio-br","title":"Demonstrações Contábeis dos Exercícios Findos em 31 de Dezembro de 2024 e de 2023 (Reapresentado)","type":"official_balance_sheet","reliability":"primary","url":"https://gremio.net/documentos/"},"gremio-br-wf-2024-2025-1774995c":{"id":"gremio-br-wf-2024-2025-1774995c","clubId":"gremio-br","title":"Grêmio Foot-Ball Porto Alegrense — wf-2024-2025-1774995c (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Brasil/Gremio/wf-2024-2025-1774995c.pdf"}});
 
 gestionesByClub["gremio-br"] = {"guerraneto":{"nombre":"Guerra Neto (presidente al momento del balance 2024)","firstYear":2024,"lastYear":2024}};
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "boyacachico-co",
@@ -18,14 +18,16 @@
       "club_id": "boyacachico-co",
       "title": "Estados Financieros (Notas), al 31 de diciembre de 2024 y 2023",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Boyaca Chico/estados-financieros-2024.pdf"
     },
     {
       "id": "boyacachico-co-estados-financieros-2025",
       "club_id": "boyacachico-co",
       "title": "Deportivo Boyacá Chicó Futbol Club S.A. — estados-financieros-2025 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2024}],

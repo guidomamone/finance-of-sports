@@ -45,6 +45,6 @@ window.CLUB_GENERIC_DATA["fortunasittard-nl"] = {
   presupuestoOverlayByYear: fortunasittardNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fortunasittard-nl-jaarrekening-2024-2025":{"id":"fortunasittard-nl-jaarrekening-2024-2025","clubId":"fortunasittard-nl","title":"Fortuna Sittard B.V. — Fortuna-Sittard-Jaarrekening-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fortunasittard-nl-jaarrekening-2024-2025":{"id":"fortunasittard-nl-jaarrekening-2024-2025","clubId":"fortunasittard-nl","title":"Fortuna Sittard B.V. — Fortuna-Sittard-Jaarrekening-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.pdf"}});
 
 memberCountByClub["fortunasittard-nl"] = null;

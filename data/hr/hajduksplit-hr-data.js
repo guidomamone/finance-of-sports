@@ -112,7 +112,7 @@ window.CLUB_GENERIC_DATA["hajduksplit-hr"] = {
   presupuestoOverlayByYear: hajduksplitHrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"hajduksplit-hr-financijsko-izvjesce-2024":{"id":"hajduksplit-hr-financijsko-izvjesce-2024","clubId":"hajduksplit-hr","title":"Godišnji financijski izvještaji za posebne namjene za 2024. godinu (Financijski kriterij FO2)","type":"official_balance_sheet","reliability":"primary"},"hajduksplit-hr-financijsko-izvjesce-2025":{"id":"hajduksplit-hr-financijsko-izvjesce-2025","clubId":"hajduksplit-hr","title":"HNK Hajduk s.d.d. — financijsko-izvjesce-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"hajduksplit-hr-financijsko-izvjesce-2024":{"id":"hajduksplit-hr-financijsko-izvjesce-2024","clubId":"hajduksplit-hr","title":"Godišnji financijski izvještaji za posebne namjene za 2024. godinu (Financijski kriterij FO2)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2024.pdf"},"hajduksplit-hr-financijsko-izvjesce-2025":{"id":"hajduksplit-hr-financijsko-izvjesce-2025","clubId":"hajduksplit-hr","title":"HNK Hajduk s.d.d. — financijsko-izvjesce-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.pdf"}});
 
 gestionesByClub["hajduksplit-hr"] = {"actual":{"nombre":"Gestión actual","firstYear":2024,"lastYear":2024}};
 

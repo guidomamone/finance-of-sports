@@ -56,7 +56,7 @@ window.CLUB_GENERIC_DATA["envigado-co"] = {
   presupuestoOverlayByYear: envigadoCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"envigado-co-estados-financieros-2025":{"id":"envigado-co-estados-financieros-2025","clubId":"envigado-co","title":"Estados Financieros Individuales (auditados, Grant Thornton), al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"envigado-co-estados-financieros-2025":{"id":"envigado-co-estados-financieros-2025","clubId":"envigado-co","title":"Estados Financieros Individuales (auditados, Grant Thornton), al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Envigado/estados-financieros-2025.pdf"}});
 
 gestionesByClub["envigado-co"] = {"actual":{"nombre":"Gestión actual","firstYear":2025,"lastYear":2025}};
 

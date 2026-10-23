@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "udinese-it",
@@ -18,14 +18,16 @@
       "club_id": "udinese-it",
       "title": "Udinese Calcio S.p.A. — Udinese-bilancio-2024-25 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf"
     },
     {
       "id": "udinese-it-bilancio-2021-22",
       "club_id": "udinese-it",
       "title": "Udinese Calcio S.p.A. — Udinese-bilancio-2021-22 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf"
     }
   ],
   "members": null,

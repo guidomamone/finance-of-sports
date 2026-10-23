@@ -83,7 +83,7 @@ window.CLUB_GENERIC_DATA["newells-ar"] = {
   resultadosData: newellsArResultadosData, titulosData: newellsArTitulosData,
 };
 
-Object.assign(sources, {"newells-ar-memoria-y-balance-2018-2019":{"id":"newells-ar-memoria-y-balance-2018-2019","clubId":"newells-ar","title":"Memoria y Balance General, Ejercicio 1°/7/2018 al 30/6/2019","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"newells-ar-memoria-y-balance-2018-2019":{"id":"newells-ar-memoria-y-balance-2018-2019","clubId":"newells-ar","title":"Memoria y Balance General, Ejercicio 1°/7/2018 al 30/6/2019","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Argentina/Newells Old Boys/memoria-y-balance-2018-2019.pdf"}});
 
 gestionesByClub["newells-ar"] = {"bermudez":{"nombre":"Bermúdez","firstYear":2019,"lastYear":2019}};
 

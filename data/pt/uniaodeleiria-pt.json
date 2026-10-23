@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "uniaodeleiria-pt",
@@ -18,14 +18,16 @@
       "club_id": "uniaodeleiria-pt",
       "title": "União de Leiria- Futebol, SAD — Relatorio-Contas-UDL-SAD_2023-2024 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf"
     },
     {
       "id": "uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023",
       "club_id": "uniaodeleiria-pt",
       "title": "União de Leiria- Futebol, SAD — Relatorio-Contas-UDL-SAD_2022-2023 (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.pdf"
     }
   ],
   "members": null,

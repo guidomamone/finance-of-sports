@@ -63,6 +63,6 @@ window.CLUB_GENERIC_DATA["willemii-nl"] = {
   presupuestoOverlayByYear: willemiiNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"willemii-nl-jaarverslag-2024-2025":{"id":"willemii-nl-jaarverslag-2024-2025","clubId":"willemii-nl","title":"Willem II Holding B.V. — Willem-II-Jaarverslag-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"willemii-nl-jaarverslag-2024-2025":{"id":"willemii-nl-jaarverslag-2024-2025","clubId":"willemii-nl","title":"Willem II Holding B.V. — Willem-II-Jaarverslag-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2024-2025.pdf"}});
 
 memberCountByClub["willemii-nl"] = null;

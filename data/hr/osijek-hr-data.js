@@ -40,6 +40,6 @@ window.CLUB_GENERIC_DATA["osijek-hr"] = {
   presupuestoOverlayByYear: osijekHrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"osijek-hr-financijsko-izvjesce-2025":{"id":"osijek-hr-financijsko-izvjesce-2025","clubId":"osijek-hr","title":"Revidirani godišnji kombinirani financijski izvještaji za posebne namjene za 2025. godinu","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"osijek-hr-financijsko-izvjesce-2025":{"id":"osijek-hr-financijsko-izvjesce-2025","clubId":"osijek-hr","title":"Revidirani godišnji kombinirani financijski izvještaji za posebne namjene za 2025. godinu","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Osijek/financijsko-izvjesce-2025.pdf"}});
 
 memberCountByClub["osijek-hr"] = null;

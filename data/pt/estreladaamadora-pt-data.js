@@ -82,6 +82,6 @@ window.CLUB_GENERIC_DATA["estreladaamadora-pt"] = {
   presupuestoOverlayByYear: estreladaamadoraPtPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"estreladaamadora-pt-relatorio-contas-2022-23":{"id":"estreladaamadora-pt-relatorio-contas-2022-23","clubId":"estreladaamadora-pt","title":"Club Football Estrela, SAD — relatorio-contas-2022-23 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"},"estreladaamadora-pt-relatorio-contas-2021-22":{"id":"estreladaamadora-pt-relatorio-contas-2021-22","clubId":"estreladaamadora-pt","title":"Club Football Estrela, SAD — relatorio-contas-2021-22 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"estreladaamadora-pt-relatorio-contas-2022-23":{"id":"estreladaamadora-pt-relatorio-contas-2022-23","clubId":"estreladaamadora-pt","title":"Club Football Estrela, SAD — relatorio-contas-2022-23 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.pdf"},"estreladaamadora-pt-relatorio-contas-2021-22":{"id":"estreladaamadora-pt-relatorio-contas-2021-22","clubId":"estreladaamadora-pt","title":"Club Football Estrela, SAD — relatorio-contas-2021-22 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/Estrela da Amadora/relatorio-contas-2021-22.pdf"}});
 
 memberCountByClub["estreladaamadora-pt"] = null;

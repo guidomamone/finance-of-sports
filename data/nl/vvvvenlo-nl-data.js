@@ -36,6 +36,6 @@ window.CLUB_GENERIC_DATA["vvvvenlo-nl"] = {
   presupuestoOverlayByYear: vvvvenloNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"vvvvenlo-nl-jaarverslag-2024-2025-vvv-venlo-bv":{"id":"vvvvenlo-nl-jaarverslag-2024-2025-vvv-venlo-bv","clubId":"vvvvenlo-nl","title":"VVV-Venlo B.V. — jaarverslag_2024-2025_-_vvv-venlo_bv (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"vvvvenlo-nl-jaarverslag-2024-2025-vvv-venlo-bv":{"id":"vvvvenlo-nl-jaarverslag-2024-2025-vvv-venlo-bv","clubId":"vvvvenlo-nl","title":"VVV-Venlo B.V. — jaarverslag_2024-2025_-_vvv-venlo_bv (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.pdf"}});
 
 memberCountByClub["vvvvenlo-nl"] = null;

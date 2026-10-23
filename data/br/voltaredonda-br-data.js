@@ -63,7 +63,7 @@ window.CLUB_GENERIC_DATA["voltaredonda-br"] = {
   presupuestoOverlayByYear: voltaredondaBrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"voltaredonda-br-balanco-2024":{"id":"voltaredonda-br-balanco-2024","clubId":"voltaredonda-br","title":"Demonstrações Financeiras do Volta Redonda Futebol Clube, Exercícios Findos em 31 de Dezembro de 2024 e de 2023","type":"official_balance_sheet","reliability":"primary","url":"https://servicos.fferj.com.br/ClubesLigas/ViewTeam?alias=134"},"voltaredonda-br-demonstracoes-2025":{"id":"voltaredonda-br-demonstracoes-2025","clubId":"voltaredonda-br","title":"Demonstrações Financeiras do Volta Redonda Futebol Clube, Exercícios Findos em 31 de Dezembro de 2025 e de 2024","type":"official_balance_sheet","reliability":"primary","url":"https://voltaco.com.br/transparency"}});
+Object.assign(sources, {"voltaredonda-br-balanco-2024":{"id":"voltaredonda-br-balanco-2024","clubId":"voltaredonda-br","title":"Demonstrações Financeiras do Volta Redonda Futebol Clube, Exercícios Findos em 31 de Dezembro de 2024 e de 2023","type":"official_balance_sheet","reliability":"primary","url":"https://servicos.fferj.com.br/ClubesLigas/ViewTeam?alias=134","documento":"Clubes/Brasil/Volta Redonda/balanco-2024.pdf"},"voltaredonda-br-demonstracoes-2025":{"id":"voltaredonda-br-demonstracoes-2025","clubId":"voltaredonda-br","title":"Demonstrações Financeiras do Volta Redonda Futebol Clube, Exercícios Findos em 31 de Dezembro de 2025 e de 2024","type":"official_balance_sheet","reliability":"primary","url":"https://voltaco.com.br/transparency"}});
 
 gestionesByClub["voltaredonda-br"] = {"hortajardim":{"nombre":"Flávio Cautiero Horta Jardim","firstYear":2024,"lastYear":2025}};
 

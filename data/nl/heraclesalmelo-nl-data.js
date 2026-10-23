@@ -110,6 +110,6 @@ window.CLUB_GENERIC_DATA["heraclesalmelo-nl"] = {
   presupuestoOverlayByYear: heraclesalmeloNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"heraclesalmelo-nl-heracles-jaarrekening-2024-2025":{"id":"heraclesalmelo-nl-heracles-jaarrekening-2024-2025","clubId":"heraclesalmelo-nl","title":"Stichting Heracles Almelo — Heracles-Jaarrekening-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"heraclesalmelo-nl-heracles-jaarrekening-2024-2025":{"id":"heraclesalmelo-nl-heracles-jaarrekening-2024-2025","clubId":"heraclesalmelo-nl","title":"Stichting Heracles Almelo — Heracles-Jaarrekening-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2024-2025.pdf"}});
 
 memberCountByClub["heraclesalmelo-nl"] = null;

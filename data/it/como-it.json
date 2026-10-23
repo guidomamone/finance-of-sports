@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "como-it",
@@ -18,14 +18,16 @@
       "club_id": "como-it",
       "title": "Como 1907 S.r.l. — Como-gruppo-pro-forma-consolidamento-2025 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf"
     },
     {
       "id": "como-it-fascicolo-bilancio-2024",
       "club_id": "como-it",
       "title": "Como 1907 S.r.l. — Como-fascicolo-bilancio-2024 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.pdf"
     }
   ],
   "members": null,

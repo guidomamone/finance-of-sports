@@ -53,7 +53,7 @@ window.CLUB_GENERIC_DATA["millonarios-co"] = {
   presupuestoOverlayByYear: millonariosCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"millonarios-co-estados-financieros-2025":{"id":"millonarios-co-estados-financieros-2025","clubId":"millonarios-co","title":"Estados Financieros (auditados), al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"millonarios-co-estados-financieros-2025":{"id":"millonarios-co-estados-financieros-2025","clubId":"millonarios-co","title":"Estados Financieros (auditados), al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Millonarios/estados-financieros-2025.pdf"}});
 
 gestionesByClub["millonarios-co"] = {"actual":{"nombre":"Gestión actual (sin confirmar)","firstYear":2025,"lastYear":2025}};
 

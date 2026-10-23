@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "banfield-ar",
@@ -18,7 +18,8 @@
       "club_id": "banfield-ar",
       "title": "Memoria y Balance General, 116° Ejercicio Económico (1°/7/2019 al 30/6/2020)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Banfield/memoria-y-balance-2019-2020.pdf"
     }
   ],
   "management": [{"id":"barbuto","name":"Barbuto (2018-2021)","first_year":2020,"last_year":2020}],

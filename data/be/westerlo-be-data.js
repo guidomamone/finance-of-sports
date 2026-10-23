@@ -52,6 +52,6 @@ window.CLUB_GENERIC_DATA["westerlo-be"] = {
   presupuestoOverlayByYear: westerloBePresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"westerlo-be-jaarrekening-2025":{"id":"westerlo-be-jaarrekening-2025","clubId":"westerlo-be","title":"Jaarrekening van KVC Westerlo BV voor het boekjaar van 1/7/2024 tot 30/6/2025","type":"official_balance_sheet","reliability":"primary"},"westerlo-be-jaarrekening-2015-06-30-individual":{"id":"westerlo-be-jaarrekening-2015-06-30-individual","clubId":"westerlo-be","title":"KVC Westerlo BV — jaarrekening-2015-06-30-individual (ejercicio 2015)","type":"official_balance_sheet","reliability":"primary","publicNote":"Ejercicio de transición por cambio de fecha de cierre: del 01/01/2014 al 30/06/2015 (18 meses)."}});
+Object.assign(sources, {"westerlo-be-jaarrekening-2025":{"id":"westerlo-be-jaarrekening-2025","clubId":"westerlo-be","title":"Jaarrekening van KVC Westerlo BV voor het boekjaar van 1/7/2024 tot 30/6/2025","type":"official_balance_sheet","reliability":"primary"},"westerlo-be-jaarrekening-2015-06-30-individual":{"id":"westerlo-be-jaarrekening-2015-06-30-individual","clubId":"westerlo-be","title":"KVC Westerlo BV — jaarrekening-2015-06-30-individual (ejercicio 2015)","type":"official_balance_sheet","reliability":"primary","publicNote":"Ejercicio de transición por cambio de fecha de cierre: del 01/01/2014 al 30/06/2015 (18 meses).","documento":"Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf"}});
 
 memberCountByClub["westerlo-be"] = null;

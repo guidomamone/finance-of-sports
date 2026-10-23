@@ -38,6 +38,6 @@ window.CLUB_GENERIC_DATA["spartarotterdam-nl"] = {
   presupuestoOverlayByYear: spartarotterdamNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"spartarotterdam-nl-wf-2023-2024-7bc9c6f8":{"id":"spartarotterdam-nl-wf-2023-2024-7bc9c6f8","clubId":"spartarotterdam-nl","title":"Sparta Beheer B.V. — wf-2023-2024-7bc9c6f8 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"spartarotterdam-nl-wf-2023-2024-7bc9c6f8":{"id":"spartarotterdam-nl-wf-2023-2024-7bc9c6f8","clubId":"spartarotterdam-nl","title":"Sparta Beheer B.V. — wf-2023-2024-7bc9c6f8 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf"}});
 
 memberCountByClub["spartarotterdam-nl"] = null;

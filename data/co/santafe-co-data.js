@@ -59,7 +59,7 @@ window.CLUB_GENERIC_DATA["santafe-co"] = {
   presupuestoOverlayByYear: santafeCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"santafe-co-estados-financieros-2025":{"id":"santafe-co-estados-financieros-2025","clubId":"santafe-co","title":"Estado de Resultados Integral Separado y Notas a los Estados Financieros, al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"santafe-co-estados-financieros-2025":{"id":"santafe-co-estados-financieros-2025","clubId":"santafe-co","title":"Estado de Resultados Integral Separado y Notas a los Estados Financieros, al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Independiente Santa Fe/estados-financieros-2025.pdf"}});
 
 gestionesByClub["santafe-co"] = {"actual":{"nombre":"Gestión actual","firstYear":2025,"lastYear":2025}};
 

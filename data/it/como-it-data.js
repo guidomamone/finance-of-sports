@@ -119,6 +119,6 @@ window.CLUB_GENERIC_DATA["como-it"] = {
   presupuestoOverlayByYear: comoItPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"como-it-gruppo-pro-forma-consolidamento-2025":{"id":"como-it-gruppo-pro-forma-consolidamento-2025","clubId":"como-it","title":"Como 1907 S.r.l. — Como-gruppo-pro-forma-consolidamento-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"},"como-it-fascicolo-bilancio-2024":{"id":"como-it-fascicolo-bilancio-2024","clubId":"como-it","title":"Como 1907 S.r.l. — Como-fascicolo-bilancio-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"como-it-gruppo-pro-forma-consolidamento-2025":{"id":"como-it-gruppo-pro-forma-consolidamento-2025","clubId":"como-it","title":"Como 1907 S.r.l. — Como-gruppo-pro-forma-consolidamento-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.pdf"},"como-it-fascicolo-bilancio-2024":{"id":"como-it-fascicolo-bilancio-2024","clubId":"como-it","title":"Como 1907 S.r.l. — Como-fascicolo-bilancio-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Italia/Como/Como-fascicolo-bilancio-2024.pdf"}});
 
 memberCountByClub["como-it"] = null;

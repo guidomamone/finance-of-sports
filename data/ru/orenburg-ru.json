@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "orenburg-ru",
@@ -18,35 +18,40 @@
       "club_id": "orenburg-ru",
       "title": "ANO Football Club Orenburg — отчетность 2021 в ГИР БО (bo.nalog.gov.ru), ejercicio 2021",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Rusia/Orenburg/bfo-2021-datos.pdf"
     },
     {
       "id": "orenburg-ru-bfo-2022-datos",
       "club_id": "orenburg-ru",
       "title": "ANO Football Club Orenburg — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Rusia/Orenburg/bfo-2022-datos.pdf"
     },
     {
       "id": "orenburg-ru-bfo-2023-datos",
       "club_id": "orenburg-ru",
       "title": "ANO Football Club Orenburg — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Rusia/Orenburg/bfo-2023-datos.pdf"
     },
     {
       "id": "orenburg-ru-bfo-2024-datos",
       "club_id": "orenburg-ru",
       "title": "ANO Football Club Orenburg — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Rusia/Orenburg/bfo-2024-datos.pdf"
     },
     {
       "id": "orenburg-ru-bfo-2025-datos",
       "club_id": "orenburg-ru",
       "title": "ANO Football Club Orenburg — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Rusia/Orenburg/bfo-2025-datos.pdf"
     }
   ],
   "members": null,

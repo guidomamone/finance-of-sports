@@ -117,7 +117,7 @@ window.CLUB_GENERIC_DATA["dinamozagreb-hr"] = {
   presupuestoOverlayByYear: dinamozagrebHrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"dinamozagreb-hr-financijsko-izvjesce-2024":{"id":"dinamozagreb-hr-financijsko-izvjesce-2024","clubId":"dinamozagreb-hr","title":"Revidirani konsolidirani financijski izvještaji za posebne namjene za 2024. godinu","type":"official_balance_sheet","reliability":"primary"},"dinamozagreb-hr-dinamo-2025-konsolidirano":{"id":"dinamozagreb-hr-dinamo-2025-konsolidirano","clubId":"dinamozagreb-hr","title":"Građanski nogometni klub Dinamo — dinamo-2025-konsolidirano (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"dinamozagreb-hr-financijsko-izvjesce-2024":{"id":"dinamozagreb-hr-financijsko-izvjesce-2024","clubId":"dinamozagreb-hr","title":"Revidirani konsolidirani financijski izvještaji za posebne namjene za 2024. godinu","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2024.pdf"},"dinamozagreb-hr-dinamo-2025-konsolidirano":{"id":"dinamozagreb-hr-dinamo-2025-konsolidirano","clubId":"dinamozagreb-hr","title":"Građanski nogometni klub Dinamo — dinamo-2025-konsolidirano (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.pdf"}});
 
 gestionesByClub["dinamozagreb-hr"] = {"actual":{"nombre":"Gestión actual","firstYear":2024,"lastYear":2024}};
 

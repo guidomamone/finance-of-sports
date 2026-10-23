@@ -78,6 +78,6 @@ window.CLUB_GENERIC_DATA["tondela-pt"] = {
   presupuestoOverlayByYear: tondelaPtPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"tondela-pt-relatorio-contas-2020-21":{"id":"tondela-pt-relatorio-contas-2020-21","clubId":"tondela-pt","title":"CD Tondela - Futebol, SAD — relatorio-contas-2020-21 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"tondela-pt-relatorio-contas-2020-21":{"id":"tondela-pt-relatorio-contas-2020-21","clubId":"tondela-pt","title":"CD Tondela - Futebol, SAD — relatorio-contas-2020-21 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/Tondela/relatorio-contas-2020-21.pdf"}});
 
 memberCountByClub["tondela-pt"] = null;

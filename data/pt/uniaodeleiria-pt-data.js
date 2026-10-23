@@ -73,6 +73,6 @@ window.CLUB_GENERIC_DATA["uniaodeleiria-pt"] = {
   presupuestoOverlayByYear: uniaodeleiriaPtPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"uniaodeleiria-pt-relatorio-contas-udl-sad-2023-2024":{"id":"uniaodeleiria-pt-relatorio-contas-udl-sad-2023-2024","clubId":"uniaodeleiria-pt","title":"União de Leiria- Futebol, SAD — Relatorio-Contas-UDL-SAD_2023-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"},"uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023":{"id":"uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023","clubId":"uniaodeleiria-pt","title":"União de Leiria- Futebol, SAD — Relatorio-Contas-UDL-SAD_2022-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"uniaodeleiria-pt-relatorio-contas-udl-sad-2023-2024":{"id":"uniaodeleiria-pt-relatorio-contas-udl-sad-2023-2024","clubId":"uniaodeleiria-pt","title":"União de Leiria- Futebol, SAD — Relatorio-Contas-UDL-SAD_2023-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf"},"uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023":{"id":"uniaodeleiria-pt-relatorio-contas-udl-sad-2022-2023","clubId":"uniaodeleiria-pt","title":"União de Leiria- Futebol, SAD — Relatorio-Contas-UDL-SAD_2022-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.pdf"}});
 
 memberCountByClub["uniaodeleiria-pt"] = null;

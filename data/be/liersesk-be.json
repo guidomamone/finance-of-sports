@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "liersesk-be",
@@ -19,42 +19,48 @@
       "club_id": "liersesk-be",
       "title": "Lierse SK — jaarrekening-2025-06-30-individual (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf"
     },
     {
       "id": "liersesk-be-jaarrekening-2022-06-30-individual",
       "club_id": "liersesk-be",
       "title": "Lierse SK — jaarrekening-2022-06-30-individual (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.pdf"
     },
     {
       "id": "liersesk-be-jaarrekening-2023-06-30-individual",
       "club_id": "liersesk-be",
       "title": "Lierse SK — jaarrekening-2023-06-30-individual (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Lierse SK/jaarrekening-2023-06-30-individual.pdf"
     },
     {
       "id": "liersesk-be-jaarrekening-2024-06-30-individual",
       "club_id": "liersesk-be",
       "title": "Lierse SK — jaarrekening-2024-06-30-individual (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.pdf"
     },
     {
       "id": "liersesk-be-jaarrekening-2020-06-30-individual",
       "club_id": "liersesk-be",
       "title": "Lierse SK — jaarrekening-2020-06-30-individual (ejercicio 2020)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.pdf"
     },
     {
       "id": "liersesk-be-jaarrekening-2021-06-30-individual",
       "club_id": "liersesk-be",
       "title": "Lierse SK — jaarrekening-2021-06-30-individual (ejercicio 2021)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf"
     },
     {
       "id": "liersesk-be-jaarrekening-2019-06-30-individual",
@@ -62,7 +68,8 @@
       "title": "Lierse SK — jaarrekening-2019-06-30-individual (ejercicio 2019)",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "public_note": "Primer ejercicio de la sociedad: del 09/07/2018 al 30/06/2019 (12 meses)."
+      "public_note": "Primer ejercicio de la sociedad: del 09/07/2018 al 30/06/2019 (12 meses).",
+      "document": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.pdf"
     }
   ],
   "members": null,

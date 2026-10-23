@@ -51,6 +51,6 @@ window.CLUB_GENERIC_DATA["nacbreda-nl"] = {
   presupuestoOverlayByYear: nacbredaNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"nacbreda-nl-jaarrekening-2024-2025":{"id":"nacbreda-nl-jaarrekening-2024-2025","clubId":"nacbreda-nl","title":"NAC Breda B.V. — NAC-Breda-Jaarrekening-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"nacbreda-nl-jaarrekening-2024-2025":{"id":"nacbreda-nl-jaarrekening-2024-2025","clubId":"nacbreda-nl","title":"NAC Breda B.V. — NAC-Breda-Jaarrekening-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.pdf"}});
 
 memberCountByClub["nacbreda-nl"] = null;

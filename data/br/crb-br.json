@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "crb-br",
@@ -18,42 +18,48 @@
       "club_id": "crb-br",
       "title": "Clube de Regatas Brasil — balanco-patrimonial-2020 (ejercicio 2020)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf"
     },
     {
       "id": "crb-br-balanco-patrimonial-2021",
       "club_id": "crb-br",
       "title": "Clube de Regatas Brasil — balanco-patrimonial-2021 (ejercicio 2021)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/CRB/balanco-patrimonial-2021.pdf"
     },
     {
       "id": "crb-br-demonstracoes-contabeis-2024",
       "club_id": "crb-br",
       "title": "Clube de Regatas Brasil — demonstracoes-contabeis-2024 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/CRB/demonstracoes-contabeis-2024.pdf"
     },
     {
       "id": "crb-br-demonstracoes-contabeis-2025",
       "club_id": "crb-br",
       "title": "Clube de Regatas Brasil — demonstracoes-contabeis-2025 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/CRB/demonstracoes-contabeis-2025.pdf"
     },
     {
       "id": "crb-br-balanco-patrimonial-2022",
       "club_id": "crb-br",
       "title": "Clube de Regatas Brasil — balanco-patrimonial-2022 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/CRB/balanco-patrimonial-2022.pdf"
     },
     {
       "id": "crb-br-balanco-patrimonial-2023",
       "club_id": "crb-br",
       "title": "Clube de Regatas Brasil — balanco-patrimonial-2023 (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/CRB/balanco-patrimonial-2023.pdf"
     }
   ],
   "members": null,

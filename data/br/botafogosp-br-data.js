@@ -145,6 +145,6 @@ window.CLUB_GENERIC_DATA["botafogosp-br"] = {
   presupuestoOverlayByYear: botafogospBrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"botafogosp-br-demonstracoes-2024":{"id":"botafogosp-br-demonstracoes-2024","clubId":"botafogosp-br","title":"Demonstrações Contábeis (Auditadas) para os Exercícios Findos em 31 de Dezembro de 2024 e de 2023","type":"official_balance_sheet","reliability":"primary","url":"https://botafogofutebolsa.com.br/"},"botafogosp-br-demonstracoes-contabeis-2024-2025":{"id":"botafogosp-br-demonstracoes-contabeis-2024-2025","clubId":"botafogosp-br","title":"Botafogo Futebol S.A. - SAF — demonstracoes-contabeis-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"botafogosp-br-demonstracoes-2024":{"id":"botafogosp-br-demonstracoes-2024","clubId":"botafogosp-br","title":"Demonstrações Contábeis (Auditadas) para os Exercícios Findos em 31 de Dezembro de 2024 e de 2023","type":"official_balance_sheet","reliability":"primary","url":"https://botafogofutebolsa.com.br/"},"botafogosp-br-demonstracoes-contabeis-2024-2025":{"id":"botafogosp-br-demonstracoes-contabeis-2024-2025","clubId":"botafogosp-br","title":"Botafogo Futebol S.A. - SAF — demonstracoes-contabeis-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.pdf"}});
 
 memberCountByClub["botafogosp-br"] = null;

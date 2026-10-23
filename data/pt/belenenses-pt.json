@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "belenenses-pt",
@@ -18,14 +18,16 @@
       "club_id": "belenenses-pt",
       "title": "Belenenses — Belenenses-SDUQ-demonstracoes-financeiras-30junho2025 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf"
     },
     {
       "id": "belenenses-pt-sduq-relatorio-e-contas-2023-2024",
       "club_id": "belenenses-pt",
       "title": "Belenenses — Belenenses-SDUQ-Relatorio-e-Contas-2023-2024 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.pdf"
     }
   ],
   "members": null,

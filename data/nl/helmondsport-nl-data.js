@@ -31,6 +31,6 @@ window.CLUB_GENERIC_DATA["helmondsport-nl"] = {
   presupuestoOverlayByYear: helmondsportNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"helmondsport-nl-wf-2024-2025-4ef6ca45":{"id":"helmondsport-nl-wf-2024-2025-4ef6ca45","clubId":"helmondsport-nl","title":"Helmond Sport — wf-2024-2025-4ef6ca45 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"helmondsport-nl-wf-2024-2025-4ef6ca45":{"id":"helmondsport-nl-wf-2024-2025-4ef6ca45","clubId":"helmondsport-nl","title":"Helmond Sport — wf-2024-2025-4ef6ca45 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.pdf"}});
 
 memberCountByClub["helmondsport-nl"] = null;

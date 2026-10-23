@@ -52,6 +52,6 @@ window.CLUB_GENERIC_DATA["juvestabia-it"] = {
   presupuestoOverlayByYear: juvestabiaItPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"juvestabia-it-bilancio-2024-ifrs-sec-6k":{"id":"juvestabia-it-bilancio-2024-ifrs-sec-6k","clubId":"juvestabia-it","title":"Società Sportiva Juve Stabia S.r.l. — Juve Stabia-bilancio-2024-IFRS-SEC-6K (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"juvestabia-it-bilancio-2024-ifrs-sec-6k":{"id":"juvestabia-it-bilancio-2024-ifrs-sec-6k","clubId":"juvestabia-it","title":"Società Sportiva Juve Stabia S.r.l. — Juve Stabia-bilancio-2024-IFRS-SEC-6K (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf"}});
 
 memberCountByClub["juvestabia-it"] = null;

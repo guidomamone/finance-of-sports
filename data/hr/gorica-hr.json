@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "gorica-hr",
@@ -18,7 +18,8 @@
       "club_id": "gorica-hr",
       "title": "Revidirani godišnji financijski izvještaji za 2025. godinu — HNK Gorica s.d.d.",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Croacia/Gorica/financijsko-izvjesce-2025.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual (Ilija Karamatić, Predsjednik kluba)","first_year":2025,"last_year":2025}],

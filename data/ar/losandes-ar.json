@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "losandes-ar",
@@ -18,14 +18,16 @@
       "club_id": "losandes-ar",
       "title": "Balance General, Ejercicio Económico N° 104 (finalizado el 30/6/2020), Club Atlético Los Andes",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Los Andes/balance-ejercicio-104-2019-20.pdf"
     },
     {
       "id": "losandes-ar-balance-ejercicio-105-2020-21",
       "club_id": "losandes-ar",
       "title": "Balance General, Ejercicio Económico N° 105 (finalizado el 30/6/2021), Club Atlético Los Andes",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Los Andes/balance-ejercicio-105-2020-21.pdf"
     }
   ],
   "management": [{"id":"grosi","name":"Grosi (firma los balances 2019/2020 y 2020/2021)","first_year":2020,"last_year":2021}],

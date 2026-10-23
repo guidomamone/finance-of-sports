@@ -46,6 +46,6 @@ window.CLUB_GENERIC_DATA["slavenbelupo-hr"] = {
   presupuestoOverlayByYear: slavenbelupoHrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"slavenbelupo-hr-financijsko-izvjesce-2025":{"id":"slavenbelupo-hr-financijsko-izvjesce-2025","clubId":"slavenbelupo-hr","title":"NK Slaven Belupo, Koprivnica — Godišnji financijski izvještaji za 2025. godinu","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"slavenbelupo-hr-financijsko-izvjesce-2025":{"id":"slavenbelupo-hr-financijsko-izvjesce-2025","clubId":"slavenbelupo-hr","title":"NK Slaven Belupo, Koprivnica — Godišnji financijski izvještaji za 2025. godinu","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Slaven Belupo/financijsko-izvjesce-2025.pdf"}});
 
 memberCountByClub["slavenbelupo-hr"] = null;

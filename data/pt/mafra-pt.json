@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "mafra-pt",
@@ -18,7 +18,8 @@
       "club_id": "mafra-pt",
       "title": "Clube Desportivo de Mafra – Futebol, SAD — PRESTACAO-CONTAS-EPOCA-2023_2024_Final (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf"
     }
   ],
   "members": null,

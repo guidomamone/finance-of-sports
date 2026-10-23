@@ -242,6 +242,6 @@ window.CLUB_GENERIC_DATA["atleticobucaramanga-co"] = {
   presupuestoOverlayByYear: atleticobucaramangaCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"atleticobucaramanga-co-estados-financieros-2019":{"id":"atleticobucaramanga-co-estados-financieros-2019","clubId":"atleticobucaramanga-co","title":"Club Atlético Bucaramanga S.A. — estados-financieros-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary"},"atleticobucaramanga-co-estados-financieros-2020":{"id":"atleticobucaramanga-co-estados-financieros-2020","clubId":"atleticobucaramanga-co","title":"Club Atlético Bucaramanga S.A. — estados-financieros-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"atleticobucaramanga-co-estados-financieros-2019":{"id":"atleticobucaramanga-co-estados-financieros-2019","clubId":"atleticobucaramanga-co","title":"Club Atlético Bucaramanga S.A. — estados-financieros-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf"},"atleticobucaramanga-co-estados-financieros-2020":{"id":"atleticobucaramanga-co-estados-financieros-2020","clubId":"atleticobucaramanga-co","title":"Club Atlético Bucaramanga S.A. — estados-financieros-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf"}});
 
 memberCountByClub["atleticobucaramanga-co"] = null;

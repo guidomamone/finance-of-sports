@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "talleres-ar",
@@ -18,14 +18,16 @@
       "club_id": "talleres-ar",
       "title": "Estados Contables por el ejercicio finalizado el 31 de diciembre de 2024 (Club Atlético Talleres Asociación Civil)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Talleres/estados-contables-2024.pdf"
     },
     {
       "id": "talleres-ar-estados-contables-2025",
       "club_id": "talleres-ar",
       "title": "Estados Contables por el ejercicio finalizado el 31 de diciembre de 2025 (Club Atlético Talleres Asociación Civil)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Talleres/estados-contables-2025.pdf"
     }
   ],
   "management": [{"id":"fassi","name":"Andrés Miguel Fassi (Presidente)","first_year":2024,"last_year":2025}],

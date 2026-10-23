@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "cuiaba-br",
@@ -18,28 +18,32 @@
       "club_id": "cuiaba-br",
       "title": "Cuiabá Esporte Clube - Sociedade Anônima do Futebol — balanco-financeiro-2022 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.pdf"
     },
     {
       "id": "cuiaba-br-balanco-financeiro-2024",
       "club_id": "cuiaba-br",
       "title": "Cuiabá Esporte Clube - Sociedade Anônima do Futebol — balanco-financeiro-2024 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.pdf"
     },
     {
       "id": "cuiaba-br-balanco-financeiro-2025",
       "club_id": "cuiaba-br",
       "title": "Cuiabá Esporte Clube - Sociedade Anônima do Futebol — balanco-financeiro-2025 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.pdf"
     },
     {
       "id": "cuiaba-br-demonstracoes-financeiras-2023-auditadas",
       "club_id": "cuiaba-br",
       "title": "Cuiabá Esporte Clube - Sociedade Anônima do Futebol — demonstracoes-financeiras-2023-auditadas (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf"
     }
   ],
   "members": null,

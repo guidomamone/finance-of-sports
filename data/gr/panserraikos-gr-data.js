@@ -52,6 +52,6 @@ window.CLUB_GENERIC_DATA["panserraikos-gr"] = {
   presupuestoOverlayByYear: panserraikosGrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"panserraikos-gr-income-stmt-2023-06-30":{"id":"panserraikos-gr-income-stmt-2023-06-30","clubId":"panserraikos-gr","title":"Mousikogymnastikos Syllogos Panserraikos P.A.E. — Panserraikos_income_stmt_2023-06-30 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"},"panserraikos-gr-income-stmt-2025-06-30":{"id":"panserraikos-gr-income-stmt-2025-06-30","clubId":"panserraikos-gr","title":"Mousikogymnastikos Syllogos Panserraikos P.A.E. — Panserraikos_income_stmt_2025-06-30 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"panserraikos-gr-income-stmt-2023-06-30":{"id":"panserraikos-gr-income-stmt-2023-06-30","clubId":"panserraikos-gr","title":"Mousikogymnastikos Syllogos Panserraikos P.A.E. — Panserraikos_income_stmt_2023-06-30 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.pdf"},"panserraikos-gr-income-stmt-2025-06-30":{"id":"panserraikos-gr-income-stmt-2025-06-30","clubId":"panserraikos-gr","title":"Mousikogymnastikos Syllogos Panserraikos P.A.E. — Panserraikos_income_stmt_2025-06-30 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.pdf"}});
 
 memberCountByClub["panserraikos-gr"] = null;

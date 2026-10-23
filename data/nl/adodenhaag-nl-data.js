@@ -49,6 +49,6 @@ window.CLUB_GENERIC_DATA["adodenhaag-nl"] = {
   presupuestoOverlayByYear: adodenhaagNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"adodenhaag-nl-jaarrekening2024-25":{"id":"adodenhaag-nl-jaarrekening2024-25","clubId":"adodenhaag-nl","title":"NV ADO Den Haag — jaarrekening2024-25 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"adodenhaag-nl-jaarrekening2024-25":{"id":"adodenhaag-nl-jaarrekening2024-25","clubId":"adodenhaag-nl","title":"NV ADO Den Haag — jaarrekening2024-25 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.pdf"}});
 
 memberCountByClub["adodenhaag-nl"] = null;

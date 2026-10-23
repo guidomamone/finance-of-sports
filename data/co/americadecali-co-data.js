@@ -55,7 +55,7 @@ window.CLUB_GENERIC_DATA["americadecali-co"] = {
   presupuestoOverlayByYear: americadecaliCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"americadecali-co-estados-financieros-2025":{"id":"americadecali-co-estados-financieros-2025","clubId":"americadecali-co","title":"Estado Individual de Situación Financiera y Estado Individual de Resultados y Otros Resultados Integrales, al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"americadecali-co-estados-financieros-2025":{"id":"americadecali-co-estados-financieros-2025","clubId":"americadecali-co","title":"Estado Individual de Situación Financiera y Estado Individual de Resultados y Otros Resultados Integrales, al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/America de Cali/estados-financieros-2025.pdf"}});
 
 gestionesByClub["americadecali-co"] = {"actual":{"nombre":"Marcela Gómez Giraldo (Representante Legal)","firstYear":2025,"lastYear":2025}};
 

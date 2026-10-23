@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "oliveirense-pt",
@@ -18,21 +18,24 @@
       "club_id": "oliveirense-pt",
       "title": "União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202425 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202425.pdf"
     },
     {
       "id": "oliveirense-pt-relatorio-e-contas-202223",
       "club_id": "oliveirense-pt",
       "title": "União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202223 (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202223.pdf"
     },
     {
       "id": "oliveirense-pt-relatorio-e-contas-202324",
       "club_id": "oliveirense-pt",
       "title": "União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202324 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.pdf"
     }
   ],
   "members": null,

@@ -91,6 +91,6 @@ window.CLUB_GENERIC_DATA["salernitana-it"] = {
   presupuestoOverlayByYear: salernitanaItPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"salernitana-it-bilancio-30-giugno-2022":{"id":"salernitana-it-bilancio-30-giugno-2022","clubId":"salernitana-it","title":"U.S. Salernitana 1919 S.r.l. — Salernitana-bilancio-30-giugno-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"},"salernitana-it-bilancio-30-giugno-2023-def":{"id":"salernitana-it-bilancio-30-giugno-2023-def","clubId":"salernitana-it","title":"U.S. Salernitana 1919 S.r.l. — Salernitana-bilancio-30-giugno-2023-def (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"salernitana-it-bilancio-30-giugno-2022":{"id":"salernitana-it-bilancio-30-giugno-2022","clubId":"salernitana-it","title":"U.S. Salernitana 1919 S.r.l. — Salernitana-bilancio-30-giugno-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.pdf"},"salernitana-it-bilancio-30-giugno-2023-def":{"id":"salernitana-it-bilancio-30-giugno-2023-def","clubId":"salernitana-it","title":"U.S. Salernitana 1919 S.r.l. — Salernitana-bilancio-30-giugno-2023-def (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.pdf"}});
 
 memberCountByClub["salernitana-it"] = null;

@@ -32,6 +32,6 @@ window.CLUB_GENERIC_DATA["fcvolendam-nl"] = {
   presupuestoOverlayByYear: fcvolendamNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fcvolendam-nl-volendam-jaarcijfers-2024-2025":{"id":"fcvolendam-nl-volendam-jaarcijfers-2024-2025","clubId":"fcvolendam-nl","title":"Stichting R.K.F.C. Volendam — Volendam-Jaarcijfers-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fcvolendam-nl-volendam-jaarcijfers-2024-2025":{"id":"fcvolendam-nl-volendam-jaarcijfers-2024-2025","clubId":"fcvolendam-nl","title":"Stichting R.K.F.C. Volendam — Volendam-Jaarcijfers-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.pdf"}});
 
 memberCountByClub["fcvolendam-nl"] = null;

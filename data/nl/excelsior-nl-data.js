@@ -33,6 +33,6 @@ window.CLUB_GENERIC_DATA["excelsior-nl"] = {
   presupuestoOverlayByYear: excelsiorNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"excelsior-nl-jaarverslag-2023-2024":{"id":"excelsior-nl-jaarverslag-2023-2024","clubId":"excelsior-nl","title":"Stichting Betaald Voetbal Excelsior — Excelsior-Jaarverslag-2023-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"excelsior-nl-jaarverslag-2023-2024":{"id":"excelsior-nl-jaarverslag-2023-2024","clubId":"excelsior-nl","title":"Stichting Betaald Voetbal Excelsior — Excelsior-Jaarverslag-2023-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf"}});
 
 memberCountByClub["excelsior-nl"] = null;

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "newells-ar",
@@ -18,7 +18,8 @@
       "club_id": "newells-ar",
       "title": "Memoria y Balance General, Ejercicio 1°/7/2018 al 30/6/2019",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Argentina/Newells Old Boys/memoria-y-balance-2018-2019.pdf"
     }
   ],
   "management": [{"id":"bermudez","name":"Bermúdez","first_year":2019,"last_year":2019}],

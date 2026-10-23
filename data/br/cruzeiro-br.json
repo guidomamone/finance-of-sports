@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "cruzeiro-br",
@@ -18,28 +18,32 @@
       "club_id": "cruzeiro-br",
       "title": "Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Exercícios Findos em 31 de Dezembro de 2025 e de 2024",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Cruzeiro/informativo-financeiro-2025.pdf"
     },
     {
       "id": "cruzeiro-br-informativo-financeiro-2024",
       "club_id": "cruzeiro-br",
       "title": "Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Exercícios Findos em 31 de Dezembro de 2024 e de 2023",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Cruzeiro/informativo-financeiro-2024.pdf"
     },
     {
       "id": "cruzeiro-br-informativo-financeiro-2023",
       "club_id": "cruzeiro-br",
       "title": "Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Exercício Findo em 31 de Dezembro de 2023",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Cruzeiro/informativo-financeiro-2023.pdf"
     },
     {
       "id": "cruzeiro-br-informativo-financeiro-2022",
       "club_id": "cruzeiro-br",
       "title": "Informativo Financeiro (Demonstrações Financeiras) da SAF Cruzeiro, Período de 04 de Fevereiro a 31 de Dezembro de 2022",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Cruzeiro/informativo-financeiro-2022.pdf"
     }
   ],
   "management": [{"id":"sinconfirmar","name":"SAF Cruzeiro (gestión no confirmada en detalle)","first_year":2022,"last_year":2025}],

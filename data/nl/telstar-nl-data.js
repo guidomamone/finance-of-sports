@@ -52,6 +52,6 @@ window.CLUB_GENERIC_DATA["telstar-nl"] = {
   presupuestoOverlayByYear: telstarNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"telstar-nl-jaarverslag-2024-2025-full":{"id":"telstar-nl-jaarverslag-2024-2025-full","clubId":"telstar-nl","title":"Telstar 1963 N.V. — Telstar-Jaarverslag-2024-2025-full (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"telstar-nl-jaarverslag-2024-2025-full":{"id":"telstar-nl-jaarverslag-2024-2025-full","clubId":"telstar-nl","title":"Telstar 1963 N.V. — Telstar-Jaarverslag-2024-2025-full (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf"}});
 
 memberCountByClub["telstar-nl"] = null;

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "envigado-co",
@@ -18,7 +18,8 @@
       "club_id": "envigado-co",
       "title": "Estados Financieros Individuales (auditados, Grant Thornton), al 31 de diciembre de 2025 y 2024",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Envigado/estados-financieros-2025.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2025,"last_year":2025}],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "coritiba-br",
@@ -34,7 +34,8 @@
       "club_id": "coritiba-br",
       "title": "Coritiba Sociedade Anônima do Futebol - SAF — wf-2024-2025-ef0cf145 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.pdf"
     }
   ],
   "management": [{"id":"sinconfirmar","name":"Gestión actual","first_year":2023,"last_year":2024}],

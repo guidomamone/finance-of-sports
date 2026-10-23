@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "leeds-gb",
@@ -35,35 +35,40 @@
       "club_id": "leeds-gb",
       "title": "Leeds United Football Club Limited — leeds-group-accounts-2018-19 (ejercicio 2019)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf"
     },
     {
       "id": "leeds-gb-group-accounts-2019-20",
       "club_id": "leeds-gb",
       "title": "Leeds United Football Club Limited — leeds-group-accounts-2019-20 (ejercicio 2020)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf"
     },
     {
       "id": "leeds-gb-group-accounts-2021-22",
       "club_id": "leeds-gb",
       "title": "Leeds United Football Club Limited — leeds-group-accounts-2021-22 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2021-22.pdf"
     },
     {
       "id": "leeds-gb-group-accounts-2022-23",
       "club_id": "leeds-gb",
       "title": "Leeds United Football Club Limited — leeds-group-accounts-2022-23 (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.pdf"
     },
     {
       "id": "leeds-gb-group-accounts-2020-21",
       "club_id": "leeds-gb",
       "title": "Leeds United Football Club Limited — leeds-group-accounts-2020-21 (ejercicio 2021)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf"
     }
   ],
   "management": [{"id":"marathe49ers","name":"49ers Enterprises Global Football Group LLC (Paraag Marathe, Chairman)","first_year":2024,"last_year":2025}],

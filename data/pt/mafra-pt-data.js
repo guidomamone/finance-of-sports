@@ -79,6 +79,6 @@ window.CLUB_GENERIC_DATA["mafra-pt"] = {
   presupuestoOverlayByYear: mafraPtPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"mafra-pt-prestacao-contas-epoca-2023-2024-final":{"id":"mafra-pt-prestacao-contas-epoca-2023-2024-final","clubId":"mafra-pt","title":"Clube Desportivo de Mafra – Futebol, SAD — PRESTACAO-CONTAS-EPOCA-2023_2024_Final (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"mafra-pt-prestacao-contas-epoca-2023-2024-final":{"id":"mafra-pt-prestacao-contas-epoca-2023-2024-final","clubId":"mafra-pt","title":"Clube Desportivo de Mafra – Futebol, SAD — PRESTACAO-CONTAS-EPOCA-2023_2024_Final (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf"}});
 
 memberCountByClub["mafra-pt"] = null;

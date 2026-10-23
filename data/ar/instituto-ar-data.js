@@ -112,7 +112,7 @@ window.CLUB_GENERIC_DATA["instituto-ar"] = {
   resultadosData: institutoArResultadosData, titulosData: institutoArTitulosData,
 };
 
-Object.assign(sources, {"instituto-ar-balance-2023-24":{"id":"instituto-ar-balance-2023-24","clubId":"instituto-ar","title":"Estados Contables (balance auditado), Ejercicio Económico N°70, 1°/7/2023 al 30/6/2024","type":"official_balance_sheet","reliability":"primary"},"instituto-ar-balance-general-2024-2025":{"id":"instituto-ar-balance-general-2024-2025","clubId":"instituto-ar","title":"Instituto Atlético Central Córdoba — balance-general-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"instituto-ar-balance-2023-24":{"id":"instituto-ar-balance-2023-24","clubId":"instituto-ar","title":"Estados Contables (balance auditado), Ejercicio Económico N°70, 1°/7/2023 al 30/6/2024","type":"official_balance_sheet","reliability":"primary"},"instituto-ar-balance-general-2024-2025":{"id":"instituto-ar-balance-general-2024-2025","clubId":"instituto-ar","title":"Instituto Atlético Central Córdoba — balance-general-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Argentina/Instituto/balance-general-2024-2025.pdf"}});
 
 gestionesByClub["instituto-ar"] = {"cavagliatto":{"nombre":"Cavagliatto (2021-actual)","firstYear":2024,"lastYear":2024}};
 

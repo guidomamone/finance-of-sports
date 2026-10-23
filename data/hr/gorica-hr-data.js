@@ -41,7 +41,7 @@ window.CLUB_GENERIC_DATA["gorica-hr"] = {
   presupuestoOverlayByYear: goricaHrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"gorica-hr-financijsko-izvjesce-2025":{"id":"gorica-hr-financijsko-izvjesce-2025","clubId":"gorica-hr","title":"Revidirani godišnji financijski izvještaji za 2025. godinu — HNK Gorica s.d.d.","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"gorica-hr-financijsko-izvjesce-2025":{"id":"gorica-hr-financijsko-izvjesce-2025","clubId":"gorica-hr","title":"Revidirani godišnji financijski izvještaji za 2025. godinu — HNK Gorica s.d.d.","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Gorica/financijsko-izvjesce-2025.pdf"}});
 
 gestionesByClub["gorica-hr"] = {"actual":{"nombre":"Gestión actual (Ilija Karamatić, Predsjednik kluba)","firstYear":2025,"lastYear":2025}};
 

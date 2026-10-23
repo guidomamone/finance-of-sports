@@ -57,6 +57,6 @@ window.CLUB_GENERIC_DATA["juventude-br"] = {
   presupuestoOverlayByYear: juventudeBrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"juventude-br-demonstracoes-2020":{"id":"juventude-br-demonstracoes-2020","clubId":"juventude-br","title":"Relatório dos Auditores Independentes sobre as Demonstrações Financeiras, 31 de Dezembro de 2020 e 2019","type":"official_balance_sheet","reliability":"primary","url":"https://fgf.com.br/demonstracoes-financeiras-filiados/2020"},"juventude-br-demonstracoes-financeiras-2021":{"id":"juventude-br-demonstracoes-financeiras-2021","clubId":"juventude-br","title":"Esporte Clube Juventude — demonstracoes-financeiras-2021 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"juventude-br-demonstracoes-2020":{"id":"juventude-br-demonstracoes-2020","clubId":"juventude-br","title":"Relatório dos Auditores Independentes sobre as Demonstrações Financeiras, 31 de Dezembro de 2020 e 2019","type":"official_balance_sheet","reliability":"primary","url":"https://fgf.com.br/demonstracoes-financeiras-filiados/2020"},"juventude-br-demonstracoes-financeiras-2021":{"id":"juventude-br-demonstracoes-financeiras-2021","clubId":"juventude-br","title":"Esporte Clube Juventude — demonstracoes-financeiras-2021 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf"}});
 
 memberCountByClub["juventude-br"] = null;

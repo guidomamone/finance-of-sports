@@ -32,6 +32,6 @@ window.CLUB_GENERIC_DATA["fcdenbosch-nl"] = {
   presupuestoOverlayByYear: fcdenboschNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fcdenbosch-nl-wf-2024-2025-c4a5aec0":{"id":"fcdenbosch-nl-wf-2024-2025-c4a5aec0","clubId":"fcdenbosch-nl","title":"FC Den Bosch B.V. — wf-2024-2025-c4a5aec0 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fcdenbosch-nl-wf-2024-2025-c4a5aec0":{"id":"fcdenbosch-nl-wf-2024-2025-c4a5aec0","clubId":"fcdenbosch-nl","title":"FC Den Bosch B.V. — wf-2024-2025-c4a5aec0 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.pdf"}});
 
 memberCountByClub["fcdenbosch-nl"] = null;

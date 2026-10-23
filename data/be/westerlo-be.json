@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "westerlo-be",
@@ -26,7 +26,8 @@
       "title": "KVC Westerlo BV — jaarrekening-2015-06-30-individual (ejercicio 2015)",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "public_note": "Ejercicio de transición por cambio de fecha de cierre: del 01/01/2014 al 30/06/2015 (18 meses)."
+      "public_note": "Ejercicio de transición por cambio de fecha de cierre: del 01/01/2014 al 30/06/2015 (18 meses).",
+      "document": "Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf"
     }
   ],
   "members": null,

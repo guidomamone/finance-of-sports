@@ -32,6 +32,6 @@ window.CLUB_GENERIC_DATA["rodajc-nl"] = {
   presupuestoOverlayByYear: rodajcNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"rodajc-nl-wf-2024-2025-e1694c69":{"id":"rodajc-nl-wf-2024-2025-e1694c69","clubId":"rodajc-nl","title":"Roda JC — wf-2024-2025-e1694c69 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"rodajc-nl-wf-2024-2025-e1694c69":{"id":"rodajc-nl-wf-2024-2025-e1694c69","clubId":"rodajc-nl","title":"Roda JC — wf-2024-2025-e1694c69 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.pdf"}});
 
 memberCountByClub["rodajc-nl"] = null;

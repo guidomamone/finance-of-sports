@@ -33,6 +33,6 @@ window.CLUB_GENERIC_DATA["sccambuur-nl"] = {
   presupuestoOverlayByYear: sccambuurNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"sccambuur-nl-jaarverslag-sc-cambuur-2024-2025":{"id":"sccambuur-nl-jaarverslag-sc-cambuur-2024-2025","clubId":"sccambuur-nl","title":"SC Cambuur-Leeuwarden B.V. — Jaarverslag-SC-Cambuur-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"sccambuur-nl-jaarverslag-sc-cambuur-2024-2025":{"id":"sccambuur-nl-jaarverslag-sc-cambuur-2024-2025","clubId":"sccambuur-nl","title":"SC Cambuur-Leeuwarden B.V. — Jaarverslag-SC-Cambuur-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf"}});
 
 memberCountByClub["sccambuur-nl"] = null;

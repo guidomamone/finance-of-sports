@@ -38,6 +38,6 @@ window.CLUB_GENERIC_DATA["fcdordrecht-nl"] = {
   presupuestoOverlayByYear: fcdordrechtNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fcdordrecht-nl-wf-2024-2025-602d6b96":{"id":"fcdordrecht-nl-wf-2024-2025-602d6b96","clubId":"fcdordrecht-nl","title":"FC Dordrecht Holding B.V. — wf-2024-2025-602d6b96 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fcdordrecht-nl-wf-2024-2025-602d6b96":{"id":"fcdordrecht-nl-wf-2024-2025-602d6b96","clubId":"fcdordrecht-nl","title":"FC Dordrecht Holding B.V. — wf-2024-2025-602d6b96 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf"}});
 
 memberCountByClub["fcdordrecht-nl"] = null;

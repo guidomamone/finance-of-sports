@@ -96,7 +96,7 @@ window.CLUB_GENERIC_DATA["talleres-ar"] = {
   presupuestoOverlayByYear: talleresArPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"talleres-ar-estados-contables-2024":{"id":"talleres-ar-estados-contables-2024","clubId":"talleres-ar","title":"Estados Contables por el ejercicio finalizado el 31 de diciembre de 2024 (Club Atlético Talleres Asociación Civil)","type":"official_balance_sheet","reliability":"primary"},"talleres-ar-estados-contables-2025":{"id":"talleres-ar-estados-contables-2025","clubId":"talleres-ar","title":"Estados Contables por el ejercicio finalizado el 31 de diciembre de 2025 (Club Atlético Talleres Asociación Civil)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"talleres-ar-estados-contables-2024":{"id":"talleres-ar-estados-contables-2024","clubId":"talleres-ar","title":"Estados Contables por el ejercicio finalizado el 31 de diciembre de 2024 (Club Atlético Talleres Asociación Civil)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Argentina/Talleres/estados-contables-2024.pdf"},"talleres-ar-estados-contables-2025":{"id":"talleres-ar-estados-contables-2025","clubId":"talleres-ar","title":"Estados Contables por el ejercicio finalizado el 31 de diciembre de 2025 (Club Atlético Talleres Asociación Civil)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Argentina/Talleres/estados-contables-2025.pdf"}});
 
 gestionesByClub["talleres-ar"] = {"fassi":{"nombre":"Andrés Miguel Fassi (Presidente)","firstYear":2024,"lastYear":2025}};
 

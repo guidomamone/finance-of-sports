@@ -40,6 +40,6 @@ window.CLUB_GENERIC_DATA["wiganathletic-gb"] = {
   presupuestoOverlayByYear: wiganathleticGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl":{"id":"wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl","clubId":"wiganathletic-gb","title":"Wigan Athletic A.F.C. Limited — wigan-full-accounts-2023-24-ixbrl (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","url":"https://find-and-update.company-information.service.gov.uk/company/13161421/filing-history/MzQ2MDQ2MTgxOGFkaXF6a2N4/document?format=xhtml&download=0"}});
+Object.assign(sources, {"wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl":{"id":"wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl","clubId":"wiganathletic-gb","title":"Wigan Athletic A.F.C. Limited — wigan-full-accounts-2023-24-ixbrl (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","url":"https://find-and-update.company-information.service.gov.uk/company/13161421/filing-history/MzQ2MDQ2MTgxOGFkaXF6a2N4/document?format=xhtml&download=0","documento":"Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf"}});
 
 memberCountByClub["wiganathletic-gb"] = null;

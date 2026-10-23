@@ -40,6 +40,6 @@ window.CLUB_GENERIC_DATA["barnsley-gb"] = {
   presupuestoOverlayByYear: barnsleyGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"barnsley-gb-medium-accounts-2024-25-ixbrl":{"id":"barnsley-gb-medium-accounts-2024-25-ixbrl","clubId":"barnsley-gb","title":"Barnsley Football Club Limited — barnsley-medium-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)"}});
+Object.assign(sources, {"barnsley-gb-medium-accounts-2024-25-ixbrl":{"id":"barnsley-gb-medium-accounts-2024-25-ixbrl","clubId":"barnsley-gb","title":"Barnsley Football Club Limited — barnsley-medium-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","documento":"Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf"}});
 
 memberCountByClub["barnsley-gb"] = null;

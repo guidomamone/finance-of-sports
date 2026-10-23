@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "deportivopereira-co",
@@ -18,7 +18,8 @@
       "club_id": "deportivopereira-co",
       "title": "Revelaciones Estados Financieros de Propósito General bajo NIIF para PYME's, al 31 de diciembre de 2025",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Deportivo Pereira/estados-financieros-2025.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual (sin confirmar)","first_year":2025,"last_year":2025}],

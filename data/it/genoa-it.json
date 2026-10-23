@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "genoa-it",
@@ -18,21 +18,24 @@
       "club_id": "genoa-it",
       "title": "Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2022-individual (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.pdf"
     },
     {
       "id": "genoa-it-bilancio-30-06-2025-individual",
       "club_id": "genoa-it",
       "title": "Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-30.06.2025-individual (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.pdf"
     },
     {
       "id": "genoa-it-bilancio-31-12-2023-individual",
       "club_id": "genoa-it",
       "title": "Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2023-individual (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.pdf"
     },
     {
       "id": "genoa-it-bilancio-30-06-2024-individual",
@@ -40,7 +43,8 @@
       "title": "Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-30.06.2024-individual (ejercicio 2024)",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "public_note": "Ejercicio de transición de 6 meses por cambio de la fecha de cierre: del 01/01/2024 al 30/06/2024. No es comparable con un año de 12 meses."
+      "public_note": "Ejercicio de transición de 6 meses por cambio de la fecha de cierre: del 01/01/2024 al 30/06/2024. No es comparable con un año de 12 meses.",
+      "document": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2024-individual.pdf"
     }
   ],
   "members": null,

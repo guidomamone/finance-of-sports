@@ -37,6 +37,6 @@ window.CLUB_GENERIC_DATA["chesterfield-gb"] = {
   presupuestoOverlayByYear: chesterfieldGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl":{"id":"chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl","clubId":"chesterfield-gb","title":"Chesterfield — cfc2001-medium-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","url":"https://find-and-update.company-information.service.gov.uk/company/04273743/filing-history/MzUwOTkwNDI0OWFkaXF6a2N4/document?format=xhtml&download=0"}});
+Object.assign(sources, {"chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl":{"id":"chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl","clubId":"chesterfield-gb","title":"Chesterfield — cfc2001-medium-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","url":"https://find-and-update.company-information.service.gov.uk/company/04273743/filing-history/MzUwOTkwNDI0OWFkaXF6a2N4/document?format=xhtml&download=0","documento":"Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf"}});
 
 memberCountByClub["chesterfield-gb"] = null;

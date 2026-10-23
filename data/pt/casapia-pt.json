@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "casapia-pt",
@@ -18,28 +18,32 @@
       "club_id": "casapia-pt",
       "title": "Casa Pia — relatorio-contas-2024-25 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Casa Pia/relatorio-contas-2024-25.pdf"
     },
     {
       "id": "casapia-pt-relatorio-contas-2021-22",
       "club_id": "casapia-pt",
       "title": "Casa Pia — relatorio-contas-2021-22 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Casa Pia/relatorio-contas-2021-22.pdf"
     },
     {
       "id": "casapia-pt-relatorio-contas-2022-23",
       "club_id": "casapia-pt",
       "title": "Casa Pia — relatorio-contas-2022-23 (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Casa Pia/relatorio-contas-2022-23.pdf"
     },
     {
       "id": "casapia-pt-relatorio-contas-2023-24",
       "club_id": "casapia-pt",
       "title": "Casa Pia — relatorio-contas-2023-24 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.pdf"
     }
   ],
   "members": null,

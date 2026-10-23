@@ -56,7 +56,7 @@ window.CLUB_GENERIC_DATA["stuttgart-de"] = {
   presupuestoOverlayByYear: stuttgartDePresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"stuttgart-de-konzernabschluss-2023":{"id":"stuttgart-de-konzernabschluss-2023","clubId":"stuttgart-de","title":"Konzernabschluss zum Geschäftsjahr vom 01.01.2023 bis zum 31.12.2023 (VfB Stuttgart 1893 AG, cuentas consolidadas)","type":"official_balance_sheet","reliability":"primary"},"stuttgart-de-konzernabschluss-2024":{"id":"stuttgart-de-konzernabschluss-2024","clubId":"stuttgart-de","title":"Konzernabschluss zum Geschäftsjahr vom 01.01.2024 bis zum 31.12.2024 (VfB Stuttgart 1893 AG, cuentas consolidadas)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"stuttgart-de-konzernabschluss-2023":{"id":"stuttgart-de-konzernabschluss-2023","clubId":"stuttgart-de","title":"Konzernabschluss zum Geschäftsjahr vom 01.01.2023 bis zum 31.12.2023 (VfB Stuttgart 1893 AG, cuentas consolidadas)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Alemania/VfB Stuttgart/konzernabschluss-2023.pdf"},"stuttgart-de-konzernabschluss-2024":{"id":"stuttgart-de-konzernabschluss-2024","clubId":"stuttgart-de","title":"Konzernabschluss zum Geschäftsjahr vom 01.01.2024 bis zum 31.12.2024 (VfB Stuttgart 1893 AG, cuentas consolidadas)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Alemania/VfB Stuttgart/konzernabschluss-2024.pdf"}});
 
 gestionesByClub["stuttgart-de"] = {"wehrle":{"nombre":"Alexander Wehrle (Vorstandsvorsitzender)","firstYear":2023,"lastYear":2024}};
 

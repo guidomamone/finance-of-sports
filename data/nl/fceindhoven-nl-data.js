@@ -48,6 +48,6 @@ window.CLUB_GENERIC_DATA["fceindhoven-nl"] = {
   presupuestoOverlayByYear: fceindhovenNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fceindhoven-nl-wf-2024-2025-a6019b8e":{"id":"fceindhoven-nl-wf-2024-2025-a6019b8e","clubId":"fceindhoven-nl","title":"Stichting FC Eindhoven — wf-2024-2025-a6019b8e (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fceindhoven-nl-wf-2024-2025-a6019b8e":{"id":"fceindhoven-nl-wf-2024-2025-a6019b8e","clubId":"fceindhoven-nl","title":"Stichting FC Eindhoven — wf-2024-2025-a6019b8e (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.pdf"}});
 
 memberCountByClub["fceindhoven-nl"] = null;

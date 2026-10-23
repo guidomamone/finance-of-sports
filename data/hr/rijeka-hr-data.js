@@ -87,7 +87,7 @@ window.CLUB_GENERIC_DATA["rijeka-hr"] = {
   presupuestoOverlayByYear: rijekaHrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"rijeka-hr-financijsko-izvjesce-2024-kombinirani":{"id":"rijeka-hr-financijsko-izvjesce-2024-kombinirani","clubId":"rijeka-hr","title":"Revidirani godišnji kombinirani financijski izvještaji za posebne namjene za 2024. godinu (HNK Rijeka s.d.d. i Stadion Kantrida d.o.o.)","type":"official_balance_sheet","reliability":"primary"},"rijeka-hr-financijsko-izvjesce-2025":{"id":"rijeka-hr-financijsko-izvjesce-2025","clubId":"rijeka-hr","title":"Hrvatski nogometni klub Rijeka s.d.d. — financijsko-izvjesce-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"rijeka-hr-financijsko-izvjesce-2024-kombinirani":{"id":"rijeka-hr-financijsko-izvjesce-2024-kombinirani","clubId":"rijeka-hr","title":"Revidirani godišnji kombinirani financijski izvještaji za posebne namjene za 2024. godinu (HNK Rijeka s.d.d. i Stadion Kantrida d.o.o.)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Rijeka/financijsko-izvjesce-2024-kombinirani.pdf"},"rijeka-hr-financijsko-izvjesce-2025":{"id":"rijeka-hr-financijsko-izvjesce-2025","clubId":"rijeka-hr","title":"Hrvatski nogometni klub Rijeka s.d.d. — financijsko-izvjesce-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf"}});
 
 gestionesByClub["rijeka-hr"] = {"actual":{"nombre":"Gestión actual","firstYear":2024,"lastYear":2024}};
 

@@ -123,7 +123,7 @@ window.CLUB_GENERIC_DATA["boyacachico-co"] = {
   presupuestoOverlayByYear: boyacachicoCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"boyacachico-co-estados-financieros-2024":{"id":"boyacachico-co-estados-financieros-2024","clubId":"boyacachico-co","title":"Estados Financieros (Notas), al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary"},"boyacachico-co-estados-financieros-2025":{"id":"boyacachico-co-estados-financieros-2025","clubId":"boyacachico-co","title":"Deportivo Boyacá Chicó Futbol Club S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"boyacachico-co-estados-financieros-2024":{"id":"boyacachico-co-estados-financieros-2024","clubId":"boyacachico-co","title":"Estados Financieros (Notas), al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Boyaca Chico/estados-financieros-2024.pdf"},"boyacachico-co-estados-financieros-2025":{"id":"boyacachico-co-estados-financieros-2025","clubId":"boyacachico-co","title":"Deportivo Boyacá Chicó Futbol Club S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf"}});
 
 gestionesByClub["boyacachico-co"] = {"actual":{"nombre":"Gestión actual","firstYear":2024,"lastYear":2024}};
 

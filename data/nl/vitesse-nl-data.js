@@ -47,6 +47,6 @@ window.CLUB_GENERIC_DATA["vitesse-nl"] = {
   presupuestoOverlayByYear: vitesseNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"vitesse-nl-wf-2023-2024-be6334b7":{"id":"vitesse-nl-wf-2023-2024-be6334b7","clubId":"vitesse-nl","title":"B.V. Vitesse — wf-2023-2024-be6334b7 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"vitesse-nl-wf-2023-2024-be6334b7":{"id":"vitesse-nl-wf-2023-2024-be6334b7","clubId":"vitesse-nl","title":"B.V. Vitesse — wf-2023-2024-be6334b7 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Vitesse/wf-2023-2024-be6334b7.pdf"}});
 
 memberCountByClub["vitesse-nl"] = null;

@@ -34,6 +34,6 @@ window.CLUB_GENERIC_DATA["degraafschap-nl"] = {
   presupuestoOverlayByYear: degraafschapNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"degraafschap-nl-wf-src-betaald-voetbal-de-graafschap-b-v-publicatierapport-2021-2022":{"id":"degraafschap-nl-wf-src-betaald-voetbal-de-graafschap-b-v-publicatierapport-2021-2022","clubId":"degraafschap-nl","title":"Betaald Voetbal De Graafschap B.V. — wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"degraafschap-nl-wf-src-betaald-voetbal-de-graafschap-b-v-publicatierapport-2021-2022":{"id":"degraafschap-nl-wf-src-betaald-voetbal-de-graafschap-b-v-publicatierapport-2021-2022","clubId":"degraafschap-nl","title":"Betaald Voetbal De Graafschap B.V. — wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf"}});
 
 memberCountByClub["degraafschap-nl"] = null;

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "girona-es",
@@ -32,21 +32,24 @@
       "club_id": "girona-es",
       "title": "Girona Futbol Club, S.A.D. — cuentas-anuales-2021-2022 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/España/Girona FC/cuentas-anuales-2021-2022.pdf"
     },
     {
       "id": "girona-es-cuentas-anuales-2022-2023",
       "club_id": "girona-es",
       "title": "Girona Futbol Club, S.A.D. — cuentas-anuales-2022-2023 (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/España/Girona FC/cuentas-anuales-2022-2023.pdf"
     },
     {
       "id": "girona-es-cuentas-anuales-2020-2021",
       "club_id": "girona-es",
       "title": "Girona Futbol Club, S.A.D. — cuentas-anuales-2020-2021 (ejercicio 2021)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/España/Girona FC/cuentas-anuales-2020-2021.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2020,"last_year":2025}],

@@ -49,6 +49,6 @@ window.CLUB_GENERIC_DATA["llaneros-co"] = {
   presupuestoOverlayByYear: llanerosCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"llaneros-co-estados-financieros-2025":{"id":"llaneros-co-estados-financieros-2025","clubId":"llaneros-co","title":"Club Llaneros S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"llaneros-co-estados-financieros-2025":{"id":"llaneros-co-estados-financieros-2025","clubId":"llaneros-co","title":"Club Llaneros S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Llaneros/estados-financieros-2025.pdf"}});
 
 memberCountByClub["llaneros-co"] = null;

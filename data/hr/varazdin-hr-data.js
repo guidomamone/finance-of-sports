@@ -39,6 +39,6 @@ window.CLUB_GENERIC_DATA["varazdin-hr"] = {
   presupuestoOverlayByYear: varazdinHrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"varazdin-hr-financijsko-izvjesce-2025":{"id":"varazdin-hr-financijsko-izvjesce-2025","clubId":"varazdin-hr","title":"Financijski izvještaj Nogometnog kluba Varaždin s.d.d. za 2025. godinu, s revizijskim izvješćem","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"varazdin-hr-financijsko-izvjesce-2025":{"id":"varazdin-hr-financijsko-izvjesce-2025","clubId":"varazdin-hr","title":"Financijski izvještaj Nogometnog kluba Varaždin s.d.d. za 2025. godinu, s revizijskim izvješćem","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Varaždin/financijsko-izvjesce-2025.pdf"}});
 
 memberCountByClub["varazdin-hr"] = null;

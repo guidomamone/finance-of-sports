@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "academicoviseu-pt",
@@ -18,28 +18,32 @@
       "club_id": "academicoviseu-pt",
       "title": "Académico de Viseu Futebol Clube, Futebol SAD — wf-2024-2025-efe7ad0a (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Academico Viseu/wf-2024-2025-efe7ad0a.pdf"
     },
     {
       "id": "academicoviseu-pt-wf-2022-2023-b797bc64",
       "club_id": "academicoviseu-pt",
       "title": "Académico de Viseu Futebol Clube, Futebol SAD — wf-2022-2023-b797bc64 (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.pdf"
     },
     {
       "id": "academicoviseu-pt-wf-2023-2024-02d5741e",
       "club_id": "academicoviseu-pt",
       "title": "Académico de Viseu Futebol Clube, Futebol SAD — wf-2023-2024-02d5741e (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.pdf"
     },
     {
       "id": "academicoviseu-pt-wf-src-rc21-22",
       "club_id": "academicoviseu-pt",
       "title": "Académico de Viseu Futebol Clube, Futebol SAD — wf-src-RC21_22 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf"
     }
   ],
   "members": null,

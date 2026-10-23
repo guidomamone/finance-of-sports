@@ -39,6 +39,6 @@ window.CLUB_GENERIC_DATA["gillingham-gb"] = {
   presupuestoOverlayByYear: gillinghamGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"gillingham-gb-medium-accounts-2024-25-ixbrl":{"id":"gillingham-gb-medium-accounts-2024-25-ixbrl","clubId":"gillingham-gb","title":"Gillingham Football Club Ltd — gillingham-medium-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)"}});
+Object.assign(sources, {"gillingham-gb-medium-accounts-2024-25-ixbrl":{"id":"gillingham-gb-medium-accounts-2024-25-ixbrl","clubId":"gillingham-gb","title":"Gillingham Football Club Ltd — gillingham-medium-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","documento":"Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.pdf"}});
 
 memberCountByClub["gillingham-gb"] = null;

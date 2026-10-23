@@ -33,6 +33,6 @@ window.CLUB_GENERIC_DATA["almerecity-nl"] = {
   presupuestoOverlayByYear: almerecityNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"almerecity-nl-wf-2024-2025-68975c13":{"id":"almerecity-nl-wf-2024-2025-68975c13","clubId":"almerecity-nl","title":"Almere City FC B.V. — wf-2024-2025-68975c13 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"almerecity-nl-wf-2024-2025-68975c13":{"id":"almerecity-nl-wf-2024-2025-68975c13","clubId":"almerecity-nl","title":"Almere City FC B.V. — wf-2024-2025-68975c13 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.pdf"}});
 
 memberCountByClub["almerecity-nl"] = null;

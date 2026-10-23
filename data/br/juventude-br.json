@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "juventude-br",
@@ -26,7 +26,8 @@
       "club_id": "juventude-br",
       "title": "Esporte Clube Juventude — demonstracoes-financeiras-2021 (ejercicio 2021)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf"
     }
   ],
   "members": null,

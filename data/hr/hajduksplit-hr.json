@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "hajduksplit-hr",
@@ -18,14 +18,16 @@
       "club_id": "hajduksplit-hr",
       "title": "Godišnji financijski izvještaji za posebne namjene za 2024. godinu (Financijski kriterij FO2)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2024.pdf"
     },
     {
       "id": "hajduksplit-hr-financijsko-izvjesce-2025",
       "club_id": "hajduksplit-hr",
       "title": "HNK Hajduk s.d.d. — financijsko-izvjesce-2025 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2024}],

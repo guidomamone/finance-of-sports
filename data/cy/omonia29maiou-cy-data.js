@@ -64,6 +64,6 @@ window.CLUB_GENERIC_DATA["omonia29maiou-cy"] = {
   presupuestoOverlayByYear: omonia29maiouCyPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024":{"id":"omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024","clubId":"omonia29maiou-cy","title":"Omonia 29 Maiou — wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024":{"id":"omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024","clubId":"omonia29maiou-cy","title":"Omonia 29 Maiou — wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf"}});
 
 memberCountByClub["omonia29maiou-cy"] = null;

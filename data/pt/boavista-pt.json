@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "boavista-pt",
@@ -18,7 +18,8 @@
       "club_id": "boavista-pt",
       "title": "Boavista Futebol Clube, Futebol, SAD — RCSAD-23-24_1-3 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf"
     }
   ],
   "members": null,

@@ -45,6 +45,6 @@ window.CLUB_GENERIC_DATA["scheerenveen-nl"] = {
   presupuestoOverlayByYear: scheerenveenNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"scheerenveen-nl-jaarverslag-2024-2025":{"id":"scheerenveen-nl-jaarverslag-2024-2025","clubId":"scheerenveen-nl","title":"S.C. Heerenveen Holding B.V. — SC-Heerenveen-Jaarverslag-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"scheerenveen-nl-jaarverslag-2024-2025":{"id":"scheerenveen-nl-jaarverslag-2024-2025","clubId":"scheerenveen-nl","title":"S.C. Heerenveen Holding B.V. — SC-Heerenveen-Jaarverslag-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf"}});
 
 memberCountByClub["scheerenveen-nl"] = null;

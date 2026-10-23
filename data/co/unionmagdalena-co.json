@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "unionmagdalena-co",
@@ -18,14 +18,16 @@
       "club_id": "unionmagdalena-co",
       "title": "Estados Financieros (Situación Financiera, Resultado Integral, Cambios en el Patrimonio y Flujo de Efectivo), al 31 de diciembre de 2018 y 2017",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Union Magdalena/estados-financieros-2018.pdf"
     },
     {
       "id": "unionmagdalena-co-estados-financieros-2025",
       "club_id": "unionmagdalena-co",
       "title": "Unión Magdalena S.A. — estados-financieros-2025 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.pdf"
     }
   ],
   "management": [{"id":"sin_confirmar","name":"Sin confirmar","first_year":2018,"last_year":2018}],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sampdoria-it",
@@ -18,28 +18,32 @@
       "club_id": "sampdoria-it",
       "title": "U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2021 (ejercicio 2021)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.pdf"
     },
     {
       "id": "sampdoria-it-fascicolo-bilancio-2018",
       "club_id": "sampdoria-it",
       "title": "U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2018 (ejercicio 2018)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.pdf"
     },
     {
       "id": "sampdoria-it-fascicolo-bilancio-2019",
       "club_id": "sampdoria-it",
       "title": "U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2019 (ejercicio 2019)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2019.pdf"
     },
     {
       "id": "sampdoria-it-fascicolo-bilancio-2020",
       "club_id": "sampdoria-it",
       "title": "U.C. Sampdoria S.p.A. — Sampdoria-fascicolo-bilancio-2020 (ejercicio 2020)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2020.pdf"
     }
   ],
   "members": null,

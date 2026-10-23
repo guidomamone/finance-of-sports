@@ -119,6 +119,6 @@ window.CLUB_GENERIC_DATA["chaves-pt"] = {
   presupuestoOverlayByYear: chavesPtPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"chaves-pt-rc-2022-2023-com":{"id":"chaves-pt-rc-2022-2023-com","clubId":"chaves-pt","title":"Grupo Desportivo de Chaves - Futebol, SAD — RC-2022-2023-com (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"},"chaves-pt-rc-2021-2022-compressed-1":{"id":"chaves-pt-rc-2021-2022-compressed-1","clubId":"chaves-pt","title":"Grupo Desportivo de Chaves - Futebol, SAD — RC-2021-2022_compressed-1 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"chaves-pt-rc-2022-2023-com":{"id":"chaves-pt-rc-2022-2023-com","clubId":"chaves-pt","title":"Grupo Desportivo de Chaves - Futebol, SAD — RC-2022-2023-com (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/Chaves/RC-2022-2023-com.pdf"},"chaves-pt-rc-2021-2022-compressed-1":{"id":"chaves-pt-rc-2021-2022-compressed-1","clubId":"chaves-pt","title":"Grupo Desportivo de Chaves - Futebol, SAD — RC-2021-2022_compressed-1 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.pdf"}});
 
 memberCountByClub["chaves-pt"] = null;

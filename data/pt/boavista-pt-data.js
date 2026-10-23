@@ -36,6 +36,6 @@ window.CLUB_GENERIC_DATA["boavista-pt"] = {
   presupuestoOverlayByYear: boavistaPtPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"boavista-pt-rcsad-23-24-1-3":{"id":"boavista-pt-rcsad-23-24-1-3","clubId":"boavista-pt","title":"Boavista Futebol Clube, Futebol, SAD — RCSAD-23-24_1-3 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"boavista-pt-rcsad-23-24-1-3":{"id":"boavista-pt-rcsad-23-24-1-3","clubId":"boavista-pt","title":"Boavista Futebol Clube, Futebol, SAD — RCSAD-23-24_1-3 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/Boavista/RCSAD-23-24_1-3.pdf"}});
 
 memberCountByClub["boavista-pt"] = null;

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "rwdm-be",
@@ -18,42 +18,48 @@
       "club_id": "rwdm-be",
       "title": "RWDM — jaarrekening-2025-06-30-individual (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf"
     },
     {
       "id": "rwdm-be-jaarrekening-2020-06-30-individual",
       "club_id": "rwdm-be",
       "title": "RWDM — jaarrekening-2020-06-30-individual (ejercicio 2020)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/RWDM/jaarrekening-2020-06-30-individual.pdf"
     },
     {
       "id": "rwdm-be-jaarrekening-2021-06-30-individual",
       "club_id": "rwdm-be",
       "title": "RWDM — jaarrekening-2021-06-30-individual (ejercicio 2021)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.pdf"
     },
     {
       "id": "rwdm-be-jaarrekening-2022-06-30-individual",
       "club_id": "rwdm-be",
       "title": "RWDM — jaarrekening-2022-06-30-individual (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.pdf"
     },
     {
       "id": "rwdm-be-jaarrekening-2023-06-30-individual",
       "club_id": "rwdm-be",
       "title": "RWDM — jaarrekening-2023-06-30-individual (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.pdf"
     },
     {
       "id": "rwdm-be-jaarrekening-2024-06-30-individual",
       "club_id": "rwdm-be",
       "title": "RWDM — jaarrekening-2024-06-30-individual (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/RWDM/jaarrekening-2024-06-30-individual.pdf"
     }
   ],
   "members": null,

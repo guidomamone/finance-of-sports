@@ -51,6 +51,6 @@ window.CLUB_GENERIC_DATA["nec-nl"] = {
   presupuestoOverlayByYear: necNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"nec-nl-holding-jaarrekening-2023-2024":{"id":"nec-nl-holding-jaarrekening-2023-2024","clubId":"nec-nl","title":"NEC — NEC-Holding-Jaarrekening-2023-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"nec-nl-holding-jaarrekening-2023-2024":{"id":"nec-nl-holding-jaarrekening-2023-2024","clubId":"nec-nl","title":"NEC — NEC-Holding-Jaarrekening-2023-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.pdf"}});
 
 memberCountByClub["nec-nl"] = null;

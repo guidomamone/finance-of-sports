@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "volosnfc-gr",
@@ -19,49 +19,56 @@
       "title": "Volos N.P.S. P.A.E. — Volos_income_stmt_2019-06-30 (ejercicio 2019)",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "public_note": "Primer ejercicio de la sociedad: del 24/07/2018 al 30/06/2019 (11 meses)."
+      "public_note": "Primer ejercicio de la sociedad: del 24/07/2018 al 30/06/2019 (11 meses).",
+      "document": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2019-06-30.pdf"
     },
     {
       "id": "volosnfc-gr-volos-income-stmt-2020-06-30",
       "club_id": "volosnfc-gr",
       "title": "Volos N.P.S. P.A.E. — Volos_income_stmt_2020-06-30 (ejercicio 2020)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2020-06-30.pdf"
     },
     {
       "id": "volosnfc-gr-volos-income-stmt-2021-06-30",
       "club_id": "volosnfc-gr",
       "title": "Volos N.P.S. P.A.E. — Volos_income_stmt_2021-06-30 (ejercicio 2021)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2021-06-30.pdf"
     },
     {
       "id": "volosnfc-gr-volos-income-stmt-2022-06-30",
       "club_id": "volosnfc-gr",
       "title": "Volos N.P.S. P.A.E. — Volos_income_stmt_2022-06-30 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2022-06-30.pdf"
     },
     {
       "id": "volosnfc-gr-volos-income-stmt-2023-06-30",
       "club_id": "volosnfc-gr",
       "title": "Volos N.P.S. P.A.E. — Volos_income_stmt_2023-06-30 (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2023-06-30.pdf"
     },
     {
       "id": "volosnfc-gr-volos-income-stmt-2024-06-30",
       "club_id": "volosnfc-gr",
       "title": "Volos N.P.S. P.A.E. — Volos_income_stmt_2024-06-30 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2024-06-30.pdf"
     },
     {
       "id": "volosnfc-gr-volos-income-stmt-2025-06-30",
       "club_id": "volosnfc-gr",
       "title": "Volos N.P.S. P.A.E. — Volos_income_stmt_2025-06-30 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf"
     }
   ],
   "members": null,

@@ -40,6 +40,6 @@ window.CLUB_GENERIC_DATA["afcwimbledon-gb"] = {
   presupuestoOverlayByYear: afcwimbledonGbPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"afcwimbledon-gb-full-accounts-2024-25-ixbrl":{"id":"afcwimbledon-gb-full-accounts-2024-25-ixbrl","clubId":"afcwimbledon-gb","title":"AFC Wimbledon Limited — afcwimbledon-full-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)"}});
+Object.assign(sources, {"afcwimbledon-gb-full-accounts-2024-25-ixbrl":{"id":"afcwimbledon-gb-full-accounts-2024-25-ixbrl","clubId":"afcwimbledon-gb","title":"AFC Wimbledon Limited — afcwimbledon-full-accounts-2024-25-ixbrl (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","publicNote":"Informe oficial en formato XHTML (iXBRL)","documento":"Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.pdf"}});
 
 memberCountByClub["afcwimbledon-gb"] = null;

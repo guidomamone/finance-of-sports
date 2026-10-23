@@ -106,6 +106,6 @@ window.CLUB_GENERIC_DATA["udinese-it"] = {
   presupuestoOverlayByYear: udineseItPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"udinese-it-bilancio-2024-25":{"id":"udinese-it-bilancio-2024-25","clubId":"udinese-it","title":"Udinese Calcio S.p.A. — Udinese-bilancio-2024-25 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"},"udinese-it-bilancio-2021-22":{"id":"udinese-it-bilancio-2021-22","clubId":"udinese-it","title":"Udinese Calcio S.p.A. — Udinese-bilancio-2021-22 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"udinese-it-bilancio-2024-25":{"id":"udinese-it-bilancio-2024-25","clubId":"udinese-it","title":"Udinese Calcio S.p.A. — Udinese-bilancio-2024-25 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Italia/Udinese/Udinese-bilancio-2024-25.pdf"},"udinese-it-bilancio-2021-22":{"id":"udinese-it-bilancio-2021-22","clubId":"udinese-it","title":"Udinese Calcio S.p.A. — Udinese-bilancio-2021-22 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Italia/Udinese/Udinese-bilancio-2021-22.pdf"}});
 
 memberCountByClub["udinese-it"] = null;

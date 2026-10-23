@@ -55,6 +55,6 @@ window.CLUB_GENERIC_DATA["alianzafc-co"] = {
   presupuestoOverlayByYear: alianzafcCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"alianzafc-co-estados-financieros-2023":{"id":"alianzafc-co-estados-financieros-2023","clubId":"alianzafc-co","title":"Alianza FC S.A. — estados-financieros-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"alianzafc-co-estados-financieros-2023":{"id":"alianzafc-co-estados-financieros-2023","clubId":"alianzafc-co","title":"Alianza FC S.A. — estados-financieros-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf"}});
 
 memberCountByClub["alianzafc-co"] = null;

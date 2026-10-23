@@ -61,6 +61,6 @@ window.CLUB_GENERIC_DATA["fcgroningen-nl"] = {
   presupuestoOverlayByYear: fcgroningenNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fcgroningen-nl-jaarverslag-2024-2025":{"id":"fcgroningen-nl-jaarverslag-2024-2025","clubId":"fcgroningen-nl","title":"FC Groningen B.V. — FC-Groningen-Jaarverslag-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fcgroningen-nl-jaarverslag-2024-2025":{"id":"fcgroningen-nl-jaarverslag-2024-2025","clubId":"fcgroningen-nl","title":"FC Groningen B.V. — FC-Groningen-Jaarverslag-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf"}});
 
 memberCountByClub["fcgroningen-nl"] = null;

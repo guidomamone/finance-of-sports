@@ -79,7 +79,7 @@ window.CLUB_GENERIC_DATA["banfield-ar"] = {
   presupuestoInversionesByYear: {},
 };
 
-Object.assign(sources, {"banfield-ar-memoria-y-balance-2019-2020":{"id":"banfield-ar-memoria-y-balance-2019-2020","clubId":"banfield-ar","title":"Memoria y Balance General, 116° Ejercicio Económico (1°/7/2019 al 30/6/2020)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"banfield-ar-memoria-y-balance-2019-2020":{"id":"banfield-ar-memoria-y-balance-2019-2020","clubId":"banfield-ar","title":"Memoria y Balance General, 116° Ejercicio Económico (1°/7/2019 al 30/6/2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Argentina/Banfield/memoria-y-balance-2019-2020.pdf"}});
 
 gestionesByClub["banfield-ar"] = {"barbuto":{"nombre":"Barbuto (2018-2021)","firstYear":2020,"lastYear":2020}};
 

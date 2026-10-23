@@ -44,6 +44,6 @@ window.CLUB_GENERIC_DATA["peczwolle-nl"] = {
   presupuestoOverlayByYear: peczwolleNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"peczwolle-nl-wf-2024-2025-aaba1b62":{"id":"peczwolle-nl-wf-2024-2025-aaba1b62","clubId":"peczwolle-nl","title":"PEC Zwolle B.V. — wf-2024-2025-aaba1b62 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"peczwolle-nl-wf-2024-2025-aaba1b62":{"id":"peczwolle-nl-wf-2024-2025-aaba1b62","clubId":"peczwolle-nl","title":"PEC Zwolle B.V. — wf-2024-2025-aaba1b62 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/PEC Zwolle/wf-2024-2025-aaba1b62.pdf"}});
 
 memberCountByClub["peczwolle-nl"] = null;

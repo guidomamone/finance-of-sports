@@ -63,7 +63,7 @@ window.CLUB_GENERIC_DATA["deportivopereira-co"] = {
   presupuestoOverlayByYear: deportivopereiraCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"deportivopereira-co-estados-financieros-2025":{"id":"deportivopereira-co-estados-financieros-2025","clubId":"deportivopereira-co","title":"Revelaciones Estados Financieros de Propósito General bajo NIIF para PYME's, al 31 de diciembre de 2025","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"deportivopereira-co-estados-financieros-2025":{"id":"deportivopereira-co-estados-financieros-2025","clubId":"deportivopereira-co","title":"Revelaciones Estados Financieros de Propósito General bajo NIIF para PYME's, al 31 de diciembre de 2025","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Deportivo Pereira/estados-financieros-2025.pdf"}});
 
 gestionesByClub["deportivopereira-co"] = {"actual":{"nombre":"Gestión actual (sin confirmar)","firstYear":2025,"lastYear":2025}};
 

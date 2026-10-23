@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "rbbragantino-br",
@@ -19,7 +19,8 @@
       "title": "Red Bull Bragantino — Balanço Patrimonial e Demonstração do Resultado, Exercícios Findos em 31 de Dezembro de 2019 e de 2018",
       "type": "official_balance_sheet",
       "reliability": "primary",
-      "url": "https://web.archive.org/web/2019*/https://www.redbullbragantino.com.br/balanco/2019.pdf"
+      "url": "https://web.archive.org/web/2019*/https://www.redbullbragantino.com.br/balanco/2019.pdf",
+      "document": "Clubes/Brasil/RB Bragantino/balanco-2019.pdf"
     },
     {
       "id": "rbbragantino-br-balanco-2024",
@@ -34,7 +35,8 @@
       "club_id": "rbbragantino-br",
       "title": "Red Bull Bragantino Futebol Ltda. — balanco-2025-auditado (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.pdf"
     }
   ],
   "management": [

@@ -90,7 +90,7 @@ window.CLUB_GENERIC_DATA["unionmagdalena-co"] = {
   presupuestoOverlayByYear: unionmagdalenaCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"unionmagdalena-co-estados-financieros-2018":{"id":"unionmagdalena-co-estados-financieros-2018","clubId":"unionmagdalena-co","title":"Estados Financieros (Situación Financiera, Resultado Integral, Cambios en el Patrimonio y Flujo de Efectivo), al 31 de diciembre de 2018 y 2017","type":"official_balance_sheet","reliability":"primary"},"unionmagdalena-co-estados-financieros-2025":{"id":"unionmagdalena-co-estados-financieros-2025","clubId":"unionmagdalena-co","title":"Unión Magdalena S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"unionmagdalena-co-estados-financieros-2018":{"id":"unionmagdalena-co-estados-financieros-2018","clubId":"unionmagdalena-co","title":"Estados Financieros (Situación Financiera, Resultado Integral, Cambios en el Patrimonio y Flujo de Efectivo), al 31 de diciembre de 2018 y 2017","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Union Magdalena/estados-financieros-2018.pdf"},"unionmagdalena-co-estados-financieros-2025":{"id":"unionmagdalena-co-estados-financieros-2025","clubId":"unionmagdalena-co","title":"Unión Magdalena S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Union Magdalena/estados-financieros-2025.pdf"}});
 
 gestionesByClub["unionmagdalena-co"] = {"sin_confirmar":{"nombre":"Sin confirmar","firstYear":2018,"lastYear":2018}};
 

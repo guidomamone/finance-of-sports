@@ -48,7 +48,7 @@ window.CLUB_GENERIC_DATA["ituano-br"] = {
   presupuestoOverlayByYear: ituanoBrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"ituano-br-relatorio-auditoria-2024":{"id":"ituano-br-relatorio-auditoria-2024","clubId":"ituano-br","title":"Demonstrações Financeiras e Relatório de Auditoria, Exercício findo em 31 de dezembro de 2024","type":"official_balance_sheet","reliability":"primary","url":"https://ituanofc.com.br/"}});
+Object.assign(sources, {"ituano-br-relatorio-auditoria-2024":{"id":"ituano-br-relatorio-auditoria-2024","clubId":"ituano-br","title":"Demonstrações Financeiras e Relatório de Auditoria, Exercício findo em 31 de dezembro de 2024","type":"official_balance_sheet","reliability":"primary","url":"https://ituanofc.com.br/","documento":"Clubes/Brasil/Ituano/relatorio-auditoria-2024.pdf"}});
 
 gestionesByClub["ituano-br"] = {"sinconfirmar":{"nombre":"Gestión actual","firstYear":2024,"lastYear":2024}};
 

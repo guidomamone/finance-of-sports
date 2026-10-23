@@ -49,6 +49,6 @@ window.CLUB_GENERIC_DATA["fctwente-nl"] = {
   presupuestoOverlayByYear: fctwenteNlPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"fctwente-nl-jaarrekening-2024-2025":{"id":"fctwente-nl-jaarrekening-2024-2025","clubId":"fctwente-nl","title":"FC Twente ‘65 B.V. — FC-Twente-Jaarrekening-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"fctwente-nl-jaarrekening-2024-2025":{"id":"fctwente-nl-jaarrekening-2024-2025","clubId":"fctwente-nl","title":"FC Twente ‘65 B.V. — FC-Twente-Jaarrekening-2024-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.pdf"}});
 
 memberCountByClub["fctwente-nl"] = null;

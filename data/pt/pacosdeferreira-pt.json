@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-23",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "pacosdeferreira-pt",
@@ -18,35 +18,40 @@
       "club_id": "pacosdeferreira-pt",
       "title": "Paços de Ferreira — contas_2425 (ejercicio 2025)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Paços de Ferreira/contas_2425.pdf"
     },
     {
       "id": "pacosdeferreira-pt-47-demonstracoes-financeiras-compressed",
       "club_id": "pacosdeferreira-pt",
       "title": "Paços de Ferreira — 47-DEMONSTRACOES-FINANCEIRAS_compressed (ejercicio 2020)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf"
     },
     {
       "id": "pacosdeferreira-pt-contas22-23",
       "club_id": "pacosdeferreira-pt",
       "title": "Paços de Ferreira — contas22_23 (ejercicio 2023)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Paços de Ferreira/contas22_23.pdf"
     },
     {
       "id": "pacosdeferreira-pt-contas23-24",
       "club_id": "pacosdeferreira-pt",
       "title": "Paços de Ferreira — contas23_24 (ejercicio 2024)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Paços de Ferreira/contas23_24.pdf"
     },
     {
       "id": "pacosdeferreira-pt-contas21-22",
       "club_id": "pacosdeferreira-pt",
       "title": "Paços de Ferreira — contas21_22 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "document": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf"
     }
   ],
   "members": null,

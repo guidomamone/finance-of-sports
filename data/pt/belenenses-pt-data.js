@@ -98,6 +98,6 @@ window.CLUB_GENERIC_DATA["belenenses-pt"] = {
   presupuestoOverlayByYear: belenensesPtPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"belenenses-pt-sduq-demonstracoes-financeiras-30junho2025":{"id":"belenenses-pt-sduq-demonstracoes-financeiras-30junho2025","clubId":"belenenses-pt","title":"Belenenses — Belenenses-SDUQ-demonstracoes-financeiras-30junho2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"},"belenenses-pt-sduq-relatorio-e-contas-2023-2024":{"id":"belenenses-pt-sduq-relatorio-e-contas-2023-2024","clubId":"belenenses-pt","title":"Belenenses — Belenenses-SDUQ-Relatorio-e-Contas-2023-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"belenenses-pt-sduq-demonstracoes-financeiras-30junho2025":{"id":"belenenses-pt-sduq-demonstracoes-financeiras-30junho2025","clubId":"belenenses-pt","title":"Belenenses — Belenenses-SDUQ-demonstracoes-financeiras-30junho2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf"},"belenenses-pt-sduq-relatorio-e-contas-2023-2024":{"id":"belenenses-pt-sduq-relatorio-e-contas-2023-2024","clubId":"belenenses-pt","title":"Belenenses — Belenenses-SDUQ-Relatorio-e-Contas-2023-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.pdf"}});
 
 memberCountByClub["belenenses-pt"] = null;
