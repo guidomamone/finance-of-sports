@@ -10,7 +10,8 @@
 //   Clubes/<País>/<Club>/...  = SOLO el documento: el PDF y su transcripción `.md` (lo que manda CLAUDE.md).
 //   Generados/<País>/<Club>/... = todo lo que una tool deriva de ese documento, con la MISMA ruta relativa y el mismo nombre base:
 //       Clubes/Brasil/Botafogo/demonstracoes-2025.md  ->  Generados/Brasil/Botafogo/demonstracoes-2025.rubros.json
-//   Generados/ está gitignoreado (igual que lo estaban esos archivos en Clubes/): se regenera, o es caché de APIs ya pagadas.
+//   En Generados/ los .json se trackean (el .gitignore los deja pasar): son el caché de APIs ya pagadas y de la IA, que no es determinista; perderlos es volver a
+//   pagar y que la IA elija otra cosa. Las transcripciones derivadas (.previo-*.md, .mistral-redo.md…) quedan locales.
 //
 // Qué es "derivado" (SUFIJOS de abajo): lista de rubros, briefing, respuestas de Jev y de Claude, las transcripciones de otras voces
 // (-check, -redo, de tests) y los respaldos (`.previo-*.md`, `.antes-sumas.md`). OJO: varios son CACHÉ de plata ya gastada
