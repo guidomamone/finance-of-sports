@@ -20,13 +20,13 @@
     ],
     "PostToolUse": [
       {
-        "matcher": "Bash",
+        "matcher": "Bash|Edit|Write|MultiEdit",
         "hooks": [
           {
             "type": "command",
             "command": "f=\"$CLAUDE_PROJECT_DIR/tools/hooks/post-tool.mjs\"; [ ! -f \"$f\" ] || node \"$f\"",
             "timeout": 30,
-            "statusMessage": "Chequeando si el commit cambia una skill (tools/hooks/post-tool.mjs)"
+            "statusMessage": "Chequeando commits y tools con historial (tools/hooks/post-tool.mjs)"
           }
         ]
       }
