@@ -49,8 +49,10 @@ Bash (no se pueden chequear antes de correr); su mensaje dice qué usar en cambi
 
 ## Al empezar
 
-- **Leer, y parar ahí:** este archivo (ya cargado), la skill `start-session-finance-of-sports-project` (la tabla de qué leer según la tarea)
-  y `Admin/ESTADO.md` (qué hay armado hoy), sola, sin que Guido lo pida. `Admin/TODO.md` NO se lee entero nunca: `node tools/todo.mjs`
+- **Leer, y parar ahí:** este archivo (ya cargado), la skill `start-session-finance-of-sports-project` (la tabla de qué leer según la tarea;
+  **si el rol es Pipeline u Onboarding se salta: va directo a `club-or-year-onboarding`, que trae su propio arranque**) y las secciones de
+  `Admin/ESTADO.md` (qué hay armado hoy) que le tocan al rol: `node tools/fos.mjs arranque <rol>` (pipeline, onboarding, auditora, orden, sourcing,
+  pantallas, contenido, deploy; sin rol lista las secciones), sola, sin que Guido lo pida. `Admin/TODO.md` NO se lee entero nunca: `node tools/todo.mjs`
   da la lista ordenada (qué sigue) y `node tools/todo.mjs <id>` el cuerpo de un punto. Qué hay cargado de cada club:
   `Admin/ESTADO-clubes.md` (generado). `Admin/CONVENCIONES.md` (reglas de proceso) se lee cuando la skill de la tarea lo pide.
 - **Ningún archivo de `tools/` de más de 40 KB se lee entero** (cuáles: el aviso `tool-grande` de `node tools/audit.js` y `tools/tamanos-aceptados.json`; el resto se partió con `node tools/fos.mjs mover`): `node tools/fos.mjs mapa <archivo>` da las funciones con su rango de líneas y las regiones, y `Read` con `offset` y `limit` trae solo ese tramo. Si el cambio altera lo que pasa entre etapas (ajustes, huellas, qué archivo lee la siguiente), antes `Admin/CONTRATO-ETAPAS.md` (qué lee y escribe cada etapa, qué la deja vieja, con qué comando se rehace).
