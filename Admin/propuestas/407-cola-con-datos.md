@@ -87,7 +87,14 @@ resuelto sola.
 
 **D. Datos en el caso** (secciones de arriba): lo que queda en la cola llega con el precedente, la identidad y el historial.
 
-## Qué no se sabe todavía
+## Resultado (2026-10-23)
+
+Implementado: clave estable, perfil por club, tope de materialidad con datos, `fos causas` y el cierre de gestión por club. Medido y descartado (ver `HALLAZGOS-pipeline.md`):
+la identidad del cuadro no discrimina en localizar/extraer (queda el historial por país como dato) y los casos provisorios solo ahorran en `primer-anio`, que ya se
+resuelve en el lote. El signo con aclaración aparece en 1 de 50 preguntas (la cifra de «6 de 6» de más arriba era de otro recorte): va como dato. La medición del tope con
+`document` dio lo mismo (37 % con 0,5 %, error máximo 0,93 %).
+
+## Qué no se sabía (cerrado)
 
 - Cuántos de los 722 de localizar/extraer tienen un cuadro nombrado con líneas que se puedan sumar sin leerlos a mano. Se mide en el paso 4 antes de escribir código.
 - Si Jev y Claude por separado discriminan mejor que la confianza combinada (el registro de Jev está en `etiquetas-jev.jsonl`).

@@ -18,6 +18,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 996 — La cola cierra el 407: gestión por club, historial de casos parecidos, aclaración de signo [407 · cola.mjs]
+
+- `cola.mjs`: contestar `descartar` en un caso de gestión cierra los otros pendientes del club (92 repeticiones medidas); toda duda de verificar nueva lleva «Historial de casos parecidos» (etapa, motivo y país, con tasa de aceptación; desde 10 respuestas); una duda de signo cuya línea trae «(- = …)» lo dice.
+- Descartes medidos (en `HALLAZGOS-pipeline.md`): la identidad del cuadro (suma su total, o la cifra citada) NO discrimina aceptar de «no»; los casos provisorios no ahorran nada salvo `primer-anio`, que ya se resuelve en el lote.
+- Re-medición del tope de materialidad con `sources[].document`: 2.923 de 3.154 preguntas (antes 1.870); con 0,5 % por pregunta se contestan solas 37 % y el error acumulado máximo por documento es 0,93 %: igual que antes.
+- Medido: lote completo idéntico; veredicto general. 407 cerrado.
+
 ## Versión 995 — La cola con datos y menos preguntas: clave estable, perfil por club, tope de materialidad [407 · cola.mjs, cargar.mjs, datos-cola.mjs, casos-sin-resolver.mjs, medir-pipeline.mjs]
 
 - `cola.mjs`: una pregunta de localizar/extraer con otra redacción pero el mismo documento, etiquetas y bloques nace contestada con la última respuesta (antes volvía a la cola).

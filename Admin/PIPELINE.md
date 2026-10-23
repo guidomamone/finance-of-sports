@@ -530,8 +530,9 @@ Mitigaciones:
  ESCALÓN 6c etiqueta genérica de lista cerrada (Outros, Outras, Otros, Otras, Others, Other, Altri, Altre) con la
             genérica de su lado como propuesta: se carga sin preguntar, salvo que el renglón que la abre tenga una categoría conocida
             distinta (Vila Nova 2025 "Outros" de "Despesas gerais e administrativas"). También la etiqueta repetida, con la misma compuerta
- ESCALÓN 7  materialidad, sobre lo que todavía iba a la cola: las dudas de un lado suman ≤ 1% de ese lado → las de confianza >= 0,60 se
-            cargan con aviso
+ ESCALÓN 7  materialidad, sobre lo que todavía iba a la cola: de la duda más chica a la más grande, se cargan con aviso mientras lo
+            acumulado sin preguntar no pase el 1% de su lado y la confianza sea >= 0,5 (nunca la línea que junta amortización de
+            jugadores y depreciación, ni una fila que chocó con otro año del club); el resto va a la cola con sus datos
  SACAR UNA FILA: una respuesta `descartar` o `corregir --valor no_es_rubro` vale solo para SU documento; la de otro año
             del club (respuesta del club, 6a) o de otros clubes (6b) no decide y la fila sigue por los escalones
  "NO ES RUBRO" de la IA en una fila verificada con lado: se excluye; si la carga no cierra, se prueba incluirla (a la cola);
@@ -810,14 +811,19 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - QUÉ ALCANZA UNA RESPUESTA (el único lugar donde está escrito; la etapa 7 y el perfil remiten acá):
   - una duda por tema (escala, perímetro, cuadro duplicado...) se reconoce por club + tema + renglón: contestada en cualquier año del club
     vale para todos sus años, también si se contestó antes del alta;
-  - una de perfil (`corregir --valor sí|no`) se guarda en el perfil y cierra los casos iguales de los otros años;
+  - una de perfil (`corregir --valor sí|no`) se guarda en el perfil y cierra los casos iguales de los otros años; el chequeo más
+    cercano del club vale también fuera de la ventana de 5 años (con aviso), y no se vuelve a preguntar;
+  - `descartar` en una de gestión cierra los otros pendientes de gestión del club;
+  - una duda de localizar o extraer reformulada (mismo documento, etiquetas citadas y bloques) nace con la última respuesta;
   - una de categoría (aceptar o corregir, salvo `no_es_rubro`) cierra los casos pendientes del club con la misma etiqueta en otros años
    , queda como precedente del club (`Admin/registros/categorias-aprendidas.jsonl`) y `cargar.mjs` la aplica en otro
     documento solo si la fila está en la misma nota (si no, el caso se reabre);
   - sacar una fila (`no_es_rubro`) vale solo para su documento. Si la fila vino de una nota que abre un renglón y, con esa
     respuesta y las otras `no_es_rubro` del documento, el renglón se queda sin filas, `--responder` no la guarda y avisa (el renglón se
     perdería entero); `--igual` la guarda igual.
-- Cada caso es una **pregunta de sí o no**, con la propuesta del sistema, la página del visor y la impresa, y las líneas del .md.
+- Cada caso es una **pregunta de sí o no**, con la página del visor y la impresa, las líneas del .md y los datos para decidir: en
+  categoría, el peso de la fila, lo contestado a la misma etiqueta (club, país, todo) y Jev aparte (`tools/datos-cola.mjs`); en las dudas de
+  verificar, el historial de casos parecidos (etapa, motivo y país) y, en las de signo, la aclaración del rótulo. No hay respuesta por defecto.
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
   En un caso de categoría, `descartar` se rechaza: para sacar la fila,
   `corregir --valor no_es_rubro`; para un año ya cargado, la categoría con la que está publicado.

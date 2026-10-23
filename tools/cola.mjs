@@ -132,8 +132,34 @@ export function agregarCaso(caso) {
     if (cerrado.get(id) && !resp.has(id)) appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: 'reabierto', nota: 'la etapa volvió a levantar este caso' }) + '\n');
     return id;
   }
-  appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'caso', id, ts: new Date().toISOString(), clave, ...(estable ? { claveEstable: estable } : {}), ...caso }) + '\n');
+  const extra = [aclaracionDeSigno(caso), historialParecidos(caso, { casos, resp })].filter(Boolean).join('  ');
+  appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'caso', id, ts: new Date().toISOString(), clave, ...(estable ? { claveEstable: estable } : {}), ...caso, ...(extra ? { que: `${caso.que}  ${extra}` } : {}) }) + '\n');
   return id;
+}
+// EL SIGNO CON ACLARACIÓN (407): en una duda de signo, si la línea que cita la pregunta (o las 3 de arriba y abajo) trae la aclaración del rótulo —«(- = Steuerertrag)», «(+/-)»,
+// «(−) = ingreso»— se la copia a la pregunta. Medido: con aclaración en el rótulo, 6 de 6 se aceptaron (muestra chica: solo informa, no decide).
+const ACLARACION_RE = /\(\s*[-−–+]\s*\)?\s*=\s*[^)\n]{2,60}\)?/;
+export function aclaracionDeSigno(caso) {
+  if (caso.etapa !== 'verificar' || caso.motivo !== 'duda-de-extraer' || !/signo|negativ|positiv|paréntesis|restar/i.test(caso.que || '') || !caso.md) return null;
+  const m = String(caso.que).match(/\bL(\d{2,5})\b/); if (!m) return null;
+  try {
+    const L = readFileSync(resolve(ROOT, caso.md), 'utf8').split('\n'); const i = Number(m[1]) - 1;
+    for (let k = Math.max(0, i - 3); k <= Math.min(L.length - 1, i + 3); k++) { const a = L[k].match(ACLARACION_RE); if (a) return `Dato: la línea L${k + 1} trae la aclaración de signo «${a[0].trim()}».`; }
+  } catch { /* sin .md */ }
+  return null;
+}
+// EL HISTORIAL DE CASOS PARECIDOS (407): en las dudas de verificar, qué se les contestó a las anteriores de la misma etapa, motivo y país. Solo informa: la sesión ve «de 40 parecidas,
+// 31 se aceptaron» y decide ella. Medido: la tasa de «aceptar» va de 36 % (Noruega, extraer) a 95 % (Estonia, extraer), así que el país discrimina; ni una tabla que suma su propio
+// total ni una cifra citada igual a la del cuadro separaron las respuestas (49-67 % de «aceptar» contra 76 %: ruido), por eso no se agregan. Con menos de 10 respuestas no se dice nada.
+export function historialParecidos(caso, { casos, resp }) {
+  if (caso.etapa !== 'verificar' || !/^duda-/.test(caso.motivo || '') || !caso.pdf) return null;
+  const pais = String(caso.pdf).split('/')[1]; let n = 0, ac = 0, no = 0;
+  for (const c of casos.values()) {
+    if (c.etapa !== caso.etapa || c.motivo !== caso.motivo || String(c.pdf).split('/')[1] !== pais) continue;
+    const r = resp.get(c.id); if (!r || (r.decision !== 'aceptar' && r.decision !== 'corregir')) continue;
+    n++; if (r.decision === 'aceptar') ac++; else if (/^no/i.test(String(r.valor || ''))) no++;
+  }
+  return n >= 10 ? `Historial de casos parecidos (${caso.motivo}, ${pais}): ${n} respondidos, ${ac} aceptados (${Math.round((100 * ac) / n)}%), ${no} corregidos a «no».` : null;
 }
 export function respuestaDe(pdf, etapa, motivo, detalle = '') {
   const id = createHash('sha1').update(`${pdf}|${etapa}|${motivo}|${detalle}`).digest('hex').slice(0, 7);
@@ -340,6 +366,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       const o = casos.get(id); const carpeta = o.pdf.split('/').slice(0, -1).join('/'); let n = 0;
       for (const c of casos.values()) if (c.id !== id && c.etapa === 'cargar' && c.motivo === 'categoria' && c.detalle === o.detalle && c.pdf.split('/').slice(0, -1).join('/') === carpeta && (decision !== 'aceptar' || c.categoriaPropuesta === o.categoriaPropuesta) && cerrarResueltoPorClub(c.pdf, c.etapa, c.motivo, c.detalle, o)) n++;
       if (n) console.log(`Cerré ${n} caso(s) de la misma etiqueta en otros años del club (cargar.mjs los reabre si en ese año la fila está en otra nota).`);
+    }
+    // GESTIÓN: «descartar» (la sociedad no tiene presidente persona, o ninguna fuente pública lo nombra) vale para todo el club. Un lote levanta el caso de cada año antes de
+    // que nadie conteste (92 repeticiones medidas, todas descartar tras descartar, entre el 10 y el 20 de octubre; la regla de cargar.mjs solo mira respuestas ya dadas), así que al
+    // contestar uno se cierran como `obsoleto` los otros pendientes del club. Un `aceptar` no: cada año se cubre con sus fechas.
+    if (casos.get(id).etapa === 'cargar' && casos.get(id).motivo === 'gestion' && decision === 'descartar') {
+      const club = String(casos.get(id).detalle).split(':')[0]; let n = 0;
+      for (const c of casos.values()) if (c.id !== id && c.etapa === 'cargar' && c.motivo === 'gestion' && String(c.detalle).split(':')[0] === club && cerrarResueltoPorClub(c.pdf, c.etapa, c.motivo, c.detalle, casos.get(id))) n++;
+      if (n) console.log(`Cerré ${n} caso(s) de gestión de otros años del mismo club (descartar vale para todo el club).`);
     }
     const c0 = casos.get(id); const v = decision === 'corregir' ? (/^s[ií]/i.test(flag('--valor')) ? true : /^no/i.test(flag('--valor')) ? false : undefined) : undefined;
     if (c0.motivo === 'perfil' && v !== undefined) {
