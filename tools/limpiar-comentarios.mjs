@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/limpiar-comentarios.mjs — saca de los comentarios de tools/ la historia que se puede sacar sin leer: «(to-do 345)», «(Versión 812)»,
-// «(2026-10-21)» entre paréntesis y un «TODO 371:» al empezar un comentario. Toca SOLO texto de comentarios (los ubica
+// tools/limpiar-comentarios.mjs — saca de los comentarios de tools/ la historia que se puede sacar sin leer: «(to-do N)», «(Versión N)»,
+// una fecha entre paréntesis y un «TODO N:» al empezar un comentario. Toca SOLO texto de comentarios (los ubica
 // `scan` de comparar-sin-comentarios.js); lo que no es un caso así queda para limpiar a mano (Admin/CONVENCIONES.md, «Comentarios en tools/»).
 //
 //   node tools/limpiar-comentarios.mjs                 ensayo: cuántas referencias saca en cada tool, sin escribir
@@ -19,13 +19,15 @@ const FECHA = '20\\d\\d-\\d\\d-\\d\\d';
 const ALGO = `(?:${REF}|${FECHA})`;
 // un paréntesis que contiene solo referencias y fechas
 const PAREN = new RegExp(`\\s*\\(\\s*${ALGO}(?:\\s*(?:,|;|·|y|/|—)?\\s*${ALGO})*\\s*\\)`, 'gi');
-// un paréntesis corto con una referencia y algo más («Versión 406, auditoría del pipeline», «to-do 298 l, ok de Guido 2026-10-19»), sin citas ni paréntesis adentro
+// un paréntesis corto con una referencia y algo más («Versión N, auditoría del pipeline»), sin citas ni paréntesis adentro
 const PAREN_CON_RESTO = new RegExp(`\\s*\\((?=[^()]{0,90}\\))[^()«»"]*?(?:${REF}|${FECHA})[^()«»"]*\\)`, 'gi');
-// «TODO 371: …» o «to-do 345 — …» (con una letra de sub-punto: «to-do 298 l:») al empezar el comentario
-const INICIO = new RegExp(`^((?://|/\\*+|\\*)\\s*)${REF}(?:\\s+[a-z]\\d?)?\\s*[:—-]\\s*`, 'i');
+// «TODO N: …» o «to-do N — …» (con una letra de sub-punto) al empezar el comentario
+const INICIO = new RegExp(`^((?://|/\\*+|\\*)\\s*)${REF}(?:\\s+[a-z]\\d?)?\\s*[:;,—-]\\s*`, 'i');
+// el paréntesis con que empieza un comentario («// (Versión N, to-do N(i) paso 3) TEXTO»), con un paréntesis adentro como mucho: es la etiqueta de historia del comentario
+const PAREN_INICIAL = new RegExp(`^((?://|/\\*+|\\*)\\s*)\\((?=(?:[^()]|\\([^()]*\\))*\\)\\s)(?:[^()«»"]|\\([^()]*\\))*?(?:${REF}|${FECHA})(?:[^()«»"]|\\([^()]*\\))*\\)\\s*`, 'i');
 
-// El paréntesis se va solo si, sin las referencias, las fechas y quién lo aprobó, quedan 4 palabras o menos («fase 2», «cambio B», «auditoría del pipeline»):
-// con más es información («KNVB para la Eredivisie…, decisión de Guido, 2026-10-19») y se deja para limpiar a mano.
+// El paréntesis se va solo si, sin las referencias, las fechas y quién lo aprobó, quedan 4 palabras o menos («fase 2», «cambio B»):
+// con más es información («…, decisión de Guido, fecha») y se deja para limpiar a mano.
 const ATRIBUCION = /\b(?:ok|aprobad[oa]s?|decidid[oa]s?|decisión|diseño|escalón|aprobación)\b[^,;:)]*\bGuido\b[^,;:)]*/gi;
 function soloHistoria(paren) {
   const resto = paren.replace(new RegExp(ALGO, 'gi'), ' ').replace(ATRIBUCION, ' ').replace(/[(),;:·—-]/g, ' ');
@@ -33,7 +35,7 @@ function soloHistoria(paren) {
 }
 
 export function limpiarTexto(texto) {
-  const t = texto.split('\n').map((l) => l.replace(PAREN, '').replace(PAREN_CON_RESTO, soloHistoria).replace(INICIO, '$1')).join('\n');
+  const t = texto.split('\n').map((l) => l.replace(PAREN, '').replace(PAREN_CON_RESTO, soloHistoria).replace(PAREN_INICIAL, (m, a) => (soloHistoria(m.slice(a.length).trimEnd()) === '' ? a : m)).replace(INICIO, '$1')).join('\n');
   return t !== texto && /^\/\/\s*$/.test(t) ? '' : t; // un comentario que la limpieza dejó vacío se va (los «//» de separación que ya estaban, no)
 }
 
