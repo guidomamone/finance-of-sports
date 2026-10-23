@@ -1099,6 +1099,9 @@ function checkGenerados() {
   // el CHANGELOG: una entrada de más de 1.500 caracteres o el archivo de más de 120 KB (tools/changelog.mjs check; P3)
   try { execSync('node tools/changelog.mjs check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
   catch (e) { for (const l of String(e.stdout || '').split('\n').filter(Boolean)) { const m = l.match(/^(changelog-[a-z-]+): (.*)$/); if (m) add('P3', m[1], m[2]); } }
+  // los hallazgos nuevos de HALLAZGOS-pipeline.md van con sus etiquetas (tools/hallazgo.mjs check; P3)
+  try { execSync('node tools/hallazgo.mjs check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+  catch (e) { const m = String(e.stdout || '').match(/^(hallazgo-[a-z-]+): (.*)$/m); if (m) add('P3', m[1], m[2]); }
 }
 
 // un commit que corrige un dato publicado (importe, categoría, filas, totales, caja/deuda, moneda, fuente, perímetro) lleva el trailer

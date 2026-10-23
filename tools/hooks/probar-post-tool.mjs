@@ -23,5 +23,18 @@ for (const [nombre, entrada, commit, avisa] of casos) {
   if (!ok) mal++;
   console.log(`${ok ? 'ok ' : 'MAL'} ${nombre}`);
 }
-console.log(mal ? `\n${mal} caso(s) MAL` : `\n${casos.length} casos, todos ok`);
+// aviso suave al editar una tool (412): la primera vez por tool y sesión, y solo si hay historial
+const sesion = `prueba-${Date.now()}`;
+const edita = (file_path, session_id = sesion, tool_name = 'Edit') => ({ tool_name, session_id, cwd: raiz, tool_input: { file_path } });
+const corre = (entrada) => { try { return execFileSync('node', [`${raiz}/tools/hooks/post-tool.mjs`], { input: JSON.stringify(entrada), encoding: 'utf8' }); } catch (e) { return String(e.stdout || ''); } };
+const avisos = [
+  ['editar una tool con historial avisa la primera vez', edita(`${raiz}/tools/cola.mjs`), (s) => s.includes('changelog historial cola.mjs') && s.includes('no bloquea')],
+  ['la segunda vez en la misma sesión no dice nada', edita(`${raiz}/tools/cola.mjs`), (s) => s === ''],
+  ['otra sesión vuelve a avisar', edita(`${raiz}/tools/cola.mjs`, `${sesion}-b`), (s) => s.includes('cola.mjs')],
+  ['una tool sin historial no dice nada', edita(`${raiz}/tools/zz-sin-historial-alguno.mjs`), (s) => s === ''],
+  ['un archivo que no es de tools/ no dice nada', edita(`${raiz}/Admin/TODO.md`), (s) => s === ''],
+  ['Write también avisa', edita(`${raiz}/tools/cargar.mjs`, `${sesion}-c`, 'Write'), (s) => s.includes('cargar.mjs')],
+];
+for (const [nombre, entrada, bien] of avisos) { const ok = bien(corre(entrada)); if (!ok) mal++; console.log(`${ok ? 'ok ' : 'MAL'} ${nombre}`); }
+console.log(mal ? `\n${mal} caso(s) MAL` : `\n${casos.length + avisos.length} casos, todos ok`);
 process.exit(mal ? 1 : 0);

@@ -80,6 +80,14 @@ new RegExp(`(\\[[^\\]]*\\b${id}\\b[^\\]]*\\]|\\b(?:TODO|to-do|punto|puntos)s? ${
   else mal(`CHANGELOG: el título de la entrada no nombra ${s.faltan.join(', ')} (corchete: [${id} · ${s.cambiadas.join(', ')}])`);
 }
 
+// 4c. el archivado del CHANGELOG: al cerrar de verdad, si tiene más de 60 entradas se pasan las más viejas al archivo y quedan las 40 más nuevas (las entradas no llevan fecha: se archiva por cantidad)
+{
+  const { leer } = await import('./changelog.mjs'); const n = leer().entradas.length;
+  if (n <= 60) ok(`CHANGELOG: ${n} entradas (se archiva al pasar de 60)`);
+  else if (ENSAYO) aviso(`CHANGELOG: ${n} entradas; al cerrar con --cerrar se archivan las más viejas (quedan 40)`);
+  else { const r = node(['tools/changelog.mjs', 'archivar', '--mantener', '40', '--escribir']); ok(`CHANGELOG archivado: ${(r.stdout || '').trim().split('\n')[0].slice(0, 160)}`); }
+}
+
 // 5. lo que cambió
 const cambiados = git('status', '--porcelain', '-uall').split('\n').filter(Boolean).map((l) => l.slice(3).replace(/^"|"$/g, ''));
 const tocoTools = cambiados.some((f) => /^tools\/[^/]+\.(mjs|js)$/.test(f));

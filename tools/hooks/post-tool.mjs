@@ -8,9 +8,32 @@
 // Prueba con entradas simuladas: node tools/hooks/probar-post-tool.mjs
 // ============================================================================
 import { execFileSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import { tmpdir } from 'node:os';
 
 const entrada = JSON.parse(readFileSync(0, 'utf8') || '{}');
+
+// aviso-al-editar-una-tool (412, aviso SUAVE: no bloquea ni pregunta): la primera vez que una sesión edita tools/<x>.mjs, si hay entradas del CHANGELOG o hallazgos que la nombran,
+// se le dice cuántos y con qué comando verlos. Una vez por tool y por sesión (el estado vive en la carpeta temporal del sistema); sin historial no dice nada.
+if (['Edit', 'Write', 'MultiEdit'].includes(entrada.tool_name)) {
+  const m = String(entrada.tool_input?.file_path || '').match(/\/tools\/([a-z0-9][a-z0-9-]*\.(?:mjs|js))$/);
+  if (!m) process.exit(0);
+  const raiz = entrada.cwd || process.env.CLAUDE_PROJECT_DIR || process.cwd(); const tool = m[1];
+  const estado = join(tmpdir(), `fos-aviso-tool-${String(entrada.session_id || 'sin-sesion').replace(/[^\w-]/g, '')}.json`);
+  let vistos = []; try { vistos = JSON.parse(readFileSync(estado, 'utf8')); } catch { /* primera vez */ }
+  if (vistos.includes(tool)) process.exit(0);
+  try { writeFileSync(estado, JSON.stringify([...vistos, tool])); } catch { /* sin carpeta temporal */ }
+  const re = new RegExp(`(^|[^\\w-])~?${tool.replace(/\./g, '\\.')}\\b`);
+  const lineas = (f, soloTitulos) => { try { return readFileSync(join(raiz, f), 'utf8').split('\n').filter((l) => (!soloTitulos || l.startsWith('## ')) && re.test(l)).length; } catch { return 0; } };
+  let entradas = lineas('Admin/CHANGELOG.md', true);
+  try { for (const f of readdirSync(join(raiz, 'Admin', 'Archive'))) if (/^CHANGELOG-.*\.md$/.test(f)) entradas += lineas(`Admin/Archive/${f}`, true); } catch { /* sin archivo */ }
+  const hallazgos = lineas('Admin/HALLAZGOS-pipeline.md', false);
+  if (!entradas && !hallazgos) process.exit(0);
+  process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: 'PostToolUse',
+    additionalContext: `Aviso (no bloquea): ${tool} figura en ${entradas} título(s) del CHANGELOG y ${hallazgos} línea(s) de HALLAZGOS-pipeline.md. Antes de cambiar su comportamiento: node tools/fos.mjs changelog historial ${tool}.` } }));
+  process.exit(0);
+}
 if (entrada.tool_name !== 'Bash') process.exit(0);
 const cmd = entrada.tool_input?.command || '';
 if (!/\bgit(?:\s+-[cC]\s+\S+|\s+--?[\w-]+(?:=\S+)?)*\s+commit\b/.test(cmd)) process.exit(0);

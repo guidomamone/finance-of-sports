@@ -37,6 +37,9 @@ const GEN = resolve(ROOT, 'Generados');
 const LOTES = resolve(ROOT, 'Admin', 'lotes');
 const A = process.argv.slice(2);
 const MARCA_AUTO = '# === AUTOMÁTICO: un documento de cada familia (lo escribe tools/lotes-prueba.mjs; no se edita) ===';
+const MARCA_RAROS_INI = '# === AUTOMÁTICO: casos raros';
+const MARCA_RAROS = '# === AUTOMÁTICO: casos raros (un ajuste manual, un freno o una respuesta de la cola que no fue «aceptar»; el más viejo y el más nuevo de cada clase; no se edita) ===';
+const MARCA_SEMANA = (clave, familia) => `# === AUTOMÁTICO: ranura de la semana ${clave} (la familia ${familia}; rota cada semana; no se edita) ===`;
 const hash = (pdf) => createHash('sha1').update(`lotes-prueba-1|${pdf}`).digest('hex');
 const porHash = (a, b) => (hash(a.pdf) < hash(b.pdf) ? -1 : 1);
 
@@ -77,11 +80,51 @@ function verificados() {
 const leerArchivo = (n) => readFileSync(resolve(LOTES, `prueba-${n}.txt`), 'utf8').split('\n');
 const sinComentarios = (lineas) => lineas.map((l) => l.trim().normalize('NFC')).filter((l) => l && !l.startsWith('#'));
 
+// ---- LOS CASOS RAROS (409). Un documento que necesitó una intervención (un ajuste manual, un freno de un script, una respuesta de la cola que no fue «aceptar») es justo el que
+// más conviene volver a medir: tuvo problemas. No hay un registro nuevo que alguien tenga que acordarse de escribir: se leen los que ya existen (ajustes-manuales.jsonl, frenados-por-script.jsonl,
+// cola-revision.jsonl), así una carga manual o automática entra sola. La CLASE de un caso es lo que lo hizo raro (`ajuste:cierre`, `freno:298 v2`, `cola:verificar|duda-de-extraer|corregir`).
+// TOPE POR COBERTURA, no por antigüedad (minimización de suites por cobertura): de cada clase entran como máximo 2 documentos, el de año más viejo y el de año más nuevo, así lo viejo se
+// mantiene; la lista crece con las clases y no con los casos, y un presupuesto de PRESUPUESTO_RAROS documentos corta las clases menos recientes. Solo entran documentos con verificación.
+const PRESUPUESTO_RAROS = 40;
+const POR_CLASE = 2;
+const NO_RAROS = new Set(['ajuste:name', 'ajuste:confirmado', 'cola:cargar|gestion|descartar', 'cola:cargar|gestion|corregir', 'cola:cargar|perfil|corregir', 'cola:alta|name|corregir']); // altas y metadatos: no ejercitan la carga
+const jsonl = (ruta) => { try { return readFileSync(resolve(ROOT, ruta), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean); } catch { return []; } };
+function casosRaros(todos) {
+  const porPdf = new Map(todos.map((d) => [d.pdf, d])); const eventos = [];
+  for (const a of jsonl('Admin/registros/ajustes-manuales.jsonl')) if (a.pdf && a.campo && !a.anulado) eventos.push({ pdf: String(a.pdf).normalize('NFC'), clase: `ajuste:${a.campo}`, fecha: a.fecha || '' });
+  for (const f of jsonl('Admin/registros/frenados-por-script.jsonl')) if (f.pdf) eventos.push({ pdf: String(f.pdf).normalize('NFC'), clase: `freno:${f.defecto || '?'}`, fecha: f.fecha || '' });
+  const casos = new Map(); const L = jsonl('Admin/registros/cola-revision.jsonl');
+  for (const r of L) if (r.tipo === 'caso') casos.set(r.id, r);
+  for (const r of L) if (r.tipo === 'respuesta' && ['corregir', 'descartar', 'preguntar-club'].includes(r.decision)) { const c = casos.get(r.id); if (c?.pdf) eventos.push({ pdf: String(c.pdf).normalize('NFC'), clase: `cola:${c.etapa}|${c.motivo}|${r.decision}`, fecha: String(r.ts || '').slice(0, 10) }); }
+  const clases = new Map();
+  for (const e of eventos) {
+    if (NO_RAROS.has(e.clase) || !porPdf.has(e.pdf)) continue;
+    const c = clases.get(e.clase) || { clase: e.clase, docs: new Set(), ultima: '' }; c.docs.add(e.pdf); if (e.fecha > c.ultima) c.ultima = e.fecha; clases.set(e.clase, c);
+  }
+  return [...clases.values()].map((c) => {
+    const docs = [...c.docs].map((p) => porPdf.get(p)).sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999) || porHash(a, b));
+    const elegidos = docs.length <= POR_CLASE ? docs : [docs[0], docs[docs.length - 1]];
+    return { clase: c.clase, ultima: c.ultima, total: docs.length, elegidos: elegidos.map((d) => d.pdf), todos: docs.map((d) => d.pdf) };
+  }).sort((a, b) => b.ultima.localeCompare(a.ultima) || a.clase.localeCompare(b.clase));
+}
+// la ranura de la semana: un documento de UNA familia por semana ISO (rota por todas con el tiempo, así la rápida pasa por todas las épocas y países sin crecer)
+function ranuraDeLaSemana(todos, yaEnLista, ahora = new Date()) {
+  const d = new Date(Date.UTC(ahora.getUTCFullYear(), ahora.getUTCMonth(), ahora.getUTCDate())); const dia = d.getUTCDay() || 7; d.setUTCDate(d.getUTCDate() + 4 - dia);
+  const anio = d.getUTCFullYear(); const semana = Math.ceil(((d - Date.UTC(anio, 0, 1)) / 86400000 + 1) / 7); const clave = `${anio}-S${String(semana).padStart(2, '0')}`;
+  const familias = [...new Set(todos.map((x) => x.familia))].sort();
+  const familia = familias[(anio * 53 + semana) % familias.length];
+  const h = (pdf) => createHash('sha1').update(`ranura|${clave}|${pdf}`).digest('hex');
+  const doc = todos.filter((x) => x.familia === familia && !yaEnLista.has(x.pdf)).sort((a, b) => (h(a.pdf) < h(b.pdf) ? -1 : 1))[0];
+  return { clave, familia, pdf: doc?.pdf || null };
+}
+
 function armar(todos) {
   const archivoRapida = leerArchivo('rapida');
   const iAuto = archivoRapida.findIndex((l) => l.startsWith('# === AUTOMÁTICO'));
+  const iRaros = archivoRapida.findIndex((l) => l.startsWith(MARCA_RAROS_INI));
   const aMano = iAuto >= 0 ? archivoRapida.slice(0, iAuto) : archivoRapida;
-  const previosAuto = new Set(iAuto >= 0 ? sinComentarios(archivoRapida.slice(iAuto)) : []);
+  // las familias que ya tenían su documento: solo el bloque de familias (no el de casos raros ni la ranura, que rotan)
+  const previosAuto = new Set(iAuto >= 0 ? sinComentarios(archivoRapida.slice(iAuto, iRaros > iAuto ? iRaros : undefined)) : []);
   const manoDocs = sinComentarios(aMano);
   const existentes = new Set(todos.map((d) => d.pdf));
   const faltanRapida = manoDocs.filter((p) => !existsSync(resolve(ROOT, p)));
@@ -96,13 +139,23 @@ function armar(todos) {
     const elegido = previo || [...docs].sort(porHash)[0];
     if (!enMano.has(elegido.pdf)) auto.push(elegido.pdf);
   }
-  const rapida = [...manoDocs, ...auto];
+  // los casos raros nuevos (409): por clase, el documento más viejo y el más nuevo, de la clase más reciente a la menos, hasta el presupuesto; lo que ya está en la lista cubre su clase sin sumar
+  const clases = casosRaros(todos); const yaEnLista = new Set([...manoDocs, ...auto]); const raros = []; const cubiertas = []; let agregados = 0;
+  for (const c of clases) {
+    const nuevos = c.elegidos.filter((p) => !yaEnLista.has(p));
+    if (!nuevos.length) { cubiertas.push(c.clase); continue; }
+    if (agregados + nuevos.length > PRESUPUESTO_RAROS) continue;
+    for (const p of nuevos) { raros.push({ pdf: p, clase: c.clase }); yaEnLista.add(p); agregados++; }
+  }
+  const semana = ranuraDeLaSemana(todos, yaEnLista);
+  const rapida = [...manoDocs, ...auto, ...raros.map((r) => r.pdf), ...(semana.pdf ? [semana.pdf] : [])];
   const enRapida = new Set(rapida);
 
-  // mediana: la rápida + 3 por club + uno por estrato + hasta 3 por familia
+  // mediana: la rápida + 3 por club + uno por estrato + hasta 3 por familia + hasta 5 documentos de cada clase de caso raro
   const porClub = new Map();
   for (const d of todos) { if (!porClub.has(d.club)) porClub.set(d.club, []); porClub.get(d.club).push(d); }
   const elegidos = new Set(rapida.filter((p) => existentes.has(p)));
+  for (const c of clases) for (const p of c.todos.length <= 5 ? c.todos : [c.todos[0], c.todos[c.todos.length - 1], ...c.todos.slice(1, -1).sort((a, b) => (hash(a) < hash(b) ? -1 : 1)).slice(0, 3)]) elegidos.add(p);
   for (const docs of porClub.values()) {
     docs.sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999) || a.pdf.localeCompare(b.pdf));
     for (const i of new Set([0, Math.floor((docs.length - 1) / 2), docs.length - 1])) elegidos.add(docs[i].pdf);
@@ -119,7 +172,7 @@ function armar(todos) {
   const mediana = [...rapida, ...orden([...elegidos].filter((p) => !enRapida.has(p)))];
   const enMediana = new Set(mediana);
   const completa = [...mediana, ...orden(todos.map((d) => d.pdf).filter((p) => !enMediana.has(p)))];
-  return { aMano, rapida, auto, mediana, completa, porFam, estratos, porEstrato, faltanRapida };
+  return { aMano, rapida, auto, raros, cubiertas, clases, semana, mediana, completa, porFam, estratos, porEstrato, faltanRapida };
 }
 
 const todos = verificados();
@@ -133,6 +186,9 @@ if (A.includes('--check')) {
   for (const d of todos) { if (d.year == null) continue; if (!clubes.has(d.club)) clubes.set(d.club, []); clubes.get(d.club).push(d); }
   const sinUltimo = [...clubes].filter(([, docs]) => { const max = Math.max(...docs.map((d) => d.year)); return !docs.some((d) => d.year === max && mediana.has(d.pdf)); }).map(([c]) => c);
   if (sinUltimo.length) problemas.push(`${sinUltimo.length} club(es) cuyo último año con verificación no está en la mediana (${sinUltimo.slice(0, 4).join(', ')}${sinUltimo.length > 4 ? ', …' : ''})`);
+  // los casos raros: el documento más viejo y el más nuevo de cada clase tienen que estar en la mediana (la rápida los trae hasta el presupuesto; la mediana, siempre)
+  const sinRaro = casosRaros(todos).flatMap((c) => c.elegidos.filter((p) => !mediana.has(p)).map((p) => `${c.clase}: ${p.split('/').slice(-2).join('/')}`));
+  if (sinRaro.length) problemas.push(`${sinRaro.length} documento(s) de casos raros (ajuste manual, freno o respuesta de la cola) fuera de la mediana (${sinRaro.slice(0, 2).join('; ')}${sinRaro.length > 2 ? '; …' : ''})`);
   if (problemas.length) { console.error(`${problemas.join('; ')}. Corré: node tools/lotes-prueba.mjs`); process.exit(1); }
   console.log(`lotes de prueba al día (${mediana.size} documentos en la mediana, ${new Set(todos.map((d) => d.familia)).size} familias)`);
   process.exit(0);
@@ -144,6 +200,7 @@ const cuenta = (arr) => arr.reduce((m, p) => m.set(familiaDe(p).clave, (m.get(fa
 const [cR, cM, cC] = [cuenta(L.rapida), cuenta(L.mediana), cuenta(L.completa)];
 for (const f of [...cC.keys()].sort((a, b) => cC.get(b) - cC.get(a))) console.log(`${f.padEnd(24)} rápida ${String(cR.get(f) || 0).padStart(3)} · mediana ${String(cM.get(f) || 0).padStart(3)} · completa ${String(cC.get(f)).padStart(4)}`);
 console.log(`TOTAL                    rápida ${L.rapida.length} · mediana ${L.mediana.length} · completa ${L.completa.length} (${L.porFam.size} familias, ${L.estratos.size} estratos, ${L.porEstrato} agregados a la mediana por estrato)`);
+console.log(`Casos raros: ${L.clases.length} clases (${L.clases.reduce((a, c) => a + c.todos.length, 0)} documentos); a la rápida entran ${L.raros.length} (tope ${PRESUPUESTO_RAROS}); ${L.cubiertas.length} clases ya cubiertas por lo que estaba. Ranura de la semana ${L.semana.clave}: ${L.semana.familia}${L.semana.pdf ? '' : ' (sin documento libre)'}`);
 if (A.includes('--ensayo')) { console.log('\nEnsayo: no se escribió nada.'); process.exit(0); }
 
 const cabecera = (que) => [
@@ -152,7 +209,8 @@ const cabecera = (que) => [
   `# ${que}`,
 ].join('\n');
 const escribir = (n, txt) => { const f = resolve(LOTES, `prueba-${n}.txt`); if (!existsSync(f) || readFileSync(f, 'utf8') !== txt) writeFileSync(f, txt); };
-escribir('rapida', `${L.aMano.join('\n').replace(/\n+$/, '')}\n${MARCA_AUTO}\n${L.auto.join('\n')}${L.auto.length ? '\n' : ''}`);
+const bloqueRaros = L.raros.map((r, i) => `${i === 0 || L.raros[i - 1].clase !== r.clase ? `# clase: ${r.clase}\n` : ''}${r.pdf}`).join('\n');
+escribir('rapida', `${L.aMano.join('\n').replace(/\n+$/, '')}\n${MARCA_AUTO}\n${L.auto.join('\n')}${L.auto.length ? '\n' : ''}${MARCA_RAROS}\n${bloqueRaros}${L.raros.length ? '\n' : ''}${L.semana.pdf ? `${MARCA_SEMANA(L.semana.clave, L.semana.familia)}\n${L.semana.pdf}\n` : ''}`);
 escribir('mediana', `${cabecera('MEDIANA: la rápida + tres documentos por club (el más viejo, el del medio y el más nuevo) + uno de cada estrato (familia × época × moneda × deporte) + al menos 3 por familia.')}\n${L.mediana.join('\n')}\n`);
 escribir('completa', `${cabecera('COMPLETA: la mediana + todos los demás documentos con verificación.')}\n${L.completa.join('\n')}\n`);
 console.log('\nListas al día: Admin/lotes/prueba-rapida.txt, prueba-mediana.txt y prueba-completa.txt.');
