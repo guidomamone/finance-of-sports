@@ -18,6 +18,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 966 — Comentarios de tools/: medición, criterio, aviso y prueba de «solo comentarios» [374]
+
+- Medido (`node tools/comparar-sin-comentarios.js --medir`): 166 tools, 36 % de los bytes son comentarios (1,1 MB), 1.629 referencias a «Versión N», «to-do N» o fechas en 145 tools, 13 cabeceras de más de 25 líneas; las peores: `verificar.mjs` (241), `cargar.mjs` (157), `caja-deuda.mjs` (130), `audit.js` (98), `lote.mjs` (96).
+- Criterio en `Admin/CONVENCIONES.md`, «Comentarios en tools/». Aviso P3 `comentario-historico-en-tools` en `audit.js` (con su acción en `audit-acciones.json`), sin revisión independiente: P3, solo cuenta; sin diferencias salvo el aviso nuevo.
+- `comparar-sin-comentarios.js --tools` (código sin comentarios contra HEAD más `node --check`) y `solo_comentarios` en `pipeline-tools.json`: `medir pipeline` reconoce un cambio de solo comentarios y anota «idéntico» (lote `solo-comentarios`) sin correr un lote; 3 casos nuevos en `probar-medir-pipeline.mjs` (13, todos ok). Una mudanza sigue por los lotes.
+- `patron.mjs --en <carpeta>`: el patrón de una condición nueva de una tool se cuenta en los `.js` de esa carpeta (acá `tools`) en vez de en los `.md` de los clubes.
+- Falta (queda en el TODO 374): limpiar las tools, de las que más ruido tienen a las de más de 50 KB.
+
 ## Versión 965 — `fos patron`: el veredicto general, parche o rechazada por una tool, y el hook lo pide [384]
 
 - `tools/patron.mjs` (`node tools/fos.mjs patron --cambio "…" --patron "<regex>" [--rango A..B] [--escribir]`): (1) sin nombres: el código agregado (sin comentarios) no nombra un club de `data/clubs.js`, un año literal ni una ruta de `Clubes/`; (2) cuántos: documentos y clubes de `Clubes/**/*.md` con el patrón (general desde 3 de 2); (3) no rompe: la medición con la huella actual de cada tool. Veredicto GENERAL, PARCHE (imprime el `ajustes.mjs --agregar`), RECHAZADA o PENDIENTE; `--escribir` anota GENERAL y RECHAZADA en `auditoria-proceso.jsonl` con la huella. Solo juzga tools del pipeline y sus módulos, no los medidores.
