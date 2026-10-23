@@ -30,6 +30,14 @@ writeFileSync(join(T, 'cambio.txt'), 'x\n');
 s = correr();
 caso('con cambios y un punto cumplido bloquea', s?.decision === 'block' && /sin commitear/.test(s.reason) && /punto 001/.test(s.reason), JSON.stringify(s));
 caso('la salida no pasa de 8 líneas', (s?.reason || '').split('\n').length <= 8, s?.reason);
+mkdirSync(join(T, 'Admin', 'mediciones', 'pipeline'), { recursive: true });
+writeFileSync(join(T, 'Admin', 'mediciones', 'pipeline', '_corriendo'), JSON.stringify({ pid: process.pid }));
+s = correr();
+caso('con una medición corriendo (candado con un pid vivo) no dice nada', s === null, JSON.stringify(s));
+writeFileSync(join(T, 'Admin', 'mediciones', 'pipeline', '_corriendo'), JSON.stringify({ pid: 2147483000 }));
+s = correr();
+caso('el candado de un pid muerto no cuenta: avisa', s?.decision === 'block', JSON.stringify(s));
+rmSync(join(T, 'Admin', 'mediciones'), { recursive: true, force: true });
 s = correr({ stop_hook_active: true });
 caso('si ya está continuando por un bloqueo, no repite', s === null, JSON.stringify(s));
 

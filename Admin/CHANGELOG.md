@@ -18,6 +18,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 979 — Candado de medición: el hook no deja editar lo trackeado mientras mide [394]
+
+- `medir-pipeline.mjs` deja `Admin/mediciones/pipeline/_corriendo` (pid, desde cuándo, tools) mientras corre los lotes y lo suelta al salir (también por error o Ctrl-C). `pre-tool.mjs` rechaza `Edit`/`Write`/`MultiEdit` de un archivo trackeado del repo con el candado vivo, diciendo que espere la notificación; un pid muerto, el scratchpad y lo sin trackear pasan. El hook `Stop` calla mientras haya un candado vivo.
+- Pruebas: 6 casos nuevos en `probar-pre-tool.mjs` (60), 1 en `probar-medir-pipeline.mjs` (el medidor ve el candado y al terminar ya no está) y 2 en `probar-stop.mjs` (8).
+
 ## Versión 978 — `fos reemplazar`: edición en masa sin que el hook la rechace [392]
 
 - `tools/reemplazar.mjs` (`node tools/fos.mjs reemplazar <archivo …> --de … --a … [--regex] [--solo-comentarios] [--escribir]` y `--lista cambios.json`): el mismo texto en varios archivos (solo dentro de comentarios si se pide, con el `scan` del comparador) o una lista de cambios exactos por línea (la forma que hizo falta en el 374); ensayo por defecto con archivo:línea y antes/después; si un cambio de la lista falla no se escribe ningún archivo; se niega a escribir un archivo con cambios sin commitear. Prueba de 8 casos en `probar-reemplazar.mjs`. El rechazo del hook a `sed -i`/`python`/`node -e` ahora la nombra. Herramienta de orden (`no_pipeline`).

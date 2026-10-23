@@ -135,6 +135,15 @@ if (SOLO_CHICO) nivelFinal = 'chico';
 console.log(`Tools: ${nombres.join(', ')}\nMedidores: ${medidores.join(', ')}\n` + (hayLista ? `Lote: chico primero, hasta ${nivelFinal} (mínimo por tabla: ${minimo}); ${afectadas.length} familia(s) afectada(s) de ${total.size}.` : 'Lote: ningún medidor usa lista; miden el sitio entero.'));
 if (A.includes('--ensayo')) { process.exit(0); }
 
+// ---- candado (TODO 394) ------------------------------------------------------
+// Mientras mide, deja Admin/mediciones/pipeline/_corriendo con su pid: el hook de pre-tool rechaza editar un archivo trackeado (esta tool lo revierte) hasta que termine.
+// Se suelta al salir, también por un error o Ctrl-C; si la corrida muere sin soltarlo, el hook ignora un pid que ya no existe.
+const CANDADO = join(BASE_DIR, '_corriendo');
+mkdirSync(BASE_DIR, { recursive: true });
+writeFileSync(CANDADO, JSON.stringify({ pid: process.pid, desde: new Date().toISOString(), tools: nombres }));
+process.on('exit', () => { try { rmSync(CANDADO, { force: true }); } catch { /* ya no está */ } });
+for (const s of ['SIGINT', 'SIGTERM']) process.on(s, () => process.exit(130));
+
 // ---- sin efectos al costado ------------------------------------------------
 const SENSIBLE = /^(data|Generados|Clubes|js|css|Admin\/registros)\b|^index\.html/;
 // lo que esta tool mueve a propósito: sus salidas, el registro y las tools que intercambia (no el resto de tools/: un medidor puede escribir ahí, p. ej. la caché de estadio-sponsor)

@@ -10,7 +10,8 @@
 //   4. lo que el medidor escribe en un archivo trackeado de tools/ se revierte;
 //   5. una corrida que murió a la mitad deja un respaldo: la siguiente se niega, y --restaurar devuelve las tools;
 //   6. sin tools cambiadas dice «nada que medir»;
-//   7. un cambio de solo comentarios no corre el lote: pasa por la comparación sin comentarios y anota «idéntico» (lote «solo-comentarios»); si además cambia el código, va por los lotes.
+//   7. mientras mide deja un candado con su pid (lo lee el hook para no dejar editar) y lo suelta al terminar;
+//   8. un cambio de solo comentarios no corre el lote: pasa por la comparación sin comentarios y anota «idéntico» (lote «solo-comentarios»); si además cambia el código, va por los lotes.
 // USO: node tools/probar-medir-pipeline.mjs    (menos de 1 minuto; sale con 1 si algún caso falla; no toca nada fuera de su carpeta de prueba)
 import { mkdirSync, writeFileSync, readFileSync, copyFileSync, rmSync, existsSync, readdirSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
@@ -37,6 +38,8 @@ w('tools/escribe.json', '{"n":0}\n');
 w('tools/fake-medidor.mjs', [
   "import { readFileSync, writeFileSync } from 'node:fs';",
   "import { VALOR } from './fake-tool.mjs';",
+  "import { existsSync, copyFileSync } from 'node:fs';",
+  "const candado = `${import.meta.dirname}/../Admin/mediciones/pipeline/_corriendo`; if (existsSync(candado)) copyFileSync(candado, `${import.meta.dirname}/../Admin/mediciones/pipeline/_candado-visto`);",
   "const dir = import.meta.dirname;",
   "const d = JSON.parse(readFileSync(`${dir}/dato.json`, 'utf8')).d;",
   "const e = JSON.parse(readFileSync(`${dir}/escribe.json`, 'utf8')); writeFileSync(`${dir}/escribe.json`, JSON.stringify({ n: e.n + 1 }) + '\\n'); // efecto al costado a propósito",
@@ -54,6 +57,8 @@ const caso = (nombre, cond, detalle = '') => { if (!cond) mal++; console.log(`${
 w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 0; // un comentario\n');
 let r = medir();
 caso('un cambio sin efecto da idéntico y sale con 0', r.status === 0 && /idéntico/.test(r.out) && registro().at(-1)?.resultado === 'idéntico', r.out.slice(-300));
+const visto = join(T, 'Admin/mediciones/pipeline/_candado-visto');
+caso('mientras mide hay un candado con el pid de la corrida, y al terminar ya no está', existsSync(visto) && Number(JSON.parse(readFileSync(visto, 'utf8')).pid) > 0 && !existsSync(join(T, 'Admin/mediciones/pipeline/_corriendo')), existsSync(visto) ? readFileSync(visto, 'utf8') : 'el medidor no vio el candado');
 caso('la tool queda como se editó (no la versión de git)', leer('tools/fake-tool.mjs').includes('un comentario'));
 caso('lo que el medidor escribe en un archivo trackeado se revierte', g('status', '--porcelain', 'tools/escribe.json').stdout === '' && /revertido/.test(r.out), g('status', '--porcelain').stdout);
 const claveUno = registro().at(-1)?.medidores?.[0]?.despues;

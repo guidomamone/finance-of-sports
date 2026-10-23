@@ -47,7 +47,7 @@
 // ============================================================================
 import { execFileSync } from 'node:child_process';
 import { appendFileSync, existsSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, relative, resolve } from 'node:path';
 import { clasificar } from '../clasificar-tools.mjs';
 
 const entrada = JSON.parse(readFileSync(0, 'utf8') || '{}');
@@ -174,6 +174,23 @@ function veredictoAntesDelCommit(cmd, raiz, tocadas, staged) {
     + 'Corré: node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" --escribir   (cuenta documentos y clubes, mira que el código no nombre nada y toma la medición). '
     + 'Si da PARCHE o RECHAZADA, el cambio no va al código: va como ajuste (la tool imprime el comando).\n'
     + 'Si es una mudanza o solo comentarios y la tool no lo vio así, o es un caso de emergencia, con el ok de Guido agregá [sin-veredicto] al mensaje del commit.');
+}
+
+// medicion-en-curso (TODO 394): mientras corre `medir-pipeline` (deja Admin/mediciones/pipeline/_corriendo con su pid) revierte lo trackeado que cambie, así que un
+// Edit/Write de un archivo trackeado de la carpeta se rechaza hasta que termine. Un pid muerto (la medición cayó) no cuenta; lo que está afuera del repo
+// (el scratchpad) o sin trackear tampoco. FOS_PID_MEDICION reemplaza el pid del candado: lo usa la prueba.
+function edicionMientrasSeMide() {
+  if (!EDITA.includes(herramienta)) return;
+  const ruta = rutaEditada();
+  if (!ruta) return;
+  let pid;
+  try { pid = Number(process.env.FOS_PID_MEDICION) || JSON.parse(readFileSync(join(cwd, 'Admin', 'mediciones', 'pipeline', '_corriendo'), 'utf8')).pid; } catch { return; }
+  if (!process.env.FOS_PID_MEDICION && !existsSync(join(cwd, 'Admin', 'mediciones', 'pipeline', '_corriendo'))) return;
+  try { process.kill(pid, 0); } catch { return; }
+  const rel = relative(cwd, resolve(cwd, ruta));
+  if (rel.startsWith('..')) return;
+  try { git(['ls-files', '--error-unmatch', '--', rel]); } catch { return; }
+  decidir('deny', `Hay una medición corriendo (node tools/medir-pipeline.mjs, pid ${pid}): revierte lo trackeado que cambie mientras mide, y ${rel} está trackeado. Esperá la notificación de que terminó y editá después. (Si cayó y quedó el candado, borrá Admin/mediciones/pipeline/_corriendo.)`);
 }
 
 // Un Bash que escribe: sed/perl en el lugar, redirección, tee, mv, cp, rm, o un intérprete que puede escribir cualquier cosa.
@@ -420,3 +437,4 @@ pushConOk(cmd);
 if (VARIAS) docsDeLaPrincipal(cmd);
 pdfsConOk(cmd);
 if (herramienta === 'Bash') { medicionAntesDelCommit(cmd); auditAntesDelCommit(cmd); }
+edicionMientrasSeMide();

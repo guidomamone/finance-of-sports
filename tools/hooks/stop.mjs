@@ -20,6 +20,8 @@ if (entrada.stop_hook_active) process.exit(0);
 const raiz = entrada.cwd || process.env.CLAUDE_PROJECT_DIR || process.cwd();
 const sh = (cmd, args) => { try { return { ok: true, out: execFileSync(cmd, args, { cwd: raiz, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], timeout: 20_000 }) }; } catch (e) { return { ok: false, out: `${e.stdout || ''}` }; } };
 if (!sh('git', ['rev-parse', '--show-toplevel']).ok) process.exit(0);
+// una medición en curso (candado de medir-pipeline, TODO 394) deja el árbol sin commitear a propósito: no se avisa hasta que termine
+try { process.kill(JSON.parse(readFileSync(join(raiz, 'Admin', 'mediciones', 'pipeline', '_corriendo'), 'utf8')).pid, 0); process.exit(0); } catch { /* sin candado, o de un pid muerto */ }
 
 const sucios = sh('git', ['status', '--porcelain']).out.split('\n').filter(Boolean);
 const ultimoCommit = Number(sh('git', ['log', '-1', '--format=%ct']).out.trim()) || 0;

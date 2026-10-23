@@ -85,6 +85,13 @@ const casos = [
   ['una sesión: editar una skill con Edit pasa sin propuesta', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: 'Un texto que nadie propuso nunca en ningún archivo de propuestas.' } }, 'pasa'],
   ['una sesión: archivar una sesión pasa', { tool_name: 'mcp__ccd_session_mgmt__archive_session', tool_input: { session_id: 'local_x' } }, 'pasa'],
   ['varias: un Bash que escribe en skills se rechaza', bash("cat > .claude/skills/a/SKILL.md <<'EOF'\nhola\nEOF"), 'deny', 'Editá la skill', 'varias-sesiones'],
+  // TODO 394: con una medición corriendo (pid vivo) no se edita un archivo trackeado del repo
+  ['medición en curso: editar un archivo trackeado se rechaza', { tool_name: 'Edit', tool_input: { file_path: `${raiz}/Admin/TODO.md`, old_string: 'x', new_string: 'y' } }, 'deny', 'medición corriendo', 'una-sesion', { FOS_PID_MEDICION: String(process.pid) }],
+  ['medición en curso: un Write de un archivo trackeado también', { tool_name: 'Write', tool_input: { file_path: `${raiz}/tools/todo.mjs`, content: 'x' } }, 'deny', 'medición corriendo', 'una-sesion', { FOS_PID_MEDICION: String(process.pid) }],
+  ['medición en curso: el candado de un pid muerto no cuenta', { tool_name: 'Edit', tool_input: { file_path: `${raiz}/Admin/TODO.md`, old_string: 'x', new_string: 'y' } }, 'pasa', undefined, 'una-sesion', { FOS_PID_MEDICION: '2147483000' }],
+  ['medición en curso: un archivo afuera del repo (scratchpad) pasa', { tool_name: 'Write', tool_input: { file_path: '/private/tmp/claude-501/x/scratchpad/a.json', content: 'x' } }, 'pasa', undefined, 'una-sesion', { FOS_PID_MEDICION: String(process.pid) }],
+  ['medición en curso: un archivo sin trackear pasa', { tool_name: 'Write', tool_input: { file_path: `${raiz}/Admin/archivo-que-no-existe-ni-esta-trackeado.txt`, content: 'x' } }, 'pasa', undefined, 'una-sesion', { FOS_PID_MEDICION: String(process.pid) }],
+  ['sin medición corriendo se edita lo trackeado', { tool_name: 'Edit', tool_input: { file_path: `${raiz}/Admin/TODO.md`, old_string: 'x', new_string: 'y' } }, 'pasa'],
   ...casosMedicion(),
 ];
 
