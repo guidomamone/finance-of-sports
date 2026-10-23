@@ -98,7 +98,7 @@
   "extraer.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo", "verificar"], "prueba_paga": "solo si cambia el prompt, con el costo a la vista" },
   "lote.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"] },
   "caja-deuda.mjs": { "alcance": "etapa", "medidores": ["caja-deuda", "caja-deuda-personal", "personal-ensayos", "audit"] },
-  "alta-club.mjs": { "alcance": "etapa", "medidores": ["alta"] },
+  "alta-club.mjs": { "alcance": "compartida", "medidores": ["alta", "cargar"] },
   "xhtml-aarsrapport.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },
   "ixbrl-resultado.mjs": { "alcance": "etapa", "medidores": ["xhtml", "verificar"], "familia": { "formato": "xhtml" } },
   "bfo-rusia.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Rusia" } },
