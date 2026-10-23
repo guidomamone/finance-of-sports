@@ -64,7 +64,7 @@ const schema = {
   $defs: {
     fecha: { type: 'string', pattern: '^\\d{4}-\\d{2}-\\d{2}$' },
     moneda: { type: 'string', pattern: '^[A-Z]{3}$', description: 'ISO 4217' },
-    fuente: objeto({ id: texto, club_id: texto, title: texto, type: texto, reliability: texto, url: texto, public_note: texto }, ['id', 'club_id', 'title', 'type', 'reliability']),
+    fuente: objeto({ id: texto, club_id: texto, title: texto, type: texto, reliability: texto, url: texto, public_note: texto, document: texto }, ['id', 'club_id', 'title', 'type', 'reliability']),
     items: { type: 'array', items: { $ref: '#/$defs/item' }, description: 'Desglose de una línea: [rótulo, importe] o [rótulo, importe, subitems].' },
     item: { oneOf: [{ type: 'array', prefixItems: [texto, num], minItems: 2, maxItems: 2, items: false }, { type: 'array', prefixItems: [texto, num, { $ref: '#/$defs/items' }], minItems: 3, maxItems: 3, items: false }] },
     linea_ingreso: linea('revenue'), linea_gasto: linea('expense'),

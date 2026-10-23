@@ -37,7 +37,7 @@ export const DISCLOSURE = ['aggregate', 'aggregated', 'aggregated_residual', 'de
 // (esquema 2.0): la categoría de cada línea es la SUBCATEGORÍA del deporte (`subcategory`, la que eligen el pipeline y la cola); `category`
 // es la genérica, que no viene del data file: la deriva aJson de data/category-map.js (genericCategoryOf) y validar exige que el par coincida.
 const LINEA = { rawLabel: 'label', normalizedCategory: 'subcategory', amountNative: 'amount', disclosureLevel: 'disclosure', items: 'items' };
-const FUENTE = { id: 'id', clubId: 'club_id', title: 'title', type: 'type', reliability: 'reliability', url: 'url', publicNote: 'public_note' };
+const FUENTE = { id: 'id', clubId: 'club_id', title: 'title', type: 'type', reliability: 'reliability', url: 'url', publicNote: 'public_note', documento: 'document' };
 const GESTION = { nombre: 'name', firstYear: 'first_year', lastYear: 'last_year' };
 const SIN_DESGLOSE = { renglon: 'line', lado: 'side', importe: 'amount', motivo: 'reason' };
 const INCLUIDO = { en: 'in', posible: 'possible', por: 'by' };

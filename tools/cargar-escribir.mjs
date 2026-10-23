@@ -224,7 +224,7 @@ export function escribir(P) {
       const notaXhtml = (() => { try { return P.md && /xhtml-aarsrapport\.mjs/.test(readFileSync(resolve(ROOT, P.md), 'utf8').slice(0, 400)) ? 'Informe oficial en formato XHTML (iXBRL)' : null; } catch { return null; } })();
       const notaPublica = [notaPrimero, P.suma?.nota, notaXhtml].filter(Boolean).join(' ');
       if (!fuenteExistente) {
-        fuenteNueva = { id: S.id, clubId: S.clubId, title: S.title, type: S.type, reliability: S.reliability, ...(notaPublica ? { publicNote: notaPublica } : {}) };
+        fuenteNueva = { id: S.id, clubId: S.clubId, title: S.title, type: S.type, reliability: S.reliability, ...(S.documento ? { documento: S.documento } : {}), ...(notaPublica ? { publicNote: notaPublica } : {}) };
         if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
       // Al recargar con --reemplazar un año cuya fuente ya existe, la fuente se conserva; pero si el año es un primer ejercicio o un tramo de
       // transición y su nota no está, se agrega al final de la nota pública que tenga (sin pisarla). Caso: Atalanta 2022, recargada como tramo

@@ -32,7 +32,7 @@ const diccionario = [
   D('club.country', 'string', 'País (ISO 3166-1 alfa-2).', 'country'), D('club.reporting_currency', 'string', 'Moneda en que el club reporta (ISO 4217).', 'reportingCurrency'),
   D('club.fiscal_year_start', 'string', 'Día en que empieza el ejercicio (MM-DD).', 'fiscalYearStart'), D('club.sport', 'string', 'Deporte (football, rugby_union...).', 'sport'),
   D('club.taxonomy', 'string', 'Versión del mapa de subcategorías del deporte a categorías genéricas con que se derivó cada category (data/schema/taxonomy-<versión>.json).'),
-  D('sources[]', 'object', 'Documento del que sale cada ejercicio: id, club_id, title, type, reliability, url, public_note.', 'sources{}'),
+  D('sources[]', 'object', 'Documento del que sale cada ejercicio: id, club_id, title, type, reliability, url, public_note, document (ruta del PDF de origen en el repositorio).', 'sources{}'),
   D('management[]', 'object', 'Gestiones (presidentes) del club con los años que cubren: id, name, first_year, last_year.', 'gestionesByClub'),
   D('members', 'number|null', 'Cantidad de socios.', 'memberCountByClub'),
   D('years[].fiscal_year', 'integer', 'Año del ejercicio (el año en que cierra).'), D('years[].period_end', 'date', 'Fecha de cierre del ejercicio.'),
