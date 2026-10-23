@@ -57,6 +57,36 @@ Con lo medido:
 4. Localizar/extraer con la identidad (el que más baja la investigación).
 5. Signo.
 
+## Bajar la cola (medido el 2026-10-23, 6.941 casos)
+
+La cola no es mala; es mala cuando pregunta por todo. Por tipo: categoría 47 %, duda-tema 8, duda-de-extraer 8, perfil 7, no-cierra 7, gestión 7,
+primer-año 4, localizar 4, año-vecino 3. Una mediana de 4 preguntas reales por documento (p90 13, máximo 52).
+
+**A. Materialidad en categoría.** Contestar sola con la propuesta si el monto es chico respecto del total de su lado del ejercicio.
+Medido sobre 1.870 preguntas (las que se pudieron cruzar con su ejercicio), contra lo que la sesión respondió:
+
+| Umbral por pregunta | Se contestan solas | La sesión las habría cambiado | Cruzan ingreso/gasto | Error acumulado por documento (mediana · p90 · máx) |
+|---|---|---|---|---|
+| 0,25 % | 29 % | 19 % | 6 | 0,08 · 0,34 · 0,70 % |
+| **0,5 %** | **38 %** | 17 % | 7 | 0,14 · 0,51 · **0,93 %** |
+| 1 % | 49 % | 19 % | 11 | 0,50 · 1,47 · 2,82 % |
+| 2 % | 63 % | 19 % | 13 | 1,02 · 2,54 · 7,11 % |
+
+Recomendación: 0,5 % por pregunta **más un tope acumulado de 1 % por documento y lado** (si lo auto-contestado lo pasa, vuelven a la cola las mayores)
+y piso de confianza 0,5 (con 1 % y confianza ≥0,5 las cambiadas bajan de 19 % a 16 %). Cada una queda anotada en la evidencia del club («auto por
+materialidad: monto, % del lado, propuesta») para que sea reversible y auditable. Se mide con el lote completo y se rehace la medición con el campo `document`
+de las fuentes (ya firme), sin el cruce por nombre. La decisión de 0,5 % o 1 % es de Guido.
+
+**B. No abrir el caso hasta que el lote esté estable.** Casos que se abrieron y se cerraron solos como `obsoleto`: numero-no-confirmado 78 %, no-cierra 65 %,
+primer-año 60 %, año-vecino 47 % (690 de 1.134). Propuesta: estos motivos quedan provisorios y solo pasan a la cola si siguen levantados en la corrida
+que carga. Se mide que ningún caso que la sesión respondió de verdad (no obsoleto) deje de abrirse.
+
+**C. Preguntar por club, no por año.** Perfil (201 de 201 iguales) y gestión (141 de 402 respuestas reales fueron `descartar` por la regla de gestión
+sin fuente de `CONVENCIONES-DATOS`): aplicar esa regla en la tool y cerrar el caso con su cita. Falta medir cuántos de los 141 la regla habría
+resuelto sola.
+
+**D. Datos en el caso** (secciones de arriba): lo que queda en la cola llega con el precedente, la identidad y el historial.
+
 ## Qué no se sabe todavía
 
 - Cuántos de los 722 de localizar/extraer tienen un cuadro nombrado con líneas que se puedan sumar sin leerlos a mano. Se mide en el paso 4 antes de escribir código.

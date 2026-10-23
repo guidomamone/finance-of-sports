@@ -18,6 +18,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 994 — El JSON de cada club guarda el PDF de origen de cada fuente [407]
+
+- `sources[].document` (opcional, ruta `Clubes/<País>/<Club>/<archivo>.pdf`, esquema club-v2): `cargar.mjs` y `cargar-escribir.mjs` lo escriben en toda fuente nueva. `tools/fuente-documento.mjs` lo completó en 1.069 de las 1.344 fuentes ya cargadas (nombre del archivo en el título genérico, carpeta del club para desempatar; solo si hay un único archivo). Quedan 271 sin nombre en el título (Rusia `bfo`, que no son PDF, y fuentes con título propio) y 4 ambiguas: se completan con `fuente.mjs`.
+- Medido: lote completo idéntico; veredicto general.
+- 407: propuesta en `Admin/propuestas/407-cola-con-datos.md` con la materialidad medida (0,5 % por pregunta con tope de 1 % por documento) y los casos que se abren y se cierran solos.
+
 ## Versión 993 — La amortización junta se parte sola (`fos partir`) y Mönchengladbach 2021 [406 · 407 · monchengladbach-de]
 
 - `tools/partir-amortizacion.mjs`: busca la línea de depreciación y amortización junta del estado y la parte con el cuadro de movimiento del inmovilizado (la columna del cargo del ejercicio, con la extraordinaria, suma la línea) o con dos notas (intangibles + bienes de uso) SOLO si la suma cierra con una única solución; si no, no escribe y queda en la cola. Escribe los ajustes `fila` y `categoria` con su cita. `lote.mjs --ejecutar` lo corre antes de verificar. Sobre los 988 documentos de la lista completa propone 3 y los 3 reproducen exacto lo que se había partido a mano (Mönchengladbach 2022: 32.294.038,76 + 13.629.219,22; Silkeborg 2025: 6.502 + 6.168; Viborg 2025: 15.751.691 + 2.624.046); en 172 más hay una línea junta cuyas notas no cierran: no decide.

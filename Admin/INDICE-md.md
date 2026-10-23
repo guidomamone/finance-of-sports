@@ -33,7 +33,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 79, `Admin/Archive` 353, 
 - `Admin/propuestas/257-skills.md` · ~40 KB · (sin marca) · ←2 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/propuestas/330-donde-se-pierde.md` · ~15 KB · (sin marca) · ←2 · →ARQUITECTURA.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO.md, HALLAZGOS-pipeline.md, PIPELINE.md
 - `Admin/propuestas/350-revision-categorias.md` · ~10 KB · (sin marca) · ←2 · →CONVENCIONES-DATOS.md, PANTALLA.md
-- `Admin/propuestas/407-cola-con-datos.md` · ~5 KB · propuesta del punto 407, qué datos suma la cola a cada tipo de pregunta en vez de una respuesta por defecto · **leer:** antes de tocar la propuesta de la cola (cargar.mjs, cola.mjs, verificar) · ←0 huérfano · →HALLAZGOS-pipeline.md
+- `Admin/propuestas/407-cola-con-datos.md` · ~10 KB · propuesta del punto 407, qué datos suma la cola a cada tipo de pregunta en vez de una respuesta por defecto · **leer:** antes de tocar la propuesta de la cola (cargar.mjs, cola.mjs, verificar) · ←0 huérfano · →HALLAZGOS-pipeline.md
 - `Admin/propuestas/archivo-no-es-lo-que-dice.md` · <5 KB · (sin marca) · ←1 · →PIPELINE.md
 - `Admin/propuestas/estructurado-sin-ia.md` · <5 KB · (sin marca) · ←1 · →CONVENCIONES.md
 - `Admin/propuestas/transicion-y-covid.md` · ~10 KB · (sin marca) · ←1 · →CONVENCIONES-DATOS.md, dudas-por-club.md
