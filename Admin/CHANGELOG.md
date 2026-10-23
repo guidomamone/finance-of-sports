@@ -18,6 +18,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 986 — El informe del backtest de alta salta un club que ya no está [400]
+
+- `alta-club-backtest.mjs`: `--informe-backtest` salta con un aviso cada fila cuyo club ya no está en el sitio (`velez`, `oncecaldas`, `clubamerica`: ids viejos) en vez de caer con un TypeError; el informe se imprime y sale con 0. Medido (alta y cargar, tres lotes): idéntico; veredicto general.
+
 ## Versión 985 — Lo que dejó pensando la noche de las particiones [375]
 
 - `medir pipeline`: `indice-md-desfasado` ya no pide razón escrita (cualquier tool nueva o mudada mueve el conteo de citas del índice; se regenera al commitear y `audit.js` lo avisa si no); y `--medidor X` avisa cuando X no es medidor de las tools cambiadas (antes se ignoraba en silencio y se creía medido con ese: pasó con `cargar` y `alta-club.mjs`, que ahora lo lleva).

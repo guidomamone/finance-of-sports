@@ -77,7 +77,9 @@ export function modoInformeBacktest() {
   const por = {}; let citas = 0; let citasOk = 0; let costo = 0; const malas = [];
   for (const f of vistos.values()) {
     costo += f.costUsd || 0;
-    const club = datos.clubs[f.clubId]; const meta = datos.generic[f.clubId].fiscalYearMeta[f.anio];
+    const meta = datos.generic[f.clubId]?.fiscalYearMeta?.[f.anio];
+    if (!meta) { console.log(`Aviso: ${f.clubId} ${f.anio} ya no está en el sitio (renombrado o quitado): se salta esa fila del backtest.`); continue; }
+    const club = datos.clubs[f.clubId];
     const v = { ...verdadCargada(club, meta, f.anio, notaFuente((datos.sources || {})[meta.sourceId] || {})), ...(VERDAD_MANUAL[`${f.clubId}|${f.anio}`] || {}) };
     for (const x of f.filas) {
       const a = aciertoBacktest(x.tipo, x.valor, v[x.tipo]);
