@@ -229,6 +229,8 @@ Toda mejora a una tool del pipeline pasa por la Auditora antes del commit, adem�
 
 **Rechazada**: no se describe sin nombres; o rompe un caso que antes salía bien; o el patrón tiene menos de 3 documentos y se quiso meter igual en el código.
 
+**Cómo se decide.** `node tools/fos.mjs patron --cambio "…" --patron "<regex sobre los .md>" [--escribir]` hace los puntos 1 a 3 y escribe el veredicto; un parche imprime el `ajustes.mjs --agregar`.
+
 **Dónde queda.** El veredicto en `Admin/registros/auditoria-proceso.jsonl`, con el patrón, el comando de búsqueda, el número de documentos y el antes y después.
 
 ## 9. Ligas: años sin liga y ligas que no coinciden
