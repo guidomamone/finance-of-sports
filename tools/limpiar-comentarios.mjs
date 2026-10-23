@@ -19,11 +19,13 @@ const FECHA = '20\\d\\d-\\d\\d-\\d\\d';
 const ALGO = `(?:${REF}|${FECHA})`;
 // un paréntesis que contiene solo referencias y fechas
 const PAREN = new RegExp(`\\s*\\(\\s*${ALGO}(?:\\s*(?:,|;|·|y|/|—)?\\s*${ALGO})*\\s*\\)`, 'gi');
-// «TODO 371: …» o «to-do 345 — …» al empezar el comentario
-const INICIO = new RegExp(`^((?://|/\\*+|\\*)\\s*)${REF}\\s*[:—-]\\s*`, 'i');
+// un paréntesis corto con una referencia y algo más («Versión 406, auditoría del pipeline», «to-do 298 l, ok de Guido 2026-10-19»), sin citas ni paréntesis adentro
+const PAREN_CON_RESTO = new RegExp(`\\s*\\((?=[^()]{0,90}\\))[^()«»"]*?(?:${REF}|${FECHA})[^()«»"]*\\)`, 'gi');
+// «TODO 371: …» o «to-do 345 — …» (con una letra de sub-punto: «to-do 298 l:») al empezar el comentario
+const INICIO = new RegExp(`^((?://|/\\*+|\\*)\\s*)${REF}(?:\\s+[a-z]\\d?)?\\s*[:—-]\\s*`, 'i');
 
 export function limpiarTexto(texto) {
-  const t = texto.split('\n').map((l) => l.replace(PAREN, '').replace(INICIO, '$1')).join('\n');
+  const t = texto.split('\n').map((l) => l.replace(PAREN, '').replace(PAREN_CON_RESTO, '').replace(INICIO, '$1')).join('\n');
   return t !== texto && /^\/\/\s*$/.test(t) ? '' : t; // un comentario que la limpieza dejó vacío se va (los «//» de separación que ya estaban, no)
 }
 
