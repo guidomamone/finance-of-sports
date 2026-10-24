@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1039 — fos patron --en-xhtml: el conjunto real de un cambio al lector de XHTML [439 · patron.mjs, probar-patron.mjs]
+
+- `node tools/fos.mjs patron --en-xhtml "<regex>"` cuenta documentos y clubes sobre los `Clubes/**/*.xhtml` con el mismo umbral y el mismo veredicto; el registro anota el comando con `--en-xhtml`. Sobre el patrón del 413 (`top:[0-9.]+em`) cuenta hoy 18 documentos de 5 clubes.
+- `probar-patron.mjs`: 4 casos nuevos (cuenta los `.xhtml` y no el `.md`, GENERAL y anotado, RECHAZADA bajo el umbral, sin regex).
+- Verificado a mano (439): patron --en-xhtml cuenta sobre los .xhtml y da el veredicto; 4 casos nuevos en probar-patron.mjs (todos ok); sobre el patron del 413 cuenta 18 documentos de 5 clubes, no los 12 de 4 que dice el punto
+- Medición: `patron.mjs` es una tool de orden (no del pipeline), así que `medir pipeline` no tiene nada que medir; la prueba da todos los casos ok.
+
 ## Versión 1038 — todo.mjs imprime el contexto del punto [442 · todo.mjs, probar-todo-contexto.mjs]
 
 - `node tools/todo.mjs <id>` termina con «Contexto de este punto»: una ruta y una línea por cada propuesta, medición, votación (`auditoria-proceso.jsonl`), línea de `mediciones-pipeline.jsonl`, entrada del CHANGELOG con `[id]`, lista de lote y commit que lo nombra; `--sin-contexto` lo omite. Los importes parecidos (`1.420`) y «Versión 420» no cuentan.

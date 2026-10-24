@@ -4,6 +4,7 @@
 //
 // USO:
 //   node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" [--rango A..B] [--tools a.mjs,b.mjs] [--sesion unica] [--motivo "…"] [--escribir]
+//   --en-xhtml "<regex>"   en vez de --patron, para un cambio al lector de XHTML: cuenta los Clubes/**/*.xhtml (documentos y clubes) con la misma regla
 //   --en <carpeta>   busca el patrón en los .js y .mjs de esa carpeta (p. ej. tools, para una condición nueva de audit.js) en vez de en Clubes/**/*.md
 //   --sin-documentos "<por qué no lee documentos>"   en vez de --patron, para un cambio de infraestructura de una tool (cuándo escribir un archivo, cómo se mide, cómo se cierra un punto): vale si el código agregado
 //                    no nombra clubes, años ni rutas de Clubes/ y la medición es idéntica o explicada; el registro lleva el motivo (`sinDocumentos`) para que la Auditora lo revise
@@ -115,11 +116,11 @@ function recorrer(dir, salida = [], ext = '.md') {
   }
   return salida;
 }
-export function contar(patron, en = 'Clubes') {
+export function contar(patron, en = 'Clubes', ext) {
   const re = new RegExp(patron, 'im');
   const docs = [], clubes = new Set();
   const md = en === 'Clubes' || en.startsWith('.claude') || en.startsWith('Admin'); // documentos: Clubes, las skills, Admin; el resto son tools (.js)
-  for (const f of recorrer(join(ROOT, en), [], md ? '.md' : '.js')) {
+  for (const f of recorrer(join(ROOT, en), [], ext || (md ? '.md' : '.js'))) {
     if (!re.test(readFileSync(f, 'utf8'))) continue;
     const r = relative(join(ROOT, en), f).split(sep);
     docs.push(r.join('/')); clubes.add(en === 'Clubes' ? r.slice(0, 2).join('/') : r.join('/')); // en otra carpeta, cada archivo es su propio grupo
@@ -145,7 +146,9 @@ function principal() {
     console.log(cambioDeCodigo(v('--exento').split(',').filter(Boolean), { destino: A.includes('--indice') ? 'indice' : null }).hayCodigo ? 'no' : 'si');
     return;
   }
-  const patron = v('--patron'), cambio = v('--cambio'), rango = v('--rango'), sinDoc = v('--sin-documentos');
+  const enXhtml = v('--en-xhtml'); // el patrón se ve en el .xhtml del documento (lectores de XHTML), no en su .md
+  if (A.includes('--en-xhtml') && (!enXhtml || enXhtml.startsWith('--'))) { console.error('--en-xhtml pide la regex que se busca en los .xhtml de Clubes/'); process.exit(1); }
+  const patron = enXhtml ?? v('--patron'), cambio = v('--cambio'), rango = v('--rango'), sinDoc = v('--sin-documentos');
   if (sinDoc !== undefined && (sinDoc.length < 15 || sinDoc.startsWith('--') || !cambio)) { console.error('--sin-documentos pide el motivo (15 caracteres o más: por qué el cambio no lee ningún documento) y --cambio "<qué hace>"'); process.exit(1); }
   if (!patron && !cambio) { console.error('Uso: node tools/patron.mjs --cambio "<qué hace>" --patron "<regex>" [--rango A..B] [--tools a.mjs] [--escribir]  (ver la cabecera)'); process.exit(1); }
   const [base, destino] = rango ? rango.split('..') : ['HEAD', null];
@@ -156,13 +159,13 @@ function principal() {
     nombres = [...new Set(cambiados.split('\n').map((f) => f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter((n) => n && ['tools', 'modulo'].includes(C.clase(n))))];
   }
   const dif = nombres.length ? cambioDeCodigo(nombres, { base, destino }) : { agregado: [], quitado: [], hayCodigo: false };
-  const cont = patron ? contar(patron, v('--en') || 'Clubes') : null;
+  const cont = patron ? contar(patron, v('--en') || 'Clubes', enXhtml !== undefined ? '.xhtml' : undefined) : null;
   const bajoUmbral = cont && (cont.documentos < UMBRAL.documentos || cont.clubes < UMBRAL.clubes);
   const nom = dif.hayCodigo ? nombresEn(dif.agregado, (v('--ignorar-nombre') || '').split(',').filter(Boolean)) : [];
   const med = dif.hayCodigo ? medicion(nombres, destino) : null;
 
   console.log(`Tools: ${nombres.join(', ') || '(ninguna)'} · código ${dif.hayCodigo ? `cambiado (+${dif.agregado.length} / -${dif.quitado.length} líneas sin comentarios)` : 'sin cambios (solo comentarios o mudanza)'}`);
-  if (cont) console.log(`Patrón /${patron}/im: ${cont.documentos} documentos de ${cont.clubes} clubes (umbral ${UMBRAL.documentos} de ${UMBRAL.clubes})${cont.ejemplos.length ? `\n  p. ej. ${cont.ejemplos.join('\n        ')}` : ''}`);
+  if (cont) console.log(`Patrón /${patron}/im${enXhtml !== undefined ? ' sobre los .xhtml' : ''}: ${cont.documentos} documentos de ${cont.clubes} clubes (umbral ${UMBRAL.documentos} de ${UMBRAL.clubes})${cont.ejemplos.length ? `\n  p. ej. ${cont.ejemplos.join('\n        ')}` : ''}`);
   if (dif.hayCodigo) {
     console.log(nom.length ? `Nombres en el código (${nom.length}):\n${nom.slice(0, 8).map((x) => `  ${x.motivo}: ${x.linea.slice(0, 140)}`).join('\n')}` : 'Sin nombres: ningún club, año ni ruta de Clubes/ en el código agregado.');
     console.log(med.faltan.length ? `Sin medición con la huella actual: ${med.faltan.join(', ')} (node tools/fos.mjs medir pipeline).` : `Medición: ${med.linea?.resultado} (lote ${med.linea?.nivel}, ${med.linea?.fecha}).`);
@@ -188,7 +191,7 @@ function principal() {
     const reg = {
       fecha: new Date().toISOString().slice(0, 10), sesion: v('--sesion') || 'unica', cambio,
       commit: rango ? rango : 'sin commit', veredicto: veredicto === 'GENERAL' ? 'GENERAL: SE COMMITEA' : 'RECHAZADA',
-      patron: cont ? `/${patron}/im` : null, comando: cont ? `node tools/patron.mjs --patron ${JSON.stringify(patron)}` : `node tools/patron.mjs --sin-documentos ${JSON.stringify(sinDoc)}`, documentos: cont?.documentos ?? null, clubes: cont?.clubes ?? null,
+      patron: cont ? `/${patron}/im` : null, comando: cont ? `node tools/patron.mjs ${enXhtml !== undefined ? '--en-xhtml' : '--patron'} ${JSON.stringify(patron)}` : `node tools/patron.mjs --sin-documentos ${JSON.stringify(sinDoc)}`, documentos: cont?.documentos ?? null, clubes: cont?.clubes ?? null,
       ...(sinDoc ? { sinDocumentos: sinDoc } : {}),
       antes: med?.linea ? `medición ${med.linea.fecha}` : 'sin código', despues: med?.linea ? `${med.linea.resultado} (lote ${med.linea.nivel})` : 'sin código',
       motivo: v('--motivo') ? `${motivo}. ${v('--motivo')}` : motivo, tools: med?.huellas,

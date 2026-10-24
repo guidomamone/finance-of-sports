@@ -59,6 +59,20 @@ medido('idéntico');
 r = patron('--cambio', 'otro valor');
 caso('sin --patron ni --sin-documentos sigue PENDIENTE y nombra la salida', /PENDIENTE/.test(r.out) && /--sin-documentos/.test(r.out), r.out.slice(-300));
 
+// --en-xhtml: el patrón se cuenta sobre los .xhtml (caso del 413: top/left en em), no sobre los .md
+const doc = (rel, txt) => { mkdirSync(join(T, rel, '..'), { recursive: true }); w(rel, txt); };
+for (const [club, n] of [['AGF', 2], ['AaB', 1], ['SonderjyskE', 1]]) for (let i = 0; i < n; i++) doc(`Clubes/Dinamarca/${club}/aarsrapport-${i}.xhtml`, '<div style="top:12.5em;left:3em">1.000</div>');
+doc('Clubes/Dinamarca/AGF/otro.xhtml', '<div style="top:12px">sin em</div>');
+doc('Clubes/Portugal/Benfica/relatorio.md', 'top:12.5em en un .md no cuenta');
+doc('Clubes/Portugal/Benfica/relatorio.xhtml', '<p>sin el patrón</p>');
+r = patron('--cambio', 'el lector de XHTML lee top en em', '--en-xhtml', 'top:[\\d.]+em', '--escribir');
+caso('--en-xhtml cuenta sobre los .xhtml (4 documentos de 3 clubes, sin el .md) y da GENERAL', /sobre los \.xhtml: 4 documentos de 3 clubes/.test(r.out) && /Veredicto: GENERAL/.test(r.out), r.out.slice(-500));
+caso('el registro anota el comando con --en-xhtml', registro().at(-1)?.comando?.startsWith('node tools/patron.mjs --en-xhtml') && registro().at(-1)?.documentos === 4, JSON.stringify(registro().at(-1)));
+r = patron('--cambio', 'solo un documento', '--en-xhtml', 'top:12px');
+caso('--en-xhtml bajo el umbral con código cambiado: RECHAZADA (va como ajuste)', /RECHAZADA/.test(r.out) && /1 documentos de 1 clubes/.test(r.out), r.out.slice(-400));
+r = patron('--cambio', 'sin regex', '--en-xhtml');
+caso('--en-xhtml sin regex se rechaza con código 1', r.status === 1 && /pide la regex/.test(r.out), r.out);
+
 rmSync(T, { recursive: true, force: true });
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');
 process.exit(mal ? 1 : 0);
