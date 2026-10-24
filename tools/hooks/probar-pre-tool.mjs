@@ -85,7 +85,7 @@ const casos = [
   ['memoria de regla (feedback)', { tool_name: 'Write', tool_input: { file_path: '/Users/x/.claude/projects/p/memory/a.md', content: '---\nname: a\nmetadata:\n  type: feedback\n---\nx' } }, 'ask', 'memoria'],
   ['memoria de trato (user)', { tool_name: 'Write', tool_input: { file_path: '/Users/x/.claude/projects/p/memory/b.md', content: '---\nname: b\nmetadata:\n  type: user\n---\nx' } }, 'pasa'],
   ['sed -i fuera de skills', bash("sed -i 's/a/b/' Admin/x.md"), 'deny', 'Edit o Write'],
-  ['python que solo lee pasa', bash("node tools/audit.js --json | python3 -c \"import json,sys;print(len(json.load(sys.stdin)))\""), 'pasa'],
+  ['python -c que solo lee ya no pasa (448: el código suelto no se revisa)', bash("node tools/audit.js --json | python3 -c \"import json,sys;print(len(json.load(sys.stdin)))\""), 'deny', 'python'],
   ['sed -i en el scratchpad pasa', bash("sed -i '' 's/a/b/' /private/tmp/claude-501/x/scratchpad/a.py"), 'pasa'],
   ['grep que nombra sed -i pasa', bash('grep -n "sed -i" tools/hooks/probar-pre-tool.mjs'), 'pasa'],
   ['comando normal', bash('git status'), 'pasa'],
@@ -99,6 +99,13 @@ const casos = [
   ['medición en curso: un archivo afuera del repo (scratchpad) pasa', { tool_name: 'Write', tool_input: { file_path: '/private/tmp/claude-501/x/scratchpad/a.json', content: 'x' } }, 'pasa', undefined, 'una-sesion', { FOS_PID_MEDICION: String(process.pid) }],
   ['medición en curso: un archivo sin trackear pasa', { tool_name: 'Write', tool_input: { file_path: `${raiz}/Admin/archivo-que-no-existe-ni-esta-trackeado.txt`, content: 'x' } }, 'pasa', undefined, 'una-sesion', { FOS_PID_MEDICION: String(process.pid) }],
   ['sin medición corriendo se edita lo trackeado', { tool_name: 'Edit', tool_input: { file_path: `${raiz}/Admin/TODO.md`, old_string: 'x', new_string: 'y' } }, 'pasa'],
+  ['node -e se rechaza', bash('node -e "console.log(1)"'), 'deny', 'node -e'],
+  ['node -p se rechaza', bash('node -p 1+1'), 'deny', 'node -e'],
+  ['python3 -c se rechaza', bash("python3 -c 'print(1)'"), 'deny', 'python'],
+  ['una tubería con node -e se rechaza', bash('echo 1 | node -e "process.stdin.pipe(process.stdout)"'), 'deny', 'node -e'],
+  ['grep de "node -e" entre comillas pasa', bash('grep -n "node -e" Admin/TODO.md'), 'pasa'],
+  ['node con un script pasa', bash('node tools/todo.mjs 442'), 'pasa'],
+  ['python3 -I con un script pasa', bash('python3 -I /private/tmp/claude-501/x/scratchpad/a.py'), 'pasa'],
   ...casosMedicion(),
 ];
 

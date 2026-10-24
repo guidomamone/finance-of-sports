@@ -35,6 +35,7 @@
 //
 //   comandos-simples        (deny) un Bash con /tmp suelto, `cd … &&`, o `$(…)`/`${…}`/`$VAR` fuera de comillas simples: no se puede chequear antes de
 //                            correr y pide permiso cada vez (to-do 327, C-1). Pasan el scratchpad de la sesión y el heredoc de `git commit`.
+//                            También `node -e`/`-p` y `python -c` (el código suelto no se puede revisar): un script va con Write en el scratchpad.
 //   no-importar-tools       (deny) `node -e` con import()/require() de un archivo de tools/ (salvo data-clubes.js y rutas.mjs): lo ejecuta (C-5).
 //   merge-en-worktree [varias]  (deny) `git merge` / `git pull` dentro de un worktree (menos `merge-tree`, `merge-base` y `--abort`): lo hace la principal (C-4).
 //   plan-en-worktree [varias]  (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
@@ -408,6 +409,16 @@ function comandosSimples(cmd) {
   }
 }
 
+// `node -e`/`-p` y `python -c`: el código va suelto en la línea de comandos y nadie lo puede revisar antes de correr; un script va con Write en el scratchpad.
+// Corre DESPUÉS de las reglas que protegen skills y PDFs (un python que escribe en una skill recibe su mensaje, «Editá con Edit»). Lo que va entre comillas dobles se
+// ignora: `grep "node -e"` pasa.
+function codigoSueltoEnLinea(cmd) {
+  const sinComillas = cmd.replace(/'[^']*'/g, "''").replace(/"(?:[^"\\]|\\.)*"/g, '""');
+  if (/(^|[\s;&|(])(node|python3?)\s+(-e|-p|--eval|--print|-c)(\s|$)/.test(sinComillas)) {
+    decidir('deny', 'Nada de `node -e`, `node -p` ni `python -c`: el código suelto en la línea de comandos no se puede revisar antes de correr. Escribí el script con Write en la carpeta de scratchpad de la sesión y corré `node <ruta completa>` (o `python3 -I <ruta completa>`).');
+  }
+}
+
 // `node -e "import('./tools/x.mjs')"` o `require('./tools/x.js')` para chequear una tool la EJECUTA (to-do 327, C-5). Se chequea con `node --check`.
 // `data-clubes.js` y `rutas.mjs` son librerías sin efectos: esas sí se pueden importar.
 function noImportarTools(cmd) {
@@ -460,5 +471,6 @@ if (herramienta === 'Bash') comandoQueEdita(cmd);
 pushConOk(cmd);
 if (VARIAS) docsDeLaPrincipal(cmd);
 pdfsConOk(cmd);
+if (herramienta === 'Bash') codigoSueltoEnLinea(cmd);
 if (herramienta === 'Bash') { medicionAntesDelCommit(cmd); auditAntesDelCommit(cmd); }
 edicionMientrasSeMide();
