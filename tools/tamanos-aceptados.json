@@ -1,4 +1,3 @@
 {
- "_comentario": "Tools de más de 40 KB que se aceptan, con el motivo (TODO 375). Lo lee audit.js (tool-grande). Partirlas es un refactor, no un movimiento: va como punto aparte del TODO.",
- "audit.js": "CommonJS con un contexto compartido (add, ROOT, fs, path) que cada chequeo usa: partirlo pide pasarlo por parámetro (fos mover no soporta CJS)"
+ "_comentario": "Tools de más de 40 KB que se aceptan, con el motivo (TODO 375). Lo lee audit.js (tool-grande). Hoy ninguna: las que pasaban de 40 KB se partieron en módulos (TODO 399)."
 }

@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1017 — audit.js en siete archivos (165 → 17 KB): se cierra el 399 [399 · audit.js, audit-base.js, audit-chequeos-1.js, audit-chequeos-2.js, audit-chequeos-3.js, audit-chequeos-4.js, audit-chequeos-5.js, lexico-js.mjs]
+
+- CommonJS sin `fos mover`: un script del scratchpad (con el léxico de `lexico-js.mjs`) repartió las 109 declaraciones de nivel superior: `audit-base.js` (3 KB: los requires, `ROOT`, `add`, los hallazgos y las constantes compartidas, que Node evalúa una sola vez), cinco `audit-chequeos-N.js` (20 a 39 KB, los `check*` con sus constantes propias, cada uno con su `require('./audit-base.js')`) y `audit.js` (la entrada: `main`, `imprimir`, `listarFx` y la prueba de deporte). Sin cambiar el texto de ninguna declaración; ningún `let` se reasigna. `lexico-js.mjs` aprende `function*` (sin eso `clubYears` desaparecía).
+- `tools/tamanos-aceptados.json` queda sin excepciones: ninguna tool pasa de 40 KB.
+- Medición: `audit` (lote chico): la única diferencia es que `tool-grande` ya no avisa (y `indice-md-desfasado` se regenera); `node tools/audit.js` y `--json` antes y después: el texto idéntico y el JSON igual salvo el nombre del archivo que cita una ruta en dos hallazgos silenciados (ahora `audit-chequeos-2.js`); `eslint no-undef`: limpio en los siete archivos.
+
 ## Versión 1016 — lote.mjs: el flujo de nivel de módulo, en fases y en tres módulos (70 → 5 KB) [399 · lote.mjs, lote-preparar.mjs, lote-leer.mjs, lote-final.mjs, partir-fases.mjs, lexico-js.mjs]
 
 - El script entero (desde `const ROOT`) se envuelve en `async function correrLote()` y se parte en 8 fases con `ctx` (`frenaSinApi`, `registro`, `usd` y `escritos`, los 4 `let` que cambian entre fases, viven en `ctx.N`); las fases van a `lote-preparar.mjs` (23 KB), `lote-leer.mjs` (28) y `lote-final.mjs` (23). `lote.mjs` queda en 5 KB y sale de `tools/tamanos-aceptados.json`; solo queda `audit.js`.

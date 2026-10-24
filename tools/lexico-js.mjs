@@ -1,6 +1,6 @@
 // tools/lexico-js.mjs: lo usa tools/partir-fases.mjs. Recorre el código de una función (strings, plantillas con ${}, regex, comentarios) y devuelve: la profundidad de llaves al empezar cada
 // línea, las declaraciones del nivel superior de la función y los identificadores usados en el código (no en strings ni comentarios).
-export function lexico(src, desdeLinea = 1) {
+export function lexico(src, desdeLinea = 1, nivel = 1) {
   const n = src.length; const prof = []; // profundidad al empezar cada línea (índice = línea relativa 0)
   const declaradas = []; const ids = []; // declaradas: { nombre, linea }
   let brace = 0, paren = 0, brack = 0, linea = 0; prof[0] = 0;
@@ -64,9 +64,9 @@ export function lexico(src, desdeLinea = 1) {
           if (asigna) asignaciones.push({ nombre: w, linea, enFuncion: fnStack.length > 1 || exprStack.length > 0 });
         }
         // declaraciones del nivel superior (llave 1, sin paréntesis ni corchetes abiertos)
-        if (!enPlantilla && brace === 1 && paren === 0 && brack === 0 && (w === 'const' || w === 'let' || w === 'var' || w === 'function') && (prevSig === ';' || prevSig === '{' || prevSig === '}' || prevSig === '' || lastTokLine < linea)) {
+        if (!enPlantilla && brace === nivel && paren === 0 && brack === 0 && (w === 'const' || w === 'let' || w === 'var' || w === 'function') && (prevSig === ';' || prevSig === '{' || prevSig === '}' || prevSig === '' || lastTokLine < linea)) {
           let k = j; while (/\s/.test(src[k])) k++;
-          if (w === 'function' && src[k] === '*') k++, (k = k);
+          if (w === 'function' && src[k] === '*') { k++; while (/\s/.test(src[k])) k++; }
           if (src[k] !== '{' && src[k] !== '[') { let m0 = k; while (m0 < n && /[\w$]/.test(src[m0])) m0++; if (m0 > k) declStmts.push({ nombre: src.slice(k, m0), tipo: w, kwIni: i, nombreFin: m0, linea, simple: true }); } else declStmts.push({ tipo: w, linea, simple: false });
           if (src[k] === '{' || src[k] === '[') { // destructuring
             const cierre = src[k] === '{' ? '}' : ']'; let d = 1; let m = k + 1; while (m < n && d > 0) { if (src[m] === src[k]) d++; else if (src[m] === cierre) d--; m++; }
