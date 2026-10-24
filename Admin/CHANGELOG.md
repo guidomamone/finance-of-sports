@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1011 — El 356 se cierra: su Onboarding, sus defectos de script y lo que dejó pensando pasan a puntos propios [356 · 420 · 421 · 422 · 423 · 424 · 425 · 426]
+
+- 420 (Onboarding, antes del 337): cargar los británicos en iXBRL (lote 143, Hibernian, años pagables, Falkirk, altas, criterio del Trust). 421 (defectos: Morecambe, Ross County, perimetro-senales con s408). 422 (costo-personal: la unidad del rótulo; la nota de una filial). Fulham 2023: el cambio del 351 toma «Total staff costs (£m) 154.8» como £000 y no puede reconfirmar 139,064; no cambia ningún dato publicado.
+- Orden: 423 (un medidor vacío no es «idéntico»), 424 (no pisar un lote existente), 425 (`fos cerrar` con un «Verificar: manual»), 426 (`faltantes-liga` cambia solo por la fecha).
+- Medición: no hay cambio de tools.
+
 ## Versión 1010 — Bolton 2024-25 de punta a punta con el conversor nuevo; punto 419 [356 · 419]
 
 - `lote.mjs --rehacer --ejecutar --pagar-ia-xhtml` sobre Bolton 2024-25: localizar, extraer y verificar con el `.md` con tablas (US$ 0,15; 2 dudas ordinarias en la cola). Sin `--rehacer` el lote reutilizaba el `sin_estado` del `.md` viejo y no lo decía: punto 419. `Admin/lotes/lote-143.txt` (13 documentos de Inglaterra) queda para Onboarding; se pisó por error el `lote-142.txt` del 413 y se restauró desde git.
