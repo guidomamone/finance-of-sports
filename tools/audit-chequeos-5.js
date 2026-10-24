@@ -339,6 +339,20 @@ function checkRegistroFuera() {
   if (malas.length) add('P3', 'registro-fuera-de-esquema', `${malas.length} línea(s) de los registros de decisión fuera del esquema (tools/esquemas-registros.json): ${malas.slice(0, 3).join(' · ')}`);
 }
 
+// calibracion-cola-pendiente: una celda (motivo × seguridad) de la cola con 30 respuestas o más y menos de 20 con segunda revisión independiente (tools/calibrar-cola.mjs, registro calibracion-cola.jsonl).
+// Es el recordatorio que no depende de que una sesión se acuerde: sin 20 medidas por celda no se sabe cuánto acierta una respuesta «alta».
+function checkCalibracionCola() {
+  const MIN_RESP = 30, MIN_MEDIDAS = 20;
+  const leer = (rel) => { try { return fs.readFileSync(path.join(ROOT, 'Admin', 'registros', rel), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean); } catch { return []; } };
+  const motivoDe = new Map(); const resp = new Map();
+  for (const x of leer('cola-revision.jsonl')) { if (x.tipo === 'caso') motivoDe.set(x.id, x.motivo); else if (x.tipo === 'respuesta' && x.seguridad && ['aceptar', 'corregir', 'descartar', 'preguntar-club'].includes(x.decision)) resp.set(x.id, x); }
+  const medidas = new Set(leer('calibracion-cola.jsonl').map((x) => x.id));
+  const celdas = {};
+  for (const r of resp.values()) { const k = `${motivoDe.get(r.id) || '?'} ${r.seguridad}`; const c = (celdas[k] ||= { n: 0, m: 0 }); c.n++; if (medidas.has(r.id)) c.m++; }
+  const falta = Object.entries(celdas).filter(([, c]) => c.n >= MIN_RESP && c.m < MIN_MEDIDAS);
+  if (falta.length) add('P3', 'calibracion-cola-pendiente', `${falta.length} celda(s) de la cola con ${MIN_RESP}+ respuestas y menos de ${MIN_MEDIDAS} con segunda revisión: ${falta.map(([k, c]) => `${k} (${c.m} de ${c.n})`).join('; ')}. Sacá una muestra con node tools/calibrar-cola.mjs --muestra 10 --motivo <m> --seguridad <s>, que la lea un revisor que no ve la decisión original, y anotala con --registrar`);
+}
+
 // cierre-sin-fecha: documentos con .md, de carpetas de clubes que ya tienen un ejercicio cargado, cuyo período en el registro no trae fecha de cierre. Sin ella,
 // cargar-inicio.mjs no encuentra el cierre del año anterior y frena (SønderjyskE 2023). Se arregla con periodo.mjs (el cierre del nombre del archivo, con compuerta) o con un ajuste `cierre`.
 function checkCierreSinFecha() {
@@ -357,4 +371,4 @@ function checkRevisionPropiaPendiente() {
   if (pendientes.length) add('P3', 'revision-propia-pendiente', `${pendientes.length} cambio(s) revisados solo por la sesión que los hizo, sin la revisión de la Auditora:${pendientes.slice(-3).map(l => `${l.fecha} ${String(l.cambio).slice(0, 50)}`).join(' · ')}. La Auditora los revisa y anota patron --revision auditora`);
 }
 
-module.exports = { checkMetodologiaAlDia, metodologiaAtrasada, checkRegistroFuera, checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };
+module.exports = { checkMetodologiaAlDia, metodologiaAtrasada, checkRegistroFuera, checkCalibracionCola, checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };

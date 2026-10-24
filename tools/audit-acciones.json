@@ -220,6 +220,11 @@
   "quien": "sesion",
   "donde": "Admin/HALLAZGOS-pipeline.md, segunda fuente de una liga en grupos"
  },
+ "calibracion-cola-pendiente": {
+  "hacer": "node tools/calibrar-cola.mjs --muestra 10 --motivo <m> --seguridad <s>; un revisor Sonnet que no ve la decisión original (brief Admin/BRIEF-REVISOR-COLA.md); anotar con --registrar.",
+  "quien": "sesion",
+  "donde": "tools/calibrar-cola.mjs"
+ },
  "silencio-vencido": {
   "hacer": "Volver a mirar la fuente del silencio de tools/audit-ignore.json: si sigue igual, poner una fecha nueva en `revisar`; si cambió, arreglar el hallazgo y sacar la entrada.",
   "quien": "sesion",

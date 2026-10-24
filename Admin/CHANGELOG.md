@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1077 — audit.js: calibracion-cola-pendiente [audit-chequeos-5.js, audit.js]
+
+- P3 cuando una celda (motivo × seguridad) de la cola tiene 30 respuestas o más y menos de 20 con segunda revisión (`calibrar-cola.mjs`): el recordatorio ya no depende de que una sesión se acuerde. Hoy dispara por cierre-por-pais alta (13 de 131).
+- Medición: `audit` con una diferencia, el aviso nuevo, explicada.
+
 ## Versión 1076 — 298: tres letras verificadas contra el código y sacadas [298]
 
 - aa, i y o ya estaban hechas (`worktree.mjs`, `alta-club-tablas.mjs`, `lote-preparar.mjs`); el resto del 298 sigue, con la nota de por qué no es un punto chico. Se calibró la cola con 30 segundas revisiones (30 de 30 coinciden; `Admin/registros/calibracion-cola.jsonl`).
