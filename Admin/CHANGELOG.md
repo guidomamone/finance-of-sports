@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1064 — 444: las 163 preguntas cierre-por-pais contestadas; cierre-sin-fecha descuenta lo que la cola confirmó [444 · cierre-sin-fecha.mjs, probar-cierre.mjs]
+
+- 19 revisores Sonnet (por país, hasta 10 preguntas cada uno, brief `BRIEF-REVISOR-COLA.md`) leyeron la fecha de balance de cada documento: 163 `aceptar`, ninguna corrección; 131 de seguridad alta, 15 media y 17 baja (14 agregados DNCG de Francia y Telstar 2024-25, Paysandu 2025, Remo 2019, Akhmat 2025 y Metalist 2025 sin fecha explícita: se aceptó el cierre del país). Las 163 citas existen en su `.md`.
+- `fos cierre-sin-fecha` cuenta aparte los cierres confirmados en la cola (`porCola`): los que frenan bajan de 191 a 83 (Argentina 30, Colombia 27, Alemania 8, Croacia 7…); `probar-cierre.mjs` ajustado a la nueva suma.
+- Medición: `cierre-sin-fecha.mjs` solo lee el registro y la cola (clase orden, no corre en el pipeline); `fos probar cierre` sin fallas.
+
 ## Versión 1063 — 453 descartado por Guido [453]
 
 - El punto 453 (que la auditoría semanal informe el atraso de producción) se cierra sin hacer: a Guido no le interesa. `fos produccion` queda como comando por si hace falta mirar a mano.

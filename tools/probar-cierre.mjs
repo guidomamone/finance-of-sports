@@ -34,7 +34,7 @@ const casos2 = readFileSync(cola, 'utf8').trim().split('\n').filter(Boolean).len
 caso('repetir --escribir no duplica las preguntas', casos2 === casos.length, `${casos2} vs ${casos.length}`);
 const s = spawnSync('node', ['tools/cierre-sin-fecha.mjs', '--json'], { cwd: ROOT, encoding: 'utf8' });
 const js = JSON.parse(s.stdout);
-caso('cierre-sin-fecha --json separa los que deducen los vecinos de los que frenan', js.sinCierre === js.porVecinos + js.frenan && js.frenan > 0, s.stdout);
+caso('cierre-sin-fecha --json separa los que deducen los vecinos de los que frenan', js.sinCierre === js.porVecinos + js.porCola + js.frenan && js.frenan > 0, s.stdout);
 rmSync(T, { recursive: true, force: true });
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');
 process.exit(mal ? 1 : 0);
