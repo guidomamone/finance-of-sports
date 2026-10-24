@@ -145,7 +145,7 @@ Tres defectos de script que frenaron cargas del 356 (`Admin/registros/frenados-p
 - Morecambe: el importe «(n )» con espacio antes del paréntesis se lee en unidades.
 - Ross County 2025: el aviso «registro no se actualizó, correr el lote» no cambia al correrlo.
 - `perimetro-senales.mjs` votó «individual» en group accounts con s408 (Salford, Falkirk, Exeter; corregidos a mano con ajuste).
-HECHO (2026-10-24): Morecambe «(n )» (`parseNumber` recorta el contenido entre paréntesis; medido en el lote completo, solo cambia Morecambe 2024-25, que cierra). QUEDA: Ross County 2025 y perimetro-senales.
+HECHO (2026-10-24): Morecambe «(n )» (`parseNumber` recorta el contenido entre paréntesis; medido en el lote completo, solo cambia Morecambe 2024-25, que cierra). Ross County 2025: el aviso era engañoso, no estaba trabado (el registro dice `sin-rubros`: 4 rubros y las sumas no cierran contra el resultado impreso); ahora lo dice. Ross County 2025 sigue sin cargarse por eso (4 rubros leídos: faltan salarios, televisión, estadio y cuotas; es del Onboarding, no de este punto). QUEDA: perimetro-senales.
 Cada uno: ver 2-3 casos reales, un escalón con su veredicto (`fos patron`) y medido antes y después (`fos medir pipeline`).
 Terminado cuando: los tres dan lo correcto sin ajuste a mano (Morecambe lee «(n )» en millones, el aviso de Ross County cambia al correr el lote y perimetro-senales vota consolidado en esos group accounts), con su medición sin pérdidas.
 

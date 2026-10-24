@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1031 — cargar.mjs: el aviso dice «sin-rubros» en vez de «correr el lote» [421 · cargar.mjs]
+
+- Ross County 2024-25: el lote ya había corrido y el registro quedó `jev: sin-rubros` (4 rubros, menos de 5, y las sumas no cerraron contra el resultado impreso), pero `porQueNoListo` seguía diciendo «el registro no se actualizó: correr el lote». Ahora, si el registro dice `sin-rubros`, lo dice con la cantidad de rubros y manda a revisar las filas. Segunda de las tres partes del 421.
+- Medición: lote completo (990 documentos), medidores cargar, audit y escribir: idéntico. Veredicto: `patron --sin-documentos` (solo el texto de un aviso).
+
 ## Versión 1030 — parseNumber lee «(4,892,287 )» en miles, no en unidades [421 · datos-sitio.mjs]
 
 - `parseNumber` recorta el contenido entre paréntesis: «(4,892,287 )» (espacio antes del cierre, como lo deja el XHTML) tomaba la coma de miles por decimal y daba 4,89 en vez de 4.892.287. Patrón: 5 documentos de 4 clubes (Morecambe, Gent, AC Milan, Sport Recife). Primera de las tres partes del 421.

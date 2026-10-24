@@ -224,6 +224,8 @@ export function porQueNoListo(e) {
   if (!validacionAlDia(e.md)) return 'la etapa 6 cerró, pero la etapa 4 (validar-bloques.mjs) es de una versión anterior del .md: correr el lote'; // misma compuerta que lote.mjs: huella del .md, o fecha si no la tiene
   const nc = (val.noConfirmados || []).length;
   if (nc) return `la etapa 6 cerró, pero la etapa 4 dejó hasta ${nc} número(s) sin confirmar (${derivado(e.md, '.validacion.json', { crear: false })}, "noConfirmados"; ver to-do 160)`;
+  // el lote ya corrió y puso la marca, pero es «sin-rubros» (verificar.mjs, avisarRegistro): menos de 5 rubros y las sumas no cerraron contra el resultado impreso. Correr el lote no la cambia.
+  if (e.jev === 'sin-rubros') return `la etapa 6 cerró y la etapa 4 no deja números sin confirmar, pero el registro lo marca «sin-rubros»: ${e.rubros ?? '?'} rubro(s) leídos (menos de 5) y las sumas no cerraron contra el resultado impreso. Correr el lote de nuevo no lo cambia: revisar las filas del estado de resultados (.filas.json) o la extracción`;
   return 'la etapa 6 cerró y la etapa 4 no deja números sin confirmar, pero el registro no se actualizó: correr el lote (la marca solo la pone el lote, ver to-do 160)';
 }
 export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false, escribirCola = true, voltearRespuestas = false } = {}) {
