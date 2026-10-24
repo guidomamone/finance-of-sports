@@ -6,7 +6,9 @@
 // medidor del pipeline sobre el lote completo y regenerar sin `--proxy`.
 // USO: node tools/partir-fases.mjs <config.json> [--proxy | --mapa]
 //   --mapa    imprime las sentencias del nivel superior (línea, profundidad) para elegir dónde cortar; no escribe nada
-// Config: { file, funcStart, funcEnd, setupEnd, inicial:[...], salida:{ expr:"P" | null }, fases:[{name, from, to, comentario}] }
+// Config: { file, funcStart, funcEnd, setupEnd, sangria, inicial:[...], salidaTemprana:"P"|null, asincrona:bool, indentar:bool, fases:[{name, from, to, comentario}] }
+//   asincrona: las fases son `async` y se esperan (un flujo con `await`); indentar: el cuerpo de cada fase gana 2 espacios (si el código estaba a nivel de módulo, sin sangría;
+//   las líneas que empiezan dentro del texto de una plantilla no se tocan). Para un script de nivel de módulo: envolverlo antes en `async function f() { … }` y partir esa función.
 //   Una fase con `return X` de salida temprana: si cfg.salidaTemprana (p. ej. "P") la fase devuelve eso y la orquestadora corta.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { lexico } from './lexico-js.mjs';
@@ -55,6 +57,7 @@ if (flags.includes('--mapa')) {
 }
 const proxy = flags.includes('--proxy');
 const salida = cfg.salidaTemprana || null;
+const AW = cfg.asincrona ? 'await ' : ''; const ASYNC = cfg.asincrona ? 'async ' : '';
 const declEn = (a, b) => lex.declaradas.filter((d) => F0 + d.linea >= a && F0 + d.linea <= b).map((d) => d.nombre);
 const idsEn = (a, b) => { // identificadores del código (no strings/comentarios) de las líneas a..b
   const l = lexico(seg(a, b).join('\n')); return new Set(l.ids);
@@ -72,10 +75,13 @@ for (const d of lex.declaradas.filter((x) => x.tipo === 'let' || x.tipo === 'var
 if (peligros.length) { console.log('PELIGROS (estado que cambia entre fases):\n' + [...new Set(peligros)].join('\n')); if (!flags.includes('--seguir')) process.exit(2); }
 const disponibles = new Set(cfg.inicial);
 const fases = cfg.fases.map((f) => ({ ...f, cuerpo: seg(f.from, f.to) }));
+for (const f of fases) f.cuerpo = indentarLineas(f.from, f.cuerpo);
 for (const f of fases) {
   if (profEn(f.from) !== 1 || profEn(f.to + 1) !== 1) { console.error(`✗ ${f.name}: corta en medio de un bloque (profundidad ${profEn(f.from)} al empezar la línea ${f.from}, ${profEn(f.to + 1)} después de la ${f.to})`); process.exit(1); }
 }
 for (const f of fases) { const rt = lex.retornos.filter((l) => F0 + l >= f.from && F0 + l <= f.to); if (rt.length && !cfg.salidaTemprana) { console.error(`✗ ${f.name}: tiene un return propio de la función en las líneas ${rt.map((l) => F0 + l).join(', ')} (poné salidaTemprana en la config)`); process.exit(1); } }
+// con cfg.indentar, el cuerpo de cada fase gana 2 espacios (menos las líneas que empiezan dentro del texto de una plantilla)
+function indentarLineas(a, lineas) { return lineas.map((l, k) => (cfg.indentar && l.trim() && !lex.tpl[a + k - F0] ? '  ' + l : l)); }
 const pre = (i) => seg(i === 0 ? cfg.setupEnd + 1 : fases[i - 1].to + 1, fases[i].from - 1);
 const textoDespues = (i) => { const a = fases[i].to + 1; return new Set([...(i + 1 < fases.length ? idsEn(fases[i + 1].from - 0, cfg.funcEnd) : idsEn(a, cfg.funcEnd - 1)), ...idsEn(a, a)]); };
 const orquesta = [...seg(1, cfg.setupEnd)];
@@ -90,9 +96,9 @@ fases.forEach((f, i) => {
   const salen = [...dec].filter((n) => despues.has(n));
   informe.push(`${f.name} (${f.to - f.from + 1} l): lee [${params.join(', ')}] deja [${salen.join(', ')}]`);
   orquesta.push(...pre(i));
-  if (salida) orquesta.push(salen.length ? `  { const s = ${f.name}(ctx); if (s === ${salida}) return ${salida}; Object.assign(ctx, s); }` : `  if (${f.name}(ctx) === ${salida}) return ${salida};`);
-  else orquesta.push(salen.length ? `  Object.assign(ctx, ${f.name}(ctx));` : `  ${f.name}(ctx);`);
-  funciones.push('', `// ${f.comentario}`, `function ${f.name}(ctx) {`, ...(params.length ? [`  const { ${params.join(', ')} } = ctx;`] : []), ...f.cuerpo, ...(salen.length ? [`  return { ${salen.join(', ')} };`] : []), '}');
+  if (salida) orquesta.push(salen.length ? `  { const s = ${AW}${f.name}(ctx); if (s === ${salida}) return ${salida}; Object.assign(ctx, s); }` : `  if (${AW}${f.name}(ctx) === ${salida}) return ${salida};`);
+  else orquesta.push(salen.length ? `  Object.assign(ctx, ${AW}${f.name}(ctx));` : `  ${AW}${f.name}(ctx);`);
+  funciones.push('', `// ${f.comentario}`, `${ASYNC}function ${f.name}(ctx) {`, ...(params.length ? [`  const { ${params.join(', ')} } = ctx;`] : []), ...f.cuerpo, ...(salen.length ? [`  return { ${salen.join(', ')} };`] : []), '}');
   for (const n of salen) disponibles.add(n);
 });
 const cola = seg(fases.at(-1).to + 1, cfg.funcEnd);

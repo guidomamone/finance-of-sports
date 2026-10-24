@@ -6,7 +6,7 @@ export function lexico(src, desdeLinea = 1) {
   let brace = 0, paren = 0, brack = 0, linea = 0; prof[0] = 0;
   let prevSig = ''; let prevPalabra = '';
   const KW_ANTES_DE_REGEX = new Set(['return', 'typeof', 'case', 'in', 'of', 'delete', 'void', 'throw', 'new', 'else', 'do']);
-  let lastTokLine = 0; const fnStack = []; const exprStack = []; let pendingFn = false; let pendingFnParen = 0; let pendingArrow = false; const asignaciones = []; const tokens = []; const stk = []; const declStmts = []; const idLineas = []; const retornos = [];
+  let lastTokLine = 0; const fnStack = []; const exprStack = []; let pendingFn = false; let pendingFnParen = 0; let pendingArrow = false; const asignaciones = []; const tpl = []; const tokens = []; const stk = []; const declStmts = []; const idLineas = []; const retornos = [];
   const podarExpr = () => { while (exprStack.length) { const t = exprStack.at(-1); if (paren < t.p || brack < t.k || brace < t.b) exprStack.pop(); else break; } };
   const nl = () => { linea++; prof[linea] = brace; };
   let i = 0;
@@ -14,7 +14,7 @@ export function lexico(src, desdeLinea = 1) {
     while (i < n) {
       const c = src[i];
       if (c === '\\') { i += 2; continue; }
-      if (c === '\n') { i++; nl(); continue; }
+      if (c === '\n') { i++; nl(); tpl[linea] = true; continue; }
       if (c === '`') { i++; return; }
       if (c === '$' && src[i + 1] === '{') { i += 2; leerCodigo(true); continue; }
       i++;
@@ -83,5 +83,5 @@ export function lexico(src, desdeLinea = 1) {
     }
   }
   leerCodigo(false);
-  return { prof, declaradas, tokens, declStmts, ids, idLineas, asignaciones, retornos, lineas: linea + 1 };
+  return { prof, tpl, declaradas, tokens, declStmts, ids, idLineas, asignaciones, retornos, lineas: linea + 1 };
 }

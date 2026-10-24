@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1016 — lote.mjs: el flujo de nivel de módulo, en fases y en tres módulos (70 → 5 KB) [399 · lote.mjs, lote-preparar.mjs, lote-leer.mjs, lote-final.mjs, partir-fases.mjs, lexico-js.mjs]
+
+- El script entero (desde `const ROOT`) se envuelve en `async function correrLote()` y se parte en 8 fases con `ctx` (`frenaSinApi`, `registro`, `usd` y `escritos`, los 4 `let` que cambian entre fases, viven en `ctx.N`); las fases van a `lote-preparar.mjs` (23 KB), `lote-leer.mjs` (28) y `lote-final.mjs` (23). `lote.mjs` queda en 5 KB y sale de `tools/tamanos-aceptados.json`; solo queda `audit.js`.
+- `fos partir-fases` aprende lo que este caso pedía: `asincrona` (fases `async` con `await`), `indentar` (el cuerpo gana 2 espacios sin tocar las líneas dentro de una plantilla; sin esto `fos mapa` leía mal dónde terminaba cada función) y el spread `...x` como uso de un nombre. `lexico-js.mjs` marca las líneas dentro de una plantilla.
+- Medición: `lote-ensayo` en lote chico, mediano y completo: idéntico; además la salida de `lote.mjs` en 4 modos (ensayo, `--sin-api --ejecutar`, `--reintentar`, `--rehacer`) comparada contra HEAD, línea por línea: 0 diferencias, también con el `ctx` estricto; `eslint no-undef`: limpio.
+
 ## Versión 1015 — perimetro-senales.mjs en tres módulos y la tabla del vocabulario en dos [399 · perimetro-senales.mjs, perimetro-senales-a3.mjs, perimetro-senales-base.mjs, vocabulario-datos.mjs, vocabulario-datos-2.mjs]
 
 - `perimetro-senales.mjs` (61 → 34 KB): el paso A3 y `proponer()` a `perimetro-senales-a3.mjs` (13 KB) y los ayudantes (argumentos, tablas, controladas, Jev y su caché) a `perimetro-senales-base.mjs` (18); `cacheA2`, el `let` que reasigna `main`, se queda con su paso A2. `vocabulario-datos.mjs` (47 → 33 KB): desde `FLUJO_EFECTIVO` pasa a `vocabulario-datos-2.mjs` (16) y la primera mitad lo incluye con `...VOCABULARIO_2`; `VOCABULARIO` es el mismo objeto con el mismo orden de claves (comparado contra HEAD). Salen de `tools/tamanos-aceptados.json`.
