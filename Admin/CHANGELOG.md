@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1027 — medir pipeline: un medidor que no imprime nada no da «idéntico» [423 · medir-pipeline.mjs, probar-medir-pipeline.mjs]
+
+- Si el ANTES y el DESPUÉS de un medidor no imprimen nada (o un solo renglón «0 archivos») ni escriben un archivo de salida, `medir-pipeline` dice `VACÍO: no midió nada`, corta el lote chico, sale con 1 y el resultado es «vacío: …» (el hook no lo acepta); con `--explicacion "por qué"` queda «1 diferencias, todas explicadas». El registro marca `vacio: true` en ese medidor.
+- Verificado a mano (423): probar medir-pipeline 16 casos ok; salida de la última corrida de los 11 medidores de la tabla inspeccionada: ninguno vacío (xhtml 563 líneas)
+- Medición: `probar medir-pipeline` 16 casos ok (2 nuevos); la última corrida anotada de cada medidor de la tabla (alta, audit, caja-deuda, caja-deuda-personal, cargar, contexto, escribir, lote-ensayo, personal-ensayos, verificar, xhtml) tiene salida: ninguno está vacío hoy.
+
 ## Versión 1026 — partir-fases: --envolver un script de nivel de módulo [430 · partir-fases.mjs, probar-partir-fases.mjs]
 
 - La config acepta `envolver: { nombre, desde, comentario? }`: envuelve el flujo desde la línea `desde` en `[async ]function nombre() { … }`, la llama al final y calcula `funcStart`, `setupEnd` y `funcEnd`; `fases` y `--mapa` usan las líneas del original (la tool corre las del envoltorio). Va con `indentar: true`.

@@ -43,6 +43,7 @@ w('tools/fake-medidor.mjs', [
   "const dir = import.meta.dirname;",
   "const d = JSON.parse(readFileSync(`${dir}/dato.json`, 'utf8')).d;",
   "const e = JSON.parse(readFileSync(`${dir}/escribe.json`, 'utf8')); writeFileSync(`${dir}/escribe.json`, JSON.stringify({ n: e.n + 1 }) + '\\n'); // efecto al costado a propósito",
+  "if (d === 'VACIO') process.exit(0); // un medidor que no imprime nada",
   "console.log(`valor=${VALOR} dato=${d}`);", ''].join('\n'));
 const g = (...a) => spawnSync('git', ['-c', 'user.email=prueba@prueba', '-c', 'user.name=prueba', ...a], { cwd: T, encoding: 'utf8' });
 g('init', '-q'); g('add', '-A'); g('commit', '-q', '-m', 'base');
@@ -106,6 +107,18 @@ volver();
 w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 5; // otro comentario\n');
 r = medir();
 caso('si además cambia el código, va por los lotes', !/Solo comentarios/.test(r.out) && /Lote chico/.test(r.out), r.out.slice(-300));
+volver();
+
+// 9. un medidor que no imprime nada no da «idéntico»
+w('tools/dato.json', '{"d":"VACIO"}\n');
+w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 7;\n');
+r = medir();
+caso('un medidor vacío antes y después no da idéntico: dice VACÍO, sale con 1 y no anota una línea buena', r.status === 1 && /VACÍO/.test(r.out) && !/idéntico/.test(r.out.split('Resultado')[1] || '') && !registro().some((l) => l.resultado === 'idéntico' && l.tools?.['fake-tool.mjs']), r.out.slice(-300));
+volver();
+w('tools/dato.json', '{"d":"VACIO"}\n');
+w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 8;\n');
+r = medir('--explicacion', 'el medidor no tiene nada que imprimir en este caso');
+caso('un medidor vacío con --explicacion sale con 0 y queda «diferencias, todas explicadas»', r.status === 0 && /^1 diferencias, todas explicadas$/.test(registro().at(-1)?.resultado || ''), r.out.slice(-300) + JSON.stringify(registro().at(-1)?.resultado));
 volver();
 
 rmSync(T, { recursive: true, force: true });

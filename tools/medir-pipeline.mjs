@@ -18,7 +18,8 @@
 //      Admin/mediciones/pipeline/_respaldo/), el DESPUÉS con lo editado, y compara. El resultado de cada corrida se guarda por una clave
 //      (medidor, contenido de la lista, huella de cada tool instalada, commit): el mismo ANTES no se vuelve a correr.
 //   4. Anota una línea en Admin/registros/mediciones-pipeline.jsonl: fecha, huellas, lote, medidores, resultado y dónde quedaron antes y después.
-//      Una diferencia sin --explicacion «texto» no cierra («sin explicar»): el hook no la acepta.
+//      Una diferencia sin --explicacion «texto» no cierra («sin explicar»): el hook no la acepta. Un medidor que no imprime nada ni escribe un archivo (antes y después)
+//      no midió nada: no da «idéntico» sino «vacío», que el hook tampoco acepta; solo --explicacion «por qué» lo deja pasar.
 //
 // SIN EFECTOS AL COSTADO: exige que data/, Generados/, Clubes/ y Admin/registros/ estén limpios; después de cada corrida revierte lo que el
 // medidor haya tocado de lo trackeado (p. ej. categorias-aprendidas.jsonl) y avisa de lo nuevo sin trackear.
@@ -33,7 +34,7 @@
 //   node tools/medir-pipeline.mjs --medidor cargar,audit    solo esos medidores
 //   node tools/medir-pipeline.mjs --restaurar               devuelve las tools desde el respaldo si una corrida murió a la mitad
 // ============================================================================
-import { readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync, copyFileSync, unlinkSync, readdirSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync, copyFileSync, unlinkSync, readdirSync, rmSync, statSync } from 'node:fs';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { resolve, join } from 'node:path';
@@ -214,6 +215,13 @@ function correr(m, nivel) {
   return { dir, salida, reutilizado: false, estado: r.status };
 }
 
+// Un medidor que no imprime nada ni escribe un archivo de salida no midió nada: «idéntico» sería falso (el del xhtml midió cero archivos durante semanas con la salida vacía antes y después).
+function sinContenido(r) {
+  const out = readFileSync(join(r.dir, 'stdout.txt'), 'utf8').trim();
+  const archivos = readdirSync(r.dir).filter((f) => !['stdout.txt', 'stderr.txt', 'listo'].includes(f) && !f.startsWith('diferencias-') && statSync(join(r.dir, f)).size > 0);
+  const sinDatos = !out || (out.split('\n').length === 1 && /(^|\D)0\s+(archivos|documentos|clubes|años|ejercicios|files)\b|\b(ningún|no hay)\b/i.test(out)); // vacía, o un solo renglón que dice que no encontró nada
+  return sinDatos && !archivos.length;
+}
 const norm = (s) => String(s).split('\n').map((l) => l.replace(/\b\d+([.,]\d+)?\s?(ms|s|seg|min)\b/g, '<t>').trimEnd()).filter(Boolean);
 const cuentaLineas = (ls) => ls.reduce((m, l) => m.set(l, (m.get(l) || 0) + 1), new Map());
 function difTexto(a, b) {
@@ -282,9 +290,9 @@ const RESUMIDORES = {
 const explicacion = flag('--explicacion');
 const registroMedidores = [];
 const niveles = ['chico', ...NIVELES.slice(1, NIVELES.indexOf(nivelFinal) + 1)];
-let nivelUsado = 'chico'; let difTotal = 0; let cortado = false; let autoN = 0; let resumenes = [];
+let nivelUsado = 'chico'; let difTotal = 0; let cortado = false; let autoN = 0; let resumenes = []; let vaciosN = 0;
 for (let k = 0; k < niveles.length; k++) {
-  const nivel = niveles[k]; nivelUsado = nivel; difTotal = 0; autoN = 0; resumenes = []; registroMedidores.length = 0;
+  const nivel = niveles[k]; nivelUsado = nivel; difTotal = 0; autoN = 0; vaciosN = 0; resumenes = []; registroMedidores.length = 0;
   console.log(`\n== Lote ${nivel} (${leerLista(nivel).length} documentos) ==`);
   for (const m of medidores) {
     // un medidor que no usa la lista (todo el sitio) da la misma clave en cada nivel: se reutiliza
@@ -295,16 +303,19 @@ for (let k = 0; k < niveles.length; k++) {
     // con resumen, solo lo que pide atención cuenta como diferencia sin explicar; el resto queda explicado por el resumen
     if (res && res.atencion === 0) { autoN += n; resumenes.push(`${m}: ${res.lineas.join(' · ')}`); } else difTotal += n;
     writeFileSync(join(despues.dir, `diferencias-${nivel}.txt`), lineas.join('\n'));
-    console.log(`  ${m}: ${n ? `${n} diferencia(s)` : 'idéntico'}${antes.reutilizado ? ' (antes reutilizado)' : ''}`);
+    const vacio = !n && sinContenido(antes) && sinContenido(despues); if (vacio) vaciosN++;
+    console.log(`  ${m}: ${n ? `${n} diferencia(s)` : vacio ? 'VACÍO: no imprimió nada ni antes ni después, no midió nada' : 'idéntico'}${antes.reutilizado ? ' (antes reutilizado)' : ''}`);
     if (res) console.log(res.lineas.map((l) => '     ' + l).join('\n') + (res.atencion ? `\n     → ${res.atencion} piden razón escrita (--explicacion)` : '\n     → explicado por el resumen'));
     else if (n) console.log(lineas.slice(0, 25).map((l) => '     ' + l).join('\n'));
-    registroMedidores.push({ medidor: m, nivel, diferencias: n, antes: antes.dir.slice(ROOT.length + 1), despues: despues.dir.slice(ROOT.length + 1), resumen: res ? res.lineas.slice(0, 15) : lineas.filter(Boolean).slice(0, 15) });
+    registroMedidores.push({ medidor: m, nivel, diferencias: n, ...(vacio ? { vacio: true } : {}), antes: antes.dir.slice(ROOT.length + 1), despues: despues.dir.slice(ROOT.length + 1), resumen: res ? res.lineas.slice(0, 15) : lineas.filter(Boolean).slice(0, 15) });
   }
-  if (nivel === 'chico' && difTotal && !explicacion) { console.log('\nEl lote chico ya muestra diferencias: explicalas (--explicacion "…") o arreglá el cambio antes de seguir con lotes más grandes.'); cortado = true; break; }
+  if (nivel === 'chico' && (difTotal || vaciosN) && !explicacion) { console.log(difTotal ? '\nEl lote chico ya muestra diferencias: explicalas (--explicacion "…") o arreglá el cambio antes de seguir con lotes más grandes.' : '\nHay medidores vacíos: no midieron nada. Arreglá el medidor (qué mira, con qué argumentos) o, si de verdad no hay nada que medir, --explicacion "por qué".'); cortado = true; break; }
   if (nivel === 'mediano' && (difTotal || autoN) && !niveles.includes('completo')) { niveles.push('completo'); nivelFinal = 'completo'; console.log('El mediano mostró diferencias: escala al completo.'); }
 }
 const textoExplicacion = explicacion || (autoN && !difTotal ? `Explicadas por el resumen del medidor: ${resumenes.join(' | ')}` : null);
-const resultado = !difTotal && !autoN ? 'idéntico' : (difTotal ? !!explicacion : true) ? `${difTotal + autoN} diferencias, todas explicadas` : `${difTotal + autoN} diferencias sin explicar`;
+// un medidor vacío cuenta como una diferencia que pide razón escrita: sin --explicacion el resultado es «vacío» (el hook no lo acepta), con ella «N diferencias, todas explicadas»
+const totalDif = difTotal + autoN + vaciosN;
+const resultado = vaciosN && !explicacion ? `vacío: ${vaciosN} medidor(es) no imprimieron nada, no midieron nada` : !totalDif ? 'idéntico' : (difTotal || vaciosN ? !!explicacion : true) ? `${totalDif} diferencias, todas explicadas` : `${totalDif} diferencias sin explicar`;
 const linea = {
   fecha: new Date().toISOString().slice(0, 10), base: baseRev, tools: Object.fromEntries(nombres.map((n) => [n, { antes: huellasAntes[n], despues: huellasDespues[n] }])),
   lote: { nivel: nivelUsado, lista: T.lotes[nivelUsado], listaSha: sha1(readFileSync(resolve(ROOT, T.lotes[nivelUsado]), 'utf8')).slice(0, 12), documentos: leerLista(nivelUsado).length },
@@ -313,4 +324,4 @@ const linea = {
 if (A.includes('--no-anotar') || SOLO_CHICO) console.log(`\nResultado: ${resultado} (no se escribió el registro).`);
 else if (!cortado && nivelUsado === nivelFinal) { appendFileSync(REGISTRO, JSON.stringify(linea) + '\n'); console.log(`\nResultado: ${resultado}. Anotado en Admin/registros/mediciones-pipeline.jsonl.`); }
 else console.log(`\nResultado parcial (${resultado}) en el lote ${nivelUsado}; no se anotó.`);
-process.exitCode = difTotal && !explicacion ? 1 : process.exitCode || 0;
+process.exitCode = (difTotal || vaciosN) && !explicacion ? 1 : process.exitCode || 0;
