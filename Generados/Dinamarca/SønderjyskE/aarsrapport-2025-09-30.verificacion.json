@@ -1,0 +1,179 @@
+{
+ "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.pdf",
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.md",
+ "generado": "2026-10-24T06:43:37.702Z",
+ "scriptHuella": "b0a6fdd2be99",
+ "estado": "cola",
+ "clubId": "sonderjyske-dk",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "d6b5f7b",
+  "4029b56",
+  "2803d79"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 3.552713678800501e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2024 de este documento suma ingresos 58.552416; el sitio tiene 37.431315"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": false,
+   "detalle": "ingresos de 2024: 37.431315 en aarsrapport-2024-09-30.pdf y 58.552416 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b18 empieza con la nota 2 'Af- og nedskrivninger' y termina con 'Årets skat i alt', así que parece agrupar las notas 2 a 4 en un solo bloque.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsrapport-2022-2023-09-30-transicion.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 66.40466,
+  "gastos": 81.219667,
+  "financiero": 1.479681,
+  "impuesto": -3.762243,
+  "resultadoImpreso": -11.467171,
+  "resultadoParaCargar": -11.467171,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Nettoomsætning",
+   "lado": "ingreso",
+   "M": 66.288538,
+   "pagina": 15,
+   "linea": 446,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre driftsindtægter",
+   "lado": "ingreso",
+   "M": 0.116122,
+   "pagina": 15,
+   "linea": 447,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vareforbrug",
+   "lado": "gasto",
+   "M": 2.032057,
+   "pagina": 15,
+   "linea": 448,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre eksterne omkostninger",
+   "lado": "gasto",
+   "M": 28.683802,
+   "pagina": 15,
+   "linea": 449,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Løn og gager",
+   "lado": "gasto",
+   "M": 43.991746,
+   "pagina": 19,
+   "linea": 534,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Pensionsbidrag",
+   "lado": "gasto",
+   "M": 1.633184,
+   "pagina": 19,
+   "linea": 535,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre omkostninger til social sikring",
+   "lado": "gasto",
+   "M": 0.757445,
+   "pagina": 19,
+   "linea": 536,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Kontraktsrettigheder",
+   "lado": "gasto",
+   "M": 3.100932,
+   "pagina": 19,
+   "linea": 545,
+   "origen": "nota que desglosa \"Af- og nedskrivninger\""
+  },
+  {
+   "etiqueta": "Indretning lejede lokaler",
+   "lado": "gasto",
+   "M": 0.471721,
+   "pagina": 19,
+   "linea": 546,
+   "origen": "nota que desglosa \"Af- og nedskrivninger\""
+  },
+  {
+   "etiqueta": "Andre anlæg, driftsmateriel og inventar",
+   "lado": "gasto",
+   "M": 0.234028,
+   "pagina": 19,
+   "linea": 547,
+   "origen": "nota que desglosa \"Af- og nedskrivninger\""
+  },
+  {
+   "etiqueta": "Andre driftsomkostninger",
+   "lado": "gasto",
+   "M": 0.314752,
+   "pagina": 15,
+   "linea": 453,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finansielle indtægter",
+   "M": 0.532637,
+   "linea": 455
+  },
+  {
+   "etiqueta": "Finansielle omkostninger",
+   "M": -0.947044,
+   "linea": 456
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skat af årets resultat",
+   "M": 3.762243,
+   "linea": 458
+  }
+ ]
+}

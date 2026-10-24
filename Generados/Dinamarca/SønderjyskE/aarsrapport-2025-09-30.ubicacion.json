@@ -1,32 +1,240 @@
 {
  "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.pdf",
  "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.md",
- "mdSha1": "bde126c0543ffb704dd8f097210e641710b03e32",
+ "mdSha1": "bf8011e4f0b5d15207e43ea951473d9093c3b201",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T06:29:00.995Z",
+ "generado": "2026-10-24T06:43:16.556Z",
  "perimetroClub": null,
- "bloques": {},
- "sin_estado": true,
- "estado": [],
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    12
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    20,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    48,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    64,
+    65
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    144,
+    145
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    320,
+    322
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    341,
+    344
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    398,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    404,
+    405
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    409,
+    410
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    418,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    424,
+    437
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    444,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    467,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    494,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    515,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    531,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    543,
+    555
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 20,
+   "lineas": [
+    562,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    567,
+    589
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    596,
+    616
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 21,
+   "lineas": [
+    623,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    629,
+    632
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    645,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    661,
+    662
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b13"
+ ],
  "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "notas_gastos": [
+  "b17",
+  "b18"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Los importes del estado se imprimen en coronas completas (p. ej. Nettoomsætning 66.288.538); no hay leyenda de miles.",
  "moneda": "DKK",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "2024/25",
+ "columna_anterior": "2023/24",
+ "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El PDF 'aarsrapport-2025-09-30.pdf' de Sønderjyske Fodbold A/S tiene en realidad una resultatopgørelse del ejercicio cerrado el 2025-09-30 que la transcripción no capturó (por ejemplo, páginas escaneadas como imagen)?",
+   "pregunta": "¿Se cargan las notas de gastos financieros (nota 3) y de impuestos (nota 4) que parecen estar dentro del bloque b18 junto con amortizaciones (nota 2)?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "",
-   "texto": "El índice llegó con 0 bloques con cifras, cosa rara en un årsrapport; puede ser una falla de transcripción y no que falte el estado.",
-   "bloques": [],
-   "afecta_carga": true
+   "renglon": "Af- og nedskrivninger",
+   "texto": "b18 empieza con la nota 2 'Af- og nedskrivninger' y termina con 'Årets skat i alt', así que parece agrupar las notas 2 a 4 en un solo bloque.",
+   "bloques": [
+    "b18"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "El índice no contiene ningún bloque con cifras, así que no hay estado de resultados identificable para el ejercicio cerrado el 2025-09-30. Se marca sin_estado, pero conviene verificar si el PDF está escaneado y debe re-procesarse con OCR."
+ "observaciones": "Estado de resultados individual de Sønderjyske Fodbold A/S (b13, 1 oct 2024 - 30 sep 2025). b12 es el resumen de cifras clave a 5 años (en miles de DKK) y no se carga. b17 es la nota 1 de personal (Personaleomkostninger). b18 es la nota 2 de amortizaciones y llega hasta el impuesto. No hay nota que abra Nettoomsætning. En el texto del estado, las columnas de los renglones con nota están corridas por la columna Note."
 }

@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.pdf",
+ "generado": "2026-10-24T06:43:51.946Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "periodo",
+   "motivo": "el documento cubre un período otro al 2025-09-30: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado. Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado",
+  "el documento cierra 2025-09-30 (ejercicio desde el 10-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "otro",
+  "meses": 0,
+  "inicio": "2025-09-30",
+  "cierre": "2025-09-30",
+  "cierreDe": "iXBRL: período etiquetado (escalón 0)",
+  "evidencia": {
+   "pagina": null,
+   "texto": "iXBRL: 2025-09-30 a 2025-09-30"
+  },
+  "confianza": "alta"
+ },
+ "clubId": "sonderjyske-dk",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

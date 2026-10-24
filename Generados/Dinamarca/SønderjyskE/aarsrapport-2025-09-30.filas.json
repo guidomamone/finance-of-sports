@@ -1,0 +1,330 @@
+{
+ "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.pdf",
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.md",
+ "mdSha1": "bf8011e4f0b5d15207e43ea951473d9093c3b201",
+ "ubicacionSha1": "a0b8b97e892ec1253631344e08ae0c1d87cfc080",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T06:43:37.342Z",
+ "ubicacion": {
+  "estado": [
+   "b13"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b17",
+   "b18"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b13",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; importes en coronas danesas aparentemente en unidades (ej. 66.288.538)"
+  },
+  {
+   "bloque": "b17",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; coincide con b13"
+  },
+  {
+   "bloque": "b18",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; coincide con b13"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b13",
+   "linea": 446,
+   "etiqueta": "Nettoomsætning",
+   "actual": "66.288.538",
+   "anterior": "55.909.616",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 447,
+   "etiqueta": "Andre driftsindtægter",
+   "actual": "116.122",
+   "anterior": "2.642.800",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 448,
+   "etiqueta": "Vareforbrug",
+   "actual": "2.032.057",
+   "anterior": "1.722.417",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 449,
+   "etiqueta": "Andre eksterne omkostninger",
+   "actual": "28.683.802",
+   "anterior": "21.527.721",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 450,
+   "etiqueta": "Bruttofortjeneste",
+   "actual": "35.688.801",
+   "anterior": "35.302.278",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 451,
+   "etiqueta": "Personaleomkostninger",
+   "actual": "46.382.375",
+   "anterior": "38.888.188",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 452,
+   "etiqueta": "Af- og nedskrivninger",
+   "actual": "3.806.681",
+   "anterior": "2.067.896",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 453,
+   "etiqueta": "Andre driftsomkostninger",
+   "actual": "314.752",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 454,
+   "etiqueta": "Resultat før finansielle poster",
+   "actual": "-14.815.007",
+   "anterior": "-5.653.806",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 455,
+   "etiqueta": "Finansielle indtægter",
+   "actual": "532.637",
+   "anterior": "10.526",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 456,
+   "etiqueta": "Finansielle omkostninger",
+   "actual": "947.044",
+   "anterior": "857.081",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 457,
+   "etiqueta": "Resultat før skat",
+   "actual": "-15.229.414",
+   "anterior": "-6.500.361",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 458,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "-3.762.243",
+   "anterior": "-1.746.248",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 459,
+   "etiqueta": "Årets resultat",
+   "actual": "-11.467.171",
+   "anterior": "-4.754.113",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 534,
+   "etiqueta": "Løn og gager",
+   "actual": "43.991.746",
+   "anterior": "36.964.126",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b17",
+   "linea": 535,
+   "etiqueta": "Pensionsbidrag",
+   "actual": "1.633.184",
+   "anterior": "1.252.567",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b17",
+   "linea": 536,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "757.445",
+   "anterior": "671.495",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b17",
+   "linea": 537,
+   "etiqueta": "",
+   "actual": "46.382.375",
+   "anterior": "38.888.188",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 545,
+   "etiqueta": "Kontraktsrettigheder",
+   "actual": "3.100.932",
+   "anterior": "1.669.092",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 546,
+   "etiqueta": "Indretning lejede lokaler",
+   "actual": "471.721",
+   "anterior": "227.060",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 547,
+   "etiqueta": "Andre anlæg, driftsmateriel og inventar",
+   "actual": "234.028",
+   "anterior": "171.744",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 548,
+   "etiqueta": "",
+   "actual": "3.806.681",
+   "anterior": "2.067.896",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 550,
+   "etiqueta": "Renter mellemregning tilknyttede virksomheder",
+   "actual": "942.000",
+   "anterior": "846.200",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 551,
+   "etiqueta": "Andre finansielle omkostninger",
+   "actual": "5.044",
+   "anterior": "10.881",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 552,
+   "etiqueta": "",
+   "actual": "947.044",
+   "anterior": "857.081",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 554,
+   "etiqueta": "Årets aktuelle skat",
+   "actual": "-3.762.243",
+   "anterior": "-1.746.248",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  },
+  {
+   "bloque": "b18",
+   "linea": 555,
+   "etiqueta": "Årets skat i alt",
+   "actual": "-3.762.243",
+   "anterior": "-1.746.248",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 459,
+  "actual": "-11.467.171",
+  "anterior": "-4.754.113"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b13, b17 y b18 como coronas danesas en unidades (ej. 'Nettoomsætning' 66.288.538 en L446)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque imprime la escala; por la magnitud parecen unidades de DKK.",
+   "bloques": [
+    "b13",
+    "b17",
+    "b18"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Formato de costos de Dinamarca (ÅRL). Bruttofortjeneste (L450) = ingresos menos Vareforbrug y Andre eksterne omkostninger. Gastos impresos sin signo; el impuesto aparece negativo (ingreso por impuesto). No hay total de ingresos ni de gastos impreso. En L451, L452, L456 y L458 la columna de nota quedó desplazada; se tomaron los dos importes como 2024/25 y 2023/24."
+}

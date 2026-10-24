@@ -1,0 +1,120 @@
+{
+  "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.md",
+  "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.pdf",
+  "club": "sonderjyske-dk",
+  "year": 2025,
+  "generatedAt": "2026-10-24T06:43:37.702Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Nettoomsætning",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        66.288538
+      ],
+      "glosa": "Cifra neta de negocios"
+    },
+    {
+      "label": "Andre driftsindtægter",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.116122
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Vareforbrug",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        2.032057
+      ],
+      "glosa": "Consumo de mercaderías"
+    },
+    {
+      "label": "Andre eksterne omkostninger",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        28.683802
+      ],
+      "glosa": "Otros gastos externos"
+    },
+    {
+      "label": "Løn og gager",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        43.991746
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensionsbidrag",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        1.633184
+      ],
+      "glosa": "Aportaciones a pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.757445
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Kontraktsrettigheder",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Af- og nedskrivninger\"",
+      "values": [
+        3.100932
+      ],
+      "glosa": "Derechos contractuales"
+    },
+    {
+      "label": "Indretning lejede lokaler",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Af- og nedskrivninger\"",
+      "values": [
+        0.471721
+      ],
+      "glosa": "Acondicionamiento de locales arrendados"
+    },
+    {
+      "label": "Andre anlæg, driftsmateriel og inventar",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Af- og nedskrivninger\"",
+      "values": [
+        0.234028
+      ],
+      "glosa": "Otras instalaciones, utillaje y mobiliario"
+    },
+    {
+      "label": "Andre driftsomkostninger",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.314752
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}
