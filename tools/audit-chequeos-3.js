@@ -384,6 +384,23 @@ function checkArchivoNoEsLoQueDice() {
 // publicó tal cual, y el visitante terminó leyendo "PDF subido directamente por Guido"
 // y rutas de su disco. Esto vigila las dos mitades de ese arreglo: que lo público no
 // filtre nada interno, y que nadie vuelva a renderizar `note` sin darse cuenta.
+// cambio-de-formato-sin-nota: un año cuyo balance pasó de resumido a completo (o al revés) respecto del año anterior cargado, y cuya fuente no tiene publicNote
+// que lo explique (tools/cambio-formato.js; cargar.mjs avisa al proponer). Sin la nota, el salto de formato se lee como un salto de actividad.
+function checkCambioDeFormatoSinNota(api) {
+  const { cambioDeFormato, anioAnterior } = require('./cambio-formato.js');
+  const sin = [];
+  for (const [clubId, g] of Object.entries(api.generic)) {
+    const por = g.revenueLinesByYear || {};
+    for (const y of Object.keys(por).sort()) {
+      const ant = anioAnterior(por, y); if (ant == null) continue;
+      const cambio = cambioDeFormato(por[ant], por[y]); if (!cambio) continue;
+      const s = api.sources[(g.fiscalYearMeta?.[y] || {}).sourceId] || {};
+      if (!s.publicNote) sin.push(`${clubId} ${y}`);
+    }
+  }
+  if (sin.length) add('P3', 'cambio-de-formato-sin-nota', `${sin.length} año(s) con cambio de formato del balance (resumido a completo o al revés) y sin publicNote en su fuente: ${sin.slice(0, 6).join(', ')}${sin.length > 6 ? ', …' : ''}. Agregá la nota con node tools/fuente.mjs <clubId> <sourceId> --nota "…" --escribir`);
+}
+
 function checkFuentesPublicas(api) {
   const INTERNO = /\bGuido\b|Clubes\/|\.pdf\b|\.md\b|pdftotext|pdftoppm|Tesseract|\bOCR\b|transcripci[oó]n|transcript/i;
   let sinNota = 0;
@@ -429,4 +446,4 @@ function checkFuentesPublicas(api) {
 }
 
 
-module.exports = { checkCorreccionesSinMotivo, checkRankings, checkClubIds, checkReferenciaAClub, checkColisionSourcing, checkCarpetasClubes, checkArchivoNoEsLoQueDice, checkFuentesPublicas };
+module.exports = { checkCorreccionesSinMotivo, checkRankings, checkClubIds, checkReferenciaAClub, checkColisionSourcing, checkCarpetasClubes, checkArchivoNoEsLoQueDice, checkFuentesPublicas, checkCambioDeFormatoSinNota };

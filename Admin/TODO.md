@@ -170,14 +170,21 @@ Terminado cuando: Guido decide si se le pide el desglose completo de 2022 a 2024
 
 Verificar: manual
 
-### 18. 446 · (Pipeline): cargar avisa cuando el formato de un club cambia de resumido a completo (la nota pública no se olvida)
+### 18. 447 · (Auditora, con Onboarding): 23 club-años con cambio de formato del balance y sin publicNote: ¿son cambios de formato reales?
 
-En el 413 la nota pública del cambio de formato de SønderjyskE («hasta 2024 el club publicaba el balance resumido…») la escribí a mano con `fuente.mjs --nota` DESPUÉS de cargar el año; nada en el pipeline avisó que hacía falta. Propuesta: `cargar.mjs` (en `proponer`) compara el año por cargar con el anterior cargado del club: si el anterior tiene sus ingresos como una sola línea `lump_football_operations` con `disclosure: aggregated` y el nuevo tiene ingresos desglosados (o al revés), agrega un aviso a la propuesta («cambio de formato del balance: agregá una publicNote; texto sugerido …») y `audit.js` da un P3 si el año nuevo quedó sin `publicNote`. Medir con el lote completo (debe dar idéntico: es un aviso) y listar los club-años que lo dispararían hoy (SønderjyskE 2025 y quizá Nordsjælland, Randers, Vejle, Fredericia).
-Terminado cuando: la propuesta de carga avisa el cambio de formato con el texto sugerido, `audit.js` marca el año sin nota, y la medición del lote completo da idéntico.
+Viene del 446. `audit.js` da el P3 `cambio-de-formato-sin-nota` con los club-años cuyos ingresos pasan de UNA línea `lump_football_operations` (balance resumido) a más de una, o al revés, contra el año inmediatamente anterior cargado, y cuya fuente no tiene `publicNote` (`node tools/audit.js --json` los lista; hoy 23: Avaí 2022 y 2023, Bayern 2024, Belenenses 2025, Fredrikstad 2016, Goiás 2019 y 2021, Lierse Kempenzonen 2020, Lokeren-Temse 2024 y 2025, Lommel 2024, Patro Eisden —seis—, RAAL 2025, Remo —tres—, RWDM 2025 y Vejle 2025). La señal es solo la forma de las líneas: no distingue un cambio de formato del documento de un ingreso que el club dejó sin desglosar por otro motivo (los belgas de esquema abreviado alternan año a año). Falta, por club-año: mirar los ingresos del documento y el anterior; si es un cambio de formato real, `node tools/fuente.mjs <clubId> <sourceId> --nota "…" --escribir` con el texto que sugiere el aviso de `cargar.mjs` (`textoSugerido` de `tools/cambio-formato.js`; el modelo es la nota de SønderjyskE 2025); si no, silenciar el año con su motivo (`tools/silenciar.mjs`). Si la mayoría resulta no ser un cambio real, afinar la señal en `tools/cambio-formato.js` (medir antes y después).
+Terminado cuando: `node tools/audit.js` no da `cambio-de-formato-sin-nota` (cada año con nota o silenciado con motivo).
 
-Verificar: manual
+Verificar: audit cambio-de-formato-sin-nota = 0
 
-### 19. 338 · correr todas las auditorías del proyecto (al final de A)
+### 19. 448 · (Orden, con Guido): las reglas fijas del prompt de sesión (reglas de Bash, cierre con Leído en vano) a un documento de Admin/ y un rechazo del hook
+
+El prompt con el que Guido arranca una sesión repite cada vez tres bloques fijos: (1) las «reglas que pasan seguido» (nada de `cd … &&`, `$VAR`, `$(…)`, `/tmp`, `node -e` ni python en Bash; texto con `${…}` por Edit; medir antes y después; skills y CLAUDE.md en commit aparte), (2) el cierre obligatorio (resumen, «Leído en vano», «Lo que me hizo pensar», «Te toca a vos», «En curso») y (3) los pasos de medición y commit. Propuesta: un documento nuevo, Admin/PLANTILLA-SESION.md (interno, con la marca de primera línea) que los junta, una línea en `CLAUDE.md` que lo cita (commit aparte: es texto que Guido lee), y que el hook `tools/hooks/pre-tool.mjs` rechace también `node -e` y python en un Bash (hoy rechaza `cd … &&`, `$VAR`, `$(…)` y `/tmp`; una sesión usó `node -e` sin que nada lo frenara). El prompt de Guido queda solo con la lista de puntos y las restricciones de esa sesión (sin push, sin API paga, qué puntos no tocar). Lo decide Guido: el texto de CLAUDE.md es suyo.
+Terminado cuando: existe el documento Admin/PLANTILLA-SESION.md, `CLAUDE.md` lo cita, y un Bash con `node -e` es rechazado por el hook (con un caso de prueba del hook si ya existe una prueba).
+
+Verificar: existe Admin/PLANTILLA-SESION.md
+
+### 20. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
@@ -186,7 +193,7 @@ CORRIDO a medias (2026-10-23, sesión sola): `audit.js` P0 0 · P1 0 · P2 16 ·
 
 Verificar: manual
 
-### 20. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 21. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
@@ -195,7 +202,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 21. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 22. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -212,7 +219,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 22. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 23. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -248,7 +255,7 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 
 Verificar: manual
 
-### 23. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+### 24. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
@@ -258,14 +265,14 @@ Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la
 HOY (2026-10-23): el aviso `ejercicio-sin-rastro` de este club está silenciado en `tools/audit-ignore.json` (2023-2025 sin depósito; 2022 con el balance en mano) para llevar el P3 a cero; lo que falta es la decisión de 2022, así que la línea de verificación pasó a manual.
 Verificar: manual
 
-### 24. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
+### 25. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
 
 Las 67 etiquetas excluidas en `tools/subsidios-etiquetas.json` las dejaron afuera reglas objetivas (no una confianza baja de Jev): mezcladas con otro concepto, lo que reparte la federación o la liga (solidaridad: `competition_bonus`), subvención de capital imputada, impuestos y deducciones. Guido no las va a revisar una por una (2026-10-22): el proceso es `node tools/fos.mjs etiquetas` (369, hecho). Este punto es lo que queda después de que corrió. La lista corta de 24 etiquetas ya está decidida por Guido (2026-10-23). Falta la decisión de criterio sobre lo que reparte la federación o la liga cuando el documento lo llama «subsidio» o «toetus» (EJL, Contributi Federali, FPF/LPF; hoy excluidas por la REGLA de solidaridad de `Admin/CONVENCIONES-DATOS.md`); se vota con `votacion-de-criterios` con la tabla de `node tools/fos.mjs filas` como evidencia. `node tools/fos.mjs etiquetas --categoria grants_donations --listar --todas` las muestra con su motivo.
 Terminado cuando: las etiquetas excluidas por la regla de la federación o la liga tienen una decisión escrita (entran o quedan afuera, con el caso) y el JSON de decisiones no tiene ninguna «SIN REVISAR».
 
 Verificar: manual
 
-### 25. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
+### 26. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
 
 Tienen `.categorias.json` (Alemania 7, Rusia 2, Ucrania 2, República Checa 1) pero ningún `.verificacion.json`: las listas de prueba que arma `tools/lotes-prueba.mjs` salen de lo verificado y por eso no los incluyen, y `medir-pipeline` frena una tool dirigida a ellos (por ejemplo `bfo-rusia.mjs`, el camino del fisco ruso) porque no hay documentos que medir. Primero averiguar POR QUÉ no tienen verificación, sin asumir (¿su camino de entrada no pasa por la etapa 6, como el de Rusia, que sale del fisco y no del PDF? ¿se cargaron antes de que la etapa existiera? ¿quedaron frenados?). Según la causa: correr verificar donde corresponde, o declarar que su camino no pasa por verificación y darle un medidor propio en `tools/pipeline-tools.json` (y una familia propia en las listas) para que un cambio a su tool se pueda medir.
 DEPENDE DE: el 371 (cerrado).
@@ -276,7 +283,7 @@ Verificar: contiene Admin/lotes/prueba-completa.txt | Clubes/Rusia/
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 26. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 27. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo
@@ -286,7 +293,7 @@ JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios 
 
 Verificar: manual
 
-### 27. 420 · (Onboarding, con la Auditora): cargar los británicos en iXBRL: lote 143 y Hibernian, los años pagables, Falkirk, las altas (viene del 356)
+### 28. 420 · (Onboarding, con la Auditora): cargar los británicos en iXBRL: lote 143 y Hibernian, los años pagables, Falkirk, las altas (viene del 356)
 
 Viene del 356 (el conversor ya está: celdas por coordenadas como tablas, medido sobre 317 XHTML). Qué hay hecho: los 55 `.md` de Hibernian, Bolton, Bristol Rovers, Cambridge, Crewe, Northampton, Oxford, Peterborough, Plymouth, Rotherham, Salford, Tranmere, Blackpool y Reading están reconvertidos con tablas (costo 0), y Bolton 2024-25 corrió de punta a punta (`lote.mjs --rehacer --ejecutar --pagar-ia-xhtml`: US$ 0,15, verificó, 2 dudas ordinarias en la cola). Presupuesto del 356: US$ 35 de Guido, gastados ~2 (`node tools/gasto.mjs`), con ensayo gratis antes de cada corrida.
 - Los lotes: `Admin/lotes/lote-143.txt` (13 documentos de Inglaterra, el año más reciente de cada club; ensayo ~US$ 0,4 por documento con IA) y Hibernian en un lote de Escocia (un país por lote). Los `Generados/` de esos clubes eran de cuando el `.md` no tenía tablas (`sin_estado: true`); desde el 419 el lote lo ve solo («el .md cambió desde localizar … se rehace») y el ensayo cotiza US$ 4,85 para los 13 (Bolton ya está hecho). Los 2 documentos de OH Leuven 2017 y 2022 (Bélgica) también quedan «viejos» por su `.md` cambiado. Después las altas como en los lotes 140 y 141: cola contestada por subagentes Sonnet, ficha de alta, estadio y sponsor, perímetros (group accounts: perímetro consolidado con la regla 1 de CONVENCIONES-DATOS), gestiones.
@@ -304,7 +311,7 @@ Verificar: contiene data/leagues.js | Scottish Championship
 Verificar: contiene Admin/CONVENCIONES-DATOS.md | Trust
 Verificar: manual
 
-### 28. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 29. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -317,7 +324,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 29. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 30. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -333,7 +340,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 30. 335 · mails a clubes
+### 31. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -348,7 +355,7 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 31. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 32. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,

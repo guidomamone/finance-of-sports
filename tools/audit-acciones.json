@@ -125,6 +125,11 @@
   "quien": "sesion",
   "donde": "skill club-sourcing, referencia/liga-y-sponsor.md"
  },
+ "cambio-de-formato-sin-nota": {
+  "hacer": "Por cada año listado: mirar los ingresos del año y del anterior en el documento; si el club de verdad cambió de balance resumido a completo (o al revés), node tools/fuente.mjs <clubId> <sourceId> --nota \"…\" --escribir con el texto que sugiere el aviso de cargar.mjs (tools/cambio-formato.js, textoSugerido). Si el salto no es de formato (un ingreso sin desglosar por otro motivo), se silencia el año con su motivo.",
+  "quien": "sesion",
+  "donde": "punto 446 (la nota de SønderjyskE 2025 es el modelo)"
+ },
  "revision-propia-pendiente": {
   "hacer": "Nada que corregir: lista los cambios al pipeline que revisó solo la sesión que los hizo (patron --revision propia) y ninguna revisión de la Auditora (patron --revision auditora, mismas tools) cubrió todavía. `node tools/audit.js --json` da cuáles.",
   "quien": "nada",

@@ -30,7 +30,7 @@
 const { ARGS, IGNORADOS, IGNORE_FILE, JSON_OUT, MUESTRAS, QUIET, ROOT, add, archivosData, clubYears, findings, fs, path, reglasUsadas, silenciados, vm } = require('./audit-base.js');
 const { checkCajaDeudaProporcion, checkCategorias, checkEstructura, checkLineas, checkMoneda, checkTieOuts } = require('./audit-chequeos-1.js');
 const { checkCabeceraLargaEnTools, checkComentarioHistoricoEnTools, checkComentariosPublicados, checkDeployInterno, checkGenerados, checkHistoriaEnDocs, checkIndexFileRoto, checkLigasPorEjercicio, checkParrafoNetlifyDuplicado, checkParrafosRepetidos, checkRayaLarga, checkRutasMuertas, checkSponsorBusqueda, checkToolGrande } = require('./audit-chequeos-2.js');
-const { checkArchivoNoEsLoQueDice, checkCarpetasClubes, checkClubIds, checkColisionSourcing, checkCorreccionesSinMotivo, checkFuentesPublicas, checkRankings } = require('./audit-chequeos-3.js');
+const { checkArchivoNoEsLoQueDice, checkCambioDeFormatoSinNota, checkCarpetasClubes, checkClubIds, checkColisionSourcing, checkCorreccionesSinMotivo, checkFuentesPublicas, checkRankings } = require('./audit-chequeos-3.js');
 const { checkCategorizacion, checkEscala, checkEtiquetaSinRevisar, checkFxProcedencia, checkGestiones, checkImportsSinExport, checkLigaDosFuentes, checkPagoSobreDeterminista, checkRevisionTaxonomia, checkTodo } = require('./audit-chequeos-4.js');
 const { checkComaComida, checkDatosJson, checkDeportes, checkDudasResueltas, checkEjercicioSinRastro, checkHigiene, checkMedicionesSinDestino, checkNombresSinDefinir, checkRarezas, checkRegistrosSinLector, checkReglasCategoria, checkRevisionPropiaPendiente } = require('./audit-chequeos-5.js');
 
@@ -214,6 +214,7 @@ function main() {
   checkCajaDeudaProporcion(api);
   checkFxProcedencia(api);
   checkFuentesPublicas(api);
+  checkCambioDeFormatoSinNota(api);
   checkClubIds(api);
   checkCarpetasClubes();
   checkArchivoNoEsLoQueDice();

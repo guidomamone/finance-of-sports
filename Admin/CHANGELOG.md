@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1041 — aviso de cambio de formato del balance, y fos cerrar ya no borra el punto a medias [446 · cambio-formato.js, cargar-ejercicio.mjs, audit-chequeos-3.js, audit.js, cerrar.mjs]
+
+- `tools/cambio-formato.js`: ingresos de UNA línea `lump_football_operations` contra más de una (o al revés) respecto del año inmediatamente anterior cargado. `cargar.mjs` lo avisa en la propuesta con el texto sugerido de la `publicNote` (SønderjyskE 2025 lo dispara); `audit.js` da el P3 `cambio-de-formato-sin-nota` (hoy 23 club-años, punto 447).
+- `fos cerrar --cerrar` borra el punto del TODO al FINAL y solo si ningún chequeo falló (antes lo borraba primero y repetir el comando daba «no existe el punto»); repetir sobre un punto ya cerrado sigue con los demás chequeos.
+- Verificado a mano (446): cargar en ensayo sobre SønderjyskE 2025 (--reemplazar) imprime el aviso con el texto sugerido; audit.js da cambio-de-formato-sin-nota (23 club-años, punto 447); lote completo idéntico salvo ese aviso
+- Medición: `medir pipeline` hasta el lote completo (1004 documentos; `audit`, `cargar`, `escribir`): idéntico salvo el aviso nuevo `cambio-de-formato-sin-nota`, explicado. Veredicto de infraestructura (`patron --sin-documentos`). Sin revisión independiente.
+
 ## Versión 1040 — fos patron --revision y el P4 revision-propia-pendiente [436 · patron.mjs, probar-patron.mjs, audit.js, audit-chequeos-5.js]
 
 - `patron --revision propia|auditora` anota el campo `revision` en `auditoria-proceso.jsonl`. `audit.js` da el P4 `revision-propia-pendiente` con los cambios `propia` que ninguna línea `auditora` posterior cubre (mismas tools); `revisionesPendientes` en `audit-chequeos-5.js`, acción «nada» en `audit-acciones.json`.

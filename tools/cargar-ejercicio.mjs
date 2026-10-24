@@ -4,6 +4,7 @@
 // ============================================================================
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve, basename, dirname } from 'node:path';
+import { cambioDeFormato, anioAnterior, textoSugerido } from './cambio-formato.js';
 import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs';
 import { agregarCaso, respuestaPorDetalle, ajusteDe, bolsonDeDeporte, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, FINANCIERO_RE, HOY, norm, r6 } from './cargar.mjs';
 
@@ -206,6 +207,11 @@ export function faseEjercicio(ctx) {
     fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: meta.profitOnPlayerSales || 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(Object.keys(incluidoEn).length ? { incluidoEn } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
     source: sourceId ? { id: sourceId, clubId, title: `${club.name || club.displayName} — ${basename(pdf, '.pdf')} (ejercicio ${year})`, type: campo('reportType').valor || 'official_balance_sheet', reliability: 'primary', documento: pdf, note: `Cargado por tools/cargar.mjs (${HOY}) desde la transcripción ${e.md}; categorías del pipeline (${cj.modelo || 'Jev/Claude'}). Perímetro: ${perimetro || '?'}.` } : null,
   };
+  // CAMBIO DE FORMATO del balance (resumido: ingresos en una sola línea sin desglosar; completo: desglosados) contra el año anterior cargado: la nota pública
+  // que lo explica al visitante no se olvida. Solo avisa; audit.js (`cambio-de-formato-sin-nota`) marca el año que quedó sin publicNote.
+  { const por = ((sitio.generic || {})[clubId] || {}).revenueLinesByYear; const ant = anioAnterior(por, year);
+    const cambio = ant != null ? cambioDeFormato(por[ant], P.ejercicio.revenueLines) : null;
+    if (cambio) P.avisos.push(`cambio de formato del balance (${ant} → ${year}, ${cambio.replace('-a-', ' a ')}): agregá una publicNote a la fuente del año (node tools/fuente.mjs <clubId> <sourceId> --nota "…" --escribir). Texto sugerido: «${textoSugerido(cambio)}»`); }
   // PRESIDENTES (decisión de Guido: "cuando se hace el alta se pregunta si hay socios, consolidado,
   // etc.; acá debería agregarse lo de presidentes"). Si ninguna gestión confirmada de data/gestiones/<país>.js cubre el cierre de este año,
   // va un caso a la cola (lo contesta el subagente de Guido, como las preguntas de perfil). NO FRENA: el año se carga igual, sin presidente.

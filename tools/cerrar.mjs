@@ -40,15 +40,14 @@ const antes = auditoria();
 const VERIFICADO = A.includes('--verificado') ? String(A[A.indexOf('--verificado') + 1] || '').trim() : '';
 const lineaVerificar = () => (node(['tools/todo.mjs', '--verificar']).stdout || '').split('\n').find((x) => new RegExp(`\\b${id} ·`).test(x));
 const FALTA_VERIFICADO = `su «Verificar:» es manual: pasá --verificado "qué se miró y dónde quedó" (queda en el CHANGELOG)`;
+// El punto se borra al FINAL (cerrarPunto, más abajo) y solo si ningún otro chequeo falló: antes se borraba primero y un ✗ posterior dejaba el punto
+// cerrado a medias, y repetir el comando daba «no existe el punto».
+let borrarAlFinal = false;
 if (!ENSAYO) {
   const manual = /manual/.test(lineaVerificar() || '') && !A.includes('--forzar');
   if (manual && !VERIFICADO) mal(`TODO: no se cerró el punto ${id}: ${FALTA_VERIFICADO}`);
-  else {
-    const c = node(['tools/todo.mjs', '--cerrar', id, ...(A.includes('--forzar') ? ['--forzar'] : [])]);
-    const txt = (c.stdout + c.stderr).trim();
-    if (/^Cerrado /m.test(txt)) ok(`TODO: ${txt.split('\n')[0]}`);
-    else mal(`TODO: no se cerró el punto ${id}: ${txt.split('\n').slice(0, 3).join(' | ')}`);
-  }
+  else if (!lineaVerificar()) aviso(`TODO: el punto ${id} ya no está en el TODO (¿ya cerrado?): se siguen los demás chequeos`);
+  else borrarAlFinal = true;
 } else {
   const l = lineaVerificar();
   if (!l) mal(`TODO: no existe el punto ${id}`);
@@ -58,7 +57,12 @@ if (!ENSAYO) {
 }
 
 // 1b. la propuesta del punto (Admin/propuestas/<id>-*.md) cumplió su función al cerrarlo: pasa a Admin/Archive/propuestas/ con un banner (lo que servía ya está en PIPELINE, HALLAZGOS o el CHANGELOG)
-if (!ENSAYO) {
+function cerrarPunto() {
+  const c = node(['tools/todo.mjs', '--cerrar', id, ...(A.includes('--forzar') ? ['--forzar'] : [])]);
+  const txt = (c.stdout + c.stderr).trim();
+  if (!/^Cerrado /m.test(txt)) { mal(`TODO: no se cerró el punto ${id}: ${txt.split('\n').slice(0, 3).join(' | ')}`); return; }
+  ok(`TODO: ${txt.split('\n')[0]}`);
+  node(['tools/indice-md.mjs', '--escribir']); // el TODO cambió: el índice de los .md se vuelve a escribir
   const dir = resolve(ROOT, 'Admin', 'propuestas'); let movidas = [];
   try { movidas = readdirSync(dir).filter((f) => f.startsWith(`${id}-`) && f.endsWith('.md')); } catch { /* sin carpeta */ }
   if (movidas.length) {
@@ -142,6 +146,11 @@ if (tocoTools) {
   let pide = ''; try { pide = execFileSync('node', ['tools/que-pide.mjs'], { cwd: ROOT, encoding: 'utf8' }); } catch (e) { pide = e.stdout || ''; }
   for (const l of pide.split('\n').filter((x) => x.startsWith('✗'))) mal(`el commit va a pedir: ${l.slice(2)}`);
   for (const l of pide.split('\n').filter((x) => /comentario con contenido/.test(x))) aviso(`comentarios: ${l.slice(2)}`);
+}
+
+if (borrarAlFinal) {
+  if (faltan) aviso(`el punto ${id} NO se borró del TODO porque falta lo de arriba (✗): arreglalo y repetí el comando`);
+  else cerrarPunto();
 }
 
 console.log(`\n${lineas.join('\n')}\n`);
