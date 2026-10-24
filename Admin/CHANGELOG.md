@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1040 — fos patron --revision y el P4 revision-propia-pendiente [436 · patron.mjs, probar-patron.mjs, audit.js, audit-chequeos-5.js]
+
+- `patron --revision propia|auditora` anota el campo `revision` en `auditoria-proceso.jsonl`. `audit.js` da el P4 `revision-propia-pendiente` con los cambios `propia` que ninguna línea `auditora` posterior cubre (mismas tools); `revisionesPendientes` en `audit-chequeos-5.js`, acción «nada» en `audit-acciones.json`.
+- `probar-patron.mjs`: 3 casos nuevos (queda en el registro, valor inválido, qué cubre una auditora posterior). Esta misma entrada es la primera `propia`: aparece en el P4 hasta que la Auditora la revise.
+- Verificado a mano (436): patron --revision propia queda en el registro; audit.js da el P4 revision-propia-pendiente (aparece con la línea de este cambio); 3 casos nuevos en probar-patron.mjs, todos ok
+- Medición: `medir pipeline` (audit, lote chico): idéntico, el aviso no dispara sin líneas `propia`. Veredicto de infraestructura (`patron --sin-documentos`). Sin revisión independiente.
+
 ## Versión 1039 — fos patron --en-xhtml: el conjunto real de un cambio al lector de XHTML [439 · patron.mjs, probar-patron.mjs]
 
 - `node tools/fos.mjs patron --en-xhtml "<regex>"` cuenta documentos y clubes sobre los `Clubes/**/*.xhtml` con el mismo umbral y el mismo veredicto; el registro anota el comando con `--en-xhtml`. Sobre el patrón del 413 (`top:[0-9.]+em`) cuenta hoy 18 documentos de 5 clubes.

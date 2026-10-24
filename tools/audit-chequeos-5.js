@@ -269,4 +269,13 @@ function checkNombresSinDefinir() {
   add('P3', 'nombre-sin-definir', `${h.length} nombre(s) usados sin definir en tools/: ${h.slice(0, 4).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}. Corré: node tools/fos.mjs indefinidos`);
 }
 
-module.exports = { checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };
+// revision-propia-pendiente: los cambios con `revision: propia` en Admin/registros/auditoria-proceso.jsonl (los revisó la sesión que los hizo) que ninguna línea
+// posterior con `revision: auditora` cubre (mismas tools). P3 de acción «nada» (sale como P4): la pregunta «¿qué falta revisar?» se contesta con node tools/audit.js --json.
+const revisionesPendientes = (lineas) => lineas.filter((l, i) => l.revision === 'propia' && l.tools && !lineas.slice(i + 1).some(r => r.revision === 'auditora' && r.tools && Object.keys(l.tools).every(n => n in r.tools)));
+function checkRevisionPropiaPendiente() {
+  let lineas; try { lineas = fs.readFileSync(path.join(ROOT, 'Admin', 'registros', 'auditoria-proceso.jsonl'), 'utf8').split('\n').filter(Boolean).map(l => JSON.parse(l)); } catch { return; }
+  const pendientes = revisionesPendientes(lineas);
+  if (pendientes.length) add('P3', 'revision-propia-pendiente', `${pendientes.length} cambio(s) revisados solo por la sesión que los hizo, sin la revisión de la Auditora:${pendientes.slice(-3).map(l => `${l.fecha} ${String(l.cambio).slice(0, 50)}`).join(' · ')}. La Auditora los revisa y anota patron --revision auditora`);
+}
+
+module.exports = { revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };

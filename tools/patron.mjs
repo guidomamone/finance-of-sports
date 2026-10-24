@@ -5,6 +5,7 @@
 // USO:
 //   node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" [--rango A..B] [--tools a.mjs,b.mjs] [--sesion unica] [--motivo "…"] [--escribir]
 //   --en-xhtml "<regex>"   en vez de --patron, para un cambio al lector de XHTML: cuenta los Clubes/**/*.xhtml (documentos y clubes) con la misma regla
+//   --revision propia|auditora   anota en el registro (campo `revision`) quién revisó el cambio; audit.js cuenta las `propia` sin una `auditora` posterior que cubra las mismas tools (P4 `revision-propia-pendiente`)
 //   --en <carpeta>   busca el patrón en los .js y .mjs de esa carpeta (p. ej. tools, para una condición nueva de audit.js) en vez de en Clubes/**/*.md
 //   --sin-documentos "<por qué no lee documentos>"   en vez de --patron, para un cambio de infraestructura de una tool (cuándo escribir un archivo, cómo se mide, cómo se cierra un punto): vale si el código agregado
 //                    no nombra clubes, años ni rutas de Clubes/ y la medición es idéntica o explicada; el registro lleva el motivo (`sinDocumentos`) para que la Auditora lo revise
@@ -146,6 +147,8 @@ function principal() {
     console.log(cambioDeCodigo(v('--exento').split(',').filter(Boolean), { destino: A.includes('--indice') ? 'indice' : null }).hayCodigo ? 'no' : 'si');
     return;
   }
+  const revision = v('--revision'); // quién revisó el cambio: «propia» (la sesión que lo hizo, sin revisión independiente) o «auditora» (otra sesión); queda en el registro
+  if (A.includes('--revision') && !['propia', 'auditora'].includes(revision)) { console.error('--revision es «propia» (la sesión que hizo el cambio) o «auditora» (una revisión independiente)'); process.exit(1); }
   const enXhtml = v('--en-xhtml'); // el patrón se ve en el .xhtml del documento (lectores de XHTML), no en su .md
   if (A.includes('--en-xhtml') && (!enXhtml || enXhtml.startsWith('--'))) { console.error('--en-xhtml pide la regex que se busca en los .xhtml de Clubes/'); process.exit(1); }
   const patron = enXhtml ?? v('--patron'), cambio = v('--cambio'), rango = v('--rango'), sinDoc = v('--sin-documentos');
@@ -192,7 +195,7 @@ function principal() {
       fecha: new Date().toISOString().slice(0, 10), sesion: v('--sesion') || 'unica', cambio,
       commit: rango ? rango : 'sin commit', veredicto: veredicto === 'GENERAL' ? 'GENERAL: SE COMMITEA' : 'RECHAZADA',
       patron: cont ? `/${patron}/im` : null, comando: cont ? `node tools/patron.mjs ${enXhtml !== undefined ? '--en-xhtml' : '--patron'} ${JSON.stringify(patron)}` : `node tools/patron.mjs --sin-documentos ${JSON.stringify(sinDoc)}`, documentos: cont?.documentos ?? null, clubes: cont?.clubes ?? null,
-      ...(sinDoc ? { sinDocumentos: sinDoc } : {}),
+      ...(sinDoc ? { sinDocumentos: sinDoc } : {}), ...(revision ? { revision } : {}),
       antes: med?.linea ? `medición ${med.linea.fecha}` : 'sin código', despues: med?.linea ? `${med.linea.resultado} (lote ${med.linea.nivel})` : 'sin código',
       motivo: v('--motivo') ? `${motivo}. ${v('--motivo')}` : motivo, tools: med?.huellas,
     };

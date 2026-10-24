@@ -73,6 +73,15 @@ caso('--en-xhtml bajo el umbral con código cambiado: RECHAZADA (va como ajuste)
 r = patron('--cambio', 'sin regex', '--en-xhtml');
 caso('--en-xhtml sin regex se rechaza con código 1', r.status === 1 && /pide la regex/.test(r.out), r.out);
 
+// --revision propia|auditora queda en el registro, y revisionesPendientes (el P4 de audit.js) lista las propias que una auditora posterior no cubre
+r = patron('--cambio', 'otro valor', '--sin-documentos', MOTIVO, '--revision', 'propia', '--escribir');
+caso('--revision propia queda en el registro', /Anotado/.test(r.out) && registro().at(-1)?.revision === 'propia', r.out.slice(-300));
+r = patron('--cambio', 'otro valor', '--sin-documentos', MOTIVO, '--revision', 'nadie');
+caso('--revision con otro valor se rechaza con código 1', r.status === 1 && /propia/.test(r.out), r.out);
+const { revisionesPendientes } = (await import('node:module')).createRequire(import.meta.url)('./audit-chequeos-5.js');
+const reg = [{ revision: 'propia', tools: { 'a.mjs': 'h1' }, cambio: 'uno' }, { revision: 'propia', tools: { 'b.mjs': 'h2' }, cambio: 'dos' }, { cambio: 'sin campo', tools: { 'b.mjs': 'h2' } }, { revision: 'auditora', tools: { 'a.mjs': 'h3' }, cambio: 'rev' }, { revision: 'propia', tools: { 'a.mjs': 'h4' }, cambio: 'tres' }];
+caso('revisionesPendientes: una auditora posterior cubre las mismas tools; las líneas sin campo no cuentan', revisionesPendientes(reg).map((x) => x.cambio).join() === 'dos,tres', JSON.stringify(revisionesPendientes(reg)));
+
 rmSync(T, { recursive: true, force: true });
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');
 process.exit(mal ? 1 : 0);
