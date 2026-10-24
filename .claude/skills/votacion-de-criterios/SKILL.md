@@ -49,15 +49,19 @@ Un criterio de más arriba pesa más que todos los de abajo juntos.
 ## 3. Cómo se vota
 
 - Tres subagentes Sonnet, independientes: ninguno ve el voto de los otros. Solo Read, Grep y Write; se les pasan las rutas.
-- A cada uno: el caso (documento, línea del `.md`, qué está en duda, las opciones), esta escala y las rutas de la sección 1.
-- Cada uno devuelve: la opción elegida; para cada criterio de la escala, a favor, en contra o no aplica, con la cita (archivo y línea, o
-  club-año); y en una línea, qué años ya cargados cambiarían.
+- El caso se arma con `node tools/fos.mjs votacion nueva` (hechos, cuánto mueve, lista fija de qué abrir y el formato del voto); a cada votante se le pasa ese archivo, esta escala y las rutas de la sección 1.
+- Cada uno devuelve su voto en JSON, un archivo por votante, con la forma que trae el caso: la opción elegida; para cada criterio de la escala, a favor, en contra
+  o no aplica, con la cita `{ref, texto, mismo_hecho}` (`ruta:línea` o `club-id@año`, y un fragmento literal de esa línea o ese ejercicio); qué años ya cargados
+  cambiarían; y las rutas de la lista que no abrió (`no_abri`). Si el caso ya tiene un precedente del mismo hecho verificado
+  (`--precedente "ref|texto"`), vota un solo votante, que confirma que es el mismo hecho; si no lo confirma, votan tres.
 
 ## 4. Cómo se cuenta
 
 - **Antes de contar: ¿cuánto mueve?** Para cada opción, medí cuánto cambia el dato frente a la otra: la diferencia, sobre el total de
   ingresos o de gastos del año. Si es 1% o menos y no le cambia el signo al resultado, no se vota: se elige la opción más fiel al documento
   (criterio 5), se anota con la medida y se carga. Si es más, votan tres, para que siempre haya desempate.
+- Los votos se cuentan con `node tools/fos.mjs votacion contar <voto1.json> <voto2.json> <voto3.json> --caso "…" --escribir`, que antes verifica las citas
+  (`node tools/fos.mjs votacion citas …`): un precedente cuya cita no se verifica, o que no dice `mismo_hecho: true`, no suma.
 - **Decidido:** 3 a 0, o 2 a 1 si el voto en minoría no tiene ningún precedente 1 a 3 que sea el mismo hecho a su favor.
 - **A Guido:** empate, un 2 a 1 con un precedente 1 a 3 que sea el mismo hecho en minoría, o una opción que cambia más de 10 años ya cargados. Se le manda a la
   principal en un solo mensaje: el caso, las opciones, los tres votos con sus citas y la recomendación.
