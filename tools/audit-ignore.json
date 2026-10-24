@@ -528,7 +528,7 @@
  },
  {
   "code": "liga-sin-verificar",
-  "match": "24 de 1338 filas",
+  "match": "24 de 13",
   "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Filas viejas de data/club-leagues con null; se verifican contra la página de temporada al tocar cada club (tools/lookup-club-league.js).",
   "revisar": "2026-12-23"
  },

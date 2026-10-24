@@ -18,7 +18,7 @@ deja de ser cierto, se reemplaza, no se apila una línea nueva al lado de la vie
 ---
 
 ## Objetivo del proyecto
-<!-- roles: pantallas, contenido, deploy, orden -->
+<!-- roles: pantallas, contenido, deploy -->
 
 Un sitio de finanzas de clubes de fútbol (multi-club), pensado para hinchas, periodistas y
 creadores de contenido. **Todo el sitio es gratis. Licencia (decisión de Guido): el Formato simplificado bajo CC BY-NC 4.0 (libre citando,
@@ -106,13 +106,13 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   Finanzas". Mockup: `Prototyping/Comparar/mockup-23.html`.
 
 ### Techo del modelo (no es una tarea)
-<!-- roles: pantallas, orden -->
+<!-- roles: pantallas -->
 
 - La taxonomía es de fútbol (`player_sales`, `wages_squad`, `youth_football`) y las pestañas Resultados/Títulos y
   `gestionesByClub` también. Un club de otro deporte entra hoy con media taxonomía vacía y 2 pestañas sin sentido.
 
 ### Sitio, publicación y analytics
-<!-- roles: deploy, orden, auditora -->
+<!-- roles: deploy, auditora -->
 
 - SITIO: estático puro (HTML + CSS + JS, Chart.js por CDN), sin backend, sin build step, servido desde la raíz. Deploy continuo en
   Netlify al pushear a `main` del repo de GitHub. Dominio propio: **financeofsports.com**.

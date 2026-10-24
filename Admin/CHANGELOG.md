@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1072 — 434: qué se lee en vano al arrancar; `arranque orden` de 9,9 a 4,5 KB [434]
+
+- Informe `Admin/mediciones/434-arranque-en-vano.md` (KB por rol y por sesión). `ESTADO.md`: el rol `orden` sale de «Objetivo», «Techo del modelo» y «Sitio, publicación y analytics». Dos propuestas que tocan texto que Guido lee (partir la skill de arranque, recortar «Al empezar» de CLAUDE.md) quedan en el informe, sin hacer.
+- Verificado a mano (434): informe Admin/mediciones/434-arranque-en-vano.md con Conclusión y Destino; arranque orden medido de 9,9 a 4,5 KB tras el cambio de marcas en ESTADO.md
+- Medición: solo documentos.
+
 ## Versión 1071 — 417 (parte): audit.js --leyenda [417 · audit.js]
 
 - `node tools/audit.js --leyenda` imprime los cinco niveles con su definición, los hallazgos que tienen hoy y los códigos que los emiten. Del 417 quedan la skill y el chequeo de severidades, P1 y los contrastes externos (de Guido): quedó escrito en el punto.
