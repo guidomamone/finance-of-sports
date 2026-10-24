@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1025 — Prueba de partir-fases y lexico-js [429 · probar-partir-fases.mjs]
+
+- `node tools/fos.mjs probar partir-fases`: parte una función de juguete en tres fases y compara con la entera (3 entradas). Casos: spread y `function*` como uso, `let` entre fases a `ctx.N`, plantilla multilínea con `indentar` (no se sangra), `await`, salida temprana, `--proxy`, `--mapa`, y los rechazos (corte en medio de un bloque, `return` sin `salidaTemprana`). Registrada en `fos-comandos.json` y `pipeline-tools.json`.
+- Medición: 12 casos ok; no es una tool del pipeline.
+
 ## Versión 1024 — fos mapa: el fin de una función por sus llaves reales, y --corto [428 · mapa-codigo.mjs]
 
 - Si la primera línea de una función deja un bloque abierto, `fos mapa` busca su cierre con la profundidad de llaves de `lexico-js.mjs` (strings, plantillas y regex incluidos) en vez de la sangría: un cuerpo sin sangría ya no da rangos de 3 a 8 líneas ni «?». `--corto` omite los tramos «·» de las funciones largas.

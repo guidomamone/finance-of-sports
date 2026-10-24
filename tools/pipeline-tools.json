@@ -151,6 +151,7 @@
   "historia.mjs": "orden: lista la historia (fechas, to-do N, Versión N) de los documentos de criterio con su frase; solo lee",
   "lecturas.mjs": "orden: cuenta lo que leen las sesiones (tokens por documento) leyendo los transcripts; no toca el pipeline",
   "reemplazar.mjs": "orden: reemplazos en varios archivos (el mismo texto, o una lista de cambios exactos por línea), con ensayo por defecto",
+  "probar-partir-fases.mjs": "prueba: partir-fases.mjs y lexico-js.mjs sobre una función de juguete",
   "probar-reemplazar.mjs": "prueba: reemplazar.mjs en un repo de juguete",
   "muestra.mjs": "orden: una muestra repartida de las líneas que cumplen un patrón (solo lee)",
   "que-pide.mjs": "orden: dice qué va a pedir el commit de lo cambiado (clasificación, medición, veredicto, commit aparte de una skill)",
