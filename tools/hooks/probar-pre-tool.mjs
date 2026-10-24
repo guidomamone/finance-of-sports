@@ -55,6 +55,9 @@ function casosMedicion() {
 const casos = [
   ['skill: texto que nadie propuso', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: 'Un texto que nadie propuso nunca en ningún archivo de propuestas.' } }, 'deny', 'no está en ningún archivo', 'varias-sesiones'],
   ['skill: texto propuesto y commiteado', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: '**Un club extinto o refundado vale** si sus balances siguen publicados: se bajan y se documentan como los de cualquier otro.' } }, 'ask', 'Admin/propuestas/', 'varias-sesiones'],
+  ['lote: Write sobre un lote que existe se rechaza y dice fos lote-nuevo', { tool_name: 'Write', tool_input: { file_path: `${raiz}/Admin/lotes/lote-100.txt`, content: 'x' } }, 'deny', 'lote-nuevo'],
+  ['lote: Write de un lote que no existe pasa', { tool_name: 'Write', tool_input: { file_path: `${raiz}/Admin/lotes/lote-99999.txt`, content: 'x' } }, 'pasa'],
+  ['lote: Edit de un lote que existe pasa', { tool_name: 'Edit', tool_input: { file_path: `${raiz}/Admin/lotes/lote-100.txt`, old_string: 'a', new_string: 'b' } }, 'pasa'],
   ['tmp: Write a /private/tmp suelto', { tool_name: 'Write', tool_input: { file_path: '/private/tmp/claude-501/-Users-x-proyecto/prueba.mjs', content: 'x' } }, 'deny', 'archivo suelto'],
   ['tmp: Write a /tmp', { tool_name: 'Write', tool_input: { file_path: '/tmp/prueba.txt', content: 'x' } }, 'deny', 'archivo suelto'],
   ['tmp: Write al scratchpad de la sesión', { tool_name: 'Write', tool_input: { file_path: '/private/tmp/claude-501/-Users-x-proyecto/0469c398-7116-46dd/scratchpad/prueba.mjs', content: 'x' } }, 'pasa'],

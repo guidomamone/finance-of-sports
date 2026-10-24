@@ -174,6 +174,7 @@
   "worktree.mjs": "sesión: worktrees (modo de varias sesiones)",
   "mudar-carpetas.mjs": "sesión: mueve carpetas de Clubes/ sin borrar",
   "mapa-codigo.mjs": "sesión: mapa de un archivo de código (solo lee)",
+ "lote-nuevo.mjs": "sesión: crea la próxima lista Admin/lotes/lote-N.txt (no toca datos ni el pipeline)",
   "medir-pipeline.mjs": "medidor: mide los cambios al pipeline",
   "medir-personal-ensayos.mjs": "medidor: las opciones --personal de caja-deuda en ensayo",
   "medir-cargar.mjs": "medidor: ensayo de cargar en cada documento",

@@ -5,6 +5,7 @@
   { "cmd": "estado", "script": "estado.mjs", "que": "tablero del inventario: dónde está cada PDF y qué le falta", "cuando": "para saber qué cargar" },
   { "cmd": "modo", "script": "modo.mjs", "que": "dice o cambia el modo de trabajo (una sesión / varias)", "cuando": "si Guido cambia de modo" },
   { "cmd": "indice-md", "script": "indice-md.mjs", "que": "índice de los .md y huérfanos", "cuando": "al crear, mover o borrar un .md" },
+  { "cmd": "lote-nuevo", "script": "lote-nuevo.mjs", "que": "crea la próxima lista Admin/lotes/lote-N.txt con su encabezado (--numero: solo el número libre)", "cuando": "al armar una lista de lote nueva, en vez de elegir el número a ojo" },
   { "cmd": "archivar", "script": "archivar.mjs", "que": "mueve un documento cerrado a Admin/Archive/ y deja el índice al día", "cuando": "al cerrar algo que ya no se lee" },
   { "cmd": "audit", "script": "audit.js", "que": "auditoría determinista de todo el sitio (P0 a P3)", "cuando": "antes de cada commit con cambios publicables" },
   { "cmd": "silenciar", "script": "silenciar.mjs", "que": "silencia un hallazgo de audit.js con verificación y motivo", "cuando": "un hallazgo ya mirado contra el documento" },

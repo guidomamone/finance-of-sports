@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1020 — `fos lote-nuevo` y el hook no deja pisar un lote [424 · lote-nuevo.mjs, pre-tool.mjs, probar-pre-tool.mjs]
+
+- `node tools/fos.mjs lote-nuevo "<motivo>"` crea `Admin/lotes/lote-N.txt` (N = el más alto de `Admin/lotes/` y `Admin/Archive/lotes/` más uno; `--numero` solo lo dice; nunca sobre uno que existe). Registrada en `fos-comandos.json` y clasificada fuera del pipeline.
+- Chequeo `lote-existente` del hook: un Write sobre un `Admin/lotes/lote-*.txt` que existe se rechaza y manda a `fos lote-nuevo`; Edit y un lote nuevo pasan.
+- Medición: `probar-pre-tool.mjs` 67 casos ok (3 nuevos); el comando probado a mano (crea 144, contenido correcto, borrado). No toca el pipeline.
+
 ## Versión 1019 — Archivados los lotes 133, 134, 140 y 141 [432]
 
 - Los cuatro (británicos del 356, ya cargados o devueltos a otros puntos) pasan a `Admin/Archive/lotes/` con `fos archivar`; solo el propio punto del TODO los citaba. Un ensayo de lote ya no avisa «sigue activa» por ellos (los demás avisos son de otras listas).

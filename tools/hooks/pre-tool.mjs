@@ -22,6 +22,7 @@
 //   worktree-sin-permission-mode [varias]  (ask) start_session con permission_mode distinto de auto.
 //   memoria-no-es-regla      (ask) escribir en la memoria de una sesión un archivo type feedback o project: una regla de trabajo va a una convención,
 //                            una skill o un chequeo; user y reference pasan.
+//   lote-existente           (deny) un Write sobre un Admin/lotes/lote-NN.txt que ya existe: dice `fos lote-nuevo` (el próximo número libre).
 //   comando-que-edita        (ask) sed -i, perl -i o python por Bash que escriben: usá Edit o Write. Cada disparo se anota en
 //                            Admin/registros/.hooks-disparos.jsonl (gitignoreado) para medir cuántas veces pasa antes de pensar en deny.
 //                            Las herramientas de sesiones (archivar, iniciar, cambiar modelo) necesitan su matcher en .claude/settings.json.
@@ -295,6 +296,14 @@ function escrituraEnTmpSuelto() {
   decidir('deny', `Escribir en ${ruta} deja un archivo suelto fuera del proyecto. Usá la carpeta scratchpad de esta sesión (/private/tmp/claude-<uid>/<proyecto>/<sesión>/scratchpad/, la que da el sistema) o una ruta del proyecto.`);
 }
 
+// lote-existente (deny): un Write sobre un Admin/lotes/lote-NN.txt que ya existe lo pisa (pasó con el lote del 413). El número libre lo da `fos lote-nuevo`.
+function loteExistente() {
+  if (herramienta !== 'Write') return;
+  const ruta = rutaEditada();
+  if (!/\/Admin\/lotes\/lote-[^/]+\.txt$/.test(ruta) || !existsSync(ruta)) return;
+  decidir('deny', `${ruta} ya existe: escribirlo lo pisa. Para una lista nueva: node tools/fos.mjs lote-nuevo "<motivo>" (crea el próximo número libre); para sumarle rutas a esta, Edit.`);
+}
+
 // memoria-no-es-regla: una regla de trabajo no vive en la memoria de una sesión. Una preferencia de trato (type user o reference) sí.
 function memoriaNoEsRegla() {
   if (!EDITA.includes(herramienta)) return;
@@ -444,6 +453,7 @@ subagenteConReglaDeComandos();
 if (VARIAS) { archivarConOk(); modeloOpusConOk(); worktreeSinPermissionMode(); }
 memoriaNoEsRegla();
 escrituraEnTmpSuelto();
+loteExistente();
 if (VARIAS) skillsConOk(cmd);
 if (herramienta === 'Bash') comandoQueEdita(cmd);
 pushConOk(cmd);
