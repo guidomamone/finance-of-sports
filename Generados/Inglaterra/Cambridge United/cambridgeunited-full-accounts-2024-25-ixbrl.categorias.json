@@ -1,0 +1,80 @@
+{
+ "md": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.md",
+ "club": "cambridge-united",
+ "year": 2025,
+ "generatedAt": "2026-10-24T14:51:07.590Z",
+ "rubrosHuella": "2d5dad32a603f54d4e6fca0dbb4c0618b7d40dea",
+ "jevHuella": "1fb1168a5326e467ed92e52cb1657b76a1e917ed",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0092812,
+ "rubros": [
+  {
+   "label": "Football operations",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Operaciones futbolísticas",
+   "page": 22,
+   "pendiente": true,
+   "jev": "lump_football_operations",
+   "jevConf": 0.87,
+   "escalon": 2,
+   "categoria": "lump_football_operations",
+   "confianza": 0.7,
+   "motivo": "Bolsón de fútbol sin desglosar por fuente en la nota de turnover."
+  },
+  {
+   "label": "Business operations",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Operaciones comerciales",
+   "page": 22,
+   "pendiente": true,
+   "jev": "sponsorship_commercial",
+   "jevConf": 0.5,
+   "escalon": 2,
+   "categoria": "sponsorship_commercial",
+   "confianza": 0.65,
+   "motivo": "Operaciones comerciales del club: sponsors, hospitalidad, tienda."
+  },
+  {
+   "label": "Other club operations",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Otras operaciones del club",
+   "page": 22,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.93,
+   "categoria": "other_income",
+   "confianza": 0.93
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Coste de ventas",
+   "page": 13,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.61,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.6,
+   "motivo": "Coste de ventas genérico; como afcwimbledon, va a otros gastos."
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 13,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:46:19.387Z",
+ "generado": "2026-10-24T14:50:49.045Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "cola",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,11 +13,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "05206a3",
-  "1dce768",
-  "21b6f2f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -53,8 +49,7 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 2",
-  "duda de localizar que no afecta la carga: Es un cuadro del informe estratégico que probablemente repite el desglose de la nota 3 de Turnover (b33).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar que no afecta la carga: Es un cuadro del informe estratégico que probablemente repite el desglose de la nota 3 de Turnover (b33)."
  ],
  "reintentar": null,
  "reintentado": false,

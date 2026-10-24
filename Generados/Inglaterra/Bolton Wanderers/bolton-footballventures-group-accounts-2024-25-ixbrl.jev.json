@@ -1,0 +1,329 @@
+{
+ "md": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.md",
+ "generatedAt": "2026-10-24T14:50:51.478Z",
+ "rubrosHuella": "279a688df9840c4555d262231d3a4b62d1ca0370",
+ "rubros": [
+  {
+   "label": "Professional football",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "lump_football_operations",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1144
+  },
+  {
+   "label": "Food and beverage",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "stadium_other",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "Corporate sales",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "stadium_other",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Events",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "stadium_other",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "stadium_other",
+     0.83
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Accommodation and leisure",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "stadium_other",
+     0.43
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1121
+  },
+  {
+   "label": "Academy income",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "youth_football",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_football",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1120
+  },
+  {
+   "label": "Retail",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Communications",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "broadcasting",
+     0.3
+    ],
+    [
+     "sponsorship_commercial",
+     0.14
+    ]
+   ],
+   "tokens": 927
+  },
+  {
+   "label": "Fanzone",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "stadium_other",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "stadium_other",
+     0.73
+    ],
+    [
+     "matchday_competition",
+     0.11
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 925
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1101
+  },
+  {
+   "label": "Car parking",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "stadium_other",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "stadium_other",
+     0.72
+    ],
+    [
+     "other_income",
+     0.24
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 924
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "grants_donations",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0.12
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1011
+  }
+ ]
+}

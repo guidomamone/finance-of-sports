@@ -1,0 +1,191 @@
+{
+ "md": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.md",
+ "generatedAt": "2026-10-24T14:50:51.212Z",
+ "rubrosHuella": "e9b72b93ff9b75aa5ceb42c6da79bd4b3b550ecd",
+ "rubros": [
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Profit/ loss on disposal of player registrations",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_sales",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1136
+  },
+  {
+   "label": "Hotel",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "stadium_other",
+     0.14
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 918
+  },
+  {
+   "label": "Rental",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "stadium_other",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "stadium_other",
+     0.76
+    ],
+    [
+     "other_income",
+     0.24
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1140
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1100
+  },
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1151
+  },
+  {
+   "label": "Football",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "lump_football_operations",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.73
+    ],
+    [
+     "matchday_competition",
+     0.23
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1114
+  }
+ ]
+}

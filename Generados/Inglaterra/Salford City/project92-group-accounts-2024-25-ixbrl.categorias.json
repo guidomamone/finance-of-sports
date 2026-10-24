@@ -1,0 +1,90 @@
+{
+ "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
+ "club": "salford-city",
+ "year": 2025,
+ "generatedAt": "2026-10-24T14:51:22.431Z",
+ "rubrosHuella": "19cba26cba9b293bcc2cb46cc37882accb08a56e",
+ "jevHuella": "6c8297a22c6515ae775b5e3cf773706b2ab3e6de",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Día de partido",
+   "page": 28,
+   "pendiente": false,
+   "ya": "matchday_competition",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "matchday_competition",
+   "confianza": 0.99
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Comercial",
+   "page": 28,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 12,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Exceptional item",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Partida excepcional",
+   "page": 12,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Beneficio por enajenación de derechos federativos",
+   "page": 12,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "player_sales",
+   "confianza": 0.97
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 12,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

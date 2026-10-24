@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:46:19.458Z",
+ "generado": "2026-10-24T14:50:49.169Z",
  "scriptHuella": "b0a6fdd2be99",
  "estado": "ok",
  "clubId": null,
@@ -43,8 +43,7 @@
   }
  ],
  "notas": [
-  "duda de extraer que no afecta la carga: L168-L169 son movimientos de resultados acumulados (patrimonio), no partidas de ingresos o gastos del ejercicio.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L168-L169 son movimientos de resultados acumulados (patrimonio), no partidas de ingresos o gastos del ejercicio."
  ],
  "reintentar": null,
  "reintentado": false,

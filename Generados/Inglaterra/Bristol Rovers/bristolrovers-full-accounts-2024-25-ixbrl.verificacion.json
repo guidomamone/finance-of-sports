@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:46:19.430Z",
+ "generado": "2026-10-24T14:50:49.104Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "cola",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -24,11 +24,7 @@
    "fecha": "2026-10-21"
   }
  ],
- "cola": [
-  "7c17126",
-  "b3d8952",
-  "df53e83"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -58,7 +54,8 @@
   }
  ],
  "notas": [
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en bristolrovers-full-accounts-2024-25-ixbrl.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Operating loss\"): aceptar, en bristolrovers-full-accounts-2024-25-ixbrl.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:46:19.782Z",
+ "generado": "2026-10-24T14:50:49.371Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "cola",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,11 +13,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "2e392db",
-  "3cb9648",
-  "6413f8f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -47,8 +43,8 @@
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: b37 muestra un ajuste de 61,000 al resultado 2024 previamente informado.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (escala, \"Turnover\"): aceptar, en project92-group-accounts-2024-25-ixbrl.pdf",
+  "duda de localizar que no afecta la carga: b37 muestra un ajuste de 61,000 al resultado 2024 previamente informado."
  ],
  "reintentar": null,
  "reintentado": false,

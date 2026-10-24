@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Northampton Town/northamptontown-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Northampton Town/northamptontown-full-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:46:19.527Z",
+ "generado": "2026-10-24T14:50:49.197Z",
  "scriptHuella": "b0a6fdd2be99",
  "estado": "ok",
  "clubId": null,
@@ -45,8 +45,7 @@
  "notas": [
   "duda de localizar que no afecta la carga: b33 contiene remuneración de directores (incluida en costes de personal) y conciliación de impuestos, que no desglosan renglones a cargar.",
   "duda de extraer que no afecta la carga: La nota 6 (L494-L497) no indica a qué renglón del estado corresponden los costos de personal.",
-  "duda de extraer que no afecta la carga: Son cargos incluidos en el resultado operativo (L475-L482), no un desglose exhaustivo; la asignación de auditoría a Administrative expenses es supuesta.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Son cargos incluidos en el resultado operativo (L475-L482), no un desglose exhaustivo; la asignación de auditoría a Administrative expenses es supuesta."
  ],
  "reintentar": null,
  "reintentado": false,

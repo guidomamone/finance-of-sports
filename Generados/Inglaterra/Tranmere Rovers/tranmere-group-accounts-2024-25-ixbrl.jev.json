@@ -1,0 +1,122 @@
+{
+ "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
+ "generatedAt": "2026-10-24T14:50:53.224Z",
+ "rubrosHuella": "035a7c9845650b3440f4582908229d9f6f1637b9",
+ "rubros": [
+  {
+   "label": "Football income",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "lump_football_operations",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.76
+    ],
+    [
+     "matchday_competition",
+     0.12
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "wages_squad",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Commercial income",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1103
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "grants_donations",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1118
+  }
+ ]
+}

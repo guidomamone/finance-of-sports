@@ -1,0 +1,92 @@
+{
+ "md": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.md",
+ "club": "peterborough-united",
+ "year": 2025,
+ "generatedAt": "2026-10-24T14:51:13.459Z",
+ "rubrosHuella": "e41e5208b14400b23f7cadcdea4c9aa77987cf4e",
+ "jevHuella": "69227db2e6a43411d72f7e42d7fbd7391269e6f8",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0081732,
+ "rubros": [
+  {
+   "label": "Retail income",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos por ventas minoristas",
+   "page": 21,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "sponsorship_commercial",
+   "confianza": 0.99
+  },
+  {
+   "label": "Football and commercial income",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos deportivos y comerciales",
+   "page": 21,
+   "pendiente": true,
+   "jev": "lump_football_operations",
+   "jevConf": 0.59,
+   "escalon": 2,
+   "categoria": "lump_football_operations",
+   "confianza": 0.6,
+   "motivo": "Bolsón que junta fútbol y comercial sin desglose por fuente; único resto del turnover aparte de tienda."
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 11,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Exceptional item",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Partida excepcional",
+   "page": 11,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Coste de las ventas",
+   "page": 11,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.64,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.55,
+   "motivo": "Coste de ventas sin desglose; ejemplos de otros clubes ingleses lo llevan a other_expenses."
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 11,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "admin_general_expense",
+   "confianza": 0.99
+  }
+ ]
+}

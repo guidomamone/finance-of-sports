@@ -1,0 +1,79 @@
+{
+ "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
+ "club": "tranmere-rovers",
+ "year": 2025,
+ "generatedAt": "2026-10-24T14:51:25.740Z",
+ "rubrosHuella": "035a7c9845650b3440f4582908229d9f6f1637b9",
+ "jevHuella": "d6473571c87b117e79f1767a7dd28f389ea3e35d",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0076932,
+ "rubros": [
+  {
+   "label": "Football income",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos deportivos",
+   "page": 30,
+   "pendiente": true,
+   "jev": "lump_football_operations",
+   "jevConf": 0.74,
+   "escalon": 2,
+   "categoria": "lump_football_operations",
+   "confianza": 0.6,
+   "motivo": "Ingresos de fútbol sin desglose por fuente (entradas, TV, premios) en la nota"
+  },
+  {
+   "label": "Commercial income",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos comerciales",
+   "page": 30,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 12,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Coste de ventas",
+   "page": 12,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.67,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.6,
+   "motivo": "Coste de ventas genérico; como en afcwimbledon-gb va a otros gastos"
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 12,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}
