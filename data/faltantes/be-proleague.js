@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-24';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["be-proleague"] = {
   2013: {"size":16,"cargados":0,"faltan":[{"n":"R.S.C. Anderlecht","e":"sin-buscar"},{"n":"Beerschot A.C.","e":"sin-buscar"},{"n":"Cercle Brugge K.S.V.","id":"cerclebrugge-be","e":"buscado"},{"n":"R. Charleroi S.C.","e":"sin-buscar"},{"n":"Club Brugge KV","id":"clubbrugge-be","e":"en-mano"},{"n":"K.R.C. Genk","e":"sin-buscar"},{"n":"K.A.A. Gent","e":"sin-buscar"},{"n":"K.V. Kortrijk","e":"sin-buscar"},{"n":"Lierse S.K.","e":"sin-buscar"},{"n":"K.S.C. Lokeren Oost-Vlaanderen","e":"sin-buscar"},{"n":"K.V. Mechelen","e":"sin-buscar"},{"n":"R.A.E.C. Mons","e":"sin-buscar"},{"n":"Oud-Heverlee Leuven","id":"ohleuven-be","e":"buscado"},{"n":"Standard Liège","id":"standardliege-be","e":"en-mano"},{"n":"Waasland-Beveren","e":"sin-buscar"},{"n":"S.V. Zulte Waregem","e":"sin-buscar"}]},

@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-24';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["es-segunda"] = {
   2020: {"size":22,"cargados":1,"faltan":[{"n":"Albacete","e":"sin-buscar"},{"n":"Alcorcón","e":"sin-buscar"},{"n":"Almería","e":"buscado"},{"n":"Cádiz","e":"buscado"},{"n":"Deportivo La Coruña","e":"en-mano"},{"n":"Elche","id":"elche-es","e":"buscado"},{"n":"Extremadura","e":"sin-buscar"},{"n":"Fuenlabrada","e":"sin-buscar"},{"n":"Huesca","e":"sin-buscar"},{"n":"Las Palmas","e":"buscado"},{"n":"Lugo","e":"sin-buscar"},{"n":"Málaga","e":"buscado"},{"n":"Mirandés","e":"sin-buscar"},{"n":"Numancia","e":"sin-buscar"},{"n":"Oviedo","id":"realoviedo-es","e":"buscado"},{"n":"Ponferradina","e":"sin-buscar"},{"n":"Racing Santander","e":"buscado"},{"n":"Rayo Vallecano","id":"rayovallecano-es","e":"buscado"},{"n":"Sporting Gijón","e":"sin-buscar"},{"n":"Tenerife","e":"buscado"},{"n":"Zaragoza","e":"buscado"}]},

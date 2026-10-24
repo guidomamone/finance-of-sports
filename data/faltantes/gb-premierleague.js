@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-24';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["gb-premierleague"] = {
   2019: {"size":21,"cargados":1,"faltan":[{"n":"Arsenal","id":"arsenal-gb","e":"en-mano"},{"n":"Bournemouth","id":"bournemouth-gb","e":"en-mano"},{"n":"Brighton & Hove Albion","id":"brighton-gb","e":"en-mano"},{"n":"Burnley","id":"burnley-gb","e":"en-mano"},{"n":"Cardiff City","e":"sin-buscar"},{"n":"Chelsea","id":"chelsea-gb","e":"en-mano"},{"n":"Crystal Palace","id":"crystalpalace-gb","e":"buscado"},{"n":"Everton","id":"everton-gb","e":"buscado"},{"n":"Fulham","id":"fulham-gb","e":"buscado"},{"n":"Huddersfield Town","e":"en-mano"},{"n":"Leicester City","e":"en-mano"},{"n":"Liverpool","id":"liverpool-gb","e":"en-mano"},{"n":"Manchester City","id":"mancity-gb","e":"en-mano"},{"n":"Manchester United","e":"buscado"},{"n":"Southampton","e":"en-mano"},{"n":"Tottenham Hotspur","id":"tottenham-gb","e":"en-mano"},{"n":"Tottenham","id":"tottenham-gb","e":"en-mano"},{"n":"Watford","e":"en-mano"},{"n":"West Ham United","id":"westham-gb","e":"en-mano"},{"n":"Wolverhampton Wanderers","id":"wolves-gb","e":"en-mano"}]},

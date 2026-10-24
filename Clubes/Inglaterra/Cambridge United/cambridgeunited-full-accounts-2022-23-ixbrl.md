@@ -2,6 +2,7 @@
 
 --- pág. 1 ---
 
+Company registration number: 00482197
 |  | ANNUAL REPORT AND FINANCIAL STATEMENTS |
 | --- | --- |
 |  | FOR THE YEAR ENDED 30 JUNE 2023 |

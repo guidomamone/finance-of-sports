@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1009 — Reconvertidos con tablas los .md de 14 clubes británicos (Hibernian, Bolton, …) [356]
+
+- `xhtml-aarsrapport.mjs --rehacer --escribir` sobre Hibernian, Bolton, Bristol Rovers, Cambridge United, Crewe, Northampton, Oxford, Peterborough, Plymouth, Rotherham, Salford, Tranmere, Blackpool y Reading: 55 `.md` (y sus PDF de ancla) pasan de una línea por celda a filas de tabla; ninguno de esos clubes está en el sitio. Pasan las compuertas (a) hechos y (b) páginas. Costo US$ 0.
+- Medición: no es un cambio de tool (datos de `Clubes/`).
+
 ## Versión 1008 — El conversor XHTML lee las celdas puestas por coordenadas como tablas [356 · xhtml-aarsrapport.mjs]
 
 - `xhtml-aarsrapport.mjs`: los informes que Companies House convierte desde un PDF (un `div` por celda con `top:` y `left:`, sin `table`) salían una línea por celda y sin tablas; ahora se juntan las celdas de cada página, se agrupan por `top` y se ordenan por `left`: fila de 2 o más celdas = fila de tabla (con su separador); una sola celda = texto, salvo entre filas de tabla. Una celda sin texto no cuenta. 152 de 317 XHTML tienen estos divs; cambia la lectura de 120 (líneas, aprox. la mitad, y las tablas de 0 a 130-750 por archivo); los hechos iXBRL son los mismos en los 317.

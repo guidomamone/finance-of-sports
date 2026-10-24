@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-24';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["co-primeraA"] = {
   2010: {"size":18,"cargados":0,"faltan":[{"n":"América","id":"americadecali-co","e":"buscado"},{"n":"Atlético Huila","e":"buscado"},{"n":"Atlético Nacional","id":"atlnacional-co","e":"buscado"},{"n":"Boyacá Chicó","id":"boyacachico-co","e":"buscado"},{"n":"Cortuluá","e":"buscado"},{"n":"Cúcuta Deportivo","e":"buscado"},{"n":"Deportes Quindío","e":"buscado"},{"n":"Deportes Tolima","e":"buscado"},{"n":"Deportivo Cali","id":"depcali-co","e":"buscado"},{"n":"Deportivo Pereira","id":"deportivopereira-co","e":"buscado"},{"n":"Envigado","id":"envigado-co","e":"buscado"},{"n":"Independiente Medellín","e":"buscado"},{"n":"Junior","id":"junior-co","e":"buscado"},{"n":"La Equidad","e":"buscado"},{"n":"Millonarios","id":"millonarios-co","e":"buscado"},{"n":"Once Caldas","id":"oncecaldas-co","e":"buscado"},{"n":"Real Cartagena","e":"buscado"},{"n":"Santa Fe","id":"santafe-co","e":"buscado"}]},

@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-23';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-24';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["tr-1lig"] = {
   2009: {"size":18,"cargados":0,"faltan":[{"n":"Adanaspor","e":"sin-buscar"},{"n":"Altay","e":"sin-buscar"},{"n":"Boluspor","e":"sin-buscar"},{"n":"Çaykur Rizespor","e":"buscado"},{"n":"Diyarbakırspor","e":"sin-buscar"},{"n":"Gaziantep B.B.","e":"buscado"},{"n":"Giresunspor","e":"sin-buscar"},{"n":"Güngören Belediyespor","e":"sin-buscar"},{"n":"Kardemir Karabükspor","e":"sin-buscar"},{"n":"Kartalspor","e":"sin-buscar"},{"n":"Karşıyaka","e":"sin-buscar"},{"n":"Kasımpaşa","e":"buscado"},{"n":"Kayseri Erciyesspor","e":"sin-buscar"},{"n":"Malatyaspor","e":"sin-buscar"},{"n":"Manisaspor","e":"sin-buscar"},{"n":"Orduspor","e":"sin-buscar"},{"n":"Sakaryaspor","e":"sin-buscar"},{"n":"Samsunspor","e":"buscado"}]},
