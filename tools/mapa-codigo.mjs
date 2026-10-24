@@ -8,22 +8,28 @@
 // USO (gratis, no escribe nada):
 //   node tools/fos.mjs mapa tools/caja-deuda.mjs          el mapa
 //   node tools/fos.mjs mapa tools/caja-deuda.mjs --buscar personal   solo las funciones y regiones cuyo nombre o título lo contiene
+//   node tools/fos.mjs mapa tools/caja-deuda.mjs --corto             solo funciones y regiones (sin los «·» de los tramos de una función larga)
 //
 // CÓMO: sin parser (no hay acorn en tools/). Una función de nivel superior empieza en la columna 0 (`function`, `async function`, `export …`,
-// `const f = (…) =>`) y termina en el primer renglón que empieza con `}` (o con `)`/`]`/`;` para un `const` de varias líneas). Una región es un
+// `const f = (…) =>`); si su primera línea deja un bloque abierto, termina donde las llaves (las de verdad, con strings, plantillas y regex: lexico-js.mjs)
+// vuelven a su profundidad, tenga o no sangría el cuerpo; si no, en el primer renglón que empieza con `}` (o con `)`/`]`/`;` para un `const` de varias líneas). Una región es un
 // banner (`// =====` o `// -----`) y el primer comentario que le sigue. Los rangos son aproximados: si una función cierra distinto, el mapa
 // la marca con «?». Un archivo que es un script lineal (casi sin funciones) lo dice y lista solo las regiones.
 // ============================================================================
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { lexico } from './lexico-js.mjs';
 
 const A = process.argv.slice(2);
 const archivo = A.find((a) => !a.startsWith('--'));
+const corto = A.includes('--corto');
 const buscar = A.includes('--buscar') ? (A[A.indexOf('--buscar') + 1] || '').toLowerCase() : null;
-if (!archivo) { console.error('Uso: node tools/fos.mjs mapa <archivo> [--buscar <texto>]'); process.exit(1); }
+if (!archivo) { console.error('Uso: node tools/fos.mjs mapa <archivo> [--buscar <texto>] [--corto]'); process.exit(1); }
 
 const texto = readFileSync(resolve(archivo), 'utf8');
 const L = texto.split('\n');
+// Profundidad real de llaves al empezar cada línea (strings, plantillas y regex incluidos): el cierre de una función con el cuerpo sin sangría.
+let prof = null; try { prof = lexico(texto, 1, 0).prof; } catch { /* sin léxico: queda la sangría */ }
 const kb = (Buffer.byteLength(texto) / 1024).toFixed(0);
 
 const DECL = /^(?:export\s+(?:default\s+)?)?(?:async\s+)?function\s*\*?\s*([A-Za-z_$][\w$]*)|^(?:export\s+)?(?:const|let|var)\s+([A-Za-z_$][\w$]*)\s*=\s*(?:async\s*)?(?:\([^)]*\)|[A-Za-z_$][\w$]*)\s*=>|^(?:export\s+)?class\s+([A-Za-z_$][\w$]*)/;
@@ -36,7 +42,9 @@ for (let i = 0; i < L.length; i++) {
   const esFuncion = /function|class/.test(L[i].slice(0, 40)) || /=>/.test(L[i]);
   let fin = i; let seguro = true;
   const unaLinea = /\}\s*;?\s*$/.test(L[i]) && (L[i].match(/\{/g) || []).length === (L[i].match(/\}/g) || []).length && /\{/.test(L[i]);
-  if (!unaLinea && !(/=>/.test(L[i]) && /;\s*$/.test(L[i]) && !/\{\s*$/.test(L[i]))) {
+  const abre = prof && prof[i + 1] > prof[i]; // la declaración deja un bloque abierto: su fin es donde las llaves vuelven a la profundidad de la declaración
+  if (abre) { for (let j = i + 1; j < L.length; j++) if (prof[j + 1] <= prof[i]) { fin = j; break; } }
+  else if (!unaLinea && !(/=>/.test(L[i]) && /;\s*$/.test(L[i]) && !/\{\s*$/.test(L[i]))) {
     seguro = false;
     for (let j = i + 1; j < L.length; j++) {
       if (/^[}\])]/.test(L[j])) { fin = j; seguro = true; break; }
@@ -91,6 +99,6 @@ const items = [...regiones.filter((r) => r.linea > k).map((r) => ({ linea: r.lin
   .filter((x) => coincide(x.txt) || x.interior?.some((s) => coincide(s.titulo))).sort((a, b) => a.linea - b.linea);
 for (const x of items) {
   console.log(`${String(x.linea).padStart(5)}  ${x.txt}`);
-  for (const s of x.interior || []) if (coincide(x.txt) || coincide(s.titulo)) console.log(`${String(s.linea).padStart(5)}      · ${s.titulo}`);
+  if (!corto) for (const s of x.interior || []) if (coincide(x.txt) || coincide(s.titulo)) console.log(`${String(s.linea).padStart(5)}      · ${s.titulo}`);
 }
 if (buscar && !items.length) console.log(`nada coincide con «${buscar}»`);

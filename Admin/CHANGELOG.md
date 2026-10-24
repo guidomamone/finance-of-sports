@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1024 — fos mapa: el fin de una función por sus llaves reales, y --corto [428 · mapa-codigo.mjs]
+
+- Si la primera línea de una función deja un bloque abierto, `fos mapa` busca su cierre con la profundidad de llaves de `lexico-js.mjs` (strings, plantillas y regex incluidos) en vez de la sangría: un cuerpo sin sangría ya no da rangos de 3 a 8 líneas ni «?». `--corto` omite los tramos «·» de las funciones largas.
+- Verificado a mano (428): mapa de los 239 archivos antes/después: solo cambian 3 rangos que estaban mal; prueba con cuerpo sin sangría da 2-9; --corto probado en faltantes-liga.mjs
+- Medición: el mapa de los 239 archivos de `tools/` antes y después: 3 rangos cambian (`escribirPais` 55-64→55-66 en `estadio-sponsor.mjs`, `buildClubIndex` en `generate-club-index.js`, `texto` y `textoIndice` en `generate-sponsors.js`), los tres eran errores del cierre por columna 0 dentro de una plantilla; el resto idéntico, incluidos los 15 «?» de siempre; un archivo de prueba con cuerpo sin sangría da el rango 2-9 (antes 2-7).
+
 ## Versión 1023 — Comentarios de lote*.mjs: de 247 a 120 líneas, sin historia de lotes [427 · lote.mjs, lote-preparar.mjs, lote-leer.mjs, lote-final.mjs]
 
 - `lote.mjs` 30→13 líneas de comentario, `lote-preparar.mjs` 73→36, `lote-leer.mjs` 91→45, `lote-final.mjs` 53→26: se dejó el porqué y la invariante de cada compuerta; se fueron las tablas de costo de la cabecera, los «Caso: lote N» / «to-do N» y los comentarios que repetían el código.
