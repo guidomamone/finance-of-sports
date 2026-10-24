@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-24",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "leeds-gb",
@@ -134,7 +134,6 @@
       "management_id": null,
       "fx": {"ref":"GBP@2020-07-31"},
       "revenue": [
-        {"label":"Turnover","category":"undisclosed","subcategory":"lump_football_operations","amount":54.18398,"disclosure":"aggregated"},
         {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":3.528322,"disclosure":"aggregated"},
         {
           "label": "Gain on disposal of players' registrations",
@@ -142,7 +141,14 @@
           "subcategory": "player_sales",
           "amount": 10.128024,
           "disclosure": "aggregated"
-        }
+        },
+        {"label":"Gate receipts","category":"matchday","subcategory":"matchday_competition","amount":11.435623,"disclosure":"aggregated"},
+        {"label":"Television and broadcasting income","category":"media_rights","subcategory":"broadcasting","amount":1.4815,"disclosure":"aggregated"},
+        {"label":"Merchandising income","category":"commercial","subcategory":"sponsorship_commercial","amount":15.364697,"disclosure":"aggregated"},
+        {"label":"Central distributions","category":"media_rights","subcategory":"broadcasting","amount":7.191511,"disclosure":"aggregated"},
+        {"label":"Other commercial revenue","category":"commercial","subcategory":"sponsorship_commercial","amount":14.435706,"disclosure":"aggregated"},
+        {"label":"Catering income","category":"other_revenue","subcategory":"other_income","amount":3.999313,"disclosure":"aggregated"},
+        {"label":"Educational services","category":"non_sporting_activities","subcategory":"education","amount":0.27563,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-13.885858,"disclosure":"aggregated"},
@@ -175,15 +181,7 @@
           {"label":"Interest receivable and similar income","amount":1.05751},
           {"label":"Interest payable and similar expenses","amount":-2.035446},
           {"label":"Tax on loss","amount":null}
-        ],
-        "no_breakdown": [{"line":"Turnover","side":"revenue","amount":54.18398,"reason":"el documento no desglosa este renglón"}],
-        "included_in": {
-          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        ]
       }
     },
     {

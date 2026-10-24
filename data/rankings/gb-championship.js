@@ -61,8 +61,7 @@ window.RANKINGS["gb-championship"] = {
     clubs: [
       { id:"leeds-gb", revenue:89.047, reportType:"official_balance_sheet",
         sourceId:"leeds-gb-group-accounts-2019-20",
-        mix:[["Venta de Jugadores",13.294],["Fútbol profesional (sin desglosar por la fuente)",71.122],["Otros ingresos",4.631]],
-        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        mix:[["Comercial / Sponsors",39.116],["Estadio",15.01],["Televisión",11.384],["Venta de Jugadores",13.294],["Otras actividades (educación y otros deportes)",0.362],["Otros ingresos",9.881]] },
     ],
   },
   2019: {

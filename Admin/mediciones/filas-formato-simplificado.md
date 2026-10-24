@@ -9,15 +9,15 @@ Lo escribe `node tools/relevancia-filas.mjs --escribir` (lo corre solo `publicar
 
 | Fila | Club-años con número | Clubes que la tienen alguna vez | Cuando la tiene: mediana de la sección · casos ≥ 10 % | Cero real | «—» sin saber | Dentro de otro |
 |---|---|---|---|---|---|---|
-| Cuotas Sociales | 328 de 1323 (25 %) | 84 de 331 (25 %) | 7.0 % · 39 % | 669 (51 %) | 246 | 80 |
-| Comercial / Sponsors | 1012 de 1323 (76 %) | 259 de 331 (78 %) | 16.1 % · 74 % | 25 (2 %) | 220 | 66 |
-| Estadio | 955 de 1323 (72 %) | 252 de 331 (76 %) | 8.9 % · 45 % | 47 (4 %) | 242 | 79 |
-| Televisión | 926 de 1323 (70 %) | 234 de 331 (71 %) | 27.2 % · 84 % | 64 (5 %) | 247 | 86 |
-| Premios por competencias | 461 de 1323 (35 %) | 140 de 331 (42 %) | 6.9 % · 39 % | 540 (41 %) | 322 | 0 |
+| Cuotas Sociales | 328 de 1323 (25 %) | 84 de 331 (25 %) | 7.0 % · 39 % | 670 (51 %) | 245 | 80 |
+| Comercial / Sponsors | 1013 de 1323 (77 %) | 259 de 331 (78 %) | 16.1 % · 74 % | 25 (2 %) | 219 | 66 |
+| Estadio | 956 de 1323 (72 %) | 252 de 331 (76 %) | 8.9 % · 45 % | 47 (4 %) | 241 | 79 |
+| Televisión | 927 de 1323 (70 %) | 234 de 331 (71 %) | 27.1 % · 84 % | 64 (5 %) | 246 | 86 |
+| Premios por competencias | 461 de 1323 (35 %) | 140 de 331 (42 %) | 6.9 % · 39 % | 541 (41 %) | 321 | 0 |
 | Venta de Jugadores | 907 de 1323 (69 %) | 234 de 331 (71 %) | 16.4 % · 65 % | 131 (10 %) | 285 | 0 |
-| Otras actividades (educación y otros deportes) | 236 de 1323 (18 %) | 78 de 331 (24 %) | 1.9 % · 14 % | 771 (58 %) | 316 | 0 |
-| Subsidios y donaciones | 400 de 1323 (30 %) | 123 de 331 (37 %) | 2.7 % · 31 % | 642 (49 %) | 281 | 0 |
-| Fútbol profesional (sin desglosar por la fuente) | 331 de 1323 (25 %) | 120 de 331 (36 %) | 77.4 % · 95 % | 992 (75 %) | 0 | 0 |
+| Otras actividades (educación y otros deportes) | 237 de 1323 (18 %) | 78 de 331 (24 %) | 1.9 % · 14 % | 771 (58 %) | 315 | 0 |
+| Subsidios y donaciones | 400 de 1323 (30 %) | 123 de 331 (37 %) | 2.7 % · 31 % | 643 (49 %) | 280 | 0 |
+| Fútbol profesional (sin desglosar por la fuente) | 330 de 1323 (25 %) | 119 de 331 (36 %) | 77.3 % · 95 % | 993 (75 %) | 0 | 0 |
 | Otros ingresos (catch-all) | 1190 de 1323 (90 %) | 297 de 331 (90 %) | 7.4 % · 40 % | 133 (10 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
@@ -26,7 +26,7 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 - **Premios por competencias** — países: BR 25/42 · PT 22/33 · CO 15/15 · ES 15/19 · NL 14/31 · HR 8/8 · AR 7/19 · EE 7/9 · IT 6/22 · GR 6/14 · NO 3/6 · GB 3/31 · RU 3/16 · CH 2/3 · DK 1/11 · PE 1/1 · TR 1/1 · CL 1/3
 - **Otras actividades (educación y otros deportes)** — países: AR 19/19 · BR 17/42 · CO 9/15 · IT 6/22 · GB 6/31 · EE 5/9 · PT 4/33 · CH 3/3 · NL 2/31 · NO 1/6 · GR 1/14 · RU 1/16 · PE 1/1 · ES 1/19 · DE 1/11 · CL 1/3
 - **Subsidios y donaciones** — países: PT 30/33 · IT 19/22 · NL 10/31 · AR 10/19 · BR 10/42 · EE 9/9 · GB 7/31 · GR 5/14 · NO 4/6 · RU 4/16 · BE 4/23 · HR 4/8 · DK 2/11 · CO 2/15 · ES 2/19 · CH 1/3
-- **Fútbol profesional (sin desglosar por la fuente)** — países: BE 22/23 · RU 15/16 · PT 13/33 · NL 12/31 · BR 12/42 · GR 10/14 · JP 10/10 · DK 7/11 · GB 3/31 · ES 3/19 · DE 3/11 · NO 2/6 · AR 2/19 · CO 1/15 · PE 1/1 · CH 1/3 · MX 1/1 · EE 1/9 · AT 1/1
+- **Fútbol profesional (sin desglosar por la fuente)** — países: BE 22/23 · RU 15/16 · PT 13/33 · NL 12/31 · BR 12/42 · GR 10/14 · JP 10/10 · DK 7/11 · ES 3/19 · DE 3/11 · NO 2/6 · GB 2/31 · AR 2/19 · CO 1/15 · PE 1/1 · CH 1/3 · MX 1/1 · EE 1/9 · AT 1/1
 
 ### Gastos
 

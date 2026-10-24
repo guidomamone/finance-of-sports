@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
  "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md",
- "generado": "2026-10-22T21:38:18.665Z",
- "scriptHuella": "ffd3f13bb18c",
+ "generado": "2026-10-24T20:43:18.344Z",
+ "scriptHuella": "b0a6fdd2be99",
  "estado": "ok",
  "clubId": "leeds-gb",
  "year": 2020,
@@ -49,6 +49,174 @@
    "evidencia": "leeds-group-accounts-2019-20.md L865",
    "autor": "caja-deuda --personal",
    "fecha": "2026-10-22"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "11,435,623",
+   "linea": 795,
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "reemplaza": "Turnover",
+   "motivo": "Nota 4 Turnover (pág. 19): las 7 fuentes suman 54.183.980, igual al Turnover del estado; el .md las trae en líneas sueltas (OCR), no en tabla, y la extracción dejó el Turnover sin abrir. Punto 450.",
+   "evidencia": "pág. 19 del visor, .md L795-802",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "1,481,500",
+   "linea": 796,
+   "etiqueta": "Television and broadcasting income",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota 4 Turnover (pág. 19), segunda de las 7 fuentes que suman el Turnover. Punto 450.",
+   "evidencia": "pág. 19 del visor, .md L795-802",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "15,364,697",
+   "linea": 797,
+   "etiqueta": "Merchandising income",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota 4 Turnover (pág. 19), tercera de las 7 fuentes. Punto 450.",
+   "evidencia": "pág. 19 del visor, .md L795-802",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "7,191,511",
+   "linea": 798,
+   "etiqueta": "Central distributions",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota 4 Turnover (pág. 19), cuarta de las 7 fuentes. Punto 450.",
+   "evidencia": "pág. 19 del visor, .md L795-802",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "14,435,706",
+   "linea": 799,
+   "etiqueta": "Other commercial revenue",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota 4 Turnover (pág. 19), quinta de las 7 fuentes. Punto 450.",
+   "evidencia": "pág. 19 del visor, .md L795-802",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "3,999,313",
+   "linea": 800,
+   "etiqueta": "Catering income",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota 4 Turnover (pág. 19), sexta de las 7 fuentes. Punto 450.",
+   "evidencia": "pág. 19 del visor, .md L795-802",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "fila",
+   "valor": "275,630",
+   "linea": 801,
+   "etiqueta": "Educational services",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Nota 4 Turnover (pág. 19), séptima de las 7 fuentes. Punto 450.",
+   "evidencia": "pág. 19 del visor, .md L795-802",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "categoria",
+   "valor": "matchday_competition",
+   "linea": null,
+   "etiqueta": "Gate receipts",
+   "motivo": "Misma etiqueta y misma nota 4 Turnover de los otros ejercicios de Leeds (data/gb/leeds-gb.json): precedente del mismo club. Punto 450.",
+   "evidencia": "data/gb/leeds-gb-data.js: Gate receipts matchday_competition en los demás años",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "categoria",
+   "valor": "broadcasting",
+   "linea": null,
+   "etiqueta": "Television and broadcasting income",
+   "motivo": "Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.",
+   "evidencia": "data/gb/leeds-gb-data.js: broadcasting en los demás años",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "categoria",
+   "valor": "sponsorship_commercial",
+   "linea": null,
+   "etiqueta": "Merchandising income",
+   "motivo": "Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.",
+   "evidencia": "data/gb/leeds-gb-data.js: sponsorship_commercial en los demás años",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "categoria",
+   "valor": "broadcasting",
+   "linea": null,
+   "etiqueta": "Central distributions",
+   "motivo": "Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.",
+   "evidencia": "data/gb/leeds-gb-data.js: broadcasting en los demás años",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "categoria",
+   "valor": "sponsorship_commercial",
+   "linea": null,
+   "etiqueta": "Other commercial revenue",
+   "motivo": "Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.",
+   "evidencia": "data/gb/leeds-gb-data.js: sponsorship_commercial en los demás años",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "Catering income",
+   "motivo": "Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.",
+   "evidencia": "data/gb/leeds-gb-data.js: other_income en los demás años",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+   "campo": "categoria",
+   "valor": "education",
+   "linea": null,
+   "etiqueta": "Educational services",
+   "motivo": "Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.",
+   "evidencia": "data/gb/leeds-gb-data.js: education en los demás años",
+   "autor": "Claude",
+   "fecha": "2026-10-24"
   }
  ],
  "cola": [],
@@ -89,6 +257,13 @@
   "la nota de \"Administrative expenses\" no suma el renglón (78.290456 contra 108.398516, sumando sus renglones): quedó el renglón del estado",
   "ajuste manual: fila \"Administrative expenses (sin el costo de personal)\" (gasto) 30.108.060,00, en lugar de \"Administrative expenses\" (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de \"Administrative expenses\": queda 108.398.516,00 - 78.290.456,00)",
   "ajuste manual: fila \"Staff costs (total de la nota de personal)\" (gasto) 78.290.456,00 (2026-10-22, caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de \"Administrative expenses\": el costo de personal va aparte)",
+  "ajuste manual: fila \"Gate receipts\" (ingreso) 11,435,623, en lugar de \"Turnover\" (2026-10-24, Nota 4 Turnover (pág. 19): las 7 fuentes suman 54.183.980, igual al Turnover del estado; el .md las trae en líneas sueltas (OCR), no en tabla, y la extracción dejó el Turnover sin abrir. Punto 450.)",
+  "ajuste manual: fila \"Television and broadcasting income\" (ingreso) 1,481,500 (2026-10-24, Nota 4 Turnover (pág. 19), segunda de las 7 fuentes que suman el Turnover. Punto 450.)",
+  "ajuste manual: fila \"Merchandising income\" (ingreso) 15,364,697 (2026-10-24, Nota 4 Turnover (pág. 19), tercera de las 7 fuentes. Punto 450.)",
+  "ajuste manual: fila \"Central distributions\" (ingreso) 7,191,511 (2026-10-24, Nota 4 Turnover (pág. 19), cuarta de las 7 fuentes. Punto 450.)",
+  "ajuste manual: fila \"Other commercial revenue\" (ingreso) 14,435,706 (2026-10-24, Nota 4 Turnover (pág. 19), quinta de las 7 fuentes. Punto 450.)",
+  "ajuste manual: fila \"Catering income\" (ingreso) 3,999,313 (2026-10-24, Nota 4 Turnover (pág. 19), sexta de las 7 fuentes. Punto 450.)",
+  "ajuste manual: fila \"Educational services\" (ingreso) 275,630 (2026-10-24, Nota 4 Turnover (pág. 19), séptima de las 7 fuentes. Punto 450.)",
   "duda de localizar que no afecta la carga: Solo hay Consolidated Statement of Comprehensive Income (b2); el individual no se presenta, solo hay balance de la compañía en b4."
  ],
  "reintentar": null,
@@ -112,14 +287,6 @@
  },
  "lineas": [
   {
-   "etiqueta": "Turnover",
-   "lado": "ingreso",
-   "M": 54.18398,
-   "pagina": 10,
-   "linea": 404,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Other operating income",
    "lado": "ingreso",
    "M": 3.528322,
@@ -134,6 +301,62 @@
    "pagina": 10,
    "linea": 410,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 11.435623,
+   "pagina": 19,
+   "linea": 795,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Television and broadcasting income",
+   "lado": "ingreso",
+   "M": 1.4815,
+   "pagina": 19,
+   "linea": 796,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Merchandising income",
+   "lado": "ingreso",
+   "M": 15.364697,
+   "pagina": 19,
+   "linea": 797,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Central distributions",
+   "lado": "ingreso",
+   "M": 7.191511,
+   "pagina": 19,
+   "linea": 798,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Other commercial revenue",
+   "lado": "ingreso",
+   "M": 14.435706,
+   "pagina": 19,
+   "linea": 799,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Catering income",
+   "lado": "ingreso",
+   "M": 3.999313,
+   "pagina": 19,
+   "linea": 800,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Educational services",
+   "lado": "ingreso",
+   "M": 0.27563,
+   "pagina": 19,
+   "linea": 801,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Cost of sales",

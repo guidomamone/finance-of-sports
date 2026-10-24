@@ -225,15 +225,21 @@ tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs
 ### Ingresos
 
 ```text
-2020: cargado por tools/cargar.mjs (2026-10-22) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2020: cargado por tools/cargar.mjs (2026-10-24) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Inglaterra/Leeds United/leeds-group-accounts-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Turnover | pág. 10, Jev 0.99 |
-| 2 | Other operating income | pág. 10, precedente |
-| 3 | Gain on disposal of players' registrations | pág. 10, precedente |
+| 1 | Other operating income | pág. 10, precedente |
+| 2 | Gain on disposal of players' registrations | pág. 10, precedente |
+| 3 | Gate receipts | pág. 19, precedente |
+| 4 | Television and broadcasting income | pág. 19, precedente |
+| 5 | Merchandising income | pág. 19, precedente |
+| 6 | Central distributions | pág. 19, precedente |
+| 7 | Other commercial revenue | pág. 19, precedente |
+| 8 | Catering income | pág. 19, precedente |
+| 9 | Educational services | pág. 19, precedente |
 
 ### Gastos
 
@@ -247,15 +253,28 @@ Generados/Inglaterra/Leeds United/leeds-group-accounts-2019-20.categorias.json (
 ### Meta
 
 ```text
-2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 30.108.060,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de "Administrative expenses": queda 108.398.516,00 - 78.290.456,00
-2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 78.290.456,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de "Administrative expenses": el costo de personal va aparte
-2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de "Administrative expenses": costo de personal -> wages_squad
-tools/cargar.mjs (2026-10-22). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+tools/dentro-de-otro.mjs (2026-10-22): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2021, 2022, 2023, 2024, 2025)
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-22): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2021, 2022, 2023, 2024, 2025)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 30.108.060,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de "Administrative expenses": queda 108.398.516,00 - 78.290.456,00
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): fila = 78.290.456,00. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de "Administrative expenses": el costo de personal va aparte
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, caja-deuda --personal 2026-10-22): categoria = wages_squad. caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, leeds-group-accounts-2019-20.md L865) está dentro de "Administrative expenses": costo de personal -> wages_squad
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): fila = 11,435,623. Nota 4 Turnover (pág. 19): las 7 fuentes suman 54.183.980, igual al Turnover del estado; el .md las trae en líneas sueltas (OCR), no en tabla, y la extracción dejó el Turnover sin abrir. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): fila = 1,481,500. Nota 4 Turnover (pág. 19), segunda de las 7 fuentes que suman el Turnover. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): fila = 15,364,697. Nota 4 Turnover (pág. 19), tercera de las 7 fuentes. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): fila = 7,191,511. Nota 4 Turnover (pág. 19), cuarta de las 7 fuentes. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): fila = 14,435,706. Nota 4 Turnover (pág. 19), quinta de las 7 fuentes. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): fila = 3,999,313. Nota 4 Turnover (pág. 19), sexta de las 7 fuentes. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): fila = 275,630. Nota 4 Turnover (pág. 19), séptima de las 7 fuentes. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): categoria = matchday_competition. Misma etiqueta y misma nota 4 Turnover de los otros ejercicios de Leeds (data/gb/leeds-gb.json): precedente del mismo club. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): categoria = broadcasting. Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): categoria = sponsorship_commercial. Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): categoria = broadcasting. Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): categoria = sponsorship_commercial. Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): categoria = other_income. Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-24): categoria = education. Misma etiqueta y nota 4 en los demás ejercicios de Leeds. Punto 450.
+tools/cargar.mjs (2026-10-24). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2019
