@@ -40,12 +40,20 @@ import { createHash } from 'node:crypto';
 import { resolve, join } from 'node:path';
 import { familiaDe } from './familias-docs.mjs';
 import { clasificar } from './clasificar-tools.mjs';
+import { validar } from './registro-esquema.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const flag = (f) => { const i = A.indexOf(f); return i >= 0 ? A[i + 1] : null; };
 const T = JSON.parse(readFileSync(resolve(ROOT, 'tools/pipeline-tools.json'), 'utf8'));
 const REGISTRO = resolve(ROOT, 'Admin/registros/mediciones-pipeline.jsonl');
+// Toda línea nueva lleva `esquema: 1` y cumple 'mediciones-pipeline' de tools/esquemas-registros.json; una que no lo cumple no se escribe.
+function anotar(linea) {
+  const conEsquema = { esquema: 1, ...linea };
+  const fuera = validar('mediciones-pipeline', conEsquema);
+  if (fuera.length) { console.error(`La línea de medición no cumple el esquema de tools/esquemas-registros.json (${fuera.join('; ')}); no se anotó.`); process.exit(1); }
+  appendFileSync(REGISTRO, JSON.stringify(conEsquema) + '\n');
+}
 const BASE_DIR = resolve(ROOT, 'Admin/mediciones/pipeline');
 const RESPALDO = join(BASE_DIR, '_respaldo');
 const NIVELES = ['chico', 'mediano', 'completo'];
@@ -112,7 +120,7 @@ if (base === 'HEAD' && !A.includes('--ensayo') && !flag('--lote') && !flag('--me
       tools: Object.fromEntries(nombres.map((n) => [n, { antes: gitOk('rev-parse', `${baseRev}:tools/${n}`)?.trim() || null, despues: huellaArchivo(`tools/${n}`) }])),
       lote: { nivel: 'solo-comentarios' }, medidores: [{ medidor: 'sin-comentarios', nivel: 'solo-comentarios', diferencias: 0, resumen: [salida, perdidos.split('\n').at(-1)].filter(Boolean) }], resultado: 'idéntico',
     };
-    if (!A.includes('--no-anotar')) { appendFileSync(REGISTRO, JSON.stringify(linea) + '\n'); console.log('Resultado: idéntico. Anotado en Admin/registros/mediciones-pipeline.jsonl.'); }
+    if (!A.includes('--no-anotar')) { anotar(linea); console.log('Resultado: idéntico. Anotado en Admin/registros/mediciones-pipeline.jsonl.'); }
     process.exit(0);
   }
 }
@@ -328,6 +336,6 @@ const linea = {
   medidores: registroMedidores, resultado, ...(textoExplicacion ? { explicacion: textoExplicacion } : {}),
 };
 if (A.includes('--no-anotar') || SOLO_CHICO) console.log(`\nResultado: ${resultado} (no se escribió el registro).`);
-else if (!cortado && nivelUsado === nivelFinal) { appendFileSync(REGISTRO, JSON.stringify(linea) + '\n'); console.log(`\nResultado: ${resultado}. Anotado en Admin/registros/mediciones-pipeline.jsonl.`); }
+else if (!cortado && nivelUsado === nivelFinal) { anotar(linea); console.log(`\nResultado: ${resultado}. Anotado en Admin/registros/mediciones-pipeline.jsonl.`); }
 else console.log(`\nResultado parcial (${resultado}) en el lote ${nivelUsado}; no se anotó.`);
 process.exitCode = (difTotal || vaciosN) && !explicacion ? 1 : process.exitCode || 0;

@@ -160,6 +160,47 @@
      "nota": { "tipo": ["string"] }
     }
    },
+   "ajustes-manuales": {
+    "archivo": "Admin/registros/ajustes-manuales.jsonl",
+    "campos": {
+     "esquema": { "tipo": ["number"], "enum": [1], "obligatorio": true },
+     "pdf": { "tipo": ["string"], "obligatorio": true },
+     "campo": { "tipo": ["string"], "enum": ["no-recargar", "filas-a-mano", "estado", "resultado-final", "sin-dudas", "fila", "fx", "cero-real", "desglose", "anio", "categoria", "perimetro", "cierre", "reportType", "confirmado", "caja", "deuda", "deuda-incluye", "incluye", "name", "moneda", "escala", "suma-con", "ixbrl-omitir", "covid-omitir"], "obligatorio": true },
+     "valor": { "tipo": ["string", "null"], "obligatorio": true },
+     "linea": { "tipo": ["number", "null"] },
+     "motivo": { "tipo": ["string"], "obligatorio": true },
+     "evidencia": { "tipo": ["string", "null"] },
+     "causa": { "tipo": ["string"], "enum": ["decision-de-guido", "precedente-del-club", "precedente-del-pais", "regla-escrita", "lectura-del-documento", "otra"] },
+     "autor": { "tipo": ["string"], "obligatorio": true },
+     "fecha": { "tipo": ["string"], "obligatorio": true },
+     "etiqueta": { "tipo": ["string", "null"] },
+     "etiquetaOtra": { "tipo": ["string", "null"] },
+     "etiquetaDiferencia": { "tipo": ["string", "null"] },
+     "lado": { "tipo": ["string", "null"], "enum": ["ingreso", "gasto", "financiero", "impuesto", null] },
+     "reemplaza": { "tipo": ["string", "null"] },
+     "reemplazaLinea": { "tipo": ["number"] },
+     "destino": { "tipo": ["string"] },
+     "categoria": { "tipo": ["string", "null"] },
+     "posible": { "tipo": ["boolean"] },
+     "anio": { "tipo": ["number"] },
+     "anulado": { "tipo": ["boolean"] },
+     "nota": { "tipo": ["string", "null"] }
+    }
+   },
+   "mediciones-pipeline": {
+    "archivo": "Admin/registros/mediciones-pipeline.jsonl",
+    "campos": {
+     "esquema": { "tipo": ["number"], "enum": [1], "obligatorio": true },
+     "fecha": { "tipo": ["string"], "obligatorio": true },
+     "base": { "tipo": ["string"], "obligatorio": true },
+     "tools": { "tipo": ["object"], "obligatorio": true },
+     "lote": { "tipo": ["object"], "obligatorio": true },
+     "medidores": { "tipo": ["array"], "obligatorio": true },
+     "resultado": { "tipo": ["string"], "obligatorio": true },
+     "explicacion": { "tipo": ["string"] },
+     "nota": { "tipo": ["string", "null"] }
+    }
+   },
    "cola-respuesta": {
     "archivo": "Admin/registros/cola-revision.jsonl",
     "campos": {
@@ -180,7 +221,7 @@
  },
  "falta": [
   "Que silenciar.mjs y las otras rutas que escriben respuestas de la cola (cerrarObsoletos, que escribe `obsoleto`, no lleva esquema) lo cumplan; hoy lo cumplen patron.mjs, decision.mjs, votacion-contar.mjs y cola.mjs --responder.",
-  "Los mismos esquemas para ajustes-manuales.jsonl (causa enumerada y evidencia {archivo, linea}) y mediciones-pipeline.jsonl (explicacion).",
+  "En ajustes-manuales.jsonl la `evidencia` sigue siendo un string (los lectores la imprimen tal cual); pasarla a {archivo, linea} cambiaría esos lectores. `causa` es opcional.",
   "El pedido a las sesiones de que den `--evidencia` y `--seguridad` al contestar la cola: desde el 2026-10-25 audit.js avisa (P3) si una respuesta nueva no los trae."
  ]
 }

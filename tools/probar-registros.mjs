@@ -80,6 +80,13 @@ caso('metodologiaAtrasada: con un umbral imposible no avisa', metodologiaAtrasad
 const lineaG = lineaDeRespuesta({ id: 'g1', decision: 'corregir', valor: 'broadcasting', nota: null, evidencia: 'ninguna', seguridad: 'alta', causa: 'decision-de-guido' });
 caso('la corrección de categoría de Guido cumple el esquema (evidencia ninguna, causa decision-de-guido)', lineaG.errores.length === 0 && lineaG.linea.esquema === 1 && lineaG.linea.causa === 'decision-de-guido', JSON.stringify(lineaG));
 
+// ---- ajustes-manuales y mediciones-pipeline: lo que escriben ajustes.mjs y medir-pipeline.mjs cumple su esquema, y una línea mala se rechaza
+const ajusteOk = { esquema: 1, pdf: 'Clubes/X/Y/a.pdf', campo: 'cierre', valor: '2024-06-30', linea: null, motivo: 'prueba', evidencia: null, autor: 'Claude', fecha: '2026-10-25' };
+caso('una línea de ajuste con esquema cumple', validar('ajustes-manuales', ajusteOk).length === 0, validar('ajustes-manuales', ajusteOk).join('; '));
+caso('un ajuste de un campo desconocido, sin motivo o con una causa que no existe se rechaza', validar('ajustes-manuales', { ...ajusteOk, campo: 'inventado' }).length === 1 && validar('ajustes-manuales', { ...ajusteOk, motivo: undefined }).length === 1 && validar('ajustes-manuales', { ...ajusteOk, causa: 'porque-si' }).length === 1);
+const medicionOk = { esquema: 1, fecha: '2026-10-25', base: 'abc', tools: {}, lote: { nivel: 'chico' }, medidores: [], resultado: 'idéntico' };
+caso('una línea de medición con esquema cumple y sin resultado se rechaza', validar('mediciones-pipeline', medicionOk).length === 0 && validar('mediciones-pipeline', { ...medicionOk, resultado: undefined }).length === 1);
+
 rmSync(T, { recursive: true, force: true });
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');
 process.exit(mal ? 1 : 0);

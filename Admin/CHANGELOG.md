@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1069 — esquema de ajustes-manuales.jsonl y mediciones-pipeline.jsonl [ajustes.mjs, medir-pipeline.mjs, audit-chequeos-5.js, probar-registros.mjs]
+
+- `tools/esquemas-registros.json` define los dos registros (`validacion.registros`). `ajustes.mjs` (`--agregar`, `--anular`, `agregarAjuste`) y `medir-pipeline.mjs` escriben `esquema: 1` y no guardan una línea que no lo cumple; `ajustes --agregar` acepta `--causa` (opcional). Lo anterior es legado. `audit.js` (`registro-fuera-de-esquema`) revisa las líneas que declaran `esquema`.
+- Medición: lote completo (1004 documentos), todos los medidores idénticos; `probar-registros.mjs` (3 casos nuevos), `probar-medir-pipeline.mjs` y `prueba-escribir.mjs` (`ajustes --agregar` en un worktree) ok.
+
 ## Versión 1068 — imports sin uso de las 7 tools grandes del pipeline; el aviso imports-sin-uso queda en 0 [alta-club.mjs, lote.mjs, verificar.mjs, caja-deuda.mjs, cargar.mjs, resolver-inventario.mjs, categorizar-claude.mjs]
 
 - Se quitan los 174 imports restantes (el script rompió dos imports por defecto y de espacio de nombres, `vm` y `EV`: se borraron a mano y `indefinidos` quedó limpio). Los imports sin uso de tools/ pasan de 220 a 0.

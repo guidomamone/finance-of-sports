@@ -308,6 +308,10 @@ function checkRegistroFuera() {
     if (e.length) malas.push(`cola-revision ${x.id}: ${e[0]}`);
     else if (x.esquema === undefined && ['aceptar', 'corregir', 'descartar', 'preguntar-club'].includes(x.decision) && String(x.ts).slice(0, 10) >= DESDE) malas.push(`cola-revision ${x.id}: respuesta sin esquema (--evidencia, --seguridad y --causa)`);
   }
+  // los registros de ajustes y de mediciones: solo se mira una línea que declara `esquema` (lo escriben ajustes.mjs y medir-pipeline.mjs, que no escriben otra cosa)
+  for (const [archivo, registro] of [['ajustes-manuales.jsonl', 'ajustes-manuales'], ['mediciones-pipeline.jsonl', 'mediciones-pipeline']]) {
+    for (const x of leer(archivo)) { const e = validar(registro, x); if (e.length) malas.push(`${registro} ${x.fecha}: ${e[0]}`); }
+  }
   if (malas.length) add('P3', 'registro-fuera-de-esquema', `${malas.length} línea(s) de los registros de decisión fuera del esquema (tools/esquemas-registros.json): ${malas.slice(0, 3).join(' · ')}`);
 }
 

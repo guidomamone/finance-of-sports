@@ -12,7 +12,7 @@
 //
 // USO:
 //   node tools/ajustes.mjs                                     lista todos (club, año, campo, valor, motivo)
-//   node tools/ajustes.mjs --agregar "<pdf>" <campo> [--valor "..."] --motivo "..." [--evidencia "pág. N del visor, .md L..."]
+//   node tools/ajustes.mjs --agregar "<pdf>" <campo> [--valor "..."] --motivo "..." [--evidencia "pág. N del visor, .md L..."] [--causa decision-de-guido|precedente-del-club|precedente-del-pais|regla-escrita|lectura-del-documento|otra]
 //        fila además: --etiqueta "..." --lado ingreso|gasto|financiero|impuesto [--linea N] [--reemplaza "etiqueta extraída" | --reemplaza-linea N]
 //        caja / deuda / escala además: [--anio AAAA] si el PDF alimenta dos años del sitio.
 //        [--autor X]: quién lo decidió. Sin --autor firma quien corre el comando (autorPorDefecto, abajo).
@@ -23,6 +23,7 @@ import { readFileSync, appendFileSync, existsSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { negarSiSeMide } from './candado-medicion.mjs';
+import { validar } from './registro-esquema.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl');
@@ -84,13 +85,20 @@ export function ceroRealDelClub(pdf, categoria) {
 // la terminal de Guido no la tiene y firma "Guido". Antes firmaba "Guido" siempre: ~800 ajustes que decidió
 // Claude dicen "Guido" en el jsonl y en el comentario del año en data/ (Guido: el histórico queda como está).
 export const autorPorDefecto = () => (process.env.CLAUDECODE === '1' ? 'Claude' : 'Guido');
+// Toda línea nueva lleva `esquema: 1` y cumple 'ajustes-manuales' de tools/esquemas-registros.json; una que no lo cumple no se escribe. Las anteriores son legado.
+function escribirLinea(l) {
+  const linea = { esquema: 1, ...l };
+  const fuera = validar('ajustes-manuales', linea);
+  if (fuera.length) throw new Error(`el ajuste no cumple el esquema de tools/esquemas-registros.json (${fuera.join('; ')}); no se guardó`);
+  appendFileSync(ARCHIVO, JSON.stringify(linea) + '\n');
+  return linea;
+}
 // Escribe un ajuste desde un script (mismo formato que --agregar; `autor` dice quién lo decidió). Caso: perimetro-senales.mjs fija el
 // perímetro de un club cuando sus documentos coinciden (autor "perimetro-senales"); el motivo cita los documentos y los criterios.
 export function agregarAjuste(a) {
   if (!CAMPOS.includes(a.campo)) throw new Error(`campo desconocido: ${a.campo}`);
   const linea = { pdf: a.pdf, campo: a.campo, valor: a.valor ?? null, linea: a.linea ?? null, motivo: a.motivo, evidencia: a.evidencia ?? null, autor: a.autor || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
-  appendFileSync(ARCHIVO, JSON.stringify(linea) + '\n');
-  return linea;
+  return escribirLinea(linea);
 }
 export function ajustePerimetroDe(pdf) {
   const todos = leer().filter((a) => a.campo === 'perimetro');
@@ -110,7 +118,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (!pdf || !CAMPOS.includes(campo) || !flag('--motivo')) { console.error('Uso: --anular "<pdf>" <campo> [--etiqueta "..."] [--valor "..."] [--anio AAAA] --motivo "..."'); process.exit(1); }
     const vivo = ajustesDe(pdf).find((a) => a.campo === campo && (flag('--etiqueta') == null || a.etiqueta === flag('--etiqueta')) && (flag('--valor') == null || String(a.valor) === flag('--valor')) && (flag('--anio') == null || String(a.anio) === flag('--anio')));
     if (!vivo) { console.error('No hay un ajuste vigente con esa clave.'); process.exit(1); }
-    appendFileSync(ARCHIVO, JSON.stringify({ pdf, campo, ...(vivo.etiqueta != null ? { etiqueta: vivo.etiqueta } : {}), ...(vivo.anio != null ? { anio: vivo.anio } : {}), valor: vivo.valor ?? null, anulado: true, motivo: flag('--motivo'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) }) + '\n');
+    try { escribirLinea({ pdf, campo, ...(vivo.etiqueta != null ? { etiqueta: vivo.etiqueta } : {}), ...(vivo.anio != null ? { anio: vivo.anio } : {}), valor: vivo.valor ?? null, anulado: true, motivo: flag('--motivo'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) }); } catch (e) { console.error(e.message); process.exit(1); }
     console.log(`Ajuste anulado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${vivo.etiqueta ? ` "${vivo.etiqueta}"` : ''}${vivo.valor != null ? ` = ${vivo.valor}` : ''}`);
     process.exit(0);
   }
@@ -157,8 +165,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (flag('--anio') !== null && (!CAMPOS_POR_ANIO.includes(campo) || !/^\d{4}$/.test(flag('--anio') || ''))) { console.error(`--anio AAAA solo va con ${CAMPOS_POR_ANIO.join(' / ')}`); process.exit(1); }
     if (flag('--reemplaza-linea') !== null && !/^\d+$/.test(flag('--reemplaza-linea') || '')) { console.error('--reemplaza-linea necesita el número de línea del .md'); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
-    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}), ...(flag('--destino') ? { destino: flag('--destino') } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria'), ...(flag('--etiqueta-diferencia') ? { etiquetaDiferencia: flag('--etiqueta-diferencia') } : {}) } : {}), ...(campo === 'suma-con' ? { etiqueta: flag('--etiqueta'), etiquetaOtra: flag('--etiqueta-otra') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), ...(flag('--anio') ? { anio: Number(flag('--anio')) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
-    appendFileSync(ARCHIVO, JSON.stringify(a) + '\n');
+    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}), ...(flag('--destino') ? { destino: flag('--destino') } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria'), ...(flag('--etiqueta-diferencia') ? { etiquetaDiferencia: flag('--etiqueta-diferencia') } : {}) } : {}), ...(campo === 'suma-con' ? { etiqueta: flag('--etiqueta'), etiquetaOtra: flag('--etiqueta-otra') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), ...(flag('--anio') ? { anio: Number(flag('--anio')) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), ...(flag('--causa') ? { causa: flag('--causa') } : {}), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
+    try { escribirLinea(a); } catch (e) { console.error(e.message); process.exit(1); }
     console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.anio ? ` (año ${a.anio})` : ''}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
   } else {
     const vigentes = [...new Set(leer().map((a) => a.pdf))].flatMap((p) => ajustesDe(p));
