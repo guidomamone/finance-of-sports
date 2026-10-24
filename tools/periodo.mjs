@@ -109,12 +109,14 @@ export function xhtmlHermano(mdAbs, mdText) {
   const x = String(mdAbs).replace(/\.md$/, '.xhtml');
   return /xhtml-aarsrapport\.mjs/.test(String(mdText).slice(0, 400)) && existsSync(x) ? x : null;
 }
-const MESES_EN = { january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 };
+// inglés y danés (el registro danés etiqueta «1. OKTOBER 2024», ixt:date-day-monthname-year-da)
+const MESES_EN = { january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+  januar: 1, februar: 2, marts: 3, maj: 5, juni: 6, juli: 7, oktober: 10 };
 function fechaIxbrl(txt) {
   const t = String(txt || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
   let m = t.match(/^(\d{4})-(\d{2})-(\d{2})$/); if (m) return { a: +m[1], m: +m[2], d: +m[3] };
   m = t.match(/^(\d{1,2})[./-](\d{1,2})[./-](\d{2}|\d{4})$/); if (m) return { a: m[3].length === 2 ? 2000 + +m[3] : +m[3], m: +m[2], d: +m[1] };
-  m = t.match(/^(\d{1,2})(?:st|nd|rd|th)? ([a-z]+),? (\d{4})$/i); if (m && MESES_EN[m[2].toLowerCase()]) return { a: +m[3], m: MESES_EN[m[2].toLowerCase()], d: +m[1] };
+  m = t.match(/^(\d{1,2})(?:st|nd|rd|th|\.)? ([a-zæøå]+),? (\d{4})$/i); if (m && MESES_EN[m[2].toLowerCase()]) return { a: +m[3], m: MESES_EN[m[2].toLowerCase()], d: +m[1] };
   return null;
 }
 export function periodoIxbrl(xhtmlAbs) {
@@ -123,7 +125,7 @@ export function periodoIxbrl(xhtmlAbs) {
   for (const c of src.matchAll(/<(?:[\w-]+:)?context\b[^>]*\bid="([^"]+)"[\s\S]*?<\/(?:[\w-]+:)?context>/g)) {
     const fin = (c[0].match(/<(?:[\w-]+:)?(?:endDate|instant)>\s*([\d-]{10})\s*</) || [])[1]; if (fin) contextos.set(c[1], fin);
   }
-  const leer = (nombres) => {
+  const leer = (nombres, { contexto = true } = {}) => {
     const vals = new Set();
     // cada etiqueta de apertura por separado, con el texto hasta el cierre más cercano: una ix:nonNumeric puede ir ANIDADA en otra (Barnsley
     // 2023-24: el inicio dentro de una más grande) y un match de apertura a cierre se tragaba la de adentro
@@ -131,13 +133,13 @@ export function periodoIxbrl(xhtmlAbs) {
       const name = ((h[1].match(/\bname="([^"]+)"/) || [])[1] || '').replace(/^.*:/, ''); if (!nombres.includes(name)) continue;
       const desde = h.index + h[0].length; const hasta = src.indexOf('</ix:nonNumeric>', desde);
       const f = fechaIxbrl(src.slice(desde, hasta < 0 ? desde : hasta)); const ctx = contextos.get((h[1].match(/\bcontextRef="([^"]+)"/) || [])[1]);
-      const v = f ? iso(f) : ctx || null; if (v) vals.add(v);
+      const v = f ? iso(f) : contexto ? ctx || null : null; if (v) vals.add(v); // la fecha del contexto vale para el cierre; para el inicio daba el cierre (0 meses)
     }
     return [...vals];
   };
   const fins = leer(['EndDateForPeriodCoveredByReport', 'ReportingPeriodEndDate']);
   if (fins.length !== 1 || fins[0] > `${new Date().getFullYear() + 2}-12-31`) return null; // el mismo tope que el texto: nunca más de 2 años después de hoy
-  const inis = leer(['StartDateForPeriodCoveredByReport', 'ReportingPeriodStartDate']);
+  const inis = leer(['StartDateForPeriodCoveredByReport', 'ReportingPeriodStartDate'], { contexto: false });
   const cierre = fins[0]; let meses = 12; let inicio;
   if (inis.length === 1) {
     inicio = inis[0]; // los días del período (con el último), en meses: 2022-07-01 a 2023-06-30 son 365 días, 12 meses

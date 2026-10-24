@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1035 — periodo.mjs: la fecha etiquetada en danés y el inicio sin caer al contexto [413 · periodo.mjs]
+
+- El registro danés etiqueta el período del XHTML como «1. OKTOBER 2024» / «30. SEPTEMBER 2025» (`ixt:date-day-monthname-year-da`); `fechaIxbrl` solo leía meses en inglés sin punto tras el día, así que el inicio caía a la fecha del contexto (= el cierre) y SønderjyskE 2025 salía «otro, 0 meses» y no se cargaba. Ahora lee los meses daneses y el punto, y el inicio ya no cae al contexto (el contexto vale para el cierre, no para el inicio).
+- Medición: `medir pipeline` (verificar, lote completo de 991 documentos): idéntico. SønderjyskE 2025 pasa a «anual, 2024-10-01 a 2025-09-30». Veredicto general (patrón: fechas con mes danés, proxy de los informes daneses).
+
 ## Versión 1034 — xhtml-aarsrapport: las celdas por coordenadas también en em (SønderjyskE 2025) [413 · xhtml-aarsrapport.mjs]
 
 - Los informes que maqueta ParsePort (AGF, AaB, FC København PSE, SønderjyskE) dan `top`/`left` en `em`; el conversor solo reconocía `pt` y `px`, así que el estado de resultados salía con una cifra por línea, sin tabla, y localizar contestaba «sin estado de resultados». Ahora `posicionAbs` acepta `em` (1 em = 16 px) y, como esas páginas no traen contenedor con altura, una celda mucho más arriba que las ya juntas abre página nueva. SønderjyskE 2025: «| Nettoomsætning | 66.288.538 | 55.909.616 |».
