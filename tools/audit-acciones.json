@@ -125,6 +125,16 @@
   "quien": "sesion",
   "donde": "skill club-sourcing, referencia/liga-y-sponsor.md"
  },
+ "error-estatico": {
+  "hacer": "node tools/fos.mjs indefinidos: dice archivo, línea, regla y mensaje. Es un error de código que eslint encuentra sin correr nada (una clave repetida en un objeto, código que nunca se alcanza, una constante reasignada…): se corrige y, si es una tool del pipeline, se mide.",
+  "quien": "sesion",
+  "donde": "Admin/mediciones/440-revisores-gratis.md y tools/eslint.config.mjs (ERRORES)"
+ },
+ "imports-sin-uso": {
+  "hacer": "Nada urgente: node tools/indefinidos.mjs --imports --json lista cada import que ningún código usa (lo que dejan las particiones de módulos). Se limpian de a un archivo, quitando el nombre del import; si es una tool del pipeline, se mide.",
+  "quien": "nada",
+  "donde": "Admin/mediciones/440-revisores-gratis.md"
+ },
  "cierre-sin-fecha": {
   "hacer": "node tools/inventario-transcripciones.mjs refresca el período del registro (periodo.mjs toma el cierre del nombre del archivo si es fin de mes y el año está en el texto). Los que sigan sin cierre: mirar por qué periodo.mjs no encuentra la fecha (idioma, formato, tabla) en 10 casos por país, o un ajuste `cierre` a mano (parte 2 del punto 444).",
   "quien": "sesion",

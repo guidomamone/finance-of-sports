@@ -20,6 +20,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1052 — 440: 14 reglas de eslint y los imports sin uso en audit.js; TypeScript, madge y knip probados y descartados [440 · eslint.config.mjs, indefinidos.mjs, audit-chequeos-5.js, probar-eslint.mjs, changelog.mjs]
+
+- `tools/eslint.config.mjs` suma 14 reglas de `ERRORES` (0 hallazgos hoy) a `no-undef`; `indefinidos.mjs` las devuelve con su `regla` y los imports sin uso con `--imports`. `audit.js`: P3 `error-estatico` y P4 `imports-sin-uso` (220 imports en 43 archivos), con entradas en `audit-acciones.json`. `probar-eslint.mjs`: un archivo de juguete por regla (la prueba encontró que `no-inner-declarations` no marca nada en un módulo y se sacó).
+- `changelog.mjs` leía `eslint.config.mjs` como `config.mjs` (el nombre no admitía puntos); ahora los admite.
+- TypeScript `checkJs` (270 errores, casi todos ruido), madge (38 ciclos) y knip (205 exports sin uso) se instalaron, probaron con un defecto plantado y se desinstalaron: `Admin/mediciones/440-revisores-gratis.md`.
+- Verificado a mano (440): 14 reglas de eslint activas con probar-eslint.mjs (17 casos ok), P3 error-estatico y P4 imports-sin-uso en audit.js, informe Admin/mediciones/440-revisores-gratis.md; TypeScript/knip/madge probados y descartados
+- Medición: `medir pipeline` (audit): la única diferencia es el aviso nuevo `imports-sin-uso`, explicada; `probar-eslint.mjs` 17 casos ok. Veredicto de infraestructura (`patron --sin-documentos`). Sin revisión independiente.
+
 ## Versión 1051 — medir-pipeline.mjs: una segunda medición ya no borra el candado de la primera [443 · medir-pipeline.mjs, probar-medir-pipeline.mjs]
 
 - Antes, una medición lanzada mientras otra corría escribía su propio candado, se negaba por los datos sin commitear y al salir lo borraba: la primera seguía midiendo sin candado, y ni el hook ni las tools que escriben registros la veían. Ahora la segunda se niega con el pid de la primera y no toca el candado. Apareció midiendo el 444.

@@ -265,8 +265,12 @@ function checkMedicionesSinDestino() {
 function checkNombresSinDefinir() {
   if (!fs.existsSync(path.join(ROOT, 'tools', 'node_modules', '.bin', 'eslint'))) return;
   let h; try { h = JSON.parse(execSync('node tools/indefinidos.mjs --json', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch (e) { try { h = JSON.parse(e.stdout); } catch (e2) { return; } }
-  if (!h.length) return;
-  add('P3', 'nombre-sin-definir', `${h.length} nombre(s) usados sin definir en tools/: ${h.slice(0, 4).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}. Corré: node tools/fos.mjs indefinidos`);
+  const sinDefinir = h.filter(x => !x.regla), errores = h.filter(x => x.regla);
+  if (sinDefinir.length) add('P3', 'nombre-sin-definir', `${sinDefinir.length} nombre(s) usados sin definir en tools/: ${sinDefinir.slice(0, 4).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}. Corré: node tools/fos.mjs indefinidos`);
+  if (errores.length) add('P3', 'error-estatico', `${errores.length} error(es) que eslint encuentra en tools/ (una de las reglas de ERRORES de tools/eslint.config.mjs): ${errores.slice(0, 4).map(x => `${x.archivo}:${x.linea} [${x.regla}] ${x.nombre}`).join(', ')}. Corré: node tools/fos.mjs indefinidos`);
+  // los imports que ningún código usa: información (P4), el código muerto que dejan las particiones
+  let imp; try { imp = JSON.parse(execSync('node tools/indefinidos.mjs --imports --json', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch (e) { return; }
+  if (imp.length) add('P3', 'imports-sin-uso', `${imp.length} import(s) sin uso en ${new Set(imp.map(x => x.archivo)).size} archivos de tools/ (ej. ${imp.slice(0, 3).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}). Información: se limpian de a un archivo`);
 }
 
 // cierre-sin-fecha: documentos con .md, de carpetas de clubes que ya tienen un ejercicio cargado, cuyo período en el registro no trae fecha de cierre. Sin ella,

@@ -23,7 +23,7 @@ const CL = resolve(ROOT, 'Admin', 'CHANGELOG.md');
 const ARCH = resolve(ROOT, 'Admin', 'Archive');
 export const TOPE_ENTRADA = 1500;
 export const DESDE_VERSION_CON_TOOLS = 996;
-const TOOL_RE = /\b([a-z0-9][a-z0-9-]*\.(?:mjs|js))\b/g;
+const TOOL_RE = /\b([a-z0-9][a-z0-9.-]*\.(?:mjs|js))\b/g; // el nombre puede llevar puntos (eslint.config.mjs)
 const git = (...a) => { try { return execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, stdio: ['ignore', 'pipe', 'ignore'] }); } catch { return ''; } };
 
 // {cabecera: líneas antes de la primera entrada, entradas: [{version, titulo, linea, corchete, tools, texto}]}; las entradas conservan su texto exacto
@@ -41,7 +41,7 @@ export function leer(ruta = CL) {
 // las tools nombradas en el corchete del título (con o sin `~`)
 export function herramientasDelTitulo(titulo) {
   const cor = titulo.match(/\[([^\]]*)\]\s*$/); if (!cor) return [];
-  return [...cor[1].matchAll(/~?([a-z0-9][a-z0-9-]*\.(?:mjs|js))\b/g)].map((m) => m[1]);
+  return [...cor[1].matchAll(/~?([a-z0-9][a-z0-9.-]*\.(?:mjs|js))\b/g)].map((m) => m[1]);
 }
 const archivosChangelog = () => [CL, ...(existsSync(ARCH) ? readdirSync(ARCH).filter((f) => /^CHANGELOG-.*\.md$/.test(f)).map((f) => join(ARCH, f)) : [])];
 
