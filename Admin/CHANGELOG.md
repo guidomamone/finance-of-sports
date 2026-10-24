@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1049 — 438: votacion-citas.mjs, votacion-contar.mjs y el votante único en la plantilla [438 · votacion-nueva.mjs, votacion-citas.mjs, votacion-contar.mjs, probar-votacion-nueva.mjs]
+
+- `fos votacion citas <voto.json …>` verifica cada cita `{ref, texto, mismo_hecho}` (la línea de la ruta o el ejercicio `club@año` existe y contiene el texto). `fos votacion contar` cuenta los votos con las reglas de la skill (3 a 0; 2 a 1 sin precedente 1 a 3 verificado en la minoría; empate, minoría con precedente o más de 10 años a Guido): un precedente sin cita verificada o sin `mismo_hecho` no suma, y lo que un votante dijo no haber abierto queda a la vista; `--escribir` anota la línea con `esquema: 1`.
+- `votacion nueva` suma la misma liga a la lista fija, el formato del voto con la cita completa y quién vota: nadie si mueve 1 % o menos, UN votante si `--precedente "ref|texto"` se verifica, tres si no.
+- Medición: `probar-votacion-nueva.mjs` 29 casos ok, con las 22 votaciones del registro: las 12 unánimes fueron DECIDIDO y el contador también las decide, y ninguna A GUIDO fue unánime. La comparación re-votando 3 casos con subagentes no se hizo (gasto). Tools de orden fuera del pipeline: `medir pipeline` no aplica. Sin revisión independiente.
+
 ## Versión 1048 — 448: las reglas fijas del prompt de sesión a Admin/PLANTILLA-SESION.md, y el hook rechaza node -e y python -c [448 · pre-tool.mjs]
 
 - `Admin/PLANTILLA-SESION.md`: las reglas de Bash y los pasos de medir y commitear, que Guido pegaba en cada prompt (el cierre con «Leído en vano» sigue en su prompt, a su pedido). El hook `pre-tool.mjs` rechaza también `node -e`, `node -p` y `python -c` (después de las reglas de skills y PDFs, para no tapar su mensaje); lo que va entre comillas dobles se ignora. `probar-pre-tool.mjs`: 74 casos ok (6 nuevos; «python que solo lee pasa» pasó a rechazado). El CLAUDE.md que la cita va en un commit aparte.
