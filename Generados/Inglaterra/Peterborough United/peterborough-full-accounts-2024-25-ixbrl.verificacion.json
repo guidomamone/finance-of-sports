@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.256Z",
+ "generado": "2026-10-24T15:02:21.162Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,7 +13,11 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "e267231",
+  "e4f651b",
+  "4376919"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -42,14 +46,9 @@
    "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
- "notas": [
-  "duda de localizar que no afecta la carga: b27 (nota 3) mezcla desglose de turnover con otras notas hasta servicios de auditoría.",
-  "duda de localizar que no afecta la carga: b29 combina remuneración de directores con el inicio de la nota de ingresos financieros.",
-  "duda de extraer que no afecta la carga: La nota 7 (L503-L509) no indica a qué renglón del estado corresponde la remuneración.",
-  "duda de extraer que no afecta la carga: Es una conciliación teórica; el cargo es cero."
- ],
+ "notas": [],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 22.724363,

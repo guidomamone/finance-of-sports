@@ -4,7 +4,7 @@
  "mdSha1": "2592cebcba749eae82529058384b2bb23692e018",
  "ubicacionSha1": "f0083fe447bfdddadbb89546c9ed1c9461a068e1",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:41:24.539Z",
+ "generado": "2026-10-24T14:57:36.936Z",
  "ubicacion": {
   "estado": [
    "b6"
@@ -16,7 +16,7 @@
   {
    "bloque": "b6",
    "escala": "unidades",
-   "evidencia": "L162: encabezado de columnas '£' (libras, sin indicación de miles)"
+   "evidencia": "L162: encabezado de columnas '£'"
   }
  ],
  "filas": [
@@ -26,7 +26,7 @@
    "etiqueta": "Turnover",
    "actual": "5,198,639",
    "anterior": "5,267,770",
-   "tipo": "renglon",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
@@ -36,7 +36,7 @@
    "etiqueta": "Administrative expenses",
    "actual": "(6,361,001)",
    "anterior": "(6,060,709)",
-   "tipo": "renglon",
+   "tipo": "total",
    "lado": "gasto",
    "detalla_a": null
   },
@@ -71,8 +71,14 @@
    "detalla_a": null
   }
  ],
- "total_ingresos": null,
- "total_gastos": null,
+ "total_ingresos": {
+  "linea": 163,
+  "actual": "5,198,639"
+ },
+ "total_gastos": {
+  "linea": 164,
+  "actual": "(6,361,001)"
+ },
  "resultado": {
   "linea": 167,
   "actual": "(1,139,756)",
@@ -80,16 +86,16 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se dejan afuera de la carga las filas 'Retained earnings brought forward' y 'Retained earnings carried forward' (L168-L169)?",
+   "pregunta": "¿Se acepta que no se cargue ninguna fila de 'Salarios del plantel' porque el documento (cuentas abreviadas) no incluye nota de desglose de gastos?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Retained earnings brought forward",
-   "texto": "L168-L169 son movimientos de resultados acumulados (patrimonio), no partidas de ingresos o gastos del ejercicio.",
+   "renglon": "Administrative expenses",
+   "texto": "El único bloque provisto (b6) es el estado de resultados resumido; no hay cuadro que abra 'Administrative expenses' ni renglón de salarios del plantel.",
    "bloques": [
     "b6"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado abreviado (cuentas de pequeña empresa): solo Turnover y Administrative expenses, sin notas de desglose. En L166 el '4' es la referencia a la nota, desplazada a la columna de importes; los importes de Tax on loss son 22,606 (2025) y 28,290 (2024), crédito fiscal positivo. No hay total de ingresos ni de gastos impresos como tales (cada uno es una sola partida)."
+ "observaciones": "Estado de resultados abreviado (filed accounts de pequeña empresa): solo Turnover y Administrative expenses. No hay notas de ingresos ni gastos, por lo que no existe fila de salarios del plantel. L168-L169 (retained earnings) no son resultado del ejercicio y se excluyen. En L166 el '4' es referencia a nota."
 }

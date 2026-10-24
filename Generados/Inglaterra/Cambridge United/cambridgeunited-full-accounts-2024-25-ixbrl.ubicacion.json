@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.md",
  "mdSha1": "2750dc2bef73bbb8dcf425d32eedede94663ebcb",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:40:51.978Z",
+ "generado": "2026-10-24T14:57:00.384Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -316,7 +317,7 @@
   "b28"
  ],
  "escala": "unidades",
- "escala_evidencia": "Las columnas de las notas están encabezadas con '£' y los importes están expresados en libras enteras (ej. 9,246,327).",
+ "escala_evidencia": "Las notas indican '£' en el encabezado de columnas (2025 / £); importes impresos en libras enteras (ej. 6,546; 3,736,772).",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
@@ -324,17 +325,28 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se cargan desde b26 los importes de 2024 de 'Wages and salaries' tal como figuran 'as restated' (5,377,623)?",
+   "pregunta": "¿El bloque b27 (continuación previa a b28, no listado en el índice) contiene el cuadro de personal con 'Wages and salaries' del ejercicio y debe cargarse junto con b26?",
    "propuesta": "sí",
-   "tema": "columna",
+   "tema": "otro",
    "renglon": "Wages and salaries",
-   "texto": "La nota 5 re-expresa la cifra comparativa con una baja de £343,015 que se reasigna a otros costos, sin cambios en el estado de resultados (b28).",
+   "texto": "b28 continúa b27 y su nota sobre la reexpresión de wages and salaries sugiere que el desglose de costos de personal está en b26/b27; b27 no aparece en el índice.",
    "bloques": [
     "b26",
     "b28"
    ],
    "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la columna 2024 de wages and salaries de la nota de personal ya reexpresada (baja de £343,015) en lugar de la cifra original?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Wages and salaries",
+   "texto": "b28 indica que los comparativos de la nota de personal fueron reexpresados en -£343,015 sin afectar el estado de resultados.",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Estado de resultados individual: b6 (Statement of Comprehensive Income, pág. 13). b26 contiene la nota 3 (Turnover por clase de negocio), la nota 4 (cargos operativos) y la nota 5 (costos de personal). b28 contiene las notas 7 y 8 (intereses cobrados y pagados). La conciliación impositiva de b28 no se carga. No hay estados consolidados."
+ "observaciones": "Estado de resultados individual de Cambridge United Football Club Limited (b6, Statement of Comprehensive Income). b26 contiene la nota 3 Turnover (por clase de negocio) y termina con costos de personal (Pension costs / total 6,661,435), que abre los salarios del plantel/personal. b28 contiene intereses cobrados y pagados (notas 7 y 8) que desglosan renglones del estado; la conciliación impositiva se ignora. Se excluyen balance, cambios de patrimonio, flujo de efectivo, activo fijo, arrendamientos y partes relacionadas."
 }

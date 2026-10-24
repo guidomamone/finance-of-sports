@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.075Z",
+ "generado": "2026-10-24T15:02:20.864Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,7 +13,12 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "3a6742a",
+  "58756b2",
+  "5f9dbcd",
+  "8654d48"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -27,37 +32,29 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": true,
-   "detalle": "cierra (como impresos)",
-   "dif": 5.329070518200751e-15
+   "ok": false,
+   "detalle": "ingresos 20.53237 - gastos 34.487594 ± financiero -0.40667 ± impuesto 0 no da el impreso 18.468885",
+   "dif": null
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
- "notas": [
-  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en bolton-footballventures-group-accounts-2024-25-ixbrl.pdf",
-  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en bolton-footballventures-group-accounts-2024-25-ixbrl.pdf"
- ],
+ "notas": [],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 20.53237,
   "gastos": 34.487594,
   "financiero": -0.40667,
   "impuesto": 0,
-  "resultadoImpreso": -14.361894,
-  "resultadoParaCargar": -14.361894,
+  "resultadoImpreso": 18.468885,
+  "resultadoParaCargar": 18.468885,
   "resultadoFinal": null,
-  "lecturaSignos": "como impresos"
+  "lecturaSignos": null
  },
  "lineas": [
   {
@@ -195,34 +192,5 @@
    "M": null,
    "linea": 278
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "aeebee651da543c74593fbe62c1e7c85bfacab28",
-  "rango": [
-   266,
-   282
-  ],
-  "lineasCargadas": [
-   610,
-   611,
-   612,
-   613,
-   614,
-   615,
-   616,
-   617,
-   618,
-   619,
-   620,
-   273,
-   270,
-   272,
-   275,
-   276,
-   278
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 266 a 282 del .md):\nL266: | 2025 | 2024 |  |  |\nL267: | --- | --- | --- | --- |\nL268: | Notes | £ | £ |  |\nL269: | Turnover | 3 | 20,458,546 | 21,301,502 |\nL270: | Cost of sales | (20,285,848) | (17,971,455) |  |\nL271: | Gross profit | 172,698 | 3,330,047 |  |\nL272: | Administrative expenses | (14,201,746) | (13,913,784) |  |\nL273: | Other operating income | 73,824 | 129,748 |  |\nL274: | Operating loss | 4 | (13,955,224) | (10,453,989) |\nL275: | Interest receivable and similar income | 7 | 18,787 | 14,731 |\nL276: | Interest payable and similar expenses | 8 | (425,457) | (711,166) |\nL277: | Loss before taxation | (14,361,894) | (11,150,424) |  |\nL278: | Tax on loss | 9 | - | - |\nL279: | Loss for the financial year | (14,361,894) | (11,150,424) |  |\nL281: Loss for the financial year is all attributable to the owners of the parent company.\nL282: Total comprehensive income for the year is all attributable to the owners of the parent company.\n\nLO QUE SE CARGA:\n- ingreso · \"Professional football\" · 7.224757 · L610 (de una nota)\n- ingreso · \"Food and beverage\" · 2.455033 · L611 (de una nota)\n- ingreso · \"Accommodation and leisure\" · 2.053798 · L612 (de una nota)\n- ingreso · \"Academy income\" · 0.611718 · L613 (de una nota)\n- ingreso · \"Commercial\" · 2.217071 · L614 (de una nota)\n- ingreso · \"Retail\" · 1.768059 · L615 (de una nota)\n- ingreso · \"Corporate sales\" · 0.777253 · L616 (de una nota)\n- ingreso · \"Events\" · 2.768126 · L617 (de una nota)\n- ingreso · \"Communications\" · 0.218598 · L618 (de una nota)\n- ingreso · \"Car parking\" · 0.152593 · L619 (de una nota)\n- ingreso · \"Fanzone\" · 0.21154 · L620 (de una nota)\n- ingreso · \"Other operating income\" · 0.073824 · L273\n- gasto · \"Cost of sales\" · 20.285848 · L270\n- gasto · \"Administrative expenses\" · 14.201746 · L272\n- financiero · \"Interest receivable and similar income\" · 0.018787 · L275\n- financiero · \"Interest payable and similar expenses\" · -0.425457 · L276\n- impuesto · \"Tax on loss\" · 0 · L278"
- }
+ ]
 }

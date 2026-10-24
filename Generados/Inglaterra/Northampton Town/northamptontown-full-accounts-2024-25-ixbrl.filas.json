@@ -4,7 +4,7 @@
  "mdSha1": "82e936fcd03447a742ca53333cd3b32d088f95b3",
  "ubicacionSha1": "9310580bb4a46e3d8a09163c059130d24c60939e",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:41:57.518Z",
+ "generado": "2026-10-24T14:58:08.683Z",
  "ubicacion": {
   "estado": [
    "b7"
@@ -25,12 +25,12 @@
   {
    "bloque": "b30",
    "escala": "unidades",
-   "evidencia": "L455: '£'"
+   "evidencia": "L455: '£ | £'"
   },
   {
    "bloque": "b31",
    "escala": "unidades",
-   "evidencia": "L474/L480/L493: '£'"
+   "evidencia": "L474/L493: '£ | £'"
   }
  ],
  "filas": [
@@ -252,7 +252,7 @@
    "anterior": "4,591,422",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": null
+   "detalla_a": "Cost of sales"
   },
   {
    "bloque": "b31",
@@ -262,7 +262,7 @@
    "anterior": "501,462",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": null
+   "detalla_a": "Cost of sales"
   },
   {
    "bloque": "b31",
@@ -272,7 +272,7 @@
    "anterior": "40,038",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": null
+   "detalla_a": "Cost of sales"
   },
   {
    "bloque": "b31",
@@ -282,7 +282,7 @@
    "anterior": "5,132,922",
    "tipo": "subtotal",
    "lado": "gasto",
-   "detalla_a": null
+   "detalla_a": "Cost of sales"
   }
  ],
  "total_ingresos": {
@@ -293,31 +293,31 @@
  "resultado": {
   "linea": 230,
   "actual": "(2,995,582)",
-  "anterior": "(2,030,615)"
+  "anterior": "(2,995,582)"
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan las remuneraciones de la nota 6 (L494-L497) como desglose sin asignarlas a un renglón específico del estado, ya que se reparten entre Cost of sales y Administrative expenses?",
+   "pregunta": "¿Se asignan los costos de personal de la nota 6 (L494-L497) a 'Cost of sales'?",
    "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "La nota 6 (L494-L497) no indica a qué renglón del estado corresponden los costos de personal.",
+   "tema": "perimetro",
+   "renglon": "Cost of sales",
+   "texto": "La nota 6 (L491-L497) no indica en qué renglón del estado se imputan las remuneraciones; podrían repartirse entre Cost of sales y Administrative expenses.",
    "bloques": [
     "b31"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   },
   {
-   "pregunta": "¿Se cargan las partidas de la nota 4 (L475-L477) y nota 5 (L482) como informativas, sin tratarlas como desglose completo de un renglón?",
+   "pregunta": "¿Se confirma que no existe un desglose específico de 'Salarios del plantel' y que el cuadro de remuneraciones (L494-L497) incluye todo el personal (236 personas)?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Operating loss",
-   "texto": "Son cargos incluidos en el resultado operativo (L475-L482), no un desglose exhaustivo; la asignación de auditoría a Administrative expenses es supuesta.",
+   "renglon": "Cost of sales",
+   "texto": "No hay renglón separado para salarios de jugadores; L494 'Wages and salaries' cubre jugadores, academia y oficina (L487-L490).",
    "bloques": [
     "b31"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Escala en libras (unidades). No hay total de gastos impreso. Las notas de gastos solo dan cargos informativos y costos de personal; la nota de Turnover suma exactamente al estado."
+ "observaciones": "Todo en £ unidades. Las cifras de la nota 4 son cargos incluidos en el resultado operativo, no un desglose completo. La nota 6 es el único cuadro de salarios; no separa el plantel. Resultado anterior: (2,030,615)."
 }

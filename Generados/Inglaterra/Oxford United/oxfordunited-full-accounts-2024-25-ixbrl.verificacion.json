@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.227Z",
+ "generado": "2026-10-24T15:02:21.084Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,7 +13,10 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "cffcc66",
+  "59b6b77"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -32,6 +35,11 @@
    "dif": 3.552713678800501e-15
   },
   {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
@@ -43,10 +51,12 @@
   }
  ],
  "notas": [
-  "duda de extraer ya contestada para el club (perimetro, \"Operating loss\"): aceptar, en oxfordunited-full-accounts-2024-25-ixbrl.pdf"
+  "la lectura base no cerraba; cerró con la lectura 2",
+  "duda de extraer ya contestada para el club (perimetro, \"Operating loss\"): aceptar, en oxfordunited-full-accounts-2024-25-ixbrl.pdf",
+  "duda de localizar contestada por la respuesta de Guido sobre el mismo cuadro (b31, to-do 211): el cuadro queda afuera. \"¿Se carga como desglose de ingresos y gastos el bloque b31 (Turnover por clase de negocio y empleados) y b33 (remuneración agregada, intereses)?\" | respondida: \"¿Se dejan afuera de la carga los cargos informativos de la nota 5 'Operating loss' (L483-L489) y la remuneración de personal (L512-L515), por no desglosar un renglón del estado sino estar repartidos entre Cost of sales y Administrative expenses?\""
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 19.952195,

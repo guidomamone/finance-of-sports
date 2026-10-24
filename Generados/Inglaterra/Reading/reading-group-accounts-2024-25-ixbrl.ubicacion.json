@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "91a89644c425c11e1debe12a64f431721af0ecb3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:43:50.673Z",
+ "generado": "2026-10-24T15:00:18.762Z",
  "perimetroClub": "consolidado",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -436,19 +437,30 @@
   "b37"
  ],
  "escala": "unidades",
- "escala_evidencia": "Las notas y estados se expresan en '£' (columnas 2025 £ / 2024 £), con importes completos como 9,805,651",
+ "escala_evidencia": "Las columnas de las notas están encabezadas con '£' y los importes son completos (p. ej. 9,805,651); el estado de resultados (b7) usa el mismo encabezado 2025 | 2024 en £.",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024 (As restated)",
- "perimetro": "consolidado",
+ "perimetro": "ambos",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga la columna 2024 del Group Profit and Loss Account (b7) con las cifras reexpresadas ('As restated'), con £10,706,194 reclasificados de administrative expenses a cost of sales?",
+   "pregunta": "¿Se cargan como salarios del plantel los 'Wages and salaries' + 'Social security costs' + 'Pension costs' del grupo (total 12,407,926) de la nota 6 (b35), aunque incluyen personal no jugador?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 6 no separa la remuneración de jugadores de la del resto del personal (283 empleados, de los cuales 50 son jugadores).",
+   "bloques": [
+    "b35"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se usa la columna 2024 'As restated' del estado de resultados (b7) como año anterior, con £10,706,194 reclasificados de gastos de administración a costo de ventas?",
    "propuesta": "sí",
    "tema": "columna",
    "renglon": "Cost of sales",
-   "texto": "La nota 28 (b52) informa una reclasificación de £10,706,194 en el comparativo 2024 sin impacto en el resultado.",
+   "texto": "La nota 28 (b52) informa una reclasificación del año anterior entre costo de ventas y gastos de administración.",
    "bloques": [
     "b7",
     "b52"
@@ -456,5 +468,5 @@
    "afecta_carga": true
   }
  ],
- "observaciones": "Estado consolidado: Group Profit and Loss Account (b7). Nota 3 turnover (b34) desglosa ingresos e interest income; b37 notas 8 y 9 (intereses cobrados y pagados); b35 nota 4 operating loss y costes de personal. No hay cuenta de resultados individual (solo balances company)."
+ "observaciones": "b7 es la cuenta de resultados consolidada (Group Profit and Loss Account). No hay cuenta de resultados individual; la sociedad solo presenta balance (b10) y estado de cambios en el patrimonio (b12). En la nota 6 las cifras del grupo y de la sociedad coinciden. La nota 3 (b34) abre la cifra de negocio (Turnover) e informa los ingresos por intereses. La nota 4 (b35) detalla amortizaciones, arrendamientos, honorarios del auditor y personal. Las notas 8 y 9 (b37) abren los intereses."
 }

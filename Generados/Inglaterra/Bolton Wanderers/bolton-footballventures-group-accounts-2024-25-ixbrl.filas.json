@@ -4,7 +4,7 @@
  "mdSha1": "9a6de728a1cc25e2a5c4ae34c403cac704bc5bf9",
  "ubicacionSha1": "435d0bce85b74277817a7539c954dff522c6990f",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T00:10:12.627Z",
+ "generado": "2026-10-24T14:56:16.818Z",
  "ubicacion": {
   "estado": [
    "b9"
@@ -22,22 +22,22 @@
   {
    "bloque": "b9",
    "escala": "unidades",
-   "evidencia": "L268: columnas en £"
+   "evidencia": "L268: columnas en '£'"
   },
   {
    "bloque": "b36",
    "escala": "unidades",
-   "evidencia": "L608: £"
+   "evidencia": "L608: '£'"
   },
   {
    "bloque": "b39",
    "escala": "unidades",
-   "evidencia": "L681: £"
+   "evidencia": "L681/L686: '£'"
   },
   {
    "bloque": "b37",
    "escala": "unidades",
-   "evidencia": "L637/L663: £"
+   "evidencia": "L637/L663: '£'"
   }
  ],
  "filas": [
@@ -67,7 +67,7 @@
    "etiqueta": "Gross profit",
    "actual": "172,698",
    "anterior": "3,330,047",
-   "tipo": "subtotal",
+   "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
   },
@@ -290,6 +290,46 @@
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b37",
+   "linea": 664,
+   "etiqueta": "Wages and salaries",
+   "actual": "16,503,342",
+   "anterior": "14,470,070",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 665,
+   "etiqueta": "Social security costs",
+   "actual": "1,759,852",
+   "anterior": "1,399,906",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 666,
+   "etiqueta": "Pension costs",
+   "actual": "205,691",
+   "anterior": "225,617",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 667,
+   "etiqueta": "",
+   "actual": "18,468,885",
+   "anterior": "16,095,593",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
   }
  ],
  "total_ingresos": {
@@ -299,32 +339,21 @@
  "total_gastos": null,
  "resultado": {
   "linea": 279,
-  "actual": "(14,361,894)",
+  "actual": "18,468,885",
   "anterior": "(11,150,424)"
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de partidas cargadas al resultado operativo de la nota 4 (L639-L642), por ser informativo y no un desglose de Cost of sales ni Administrative expenses?",
+   "pregunta": "¿Se cargan las remuneraciones de la nota 6 (L664-L667) como desglose informativo sin asignarlas a 'Cost of sales' ni 'Administrative expenses'?",
    "propuesta": "sí",
-   "tema": "perimetro",
+   "tema": "otro",
    "renglon": "",
-   "texto": "Las partidas de L639-L642 (amortizaciones, ganancia por venta de intangibles, leasing) están incluidas en varios renglones sin indicar cuál.",
-   "bloques": [
-    "b37"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones al personal (L664-L667), por no desglosar un renglón específico del estado?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "Los costos salariales de L664-L667 se reparten entre Cost of sales y Administrative expenses sin apertura.",
+   "texto": "La nota 6 no indica en qué renglón del estado se imputan los sueldos (repartidos entre Cost of sales y Administrative expenses); no hay fila específica de 'Salarios del plantel'.",
    "bloques": [
     "b37"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Se omitieron 'Other significant revenue - Interest income' (L625, duplica nota 7), la conciliación impositiva (L692-L699), honorarios de auditoría y dotación. No hay total de gastos impreso."
+ "observaciones": "No existe una fila 'Salarios del plantel' separada; el único dato de personal es 'Wages and salaries' (L664) del grupo, que incluye a todo el personal. Nota 4 (L639-L642) y nota 5 son partidas 'stated after charging', no desglose aditivo, por eso no se cargan. Columnas Company en nota 6 son '-'."
 }

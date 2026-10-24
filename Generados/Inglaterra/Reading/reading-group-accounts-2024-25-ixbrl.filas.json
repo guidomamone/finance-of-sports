@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "91a89644c425c11e1debe12a64f431721af0ecb3",
- "ubicacionSha1": "593396276a05b9f52e00766b5f367ff7d7957739",
+ "ubicacionSha1": "0c8d7477b8f0ba8c73d4dda37f443d3230ffb323",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:44:07.980Z",
+ "generado": "2026-10-24T15:00:39.280Z",
  "ubicacion": {
   "estado": [
    "b7"
@@ -67,7 +67,7 @@
    "etiqueta": "Gross profit/(loss)",
    "actual": "798,302",
    "anterior": "(704,646)",
-   "tipo": "resultado",
+   "tipo": "subtotal",
    "lado": "resultado",
    "detalla_a": null
   },
@@ -247,9 +247,49 @@
    "etiqueta": "Total finance costs",
    "actual": "138,204",
    "anterior": "86,674",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "financiero",
    "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b35",
+   "linea": 620,
+   "etiqueta": "Wages and salaries",
+   "actual": "11,031,245",
+   "anterior": "14,246,943",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b35",
+   "linea": 621,
+   "etiqueta": "Social security costs",
+   "actual": "1,250,202",
+   "anterior": "1,424,104",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b35",
+   "linea": 622,
+   "etiqueta": "Pension costs",
+   "actual": "126,479",
+   "anterior": "146,910",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b35",
+   "linea": 623,
+   "etiqueta": "",
+   "actual": "12,407,926",
+   "anterior": "15,817,957",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
   }
  ],
  "total_ingresos": {
@@ -264,27 +304,27 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se dejan afuera de la carga las partidas informativas de la nota 4 (L594-L596) y de honorarios de auditoría (L601-L603), por no desglosar un renglón del estado?",
+   "pregunta": "¿Se cargan las remuneraciones de la nota 6 (L620-L623, columna Group 2025) como desglose de gastos sin asignarlas a un renglón del estado, ya que se reparten entre 'Cost of sales' y 'Administrative expenses'?",
    "propuesta": "sí",
-   "tema": "perimetro",
+   "tema": "otro",
    "renglon": "",
-   "texto": "Son cargos incluidos en costos/gastos administrativos sin conciliar con un renglón (L594-L603).",
+   "texto": "La nota 6 no indica a qué renglón del estado corresponden los sueldos (L616-L623) y no hay un renglón 'Salarios del plantel' separado de otros empleados.",
    "bloques": [
     "b35"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones al personal (L620-L623), que cruza Cost of sales y Administrative expenses?",
+   "pregunta": "¿Se dejan afuera de la carga los cargos de la nota 4 (L594-L596) y honorarios de auditoría (L601-L603) por ser informativos y no un desglose sumable?",
    "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "Los costos de personal (L623: 12,407,926) se reparten entre dos renglones del estado sin indicar asignación.",
+   "tema": "otro",
+   "renglon": "Operating loss",
+   "texto": "Son partidas 'stated after charging' (L593) que no desglosan íntegramente ningún renglón.",
    "bloques": [
     "b35"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Cifras en £ (unidades). Columna anterior es 2024 reexpresada. No se imprime total de gastos. Cuadro 'Other revenue' L580 duplica el interés de la nota 8; no se extrajo."
+ "observaciones": "No hay renglón específico de salarios del plantel: la nota 6 solo da remuneración agregada del grupo (incluye jugadores, staff, administrativos). Columnas 2024 del estado son 'As restated'. 'Other revenue - Interest income' (L580) duplica L650 y no se carga."
 }

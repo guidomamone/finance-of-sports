@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.314Z",
+ "generado": "2026-10-24T15:02:21.364Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,7 +13,11 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "b492c1c",
+  "b28a1b4",
+  "94d04d1"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -43,12 +47,10 @@
   }
  ],
  "notas": [
-  "duda de localizar confirmada por las sumas (columna, \"Cost of sales\"): ¿Se carga la columna 2024 del Group Profit and Loss Account (b7) con las cifras reexpresadas ('As restated'), con £10,706,194 reclasificados de administrative expenses a cost of sales?",
-  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en reading-group-accounts-2024-25-ixbrl.pdf",
-  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en reading-group-accounts-2024-25-ixbrl.pdf"
+  "duda de localizar confirmada por las sumas (columna, \"Cost of sales\"): ¿Se usa la columna 2024 'As restated' del estado de resultados (b7) como año anterior, con £10,706,194 reclasificados de gastos de administración a costo de ventas?"
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 19.313917,

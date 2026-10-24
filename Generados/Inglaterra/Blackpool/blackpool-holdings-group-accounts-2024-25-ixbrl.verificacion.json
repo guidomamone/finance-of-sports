@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.045Z",
+ "generado": "2026-10-24T15:02:28.300Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,7 +13,11 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "c6544a9",
+  "e247f68",
+  "76fb7f1"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -32,11 +36,6 @@
    "dif": 8.881784197001252e-16
   },
   {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
-  },
-  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
@@ -48,11 +47,10 @@
   }
  ],
  "notas": [
-  "la lectura base no cerraba; cerró con la lectura 2",
-  "duda de localizar que no afecta la carga: Es un cuadro del informe estratégico que probablemente repite el desglose de la nota 3 de Turnover (b33)."
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 13.694539,
@@ -145,10 +143,10 @@
  "primerAnio": {
   "escalon": 3,
   "estado": "confirmado",
-  "clave": "8e5c4c2cad5c58798d4d0a5f3583e56459848dd6",
+  "clave": "b04aaa6ef2a22491b5905788f570d6780bac7e07",
   "rango": [
    185,
-   199
+   202
   ],
   "lineasCargadas": [
    531,
@@ -161,6 +159,6 @@
    191,
    195
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 185 a 199 del .md):\nL185: | 2025 | 2024 |  |  |\nL186: | --- | --- | --- | --- |\nL187: | Notes | £ | £ |  |\nL188: | Turnover | 3 | 10,897,627 | 12,045,643 |\nL189: | Cost of sales | (1,701,365) | (1,769,025) |  |\nL190: | Gross profit | 9,196,262 | 10,276,618 |  |\nL191: | Administrative expenses | (17,597,763) | (17,632,826) |  |\nL192: | Operating loss | 5 | (8,401,501) | (7,356,208) |\nL193: | Profit/ loss on disposal of player registrations | 7 | 2,796,912 | 2,281,092 |\nL194: | Loss before taxation | (5,604,589) | (5,075,116) |  |\nL195: | Tax on loss | 8 | (3,825) | 1,192,912 |\nL196: | Loss for the financial year | (5,608,414) | (3,882,204) |  |\nL197: | Loss for the financial year is attributable to: |  |  |  |\nL198: | - Owners of the parent company | (5,448,082) | (3,777,625) |  |\nL199: | - Non-controlling interests | (160,332) | (104,579) |  |\n\nLO QUE SE CARGA:\n- ingreso · \"Matchday\" · 4.026809 · L531 (de una nota)\n- ingreso · \"Football\" · 2.942362 · L532 (de una nota)\n- ingreso · \"Commercial\" · 1.847062 · L533 (de una nota)\n- ingreso · \"Hotel\" · 1.200252 · L534 (de una nota)\n- ingreso · \"Rental\" · 0.881142 · L535 (de una nota)\n- ingreso · \"Profit/ loss on disposal of player registrations\" · 2.796912 · L193\n- gasto · \"Cost of sales\" · 1.701365 · L189\n- gasto · \"Administrative expenses\" · 17.597763 · L191\n- impuesto · \"Tax on loss\" · -0.003825 · L195"
+  "user": "ESTADO DE RESULTADOS (líneas 185 a 202 del .md):\nL185: | 2025 | 2024 |  |  |\nL186: | --- | --- | --- | --- |\nL187: | Notes | £ | £ |  |\nL188: | Turnover | 3 | 10,897,627 | 12,045,643 |\nL189: | Cost of sales | (1,701,365) | (1,769,025) |  |\nL190: | Gross profit | 9,196,262 | 10,276,618 |  |\nL191: | Administrative expenses | (17,597,763) | (17,632,826) |  |\nL192: | Operating loss | 5 | (8,401,501) | (7,356,208) |\nL193: | Profit/ loss on disposal of player registrations | 7 | 2,796,912 | 2,281,092 |\nL194: | Loss before taxation | (5,604,589) | (5,075,116) |  |\nL195: | Tax on loss | 8 | (3,825) | 1,192,912 |\nL196: | Loss for the financial year | (5,608,414) | (3,882,204) |  |\nL197: | Loss for the financial year is attributable to: |  |  |  |\nL198: | - Owners of the parent company | (5,448,082) | (3,777,625) |  |\nL199: | - Non-controlling interests | (160,332) | (104,579) |  |\nL200: | (5,608,414) | (3,882,204) |  |  |\nL202: - 8 -\n\nLO QUE SE CARGA:\n- ingreso · \"Matchday\" · 4.026809 · L531 (de una nota)\n- ingreso · \"Football\" · 2.942362 · L532 (de una nota)\n- ingreso · \"Commercial\" · 1.847062 · L533 (de una nota)\n- ingreso · \"Hotel\" · 1.200252 · L534 (de una nota)\n- ingreso · \"Rental\" · 0.881142 · L535 (de una nota)\n- ingreso · \"Profit/ loss on disposal of player registrations\" · 2.796912 · L193\n- gasto · \"Cost of sales\" · 1.701365 · L189\n- gasto · \"Administrative expenses\" · 17.597763 · L191\n- impuesto · \"Tax on loss\" · -0.003825 · L195"
  }
 }

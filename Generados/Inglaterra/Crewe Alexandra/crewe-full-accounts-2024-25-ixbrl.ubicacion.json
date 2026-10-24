@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.md",
  "mdSha1": "2592cebcba749eae82529058384b2bb23692e018",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:41:17.116Z",
+ "generado": "2026-10-24T14:57:28.545Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -278,12 +279,24 @@
  "notas_ingresos": [],
  "notas_gastos": [],
  "escala": "unidades",
- "escala_evidencia": "Las notas del mismo documento están en '£' sin indicación de miles (ej. b22 '2025 £', b24 '2025 / £'); no se ve el encabezado de unidad propio del estado b6.",
+ "escala_evidencia": "Las notas del documento expresan los importes en '£' (p. ej. nota 4 Taxation: '2025 / £'), sin indicación de miles.",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [],
- "observaciones": "Cuentas individuales abreviadas (FRS 102 1A) de The Crewe Alexandra Football Club Company Limited. El estado de resultados es b6 (Statement of income and retained earnings: Turnover, Administrative expenses... hasta retained earnings). No hay notas que desglosen ingresos o gastos: b22 trae solo plantilla media (244) y el inicio de la nota de impuestos, y b24 es la conciliación del impuesto (excluida); b25-b28 son activo fijo y acreedores, b33 compromisos de arrendamiento."
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que el documento (cuentas abreviadas de pequeña empresa) no trae ningún cuadro que abra los gastos de personal / salarios del plantel, y por eso no se carga esa fila?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota 3 Employees (b22) solo informa el número medio de empleados (244 y 248), sin importes de sueldos.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual en b6 (Statement of Income and Retained Earnings, ejercicio cerrado el 30/06/2025). Son cuentas abreviadas: solo muestran Turnover y Administrative expenses, sin desglose de ingresos ni de gastos. La nota 3 (b22) informa únicamente la plantilla media, sin salarios, así que no se puede cargar 'Salarios del plantel'. Las notas de impuestos (b22, b24), de activo fijo (b25 a b27), de acreedores (b28) y de arrendamientos (b33) no corresponden a esta carga."
 }

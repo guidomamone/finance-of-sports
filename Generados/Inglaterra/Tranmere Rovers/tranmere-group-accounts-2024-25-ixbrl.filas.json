@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "81cb2264b3be0b0b72209bc137d7535ee8c9a68e",
- "ubicacionSha1": "5f7d757fe3592371f2733d63ff76cd22db0e8a2f",
+ "ubicacionSha1": "9f9c031498c2a1fcd2e5161561eae9d48e52cbde",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:45:41.010Z",
+ "generado": "2026-10-24T15:02:19.978Z",
  "ubicacion": {
   "estado": [
    "b7"
@@ -13,6 +13,7 @@
    "b38"
   ],
   "notas_gastos": [
+   "b38",
    "b39"
   ]
  },
@@ -20,17 +21,17 @@
   {
    "bloque": "b7",
    "escala": "unidades",
-   "evidencia": "L196: columnas en £"
+   "evidencia": "L196: Notes | £ | £"
   },
   {
    "bloque": "b38",
    "escala": "unidades",
-   "evidencia": "L665: £"
+   "evidencia": "L665: £ | £"
   },
   {
    "bloque": "b39",
    "escala": "unidades",
-   "evidencia": "L708/L716: £"
+   "evidencia": "L708: £ | £ | £ | £"
   }
  ],
  "filas": [
@@ -40,7 +41,7 @@
    "etiqueta": "Turnover",
    "actual": "5,763,379",
    "anterior": "5,979,371",
-   "tipo": "renglon",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
@@ -60,7 +61,7 @@
    "etiqueta": "Gross profit",
    "actual": "5,069,256",
    "anterior": "5,466,560",
-   "tipo": "subtotal",
+   "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
   },
@@ -155,26 +156,6 @@
    "detalla_a": null
   },
   {
-   "bloque": "b7",
-   "linea": 210,
-   "etiqueta": "- Owners of the parent company",
-   "actual": "(2,323,085)",
-   "anterior": "(1,163,064)",
-   "tipo": "renglon",
-   "lado": "otro",
-   "detalla_a": "Loss for the financial year"
-  },
-  {
-   "bloque": "b7",
-   "linea": 211,
-   "etiqueta": "- Non-controlling interests",
-   "actual": "(23,874)",
-   "anterior": "(8,856)",
-   "tipo": "renglon",
-   "lado": "otro",
-   "detalla_a": "Loss for the financial year"
-  },
-  {
    "bloque": "b38",
    "linea": 667,
    "etiqueta": "Football income",
@@ -226,46 +207,6 @@
   },
   {
    "bloque": "b39",
-   "linea": 709,
-   "etiqueta": "Wages and salaries",
-   "actual": "4,667,674",
-   "anterior": "4,083,614",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b39",
-   "linea": 710,
-   "etiqueta": "Social security costs",
-   "actual": "462,523",
-   "anterior": "367,520",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b39",
-   "linea": 711,
-   "etiqueta": "Pension costs",
-   "actual": "36,179",
-   "anterior": "32,529",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b39",
-   "linea": 712,
-   "etiqueta": "",
-   "actual": "5,166,376",
-   "anterior": "4,483,663",
-   "tipo": "subtotal",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b39",
    "linea": 718,
    "etiqueta": "Interest on bank deposits",
    "actual": "3,756",
@@ -307,33 +248,22 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan los costos de personal del grupo (L709-L712) sin asignarlos a un renglón del estado, ya que se reparten entre Cost of sales y Administrative expenses?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones de la nota 5 (L709-L712, Group 2025 £5,166,376), ya que no existe ningún renglón 'Salarios del plantel' y el gasto de personal está incluido en Administrative expenses/Cost of sales sin desglose por función?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "",
-   "texto": "La nota 5 (L709-L712) no indica a qué renglón del estado corresponde el gasto de personal; se tomó la columna Group 2025/2024.",
+   "renglon": "Administrative expenses",
+   "texto": "La nota 5 (L709-L712) informa costos de personal totales (no solo plantel) que no desglosan un renglón del estado; no hay fila 'Salarios del plantel' en el documento.",
    "bloques": [
     "b39"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se deja afuera de la carga la nota 4 'Operating loss' (L680-L686) por ser información de cargos incluidos y no un desglose sumable?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Operating loss",
-   "texto": "L680-L686 son partidas informativas (amortizaciones, honorarios, subsidios) que no desglosan un renglón de forma sumable.",
-   "bloques": [
-    "b38"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se deja afuera 'Interest income' de Other revenue (L673) por estar ya en Interest receivable (L203/L718)?",
+   "pregunta": "¿Se deja afuera Interest income (L673) de la nota 3 por duplicar el renglón Interest receivable ya desglosado en la nota 6?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "Interest receivable and similar income",
-   "texto": "L673 repite 3,756 ya cargado en L718.",
+   "texto": "L673 repite 3,756 que ya está en L718.",
    "bloques": [
     "b38",
     "b39"
@@ -341,5 +271,5 @@
    "afecta_carga": false
   }
  ],
- "observaciones": "El estado no imprime total de gastos. En b7 la cabecera desplaza columnas; se tomó primera cifra como 2025 y segunda como 2024 as restated. Notas en libras (£) sin escala."
+ "observaciones": "La nota 4 (L680-L686) son cargos informativos, no se cargan. El año anterior en el estado es '2024 as restated'; las notas dicen solo 2024. No hay renglón de salarios del plantel; los costos de personal totales del grupo son 5,166,376 (L712)."
 }

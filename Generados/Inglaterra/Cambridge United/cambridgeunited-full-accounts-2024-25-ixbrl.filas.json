@@ -4,7 +4,7 @@
  "mdSha1": "2750dc2bef73bbb8dcf425d32eedede94663ebcb",
  "ubicacionSha1": "3aa3baff7abc63e01afd65018f453ee214bb495c",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:41:05.374Z",
+ "generado": "2026-10-24T14:57:15.131Z",
  "ubicacion": {
   "estado": [
    "b6"
@@ -22,17 +22,17 @@
   {
    "bloque": "b6",
    "escala": "unidades",
-   "evidencia": "L217: columnas en '£'"
+   "evidencia": "L217: columnas en £"
   },
   {
    "bloque": "b26",
    "escala": "unidades",
-   "evidencia": "L459: '£ | £'"
+   "evidencia": "L459: £"
   },
   {
    "bloque": "b28",
    "escala": "unidades",
-   "evidencia": "L505: '£ | £'"
+   "evidencia": "L505: £"
   }
  ],
  "filas": [
@@ -172,7 +172,7 @@
    "etiqueta": "",
    "actual": "9,246,327",
    "anterior": "8,304,626",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": "Turnover"
   },
@@ -209,16 +209,17 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se dejan afuera de la carga los cargos informativos de la nota 4 (auditoría, depreciación, leasing, L470-L472) y la remuneración de personal de la nota 5 (L486-L489)?",
+   "pregunta": "¿Se deja afuera de la carga la nota 5 de remuneraciones (L486-L489: Wages and salaries 5,904,048, Social security 657,376, Pension 100,011) porque no detalla un renglón del estado sino que está repartida entre Cost of sales y Administrative expenses?",
    "propuesta": "sí",
-   "tema": "otro",
+   "tema": "perimetro",
    "renglon": "Administrative expenses",
-   "texto": "Son datos informativos que no desglosan completamente Cost of sales ni Administrative expenses y no se sabe en qué renglón están incluidos (L466-L489).",
+   "texto": "El documento no tiene una fila 'Salarios del plantel'; la nota 5 (L486) da salarios de todo el personal sin indicar en qué renglón del estado están, y el 2024 está reexpresado (L500).",
    "bloques": [
-    "b26"
+    "b26",
+    "b28"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Estado en libras (£). No se imprime total de gastos. Nota 9 (conciliación impositiva) no se carga por ser reconciliación; el cargo es cero. Comparativo de salarios 2024 reexpresado (L500) sin impacto en el estado."
+ "observaciones": "No existe renglón específico de salarios del plantel; la nota 5 da remuneración total del personal (Wages and salaries 5,904,048 en L486) sin asignación a Cost of sales/Administrative expenses. Nota 4 (L469-L472) son cargos informativos no extraídos como desglose. No hay total de gastos impreso."
 }

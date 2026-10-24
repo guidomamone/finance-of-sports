@@ -1,13 +1,13 @@
 {
  "md": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.md",
- "clave": "8e5c4c2cad5c58798d4d0a5f3583e56459848dd6",
- "generado": "2026-10-24T14:45:46.289Z",
+ "clave": "b04aaa6ef2a22491b5905788f570d6780bac7e07",
+ "generado": "2026-10-24T15:02:25.040Z",
  "fuente": "API",
  "datos": {
   "faltan": [],
   "sobran": [],
   "repetidas": [],
   "lado_equivocado": [],
-  "observacion": "La facturación (L188, 10,897,627) se reemplaza por su apertura de la nota (L531-L535), que suma 10,897,627. Los costos de ventas, los gastos administrativos, el resultado por venta de jugadores y el impuesto están cargados correctamente. No se cargaron subtotales. El resultado da -5,608,414, igual al impreso."
+  "observacion": "La facturación (L188, 10.897627) está reemplazada por sus partes de la nota (L531-L535), que suman 10.897627. Están cargados el costo de ventas, los gastos administrativos, la ganancia por venta de jugadores y el impuesto. No se cargaron subtotales. Lo cargado da un resultado de -5.608414, que coincide con el impreso."
  }
 }

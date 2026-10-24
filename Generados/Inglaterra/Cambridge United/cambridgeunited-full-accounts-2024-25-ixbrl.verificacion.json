@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.140Z",
+ "generado": "2026-10-24T15:02:20.945Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,7 +13,10 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "402189f",
+  "7641cd9"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,10 +48,10 @@
   }
  ],
  "notas": [
-  "duda de localizar confirmada por las sumas (columna, \"Wages and salaries\"): ¿Se cargan desde b26 los importes de 2024 de 'Wages and salaries' tal como figuran 'as restated' (5,377,623)?"
+  "duda de localizar que no afecta la carga: b28 indica que los comparativos de la nota de personal fueron reexpresados en -£343,015 sin afectar el estado de resultados."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 9.246327,

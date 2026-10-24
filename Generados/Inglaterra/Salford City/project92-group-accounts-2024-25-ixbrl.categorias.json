@@ -2,9 +2,9 @@
  "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
  "club": "salford-city",
  "year": 2025,
- "generatedAt": "2026-10-24T14:51:22.431Z",
- "rubrosHuella": "19cba26cba9b293bcc2cb46cc37882accb08a56e",
- "jevHuella": "6c8297a22c6515ae775b5e3cf773706b2ab3e6de",
+ "generatedAt": "2026-10-24T15:02:39.059Z",
+ "rubrosHuella": "e217e7fa24758f3b26aa32c76849d884c7c7dd94",
+ "jevHuella": "b213c26463bc8bfa01cb96fd4df95d1454074990",
  "modelo": "claude-opus-5-5",
  "costUsd": 0,
  "rubros": [
@@ -48,19 +48,6 @@
    "confianza": 0.98
   },
   {
-   "label": "Exceptional item",
-   "lado": "revenue",
-   "section": "estado",
-   "glosa": "Partida excepcional",
-   "page": 12,
-   "pendiente": false,
-   "ya": "other_income",
-   "escalon": 1,
-   "jevConf": 0.99,
-   "categoria": "other_income",
-   "confianza": 0.99
-  },
-  {
    "label": "Profit on disposal of players' registrations",
    "lado": "revenue",
    "section": "estado",
@@ -72,6 +59,19 @@
    "jevConf": 0.97,
    "categoria": "player_sales",
    "confianza": 0.97
+  },
+  {
+   "label": "Exceptional item",
+   "lado": "revenue",
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "glosa": "Partida excepcional",
+   "page": 12,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
   },
   {
    "label": "Administrative expenses",

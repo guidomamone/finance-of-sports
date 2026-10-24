@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.104Z",
+ "generado": "2026-10-24T15:02:20.872Z",
  "scriptHuella": "b0a6fdd2be99",
  "estado": "ok",
  "clubId": null,
@@ -28,8 +28,8 @@
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el documento no lo imprime"
+   "ok": true,
+   "detalle": "\"Turnover\" 8.105026 cierra; además se suman 2 línea(s) fuera de ese total (0.3615)"
   },
   {
    "nombre": "total de gastos",
@@ -55,10 +55,10 @@
  ],
  "notas": [
   "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en bristolrovers-full-accounts-2024-25-ixbrl.pdf",
-  "duda de extraer ya contestada para el club (perimetro, \"Operating loss\"): aceptar, en bristolrovers-full-accounts-2024-25-ixbrl.pdf"
+  "duda de localizar contestada por la respuesta de Guido sobre el mismo cuadro (b27, to-do 211): el cuadro queda afuera. \"¿Se carga el total de remuneraciones de la nota 6 (8,905,152, incluye todo el personal, no solo jugadores) como salarios del plantel/personal?\" | respondida: \"¿Se deja afuera de la carga el cuadro de remuneraciones de empleados (L464-L467) por no desglosar un renglón concreto del estado (se reparte entre Cost of sales y Administrative expenses)?\""
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 8.466526,

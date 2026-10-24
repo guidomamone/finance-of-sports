@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.371Z",
+ "generado": "2026-10-24T15:02:28.336Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,7 +13,10 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "1ed38cb",
+  "0a66192"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -32,6 +35,11 @@
    "dif": 3.552713678800501e-15
   },
   {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
@@ -43,12 +51,22 @@
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (escala, \"Turnover\"): aceptar, en project92-group-accounts-2024-25-ixbrl.pdf",
-  "duda de localizar que no afecta la carga: b37 muestra un ajuste de 61,000 al resultado 2024 previamente informado."
+  "la nota de \"Administrative expenses\" no suma el renglón (6.096649 contra 9.128845, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de localizar que no afecta la carga: La nota 4 abre el turnover solo en Matchday y Commercial; no hay renglón de TV.",
+  "duda de extraer que no afecta la carga: L624 son cargos incluidos en el resultado operativo, no un desglose completo; no se cargaron.",
+  "duda de extraer que no afecta la carga: No hay desglose de TV en L606-L608 (solo Matchday y Commercial) ni salarios del plantel separados en L660.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
- "reintentado": false,
- "faltasDesglose": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 6.096649,
+   "objetivo": 9.128845
+  }
+ ],
  "totales": {
   "ingresos": 36.721156,
   "gastos": 9.128845,
@@ -85,20 +103,20 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Exceptional item",
-   "lado": "ingreso",
-   "M": 31.502048,
-   "pagina": 12,
-   "linea": 210,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Profit on disposal of players' registrations",
    "lado": "ingreso",
    "M": 0.824387,
    "pagina": 12,
    "linea": 214,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Exceptional item",
+   "lado": "ingreso",
+   "M": 31.502048,
+   "pagina": 12,
+   "linea": 210,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
   },
   {
    "etiqueta": "Administrative expenses",
@@ -135,7 +153,7 @@
  "primerAnio": {
   "escalon": 3,
   "estado": "confirmado",
-  "clave": "52772ac49e1e28d774a3172562290014acb0ba2f",
+  "clave": "f9abab7d5c1cc532097fd13f0ca768b8d89a545f",
   "rango": [
    204,
    220
@@ -144,13 +162,13 @@
    607,
    608,
    209,
-   210,
    214,
+   210,
    208,
    212,
    213,
    216
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 204 a 220 del .md):\nL204: | 2025 | 2024 |  |  |\nL205: | --- | --- | --- | --- |\nL206: | Notes | £ | £ |  |\nL207: | Turnover | 4 | 4,386,721 | 3,821,508 |\nL208: | Administrative expenses | (9,128,845) | (9,203,171) |  |\nL209: | Other operating income | 8,000 | 8,000 |  |\nL210: | Exceptional item | 5 | 31,502,048 | - |\nL211: | Operating profit/(loss) | 6 | 26,767,924 | (5,373,663) |\nL212: | Interest receivable and similar income | 10 | 10,552 | 6,989 |\nL213: | Interest payable and similar expenses | 11 | (182,678) | (195,594) |\nL214: | Profit on disposal of players' registrations | 12 | 824,387 | 217,500 |\nL215: | Profit/(loss) before taxation | 27,420,185 | (5,344,768) |  |\nL216: | Tax on profit/(loss) | 13 | - | - |\nL217: | Profit/(loss) for the financial year | 25 | 27,420,185 | (5,344,768) |\nL219: Profit/(loss) for the financial year is all attributable to the owners of the parent company.\nL220: Total comprehensive income for the year is all attributable to the owners of the parent company.\n\nLO QUE SE CARGA:\n- ingreso · \"Matchday\" · 1.033949 · L607 (de una nota)\n- ingreso · \"Commercial\" · 3.352772 · L608 (de una nota)\n- ingreso · \"Other operating income\" · 0.008 · L209\n- ingreso · \"Exceptional item\" · 31.502048 · L210\n- ingreso · \"Profit on disposal of players' registrations\" · 0.824387 · L214\n- gasto · \"Administrative expenses\" · 9.128845 · L208\n- financiero · \"Interest receivable and similar income\" · 0.010552 · L212\n- financiero · \"Interest payable and similar expenses\" · -0.182678 · L213\n- impuesto · \"Tax on profit/(loss)\" · 0 · L216"
+  "user": "ESTADO DE RESULTADOS (líneas 204 a 220 del .md):\nL204: | 2025 | 2024 |  |  |\nL205: | --- | --- | --- | --- |\nL206: | Notes | £ | £ |  |\nL207: | Turnover | 4 | 4,386,721 | 3,821,508 |\nL208: | Administrative expenses | (9,128,845) | (9,203,171) |  |\nL209: | Other operating income | 8,000 | 8,000 |  |\nL210: | Exceptional item | 5 | 31,502,048 | - |\nL211: | Operating profit/(loss) | 6 | 26,767,924 | (5,373,663) |\nL212: | Interest receivable and similar income | 10 | 10,552 | 6,989 |\nL213: | Interest payable and similar expenses | 11 | (182,678) | (195,594) |\nL214: | Profit on disposal of players' registrations | 12 | 824,387 | 217,500 |\nL215: | Profit/(loss) before taxation | 27,420,185 | (5,344,768) |  |\nL216: | Tax on profit/(loss) | 13 | - | - |\nL217: | Profit/(loss) for the financial year | 25 | 27,420,185 | (5,344,768) |\nL219: Profit/(loss) for the financial year is all attributable to the owners of the parent company.\nL220: Total comprehensive income for the year is all attributable to the owners of the parent company.\n\nLO QUE SE CARGA:\n- ingreso · \"Matchday\" · 1.033949 · L607 (de una nota)\n- ingreso · \"Commercial\" · 3.352772 · L608 (de una nota)\n- ingreso · \"Other operating income\" · 0.008 · L209\n- ingreso · \"Profit on disposal of players' registrations\" · 0.824387 · L214\n- ingreso · \"Exceptional item\" · 31.502048 · L210\n- gasto · \"Administrative expenses\" · 9.128845 · L208\n- financiero · \"Interest receivable and similar income\" · 0.010552 · L212\n- financiero · \"Interest payable and similar expenses\" · -0.182678 · L213\n- impuesto · \"Tax on profit/(loss)\" · 0 · L216"
  }
 }

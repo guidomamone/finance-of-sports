@@ -1,22 +1,15 @@
 {
  "pdf": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.pdf",
- "generado": "2026-10-24T14:51:26.985Z",
+ "generado": "2026-10-24T15:02:39.713Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (bristolrovers-gb)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Football income\" -> lump_football_operations 0.55; \"Amortisation\" -> player_amortisation 0.75"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-21: Regla de perímetro 1: full accounts de Bristol Rovers (1883) Limited, un solo estado de resultados, el de la sociedad (actividad: sport clubs, .md L107))",
+  "categorías en 0 aun después del reintento (se carga así): Salarios del plantel",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -31,9 +24,9 @@
     "amountNative": 5.097286,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Other income",
@@ -83,9 +76,9 @@
     "amountNative": -0.709306,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Administrative expenses",
@@ -127,7 +120,7 @@
      "renglon": "Football income",
      "lado": "revenue",
      "importe": 5.097286,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Bristol Rovers 2024-25 .md L417 y política L292: la nota 3 solo divide Football income y Other income; el primero junta gate, TV y premios sin desglose (Claude 2026-10-24, subagente Sonnet; revisado contra el documento)"
     }
    ],
    "grossDebt": null,
@@ -189,11 +182,11 @@
    "origen": "verificacion (nota que desglosa \"Turnover\")",
    "signoFijo": 5.097286,
    "cat": "lump_football_operations",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Bristol Rovers 2024-25 .md L417 y política L292: la nota 3 solo divide Football income y Other income; el primero junta gate, TV y premios sin desglose (Claude 2026-10-24, subagente Sonnet; revisado contra el documento)",
    "destino": "revenue",
    "amountNative": 5.097286
   },
@@ -266,11 +259,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.709306,
    "cat": "player_amortisation",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Bristol Rovers 2024-25 .md L175, L432 y L520-530: amortización de contratos de jugadores (la nota de intangibles es «Player contracts», 709.306) (Claude 2026-10-24, subagente Sonnet; revisado contra el documento)",
    "destino": "expense",
    "amountNative": -0.709306
   },
@@ -321,12 +314,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "tax"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Salarios del plantel",
-   "lado": "gasto"
   }
  ],
  "signos": {
@@ -414,7 +401,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 4,
   "lineasGasto": 3,
   "metaFilas": 3,

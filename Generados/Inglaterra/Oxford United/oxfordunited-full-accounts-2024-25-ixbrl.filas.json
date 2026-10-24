@@ -2,16 +2,15 @@
  "pdf": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.md",
  "mdSha1": "93993c1f0ba1ce6ca4018e0b52094f0eb370fc8c",
- "ubicacionSha1": "1faf16f18581765e86b38217c9dbaec2021b6b33",
+ "ubicacionSha1": "163a18eefec483121d848c0b2672b127c6a0f319",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:42:31.417Z",
+ "generado": "2026-10-24T14:58:39.715Z",
  "ubicacion": {
   "estado": [
    "b8"
   ],
   "notas_ingresos": [
-   "b31",
-   "b33"
+   "b31"
   ],
   "notas_gastos": [
    "b31",
@@ -22,17 +21,17 @@
   {
    "bloque": "b8",
    "escala": "unidades",
-   "evidencia": "L183: columnas en £"
+   "evidencia": "L183: '£ | £'"
   },
   {
    "bloque": "b31",
    "escala": "unidades",
-   "evidencia": "L468: £"
+   "evidencia": "L468: '£ | £'"
   },
   {
    "bloque": "b33",
    "escala": "unidades",
-   "evidencia": "L511: £"
+   "evidencia": "L511: '£ | £'"
   }
  ],
  "filas": [
@@ -42,7 +41,7 @@
    "etiqueta": "Turnover",
    "actual": "18,999,871",
    "anterior": "8,439,071",
-   "tipo": "total",
+   "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
   },
@@ -62,7 +61,7 @@
    "etiqueta": "Gross loss",
    "actual": "(159,628)",
    "anterior": "(1,850,308)",
-   "tipo": "resultado",
+   "tipo": "subtotal",
    "lado": "resultado",
    "detalla_a": null
   },
@@ -359,17 +358,27 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se dejan afuera de la carga los cargos informativos de la nota 5 'Operating loss' (L483-L489) y la remuneración de personal (L512-L515), por no desglosar un renglón del estado sino estar repartidos entre Cost of sales y Administrative expenses?",
+   "pregunta": "¿Se dejan afuera de la carga las filas de remuneración de la nota 6 (L512-L515: Wages and salaries 19,033,235 etc.), ya que no desglosan un único renglón del estado sino que se reparten entre Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "La nota 6 (L509-L515) informa gastos de personal sin indicar a qué renglón del estado corresponden; no hay filas de 'Salarios del plantel' ni 'Cuotas sociales' en el documento.",
+   "bloques": [
+    "b33"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Operating loss is stated after charging' (L483-L489)?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "Operating loss",
-   "texto": "L483-L489 y L512-L515 son cargos incluidos en varios renglones (costo de ventas y gastos administrativos) y no suman a ninguno; además Amortisation (L488) ya está en L191.",
+   "texto": "L483-L489 son partidas informativas incluidas en distintos renglones, no un desglose aditivo del resultado operativo.",
    "bloques": [
-    "b31",
-    "b33"
+    "b31"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Estado en £ unidades. La columna anterior de L180-L182 corresponde a '2024 as restated'. La fila L189 sin etiqueta es subtotal tras otros ingresos operativos. No hay total de gastos impreso. Nota 4 sin cuadro (seguro). Nota 6 de empleados (cantidades) no extraída."
+ "observaciones": "No existen en el documento renglones 'Salarios del plantel' ni 'Cuotas sociales'; los ingresos de socios estarían en Gate receipts. Columna 2024 es 'as restated'. Other operating income (nota 4) no tiene desglose numérico."
 }

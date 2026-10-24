@@ -2,41 +2,41 @@
  "pdf": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "fe0e4b8bae20ad55e874c1a916c8aab3574b40ac",
- "ubicacionSha1": "503e266543c9df40c335279ade91b1c74bcc837b",
+ "ubicacionSha1": "1407e2c3d1bd58117af25534c90be44206cf2936",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:45:04.399Z",
+ "generado": "2026-10-24T15:01:47.835Z",
  "ubicacion": {
   "estado": [
    "b8"
   ],
   "notas_ingresos": [
-   "b38"
+   "b38",
+   "b41"
   ],
   "notas_gastos": [
-   "b39",
-   "b41"
+   "b39"
   ]
  },
  "escalas": [
   {
    "bloque": "b8",
    "escala": "unidades",
-   "evidencia": "L206: columnas '£'"
+   "evidencia": "L206: columnas en £"
   },
   {
    "bloque": "b38",
    "escala": "unidades",
-   "evidencia": "L605: '£'"
-  },
-  {
-   "bloque": "b39",
-   "escala": "unidades",
-   "evidencia": "L640/L659: '£'"
+   "evidencia": "L605: £"
   },
   {
    "bloque": "b41",
    "escala": "unidades",
-   "evidencia": "L676: '£'"
+   "evidencia": "L685: £"
+  },
+  {
+   "bloque": "b39",
+   "escala": "unidades",
+   "evidencia": "L659: £"
   }
  ],
  "filas": [
@@ -77,7 +77,7 @@
    "actual": "31,502,048",
    "anterior": "-",
    "tipo": "renglon",
-   "lado": "ingreso",
+   "lado": "otro",
    "detalla_a": null
   },
   {
@@ -187,7 +187,7 @@
    "actual": "(31,502,048)",
    "anterior": "-",
    "tipo": "renglon",
-   "lado": "ingreso",
+   "lado": "otro",
    "detalla_a": "Exceptional item"
   },
   {
@@ -219,6 +219,36 @@
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Profit on disposal of players' registrations"
+  },
+  {
+   "bloque": "b39",
+   "linea": 660,
+   "etiqueta": "Wages and salaries",
+   "actual": "5,528,584",
+   "anterior": "5,806,720",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b39",
+   "linea": 661,
+   "etiqueta": "Social security costs",
+   "actual": "568,065",
+   "anterior": "598,306",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b39",
+   "linea": 662,
+   "etiqueta": "",
+   "actual": "6,096,649",
+   "anterior": "6,405,026",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
   }
  ],
  "total_ingresos": null,
@@ -230,11 +260,11 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga la partida excepcional de L210 como ingreso positivo de 31,502,048 aunque la nota 5 (L618) la muestre entre paréntesis bajo 'Expenditure'?",
+   "pregunta": "¿Se trata el 'Exceptional item' (L210, 31,502,048, condonación de deudas con partes relacionadas) como resultado no operativo/otro y no como ingreso ordinario?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Exceptional item",
-   "texto": "L618 muestra (31,502,048) bajo 'Expenditure' pero L620 dice que se acreditó a resultados, y el estado la suma al resultado operativo.",
+   "texto": "L618 lo muestra con signo negativo bajo 'Expenditure' pero en el estado suma como ganancia; es una condonación única.",
    "bloques": [
     "b8",
     "b38"
@@ -242,18 +272,28 @@
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se dejan afuera de la carga los cuadros de la nota 6 (L625-L628), honorarios de auditoría (L642-L644), remuneraciones (L660-L662) y directores (L677-L681) por ser información de cargos incluidos en 'Administrative expenses' sin desglose completo?",
+   "pregunta": "¿Se deja afuera la nota 6 (L625-L628: Exchange losses, depreciación, amortización) como detalle informativo incluido en Administrative expenses?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Administrative expenses",
-   "texto": "Son detalles parciales de gastos ya incluidos en Administrative expenses, no un desglose que lo sume.",
+   "texto": "L624 son cargos incluidos en el resultado operativo, no un desglose completo; no se cargaron.",
+   "bloques": [
+    "b38"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Es correcto que no existen renglones 'Salarios del plantel' ni 'Televisión' en este documento y se usa 'Wages and salaries' (L660) como salarios totales del grupo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "No hay desglose de TV en L606-L608 (solo Matchday y Commercial) ni salarios del plantel separados en L660.",
    "bloques": [
     "b38",
-    "b39",
-    "b41"
+    "b39"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "Estado en libras (£). Sin totales impresos de ingresos ni gastos. 'Interest income' de L613 repite el renglón financiero y no se carga como ingreso operativo."
+ "observaciones": "Cifras en libras. Turnover sin línea de TV (Liga Two). Las notas 7, 9 de auditoría y directores no se cargaron por ser informativas. Salarios: columna Group 2025/2024 de L660-L662; neto de recargos por préstamos £205,398 (L673)."
 }

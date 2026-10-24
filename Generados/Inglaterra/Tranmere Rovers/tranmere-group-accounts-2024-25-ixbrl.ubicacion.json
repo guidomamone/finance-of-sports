@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "81cb2264b3be0b0b72209bc137d7535ee8c9a68e",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:45:20.271Z",
+ "generado": "2026-10-24T15:02:02.879Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -535,38 +536,40 @@
   "b38"
  ],
  "notas_gastos": [
+  "b38",
   "b39"
  ],
  "escala": "unidades",
- "escala_evidencia": "Los importes vienen en £ con cifras completas (ej. 'Football income 4,038,379'; el encabezado de las notas indica '£').",
+ "escala_evidencia": "Las notas y estados se expresan en £ sin indicación de miles (encabezados '£'); importes como 4,038,379 y (2,346,959).",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024 as restated",
- "perimetro": "consolidado",
+ "perimetro": "ambos",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se cargan como desglose las filas de la nota 3 'Other revenue' (Interest income, Grants received, Sundry income) del bloque b38, aunque no formen parte de Turnover?",
+   "pregunta": "¿Se cargan como salarios del plantel los 'Wages and salaries' totales del grupo (4,667,674) de la nota 5 (b39), aunque incluyen personal no jugador?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Other revenue",
-   "texto": "La nota 3 (b38) abre Turnover en Football/Commercial y aparte lista otros ingresos que probablemente van en otros renglones del estado b7.",
-   "bloques": [
-    "b38"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se usa la columna 'Group' (no 'Company') de la nota 5 de remuneraciones (b39) para desglosar los gastos de personal?",
-   "propuesta": "sí",
-   "tema": "perimetro",
    "renglon": "Wages and salaries",
-   "texto": "La nota 5 (b39) presenta columnas Group y Company; el estado elegido (b7) es el consolidado.",
+   "texto": "La nota 5 no separa salarios de jugadores de los del resto del personal; solo da el total de remuneraciones del grupo y de la compañía.",
    "bloques": [
     "b39"
    ],
    "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se usan las columnas 'Group' (no 'Company') de la nota 5 de empleados en b39?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 5 muestra columnas de grupo y compañía; el estado elegido (b7) es el consolidado del grupo.",
+   "bloques": [
+    "b39",
+    "b7"
+   ],
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado de resultados consolidado del grupo: b7 (Group Profit and Loss Account, pág. 12). No se encontró una cuenta de resultados individual de la compañía (no aparece en el índice). La columna 2024 está reexpresada ('as restated'; ver las conciliaciones en b59, b62, b64 y b65, que no se cargan). b8 es el estado de resultado integral y no se carga. Notas: la nota 3 (b38) desglosa Turnover y otros ingresos; la nota 4 (en b38) detalla cargos incluidos en el resultado operativo. En b39 se usan las remuneraciones de la nota 5 y los intereses de las notas 6 y 7. La nota 9 de impuestos (b40) es una conciliación y no se carga."
+ "observaciones": "El estado de resultados es el Group Profit and Loss Account (b7, consolidado); no hay cuenta de resultados individual impresa, aunque la nota 5 (b39) trae columnas Group y Company: usar Group. b38 abre Turnover en Football income y Commercial income y detalla cargos del resultado operativo (amortizaciones, depreciaciones). b39 abre costos de personal (Wages and salaries, Social security, Pension), intereses e importes de inversiones. La columna 2024 está reexpresada (as restated)."
 }

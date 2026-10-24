@@ -2,43 +2,36 @@
  "pdf": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.md",
  "mdSha1": "ff4d63b97867369c61815efb61de261d1929d062",
- "ubicacionSha1": "345af330759cd13bbc9e887a23596d686aff16ba",
+ "ubicacionSha1": "99d3dadd2f79aafdb3972bc66652c040982d7f14",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:40:39.488Z",
+ "generado": "2026-10-24T14:56:45.459Z",
  "ubicacion": {
   "estado": [
    "b5"
   ],
   "notas_ingresos": [
-   "b26",
-   "b27"
+   "b26"
   ],
   "notas_gastos": [
    "b26",
-   "b27",
-   "b28"
+   "b27"
   ]
  },
  "escalas": [
   {
    "bloque": "b5",
    "escala": "unidades",
-   "evidencia": "L172: columnas '£'"
+   "evidencia": "L172: columnas en £"
   },
   {
    "bloque": "b26",
    "escala": "unidades",
-   "evidencia": "L415: '£'"
+   "evidencia": "L415: £"
   },
   {
    "bloque": "b27",
    "escala": "unidades",
-   "evidencia": "L463: '£'"
-  },
-  {
-   "bloque": "b28",
-   "escala": "unidades",
-   "evidencia": "L492: '£'"
+   "evidencia": "L463: £"
   }
  ],
  "filas": [
@@ -48,7 +41,7 @@
    "etiqueta": "Turnover",
    "actual": "8,105,026",
    "anterior": "7,465,794",
-   "tipo": "renglon",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
@@ -198,9 +191,49 @@
    "etiqueta": "",
    "actual": "8,105,026",
    "anterior": "7,465,794",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b27",
+   "linea": 464,
+   "etiqueta": "Wages and salaries",
+   "actual": "8,101,511",
+   "anterior": "7,208,115",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 465,
+   "etiqueta": "Social security costs",
+   "actual": "775,766",
+   "anterior": "705,236",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 466,
+   "etiqueta": "Pension costs",
+   "actual": "27,875",
+   "anterior": "24,384",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 467,
+   "etiqueta": "",
+   "actual": "8,905,152",
+   "anterior": "7,937,735",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
   },
   {
    "bloque": "b27",
@@ -231,49 +264,12 @@
    "tipo": "subtotal",
    "lado": "financiero",
    "detalla_a": "Interest receivable and similar income"
-  },
-  {
-   "bloque": "b28",
-   "linea": 493,
-   "etiqueta": "Interest on bank overdrafts and loans",
-   "actual": "256,521",
-   "anterior": "253,223",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": "Interest payable and similar expenses"
-  },
-  {
-   "bloque": "b28",
-   "linea": 494,
-   "etiqueta": "Interest on finance leases and hire purchase contracts",
-   "actual": "21,071",
-   "anterior": "30,714",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": "Interest payable and similar expenses"
-  },
-  {
-   "bloque": "b28",
-   "linea": 495,
-   "etiqueta": "Other interest",
-   "actual": "3,746",
-   "anterior": "-",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": "Interest payable and similar expenses"
-  },
-  {
-   "bloque": "b28",
-   "linea": 496,
-   "etiqueta": "",
-   "actual": "281,338",
-   "anterior": "283,937",
-   "tipo": "subtotal",
-   "lado": "financiero",
-   "detalla_a": "Interest payable and similar expenses"
   }
  ],
- "total_ingresos": null,
+ "total_ingresos": {
+  "linea": 173,
+  "actual": "8,105,026"
+ },
  "total_gastos": null,
  "resultado": {
   "linea": 185,
@@ -282,28 +278,17 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones de empleados (L464-L467) por no desglosar un renglón concreto del estado (se reparte entre Cost of sales y Administrative expenses)?",
+   "pregunta": "¿Se carga el cuadro de remuneraciones (L464-L467) como desglose de gastos de personal sin asignarlo a un renglón del estado, ya que se reparte entre Cost of sales y Administrative expenses?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "",
-   "texto": "El total de personal 8,905,152 (L467) no corresponde a ningún renglón del estado y mezclaría costos.",
+   "texto": "No hay renglón 'Salarios del plantel'; la nota 6 (L464-L467) da salarios de todo el personal sin indicar a qué renglón del estado detalla.",
    "bloques": [
-    "b27"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera la nota 4 (L431-L434) como información de cargos incluidos en el resultado operativo y no desglose de renglones?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "Operating loss",
-   "texto": "La nota 4 lista partidas incluidas en el resultado operativo sin cuadrar con un renglón; amortización y venta de intangibles ya están en el estado (L175-L176).",
-   "bloques": [
-    "b26",
+    "b27",
     "b5"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Se excluyeron mercado geográfico (L423, duplica Turnover), 'Other revenue' de nota 3 (L427, duplica intereses), honorarios de auditoría, cantidad de empleados, remuneración de directores y conciliación impositiva (L501-L508). El estado no imprime total de ingresos ni de gastos."
+ "observaciones": "No existe un renglón 'Salarios del plantel' en el documento; el único dato de salarios es la nota 6 (L464-L467) que abarca a todos los empleados. Se omitió la nota 4 (cargos informativos ya incluidos en el estado), la apertura geográfica (L423), la nota 3 'Other revenue' (L427, duplica intereses) y las notas 5 y 7 (informativas)."
 }

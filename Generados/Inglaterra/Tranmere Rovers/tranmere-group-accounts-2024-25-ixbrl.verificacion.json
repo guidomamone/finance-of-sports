@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.403Z",
+ "generado": "2026-10-24T15:02:21.552Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,7 +13,10 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "aa62303",
+  "77c8bd8"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -47,11 +50,10 @@
  "notas": [
   "la nota de \"Other operating income\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar ya contestada para el club (perimetro, \"Wages and salaries\"): aceptar, en tranmere-group-accounts-2024-25-ixbrl.pdf",
-  "duda de extraer que no afecta la carga: La nota 5 (L709-L712) no indica a qué renglón del estado corresponde el gasto de personal; se tomó la columna Group 2025/2024.",
-  "duda de extraer que no afecta la carga: L673 repite 3,756 ya cargado en L718."
+  "duda de extraer que no afecta la carga: L673 repite 3,756 que ya está en L718."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 5.773238,

@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "9aa01037c4637bb3539f129ee84fbdbf687fecc4",
- "ubicacionSha1": "ef6cf1c766b0e81b9edbdd2d1de6bf25ef9b318f",
+ "ubicacionSha1": "f6941fecc6019138098a9e11021d76bcf0c0523d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:40:13.684Z",
+ "generado": "2026-10-24T14:55:42.972Z",
  "ubicacion": {
   "estado": [
    "b7"
@@ -14,6 +14,7 @@
   ],
   "notas_gastos": [
    "b35",
+   "b36",
    "b37"
   ]
  },
@@ -21,22 +22,22 @@
   {
    "bloque": "b7",
    "escala": "unidades",
-   "evidencia": "L187: columnas en £"
+   "evidencia": "L187: Notes | £ | £"
   },
   {
    "bloque": "b33",
    "escala": "unidades",
-   "evidencia": "L529: £"
+   "evidencia": "L529: £ | £"
   },
   {
    "bloque": "b35",
-   "escala": "no se sabe",
-   "evidencia": "No se imprime la moneda en el fragmento; presumiblemente £"
+   "escala": "unidades",
+   "evidencia": "Sin encabezado de moneda visible; importes en £ como el resto (L563-L567)"
   },
   {
    "bloque": "b37",
    "escala": "unidades",
-   "evidencia": "L590/L597: £"
+   "evidencia": "L590: £ | £ | £ | £"
   }
  ],
  "filas": [
@@ -46,7 +47,7 @@
    "etiqueta": "Turnover",
    "actual": "10,897,627",
    "anterior": "12,045,643",
-   "tipo": "renglon",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
@@ -66,7 +67,7 @@
    "etiqueta": "Gross profit",
    "actual": "9,196,262",
    "anterior": "10,276,618",
-   "tipo": "subtotal",
+   "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
   },
@@ -131,6 +132,26 @@
    "detalla_a": null
   },
   {
+   "bloque": "b7",
+   "linea": 198,
+   "etiqueta": "- Owners of the parent company",
+   "actual": "(5,448,082)",
+   "anterior": "(3,777,625)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 199,
+   "etiqueta": "- Non-controlling interests",
+   "actual": "(160,332)",
+   "anterior": "(104,579)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
    "bloque": "b33",
    "linea": 531,
    "etiqueta": "Matchday",
@@ -192,6 +213,46 @@
   },
   {
    "bloque": "b37",
+   "linea": 591,
+   "etiqueta": "Wages and salaries",
+   "actual": "9,858,409",
+   "anterior": "9,486,569",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 592,
+   "etiqueta": "Social security costs",
+   "actual": "1,031,380",
+   "anterior": "941,865",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 593,
+   "etiqueta": "Pension costs",
+   "actual": "75,222",
+   "anterior": "88,389",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 594,
+   "etiqueta": "",
+   "actual": "10,965,011",
+   "anterior": "10,516,823",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
    "linea": 598,
    "etiqueta": "Profit on disposal of player registrations",
    "actual": "2,796,912",
@@ -223,27 +284,27 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de partidas cargadas al resultado operativo (L563-L567: diferencias de cambio 1,271, depreciación, amortización)?",
+   "pregunta": "¿Se cargan los costos de personal de la nota 6 (L591-L594, columna Group) como desglose sin vincular a un renglón del estado, ya que no hay renglón 'Salarios del plantel' y abarcan Cost of sales y Administrative expenses?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Administrative expenses",
-   "texto": "L561-L567 son cargos informativos que no desglosan un renglón concreto del estado y la fila L563 tiene la etiqueta desplazada.",
-   "bloques": [
-    "b35"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones del personal (L591-L594, total 10,965,011)?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Administrative expenses",
-   "texto": "Costos de personal (L591-L594) repartidos entre costo de ventas y administración sin renglón directo en el estado.",
+   "renglon": "",
+   "texto": "L587-L594: el cuadro de remuneraciones no detalla un único renglón del estado; no existe una fila específica de salarios del plantel.",
    "bloques": [
     "b37"
    ],
    "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga las partidas 'stated after charging' de b35 (L563-L567: diferencias de cambio, depreciación, amortización)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "L561-L567 son revelaciones informativas incluidas dentro de los gastos, no un desglose aditivo.",
+   "bloques": [
+    "b35"
+   ],
+   "afecta_carga": true
   }
  ],
- "observaciones": "Total de gastos no impreso. Cuadro geográfico L540 (UK) omitido por duplicar el total de Turnover. Atribución a controlantes/minoritarios (L198-L200) no extraída como partida."
+ "observaciones": "Escala en libras (unidades). No hay total de gastos impreso. Cuadro de empleados en número (L573-L576) excluido por no ser importes. Mercado geográfico UK (L540) duplica el total de Turnover, no se cargó."
 }

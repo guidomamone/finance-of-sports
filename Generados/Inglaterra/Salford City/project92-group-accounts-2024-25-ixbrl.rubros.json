@@ -3,7 +3,7 @@
   "pdf": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.pdf",
   "club": "salford-city",
   "year": 2025,
-  "generatedAt": "2026-10-24T14:45:42.430Z",
+  "generatedAt": "2026-10-24T15:02:21.495Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -37,16 +37,6 @@
       "glosa": "Otros ingresos de explotación"
     },
     {
-      "label": "Exceptional item",
-      "lado": "revenue",
-      "page": 12,
-      "section": "estado",
-      "values": [
-        31.502048
-      ],
-      "glosa": "Partida excepcional"
-    },
-    {
       "label": "Profit on disposal of players' registrations",
       "lado": "revenue",
       "page": 12,
@@ -55,6 +45,16 @@
         0.824387
       ],
       "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Exceptional item",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        31.502048
+      ],
+      "glosa": "Partida excepcional"
     },
     {
       "label": "Administrative expenses",

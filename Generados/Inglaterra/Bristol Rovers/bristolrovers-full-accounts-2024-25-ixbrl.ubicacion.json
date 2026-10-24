@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.md",
  "mdSha1": "ff4d63b97867369c61815efb61de261d1929d062",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:40:21.055Z",
+ "generado": "2026-10-24T14:56:27.821Z",
  "perimetroClub": "individual",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -332,16 +333,14 @@
   "b5"
  ],
  "notas_ingresos": [
-  "b26",
-  "b27"
+  "b26"
  ],
  "notas_gastos": [
   "b26",
-  "b27",
-  "b28"
+  "b27"
  ],
  "escala": "unidades",
- "escala_evidencia": "Las tablas indican '£' como unidad (p. ej. b6, b8, b26: '£'); importes impresos completos (ej. 1,280,000).",
+ "escala_evidencia": "Las notas y el estado de resultado integral expresan importes en '£' sin indicación de miles (ej. Wages and salaries 8,101,511).",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
@@ -349,18 +348,16 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se cargan como desglose del estado los cuadros de la nota 3 (b26: turnover por clase de negocio, otros ingresos, cargos operativos), de las notas 6-8 (b27: empleados, costes de personal, ingresos financieros) y de la nota 9 (b28: intereses a pagar), excluyendo las filas de número de empleados y de conciliación de impuestos?",
+   "pregunta": "¿Se carga el total de remuneraciones de la nota 6 (8,905,152, incluye todo el personal, no solo jugadores) como salarios del plantel/personal?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "",
-   "texto": "Los bloques mezclan desgloses de renglones del P&L con datos no monetarios y conciliación fiscal, que no deben cargarse.",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 6 (b27) no separa sueldos de jugadores de los del resto del personal; solo da cantidad de empleados por categoría.",
    "bloques": [
-    "b26",
-    "b27",
-    "b28"
+    "b27"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Cuentas individuales de Bristol Rovers Football Club Limited, sin consolidado. Estado de resultados: b5 (Profit and loss account, pág. 11). b6 es el estado de resultado integral (solo repite la pérdida) y no se elige. b26 abre Turnover y cargos operativos; b27 abre los costes de personal e ingresos financieros; b28 abre los intereses a pagar y el impuesto. El resto son balance, patrimonio, intangibles de jugadores, deudas, leasing y partes relacionadas, que quedan afuera."
+ "observaciones": "Estado de resultados individual de Bristol Rovers Football Club Limited (b5), sin consolidado. b26 abre Turnover (Football income / Other income) y cargos operativos (amortizaciones, resultado por venta de intangibles); b27 abre gastos de personal (sueldos, cargas sociales, pensiones) e ingresos por intereses. Las notas 7 (directores) y 8 están en b27; la nota 9 (intereses) y el impuesto en b28 no fueron vistos completos pero son renglones financieros menores."
 }

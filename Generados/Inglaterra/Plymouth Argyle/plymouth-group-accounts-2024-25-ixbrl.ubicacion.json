@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "aa1d97158db51d91cf29fa33ff3f7b7bf4587467",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:43:22.449Z",
+ "generado": "2026-10-24T14:59:30.509Z",
  "perimetroClub": "consolidado",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -527,10 +528,11 @@
   "b38"
  ],
  "notas_gastos": [
-  "b39"
+  "b39",
+  "b41"
  ],
  "escala": "unidades",
- "escala_evidencia": "Encabezado del estado: 'Notes | £ | £' (importes en libras, sin indicación de miles)",
+ "escala_evidencia": "Las notas muestran '£' como unidad en el encabezado de columnas (ej. b38 '2025 | 2024 / £ | £'), con importes completos como 28,827,859",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
@@ -538,17 +540,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Falta en la transcripción el desglose de la nota 4 'Other operating income' (8,871,293), que aparece solo como título al final de b38?",
+   "pregunta": "¿Se carga 'Wages and salaries' de la nota 7 (b41, columna Group 2025: 19,123,343) como total de salarios, sin separar el plantel?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Other operating income",
-   "texto": "b38 termina con el título de la nota 4 sin cifras y b39 empieza en la nota 5; el desglose (probablemente incluye la ganancia por venta de jugadores de 6,138,876) no está en ningún bloque indexado.",
+   "renglon": "Wages and salaries",
+   "texto": "La nota de personal (b41) no separa jugadores del resto del personal; no hay renglón específico de salarios del plantel.",
    "bloques": [
-    "b38",
-    "b39"
+    "b41"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma 'Memberships, streaming and advertising' (b38, 1,580,152) como el renglón más cercano a cuotas sociales, aunque mezcla streaming y publicidad?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Memberships, streaming and advertising",
+   "texto": "La nota de turnover (b38) no tiene un renglón exclusivo de cuotas sociales; el único que menciona memberships agrupa también streaming y publicidad.",
+   "bloques": [
+    "b38"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Estado de resultados consolidado (Group Statement of Comprehensive Income) en b13; no hay cuenta de resultados individual de la compañía. b38 abre Turnover por clase de negocio (suma 28,827,859, coincide). b39 nota 5 detalla amortizaciones, depreciación y ganancia por enajenación de intangibles; el resto de b39 (honorarios de auditoría, empleados) es informativo. El desglose de costes de personal (nota 8) no aparece en los bloques indexados. Se excluyen KPIs (b5-b6), balance, patrimonio, flujos, activos fijos e impuestos."
+ "observaciones": "Estado de resultados consolidado del grupo en b13 (Group Statement of Comprehensive Income). b38 contiene la nota 3 de Turnover por clase de negocio. b39 contiene la nota 5 (cargos operativos: amortización, beneficio por venta de intangibles) y la nota 7 de empleados (solo cantidades). b41 abre los costos de personal usando la columna Group; las columnas Company se ignoran. Los KPIs de b5 y b6 no se cargan."
 }

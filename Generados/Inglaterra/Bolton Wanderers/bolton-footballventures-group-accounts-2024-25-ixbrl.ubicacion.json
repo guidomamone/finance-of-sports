@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "9a6de728a1cc25e2a5c4ae34c403cac704bc5bf9",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T00:09:53.486Z",
+ "generado": "2026-10-24T14:55:56.442Z",
  "perimetroClub": "consolidado",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -444,12 +445,24 @@
   "b39"
  ],
  "escala": "unidades",
- "escala_evidencia": "Las notas indican '£' como unidad en el encabezado de columnas (2025 £ / 2024 £), importes impresos completos (ej. 425,457).",
+ "escala_evidencia": "Las notas imprimen '£' en el encabezado de columnas (ej. nota 4 y 6: '2025 / £'), importes completos como 16,503,342",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
  "perimetro": "consolidado",
  "necesito_ver": [],
- "dudas": [],
- "observaciones": "Estado consolidado: Group Statement of Comprehensive Income (b9). No se imprime cuenta de resultados individual. b36 desglosa turnover por clase de negocio e ingresos por intereses; b37 desglosa el resultado operativo y los costes de personal; b39 abre los intereses cobrados (nota 7) y pagados (nota 8); la conciliación fiscal de b39 no se carga."
+ "dudas": [
+  {
+   "pregunta": "¿Se carga como 'Salarios del plantel' el total de remuneraciones de la nota 6 (18,468,885 en 2025), aunque incluya a todo el personal del grupo y no solo a los jugadores?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 6 (b37) no separa salarios de jugadores del resto del personal (447 empleados, 67 jugadores).",
+   "bloques": [
+    "b37"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados consolidado: b9 (Group Statement of Comprehensive Income, ejercicio cerrado el 30-06-2025). Notas: b36 (nota 3, Turnover por clase de negocio), b37 (nota 4 amortizaciones y resultado por venta de intangibles, nota 6 costes de personal del grupo), b39 (notas 7 y 8 intereses). La nota 9 de impuestos en b39 es una conciliación y no se carga. No hay estado de resultados individual; los balances de la sociedad (b11, b13) se excluyen."
 }

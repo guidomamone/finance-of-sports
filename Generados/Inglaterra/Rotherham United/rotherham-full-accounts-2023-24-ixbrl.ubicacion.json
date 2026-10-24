@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.md",
  "mdSha1": "76bfcdd3a70ca0e943bf77f45e307fac71996a9e",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:44:20.471Z",
+ "generado": "2026-10-24T15:00:53.852Z",
  "perimetroClub": "individual",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -263,16 +264,27 @@
   "b23"
  ],
  "notas_gastos": [
-  "b24",
-  "b25"
+  "b24"
  ],
  "escala": "unidades",
- "escala_evidencia": "Las notas indican '£' en el encabezado de columna (ej. b24/b25: '2024 | 2023 / £ | £'); los importes están impresos completos (ej. 11,417,943).",
+ "escala_evidencia": "Las notas muestran '£' sin indicación de miles (ej. Turnover 19,172,906)",
  "moneda": "GBP",
  "columna_ejercicio": "2024",
  "columna_anterior": "2023",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [],
- "observaciones": "Estado de resultados individual de Rotherham United Football Club (RUFC) Limited (b11, Statement of Comprehensive Income al 30-06-2024). b23 (nota 3) desglosa el turnover e incluye otras partidas (amortización y beneficio por venta de intangibles). b24 contiene la nota de empleados, con la remuneración que abre los gastos de personal, y los intereses. b25 es la nota de impuestos: se usa la parte del impuesto corriente; la conciliación no se carga. Se excluyen b7 y b9 (KPIs de la memoria), b12 (evolución del patrimonio), b13 (balance), b27 (intangibles/existencias), b28 (deudores) y b30 (deudas)."
+ "dudas": [
+  {
+   "pregunta": "¿Se usa la tabla del informe estratégico b7 (pág. 6, en miles) para abrir 'Match income & season tickets' en Match Day Income 1,135 y Season Tickets 1,744, y 'Central distributions' en First Team/Academy?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Match income & season tickets",
+   "texto": "b7 está en el informe estratégico, en miles, y abre renglones que la nota 3 no desglosa; sus totales coinciden con la nota 3 (19,173).",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados individual (Statement of Comprehensive Income) en b11. La nota 3 (b23) desglosa el Turnover; la nota 4 (en b23) detalla amortizaciones y resultado por disposición de registros de jugadores. La nota 6 (b24) abre los gastos de personal: Wages and salaries, Employers NI, Class 1 NI y pensiones. No hay apertura de salarios del plantel separada del resto del personal: solo la dotación de empleados por categoría."
 }

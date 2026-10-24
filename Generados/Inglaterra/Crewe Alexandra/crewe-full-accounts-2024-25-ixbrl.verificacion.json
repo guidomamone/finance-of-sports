@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.169Z",
+ "generado": "2026-10-24T15:02:20.974Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,17 +13,23 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "a74584a"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el documento no lo imprime"
+   "ok": true,
+   "detalle": "5.198639 = 5.198639",
+   "suma": 5.198639,
+   "impreso": 5.198639
   },
   {
    "nombre": "total de gastos",
-   "ok": null,
-   "detalle": "el documento no lo imprime"
+   "ok": true,
+   "detalle": "6.361001 = 6.361001",
+   "suma": 6.361001,
+   "impreso": 6.361001
   },
   {
    "nombre": "resultado del ejercicio",
@@ -39,14 +45,14 @@
   {
    "nombre": "primer año",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
-  "duda de extraer que no afecta la carga: L168-L169 son movimientos de resultados acumulados (patrimonio), no partidas de ingresos o gastos del ejercicio."
+  "duda de localizar que no afecta la carga: La nota 3 Employees (b22) solo informa el número medio de empleados (244 y 248), sin importes de sueldos."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 5.198639,
@@ -87,20 +93,5 @@
    "M": 0.022606,
    "linea": 166
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "67f7f8fdab8bc9f2eeafdafc3199e1b20f32c7bc",
-  "rango": [
-   160,
-   170
-  ],
-  "lineasCargadas": [
-   163,
-   164,
-   166
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 160 a 170 del .md):\nL160: | 2025 | 2024 |  |  |\nL161: | --- | --- | --- | --- |\nL162: | Notes | £ | £ |  |\nL163: | Turnover | 5,198,639 | 5,267,770 |  |\nL164: | Administrative expenses | (6,361,001) | (6,060,709) |  |\nL165: | Loss before taxation | (1,162,362) | (792,939) |  |\nL166: | Tax on loss | 4 | 22,606 | 28,290 |\nL167: | Loss for the financial year | (1,139,756) | (764,649) |  |\nL168: | Retained earnings brought forward | (5,623,141) | (4,858,492) |  |\nL169: | Retained earnings carried forward | (6,762,897) | (5,623,141) |  |\n\nLO QUE SE CARGA:\n- ingreso · \"Turnover\" · 5.198639 · L163\n- gasto · \"Administrative expenses\" · 6.361001 · L164\n- impuesto · \"Tax on loss\" · 0.022606 · L166"
- }
+ ]
 }

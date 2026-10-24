@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.md",
  "mdSha1": "a15b2241049921c75c77e0a94603b8de530d0dc9",
- "ubicacionSha1": "17589617f1965f4c1d0d358227085f1938eb3f40",
+ "ubicacionSha1": "c457562b1566f5740499b6b3d32d4ea0aaf8ff86",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:43:05.307Z",
+ "generado": "2026-10-24T14:59:14.435Z",
  "ubicacion": {
   "estado": [
    "b9"
@@ -14,7 +14,6 @@
   ],
   "notas_gastos": [
    "b28",
-   "b29",
    "b31"
   ]
  },
@@ -33,11 +32,6 @@
    "bloque": "b28",
    "escala": "unidades",
    "evidencia": "L505: '£'"
-  },
-  {
-   "bloque": "b29",
-   "escala": "unidades",
-   "evidencia": "L525: '£'"
   },
   {
    "bloque": "b31",
@@ -72,7 +66,7 @@
    "etiqueta": "Gross profit",
    "actual": "10,345,463",
    "anterior": "6,359,910",
-   "tipo": "subtotal",
+   "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
   },
@@ -208,16 +202,6 @@
   },
   {
    "bloque": "b27",
-   "linea": 466,
-   "etiqueta": "Grants received",
-   "actual": "147,036",
-   "anterior": "172,036",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "Other operating income"
-  },
-  {
-   "bloque": "b27",
    "linea": 470,
    "etiqueta": "Profit on disposal of player registrations",
    "actual": "6,547,788",
@@ -265,16 +249,6 @@
    "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": null
-  },
-  {
-   "bloque": "b29",
-   "linea": 527,
-   "etiqueta": "Interest on bank deposits",
-   "actual": "14,371",
-   "anterior": "303",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": "Interest receivable and similar income"
   },
   {
    "bloque": "b31",
@@ -336,40 +310,16 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan los costos de personal (L506-L509) como detalle sin asignarlos a un renglón del estado, ya que se reparten entre Cost of sales y Administrative expenses?",
+   "pregunta": "¿Se acepta que no existe un renglón 'Salarios del plantel' separado y que la remuneración de personal (L506-L509, 8,519,051) se carga sin asignarla a un renglón del estado, ya que está repartida entre Cost of sales y Administrative expenses?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "",
-   "texto": "La nota 7 (L503-L509) no indica a qué renglón del estado corresponde la remuneración.",
+   "texto": "La nota 7 (L503-L509) sólo da remuneración agregada de todo el personal (241 personas, incluye plantel), sin desglose por plantel ni vínculo a un renglón del estado.",
    "bloques": [
     "b28"
    ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se deja afuera de la carga la nota 5 de cargos operativos (L474-L478), remuneración de auditores (L483-L485) y de directores (L513-L522)?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "Son informativas, no desglosan un renglón del estado en forma aditiva.",
-   "bloques": [
-    "b27",
-    "b28",
-    "b29"
-   ],
    "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera la conciliación impositiva de la nota 12 (L559-L566)?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Tax on profit/(loss)",
-   "texto": "Es una conciliación teórica; el cargo es cero.",
-   "bloques": [
-    "b31"
-   ],
-   "afecta_carga": false
   }
  ],
- "observaciones": "Grants received (L466) se asignó a Other operating income aunque esta suma 253,483; queda un remanente no desglosado. L465 y L541 repiten intereses ya cargados y se omitieron."
+ "observaciones": "Estado en libras (£) en unidades. No hay total de ingresos ni de gastos impreso. Nota 5 (cargos incluidos en el resultado operativo), nota 6 (auditor), nota 8 (directores, incluida en nota 7) y nota 12 (conciliación fiscal) no se extrajeron por ser informativas o duplicar otras filas. Grants received (L466) forma parte de Other operating income pero no la desglosa completa."
 }

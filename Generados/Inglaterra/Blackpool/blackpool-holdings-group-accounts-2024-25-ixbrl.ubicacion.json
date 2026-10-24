@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "9aa01037c4637bb3539f129ee84fbdbf687fecc4",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:39:57.602Z",
+ "generado": "2026-10-24T14:55:23.582Z",
  "perimetroClub": "consolidado",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -448,10 +449,11 @@
  ],
  "notas_gastos": [
   "b35",
+  "b36",
   "b37"
  ],
  "escala": "unidades",
- "escala_evidencia": "Los estados y notas expresan importes en '£' (ej. '£ / Loss for the year'), con cifras completas como (5,608,414).",
+ "escala_evidencia": "Las columnas del estado y de las notas están en '£' y los importes se imprimen completos (ej. (5,608,414)).",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
@@ -459,29 +461,18 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de 'Principal risks' por línea de ingreso (Matchday, Commercial, Hotel, Rental) de las págs. 4-5 (b4-b5)?",
-   "propuesta": "sí",
-   "tema": "cuadro-duplicado",
-   "renglon": "Turnover",
-   "texto": "Es un cuadro del informe estratégico que probablemente repite el desglose de la nota 3 de Turnover (b33).",
-   "bloques": [
-    "b4",
-    "b5",
-    "b33"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se usa el cuadro de remuneración del personal eventual de días de partido (b37) solo como desglose de gastos de personal y no se carga el cálculo de impuestos que aparece al final del bloque?",
+   "pregunta": "¿Se cargan los salarios del plantel desde la nota 6 Employees (b35-b37), tomando solo las filas de costo de personal y dejando afuera las de cantidad de empleados y la parte de impuestos que aparece al final de b37?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Staff costs",
-   "texto": "b37 mezcla la nota 6 de empleados con el inicio de la nota de impuestos (Current tax / Group tax relief).",
+   "renglon": "Wages and salaries",
+   "texto": "b35 mezcla los cargos del resultado operativo con la cantidad de empleados por categoría (termina en 'Hotel staff / Total'), y b37 sigue con la remuneración y termina en el cuadro de impuestos de la nota 8.",
    "bloques": [
+    "b35",
+    "b36",
     "b37"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Estado de resultados consolidado: Group Profit and Loss Account (b7). El documento solo incluye balance individual de la sociedad, sin P&L individual. Nota 3 Turnover (b33) desglosa ingresos por clase de negocio; b35 (operating loss stated after charging, empleados) y b37 (costes de personal) desglosan gastos. Excluidos estado de resultado integral, balances, patrimonio, flujos, activo fijo e impuestos."
+ "observaciones": "El estado elegido es el Group Profit and Loss Account consolidado (b7); no se ve un P&L individual de la sociedad. b33 (nota 3) abre la facturación por línea de negocio. b35-b37 (nota 6 Employees) abren el costo de personal, que es de donde salen los salarios del plantel. b4-b5 son un cuadro del informe de gestión que repite la facturación por línea, así que no se elige. b36 es solo un encabezado de continuación de la nota 6."
 }

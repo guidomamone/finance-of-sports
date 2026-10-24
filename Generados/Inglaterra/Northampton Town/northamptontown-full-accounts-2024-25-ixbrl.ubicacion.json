@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Northampton Town/northamptontown-full-accounts-2024-25-ixbrl.md",
  "mdSha1": "82e936fcd03447a742ca53333cd3b32d088f95b3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:41:37.597Z",
+ "generado": "2026-10-24T14:57:49.434Z",
  "perimetroClub": "individual",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -402,7 +403,7 @@
   "b31"
  ],
  "escala": "unidades",
- "escala_evidencia": "Las notas muestran '£' como unidad en columnas (ej. Wages and salaries 5,559,103); el estado de resultados presenta importes en libras sin escala.",
+ "escala_evidencia": "Las notas muestran '£' como unidad (ej. b31 'Wages and salaries 5,559,103' bajo '£'); el estado de b7 usa los mismos importes en libras.",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
@@ -410,16 +411,16 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga la nota 7 de remuneración de directores y la conciliación fiscal (b33)?",
+   "pregunta": "¿Se carga como 'Salarios del plantel' el total de costes de personal de la nota 6 (6,221,623 en b31), aunque incluye personal no deportivo?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "",
-   "texto": "b33 contiene remuneración de directores (incluida en costes de personal) y conciliación de impuestos, que no desglosan renglones a cargar.",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 6 da la remuneración agregada de todos los empleados (jugadores, academia y oficina) sin separar el plantel.",
    "bloques": [
-    "b33"
+    "b31"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Cuentas individuales de The Northampton Town Football Club Limited, ejercicio cerrado el 30-06-2025. Estado de resultados en b7 (Statement of Comprehensive Income). b30 desglosa Turnover por clase de negocio (nota 3). b31 contiene la nota 4 (amortizaciones, arrendamientos), auditoría y nota 6 de costes de personal (wages, social security, pension), que abren gastos. b6 es un resumen de indicadores, no se usa."
+ "observaciones": "Estado de resultados individual de The Northampton Town Football Club Limited (b7). La nota 3 (b30) desglosa el turnover por clase de negocio. La nota 6 (b31) desglosa los costes de personal: Wages and salaries, Social security y Pension. La nota 7 (b33), de remuneración de directores, es un subconjunto de esos costes y no se elige. Se excluyen el cuadro resumen de b6, el balance, el estado de cambios en el patrimonio, los activos fijos y la conciliación del impuesto."
 }

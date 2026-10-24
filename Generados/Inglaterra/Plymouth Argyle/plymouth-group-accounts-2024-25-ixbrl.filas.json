@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "aa1d97158db51d91cf29fa33ff3f7b7bf4587467",
- "ubicacionSha1": "bd4a788ad5c260eabd9c3b8b51cc57a0228b6395",
+ "ubicacionSha1": "23d4f0e88cb12e2b47fad1f46bca2704987e542a",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:43:38.389Z",
+ "generado": "2026-10-24T15:00:02.818Z",
  "ubicacion": {
   "estado": [
    "b13"
@@ -13,7 +13,8 @@
    "b38"
   ],
   "notas_gastos": [
-   "b39"
+   "b39",
+   "b41"
   ]
  },
  "escalas": [
@@ -31,6 +32,11 @@
    "bloque": "b39",
    "escala": "unidades",
    "evidencia": "L610: '£ | £'"
+  },
+  {
+   "bloque": "b41",
+   "escala": "unidades",
+   "evidencia": "L651: '£ | £ | £ | £'"
   }
  ],
  "filas": [
@@ -40,7 +46,7 @@
    "etiqueta": "Turnover",
    "actual": "28,827,859",
    "anterior": "25,577,001",
-   "tipo": "renglon",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
@@ -223,9 +229,162 @@
    "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b39",
+   "linea": 612,
+   "etiqueta": "Depreciation of owned tangible fixed assets",
+   "actual": "1,444,239",
+   "anterior": "1,052,981",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating profit/(loss)"
+  },
+  {
+   "bloque": "b39",
+   "linea": 613,
+   "etiqueta": "Amortisation of intangible assets",
+   "actual": "2,486,575",
+   "anterior": "1,310,775",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating profit/(loss)"
+  },
+  {
+   "bloque": "b39",
+   "linea": 614,
+   "etiqueta": "Profit on disposal of intangible assets",
+   "actual": "(6,138,876)",
+   "anterior": "(809,758)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Operating profit/(loss)"
+  },
+  {
+   "bloque": "b39",
+   "linea": 615,
+   "etiqueta": "Operating lease charges",
+   "actual": "110,975",
+   "anterior": "89,002",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating profit/(loss)"
+  },
+  {
+   "bloque": "b39",
+   "linea": 620,
+   "etiqueta": "Audit of the financial statements of the group and company",
+   "actual": "40,500",
+   "anterior": "28,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b39",
+   "linea": 621,
+   "etiqueta": "Audit of the financial statements of the company's subsidiaries",
+   "actual": "7,595",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b39",
+   "linea": 622,
+   "etiqueta": "",
+   "actual": "48,095",
+   "anterior": "28,000",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b39",
+   "linea": 624,
+   "etiqueta": "All other non-audit services",
+   "actual": "6,450",
+   "anterior": "2,500",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b41",
+   "linea": 652,
+   "etiqueta": "Wages and salaries",
+   "actual": "19,123,343",
+   "anterior": "15,220,167",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of sales"
+  },
+  {
+   "bloque": "b41",
+   "linea": 653,
+   "etiqueta": "Social security costs",
+   "actual": "1,999,327",
+   "anterior": "1,527,036",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of sales"
+  },
+  {
+   "bloque": "b41",
+   "linea": 654,
+   "etiqueta": "Pension costs",
+   "actual": "122,475",
+   "anterior": "93,982",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of sales"
+  },
+  {
+   "bloque": "b41",
+   "linea": 655,
+   "etiqueta": "",
+   "actual": "21,245,145",
+   "anterior": "16,841,185",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Cost of sales"
+  },
+  {
+   "bloque": "b41",
+   "linea": 659,
+   "etiqueta": "Remuneration for qualifying services",
+   "actual": "242,760",
+   "anterior": "218,760",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wages and salaries"
+  },
+  {
+   "bloque": "b41",
+   "linea": 660,
+   "etiqueta": "Company pension contributions to defined contribution schemes",
+   "actual": "7,283",
+   "anterior": "6,563",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wages and salaries"
+  },
+  {
+   "bloque": "b41",
+   "linea": 661,
+   "etiqueta": "",
+   "actual": "250,043",
+   "anterior": "225,323",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Wages and salaries"
   }
  ],
- "total_ingresos": null,
+ "total_ingresos": {
+  "linea": 281,
+  "actual": "28,827,859"
+ },
  "total_gastos": null,
  "resultado": {
   "linea": 290,
@@ -234,27 +393,38 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se dejan afuera de la carga las partidas de la nota 5 (L612-L615: amortizaciones, depreciación, profit on disposal of intangible assets 6,138,876) por ser cargos informativos que no desglosan un renglón del estado?",
+   "pregunta": "¿Se asignan los costos de personal del Grupo (L652-L655) al renglón 'Cost of sales', aunque la nota no indica cómo se reparten entre costo de ventas y gastos administrativos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Cost of sales",
+   "texto": "La nota 7 (L648-L655) no dice a qué renglón del estado se imputan los salarios; se usó la columna Group y no Company.",
+   "bloques": [
+    "b41"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan las partidas de la nota 5 (L612-L615) como desglose informativo de 'Operating profit/(loss)'?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Operating profit/(loss)",
-   "texto": "La nota 5 lista cargos incluidos en el resultado operativo sin indicar en qué renglón (Cost of sales, Administrative expenses u Other operating income) están.",
+   "texto": "L611 indica que son cargos/créditos incluidos en el resultado operativo, no un desglose completo de un renglón.",
    "bloques": [
     "b39"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Falta en la transcripción el desglose de la nota 4 'Other operating income' (corta en L597)?",
+   "pregunta": "¿Es correcto que no existe un desglose de 'Other operating income' en los bloques recibidos (nota 4 abre en L597 sin filas)?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Other operating income",
-   "texto": "L597 abre la nota 4 pero el bloque termina sin sus importes; probablemente incluye la venta de jugadores.",
+   "texto": "L597 abre la nota 4 pero sus filas no están en los bloques transcriptos.",
    "bloques": [
     "b38"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Escala en libras (unidades). No hay total de ingresos ni de gastos impreso. Nota 6 (honorarios de auditoría) y nota 7 (empleados) no se cargan por no ser desglose de renglones."
+ "observaciones": "Documento en inglés: no existen renglones 'Salarios del plantel' ni 'Cuotas sociales'; el equivalente de salarios es 'Wages and salaries' (L652, columna Group) y el más cercano a cuotas sociales es 'Memberships, streaming and advertising' (L593). En L281 la columna de nota (3) desplaza los importes; se tomaron 28,827,859 y 25,577,001. Los números de empleados (L630-L637) no son importes y no se extrajeron. No hay cuadros por segmento."
 }

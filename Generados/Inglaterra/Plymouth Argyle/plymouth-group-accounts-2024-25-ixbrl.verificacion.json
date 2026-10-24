@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-24T14:50:49.284Z",
+ "generado": "2026-10-24T15:02:21.286Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -24,12 +24,18 @@
    "fecha": "2026-10-21"
   }
  ],
- "cola": [],
+ "cola": [
+  "81ef389",
+  "9ec95cd",
+  "e2a785c",
+  "5a8b047",
+  "d378275"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el documento no lo imprime"
+   "ok": true,
+   "detalle": "\"Turnover\" 28.827859 cierra; además se suman 1 línea(s) fuera de ese total (8.871293)"
   },
   {
    "nombre": "total de gastos",
@@ -53,10 +59,24 @@
    "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
- "notas": [],
+ "notas": [
+  "la nota de \"Cost of sales\" no suma el renglón (21.245145 contra 28.902458, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Administrative expenses\" no suma el renglón (0.054545 contra 8.578997, sumando sus renglones): quedó el renglón del estado"
+ ],
  "reintentar": null,
- "reintentado": false,
- "faltasDesglose": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Cost of sales",
+   "suma": 21.245145,
+   "objetivo": 28.902458
+  },
+  {
+   "renglon": "Administrative expenses",
+   "suma": 0.054545,
+   "objetivo": 8.578997
+  }
+ ],
  "totales": {
   "ingresos": 37.699152,
   "gastos": 37.481455,

@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.md",
  "mdSha1": "a15b2241049921c75c77e0a94603b8de530d0dc9",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:42:43.709Z",
+ "generado": "2026-10-24T14:58:54.262Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -400,11 +401,10 @@
  ],
  "notas_gastos": [
   "b28",
-  "b29",
   "b31"
  ],
  "escala": "unidades",
- "escala_evidencia": "Las notas y estados muestran '£' como encabezado de columna (ej. b11 '£', b31 '£ | £'), importes en libras completas (1,313,651).",
+ "escala_evidencia": "Las notas y estados muestran '£' como unidad en el encabezado de columnas (ej. b27 '2025 / £').",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
@@ -412,27 +412,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se cargan de b27 solo el análisis de turnover y los honorarios de auditoría (operating profit/auditor) como desglose de gastos, dejando afuera filas no relacionadas?",
+   "pregunta": "¿Se carga la nota 7 Employees (b28) como desglose de staff costs (wages and salaries, social security, pension) para 'Salarios del plantel'?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Turnover",
-   "texto": "b27 (nota 3) mezcla desglose de turnover con otras notas hasta servicios de auditoría.",
+   "renglon": "Wages and salaries",
+   "texto": "b28 contiene costes de personal agregados; no se ve si separa plantel de resto del personal.",
    "bloques": [
-    "b27"
+    "b28"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   },
   {
-   "pregunta": "¿Se usa de b29 solo la parte de 'Interest income / Interest on bank deposits' y se ignora la remuneración del director mejor pago?",
+   "pregunta": "¿Se usa b31 (investment income, interest payable, taxation) como desglose de renglones financieros e impuestos del estado?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Interest receivable and similar income",
-   "texto": "b29 combina remuneración de directores con el inicio de la nota de ingresos financieros.",
+   "renglon": "Tax on profit/(loss)",
+   "texto": "b31 continúa b30 y mezcla intereses e impuestos; la conciliación de impuestos no debe cargarse.",
    "bloques": [
-    "b29"
+    "b31"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado individual de Peterborough United Football Club Limited (b9), cifras en libras. b27 desglosa turnover; b28 gastos de personal; b29/b31 ingresos y gastos financieros y amounts written off investments. La conciliación impositiva de b31 no se carga."
+ "observaciones": "Estado individual de Peterborough United FC Ltd (b9, Statement of Comprehensive Income). b27 es la nota 3 de turnover por clase de negocio (incluye también honorarios de auditoría al final). b28 nota 7 empleados con costes de personal. b29 remuneración de directores, no elegida. Se excluyen balance, flujos, patrimonio, intangibles, deudores/acreedores, préstamos, subvenciones y pensiones (b38 solo da cargo de contribución definida, ya incluido en staff costs)."
 }

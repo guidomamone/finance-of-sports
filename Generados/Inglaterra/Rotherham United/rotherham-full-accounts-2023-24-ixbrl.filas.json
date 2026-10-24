@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.md",
  "mdSha1": "76bfcdd3a70ca0e943bf77f45e307fac71996a9e",
- "ubicacionSha1": "59ab60d4f0b5d7dd419a5e8efe894f8be9117369",
+ "ubicacionSha1": "d659366c0be0dced752a406d9495e1924fd80e52",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:44:40.746Z",
+ "generado": "2026-10-24T15:01:13.110Z",
  "ubicacion": {
   "estado": [
    "b11"
@@ -13,30 +13,24 @@
    "b23"
   ],
   "notas_gastos": [
-   "b24",
-   "b25"
+   "b24"
   ]
  },
  "escalas": [
   {
    "bloque": "b11",
    "escala": "unidades",
-   "evidencia": "L225: columnas en £"
+   "evidencia": "L225: | Notes | £ | £ |"
   },
   {
    "bloque": "b23",
    "escala": "unidades",
-   "evidencia": "L385: £"
+   "evidencia": "L385: | £ | £ |"
   },
   {
    "bloque": "b24",
    "escala": "unidades",
-   "evidencia": "L435: £"
-  },
-  {
-   "bloque": "b25",
-   "escala": "unidades",
-   "evidencia": "L457: £"
+   "evidencia": "L435: | £ | £ |"
   }
  ],
  "filas": [
@@ -279,36 +273,6 @@
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": "Interest receivable and similar income"
-  },
-  {
-   "bloque": "b25",
-   "linea": 459,
-   "etiqueta": "Adjustments in respect of prior periods",
-   "actual": "(988)",
-   "anterior": "-",
-   "tipo": "renglon",
-   "lado": "impuesto",
-   "detalla_a": "Tax on loss"
-  },
-  {
-   "bloque": "b25",
-   "linea": 460,
-   "etiqueta": "Group tax relief",
-   "actual": "-",
-   "anterior": "(200,000)",
-   "tipo": "renglon",
-   "lado": "impuesto",
-   "detalla_a": "Tax on loss"
-  },
-  {
-   "bloque": "b25",
-   "linea": 461,
-   "etiqueta": "Total current tax",
-   "actual": "(988)",
-   "anterior": "(200,000)",
-   "tipo": "subtotal",
-   "lado": "impuesto",
-   "detalla_a": "Tax on loss"
   }
  ],
  "total_ingresos": {
@@ -323,39 +287,28 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se dejan las remuneraciones de personal (L436-L440) con detalla_a null, sin asignarlas a Cost of sales ni Administrative expenses?",
+   "pregunta": "¿Se cargan los costos de personal de la nota 6 (L436-L440) como detalle sin asignarlos a 'Cost of sales' ni 'Administrative expenses'?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "",
-   "texto": "La nota 6 no indica en qué renglón del estado se imputan los sueldos (L436-L440).",
+   "texto": "La nota 6 no indica en qué renglón del estado se imputan los salarios (L433-L440), que se reparten entre costo de ventas y gastos administrativos.",
    "bloques": [
-    "b24"
+    "b24",
+    "b11"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de turnover por mercado geográfico (L398-L400)?",
+   "pregunta": "¿Se deja afuera el cuadro 'Turnover analysed by geographical market' (L395-L400) por duplicar el total de Turnover?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "Turnover",
-   "texto": "Es una segunda apertura del mismo Turnover ya desglosado por tipo en L387-L393.",
+   "texto": "Es una apertura alternativa por geografía del mismo total 19,172,906 (L400).",
    "bloques": [
     "b23"
    ],
    "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se deja afuera la conciliación de la tasa impositiva (L465-L476) y los cargos de nota 4 (L405-L409)?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Tax on loss",
-   "texto": "Son conciliaciones/informativos, no desgloses aditivos de renglones del estado.",
-   "bloques": [
-    "b23",
-    "b25"
-   ],
-   "afecta_carga": false
   }
  ],
- "observaciones": "Estado en £ unidades. El total de gastos no está impreso. Interest receivable figura negativo (237) en L232 y L445. Signos del impuesto: estado 988 positivo (crédito), nota (988)."
+ "observaciones": "No hay una fila 'Salarios del plantel' separada: la nota 6 (L436) solo trae 'Wages and salaries' agregado de todo el personal. La nota 4 (L404-L409) y la nota 5 son partidas informativas incluidas en gastos y no se cargaron como filas. 'Interest receivable' figura con signo negativo (L232)."
 }

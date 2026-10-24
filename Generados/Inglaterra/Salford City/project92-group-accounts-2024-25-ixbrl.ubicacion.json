@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
  "mdSha1": "fe0e4b8bae20ad55e874c1a916c8aab3574b40ac",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:44:48.418Z",
+ "generado": "2026-10-24T15:01:27.804Z",
  "perimetroClub": "consolidado",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -476,14 +477,14 @@
   "b8"
  ],
  "notas_ingresos": [
-  "b38"
- ],
- "notas_gastos": [
-  "b39",
+  "b38",
   "b41"
  ],
+ "notas_gastos": [
+  "b39"
+ ],
  "escala": "unidades",
- "escala_evidencia": "Las notas indican '£' en el encabezado de columna (ej. b38 '2025 / £') y cifras como 6,096,649 en b39",
+ "escala_evidencia": "Las notas indican '£' sin 'miles' y los importes están impresos completos (ej. Matchday 1,033,949; Turnover 4,386,721).",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
@@ -491,30 +492,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se cargan los importes del estado b8 en libras (unidades) y no en miles?",
+   "pregunta": "¿Se carga la fila 'Wages and salaries' 5,528,584 (nota 8, b39) como salarios aunque incluye todo el personal y no solo el plantel?",
    "propuesta": "sí",
-   "tema": "escala",
-   "renglon": "Turnover",
-   "texto": "El cuadro resumen b5 muestra Turnover 4,387 (probablemente en miles) mientras las notas están en £ enteras; b8 no muestra escala en el índice.",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 8 no separa jugadores de staff; es el único desglose de personal disponible.",
    "bloques": [
-    "b8",
-    "b5"
+    "b39"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se usa la columna 2024 de b8 (re-expresada) como año anterior pese al ajuste de b36/b37?",
+   "pregunta": "¿Se confirma que el documento no tiene ningún renglón de ingresos por televisión/broadcasting (turnover solo Matchday y Commercial en b38)?",
    "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "Profit/(loss) for the financial year",
-   "texto": "b37 muestra un ajuste de 61,000 al resultado 2024 previamente informado.",
+   "tema": "otro",
+   "renglon": "Turnover",
+   "texto": "La nota 4 abre el turnover solo en Matchday y Commercial; no hay renglón de TV.",
    "bloques": [
-    "b8",
-    "b36",
-    "b37"
+    "b38"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado consolidado del grupo (Group statement of comprehensive income) en b8. b38 contiene nota 4 de Turnover por clase de negocio y partidas de resultado operativo; b39 honorarios auditor y costos de personal; b41 continúa nota de personal/recargos de préstamos y beneficio por venta de registros de jugadores (nota 9). No se presenta cuenta de resultados individual de la compañía."
+ "observaciones": "Estado de resultados consolidado del grupo (Group Statement of Comprehensive Income) en b8. Notas: b38 (turnover por clase, otros ingresos, excepcional, cargos operativos), b41 (intereses, beneficio por venta de jugadores, compensación de cesiones netada contra salarios £205,398), b39 (remuneración auditor y gastos de personal). No hay ingresos de televisión desglosados; probablemente incluidos en Commercial."
 }

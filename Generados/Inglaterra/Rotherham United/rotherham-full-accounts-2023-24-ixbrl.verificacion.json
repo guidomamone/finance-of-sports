@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.md",
- "generado": "2026-10-24T14:50:49.343Z",
+ "generado": "2026-10-24T15:02:21.414Z",
  "scriptHuella": "b0a6fdd2be99",
- "estado": "ok",
+ "estado": "cola",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -13,7 +13,10 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "0989721",
+  "51f17e3"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,11 +48,10 @@
   }
  ],
  "notas": [
-  "duda de extraer que no afecta la carga: Es una segunda apertura del mismo Turnover ya desglosado por tipo en L387-L393.",
-  "duda de extraer que no afecta la carga: Son conciliaciones/informativos, no desgloses aditivos de renglones del estado."
+  "duda de extraer que no afecta la carga: Es una apertura alternativa por geografía del mismo total 19,172,906 (L400)."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 19.172906,

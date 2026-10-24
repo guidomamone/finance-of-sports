@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.md",
  "mdSha1": "93993c1f0ba1ce6ca4018e0b52094f0eb370fc8c",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-24T14:42:09.813Z",
+ "generado": "2026-10-24T14:58:17.187Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -404,20 +405,43 @@
   "b8"
  ],
  "notas_ingresos": [
-  "b31",
-  "b33"
+  "b31"
  ],
  "notas_gastos": [
   "b31",
   "b33"
  ],
  "escala": "unidades",
- "escala_evidencia": "Las notas y estados se presentan en £ con importes completos (ej. Turnover 18,999,871; pérdida (17,479,972)).",
+ "escala_evidencia": "Encabezados con '£' sin indicación de miles (ej. b9 '£', pérdida (17,479,972))",
  "moneda": "GBP",
  "columna_ejercicio": "2025",
- "columna_anterior": "2024 as restated",
+ "columna_anterior": "2024 (as restated)",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [],
- "observaciones": "Cuentas individuales de Oxford United Football Club Limited. b8 es la Profit and Loss Account (2024 reexpresado). b31 tiene la nota 3 de Turnover por clase de negocio (desglosa ingresos) y la nota 5 de Operating loss (gastos: amortización, depreciación, alquileres); la parte de empleados (cantidades) no se carga. b33 tiene costos de personal (nota 6), intereses a cobrar (nota 7) e intereses a pagar (nota 8). Se excluyen el balance, el flujo de efectivo, la evolución del patrimonio, el activo fijo, la conciliación de impuestos y los compromisos."
+ "dudas": [
+  {
+   "pregunta": "¿Se carga como desglose de ingresos y gastos el bloque b31 (Turnover por clase de negocio y empleados) y b33 (remuneración agregada, intereses)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Turnover",
+   "texto": "b31 abre Turnover por clase de negocio y termina en cantidad de empleados; b33 continúa con la remuneración agregada (salarios) e intereses.",
+   "bloques": [
+    "b31",
+    "b33"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El cuadro de remuneración agregada (b33) no separa salarios del plantel del resto del personal?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota de staff costs suele dar el total; si no hay separación de plantel, el renglón de salarios del plantel no podrá cargarse aparte.",
+   "bloques": [
+    "b33"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados individual de Oxford United Football Club Limited (b8), cifras en libras. b31 contiene la nota 3 Turnover (desglose por clase de negocio, donde deberían aparecer matchday/season tickets como cuotas) y el número de empleados; b33 continúa con la remuneración agregada (salarios) y luego intereses. Se excluyen balance, cambios en patrimonio, flujo, impuestos, intangibles, activos fijos, deudores/acreedores, préstamos, ingresos diferidos y arrendamientos."
 }
