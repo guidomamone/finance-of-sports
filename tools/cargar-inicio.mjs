@@ -33,7 +33,11 @@ export function faseRegistro(ctx) {
   if (!ajusteDe(pdf, 'cierre')) try { const mdT = readFileSync(resolve(ROOT, e.md), 'utf8'); const vivo = periodoDe(mdT, basename(pdf), { xhtml: xhtmlHermano(resolve(ROOT, e.md), mdT) }); if (per && (vivo.tipo !== per.tipo || !!vivo.nombreNoCoincide !== !!per.nombreNoCoincide)) P.avisos.push(`el período del registro (${per.tipo}${per.nombreNoCoincide ? ', nombre no coincide' : ''}) está desactualizado: tools/periodo.mjs hoy dice ${vivo.tipo}${vivo.nombreNoCoincide ? ', nombre no coincide' : ''} (regenerar el registro)`); per = vivo; } catch { /* sin .md: frena abajo */ }
   // Sin fecha de cierre: se deduce de los documentos vecinos del club, con aviso. Si no se puede, sigue
   // como antes (frena más abajo por período o por año).
-  if (per && !per.cierre) { const cv = cierrePorVecinos(pdf, registro); if (cv) { per = { ...per, cierre: cv.cierre, cierreDeducido: true }; P.avisos.push(`fecha de cierre ${cv.cierre} ${cv.evidencia}`); } }
+  if (per && !per.cierre) { const cv = cierrePorVecinos(pdf, registro); if (cv) { per = { ...per, cierre: cv.cierre, cierreDeducido: true }; P.avisos.push(`fecha de cierre ${cv.cierre} ${cv.evidencia}`); }
+    else { // sin vecinos: la fecha que un revisor confirmó en la cola (pregunta cierre-por-pais de tools/cierre-propuestas.mjs: aceptar = la propuesta del país, corregir = su valor)
+      const { caso: cc, resp: rc } = casoYRespuesta(pdf, 'cargar', 'cierre-por-pais', 'cierre');
+      const fecha = rc && (rc.decision === 'aceptar' ? cc?.cierrePropuesto : rc.decision === 'corregir' && /^\d{4}-\d{2}-\d{2}$/.test(rc.valor || '') ? rc.valor : null);
+      if (fecha) { per = { ...per, cierre: fecha, cierreDeducido: true }; P.avisos.push(`fecha de cierre ${fecha} confirmada en la cola (cierre-por-pais)`); } } }
   P.periodo = per;
   if (!per) frena('periodo', 'el registro no tiene `periodo` (tools/periodo.mjs) para este documento');
   else {

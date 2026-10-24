@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1058 — 444: cierre por defecto por país como pregunta de cola (votación 2 a 1) [444 · cargar-inicio.mjs, cierre-propuestas.mjs, probar-cierre.mjs]
+
+- Votación (Admin/mediciones/444-votacion-cierre-por-defecto-por-pais.md, C 2 a B 1): un anual sin fecha de cierre que los vecinos no deducen NO asume el cierre del país: `fos cierre-propuestas` abre una pregunta de cola por documento (`cierre-por-pais`) con la propuesta de `tools/cierre-por-defecto.json` (Brasil, Rusia, Noruega, Ucrania 31-12; España, Países Bajos, Francia 30-06; todos sobre 98 % medido). `cargar-inicio.mjs` toma la respuesta: aceptar = la propuesta, corregir = su fecha. Ensayo por defecto; hoy 163 documentos.
+- `probar-cierre.mjs`: 11 casos ok (año del nombre, ensayo sin escribir, una pregunta por documento sin duplicar, `cierre-sin-fecha --json`).
+- Medición: `medir pipeline` hasta el lote completo (cargar, audit, escribir): idéntico (sin respuestas en la cola nada cambia). Veredicto de infraestructura. Sin revisión independiente.
+
 ## Versión 1057 — 437: la corrección de categoría de Guido con esquema, y casos para silenciar [437 · cola.mjs, probar-registros.mjs]
 
 - `cola --corregir-categoria` escribe la respuesta con `esquema: 1` (`evidencia` ninguna, `seguridad` alta, `causa` decision-de-guido, vía `cola-respuesta.mjs`). `probar-registros.mjs`: 2 casos nuevos (`silenciar.mjs` en un repo de juguete con un `audit.js` falso, y esa línea), 24 en total, todos ok. `cola.mjs` queda en 40.866 bytes (límite 40.960).
