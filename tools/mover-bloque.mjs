@@ -2,7 +2,9 @@
 // ============================================================================
 // tools/mover-bloque.mjs — `fos mover`: muda un bloque de líneas de una tool a un módulo nuevo SIN cambiarlo, para partir los archivos grandes.
 //
-//   node tools/mover-bloque.mjs <tool.mjs> <desde>-<hasta> <destino.mjs> ["porqué del módulo"] [--escribir]
+//   node tools/mover-bloque.mjs <tool.mjs> <desde>-<hasta> <destino.mjs> ["porqué del módulo"] [--escribir] [--sucio]
+//   (--sucio: la tool ya tiene una mudanza sin commitear; sirve para encadenar varias y medirlas juntas. Cada mudanza agrega líneas de import
+//   arriba: hay que volver a correr `fos mapa` entre una y otra, o mudar de abajo hacia arriba y recalcular el desplazamiento.)
 //
 // El bloque son las líneas <desde> a <hasta> (de `node tools/fos.mjs mapa <tool>`), enteras y a nivel de módulo. La tool calcula con el código (sin comentarios, cadenas
 // ni regex; con las interpolaciones de los templates) qué nombres del resto del archivo usa el bloque, y cuáles del bloque usa el resto:
@@ -221,7 +223,7 @@ export function planear(origen, srcOrigen, desde, hasta, destino, porque = '') {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const A = process.argv.slice(2).filter((x) => x !== '--escribir' && x !== '--forzar');
+  const A = process.argv.slice(2).filter((x) => x !== '--escribir' && x !== '--forzar' && x !== '--sucio');
   const [tool, rango, dest, porque] = A;
   const m = /^(\d+)-(\d+)$/.exec(rango || '');
   if (!tool || !m || !dest) { console.error('Uso: node tools/mover-bloque.mjs <tool.mjs> <desde>-<hasta> <destino.mjs> ["porqué del módulo"] [--escribir]'); process.exit(1); }
@@ -237,7 +239,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (plan.problemas.length) process.exit(1);
   if (!process.argv.includes('--escribir')) { console.log('Ensayo: --escribir lo aplica.'); process.exit(0); }
   if (existsSync(rutaDest)) { console.error(`${basename(rutaDest)} ya existe: no se pisa.`); process.exit(1); }
-  if (execFileSync('git', ['status', '--porcelain', '--', ruta], { cwd: ROOT, encoding: 'utf8' }).split('\n').some((l) => l && !l.startsWith('??'))) { console.error(`${basename(ruta)} tiene cambios sin commitear: commitealos primero.`); process.exit(1); }
+  // --sucio: encadenar varias mudanzas de una misma tool y medirlas juntas (cada una se comprueba contra el archivo tal como quedó la anterior)
+  if (!process.argv.includes('--sucio') && execFileSync('git', ['status', '--porcelain', '--', ruta], { cwd: ROOT, encoding: 'utf8' }).split('\n').some((l) => l && !l.startsWith('??'))) { console.error(`${basename(ruta)} tiene cambios sin commitear: commitealos primero.`); process.exit(1); }
   writeFileSync(rutaDest, plan.modulo); writeFileSync(ruta, plan.original);
   console.log(`Escrito. Siguiente: clasificar ${basename(rutaDest)} (node tools/clasificar-tools.mjs ${basename(rutaDest)}), node tools/fos.mjs que-pide y node tools/fos.mjs medir pipeline.`);
 }

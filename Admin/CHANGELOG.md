@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1013 — Las fases de `verificar()` a seis módulos: verificar.mjs de 218 a 32 KB [399 · verificar.mjs, verificar-armar.mjs, verificar-cierre.mjs, verificar-dudas.mjs, verificar-escalones.mjs, verificar-lecturas.mjs, verificar-salida.mjs, verificar-vecinos.mjs, mover-bloque.mjs]
+
+- Con `fos mover` (de abajo hacia arriba): `armar()` (38 KB), vecinos (17), lecturas y `evaluar()` (39), escalones (34), cierre y año anterior (24), dudas y respuestas (25), resultado final y salida (20). `verificar.mjs` queda en 32 KB y sale de `tools/tamanos-aceptados.json`. Cada módulo importa lo del tool (circular, seguro: solo funciones).
+- `fos mover` gana `--sucio`: encadenar varias mudanzas de una tool y medirlas juntas (antes se negaba si la tool tenía una sin commitear). Un script del scratchpad las encadenó recalculando el mapa.
+- Medición: lote chico, mediano y completo (`verificar`, 2 pasadas): idéntico. Mudanza, sin cambio de lógica.
+
 ## Versión 1012 — localizar se rehace si el .md cambió aunque no haya filas [419 · cache-al-dia.mjs]
 
 - `cacheAlDia()`: sin `.filas.json` (un `sin_estado` no deja filas) ahora compara el `mdSha1` guardado en el `.ubicacion.json` con el del `.md`; si difiere, el caché está viejo y `lote.mjs` rehace localizar, validar y extraer (un año cargado solo avisa), con el costo en el ensayo. Antes un `.md` reconvertido seguía «sin estado de resultados (queda como fuente)» sin llamar a nadie. Cambia el resultado de 15 documentos: los 13 británicos reconvertidos y OH Leuven 2017 y 2022.
