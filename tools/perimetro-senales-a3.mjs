@@ -9,6 +9,12 @@ import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs';
 import { MODELOS_A2, SOLO_CACHE, UMBRAL_C1, UMBRAL_C2, tablasDeIngresos, totalDe, aEscala, textoControladas, preguntarJev, UMBRAL_A2_CONS, UMBRAL_A2_IND, pasoA2, linea } from './perimetro-senales.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
+// Regla de perímetro 1 (Admin/CONVENCIONES-DATOS.md): la madre que no presenta su propio estado de resultados (Companies Act 2006, s408) deja como único estado el del grupo. El texto de la exención
+// y el nombre del estado tienen que estar juntos (300 caracteres): «section 408 … has not presented its own profit and loss account».
+const S408_RX = /\bsection\s*408\b|\bs\.?\s?408\b/gi;
+const ESTADO_RX = /profit and loss|statement of comprehensive income|income statement|statement of income/i;
+const NO_PRESENTA_RX = /not\s+(?:been\s+)?presented|not\s+(?:to\s+)?present|exempt|from\s+(?:presenting|disclosing)|not\s+(?:to\s+)?(?:include|publish)/i;
+const exencionS408 = (md) => { for (const m of md.matchAll(S408_RX)) { const v = md.slice(Math.max(0, m.index - 300), m.index + 300); if (ESTADO_RX.test(v) && NO_PRESENTA_RX.test(v)) return md.slice(0, m.index).split('\n').length; } return null; };
 const CONTROL_A3_RX = /controlad|dependiente|filial|subsidi|controllat|consolidament|dochter|groepsmaatschappij|deelneming|consolidatie|tochtergesellschaft|konsolidierungskreis|beteiligung|datterselskap|dattervirksomhed|dotterbolag|konsern|koncern|group compan|consolidation|périmètre|participa/i;
 
 function textoA3(lineas) {
@@ -100,6 +106,9 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
     r.pasoA = 'solo-consolidado'; r.propuesta = 'consolidado'; r.motivo = `solo tablas consolidadas (${cons.length})`; return r;
   }
   if (!cons.length) {
+    // el único estado de resultados es el del grupo: la sociedad madre no presenta el suyo (s408) y ninguna tabla dice «individual»
+    const l408 = ind.every((t) => t.per !== 'individual') ? exencionS408(md) : null;
+    if (l408) { r.pasoA = 'solo-consolidado'; r.propuesta = 'consolidado'; r.motivo = `la madre no presenta su propio estado de resultados (s408, L${l408}): el único es el del grupo`; return r; }
     if (titulos.consolidado) { r.pasoA = 'dudoso'; r.motivo = `solo tablas individuales, pero hay ${titulos.consolidado} título(s) de estado consolidado sin tabla reconocida`; return r; }
     if (/consolidat/i.test(mdRel.split('/').pop())) { r.pasoA = 'dudoso'; r.motivo = 'solo tablas individuales o sin perímetro, pero el nombre del archivo dice consolidado'; return r; }
     r.pasoA = 'solo-individual'; r.propuesta = 'individual'; r.motivo = `solo tablas individuales o sin perímetro (${ind.length}); ningún título de estado consolidado`;

@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1032 — perímetro: la madre que no presenta su estado (s408) deja el del grupo [421 · perimetro-senales-a3.mjs]
+
+- `proponer()`: si no hay tabla etiquetada «consolidado» ni «individual» y el documento dice que la madre no presenta su propio estado de resultados (Companies Act 2006, s408, con el nombre del estado a 300 caracteres), el paso A da `solo-consolidado` (Regla de perímetro 1 de `CONVENCIONES-DATOS.md`, antes aplicada a mano con un ajuste). Tercera y última parte del 421.
+- Verificado a mano (421): Morecambe 2024-25 lee (4,892,287 ) en millones (medido en el lote completo); el aviso de Ross County dice sin-rubros; proponer() sobre los 104 .md con s408: Falkirk, Salford y Exeter pasan a consolidado, medido antes/después
+- Medición: `proponer()` sobre los 104 .md con «section 408», antes y después: cambian 26, todos group accounts (Falkirk, Salford 2021-25, Exeter, Tranmere, Plymouth, Reading, Bolton, Blackpool, Chelsea, Aston Villa, Wolves, Brentford, Burnley, Mercedes) de solo-individual a solo-consolidado; el resto igual. `medir pipeline` (verificar y cargar, lote completo): idéntico, porque los ajustes manuales de perímetro mandan. Veredicto general (104 documentos). Sección 7 de la auditoría recorrida por la misma sesión (caso: Falkirk, Salford, Exeter; no frena; una mala propuesta la atrapa el tie-out; lo cargado no cambia; se corrige con un ajuste `perimetro`): sin revisión independiente.
+
 ## Versión 1031 — cargar.mjs: el aviso dice «sin-rubros» en vez de «correr el lote» [421 · cargar.mjs]
 
 - Ross County 2024-25: el lote ya había corrido y el registro quedó `jev: sin-rubros` (4 rubros, menos de 5, y las sumas no cerraron contra el resultado impreso), pero `porQueNoListo` seguía diciendo «el registro no se actualizó: correr el lote». Ahora, si el registro dice `sin-rubros`, lo dice con la cantidad de rubros y manda a revisar las filas. Segunda de las tres partes del 421.
