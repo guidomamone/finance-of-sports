@@ -8,7 +8,7 @@
 // USO: node tools/fos.mjs existe materialidad confianza     [--todas: más de 10 líneas]
 // ============================================================================
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
-import { resolve, join, relative } from 'node:path';
+import { resolve, join } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2); const todas = A.includes('--todas');

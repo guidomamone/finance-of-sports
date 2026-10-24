@@ -13,7 +13,7 @@
 //   7. mientras mide deja un candado con su pid (lo lee el hook para no dejar editar) y lo suelta al terminar;
 //   8. un cambio de solo comentarios no corre el lote: pasa por la comparación sin comentarios y anota «idéntico» (lote «solo-comentarios»); si además cambia el código, va por los lotes.
 // USO: node tools/probar-medir-pipeline.mjs    (menos de 1 minuto; sale con 1 si algún caso falla; no toca nada fuera de su carpeta de prueba)
-import { mkdirSync, writeFileSync, readFileSync, copyFileSync, rmSync, existsSync, readdirSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync, copyFileSync, rmSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { resolve, join } from 'node:path';
 

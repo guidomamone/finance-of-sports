@@ -26,7 +26,7 @@ import { spawnSync } from 'node:child_process';
 import { negarSiSeMide } from './candado-medicion.mjs';
 import { etapaDe, rubrosViejo, PARCIALES } from './etapa-doc.mjs';
 import { estimarExtraerSinBloques } from './extraer.mjs';
-import { GRUPOS, GRUPO, grupoDe } from './grupos-pais.mjs';
+import { GRUPOS, grupoDe } from './grupos-pais.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);

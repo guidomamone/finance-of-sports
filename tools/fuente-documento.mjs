@@ -10,8 +10,8 @@
 // USO: node tools/fuente-documento.mjs [<clubId> …]            ensayo (cuenta y lista lo que no pudo)
 //      node tools/fuente-documento.mjs [<clubId> …] --escribir  escribe (después: node tools/publicar.mjs)
 // ============================================================================
-import { readdirSync, existsSync } from 'node:fs';
-import { resolve, join, relative, basename } from 'node:path';
+import { readdirSync } from 'node:fs';
+import { resolve, join, relative } from 'node:path';
 import { leerJsonClub, modificarClub } from './club-json.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');

@@ -34,7 +34,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
-import { deportes, categoriasDeDeporte, CEROS_POR_DEPORTE, deportesActivos } from './deporte-club.mjs';
+import { categoriasDeDeporte, CEROS_POR_DEPORTE, deportesActivos } from './deporte-club.mjs';
 import { validarReglasPrompt } from './reglas-categoria.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');

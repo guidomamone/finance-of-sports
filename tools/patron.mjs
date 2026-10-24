@@ -21,7 +21,7 @@
 // GENERAL y RECHAZADA en Admin/registros/auditoria-proceso.jsonl, con la huella de cada tool: el hook de commit la pide para una tool del pipeline.
 // Un cambio que solo toca comentarios o que mueve código sin cambiarlo no necesita veredicto (`cambioDeCodigo`; `--exento a.mjs,b.mjs [--indice]` lo dice, para el hook).
 // ============================================================================
-import { readFileSync, readdirSync, appendFileSync, existsSync, statSync } from 'node:fs';
+import { readFileSync, readdirSync, appendFileSync, existsSync } from 'node:fs';
 import { join, resolve, relative, sep } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { clasificar } from './clasificar-tools.mjs';

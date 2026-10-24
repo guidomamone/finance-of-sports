@@ -26,7 +26,7 @@
 // ============================================================================
 
 import { readFileSync, readdirSync, existsSync, renameSync, mkdirSync, lstatSync, rmdirSync } from 'node:fs';
-import { resolve, join, basename } from 'node:path';
+import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
 
 const args = process.argv.slice(2);

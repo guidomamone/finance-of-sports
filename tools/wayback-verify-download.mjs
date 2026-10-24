@@ -35,7 +35,7 @@
 
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { writeFile, rename, unlink, mkdir } from 'node:fs/promises';
+import { writeFile, rename, mkdir } from 'node:fs/promises';
 import { dirname } from 'node:path';
 
 const execFileAsync = promisify(execFile);

@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1065 — imports sin uso: 9 tools que no son del pipeline [catalogo-liga.mjs, estado.mjs, existe.mjs, fuente-documento.mjs, medir-cargar.mjs, mudar-carpetas.mjs, patron.mjs, probar-medir-pipeline.mjs, wayback-verify-download.mjs]
+
+- Se quitaron 11 imports sin uso (`node tools/indefinidos.mjs --imports`: 220 a 209) de las tools clasificadas `no_pipeline`; el resto, en las del pipeline, de a una y midiendo.
+- Medición: no aplica (ninguna es del pipeline); `indefinidos` sin errores, `node --check` de las nueve y `probar-medir-pipeline.mjs` ok.
+
 ## Versión 1064 — 444: las 163 preguntas cierre-por-pais contestadas; cierre-sin-fecha descuenta lo que la cola confirmó [444 · cierre-sin-fecha.mjs, probar-cierre.mjs]
 
 - 19 revisores Sonnet (por país, hasta 10 preguntas cada uno, brief `BRIEF-REVISOR-COLA.md`) leyeron la fecha de balance de cada documento: 163 `aceptar`, ninguna corrección; 131 de seguridad alta, 15 media y 17 baja (14 agregados DNCG de Francia y Telstar 2024-25, Paysandu 2025, Remo 2019, Akhmat 2025 y Metalist 2025 sin fecha explícita: se aceptó el cierre del país). Las 163 citas existen en su `.md`.

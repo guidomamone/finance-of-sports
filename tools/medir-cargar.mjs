@@ -26,8 +26,7 @@
 // Medido así: el escalón de la categoría del renglón: 25 preguntas nuevas en 11 de 570 documentos.
 // ============================================================================
 
-import { readdirSync, statSync, existsSync, readFileSync, appendFileSync, writeFileSync, copyFileSync } from 'node:fs';
-import { execFileSync } from 'node:child_process';
+import { readdirSync, statSync, existsSync, readFileSync, writeFileSync, copyFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { loadSite } from './datos-sitio.mjs';
 
