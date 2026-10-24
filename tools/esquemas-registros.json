@@ -1,0 +1,129 @@
+{
+ "_comentario": "El esquema de los registros de decisión (punto 437): qué campos tiene cada línea, cuáles son obligatorios, qué valores admiten los enumerados y qué campos estructurados se suman para que el motivo no sea solo prosa. TODAVÍA NO LO HACE CUMPLIR NINGUNA TOOL NI audit.js (eso es lo que falta del 437): hoy es la definición escrita contra la que se van a adaptar las tools que escriben. `actual` es lo que las líneas tienen hoy (medido el 2026-10-24 sobre todo el archivo); `nuevo` es lo que se suma, con `nota` libre aparte para las particularidades. Una línea escrita antes de que una tool cumpla el esquema nuevo se considera `legado` y no se reescribe.",
+ "version": 1,
+ "legado": "Toda línea anterior a la primera que lleve el campo `esquema` es legado: no se reescribe ni audit.js la exige. Una línea nueva lleva `esquema: 1`.",
+ "registros": {
+  "auditoria-proceso.jsonl": {
+   "archivo": "Admin/registros/auditoria-proceso.jsonl",
+   "lineas_al_medir": 245,
+   "escriben": ["tools/patron.mjs", "tools/decision.mjs", "tools/silenciar.mjs"],
+   "leen": ["tools/que-pide.mjs", "tools/todo.mjs (contexto del punto)", "tools/audit-chequeos-5.js (revision-propia-pendiente)", "tools/hooks/pre-tool.mjs (el veredicto que pide el commit)"],
+   "actual": {
+    "obligatorios": {
+     "fecha": "string AAAA-MM-DD",
+     "sesion": "string (auditora-N | unica)",
+     "cambio": "string: qué se decidió o qué cambio se juzgó (prosa corta)",
+     "veredicto": "string: hoy texto libre con ~11 valores (ver `enumerados.veredicto`)",
+     "motivo": "string: el porqué en prosa (el campo que el 437 quiere estructurar)"
+    },
+    "opcionales": {
+     "commit": "string | null: el hash, 'sin commit' o texto",
+     "votos": "array de letras de la opción votada por cada votante, p. ej. [\"A\",\"A\",\"A\"] (22 líneas)",
+     "codigo_tratado": "string: el código de audit.js sobre el que se decidió (23 líneas)",
+     "antes": "number | string: medida antes del cambio (70 líneas)",
+     "despues": "number | string: medida después (70 líneas)",
+     "hecho": "string (1 línea)",
+     "pendiente": "string (3 líneas)",
+     "patron": "string | null: la regex que se contó (veredictos de patron.mjs, 49 líneas)",
+     "comando": "string: el comando de patron.mjs que lo produjo",
+     "documentos": "number | null: documentos con el patrón",
+     "clubes": "number | null: clubes con el patrón",
+     "tools": "object: huella (hash) de cada tool juzgada, nombre de archivo -> hash",
+     "sinDocumentos": "string: por qué un cambio de infraestructura no lee documentos (7 líneas)",
+     "regla": "string (1 línea)",
+     "revision": "propia | auditora (punto 436; 4 líneas)"
+    },
+    "enumerados": {
+     "veredicto": ["APROBADO", "APROBADO CON UN CAMBIO", "APROBADO CON DOS CAMBIOS", "APROBADO CON TRES CAMBIOS", "APROBADO COMO AVISO", "GENERAL: SE COMMITEA", "RECHAZADA", "DECIDIDO", "CONFIRMADO", "A GUIDO", "CODEADO COMO APROBÓ LA AUDITORA (y otros valores libres; el 437 los pasa a una lista cerrada)"],
+     "revision": ["propia", "auditora"]
+    }
+   },
+   "nuevo": {
+    "esquema": "number: 1",
+    "tipo": "enumerado: votacion | veredicto-patron | condicion-nueva | decision-auditora | silencio-de-audit",
+    "caso": "object { club: id, anio: number, documento: ruta, lineas: [desde, hasta] } | null: de qué trata la decisión",
+    "opciones": "array de { letra, texto }: lo que se votó",
+    "votos": "array de { votante, opcion, criterios: { \"1\"..\"9\": { valor: a-favor | en-contra | no-aplica, cita: 'archivo:linea' | 'club-anio' } }, no_abri: [rutas] }",
+    "veredicto_codigo": "enumerado: aprobado | aprobado-con-cambios | general | rechazada | decidido | a-guido | confirmado (el texto libre de `veredicto` pasa a la nota)",
+    "criterio_decisivo": "number 1..9 | null: el criterio de la escala que decidió",
+    "anios_cargados_que_cambian": "number >= 0",
+    "mueve_pct": "number | null: cuánto mueve contra la otra opción (skill votacion-de-criterios, sección 4)",
+    "regla": "{ archivo, titulo } | null: dónde quedó la regla",
+    "revision": "propia | auditora",
+    "nota": "string libre: las particularidades; no reemplaza a los campos de arriba"
+   },
+   "obligatorios_nuevos": ["esquema", "tipo", "veredicto_codigo", "revision (en un veredicto-patron o una condicion-nueva)", "caso y votos (en una votacion)"]
+  },
+  "cola-revision.jsonl": {
+   "archivo": "Admin/registros/cola-revision.jsonl",
+   "lineas_al_medir": 14656,
+   "escriben": ["tools/cola.mjs (agregarCaso y --responder, --corregir-categoria)"],
+   "leen": ["tools/cola-historial.mjs", "tools/cargar.mjs", "tools/lote.mjs", "tools/datos-cola.mjs", "tools/medir-cargar.mjs", "tools/medir-verificar.mjs"],
+   "actual": {
+    "tipo_caso": {
+     "lineas_al_medir": 7056,
+     "obligatorios": {
+      "tipo": "caso",
+      "id": "string (hash corto)",
+      "ts": "string ISO",
+      "clave": "string: pdf|etapa|motivo|detalle (identifica la pregunta)",
+      "pdf": "string ruta",
+      "md": "string ruta",
+      "etapa": "enumerado: cargar | verificar | alta",
+      "motivo": "enumerado (ver `enumerados.motivo`)",
+      "detalle": "string",
+      "que": "string: la pregunta en prosa"
+     },
+     "opcionales": {
+      "pagina": "number | null (5674 líneas)",
+      "lineas": "array | null: líneas del .md (2375)",
+      "categoriaPropuesta": "string: la categoría que propone el sistema (3257, motivo categoria)",
+      "propuesta": "string | null: la respuesta que propone el sistema (5764)",
+      "perimetroPropuesto": "string (68)",
+      "nombrePropuesto": "string (85, etapa alta)",
+      "anio": "number (132)",
+      "claveEstable": "string (29)"
+     }
+    },
+    "tipo_respuesta": {
+     "lineas_al_medir": 7600,
+     "obligatorios": {
+      "tipo": "respuesta",
+      "id": "string: el id del caso",
+      "ts": "string ISO",
+      "decision": "enumerado: aceptar | corregir | descartar | preguntar-club | obsoleto | reabierto",
+      "nota": "string | null: el porqué en prosa (el campo que el 437 quiere estructurar)"
+     },
+     "opcionales": { "valor": "string | null: el valor corregido o la respuesta (5808)" }
+    },
+    "enumerados": {
+     "etapa": ["cargar", "verificar", "alta"],
+     "motivo": ["categoria", "duda-tema", "duda-de-extraer", "duda-de-localizar", "perfil", "no-cierra", "gestion", "primer-anio", "anio-vecino", "numero-no-confirmado", "name", "perimetro", "anio-anterior", "resultado-final"],
+     "decision": ["aceptar", "corregir", "descartar", "preguntar-club", "obsoleto", "reabierto"]
+    }
+   },
+   "nuevo": {
+    "respuesta": {
+     "esquema": "number: 1",
+     "evidencia": "{ md, lineas: [desde, hasta] } | null: dónde se miró para contestar",
+     "precedentes": "array de ids de casos o ejercicios que sostienen la respuesta",
+     "seguridad": "enumerado: alta | media | baja",
+     "causa": "enumerado, según el motivo del caso (p. ej. en categoria: etiqueta-ambigua | precedente-del-club | regla-del-pais)",
+     "nota": "string libre: las particularidades"
+    },
+    "caso": {
+     "esquema": "number: 1",
+     "subtipo": "enumerado: el subtipo de la pregunta (nota-informativa | sin-desglose | cuadro-informativo | cost-of-sales-y-administrative | perfil-socios | perfil-otros-deportes | otro); permite medir cuáles se evitan (punto 441)",
+     "cerrable_sola": "boolean: la pregunta se retira si la corrida siguiente no la vuelve a levantar (441: no-cierra, primer-anio, anio-vecino, numero-no-confirmado)"
+    },
+    "obligatorios_nuevos": ["esquema", "decision y, si decision es corregir, valor", "evidencia (salvo decision obsoleto)", "seguridad"]
+   }
+  }
+ },
+ "falta": [
+  "Que patron.mjs, decision.mjs, silenciar.mjs y cola.mjs escriban los campos nuevos y cumplan el esquema (con casos en probar-patron.mjs y una prueba de cola).",
+  "Un chequeo de audit.js: P3 si una línea con `esquema` no cumple el esquema (campos obligatorios, enumerados, tipos). Las líneas legado no se exigen.",
+  "Los mismos esquemas para ajustes-manuales.jsonl (causa enumerada y evidencia {archivo, linea}) y mediciones-pipeline.jsonl (explicacion).",
+  "La skill votacion-de-criterios: que los votantes devuelvan el voto con la forma de `nuevo.votos` (commit aparte; lo lee Guido)."
+ ]
+}

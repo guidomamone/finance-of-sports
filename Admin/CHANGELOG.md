@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1047 — 437: el esquema de los registros de decisión, escrito (sin que nada lo exija todavía) [437]
+
+- `tools/esquemas-registros.json`: el esquema de `auditoria-proceso.jsonl` (245 líneas) y de `cola-revision.jsonl` (14656): campos de hoy con tipo y cuántas líneas los tienen, enumerados (veredicto, etapa, motivo, decisión), y los campos estructurados que se suman (tipo, caso, votos con criterios y citas, `veredicto_codigo`, `mueve_pct`, `evidencia`, `seguridad`, `subtipo`, `cerrable_sola`) con `nota` libre aparte. Lo anterior queda `legado`.
+- Ninguna tool lo cumple todavía y `audit.js` no lo chequea: el punto 437 queda abierto con HECHO y QUEDA.
+- Medición: sin cambios a ninguna tool; el JSON no lo lee nadie.
+
 ## Versión 1046 — 441: qué preguntas de la cola se pueden evitar, medido contra la cola histórica [441]
 
 - `Admin/mediciones/441-cola-evitables.md`: ningún subtipo de duda de `verificar` pasa el 98 % de aceptación para una compuerta; se pueden evitar 307 de las 501 preguntas de perfil (por tema y país) y 705 preguntas de `verificar` que la corrida siguiente cerró sola. El punto 441 queda abierto con HECHO y QUEDA (lo que depende de una decisión de Guido o de un gasto está escrito ahí).
