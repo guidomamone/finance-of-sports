@@ -122,6 +122,16 @@ r = medir('--explicacion', 'el medidor no tiene nada que imprimir en este caso')
 caso('un medidor vacío con --explicacion sale con 0 y queda «diferencias, todas explicadas»', r.status === 0 && /^1 diferencias, todas explicadas$/.test(registro().at(-1)?.resultado || ''), r.out.slice(-300) + JSON.stringify(registro().at(-1)?.resultado));
 volver();
 
+// 8b. una segunda medición se niega y NO borra el candado de la primera (antes lo pisaba y al salir lo borraba)
+w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 9;\n');
+mkdirSync(join(T, 'Admin/mediciones/pipeline'), { recursive: true });
+w('Admin/mediciones/pipeline/_corriendo', JSON.stringify({ pid: process.pid }));
+r = medir();
+caso('con una medición en curso (pid vivo) otra se niega con 1 y dice el pid', r.status === 1 && r.out.includes(`pid ${process.pid}`), r.out.slice(-300));
+caso('y el candado de la primera sigue ahí con su pid', existsSync(join(T, 'Admin/mediciones/pipeline/_corriendo')) && JSON.parse(leer('Admin/mediciones/pipeline/_corriendo')).pid === process.pid);
+rmSync(join(T, 'Admin/mediciones/pipeline/_corriendo'), { force: true });
+volver();
+
 // 9. una tool que escribe registros se niega mientras hay una medición en curso (tools/candado-medicion.mjs)
 copyFileSync(join(ROOT, 'tools', 'candado-medicion.mjs'), join(T, 'tools', 'candado-medicion.mjs'));
 w('tools/fake-escritor.mjs', "import { writeFileSync } from 'node:fs';\nimport { negarSiSeMide } from './candado-medicion.mjs';\nnegarSiSeMide('fake-escritor.mjs', { si: !process.argv.includes('--solo-leer') });\nwriteFileSync(`${import.meta.dirname}/../escribio.txt`, 'si');\n");

@@ -153,6 +153,11 @@ if (A.includes('--ensayo')) { process.exit(0); }
 // Se suelta al salir, también por un error o Ctrl-C; si la corrida muere sin soltarlo, el hook ignora un pid que ya no existe.
 const CANDADO = join(BASE_DIR, '_corriendo');
 mkdirSync(BASE_DIR, { recursive: true });
+// Una segunda medición no pisa ni borra el candado de la primera: con un pid vivo en el candado se niega (antes escribía el suyo y al salir lo borraba, y la medición en curso
+// quedaba sin candado: el hook y las tools que escriben registros ya no la veían).
+let otraMedicion = null;
+try { const pid = Number(JSON.parse(readFileSync(CANDADO, 'utf8')).pid); if (pid !== process.pid) { process.kill(pid, 0); otraMedicion = pid; } } catch { /* sin candado, o de un pid muerto */ }
+if (otraMedicion) { console.error(`Ya hay una medición en curso (pid ${otraMedicion}): esperá a que termine. Si cayó y quedó el candado, borrá ${CANDADO.replace(`${ROOT}/`, '')}.`); process.exit(1); }
 writeFileSync(CANDADO, JSON.stringify({ pid: process.pid, desde: new Date().toISOString(), tools: nombres }));
 process.env.FOS_MIDIENDO = '1'; // los medidores y las tools que corren como hijos de la medición no se niegan (tools/candado-medicion.mjs)
 process.on('exit', () => { try { rmSync(CANDADO, { force: true }); } catch { /* ya no está */ } });

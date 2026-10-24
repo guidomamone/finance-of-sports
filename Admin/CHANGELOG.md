@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1051 — medir-pipeline.mjs: una segunda medición ya no borra el candado de la primera [443 · medir-pipeline.mjs, probar-medir-pipeline.mjs]
+
+- Antes, una medición lanzada mientras otra corría escribía su propio candado, se negaba por los datos sin commitear y al salir lo borraba: la primera seguía midiendo sin candado, y ni el hook ni las tools que escriben registros la veían. Ahora la segunda se niega con el pid de la primera y no toca el candado. Apareció midiendo el 444.
+- `probar-medir-pipeline.mjs`: 2 casos nuevos (se niega con el pid; el candado de la primera sigue con su pid), todos los casos ok.
+- Medición: `medir-pipeline.mjs` es un medidor (fuera del pipeline); la prueba de juguete da todos los casos ok. Sin revisión independiente.
+
 ## Versión 1050 — periodo.mjs: la fecha de fin de mes más citada con su comparativa, y las fechas coreanas, japonesas y chinas [444 · periodo.mjs]
 
 - Un anual sin cierre toma el último día de mes más citado en las primeras 8 páginas si se cita 3 veces o más, su comparativa un año antes también aparece y el año del nombre del archivo (si lo trae) coincide. Medido sobre los 2980 anuales cuyo cierre ya se lee de otra forma: 98,3 % de aciertos (996 de 1013) con las dos compuertas, contra 95,2 % de la regla sola. `fechasDe` lee «2018년 12월 31일» y «2018年3月31日». Sin cierre: 634 pasan a 554 (80 más; Brasil 16, Colombia 12, Países Bajos 10, Croacia 8, España 7, Japón 6…) y ningún período con cierre cambia.
