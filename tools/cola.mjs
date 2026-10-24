@@ -42,6 +42,7 @@ import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
+import { lineaDeRespuesta, CAUSAS } from './cola-respuesta.mjs';
 import { negarSiSeMide } from './candado-medicion.mjs';
 import { rarezasEnRango, describir } from './rarezas.mjs';
 
@@ -349,7 +350,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         process.exit(1);
       }
     }
-    appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision, valor: flag('--valor'), nota: flag('--nota') }) + '\n');
+    // Con esquema: --evidencia "ruta.md:12-30" (o ninguna) --seguridad --causa (cola-respuesta.mjs); sin las tres, sin `esquema`.
+    const respuesta = lineaDeRespuesta({ id, decision, valor: flag('--valor'), nota: flag('--nota'), evidencia: flag('--evidencia'), seguridad: flag('--seguridad'), causa: flag('--causa'), precedentes: flag('--precedentes') });
+    if (respuesta.errores.length) { console.error(`No guardé la respuesta: ${respuesta.errores.join('; ')}. --causa: ${CAUSAS.join('|')}`); process.exit(1); }
+    if (!respuesta.conEsquema) console.log('Aviso: la respuesta no lleva esquema.');
+    appendFileSync(ARCHIVO, JSON.stringify(respuesta.linea) + '\n');
     console.log(`Respuesta guardada para ${id}: ${decision}${flag('--valor') ? ` (${flag('--valor')})` : ''}. La toma la próxima corrida de la etapa que mandó el caso.`);
     // PERFIL: UNA RESPUESTA VALE PARA TODO EL CLUB. El perfil (socios, otros deportes) es del club, pero la respuesta llegaba
     // al perfil recién cuando cargar.mjs volvía a correr ESE documento, y los casos de los otros años seguían abiertos (Olympiacos: 10+10

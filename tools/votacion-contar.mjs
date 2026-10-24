@@ -14,6 +14,7 @@
 import { readFileSync, appendFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { verificarCita } from './votacion-citas.mjs';
+import { validar } from './registro-esquema.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const MAX_ANIOS = 10;
@@ -62,6 +63,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (A.includes('--escribir')) {
     const caso = val('--caso'); if (!caso) { console.error('--escribir pide --caso "<el caso>"'); process.exit(1); }
     const linea = { fecha: new Date().toISOString().slice(0, 10), sesion: val('--sesion') || 'unica', cambio: `votación: ${caso}`, veredicto: r.veredicto, motivo: r.motivo, votos: votos.map((v) => v.opcion), esquema: 1, tipo: 'votacion', veredicto_codigo: r.veredicto === 'DECIDIDO' ? 'decidido' : 'a-guido', anios_cargados_que_cambian: Math.max(0, ...votos.map((v) => (v.anios_que_cambian || []).length)) };
+    const fuera = validar('auditoria-proceso', linea);
+    if (fuera.length) { console.error(`No se anota: la línea no cumple el esquema (${fuera.join('; ')}).`); process.exit(1); }
     appendFileSync(resolve(ROOT, 'Admin', 'registros', 'auditoria-proceso.jsonl'), `${JSON.stringify(linea)}\n`);
     console.log('Anotado en Admin/registros/auditoria-proceso.jsonl.');
   }

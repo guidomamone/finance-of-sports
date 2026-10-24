@@ -367,16 +367,15 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
   }
   return terminar(res, nombreArchivo, mdText);
 }
-// Los años que el NOMBRE del archivo dice: los de cuatro cifras y, en una temporada abreviada "2009-10" / "2023_24", el año de CIERRE (el segundo; misma regla que guessYear() de onboard.mjs).
+// Los años del NOMBRE del archivo; en una temporada abreviada "2009-10" cuenta el de CIERRE (el segundo).
 const aniosDelNombre = (nom) => {
   const ys = [...nom.matchAll(/(?<!\d)(19|20)\d{2}(?!\d)/g)].map((x) => x[0]);
   for (const m of nom.matchAll(/(?<!\d)((?:19|20)\d{2})[-_](\d{2})(?!\d)/g)) { const fin = Number(m[1].slice(0, 2) + m[2]); if (fin === Number(m[1]) + 1) ys.push(String(fin)); }
   return ys;
 };
-// ESCALÓN "FECHA DE FIN DE MES MÁS REPETIDA": un anual sin cierre leído de un título ni de un par de encabezado (el cierre solo está en el cuerpo: «al 31 de diciembre de 2023»
-// en cada estado) toma el último día de mes más citado en las primeras páginas, con tres compuertas: se cita 3 veces o más, su comparativa un año antes también aparece, y el año
-// del nombre del archivo (si lo trae) es el del cierre. Con un empate gana la fecha más tardía (la del ejercicio, no la del comparativo). Medido sobre los anuales cuyo cierre ya
-// se lee de otra forma: 98,3 % de aciertos (996 de 1013); las dos compuertas de comparativa y nombre suben el 95,2 % de la regla sola.
+// ESCALÓN "FECHA DE FIN DE MES MÁS REPETIDA": un anual sin cierre (el cierre solo está en el cuerpo: «al 31 de diciembre de 2023») toma el último día de mes más citado en las primeras
+// páginas: 3 citas o más, su comparativa un año antes también aparece y el año del nombre del archivo (si lo trae) coincide. Empate: la fecha más tardía. 98,3 % de aciertos medido
+// sobre los anuales con cierre ya leído (996 de 1013); sin las dos últimas compuertas, 95,2 %.
 const ultimoDiaDelMes = (f) => f.d === new Date(Date.UTC(f.a, f.m, 0)).getUTCDate();
 export function cierrePorFechaRepetida(mdText, nombreArchivo = '', { paginas = 8 } = {}) {
   const cuenta = new Map();

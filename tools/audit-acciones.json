@@ -125,6 +125,11 @@
   "quien": "sesion",
   "donde": "skill club-sourcing, referencia/liga-y-sponsor.md"
  },
+ "registro-fuera-de-esquema": {
+  "hacer": "La línea nombrada no cumple tools/esquemas-registros.json (clave `validacion`): le falta un campo obligatorio, tiene un valor fuera de la lista o no trae `esquema`. En la cola: node tools/cola.mjs --responder <id> <decisión> --evidencia \"ruta.md:12-30\" --seguridad alta|media|baja --causa <enumerado>. En auditoria-proceso: patron.mjs, decision.mjs (--resultado) y votacion-contar.mjs ya arman la línea. Una línea vieja no se reescribe.",
+  "quien": "sesion",
+  "donde": "punto 437 y tools/esquemas-registros.json"
+ },
  "error-estatico": {
   "hacer": "node tools/fos.mjs indefinidos: dice archivo, línea, regla y mensaje. Es un error de código que eslint encuentra sin correr nada (una clave repetida en un objeto, código que nunca se alcanza, una constante reasignada…): se corrige y, si es una tool del pipeline, se mide.",
   "quien": "sesion",

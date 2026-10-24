@@ -25,6 +25,7 @@ import { readFileSync, readdirSync, appendFileSync, existsSync, statSync } from 
 import { join, resolve, relative, sep } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { clasificar } from './clasificar-tools.mjs';
+import { validar } from './registro-esquema.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const git = (a, o = {}) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, ...o });
@@ -192,6 +193,7 @@ function principal() {
   }
   if (A.includes('--escribir') && ['GENERAL', 'RECHAZADA'].includes(veredicto)) {
     const reg = {
+      esquema: 1, tipo: 'veredicto-patron', veredicto_codigo: veredicto === 'GENERAL' ? 'general' : 'rechazada',
       fecha: new Date().toISOString().slice(0, 10), sesion: v('--sesion') || 'unica', cambio,
       commit: rango ? rango : 'sin commit', veredicto: veredicto === 'GENERAL' ? 'GENERAL: SE COMMITEA' : 'RECHAZADA',
       patron: cont ? `/${patron}/im` : null, comando: cont ? `node tools/patron.mjs ${enXhtml !== undefined ? '--en-xhtml' : '--patron'} ${JSON.stringify(patron)}` : `node tools/patron.mjs --sin-documentos ${JSON.stringify(sinDoc)}`, documentos: cont?.documentos ?? null, clubes: cont?.clubes ?? null,
@@ -199,6 +201,8 @@ function principal() {
       antes: med?.linea ? `medición ${med.linea.fecha}` : 'sin código', despues: med?.linea ? `${med.linea.resultado} (lote ${med.linea.nivel})` : 'sin código',
       motivo: v('--motivo') ? `${motivo}. ${v('--motivo')}` : motivo, tools: med?.huellas,
     };
+    const fuera = validar('auditoria-proceso', reg); // el esquema de tools/esquemas-registros.json: no se escribe una línea que no lo cumple
+    if (fuera.length) { console.error(`No se anota: la línea no cumple el esquema (${fuera.join('; ')}).`); process.exit(1); }
     appendFileSync(REGISTRO, `${JSON.stringify(reg)}\n`);
     console.log(`Anotado en ${relative(ROOT, REGISTRO)}.`);
   } else if (A.includes('--escribir')) console.log('No se anota: solo GENERAL y RECHAZADA quedan en el registro.');

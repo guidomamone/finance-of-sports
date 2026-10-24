@@ -21,10 +21,10 @@ const ROOT = resolve(import.meta.dirname, '..');
 const T = resolve(ROOT, 'Admin', 'mediciones', 'pipeline', '_prueba-repo');
 rmSync(T, { recursive: true, force: true });
 for (const d of ['tools', 'Admin/lotes', 'Admin/registros']) mkdirSync(join(T, d), { recursive: true });
-for (const f of ['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js']) copyFileSync(join(ROOT, 'tools', f), join(T, 'tools', f));
+for (const f of ['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'registro-esquema.js', 'esquemas-registros.json']) copyFileSync(join(ROOT, 'tools', f), join(T, 'tools', f));
 const w = (rel, txt) => writeFileSync(join(T, rel), txt);
 const leer = (rel) => readFileSync(join(T, rel), 'utf8');
-const NP = Object.fromEntries(['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'fake-medidor.mjs'].map((f) => [f, 'prueba']));
+const NP = Object.fromEntries(['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'registro-esquema.js', 'fake-medidor.mjs'].map((f) => [f, 'prueba']));
 w('tools/pipeline-tools.json', JSON.stringify({
   lotes: { chico: 'Admin/lotes/prueba-rapida.txt', mediano: 'Admin/lotes/prueba-mediana.txt', completo: 'Admin/lotes/prueba-completa.txt' },
   medidores: { salida: { que: 'prueba', usaLista: false, correr: ['tools/fake-medidor.mjs'], comparar: 'texto' } },

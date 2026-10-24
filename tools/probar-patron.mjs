@@ -6,18 +6,19 @@
 // Uso: node tools/probar-patron.mjs   (unos segundos; sale con 1 si algún caso falla; no toca nada fuera de su carpeta de prueba)
 import { mkdirSync, writeFileSync, readFileSync, copyFileSync, rmSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
+import { createRequire } from 'node:module';
 import { resolve, join } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const T = resolve(ROOT, 'Admin', 'mediciones', 'pipeline', '_prueba-patron');
 rmSync(T, { recursive: true, force: true });
 for (const d of ['tools', 'data', 'Admin/registros']) mkdirSync(join(T, d), { recursive: true });
-for (const f of ['patron.mjs', 'clasificar-tools.mjs']) copyFileSync(join(ROOT, 'tools', f), join(T, 'tools', f));
+for (const f of ['patron.mjs', 'clasificar-tools.mjs', 'registro-esquema.js', 'esquemas-registros.json']) copyFileSync(join(ROOT, 'tools', f), join(T, 'tools', f));
 const w = (rel, txt) => writeFileSync(join(T, rel), txt);
 const leer = (rel) => readFileSync(join(T, rel), 'utf8');
 w('tools/pipeline-tools.json', JSON.stringify({
   lotes: { chico: 'a', mediano: 'b', completo: 'c' }, medidores: { salida: { que: 'prueba', usaLista: false, correr: ['tools/x.mjs'], comparar: 'texto' } },
-  tools: { 'fake-tool.mjs': { alcance: 'etapa', medidores: ['salida'] } }, no_pipeline: { 'patron.mjs': 'prueba', 'clasificar-tools.mjs': 'prueba' },
+  tools: { 'fake-tool.mjs': { alcance: 'etapa', medidores: ['salida'] } }, no_pipeline: { 'patron.mjs': 'prueba', 'clasificar-tools.mjs': 'prueba', 'registro-esquema.js': 'prueba' },
 }, null, 1));
 w('data/clubs.js', "const clubs = {\n  'boca-ar': { name:'Boca Juniors', displayName:'Boca Juniors' },\n};\n");
 w('tools/fake-tool.mjs', 'export const VALOR = 1;\n');
@@ -74,6 +75,7 @@ r = patron('--cambio', 'sin regex', '--en-xhtml');
 caso('--en-xhtml sin regex se rechaza con código 1', r.status === 1 && /pide la regex/.test(r.out), r.out);
 
 // --revision propia|auditora queda en el registro, y revisionesPendientes (el P4 de audit.js) lista las propias que una auditora posterior no cubre
+caso('la línea anotada lleva esquema y cumple tools/esquemas-registros.json', registro().at(-1)?.esquema === 1 && registro().at(-1)?.tipo === 'veredicto-patron' && createRequire(import.meta.url)('./registro-esquema.js').validar('auditoria-proceso', registro().at(-1)).length === 0, JSON.stringify(registro().at(-1)).slice(0, 300));
 r = patron('--cambio', 'otro valor', '--sin-documentos', MOTIVO, '--revision', 'propia', '--escribir');
 caso('--revision propia queda en el registro', /Anotado/.test(r.out) && registro().at(-1)?.revision === 'propia', r.out.slice(-300));
 r = patron('--cambio', 'otro valor', '--sin-documentos', MOTIVO, '--revision', 'nadie');

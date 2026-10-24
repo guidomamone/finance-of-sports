@@ -10,6 +10,7 @@
 //   - Sin red ni IA. Después: `node tools/audit.js --quiet` para ver que bajó.
 // ============================================================================
 import { readFileSync, writeFileSync, appendFileSync } from 'node:fs';
+import { validar } from './registro-esquema.js';
 import { execFileSync } from 'node:child_process';
 import { resolve } from 'node:path';
 
@@ -36,5 +37,8 @@ const lista = JSON.parse(readFileSync(IGNORE, 'utf8'));
 const entrada = { code: codigo, match, motivo: `VERIFICADO (${verificado}, ${fecha}). ${motivo}` };
 lista.push(entrada);
 writeFileSync(IGNORE, JSON.stringify(lista, null, 1) + '\n');
-appendFileSync(REGISTRO, JSON.stringify({ fecha, sesion: 'unica', codigo_tratado: codigo, cambio: `silenciado en audit-ignore: ${match}`, veredicto: 'silenciado con verificación', motivo }) + '\n');
+const linea = { esquema: 1, tipo: 'silencio-de-audit', veredicto_codigo: 'silenciado', fecha, sesion: 'unica', codigo_tratado: codigo, cambio: `silenciado en audit-ignore: ${match}`, veredicto: 'silenciado con verificación', motivo };
+const fuera = validar('auditoria-proceso', linea);
+if (fuera.length) { console.error(`La línea del registro no cumple el esquema (${fuera.join('; ')}); el silencio ya quedó en audit-ignore.json.`); process.exit(1); }
+appendFileSync(REGISTRO, JSON.stringify(linea) + '\n');
 console.log(`silenciado: ${codigo} · ${match}\n  ${hallazgos[0].msg.slice(0, 160)}`);

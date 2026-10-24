@@ -273,6 +273,26 @@ function checkNombresSinDefinir() {
   if (imp.length) add('P3', 'imports-sin-uso', `${imp.length} import(s) sin uso en ${new Set(imp.map(x => x.archivo)).size} archivos de tools/ (ej. ${imp.slice(0, 3).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}). Información: se limpian de a un archivo`);
 }
 
+// registro-fuera-de-esquema (punto 437): una línea con `esquema` que no cumple tools/esquemas-registros.json, o una línea de DESDE en adelante que debía llevarlo y no lo trae
+// (auditoria-proceso.jsonl: todas; cola-revision.jsonl: las respuestas aceptar, corregir, descartar y preguntar-club). Lo anterior es legado y no se mira.
+function checkRegistroFuera() {
+  const { validar, DESDE } = require('./registro-esquema.js');
+  const leer = (rel) => { try { return fs.readFileSync(path.join(ROOT, 'Admin', 'registros', rel), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean); } catch { return []; } };
+  const malas = [];
+  for (const x of leer('auditoria-proceso.jsonl')) {
+    const e = validar('auditoria-proceso', x);
+    if (e.length) malas.push(`auditoria-proceso ${x.fecha}: ${e[0]}`);
+    else if (x.esquema === undefined && String(x.fecha) >= DESDE) malas.push(`auditoria-proceso ${x.fecha}: sin esquema («${String(x.cambio).slice(0, 40)}»)`);
+  }
+  for (const x of leer('cola-revision.jsonl')) {
+    if (x.tipo !== 'respuesta') continue;
+    const e = validar('cola-respuesta', x);
+    if (e.length) malas.push(`cola-revision ${x.id}: ${e[0]}`);
+    else if (x.esquema === undefined && ['aceptar', 'corregir', 'descartar', 'preguntar-club'].includes(x.decision) && String(x.ts).slice(0, 10) >= DESDE) malas.push(`cola-revision ${x.id}: respuesta sin esquema (--evidencia, --seguridad y --causa)`);
+  }
+  if (malas.length) add('P3', 'registro-fuera-de-esquema', `${malas.length} línea(s) de los registros de decisión fuera del esquema (tools/esquemas-registros.json): ${malas.slice(0, 3).join(' · ')}`);
+}
+
 // cierre-sin-fecha: documentos con .md, de carpetas de clubes que ya tienen un ejercicio cargado, cuyo período en el registro no trae fecha de cierre. Sin ella,
 // cargar-inicio.mjs no encuentra el cierre del año anterior y frena (SønderjyskE 2023). Se arregla con periodo.mjs (el cierre del nombre del archivo, con compuerta) o con un ajuste `cierre`.
 function checkCierreSinFecha() {
@@ -294,4 +314,4 @@ function checkRevisionPropiaPendiente() {
   if (pendientes.length) add('P3', 'revision-propia-pendiente', `${pendientes.length} cambio(s) revisados solo por la sesión que los hizo, sin la revisión de la Auditora:${pendientes.slice(-3).map(l => `${l.fecha} ${String(l.cambio).slice(0, 50)}`).join(' · ')}. La Auditora los revisa y anota patron --revision auditora`);
 }
 
-module.exports = { checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };
+module.exports = { checkRegistroFuera, checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };
