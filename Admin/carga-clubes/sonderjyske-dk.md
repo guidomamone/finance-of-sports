@@ -135,6 +135,41 @@ _de data/club-leagues/dk.js:_
 relegado recién para la temporada SIGUIENTE (2022/23)
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-24) desde Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Nettoomsætning | pág. 15, Jev 0.99 |
+| 2 | Andre driftsindtægter | pág. 15, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vareforbrug | pág. 15, Jev 0.95 |
+| 2 | Andre eksterne omkostninger | pág. 15, precedente |
+| 3 | Løn og gager | pág. 19, precedente |
+| 4 | Pensionsbidrag | pág. 19, precedente |
+| 5 | Andre omkostninger til social sikring | pág. 19, precedente |
+| 6 | Kontraktsrettigheder | pág. 19, precedente |
+| 7 | Indretning lejede lokaler | pág. 19, precedente |
+| 8 | Andre anlæg, driftsmateriel og inventar | pág. 19, precedente |
+| 9 | Andre driftsomkostninger | pág. 15, Jev 0.97 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-24). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## 2024
 
 ### Ingresos
@@ -259,4 +294,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-24) desde la transcripción Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### sonderjyske-dk-aarsrapport-2025-09-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-24) desde la transcripción Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

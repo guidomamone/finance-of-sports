@@ -39,6 +39,16 @@
       "document": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.pdf",
       "public_note": "Informe oficial en formato XHTML (iXBRL)",
       "url": "http://regnskaber.virk.dk/11188513/amNsb3VkczovLzAzL2U0L2M4L2I1L2UxL2VmMzgtNDNkNC1hOGMyLTAwMTA0Zjc2NzkwMQ.xhtml"
+    },
+    {
+      "id": "sonderjyske-dk-aarsrapport-2025-09-30",
+      "club_id": "sonderjyske-dk",
+      "title": "Sønderjyske Fodbold A/S — aarsrapport-2025-09-30 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.pdf",
+      "public_note": "Informe oficial en formato XHTML (iXBRL)",
+      "url": "http://regnskaber.virk.dk/11188513/amNsb3VkczovLzAzL2Y0L2UwLzY1L2NmL2NlMmEtNGI3Ny1iYjdiLTRiYjQyNmQyNmUwMw.xhtml"
     }
   ],
   "members": null,
@@ -191,6 +201,64 @@
           {"label":"Skat af årets resultat","amount":1.746248}
         ],
         "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":37.431315,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-09-30",
+      "currency": "DKK",
+      "source_id": "sonderjyske-dk-aarsrapport-2025-09-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2025-09-30"},
+      "revenue": [
+        {"label":"Nettoomsætning","category":"undisclosed","subcategory":"lump_football_operations","amount":66.288538,"disclosure":"aggregated"},
+        {"label":"Andre driftsindtægter","category":"other_revenue","subcategory":"other_income","amount":0.116122,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Vareforbrug","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.032057,"disclosure":"aggregated"},
+        {
+          "label": "Andre eksterne omkostninger",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -28.683802,
+          "disclosure": "aggregated"
+        },
+        {"label":"Løn og gager","category":"first_team_staff","subcategory":"wages_squad","amount":-43.991746,"disclosure":"aggregated"},
+        {"label":"Pensionsbidrag","category":"first_team_staff","subcategory":"wages_squad","amount":-1.633184,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.757445,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Kontraktsrettigheder",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3.100932,
+          "disclosure": "aggregated"
+        },
+        {"label":"Indretning lejede lokaler","category":"depreciation","subcategory":"depreciation","amount":-0.471721,"disclosure":"aggregated"},
+        {
+          "label": "Andre anlæg, driftsmateriel og inventar",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.234028,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andre driftsomkostninger","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.314752,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.414407,"tax":3.762243,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":66.40466,"expenses":81.219667,"net_result":-11.467171},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Finansielle indtægter","amount":0.532637},
+          {"label":"Finansielle omkostninger","amount":-0.947044},
+          {"label":"Skat af årets resultat","amount":3.762243}
+        ],
+        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":66.288538,"reason":"el documento no desglosa este renglón"}]
       }
     }
   ],

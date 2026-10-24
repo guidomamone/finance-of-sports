@@ -3,7 +3,6 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["dk-superliga"] = {
   2025: {
     leagueSize: 12,
-    sinDato: ["sonderjyske-dk"],
     wiki: {"t":"2024–25 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
       { id:"fckobenhavn-dk", revenue:140.727, reportType:"official_balance_sheet",
@@ -18,6 +17,9 @@ window.RANKINGS["dk-superliga"] = {
       { id:"viborg-dk", revenue:16.128, reportType:"official_balance_sheet",
         sourceId:"viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",12.461],["Otros ingresos",3.667]] },
+      { id:"sonderjyske-dk", revenue:10.444, reportType:"official_balance_sheet",
+        sourceId:"sonderjyske-dk-aarsrapport-2025-09-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",10.426],["Otros ingresos",0.018]] },
       { id:"vejle-dk", revenue:8.537, reportType:"official_balance_sheet",
         sourceId:"vejle-dk-aarsrapport-2025-12-31",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",8.413],["Otros ingresos",0.123]] },
