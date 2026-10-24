@@ -28,22 +28,16 @@
 //   node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]                       COMPLETAR un club ya publicado (ver abajo)
 // ============================================================================
 
-import { readFileSync, existsSync, writeFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import vm from 'node:vm';
-import { readdirSync } from 'node:fs';
-import { derivado } from './rutas.mjs';
 import * as EV from './evidencia-club.mjs';
-import { ajusteDe, ajusteDelAnio, ajusteClubODoc, ajustePerimetroDe } from './ajustes.mjs';
-import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
-import { archivosData, rutaData } from './data-clubes.js';
+import { ajusteDelAnio } from './ajustes.mjs';
+import { CAJA_RE, DEUDA_FINANCIERA_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, esTotal } from './vocabulario.mjs';
 import { modificarClub } from './club-json.mjs'; // el JSON es la fuente de cada club
 import { candidatosPersonal, cierreDeMd, registroDocs, medirPersonal, completarPersonal } from './costo-personal.mjs'; // el costo de personal, mudado tal cual
-import { cierrePorVecinos } from './cierre-vecinos.mjs';
-import { categoriaDeSueldos, deporteDeClub, deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // la categoría de sueldos es la del deporte del club
-import { formaImposible } from './verify-numbers.mjs';
-import { coincide, parseNumber, filasDelMd, esTotalBalance, tablasResumen, soloTablaDelBalance, totalDelBalance, dedupe, r6, cita, filtroDe } from './caja-deuda-md.mjs';
-import { TOTAL_PASIVO_PLURAL_RE, familiasDelClub, propuestaPrecedente, propuestaVocabulario, propuestaIA, propuestaJev, avisarRecorte, jevDe } from './caja-deuda-propuestas.mjs';
+import { deporteDePdf } from './deporte-club.mjs'; // la categoría de sueldos es la del deporte del club
+import { coincide, parseNumber, esTotalBalance, soloTablaDelBalance, dedupe, r6, cita } from './caja-deuda-md.mjs';
+import { TOTAL_PASIVO_PLURAL_RE, familiasDelClub, propuestaPrecedente, propuestaVocabulario, propuestaIA, propuestaJev, jevDe } from './caja-deuda-propuestas.mjs';
 import { sitio, MODELOS_IA, contexto, aniosDe, filasCache, iaDe, medir, HOY, cajaNBB, rusiaDeCodigos } from './caja-deuda-escala.mjs';
 export { sitio, factorPorIngresos, escalaDe, porIA, criterioDeudaDe, aniosDe, filasCache, HOY, cajaNBB } from './caja-deuda-escala.mjs';
 export { aprender, familiasDelClub, avisarRecorte, pedirJev } from './caja-deuda-propuestas.mjs';

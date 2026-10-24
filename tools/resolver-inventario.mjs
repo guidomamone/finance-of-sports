@@ -26,13 +26,10 @@
 //   node tools/resolver-inventario.mjs --ejecutar --concurrencia 3 --dir Clubes/Bélgica   # 3 documentos a la vez
 // ============================================================================
 
-import { readFileSync, writeFileSync, appendFileSync, existsSync, copyFileSync, mkdtempSync, rmSync, statSync } from 'node:fs';
-import { resolve, dirname, basename, join, relative } from 'node:path';
-import { tmpdir } from 'node:os';
-import { execFileSync, spawn, spawnSync } from 'node:child_process';
-import { AsyncLocalStorage } from 'node:async_hooks';
+import { readFileSync, writeFileSync, appendFileSync, existsSync, copyFileSync } from 'node:fs';
+import { resolve, relative } from 'node:path';
 import { createHash } from 'node:crypto';
-import { extractNumbers, verifyNumbers, NUM_RE, norm } from './verify-numbers.mjs';
+import { verifyNumbers } from './verify-numbers.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -54,8 +51,8 @@ const EST = { mistral: 0.004, gemini: 0.002, claude: 0.02 }; // USD por página,
 
 import { diagnosticar } from './reparar-pdf.mjs';
 import { paginasConNumeros } from './paginas-con-numeros.mjs';
-import { derivado, ubicar } from './rutas.mjs';
-import { chequearPaginas, quien, tablasDe, respaldoSumas, respaldoFilas } from './chequeos-gratis.mjs';
+import { derivado } from './rutas.mjs';
+import { chequearPaginas, quien } from './chequeos-gratis.mjs';
 // splitPages vive en huella-paginas.mjs: la huella por página usa el mismo corte.
 import { splitPages, huellasDePaginas, huellasDelTexto, ultimaConPaginas, compararPaginas } from './huella-paginas.mjs';
 import { readJsonl, pageCount, pdfPageTexts, joinPages, numsOf, sameSet, StopRun, docCost, runCost, callEngine, transcribePages, BIG_DOC_PAGES, BIG_CHUNK, voiceByChunks, voiceGeminiPerPage, pageAccepted, textLayerDoubts, voiceDoubts, nl, vote, patchToMajority, settleByArithmetic } from './resolver-inventario-motores.mjs';

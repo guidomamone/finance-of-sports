@@ -28,21 +28,14 @@
 //   node tools/cargar.mjs --lista <x> --comparar <raíz de otro checkout>
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, appendFileSync } from 'node:fs';
-import { resolve, relative, join, basename, dirname } from 'node:path';
+import { readFileSync, writeFileSync, existsSync, readdirSync, appendFileSync } from 'node:fs';
+import { resolve, relative } from 'node:path';
 import { execFileSync } from 'node:child_process';
-import { createHash } from 'node:crypto';
 import vm from 'node:vm';
-import { archivosData, rutaData } from './data-clubes.js';
-import { modificarClub, rutaJson } from './club-json.mjs'; // el JSON es la fuente de cada club
-import { TOCA_UNA_CARGA } from './rutas.mjs';
-import { parseNumber } from './datos-sitio.mjs';
+import { archivosData } from './data-clubes.js';
+import {  } from './club-json.mjs'; // el JSON es la fuente de cada club
 import { validacionAlDia } from './cache-al-dia.mjs';
-import { GENERADORES, queFalla } from './generadores.mjs';
-import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs';
-import { combinar as combinarEntidades } from './suma-entidades.mjs';
-import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs';
-import { compuertaContexto, escribir, comparar, citaPAE, citaSADpt, cambiadosEnGit, lineaGitAdd } from './cargar-escribir.mjs';
+import { compuertaContexto, escribir, comparar, cambiadosEnGit, lineaGitAdd } from './cargar-escribir.mjs';
 import { faseTotales, faseIxbrl, faseFxYLiga, faseEjercicio } from './cargar-ejercicio.mjs';
 import { faseCeros, faseSinCategoria, faseSignos } from './cargar-ceros.mjs';
 import { faseCategorias } from './cargar-categorias.mjs';

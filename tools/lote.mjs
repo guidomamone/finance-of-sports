@@ -12,20 +12,7 @@
 //   En la lista, "testigo <pdf>" = documento que solo sirve para verificar a otro (ver TESTIGOS abajo).
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync, statSync, readdirSync, appendFileSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
-import { tmpdir } from 'node:os';
-import { spawnSync } from 'node:child_process';
-import { localizar } from './localizar.mjs';
-import { validar } from './validar-bloques.mjs';
-import { extraer, estimarExtraerSinBloques } from './extraer.mjs';
-import { pendientes, respuestaPosterior } from './cola.mjs';
-import { derivado } from './rutas.mjs';
-import { etapaDe } from './etapa-doc.mjs';
-import { clubDeRuta } from './carpetas-clubes.mjs';
-import { resolverDeporte, olvidarDeportes } from './deporte-club.mjs'; // el deporte de cada documento antes de Jev y Claude
-import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
-import { tomarCandado, soltarCandado } from './candado.mjs';
+import {  } from './deporte-club.mjs'; // el deporte de cada documento antes de Jev y Claude
 import { negarSiSeMide } from './candado-medicion.mjs';
 import { faseEnsayo, faseSumar, faseCategorizar, faseResumen, faseResultado, faseTabla } from './lote-final.mjs';
 import { faseLeer } from './lote-leer.mjs';

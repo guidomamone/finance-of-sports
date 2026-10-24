@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1068 — imports sin uso de las 7 tools grandes del pipeline; el aviso imports-sin-uso queda en 0 [alta-club.mjs, lote.mjs, verificar.mjs, caja-deuda.mjs, cargar.mjs, resolver-inventario.mjs, categorizar-claude.mjs]
+
+- Se quitan los 174 imports restantes (el script rompió dos imports por defecto y de espacio de nombres, `vm` y `EV`: se borraron a mano y `indefinidos` quedó limpio). Los imports sin uso de tools/ pasan de 220 a 0.
+- Medición: lote completo (1004 documentos), todos los medidores idénticos salvo el aviso `imports-sin-uso` de audit (desaparece), explicado por el resumen.
+
 ## Versión 1067 — imports sin uso de 26 tools del pipeline [alta-claude.mjs, alta-club-backtest.mjs, alta-club-registro.mjs, cargar-categorias.mjs, cargar-ceros.mjs, cargar-ejercicio.mjs, cargar-inicio.mjs, chequeos-gratis.mjs, claude-api-transcribe.mjs, costo-personal.mjs, dato-publico.mjs, dentro-de-otro.mjs, estadio-sponsor.mjs, gemini-transcribe.mjs, glosar-rubros.mjs, inventario-transcripciones.mjs, jev-categorizar.mjs, lookup-club-league.js, lote-preparar.mjs, mistral-ocr-transcribe.mjs, perimetro-senales-a3.mjs, perimetro-senales-base.mjs, reparar-pdf.mjs, rutas.mjs, suggest-category-precedent.mjs, xhtml-aarsrapport.mjs]
 
 - Los imports sin uso pasan de 209 a 174 (`indefinidos --imports`); quedan 7 archivos grandes (alta-club, lote, verificar, caja-deuda, cargar, resolver-inventario, categorizar-claude). Se quitaron con un script de una sola vez que edita solo la lista de importados; 4 imports que quedaban vacíos se borraron enteros.

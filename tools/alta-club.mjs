@@ -22,25 +22,18 @@
 //        misses.jsonl de las tools de lookup; con este flag, o con --escribir, se
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, mkdirSync, appendFileSync } from 'node:fs';
-import { resolve, dirname, basename, extname, relative, join } from 'node:path';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import { resolve, basename, extname, relative } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
-import { createHash } from 'node:crypto';
 import { clubDeCarpeta } from './carpetas-clubes.mjs';
-import { deportesActivos, deporteDeClub } from './deporte-club.mjs'; // deportes activos del catálogo
-import * as EV from './evidencia-club.mjs';
+import { deportesActivos } from './deporte-club.mjs'; // deportes activos del catálogo
 import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
-import { agregarCaso, casoYRespuesta } from './cola.mjs';
-import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
-import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
-import { archivosData, rutaData } from './data-clubes.js';
-import { crearClub } from './club-json.mjs'; // el JSON es la fuente de cada club
-import { GENERADORES, queFalla } from './generadores.mjs';
-import { derivado } from './rutas.mjs';
-import { fechasFinDeMes, cierreDelTexto, cierreDelNombre, anioDelNombre, contar, menciones, fxDeclarado, fechaDeColumna, fechaDeBloque, SERIES_FX, FUENTE_SERIE, fxDeSerie, decidirNombre } from './alta-club-lectura.mjs';
-import { paisDe, NOMBRE_PAIS_ES, MONEDAS, MONEDAS_A_LA_PAR, DEPORTES_OTROS, FUTBOL_RE, NO_BALANCE, INTERMEDIO_RE } from './alta-club-tablas.mjs';
-import { candidatosColor, proponerFx, proponerLiga, escribir } from './alta-club-escribir.mjs';
+import { leerRegistro, guardarEnRegistro, resumenAltas } from './altas-registro.mjs';
+import { MODELO_DEFAULT } from './alta-claude.mjs';
+import {  } from './club-json.mjs'; // el JSON es la fuente de cada club
+import { paisDe } from './alta-club-tablas.mjs';
+import { proponerFx, proponerLiga, escribir } from './alta-club-escribir.mjs';
 import { modoInformeBacktest, modoBacktest, deshacerAlta } from './alta-club-backtest.mjs';
 import { aplicables, analizarCarpeta, finalizar, cargarSitioCache, correrClaude, modoTodos, imprimirResumen, modoDudas } from './alta-club-registro.mjs';
 import { cierreYAnio, monedaDelEjercicio, deporteDelTexto, camposDelClub, tipoDeDocumento, perimetroDelDocumento, contextoYAvisos } from './alta-club-analisis.mjs';

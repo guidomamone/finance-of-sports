@@ -32,21 +32,15 @@
 //   node tools/verificar.mjs --lista <archivo> [--rubros]
 // ============================================================================
 
-import { readFileSync, writeFileSync, existsSync, appendFileSync, statSync, readdirSync } from 'node:fs';
-import { pedidoPrimerAnio, respuestaGuardada, compuertaPrimerAnio } from './primer-anio-ia.mjs';
+import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { resolve, dirname, basename, join } from 'node:path';
+import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
-import { huellaVerificar } from './huellas.mjs';
-import { agregarCaso, respuestaDe, cerrarObsoletos, respuestaPorDetalle } from './cola.mjs';
+import { agregarCaso, respuestaDe } from './cola.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
-import { VERSION_AMPLIADO } from './indice-bloques.mjs';
-import { norm as normNum } from './verify-numbers.mjs';
-import { ajusteDe, ajustesDe, ajustePerimetroDe } from './ajustes.mjs';
+import { ajustesDe } from './ajustes.mjs';
 import { validacionAlDia } from './cache-al-dia.mjs'; // (frenado de Sporting CP) la compuerta de cargar.mjs también en avisarRegistro
-import { COBERTURA_PERDIDAS_RE, FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, DE_LOS_CUALES_RE, normalizar } from './vocabulario.mjs';
-import { DESCARTADOS, PARCIALES } from './etapa-doc.mjs';
 import { filasNBB, leerEstadoNBB } from './nbb.mjs';
 import { faseResultadoFinal, faseSalida } from './verificar-salida.mjs';
 import { faseDudas, faseRespuestas } from './verificar-dudas.mjs';

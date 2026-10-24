@@ -25,20 +25,17 @@
 
 import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
 import { SESION } from './sesion.mjs'; // gasto por sesión
-import { deporteDeClub, resolverDeporte, MENSAJE_SIN_DEPORTE, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // lista de categorías, criterios y ejemplos del deporte del club
+import { deporteDeClub, MENSAJE_SIN_DEPORTE, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // lista de categorías, criterios y ejemplos del deporte del club
 import { afinidad } from './pais-club.mjs'; // ejemplos del mismo país primero, a igual parecido
 import { reglasParaPrompt } from './reglas-categoria.mjs'; // las reglas de categoría de CONVENCIONES-DATOS al prompt
-import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
-import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.mjs';
+import { readFileSync, appendFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { derivado, ubicar } from './rutas.mjs';
-import { registrarAprendidas, lineasAprendidas, MIN_PRECEDENTE, padreDe } from './memoria-categorias.mjs';
 import { mismaFamilia } from './vocabulario.mjs';
 import { sinMarca, mismoPadre, padreEnClub } from './padres-filas.mjs'; // en qué nota está cada fila cargada
-import { abrirCache } from './respuestas-cache.mjs'; // respuestas ya pagadas // familia de etiquetas del precedente
+import {  } from './respuestas-cache.mjs'; // respuestas ya pagadas // familia de etiquetas del precedente
 import vm from 'node:vm';
 import { archivosData } from './data-clubes.js';
-import { readJsonl, backtest, informe } from './categorizar-claude-backtest.mjs';
+import { backtest, informe } from './categorizar-claude-backtest.mjs';
 import { listos } from './categorizar-claude-listos.mjs';
 export { isConventionPair } from './categorizar-claude-backtest.mjs';
 
