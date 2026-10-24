@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1073 — medir-pipeline.mjs no se frena por un veredicto sin commitear [medir-pipeline.mjs, probar-medir-pipeline.mjs]
+
+- Un veredicto `RECHAZADA` de `patron` queda sin commitear en `auditoria-proceso.jsonl` y frenaba la medición siguiente («cambios sin commitear en datos o registros»). Ese archivo lo escriben `patron.mjs` y `decision.mjs`, no un medidor: sale de lo que la medición exige limpio (y de lo que revierte).
+- Medición: `probar-medir-pipeline.mjs` con un caso nuevo, ok.
+
 ## Versión 1072 — 434: qué se lee en vano al arrancar; `arranque orden` de 9,9 a 4,5 KB [434]
 
 - Informe `Admin/mediciones/434-arranque-en-vano.md` (KB por rol y por sesión). `ESTADO.md`: el rol `orden` sale de «Objetivo», «Techo del modelo» y «Sitio, publicación y analytics». Dos propuestas que tocan texto que Guido lee (partir la skill de arranque, recortar «Al empezar» de CLAUDE.md) quedan en el informe, sin hacer.

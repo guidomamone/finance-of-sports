@@ -72,6 +72,13 @@ const claveDos = registro().at(-1)?.medidores?.[0]?.despues;
 caso('cambiar un archivo de tools/ que no es de la tabla cambia la clave de la caché', claveUno && claveDos && claveUno !== claveDos && !/antes reutilizado/.test(r.out), `${claveUno} / ${claveDos}`);
 volver();
 
+// un veredicto sin commitear (auditoria-proceso.jsonl: lo escribe patron.mjs, no un medidor) no frena la medición siguiente
+w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 2;\n');
+w('Admin/registros/auditoria-proceso.jsonl', '{"veredicto":"RECHAZADA"}\n');
+r = medir();
+caso('un veredicto sin commitear en auditoria-proceso.jsonl no frena la medición', r.status === 0 && !/sin commitear/.test(r.out), r.out.slice(-300));
+volver();
+
 // 2. un cambio que altera la salida
 w('tools/fake-tool.mjs', 'export const VALOR = 2;\n');
 r = medir();
