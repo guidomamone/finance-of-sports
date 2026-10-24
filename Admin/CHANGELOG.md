@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1071 — 417 (parte): audit.js --leyenda [417 · audit.js]
+
+- `node tools/audit.js --leyenda` imprime los cinco niveles con su definición, los hallazgos que tienen hoy y los códigos que los emiten. Del 417 quedan la skill y el chequeo de severidades, P1 y los contrastes externos (de Guido): quedó escrito en el punto.
+- Medición: `audit` idéntico.
+
 ## Versión 1070 — 416: silencios de audit-ignore con fecha de revisión; ejercicio-sin-rastro dice si el documento está en mano, descartado o no existe [416 · audit-chequeos-5.js, audit.js, probar-registros.mjs, silenciar.mjs]
 
 - Una entrada de `tools/audit-ignore.json` puede llevar `revisar` (AAAA-MM-DD): pasada la fecha, `audit.js` da `silencio-vencido` (P3). `silenciar.mjs --revisar` la pone y la exige si el motivo es «sin verificar», «no publicado» o parecido. Las 5 entradas «aceptado sin verificar» (2026-12-23) y las 3 de «todavía no publicado» (Gladbach, Stuttgart, Monza; 2027-01-23) ya la llevan.

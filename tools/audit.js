@@ -287,6 +287,19 @@ function main() {
     return;
   }
 
+  if (ARGS.includes('--leyenda')) { // los niveles con su definición, cuántos hallazgos tienen hoy y qué códigos los emiten (leídos del código de audit*.js)
+    const codigos = {};
+    for (const f of fs.readdirSync(__dirname).filter((x) => /^audit(-chequeos-\d+|-base)?\.js$/.test(x))) {
+      for (const m of fs.readFileSync(path.join(__dirname, f), 'utf8').matchAll(/\badd\('(P[0-4])',\s*'([a-z0-9-]+)'/g)) (codigos[m[1]] ||= new Set()).add(m[2]);
+    }
+    for (const sev of Object.keys(SEV_TITULO)) {
+      const hoy = findings.filter((f) => f.sev === sev);
+      console.log(`${SEV_TITULO[sev]}\n  hoy: ${hoy.length} · códigos (${(codigos[sev] || new Set()).size}): ${[...(codigos[sev] || [])].sort().join(', ')}\n`);
+    }
+    console.log('Un código con acción `nada` en tools/audit-acciones.json pasa de P3 a P4 al emitirse. P0 y P1 frenan el commit.');
+    return;
+  }
+
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
   // process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.
   if (JSON_OUT) { process.stdout.write(JSON.stringify({ findings, silenciados }, null, 2) + '\n', () => process.exit(bloqueantes ? 1 : 0)); return; }
