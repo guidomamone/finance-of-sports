@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1012 — localizar se rehace si el .md cambió aunque no haya filas [419 · cache-al-dia.mjs]
+
+- `cacheAlDia()`: sin `.filas.json` (un `sin_estado` no deja filas) ahora compara el `mdSha1` guardado en el `.ubicacion.json` con el del `.md`; si difiere, el caché está viejo y `lote.mjs` rehace localizar, validar y extraer (un año cargado solo avisa), con el costo en el ensayo. Antes un `.md` reconvertido seguía «sin estado de resultados (queda como fuente)» sin llamar a nadie. Cambia el resultado de 15 documentos: los 13 británicos reconvertidos y OH Leuven 2017 y 2022.
+- Medición: lote chico, mediano y completo (cargar, audit, escribir, verificar, lote-ensayo): idéntico (las listas no incluyen esos 15); el ensayo de `lote-143.txt` cotiza ahora US$ 4,85 en vez de «sin estado». Veredicto general. Condición nueva en una tool: sección 7 de `auditoria-finance-of-sports` recorrida (caso real; no frena nada: rehace localizar con costo visible; un año cargado solo avisa; `--rehacer`/ajuste `filas-a-mano` siguen mandando).
+
 ## Versión 1011 — El 356 se cierra: su Onboarding, sus defectos de script y lo que dejó pensando pasan a puntos propios [356 · 420 · 421 · 422 · 423 · 424 · 425 · 426]
 
 - 420 (Onboarding, antes del 337): cargar los británicos en iXBRL (lote 143, Hibernian, años pagables, Falkirk, altas, criterio del Trust). 421 (defectos: Morecambe, Ross County, perimetro-senales con s408). 422 (costo-personal: la unidad del rótulo; la nota de una filial). Fulham 2023: el cambio del 351 toma «Total staff costs (£m) 154.8» como £000 y no puede reconfirmar 139,064; no cambia ningún dato publicado.

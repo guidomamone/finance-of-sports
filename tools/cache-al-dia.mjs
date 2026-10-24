@@ -35,6 +35,12 @@ export function filaEnSuLinea(lineas, f) {
 // { alDia, escalon, detalle }
 export function cacheAlDia(mdRel) {
   const pf = resolve(ROOT, derivado(mdRel, '.filas.json', { crear: false }));
+  // Sin .filas.json no hay filas que mirar, pero la localización guardada puede ser de otro .md, sobre todo un `sin_estado`, que no deja filas
+  // (los 14 clubes británicos cuyo .md se reconvirtió con tablas seguían «sin estado de resultados» sin llamar a nadie): su huella (`mdSha1`) manda.
+  if (!existsSync(pf) && existsSync(resolve(ROOT, mdRel))) {
+    const pu = resolve(ROOT, derivado(mdRel, '.ubicacion.json', { crear: false }));
+    if (existsSync(pu)) { try { const U = JSON.parse(readFileSync(pu, 'utf8')); if (U.mdSha1 && U.mdSha1 !== shaMd(mdRel)) return { alDia: false, escalon: null, detalle: `el .md cambió desde localizar (huella distinta)${U.sin_estado ? ': la localización guardada quedó sin estado de resultados' : ''}` }; } catch { /* ilegible: como antes */ } }
+  }
   if (!existsSync(pf) || !existsSync(resolve(ROOT, mdRel))) return { alDia: true, escalon: null, detalle: 'sin .filas.json' };
   let X; try { X = JSON.parse(readFileSync(pf, 'utf8')); } catch { return { alDia: true, escalon: null, detalle: '.filas.json ilegible' }; }
   const sha = shaMd(mdRel);
