@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1059 — audit.js: recordatorio de metodología cada 40 commits de reglas [audit.js, audit-chequeos-5.js, probar-registros.mjs]
+
+- P3 `metodologia-desactualizada`: avisa cuando pasan 40 commits de `Admin/CONVENCIONES-DATOS.md` desde la última edición de `metodologia.html` (hoy 31, no dispara; el umbral lo pidió Guido). Se apaga al editar la página, aunque sea para dejar constancia de que no hay nada nuevo. `probar-registros.mjs`: 2 casos nuevos (26 en total).
+- Medición: `medir pipeline` (audit): idéntico. Veredicto de infraestructura. Sin revisión independiente.
+
 ## Versión 1058 — 444: cierre por defecto por país como pregunta de cola (votación 2 a 1) [444 · cargar-inicio.mjs, cierre-propuestas.mjs, probar-cierre.mjs]
 
 - Votación (Admin/mediciones/444-votacion-cierre-por-defecto-por-pais.md, C 2 a B 1): un anual sin fecha de cierre que los vecinos no deducen NO asume el cierre del país: `fos cierre-propuestas` abre una pregunta de cola por documento (`cierre-por-pais`) con la propuesta de `tools/cierre-por-defecto.json` (Brasil, Rusia, Noruega, Ucrania 31-12; España, Países Bajos, Francia 30-06; todos sobre 98 % medido). `cargar-inicio.mjs` toma la respuesta: aceptar = la propuesta, corregir = su fecha. Ensayo por defecto; hoy 163 documentos.

@@ -273,6 +273,24 @@ function checkNombresSinDefinir() {
   if (imp.length) add('P3', 'imports-sin-uso', `${imp.length} import(s) sin uso en ${new Set(imp.map(x => x.archivo)).size} archivos de tools/ (ej. ${imp.slice(0, 3).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}). Información: se limpian de a un archivo`);
 }
 
+// metodologia-desactualizada: la página que le explica al lector cómo se leen los datos (metodologia.html) no se edita desde hace UMBRAL_METODOLOGIA commits de
+// reglas en Admin/CONVENCIONES-DATOS.md. Es un recordatorio, no un error: se apaga al editar metodologia.html (aunque sea para decir que no hay nada nuevo).
+const UMBRAL_METODOLOGIA = 40;
+function metodologiaAtrasada(umbral = UMBRAL_METODOLOGIA) {
+  let sha, fecha, n;
+  try {
+    sha = execSync('git log -1 --format=%H -- metodologia.html', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    if (!sha) return null;
+    fecha = execSync(`git log -1 --format=%ad --date=short ${sha}`, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    n = Number(execSync(`git rev-list --count ${sha}..HEAD -- Admin/CONVENCIONES-DATOS.md`, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim());
+  } catch { return null; }
+  return n >= umbral ? { n, fecha } : null;
+}
+function checkMetodologiaAlDia() {
+  const r = metodologiaAtrasada();
+  if (r) add('P3', 'metodologia-desactualizada', `${r.n} commits de reglas de datos (Admin/CONVENCIONES-DATOS.md) desde la última edición de metodologia.html (${r.fecha}). Leé qué cambió (git log --since=${r.fecha} -p -- Admin/CONVENCIONES-DATOS.md) y decidí si el lector necesita saber algo`);
+}
+
 // registro-fuera-de-esquema (punto 437): una línea con `esquema` que no cumple tools/esquemas-registros.json, o una línea de DESDE en adelante que debía llevarlo y no lo trae
 // (auditoria-proceso.jsonl: todas; cola-revision.jsonl: las respuestas aceptar, corregir, descartar y preguntar-club). Lo anterior es legado y no se mira.
 function checkRegistroFuera() {
@@ -311,4 +329,4 @@ function checkRevisionPropiaPendiente() {
   if (pendientes.length) add('P3', 'revision-propia-pendiente', `${pendientes.length} cambio(s) revisados solo por la sesión que los hizo, sin la revisión de la Auditora:${pendientes.slice(-3).map(l => `${l.fecha} ${String(l.cambio).slice(0, 50)}`).join(' · ')}. La Auditora los revisa y anota patron --revision auditora`);
 }
 
-module.exports = { checkRegistroFuera, checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };
+module.exports = { checkMetodologiaAlDia, metodologiaAtrasada, checkRegistroFuera, checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };

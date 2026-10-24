@@ -71,6 +71,11 @@ x = spawnSync('node', ['tools/silenciar.mjs', 'codigo-de-prueba', 'texto-unico',
 const lineaS = readFileSync(join(Z, 'Admin', 'registros', 'auditoria-proceso.jsonl'), 'utf8').trim();
 caso('silenciar.mjs registra una línea con esquema que cumple', x.status === 0 && lineaS && JSON.parse(lineaS).esquema === 1 && JSON.parse(lineaS).tipo === 'silencio-de-audit' && validar('auditoria-proceso', JSON.parse(lineaS)).length === 0, (x.stdout || '') + (x.stderr || '') + lineaS);
 
+// ---- el recordatorio de metodología (audit.js, cada 40 commits de reglas)
+const { metodologiaAtrasada } = createRequire(import.meta.url)('./audit-chequeos-5.js');
+caso('metodologiaAtrasada: con un umbral bajo da los commits y la fecha de la última edición', (() => { const r = metodologiaAtrasada(1); return r && Number.isInteger(r.n) && r.n >= 1 && /^\d{4}-\d{2}-\d{2}$/.test(r.fecha); })());
+caso('metodologiaAtrasada: con un umbral imposible no avisa', metodologiaAtrasada(1e9) === null);
+
 // ---- cola --corregir-categoria: la línea de la corrección de Guido cumple el esquema
 const lineaG = lineaDeRespuesta({ id: 'g1', decision: 'corregir', valor: 'broadcasting', nota: null, evidencia: 'ninguna', seguridad: 'alta', causa: 'decision-de-guido' });
 caso('la corrección de categoría de Guido cumple el esquema (evidencia ninguna, causa decision-de-guido)', lineaG.errores.length === 0 && lineaG.linea.esquema === 1 && lineaG.linea.causa === 'decision-de-guido', JSON.stringify(lineaG));

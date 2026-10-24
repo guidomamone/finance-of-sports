@@ -125,6 +125,11 @@
   "quien": "sesion",
   "donde": "skill club-sourcing, referencia/liga-y-sponsor.md"
  },
+ "metodologia-desactualizada": {
+  "hacer": "Es un recordatorio (cada 40 commits de reglas): leer qué reglas de datos cambiaron desde la última edición de metodologia.html (git log --since=<fecha> -p -- Admin/CONVENCIONES-DATOS.md), decidir si el lector necesita saber algo para entender lo que lee (un par de cosas clave, no un curso contable) y editar metodologia.html y sus textos en data/lang/es.js y en.js. El aviso se apaga al editar metodologia.html, aunque sea para dejar constancia de que no hay nada nuevo.",
+  "quien": "sesion",
+  "donde": "metodologia.html y Admin/CONVENCIONES-DATOS.md"
+ },
  "registro-fuera-de-esquema": {
   "hacer": "La línea nombrada no cumple tools/esquemas-registros.json (clave `validacion`): le falta un campo obligatorio, tiene un valor fuera de la lista o no trae `esquema`. En la cola: node tools/cola.mjs --responder <id> <decisión> --evidencia \"ruta.md:12-30\" --seguridad alta|media|baja --causa <enumerado>. En auditoria-proceso: patron.mjs, decision.mjs (--resultado) y votacion-contar.mjs ya arman la línea. Una línea vieja no se reescribe.",
   "quien": "sesion",
