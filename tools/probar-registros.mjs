@@ -62,6 +62,19 @@ x = decidir('--veredicto', 'APROBADO', '--resultado', 'aprobado', '--motivo', 'p
 const lineaD = existsSync(join(D, 'Admin', 'registros', 'auditoria-proceso.jsonl')) ? JSON.parse(readFileSync(join(D, 'Admin', 'registros', 'auditoria-proceso.jsonl'), 'utf8').trim() || 'null') : null;
 caso('decision.mjs con --resultado registra una línea que cumple el esquema', x.status === 0 && lineaD && lineaD.esquema === 1 && validar('auditoria-proceso', lineaD).length === 0, x.out + JSON.stringify(lineaD));
 
+// ---- silenciar.mjs en un repo de juguete (con un audit.js falso que devuelve un hallazgo)
+const Z = join(T, 'repo-silenciar'); mkdirSync(join(Z, 'tools'), { recursive: true }); mkdirSync(join(Z, 'Admin', 'registros'), { recursive: true });
+for (const f of ['silenciar.mjs', 'registro-esquema.js', 'esquemas-registros.json']) copyFileSync(join(ROOT, 'tools', f), join(Z, 'tools', f));
+writeFileSync(join(Z, 'tools', 'audit.js'), "console.log(JSON.stringify({ findings: [{ code: 'codigo-de-prueba', msg: 'algo con texto-unico adentro' }] }));\n");
+writeFileSync(join(Z, 'tools', 'audit-ignore.json'), '[]\n'); writeFileSync(join(Z, 'Admin', 'registros', 'auditoria-proceso.jsonl'), '');
+x = spawnSync('node', ['tools/silenciar.mjs', 'codigo-de-prueba', 'texto-unico', '--verificado', 'se miró el documento X, línea 10, y dice lo que corresponde', '--motivo', 'está bien por la nota'], { cwd: Z, encoding: 'utf8' });
+const lineaS = readFileSync(join(Z, 'Admin', 'registros', 'auditoria-proceso.jsonl'), 'utf8').trim();
+caso('silenciar.mjs registra una línea con esquema que cumple', x.status === 0 && lineaS && JSON.parse(lineaS).esquema === 1 && JSON.parse(lineaS).tipo === 'silencio-de-audit' && validar('auditoria-proceso', JSON.parse(lineaS)).length === 0, (x.stdout || '') + (x.stderr || '') + lineaS);
+
+// ---- cola --corregir-categoria: la línea de la corrección de Guido cumple el esquema
+const lineaG = lineaDeRespuesta({ id: 'g1', decision: 'corregir', valor: 'broadcasting', nota: null, evidencia: 'ninguna', seguridad: 'alta', causa: 'decision-de-guido' });
+caso('la corrección de categoría de Guido cumple el esquema (evidencia ninguna, causa decision-de-guido)', lineaG.errores.length === 0 && lineaG.linea.esquema === 1 && lineaG.linea.causa === 'decision-de-guido', JSON.stringify(lineaG));
+
 rmSync(T, { recursive: true, force: true });
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');
 process.exit(mal ? 1 : 0);

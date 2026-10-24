@@ -315,10 +315,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (!categoriasDeDeporte(deporteDoc)?.todas.has(categoria)) { console.error(`"${categoria}" no es una categoría de ${deporteDoc} (SPORT_TAXONOMIES de data/category-map.js)`); process.exit(1); }
     const { normalizar } = await import('./vocabulario.mjs');
     const id = agregarCaso({ pdf, md: pdf.replace(/\.pdf$/i, '.md'), etapa: 'cargar', motivo: 'categoria', detalle: normalizar(etiqueta), categoriaPropuesta: categoria, que: `Corrección de Guido: "${etiqueta}" va como ${categoria}.` });
-    // 'corregir' con la categoría, no 'aceptar': agregarCaso devuelve el caso YA ABIERTO de esa fila si existe, con SU
-    // categoriaPropuesta; 'aceptar' aceptaba esa propuesta vieja y no la corrección. Caso: Novorizontino 2021, "Repasse da federação" seguía
-    // como competition_bonus después de fijarlo como broadcasting.
-    appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision: 'corregir', valor: categoria, nota: flag('--nota') }) + '\n');
+    // 'corregir' con la categoría, no 'aceptar': agregarCaso devuelve el caso YA ABIERTO de esa fila, con SU categoriaPropuesta;
+    // 'aceptar' aceptaba esa propuesta vieja y no la corrección.
+    appendFileSync(ARCHIVO, JSON.stringify(lineaDeRespuesta({ id, decision: 'corregir', valor: categoria, nota: flag('--nota'), evidencia: 'ninguna', seguridad: 'alta', causa: 'decision-de-guido' }).linea) + '\n');
     console.log(`Categoría fijada (${id}): "${etiqueta}" -> ${categoria}. La toma cargar.mjs en la próxima corrida.`);
     process.exit(0);
   }

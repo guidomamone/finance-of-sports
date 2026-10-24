@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1057 — 437: la corrección de categoría de Guido con esquema, y casos para silenciar [437 · cola.mjs, probar-registros.mjs]
+
+- `cola --corregir-categoria` escribe la respuesta con `esquema: 1` (`evidencia` ninguna, `seguridad` alta, `causa` decision-de-guido, vía `cola-respuesta.mjs`). `probar-registros.mjs`: 2 casos nuevos (`silenciar.mjs` en un repo de juguete con un `audit.js` falso, y esa línea), 24 en total, todos ok. `cola.mjs` queda en 40.866 bytes (límite 40.960).
+- Quedan sin esquema solo `ajustes-manuales.jsonl` y `mediciones-pipeline.jsonl` (el esquema de cada una pide cambiar `ajustes.mjs --agregar`, que se usa mucho): no se hicieron.
+- Medición: `medir pipeline` hasta el lote completo (6 medidores): idéntico. Veredicto de infraestructura. Sin revisión independiente.
+
 ## Versión 1056 — cierre-sin-fecha cuenta solo los que frenan, con fos cierre-sin-fecha [444 · cierre-sin-fecha.mjs, audit-chequeos-5.js]
 
 - `fos cierre-sin-fecha` separa los anuales con .md sin cierre en el registro (457; 283 de clubes con algo cargado) entre los 92 que la regla de los vecinos deduce al cargar (98,2 % de aciertos dejando afuera cada anual con cierre) y los 191 que frenan o piden un ajuste `cierre` (Brasil 39, España 31, Argentina 30, Colombia 27, Rusia 25…). El P3 `cierre-sin-fecha` de `audit.js` ahora cuenta esos 191, no los 285 de antes.
