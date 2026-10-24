@@ -1,0 +1,179 @@
+{
+ "pdf": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-24T14:46:19.430Z",
+ "scriptHuella": "b0a6fdd2be99",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "Regla de perímetro 1: full accounts de Bristol Rovers (1883) Limited, un solo estado de resultados, el de la sociedad (actividad: sport clubs, .md L107)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [
+  "7c17126",
+  "b3d8952",
+  "df53e83"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 8.466526,
+  "gastos": 14.940315,
+  "financiero": -0.27341,
+  "impuesto": 0,
+  "resultadoImpreso": -6.747199,
+  "resultadoParaCargar": -6.747199,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Football income",
+   "lado": "ingreso",
+   "M": 5.097286,
+   "pagina": 21,
+   "linea": 417,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 3.00774,
+   "pagina": 21,
+   "linea": 418,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit or loss on disposal of intangible assets",
+   "lado": "ingreso",
+   "M": 0.3365,
+   "pagina": 11,
+   "linea": 176,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.025,
+   "pagina": 11,
+   "linea": 179,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 13.144566,
+   "pagina": 11,
+   "linea": 174,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation",
+   "lado": "gasto",
+   "M": 0.709306,
+   "pagina": 11,
+   "linea": 175,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 1.086443,
+   "pagina": 11,
+   "linea": 178,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.007928,
+   "linea": 181
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.281338,
+   "linea": 182
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 184
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "26abe442292d6e8a270193f2a1aae454a80c7578",
+  "rango": [
+   170,
+   188
+  ],
+  "lineasCargadas": [
+   417,
+   418,
+   176,
+   179,
+   174,
+   175,
+   178,
+   181,
+   182,
+   184
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 170 a 188 del .md):\nL170: | 2025 | 2024 |  |  |\nL171: | --- | --- | --- | --- |\nL172: | Notes | £ | £ |  |\nL173: | Turnover | 3 | 8,105,026 | 7,465,794 |\nL174: | Cost of sales | (13,144,566) | (12,180,588) |  |\nL175: | Amortisation | (709,306) | (272,083) |  |\nL176: | Profit or loss on disposal of intangible assets | 336,500 | 863,521 |  |\nL177: | Gross loss | (5,412,346) | (4,123,356) |  |\nL178: | Administrative expenses | (1,086,443) | (1,160,345) |  |\nL179: | Other operating income | 25,000 | 268,613 |  |\nL180: | Operating loss | 4 | (6,473,789) | (5,015,088) |\nL181: | Interest receivable and similar income | 8 | 7,928 | 1,567 |\nL182: | Interest payable and similar expenses | 9 | (281,338) | (283,937) |\nL183: | Loss before taxation | (6,747,199) | (5,297,458) |  |\nL184: | Tax on loss | 10 | - | - |\nL185: | Loss for the financial year | (6,747,199) | (5,297,458) |  |\nL187: The profit and loss account has been prepared on the basis that all operations are continuing operations.\nL188: - 8 -\n\nLO QUE SE CARGA:\n- ingreso · \"Football income\" · 5.097286 · L417 (de una nota)\n- ingreso · \"Other income\" · 3.00774 · L418 (de una nota)\n- ingreso · \"Profit or loss on disposal of intangible assets\" · 0.3365 · L176\n- ingreso · \"Other operating income\" · 0.025 · L179\n- gasto · \"Cost of sales\" · 13.144566 · L174\n- gasto · \"Amortisation\" · 0.709306 · L175\n- gasto · \"Administrative expenses\" · 1.086443 · L178\n- financiero · \"Interest receivable and similar income\" · 0.007928 · L181\n- financiero · \"Interest payable and similar expenses\" · -0.281338 · L182\n- impuesto · \"Tax on loss\" · 0 · L184"
+ }
+}

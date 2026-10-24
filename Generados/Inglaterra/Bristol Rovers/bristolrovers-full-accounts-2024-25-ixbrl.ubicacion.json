@@ -1,32 +1,366 @@
 {
  "pdf": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Bristol Rovers/bristolrovers-full-accounts-2024-25-ixbrl.md",
- "mdSha1": "ff900831ced6ceea0f8fc34cc95ee96aafc76fd3",
+ "mdSha1": "ff4d63b97867369c61815efb61de261d1929d062",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:17:25.059Z",
+ "generado": "2026-10-24T14:40:21.055Z",
  "perimetroClub": "individual",
- "bloques": {},
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    14,
+    19
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    26
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    39,
+    48
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    87,
+    88
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    170,
+    185
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    195,
+    200
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    210,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    247,
+    257
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    267,
+    268
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    272,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    284,
+    285
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    289,
+    293
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    297,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    303,
+    308
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    315,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    320,
+    320
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    325,
+    326
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    330,
+    331
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    338,
+    339
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    343,
+    343
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 18,
+   "lineas": [
+    360,
+    361
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 19,
+   "lineas": [
+    371,
+    376
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 19,
+   "lineas": [
+    383,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    388,
+    388
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 20,
+   "lineas": [
+    393,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    412,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    448,
+    480
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 23,
+   "lineas": [
+    489,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 24,
+   "lineas": [
+    517,
+    518
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 24,
+   "lineas": [
+    523,
+    550
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 24,
+   "lineas": [
+    556,
+    557
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 25,
+   "lineas": [
+    561,
+    589
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 25,
+   "lineas": [
+    595,
+    596
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 26,
+   "lineas": [
+    600,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 26,
+   "lineas": [
+    633,
+    634
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 27,
+   "lineas": [
+    638,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 28,
+   "lineas": [
+    660,
+    661
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 28,
+   "lineas": [
+    665,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 29,
+   "lineas": [
+    681,
+    682
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 29,
+   "lineas": [
+    686,
+    693
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b26",
+  "b27"
+ ],
+ "notas_gastos": [
+  "b26",
+  "b27",
+  "b28"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las tablas indican '£' como unidad (p. ej. b6, b8, b26: '£'); importes impresos completos (ej. 1,280,000).",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El PDF 'bristolrovers-full-accounts-2024-25-ixbrl.pdf' contiene un estado de resultados (profit and loss account) del ejercicio cerrado el 30-06-2025 que la transcripción no capturó?",
-   "propuesta": "no",
+   "pregunta": "¿Se cargan como desglose del estado los cuadros de la nota 3 (b26: turnover por clase de negocio, otros ingresos, cargos operativos), de las notas 6-8 (b27: empleados, costes de personal, ingresos financieros) y de la nota 9 (b28: intereses a pagar), excluyendo las filas de número de empleados y de conciliación de impuestos?",
+   "propuesta": "sí",
    "tema": "otro",
    "renglon": "",
-   "texto": "El índice no tiene ningún bloque con cifras, posiblemente por una transcripción fallida del iXBRL o por cuentas abreviadas sin P&L.",
-   "bloques": [],
+   "texto": "Los bloques mezclan desgloses de renglones del P&L con datos no monetarios y conciliación fiscal, que no deben cargarse.",
+   "bloques": [
+    "b26",
+    "b27",
+    "b28"
+   ],
    "afecta_carga": true
   }
  ],
- "observaciones": "La transcripción no tiene bloques con cifras, por lo que no se identificó ningún estado de resultados. Puede tratarse de cuentas abreviadas presentadas sin P&L o de un fallo de extracción; conviene revisar el PDF original."
+ "observaciones": "Cuentas individuales de Bristol Rovers Football Club Limited, sin consolidado. Estado de resultados: b5 (Profit and loss account, pág. 11). b6 es el estado de resultado integral (solo repite la pérdida) y no se elige. b26 abre Turnover y cargos operativos; b27 abre los costes de personal e ingresos financieros; b28 abre los intereses a pagar y el impuesto. El resto son balance, patrimonio, intangibles de jugadores, deudas, leasing y partes relacionadas, que quedan afuera."
 }

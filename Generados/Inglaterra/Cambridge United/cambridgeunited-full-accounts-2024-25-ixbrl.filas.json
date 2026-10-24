@@ -1,0 +1,224 @@
+{
+ "pdf": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "2750dc2bef73bbb8dcf425d32eedede94663ebcb",
+ "ubicacionSha1": "3aa3baff7abc63e01afd65018f453ee214bb495c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:41:05.374Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [
+   "b26",
+   "b28"
+  ],
+  "notas_gastos": [
+   "b26",
+   "b28"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L217: columnas en '£'"
+  },
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "L459: '£ | £'"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "L505: '£ | £'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 218,
+   "etiqueta": "Turnover",
+   "actual": "9,246,327",
+   "anterior": "8,304,626",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 219,
+   "etiqueta": "Cost of sales",
+   "actual": "(3,921,364)",
+   "anterior": "(3,456,290)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 220,
+   "etiqueta": "Gross profit",
+   "actual": "5,324,963",
+   "anterior": "4,848,336",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 221,
+   "etiqueta": "Administrative expenses",
+   "actual": "(9,066,269)",
+   "anterior": "(7,425,661)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 222,
+   "etiqueta": "Operating loss",
+   "actual": "(3,741,306)",
+   "anterior": "(2,577,325)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 223,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "6,546",
+   "anterior": "13,951",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 224,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(2,012)",
+   "anterior": "(2,468)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 225,
+   "etiqueta": "Loss before taxation",
+   "actual": "(3,736,772)",
+   "anterior": "(2,565,842)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 226,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 227,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(3,736,772)",
+   "anterior": "(2,565,842)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 461,
+   "etiqueta": "Football operations",
+   "actual": "6,460,393",
+   "anterior": "6,004,906",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b26",
+   "linea": 462,
+   "etiqueta": "Business operations",
+   "actual": "2,681,902",
+   "anterior": "2,205,474",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b26",
+   "linea": 463,
+   "etiqueta": "Other club operations",
+   "actual": "104,032",
+   "anterior": "94,246",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b26",
+   "linea": 464,
+   "etiqueta": "",
+   "actual": "9,246,327",
+   "anterior": "8,304,626",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b28",
+   "linea": 507,
+   "etiqueta": "Other interest income",
+   "actual": "6,546",
+   "anterior": "13,951",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b28",
+   "linea": 512,
+   "etiqueta": "Interest on finance leases and hire purchase contracts",
+   "actual": "2,012",
+   "anterior": "2,468",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 218,
+  "actual": "9,246,327"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 227,
+  "actual": "(3,736,772)",
+  "anterior": "(2,565,842)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cargos informativos de la nota 4 (auditoría, depreciación, leasing, L470-L472) y la remuneración de personal de la nota 5 (L486-L489)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "Son datos informativos que no desglosan completamente Cost of sales ni Administrative expenses y no se sabe en qué renglón están incluidos (L466-L489).",
+   "bloques": [
+    "b26"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en libras (£). No se imprime total de gastos. Nota 9 (conciliación impositiva) no se carga por ser reconciliación; el cargo es cero. Comparativo de salarios 2024 reexpresado (L500) sin impacto en el estado."
+}

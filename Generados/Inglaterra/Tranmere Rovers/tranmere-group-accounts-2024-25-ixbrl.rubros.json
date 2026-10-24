@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
+  "pdf": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.pdf",
+  "club": "tranmere-rovers",
+  "year": 2025,
+  "generatedAt": "2026-10-24T14:45:42.531Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Football income",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        4.038379
+      ],
+      "glosa": "Ingresos deportivos"
+    },
+    {
+      "label": "Commercial income",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        1.725
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.009859
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.694123
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        7.880809
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

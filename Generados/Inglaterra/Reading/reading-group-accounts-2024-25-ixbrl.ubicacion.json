@@ -1,93 +1,460 @@
 {
  "pdf": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.md",
- "mdSha1": "58a905aaaba17cc02ad8abc84b3b06a4a12ca153",
+ "mdSha1": "91a89644c425c11e1debe12a64f431721af0ecb3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:32:41.731Z",
+ "generado": "2026-10-24T14:43:50.673Z",
  "perimetroClub": "consolidado",
  "bloques": {
   "b1": {
    "pagina": 2,
    "lineas": [
-    16,
+    14,
     20
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b2": {
-   "pagina": 5,
+   "pagina": 2,
    "lineas": [
-    114,
-    124
+    26,
+    27
    ],
    "tipo": "tabla"
   },
   "b3": {
-   "pagina": 5,
+   "pagina": 3,
    "lineas": [
-    127,
-    135
+    40,
+    52
    ],
    "tipo": "tabla"
   },
   "b4": {
    "pagina": 5,
    "lineas": [
-    139,
-    147
+    69,
+    97
    ],
    "tipo": "tabla"
   },
   "b5": {
-   "pagina": 6,
+   "pagina": 5,
    "lineas": [
-    158,
-    166
+    106,
+    114
    ],
    "tipo": "tabla"
   },
   "b6": {
    "pagina": 7,
    "lineas": [
-    192,
-    204
+    142,
+    149
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b7": {
+   "pagina": 13,
+   "lineas": [
+    244,
+    258
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    269,
+    274
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    284,
+    306
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    319,
+    342
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    356,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    374,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    392,
+    411
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    420,
+    421
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    425,
+    426
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    431,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 20,
+   "lineas": [
+    438,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 20,
+   "lineas": [
+    446,
+    447
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    451,
+    451
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 21,
+   "lineas": [
+    455,
+    460
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    464,
+    466
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 21,
+   "lineas": [
+    473,
+    474
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    478,
+    478
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    482,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 22,
+   "lineas": [
+    488,
+    489
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    496,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 23,
+   "lineas": [
+    501,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 23,
+   "lineas": [
+    518,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 24,
+   "lineas": [
+    529,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 24,
+   "lineas": [
+    541,
+    542
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 25,
+   "lineas": [
+    546,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 25,
+   "lineas": [
+    551,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 25,
+   "lineas": [
+    561,
+    562
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 26,
+   "lineas": [
+    566,
+    580
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 27,
+   "lineas": [
+    589,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 28,
+   "lineas": [
+    632,
+    638
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 28,
+   "lineas": [
+    642,
+    659
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 29,
+   "lineas": [
+    668,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 29,
+   "lineas": [
+    703,
+    704
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 30,
+   "lineas": [
+    708,
+    708
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 30,
+   "lineas": [
+    712,
+    734
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 30,
+   "lineas": [
+    740,
+    741
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
    "pagina": 31,
    "lineas": [
-    1254,
-    1259
+    745,
+    746
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 31,
+   "lineas": [
+    750,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 32,
+   "lineas": [
+    778,
+    814
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 33,
+   "lineas": [
+    823,
+    847
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 34,
+   "lineas": [
+    857,
+    869
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 34,
+   "lineas": [
+    874,
+    881
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 35,
+   "lineas": [
+    890,
+    895
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 35,
+   "lineas": [
+    899,
+    902
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 35,
+   "lineas": [
+    906,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 36,
+   "lineas": [
+    917,
+    940
+   ],
+   "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b34",
+  "b37"
+ ],
+ "notas_gastos": [
+  "b35",
+  "b37"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas y estados se expresan en '£' (columnas 2025 £ / 2024 £), con importes completos como 9,805,651",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024 (As restated)",
+ "perimetro": "consolidado",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El PDF contiene la cuenta de resultados consolidada (Group statement of comprehensive income) del ejercicio al 30-06-2025 en páginas que no aparecen en el índice?",
+   "pregunta": "¿Se carga la columna 2024 del Group Profit and Loss Account (b7) con las cifras reexpresadas ('As restated'), con £10,706,194 reclasificados de administrative expenses a cost of sales?",
    "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice solo muestra cuadros del informe estratégico (b2-b5), listas de directores y una nota de inversiones (b7, pág. 31); probablemente la transcripción del iXBRL perdió las tablas de los estados.",
+   "tema": "columna",
+   "renglon": "Cost of sales",
+   "texto": "La nota 28 (b52) informa una reclasificación de £10,706,194 en el comparativo 2024 sin impacto en el resultado.",
    "bloques": [
-    "b2",
-    "b5",
-    "b7"
+    "b7",
+    "b52"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Ningún bloque del índice es el estado de resultados: b2-b5 son series históricas de ingresos, asistencia y abonos del informe estratégico; b1 y b6 son directores; b7 es el costo de participaciones en subsidiarias. Hay que revisar el PDF por si las tablas de los estados no se transcribieron."
+ "observaciones": "Estado consolidado: Group Profit and Loss Account (b7). Nota 3 turnover (b34) desglosa ingresos e interest income; b37 notas 8 y 9 (intereses cobrados y pagados); b35 nota 4 operating loss y costes de personal. No hay cuenta de resultados individual (solo balances company)."
 }

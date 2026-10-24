@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
+  "pdf": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.pdf",
+  "club": "salford-city",
+  "year": 2025,
+  "generatedAt": "2026-10-24T14:45:42.430Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        1.033949
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        3.352772
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.008
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Exceptional item",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        31.502048
+      ],
+      "glosa": "Partida excepcional"
+    },
+    {
+      "label": "Profit on disposal of players' registrations",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.824387
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        9.128845
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

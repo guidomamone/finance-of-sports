@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
+ "clave": "52772ac49e1e28d774a3172562290014acb0ba2f",
+ "generado": "2026-10-24T14:46:15.876Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "El turnover (L207, 4,386,721) se carga abierto por nota en Matchday (1.033949) y Commercial (3.352772), que suman 4.386721. El resto de los renglones del estado está cargado una sola vez y del lado correcto. No se cargan subtotales: el resultado operativo (L211) y el resultado antes de impuestos (L215) quedan afuera. El impuesto es cero."
+ }
+}

@@ -1,43 +1,425 @@
 {
  "pdf": "Clubes/Inglaterra/Northampton Town/northamptontown-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Northampton Town/northamptontown-full-accounts-2024-25-ixbrl.md",
- "mdSha1": "10726a39b5f7e862c2fc63cf3f2b836b6e533734",
+ "mdSha1": "82e936fcd03447a742ca53333cd3b32d088f95b3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:21:43.656Z",
+ "generado": "2026-10-24T14:41:37.597Z",
  "perimetroClub": "individual",
  "bloques": {
   "b1": {
+   "pagina": 2,
+   "lineas": [
+    23,
+    31
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    35,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    46,
+    49
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    56,
+    57
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    66,
+    67
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
    "pagina": 4,
    "lineas": [
-    82,
-    91
+    71,
+    78
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    217,
+    230
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    240,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    279,
+    289
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    298,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    303,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    315,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    320,
+    324
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    330,
+    331
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    335,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    340,
+    345
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    352,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    357,
+    358
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    362,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    368,
+    371
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    378,
+    379
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    383,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    396,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    403,
+    406
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    417,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    422,
+    424
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    428,
+    431
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    438,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 23,
+   "lineas": [
+    443,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 23,
+   "lineas": [
+    452,
+    462
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 24,
+   "lineas": [
+    471,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 24,
+   "lineas": [
+    503,
+    504
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 25,
+   "lineas": [
+    508,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 26,
+   "lineas": [
+    534,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 26,
+   "lineas": [
+    542,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 26,
+   "lineas": [
+    560,
+    561
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 27,
+   "lineas": [
+    565,
+    578
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 27,
+   "lineas": [
+    584,
+    585
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 28,
+   "lineas": [
+    589,
+    611
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 28,
+   "lineas": [
+    617,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 29,
+   "lineas": [
+    623,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 29,
+   "lineas": [
+    651,
+    652
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 30,
+   "lineas": [
+    656,
+    668
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 31,
+   "lineas": [
+    678,
+    687
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 32,
+   "lineas": [
+    697,
+    698
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 32,
+   "lineas": [
+    702,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 32,
+   "lineas": [
+    716,
+    717
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 33,
+   "lineas": [
+    721,
+    722
    ],
    "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b30"
+ ],
+ "notas_gastos": [
+  "b31"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas muestran '£' como unidad en columnas (ej. Wages and salaries 5,559,103); el estado de resultados presenta importes en libras sin escala.",
  "moneda": "GBP",
- "columna_ejercicio": "2024/25",
- "columna_anterior": "2023/24",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El PDF contiene un profit and loss account del ejercicio cerrado el 30-06-2025 que no aparece en el índice de bloques transcriptos?",
-   "propuesta": "no",
+   "pregunta": "¿Se deja afuera de la carga la nota 7 de remuneración de directores y la conciliación fiscal (b33)?",
+   "propuesta": "sí",
    "tema": "otro",
    "renglon": "",
-   "texto": "El índice solo tiene el cuadro de indicadores clave del strategic report (pág. 4, b1), que no es un estado de resultados.",
+   "texto": "b33 contiene remuneración de directores (incluida en costes de personal) y conciliación de impuestos, que no desglosan renglones a cargar.",
    "bloques": [
-    "b1"
+    "b33"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "El único bloque con cifras es el cuadro de KPIs del strategic report (posición en liga, asistencia, costos de personal, pérdida del ejercicio). No es estado de resultados, por lo que no se elige. Sin estado de resultados del ejercicio 2024/25 en la transcripción."
+ "observaciones": "Cuentas individuales de The Northampton Town Football Club Limited, ejercicio cerrado el 30-06-2025. Estado de resultados en b7 (Statement of Comprehensive Income). b30 desglosa Turnover por clase de negocio (nota 3). b31 contiene la nota 4 (amortizaciones, arrendamientos), auditoría y nota 6 de costes de personal (wages, social security, pension), que abren gastos. b6 es un resumen de indicadores, no se usa."
 }

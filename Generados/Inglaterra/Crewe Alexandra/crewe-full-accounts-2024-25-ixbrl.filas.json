@@ -1,0 +1,95 @@
+{
+ "pdf": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "2592cebcba749eae82529058384b2bb23692e018",
+ "ubicacionSha1": "f0083fe447bfdddadbb89546c9ed1c9461a068e1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:41:24.539Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L162: encabezado de columnas '£' (libras, sin indicación de miles)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 163,
+   "etiqueta": "Turnover",
+   "actual": "5,198,639",
+   "anterior": "5,267,770",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 164,
+   "etiqueta": "Administrative expenses",
+   "actual": "(6,361,001)",
+   "anterior": "(6,060,709)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 165,
+   "etiqueta": "Loss before taxation",
+   "actual": "(1,162,362)",
+   "anterior": "(792,939)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 166,
+   "etiqueta": "Tax on loss",
+   "actual": "22,606",
+   "anterior": "28,290",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 167,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(1,139,756)",
+   "anterior": "(764,649)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 167,
+  "actual": "(1,139,756)",
+  "anterior": "(764,649)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas 'Retained earnings brought forward' y 'Retained earnings carried forward' (L168-L169)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Retained earnings brought forward",
+   "texto": "L168-L169 son movimientos de resultados acumulados (patrimonio), no partidas de ingresos o gastos del ejercicio.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado abreviado (cuentas de pequeña empresa): solo Turnover y Administrative expenses, sin notas de desglose. En L166 el '4' es la referencia a la nota, desplazada a la columna de importes; los importes de Tax on loss son 22,606 (2025) y 28,290 (2024), crédito fiscal positivo. No hay total de ingresos ni de gastos impresos como tales (cada uno es una sola partida)."
+}

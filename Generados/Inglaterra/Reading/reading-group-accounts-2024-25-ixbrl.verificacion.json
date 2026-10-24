@@ -1,0 +1,168 @@
+{
+ "pdf": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-24T14:46:19.684Z",
+ "scriptHuella": "b0a6fdd2be99",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "9d2235a",
+  "9d2235a"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 9.805651 cierra; además se suman 1 línea(s) fuera de ese total (9.508266)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 9.999999983634211e-7
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "duda de localizar confirmada por las sumas (columna, \"Cost of sales\"): ¿Se carga la columna 2024 del Group Profit and Loss Account (b7) con las cifras reexpresadas ('As restated'), con £10,706,194 reclasificados de administrative expenses a cost of sales?",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 19.313917,
+  "gastos": 23.075106,
+  "financiero": -0.120847,
+  "impuesto": 0,
+  "resultadoImpreso": -3.882035,
+  "resultadoParaCargar": -3.882035,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Media and broadcasting",
+   "lado": "ingreso",
+   "M": 2.449139,
+   "pagina": 26,
+   "linea": 572,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Matchday receipts",
+   "lado": "ingreso",
+   "M": 4.268177,
+   "pagina": 26,
+   "linea": 573,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial income",
+   "lado": "ingreso",
+   "M": 2.986196,
+   "pagina": 26,
+   "linea": 574,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 0.102138,
+   "pagina": 26,
+   "linea": 575,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of player registration",
+   "lado": "ingreso",
+   "M": 9.508267,
+   "pagina": 13,
+   "linea": 252,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 9.007349,
+   "pagina": 13,
+   "linea": 249,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 14.067757,
+   "pagina": 13,
+   "linea": 251,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.017357,
+   "linea": 254
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.138204,
+   "linea": 255
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 257
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "f43fdb61e5e714dcdd04720d286249fd868aacb1",
+  "rango": [
+   245,
+   261
+  ],
+  "lineasCargadas": [
+   572,
+   573,
+   574,
+   575,
+   252,
+   249,
+   251,
+   254,
+   255,
+   257
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 245 a 261 del .md):\nL245: | --- | --- | --- | --- |\nL246: | As restated |  |  |  |\nL247: | Notes | £ | £ |  |\nL248: | Turnover | 3 | 9,805,651 | 10,001,548 |\nL249: | Cost of sales | (9,007,349) | (10,706,194) |  |\nL250: | Gross profit/(loss) | 798,302 | (704,646) |  |\nL251: | Administrative expenses | (14,067,757) | (16,263,093) |  |\nL252: | Profit on disposal of player registration | 9,508,267 | 3,989,783 |  |\nL253: | Operating loss | 4 | (3,761,188) | (12,977,956) |\nL254: | Interest receivable and similar income | 8 | 17,357 | 193 |\nL255: | Interest payable and similar expenses | 9 | (138,204) | (86,674) |\nL256: | Loss before taxation | (3,882,035) | (13,064,437) |  |\nL257: | Tax on loss | 10 | - | - |\nL258: | Loss for the financial year | (3,882,035) | (13,064,437) |  |\nL260: Loss for the financial year is all attributable to the owners of the parent company.\nL261: The profit and loss account has been prepared on the basis that all operations are continuing operations.\n\nLO QUE SE CARGA:\n- ingreso · \"Media and broadcasting\" · 2.449139 · L572 (de una nota)\n- ingreso · \"Matchday receipts\" · 4.268177 · L573 (de una nota)\n- ingreso · \"Commercial income\" · 2.986196 · L574 (de una nota)\n- ingreso · \"Other income\" · 0.102138 · L575 (de una nota)\n- ingreso · \"Profit on disposal of player registration\" · 9.508267 · L252\n- gasto · \"Cost of sales\" · 9.007349 · L249\n- gasto · \"Administrative expenses\" · 14.067757 · L251\n- financiero · \"Interest receivable and similar income\" · 0.017357 · L254\n- financiero · \"Interest payable and similar expenses\" · -0.138204 · L255\n- impuesto · \"Tax on loss\" · 0 · L257"
+ }
+}

@@ -1,32 +1,423 @@
 {
  "pdf": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.md",
- "mdSha1": "f96c8dd412d92aaeaf9fe43aa6984fca08ef1b5d",
+ "mdSha1": "93993c1f0ba1ce6ca4018e0b52094f0eb370fc8c",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:21:48.494Z",
+ "generado": "2026-10-24T14:42:09.813Z",
  "perimetroClub": null,
- "bloques": {},
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
- "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
- "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿El PDF 'oxfordunited-full-accounts-2024-25-ixbrl.pdf' contiene una cuenta de resultados (profit and loss account) del ejercicio cerrado el 30-06-2025 que la transcripción no capturó?",
-   "propuesta": "no",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice llegó con 0 bloques con cifras, posiblemente por un fallo de transcripción del iXBRL o porque se presentaron cuentas abreviadas sin P&L.",
-   "bloques": [],
-   "afecta_carga": true
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    14,
+    15
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    21
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    28
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    41,
+    51
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    92,
+    93
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    161,
+    162
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    167,
+    168
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    180,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    209,
+    214
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    223,
+    248
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    262,
+    265
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    269,
+    271
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    275,
+    277
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    286,
+    307
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    316,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    321,
+    322
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    327,
+    330
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    339,
+    340
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    344,
+    348
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    352,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    361,
+    362
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    366,
+    367
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    374,
+    375
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    379,
+    379
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    396,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 19,
+   "lineas": [
+    407,
+    410
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 19,
+   "lineas": [
+    419,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 20,
+   "lineas": [
+    427,
+    432
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 20,
+   "lineas": [
+    440,
+    441
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 21,
+   "lineas": [
+    445,
+    449
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 22,
+   "lineas": [
+    465,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 22,
+   "lineas": [
+    504,
+    505
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 23,
+   "lineas": [
+    509,
+    531
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 24,
+   "lineas": [
+    540,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 24,
+   "lineas": [
+    559,
+    571
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 24,
+   "lineas": [
+    577,
+    585
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 25,
+   "lineas": [
+    589,
+    611
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 25,
+   "lineas": [
+    617,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 26,
+   "lineas": [
+    623,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 26,
+   "lineas": [
+    654,
+    658
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 27,
+   "lineas": [
+    662,
+    677
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 28,
+   "lineas": [
+    687,
+    704
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 28,
+   "lineas": [
+    710,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 29,
+   "lineas": [
+    715,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 30,
+   "lineas": [
+    726,
+    727
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 30,
+   "lineas": [
+    731,
+    734
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 30,
+   "lineas": [
+    738,
+    739
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 30,
+   "lineas": [
+    743,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 31,
+   "lineas": [
+    761,
+    786
+   ],
+   "tipo": "tabla"
   }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
  ],
- "observaciones": "El índice no contiene ningún bloque con cifras; no se puede identificar estado de resultados. Puede ser un problema de extracción del PDF iXBRL o cuentas filleted sin cuenta de resultados. Revisar el PDF manualmente."
+ "notas_ingresos": [
+  "b31",
+  "b33"
+ ],
+ "notas_gastos": [
+  "b31",
+  "b33"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas y estados se presentan en £ con importes completos (ej. Turnover 18,999,871; pérdida (17,479,972)).",
+ "moneda": "GBP",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024 as restated",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Cuentas individuales de Oxford United Football Club Limited. b8 es la Profit and Loss Account (2024 reexpresado). b31 tiene la nota 3 de Turnover por clase de negocio (desglosa ingresos) y la nota 5 de Operating loss (gastos: amortización, depreciación, alquileres); la parte de empleados (cantidades) no se carga. b33 tiene costos de personal (nota 6), intereses a cobrar (nota 7) e intereses a pagar (nota 8). Se excluyen el balance, el flujo de efectivo, la evolución del patrimonio, el activo fijo, la conciliación de impuestos y los compromisos."
 }

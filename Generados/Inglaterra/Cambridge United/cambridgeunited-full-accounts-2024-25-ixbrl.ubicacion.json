@@ -1,43 +1,340 @@
 {
  "pdf": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.md",
- "mdSha1": "8ec52a44fd7daf7ade8f60ece9f91fca599bab9b",
+ "mdSha1": "2750dc2bef73bbb8dcf425d32eedede94663ebcb",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:18:04.064Z",
+ "generado": "2026-10-24T14:40:51.978Z",
  "perimetroClub": null,
  "bloques": {
   "b1": {
+   "pagina": 2,
+   "lineas": [
+    14,
+    15
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    24,
+    28
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    33,
+    34
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    46,
+    55
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
    "pagina": 6,
    "lineas": [
-    125,
-    131
+    104,
+    108
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    215,
+    227
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    238,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    275,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    296,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    325,
+    326
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    330,
+    331
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    336,
+    339
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    346,
+    347
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    353,
+    354
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    358,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    368,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    376,
+    377
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    381,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    386,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    391,
+    394
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    401,
+    402
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    419,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    427,
+    428
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    432,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    441,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    456,
+    489
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    495,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 23,
+   "lineas": [
+    500,
+    525
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 24,
+   "lineas": [
+    535,
+    562
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 24,
+   "lineas": [
+    567,
+    568
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 25,
+   "lineas": [
+    578,
+    611
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 25,
+   "lineas": [
+    617,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 26,
+   "lineas": [
+    623,
+    637
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 26,
+   "lineas": [
+    641,
+    642
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 27,
+   "lineas": [
+    652,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 27,
+   "lineas": [
+    657,
+    668
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 28,
+   "lineas": [
+    678,
+    698
+   ],
+   "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b26",
+  "b28"
+ ],
+ "notas_gastos": [
+  "b26",
+  "b28"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las columnas de las notas están encabezadas con '£' y los importes están expresados en libras enteras (ej. 9,246,327).",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se confirma que el PDF no contiene la cuenta de pérdidas y ganancias del ejercicio cerrado el 2025-06-30 (solo aparece la lista de directores en la pág. 6)?",
+   "pregunta": "¿Se cargan desde b26 los importes de 2024 de 'Wages and salaries' tal como figuran 'as restated' (5,377,623)?",
    "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice solo tiene un bloque con fechas de nombramientos y renuncias de directores; puede que la transcripción del iXBRL no haya captado las tablas.",
+   "tema": "columna",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 5 re-expresa la cifra comparativa con una baja de £343,015 que se reasigna a otros costos, sin cambios en el estado de resultados (b28).",
    "bloques": [
-    "b1"
+    "b26",
+    "b28"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "El único bloque con cifras (b1) es la lista de directores con fechas de nombramiento y renuncia; no hay estado de resultados ni notas en el índice. Puede tratarse de cuentas abreviadas o de una transcripción incompleta del iXBRL."
+ "observaciones": "Estado de resultados individual: b6 (Statement of Comprehensive Income, pág. 13). b26 contiene la nota 3 (Turnover por clase de negocio), la nota 4 (cargos operativos) y la nota 5 (costos de personal). b28 contiene las notas 7 y 8 (intereses cobrados y pagados). La conciliación impositiva de b28 no se carga. No hay estados consolidados."
 }

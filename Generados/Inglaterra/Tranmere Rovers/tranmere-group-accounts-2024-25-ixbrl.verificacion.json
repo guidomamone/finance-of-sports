@@ -1,0 +1,155 @@
+{
+ "pdf": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-24T14:46:19.810Z",
+ "scriptHuella": "b0a6fdd2be99",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "e515c4a",
+  "fdafaf3",
+  "c03ff21"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "5.773238 = 5.763379",
+   "suma": 5.773237999999999,
+   "impreso": 5.763379
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.440892098500626e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Other operating income\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de extraer que no afecta la carga: La nota 5 (L709-L712) no indica a qué renglón del estado corresponde el gasto de personal; se tomó la columna Group 2025/2024.",
+  "duda de extraer que no afecta la carga: L673 repite 3,756 ya cargado en L718.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5.773238,
+  "gastos": 8.574932,
+  "financiero": -0.115152,
+  "impuesto": 0.569887,
+  "resultadoImpreso": -2.346959,
+  "resultadoParaCargar": -2.346959,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Football income",
+   "lado": "ingreso",
+   "M": 4.038379,
+   "pagina": 30,
+   "linea": 667,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial income",
+   "lado": "ingreso",
+   "M": 1.725,
+   "pagina": 30,
+   "linea": 668,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.009859,
+   "pagina": 12,
+   "linea": 201,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 0.694123,
+   "pagina": 12,
+   "linea": 198,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 7.880809,
+   "pagina": 12,
+   "linea": 200,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.003756,
+   "linea": 203
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.118908,
+   "linea": 204
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": 0.569887,
+   "linea": 207
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "955f5740e4f2de17d7e78387e0ad5e748363866a",
+  "rango": [
+   194,
+   211
+  ],
+  "lineasCargadas": [
+   667,
+   668,
+   201,
+   198,
+   200,
+   203,
+   204,
+   207
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 194 a 211 del .md):\nL194: | --- | --- | --- | --- |\nL195: | as restated |  |  |  |\nL196: | Notes | £ | £ |  |\nL197: | Turnover | 3 | 5,763,379 | 5,979,371 |\nL198: | Cost of sales | (694,123) | (512,811) |  |\nL199: | Gross profit | 5,069,256 | 5,466,560 |  |\nL200: | Administrative expenses | (7,880,809) | (6,965,243) |  |\nL201: | Other operating income | 9,859 | 215,451 |  |\nL202: | Operating loss | 4 | (2,801,694) | (1,283,232) |\nL203: | Interest receivable and similar income | 6 | 3,756 | 5,715 |\nL204: | Interest payable and similar expenses | 7 | (118,908) | (43,853) |\nL205: | Amounts written off investments | 8 | - | (54,000) |\nL206: | Loss before taxation | (2,916,846) | (1,375,370) |  |\nL207: | Tax on loss | 9 | 569,887 | 203,450 |\nL208: | Loss for the financial year | (2,346,959) | (1,171,920) |  |\nL209: | Loss for the financial year is attributable to: |  |  |  |\nL210: | - Owners of the parent company | (2,323,085) | (1,163,064) |  |\nL211: | - Non-controlling interests | (23,874) | (8,856) |  |\n\nLO QUE SE CARGA:\n- ingreso · \"Football income\" · 4.038379 · L667 (de una nota)\n- ingreso · \"Commercial income\" · 1.725 · L668 (de una nota)\n- ingreso · \"Other operating income\" · 0.009859 · L201\n- gasto · \"Cost of sales\" · 0.694123 · L198\n- gasto · \"Administrative expenses\" · 7.880809 · L200\n- financiero · \"Interest receivable and similar income\" · 0.003756 · L203\n- financiero · \"Interest payable and similar expenses\" · -0.118908 · L204\n- impuesto · \"Tax on loss\" · 0.569887 · L207"
+ }
+}

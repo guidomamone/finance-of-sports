@@ -1,32 +1,572 @@
 {
  "pdf": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
- "mdSha1": "b148653b80cdbcb25c91d08d6cabe4d3e3b21b47",
+ "mdSha1": "81cb2264b3be0b0b72209bc137d7535ee8c9a68e",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:22:45.056Z",
+ "generado": "2026-10-24T14:45:20.271Z",
  "perimetroClub": null,
- "bloques": {},
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    14,
+    15
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    23
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    29,
+    30
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    43,
+    55
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    108,
+    109
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    177,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    193,
+    212
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    221,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    241,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    294,
+    324
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    338,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    359,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    373,
+    373
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    382,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    402,
+    405
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    409,
+    415
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    424,
+    448
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 22,
+   "lineas": [
+    457,
+    481
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 23,
+   "lineas": [
+    490,
+    491
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 23,
+   "lineas": [
+    495,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 23,
+   "lineas": [
+    501,
+    504
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    511,
+    512
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 24,
+   "lineas": [
+    516,
+    518
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 24,
+   "lineas": [
+    523,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 24,
+   "lineas": [
+    528,
+    531
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 24,
+   "lineas": [
+    538,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 25,
+   "lineas": [
+    543,
+    550
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 25,
+   "lineas": [
+    556,
+    557
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    564,
+    565
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 26,
+   "lineas": [
+    571,
+    572
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 26,
+   "lineas": [
+    576,
+    579
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 26,
+   "lineas": [
+    588,
+    589
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 27,
+   "lineas": [
+    607,
+    608
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 28,
+   "lineas": [
+    616,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 28,
+   "lineas": [
+    630,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 29,
+   "lineas": [
+    635,
+    643
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 29,
+   "lineas": [
+    650,
+    651
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 30,
+   "lineas": [
+    662,
+    686
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 31,
+   "lineas": [
+    695,
+    727
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 32,
+   "lineas": [
+    736,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 32,
+   "lineas": [
+    776,
+    777
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 33,
+   "lineas": [
+    781,
+    811
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 33,
+   "lineas": [
+    817,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 34,
+   "lineas": [
+    837,
+    841
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 34,
+   "lineas": [
+    845,
+    855
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 35,
+   "lineas": [
+    864,
+    871
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 35,
+   "lineas": [
+    875,
+    893
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 36,
+   "lineas": [
+    902,
+    940
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 36,
+   "lineas": [
+    946,
+    951
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 37,
+   "lineas": [
+    955,
+    980
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 37,
+   "lineas": [
+    986,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 38,
+   "lineas": [
+    1000,
+    1020
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 39,
+   "lineas": [
+    1030,
+    1049
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 40,
+   "lineas": [
+    1058,
+    1059
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 40,
+   "lineas": [
+    1063,
+    1077
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 40,
+   "lineas": [
+    1081,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 40,
+   "lineas": [
+    1092,
+    1093
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 41,
+   "lineas": [
+    1103,
+    1141
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 42,
+   "lineas": [
+    1150,
+    1180
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 42,
+   "lineas": [
+    1186,
+    1187
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 43,
+   "lineas": [
+    1191,
+    1202
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 43,
+   "lineas": [
+    1206,
+    1222
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 43,
+   "lineas": [
+    1228,
+    1229
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 44,
+   "lineas": [
+    1233,
+    1249
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 44,
+   "lineas": [
+    1255,
+    1259
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b38"
+ ],
+ "notas_gastos": [
+  "b39"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Los importes vienen en £ con cifras completas (ej. 'Football income 4,038,379'; el encabezado de las notas indica '£').",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024 as restated",
+ "perimetro": "consolidado",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El PDF 'tranmere-group-accounts-2024-25-ixbrl.pdf' contiene un estado de resultados (profit and loss account) del ejercicio cerrado el 30-06-2025 que la transcripción no captó?",
+   "pregunta": "¿Se cargan como desglose las filas de la nota 3 'Other revenue' (Interest income, Grants received, Sundry income) del bloque b38, aunque no formen parte de Turnover?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "",
-   "texto": "El índice llegó con 0 bloques con cifras, posiblemente por un fallo de extracción del iXBRL y no porque falte el estado.",
-   "bloques": [],
+   "renglon": "Other revenue",
+   "texto": "La nota 3 (b38) abre Turnover en Football/Commercial y aparte lista otros ingresos que probablemente van en otros renglones del estado b7.",
+   "bloques": [
+    "b38"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se usa la columna 'Group' (no 'Company') de la nota 5 de remuneraciones (b39) para desglosar los gastos de personal?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 5 (b39) presenta columnas Group y Company; el estado elegido (b7) es el consolidado.",
+   "bloques": [
+    "b39"
+   ],
    "afecta_carga": true
   }
  ],
- "observaciones": "El índice no tiene ningún bloque con cifras, así que no se puede identificar el estado de resultados. Probablemente sea un fallo de la transcripción del PDF iXBRL. Hay que revisarlo o reprocesarlo con otra extracción. La moneda se asume GBP por tratarse de un club inglés."
+ "observaciones": "Estado de resultados consolidado del grupo: b7 (Group Profit and Loss Account, pág. 12). No se encontró una cuenta de resultados individual de la compañía (no aparece en el índice). La columna 2024 está reexpresada ('as restated'; ver las conciliaciones en b59, b62, b64 y b65, que no se cargan). b8 es el estado de resultado integral y no se carga. Notas: la nota 3 (b38) desglosa Turnover y otros ingresos; la nota 4 (en b38) detalla cargos incluidos en el resultado operativo. En b39 se usan las remuneraciones de la nota 5 y los intereses de las notas 6 y 7. La nota 9 de impuestos (b40) es una conciliación y no se carga."
 }

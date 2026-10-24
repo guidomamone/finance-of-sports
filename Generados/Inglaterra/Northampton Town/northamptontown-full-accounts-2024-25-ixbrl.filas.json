@@ -1,0 +1,323 @@
+{
+ "pdf": "Clubes/Inglaterra/Northampton Town/northamptontown-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Northampton Town/northamptontown-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "82e936fcd03447a742ca53333cd3b32d088f95b3",
+ "ubicacionSha1": "9310580bb4a46e3d8a09163c059130d24c60939e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:41:57.518Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b30"
+  ],
+  "notas_gastos": [
+   "b31"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L219: columnas en '£'"
+  },
+  {
+   "bloque": "b30",
+   "escala": "unidades",
+   "evidencia": "L455: '£'"
+  },
+  {
+   "bloque": "b31",
+   "escala": "unidades",
+   "evidencia": "L474/L480/L493: '£'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 220,
+   "etiqueta": "Turnover",
+   "actual": "7,541,218",
+   "anterior": "6,736,657",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 221,
+   "etiqueta": "Cost of sales",
+   "actual": "(9,278,768)",
+   "anterior": "(7,808,547)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 222,
+   "etiqueta": "Gross loss",
+   "actual": "(1,737,550)",
+   "anterior": "(1,071,890)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 223,
+   "etiqueta": "Administrative expenses",
+   "actual": "(1,738,183)",
+   "anterior": "(1,565,407)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 224,
+   "etiqueta": "Other operating income",
+   "actual": "2,343",
+   "anterior": "350,278",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 225,
+   "etiqueta": "Profit on disposal of player registrations",
+   "actual": "478,098",
+   "anterior": "256,409",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 226,
+   "etiqueta": "Operating loss",
+   "actual": "(2,995,292)",
+   "anterior": "(2,030,610)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 227,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(290)",
+   "anterior": "(5)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 228,
+   "etiqueta": "Loss before taxation",
+   "actual": "(2,995,582)",
+   "anterior": "(2,030,615)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 229,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 230,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(2,995,582)",
+   "anterior": "(2,030,615)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b30",
+   "linea": 457,
+   "etiqueta": "Football activities",
+   "actual": "4,848,881",
+   "anterior": "4,477,439",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b30",
+   "linea": 458,
+   "etiqueta": "Commercial",
+   "actual": "1,252,635",
+   "anterior": "910,852",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b30",
+   "linea": 459,
+   "etiqueta": "Academy",
+   "actual": "642,134",
+   "anterior": "619,301",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b30",
+   "linea": 460,
+   "etiqueta": "Catering",
+   "actual": "671,173",
+   "anterior": "564,765",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b30",
+   "linea": 461,
+   "etiqueta": "Education",
+   "actual": "126,395",
+   "anterior": "164,300",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b30",
+   "linea": 462,
+   "etiqueta": "",
+   "actual": "7,541,218",
+   "anterior": "6,736,657",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b31",
+   "linea": 475,
+   "etiqueta": "Depreciation of owned tangible fixed assets",
+   "actual": "95,504",
+   "anterior": "64,669",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b31",
+   "linea": 476,
+   "etiqueta": "Amortisation of intangible assets",
+   "actual": "59,900",
+   "anterior": "63,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b31",
+   "linea": 477,
+   "etiqueta": "Operating lease charges",
+   "actual": "36,651",
+   "anterior": "17,403",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b31",
+   "linea": 482,
+   "etiqueta": "Audit of the financial statements of the company",
+   "actual": "13,500",
+   "anterior": "10,675",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b31",
+   "linea": 494,
+   "etiqueta": "Wages and salaries",
+   "actual": "5,559,103",
+   "anterior": "4,591,422",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b31",
+   "linea": 495,
+   "etiqueta": "Social security costs",
+   "actual": "603,332",
+   "anterior": "501,462",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b31",
+   "linea": 496,
+   "etiqueta": "Pension costs",
+   "actual": "59,188",
+   "anterior": "40,038",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b31",
+   "linea": 497,
+   "etiqueta": "",
+   "actual": "6,221,623",
+   "anterior": "5,132,922",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 220,
+  "actual": "7,541,218"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 230,
+  "actual": "(2,995,582)",
+  "anterior": "(2,030,615)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan las remuneraciones de la nota 6 (L494-L497) como desglose sin asignarlas a un renglón específico del estado, ya que se reparten entre Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La nota 6 (L494-L497) no indica a qué renglón del estado corresponden los costos de personal.",
+   "bloques": [
+    "b31"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan las partidas de la nota 4 (L475-L477) y nota 5 (L482) como informativas, sin tratarlas como desglose completo de un renglón?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating loss",
+   "texto": "Son cargos incluidos en el resultado operativo (L475-L482), no un desglose exhaustivo; la asignación de auditoría a Administrative expenses es supuesta.",
+   "bloques": [
+    "b31"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala en libras (unidades). No hay total de gastos impreso. Las notas de gastos solo dan cargos informativos y costos de personal; la nota de Turnover suma exactamente al estado."
+}

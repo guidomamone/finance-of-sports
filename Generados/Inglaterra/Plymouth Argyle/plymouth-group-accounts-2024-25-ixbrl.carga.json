@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-24T14:48:09.040Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (plymouthargyle-gb)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-21: Regla de perímetro 1 y 3: 2024-25 solo publica el estado del grupo (el club más su equipo femenino, s408 en .md L584); 2023-24 es individual (sin consolidado), así que cada documento lleva el suyo)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "inicio": "2024-07-01",
+  "cierre": "2025-06-30",
+  "cierreDe": "iXBRL: período etiquetado (escalón 0)",
+  "evidencia": {
+   "pagina": null,
+   "texto": "iXBRL: 2024-07-01 a 2025-06-30"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "plymouthargyle-gb",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

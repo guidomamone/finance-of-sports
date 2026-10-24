@@ -1,0 +1,38 @@
+{
+ "md": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.md",
+ "club": "crewe-alexandra",
+ "year": 2025,
+ "generatedAt": "2026-10-24T14:48:04.819Z",
+ "rubrosHuella": "73fbf76fdad7c58b94a74546c740581395071a62",
+ "jevHuella": "ce69d1d24b44594ef5648cd25c73e7ceaee4ca5e",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Turnover",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Cifra de negocios",
+   "page": 9,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "lump_football_operations",
+   "confianza": 0.99
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 9,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "admin_general_expense",
+   "confianza": 0.99
+  }
+ ]
+}

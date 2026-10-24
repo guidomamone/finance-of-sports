@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.md",
+ "clave": "70d8458e6c18391612a73ec77002dfdb14113878",
+ "generado": "2026-10-24T14:46:05.327Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre todos los renglones del ejercicio 2025. Turnover (15,923,092, L205) se reemplaza por su apertura de nota: Retail 1,001,187 + Football and commercial 14,921,905 = 15,923,092. Los subtotales (Gross profit, Operating profit, Profit before taxation, Profit for the year) no se cargan, como corresponde. Amounts written off investments está en cero en 2025 y Tax on profit es 0, así que no falta nada. El resultado da 2,906,955, igual al impreso."
+ }
+}

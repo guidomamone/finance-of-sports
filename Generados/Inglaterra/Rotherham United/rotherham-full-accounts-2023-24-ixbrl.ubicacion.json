@@ -1,52 +1,278 @@
 {
  "pdf": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.md",
- "mdSha1": "1f40dda3523a1359ae5e3062ac0bbdfe72712360",
+ "mdSha1": "76bfcdd3a70ca0e943bf77f45e307fac71996a9e",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:22:07.525Z",
+ "generado": "2026-10-24T14:44:20.471Z",
  "perimetroClub": "individual",
  "bloques": {
   "b1": {
-   "pagina": 6,
+   "pagina": 2,
    "lineas": [
-    107,
-    124
+    14,
+    15
    ],
    "tipo": "tabla"
   },
   "b2": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    22
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    28,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    36,
+    37
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    48,
+    55
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    76,
+    79
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    83,
+    96
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 6,
+   "lineas": [
+    104,
+    105
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
    "pagina": 7,
    "lineas": [
-    138,
-    141
+    109,
+    110
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    207,
+    210
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    223,
+    235
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    245,
+    254
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    263,
+    285
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    299,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    304,
+    305
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    311,
+    312
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    319,
+    320
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    324,
+    328
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    332,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    341,
+    344
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    351,
+    352
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    360,
+    371
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 19,
+   "lineas": [
+    381,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    418,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    454,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    485,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    491,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 23,
+   "lineas": [
+    530,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 23,
+   "lineas": [
+    565,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 24,
+   "lineas": [
+    570,
+    589
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 25,
+   "lineas": [
+    598,
+    603
    ],
    "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "sin_estado": false,
+ "estado": [
+  "b11"
+ ],
+ "notas_ingresos": [
+  "b23"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas indican '£' en el encabezado de columna (ej. b24/b25: '2024 | 2023 / £ | £'); los importes están impresos completos (ej. 11,417,943).",
  "moneda": "GBP",
  "columna_ejercicio": "2024",
  "columna_anterior": "2023",
- "perimetro": "no se sabe",
+ "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿El PDF completo contiene una profit and loss account del ejercicio cerrado el 30-06-2024 que no aparece en el índice (solo hay cuadros de KPI en págs. 6-7)?",
-   "propuesta": "no",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice solo tiene el cuadro de Key Performance Indicators (b1) y uno de asistencia (b2); no hay estado de resultados transcripto.",
-   "bloques": [
-    "b1",
-    "b2"
-   ],
-   "afecta_carga": true
-  }
- ],
- "observaciones": "Solo se transcribieron dos bloques: b1 es un cuadro de KPI comparado contra presupuesto (ingresos por área y beneficio después de impuestos) y b2 son datos no financieros (asistencia, abonos). Ninguno es el estado de resultados; los indicadores están excluidos. Se marca sin_estado salvo que el PDF tenga la cuenta de resultados en páginas no transcritas."
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Rotherham United Football Club (RUFC) Limited (b11, Statement of Comprehensive Income al 30-06-2024). b23 (nota 3) desglosa el turnover e incluye otras partidas (amortización y beneficio por venta de intangibles). b24 contiene la nota de empleados, con la remuneración que abre los gastos de personal, y los intereses. b25 es la nota de impuestos: se usa la parte del impuesto corriente; la conciliación no se carga. Se excluyen b7 y b9 (KPIs de la memoria), b12 (evolución del patrimonio), b13 (balance), b27 (intangibles/existencias), b28 (deudores) y b30 (deudas)."
 }

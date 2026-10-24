@@ -1,0 +1,375 @@
+{
+ "pdf": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "a15b2241049921c75c77e0a94603b8de530d0dc9",
+ "ubicacionSha1": "17589617f1965f4c1d0d358227085f1938eb3f40",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:43:05.307Z",
+ "ubicacion": {
+  "estado": [
+   "b9"
+  ],
+  "notas_ingresos": [
+   "b27"
+  ],
+  "notas_gastos": [
+   "b28",
+   "b29",
+   "b31"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "L204: columnas en '£'"
+  },
+  {
+   "bloque": "b27",
+   "escala": "unidades",
+   "evidencia": "L457: '£'"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "L505: '£'"
+  },
+  {
+   "bloque": "b29",
+   "escala": "unidades",
+   "evidencia": "L525: '£'"
+  },
+  {
+   "bloque": "b31",
+   "escala": "unidades",
+   "evidencia": "L544: '£'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b9",
+   "linea": 205,
+   "etiqueta": "Turnover",
+   "actual": "15,923,092",
+   "anterior": "10,174,244",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 206,
+   "etiqueta": "Cost of sales",
+   "actual": "(5,577,629)",
+   "anterior": "(3,814,334)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 207,
+   "etiqueta": "Gross profit",
+   "actual": "10,345,463",
+   "anterior": "6,359,910",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 208,
+   "etiqueta": "Administrative expenses",
+   "actual": "(12,928,472)",
+   "anterior": "(11,914,714)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 209,
+   "etiqueta": "Other operating income",
+   "actual": "253,483",
+   "anterior": "244,400",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 210,
+   "etiqueta": "Exceptional item",
+   "actual": "6,547,788",
+   "anterior": "4,069,082",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 211,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "4,218,262",
+   "anterior": "(1,241,322)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 212,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "14,371",
+   "anterior": "303",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 213,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(1,325,678)",
+   "anterior": "(1,030,308)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 214,
+   "etiqueta": "Amounts written off investments",
+   "actual": "-",
+   "anterior": "(46,225)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 215,
+   "etiqueta": "Profit/(loss) before taxation",
+   "actual": "2,906,955",
+   "anterior": "(2,317,552)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 216,
+   "etiqueta": "Tax on profit/(loss)",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 217,
+   "etiqueta": "Profit/(loss) for the financial year",
+   "actual": "2,906,955",
+   "anterior": "(2,317,552)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 459,
+   "etiqueta": "Retail income",
+   "actual": "1,001,187",
+   "anterior": "810,292",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b27",
+   "linea": 460,
+   "etiqueta": "Football and commercial income",
+   "actual": "14,921,905",
+   "anterior": "9,363,952",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b27",
+   "linea": 461,
+   "etiqueta": "",
+   "actual": "15,923,092",
+   "anterior": "10,174,244",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b27",
+   "linea": 466,
+   "etiqueta": "Grants received",
+   "actual": "147,036",
+   "anterior": "172,036",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b27",
+   "linea": 470,
+   "etiqueta": "Profit on disposal of player registrations",
+   "actual": "6,547,788",
+   "anterior": "4,069,082",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Exceptional item"
+  },
+  {
+   "bloque": "b28",
+   "linea": 506,
+   "etiqueta": "Wages and salaries",
+   "actual": "7,505,107",
+   "anterior": "6,565,632",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b28",
+   "linea": 507,
+   "etiqueta": "Social security costs",
+   "actual": "841,596",
+   "anterior": "669,569",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b28",
+   "linea": 508,
+   "etiqueta": "Pension costs",
+   "actual": "172,348",
+   "anterior": "106,830",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b28",
+   "linea": 509,
+   "etiqueta": "",
+   "actual": "8,519,051",
+   "anterior": "7,342,031",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b29",
+   "linea": 527,
+   "etiqueta": "Interest on bank deposits",
+   "actual": "14,371",
+   "anterior": "303",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b31",
+   "linea": 546,
+   "etiqueta": "Other interest on financial liabilities",
+   "actual": "1,313,651",
+   "anterior": "1,017,609",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b31",
+   "linea": 548,
+   "etiqueta": "Interest on finance leases and hire purchase contracts",
+   "actual": "12,027",
+   "anterior": "12,049",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b31",
+   "linea": 549,
+   "etiqueta": "Other interest",
+   "actual": "-",
+   "anterior": "650",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b31",
+   "linea": 550,
+   "etiqueta": "",
+   "actual": "1,325,678",
+   "anterior": "1,030,308",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b31",
+   "linea": 554,
+   "etiqueta": "Amounts written back to/(written off) current loans",
+   "actual": "-",
+   "anterior": "(46,225)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Amounts written off investments"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 217,
+  "actual": "2,906,955",
+  "anterior": "(2,317,552)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los costos de personal (L506-L509) como detalle sin asignarlos a un renglón del estado, ya que se reparten entre Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La nota 7 (L503-L509) no indica a qué renglón del estado corresponde la remuneración.",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga la nota 5 de cargos operativos (L474-L478), remuneración de auditores (L483-L485) y de directores (L513-L522)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Son informativas, no desglosan un renglón del estado en forma aditiva.",
+   "bloques": [
+    "b27",
+    "b28",
+    "b29"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera la conciliación impositiva de la nota 12 (L559-L566)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Tax on profit/(loss)",
+   "texto": "Es una conciliación teórica; el cargo es cero.",
+   "bloques": [
+    "b31"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Grants received (L466) se asignó a Other operating income aunque esta suma 253,483; queda un remanente no desglosado. L465 y L541 repiten intereses ya cargados y se omitieron."
+}

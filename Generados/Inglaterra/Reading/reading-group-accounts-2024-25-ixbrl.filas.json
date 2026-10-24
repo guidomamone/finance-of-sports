@@ -1,0 +1,290 @@
+{
+ "pdf": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "91a89644c425c11e1debe12a64f431721af0ecb3",
+ "ubicacionSha1": "593396276a05b9f52e00766b5f367ff7d7957739",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:44:07.980Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b34",
+   "b37"
+  ],
+  "notas_gastos": [
+   "b35",
+   "b37"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L247: columnas en £"
+  },
+  {
+   "bloque": "b34",
+   "escala": "unidades",
+   "evidencia": "L570: £"
+  },
+  {
+   "bloque": "b35",
+   "escala": "unidades",
+   "evidencia": "L592/L619: £"
+  },
+  {
+   "bloque": "b37",
+   "escala": "unidades",
+   "evidencia": "L648/L653: £"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 248,
+   "etiqueta": "Turnover",
+   "actual": "9,805,651",
+   "anterior": "10,001,548",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 249,
+   "etiqueta": "Cost of sales",
+   "actual": "(9,007,349)",
+   "anterior": "(10,706,194)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 250,
+   "etiqueta": "Gross profit/(loss)",
+   "actual": "798,302",
+   "anterior": "(704,646)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 251,
+   "etiqueta": "Administrative expenses",
+   "actual": "(14,067,757)",
+   "anterior": "(16,263,093)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 252,
+   "etiqueta": "Profit on disposal of player registration",
+   "actual": "9,508,267",
+   "anterior": "3,989,783",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 253,
+   "etiqueta": "Operating loss",
+   "actual": "(3,761,188)",
+   "anterior": "(12,977,956)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 254,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "17,357",
+   "anterior": "193",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 255,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(138,204)",
+   "anterior": "(86,674)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 256,
+   "etiqueta": "Loss before taxation",
+   "actual": "(3,882,035)",
+   "anterior": "(13,064,437)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 257,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 258,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(3,882,035)",
+   "anterior": "(13,064,437)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b34",
+   "linea": 572,
+   "etiqueta": "Media and broadcasting",
+   "actual": "2,449,139",
+   "anterior": "3,122,934",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b34",
+   "linea": 573,
+   "etiqueta": "Matchday receipts",
+   "actual": "4,268,177",
+   "anterior": "4,103,582",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b34",
+   "linea": 574,
+   "etiqueta": "Commercial income",
+   "actual": "2,986,196",
+   "anterior": "3,111,419",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b34",
+   "linea": 575,
+   "etiqueta": "Other income",
+   "actual": "102,138",
+   "anterior": "442,511",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b34",
+   "linea": 576,
+   "etiqueta": "",
+   "actual": "9,805,651",
+   "anterior": "10,001,548",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b37",
+   "linea": 650,
+   "etiqueta": "Other interest income",
+   "actual": "17,357",
+   "anterior": "193",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b37",
+   "linea": 655,
+   "etiqueta": "Other interest on financial liabilities",
+   "actual": "107,940",
+   "anterior": "13,930",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b37",
+   "linea": 657,
+   "etiqueta": "Interest on finance leases and hire purchase contracts",
+   "actual": "3,857",
+   "anterior": "2,065",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b37",
+   "linea": 658,
+   "etiqueta": "Other interest",
+   "actual": "26,407",
+   "anterior": "70,679",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b37",
+   "linea": 659,
+   "etiqueta": "Total finance costs",
+   "actual": "138,204",
+   "anterior": "86,674",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 248,
+  "actual": "9,805,651"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 258,
+  "actual": "(3,882,035)",
+  "anterior": "(13,064,437)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga las partidas informativas de la nota 4 (L594-L596) y de honorarios de auditoría (L601-L603), por no desglosar un renglón del estado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Son cargos incluidos en costos/gastos administrativos sin conciliar con un renglón (L594-L603).",
+   "bloques": [
+    "b35"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones al personal (L620-L623), que cruza Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Los costos de personal (L623: 12,407,926) se reparten entre dos renglones del estado sin indicar asignación.",
+   "bloques": [
+    "b35"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cifras en £ (unidades). Columna anterior es 2024 reexpresada. No se imprime total de gastos. Cuadro 'Other revenue' L580 duplica el interés de la nota 8; no se extrajo."
+}

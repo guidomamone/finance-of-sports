@@ -1,32 +1,289 @@
 {
  "pdf": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.md",
- "mdSha1": "6bb27b41b075a801985ffda6d61c39aa7030bcbb",
+ "mdSha1": "2592cebcba749eae82529058384b2bb23692e018",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:19:27.338Z",
+ "generado": "2026-10-24T14:41:17.116Z",
  "perimetroClub": null,
- "bloques": {},
- "sin_estado": true,
- "estado": [],
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    14,
+    15
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    24,
+    27
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    32,
+    33
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    45,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    145,
+    148
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    160,
+    169
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    179,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    205,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    217,
+    218
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    222,
+    223
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    228,
+    231
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    240,
+    241
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    245,
+    245
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    249,
+    252
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    256,
+    261
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    268,
+    269
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    275,
+    276
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 13,
+   "lineas": [
+    280,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    292,
+    293
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    301,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    315,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    320,
+    335
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 15,
+   "lineas": [
+    341,
+    342
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 16,
+   "lineas": [
+    346,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 16,
+   "lineas": [
+    362,
+    370
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 16,
+   "lineas": [
+    376,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 17,
+   "lineas": [
+    387,
+    411
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 17,
+   "lineas": [
+    417,
+    421
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 18,
+   "lineas": [
+    425,
+    426
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 18,
+   "lineas": [
+    430,
+    433
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 18,
+   "lineas": [
+    437,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 19,
+   "lineas": [
+    449,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 19,
+   "lineas": [
+    455,
+    462
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
  "notas_ingresos": [],
  "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "escala": "unidades",
+ "escala_evidencia": "Las notas del mismo documento están en '£' sin indicación de miles (ej. b22 '2025 £', b24 '2025 / £'); no se ve el encabezado de unidad propio del estado b6.",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿El PDF 'crewe-full-accounts-2024-25-ixbrl.pdf' contiene en realidad un estado de resultados (profit and loss account) del ejercicio cerrado el 30-06-2025 que la transcripción no capturó?",
-   "propuesta": "no",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice no tiene ningún bloque con cifras; puede ser un fallo de transcripción del iXBRL o cuentas abreviadas sin P&L.",
-   "bloques": [],
-   "afecta_carga": true
-  }
- ],
- "observaciones": "El índice llegó vacío (0 bloques con cifras), por lo que no se puede identificar estado de resultados. Posible problema de extracción del documento iXBRL, o cuentas de pequeña empresa presentadas sin cuenta de pérdidas y ganancias (filleted accounts). Revisar el PDF original."
+ "dudas": [],
+ "observaciones": "Cuentas individuales abreviadas (FRS 102 1A) de The Crewe Alexandra Football Club Company Limited. El estado de resultados es b6 (Statement of income and retained earnings: Turnover, Administrative expenses... hasta retained earnings). No hay notas que desglosen ingresos o gastos: b22 trae solo plantilla media (244) y el inicio de la nota de impuestos, y b24 es la conciliación del impuesto (excluida); b25-b28 son activo fijo y acreedores, b33 compromisos de arrendamiento."
 }

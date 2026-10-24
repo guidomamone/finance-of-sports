@@ -1,0 +1,249 @@
+{
+ "pdf": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "9aa01037c4637bb3539f129ee84fbdbf687fecc4",
+ "ubicacionSha1": "ef6cf1c766b0e81b9edbdd2d1de6bf25ef9b318f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:40:13.684Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b33"
+  ],
+  "notas_gastos": [
+   "b35",
+   "b37"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L187: columnas en £"
+  },
+  {
+   "bloque": "b33",
+   "escala": "unidades",
+   "evidencia": "L529: £"
+  },
+  {
+   "bloque": "b35",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la moneda en el fragmento; presumiblemente £"
+  },
+  {
+   "bloque": "b37",
+   "escala": "unidades",
+   "evidencia": "L590/L597: £"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 188,
+   "etiqueta": "Turnover",
+   "actual": "10,897,627",
+   "anterior": "12,045,643",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 189,
+   "etiqueta": "Cost of sales",
+   "actual": "(1,701,365)",
+   "anterior": "(1,769,025)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 190,
+   "etiqueta": "Gross profit",
+   "actual": "9,196,262",
+   "anterior": "10,276,618",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 191,
+   "etiqueta": "Administrative expenses",
+   "actual": "(17,597,763)",
+   "anterior": "(17,632,826)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 192,
+   "etiqueta": "Operating loss",
+   "actual": "(8,401,501)",
+   "anterior": "(7,356,208)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 193,
+   "etiqueta": "Profit/ loss on disposal of player registrations",
+   "actual": "2,796,912",
+   "anterior": "2,281,092",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 194,
+   "etiqueta": "Loss before taxation",
+   "actual": "(5,604,589)",
+   "anterior": "(5,075,116)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 195,
+   "etiqueta": "Tax on loss",
+   "actual": "(3,825)",
+   "anterior": "1,192,912",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 196,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(5,608,414)",
+   "anterior": "(3,882,204)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b33",
+   "linea": 531,
+   "etiqueta": "Matchday",
+   "actual": "4,026,809",
+   "anterior": "4,464,780",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 532,
+   "etiqueta": "Football",
+   "actual": "2,942,362",
+   "anterior": "3,251,790",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 533,
+   "etiqueta": "Commercial",
+   "actual": "1,847,062",
+   "anterior": "1,983,406",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 534,
+   "etiqueta": "Hotel",
+   "actual": "1,200,252",
+   "anterior": "1,524,649",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 535,
+   "etiqueta": "Rental",
+   "actual": "881,142",
+   "anterior": "821,018",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 536,
+   "etiqueta": "",
+   "actual": "10,897,627",
+   "anterior": "12,045,643",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b37",
+   "linea": 598,
+   "etiqueta": "Profit on disposal of player registrations",
+   "actual": "2,796,912",
+   "anterior": "2,281,092",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit/ loss on disposal of player registrations"
+  },
+  {
+   "bloque": "b37",
+   "linea": 604,
+   "etiqueta": "Group tax relief",
+   "actual": "3,825",
+   "anterior": "(1,192,912)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 188,
+  "actual": "10,897,627"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 196,
+  "actual": "(5,608,414)",
+  "anterior": "(3,882,204)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de partidas cargadas al resultado operativo (L563-L567: diferencias de cambio 1,271, depreciación, amortización)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "L561-L567 son cargos informativos que no desglosan un renglón concreto del estado y la fila L563 tiene la etiqueta desplazada.",
+   "bloques": [
+    "b35"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones del personal (L591-L594, total 10,965,011)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "Costos de personal (L591-L594) repartidos entre costo de ventas y administración sin renglón directo en el estado.",
+   "bloques": [
+    "b37"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Total de gastos no impreso. Cuadro geográfico L540 (UK) omitido por duplicar el total de Turnover. Atribución a controlantes/minoritarios (L198-L200) no extraída como partida."
+}

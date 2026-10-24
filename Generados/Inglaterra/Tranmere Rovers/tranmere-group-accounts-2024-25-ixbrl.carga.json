@@ -1,0 +1,42 @@
+{
+ "pdf": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-24T14:48:09.559Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (tranmererovers-gb)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "inicio": "2024-07-01",
+  "cierre": "2025-06-30",
+  "cierreDe": "iXBRL: período etiquetado (escalón 0)",
+  "evidencia": {
+   "pagina": null,
+   "texto": "iXBRL: 2024-07-01 a 2025-06-30"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "tranmererovers-gb",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

@@ -1,0 +1,345 @@
+{
+ "pdf": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Tranmere Rovers/tranmere-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "81cb2264b3be0b0b72209bc137d7535ee8c9a68e",
+ "ubicacionSha1": "5f7d757fe3592371f2733d63ff76cd22db0e8a2f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:45:41.010Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b38"
+  ],
+  "notas_gastos": [
+   "b39"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L196: columnas en £"
+  },
+  {
+   "bloque": "b38",
+   "escala": "unidades",
+   "evidencia": "L665: £"
+  },
+  {
+   "bloque": "b39",
+   "escala": "unidades",
+   "evidencia": "L708/L716: £"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 197,
+   "etiqueta": "Turnover",
+   "actual": "5,763,379",
+   "anterior": "5,979,371",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 198,
+   "etiqueta": "Cost of sales",
+   "actual": "(694,123)",
+   "anterior": "(512,811)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 199,
+   "etiqueta": "Gross profit",
+   "actual": "5,069,256",
+   "anterior": "5,466,560",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 200,
+   "etiqueta": "Administrative expenses",
+   "actual": "(7,880,809)",
+   "anterior": "(6,965,243)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 201,
+   "etiqueta": "Other operating income",
+   "actual": "9,859",
+   "anterior": "215,451",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 202,
+   "etiqueta": "Operating loss",
+   "actual": "(2,801,694)",
+   "anterior": "(1,283,232)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 203,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "3,756",
+   "anterior": "5,715",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 204,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(118,908)",
+   "anterior": "(43,853)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 205,
+   "etiqueta": "Amounts written off investments",
+   "actual": "-",
+   "anterior": "(54,000)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 206,
+   "etiqueta": "Loss before taxation",
+   "actual": "(2,916,846)",
+   "anterior": "(1,375,370)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 207,
+   "etiqueta": "Tax on loss",
+   "actual": "569,887",
+   "anterior": "203,450",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 208,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(2,346,959)",
+   "anterior": "(1,171,920)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 210,
+   "etiqueta": "- Owners of the parent company",
+   "actual": "(2,323,085)",
+   "anterior": "(1,163,064)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Loss for the financial year"
+  },
+  {
+   "bloque": "b7",
+   "linea": 211,
+   "etiqueta": "- Non-controlling interests",
+   "actual": "(23,874)",
+   "anterior": "(8,856)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Loss for the financial year"
+  },
+  {
+   "bloque": "b38",
+   "linea": 667,
+   "etiqueta": "Football income",
+   "actual": "4,038,379",
+   "anterior": "4,249,668",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 668,
+   "etiqueta": "Commercial income",
+   "actual": "1,725,000",
+   "anterior": "1,729,703",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 669,
+   "etiqueta": "",
+   "actual": "5,763,379",
+   "anterior": "5,979,371",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 674,
+   "etiqueta": "Grants received",
+   "actual": "9,859",
+   "anterior": "9,800",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b38",
+   "linea": 675,
+   "etiqueta": "Sundry income",
+   "actual": "-",
+   "anterior": "206,547",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b39",
+   "linea": 709,
+   "etiqueta": "Wages and salaries",
+   "actual": "4,667,674",
+   "anterior": "4,083,614",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b39",
+   "linea": 710,
+   "etiqueta": "Social security costs",
+   "actual": "462,523",
+   "anterior": "367,520",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b39",
+   "linea": 711,
+   "etiqueta": "Pension costs",
+   "actual": "36,179",
+   "anterior": "32,529",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b39",
+   "linea": 712,
+   "etiqueta": "",
+   "actual": "5,166,376",
+   "anterior": "4,483,663",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b39",
+   "linea": 718,
+   "etiqueta": "Interest on bank deposits",
+   "actual": "3,756",
+   "anterior": "5,715",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b39",
+   "linea": 723,
+   "etiqueta": "Other interest",
+   "actual": "118,908",
+   "anterior": "43,853",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b39",
+   "linea": 727,
+   "etiqueta": "Amounts written back to/(written off) investments held at fair value",
+   "actual": "-",
+   "anterior": "(54,000)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Amounts written off investments"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 197,
+  "actual": "5,763,379"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 208,
+  "actual": "(2,346,959)",
+  "anterior": "(1,171,920)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los costos de personal del grupo (L709-L712) sin asignarlos a un renglón del estado, ya que se reparten entre Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La nota 5 (L709-L712) no indica a qué renglón del estado corresponde el gasto de personal; se tomó la columna Group 2025/2024.",
+   "bloques": [
+    "b39"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga la nota 4 'Operating loss' (L680-L686) por ser información de cargos incluidos y no un desglose sumable?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating loss",
+   "texto": "L680-L686 son partidas informativas (amortizaciones, honorarios, subsidios) que no desglosan un renglón de forma sumable.",
+   "bloques": [
+    "b38"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera 'Interest income' de Other revenue (L673) por estar ya en Interest receivable (L203/L718)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Interest receivable and similar income",
+   "texto": "L673 repite 3,756 ya cargado en L718.",
+   "bloques": [
+    "b38",
+    "b39"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado no imprime total de gastos. En b7 la cabecera desplaza columnas; se tomó primera cifra como 2025 y segunda como 2024 as restated. Notas en libras (£) sin escala."
+}

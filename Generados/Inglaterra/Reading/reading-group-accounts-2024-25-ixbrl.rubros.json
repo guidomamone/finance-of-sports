@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.md",
+  "pdf": "Clubes/Inglaterra/Reading/reading-group-accounts-2024-25-ixbrl.pdf",
+  "club": "reading",
+  "year": 2025,
+  "generatedAt": "2026-10-24T14:45:42.208Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Media and broadcasting",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        2.449139
+      ],
+      "glosa": "Ingresos por medios y retransmisión"
+    },
+    {
+      "label": "Matchday receipts",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        4.268177
+      ],
+      "glosa": "Ingresos de día de partido"
+    },
+    {
+      "label": "Commercial income",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        2.986196
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Other income",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        0.102138
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Profit on disposal of player registration",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        9.508267
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        9.007349
+      ],
+      "glosa": "Coste de las ventas"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        14.067757
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

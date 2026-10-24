@@ -1,0 +1,375 @@
+{
+ "pdf": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "93993c1f0ba1ce6ca4018e0b52094f0eb370fc8c",
+ "ubicacionSha1": "1faf16f18581765e86b38217c9dbaec2021b6b33",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:42:31.417Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [
+   "b31",
+   "b33"
+  ],
+  "notas_gastos": [
+   "b31",
+   "b33"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L183: columnas en £"
+  },
+  {
+   "bloque": "b31",
+   "escala": "unidades",
+   "evidencia": "L468: £"
+  },
+  {
+   "bloque": "b33",
+   "escala": "unidades",
+   "evidencia": "L511: £"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 184,
+   "etiqueta": "Turnover",
+   "actual": "18,999,871",
+   "anterior": "8,439,071",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 185,
+   "etiqueta": "Cost of sales",
+   "actual": "(19,159,499)",
+   "anterior": "(10,289,379)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 186,
+   "etiqueta": "Gross loss",
+   "actual": "(159,628)",
+   "anterior": "(1,850,308)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 187,
+   "etiqueta": "Administrative expenses",
+   "actual": "(13,279,985)",
+   "anterior": "(9,544,573)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 188,
+   "etiqueta": "Other operating income",
+   "actual": "868,214",
+   "anterior": "811,241",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 189,
+   "etiqueta": "",
+   "actual": "(12,571,399)",
+   "anterior": "(10,583,640)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 190,
+   "etiqueta": "Profit on disposal of players",
+   "actual": "84,110",
+   "anterior": "621,634",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 191,
+   "etiqueta": "Amortisation of player contracts",
+   "actual": "(2,360,963)",
+   "anterior": "(593,313)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 192,
+   "etiqueta": "Payments in respect of player contracts",
+   "actual": "-",
+   "anterior": "(26,250)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 193,
+   "etiqueta": "New stadium development costs",
+   "actual": "(2,612,304)",
+   "anterior": "(5,140,903)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 194,
+   "etiqueta": "Operating loss",
+   "actual": "(17,460,556)",
+   "anterior": "(15,722,472)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 195,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "11,179",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 196,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(30,595)",
+   "anterior": "(128,155)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 197,
+   "etiqueta": "Loss before taxation",
+   "actual": "(17,479,972)",
+   "anterior": "(15,850,627)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 198,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 199,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(17,479,972)",
+   "anterior": "(15,850,627)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b31",
+   "linea": 470,
+   "etiqueta": "Gate receipts",
+   "actual": "3,627,886",
+   "anterior": "2,524,806",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b31",
+   "linea": 471,
+   "etiqueta": "Football League Contributions",
+   "actual": "10,769,624",
+   "anterior": "2,468,196",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b31",
+   "linea": 472,
+   "etiqueta": "Sponsorship and advertising",
+   "actual": "1,290,484",
+   "anterior": "922,003",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b31",
+   "linea": 473,
+   "etiqueta": "Broadcasting rights",
+   "actual": "685,000",
+   "anterior": "15,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b31",
+   "linea": 474,
+   "etiqueta": "Youth Academy grants",
+   "actual": "543,309",
+   "anterior": "518,083",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b31",
+   "linea": 475,
+   "etiqueta": "Commercial income",
+   "actual": "1,989,771",
+   "anterior": "1,877,320",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b31",
+   "linea": 476,
+   "etiqueta": "Other income",
+   "actual": "93,797",
+   "anterior": "113,663",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b31",
+   "linea": 477,
+   "etiqueta": "",
+   "actual": "18,999,871",
+   "anterior": "8,439,071",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b33",
+   "linea": 520,
+   "etiqueta": "Interest on bank deposits",
+   "actual": "11,179",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b33",
+   "linea": 525,
+   "etiqueta": "Interest on bank overdrafts and loans",
+   "actual": "614",
+   "anterior": "866",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b33",
+   "linea": 526,
+   "etiqueta": "Interest payable to group undertakings",
+   "actual": "-",
+   "anterior": "83,576",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b33",
+   "linea": 527,
+   "etiqueta": "",
+   "actual": "614",
+   "anterior": "84,442",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b33",
+   "linea": 529,
+   "etiqueta": "Interest on finance leases and hire purchase contracts",
+   "actual": "10,276",
+   "anterior": "23,269",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b33",
+   "linea": 530,
+   "etiqueta": "Other interest",
+   "actual": "19,705",
+   "anterior": "20,444",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b33",
+   "linea": 531,
+   "etiqueta": "",
+   "actual": "30,595",
+   "anterior": "128,155",
+   "tipo": "total",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 184,
+  "actual": "18,999,871"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 199,
+  "actual": "(17,479,972)",
+  "anterior": "(15,850,627)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cargos informativos de la nota 5 'Operating loss' (L483-L489) y la remuneración de personal (L512-L515), por no desglosar un renglón del estado sino estar repartidos entre Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Operating loss",
+   "texto": "L483-L489 y L512-L515 son cargos incluidos en varios renglones (costo de ventas y gastos administrativos) y no suman a ninguno; además Amortisation (L488) ya está en L191.",
+   "bloques": [
+    "b31",
+    "b33"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en £ unidades. La columna anterior de L180-L182 corresponde a '2024 as restated'. La fila L189 sin etiqueta es subtotal tras otros ingresos operativos. No hay total de gastos impreso. Nota 4 sin cuadro (seguro). Nota 6 de empleados (cantidades) no extraída."
+}

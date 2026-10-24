@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.md",
+  "pdf": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.pdf",
+  "club": "peterborough-united",
+  "year": 2025,
+  "generatedAt": "2026-10-24T14:45:42.062Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Retail income",
+      "lado": "revenue",
+      "page": 21,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        1.001187
+      ],
+      "glosa": "Ingresos por ventas minoristas"
+    },
+    {
+      "label": "Football and commercial income",
+      "lado": "revenue",
+      "page": 21,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        14.921905
+      ],
+      "glosa": "Ingresos deportivos y comerciales"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.253483
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Exceptional item",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        6.547788
+      ],
+      "glosa": "Partida excepcional"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        5.577629
+      ],
+      "glosa": "Coste de las ventas"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        12.928472
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

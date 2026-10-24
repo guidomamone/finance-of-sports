@@ -1,52 +1,487 @@
 {
  "pdf": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.md",
- "mdSha1": "14131e2fb3de912ce07ede01630bdc36df646a99",
+ "mdSha1": "9aa01037c4637bb3539f129ee84fbdbf687fecc4",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:32:23.234Z",
+ "generado": "2026-10-24T14:39:57.602Z",
  "perimetroClub": "consolidado",
  "bloques": {
   "b1": {
-   "pagina": 4,
+   "pagina": 2,
    "lineas": [
-    71,
-    73
+    14,
+    17
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b2": {
+   "pagina": 2,
+   "lineas": [
+    23,
+    24
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    37,
+    49
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    63,
+    66
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
    "pagina": 5,
    "lineas": [
-    101,
-    108
+    70,
+    73
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    169,
+    172
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    185,
+    200
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    209,
+    218
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    227,
+    255
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    268,
+    284
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    298,
+    307
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    316,
+    325
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    334,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    362,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    367,
+    368
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    374,
+    375
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    382,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    387,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    391,
+    394
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    402,
+    403
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 20,
+   "lineas": [
+    407,
+    412
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    416,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    426,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    435,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    440,
+    440
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    445,
+    446
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 21,
+   "lineas": [
+    450,
+    453
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 21,
+   "lineas": [
+    460,
+    461
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    482,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 23,
+   "lineas": [
+    491,
+    494
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 23,
+   "lineas": [
+    501,
+    506
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 24,
+   "lineas": [
+    516,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 24,
+   "lineas": [
+    526,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 25,
+   "lineas": [
+    549,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 25,
+   "lineas": [
+    563,
+    576
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 25,
+   "lineas": [
+    582,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 26,
+   "lineas": [
+    587,
+    604
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 26,
+   "lineas": [
+    610,
+    611
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 27,
+   "lineas": [
+    615,
+    644
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 27,
+   "lineas": [
+    652,
+    660
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 28,
+   "lineas": [
+    664,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 29,
+   "lineas": [
+    682,
+    689
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 29,
+   "lineas": [
+    693,
+    709
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 30,
+   "lineas": [
+    718,
+    750
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 30,
+   "lineas": [
+    756,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 31,
+   "lineas": [
+    764,
+    775
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 32,
+   "lineas": [
+    785,
+    788
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 32,
+   "lineas": [
+    792,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 32,
+   "lineas": [
+    809,
+    811
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 33,
+   "lineas": [
+    815,
+    820
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 33,
+   "lineas": [
+    824,
+    826
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 33,
+   "lineas": [
+    830,
+    831
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 33,
+   "lineas": [
+    835,
+    836
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 34,
+   "lineas": [
+    846,
+    867
    ],
    "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b33"
+ ],
+ "notas_gastos": [
+  "b35",
+  "b37"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Los estados y notas expresan importes en '£' (ej. '£ / Loss for the year'), con cifras completas como (5,608,414).",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "consolidado",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El PDF contiene en otras páginas la cuenta de resultados consolidada (consolidated statement of comprehensive income) del ejercicio al 30-06-2025 que no fue transcripta?",
-   "propuesta": "no",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice solo tiene el informe estratégico (b1, pág. 4) y un cuadro de KPI de ingresos (b2, pág. 5); no aparece ningún estado de resultados.",
+   "pregunta": "¿Se deja afuera de la carga el cuadro de 'Principal risks' por línea de ingreso (Matchday, Commercial, Hotel, Rental) de las págs. 4-5 (b4-b5)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Turnover",
+   "texto": "Es un cuadro del informe estratégico que probablemente repite el desglose de la nota 3 de Turnover (b33).",
    "bloques": [
-    "b1",
-    "b2"
+    "b4",
+    "b5",
+    "b33"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se usa el cuadro de remuneración del personal eventual de días de partido (b37) solo como desglose de gastos de personal y no se carga el cálculo de impuestos que aparece al final del bloque?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Staff costs",
+   "texto": "b37 mezcla la nota 6 de empleados con el inicio de la nota de impuestos (Current tax / Group tax relief).",
+   "bloques": [
+    "b37"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Solo hay dos bloques con cifras: b1 es texto del strategic report con el turnover por sociedad del grupo (£10.90m en 2025 contra £12.05m en 2024), y b2 es un cuadro de indicadores clave (KPI) de ingresos por fuente: Matchday, Football, Commercial, Rental y Total, en £ para 2025 y 2024. Ninguno es un estado de resultados, y los cuadros de indicadores no se eligen. Por eso marco sin_estado = true. Puede que la transcripción esté incompleta: hay que revisar el PDF."
+ "observaciones": "Estado de resultados consolidado: Group Profit and Loss Account (b7). El documento solo incluye balance individual de la sociedad, sin P&L individual. Nota 3 Turnover (b33) desglosa ingresos por clase de negocio; b35 (operating loss stated after charging, empleados) y b37 (costes de personal) desglosan gastos. Excluidos estado de resultado integral, balances, patrimonio, flujos, activo fijo e impuestos."
 }

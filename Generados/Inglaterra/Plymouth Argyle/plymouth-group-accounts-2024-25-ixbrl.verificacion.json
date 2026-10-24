@@ -1,0 +1,209 @@
+{
+ "pdf": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-24T14:46:19.653Z",
+ "scriptHuella": "b0a6fdd2be99",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Regla de perímetro 1 y 3: 2024-25 solo publica el estado del grupo (el club más su equipo femenino, s408 en .md L584); 2023-24 es individual (sin consolidado), así que cada documento lleva el suyo",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [
+  "daf6979",
+  "4876d25",
+  "57cd7e3"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1657341758564144e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 37.699152,
+  "gastos": 37.481455,
+  "financiero": 0.104359,
+  "impuesto": 0.15614,
+  "resultadoImpreso": 0.478196,
+  "resultadoParaCargar": 0.478196,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticket sales",
+   "lado": "ingreso",
+   "M": 5.931984,
+   "pagina": 29,
+   "linea": 587,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Hospitality and venue income",
+   "lado": "ingreso",
+   "M": 4.712983,
+   "pagina": 29,
+   "linea": 588,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorship and advertising",
+   "lado": "ingreso",
+   "M": 1.641245,
+   "pagina": 29,
+   "linea": 589,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Academy",
+   "lado": "ingreso",
+   "M": 0.584548,
+   "pagina": 29,
+   "linea": 590,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Retail",
+   "lado": "ingreso",
+   "M": 2.798632,
+   "pagina": 29,
+   "linea": 591,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Football league",
+   "lado": "ingreso",
+   "M": 11.329704,
+   "pagina": 29,
+   "linea": 592,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Memberships, streaming and advertising",
+   "lado": "ingreso",
+   "M": 1.580152,
+   "pagina": 29,
+   "linea": 593,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 0.248611,
+   "pagina": 29,
+   "linea": 594,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 8.871293,
+   "pagina": 17,
+   "linea": 285,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 28.902458,
+   "pagina": 17,
+   "linea": 282,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 8.578997,
+   "pagina": 17,
+   "linea": 284,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.104359,
+   "linea": 287
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on profit/(loss)",
+   "M": 0.15614,
+   "linea": 289
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "ed81a8faf2fec6e40e3995dbdba5138430258247",
+  "rango": [
+   278,
+   293
+  ],
+  "lineasCargadas": [
+   587,
+   588,
+   589,
+   590,
+   591,
+   592,
+   593,
+   594,
+   285,
+   282,
+   284,
+   287,
+   289
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 278 a 293 del .md):\nL278: | 2025 | 2024 |  |  |\nL279: | --- | --- | --- | --- |\nL280: | Notes | £ | £ |  |\nL281: | Turnover | 3 | 28,827,859 | 25,577,001 |\nL282: | Cost of sales | (28,902,458) | (23,875,313) |  |\nL283: | Gross (loss)/profit | (74,599) | 1,701,688 |  |\nL284: | Administrative expenses | (8,578,997) | (5,454,561) |  |\nL285: | Other operating income | 4 | 8,871,293 | 1,102,735 |\nL286: | Operating profit/(loss) | 5 | 217,697 | (2,650,138) |\nL287: | Interest receivable and similar income | 9 | 104,359 | 249,025 |\nL288: | Profit/(loss) before taxation | 322,056 | (2,401,113) |  |\nL289: | Tax on profit/(loss) | 10 | 156,140 | (20,907) |\nL290: | Profit/(loss) for the financial year | 478,196 | (2,422,020) |  |\nL292: Profit/(loss) for the financial year is all attributable to the owners of the parent company.\nL293: There are no items of comprehensive income or expense for the year.\n\nLO QUE SE CARGA:\n- ingreso · \"Ticket sales\" · 5.931984 · L587 (de una nota)\n- ingreso · \"Hospitality and venue income\" · 4.712983 · L588 (de una nota)\n- ingreso · \"Sponsorship and advertising\" · 1.641245 · L589 (de una nota)\n- ingreso · \"Academy\" · 0.584548 · L590 (de una nota)\n- ingreso · \"Retail\" · 2.798632 · L591 (de una nota)\n- ingreso · \"Football league\" · 11.329704 · L592 (de una nota)\n- ingreso · \"Memberships, streaming and advertising\" · 1.580152 · L593 (de una nota)\n- ingreso · \"Other\" · 0.248611 · L594 (de una nota)\n- ingreso · \"Other operating income\" · 8.871293 · L285\n- gasto · \"Cost of sales\" · 28.902458 · L282\n- gasto · \"Administrative expenses\" · 8.578997 · L284\n- financiero · \"Interest receivable and similar income\" · 0.104359 · L287\n- impuesto · \"Tax on profit/(loss)\" · 0.15614 · L289"
+ }
+}

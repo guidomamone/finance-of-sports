@@ -1,0 +1,260 @@
+{
+ "pdf": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "aa1d97158db51d91cf29fa33ff3f7b7bf4587467",
+ "ubicacionSha1": "bd4a788ad5c260eabd9c3b8b51cc57a0228b6395",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:43:38.389Z",
+ "ubicacion": {
+  "estado": [
+   "b13"
+  ],
+  "notas_ingresos": [
+   "b38"
+  ],
+  "notas_gastos": [
+   "b39"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b13",
+   "escala": "unidades",
+   "evidencia": "L280: columnas en '£'"
+  },
+  {
+   "bloque": "b38",
+   "escala": "unidades",
+   "evidencia": "L585: '£ | £'"
+  },
+  {
+   "bloque": "b39",
+   "escala": "unidades",
+   "evidencia": "L610: '£ | £'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b13",
+   "linea": 281,
+   "etiqueta": "Turnover",
+   "actual": "28,827,859",
+   "anterior": "25,577,001",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 282,
+   "etiqueta": "Cost of sales",
+   "actual": "(28,902,458)",
+   "anterior": "(23,875,313)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 283,
+   "etiqueta": "Gross (loss)/profit",
+   "actual": "(74,599)",
+   "anterior": "1,701,688",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 284,
+   "etiqueta": "Administrative expenses",
+   "actual": "(8,578,997)",
+   "anterior": "(5,454,561)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 285,
+   "etiqueta": "Other operating income",
+   "actual": "8,871,293",
+   "anterior": "1,102,735",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 286,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "217,697",
+   "anterior": "(2,650,138)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 287,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "104,359",
+   "anterior": "249,025",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 288,
+   "etiqueta": "Profit/(loss) before taxation",
+   "actual": "322,056",
+   "anterior": "(2,401,113)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 289,
+   "etiqueta": "Tax on profit/(loss)",
+   "actual": "156,140",
+   "anterior": "(20,907)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 290,
+   "etiqueta": "Profit/(loss) for the financial year",
+   "actual": "478,196",
+   "anterior": "(2,422,020)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b38",
+   "linea": 587,
+   "etiqueta": "Ticket sales",
+   "actual": "5,931,984",
+   "anterior": "5,459,400",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 588,
+   "etiqueta": "Hospitality and venue income",
+   "actual": "4,712,983",
+   "anterior": "4,779,234",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 589,
+   "etiqueta": "Sponsorship and advertising",
+   "actual": "1,641,245",
+   "anterior": "1,671,062",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 590,
+   "etiqueta": "Academy",
+   "actual": "584,548",
+   "anterior": "553,829",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 591,
+   "etiqueta": "Retail",
+   "actual": "2,798,632",
+   "anterior": "2,424,771",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 592,
+   "etiqueta": "Football league",
+   "actual": "11,329,704",
+   "anterior": "8,870,771",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 593,
+   "etiqueta": "Memberships, streaming and advertising",
+   "actual": "1,580,152",
+   "anterior": "1,691,508",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 594,
+   "etiqueta": "Other",
+   "actual": "248,611",
+   "anterior": "126,426",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 595,
+   "etiqueta": "",
+   "actual": "28,827,859",
+   "anterior": "25,577,001",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 290,
+  "actual": "478,196",
+  "anterior": "(2,422,020)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga las partidas de la nota 5 (L612-L615: amortizaciones, depreciación, profit on disposal of intangible assets 6,138,876) por ser cargos informativos que no desglosan un renglón del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating profit/(loss)",
+   "texto": "La nota 5 lista cargos incluidos en el resultado operativo sin indicar en qué renglón (Cost of sales, Administrative expenses u Other operating income) están.",
+   "bloques": [
+    "b39"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Falta en la transcripción el desglose de la nota 4 'Other operating income' (corta en L597)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Other operating income",
+   "texto": "L597 abre la nota 4 pero el bloque termina sin sus importes; probablemente incluye la venta de jugadores.",
+   "bloques": [
+    "b38"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Escala en libras (unidades). No hay total de ingresos ni de gastos impreso. Nota 6 (honorarios de auditoría) y nota 7 (empleados) no se cargan por no ser desglose de renglones."
+}

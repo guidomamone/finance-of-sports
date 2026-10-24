@@ -1,0 +1,361 @@
+{
+ "pdf": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.md",
+ "mdSha1": "76bfcdd3a70ca0e943bf77f45e307fac71996a9e",
+ "ubicacionSha1": "59ab60d4f0b5d7dd419a5e8efe894f8be9117369",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:44:40.746Z",
+ "ubicacion": {
+  "estado": [
+   "b11"
+  ],
+  "notas_ingresos": [
+   "b23"
+  ],
+  "notas_gastos": [
+   "b24",
+   "b25"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "L225: columnas en £"
+  },
+  {
+   "bloque": "b23",
+   "escala": "unidades",
+   "evidencia": "L385: £"
+  },
+  {
+   "bloque": "b24",
+   "escala": "unidades",
+   "evidencia": "L435: £"
+  },
+  {
+   "bloque": "b25",
+   "escala": "unidades",
+   "evidencia": "L457: £"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b11",
+   "linea": 226,
+   "etiqueta": "Turnover",
+   "actual": "19,172,906",
+   "anterior": "15,686,000",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 227,
+   "etiqueta": "Cost of sales",
+   "actual": "(16,393,065)",
+   "anterior": "(14,680,220)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 228,
+   "etiqueta": "Gross profit",
+   "actual": "2,779,841",
+   "anterior": "1,005,780",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 229,
+   "etiqueta": "Administrative expenses",
+   "actual": "(4,479,875)",
+   "anterior": "(2,136,490)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 230,
+   "etiqueta": "Other operating income",
+   "actual": "-",
+   "anterior": "52,507",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 231,
+   "etiqueta": "Operating loss",
+   "actual": "(1,700,034)",
+   "anterior": "(1,078,203)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 232,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "(237)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 233,
+   "etiqueta": "Loss before taxation",
+   "actual": "(1,700,271)",
+   "anterior": "(1,078,203)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 234,
+   "etiqueta": "Tax on loss",
+   "actual": "988",
+   "anterior": "200,000",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 235,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(1,699,283)",
+   "anterior": "(878,203)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 387,
+   "etiqueta": "Match income & season tickets",
+   "actual": "2,878,941",
+   "anterior": "2,577,320",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b23",
+   "linea": 388,
+   "etiqueta": "Central distributions",
+   "actual": "9,219,950",
+   "anterior": "8,486,119",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b23",
+   "linea": 389,
+   "etiqueta": "Commercial income",
+   "actual": "3,231,561",
+   "anterior": "3,132,725",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b23",
+   "linea": 390,
+   "etiqueta": "Merchandising income",
+   "actual": "835,692",
+   "anterior": "829,687",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b23",
+   "linea": 391,
+   "etiqueta": "Media receipts",
+   "actual": "356,830",
+   "anterior": "435,413",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b23",
+   "linea": 392,
+   "etiqueta": "Transfer fees & sell on clauses",
+   "actual": "2,542,487",
+   "anterior": "95,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b23",
+   "linea": 393,
+   "etiqueta": "Other receipts",
+   "actual": "107,445",
+   "anterior": "129,736",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b23",
+   "linea": 394,
+   "etiqueta": "",
+   "actual": "19,172,906",
+   "anterior": "15,686,000",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b24",
+   "linea": 436,
+   "etiqueta": "Wages and salaries",
+   "actual": "11,417,943",
+   "anterior": "9,097,897",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b24",
+   "linea": 437,
+   "etiqueta": "Employers NI",
+   "actual": "1,402,242",
+   "anterior": "1,129,478",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b24",
+   "linea": 438,
+   "etiqueta": "Class 1 NI",
+   "actual": "75,110",
+   "anterior": "52,125",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b24",
+   "linea": 439,
+   "etiqueta": "Pension (paid to EFL for players)",
+   "actual": "17,716",
+   "anterior": "16,880",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b24",
+   "linea": 440,
+   "etiqueta": "Pension FT Staff",
+   "actual": "35,849",
+   "anterior": "39,921",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b24",
+   "linea": 445,
+   "etiqueta": "Interest on bank deposits",
+   "actual": "(237)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b25",
+   "linea": 459,
+   "etiqueta": "Adjustments in respect of prior periods",
+   "actual": "(988)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  },
+  {
+   "bloque": "b25",
+   "linea": 460,
+   "etiqueta": "Group tax relief",
+   "actual": "-",
+   "anterior": "(200,000)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  },
+  {
+   "bloque": "b25",
+   "linea": 461,
+   "etiqueta": "Total current tax",
+   "actual": "(988)",
+   "anterior": "(200,000)",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 226,
+  "actual": "19,172,906"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 235,
+  "actual": "(1,699,283)",
+  "anterior": "(878,203)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan las remuneraciones de personal (L436-L440) con detalla_a null, sin asignarlas a Cost of sales ni Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La nota 6 no indica en qué renglón del estado se imputan los sueldos (L436-L440).",
+   "bloques": [
+    "b24"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de turnover por mercado geográfico (L398-L400)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Turnover",
+   "texto": "Es una segunda apertura del mismo Turnover ya desglosado por tipo en L387-L393.",
+   "bloques": [
+    "b23"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera la conciliación de la tasa impositiva (L465-L476) y los cargos de nota 4 (L405-L409)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Tax on loss",
+   "texto": "Son conciliaciones/informativos, no desgloses aditivos de renglones del estado.",
+   "bloques": [
+    "b23",
+    "b25"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en £ unidades. El total de gastos no está impreso. Interest receivable figura negativo (237) en L232 y L445. Signos del impuesto: estado 988 positivo (crédito), nota (988)."
+}

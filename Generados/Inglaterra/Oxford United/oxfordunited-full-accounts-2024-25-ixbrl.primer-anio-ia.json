@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.md",
+ "clave": "330685d4d878b62dc6765d96b00dc9755c18d368",
+ "generado": "2026-10-24T14:46:02.161Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "La facturación (L184, 18,999,871) está reemplazada por su apertura de la nota (L470-L476), que suma 18,999,871. Los demás renglones del ejercicio están cargados una sola vez y del lado correcto. Los subtotales (L186, L189, L194, L197, L199) no se cargan. Los renglones en cero (L192, L198) no generan problema."
+ }
+}

@@ -1,32 +1,438 @@
 {
  "pdf": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.md",
- "mdSha1": "34d18c6913db1ec18e9be114d4bd851af47f0de0",
+ "mdSha1": "a15b2241049921c75c77e0a94603b8de530d0dc9",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:21:55.987Z",
+ "generado": "2026-10-24T14:42:43.709Z",
  "perimetroClub": null,
- "bloques": {},
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    14,
+    15
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    21,
+    25
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    32,
+    33
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    41,
+    42
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 2,
+   "lineas": [
+    49,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 3,
+   "lineas": [
+    66,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    117,
+    118
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    185,
+    188
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    202,
+    217
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    227,
+    252
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    266,
+    277
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    286,
+    310
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    319,
+    320
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    324,
+    325
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    334,
+    335
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    339,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    348,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    353,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    357,
+    360
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    364,
+    372
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    379,
+    380
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    384,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 18,
+   "lineas": [
+    401,
+    402
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 19,
+   "lineas": [
+    412,
+    419
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 19,
+   "lineas": [
+    426,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 20,
+   "lineas": [
+    433,
+    438
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 21,
+   "lineas": [
+    454,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    494,
+    515
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    519,
+    527
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 22,
+   "lineas": [
+    534,
+    536
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 23,
+   "lineas": [
+    540,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 24,
+   "lineas": [
+    576,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 24,
+   "lineas": [
+    582,
+    610
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 24,
+   "lineas": [
+    616,
+    617
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 25,
+   "lineas": [
+    621,
+    641
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 26,
+   "lineas": [
+    650,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 27,
+   "lineas": [
+    683,
+    699
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 28,
+   "lineas": [
+    709,
+    722
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 28,
+   "lineas": [
+    729,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 29,
+   "lineas": [
+    734,
+    745
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 30,
+   "lineas": [
+    754,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 30,
+   "lineas": [
+    765,
+    771
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 31,
+   "lineas": [
+    780,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 31,
+   "lineas": [
+    791,
+    792
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 32,
+   "lineas": [
+    796,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 32,
+   "lineas": [
+    823,
+    824
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 33,
+   "lineas": [
+    830,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 34,
+   "lineas": [
+    843,
+    867
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b9"
+ ],
+ "notas_ingresos": [
+  "b27"
+ ],
+ "notas_gastos": [
+  "b28",
+  "b29",
+  "b31"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas y estados muestran '£' como encabezado de columna (ej. b11 '£', b31 '£ | £'), importes en libras completas (1,313,651).",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El PDF 'peterborough-full-accounts-2024-25-ixbrl.pdf' trae la cuenta de pérdidas y ganancias del ejercicio cerrado el 30-06-2025 (por ejemplo como imagen escaneada o sin texto extraíble)?",
-   "propuesta": "no",
+   "pregunta": "¿Se cargan de b27 solo el análisis de turnover y los honorarios de auditoría (operating profit/auditor) como desglose de gastos, dejando afuera filas no relacionadas?",
+   "propuesta": "sí",
    "tema": "otro",
-   "renglon": "",
-   "texto": "El índice de la transcripción tiene 0 bloques con cifras, así que no se pudo identificar ningún estado ni nota.",
-   "bloques": [],
-   "afecta_carga": true
+   "renglon": "Turnover",
+   "texto": "b27 (nota 3) mezcla desglose de turnover con otras notas hasta servicios de auditoría.",
+   "bloques": [
+    "b27"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se usa de b29 solo la parte de 'Interest income / Interest on bank deposits' y se ignora la remuneración del director mejor pago?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Interest receivable and similar income",
+   "texto": "b29 combina remuneración de directores con el inicio de la nota de ingresos financieros.",
+   "bloques": [
+    "b29"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "La transcripción no tiene ningún bloque con cifras. Puede ser que el documento no se haya transcripto bien (iXBRL o imagen) o que sea una versión abreviada sin cuenta de resultados. Hay que revisar el PDF original. La moneda GBP se supone por el país del club."
+ "observaciones": "Estado individual de Peterborough United Football Club Limited (b9), cifras en libras. b27 desglosa turnover; b28 gastos de personal; b29/b31 ingresos y gastos financieros y amounts written off investments. La conciliación impositiva de b31 no se carga."
 }

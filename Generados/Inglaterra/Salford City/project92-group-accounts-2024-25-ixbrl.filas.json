@@ -1,0 +1,259 @@
+{
+ "pdf": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "fe0e4b8bae20ad55e874c1a916c8aab3574b40ac",
+ "ubicacionSha1": "503e266543c9df40c335279ade91b1c74bcc837b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T14:45:04.399Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [
+   "b38"
+  ],
+  "notas_gastos": [
+   "b39",
+   "b41"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L206: columnas '£'"
+  },
+  {
+   "bloque": "b38",
+   "escala": "unidades",
+   "evidencia": "L605: '£'"
+  },
+  {
+   "bloque": "b39",
+   "escala": "unidades",
+   "evidencia": "L640/L659: '£'"
+  },
+  {
+   "bloque": "b41",
+   "escala": "unidades",
+   "evidencia": "L676: '£'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 207,
+   "etiqueta": "Turnover",
+   "actual": "4,386,721",
+   "anterior": "3,821,508",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 208,
+   "etiqueta": "Administrative expenses",
+   "actual": "(9,128,845)",
+   "anterior": "(9,203,171)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 209,
+   "etiqueta": "Other operating income",
+   "actual": "8,000",
+   "anterior": "8,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 210,
+   "etiqueta": "Exceptional item",
+   "actual": "31,502,048",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 211,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "26,767,924",
+   "anterior": "(5,373,663)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 212,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "10,552",
+   "anterior": "6,989",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 213,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(182,678)",
+   "anterior": "(195,594)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 214,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "824,387",
+   "anterior": "217,500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 215,
+   "etiqueta": "Profit/(loss) before taxation",
+   "actual": "27,420,185",
+   "anterior": "(5,344,768)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 216,
+   "etiqueta": "Tax on profit/(loss)",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 217,
+   "etiqueta": "Profit/(loss) for the financial year",
+   "actual": "27,420,185",
+   "anterior": "(5,344,768)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b38",
+   "linea": 607,
+   "etiqueta": "Matchday",
+   "actual": "1,033,949",
+   "anterior": "689,254",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 608,
+   "etiqueta": "Commercial",
+   "actual": "3,352,772",
+   "anterior": "3,132,254",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 609,
+   "etiqueta": "",
+   "actual": "4,386,721",
+   "anterior": "3,821,508",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b38",
+   "linea": 618,
+   "etiqueta": "Exceptional - Formal release of amounts payable to related parties",
+   "actual": "(31,502,048)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Exceptional item"
+  },
+  {
+   "bloque": "b41",
+   "linea": 687,
+   "etiqueta": "Interest on bank deposits",
+   "actual": "10,552",
+   "anterior": "6,989",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b41",
+   "linea": 691,
+   "etiqueta": "Interest on bank overdrafts and loans",
+   "actual": "182,678",
+   "anterior": "195,594",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b41",
+   "linea": 695,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "824,387",
+   "anterior": "217,500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit on disposal of players' registrations"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 217,
+  "actual": "27,420,185",
+  "anterior": "(5,344,768)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la partida excepcional de L210 como ingreso positivo de 31,502,048 aunque la nota 5 (L618) la muestre entre paréntesis bajo 'Expenditure'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Exceptional item",
+   "texto": "L618 muestra (31,502,048) bajo 'Expenditure' pero L620 dice que se acreditó a resultados, y el estado la suma al resultado operativo.",
+   "bloques": [
+    "b8",
+    "b38"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros de la nota 6 (L625-L628), honorarios de auditoría (L642-L644), remuneraciones (L660-L662) y directores (L677-L681) por ser información de cargos incluidos en 'Administrative expenses' sin desglose completo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "Son detalles parciales de gastos ya incluidos en Administrative expenses, no un desglose que lo sume.",
+   "bloques": [
+    "b38",
+    "b39",
+    "b41"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en libras (£). Sin totales impresos de ingresos ni gastos. 'Interest income' de L613 repite el renglón financiero y no se carga como ingreso operativo."
+}
