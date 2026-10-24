@@ -183,7 +183,7 @@ function estadoDeDocumentos(clubId, anios, cruza) {
     else if (hay.length) descartado.push(`${y} (${String(descartados.get(hay[0])).slice(0, 70)})`);
     else sin.push(y);
   }
-  return [enMano.length && `en mano: ${enMano.join(', ')}`, descartado.length && `descartado: ${descartado.join(', ')}`, sin.length && `sin documento: ${sin.join(', ')}`].filter(Boolean).join(' · ');
+  return [enMano.length && `en mano (hay un PDF con ese año en el nombre; mirá que traiga estados y no solo la memoria): ${enMano.join(', ')}`, descartado.length && `descartado: ${descartado.join(', ')}`, sin.length && `sin documento: ${sin.join(', ')}`].filter(Boolean).join(' · ');
 }
 
 function checkEjercicioSinRastro() {

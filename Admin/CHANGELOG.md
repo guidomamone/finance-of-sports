@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1074 — ejercicio-sin-rastro: «en mano» avisa que puede ser solo la memoria [audit-chequeos-5.js]
+
+- Ferro Carril Oeste 2024 salía «en mano» por el nombre de `memoria-ejercicio-120-2023-24.pdf`, pero esa memoria es narrativa y sin cifras (verificado en `Admin/sourcing/Argentina/Ferro Carril Oeste.md`; el silencio es correcto). El texto ahora pide mirar que el PDF traiga estados.
+- Medición: `audit` idéntico.
+
 ## Versión 1073 — medir-pipeline.mjs no se frena por un veredicto sin commitear [medir-pipeline.mjs, probar-medir-pipeline.mjs]
 
 - Un veredicto `RECHAZADA` de `patron` queda sin commitear en `auditoria-proceso.jsonl` y frenaba la medición siguiente («cambios sin commitear en datos o registros»). Ese archivo lo escriben `patron.mjs` y `decision.mjs`, no un medidor: sale de lo que la medición exige limpio (y de lo que revierte).
