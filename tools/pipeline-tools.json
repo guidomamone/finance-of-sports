@@ -153,6 +153,7 @@
   "reemplazar.mjs": "orden: reemplazos en varios archivos (el mismo texto, o una lista de cambios exactos por línea), con ensayo por defecto",
   "probar-patron.mjs": "prueba: patron.mjs en un repo de juguete",
   "probar-todo-contexto.mjs": "prueba: el contexto de un punto de todo.mjs en un repo de juguete",
+  "cierre-sin-fecha.mjs": "orden: los anuales sin fecha de cierre en el registro y cuáles frenan una carga (solo lee el registro)",
   "probar-registros.mjs": "prueba: el esquema de los registros de decisión (registro-esquema.js, cola-respuesta.mjs, cola --responder, decision.mjs) en archivos de juguete",
   "probar-eslint.mjs": "prueba: las reglas de tools/eslint.config.mjs (cada una encuentra su defecto en un archivo de juguete, uno limpio no da nada)",
   "votacion-nueva.mjs": "orden: arma el archivo del caso de una votación de criterios desde una plantilla (escribe un .md en Admin/mediciones/ solo con --escribir)",

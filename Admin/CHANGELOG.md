@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1056 — cierre-sin-fecha cuenta solo los que frenan, con fos cierre-sin-fecha [444 · cierre-sin-fecha.mjs, audit-chequeos-5.js]
+
+- `fos cierre-sin-fecha` separa los anuales con .md sin cierre en el registro (457; 283 de clubes con algo cargado) entre los 92 que la regla de los vecinos deduce al cargar (98,2 % de aciertos dejando afuera cada anual con cierre) y los 191 que frenan o piden un ajuste `cierre` (Brasil 39, España 31, Argentina 30, Colombia 27, Rusia 25…). El P3 `cierre-sin-fecha` de `audit.js` ahora cuenta esos 191, no los 285 de antes.
+- Medido y descartado: un escalón por el año del nombre (81,5 % de aciertos) y una regla del club «todos los demás cierran igual» (78,8 %); ninguno llega al 98 %. Un cierre por defecto por país (Brasil 98 %, Rusia 98 %, Noruega 100 %; España y Países Bajos 100 % el 30-06) es un criterio de datos y pide votación: queda en el 444.
+- Medición: `medir pipeline` (audit): `cierre-sin-fecha` cambia de mensaje, explicado. Veredicto de infraestructura. Sin revisión independiente.
+
 ## Versión 1055 — 449: revisores agrupados de la cola probados (con gasto) y el reintento único mantenido [449 · 450]
 
 - `Admin/mediciones/449-revisores-agrupados.md` y `Admin/BRIEF-REVISOR-COLA.md`: un subagente Sonnet por documento, con brief fijo y respuesta en JSON, cuesta unos 10 mil tokens por pregunta (75 a 81 mil por 7 u 8; 18 a 33 s) contra 72 mil por pregunta con uno por pregunta, y coincidió con el individual en las 6 comunes y con el histórico en 19 de 23. Gasto de la prueba: unos 667 mil tokens (9 subagentes).
