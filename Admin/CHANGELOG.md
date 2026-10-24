@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1055 — 449: revisores agrupados de la cola probados (con gasto) y el reintento único mantenido [449 · 450]
+
+- `Admin/mediciones/449-revisores-agrupados.md` y `Admin/BRIEF-REVISOR-COLA.md`: un subagente Sonnet por documento, con brief fijo y respuesta en JSON, cuesta unos 10 mil tokens por pregunta (75 a 81 mil por 7 u 8; 18 a 33 s) contra 72 mil por pregunta con uno por pregunta, y coincidió con el individual en las 6 comunes y con el histórico en 19 de 23. Gasto de la prueba: unos 667 mil tokens (9 subagentes).
+- Las 4 respuestas que difieren (Sampdoria 2018 y Leeds 2019-20) pasan al punto 450. El reintento único del lote 143 (US$ 0,12 por documento, nota de personal en 12 de 13) se mantiene; no hubo gasto de API nuevo.
+- Verificado a mano (449): Admin/mediciones/449-revisores-agrupados.md: 3 revisores agrupados (23 preguntas) y 6 individuales contra el historico, y el reintento unico del lote 143; brief en Admin/BRIEF-REVISOR-COLA.md; lo que difiere pasa al 450
+- Medición: sin cambios a ninguna tool; subagentes y lectura de `cola-revision.jsonl`.
+
 ## Versión 1054 — 437: las tools que escriben los registros de decisión cumplen su esquema, y audit.js avisa si una línea no [437 · registro-esquema.js, cola-respuesta.mjs, cola.mjs, patron.mjs, decision.mjs, silenciar.mjs, votacion-contar.mjs, audit.js, audit-chequeos-5.js, periodo.mjs, probar-registros.mjs, probar-patron.mjs, probar-medir-pipeline.mjs]
 
 - `esquemas-registros.json` (clave `validacion`) y `registro-esquema.js`: `patron`, `decision` (nuevo `--resultado`), `silenciar` y `votacion-contar` arman la línea de `auditoria-proceso.jsonl` con `esquema: 1` y no la escriben si no cumple. `cola --responder` acepta `--evidencia "ruta.md:12-30"`, `--seguridad` y `--causa` (`cola-respuesta.mjs`): con alguna, cumple o no se guarda; sin ninguna sigue igual y avisa. P3 `registro-fuera-de-esquema`: una línea con `esquema` que no cumple, o desde el 2026-10-25 una que debía llevarlo.

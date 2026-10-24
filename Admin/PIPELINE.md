@@ -18,7 +18,7 @@ caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar    
 caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar --cargar   # además escribe lo que queda listo (altas, cargas, commits)
 caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar --reintentar   # camino de error (ver abajo)
 node tools/cola.mjs                                                         # la cola humana
-node tools/cola.mjs --lista Admin/lotes/lote-NN.txt                          # solo los casos de ese lote
+node tools/cola.mjs --lista Admin/lotes/lote-NN.txt                          # solo los casos de ese lote (los contesta un subagente por documento: Admin/BRIEF-REVISOR-COLA.md)
 node tools/estado.mjs                                                       # el tablero: cada PDF en su etapa y escalón (gratis)
 node tools/inventario-transcripciones.mjs                                   # el registro, con la etapa de cada estado (gratis)
 node tools/inventario-transcripciones.mjs --solo <lista|carpeta>          # solo esos PDFs (~1 s); lo usan pipeline.mjs --lista/--dir y lote.mjs

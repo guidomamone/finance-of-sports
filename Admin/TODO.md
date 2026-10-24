@@ -163,14 +163,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 16. 449 · (Pipeline, con Guido): la cola de revisión: revisores que miran varias preguntas juntas y el reintento único (necesitan gasto de API o de subagentes)
-
-Viene del 441 (medición en `Admin/mediciones/441-cola-evitables.md`: ninguna compuerta simple llega al 98 % de aciertos; lo que se cierra solo se cierra antes de que alguien lo lea; la ventana de 5 años del perfil ya existe). Quedan dos ideas que solo se miden gastando: (1) un revisor que mire todas las preguntas de UN club o de UN tipo juntas, con la lista fija de qué abrir y el voto en JSON de `fos votacion nueva` (el 438), en vez de un subagente por pregunta: se compara tokens por pregunta y respuestas distintas contra la cola histórica en una muestra de 20 a 30 preguntas ya contestadas (80 a 130 mil tokens por revisor en el lote 143; unos 250 mil la muestra); (2) el reintento único del lote 143 costó US$ 1,59 para 13 documentos y dejó 43 preguntas nuevas: evaluar si se justifica en un estado de resultados por función, donde el personal queda en 0 y se completa después con `caja-deuda --personal`. Decide Guido el gasto (subagentes o API) antes de medir.
-Terminado cuando: hay una muestra medida de (1) y (2) con tokens por pregunta y respuestas que cambian, y lo que pasa queda implementado o descartado con el número.
-
-Verificar: manual
-
-### 17. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 16. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -187,7 +180,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 18. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 17. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -220,6 +213,13 @@ Amateur Division: Lokeren-Temse 2021-2022, Patro Eisden 2013-2014 y 2019) y la F
 de lote.mjs lista como frenados los originales que salteó por su -correction. El detalle de s a v, con líneas y montos, en
 `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
 `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
+
+Verificar: manual
+
+### 18. 450 · (Auditora, con Onboarding): 4 respuestas de la cola donde el revisor agrupado discrepa del histórico (Sampdoria 2018 y Leeds 2019-20): ¿se carga el detalle?
+
+Viene del 449 (`Admin/mediciones/449-revisores-agrupados.md`). En la prueba de los revisores agrupados, 4 de 23 respuestas dieron «corregir no» donde la cola histórica tenía «aceptar» (dejar afuera el cuadro): Sampdoria 2018 `9414130` (imposte, cuadro b63, L2622-2631, suma 6.969.234 = 19.022.174 − 12.052.939) y `2f9021a` (interessi passivi, cuadro b62, L2604-2608, total 2.728 = el renglón 2.728.204 de la L1051); Leeds 2019-20 `776c847` y `73f981d` (nota 4 Turnover, L790-802, 7 fuentes que suman 54.183.980 = el Turnover del estado; otra pregunta del mismo documento, `27baa05`, ya se había corregido «sí»). La regla actual (un renglón que el documento abre en un cuadro que suma exacto se carga con ese detalle, `cuadro-sobrante.mjs`) le da la razón al revisor, pero la respuesta histórica sigue en la cola y los datos publicados no cambiaron. Falta, por caso: abrir el `.md` y el estado, confirmar que el cuadro suma lo que dice el revisor; si es así, contestar en la cola con `--evidencia`/`--seguridad`/`--causa` (la respuesta nueva pisa a la vieja) y rehacer el ejercicio si ya está cargado (Sampdoria 2018 sí lo está; Leeds 2019-20 es del lote 143, sin cargar). Si cambia un dato publicado: `publicar.mjs` y el trailer `Corrige:`.
+Terminado cuando: las 4 preguntas tienen una respuesta con evidencia verificada y el ejercicio de Sampdoria 2018 refleja el detalle de imposte e interessi si el cuadro suma.
 
 Verificar: manual
 
