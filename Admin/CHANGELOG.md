@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1034 — xhtml-aarsrapport: las celdas por coordenadas también en em (SønderjyskE 2025) [413 · xhtml-aarsrapport.mjs]
+
+- Los informes que maqueta ParsePort (AGF, AaB, FC København PSE, SønderjyskE) dan `top`/`left` en `em`; el conversor solo reconocía `pt` y `px`, así que el estado de resultados salía con una cifra por línea, sin tabla, y localizar contestaba «sin estado de resultados». Ahora `posicionAbs` acepta `em` (1 em = 16 px) y, como esas páginas no traen contenedor con altura, una celda mucho más arriba que las ya juntas abre página nueva. SønderjyskE 2025: «| Nettoomsætning | 66.288.538 | 55.909.616 |».
+- Medición: `medir pipeline` (medidor xhtml, todos los .xhtml de Clubes/): 12 documentos cambian, los 12 de em (AGF 4, AaB 3, København PSE 4, SønderjyskE 2025: líneas de 5343 a 2493 en AGF 2022, páginas ubicadas 98 % o más como antes); el resto, idéntico. Veredicto general (patrón: una cifra suelta por línea, 270 documentos de 82 clubes; el conjunto realmente afectado son esos 12). Los .md ya convertidos de los otros 11 no se rehicieron.
+
 ## Versión 1033 — costo-personal: la unidad del rótulo manda y la cifra exacta de la nota reemplaza a la redondeada [422 · costo-personal.mjs]
 
 - Tres cambios en `costo-personal.mjs`: (1) `escalaDeRotulo`: la unidad entre paréntesis del rótulo de la fila («Total staff costs (£m)») manda sobre la del encabezado y la del documento; (2) `cifrasSeparadas`: «Staff costs 154,754 139,064» (dos importes pegados por el espacio) se lee como dos cifras, solo en las filas de personal; (3) `afinada`: si Jev elige la cifra redondeada de un cuadro de indicadores en £m y el documento tiene la fila de la nota «Staff costs» dentro del redondeo (±0,05 M o 1 %), se usa la exacta. Probé arreglarlo en `filasDelMd` (caja-deuda-md.mjs) y lo descarté: cambiaba caja y deuda en 4 casos (fckobenhavn 2024, wolves 2025, flamengo 2025, santos 2024). Lo de la nota de una filial queda en el 15 % de ingresos que ya existe.

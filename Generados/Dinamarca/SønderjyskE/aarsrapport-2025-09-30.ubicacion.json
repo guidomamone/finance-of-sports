@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.pdf",
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.md",
+ "mdSha1": "bde126c0543ffb704dd8f097210e641710b03e32",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T06:29:00.995Z",
+ "perimetroClub": null,
+ "bloques": {},
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "DKK",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF 'aarsrapport-2025-09-30.pdf' de Sønderjyske Fodbold A/S tiene en realidad una resultatopgørelse del ejercicio cerrado el 2025-09-30 que la transcripción no capturó (por ejemplo, páginas escaneadas como imagen)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice llegó con 0 bloques con cifras, cosa rara en un årsrapport; puede ser una falla de transcripción y no que falte el estado.",
+   "bloques": [],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El índice no contiene ningún bloque con cifras, así que no hay estado de resultados identificable para el ejercicio cerrado el 2025-09-30. Se marca sin_estado, pero conviene verificar si el PDF está escaneado y debe re-procesarse con OCR."
+}

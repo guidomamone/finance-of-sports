@@ -92,7 +92,9 @@ function leerXhtml(src, capas) {
       const top = pila.pop(); const eraOc = !!(top && top.oc); if (eraOc) oculto--;
       if (top && top.hecho) { const h = top.hecho; h.txt = h.txt.replace(/\s+/g, ' ').trim(); hechos.push(h); hecho = null; }
       if (oculto) continue;
-      if (top && top.abs) { if (celdaAbs) { const txt = celdaAbs.txt.replace(/\s+/g, ' ').replace(/\|/g, '/').trim(); if (txt) celdasPend.push({ top: celdaAbs.top, left: celdaAbs.left, ancho: celdaAbs.ancho, txt }); celdaAbs = null; } continue; }
+      if (top && top.abs) { if (celdaAbs) { const txt = celdaAbs.txt.replace(/\s+/g, ' ').replace(/\|/g, '/').trim(); if (txt) { // en em (ParsePort) las páginas no traen contenedor con altura: una celda mucho más arriba que las ya juntas es la primera de una página nueva
+          if (celdaAbs.em && celdasPend.length && celdaAbs.top < Math.max(...celdasPend.map((x) => x.top)) - 160) volcarCeldas();
+          celdasPend.push({ top: celdaAbs.top, left: celdaAbs.left, ancho: celdaAbs.ancho, txt }); } celdaAbs = null; } continue; }
       if ((n === 'tr' || n === 'td' || n === 'th') && pt[pt.length - 1] && !eraOc) { volcar(); }
       else if (n === 'table' && pt[pt.length - 1] && !eraOc) { pt.pop(); volcar(); }
       else if (n === 'td' || n === 'th') celdaFin();
@@ -104,8 +106,13 @@ function leerXhtml(src, capas) {
   volcar(); volcarCeldas();
   return { lineas, hechos };
 }
-// `top` y `left` de un estilo en pt o px (null si falta alguno)
-const posicionAbs = (estilo) => { const t = estilo.match(/(?:^|;)\s*top:\s*(-?[\d.]+)(?:pt|px)/); const l = estilo.match(/(?:^|;)\s*left:\s*(-?[\d.]+)(?:pt|px)/); const w = estilo.match(/(?:^|;)\s*width:\s*([\d.]+)(?:pt|px)/); return t && l ? { top: +t[1], left: +l[1], ancho: w ? +w[1] : null } : null; };
+// `top` y `left` de un estilo en pt, px o em (null si falta alguno). Los informes que maqueta ParsePort (SønderjyskE, Hvidovre…) dan las posiciones en em: se pasan a px (1 em = 16 px) para que
+// la tolerancia de 2 de lineasDeCeldas siga siendo la de siempre (las filas de un cuadro están a más de 1 em una de otra y las celdas de una fila comparten el mismo `top`).
+const posicionAbs = (estilo) => {
+  const pos = (k) => { const m = estilo.match(new RegExp(`(?:^|;)\\s*${k}:\\s*(-?[\\d.]+)(pt|px|em)`)); return m ? +m[1] * (m[2] === 'em' ? 16 : 1) : null; };
+  const t = pos('top'); const l = pos('left'); const w = estilo.match(/(?:^|;)\s*width:\s*([\d.]+)(?:pt|px)/);
+  return t != null && l != null ? { top: t, left: l, ancho: w ? +w[1] : null, em: /(?:^|;)\s*top:\s*-?[\d.]+em/.test(estilo) } : null;
+};
 // Las celdas de una página -> líneas: una fila por `top` (hasta 2 de diferencia con la celda anterior), ordenada por `left`. Una fila de 2 o más celdas es fila de tabla; una de una sola
 // celda es texto, salvo que esté entre filas de tabla (un título de sección dentro del cuadro). Cada tabla lleva su separador después de la primera fila, como las demás.
 export function lineasDeCeldas(celdas) {

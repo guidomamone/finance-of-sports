@@ -8,33 +8,26 @@ Stadionvej 4
 Cvr. nr. 31 58 81 11
 ÅRSRAPPORT
 1. OKTOBER 2024 - 30. SEPTEMBER 2025
-Godkendt på generalforsamlingen d.
+| Godkendt på generalforsamlingen d. | / | 20 |
+| --- | --- | --- |
+
 Dirigent
-/
-20
 
 --- pág. 2 ---
 
 INDHOLDSFORTEGNELSE
 Side
-1
-Ledelsespåtegning
-Den uafhængige revisors erklæringer
-Hoved- og nøgletal
-Ledelsesberetning
-2 - 3
-4
-5 - 6
-7 - 11
-12
-Regnskabspraksis
-Resultatopgørelse
-Balance
-13 - 14
-15
-Egenkapitalopgørelse
-Noter til årsrapporten
-16 – 20
+| Ledelsespåtegning | 1 |
+| --- | --- |
+| Den uafhængige revisors erklæringer | 2 - 3 |
+| Hoved- og nøgletal | 4 |
+| Ledelsesberetning | 5 - 6 |
+| Regnskabspraksis | 7 - 11 |
+| Resultatopgørelse | 12 |
+| Balance | 13 - 14 |
+| Egenkapitalopgørelse | 15 |
+| Noter til årsrapporten | 16 – 20 |
+
 1
 LEDELSESPÅTEGNING
 
@@ -52,11 +45,11 @@ Hedensted, den 22. december 2025
 Direktion
 Markus Kristoffer Hansen
 Bestyrelse
-Søren Peder Dalager Davidsen
-Thorsten Kammer Simonsen
+| Søren Peder Dalager Davidsen | Kasper Stjernegaard Larsen |
+| --- | --- |
+| Thorsten Kammer Simonsen | Claus Friis Dall |
+
 Jan Gerber
-Kasper Stjernegaard Larsen
-Claus Friis Dall
 2
 
 --- pág. 4 ---
@@ -68,8 +61,9 @@ Vi har revideret årsregnskabet for Sønderjyske Fodbold A/S for regnskabsåret 
 30. september 2025, der omfatter resultatopgørelse, balance, egenkapitalopgørelse og noter,
 herunder anvendt regnskabspraksis. Årsregnskabet udarbejdes efter årsregnskabsloven. Det er
 vores opfattelse, at årsregnskabet giver et retvisende billede af selskabets aktiver, passiver og
-finansielle stilling pr. 30.
-september 2025 samt af resultatet af selskabets aktiviteter for
+| finansielle stilling pr. 30. | september 2025 samt af resultatet af selskabets aktiviteter for |
+| --- | --- |
+
 regnskabsåret 1. oktober 2024 – 30. september 2025 i overensstemmelse med årsregnskabsloven.
 Grundlag for konklusion
 Vi har udført vores revision i overensstemmelse med internationale standarder om revision og de
@@ -147,13 +141,13 @@ fundet væsentlig fejlinformation i ledelsesberetningen.
 Skjern, den 22. december 2025
 Martinsen Statsautoriseret Revisionspartnerselskab
 CVR-nr. 32 28 52 01
-4
+| 4 | 5 |
+| --- | --- |
 
 --- pág. 6 ---
 
 Kim Rune Brarup, mne10734
 statsautoriseret revisor
-5
 
 --- pág. 7 ---
 
@@ -323,10 +317,10 @@ Kostpris omfatter anskaffelsesprisen samt omkostninger direkte tilknyttet anskaf
 tidspunkt, hvor aktivet er klar til at blive taget i brug.
 Afskrivningsgrundlaget, som opgøres som kostpris reduceret med eventuel restværdi, fordeles
 lineært over aktivernes forventede brugstid, der udgør:
-Kontraktrettigheder
-Scrapværdier
-2-5 år
-0%
+| Kontraktrettigheder | 2-5 år |
+| --- | --- |
+| Scrapværdier | 0% |
+
 Fortjeneste eller tab ved afhændelse af immaterielle anlægsaktiver opgøres som forskellen mellem
 salgspris med fradrag af salgsomkostninger og den regnskabsmæssige værdi på salgstidspunktet.
 Fortjeneste eller tab indregnes i resultatopgørelsen under andre driftsindtægter eller andre
@@ -344,12 +338,11 @@ Balance (fortsat)
 Materielle anlægsaktiver (fortsat)
 Afskrivningsgrundlaget, som opgøres som kostpris reduceret med eventuel restværdi, fordeles
 lineært over aktivernes forventede brugstid, der udgør:
-Andre anlæg, driftsmateriel og inventar
-Indretning lejede lokaler
-Scrapværdier
-3-5 år
-5-10 år
-0%
+| Andre anlæg, driftsmateriel og inventar | 3-5 år |
+| --- | --- |
+| Indretning lejede lokaler | 5-10 år |
+| Scrapværdier | 0% |
+
 Fortjeneste eller tab ved afhændelse af materielle anlægsaktiver opgøres som forskellen mellem
 salgspris med fradrag af salgsomkostninger og den regnskabsmæssige værdi på salgstidspunktet.
 Fortjeneste eller tab indregnes i resultatopgørelsen under andre driftsindtægter eller andre
@@ -402,289 +395,132 @@ Pengestrømsopgørelse
 Med henvisning til årsregnskabsloven § 86 stk. 4 er det valgt ikke at udarbejde
 pengestrømsopgørelse, da moderselskabet udarbejder pengestrømsopgørelse for koncernen.
 Forklaring af nøgletal
-Resultat
-førfinansielleposterx100
-Afkastningsgrad
-=
-=
-=
+| Resultat | førfinansielleposterx100 |
+| --- | --- |
+| Afkastningsgrad | = |
+
 Samledeaktiver
 Egenkapitalultimox100
+| Egenkapitalandel | = |
+| --- | --- |
+
 Samledeaktiver
-Egenkapitalandel
 Årets resultatx100
-Forrentning af egenkapital
+| Forrentning af egenkapital | = |
+| --- | --- |
+
 Gennemsnitligegenkapital
 4
 
 --- pág. 14 ---
 
 Hoved- og nøgletal
-2024/25
-2023/24
-2022/23
-2021/22
-2020/21
-DKK '000
-DKK '000
-DKK '000
-DKK '000
-DKK '000
+| 2024/25 | 2023/24 | 2022/23 | 2021/22 | 2020/21 |
+| --- | --- | --- | --- | --- |
+| DKK '000 | DKK '000 | DKK '000 | DKK '000 | DKK '000 |
+
 15 mdr.
 Resultatopgørelse
-Bruttofortjeneste
-Resultat før finansielle poster
-Finansielle poster, netto
-Årets resultat
-35.689
--14.815
--414
-35.302
--5.654
--847
-41.600
--14.400
--799
-21.465
--31.460
--523
-50.019
-8.202
--360
--11.467
--4.754
--11.066
--31.983
-2.678
-Balance
-Balancesum
-53.848
-48.525
-31.402
-23.162
-43.414
-Investeringer i immaterielle og
-materielle anlæg
-Egenkapital
-9.038
-4.319
-6.869
-15.786
-4.870
-2.540
-4.719
--23.494
-6.299
-8.489
-Nøgletal i %
-Afkastningsgrad
-Egenkapitalandel
-Forrentning af egenkapital
--27,5%
-8,0%
--114,1%
--11,7%
-32,5%
--51,9%
--45,9%
-8,1%
--
--135,8%
-18,9%
-19,6%
--
--
--
+| Bruttofortjeneste | 35.689 | 35.302 | 41.600 | 21.465 | 50.019 |
+| --- | --- | --- | --- | --- | --- |
+| Resultat før finansielle poster | -14.815 | -5.654 | -14.400 | -31.460 | 8.202 |
+| Finansielle poster, netto | -414 | -847 | -799 | -523 | -360 |
+| Årets resultat | -11.467 | -4.754 | -11.066 | -31.983 | 2.678 |
+| Balance |  |  |  |  |  |
+| Balancesum | 53.848 | 48.525 | 31.402 | 23.162 | 43.414 |
+| Investeringer i immaterielle og |  |  |  |  |  |
+| materielle anlæg | 9.038 | 6.869 | 4.870 | 4.719 | 6.299 |
+| Egenkapital | 4.319 | 15.786 | 2.540 | -23.494 | 8.489 |
+| Nøgletal i % |  |  |  |  |  |
+| Afkastningsgrad | -27,5% | -11,7% | -45,9% | -135,8% | 18,9% |
+| Egenkapitalandel | 8,0% | 32,5% | 8,1% | - | 19,6% |
+| Forrentning af egenkapital | -114,1% | -51,9% | - | - | - |
+
 12
 
 --- pág. 15 ---
 
 Resultatopgørelse 1. oktober - 30. september
-Note
-2024/25
-2023/24
-Nettoomsætning
-66.288.538
-55.909.616
-Andre driftsindtægter
-Vareforbrug
-Andre eksterne omkostninger
-116.122
-2.032.057
-28.683.802
-2.642.800
-1.722.417
-21.527.721
-Bruttofortjeneste
-35.688.801
-35.302.278
-Personaleomkostninger
-Af- og nedskrivninger
-Andre driftsomkostninger
-1
-2
-46.382.375
-3.806.681
-314.752
-38.888.188
-2.067.896
-0
-Resultat før finansielle poster
--14.815.007
--5.653.806
-Finansielle indtægter
-Finansielle omkostninger
-532.637
-947.044
-10.526
-857.081
-3
-4
-Resultat før skat
--15.229.414
--6.500.361
-Skat af årets resultat
--3.762.243
--1.746.248
-Årets resultat
--11.467.171
--4.754.113
+| Note | 2024/25 | 2023/24 |  |
+| --- | --- | --- | --- |
+| Nettoomsætning | 66.288.538 | 55.909.616 |  |
+| Andre driftsindtægter | 116.122 | 2.642.800 |  |
+| Vareforbrug | 2.032.057 | 1.722.417 |  |
+| Andre eksterne omkostninger | 28.683.802 | 21.527.721 |  |
+| Bruttofortjeneste | 35.688.801 | 35.302.278 |  |
+| Personaleomkostninger | 1 | 46.382.375 | 38.888.188 |
+| Af- og nedskrivninger | 2 | 3.806.681 | 2.067.896 |
+| Andre driftsomkostninger | 314.752 | 0 |  |
+| Resultat før finansielle poster | -14.815.007 | -5.653.806 |  |
+| Finansielle indtægter | 532.637 | 10.526 |  |
+| Finansielle omkostninger | 3 | 947.044 | 857.081 |
+| Resultat før skat | -15.229.414 | -6.500.361 |  |
+| Skat af årets resultat | 4 | -3.762.243 | -1.746.248 |
+| Årets resultat | -11.467.171 | -4.754.113 |  |
+
 13
 
 --- pág. 16 ---
 
 Balance 30. september
 Aktiver
-Note
-5
-2025
-2024
-Kontraktrettigheder
-10.779.769
-5.157.401
-Immaterielle anlægsaktiver
-10.779.769
-5.157.401
-Indretning lejede lokaler
-Andre anlæg, driftsmateriel og inventar
-3.285.083
-519.386
-3.756.804
-753.414
-Materielle anlægsaktiver
-6
-7
-3.804.469
-4.510.218
-Andre tilgodehavender
-Værdipapirer
-5.759.580
-41.667
-15.923.544
-41.667
-Finansielle anlægsaktiver
-5.801.247
-15.965.211
-Anlægsaktiver
-20.385.485
-25.632.830
-Tilgodehavender fra salg
-Tilgodehavender hos tilknyttede virksomheder
-Andre tilgodehavender
-Selskabsskat
-Periodeafgrænsningsposter
-15.594.449
-1.690.625
-5.066.384
-5.508.491
-556.315
-15.160.148
-0
-145.682
-5.879.239
-0
-Tilgodehavender
-Likvide beholdninger
-Omsætningsaktiver
-Aktiver i alt
-28.416.264
-5.046.535
-33.462.799
-53.848.284
-21.185.069
-1.706.854
-22.891.923
-48.524.753
+| Note | 2025 | 2024 |  |
+| --- | --- | --- | --- |
+| Kontraktrettigheder | 10.779.769 | 5.157.401 |  |
+| Immaterielle anlægsaktiver | 5 | 10.779.769 | 5.157.401 |
+| Indretning lejede lokaler | 3.285.083 | 3.756.804 |  |
+| Andre anlæg, driftsmateriel og inventar | 519.386 | 753.414 |  |
+| Materielle anlægsaktiver | 6 | 3.804.469 | 4.510.218 |
+| Andre tilgodehavender | 5.759.580 | 15.923.544 |  |
+| Værdipapirer | 7 | 41.667 | 41.667 |
+| Finansielle anlægsaktiver | 5.801.247 | 15.965.211 |  |
+| Anlægsaktiver | 20.385.485 | 25.632.830 |  |
+| Tilgodehavender fra salg | 15.594.449 | 15.160.148 |  |
+| Tilgodehavender hos tilknyttede virksomheder | 1.690.625 | 0 |  |
+| Andre tilgodehavender | 5.066.384 | 145.682 |  |
+| Selskabsskat | 5.508.491 | 5.879.239 |  |
+| Periodeafgrænsningsposter | 556.315 | 0 |  |
+| Tilgodehavender | 28.416.264 | 21.185.069 |  |
+| Likvide beholdninger | 5.046.535 | 1.706.854 |  |
+| Omsætningsaktiver | 33.462.799 | 22.891.923 |  |
+| Aktiver i alt | 53.848.284 | 48.524.753 |  |
+
 14
 Balance 30. september
 
 --- pág. 17 ---
 
 Passiver
-Note
-2025
-2024
-Aktiekapital
-Overført resultat
-1.000.000
-3.319.186
-1.000.000
-14.786.357
-Egenkapital
-4.319.186
-15.786.357
-Leverandører af varer og tjenesteydelser
-Gæld til tilknyttede virksomheder
-Anden gæld
-1.892.591
-31.827.727
-6.436.621
-9.372.159
-1.985.696
-16.715.618
-3.523.910
-10.513.172
-Periodeafgrænsningsposter
-Kortfristede gældsforpligtelser
-49.529.098
-49.529.098
-53.848.284
-32.738.396
-32.738.396
-48.524.753
-Gæld
-Passiver i alt
-Oplysning om eventualforpligtelser
-Nærtstående parter og ejerskab
-Koncernforhold
-12
-13
-14
+| Note | 2025 | 2024 |
+| --- | --- | --- |
+| Aktiekapital | 1.000.000 | 1.000.000 |
+| Overført resultat | 3.319.186 | 14.786.357 |
+| Egenkapital | 4.319.186 | 15.786.357 |
+| Leverandører af varer og tjenesteydelser | 1.892.591 | 1.985.696 |
+| Gæld til tilknyttede virksomheder | 31.827.727 | 16.715.618 |
+| Anden gæld | 6.436.621 | 3.523.910 |
+| Periodeafgrænsningsposter | 9.372.159 | 10.513.172 |
+| Kortfristede gældsforpligtelser | 49.529.098 | 32.738.396 |
+| Gæld | 49.529.098 | 32.738.396 |
+| Passiver i alt | 53.848.284 | 48.524.753 |
+| Oplysning om eventualforpligtelser | 12 |  |
+| Nærtstående parter og ejerskab | 13 |  |
+| Koncernforhold | 14 |  |
+
 15
 
 --- pág. 18 ---
 
 Egenkapitalopgørelse 1. oktober 2024 - 30. september 2025
-Selskabs-
-kapital
-Overført
-resultat
-I alt
-Egenkapital 1. oktober
-Tilskud fra aktionærerne
-Årets resultat
-1.000.000
-14.786.357
-0
--11.467.171
-15.786.357
-0
--11.467.171
-Egenkapital
-30. september
-1.000.000
-3.319.186
-4.319.186
+| Selskabs- | Overført |  |  |
+| --- | --- | --- | --- |
+| kapital | resultat | I alt |  |
+| Egenkapital 1. oktober | 1.000.000 | 14.786.357 | 15.786.357 |
+| Tilskud fra aktionærerne | 0 | 0 |  |
+| Årets resultat | -11.467.171 | -11.467.171 |  |
+| Egenkapital |  |  |  |
+| 30. september | 1.000.000 | 3.319.186 | 4.319.186 |
+
 Aktiekapitalen består af 10.000 aktier á nominelt DKK 100. Ingen aktier er tillagt særlige
 rettigheder.
 16
@@ -692,194 +528,109 @@ rettigheder.
 --- pág. 19 ---
 
 Noter til årsrapporten
-2024/25
-2023/24
-1
-Personaleomkostninger
-Løn og gager
-Pensionsbidrag
-Andre omkostninger til social sikring
-43.991.746
-1.633.184
-757.445
-36.964.126
-1.252.567
-671.495
-46.382.375
-38.888.188
+| 2024/25 | 2023/24 |  |
+| --- | --- | --- |
+| 1 | Personaleomkostninger |  |
+| Løn og gager | 43.991.746 | 36.964.126 |
+| Pensionsbidrag | 1.633.184 | 1.252.567 |
+| Andre omkostninger til social sikring | 757.445 | 671.495 |
+| 46.382.375 | 38.888.188 |  |
+
 Gennemsnitligt antal beskæftigede medarbejdere udgør 73 medarbejdere for 2024/25 og 70
 medarbejdere for 2023/24.
 Med henvisning til ÅRL § 98 b stk. 3 vises ledelsens vederlag ikke, da det kun består af
 vederlag til én person.
-2
-Af- og nedskrivninger
-Kontraktsrettigheder
-Indretning lejede lokaler
-Andre anlæg, driftsmateriel og inventar
-3.100.932
-471.721
-234.028
-1.669.092
-227.060
-171.744
-3.806.681
-2.067.896
-3
-4
-Finansielle omkostninger
-Renter mellemregning tilknyttede virksomheder
-Andre finansielle omkostninger
-942.000
-5.044
-846.200
-10.881
-947.044
-857.081
-Skat af årets resultat
-Årets aktuelle skat
--3.762.243
--1.746.248
-Årets skat i alt
--3.762.243
--1.746.248
+| 2 | Af- og nedskrivninger |  |
+| --- | --- | --- |
+| Kontraktsrettigheder | 3.100.932 | 1.669.092 |
+| Indretning lejede lokaler | 471.721 | 227.060 |
+| Andre anlæg, driftsmateriel og inventar | 234.028 | 171.744 |
+| 3.806.681 | 2.067.896 |  |
+| 3 | Finansielle omkostninger |  |
+| Renter mellemregning tilknyttede virksomheder | 942.000 | 846.200 |
+| Andre finansielle omkostninger | 5.044 | 10.881 |
+| 947.044 | 857.081 |  |
+| 4 | Skat af årets resultat |  |
+| Årets aktuelle skat | -3.762.243 | -1.746.248 |
+| Årets skat i alt | -3.762.243 | -1.746.248 |
+
 17
 Noter til årsrapporten
-5
 
 --- pág. 20 ---
 
-Immaterielle anlægsaktiver
+| 5 | Immaterielle anlægsaktiver |
+| --- | --- |
+
 Kontrakt-
 rettigheder
-Kostpris 1. oktober
-Årets tilgang
-Årets afgang
-7.993.466
-9.038.052
-1.523.094
-Kostpris 30. september
-15.508.424
-Af- og nedskrivninger 1. oktober
-Årets af- og nedskrivninger
-Tilbageførte afskrivninger på årets afgang
-2.836.065
-3.100.932
-1.208.342
-Af- og nedskrivninger 30. september
-4.728.655
-Regnskabsmæssig værdi 30. september
-10.779.769
-6
-Materielle anlægsaktiver
-Andre anlæg,
-driftsmateriel
-og inventar
-Indretning
-lejede lokaler
-Kostpris 1. oktober
-Årets tilgang
-Årets afgang
-4.209.106
-4.667.011
-0
-0
-0
-0
-Kostpris 30. september
-4.209.106
-4.667.011
-Af- og nedskrivninger 1. oktober
-Årets af- og nedskrivninger
-Tilbageførte afskrivninger på årets afgang
-3.455.692
-234.028
-0
-910.207
-471.721
-0
-Af- og nedskrivninger 30. september
-3.689.720
-1.381.928
-Regnskabsmæssig værdi 30. september
-519.386
-3.285.083
+| Kostpris 1. oktober | 7.993.466 |  |
+| --- | --- | --- |
+| Årets tilgang | 9.038.052 |  |
+| Årets afgang | 1.523.094 |  |
+| Kostpris 30. september | 15.508.424 |  |
+| Af- og nedskrivninger 1. oktober | 2.836.065 |  |
+| Årets af- og nedskrivninger | 3.100.932 |  |
+| Tilbageførte afskrivninger på årets afgang | 1.208.342 |  |
+| Af- og nedskrivninger 30. september | 4.728.655 |  |
+| Regnskabsmæssig værdi 30. september | 10.779.769 |  |
+| 6 | Materielle anlægsaktiver |  |
+| Andre anlæg, |  |  |
+| driftsmateriel | Indretning |  |
+| og inventar | lejede lokaler |  |
+| Kostpris 1. oktober | 4.209.106 | 4.667.011 |
+| Årets tilgang | 0 | 0 |
+| Årets afgang | 0 | 0 |
+| Kostpris 30. september | 4.209.106 | 4.667.011 |
+| Af- og nedskrivninger 1. oktober | 3.455.692 | 910.207 |
+| Årets af- og nedskrivninger | 234.028 | 471.721 |
+| Tilbageførte afskrivninger på årets afgang | 0 | 0 |
+| Af- og nedskrivninger 30. september | 3.689.720 | 1.381.928 |
+| Regnskabsmæssig værdi 30. september | 519.386 | 3.285.083 |
+
 18
 Noter til årsrapporten
-7
 
 --- pág. 21 ---
 
-Finansielle anlægsaktiver
-Andre tilgode-
-havender
-Værdipapirer
-Kostpris 1. oktober
-Årets tilgang
-Årets afgang
-15.923.544
-0
-10.163.964
-41.667
-0
-0
-Kostpris 30. september
-5.759.580
-41.667
-Værdireguleringer 1. oktober
-Årets værdireguleringer
-0
-0
-0
-0
-Værdireguleringer 30. september
-0
-0
-Regnskabsmæssig værdi 30. september
-5.759.580
-41.667
-2025
-2024
-8
-9
-Periodeafgrænsningsposter
-Forudbetalte VAR-omkostninger
-Forudbetalte omkostninger træningslejr
-302.509
-253.806
-0
-0
-556.315
-0
-Forslag til resultatdisponering
-Overføres til overført resultat
--11.467.171
--4.754.113
--11.467.171
--4.754.113
-10 Langfristede
-gældsforpligtelser
+| 7 | Finansielle anlægsaktiver |  |
+| --- | --- | --- |
+| Andre tilgode- |  |  |
+| havender | Værdipapirer |  |
+| Kostpris 1. oktober | 15.923.544 | 41.667 |
+| Årets tilgang | 0 | 0 |
+| Årets afgang | 10.163.964 | 0 |
+| Kostpris 30. september | 5.759.580 | 41.667 |
+| Værdireguleringer 1. oktober | 0 | 0 |
+| Årets værdireguleringer | 0 | 0 |
+| Værdireguleringer 30. september | 0 | 0 |
+| Regnskabsmæssig værdi 30. september | 5.759.580 | 41.667 |
+| 2025 | 2024 |  |
+| 8 | Periodeafgrænsningsposter |  |
+| Forudbetalte VAR-omkostninger | 302.509 | 0 |
+| Forudbetalte omkostninger træningslejr | 253.806 | 0 |
+| 556.315 | 0 |  |
+| 9 | Forslag til resultatdisponering |  |
+| Overføres til overført resultat | -11.467.171 | -4.754.113 |
+| -11.467.171 | -4.754.113 |  |
+| 10 Langfristede | gældsforpligtelser |  |
+
 Afdrag, der forfalder inden for 1 år, er opført under kortfristet gæld
 Ingen del af den langfristede gæld forfalder til betaling senere end 5 år efter
 balancedagen.
 19
 Noter til årsrapporten
-2025
-2024
-11 Periodeafgrænsningsposter,
+| 2025 | 2024 |  |
+| --- | --- | --- |
+| 11 Periodeafgrænsningsposter, | passiver |  |
 
 --- pág. 22 ---
 
-passiver
-Forudbetalte sponsorindtægter
-Forudbetalte sæsonkort
-8.772.044
-600.115
-10.166.972
-346.200
-9.372.159
-10.513.172
-12 Kontraktlige
-forpligtelser og eventualposter m.v.
+| Forudbetalte sponsorindtægter | 8.772.044 | 10.166.972 |
+| Forudbetalte sæsonkort | 600.115 | 346.200 |
+| 9.372.159 | 10.513.172 |  |
+| 12 Kontraktlige | forpligtelser og eventualposter m.v. |  |
+
 I forbindelse med køb og salg af kontraktrettigheder knytter der sig i enkelte tilfælde
 betalinger, der først effektueres, når en række betingelser er opfyldt. Omkostninger
 og indtægter herfra indregnes i takt med, at betingelserne opfyldes.
@@ -891,8 +642,9 @@ Leje- og leasingforpligtelser med resterende kontraktperioder omfatter operation
 leasingaftaler samt huslejeforpligtelser til spillerlejligheder, skybokse, tribuner, station og
 træningsfaciliteter samt diverse driftsmidler. Restforpligtelsen udgør i alt t.kr 17.353 pr.
 statusdagen. Restforpligtelsen forløber over max. 195 måneder pr. statusdagen.
-13 Nærtstående
-parter og ejerskab
+| 13 Nærtstående | parter og ejerskab |
+| --- | --- |
+
 Følgende har bestemmende indflydelse som hovedaktionær: Morten K. Larsen, Horsens.
 Selskabet har i året haft følgende transaktioner med nærtstående parter:
 Selskabet har en gæld til moderselskaber på TDKK 31.828. Der er ikke stillet sikkerhed for
@@ -906,8 +658,9 @@ Noter til årsrapporten
 
 --- pág. 23 ---
 
-14 Oplysning
-om ejerskab
+| 14 Oplysning | om ejerskab |
+| --- | --- |
+
 Koncernforhold
 Selskabet indgår i koncernregnskabet for Euro Steel 1988 ApS, Lundagervej 31,
 8722 Hedensted.
