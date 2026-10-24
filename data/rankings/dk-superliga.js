@@ -51,6 +51,7 @@ window.RANKINGS["dk-superliga"] = {
   },
   2023: {
     leagueSize: 12,
+    sinDato: ["sonderjyske-dk"],
     wiki: {"t":"2022–23 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
       { id:"randers-dk", revenue:9.068, reportType:"official_balance_sheet",

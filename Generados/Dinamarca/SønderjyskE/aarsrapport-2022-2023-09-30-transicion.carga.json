@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.pdf",
- "generado": "2026-10-24T06:19:53.951Z",
+ "generado": "2026-10-24T06:21:46.537Z",
  "frena": [],
  "avisos": [
   "ejercicio de transición por cambio de cierre (15 meses al 2023-09-30): encadena con el cierre anterior 2022-06-30 y el siguiente 2024-09-30; se carga como el año, con nota pública (to-do 237 ab)",
@@ -373,10 +373,9 @@
   "label": "Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2023-09-29, 2023-09-30 no es día hábil)"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no aparece en los rosters cacheados de 2023 (dk-superliga): puede haber jugado otra división",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "dk-superliga",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -415,9 +414,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no aparece en los rosters cacheados de 2023 (dk-superliga): puede haber jugado otra división",
-   "estado": "pendiente"
+   "valor": "dk-superliga",
+   "fuente": "data/club-leagues/dk.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {
