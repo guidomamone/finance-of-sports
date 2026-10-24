@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1021 — El método que partió audit.js, guardado en tools/archivo [431 · partir-cjs.mjs]
+
+- `tools/archivo/partir-cjs.mjs` (copia del script del scratchpad, con el `import` de `lexico-js.mjs` y la raíz relativos) y su línea en `tools/archivo/README.md`: qué hace, cómo se usó y con qué se comprobó.
+- Medición: no cambia ninguna tool en uso; un ensayo sin `--escribir` sobre el `audit.js` de hoy corre (nada que partir).
+
 ## Versión 1020 — `fos lote-nuevo` y el hook no deja pisar un lote [424 · lote-nuevo.mjs, pre-tool.mjs, probar-pre-tool.mjs]
 
 - `node tools/fos.mjs lote-nuevo "<motivo>"` crea `Admin/lotes/lote-N.txt` (N = el más alto de `Admin/lotes/` y `Admin/Archive/lotes/` más uno; `--numero` solo lo dice; nunca sobre uno que existe). Registrada en `fos-comandos.json` y clasificada fuera del pipeline.
