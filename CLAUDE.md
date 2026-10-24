@@ -49,6 +49,7 @@ Bash (no se pueden chequear antes de correr); su mensaje dice qué usar en cambi
 
 ## Al empezar
 
+- **Reglas fijas de Bash y de medir y commitear:** `Admin/PLANTILLA-SESION.md` (el hook `tools/hooks/pre-tool.mjs` las aplica; el prompt de una sesión no las repite).
 - **Leer, y parar ahí:** este archivo (ya cargado), la skill `start-session-finance-of-sports-project` (la tabla de qué leer según la tarea;
   **si el rol es Pipeline u Onboarding se salta: va directo a `club-or-year-onboarding`, que trae su propio arranque**) y las secciones de
   `Admin/ESTADO.md` (qué hay armado hoy) que le tocan al rol: `node tools/fos.mjs arranque <rol>` (pipeline, onboarding, auditora, orden, sourcing,
