@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["dk-superliga"] = {
   2025: {
     leagueSize: 12,
+    sinDato: ["sonderjyske-dk"],
     wiki: {"t":"2024–25 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
       { id:"fckobenhavn-dk", revenue:140.727, reportType:"official_balance_sheet",

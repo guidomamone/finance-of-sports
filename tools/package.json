@@ -3,6 +3,8 @@
   "private": true,
   "description": "Dependencias de desarrollo de tools/ (no se publican ni se instalan en el deploy: Netlify solo mira el package.json de la raíz).",
   "devDependencies": {
-    "@resvg/resvg-js": "2.6.2"
+    "@resvg/resvg-js": "2.6.2",
+    "eslint": "10.13.0",
+    "globals": "17.13.0"
   }
 }

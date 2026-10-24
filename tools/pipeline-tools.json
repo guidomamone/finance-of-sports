@@ -176,6 +176,7 @@
   "worktree.mjs": "sesión: worktrees (modo de varias sesiones)",
   "mudar-carpetas.mjs": "sesión: mueve carpetas de Clubes/ sin borrar",
   "mapa-codigo.mjs": "sesión: mapa de un archivo de código (solo lee)",
+ "eslint.config.mjs": "sesión: la configuración de eslint (solo no-undef) de fos indefinidos; no corre en el pipeline",
  "lote-nuevo.mjs": "sesión: crea la próxima lista Admin/lotes/lote-N.txt (no toca datos ni el pipeline)",
   "medir-pipeline.mjs": "medidor: mide los cambios al pipeline",
   "medir-personal-ensayos.mjs": "medidor: las opciones --personal de caja-deuda en ensayo",
