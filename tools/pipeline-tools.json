@@ -152,6 +152,7 @@
   "lecturas.mjs": "orden: cuenta lo que leen las sesiones (tokens por documento) leyendo los transcripts; no toca el pipeline",
   "reemplazar.mjs": "orden: reemplazos en varios archivos (el mismo texto, o una lista de cambios exactos por línea), con ensayo por defecto",
   "probar-patron.mjs": "prueba: patron.mjs en un repo de juguete",
+  "probar-todo-contexto.mjs": "prueba: el contexto de un punto de todo.mjs en un repo de juguete",
   "probar-partir-fases.mjs": "prueba: partir-fases.mjs y lexico-js.mjs sobre una función de juguete",
   "probar-reemplazar.mjs": "prueba: reemplazar.mjs en un repo de juguete",
   "muestra.mjs": "orden: una muestra repartida de las líneas que cumplen un patrón (solo lee)",

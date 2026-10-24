@@ -7,7 +7,8 @@
 //
 // USO:
 //   node tools/todo.mjs                 la lista: orden, id y título, agrupada como el TODO (gratis, ~3 KB)
-//   node tools/todo.mjs 355             el cuerpo del punto con ese id
+//   node tools/todo.mjs 355             el cuerpo del punto con ese id y, al final, su contexto: una ruta y una línea por cada propuesta, medición,
+//                                       votación, entrada del CHANGELOG, lista de lote y commit que lo nombra (--sin-contexto lo omite)
 //   node tools/todo.mjs --verificar [id]   comprueba la línea «Verificar:» de cada punto (o de uno) con una máquina: cumple / falta / manual (corre audit.js, unos segundos)
 //   node tools/todo.mjs --cerrar 355    borra el punto y renumera el orden de los de abajo (el historial va al CHANGELOG, a mano). Se NIEGA si el punto tiene una condición
 //                                       «Verificar:» comprobable y no se cumple; --forzar lo cierra igual (para un punto descartado, no cumplido)
@@ -16,7 +17,7 @@
 //   node tools/todo.mjs --mover 357 --antes 337       cambia el lugar de un punto (--antes o --despues de otro; queda en el grupo del otro) y renumera el orden
 // Las condiciones y cómo se escriben: tools/todo-verificar.js. No toca nada más que Admin/TODO.md.
 // ============================================================================
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
@@ -113,7 +114,44 @@ const id = cerrar ? A[1] : A[0];
 const p = puntos.find((x) => x.id === id);
 if (!p) { console.error(`No hay un punto con id ${id}. Los ids: ${puntos.map((x) => x.id).join(', ')}`); process.exit(1); }
 
-if (!cerrar) { console.log(L.slice(p.i, p.fin).join('\n').trimEnd()); process.exit(0); }
+// el contexto de un punto: una ruta y una línea por cada cosa que lo nombra (propuestas, mediciones, votaciones, CHANGELOG, listas de lote, commits)
+function contexto(id) {
+  const corto = (s) => s.replace(/\s+/g, ' ').trim().slice(0, 110);
+  const enNombre = new RegExp(`(?<![\\d.,])${id}(?![\\d.,]?\\d)`);
+  const enTexto = new RegExp(`(?:punto|puntos|TODO|to-do|#|\\[|\\()\\s*${id}(?![\\d.,]?\\d)`, 'i');
+  const sec = [];
+  const leer = (f) => { try { return readFileSync(f, 'utf8'); } catch { return null; } };
+  const carpeta = (dir, filtro) => {
+    let ns; try { ns = readdirSync(resolve(ROOT, dir), { withFileTypes: true }); } catch { return []; }
+    return ns.filter((d) => d.isFile() && filtro(d.name)).map((d) => `${dir}/${d.name}`).flatMap((r) => {
+      const t = statSync(resolve(ROOT, r)).size < 3e6 ? leer(resolve(ROOT, r)) : null;
+      if (!(enNombre.test(r.split('/').pop()) || (t && enTexto.test(t)))) return [];
+      return [`  ${r}${t ? ` — ${corto(t.split('\n').find((x) => x.trim()) || '')}` : ''}`];
+    });
+  };
+  const jsonl = (rel, campo) => (leer(resolve(ROOT, rel)) || '').split('\n').flatMap((l, n) => {
+    if (!l.trim()) return [];
+    let o; try { o = JSON.parse(l); } catch { return []; }
+    const t = campo(o); return t && (enTexto.test(l) || enNombre.test(t.split(/\s/)[0])) ? [`  ${rel}:${n + 1} — ${o.fecha || ''} ${corto(t)}`] : [];
+  });
+  const cl = ['CHANGELOG.md', ...['v957-v977', 'v673-v956', 'v300-v672', 'v010-v299'].map((v) => `Archive/CHANGELOG-${v}.md`)].flatMap((f) =>
+    (leer(resolve(ROOT, 'Admin', f)) || '').split('\n').flatMap((l, n) => { const m = /^## (.*)\[([^\]]*)\]\s*$/.exec(l); return m && (m[2].match(/\b\d{3}\b/g) || []).includes(id) ? [`  Admin/${f}:${n + 1} — ${corto(l.slice(3))}`] : []; }));
+  let git = [];
+  try { git = execFileSync('git', ['log', '--grep', `(^|[^0-9.,])${id}([^0-9]|$)`, '--extended-regexp', '--format=%h %s'], { cwd: ROOT, encoding: 'utf8' }).trim().split('\n').filter((l) => enNombre.test(l.replace(/^\S+ /, '')) && !new RegExp(`Versi[óo]n ${id}`).test(l)).slice(0, 8).map((l) => `  ${corto(l)}`); } catch {}
+  const grupos = [
+    ['Propuestas', carpeta('Admin/propuestas', (n) => /\.(md|txt)$/.test(n))],
+    ['Mediciones', carpeta('Admin/mediciones', (n) => /\.(md|txt|tsv)$/.test(n))],
+    ['Votaciones y decisiones (auditoria-proceso.jsonl)', jsonl('Admin/registros/auditoria-proceso.jsonl', (o) => o.cambio)],
+    ['Mediciones del pipeline (mediciones-pipeline.jsonl)', jsonl('Admin/registros/mediciones-pipeline.jsonl', (o) => typeof o.explicacion === 'string' ? o.explicacion : JSON.stringify(o.explicacion || ''))],
+    ['CHANGELOG', cl],
+    ['Listas de lote', carpeta('Admin/lotes', (n) => /\.txt$/.test(n))],
+    ['Commits', git],
+  ];
+  for (const [t, ls] of grupos) if (ls.length) sec.push(`${t}:`, ...ls);
+  return sec.length ? `\n\nContexto de este punto (rutas; se lee lo que haga falta):\n${sec.join('\n')}` : '\n\nContexto de este punto: nada lo cita todavía.';
+}
+
+if (!cerrar) { console.log(L.slice(p.i, p.fin).join('\n').trimEnd() + (A.includes('--sin-contexto') ? '' : contexto(p.id))); process.exit(0); }
 
 if (!A.includes('--forzar')) {
   const e = estadoDe(p, hallazgos());
