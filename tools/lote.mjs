@@ -1,28 +1,11 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/lote.mjs — EL PROCESO NUEVO de punta a punta sobre un LOTE CHICO (5 PDFs), para ir refinando y viendo dónde hace falta la cola humana.
-//
-// POR QUÉ (pedido de Guido: "la idea es hacer 5 PDFs juntos e ir refinando y viendo dónde se necesita cola humana;
-// vos me podés decir 'revisar tal cosa en el PDF y tal otra en el md' y yo abro el PDF por mi cuenta o la transcripción; arrancar por los
-// clubes para los cuales ya tenemos transcripción pero no están cargados"). El proceso entero, con riesgos y mitigaciones etapa por etapa,
-// está en Admin/PIPELINE.md.
-//
-// LAS ETAPAS QUE CORRE (las 1 conseguir y 2 transcribir ya están hechas para los documentos del lote: se eligen PDFs con .md):
-//   3  localizar.mjs        qué bloques son el estado de resultados y sus notas                      IA, ~US$ 0,05
-//   4  validar-bloques.mjs  cada número de esos bloques contra el PDF (texto propio o Gemini)         gratis / ~US$ 0,003 por página escaneada
-//   5  extraer.mjs          las filas tal cual, con escala por bloque y la columna del año anterior   IA, ~US$ 0,20 (mediana de lo gastado; hasta ~0,35 en documentos largos)
-//   6  verificar.mjs        chequeos gratis; lo que no cierra va a la cola; deja el .rubros.json     gratis
-//      + primer-anio-ia.mjs el primer año de un club cuando solo coincide el resultado: Claude revisa las filas  ~US$ 0,02
-//   7  categorización de siempre: glosar-rubros.mjs, jev-categorizar.mjs, categorizar-claude.mjs (con precedente, familia y memoria)  ~US$ 0,03
-//   8  cargar.mjs --desde-verificacion   PROPUESTA (no escribe el sitio): qué cargaría y por qué frena                gratis
+// tools/lote.mjs — el proceso de punta a punta sobre un LOTE de PDFs con .md (las etapas 1 y 2 ya están hechas), para ver dónde hace falta la cola humana. Riesgos y mitigaciones por etapa: Admin/PIPELINE.md.
+// ETAPAS: 3 localizar.mjs (IA) · 4 validar-bloques.mjs (gratis; Gemini en un escaneo) · 5 extraer.mjs (IA) · 6 verificar.mjs (gratis; lo que no cierra va a la cola; + primer-anio-ia.mjs) ·
+//   7 categorización (glosar-rubros, jev-categorizar, categorizar-claude: con precedente, familia y memoria) · 8 cargar.mjs --desde-verificacion (PROPUESTA: no escribe el sitio).
 // Un documento que va a la cola en la 6 sigue igual hasta la 8 (para ver todo lo que le falta de una vez), pero la 8 lo frena.
-//
-// POR DEFECTO ES UN ENSAYO: no llama a ninguna API, dice qué haría y cuánto costaría. --ejecutar lo corre. Cada etapa guarda su resultado en
-// Generados/ y no se repite (--rehacer para forzar las de IA): cortar con Control+C y volver a correr sigue donde quedó.
-//
-// AL TERMINAR: un resumen por documento (en qué etapa quedó y por qué) y la cola humana con qué mirar en el PDF y en el .md
-// (node tools/cola.mjs). Las respuestas de Guido se toman en la próxima corrida del mismo lote.
-//
+// POR DEFECTO ES UN ENSAYO: no llama a ninguna API, dice qué haría y cuánto costaría. --ejecutar lo corre. Cada etapa guarda su resultado en Generados/ y no se repite (--rehacer fuerza las de IA):
+//   cortar con Control+C y volver a correr sigue donde quedó. Al terminar: un resumen por documento y la cola humana (node tools/cola.mjs); las respuestas de Guido se toman en la próxima corrida.
 // USO:
 //   node tools/lote.mjs --lista Admin/lotes/lote-NN.txt                 ensayo con costo
 //   caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar

@@ -1,6 +1,5 @@
 // ============================================================================
 // tools/lote-final.mjs — las fases de lote.mjs desde el costo del ensayo hasta la tabla final: sumar, categorizar, el resumen y la propuesta de carga
-// Mudado de tools/lote.mjs sin cambiar una línea (salvo `export`); tools/lote.mjs lo importa y re-exporta lo que ya exportaba.
 // ============================================================================
 import { writeFileSync, appendFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -12,20 +11,15 @@ import { verificarLista, gastoPorDocumento, lineasGasto, categoriasAlDia, jevAlD
 // El costo del ensayo: lo que cuesta categorizar y los deterministas.
 export async function faseEnsayo(ctx) {
   const { docs, cotizados, estado, testigos, ROOT, inicioUsd, docsXhtml, EJECUTAR, DET, PAGA_XHTML, PAGAR_XHTML, LISTA } = ctx;
-  // LA CATEGORIZACIÓN DEL ENSAYO cuenta solo los documentos que van a llegar a categorizar (quedaron
-  // "extraído" o el ensayo los cotiza para localizar o extraer; no testigos) y cuyo .categorias.json no está al día (huellas, tools/huellas.mjs: categoriasAlDia, la misma compuerta de
-  // cargar.mjs). Antes cobraba US$ 0,03 por cada documento de la lista: los ya en el sitio, los sin .md y los que frenan antes de localizar.
-  // Caso: lote 91, 26 años en el sitio y el resto ya categorizado, estimaba US$ 1,62.
+  // LA CATEGORIZACIÓN DEL ENSAYO cuenta solo los documentos que van a llegar a categorizar (quedaron "extraído" o el ensayo los cotiza para localizar o extraer; no testigos) y cuyo .categorias.json no está al día (categoriasAlDia, la misma compuerta
+  // de cargar.mjs): no cobra por los ya en el sitio, los sin .md ni los que frenan antes de localizar.
   const aCategorizar = docs.filter((d) => (cotizados.has(d) || String(estado[d] || '').startsWith('extraído')) && !testigos.has(d) && !(() => { const e = ctx.registro.find((x) => x.pdf === d); try { return e?.md && categoriasAlDia(resolve(ROOT, e.md)); } catch { return false; } })());
-  // Lo que cuesta cada documento en esta corrida (el ensayo estima; con --ejecutar, lo gastado): la diferencia del acumulado entre su inicio y el del siguiente.
   const costoDe = (d) => { const i = docs.indexOf(d); return (i + 1 < docs.length ? inicioUsd[docs[i + 1]] : ctx.usd) - inicioUsd[d]; };
   const costoDet = docsXhtml.reduce((a, d) => a + costoDe(d), 0);
   if (!EJECUTAR) {
     const coma = (x) => x.toFixed(2).replace('.', ',');
     const total = `Correrlo cuesta ~US$ ${coma(ctx.usd + 0.03 * aCategorizar.length)} (localizar y extraer US$ ${coma(ctx.usd)} + categorización ~US$ 0,03 por documento en ${aCategorizar.length} de ${docs.length}: los demás ya están en el sitio, categorizados al día o frenan antes + páginas escaneadas ~US$ 0,003 cada una)`;
     if (!docsXhtml.length) { console.log(`\nEnsayo terminado, no se gastó nada. ${total}. Para correrlo: agregá --ejecutar.`); process.exit(0); }
-    // Con deterministas en la lista, el total se parte en dos: lo que corre (los demás) y lo que se frena (los de motor xhtml-ixbrl). El freno de --ejecutar es del lote
-    // entero (sale antes de escribir nada), así que «corre» es lo que costaría la lista sin ellos.
     const catDet = aCategorizar.filter((d) => DET.has(d)).length; const catResto = aCategorizar.length - catDet;
     const conCosto = (ds) => ds.filter((d) => costoDe(d) > 0 || aCategorizar.includes(d)).length;
     const resto = docs.filter((d) => !DET.has(d)); const usdResto = ctx.usd - costoDet;
@@ -49,16 +43,13 @@ export async function faseSumar(ctx) {
   console.log('\n=== 2/5 · Sumar y cruzar con lo impreso (etapa 6, gratis) ===');
   // LA LÍNEA DE DEPRECIACIÓN Y AMORTIZACIÓN JUNTA se parte sola con las notas cuando la aritmética cierra (REGLA de CONVENCIONES-DATOS); si no cierra, queda para la cola. Escribe ajustes solo con --ejecutar.
   { const { partirDocumentos } = await import('./partir-amortizacion.mjs'); const n = partirDocumentos(docs.filter((d) => String(estado[d]).startsWith('extraído')), { escribir: EJECUTAR, avisar: false }); if (n) console.log(`  ${n} documento(s) con la amortización junta ${EJECUTAR ? 'partidos' : 'que se partirían'} con las notas (partir-amortizacion.mjs)`); }
-  // startsWith: el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no
-  // pasaba a verificar en la misma corrida (UC 2015, lote 06: re-transcripto y extraído, y la etapa 6 lo salteaba).
-  // verificarLista: repite la pasada si un documento tomó la escala del año vecino (la cadena de escala depende del orden).
+  // startsWith: el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no pasaba a verificar en la misma corrida. verificarLista repite la pasada si un documento tomó la escala del año vecino.
   for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).startsWith('extraído')), { registro: ctx.registro, sitio, escribirRubros: true })) {
     estado[pdf] = r.error ? `verificar: ${r.error}` : r.estado === 'ok' ? 'verificado' : `verificado con ${r.cola.length} caso(s) en la cola`;
     if (!r.error) for (const c of r.chequeos) console.log(`  ${pdf.split('/').slice(2).join('/')}: ${c.ok === true ? 'ok' : c.ok === false ? 'NO' : '-'} ${c.nombre}: ${c.detalle}`);
   }
 
-  // (escalón 3 del primer año) los documentos que verificar dejó con el pedido a Claude pendiente: se pregunta y se vuelven a
-  // verificar, para que la respuesta confirme el año (o deje el caso con la cita) en esta misma corrida.
+  // (escalón 3 del primer año) los documentos que verificar dejó con el pedido a Claude pendiente: se pregunta y se vuelven a verificar, para que la respuesta confirme el año en esta misma corrida.
   {
     const pend214 = docs.filter((d) => String(estado[d]).startsWith('verificado') && leerDerivado(ctx.registro.find((x) => x.pdf === d) || { md: d.replace(/\.pdf$/i, '.md') }, '.verificacion.json')?.primerAnio?.estado === 'pendiente');
     if (pend214.length) {
@@ -80,7 +71,6 @@ export async function faseCategorizar(ctx) {
   const { docs, estado, SIN_API, ROOT, node, LISTA, leerRegistro } = ctx;
   console.log('\n=== 3/5 · Categorizar las filas (etapa 7) ===');
   let conRubros = docs.filter((d) => String(estado[d]).startsWith('verificado'));
-  // Jev y Claude necesitan el deporte de cada documento; el alta que lo calcula corre más arriba, antes de la primera lectura.
   if (SIN_API) {
     // Sin API: solo siguen los documentos con Jev y las categorías al día (los dejó la sesión con --desde-sesion o ya estaban); el resto frena.
     const alDia = (d) => { const e = ctx.registro.find((x) => x.pdf === d); try { return !!e?.md && jevAlDia(resolve(ROOT, e.md)) && categoriasAlDia(resolve(ROOT, e.md)); } catch { return false; } };
@@ -123,7 +113,6 @@ export async function faseResumen(ctx) {
     for (const x of aRetranscribir) console.log(`  ${x.pdf.split('/').slice(2).join('/')}: páginas ${x.paginas.join(', ')}`);
     console.log(`  Re-transcribir con Mistral y volver a localizar (~US$ 0,004 por página + localizar y extraer): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
   }
-  // Camino de error: qué documentos quedaron para reintentar (en dos bloques, lo que destraba la carga y el detalle opcional).
   const yaEnSitio = (e) => e.cargado || propuestaEnSitio(e);
   const motivos = (xs) => xs.map((x) => (x.categoria ? `"${x.categoria}" en 0` : `"${x.renglon}" ${x.suma} contra ${x.objetivo}`)).join('; ');
   const aReintentar = []; const aDetalle = [];
@@ -144,8 +133,6 @@ export async function faseResumen(ctx) {
     console.log(`  Solo si hace falta el detalle (~US$ 0,50 por documento): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar --detalle`);
   }
   imprimirAFijar();
-  // GASTO POR DOCUMENTO: lo gastado en esta corrida en cada documento,
-  // por tarea, y "N.ª vez" si esa tarea ya se había pagado antes para el mismo PDF (tools/gasto-doc.mjs; solo información, no frena).
   const GD = gastoPorDocumento(docs, { desde: INICIO, registro: ctx.registro, extra: gastoValidar });
   if (GD.length) { console.log('\nGASTO POR DOCUMENTO (esta corrida; "N.ª vez" = esa tarea ya se había pagado antes para el mismo PDF):'); for (const l of lineasGasto(GD)) console.log(l); }
   avisoCorrecciones();
@@ -157,13 +144,9 @@ export async function faseResumen(ctx) {
 // La propuesta de carga (etapa 8) y, con --cargar, lo que se escribe en el sitio.
 export async function faseResultado(ctx) {
   const { docs, testigos, leerDerivado, yaEnSitio, estado, motivos, CARGAR, ROOT, LISTA, EJECUTAR } = ctx;
-  // RESULTADO (pedido de Guido: "que al final de la corrida diga 'Frenados X' 'Listo para cargar Y'"). Lee la última propuesta de
-  // carga (<doc>.carga.json) de CADA documento de la lista, no solo de los que pasaron por la etapa 8 en esta corrida (en un --reintentar la
-  // etapa 8 corre solo sobre los reintentados). "Ya en el sitio" va aparte: un año ya cargado frena por diseño (cargar.mjs no pisa un
-  // ejercicio), y contarlo como frenado escondería los frenados de verdad.
-  // La etapa de un documento frenado, para la tabla final: la MÁS TEMPRANA de sus frenos (lo que hay que destrabar primero). `registro`
-  // dice en el motivo qué etapa no cerró (6, o 4 si quedaron números sin confirmar). `club` solo no frena de verdad con --cargar (el alta la
-  // hace cargar-lote.mjs), por eso va después de las demás.
+  // RESULTADO: lee la última propuesta de carga (<doc>.carga.json) de CADA documento de la lista, no solo de los que pasaron por la etapa 8 en esta corrida (un --reintentar la corre solo sobre los reintentados). "Ya en el sitio" va aparte: un año ya
+  // cargado frena por diseño (cargar.mjs no pisa un ejercicio), y contarlo como frenado escondería los frenados de verdad.
+  // La etapa de un documento frenado, para la tabla final: la MÁS TEMPRANA de sus frenos. `club` solo no frena de verdad con --cargar (el alta la hace cargar-lote.mjs), por eso va después de las demás.
   function etapaDeFrenos(frenos) {
     const de = (f) => {
       const e = String(f.etapa || ''); const m = String(f.motivo || '');
@@ -179,22 +162,16 @@ export async function faseResultado(ctx) {
   const resultado = { listo: [], frenado: [], yaCargado: [], sinPropuesta: [] };
   for (const pdf of docs.filter((d) => !testigos.has(d))) {
     const e = ctx.registro.find((x) => x.pdf === pdf); const c = e?.md ? leerDerivado(e, '.carga.json') : null;
-    // el club adelante del año: con varios clubes en un lote, "2021" solo no dice cuál (lote 14, 12 clubes italianos).
     const anio = `${pdf.split('/')[2] || ''} ${c?.year || (pdf.match(/(\d{4})(?!.*\d{4})/) || [])[1] || pdf}`.trim();
-    // un año que ya está en el sitio va a "Ya en el sitio" aunque su última propuesta sea vieja (Novorizontino 2018-2021 y
-    // 2024, Juventus 2012: propuestas de antes del alta del club decían "el club no existe en el sitio").
+    // un año que ya está en el sitio va a "Ya en el sitio" aunque su última propuesta sea vieja (de antes del alta del club decía "el club no existe en el sitio").
     if (e?.md && yaEnSitio(e)) resultado.yaCargado.push({ anio });
     else if (!c) resultado.sinPropuesta.push({ anio, motivo: estado[pdf] || 'sin propuesta de carga' });
     else if (!(c.frena || []).length) resultado.listo.push({ anio });
     else if ((c.frena || []).some((f) => f.etapa === 'año' && /ya tiene el ejercicio/.test(f.motivo))) resultado.yaCargado.push({ anio });
-    // TODOS los motivos, uno por línea (antes solo c.frena[0]: Sampdoria 2021 frenaba por 4 y mostraba solo el
-    // primero, y el del período quedaba escondido), y si cargar.mjs cortó el análisis en un freno (`cortadoEn`), el aviso de que después de
-    // resolverlo pueden aparecer más (lote 15: las 5 altas escondían 64 preguntas de categoría, socios y gestión que todavía no se calculaban).
+    // TODOS los motivos, uno por línea, y si cargar.mjs cortó el análisis en un freno (`cortadoEn`), el aviso de que al resolverlo pueden aparecer más.
     else resultado.frenado.push({ anio, motivos: c.frena.map((f) => `[${f.etapa}] ${String(f.motivo).slice(0, 160)}`), cortadoEn: c.cortadoEn || null, etapaFreno: etapaDeFrenos(c.frena) });
   }
   const anios = (xs) => xs.map((x) => x.anio).sort().join(', ');
-  // El título dice qué es: la propuesta de carga de la etapa 7, antes de escribir; lo escrito de verdad lo
-  // cuenta la etapa 8 y la tabla final "Dónde quedó cada PDF de la lista".
   console.log('\n=== Propuesta de carga (etapa 8): qué se escribiría ===');
   console.log(`Listo para cargar ${resultado.listo.length}${resultado.listo.length ? `   (${anios(resultado.listo)})` : ''}`);
   console.log(`Frenados ${resultado.frenado.length}`);
@@ -206,19 +183,15 @@ export async function faseResultado(ctx) {
   if (resultado.yaCargado.length) console.log(`Ya en el sitio ${resultado.yaCargado.length}   (${anios(resultado.yaCargado)})`);
   if (resultado.sinPropuesta.length) { console.log(`Sin propuesta de carga ${resultado.sinPropuesta.length}`); for (const x of resultado.sinPropuesta) console.log(`   ${x.anio}: ${x.motivo}`); }
 
-  // ETAPA 8 ESCRITA EN EL SITIO: con --cargar, lo que quedó "listo para cargar" se escribe en el sitio con
-  // tools/cargar-lote.mjs (alta del club nuevo con su color, cargar.mjs --escribir con su auditoría, un commit por año; sin push). Sin
-  // --ejecutar es su ensayo. El candado del lote se suelta antes: cargar.mjs --escribir toma el suyo.
+  // ETAPA 8 ESCRITA EN EL SITIO: con --cargar, lo que quedó "listo para cargar" se escribe con tools/cargar-lote.mjs (alta del club nuevo con su color, cargar.mjs --escribir con su auditoría, un commit por año; sin push). Sin --ejecutar es su
+  // ensayo. El candado del lote se suelta antes: cargar.mjs --escribir toma el suyo.
   ctx.escritos = 0;
   if (CARGAR) {
     soltarCandado();
-    // antes de cargar, las listas de equipos que faltan para los años de la lista (gratis: Wikipedia),
-    // para que la carga de un año nuevo encuentre su liga (alta-club.mjs, el club en UNA sola lista) y la compuerta de estadio y sponsor
-    // tenga su página. Sin --ejecutar es el ensayo de listas-lote (no guarda nada). Lo que guarda queda en tools/club-league-reference/.
+    // antes de cargar, las listas de equipos que faltan para los años de la lista (gratis: Wikipedia): la carga de un año nuevo necesita su liga y la compuerta de estadio y sponsor, su página.
     const rl = spawnSync('node', [resolve(ROOT, 'tools/listas-lote.mjs'), '--lote', LISTA, ...(EJECUTAR ? [] : ['--ensayo'])], { cwd: ROOT, stdio: ['inherit', 'pipe', 'inherit'], encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });
     const resumenListas = String(rl.stdout || '').split('\n').filter((l) => /^listas-lote:|^ {2}NO:/.test(l));
     if (resumenListas.length) console.log(`\nListas de equipos para la liga de los años nuevos (tools/listas-lote.mjs --lote):\n${resumenListas.join('\n')}${EJECUTAR ? '\n(lo guardado en tools/club-league-reference/ se commitea aparte)' : ''}`);
-    // La salida de cargar-lote.mjs se muestra igual que antes; se lee además para contar los años escritos en la tabla final.
     const r = spawnSync('node', [resolve(ROOT, 'tools/cargar-lote.mjs'), '--lista', LISTA, ...(EJECUTAR ? ['--escribir'] : [])], { cwd: ROOT, stdio: ['inherit', 'pipe', 'inherit'], encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
     if (r.stdout) process.stdout.write(r.stdout);
     ctx.escritos = (String(r.stdout || '').match(/: escrito y commiteado/g) || []).length;

@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1023 — Comentarios de lote*.mjs: de 247 a 120 líneas, sin historia de lotes [427 · lote.mjs, lote-preparar.mjs, lote-leer.mjs, lote-final.mjs]
+
+- `lote.mjs` 30→13 líneas de comentario, `lote-preparar.mjs` 73→36, `lote-leer.mjs` 91→45, `lote-final.mjs` 53→26: se dejó el porqué y la invariante de cada compuerta; se fueron las tablas de costo de la cabecera, los «Caso: lote N» / «to-do N» y los comentarios que repetían el código.
+- Verificado a mano (427): lote*.mjs: 247 a 120 líneas de comentario, 0 coincidencias de Caso/lote N/to-do N/Versión N (grep), comparar-sin-comentarios --tools idéntico
+- Medición: `comparar-sin-comentarios --tools`: mismo código en las 4 tools; `medir pipeline`: idéntico (solo comentarios).
+
 ## Versión 1022 — fos cerrar: un «Verificar: manual» se cierra con --verificado [425 · cerrar.mjs]
 
 - `fos cerrar <id> --cerrar` ya no cierra un punto cuyo «Verificar:» es manual sin `--verificado "qué se miró y dónde quedó"`; con él cierra SIN `--forzar` (siguen todos los otros chequeos) y anota un bullet «Verificado a mano» en la entrada del CHANGELOG que lleva `[id]`, antes de su «Medición:». El ensayo muestra ✗ sin el motivo y ✓ con él. `--forzar` queda para lo descartado.
