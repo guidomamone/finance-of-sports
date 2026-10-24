@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1010 — Bolton 2024-25 de punta a punta con el conversor nuevo; punto 419 [356 · 419]
+
+- `lote.mjs --rehacer --ejecutar --pagar-ia-xhtml` sobre Bolton 2024-25: localizar, extraer y verificar con el `.md` con tablas (US$ 0,15; 2 dudas ordinarias en la cola). Sin `--rehacer` el lote reutilizaba el `sin_estado` del `.md` viejo y no lo decía: punto 419. `Admin/lotes/lote-143.txt` (13 documentos de Inglaterra) queda para Onboarding; se pisó por error el `lote-142.txt` del 413 y se restauró desde git.
+- Gasto del 356: ~US$ 2,05 de 35.
+
 ## Versión 1009 — Reconvertidos con tablas los .md de 14 clubes británicos (Hibernian, Bolton, …) [356]
 
 - `xhtml-aarsrapport.mjs --rehacer --escribir` sobre Hibernian, Bolton, Bristol Rovers, Cambridge United, Crewe, Northampton, Oxford, Peterborough, Plymouth, Rotherham, Salford, Tranmere, Blackpool y Reading: 55 `.md` (y sus PDF de ancla) pasan de una línea por celda a filas de tabla; ninguno de esos clubes está en el sitio. Pasan las compuertas (a) hechos y (b) páginas. Costo US$ 0.

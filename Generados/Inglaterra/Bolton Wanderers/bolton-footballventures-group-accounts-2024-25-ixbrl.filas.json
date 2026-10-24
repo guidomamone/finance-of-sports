@@ -1,0 +1,330 @@
+{
+ "pdf": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "9a6de728a1cc25e2a5c4ae34c403cac704bc5bf9",
+ "ubicacionSha1": "435d0bce85b74277817a7539c954dff522c6990f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T00:10:12.627Z",
+ "ubicacion": {
+  "estado": [
+   "b9"
+  ],
+  "notas_ingresos": [
+   "b36",
+   "b39"
+  ],
+  "notas_gastos": [
+   "b37",
+   "b39"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "L268: columnas en £"
+  },
+  {
+   "bloque": "b36",
+   "escala": "unidades",
+   "evidencia": "L608: £"
+  },
+  {
+   "bloque": "b39",
+   "escala": "unidades",
+   "evidencia": "L681: £"
+  },
+  {
+   "bloque": "b37",
+   "escala": "unidades",
+   "evidencia": "L637/L663: £"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b9",
+   "linea": 269,
+   "etiqueta": "Turnover",
+   "actual": "20,458,546",
+   "anterior": "21,301,502",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 270,
+   "etiqueta": "Cost of sales",
+   "actual": "(20,285,848)",
+   "anterior": "(17,971,455)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 271,
+   "etiqueta": "Gross profit",
+   "actual": "172,698",
+   "anterior": "3,330,047",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 272,
+   "etiqueta": "Administrative expenses",
+   "actual": "(14,201,746)",
+   "anterior": "(13,913,784)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 273,
+   "etiqueta": "Other operating income",
+   "actual": "73,824",
+   "anterior": "129,748",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 274,
+   "etiqueta": "Operating loss",
+   "actual": "(13,955,224)",
+   "anterior": "(10,453,989)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 275,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "18,787",
+   "anterior": "14,731",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 276,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(425,457)",
+   "anterior": "(711,166)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 277,
+   "etiqueta": "Loss before taxation",
+   "actual": "(14,361,894)",
+   "anterior": "(11,150,424)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 278,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 279,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(14,361,894)",
+   "anterior": "(11,150,424)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b36",
+   "linea": 610,
+   "etiqueta": "Professional football",
+   "actual": "7,224,757",
+   "anterior": "6,621,804",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 611,
+   "etiqueta": "Food and beverage",
+   "actual": "2,455,033",
+   "anterior": "2,891,170",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 612,
+   "etiqueta": "Accommodation and leisure",
+   "actual": "2,053,798",
+   "anterior": "1,826,614",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 613,
+   "etiqueta": "Academy income",
+   "actual": "611,718",
+   "anterior": "583,968",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 614,
+   "etiqueta": "Commercial",
+   "actual": "2,217,071",
+   "anterior": "2,389,371",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 615,
+   "etiqueta": "Retail",
+   "actual": "1,768,059",
+   "anterior": "1,855,508",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 616,
+   "etiqueta": "Corporate sales",
+   "actual": "777,253",
+   "anterior": "1,259,270",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 617,
+   "etiqueta": "Events",
+   "actual": "2,768,126",
+   "anterior": "2,867,543",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 618,
+   "etiqueta": "Communications",
+   "actual": "218,598",
+   "anterior": "524,847",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 619,
+   "etiqueta": "Car parking",
+   "actual": "152,593",
+   "anterior": "244,837",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 620,
+   "etiqueta": "Fanzone",
+   "actual": "211,540",
+   "anterior": "236,570",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b36",
+   "linea": 621,
+   "etiqueta": "",
+   "actual": "20,458,546",
+   "anterior": "21,301,502",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b39",
+   "linea": 683,
+   "etiqueta": "Interest on bank deposits",
+   "actual": "18,787",
+   "anterior": "14,731",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b39",
+   "linea": 687,
+   "etiqueta": "Other interest on financial liabilities",
+   "actual": "425,457",
+   "anterior": "711,166",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 269,
+  "actual": "20,458,546"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 279,
+  "actual": "(14,361,894)",
+  "anterior": "(11,150,424)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de partidas cargadas al resultado operativo de la nota 4 (L639-L642), por ser informativo y no un desglose de Cost of sales ni Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Las partidas de L639-L642 (amortizaciones, ganancia por venta de intangibles, leasing) están incluidas en varios renglones sin indicar cuál.",
+   "bloques": [
+    "b37"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones al personal (L664-L667), por no desglosar un renglón específico del estado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Los costos salariales de L664-L667 se reparten entre Cost of sales y Administrative expenses sin apertura.",
+   "bloques": [
+    "b37"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Se omitieron 'Other significant revenue - Interest income' (L625, duplica nota 7), la conciliación impositiva (L692-L699), honorarios de auditoría y dotación. No hay total de gastos impreso."
+}

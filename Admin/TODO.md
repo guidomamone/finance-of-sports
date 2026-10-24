@@ -74,7 +74,14 @@ Terminado cuando: las 5 entradas «ACEPTADO SIN VERIFICAR» ya no están en `aud
 
 Verificar: manual
 
-### 8. 401 · (Pipeline): una prueba que escribe de verdad en cada tool que escribe, porque un ensayo no pasa por los imports que se rompen
+### 8. 419 · (Pipeline): localizar y los derivados no se invalidan cuando cambia el .md de un documento (mdSha1 distinto): un .md reconvertido sigue con el sin_estado de antes
+
+Caso (2026-10-24): los `.md` de 14 clubes británicos se reconvirtieron con tablas (356) y `lote.mjs` siguió diciendo «sin estado de resultados (queda como fuente)` sin llamar a nadie: el `.ubicacion.json` de antes (`sin_estado: true`, `mdSha1` del `.md` viejo) se reutiliza porque `localizar()` solo compara el perímetro y los ajustes, no el `mdSha1` (`tools/localizar.mjs`, «if (!rehacer && existsSync(out))»). Con `--rehacer` se rehace todo (también lo que sigue sirviendo), y quien no lo sabe cree que el documento no tiene estado. Mirar si lo mismo pasa con los demás derivados (`.validacion.json`, `.filas.json`, `.categorias.json`: `tools/huellas.mjs` ya los compara con sus insumos) y, para `.ubicacion.json`, comparar el `mdSha1` guardado con el del `.md`: si difiere, no se reutiliza (en el ensayo, se avisa «el .md cambió: localizar se rehace, ~US$ X»). Condición nueva en una tool: sección 7 de `auditoria-finance-of-sports` y medir antes y después con `medir pipeline`.
+Terminado cuando: un `.md` modificado después de localizar hace que `lote.mjs` rehaga (o cotice en el ensayo) la localización sin `--rehacer`, y el lote completo de prueba da idéntico.
+
+Verificar: manual
+
+### 9. 401 · (Pipeline): una prueba que escribe de verdad en cada tool que escribe, porque un ensayo no pasa por los imports que se rompen
 
 La partición de `cargar.mjs` (375) dejó sin re-exportar `snapshot`, `revertir` y `runNode`: `publicar`, `caja-deuda --escribir`, `costo-personal`, `dentro-de-otro`, `worktree` y `gestiones-tanda` fallaron un día entero sin que `medir pipeline` lo viera, porque sus medidores corren en ensayo y el import dinámico solo se evalúa al escribir. Hoy hay un chequeo estático (`fos imports`, P1 `import-sin-export`) que atrapa ESA clase, pero no otras (una ruta rota, un argumento que cambió, un archivo que la tool partida ya no escribe). `node tools/prueba-escribir.mjs` ya escribe de verdad un año con fuente nueva en un worktree descartable (solo `cargar.mjs`).
 Propuesta: extenderla a cada tool que escribe datos o registros (`caja-deuda --escribir`, `costo-personal`/`fos personal --escribir`, `recategorizar-etiquetas --escribir`, `ajustes --agregar`, `publicar`, `generar-correcciones`, `alta-club --escribir`, `fetch-fx-reference` sobre una copia): una lista en `tools/pipeline-tools.json` de qué tools escriben y con qué comando se prueban, cada una sobre una copia del repo en un worktree, comparando archivo por archivo con lo esperado. Que el medidor las corra cuando cambia una de ellas (o un módulo que importa) y que `medir pipeline` se niegue a dar «idéntico» si una tool que escribe no tiene su prueba.
@@ -83,7 +90,7 @@ Terminado cuando: cada tool que escribe tiene su prueba de escritura en un workt
 
 Verificar: manual
 
-### 9. 257 · (Orden 1): Deportes Tolima, sin cargar por una duda sobre el resultado de 2025
+### 10. 257 · (Orden 1): Deportes Tolima, sin cargar por una duda sobre el resultado de 2025
 
 Lo que quedaba de esta línea (la skill `perfil-en-cola` que frenaba la carga) ya está: `cargar.mjs` nunca frena por eso (se avisa y la pregunta queda en la cola). Queda un solo caso: **Deportes Tolima no está en el sitio**
 (no hay JSON de Tolima en la carpeta de Colombia de data) aunque `Clubes/Colombia/Deportes Tolima/` tiene los estados financieros de 2016 a 2025. La duda (`Admin/dudas-por-club.md`, sección Deportes Tolima): el documento de 2025 trae solo las
@@ -95,7 +102,7 @@ Terminado cuando: Tolima está cargado (los años que el documento permite) y la
 
 Verificar: existe data/co/deportestolima-co.json
 
-### 10. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
+### 11. 356 · (Onboarding carga los británicos en iXBRL; Pipeline arregla el conversor XHTML y los defectos de script)
 
 CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing buscó en Companies House los clubes que no tenemos y
 presentan en iXBRL y bajó los 198 `.xhtml` (84 MB, los 68 con PDF oficial al lado renombrados a `-ixbrl`); Onboarding los carga con
@@ -105,10 +112,15 @@ del 40 % del gasto, no se codea; backtest 22 de 67, 33 %); `lote.mjs` frena la I
 (Onboarding 9, lotes 140 y 141): 10 altas, AFC Wimbledon, Barnsley, Burton Albion, Carlisle United, Chesterfield, Exeter City, Gillingham,
 Lincoln City y Shrewsbury Town 2025 y Wigan Athletic 2024. Fleetwood/Jaymel 2022-25 descartado. Terminado cuando: cada club británico con
 iXBRL que presenta y el sitio no tiene está cargado o descartado con motivo. Falta:
-- Pipeline, el conversor: `xhtml-aarsrapport.mjs` rearma las filas por posición cuando el XHTML está maquetado con div o span (12 clubes
-  cuyo `-ixbrl.md` no tiene tablas: Hibernian, Bolton, Bristol Rovers, Cambridge 2024-25, Crewe, Northampton, Oxford, Peterborough,
-  Plymouth, Rotherham, Salford y Tranmere; Blackpool y Reading igual; 17 años esperan), y `lote.mjs` frena en el ensayo un `-ixbrl.md`
-  sin tablas. Sección 8 de la skill de auditoría: medir antes y después sobre los 249 XHTML.
+- HECHO (2026-10-24) el conversor: `xhtml-aarsrapport.mjs` lee las celdas puestas por coordenadas (un `div` con `top` y `left` por celda,
+  los informes que Companies House saca de un PDF) como filas de tabla; medido sobre los 317 XHTML (82 imprimen distinto, 0 frenos nuevos,
+  hechos iXBRL idénticos) y el medidor `xhtml`, que miraba cero archivos, ahora los reconvierte. Reconvertidos con tablas los 55 `.md` de
+  Hibernian, Bolton, Bristol Rovers, Cambridge, Crewe, Northampton, Oxford, Peterborough, Plymouth, Rotherham, Salford, Tranmere, Blackpool y
+  Reading (costo 0). Probado de punta a punta con Bolton 2024-25: `lote.mjs --rehacer --ejecutar --pagar-ia-xhtml` llega a verificar (US$ 0,15;
+  2 dudas ordinarias en la cola, sin relación con el conversor). QUEDA, Onboarding: los `Generados/` de estos clubes son de cuando el `.md` no tenía
+  tablas (`sin_estado`) y localizar no los invalida solo, así que el lote lleva `--rehacer`; `Admin/lotes/lote-143.txt` (13 documentos de
+  Inglaterra, ensayo ~US$ 0,4 por documento con IA) y Hibernian aparte (Escocia); luego las altas como en los lotes 140 y 141. `lote.mjs` no
+  detecta que un `.md` cambió para invalidar localizar (mdSha1 distinto): ver 419.
 - Pipeline, defectos de script (`Admin/registros/frenados-por-script.jsonl`): Morecambe (el importe «(n )» con espacio se lee en
   unidades); Ross County 2025 (el aviso «registro no se actualizó, correr el lote» no cambia al correrlo); `perimetro-senales.mjs` votó
   «individual» en group accounts con s408 (Salford, Falkirk, Exeter; corregidos a mano).
@@ -132,7 +144,7 @@ Verificar: contiene data/leagues.js | Scottish Championship
 Verificar: contiene Admin/CONVENCIONES-DATOS.md | Trust
 Verificar: manual
 
-### 11. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
+### 12. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
 
 FRENO DE DOCUMENTOS DE GRUPO (sale del 356, Fleetwood/Jaymel; regla votada 3 a 0 en CONVENCIONES-DATOS, «Un consolidado de grupo con
 negocios ajenos al club», umbral del 10 % sobre lo impreso). Terminado cuando: `perimetro-senales.mjs` o `cargar.mjs` frenan un documento de
@@ -142,7 +154,7 @@ skill de auditoría (la Auditora). Lo hace Pipeline.
 
 Verificar: manual
 
-### 12. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+### 13. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 LO APROBADO DE PIPELINE 15 QUE NO SE APLICÓ (Auditora 5 y 6, `Admin/registros/auditoria-proceso.jsonl`; el detalle
 en `Admin/Archive/sesion-pipeline-2026-10-21.md`, «Pipeline 15»). Terminado cuando: (a) barrido de lecturas recortadas: `jevDe` de
@@ -163,7 +175,7 @@ Verificar: manual
 
 ## D. Orden de la casa
 
-### 13. 338 · correr todas las auditorías del proyecto (al final de A)
+### 14. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
@@ -172,7 +184,7 @@ CORRIDO a medias (2026-10-23, sesión sola): `audit.js` P0 0 · P1 0 · P2 16 ·
 
 Verificar: manual
 
-### 14. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 15. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
@@ -181,7 +193,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 15. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 16. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -198,7 +210,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 16. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 17. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -234,7 +246,7 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 
 Verificar: manual
 
-### 17. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+### 18. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
@@ -244,14 +256,14 @@ Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la
 HOY (2026-10-23): el aviso `ejercicio-sin-rastro` de este club está silenciado en `tools/audit-ignore.json` (2023-2025 sin depósito; 2022 con el balance en mano) para llevar el P3 a cero; lo que falta es la decisión de 2022, así que la línea de verificación pasó a manual.
 Verificar: manual
 
-### 18. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
+### 19. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
 
 Las 67 etiquetas excluidas en `tools/subsidios-etiquetas.json` las dejaron afuera reglas objetivas (no una confianza baja de Jev): mezcladas con otro concepto, lo que reparte la federación o la liga (solidaridad: `competition_bonus`), subvención de capital imputada, impuestos y deducciones. Guido no las va a revisar una por una (2026-10-22): el proceso es `node tools/fos.mjs etiquetas` (369, hecho). Este punto es lo que queda después de que corrió. La lista corta de 24 etiquetas ya está decidida por Guido (2026-10-23). Falta la decisión de criterio sobre lo que reparte la federación o la liga cuando el documento lo llama «subsidio» o «toetus» (EJL, Contributi Federali, FPF/LPF; hoy excluidas por la REGLA de solidaridad de `Admin/CONVENCIONES-DATOS.md`); se vota con `votacion-de-criterios` con la tabla de `node tools/fos.mjs filas` como evidencia. `node tools/fos.mjs etiquetas --categoria grants_donations --listar --todas` las muestra con su motivo.
 Terminado cuando: las etiquetas excluidas por la regla de la federación o la liga tienen una decisión escrita (entran o quedan afuera, con el caso) y el JSON de decisiones no tiene ninguna «SIN REVISAR».
 
 Verificar: manual
 
-### 19. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
+### 20. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
 
 Tienen `.categorias.json` (Alemania 7, Rusia 2, Ucrania 2, República Checa 1) pero ningún `.verificacion.json`: las listas de prueba que arma `tools/lotes-prueba.mjs` salen de lo verificado y por eso no los incluyen, y `medir-pipeline` frena una tool dirigida a ellos (por ejemplo `bfo-rusia.mjs`, el camino del fisco ruso) porque no hay documentos que medir. Primero averiguar POR QUÉ no tienen verificación, sin asumir (¿su camino de entrada no pasa por la etapa 6, como el de Rusia, que sale del fisco y no del PDF? ¿se cargaron antes de que la etapa existiera? ¿quedaron frenados?). Según la causa: correr verificar donde corresponde, o declarar que su camino no pasa por verificación y darle un medidor propio en `tools/pipeline-tools.json` (y una familia propia en las listas) para que un cambio a su tool se pueda medir.
 DEPENDE DE: el 371 (cerrado).
@@ -262,7 +274,7 @@ Verificar: contiene Admin/lotes/prueba-completa.txt | Clubes/Rusia/
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 20. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 21. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo
@@ -272,7 +284,7 @@ JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios 
 
 Verificar: manual
 
-### 21. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 22. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -285,7 +297,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 22. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 23. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -301,7 +313,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 23. 335 · mails a clubes
+### 24. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -316,7 +328,7 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 24. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 25. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,

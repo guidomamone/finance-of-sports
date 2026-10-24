@@ -1,0 +1,230 @@
+{
+ "pdf": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-24T00:10:16.876Z",
+ "scriptHuella": "f648a869f460",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "1ada84a",
+  "1ada84a"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 20.458546 cierra; además se suman 1 línea(s) fuera de ese total (0.073824)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 5.329070518200751e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 20.53237,
+  "gastos": 34.487594,
+  "financiero": -0.40667,
+  "impuesto": 0,
+  "resultadoImpreso": -14.361894,
+  "resultadoParaCargar": -14.361894,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Professional football",
+   "lado": "ingreso",
+   "M": 7.224757,
+   "pagina": 30,
+   "linea": 610,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Food and beverage",
+   "lado": "ingreso",
+   "M": 2.455033,
+   "pagina": 30,
+   "linea": 611,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Accommodation and leisure",
+   "lado": "ingreso",
+   "M": 2.053798,
+   "pagina": 30,
+   "linea": 612,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Academy income",
+   "lado": "ingreso",
+   "M": 0.611718,
+   "pagina": 30,
+   "linea": 613,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 2.217071,
+   "pagina": 30,
+   "linea": 614,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Retail",
+   "lado": "ingreso",
+   "M": 1.768059,
+   "pagina": 30,
+   "linea": 615,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Corporate sales",
+   "lado": "ingreso",
+   "M": 0.777253,
+   "pagina": 30,
+   "linea": 616,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Events",
+   "lado": "ingreso",
+   "M": 2.768126,
+   "pagina": 30,
+   "linea": 617,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Communications",
+   "lado": "ingreso",
+   "M": 0.218598,
+   "pagina": 30,
+   "linea": 618,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Car parking",
+   "lado": "ingreso",
+   "M": 0.152593,
+   "pagina": 30,
+   "linea": 619,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Fanzone",
+   "lado": "ingreso",
+   "M": 0.21154,
+   "pagina": 30,
+   "linea": 620,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.073824,
+   "pagina": 17,
+   "linea": 273,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 20.285848,
+   "pagina": 17,
+   "linea": 270,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 14.201746,
+   "pagina": 17,
+   "linea": 272,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.018787,
+   "linea": 275
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.425457,
+   "linea": 276
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 278
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "aeebee651da543c74593fbe62c1e7c85bfacab28",
+  "rango": [
+   266,
+   282
+  ],
+  "lineasCargadas": [
+   610,
+   611,
+   612,
+   613,
+   614,
+   615,
+   616,
+   617,
+   618,
+   619,
+   620,
+   273,
+   270,
+   272,
+   275,
+   276,
+   278
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 266 a 282 del .md):\nL266: | 2025 | 2024 |  |  |\nL267: | --- | --- | --- | --- |\nL268: | Notes | £ | £ |  |\nL269: | Turnover | 3 | 20,458,546 | 21,301,502 |\nL270: | Cost of sales | (20,285,848) | (17,971,455) |  |\nL271: | Gross profit | 172,698 | 3,330,047 |  |\nL272: | Administrative expenses | (14,201,746) | (13,913,784) |  |\nL273: | Other operating income | 73,824 | 129,748 |  |\nL274: | Operating loss | 4 | (13,955,224) | (10,453,989) |\nL275: | Interest receivable and similar income | 7 | 18,787 | 14,731 |\nL276: | Interest payable and similar expenses | 8 | (425,457) | (711,166) |\nL277: | Loss before taxation | (14,361,894) | (11,150,424) |  |\nL278: | Tax on loss | 9 | - | - |\nL279: | Loss for the financial year | (14,361,894) | (11,150,424) |  |\nL281: Loss for the financial year is all attributable to the owners of the parent company.\nL282: Total comprehensive income for the year is all attributable to the owners of the parent company.\n\nLO QUE SE CARGA:\n- ingreso · \"Professional football\" · 7.224757 · L610 (de una nota)\n- ingreso · \"Food and beverage\" · 2.455033 · L611 (de una nota)\n- ingreso · \"Accommodation and leisure\" · 2.053798 · L612 (de una nota)\n- ingreso · \"Academy income\" · 0.611718 · L613 (de una nota)\n- ingreso · \"Commercial\" · 2.217071 · L614 (de una nota)\n- ingreso · \"Retail\" · 1.768059 · L615 (de una nota)\n- ingreso · \"Corporate sales\" · 0.777253 · L616 (de una nota)\n- ingreso · \"Events\" · 2.768126 · L617 (de una nota)\n- ingreso · \"Communications\" · 0.218598 · L618 (de una nota)\n- ingreso · \"Car parking\" · 0.152593 · L619 (de una nota)\n- ingreso · \"Fanzone\" · 0.21154 · L620 (de una nota)\n- ingreso · \"Other operating income\" · 0.073824 · L273\n- gasto · \"Cost of sales\" · 20.285848 · L270\n- gasto · \"Administrative expenses\" · 14.201746 · L272\n- financiero · \"Interest receivable and similar income\" · 0.018787 · L275\n- financiero · \"Interest payable and similar expenses\" · -0.425457 · L276\n- impuesto · \"Tax on loss\" · 0 · L278"
+ }
+}

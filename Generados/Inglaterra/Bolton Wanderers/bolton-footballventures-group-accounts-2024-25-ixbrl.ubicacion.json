@@ -1,43 +1,455 @@
 {
  "pdf": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Bolton Wanderers/bolton-footballventures-group-accounts-2024-25-ixbrl.md",
- "mdSha1": "5ed4bb387edfdfc099c4291bd1cd2a0810c0ac27",
+ "mdSha1": "9a6de728a1cc25e2a5c4ae34c403cac704bc5bf9",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-21T18:17:17.985Z",
+ "generado": "2026-10-24T00:09:53.486Z",
  "perimetroClub": "consolidado",
  "bloques": {
   "b1": {
+   "pagina": 2,
+   "lineas": [
+    14,
+    15
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    21
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    28
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    34,
+    35
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    48,
+    58
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    159,
+    162
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    168,
+    169
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    173,
+    184
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    266,
+    279
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    290,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    329,
+    350
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    364,
+    376
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    385,
+    388
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    392,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    409,
+    433
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    442,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    447,
+    448
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    454,
+    457
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 23,
+   "lineas": [
+    464,
+    465
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    469,
+    472
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    479,
+    480
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    484,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    492,
+    493
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    497,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 26,
+   "lineas": [
+    501,
+    504
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 26,
+   "lineas": [
+    508,
+    515
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 26,
+   "lineas": [
+    522,
+    523
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 27,
+   "lineas": [
+    527,
+    528
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 27,
+   "lineas": [
+    533,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 27,
+   "lineas": [
+    538,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 27,
+   "lineas": [
+    546,
+    547
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 28,
+   "lineas": [
+    551,
+    551
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 28,
+   "lineas": [
+    568,
+    569
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 29,
+   "lineas": [
+    577,
+    586
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 29,
+   "lineas": [
+    593,
+    594
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 30,
+   "lineas": [
+    605,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 31,
+   "lineas": [
+    634,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 31,
+   "lineas": [
+    673,
+    674
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 32,
+   "lineas": [
+    678,
+    699
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 33,
+   "lineas": [
+    708,
+    724
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 33,
+   "lineas": [
+    731,
+    732
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 34,
+   "lineas": [
+    736,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
    "pagina": 35,
    "lineas": [
-    1443,
-    1448
+    759,
+    766
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 35,
+   "lineas": [
+    770,
+    790
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 36,
+   "lineas": [
+    799,
+    828
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 36,
+   "lineas": [
+    834,
+    836
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 37,
+   "lineas": [
+    840,
+    860
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 37,
+   "lineas": [
+    866,
+    867
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 38,
+   "lineas": [
+    873,
+    874
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 38,
+   "lineas": [
+    878,
+    884
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 39,
+   "lineas": [
+    893,
+    894
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 40,
+   "lineas": [
+    904,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 41,
+   "lineas": [
+    917,
+    939
+   ],
+   "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
- "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
- "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿El PDF 'bolton-footballventures-group-accounts-2024-25-ixbrl.pdf' carece de un estado de resultados (profit and loss account) del ejercicio cerrado al 30-06-2025 legible en la transcripción?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "La transcripción solo contiene un bloque con cifras, el de inversiones en subsidiarias (pág. 35, b1); el estado de resultados podría estar en páginas no transcritas (iXBRL).",
-   "bloques": [
-    "b1"
-   ],
-   "afecta_carga": true
-  }
+ "sin_estado": false,
+ "estado": [
+  "b9"
  ],
- "observaciones": "El único bloque con cifras (b1, pág. 35) es la nota de 'Shares in subsidiaries' (coste de inversiones en filiales), que no forma parte del estado de resultados. No hay estado de resultados consolidado ni individual en la transcripción; probablemente la extracción del iXBRL perdió las tablas. Conviene revisar el PDF original."
+ "notas_ingresos": [
+  "b36",
+  "b39"
+ ],
+ "notas_gastos": [
+  "b37",
+  "b39"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas indican '£' como unidad en el encabezado de columnas (2025 £ / 2024 £), importes impresos completos (ej. 425,457).",
+ "moneda": "GBP",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado consolidado: Group Statement of Comprehensive Income (b9). No se imprime cuenta de resultados individual. b36 desglosa turnover por clase de negocio e ingresos por intereses; b37 desglosa el resultado operativo y los costes de personal; b39 abre los intereses cobrados (nota 7) y pagados (nota 8); la conciliación fiscal de b39 no se carga."
 }
