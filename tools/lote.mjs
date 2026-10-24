@@ -26,10 +26,12 @@ import { clubDeRuta } from './carpetas-clubes.mjs';
 import { resolverDeporte, olvidarDeportes } from './deporte-club.mjs'; // el deporte de cada documento antes de Jev y Claude
 import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
 import { tomarCandado, soltarCandado } from './candado.mjs';
+import { negarSiSeMide } from './candado-medicion.mjs';
 import { faseEnsayo, faseSumar, faseCategorizar, faseResumen, faseResultado, faseTabla } from './lote-final.mjs';
 import { faseLeer } from './lote-leer.mjs';
 import { fasePreparar } from './lote-preparar.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
+negarSiSeMide('lote.mjs', { si: argvAntes[1]?.endsWith('lote.mjs') && argvAntes.includes('--ejecutar'), argv: argvAntes }); // corre las etapas y reescribe el registro: no mientras medir pipeline mide
 export const { verificarLista } = await import('./verificar.mjs');
 export const { ajusteDe, ajustePerimetroDe } = await import('./ajustes.mjs');
 export const { loadSite } = await import('./datos-sitio.mjs');

@@ -32,6 +32,12 @@ if (A[0] === '--check') {
   const textos = fuentes.map((f) => [f, readFileSync(resolve(TOOLS, f), 'utf8')]);
   const sueltas = fuentes.filter((f) => !listados.has(f) && !textos.some(([g, t]) => g !== f && t.includes(f.replace(/\.[^.]+$/, ''))));
   if (sueltas.length) console.log(`Tools que no están en la lista ni las llama otra tool (¿se corren a mano? agregalas a tools/fos-comandos.json, o son candidatas a borrar):\n  ${sueltas.join('\n  ')}`);
+  // el candado de la medición (tools/candado-medicion.mjs): las tools de CON_CANDADO siguen llamándolo; las demás que escriben en Admin/registros se listan (informativo: la mayoría son etapas que corre lote.mjs, que sí lo llama)
+  const { CON_CANDADO } = await import('./candado-medicion.mjs');
+  const texto = new Map(textos);
+  for (const t of Object.keys(CON_CANDADO)) if (!/negarSiSeMide\(/.test(texto.get(t) || '')) { console.log(`«${t}» figura en candado-medicion.mjs (CON_CANDADO) y ya no llama a negarSiSeMide: una medición en curso no la frena`); mal++; }
+  const escriben = textos.filter(([f, t]) => !CON_CANDADO[f] && !/^(probar-|prueba-|medir-|candado)/.test(f) && /writeFileSync|appendFileSync/.test(t) && /Admin.{0,6}registros|'registros'/.test(t) && !/negarSiSeMide\(/.test(t)).map(([f]) => f);
+  if (escriben.length) console.log(`Escriben en Admin/registros y no chequean el candado de la medición (${escriben.length}, informativo; las etapas del lote quedan cubiertas por lote.mjs --ejecutar):\n  ${escriben.join(' ')}`);
   console.log(mal ? `\n${mal} script(s) faltan` : '\nla lista está al día');
   process.exit(mal ? 1 : 0);
 }

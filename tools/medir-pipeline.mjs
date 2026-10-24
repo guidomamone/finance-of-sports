@@ -154,6 +154,7 @@ if (A.includes('--ensayo')) { process.exit(0); }
 const CANDADO = join(BASE_DIR, '_corriendo');
 mkdirSync(BASE_DIR, { recursive: true });
 writeFileSync(CANDADO, JSON.stringify({ pid: process.pid, desde: new Date().toISOString(), tools: nombres }));
+process.env.FOS_MIDIENDO = '1'; // los medidores y las tools que corren como hijos de la medición no se niegan (tools/candado-medicion.mjs)
 process.on('exit', () => { try { rmSync(CANDADO, { force: true }); } catch { /* ya no está */ } });
 for (const s of ['SIGINT', 'SIGTERM']) process.on(s, () => process.exit(130));
 

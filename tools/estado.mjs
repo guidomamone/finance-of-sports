@@ -23,12 +23,14 @@
 import { readFileSync, existsSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { negarSiSeMide } from './candado-medicion.mjs';
 import { etapaDe, rubrosViejo, PARCIALES } from './etapa-doc.mjs';
 import { estimarExtraerSinBloques } from './extraer.mjs';
 import { GRUPOS, GRUPO, grupoDe } from './grupos-pais.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
+negarSiSeMide('estado.mjs'); // regenera el registro: no mientras medir pipeline mide
 const flagVal = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
 const dir = flagVal('--dir');
 const regPath = resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl');

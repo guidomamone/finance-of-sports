@@ -153,6 +153,8 @@
   "reemplazar.mjs": "orden: reemplazos en varios archivos (el mismo texto, o una lista de cambios exactos por línea), con ensayo por defecto",
   "probar-patron.mjs": "prueba: patron.mjs en un repo de juguete",
   "probar-todo-contexto.mjs": "prueba: el contexto de un punto de todo.mjs en un repo de juguete",
+  "votacion-nueva.mjs": "orden: arma el archivo del caso de una votación de criterios desde una plantilla (escribe un .md en Admin/mediciones/ solo con --escribir)",
+  "probar-votacion-nueva.mjs": "prueba: votacion-nueva.mjs (cuánto mueve, lista fija de rutas, formato del voto)",
   "probar-partir-fases.mjs": "prueba: partir-fases.mjs y lexico-js.mjs sobre una función de juguete",
   "probar-reemplazar.mjs": "prueba: reemplazar.mjs en un repo de juguete",
   "muestra.mjs": "orden: una muestra repartida de las líneas que cumplen un patrón (solo lee)",

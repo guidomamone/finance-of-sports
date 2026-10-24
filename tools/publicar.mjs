@@ -24,6 +24,8 @@ import { GENERADORES } from './generadores.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ENSAYO = process.argv.includes('--ensayo'); // ANTES de importar cargar.mjs: al importarse recorta process.argv
+const { negarSiSeMide } = await import('./candado-medicion.mjs');
+negarSiSeMide('publicar.mjs', { si: !ENSAYO }); // regenera lo publicado: no mientras medir pipeline mide
 const { snapshot, publicarCambios, revertir, runNode } = await import('./cargar.mjs');
 const asset = (txt) => ((txt || '').match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1] || null;
 

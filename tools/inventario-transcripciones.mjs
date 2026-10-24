@@ -40,6 +40,7 @@ import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, s
 import { resolve, join, relative, dirname, basename } from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
+import { negarSiSeMide } from './candado-medicion.mjs';
 import { verifyNumbers } from './verify-numbers.mjs';
 import { derivado } from './rutas.mjs';
 import { periodoDe, xhtmlHermano } from './periodo.mjs';
@@ -52,6 +53,7 @@ const args = process.argv.slice(2);
 const flagVal = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
 const doVerify = args.includes('--verificar');
 const listState = flagVal('--listar');
+negarSiSeMide('inventario-transcripciones.mjs', { si: !listState }); // reescribe el registro (--listar solo lo lee): no mientras medir pipeline mide
 const dirFilter = flagVal('--dir');
 const soloArg = flagVal('--solo');
 const limit = flagVal('--limit') ? Number(flagVal('--limit')) : Infinity;

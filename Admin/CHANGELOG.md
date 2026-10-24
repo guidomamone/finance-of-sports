@@ -20,6 +20,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1043 — votacion-nueva.mjs: el archivo del caso de una votación desde una plantilla [438 · votacion-nueva.mjs, probar-votacion-nueva.mjs]
+
+- `node tools/fos.mjs votacion nueva --id --slug --titulo --opcion "A=texto|monto" … [--hechos f.md] [--total n] [--club id] [--palabras "a,b"] [--escribir]` arma `Admin/mediciones/<id>-votacion-<slug>.md` con la marca, Conclusión y Destino, el cuánto mueve de la skill (sección 4: la diferencia entre opciones sobre el total, 1 % o menos no se vota), la lista fija de qué abrir (renglones de `CONVENCIONES-DATOS.md` por palabra, JSON del club y de su país) y el formato JSON del voto con `no_abri`. Ensayo por defecto; no pisa un archivo.
+- Queda del 438: la verificación de citas por script, el voto en JSON contado por una tool, el votante único barato y la comparación contra 3 votaciones anteriores.
+- Medición: tools de orden, fuera del pipeline: `probar-votacion-nueva.mjs` (8 casos ok) y `medir pipeline` sin diferencias. Sin revisión independiente.
+
+## Versión 1042 — las tools que escriben registros se niegan mientras medir pipeline mide [443 · candado-medicion.mjs, estado.mjs, inventario-transcripciones.mjs, publicar.mjs, cola.mjs, ajustes.mjs, lote.mjs, medir-pipeline.mjs, fos.mjs, probar-medir-pipeline.mjs]
+
+- `tools/candado-medicion.mjs` (`negarSiSeMide`): con `Admin/mediciones/pipeline/_corriendo` y su pid vivo, `estado`, `inventario-transcripciones`, `publicar` (sin `--ensayo`), `cola --responder/--corregir-categoria`, `ajustes --agregar/--anular` y `lote --ejecutar` salen con 3 y dicen el pid. `--ignorar-medicion` es la salida de emergencia; `medir-pipeline` marca a sus hijos con `FOS_MIDIENDO=1` y esos no se niegan.
+- `fos --check` comprueba que esas tools sigan llamándolo y lista (informativo, 58) las que escriben en `Admin/registros` sin chequearlo; queda `cargar.mjs --escribir` y `patron/decision/silenciar` sin candado. `probar-medir-pipeline.mjs`: 6 casos nuevos (se niega, no escribe, modo sin escritura, emergencia, hijo, pid muerto).
+- Verificado a mano (443): probar-medir-pipeline.mjs: la tool se niega con el candado vivo (6 casos nuevos ok); fos --check lista las 58 escritoras de registros sin chequearlo y verifica las 6 que lo llaman
+- Medición: `medir pipeline` (9 medidores, hasta el lote completo): idéntico; la primera corrida dio `escribir` vacío por `tool-sin-clasificar` de las tools nuevas, ya clasificadas. Veredicto de infraestructura (`patron --sin-documentos`). Sin revisión independiente.
+
 ## Versión 1041 — aviso de cambio de formato del balance, y fos cerrar ya no borra el punto a medias [446 · cambio-formato.js, cargar-ejercicio.mjs, audit-chequeos-3.js, audit.js, cerrar.mjs]
 
 - `tools/cambio-formato.js`: ingresos de UNA línea `lump_football_operations` contra más de una (o al revés) respecto del año inmediatamente anterior cargado. `cargar.mjs` lo avisa en la propuesta con el texto sugerido de la `publicNote` (SønderjyskE 2025 lo dispara); `audit.js` da el P3 `cambio-de-formato-sin-nota` (hoy 23 club-años, punto 447).

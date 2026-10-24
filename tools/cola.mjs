@@ -42,6 +42,7 @@ import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
+import { negarSiSeMide } from './candado-medicion.mjs';
 import { rarezasEnRango, describir } from './rarezas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -299,6 +300,7 @@ export function cerrarPerfilSabido(detalle, nota) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
+  negarSiSeMide('cola.mjs', { si: A.includes('--responder') || A.includes('--corregir-categoria') }); // escriben la cola: no mientras medir pipeline mide
   // --corregir-categoria: Guido fija la categoría de UNA fila de un documento aunque la categorización no haya tenido dudas (UC
   // 2025: "Costo de ventas" sin desglose -> "sin desglosar por la fuente", no "Otros gastos"). Crea el caso y su respuesta de una vez; la toma
   // cargar.mjs en la próxima corrida (respuestaCat) y queda como precedente del club. La etiqueta se escribe como en el documento.

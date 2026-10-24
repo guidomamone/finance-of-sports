@@ -39,7 +39,7 @@ w('tools/fake-medidor.mjs', [
   "import { readFileSync, writeFileSync } from 'node:fs';",
   "import { VALOR } from './fake-tool.mjs';",
   "import { existsSync, copyFileSync } from 'node:fs';",
-  "const candado = `${import.meta.dirname}/../Admin/mediciones/pipeline/_corriendo`; if (existsSync(candado)) copyFileSync(candado, `${import.meta.dirname}/../Admin/mediciones/pipeline/_candado-visto`);",
+  "const candado = `${import.meta.dirname}/../Admin/mediciones/pipeline/_corriendo`; if (existsSync(candado)) { copyFileSync(candado, `${import.meta.dirname}/../Admin/mediciones/pipeline/_candado-visto`); writeFileSync(`${import.meta.dirname}/../Admin/mediciones/pipeline/_env-visto`, String(process.env.FOS_MIDIENDO)); }",
   "const dir = import.meta.dirname;",
   "const d = JSON.parse(readFileSync(`${dir}/dato.json`, 'utf8')).d;",
   "const e = JSON.parse(readFileSync(`${dir}/escribe.json`, 'utf8')); writeFileSync(`${dir}/escribe.json`, JSON.stringify({ n: e.n + 1 }) + '\\n'); // efecto al costado a propósito",
@@ -60,6 +60,7 @@ let r = medir();
 caso('un cambio sin efecto da idéntico y sale con 0', r.status === 0 && /idéntico/.test(r.out) && registro().at(-1)?.resultado === 'idéntico', r.out.slice(-300));
 const visto = join(T, 'Admin/mediciones/pipeline/_candado-visto');
 caso('mientras mide hay un candado con el pid de la corrida, y al terminar ya no está', existsSync(visto) && Number(JSON.parse(readFileSync(visto, 'utf8')).pid) > 0 && !existsSync(join(T, 'Admin/mediciones/pipeline/_corriendo')), existsSync(visto) ? readFileSync(visto, 'utf8') : 'el medidor no vio el candado');
+caso('los hijos de la medición ven FOS_MIDIENDO=1 (las tools que escriben registros no se niegan)', existsSync(join(T, 'Admin/mediciones/pipeline/_env-visto')) && leer('Admin/mediciones/pipeline/_env-visto') === '1');
 caso('la tool queda como se editó (no la versión de git)', leer('tools/fake-tool.mjs').includes('un comentario'));
 caso('lo que el medidor escribe en un archivo trackeado se revierte', g('status', '--porcelain', 'tools/escribe.json').stdout === '' && /revertido/.test(r.out), g('status', '--porcelain').stdout);
 const claveUno = registro().at(-1)?.medidores?.[0]?.despues;
@@ -120,6 +121,23 @@ w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 8;\n');
 r = medir('--explicacion', 'el medidor no tiene nada que imprimir en este caso');
 caso('un medidor vacío con --explicacion sale con 0 y queda «diferencias, todas explicadas»', r.status === 0 && /^1 diferencias, todas explicadas$/.test(registro().at(-1)?.resultado || ''), r.out.slice(-300) + JSON.stringify(registro().at(-1)?.resultado));
 volver();
+
+// 9. una tool que escribe registros se niega mientras hay una medición en curso (tools/candado-medicion.mjs)
+copyFileSync(join(ROOT, 'tools', 'candado-medicion.mjs'), join(T, 'tools', 'candado-medicion.mjs'));
+w('tools/fake-escritor.mjs', "import { writeFileSync } from 'node:fs';\nimport { negarSiSeMide } from './candado-medicion.mjs';\nnegarSiSeMide('fake-escritor.mjs', { si: !process.argv.includes('--solo-leer') });\nwriteFileSync(`${import.meta.dirname}/../escribio.txt`, 'si');\n");
+const escritor = (...a) => { rmSync(join(T, 'escribio.txt'), { force: true }); const r = spawnSync('node', ['tools/fake-escritor.mjs', ...a], { cwd: T, encoding: 'utf8', env: { ...process.env, ...(a.includes('--hijo') ? { FOS_MIDIENDO: '1' } : {}) } }); return { status: r.status, out: (r.stdout || '') + (r.stderr || ''), escribio: existsSync(join(T, 'escribio.txt')) }; };
+const candadoDir = join(T, 'Admin/mediciones/pipeline'); mkdirSync(candadoDir, { recursive: true });
+r = escritor();
+caso('sin medición en curso la tool escribe', r.status === 0 && r.escribio, r.out);
+w('Admin/mediciones/pipeline/_corriendo', JSON.stringify({ pid: process.pid }));
+r = escritor();
+caso('con una medición en curso (pid vivo) la tool se niega con 3, dice el pid y no escribe', r.status === 3 && !r.escribio && r.out.includes(`pid ${process.pid}`), r.out);
+caso('un modo que no escribe (la condición `si`) no se niega', escritor('--solo-leer').status === 0);
+caso('--ignorar-medicion deja pasar (emergencia)', escritor('--ignorar-medicion').escribio);
+caso('un hijo de la medición (FOS_MIDIENDO=1) no se niega', escritor('--hijo').escribio);
+w('Admin/mediciones/pipeline/_corriendo', JSON.stringify({ pid: 2147483000 }));
+caso('un candado de un pid muerto no cuenta', escritor().escribio);
+rmSync(join(T, 'Admin/mediciones/pipeline/_corriendo'), { force: true });
 
 rmSync(T, { recursive: true, force: true });
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');

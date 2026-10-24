@@ -22,6 +22,7 @@
 import { readFileSync, appendFileSync, existsSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
+import { negarSiSeMide } from './candado-medicion.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl');
@@ -100,6 +101,7 @@ export function ajustePerimetroDe(pdf) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2);
   const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
+  negarSiSeMide('ajustes.mjs', { si: A.includes('--agregar') || A.includes('--anular') }); // escriben los ajustes: no mientras medir pipeline mide
   // ANULAR: el archivo es un historial y gana el último registro de cada clave; para sacar un ajuste que ya no hace falta (el
   // script ahora lo resuelve solo) se agrega un registro `anulado` con la misma clave (pdf + campo + etiqueta en fila/categoria/desglose,
   // + valor en incluye/cero-real). Caso: los ajustes de ingresos de Bologna 2019-2022, resueltos por la nota del subtotal.
