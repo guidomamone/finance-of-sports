@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1019 — Archivados los lotes 133, 134, 140 y 141 [432]
+
+- Los cuatro (británicos del 356, ya cargados o devueltos a otros puntos) pasan a `Admin/Archive/lotes/` con `fos archivar`; solo el propio punto del TODO los citaba. Un ensayo de lote ya no avisa «sigue activa» por ellos (los demás avisos son de otras listas).
+- Medición: no hay cambio de tools.
+
 ## Versión 1018 — Siete puntos más de lo que dejó pensando el 399: comentarios de lote, fos mapa, pruebas y orden [427 · 428 · 429 · 430 · 431 · 432 · 433]
 
 - 427 (comentarios de `lote*.mjs`: 247 líneas, 25 con historia), 428 (`fos mapa` con las llaves reales y una opción corta), 429 (prueba de `partir-fases` y `lexico-js`), 430 (`--envolver`), 431 (guardar el método que partió `audit.js`), 432 (archivar los lotes 133, 134, 140 y 141), 433 (`eslint no-undef` en el repo; necesita el ok de Guido para la dependencia).
