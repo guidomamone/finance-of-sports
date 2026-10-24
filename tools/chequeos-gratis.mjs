@@ -32,7 +32,7 @@
 // Es 100% gratis: pdftotext y aritmética. No llama a ninguna API.
 // ============================================================================
 
-import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import vm from 'node:vm';

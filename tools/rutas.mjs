@@ -31,7 +31,7 @@
 //   node tools/rutas.mjs --mudar [--aplicar]   mueve los derivados que todavía estén en Clubes/ a Generados/ (ensayo sin --aplicar)
 // ============================================================================
 
-import { existsSync, mkdirSync, readdirSync, renameSync, statSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, renameSync } from 'node:fs';
 import { resolve, dirname, relative, join, isAbsolute } from 'node:path';
 
 export const ROOT = resolve(import.meta.dirname, '..');

@@ -22,7 +22,7 @@
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { SESION } from './sesion.mjs'; // gasto por sesión
 import { resolve, dirname, basename, extname, join } from 'node:path';
-import { derivado, ubicar } from './rutas.mjs';
+import { derivado } from './rutas.mjs';
 import { execFileSync } from 'node:child_process';
 
 const MISTRAL_SCANNED_MARKER = 'ESCANEADO, TRANSCRIPTO CON MISTRAL OCR';

@@ -8,7 +8,7 @@ import { rutaData } from './data-clubes.js';
 import { parseNumber } from './datos-sitio.mjs';
 import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs';
 import { combinar as combinarEntidades } from './suma-entidades.mjs';
-import { analizar, categoriasAlDia, huellaVerificar, clubDeRuta, derivado, agregarCaso, casoYRespuesta, ajusteDe, ajustePerimetroDe, cierrePorVecinos, periodoDe, xhtmlHermano, categoriasDeDeporte, cerosDeDeporte, ESCRIBIR, REEMPLAZAR, HOY, quien, perimetroHeredado, perimetroCercano, porQueNoListo } from './cargar.mjs';
+import { analizar, categoriasAlDia, huellaVerificar, clubDeRuta, derivado, casoYRespuesta, ajusteDe, ajustePerimetroDe, cierrePorVecinos, periodoDe, xhtmlHermano, categoriasDeDeporte, cerosDeDeporte, ESCRIBIR, REEMPLAZAR, HOY, quien, perimetroHeredado, perimetroCercano, porQueNoListo } from './cargar.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 

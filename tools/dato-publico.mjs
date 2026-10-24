@@ -15,7 +15,7 @@
 //   node tools/dato-publico.mjs --club <clubId> --anio <año>                                    el club del sitio (nombre y país de data/clubs.js)
 //   --json imprime el resultado como JSON (lo usa estadio-sponsor.mjs)
 // ============================================================================
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
 

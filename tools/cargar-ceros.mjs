@@ -5,7 +5,7 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { citaPAE, citaSADpt } from './cargar-escribir.mjs';
-import { derivado, agregarCaso, respuestasDonde, cerrarPerfilSabido, pendientes, guardarPerfil, perfilVigente, perfilCercano, anioDeDoc, VENTANA_PERFIL, ajusteDe, ajustesDe, ceroRealDelClub, VERSION_AMPLIADO, GASTOS_RE, MAX_SIN_CAT, norm, r6 } from './cargar.mjs';
+import { derivado, respuestasDonde, cerrarPerfilSabido, pendientes, guardarPerfil, perfilVigente, perfilCercano, anioDeDoc, VENTANA_PERFIL, ajusteDe, ajustesDe, ceroRealDelClub, VERSION_AMPLIADO, GASTOS_RE, MAX_SIN_CAT, norm, r6 } from './cargar.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 

@@ -4,7 +4,7 @@
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { dirname } from 'node:path';
-import { precedenteFamilia, agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, ajustesDe, esLineaJunta, datosCategoria, ARCHIVO_APRENDIDAS, padreDe, padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca, NOMBRE_CAT, claveFamilia, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE, UMBRAL_CLAUDE, norm, r6 } from './cargar.mjs';
+import { precedenteFamilia, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, ajustesDe, esLineaJunta, datosCategoria, ARCHIVO_APRENDIDAS, padreDe, padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca, NOMBRE_CAT, claveFamilia, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE, UMBRAL_CLAUDE, norm, r6 } from './cargar.mjs';
 
 // 4. La categoría de cada fila: la escalera, la cola humana y el escalón de materialidad.
 export function faseCategorias(ctx) {

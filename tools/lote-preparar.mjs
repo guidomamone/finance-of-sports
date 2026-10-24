@@ -5,7 +5,6 @@ import { readFileSync, writeFileSync, existsSync, unlinkSync, readdirSync, appen
 import { resolve, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
-import { validar } from './validar-bloques.mjs';
 import { derivado } from './rutas.mjs';
 import { etapaDe } from './etapa-doc.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';

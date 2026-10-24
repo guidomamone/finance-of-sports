@@ -6,7 +6,6 @@ import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname, relative, isAbsolute, sep } from 'node:path';
 import { createHash } from 'node:crypto';
 import { deporteEnFrase } from './deporte-club.mjs';
-import { linea } from './perimetro-senales.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 

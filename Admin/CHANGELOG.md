@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1067 — imports sin uso de 26 tools del pipeline [alta-claude.mjs, alta-club-backtest.mjs, alta-club-registro.mjs, cargar-categorias.mjs, cargar-ceros.mjs, cargar-ejercicio.mjs, cargar-inicio.mjs, chequeos-gratis.mjs, claude-api-transcribe.mjs, costo-personal.mjs, dato-publico.mjs, dentro-de-otro.mjs, estadio-sponsor.mjs, gemini-transcribe.mjs, glosar-rubros.mjs, inventario-transcripciones.mjs, jev-categorizar.mjs, lookup-club-league.js, lote-preparar.mjs, mistral-ocr-transcribe.mjs, perimetro-senales-a3.mjs, perimetro-senales-base.mjs, reparar-pdf.mjs, rutas.mjs, suggest-category-precedent.mjs, xhtml-aarsrapport.mjs]
+
+- Los imports sin uso pasan de 209 a 174 (`indefinidos --imports`); quedan 7 archivos grandes (alta-club, lote, verificar, caja-deuda, cargar, resolver-inventario, categorizar-claude). Se quitaron con un script de una sola vez que edita solo la lista de importados; 4 imports que quedaban vacíos se borraron enteros.
+- Medición: lote completo (1004 documentos), 11 medidores idénticos salvo el aviso `imports-sin-uso` de audit (uno menos, uno más), explicado por el resumen.
+
 ## Versión 1066 — imports sin uso de perimetro-senales.mjs [perimetro-senales.mjs]
 
 - Se quitan `relative`, `isAbsolute` y `sep` (sin uso). Una medición completa tarda unos 10 minutos: las demás tools del pipeline se limpian de a grupos de unas pocas, no de a una.

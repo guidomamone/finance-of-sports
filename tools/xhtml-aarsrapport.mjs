@@ -30,7 +30,7 @@
 //   node tools/xhtml-aarsrapport.mjs "Clubes/Dinamarca/<Club>" [...]   todos los .xhtml de esa carpeta
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, appendFileSync, statSync } from 'node:fs';
-import { resolve, join, dirname, basename } from 'node:path';
+import { resolve, join, basename } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';

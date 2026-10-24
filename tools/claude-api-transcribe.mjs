@@ -42,7 +42,7 @@ import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, s
 import { SESION } from './sesion.mjs'; // gasto por sesión
 import { tmpdir } from 'node:os';
 import { resolve, dirname, basename, extname, join } from 'node:path';
-import { derivado, ubicar } from './rutas.mjs';
+import { derivado } from './rutas.mjs';
 import { execFileSync, spawnSync } from 'node:child_process';
 
 const MODEL = 'claude-sonnet-5-5';

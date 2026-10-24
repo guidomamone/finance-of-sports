@@ -118,7 +118,7 @@ const SCANNED_WARNING = `> **⚠️ ESCANEADO, TRANSCRIPTO CON MISTRAL OCR (ver 
 
 `;
 
-import { derivado, ubicar } from './rutas.mjs';
+import { derivado } from './rutas.mjs';
 import { diagnosticar, limpiar as limpiarCopia } from './reparar-pdf.mjs';
 
 async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, outSuffix = '', scannedFlag = false) {
@@ -345,7 +345,7 @@ async function main() {
     if (faltan.length) { console.error(`el .md no tiene la marca «--- pág. ${faltan.join(', ')} ---»`); process.exit(1); }
     console.log(`${pdfP}: rehacer pág(s). ${pags.join(', ')} con Mistral OCR (~US$ ${(pags.length / 1000 * PRICE_PER_1000_PAGES).toFixed(3)})${args.includes('--ejecutar') ? '' : ' — ENSAYO: agregá --ejecutar'}`);
     if (!args.includes('--ejecutar')) return;
-    const { mkdtempSync, copyFileSync, rmSync } = await import('node:fs'); const { tmpdir } = await import('node:os');
+    const { mkdtempSync, rmSync } = await import('node:fs'); const { tmpdir } = await import('node:os');
     const tmp = mkdtempSync(join(tmpdir(), 'rehacer-pagina-')); const nuevas = new Map();
     try {
       for (const n of pags) {

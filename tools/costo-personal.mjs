@@ -4,7 +4,7 @@
 // `node tools/caja-deuda.mjs --personal …` (ver el despachador de caja-deuda.mjs). Usa los ayudantes de caja-deuda.mjs (sitio, pedirJev, filas del .md…) y caja-deuda.mjs
 // importa de acá: el ciclo es a propósito y seguro porque ninguna constante de este módulo usa un ayudante al evaluarse (solo adentro de funciones).
 // ============================================================================
-import { readFileSync, existsSync, writeFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import * as EV from './evidencia-club.mjs';

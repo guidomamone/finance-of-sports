@@ -11,7 +11,7 @@ import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAl
 import { preguntarAClaude } from './alta-claude.mjs';
 import { anioDelNombre, SERIES_FX } from './alta-club-lectura.mjs';
 import { paisDe, MONEDAS, MONEDAS_A_LA_PAR, NO_BALANCE } from './alta-club-tablas.mjs';
-import { ARGS, flagVal, ANIO_FORZADO, CLAUDE, FORZAR, MODELO, LIMITE, TOPE_USD, norm, rel, campo, cargarSitio, analizar } from './alta-club.mjs';
+import { ARGS, flagVal, ANIO_FORZADO, CLAUDE, FORZAR, MODELO, LIMITE, TOPE_USD, norm, rel, cargarSitio, analizar } from './alta-club.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 

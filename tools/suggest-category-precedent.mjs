@@ -30,7 +30,7 @@
 //   node tools/suggest-category-precedent.mjs oncecaldas "DIMAYOR" --json
 // ============================================================================
 
-import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { archivosData, rutaData } from './data-clubes.js';

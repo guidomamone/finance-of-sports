@@ -35,11 +35,11 @@
 // API: POST https://api.typesafe.ai/v1/systemone, Authorization: Bearer <key>, ver https://docs.typesafe.ai/
 // ============================================================================
 
-import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, appendFileSync, existsSync } from 'node:fs';
 import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { abrirCache } from './respuestas-cache.mjs';
-import { derivado, ubicar } from './rutas.mjs';
+import { derivado } from './rutas.mjs';
 import { deporteDeClub, resolverDeporte, MENSAJE_SIN_DEPORTE, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // el deporte del club: su lista de categorías y los ejemplos del mismo deporte primero
 import { paisDeClub, afinidad } from './pais-club.mjs'; // el país del club en el texto y los ejemplos del mismo país primero
 import { lineasAprendidas } from './memoria-categorias.mjs';

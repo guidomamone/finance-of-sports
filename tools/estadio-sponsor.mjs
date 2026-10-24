@@ -29,8 +29,7 @@ import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 
 import { resolve } from 'node:path';
 import { createRequire } from 'node:module';
 import vm from 'node:vm';
-import { deporteDeClub } from './deporte-club.mjs';
-import { pega, cargar, pagina, capacidad, leerPagina, temporadaDe, delClub, LOCAL, paginaLocal, LANG_PAIS, fichaDe, api, enlaceDelClub, camisetasDePagina, valorDelEjercicio, CTX_DIR } from './estadio-sponsor-wikipedia.mjs';
+import { pega, cargar, pagina, leerPagina, temporadaDe, delClub, LOCAL, paginaLocal, LANG_PAIS, fichaDe, api, enlaceDelClub, camisetasDePagina, valorDelEjercicio, CTX_DIR } from './estadio-sponsor-wikipedia.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const REF = resolve(ROOT, 'tools', 'club-league-reference');

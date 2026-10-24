@@ -10,7 +10,6 @@ import * as EV from './evidencia-club.mjs';
 import { preguntarAClaude, paginas as paginasDe } from './alta-claude.mjs';
 import { archivosData } from './data-clubes.js';
 import { anioDelNombre } from './alta-club-lectura.mjs';
-import { escribir } from './alta-club-escribir.mjs';
 import { flagVal, MODELO, LIMITE, TOPE_USD, norm, ultimoDia, pad2, sha1, estadoTranscripciones } from './alta-club.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');

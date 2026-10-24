@@ -25,7 +25,7 @@
 // Lo demás de esta cabecera, tal cual: Admin/NOTAS-DE-TOOLS.md, «alta-claude.mjs».
 // ============================================================================
 
-import { readFileSync, appendFileSync } from 'node:fs';
+import { appendFileSync } from 'node:fs';
 import { SESION } from './sesion.mjs'; // gasto por sesión
 import { resolve } from 'node:path';
 import { readKey, costOf } from './categorizar-claude.mjs';

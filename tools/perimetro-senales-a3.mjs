@@ -6,7 +6,7 @@ import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { createHash } from 'node:crypto';
 import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs';
-import { MODELOS_A2, SOLO_CACHE, UMBRAL_C1, UMBRAL_C2, tablasDeIngresos, totalDe, aEscala, textoControladas, preguntarJev, UMBRAL_A2_CONS, UMBRAL_A2_IND, pasoA2, linea } from './perimetro-senales.mjs';
+import { MODELOS_A2, SOLO_CACHE, UMBRAL_C1, UMBRAL_C2, tablasDeIngresos, totalDe, aEscala, textoControladas, preguntarJev, UMBRAL_A2_CONS, UMBRAL_A2_IND, pasoA2 } from './perimetro-senales.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 // Regla de perímetro 1 (Admin/CONVENCIONES-DATOS.md): la madre que no presenta su propio estado de resultados (Companies Act 2006, s408) deja como único estado el del grupo. El texto de la exención

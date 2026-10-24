@@ -15,7 +15,7 @@
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
-import { derivado, ubicar } from './rutas.mjs';
+import { derivado } from './rutas.mjs';
 import { resolve, join } from 'node:path';
 import { resolverDeporte, deporteEnFrase } from './deporte-club.mjs'; // «club de fútbol» de los prompts de lectura es el deporte del club
 

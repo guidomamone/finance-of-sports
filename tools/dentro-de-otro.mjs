@@ -37,7 +37,7 @@
 //                                                                corre los generadores y audit.js; si da P0/P1, revierte todo.
 // ============================================================================
 
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { ajustesDe } from './ajustes.mjs';

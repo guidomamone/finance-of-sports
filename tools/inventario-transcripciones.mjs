@@ -37,8 +37,8 @@
 // ============================================================================
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync } from 'node:fs';
-import { resolve, join, relative, dirname, basename } from 'node:path';
-import { execFileSync, spawnSync } from 'node:child_process';
+import { resolve, join, relative, dirname } from 'node:path';
+import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { negarSiSeMide } from './candado-medicion.mjs';
 import { verifyNumbers } from './verify-numbers.mjs';

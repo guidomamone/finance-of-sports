@@ -25,7 +25,7 @@
 // contra la página del club antes de usarla. En --json, cada coincidencia trae `exacta` (true/false) y `alias` (el clubId del alias, si lo es).
 // ============================================================================
 
-import { readFileSync, readdirSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const projectRoot = resolve(import.meta.dirname, '..');
