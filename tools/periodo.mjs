@@ -88,6 +88,8 @@ function tipoDeMeses(m) {
 function fechasDe(linea) {
   const t = norm(linea); const out = [];
   for (const x of t.matchAll(/(?<!\d)(\d{1,2})[./-](\d{1,2})[./-](\d{4})(?!\d)/g)) { const d = +x[1], m = +x[2]; if (m >= 1 && m <= 12 && d >= 1 && d <= 31) out.push({ a: +x[3], m, d, i: x.index, fin: x.index + x[0].length }); }
+  // coreano, japonés y chino: "2018년 12월 31일", "2018年3月31日" (año, mes, día, en ese orden)
+  for (const x of t.matchAll(/(?<!\d)(\d{4})\s*[년年]\s*(\d{1,2})\s*[월月]\s*(\d{1,2})\s*[일日]/g)) { const m = +x[2], d = +x[3]; if (m >= 1 && m <= 12 && d >= 1 && d <= 31) out.push({ a: +x[1], m, d, i: x.index, fin: x.index + x[0].length }); }
   for (const x of t.matchAll(/(?<!\d)(\d{4})-(\d{2})-(\d{2})(?!\d)/g)) out.push({ a: +x[1], m: +x[2], d: +x[3], i: x.index, fin: x.index + x[0].length });
   for (const x of t.matchAll(new RegExp(`(?<!\\d)(\\d{1,2})\\.?\\s*(?:de\\s+)?(${MES_RE})\\.?,?\\s*(?:de\\s+|del\\s+)?(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[2]), d: +x[1], i: x.index, fin: x.index + x[0].length });
   // "mes día de año" con el "de" antes del año ("diciembre 31 de 2025"): no se leía y el cierre salía de la otra fecha del título
@@ -365,6 +367,27 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
   }
   return terminar(res, nombreArchivo, mdText);
 }
+// Los años que el NOMBRE del archivo dice: los de cuatro cifras y, en una temporada abreviada "2009-10" / "2023_24", el año de CIERRE (el segundo; misma regla que guessYear() de onboard.mjs).
+const aniosDelNombre = (nom) => {
+  const ys = [...nom.matchAll(/(?<!\d)(19|20)\d{2}(?!\d)/g)].map((x) => x[0]);
+  for (const m of nom.matchAll(/(?<!\d)((?:19|20)\d{2})[-_](\d{2})(?!\d)/g)) { const fin = Number(m[1].slice(0, 2) + m[2]); if (fin === Number(m[1]) + 1) ys.push(String(fin)); }
+  return ys;
+};
+// ESCALÓN "FECHA DE FIN DE MES MÁS REPETIDA": un anual sin cierre leído de un título ni de un par de encabezado (el cierre solo está en el cuerpo: «al 31 de diciembre de 2023»
+// en cada estado) toma el último día de mes más citado en las primeras páginas, con tres compuertas: se cita 3 veces o más, su comparativa un año antes también aparece, y el año
+// del nombre del archivo (si lo trae) es el del cierre. Con un empate gana la fecha más tardía (la del ejercicio, no la del comparativo). Medido sobre los anuales cuyo cierre ya
+// se lee de otra forma: 98,3 % de aciertos (996 de 1013); las dos compuertas de comparativa y nombre suben el 95,2 % de la regla sola.
+const ultimoDiaDelMes = (f) => f.d === new Date(Date.UTC(f.a, f.m, 0)).getUTCDate();
+export function cierrePorFechaRepetida(mdText, nombreArchivo = '', { paginas = 8 } = {}) {
+  const cuenta = new Map();
+  for (const p of paginasDe(mdText).slice(0, paginas)) for (const l of p.body.split('\n')) for (const f of fechasDe(l)) if (ultimoDiaDelMes(f)) cuenta.set(iso(f), (cuenta.get(iso(f)) || 0) + 1);
+  const [mejor, n] = [...cuenta].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? 1 : -1))[0] || [];
+  if (!mejor || n < 3) return null;
+  if (!cuenta.has(`${Number(mejor.slice(0, 4)) - 1}${mejor.slice(4)}`)) return null;
+  const ys = aniosDelNombre(basename(nombreArchivo));
+  if (ys.length && !ys.includes(mejor.slice(0, 4))) return null;
+  return { cierre: mejor, veces: n };
+}
 function terminar(res, nombreArchivo, mdText = null) {
   // Sin cierre leído del contenido, un anual cuyo NOMBRE trae una fecha de fin de mes (`aarsrapport-2022-06-30.pdf`) usa esa fecha, con confianza media y una compuerta:
   // el año de la fecha tiene que aparecer en el texto del documento. Si el contenido dice otro cierre, ya no se llega acá: manda el contenido.
@@ -372,17 +395,18 @@ function terminar(res, nombreArchivo, mdText = null) {
     const fNombre = fechasDe(basename(nombreArchivo).replace(/_/g, '-'))[0];
     if (fNombre && finDeMes(fNombre) && mdText.includes(String(fNombre.a))) { res.cierre = iso(fNombre); res.cierreDe = 'nombre del archivo (fin de mes, y el año aparece en el texto)'; res.confianza = 'media'; }
   }
+  if (!res.cierre && res.tipo === 'anual' && mdText) {
+    const h = cierrePorFechaRepetida(mdText, nombreArchivo);
+    if (h) { res.cierre = h.cierre; res.cierreDe = `fecha de fin de mes más citada (${h.veces} veces) con su comparativa`; res.confianza = 'media'; }
+  }
   if (res.tipo === 'anual' && res.cierre) res.anual = res.cierre.slice(5, 7) === '12' ? 'calendario' : 'temporada';
   // ¿El nombre del archivo dice otra cosa? (fecha AAAA-MM-DD / DD-MM-AAAA o el año de cierre)
   const nom = basename(nombreArchivo);
   const fn = fechasDe(nom.replace(/_/g, '-'))[0];
   if (res.cierre && fn && iso(fn) !== res.cierre) res.nombreNoCoincide = true;
   else if (res.cierre && !fn) {
-    const ys = [...nom.matchAll(/(?<!\d)(19|20)\d{2}(?!\d)/g)].map((x) => x[0]);
-    // Temporada abreviada "2009-10" / "2023_24": el año de CIERRE es el segundo (misma regla que guessYear() de onboard.mjs). BUG REAL
-    //: el regex de arriba solo veía "2009", y 165 de los 226 documentos marcados
-    // `nombreNoCoincide` eran temporadas así (Los Andes 2009-10 con cierre 2010-06-30, Nacional 2023-24, Lazio 2024-25, los alemanes).
-    for (const m of nom.matchAll(/(?<!\d)((?:19|20)\d{2})[-_](\d{2})(?!\d)/g)) { const fin = Number(m[1].slice(0, 2) + m[2]); if (fin === Number(m[1]) + 1) ys.push(String(fin)); }
+    // (aniosDelNombre: la temporada abreviada "2009-10" cuenta por su año de CIERRE; antes se veía solo "2009" y 165 de los 226 documentos marcados `nombreNoCoincide` eran temporadas así)
+    const ys = aniosDelNombre(nom);
     if (ys.length && !ys.includes(res.cierre.slice(0, 4))) res.nombreNoCoincide = true;
   }
   return res;
