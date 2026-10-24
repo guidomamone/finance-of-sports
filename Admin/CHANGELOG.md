@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1029 — faltantes-liga no reescribe nada por un cambio de día [426 · faltantes-liga.mjs]
+
+- Al escribir, compara cada `data/faltantes/*.js` y `pendientes.md` contra lo guardado sin la fecha («calculado»); si ninguno cambió ni sobra uno, no escribe y lo dice. Un cambio de día no mueve 66 archivos de `data/` ni dispara `asset-v-sin-subir`. `--check` ya comparaba con la fecha guardada. `FOS_HOY=AAAA-MM-DD` permite probar el cambio de día.
+- Verificado a mano (426): FOS_HOY=2026-10-25 no escribe nada y --check da al día; con 2027-06-01 (entradas distintas) escribe los 66; audit idéntico
+- Medición: `audit` lote chico idéntico; con `FOS_HOY=2026-10-25` no escribe nada y `--check` da «al día»; con `FOS_HOY=2027-06-01` (cambian entradas) sí escribe los 66 (restaurados). Veredicto: `patron --sin-documentos` (GENERAL, infraestructura).
+
 ## Versión 1028 — fos patron --sin-documentos: el veredicto de un cambio de infraestructura [435 · patron.mjs, probar-patron.mjs, pre-tool.mjs]
 
 - `patron.mjs --cambio "…" --sin-documentos "por qué no lee documentos" --escribir` (en vez de `--patron`): el veredicto es GENERAL si el código agregado no nombra clubes, años ni rutas de `Clubes/` y la medición es idéntica o explicada; si nombra algo, RECHAZADA; sin medición, PENDIENTE. El registro lleva `sinDocumentos` (el motivo) y `patron: null`. El mensaje del hook de commit lo ofrece.
