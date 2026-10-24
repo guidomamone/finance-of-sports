@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1046 — 441: qué preguntas de la cola se pueden evitar, medido contra la cola histórica [441]
+
+- `Admin/mediciones/441-cola-evitables.md`: ningún subtipo de duda de `verificar` pasa el 98 % de aceptación para una compuerta; se pueden evitar 307 de las 501 preguntas de perfil (por tema y país) y 705 preguntas de `verificar` que la corrida siguiente cerró sola. El punto 441 queda abierto con HECHO y QUEDA (lo que depende de una decisión de Guido o de un gasto está escrito ahí).
+- Medición: sin cambios a ninguna tool; solo lectura de `cola-revision.jsonl`.
+
 ## Versión 1045 — 440: informe de los revisores automáticos gratis sobre tools/ [440]
 
 - `Admin/mediciones/440-revisores-gratis.md`: 15 reglas de eslint con 0 hallazgos (1 s cada una), `no-unused-vars` 303 (220 imports sin uso), 34 ciclos entre `.mjs`, 85 exports sin uso aparente. Nada activado; TypeScript, knip y madge sin probar por falta de ok para instalar paquetes. El punto 440 queda abierto con HECHO y QUEDA.
