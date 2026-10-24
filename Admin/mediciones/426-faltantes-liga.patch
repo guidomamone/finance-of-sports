@@ -1,0 +1,26 @@
+diff --git a/tools/faltantes-liga.mjs b/tools/faltantes-liga.mjs
+index b9683a9b1b..e5e9b78e1f 100644
+--- a/tools/faltantes-liga.mjs
++++ b/tools/faltantes-liga.mjs
+@@ -40,7 +40,7 @@ const REF = resolve(ROOT, 'tools', 'club-league-reference');
+ const RECIENTE_MESES = 9;   // Guido
+ const REBUSCAR_MESES = 12;  // Guido
+ // A medianoche UTC del día: el archivo generado guarda esa fecha en su cabecera y `--check` recalcula con ELLA (no con la de hoy), así el calendario solo no lo deja viejo.
+-let HOY = new Date(new Date().toISOString().slice(0, 10));
++let HOY = new Date(process.env.FOS_HOY || new Date().toISOString().slice(0, 10)); // FOS_HOY: solo para probar el cambio de día
+ 
+ // País (carpeta de Clubes/ y de Admin/sourcing/) de cada iso2 de las listas. Inglaterra trae clubes galeses en sus ligas.
+ const PAISES = {
+@@ -296,6 +296,12 @@ if (import.meta.url === `file://${process.argv[1]}`) {
+     if (dias > 30) { console.log(`faltantes-liga: calculado hace ${dias} días (${guardada}); las entradas no cambiaron, pero regenerá: los años recientes ya pasaron el corte (node tools/faltantes-liga.mjs)`); process.exit(2); }
+     console.log('faltantes-liga: al día');
+   } else {
++    // Un cambio de día sin un dato nuevo no reescribe nada: las 66 cabeceras cambiarían solo por la fecha y moverían ASSET_V (asset-v-sin-subir). Se comparan sin la fecha.
++    const sinFecha = (t) => t.replace(/^window\.LEAGUE_GAPS_CALCULADO = '[\d-]+';$/m, '').replace(/\(calculado: [\d-]+\)/, '');
++    const dir = resolve(ROOT, 'data', 'faltantes');
++    const igual = (p, t) => existsSync(resolve(ROOT, p)) && sinFecha(readFileSync(resolve(ROOT, p), 'utf8')) === sinFecha(t);
++    const sobran = existsSync(dir) ? readdirSync(dir).filter((f) => !files[`data/faltantes/${f}`]) : [];
++    if (Object.entries(files).every(([p, t]) => igual(p, t)) && !sobran.length) { console.log('faltantes-liga: sin cambios (solo cambió la fecha), no se escribe nada'); process.exit(0); }
+     mkdirSync(resolve(ROOT, 'data', 'faltantes'), { recursive: true });
+     for (const [p, t] of Object.entries(files)) writeFileSync(resolve(ROOT, p), t);
+     // una liga que ya no tiene lista no deja su archivo viejo publicado
