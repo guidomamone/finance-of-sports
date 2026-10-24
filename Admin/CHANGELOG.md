@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1078 — cierre-sin-fecha no cuenta los documentos cuyo año ya está cargado [cierre-sin-fecha.mjs, probar-cierre.mjs]
+
+- De los 83 «frenan» de antes, 45 eran documentos con el año ya en el sitio (`cargado`): al registro le falta la fecha, pero no hay carga que esperar. Ahora se cuentan aparte (`yaCargados`) y frenan 38 (Colombia 16, Argentina 10, Croacia 6, Alemania 4, Grecia 1, Países Bajos 1), de los cuales unos 20 están listos para cargar y el resto aún sin segunda lectura.
+- Medición: no es del pipeline (solo lee el registro y la cola); `fos probar cierre` sin fallas.
+
 ## Versión 1077 — audit.js: calibracion-cola-pendiente [audit-chequeos-5.js, audit.js]
 
 - P3 cuando una celda (motivo × seguridad) de la cola tiene 30 respuestas o más y menos de 20 con segunda revisión (`calibrar-cola.mjs`): el recordatorio ya no depende de que una sesión se acuerde. Hoy dispara por cierre-por-pais alta (13 de 131).
