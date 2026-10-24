@@ -187,6 +187,24 @@
      "nota": { "tipo": ["string", "null"] }
     }
    },
+   "calibracion-cola": {
+    "archivo": "Admin/registros/calibracion-cola.jsonl",
+    "campos": {
+     "esquema": { "tipo": ["number"], "enum": [1], "obligatorio": true },
+     "id": { "tipo": ["string"], "obligatorio": true },
+     "ts": { "tipo": ["string"], "obligatorio": true },
+     "motivo": { "tipo": ["string"], "obligatorio": true },
+     "seguridad": { "tipo": ["string"], "enum": ["alta", "media", "baja"], "obligatorio": true },
+     "causa": { "tipo": ["string", "null"] },
+     "original": { "tipo": ["string"], "obligatorio": true },
+     "valor_original": { "tipo": ["string", "null"] },
+     "segunda": { "tipo": ["string"], "enum": ["aceptar", "corregir"], "obligatorio": true },
+     "valor_segunda": { "tipo": ["string", "null"] },
+     "coincide": { "tipo": ["boolean"], "obligatorio": true },
+     "por": { "tipo": ["string"], "obligatorio": true },
+     "nota": { "tipo": ["string", "null"] }
+    }
+   },
    "mediciones-pipeline": {
     "archivo": "Admin/registros/mediciones-pipeline.jsonl",
     "campos": {

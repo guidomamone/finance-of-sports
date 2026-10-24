@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1075 — fos calibrar-cola: cuánto acierta una respuesta de la cola según su seguridad [calibrar-cola.mjs]
+
+- `node tools/calibrar-cola.mjs` da por motivo y seguridad cuántas respuestas hay, cuántas se volvieron a medir con una segunda revisión y cuántas coincidieron; `--muestra N` saca respuestas al azar para un revisor que no ve la original; `--registrar` anota el resultado en `Admin/registros/calibracion-cola.jsonl` (esquema `calibracion-cola`). Hoy hay 165 respuestas con seguridad y ninguna medida.
+- Medición: no es del pipeline (solo lee la cola); `fos --check` al día.
+
 ## Versión 1074 — ejercicio-sin-rastro: «en mano» avisa que puede ser solo la memoria [audit-chequeos-5.js]
 
 - Ferro Carril Oeste 2024 salía «en mano» por el nombre de `memoria-ejercicio-120-2023-24.pdf`, pero esa memoria es narrativa y sin cifras (verificado en `Admin/sourcing/Argentina/Ferro Carril Oeste.md`; el silencio es correcto). El texto ahora pide mirar que el PDF traiga estados.
