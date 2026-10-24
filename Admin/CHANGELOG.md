@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1063 — 453 descartado por Guido [453]
+
+- El punto 453 (que la auditoría semanal informe el atraso de producción) se cierra sin hacer: a Guido no le interesa. `fos produccion` queda como comando por si hace falta mirar a mano.
+- Medición: solo documentos.
+
 ## Versión 1062 — to-do 454: una nota por ejercicio para los 71 con los ingresos en una sola línea; el 453 se reduce [454 · ingresos-en-una-linea.mjs]
 
 - Decisión de Guido: margen bruto contra ingreso se resuelve con una nota por ejercicio, según el caso, no con números reconstruidos ni con una nota genérica. `fos ingresos-en-una-linea [--pais dk]` lista los 71 (Bélgica 32, Brasil 16, Dinamarca 13, Noruega 4…) con su rótulo e importe. El 453 queda en una sola tarea opcional: que la auditoría semanal informe el atraso de producción (los pushes van a GitHub cuando Guido quiere).
