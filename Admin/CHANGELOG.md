@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1018 — Siete puntos más de lo que dejó pensando el 399: comentarios de lote, fos mapa, pruebas y orden [427 · 428 · 429 · 430 · 431 · 432 · 433]
+
+- 427 (comentarios de `lote*.mjs`: 247 líneas, 25 con historia), 428 (`fos mapa` con las llaves reales y una opción corta), 429 (prueba de `partir-fases` y `lexico-js`), 430 (`--envolver`), 431 (guardar el método que partió `audit.js`), 432 (archivar los lotes 133, 134, 140 y 141), 433 (`eslint no-undef` en el repo; necesita el ok de Guido para la dependencia).
+- Medición: no hay cambio de tools.
+
 ## Versión 1017 — audit.js en siete archivos (165 → 17 KB): se cierra el 399 [399 · audit.js, audit-base.js, audit-chequeos-1.js, audit-chequeos-2.js, audit-chequeos-3.js, audit-chequeos-4.js, audit-chequeos-5.js, lexico-js.mjs]
 
 - CommonJS sin `fos mover`: un script del scratchpad (con el léxico de `lexico-js.mjs`) repartió las 109 declaraciones de nivel superior: `audit-base.js` (3 KB: los requires, `ROOT`, `add`, los hallazgos y las constantes compartidas, que Node evalúa una sola vez), cinco `audit-chequeos-N.js` (20 a 39 KB, los `check*` con sus constantes propias, cada uno con su `require('./audit-base.js')`) y `audit.js` (la entrada: `main`, `imprimir`, `listarFx` y la prueba de deporte). Sin cambiar el texto de ninguna declaración; ningún `let` se reasigna. `lexico-js.mjs` aprende `function*` (sin eso `clubYears` desaparecía).
