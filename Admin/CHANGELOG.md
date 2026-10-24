@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1076 — 298: tres letras verificadas contra el código y sacadas [298]
+
+- aa, i y o ya estaban hechas (`worktree.mjs`, `alta-club-tablas.mjs`, `lote-preparar.mjs`); el resto del 298 sigue, con la nota de por qué no es un punto chico. Se calibró la cola con 30 segundas revisiones (30 de 30 coinciden; `Admin/registros/calibracion-cola.jsonl`).
+- Medición: solo documentos.
+
 ## Versión 1075 — fos calibrar-cola: cuánto acierta una respuesta de la cola según su seguridad [calibrar-cola.mjs]
 
 - `node tools/calibrar-cola.mjs` da por motivo y seguridad cuántas respuestas hay, cuántas se volvieron a medir con una segunda revisión y cuántas coincidieron; `--muestra N` saca respuestas al azar para un revisor que no ve la original; `--registrar` anota el resultado en `Admin/registros/calibracion-cola.jsonl` (esquema `calibracion-cola`). Hoy hay 165 respuestas con seguridad y ninguna medida.
