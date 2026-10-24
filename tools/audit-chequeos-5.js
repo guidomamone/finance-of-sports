@@ -261,4 +261,12 @@ function checkMedicionesSinDestino() {
 }
 
 
-module.exports = { checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino };
+// Un nombre que se usa y nadie definió (eslint no-undef, `node tools/fos.mjs indefinidos`): rompe al correr una rama que ningún ensayo recorre (`--escribir`, `--ejecutar`). P3. Sin eslint instalado (cd tools && npm install) no avisa.
+function checkNombresSinDefinir() {
+  if (!fs.existsSync(path.join(ROOT, 'tools', 'node_modules', '.bin', 'eslint'))) return;
+  let h; try { h = JSON.parse(execSync('node tools/indefinidos.mjs --json', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch (e) { try { h = JSON.parse(e.stdout); } catch (e2) { return; } }
+  if (!h.length) return;
+  add('P3', 'nombre-sin-definir', `${h.length} nombre(s) usados sin definir en tools/: ${h.slice(0, 4).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}. Corré: node tools/fos.mjs indefinidos`);
+}
+
+module.exports = { checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };

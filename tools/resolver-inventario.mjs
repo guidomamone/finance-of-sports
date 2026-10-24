@@ -58,7 +58,7 @@ import { derivado, ubicar } from './rutas.mjs';
 import { chequearPaginas, quien, tablasDe, respaldoSumas, respaldoFilas } from './chequeos-gratis.mjs';
 // splitPages vive en huella-paginas.mjs: la huella por página usa el mismo corte.
 import { splitPages, huellasDePaginas, huellasDelTexto, ultimaConPaginas, compararPaginas } from './huella-paginas.mjs';
-import { readJsonl, pageCount, pdfPageTexts, joinPages, numsOf, sameSet, StopRun, docCost, runCost, callEngine, transcribePages, BIG_DOC_PAGES, voiceByChunks, voiceGeminiPerPage, pageAccepted, textLayerDoubts, voiceDoubts, nl, vote, patchToMajority, settleByArithmetic } from './resolver-inventario-motores.mjs';
+import { readJsonl, pageCount, pdfPageTexts, joinPages, numsOf, sameSet, StopRun, docCost, runCost, callEngine, transcribePages, BIG_DOC_PAGES, BIG_CHUNK, voiceByChunks, voiceGeminiPerPage, pageAccepted, textLayerDoubts, voiceDoubts, nl, vote, patchToMajority, settleByArithmetic } from './resolver-inventario-motores.mjs';
 
 // ---------------------------------------------------------------- utilidades
 export const sleep = (s) => new Promise((r) => setTimeout(r, s * 1000));

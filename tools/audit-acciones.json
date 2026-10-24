@@ -125,6 +125,11 @@
   "quien": "sesion",
   "donde": "skill club-sourcing, referencia/liga-y-sponsor.md"
  },
+ "nombre-sin-definir": {
+  "hacer": "node tools/fos.mjs indefinidos: dice archivo, línea y nombre. Se define o se importa/exporta el nombre (el primer caso real fue BIG_CHUNK en resolver-inventario.mjs: faltaba exportarlo); después node tools/fos.mjs medir pipeline si es una tool del pipeline. Sin eslint (cd tools && npm install) el aviso no aparece.",
+  "quien": "sesion",
+  "donde": "Admin/CONVENCIONES.md, «Tamaño de las tools» y punto 401 (la prueba que escribe de verdad)"
+ },
  "tool-grande": {
   "hacer": "node tools/fos.mjs mapa <tool> y node tools/fos.mjs mover <tool> <desde>-<hasta> <destino.mjs> (ensayo por defecto), después node tools/fos.mjs medir pipeline. Si no se puede partir sin cambiar el código (una sola función enorme, estado compartido), el motivo va en tools/tamanos-aceptados.json.",
   "quien": "sesion",

@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1037 — fos indefinidos: eslint no-undef en el repo, y el primer nombre sin definir real [433 · indefinidos.mjs, eslint.config.mjs, audit.js, audit-chequeos-5.js, resolver-inventario.mjs, resolver-inventario-motores.mjs]
+
+- `eslint` 10.13.0 y `globals` 17.13.0 como devDependencies de `tools/package.json` (17 MB en `tools/node_modules`, gitignoreado; `cd tools && npm install` en una carpeta nueva). `tools/eslint.config.mjs` con solo `no-undef`; `node tools/fos.mjs indefinidos [archivo…]` (1,5 s sobre 243 archivos); aviso P3 `nombre-sin-definir` en `audit.js` (no aparece sin eslint instalado).
+- El primer pase encontró un error real: `resolver-inventario.mjs` usaba `BIG_CHUNK` (en un log del camino de documentos largos) sin importarlo, y `resolver-inventario-motores.mjs` no lo exportaba: un `ReferenceError` al procesar un documento de más de 40 páginas. Ahora se exporta y se importa.
+- Verificado a mano (433): node tools/fos.mjs indefinidos: ningún nombre sin definir en 243 archivos; con un archivo de prueba con un nombre falso da exit 1 y audit.js muestra el P3; medir pipeline idéntico
+- Medición: `medir pipeline` (audit y lote-ensayo, lote completo de 992 documentos): idéntico. Veredicto de infraestructura (`patron --sin-documentos`). Sección 7 recorrida por la misma sesión (aviso P3 que no frena nada): sin revisión independiente.
+
 ## Versión 1036 — SønderjyskE 2023 y 2025 cargados; votación del formato completo contra reducido [413]
 
 - 2023 (15 meses al 30/09/2023, liga 1. División del día del cierre) y 2025 (formato completo, Superliga) cargados con su verificación; la cola se contestó con cita. Votación 3 a 0 (`Admin/mediciones/413-votacion-formato-completo-vs-reducido.md`): un club que pasa del balance reducido (§ 32) al completo carga ese año completo y los anteriores no se rehacen con el comparativo; regla nueva en `Admin/CONVENCIONES-DATOS.md` y línea en `Admin/registros/auditoria-proceso.jsonl`. El 2025 lleva una `publicNote` sobre el cambio de formato. Gasto total del punto: unos US$ 0,30.
@@ -38,7 +45,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Versión 1033 — costo-personal: la unidad del rótulo manda y la cifra exacta de la nota reemplaza a la redondeada [422 · costo-personal.mjs]
 
-- Tres cambios en `costo-personal.mjs`: (1) `escalaDeRotulo`: la unidad entre paréntesis del rótulo de la fila («Total staff costs (£m)») manda sobre la del encabezado y la del documento; (2) `cifrasSeparadas`: «Staff costs 154,754 139,064» (dos importes pegados por el espacio) se lee como dos cifras, solo en las filas de personal; (3) `afinada`: si Jev elige la cifra redondeada de un cuadro de indicadores en £m y el documento tiene la fila de la nota «Staff costs» dentro del redondeo (±0,05 M o 1 %), se usa la exacta. Probé arreglarlo en `filasDelMd` (caja-deuda-md.mjs) y lo descarté: cambiaba caja y deuda en 4 casos (fckobenhavn 2024, wolves 2025, flamengo 2025, santos 2024). Lo de la nota de una filial queda en el 15 % de ingresos que ya existe.
+- Tres cambios en `costo-personal.mjs`: (1) `escalaDeRotulo`: la unidad entre paréntesis del rótulo de la fila («Total staff costs (£m)») manda sobre la del encabezado y la del documento; (2) `cifrasSeparadas`: «Staff costs 154,754 139,064» (dos importes pegados por el espacio) se lee como dos cifras, solo en las filas de personal; (3) `afinada`: si Jev elige la cifra redondeada de un cuadro de indicadores en £m y el documento tiene la fila de la nota «Staff costs» dentro del redondeo (±0,05 M o 1 %), se usa la exacta. Un arreglo en `filasDelMd` se descartó: cambiaba caja y deuda en 4 casos. La nota de una filial sigue atajada por el 15 % de ingresos.
 - Verificado a mano (422): caja-deuda --personal --club fulham-gb: 2023 139.064 reconfirmado, 2024 154.754 y 2025 166.507 desde la nota; medir pipeline: 0 valores aceptados que cambian o se pierden
 - Medición: `medir pipeline` (caja-deuda, caja-deuda-personal, audit, escribir idénticos; personal-ensayos: aceptados idénticos 156, que cambian 0, que se pierden 0, 20 nuevos validados por el vecino); Fulham 2023 se reconfirma (139,064) y 2024 y 2025 salen de la nota (154,754 y 166,507). Veredicto general (7 documentos de 2 clubes). Sección 7 recorrida por la misma sesión (no frena nada; un valor malo lo atrapa el vecino y el 15 %; lo cargado no cambia): sin revisión independiente.
 

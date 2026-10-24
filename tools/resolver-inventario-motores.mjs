@@ -215,7 +215,8 @@ export async function transcribePages(engine, pdfAbs, pageList, opts = {}) {
 // Un documento largo no entra en UNA llamada de Gemini (tope de 150 s y de tokens de salida: un informe de 230
 // páginas daba timeout seguro y gastaba reintentos en vano, visto en la primera corrida del pipeline con Borussia
 // Dortmund). Se transcribe por tramos de BIG_CHUNK páginas y se arma el mismo {pre, pages} que devuelve splitPages.
-export const BIG_DOC_PAGES = 40; const BIG_CHUNK = 20;
+export const BIG_DOC_PAGES = 40;
+export const BIG_CHUNK = 20;
 export async function voiceByChunks(engine, pdfAbs, pageList, log) {
   const pages = [];
   for (let i = 0; i < pageList.length; i += BIG_CHUNK) {
