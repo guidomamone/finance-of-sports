@@ -9,7 +9,7 @@
 //   4. comprueba que Admin/CHANGELOG.md tiene una entrada reciente que nombra el id,
 //   5. avisa si cambió una tool que figura por nombre en Admin/ESTADO.md o Admin/PIPELINE.md y ninguno se tocó (--sin-doc "motivo" lo da por visto), si cambió una skill (commit aparte, y el diff con show_pane) o datos (trailer Corrige:),
 //   6. imprime los pendientes con ✓ y ✗ y el `git add` sugerido. NO commitea.
-// USO: node tools/fos.mjs cerrar <id> [--cerrar] [--forzar] [--sin-doc "motivo"]     (SIN --cerrar solo revisa: no toca el TODO ni regenera el índice; con --cerrar borra el punto del TODO y regenera el índice;
+// USO: node tools/fos.mjs cerrar <id> [--cerrar] [--verificado "qué se miró y dónde quedó"] [--forzar] [--sin-doc "motivo"]     (un «Verificar: manual» pide --verificado y deja la constancia en el CHANGELOG; SIN --cerrar solo revisa: no toca el TODO ni regenera el índice; con --cerrar borra el punto del TODO y regenera el índice;
 //      --forzar: cierra aunque su «Verificar:» no se cumpla; --sin-doc: ESTADO.md y PIPELINE.md se miraron y siguen siendo ciertos)
 //      Por defecto no se cierra porque un cierre sin querer borra un punto con trabajo pendiente (pasó con el 407).
 import { execFileSync, spawnSync } from 'node:child_process';
@@ -36,16 +36,25 @@ const auditoria = () => {
 console.log(`Cerrando el punto ${id}${ENSAYO ? ' (ensayo)' : ''}…`);
 const antes = auditoria();
 
-// 1. el punto del TODO
+// 1. el punto del TODO. Un «Verificar: manual» se cierra con --verificado "qué se miró y dónde quedó" (la constancia va al CHANGELOG, paso 4); sin eso no se cierra, y --forzar queda para lo descartado.
+const VERIFICADO = A.includes('--verificado') ? String(A[A.indexOf('--verificado') + 1] || '').trim() : '';
+const lineaVerificar = () => (node(['tools/todo.mjs', '--verificar']).stdout || '').split('\n').find((x) => new RegExp(`\\b${id} ·`).test(x));
+const FALTA_VERIFICADO = `su «Verificar:» es manual: pasá --verificado "qué se miró y dónde quedó" (queda en el CHANGELOG)`;
 if (!ENSAYO) {
-  const c = node(['tools/todo.mjs', '--cerrar', id, ...(A.includes('--forzar') ? ['--forzar'] : [])]);
-  const txt = (c.stdout + c.stderr).trim();
-  if (/^Cerrado /m.test(txt)) ok(`TODO: ${txt.split('\n')[0]}`);
-  else mal(`TODO: no se cerró el punto ${id}: ${txt.split('\n').slice(0, 3).join(' | ')}`);
+  const manual = /manual/.test(lineaVerificar() || '') && !A.includes('--forzar');
+  if (manual && !VERIFICADO) mal(`TODO: no se cerró el punto ${id}: ${FALTA_VERIFICADO}`);
+  else {
+    const c = node(['tools/todo.mjs', '--cerrar', id, ...(A.includes('--forzar') ? ['--forzar'] : [])]);
+    const txt = (c.stdout + c.stderr).trim();
+    if (/^Cerrado /m.test(txt)) ok(`TODO: ${txt.split('\n')[0]}`);
+    else mal(`TODO: no se cerró el punto ${id}: ${txt.split('\n').slice(0, 3).join(' | ')}`);
+  }
 } else {
-  const v = node(['tools/todo.mjs', '--verificar']);
-  const l = (v.stdout || '').split('\n').find((x) => new RegExp(`\\b${id} ·`).test(x));
-  l ? (/CUMPLE/.test(l) ? ok(`TODO: el punto ${id} cumple su «Verificar:»`) : mal(`TODO: el punto ${id} no cumple su «Verificar:» (${l.trim().slice(0, 100)})`)) : mal(`TODO: no existe el punto ${id}`);
+  const l = lineaVerificar();
+  if (!l) mal(`TODO: no existe el punto ${id}`);
+  else if (/CUMPLE/.test(l)) ok(`TODO: el punto ${id} cumple su «Verificar:»`);
+  else if (/manual/.test(l)) (VERIFICADO ? ok : mal)(VERIFICADO ? `TODO: «Verificar: manual», constancia: ${VERIFICADO}` : `TODO: ${FALTA_VERIFICADO}`);
+  else mal(`TODO: el punto ${id} no cumple su «Verificar:» (${l.trim().slice(0, 100)})`);
 }
 
 // 1b. la propuesta del punto (Admin/propuestas/<id>-*.md) cumplió su función al cerrarlo: pasa a Admin/Archive/propuestas/ con un banner (lo que servía ya está en PIPELINE, HALLAZGOS o el CHANGELOG)
@@ -81,6 +90,17 @@ else {
 // 4. el CHANGELOG
 const cl = readFileSync(resolve(ROOT, 'Admin/CHANGELOG.md'), 'utf8').split('\n').slice(0, 90).join('\n');
 new RegExp(`(\\[[^\\]]*\\b${id}\\b[^\\]]*\\]|\\b(?:TODO|to-do|punto|puntos)s? ${id}\\b|\\b${id}[:·])`).test(cl) ? ok(`CHANGELOG: hay una entrada reciente que nombra el ${id}`) : mal(`CHANGELOG: ninguna entrada reciente nombra el ${id} (título con [${id}] al final, como las demás)`);
+
+// 4a. la constancia de un «Verificar: manual»: un bullet «Verificado a mano» en la entrada que nombra el id, antes de su bullet «Medición:» (que va último)
+if (VERIFICADO && !ENSAYO) {
+  const ruta = resolve(ROOT, 'Admin/CHANGELOG.md'); const L = readFileSync(ruta, 'utf8').split('\n');
+  const ini = L.findIndex((x, i) => i < 90 && /^## Versión/.test(x) && new RegExp(`\\[[^\\]]*\\b${id}\\b[^\\]]*\\]`).test(x));
+  const fin = ini < 0 ? -1 : L.findIndex((x, i) => i > ini && /^## /.test(x));
+  const med = ini < 0 ? -1 : L.findIndex((x, i) => i > ini && (fin < 0 || i < fin) && /^- Medición:/.test(x));
+  if (ini < 0) mal(`CHANGELOG: ninguna entrada reciente lleva [${id}] en el título: escribí la constancia «Verificado a mano: ${VERIFICADO}» en la entrada`);
+  else if (L.slice(ini, fin < 0 ? undefined : fin).some((x) => /^- Verificado a mano/.test(x))) ok('CHANGELOG: la constancia de la verificación a mano ya estaba');
+  else { L.splice(med < 0 ? (fin < 0 ? L.length : fin - 1) : med, 0, `- Verificado a mano (${id}): ${VERIFICADO}`); writeFileSync(ruta, L.join('\n')); ok(`CHANGELOG: constancia anotada en «${L[ini].slice(3, 60)}…»`); }
+}
 
 // 4b. las tools que cambiaron desde la última entrada tienen que estar nombradas en el título de una entrada nueva ([ids · tools · clubes]; fos changelog historial <tool> las busca)
 {

@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1022 — fos cerrar: un «Verificar: manual» se cierra con --verificado [425 · cerrar.mjs]
+
+- `fos cerrar <id> --cerrar` ya no cierra un punto cuyo «Verificar:» es manual sin `--verificado "qué se miró y dónde quedó"`; con él cierra SIN `--forzar` (siguen todos los otros chequeos) y anota un bullet «Verificado a mano» en la entrada del CHANGELOG que lleva `[id]`, antes de su «Medición:». El ensayo muestra ✗ sin el motivo y ✓ con él. `--forzar` queda para lo descartado.
+- Verificado a mano (425): ensayo sin motivo da ✗ y con motivo ✓ (2026-10-24, salida de fos cerrar 425); el cierre real de este punto usó el flag
+- Medición: `fos medir pipeline`: ninguna tool del pipeline cambió (nada que medir); ensayos del comando sobre un punto manual con y sin `--verificado`; el cierre real del 425 lo usa.
+
 ## Versión 1021 — El método que partió audit.js, guardado en tools/archivo [431 · partir-cjs.mjs]
 
 - `tools/archivo/partir-cjs.mjs` (copia del script del scratchpad, con el `import` de `lexico-js.mjs` y la raíz relativos) y su línea en `tools/archivo/README.md`: qué hace, cómo se usó y con qué se comprobó.
