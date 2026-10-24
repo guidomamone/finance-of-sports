@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1060 — fos produccion y los to-dos 451, 452 y 453 [453 · produccion.mjs]
+
+- `node tools/fos.mjs produccion` compara el ASSET_V publicado en financeofsports.com con el de `index.html` (un GET a la home): hoy producción lleva 228 versiones de atraso (1534 contra 1762) porque Netlify se quedó sin créditos del ciclo. To-dos: 451 (las etiquetas siguen el idioma elegido por el visitante, a partir de «Andre finansielle indtægter» en SønderjyskE), 452 (particularidades contables clave para el lector) y 453 (alarma de producción desactualizada). El 364 suma el peso del registro de correcciones (24 KB comprimido, no se parte hasta 150 KB).
+- Medición: tool de orden, fuera del pipeline; corrida real contra producción.
+
 ## Versión 1059 — audit.js: recordatorio de metodología cada 40 commits de reglas [audit.js, audit-chequeos-5.js, probar-registros.mjs]
 
 - P3 `metodologia-desactualizada`: avisa cuando pasan 40 commits de `Admin/CONVENCIONES-DATOS.md` desde la última edición de `metodologia.html` (hoy 31, no dispara; el umbral lo pidió Guido). Se apaga al editar la página, aunque sea para dejar constancia de que no hay nada nuevo. `probar-registros.mjs`: 2 casos nuevos (26 en total).
