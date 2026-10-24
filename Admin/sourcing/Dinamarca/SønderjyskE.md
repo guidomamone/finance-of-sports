@@ -34,3 +34,5 @@ Ninguna.
 - Último chequeo: 2026-09-17.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2024 desde `Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.pdf` (sourceId `sonderjyske-dk-aarsrapport-2024-09-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-24): ejercicio 2023 desde `Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.pdf` (sourceId `sonderjyske-dk-aarsrapport-2022-2023-09-30-transicion`).

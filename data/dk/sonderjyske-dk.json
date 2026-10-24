@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-24",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sonderjyske-dk",
@@ -29,6 +29,16 @@
       "reliability": "primary",
       "url": "http://regnskaber.virk.dk/11188513/amNsb3VkczovLzAzL2YxLzBjLzMxLzFmLzJjZWMtNDI3YS05OWUwLWM1Njc4ZjUyNjg4NQ.xhtml",
       "document": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.pdf"
+    },
+    {
+      "id": "sonderjyske-dk-aarsrapport-2022-2023-09-30-transicion",
+      "club_id": "sonderjyske-dk",
+      "title": "Sønderjyske Fodbold A/S — aarsrapport-2022-2023-09-30-transicion (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.pdf",
+      "public_note": "Informe oficial en formato XHTML (iXBRL)",
+      "url": "http://regnskaber.virk.dk/11188513/amNsb3VkczovLzAzL2U0L2M4L2I1L2UxL2VmMzgtNDNkNC1hOGMyLTAwMTA0Zjc2NzkwMQ.xhtml"
     }
   ],
   "members": null,
@@ -84,6 +94,55 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.522751,"tax":0,"gross_debt":14.080333,"cash":0.014547},
       "official_totals": {"revenue":21.464987,"expenses":52.925004,"net_result":-31.982769}
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-09-30",
+      "currency": "DKK",
+      "source_id": "sonderjyske-dk-aarsrapport-2022-2023-09-30-transicion",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2023-09-30"},
+      "revenue": [
+        {"label":"Bruttofortjeneste/Bruttotab","category":"undisclosed","subcategory":"lump_football_operations","amount":41.600084,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Løn og gager","category":"first_team_staff","subcategory":"wages_squad","amount":-48.195491,"disclosure":"aggregated"},
+        {"label":"Pensionsbidrag","category":"first_team_staff","subcategory":"wages_squad","amount":-1.671142,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.724382,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andre personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-2.427605,"disclosure":"aggregated"},
+        {
+          "label": "Kontraktsrettigheder",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.478449,
+          "disclosure": "aggregated"
+        },
+        {"label":"Indretning lejede lokaler","category":"depreciation","subcategory":"depreciation","amount":-0.246657,"disclosure":"aggregated"},
+        {
+          "label": "Andre anlæg, driftsmateriel og inventar",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.255959,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.798938,"tax":4.132991,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":41.600084,"expenses":55.999685,"net_result":-11.065548},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andre finansielle indtægter","amount":0.022386},
+          {"label":"Øvrige finansielle omkostninger","amount":-0.821324},
+          {"label":"Skat af årets resultat","amount":4.132991}
+        ],
+        "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":41.600084,"reason":"el documento no desglosa este renglón"}]
+      }
     },
     {
       "fiscal_year": 2024,

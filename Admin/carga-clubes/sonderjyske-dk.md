@@ -173,6 +173,38 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-21): dk-superliga, verificado contra roster cacheado de "2024–25 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia exacta "Sønderjyske".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-24) desde Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bruttofortjeneste/Bruttotab | pág. 14, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Løn og gager | pág. 18, precedente |
+| 2 | Pensionsbidrag | pág. 18, precedente |
+| 3 | Andre omkostninger til social sikring | pág. 18, precedente |
+| 4 | Andre personaleomkostninger | pág. 18, precedente |
+| 5 | Kontraktsrettigheder | pág. 18, precedente |
+| 6 | Indretning lejede lokaler | pág. 18, precedente |
+| 7 | Andre anlæg, driftsmateriel og inventar | pág. 18, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-24). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## 2022
 
 ### Meta
@@ -219,4 +251,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### sonderjyske-dk-aarsrapport-2022-2023-09-30-transicion
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-24) desde la transcripción Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
