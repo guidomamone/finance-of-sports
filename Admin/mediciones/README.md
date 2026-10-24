@@ -8,7 +8,7 @@ Los archivos que una tool, una skill o un documento de criterio ya nombran no fi
 
 | Archivo | Qué es | Destino |
 |---|---|---|
-| `441-cola-evitables.md` | qué preguntas de la cola de revisión se pueden evitar sin perder respuestas (perfil por país, las que se cierran solas, los subtipos de verificar) | nada implementado; punto 441 (qué queda) |
+| `441-cola-evitables.md` | qué preguntas de la cola de revisión se pueden evitar sin perder respuestas (perfil por país, las que se cierran solas, los subtipos de verificar) | ninguna compuerta (todas por debajo del 98 %); lo que se cierra solo ya se cierra antes de que alguien lo lea; la ventana del perfil ya existe (punto 441, cerrado; punto 449) |
 | `440-revisores-gratis.md` | qué encuentran hoy y cuánto tardan 15 reglas de eslint, los imports sin uso, los ciclos y los exports sin uso sobre tools/ | 14 reglas y los imports sin uso quedaron en `audit.js`; TypeScript, knip y madge se probaron y no se dejaron (punto 440, cerrado) |
 | `245-inventario-docs.md` | cambios de documentos de la fase 2 del esquema JSON | aplicado; archivable |
 | `339-inventario.md` | inventario del paso 1 de «el pipeline sabe el deporte» | aplicado, `Admin/PIPELINE.md` «Un deporte nuevo»; archivable |

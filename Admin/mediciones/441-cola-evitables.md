@@ -1,8 +1,8 @@
 <!-- md: qué subtipos de pregunta de la cola de revisión se podrían evitar sin perder respuestas, medido contra la cola histórica | leer: antes de poner una compuerta o una tabla que salte preguntas de la cola, o de cambiar cuándo se levantan -->
 # 441: qué preguntas de la cola se pueden evitar sin perder respuestas
 
-Conclusión: de las 7047 preguntas de `Admin/registros/cola-revision.jsonl` (6962 sin las altas), solo dos grupos se pueden evitar sin perder respuestas. (1) Las de `perfil` de clubes de un país donde casi siempre es «no»: 307 de las 501 respondidas por una persona (61 %) caen en un par (tema, país) con 10 o más respuestas y 97 % o más de «no», con 1 «sí» perdido. (2) Las que el pipeline cierra solo: 705 preguntas de `verificar` (no-cierra 330 de 510, primer-anio 186 de 305, anio-vecino 114 de 243, numero-no-confirmado 70 de 90) las retiró la corrida siguiente sin que nadie contestara; preguntarlas al final de la corrida las evitaría. Las preguntas de duda de `verificar` NO admiten compuerta: «nota informativa / after charging» se aceptó 48 % y se corrigió 52 % (58 respuestas), «cost of sales y administrative» 77 %, «sin desglose» 87 %, «cuadro informativo» 82 %; ninguna llega al 98 % que haría falta, y el 27 % de error del punto se confirma.
-Destino: punto 441 de `Admin/TODO.md` (qué queda). No se implementó nada.
+Conclusión: de las 7047 preguntas de `Admin/registros/cola-revision.jsonl` (6962 sin las altas), ninguna regla simple las evita sin perder respuestas. Las preguntas de duda de `verificar` NO admiten compuerta: «nota informativa / after charging» se aceptó 48 % y se corrigió 52 % (58 respuestas), «cost of sales y administrative» 77 %, «sin desglose» 87 %, «cuadro informativo» 82 %; ninguna llega al 98 % que haría falta, y el 27 % de error del punto se confirma. Las otras dos ideas no se implementan: (a) las 1512 preguntas que el pipeline cierra solo ya se cierran en minutos (354 en menos de 10 minutos, 1242 en menos de 6 horas, mediana 45 minutos), casi siempre antes de que un revisor las lea, así que preguntarlas al final no ahorra respuestas, solo ruido en la cola; (b) lo del perfil de socios y otros deportes ya está hecho: `perfil-clubes.mjs` hace valer un chequeo ±4 años (`VENTANA_PERFIL = 5`) y, si un chequeo nuevo contradice al más cercano, `cargar.mjs`/`cola.mjs` abren la revisión de los años del medio (`perfil-cambio`); las 501 preguntas de perfil son 3,1 por club en 161 clubes, lo que cuadra con esa ventana.
+Destino: punto 441 de `Admin/TODO.md` (se cierra) y el punto 449 (lo que depende de gasto de API). No se implementó ni se cambió nada.
 
 ## Cómo se midió (2026-10-24)
 
@@ -25,7 +25,7 @@ Se leyó `Admin/registros/cola-revision.jsonl` (casos y respuestas por `id`) con
 | cargar, perímetro | 59 | 14 (24 %) | 45 | 40 % | 58 % |
 | verificar, anio-anterior | 47 | 11 (23 %) | 36 | 97 % | 0 % |
 
-## Perfil: socios y otros deportes por país
+## Perfil: socios y otros deportes por país (la medición; el «no por país» se descartó, ver más abajo)
 
 Las respondidas por una persona son 501 en 161 clubes (3,1 por club). Pares (tema, país) con 10 o más respuestas y 97 % o más de «no»: Grecia, Italia, Países Bajos y Colombia (socios y otros deportes), Gran Bretaña, Noruega, Estonia y Bélgica (solo otros deportes) y Portugal (solo socios, 34 «no» de 35). No entran Gran Bretaña en socios (86 %), Bélgica en socios (70 %), Noruega en socios (50 %) ni Brasil (socios: 27 «sí» de 33); Croacia no llega a 10 respuestas. Prediciendo «no» en los pares que entran: 307 preguntas evitadas, 1 «sí» perdido (un club portugués), en la misma muestra de donde sale la regla. Quedaría fuera lo que Guido puede querer saber: un club con socios que pagan cuota es un ingreso que falta, y el «no» de un país es un supuesto, no un dato del club.
 
@@ -38,8 +38,22 @@ Las respondidas por una persona son 501 en 161 clubes (3,1 por club). Pares (tem
 | sin desglose | 70 | 61 (87 %) | 7 (10 %) |
 | «¿se deja afuera de la carga el cuadro…?» | 124 | 102 (82 %) | 20 (16 %) |
 
-## Qué queda para decidir o hacer
+## Cuánto tardan en cerrarse solas (segunda pasada)
 
-1. Las preguntas que se cierran solas (705): levantarlas al final de la corrida o después del reintento. Es un cambio al orden de las etapas (`lote.mjs`, `cola.mjs`): se mide con el lote completo. Evita preguntas, no cambia respuestas.
-2. Perfil: una tabla (tema, país) con el «no» por defecto, escrita en `Admin/registros/perfil-clubes.jsonl` con la marca de que es supuesto del país. Es un criterio de datos (un club con socios que pagan cuota quedaría sin su ingreso): decide Guido, con `votacion-de-criterios` si hace falta.
-3. Revisor por club o por tipo con esquema fijo: no se midió aquí (necesita una corrida de subagentes); 438 ya arma el caso con la lista fija y el voto en JSON.
+| | Cerradas solas | Menos de 10 min | Menos de 1 h | Menos de 6 h | Menos de 24 h | Mediana |
+|---|---|---|---|---|---|---|
+| todas | 1512 | 354 | 807 | 1242 | 1416 | 45 min |
+| verificar, no-cierra | 346 | 44 | 161 | 277 | 344 | 77 min |
+| verificar, primer-anio | 205 | 138 | 159 | 187 | 205 | 2 min |
+| verificar, anio-vecino | 127 | 27 | 65 | 97 | 127 | 51 min |
+| verificar, numero-no-confirmado | 73 | 4 | 4 | 73 | 73 | 216 min |
+
+En 285 de las 1512 el mismo documento tuvo una respuesta de una persona entre que la pregunta se abrió y se cerró: son las únicas que alguien pudo haber mirado. Levantarlas al final de la corrida no ahorraría respuestas; el primer-anio, que la etapa `primer-anio-ia` resuelve a los 2 minutos, es el caso claro.
+
+## Perfil: la ventana ya existe
+
+La regla de «un chequeo del año 2018 vale hasta 2022, y si uno nuevo cambia la respuesta se revisan los años del medio» está en `tools/perfil-clubes.mjs` (`VENTANA_PERFIL = 5`, `perfilVigente`, `perfilCercano`) y en `cargar-ceros.mjs` y `cola.mjs` (caso `perfil-cambio`). El «no por país» de arriba se descartó: es un supuesto sobre un club que nadie miró, y la ventana ya evita preguntar cada año.
+
+## Qué queda
+
+Los revisores que miran varias preguntas juntas con un esquema fijo y el reintento único (US$ 1,59 para 13 documentos): necesitan una corrida con subagentes o con API (gasto) y quedan en el punto 449.

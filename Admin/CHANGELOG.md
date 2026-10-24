@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1053 — 441: ninguna pregunta de la cola se evita con una regla simple; lo que dependía de gasto pasa al 449 [441 · 449]
+
+- `Admin/mediciones/441-cola-evitables.md` (corregido tras la segunda pasada): ninguna compuerta llega al 98 % de aciertos (nota informativa 48 %, cost of sales 77 %, sin desglose 87 %, cuadro informativo 82 %). Las 1512 preguntas que se cierran solas tardan mediana 45 minutos (1242 en menos de 6 horas): preguntarlas al final no ahorra respuestas. La ventana de ±4 años del perfil y la revisión `perfil-cambio` ya existen en `perfil-clubes.mjs`, `cargar-ceros.mjs` y `cola.mjs`.
+- Lo que antes dije evitable (705 preguntas cerradas solas, 307 de perfil con un «no por país») era una lectura incompleta: se retira. Revisores agrupados y reintento único (gasto) quedan en el punto 449.
+- Verificado a mano (441): Admin/mediciones/441-cola-evitables.md: ninguna compuerta llega al 98 %, las que se cierran solas se cierran antes de que las lean (mediana 45 min), la ventana del perfil ya existe; lo que depende de gasto pasa al 449
+- Medición: sin cambios a ninguna tool; solo lectura de `cola-revision.jsonl`.
+
 ## Versión 1052 — 440: 14 reglas de eslint y los imports sin uso en audit.js; TypeScript, madge y knip probados y descartados [440 · eslint.config.mjs, indefinidos.mjs, audit-chequeos-5.js, probar-eslint.mjs, changelog.mjs]
 
 - `tools/eslint.config.mjs` suma 14 reglas de `ERRORES` (0 hallazgos hoy) a `no-undef`; `indefinidos.mjs` las devuelve con su `regla` y los imports sin uso con `--imports`. `audit.js`: P3 `error-estatico` y P4 `imports-sin-uso` (220 imports en 43 archivos), con entradas en `audit-acciones.json`. `probar-eslint.mjs`: un archivo de juguete por regla (la prueba encontró que `no-inner-declarations` no marca nada en un módulo y se sacó).
