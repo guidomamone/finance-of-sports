@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1036 — SønderjyskE 2023 y 2025 cargados; votación del formato completo contra reducido [413]
+
+- 2023 (15 meses al 30/09/2023, liga 1. División del día del cierre) y 2025 (formato completo, Superliga) cargados con su verificación; la cola se contestó con cita. Votación 3 a 0 (`Admin/mediciones/413-votacion-formato-completo-vs-reducido.md`): un club que pasa del balance reducido (§ 32) al completo carga ese año completo y los anteriores no se rehacen con el comparativo; regla nueva en `Admin/CONVENCIONES-DATOS.md` y línea en `Admin/registros/auditoria-proceso.jsonl`. El 2025 lleva una `publicNote` sobre el cambio de formato. Gasto total del punto: unos US$ 0,30.
+- Verificado a mano (413): audit.js no da nada para sonderjyske-dk; 2023 y 2025 en data/dk/sonderjyske-dk.json con verificación y publicNote; votación 3 a 0 registrada
+- Medición: no cambia ninguna tool en este paso (las tres anteriores, `xhtml-aarsrapport`, `periodo` y la regla de transición, están en sus entradas); `node tools/audit.js` ya no da `ejercicio-sin-rastro` para `sonderjyske-dk`.
+
 ## Versión 1035 — periodo.mjs: la fecha etiquetada en danés y el inicio sin caer al contexto [413 · periodo.mjs]
 
 - El registro danés etiqueta el período del XHTML como «1. OKTOBER 2024» / «30. SEPTEMBER 2025» (`ixt:date-day-monthname-year-da`); `fechaIxbrl` solo leía meses en inglés sin punto tras el día, así que el inicio caía a la fecha del contexto (= el cierre) y SønderjyskE 2025 salía «otro, 0 meses» y no se cargaba. Ahora lee los meses daneses y el punto, y el inicio ya no cae al contexto (el contexto vale para el cierre, no para el inicio).
