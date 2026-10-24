@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1066 — imports sin uso de perimetro-senales.mjs [perimetro-senales.mjs]
+
+- Se quitan `relative`, `isAbsolute` y `sep` (sin uso). Una medición completa tarda unos 10 minutos: las demás tools del pipeline se limpian de a grupos de unas pocas, no de a una.
+- Medición: lote completo (1004 documentos), `verificar` y `cargar` idénticos.
+
 ## Versión 1065 — imports sin uso: 9 tools que no son del pipeline [catalogo-liga.mjs, estado.mjs, existe.mjs, fuente-documento.mjs, medir-cargar.mjs, mudar-carpetas.mjs, patron.mjs, probar-medir-pipeline.mjs, wayback-verify-download.mjs]
 
 - Se quitaron 11 imports sin uso (`node tools/indefinidos.mjs --imports`: 220 a 209) de las tools clasificadas `no_pipeline`; el resto, en las del pipeline, de a una y midiendo.

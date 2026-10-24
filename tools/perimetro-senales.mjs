@@ -22,7 +22,7 @@
 //   node tools/perimetro-senales.mjs --auditar-a2 <carpeta>                             # auditoría a posteriori: lo que decidió A2 en corridas reales
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
-import { resolve, dirname, relative, isAbsolute, sep } from 'node:path';
+import { resolve, dirname } from 'node:path';
 import { createHash } from 'node:crypto';
 import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // «club de fútbol» de los prompts de lectura es el deporte del club
 
