@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1015 — perimetro-senales.mjs en tres módulos y la tabla del vocabulario en dos [399 · perimetro-senales.mjs, perimetro-senales-a3.mjs, perimetro-senales-base.mjs, vocabulario-datos.mjs, vocabulario-datos-2.mjs]
+
+- `perimetro-senales.mjs` (61 → 34 KB): el paso A3 y `proponer()` a `perimetro-senales-a3.mjs` (13 KB) y los ayudantes (argumentos, tablas, controladas, Jev y su caché) a `perimetro-senales-base.mjs` (18); `cacheA2`, el `let` que reasigna `main`, se queda con su paso A2. `vocabulario-datos.mjs` (47 → 33 KB): desde `FLUJO_EFECTIVO` pasa a `vocabulario-datos-2.mjs` (16) y la primera mitad lo incluye con `...VOCABULARIO_2`; `VOCABULARIO` es el mismo objeto con el mismo orden de claves (comparado contra HEAD). Salen de `tools/tamanos-aceptados.json`.
+- Chequeo estático nuevo para estas mudanzas: `eslint no-undef` (instalado en el scratchpad, no en el proyecto) sobre los 20 archivos partidos de `verificar`, `cargar`, `alta-club`, `perimetro-senales` y `vocabulario`: ningún nombre indefinido.
+- Medición: lote completo con los 9 medidores de las tools (verificar, cargar, audit, escribir, lote-ensayo, caja-deuda, personal, alta): idéntico.
+
 ## Versión 1014 — Las fases de `proponer()` y de `analizar()` a módulos: cargar.mjs de 136 a 28 KB y alta-club.mjs de 54 a 22 KB [399 · cargar.mjs, cargar-inicio.mjs, cargar-categorias.mjs, cargar-ceros.mjs, cargar-ejercicio.mjs, alta-club.mjs, alta-club-analisis.mjs]
 
 - `fos mover --sucio` encadenó: `cargar-ejercicio.mjs` (27 KB: totales, iXBRL, tipo de cambio y liga, el ejercicio), `cargar-ceros.mjs` (23), `cargar-categorias.mjs` (36) y `cargar-inicio.mjs` (28); `alta-club-analisis.mjs` (34). Las dos salen de `tools/tamanos-aceptados.json`.
