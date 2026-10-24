@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1062 — to-do 454: una nota por ejercicio para los 71 con los ingresos en una sola línea; el 453 se reduce [454 · ingresos-en-una-linea.mjs]
+
+- Decisión de Guido: margen bruto contra ingreso se resuelve con una nota por ejercicio, según el caso, no con números reconstruidos ni con una nota genérica. `fos ingresos-en-una-linea [--pais dk]` lista los 71 (Bélgica 32, Brasil 16, Dinamarca 13, Noruega 4…) con su rótulo e importe. El 453 queda en una sola tarea opcional: que la auditoría semanal informe el atraso de producción (los pushes van a GitHub cuando Guido quiere).
+- Medición: tool de orden, solo lee `data/`; corrida real sobre Bélgica.
+
 ## Versión 1061 — 450: Leeds 2019-20 con el desglose de la nota 4; Sampdoria 2018 se queda como está [450 · leeds-gb]
 
 - Leeds 2019-20: el Turnover (54,18 M) pasa de una línea sin abrir a las 7 fuentes de la nota 4 (entradas 11,4; TV 1,5; merchandising 15,4; distribuciones centrales 7,2; otro comercial 14,4; catering 4,0; educación 0,3), que suman exacto. Con 7 ajustes `fila` (el `.md` las trae en líneas sueltas de OCR) y 7 `categoria` con las mismas categorías de los demás años de Leeds (precedente del club). Los ingresos totales no cambian. Las preguntas `776c847` y `73f981d` de la cola quedan contestadas «no» con evidencia.
