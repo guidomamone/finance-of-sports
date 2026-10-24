@@ -7,7 +7,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'agf-dk':         { 2021: 'dk-superliga' },
   'silkeborg-dk':   { 2024: 'dk-superliga', 2025: 'dk-superliga' },
   'viborg-dk':      { 2024: 'dk-superliga', 2025: 'dk-superliga' },
-  'sonderjyske-dk':    { 2022: 'dk-superliga', 2023: 'dk-superliga', 2024: 'dk-superliga' },
+  'sonderjyske-dk':    { 2022: 'dk-superliga', 2023: 'dk-1division', 2024: 'dk-superliga' },
   'nordsjaelland-dk':  { 2024: 'dk-superliga', 2025: 'dk-superliga' },
   'randers-dk':        { 2023: 'dk-superliga' },
   'vejle-dk':           { 2024: 'dk-superliga', 2025: 'dk-superliga' },

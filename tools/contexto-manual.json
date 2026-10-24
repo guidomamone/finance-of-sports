@@ -1,5 +1,8 @@
 {
   "_comentario": "To-do 273. Estadio, capacidad, sponsor de camiseta (frente) y marca técnica cargados a mano, por club y ejercicio, para lo que tools/estadio-sponsor.mjs no lee de Wikipedia o lee mal. Gana sobre Wikipedia campo por campo. Sin \"fuente\" (la memoria del club, su web, una nota de prensa) no se usa. Un club sin sponsor ese año: \"sponsor\": \"sin sponsor\" con su fuente. Un dato que se buscó y no tiene fuente pública (REGLA de CONVENCIONES-DATOS, 2026-10-20): \"sin-fuente\": { \"<campo>\": \"dónde se buscó\" } (campo: estadio, capacidad, sponsor o marca); el campo queda en null y la compuerta lo da por resuelto; sin el texto de dónde se buscó no vale. Forma: { \"<clubId>\": { \"<año>\": { \"estadio\": \"...\", \"capacidad\": 0, \"sponsor\": \"...\", \"marca\": \"...\", \"fuente\": \"<url>\" } } }",
+  "sonderjyske-dk": {
+    "2023": { "estadio": "Sydbank Park", "capacidad": 10100, "sponsor": "Danfoss", "marca": "Hummel", "temporada": "2023–24 Danish 1st Division", "fuente": "https://en.wikipedia.org/w/index.php?title=2023%E2%80%9324_Danish_1st_Division&oldid=1337961063" }
+  },
   "afcwimbledon-gb": {
     "2025": { "estadio": "Plough Lane", "capacidad": 9215, "sponsor": "War Child", "marca": "Umbro", "fuente": "https://en.wikipedia.org/wiki/AFC_Wimbledon (Sponsorship and kit manufacturer: War Child en el pecho, donado por Sports Interactive/Football Manager); capacidad: https://en.wikipedia.org/wiki/Plough_Lane" }
   },

@@ -11,6 +11,7 @@ window.RANKINGS["dk-1division"] = {
   },
   2023: {
     leagueSize: null,
+    sinDato: ["sonderjyske-dk"],
     clubs: [
       { id:"fredericia-dk", revenue:1.497, reportType:"official_balance_sheet",
         sourceId:"fredericia-dk-aarsrapport-2023-12-31",
