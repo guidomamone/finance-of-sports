@@ -9,6 +9,8 @@
 // Config: { file, funcStart, funcEnd, setupEnd, sangria, inicial:[...], salidaTemprana:"P"|null, asincrona:bool, indentar:bool, fases:[{name, from, to, comentario}] }
 //   asincrona: las fases son `async` y se esperan (un flujo con `await`); indentar: el cuerpo de cada fase gana 2 espacios (si el código estaba a nivel de módulo, sin sangría;
 //   las líneas que empiezan dentro del texto de una plantilla no se tocan). Para un script de nivel de módulo: envolverlo antes en `async function f() { … }` y partir esa función.
+//   envolver: { nombre, desde, comentario? } para un script de nivel de módulo: lo envuelve en una función desde la línea `desde` (la primera sentencia del flujo, sin `funcStart`, `funcEnd` ni
+//   `setupEnd`: se calculan) y la llama al final. `fases` y `--mapa` usan las líneas del archivo ORIGINAL; los mensajes de error, las del archivo ya envuelto. Va con `indentar: true`.
 //   Una fase con `return X` de salida temprana: si cfg.salidaTemprana (p. ej. "P") la fase devuelve eso y la orquestadora corta.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { lexico } from './lexico-js.mjs';
@@ -16,6 +18,18 @@ const [cfgPath, ...flags] = process.argv.slice(2);
 const cfg = JSON.parse(readFileSync(cfgPath, 'utf8'));
 const L = readFileSync(cfg.file, 'utf8').split('\n');
 const LORIG = [...L];
+// envolver: un script de nivel de módulo se envuelve en `[async ]function nombre() { … }` (desde la línea `desde` hasta el final) y se llama al final. Las líneas de `fases` y de `--mapa`
+// son las del archivo ORIGINAL; acá se corren las de las fases por las líneas que el envoltorio agrega (comentario y función) y se calculan funcStart, setupEnd y funcEnd.
+let corrimiento = 0;
+if (cfg.envolver) {
+  const E = cfg.envolver; while (L.at(-1) === '') L.pop();
+  const cab = E.comentario ? [`// ${E.comentario}`] : [];
+  const cuerpo = L.splice(E.desde - 1);
+  L.push(...cab, `${cfg.asincrona ? 'async ' : ''}function ${E.nombre}() {`, ...cuerpo, '}', '', `${cfg.asincrona ? 'await ' : ''}${E.nombre}();`, '');
+  corrimiento = cab.length + 1;
+  cfg.funcStart = cfg.setupEnd = E.desde - 1 + corrimiento; cfg.funcEnd = cfg.funcStart + cuerpo.length + 1;
+  for (const f of cfg.fases) { f.from += corrimiento; f.to += corrimiento; }
+}
 const seg = (a, b) => L.slice(a - 1, b);
 const F0 = cfg.funcStart;
 let lex = lexico(seg(F0, cfg.funcEnd).join('\n'));
@@ -51,7 +65,7 @@ if (flags.includes('--mapa')) {
   for (let ln = cfg.setupEnd + 1; ln < cfg.funcEnd; ln++) {
     if (profEn(ln) !== 1) continue;
     const t = L[ln - 1].trim(); if (!t) continue;
-    console.log(`${ln}: ${t.slice(0, 110)}`);
+    console.log(`${ln - corrimiento}: ${t.slice(0, 110)}`);
   }
   process.exit(0);
 }

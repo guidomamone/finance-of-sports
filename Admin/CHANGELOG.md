@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1026 — partir-fases: --envolver un script de nivel de módulo [430 · partir-fases.mjs, probar-partir-fases.mjs]
+
+- La config acepta `envolver: { nombre, desde, comentario? }`: envuelve el flujo desde la línea `desde` en `[async ]function nombre() { … }`, la llama al final y calcula `funcStart`, `setupEnd` y `funcEnd`; `fases` y `--mapa` usan las líneas del original (la tool corre las del envoltorio). Va con `indentar: true`.
+- Verificado a mano (430): envolver sobre git show 28881bd54e^:tools/lote.mjs da el mismo archivo (75465 bytes) que envolver-lote.mjs + partir-fases; probar-partir-fases ok
+- Medición: sobre el `lote.mjs` de antes de la partición (`28881bd54e^`) el camino de un paso da el MISMO archivo, byte por byte (75 465 bytes), que el de dos pasos con el script del scratchpad; `probar-partir-fases` suma 3 casos de `envolver` (15 en total, todos ok).
+
 ## Versión 1025 — Prueba de partir-fases y lexico-js [429 · probar-partir-fases.mjs]
 
 - `node tools/fos.mjs probar partir-fases`: parte una función de juguete en tres fases y compara con la entera (3 entradas). Casos: spread y `function*` como uso, `let` entre fases a `ctx.N`, plantilla multilínea con `indentar` (no se sangra), `await`, salida temprana, `--proxy`, `--mapa`, y los rechazos (corte en medio de un bloque, `return` sin `salidaTemprana`). Registrada en `fos-comandos.json` y `pipeline-tools.json`.
