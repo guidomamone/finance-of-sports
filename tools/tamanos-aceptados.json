@@ -1,9 +1,7 @@
 {
  "_comentario": "Tools de más de 40 KB que se aceptan, con el motivo (TODO 375). Lo lee audit.js (tool-grande). Partirlas es un refactor, no un movimiento: va como punto aparte del TODO.",
- "cargar.mjs": "proponer() es UNA función de 892 líneas (el resto ya se mudó a cargar-escribir.mjs)",
  "audit.js": "CommonJS con un contexto compartido (add, ROOT, fs, path) que cada chequeo usa: partirlo pide pasarlo por parámetro (fos mover no soporta CJS)",
  "lote.mjs": "un script de un solo flujo con código a nivel de módulo: no hay bloques de declaraciones que mover",
  "perimetro-senales.mjs": "estado compartido: cacheA2 es un let que main reasigna; fos mover lo frena",
- "alta-club.mjs": "analizar() es UNA función de 365 líneas (el resto ya se mudó a alta-club-*.mjs)",
  "vocabulario-datos.mjs": "una tabla de datos: UN objeto de 48 KB"
 }

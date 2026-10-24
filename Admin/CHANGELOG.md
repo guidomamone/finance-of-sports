@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1014 — Las fases de `proponer()` y de `analizar()` a módulos: cargar.mjs de 136 a 28 KB y alta-club.mjs de 54 a 22 KB [399 · cargar.mjs, cargar-inicio.mjs, cargar-categorias.mjs, cargar-ceros.mjs, cargar-ejercicio.mjs, alta-club.mjs, alta-club-analisis.mjs]
+
+- `fos mover --sucio` encadenó: `cargar-ejercicio.mjs` (27 KB: totales, iXBRL, tipo de cambio y liga, el ejercicio), `cargar-ceros.mjs` (23), `cargar-categorias.mjs` (36) y `cargar-inicio.mjs` (28); `alta-club-analisis.mjs` (34). Las dos salen de `tools/tamanos-aceptados.json`.
+- Medición: lote chico, mediano y completo (`alta`, `cargar`, `audit`, `escribir`): idéntico; la única diferencia es el aviso `indice-md-desfasado` (módulos nuevos), que se regenera al commitear.
+
 ## Versión 1013 — Las fases de `verificar()` a seis módulos: verificar.mjs de 218 a 32 KB [399 · verificar.mjs, verificar-armar.mjs, verificar-cierre.mjs, verificar-dudas.mjs, verificar-escalones.mjs, verificar-lecturas.mjs, verificar-salida.mjs, verificar-vecinos.mjs, mover-bloque.mjs]
 
 - Con `fos mover` (de abajo hacia arriba): `armar()` (38 KB), vecinos (17), lecturas y `evaluar()` (39), escalones (34), cierre y año anterior (24), dudas y respuestas (25), resultado final y salida (20). `verificar.mjs` queda en 32 KB y sale de `tools/tamanos-aceptados.json`. Cada módulo importa lo del tool (circular, seguro: solo funciones).
