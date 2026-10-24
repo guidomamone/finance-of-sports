@@ -33,7 +33,7 @@ Verificar: manual
 ### 2. 415 · (Pantallas, con Pipeline, prioridad media): ingresos negativos: las deducciones sobre la receita (impuestos, direito de arena) caen en «Otros ingresos» y lo dejan negativo (284 líneas, 64 clubes)
 
 Pregunta de Guido (2026-10-23) sobre Flamengo: «Otros ingresos» da negativo. Causa: el DRE brasileño resta de la receita bruta los impuestos y el «direito de arena» para llegar a la receita líquida; la carga pone esa resta como una línea negativa en `other_income` («Impostos e contribuições + Direito de arena (deduções sobre a receita)», −68,2 M en 2024 y −60,5 M en 2025) para que el total dé la receita líquida del documento. Con «Outros» de 47,5 M queda −20,7 M. No es un error de cifra (cierra con el total oficial) sino de presentación. Son 284 líneas de ingreso negativas en 64 clubes (195 en `other_income`, casi todas deducciones de clubes brasileños). Opciones: (a) una categoría propia de deducciones, visible como fila «Deducciones sobre ingresos» (cambia el contrato de datos: skill `contrato-de-datos`); (b) solo en pantalla, mostrar las deducciones aparte sin tocar los datos; (c) dejarlo como está y explicarlo en la fila.
-MEDIDO (2026-10-24, `data/**/*.json`): 284 líneas de ingreso negativas en 64 clubes (Brasil 168, Turquía 31, Portugal 18, Chile 13, Colombia 12, Grecia 10, Italia 10); 195 son `other_revenue/other_income` y 108 de ellas (36 clubes) llevan un rótulo de deducción; 43 club-años en 25 clubes tienen «Otros ingresos» NEGATIVO en total; 44 líneas pesan más del 5 % de los ingresos. Ya van a su categoría natural (y están bien) las deducciones que el documento asigna: entradas −21 en `matchday`, −12 en `membership`, −10 en `media_rights`. Por qué existen: el documento imprime la receta bruta por línea y las deducciones como un total por tipo (impostos, direito de arena, sindicato), sin decir a qué línea de ingreso corresponden; la carga copia el documento para que el total dé la receita líquida, y partirlas entre las líneas sería inventar un desglose. El audit ya mira las líneas negativas (P3 `signo-invertido`, más del 2 % de la sección) pero silencia las que coinciden con la lista de deducciones conocidas (`DEDUCCION_FISCAL_INGRESO_RE`), y no mira el total de «Otros ingresos». Recomendación: una subcategoría `revenue_deductions` dentro de `other_revenue` (aditiva: la categoría no cambia; chequear con `contrato-de-datos-finance-of-sports`), recategorizar por etiqueta las ~108 líneas (`fos etiquetas`), mostrar en pantalla una fila «Deducciones sobre ingresos» aparte, y después un P3 si un total de `other_income` queda negativo (ya sería una anomalía).
+MEDIDO (2026-10-24, `data/**/*.json`): 284 líneas de ingreso negativas en 64 clubes (Brasil 168, Turquía 31, Portugal 18, Chile 13, Colombia 12, Grecia 10, Italia 10); 195 son `other_revenue/other_income` y 108 de ellas (36 clubes) llevan un rótulo de deducción; 43 club-años en 25 clubes tienen «Otros ingresos» NEGATIVO en total; 44 líneas pesan más del 5 % de los ingresos. Ya van a su categoría natural (y están bien) las deducciones que el documento asigna: entradas −21 en `matchday`, −12 en `membership`, −10 en `media_rights`. Por qué existen: el documento imprime la receta bruta por línea y las deducciones como un total por tipo (impostos, direito de arena, sindicato), sin decir a qué línea de ingreso corresponden; la carga copia el documento para que el total dé la receita líquida, y partirlas entre las líneas sería inventar un desglose. El audit ya mira las líneas negativas (P3 `signo-invertido`, más del 2 % de la sección) pero silencia las que coinciden con la lista de deducciones conocidas (`DEDUCCION_FISCAL_INGRESO_RE`), y no mira el total de «Otros ingresos». Recomendación: una subcategoría `revenue_deductions` dentro de `other_revenue` (aditiva: la categoría no cambia; chequear con `contrato-de-datos-finance-of-sports`), recategorizar por etiqueta las ~108 líneas (`fos etiquetas`), mostrar en pantalla una fila «Deducciones sobre ingresos» aparte, y después un P3 si un total de `other_income` queda negativo (ya sería una anomalía). Medido: sacando las 108 líneas con rótulo de deducción, los club-años con «Otros ingresos» negativo bajan de 43 a 6 (5 clubes); los que quedan tienen otras líneas negativas (variación de existencias, costos de traspaso netos, resultado de una joint venture) que se miran caso por caso. Pregunta de Guido (2026-10-24): ¿la fila de deducciones no seguiría mostrando un ingreso negativo? Sí: en el listado de ingresos aparecería UNA fila negativa «Deducciones sobre ingresos» (explicada, con su nota) en lugar de un «Otros ingresos» negativo y sin explicación; el total sigue siendo la receita líquida del documento. Si se prefiere que la lista de ingresos no tenga ningún negativo, la alternativa es sacar las deducciones de la composición y mostrar «Ingresos brutos» menos «Deducciones» igual «Ingresos netos» como un renglón aparte; es una decisión de pantalla (skill `producto-y-pantalla`).
 Terminado cuando: Guido elige una opción y queda hecha, y ningún club muestra «Otros ingresos» negativo por una deducción sin que la pantalla lo explique.
 
 Verificar: manual
@@ -119,7 +119,77 @@ Terminado cuando: hay un informe corto en `Admin/mediciones/` (con `Conclusión:
 
 Verificar: manual
 
-### 11. 338 · correr todas las auditorías del proyecto (al final de A)
+### 11. 437 · (Orden, con la Auditora): los registros de decisión con campos estructurados: el motivo no puede ser solo prosa libre
+
+Pedido de Guido (2026-10-24): está bien tener un campo para las particularidades, pero los motivos de las decisiones no pueden ser solo prosa libre. Hoy el «porqué» vive como texto: `motivo` y `cambio` en `Admin/registros/auditoria-proceso.jsonl` (32 votaciones y veredictos de `patron`), `motivo` y `evidencia` en `ajustes-manuales.jsonl`, la `nota` de las respuestas de `cola-revision.jsonl`, `explicacion` en `mediciones-pipeline.jsonl` y los bullets del CHANGELOG. No se puede preguntar «¿qué votaciones movieron más de 10 años?» ni «¿qué ajustes de perímetro no tienen evidencia con línea?» sin leer prosa. Propuesta: un esquema por registro con campos obligatorios y enumerados, y un campo `nota` libre aparte. Por ejemplo, para una decisión de `auditoria-proceso.jsonl`: `tipo` (votacion, veredicto-patron, condicion-nueva), `caso` {club, anio, documento, lineas}, `opciones`, `votos` [{votante, opcion, criterios{1..9: valor y cita archivo:linea}}], `veredicto` (enumerado), `criterio_decisivo`, `anios_cargados_que_cambian` (número), `mueve_pct`, `regla` (archivo y título), `revision` (propia o auditora, ver 436) y `nota`. Para un ajuste: `causa` enumerada y `evidencia` {archivo, linea}. Para una respuesta de cola: `decision`, `evidencia` {md, lineas}, `precedentes` [ids], `seguridad` (alta, media, baja). El esquema vive en un solo archivo (`tools/registros-esquema.json`), las tools que escriben (`patron.mjs`, `cola.mjs`, `ajustes.mjs`, `medir-pipeline.mjs`) lo cumplen, y `audit.js` da un P3 si una línea NUEVA no lo cumple; lo viejo no se reescribe (queda marcado `legado`). Relacionados: 436 (revisión independiente), 438 (votación), 441 (cola).
+Terminado cuando: existe el esquema de al menos `auditoria-proceso.jsonl` y `cola-revision.jsonl` en un archivo, las tools que los escriben lo cumplen con casos en sus pruebas, y `audit.js` avisa si una línea nueva no lo cumple.
+
+Verificar: manual
+
+### 12. 438 · (Auditora, con Orden): votación de criterios más barata y más confiable: plantilla del caso, checklist fijo para los votantes y citas verificables
+
+Contexto (votación del 413, 2026-10-24): tres subagentes Sonnet independientes consumieron unos 80 mil tokens cada uno (unos 250 mil en total, 40 a 50 segundos cada uno); el archivo del caso lo escribí a mano (la parte más lenta); uno de los votantes dijo en su informe que no abrió los JSON de los precedentes y se apoyó en el texto del caso (quedó anotado en el registro de la votación). Mejoras, todas sin quitarle rigor a la votación: (1) `fos votacion nueva` genera el archivo del caso desde una plantilla (hechos, tabla de números medidos, opciones, rutas) y calcula solo el «cuánto mueve» de la skill; (2) una lista fija de qué abrir y dónde (en vez de que cada votante decida): las secciones de `CONVENCIONES-DATOS.md` que salen de un grep por las palabras del caso, el precedente más cercano por club, liga y país, y la regla de la escala de criterios; (3) las citas se verifican con un script (archivo:línea existe y contiene la palabra): un voto cuyo precedente no se verifica no suma; (4) el voto en JSON (opción, criterios 1 a 9 con valor y cita, años que cambian) y no en prosa, para poder contarlo y compararlo (ver 437); (5) evaluar un solo votante barato cuando la skill ya exime de votar (mueve 1 % o menos) o hay un precedente del mismo hecho. Medir: tokens por votación y concordancia con las decisiones previas (re-votar 3 de las 32 con el esquema nuevo y comparar el resultado). Relaciones: 437 y 441.
+Terminado cuando: una votación nueva se arma con `fos votacion nueva`, los votantes reciben la lista fija de rutas y devuelven JSON, un script verifica las citas, y hay una comparación medida contra 3 votaciones anteriores.
+
+Verificar: manual
+
+### 13. 439 · (Pipeline): fos patron para cambios que dependen del XHTML (hoy solo cuenta sobre los .md)
+
+`patron.mjs` cuenta documentos y clubes solo sobre los `.md`. Los cambios al lector de XHTML (`xhtml-aarsrapport.mjs`, `ixbrl-resultado.mjs`, la parte etiquetada de `periodo.mjs`) dependen de patrones que se ven en el `.xhtml` (en el 413 fue el `top`/`left` en `em` de ParsePort), no en el `.md`. Se usó un patrón sustituto en el `.md` (una cifra suelta por línea: 270 documentos de 82 clubes) cuando el conjunto realmente afectado era de 12 documentos de 4 clubes. Propuesta: `--en-xhtml <regex>` cuenta archivos `Clubes/**/*.xhtml` con la misma regla (3 documentos de 2 clubes) y el veredicto lo dice con el conjunto real; el hook de commit acepta esa línea como cualquier otra. Probar con `probar-patron.mjs`: reproducir el 413 (`top:[\d.]+em` en 12 documentos de AGF, AaB, FC København y SønderjyskE) y un caso de pt.
+Terminado cuando: `node tools/fos.mjs patron --en-xhtml "<regex>"` cuenta sobre los .xhtml y da el veredicto, con un caso en `probar-patron.mjs` que reproduce el del 413.
+
+Verificar: manual
+
+### 14. 440 · (Orden): explorar más revisores automáticos gratis (como eslint) y cuánto ahorran en tokens
+
+Contexto (2026-10-24): `eslint` 10.13.0 y `globals` 17.13.0 son paquetes open source de npm (licencia MIT) que corren localmente, sin API ni costo; ocupan 17 MB en `tools/node_modules` (gitignoreado). `fos indefinidos` los usa para encontrar en 1,5 segundos sobre 243 archivos un error que ningún ensayo ve (`BIG_CHUNK` sin importar en `resolver-inventario.mjs`: habría roto al procesar un documento de más de 40 páginas). Ahorra tokens porque ese tipo de error, sin la herramienta, se descubre al correr una rama cara (un reintento o un `--ejecutar`) o leyendo código. A explorar, siempre gratis y local, y midiendo el ruido (cuántos hallazgos hoy) antes de dejarlo activo como P3: (a) más reglas de eslint de bajo ruido (`no-unused-vars` para código muerto, `no-dupe-keys`, `no-unreachable`, `no-redeclare`); (b) TypeScript en modo `checkJs` solo para propiedades inexistentes; (c) un detector de archivos o exports sin uso (por ejemplo knip) para sumar a `fos --check`; (d) `madge` o `dependency-cruiser` para dependencias circulares entre los módulos partidos (`lote-*`, `verificar-*`, `audit-*`, `perimetro-senales-*`); (e) un revisor de links muertos en los `.md` (hoy lo hace `ruta-muerta`). Para cada uno: qué encontraría hoy, tiempo de corrida, y cuántas veces una sesión leyó código para encontrar lo mismo (la partición del 399 perdió varias corridas por nombres e imports).
+Terminado cuando: hay un informe corto en `Admin/mediciones/` (con `Conclusión:` y `Destino:`) con cada herramienta probada, sus hallazgos de hoy y su tiempo, y las que valen quedan como P3 o comando de `fos`.
+
+Verificar: manual
+
+### 15. 441 · (Pipeline, con Orden): la cola de revisión: preguntas repetitivas que una regla puede evitar y revisores que miran varias juntas con un esquema fijo
+
+Contexto (lote 143, 2026-10-24: 13 documentos, 64 preguntas de cola contestadas con cita por 3 + 2 revisores Sonnet, de 80 a 130 mil tokens cada uno). De las 24 preguntas de `verificar`, 21 eran del mismo tipo: «¿se deja afuera la nota informativa «stated after charging/(crediting)» o la remuneración que se reparte entre Cost of sales y Administrative expenses?», con la propuesta del sistema «sí». Se aceptaron 17 y se corrigieron 4 (Blackpool 05206a3, Bristol Rovers 7c17126, y dos de Plymouth en que el sistema decía que FALTABA un desglose y no faltaba: la nota era una frase). Medido en toda la cola (`Admin/registros/cola-revision.jsonl`): 1429 preguntas de duda (tema, extraer, localizar); 920 aceptadas (64 %), 270 corregidas (19 %). De las 213 que hablan de notas informativas o sin desglose: 131 aceptadas (61 %) y 57 corregidas (27 %). Conclusión: una regla simple que las salte tendría 27 % de error, así que NO alcanza; hay que separar subtipos y medir. Propuestas: (1) un revisor que mire todas las preguntas de UN club o de UN tipo juntas (un solo contexto, varias respuestas) con un esquema fijo de qué abrir (la línea que cita la pregunta, el estado de resultados, dos precedentes del país) y respuesta en JSON, en lugar de un subagente por tarea; (2) una compuerta determinista solo para el subtipo más seguro (lista «after charging» sin total que no coincide con ningún renglón), activada después de medir cuántas habría acertado y errado contra las respuestas históricas; (3) las preguntas de `perfil` (socios, otros deportes) de clubes de las EFL se contestan casi siempre «no» salvo membresías pagas: una tabla de socios por club alimentada con la web; (4) el reintento único cuesta US$ 1,59 para 13 documentos y deja 43 preguntas nuevas: evaluar si se justifica en un estado por función (el personal queda en 0 y se completa después con `caja-deuda --personal`). Preguntas que me parecieron tontas: las que proponen «sí» a una nota que es obviamente una lista informativa, y las de perfil que se resuelven con una búsqueda; las que erró el sistema son las que dicen «falta». Medir tokens por pregunta antes y después. Relaciones: 437, 438.
+Terminado cuando: hay una medición de qué subtipos de pregunta se pueden evitar o agrupar sin perder respuestas (aciertos y errores contra la cola histórica), y lo que pasa queda implementado o descartado con el número.
+
+Verificar: manual
+
+### 16. 442 · (Orden): que leer un punto del TODO traiga siempre su contexto (propuestas, mediciones, votaciones que lo citan)
+
+Pregunta de Guido (2026-10-24): cuando se le pide a una sesión que lea un punto del TODO, ¿hay algo que la haga leer SIEMPRE su propuesta? Respuesta de hoy: no. `node tools/todo.mjs <id>` imprime solo el cuerpo del punto; `Admin/propuestas/<id>-*.md` se lee únicamente si el cuerpo lo cita, y `fos cerrar` las archiva al cerrar. Las mediciones (`Admin/mediciones/`), las votaciones (`Admin/registros/auditoria-proceso.jsonl`), las líneas de `mediciones-pipeline.jsonl`, las listas de lote (`Admin/lotes/`) y las entradas del CHANGELOG que citan el id no aparecen. Propuesta: `todo.mjs <id>` imprime al final un «Contexto de este punto» con una ruta y una línea por cada archivo de `Admin/propuestas/` y `Admin/mediciones/` que nombra el id, las líneas de `auditoria-proceso.jsonl` y `mediciones-pipeline.jsonl` que lo nombran, las entradas del CHANGELOG con [id] en el título, las listas de lote que lo citan y `git log --grep` del id; y el hook `session-start` avisa «leé el punto con todo.mjs <id>» cuando el primer mensaje del usuario nombra un id. Límite de tamaño: solo rutas y una línea cada una (se lee lo que haga falta). La regla de fondo: lo que una sesión aprende de un punto se escribe en su cuerpo (HECHO/QUEDA), como se hizo hoy en el 420 y el 415.
+Terminado cuando: `node tools/todo.mjs 420` termina con su contexto (propuestas, mediciones, votaciones, lotes y commits que lo citan) y hay un caso de prueba.
+
+Verificar: manual
+
+### 17. 443 · (Pipeline): una tool que regenera el registro no debe correr mientras medir pipeline mide
+
+Caso (2026-10-24, mi propia sesión): corrí `node tools/estado.mjs` («Regenerando el registro…») mientras `medir pipeline` medía el 433; el registro `Admin/registros/transcripciones-estado.jsonl` cambió con la medición en curso. No alteró el resultado (dio idéntico) pero pudo. El candado de la medición (`Admin/mediciones/pipeline/_corriendo`, con el pid) solo lo respeta el hook de Edit y Write de archivos trackeados (`edicionMientrasSeMide`); un `node tools/…` por Bash que escribe lo trackeado no pasa por ahí. Propuesta: las tools que escriben registros o datos (`inventario-transcripciones.mjs`, `estado.mjs`, `publicar.mjs`, los `generar-*.mjs`, `cola.mjs --responder`, `ajustes.mjs --agregar`, `lote.mjs --ejecutar`) comprueban el candado y se niegan con un mensaje («hay una medición en curso, pid N»), con una salida explícita para emergencias. Medir con `probar-medir-pipeline.mjs` (el candado existe y la tool se niega) y listar en `fos --check` las tools que escriben en lo trackeado sin chequear el candado.
+Terminado cuando: una tool que escribe registros se niega mientras hay una medición en curso, con un caso en `probar-medir-pipeline.mjs`, y `fos --check` lista las que faltan.
+
+Verificar: manual
+
+### 18. 444 · (Pipeline, con la Auditora): 675 de 3662 documentos con .md no tienen fecha de cierre en el registro (Colombia, Dinamarca, Brasil, Grecia…)
+
+Medido 2026-10-24 sobre `Admin/registros/transcripciones-estado.jsonl` (con un script de la sesión que no se guardó: contar en el registro las entradas con `tieneMd` y `periodo.cierre` vacío): 675 de 3662 documentos con `.md` tienen un período sin fecha de cierre (Colombia 127, Dinamarca 75, Brasil 56, Grecia 55, Argentina 49, Francia 46, España 43, Rusia 38). El registro les pone `{tipo: anual, meses: 12, cierre: null, confianza: baja}` por defecto. Consecuencia real: el 413 no pudo cargar el período de 15 meses de SønderjyskE 2023 porque `cargar-inicio.mjs` busca el cierre del año anterior entre los documentos del club y los daneses tenían `cierre: null`; se resolvió con un ajuste `cierre` a mano en el documento 2022 y con una mejora de `periodo.mjs` (leer «1. OKTOBER 2024»). Qué hacer: (1) los que traen el cierre en el nombre del archivo (`aarsrapport-2022-06-30.pdf`, `...-AAAA-MM-DD`) usarlo como señal de confianza media, con compuerta (si el contenido dice otro cierre, manda el contenido, como ya hace `nombreNoCoincide`); (2) para el resto, mirar en 10 casos por país por qué `periodo.mjs` no encuentra la fecha (idioma, formato, tabla) y mejorar por escalón; (3) un aviso P3 que cuente los documentos de clubes ya cargados con `cierre: null`. Medir con `periodo.mjs --todos` antes y después y con el medidor `verificar`.
+Terminado cuando: los documentos con cierre null bajan de 675 a la cifra que el criterio permita, con la medición idéntica en `verificar`, y un P3 cuenta los que quedan en clubes cargados.
+
+Verificar: manual
+
+### 19. 445 · (Auditora, con Guido): SønderjyskE 2022-2024 en formato completo: qué hace falta (Guido lo prefiere)
+
+Guido (2026-10-24) prefiere ver a SønderjyskE en formato completo. Hoy: 2025 cargado completo (ventas 66,29 M y otros ingresos 0,12 M; votación 3 a 0 en `Admin/mediciones/413-votacion-formato-completo-vs-reducido.md`); 2022, 2023 y 2024 cargados como «Bruttofortjeneste» (el margen bruto, balance resumido por la § 32), que es como el club publicó esos años. Para mostrarlos completos hace falta el estado completo de cada año: 2024: el informe 2025 trae la columna 2023/24 completa pero REEXPRESADA (pasó 2,13 M de personal a margen bruto: 35,30 M contra 37,43 M originales). Esa es la opción C que la votación descartó por la regla «un comparativo reexpresado no es la transcripción del año» (`CONVENCIONES-DATOS.md`, Salernitana 2022); hacerlo exige que Guido decida una excepción o una regla nueva («el comparativo completo de un informe posterior reemplaza al año resumido, con una publicNote de reexpresión»), cambia 1 año ya publicado y se recarga con `cargar.mjs --reemplazar`. 2022 y 2023: los informes publicados no traen el desglose; habría que pedírselo al club (mail, skill `club-outreach`) o encontrar una versión interna; mientras tanto quedan resumidos con su nota. Sobre qué mide «completo»: ingresos y gastos brutos (el resultado no cambia), útil para el tamaño real y la relación sueldos/ingresos; no es «poder adquisitivo».
+Terminado cuando: Guido decide si 2024 se rehace con el comparativo reexpresado (y con qué nota) y si se le pide el desglose de 2022 y 2023 al club; lo decidido queda hecho.
+
+Verificar: manual
+
+### 20. 446 · (Pipeline): cargar avisa cuando el formato de un club cambia de resumido a completo (la nota pública no se olvida)
+
+En el 413 la nota pública del cambio de formato de SønderjyskE («hasta 2024 el club publicaba el balance resumido…») la escribí a mano con `fuente.mjs --nota` DESPUÉS de cargar el año; nada en el pipeline avisó que hacía falta. Propuesta: `cargar.mjs` (en `proponer`) compara el año por cargar con el anterior cargado del club: si el anterior tiene sus ingresos como una sola línea `lump_football_operations` con `disclosure: aggregated` y el nuevo tiene ingresos desglosados (o al revés), agrega un aviso a la propuesta («cambio de formato del balance: agregá una publicNote; texto sugerido …») y `audit.js` da un P3 si el año nuevo quedó sin `publicNote`. Medir con el lote completo (debe dar idéntico: es un aviso) y listar los club-años que lo dispararían hoy (SønderjyskE 2025 y quizá Nordsjælland, Randers, Vejle, Fredericia).
+Terminado cuando: la propuesta de carga avisa el cambio de formato con el texto sugerido, `audit.js` marca el año sin nota, y la medición del lote completo da idéntico.
+
+Verificar: manual
+
+### 21. 338 · correr todas las auditorías del proyecto (al final de A)
 
 CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
 (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
@@ -128,14 +198,14 @@ CORRIDO a medias (2026-10-23, sesión sola): `audit.js` P0 0 · P1 0 · P2 16 ·
 
 Verificar: manual
 
-### 12. 436 · (Orden, con la Auditora): dejar anotada de forma buscable la revisión independiente de un cambio (hoy es prosa en el CHANGELOG: «sin revisión independiente»)
+### 22. 436 · (Orden, con la Auditora): dejar anotada de forma buscable la revisión independiente de un cambio (hoy es prosa en el CHANGELOG: «sin revisión independiente»)
 
 La regla (skill de la Auditora, sección 7, y CLAUDE.md): una condición nueva en una tool la recorre la propia sesión y se anota «sin revisión independiente» en el CHANGELOG hasta que la Auditora la revise. Hoy ese «sin revisión independiente» es una frase libre dentro de un bullet: no hay forma de listar lo que sigue sin revisar (`grep` encuentra la frase, pero no hay un chequeo ni un registro). Propuesta: que `fos patron` acepte `--revision propia|auditora` y la escriba en la línea de `Admin/registros/auditoria-proceso.jsonl` (campo `revision`), que `audit.js` dé un P4 con la cantidad de cambios con `revision: propia` sin revisar, y que la Auditora, al revisarlos, agregue una línea con `revision: auditora` que apunte a la anterior (huella de la tool). Así la pregunta «¿qué falta revisar?» se contesta con un comando. Medir con los casos de `probar-patron.mjs`.
 Terminado cuando: `fos patron --revision propia` queda en el registro, `fos auditoria-pendiente` (o el P4 de `audit.js`) lista los cambios sin revisión independiente, y hay un caso en `probar-patron.mjs`.
 
 Verificar: manual
 
-### 13. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+### 23. 258 · índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
 clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
@@ -144,7 +214,7 @@ crudos. Posible chequeo P3 `payload-eager` en `checkEscala()` de `audit.js` (hoy
 
 Verificar: manual
 
-### 14. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
+### 24. 364 · (Pantallas): el registro de correcciones, curado (hoy todo dice «Motivo no registrado»)
 
 EL REGISTRO DE CORRECCIONES, CURADO (Pantallas 7, sale del 247). `correcciones.html` y el bloque de Finanzas muestran hoy 236 eventos en 56
 clubes, y todos dicen «Motivo no registrado». Terminado cuando: (a) los eventos de más impacto (valor, retiros, recargas) tienen su motivo en
@@ -161,7 +231,7 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 15. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 25. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
 
 MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
 Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
@@ -197,7 +267,7 @@ de lote.mjs lista como frenados los originales que salteó por su -correction. E
 
 Verificar: manual
 
-### 16. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
+### 26. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
 LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
 con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
@@ -207,14 +277,14 @@ Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la
 HOY (2026-10-23): el aviso `ejercicio-sin-rastro` de este club está silenciado en `tools/audit-ignore.json` (2023-2025 sin depósito; 2022 con el balance en mano) para llevar el P3 a cero; lo que falta es la decisión de 2022, así que la línea de verificación pasó a manual.
 Verificar: manual
 
-### 17. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
+### 27. 372 · (Auditora, prioridad baja): revisar las 67 etiquetas de subsidios que quedaron excluidas
 
 Las 67 etiquetas excluidas en `tools/subsidios-etiquetas.json` las dejaron afuera reglas objetivas (no una confianza baja de Jev): mezcladas con otro concepto, lo que reparte la federación o la liga (solidaridad: `competition_bonus`), subvención de capital imputada, impuestos y deducciones. Guido no las va a revisar una por una (2026-10-22): el proceso es `node tools/fos.mjs etiquetas` (369, hecho). Este punto es lo que queda después de que corrió. La lista corta de 24 etiquetas ya está decidida por Guido (2026-10-23). Falta la decisión de criterio sobre lo que reparte la federación o la liga cuando el documento lo llama «subsidio» o «toetus» (EJL, Contributi Federali, FPF/LPF; hoy excluidas por la REGLA de solidaridad de `Admin/CONVENCIONES-DATOS.md`); se vota con `votacion-de-criterios` con la tabla de `node tools/fos.mjs filas` como evidencia. `node tools/fos.mjs etiquetas --categoria grants_donations --listar --todas` las muestra con su motivo.
 Terminado cuando: las etiquetas excluidas por la regla de la federación o la liga tienen una decisión escrita (entran o quedan afuera, con el caso) y el JSON de decisiones no tiene ninguna «SIN REVISAR».
 
 Verificar: manual
 
-### 18. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
+### 28. 377 · (Onboarding, con Pipeline): Alemania, Rusia, Ucrania y República Checa sin documentos con verificación, así que las listas de prueba no los cubren
 
 Tienen `.categorias.json` (Alemania 7, Rusia 2, Ucrania 2, República Checa 1) pero ningún `.verificacion.json`: las listas de prueba que arma `tools/lotes-prueba.mjs` salen de lo verificado y por eso no los incluyen, y `medir-pipeline` frena una tool dirigida a ellos (por ejemplo `bfo-rusia.mjs`, el camino del fisco ruso) porque no hay documentos que medir. Primero averiguar POR QUÉ no tienen verificación, sin asumir (¿su camino de entrada no pasa por la etapa 6, como el de Rusia, que sale del fisco y no del PDF? ¿se cargaron antes de que la etapa existiera? ¿quedaron frenados?). Según la causa: correr verificar donde corresponde, o declarar que su camino no pasa por verificación y darle un medidor propio en `tools/pipeline-tools.json` (y una familia propia en las listas) para que un cambio a su tool se pueda medir.
 DEPENDE DE: el 371 (cerrado).
@@ -225,7 +295,7 @@ Verificar: contiene Admin/lotes/prueba-completa.txt | Clubes/Rusia/
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 19. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 29. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo
@@ -235,7 +305,7 @@ JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios 
 
 Verificar: manual
 
-### 20. 420 · (Onboarding, con la Auditora): cargar los británicos en iXBRL: lote 143 y Hibernian, los años pagables, Falkirk, las altas (viene del 356)
+### 30. 420 · (Onboarding, con la Auditora): cargar los británicos en iXBRL: lote 143 y Hibernian, los años pagables, Falkirk, las altas (viene del 356)
 
 Viene del 356 (el conversor ya está: celdas por coordenadas como tablas, medido sobre 317 XHTML). Qué hay hecho: los 55 `.md` de Hibernian, Bolton, Bristol Rovers, Cambridge, Crewe, Northampton, Oxford, Peterborough, Plymouth, Rotherham, Salford, Tranmere, Blackpool y Reading están reconvertidos con tablas (costo 0), y Bolton 2024-25 corrió de punta a punta (`lote.mjs --rehacer --ejecutar --pagar-ia-xhtml`: US$ 0,15, verificó, 2 dudas ordinarias en la cola). Presupuesto del 356: US$ 35 de Guido, gastados ~2 (`node tools/gasto.mjs`), con ensayo gratis antes de cada corrida.
 - Los lotes: `Admin/lotes/lote-143.txt` (13 documentos de Inglaterra, el año más reciente de cada club; ensayo ~US$ 0,4 por documento con IA) y Hibernian en un lote de Escocia (un país por lote). Los `Generados/` de esos clubes eran de cuando el `.md` no tenía tablas (`sin_estado: true`); desde el 419 el lote lo ve solo («el .md cambió desde localizar … se rehace») y el ensayo cotiza US$ 4,85 para los 13 (Bolton ya está hecho). Los 2 documentos de OH Leuven 2017 y 2022 (Bélgica) también quedan «viejos» por su `.md` cambiado. Después las altas como en los lotes 140 y 141: cola contestada por subagentes Sonnet, ficha de alta, estadio y sponsor, perímetros (group accounts: perímetro consolidado con la regla 1 de CONVENCIONES-DATOS), gestiones.
@@ -253,7 +323,7 @@ Verificar: contiene data/leagues.js | Scottish Championship
 Verificar: contiene Admin/CONVENCIONES-DATOS.md | Trust
 Verificar: manual
 
-### 21. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 31. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -266,7 +336,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 22. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 32. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -282,7 +352,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 23. 335 · mails a clubes
+### 33. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -297,7 +367,7 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 24. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 34. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
