@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1045 — 440: informe de los revisores automáticos gratis sobre tools/ [440]
+
+- `Admin/mediciones/440-revisores-gratis.md`: 15 reglas de eslint con 0 hallazgos (1 s cada una), `no-unused-vars` 303 (220 imports sin uso), 34 ciclos entre `.mjs`, 85 exports sin uso aparente. Nada activado; TypeScript, knip y madge sin probar por falta de ok para instalar paquetes. El punto 440 queda abierto con HECHO y QUEDA.
+- Medición: sin cambios a ninguna tool; solo documentos.
+
 ## Versión 1044 — periodo.mjs: el cierre desde el nombre del archivo, y el P3 cierre-sin-fecha [444 · periodo.mjs, audit.js, audit-chequeos-5.js]
 
 - `periodo.mjs`: un anual sin cierre leído del contenido toma la fecha del nombre del archivo (`aarsrapport-2022-06-30.pdf`) si es de fin de mes (día 28 o más) y el año aparece en el texto del documento; confianza `media`, `cierreDe` lo dice. Si el contenido trae un cierre, manda el contenido (no se llega a este paso). Sobre los 3662 `.md`: 810 sin cierre pasan a 634 (176 rellenados: Dinamarca 89, Grecia 59, Bélgica 16, Chequia 10, Argentina 1, Portugal 1) y ningún otro período cambia.
