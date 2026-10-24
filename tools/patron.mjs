@@ -5,6 +5,8 @@
 // USO:
 //   node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" [--rango A..B] [--tools a.mjs,b.mjs] [--sesion unica] [--motivo "…"] [--escribir]
 //   --en <carpeta>   busca el patrón en los .js y .mjs de esa carpeta (p. ej. tools, para una condición nueva de audit.js) en vez de en Clubes/**/*.md
+//   --sin-documentos "<por qué no lee documentos>"   en vez de --patron, para un cambio de infraestructura de una tool (cuándo escribir un archivo, cómo se mide, cómo se cierra un punto): vale si el código agregado
+//                    no nombra clubes, años ni rutas de Clubes/ y la medición es idéntica o explicada; el registro lleva el motivo (`sinDocumentos`) para que la Auditora lo revise
 //   node tools/patron.mjs --patron "<regex>"      solo cuenta (documentos y clubes) y dice parche o general; no mira ningún cambio
 //
 // Sin --rango mira lo que cambió en tools/ contra HEAD (más las tools nuevas); con --rango A..B, ese rango (para reproducir un caso viejo).
@@ -143,7 +145,8 @@ function principal() {
     console.log(cambioDeCodigo(v('--exento').split(',').filter(Boolean), { destino: A.includes('--indice') ? 'indice' : null }).hayCodigo ? 'no' : 'si');
     return;
   }
-  const patron = v('--patron'), cambio = v('--cambio'), rango = v('--rango');
+  const patron = v('--patron'), cambio = v('--cambio'), rango = v('--rango'), sinDoc = v('--sin-documentos');
+  if (sinDoc !== undefined && (sinDoc.length < 15 || sinDoc.startsWith('--') || !cambio)) { console.error('--sin-documentos pide el motivo (15 caracteres o más: por qué el cambio no lee ningún documento) y --cambio "<qué hace>"'); process.exit(1); }
   if (!patron && !cambio) { console.error('Uso: node tools/patron.mjs --cambio "<qué hace>" --patron "<regex>" [--rango A..B] [--tools a.mjs] [--escribir]  (ver la cabecera)'); process.exit(1); }
   const [base, destino] = rango ? rango.split('..') : ['HEAD', null];
   let nombres = v('--tools')?.split(',');
@@ -168,7 +171,11 @@ function principal() {
   let veredicto, motivo;
   if (!dif.hayCodigo && !cont) { console.log('Nada que decidir: el cambio no toca código (solo comentarios o mudanza).'); process.exit(0); }
   if (nom.length) { veredicto = 'RECHAZADA'; motivo = `el código nombra ${nom.length} cosa(s) que la regla general no puede nombrar (${nom[0].motivo})`; }
-  else if (!cont) { veredicto = 'PENDIENTE'; motivo = 'falta --patron: sin el comando que cuenta los documentos no hay veredicto'; }
+  else if (sinDoc && !cont) { // infraestructura: el cambio no lee documentos, así que no hay patrón que contar; valen las otras dos condiciones (sin nombres, medición buena)
+    if (dif.hayCodigo && med.faltan.length) { veredicto = 'PENDIENTE'; motivo = 'falta la medición con la huella actual'; }
+    else { veredicto = 'GENERAL'; motivo = `infraestructura, no lee documentos (${sinDoc}); sin nombres${med ? `; medición ${med.linea?.resultado}` : ''}`; }
+  }
+  else if (!cont) { veredicto = 'PENDIENTE'; motivo = 'falta --patron: sin el comando que cuenta los documentos no hay veredicto (o --sin-documentos "motivo" si el cambio no lee documentos)'; }
   else if (bajoUmbral && dif.hayCodigo) { veredicto = 'RECHAZADA'; motivo = `el patrón está en ${cont.documentos} documentos de ${cont.clubes} clubes (menos de ${UMBRAL.documentos} de ${UMBRAL.clubes}) y se quiso meter en el código; va como ajuste`; }
   else if (bajoUmbral) { veredicto = 'PARCHE'; motivo = `el patrón está en ${cont.documentos} documentos de ${cont.clubes} clubes: no se toca el código, va como ajuste`; }
   else if (dif.hayCodigo && med.faltan.length) { veredicto = 'PENDIENTE'; motivo = 'falta la medición con la huella actual'; }
@@ -181,7 +188,8 @@ function principal() {
     const reg = {
       fecha: new Date().toISOString().slice(0, 10), sesion: v('--sesion') || 'unica', cambio,
       commit: rango ? rango : 'sin commit', veredicto: veredicto === 'GENERAL' ? 'GENERAL: SE COMMITEA' : 'RECHAZADA',
-      patron: `/${patron}/im`, comando: `node tools/patron.mjs --patron ${JSON.stringify(patron)}`, documentos: cont.documentos, clubes: cont.clubes,
+      patron: cont ? `/${patron}/im` : null, comando: cont ? `node tools/patron.mjs --patron ${JSON.stringify(patron)}` : `node tools/patron.mjs --sin-documentos ${JSON.stringify(sinDoc)}`, documentos: cont?.documentos ?? null, clubes: cont?.clubes ?? null,
+      ...(sinDoc ? { sinDocumentos: sinDoc } : {}),
       antes: med?.linea ? `medición ${med.linea.fecha}` : 'sin código', despues: med?.linea ? `${med.linea.resultado} (lote ${med.linea.nivel})` : 'sin código',
       motivo: v('--motivo') ? `${motivo}. ${v('--motivo')}` : motivo, tools: med?.huellas,
     };

@@ -176,6 +176,7 @@ function veredictoAntesDelCommit(cmd, raiz, tocadas, staged) {
     + 'Todo lo que pide este commit, por archivo: node tools/fos.mjs que-pide\n'
     + 'Corré: node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" --tools <todas las tools del commit, separadas por coma> --escribir   (una línea cubre solo las tools que lista; cuenta documentos y clubes, mira que el código no nombre nada y toma la medición). '
     + 'Si da PARCHE o RECHAZADA, el cambio no va al código: va como ajuste (la tool imprime el comando).\n'
+    + 'Si el cambio no lee documentos (infraestructura de la tool: cuándo escribe, cómo mide, cómo cierra), en vez de --patron: --sin-documentos "por qué no lee documentos" (sigue exigiendo sin nombres y medición buena).\n'
     + 'Si es una mudanza o solo comentarios y la tool no lo vio así, o es un caso de emergencia, con el ok de Guido agregá [sin-veredicto] al mensaje del commit.');
 }
 

@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1028 — fos patron --sin-documentos: el veredicto de un cambio de infraestructura [435 · patron.mjs, probar-patron.mjs, pre-tool.mjs]
+
+- `patron.mjs --cambio "…" --sin-documentos "por qué no lee documentos" --escribir` (en vez de `--patron`): el veredicto es GENERAL si el código agregado no nombra clubes, años ni rutas de `Clubes/` y la medición es idéntica o explicada; si nombra algo, RECHAZADA; sin medición, PENDIENTE. El registro lleva `sinDocumentos` (el motivo) y `patron: null`. El mensaje del hook de commit lo ofrece.
+- Verificado a mano (435): probar patron 8 casos ok: sin documentos + sin nombres + medición idéntica da GENERAL; con un club o un año, RECHAZADA
+- Medición: `probar patron` (8 casos ok, repo de juguete); `probar-pre-tool` sin cambios de casos; no es una tool del pipeline.
+
 ## Versión 1027 — medir pipeline: un medidor que no imprime nada no da «idéntico» [423 · medir-pipeline.mjs, probar-medir-pipeline.mjs]
 
 - Si el ANTES y el DESPUÉS de un medidor no imprimen nada (o un solo renglón «0 archivos») ni escriben un archivo de salida, `medir-pipeline` dice `VACÍO: no midió nada`, corta el lote chico, sale con 1 y el resultado es «vacío: …» (el hook no lo acepta); con `--explicacion "por qué"` queda «1 diferencias, todas explicadas». El registro marca `vacio: true` en ese medidor.
