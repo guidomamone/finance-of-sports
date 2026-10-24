@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1008 — El conversor XHTML lee las celdas puestas por coordenadas como tablas [356 · xhtml-aarsrapport.mjs]
+
+- `xhtml-aarsrapport.mjs`: los informes que Companies House convierte desde un PDF (un `div` por celda con `top:` y `left:`, sin `table`) salían una línea por celda y sin tablas; ahora se juntan las celdas de cada página, se agrupan por `top` y se ordenan por `left`: fila de 2 o más celdas = fila de tabla (con su separador); una sola celda = texto, salvo entre filas de tabla. Una celda sin texto no cuenta. 152 de 317 XHTML tienen estos divs; cambia la lectura de 120 (líneas, aprox. la mitad, y las tablas de 0 a 130-750 por archivo); los hechos iXBRL son los mismos en los 317.
+- Revisado a mano: Hibernian 2024-25 y Bolton 2023-24 (estado de resultados con Notas y años en columnas; pasan las compuertas (a) y (b)).
+- Medición: base real de 317 archivos (el cambio anterior): 82 imprimen distinto (líneas, tablas), 0 pasan a frenar en la compuerta, 0 se destraban y los 12 que frenaban siguen igual (Dinamarca y København). Veredicto general. Condición nueva en una tool: sección 7 de `auditoria-finance-of-sports` recorrida, «sin revisión independiente».
+
 ## Versión 1007 — El medidor `xhtml` ahora mide de verdad: recorre `Clubes/` y reconvierte [356 · xhtml-aarsrapport.mjs]
 
 - Defecto: `medir pipeline` corría el conversor sobre `Clubes` y la tool solo miraba los `.xhtml` del nivel superior (cero archivos): toda medición del conversor daba «idéntico» sin leer nada. Ahora la tool recorre las carpetas de adentro y el medidor usa `--rehacer` (reconvierte los que ya tienen `.md`, sin escribir); la base queda en 317 archivos, con líneas, hechos y líneas ubicadas en el PDF de cada uno.

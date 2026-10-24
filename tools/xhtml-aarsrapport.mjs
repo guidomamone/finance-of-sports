@@ -59,19 +59,28 @@ function leerXhtml(src, capas) {
   // Antes, el `</table>` de la de adentro dejaba `tabla` en null y el `</tr>` de la de afuera tiraba «Cannot read properties of null (reading 'push')». Sin tablas anidadas no cambia nada.
   const capa = new Set(); if (capas) { const st = []; toks.forEach((t, i) => { if (/^<table[\s>\/]/i.test(t)) { if (st.length) capa.add(st[st.length - 1]); st.push(i); } else if (/^<\/table\s*>/i.test(t)) st.pop(); }); }
   const pt = []; // pila de las tablas abiertas: ¿es de maquetación?
-  const volcar = () => { const t = linea.replace(/\s+/g, ' ').trim(); if (t) lineas.push(t); linea = ''; };
+  // CELDAS PUESTAS POR COORDENADAS: un `div` con `top:` y `left:` es una celda de una página maquetada a mano (los informes que Companies House
+  // convierte desde un PDF: Hibernian, Bolton, Crewe…); la fila no está en una etiqueta sino en el `top` común. Se juntan las celdas de la página y al
+  // cerrarla se agrupan por `top` y se ordenan por `left` (lineasDeCeldas). Una celda sin texto (una raya, un fondo) no cuenta: un informe maquetado
+  // con tablas y adornos absolutos sale igual que antes.
+  let celdaAbs = null; let celdasPend = [];
+  const volcarCeldas = () => { if (celdasPend.length) { lineas.push(...lineasDeCeldas(celdasPend)); celdasPend = []; } };
+  const volcar = () => { const t = linea.replace(/\s+/g, ' ').trim(); if (t) { volcarCeldas(); lineas.push(t); } linea = ''; };
   const celdaFin = () => { if (celda != null) { fila.push(celda.replace(/\s+/g, ' ').replace(/\|/g, '/').trim()); celda = null; } };
   for (const [ti, t] of toks.entries()) {
-    if (t[0] !== '<') { if (oculto) { if (hecho) hecho.txt += limpiar(dec(t)); continue; } const x = limpiar(dec(t)); if (hecho) hecho.txt += x; const previo = celda != null ? celda : linea; const pega = /[\p{L}:]$/u.test(previo) && /^\d/.test(x) ? ' ' : ''; /* dos spans seguidos («t.kr.» «2025») no se pegan */ if (celda != null) celda += pega + x; else linea += pega + x; continue; }
+    if (t[0] !== '<') { if (oculto) { if (hecho) hecho.txt += limpiar(dec(t)); continue; } const x = limpiar(dec(t)); if (hecho) hecho.txt += x; const previo = celda != null ? celda : celdaAbs ? celdaAbs.txt : linea; const pega = /[\p{L}:]$/u.test(previo) && /^\d/.test(x) ? ' ' : ''; /* dos spans seguidos («t.kr.» «2025») no se pegan */ if (celda != null) celda += pega + x; else if (celdaAbs) celdaAbs.txt += pega + x; else linea += pega + x; continue; }
     const m = t.match(/^<\s*(\/?)\s*([a-zA-Z0-9:_-]+)([^>]*?)(\/?)>$/); if (!m) continue;
     const [, cierra, nombre, attrs, auto] = m; const n = nombre.toLowerCase();
     if (!cierra) {
       const estilo = (attrs.match(/style="([^"]*)"/) || [])[1] || '';
       const oc = /display:\s*none/.test(estilo) || n === 'ix:header' || n === 'style' || n === 'script' || n === 'head';
       if (n === 'ix:nonfraction' && !auto) hecho = { txt: '', nombre: (attrs.match(/\bname="([^"]+)"/) || [])[1] || '', formato: (attrs.match(/\bformat="([^"]+)"/) || [])[1] || '', oculto: oculto > 0 || oc };
-      if (!auto) pila.push({ n, oc, hecho: n === 'ix:nonfraction' ? hecho : null });
+      const ab = n === 'div' && !auto && !oc && !oculto ? posicionAbs(estilo) : null;
+      if (!auto) pila.push({ n, oc, hecho: n === 'ix:nonfraction' ? hecho : null, abs: !!ab });
       if (oc && !auto) oculto++;
       if (oculto) continue;
+      if (ab) { celdaAbs = { ...ab, txt: '' }; continue; }
+      if (n === 'div' && !posicionAbs(estilo) && /(?:^|;)\s*height:\s*[\d.]+pt/.test(estilo)) volcarCeldas(); // el contenedor de una página nueva: las celdas de la anterior ya están
       if (/^h[1-6]$/.test(n)) { volcar(); linea = '#'.repeat(+n[1]) + ' '; }
       // un span con position:absolute es una línea de texto puesta por coordenadas (las notas del consolidado PSE de København, hecho por ParsePort): el salto de línea está en el `top`, no en una etiqueta; sin esto las notas salen pegadas en una sola línea (Auditora 5)
       else if (['p', 'div', 'li', 'br', 'section'].includes(n) || (n === 'span' && /position:\s*absolute/.test(estilo))) { if (celda != null) celda += ' '; else volcar(); }
@@ -83,6 +92,7 @@ function leerXhtml(src, capas) {
       const top = pila.pop(); const eraOc = !!(top && top.oc); if (eraOc) oculto--;
       if (top && top.hecho) { const h = top.hecho; h.txt = h.txt.replace(/\s+/g, ' ').trim(); hechos.push(h); hecho = null; }
       if (oculto) continue;
+      if (top && top.abs) { if (celdaAbs) { const txt = celdaAbs.txt.replace(/\s+/g, ' ').replace(/\|/g, '/').trim(); if (txt) celdasPend.push({ top: celdaAbs.top, left: celdaAbs.left, ancho: celdaAbs.ancho, txt }); celdaAbs = null; } continue; }
       if ((n === 'tr' || n === 'td' || n === 'th') && pt[pt.length - 1] && !eraOc) { volcar(); }
       else if (n === 'table' && pt[pt.length - 1] && !eraOc) { pt.pop(); volcar(); }
       else if (n === 'td' || n === 'th') celdaFin();
@@ -91,8 +101,28 @@ function leerXhtml(src, capas) {
       else if (/^h[1-6]$/.test(n) || ['p', 'div', 'li'].includes(n)) { if (celda == null) volcar(); }
     }
   }
-  volcar();
+  volcar(); volcarCeldas();
   return { lineas, hechos };
+}
+// `top` y `left` de un estilo en pt o px (null si falta alguno)
+const posicionAbs = (estilo) => { const t = estilo.match(/(?:^|;)\s*top:\s*(-?[\d.]+)(?:pt|px)/); const l = estilo.match(/(?:^|;)\s*left:\s*(-?[\d.]+)(?:pt|px)/); const w = estilo.match(/(?:^|;)\s*width:\s*([\d.]+)(?:pt|px)/); return t && l ? { top: +t[1], left: +l[1], ancho: w ? +w[1] : null } : null; };
+// Las celdas de una página -> líneas: una fila por `top` (hasta 2 de diferencia con la celda anterior), ordenada por `left`. Una fila de 2 o más celdas es fila de tabla; una de una sola
+// celda es texto, salvo que esté entre filas de tabla (un título de sección dentro del cuadro). Cada tabla lleva su separador después de la primera fila, como las demás.
+export function lineasDeCeldas(celdas) {
+  const orden = celdas.slice().sort((a, b) => a.top - b.top || a.left - b.left); const filas = [];
+  for (const c of orden) { const f = filas.at(-1); if (f && c.top - f.top <= 2) { f.celdas.push(c); f.top = c.top; } else filas.push({ top: c.top, celdas: [c] }); }
+  for (const f of filas) f.celdas.sort((a, b) => a.left - b.left);
+  const enTabla = filas.map(() => false);
+  filas.forEach((f, i) => { enTabla[i] = f.celdas.length >= 2 || (i > 0 && enTabla[i - 1] && (filas[i + 1]?.celdas.length ?? 0) >= 2); });
+  const out = []; let i = 0;
+  while (i < filas.length) {
+    if (!enTabla[i]) { out.push(filas[i].celdas.map((c) => c.txt).join(' ')); i++; continue; }
+    let j = i; while (j < filas.length && enTabla[j]) j++;
+    const bloque = filas.slice(i, j); const w = Math.max(...bloque.map((f) => f.celdas.length));
+    bloque.forEach((f, k) => { const cs = f.celdas.map((c) => c.txt); while (cs.length < w) cs.push(''); out.push('| ' + cs.join(' | ') + ' |'); if (k === 0) out.push('|' + ' --- |'.repeat(w)); });
+    i = j;
+  }
+  return out;
 }
 
 // compuerta (a): hechos VISIBLES cuyo número no está impreso en el .md (multiconjunto)
