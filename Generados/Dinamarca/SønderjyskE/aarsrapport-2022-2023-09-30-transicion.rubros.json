@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.md",
+  "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.pdf",
+  "club": "sonderjyske-dk",
+  "year": 2023,
+  "generatedAt": "2026-10-24T06:16:32.814Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bruttofortjeneste/Bruttotab",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        41.600084
+      ],
+      "glosa": "Beneficio bruto / Pérdida bruta"
+    },
+    {
+      "label": "Løn og gager",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        48.195491
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensionsbidrag",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        1.671142
+      ],
+      "glosa": "Aportaciones a planes de pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.724382
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Andre personaleomkostninger",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        2.427605
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Kontraktsrettigheder",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+      "values": [
+        2.478449
+      ],
+      "glosa": "Derechos contractuales"
+    },
+    {
+      "label": "Indretning lejede lokaler",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+      "values": [
+        0.246657
+      ],
+      "glosa": "Acondicionamiento de locales arrendados"
+    },
+    {
+      "label": "Andre anlæg, driftsmateriel og inventar",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+      "values": [
+        0.255959
+      ],
+      "glosa": "Otras instalaciones, utillaje y mobiliario"
+    }
+  ]
+}

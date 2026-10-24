@@ -1,0 +1,431 @@
+{
+ "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.pdf",
+ "generado": "2026-10-24T06:19:53.951Z",
+ "frena": [],
+ "avisos": [
+  "ejercicio de transición por cambio de cierre (15 meses al 2023-09-30): encadena con el cierre anterior 2022-06-30 y el siguiente 2024-09-30; se carga como el año, con nota pública (to-do 237 ab)",
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado. Años cargados: 2022 consolidado, 2024 consolidado",
+  "el documento cierra 2023-09-30 (ejercicio desde el 10-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
+  "iXBRL: ProfitLoss del informe XHTML: lo cargado es consolidado y el informe solo trae el hecho sin eje de grupo (la sociedad matriz); no se puede saber de qué perímetro es: no se compara"
+ ],
+ "ejercicio": {
+  "clubId": "sonderjyske-dk",
+  "year": 2023,
+  "cierre": "2023-09-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Bruttofortjeneste/Bruttotab",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 41.600084,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Løn og gager",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -48.195491,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensionsbidrag",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.671142,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre omkostninger til social sikring",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.724382,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre personaleomkostninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.427605,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kontraktsrettigheder",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -2.478449,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Indretning lejede lokaler",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.246657,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre anlæg, driftsmateriel og inventar",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.255959,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2023-09-30",
+   "sourceId": "sonderjyske-dk-aarsrapport-2022-2023-09-30-transicion",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.798938,
+   "tax": 4.132991,
+   "extraRows": [
+    {
+     "label": "Andre finansielle indtægter",
+     "value": 0.022386
+    },
+    {
+     "label": "Øvrige finansielle omkostninger",
+     "value": -0.821324
+    },
+    {
+     "label": "Skat af årets resultat",
+     "value": 4.132991
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Bruttofortjeneste/Bruttotab",
+     "lado": "revenue",
+     "importe": 41.600084,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 41.600084,
+   "officialTotalExpenses": 55.999685,
+   "officialPAT": -11.065548
+  },
+  "source": {
+   "id": "sonderjyske-dk-aarsrapport-2022-2023-09-30-transicion",
+   "clubId": "sonderjyske-dk",
+   "title": "Sønderjyske Fodbold A/S — aarsrapport-2022-2023-09-30-transicion (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-24) desde la transcripción Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "otro",
+  "meses": 15,
+  "inicio": "2022-07-01",
+  "cierre": "2023-09-30",
+  "cierreDe": "iXBRL: período etiquetado (escalón 0)",
+  "evidencia": {
+   "pagina": null,
+   "texto": "iXBRL: 2022-07-01 a 2023-09-30"
+  },
+  "confianza": "alta"
+ },
+ "transicion": {
+  "meses": 15,
+  "inicio": "2022-07-01",
+  "cierre": "2023-09-30",
+  "anterior": "2022-06-30",
+  "siguiente": "2024-09-30"
+ },
+ "clubId": "sonderjyske-dk",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 11,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Bruttofortjeneste/Bruttotab",
+   "page": 14,
+   "native": 41.600084,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 41.600084,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 41.600084
+  },
+  {
+   "label": "Løn og gager",
+   "page": 18,
+   "native": 48.195491,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 48.195491,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -48.195491
+  },
+  {
+   "label": "Pensionsbidrag",
+   "page": 18,
+   "native": 1.671142,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 1.671142,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.671142
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "page": 18,
+   "native": 0.724382,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.724382,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.724382
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "page": 18,
+   "native": 2.427605,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 2.427605,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.427605
+  },
+  {
+   "label": "Kontraktsrettigheder",
+   "page": 18,
+   "native": 2.478449,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")",
+   "signoFijo": 2.478449,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.478449
+  },
+  {
+   "label": "Indretning lejede lokaler",
+   "page": 18,
+   "native": 0.246657,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")",
+   "signoFijo": 0.246657,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.246657
+  },
+  {
+   "label": "Andre anlæg, driftsmateriel og inventar",
+   "page": 18,
+   "native": 0.255959,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")",
+   "signoFijo": 0.255959,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.255959
+  },
+  {
+   "label": "Andre finansielle indtægter",
+   "page": null,
+   "native": 0.022386,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Øvrige finansielle omkostninger",
+   "page": null,
+   "native": -0.821324,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skat af årets resultat",
+   "page": null,
+   "native": 4.132991,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos con signo",
+   "verificacion (nota que desglosa \"Personaleomkostninger\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 41.600084,
+  "expSum": -55.999685,
+  "officialTotalRevenue": 41.600084,
+  "officialTotalExpenses": 55.999685,
+  "officialPAT": -11.065548,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -11.065548,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 41.600084
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 55.999685
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "DKK@2023-09-30",
+  "fx": 7.039,
+  "source": "market_close",
+  "label": "Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2023-09-29, 2023-09-30 no es día hábil)"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no aparece en los rosters cacheados de 2023 (dk-superliga): puede haber jugado otra división",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-09-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2023-09-30) y contenido del .md (13 de 14 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "DKK@2023-09-30",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 7.039. --escribir agrega 'DKK@2023-09-30' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "sonderjyske-dk-aarsrapport-2022-2023-09-30-transicion",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no aparece en los rosters cacheados de 2023 (dk-superliga): puede haber jugado otra división",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 7,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

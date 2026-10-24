@@ -1,0 +1,181 @@
+{
+ "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.pdf",
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.md",
+ "mdSha1": "0768209616ab245dbeaf84cf6a65d0f8b9fa4093",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-24T06:16:12.895Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    37,
+    49
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    61,
+    62
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    65,
+    68
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    94,
+    95
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    200,
+    214
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    220,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    245,
+    261
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    266,
+    272
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    280,
+    287
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    290,
+    296
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    299,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    307,
+    311
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    316,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    330,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    346,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    369,
+    371
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b9",
+  "b10",
+  "b11",
+  "b12"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala sobre el estado de resultados (b5); en balances daneses de clase B suele ir en DKK unidades.",
+ "moneda": "DKK",
+ "columna_ejercicio": "2022/23",
+ "columna_anterior": "2021/22",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados (b5) están expresados en DKK unidades (no en miles)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece en el índice ninguna línea 'i DKK' o 't.DKK' sobre b5.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la columna '2022/23' de b5 como ejercicio cerrado el 2023-09-30 aunque abarque 15 meses (1-jul-2022 a 30-sep-2023)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "Ejercicio de transición de 15 meses según el título 'Resultatopgørelse 1. jul. 2022 - 30. sep. 2023'.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas individuales de Sønderjyske Fodbold A/S, con un ejercicio de transición de 15 meses. El estado de resultados parte de 'Bruttofortjeneste/Bruttotab', por lo que no hay desglose de ingresos. Notas 1 a 4 desglosan gastos de personal, amortizaciones, gastos financieros e impuesto."
+}

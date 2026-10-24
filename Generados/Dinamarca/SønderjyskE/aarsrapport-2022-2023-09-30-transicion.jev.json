@@ -1,0 +1,79 @@
+{
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.md",
+ "generatedAt": "2026-10-24T06:19:53.004Z",
+ "rubrosHuella": "77dbabded68c08f4cd3eccdbec54ef95cc43e940",
+ "rubros": [
+  {
+   "label": "Bruttofortjeneste/Bruttotab",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Løn og gager",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensionsbidrag",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Kontraktsrettigheder",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "player_amortisation",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Indretning lejede lokaler",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "depreciation",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre anlæg, driftsmateriel og inventar",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "depreciation",
+   "confidence": 0.77,
+   "desdeCache": true
+  }
+ ]
+}
