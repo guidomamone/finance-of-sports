@@ -162,6 +162,30 @@ function checkRarezas() {
 // cargado ni figura en data/faltantes/ con ningún estado (buscado, en-mano, sin-buscar: esos ya tienen su lugar). Cubre el hueco entre dos ejercicios y la cola hasta el último año del país.
 // P3 por club, con la lista de años. Se silencia por club en tools/audit-ignore.json, con motivo, después de mirarlo. Medido al nacer: 84 club-años en 51 clubes (24 de hueco y 60 de cola).
 const { temporada: temporadaDe } = require('./temporada.js'); // la misma que usa tools/faltantes-liga.mjs
+// De cada año que falta: ¿hay un documento en Clubes/ (en mano), uno descartado a propósito (Admin/registros/documentos-descartados.txt, con su motivo) o ninguno?
+// Se decide por el nombre del archivo (el año suelto, o el AAAA-AA de un ejercicio partido); sin carpetas de club que resuelvan al club, todo es «sin documento».
+let carpetasCache = null;
+function estadoDeDocumentos(clubId, anios, cruza) {
+  if (!carpetasCache) {
+    try { carpetasCache = JSON.parse(require('child_process').execFileSync('node', [path.join(ROOT, 'tools', 'carpetas-clubes.mjs'), '--json'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })); } catch { carpetasCache = []; }
+  }
+  const descartados = new Map();
+  try { for (const l of fs.readFileSync(path.join(ROOT, 'Admin/registros/documentos-descartados.txt'), 'utf8').split('\n')) { if (!l.trim() || l.startsWith('#')) continue; const [ruta, ...m] = l.split(' # '); descartados.set(ruta.trim(), m.join(' # ').trim()); } } catch { /* sin archivo */ }
+  const archivos = [];
+  const recorrer = (d) => { let es; try { es = fs.readdirSync(d, { withFileTypes: true }); } catch { return; } for (const e of es) { const p = path.join(d, e.name); if (e.isDirectory()) recorrer(p); else if (/\.pdf$/i.test(e.name)) archivos.push(path.relative(ROOT, p).split(path.sep).join('/')); } };
+  for (const c of carpetasCache.filter((x) => x.clubId === clubId)) recorrer(path.join(ROOT, 'Clubes', c.pais, c.carpeta));
+  const enMano = [], descartado = [], sin = [];
+  for (const y of anios) {
+    const re = new RegExp(`(^|\\D)${y}(\\D|$)${cruza ? `|(^|\\D)${y - 1}\\D?${String(y).slice(2)}(\\D|$)` : ''}`);
+    const hay = archivos.filter((a) => re.test(path.basename(a)));
+    const buenos = hay.filter((a) => !descartados.has(a));
+    if (buenos.length) enMano.push(y);
+    else if (hay.length) descartado.push(`${y} (${String(descartados.get(hay[0])).slice(0, 70)})`);
+    else sin.push(y);
+  }
+  return [enMano.length && `en mano: ${enMano.join(', ')}`, descartado.length && `descartado: ${descartado.join(', ')}`, sin.length && `sin documento: ${sin.join(', ')}`].filter(Boolean).join(' · ');
+}
+
 function checkEjercicioSinRastro() {
   const RECIENTE_MESES = 9; // el mismo de tools/faltantes-liga.mjs: si cambia allá, cambia acá (el .mjs corre su main al importarlo)
   const dirFal = path.join(ROOT, 'data/faltantes');
@@ -203,7 +227,7 @@ function checkEjercicioSinRastro() {
     const partes = [];
     if (hueco.length) partes.push(`hueco ${hueco.join(', ')}`);
     if (cola.length) partes.push(`sin cargar después de ${ultimo}: ${cola.join(', ')}`);
-    add('P3', 'ejercicio-sin-rastro', `${c.id}: ${partes.join('; ')}. Ni cargado ni en data/faltantes/ (buscado, en-mano o sin-buscar). Si no hay documento publicado, silenciarlo en tools/audit-ignore.json con el motivo`);
+    add('P3', 'ejercicio-sin-rastro', `${c.id}: ${partes.join('; ')}. Ni cargado ni en data/faltantes/ (buscado, en-mano o sin-buscar). Documentos en la carpeta del club: ${estadoDeDocumentos(c.id, [...hueco, ...cola], c.cruza)}. Con un documento en mano, cargarlo; descartado, no cuenta (su motivo está en documentos-descartados.txt); sin documento publicado, silenciarlo en tools/audit-ignore.json con el motivo y una fecha \`revisar\``);
   }
 }
 

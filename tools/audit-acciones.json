@@ -220,6 +220,11 @@
   "quien": "sesion",
   "donde": "Admin/HALLAZGOS-pipeline.md, segunda fuente de una liga en grupos"
  },
+ "silencio-vencido": {
+  "hacer": "Volver a mirar la fuente del silencio de tools/audit-ignore.json: si sigue igual, poner una fecha nueva en `revisar`; si cambió, arreglar el hallazgo y sacar la entrada.",
+  "quien": "sesion",
+  "donde": "tools/silenciar.mjs (--revisar)"
+ },
  "ejercicio-sin-rastro": {
   "hacer": "Cargar el ejercicio, anotarlo en data/faltantes (sourcing) o, si no hay documento publicado, silenciarlo en tools/audit-ignore.json con el motivo.",
   "quien": "sesion",

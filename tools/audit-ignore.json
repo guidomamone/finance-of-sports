@@ -493,42 +493,50 @@
  {
   "code": "ejercicio-sin-rastro",
   "match": "monchengladbach-de:",
-  "motivo": "VERIFICADO (Admin/sourcing/Alemania/Borussia Mönchengladbach.md, chequeo 2026-10-18, 2026-10-23). El ejercicio 2025 existe (cifras en la asamblea de abril de 2026) pero el Jahresabschluss no está en el Unternehmensregister; se espera hacia enero de 2027. Se revisa cada mes."
+  "motivo": "VERIFICADO (Admin/sourcing/Alemania/Borussia Mönchengladbach.md, chequeo 2026-10-18, 2026-10-23). El ejercicio 2025 existe (cifras en la asamblea de abril de 2026) pero el Jahresabschluss no está en el Unternehmensregister; se espera hacia enero de 2027. Se revisa cada mes.",
+  "revisar": "2027-01-23"
  },
  {
   "code": "ejercicio-sin-rastro",
   "match": "stuttgart-de:",
-  "motivo": "VERIFICADO (Admin/sourcing/Alemania/VfB Stuttgart.md, chequeo 2026-10-18, 2026-10-23). El Konzernabschluss 2025 no está depositado (North Data lista hasta 2024). Se revisa cada mes."
+  "motivo": "VERIFICADO (Admin/sourcing/Alemania/VfB Stuttgart.md, chequeo 2026-10-18, 2026-10-23). El Konzernabschluss 2025 no está depositado (North Data lista hasta 2024). Se revisa cada mes.",
+  "revisar": "2027-01-23"
  },
  {
   "code": "ejercicio-sin-rastro",
   "match": "monza-it:",
-  "motivo": "VERIFICADO (Admin/sourcing/Italia/Monza.md, chequeo 2026-10-21, 2026-10-23). El bilancio 2025 sigue sin publicarse en acmonza.com (10 meses después del cierre). Se revisa en el sourcing."
+  "motivo": "VERIFICADO (Admin/sourcing/Italia/Monza.md, chequeo 2026-10-21, 2026-10-23). El bilancio 2025 sigue sin publicarse en acmonza.com (10 meses después del cierre). Se revisa en el sourcing.",
+  "revisar": "2027-01-23"
  },
  {
   "code": "liga-una-fuente",
   "match": "gr-superleague2:",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). aellarissa-gr 2025: la liga sale solo de Wikipedia; la segunda fuente (tools/segunda-fuente-liga.mjs) se hace al tocar el club."
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). aellarissa-gr 2025: la liga sale solo de Wikipedia; la segunda fuente (tools/segunda-fuente-liga.mjs) se hace al tocar el club.",
+  "revisar": "2026-12-23"
  },
  {
   "code": "liga-una-fuente",
   "match": "pt-liga3:",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). felgueiras-pt 2023: la liga sale solo de Wikipedia; la segunda fuente se hace al tocar el club."
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). felgueiras-pt 2023: la liga sale solo de Wikipedia; la segunda fuente se hace al tocar el club.",
+  "revisar": "2026-12-23"
  },
  {
   "code": "club-sin-color-ni-null",
   "match": "bathrugby-gb",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Bath Rugby es un club de prueba de la taxonomía por deporte (Admin/CONVENCIONES.md); el color sale de la camiseta, no de adivinarlo."
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Bath Rugby es un club de prueba de la taxonomía por deporte (Admin/CONVENCIONES.md); el color sale de la camiseta, no de adivinarlo.",
+  "revisar": "2026-12-23"
  },
  {
   "code": "liga-sin-verificar",
   "match": "24 de 1338 filas",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Filas viejas de data/club-leagues con null; se verifican contra la página de temporada al tocar cada club (tools/lookup-club-league.js)."
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Filas viejas de data/club-leagues con null; se verifican contra la página de temporada al tocar cada club (tools/lookup-club-league.js).",
+  "revisar": "2026-12-23"
  },
  {
   "code": "sponsor-sin-registro",
   "match": "con el sponsor sin fuente como texto libre",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Sponsors de antes del registro de búsqueda (tools/sponsor-legacy.json); se completan al tocar el club."
+  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Sponsors de antes del registro de búsqueda (tools/sponsor-legacy.json); se completan al tocar el club.",
+  "revisar": "2026-12-23"
  },
  {
   "code": "ejercicio-sin-rastro",

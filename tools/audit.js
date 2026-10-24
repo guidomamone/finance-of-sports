@@ -266,6 +266,10 @@ function main() {
     fs.writeFileSync(IGNORE_FILE, JSON.stringify(IGNORADOS.filter((i) => !sinUso.includes(i)), null, 1) + '\n', 'utf8');
     console.error(`audit-ignore.json: ${sinUso.length} entradas sin uso sacadas`);
   }
+  // un silencio con fecha `revisar` (los «aceptado sin verificar» y los «todavía no publicado») vence: pasada la fecha hay que mirarlo de nuevo, con la fuente
+  const hoy = new Date().toISOString().slice(0, 10);
+  const vencidos = IGNORADOS.filter((i) => i.revisar && String(i.revisar) <= hoy);
+  if (vencidos.length) add('P3', 'silencio-vencido', `${vencidos.length} silencio(s) de tools/audit-ignore.json con la fecha de revisión pasada: ${vencidos.slice(0, 4).map((i) => `${i.code} «${String(i.match).slice(0, 30)}» (revisar ${i.revisar})`).join('; ')}${vencidos.length > 4 ? '; …' : ''}. Volvé a mirar la fuente: si sigue igual, nueva fecha en \`revisar\`; si cambió, arreglá el hallazgo y sacá la entrada`);
   if (sinUso.length) add('P3', 'audit-ignore-sin-uso', `${sinUso.length} entradas de tools/audit-ignore.json no silencian nada hoy (sacarlas): ${sinUso.slice(0, 6).map((i) => `${i.code} «${String(i.match).slice(0, 40)}»`).join('; ')}${sinUso.length > 6 ? '; …' : ''}`);
 
   // CUANDO PASA X, SE HACE Y: cada código que dispara tiene su acción en tools/audit-acciones.json (qué hacer, quién, dónde está cubierto). Uno que dispara sin entrada da P3.

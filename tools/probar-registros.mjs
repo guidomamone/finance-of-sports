@@ -71,6 +71,9 @@ x = spawnSync('node', ['tools/silenciar.mjs', 'codigo-de-prueba', 'texto-unico',
 const lineaS = readFileSync(join(Z, 'Admin', 'registros', 'auditoria-proceso.jsonl'), 'utf8').trim();
 caso('silenciar.mjs registra una línea con esquema que cumple', x.status === 0 && lineaS && JSON.parse(lineaS).esquema === 1 && JSON.parse(lineaS).tipo === 'silencio-de-audit' && validar('auditoria-proceso', JSON.parse(lineaS)).length === 0, (x.stdout || '') + (x.stderr || '') + lineaS);
 
+x = spawnSync('node', ['tools/silenciar.mjs', 'codigo-de-prueba', 'texto-unico', '--verificado', 'se miró el documento X, línea 10, y dice lo que corresponde', '--motivo', 'el balance todavía no se publicó'], { cwd: Z, encoding: 'utf8' });
+caso('silenciar.mjs pide --revisar cuando el motivo es «todavía no publicado»', x.status === 1 && /--revisar/.test((x.stdout || '') + (x.stderr || '')), (x.stdout || '') + (x.stderr || ''));
+
 // ---- el recordatorio de metodología (audit.js, cada 40 commits de reglas)
 const { metodologiaAtrasada } = createRequire(import.meta.url)('./audit-chequeos-5.js');
 caso('metodologiaAtrasada: con un umbral bajo da los commits y la fecha de la última edición', (() => { const r = metodologiaAtrasada(1); return r && Number.isInteger(r.n) && r.n >= 1 && /^\d{4}-\d{2}-\d{2}$/.test(r.fecha); })());

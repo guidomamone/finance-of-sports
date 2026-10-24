@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1070 — 416: silencios de audit-ignore con fecha de revisión; ejercicio-sin-rastro dice si el documento está en mano, descartado o no existe [416 · audit-chequeos-5.js, audit.js, probar-registros.mjs, silenciar.mjs]
+
+- Una entrada de `tools/audit-ignore.json` puede llevar `revisar` (AAAA-MM-DD): pasada la fecha, `audit.js` da `silencio-vencido` (P3). `silenciar.mjs --revisar` la pone y la exige si el motivo es «sin verificar», «no publicado» o parecido. Las 5 entradas «aceptado sin verificar» (2026-12-23) y las 3 de «todavía no publicado» (Gladbach, Stuttgart, Monza; 2027-01-23) ya la llevan.
+- `ejercicio-sin-rastro` agrega por cada año: «en mano» (hay un PDF con ese año en el nombre), «descartado» (con el motivo de `documentos-descartados.txt`) o «sin documento». Ejemplo: Fredrikstad 2019-2023 sale «descartado».
+- Verificado a mano (416): silencio-vencido y --revisar probados con probar-registros.mjs; ejercicio-sin-rastro corrido sobre los 13 clubes (Fredrikstad sale descartado); 8 entradas de audit-ignore.json con revisar
+- Medición: `audit` idéntico (el aviso nuevo no dispara hoy y los silenciados no cuentan); `probar-registros.mjs` con un caso nuevo, ok.
+
 ## Versión 1069 — esquema de ajustes-manuales.jsonl y mediciones-pipeline.jsonl [ajustes.mjs, medir-pipeline.mjs, audit-chequeos-5.js, probar-registros.mjs]
 
 - `tools/esquemas-registros.json` define los dos registros (`validacion.registros`). `ajustes.mjs` (`--agregar`, `--anular`, `agregarAjuste`) y `medir-pipeline.mjs` escriben `esquema: 1` y no guardan una línea que no lo cumple; `ajustes --agregar` acepta `--causa` (opcional). Lo anterior es legado. `audit.js` (`registro-fuera-de-esquema`) revisa las líneas que declaran `esquema`.
