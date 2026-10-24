@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1033 — costo-personal: la unidad del rótulo manda y la cifra exacta de la nota reemplaza a la redondeada [422 · costo-personal.mjs]
+
+- Tres cambios en `costo-personal.mjs`: (1) `escalaDeRotulo`: la unidad entre paréntesis del rótulo de la fila («Total staff costs (£m)») manda sobre la del encabezado y la del documento; (2) `cifrasSeparadas`: «Staff costs 154,754 139,064» (dos importes pegados por el espacio) se lee como dos cifras, solo en las filas de personal; (3) `afinada`: si Jev elige la cifra redondeada de un cuadro de indicadores en £m y el documento tiene la fila de la nota «Staff costs» dentro del redondeo (±0,05 M o 1 %), se usa la exacta. Probé arreglarlo en `filasDelMd` (caja-deuda-md.mjs) y lo descarté: cambiaba caja y deuda en 4 casos (fckobenhavn 2024, wolves 2025, flamengo 2025, santos 2024). Lo de la nota de una filial queda en el 15 % de ingresos que ya existe.
+- Verificado a mano (422): caja-deuda --personal --club fulham-gb: 2023 139.064 reconfirmado, 2024 154.754 y 2025 166.507 desde la nota; medir pipeline: 0 valores aceptados que cambian o se pierden
+- Medición: `medir pipeline` (caja-deuda, caja-deuda-personal, audit, escribir idénticos; personal-ensayos: aceptados idénticos 156, que cambian 0, que se pierden 0, 20 nuevos validados por el vecino); Fulham 2023 se reconfirma (139,064) y 2024 y 2025 salen de la nota (154,754 y 166,507). Veredicto general (7 documentos de 2 clubes). Sección 7 recorrida por la misma sesión (no frena nada; un valor malo lo atrapa el vecino y el 15 %; lo cargado no cambia): sin revisión independiente.
+
 ## Versión 1032 — perímetro: la madre que no presenta su estado (s408) deja el del grupo [421 · perimetro-senales-a3.mjs]
 
 - `proponer()`: si no hay tabla etiquetada «consolidado» ni «individual» y el documento dice que la madre no presenta su propio estado de resultados (Companies Act 2006, s408, con el nombre del estado a 300 caracteres), el paso A da `solo-consolidado` (Regla de perímetro 1 de `CONVENCIONES-DATOS.md`, antes aplicada a mano con un ajuste). Tercera y última parte del 421.

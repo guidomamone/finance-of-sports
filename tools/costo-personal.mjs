@@ -75,7 +75,7 @@ export function candidatosPersonal(md) {
   for (const f of porLinea.values()) {
     if (yaEstan.has(f.linea) || !f.cifras.length || !ROTULO_PERSONAL_RE.test(String(f.etiqueta).trim())) continue;
     const arriba = []; for (let k = f.linea - 2; k >= 0 && arriba.length < 2 && f.linea - 2 - k < 6; k--) { const t = L[k].trim(); if (t && !/^-+\s*p[aá]g/i.test(t) && !/^!\[/.test(t)) arriba.unshift(t.replace(/[#*>|]/g, '').trim().slice(0, 160)); }
-    out.push({ md, linea: f.linea, etiqueta: f.etiqueta, cifras: f.cifras, tabla: '', contexto: arriba.join(' ').slice(0, 300) });
+    out.push({ md, linea: f.linea, etiqueta: f.etiqueta, cifras: cifrasSeparadas(L[f.linea - 1], f.cifras), tabla: '', contexto: arriba.join(' ').slice(0, 300) });
   }
   return out;
 }
@@ -86,6 +86,21 @@ const ROTULO_PERSONAL_RE = /^(total )?(staff|personnel|employee)s?(?:'s)? (costs
 // no decide (Jev elige). La escala la dice el encabezado de la tabla (£000, £m…), no el documento.
 const ROLES_PERSONAL = [/wages|salar|sueldo|gehalt|l[öo]hne|ordenado|remunera/i, /social (security|charges|insurance|contributions)|national insurance|cargas sociales|sociale (lasten|zekerheid)|encargos sociais/i, /pension|retirement|jubila|aposentad/i];
 const REEXPRESADO_RE = /restat|reexpres|reformulad/i;
+// «Staff costs 154,754 139,064» fuera de una tabla: filasDelMd toma el espacio entre los dos importes por un separador de miles y lee UNA cifra (154754139064). Solo para las filas con rótulo de
+// personal: si el renglón trae dos o más importes con coma de miles separados por un espacio y la cifra leída es esa tira pegada, se devuelven por separado (caja y deuda no se tocan).
+export function cifrasSeparadas(renglon, cifras) {
+  const m = String(renglon || '').match(/\d{1,3}(?:,\d{3})+(?: \d{1,3}(?:,\d{3})+)+/);
+  if (!m || cifras.length !== 1 || Math.abs(parseNumber(m[0])) !== Math.abs(cifras[0])) return cifras;
+  return m[0].split(' ').map((c) => Math.abs(parseNumber(c)));
+}
+// la unidad entre paréntesis al final del rótulo de la fila: «(£m)», «(€m)», «(m)», «(millions)» -> 1 (cifras en millones); «(£000)», «(£'000)», «(000)», «(thousands)» -> 0,001. Sin unidad en el rótulo: null.
+export function escalaDeRotulo(etiqueta) {
+  const u = String(etiqueta || '').match(/\(\s*([^()]{1,18}?)\s*\)\s*$/)?.[1];
+  if (!u) return null;
+  if (/^[£€$]?\s*(?:m|mn|mm|mio|mill?\.?|millions?|millones)$/i.test(u)) return 1;
+  if (/^[£€$]?\s*['’`]?000s?$|^[£€$]?\s*(?:k|th|thousands?|miles)$/i.test(u)) return 0.001;
+  return null;
+}
 export function escalaDeEncabezado(ctx) {
   const enc = String(ctx || '').match(/encabezado: (.*?)(?: · filas:|$)/)?.[1] || '';
   if (/(?<!\d)['’]?000\b|thousand|tusind|tuhat|duizend/i.test(enc)) return 0.001;
@@ -122,7 +137,8 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const cands = mds.flatMap(candidatosPersonal);
     // la escala del año con la misma escalera que caja y deuda (ajuste `escala`, líneas cargadas, y la escala del estado que registró verificar.mjs si contradice a la escala 1).
     // La escala que imprime el encabezado de la propia tabla de personal manda sobre la del documento (una nota en £m dentro de un documento en £000).
-    const escalaDeFila = (fila, delEncabezado) => (fila ? (delEncabezado ?? escalaDe(fila.md, a.anio, filasDe(fila.md), d.revenueLinesByYear?.[a.anio], anios) ?? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios)) : null);
+    // Y la que dice el rótulo de la propia fila («Total staff costs (£m)», «Staff costs (£000)») manda sobre la del encabezado y la del documento: un cuadro de indicadores en £m dentro de un documento en £000 (Fulham 2023-24).
+    const escalaDeFila = (fila, delEncabezado) => (fila ? (escalaDeRotulo(fila.etiqueta) ?? delEncabezado ?? escalaDe(fila.md, a.anio, filasDe(fila.md), d.revenueLinesByYear?.[a.anio], anios) ?? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios)) : null);
     const ingresos = ((d.revenueLinesByYear || {})[a.anio] || []).reduce((s, l) => s + Math.max(0, l.amountNative || 0), 0);
     const plausible = (fila, factor) => !fila || !factor || !(ingresos > 0) || (fila.cifras[0] * factor) / ingresos >= PERSONAL_MIN_SOBRE_INGRESOS;
     // ESCALÓN 1: la nota de personal por su estructura, en el documento del año. Si no pasa la plausibilidad (otra tabla con filas parecidas, o la sociedad sola sin los jugadores), Jev elige, pero SOLO entre las
@@ -133,8 +149,21 @@ async function personalDelClub(clubId, d, S, { ejecutar = false, reg }) {
     const r = usaEstructura ? { estructura: true, fila: est.fila, datos: { conf: 'estructura' } } : await jevPersonal(est ? cands.filter((c) => c.md === a.md) : cands, ejecutar, deporteDeClub(clubId));
     if (r.ensayo) { usd += r.usd; ensayos++; }
     else usd += r.costo || 0;
-    const fila = r.fila || null;
-    const factor = usaEstructura ? factorEst : escalaDeFila(fila, null);
+    // Una cifra redondeada de un cuadro de indicadores («Total staff costs (£m) 154.8 139.1») es la misma cantidad que la fila de la nota del mismo documento con todas sus cifras («Staff costs 154,754 139,064»):
+    // si coinciden dentro del redondeo (±0,05 M o el 1 % por columna: un OCR que pierde el punto decimal da «166» por 166,5), se usa la fila exacta, que es la que el vecino y lo ya cargado pueden confirmar al céntimo.
+    const afinada = (f0) => {
+      for (const c of cands) {
+        if (c === f0 || c.md !== f0.md || escalaDeRotulo(c.etiqueta) != null || !ROTULO_PERSONAL_RE.test(String(c.etiqueta).trim())) continue;
+        const fc = escalaDeFila(c, null); if (!fc) continue;
+        const dentro = (i) => f0.cifras[i] == null || c.cifras[i] == null || Math.abs(c.cifras[i] * fc - f0.cifras[i]) <= Math.max(0.0501, 0.01 * Math.abs(f0.cifras[i]));
+        if (c.cifras.length && dentro(0)) return { fila: c, factor: fc };
+      }
+      return null;
+    };
+    let fila = r.fila || null;
+    let factor = usaEstructura ? factorEst : escalaDeFila(fila, null);
+    const fina = !usaEstructura && fila && escalaDeRotulo(fila.etiqueta) === 1 ? afinada(fila) : null;
+    if (fina) { fila = fina.fila; factor = fina.factor; }
     porAnio.set(a.anio, { a, fila, factor, jev: r, estructura: usaEstructura, ndocs: mds.length, ncands: cands.length });
   }
   const res = [];
