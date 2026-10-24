@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1079 — 444: los 38 frenados eran 13 balances; 25 descartados y 13 ajustes cierre; frenan 0 [444 · cierre-sin-fecha.mjs, probar-cierre.mjs]
+
+- Guido abrió `River/memoria-2018-2019` y era narración sin cifras. Se revisaron los 38 por filas con números y palabras de estados: 25 no eran balances (memorias, certificaciones, dictámenes) y entraron a `documentos-descartados.txt` con su motivo; `fos cierre-sin-fecha` ya no cuenta los descartados (el total sin cierre bajó de 457 a 302).
+- Los 13 balances reales (Dortmund, Llaneros, Istra, Osijek, Rijeka, Den Bosch) llevan un ajuste `cierre` con la línea citada; Den Bosch 2019-20 con seguridad media. Frenan 0.
+- Medición: `cierre-sin-fecha.mjs` no es del pipeline; `fos probar cierre` sin fallas.
+
 ## Versión 1078 — cierre-sin-fecha no cuenta los documentos cuyo año ya está cargado [cierre-sin-fecha.mjs, probar-cierre.mjs]
 
 - De los 83 «frenan» de antes, 45 eran documentos con el año ya en el sitio (`cargado`): al registro le falta la fecha, pero no hay carga que esperar. Ahora se cuentan aparte (`yaCargados`) y frenan 38 (Colombia 16, Argentina 10, Croacia 6, Alemania 4, Grecia 1, Países Bajos 1), de los cuales unos 20 están listos para cargar y el resto aún sin segunda lectura.

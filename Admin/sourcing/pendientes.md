@@ -25,7 +25,7 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-24): no editar 
 - VfL Osnabrück — sin-buscar: 2024 (de-2bundesliga)
 - Wehen Wiesbaden — sin-buscar: 2024 (de-2bundesliga)
 
-## Argentina (41 clubes, 179 club-años)
+## Argentina (41 clubes, 180 club-años)
 
 - Alvarado — sin-buscar: 2025 (ar-primeranacional), 2023 (ar-primeranacional), 2022 (ar-primeranacional), 2021 (ar-primeranacional), 2020 (ar-primeranacional)
 - Arsenal — sin-buscar: 2025 (ar-primeranacional), 2023 (ar-primera), 2022 (ar-primera), 2021 (ar-primera), 2020 (ar-primera), 2019 (ar-primeranacional), 2018 (ar-primera), 2017 (ar-primera), 2016 (ar-primera), 2015 (ar-primera), 2014 (ar-primera), 2013 (ar-primera), 2012 (ar-primera), 2011 (ar-primera), 2010 (ar-primera), 2009 (ar-primera)
@@ -34,7 +34,7 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-24): no editar 
 - Estudiantes — sin-buscar: 2025 (ar-primeranacional), 2023 (ar-primeranacional), 2022 (ar-primeranacional), 2020 (ar-primeranacional), 2017 (ar-primeranacional)
 - Flandria — sin-buscar: 2025 (ar-primerab), 2023 (ar-primeranacional), 2022 (ar-primeranacional), 2021 (ar-primerab), 2020 (ar-primerab), 2018 (ar-primeranacional), 2017 (ar-primeranacional)
 - Gimnasia y Esgrima — sin-buscar: 2025 (ar-primeranacional), 2023 (ar-primeranacional), 2022 (ar-primeranacional), 2020 (ar-primeranacional), 2017 (ar-primeranacional)
-- Newell's Old Boys — sin-buscar: 2025 (ar-primera), 2024 (ar-primera), 2023 (ar-primera), 2022 (ar-primera), 2021 (ar-primera), 2020 (ar-primera), 2018 (ar-primera), 2017 (ar-primera), 2016 (ar-primera), 2015 (ar-primera), 2014 (ar-primera), 2012 (ar-primera), 2011 (ar-primera), 2010 (ar-primera), 2009 (ar-primera)
+- Newell's Old Boys — sin-buscar: 2025 (ar-primera), 2024 (ar-primera), 2023 (ar-primera), 2022 (ar-primera), 2021 (ar-primera), 2020 (ar-primera), 2018 (ar-primera), 2017 (ar-primera), 2016 (ar-primera), 2015 (ar-primera), 2014 (ar-primera), 2013 (ar-primera), 2012 (ar-primera), 2011 (ar-primera), 2010 (ar-primera), 2009 (ar-primera)
 - Sacachispas — sin-buscar: 2025 (ar-primerab), 2022 (ar-primeranacional), 2021 (ar-primerab), 2020 (ar-primerab)
 - San Martín — sin-buscar: 2025 (ar-primerab), 2025 (ar-primeranacional), 2023 (ar-primeranacional), 2022 (ar-primeranacional), 2020 (ar-primeranacional), 2017 (ar-primeranacional)
 - Villa Dálmine — sin-buscar: 2025 (ar-primerab), 2023 (ar-primeranacional), 2022 (ar-primeranacional), 2021 (ar-primeranacional), 2020 (ar-primeranacional), 2019 (ar-primeranacional), 2018 (ar-primeranacional), 2017 (ar-primeranacional)

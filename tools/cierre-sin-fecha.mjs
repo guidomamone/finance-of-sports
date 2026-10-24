@@ -20,7 +20,9 @@ const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const reg = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l)).filter((x) => x.tieneMd && x.periodo);
 const cargadas = new Set(reg.filter((x) => x.cargado).map((x) => dirname(x.pdf)));
-const sin = reg.filter((x) => !x.periodo.cierre && x.periodo.tipo === 'anual');
+// un documento descartado como fuente (Admin/registros/documentos-descartados.txt) no se va a cargar nunca: su fecha de cierre no importa
+const descartados = new Set(readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-descartados.txt'), 'utf8').split('\n').filter((l) => l.trim() && !l.startsWith('#')).map((l) => l.split(' # ')[0].trim()));
+const sin = reg.filter((x) => !x.periodo.cierre && x.periodo.tipo === 'anual' && !descartados.has(x.pdf));
 const deClubesCargados = sin.filter((x) => cargadas.has(dirname(x.pdf)));
 const porVecinos = deClubesCargados.filter((x) => cierrePorVecinos(x.pdf, reg));
 const sinVecinos = deClubesCargados.filter((x) => !cierrePorVecinos(x.pdf, reg));
