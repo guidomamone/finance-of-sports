@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1030 — parseNumber lee «(4,892,287 )» en miles, no en unidades [421 · datos-sitio.mjs]
+
+- `parseNumber` recorta el contenido entre paréntesis: «(4,892,287 )» (espacio antes del cierre, como lo deja el XHTML) tomaba la coma de miles por decimal y daba 4,89 en vez de 4.892.287. Patrón: 5 documentos de 4 clubes (Morecambe, Gent, AC Milan, Sport Recife). Primera de las tres partes del 421.
+- Medición: lote completo (990 documentos), medidores cargar, audit, escribir, verificar, lote-ensayo y alta: idéntico salvo Morecambe 2024-25, que pasa de COLA (gastos 0,000914 M) a cerrar con el resultado impreso (gastos 5,800961 M, resultado −1,02345 M). Veredicto general.
+
 ## Versión 1029 — faltantes-liga no reescribe nada por un cambio de día [426 · faltantes-liga.mjs]
 
 - Al escribir, compara cada `data/faltantes/*.js` y `pendientes.md` contra lo guardado sin la fecha («calculado»); si ninguno cambió ni sobra uno, no escribe y lo dice. Un cambio de día no mueve 66 archivos de `data/` ni dispara `asset-v-sin-subir`. `--check` ya comparaba con la fecha guardada. `FOS_HOY=AAAA-MM-DD` permite probar el cambio de día.

@@ -29,7 +29,7 @@ export function parseNumber(raw) {
   if (!/\d/.test(s)) return null;
   s = s.replace(/(\d)\s+(?=\d)/g, '$1');
   let neg = false;
-  if (/^\(.*\)$/.test(s)) { neg = true; s = s.slice(1, -1); }
+  if (/^\(.*\)$/.test(s)) { neg = true; s = s.slice(1, -1).trim(); } // «(4,892,287 )» con espacio antes del cierre: sin el trim la coma de miles pasaba por decimal
   if (s.startsWith('-') || s.startsWith('−') || (s.startsWith('–') && /^–\s*\d/.test(s))) { neg = true; s = s.slice(1); } // el guion largo (U+2013) pegado a un dígito es un menos: FC Basel y FC Luzern lo imprimen así ("–14 000 000.00" se leía +14 M). Un "–" sin cifra sigue sin ser número.
   const c = s.lastIndexOf(','); const d = s.lastIndexOf('.');
   if (c !== -1 && d !== -1) s = c > d ? s.replace(/\./g, '').replace(',', '.') : s.replace(/,/g, '');
