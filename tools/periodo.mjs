@@ -363,9 +363,15 @@ export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
     const [mejor, v] = [...votos].sort((a, b) => b[1].n - a[1].n || (a[0] < b[0] ? 1 : -1))[0] || [];
     if (mejor && mejor !== res.cierre && v.n >= Number(process.env.PERIODO_PAR_MIN || 1)) { res.cierreTitulos = res.cierre; res.cierre = mejor; res.cierreDe = 'par de encabezado (to-do 237 a + ac)'; res.evidencia = { pagina: v.pagina, texto: v.texto }; }
   }
-  return terminar(res, nombreArchivo);
+  return terminar(res, nombreArchivo, mdText);
 }
-function terminar(res, nombreArchivo) {
+function terminar(res, nombreArchivo, mdText = null) {
+  // Sin cierre leído del contenido, un anual cuyo NOMBRE trae una fecha de fin de mes (`aarsrapport-2022-06-30.pdf`) usa esa fecha, con confianza media y una compuerta:
+  // el año de la fecha tiene que aparecer en el texto del documento. Si el contenido dice otro cierre, ya no se llega acá: manda el contenido.
+  if (!res.cierre && res.tipo === 'anual' && mdText) {
+    const fNombre = fechasDe(basename(nombreArchivo).replace(/_/g, '-'))[0];
+    if (fNombre && finDeMes(fNombre) && mdText.includes(String(fNombre.a))) { res.cierre = iso(fNombre); res.cierreDe = 'nombre del archivo (fin de mes, y el año aparece en el texto)'; res.confianza = 'media'; }
+  }
   if (res.tipo === 'anual' && res.cierre) res.anual = res.cierre.slice(5, 7) === '12' ? 'calendario' : 'temporada';
   // ¿El nombre del archivo dice otra cosa? (fecha AAAA-MM-DD / DD-MM-AAAA o el año de cierre)
   const nom = basename(nombreArchivo);

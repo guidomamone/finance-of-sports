@@ -269,6 +269,18 @@ function checkNombresSinDefinir() {
   add('P3', 'nombre-sin-definir', `${h.length} nombre(s) usados sin definir en tools/: ${h.slice(0, 4).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}. Corré: node tools/fos.mjs indefinidos`);
 }
 
+// cierre-sin-fecha: documentos con .md, de carpetas de clubes que ya tienen un ejercicio cargado, cuyo período en el registro no trae fecha de cierre. Sin ella,
+// cargar-inicio.mjs no encuentra el cierre del año anterior y frena (SønderjyskE 2023). Se arregla con periodo.mjs (el cierre del nombre del archivo, con compuerta) o con un ajuste `cierre`.
+function checkCierreSinFecha() {
+  let e; try { e = fs.readFileSync(path.join(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').split('\n').filter(Boolean).map(l => JSON.parse(l)); } catch { return; }
+  const carpeta = x => x.pdf.split('/').slice(0, 3).join('/');
+  const cargadas = new Set(e.filter(x => x.cargado).map(carpeta));
+  const sin = e.filter(x => x.tieneMd && x.periodo && !x.periodo.cierre && cargadas.has(carpeta(x)));
+  if (!sin.length) return;
+  const clubes = new Set(sin.map(carpeta));
+  add('P3', 'cierre-sin-fecha', `${sin.length} documento(s) con .md de ${clubes.size} club(es) ya cargados no tienen fecha de cierre en el registro (ej. ${sin.slice(0, 3).map(x => path.basename(x.pdf)).join(', ')}). Corré node tools/inventario-transcripciones.mjs para refrescar el período y revisá los que sigan sin cierre`);
+}
+
 // revision-propia-pendiente: los cambios con `revision: propia` en Admin/registros/auditoria-proceso.jsonl (los revisó la sesión que los hizo) que ninguna línea
 // posterior con `revision: auditora` cubre (mismas tools). P3 de acción «nada» (sale como P4): la pregunta «¿qué falta revisar?» se contesta con node tools/audit.js --json.
 const revisionesPendientes = (lineas) => lineas.filter((l, i) => l.revision === 'propia' && l.tools && !lineas.slice(i + 1).some(r => r.revision === 'auditora' && r.tools && Object.keys(l.tools).every(n => n in r.tools)));
@@ -278,4 +290,4 @@ function checkRevisionPropiaPendiente() {
   if (pendientes.length) add('P3', 'revision-propia-pendiente', `${pendientes.length} cambio(s) revisados solo por la sesión que los hizo, sin la revisión de la Auditora:${pendientes.slice(-3).map(l => `${l.fecha} ${String(l.cambio).slice(0, 50)}`).join(' · ')}. La Auditora los revisa y anota patron --revision auditora`);
 }
 
-module.exports = { revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };
+module.exports = { checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };

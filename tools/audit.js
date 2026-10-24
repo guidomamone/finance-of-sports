@@ -32,7 +32,7 @@ const { checkCajaDeudaProporcion, checkCategorias, checkEstructura, checkLineas,
 const { checkCabeceraLargaEnTools, checkComentarioHistoricoEnTools, checkComentariosPublicados, checkDeployInterno, checkGenerados, checkHistoriaEnDocs, checkIndexFileRoto, checkLigasPorEjercicio, checkParrafoNetlifyDuplicado, checkParrafosRepetidos, checkRayaLarga, checkRutasMuertas, checkSponsorBusqueda, checkToolGrande } = require('./audit-chequeos-2.js');
 const { checkArchivoNoEsLoQueDice, checkCambioDeFormatoSinNota, checkCarpetasClubes, checkClubIds, checkColisionSourcing, checkCorreccionesSinMotivo, checkFuentesPublicas, checkRankings } = require('./audit-chequeos-3.js');
 const { checkCategorizacion, checkEscala, checkEtiquetaSinRevisar, checkFxProcedencia, checkGestiones, checkImportsSinExport, checkLigaDosFuentes, checkPagoSobreDeterminista, checkRevisionTaxonomia, checkTodo } = require('./audit-chequeos-4.js');
-const { checkComaComida, checkDatosJson, checkDeportes, checkDudasResueltas, checkEjercicioSinRastro, checkHigiene, checkMedicionesSinDestino, checkNombresSinDefinir, checkRarezas, checkRegistrosSinLector, checkReglasCategoria, checkRevisionPropiaPendiente } = require('./audit-chequeos-5.js');
+const { checkComaComida, checkDatosJson, checkDeportes, checkDudasResueltas, checkEjercicioSinRastro, checkHigiene, checkMedicionesSinDestino, checkNombresSinDefinir, checkRarezas, checkRegistrosSinLector, checkReglasCategoria, checkRevisionPropiaPendiente, checkCierreSinFecha } = require('./audit-chequeos-5.js');
 
 // ---------------------------------------------------------------------------
 // 1. CARGA DEL MOTOR REAL
@@ -239,6 +239,7 @@ function main() {
   checkToolGrande();
   checkNombresSinDefinir();
   checkRevisionPropiaPendiente();
+  checkCierreSinFecha();
   checkDudasResueltas();
   checkRegistrosSinLector();
   checkMedicionesSinDestino();

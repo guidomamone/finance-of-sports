@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1044 — periodo.mjs: el cierre desde el nombre del archivo, y el P3 cierre-sin-fecha [444 · periodo.mjs, audit.js, audit-chequeos-5.js]
+
+- `periodo.mjs`: un anual sin cierre leído del contenido toma la fecha del nombre del archivo (`aarsrapport-2022-06-30.pdf`) si es de fin de mes (día 28 o más) y el año aparece en el texto del documento; confianza `media`, `cierreDe` lo dice. Si el contenido trae un cierre, manda el contenido (no se llega a este paso). Sobre los 3662 `.md`: 810 sin cierre pasan a 634 (176 rellenados: Dinamarca 89, Grecia 59, Bélgica 16, Chequia 10, Argentina 1, Portugal 1) y ningún otro período cambia.
+- `audit.js`: P3 `cierre-sin-fecha`, documentos con `.md` de carpetas de clubes ya cargados sin cierre en el registro (hoy 486 de 116; el registro se refresca con `inventario-transcripciones.mjs`, que no corrí). Queda del 444: la parte 2 (mirar por qué `periodo.mjs` no encuentra la fecha en el resto, por país).
+- Medición: `medir pipeline` (audit y verificar, lote completo de 1004 documentos): `verificar` idéntico; `audit` solo suma el aviso nuevo, explicado. Veredicto: `patron --patron` (documentos con informe anual). Sin revisión independiente.
+
 ## Versión 1043 — votacion-nueva.mjs: el archivo del caso de una votación desde una plantilla [438 · votacion-nueva.mjs, probar-votacion-nueva.mjs]
 
 - `node tools/fos.mjs votacion nueva --id --slug --titulo --opcion "A=texto|monto" … [--hechos f.md] [--total n] [--club id] [--palabras "a,b"] [--escribir]` arma `Admin/mediciones/<id>-votacion-<slug>.md` con la marca, Conclusión y Destino, el cuánto mueve de la skill (sección 4: la diferencia entre opciones sobre el total, 1 % o menos no se vota), la lista fija de qué abrir (renglones de `CONVENCIONES-DATOS.md` por palabra, JSON del club y de su país) y el formato JSON del voto con `no_abri`. Ensayo por defecto; no pisa un archivo.

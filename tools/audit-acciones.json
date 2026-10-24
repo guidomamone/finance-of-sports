@@ -125,6 +125,11 @@
   "quien": "sesion",
   "donde": "skill club-sourcing, referencia/liga-y-sponsor.md"
  },
+ "cierre-sin-fecha": {
+  "hacer": "node tools/inventario-transcripciones.mjs refresca el período del registro (periodo.mjs toma el cierre del nombre del archivo si es fin de mes y el año está en el texto). Los que sigan sin cierre: mirar por qué periodo.mjs no encuentra la fecha (idioma, formato, tabla) en 10 casos por país, o un ajuste `cierre` a mano (parte 2 del punto 444).",
+  "quien": "sesion",
+  "donde": "punto 444"
+ },
  "cambio-de-formato-sin-nota": {
   "hacer": "Por cada año listado: mirar los ingresos del año y del anterior en el documento; si el club de verdad cambió de balance resumido a completo (o al revés), node tools/fuente.mjs <clubId> <sourceId> --nota \"…\" --escribir con el texto que sugiere el aviso de cargar.mjs (tools/cambio-formato.js, textoSugerido). Si el salto no es de formato (un ingreso sin desglosar por otro motivo), se silencia el año con su motivo.",
   "quien": "sesion",
