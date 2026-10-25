@@ -49,7 +49,11 @@ emergencia, no para visitantes). Mockup aprobado y el porqué de cada decisión:
   ESE ejercicio (por `leagueAt` sobre `CLUB_INDEX`, sin bajar rankings; default, la de más clubes), y el puesto calculado con
   `LIGA_VIEW.filaSimulada` contra `data/rankings/<liga>.js`, el mismo motor que la simulación de Ligas. El texto dice ENTRE CUÁNTOS
   clubes cargados (los rankings no tienen la liga entera), nunca "de 20" a secas. "Ver el ranking completo" abre Ligas con el club
-  simulado.
+  simulado. Un ejercicio de margen bruto (`baseIngreso: gross_margin`) nunca compara el margen como ingreso: con estimado de su liga
+  propia (`window.ESTIMADOS`, de `tools/estimar.mjs`) compara el estimado, con la etiqueta ámbar «Estimado» y el rango del 80 %;
+  con el ingreso real de un informe posterior (caso `ancla`), compara ese ingreso con la etiqueta azul «Informe siguiente»; sin
+  ninguno, el card queda en gris con la etiqueta «Sin ingresos» y una nota, y pasa solo a comparado cuando el estimado aparece.
+  El mockup aprobado es `Prototyping/Finanzas/mockup-148.html`.
 - **Valores ajustados por inflación** (`FIN_REAL`, `FIN_REAL_UI`, `data/deflactores.js`): toggle "Nominales | Ajustados por
   inflación" en la barra, solo en USD o EUR (las monedas con serie). Todo monto de la vista multi-año se multiplica por
   `FIN_REAL.fac(año)`; un cociente (% del total, desvío, salarios / ingresos) no, porque el factor se cancela. Prendido, la tabla

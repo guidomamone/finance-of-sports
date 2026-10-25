@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1113 — El card «en otra liga» ya no compara un margen bruto como ingreso [457 · liga.js, principal.js]
+- Un ejercicio de margen bruto compara su estimado (etiqueta «Estimado», con el rango del 80 %) o el ingreso del informe siguiente (etiqueta «Informe siguiente»); sin ninguno el card queda en gris («Sin ingresos») y pasa solo a comparado cuando `estimar.mjs` genera el estimado. «Ver el ranking completo» lo muestra con el estimado. Mockup 148 aprobado (español e inglés sin mezclar).
+- Verificado en escritorio y 375 px, en español e inglés, con Lierse SK 2025 (estimado), Vejle 2025 (gris) y RWDM 2024 (informe siguiente); sin errores de consola propios.
+- Medición: no aplica a tools del pipeline (pantalla).
+
 ## Versión 1112 — Aalesund 2024 cargado (hueco ejercicio-sin-rastro) [aalesund-no]
 - Aalesund 2024 (lote 154): dos ajustes de signo en el financiero (gastos «Nedskrivning» y «Annen rentekostnad» restan; cierra con el resultado 455.038 NOK) y el año 2024 (el documento es de 01.01 a 31.12.2024; 2025 es el depósito). Liga no-1divisjon 2024 con dos fuentes (Wikipedia y RSSSF) y su línea del auditor (Contabile AS, sin salvedades).
 - Ross County: Roy MacGregor, chairman desde 2010-06-30 (Companies House, dato de Guido) en `data/gestiones/gb.js`; el caso de la cola pasa de `preguntar-club` a `aceptar`.

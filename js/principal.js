@@ -77,7 +77,29 @@
   // ejercicio (leagueAt sobre el índice de clubes, sin bajar ningún ranking). Default: la de más clubes cargados. El puesto sale de
   // LIGA_VIEW.filaSimulada (el motor de la simulación de Ligas) contra el ranking precalculado. Un ranking tiene solo los clubes
   // cargados, así que el texto dice entre cuántos, nunca "de 20" a secas.
-  let ligaSimElegida = {}, ligasPorClubListas = false;
+  let ligaSimElegida = {}, ligasPorClubListas = false, estimadosPedidos = {};
+  // Un ejercicio cuyo documento imprime solo el margen bruto no tiene ingreso: el card no lo compara como si lo tuviera.
+  function ligaSimEsMargen(club, year){
+    const m = (((window.CLUB_GENERIC_DATA || {})[club] || {}).fiscalYearMeta || {})[year] || {};
+    return m.baseIngreso === 'gross_margin';
+  }
+  // El aspecto del card según el caso: normal, con estimado (etiqueta ámbar) o sin nada que comparar (gris, sin puesto).
+  function ligaSimAspecto(modo, etiqueta){
+    const card = document.getElementById('ligaSimWrap'), rank = document.getElementById('ligaSimRank');
+    const pick = document.getElementById('ligaSimLeague').closest('label'), ver = document.getElementById('btnLigaSimVer');
+    card.classList.toggle('liga-sim-vacio', modo === 'vacio');
+    rank.classList.toggle('liga-sim-gris', modo === 'vacio');
+    pick.hidden = modo === 'vacio'; ver.hidden = modo === 'vacio';
+    card.querySelectorAll('.liga-sim-tag').forEach(x => x.remove());
+  }
+  // Millones con un decimal en el idioma de la pantalla (10,6 en español, 10.6 en inglés).
+  const fmtSimM = v => Number(v).toLocaleString((window.I18N && I18N.current) || 'es', { maximumFractionDigits: 1 });
+  // La etiqueta va pegada al dato que califica: al puesto con estimado, al título cuando no hay nada que comparar.
+  function ligaSimEtiqueta(donde, tipo, texto, ayuda){
+    const tag = document.createElement('span');
+    tag.className = 'liga-sim-tag liga-sim-tag-' + tipo; tag.textContent = texto; tag.title = ayuda; tag.setAttribute('aria-label', ayuda);
+    donde.appendChild(tag);
+  }
   function renderLigaSimPuesto(year, ej){
     const res = document.getElementById('ligaSimRes'), btnViejo = document.getElementById('btnLigaSim');
     const club = currentClub;
@@ -88,6 +110,30 @@
       res.hidden = true; return;
     }
     const propia = leagueAt(club, year);
+    // Año de margen bruto: el ingreso que se compara es el estimado de la liga propia (o el del informe siguiente), nunca el margen.
+    const margen = ligaSimEsMargen(club, year);
+    if(margen && propia && !(window.ESTIMADOS || {})[propia] && !estimadosPedidos[propia]){
+      estimadosPedidos[propia] = true;
+      LIGA_VIEW.loadEstimados(propia).then(() => { if(currentClub === club) renderLigaSimPuesto(year, ej); });
+      res.hidden = true; return;
+    }
+    const est = margen && propia ? (LIGA_VIEW.filasEstimadas(propia, year).find(e => e.id === club) || null) : null;
+    ligaSimAspecto(margen && !est ? 'vacio' : 'normal');
+    const subEl = document.getElementById('ligaSimSub'), tituloEl = document.getElementById('ligaSimTitle');
+    if(margen && est){
+      subEl.textContent = (est.ancla
+        ? I18N.t('finanzas.ligasim.sub.ancla', 'El documento de {ej} informa solo un margen bruto; el informe del año siguiente trae el ingreso de ese ejercicio (US$ {v} M) y es el que usamos.')
+        : I18N.t('finanzas.ligasim.sub.est', 'Ponemos sus ingresos de {ej} en el ranking de ingresos de otra liga, mismo ejercicio. El documento no informa ingresos, solo un margen bruto: usamos nuestro estimado (US$ {v} M, entre {lo} M y {hi} M).'))
+        .replace('{ej}', ej).replace('{v}', fmtSimM(est.revenue)).replace('{lo}', fmtSimM(est.lo)).replace('{hi}', fmtSimM(est.hi));
+    } else if(margen){
+      const nombreProp = (LEAGUES[propia] || {}).name || '';
+      subEl.textContent = I18N.t('finanzas.ligasim.sub.nocomp', 'No comparamos este ejercicio: el documento de {ej} informa solo un margen bruto, no los ingresos, y todavía no tenemos un estimado de {liga} {ej}. Cuando lo tengamos, el puesto aparece acá.')
+        .replace('{liga}', nombreProp).replace(/\{ej\}/g, ej);
+      ligaSimEtiqueta(tituloEl, 'gris', I18N.t('finanzas.ligasim.tag.sinIng', 'Sin ingresos'), I18N.t('finanzas.ligasim.tag.sinIng.ayuda', 'No se compara'));
+      res.hidden = false; btnViejo.hidden = true;
+      document.getElementById('ligaSimRank').textContent = '—'; document.getElementById('ligaSimCap').textContent = '';
+      return;
+    }
     const cuenta = {};
     Object.entries(window.CLUB_INDEX || {}).forEach(([id, c]) => {
       if(id === club || !(c.yrs || []).some(p => p[0] === year)) return;
@@ -110,14 +156,24 @@
       const r = LIGA_VIEW.rankingDe(elegida, year), yo = LIGA_VIEW.filaSimulada(club, year);
       if(!r || !yo){ rank.textContent = '—'; cap.textContent = ''; return; }
       const otros = (r.clubs || []).filter(c => c.id !== club && c.revenue);
-      const puesto = 1 + otros.filter(c => c.revenue > yo.revenue).length;
+      const ingreso = est ? est.revenue : yo.revenue;
+      const puestoCon = v => 1 + otros.filter(c => c.revenue > v).length;
+      const puesto = puestoCon(ingreso);
       const nombreLiga = (LEAGUES[elegida] || {}).name || elegida;
-      rank.textContent = I18N.t('finanzas.ligasim.rank', '{p}.º').replace('{p}', puesto);
+      rank.textContent = (est && !est.ancla ? '≈ ' : '') + I18N.t('finanzas.ligasim.rank', '{p}.º').replace('{p}', puesto);
       cap.textContent = I18N.t('finanzas.ligasim.among', 'en ingresos, entre los {n} clubes de {liga} {ej} que tenemos cargados')
         .replace('{n}', otros.length + 1).replace('{liga}', nombreLiga).replace('{ej}', ej)
         + (r.leagueSize ? ' ' + I18N.t('finanzas.ligasim.size', '(la liga tuvo {m})').replace('{m}', r.leagueSize) : '') + '.';
+      if(est && !est.ancla){
+        // El rango del estimado (80 %): del mejor al peor puesto posible.
+        cap.textContent += ' ' + I18N.t('finanzas.ligasim.rango', 'Con el rango del estimado, entre el {a}.º y el {b}.º.')
+          .replace('{a}', puestoCon(est.hi)).replace('{b}', puestoCon(est.lo));
+      }
+      if(est) ligaSimEtiqueta(rank, est.ancla ? 'azul' : 'ambar',
+        est.ancla ? I18N.t('finanzas.ligasim.tag.ancla', 'Informe siguiente') : I18N.t('finanzas.ligasim.tag.est', 'Estimado'),
+        est.ancla ? I18N.t('finanzas.ligasim.tag.ancla.ayuda', 'Ingreso del informe del año siguiente') : I18N.t('finanzas.ligasim.tag.est.ayuda', 'Con el ingreso estimado, no con un balance'));
       document.getElementById('btnLigaSimVer').onclick = () => {
-        LIGA_VIEW.showConSimulados(elegida, year, [{ clubId: club, clubYear: year }]);
+        LIGA_VIEW.showConSimulados(elegida, year, [{ clubId: club, clubYear: year, revenue: est ? est.revenue : null }]);
         irASeccion('liga');
       };
     });

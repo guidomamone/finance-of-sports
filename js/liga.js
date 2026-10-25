@@ -213,6 +213,8 @@ window.LIGA_VIEW = (function(){
       buscadorQ = '';
       st.simulados = (clubes || []).map(function(c){
         var fila = filaSimulada(c.clubId, c.clubYear);
+        // Un año de margen bruto entra con su ingreso estimado, no con el margen (sin desglose por rubro).
+        if(fila && c.revenue != null){ fila.revenue = c.revenue; fila.mix = []; fila.incluidos = []; fila.estimado = true; }
         return fila ? { clubId:c.clubId, clubYear:c.clubYear, fila:fila } : null;
       }).filter(Boolean);
       render();
@@ -1396,6 +1398,9 @@ window.LIGA_VIEW = (function(){
     loadRanking: loadRanking,
     rankingDe: rankingDe,
     filaSimulada: filaSimulada,
+    // Un ejercicio de margen bruto no tiene ingreso: el card compara el estimado (o el ingreso del informe siguiente) de la liga propia.
+    loadEstimados: loadEstimados,
+    filasEstimadas: filasEstimadas,
     // La llama index.html después de un cambio de idioma. Repinta LAS DOS pantallas: la vidriera también es texto generado en JS.
     refresh: function(){ render(); renderDestacados(); },
     renderDestacados: renderDestacados,
