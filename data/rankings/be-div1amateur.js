@@ -43,7 +43,7 @@ window.RANKINGS["be-div1amateur"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.895]] },
       { id:"patroeisden-be", revenue:0.785, reportType:"official_balance_sheet",
         sourceId:"patroeisden-be-jaarrekening-2020-06-30-individual-correction",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.637],["Otros ingresos",0.148]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.785]] },
     ],
   },
   2019: {

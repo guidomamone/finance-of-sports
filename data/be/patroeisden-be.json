@@ -480,16 +480,7 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"EUR@2020-06-30"},
-      "revenue": [
-        {"label":"Omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":0.568892,"disclosure":"aggregated"},
-        {
-          "label": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
-          "category": "other_revenue",
-          "subcategory": "other_income",
-          "amount": 0.132171,
-          "disclosure": "aggregated"
-        }
-      ],
+      "revenue": [{"label":"Bedrijfsopbrengsten","category":"undisclosed","subcategory":"lump_football_operations","amount":0.701063,"disclosure":"aggregated"}],
       "expenses": [
         {
           "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
@@ -529,8 +520,8 @@
           {"label":"Recurrente financiële kosten","amount":-0.028196},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.000131}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":0.568892,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
-        "revenue_basis": "full",
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.701063,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total",
         "revenue_derivation": {"method":"margin_plus_costs","sources":["patroeisden-be-jaarrekening-2020-06-30-individual-correction"]}
       }
     },

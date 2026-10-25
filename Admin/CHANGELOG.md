@@ -21,8 +21,8 @@ que dice `ESTADO.md` era verdad ese día.
 ---
 
 ## Versión 1092 — Patro Eisden 2019/20: el ingreso se reconstruye con margen bruto + compras y servicios [455 · patroeisden-be]
-- El documento corregido imprime el margen bruto (277.991), compras y servicios (423.072) y las ventas (568.892): el ingreso es 701.063 EUR, y el sitio mostraba solo el margen. Ahora: «Omzet» 0,569 M (sin abrir por fuente) más 0,132 M de lo que la Brutomarge trae implícito, y 0,423 M de compras y servicios en los gastos; el resultado (-0,708 M) no cambia.
-- Marcado `revenue_basis: full` y `revenue_derivation` (12 reconstruidos); `audit.js` P0 0, P1 0 y comparado en pantalla (0,8 M USD en 2019/20).
+- El documento corregido imprime el margen bruto (277.991) y compras y servicios (423.072): el ingreso es 701.063 EUR (70/74 = 9900 + 60/61), y el sitio mostraba solo el margen. Ahora: una línea «Bedrijfsopbrengsten» de 0,701 M (como Patro Eisden 2019) y 0,423 M de compras y servicios en los gastos; el resultado (-0,708 M) no cambia. No se abre en ventas y otros: las partes que el documento imprime (70 y 73) no cuadran con el margen.
+- Marcado `revenue_basis: sales_total` y `revenue_derivation` (12 reconstruidos); `audit.js` P0 0, P1 0 y comparado en pantalla (0,8 M USD en 2019/20).
 - Medición: no aplica (un dato de un club; sin tools del pipeline).
 
 ## Versión 1091 — los 1340 ejercicios con su base de ingreso (revenue_basis) y los 11 reconstruidos marcados [455]

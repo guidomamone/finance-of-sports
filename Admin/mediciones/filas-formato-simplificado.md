@@ -18,7 +18,7 @@ Lo escribe `node tools/relevancia-filas.mjs --escribir` (lo corre solo `publicar
 | Otras actividades (educación y otros deportes) | 237 de 1323 (18 %) | 78 de 331 (24 %) | 1.9 % · 14 % | 771 (58 %) | 315 | 0 |
 | Subsidios y donaciones | 400 de 1323 (30 %) | 123 de 331 (37 %) | 2.7 % · 31 % | 643 (49 %) | 280 | 0 |
 | Fútbol profesional (sin desglosar por la fuente) | 330 de 1323 (25 %) | 119 de 331 (36 %) | 77.3 % · 95 % | 993 (75 %) | 0 | 0 |
-| Otros ingresos (catch-all) | 1191 de 1323 (90 %) | 297 de 331 (90 %) | 7.4 % · 40 % | 132 (10 %) | 0 | 0 |
+| Otros ingresos (catch-all) | 1190 de 1323 (90 %) | 297 de 331 (90 %) | 7.4 % · 40 % | 133 (10 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
 
