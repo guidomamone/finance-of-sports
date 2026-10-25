@@ -161,6 +161,42 @@ _antes de Svend Lynge Jørgensen (data/gestiones/dk.js):_
 Cierre 30/6. 2013 a 2016: Svend Lynge Jørgensen figura primero en Bestyrelse y firma primero (OCR dañado en las firmas); 2017 en adelante Per Hastrup firma como Formand.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/Randers FC/aarsrapport-2022-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bruttofortjeneste | pág. 11, precedente |
+| 2 | Resultat af kapitalandele i tilknyttede virksomheder | pág. 11, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Løn og gager | pág. 16, Claude 0.92 |
+| 2 | Pensioner | pág. 16, Jev 0.95 |
+| 3 | Andre omkostninger til social sikring | pág. 16, Jev 0.92 |
+| 4 | Afskrivninger, anlægsaktiver | pág. 11, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): dk-superliga, verificado contra NO EXACTA, confirmar en la página del club: roster cacheado de "2021–22 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia única por palabras "Randers" = "Randers FC" (si es el mismo club, agregarlo a alias.json).
+```
+
 ## Fuentes
 
 ### randers-dk-aarsrapport-2022-23
@@ -169,4 +205,12 @@ _note (data/):_
 
 ```text
 Entidad única para el fútbol profesional (CVR 83 94 08 16), con 3 subsidiarias 100%-controladas por el método de la participación (Randers FC Jobakademi ApS, Business Park Randers ApS, Randers Sports College ApS), sin consolidar línea por línea. El estado de resultados usa la exención del § 32 de la Årsregnskabsloven (solo reporta "Bruttofortjeneste"/Gross profit neto) — todo el revenue se cargó sin desglosar. Tipo de cambio calculado vía Danmarks Nationalbank (no declarado por el propio documento, ver comentario de cabecera de data/dk/randers-dk-data.js). Transcripción completa en Clubes/Dinamarca/Randers FC/aarsrapport-2023-06-30.md.
+```
+
+### randers-dk-aarsrapport-2022-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

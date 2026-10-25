@@ -1,0 +1,367 @@
+{
+ "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf",
+ "generado": "2026-10-25T05:36:43.341Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-25: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 11 documento(s) mirados)",
+  "ingresos: el documento imprime solo el margen bruto (ya neto de costos), no los ingresos; se marca gross_margin. Si el documento imprime también compras y servicios (60, 61 o 60/61), el ingreso se reconstruye como margen + compras y servicios"
+ ],
+ "ejercicio": {
+  "clubId": "randers-dk",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Bruttofortjeneste",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 99.145894,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Resultat af kapitalandele i tilknyttede virksomheder",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.36619,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Løn og gager",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -49.487947,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 2,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioner",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -3.22065,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre omkostninger til social sikring",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.026465,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afskrivninger, anlægsaktiver",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -8.373053,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2022-06-30",
+   "sourceId": "randers-dk-aarsrapport-2022-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.343263,
+   "tax": -7.89678,
+   "extraRows": [
+    {
+     "label": "Finansielle indtægter",
+     "value": 0.021147
+    },
+    {
+     "label": "Finansielle omkostninger",
+     "value": -0.36441
+    },
+    {
+     "label": "Skat af årets resultat",
+     "value": -7.89678
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Bruttofortjeneste",
+     "lado": "revenue",
+     "importe": 99.145894,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "gross_margin"
+    }
+   ],
+   "baseIngreso": "gross_margin",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 99.512084,
+   "officialTotalExpenses": 63.108115,
+   "officialPAT": 28.163925
+  },
+  "source": {
+   "id": "randers-dk-aarsrapport-2022-06-30",
+   "clubId": "randers-dk",
+   "title": "Randers FC A/S — aarsrapport-2022-06-30 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "1. JULI 2021 - 30. JUNI 2022"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "randers-dk",
+ "year": 2022,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Bruttofortjeneste",
+   "page": 11,
+   "native": 99.145894,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 99.145894,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 99.145894
+  },
+  {
+   "label": "Resultat af kapitalandele i tilknyttede virksomheder",
+   "page": 11,
+   "native": 0.36619,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "signoFijo": 0.36619,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.36619
+  },
+  {
+   "label": "Løn og gager",
+   "page": 16,
+   "native": 49.487947,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Løn- og personaleomkostninger\")",
+   "signoFijo": 49.487947,
+   "cat": "wages_squad",
+   "conf": 0.92,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -49.487947
+  },
+  {
+   "label": "Pensioner",
+   "page": 16,
+   "native": 3.22065,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Løn- og personaleomkostninger\")",
+   "signoFijo": 3.22065,
+   "cat": "wages_squad",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.22065
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "page": 16,
+   "native": 2.026465,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Løn- og personaleomkostninger\")",
+   "signoFijo": 2.026465,
+   "cat": "wages_squad",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.026465
+  },
+  {
+   "label": "Afskrivninger, anlægsaktiver",
+   "page": 11,
+   "native": 8.373053,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 8.373053,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Randers 2022 L359 y L385-390: «Afskrivninger, anlaegsaktiver» (8.373.053) junta Kontraktrettigheder (jugadores, 11,2 M) y activos materiales (4,0 M) y las notas no la abren con una suma que cierre (partir-amortizacion.mjs): entera a player_amortisation por la REGLA de linea junta. Claude 2026-10-25 (sesion)",
+   "destino": "expense",
+   "amountNative": -8.373053
+  },
+  {
+   "label": "Finansielle indtægter",
+   "page": null,
+   "native": 0.021147,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Finansielle omkostninger",
+   "page": null,
+   "native": -0.36441,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skat af årets resultat",
+   "page": null,
+   "native": -7.89678,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
+   "verificacion (nota que desglosa \"Løn- og personaleomkostninger\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 99.512084,
+  "expSum": -63.108115,
+  "officialTotalRevenue": 99.512084,
+  "officialTotalExpenses": 63.108115,
+  "officialPAT": 28.163925,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 28.163925,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 99.512084
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 63.108115
+  }
+ },
+ "liga": {
+  "valor": "dk-superliga",
+  "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2021–22 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia única por palabras \"Randers\" = \"Randers FC\" (si es el mismo club, agregarlo a alias.json)",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2022-06-30) y contenido del .md (11 de 11 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-25)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "DKK@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene DKK@2022-06-30 = 7.098 (Cierre BCE al 30/6/2022, cruzando DKK/EUR (7,4362) × EUR/USD (1,0477) (1 DKK ≈ 0,1409 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "randers-dk-aarsrapport-2022-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "dk-superliga",
+   "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2021–22 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia única por palabras \"Randers\" = \"Randers FC\" (si es el mismo club, agregarlo a alias.json)",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 4,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

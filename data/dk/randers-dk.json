@@ -20,10 +20,66 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "url": "http://regnskaber.virk.dk/61804938/amNsb3VkczovLzAzLzVmL2ZlL2JkLzA0L2Q2MmMtNGQwNi1iNzAwLTgyYTQ5YjEzNWRiOQ.pdf"
+    },
+    {
+      "id": "randers-dk-aarsrapport-2022-06-30",
+      "club_id": "randers-dk",
+      "title": "Randers FC A/S — aarsrapport-2022-06-30 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf"
     }
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "DKK",
+      "source_id": "randers-dk-aarsrapport-2022-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2022-06-30"},
+      "revenue": [
+        {"label":"Bruttofortjeneste","category":"undisclosed","subcategory":"lump_football_operations","amount":99.145894,"disclosure":"aggregated"},
+        {
+          "label": "Resultat af kapitalandele i tilknyttede virksomheder",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.36619,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {"label":"Løn og gager","category":"first_team_staff","subcategory":"wages_squad","amount":-49.487947,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-3.22065,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -2.026465,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Afskrivninger, anlægsaktiver",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -8.373053,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.343263,"tax":-7.89678,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":99.512084,"expenses":63.108115,"net_result":28.163925},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Finansielle indtægter","amount":0.021147},
+          {"label":"Finansielle omkostninger","amount":-0.36441},
+          {"label":"Skat af årets resultat","amount":-7.89678}
+        ],
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":99.145894,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
+      }
+    },
     {
       "fiscal_year": 2023,
       "period_end": "2023-06-30",

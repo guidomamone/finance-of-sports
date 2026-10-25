@@ -1,143 +1,89 @@
 {
  "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md",
- "generatedAt": "2026-09-30T22:49:05.001Z",
- "rubrosHuella": "4ca1f3b83eefa29cdc7185d53f1e9b7160d9dc1d",
+ "generatedAt": "2026-10-25T05:34:01.940Z",
+ "rubrosHuella": "80fc943222c04c30d134f23e373b7758e818fe0c",
  "rubros": [
   {
-   "label": "Ændring i tilgodehavender",
-   "lado": null,
-   "page": 15,
-   "section": "Finansielle indtægter -21.147 -39 / Finansielle omkostninger 364.410 253 / Skat af årets resultat 7.896.780 946 / Reguleringer 17.391.038 2.069 / Ændring i varebeholdninger -183.019 60",
-   "choice": "other_income",
-   "confidence": 0.45,
-   "desdeCache": true
-  },
-  {
-   "label": "Ændring i kortfristede gældsforpligtelser",
-   "lado": null,
-   "page": 15,
-   "section": "Finansielle indtægter -21.147 -39 / Finansielle omkostninger 364.410 253 / Skat af årets resultat 7.896.780 946 / Reguleringer 17.391.038 2.069 / Ændring i varebeholdninger -183.019 60",
-   "choice": "other_expenses",
-   "confidence": 0.43,
-   "desdeCache": true
-  },
-  {
-   "label": "Ændring i driftskapital",
-   "lado": null,
-   "page": 15,
-   "section": "Finansielle indtægter -21.147 -39 / Finansielle omkostninger 364.410 253 / Skat af årets resultat 7.896.780 946 / Reguleringer 17.391.038 2.069 / Ændring i varebeholdninger -183.019 60",
-   "choice": "other_expenses",
-   "confidence": 0.45,
-   "desdeCache": true
-  },
-  {
-   "label": "Det samlede vederlag til selskabets direktion udgør i alt TDKK 2.494 mod TDKK 2.389 i",
+   "label": "Løn og gager",
    "lado": "expense",
    "page": 16,
-   "section": "1 Personaleomkostninger / Løn og gager 49.487.947 37.954 / Pensioner 3.220.650 2.263 / Andre omkostninger til social sikring 2.026.465 1.108 / Personaleomkostninger i alt 54.735.063 41.325",
-   "choice": "admin_general_expense",
-   "confidence": 0.93,
+   "section": "nota que desglosa \"Løn- og personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.74,
    "desdeCache": true
   },
   {
-   "label": "Det samlede vederlag til selskabets bestyrelse udgør i alt TDKK 150 mod TDKK 80 i",
+   "label": "Pensioner",
    "lado": "expense",
    "page": 16,
-   "section": "1 Personaleomkostninger / Løn og gager 49.487.947 37.954 / Pensioner 3.220.650 2.263 / Andre omkostninger til social sikring 2.026.465 1.108 / Personaleomkostninger i alt 54.735.063 41.325",
-   "choice": "admin_general_expense",
+   "section": "nota que desglosa \"Løn- og personaleomkostninger\"",
+   "choice": "wages_squad",
    "confidence": 0.95,
    "desdeCache": true
   },
   {
-   "label": "Tilgang i årets løb",
-   "lado": null,
-   "page": 17,
-   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-   "choice": "depreciation",
-   "confidence": 0.28,
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Løn- og personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.92,
    "desdeCache": true
   },
   {
-   "label": "Afgang i årets løb",
-   "lado": null,
-   "page": 17,
-   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-   "choice": "other_expenses",
-   "confidence": 0.29,
+   "label": "Afskrivninger, anlægsaktiver",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.55,
    "desdeCache": true
   },
   {
-   "label": "Af- og nedskrivninger på afhændede aktiver",
-   "lado": null,
-   "page": 17,
-   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-   "choice": "depreciation",
-   "confidence": 0.51,
-   "desdeCache": true
-  },
-  {
-   "label": "Årets af- og nedskrivninger",
-   "lado": null,
-   "page": 17,
-   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-   "choice": "depreciation",
-   "confidence": 0.47,
-   "desdeCache": true
-  },
-  {
-   "label": "Afskrivninger 30. juni",
-   "lado": null,
-   "page": 17,
-   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-   "choice": "depreciation",
-   "confidence": 0.3,
-   "desdeCache": true
-  },
-  {
-   "label": "Af- og nedskrivninger 1. juli",
-   "lado": null,
-   "page": 17,
-   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-   "choice": "depreciation",
-   "confidence": 0.6,
+   "label": "Bruttofortjeneste",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.96,
    "top3": [
     [
-     "depreciation",
-     0.63
+     "lump_football_operations",
+     0.96
     ],
     [
-     "player_amortisation",
-     0.21000000000000002
+     "other_income",
+     0.04
     ],
     [
-     "other_amortisation",
-     0.11
+     "member_dues",
+     0
     ]
    ],
-   "tokens": 1595
+   "tokens": 1295
   },
   {
-   "label": "Kostpris 1. juli",
-   "lado": null,
-   "page": 17,
-   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-   "choice": "player_amortisation",
-   "confidence": 0.65,
+   "label": "Resultat af kapitalandele i tilknyttede virksomheder",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "other_income",
+   "confidence": 1,
    "top3": [
     [
-     "player_amortisation",
-     0.67
+     "other_income",
+     1
     ],
     [
-     "other_expenses",
-     0.26
+     "member_dues",
+     0
     ],
     [
-     "player_sales",
-     0.03
+     "season_tickets",
+     0
     ]
    ],
-   "tokens": 1548
+   "tokens": 1225
   }
  ]
 }

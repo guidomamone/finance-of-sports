@@ -65,6 +65,9 @@ window.RANKINGS["dk-superliga"] = {
     leagueSize: 12,
     wiki: {"t":"2021–22 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
+      { id:"randers-dk", revenue:14.02, reportType:"official_balance_sheet",
+        sourceId:"randers-dk-aarsrapport-2022-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",13.968],["Otros ingresos",0.052]] },
       { id:"sonderjyske-dk", revenue:3.024, reportType:"official_balance_sheet",
         sourceId:"sonderjyske-dk-aarsrapport-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.726],["Otros ingresos",2.298]] },

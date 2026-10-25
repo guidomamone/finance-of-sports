@@ -25,3 +25,5 @@ El PDF 2015/16 confirma en su carátula "Randers FC A/S, Viborgvej 92, 8920 Rand
 Ninguna.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2022 desde `Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf` (sourceId `randers-dk-aarsrapport-2022-06-30`).

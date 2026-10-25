@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md",
+ "clave": "2296730d0155335c6056385e664b77f476316bcd",
+ "generado": "2026-10-25T05:30:03.618Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas. La Bruttofortjeneste (L357) es el primer renglón del estado (formato danés abreviado, sin desglose de ingresos), así que corresponde cargarla. El renglón de personal (L358) se reemplaza por sus tres partes de la nota, que suman 54,735 (diferencia de redondeo). El resultado cargado da 28,164 y coincide con el impreso."
+ }
+}

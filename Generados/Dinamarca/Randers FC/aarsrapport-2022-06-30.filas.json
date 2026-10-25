@@ -1,0 +1,241 @@
+{
+ "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf",
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md",
+ "mdSha1": "f9d3877d0b6d7c71f9b8df48b3d331abb47135fb",
+ "ubicacionSha1": "ecc94942a390efa82f25d7cb48b9205387f4db5c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T05:28:07.292Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b12",
+   "b13"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Columna '2021/22 DKK' (L354); la columna anterior está en '1.000 DKK' (miles)"
+  },
+  {
+   "bloque": "b12",
+   "escala": "unidades",
+   "evidencia": "Sin encabezado de escala; importes del año actual coinciden con b3 en DKK (54.735.063, L562)"
+  },
+  {
+   "bloque": "b13",
+   "escala": "unidades",
+   "evidencia": "Sin encabezado de escala; importes coinciden con b3 en DKK (364.410, L574)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 357,
+   "etiqueta": "Bruttofortjeneste",
+   "actual": "99.145.894",
+   "anterior": "50.395",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 358,
+   "etiqueta": "Løn- og personaleomkostninger",
+   "actual": "-54.735.063",
+   "anterior": "-41.325",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 359,
+   "etiqueta": "Afskrivninger, anlægsaktiver",
+   "actual": "-8.373.053",
+   "anterior": "-4.896",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 360,
+   "etiqueta": "Resultat før finansielle poster",
+   "actual": "36.037.778",
+   "anterior": "4.173",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 361,
+   "etiqueta": "Resultat af kapitalandele i tilknyttede virksomheder",
+   "actual": "366.190",
+   "anterior": "4.130",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 362,
+   "etiqueta": "Finansielle indtægter",
+   "actual": "21.147",
+   "anterior": "39",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 363,
+   "etiqueta": "Finansielle omkostninger",
+   "actual": "-364.410",
+   "anterior": "-253",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 364,
+   "etiqueta": "Resultat før skat",
+   "actual": "36.060.705",
+   "anterior": "8.090",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 365,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "-7.896.780",
+   "anterior": "-946",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 366,
+   "etiqueta": "Årets resultat",
+   "actual": "28.163.925",
+   "anterior": "7.143",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 558,
+   "etiqueta": "Løn og gager",
+   "actual": "49.487.947",
+   "anterior": "37.954",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Løn- og personaleomkostninger"
+  },
+  {
+   "bloque": "b12",
+   "linea": 560,
+   "etiqueta": "Pensioner",
+   "actual": "3.220.650",
+   "anterior": "2.263",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Løn- og personaleomkostninger"
+  },
+  {
+   "bloque": "b12",
+   "linea": 561,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "2.026.465",
+   "anterior": "1.108",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Løn- og personaleomkostninger"
+  },
+  {
+   "bloque": "b12",
+   "linea": 562,
+   "etiqueta": "Personaleomkostninger i alt",
+   "actual": "54.735.063",
+   "anterior": "41.325",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Løn- og personaleomkostninger"
+  },
+  {
+   "bloque": "b13",
+   "linea": 571,
+   "etiqueta": "Renteudgifter, tilknyttede virksomheder",
+   "actual": "0",
+   "anterior": "169",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "bloque": "b13",
+   "linea": 573,
+   "etiqueta": "Øvrige finansielle udgifter",
+   "actual": "364.410",
+   "anterior": "84",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "bloque": "b13",
+   "linea": 574,
+   "etiqueta": "Finansielle omkostninger i alt",
+   "actual": "364.410",
+   "anterior": "253",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 366,
+  "actual": "28.163.925",
+  "anterior": "7.143"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Bruttofortjeneste' (L357, 99.145.894) como única línea de ingresos, sabiendo que es un neto de ingresos menos otros costos externos y no hay nota que desglose los ingresos brutos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bruttofortjeneste",
+   "texto": "El estado (L357) arranca en resultado bruto (formato danés), sin ingresos totales ni costos externos impresos.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se trata la columna anterior (L354 '2020/21 1.000 DKK') como en miles, distinta de la actual en DKK unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado L354 indica escalas distintas por columna: actual en DKK y anterior en 1.000 DKK.",
+   "bloques": [
+    "b3",
+    "b12",
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en formato danés que parte de Bruttofortjeneste; no se imprimen total de ingresos ni total de gastos. Las notas b12 y b13 cuadran con el estado. La nota 5 'Særlige poster' (L367) no tiene importes. La columna actual está en DKK y la anterior en miles de DKK."
+}

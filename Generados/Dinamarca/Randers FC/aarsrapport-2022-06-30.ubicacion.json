@@ -1,0 +1,216 @@
+{
+ "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf",
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md",
+ "mdSha1": "f9d3877d0b6d7c71f9b8df48b3d331abb47135fb",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T05:27:50.866Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    42
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    318,
+    339
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    354,
+    367
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    382,
+    407
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    422,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    460,
+    461
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    467,
+    469
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    473,
+    478
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    482,
+    488
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    508,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    552,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    558,
+    562
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    571,
+    574
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    578,
+    581
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    585,
+    588
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    603,
+    605
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    617,
+    626
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    630,
+    639
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 18,
+   "lineas": [
+    653,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    694,
+    712
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    724,
+    727
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 24,
+   "lineas": [
+    938,
+    941
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b12",
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado '2021/22 DKK | 2020/21 1.000 DKK': el ejercicio 2021/22 está en DKK (ej. 'Løn og gager 49.487.947'); la comparativa en miles",
+ "moneda": "DKK",
+ "columna_ejercicio": "2021/22 DKK",
+ "columna_anterior": "2020/21 1.000 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la columna 2020/21 del estado (b3) multiplicando por 1.000, ya que viene en miles de DKK mientras que 2021/22 está en DKK?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado de b3 mezcla escalas: '2021/22 DKK' y '2020/21 1.000 DKK'.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Las cuentas son solo de Randers FC A/S (individual, con la filial valorada por el método de participación). b3 es la resultatopgørelse. Las notas de gastos son b12 (personaleomkostninger) y b13 (finansielle omkostninger). Se dejan afuera b14, que es el impuesto (no desglosa ingresos ni gastos de explotación), b15 (destino del resultado), b2 (indicadores), el balance, el flujo de efectivo, el patrimonio y los cuadros de activo fijo. No hay una nota que desglose los ingresos."
+}

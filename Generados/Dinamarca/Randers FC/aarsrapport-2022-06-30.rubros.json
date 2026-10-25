@@ -3,161 +3,68 @@
   "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf",
   "club": "randers-dk",
   "year": 2022,
-  "numberFormat": "eu (punto miles, coma decimal)",
-  "generatedAt": "2026-09-30T22:00:02.626Z",
-  "tieOuts": {
-    "cierran": 0,
-    "noCierran": 0
-  },
-  "warnings": [],
-  "estadoDeResultados": true,
-  "seleccion": {
-    "ok": false,
-    "motivo": "no se pudo ubicar la columna del ejercicio"
-  },
-  "ladoConocido": 2,
+  "generatedAt": "2026-10-25T05:29:54.741Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "Ændring i tilgodehavender",
-      "lado": null,
-      "page": 15,
-      "section": "Finansielle indtægter -21.147 -39 / Finansielle omkostninger 364.410 253 / Skat af årets resultat 7.896.780 946 / Reguleringer 17.391.038 2.069 / Ændring i varebeholdninger -183.019 60",
+      "label": "Bruttofortjeneste",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
       "values": [
-        "-3.535.001",
-        "-9.226"
+        99.145894
       ],
-      "columns": null,
-      "glosa": "Variación de cuentas a cobrar"
+      "glosa": "Beneficio bruto"
     },
     {
-      "label": "Ændring i kortfristede gældsforpligtelser",
-      "lado": null,
-      "page": 15,
-      "section": "Finansielle indtægter -21.147 -39 / Finansielle omkostninger 364.410 253 / Skat af årets resultat 7.896.780 946 / Reguleringer 17.391.038 2.069 / Ændring i varebeholdninger -183.019 60",
+      "label": "Resultat af kapitalandele i tilknyttede virksomheder",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
       "values": [
-        "-10.805.028",
-        "5.258"
+        0.36619
       ],
-      "columns": null,
-      "glosa": "Variación de deudas a corto plazo"
+      "glosa": "Resultado de participaciones en empresas del grupo"
     },
     {
-      "label": "Ændring i driftskapital",
-      "lado": null,
-      "page": 15,
-      "section": "Finansielle indtægter -21.147 -39 / Finansielle omkostninger 364.410 253 / Skat af årets resultat 7.896.780 946 / Reguleringer 17.391.038 2.069 / Ændring i varebeholdninger -183.019 60",
-      "values": [
-        "-14.523.048",
-        "-3.908"
-      ],
-      "columns": null,
-      "glosa": "Variación del capital circulante"
-    },
-    {
-      "label": "Det samlede vederlag til selskabets direktion udgør i alt TDKK 2.494 mod TDKK 2.389 i",
+      "label": "Løn og gager",
       "lado": "expense",
       "page": 16,
-      "section": "1 Personaleomkostninger / Løn og gager 49.487.947 37.954 / Pensioner 3.220.650 2.263 / Andre omkostninger til social sikring 2.026.465 1.108 / Personaleomkostninger i alt 54.735.063 41.325",
+      "section": "nota que desglosa \"Løn- og personaleomkostninger\"",
       "values": [
-        "2020/21."
+        49.487947
       ],
-      "columns": null,
-      "glosa": "La remuneración total a la dirección de la sociedad asciende a 2.494 miles de DKK frente a 2.389 miles de DKK en"
+      "glosa": "Sueldos y salarios"
     },
     {
-      "label": "Det samlede vederlag til selskabets bestyrelse udgør i alt TDKK 150 mod TDKK 80 i",
+      "label": "Pensioner",
       "lado": "expense",
       "page": 16,
-      "section": "1 Personaleomkostninger / Løn og gager 49.487.947 37.954 / Pensioner 3.220.650 2.263 / Andre omkostninger til social sikring 2.026.465 1.108 / Personaleomkostninger i alt 54.735.063 41.325",
+      "section": "nota que desglosa \"Løn- og personaleomkostninger\"",
       "values": [
-        "2020/21."
+        3.22065
       ],
-      "columns": null,
-      "glosa": "La remuneración total al consejo de administración de la sociedad asciende a 150 miles de DKK frente a 80 miles de DKK en"
+      "glosa": "Pensiones"
     },
     {
-      "label": "Kostpris 1. juli",
-      "lado": null,
-      "page": 17,
-      "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Løn- og personaleomkostninger\"",
       "values": [
-        "14.570.994",
-        "10.695"
+        2.026465
       ],
-      "columns": null,
-      "glosa": "Coste de adquisición a 1 de julio"
+      "glosa": "Otros gastos de seguridad social"
     },
     {
-      "label": "Tilgang i årets løb",
-      "lado": null,
-      "page": 17,
-      "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
+      "label": "Afskrivninger, anlægsaktiver",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
       "values": [
-        "14.560.824",
-        "5.715"
+        8.373053
       ],
-      "columns": null,
-      "glosa": "Altas del ejercicio"
-    },
-    {
-      "label": "Afgang i årets løb",
-      "lado": null,
-      "page": 17,
-      "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-      "values": [
-        "-6.700.152",
-        "-1.838"
-      ],
-      "columns": null,
-      "glosa": "Bajas del ejercicio"
-    },
-    {
-      "label": "Af- og nedskrivninger 1. juli",
-      "lado": null,
-      "page": 17,
-      "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-      "values": [
-        "-8.387.878",
-        "-5.756"
-      ],
-      "columns": null,
-      "glosa": "Amortización acumulada y correcciones de valor a 1 de julio"
-    },
-    {
-      "label": "Af- og nedskrivninger på afhændede aktiver",
-      "lado": null,
-      "page": 17,
-      "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-      "values": [
-        "3.726.422",
-        "1.289"
-      ],
-      "columns": null,
-      "glosa": "Amortización y deterioro de activos enajenados"
-    },
-    {
-      "label": "Årets af- og nedskrivninger",
-      "lado": null,
-      "page": 17,
-      "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-      "values": [
-        "-6.532.116",
-        "-3.921"
-      ],
-      "columns": null,
-      "glosa": "Amortización y deterioro del ejercicio"
-    },
-    {
-      "label": "Afskrivninger 30. juni",
-      "lado": null,
-      "page": 17,
-      "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
-      "values": [
-        "-11.193.572",
-        "-8.388"
-      ],
-      "columns": null,
-      "glosa": "Amortización acumulada a 30 de junio"
+      "glosa": "Amortización del inmovilizado"
     }
   ]
 }
