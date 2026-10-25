@@ -303,3 +303,10 @@ SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en 
 (`Admin/fuentes-externas.md`, "Consecuencias").
 
 Verificar: manual
+
+### 24. 457 · (Pantallas, espera el ok de Guido): el card «en otra liga» con ejercicios de margen bruto (mockup 148)
+
+Hoy el card de Finanzas (`js/principal.js`, `renderLigaSimPuesto`, que usa `LIGA_VIEW.filaSimulada`) compara el margen bruto de un ejercicio `revenue_basis: gross_margin` como si fuera el ingreso. Propuesta en `Prototyping/Finanzas/mockup-148.html`: con estimado (`window.ESTIMADOS[liga][año]`, de `tools/estimar.mjs`) compara el estimado rotulado «Estimado» y con su rango; sin estimado el card queda en gris con una nota; con ingreso real de un informe posterior (caso `ancla`) compara ese ingreso. Casos hoy (2026-10-25): 51 ejercicios de margen bruto en 14 clubes belgas y daneses, 46 con estimado y 5 sin (Fredericia 2025, Nordsjælland 2025, Vejle 2025, SønderjyskE 2023 y 2024). Se actualiza solo cuando `estimar.mjs` regenera. Falta el ok al mockup.
+Terminado cuando: el card nunca compara un margen bruto como ingreso, en español e inglés, escritorio y 375 px, con `?audit=1` sin crecer y `audit.js` en 0 P0 y 0 P1.
+
+Verificar: manual
