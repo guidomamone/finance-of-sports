@@ -256,7 +256,8 @@
       "adjustments": {
         "extra_rows": [{"label":"Financiële opbrengsten","amount":0.009327},{"label":"Financiële kosten","amount":-0.000206}],
         "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.933485,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
-        "revenue_basis": "full"
+        "revenue_basis": "full",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["patroeisden-be-jaarrekening-2015-06-30-individual"]}
       }
     },
     {
@@ -368,7 +369,8 @@
       "adjustments": {
         "extra_rows": [{"label":"Financiële opbrengsten","amount":0.00019},{"label":"Financiële kosten","amount":-0.000563}],
         "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.479824,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
-        "revenue_basis": "full"
+        "revenue_basis": "full",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["patroeisden-be-jaarrekening-2017-06-30-individual"]}
       }
     },
     {

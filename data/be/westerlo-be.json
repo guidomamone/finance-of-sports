@@ -142,7 +142,8 @@
           {"label":"Financiële kosten","amount":-0.001271},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":null}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":4.663896,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":4.663896,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
