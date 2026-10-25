@@ -37,3 +37,5 @@ Nombre confirmado en la API para los 15 depósitos.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2019 desde `Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.pdf` (sourceId `dender-be-jaarrekening-2019-06-30-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2023 desde `Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.pdf` (sourceId `dender-be-jaarrekening-2023-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2020 desde `Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.pdf` (sourceId `dender-be-jaarrekening-2020-06-30-individual`).

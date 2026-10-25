@@ -1334,6 +1334,7 @@ window.SPONSORS_INDICE = [
   ["junpe","Junpe",["m"]],
   ["junpe-uniformes","Junpe Uniformes",["m"]],
   ["junta-de-freguesia-de-queluz","Junta de Freguesia de Queluz",["c"]],
+  ["jupiler","Jupiler",["c"]],
   ["just-eat","Just Eat",["c"]],
   ["jysk","JYSK",["c"]],
   ["jyske-bank","Jyske Bank",["c"]],

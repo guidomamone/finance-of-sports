@@ -38,6 +38,9 @@ window.RANKINGS["be-div1amateur"] = {
       { id:"patroeisden-be", revenue:0.785, reportType:"official_balance_sheet",
         sourceId:"patroeisden-be-jaarrekening-2020-06-30-individual-correction",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.785]] },
+      { id:"dender-be", revenue:0.574, reportType:"official_balance_sheet",
+        sourceId:"dender-be-jaarrekening-2020-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.574]] },
     ],
   },
   2019: {

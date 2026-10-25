@@ -5,7 +5,7 @@ window.RANKINGS_INDICE = {
   "ar-primeranacional": [2023,2,34],
   "at-bundesliga": [2025,1,12],
   "be-challengerproleague": [2025,4,16],
-  "be-div1amateur": [2017,2,16],
+  "be-div1amateur": [2020,2,16],
   "be-div2amateur": [2023,1,18],
   "be-proleague": [2025,15,16],
   "br-paulistaA1": [2017,2,16],
