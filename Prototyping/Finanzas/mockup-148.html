@@ -5,26 +5,27 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Card «en otra liga» con ejercicios de margen bruto — mockup</title>
 <!-- Qué decisiones explica: el card «en otra liga» de Finanzas para un ejercicio cuyo documento imprime solo el margen bruto (revenue_basis gross_margin).
-     Hoy compara ese margen como si fuera el ingreso. Propuesta: con estimado, compara el estimado (rotulado y con su rango); sin estimado, queda en gris y dice por qué;
-     con el ingreso real de un informe posterior (caso «ancla»), compara ese ingreso y lo rotula como tal.
-     Números del 2026-10-25: ranking be-proleague 2025 (15 clubes con balance, la liga tuvo 16), estimado de Liersesk 2025 en data/estimados/be-challengerproleague.js,
-     Vejle 2025 «Bruttofortjeneste» DKK 53,4 M a 6,3527 (US$ 8,4 M). Pendiente de ok de Guido. -->
+     Hoy compara ese margen como si fuera el ingreso. Propuesta (aprobada por Guido el 2026-10-25, con una sola condición: cada idioma sin mezclar con el otro):
+     con estimado, compara el estimado (rotulado y con su rango); sin estimado, queda en gris y dice por qué; con el ingreso real de un informe posterior
+     (caso «ancla»), compara ese ingreso. La página tiene dos columnas, una entera en español y otra entera en inglés: en el sitio sale la del idioma del visitante.
+     Números del 2026-10-25: ranking be-proleague 2025 (15 clubes con balance, la liga tuvo 16), estimado de Lierse SK 2025 en data/estimados/be-challengerproleague.js,
+     Vejle 2025 «Bruttofortjeneste» DKK 53,4 M a 6,3527 (US$ 8,4 M), RWDM 2024 con el ingreso del informe siguiente (US$ 13,4 M) contra el ranking dk-superliga 2024. -->
 <style>
 :root{--azul:#0a2b5c;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0;--budget:#8a6d00;--budgetbg:#fdf8e7}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 -apple-system,system-ui,"Segoe UI",Roboto,Arial,sans-serif;padding:16px}
 h1{font-size:16px;margin:0 0 4px}
 .nota{color:var(--muted);font-size:12.5px;margin:0 0 18px;max-width:760px}
-.est{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:22px 0 6px;font-weight:700}
-.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
-.col{flex:1 1 420px;max-width:560px}
-.col.m{flex:0 0 343px;max-width:343px}
-.lbl{font-size:11px;color:var(--muted);margin:0 0 4px}
+.cols{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.col{flex:1 1 440px;max-width:560px}
+.idioma{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--azul);font-weight:700;border-bottom:2px solid var(--oro);padding-bottom:4px;margin:0 0 12px}
+.est{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:20px 0 6px;font-weight:700}
+.lbl{font-size:11px;color:var(--muted);margin:6px 0 0}
 .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .card h2{font-size:17px;margin:0 0 2px;color:var(--azul)}
 .subtitle{font-size:12.5px;color:var(--muted);margin:0;max-width:340px}
 .pick{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
-.pick select{font:inherit;padding:4px 8px;border:1px solid var(--border);border-radius:6px;color:var(--text);max-width:180px}
+.pick select{font:inherit;padding:4px 8px;border:1px solid var(--border);border-radius:6px;color:var(--text);max-width:200px}
 .big{font-size:34px;font-weight:800;color:var(--azul);line-height:1.1;font-variant-numeric:tabular-nums}
 .cap{font-size:12.5px;color:var(--muted);margin:2px 0 10px;max-width:340px}
 .btn{font:inherit;font-size:13px;padding:6px 12px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--azul)}
@@ -34,77 +35,72 @@ h1{font-size:16px;margin:0 0 4px}
 .tag.az{color:var(--azul);background:#eef2f8;border:1px solid #c9d6ea}
 .big.gris{color:var(--muted)}
 .vacio{border:1px dashed var(--border);background:repeating-linear-gradient(45deg,#fafaf8 0 6px,#fff 6px 12px)}
-.hoy{outline:2px dashed #e08d84;outline-offset:3px}
 </style>
 </head>
 <body>
 <h1>Card «en otra liga» cuando el ejercicio es de margen bruto</h1>
-<p class="nota">Mismo card de Finanzas, cuatro casos. Los números son reales del 2026-10-25. «Hoy» es lo que se ve ahora: el margen bruto entra al ranking como si fuera ingreso.</p>
+<p class="nota">Tres casos del mismo card de Finanzas, los números son reales del 2026-10-25. La columna de la izquierda está entera en español y la de la derecha entera en inglés. En el sitio sale una sola, la del idioma del visitante.</p>
 
-<div class="est">Hoy · Liersesk 2025 (el documento imprime «Brutomarge» EUR 2,7 M, US$ 3,2 M)</div>
-<div class="row"><div class="col hoy">
-  <div class="card">
-    <div><h2>Lierse SK en otra liga</h2><p class="subtitle">Ponemos sus ingresos de 2024/2025 en el ranking de ingresos de otra liga, mismo ejercicio.</p></div>
-    <div><label class="pick">Si jugara en <select><option>Belgian Pro League</option></select></label>
-    <div class="big">16.º</div><div class="cap">en ingresos, entre los 16 clubes de Belgian Pro League 2024/2025 que tenemos cargados (la liga tuvo 16).</div>
-    <button class="btn">Ver el ranking completo</button></div>
-  </div>
-  <p class="lbl">Problema: 3,2 M es un margen (ingresos menos parte de los costos), no los ingresos del club. Compara peras con manzanas.</p>
-</div></div>
+<div class="cols">
+<div class="col" lang="es">
+  <p class="idioma">Español</p>
 
-<div class="est">A · Con estimado · Liersesk 2025</div>
-<div class="row">
- <div class="col">
+  <div class="est">A · Con estimado · Lierse SK 2025</div>
   <div class="card">
-    <div><h2>Lierse SK en otra liga</h2><p class="subtitle">Ponemos sus ingresos de 2024/2025 en el ranking de ingresos de otra liga, mismo ejercicio. <b>El documento no informa ingresos, solo un margen bruto: usamos nuestro estimado (US$ 10,6 M, entre 3,7 M y 31,8 M).</b></p></div>
-    <div><label class="pick">Si jugara en <select><option>Belgian Pro League</option></select></label>
+    <div><h2>Lierse SK en otra liga</h2><p class="subtitle">Ponemos sus ingresos de 2024/2025 en el ranking de ingresos de otra liga, mismo ejercicio. El documento no informa ingresos, solo un margen bruto: usamos nuestro estimado (US$ 10,6 M, entre 3,7 M y 31,8 M).</p></div>
+    <div><label class="pick">Si jugara en <select><option>Pro League de Bélgica</option></select></label>
     <div class="big">≈ 16.º<span class="tag amb" title="Con el ingreso estimado, no con un balance">Estimado</span></div>
-    <div class="cap">en ingresos, entre los 16 clubes de Belgian Pro League 2024/2025 que tenemos cargados. Con el rango del estimado, entre el 14.º y el 16.º.</div>
+    <div class="cap">en ingresos, entre los 16 clubes de la Pro League de Bélgica 2024/2025 que tenemos cargados. Con el rango del estimado, entre el 14.º y el 16.º.</div>
     <button class="btn">Ver el ranking completo</button></div>
   </div>
- </div>
- <div class="col m">
-  <p class="lbl">Celular, 375 px</p>
-  <div class="card" style="flex-direction:column;align-items:stretch">
-    <div><h2>Lierse SK en otra liga</h2><p class="subtitle">Usamos nuestro estimado de ingresos (US$ 10,6 M, entre 3,7 M y 31,8 M): el documento informa solo un margen bruto.</p></div>
-    <div><label class="pick">Si jugara en <select><option>Belgian Pro League</option></select></label>
-    <div class="big">≈ 16.º<span class="tag amb">Estimado</span></div>
-    <div class="cap">Entre los 16 clubes cargados de Belgian Pro League 2024/2025; con el rango, entre el 14.º y el 16.º.</div>
-    <button class="btn">Ver el ranking completo</button></div>
-  </div>
- </div>
-</div>
 
-<div class="est">B · Sin estimado · Vejle 2025</div>
-<div class="row">
- <div class="col">
+  <div class="est">B · Sin estimado · Vejle 2025</div>
   <div class="card vacio">
     <div><h2>Vejle en otra liga <span class="tag gris" title="No se compara">Sin ingresos</span></h2>
-    <p class="subtitle">No comparamos este ejercicio: el documento de 2025 informa solo «Bruttofortjeneste» (un margen bruto), no los ingresos, y todavía no tenemos un estimado para la Superliga 2025. Cuando lo tengamos, el puesto aparece acá.</p></div>
-    <div><div class="big gris">—</div></div>
-  </div>
- </div>
- <div class="col m">
-  <p class="lbl">Celular, 375 px</p>
-  <div class="card vacio" style="flex-direction:column;align-items:stretch">
-    <div><h2>Vejle en otra liga <span class="tag gris">Sin ingresos</span></h2>
-    <p class="subtitle">No comparamos este ejercicio: el documento informa solo un margen bruto, no los ingresos, y todavía no hay un estimado. Cuando lo haya, el puesto aparece acá.</p></div>
+    <p class="subtitle">No comparamos este ejercicio: el documento de 2025 informa solo «Bruttofortjeneste» (un margen bruto), no los ingresos, y todavía no tenemos un estimado para la Superliga de Dinamarca 2025. Cuando lo tengamos, el puesto aparece acá.</p></div>
     <div class="big gris">—</div>
   </div>
- </div>
-</div>
 
-<div class="est">C · Con el ingreso real de un informe posterior · RWDM 2024 (caso «informe siguiente»)</div>
-<div class="row"><div class="col">
+  <div class="est">C · Con el ingreso real de un informe posterior · RWDM 2024</div>
   <div class="card">
     <div><h2>RWDM en otra liga</h2><p class="subtitle">El documento de 2023/2024 informa solo un margen bruto; el informe del año siguiente trae el ingreso de ese ejercicio (US$ 13,4 M) y es el que usamos.</p></div>
-    <div><label class="pick">Si jugara en <select><option>Superliga danesa</option></select></label>
+    <div><label class="pick">Si jugara en <select><option>Superliga de Dinamarca</option></select></label>
     <div class="big">4.º<span class="tag az" title="Ingreso del informe del año siguiente">Informe siguiente</span></div>
-    <div class="cap">en ingresos, entre los 4 clubes de la Superliga 2023/2024 que tenemos cargados (la liga tuvo 12).</div>
+    <div class="cap">en ingresos, entre los 4 clubes de la Superliga de Dinamarca 2023/2024 que tenemos cargados (la liga tuvo 12).</div>
     <button class="btn">Ver el ranking completo</button></div>
   </div>
-</div></div>
+</div>
 
-<p class="nota" style="margin-top:22px">Se actualiza solo: el card lee el ingreso de <code>window.ESTIMADOS</code> (lo regenera <code>tools/estimar.mjs</code>). Cuando aparece un estimado o un ingreso real posterior para ese club y año, pasa de B a A o C sin tocar nada a mano. La rotulación sigue la de la tabla de Ligas («estimado», «informe siguiente»).</p>
+<div class="col" lang="en">
+  <p class="idioma">English</p>
+
+  <div class="est">A · With an estimate · Lierse SK 2025</div>
+  <div class="card">
+    <div><h2>Lierse SK in another league</h2><p class="subtitle">We put its 2024/2025 revenue in another league's revenue ranking, same season. The document does not report revenue, only a gross margin: we use our own estimate (US$ 10.6M, between 3.7M and 31.8M).</p></div>
+    <div><label class="pick">If it played in <select><option>Belgian Pro League</option></select></label>
+    <div class="big">≈ 16th<span class="tag amb" title="Based on estimated revenue, not on a balance sheet">Estimate</span></div>
+    <div class="cap">by revenue, among the 16 clubs of the 2024/2025 Belgian Pro League that we have loaded. Within the estimate's range, between 14th and 16th.</div>
+    <button class="btn">See the full ranking</button></div>
+  </div>
+
+  <div class="est">B · No estimate · Vejle 2025</div>
+  <div class="card vacio">
+    <div><h2>Vejle in another league <span class="tag gris" title="Not compared">No revenue</span></h2>
+    <p class="subtitle">We do not compare this season: the 2025 document reports only «Bruttofortjeneste» (a gross margin), not revenue, and we do not yet have an estimate for the 2025 Danish Superliga. When we do, the ranking position will show up here.</p></div>
+    <div class="big gris">—</div>
+  </div>
+
+  <div class="est">C · With real revenue from a later report · RWDM 2024</div>
+  <div class="card">
+    <div><h2>RWDM in another league</h2><p class="subtitle">The 2023/2024 document reports only a gross margin; the following year's report gives that season's revenue (US$ 13.4M) and that is the figure we use.</p></div>
+    <div><label class="pick">If it played in <select><option>Danish Superliga</option></select></label>
+    <div class="big">4th<span class="tag az" title="Revenue from the following year's report">Later report</span></div>
+    <div class="cap">by revenue, among the 4 clubs of the 2023/2024 Danish Superliga that we have loaded (the league had 12).</div>
+    <button class="btn">See the full ranking</button></div>
+  </div>
+</div>
+</div>
+
+<p class="nota" style="margin-top:22px">Se actualiza solo: el card lee el ingreso de <code>window.ESTIMADOS</code> (lo regenera <code>tools/estimar.mjs</code>). Cuando aparece un estimado o un ingreso real posterior para ese club y año, pasa de B a A o C sin tocar nada a mano.</p>
 </body>
 </html>
