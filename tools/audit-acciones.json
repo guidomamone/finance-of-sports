@@ -221,7 +221,7 @@
   "donde": "Admin/HALLAZGOS-pipeline.md, segunda fuente de una liga en grupos"
  },
  "etiqueta-sin-glosa": {
-  "hacer": "node tools/fos.mjs glosas-etiquetas --completar --pais <iso2> (Gemini, centavos), después node tools/publicar.mjs.",
+  "hacer": "node tools/fos.mjs glosas-etiquetas --completar [--pais <iso2>] (Claude, ~US$ 0,04 cada 100 etiquetas), después node tools/publicar.mjs. Al escribir un año lo hace solo tools/generate-glosas.mjs.",
   "quien": "script",
   "donde": "tools/glosas-etiquetas.mjs"
  },

@@ -360,7 +360,7 @@ function checkEtiquetaSinGlosa() {
   const paises = Object.entries(faltan).filter(([, x]) => x.es || x.en);
   if (!paises.length) return;
   const es = paises.reduce((a, [, x]) => a + x.es, 0), en = paises.reduce((a, [, x]) => a + x.en, 0);
-  add('P3', 'etiqueta-sin-glosa', `${es} etiquetas (club por club) sin glosa en español y ${en} sin glosa en inglés, en ${paises.length} país(es): ${paises.sort((a, b) => (b[1].es + b[1].en) - (a[1].es + a[1].en)).slice(0, 6).map(([p, x]) => `${p} es ${x.es} en ${x.en}`).join('; ')}. Corré node tools/fos.mjs glosas-etiquetas --completar --pais <iso2> (Gemini, centavos) y publicar`);
+  add('P3', 'etiqueta-sin-glosa', `${es} etiquetas (club por club) sin glosa en español y ${en} sin glosa en inglés, en ${paises.length} país(es): ${paises.sort((a, b) => (b[1].es + b[1].en) - (a[1].es + a[1].en)).slice(0, 6).map(([p, x]) => `${p} es ${x.es} en ${x.en}`).join('; ')}. Las traduce solo tools/generate-glosas.mjs al escribir un año (400 etiquetas por corrida); para el atraso: node tools/fos.mjs glosas-etiquetas --completar [--pais <iso2>] (Claude, ~US$ 0,04 cada 100) y publicar`);
 }
 
 // cierre-sin-fecha: documentos con .md, de carpetas de clubes que ya tienen un ejercicio cargado, cuyo período en el registro no trae fecha de cierre. Sin ella,
