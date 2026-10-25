@@ -353,6 +353,16 @@ function checkCalibracionCola() {
   if (falta.length) add('P3', 'calibracion-cola-pendiente', `${falta.length} celda(s) de la cola con ${MIN_RESP}+ respuestas y menos de ${MIN_MEDIDAS} con segunda revisión: ${falta.map(([k, c]) => `${k} (${c.m} de ${c.n})`).join('; ')}. Sacá una muestra con node tools/calibrar-cola.mjs --muestra 10 --motivo <m> --seguridad <s>, que la lea un revisor que no ve la decisión original, y anotala con --registrar`);
 }
 
+// etiqueta-sin-glosa (punto 451): una etiqueta de fila de un club que el visitante vería en un idioma que no es el suyo sin su glosa (es para los clubes que no son de habla hispana, en para los que no son de habla inglesa).
+// La tabla vive en data/<país>/<club>-glosas.js (tools/glosas-etiquetas.mjs); el original queda en el JSON y en el title de la celda.
+function checkEtiquetaSinGlosa() {
+  let faltan; try { faltan = JSON.parse(require('child_process').execFileSync('node', [path.join(ROOT, 'tools', 'glosas-etiquetas.mjs'), '--faltan'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })); } catch { return; }
+  const paises = Object.entries(faltan).filter(([, x]) => x.es || x.en);
+  if (!paises.length) return;
+  const es = paises.reduce((a, [, x]) => a + x.es, 0), en = paises.reduce((a, [, x]) => a + x.en, 0);
+  add('P3', 'etiqueta-sin-glosa', `${es} etiquetas (club por club) sin glosa en español y ${en} sin glosa en inglés, en ${paises.length} país(es): ${paises.sort((a, b) => (b[1].es + b[1].en) - (a[1].es + a[1].en)).slice(0, 6).map(([p, x]) => `${p} es ${x.es} en ${x.en}`).join('; ')}. Corré node tools/fos.mjs glosas-etiquetas --completar --pais <iso2> (Gemini, centavos) y publicar`);
+}
+
 // cierre-sin-fecha: documentos con .md, de carpetas de clubes que ya tienen un ejercicio cargado, cuyo período en el registro no trae fecha de cierre. Sin ella,
 // cargar-inicio.mjs no encuentra el cierre del año anterior y frena (SønderjyskE 2023). Se arregla con periodo.mjs (el cierre del nombre del archivo, con compuerta) o con un ajuste `cierre`.
 function checkCierreSinFecha() {
@@ -371,4 +381,4 @@ function checkRevisionPropiaPendiente() {
   if (pendientes.length) add('P3', 'revision-propia-pendiente', `${pendientes.length} cambio(s) revisados solo por la sesión que los hizo, sin la revisión de la Auditora:${pendientes.slice(-3).map(l => `${l.fecha} ${String(l.cambio).slice(0, 50)}`).join(' · ')}. La Auditora los revisa y anota patron --revision auditora`);
 }
 
-module.exports = { checkMetodologiaAlDia, metodologiaAtrasada, checkRegistroFuera, checkCalibracionCola, checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };
+module.exports = { checkMetodologiaAlDia, metodologiaAtrasada, checkRegistroFuera, checkCalibracionCola, checkEtiquetaSinGlosa, checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };

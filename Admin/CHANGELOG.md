@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1082 — 451: las etiquetas de las filas en el idioma del visitante [451 · audit-chequeos-5.js, audit.js, generadores.mjs, generate-glosas.mjs, glosas-etiquetas.mjs]
+
+- Las filas del «Formato del club» muestran una glosa en español o inglés con el original en el title (`tLabelH`); la tabla es `data/<país>/<club>-glosas.js` (aparte del JSON del club: no cambia el contrato). `glosas-etiquetas.mjs` la arma (`es` de las glosas de `Generados/`, `--completar` con Gemini para lo que falta); `generate-glosas.mjs` corre con los demás generadores; `audit.js` da `etiqueta-sin-glosa` (P3). SønderjyskE completo; faltan unas 11 mil etiquetas de los demás clubes (gasto de Guido, escrito en el punto).
+- Medición: `audit` con una diferencia, el aviso nuevo, explicada; el medidor `cargar` no usa estos archivos. Verificado en el navegador (español, inglés, 375 px, `?audit=1` 0 no cierran).
+
 ## Versión 1081 — 444 cerrado: ningún documento de un club con algo cargado frena por falta de cierre [444]
 
 - Estado final: los documentos anuales sin cierre en el registro pasaron de 675 a 302; de los de clubes con algo cargado (175), 44 los deducen los vecinos, 102 los confirmó la cola (`cierre-por-pais`), 29 ya tienen el año cargado y 0 frenan (el P3 `cierre-sin-fecha` lo cuenta). Los otros 127 son de clubes todavía sin cargar (Francia 43, Corea del Sur 14, Turquía 10, Chequia 9, Japón 8, Ucrania 8…): su fecha se resuelve al darlos de alta (vecinos, `cierre-propuestas --escribir` para los países con cierre por defecto, o un ajuste `cierre` leído del documento), y si un club entra con un cierre que `periodo.mjs` no lee (Corea del Sur: «AAAA년 MM월 DD일 까지») se mejora ahí, midiendo.

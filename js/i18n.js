@@ -28,8 +28,9 @@ window.fosUrl = window.fosUrl || function (ruta) { return window.FOS_RAIZ ? new 
 //   - Para re-renderizar una vista cuando cambia el idioma: `I18N.onChange(() => miRender())`. El motor NO adivina qué
 //     re-renderizar.
 //
-// QUÉ NO SE TRADUCE, A PROPÓSITO: los rubros de "Formato del club" salen textuales del balance de cada club (`rawLabel`), y el
-// sitio muestra cada club TAL CUAL LO REPORTA. Los buckets de "Formato simplificado" SÍ se traducen: son categorías del sitio.
+// LOS RUBROS DE "Formato del club" salen textuales del balance de cada club y los datos conservan el texto original. Lo que se muestra es una glosa
+// en el idioma elegido (data/<país>/<club>-glosas.js, con el original en el title de la celda); sin glosa, el original. Los buckets de
+// "Formato simplificado" se traducen con las claves de este archivo: son categorías del sitio.
 // ============================================================================
 
 (function () {

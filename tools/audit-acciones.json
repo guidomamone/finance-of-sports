@@ -220,6 +220,11 @@
   "quien": "sesion",
   "donde": "Admin/HALLAZGOS-pipeline.md, segunda fuente de una liga en grupos"
  },
+ "etiqueta-sin-glosa": {
+  "hacer": "node tools/fos.mjs glosas-etiquetas --completar --pais <iso2> (Gemini, centavos), después node tools/publicar.mjs.",
+  "quien": "script",
+  "donde": "tools/glosas-etiquetas.mjs"
+ },
  "calibracion-cola-pendiente": {
   "hacer": "node tools/calibrar-cola.mjs --muestra 10 --motivo <m> --seguridad <s>; un revisor Sonnet que no ve la decisión original (brief Admin/BRIEF-REVISOR-COLA.md); anotar con --registrar.",
   "quien": "sesion",

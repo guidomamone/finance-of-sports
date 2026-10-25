@@ -474,11 +474,18 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
 - QUÉ SE TRADUCE Y QUÉ NO.
   Se traduce el CHROME y toda etiqueta NUESTRA: nav, títulos, controles, headers de tabla, los
   buckets de "Formato simplificado", el tipo y el nivel de cada fuente, y la procedencia de cada
-  tipo de cambio. NO se traduce nada que salga TEXTUAL de un documento o que sea un nombre propio:
-  los rubros de "Formato del club" (`rawLabel`), el título de cada balance, los nombres de club y de
-  liga, y los nombres de gestión de `gestionesByClub` (son apellidos de presidentes). El criterio es
-  uno solo y ya estaba en la cabecera de `js/i18n.js`: traducir un rubro del balance de un club
-  argentino sería inventar un dato que el documento no dice. Vale igual para `fuentes.html`, que
+  tipo de cambio. NO se traduce el título de cada balance, los nombres de club y de liga, ni los
+  nombres de gestión de `gestionesByClub` (son apellidos de presidentes).
+  LOS RUBROS DE "Formato del club" (`rawLabel`) se conservan textuales en los datos y en `fuentes/`
+  (es la evidencia de lo que dice el documento), pero la pantalla muestra una GLOSA en el idioma
+  elegido (español o inglés), con el original en el `title` de la celda y un subrayado punteado.
+  La glosa vive en `data/<país>/<club>-glosas.js` (`{original: {es, en}}`; se omite el idioma en
+  el que el rubro ya está; el índice `data/glosas-indice.js` dice qué clubes la tienen) y la arma
+  `tools/glosas-etiquetas.mjs` (`es` de los `glosa` de `Generados/`, el resto con `--completar`).
+  `tLabel` (texto plano: gráficos, citas) y `tLabelH` (celdas de tabla, con el original) las usan;
+  sin glosa se muestra el original, y `audit.js` da `etiqueta-sin-glosa` (P3) con lo que falta.
+  Es una tabla aparte del JSON del club: agregar glosas no cambia el contrato de datos.
+  Vale igual para `fuentes.html`, que
   desde esta versión se traduce sola con el mismo motor y el mismo diccionario que el sitio, en vez
   de generarse un archivo por idioma.
 - NADA DE `alert()` EN UN CAMINO DE ERROR. Un
@@ -914,9 +921,9 @@ Texto movido sin cambios.
   TRADUCCIÓN COMPLETA: las 204 claves que el sitio usa están
   las 204 en `en.js`, y `fuentes.html` también se traduce sola, con el mismo motor
   y el mismo diccionario (no se genera un archivo por idioma). Lo que NO se traduce
-  es a propósito y ahora es una regla escrita en `Admin/CONVENCIONES.md`: los rubros de
-  "Formato del club", el título de cada documento, y los nombres de club, de liga y
-  de gestión, que salen textuales de la fuente o son nombres propios.
+  es a propósito: el título de cada documento y los nombres de club, de liga y de gestión,
+  que salen textuales de la fuente o son nombres propios (los rubros de "Formato del club"
+  van con glosa, más arriba).
 - CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=`. SUBIR ESE
   NÚMERO al cambiar cualquier archivo de `js/` o `data/`, si no un visitante que
   ya entró antes se puede quedar con el JS viejo cacheado y el HTML nuevo.
