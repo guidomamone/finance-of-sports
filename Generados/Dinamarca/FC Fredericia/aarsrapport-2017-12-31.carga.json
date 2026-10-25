@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.pdf",
- "generado": "2026-10-25T16:44:57.034Z",
+ "generado": "2026-10-25T16:59:53.415Z",
  "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-21: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 13 ejercicio(s) con un solo perímetro (individual); 14 documento(s) mirados)"
@@ -362,10 +362,9 @@
   "label": "Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2017-12-29, 2017-12-31 no es día hábil)"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no aparece en los rosters cacheados de 2017 (dk-superliga): puede haber jugado otra división",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "dk-1division",
+  "fuente": "roster cacheado de \"2017–18 Danish 1st Division\" (tools/club-league-reference/dk.json), coincidencia exacta \"FC Fredericia\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -404,9 +403,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no aparece en los rosters cacheados de 2017 (dk-superliga): puede haber jugado otra división",
-   "estado": "pendiente"
+   "valor": "dk-1division",
+   "fuente": "roster cacheado de \"2017–18 Danish 1st Division\" (tools/club-league-reference/dk.json), coincidencia exacta \"FC Fredericia\"",
+   "estado": "ok"
   }
  },
  "ancla": null,

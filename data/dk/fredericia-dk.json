@@ -82,11 +82,69 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.pdf"
+    },
+    {
+      "id": "fredericia-dk-aarsrapport-2017-12-31",
+      "club_id": "fredericia-dk",
+      "title": "Fodbold Club Fredericia 1991 — aarsrapport-2017-12-31 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Morten Rahbek Hansen (formand)","first_year":2019,"last_year":2019}],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "DKK",
+      "source_id": "fredericia-dk-aarsrapport-2017-12-31",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2017-12-31"},
+      "revenue": [{"label":"Nettoomsætning","category":"undisclosed","subcategory":"lump_football_operations","amount":13.444776,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Omkostninger til råvarer og hjælpematerialer",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.319398,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Andre eksterne omkostninger",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -4.076087,
+          "disclosure": "aggregated"
+        },
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-7.307705,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-0.341923,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.191747,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andre personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-0.933485,"disclosure":"aggregated"},
+        {
+          "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.109598,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.072901,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":13.444776,"expenses":13.279943,"net_result":0.091932},
+      "adjustments": {
+        "extra_rows": [{"label":"Finansielle indtægter","amount":0},{"label":"Finansielle omkostninger","amount":-0.072901},{"label":"Skat af årets resultat","amount":0}],
+        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":13.444776,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total"
+      }
+    },
     {
       "fiscal_year": 2018,
       "period_end": "2018-12-31",
