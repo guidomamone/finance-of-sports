@@ -1,0 +1,121 @@
+{
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.md",
+ "generatedAt": "2026-10-25T05:31:07.182Z",
+ "rubrosHuella": "48ed39ce3a24f445aafd80b2ecc3503feaa3626c",
+ "rubros": [
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Omkostninger til råvarer og hjælpematerialer",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Andre eksterne omkostninger",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Nettoomsætning",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1243
+  }
+ ]
+}

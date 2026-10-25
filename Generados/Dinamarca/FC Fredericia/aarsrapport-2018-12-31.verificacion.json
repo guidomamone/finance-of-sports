@@ -1,0 +1,165 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.md",
+ "generado": "2026-10-25T05:34:00.177Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "fredericia-dk",
+ "year": 2018,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.996003610813204e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 14.886553,
+  "gastos": 14.655898,
+  "financiero": -0.088306,
+  "impuesto": 0,
+  "resultadoImpreso": 0.142349,
+  "resultadoParaCargar": 0.142349,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Nettoomsætning",
+   "lado": "ingreso",
+   "M": 14.886553,
+   "pagina": 9,
+   "linea": 267,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Omkostninger til råvarer og hjælpematerialer",
+   "lado": "gasto",
+   "M": 0.475341,
+   "pagina": 9,
+   "linea": 268,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre eksterne omkostninger",
+   "lado": "gasto",
+   "M": 4.588504,
+   "pagina": 9,
+   "linea": 269,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 7.932892,
+   "pagina": 13,
+   "linea": 392,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Pensioner",
+   "lado": "gasto",
+   "M": 0.34399,
+   "pagina": 13,
+   "linea": 393,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre omkostninger til social sikring",
+   "lado": "gasto",
+   "M": 0.216104,
+   "pagina": 13,
+   "linea": 394,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre personaleomkostninger",
+   "lado": "gasto",
+   "M": 1.061823,
+   "pagina": 13,
+   "linea": 395,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "lado": "gasto",
+   "M": 0.037244,
+   "pagina": 9,
+   "linea": 273,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finansielle omkostninger",
+   "M": -0.088306,
+   "linea": 275
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skat af årets resultat",
+   "M": 0,
+   "linea": 277
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "105738af07b60d5f3a56d38159bd8285e95cf273",
+  "rango": [
+   264,
+   281
+  ],
+  "lineasCargadas": [
+   267,
+   268,
+   269,
+   392,
+   393,
+   394,
+   395,
+   273,
+   275,
+   277
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 264 a 281 del .md):\nL265: |   | Note | 2018 DKK | 2017 DKK  |\nL266: | --- | --- | --- | --- |\nL267: |  **Nettoomsætning** |  | **14.886.553** | **13.444.778**  |\nL268: |  Omkostninger til råvarer og hjælpematerialer |  | -475.341 | -319.398  |\nL269: |  Andre eksterne omkostninger |  | -4.588.504 | -4.076.089  |\nL270: |  **Bruttoresultat** |  | **9.822.708** | **9.049.291**  |\nL271: |  Personaleomkostninger | 2 | -9.554.809 | -8.774.860  |\nL272: |  **Resultat før afskrivninger** |  | **267.899** | **274.431**  |\nL273: |  Af- og nedskrivninger af materielle anlægsaktiver |  | -37.244 | -109.598  |\nL274: |  **Resultat før finansielle poster** |  | **230.655** | **164.833**  |\nL275: |  Finansielle omkostninger |  | -88.306 | -72.901  |\nL276: |  **Resultat før skat** |  | **142.349** | **91.932**  |\nL277: |  Skat af årets resultat |  | 0 | 0  |\nL278: |  **Årets resultat** |  | **142.349** | **91.932**  |\nL280: ## Resultatdisponering\n\nLO QUE SE CARGA:\n- ingreso · \"Nettoomsætning\" · 14.886553 · L267\n- gasto · \"Omkostninger til råvarer og hjælpematerialer\" · 0.475341 · L268\n- gasto · \"Andre eksterne omkostninger\" · 4.588504 · L269\n- gasto · \"Lønninger\" · 7.932892 · L392 (de una nota)\n- gasto · \"Pensioner\" · 0.34399 · L393 (de una nota)\n- gasto · \"Andre omkostninger til social sikring\" · 0.216104 · L394 (de una nota)\n- gasto · \"Andre personaleomkostninger\" · 1.061823 · L395 (de una nota)\n- gasto · \"Af- og nedskrivninger af materielle anlægsaktiver\" · 0.037244 · L273\n- financiero · \"Finansielle omkostninger\" · -0.088306 · L275\n- impuesto · \"Skat af årets resultat\" · 0 · L277"
+ }
+}

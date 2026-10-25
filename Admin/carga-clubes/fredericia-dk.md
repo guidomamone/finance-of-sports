@@ -364,6 +364,44 @@ _antes de Morten Rahbek Hansen (data/gestiones/dk.js):_
 Rahbek es formand desde hace "32 años" a 2025 (~1993): el inicio es aproximado; en 2019 estaba en el cargo.
 ```
 
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Nettoomsætning | pág. 9, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Omkostninger til råvarer og hjælpematerialer | pág. 9, precedente |
+| 2 | Andre eksterne omkostninger | pág. 9, precedente |
+| 3 | Lønninger | pág. 13, precedente |
+| 4 | Pensioner | pág. 13, precedente |
+| 5 | Andre omkostninger til social sikring | pág. 13, precedente |
+| 6 | Andre personaleomkostninger | pág. 13, precedente |
+| 7 | Af- og nedskrivninger af materielle anlægsaktiver | pág. 9, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): null, SIN VERIFICAR (no hay ninguna liga-temporada de dk 2018 cacheada).
+```
+
 ## Fuentes
 
 ### fredericia-dk-aarsrapport-2019
@@ -420,4 +458,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fredericia-dk-aarsrapport-2018-12-31
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

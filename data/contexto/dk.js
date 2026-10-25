@@ -15,6 +15,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Parken","capacidad":38009,"sponsor":"Unibet","marca":"Adidas","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'fredericia-dk': {
+    2018: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2018–19 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?title=2018%E2%80%9319_Danish_1st_Division&oldid=1374472594","fuenteManual":"https://en.wikipedia.org/w/index.php?title=2018%E2%80%9319_Danish_1st_Division&oldid=1374472594","manual":["estadio","capacidad","sponsor","marca","temporada"]},
     2019: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2019–20 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328192521"},
     2020: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2019–20 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328192521"},
     2021: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","fuente":"https://en.wikipedia.org/wiki/2021%E2%80%9322_Danish_1st_Division","fuenteManual":"https://en.wikipedia.org/wiki/2021%E2%80%9322_Danish_1st_Division","manual":["estadio","capacidad","sponsor","marca"]},

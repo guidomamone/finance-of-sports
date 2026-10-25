@@ -1,0 +1,123 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.md",
+ "mdSha1": "1fdee5bcb2325f1f0b909fbf61e31cf592865d37",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T05:27:32.537Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    24,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    265,
+    278
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    284,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    298,
+    312
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    324,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    347,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    389,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    409,
+    417
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    421,
+    425
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    429,
+    438
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    448,
+    453
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    457,
+    461
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b7"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado '2018 DKK | 2017 DKK' (importes en coronas, sin indicación de miles)",
+ "moneda": "DKK",
+ "columna_ejercicio": "2018 DKK",
+ "columna_anterior": "2017 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Fodbold Club Fredericia 1991 en b2 (pág. 9). b7 es la nota 2 Personaleomkostninger (desglose de gastos de personal). No hay nota de desglose de ingresos. Se excluyen el destino del resultado (b3), el balance (b4, b5), el flujo de efectivo y sus notas (b6, b11, b12), el activo fijo (b8), el patrimonio (b9) y el impuesto diferido (b10)."
+}

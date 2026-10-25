@@ -1,0 +1,405 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.pdf",
+ "generado": "2026-10-25T05:34:09.647Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-21: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 13 ejercicio(s) con un solo perímetro (individual); 14 documento(s) mirados)"
+ ],
+ "ejercicio": {
+  "clubId": "fredericia-dk",
+  "year": 2018,
+  "cierre": "2018-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Nettoomsætning",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 14.886553,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Omkostninger til råvarer og hjælpematerialer",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.475341,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre eksterne omkostninger",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -4.588504,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lønninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -7.932892,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioner",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.34399,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre omkostninger til social sikring",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.216104,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre personaleomkostninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.061823,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Af- og nedskrivninger af materielle anlægsaktiver",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.037244,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2018-12-31",
+   "sourceId": "fredericia-dk-aarsrapport-2018-12-31",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.088306,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Finansielle omkostninger",
+     "value": -0.088306
+    },
+    {
+     "label": "Skat af årets resultat",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Nettoomsætning",
+     "lado": "revenue",
+     "importe": 14.886553,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    }
+   ],
+   "baseIngreso": "sales_total",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 14.886553,
+   "officialTotalExpenses": 14.655898,
+   "officialPAT": 0.142349
+  },
+  "source": {
+   "id": "fredericia-dk-aarsrapport-2018-12-31",
+   "clubId": "fredericia-dk",
+   "title": "Fodbold Club Fredericia 1991 — aarsrapport-2018-12-31 (ejercicio 2018)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2018-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "cierreDe": "nombre del archivo (fin de mes, y el año aparece en el texto)",
+  "anual": "calendario"
+ },
+ "clubId": "fredericia-dk",
+ "year": 2018,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 10,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Nettoomsætning",
+   "page": 9,
+   "native": 14.886553,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 14.886553,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 14.886553
+  },
+  {
+   "label": "Omkostninger til råvarer og hjælpematerialer",
+   "page": 9,
+   "native": 0.475341,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.475341,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.475341
+  },
+  {
+   "label": "Andre eksterne omkostninger",
+   "page": 9,
+   "native": 4.588504,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.588504,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.588504
+  },
+  {
+   "label": "Lønninger",
+   "page": 13,
+   "native": 7.932892,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 7.932892,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -7.932892
+  },
+  {
+   "label": "Pensioner",
+   "page": 13,
+   "native": 0.34399,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.34399,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.34399
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "page": 13,
+   "native": 0.216104,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.216104,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.216104
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "page": 13,
+   "native": 1.061823,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 1.061823,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): Es parte de los costos de personal, que el balance danés no separa por sector; criterio del proyecto (cargas con el sueldo, nunca categoría propia): wages_squad. Con solo 24 empleados el grueso es plantel. [Fredericia .md L418-425 (Nota 2 Personaleomkostninger: Lønninger 8.798.576 + Pen]",
+   "destino": "expense",
+   "amountNative": -1.061823
+  },
+  {
+   "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "page": 9,
+   "native": 0.037244,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.037244,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.037244
+  },
+  {
+   "label": "Finansielle omkostninger",
+   "page": null,
+   "native": -0.088306,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skat af årets resultat",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Personaleomkostninger\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 14.886553,
+  "expSum": -14.655898,
+  "officialTotalRevenue": 14.886553,
+  "officialTotalExpenses": 14.655898,
+  "officialPAT": 0.142349,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.142349,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 14.886553
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 14.655898
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "DKK@2018-12-31",
+  "fx": 6.5194,
+  "source": "market_close",
+  "label": "Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2018-12-28, 2018-12-31 no es día hábil)"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de dk 2018 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2018,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2018-12-31",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2018-12-31) y contenido del .md (7 de 7 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-21)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "DKK@2018-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 6.5194. --escribir agrega 'DKK@2018-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "fredericia-dk-aarsrapport-2018-12-31",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no hay ninguna liga-temporada de dk 2018 cacheada",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 7,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}
