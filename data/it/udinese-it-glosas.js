@@ -1,0 +1,22 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"- Gare Coppa Italia":{"es":"- Partidos de Copa de Italia"},
+"12) accantonamenti per rischi":{"es":"12) Provisiones para riesgos"},
+"13) altri accantonamenti":{"es":"13) Otras provisiones"},
+"6) per materie prime, sussidiarie, di consumo e di merci":{"es":"6) Consumo de materias primas, auxiliares, consumibles y mercaderías"},
+"Altri oneri da trasferimento diritti calciatori":{"es":"Otros gastos por transferencias de derechos de futbolistas"},
+"Altri proventi da trasferimento calciatori":{"es":"Otros ingresos por traspaso de futbolistas"},
+"Assicurative e previdenziali":{"es":"Seguros y cargas sociales"},
+"Costi vitto, alloggio, locomozione gare":{"es":"Gastos de manutención, alojamiento y desplazamientos para partidos"},
+"Minusvalenze da cessioni diritti calciatori":{"es":"Pérdidas por traspasos de derechos de futbolistas"},
+"Oneri da organizzazione competizioni":{"es":"Gastos por organización de competiciones"},
+"Plusvalenze da cessione calciatori":{"es":"Plusvalías por traspaso de futbolistas"},
+"Proventi commerciali e royalties":{"es":"Ingresos comerciales y regalías"},
+"Spese per organizzazione gare":{"es":"Gastos de organización de partidos"},
+"a) salari e stipendi":{"es":"a) Sueldos y salarios"},
+"c) trattamento di fine rapporto":{"es":"c) Indemnizaciones por fin de contrato laboral"},
+"contributi in conto esercizio":{"es":"Subvenciones a la explotación"},
+"d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilita' liquide":{"es":"d) Correcciones valorativas de créditos del activo corriente y disponibilidades líquidas"},
+"noleggio attrezzature":{"es":"Arrendamiento de equipamiento"},
+"noleggio autoveicoli e automezzi per uso aziendale":{"es":"Arrendamiento de vehículos para uso de la empresa"},
+"spese per affitti e utenze locali ad uso foresteria":{"es":"Gastos de alquiler y suministros de residencia"}
+});

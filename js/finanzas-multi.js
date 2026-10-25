@@ -177,7 +177,7 @@ const FIN_MULTI_PL = (function(){
       const serie = pct ? principalPct : principal;
       const id = key + '|' + label;
       const abierto = estado.abiertos.has(id);
-      let h = `<tr class="pl-row-open${abierto ? ' abierto' : ''}${opts.nodato ? ' pl-nodato' : ''}" data-id="${esc(id)}" tabindex="0"><td><span class="pl-arrow">${abierto ? '&#9662;' : '&#9656;'}</span>${tLabel(label)}</td>`;
+      let h = `<tr class="pl-row-open${abierto ? ' abierto' : ''}${opts.nodato ? ' pl-nodato' : ''}" data-id="${esc(id)}" tabindex="0"><td><span class="pl-arrow">${abierto ? '&#9662;' : '&#9656;'}</span>${tLabelH(label)}</td>`;
       cols.forEach(c => {
         if(c.gap){ h += '<td class="pl-gap"></td>'; return; }
         const d = c.d;
@@ -231,7 +231,7 @@ const FIN_MULTI_PL = (function(){
     extraLabels.forEach(label => {
       const filas = datos.map(d => filaDe(d.rep.extraRows, label));
       if(!filas.some((r, i) => r && val(datos[i], 'main', r.value) !== 0) && label !== 'Intereses netos') return;
-      let h = `<tr><td>${tLabel(label)}</td>`;
+      let h = `<tr><td>${tLabelH(label)}</td>`;
       cols.forEach(c => {
         if(c.gap){ h += '<td class="pl-gap"></td>'; return; }
         if(c.src !== 'main'){ h += `<td${cls(c)}>—</td>`; return; }

@@ -1,0 +1,22 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Dnevnice i putni troškovi":{"es":"Dietas y gastos de viaje"},
+"Dobit od prodaje igrača":{"es":"Beneficio por traspaso de jugadores"},
+"Doprinosi na plaće":{"es":"Cotizaciones sociales a cargo de la empresa"},
+"Intelektualne usluge":{"es":"Servicios profesionales independientes"},
+"Marketinški troškovi":{"es":"Gastos de publicidad y marketing"},
+"Najam poslovnog prostora":{"es":"Alquiler de locales comerciales"},
+"Naknade za transfere igrača":{"es":"Gastos por transferencias de jugadores"},
+"Neto plaće i nadnice":{"es":"Sueldos y salarios netos"},
+"Ostali nespomenuti prihodi":{"es":"Otros ingresos no especificados"},
+"Ostali prihodi od prodaje":{"es":"Otros ingresos por ventas"},
+"Porezi i doprinosi koji ne ovise o rezultatu":{"es":"Tributos no vinculados al resultado"},
+"Prihodi od TV prava":{"es":"Ingresos por derechos de televisión"},
+"Prihodi od prodaje ekonomskih prava igrača":{"es":"Ingresos por venta de derechos económicos de jugadores"},
+"Prihodi od prodaje ulaznica":{"es":"Ingresos por taquilla y venta de entradas"},
+"Sportska oprema":{"es":"Material deportivo"},
+"Trošak održavanja utakmica":{"es":"Gastos de organización de partidos"},
+"Troškovi poreza i doprinosa iz plaća":{"es":"Retenciones e impuestos y cotizaciones sobre salarios"},
+"Troškovi prodane robe":{"es":"Coste de las mercancías vendidas"},
+"UEFA nagrade i solidarne uplate":{"es":"Premios y pagos solidarios de la UEFA"},
+"Utrošene sirovine i materijal":{"es":"Consumo de materias primas y materiales"}
+});

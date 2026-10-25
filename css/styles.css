@@ -232,6 +232,7 @@
   .pl-clickable{cursor:pointer;}
   .pl-clickable:hover td{background:#f5f8fc;}
   .pl-arrow{display:inline-block;width:14px;color:var(--muted);font-size:10px;}
+  .gl-etiqueta{cursor:help;border-bottom:1px dotted currentColor;}
   .pl-spacer td{padding:0;height:18px;border:none;background:transparent;}
   .pl-breakdown-row td{background:#fafbfc;border-bottom:1px dashed #ececec;font-size:12.5px;color:var(--muted);padding-top:5px;padding-bottom:5px;}
   .pl-section-head td{font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:transparent;border-bottom:2px solid var(--azul);padding-top:16px;padding-bottom:4px;}

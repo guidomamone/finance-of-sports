@@ -1,0 +1,23 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"+ Eigene Medien und Produktionskosten":{"es":"+ Costes de producción y medios propios"},
+"+ Klubservice, Events, PR und Marketing":{"es":"+ Servicios del club, eventos, RR. PP. y marketing"},
+"+ Management-Gebühren und Vermittlungsprovisionen":{"es":"+ Comisiones de gestión y de intermediación"},
+"+ Rechteverwertung":{"es":"+ Explotación de derechos"},
+"+ Rechteverwertung & Zentralvermarktung":{"es":"+ Explotación de derechos y comercialización centralizada"},
+"Aufwendungen Spielbetrieb, Transfers etc.":{"es":"Gastos de competición, traspasos, etc."},
+"Aufwendungen für bezogene Leistungen":{"es":"Gastos por servicios contratados"},
+"Erträge aus dem Abgang von Anlagevermögen":{"es":"Ingresos por enajenación de inmovilizado"},
+"Erträge aus der Auflösung von Rückstellungen":{"es":"Ingresos por reversión de provisiones"},
+"Management-Gebühren und Vermittlungsprovisionen":{"es":"Comisiones de gestión y de intermediación"},
+"Managementgebühren und Vermittlungsprovisionen":{"es":"Comisiones de gestión e intermediación"},
+"Rechteverwertung":{"es":"Explotación de derechos"},
+"Rechteverwertung & Zentralvermarktung":{"es":"Explotación de derechos y comercialización centralizada"},
+"Sonstige betriebliche Aufwendungen":{"es":"Otros gastos de explotación"},
+"Steuern, soweit sie nicht unter Steuern vom Einkommen fallen":{"es":"Impuestos, en la medida en que no correspondan a impuestos sobre la renta"},
+"Transferaufwendungen":{"es":"Gastos por traspasos"},
+"Transferauwendungen":{"es":"Gastos por traspasos"},
+"Transfererlöse":{"es":"Ingresos por traspasos"},
+"Transferlöse":{"es":"Ingresos por traspasos"},
+"Umsetzung Sponsofeistungen":{"es":"Ejecución de prestaciones de patrocinio"},
+"eigene Medien und Produktionskosten":{"es":"Medios propios y costes de producción"}
+});

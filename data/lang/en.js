@@ -67,6 +67,7 @@ window.I18N.strings.en = {
   "finanzas.posibleDentroOtro": "Possibly within another line",
   "finanzas.tipIncluido1": "It is included in",
   "finanzas.tipIncluido2": "the source reports it together with that line.",
+  "finanzas.glosaOriginal": "The document says",
   "finanzas.tipPosible1": "I suspect it is within",
   "finanzas.tipPosible2": "it is not a zero, but the source doesn't make it clear or is confusing.",
   "finanzas.banner.mirror": "Real, audited financial statements (with an independent auditor's report), but downloaded from a fan-community mirror, not the club's official channel",

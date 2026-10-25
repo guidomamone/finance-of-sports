@@ -1,0 +1,23 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Bens de pq. Valor e depreciação":{"es":"Bienes de escaso valor y amortización"},
+"Custo Transf. Jogadores":{"es":"Coste de traspaso de jugadores"},
+"Depreciação e Bens Pq Valor":{"es":"Amortización y bienes de escaso valor"},
+"Despesa com Materiais":{"es":"Gastos de materiales"},
+"Despesas Bancárias":{"es":"Gastos bancarios"},
+"Despesas Médicas":{"es":"Gastos médicos"},
+"Despesas Tributárias":{"es":"Gastos tributarios"},
+"Despesas com Transf. Jogadores":{"es":"Gastos por traspaso de jugadores"},
+"Despesas diversas":{"es":"Gastos diversos"},
+"Gastos com Jogos - Camp. Brasileiro":{"es":"Gastos de partidos - Campeonato Brasileño"},
+"Gastos com Jogos - Camp. Catarinense":{"es":"Gastos de partidos - Campeonato Catarinense"},
+"Gastos com Outros":{"es":"Otros gastos de partidos"},
+"Hospedagens":{"es":"Alojamiento"},
+"Jogos e competições":{"es":"Partidos y competiciones"},
+"Manutenção Terceiros":{"es":"Mantenimiento por terceros"},
+"Mensalidades/Periódicos":{"es":"Cuotas y publicaciones periódicas"},
+"Provisões Contingência":{"es":"Provisiones para contingencias"},
+"Receita de Negociação de Atletas":{"es":"Ingresos por traspaso de deportistas"},
+"Receita de Transmissão":{"es":"Ingresos por retransmisión"},
+"Recuperação de Despesas":{"es":"Recuperación de gastos"},
+"Sulamericana":{"es":"Copa Sudamericana"}
+});

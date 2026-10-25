@@ -81,7 +81,7 @@
 
   function labelWithGlossary(label){
     const tip = rowGlossary[label];
-    return tip ? `<span title="${tip.replace(/"/g,'&quot;')}" style="cursor:help;border-bottom:1px dotted currentColor;">${label}</span>` : label;
+    return tip ? `<span title="${tip.replace(/"/g,'&quot;')}" style="cursor:help;border-bottom:1px dotted currentColor;">${label}</span>` : tLabelH(label);
   }
 
 
@@ -131,7 +131,7 @@
         const rowId = groupPrefix+'-'+i;
         const itemsHtml = renderBreakdownRows(c.items, rowId, 0, meta, targetCurrency, total);
         return `<tr class="pl-clickable" onclick="toggleRevenueBreakdown('${rowId}', this)">
-          <td><span class="pl-arrow">&#9656;</span>${tLabel(c.label)}</td>
+          <td><span class="pl-arrow">&#9656;</span>${tLabelH(c.label)}</td>
           <td>${celdaValor(c, curVal)}</td>
           ${pctCell}
           <td>${prevVal !== null ? celdaValor(prevRow, prevVal) : '—'}</td>
@@ -139,7 +139,7 @@
         </tr>` + itemsHtml;
       }
       return `<tr${c.unknown || c.incluidoEn ? ' class="pl-nodato"' : ''}>
-        <td>${tLabel(c.label)}</td>
+        <td>${tLabelH(c.label)}</td>
         <td>${celdaValor(c, curVal)}</td>
         ${pctCell}
         <td>${prevVal !== null ? celdaValor(prevRow, prevVal) : '—'}</td>
@@ -204,7 +204,7 @@
     const extraRowsHtml = (curReport.extraRows||[]).map(e => {
       const v = nativeDisplayVal(e.value, curMeta, currentCurrency);
       if(v === 0 && e.label !== 'Intereses netos') return '';
-      return `<tr><td>${tLabel(e.label)}</td><td>${fmtDisplay(v)}</td><td>—</td><td>—</td><td>—</td></tr>`;
+      return `<tr><td>${tLabelH(e.label)}</td><td>${fmtDisplay(v)}</td><td>—</td><td>—</td><td>—</td></tr>`;
     }).join('');
 
     const resultado = sinGastos ? null : (ing.total + gas.total + extraTotal);
@@ -847,5 +847,17 @@
   // findPrevVal() y el overlay.
   function tLabel(label){
     const key = (window.SITE_LABEL_KEYS || {})[label];
-    return key ? t(key, label) : label;
+    return key ? t(key, label) : (glosaDe(label) || label);
+  }
+  // La glosa de una etiqueta del balance del club en el idioma que eligió el visitante (data/<país>/<club>-glosas.js), o null si ya está en ese idioma o no hay.
+  function glosaDe(label){
+    const g = (window.GLOSAS_ETIQUETAS || {})[label];
+    const idioma = window.I18N && window.I18N.current;
+    return g && idioma && g[idioma] ? g[idioma] : null;
+  }
+  // Para una celda de la tabla: la glosa con el original a mano (title y subrayado punteado). Sin glosa, igual que tLabel.
+  function tLabelH(label){
+    const gl = (window.SITE_LABEL_KEYS || {})[label] ? null : glosaDe(label);
+    const e = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    return gl ? `<span class="gl-etiqueta" title="${e(t('finanzas.glosaOriginal', 'Dice en el documento') + ': ' + label)}">${e(gl)}</span>` : tLabel(label);
   }

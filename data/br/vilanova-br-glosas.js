@@ -1,0 +1,21 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"(-) DESPESAS COM ATIVIDADE EM GERAL":{"es":"(-) Gastos de la actividad en general"},
+"(-) DESPESAS COM PESSOAL":{"es":"(-) Gastos de personal"},
+"(-) DESPESAS COM VENDAS EM GERAL":{"es":"(-) Gastos de ventas en general"},
+"(-) OUTRAS DESPESAS":{"es":"(-) Otros gastos"},
+"Despesas Administrativas":{"es":"Gastos administrativos"},
+"Despesas Depto Esportes":{"es":"Gastos del departamento de deportes"},
+"Despesas Tributárias":{"es":"Gastos tributarios"},
+"RECEITA COM DIREITOS DE TRANSMISSÃO E PREMIAÇÕES":{"es":"Ingresos por derechos de transmisión y premios"},
+"RECEITA COM DIREITOS DE TRANSMISSÃO, PARTICIPAÇÃO E PREMIAÇÃO":{"es":"Ingresos por derechos de transmisión, participación y premios"},
+"RECEITA PATROCINIO E MARKETING":{"es":"Ingresos por patrocinio y marketing"},
+"RECEITA PATROCÍNIO E MARKETING":{"es":"Ingresos por patrocinio y marketing"},
+"Receitas Aluguéis":{"es":"Ingresos por alquileres"},
+"Receitas Atividades Esportivas":{"es":"Ingresos por actividades deportivas"},
+"Receitas Contribuições Conselheiros":{"es":"Ingresos por aportes de consejeros"},
+"Receitas Direitos Federativos Atletas":{"es":"Ingresos por derechos federativos de deportistas"},
+"Receitas Doações/Patrocínios":{"es":"Ingresos por donaciones/patrocinios"},
+"Receitas Escolinha de Futebol":{"es":"Ingresos por escuela de fútbol"},
+"Receitas Publicidade":{"es":"Ingresos por publicidad"},
+"Receitas Sócio Tigrão":{"es":"Ingresos por socios (Sócio Tigrão)"}
+});

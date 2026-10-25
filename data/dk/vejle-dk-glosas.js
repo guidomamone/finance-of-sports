@@ -1,0 +1,20 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Amortización derechos de jugadores":{"es":"Amortización derechos de jugadores","en":"Amortisation of player registrations"},
+"Andre anlæg, driftsmateriel og inventar":{"es":"Otras instalaciones, mobiliario y enseres","en":"Fixtures, fittings, tools and other equipment"},
+"Andre driftsomkostninger":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
+"Andre driftsomkostninger (residual, sin nota propia)":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
+"Andre omkostninger til social sikring":{"es":"Otras cargas sociales","en":"Other social security costs"},
+"Bruttofortjeneste":{"es":"Margen bruto","en":"Gross profit"},
+"Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa explícitamente la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)":{"es":"Resultado bruto","en":"Gross profit"},
+"Depreciación de materiales":{"es":"Depreciación de materiales","en":"Depreciation of materials and equipment"},
+"Finansielle indtægter":{"es":"Ingresos financieros","en":"Financial income"},
+"Finansielle omkostninger":{"es":"Gastos financieros","en":"Financial expenses"},
+"Immaterielle anlægsaktiver — afskrivninger (amortisation for the year, registraciones de jugadores)":{"es":"Amortización de inmovilizado intangible","en":"Amortisation of intangible assets (player registrations)"},
+"Indretning af lejede lokaler":{"es":"Mejoras en inmuebles arrendados","en":"Leasehold improvements"},
+"Indtægter af kapitalandele i tilknyttede virksomheder":{"es":"Ingresos de participaciones en empresas del grupo","en":"Income from investments in subsidiaries"},
+"Lønninger":{"es":"Sueldos y salarios","en":"Wages and salaries"},
+"Materielle anlægsaktiver — afskrivninger (Andre anlæg, driftsmateriel og inventar + Indretning af lejede lokaler)":{"es":"Depreciación de inmovilizado material","en":"Depreciation of property, plant and equipment"},
+"Pensioner":{"es":"Pensiones y prestaciones sociales","en":"Pensions"},
+"Personaleomkostninger (Lønninger + Pensioner + Andre omkostninger til social sikring)":{"es":"Gastos de personal","en":"Staff costs"},
+"Skat af årets resultat":{"es":"Impuesto sobre el beneficio","en":"Tax on profit/loss for the year"}
+});

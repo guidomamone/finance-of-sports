@@ -1,0 +1,21 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Correções relativas a períodos anteriores":{"es":"Correcciones relativas a ejercicios anteriores"},
+"Deslocações":{"es":"Desplazamientos"},
+"Despesas Diversas":{"es":"Gastos diversos"},
+"Despesas Médicas":{"es":"Gastos médicos"},
+"Empréstimos de Atletas":{"es":"Cesiones de jugadores"},
+"Imparidade de investimentos depreciáveis/amortizáveis (perdas/reversões)":{"es":"Deterioro de valor de inversiones amortizables (pérdidas/reversiones)"},
+"Inscrições de Atletas":{"es":"Inscripciones de jugadores"},
+"Multas e penalidades":{"es":"Multas y sanciones"},
+"Organização de Jogos":{"es":"Organización de partidos"},
+"Outros rendimentos suplementares":{"es":"Otros ingresos accesorios"},
+"Participação nas Competições - Taça da Liga":{"es":"Participación en competiciones - Copa de la Liga"},
+"Participação nas Competições - Taça de Portugal":{"es":"Participación en competiciones - Copa de Portugal"},
+"Participação nas competições - Taça da liga":{"es":"Participación en competiciones - Copa de la Liga"},
+"Participação nas competições - Taça de Portuga":{"es":"Participación en competiciones - Copa de Portugal"},
+"Receitas de Jogos - Bilhetes":{"es":"Ingresos por partidos - Entradas"},
+"Receitas de Jogos - Lugares Cativos":{"es":"Ingresos por partidos - Abonos"},
+"Receitas de jogos- Lugares cativos":{"es":"Ingresos por partidos - Abonos"},
+"Rendimentos suplementares":{"es":"Ingresos accesorios"},
+"UEFA - DISPENSAÇÃO JOGADORES":{"es":"UEFA - CESIÓN DE JUGADORES"}
+});

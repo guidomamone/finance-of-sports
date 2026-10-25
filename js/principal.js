@@ -31,10 +31,14 @@
     // números viejos después de un deploy que los corrigió.
     const base = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubs[clubId].country.toLowerCase() + '/' + clubId + '-data.js');
     const src = fosUrl(base) + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+    // Las glosas de las etiquetas del club (data/<país>/<clubId>-glosas.js, solo si el índice dice que existen): si no llegan, la pantalla muestra el original.
+    const glosas = (window.GLOSAS_CLUBES || {})[clubId]
+      ? new Promise(res => { const g = document.createElement('script'); g.src = src.replace('-data.js', '-glosas.js'); g.onload = g.onerror = () => res(); document.head.appendChild(g); })
+      : Promise.resolve();
     clubDataPending[clubId] = new Promise((resolve, reject) => {
       const script = document.createElement('script');
       script.src = src;
-      script.onload = () => { clubDataLoaded[clubId] = true; delete clubDataPending[clubId]; resolve(); };
+      script.onload = () => { glosas.then(() => { clubDataLoaded[clubId] = true; delete clubDataPending[clubId]; resolve(); }); };
       // Se borra también al fallar, para que un reintento (el visitante que elige otra vez el
       // mismo club después de un error de red) vuelva a intentarlo de verdad.
       script.onerror = () => { delete clubDataPending[clubId]; reject(new Error('No se pudo cargar ' + src)); };

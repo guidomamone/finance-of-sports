@@ -1,0 +1,21 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"EJL litsentsiga töötajate (v.a. mängijad) maksud":{"es":"Impuestos y cargas sociales de empleados con licencia EJL (excl. jugadores)"},
+"Eesti meistrivõistluste osavõtutasu":{"es":"Cuotas de inscripción en el campeonato de Estonia"},
+"Klubi sümboolikaga toodete müügitulu":{"es":"Ingresos por venta de productos con distintivos del club"},
+"Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud":{"es":"Gastos relacionados con instalaciones y edificios propios y arrendados"},
+"Kodumängu korralduskulud":{"es":"Gastos de organización de partidos en casa"},
+"Kulu ebatõenäoliselt laekuvatest nõuetest":{"es":"Pérdidas por créditos de dudoso cobro"},
+"Muu tulu ettevõtlusest":{"es":"Otros ingresos de explotación comercial"},
+"Muud kulud":{"es":"Otros gastos de explotación"},
+"Muud tulud":{"es":"Otros ingresos de explotación"},
+"Mängijate palgakulu":{"es":"Gastos salariales de jugadores"},
+"Mängijatele makstav sportlasetoetus":{"es":"Ayudas deportivas pagadas a los jugadores"},
+"Müüdud toodete ja muu varustuse maksumus":{"es":"Coste de ventas de mercancías y otro equipamiento"},
+"Põhivarade kulum ja väärtuse langus":{"es":"Amortización y deterioro del inmovilizado"},
+"Reklaam":{"es":"Publicidad"},
+"Riiklikud ja kohalikud maksud":{"es":"Impuestos estatales y locales"},
+"Sponsorlus- ja reklaamitulu":{"es":"Ingresos por patrocinio y publicidad"},
+"Turundus-, sponsorlus- ja reklaamikulud":{"es":"Gastos de marketing, patrocinio y publicidad"},
+"Võistkondade välissõitude- ja lähetuskulud":{"es":"Gastos de viajes y desplazamientos de los equipos"},
+"Võistluste ja treeningutega seotud kulud":{"es":"Gastos vinculados a competiciones y entrenamientos"}
+});
