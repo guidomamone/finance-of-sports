@@ -44,6 +44,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf"
+    },
+    {
+      "id": "colocolo-cl-estados-financieros-2013",
+      "club_id": "colocolo-cl",
+      "title": "Blanco y Negro S.A. — estados-financieros-2013 (ejercicio 2013)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.pdf"
     }
   ],
   "management": [
@@ -52,6 +60,91 @@
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2013,
+      "period_end": "2013-12-31",
+      "currency": "CLP",
+      "source_id": "colocolo-cl-estados-financieros-2013",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"CLP@2013-12-31"},
+      "revenue": [
+        {"label":"Ingresos por recaudaciones","category":"matchday","subcategory":"matchday_competition","amount":2104.281,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por venta de jugadores comprado a terceros(*)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1339.283,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por venta de jugadores formados por el Club(**)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 50.782,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":5639.076,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":165.492,"disclosure":"aggregated"},
+        {"label":"Otros ingresos, por función","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Costo de venta jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -41.66,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Remuneración plantel profesional y cuerpo técnico",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -2855.799,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Activos en concesión","category":"depreciation","subcategory":"depreciation","amount":-701.048,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases jugadores profesionales",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2715.242,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costos de concentración traslados y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2077.72,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros costos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-337.084,"disclosure":"aggregated"},
+        {"label":"Servicios básicos","category":"admin_general","subcategory":"admin_general_expense","amount":-155.467,"disclosure":"aggregated"},
+        {"label":"Asesorías","category":"admin_general","subcategory":"admin_general_expense","amount":-490.556,"disclosure":"aggregated"},
+        {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-345.964,"disclosure":"aggregated"},
+        {"label":"Gastos Legales","category":"admin_general","subcategory":"admin_general_expense","amount":-238.245,"disclosure":"aggregated"},
+        {"label":"Mantenciones","category":"admin_general","subcategory":"admin_general_expense","amount":-20.113,"disclosure":"aggregated"},
+        {"label":"Remuneración administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1208.535,"disclosure":"aggregated"},
+        {
+          "label": "Otros gastos de administración",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -671.222,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros gastos, por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-412.502,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-21.186,"tax":666.198,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":9298.914,"expenses":12271.157,"net_result":-2327.231},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":31.76},
+          {"label":"Diferencias de cambio","amount":-52.946},
+          {"label":"Gasto (Ingreso) por Impuesto a las Ganancias","amount":666.198}
+        ],
+        "revenue_basis": "full"
+      }
+    },
     {
       "fiscal_year": 2022,
       "period_end": "2022-12-31",

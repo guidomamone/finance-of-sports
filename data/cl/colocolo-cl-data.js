@@ -1,5 +1,13 @@
 // GENERADO desde data/cl/colocolo-cl.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const colocoloClRevenueLinesByYear = {
+  2013: [
+    {"rawLabel":"Ingresos por recaudaciones","normalizedCategory":"matchday_competition","amountNative":2104.281,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ingresos por venta de jugadores comprado a terceros(*)","normalizedCategory":"player_sales","amountNative":1339.283,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ingresos por venta de jugadores formados por el Club(**)","normalizedCategory":"player_sales","amountNative":50.782,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ingresos por publicidad","normalizedCategory":"sponsorship_commercial","amountNative":5639.076,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros","normalizedCategory":"other_income","amountNative":165.492,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos, por función","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
+  ],
   2022: [
     {"rawLabel":"Ingresos por recaudaciones","normalizedCategory":"matchday_competition","amountNative":5032.509,"disclosureLevel":"detailed"},
     {"rawLabel":"Ingresos por venta de jugadores comprado a terceros","normalizedCategory":"player_sales","amountNative":4830.583,"disclosureLevel":"detailed"},
@@ -41,6 +49,22 @@ const colocoloClRevenueLinesByYear = {
 };
 
 const colocoloClExpenseLinesByYear = {
+  2013: [
+    {"rawLabel":"Costo de venta jugadores","normalizedCategory":"player_amortisation","amountNative":-41.66,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Remuneración plantel profesional y cuerpo técnico","normalizedCategory":"wages_squad","amountNative":-2855.799,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Amortización Activos en concesión","normalizedCategory":"depreciation","amountNative":-701.048,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Amortización pases jugadores profesionales","normalizedCategory":"player_amortisation","amountNative":-2715.242,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Costos de concentración traslados y otros","normalizedCategory":"match_organisation_expense","amountNative":-2077.72,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros costos","normalizedCategory":"other_expenses","amountNative":-337.084,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Servicios básicos","normalizedCategory":"admin_general_expense","amountNative":-155.467,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Asesorías","normalizedCategory":"admin_general_expense","amountNative":-490.556,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Depreciaciones","normalizedCategory":"depreciation","amountNative":-345.964,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos Legales","normalizedCategory":"admin_general_expense","amountNative":-238.245,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Mantenciones","normalizedCategory":"admin_general_expense","amountNative":-20.113,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Remuneración administración","normalizedCategory":"admin_general_expense","amountNative":-1208.535,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-671.222,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos, por función","normalizedCategory":"other_expenses","amountNative":-412.502,"disclosureLevel":"aggregated"},
+  ],
   2022: [
     {"rawLabel":"Costo de ventas jugadores","normalizedCategory":"player_amortisation","amountNative":-2614.37,"disclosureLevel":"detailed"},
     {"rawLabel":"Remuneración plantel profesional y cuerpo técnico","normalizedCategory":"wages_squad","amountNative":-11057.918,"disclosureLevel":"detailed"},
@@ -91,6 +115,7 @@ const colocoloClExpenseLinesByYear = {
 };
 
 const colocoloClFiscalYearMeta = {
+  2013: {"currency":"CLP","sourceId":"colocolo-cl-estados-financieros-2013","reportType":"official_balance_sheet","gestionId":null,"fxRef":"CLP@2013-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-21.186,"tax":666.198,"grossDebt":null,"cash":null,"officialTotalRevenue":9298.914,"officialTotalExpenses":12271.157,"officialPAT":-2327.231,"extraRows":[{"label":"Ingresos financieros","value":31.76},{"label":"Diferencias de cambio","value":-52.946},{"label":"Gasto (Ingreso) por Impuesto a las Ganancias","value":666.198}],"baseIngreso":"full"},
   2022: {"currency":"CLP","sourceId":"colocolo-cl-estados-financieros-2022","reportType":"official_balance_sheet","gestionId":"stohwing","fx":859.51,"fxSource":"market_approx","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2539.4610000000002,"tax":1623.264,"grossDebt":410.88,"cash":1293.536,"officialTotalRevenue":28955.528,"officialTotalExpenses":27247.87,"officialPAT":791.461,"baseIngreso":"full"},
   2023: {"currency":"CLP","sourceId":"colocolo-cl-estados-financieros-2023","reportType":"official_balance_sheet","gestionId":"stohwing","fx":884.59,"fxSource":"market_approx","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1284.447,"tax":-34.283,"grossDebt":2804.415,"cash":43.523,"officialTotalRevenue":31920.289,"officialTotalExpenses":29783.789,"officialPAT":817.77,"baseIngreso":"full"},
   2024: {"currency":"CLP","sourceId":"colocolo-cl-estados-financieros-2024","reportType":"official_balance_sheet","gestionId":"mosa3","fx":992.12,"fxSource":"market_approx","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2494.529,"tax":370.515,"grossDebt":1872.558,"cash":3435.024,"officialTotalRevenue":47608.495,"officialTotalExpenses":44816.074,"officialPAT":668.407,"baseIngreso":"full"},
@@ -111,7 +136,7 @@ window.CLUB_GENERIC_DATA["colocolo-cl"] = {
   presupuestoOverlayByYear: colocoloClPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"colocolo-cl-estados-financieros-2024":{"id":"colocolo-cl-estados-financieros-2024","clubId":"colocolo-cl","title":"Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2024.pdf"},"colocolo-cl-estados-financieros-2023":{"id":"colocolo-cl-estados-financieros-2023","clubId":"colocolo-cl","title":"Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2023 y 2022","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2023.pdf"},"colocolo-cl-estados-financieros-2022":{"id":"colocolo-cl-estados-financieros-2022","clubId":"colocolo-cl","title":"Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2022 y 2021","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2022.pdf"},"colocolo-cl-estados-financieros-2025":{"id":"colocolo-cl-estados-financieros-2025","clubId":"colocolo-cl","title":"Blanco y Negro S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf"}});
+Object.assign(sources, {"colocolo-cl-estados-financieros-2024":{"id":"colocolo-cl-estados-financieros-2024","clubId":"colocolo-cl","title":"Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2024.pdf"},"colocolo-cl-estados-financieros-2023":{"id":"colocolo-cl-estados-financieros-2023","clubId":"colocolo-cl","title":"Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2023 y 2022","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2023.pdf"},"colocolo-cl-estados-financieros-2022":{"id":"colocolo-cl-estados-financieros-2022","clubId":"colocolo-cl","title":"Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2022 y 2021","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2022.pdf"},"colocolo-cl-estados-financieros-2025":{"id":"colocolo-cl-estados-financieros-2025","clubId":"colocolo-cl","title":"Blanco y Negro S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf"},"colocolo-cl-estados-financieros-2013":{"id":"colocolo-cl-estados-financieros-2013","clubId":"colocolo-cl","title":"Blanco y Negro S.A. — estados-financieros-2013 (ejercicio 2013)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.pdf"}});
 
 gestionesByClub["colocolo-cl"] = {"stohwing":{"nombre":"Stohwing (2022-2024)","firstYear":2022,"lastYear":2023},"mosa3":{"nombre":"Mosa (2024-actual, 3er período)","firstYear":2024,"lastYear":2024}};
 

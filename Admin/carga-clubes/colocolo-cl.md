@@ -214,6 +214,55 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Otros pasivos financieros corrientes" pág. 6 + "Otros pasivos financieros, no corrientes" pág. 6; cash escalón 1b (compuerta: documento siguiente): "Efectivo y Equivalentes al Efectivo" pág. 5
 ```
 
+## 2013
+
+### Ingresos
+
+```text
+2013: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos por recaudaciones | pág. 78, precedente |
+| 2 | Ingresos por venta de jugadores comprado a terceros(*) | pág. 78, precedente |
+| 3 | Ingresos por venta de jugadores formados por el Club(**) | pág. 78, precedente |
+| 4 | Ingresos por publicidad | pág. 78, precedente |
+| 5 | Otros | pág. 78, precedente |
+| 6 | Otros ingresos, por función | pág. 8, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de venta jugadores | pág. 79, precedente |
+| 2 | Remuneración plantel profesional y cuerpo técnico | pág. 79, precedente |
+| 3 | Amortización Activos en concesión | pág. 79, precedente |
+| 4 | Amortización pases jugadores profesionales | pág. 79, precedente |
+| 5 | Costos de concentración traslados y otros | pág. 79, precedente |
+| 6 | Otros costos | pág. 79, precedente |
+| 7 | Servicios básicos | pág. 79, Jev 0.99 |
+| 8 | Asesorías | pág. 79, Jev 0.99 |
+| 9 | Depreciaciones | pág. 79, precedente |
+| 10 | Gastos Legales | pág. 79, Jev 0.99 |
+| 11 | Mantenciones | pág. 79, Jev 0.99 |
+| 12 | Remuneración administración | pág. 79, Jev 1 |
+| 13 | Otros gastos de administración | pág. 79, Jev 0.98 |
+| 14 | Otros gastos, por función | pág. 8, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): cl-primera, verificado contra roster cacheado de "2013–14 Campeonato Nacional Primera División" (tools/club-league-reference/cl.json), coincidencia exacta "Colo-Colo".
+```
+
 ## Fuentes
 
 ### colocolo-cl-estados-financieros-2024
@@ -246,6 +295,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### colocolo-cl-estados-financieros-2013
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

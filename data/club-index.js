@@ -83,7 +83,7 @@ window.CLUB_INDEX = {
   "chievoverona-it": {"n":"Chievo Verona","c":"IT","q":"full","y":3,"last":2016,"yrs":[[2016,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"]]},
   "clubamerica-mx": {"n":"Club América","c":"MX","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "clubbrugge-be": {"n":"Club Brugge","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "colocolo-cl": {"n":"Colo-Colo","c":"CL","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
+  "colocolo-cl": {"n":"Colo-Colo","c":"CL","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2013,"official_balance_sheet"]]},
   "como-it": {"n":"Como","c":"IT","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "corinthians-br": {"n":"Corinthians","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "coritiba-br": {"n":"Coritiba","c":"BR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
