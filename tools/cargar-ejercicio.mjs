@@ -4,6 +4,7 @@
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { resolve, basename, dirname } from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { cambioDeFormato, anioAnterior, textoSugerido } from './cambio-formato.js';
 import { tipoSinDesglose, tipoConocido, aprender } from './tipo-sin-desglose.js';
 import { leerEstadoNBB } from './nbb.mjs';
@@ -12,6 +13,7 @@ import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-
 import { respuestaPorDetalle, ajusteDe, bolsonDeDeporte, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, FINANCIERO_RE, HOY, norm, r6 } from './cargar.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
+const UMBRAL_JEV_TIPO = 0.8; // confianza mínima de Jev (la menor de 3 respuestas que coinciden) para clasificar solo el rótulo de una línea única: medido con rótulos de los tres tipos, los claros dan 0,85 o más y los ambiguos 0,4 a 0,79 (van a la cola)
 const TOL = 0.01; // la de audit.js checkTieOuts(): |calculado - oficial| >= 0,01 es P0 `no-cierra`
 const ANTES_IMPUESTOS_RE = /(before tax|before taxation|vor steuern|antes de(l)? impuesto|antes do imposto|antes dos impostos|antes de impuestos|for skat|foer skat|fore skatt|voor belasting|ante imposte|avant impot|до налогообложения|prije oporezivanja|pred zdanenim|vergi oncesi)/;
 const PERDIDA_RE = /(loss|verlust|fehlbetrag|perdida|prejuizo|deficit|underskud|tap\b|verlies|perdita|gubitak|ztrata|убыток|збиток|zarar)/;
@@ -206,13 +208,16 @@ export function faseEjercicio(ctx) {
   // QUÉ SON LOS INGRESOS DEL AÑO (`baseIngreso`: completo, ventas totales o margen bruto) y, si el documento no los imprime y se reconstruyeron con margen + compras y
   // servicios, `derivacionIngreso` (tools/ingreso-derivado.js, la misma regla que `fos ingreso-base`). Un año de margen bruto sin reconstrucción posible avisa: el ingreso
   // real no se conoce y Ligas lo trata como hueco (punto 455).
-  // UNA LÍNEA ÚNICA DE INGRESOS CUYO RÓTULO NADIE RECONOCE (ni lo aprendido ni las palabras de tipo-sin-desglose.js): va a la cola («¿margen bruto, ventas totales u otra?»); la respuesta se
-  // aprende (Admin/registros/tipos-sin-desglose.jsonl) y no se vuelve a preguntar. Mientras no se contesta queda `other` y la carga sigue.
+  // UNA LÍNEA ÚNICA DE INGRESOS CUYO RÓTULO NADIE RECONOCE (ni lo aprendido ni las palabras de tipo-sin-desglose.js): primero contesta Jev (tools/jev-tipo-linea.mjs) y, con poca confianza, va a la cola
+  // («¿margen bruto, ventas totales u otra?»); la respuesta se aprende (Admin/registros/tipos-sin-desglose.jsonl) y no se vuelve a preguntar. Mientras no se contesta queda `other` y la carga sigue.
   for (const s of sinDesglose) {
     if (!/^(revenue|ingreso)$/.test(s.lado) || tipoConocido(s.renglon, 'revenue')) continue;
     const det = `${clubId}|${s.renglon}`; const r = respuestaPorDetalle('cargar', 'tipo-linea', det)?.resp;
     const valor = r?.decision === 'corregir' ? r.valor : r?.decision === 'aceptar' ? 'other' : null;
-    if (['gross_margin', 'net_sales', 'other'].includes(valor)) { s.tipo = valor; aprender(s.renglon, 'revenue', valor, `cola (${clubId} ${year})`); }
+    if (['gross_margin', 'net_sales', 'other'].includes(valor)) { s.tipo = valor; aprender(s.renglon, 'revenue', valor, `cola (${clubId} ${year})`); continue; }
+    // JEV CONTESTA PRIMERO (centavos de API, aprobado por Guido): con confianza suficiente el tipo se aprende y no se pregunta; con menos, o sin clave o sin red, va a la cola como antes.
+    let jev = null; try { jev = JSON.parse(execFileSync('node', [resolve(ROOT, 'tools', 'jev-tipo-linea.mjs'), '--rotulo', s.renglon, '--club', clubId, '--importe', String(s.importe)], { encoding: 'utf8', timeout: 45000 })); } catch { /* sin Jev: la cola */ }
+    if (jev && ['gross_margin', 'net_sales', 'other'].includes(jev.tipo) && jev.confianza >= UMBRAL_JEV_TIPO) { s.tipo = jev.tipo; aprender(s.renglon, 'revenue', jev.tipo, `Jev ${jev.confianza} (${clubId} ${year})`); P.avisos.push(`ingresos: el rótulo «${s.renglon}» no lo reconocía ninguna regla; Jev lo clasificó como ${jev.tipo} (confianza ${jev.confianza}) y queda aprendido`); }
     else {
       agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'tipo-linea', detalle: det, que: `El documento trae los ingresos de ${year} en una sola línea, «${s.renglon}» (${s.importe} millones de la moneda del documento), y ninguna regla reconoce ese rótulo. ¿Es el margen bruto (ya neto de costos, no un ingreso), las ventas totales o otra cosa? Mirá el estado de resultados en el .md (${e.md}). Responder: node tools/cola.mjs --responder <id> corregir --valor gross_margin | net_sales | other (aceptar = other).`, propuesta: 'other' });
       P.avisos.push(`ingresos: el rótulo «${s.renglon}» no se reconoce; pregunta en la cola (tipo-linea, no frena): queda como other hasta que se conteste`);

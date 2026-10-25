@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1102 — cargar-ejercicio.mjs, jev-tipo-linea.mjs: Jev contesta primero el rótulo desconocido de una línea única de ingresos [455 · cargar-ejercicio.mjs, jev-tipo-linea.mjs]
+- Un rótulo de línea única que ninguna regla ni respuesta anterior reconoce se le pregunta a Jev (3 respuestas solo con el rótulo; centavos de API, aprobado por Guido). Si las 3 coinciden con confianza de 0,8 o más, el tipo (margen bruto, ventas u otra) se aprende en `tipos-sin-desglose.jsonl` y no se vuelve a preguntar; si no, va a la cola como antes. Gasto en `Admin/registros/api/jev.jsonl`.
+- Calibrado con rótulos de los tres tipos: los claros dan 0,85 o más; los ambiguos («Fútbol profesional», «Annen driftsinntekt») y uno inventado, 0,4 a 0,79, y van a la cola. Probado de punta a punta cambiando un rótulo de un documento y revirtiendo.
+- Medición: idéntico (lote completo).
+
 ## Versión 1101 — cargar-escribir.mjs, cargar-ejercicio.mjs: la ancla del ingreso del año anterior de margen bruto se anota al escribir [455 · cargar-escribir.mjs, cargar-ejercicio.mjs]
 - La ancla (`Admin/registros/ingresos-ancla.jsonl`) se proponía pero nunca se anotaba: `cargar.mjs` le pasa un argv limpio a las fases y la condición `--escribir` de `cargar-ejercicio.mjs` no se cumplía. Ahora la anota `escribir()` (una línea por club-año, sin repetir, y la revierte un P0/P1 de la auditoría).
 - Probado con Lommel 2024: la línea se anota una sola vez y una segunda carga no la duplica. Recarga de Dender 2024 (margen bruto, sin ancla posible), RWDM 2023 (idéntico) y Lommel 2022 (mismos totales; la amortización queda entera porque la regla del 630 por la nota no parte un año ya publicado).
