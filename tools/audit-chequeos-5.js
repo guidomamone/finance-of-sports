@@ -353,6 +353,37 @@ function checkCalibracionCola() {
   if (falta.length) add('P3', 'calibracion-cola-pendiente', `${falta.length} celda(s) de la cola con ${MIN_RESP}+ respuestas y menos de ${MIN_MEDIDAS} con segunda revisión: ${falta.map(([k, c]) => `${k} (${c.m} de ${c.n})`).join('; ')}. Sacá una muestra con node tools/calibrar-cola.mjs --muestra 10 --motivo <m> --seguridad <s>, que la lea un revisor que no ve la decisión original, y anotala con --registrar`);
 }
 
+// texto-sin-traducir: un texto de la pantalla escrito en castellano que NO pasa por t() ni por data/site-labels.js, así que el visitante en inglés lo ve en castellano
+// (i18n-incompleto solo mira las claves que ya existen). Dos fuentes: (1) rótulos en js/ (`label:'…'`, `tLabel('…')`) que no están en SITE_LABEL_KEYS y (2) elementos de index.html con texto en
+// castellano y sin data-i18n. Lo que no es de la pantalla de todos (el bloque de torneos de un club, notas de datos) se silencia por su texto en tools/audit-ignore.json.
+const ES_TEXTO = /[áéíóúñ¿¡]|\b(Resultado|Intereses|Impuestos?|Deuda|Caja|Ingresos|Gastos|Salarios|neto|neta|bruta|ejercicio|para|sin|con|una|más|según|solo|año|tabla)\b/;
+function checkTextoSinTraducir() {
+  const w = { window: {} }; try { vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'data/site-labels.js'), 'utf8'), w); } catch { return; }
+  const K = w.window.SITE_LABEL_KEYS || {}; const hallados = [];
+  for (const f of fs.readdirSync(path.join(ROOT, 'js')).filter((x) => x.endsWith('.js') && x !== 'i18n.js').sort()) {
+    fs.readFileSync(path.join(ROOT, 'js', f), 'utf8').split('\n').forEach((l, i) => {
+      if (/^\s*\/\//.test(l) || /checks\.push/.test(l)) return;
+      for (const m of l.matchAll(/(?:\b[a-zA-Z]*[lL]abel)\s*:\s*'([^']{3,80})'|tLabel\('([^']+)'\)/g)) {
+        const s = m[1] || m[2];
+        if (s && !K[s] && ES_TEXTO.test(s) && !/^[a-z_.0-9-]+$/.test(s)) hallados.push(`js/${f}:${i + 1} «${s}»`);
+      }
+    });
+  }
+  const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+  const limpio = html.replace(/<script[\s\S]*?<\/script>/g, (m) => m.replace(/[^\n]/g, ' ')).replace(/<style[\s\S]*?<\/style>/g, (m) => m.replace(/[^\n]/g, ' ')).replace(/<!--[\s\S]*?-->/g, (m) => m.replace(/[^\n]/g, ' '));
+  // los cards de torneos de un club (presupuesto con los rótulos textuales del documento) van sin traducir a propósito: rótulos de fuente
+  const lineas = limpio.split('\n'); const t0 = lineas.findIndex((l) => /id="torneoLibertadoresCard"/.test(l));
+  const t1 = t0 < 0 ? -1 : lineas.findIndex((l, i) => i > t0 && /<\/section>/.test(l));
+  const re = /<([a-z0-9]+)([^>]*)>([^<]{3,})/gi; let m;
+  while ((m = re.exec(limpio))) {
+    const lin = limpio.slice(0, m.index).split('\n').length - 1; if (t0 >= 0 && lin >= t0 && lin <= t1) continue;
+    const t = m[3].replace(/\s+/g, ' ').trim();
+    // un elemento con `id` lo llena js/ (que ya pasa por t()) y las marcas en línea (<strong>…) viven dentro de un padre con data-i18n-html
+    if (t && ES_TEXTO.test(t) && !/data-i18n/.test(m[2]) && !/\bid=/.test(m[2]) && !/^(strong|b|em|i|small|code|option)$/i.test(m[1])) hallados.push(`index.html:${limpio.slice(0, m.index).split('\n').length} «${t.slice(0, 70)}»`);
+  }
+  if (hallados.length) add('P3', 'texto-sin-traducir', `${hallados.length} texto(s) de la pantalla en castellano sin traducción (el visitante en inglés los ve en castellano): ${hallados.slice(0, 8).join(' · ')}${hallados.length > 8 ? ' · …' : ''}. Pasalos por t()/data-i18n con su clave en data/lang/en.js, o por data/site-labels.js si es un rótulo de fila`);
+}
+
 // etiqueta-sin-glosa (punto 451): una etiqueta de fila de un club que el visitante vería en un idioma que no es el suyo sin su glosa (es para los clubes que no son de habla hispana, en para los que no son de habla inglesa).
 // La tabla vive en data/<país>/<club>-glosas.js (tools/glosas-etiquetas.mjs); el original queda en el JSON y en el title de la celda.
 function checkEtiquetaSinGlosa() {
@@ -381,4 +412,4 @@ function checkRevisionPropiaPendiente() {
   if (pendientes.length) add('P3', 'revision-propia-pendiente', `${pendientes.length} cambio(s) revisados solo por la sesión que los hizo, sin la revisión de la Auditora:${pendientes.slice(-3).map(l => `${l.fecha} ${String(l.cambio).slice(0, 50)}`).join(' · ')}. La Auditora los revisa y anota patron --revision auditora`);
 }
 
-module.exports = { checkMetodologiaAlDia, metodologiaAtrasada, checkRegistroFuera, checkCalibracionCola, checkEtiquetaSinGlosa, checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };
+module.exports = { checkMetodologiaAlDia, metodologiaAtrasada, checkRegistroFuera, checkCalibracionCola, checkEtiquetaSinGlosa, checkTextoSinTraducir, checkCierreSinFecha, revisionesPendientes, checkRevisionPropiaPendiente, checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino, checkNombresSinDefinir };

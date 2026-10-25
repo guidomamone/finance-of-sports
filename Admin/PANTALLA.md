@@ -485,6 +485,10 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   `tLabel` (texto plano: gráficos, citas) y `tLabelH` (celdas de tabla, con el original) las usan;
   sin glosa se muestra el original, y `audit.js` da `etiqueta-sin-glosa` (P3) con lo que falta.
   Es una tabla aparte del JSON del club: agregar glosas no cambia el contrato de datos.
+  Un rótulo de fila NUESTRO que se escribe en castellano en `js/` (Resultado neto, Intereses netos,
+  Impuestos, Deuda bruta, Caja…) va por `data/site-labels.js` con su clave en `data/lang/en.js`, y
+  un texto fijo de `index.html` lleva `data-i18n`. `audit.js` da `texto-sin-traducir` (P3) si queda
+  alguno (los cards de torneos de un club, que llevan los rótulos textuales del presupuesto, no cuentan).
   Vale igual para `fuentes.html`, que
   desde esta versión se traduce sola con el mismo motor y el mismo diccionario que el sitio, en vez
   de generarse un archivo por idioma.

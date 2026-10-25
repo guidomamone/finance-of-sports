@@ -220,6 +220,11 @@
   "quien": "sesion",
   "donde": "Admin/HALLAZGOS-pipeline.md, segunda fuente de una liga en grupos"
  },
+ "texto-sin-traducir": {
+  "hacer": "Pasar el texto por t()/data-i18n con su clave en data/lang/en.js, o por data/site-labels.js si es un rótulo de fila; si no es de la pantalla de todos, silenciarlo con motivo.",
+  "quien": "sesion",
+  "donde": "Admin/PANTALLA.md, «Qué se traduce y qué no»"
+ },
  "etiqueta-sin-glosa": {
   "hacer": "node tools/fos.mjs glosas-etiquetas --completar [--pais <iso2>] (Claude, ~US$ 0,04 cada 100 etiquetas), después node tools/publicar.mjs. Al escribir un año lo hace solo tools/generate-glosas.mjs.",
   "quien": "script",

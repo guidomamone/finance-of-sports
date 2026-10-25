@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1084 — i18n: textos de la pantalla que se veían en castellano en inglés; audit.js texto-sin-traducir [audit-chequeos-5.js, audit.js]
+
+- Se traducen: Resultado neto, Intereses netos, Impuestos, Ganancia por venta de jugadores, Venta de activos, Deuda bruta, Caja, Deuda neta, Salarios / Ingresos (`data/site-labels.js`), los títulos de los gráficos, «% del total», los rótulos de Comparar, el texto de Resultados, el selector de tipo del formulario y las salvedades de las fuentes. Quedan en castellano a propósito los rótulos textuales del presupuesto de un club (cards de torneos) y los nombres de gestión que vienen de los datos.
+- `audit.js` da `texto-sin-traducir` (P3) con los rótulos de `js/` fuera de `site-labels.js` y los textos de `index.html` sin `data-i18n`.
+- Medición: `audit` idéntico (hoy no dispara).
+
 ## Versión 1083 — 451 cerrado: glosas de todas las etiquetas, traducidas con Claude y automáticas al escribir un año [451 · audit-chequeos-5.js, generate-glosas.mjs, glosas-etiquetas.mjs]
 
 - `glosas-etiquetas.mjs --completar` traduce con Claude Sonnet 5.5 (no Gemini) en lotes de 100: 11.160 etiquetas distintas, US$ 4,79, 0 sin glosa (portugués, italiano, neerlandés, griego, croata, ruso, turco, alemán, japonés y estonio revisados por muestra). `generate-glosas.mjs`, en la lista de generadores, traduce solo lo nuevo al escribir un año (tope de 400 etiquetas por corrida; sin clave o sin red deja lo escrito y no frena la carga; `FOS_SIN_API=1` la apaga). Probado: una etiqueta nueva en un club se tradujo en una corrida por US$ 0,0014.
