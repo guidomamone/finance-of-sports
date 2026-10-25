@@ -1,6 +1,7 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Amortizacija dugotrajne nematerijalne imovine (registracije igrača)":{"es":"Amortización de activos intangibles a largo plazo (registros de jugadores)","en":"Amortization of long-term intangible assets (player registrations)"},
 "Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine":{"es":"Amortización y deterioro de activos materiales a largo plazo","en":"Depreciation and impairment of long-term tangible assets"},
+"Besplatne ulaznice":{"es":"Entradas gratuitas","en":"Free tickets"},
 "Dnevnice i putni troškovi":{"es":"Dietas y gastos de viaje","en":"Per diems and travel expenses"},
 "Dobit od prodaje igrača":{"es":"Beneficio por venta de jugadores","en":"Profit on sale of players"},
 "Donacije nepovezanih strana":{"es":"Donaciones de partes no vinculadas","en":"Donations from unrelated parties"},

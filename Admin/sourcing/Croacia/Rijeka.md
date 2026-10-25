@@ -28,3 +28,5 @@
   real del club (las entradas se facturan a través de la subsidiaria). Tie-out exacto.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf` (sourceId `rijeka-hr-financijsko-izvjesce-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2022 desde `Clubes/Croacia/Rijeka/financijsko-izvjesce-2022.pdf` (sourceId `rijeka-hr-financijsko-izvjesce-2022`).

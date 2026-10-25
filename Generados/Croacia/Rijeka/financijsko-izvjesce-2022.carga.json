@@ -1,20 +1,7 @@
 {
  "pdf": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2022.pdf",
- "generado": "2026-10-25T16:59:53.519Z",
- "frena": [
-  {
-   "etapa": "alta:currency",
-   "motivo": "El ejercicio 2022 es anterior a 2023: el documento puede estar en HRK (102 menciones de la moneda vieja, 2 de EUR). El sitio no tiene ninguna moneda \"legado\" cargada: ¿se carga en HRK (con su fx a USD de ese cierre) o se convierte a EUR a la paridad fija?"
-  },
-  {
-   "etapa": "moneda",
-   "motivo": "el ejercicio saldría en HRK y el club reporta en EUR"
-  },
-  {
-   "etapa": "fx",
-   "motivo": "sin tipo de cambio: depende de la moneda del ejercicio, que es una pregunta abierta"
-  }
- ],
+ "generado": "2026-10-25T17:15:56.521Z",
+ "frena": [],
  "avisos": [
   "los años cargados del club están en EUR y este en HRK",
   "materialidad: \"Besplatne ulaznice\" va como other_expenses con 0.55 (0.59% de gastos; acumulado sin preguntar 0.59%)"
@@ -410,6 +397,7 @@
   ],
   "fiscalYearMeta": {
    "currency": "HRK",
+   "fxRef": "HRK@2022-12-31",
    "sourceId": "rijeka-hr-financijsko-izvjesce-2022",
    "reportType": "official_balance_sheet",
    "gestionId": null,
@@ -1129,6 +1117,12 @@
    "M": 107.642
   }
  },
+ "fxCloseNuevo": {
+  "key": "HRK@2022-12-31",
+  "fx": 7.064035,
+  "source": "market_close",
+  "label": "Tipo medio de la Hrvatska narodna banka al 2022-12-31"
+ },
  "liga": {
   "valor": "hr-hnl",
   "fuente": "roster cacheado de \"2022–23 Croatian Football League\" (tools/club-league-reference/hr.json), coincidencia exacta \"Rijeka\"",
@@ -1157,13 +1151,13 @@
   },
   "currency": {
    "valor": "HRK",
-   "fuente": "moneda de curso legal de Croacia (tabla PAISES de alta-club.mjs)",
-   "estado": "pregunta"
+   "fuente": "moneda legado de Croacia: ejercicio 2022 anterior a 2023 y el documento habla en HRK (102 menciones contra 2 de EUR); se carga en HRK con su tipo de cambio a USD del cierre (decisión de Guido)",
+   "estado": "ok"
   },
-  "fx": {
-   "valor": null,
-   "fuente": "depende de la moneda del ejercicio, que es una pregunta abierta",
-   "estado": "pendiente"
+  "fxRef": {
+   "valor": "HRK@2022-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 7.064035. --escribir agrega 'HRK@2022-12-31' a FX_CLOSE",
+   "estado": "ok"
   },
   "sourceId": {
    "valor": "rijeka-hr-financijsko-izvjesce-2022",
@@ -1178,8 +1172,8 @@
  },
  "ancla": null,
  "resumen": {
-  "carga": false,
-  "motivos": 3,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 10,
   "lineasGasto": 28,
   "metaFilas": 3,

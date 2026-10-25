@@ -45,4 +45,12 @@ window.RANKINGS["hr-hnl"] = {
         mix:[["Cuotas Sociales",0.422],["Comercial / Sponsors",2.102],["Estadio",1.938],["Televisión",1.261],["Premios por competencias",2.105],["Otros ingresos",0.866]] },
     ],
   },
+  2022: {
+    leagueSize: null,
+    clubs: [
+      { id:"rijeka-hr", revenue:9.79, reportType:"official_balance_sheet",
+        sourceId:"rijeka-hr-financijsko-izvjesce-2022",
+        mix:[["Cuotas Sociales",0.084],["Comercial / Sponsors",2.851],["Estadio",0.623],["Televisión",0.708],["Premios por competencias",0.611],["Venta de Jugadores",4.498],["Subsidios y donaciones",0.175],["Otros ingresos",0.24]] },
+    ],
+  },
 };
