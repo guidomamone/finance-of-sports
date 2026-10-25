@@ -14,6 +14,20 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2024.md",
     "linea": 165
    }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Forvis Mazars",
+    "tipo": "firma",
+    "legal": "Forvis Mazars d.o.o."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "proposito_especial",
+   "fuente": {
+    "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.md",
+    "linea": 205
+   }
   }
  },
  "gorica-hr": {
@@ -41,6 +55,19 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2024.md",
     "linea": 158
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Kalibović i partneri d.o.o.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "proposito_especial",
+   "fuente": {
+    "md": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.md",
+    "linea": 153
    }
   }
  },
@@ -74,6 +101,32 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "rijeka-hr": {
+  "2022": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG Croatia d.o.o. za reviziju"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2022.md",
+    "linea": 136
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG Croatia d.o.o. za reviziju"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2023.md",
+    "linea": 141
+   }
+  },
   "2024": {
    "auditor": {
     "nombre": "KPMG",
@@ -85,6 +138,19 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2024.md",
     "linea": 213
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG Croatia d.o.o. za reviziju"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.md",
+    "linea": 154
    }
   }
  },

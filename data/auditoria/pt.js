@@ -260,6 +260,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 6847
    }
   },
+  "2015": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers & Associados - Sociedade de Revisores Oficiais de Contas, Lda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.md",
+    "linea": 6618
+   }
+  },
   "2016": {
    "auditor": {
     "nombre": "PwC",
@@ -1291,6 +1304,32 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.md",
     "linea": 2733
+   }
+  },
+  "2009": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO bdc & Associados - SROC"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.md",
+    "linea": 4100
+   }
+  },
+  "2010": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO & Associados - SROC"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.md",
+    "linea": 3918
    }
   },
   "2011": {

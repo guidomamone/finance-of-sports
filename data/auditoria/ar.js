@@ -227,6 +227,18 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-119-2022-23.md",
     "linea": 1358
    }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Dr. Christian Alejandro Warley",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md",
+    "linea": 1122
+   }
   }
  },
  "gimnasiaesgrima-ar": {
@@ -313,6 +325,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_informe",
    "continuidad": false,
    "fuente": null
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Jorge Pereyra Córdoba Campos",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Argentina/Instituto/balance-general-2024-2025.md",
+    "linea": 819
+   }
   }
  },
  "losandes-ar": {

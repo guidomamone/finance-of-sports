@@ -187,6 +187,32 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "monchengladbach-de": {
+  "2021": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG AG Wirtschaftsprüfungsgesellschaft"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md",
+    "linea": 615
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG AG Wirtschaftsprüfungsgesellschaft"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md",
+    "linea": 652
+   }
+  },
   "2023": {
    "auditor": {
     "nombre": "KPMG",

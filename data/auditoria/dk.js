@@ -73,6 +73,32 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "fredericia-dk": {
+  "2017": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers Statsautoriseret Revisionspartnerselskab"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.md",
+    "linea": 90
+   }
+  },
+  "2018": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers Statsautoriseret Revisionspartnerselskab"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2018-12-31.md",
+    "linea": 90
+   }
+  },
   "2019": {
    "auditor": {
     "nombre": "PwC",
@@ -84,6 +110,19 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2019-12-31.md",
     "linea": 86
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers Statsautoriseret Revisionspartnerselskab"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.md",
+    "linea": 91
    }
   },
   "2021": {
@@ -165,6 +204,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.md",
     "linea": 154
    }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.md",
+    "linea": 119
+   }
   }
  },
  "nordsjaelland-dk": {
@@ -196,6 +248,30 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "randers-dk": {
+  "2017": {
+   "auditor": {
+    "nombre": "Dansk Revision Randers Godkendt Revisionspartnerselskab",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md",
+    "linea": 183
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Dansk Revision Randers Godkendt Revisionspartnerselskab",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md",
+    "linea": 160
+   }
+  },
   "2023": {
    "auditor": {
     "nombre": "Redmark Godkendt Revisionspartnerselskab",
@@ -222,6 +298,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Dinamarca/Silkeborg IF/aarsrapport-2024-12-31.md",
     "linea": 136
    }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte Statsautoriseret Revisionspartnerselskab"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md",
+    "linea": 131
+   }
   }
  },
  "sonderjyske-dk": {
@@ -237,9 +326,58 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-06-30.md",
     "linea": 88
    }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Beierholm, Statsautoriseret Revisionspartnerselskab",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2022-2023-09-30-transicion.md",
+    "linea": 75
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Martinsen Statsautoriseret Revisionspartnerselskab",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.md",
+    "linea": 75
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Martinsen Statsautoriseret Revisionspartnerselskab",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2025-09-30.md",
+    "linea": 63
+   }
   }
  },
  "vejle-dk": {
+  "2022": {
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "EY Godkendt Revisionspartnerselskab"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md",
+    "linea": 81
+   }
+  },
   "2024": {
    "auditor": {
     "nombre": "EY",
@@ -268,6 +406,42 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "viborg-dk": {
+  "2019": {
+   "auditor": {
+    "nombre": "Beierholm",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.md",
+    "linea": 157
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "Beierholm Statsautoriseret Revisionspartnerselskab",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2020-06-30.md",
+    "linea": 156
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Beierholm Statsautoriseret Revisionspartnerselskab",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.md",
+    "linea": 180
+   }
+  },
   "2024": {
    "auditor": {
     "nombre": "Beierholm Godkendt Revisionspartnerselskab",
@@ -278,6 +452,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2024-06-30.md",
     "linea": 251
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Beierholm Godkendt Revisionspartnerselskab",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md",
+    "linea": 208
    }
   }
  }

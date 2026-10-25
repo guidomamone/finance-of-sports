@@ -143,6 +143,18 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "colocolo-cl": {
+  "2013": {
+   "auditor": {
+    "nombre": "AUDITORES HUMPHREYS LTDA.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.md",
+    "linea": 54
+   }
+  },
   "2022": {
    "auditor": {
     "nombre": "Auditores Humphreys Ltda.",
@@ -179,9 +191,34 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2024.md",
     "linea": 34
    }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Auditores & Consultores Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md",
+    "linea": 35
+   }
   }
  },
  "udechile-cl": {
+  "2013": {
+   "auditor": {
+    "nombre": "Moore Stephens Auditores Consultores Ltda.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.md",
+    "linea": 81
+   }
+  },
   "2022": {
    "auditor": {
     "nombre": "Auditores Humphreys Ltda.",
@@ -216,6 +253,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2024.md",
     "linea": 57
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "KAM Auditores Consultores Ltda.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md",
+    "linea": 56
    }
   }
  }

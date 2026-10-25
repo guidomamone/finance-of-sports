@@ -318,6 +318,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_informe",
    "continuidad": false,
    "fuente": null
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "SAPPIA AUDITORES E CONSULTORES",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.md",
+    "linea": 38
+   }
   }
  },
  "corinthians-br": {
@@ -371,6 +383,19 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Brasil/Coritiba/demonstracoes-financeiras-2024.md",
     "linea": 92
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO RCS Auditores Independentes SS Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md",
+    "linea": 67
    }
   }
  },
@@ -1129,6 +1154,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Brasil/Gremio/demonstracoes-contabeis-2023-2024.md",
     "linea": 106
    }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Baker Tilly",
+    "tipo": "firma",
+    "legal": "Baker Tilly Brasil RS Auditores Independentes S/S"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Brasil/Gremio/wf-2024-2025-1774995c.md",
+    "linea": 79
+   }
   }
  },
  "guarani-br": {
@@ -1210,6 +1248,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2020.md",
     "linea": 29
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Rosito & Filomena Auditores Independentes",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
+    "linea": 36
    }
   }
  },
@@ -1495,6 +1545,18 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Brasil/Ponte Preta/balanco-2023-2024.md",
     "linea": 413
    }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Audcorp Auditoria e Assessoria S/S",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.md",
+    "linea": 507
+   }
   }
  },
  "rbbragantino-br": {
@@ -1509,6 +1571,19 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_informe",
    "continuidad": false,
    "fuente": null
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO RCS Auditores Associados Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md",
+    "linea": 62
+   }
   }
  },
  "remo-br": {
@@ -1630,6 +1705,19 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Brasil/São Paulo/demonstracoes-financeiras-2023-2024.md",
     "linea": 53
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Brasil Auditores Independentes Ltda."
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.md",
+    "linea": 45
    }
   }
  },

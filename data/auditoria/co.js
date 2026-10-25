@@ -1,6 +1,20 @@
 // Generado por tools/auditoria.mjs desde Admin/registros/auditoria.jsonl. No editar a mano.
 window.CLUB_AUDITORIA = window.CLUB_AUDITORIA || {};
 Object.assign(window.CLUB_AUDITORIA, {
+ "alianzafc-co": {
+  "2023": {
+   "auditor": {
+    "nombre": "ALONSO RUEDA GUALDRON",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2023.md",
+    "linea": 15
+   }
+  }
+ },
  "americadecali-co": {
   "2025": {
    "auditor": {
@@ -12,6 +26,26 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Colombia/America de Cali/dictamen-revisor-fiscal-2025.md",
     "linea": 25
+   }
+  }
+ },
+ "atleticobucaramanga-co": {
+  "2019": {
+   "auditor": null,
+   "dictamen": "sin_informe",
+   "continuidad": false,
+   "fuente": null
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "Orlando Bravo Afanador",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Bucaramanga/dictamen-revisor-fiscal-2020.md",
+    "linea": 16
    }
   }
  },
@@ -41,6 +75,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2024.md",
     "linea": 15
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "NANCY PEREZ MOSCOSO",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2025.md",
+    "linea": 22
    }
   }
  },
@@ -193,6 +239,20 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "llaneros-co": {
+  "2025": {
+   "auditor": {
+    "nombre": "LUIS FELIPE GOMEZ MOSQUERA",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Llaneros/dictamen-revisor-fiscal-2025.md",
+    "linea": 18
+   }
+  }
+ },
  "millonarios-co": {
   "2025": {
    "auditor": {
@@ -209,6 +269,18 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "oncecaldas-co": {
+  "2018": {
+   "auditor": {
+    "nombre": "Asesorías y Soluciones Contables S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2018.md",
+    "linea": 36
+   }
+  },
   "2022": {
    "auditor": {
     "nombre": "Asesorías y Soluciones Contables S.A.S.",
@@ -275,6 +347,12 @@ Object.assign(window.CLUB_AUDITORIA, {
  },
  "unionmagdalena-co": {
   "2018": {
+   "auditor": null,
+   "dictamen": "sin_informe",
+   "continuidad": false,
+   "fuente": null
+  },
+  "2025": {
    "auditor": null,
    "dictamen": "sin_informe",
    "continuidad": false,
