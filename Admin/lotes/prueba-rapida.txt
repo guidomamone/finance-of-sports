@@ -111,6 +111,7 @@ Clubes/Portugal/Benfica/relatorio-contas-2025-26.pdf
 Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf
 Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf
 # clase: cola:cargar|tipo-linea|corregir
+Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf
 Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf
 # clase: cola:verificar|duda-de-localizar|corregir
 Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf
@@ -161,8 +162,7 @@ Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.pdf
 # clase: freno:298 z2
 Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.pdf
 Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf
-# clase: freno:alta:fx / fx: documento declara varios tipos de cambio a USD (saldos por moneda en las notas)
-Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf
-Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2008.pdf
+# clase: freno:compensación intragrupo (Entschädigung von/an Event AG) no se elimina en 2018-19 ni 2019-20 aunque el perímetro es consolidado (298 ai solo la saca si el importe repite año y año anterior)
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf
 # === AUTOMÁTICO: ranura de la semana 2026-S43 (la familia Portugal · pdf; rota cada semana; no se edita) ===
 Clubes/Portugal/Benfica/relatorio-contas-2011-12.pdf
