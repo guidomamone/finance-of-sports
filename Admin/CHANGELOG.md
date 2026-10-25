@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1116 — Sarpsborg 2021 y Telstar 2025: el PDF mismo no trae el informe, no se re-transcribe
+- Mirados a ojo, sin gastar API: el PDF de Sarpsborg 2021 trae el informe de EY de 2020 repetido (pág. 9) y el de Telstar 2025 termina en la pág. 26 y remite a la controleverklaring de la 27. Las dos líneas pasan a «FALTA EN EL PDF» y a la lista de sourcing.
+- Medición: no cambió ninguna tool.
+
 ## Versión 1115 — Marcador `sin-competencia` en `data/club-leagues/` [audit-chequeos-6.js]
 - Un ejercicio en el que el club no jugó ninguna competencia oficial de mayores (Novorizontino 2010, año de fundación) lleva `'sin-competencia'`: cuenta como verificado, no agrupa bajo ninguna liga, pide su línea en `ligas-no-catalogadas.jsonl` y `audit-chequeos-6.js` nunca lo «abre» como liga. El card «en otra liga» ya no ofrece como liga a quien no está en el catálogo (`liga-no-catalogada` incluida). Documentado en `ARQUITECTURA.md` y `PIPELINE.md`.
 - Condición nueva en una tool, sin revisión independiente de la Auditora.
