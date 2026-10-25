@@ -53,6 +53,9 @@ window.RANKINGS["be-div1amateur"] = {
       { id:"liersekempenzonen-be", revenue:0.986, reportType:"official_balance_sheet",
         sourceId:"liersekempenzonen-be-jaarrekening-2019-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.986]] },
+      { id:"dender-be", revenue:0.791, reportType:"official_balance_sheet",
+        sourceId:"dender-be-jaarrekening-2019-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.791]] },
     ],
   },
   2018: {

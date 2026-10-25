@@ -129,6 +129,44 @@ Sitorus: dueño (Wikipedia). El 30/1/2018 entró el grupo indonesio (Belinda Sia
 Sitorus figura en el consejo desde el 3/6/2019. La fecha de compra se toma del cambio de consejo (aproximada).
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bedrijfsopbrengsten | pág. 7, Claude 0.8 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen | pág. 7, Jev 0.97 |
+| 2 | 620 | pág. 13, Jev 0.96 |
+| 3 | 621 | pág. 13, Jev 0.97 |
+| 4 | 623 | pág. 13, Jev 0.99 |
+| 5 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 7, Jev 0.97 |
+| 6 | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) | pág. 7, Jev 0.98 |
+| 7 | Andere bedrijfskosten | pág. 7, Claude 0.93 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): be-div1amateur, verificado contra roster cacheado de "2018–19 Belgian First Amateur Division" (tools/club-league-reference/be.json), coincidencia exacta "Dender EH".
+```
+
 ## 2017
 
 ### Ingresos
@@ -184,4 +222,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### dender-be-jaarrekening-2019-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

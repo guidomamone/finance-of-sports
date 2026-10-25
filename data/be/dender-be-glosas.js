@@ -3,6 +3,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "621":{"es":"621","en":"621"},
 "623":{"es":"623","en":"623"},
 "Afschrijvingen en waardeverminderingen op immateriële en materiële vaste activa":{"es":"Amortizaciones y deterioros del inmovilizado intangible y material","en":"Depreciation, amortization and impairment of intangible and tangible fixed assets"},
+"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa":{"es":"Amortizaciones y deterioros de gastos de establecimiento, activos intangibles e inmovilizado material","en":"Depreciation, amortization and impairment of formation expenses, intangible and tangible fixed assets"},
 "Afschrijvingen materiële vaste activa":{"es":"Amortización de inmovilizado material","en":"Depreciation of tangible fixed assets"},
 "Andere bedrijfskosten":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
 "Bedrijfsopbrengsten":{"es":"Ingresos de explotación","en":"Operating income"},
@@ -17,5 +18,6 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Overige bedrijfsopbrengsten (impliciet in Brutomarge, niet als aparte code afgedrukt — zie koptekst)":{"es":"Otros ingresos de explotación (implícitos en el margen bruto, sin código aparte; ver encabezado)","en":"Other operating income (implicit in gross margin, not shown under a separate code; see header)"},
 "Uitzonderlijke kosten":{"es":"Gastos extraordinarios","en":"Extraordinary expenses"},
 "Uitzonderlijke opbrengsten":{"es":"Ingresos extraordinarios","en":"Extraordinary income"},
+"Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)":{"es":"Provisiones para riesgos y gastos: dotaciones (utilizaciones y reversiones)","en":"Provisions for risks and charges: additions (utilizations and reversals)"},
 "Waardeverminderingen op voorraden/bestellingen/handelsvorderingen":{"es":"Deterioro de existencias/pedidos/cuentas comerciales a cobrar","en":"Impairment of inventories/orders/trade receivables"}
 });

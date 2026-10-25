@@ -27,6 +27,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.pdf"
+    },
+    {
+      "id": "dender-be-jaarrekening-2019-06-30-individual",
+      "club_id": "dender-be",
+      "title": "Football Club Verbroedering Dender EH VZW — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.pdf"
     }
   ],
   "members": null,
@@ -65,6 +73,51 @@
         "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.339587,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "revenue_basis": "full",
         "revenue_derivation": {"method":"margin_plus_costs","sources":["dender-be-jaarrekening-2017-06-30-individual-correction"]}
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "dender-be-jaarrekening-2019-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [{"label":"Bedrijfsopbrengsten","category":"undisclosed","subcategory":"lump_football_operations","amount":0.694683,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.521234,
+          "disclosure": "aggregated"
+        },
+        {"label":"620","category":"first_team_staff","subcategory":"wages_squad","amount":-0.531002,"disclosure":"aggregated"},
+        {"label":"621","category":"first_team_staff","subcategory":"wages_squad","amount":-0.10323,"disclosure":"aggregated"},
+        {"label":"623","category":"first_team_staff","subcategory":"wages_squad","amount":-0.151798,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.141929,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": 0.226557,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.026266,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.044639,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.694683,"expenses":1.475459,"net_result":-0.598858},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële opbrengsten","amount":0.00001},{"label":"Financiële kosten","amount":-0.044649}],
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.694683,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["dender-be-jaarrekening-2019-06-30-individual"]}
       }
     },
     {
