@@ -94,6 +94,7 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
 | 0.2 Registro rápido de qué se probó | terminaste de buscar un club y hay que dejar escrito qué se probó | `registro-rapido.md` |
 | 0.3 Cuándo escalar | no aparece nada: sesión dedicada, mail al club o gestión de Guido | `cuando-escalar.md` |
 | 0.4 y 0.5 Informes de la liga y sponsor de camiseta | se abre una liga nueva, o hay que buscar el sponsor de camiseta de un ejercicio | `liga-y-sponsor.md` |
+| 0.6 Informes del auditor que faltan | un balance cargado no trae el informe del auditor y hay que buscarlo (lista por país, club y año) | `informes-del-auditor-faltantes.md` |
 
 **No hace falta abrir ninguno** para: consultar un registro por API o CVR (un script de `tools/`, la regla de arriba y `paises/<País>.md`), bajar un
 ejercicio suelto de un club ya conocido (la nota del club en `Admin/sourcing/<País>/` y `paises/<País>.md`) o revisar qué se probó (`Admin/sourcing/README.md`).
