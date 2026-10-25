@@ -72,6 +72,8 @@ const limpiar = (l) => l.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(
 // La posición «-.» es un equipo que se retiró a mitad de temporada y sigue en la tabla («-.Neuchâtel Xamax  18 …  Withdrew», Suiza 2011-12).
 const FILA = /^\s*(\d{1,2}|-)\.\s*(.+?)\s{2,}\d+\s/;
 const FILA_UN_ESPACIO = /^\s*(\d{1,2}|-)\.\s*(.+?)\s\d+\s+\d+\s+\d+\s+\d+\s+\d+\s*-\s*\d+/;
+// Sin el punto de la posición (las amateurs belgas: « 1  Nombre del club   30  22  5  3  71  69- 20»): solo con PJ G E P, puntos y goles a favor y en contra, para no cortar «1860 München».
+const FILA_SIN_PUNTO = /^\s*(\d{1,2})\s{1,3}(\S.*?)\s{1,}\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s*-\s*\d+/;
 export function tablaRsssf(html, titulo) {
   const crudas = html.split(/\r?\n/); const lineas = crudas.map(limpiar); const t = norm(titulo);
   const iSecciones = crudas.findIndex((l) => /<a\s+name=/i.test(l)); const finIndice = iSecciones < 0 ? crudas.length : iSecciones;
@@ -97,7 +99,7 @@ export function tablaRsssf(html, titulo) {
   for (let i = i0 + 1; i < crudas.length; i++) { const m = crudas[i].match(/<a\s+name="([^"]+)"/i); if (m && anclasIndice.has(m[1])) { fin = i; break; } }
   const equipos = []; let empezo = false;
   for (let i = i0 + 1; i < fin; i++) {
-    const m = FILA.exec(lineas[i]) || FILA_UN_ESPACIO.exec(lineas[i]);
+    const m = FILA.exec(lineas[i]) || FILA_UN_ESPACIO.exec(lineas[i]) || FILA_SIN_PUNTO.exec(lineas[i]);
     if (m) { empezo = true; equipos.push({ pos: m[1] === '-' ? null : Number(m[1]), nombre: m[2].trim(), linea: i + 1 }); continue; }
     if (/^[\s\-=_.]+$/.test(lineas[i])) continue; // «- - - - -» entre la zona de ascenso y la de descenso (Chipre 2023-24, L677)
     if (empezo && lineas[i].trim()) break;

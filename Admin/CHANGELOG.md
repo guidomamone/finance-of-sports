@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1106 — segunda-fuente-liga.mjs, audit.js, audit-chequeos-2.js: tablas amateur de RSSSF y aviso por una liga que el sitio no tiene [455 · segunda-fuente-liga.mjs, audit.js]
+- `segunda-fuente-liga.mjs` lee también las filas de posición sin el punto («1  Club   30 22 5 3 71 69- 20», las amateurs belgas de RSSSF), con PJ, G, E, P, puntos y goles para no cortar un nombre que empieza con número.
+- `audit.js` suma `liga-no-catalogada-sin-registro` y `liga-por-abrir` (3 club-años de la misma liga que el sitio no tiene: abrirla con `catalogo-liga.mjs`), leyendo `Admin/registros/ligas-no-catalogadas.jsonl` (documentado en `Admin/PIPELINE.md`). Comentarios sin fecha en `alta-club-analisis.mjs` y `estimar.mjs`.
+- Medición: 3 diferencias, todas explicadas (lote completo: idéntico).
+
 ## Versión 1105 — RAAL 2018 y Zulte Waregem 2025 con liga, el bocadillo de gastos sin rótulo, la tabla RSSSF de la 1ª Amateur con la tool [454 · 455]
 - RAAL 2018 estaba en `liga-no-catalogada` pero la 3ª Amateur belga ya existe en el catálogo: pasa a `be-div3amateur` (lista de 64 equipos de Wikipedia, 2017–18). Zulte Waregem 2025 pasa a `be-challengerproleague` (alias «S.V. Zulte Waregem»; una fuente: la tabla de RSSSF de 2024-25 trae 15 equipos y la de Wikipedia 16).
 - Dynamo Makhachkala 2021 sigue en `liga-no-catalogada` y su liga (la Segunda Liga rusa) queda anotada en `Admin/registros/ligas-no-catalogadas.jsonl`. Las tablas RSSSF de la 1ª Amateur 2018 y 2020 pasan a guardarse con `segunda-fuente-liga.mjs`, no a mano.

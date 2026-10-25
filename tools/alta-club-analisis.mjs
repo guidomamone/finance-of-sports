@@ -128,7 +128,7 @@ export function monedaDelEjercicio({ r, pais, paisCarpeta, anio, mdNorm }) {
     const nLeg = pais.legado.tokens.reduce((s, t) => s + contar(mdNorm, new RegExp(`(?<![a-z])${t.replace(/\./g, '\\.')}(?![a-z])`, 'g')), 0);
     const nAct = menciones(mdNorm, pais.moneda);
     if (nAct >= 5 && nAct > 3 * nLeg) { fuenteMoneda += `; ejercicio ${anio} anterior a ${pais.legado.desde}, pero el documento ya habla en ${pais.moneda} (${nAct} menciones contra ${nLeg} de ${pais.legado.codigo})`; }
-    // DECISIÓN DE GUIDO (2026-10-25): un ejercicio anterior al cambio de moneda, cuyo documento habla sobre todo en la moneda vieja, se carga en ella (el sitio la
+    // DECISIÓN DE GUIDO: un ejercicio anterior al cambio de moneda, cuyo documento habla sobre todo en la moneda vieja, se carga en ella (el sitio la
     // convierte a USD con el tipo de cambio de su cierre y muestra USD por defecto); no se convierte a la moneda nueva ni se pregunta.
     else if (nLeg >= 5 && nLeg > nAct) { moneda = pais.legado.codigo; legado = true; fuenteMoneda = `moneda legado de ${paisCarpeta}: ejercicio ${anio} anterior a ${pais.legado.desde} y el documento habla en ${pais.legado.codigo} (${nLeg} menciones contra ${nAct} de ${pais.moneda}); se carga en ${pais.legado.codigo} con su tipo de cambio a USD del cierre (decisión de Guido)`; }
     else { estadoMoneda = 'pregunta'; moneda = pais.legado.codigo; preguntaMoneda = `El ejercicio ${anio} es anterior a ${pais.legado.desde}: el documento puede estar en ${pais.legado.codigo} (${nLeg} menciones de la moneda vieja, ${nAct} de ${pais.moneda}). El sitio no tiene ninguna moneda "legado" cargada: ¿se carga en ${pais.legado.codigo} (con su fx a USD de ese cierre) o se convierte a ${pais.moneda} a la paridad fija?`; }

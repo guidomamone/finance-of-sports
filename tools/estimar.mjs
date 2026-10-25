@@ -43,7 +43,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 // (ni club nuevo ni año que falta); sus años reales siguen entrando al ajuste del resto. Es el único lugar donde se declara: sacar el país de acá
 // y correr `node tools/estimar.mjs --escribir` lo vuelve a prender. Volver a medir cuando entren más años (`--medir --detalle`).
 const PAISES_SIN_ESTIMAR = new Set(['ee']);
-// TOPE DE ERROR (decisión de Guido, 2026-10-25): un estimado no se publica si el error mediano medido de su país y su caso (club nuevo, entre dos reales, antes o después) pasa de ERROR_MAXIMO por ciento.
+// TOPE DE ERROR (decisión de Guido): un estimado no se publica si el error mediano medido de su país y su caso (club nuevo, entre dos reales, antes o después) pasa de ERROR_MAXIMO por ciento.
 // Es automático: se recalcula en cada `--escribir` y `--check`, y `--check` falla si un archivo publicado no es lo que sale con la regla. MIN_N_PAIS: club-años medidos mínimos en el país
 // para usar su propio error; con menos vale el error global del caso. Para subir o bajar el tope se cambia solo esta constante y se corre `node tools/estimar.mjs --escribir`.
 const ERROR_MAXIMO = 60;

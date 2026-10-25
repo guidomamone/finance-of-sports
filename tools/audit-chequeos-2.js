@@ -545,6 +545,22 @@ function checkGenerados() {
 }
 
 
+// LIGAS QUE EL SITIO NO TIENE: un club-año en `liga-no-catalogada` (data/club-leagues/) dice en Admin/registros/ligas-no-catalogadas.jsonl qué liga es (id y nombre). Cuando 3 o más club-años
+// son de la misma liga que no está en data/leagues.js, esa liga se abre (skill auditoria-finance-of-sports, sección 9): P3 `liga-por-abrir`, con el comando. Una fila sin registro: P3 `liga-no-catalogada-sin-registro`.
+const UMBRAL_LIGA_POR_ABRIR = 3;
+function checkLigasNoCatalogadas(api) {
+  const f = path.join(ROOT, 'Admin', 'registros', 'ligas-no-catalogadas.jsonl');
+  const reg = fs.existsSync(f) ? fs.readFileSync(f, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
+  const registrados = new Set(reg.map((r) => `${r.club}|${r.anio}`));
+  const sinRegistro = [];
+  for (const [club, ys] of Object.entries(api.CLUB_LEAGUE_BY_YEAR || {})) for (const [y, liga] of Object.entries(ys)) if (liga === 'liga-no-catalogada' && !registrados.has(`${club}|${y}`)) sinRegistro.push(`${club} ${y}`);
+  if (sinRegistro.length) add('P3', 'liga-no-catalogada-sin-registro', `${sinRegistro.length} club-año(s) en liga-no-catalogada sin decir qué liga es (${sinRegistro.slice(0, 5).join(', ')}): una línea por club-año en Admin/registros/ligas-no-catalogadas.jsonl, con el id y el nombre de la liga y su fuente`);
+  let catalogo = ''; try { catalogo = fs.readFileSync(path.join(ROOT, 'data', 'leagues.js'), 'utf8'); } catch { /* sin catálogo: no se cuenta */ }
+  const porLiga = {};
+  for (const r of reg) if (r.liga && !new RegExp(`['"]${r.liga}['"]\\s*:`).test(catalogo)) (porLiga[r.liga] = porLiga[r.liga] || []).push(`${r.club} ${r.anio}`);
+  for (const [liga, cs] of Object.entries(porLiga)) if (cs.length >= UMBRAL_LIGA_POR_ABRIR) add('P3', 'liga-por-abrir', `${liga}: ${cs.length} club-años en una liga que el sitio no tiene (${cs.slice(0, 5).join(', ')}): abrirla con node tools/catalogo-liga.mjs --liga ${liga} y asignarles la liga`);
+}
+
 // UN CLUB-AÑO, UNA ESTIMACIÓN: data/estimados/<liga>.js no repite un club en el mismo año de una liga. Es independiente de estimar.mjs: si la tool misma repite (una lista con el nombre
 // dos veces, dos temporadas que caen en el mismo ejercicio), su --check regenera igual y no lo ve. P1: Ligas mostraría al club dos veces y la liga sumaría de más.
 function checkEstimadoRepetido() {
@@ -564,4 +580,4 @@ function checkEstimadoRepetido() {
   if (repetidos.length) add('P1', 'estimado-repetido', `un club con más de una estimación en la misma liga-año: ${repetidos.slice(0, 8).join('; ')}${repetidos.length > 8 ? ` y ${repetidos.length - 8} más` : ''}`);
 }
 
-module.exports = { checkEstimadoRepetido, checkLigasPorEjercicio, checkDeployInterno, checkIndexFileRoto, checkSponsorBusqueda, checkComentariosPublicados, checkParrafoNetlifyDuplicado, checkRutasMuertas, checkComentarioHistoricoEnTools, checkCabeceraLargaEnTools, checkToolGrande, checkHistoriaEnDocs, checkParrafosRepetidos, checkRayaLarga, checkGenerados };
+module.exports = { checkLigasNoCatalogadas, checkEstimadoRepetido, checkLigasPorEjercicio, checkDeployInterno, checkIndexFileRoto, checkSponsorBusqueda, checkComentariosPublicados, checkParrafoNetlifyDuplicado, checkRutasMuertas, checkComentarioHistoricoEnTools, checkCabeceraLargaEnTools, checkToolGrande, checkHistoriaEnDocs, checkParrafosRepetidos, checkRayaLarga, checkGenerados };
