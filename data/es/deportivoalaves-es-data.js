@@ -31,7 +31,7 @@ const deportivoalavesEsExpenseLinesByYear = {
 };
 
 const deportivoalavesEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"deportivoalaves-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":15.096226,"assetSales":0,"netInterest":-3.902985,"tax":1.1,"grossDebt":0,"cash":5.216203,"officialTotalRevenue":64.089611,"officialTotalExpenses":76.170693,"officialPAT":0.212159},
+  2025: {"currency":"EUR","sourceId":"deportivoalaves-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":15.096226,"assetSales":0,"netInterest":-3.902985,"tax":1.1,"grossDebt":0,"cash":5.216203,"officialTotalRevenue":64.089611,"officialTotalExpenses":76.170693,"officialPAT":0.212159,"baseIngreso":"full"},
 };
 
 const deportivoalavesEsPasesData = [];

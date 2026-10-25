@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "maritimo-pt",
@@ -156,7 +156,8 @@
       "official_totals": {"revenue":14.967829,"expenses":12.191827,"net_result":2.048385},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.032428},{"label":"Imposto sobre o rendimento","amount":-0.698437}],
-        "included_in": {"broadcasting":{"in":"sponsorship_commercial","possible":true}}
+        "included_in": {"broadcasting":{"in":"sponsorship_commercial","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -270,7 +271,8 @@
           {"label":"Juros e gastos similares suportados","amount":-0.006031},
           {"label":"Imposto sobre o rendimento","amount":-0.175346}
         ],
-        "included_in": {"broadcasting":{"in":"sponsorship_commercial","possible":true}}
+        "included_in": {"broadcasting":{"in":"sponsorship_commercial","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -374,7 +376,8 @@
       "official_totals": {"revenue":14.403189,"expenses":14.679255,"net_result":-0.338616},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.070726},{"label":"Imposto sobre o rendimento","amount":0.008323}],
-        "included_in": {"broadcasting":{"in":"sponsorship_commercial","possible":true}}
+        "included_in": {"broadcasting":{"in":"sponsorship_commercial","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -479,7 +482,8 @@
       "official_totals": {"revenue":6.028518,"expenses":10.549663,"net_result":-4.496269},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":0.055325},{"label":"Imposto sobre o rendimento","amount":null}],
-        "included_in": {"broadcasting":"sponsorship_commercial"}
+        "included_in": {"broadcasting":"sponsorship_commercial"},
+        "revenue_basis": "full"
       }
     },
     {
@@ -587,7 +591,8 @@
       "official_totals": {"revenue":6.665468,"expenses":8.883706,"net_result":-2.302562},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.029824},{"label":"Imposto sobre o rendimento","amount":null}],
-        "included_in": {"broadcasting":{"in":"sponsorship_commercial","possible":true}}
+        "included_in": {"broadcasting":{"in":"sponsorship_commercial","possible":true}},
+        "revenue_basis": "full"
       }
     }
   ],

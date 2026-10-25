@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "racing-ar",
@@ -294,7 +294,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.042,"tax":0,"gross_debt":18.393,"cash":1.993},
-      "official_totals": {"revenue":22.880864,"expenses":null,"net_result":0.703439}
+      "official_totals": {"revenue":22.880864,"expenses":null,"net_result":0.703439},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2010,
@@ -363,7 +364,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.612,"tax":0,"gross_debt":26.459,"cash":0.713},
-      "official_totals": {"revenue":18.418835,"expenses":null,"net_result":-2.440733}
+      "official_totals": {"revenue":18.418835,"expenses":null,"net_result":-2.440733},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2011,
@@ -425,7 +427,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.942,"tax":0,"gross_debt":24.395,"cash":0.542},
-      "official_totals": {"revenue":25.475358,"expenses":null,"net_result":0.062577}
+      "official_totals": {"revenue":25.475358,"expenses":null,"net_result":0.062577},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2012,
@@ -469,7 +472,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.980936,"tax":0,"gross_debt":115.415132,"cash":1.275318},
-      "official_totals": {"revenue":184.791901,"expenses":166.786611,"net_result":17.024354}
+      "official_totals": {"revenue":184.791901,"expenses":166.786611,"net_result":17.024354},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2013,
@@ -512,7 +516,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.166121,"tax":0,"gross_debt":133.030906,"cash":4.180729},
-      "official_totals": {"revenue":188.690953,"expenses":177.630233,"net_result":11.22684}
+      "official_totals": {"revenue":188.690953,"expenses":177.630233,"net_result":11.22684},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2014,
@@ -556,7 +561,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":16.451126,"tax":0,"gross_debt":91.442572,"cash":4.696944},
-      "official_totals": {"revenue":302.631868,"expenses":218.146259,"net_result":100.936735}
+      "official_totals": {"revenue":302.631868,"expenses":218.146259,"net_result":100.936735},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2015,
@@ -599,7 +605,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.884192,"tax":0,"gross_debt":65.098611,"cash":7.838386},
-      "official_totals": {"revenue":430.314984,"expenses":331.654662,"net_result":102.544513}
+      "official_totals": {"revenue":430.314984,"expenses":331.654662,"net_result":102.544513},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2016,
@@ -637,7 +644,8 @@
         {"label":"Previsiones / Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-86.210139}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":23.657963,"tax":0,"gross_debt":98.450187,"cash":42.030653},
-      "official_totals": {"revenue":611.968373,"expenses":441.653033,"net_result":193.973303}
+      "official_totals": {"revenue":611.968373,"expenses":441.653033,"net_result":193.973303},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -675,7 +683,8 @@
         {"label":"Previsiones / Amortizaciones Intangibles","category":"other_amortisation","subcategory":"other_amortisation","amount":-126.386082}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":37.720415,"tax":0,"gross_debt":198.933525,"cash":41.104353},
-      "official_totals": {"revenue":804.833215,"expenses":708.392954,"net_result":134.160676}
+      "official_totals": {"revenue":804.833215,"expenses":708.392954,"net_result":134.160676},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2018,
@@ -743,7 +752,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":177.149112,"tax":0,"gross_debt":458.94064,"cash":405.685775},
-      "official_totals": {"revenue":1789.819233,"expenses":1350.447843,"net_result":616.520502}
+      "official_totals": {"revenue":1789.819233,"expenses":1350.447843,"net_result":616.520502},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -798,7 +808,8 @@
         {"label":"Cancelación Efectiva de Pasivos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-100.76924}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":1616.02665,"expenses":1756.652573}
+      "official_totals": {"revenue":1616.02665,"expenses":1756.652573},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -865,7 +876,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":227.570638,"tax":0,"gross_debt":715.799969,"cash":585.611084},
-      "official_totals": {"revenue":2436.102976,"expenses":2940.733186,"net_result":-277.059572}
+      "official_totals": {"revenue":2436.102976,"expenses":2940.733186,"net_result":-277.059572},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -932,7 +944,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":75.896098,"tax":0,"gross_debt":885.305109,"cash":1154.224649},
-      "official_totals": {"revenue":3335.562848,"expenses":3404.446864,"net_result":7.012082}
+      "official_totals": {"revenue":3335.562848,"expenses":3404.446864,"net_result":7.012082},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -996,7 +1009,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":6672.632331,"tax":0,"gross_debt":30889.883055,"cash":3854.010152},
-      "official_totals": {"revenue":66367.712489,"expenses":79167.964692,"net_result":-6127.619872}
+      "official_totals": {"revenue":66367.712489,"expenses":79167.964692,"net_result":-6127.619872},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -1062,7 +1076,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3715.545468,"tax":0,"gross_debt":48210.858049,"cash":9738.609524},
-      "official_totals": {"revenue":87399.617009,"expenses":91293.614298,"net_result":-178.451821}
+      "official_totals": {"revenue":87399.617009,"expenses":91293.614298,"net_result":-178.451821},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2026,
@@ -1250,7 +1265,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":123297.209473,"expenses":126860.457441}
+      "official_totals": {"revenue":123297.209473,"expenses":126860.457441},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2027,
@@ -1438,7 +1454,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":143118.482343,"expenses":142071.747998}
+      "official_totals": {"revenue":143118.482343,"expenses":142071.747998},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {

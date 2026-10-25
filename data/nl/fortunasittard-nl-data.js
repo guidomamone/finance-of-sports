@@ -28,7 +28,7 @@ const fortunasittardNlExpenseLinesByYear = {
 };
 
 const fortunasittardNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"fortunasittard-nl-jaarrekening-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.989082,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":13.938229,"officialTotalExpenses":17.071144,"officialPAT":-4.121997,"extraRows":[{"label":"Financië le baten en lasten","value":-0.989082},{"label":"Belastingen","value":null}]},
+  2025: {"currency":"EUR","sourceId":"fortunasittard-nl-jaarrekening-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.989082,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":13.938229,"officialTotalExpenses":17.071144,"officialPAT":-4.121997,"extraRows":[{"label":"Financië le baten en lasten","value":-0.989082},{"label":"Belastingen","value":null}],"baseIngreso":"full"},
 };
 
 const fortunasittardNlPresupuestoOverlayByYear = {};

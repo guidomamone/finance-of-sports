@@ -33,7 +33,7 @@ const sevillafcEsExpenseLinesByYear = {
 };
 
 const sevillafcEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"sevillafc-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":5.705,"assetSales":0,"netInterest":-4.807,"tax":0,"grossDebt":268.353,"cash":39.247,"officialTotalRevenue":122.574,"officialTotalExpenses":177.533,"officialPAT":-54.061},
+  2025: {"currency":"EUR","sourceId":"sevillafc-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":5.705,"assetSales":0,"netInterest":-4.807,"tax":0,"grossDebt":268.353,"cash":39.247,"officialTotalRevenue":122.574,"officialTotalExpenses":177.533,"officialPAT":-54.061,"baseIngreso":"full"},
 };
 
 const sevillafcEsPasesData = [];

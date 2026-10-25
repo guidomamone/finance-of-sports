@@ -156,7 +156,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -233,7 +234,8 @@
           {"label":"Andere financiële kosten","amount":-0.017179},
           {"label":"Niet-recurrente financiële kosten","amount":-0.013624},
           {"label":"Belastingen","amount":-0.021097}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -315,7 +317,8 @@
           {"label":"Andere financiële kosten","amount":-0.008706},
           {"label":"Belastingen","amount":-0.02},
           {"label":"Regularisering van belastingen en terugneming van voorzieningen voor belastingen","amount":0.000155}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -428,7 +431,8 @@
           {"label":"Andere financiële kosten","amount":-0.036695},
           {"label":"Belastingen","amount":-0.01},
           {"label":"Regularisering van belastingen en terugneming van voorzieningen voor belastingen","amount":0.010832}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -530,7 +534,8 @@
           {"label":"Kosten van schulden","amount":-0.024377},
           {"label":"Andere financiële kosten","amount":-0.047551},
           {"label":"Belastingen","amount":-0.158922}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -621,7 +626,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -713,7 +719,8 @@
           {"label":"Andere financiële kosten","amount":-0.321178},
           {"label":"Belastingen","amount":-0.035016},
           {"label":"Regularisering van belastingen en terugneming van voorzieningen voor belastingen","amount":0.025436}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

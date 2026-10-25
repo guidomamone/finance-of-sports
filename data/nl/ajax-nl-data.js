@@ -46,8 +46,8 @@ const ajaxNlExpenseLinesByYear = {
 };
 
 const ajaxNlFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"ajax-nl-jaarverslag-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":81.522,"assetSales":0,"netInterest":-4.85,"tax":3.111,"grossDebt":296.182,"cash":34.636,"officialTotalRevenue":151.961,"officialTotalExpenses":241.495,"officialPAT":-9.751},
-  2025: {"currency":"EUR","sourceId":"ajax-nl-jaarverslag-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":10.333,"assetSales":0,"netInterest":-1.088,"tax":14.165,"grossDebt":219.259,"cash":40.295,"officialTotalRevenue":178.129,"officialTotalExpenses":238.878,"officialPAT":-37.339},
+  2024: {"currency":"EUR","sourceId":"ajax-nl-jaarverslag-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":81.522,"assetSales":0,"netInterest":-4.85,"tax":3.111,"grossDebt":296.182,"cash":34.636,"officialTotalRevenue":151.961,"officialTotalExpenses":241.495,"officialPAT":-9.751,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"ajax-nl-jaarverslag-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":10.333,"assetSales":0,"netInterest":-1.088,"tax":14.165,"grossDebt":219.259,"cash":40.295,"officialTotalRevenue":178.129,"officialTotalExpenses":238.878,"officialPAT":-37.339,"baseIngreso":"full"},
 };
 
 const ajaxNlPresupuestoOverlayByYear = {};

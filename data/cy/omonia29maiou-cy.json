@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "omonia29maiou-cy",
@@ -110,7 +110,8 @@
         {"label":"Αποσβέσεις","category":"depreciation","subcategory":"depreciation","amount":-0.00138,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":0.686169,"expenses":0.728764,"net_result":-0.042595}
+      "official_totals": {"revenue":0.686169,"expenses":0.728764,"net_result":-0.042595},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

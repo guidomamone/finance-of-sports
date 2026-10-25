@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "atleticobucaramanga-co",
@@ -234,7 +234,8 @@
           {"label":"Ingresos financieros","amount":2.078},
           {"label":"Costos financieros","amount":-54.293},
           {"label":"Ingreso (gasto) por impuestos","amount":-361.862}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -451,7 +452,8 @@
           {"label":"Ingresos financieros","amount":0.039},
           {"label":"Costos financieros","amount":-39.733},
           {"label":"Ingreso (gasto) por impuestos","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

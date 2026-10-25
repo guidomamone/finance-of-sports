@@ -19,7 +19,7 @@ const genkBeExpenseLinesByYear = {
 };
 
 const genkBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"genk-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.439869,"tax":-0.199845,"grossDebt":34.505065,"cash":3.500316,"officialTotalRevenue":102.953926,"officialTotalExpenses":91.915829,"officialPAT":9.167383,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":33.51509,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2025: {"currency":"EUR","sourceId":"genk-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.439869,"tax":-0.199845,"grossDebt":34.505065,"cash":3.500316,"officialTotalRevenue":102.953926,"officialTotalExpenses":91.915829,"officialPAT":9.167383,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":33.51509,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const genkBePresupuestoOverlayByYear = {};

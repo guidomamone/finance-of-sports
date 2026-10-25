@@ -165,9 +165,9 @@ const botafogoBrExpenseLinesByYear = {
 };
 
 const botafogoBrFiscalYearMeta = {
-  2023: {"currency":"BRL","sourceId":"botafogo-br-demonstracoes-2023","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-57.197,"tax":0,"grossDebt":358.871,"cash":16.057,"officialTotalRevenue":537.286,"officialTotalExpenses":581.184,"officialPAT":-101.095},
-  2024: {"currency":"BRL","sourceId":"botafogo-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-157.221,"tax":0,"grossDebt":48.112,"cash":128.951,"officialTotalRevenue":664.683,"officialTotalExpenses":800.936,"officialPAT":-299.983},
-  2025: {"currency":"BRL","sourceId":"botafogo-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-301.35,"tax":0,"grossDebt":138.972,"cash":25.557,"officialTotalRevenue":1359.803,"officialTotalExpenses":1342.807,"officialPAT":-290.898},
+  2023: {"currency":"BRL","sourceId":"botafogo-br-demonstracoes-2023","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-57.197,"tax":0,"grossDebt":358.871,"cash":16.057,"officialTotalRevenue":537.286,"officialTotalExpenses":581.184,"officialPAT":-101.095,"baseIngreso":"full"},
+  2024: {"currency":"BRL","sourceId":"botafogo-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-157.221,"tax":0,"grossDebt":48.112,"cash":128.951,"officialTotalRevenue":664.683,"officialTotalExpenses":800.936,"officialPAT":-299.983,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"botafogo-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-301.35,"tax":0,"grossDebt":138.972,"cash":25.557,"officialTotalRevenue":1359.803,"officialTotalExpenses":1342.807,"officialPAT":-290.898,"baseIngreso":"full"},
 };
 
 const botafogoBrPresupuestoOverlayByYear = {};

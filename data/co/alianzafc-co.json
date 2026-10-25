@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "alianzafc-co",
@@ -84,7 +84,8 @@
           {"label":"Costos Financieros","amount":-1038.839942},
           {"label":"Gasto impuesto de renta y cree","amount":-1051.401},
           {"label":"Impuesto diferido","amount":-168.752483}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

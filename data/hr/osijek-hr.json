@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "osijek-hr",
@@ -147,7 +147,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":-0.335134,"asset_sales":0,"net_interest":-0.403355,"tax":0,"gross_debt":11.470126,"cash":1.585818},
-      "official_totals": {"revenue":18.810021,"expenses":18.989299,"net_result":-0.917767}
+      "official_totals": {"revenue":18.810021,"expenses":18.989299,"net_result":-0.917767},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

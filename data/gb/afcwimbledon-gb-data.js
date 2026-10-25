@@ -23,7 +23,7 @@ const afcwimbledonGbExpenseLinesByYear = {
 };
 
 const afcwimbledonGbFiscalYearMeta = {
-  2025: {"currency":"GBP","sourceId":"afcwimbledon-gb-full-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.09507,"tax":0.083392,"grossDebt":null,"cash":null,"officialTotalRevenue":11.888329,"officialTotalExpenses":12.406793,"officialPAT":-1.221022,"extraRows":[{"label":"Interest receivable and similar income","value":0.100329},{"label":"Interest payable and similar expenses","value":-0.005259},{"label":"Tax on (loss)/profit","value":0.083392}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true},"broadcasting":{"en":"matchday_competition","posible":true}}},
+  2025: {"currency":"GBP","sourceId":"afcwimbledon-gb-full-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.09507,"tax":0.083392,"grossDebt":null,"cash":null,"officialTotalRevenue":11.888329,"officialTotalExpenses":12.406793,"officialPAT":-1.221022,"extraRows":[{"label":"Interest receivable and similar income","value":0.100329},{"label":"Interest payable and similar expenses","value":-0.005259},{"label":"Tax on (loss)/profit","value":0.083392}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true},"broadcasting":{"en":"matchday_competition","posible":true}},"baseIngreso":"full"},
 };
 
 const afcwimbledonGbPresupuestoOverlayByYear = {};

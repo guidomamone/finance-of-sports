@@ -34,7 +34,7 @@ const necNlExpenseLinesByYear = {
 };
 
 const necNlFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"nec-nl-holding-jaarrekening-2023-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.074353,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":22.418881,"officialTotalExpenses":24.172424,"officialPAT":-1.827896,"extraRows":[{"label":"Financiële baten en lasten","value":-0.074353},{"label":"Belas ngen","value":null}]},
+  2024: {"currency":"EUR","sourceId":"nec-nl-holding-jaarrekening-2023-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.074353,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":22.418881,"officialTotalExpenses":24.172424,"officialPAT":-1.827896,"extraRows":[{"label":"Financiële baten en lasten","value":-0.074353},{"label":"Belas ngen","value":null}],"baseIngreso":"full"},
 };
 
 const necNlPresupuestoOverlayByYear = {};

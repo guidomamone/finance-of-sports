@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "clubbrugge-be",
@@ -143,7 +143,8 @@
         {"label":"Overige niet-kaskosten","category":"exceptional","subcategory":"exceptional_items","amount":0.335,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.755,"tax":-6.891,"gross_debt":98.745,"cash":21.401},
-      "official_totals": {"revenue":154.196,"expenses":133.331,"net_result":16.064}
+      "official_totals": {"revenue":154.196,"expenses":133.331,"net_result":16.064},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

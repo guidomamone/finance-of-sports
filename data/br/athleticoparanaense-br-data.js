@@ -132,8 +132,8 @@ const athleticoparanaenseBrExpenseLinesByYear = {
 };
 
 const athleticoparanaenseBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"athleticoparanaense-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":11.586,"tax":0,"grossDebt":0.518,"cash":128.443,"officialTotalRevenue":548.101,"officialTotalExpenses":451.166,"officialPAT":23.439},
-  2025: {"currency":"BRL","sourceId":"athleticoparanaense-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":17.039,"tax":0,"grossDebt":0.13,"cash":48.268,"officialTotalRevenue":448.979,"officialTotalExpenses":467.574,"officialPAT":-58.134},
+  2024: {"currency":"BRL","sourceId":"athleticoparanaense-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":11.586,"tax":0,"grossDebt":0.518,"cash":128.443,"officialTotalRevenue":548.101,"officialTotalExpenses":451.166,"officialPAT":23.439,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"athleticoparanaense-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":17.039,"tax":0,"grossDebt":0.13,"cash":48.268,"officialTotalRevenue":448.979,"officialTotalExpenses":467.574,"officialPAT":-58.134,"baseIngreso":"full"},
 };
 
 const athleticoparanaenseBrPresupuestoOverlayByYear = {};

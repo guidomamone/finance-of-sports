@@ -34,7 +34,7 @@ const nacbredaNlExpenseLinesByYear = {
 };
 
 const nacbredaNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"nacbreda-nl-jaarrekening-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.046969,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":21.741633,"officialTotalExpenses":20.756016,"officialPAT":0.938648,"extraRows":[{"label":"Rentebaten en soortgelijke opbrengsten","value":0.022924},{"label":"Rentelasten en soortgelijke kosten","value":-0.069893},{"label":"Belastingen","value":null}]},
+  2025: {"currency":"EUR","sourceId":"nacbreda-nl-jaarrekening-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.046969,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":21.741633,"officialTotalExpenses":20.756016,"officialPAT":0.938648,"extraRows":[{"label":"Rentebaten en soortgelijke opbrengsten","value":0.022924},{"label":"Rentelasten en soortgelijke kosten","value":-0.069893},{"label":"Belastingen","value":null}],"baseIngreso":"full"},
 };
 
 const nacbredaNlPresupuestoOverlayByYear = {};

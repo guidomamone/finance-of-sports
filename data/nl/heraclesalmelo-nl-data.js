@@ -93,7 +93,7 @@ const heraclesalmeloNlExpenseLinesByYear = {
 };
 
 const heraclesalmeloNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"heraclesalmelo-nl-heracles-jaarrekening-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.508444,"tax":0.270337,"grossDebt":null,"cash":null,"officialTotalRevenue":20.368967,"officialTotalExpenses":19.883417,"officialPAT":0.086678,"extraRows":[{"label":"Rentebaten en soortgelijke opbrengsten","value":0.106915},{"label":"Rentelasten en soortgelijke kosten","value":-0.615359},{"label":"Belastingen resultaat","value":0.270337}]},
+  2025: {"currency":"EUR","sourceId":"heraclesalmelo-nl-heracles-jaarrekening-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.508444,"tax":0.270337,"grossDebt":null,"cash":null,"officialTotalRevenue":20.368967,"officialTotalExpenses":19.883417,"officialPAT":0.086678,"extraRows":[{"label":"Rentebaten en soortgelijke opbrengsten","value":0.106915},{"label":"Rentelasten en soortgelijke kosten","value":-0.615359},{"label":"Belastingen resultaat","value":0.270337}],"baseIngreso":"full"},
 };
 
 const heraclesalmeloNlPresupuestoOverlayByYear = {};

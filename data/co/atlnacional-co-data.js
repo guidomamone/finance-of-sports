@@ -31,7 +31,7 @@ const atlnacionalCoExpenseLinesByYear = {
 };
 
 const atlnacionalCoFiscalYearMeta = {
-  2025: {"currency":"COP","sourceId":"atlnacional-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2306.129,"tax":-186.91,"grossDebt":15948.285,"cash":17130.558,"officialTotalRevenue":196884.03,"officialTotalExpenses":187415.294,"officialPAT":6975.695},
+  2025: {"currency":"COP","sourceId":"atlnacional-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2306.129,"tax":-186.91,"grossDebt":15948.285,"cash":17130.558,"officialTotalRevenue":196884.03,"officialTotalExpenses":187415.294,"officialPAT":6975.695,"baseIngreso":"full"},
 };
 
 const atlnacionalCoPresupuestoOverlayByYear = {};

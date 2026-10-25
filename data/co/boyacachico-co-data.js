@@ -105,8 +105,8 @@ const boyacachicoCoExpenseLinesByYear = {
 };
 
 const boyacachicoCoFiscalYearMeta = {
-  2024: {"currency":"COP","sourceId":"boyacachico-co-estados-financieros-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-257.027005,"tax":-381.268512,"grossDebt":666.527066,"cash":441.174314,"officialTotalRevenue":8264.587487,"officialTotalExpenses":6918.221877,"officialPAT":708.070093},
-  2025: {"currency":"COP","sourceId":"boyacachico-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-83.859833,"tax":-205.56515,"grossDebt":null,"cash":null,"officialTotalRevenue":9305.853883,"officialTotalExpenses":8634.665049,"officialPAT":381.763851,"extraRows":[{"label":"Gasto por impuesto a las ganancias","value":-205.56515},{"label":"Intereses","value":-83.859833}]},
+  2024: {"currency":"COP","sourceId":"boyacachico-co-estados-financieros-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-257.027005,"tax":-381.268512,"grossDebt":666.527066,"cash":441.174314,"officialTotalRevenue":8264.587487,"officialTotalExpenses":6918.221877,"officialPAT":708.070093,"baseIngreso":"full"},
+  2025: {"currency":"COP","sourceId":"boyacachico-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-83.859833,"tax":-205.56515,"grossDebt":null,"cash":null,"officialTotalRevenue":9305.853883,"officialTotalExpenses":8634.665049,"officialPAT":381.763851,"extraRows":[{"label":"Gasto por impuesto a las ganancias","value":-205.56515},{"label":"Intereses","value":-83.859833}],"baseIngreso":"full"},
 };
 
 const boyacachicoCoPresupuestoOverlayByYear = {};

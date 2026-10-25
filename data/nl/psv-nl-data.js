@@ -50,8 +50,8 @@ const psvNlExpenseLinesByYear = {
 };
 
 const psvNlFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"psv-nl-jaarverslag-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.739,"tax":-3.519,"grossDebt":163.391,"cash":21.859,"officialTotalRevenue":183.378,"officialTotalExpenses":169.469,"officialPAT":9.651},
-  2025: {"currency":"EUR","sourceId":"psv-nl-jaarverslag-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.909,"tax":-2.554,"grossDebt":140.827,"cash":9.155,"officialTotalRevenue":194.518,"officialTotalExpenses":183.507,"officialPAT":7.548},
+  2024: {"currency":"EUR","sourceId":"psv-nl-jaarverslag-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.739,"tax":-3.519,"grossDebt":163.391,"cash":21.859,"officialTotalRevenue":183.378,"officialTotalExpenses":169.469,"officialPAT":9.651,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"psv-nl-jaarverslag-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.909,"tax":-2.554,"grossDebt":140.827,"cash":9.155,"officialTotalRevenue":194.518,"officialTotalExpenses":183.507,"officialPAT":7.548,"baseIngreso":"full"},
 };
 
 const psvNlPresupuestoOverlayByYear = {};

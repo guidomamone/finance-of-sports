@@ -46,8 +46,8 @@ const hamburgersvDeExpenseLinesByYear = {
 };
 
 const hamburgersvDeFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"hamburgersv-de-fussball-ag-jahresabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.505,"tax":-1.201294,"grossDebt":57.848,"cash":35.723519,"officialTotalRevenue":125.919,"officialTotalExpenses":121.066,"officialPAT":2.146706},
-  2025: {"currency":"EUR","sourceId":"hamburgersv-de-fussball-ag-jahresabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.11,"tax":-0.239952,"grossDebt":22.03,"cash":35.985966,"officialTotalRevenue":129.046,"officialTotalExpenses":123.299,"officialPAT":4.397048},
+  2024: {"currency":"EUR","sourceId":"hamburgersv-de-fussball-ag-jahresabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.505,"tax":-1.201294,"grossDebt":57.848,"cash":35.723519,"officialTotalRevenue":125.919,"officialTotalExpenses":121.066,"officialPAT":2.146706,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"hamburgersv-de-fussball-ag-jahresabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.11,"tax":-0.239952,"grossDebt":22.03,"cash":35.985966,"officialTotalRevenue":129.046,"officialTotalExpenses":123.299,"officialPAT":4.397048,"baseIngreso":"full"},
 };
 
 const hamburgersvDePresupuestoOverlayByYear = {};

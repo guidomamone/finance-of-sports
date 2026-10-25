@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "viking-no",
@@ -142,7 +142,8 @@
           {"label":"Annen rentekostnad","amount":-3.240458},
           {"label":"Annen finanskostnad","amount":-0.037123},
           {"label":"Skattekostnad på ordinært resultat","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -196,7 +197,8 @@
           {"label":"Annen rentekostnad","amount":-3.070553},
           {"label":"Annen finanskostnad","amount":-0.004884},
           {"label":"Skattekostnad på ordinært resultat","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -232,7 +234,8 @@
           {"label":"Annen rentekostnad","amount":-2.745855},
           {"label":"Annen finanskostnad","amount":0.006534},
           {"label":"Skattekostnad på ordinært resultat","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -280,7 +283,8 @@
           {"label":"Annen rentekostnad","amount":-2.003935},
           {"label":"Annen finanskostnad","amount":0.055443},
           {"label":"Skattekostnad på ordinært resultat","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -328,7 +332,8 @@
           {"label":"Annen rentekostnad","amount":-1.641162},
           {"label":"Annen finanskostnad","amount":-0.494143},
           {"label":"Skattekostnad på ordinært resultat","amount":3.241936}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -377,7 +382,8 @@
           {"label":"Annen rentekostnad","amount":-2.291391},
           {"label":"Annen finanskostnad","amount":0},
           {"label":"Skattekostnad på ordinært resultat","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -415,7 +421,8 @@
           {"label":"Annen finansinntekt","amount":2.652264},
           {"label":"Annen rentekostnad","amount":-3.107304},
           {"label":"Skattekostnad på ordinært resultat","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -457,7 +464,8 @@
           {"label":"Netto finansinntekt","amount":0.777159},
           {"label":"Rentekostnad","amount":-3.743801},
           {"label":"Skattekostnad på ordinært resultat","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -512,7 +520,8 @@
           {"label":"Netto finansinntekt/kostnad","amount":-2.138694},
           {"label":"Rentekostnad","amount":-5.06601},
           {"label":"Skattekostnad på ordinært resultat","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

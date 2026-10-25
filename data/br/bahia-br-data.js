@@ -61,8 +61,8 @@ const bahiaBrExpenseLinesByYear = {
 };
 
 const bahiaBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"bahia-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"aguirrezegarra","fxRef":"BRL@2024-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":3.34,"tax":0,"grossDebt":679.901,"cash":134.387,"officialTotalRevenue":278.556,"officialTotalExpenses":528.441,"officialPAT":-246.545,"incluidoEn":{"member_dues":"matchday_competition"}},
-  2025: {"currency":"BRL","sourceId":"bahia-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"aguirrezegarra","fxRef":"BRL@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.812,"tax":0,"grossDebt":36.841,"cash":33.984,"officialTotalRevenue":545.404,"officialTotalExpenses":698.216,"officialPAT":-154.624,"incluidoEn":{"member_dues":"matchday_competition"}},
+  2024: {"currency":"BRL","sourceId":"bahia-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"aguirrezegarra","fxRef":"BRL@2024-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":3.34,"tax":0,"grossDebt":679.901,"cash":134.387,"officialTotalRevenue":278.556,"officialTotalExpenses":528.441,"officialPAT":-246.545,"incluidoEn":{"member_dues":"matchday_competition"},"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"bahia-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"aguirrezegarra","fxRef":"BRL@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.812,"tax":0,"grossDebt":36.841,"cash":33.984,"officialTotalRevenue":545.404,"officialTotalExpenses":698.216,"officialPAT":-154.624,"incluidoEn":{"member_dues":"matchday_competition"},"baseIngreso":"full"},
 };
 
 const bahiaBrPresupuestoOverlayByYear = {};

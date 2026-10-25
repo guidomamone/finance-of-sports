@@ -78,8 +78,8 @@ const talleresArExpenseLinesByYear = {
 };
 
 const talleresArFiscalYearMeta = {
-  2024: {"currency":"ARS","sourceId":"talleres-ar-estados-contables-2024","reportType":"official_balance_sheet","gestionId":"fassi","fxRef":"ARS@2024-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1860.248365,"tax":0,"grossDebt":21486.534385,"cash":220.025129,"officialTotalRevenue":66852.071667,"officialTotalExpenses":51795.390034,"officialPAT":13196.433268},
-  2025: {"currency":"ARS","sourceId":"talleres-ar-estados-contables-2025","reportType":"official_balance_sheet","gestionId":"fassi","fxRef":"ARS@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-41.692293,"tax":0,"grossDebt":30269.641516,"cash":519.884887,"officialTotalRevenue":73164.540148,"officialTotalExpenses":72560.192543,"officialPAT":562.655312},
+  2024: {"currency":"ARS","sourceId":"talleres-ar-estados-contables-2024","reportType":"official_balance_sheet","gestionId":"fassi","fxRef":"ARS@2024-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1860.248365,"tax":0,"grossDebt":21486.534385,"cash":220.025129,"officialTotalRevenue":66852.071667,"officialTotalExpenses":51795.390034,"officialPAT":13196.433268,"baseIngreso":"full"},
+  2025: {"currency":"ARS","sourceId":"talleres-ar-estados-contables-2025","reportType":"official_balance_sheet","gestionId":"fassi","fxRef":"ARS@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-41.692293,"tax":0,"grossDebt":30269.641516,"cash":519.884887,"officialTotalRevenue":73164.540148,"officialTotalExpenses":72560.192543,"officialPAT":562.655312,"baseIngreso":"full"},
 };
 
 const talleresArPresupuestoOverlayByYear = {};

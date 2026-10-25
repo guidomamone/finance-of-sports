@@ -22,7 +22,7 @@ const cerclebruggeBeExpenseLinesByYear = {
 };
 
 const cerclebruggeBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"cerclebrugge-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.169022,"tax":-0.162946,"grossDebt":19.177608,"cash":6.900418,"officialTotalRevenue":43.723231,"officialTotalExpenses":37.716341,"officialPAT":0.089666,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":19.306482,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2025: {"currency":"EUR","sourceId":"cerclebrugge-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.169022,"tax":-0.162946,"grossDebt":19.177608,"cash":6.900418,"officialTotalRevenue":43.723231,"officialTotalExpenses":37.716341,"officialPAT":0.089666,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":19.306482,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const cerclebruggeBePresupuestoOverlayByYear = {};

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "udinese-it",
@@ -231,7 +231,8 @@
           {"label":"altri oneri finanziari (17, costo)","amount":-5.856187},
           {"label":"imposte correnti (costo)","amount":-2.354788},
           {"label":"imposte differite e anticipate (ingreso)","amount":5.153111}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -398,7 +399,8 @@
           {"label":"altri oneri finanziari (17, costo)","amount":-7.546991},
           {"label":"imposte correnti (costo)","amount":-2.531869},
           {"label":"imposte differite e anticipate (ingreso)","amount":1.4508}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

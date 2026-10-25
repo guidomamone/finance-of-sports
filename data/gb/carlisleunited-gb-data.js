@@ -23,7 +23,7 @@ const carlisleunitedGbExpenseLinesByYear = {
 };
 
 const carlisleunitedGbFiscalYearMeta = {
-  2025: {"currency":"GBP","sourceId":"carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.023205,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7.09971,"officialTotalExpenses":12.245383,"officialPAT":-5.122468,"extraRows":[{"label":"Interest receivable and similar income","value":0.024064},{"label":"Interest payable and similar expenses","value":-0.000859}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}}},
+  2025: {"currency":"GBP","sourceId":"carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.023205,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7.09971,"officialTotalExpenses":12.245383,"officialPAT":-5.122468,"extraRows":[{"label":"Interest receivable and similar income","value":0.024064},{"label":"Interest payable and similar expenses","value":-0.000859}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}},"baseIngreso":"full"},
 };
 
 const carlisleunitedGbPresupuestoOverlayByYear = {};

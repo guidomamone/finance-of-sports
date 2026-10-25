@@ -153,7 +153,8 @@
         "included_in": {
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -190,7 +191,8 @@
             "kind": "net_sales"
           },
           {"line":"Annen driftsinntekt","side":"revenue","amount":1.291506,"reason":"el documento no desglosa este renglón","kind":"other"}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -227,7 +229,8 @@
             "kind": "net_sales"
           },
           {"line":"Annen driftsinntekt","side":"revenue","amount":1.547231,"reason":"el documento no desglosa este renglón","kind":"other"}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -264,7 +267,8 @@
             "kind": "net_sales"
           },
           {"line":"Annen driftsinntekt","side":"revenue","amount":4.134031,"reason":"el documento no desglosa este renglón","kind":"other"}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -286,7 +290,8 @@
       "official_totals": {"revenue":33.801587,"expenses":33.812973,"net_result":0.020569},
       "adjustments": {
         "extra_rows": [{"label":"Annen finansinntekt","amount":0.042386},{"label":"Annen finanskostnad","amount":-0.010431}],
-        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":33.801587,"reason":"el documento no desglosa este renglón","kind":"other"}]
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":33.801587,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -311,7 +316,8 @@
       "official_totals": {"revenue":28.452409,"expenses":28.493927,"net_result":-0.032063},
       "adjustments": {
         "extra_rows": [{"label":"Annen finansinntekt","amount":0.039931},{"label":"Annen finanskostnad","amount":-0.030475}],
-        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":28.452409,"reason":"el documento no desglosa este renglón","kind":"other"}]
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":28.452409,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -336,7 +342,8 @@
       "official_totals": {"revenue":22.903598,"expenses":22.905462,"net_result":-1.148565},
       "adjustments": {
         "extra_rows": [{"label":"Annen finansinntekt","amount":0.09345},{"label":"Annen finanskostnad","amount":-1.24015}],
-        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":22.903598,"reason":"el documento no desglosa este renglón","kind":"other"}]
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":22.903598,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -363,7 +370,8 @@
           "member_dues": "lump_football_operations",
           "broadcasting": {"in":"lump_football_operations","possible":true},
           "matchday_competition": {"in":"lump_football_operations","possible":true}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     }
   ],

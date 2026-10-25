@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "brondby-dk",
@@ -119,7 +119,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":-8.057,"asset_sales":0,"net_interest":-2.749,"tax":0,"gross_debt":0,"cash":22.985},
-      "official_totals": {"revenue":158.471,"expenses":173.518,"net_result":-25.853}
+      "official_totals": {"revenue":158.471,"expenses":173.518,"net_result":-25.853},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -216,7 +217,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.145,"tax":0,"gross_debt":null,"cash":67.803},
       "official_totals": {"revenue":360.037,"expenses":276.474,"net_result":83.418},
       "adjustments": {
-        "extra_rows": [{"label":"Finansielle indtægter","amount":0.446},{"label":"Finansielle omkostninger","amount":-0.591},{"label":"Skat af årets resultat","amount":0}]
+        "extra_rows": [{"label":"Finansielle indtægter","amount":0.446},{"label":"Finansielle omkostninger","amount":-0.591},{"label":"Skat af årets resultat","amount":0}],
+        "revenue_basis": "full"
       }
     }
   ],

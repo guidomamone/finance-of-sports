@@ -163,7 +163,11 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.00073,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":0.466399,"expenses":0.546153,"net_result":-0.080484},
-      "adjustments": {"no_breakdown":[{"line":"Omzet","side":"revenue","amount":0.466399,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":0.466399,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["patroeisden-be-jaarrekening-2013-06-30-individual"]}
+      }
     },
     {
       "fiscal_year": 2014,
@@ -199,7 +203,8 @@
       "official_totals": {"revenue":0.269874,"expenses":0.369066,"net_result":-0.086178},
       "adjustments": {
         "extra_rows": [{"label":"Financiële opbrengsten","amount":0.013635},{"label":"Financiële kosten","amount":-0.000621}],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.266761,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.266761,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -250,7 +255,8 @@
       "official_totals": {"revenue":0.938778,"expenses":0.89874,"net_result":0.049158},
       "adjustments": {
         "extra_rows": [{"label":"Financiële opbrengsten","amount":0.009327},{"label":"Financiële kosten","amount":-0.000206}],
-        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.933485,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.933485,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -307,7 +313,9 @@
             "reason": "Claude 2026-10-18 (subagente Sonnet): Igual que 2017: es la totalidad de los ingresos operativos sin desglose (Omzet 70 y 73 vacios), no 'Otros ingresos'. Cierra: 362.776 - 217.830 (60/61) = 144.946 = Brutomarge; 144.946 - 447.348 - 52.324 = -354.726 = 9901. [Bedrijfsopbrengsten 70/74 362.776 (L231); Omzet vacio (L232); 60/61 217.830 (L234)]",
             "kind": "net_sales"
           }
-        ]
+        ],
+        "revenue_basis": "sales_total",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["patroeisden-be-jaarrekening-2016-06-30-individual"]}
       }
     },
     {
@@ -359,7 +367,8 @@
       "official_totals": {"revenue":0.494785,"expenses":0.861109,"net_result":-0.366697},
       "adjustments": {
         "extra_rows": [{"label":"Financiële opbrengsten","amount":0.00019},{"label":"Financiële kosten","amount":-0.000563}],
-        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.479824,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.479824,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -409,7 +418,9 @@
       "official_totals": {"revenue":0.314774,"expenses":0.743126,"net_result":-0.608202},
       "adjustments": {
         "extra_rows": [{"label":"Financiële opbrengsten","amount":0.007525},{"label":"Financiële kosten","amount":-0.003975}],
-        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.314774,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.314774,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["patroeisden-be-jaarrekening-2018-06-30-individual"]}
       }
     },
     {
@@ -456,7 +467,9 @@
       "official_totals": {"revenue":0.362776,"expenses":0.717502,"net_result":-0.355848},
       "adjustments": {
         "extra_rows": [{"label":"Financiële opbrengsten","amount":0.000038},{"label":"Financiële kosten","amount":-0.00116}],
-        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.362776,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.362776,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["patroeisden-be-jaarrekening-2019-06-30-individual"]}
       }
     },
     {
@@ -500,7 +513,8 @@
           {"label":"Recurrente financiële kosten","amount":-0.028196},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.000131}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.277991,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.277991,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -620,7 +634,9 @@
           {"label":"Recurrente financiële opbrengsten","amount":0.016229},
           {"label":"Recurrente financiële kosten","amount":-0.032683},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.002688}
-        ]
+        ],
+        "revenue_basis": "sales_total",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["patroeisden-be-jaarrekening-2022-06-30-individual"]}
       }
     },
     {
@@ -694,7 +710,9 @@
           {"label":"Recurrente financiële opbrengsten","amount":0.023445},
           {"label":"Recurrente financiële kosten","amount":-0.000959},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.003251}
-        ]
+        ],
+        "revenue_basis": "full",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["patroeisden-be-jaarrekening-2023-06-30-individual"]}
       }
     },
     {
@@ -747,7 +765,8 @@
           {"label":"Recurrente financiële kosten","amount":-0.022185},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.00653}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":3.068851,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":3.068851,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -810,7 +829,8 @@
           {"label":"Recurrente financiële kosten","amount":-0.293069},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.027259}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.841008,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.841008,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     }
   ],

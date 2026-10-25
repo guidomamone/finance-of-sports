@@ -62,7 +62,7 @@ const mafraPtExpenseLinesByYear = {
 };
 
 const mafraPtFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"mafra-pt-prestacao-contas-epoca-2023-2024-final","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.04504,"tax":-0.012408,"grossDebt":2.745454,"cash":0.181615,"officialTotalRevenue":3.909177,"officialTotalExpenses":4.926838,"officialPAT":-1.075109,"extraRows":[{"label":"Juros e rendimentos similares obtidos","value":0},{"label":"Juros e gastos similares suportados","value":-0.04504},{"label":"Impostos sobre rendimento do período","value":-0.012408}]},
+  2024: {"currency":"EUR","sourceId":"mafra-pt-prestacao-contas-epoca-2023-2024-final","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.04504,"tax":-0.012408,"grossDebt":2.745454,"cash":0.181615,"officialTotalRevenue":3.909177,"officialTotalExpenses":4.926838,"officialPAT":-1.075109,"extraRows":[{"label":"Juros e rendimentos similares obtidos","value":0},{"label":"Juros e gastos similares suportados","value":-0.04504},{"label":"Impostos sobre rendimento do período","value":-0.012408}],"baseIngreso":"full"},
 };
 
 const mafraPtPresupuestoOverlayByYear = {};

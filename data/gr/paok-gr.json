@@ -153,7 +153,8 @@
           {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.020157},
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.173408},
           {"label":"Φόροι εισοδήματος","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -210,7 +211,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -275,7 +277,8 @@
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -363,7 +366,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -449,7 +453,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -529,7 +534,8 @@
           {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000111},
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.558923},
           {"label":"Φόροι εισοδήματος","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -616,7 +622,8 @@
           {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000164},
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.83565},
           {"label":"Φόροι εισοδήματος","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -703,7 +710,8 @@
           {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.017015},
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.502677},
           {"label":"Φόροι εισοδήματος","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

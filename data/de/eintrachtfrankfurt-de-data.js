@@ -58,8 +58,8 @@ const eintrachtfrankfurtDeExpenseLinesByYear = {
 };
 
 const eintrachtfrankfurtDeFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"eintrachtfrankfurt-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-5.132041,"tax":-4.867652,"grossDebt":57.069177,"cash":3.666443,"officialTotalRevenue":390.50482,"officialTotalExpenses":353.647338,"officialPAT":26.857789},
-  2025: {"currency":"EUR","sourceId":"eintrachtfrankfurt-de-konzernabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-5.43105,"tax":-0.067432,"grossDebt":60.715487,"cash":4.383441,"officialTotalRevenue":389.131471,"officialTotalExpenses":392.089555,"officialPAT":-8.456566},
+  2024: {"currency":"EUR","sourceId":"eintrachtfrankfurt-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-5.132041,"tax":-4.867652,"grossDebt":57.069177,"cash":3.666443,"officialTotalRevenue":390.50482,"officialTotalExpenses":353.647338,"officialPAT":26.857789,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"eintrachtfrankfurt-de-konzernabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-5.43105,"tax":-0.067432,"grossDebt":60.715487,"cash":4.383441,"officialTotalRevenue":389.131471,"officialTotalExpenses":392.089555,"officialPAT":-8.456566,"baseIngreso":"full"},
 };
 
 const eintrachtfrankfurtDePresupuestoOverlayByYear = {};

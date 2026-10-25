@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "valerenga-no",
@@ -181,7 +181,8 @@
           {"label":"Elite · Annen rentekostnad","amount":-0.005702},
           {"label":"Elite · Annen finanskostnad","amount":-11.360774},
           {"label":"Skattekostnad","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -308,7 +309,8 @@
           {"label":"Elite · Annen finansinntekt","amount":53.87474},
           {"label":"Elite · Annen rentekostnad","amount":-0.024306},
           {"label":"Elite · Annen finanskostnad","amount":-89.339777}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -346,7 +348,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.749113,"tax":0,"gross_debt":18.465613,"cash":4.616901},
       "official_totals": {"revenue":78.627507,"expenses":93.803749,"net_result":-12.427128},
       "adjustments": {
-        "extra_rows": [{"label":"Annen finansinntekt","amount":39.800533},{"label":"Annen finanskostnad","amount":-37.05142},{"label":"Skattekostnad","amount":0}]
+        "extra_rows": [{"label":"Annen finansinntekt","amount":39.800533},{"label":"Annen finanskostnad","amount":-37.05142},{"label":"Skattekostnad","amount":0}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -382,7 +385,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":31.72628,"tax":0,"gross_debt":18.465613,"cash":10.074982},
       "official_totals": {"revenue":99.824626,"expenses":128.95424,"net_result":2.596666},
-      "adjustments": {"extra_rows":[{"label":"Annen finansinntekt","amount":70.10379},{"label":"Annen finanskostnad","amount":-38.37751}]}
+      "adjustments": {"extra_rows":[{"label":"Annen finansinntekt","amount":70.10379},{"label":"Annen finanskostnad","amount":-38.37751}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

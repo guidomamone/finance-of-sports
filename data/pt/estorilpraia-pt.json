@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "estorilpraia-pt",
@@ -182,7 +182,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.086719,"tax":-0.020716,"gross_debt":4.186669,"cash":0.776992},
       "official_totals": {"revenue":9.548583,"expenses":9.879659,"net_result":-0.438511},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.086719},{"label":"Imposto sobre o rendimento do período","amount":-0.020716}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.086719},{"label":"Imposto sobre o rendimento do período","amount":-0.020716}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -320,7 +321,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.05226,"tax":-0.043821,"gross_debt":3.176534,"cash":1.091772},
       "official_totals": {"revenue":12.580322,"expenses":12.065974,"net_result":0.418266},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.05226},{"label":"Imposto sobre o rendimento do período","amount":-0.043821}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.05226},{"label":"Imposto sobre o rendimento do período","amount":-0.043821}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -450,7 +452,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.00792,"tax":-0.029229,"gross_debt":3.2,"cash":0.318763},
       "official_totals": {"revenue":14.147357,"expenses":13.924068,"net_result":0.186141},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.00792},{"label":"Imposto sobre o rendimento do período","amount":-0.029229}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.00792},{"label":"Imposto sobre o rendimento do período","amount":-0.029229}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -578,7 +581,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.0122},
           {"label":"Juros e gastos similares suportados","amount":-0.458154},
           {"label":"Imposto sobre o rendimento do período","amount":-0.030609}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

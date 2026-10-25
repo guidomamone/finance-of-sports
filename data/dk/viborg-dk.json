@@ -118,7 +118,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "net_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -198,7 +199,8 @@
           {"label":"Andre finansielle omkostninger Financial expenses","amount":-0.160522},
           {"label":"Skat af årets resultat Tax on profit or loss for the year","amount":2.693035}
         ],
-        "no_breakdown": [{"line":"Nettoomsætning Revenue","side":"revenue","amount":79.32982,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Nettoomsætning Revenue","side":"revenue","amount":79.32982,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "arouca-pt",
@@ -133,7 +133,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000251,"tax":-0.037944,"gross_debt":0.03525,"cash":0.130645},
       "official_totals": {"revenue":5.094546,"expenses":5.607571,"net_result":-0.606415},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000251},{"label":"Imposto sobre o rendimento do período","amount":-0.037944}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000251},{"label":"Imposto sobre o rendimento do período","amount":-0.037944}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -228,7 +229,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-0.360802,"gross_debt":0.026438,"cash":1.362593},
-      "official_totals": {"revenue":8.77516,"expenses":7.974954,"net_result":0.414325}
+      "official_totals": {"revenue":8.77516,"expenses":7.974954,"net_result":0.414325},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -326,7 +328,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.113084,"tax":-0.194697,"gross_debt":0,"cash":3.506226},
       "official_totals": {"revenue":14.888051,"expenses":11.316536,"net_result":3.235553},
-      "adjustments": {"extra_rows":[{"label":"Juros e gastos similares obtidos","amount":0.113084},{"label":"Imposto sobre o rendimento do período","amount":-0.194697}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares obtidos","amount":0.113084},{"label":"Imposto sobre o rendimento do período","amount":-0.194697}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2025,
@@ -431,7 +436,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.776087},
           {"label":"Juros e gastos similares suportados","amount":-0.008057},
           {"label":"Imposto sobre o rendimento do período","amount":-1.756235}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

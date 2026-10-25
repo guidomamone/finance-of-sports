@@ -27,7 +27,7 @@ const peczwolleNlExpenseLinesByYear = {
 };
 
 const peczwolleNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"peczwolle-nl-wf-2024-2025-aaba1b62","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.022802,"tax":-0.195518,"grossDebt":null,"cash":null,"officialTotalRevenue":22.120157,"officialTotalExpenses":21.018718,"officialPAT":0.928723,"extraRows":[{"label":"Financiële baten en lasten","value":0.022802},{"label":"Belastingen","value":-0.195518}]},
+  2025: {"currency":"EUR","sourceId":"peczwolle-nl-wf-2024-2025-aaba1b62","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.022802,"tax":-0.195518,"grossDebt":null,"cash":null,"officialTotalRevenue":22.120157,"officialTotalExpenses":21.018718,"officialPAT":0.928723,"extraRows":[{"label":"Financiële baten en lasten","value":0.022802},{"label":"Belastingen","value":-0.195518}],"baseIngreso":"full"},
 };
 
 const peczwolleNlPresupuestoOverlayByYear = {};

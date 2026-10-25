@@ -38,7 +38,7 @@ const americadecaliCoExpenseLinesByYear = {
 };
 
 const americadecaliCoFiscalYearMeta = {
-  2025: {"currency":"COP","sourceId":"americadecali-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-4239.446,"tax":-569.145,"grossDebt":11835.971,"cash":870.325,"officialTotalRevenue":97231.328,"officialTotalExpenses":104321.212,"officialPAT":-11898.474},
+  2025: {"currency":"COP","sourceId":"americadecali-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-4239.446,"tax":-569.145,"grossDebt":11835.971,"cash":870.325,"officialTotalRevenue":97231.328,"officialTotalExpenses":104321.212,"officialPAT":-11898.474,"baseIngreso":"full"},
 };
 
 const americadecaliCoPresupuestoOverlayByYear = {};

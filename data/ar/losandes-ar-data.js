@@ -93,8 +93,8 @@ const losandesArExpenseLinesByYear = {
 };
 
 const losandesArFiscalYearMeta = {
-  2020: {"currency":"ARS","sourceId":"losandes-ar-balance-ejercicio-104-2019-20","reportType":"official_balance_sheet","gestionId":"grosi","fxRef":"ARS@2020-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":8.067147,"tax":0,"grossDebt":59.358045,"cash":2.476216,"officialTotalRevenue":96.851408,"officialTotalExpenses":100.71329,"officialPAT":4.205265},
-  2021: {"currency":"ARS","sourceId":"losandes-ar-balance-ejercicio-105-2020-21","reportType":"official_balance_sheet","gestionId":"grosi","fxRef":"ARS@2021-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":27.021637,"tax":0,"grossDebt":67.996953,"cash":8.159819,"officialTotalRevenue":125.444731,"officialTotalExpenses":114.751101,"officialPAT":37.715267},
+  2020: {"currency":"ARS","sourceId":"losandes-ar-balance-ejercicio-104-2019-20","reportType":"official_balance_sheet","gestionId":"grosi","fxRef":"ARS@2020-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":8.067147,"tax":0,"grossDebt":59.358045,"cash":2.476216,"officialTotalRevenue":96.851408,"officialTotalExpenses":100.71329,"officialPAT":4.205265,"baseIngreso":"full"},
+  2021: {"currency":"ARS","sourceId":"losandes-ar-balance-ejercicio-105-2020-21","reportType":"official_balance_sheet","gestionId":"grosi","fxRef":"ARS@2021-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":27.021637,"tax":0,"grossDebt":67.996953,"cash":8.159819,"officialTotalRevenue":125.444731,"officialTotalExpenses":114.751101,"officialPAT":37.715267,"baseIngreso":"full"},
 };
 
 const losandesArPresupuestoOverlayByYear = {};

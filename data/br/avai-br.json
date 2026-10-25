@@ -159,7 +159,8 @@
           "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -282,7 +283,8 @@
           "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -422,7 +424,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.244,"tax":0,"gross_debt":2.011,"cash":6.204},
       "official_totals": {"revenue":133.342,"expenses":72.867,"net_result":19.101},
-      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.439},{"label":"Despesas financeiras","amount":-0.683}]}
+      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.439},{"label":"Despesas financeiras","amount":-0.683}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -593,7 +595,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-34.705,"tax":0,"gross_debt":0.35,"cash":2.288},
       "official_totals": {"revenue":57.822,"expenses":91.848,"net_result":-68.731},
-      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.254},{"label":"Despesas financeiras","amount":-34.959}]}
+      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.254},{"label":"Despesas financeiras","amount":-34.959}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -755,7 +757,8 @@
           {"label":"RECEITAS FINANCEIRAS","amount":1.006},
           {"label":"DESPESAS FINANCEIRAS","amount":-2.088},
           {"label":"ATUALIZAÇÃO DAS OBRIGAÇÕES TRIBUTÁRIAS","amount":-41.706}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

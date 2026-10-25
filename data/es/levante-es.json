@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "levante-es",
@@ -137,7 +137,8 @@
         {"label":"Otros resultados","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.32296,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":12.30188,"asset_sales":-0.00292,"net_interest":-5.66908,"tax":4.39895,"gross_debt":121.12351,"cash":0.60815},
-      "official_totals": {"revenue":16.27769,"expenses":41.50214,"net_result":-14.19562}
+      "official_totals": {"revenue":16.27769,"expenses":41.50214,"net_result":-14.19562},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

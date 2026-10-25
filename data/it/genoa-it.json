@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "genoa-it",
@@ -282,7 +282,8 @@
           {"label":"17 bis) a) utile su cambi","amount":0.000104},
           {"label":"17 bis) b) perdite su cambi","amount":-0.023945},
           {"label":"20) a) imposte correnti (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":9.396313}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -494,7 +495,8 @@
           {"label":"imposte relative a esercizi precedenti","amount":-1.051785},
           {"label":"imposte differite e anticipate","amount":5.310717},
           {"label":"proventi da adesione consolidato fiscale (resta del impuesto)","amount":0.012799}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -695,7 +697,8 @@
           {"label":"imposte relative a esercizi precedenti","amount":-1.525834},
           {"label":"imposte differite e anticipate","amount":0},
           {"label":"proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale","amount":0.280131}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -912,7 +915,8 @@
           {"label":"imposte correnti","amount":-0.299043},
           {"label":"imposte relative a esercizi precedenti","amount":0},
           {"label":"proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

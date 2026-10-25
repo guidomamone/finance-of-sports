@@ -33,7 +33,7 @@ const juniorCoExpenseLinesByYear = {
 };
 
 const juniorCoFiscalYearMeta = {
-  2025: {"currency":"COP","sourceId":"junior-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-3541.489,"tax":-2635.491,"grossDebt":8213.691,"cash":9012.064,"officialTotalRevenue":94264.079,"officialTotalExpenses":86870.906,"officialPAT":1216.193},
+  2025: {"currency":"COP","sourceId":"junior-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-3541.489,"tax":-2635.491,"grossDebt":8213.691,"cash":9012.064,"officialTotalRevenue":94264.079,"officialTotalExpenses":86870.906,"officialPAT":1216.193,"baseIngreso":"full"},
 };
 
 const juniorCoPresupuestoOverlayByYear = {};

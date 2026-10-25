@@ -86,7 +86,8 @@
           {"label":"DESPESAS/(RECEITAS) FINANCEIRAS","amount":0.278683},
           {"label":"(-) PROVISÃO PARA IMPOSTO DE RENDA","amount":null},
           {"label":"(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -136,7 +137,8 @@
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -213,7 +215,8 @@
           {"label":"DESPESAS/(RECEITAS) FINANCEIRAS","amount":2.738057},
           {"label":"(-) PROVISÃO PARA IMPOSTO DE RENDA","amount":null},
           {"label":"(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -290,7 +293,8 @@
           {"label":"RECEITAS/(DESPESAS) FINANCEIRAS","amount":-2.017},
           {"label":"(-) PROVISÃO PARA IMPOSTO DE RENDA","amount":null},
           {"label":"(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

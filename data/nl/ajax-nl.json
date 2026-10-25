@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "ajax-nl",
@@ -90,7 +90,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":81.522,"asset_sales":0,"net_interest":-4.85,"tax":3.111,"gross_debt":296.182,"cash":34.636},
-      "official_totals": {"revenue":151.961,"expenses":241.495,"net_result":-9.751}
+      "official_totals": {"revenue":151.961,"expenses":241.495,"net_result":-9.751},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -151,7 +152,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":10.333,"asset_sales":0,"net_interest":-1.088,"tax":14.165,"gross_debt":219.259,"cash":40.295},
-      "official_totals": {"revenue":178.129,"expenses":238.878,"net_result":-37.339}
+      "official_totals": {"revenue":178.129,"expenses":238.878,"net_result":-37.339},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

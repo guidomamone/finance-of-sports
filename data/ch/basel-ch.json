@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "basel-ch",
@@ -204,7 +204,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.263711,"tax":-0.005293,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":38.217415,"expenses":38.844639,"net_result":0.101193},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.310974},{"label":"Finanzaufwand","amount":-0.047263},{"label":"Steuern","amount":-0.005293}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.310974},{"label":"Finanzaufwand","amount":-0.047263},{"label":"Steuern","amount":-0.005293}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2006,
@@ -265,7 +268,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.046748,"tax":-0.053385,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":51.358822,"expenses":51.280793,"net_result":0.071392},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.222536},{"label":"Finanzaufwand","amount":-0.175788},{"label":"Steuern","amount":-0.053385}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.222536},{"label":"Finanzaufwand","amount":-0.175788},{"label":"Steuern","amount":-0.053385}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2007,
@@ -326,7 +332,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.072035,"tax":-0.0415,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":48.9356,"expenses":48.840477,"net_result":0.125658},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.14995},{"label":"Finanzaufwand","amount":-0.077915},{"label":"Steuern","amount":-0.0415}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.14995},{"label":"Finanzaufwand","amount":-0.077915},{"label":"Steuern","amount":-0.0415}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2008,
@@ -388,7 +397,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.201859,"tax":-0.274679,"gross_debt":null,"cash":6.133409},
       "official_totals": {"revenue":60.589164,"expenses":59.112842,"net_result":0.999784},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.130878},{"label":"Finanzaufwand","amount":-0.332737},{"label":"Steuern","amount":-0.274679}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.130878},{"label":"Finanzaufwand","amount":-0.332737},{"label":"Steuern","amount":-0.274679}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2009,
@@ -450,7 +462,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.151125,"tax":-0.113026,"gross_debt":null,"cash":9.46188},
       "official_totals": {"revenue":45.486,"expenses":55.238055,"net_result":0.007044},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.237366},{"label":"Finanzaufwand","amount":-0.086241},{"label":"Steuern","amount":-0.113026}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.237366},{"label":"Finanzaufwand","amount":-0.086241},{"label":"Steuern","amount":-0.113026}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2010,
@@ -513,7 +528,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.193035,"tax":0.069044,"gross_debt":null,"cash":10.389899},
       "official_totals": {"revenue":57.537401,"expenses":56.96598,"net_result":0.223033},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.345138},{"label":"Finanzaufwand","amount":-0.538173},{"label":"Steuern","amount":0.069044}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.345138},{"label":"Finanzaufwand","amount":-0.538173},{"label":"Steuern","amount":0.069044}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2011,
@@ -576,7 +594,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.148809,"tax":-0.046226,"gross_debt":null,"cash":17.559504},
       "official_totals": {"revenue":67.64085,"expenses":61.91756,"net_result":5.528255},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.052324},{"label":"Finanzaufwand","amount":-0.201133},{"label":"Steuern","amount":-0.046226}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.052324},{"label":"Finanzaufwand","amount":-0.201133},{"label":"Steuern","amount":-0.046226}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2012,
@@ -639,7 +660,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.178966,"tax":-0.944068,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":80.037417,"expenses":64.886784,"net_result":0.027598},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.017706},{"label":"Finanzaufwand","amount":-0.196672},{"label":"Steuern","amount":-0.944068}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.017706},{"label":"Finanzaufwand","amount":-0.196672},{"label":"Steuern","amount":-0.944068}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2013,
@@ -711,7 +735,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.171139,"tax":-0.281991,"gross_debt":null,"cash":15.371334},
       "official_totals": {"revenue":88.243026,"expenses":76.607436,"net_result":0.851788},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.214174},{"label":"Finanzaufwand","amount":-0.043035},{"label":"Steuern","amount":-0.281991}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.214174},{"label":"Finanzaufwand","amount":-0.043035},{"label":"Steuern","amount":-0.281991}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2014,
@@ -778,7 +805,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.072392,"tax":-0.090394,"gross_debt":null,"cash":15.838562},
       "official_totals": {"revenue":105.25591,"expenses":90.481809,"net_result":0.197389},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.027734},{"label":"Finanzaufwand","amount":-0.100126},{"label":"Steuern","amount":-0.090394}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.027734},{"label":"Finanzaufwand","amount":-0.100126},{"label":"Steuern","amount":-0.090394}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2015,
@@ -863,7 +893,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.198978,"tax":-0.077798,"gross_debt":null,"cash":15.224574},
       "official_totals": {"revenue":92.488643,"expenses":79.25471,"net_result":0.1339},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.010125},{"label":"Finanzaufwand","amount":-1.209103},{"label":"Steuern","amount":-0.077798}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.010125},{"label":"Finanzaufwand","amount":-1.209103},{"label":"Steuern","amount":-0.077798}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2016,
@@ -955,7 +988,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.192192,"tax":-1.67252,"gross_debt":null,"cash":30.226945},
       "official_totals": {"revenue":132.291812,"expenses":100.839094,"net_result":5.767508},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.303044},{"label":"Finanzaufwand","amount":-1.495236},{"label":"Steuern","amount":-1.67252}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.303044},{"label":"Finanzaufwand","amount":-1.495236},{"label":"Steuern","amount":-1.67252}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2017,
@@ -1047,7 +1083,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.99031,"tax":-0.157905,"gross_debt":null,"cash":23.018285},
       "official_totals": {"revenue":88.486213,"expenses":91.671136,"net_result":0.578371},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":2.173395},{"label":"Finanzaufwand","amount":-1.183085},{"label":"Steuern","amount":-0.157905}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":2.173395},{"label":"Finanzaufwand","amount":-1.183085},{"label":"Steuern","amount":-0.157905}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2018,
@@ -1139,7 +1178,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.005619,"tax":-0.116342,"gross_debt":null,"cash":7.84611},
       "official_totals": {"revenue":97.721166,"expenses":95.181155,"net_result":0.23926},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.71937},{"label":"Finanzaufwand","amount":-1.724989},{"label":"Steuern","amount":-0.116342}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.71937},{"label":"Finanzaufwand","amount":-1.724989},{"label":"Steuern","amount":-0.116342}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2019,
@@ -1232,7 +1274,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.324723,"tax":-0.015838,"gross_debt":null,"cash":12.676911},
       "official_totals": {"revenue":69.153363,"expenses":86.961058,"net_result":-0.761053},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.766299},{"label":"Finanzaufwand","amount":-1.091022},{"label":"Steuern","amount":-0.015838}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.766299},{"label":"Finanzaufwand","amount":-1.091022},{"label":"Steuern","amount":-0.015838}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2020,
@@ -1326,7 +1371,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.46966,"tax":-0.015888,"gross_debt":null,"cash":10.593728},
       "official_totals": {"revenue":67.062421,"expenses":62.144352,"net_result":0.0488},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":0.364627},{"label":"Finanzaufwand","amount":-0.834287},{"label":"Steuern","amount":-0.015888}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":0.364627},{"label":"Finanzaufwand","amount":-0.834287},{"label":"Steuern","amount":-0.015888}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2021,
@@ -1418,7 +1466,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.419465,"tax":-0.002,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":59.554172,"expenses":73.497884,"net_result":-14.365177},
-      "adjustments": {"extra_rows":[{"label":"Finanzertrag","amount":1.800155},{"label":"Finanzaufwand","amount":-2.21962},{"label":"Steuern","amount":-0.002}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finanzertrag","amount":1.800155},{"label":"Finanzaufwand","amount":-2.21962},{"label":"Steuern","amount":-0.002}],
+        "revenue_basis": "full"
+      }
     }
   ],
   "budget_overlay": {},

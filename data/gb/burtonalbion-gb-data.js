@@ -19,7 +19,7 @@ const burtonalbionGbExpenseLinesByYear = {
 };
 
 const burtonalbionGbFiscalYearMeta = {
-  2025: {"currency":"GBP","sourceId":"burtonalbion-gb-burton-full-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.003704,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":6.773144,"officialTotalExpenses":15.120829,"officialPAT":-8.343981,"extraRows":[{"label":"Interest receivable and similar income","value":0.005605},{"label":"Interest payable and similar expenses","value":-0.001901},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}}},
+  2025: {"currency":"GBP","sourceId":"burtonalbion-gb-burton-full-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.003704,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":6.773144,"officialTotalExpenses":15.120829,"officialPAT":-8.343981,"extraRows":[{"label":"Interest receivable and similar income","value":0.005605},{"label":"Interest payable and similar expenses","value":-0.001901},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}},"baseIngreso":"full"},
 };
 
 const burtonalbionGbPresupuestoOverlayByYear = {};

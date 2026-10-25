@@ -57,9 +57,9 @@ const werderbremenDeExpenseLinesByYear = {
 };
 
 const werderbremenDeFiscalYearMeta = {
-  2023: {"currency":"EUR","sourceId":"werderbremen-de-konzernabschluss-2023","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.896254,"tax":-0.179978,"grossDebt":34.772,"cash":18.966331,"officialTotalRevenue":120.077632,"officialTotalExpenses":122.83956,"officialPAT":-3.83816},
-  2024: {"currency":"EUR","sourceId":"werderbremen-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.889156,"tax":-1.13312,"grossDebt":30.182383,"cash":39.593507,"officialTotalRevenue":149.902536,"officialTotalExpenses":144.6932,"officialPAT":2.187061},
-  2025: {"currency":"EUR","sourceId":"werderbremen-de-konzernabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2.193566,"tax":-0.201059,"grossDebt":31.388,"cash":29.59003,"officialTotalRevenue":146.482176,"officialTotalExpenses":151.507887,"officialPAT":-7.420336},
+  2023: {"currency":"EUR","sourceId":"werderbremen-de-konzernabschluss-2023","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.896254,"tax":-0.179978,"grossDebt":34.772,"cash":18.966331,"officialTotalRevenue":120.077632,"officialTotalExpenses":122.83956,"officialPAT":-3.83816,"baseIngreso":"full"},
+  2024: {"currency":"EUR","sourceId":"werderbremen-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.889156,"tax":-1.13312,"grossDebt":30.182383,"cash":39.593507,"officialTotalRevenue":149.902536,"officialTotalExpenses":144.6932,"officialPAT":2.187061,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"werderbremen-de-konzernabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2.193566,"tax":-0.201059,"grossDebt":31.388,"cash":29.59003,"officialTotalRevenue":146.482176,"officialTotalExpenses":151.507887,"officialPAT":-7.420336,"baseIngreso":"full"},
 };
 
 const werderbremenDePresupuestoOverlayByYear = {};

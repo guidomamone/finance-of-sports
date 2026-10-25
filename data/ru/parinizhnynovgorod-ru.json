@@ -148,7 +148,8 @@
           "member_dues": {"in":"lump_football_operations","possible":true},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -236,7 +237,8 @@
           "member_dues": {"in":"lump_football_operations","possible":true},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -324,7 +326,8 @@
           "member_dues": {"in":"lump_football_operations","possible":true},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -419,7 +422,8 @@
           "member_dues": {"in":"lump_football_operations","possible":true},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -522,7 +526,8 @@
           "member_dues": {"in":"lump_football_operations","possible":true},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     }
   ],

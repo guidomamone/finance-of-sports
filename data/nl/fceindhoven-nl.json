@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fceindhoven-nl",
@@ -77,7 +77,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01924,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":5.968194,"expenses":5.917161,"net_result":0.031793},
-      "adjustments": {"extra_rows":[{"label":"Financië le baten en lasten","amount":-0.01924},{"label":"Belastingen","amount":null}]}
+      "adjustments": {"extra_rows":[{"label":"Financië le baten en lasten","amount":-0.01924},{"label":"Belastingen","amount":null}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

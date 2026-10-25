@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "americamineiro-br",
@@ -139,7 +139,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-13.244308,"tax":0,"gross_debt":22.705352,"cash":14.105841},
       "official_totals": {"revenue":187.87676,"expenses":196.767023,"net_result":-22.134572},
-      "adjustments": {"included_in":{"member_dues":{"in":"other_income","possible":true}}}
+      "adjustments": {"included_in":{"member_dues":{"in":"other_income","possible":true}},"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -244,7 +244,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-9.875294,"tax":0,"gross_debt":29.444135,"cash":0.129673},
       "official_totals": {"revenue":104.248007,"expenses":152.812497,"net_result":-58.439785},
-      "adjustments": {"included_in":{"member_dues":{"in":"other_income","possible":true}}}
+      "adjustments": {"included_in":{"member_dues":{"in":"other_income","possible":true}},"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -328,7 +328,7 @@
       ],
       "financial": {"net_interest":-6.511643,"tax":0,"gross_debt":36.494416,"cash":0.394718},
       "official_totals": {"revenue":71.810838,"expenses":125.653755,"net_result":-60.354558},
-      "adjustments": {"included_in":{"member_dues":{"in":"other_income","possible":true}}}
+      "adjustments": {"included_in":{"member_dues":{"in":"other_income","possible":true}},"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

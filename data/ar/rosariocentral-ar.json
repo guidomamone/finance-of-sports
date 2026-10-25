@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "rosariocentral-ar",
@@ -242,7 +242,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-266.766751,"tax":0,"gross_debt":4128.559186,"cash":42.78884},
-      "official_totals": {"revenue":8759.746504,"expenses":11600.20135,"net_result":-3107.221597}
+      "official_totals": {"revenue":8759.746504,"expenses":11600.20135,"net_result":-3107.221597},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -444,7 +445,8 @@
         {"label":"Tasas e impuestos","category":"admin_general","subcategory":"admin_general_expense","amount":-11.106881,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-901.781813,"tax":0,"gross_debt":33960.348119,"cash":271.773022},
-      "official_totals": {"revenue":45989.403491,"expenses":58497.629215,"net_result":-13410.007536}
+      "official_totals": {"revenue":45989.403491,"expenses":58497.629215,"net_result":-13410.007536},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "squad_transfers": [],

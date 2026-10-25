@@ -46,7 +46,7 @@ const willemiiNlExpenseLinesByYear = {
 };
 
 const willemiiNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"willemii-nl-jaarverslag-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.302082,"tax":0.005186,"grossDebt":null,"cash":null,"officialTotalRevenue":20.321775,"officialTotalExpenses":20.046986,"officialPAT":-0.022107,"extraRows":[{"label":"Financiële baten en lasten","value":-0.302082},{"label":"Vennootschapsbelasting","value":0.005186}]},
+  2025: {"currency":"EUR","sourceId":"willemii-nl-jaarverslag-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.302082,"tax":0.005186,"grossDebt":null,"cash":null,"officialTotalRevenue":20.321775,"officialTotalExpenses":20.046986,"officialPAT":-0.022107,"extraRows":[{"label":"Financiële baten en lasten","value":-0.302082},{"label":"Vennootschapsbelasting","value":0.005186}],"baseIngreso":"full"},
 };
 
 const willemiiNlPresupuestoOverlayByYear = {};

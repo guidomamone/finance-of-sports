@@ -35,7 +35,7 @@ const telstarNlExpenseLinesByYear = {
 };
 
 const telstarNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"telstar-nl-jaarverslag-2024-2025-full","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.029,"tax":0.139,"grossDebt":null,"cash":null,"officialTotalRevenue":5.76,"officialTotalExpenses":5.55,"officialPAT":0.32,"extraRows":[{"label":"Som der financiële baten en lasten","value":-0.029},{"label":"Belasting","value":0.139}]},
+  2025: {"currency":"EUR","sourceId":"telstar-nl-jaarverslag-2024-2025-full","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.029,"tax":0.139,"grossDebt":null,"cash":null,"officialTotalRevenue":5.76,"officialTotalExpenses":5.55,"officialPAT":0.32,"extraRows":[{"label":"Som der financiële baten en lasten","value":-0.029},{"label":"Belasting","value":0.139}],"baseIngreso":"full"},
 };
 
 const telstarNlPresupuestoOverlayByYear = {};

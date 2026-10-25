@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "saopaulo-br",
@@ -376,7 +376,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-77.544,"tax":0,"gross_debt":217.528,"cash":3.346},
-      "official_totals": {"revenue":668.963,"expenses":653.677,"net_result":-62.258}
+      "official_totals": {"revenue":668.963,"expenses":653.677,"net_result":-62.258},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -740,7 +741,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-93.386,"tax":0,"gross_debt":259.26,"cash":23.728},
-      "official_totals": {"revenue":722.072,"expenses":814.73,"net_result":-287.64}
+      "official_totals": {"revenue":722.072,"expenses":814.73,"net_result":-287.64},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -926,7 +928,8 @@
           {"label":"Receitas financeiras","amount":14.731},
           {"label":"Despesas financeiras","amount":-116.041},
           {"label":"Resultado líquido em cotas de fundos","amount":-23.895}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

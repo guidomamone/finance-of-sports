@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "cremonese-it",
@@ -245,7 +245,8 @@
           {"label":"altri","amount":-0.125764},
           {"label":"imposte correnti","amount":-0.687127},
           {"label":"imposte differite e anticipate","amount":-0.221933}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -512,7 +513,8 @@
           {"label":"17-bis) utili e perdite su cambi","amount":-0.0022},
           {"label":"imposte correnti","amount":-2.652176},
           {"label":"imposte differite e anticipate","amount":-0.076756}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -777,7 +779,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.048206,"tax":-1.547347,"gross_debt":1.06442,"cash":0.392111},
       "official_totals": {"revenue":57.678554,"expenses":54.081038,"net_result":2.001962},
-      "adjustments": {"extra_rows":[{"label":"altri","amount":0.030856},{"label":"altri","amount":-0.079062},{"label":"imposte correnti","amount":-1.547347}]}
+      "adjustments": {
+        "extra_rows": [{"label":"altri","amount":0.030856},{"label":"altri","amount":-0.079062},{"label":"imposte correnti","amount":-1.547347}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2025,
@@ -1113,7 +1118,8 @@
           {"label":"altri (oneri finanziari)","amount":-0.029016},
           {"label":"imposte correnti","amount":-1.182142},
           {"label":"imposte differite e anticipate","amount":2.255274}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

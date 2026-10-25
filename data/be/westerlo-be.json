@@ -81,7 +81,8 @@
           {"label":"Financiële kosten","amount":-0.003795},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.068497}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":4.882931,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":4.882931,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -171,7 +172,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.087489,"tax":-0.283163,"gross_debt":39.407332,"cash":0.13509},
       "official_totals": {"revenue":30.729382,"expenses":42.126477,"net_result":-11.767747},
-      "adjustments": {"no_breakdown":[{"line":"Omzet","side":"revenue","amount":14.373418,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":14.373418,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
+      }
     }
   ],
   "budget_overlay": {},

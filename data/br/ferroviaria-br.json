@@ -193,7 +193,8 @@
         "included_in": {
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -253,7 +254,8 @@
             "kind": "other"
           }
         ],
-        "included_in": {"match_organisation_expense":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
+        "included_in": {"match_organisation_expense":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -449,7 +451,8 @@
           {"label":"Encargos Financeiros","amount":-0.000073},
           {"label":"Comissão s/Cartão","amount":-0.003034},
           {"label":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -705,7 +708,8 @@
           {"label":"Encargos Financeiros","amount":-0.000003},
           {"label":"Descontos Obtidos","amount":0.000412},
           {"label":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -938,7 +942,8 @@
           {"label":"Encargos Financeiros","amount":-0.107},
           {"label":"Rendimentos Aplicações Financeiras","amount":0.000036},
           {"label":"Descontos Obtidos","amount":0.001365}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1113,7 +1118,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.266455,"tax":0,"gross_debt":0.26595,"cash":0.027357},
-      "official_totals": {"revenue":9.211197,"expenses":10.134897,"net_result":-1.190155}
+      "official_totals": {"revenue":9.211197,"expenses":10.134897,"net_result":-1.190155},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -1166,7 +1172,8 @@
           "member_dues": {"in":"lump_football_operations","possible":true},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -1566,7 +1573,8 @@
           {"label":"Rendas Eventuais","amount":0},
           {"label":"Contribuição Social","amount":-0.022657},
           {"label":"IRPJ","amount":-0.038936}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1623,7 +1631,8 @@
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -1755,7 +1764,8 @@
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -1817,7 +1827,8 @@
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -1898,7 +1909,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.807542,"tax":0,"gross_debt":0.270175,"cash":0.251084},
       "official_totals": {"revenue":31.503023,"expenses":42.984341,"net_result":-15.28886},
-      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.017055},{"label":"Despesas financeiras","amount":-3.824597}]}
+      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.017055},{"label":"Despesas financeiras","amount":-3.824597}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -1980,7 +1991,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.522247,"tax":0,"gross_debt":0.023323,"cash":0.436238},
       "official_totals": {"revenue":48.136132,"expenses":62.863305,"net_result":-15.24942},
-      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.107707},{"label":"Despesas financeiras","amount":-0.629954}]}
+      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.107707},{"label":"Despesas financeiras","amount":-0.629954}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

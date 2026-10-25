@@ -40,8 +40,8 @@ const feyenoordNlExpenseLinesByYear = {
 };
 
 const feyenoordNlFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"feyenoord-nl-jaarverslag-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.982,"tax":-3.756,"grossDebt":97.781,"cash":0.062,"officialTotalRevenue":165.404,"officialTotalExpenses":150.119,"officialPAT":9.547},
-  2025: {"currency":"EUR","sourceId":"feyenoord-nl-jaarverslag-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.433,"tax":-8.017,"grossDebt":113.356,"cash":14.648,"officialTotalRevenue":220.791,"officialTotalExpenses":189.286,"officialPAT":23.055},
+  2024: {"currency":"EUR","sourceId":"feyenoord-nl-jaarverslag-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.982,"tax":-3.756,"grossDebt":97.781,"cash":0.062,"officialTotalRevenue":165.404,"officialTotalExpenses":150.119,"officialPAT":9.547,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"feyenoord-nl-jaarverslag-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.433,"tax":-8.017,"grossDebt":113.356,"cash":14.648,"officialTotalRevenue":220.791,"officialTotalExpenses":189.286,"officialPAT":23.055,"baseIngreso":"full"},
 };
 
 const feyenoordNlPresupuestoOverlayByYear = {};

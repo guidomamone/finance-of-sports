@@ -32,7 +32,7 @@ const adodenhaagNlExpenseLinesByYear = {
 };
 
 const adodenhaagNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"adodenhaag-nl-jaarrekening2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.005219,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":14.566217,"officialTotalExpenses":20.07912,"officialPAT":-5.507684,"extraRows":[{"label":"Financiële baten en lasten","value":0.005219},{"label":"Belastingen","value":null}]},
+  2025: {"currency":"EUR","sourceId":"adodenhaag-nl-jaarrekening2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.005219,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":14.566217,"officialTotalExpenses":20.07912,"officialPAT":-5.507684,"extraRows":[{"label":"Financiële baten en lasten","value":0.005219},{"label":"Belastingen","value":null}],"baseIngreso":"full"},
 };
 
 const adodenhaagNlPresupuestoOverlayByYear = {};

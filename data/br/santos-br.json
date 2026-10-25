@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "santos-br",
@@ -135,7 +135,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-72.973,"tax":0,"gross_debt":129.591,"cash":0.17},
-      "official_totals": {"revenue":379.07,"expenses":411.303,"net_result":-105.206}
+      "official_totals": {"revenue":379.07,"expenses":411.303,"net_result":-105.206},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -239,7 +240,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-75.908,"tax":0,"gross_debt":94.338,"cash":0.295},
-      "official_totals": {"revenue":624.922,"expenses":628.41,"net_result":-79.396}
+      "official_totals": {"revenue":624.922,"expenses":628.41,"net_result":-79.396},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

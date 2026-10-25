@@ -281,7 +281,8 @@
           "broadcasting": {"in":"lump_football_operations","possible":true},
           "matchday_competition": {"in":"lump_football_operations","possible":true},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -342,7 +343,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -408,7 +410,8 @@
           {"label":"Outros Juros e Proveitos Similares","amount":1.244},
           {"label":"Juros e Custos Similares","amount":-3.241},
           {"label":"Imposto sobre o Rendimento do Exerc","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -474,7 +477,8 @@
           {"label":"Outros Juros e Proveitos Similares","amount":0.867},
           {"label":"Juros e Custos Similares","amount":-3.57},
           {"label":"Imposto sobre o Rendimento do Exerc","amount":-0.014}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -540,7 +544,8 @@
           {"label":"Juros e Custos Similares","amount":-2.486},
           {"label":"Outros Juros e Proveitos Similares","amount":0.51},
           {"label":"Imposto sobre o Rendimento do Exercício","amount":-0.014}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -602,7 +607,8 @@
           {"label":"Outros Juros e Proveitos Similares","amount":0.467},
           {"label":"Juros e Custos Similares","amount":-2.139},
           {"label":"Imposto sobre o Rendimento do Exercício","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -667,7 +673,8 @@
           {"label":"Outros Juros e Proveitos Similares","amount":0.291},
           {"label":"Juros e Custos Similares","amount":-1.905},
           {"label":"Imposto sobre o Rendimento do Exercício","amount":-0.012}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -735,7 +742,8 @@
           {"label":"Juros e Custos Similares","amount":-2.515},
           {"label":"Outros Juros e Proveitos Similares","amount":0.173},
           {"label":"Imposto sobre o Rendimento do Exercício","amount":-0.015}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -820,7 +828,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":1.148},
           {"label":"Impostos diferidos","amount":-0.016},
           {"label":"Imposto sobre o rendimento","amount":-0.022}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -931,7 +940,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":0.964},
           {"label":"Impostos diferidos","amount":-1.503},
           {"label":"Imposto sobre o rendimento","amount":-0.023}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1038,7 +1048,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":0.372},
           {"label":"Impostos diferidos","amount":-1.565},
           {"label":"Imposto sobre o rendimento","amount":-0.044}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1161,7 +1172,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":0.418},
           {"label":"Impostos diferidos","amount":-14.082},
           {"label":"Imposto sobre o rendimento","amount":-0.05}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1300,7 +1312,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":3.458},
           {"label":"Impostos diferidos","amount":null},
           {"label":"Imposto sobre o rendimento","amount":-0.116}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1440,7 +1453,8 @@
           {"label":"Gastos e perdas financeiros","amount":-9.259},
           {"label":"Rendimentos e ganhos financeiros","amount":2.361},
           {"label":"Imposto sobre o rendimento","amount":-0.24}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1565,7 +1579,8 @@
           {"label":"Gastos e perdas financeiros","amount":-6.511},
           {"label":"Rendimentos e ganhos financeiros","amount":2.736},
           {"label":"Imposto sobre o rendimento","amount":-0.12}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1711,7 +1726,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.113,"tax":-3.017,"gross_debt":130.053,"cash":10.595},
       "official_totals": {"revenue":86.384,"expenses":62.921,"net_result":19.333},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-1.113},{"label":"Imposto sobre o rendimento","amount":-3.017}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-1.113},{"label":"Imposto sobre o rendimento","amount":-3.017}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2016,
@@ -1839,7 +1854,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.76,"tax":0.206,"gross_debt":132.055,"cash":3.324},
       "official_totals": {"revenue":76.466,"expenses":87.826,"net_result":-31.905},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-5.76},{"label":"Imposto sobre o rendimento","amount":0.206}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-5.76},{"label":"Imposto sobre o rendimento","amount":0.206}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -2006,7 +2021,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.427,"tax":-4.66,"gross_debt":127.371,"cash":6.306},
       "official_totals": {"revenue":172.998,"expenses":130.377,"net_result":30.537},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-7.427},{"label":"Imposto sobre o rendimento","amount":-4.66}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-7.427},{"label":"Imposto sobre o rendimento","amount":-4.66}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2018,
@@ -2148,7 +2163,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.074,"tax":2.364,"gross_debt":111.243,"cash":1.783},
       "official_totals": {"revenue":126.109,"expenses":141.3,"net_result":-19.902},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-7.074},{"label":"Imposto sobre o rendimento","amount":2.364}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-7.074},{"label":"Imposto sobre o rendimento","amount":2.364}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -2288,7 +2303,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.405,"tax":-1.532,"gross_debt":149.759,"cash":3.538},
       "official_totals": {"revenue":151.63,"expenses":147.569,"net_result":-7.877},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-10.405},{"label":"Imposto sobre o rendimento","amount":-1.532}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-10.405},{"label":"Imposto sobre o rendimento","amount":-1.532}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -2481,7 +2496,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-15.401,"tax":0.705,"gross_debt":126.658,"cash":15.416},
       "official_totals": {"revenue":175.474,"expenses":148.254,"net_result":12.521},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-15.401},{"label":"Imposto sobre o rendimento","amount":0.705}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-15.401},{"label":"Imposto sobre o rendimento","amount":0.705}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -2601,7 +2616,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-9.926,"tax":1.466,"gross_debt":129.468,"cash":9.642},
       "official_totals": {"revenue":100.211,"expenses":124.706,"net_result":-32.955},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-9.926},{"label":"Imposto sobre o rendimento","amount":1.466}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-9.926},{"label":"Imposto sobre o rendimento","amount":1.466}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -2770,7 +2785,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.654,"tax":-0.046,"gross_debt":158.467,"cash":4.886},
       "official_totals": {"revenue":181.912,"expenses":143.345,"net_result":25.005},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-10.654},{"label":"Imposto sobre o rendimento","amount":-0.046}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-10.654},{"label":"Imposto sobre o rendimento","amount":-0.046}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -2942,7 +2957,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-14.877,"tax":-0.421,"gross_debt":138.253,"cash":8.633},
       "official_totals": {"revenue":222.013,"expenses":180.388,"net_result":25.206},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-14.877},{"label":"Imposto sobre o rendimento","amount":-0.421}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-14.877},{"label":"Imposto sobre o rendimento","amount":-0.421}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -3113,7 +3128,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.134,"tax":-0.33,"gross_debt":150.264,"cash":7.008},
       "official_totals": {"revenue":246.648,"expenses":231.996,"net_result":12.079},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-2.134},{"label":"Imposto sobre o rendimento","amount":-0.33}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-2.134},{"label":"Imposto sobre o rendimento","amount":-0.33}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -3280,7 +3295,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-25.246,"tax":-0.163,"gross_debt":148.924,"cash":15.581},
       "official_totals": {"revenue":264.979,"expenses":217.458,"net_result":20.023},
-      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-25.246},{"label":"Imposto sobre o rendimento","amount":-0.163}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financeiros","amount":-25.246},{"label":"Imposto sobre o rendimento","amount":-0.163}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

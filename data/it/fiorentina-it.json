@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fiorentina-it",
@@ -375,7 +375,8 @@
           {"label":"imposte anni precedenti","amount":0.180286},
           {"label":"imposte anticipate","amount":-0.413417},
           {"label":"proventi/oneri da consolidato fiscale","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -654,7 +655,8 @@
           {"label":"imposte anticipate","amount":0.012124},
           {"label":"imposte differite","amount":5.895719},
           {"label":"proventi/oneri da consolidato fiscale","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -924,7 +926,8 @@
           {"label":"imposte anticipate","amount":0.137766},
           {"label":"imposte differrite","amount":2.565541},
           {"label":"proventi/oneri da consolidato fiscale","amount":0.770836}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1226,7 +1229,8 @@
           {"label":"imposte anticipate","amount":0.586993},
           {"label":"imposte differite","amount":-21.05199},
           {"label":"proventi/oneri da consolidato fiscale","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1402,7 +1406,8 @@
           {"label":"imposte anni precedenti","amount":-0.00443},
           {"label":"imposte anticipate","amount":-1.266178},
           {"label":"imposte differite","amount":2.882665}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1578,7 +1583,8 @@
           {"label":"imposte anni precedenti","amount":-0.052302},
           {"label":"imposte anticipate","amount":0.283142},
           {"label":"imposte differite","amount":-2.645764}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

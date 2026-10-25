@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "hoffenheim-de",
@@ -92,7 +92,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":4.718732,"tax":24.430913,"gross_debt":58.277885,"cash":35.578492},
-      "official_totals": {"revenue":150.791686,"expenses":178.673331,"net_result":1.268}
+      "official_totals": {"revenue":150.791686,"expenses":178.673331,"net_result":1.268},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -155,7 +156,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.512087,"tax":27.38542,"gross_debt":79.418182,"cash":41.681699},
-      "official_totals": {"revenue":173.397811,"expenses":203.195048,"net_result":1.10027}
+      "official_totals": {"revenue":173.397811,"expenses":203.195048,"net_result":1.10027},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

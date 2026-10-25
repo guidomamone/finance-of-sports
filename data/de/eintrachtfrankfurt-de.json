@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "eintrachtfrankfurt-de",
@@ -123,7 +123,8 @@
         {"label":"Fußballschule","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-0.986,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.132041,"tax":-4.867652,"gross_debt":57.069177,"cash":3.666443},
-      "official_totals": {"revenue":390.50482,"expenses":353.647338,"net_result":26.857789}
+      "official_totals": {"revenue":390.50482,"expenses":353.647338,"net_result":26.857789},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -215,7 +216,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.43105,"tax":-0.067432,"gross_debt":60.715487,"cash":4.383441},
-      "official_totals": {"revenue":389.131471,"expenses":392.089555,"net_result":-8.456566}
+      "official_totals": {"revenue":389.131471,"expenses":392.089555,"net_result":-8.456566},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

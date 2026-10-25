@@ -23,7 +23,7 @@ const panathinaikosGrExpenseLinesByYear = {
 };
 
 const panathinaikosGrFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"panathinaikos-gr-annual-fr-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":-10.983661,"assetSales":-0.025836,"netInterest":-0.419796,"tax":0.045292,"grossDebt":0,"cash":1.474426,"officialTotalRevenue":57.601032,"officialTotalExpenses":72.71275,"officialPAT":-26.495719},
+  2025: {"currency":"EUR","sourceId":"panathinaikos-gr-annual-fr-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":-10.983661,"assetSales":-0.025836,"netInterest":-0.419796,"tax":0.045292,"grossDebt":0,"cash":1.474426,"officialTotalRevenue":57.601032,"officialTotalExpenses":72.71275,"officialPAT":-26.495719,"baseIngreso":"full"},
 };
 
 const panathinaikosGrPresupuestoOverlayByYear = {};

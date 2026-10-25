@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "carlisleunited-gb",
@@ -55,7 +55,8 @@
       "official_totals": {"revenue":7.09971,"expenses":12.245383,"net_result":-5.122468},
       "adjustments": {
         "extra_rows": [{"label":"Interest receivable and similar income","amount":0.024064},{"label":"Interest payable and similar expenses","amount":-0.000859}],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     }
   ],

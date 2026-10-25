@@ -76,8 +76,8 @@ const cearaBrExpenseLinesByYear = {
 };
 
 const cearaBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"ceara-br-demonstracoes-2025","reportType":"official_balance_sheet","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-19.324,"tax":0,"grossDebt":47.159,"cash":0.619,"officialTotalRevenue":161.925,"officialTotalExpenses":148.303,"officialPAT":-5.702},
-  2025: {"currency":"BRL","sourceId":"ceara-br-demonstracoes-2025","reportType":"official_balance_sheet","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-36.613,"tax":0,"grossDebt":84.732,"cash":2.11,"officialTotalRevenue":221.546,"officialTotalExpenses":270.769,"officialPAT":-85.837},
+  2024: {"currency":"BRL","sourceId":"ceara-br-demonstracoes-2025","reportType":"official_balance_sheet","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-19.324,"tax":0,"grossDebt":47.159,"cash":0.619,"officialTotalRevenue":161.925,"officialTotalExpenses":148.303,"officialPAT":-5.702,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"ceara-br-demonstracoes-2025","reportType":"official_balance_sheet","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-36.613,"tax":0,"grossDebt":84.732,"cash":2.11,"officialTotalRevenue":221.546,"officialTotalExpenses":270.769,"officialPAT":-85.837,"baseIngreso":"full"},
 };
 
 const cearaBrPresupuestoOverlayByYear = {};

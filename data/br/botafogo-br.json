@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "botafogo-br",
@@ -182,7 +182,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-57.197,"tax":0,"gross_debt":358.871,"cash":16.057},
-      "official_totals": {"revenue":537.286,"expenses":581.184,"net_result":-101.095}
+      "official_totals": {"revenue":537.286,"expenses":581.184,"net_result":-101.095},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -302,7 +303,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-157.221,"tax":0,"gross_debt":48.112,"cash":128.951},
-      "official_totals": {"revenue":664.683,"expenses":800.936,"net_result":-299.983}
+      "official_totals": {"revenue":664.683,"expenses":800.936,"net_result":-299.983},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -435,7 +437,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-301.35,"tax":0,"gross_debt":138.972,"cash":25.557},
-      "official_totals": {"revenue":1359.803,"expenses":1342.807,"net_result":-290.898}
+      "official_totals": {"revenue":1359.803,"expenses":1342.807,"net_result":-290.898},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

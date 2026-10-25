@@ -122,7 +122,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -167,7 +168,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -212,7 +214,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -270,7 +273,8 @@
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -322,7 +326,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -379,7 +384,8 @@
             "kind": "cost_of_sales"
           }
         ],
-        "included_in": {"broadcasting":{"in":"other_income","possible":true}}
+        "included_in": {"broadcasting":{"in":"other_income","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -435,7 +441,8 @@
             "kind": "cost_of_sales"
           }
         ],
-        "included_in": {"broadcasting":{"in":"other_income","possible":true}}
+        "included_in": {"broadcasting":{"in":"other_income","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -490,7 +497,8 @@
             "kind": "cost_of_sales"
           }
         ],
-        "included_in": {"broadcasting":{"in":"other_income","possible":true}}
+        "included_in": {"broadcasting":{"in":"other_income","possible":true}},
+        "revenue_basis": "full"
       }
     }
   ],

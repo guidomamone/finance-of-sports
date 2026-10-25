@@ -18,7 +18,7 @@ const lincolncityGbExpenseLinesByYear = {
 };
 
 const lincolncityGbFiscalYearMeta = {
-  2025: {"currency":"GBP","sourceId":"lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.012991,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":9.172548,"officialTotalExpenses":12.040559,"officialPAT":-2.881002,"extraRows":[{"label":"Interest payable and similar expenses","value":-0.012991},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true},"member_dues":{"en":"matchday_competition","posible":true}}},
+  2025: {"currency":"GBP","sourceId":"lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.012991,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":9.172548,"officialTotalExpenses":12.040559,"officialPAT":-2.881002,"extraRows":[{"label":"Interest payable and similar expenses","value":-0.012991},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true},"member_dues":{"en":"matchday_competition","posible":true}},"baseIngreso":"full"},
 };
 
 const lincolncityGbPresupuestoOverlayByYear = {};

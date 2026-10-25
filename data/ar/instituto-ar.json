@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "instituto-ar",
@@ -234,7 +234,8 @@
         {"label":"Gastos extraordinarios","category":"exceptional","subcategory":"exceptional_items","amount":-18.91165,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":641.475849,"tax":0,"gross_debt":2764.369893,"cash":450.629479},
-      "official_totals": {"revenue":17958.365499,"expenses":16750.425894,"net_result":1830.503804}
+      "official_totals": {"revenue":17958.365499,"expenses":16750.425894,"net_result":1830.503804},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -413,7 +414,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":556.009124,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":27393.078747,"expenses":25860.787603,"net_result":2087.261474}
+      "official_totals": {"revenue":27393.078747,"expenses":25860.787603,"net_result":2087.261474},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "squad_transfers": [],

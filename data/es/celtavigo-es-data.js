@@ -31,7 +31,7 @@ const celtavigoEsExpenseLinesByYear = {
 };
 
 const celtavigoEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"celtavigo-es-cuentas-anuales-individual-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":26.807049,"assetSales":0,"netInterest":-6.223713,"tax":1.868266,"grossDebt":60.315351,"cash":13.97507,"officialTotalRevenue":91.31069,"officialTotalExpenses":118.388611,"officialPAT":-4.626316},
+  2025: {"currency":"EUR","sourceId":"celtavigo-es-cuentas-anuales-individual-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":26.807049,"assetSales":0,"netInterest":-6.223713,"tax":1.868266,"grossDebt":60.315351,"cash":13.97507,"officialTotalRevenue":91.31069,"officialTotalExpenses":118.388611,"officialPAT":-4.626316,"baseIngreso":"full"},
 };
 
 const celtavigoEsPasesData = [];

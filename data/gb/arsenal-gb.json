@@ -143,7 +143,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -238,7 +239,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -284,7 +286,8 @@
         {"label":"Cost of property sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.118,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.432,"tax":0,"gross_debt":341.784,"cash":66.819},
-      "official_totals": {"revenue":665.719,"expenses":664.974,"net_result":-17.687}
+      "official_totals": {"revenue":665.719,"expenses":664.974,"net_result":-17.687},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -335,7 +338,8 @@
         {"label":"Other operating charges","category":"other_operating_expenses","subcategory":"other_expenses","amount":-200.756,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-17.687,"tax":-0.029,"gross_debt":358.294,"cash":55.994},
-      "official_totals": {"revenue":770.545,"expenses":754.206,"net_result":-1.377}
+      "official_totals": {"revenue":770.545,"expenses":754.206,"net_result":-1.377},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

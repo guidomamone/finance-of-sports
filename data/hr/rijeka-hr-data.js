@@ -69,8 +69,8 @@ const rijekaHrExpenseLinesByYear = {
 };
 
 const rijekaHrFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"rijeka-hr-financijsko-izvjesce-2024-kombinirani","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-12-31","profitOnPlayerSales":10.092795,"assetSales":0,"netInterest":-0.790187,"tax":0,"grossDebt":14.092288,"cash":1.691323,"officialTotalRevenue":8.37028,"officialTotalExpenses":17.630494,"officialPAT":0.042394},
-  2025: {"currency":"EUR","sourceId":"rijeka-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.241,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":26.317,"officialTotalExpenses":22.94,"officialPAT":3.136,"extraRows":[{"label":"Financijski prihodi","value":0.357},{"label":"Financijski rashodi","value":-0.598},{"label":"Porez na dobit","value":null}]},
+  2024: {"currency":"EUR","sourceId":"rijeka-hr-financijsko-izvjesce-2024-kombinirani","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-12-31","profitOnPlayerSales":10.092795,"assetSales":0,"netInterest":-0.790187,"tax":0,"grossDebt":14.092288,"cash":1.691323,"officialTotalRevenue":8.37028,"officialTotalExpenses":17.630494,"officialPAT":0.042394,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"rijeka-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.241,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":26.317,"officialTotalExpenses":22.94,"officialPAT":3.136,"extraRows":[{"label":"Financijski prihodi","value":0.357},{"label":"Financijski rashodi","value":-0.598},{"label":"Porez na dobit","value":null}],"baseIngreso":"full"},
 };
 
 const rijekaHrPresupuestoOverlayByYear = {};

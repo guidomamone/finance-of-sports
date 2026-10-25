@@ -23,7 +23,7 @@ const agfDkExpenseLinesByYear = {
 };
 
 const agfDkFiscalYearMeta = {
-  2021: {"currency":"DKK","sourceId":"agf-aarsrapport-2020-21","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2021-06-30","profitOnPlayerSales":0,"assetSales":-0.292,"netInterest":4.865,"tax":0.5,"grossDebt":0,"cash":29.347,"officialTotalRevenue":188.321,"officialTotalExpenses":168.076,"officialPAT":25.318},
+  2021: {"currency":"DKK","sourceId":"agf-aarsrapport-2020-21","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2021-06-30","profitOnPlayerSales":0,"assetSales":-0.292,"netInterest":4.865,"tax":0.5,"grossDebt":0,"cash":29.347,"officialTotalRevenue":188.321,"officialTotalExpenses":168.076,"officialPAT":25.318,"baseIngreso":"full"},
 };
 
 const agfDkPresupuestoOverlayByYear = {};

@@ -113,7 +113,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "gross_margin"
           }
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -162,7 +163,8 @@
           {"label":"Øvrige finansielle omkostninger","amount":-0.821324},
           {"label":"Skat af årets resultat","amount":4.132991}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":41.600084,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":41.600084,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -211,7 +213,8 @@
           {"label":"Øvrige finansielle omkostninger","amount":-0.857081},
           {"label":"Skat af årets resultat","amount":1.746248}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":37.431315,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":37.431315,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -269,7 +272,8 @@
           {"label":"Finansielle omkostninger","amount":-0.947044},
           {"label":"Skat af årets resultat","amount":3.762243}
         ],
-        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":66.288538,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":66.288538,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

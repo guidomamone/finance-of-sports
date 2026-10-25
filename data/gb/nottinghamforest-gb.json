@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "nottinghamforest-gb",
@@ -104,7 +104,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.768,"tax":0.607,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":33.767,"expenses":79.216,"net_result":-45.61},
-      "adjustments": {"extra_rows":[{"label":"Interest payable and similar expenses","amount":-0.768},{"label":"Tax on loss","amount":0.607}]}
+      "adjustments": {"extra_rows":[{"label":"Interest payable and similar expenses","amount":-0.768},{"label":"Tax on loss","amount":0.607}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -147,7 +147,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.302,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":157.372,"expenses":214.316,"net_result":-67.246},
-      "adjustments": {"extra_rows":[{"label":"Interest payable and similar expenses","amount":-10.302},{"label":"Tax on loss","amount":null}]}
+      "adjustments": {"extra_rows":[{"label":"Interest payable and similar expenses","amount":-10.302},{"label":"Tax on loss","amount":null}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -190,7 +190,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-15.177,"tax":0,"gross_debt":95.847,"cash":0.029},
-      "official_totals": {"revenue":290.083,"expenses":262.807,"net_result":12.099}
+      "official_totals": {"revenue":290.083,"expenses":262.807,"net_result":12.099},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -240,7 +241,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-21.011,"tax":0,"gross_debt":146.485,"cash":13.224},
-      "official_totals": {"revenue":228.763,"expenses":286.673,"net_result":-78.921}
+      "official_totals": {"revenue":228.763,"expenses":286.673,"net_result":-78.921},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

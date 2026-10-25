@@ -99,8 +99,8 @@ const dinamozagrebHrExpenseLinesByYear = {
 };
 
 const dinamozagrebHrFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"dinamozagreb-hr-financijsko-izvjesce-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-12-31","profitOnPlayerSales":11.606208,"assetSales":-0.154714,"netInterest":-0.532036,"tax":-0.784561,"grossDebt":3.7,"cash":0.562542,"officialTotalRevenue":57.562235,"officialTotalExpenses":60.312014,"officialPAT":7.385118},
-  2025: {"currency":"EUR","sourceId":"dinamozagreb-hr-dinamo-2025-konsolidirano","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.319397,"tax":-0.079177,"grossDebt":null,"cash":null,"officialTotalRevenue":73.685549,"officialTotalExpenses":68.701354,"officialPAT":4.17139,"extraRows":[{"label":"Financijski prihodi","value":0.179345},{"label":"Financijski rashodi","value":-0.488039},{"label":"Neto tečajne razlike/(gubici)","value":-0.010703},{"label":"Porezni prihod/(rashod)","value":-0.079177}]},
+  2024: {"currency":"EUR","sourceId":"dinamozagreb-hr-financijsko-izvjesce-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-12-31","profitOnPlayerSales":11.606208,"assetSales":-0.154714,"netInterest":-0.532036,"tax":-0.784561,"grossDebt":3.7,"cash":0.562542,"officialTotalRevenue":57.562235,"officialTotalExpenses":60.312014,"officialPAT":7.385118,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"dinamozagreb-hr-dinamo-2025-konsolidirano","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.319397,"tax":-0.079177,"grossDebt":null,"cash":null,"officialTotalRevenue":73.685549,"officialTotalExpenses":68.701354,"officialPAT":4.17139,"extraRows":[{"label":"Financijski prihodi","value":0.179345},{"label":"Financijski rashodi","value":-0.488039},{"label":"Neto tečajne razlike/(gubici)","value":-0.010703},{"label":"Porezni prihod/(rashod)","value":-0.079177}],"baseIngreso":"full"},
 };
 
 const dinamozagrebHrPresupuestoOverlayByYear = {};

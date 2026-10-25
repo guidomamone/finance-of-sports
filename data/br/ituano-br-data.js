@@ -31,7 +31,7 @@ const ituanoBrExpenseLinesByYear = {
 };
 
 const ituanoBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"ituano-br-relatorio-auditoria-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.690259,"tax":0,"grossDebt":10.847429,"cash":0.054008,"officialTotalRevenue":29.239217,"officialTotalExpenses":35.61209,"officialPAT":-7.063131},
+  2024: {"currency":"BRL","sourceId":"ituano-br-relatorio-auditoria-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.690259,"tax":0,"grossDebt":10.847429,"cash":0.054008,"officialTotalRevenue":29.239217,"officialTotalExpenses":35.61209,"officialPAT":-7.063131,"baseIngreso":"full"},
 };
 
 const ituanoBrPresupuestoOverlayByYear = {};

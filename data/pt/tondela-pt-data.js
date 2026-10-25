@@ -61,7 +61,7 @@ const tondelaPtExpenseLinesByYear = {
 };
 
 const tondelaPtFiscalYearMeta = {
-  2021: {"currency":"EUR","sourceId":"tondela-pt-relatorio-contas-2020-21","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2021-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.025015,"tax":-0.00077,"grossDebt":0.880361,"cash":1.262584,"officialTotalRevenue":5.067334,"officialTotalExpenses":6.277065,"officialPAT":-1.273265,"extraRows":[{"label":"Juros e gastos similares suportados","value":-0.025015},{"label":"Imposto sobre o rendimento do período","value":-0.00077}]},
+  2021: {"currency":"EUR","sourceId":"tondela-pt-relatorio-contas-2020-21","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2021-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.025015,"tax":-0.00077,"grossDebt":0.880361,"cash":1.262584,"officialTotalRevenue":5.067334,"officialTotalExpenses":6.277065,"officialPAT":-1.273265,"extraRows":[{"label":"Juros e gastos similares suportados","value":-0.025015},{"label":"Imposto sobre o rendimento do período","value":-0.00077}],"baseIngreso":"full"},
 };
 
 const tondelaPtPresupuestoOverlayByYear = {};

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "lazio-it",
@@ -343,7 +343,8 @@
           {"label":"d) Da compartecipazioni ex art. 12 NOIF","amount":-1875.9},
           {"label":"e) Verso terzi","amount":-11359.084651},
           {"label":"22 - IMPOSTE SUL REDDITO D'ESERCIZIO","amount":-1975.818}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -493,7 +494,8 @@
           {"label":"c) verso terzi","amount":-23610.280096},
           {"label":"a) imposte correnti","amount":-4663.733},
           {"label":"b) imposte differite","amount":-4676.824}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -646,7 +648,8 @@
           {"label":"d) verso terzi","amount":-30460.368911},
           {"label":"a) imposte correnti","amount":-2345.117},
           {"label":"b) imposte differite","amount":36293.479}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -807,7 +810,8 @@
           {"label":"a) imposte correnti","amount":-1.152747},
           {"label":"b) imposte differite","amount":0},
           {"label":"c) imposte anticipate","amount":0.006353}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -964,7 +968,8 @@
           {"label":"a) imposte correnti","amount":-1.331065},
           {"label":"b) imposte differite","amount":0},
           {"label":"c) imposte anticipate","amount":0.039879}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1207,7 +1212,8 @@
           {"label":"a) imposte correnti","amount":-1.202178},
           {"label":"b) imposte differite","amount":0},
           {"label":"c) imposte anticipate","amount":-0.041694}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1407,7 +1413,8 @@
           {"label":"Imposte correnti","amount":-0.276123},
           {"label":"b) imposte differite","amount":-30.339423},
           {"label":"c) imposte anticipate","amount":19.888386}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1608,7 +1615,8 @@
           {"label":"Oneri finanziari netti e differenze cambio","amount":-4.22403},
           {"label":"Imposte correnti","amount":-2.704465},
           {"label":"Imposte differite e anticipate","amount":-12.443793}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1813,7 +1821,8 @@
           {"label":"Imposte correnti","amount":-1.609799},
           {"label":"b) imposte differite","amount":6.71712},
           {"label":"c) imposte anticipate","amount":-12.133934}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2023,7 +2032,8 @@
           {"label":"Imposte correnti","amount":-2.648093},
           {"label":"b) imposte differite","amount":6.681449},
           {"label":"c) imposte anticipate","amount":-10.255203}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2200,7 +2210,8 @@
           {"label":"Imposte correnti","amount":-2.869146},
           {"label":"b) imposte differite","amount":7.236889},
           {"label":"c) imposte anticipate","amount":-12.515913}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2396,7 +2407,8 @@
           {"label":"Imposte correnti","amount":-1.614354},
           {"label":"b) imposte differite","amount":0.255648},
           {"label":"c) imposte anticipate","amount":9.043235}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2579,7 +2591,8 @@
           {"label":"Oneri finanziari netti e differenze cambio","amount":-4.068181},
           {"label":"Imposte correnti","amount":-2.584541},
           {"label":"Imposte differite e anticipate","amount":5.533728}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2657,7 +2670,8 @@
           {"label":"Oneri finanziari netti e differenze cambio","amount":-2.185354},
           {"label":"Imposte correnti","amount":-2.060898},
           {"label":"Imposte differite e anticipate","amount":0.300414}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2840,7 +2854,8 @@
           {"label":"imposte correnti","amount":-3.432429},
           {"label":"imposte differite (b)","amount":0.17271},
           {"label":"imposte anticipate (c)","amount":0.760602}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2918,7 +2933,8 @@
           {"label":"Oneri finanziari netti e differenze cambio","amount":-1.866421},
           {"label":"Imposte correnti","amount":-1.979115},
           {"label":"Imposte differite e anticipate","amount":0.705905}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -3101,7 +3117,8 @@
           {"label":"Oneri finanziari netti e differenze cambio","amount":-2.338731},
           {"label":"Imposte correnti","amount":-2.732462},
           {"label":"Imposte differite e anticipate","amount":1.598621}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -3286,7 +3303,8 @@
           {"label":"Totale oneri finanziari","amount":-1.908083},
           {"label":"Imposte correnti","amount":-4.54685},
           {"label":"Imposte differite e anticipate","amount":1.53961}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -3475,7 +3493,8 @@
           {"label":"Imposte correnti","amount":-10.164684},
           {"label":"b) imposte differite","amount":0.148784},
           {"label":"c) imposte anticipate","amount":0.840677}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -3651,7 +3670,8 @@
           {"label":"Imposte correnti","amount":-3.810091},
           {"label":"b) imposte differite","amount":0.096755},
           {"label":"c) imposte anticipate","amount":3.273258}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -3825,7 +3845,8 @@
           {"label":"Imposte correnti","amount":-5.186667},
           {"label":"b) imposte differite","amount":1.403053},
           {"label":"c) imposte anticipate","amount":7.127023}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -3891,7 +3912,8 @@
           {"label":"Oneri finanziari","amount":-1.616854},
           {"label":"Imposte correnti","amount":-3.738451},
           {"label":"Imposte differite e anticipate","amount":-0.376866}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -3970,7 +3992,8 @@
           {"label":"Oneri finanziari","amount":-4.174164},
           {"label":"Imposte correnti","amount":-3.019757},
           {"label":"Imposte differite e anticipate","amount":-0.27384}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -4049,7 +4072,8 @@
           {"label":"Oneri finanziari","amount":-6.092124},
           {"label":"Imposte correnti","amount":-8.066049},
           {"label":"Imposte differite e anticipate","amount":5.836799}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -4128,7 +4152,8 @@
           {"label":"Oneri finanziari","amount":-5.427393},
           {"label":"Imposte correnti","amount":-1.029179},
           {"label":"Imposte differite e anticipate","amount":4.846836}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -4200,7 +4225,8 @@
           {"label":"Oneri finanziari","amount":-7.516971},
           {"label":"Imposte correnti","amount":-3.178096},
           {"label":"Imposte differite e anticipate","amount":12.327031}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

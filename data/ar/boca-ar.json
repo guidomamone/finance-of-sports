@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "boca-ar",
@@ -502,7 +502,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-148.280849,"tax":0,"gross_debt":2863.64336,"cash":311.870166},
       "official_totals": {"revenue":14279.912579,"expenses":13669.793975,"net_result":461.837755},
-      "adjustments": {"extra_rows":[{"label":"Resultados financieros y por tenencia (incluye RECPAM)","amount":-148.280849}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financieros y por tenencia (incluye RECPAM)","amount":-148.280849}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -935,7 +935,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2639.247885,"tax":0,"gross_debt":3348.078759,"cash":568.183797},
       "official_totals": {"revenue":26178.273845,"expenses":27795.138995,"net_result":1022.382735},
-      "adjustments": {"extra_rows":[{"label":"Resultados financieros y por tenencia (incluye RECPAM)","amount":2639.247885}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financieros y por tenencia (incluye RECPAM)","amount":2639.247885}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -1403,7 +1403,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":711.737276,"tax":0,"gross_debt":44566.207208,"cash":12520.193181},
       "official_totals": {"revenue":237614.566642,"expenses":202744.841714,"net_result":35581.462204},
-      "adjustments": {"extra_rows":[{"label":"Resultados financieros y por tenencia (incluye RECPAM)","amount":711.737276}]}
+      "adjustments": {"extra_rows":[{"label":"Resultados financieros y por tenencia (incluye RECPAM)","amount":711.737276}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2027,
@@ -2272,7 +2272,8 @@
         {"label":"Eventuales","category":"admin_general","subcategory":"admin_general_expense","amount":-847,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":239392.104,"expenses":235989.861,"net_result":3402.243}
+      "official_totals": {"revenue":239392.104,"expenses":235989.861,"net_result":3402.243},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "squad_transfers": [],

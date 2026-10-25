@@ -150,7 +150,8 @@
           {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.012125},
           {"label":"Φόροι εισοδήματος","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -228,7 +229,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "cost_of_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -324,7 +326,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "cost_of_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -422,7 +425,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "cost_of_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -519,7 +523,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "cost_of_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -611,7 +616,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "cost_of_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -701,7 +707,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "cost_of_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

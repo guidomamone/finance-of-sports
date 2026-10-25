@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "bologna-it",
@@ -309,7 +309,8 @@
           {"label":"imposte correnti","amount":-1.838328},
           {"label":"imposte relative a esercizi precedenti","amount":0.239179},
           {"label":"imposte differite e anticipate","amount":-0.001423}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -528,7 +529,8 @@
           {"label":"imposte correnti","amount":-1.566167},
           {"label":"imposte relative a esercizi precedenti","amount":0.116973},
           {"label":"imposte differite e anticipate","amount":0.005014}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -754,7 +756,8 @@
           {"label":"imposte correnti","amount":-0.591876},
           {"label":"imposte relative a esercizi precedenti","amount":0.094384},
           {"label":"imposte differite e anticipate","amount":-0.001424}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -994,7 +997,8 @@
           {"label":"imposte correnti","amount":-0.905396},
           {"label":"imposte relative a esercizi precedenti","amount":0.09405},
           {"label":"imposte differite e anticipate","amount":-0.001424}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1239,7 +1243,8 @@
           {"label":"imposte correnti","amount":-0.779656},
           {"label":"imposte relative a esercizi precedenti","amount":0.050676},
           {"label":"imposte differite e anticipate","amount":-0.001424}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1476,7 +1481,8 @@
           {"label":"imposte correnti","amount":-2.322996},
           {"label":"imposte relative a esercizi precedenti","amount":0.029466},
           {"label":"imposte differite e anticipate","amount":-0.001424}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1679,7 +1685,8 @@
           {"label":"imposte correnti","amount":-2.372575},
           {"label":"imposte relative a esercizi precedenti","amount":0.036827},
           {"label":"proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1894,7 +1901,8 @@
           {"label":"svalutazioni di partecipazioni (D 19, costo)","amount":-0.04313},
           {"label":"imposte correnti","amount":-5.668098},
           {"label":"imposte relative a esercizi precedenti","amount":0.062072}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

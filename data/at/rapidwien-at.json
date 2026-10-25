@@ -211,7 +211,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.001471,"tax":-0.003,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":25.421964,"expenses":25.082355,"net_result":0.33808},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":0.001471},{"label":"Steuern aus Erträgen","amount":-0.003}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":0.001471},{"label":"Steuern aus Erträgen","amount":-0.003}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2014,
@@ -322,7 +322,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.011112,"tax":-0.02225,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":27.645854,"expenses":27.431773,"net_result":0.180719},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.011112},{"label":"Steuern aus Erträgen","amount":-0.02225}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.011112},{"label":"Steuern aus Erträgen","amount":-0.02225}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2015,
@@ -433,7 +433,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.289536,"tax":-0.01593,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":24.88657,"expenses":24.530761,"net_result":0.050344},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.289536},{"label":"Steuern aus Erträgen","amount":-0.01593}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.289536},{"label":"Steuern aus Erträgen","amount":-0.01593}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2016,
@@ -520,7 +520,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.865778,"tax":-0.003338,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":48.783464,"expenses":36.324932,"net_result":11.589417},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.865778},{"label":"Steuern aus Erträgen","amount":-0.003338}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.865778},{"label":"Steuern aus Erträgen","amount":-0.003338}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -610,7 +610,8 @@
         "extra_rows": [
           {"label":"Finanzergebnis","amount":-1.399962},
           {"label":"Steuern aus Erträgen (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":4.717918}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -703,7 +704,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.285727,"tax":-0.001889,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":41.71129,"expenses":38.051463,"net_result":2.37221},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-1.285727},{"label":"Steuern aus Erträgen","amount":-0.001889}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-1.285727},{"label":"Steuern aus Erträgen","amount":-0.001889}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -785,7 +786,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.285003,"tax":-0.002265,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":50.745306,"expenses":49.278052,"net_result":0.179989},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-1.285003},{"label":"Steuern aus Erträgen","amount":-0.002265}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-1.285003},{"label":"Steuern aus Erträgen","amount":-0.002265}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -867,7 +868,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.195822,"tax":-0.437364,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":42.067742,"expenses":40.633662,"net_result":-0.199107},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-1.195822},{"label":"Steuern aus Erträgen","amount":-0.437364}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-1.195822},{"label":"Steuern aus Erträgen","amount":-0.437364}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -954,7 +955,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.112662,"tax":-0.00175,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":40.475029,"expenses":38.663203,"net_result":0.697416},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-1.112662},{"label":"Steuern aus Erträgen","amount":-0.00175}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-1.112662},{"label":"Steuern aus Erträgen","amount":-0.00175}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -1041,7 +1042,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.986708,"tax":-0.361191,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":49.631192,"expenses":42.52744,"net_result":5.755853},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.986708},{"label":"Steuern aus Erträgen","amount":-0.361191}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.986708},{"label":"Steuern aus Erträgen","amount":-0.361191}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -1105,7 +1106,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -1172,7 +1174,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -1245,7 +1248,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     }
   ],

@@ -41,7 +41,7 @@ const vascodagamaBrExpenseLinesByYear = {
 };
 
 const vascodagamaBrFiscalYearMeta = {
-  2023: {"currency":"BRL","sourceId":"vascodagama-br-demonstracoes-2023","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-53.976,"tax":0,"grossDebt":44.654,"cash":79.922,"officialTotalRevenue":345.331,"officialTotalExpenses":414.853,"officialPAT":-123.498},
+  2023: {"currency":"BRL","sourceId":"vascodagama-br-demonstracoes-2023","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-53.976,"tax":0,"grossDebt":44.654,"cash":79.922,"officialTotalRevenue":345.331,"officialTotalExpenses":414.853,"officialPAT":-123.498,"baseIngreso":"full"},
 };
 
 const vascodagamaBrPresupuestoOverlayByYear = {};

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "realoviedo-es",
@@ -157,7 +157,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":2.771029,"asset_sales":0,"net_interest":-0.077772,"tax":-0.224438,"gross_debt":8.124554,"cash":1.433716},
-      "official_totals": {"revenue":25.162014,"expenses":33.209483,"net_result":-5.57865}
+      "official_totals": {"revenue":25.162014,"expenses":33.209483,"net_result":-5.57865},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "inter-it",
@@ -360,7 +360,8 @@
           {"label":"a) imposte correnti","amount":-7.362455},
           {"label":"b) imposte differite","amount":-0.242375},
           {"label":"c) imposte anticipate","amount":-0.260884}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -592,7 +593,8 @@
           {"label":"a) imposte correnti","amount":-8.730307},
           {"label":"b) imposte differite","amount":-0.074466},
           {"label":"c) imposte anticipate","amount":0.738113}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -877,7 +879,8 @@
           {"label":"c) perdite su cambi","amount":-0.405859},
           {"label":"a) di partecipazioni","amount":0.529404},
           {"label":"a) imposte correnti (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":-5.15104}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1112,7 +1115,8 @@
           {"label":"c) losses on exchange","amount":-0.01134},
           {"label":"19) Impairment a) of investments (D, costo)","amount":-1.972728},
           {"label":"a) current taxes (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":-6.106963}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1369,7 +1373,8 @@
           {"label":"a) current taxes","amount":-3.74694},
           {"label":"b) deferred tax liabilities","amount":0.413833},
           {"label":"c) deferred tax assets","amount":-0.120553}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1601,7 +1606,8 @@
           {"label":"b) taxes related to previous fiscal years","amount":0.187014},
           {"label":"c) deferred tax liabilities","amount":0.413833},
           {"label":"d) deferred tax assets","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1830,7 +1836,8 @@
           {"label":"a) current taxes","amount":-9.916453},
           {"label":"b) taxes related to previous years","amount":0.308483},
           {"label":"c) deferred tax assets","amount":0.413833}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2009,7 +2016,8 @@
           {"label":"b) imposte relative a esercizi precedenti","amount":0.416423},
           {"label":"c) imposte differite","amount":0.413833},
           {"label":"d) imposte anticipate","amount":0.014334}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

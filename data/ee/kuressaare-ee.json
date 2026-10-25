@@ -136,7 +136,8 @@
         {"label":"Muud kulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.005622,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":0.003568},
-      "official_totals": {"revenue":0.204293,"expenses":0.228847,"net_result":-0.024554}
+      "official_totals": {"revenue":0.204293,"expenses":0.228847,"net_result":-0.024554},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -211,7 +212,8 @@
         {"label":"Muud kulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.00194,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.000001,"tax":0,"gross_debt":0.0005,"cash":0.004182},
-      "official_totals": {"revenue":0.23115,"expenses":0.230894,"net_result":0.000257}
+      "official_totals": {"revenue":0.23115,"expenses":0.230894,"net_result":0.000257},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -294,7 +296,8 @@
         {"label":"Muud kulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.001006,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":0.0005,"cash":0.005904},
-      "official_totals": {"revenue":0.270137,"expenses":0.294234,"net_result":-0.024097}
+      "official_totals": {"revenue":0.270137,"expenses":0.294234,"net_result":-0.024097},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -370,7 +373,8 @@
         {"label":"Muud kulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.002016,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":0.0187,"cash":0.000235},
-      "official_totals": {"revenue":0.280048,"expenses":0.347247,"net_result":-0.067199}
+      "official_totals": {"revenue":0.280048,"expenses":0.347247,"net_result":-0.067199},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -461,7 +465,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.000001,"tax":0,"gross_debt":0.0227,"cash":0.000208},
       "official_totals": {"revenue":0.326495,"expenses":0.416539,"net_result":-0.090043},
       "adjustments": {
-        "no_breakdown": [{"line":"Tulu kaupade ja teenuste müügist","side":"revenue","amount":0.014145,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Tulu kaupade ja teenuste müügist","side":"revenue","amount":0.014145,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -567,7 +572,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.006838,"tax":0,"gross_debt":0.0187,"cash":0.003611},
       "official_totals": {"revenue":0.209521,"expenses":0.328288,"net_result":-0.125605},
-      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.000001},{"label":"Intressikulud","amount":-0.006839}]}
+      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.000001},{"label":"Intressikulud","amount":-0.006839}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -687,7 +692,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.0138,"tax":0,"gross_debt":0.0187,"cash":0.001344},
       "official_totals": {"revenue":0.738093,"expenses":0.823989,"net_result":-0.099696},
-      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.000006},{"label":"Intressikulud","amount":-0.013806}]}
+      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.000006},{"label":"Intressikulud","amount":-0.013806}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -141,7 +141,8 @@
             "reason": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.",
             "kind": "net_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -269,7 +270,8 @@
             "reason": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.",
             "kind": "net_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -375,7 +377,8 @@
           "stadium_other": "lump_football_operations",
           "season_tickets": "lump_football_operations",
           "broadcasting": {"in":"lump_football_operations","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     }
   ],

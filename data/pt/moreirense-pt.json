@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "moreirense-pt",
@@ -176,7 +176,8 @@
           "matchday_competition": {"in":"other_income","possible":true},
           "season_tickets": {"in":"other_income","possible":true},
           "stadium_other": {"in":"other_income","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -311,7 +312,8 @@
           "matchday_competition": {"in":"other_income","possible":true},
           "stadium_other": {"in":"other_income","possible":true},
           "season_tickets": {"in":"other_income","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -413,7 +415,8 @@
           "matchday_competition": {"in":"other_income","possible":true},
           "stadium_other": {"in":"other_income","possible":true},
           "season_tickets": {"in":"other_income","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -536,7 +539,8 @@
           "matchday_competition": {"in":"other_income","possible":true},
           "season_tickets": {"in":"other_income","possible":true},
           "stadium_other": {"in":"other_income","possible":true}
-        }
+        },
+        "revenue_basis": "full"
       }
     }
   ],

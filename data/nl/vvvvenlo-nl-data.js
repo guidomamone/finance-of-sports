@@ -19,7 +19,7 @@ const vvvvenloNlExpenseLinesByYear = {
 };
 
 const vvvvenloNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"vvvvenlo-nl-jaarverslag-2024-2025-vvv-venlo-bv","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.082,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5.884,"officialTotalExpenses":7.362,"officialPAT":-1.56,"extraRows":[{"label":"Rentelasten","value":-0.082},{"label":"Vennootschapsbelasting","value":0}],"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":5.718,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2025: {"currency":"EUR","sourceId":"vvvvenlo-nl-jaarverslag-2024-2025-vvv-venlo-bv","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.082,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5.884,"officialTotalExpenses":7.362,"officialPAT":-1.56,"extraRows":[{"label":"Rentelasten","value":-0.082},{"label":"Vennootschapsbelasting","value":0}],"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":5.718,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const vvvvenloNlPresupuestoOverlayByYear = {};

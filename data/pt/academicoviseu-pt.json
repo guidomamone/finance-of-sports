@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "academicoviseu-pt",
@@ -184,7 +184,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.206727,"tax":-0.006221,"gross_debt":5.805568,"cash":1.055152},
       "official_totals": {"revenue":1.090098,"expenses":3.601586,"net_result":-2.780627},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.206727},{"label":"Imposto sobre o rendimento do período","amount":-0.006221}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.206727},{"label":"Imposto sobre o rendimento do período","amount":-0.006221}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -289,7 +290,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.713088,"tax":-0.018534,"gross_debt":16.291914,"cash":1.50592},
       "official_totals": {"revenue":1.71878,"expenses":10.908252,"net_result":-9.921095},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.713088},{"label":"Imposto sobre o rendimento do período","amount":-0.018534}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.713088},{"label":"Imposto sobre o rendimento do período","amount":-0.018534}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -465,7 +467,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.423949,"tax":-0.017023,"gross_debt":25.141914,"cash":1.540896},
       "official_totals": {"revenue":1.568093,"expenses":12.789802,"net_result":-12.682053},
-      "adjustments": {"extra_rows":[{"label":"Juros e gastos similares suportados","amount":-1.423949},{"label":"Imposto sobre rendimento do período","amount":-0.017023}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-1.423949},{"label":"Imposto sobre rendimento do período","amount":-0.017023}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2025,
@@ -642,7 +647,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.066583},
           {"label":"Juros e gastos similares suportados","amount":-1.851369},
           {"label":"Imposto sobre o rendimento do período","amount":-0.015107}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

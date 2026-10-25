@@ -44,7 +44,7 @@ const fcgroningenNlExpenseLinesByYear = {
 };
 
 const fcgroningenNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"fcgroningen-nl-jaarverslag-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.273082,"tax":-0.058336,"grossDebt":null,"cash":null,"officialTotalRevenue":31.986612,"officialTotalExpenses":30.093402,"officialPAT":1.643346,"extraRows":[{"label":"Financiële baten en lasten","value":-0.273082},{"label":"Belastingen resultaat uit gewone bedrijfsuitoefening","value":-0.058336}]},
+  2025: {"currency":"EUR","sourceId":"fcgroningen-nl-jaarverslag-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.273082,"tax":-0.058336,"grossDebt":null,"cash":null,"officialTotalRevenue":31.986612,"officialTotalExpenses":30.093402,"officialPAT":1.643346,"extraRows":[{"label":"Financiële baten en lasten","value":-0.273082},{"label":"Belastingen resultaat uit gewone bedrijfsuitoefening","value":-0.058336}],"baseIngreso":"full"},
 };
 
 const fcgroningenNlPresupuestoOverlayByYear = {};

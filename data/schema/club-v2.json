@@ -1025,6 +1025,35 @@
                   }
                 ]
               }
+            },
+            "revenue_basis": {
+              "type": "string",
+              "enum": [
+                "full",
+                "sales_total",
+                "gross_margin"
+              ]
+            },
+            "revenue_derivation": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string",
+                  "enum": [
+                    "margin_plus_costs"
+                  ]
+                },
+                "sources": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "method"
+              ],
+              "additionalProperties": false
             }
           },
           "required": [],

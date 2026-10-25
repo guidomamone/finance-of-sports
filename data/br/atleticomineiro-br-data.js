@@ -155,9 +155,9 @@ const atleticomineiroBrExpenseLinesByYear = {
 };
 
 const atleticomineiroBrFiscalYearMeta = {
-  2023: {"currency":"BRL","sourceId":"atleticomineiro-br-demonstracoes-2023","reportType":"official_balance_sheet","gestionId":"muzzi","fxRef":"BRL@2023-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-25.52,"tax":0,"grossDebt":465.387,"cash":191.231,"officialTotalRevenue":75.572,"officialTotalExpenses":91.235,"officialPAT":-41.183},
-  2024: {"currency":"BRL","sourceId":"atleticomineiro-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"muzzi","fxRef":"BRL@2024-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-139.928,"tax":0,"grossDebt":554.702,"cash":3.382,"officialTotalRevenue":580.132,"officialTotalExpenses":687.82,"officialPAT":-299.354},
-  2025: {"currency":"BRL","sourceId":"atleticomineiro-br-relatorio-integrado-2025","reportType":"official_balance_sheet","gestionId":"pedrodaniel","fxRef":"BRL@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-660.515,"tax":0,"grossDebt":721.757,"cash":5.939,"officialTotalRevenue":664.76,"officialTotalExpenses":706.034,"officialPAT":-882.109},
+  2023: {"currency":"BRL","sourceId":"atleticomineiro-br-demonstracoes-2023","reportType":"official_balance_sheet","gestionId":"muzzi","fxRef":"BRL@2023-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-25.52,"tax":0,"grossDebt":465.387,"cash":191.231,"officialTotalRevenue":75.572,"officialTotalExpenses":91.235,"officialPAT":-41.183,"baseIngreso":"full"},
+  2024: {"currency":"BRL","sourceId":"atleticomineiro-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"muzzi","fxRef":"BRL@2024-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-139.928,"tax":0,"grossDebt":554.702,"cash":3.382,"officialTotalRevenue":580.132,"officialTotalExpenses":687.82,"officialPAT":-299.354,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"atleticomineiro-br-relatorio-integrado-2025","reportType":"official_balance_sheet","gestionId":"pedrodaniel","fxRef":"BRL@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-660.515,"tax":0,"grossDebt":721.757,"cash":5.939,"officialTotalRevenue":664.76,"officialTotalExpenses":706.034,"officialPAT":-882.109,"baseIngreso":"full"},
 };
 
 const atleticomineiroBrPresupuestoOverlayByYear = {};

@@ -32,7 +32,7 @@ const fctwenteNlExpenseLinesByYear = {
 };
 
 const fctwenteNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"fctwente-nl-jaarrekening-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.151,"tax":-5.149,"grossDebt":null,"cash":null,"officialTotalRevenue":78.159,"officialTotalExpenses":58.08,"officialPAT":14.779,"extraRows":[{"label":"Financiële baten en lasten","value":-0.151},{"label":"Belastingen resultaat uit gewone bedrijfsuitoefening","value":-5.149}]},
+  2025: {"currency":"EUR","sourceId":"fctwente-nl-jaarrekening-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.151,"tax":-5.149,"grossDebt":null,"cash":null,"officialTotalRevenue":78.159,"officialTotalExpenses":58.08,"officialPAT":14.779,"extraRows":[{"label":"Financiële baten en lasten","value":-0.151},{"label":"Belastingen resultaat uit gewone bedrijfsuitoefening","value":-5.149}],"baseIngreso":"full"},
 };
 
 const fctwenteNlPresupuestoOverlayByYear = {};

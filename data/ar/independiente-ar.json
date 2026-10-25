@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "independiente-ar",
@@ -192,7 +192,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":9375.561845,"tax":0,"gross_debt":25968.939849,"cash":1704.38714},
-      "official_totals": {"revenue":38167.280834,"expenses":40150.053719,"net_result":7392.78896}
+      "official_totals": {"revenue":38167.280834,"expenses":40150.053719,"net_result":7392.78896},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2026,
@@ -360,7 +361,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1325.222485,"tax":0,"gross_debt":52113.682021,"cash":978.164626},
-      "official_totals": {"revenue":107425.53309,"expenses":106972.675946,"net_result":1778.079629}
+      "official_totals": {"revenue":107425.53309,"expenses":106972.675946,"net_result":1778.079629},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "squad_transfers": [],

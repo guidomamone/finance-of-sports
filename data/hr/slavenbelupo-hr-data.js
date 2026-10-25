@@ -29,7 +29,7 @@ const slavenbelupoHrExpenseLinesByYear = {
 };
 
 const slavenbelupoHrFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"slavenbelupo-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.048007,"tax":0,"grossDebt":1.179036,"cash":0.026003,"officialTotalRevenue":5.68775,"officialTotalExpenses":6.42779,"officialPAT":-0.788047},
+  2025: {"currency":"EUR","sourceId":"slavenbelupo-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.048007,"tax":0,"grossDebt":1.179036,"cash":0.026003,"officialTotalRevenue":5.68775,"officialTotalExpenses":6.42779,"officialPAT":-0.788047,"baseIngreso":"full"},
 };
 
 const slavenbelupoHrPresupuestoOverlayByYear = {};

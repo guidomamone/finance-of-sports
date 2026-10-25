@@ -94,8 +94,8 @@ const hajduksplitHrExpenseLinesByYear = {
 };
 
 const hajduksplitHrFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"hajduksplit-hr-financijsko-izvjesce-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-12-31","assetSales":0,"netInterest":-0.732257,"tax":0,"grossDebt":5.124513,"cash":1.414039,"officialTotalRevenue":27.405491,"officialTotalExpenses":37.410081,"officialPAT":-10.736847},
-  2025: {"currency":"EUR","sourceId":"hajduksplit-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.139278,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":49.883263,"officialTotalExpenses":42.216666,"officialPAT":6.527319,"extraRows":[{"label":"Financijski prihodi","value":0.003506},{"label":"Financijski rashodi","value":-1.054767},{"label":"Neto tečajne razlike/(gubici)","value":-0.088017}]},
+  2024: {"currency":"EUR","sourceId":"hajduksplit-hr-financijsko-izvjesce-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-12-31","assetSales":0,"netInterest":-0.732257,"tax":0,"grossDebt":5.124513,"cash":1.414039,"officialTotalRevenue":27.405491,"officialTotalExpenses":37.410081,"officialPAT":-10.736847,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"hajduksplit-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.139278,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":49.883263,"officialTotalExpenses":42.216666,"officialPAT":6.527319,"extraRows":[{"label":"Financijski prihodi","value":0.003506},{"label":"Financijski rashodi","value":-1.054767},{"label":"Neto tečajne razlike/(gubici)","value":-0.088017}],"baseIngreso":"full"},
 };
 
 const hajduksplitHrPresupuestoOverlayByYear = {};

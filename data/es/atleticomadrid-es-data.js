@@ -33,7 +33,7 @@ const atleticomadridEsExpenseLinesByYear = {
 };
 
 const atleticomadridEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"atleticomadrid-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":44.17692,"assetSales":0,"netInterest":-23.797408,"tax":-0.072276,"grossDebt":61.04928,"cash":130.17651,"officialTotalRevenue":459.686364,"officialTotalExpenses":485.984841,"officialPAT":-5.991241},
+  2025: {"currency":"EUR","sourceId":"atleticomadrid-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":44.17692,"assetSales":0,"netInterest":-23.797408,"tax":-0.072276,"grossDebt":61.04928,"cash":130.17651,"officialTotalRevenue":459.686364,"officialTotalExpenses":485.984841,"officialPAT":-5.991241,"baseIngreso":"full"},
 };
 
 const atleticomadridEsPasesData = [];

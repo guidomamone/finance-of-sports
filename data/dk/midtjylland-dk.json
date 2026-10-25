@@ -67,7 +67,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.043,"tax":-10.649,"gross_debt":1.22,"cash":53.452},
       "official_totals": {"revenue":269.881,"expenses":203.42,"net_result":55.769},
-      "adjustments": {"no_breakdown":[{"line":"Nettoomsætning","side":"revenue","amount":107.921,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":107.921,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2020,
@@ -122,7 +125,8 @@
           {"label":"Finansielle omkostninger Financial expenses","amount":-0.566},
           {"label":"Skat af årets resultat Tax on profit/loss for the year","amount":0}
         ],
-        "no_breakdown": [{"line":"Nettoomsætning Revenue","side":"revenue","amount":87.61,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Nettoomsætning Revenue","side":"revenue","amount":87.61,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

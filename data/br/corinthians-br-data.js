@@ -66,8 +66,8 @@ const corinthiansBrExpenseLinesByYear = {
 };
 
 const corinthiansBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"corinthians-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"melo","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-279.156,"tax":0,"grossDebt":244.672,"cash":12.699,"officialTotalRevenue":1081.93,"officialTotalExpenses":872.298,"officialPAT":-181.766},
-  2025: {"currency":"BRL","sourceId":"corinthians-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"stabile","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-58.107,"tax":0,"grossDebt":250.032,"cash":26.019,"officialTotalRevenue":923.076,"officialTotalExpenses":943.262,"officialPAT":-143.441},
+  2024: {"currency":"BRL","sourceId":"corinthians-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"melo","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-279.156,"tax":0,"grossDebt":244.672,"cash":12.699,"officialTotalRevenue":1081.93,"officialTotalExpenses":872.298,"officialPAT":-181.766,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"corinthians-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"stabile","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-58.107,"tax":0,"grossDebt":250.032,"cash":26.019,"officialTotalRevenue":923.076,"officialTotalExpenses":943.262,"officialPAT":-143.441,"baseIngreso":"full"},
 };
 
 const corinthiansBrPresupuestoOverlayByYear = {};

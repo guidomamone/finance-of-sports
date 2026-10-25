@@ -23,7 +23,7 @@ const wiganathleticGbExpenseLinesByYear = {
 };
 
 const wiganathleticGbFiscalYearMeta = {
-  2024: {"currency":"GBP","sourceId":"wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.007538,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":9.995089,"officialTotalExpenses":18.22794,"officialPAT":-8.225313,"extraRows":[{"label":"Interest receivable and similar income","value":0.007538},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}}},
+  2024: {"currency":"GBP","sourceId":"wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.007538,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":9.995089,"officialTotalExpenses":18.22794,"officialPAT":-8.225313,"extraRows":[{"label":"Interest receivable and similar income","value":0.007538},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}},"baseIngreso":"full"},
 };
 
 const wiganathleticGbPresupuestoOverlayByYear = {};

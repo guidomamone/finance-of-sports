@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "botafogosp-br",
@@ -218,7 +218,8 @@
         {"label":"Depreciações","category":"depreciation","subcategory":"depreciation","amount":-1.591812,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.076494,"tax":0,"gross_debt":53.593257,"cash":0.013588},
-      "official_totals": {"revenue":46.032661,"expenses":49.500044,"net_result":-3.543877}
+      "official_totals": {"revenue":46.032661,"expenses":49.500044,"net_result":-3.543877},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -348,7 +349,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.066196,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":42.847601,"expenses":56.047526,"net_result":-13.26612},
-      "adjustments": {"extra_rows":[{"label":"Receitas Financeiras","amount":0.026913},{"label":"Despesas Financeiras","amount":-0.093109}]}
+      "adjustments": {"extra_rows":[{"label":"Receitas Financeiras","amount":0.026913},{"label":"Despesas Financeiras","amount":-0.093109}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -133,7 +133,8 @@
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -173,7 +174,8 @@
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -212,7 +214,8 @@
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -256,7 +259,8 @@
             "reason": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
             "kind": "net_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -300,7 +304,8 @@
             "reason": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
             "kind": "net_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -343,7 +348,8 @@
             "reason": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
             "kind": "net_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -384,7 +390,8 @@
           {"label":"(-) Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.005422},
           {"label":"(-) Φόροι εισοδήματος","amount":-0.003088}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.068146,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.068146,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -428,7 +435,8 @@
         "no_breakdown": [
           {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.963953,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {"line":"(-) Κόστος πωλήσεων","side":"expense","amount":1.587768,"reason":"Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -458,7 +466,8 @@
       "official_totals": {"revenue":1.21248,"expenses":1.936681,"net_result":-2.363346},
       "adjustments": {
         "extra_rows": [{"label":"(+) Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000002},{"label":"(-) Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.007043}],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.418981,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.418981,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -498,7 +507,8 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.016097},
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.300317,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.300317,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

@@ -24,7 +24,7 @@ const goricaHrExpenseLinesByYear = {
 };
 
 const goricaHrFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"gorica-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.028251,"tax":0,"grossDebt":0.12651,"cash":0.002263,"officialTotalRevenue":4.043619,"officialTotalExpenses":6.972307,"officialPAT":-2.956939},
+  2025: {"currency":"EUR","sourceId":"gorica-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.028251,"tax":0,"grossDebt":0.12651,"cash":0.002263,"officialTotalRevenue":4.043619,"officialTotalExpenses":6.972307,"officialPAT":-2.956939,"baseIngreso":"full"},
 };
 
 const goricaHrPresupuestoOverlayByYear = {};

@@ -36,7 +36,7 @@ const millonariosCoExpenseLinesByYear = {
 };
 
 const millonariosCoFiscalYearMeta = {
-  2025: {"currency":"COP","sourceId":"millonarios-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fx":3757.5,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":211.69,"tax":-9.654,"grossDebt":28.34,"cash":6465.046,"officialTotalRevenue":108992.183,"officialTotalExpenses":113628.033,"officialPAT":-4690.112},
+  2025: {"currency":"COP","sourceId":"millonarios-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fx":3757.5,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":211.69,"tax":-9.654,"grossDebt":28.34,"cash":6465.046,"officialTotalRevenue":108992.183,"officialTotalExpenses":113628.033,"officialPAT":-4690.112,"baseIngreso":"full"},
 };
 
 const millonariosCoPresupuestoOverlayByYear = {};

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "depcali-co",
@@ -156,7 +156,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1041.619,"tax":-8075.349,"gross_debt":40639.552,"cash":21158.174},
-      "official_totals": {"revenue":57387.255,"expenses":55225.028,"net_result":-6954.741}
+      "official_totals": {"revenue":57387.255,"expenses":55225.028,"net_result":-6954.741},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

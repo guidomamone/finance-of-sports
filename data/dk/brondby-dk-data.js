@@ -63,8 +63,8 @@ const brondbyDkExpenseLinesByYear = {
 };
 
 const brondbyDkFiscalYearMeta = {
-  2020: {"currency":"DKK","sourceId":"brondby-aarsrapport-2020","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2020-12-31","profitOnPlayerSales":-8.057,"assetSales":0,"netInterest":-2.749,"tax":0,"grossDebt":0,"cash":22.985,"officialTotalRevenue":158.471,"officialTotalExpenses":173.518,"officialPAT":-25.853},
-  2021: {"currency":"DKK","sourceId":"brondby-dk-aarsrapport-2021-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2021-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.145,"tax":0,"grossDebt":null,"cash":67.803,"officialTotalRevenue":360.037,"officialTotalExpenses":276.474,"officialPAT":83.418,"extraRows":[{"label":"Finansielle indtægter","value":0.446},{"label":"Finansielle omkostninger","value":-0.591},{"label":"Skat af årets resultat","value":0}]},
+  2020: {"currency":"DKK","sourceId":"brondby-aarsrapport-2020","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2020-12-31","profitOnPlayerSales":-8.057,"assetSales":0,"netInterest":-2.749,"tax":0,"grossDebt":0,"cash":22.985,"officialTotalRevenue":158.471,"officialTotalExpenses":173.518,"officialPAT":-25.853,"baseIngreso":"full"},
+  2021: {"currency":"DKK","sourceId":"brondby-dk-aarsrapport-2021-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2021-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.145,"tax":0,"grossDebt":null,"cash":67.803,"officialTotalRevenue":360.037,"officialTotalExpenses":276.474,"officialPAT":83.418,"extraRows":[{"label":"Finansielle indtægter","value":0.446},{"label":"Finansielle omkostninger","value":-0.591},{"label":"Skat af årets resultat","value":0}],"baseIngreso":"full"},
 };
 
 const brondbyDkPresupuestoOverlayByYear = {};

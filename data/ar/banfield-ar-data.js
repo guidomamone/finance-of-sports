@@ -59,7 +59,7 @@ const banfieldArExpenseLinesByYear = {
 };
 
 const banfieldArFiscalYearMeta = {
-  2020: {"currency":"ARS","sourceId":"banfield-ar-memoria-y-balance-2019-2020","reportType":"official_balance_sheet","gestionId":"barbuto","fxRef":"ARS@2020-06-30","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":19.86247,"tax":0,"grossDebt":246.057622,"cash":8.57802,"officialTotalRevenue":705.794415,"officialTotalExpenses":645.483308,"officialPAT":80.173576},
+  2020: {"currency":"ARS","sourceId":"banfield-ar-memoria-y-balance-2019-2020","reportType":"official_balance_sheet","gestionId":"barbuto","fxRef":"ARS@2020-06-30","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":19.86247,"tax":0,"grossDebt":246.057622,"cash":8.57802,"officialTotalRevenue":705.794415,"officialTotalExpenses":645.483308,"officialPAT":80.173576,"baseIngreso":"full"},
 };
 
 const banfieldArPresupuestoOverlayByYear = {};

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sassuolo-it",
@@ -240,7 +240,8 @@
           {"label":"a) Imposte correnti","amount":-4.787627},
           {"label":"b) Imposte relative ad esercizi precedenti","amount":0},
           {"label":"c) Imposte anticipate e differite","amount":-0.445808}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -416,7 +417,8 @@
           {"label":"a) Imposte correnti","amount":-2.822069},
           {"label":"b) Imposte relative ad esercizi precedenti","amount":0},
           {"label":"c) Imposte anticipate e differite","amount":0.305414}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -582,7 +584,8 @@
           {"label":"a) Imposte correnti","amount":-1.229648},
           {"label":"b) Imposte anticipate e differite","amount":0.029313},
           {"label":"d) Provento da Consolidato Fiscale","amount":0.352958}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -749,7 +752,8 @@
           {"label":"b) Imposte esercizi precedenti","amount":-0.54331},
           {"label":"b) Imposte anticipate e differite","amount":0.213875},
           {"label":"d) Provento da Consolidato Fiscale","amount":3.83821}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -917,7 +921,8 @@
           {"label":"b) Imposte esercizi precedenti","amount":0},
           {"label":"b) Imposte anticipate e differite","amount":-0.22584},
           {"label":"d) Provento da Consolidato Fiscale","amount":-0.417739}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1085,7 +1090,8 @@
           {"label":"b) Imposte esercizi precedenti","amount":0},
           {"label":"b) Imposte anticipate e differite","amount":-0.20772},
           {"label":"d) Provento da Consolidato Fiscale","amount":2.090234}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1248,7 +1254,8 @@
           {"label":"b) Imposte esercizi precedenti","amount":0},
           {"label":"b) Imposte anticipate e differite","amount":-0.121392},
           {"label":"d) Provento da Consolidato Fiscale","amount":6.466509}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1409,7 +1416,8 @@
           {"label":"b) Imposte esercizi precedenti","amount":0},
           {"label":"b) Imposte anticipate e differite","amount":0.171314},
           {"label":"d) Provento da Consolidato Fiscale","amount":11.868018}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

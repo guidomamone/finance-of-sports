@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "paidelinnameeskond-ee",
@@ -161,7 +161,8 @@
         {"label":"Muud kulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.006669,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000989,"tax":0,"gross_debt":null,"cash":0.001785},
-      "official_totals": {"revenue":0.595815,"expenses":0.806562,"net_result":-0.211736}
+      "official_totals": {"revenue":0.595815,"expenses":0.806562,"net_result":-0.211736},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -252,7 +253,8 @@
         {"label":"Muud kulud","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.011623,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.009145,"tax":0,"gross_debt":null,"cash":0.002337},
-      "official_totals": {"revenue":0.873586,"expenses":1.031676,"net_result":-0.167235}
+      "official_totals": {"revenue":0.873586,"expenses":1.031676,"net_result":-0.167235},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -346,7 +348,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.023737,"tax":0,"gross_debt":null,"cash":0.004651},
       "official_totals": {"revenue":1.01002,"expenses":1.462266,"net_result":-0.475983},
-      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.023738},{"label":"Muud finantstulud ja -kulud","amount":0.000001}]}
+      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.023738},{"label":"Muud finantstulud ja -kulud","amount":0.000001}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -449,7 +451,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.033872,"tax":0,"gross_debt":null,"cash":0.011917},
       "official_totals": {"revenue":2.320261,"expenses":2.170768,"net_result":0.115621},
-      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.033911},{"label":"Muud finantstulud ja -kulud","amount":0.000039}]}
+      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.033911},{"label":"Muud finantstulud ja -kulud","amount":0.000039}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -545,7 +547,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.036548,"tax":0,"gross_debt":null,"cash":0.00169},
       "official_totals": {"revenue":1.793779,"expenses":2.001047,"net_result":-0.243816},
-      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.03806},{"label":"Muud finantstulud ja -kulud","amount":0.001512}]}
+      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.03806},{"label":"Muud finantstulud ja -kulud","amount":0.001512}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -666,7 +668,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.037633,"tax":0,"gross_debt":0.90625,"cash":0.002129},
       "official_totals": {"revenue":2.662384,"expenses":2.523566,"net_result":0.101185},
-      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.042694},{"label":"Muud finantstulud ja -kulud","amount":0.005061}]}
+      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.042694},{"label":"Muud finantstulud ja -kulud","amount":0.005061}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -789,7 +791,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.053316,"tax":0,"gross_debt":null,"cash":0.05084},
       "official_totals": {"revenue":4.099722,"expenses":3.925944,"net_result":0.120462},
-      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.063186},{"label":"Muud finantstulud ja -kulud","amount":0.00987}]}
+      "adjustments": {"extra_rows":[{"label":"Intressikulud","amount":-0.063186},{"label":"Muud finantstulud ja -kulud","amount":0.00987}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

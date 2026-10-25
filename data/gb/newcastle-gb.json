@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "newcastle-gb",
@@ -114,7 +114,8 @@
           {"label":"Interest payable and expenses","amount":-0.505},
           {"label":"Tax on profit","amount":-6.476}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -156,7 +157,8 @@
           {"label":"Interest payable and expenses","amount":-0.108},
           {"label":"Tax on (loss)/profit","amount":3.432}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -204,7 +206,8 @@
           {"label":"Interest payable and expenses","amount":-0.29},
           {"label":"Taxation","amount":1.43}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -259,7 +262,8 @@
           {"label":"Interest payable and expenses","amount":-1.389},
           {"label":"Taxation","amount":2.217}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -307,7 +311,8 @@
           {"label":"Interest payable and similar expenses","amount":-7.49},
           {"label":"Taxation","amount":-0.091}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -370,7 +375,8 @@
           {"label":"Interest payable and similar expenses","amount":-14.419},
           {"label":"Taxation","amount":-0.018}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -421,7 +427,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":133.133,"net_interest":-8.853,"tax":0,"gross_debt":58.314,"cash":12.701},
-      "official_totals": {"revenue":355.197,"expenses":444.749,"net_result":34.728}
+      "official_totals": {"revenue":355.197,"expenses":444.749,"net_result":34.728},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

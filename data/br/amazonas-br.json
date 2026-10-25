@@ -66,7 +66,8 @@
         "no_breakdown": [
           {"line":"Receita de Atividades Esportivas","side":"revenue","amount":36.055765,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {"line":"Custo das atividades Esportivas","side":"expense","amount":33.0658,"reason":"el documento no desglosa este renglón","kind":"cost_of_sales"}
-        ]
+        ],
+        "revenue_basis": "sales_total"
       }
     }
   ],

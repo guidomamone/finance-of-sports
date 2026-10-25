@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "hajduksplit-hr",
@@ -183,7 +183,8 @@
         }
       ],
       "financial": {"asset_sales":0,"net_interest":-0.732257,"tax":0,"gross_debt":5.124513,"cash":1.414039},
-      "official_totals": {"revenue":27.405491,"expenses":37.410081,"net_result":-10.736847}
+      "official_totals": {"revenue":27.405491,"expenses":37.410081,"net_result":-10.736847},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -529,7 +530,8 @@
           {"label":"Financijski prihodi","amount":0.003506},
           {"label":"Financijski rashodi","amount":-1.054767},
           {"label":"Neto tečajne razlike/(gubici)","amount":-0.088017}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

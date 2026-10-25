@@ -114,7 +114,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.149297,"tax":0,"gross_debt":4.905334,"cash":1.182138},
       "official_totals": {"revenue":13.783959,"expenses":15.028301,"net_result":-1.393639},
-      "adjustments": {"no_breakdown":[{"line":"Nettoomsætning","side":"revenue","amount":13.783959,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":13.783959,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total"
+      }
     },
     {
       "fiscal_year": 2020,
@@ -148,7 +151,8 @@
       "official_totals": {"revenue":10.952864,"expenses":10.088332,"net_result":0.69515},
       "adjustments": {
         "extra_rows": [{"label":"Finansielle omkostninger","amount":-0.169382},{"label":"Skat af årets resultat","amount":0}],
-        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":10.952864,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":10.952864,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -187,7 +191,8 @@
           {"label":"Finansielle omkostninger","amount":-0.174075},
           {"label":"Skat af årets resultat","amount":0}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":10.735834,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":10.735834,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -222,7 +227,8 @@
       "official_totals": {"revenue":11.524518,"expenses":11.435458,"net_result":0.022111},
       "adjustments": {
         "extra_rows": [{"label":"Finansielle indtægter","amount":0},{"label":"Finansielle omkostninger","amount":-0.066949},{"label":"Skat af årets resultat","amount":0}],
-        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":11.524518,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":11.524518,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -261,7 +267,8 @@
           {"label":"Finansielle omkostninger","amount":-0.143754},
           {"label":"Skat af årets resultat","amount":0}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":10.098024,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":10.098024,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -300,7 +307,8 @@
           {"label":"Finansielle omkostninger","amount":-0.064563},
           {"label":"Skat af årets resultat","amount":0}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":15.2326,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":15.2326,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -339,7 +347,8 @@
           {"label":"Finansielle omkostninger","amount":-0.024444},
           {"label":"Skat af årets resultat","amount":0.046968}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":23.917977,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":23.917977,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     }
   ],

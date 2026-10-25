@@ -19,7 +19,7 @@ const boavistaPtExpenseLinesByYear = {
 };
 
 const boavistaPtFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"boavista-pt-rcsad-23-24-1-3","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.931493,"tax":1.649761,"grossDebt":0,"cash":0.051557,"officialTotalRevenue":9.926602,"officialTotalExpenses":17.314147,"officialPAT":-6.669278,"extraRows":[{"label":"Juros e gastos similares suportados","value":-0.931493},{"label":"Imposto sobre o rendimento do período","value":1.649761}]},
+  2024: {"currency":"EUR","sourceId":"boavista-pt-rcsad-23-24-1-3","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.931493,"tax":1.649761,"grossDebt":0,"cash":0.051557,"officialTotalRevenue":9.926602,"officialTotalExpenses":17.314147,"officialPAT":-6.669278,"extraRows":[{"label":"Juros e gastos similares suportados","value":-0.931493},{"label":"Imposto sobre o rendimento do período","value":1.649761}],"baseIngreso":"full"},
 };
 
 const boavistaPtPresupuestoOverlayByYear = {};

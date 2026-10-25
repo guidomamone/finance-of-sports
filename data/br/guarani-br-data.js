@@ -41,8 +41,8 @@ const guaraniBrExpenseLinesByYear = {
 };
 
 const guaraniBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"guarani-br-demonstracoes-2023-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":6.754,"tax":0,"grossDebt":144.944,"cash":0.298,"officialTotalRevenue":46.817,"officialTotalExpenses":53.983,"officialPAT":-0.412},
-  2025: {"currency":"BRL","sourceId":"guarani-br-demonstracoes-2024-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2.079,"tax":0,"grossDebt":142.494,"cash":6.535,"officialTotalRevenue":63.569,"officialTotalExpenses":53.413,"officialPAT":8.077},
+  2024: {"currency":"BRL","sourceId":"guarani-br-demonstracoes-2023-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":6.754,"tax":0,"grossDebt":144.944,"cash":0.298,"officialTotalRevenue":46.817,"officialTotalExpenses":53.983,"officialPAT":-0.412,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"guarani-br-demonstracoes-2024-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2.079,"tax":0,"grossDebt":142.494,"cash":6.535,"officialTotalRevenue":63.569,"officialTotalExpenses":53.413,"officialPAT":8.077,"baseIngreso":"full"},
 };
 
 const guaraniBrPresupuestoOverlayByYear = {};

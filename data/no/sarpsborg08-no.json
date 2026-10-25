@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sarpsborg08-no",
@@ -172,7 +172,8 @@
         {"label":"Andre kostnader","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.300208,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.156375,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":14.930231,"expenses":17.491592,"net_result":-2.717736}
+      "official_totals": {"revenue":14.930231,"expenses":17.491592,"net_result":-2.717736},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2012,
@@ -222,7 +223,8 @@
           {"label":"Annen finansinntekt","amount":0.00329},
           {"label":"Annen rentekostnad","amount":-0.050891},
           {"label":"Annen finanskostnad","amount":-0.062826}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -273,7 +275,8 @@
           {"label":"Annen finansinntekt","amount":0.096293},
           {"label":"Annen rentekostnad","amount":-0.021374},
           {"label":"Annen finanskostnad","amount":-0.137087}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -362,7 +365,8 @@
           {"label":"Annen finansinntekt","amount":0.074674},
           {"label":"Annen rentekostnad","amount":-0.047578},
           {"label":"Annen finanskostnad","amount":-0.071756}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -427,7 +431,8 @@
           {"label":"Annen finansinntekt","amount":0.029172},
           {"label":"Annen rentekostnad","amount":-0.072973},
           {"label":"Annen finanskostnad","amount":-0.166613}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -531,7 +536,8 @@
           {"label":"Annen finansinntekt","amount":0.016754},
           {"label":"Annen rentekostnad","amount":-0.105066},
           {"label":"Annen finanskostnad","amount":-0.029306}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -649,7 +655,8 @@
           {"label":"Annen finansinntekt","amount":0.719162},
           {"label":"Annen rentekostnad","amount":-0.292804},
           {"label":"Annen finanskostnad","amount":-0.079857}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -761,7 +768,8 @@
           {"label":"Annen finansinntekt","amount":0.124701},
           {"label":"Annen rentekostnad","amount":-0.365587},
           {"label":"Annen finanskostnad","amount":-0.288296}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -847,7 +855,8 @@
           {"label":"Annen finansinntekt","amount":0.648727},
           {"label":"Annen rentekostnad","amount":-0.972011},
           {"label":"Annen finanskostnad","amount":-0.00915}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -943,7 +952,8 @@
           {"label":"Annen finansinntekt","amount":0.301252},
           {"label":"Annen rentekostnad","amount":-1.057429},
           {"label":"Annen finanskostnad","amount":-0.371056}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1009,7 +1019,8 @@
           {"label":"Annen finansinntekt","amount":0.404741},
           {"label":"Annen rentekostnad","amount":-1.254663},
           {"label":"Annen finanskostnad","amount":-0.794877}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1069,7 +1080,8 @@
           {"label":"Annen finansinntekt","amount":1.140622},
           {"label":"Annen rentekostnad","amount":1.449287},
           {"label":"Annen finanskostnad","amount":-0.136202}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1129,7 +1141,8 @@
           {"label":"Annen finansinntekt","amount":0.677255},
           {"label":"Annen rentekostnad","amount":-1.324701},
           {"label":"Annen finanskostnad","amount":-2.365559}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1195,7 +1208,8 @@
           {"label":"Annen finansinntekt","amount":1.238687},
           {"label":"Annen rentekostnad","amount":-1.132192},
           {"label":"Annen finanskostnad","amount":-1.978517}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

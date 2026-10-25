@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "llaneros-co",
@@ -66,7 +66,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-10.205,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":11856.849555,"expenses":10766.994187,"net_result":1041.567343},
-      "adjustments": {"extra_rows":[{"label":"Gastos Financieros","amount":null},{"label":"Diferido","amount":-10.205}]}
+      "adjustments": {"extra_rows":[{"label":"Gastos Financieros","amount":null},{"label":"Diferido","amount":-10.205}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

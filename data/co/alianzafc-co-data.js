@@ -38,7 +38,7 @@ const alianzafcCoExpenseLinesByYear = {
 };
 
 const alianzafcCoFiscalYearMeta = {
-  2023: {"currency":"COP","sourceId":"alianzafc-co-estados-financieros-2023","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1022.272932,"tax":-1220.153483,"grossDebt":null,"cash":null,"officialTotalRevenue":14817.813676,"officialTotalExpenses":11056.614913,"officialPAT":1518.772348,"extraRows":[{"label":"Ingresos Financiero","value":16.56701},{"label":"Costos Financieros","value":-1038.839942},{"label":"Gasto impuesto de renta y cree","value":-1051.401},{"label":"Impuesto diferido","value":-168.752483}]},
+  2023: {"currency":"COP","sourceId":"alianzafc-co-estados-financieros-2023","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1022.272932,"tax":-1220.153483,"grossDebt":null,"cash":null,"officialTotalRevenue":14817.813676,"officialTotalExpenses":11056.614913,"officialPAT":1518.772348,"extraRows":[{"label":"Ingresos Financiero","value":16.56701},{"label":"Costos Financieros","value":-1038.839942},{"label":"Gasto impuesto de renta y cree","value":-1051.401},{"label":"Impuesto diferido","value":-168.752483}],"baseIngreso":"full"},
 };
 
 const alianzafcCoPresupuestoOverlayByYear = {};

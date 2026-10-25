@@ -85,7 +85,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "gross_margin"
           }
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -148,7 +149,8 @@
         ],
         "no_breakdown": [
           {"line":"Bruttofortjeneste Gross profit","side":"revenue","amount":460.800148,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     }
   ],

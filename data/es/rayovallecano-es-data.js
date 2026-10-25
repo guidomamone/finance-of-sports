@@ -29,7 +29,7 @@ const rayovallecanoEsExpenseLinesByYear = {
 };
 
 const rayovallecanoEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"rayovallecano-es-informe-auditoria-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":"martinpresa","fxRef":"EUR@2025-06-30","fxSource":"market_close","profitOnPlayerSales":1.5,"assetSales":0,"netInterest":-0.04341,"tax":0.053444,"grossDebt":1.202364,"cash":39.714987,"officialTotalRevenue":58.462916,"officialTotalExpenses":58.459984,"officialPAT":1.512965},
+  2025: {"currency":"EUR","sourceId":"rayovallecano-es-informe-auditoria-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":"martinpresa","fxRef":"EUR@2025-06-30","fxSource":"market_close","profitOnPlayerSales":1.5,"assetSales":0,"netInterest":-0.04341,"tax":0.053444,"grossDebt":1.202364,"cash":39.714987,"officialTotalRevenue":58.462916,"officialTotalExpenses":58.459984,"officialPAT":1.512965,"baseIngreso":"full"},
 };
 
 const rayovallecanoEsPresupuestoOverlayByYear = {};

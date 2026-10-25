@@ -42,8 +42,8 @@ const azNlExpenseLinesByYear = {
 };
 
 const azNlFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"az-nl-jaarrekening-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2.9690000000000003,"tax":-4.642,"grossDebt":39.275,"cash":14.012,"officialTotalRevenue":88.22,"officialTotalExpenses":68.02,"officialPAT":12.589},
-  2025: {"currency":"EUR","sourceId":"az-nl-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":1.051,"tax":-3.936,"grossDebt":37.578,"cash":8.877,"officialTotalRevenue":91.202,"officialTotalExpenses":77.914,"officialPAT":10.402},
+  2024: {"currency":"EUR","sourceId":"az-nl-jaarrekening-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2.9690000000000003,"tax":-4.642,"grossDebt":39.275,"cash":14.012,"officialTotalRevenue":88.22,"officialTotalExpenses":68.02,"officialPAT":12.589,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"az-nl-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":1.051,"tax":-3.936,"grossDebt":37.578,"cash":8.877,"officialTotalRevenue":91.202,"officialTotalExpenses":77.914,"officialPAT":10.402,"baseIngreso":"full"},
 };
 
 const azNlPresupuestoOverlayByYear = {};

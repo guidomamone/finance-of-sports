@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "feyenoord-nl",
@@ -95,7 +95,8 @@
         {"label":"Afschrijvingen goodwill","category":"other_amortisation","subcategory":"other_amortisation","amount":-0.25,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.982,"tax":-3.756,"gross_debt":97.781,"cash":0.062},
-      "official_totals": {"revenue":165.404,"expenses":150.119,"net_result":9.547}
+      "official_totals": {"revenue":165.404,"expenses":150.119,"net_result":9.547},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -161,7 +162,8 @@
         {"label":"Afschrijvingen goodwill","category":"other_amortisation","subcategory":"other_amortisation","amount":0,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.433,"tax":-8.017,"gross_debt":113.356,"cash":14.648},
-      "official_totals": {"revenue":220.791,"expenses":189.286,"net_result":23.055}
+      "official_totals": {"revenue":220.791,"expenses":189.286,"net_result":23.055},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

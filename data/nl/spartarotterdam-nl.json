@@ -73,7 +73,8 @@
           {"label":"Aandeel in resultaat van deelnemingen","amount":0.206622},
           {"label":"Belastingen","amount":0.938225}
         ],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":18.058718,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":18.058718,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "bahia-br",
@@ -170,7 +170,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.34,"tax":0,"gross_debt":679.901,"cash":134.387},
       "official_totals": {"revenue":278.556,"expenses":528.441,"net_result":-246.545},
-      "adjustments": {"included_in":{"member_dues":"matchday_competition"}}
+      "adjustments": {"included_in":{"member_dues":"matchday_competition"},"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -318,7 +318,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.812,"tax":0,"gross_debt":36.841,"cash":33.984},
       "official_totals": {"revenue":545.404,"expenses":698.216,"net_result":-154.624},
-      "adjustments": {"included_in":{"member_dues":"matchday_competition"}}
+      "adjustments": {"included_in":{"member_dues":"matchday_competition"},"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -30,7 +30,7 @@ const realoviedoEsExpenseLinesByYear = {
 };
 
 const realoviedoEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"realoviedo-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":"sin_confirmar","fxRef":"EUR@2025-06-30","fxSource":"market_close","profitOnPlayerSales":2.771029,"assetSales":0,"netInterest":-0.077772,"tax":-0.224438,"grossDebt":8.124554,"cash":1.433716,"officialTotalRevenue":25.162014,"officialTotalExpenses":33.209483,"officialPAT":-5.57865},
+  2025: {"currency":"EUR","sourceId":"realoviedo-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":"sin_confirmar","fxRef":"EUR@2025-06-30","fxSource":"market_close","profitOnPlayerSales":2.771029,"assetSales":0,"netInterest":-0.077772,"tax":-0.224438,"grossDebt":8.124554,"cash":1.433716,"officialTotalRevenue":25.162014,"officialTotalExpenses":33.209483,"officialPAT":-5.57865,"baseIngreso":"full"},
 };
 
 const realoviedoEsPresupuestoOverlayByYear = {};

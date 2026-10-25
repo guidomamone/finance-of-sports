@@ -266,7 +266,8 @@
           {"label":"Finansman Giderleri (-)","amount":-13.626482},
           {"label":"Net Parasal Pozisyon Kar/Zararı","amount":0},
           {"label":"Vergiler","amount":0.004651}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -382,7 +383,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-9.654827,"tax":0.170965,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":103.928036,"expenses":106.105769,"net_result":-12.050502},
       "adjustments": {
-        "extra_rows": [{"label":"Finansman Giderleri (-)","amount":-9.654827},{"label":"Net Parasal Pozisyon Kar/Zararı","amount":0},{"label":"Vergiler","amount":0.170965}]
+        "extra_rows": [{"label":"Finansman Giderleri (-)","amount":-9.654827},{"label":"Net Parasal Pozisyon Kar/Zararı","amount":0},{"label":"Vergiler","amount":0.170965}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -478,7 +480,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.716754,"tax":-0.086562,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":127.214961,"expenses":104.377887,"net_result":-1.34551},
-      "adjustments": {"extra_rows":[{"label":"Finansman Giderleri (-)","amount":-6.716754},{"label":"Vergiler","amount":-0.086562}]}
+      "adjustments": {"extra_rows":[{"label":"Finansman Giderleri (-)","amount":-6.716754},{"label":"Vergiler","amount":-0.086562}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2009,
@@ -608,7 +610,8 @@
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -787,7 +790,8 @@
           {"label":"(Esas Faaliyet DıĢı) Finansal Giderler (-)","amount":-27.432438},
           {"label":"- Dönem Vergi Gelir/Gideri","amount":-0.11512},
           {"label":"- ErtelenmiĢ Vergi Gelir/Gideri","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -972,7 +976,8 @@
           {"label":"(Esas Faaliyet Dışı) Finansal Giderler (-)","amount":-46.277058},
           {"label":"- Dönem Vergi Gelir/Gideri","amount":-0.064561},
           {"label":"- Ertelenmiş Vergi Gelir/Gideri","amount":-0.008822}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1115,7 +1120,8 @@
           {"label":"Finansman giderleri (-)","amount":-38.112059},
           {"label":"Dönem vergi gideri","amount":-0.778013},
           {"label":"Ertelenmiş vergi geliri / (gideri)","amount":0.051413}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1259,7 +1265,8 @@
           {"label":"Finansman giderleri (-)","amount":-66.767316},
           {"label":"Dönem vergi gideri","amount":-1.272475},
           {"label":"Ertelenmiş vergi geliri / (gideri)","amount":-0.109156}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1414,7 +1421,8 @@
           {"label":"Finansman giderleri (-)","amount":-95.154825},
           {"label":"Dönem vergi gideri","amount":-0.699723},
           {"label":"Ertelenmiş vergi gideri","amount":-0.135895}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1570,7 +1578,8 @@
           {"label":"Finansman giderleri (-)","amount":-124.069353},
           {"label":"Dönem vergi gideri","amount":-2.812742},
           {"label":"Ertelenmiş vergi geliri/(gideri)","amount":0.286859}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1742,7 +1751,8 @@
           {"label":"Finansman giderleri (-)","amount":-224.297682},
           {"label":"Dönem vergi gideri","amount":-10.47008},
           {"label":"Ertelenmiş vergi geliri/(gideri)","amount":1.033727}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1884,7 +1894,8 @@
           {"label":"Finansman giderleri (-)","amount":-372.942704},
           {"label":"Dönem vergi gideri","amount":-8.360932},
           {"label":"Ertelenmiş vergi geliri/(gideri)","amount":0.182406}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2029,7 +2040,8 @@
           {"label":"Finansman giderleri (-)","amount":-335.510437},
           {"label":"Dönem vergi gideri","amount":-6.721181},
           {"label":"Ertelenmiş vergi geliri/(gideri)","amount":3.576937}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2179,7 +2191,8 @@
           {"label":"Finansman giderleri (-)","amount":-442.685855},
           {"label":"Dönem vergi gideri","amount":-10.42563},
           {"label":"Ertelenmiş vergi geliri/(gideri)","amount":0.382433}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2333,7 +2346,8 @@
           {"label":"Finansman giderleri (-)","amount":-677.969106},
           {"label":"Dönem vergi gideri","amount":-18.696542},
           {"label":"Ertelenmiş vergi geliri/(gideri)","amount":-0.981594}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2475,7 +2489,8 @@
           {"label":"Finansman giderleri (-)","amount":-342.131264},
           {"label":"Dönem vergi gideri","amount":-39.679793},
           {"label":"Ertelenmiş vergi geliri/(gideri)","amount":1.125854}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

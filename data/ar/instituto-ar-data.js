@@ -97,8 +97,8 @@ const institutoArExpenseLinesByYear = {
 };
 
 const institutoArFiscalYearMeta = {
-  2024: {"currency":"ARS","sourceId":"instituto-ar-balance-2023-24","reportType":"official_balance_sheet","gestionId":"cavagliatto","fxRef":"ARS@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":641.475849,"tax":0,"grossDebt":2764.369893,"cash":450.629479,"officialTotalRevenue":17958.365499,"officialTotalExpenses":16750.425894,"officialPAT":1830.503804},
-  2025: {"currency":"ARS","sourceId":"instituto-ar-balance-general-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"ARS@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":556.009124,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":27393.078747,"officialTotalExpenses":25860.787603,"officialPAT":2087.261474},
+  2024: {"currency":"ARS","sourceId":"instituto-ar-balance-2023-24","reportType":"official_balance_sheet","gestionId":"cavagliatto","fxRef":"ARS@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":641.475849,"tax":0,"grossDebt":2764.369893,"cash":450.629479,"officialTotalRevenue":17958.365499,"officialTotalExpenses":16750.425894,"officialPAT":1830.503804,"baseIngreso":"full"},
+  2025: {"currency":"ARS","sourceId":"instituto-ar-balance-general-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"ARS@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":556.009124,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":27393.078747,"officialTotalExpenses":25860.787603,"officialPAT":2087.261474,"baseIngreso":"full"},
 };
 
 const institutoArPasesData = [];

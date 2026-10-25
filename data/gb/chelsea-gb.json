@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "chelsea-gb",
@@ -106,7 +106,8 @@
           {"label":"Interest receivable and similar income","amount":7.971},
           {"label":"Interest payable and similar charges","amount":-3.3},
           {"label":"Taxation","amount":-3.179}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -151,7 +152,8 @@
           {"label":"Interest receivable and similar income","amount":4.995},
           {"label":"Interest payable and similar charges","amount":-5.996},
           {"label":"Taxation","amount":2.517}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -193,7 +195,8 @@
           {"label":"Interest receivable and similar income","amount":4.879},
           {"label":"Interest payable and similar charges","amount":-7.063},
           {"label":"Taxation","amount":0.073}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -231,7 +234,8 @@
           {"label":"Interest receivable and similar income","amount":4.889},
           {"label":"Interest payable and similar charges","amount":-16.392},
           {"label":"Taxation","amount":0.331}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -282,7 +286,8 @@
           {"label":"Interest receivable and similar income","amount":9.748},
           {"label":"Interest payable and similar charges","amount":-19.271},
           {"label":"Taxation","amount":1.206}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -344,7 +349,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":-2.985,"net_interest":-9.208,"tax":-0.203,"gross_debt":0,"cash":49.009},
-      "official_totals": {"revenue":549.263,"expenses":749.314,"net_result":-262.647}
+      "official_totals": {"revenue":549.263,"expenses":749.314,"net_result":-262.647},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

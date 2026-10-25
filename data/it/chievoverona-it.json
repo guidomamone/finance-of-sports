@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "chievoverona-it",
@@ -190,7 +190,8 @@
           {"label":"altri","amount":0.47},
           {"label":"altri","amount":-1.402802},
           {"label":"imposte correnti","amount":-0.156273}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -336,7 +337,8 @@
           {"label":"minusvalenze da alienazioni i cui effetti contabili non sono iscrivibili al n 14","amount":-0.0177},
           {"label":"altri","amount":-0.722651},
           {"label":"imposte correnti","amount":-0.151448}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -490,7 +492,8 @@
           {"label":"altri","amount":-1.292688},
           {"label":"imposte correnti","amount":-0.13492},
           {"label":"imposte differite","amount":0.117664}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

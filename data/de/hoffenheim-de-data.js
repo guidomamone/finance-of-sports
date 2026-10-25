@@ -38,8 +38,8 @@ const hoffenheimDeExpenseLinesByYear = {
 };
 
 const hoffenheimDeFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"hoffenheim-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":4.718732,"tax":24.430913,"grossDebt":58.277885,"cash":35.578492,"officialTotalRevenue":150.791686,"officialTotalExpenses":178.673331,"officialPAT":1.268},
-  2025: {"currency":"EUR","sourceId":"hoffenheim-de-konzernabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":3.512087,"tax":27.38542,"grossDebt":79.418182,"cash":41.681699,"officialTotalRevenue":173.397811,"officialTotalExpenses":203.195048,"officialPAT":1.10027},
+  2024: {"currency":"EUR","sourceId":"hoffenheim-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":4.718732,"tax":24.430913,"grossDebt":58.277885,"cash":35.578492,"officialTotalRevenue":150.791686,"officialTotalExpenses":178.673331,"officialPAT":1.268,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"hoffenheim-de-konzernabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":3.512087,"tax":27.38542,"grossDebt":79.418182,"cash":41.681699,"officialTotalRevenue":173.397811,"officialTotalExpenses":203.195048,"officialPAT":1.10027,"baseIngreso":"full"},
 };
 
 const hoffenheimDePresupuestoOverlayByYear = {};

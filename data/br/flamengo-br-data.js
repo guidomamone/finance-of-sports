@@ -109,8 +109,8 @@ const flamengoBrExpenseLinesByYear = {
 };
 
 const flamengoBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"flamengo-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"landim","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-45.483,"tax":0,"grossDebt":912.581,"cash":70.557,"officialTotalRevenue":1249.535,"officialTotalExpenses":1201.321,"officialPAT":-0.734},
-  2025: {"currency":"BRL","sourceId":"flamengo-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"bap","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":22.205,"tax":0,"grossDebt":1038.223,"cash":143.941,"officialTotalRevenue":1912.496,"officialTotalExpenses":1612.975,"officialPAT":335.665},
+  2024: {"currency":"BRL","sourceId":"flamengo-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"landim","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-45.483,"tax":0,"grossDebt":912.581,"cash":70.557,"officialTotalRevenue":1249.535,"officialTotalExpenses":1201.321,"officialPAT":-0.734,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"flamengo-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"bap","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":22.205,"tax":0,"grossDebt":1038.223,"cash":143.941,"officialTotalRevenue":1912.496,"officialTotalExpenses":1612.975,"officialPAT":335.665,"baseIngreso":"full"},
 };
 
 const flamengoBrPresupuestoOverlayByYear = {};

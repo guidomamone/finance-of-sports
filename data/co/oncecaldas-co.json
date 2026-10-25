@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "oncecaldas-co",
@@ -199,7 +199,8 @@
         {"label":"Gastos de Administración: Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-1.642,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":4709.201,"tax":-4068.219,"gross_debt":137.188,"cash":1265.57},
-      "official_totals": {"revenue":59311.026,"expenses":32979.043,"net_result":26972.965}
+      "official_totals": {"revenue":59311.026,"expenses":32979.043,"net_result":26972.965},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -342,7 +343,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5206.297,"tax":-991.681,"gross_debt":0,"cash":7063.322},
-      "official_totals": {"revenue":25860.809,"expenses":20950.362,"net_result":-1287.531}
+      "official_totals": {"revenue":25860.809,"expenses":20950.362,"net_result":-1287.531},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -489,7 +491,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1539.774,"tax":-2403.687,"gross_debt":337.5,"cash":4580.663},
-      "official_totals": {"revenue":26971.04,"expenses":21994.867,"net_result":4112.26}
+      "official_totals": {"revenue":26971.04,"expenses":21994.867,"net_result":4112.26},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -647,7 +650,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-420.985,"tax":-4307.575,"gross_debt":366.562,"cash":7559.569},
-      "official_totals": {"revenue":59081.66,"expenses":45214.554,"net_result":9138.546}
+      "official_totals": {"revenue":59081.66,"expenses":45214.554,"net_result":9138.546},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

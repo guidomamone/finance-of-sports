@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "guarani-br",
@@ -79,7 +79,8 @@
         {"label":"Contingências (desafetação de previsão)","category":"exceptional","subcategory":"exceptional_items","amount":0.001,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":6.754,"tax":0,"gross_debt":144.944,"cash":0.298},
-      "official_totals": {"revenue":46.817,"expenses":53.983,"net_result":-0.412}
+      "official_totals": {"revenue":46.817,"expenses":53.983,"net_result":-0.412},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -119,7 +120,8 @@
         {"label":"Despesas Tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.167,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.079,"tax":0,"gross_debt":142.494,"cash":6.535},
-      "official_totals": {"revenue":63.569,"expenses":53.413,"net_result":8.077}
+      "official_totals": {"revenue":63.569,"expenses":53.413,"net_result":8.077},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

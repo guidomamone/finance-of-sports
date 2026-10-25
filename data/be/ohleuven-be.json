@@ -127,7 +127,8 @@
           {"label":"Andere financiële kosten","amount":-0.036593},
           {"label":"Belastingen","amount":-0.000638}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":1.536938,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":1.536938,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -230,7 +231,8 @@
           {"label":"Kosten van schulden","amount":-0.187652},
           {"label":"Andere financiële kosten","amount":-0.013842},
           {"label":"Belastingen","amount":-0.00061}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -294,7 +296,8 @@
           {"label":"Kosten van schulden","amount":-0.177635},
           {"label":"Andere financiële kosten","amount":-0.005329}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":6.418595,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":6.418595,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -349,7 +352,8 @@
           {"label":"Andere financiële kosten","amount":-0.000201},
           {"label":"Belastingen","amount":-0.265369}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":15.165926,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":15.165926,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -418,7 +422,8 @@
           {"label":"Andere financiële kosten","amount":-0.000117},
           {"label":"Belastingen","amount":-0.155921}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":24.749706,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":24.749706,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -487,7 +492,8 @@
           {"label":"Andere financiële kosten","amount":-0.001985},
           {"label":"Belastingen","amount":-0.207954}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":34.487424,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":34.487424,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

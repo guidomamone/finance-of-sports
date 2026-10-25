@@ -75,8 +75,8 @@ const palmeirasBrExpenseLinesByYear = {
 };
 
 const palmeirasBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"palmeiras-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"leila","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-76.456,"tax":0,"grossDebt":39.759,"cash":38.363,"officialTotalRevenue":1271.36,"officialTotalExpenses":996.718,"officialPAT":198.183},
-  2025: {"currency":"BRL","sourceId":"palmeiras-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"leila","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-89.714,"tax":0,"grossDebt":0.234,"cash":118.371,"officialTotalRevenue":1628.486,"officialTotalExpenses":1246.377,"officialPAT":292.395},
+  2024: {"currency":"BRL","sourceId":"palmeiras-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"leila","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-76.456,"tax":0,"grossDebt":39.759,"cash":38.363,"officialTotalRevenue":1271.36,"officialTotalExpenses":996.718,"officialPAT":198.183,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"palmeiras-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"leila","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-89.714,"tax":0,"grossDebt":0.234,"cash":118.371,"officialTotalRevenue":1628.486,"officialTotalExpenses":1246.377,"officialPAT":292.395,"baseIngreso":"full"},
 };
 
 const palmeirasBrPresupuestoOverlayByYear = {};

@@ -16,7 +16,7 @@ const almerecityNlExpenseLinesByYear = {
 };
 
 const almerecityNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"almerecity-nl-wf-2024-2025-68975c13","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.141762,"tax":0.00285,"grossDebt":null,"cash":null,"officialTotalRevenue":15.763361,"officialTotalExpenses":15.624449,"officialPAT":0,"extraRows":[{"label":"Rentebaten en soortgelijke opbrengsen","value":0},{"label":"Rentelasten en soortgelijke kosten","value":-0.141762},{"label":"Vennootschapsbelasting","value":0.00285}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":15.391477,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2025: {"currency":"EUR","sourceId":"almerecity-nl-wf-2024-2025-68975c13","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.141762,"tax":0.00285,"grossDebt":null,"cash":null,"officialTotalRevenue":15.763361,"officialTotalExpenses":15.624449,"officialPAT":0,"extraRows":[{"label":"Rentebaten en soortgelijke opbrengsen","value":0},{"label":"Rentelasten en soortgelijke kosten","value":-0.141762},{"label":"Vennootschapsbelasting","value":0.00285}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":15.391477,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const almerecityNlPresupuestoOverlayByYear = {};

@@ -243,7 +243,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.83524,"tax":0,"gross_debt":2.740459,"cash":0.010013},
       "official_totals": {"revenue":20.242293,"expenses":39.151513,"net_result":-19.74446},
-      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.452506},{"label":"Despesas financeiras","amount":-1.287746}]}
+      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.452506},{"label":"Despesas financeiras","amount":-1.287746}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2009,
@@ -323,7 +323,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.236603,"tax":0,"gross_debt":11.62032,"cash":0.311851},
       "official_totals": {"revenue":29.913572,"expenses":47.005665,"net_result":-19.328697},
-      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.181964},{"label":"Despesas financeiras","amount":-2.418567}]}
+      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.181964},{"label":"Despesas financeiras","amount":-2.418567}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2010,
@@ -400,7 +400,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.660002,"tax":0,"gross_debt":17.105828,"cash":0.105864},
       "official_totals": {"revenue":30.362985,"expenses":34.393317,"net_result":-10.690334},
-      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.010513},{"label":"Despesas financeiras","amount":-6.670515}]}
+      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.010513},{"label":"Despesas financeiras","amount":-6.670515}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2011,
@@ -476,7 +476,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.79464,"tax":0,"gross_debt":12.908137,"cash":0.105387},
       "official_totals": {"revenue":17.096667,"expenses":29.630061,"net_result":-18.328034},
-      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.004537},{"label":"Despesas financeiras","amount":-5.799177}]}
+      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":0.004537},{"label":"Despesas financeiras","amount":-5.799177}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2012,
@@ -538,7 +538,8 @@
             "amount": 35.830361,
             "reason": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -601,7 +602,8 @@
             "amount": 44.649623,
             "reason": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -706,7 +708,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.077784,"tax":0,"gross_debt":20.131595,"cash":2.407631},
       "official_totals": {"revenue":62.602773,"expenses":41.416673,"net_result":15.108316},
-      "adjustments": {"extra_rows":[{"label":"(+) Receitas financeiras","amount":0.08474},{"label":"(-) Despesas financeiras","amount":-6.162524}]}
+      "adjustments": {"extra_rows":[{"label":"(+) Receitas financeiras","amount":0.08474},{"label":"(-) Despesas financeiras","amount":-6.162524}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2015,
@@ -810,7 +812,8 @@
         {"label":"Provisões para contingências","category":"admin_general","subcategory":"admin_general_expense","amount":-3.261794,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.572564,"tax":0,"gross_debt":16.979765,"cash":0.019481},
-      "official_totals": {"revenue":70.333324,"expenses":39.233744,"net_result":25.527016}
+      "official_totals": {"revenue":70.333324,"expenses":39.233744,"net_result":25.527016},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2016,
@@ -888,7 +891,8 @@
         {"label":"Despesas gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-19.707325,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.260861,"tax":0,"gross_debt":3.783969,"cash":1.553501},
-      "official_totals": {"revenue":83.023374,"expenses":63.985423,"net_result":15.77709}
+      "official_totals": {"revenue":83.023374,"expenses":63.985423,"net_result":15.77709},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -1008,7 +1012,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.974389,"tax":0,"gross_debt":3.179515,"cash":1.435464},
-      "official_totals": {"revenue":58.651219,"expenses":57.974704,"net_result":1.650903}
+      "official_totals": {"revenue":58.651219,"expenses":57.974704,"net_result":1.650903},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2018,
@@ -1161,7 +1166,8 @@
         {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.512121,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.167529,"tax":0,"gross_debt":null,"cash":0.31071},
-      "official_totals": {"revenue":75.150413,"expenses":63.651475,"net_result":9.328969}
+      "official_totals": {"revenue":75.150413,"expenses":63.651475,"net_result":9.328969},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -1272,7 +1278,8 @@
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -1385,7 +1392,8 @@
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -1510,7 +1518,8 @@
         {"label":"Despesas tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.143501,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.473957,"tax":0,"gross_debt":5.900035,"cash":2.892613},
-      "official_totals": {"revenue":46.859523,"expenses":52.797352,"net_result":-7.412038}
+      "official_totals": {"revenue":46.859523,"expenses":52.797352,"net_result":-7.412038},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -1661,7 +1670,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.16834,"tax":0,"gross_debt":0.408029,"cash":13.669874},
       "official_totals": {"revenue":106.090159,"expenses":89.763784,"net_result":13.158035},
-      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":1.371401},{"label":"Despesas financeiras","amount":-4.539741}]}
+      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":1.371401},{"label":"Despesas financeiras","amount":-4.539741}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -1848,7 +1857,8 @@
             "reason": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2019,7 +2029,8 @@
             "reason": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2158,7 +2169,8 @@
             "reason": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

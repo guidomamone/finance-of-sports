@@ -166,7 +166,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.001691,"tax":0,"gross_debt":0.5353,"cash":0.000014},
-      "official_totals": {"revenue":0.13035,"expenses":0.163946,"net_result":-0.035287}
+      "official_totals": {"revenue":0.13035,"expenses":0.163946,"net_result":-0.035287},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2012,
@@ -233,7 +234,8 @@
             "reason": "Claude 2026-10-21: DESPESAS OPERACIONAIS (641.611,65) es el gasto operativo del club sin desglose en el estado (.md L95-97): fútbol sin desglosar, como los otros años de Novorizontino sin detalle",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -691,7 +693,8 @@
         "extra_rows": [
           {"label":"115 3.1.03.01.0001 - RENDAS DE APLIC FINANCEIRAS","amount":0.000215},
           {"label":"110 5.1.04.01.0001 - DESPESAS E TARIFAS BANCARIAS","amount":-0.021857}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1174,7 +1177,8 @@
           {"label":"110 5.1.04.01.0001 - DESPESAS E TARIFAS BANCARIAS","amount":-0.034355},
           {"label":"111 5.1.04.01.0002 - JUROS E MULTAS","amount":-0.00002},
           {"label":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1677,7 +1681,8 @@
           {"label":"112 5.1.04.01.0003 - IOF","amount":-0.003651},
           {"label":"113 5.1.04.01.0004 - IRRF S/ RENDAS DE APLIC FINANC","amount":-0.000002},
           {"label":"111 5.1.04.01.0002 - JUROS E MULTAS","amount":-0.014099}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1710,7 +1715,8 @@
         {"label":"Despesas e Manutenção","category":"admin_general","subcategory":"admin_general_expense","amount":-1.945,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.075,"tax":0,"gross_debt":15.993335,"cash":0.007261},
-      "official_totals": {"revenue":3.242,"expenses":9.945,"net_result":-6.779}
+      "official_totals": {"revenue":3.242,"expenses":9.945,"net_result":-6.779},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -1767,7 +1773,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "net_sales"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1820,7 +1827,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.289,"tax":0,"gross_debt":27.491,"cash":0.149},
       "official_totals": {"revenue":7.161,"expenses":15.357,"net_result":-8.485},
-      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-0.349},{"label":"Receitas financeiras","amount":0.06}]}
+      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-0.349},{"label":"Receitas financeiras","amount":0.06}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -1874,7 +1881,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.226,"tax":0,"gross_debt":32.323,"cash":0.695},
       "official_totals": {"revenue":12.23,"expenses":15.787,"net_result":-3.783},
-      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-0.294},{"label":"Receitas financeiras","amount":0.068}]}
+      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-0.294},{"label":"Receitas financeiras","amount":0.068}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -1926,7 +1933,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.484,"tax":0,"gross_debt":40.059,"cash":0.085},
       "official_totals": {"revenue":10.262,"expenses":17.402,"net_result":-9.124},
-      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-0.484},{"label":"Receitas financeiras","amount":null}]}
+      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-0.484},{"label":"Receitas financeiras","amount":null}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -1992,7 +1999,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.888,"tax":0,"gross_debt":51.884,"cash":0.952},
       "official_totals": {"revenue":9.055,"expenses":22.866,"net_result":-14.699},
-      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-0.888},{"label":"Receitas financeiras","amount":null}]}
+      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-0.888},{"label":"Receitas financeiras","amount":null}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -2072,7 +2079,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.433943,"tax":0,"gross_debt":70.311934,"cash":0.146924},
       "official_totals": {"revenue":30.003234,"expenses":41.218659,"net_result":-13.649368},
-      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.007515},{"label":"Despesas financeiras","amount":-2.441458}]}
+      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.007515},{"label":"Despesas financeiras","amount":-2.441458}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -2148,7 +2155,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.248348,"tax":0,"gross_debt":93.958045,"cash":0.348738},
       "official_totals": {"revenue":22.072861,"expenses":50.54116,"net_result":-29.716647},
-      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.035962},{"label":"Despesas financeiras","amount":-1.28431}]}
+      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.035962},{"label":"Despesas financeiras","amount":-1.28431}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -2202,7 +2209,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.229677,"tax":0,"gross_debt":111.803207,"cash":2.133179},
       "official_totals": {"revenue":38.854,"expenses":60.316335,"net_result":-22.692012},
-      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.271777},{"label":"Despesas financeiras","amount":-1.501454}]}
+      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.271777},{"label":"Despesas financeiras","amount":-1.501454}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -2290,7 +2297,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.321427,"tax":0,"gross_debt":145.192927,"cash":1.482725},
       "official_totals": {"revenue":67.564252,"expenses":89.496986,"net_result":-25.254161},
-      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.314598},{"label":"Despesas financeiras","amount":-3.636025}]}
+      "adjustments": {"extra_rows":[{"label":"Receita financeira","amount":0.314598},{"label":"Despesas financeiras","amount":-3.636025}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

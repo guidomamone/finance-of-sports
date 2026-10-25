@@ -120,7 +120,8 @@
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -262,7 +263,8 @@
         {"label":"Viajes (Administración)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.198128,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.989351,"tax":0,"gross_debt":239.269605,"cash":1.381149},
-      "official_totals": {"revenue":105.043957,"expenses":120.741702,"net_result":-24.687096}
+      "official_totals": {"revenue":105.043957,"expenses":120.741702,"net_result":-24.687096},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -429,7 +431,8 @@
         {"label":"Viajes (Administración)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.314093,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.260078,"tax":0,"gross_debt":235.072669,"cash":0.991633},
-      "official_totals": {"revenue":194.792572,"expenses":156.719697,"net_result":30.812797}
+      "official_totals": {"revenue":194.792572,"expenses":156.719697,"net_result":30.812797},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2018,
@@ -605,7 +608,8 @@
         {"label":"Viajes (Administración)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.444286,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-19.947296,"tax":0,"gross_debt":232.933684,"cash":0.837555},
-      "official_totals": {"revenue":610.699504,"expenses":272.41522,"net_result":318.336988}
+      "official_totals": {"revenue":610.699504,"expenses":272.41522,"net_result":318.336988},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -659,7 +663,8 @@
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "como-it",
@@ -251,7 +251,8 @@
           {"label":"17-bis) Utile e perdite su cambi","amount":0.003793},
           {"label":"svalutazioni di partecipazioni (D 19, costo)","amount":-0.008695},
           {"label":"a) imposte correnti","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -409,7 +410,8 @@
           {"label":"17-bis) Utile e perdite su cambi (Como 1907)","amount":-0.098887},
           {"label":"a) di partecipazioni (Como 1907)","amount":-0.037},
           {"label":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":-0.000146}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

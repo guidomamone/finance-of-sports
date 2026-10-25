@@ -47,7 +47,7 @@ const omonia29maiouCyExpenseLinesByYear = {
 };
 
 const omonia29maiouCyFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-05-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":0.686169,"officialTotalExpenses":0.728764,"officialPAT":-0.042595},
+  2024: {"currency":"EUR","sourceId":"omonia29maiou-cy-wf-src-a-l-s-omonoia-29-annual-financial-statements-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-05-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":0.686169,"officialTotalExpenses":0.728764,"officialPAT":-0.042595,"baseIngreso":"full"},
 };
 
 const omonia29maiouCyPresupuestoOverlayByYear = {};

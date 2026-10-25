@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "afcwimbledon-gb",
@@ -76,7 +76,8 @@
           {"label":"Interest payable and similar expenses","amount":-0.005259},
           {"label":"Tax on (loss)/profit","amount":0.083392}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true},"broadcasting":{"in":"matchday_competition","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true},"broadcasting":{"in":"matchday_competition","possible":true}},
+        "revenue_basis": "full"
       }
     }
   ],

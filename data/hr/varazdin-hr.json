@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "varazdin-hr",
@@ -137,7 +137,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":2.104452,"asset_sales":0,"net_interest":-0.013486,"tax":-0.160177,"gross_debt":0,"cash":2.079826},
-      "official_totals": {"revenue":5.135266,"expenses":5.860464,"net_result":1.205591}
+      "official_totals": {"revenue":5.135266,"expenses":5.860464,"net_result":1.205591},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

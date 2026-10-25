@@ -23,7 +23,7 @@ const osijekHrExpenseLinesByYear = {
 };
 
 const osijekHrFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"osijek-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":-0.335134,"assetSales":0,"netInterest":-0.403355,"tax":0,"grossDebt":11.470126,"cash":1.585818,"officialTotalRevenue":18.810021,"officialTotalExpenses":18.989299,"officialPAT":-0.917767},
+  2025: {"currency":"EUR","sourceId":"osijek-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":-0.335134,"assetSales":0,"netInterest":-0.403355,"tax":0,"grossDebt":11.470126,"cash":1.585818,"officialTotalRevenue":18.810021,"officialTotalExpenses":18.989299,"officialPAT":-0.917767,"baseIngreso":"full"},
 };
 
 const osijekHrPresupuestoOverlayByYear = {};

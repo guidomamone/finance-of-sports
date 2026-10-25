@@ -22,7 +22,7 @@ const gillinghamGbExpenseLinesByYear = {
 };
 
 const gillinghamGbFiscalYearMeta = {
-  2025: {"currency":"GBP","sourceId":"gillingham-gb-medium-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.015884,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7.530515,"officialTotalExpenses":13.252189,"officialPAT":-5.737558,"extraRows":[{"label":"Interest payable and similar expenses","value":-0.015884},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true},"broadcasting":{"en":"matchday_competition","posible":true}}},
+  2025: {"currency":"GBP","sourceId":"gillingham-gb-medium-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.015884,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7.530515,"officialTotalExpenses":13.252189,"officialPAT":-5.737558,"extraRows":[{"label":"Interest payable and similar expenses","value":-0.015884},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true},"broadcasting":{"en":"matchday_competition","posible":true}},"baseIngreso":"full"},
 };
 
 const gillinghamGbPresupuestoOverlayByYear = {};

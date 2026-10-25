@@ -30,7 +30,7 @@ const athleticclubEsExpenseLinesByYear = {
 };
 
 const athleticclubEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"athleticclub-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":2.391898,"assetSales":0,"netInterest":-0.476968,"tax":-0.711651,"grossDebt":0,"cash":46.086948,"officialTotalRevenue":171.509353,"officialTotalExpenses":165.731896,"officialPAT":6.980736},
+  2025: {"currency":"EUR","sourceId":"athleticclub-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":2.391898,"assetSales":0,"netInterest":-0.476968,"tax":-0.711651,"grossDebt":0,"cash":46.086948,"officialTotalRevenue":171.509353,"officialTotalExpenses":165.731896,"officialPAT":6.980736,"baseIngreso":"full"},
 };
 
 const athleticclubEsPasesData = [];

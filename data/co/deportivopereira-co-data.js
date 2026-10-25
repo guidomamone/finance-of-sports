@@ -46,7 +46,7 @@ const deportivopereiraCoExpenseLinesByYear = {
 };
 
 const deportivopereiraCoFiscalYearMeta = {
-  2025: {"currency":"COP","sourceId":"deportivopereira-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.284862,"tax":0,"grossDebt":11271.366835,"cash":9.65677,"officialTotalRevenue":26157.407627,"officialTotalExpenses":32016.211587,"officialPAT":-5908.561384},
+  2025: {"currency":"COP","sourceId":"deportivopereira-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.284862,"tax":0,"grossDebt":11271.366835,"cash":9.65677,"officialTotalRevenue":26157.407627,"officialTotalExpenses":32016.211587,"officialPAT":-5908.561384,"baseIngreso":"full"},
 };
 
 const deportivopereiraCoPresupuestoOverlayByYear = {};

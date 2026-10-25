@@ -45,8 +45,8 @@ const silkeborgDkExpenseLinesByYear = {
 };
 
 const silkeborgDkFiscalYearMeta = {
-  2024: {"currency":"DKK","sourceId":"silkeborg-aarsrapport-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":1.369,"tax":-13.6,"grossDebt":0,"cash":20.522,"officialTotalRevenue":155.13,"officialTotalExpenses":94.659,"officialPAT":48.24},
-  2025: {"currency":"DKK","sourceId":"silkeborg-dk-annual-report-2025-silkeborg-if-a-s-fact","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.018,"tax":-7.309,"grossDebt":null,"cash":null,"officialTotalRevenue":131.739,"officialTotalExpenses":98.613,"officialPAT":25.799,"extraRows":[{"label":"Other financial income","value":0.324},{"label":"Other financial expenses","value":-0.342},{"label":"Tax on profit/loss for the year","value":-7.309}]},
+  2024: {"currency":"DKK","sourceId":"silkeborg-aarsrapport-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":1.369,"tax":-13.6,"grossDebt":0,"cash":20.522,"officialTotalRevenue":155.13,"officialTotalExpenses":94.659,"officialPAT":48.24,"baseIngreso":"full"},
+  2025: {"currency":"DKK","sourceId":"silkeborg-dk-annual-report-2025-silkeborg-if-a-s-fact","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.018,"tax":-7.309,"grossDebt":null,"cash":null,"officialTotalRevenue":131.739,"officialTotalExpenses":98.613,"officialPAT":25.799,"extraRows":[{"label":"Other financial income","value":0.324},{"label":"Other financial expenses","value":-0.342},{"label":"Tax on profit/loss for the year","value":-7.309}],"baseIngreso":"full"},
 };
 
 const silkeborgDkPresupuestoOverlayByYear = {};

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "benfica-pt",
@@ -238,7 +238,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.041071,"tax":-0.026196,"gross_debt":82.968529,"cash":0.182432},
       "official_totals": {"revenue":63.443122,"expenses":55.986409,"net_result":-1.220924},
       "adjustments": {
-        "extra_rows": [{"label":"Outros","amount":-5.086831},{"label":"Outros","amount":0.04576},{"label":"Imposto sobre o rendimento do exercício","amount":-0.026196}]
+        "extra_rows": [{"label":"Outros","amount":-5.086831},{"label":"Outros","amount":0.04576},{"label":"Imposto sobre o rendimento do exercício","amount":-0.026196}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -326,7 +327,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.238563,"tax":-0.038656,"gross_debt":94.7,"cash":4.669757},
       "official_totals": {"revenue":83.13975,"expenses":58.299647,"net_result":15.274429},
       "adjustments": {
-        "extra_rows": [{"label":"Outros","amount":-7.303117},{"label":"Outros","amount":0.064554},{"label":"Imposto sobre o rendimento do exercício","amount":-0.038656}]
+        "extra_rows": [{"label":"Outros","amount":-7.303117},{"label":"Outros","amount":0.064554},{"label":"Imposto sobre o rendimento do exercício","amount":-0.038656}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -504,7 +506,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":0.423337},
           {"label":"Custos e perdas financeiros","amount":-4.247865},
           {"label":"Imposto sobre o rendimento","amount":-0.05044}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -680,7 +683,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":1.019124},
           {"label":"Custos e perdas financeiros","amount":-5.8715},
           {"label":"Imposto sobre lucros","amount":-0.062637}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -907,7 +911,8 @@
           {"label":"PROVEITOS E GANHOS FINANCEIROS","amount":3.672177},
           {"label":"CUSTOS E PERDAS FINANCEIROS","amount":-11.612197},
           {"label":"IMPOSTO SOBRE LUCROS","amount":0.249754}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1107,7 +1112,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":5.873853},
           {"label":"Custos e perdas financeiros","amount":-22.795645},
           {"label":"Imposto sobre lucros","amount":0.13396}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1319,7 +1325,8 @@
           {"label":"RENDIMENTOS E GANHOS FINANCEIROS","amount":5.236698},
           {"label":"GASTOS E PERDAS FINANCEIROS","amount":-22.690806},
           {"label":"IMPOSTO SOBRE O RENDIMENTO","amount":0.355364}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1510,7 +1517,8 @@
           {"label":"RENDIMENTOS E GANHOS FINANCEIROS","amount":4.086},
           {"label":"GASTOS E PERDAS FINANCEIROS","amount":-23.705},
           {"label":"IMPOSTO SOBRE O RENDIMENTO","amount":0.121}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1694,7 +1702,8 @@
           {"label":"RENDIMENTOS E SANHOS FINANCEIROS","amount":5.225},
           {"label":"GASTOS E PERDAS FINANCEIROS","amount":-22.943},
           {"label":"IMPOSTO SOBRE O RENDIMENTO","amount":0.266}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1847,7 +1856,8 @@
           {"label":"RENDIMENTOS E GANHOS FINANCEIROS","amount":3.899},
           {"label":"GASTOS E PERDAS FINANCEIROS","amount":-21.381},
           {"label":"IMPOSTO SOBRE O RENDIMENTO","amount":-0.141}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1989,7 +1999,8 @@
           {"label":"Gastos e perdas financeiros","amount":-19.793},
           {"label":"Resultado relativo a investimentos em participadas","amount":0.001},
           {"label":"Imposto sobre o rendimento","amount":-0.847}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2123,7 +2134,8 @@
           {"label":"Gastos e perdas financeiros","amount":-18.488},
           {"label":"Resultado relativo a investimentos em participadas","amount":0.002},
           {"label":"Imposto sobre o rendimento","amount":-0.295}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2269,7 +2281,8 @@
           {"label":"Rendimentos e ganhos financeiros","amount":3.47},
           {"label":"Gastos e perdas financeiros","amount":-16.446},
           {"label":"Imposto sobre o rendimento","amount":4.312}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2408,7 +2421,8 @@
           {"label":"Rendimentos e ganhos financeiros","amount":9.319},
           {"label":"Gastos e perdas financeiros","amount":-16.793},
           {"label":"Imposto sobre o rendimento","amount":-4.788}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2550,7 +2564,8 @@
           {"label":"Rendimentos e ganhos financeiros","amount":9.876},
           {"label":"Gastos e perdas financeiros","amount":-18.78},
           {"label":"Imposto sobre o rendimento","amount":16.641}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2688,7 +2703,8 @@
           {"label":"Rendimentos e ganhos financeiros","amount":6.648},
           {"label":"Gastos e perdas financeiros","amount":-16.599},
           {"label":"Imposto sobre o rendimento","amount":6.516}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2825,7 +2841,8 @@
           {"label":"Rendimentos e ganhos financeiros","amount":5.521},
           {"label":"Gastos e perdas financeiros","amount":-17.458},
           {"label":"Imposto sobre o rendimento","amount":2.41}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2984,7 +3001,8 @@
           {"label":"Rendimentos e ganhos financeiros","amount":12.807},
           {"label":"Gastos e perdas financeiros","amount":-28.803},
           {"label":"Imposto sobre o rendimento","amount":-0.57}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -3155,7 +3173,8 @@
           {"label":"Rendimentos e ganhos financeiros","amount":12.229},
           {"label":"Gastos e perdas financeiros","amount":-25.662},
           {"label":"Imposto sobre o rendimento","amount":-2.733}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -3328,7 +3347,8 @@
           {"label":"Rendimentos e ganhos financeiros","amount":10.603},
           {"label":"Gastos e perdas financeiros","amount":-21.164},
           {"label":"Imposto sobre o rendimento","amount":-2.741}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

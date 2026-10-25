@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "monza-it",
@@ -347,7 +347,8 @@
           {"label":"b) imposte relative a esercizi precedenti","amount":0.007123},
           {"label":"c) imposte anticipate (differite)","amount":0},
           {"label":"d) proventi da consolidato fiscale","amount":7.520641}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -664,7 +665,8 @@
           {"label":"b) imposte relative a esercizi precedenti","amount":0.00899},
           {"label":"c) imposte anticipate (differite)","amount":0},
           {"label":"d) proventi da consolidato fiscale","amount":7.056434}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -974,7 +976,8 @@
           {"label":"b) imposte relative a esercizi precedenti","amount":0.212271},
           {"label":"c) imposte anticipate (differite)","amount":0},
           {"label":"d) proventi da consolidato fiscale","amount":6.943979}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

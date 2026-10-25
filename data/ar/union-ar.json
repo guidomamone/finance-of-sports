@@ -230,7 +230,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -415,7 +416,8 @@
             "reason": "el documento no desglosa este renglón",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -534,7 +536,8 @@
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "education_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -657,7 +660,8 @@
             "kind": "other"
           }
         ],
-        "included_in": {"education_expense":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
+        "included_in": {"education_expense":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}},
+        "revenue_basis": "full"
       }
     }
   ],

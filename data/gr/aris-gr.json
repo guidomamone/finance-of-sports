@@ -147,7 +147,8 @@
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -224,7 +225,8 @@
           "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -324,7 +326,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.014299,"tax":0,"gross_debt":0.05467,"cash":0.240696},
       "official_totals": {"revenue":11.396014,"expenses":12.753084,"net_result":-1.371368},
-      "adjustments": {"extra_rows":[{"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.014299},{"label":"Φορολογικά έσοδα (δαπάνες)","amount":null}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.014299},{"label":"Φορολογικά έσοδα (δαπάνες)","amount":null}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2023,
@@ -427,7 +432,8 @@
           {"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.241873},
           {"label":"Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)","amount":-0.000009},
           {"label":"Φορολογικά έσοδα (δαπάνες)","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -580,7 +586,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.275484,"tax":0,"gross_debt":3.268189,"cash":1.709531},
       "official_totals": {"revenue":16.354681,"expenses":14.977997,"net_result":1.101201},
       "adjustments": {
-        "extra_rows": [{"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.275484},{"label":"Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)","amount":null}]
+        "extra_rows": [{"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.275484},{"label":"Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)","amount":null}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -707,7 +714,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.312126,"tax":0,"gross_debt":3.323148,"cash":1.227561},
       "official_totals": {"revenue":19.708542,"expenses":18.734483,"net_result":0.661933},
       "adjustments": {
-        "extra_rows": [{"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.194341},{"label":"Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)","amount":-0.117785}]
+        "extra_rows": [{"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.194341},{"label":"Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)","amount":-0.117785}],
+        "revenue_basis": "full"
       }
     }
   ],

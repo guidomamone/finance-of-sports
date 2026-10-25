@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "parma-it",
@@ -219,7 +219,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.002097,"tax":0,"gross_debt":0,"cash":2.196583},
       "official_totals": {"revenue":3.10168,"expenses":4.782903,"net_result":-1.679126},
-      "adjustments": {"extra_rows":[{"label":"altri","amount":0.003132},{"label":"altri","amount":-0.001035}]}
+      "adjustments": {"extra_rows":[{"label":"altri","amount":0.003132},{"label":"altri","amount":-0.001035}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -384,7 +384,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.004432,"tax":0,"gross_debt":0.781888,"cash":2.00306},
       "official_totals": {"revenue":6.652121,"expenses":13.940628,"net_result":-7.29294},
-      "adjustments": {"extra_rows":[{"label":"altri","amount":0},{"label":"verso imprese controllanti","amount":-0.003423},{"label":"altri","amount":-0.001009}]}
+      "adjustments": {
+        "extra_rows": [{"label":"altri","amount":0},{"label":"verso imprese controllanti","amount":-0.003423},{"label":"altri","amount":-0.001009}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2018,
@@ -575,7 +578,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.010573,"tax":0,"gross_debt":1.651735,"cash":0.385472},
       "official_totals": {"revenue":11.457715,"expenses":33.690094,"net_result":-22.297121},
       "adjustments": {
-        "extra_rows": [{"label":"da imprese controllate","amount":0.000227},{"label":"verso imprese controllanti","amount":-0.004255},{"label":"altri","amount":-0.006545}]
+        "extra_rows": [{"label":"da imprese controllate","amount":0.000227},{"label":"verso imprese controllanti","amount":-0.004255},{"label":"altri","amount":-0.006545}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -762,7 +766,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.098665,"tax":-1.124432,"gross_debt":6.046988,"cash":3.708338},
       "official_totals": {"revenue":60.242771,"expenses":68.442673,"net_result":-9.423},
       "adjustments": {
-        "extra_rows": [{"label":"da imprese controllate","amount":0.003768},{"label":"altri","amount":-0.102433},{"label":"imposte correnti","amount":-1.124432}]
+        "extra_rows": [{"label":"da imprese controllate","amount":0.003768},{"label":"altri","amount":-0.102433},{"label":"imposte correnti","amount":-1.124432}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -994,7 +999,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.164714,"tax":0,"gross_debt":61.655824,"cash":13.604274},
       "official_totals": {"revenue":40.681361,"expenses":126.998463,"net_result":-87.564848},
-      "adjustments": {"extra_rows":[{"label":"altri","amount":0.216025},{"label":"altri","amount":-0.051311}]}
+      "adjustments": {"extra_rows":[{"label":"altri","amount":0.216025},{"label":"altri","amount":-0.051311}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -1219,7 +1224,8 @@
           {"label":"Verso imprese socie","amount":0},
           {"label":"Altri","amount":-0.097287},
           {"label":"Imposte","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1430,7 +1436,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.068583,"tax":0,"gross_debt":58.466487,"cash":14.308296},
       "official_totals": {"revenue":28.891375,"expenses":109.315074,"net_result":-80.492282},
-      "adjustments": {"extra_rows":[{"label":"altri (proventi finanziari)","amount":0.040063},{"label":"altri (oneri finanziari)","amount":-0.108646}]}
+      "adjustments": {
+        "extra_rows": [{"label":"altri (proventi finanziari)","amount":0.040063},{"label":"altri (oneri finanziari)","amount":-0.108646}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2024,
@@ -1651,7 +1660,8 @@
           {"label":"altri","amount":0.150398},
           {"label":"altri","amount":-0.080664},
           {"label":"proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale","amount":0.961793}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1866,7 +1876,8 @@
           {"label":"altri","amount":-0.010461},
           {"label":"imposte correnti","amount":-1.547652},
           {"label":"proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

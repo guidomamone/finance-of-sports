@@ -5,7 +5,7 @@ Medido sobre los JSON de `data/` (1340 ejercicios). Un ejercicio es «de margen�
 
 ## Cuántos y dónde
 
-- 53 ejercicios (4 %) en 14 clubes; solo Bélgica (8 clubes) y Dinamarca (5). Por rótulo, en 7 idiomas, no hay otro país cargado con un margen en lugar de ingresos. Es consecuencia de qué clubes están cargados, no de que el fenómeno sea belga o danés: la misma exención existe en Alemania (Rohergebnis, §276 HGB), Países Bajos (bruto-marge de la empresa mediana), Dinamarca (§32) y Bélgica (esquema abreviado).
+- 46 ejercicios de margen (3,4 %) en 13 clubes (`node tools/fos.mjs ingreso-base` los lista), más 11 que el sitio ya reconstruyó (`revenue_derivation`); solo Bélgica (8 clubes) y Dinamarca (5). Por rótulo, en 7 idiomas, no hay otro país cargado con un margen en lugar de ingresos. Es consecuencia de qué clubes están cargados, no de que el fenómeno sea belga o danés: la misma exención existe en Alemania (Rohergebnis, §276 HGB), Países Bajos (bruto-marge de la empresa mediana), Dinamarca (§32) y Bélgica (esquema abreviado).
 - Peso en la liga (ingreso cargado de la liga-año): Bélgica 2019-2024, 3 a 6 clubes de 7 a 9 por año, 15 a 46 % del ingreso cargado; Bélgica 2025, 4 de 22 (2 %); Dinamarca 2022 y 2023, todos los cargados; 2024 y 2025, 31 %.
 - Clubes con más años de margen: RAAL (7 de 8), Lommel (6 de 8), Fredericia (6 de 7), RWDM (5 de 6), Lierse SK (4 de 7).
 
@@ -16,7 +16,9 @@ El margen bruto belga (código 9900) es `ingresos de explotación (70/76A) - com
 1. El documento imprime 60/61 aunque sea esquema abreviado: ingreso = margen + 60/61. Ya está aplicado donde se cargó así (Patro Eisden 2016-2019 y 2022-2023, Lokeren 2021-2023). Queda por revisar Patro Eisden 2020 (el documento corregido trae 60/61 = 423.072 y el sitio muestra el margen 277.991).
 2. El documento del año siguiente trae el ingreso completo en su columna anterior: Lommel 2022/23 = 5,81 M EUR; RWDM 2023/24 = 12,50 M EUR (el sitio muestra el margen, 3,96 M). Lokeren 2024 trae solo «Omzet» 1,84 M comparativo (las ventas, no el total). Esos datos no se escriben sobre el año publicado (voto del 413); solo sirven de dato real para el estimado de Ligas.
 
-El resto (unos 45 ejercicios) no tiene ancla: el documento no imprime ni los ingresos ni 60/61.
+3. Dinamarca: SønderjyskE 2023/24, 55,9 M DKK de ventas en la columna comparativa del informe 2025 (el sitio muestra el margen, 37,4 M). Fredericia, Nordsjælland, Vejle y Randers solo imprimen el margen.
+
+El resto (unos 41 de los 46 ejercicios de margen) no tiene ancla: el documento no imprime ni los ingresos ni 60/61.
 
 ## El margen no sirve de proxy
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "tottenham-gb",
@@ -103,7 +103,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-40.646,"tax":11.211,"gross_debt":null,"cash":null,"staff_cost":209.18},
       "official_totals": {"revenue":468.134,"expenses":488.816,"net_result":-50.117},
-      "adjustments": {"extra_rows":[{"label":"Finance income","amount":1.537},{"label":"Finance costs","amount":-42.183},{"label":"Tax","amount":11.211}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finance income","amount":1.537},{"label":"Finance costs","amount":-42.183},{"label":"Tax","amount":11.211}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2023,
@@ -163,7 +166,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-44.763,"tax":7.88,"gross_debt":null,"cash":null,"staff_cost":251.121},
       "official_totals": {"revenue":582.049,"expenses":631.96,"net_result":-86.794},
-      "adjustments": {"extra_rows":[{"label":"Finance income","amount":1.566},{"label":"Finance costs","amount":-46.329},{"label":"Tax","amount":7.88}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Finance income","amount":1.566},{"label":"Finance costs","amount":-46.329},{"label":"Tax","amount":7.88}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2024,
@@ -213,7 +219,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":82.305,"asset_sales":0,"net_interest":-47.317,"tax":-0.196,"gross_debt":851.448,"cash":78.974},
-      "official_totals": {"revenue":528.191,"expenses":589.209,"net_result":-26.226}
+      "official_totals": {"revenue":528.191,"expenses":589.209,"net_result":-26.226},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -263,7 +270,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":52.565,"asset_sales":0,"net_interest":-70.23,"tax":25.962,"gross_debt":851.652,"cash":20.413},
-      "official_totals": {"revenue":565.266,"expenses":668.229,"net_result":-94.666}
+      "official_totals": {"revenue":565.266,"expenses":668.229,"net_result":-94.666},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

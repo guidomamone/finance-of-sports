@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fcgroningen-nl",
@@ -97,7 +97,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.273082,"tax":-0.058336,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":31.986612,"expenses":30.093402,"net_result":1.643346},
       "adjustments": {
-        "extra_rows": [{"label":"Financiële baten en lasten","amount":-0.273082},{"label":"Belastingen resultaat uit gewone bedrijfsuitoefening","amount":-0.058336}]
+        "extra_rows": [{"label":"Financiële baten en lasten","amount":-0.273082},{"label":"Belastingen resultaat uit gewone bedrijfsuitoefening","amount":-0.058336}],
+        "revenue_basis": "full"
       }
     }
   ],

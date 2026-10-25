@@ -24,7 +24,7 @@ const realmadridEsExpenseLinesByYear = {
 };
 
 const realmadridEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"realmadrid-es-informe-economico-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":34.647,"assetSales":0,"netInterest":-43.79,"tax":-7.033,"grossDebt":141.014,"cash":175.827,"officialTotalRevenue":1184.687,"officialTotalExpenses":1144.191,"officialPAT":24.32},
+  2025: {"currency":"EUR","sourceId":"realmadrid-es-informe-economico-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":34.647,"assetSales":0,"netInterest":-43.79,"tax":-7.033,"grossDebt":141.014,"cash":175.827,"officialTotalRevenue":1184.687,"officialTotalExpenses":1144.191,"officialPAT":24.32,"baseIngreso":"full"},
 };
 
 const realmadridEsPasesData = [];

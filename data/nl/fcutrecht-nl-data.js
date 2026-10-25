@@ -35,7 +35,7 @@ const fcutrechtNlExpenseLinesByYear = {
 };
 
 const fcutrechtNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"fcutrecht-nl-jaarverslag-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.550837,"tax":0.378447,"grossDebt":null,"cash":null,"officialTotalRevenue":42.183517,"officialTotalExpenses":41.961127,"officialPAT":0.05,"extraRows":[{"label":"Financiële baten en lasten","value":-0.550837},{"label":"Belastingen","value":0.378447}]},
+  2025: {"currency":"EUR","sourceId":"fcutrecht-nl-jaarverslag-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.550837,"tax":0.378447,"grossDebt":null,"cash":null,"officialTotalRevenue":42.183517,"officialTotalExpenses":41.961127,"officialPAT":0.05,"extraRows":[{"label":"Financiële baten en lasten","value":-0.550837},{"label":"Belastingen","value":0.378447}],"baseIngreso":"full"},
 };
 
 const fcutrechtNlPresupuestoOverlayByYear = {};

@@ -21,7 +21,7 @@ const exetercityGbExpenseLinesByYear = {
 };
 
 const exetercityGbFiscalYearMeta = {
-  2025: {"currency":"GBP","sourceId":"exetercity-gb-exeter-group-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.017732,"tax":-0.178423,"grossDebt":null,"cash":null,"officialTotalRevenue":13.764756,"officialTotalExpenses":13.220387,"officialPAT":0.348214,"extraRows":[{"label":"Interest receivable and similar income","value":0.01119},{"label":"Interest payable and similar expenses","value":-0.028922},{"label":"Tax on profit","value":-0.178423}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}}},
+  2025: {"currency":"GBP","sourceId":"exetercity-gb-exeter-group-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.017732,"tax":-0.178423,"grossDebt":null,"cash":null,"officialTotalRevenue":13.764756,"officialTotalExpenses":13.220387,"officialPAT":0.348214,"extraRows":[{"label":"Interest receivable and similar income","value":0.01119},{"label":"Interest payable and similar expenses","value":-0.028922},{"label":"Tax on profit","value":-0.178423}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}},"baseIngreso":"full"},
 };
 
 const exetercityGbPresupuestoOverlayByYear = {};

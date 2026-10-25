@@ -92,8 +92,8 @@ const independienteArExpenseLinesByYear = {
 };
 
 const independienteArFiscalYearMeta = {
-  2024: {"currency":"ARS","sourceId":"independiente-ar-memoria-y-balance-2023-24","reportType":"official_balance_sheet","gestionId":"grindetti","fx":890.5,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":9375.561845,"tax":0,"grossDebt":25968.939849,"cash":1704.38714,"officialTotalRevenue":38167.280834,"officialTotalExpenses":40150.053719,"officialPAT":7392.78896},
-  2026: {"currency":"ARS","sourceId":"independiente-ar-estados-contables-2025-26","reportType":"official_balance_sheet","gestionId":"grindetti","fx":1500,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":1325.222485,"tax":0,"grossDebt":52113.682021,"cash":978.164626,"officialTotalRevenue":107425.53309,"officialTotalExpenses":106972.675946,"officialPAT":1778.079629},
+  2024: {"currency":"ARS","sourceId":"independiente-ar-memoria-y-balance-2023-24","reportType":"official_balance_sheet","gestionId":"grindetti","fx":890.5,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":9375.561845,"tax":0,"grossDebt":25968.939849,"cash":1704.38714,"officialTotalRevenue":38167.280834,"officialTotalExpenses":40150.053719,"officialPAT":7392.78896,"baseIngreso":"full"},
+  2026: {"currency":"ARS","sourceId":"independiente-ar-estados-contables-2025-26","reportType":"official_balance_sheet","gestionId":"grindetti","fx":1500,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":1325.222485,"tax":0,"grossDebt":52113.682021,"cash":978.164626,"officialTotalRevenue":107425.53309,"officialTotalExpenses":106972.675946,"officialPAT":1778.079629,"baseIngreso":"full"},
 };
 
 const independienteArPasesData = [];

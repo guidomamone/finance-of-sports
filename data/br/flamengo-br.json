@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "flamengo-br",
@@ -236,7 +236,8 @@
         {"label":"Resultado de equivalência patrimonial","category":"exceptional","subcategory":"exceptional_items","amount":-3.465,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-45.483,"tax":0,"gross_debt":912.581,"cash":70.557},
-      "official_totals": {"revenue":1249.535,"expenses":1201.321,"net_result":-0.734}
+      "official_totals": {"revenue":1249.535,"expenses":1201.321,"net_result":-0.734},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -429,7 +430,8 @@
         {"label":"Resultado de equivalência patrimonial","category":"exceptional","subcategory":"exceptional_items","amount":13.939,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":22.205,"tax":0,"gross_debt":1038.223,"cash":143.941},
-      "official_totals": {"revenue":1912.496,"expenses":1612.975,"net_result":335.665}
+      "official_totals": {"revenue":1912.496,"expenses":1612.975,"net_result":335.665},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

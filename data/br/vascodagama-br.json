@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "vascodagama-br",
@@ -147,7 +147,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-53.976,"tax":0,"gross_debt":44.654,"cash":79.922},
-      "official_totals": {"revenue":345.331,"expenses":414.853,"net_result":-123.498}
+      "official_totals": {"revenue":345.331,"expenses":414.853,"net_result":-123.498},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

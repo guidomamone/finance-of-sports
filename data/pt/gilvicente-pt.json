@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "gilvicente-pt",
@@ -242,7 +242,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.104305,"tax":-0.006167,"gross_debt":5.3852,"cash":0.578928},
       "official_totals": {"revenue":6.160553,"expenses":6.190282,"net_result":-0.186739},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.104305},{"label":"Imposto sobre o rendimento do período","amount":-0.006167}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.104305},{"label":"Imposto sobre o rendimento do período","amount":-0.006167}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -430,7 +431,8 @@
           {"label":"Juros e gastos similares suportados","amount":-0.064595},
           {"label":"Imposto sobre o rendimento do período","amount":-0.159811},
           {"label":"Ativos por impostos diferidos","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -634,7 +636,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.07722},
           {"label":"Juros e gastos similares suportados","amount":-0.315843},
           {"label":"Imposto sobre o rendimento do período","amount":-0.026394}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -786,7 +789,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.00006},
           {"label":"Juros e gastos similares suportados","amount":-0.327416},
           {"label":"Imposto sobre o rendimento do período","amount":0.368962}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -938,7 +942,8 @@
           {"label":"Juros e gastos similares suportados","amount":-0.809162},
           {"label":"Imposto sobre o rendimento do período","amount":-0.012678},
           {"label":"Ativos por impostos diferidos","amount":0.576519}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

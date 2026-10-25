@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "panathinaikos-gr",
@@ -82,7 +82,8 @@
         {"label":"Λοιπά λειτουργικά έξοδα","category":"admin_general","subcategory":"admin_general_expense","amount":-20.07627,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":-10.983661,"asset_sales":-0.025836,"net_interest":-0.419796,"tax":0.045292,"gross_debt":0,"cash":1.474426},
-      "official_totals": {"revenue":57.601032,"expenses":72.71275,"net_result":-26.495719}
+      "official_totals": {"revenue":57.601032,"expenses":72.71275,"net_result":-26.495719},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

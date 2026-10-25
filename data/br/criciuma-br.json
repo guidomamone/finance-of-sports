@@ -197,7 +197,8 @@
         "included_in": {
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -275,7 +276,8 @@
         "included_in": {
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -348,7 +350,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -421,7 +424,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -495,7 +499,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -569,7 +574,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -624,7 +630,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -675,7 +682,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -726,7 +734,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -791,7 +800,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -851,7 +861,8 @@
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -918,7 +929,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -985,7 +997,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1051,7 +1064,8 @@
             "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

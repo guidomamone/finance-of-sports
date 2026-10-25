@@ -131,7 +131,8 @@
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "admin_general_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -198,7 +199,8 @@
           "youth_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -286,7 +288,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.250527,"tax":0,"gross_debt":2.216362,"cash":0.753395},
-      "official_totals": {"revenue":42.957263,"expenses":19.887233,"net_result":22.819501}
+      "official_totals": {"revenue":42.957263,"expenses":19.887233,"net_result":22.819501},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -402,7 +405,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.392213,"tax":0,"gross_debt":2.928154,"cash":0.284456},
       "official_totals": {"revenue":21.530819,"expenses":29.103327,"net_result":-7.964721},
-      "adjustments": {"extra_rows":[{"label":"Receitas Financeiras","amount":0.014197},{"label":"Despesas financeiras","amount":-0.40641}]}
+      "adjustments": {"extra_rows":[{"label":"Receitas Financeiras","amount":0.014197},{"label":"Despesas financeiras","amount":-0.40641}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -455,7 +458,8 @@
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -510,7 +514,8 @@
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -571,7 +576,8 @@
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     }
   ],

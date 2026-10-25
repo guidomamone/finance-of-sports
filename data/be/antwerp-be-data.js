@@ -22,7 +22,7 @@ const antwerpBeExpenseLinesByYear = {
 };
 
 const antwerpBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"antwerp-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-5.2483,"tax":-0.802638,"grossDebt":50.748888,"cash":4.159718,"officialTotalRevenue":89.812387,"officialTotalExpenses":84.490777,"officialPAT":-0.515827,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":43.351487,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2025: {"currency":"EUR","sourceId":"antwerp-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-5.2483,"tax":-0.802638,"grossDebt":50.748888,"cash":4.159718,"officialTotalRevenue":89.812387,"officialTotalExpenses":84.490777,"officialPAT":-0.515827,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":43.351487,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const antwerpBePresupuestoOverlayByYear = {};

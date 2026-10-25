@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "juventus-it",
@@ -330,7 +330,8 @@
           {"label":"- from others","amount":3.351032},
           {"label":"d) from others","amount":-0.670013},
           {"label":"22) INCOME TAXES","amount":-7.392658}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -465,7 +466,8 @@
           {"label":"d) from others","amount":-3.026244},
           {"label":"a) current taxes","amount":-5.727157},
           {"label":"b) deferred taxes","amount":7.238419}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -608,7 +610,8 @@
           {"label":"a) Current taxes","amount":-6.585834},
           {"label":"b) Deferred taxes","amount":3.769198},
           {"label":"c) Prepaid taxes","amount":-6.604863}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -760,7 +763,8 @@
           {"label":"a) Current taxes","amount":-6.99683},
           {"label":"b) Deferred taxes","amount":12.172514},
           {"label":"c) Prepaid taxes","amount":-10.099504}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -844,7 +848,8 @@
           {"label":"Financial expenses","amount":-5.113819},
           {"label":"Current taxes","amount":-3.848013},
           {"label":"Deferred and prepaid taxes","amount":-1.265964}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -935,7 +940,8 @@
           {"label":"Financial expenses","amount":-4.198878},
           {"label":"Current taxes","amount":-4.339172},
           {"label":"Deferred taxes","amount":-7.032003}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1019,7 +1025,8 @@
           {"label":"Financial expenses","amount":-4.657145},
           {"label":"Current taxes","amount":-5.517771},
           {"label":"Deferred taxes","amount":-1.306834}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1104,7 +1111,8 @@
           {"label":"Financial expenses","amount":-6.727385},
           {"label":"Current taxes","amount":-5.544717},
           {"label":"Deferred taxes","amount":-7.499068}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1195,7 +1203,8 @@
           {"label":"Financial expenses","amount":-2.878453},
           {"label":"Current taxes","amount":-2.766491},
           {"label":"Deferred taxes","amount":1.11905}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1286,7 +1295,8 @@
           {"label":"Financial expenses","amount":-6.111132},
           {"label":"Current taxes","amount":-3.788628},
           {"label":"Deferred taxes","amount":1.052707}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1377,7 +1387,8 @@
           {"label":"Financial expenses","amount":-9.473258},
           {"label":"Current taxes","amount":-5.924068},
           {"label":"Deferred taxes","amount":0.928417}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1468,7 +1479,8 @@
           {"label":"Financial expenses","amount":-11.83136},
           {"label":"Current taxes","amount":-7.20472},
           {"label":"Deferred taxes","amount":0.383825}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1560,7 +1572,8 @@
           {"label":"Financial expenses","amount":-10.860663},
           {"label":"Current taxes","amount":-7.992976},
           {"label":"Deferred taxes","amount":-0.516666}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1679,7 +1692,8 @@
           {"label":"Financial expenses","amount":-10.353937},
           {"label":"Current taxes","amount":-8.431039},
           {"label":"Deferred taxes","amount":0.885383}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1792,7 +1806,8 @@
           {"label":"Financial expenses","amount":-11.96914},
           {"label":"Current taxes","amount":-11.363921},
           {"label":"Deferred taxes","amount":-4.482874}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1904,7 +1919,8 @@
           {"label":"Financial expenses","amount":-11.963159},
           {"label":"Current taxes","amount":-8.820346},
           {"label":"Deferred taxes","amount":-0.385923}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2016,7 +2032,8 @@
           {"label":"Financial expenses","amount":-14.496878},
           {"label":"Current taxes","amount":-11.738088},
           {"label":"Deferred taxes","amount":-1.259871}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2128,7 +2145,8 @@
           {"label":"Financial expenses","amount":-17.706544},
           {"label":"Current taxes","amount":-7.971802},
           {"label":"Deferred and prepaid taxes","amount":-0.05321}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2240,7 +2258,8 @@
           {"label":"Financial expenses","amount":-16.560197},
           {"label":"Current taxes","amount":-2.967812},
           {"label":"Deferred and prepaid taxes","amount":0.628027}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2346,7 +2365,8 @@
           {"label":"Financial expenses","amount":-18.857112},
           {"label":"Current taxes","amount":-2.564904},
           {"label":"Deferred and prepaid taxes","amount":0.666785}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2452,7 +2472,8 @@
           {"label":"Financial expenses","amount":-21.263057},
           {"label":"Current taxes","amount":-6.583716},
           {"label":"Deferred and prepaid taxes","amount":0.215795}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2558,7 +2579,8 @@
           {"label":"Financial expenses","amount":-24.597456},
           {"label":"Current taxes","amount":-3.117744},
           {"label":"Deferred tax assets and liabilities","amount":-0.131357}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2671,7 +2693,8 @@
           {"label":"Financial expenses","amount":-26.615561},
           {"label":"Current taxes","amount":-8.007641},
           {"label":"Deferred taxes","amount":-0.131821}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "mafra-pt",
@@ -185,7 +185,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0},
           {"label":"Juros e gastos similares suportados","amount":-0.04504},
           {"label":"Impostos sobre rendimento do período","amount":-0.012408}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

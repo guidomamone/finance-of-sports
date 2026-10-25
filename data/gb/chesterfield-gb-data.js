@@ -20,7 +20,7 @@ const chesterfieldGbExpenseLinesByYear = {
 };
 
 const chesterfieldGbFiscalYearMeta = {
-  2025: {"currency":"GBP","sourceId":"chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.164358,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7.885437,"officialTotalExpenses":10.103974,"officialPAT":-2.382893,"extraRows":[{"label":"Interest receivable and similar income","value":-0.000001},{"label":"Interest payable and similar expenses","value":-0.164357},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}}},
+  2025: {"currency":"GBP","sourceId":"chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.164358,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7.885437,"officialTotalExpenses":10.103974,"officialPAT":-2.382893,"extraRows":[{"label":"Interest receivable and similar income","value":-0.000001},{"label":"Interest payable and similar expenses","value":-0.164357},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}},"baseIngreso":"full"},
 };
 
 const chesterfieldGbPresupuestoOverlayByYear = {};

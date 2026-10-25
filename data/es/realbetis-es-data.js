@@ -31,7 +31,7 @@ const realbetisEsExpenseLinesByYear = {
 };
 
 const realbetisEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"realbetis-es-informe-auditoria-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":10.101484,"assetSales":0,"netInterest":-9.44245,"tax":-1.008801,"grossDebt":129.106402,"cash":15.954506,"officialTotalRevenue":195.21982,"officialTotalExpenses":190.30132,"officialPAT":4.568734},
+  2025: {"currency":"EUR","sourceId":"realbetis-es-informe-auditoria-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":10.101484,"assetSales":0,"netInterest":-9.44245,"tax":-1.008801,"grossDebt":129.106402,"cash":15.954506,"officialTotalRevenue":195.21982,"officialTotalExpenses":190.30132,"officialPAT":4.568734,"baseIngreso":"full"},
 };
 
 const realbetisEsPasesData = [];

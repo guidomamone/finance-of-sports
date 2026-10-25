@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-24",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "leeds-gb",
@@ -122,7 +122,8 @@
           {"label":"Interest receivable and similar income","amount":1.062},
           {"label":"Interest payable and similar expenses","amount":-1.962363},
           {"label":"Tax on loss","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -181,7 +182,8 @@
           {"label":"Interest receivable and similar income","amount":1.05751},
           {"label":"Interest payable and similar expenses","amount":-2.035446},
           {"label":"Tax on loss","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -234,7 +236,8 @@
           {"label":"Interest receivable and similar income","amount":5.282136},
           {"label":"Interest payable and similar expenses","amount":-5.757466},
           {"label":"Tax on profit/(loss)","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -287,7 +290,8 @@
           {"label":"Interest receivable and similar income","amount":6.598522},
           {"label":"Interest payable and similar expenses","amount":-9.728259},
           {"label":"Tax on loss","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -338,7 +342,8 @@
           {"label":"Interest receivable and similar income","amount":11.909865},
           {"label":"Interest payable and similar expenses","amount":-12.985289},
           {"label":"Tax on loss","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -396,7 +401,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.252199,"tax":0,"gross_debt":60.297537,"cash":5.008994},
-      "official_totals": {"revenue":161.252569,"expenses":203.811855,"net_result":-60.811485}
+      "official_totals": {"revenue":161.252569,"expenses":203.811855,"net_result":-60.811485},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -453,7 +459,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.542355,"tax":0,"gross_debt":58.824929,"cash":33.952665},
-      "official_totals": {"revenue":161.755178,"expenses":205.390711,"net_result":-49.177888}
+      "official_totals": {"revenue":161.755178,"expenses":205.390711,"net_result":-49.177888},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

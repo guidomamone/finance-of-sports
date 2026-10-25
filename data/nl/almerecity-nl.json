@@ -50,7 +50,8 @@
           {"label":"Rentelasten en soortgelijke kosten","amount":-0.141762},
           {"label":"Vennootschapsbelasting","amount":0.00285}
         ],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":15.391477,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":15.391477,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

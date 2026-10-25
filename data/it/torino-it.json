@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "torino-it",
@@ -249,7 +249,8 @@
           {"label":"Imposte esercizi precedenti","amount":0},
           {"label":"Imposte correnti","amount":-1.778912},
           {"label":"Imposte anticipate e differite","amount":4.393172}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -470,7 +471,8 @@
           {"label":"[sin etiqueta] Interessi e altri oneri finanziari - altri","amount":-0.609108},
           {"label":"[sin etiqueta] Imposte correnti","amount":-0.925554},
           {"label":"[sin etiqueta] Imposte differite e anticipate","amount":3.80619}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -665,7 +667,8 @@
           {"label":"d) oneri diversi","amount":-0.706386},
           {"label":"Imposte correnti","amount":1.209531},
           {"label":"Imposte anticipate e differite","amount":4.290082}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -862,7 +865,8 @@
           {"label":"d) oneri diversi (17, costo)","amount":-0.940101},
           {"label":"Imposte correnti","amount":7.051289},
           {"label":"Imposte anticipate e differite","amount":4.203242}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1058,7 +1062,8 @@
           {"label":"d) oneri diversi","amount":-1.464396},
           {"label":"Imposte correnti","amount":-0.372268},
           {"label":"Imposte anticipate e differite","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1246,7 +1251,8 @@
           {"label":"d) oneri diversi","amount":-3.059745},
           {"label":"Imposte correnti","amount":1.584259},
           {"label":"Imposte anticipate e differite","amount":-0.398865}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1435,7 +1441,8 @@
           {"label":"d) oneri diversi (17, costo)","amount":-3.226978},
           {"label":"Imposte correnti","amount":-2.323564},
           {"label":"Imposte anticipate e differite","amount":-4.172753}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1634,7 +1641,8 @@
           {"label":"d) oneri diversi","amount":-3.061468},
           {"label":"Imposte correnti","amount":-1.651281},
           {"label":"Imposte anticipate e differite","amount":3.928265}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

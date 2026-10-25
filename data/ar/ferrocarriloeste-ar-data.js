@@ -164,9 +164,9 @@ const ferrocarriloesteArExpenseLinesByYear = {
 };
 
 const ferrocarriloesteArFiscalYearMeta = {
-  2022: {"currency":"ARS","sourceId":"ferrocarriloeste-ar-estados-contables-118-2021-22","reportType":"official_balance_sheet","gestionId":"pandolfi","fxRef":"ARS@2022-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":250.656214,"tax":0,"grossDebt":304.101699,"cash":3.903445,"officialTotalRevenue":1133.154575,"officialTotalExpenses":1126.908874,"officialPAT":256.901916},
-  2023: {"currency":"ARS","sourceId":"ferrocarriloeste-ar-balance-119-2022-23","reportType":"official_balance_sheet","gestionId":"pandolfi","fxRef":"ARS@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":629.290795,"tax":0,"grossDebt":415.023331,"cash":59.450677,"officialTotalRevenue":3022.684808,"officialTotalExpenses":2939.047832,"officialPAT":712.927772},
-  2025: {"currency":"ARS","sourceId":"ferrocarriloeste-ar-balance-ejercicio-121-2024-25","reportType":"official_balance_sheet","gestionId":null,"fx":1165,"fxSource":"manual","profitOnPlayerSales":0,"assetSales":0,"netInterest":497.688217,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":16088.001906,"officialTotalExpenses":15909.914626,"officialPAT":675.775497},
+  2022: {"currency":"ARS","sourceId":"ferrocarriloeste-ar-estados-contables-118-2021-22","reportType":"official_balance_sheet","gestionId":"pandolfi","fxRef":"ARS@2022-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":250.656214,"tax":0,"grossDebt":304.101699,"cash":3.903445,"officialTotalRevenue":1133.154575,"officialTotalExpenses":1126.908874,"officialPAT":256.901916,"baseIngreso":"full"},
+  2023: {"currency":"ARS","sourceId":"ferrocarriloeste-ar-balance-119-2022-23","reportType":"official_balance_sheet","gestionId":"pandolfi","fxRef":"ARS@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":629.290795,"tax":0,"grossDebt":415.023331,"cash":59.450677,"officialTotalRevenue":3022.684808,"officialTotalExpenses":2939.047832,"officialPAT":712.927772,"baseIngreso":"full"},
+  2025: {"currency":"ARS","sourceId":"ferrocarriloeste-ar-balance-ejercicio-121-2024-25","reportType":"official_balance_sheet","gestionId":null,"fx":1165,"fxSource":"manual","profitOnPlayerSales":0,"assetSales":0,"netInterest":497.688217,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":16088.001906,"officialTotalExpenses":15909.914626,"officialPAT":675.775497,"baseIngreso":"full"},
 };
 
 const ferrocarriloesteArPresupuestoOverlayByYear = {};

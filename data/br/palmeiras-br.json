@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "palmeiras-br",
@@ -185,7 +185,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-76.456,"tax":0,"gross_debt":39.759,"cash":38.363},
-      "official_totals": {"revenue":1271.36,"expenses":996.718,"net_result":198.183}
+      "official_totals": {"revenue":1271.36,"expenses":996.718,"net_result":198.183},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -344,7 +345,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-89.714,"tax":0,"gross_debt":0.234,"cash":118.371},
-      "official_totals": {"revenue":1628.486,"expenses":1246.377,"net_result":292.395}
+      "official_totals": {"revenue":1628.486,"expenses":1246.377,"net_result":292.395},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

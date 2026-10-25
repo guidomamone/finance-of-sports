@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "banfield-ar",
@@ -269,7 +269,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":19.86247,"tax":0,"gross_debt":246.057622,"cash":8.57802},
-      "official_totals": {"revenue":705.794415,"expenses":645.483308,"net_result":80.173576}
+      "official_totals": {"revenue":705.794415,"expenses":645.483308,"net_result":80.173576},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -32,7 +32,7 @@ const rcdmallorcaEsExpenseLinesByYear = {
 };
 
 const rcdmallorcaEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"rcdmallorca-es-cuentas-anuales-informe-gestion-2024-25","reportType":"official_balance_sheet","gestionId":"sin_confirmar","fxRef":"EUR@2025-06-30","fxSource":"market_close","profitOnPlayerSales":7.768888,"assetSales":0,"netInterest":-1.151946,"tax":-0.132013,"grossDebt":59.60432,"cash":3.599131,"officialTotalRevenue":75.528837,"officialTotalExpenses":92.01309,"officialPAT":-9.999324},
+  2025: {"currency":"EUR","sourceId":"rcdmallorca-es-cuentas-anuales-informe-gestion-2024-25","reportType":"official_balance_sheet","gestionId":"sin_confirmar","fxRef":"EUR@2025-06-30","fxSource":"market_close","profitOnPlayerSales":7.768888,"assetSales":0,"netInterest":-1.151946,"tax":-0.132013,"grossDebt":59.60432,"cash":3.599131,"officialTotalRevenue":75.528837,"officialTotalExpenses":92.01309,"officialPAT":-9.999324,"baseIngreso":"full"},
 };
 
 const rcdmallorcaEsPresupuestoOverlayByYear = {};

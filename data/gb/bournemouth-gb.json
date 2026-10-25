@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "bournemouth-gb",
@@ -97,7 +97,8 @@
           {"label":"Interest receivable and similar income","amount":0.889},
           {"label":"Interest payable and similar expenses","amount":-7.65},
           {"label":"Tax on (loss)/profit","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -147,7 +148,8 @@
           {"label":"Interest receivable and similar income","amount":0.253},
           {"label":"Interest payable and similar expenses","amount":-7.828},
           {"label":"Tax on profit/(loss)","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -206,7 +208,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.311,"tax":0,"gross_debt":122.779,"cash":7.104},
-      "official_totals": {"revenue":169.868,"expenses":225.708,"net_result":-66.151}
+      "official_totals": {"revenue":169.868,"expenses":225.708,"net_result":-66.151},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -270,7 +273,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-13.387,"tax":0,"gross_debt":48.905,"cash":47.236},
-      "official_totals": {"revenue":290.131,"expenses":261.857,"net_result":14.887}
+      "official_totals": {"revenue":290.131,"expenses":261.857,"net_result":14.887},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

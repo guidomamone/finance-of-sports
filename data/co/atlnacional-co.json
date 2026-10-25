@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "atlnacional-co",
@@ -178,7 +178,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2306.129,"tax":-186.91,"gross_debt":15948.285,"cash":17130.558},
-      "official_totals": {"revenue":196884.03,"expenses":187415.294,"net_result":6975.695}
+      "official_totals": {"revenue":196884.03,"expenses":187415.294,"net_result":6975.695},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

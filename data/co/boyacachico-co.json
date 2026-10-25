@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "boyacachico-co",
@@ -144,7 +144,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-257.027005,"tax":-381.268512,"gross_debt":666.527066,"cash":441.174314},
-      "official_totals": {"revenue":8264.587487,"expenses":6918.221877,"net_result":708.070093}
+      "official_totals": {"revenue":8264.587487,"expenses":6918.221877,"net_result":708.070093},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -308,7 +309,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-83.859833,"tax":-205.56515,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":9305.853883,"expenses":8634.665049,"net_result":381.763851},
-      "adjustments": {"extra_rows":[{"label":"Gasto por impuesto a las ganancias","amount":-205.56515},{"label":"Intereses","amount":-83.859833}]}
+      "adjustments": {"extra_rows":[{"label":"Gasto por impuesto a las ganancias","amount":-205.56515},{"label":"Intereses","amount":-83.859833}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "napoli-it",
@@ -369,7 +369,8 @@
           {"label":"c) oneri (proventi) da consolidato fiscale","amount":-0.491949},
           {"label":"d) imposte differite","amount":-6.73048},
           {"label":"e) imposte anticipate","amount":9.610023}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -540,7 +541,8 @@
           {"label":"c) oneri (proventi) da consolidato fiscale","amount":-2.017882},
           {"label":"d) imposte differite","amount":-16.186023},
           {"label":"e) imposte anticipate","amount":7.98596}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -845,7 +847,8 @@
           {"label":"c) oneri (proventi) da consolidato fiscale","amount":6.919195},
           {"label":"d) imposte differite","amount":-12.057359},
           {"label":"e) imposte anticipate","amount":11.883123}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1145,7 +1148,8 @@
           {"label":"c) oneri (proventi) da consolidato fiscale","amount":1.932616},
           {"label":"d) imposte differite","amount":-4.927366},
           {"label":"e) imposte anticipate","amount":23.172592}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1425,7 +1429,8 @@
           {"label":"c) oneri (proventi) da consolidato fiscale","amount":6.623853},
           {"label":"d) imposte differite","amount":-0.538566},
           {"label":"e) imposte anticipate","amount":10.528949}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1728,7 +1733,8 @@
           {"label":"c) oneri (proventi) da consolidato fiscale","amount":-16.680415},
           {"label":"d) imposte differite","amount":-15.855455},
           {"label":"e) imposte anticipate","amount":5.968328}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1887,7 +1893,8 @@
           {"label":"c) oneri (proventi) da consolidato fiscale","amount":-17.011456},
           {"label":"d) imposte differite","amount":-7.180915},
           {"label":"e) imposte anticipate","amount":6.339788}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2200,7 +2207,8 @@
           {"label":"c) oneri (proventi) da consolidato fiscale","amount":14.574172},
           {"label":"d) imposte differite","amount":-15.489341},
           {"label":"e) imposte anticipate","amount":7.13287}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

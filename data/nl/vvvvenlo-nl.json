@@ -61,7 +61,8 @@
       "official_totals": {"revenue":5.884,"expenses":7.362,"net_result":-1.56},
       "adjustments": {
         "extra_rows": [{"label":"Rentelasten","amount":-0.082},{"label":"Vennootschapsbelasting","amount":0}],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":5.718,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":5.718,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

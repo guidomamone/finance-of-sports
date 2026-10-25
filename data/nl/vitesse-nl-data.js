@@ -30,7 +30,7 @@ const vitesseNlExpenseLinesByYear = {
 };
 
 const vitesseNlFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"vitesse-nl-wf-2023-2024-be6334b7","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-4.770651,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":22.101698,"officialTotalExpenses":29.13202,"officialPAT":-11.800973,"extraRows":[{"label":"Overige rentebaten en soortgelijke opbrengsten","value":0.006229},{"label":"Rentelasten en soortgelijke kosten","value":-4.77688}]},
+  2024: {"currency":"EUR","sourceId":"vitesse-nl-wf-2023-2024-be6334b7","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-4.770651,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":22.101698,"officialTotalExpenses":29.13202,"officialPAT":-11.800973,"extraRows":[{"label":"Overige rentebaten en soortgelijke opbrengsten","value":0.006229},{"label":"Rentelasten en soortgelijke kosten","value":-4.77688}],"baseIngreso":"full"},
 };
 
 const vitesseNlPresupuestoOverlayByYear = {};

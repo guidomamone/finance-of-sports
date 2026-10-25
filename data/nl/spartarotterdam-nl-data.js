@@ -21,7 +21,7 @@ const spartarotterdamNlExpenseLinesByYear = {
 };
 
 const spartarotterdamNlFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"spartarotterdam-nl-wf-2023-2024-7bc9c6f8","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.067737,"tax":0.938225,"grossDebt":null,"cash":null,"officialTotalRevenue":20.787851,"officialTotalExpenses":21.59345,"officialPAT":0.200363,"extraRows":[{"label":"Rentebaten en -lasten en soortgelijke kosten","value":-0.138885},{"label":"Aandeel in resultaat van deelnemingen","value":0.206622},{"label":"Belastingen","value":0.938225}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":18.058718,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2024: {"currency":"EUR","sourceId":"spartarotterdam-nl-wf-2023-2024-7bc9c6f8","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.067737,"tax":0.938225,"grossDebt":null,"cash":null,"officialTotalRevenue":20.787851,"officialTotalExpenses":21.59345,"officialPAT":0.200363,"extraRows":[{"label":"Rentebaten en -lasten en soortgelijke kosten","value":-0.138885},{"label":"Aandeel in resultaat van deelnemingen","value":0.206622},{"label":"Belastingen","value":0.938225}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":18.058718,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const spartarotterdamNlPresupuestoOverlayByYear = {};

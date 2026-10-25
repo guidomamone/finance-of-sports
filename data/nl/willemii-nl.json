@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "willemii-nl",
@@ -110,7 +110,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.302082,"tax":0.005186,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":20.321775,"expenses":20.046986,"net_result":-0.022107},
-      "adjustments": {"extra_rows":[{"label":"Financiële baten en lasten","amount":-0.302082},{"label":"Vennootschapsbelasting","amount":0.005186}]}
+      "adjustments": {"extra_rows":[{"label":"Financiële baten en lasten","amount":-0.302082},{"label":"Vennootschapsbelasting","amount":0.005186}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

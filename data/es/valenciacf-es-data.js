@@ -30,7 +30,7 @@ const valenciacfEsExpenseLinesByYear = {
 };
 
 const valenciacfEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"valenciacf-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":41.572,"assetSales":0,"netInterest":-21.458,"tax":-1.132,"grossDebt":121.693,"cash":31.752,"officialTotalRevenue":103.266,"officialTotalExpenses":121.752,"officialPAT":0.496},
+  2025: {"currency":"EUR","sourceId":"valenciacf-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":41.572,"assetSales":0,"netInterest":-21.458,"tax":-1.132,"grossDebt":121.693,"cash":31.752,"officialTotalRevenue":103.266,"officialTotalExpenses":121.752,"officialPAT":0.496,"baseIngreso":"full"},
 };
 
 const valenciacfEsPasesData = [];

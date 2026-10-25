@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "nacbreda-nl",
@@ -85,7 +85,8 @@
           {"label":"Rentebaten en soortgelijke opbrengsten","amount":0.022924},
           {"label":"Rentelasten en soortgelijke kosten","amount":-0.069893},
           {"label":"Belastingen","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

@@ -15,7 +15,7 @@ const fcvolendamNlExpenseLinesByYear = {
 };
 
 const fcvolendamNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"fcvolendam-nl-volendam-jaarcijfers-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.028337,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":10.714978,"officialTotalExpenses":11.514362,"officialPAT":-0.82772,"extraRows":[{"label":"Financiële baten en lasten","value":-0.028337},{"label":"Belastingen","value":0}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":10.714978,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2025: {"currency":"EUR","sourceId":"fcvolendam-nl-volendam-jaarcijfers-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.028337,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":10.714978,"officialTotalExpenses":11.514362,"officialPAT":-0.82772,"extraRows":[{"label":"Financiële baten en lasten","value":-0.028337},{"label":"Belastingen","value":0}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":10.714978,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"sales_total"},
 };
 
 const fcvolendamNlPresupuestoOverlayByYear = {};

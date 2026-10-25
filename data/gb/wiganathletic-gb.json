@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "wiganathletic-gb",
@@ -61,7 +61,8 @@
       "official_totals": {"revenue":9.995089,"expenses":18.22794,"net_result":-8.225313},
       "adjustments": {
         "extra_rows": [{"label":"Interest receivable and similar income","amount":0.007538},{"label":"Tax on loss","amount":null}],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "heraclesalmelo-nl",
@@ -198,7 +198,8 @@
           {"label":"Rentebaten en soortgelijke opbrengsten","amount":0.106915},
           {"label":"Rentelasten en soortgelijke kosten","amount":-0.615359},
           {"label":"Belastingen resultaat","amount":0.270337}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

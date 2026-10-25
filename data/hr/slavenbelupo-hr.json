@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "slavenbelupo-hr",
@@ -171,7 +171,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.048007,"tax":0,"gross_debt":1.179036,"cash":0.026003},
-      "official_totals": {"revenue":5.68775,"expenses":6.42779,"net_result":-0.788047}
+      "official_totals": {"revenue":5.68775,"expenses":6.42779,"net_result":-0.788047},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

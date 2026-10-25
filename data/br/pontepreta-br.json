@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "pontepreta-br",
@@ -133,7 +133,8 @@
         {"label":"Amador","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-2.864938,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.350711,"tax":0,"gross_debt":156.048883,"cash":0.043848},
-      "official_totals": {"revenue":44.8471,"expenses":49.02718,"net_result":-4.530791}
+      "official_totals": {"revenue":44.8471,"expenses":49.02718,"net_result":-4.530791},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -217,7 +218,8 @@
         {"label":"Amador","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-3.009161,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.221453,"tax":0,"gross_debt":155.365802,"cash":0.067135},
-      "official_totals": {"revenue":32.375229,"expenses":47.322484,"net_result":-15.168708}
+      "official_totals": {"revenue":32.375229,"expenses":47.322484,"net_result":-15.168708},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -305,7 +307,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.040222,"tax":0,"gross_debt":175.746869,"cash":16.148531},
-      "official_totals": {"revenue":79.650568,"expenses":50.521953,"net_result":7.000643}
+      "official_totals": {"revenue":79.650568,"expenses":50.521953,"net_result":7.000643},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -376,7 +379,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.0357,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":23.571331,"expenses":50.811741,"net_result":-33.57577}
+      "official_totals": {"revenue":23.571331,"expenses":50.811741,"net_result":-33.57577},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

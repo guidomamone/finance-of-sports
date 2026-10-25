@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "vitesse-nl",
@@ -65,7 +65,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.770651,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":22.101698,"expenses":29.13202,"net_result":-11.800973},
       "adjustments": {
-        "extra_rows": [{"label":"Overige rentebaten en soortgelijke opbrengsten","amount":0.006229},{"label":"Rentelasten en soortgelijke kosten","amount":-4.77688}]
+        "extra_rows": [{"label":"Overige rentebaten en soortgelijke opbrengsten","amount":0.006229},{"label":"Rentelasten en soortgelijke kosten","amount":-4.77688}],
+        "revenue_basis": "full"
       }
     }
   ],

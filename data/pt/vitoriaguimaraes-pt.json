@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "vitoriaguimaraes-pt",
@@ -198,7 +198,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":null},
           {"label":"Juros e gastos similares suportados","amount":-0.684768},
           {"label":"Imposto sobre o rendimento do período","amount":-0.061159}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -346,7 +347,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.002916},
           {"label":"Juros e gastos similares suportados","amount":-1.639008},
           {"label":"Imposto sobre o rendimento do período","amount":-0.074767}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -515,7 +517,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.047845},
           {"label":"Juros e gastos similares suportados","amount":-3.741936},
           {"label":"Imposto sobre o rendimentos do período","amount":-0.0884}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -676,7 +679,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.003702},
           {"label":"Juros e gastos similares suportados","amount":-5.006965},
           {"label":"Imposto sobre o rendimentos do período","amount":-0.503224}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

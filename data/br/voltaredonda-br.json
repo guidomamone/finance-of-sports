@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "voltaredonda-br",
@@ -123,7 +123,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.28533224,"tax":0,"gross_debt":1.84648686,"cash":0.06612846},
-      "official_totals": {"revenue":12.64343688,"expenses":11.91917173,"net_result":7.26369188}
+      "official_totals": {"revenue":12.64343688,"expenses":11.91917173,"net_result":7.26369188},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -207,7 +208,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.71628018,"tax":0,"gross_debt":1.73506244,"cash":1.12316442},
-      "official_totals": {"revenue":26.39692624,"expenses":25.64340464,"net_result":0.03724142}
+      "official_totals": {"revenue":26.39692624,"expenses":25.64340464,"net_result":0.03724142},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

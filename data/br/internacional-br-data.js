@@ -126,8 +126,8 @@ const internacionalBrExpenseLinesByYear = {
 };
 
 const internacionalBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"internacional-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"barcellos","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":-2.506,"netInterest":-64.102,"tax":0,"grossDebt":189.031,"cash":3.77,"officialTotalRevenue":512.572,"officialTotalExpenses":480.463,"officialPAT":-34.499},
-  2025: {"currency":"BRL","sourceId":"internacional-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"barcellos","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":-0.329,"netInterest":-65.335,"tax":0,"grossDebt":188.975,"cash":2.261,"officialTotalRevenue":601.893,"officialTotalExpenses":527.236,"officialPAT":8.993},
+  2024: {"currency":"BRL","sourceId":"internacional-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"barcellos","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":-2.506,"netInterest":-64.102,"tax":0,"grossDebt":189.031,"cash":3.77,"officialTotalRevenue":512.572,"officialTotalExpenses":480.463,"officialPAT":-34.499,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"internacional-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"barcellos","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":-0.329,"netInterest":-65.335,"tax":0,"grossDebt":188.975,"cash":2.261,"officialTotalRevenue":601.893,"officialTotalExpenses":527.236,"officialPAT":8.993,"baseIngreso":"full"},
 };
 
 const internacionalBrPresupuestoOverlayByYear = {};

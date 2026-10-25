@@ -96,7 +96,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.290382,"tax":-0.480418,"gross_debt":125.909849,"cash":9.153243},
       "official_totals": {"revenue":217.622653,"expenses":210.074841,"net_result":0.777012},
-      "adjustments": {"no_breakdown":[{"line":"Handel und Sonstiges","side":"revenue","amount":81.077,"reason":"el documento no desglosa este renglón","kind":"other"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Handel und Sonstiges","side":"revenue","amount":81.077,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2024,
@@ -161,7 +164,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.910318,"tax":-2.490705,"gross_debt":140.706446,"cash":10.438385},
       "official_totals": {"revenue":299.815224,"expenses":277.88135,"net_result":15.532851},
-      "adjustments": {"no_breakdown":[{"line":"Handel und Sonstiges","side":"revenue","amount":109.498,"reason":"el documento no desglosa este renglón","kind":"other"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Handel und Sonstiges","side":"revenue","amount":109.498,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "revenue_basis": "full"
+      }
     }
   ],
   "budget_overlay": {},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "everton-gb",
@@ -110,7 +110,8 @@
           {"label":"Interest receivable and similar income","amount":1.414},
           {"label":"Interest payable and similar charges","amount":-10.473},
           {"label":"Tax on loss","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -169,7 +170,8 @@
           {"label":"Interest receivable and similar income","amount":1.7},
           {"label":"Interest payable and similar charges","amount":-7.856},
           {"label":"Tax on loss","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -213,7 +215,8 @@
         {"label":"Refinancing and legal costs","category":"exceptional","subcategory":"exceptional_items","amount":-10.371,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0.004,"net_interest":-9.083,"tax":0,"gross_debt":593.772,"cash":26.423},
-      "official_totals": {"revenue":235.447,"expenses":269.219,"net_result":-53.222}
+      "official_totals": {"revenue":235.447,"expenses":269.219,"net_result":-53.222},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -271,7 +274,8 @@
         {"label":"Refinancing and legal costs","category":"exceptional","subcategory":"exceptional_items","amount":-1.672,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":49.165,"net_interest":-13.166,"tax":0,"gross_debt":468.542,"cash":79.141},
-      "official_totals": {"revenue":228.022,"expenses":261.415,"net_result":-8.609}
+      "official_totals": {"revenue":228.022,"expenses":261.415,"net_result":-8.609},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

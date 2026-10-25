@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sampdoria-it",
@@ -252,7 +252,8 @@
           {"label":"22) a) imposte correnti","amount":-3.465535},
           {"label":"22) b) imposte differite","amount":-3.943972},
           {"label":"22) c) imposte anticipate","amount":0.440273}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -464,7 +465,8 @@
           {"label":"b) Imposte relative ad es. precedenti","amount":0.015076},
           {"label":"c) Imposte differite","amount":-4.237956},
           {"label":"d) Imposte anticipate","amount":7.313704}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -661,7 +663,8 @@
           {"label":"b) Imposte relative a es' precedenti","amount":0.182062},
           {"label":"c) Imposte differite e anticipate","amount":-2.723487},
           {"label":"d) Proventi da consolidamento","amount":5.192584}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -810,7 +813,8 @@
           {"label":"c) Imposte differite","amount":-1.99323},
           {"label":"d) Imposte anticipate","amount":-0.118679},
           {"label":"e) proventi (aneri) da adesione al regime di consolidato fiscale","amount":6.427568}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

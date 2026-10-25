@@ -69,7 +69,7 @@ const newellsArExpenseLinesByYear = {
 };
 
 const newellsArFiscalYearMeta = {
-  2019: {"currency":"ARS","sourceId":"newells-ar-memoria-y-balance-2018-2019","reportType":"official_balance_sheet","gestionId":"bermudez","fx":41.5,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":78.418044,"tax":0,"grossDebt":226.531038,"cash":17.263929,"officialTotalRevenue":775.13758,"officialTotalExpenses":644.59206,"officialPAT":208.963563},
+  2019: {"currency":"ARS","sourceId":"newells-ar-memoria-y-balance-2018-2019","reportType":"official_balance_sheet","gestionId":"bermudez","fx":41.5,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":78.418044,"tax":0,"grossDebt":226.531038,"cash":17.263929,"officialTotalRevenue":775.13758,"officialTotalExpenses":644.59206,"officialPAT":208.963563,"baseIngreso":"full"},
 };
 
 const newellsArPasesData = [];

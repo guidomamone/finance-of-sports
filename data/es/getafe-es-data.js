@@ -56,8 +56,8 @@ const getafeEsExpenseLinesByYear = {
 };
 
 const getafeEsFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"getafe-es-cuentas-anuales-2023-24","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":16.561975,"assetSales":0,"netInterest":-2.992409,"tax":1.783799,"grossDebt":77.934725,"cash":3.374345,"officialTotalRevenue":64.451092,"officialTotalExpenses":88.376952,"officialPAT":-8.572495},
-  2025: {"currency":"EUR","sourceId":"getafe-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":19.132289,"assetSales":0,"netInterest":-5.100524,"tax":-0.808042,"grossDebt":85.300451,"cash":6.450427,"officialTotalRevenue":60.709312,"officialTotalExpenses":75.62375,"officialPAT":-1.690715},
+  2024: {"currency":"EUR","sourceId":"getafe-es-cuentas-anuales-2023-24","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":16.561975,"assetSales":0,"netInterest":-2.992409,"tax":1.783799,"grossDebt":77.934725,"cash":3.374345,"officialTotalRevenue":64.451092,"officialTotalExpenses":88.376952,"officialPAT":-8.572495,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"getafe-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":19.132289,"assetSales":0,"netInterest":-5.100524,"tax":-0.808042,"grossDebt":85.300451,"cash":6.450427,"officialTotalRevenue":60.709312,"officialTotalExpenses":75.62375,"officialPAT":-1.690715,"baseIngreso":"full"},
 };
 
 const getafeEsPresupuestoOverlayByYear = {};

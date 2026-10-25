@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "monchengladbach-de",
@@ -101,7 +101,8 @@
           {"label":"9. Zinsen und ähnliche Aufwendungen","amount":-1.607168},
           {"label":"10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)","amount":3.627211},
           {"label":"12. Sonstige Steuern","amount":-0.043598}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -157,7 +158,8 @@
           {"label":"8. Sonstige Zinsen und ähnliche Erträge","amount":0.017175},
           {"label":"9. Zinsen und ähnliche Aufwendungen","amount":-1.525073},
           {"label":"10. Steuern vom Einkommen und vom Ertrag (- = Steuerertrag)","amount":0.203214}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -233,7 +235,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-5.823501,"gross_debt":107.105528,"cash":0.493335},
-      "official_totals": {"revenue":198.33571,"expenses":188.225663,"net_result":4.286546}
+      "official_totals": {"revenue":198.33571,"expenses":188.225663,"net_result":4.286546},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -308,7 +311,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0.079976,"gross_debt":107.921968,"cash":0.740841},
-      "official_totals": {"revenue":182.392068,"expenses":184.904447,"net_result":-2.432403}
+      "official_totals": {"revenue":182.392068,"expenses":184.904447,"net_result":-2.432403},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

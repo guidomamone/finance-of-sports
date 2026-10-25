@@ -21,7 +21,7 @@ const fcdordrechtNlExpenseLinesByYear = {
 };
 
 const fcdordrechtNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"fcdordrecht-nl-wf-2024-2025-602d6b96","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.044471,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5.836761,"officialTotalExpenses":5.575229,"officialPAT":0.217061,"extraRows":[{"label":"Financiële baten en lasten","value":-0.044471},{"label":"Belastingen","value":0}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":4.680373,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2025: {"currency":"EUR","sourceId":"fcdordrecht-nl-wf-2024-2025-602d6b96","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.044471,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5.836761,"officialTotalExpenses":5.575229,"officialPAT":0.217061,"extraRows":[{"label":"Financiële baten en lasten","value":-0.044471},{"label":"Belastingen","value":0}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":4.680373,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const fcdordrechtNlPresupuestoOverlayByYear = {};

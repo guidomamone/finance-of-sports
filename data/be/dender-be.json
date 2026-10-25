@@ -73,7 +73,11 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.623547,"tax":-0.213846,"gross_debt":21.68247,"cash":0.044976},
       "official_totals": {"revenue":9.162346,"expenses":13.241115,"net_result":-4.953248},
-      "adjustments": {"no_breakdown":[{"line":"Omzet","side":"revenue","amount":7.116234,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":7.116234,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["dender-be-jaarrekening-2025"]}
+      }
     }
   ],
   "budget_overlay": {},

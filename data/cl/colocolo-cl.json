@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "colocolo-cl",
@@ -163,7 +163,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2539.4610000000002,"tax":1623.264,"gross_debt":410.88,"cash":1293.536},
-      "official_totals": {"revenue":28955.528,"expenses":27247.87,"net_result":791.461}
+      "official_totals": {"revenue":28955.528,"expenses":27247.87,"net_result":791.461},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -276,7 +277,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1284.447,"tax":-34.283,"gross_debt":2804.415,"cash":43.523},
-      "official_totals": {"revenue":31920.289,"expenses":29783.789,"net_result":817.77}
+      "official_totals": {"revenue":31920.289,"expenses":29783.789,"net_result":817.77},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -389,7 +391,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2494.529,"tax":370.515,"gross_debt":1872.558,"cash":3435.024},
-      "official_totals": {"revenue":47608.495,"expenses":44816.074,"net_result":668.407}
+      "official_totals": {"revenue":47608.495,"expenses":44816.074,"net_result":668.407},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -465,7 +468,8 @@
           {"label":"Costos financieros","amount":-647.925},
           {"label":"Diferencias de tipo de cambio","amount":270.455},
           {"label":"(Gasto) ingreso por Impuesto a las Ganancias","amount":-185.78}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

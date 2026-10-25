@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "aekathens-gr",
@@ -173,7 +173,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.039777,"tax":0,"gross_debt":2.775,"cash":0.612826},
       "official_totals": {"revenue":10.0713,"expenses":14.228647,"net_result":-4.197125},
       "adjustments": {
-        "extra_rows": [{"label":"Χρηματοοικονομικά Έξοδα","amount":-0.039777},{"label":"Χρηματοοικονομικά Έσοδα","amount":0},{"label":"Φόρος εισοδήματος","amount":0}]
+        "extra_rows": [{"label":"Χρηματοοικονομικά Έξοδα","amount":-0.039777},{"label":"Χρηματοοικονομικά Έσοδα","amount":0},{"label":"Φόρος εισοδήματος","amount":0}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -254,7 +255,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.107864,"tax":-0.308649,"gross_debt":3.213188,"cash":1.785823},
       "official_totals": {"revenue":13.584488,"expenses":17.225812,"net_result":-4.057837},
       "adjustments": {
-        "extra_rows": [{"label":"Χρηματοοικονομικά Έξοδα","amount":-0.107864},{"label":"Φόρος εισοδήματος","amount":0},{"label":"Αναβαλλόμενος Φόρος","amount":-0.308649}]
+        "extra_rows": [{"label":"Χρηματοοικονομικά Έξοδα","amount":-0.107864},{"label":"Φόρος εισοδήματος","amount":0},{"label":"Αναβαλλόμενος Φόρος","amount":-0.308649}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -343,7 +345,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.083685,"tax":0.335886,"gross_debt":1.943936,"cash":1.65037},
       "official_totals": {"revenue":24.144686,"expenses":22.801188,"net_result":1.5957},
       "adjustments": {
-        "extra_rows": [{"label":"Χρηματοοικονομικά Έξοδα","amount":-0.083685},{"label":"Φόρος εισοδήματος","amount":0},{"label":"Αναβαλλόμενος Φόρος","amount":0.335886}]
+        "extra_rows": [{"label":"Χρηματοοικονομικά Έξοδα","amount":-0.083685},{"label":"Φόρος εισοδήματος","amount":0},{"label":"Αναβαλλόμενος Φόρος","amount":0.335886}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -432,7 +435,8 @@
           {"label":"Χρηματοοικονομικά Έσοδα","amount":0.010409},
           {"label":"Φόρος εισοδήματος","amount":-1.023407},
           {"label":"Αναβαλλόμενος Φόρος","amount":-0.481567}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -529,7 +533,8 @@
           {"label":"Χρηματοοικονομικά Έσοδα","amount":0.020048},
           {"label":"Φόρος εισοδήματος","amount":-0.066412},
           {"label":"Αναβαλλόμενος Φόρος","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -605,7 +610,8 @@
           {"label":"Χρηματοοικονομικά Έσοδα","amount":0.00349},
           {"label":"Φόρος εισοδήματος","amount":null},
           {"label":"Αναβαλλόμενος Φόρος","amount":0.149937}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -671,7 +677,8 @@
           {"label":"Χρηματοοικονομικά Έξοδα","amount":-0.344334},
           {"label":"Φόρος εισοδήματος","amount":-0.044873},
           {"label":"Αναβαλλόμενος Φόρος","amount":1.566761}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -762,7 +769,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.252697,"tax":0.283419,"gross_debt":1.084606,"cash":7.725899},
       "official_totals": {"revenue":38.985157,"expenses":41.019774,"net_result":-4.003895},
       "adjustments": {
-        "extra_rows": [{"label":"Χρηματοοικονομικά Έξοδα","amount":-2.252697},{"label":"Φόρος εισοδήματος","amount":null},{"label":"Αναβαλλόμενος Φόρος","amount":0.283419}]
+        "extra_rows": [{"label":"Χρηματοοικονομικά Έξοδα","amount":-2.252697},{"label":"Φόρος εισοδήματος","amount":null},{"label":"Αναβαλλόμενος Φόρος","amount":0.283419}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -865,7 +873,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.150954,"tax":0.212803,"gross_debt":10.980917,"cash":6.320395},
       "official_totals": {"revenue":58.768559,"expenses":56.899256,"net_result":-0.068848},
-      "adjustments": {"extra_rows":[{"label":"Χρηματοοικονομικά Έξοδα","amount":-2.150954},{"label":"Αναβαλλόμενος Φόρος","amount":0.212803}]}
+      "adjustments": {"extra_rows":[{"label":"Χρηματοοικονομικά Έξοδα","amount":-2.150954},{"label":"Αναβαλλόμενος Φόρος","amount":0.212803}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -932,7 +940,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.282193,"tax":0.056295,"gross_debt":20.208174,"cash":3.525741},
       "official_totals": {"revenue":55.355432,"expenses":64.479413,"net_result":-11.349878},
-      "adjustments": {"extra_rows":[{"label":"Χρηματοοικονομικά Έξοδα","amount":-2.282193},{"label":"Αναβαλλόμενος Φόρος","amount":0.056295}]}
+      "adjustments": {"extra_rows":[{"label":"Χρηματοοικονομικά Έξοδα","amount":-2.282193},{"label":"Αναβαλλόμενος Φόρος","amount":0.056295}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

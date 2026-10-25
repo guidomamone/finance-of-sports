@@ -41,7 +41,7 @@ const vitoriaBrExpenseLinesByYear = {
 };
 
 const vitoriaBrFiscalYearMeta = {
-  2025: {"currency":"BRL","sourceId":"vitoria-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-9.089,"tax":0,"grossDebt":10.273,"cash":0.066,"officialTotalRevenue":236.612,"officialTotalExpenses":258.364,"officialPAT":-25.418,"incluidoEn":{"member_dues":"competition_bonus"}},
+  2025: {"currency":"BRL","sourceId":"vitoria-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-9.089,"tax":0,"grossDebt":10.273,"cash":0.066,"officialTotalRevenue":236.612,"officialTotalExpenses":258.364,"officialPAT":-25.418,"incluidoEn":{"member_dues":"competition_bonus"},"baseIngreso":"full"},
 };
 
 const vitoriaBrPresupuestoOverlayByYear = {};

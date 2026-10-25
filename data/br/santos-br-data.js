@@ -60,8 +60,8 @@ const santosBrExpenseLinesByYear = {
 };
 
 const santosBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"santos-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"teixeira","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-72.973,"tax":0,"grossDebt":129.591,"cash":0.17,"officialTotalRevenue":379.07,"officialTotalExpenses":411.303,"officialPAT":-105.206},
-  2025: {"currency":"BRL","sourceId":"santos-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"teixeira","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-75.908,"tax":0,"grossDebt":94.338,"cash":0.295,"officialTotalRevenue":624.922,"officialTotalExpenses":628.41,"officialPAT":-79.396},
+  2024: {"currency":"BRL","sourceId":"santos-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"teixeira","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-72.973,"tax":0,"grossDebt":129.591,"cash":0.17,"officialTotalRevenue":379.07,"officialTotalExpenses":411.303,"officialPAT":-105.206,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"santos-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"teixeira","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-75.908,"tax":0,"grossDebt":94.338,"cash":0.295,"officialTotalRevenue":624.922,"officialTotalExpenses":628.41,"officialPAT":-79.396,"baseIngreso":"full"},
 };
 
 const santosBrPresupuestoOverlayByYear = {};

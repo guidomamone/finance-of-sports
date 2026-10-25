@@ -127,8 +127,8 @@ const botafogospBrExpenseLinesByYear = {
 };
 
 const botafogospBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"botafogosp-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.076494,"tax":0,"grossDebt":53.593257,"cash":0.013588,"officialTotalRevenue":46.032661,"officialTotalExpenses":49.500044,"officialPAT":-3.543877},
-  2025: {"currency":"BRL","sourceId":"botafogosp-br-demonstracoes-contabeis-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.066196,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":42.847601,"officialTotalExpenses":56.047526,"officialPAT":-13.26612,"extraRows":[{"label":"Receitas Financeiras","value":0.026913},{"label":"Despesas Financeiras","value":-0.093109}]},
+  2024: {"currency":"BRL","sourceId":"botafogosp-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.076494,"tax":0,"grossDebt":53.593257,"cash":0.013588,"officialTotalRevenue":46.032661,"officialTotalExpenses":49.500044,"officialPAT":-3.543877,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"botafogosp-br-demonstracoes-contabeis-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.066196,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":42.847601,"officialTotalExpenses":56.047526,"officialPAT":-13.26612,"extraRows":[{"label":"Receitas Financeiras","value":0.026913},{"label":"Despesas Financeiras","value":-0.093109}],"baseIngreso":"full"},
 };
 
 const botafogospBrPresupuestoOverlayByYear = {};

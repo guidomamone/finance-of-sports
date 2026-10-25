@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "mancity-gb",
@@ -117,7 +117,8 @@
           {"label":"Interest receivable and similar income","amount":1.525},
           {"label":"Interest payable and similar charges","amount":-6.278},
           {"label":"Taxation","amount":-2.681}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -185,7 +186,8 @@
           {"label":"Interest receivable and similar income","amount":0.778},
           {"label":"Interest payable and similar charges","amount":-5.345},
           {"label":"Taxation","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -254,7 +256,8 @@
           {"label":"Interest receivable and similar income","amount":0.056},
           {"label":"Interest payable and similar charges","amount":-5.767},
           {"label":"Taxation","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -320,7 +323,10 @@
       ],
       "financial": {"profit_on_player_sales":139.009,"asset_sales":0,"net_interest":-4.755,"tax":0,"gross_debt":0,"cash":53.767},
       "official_totals": {"revenue":719.474,"expenses":779.971,"net_result":73.757},
-      "adjustments": {"extra_rows":[{"label":"Interest receivable and similar income","amount":1.098},{"label":"Interest payable and similar charges","amount":-5.853}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Interest receivable and similar income","amount":1.098},{"label":"Interest payable and similar charges","amount":-5.853}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2025,
@@ -385,7 +391,10 @@
       ],
       "financial": {"profit_on_player_sales":95.21,"asset_sales":0,"net_interest":-11.824,"tax":0,"gross_debt":0,"cash":173.724},
       "official_totals": {"revenue":696.929,"expenses":790.231,"net_result":-9.916},
-      "adjustments": {"extra_rows":[{"label":"Interest receivable and similar income","amount":7.768},{"label":"Interest payable and similar charges","amount":-19.592}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Interest receivable and similar income","amount":7.768},{"label":"Interest payable and similar charges","amount":-19.592}],
+        "revenue_basis": "full"
+      }
     }
   ],
   "budget_overlay": {},

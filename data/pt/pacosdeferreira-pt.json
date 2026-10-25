@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "pacosdeferreira-pt",
@@ -131,7 +131,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0},
           {"label":"Juros e gastos similares suportados","amount":-0.010295},
           {"label":"Imposto sobre o rendimento do período","amount":-0.003552}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -249,7 +250,8 @@
           {"label":"Juros e gastos similares suportados","amount":-0.064976},
           {"label":"Imposto sobre o rendimento do período","amount":-0.001778},
           {"label":"Impostos Diferidos","amount":0.357055}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -349,7 +351,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.041945,"tax":-0.011372,"gross_debt":0.735093,"cash":0.00852},
       "official_totals": {"revenue":9.262878,"expenses":9.852456,"net_result":-0.642895},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.041945},{"label":"Imposto sobre o rendimento do período","amount":-0.011372}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.041945},{"label":"Imposto sobre o rendimento do período","amount":-0.011372}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -489,7 +492,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000422,"tax":-0.006205,"gross_debt":1.536338,"cash":0.020169},
       "official_totals": {"revenue":3.416315,"expenses":5.321068,"net_result":-1.987982},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000422},{"label":"Imposto sobre o rendimento do período","amount":-0.006205}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000422},{"label":"Imposto sobre o rendimento do período","amount":-0.006205}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -608,7 +612,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000081,"tax":-0.020385,"gross_debt":2.318508,"cash":0.019527},
       "official_totals": {"revenue":2.827625,"expenses":4.613911,"net_result":-1.806752},
       "adjustments": {
-        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000081},{"label":"Imposto sobre o rendimento do período","amount":-0.020385}]
+        "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000081},{"label":"Imposto sobre o rendimento do período","amount":-0.020385}],
+        "revenue_basis": "full"
       }
     }
   ],

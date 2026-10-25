@@ -96,7 +96,9 @@
       "official_totals": {"revenue":0.881647,"expenses":0.866767,"net_result":0.005382},
       "adjustments": {
         "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.000041},{"label":"Recurrente financiële kosten","amount":-0.009539}],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":0.805246,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":0.805246,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["lokerentemse-be-jaarrekening-2021-06-30-individual"]}
       }
     },
     {
@@ -139,7 +141,9 @@
       "official_totals": {"revenue":1.512829,"expenses":1.556987,"net_result":-0.04824},
       "adjustments": {
         "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.001217},{"label":"Recurrente financiële kosten","amount":-0.0053}],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":1.448549,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":1.448549,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["lokerentemse-be-jaarrekening-2022-06-30-individual"]}
       }
     },
     {
@@ -202,7 +206,9 @@
       "official_totals": {"revenue":2.172162,"expenses":2.630796,"net_result":-0.479459},
       "adjustments": {
         "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.000073},{"label":"Recurrente financiële kosten","amount":-0.020898}],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":1.504443,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":1.504443,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["lokerentemse-be-jaarrekening-2023-06-30-individual-correction"]}
       }
     },
     {
@@ -249,7 +255,8 @@
           {"label":"Recurrente financiële kosten","amount":-0.035423},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.000054}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.988874,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.988874,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -319,7 +326,9 @@
           {"label":"Niet-recurrente financiële kosten","amount":-0.000114},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":0}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":0.282823,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":0.282823,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["lokerentemse-be-jaarrekening-2025-06-30-individual"]}
       }
     }
   ],

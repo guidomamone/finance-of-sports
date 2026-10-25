@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "atleticomineiro-br",
@@ -174,7 +174,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-25.52,"tax":0,"gross_debt":465.387,"cash":191.231},
-      "official_totals": {"revenue":75.572,"expenses":91.235,"net_result":-41.183}
+      "official_totals": {"revenue":75.572,"expenses":91.235,"net_result":-41.183},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -391,7 +392,8 @@
         {"label":"Resultado equivalência patrimonial","category":"exceptional","subcategory":"exceptional_items","amount":-51.738,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-139.928,"tax":0,"gross_debt":554.702,"cash":3.382},
-      "official_totals": {"revenue":580.132,"expenses":687.82,"net_result":-299.354}
+      "official_totals": {"revenue":580.132,"expenses":687.82,"net_result":-299.354},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -614,7 +616,8 @@
         {"label":"Resultado equivalência patrimonial","category":"exceptional","subcategory":"exceptional_items","amount":-180.32,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-660.515,"tax":0,"gross_debt":721.757,"cash":5.939},
-      "official_totals": {"revenue":664.76,"expenses":706.034,"net_result":-882.109}
+      "official_totals": {"revenue":664.76,"expenses":706.034,"net_result":-882.109},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

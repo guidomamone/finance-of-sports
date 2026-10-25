@@ -115,8 +115,8 @@ const rosariocentralArExpenseLinesByYear = {
 };
 
 const rosariocentralArFiscalYearMeta = {
-  2023: {"currency":"ARS","sourceId":"rosariocentral-ar-estados-contables-2022-23","reportType":"official_balance_sheet","gestionId":"belloso","fx":255,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-266.766751,"tax":0,"grossDebt":4128.559186,"cash":42.78884,"officialTotalRevenue":8759.746504,"officialTotalExpenses":11600.20135,"officialPAT":-3107.221597},
-  2025: {"currency":"ARS","sourceId":"rosariocentral-ar-estados-contables-2024-25","reportType":"official_balance_sheet","gestionId":"belloso","fx":1165,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-901.781813,"tax":0,"grossDebt":33960.348119,"cash":271.773022,"officialTotalRevenue":45989.403491,"officialTotalExpenses":58497.629215,"officialPAT":-13410.007536},
+  2023: {"currency":"ARS","sourceId":"rosariocentral-ar-estados-contables-2022-23","reportType":"official_balance_sheet","gestionId":"belloso","fx":255,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-266.766751,"tax":0,"grossDebt":4128.559186,"cash":42.78884,"officialTotalRevenue":8759.746504,"officialTotalExpenses":11600.20135,"officialPAT":-3107.221597,"baseIngreso":"full"},
+  2025: {"currency":"ARS","sourceId":"rosariocentral-ar-estados-contables-2024-25","reportType":"official_balance_sheet","gestionId":"belloso","fx":1165,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-901.781813,"tax":0,"grossDebt":33960.348119,"cash":271.773022,"officialTotalRevenue":45989.403491,"officialTotalExpenses":58497.629215,"officialPAT":-13410.007536,"baseIngreso":"full"},
 };
 
 const rosariocentralArPasesData = [];

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "americadecali-co",
@@ -159,7 +159,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4239.446,"tax":-569.145,"gross_debt":11835.971,"cash":870.325},
-      "official_totals": {"revenue":97231.328,"expenses":104321.212,"net_result":-11898.474}
+      "official_totals": {"revenue":97231.328,"expenses":104321.212,"net_result":-11898.474},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

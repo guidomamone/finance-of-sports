@@ -186,7 +186,8 @@
       "official_totals": {"revenue":1.673036,"expenses":2.100819,"net_result":-0.557017},
       "adjustments": {
         "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.003435},{"label":"Recurrente financiële kosten","amount":-0.006715}],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.673036,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.673036,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -232,7 +233,8 @@
           {"label":"Recurrente financiële kosten","amount":-0.011165},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.002794}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.555937,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.555937,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -271,7 +273,8 @@
           {"label":"Recurrente financiële kosten","amount":-0.017305},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.010092}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.895671,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.895671,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -310,7 +313,8 @@
           {"label":"Recurrente financiële kosten","amount":-0.033924},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.014803}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.706155,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.706155,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     }
   ],

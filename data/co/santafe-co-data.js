@@ -42,7 +42,7 @@ const santafeCoExpenseLinesByYear = {
 };
 
 const santafeCoFiscalYearMeta = {
-  2025: {"currency":"COP","sourceId":"santafe-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1052.293049,"tax":972.728987,"grossDebt":4645.154895,"cash":684.927123,"officialTotalRevenue":67655.505401,"officialTotalExpenses":65604.607974,"officialPAT":1971.333366},
+  2025: {"currency":"COP","sourceId":"santafe-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1052.293049,"tax":972.728987,"grossDebt":4645.154895,"cash":684.927123,"officialTotalRevenue":67655.505401,"officialTotalExpenses":65604.607974,"officialPAT":1971.333366,"baseIngreso":"full"},
 };
 
 const santafeCoPresupuestoOverlayByYear = {};

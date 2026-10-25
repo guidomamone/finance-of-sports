@@ -31,7 +31,7 @@ const sportrecifeBrExpenseLinesByYear = {
 };
 
 const sportrecifeBrFiscalYearMeta = {
-  2025: {"currency":"BRL","sourceId":"sportrecife-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-13.941,"tax":0,"grossDebt":26.786,"cash":2.388,"officialTotalRevenue":174.186,"officialTotalExpenses":272.742,"officialPAT":-112.497},
+  2025: {"currency":"BRL","sourceId":"sportrecife-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-13.941,"tax":0,"grossDebt":26.786,"cash":2.388,"officialTotalRevenue":174.186,"officialTotalExpenses":272.742,"officialPAT":-112.497,"baseIngreso":"full"},
 };
 
 const sportrecifeBrPresupuestoOverlayByYear = {};

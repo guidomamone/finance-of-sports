@@ -72,7 +72,7 @@ const fortalezaBrExpenseLinesByYear = {
 };
 
 const fortalezaBrFiscalYearMeta = {
-  2025: {"currency":"BRL","sourceId":"fortaleza-br-demonstracoes-saf-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-37.383,"tax":0,"grossDebt":60.166,"cash":4.074,"officialTotalRevenue":400.636,"officialTotalExpenses":415.857,"officialPAT":-120.141},
+  2025: {"currency":"BRL","sourceId":"fortaleza-br-demonstracoes-saf-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":-37.383,"tax":0,"grossDebt":60.166,"cash":4.074,"officialTotalRevenue":400.636,"officialTotalExpenses":415.857,"officialPAT":-120.141,"baseIngreso":"full"},
 };
 
 const fortalezaBrPresupuestoOverlayByYear = {};

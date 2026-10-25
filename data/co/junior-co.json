@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "junior-co",
@@ -197,7 +197,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3541.489,"tax":-2635.491,"gross_debt":8213.691,"cash":9012.064},
-      "official_totals": {"revenue":94264.079,"expenses":86870.906,"net_result":1216.193}
+      "official_totals": {"revenue":94264.079,"expenses":86870.906,"net_result":1216.193},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

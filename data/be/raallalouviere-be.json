@@ -125,7 +125,8 @@
             "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
             "kind": "gross_margin"
           }
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -176,7 +177,8 @@
             "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
             "kind": "gross_margin"
           }
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -223,7 +225,8 @@
             "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
             "kind": "gross_margin"
           }
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -277,7 +280,8 @@
             "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
             "kind": "gross_margin"
           }
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -349,7 +353,8 @@
             "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
             "kind": "gross_margin"
           }
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -403,7 +408,8 @@
             "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
             "kind": "gross_margin"
           }
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -468,7 +474,8 @@
             "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
             "kind": "gross_margin"
           }
-        ]
+        ],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -538,7 +545,8 @@
           {"label":"Autres charges financières","amount":-0.090878},
           {"label":"Impôts","amount":-0.010503}
         ],
-        "no_breakdown": [{"line":"Chiffre d'affaires","side":"revenue","amount":4.615173,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Chiffre d'affaires","side":"revenue","amount":4.615173,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

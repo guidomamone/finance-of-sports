@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "internacional-br",
@@ -131,7 +131,8 @@
         {"label":"FECI e esportes amadores","category":"admin_general","subcategory":"admin_general_expense","amount":-0.83,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":-2.506,"net_interest":-64.102,"tax":0,"gross_debt":189.031,"cash":3.77},
-      "official_totals": {"revenue":512.572,"expenses":480.463,"net_result":-34.499}
+      "official_totals": {"revenue":512.572,"expenses":480.463,"net_result":-34.499},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -239,7 +240,8 @@
         {"label":"FECI e esportes amadores","category":"admin_general","subcategory":"admin_general_expense","amount":-0.731,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":-0.329,"net_interest":-65.335,"tax":0,"gross_debt":188.975,"cash":2.261},
-      "official_totals": {"revenue":601.893,"expenses":527.236,"net_result":8.993}
+      "official_totals": {"revenue":601.893,"expenses":527.236,"net_result":8.993},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

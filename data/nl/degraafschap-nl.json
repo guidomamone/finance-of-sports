@@ -47,7 +47,8 @@
       "official_totals": {"revenue":8.323465,"expenses":8.772605,"net_result":-0.485009},
       "adjustments": {
         "extra_rows": [{"label":"Rentelasten en soortgelijke kosten","amount":-0.035869},{"label":"Belastingen","amount":null}],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":8.272005,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":8.272005,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

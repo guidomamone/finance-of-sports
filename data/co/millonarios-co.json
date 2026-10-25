@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "millonarios-co",
@@ -163,7 +163,8 @@
         {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-1000.96,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":211.69,"tax":-9.654,"gross_debt":28.34,"cash":6465.046},
-      "official_totals": {"revenue":108992.183,"expenses":113628.033,"net_result":-4690.112}
+      "official_totals": {"revenue":108992.183,"expenses":113628.033,"net_result":-4690.112},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

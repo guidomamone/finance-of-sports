@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "corinthians-br",
@@ -234,7 +234,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-279.156,"tax":0,"gross_debt":244.672,"cash":12.699},
-      "official_totals": {"revenue":1081.93,"expenses":872.298,"net_result":-181.766}
+      "official_totals": {"revenue":1081.93,"expenses":872.298,"net_result":-181.766},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -357,7 +358,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-58.107,"tax":0,"gross_debt":250.032,"cash":26.019},
-      "official_totals": {"revenue":923.076,"expenses":943.262,"net_result":-143.441}
+      "official_totals": {"revenue":923.076,"expenses":943.262,"net_result":-143.441},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

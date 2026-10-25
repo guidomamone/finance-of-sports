@@ -90,7 +90,8 @@
       "official_totals": {"revenue":0.417044,"expenses":0.549198,"net_result":-0.140014},
       "adjustments": {
         "extra_rows": [{"label":"Financiële opbrengsten","amount":0.000275},{"label":"Financiële kosten","amount":0.000162}],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.367044,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.367044,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -139,7 +140,8 @@
           {"label":"Financiële kosten","amount":-0.011229},
           {"label":"Belastingen op het resultaat (67/77)","amount":-0.008396}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.866254,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.866254,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -191,7 +193,8 @@
           {"label":"Financiële kosten","amount":-0.045424},
           {"label":"Belastingen op het resultaat (67/77)","amount":-0.00549}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.79939,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.79939,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     },
     {
@@ -236,7 +239,8 @@
           {"label":"Recurrente financiële kosten","amount":-0.024528},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.047616}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.558356,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.558356,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
       }
     }
   ],

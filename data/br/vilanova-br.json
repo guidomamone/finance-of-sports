@@ -154,7 +154,8 @@
             "kind": "other"
           }
         ],
-        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -223,7 +224,8 @@
         "included_in": {
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -287,7 +289,8 @@
             "kind": "other"
           }
         ],
-        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -357,7 +360,8 @@
             "kind": "other"
           }
         ],
-        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -402,7 +406,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":5.972119,"tax":0,"gross_debt":67.059933,"cash":0.340353},
       "official_totals": {"revenue":22.60414,"expenses":30.371805,"net_result":-1.795546},
-      "adjustments": {"extra_rows":[{"label":"(-) DESPESA FINANCEIRA","amount":-0.657771},{"label":"RECEITAS FINANCEIRAS","amount":6.62989}]}
+      "adjustments": {"extra_rows":[{"label":"(-) DESPESA FINANCEIRA","amount":-0.657771},{"label":"RECEITAS FINANCEIRAS","amount":6.62989}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -446,7 +450,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.896299,"tax":0,"gross_debt":78.489087,"cash":0.741401},
       "official_totals": {"revenue":36.799031,"expenses":30.788196,"net_result":2.114536},
-      "adjustments": {"extra_rows":[{"label":"(-) DESPESA FINANCEIRA","amount":-4.429115},{"label":"RECEITAS FINANCEIRA","amount":0.532816}]}
+      "adjustments": {"extra_rows":[{"label":"(-) DESPESA FINANCEIRA","amount":-4.429115},{"label":"RECEITAS FINANCEIRA","amount":0.532816}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -490,7 +494,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.184577,"tax":0,"gross_debt":86.833975,"cash":0.395459},
       "official_totals": {"revenue":29.345546,"expenses":33.621615,"net_result":-4.460647},
-      "adjustments": {"extra_rows":[{"label":"(-) DESPESAS FINANCEIRAS","amount":-4.019144},{"label":"RECEITAS FINANCEIRAS","amount":3.834567}]}
+      "adjustments": {"extra_rows":[{"label":"(-) DESPESAS FINANCEIRAS","amount":-4.019144},{"label":"RECEITAS FINANCEIRAS","amount":3.834567}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -538,7 +542,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-13.661356,"tax":0,"gross_debt":93.498102,"cash":0.496737},
       "official_totals": {"revenue":54.214008,"expenses":45.922491,"net_result":-5.369839},
-      "adjustments": {"extra_rows":[{"label":"(-) DESPESAS FINANCEIRAS","amount":-14.367129},{"label":"RECEITAS FINANCEIRAS","amount":0.705773}]}
+      "adjustments": {"extra_rows":[{"label":"(-) DESPESAS FINANCEIRAS","amount":-14.367129},{"label":"RECEITAS FINANCEIRAS","amount":0.705773}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -667,7 +671,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.541,"tax":0,"gross_debt":94.946,"cash":0.016},
       "official_totals": {"revenue":43.34,"expenses":55.491,"net_result":-2.842},
-      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-4.804},{"label":"Receitas financeiras","amount":1.263}]}
+      "adjustments": {"extra_rows":[{"label":"Despesas financeiras","amount":-4.804},{"label":"Receitas financeiras","amount":1.263}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

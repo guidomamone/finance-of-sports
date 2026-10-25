@@ -118,7 +118,8 @@
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "youth_other_sports_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -230,7 +231,8 @@
         {"label":"Otros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4.584861,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-19.552079,"tax":0,"gross_debt":192.833595,"cash":0.562519},
-      "official_totals": {"revenue":98.23457,"expenses":124.426832,"net_result":-45.744341}
+      "official_totals": {"revenue":98.23457,"expenses":124.426832,"net_result":-45.744341},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2013,
@@ -336,7 +338,8 @@
         {"label":"Otros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.416034,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":8.029385,"tax":0,"gross_debt":144.192315,"cash":0.199171},
-      "official_totals": {"revenue":180.83267,"expenses":155.932357,"net_result":32.929698}
+      "official_totals": {"revenue":180.83267,"expenses":155.932357,"net_result":32.929698},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2014,
@@ -385,7 +388,8 @@
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "youth_other_sports_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -496,7 +500,8 @@
         {"label":"Otros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-6.140979,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-33.122045,"tax":0,"gross_debt":155.775046,"cash":0.304329},
-      "official_totals": {"revenue":438.765768,"expenses":363.675335,"net_result":41.968388}
+      "official_totals": {"revenue":438.765768,"expenses":363.675335,"net_result":41.968388},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2016,
@@ -608,7 +613,8 @@
         {"label":"Otros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-13.523052,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":93.428003,"tax":0,"gross_debt":295.282497,"cash":0.516489},
-      "official_totals": {"revenue":442.764613,"expenses":502.814732,"net_result":33.377884}
+      "official_totals": {"revenue":442.764613,"expenses":502.814732,"net_result":33.377884},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -720,7 +726,8 @@
         {"label":"Otros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-27.073115,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":30.027161,"tax":0,"gross_debt":795.167813,"cash":4.426903},
-      "official_totals": {"revenue":775.354479,"expenses":804.945023,"net_result":0.436617}
+      "official_totals": {"revenue":775.354479,"expenses":804.945023,"net_result":0.436617},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -777,7 +784,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0},
-      "official_totals": {"revenue":19416.976392,"expenses":13469.229203,"net_result":5947.747189}
+      "official_totals": {"revenue":19416.976392,"expenses":13469.229203,"net_result":5947.747189},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "squad_transfers": [],

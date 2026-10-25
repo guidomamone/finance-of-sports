@@ -48,7 +48,8 @@
           {"label":"resultaat deelneming","amount":0.109017},
           {"label":"belastingen","amount":0.409864}
         ],
-        "no_breakdown": [{"line":"netto-omzet","side":"revenue","amount":10.082985,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"netto-omzet","side":"revenue","amount":10.082985,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total"
       }
     }
   ],

@@ -46,8 +46,8 @@ const augsburgDeExpenseLinesByYear = {
 };
 
 const augsburgDeFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"augsburg-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.783082,"tax":0,"grossDebt":35.487566,"cash":15.706786,"officialTotalRevenue":108.989355,"officialTotalExpenses":117.082804,"officialPAT":-7.310368},
-  2025: {"currency":"EUR","sourceId":"augsburg-de-konzernabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.512983,"tax":-2.990126,"grossDebt":27.810112,"cash":14.134535,"officialTotalRevenue":150.115906,"officialTotalExpenses":129.593606,"officialPAT":18.045158},
+  2024: {"currency":"EUR","sourceId":"augsburg-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.783082,"tax":0,"grossDebt":35.487566,"cash":15.706786,"officialTotalRevenue":108.989355,"officialTotalExpenses":117.082804,"officialPAT":-7.310368,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"augsburg-de-konzernabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.512983,"tax":-2.990126,"grossDebt":27.810112,"cash":14.134535,"officialTotalRevenue":150.115906,"officialTotalExpenses":129.593606,"officialPAT":18.045158,"baseIngreso":"full"},
 };
 
 const augsburgDePresupuestoOverlayByYear = {};

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "celtavigo-es",
@@ -118,7 +118,8 @@
         {"label":"Otras amortizaciones","category":"depreciation","subcategory":"depreciation","amount":-2.701799,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":26.807049,"asset_sales":0,"net_interest":-6.223713,"tax":1.868266,"gross_debt":60.315351,"cash":13.97507},
-      "official_totals": {"revenue":91.31069,"expenses":118.388611,"net_result":-4.626316}
+      "official_totals": {"revenue":91.31069,"expenses":118.388611,"net_result":-4.626316},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "squad_transfers": [],

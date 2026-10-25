@@ -72,8 +72,8 @@ const unionmagdalenaCoExpenseLinesByYear = {
 };
 
 const unionmagdalenaCoFiscalYearMeta = {
-  2018: {"currency":"COP","sourceId":"unionmagdalena-co-estados-financieros-2018","reportType":"official_balance_sheet","gestionId":"sin_confirmar","fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-59.188,"tax":-348.114,"grossDebt":1058.314,"cash":1494.693,"officialTotalRevenue":7163.276,"officialTotalExpenses":6470.232,"officialPAT":285.742},
-  2025: {"currency":"COP","sourceId":"unionmagdalena-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-179.738,"tax":-22.834,"grossDebt":null,"cash":null,"officialTotalRevenue":11766.196,"officialTotalExpenses":13933.745,"officialPAT":-2371.879,"extraRows":[{"label":"Ingresos Financieros","value":0},{"label":"Gastos Financieros","value":-179.738},{"label":"Gastos (-Ingreso) por Correccion Impuesto Cte","value":-22.834},{"label":"Impuesto de Renta Corriente","value":0}]},
+  2018: {"currency":"COP","sourceId":"unionmagdalena-co-estados-financieros-2018","reportType":"official_balance_sheet","gestionId":"sin_confirmar","fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-59.188,"tax":-348.114,"grossDebt":1058.314,"cash":1494.693,"officialTotalRevenue":7163.276,"officialTotalExpenses":6470.232,"officialPAT":285.742,"baseIngreso":"full"},
+  2025: {"currency":"COP","sourceId":"unionmagdalena-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-179.738,"tax":-22.834,"grossDebt":null,"cash":null,"officialTotalRevenue":11766.196,"officialTotalExpenses":13933.745,"officialPAT":-2371.879,"extraRows":[{"label":"Ingresos Financieros","value":0},{"label":"Gastos Financieros","value":-179.738},{"label":"Gastos (-Ingreso) por Correccion Impuesto Cte","value":-22.834},{"label":"Impuesto de Renta Corriente","value":0}],"baseIngreso":"full"},
 };
 
 const unionmagdalenaCoPresupuestoOverlayByYear = {};

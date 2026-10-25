@@ -111,7 +111,8 @@
           "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -176,7 +177,8 @@
           "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "sales_total"
       }
     },
     {
@@ -233,7 +235,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":4.4,"tax":-12.6},
-      "official_totals": {"revenue":908.1,"expenses":870.5,"net_result":29.5}
+      "official_totals": {"revenue":908.1,"expenses":870.5,"net_result":29.5},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -289,7 +292,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.9,"tax":-6.7},
-      "official_totals": {"revenue":926.6,"expenses":910.5,"net_result":11.3}
+      "official_totals": {"revenue":926.6,"expenses":910.5,"net_result":11.3},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

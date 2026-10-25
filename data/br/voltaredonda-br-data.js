@@ -45,8 +45,8 @@ const voltaredondaBrExpenseLinesByYear = {
 };
 
 const voltaredondaBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"voltaredonda-br-balanco-2024","reportType":"official_balance_sheet","gestionId":"hortajardim","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.28533224,"tax":0,"grossDebt":1.84648686,"cash":0.06612846,"officialTotalRevenue":12.64343688,"officialTotalExpenses":11.91917173,"officialPAT":7.26369188},
-  2025: {"currency":"BRL","sourceId":"voltaredonda-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"hortajardim","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.71628018,"tax":0,"grossDebt":1.73506244,"cash":1.12316442,"officialTotalRevenue":26.39692624,"officialTotalExpenses":25.64340464,"officialPAT":0.03724142},
+  2024: {"currency":"BRL","sourceId":"voltaredonda-br-balanco-2024","reportType":"official_balance_sheet","gestionId":"hortajardim","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.28533224,"tax":0,"grossDebt":1.84648686,"cash":0.06612846,"officialTotalRevenue":12.64343688,"officialTotalExpenses":11.91917173,"officialPAT":7.26369188,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"voltaredonda-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"hortajardim","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.71628018,"tax":0,"grossDebt":1.73506244,"cash":1.12316442,"officialTotalRevenue":26.39692624,"officialTotalExpenses":25.64340464,"officialPAT":0.03724142,"baseIngreso":"full"},
 };
 
 const voltaredondaBrPresupuestoOverlayByYear = {};

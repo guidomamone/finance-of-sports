@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fcutrecht-nl",
@@ -81,7 +81,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.550837,"tax":0.378447,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":42.183517,"expenses":41.961127,"net_result":0.05},
-      "adjustments": {"extra_rows":[{"label":"Financiële baten en lasten","amount":-0.550837},{"label":"Belastingen","amount":0.378447}]}
+      "adjustments": {"extra_rows":[{"label":"Financiële baten en lasten","amount":-0.550837},{"label":"Belastingen","amount":0.378447}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

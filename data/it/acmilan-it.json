@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "acmilan-it",
@@ -332,7 +332,8 @@
           {"label":"b) imposte relative ad esercizi precedenti","amount":-0.045},
           {"label":"a) imposte correnti","amount":20.897},
           {"label":"b) imposte differite e anticipate","amount":-7.202}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -537,7 +538,8 @@
           {"label":"a) minusvalenze da alienazioni","amount":-0.007},
           {"label":"a) imposte correnti","amount":7.742},
           {"label":"b) imposte differite e anticipate","amount":-18.894}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -717,7 +719,8 @@
           {"label":"a) minusvalenze da alienazioni","amount":-0.008},
           {"label":"a) imposte correnti","amount":10.695},
           {"label":"b) imposte differite e anticipate","amount":4.96}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -910,7 +913,8 @@
           {"label":"b) imposte relative ad esercizi precedenti","amount":-1.369},
           {"label":"a) imposte correnti","amount":9.362},
           {"label":"b) imposte differite e anticipate","amount":3.97}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1104,7 +1108,8 @@
           {"label":"b) imposte relative ad esercizi precedenti","amount":-0.065},
           {"label":"a) imposte correnti","amount":-2.314},
           {"label":"b) imposte differite e anticipate","amount":-3.586}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1298,7 +1303,8 @@
           {"label":"b) imposte relative ad esercizi precedenti","amount":-0.054},
           {"label":"a) imposte correnti","amount":-0.174},
           {"label":"b) imposte differite e anticipate","amount":-2.721}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1469,7 +1475,8 @@
           {"label":"svalutazioni di partecipazioni (19, costo)","amount":-0.218},
           {"label":"a) imposte correnti","amount":-2.556},
           {"label":"b) imposte differite e anticipate","amount":-2.247}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1656,7 +1663,8 @@
           {"label":"a) di partecipazioni","amount":0.801},
           {"label":"a) imposte correnti","amount":-1.196},
           {"label":"b) imposte differite e anticipate","amount":-2.251}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1843,7 +1851,8 @@
           {"label":"a) di partecipazioni","amount":0.539},
           {"label":"a) imposte correnti","amount":-0.372},
           {"label":"b) imposte differite e anticipate","amount":-1.847}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2030,7 +2039,8 @@
           {"label":"A) DI PARTECIPAZIONI","amount":-1.973},
           {"label":"A) IMPOSTE CORRENTI","amount":-3.363},
           {"label":"B) IMPOSTE DIFFERITE E ANTICIPATE","amount":-1.501}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2189,7 +2199,8 @@
           {"label":"svalutazioni di partecipazioni (19, costo)","amount":-1},
           {"label":"a) imposte correnti","amount":-4.209},
           {"label":"b) imposte differite e anticipate","amount":-2.269}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2368,7 +2379,8 @@
           {"label":"a) di partecipazioni","amount":-0.2},
           {"label":"a) imposte correnti","amount":-7.697},
           {"label":"b) imposte differite e anticipate","amount":0.229}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2550,7 +2562,8 @@
           {"label":"svalutazioni di partecipazioni (19, costo)","amount":-0.8},
           {"label":"a) imposte correnti","amount":-10.203},
           {"label":"b) imposte differite e anticipate","amount":2.041}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2748,7 +2761,8 @@
           {"label":"a) di partecipazioni","amount":0.781},
           {"label":"a) imposte correnti","amount":-9.193},
           {"label":"b) imposte differite e anticipate","amount":2.389}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

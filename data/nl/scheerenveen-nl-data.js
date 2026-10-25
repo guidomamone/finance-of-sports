@@ -28,7 +28,7 @@ const scheerenveenNlExpenseLinesByYear = {
 };
 
 const scheerenveenNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"scheerenveen-nl-jaarverslag-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.035254,"tax":-0.332253,"grossDebt":null,"cash":null,"officialTotalRevenue":32.018887,"officialTotalExpenses":30.605387,"officialPAT":1.045993,"extraRows":[{"label":"Rentebaten en soortgelijke opbrengsten","value":0.061227},{"label":"Rentelasten en soortgelijke kosten","value":-0.096481},{"label":"Vennootschapsbelasting","value":-0.332253}]},
+  2025: {"currency":"EUR","sourceId":"scheerenveen-nl-jaarverslag-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.035254,"tax":-0.332253,"grossDebt":null,"cash":null,"officialTotalRevenue":32.018887,"officialTotalExpenses":30.605387,"officialPAT":1.045993,"extraRows":[{"label":"Rentebaten en soortgelijke opbrengsten","value":0.061227},{"label":"Rentelasten en soortgelijke kosten","value":-0.096481},{"label":"Vennootschapsbelasting","value":-0.332253}],"baseIngreso":"full"},
 };
 
 const scheerenveenNlPresupuestoOverlayByYear = {};

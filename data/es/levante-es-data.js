@@ -33,7 +33,7 @@ const levanteEsExpenseLinesByYear = {
 };
 
 const levanteEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"levante-es-cuentas-anuales-consolidadas-2024-25","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":12.30188,"assetSales":-0.00292,"netInterest":-5.66908,"tax":4.39895,"grossDebt":121.12351,"cash":0.60815,"officialTotalRevenue":16.27769,"officialTotalExpenses":41.50214,"officialPAT":-14.19562},
+  2025: {"currency":"EUR","sourceId":"levante-es-cuentas-anuales-consolidadas-2024-25","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":12.30188,"assetSales":-0.00292,"netInterest":-5.66908,"tax":4.39895,"grossDebt":121.12351,"cash":0.60815,"officialTotalRevenue":16.27769,"officialTotalExpenses":41.50214,"officialPAT":-14.19562,"baseIngreso":"full"},
 };
 
 const levanteEsPresupuestoOverlayByYear = {};

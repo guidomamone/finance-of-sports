@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "catolica-cl",
@@ -242,7 +242,8 @@
           {"label":"Costos financieros","amount":-1.088},
           {"label":"Diferencias de cambio","amount":-22.635},
           {"label":"Gasto por impuestos a las ganancias","amount":747.846}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -343,7 +344,8 @@
           {"label":"Costos financieros","amount":-4.953},
           {"label":"Diferencias de cambio","amount":145.071},
           {"label":"Gasto por impuestos a las ganancias","amount":195.273}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -444,7 +446,8 @@
           {"label":"Costos financieros","amount":-4.873},
           {"label":"Diferencias de cambio","amount":-91.486},
           {"label":"Gasto por impuestos a las ganancias","amount":459.734}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -552,7 +555,8 @@
           {"label":"Costos financieros","amount":-4.573},
           {"label":"Diferencias de cambio","amount":83.629},
           {"label":"Gasto por impuestos a las ganancias","amount":163.095}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -660,7 +664,8 @@
           {"label":"Costos financieros","amount":-6.895},
           {"label":"Diferencias de cambio","amount":104.311},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":-178.892}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -768,7 +773,8 @@
           {"label":"Costos financieros","amount":-7.572},
           {"label":"Diferencias de cambio","amount":41.897},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":622.014}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -898,7 +904,8 @@
           {"label":"Costos financieros","amount":-8.412},
           {"label":"Diferencias de cambio","amount":19.859},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":-1.605}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1031,7 +1038,8 @@
           {"label":"Costos financieros","amount":-5.177},
           {"label":"Diferencias de cambio","amount":56.415},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1159,7 +1167,8 @@
           {"label":"Costos financieros","amount":-4.053},
           {"label":"Diferencias de cambio","amount":-75.144},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1295,7 +1304,8 @@
           {"label":"Costos financieros","amount":-94.472},
           {"label":"Diferencias de cambio","amount":-157.174},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1427,7 +1437,8 @@
           {"label":"Costos financieros","amount":-88.793},
           {"label":"Diferencias de cambio","amount":-277.69},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1559,7 +1570,8 @@
           {"label":"Costos financieros","amount":-149.384},
           {"label":"Diferencias de cambio","amount":-616.441},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1705,7 +1717,8 @@
           {"label":"Costos financieros","amount":-323.559},
           {"label":"Diferencias de cambio","amount":-1943.657},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1848,7 +1861,8 @@
           {"label":"Ingresos financieros","amount":1937.432},
           {"label":"Costos financieros","amount":-175.65},
           {"label":"Diferencias de cambio","amount":-1141.96}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1993,7 +2007,8 @@
           {"label":"Costos financieros","amount":-333.552},
           {"label":"Diferencias de cambio","amount":-1485.859},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2119,7 +2134,8 @@
           {"label":"Diferencias de cambio","amount":595.435},
           {"label":"Resultado por unidades de Reajuste","amount":-843.82},
           {"label":"Ingreso (Gasto) por impuestos a las ganancias","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

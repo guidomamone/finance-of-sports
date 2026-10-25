@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "luzern-ch",
@@ -316,7 +316,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.021761,"tax":-0.009246,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":25.772701,"expenses":25.372195,"net_result":0.142776},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.021761},{"label":"Direkte Steuern","amount":-0.009246}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.021761},{"label":"Direkte Steuern","amount":-0.009246}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -574,7 +574,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.090232,"tax":-0.009203,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":26.002933,"expenses":25.618287,"net_result":0.233973},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.090232},{"label":"Direkte Steuern","amount":-0.009203}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.090232},{"label":"Direkte Steuern","amount":-0.009203}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -835,7 +835,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.178657,"tax":-0.003432,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":21.510028,"expenses":23.06095,"net_result":-1.749538},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.178657},{"label":"Direkte Steuern","amount":-0.003432}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.178657},{"label":"Direkte Steuern","amount":-0.003432}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -1086,7 +1086,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.219077,"tax":-0.011923,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":26.715614,"expenses":29.689443,"net_result":-3.224016},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.219077},{"label":"Direkte Steuern","amount":-0.011923}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.219077},{"label":"Direkte Steuern","amount":-0.011923}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -1345,7 +1345,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.198764,"tax":-0.004884,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":28.530231,"expenses":31.28278,"net_result":-3.102345},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.198764},{"label":"Direkte Steuern","amount":-0.004884}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.198764},{"label":"Direkte Steuern","amount":-0.004884}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -1600,7 +1600,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.343745,"tax":0.000029,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":30.483326,"expenses":32.59571,"net_result":-2.474876},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.343745},{"label":"Direkte Steuern","amount":0.000029}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.343745},{"label":"Direkte Steuern","amount":0.000029}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -1856,7 +1856,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.497769,"tax":0.001102,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":30.878541,"expenses":29.691914,"net_result":0.554894},
-      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.497769},{"label":"Direkte Steuern","amount":0.001102}]}
+      "adjustments": {"extra_rows":[{"label":"Finanzergebnis","amount":-0.497769},{"label":"Direkte Steuern","amount":0.001102}],"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

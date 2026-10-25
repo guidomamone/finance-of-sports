@@ -51,7 +51,8 @@
       "official_totals": {"revenue":5.539656,"expenses":6.875757,"net_result":-1.394054},
       "adjustments": {
         "extra_rows": [{"label":"Financië le baten en lasten","amount":-0.057953},{"label":"Belastingen","amount":null}],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":5.133797,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":5.133797,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

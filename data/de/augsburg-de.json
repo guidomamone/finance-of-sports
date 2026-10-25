@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "augsburg-de",
@@ -103,7 +103,8 @@
         {"label":"Sonstige Steuern","category":"admin_general","subcategory":"admin_general_expense","amount":-0.11763,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.783082,"tax":0,"gross_debt":35.487566,"cash":15.706786},
-      "official_totals": {"revenue":108.989355,"expenses":117.082804,"net_result":-7.310368}
+      "official_totals": {"revenue":108.989355,"expenses":117.082804,"net_result":-7.310368},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -177,7 +178,8 @@
         {"label":"Sonstige Steuern","category":"admin_general","subcategory":"admin_general_expense","amount":-0.976323,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.512983,"tax":-2.990126,"gross_debt":27.810112,"cash":14.134535},
-      "official_totals": {"revenue":150.115906,"expenses":129.593606,"net_result":18.045158}
+      "official_totals": {"revenue":150.115906,"expenses":129.593606,"net_result":18.045158},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

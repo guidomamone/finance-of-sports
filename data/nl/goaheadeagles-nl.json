@@ -233,7 +233,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.124294,"tax":-0.181819,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":5.986379,"expenses":5.037553,"net_result":0.642713},
-      "adjustments": {"extra_rows":[{"label":"Rentelasten en soortgelijke kosten","amount":-0.124294},{"label":"Belastingen","amount":-0.181819}]}
+      "adjustments": {"extra_rows":[{"label":"Rentelasten en soortgelijke kosten","amount":-0.124294},{"label":"Belastingen","amount":-0.181819}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -283,7 +283,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -324,7 +325,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -375,7 +377,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -608,7 +611,8 @@
           {"label":"Rentebaten en soortgelijke opbrengsten","amount":0.011237},
           {"label":"Rentelasten en soortgelijke kosten","amount":-0.217757},
           {"label":"Belastingen","amount":-1.021589}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

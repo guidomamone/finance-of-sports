@@ -87,7 +87,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -115,7 +116,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000434,"tax":0,"gross_debt":0,"cash":0.044708},
       "official_totals": {"revenue":0.838352,"expenses":1.08432,"net_result":-0.246402},
-      "adjustments": {"extra_rows":[{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.000434},{"label":"Φόροι εισοδήματος","amount":0}]}
+      "adjustments": {"extra_rows":[{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.000434},{"label":"Φόροι εισοδήματος","amount":0}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -156,7 +157,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -231,7 +233,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.001116,"tax":-0.001,"gross_debt":0,"cash":0.017209},
       "official_totals": {"revenue":1.240271,"expenses":2.213233,"net_result":-0.975079},
-      "adjustments": {"extra_rows":[{"label":"Χρηματοοικονομικά έσοδα / (έξοδα)","amount":-0.001116},{"label":"Φορολογικά έσοδα / (δαπάνες)","amount":-0.001}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Χρηματοοικονομικά έσοδα / (έξοδα)","amount":-0.001116},{"label":"Φορολογικά έσοδα / (δαπάνες)","amount":-0.001}],
+        "revenue_basis": "full"
+      }
     }
   ],
   "budget_overlay": {},

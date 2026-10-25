@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "asroma-it",
@@ -548,7 +548,8 @@
           {"label":"19) Svalutazioni a) di partecipazioni (D, costo)","amount":-0.547},
           {"label":"a) Imposte correnti","amount":-2.442},
           {"label":"b) Imposte differite","amount":-0.545}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -722,7 +723,8 @@
           {"label":"17bis) Utili e perdite su cambi","amount":0.033884},
           {"label":"a) Imposte dell'esercizio","amount":-3.1},
           {"label":"b) Imposte differite","amount":0.077811}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -791,7 +793,8 @@
           {"label":"Risultato (utile) di terzi","amount":-0.164},
           {"label":"a) imposte correnti","amount":-3.632},
           {"label":"b) imposte anticipate e differite","amount":-3.712}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -853,7 +856,8 @@
           {"label":"ONERI/PROVENTI FINANZIARI NETTI","amount":-0.164},
           {"label":"a) imposte correnti","amount":-3.421},
           {"label":"b) imposte anticipate e differite","amount":-5.516}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -915,7 +919,8 @@
           {"label":"Oneri/Proventi finanziari netti","amount":1.147},
           {"label":"a) imposte correnti","amount":-4.783},
           {"label":"b) imposte anticipate e differite","amount":0.156}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -978,7 +983,8 @@
           {"label":"Proventi (oneri) finanziari netti","amount":1.992},
           {"label":"a) imposte correnti","amount":-3.18},
           {"label":"b) imposte anticipate e differite","amount":0.013}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1039,7 +1045,8 @@
           {"label":"Oneri/Proventi finanziari netti","amount":-5.176},
           {"label":"a) imposte correnti","amount":-3.807},
           {"label":"b) imposte anticipate e differite","amount":-0.011}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1342,7 +1349,8 @@
           {"label":"Risultato di terzi","amount":-0.221},
           {"label":"a) imposte correnti","amount":-2.405},
           {"label":"b) imposte anticipate e differite","amount":-1.004}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1402,7 +1410,8 @@
           {"label":"Oneri/Proventi finanziari netti","amount":-1.723},
           {"label":"a) imposte correnti","amount":-2.707},
           {"label":"b) imposte anticipate e differite","amount":-0.493}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1463,7 +1472,8 @@
           {"label":"Proventi e oneri finanziari","amount":-7.012},
           {"label":"a) imposte correnti","amount":-3.136},
           {"label":"b) imposte anticipate e differite","amount":-0.185}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1524,7 +1534,8 @@
           {"label":"Proventi e oneri finanziari","amount":-7.8},
           {"label":"a) imposte correnti","amount":-4.661},
           {"label":"b) imposte anticipate e differite","amount":0.815}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1585,7 +1596,8 @@
           {"label":"Proventi e oneri finanziari","amount":-18.297},
           {"label":"a) imposte correnti","amount":-8.233},
           {"label":"b) imposte anticipate e differite","amount":0.848}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1646,7 +1658,8 @@
           {"label":"Proventi e oneri finanziari","amount":-21.309},
           {"label":"a) imposte correnti","amount":-6.182},
           {"label":"b) imposte anticipate e differite","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1915,7 +1928,8 @@
           {"label":"Proventi e oneri finanziari","amount":-24.714},
           {"label":"Risultato di terzi","amount":0.225},
           {"label":"Imposte dell'esercizio","amount":-7.976}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1984,7 +1998,8 @@
           {"label":"Oneri finanziari","amount":-30.706},
           {"label":"Imposte correnti","amount":-8.921},
           {"label":"Imposte differite","amount":-0.043}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2052,7 +2067,8 @@
           {"label":"Oneri finanziari","amount":-35.23},
           {"label":"imposte correnti","amount":-0.396},
           {"label":"imposte differite","amount":0}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2260,7 +2276,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-35.969,"tax":-1.176,"gross_debt":308.42,"cash":22.824},
       "official_totals": {"revenue":226.539,"expenses":374.963,"net_result":-185.573},
       "adjustments": {
-        "extra_rows": [{"label":"Proventi finanziari","amount":2.508},{"label":"Oneri finanziari","amount":-38.477},{"label":"imposte correnti","amount":-1.176}]
+        "extra_rows": [{"label":"Proventi finanziari","amount":2.508},{"label":"Oneri finanziari","amount":-38.477},{"label":"imposte correnti","amount":-1.176}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2323,7 +2340,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-23.938,"tax":-0.507,"gross_debt":355.912,"cash":22.821},
       "official_totals": {"revenue":205.875,"expenses":400.888,"net_result":-219.459},
       "adjustments": {
-        "extra_rows": [{"label":"Proventi finanziari","amount":2.676},{"label":"Oneri finanziari","amount":-26.614},{"label":"imposte correnti","amount":-0.507}]
+        "extra_rows": [{"label":"Proventi finanziari","amount":2.676},{"label":"Oneri finanziari","amount":-26.614},{"label":"imposte correnti","amount":-0.507}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2531,7 +2549,8 @@
           {"label":"a) imposte correnti","amount":-5.847725},
           {"label":"c) imposte differite","amount":-0.700215},
           {"label":"e) proventi (oneri) da adesione al regime di consolidato fiscale","amount":3.101039}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2738,7 +2757,8 @@
           {"label":"17) interessi ed altri oneri finanziari","amount":-17.104753},
           {"label":"17 bis) utile e perdite su cambi","amount":-0.001906},
           {"label":"20) imposte sul reddito dell'esercizio","amount":-5.778058}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2947,7 +2967,8 @@
           {"label":"a) imposte correnti","amount":-11.367144},
           {"label":"c) imposte differite","amount":-0.019536},
           {"label":"e) proventi (oneri) da adesione al regime di consolidato fiscale","amount":6.401074}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

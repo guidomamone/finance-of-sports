@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "santaclara-pt",
@@ -185,7 +185,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.001344},
           {"label":"Juros e gastos similares suportados","amount":-0.203198},
           {"label":"Imposto sobre o rendimento do período","amount":-0.03097}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -285,7 +286,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.000005},
           {"label":"Juros e gastos similares suportados","amount":-0.219063},
           {"label":"Imposto sobre o rendimento do período","amount":-0.058194}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -444,7 +446,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":0.003737},
           {"label":"Juros e gastos similares suportados","amount":-0.775581},
           {"label":"Imposto sobre o rendimento do período","amount":-0.045}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -619,7 +622,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":null},
           {"label":"Juros e gastos similares suportados","amount":-0.321725},
           {"label":"Imposto sobre o rendimento do período","amount":-0.0032}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -748,7 +752,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":null},
           {"label":"Juros e gastos similares suportados","amount":-0.148303},
           {"label":"Imposto sobre o rendimento do período","amount":1.848329}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -950,7 +955,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":null},
           {"label":"Juros e gastos similares suportados","amount":-0.289446},
           {"label":"Imposto sobre o rendimento do período","amount":1.652448}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

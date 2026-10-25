@@ -73,8 +73,8 @@ const operarioferroviarioBrExpenseLinesByYear = {
 };
 
 const operarioferroviarioBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"operarioferroviario-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.001,"tax":0,"grossDebt":0.425,"cash":1.343,"officialTotalRevenue":30.308,"officialTotalExpenses":30.554,"officialPAT":-0.246},
-  2025: {"currency":"BRL","sourceId":"operarioferroviario-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.061,"tax":0,"grossDebt":0,"cash":1.363,"officialTotalRevenue":39.514,"officialTotalExpenses":39.523,"officialPAT":0.052},
+  2024: {"currency":"BRL","sourceId":"operarioferroviario-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.001,"tax":0,"grossDebt":0.425,"cash":1.343,"officialTotalRevenue":30.308,"officialTotalExpenses":30.554,"officialPAT":-0.246,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"operarioferroviario-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.061,"tax":0,"grossDebt":0,"cash":1.363,"officialTotalRevenue":39.514,"officialTotalExpenses":39.523,"officialPAT":0.052,"baseIngreso":"full"},
 };
 
 const operarioferroviarioBrPresupuestoOverlayByYear = {};

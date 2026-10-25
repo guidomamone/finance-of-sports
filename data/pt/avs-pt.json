@@ -109,7 +109,8 @@
             "reason": "Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -173,7 +174,8 @@
             "reason": "Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]",
             "kind": "other"
           }
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -345,7 +347,8 @@
           {"label":"Gastos e perdas financeiras","amount":0.004346},
           {"label":"Ganhos e perdas com diferenças de câmbio","amount":null},
           {"label":"Imposto sobre o rendimento (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":-0.027164}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

@@ -39,7 +39,7 @@ const envigadoCoExpenseLinesByYear = {
 };
 
 const envigadoCoFiscalYearMeta = {
-  2025: {"currency":"COP","sourceId":"envigado-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2317.382801,"tax":-4522.817729,"grossDebt":3236.656641,"cash":9181.759716,"officialTotalRevenue":37680.236183,"officialTotalExpenses":23204.812017,"officialPAT":7635.223636},
+  2025: {"currency":"COP","sourceId":"envigado-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2317.382801,"tax":-4522.817729,"grossDebt":3236.656641,"cash":9181.759716,"officialTotalRevenue":37680.236183,"officialTotalExpenses":23204.812017,"officialPAT":7635.223636,"baseIngreso":"full"},
 };
 
 const envigadoCoPresupuestoOverlayByYear = {};

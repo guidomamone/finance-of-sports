@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "floratallinn-ee",
@@ -181,7 +181,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.036368,"tax":0,"gross_debt":null,"cash":0.240465},
       "official_totals": {"revenue":2.157951,"expenses":3.087668,"net_result":-0.966085},
-      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.011799},{"label":"Intressikulud","amount":-0.048167}]}
+      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.011799},{"label":"Intressikulud","amount":-0.048167}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -313,7 +313,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01755,"tax":0,"gross_debt":null,"cash":0.538185},
       "official_totals": {"revenue":3.608798,"expenses":3.460692,"net_result":0.130556},
-      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.00884},{"label":"Intressikulud","amount":-0.02639}]}
+      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.00884},{"label":"Intressikulud","amount":-0.02639}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -433,7 +433,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003568,"tax":0,"gross_debt":null,"cash":0.701883},
       "official_totals": {"revenue":5.913409,"expenses":5.57158,"net_result":0.338261},
-      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.005417},{"label":"Intressikulud","amount":-0.008985}]}
+      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.005417},{"label":"Intressikulud","amount":-0.008985}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -546,7 +546,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.066108,"tax":0,"gross_debt":1.125,"cash":0.401338},
       "official_totals": {"revenue":3.629337,"expenses":4.640723,"net_result":-1.202494},
       "adjustments": {
-        "extra_rows": [{"label":"Intressitulud","amount":0.008084},{"label":"Intressikulud","amount":-0.074177},{"label":"Muud finantstulud ja -kulud","amount":-0.000015}]
+        "extra_rows": [{"label":"Intressitulud","amount":0.008084},{"label":"Intressikulud","amount":-0.074177},{"label":"Muud finantstulud ja -kulud","amount":-0.000015}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -653,7 +654,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.094461,"tax":0,"gross_debt":null,"cash":0.005593},
       "official_totals": {"revenue":3.351026,"expenses":4.085329,"net_result":-0.828764},
       "adjustments": {
-        "extra_rows": [{"label":"Intressitulud","amount":0.004655},{"label":"Intressikulud","amount":-0.099116},{"label":"Muud finantstulud ja -kulud","amount":0}]
+        "extra_rows": [{"label":"Intressitulud","amount":0.004655},{"label":"Intressikulud","amount":-0.099116},{"label":"Muud finantstulud ja -kulud","amount":0}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -766,7 +768,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.107157,"tax":0,"gross_debt":null,"cash":0.00627},
       "official_totals": {"revenue":3.923521,"expenses":3.94157,"net_result":-0.125206},
-      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.005299},{"label":"Intressikulud","amount":-0.112456}]}
+      "adjustments": {"extra_rows":[{"label":"Intressitulud","amount":0.005299},{"label":"Intressikulud","amount":-0.112456}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -872,7 +874,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.070853,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":3.340623,"expenses":3.980053,"net_result":-0.710283},
       "adjustments": {
-        "extra_rows": [{"label":"Intressitulud","amount":0.004218},{"label":"Intressikulud","amount":-0.074971},{"label":"Muud finantstulud ja -kulud","amount":-0.0001}]
+        "extra_rows": [{"label":"Intressitulud","amount":0.004218},{"label":"Intressikulud","amount":-0.074971},{"label":"Muud finantstulud ja -kulud","amount":-0.0001}],
+        "revenue_basis": "full"
       }
     }
   ],

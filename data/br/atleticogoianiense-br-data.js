@@ -36,7 +36,7 @@ const atleticogoianienseBrExpenseLinesByYear = {
 };
 
 const atleticogoianienseBrFiscalYearMeta = {
-  2025: {"currency":"BRL","sourceId":"atleticogoianiense-br-demonstracoes-2024-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.899,"tax":-0.009,"grossDebt":9.666,"cash":0.767,"officialTotalRevenue":78.7,"officialTotalExpenses":77.103,"officialPAT":0.687},
+  2025: {"currency":"BRL","sourceId":"atleticogoianiense-br-demonstracoes-2024-2025","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.899,"tax":-0.009,"grossDebt":9.666,"cash":0.767,"officialTotalRevenue":78.7,"officialTotalExpenses":77.103,"officialPAT":0.687,"baseIngreso":"full"},
 };
 
 const atleticogoianienseBrPresupuestoOverlayByYear = {};

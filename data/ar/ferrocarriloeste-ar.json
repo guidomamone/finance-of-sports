@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "ferrocarriloeste-ar",
@@ -232,7 +232,8 @@
         {"label":"Amortizaciones de bienes (Anexo A)","category":"depreciation","subcategory":"depreciation","amount":-11.21809,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":250.656214,"tax":0,"gross_debt":304.101699,"cash":3.903445},
-      "official_totals": {"revenue":1133.154575,"expenses":1126.908874,"net_result":256.901916}
+      "official_totals": {"revenue":1133.154575,"expenses":1126.908874,"net_result":256.901916},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -438,7 +439,8 @@
         {"label":"Amortizaciones de bienes (Anexo A)","category":"depreciation","subcategory":"depreciation","amount":-26.148515,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":629.290795,"tax":0,"gross_debt":415.023331,"cash":59.450677},
-      "official_totals": {"revenue":3022.684808,"expenses":2939.047832,"net_result":712.927772}
+      "official_totals": {"revenue":3022.684808,"expenses":2939.047832,"net_result":712.927772},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -690,7 +692,8 @@
         {"label":"Amortizaciones de bienes ( Anexo A )","category":"depreciation","subcategory":"depreciation","amount":-169.580738,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":497.688217,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":16088.001906,"expenses":15909.914626,"net_result":675.775497}
+      "official_totals": {"revenue":16088.001906,"expenses":15909.914626,"net_result":675.775497},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fcemmen-nl",
@@ -89,7 +89,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.006,"tax":-0.215,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":7.643,"expenses":6.592,"net_result":0.831},
       "adjustments": {
-        "extra_rows": [{"label":"Som der rentebaten en rentelasten","amount":-0.006},{"label":"Som der belastingen resultaat uit gewone bedrijsvoering","amount":-0.215}]
+        "extra_rows": [{"label":"Som der rentebaten en rentelasten","amount":-0.006},{"label":"Som der belastingen resultaat uit gewone bedrijsvoering","amount":-0.215}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -141,7 +142,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.002,"tax":-0.265,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":9.887,"expenses":8.792,"net_result":0.829},
       "adjustments": {
-        "extra_rows": [{"label":"Som der rentebaten en rentelasten","amount":-0.002},{"label":"Som der belastingen resultaat uit gewone bedrijsvoering","amount":-0.265}]
+        "extra_rows": [{"label":"Som der rentebaten en rentelasten","amount":-0.002},{"label":"Som der belastingen resultaat uit gewone bedrijsvoering","amount":-0.265}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -193,7 +195,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.006,"tax":0.243,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":8.162,"expenses":8.571,"net_result":-0.171},
       "adjustments": {
-        "extra_rows": [{"label":"Som der rentebaten en rentelasten","amount":-0.006},{"label":"Som der belastingen resultaat uit gewone bedrijsvoering","amount":0.243}]
+        "extra_rows": [{"label":"Som der rentebaten en rentelasten","amount":-0.006},{"label":"Som der belastingen resultaat uit gewone bedrijsvoering","amount":0.243}],
+        "revenue_basis": "full"
       }
     }
   ],

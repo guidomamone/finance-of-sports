@@ -23,7 +23,7 @@ const barnsleyGbExpenseLinesByYear = {
 };
 
 const barnsleyGbFiscalYearMeta = {
-  2025: {"currency":"GBP","sourceId":"barnsley-gb-medium-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.128927,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":11.187571,"officialTotalExpenses":17.640984,"officialPAT":-6.58234,"extraRows":[{"label":"Interest receivable and similar income","value":0.028266},{"label":"Interest payable and similar expenses","value":-0.157193},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}}},
+  2025: {"currency":"GBP","sourceId":"barnsley-gb-medium-accounts-2024-25-ixbrl","reportType":"official_balance_sheet","gestionId":null,"fxRef":"GBP@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.128927,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":11.187571,"officialTotalExpenses":17.640984,"officialPAT":-6.58234,"extraRows":[{"label":"Interest receivable and similar income","value":0.028266},{"label":"Interest payable and similar expenses","value":-0.157193},{"label":"Tax on loss","value":null}],"incluidoEn":{"wages_squad":{"en":"other_expenses","posible":true}},"baseIngreso":"full"},
 };
 
 const barnsleyGbPresupuestoOverlayByYear = {};

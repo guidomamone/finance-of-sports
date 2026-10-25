@@ -22,7 +22,7 @@ const varazdinHrExpenseLinesByYear = {
 };
 
 const varazdinHrFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"varazdin-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":2.104452,"assetSales":0,"netInterest":-0.013486,"tax":-0.160177,"grossDebt":0,"cash":2.079826,"officialTotalRevenue":5.135266,"officialTotalExpenses":5.860464,"officialPAT":1.205591},
+  2025: {"currency":"EUR","sourceId":"varazdin-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":2.104452,"assetSales":0,"netInterest":-0.013486,"tax":-0.160177,"grossDebt":0,"cash":2.079826,"officialTotalRevenue":5.135266,"officialTotalExpenses":5.860464,"officialPAT":1.205591,"baseIngreso":"full"},
 };
 
 const varazdinHrPresupuestoOverlayByYear = {};

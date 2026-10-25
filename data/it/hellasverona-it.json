@@ -314,7 +314,8 @@
           {"label":"b) Imposte differite","amount":-1.103845},
           {"label":"c) Imposte anticipate","amount":0.614845}
         ],
-        "no_breakdown": [{"line":"Costi per attività sportiva prima squadra","side":"expense","amount":0.765,"reason":"el documento no desglosa este renglón","kind":"other"}]
+        "no_breakdown": [{"line":"Costi per attività sportiva prima squadra","side":"expense","amount":0.765,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -522,7 +523,8 @@
           {"label":"Ires/Irap dell'esercizio","amount":-1.243204},
           {"label":"b) Imposte differite","amount":-4.378776},
           {"label":"c) Imposte anticipate","amount":2.831538}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -739,7 +741,8 @@
           {"label":"a) Imposte correnti","amount":-1.440978},
           {"label":"c) Imposte differite","amount":-2.776915},
           {"label":"d) Imposte anticipate","amount":4.359014}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -967,7 +970,8 @@
           {"label":"Ires/Irap dell'esercizio","amount":-1.837856},
           {"label":"c) Imposte differite","amount":-3.2424},
           {"label":"d) Imposte anticipate","amount":6.422237}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1212,7 +1216,8 @@
           {"label":"b) Proventi e oneri da adesione al regime di consolidato fiscale","amount":3.177391},
           {"label":"c) Imposte differite","amount":2.299399},
           {"label":"d) Imposte anticipate","amount":-2.990345}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1375,7 +1380,8 @@
           {"label":"b) Proventi e oneri da adesione al regime di consolidato fiscale","amount":1.316405},
           {"label":"c) Imposte differite","amount":2.081856},
           {"label":"d) Imposte anticipate","amount":-0.90981}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

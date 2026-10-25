@@ -47,8 +47,8 @@ const fckobenhavnDkExpenseLinesByYear = {
 };
 
 const fckobenhavnDkFiscalYearMeta = {
-  2024: {"currency":"DKK","sourceId":"fckobenhavn-aarsrapport-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":10.62,"tax":0,"grossDebt":0,"cash":76.684,"officialTotalRevenue":754.513,"officialTotalExpenses":718.897,"officialPAT":46.236},
-  2025: {"currency":"DKK","sourceId":"fckobenhavn-dk-aarsrapport-2025-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-7.842,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":893.995,"officialTotalExpenses":832.982,"officialPAT":53.171,"extraRows":[{"label":"Andre finansielle indtægter","value":9.337},{"label":"Øvrige finansielle omkostninger","value":-17.179}]},
+  2024: {"currency":"DKK","sourceId":"fckobenhavn-aarsrapport-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":10.62,"tax":0,"grossDebt":0,"cash":76.684,"officialTotalRevenue":754.513,"officialTotalExpenses":718.897,"officialPAT":46.236,"baseIngreso":"full"},
+  2025: {"currency":"DKK","sourceId":"fckobenhavn-dk-aarsrapport-2025-12-31","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-7.842,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":893.995,"officialTotalExpenses":832.982,"officialPAT":53.171,"extraRows":[{"label":"Andre finansielle indtægter","value":9.337},{"label":"Øvrige finansielle omkostninger","value":-17.179}],"baseIngreso":"full"},
 };
 
 const fckobenhavnDkPresupuestoOverlayByYear = {};

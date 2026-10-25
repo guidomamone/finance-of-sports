@@ -13,7 +13,7 @@ const mirassolBrExpenseLinesByYear = {
 };
 
 const mirassolBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"mirassol-br-relatorio-auditoria-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":0,"cash":11.583747,"officialTotalRevenue":59.339448,"officialTotalExpenses":55.195834,"officialPAT":4.143614,"sinDesglose":[{"renglon":"Receita do exercício (bruta, operacional — sem desagregação na fonte)","lado":"revenue","importe":59.339448,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Custos","lado":"expense","importe":36.105741,"motivo":"el documento no desglosa este renglón","tipo":"other"}]},
+  2024: {"currency":"BRL","sourceId":"mirassol-br-relatorio-auditoria-2024","reportType":"official_balance_sheet","gestionId":"sinconfirmar","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":0,"cash":11.583747,"officialTotalRevenue":59.339448,"officialTotalExpenses":55.195834,"officialPAT":4.143614,"sinDesglose":[{"renglon":"Receita do exercício (bruta, operacional — sem desagregação na fonte)","lado":"revenue","importe":59.339448,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Custos","lado":"expense","importe":36.105741,"motivo":"el documento no desglosa este renglón","tipo":"other"}],"baseIngreso":"sales_total"},
 };
 
 const mirassolBrPresupuestoOverlayByYear = {};

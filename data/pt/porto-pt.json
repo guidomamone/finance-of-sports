@@ -298,7 +298,8 @@
           {"label":"Juros e gastos similares suportados","amount":-17.379245},
           {"label":"Resultados relativos a investimentos","amount":-0.604084},
           {"label":"Imposto sobre o rendimento do período","amount":-1.09381}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -517,7 +518,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":1.776504},
           {"label":"Juros e gastos similares suportados","amount":-17.787236},
           {"label":"Imposto sobre o rendimento do período","amount":-0.900686}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -743,7 +745,8 @@
           {"label":"Juros e gastos similares suportados","amount":-17.197019},
           {"label":"Resultados relativos a investimentos","amount":-0.117775},
           {"label":"Imposto sobre o rendimento do período","amount":-1.027866}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -977,7 +980,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":3.116648},
           {"label":"Juros e gastos similares suportados","amount":-19.878855},
           {"label":"Imposto sobre o rendimento do período","amount":-1.776616}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1131,7 +1135,8 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -1378,7 +1383,8 @@
           {"label":"Juros e rendimentos similares obtidos","amount":4.56671},
           {"label":"Juros e gastos similares suportados","amount":-23.778288},
           {"label":"Imposto sobre o rendimento do período","amount":-0.843769}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1606,7 +1612,8 @@
           {"label":"Juros e gastos similares suportados","amount":-23.009195},
           {"label":"Resultados relativos a investimentos","amount":-0.314634},
           {"label":"Imposto sobre o rendimento do período","amount":-1.076103}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1743,7 +1750,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":2.058012},
           {"label":"Resultados relativos a investimentos","amount":-0.173168},
           {"label":"Imposto sobre o rendimento","amount":0.027293}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1865,7 +1873,8 @@
           {"label":"Proveitos e ganhos financeiros","amount":4.059},
           {"label":"Resultados relativos a investimentos","amount":0.14},
           {"label":"Imposto sobre o rendimento","amount":-3.993}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

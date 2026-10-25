@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "crystalpalace-gb",
@@ -77,7 +77,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.388,"tax":0,"gross_debt":null,"cash":null,"staff_cost":123.835},
       "official_totals": {"revenue":159.999,"expenses":179.84,"net_result":-24.229},
       "adjustments": {
-        "extra_rows": [{"label":"Interest receivable","amount":0.018},{"label":"Interest payable and similar charges","amount":-4.406},{"label":"Taxation","amount":null}]
+        "extra_rows": [{"label":"Interest receivable","amount":0.018},{"label":"Interest payable and similar charges","amount":-4.406},{"label":"Taxation","amount":null}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -113,7 +114,8 @@
           {"label":"Interest payable and similar charges","amount":-7.806},
           {"label":"Foreign exchange losses","amount":-0.937},
           {"label":"Taxation","amount":null}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -151,7 +153,8 @@
         {"label":"Depreciation of tangible fixed assets","category":"depreciation","subcategory":"depreciation","amount":-3.241,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0.007,"net_interest":-13.561,"tax":0,"gross_debt":157.905,"cash":9.036},
-      "official_totals": {"revenue":191.565,"expenses":210.942,"net_result":-32.931}
+      "official_totals": {"revenue":191.565,"expenses":210.942,"net_result":-32.931},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -194,7 +197,8 @@
         {"label":"Depreciation of tangible fixed assets","category":"depreciation","subcategory":"depreciation","amount":-3.676,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":-0.161,"net_interest":-15.128,"tax":0,"gross_debt":121.918,"cash":13.715},
-      "official_totals": {"revenue":262.701,"expenses":239.147,"net_result":8.265}
+      "official_totals": {"revenue":262.701,"expenses":239.147,"net_result":8.265},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

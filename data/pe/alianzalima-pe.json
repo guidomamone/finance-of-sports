@@ -160,7 +160,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.45742,"tax":0,"gross_debt":48.669842,"cash":1.24065},
       "official_totals": {"revenue":59.376339,"expenses":46.494783,"net_result":11.424136},
-      "adjustments": {"extra_rows":[{"label":"Gastos financieros, neto","amount":-1.602653},{"label":"Diferencia de cambio, neta","amount":0.145233}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Gastos financieros, neto","amount":-1.602653},{"label":"Diferencia de cambio, neta","amount":0.145233}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2020,
@@ -263,7 +266,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.112686,"tax":0,"gross_debt":49.326356,"cash":1.111894},
       "official_totals": {"revenue":44.948112,"expenses":47.452429,"net_result":-4.617003},
-      "adjustments": {"extra_rows":[{"label":"Gastos financieros, neto","amount":-1.230364},{"label":"Diferencia de cambio, neta","amount":-0.882322}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Gastos financieros, neto","amount":-1.230364},{"label":"Diferencia de cambio, neta","amount":-0.882322}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2021,
@@ -372,7 +378,10 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.691774,"tax":0,"gross_debt":54.907198,"cash":2.1188},
       "official_totals": {"revenue":60.786207,"expenses":49.326371,"net_result":8.768062},
-      "adjustments": {"extra_rows":[{"label":"Gastos financieros, neto","amount":-1.256711},{"label":"Diferencia de cambio, neta","amount":-1.435063}]}
+      "adjustments": {
+        "extra_rows": [{"label":"Gastos financieros, neto","amount":-1.256711},{"label":"Diferencia de cambio, neta","amount":-1.435063}],
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2022,
@@ -444,7 +453,8 @@
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -518,7 +528,8 @@
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     },
     {
@@ -592,7 +603,8 @@
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     }
   ],

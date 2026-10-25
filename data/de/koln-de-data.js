@@ -40,8 +40,8 @@ const kolnDeExpenseLinesByYear = {
 };
 
 const kolnDeFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"koln-de-jahresabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.899231,"tax":-1.804034,"grossDebt":37.862442,"cash":11.88274,"officialTotalRevenue":158.971709,"officialTotalExpenses":143.487558,"officialPAT":11.780886},
-  2025: {"currency":"EUR","sourceId":"koln-de-jahresabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-4.20963,"tax":-1.191767,"grossDebt":31.996691,"cash":6.197026,"officialTotalRevenue":150.851886,"officialTotalExpenses":140.091057,"officialPAT":5.359433},
+  2024: {"currency":"EUR","sourceId":"koln-de-jahresabschluss-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.899231,"tax":-1.804034,"grossDebt":37.862442,"cash":11.88274,"officialTotalRevenue":158.971709,"officialTotalExpenses":143.487558,"officialPAT":11.780886,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"koln-de-jahresabschluss-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-4.20963,"tax":-1.191767,"grossDebt":31.996691,"cash":6.197026,"officialTotalRevenue":150.851886,"officialTotalExpenses":140.091057,"officialPAT":5.359433,"baseIngreso":"full"},
 };
 
 const kolnDePresupuestoOverlayByYear = {};

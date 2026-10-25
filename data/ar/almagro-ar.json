@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "almagro-ar",
@@ -139,7 +139,8 @@
         {"label":"Amortización (Anexo I A y I B)","category":"depreciation","subcategory":"depreciation","amount":-1.735199,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-60.352422,"tax":0,"gross_debt":3.759419,"cash":0.103813},
-      "official_totals": {"revenue":38.350265,"expenses":40.59734,"net_result":-62.599497}
+      "official_totals": {"revenue":38.350265,"expenses":40.59734,"net_result":-62.599497},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -224,7 +225,8 @@
         {"label":"Amortización (Anexo I A y I B)","category":"depreciation","subcategory":"depreciation","amount":-2.679429,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.0192,"tax":0,"gross_debt":2.35308,"cash":0.159817},
-      "official_totals": {"revenue":52.333782,"expenses":52.755791,"net_result":1.59719}
+      "official_totals": {"revenue":52.333782,"expenses":52.755791,"net_result":1.59719},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -300,7 +302,8 @@
         {"label":"Amortización (Anexo I A y I B)","category":"depreciation","subcategory":"depreciation","amount":-0.717216,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":2.300103,"cash":2.445138},
-      "official_totals": {"revenue":54.472633,"expenses":50.009604,"net_result":4.463029}
+      "official_totals": {"revenue":54.472633,"expenses":50.009604,"net_result":4.463029},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -353,7 +356,8 @@
         {"label":"Amortización (Anexo I A y I B)","category":"depreciation","subcategory":"depreciation","amount":-6.118948,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.950488,"tax":0,"gross_debt":1.987847,"cash":0.149971},
-      "official_totals": {"revenue":63.239067,"expenses":70.125008,"net_result":-10.836428}
+      "official_totals": {"revenue":63.239067,"expenses":70.125008,"net_result":-10.836428},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -430,7 +434,8 @@
         {"label":"Amortización (Anexo I A y I B)","category":"depreciation","subcategory":"depreciation","amount":-12.234039,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.172629,"tax":0,"gross_debt":5.076054,"cash":3.899197},
-      "official_totals": {"revenue":143.589037,"expenses":149.900194,"net_result":-13.483786}
+      "official_totals": {"revenue":143.589037,"expenses":149.900194,"net_result":-13.483786},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -509,7 +514,8 @@
         {"label":"Amortización (Anexo I A y I B)","category":"depreciation","subcategory":"depreciation","amount":-27.371661,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-72.886627,"tax":0,"gross_debt":8.350322,"cash":8.921025},
-      "official_totals": {"revenue":423.07055,"expenses":353.368044,"net_result":-3.18412}
+      "official_totals": {"revenue":423.07055,"expenses":353.368044,"net_result":-3.18412},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "squad_transfers": [],

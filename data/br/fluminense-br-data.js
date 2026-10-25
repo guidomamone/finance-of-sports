@@ -62,8 +62,8 @@ const fluminenseBrExpenseLinesByYear = {
 };
 
 const fluminenseBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"fluminense-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"bittencourt","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-68.658,"tax":0,"grossDebt":31.479,"cash":10.423,"officialTotalRevenue":667.793,"officialTotalExpenses":597.155,"officialPAT":0.114},
-  2025: {"currency":"BRL","sourceId":"fluminense-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"bittencourt","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-48.785,"tax":0,"grossDebt":37.775,"cash":34.526,"officialTotalRevenue":991.923,"officialTotalExpenses":899.059,"officialPAT":51.585},
+  2024: {"currency":"BRL","sourceId":"fluminense-br-demonstracoes-2024","reportType":"official_balance_sheet","gestionId":"bittencourt","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-68.658,"tax":0,"grossDebt":31.479,"cash":10.423,"officialTotalRevenue":667.793,"officialTotalExpenses":597.155,"officialPAT":0.114,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"fluminense-br-demonstracoes-2025","reportType":"official_balance_sheet","gestionId":"bittencourt","fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-48.785,"tax":0,"grossDebt":37.775,"cash":34.526,"officialTotalRevenue":991.923,"officialTotalExpenses":899.059,"officialPAT":51.585,"baseIngreso":"full"},
 };
 
 const fluminenseBrPresupuestoOverlayByYear = {};

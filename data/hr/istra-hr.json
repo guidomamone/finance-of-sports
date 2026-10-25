@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "istra-hr",
@@ -143,7 +143,8 @@
           {"label":"Ganancia por venta de jugadores","amount":1.707844},
           {"label":"Intereses netos","amount":-0.087805},
           {"label":"Otros ingresos/egresos no operativos","amount":0.438955}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

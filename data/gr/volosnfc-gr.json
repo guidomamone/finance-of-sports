@@ -109,7 +109,8 @@
       "official_totals": {"revenue":0.45037,"expenses":0.614945,"net_result":-0.165621},
       "adjustments": {
         "extra_rows": [{"label":"Τόκοι και συναφή κονδύλια (καθαρό ποσό)","amount":-0.001046},{"label":"Φόροι","amount":0}],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.405846,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.405846,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -148,7 +149,8 @@
       "official_totals": {"revenue":1.518128,"expenses":1.774961,"net_result":-0.258615},
       "adjustments": {
         "extra_rows": [{"label":"Τόκοι και συναφή κονδύλια (καθαρό ποσό)","amount":-0.001781},{"label":"Φόροι","amount":0}],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.454697,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.454697,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -182,7 +184,8 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.003225},
           {"label":"Φόροι εισοδήματος","amount":-0.025264}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":2.177347,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":2.177347,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -216,7 +219,8 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.007685},
           {"label":"Φόροι εισοδήματος","amount":-0.027855}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":3.574025,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":3.574025,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -249,7 +253,8 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.007464},
           {"label":"Φόροι εισοδήματος","amount":-0.246872}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":4.198075,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":4.198075,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -282,7 +287,8 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.005967},
           {"label":"Φόροι εισοδήματος","amount":-0.109397}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":3.377522,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":3.377522,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -315,7 +321,8 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.007185},
           {"label":"Φόροι εισοδήματος","amount":-0.120465}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":4.639776,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":4.639776,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

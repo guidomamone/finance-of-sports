@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "molde-no",
@@ -240,7 +240,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.017243,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":51.038956,"expenses":50.431011,"net_result":0.625189}
+      "official_totals": {"revenue":51.038956,"expenses":50.431011,"net_result":0.625189},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2009,
@@ -363,7 +364,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.011566,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003848,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":55.19386,"expenses":54.432394,"net_result":0.757619}
+      "official_totals": {"revenue":55.19386,"expenses":54.432394,"net_result":0.757619},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2010,
@@ -480,7 +482,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003132,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":66.297133,"expenses":65.983335,"net_result":0.310666}
+      "official_totals": {"revenue":66.297133,"expenses":65.983335,"net_result":0.310666},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2011,
@@ -605,7 +608,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":12.493639,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":75.68484,"expenses":87.019551,"net_result":1.158928}
+      "official_totals": {"revenue":75.68484,"expenses":87.019551,"net_result":1.158928},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2012,
@@ -726,7 +730,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":12.555776,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":93.894536,"expenses":105.63356,"net_result":0.816753}
+      "official_totals": {"revenue":93.894536,"expenses":105.63356,"net_result":0.816753},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2013,
@@ -847,7 +852,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":15.352899,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":92.407113,"expenses":107.055562,"net_result":0.70445}
+      "official_totals": {"revenue":92.407113,"expenses":107.055562,"net_result":0.70445},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2014,
@@ -967,7 +973,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":12.104849,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":100.57147,"expenses":112.043922,"net_result":0.632397}
+      "official_totals": {"revenue":100.57147,"expenses":112.043922,"net_result":0.632397},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2015,
@@ -1088,7 +1095,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.038623,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":11.089134,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":116.413595,"expenses":126.925836,"net_result":0.576893}
+      "official_totals": {"revenue":116.413595,"expenses":126.925836,"net_result":0.576893},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2016,
@@ -1206,7 +1214,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":13.871434,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":91.491761,"expenses":105.150141,"net_result":0.213053}
+      "official_totals": {"revenue":91.491761,"expenses":105.150141,"net_result":0.213053},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -1298,7 +1307,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":12.333096,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":93.890936,"expenses":106.064326,"net_result":0.159706}
+      "official_totals": {"revenue":93.890936,"expenses":106.064326,"net_result":0.159706},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2018,
@@ -1418,7 +1428,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.02,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":12.726373,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":104.045438,"expenses":116.934408,"net_result":-0.162597}
+      "official_totals": {"revenue":104.045438,"expenses":116.934408,"net_result":-0.162597},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -1536,7 +1547,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.226151,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":15.667189,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":121.252098,"expenses":136.424429,"net_result":0.494859}
+      "official_totals": {"revenue":121.252098,"expenses":136.424429,"net_result":0.494859},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -1651,7 +1663,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":16.722089,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":215.10381,"expenses":156.946899,"net_result":74.879}
+      "official_totals": {"revenue":215.10381,"expenses":156.946899,"net_result":74.879},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -1768,7 +1781,8 @@
         {"label":"Avskrivninger","category":"depreciation","subcategory":"depreciation","amount":-18.458514,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":18.579469,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":124.730053,"expenses":143.382283,"net_result":-0.072762}
+      "official_totals": {"revenue":124.730053,"expenses":143.382283,"net_result":-0.072762},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -1842,7 +1856,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.034785,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":21.263959,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":151.455208,"expenses":172.839263,"net_result":-0.120094}
+      "official_totals": {"revenue":151.455208,"expenses":172.839263,"net_result":-0.120094},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -1962,7 +1977,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.106614,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":39.945461,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":314.940806,"expenses":230.473167,"net_result":124.413097}
+      "official_totals": {"revenue":314.940806,"expenses":230.473167,"net_result":124.413097},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -2073,7 +2089,8 @@
         {"label":"Tap på fordringer","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.200224,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":62.643524,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":226.97564,"expenses":280.13706,"net_result":9.4821}
+      "official_totals": {"revenue":226.97564,"expenses":280.13706,"net_result":9.4821},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -2199,7 +2216,8 @@
         {"label":"Avskrivninger varige driftsmidler","category":"depreciation","subcategory":"depreciation","amount":-0.644466,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":81.320126,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":129.145432,"expenses":289.687573,"net_result":-79.222013}
+      "official_totals": {"revenue":129.145432,"expenses":289.687573,"net_result":-79.222013},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

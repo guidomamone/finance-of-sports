@@ -31,7 +31,7 @@ const fceindhovenNlExpenseLinesByYear = {
 };
 
 const fceindhovenNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"fceindhoven-nl-wf-2024-2025-a6019b8e","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.01924,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5.968194,"officialTotalExpenses":5.917161,"officialPAT":0.031793,"extraRows":[{"label":"Financië le baten en lasten","value":-0.01924},{"label":"Belastingen","value":null}]},
+  2025: {"currency":"EUR","sourceId":"fceindhoven-nl-wf-2024-2025-a6019b8e","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.01924,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5.968194,"officialTotalExpenses":5.917161,"officialPAT":0.031793,"extraRows":[{"label":"Financië le baten en lasten","value":-0.01924},{"label":"Belastingen","value":null}],"baseIngreso":"full"},
 };
 
 const fceindhovenNlPresupuestoOverlayByYear = {};

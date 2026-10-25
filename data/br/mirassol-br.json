@@ -58,7 +58,8 @@
             "kind": "net_sales"
           },
           {"line":"Custos","side":"expense","amount":36.105741,"reason":"el documento no desglosa este renglón","kind":"other"}
-        ]
+        ],
+        "revenue_basis": "sales_total"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "atalanta-it",
@@ -340,7 +340,8 @@
           {"label":"Proventi da adesione al consolidato fiscale","amount":0},
           {"label":"Imposte differite","amount":-0.093657},
           {"label":"Imposte anticipate","amount":0.630028}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -634,7 +635,8 @@
           {"label":"Imposte correnti","amount":-4.313217},
           {"label":"Oneri da adesione al consolidato fiscale","amount":-6.710851},
           {"label":"Imposte differite (anticipate)","amount":-2.566854}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -900,7 +902,8 @@
           {"label":"c) oneri/(proventi) da adesione consolidato fiscale","amount":-10.737493},
           {"label":"d) imposte differite","amount":-7.248351},
           {"label":"e) imposte anticipate","amount":0.540012}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1186,7 +1189,8 @@
           {"label":"c) oneri/(proventi) da adesione consolidato fiscale","amount":-10.503021},
           {"label":"d) imposte differite","amount":-1.73917},
           {"label":"e) imposte anticipate","amount":0.821257}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1490,7 +1494,8 @@
           {"label":"c) oneri/(proventi) da adesione consolidato fiscale","amount":0.778125},
           {"label":"d) imposte differite","amount":1.432496},
           {"label":"e) imposte anticipate","amount":0.4419}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -1802,7 +1807,8 @@
           {"label":"c) oneri/(proventi) da adesione consolidato fiscale","amount":0.023007},
           {"label":"d) imposte differite","amount":-1.06139},
           {"label":"e) imposte anticipate","amount":-0.10458}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2082,7 +2088,8 @@
           {"label":"c) oneri/(proventi) da adesione consolidato fiscale","amount":-10.510942},
           {"label":"d) imposte differite","amount":7.141271},
           {"label":"e) imposte anticipate","amount":-0.654236}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -2279,7 +2286,8 @@
           {"label":"c) oneri/(proventi) da adesione consolidato fiscale","amount":-3.653405},
           {"label":"d) imposte differite","amount":-9.845609},
           {"label":"e) imposte anticipate","amount":0.177389}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     }
   ],

@@ -92,8 +92,8 @@ const gremioBrExpenseLinesByYear = {
 };
 
 const gremioBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"gremio-br-demonstracoes-2023-2024","reportType":"official_balance_sheet","gestionId":"guerraneto","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-60.893,"tax":0,"grossDebt":99.636,"cash":11.145,"officialTotalRevenue":615.021,"officialTotalExpenses":510.536,"officialPAT":43.592},
-  2025: {"currency":"BRL","sourceId":"gremio-br-wf-2024-2025-1774995c","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-94.638,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":903.545,"officialTotalExpenses":615.928,"officialPAT":35.484,"extraRows":[{"label":"Receitas financeiras","value":34.122},{"label":"Despesas financeiras","value":-128.76}]},
+  2024: {"currency":"BRL","sourceId":"gremio-br-demonstracoes-2023-2024","reportType":"official_balance_sheet","gestionId":"guerraneto","fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-60.893,"tax":0,"grossDebt":99.636,"cash":11.145,"officialTotalRevenue":615.021,"officialTotalExpenses":510.536,"officialPAT":43.592,"baseIngreso":"full"},
+  2025: {"currency":"BRL","sourceId":"gremio-br-wf-2024-2025-1774995c","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-94.638,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":903.545,"officialTotalExpenses":615.928,"officialPAT":35.484,"extraRows":[{"label":"Receitas financeiras","value":34.122},{"label":"Despesas financeiras","value":-128.76}],"baseIngreso":"full"},
 };
 
 const gremioBrPresupuestoOverlayByYear = {};

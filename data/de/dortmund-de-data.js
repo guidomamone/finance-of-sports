@@ -48,8 +48,8 @@ const dortmundDeExpenseLinesByYear = {
 };
 
 const dortmundDeFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"dortmund-de-geschaeftsbericht-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":14.5,"tax":-4.562,"grossDebt":28.701,"cash":4.36,"officialTotalRevenue":571.908,"officialTotalExpenses":543.991,"officialPAT":37.857},
-  2025: {"currency":"EUR","sourceId":"dortmund-de-geschaeftsbericht-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":12.355,"tax":-3.339,"grossDebt":34.173,"cash":20.633,"officialTotalRevenue":535.495,"officialTotalExpenses":536.857,"officialPAT":7.653},
+  2024: {"currency":"EUR","sourceId":"dortmund-de-geschaeftsbericht-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":14.5,"tax":-4.562,"grossDebt":28.701,"cash":4.36,"officialTotalRevenue":571.908,"officialTotalExpenses":543.991,"officialPAT":37.857,"baseIngreso":"full"},
+  2025: {"currency":"EUR","sourceId":"dortmund-de-geschaeftsbericht-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":12.355,"tax":-3.339,"grossDebt":34.173,"cash":20.633,"officialTotalRevenue":535.495,"officialTotalExpenses":536.857,"officialPAT":7.653,"baseIngreso":"full"},
 };
 
 const dortmundDePresupuestoOverlayByYear = {};

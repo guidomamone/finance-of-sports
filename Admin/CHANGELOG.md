@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1091 — los 1340 ejercicios con su base de ingreso (revenue_basis) y los 11 reconstruidos marcados [455]
+- `fos ingreso-base --escribir` sobre los 331 clubes: 1258 `full`, 32 `sales_total`, 46 `gross_margin`; 11 con `revenue_derivation` (Patro Eisden, Lokeren-Temse, Dender). Los 4 años sin meta (Lierse SK 2019-2021, Patro Eisden 2021) no se pueden marcar.
+- Probado: datos, fuentes y totales idénticos antes y después en los 331 clubes (sin contar los dos campos); `generar-data --check` en verde; `data/schema/club-v2.json` regenerado. `Admin/mediciones/455-...md` corregido (46 de margen, 11 reconstruidos; ancla de SønderjyskE 2024).
+- Medición: no aplica (datos; la tool se midió en la Versión 1090).
+
 ## Versión 1090 — cambio-formato.js, audit-chequeos-3.js, json-datos.mjs, ingreso-derivado.js, ingreso-base.mjs: señal de cambio de formato más precisa y marca del ingreso por año (revenue_basis, revenue_derivation) [455 · 447 · cambio-formato.js, audit-chequeos-3.js, audit.js, json-datos.mjs, ingreso-derivado.js, ingreso-base.mjs]
 - `cambio-formato.js`: un año con una línea extra que pesa menos del 10 % no cuenta como «completo» (23 a 15 avisos); `audit-chequeos-3.js`: `cambio-de-formato-sin-nota` da por cubierto un año resumido que ya lleva la nota automática de `sinDesglose`.
 - `json-datos.mjs` (+ esquema, paquete): campos opcionales `adjustments.revenue_basis` (`full`, `sales_total`, `gross_margin`) y `revenue_derivation` (`margin_plus_costs`: margen bruto + compras y servicios del documento); `ingreso-derivado.js` es la identidad, `ingreso-base.mjs` (`fos ingreso-base`) la escribe en los ejercicios ya cargados sin tocar importes (probado idéntico en los 331 clubes).

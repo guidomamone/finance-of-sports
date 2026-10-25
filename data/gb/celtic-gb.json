@@ -112,7 +112,8 @@
           {"label":"Finance expense","amount":-1.056},
           {"label":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":-1.109}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -187,7 +188,8 @@
       "official_totals": {"revenue":117.264,"expenses":104.773,"net_result":5.849},
       "adjustments": {
         "extra_rows": [{"label":"Finance income","amount":0.876},{"label":"Finance expense","amount":-0.969},{"label":"Tax expense","amount":-0.287}],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -235,7 +237,8 @@
       "official_totals": {"revenue":147.792,"expenses":107.52,"net_result":33.332},
       "adjustments": {
         "extra_rows": [{"label":"Finance income","amount":2.041},{"label":"Finance expense","amount":-1.485},{"label":"Tax expense","amount":-7.365}],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -283,7 +286,8 @@
       "official_totals": {"revenue":131.42,"expenses":116.877,"net_result":13.384},
       "adjustments": {
         "extra_rows": [{"label":"Finance income","amount":4.726},{"label":"Finance expense","amount":-1.444},{"label":"Tax expense","amount":-4.441}],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -347,7 +351,8 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     }
   ],

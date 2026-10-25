@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "burtonalbion-gb",
@@ -61,7 +61,8 @@
           {"label":"Interest payable and similar expenses","amount":-0.001901},
           {"label":"Tax on loss","amount":null}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     }
   ],

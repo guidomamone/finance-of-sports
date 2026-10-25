@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "liverpool-gb",
@@ -95,7 +95,8 @@
           {"label":"Interest receivable and similar income","amount":0.893},
           {"label":"Interest payable and similar charges","amount":-3.473},
           {"label":"Tax on profit/ loss on ordinary activities","amount":-5.033}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -142,7 +143,8 @@
           {"label":"Interest receivable and similar income","amount":1.614},
           {"label":"Interest payable and similar charges","amount":-6.162},
           {"label":"Tax on loss/ profit on ordinary activities","amount":2.075}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -200,7 +202,8 @@
         {"label":"Impairment loss on tangible fixed assets","category":"depreciation","subcategory":"depreciation","amount":-0.458,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-9.446,"tax":13.626,"gross_debt":314.295,"cash":7.504},
-      "official_totals": {"revenue":635.781,"expenses":683.439,"net_result":-43.478}
+      "official_totals": {"revenue":635.781,"expenses":683.439,"net_result":-43.478},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -264,7 +267,8 @@
         {"label":"Depreciation of tangible fixed assets","category":"depreciation","subcategory":"depreciation","amount":-14.462,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.549,"tax":-6.939,"gross_debt":285.256,"cash":2.541},
-      "official_totals": {"revenue":768.882,"expenses":745.121,"net_result":8.273}
+      "official_totals": {"revenue":768.882,"expenses":745.121,"net_result":8.273},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -26,7 +26,7 @@ const clubbruggeBeExpenseLinesByYear = {
 };
 
 const clubbruggeBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"clubbrugge-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":1.755,"tax":-6.891,"grossDebt":98.745,"cash":21.401,"officialTotalRevenue":154.196,"officialTotalExpenses":133.331,"officialPAT":16.064},
+  2025: {"currency":"EUR","sourceId":"clubbrugge-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":1.755,"tax":-6.891,"grossDebt":98.745,"cash":21.401,"officialTotalRevenue":154.196,"officialTotalExpenses":133.331,"officialPAT":16.064,"baseIngreso":"full"},
 };
 
 const clubbruggeBePresupuestoOverlayByYear = {};

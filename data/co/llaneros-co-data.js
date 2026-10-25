@@ -32,7 +32,7 @@ const llanerosCoExpenseLinesByYear = {
 };
 
 const llanerosCoFiscalYearMeta = {
-  2025: {"currency":"COP","sourceId":"llaneros-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":-10.205,"grossDebt":null,"cash":null,"officialTotalRevenue":11856.849555,"officialTotalExpenses":10766.994187,"officialPAT":1041.567343,"extraRows":[{"label":"Gastos Financieros","value":null},{"label":"Diferido","value":-10.205}]},
+  2025: {"currency":"COP","sourceId":"llaneros-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":-10.205,"grossDebt":null,"cash":null,"officialTotalRevenue":11856.849555,"officialTotalExpenses":10766.994187,"officialPAT":1041.567343,"extraRows":[{"label":"Gastos Financieros","value":null},{"label":"Diferido","value":-10.205}],"baseIngreso":"full"},
 };
 
 const llanerosCoPresupuestoOverlayByYear = {};

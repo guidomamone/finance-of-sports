@@ -35,7 +35,7 @@ const juvestabiaItExpenseLinesByYear = {
 };
 
 const juvestabiaItFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"juvestabia-it-bilancio-2024-ifrs-sec-6k","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.120093,"tax":-0.127938,"grossDebt":0.510448,"cash":0.049496,"officialTotalRevenue":4.101081,"officialTotalExpenses":5.839794,"officialPAT":-1.986746,"extraRows":[{"label":"Finance costs","value":-0.120093},{"label":"Provision for income taxes","value":-0.127938}]},
+  2024: {"currency":"EUR","sourceId":"juvestabia-it-bilancio-2024-ifrs-sec-6k","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.120093,"tax":-0.127938,"grossDebt":0.510448,"cash":0.049496,"officialTotalRevenue":4.101081,"officialTotalExpenses":5.839794,"officialPAT":-1.986746,"extraRows":[{"label":"Finance costs","value":-0.120093},{"label":"Provision for income taxes","value":-0.127938}],"baseIngreso":"full"},
 };
 
 const juvestabiaItPresupuestoOverlayByYear = {};

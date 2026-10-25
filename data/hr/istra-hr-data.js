@@ -22,7 +22,7 @@ const istraHrExpenseLinesByYear = {
 };
 
 const istraHrFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"istra-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":1.707844,"assetSales":0.438955,"netInterest":-0.087805,"tax":0,"grossDebt":2.521332,"cash":0.114452,"officialTotalRevenue":4.32662,"officialTotalExpenses":9.065268,"officialPAT":-2.679654,"extraRows":[{"label":"Ganancia por venta de jugadores","value":1.707844},{"label":"Intereses netos","value":-0.087805},{"label":"Otros ingresos/egresos no operativos","value":0.438955}]},
+  2025: {"currency":"EUR","sourceId":"istra-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":1.707844,"assetSales":0.438955,"netInterest":-0.087805,"tax":0,"grossDebt":2.521332,"cash":0.114452,"officialTotalRevenue":4.32662,"officialTotalExpenses":9.065268,"officialPAT":-2.679654,"extraRows":[{"label":"Ganancia por venta de jugadores","value":1.707844},{"label":"Intereses netos","value":-0.087805},{"label":"Otros ingresos/egresos no operativos","value":0.438955}],"baseIngreso":"full"},
 };
 
 const istraHrPresupuestoOverlayByYear = {};

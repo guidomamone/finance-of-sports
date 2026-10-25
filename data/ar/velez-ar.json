@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "velez-ar",
@@ -353,7 +353,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-2.680237,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-36.382769,"tax":0,"gross_debt":172.924269,"cash":1.068075},
-      "official_totals": {"revenue":283.378013,"expenses":283.190549,"net_result":-36.195305}
+      "official_totals": {"revenue":283.378013,"expenses":283.190549,"net_result":-36.195305},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2016,
@@ -598,7 +599,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-2.992647,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":92.568336,"tax":0,"gross_debt":180.195107,"cash":3.056183},
-      "official_totals": {"revenue":360.607477,"expenses":386.948224,"net_result":66.227589}
+      "official_totals": {"revenue":360.607477,"expenses":386.948224,"net_result":66.227589},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2017,
@@ -836,7 +838,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-2.989575,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.763815,"tax":0,"gross_debt":167.471319,"cash":3.61866},
-      "official_totals": {"revenue":425.405393,"expenses":490.176531,"net_result":-73.534953}
+      "official_totals": {"revenue":425.405393,"expenses":490.176531,"net_result":-73.534953},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2018,
@@ -1069,7 +1072,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-3.82878,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":490.076992,"tax":0,"gross_debt":339.199987,"cash":13.577432},
-      "official_totals": {"revenue":526.713827,"expenses":673.975171,"net_result":342.815648}
+      "official_totals": {"revenue":526.713827,"expenses":673.975171,"net_result":342.815648},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -1311,7 +1315,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-29.152313,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":802.716039,"tax":0,"gross_debt":520.040081,"cash":6.986051},
-      "official_totals": {"revenue":882.81166,"expenses":1315.509072,"net_result":370.018627}
+      "official_totals": {"revenue":882.81166,"expenses":1315.509072,"net_result":370.018627},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2020,
@@ -1547,7 +1552,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-47.088687,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":513.238348,"tax":0,"gross_debt":593.709334,"cash":23.225555},
-      "official_totals": {"revenue":1375.210181,"expenses":2033.468145,"net_result":-145.019616}
+      "official_totals": {"revenue":1375.210181,"expenses":2033.468145,"net_result":-145.019616},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2021,
@@ -1781,7 +1787,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-71.618722,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-26.237259,"tax":0,"gross_debt":1052.649275,"cash":44.959285},
-      "official_totals": {"revenue":2346.353726,"expenses":3073.742339,"net_result":-753.625872}
+      "official_totals": {"revenue":2346.353726,"expenses":3073.742339,"net_result":-753.625872},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -2033,7 +2040,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-122.780075,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1595.187728,"tax":0,"gross_debt":2350.311547,"cash":41.858466},
-      "official_totals": {"revenue":5313.18857,"expenses":5691.705713,"net_result":1216.670585}
+      "official_totals": {"revenue":5313.18857,"expenses":5691.705713,"net_result":1216.670585},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -2285,7 +2293,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-320.866168,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":5853.143001,"tax":0,"gross_debt":5307.332709,"cash":75.679959},
-      "official_totals": {"revenue":10416.621579,"expenses":15747.530442,"net_result":522.234138}
+      "official_totals": {"revenue":10416.621579,"expenses":15747.530442,"net_result":522.234138},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -2545,7 +2554,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-1282.293294,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":15404.132114,"tax":0,"gross_debt":15363.442373,"cash":186.31128},
-      "official_totals": {"revenue":46598.890489,"expenses":63116.161701,"net_result":-1113.139098}
+      "official_totals": {"revenue":46598.890489,"expenses":63116.161701,"net_result":-1113.139098},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -2819,7 +2829,8 @@
         {"label":"Amortización de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-1862.785592,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":11363.572644,"tax":0,"gross_debt":37929.64282,"cash":372.966931},
-      "official_totals": {"revenue":71931.540135,"expenses":83258.279027,"net_result":36.833752}
+      "official_totals": {"revenue":71931.540135,"expenses":83258.279027,"net_result":36.833752},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "squad_transfers": [],

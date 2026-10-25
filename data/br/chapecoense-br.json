@@ -173,7 +173,8 @@
         {"label":"Despesas diversas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.022097,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.910458,"tax":0,"gross_debt":0,"cash":8.340897},
-      "official_totals": {"revenue":97.852554,"expenses":86.376908,"net_result":4.832261}
+      "official_totals": {"revenue":97.852554,"expenses":86.376908,"net_result":4.832261},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2019,
@@ -266,7 +267,8 @@
       "official_totals": {"revenue":75.245,"expenses":100.752,"net_result":-50.756},
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":0.392},{"label":"Despesas Financeiras","amount":-4.41},{"label":"IR e CSLL","amount":-0.013}],
-        "no_breakdown": [{"line":"Custos","side":"expense","amount":0.244,"reason":"el documento no desglosa este renglón","kind":"other"}]
+        "no_breakdown": [{"line":"Custos","side":"expense","amount":0.244,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "revenue_basis": "full"
       }
     },
     {
@@ -395,7 +397,8 @@
         {"label":"Equivalência patrimonial","category":"exceptional","subcategory":"exceptional_items","amount":-0.036,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.933,"tax":0,"gross_debt":14.025,"cash":2.531},
-      "official_totals": {"revenue":61.097,"expenses":68.328,"net_result":-59.872}
+      "official_totals": {"revenue":61.097,"expenses":68.328,"net_result":-59.872},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -482,7 +485,8 @@
       "official_totals": {"revenue":36.714,"expenses":35.404,"net_result":6.134},
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":6.491},{"label":"Despesas Financeiras","amount":-1.667}],
-        "no_breakdown": [{"line":"Custos","side":"expense","amount":0.18,"reason":"el documento no desglosa este renglón","kind":"other"}]
+        "no_breakdown": [{"line":"Custos","side":"expense","amount":0.18,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "revenue_basis": "full"
       }
     }
   ],

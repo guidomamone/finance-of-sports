@@ -16,7 +16,7 @@ const amazonasBrExpenseLinesByYear = {
 };
 
 const amazonasBrFiscalYearMeta = {
-  2024: {"currency":"BRL","sourceId":"amazonas-br-balanco-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.01401904,"tax":0,"grossDebt":0.9230075,"cash":0.12759833,"officialTotalRevenue":36.0557646,"officialTotalExpenses":39.42349092,"officialPAT":-3.38174536,"sinDesglose":[{"renglon":"Receita de Atividades Esportivas","lado":"revenue","importe":36.055765,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Custo das atividades Esportivas","lado":"expense","importe":33.0658,"motivo":"el documento no desglosa este renglón","tipo":"cost_of_sales"}]},
+  2024: {"currency":"BRL","sourceId":"amazonas-br-balanco-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"BRL@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.01401904,"tax":0,"grossDebt":0.9230075,"cash":0.12759833,"officialTotalRevenue":36.0557646,"officialTotalExpenses":39.42349092,"officialPAT":-3.38174536,"sinDesglose":[{"renglon":"Receita de Atividades Esportivas","lado":"revenue","importe":36.055765,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Custo das atividades Esportivas","lado":"expense","importe":33.0658,"motivo":"el documento no desglosa este renglón","tipo":"cost_of_sales"}],"baseIngreso":"sales_total"},
 };
 
 const amazonasBrPresupuestoOverlayByYear = {};

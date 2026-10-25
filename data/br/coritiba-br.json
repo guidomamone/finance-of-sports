@@ -197,7 +197,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.359721,"tax":0,"gross_debt":0,"cash":11.830912},
-      "official_totals": {"revenue":216.650638,"expenses":181.59915,"net_result":34.691767}
+      "official_totals": {"revenue":216.650638,"expenses":181.59915,"net_result":34.691767},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -349,7 +350,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.515749,"tax":0,"gross_debt":49.4,"cash":3.623921},
-      "official_totals": {"revenue":87.002707,"expenses":221.889584,"net_result":-139.402626}
+      "official_totals": {"revenue":87.002707,"expenses":221.889584,"net_result":-139.402626},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -483,7 +485,8 @@
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        }
+        },
+        "revenue_basis": "full"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "burnley-gb",
@@ -95,7 +95,8 @@
           {"label":"Interest receivable and similar income","amount":0.075},
           {"label":"Interest payable and similar expenses","amount":-7.172},
           {"label":"Tax on profit/(loss)","amount":-10.184}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -142,7 +143,8 @@
           {"label":"Interest receivable and similar income","amount":2.804},
           {"label":"Interest payable and similar expenses","amount":-9.499},
           {"label":"Tax on (loss)/profit","amount":8.056}
-        ]
+        ],
+        "revenue_basis": "full"
       }
     },
     {
@@ -194,7 +196,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-16.961,"tax":4.016,"gross_debt":112.393,"cash":8.91},
-      "official_totals": {"revenue":154.922,"expenses":166.408,"net_result":-24.431}
+      "official_totals": {"revenue":154.922,"expenses":166.408,"net_result":-24.431},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -245,7 +248,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-13.489,"tax":0.632,"gross_debt":142.372,"cash":12.909},
-      "official_totals": {"revenue":136.276,"expenses":151.949,"net_result":-28.53}
+      "official_totals": {"revenue":136.276,"expenses":151.949,"net_result":-28.53},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -17,7 +17,7 @@ const degraafschapNlExpenseLinesByYear = {
 };
 
 const degraafschapNlFiscalYearMeta = {
-  2022: {"currency":"EUR","sourceId":"degraafschap-nl-wf-src-betaald-voetbal-de-graafschap-b-v-publicatierapport-2021-2022","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2022-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.035869,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":8.323465,"officialTotalExpenses":8.772605,"officialPAT":-0.485009,"extraRows":[{"label":"Rentelasten en soortgelijke kosten","value":-0.035869},{"label":"Belastingen","value":null}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":8.272005,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2022: {"currency":"EUR","sourceId":"degraafschap-nl-wf-src-betaald-voetbal-de-graafschap-b-v-publicatierapport-2021-2022","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2022-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.035869,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":8.323465,"officialTotalExpenses":8.772605,"officialPAT":-0.485009,"extraRows":[{"label":"Rentelasten en soortgelijke kosten","value":-0.035869},{"label":"Belastingen","value":null}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":8.272005,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const degraafschapNlPresupuestoOverlayByYear = {};

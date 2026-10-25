@@ -79,7 +79,7 @@ const godoycruzArExpenseLinesByYear = {
 };
 
 const godoycruzArFiscalYearMeta = {
-  2020: {"currency":"ARS","sourceId":"godoycruz-ar-estados-contables-2019-20","reportType":"official_balance_sheet","gestionId":"mansur","fxRef":"ARS@2020-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-43.083991000000026,"tax":0,"grossDebt":80.537132,"cash":161.039724,"officialTotalRevenue":614.668614,"officialTotalExpenses":414.235082,"officialPAT":157.349542},
+  2020: {"currency":"ARS","sourceId":"godoycruz-ar-estados-contables-2019-20","reportType":"official_balance_sheet","gestionId":"mansur","fxRef":"ARS@2020-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-43.083991000000026,"tax":0,"grossDebt":80.537132,"cash":161.039724,"officialTotalRevenue":614.668614,"officialTotalExpenses":414.235082,"officialPAT":157.349542,"baseIngreso":"full"},
 };
 
 const godoycruzArPresupuestoOverlayByYear = {};

@@ -15,7 +15,7 @@ const rodajcNlExpenseLinesByYear = {
 };
 
 const rodajcNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"rodajc-nl-wf-2024-2025-e1694c69","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.072486,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":8.320574,"officialTotalExpenses":9.123014,"officialPAT":-0.874926,"extraRows":[{"label":"Financiële baten en lasten","value":-0.072486},{"label":"Belastingen","value":null}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":7.877577,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2025: {"currency":"EUR","sourceId":"rodajc-nl-wf-2024-2025-e1694c69","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.072486,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":8.320574,"officialTotalExpenses":9.123014,"officialPAT":-0.874926,"extraRows":[{"label":"Financiële baten en lasten","value":-0.072486},{"label":"Belastingen","value":null}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":7.877577,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const rodajcNlPresupuestoOverlayByYear = {};

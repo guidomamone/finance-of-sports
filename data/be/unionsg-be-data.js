@@ -21,7 +21,7 @@ const unionsgBeExpenseLinesByYear = {
 };
 
 const unionsgBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"unionsg-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.499375,"tax":-0.336402,"grossDebt":31.660587,"cash":1.27532,"officialTotalRevenue":58.768113,"officialTotalExpenses":56.128962,"officialPAT":1.803374,"sinDesglose":[{"renglon":"Chiffre d'affaires","lado":"revenue","importe":15.029834,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
+  2025: {"currency":"EUR","sourceId":"unionsg-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.499375,"tax":-0.336402,"grossDebt":31.660587,"cash":1.27532,"officialTotalRevenue":58.768113,"officialTotalExpenses":56.128962,"officialPAT":1.803374,"sinDesglose":[{"renglon":"Chiffre d'affaires","lado":"revenue","importe":15.029834,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const unionsgBePresupuestoOverlayByYear = {};

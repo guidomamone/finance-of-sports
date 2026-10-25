@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "koln-de",
@@ -88,7 +88,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.899231,"tax":-1.804034,"gross_debt":37.862442,"cash":11.88274},
-      "official_totals": {"revenue":158.971709,"expenses":143.487558,"net_result":11.780886}
+      "official_totals": {"revenue":158.971709,"expenses":143.487558,"net_result":11.780886},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -147,7 +148,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.20963,"tax":-1.191767,"gross_debt":31.996691,"cash":6.197026},
-      "official_totals": {"revenue":150.851886,"expenses":140.091057,"net_result":5.359433}
+      "official_totals": {"revenue":150.851886,"expenses":140.091057,"net_result":5.359433},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

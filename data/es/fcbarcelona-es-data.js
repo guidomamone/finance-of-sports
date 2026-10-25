@@ -29,7 +29,7 @@ const fcbarcelonaEsExpenseLinesByYear = {
 };
 
 const fcbarcelonaEsFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"fcbarcelona-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":13.47,"assetSales":-12.455,"netInterest":-79.649,"tax":-8.572,"grossDebt":305.155,"cash":136.328,"officialTotalRevenue":996.365,"officialTotalExpenses":926.108,"officialPAT":-16.949},
+  2025: {"currency":"EUR","sourceId":"fcbarcelona-es-cuentas-anuales-2024-25","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":13.47,"assetSales":-12.455,"netInterest":-79.649,"tax":-8.572,"grossDebt":305.155,"cash":136.328,"officialTotalRevenue":996.365,"officialTotalExpenses":926.108,"officialPAT":-16.949,"baseIngreso":"full"},
 };
 
 const fcbarcelonaEsPasesData = [];

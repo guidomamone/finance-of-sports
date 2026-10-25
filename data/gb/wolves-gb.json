@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "wolves-gb",
@@ -99,7 +99,8 @@
           {"label":"Interest payable and similar charges","amount":-4.812},
           {"label":"Tax on (loss)/profit","amount":0.681}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -134,7 +135,8 @@
           {"label":"Interest payable and similar charges","amount":-5.372},
           {"label":"Tax on Profit/(loss)","amount":null}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -170,7 +172,8 @@
           {"label":"Interest payable and similar charges","amount":-5.627},
           {"label":"Tax on (loss)/profit)","amount":null}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -206,7 +209,8 @@
           {"label":"Interest payable and similar charges","amount":-10.71},
           {"label":"Tax on (loss)/profit)","amount":null}
         ],
-        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}},
+        "revenue_basis": "full"
       }
     },
     {
@@ -265,7 +269,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.639,"tax":0,"gross_debt":100.609,"cash":30.563},
-      "official_totals": {"revenue":242.328,"expenses":247.567,"net_result":-10.878}
+      "official_totals": {"revenue":242.328,"expenses":247.567,"net_result":-10.878},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -322,7 +327,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-11.316,"tax":0,"gross_debt":101.394,"cash":33.439},
-      "official_totals": {"revenue":290.383,"expenses":290.698,"net_result":-11.631}
+      "official_totals": {"revenue":290.383,"expenses":290.698,"net_result":-11.631},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

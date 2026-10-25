@@ -137,7 +137,8 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.834691,"tax":-0.146296,"gross_debt":23.461701,"cash":0.311835},
       "official_totals": {"revenue":44.568803,"expenses":55.902521,"net_result":-13.342433},
       "adjustments": {
-        "no_breakdown": [{"line":"Chiffre d'affaires","side":"revenue","amount":20.453554,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+        "no_breakdown": [{"line":"Chiffre d'affaires","side":"revenue","amount":20.453554,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
       }
     }
   ],

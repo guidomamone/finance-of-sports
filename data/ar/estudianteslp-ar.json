@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-22",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "estudianteslp-ar",
@@ -242,7 +242,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":690.331357,"tax":0,"gross_debt":1153.353229,"cash":12.545548},
-      "official_totals": {"revenue":4332.941478,"expenses":4448.448161,"net_result":574.824674}
+      "official_totals": {"revenue":4332.941478,"expenses":4448.448161,"net_result":574.824674},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -420,7 +421,8 @@
         {"label":"Indemnizaciones y juicios","category":"other_operating_expenses","subcategory":"other_expenses","amount":-61.980949,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1535.101326,"tax":0,"gross_debt":2410.436335,"cash":36.433986},
-      "official_totals": {"revenue":7650.443395,"expenses":9171.470536,"net_result":14.074185}
+      "official_totals": {"revenue":7650.443395,"expenses":9171.470536,"net_result":14.074185},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -608,7 +610,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":534.909348,"tax":0,"gross_debt":12029.051057,"cash":67.946816},
-      "official_totals": {"revenue":49829.905478,"expenses":40799.276647,"net_result":9565.538179}
+      "official_totals": {"revenue":49829.905478,"expenses":40799.276647,"net_result":9565.538179},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2025,
@@ -782,7 +785,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2475.498214,"tax":0,"gross_debt":35762.837696,"cash":1364.903809},
-      "official_totals": {"revenue":59517.19654,"expenses":76269.807543,"net_result":-14277.112789}
+      "official_totals": {"revenue":59517.19654,"expenses":76269.807543,"net_result":-14277.112789},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "squad_transfers": [],

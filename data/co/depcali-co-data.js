@@ -33,7 +33,7 @@ const depcaliCoExpenseLinesByYear = {
 };
 
 const depcaliCoFiscalYearMeta = {
-  2025: {"currency":"COP","sourceId":"depcali-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1041.619,"tax":-8075.349,"grossDebt":40639.552,"cash":21158.174,"officialTotalRevenue":57387.255,"officialTotalExpenses":55225.028,"officialPAT":-6954.741},
+  2025: {"currency":"COP","sourceId":"depcali-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1041.619,"tax":-8075.349,"grossDebt":40639.552,"cash":21158.174,"officialTotalRevenue":57387.255,"officialTotalExpenses":55225.028,"officialPAT":-6954.741,"baseIngreso":"full"},
 };
 
 const depcaliCoPresupuestoOverlayByYear = {};
