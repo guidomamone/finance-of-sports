@@ -1,15 +1,33 @@
 {
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.md",
- "generatedAt": "2026-10-19T14:23:36.528Z",
- "rubrosHuella": "a893459f718800af63a7cb5a75b12848f69e7f36",
+ "generatedAt": "2026-10-25T16:11:34.401Z",
+ "rubrosHuella": "f24fdcd56e162c028191c388e6b5fc03ade369df",
  "rubros": [
   {
-   "label": "Brutomarge (+)/(-)",
+   "label": "Bedrijfsopbrengsten",
    "lado": "revenue",
    "page": 7,
    "section": "estado",
    "choice": "lump_football_operations",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_expenses",
    "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -22,6 +40,15 @@
    "desdeCache": true
   },
   {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
    "label": "Andere bedrijfskosten",
    "lado": "expense",
    "page": 7,
@@ -29,52 +56,6 @@
    "choice": "other_expenses",
    "confidence": 0.85,
    "desdeCache": true
-  },
-  {
-   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "choice": "wages_squad",
-   "confidence": 1,
-   "top3": [
-    [
-     "wages_squad",
-     1
-    ],
-    [
-     "player_amortisation",
-     0
-    ],
-    [
-     "player_impairment",
-     0
-    ]
-   ],
-   "tokens": 1061
-  },
-  {
-   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado (lectura 4: signo impreso, resta en su lado)",
-   "choice": "exceptional_items",
-   "confidence": 1,
-   "top3": [
-    [
-     "exceptional_items",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1134
   }
  ]
 }

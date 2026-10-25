@@ -1,60 +1,64 @@
 {
-  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.md",
-  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.pdf",
-  "club": "patroeisden-be",
-  "year": 2020,
-  "generatedAt": "2026-10-19T14:16:59.541Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Brutomarge (+)/(-)",
-      "lado": "revenue",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.277991
-      ],
-      "glosa": "Margen bruto (+)/(-)"
-    },
-    {
-      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.995646
-      ],
-      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
-    },
-    {
-      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.00575
-      ],
-      "glosa": "Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
-    },
-    {
-      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado (lectura 4: signo impreso, resta en su lado)",
-      "values": [
-        -0.055215
-      ],
-      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
-    },
-    {
-      "label": "Andere bedrijfskosten",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.011157
-      ],
-      "glosa": "Otros gastos de explotación"
-    }
-  ]
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.md",
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.pdf",
+ "club": "patroeisden-be",
+ "year": 2020,
+ "generatedAt": "2026-10-25T16:11:12.257Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    0.701063
+   ]
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    0.423072
+   ]
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    0.995646
+   ]
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    0.00575
+   ]
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "values": [
+    -0.055215
+   ]
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    0.011157
+   ]
+  }
+ ]
 }
