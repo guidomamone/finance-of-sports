@@ -46,7 +46,7 @@ window.RANKINGS_INDICE = {
   "mx-ligamx": [2025,1,null],
   "nl-eerstedivisie": [2025,10,20],
   "nl-eredivisie": [2025,14,18],
-  "no-1divisjon": [2025,1,16],
+  "no-1divisjon": [2018,2,16],
   "no-2divisjon": [2018,1,14],
   "no-eliteserien": [2025,4,16],
   "pe-liga1": [2024,1,18],

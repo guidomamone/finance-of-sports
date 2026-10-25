@@ -25,6 +25,9 @@ window.RANKINGS["no-1divisjon"] = {
       { id:"viking-no", revenue:8.325, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2018",
         mix:[["Comercial / Sponsors",4.299],["Estadio",0.843],["Televisión",1.032],["Venta de Jugadores",0.87],["Otros ingresos",1.282]] },
+      { id:"aalesund-no", revenue:4.787, reportType:"official_balance_sheet",
+        sourceId:"aalesund-no-aarsregnskap-aalesund-fotball-as-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.787]] },
     ],
   },
   2017: {

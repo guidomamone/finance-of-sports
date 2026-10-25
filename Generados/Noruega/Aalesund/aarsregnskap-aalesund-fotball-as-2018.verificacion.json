@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
  "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
- "generado": "2026-10-25T21:34:58.544Z",
+ "generado": "2026-10-25T21:37:11.868Z",
  "scriptHuella": "f1d4dee41de6",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "aalesund-no",
  "year": 2018,
  "escala": {
@@ -24,9 +24,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "33a73c3"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -50,6 +48,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
@@ -175,7 +178,7 @@
  "impuesto": [],
  "primerAnio": {
   "escalon": 3,
-  "estado": "pendiente",
+  "estado": "confirmado",
   "clave": "e7b9ea0db99b767ebb57395ffee4863cef9f775c",
   "rango": [
    341,

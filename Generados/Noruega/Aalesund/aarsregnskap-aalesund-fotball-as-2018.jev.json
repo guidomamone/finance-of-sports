@@ -1,0 +1,191 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
+ "generatedAt": "2026-10-25T21:36:54.896Z",
+ "rubrosHuella": "68c07f4cec6d282df876a77c03285684cee4aa1c",
+ "rubros": [
+  {
+   "label": "Avskrivning varige driftsmidler",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "wages_squad",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Driftsinntekter",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.7
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1123
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1023
+  }
+ ]
+}

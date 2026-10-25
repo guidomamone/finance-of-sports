@@ -1,82 +1,90 @@
 {
- "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
- "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
- "club": "aalesund-no",
- "year": 2018,
- "generatedAt": "2026-10-25T21:34:58.545Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Driftsinntekter",
-   "lado": "revenue",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    41.591465
-   ]
-  },
-  {
-   "label": "Varekostnad",
-   "lado": "expense",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    3.189119
-   ]
-  },
-  {
-   "label": "Lønninger",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Lønnskostnad\"",
-   "values": [
-    5.690818
-   ]
-  },
-  {
-   "label": "Arbeidsgiveravgift",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Lønnskostnad\"",
-   "values": [
-    0.843734
-   ]
-  },
-  {
-   "label": "Pensjonskostnader",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Lønnskostnad\"",
-   "values": [
-    0.095287
-   ]
-  },
-  {
-   "label": "Andre ytelser",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"Lønnskostnad\"",
-   "values": [
-    0.567861
-   ]
-  },
-  {
-   "label": "Avskrivning varige driftsmidler",
-   "lado": "expense",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    1.445907
-   ]
-  },
-  {
-   "label": "Annen driftskostnad",
-   "lado": "expense",
-   "page": 6,
-   "section": "estado",
-   "values": [
-    29.646338
-   ]
-  }
- ]
+  "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
+  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
+  "club": "aalesund-no",
+  "year": 2018,
+  "generatedAt": "2026-10-25T21:34:58.545Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Driftsinntekter",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        41.591465
+      ],
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "Varekostnad",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        3.189119
+      ],
+      "glosa": "Consumo de mercaderías"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        5.690818
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.843734
+      ],
+      "glosa": "Seguridad Social a cargo de la empresa"
+    },
+    {
+      "label": "Pensjonskostnader",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.095287
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Andre ytelser",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.567861
+      ],
+      "glosa": "Otras prestaciones sociales"
+    },
+    {
+      "label": "Avskrivning varige driftsmidler",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        1.445907
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        29.646338
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
 }

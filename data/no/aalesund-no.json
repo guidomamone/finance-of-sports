@@ -20,10 +20,59 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf"
+    },
+    {
+      "id": "aalesund-no-aarsregnskap-aalesund-fotball-as-2018",
+      "club_id": "aalesund-no",
+      "title": "Ålesund Fotball AS — aarsregnskap-aalesund-fotball-as-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf"
     }
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-12-31",
+      "currency": "NOK",
+      "source_id": "aalesund-no-aarsregnskap-aalesund-fotball-as-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2018-12-31"},
+      "revenue": [{"label":"Driftsinntekter","category":"undisclosed","subcategory":"lump_football_operations","amount":41.591465,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.189119,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-5.690818,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"first_team_staff","subcategory":"wages_squad","amount":-0.843734,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"first_team_staff","subcategory":"wages_squad","amount":-0.095287,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"first_team_staff","subcategory":"wages_squad","amount":-0.567861,"disclosure":"aggregated"},
+        {"label":"Avskrivning varige driftsmidler","category":"depreciation","subcategory":"depreciation","amount":-1.445907,"disclosure":"aggregated"},
+        {"label":"Annen driftskostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-29.646338,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.089348,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":41.591465,"expenses":41.479064,"net_result":1.201748},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Inntekt på investering i datterselskap","amount":0.221485},
+          {"label":"Annen renteinntekt","amount":0.604107},
+          {"label":"Annen finansinntekt","amount":0.925471},
+          {"label":"Nedskrivning av finansielle anleggsmidler","amount":-0.54583},
+          {"label":"Annen rentekostnad","amount":-0.115885},
+          {"label":"Annen finanskostnad","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Driftsinntekter",
+            "side": "revenue",
+            "amount": 41.591465,
+            "reason": "Claude 2026-10-26 (sesion): lineas 344-345: Driftsinntekter es el unico renglon de ingresos y la nota solo repite su importe: sin desglose",
+            "kind": "net_sales"
+          }
+        ],
+        "revenue_basis": "sales_total"
+      }
+    },
     {
       "fiscal_year": 2025,
       "period_end": "2025-12-31",

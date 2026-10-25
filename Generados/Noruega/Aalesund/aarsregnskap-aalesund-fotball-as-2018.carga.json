@@ -1,24 +1,161 @@
 {
  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
- "generado": "2026-10-25T05:40:41.516Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 5 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 5 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-25T21:37:13.431Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2018-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 16 ejercicio(s) con un solo perímetro (individual); 34 documento(s) mirados)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "aalesund-no",
+  "year": 2018,
+  "cierre": "2018-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Driftsinntekter",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 41.591465,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Varekostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.189119,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Lønninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -5.690818,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Arbeidsgiveravgift",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.843734,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Pensjonskostnader",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.095287,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Andre ytelser",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.567861,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Avskrivning varige driftsmidler",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.445907,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Annen driftskostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -29.646338,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "NOK",
+   "fxRef": "NOK@2018-12-31",
+   "sourceId": "aalesund-no-aarsregnskap-aalesund-fotball-as-2018",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 1.089348,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Inntekt på investering i datterselskap",
+     "value": 0.221485
+    },
+    {
+     "label": "Annen renteinntekt",
+     "value": 0.604107
+    },
+    {
+     "label": "Annen finansinntekt",
+     "value": 0.925471
+    },
+    {
+     "label": "Nedskrivning av finansielle anleggsmidler",
+     "value": -0.54583
+    },
+    {
+     "label": "Annen rentekostnad",
+     "value": -0.115885
+    },
+    {
+     "label": "Annen finanskostnad",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Driftsinntekter",
+     "lado": "revenue",
+     "importe": 41.591465,
+     "motivo": "Claude 2026-10-26 (sesion): lineas 344-345: Driftsinntekter es el unico renglon de ingresos y la nota solo repite su importe: sin desglose",
+     "tipo": "net_sales"
+    }
+   ],
+   "baseIngreso": "sales_total",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 41.591465,
+   "officialTotalExpenses": 41.479064,
+   "officialPAT": 1.201748
+  },
+  "source": {
+   "id": "aalesund-no-aarsregnskap-aalesund-fotball-as-2018",
+   "clubId": "aalesund-no",
+   "title": "Ålesund Fotball AS — aarsregnskap-aalesund-fotball-as-2018 (ejercicio 2018)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
  "reemplaza": false,
  "periodo": {
@@ -34,5 +171,306 @@
  },
  "clubId": "aalesund-no",
  "year": 2018,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2018-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 16 ejercicio(s) con un solo perímetro (individual); 34 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 14,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Driftsinntekter",
+   "page": 6,
+   "native": 41.591465,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 41.591465,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-26 (sesion): lineas 344-345: Driftsinntekter es el unico renglon de ingresos y la nota solo repite su importe: sin desglose",
+   "destino": "revenue",
+   "amountNative": 41.591465
+  },
+  {
+   "label": "Varekostnad",
+   "page": 6,
+   "native": 3.189119,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.189119,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Varekostnad (6 366 043) no tiene nota; en Valerenga la nota equivalente dice que es en esencia costo de eventos, pero aqui no se puede afirmar. Otros gastos. [Varekostnad 6 366 043 (L112)]",
+   "destino": "expense",
+   "amountNative": -3.189119
+  },
+  {
+   "label": "Lønninger",
+   "page": 18,
+   "native": 5.690818,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 5.690818,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.690818
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "page": 18,
+   "native": 0.843734,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.843734,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales con el sueldo: wages_squad. Note 4: 5 456 780 + 854 926 + 151 065 + 434 560 = 6 897 331. [Arbeidsgiveravgift 854 926 (L310)]",
+   "destino": "expense",
+   "amountNative": -0.843734
+  },
+  {
+   "label": "Pensjonskostnader",
+   "page": 18,
+   "native": 0.095287,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.095287,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pension con el sueldo: wages_squad. [Pensjonskostnader 151 065 (L311)]",
+   "destino": "expense",
+   "amountNative": -0.095287
+  },
+  {
+   "label": "Andre ytelser",
+   "page": 18,
+   "native": 0.567861,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.567861,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otras prestaciones, parte de Note 4 Lønnskostnader: wages_squad. [Andre ytelser 434 560 (L312)]",
+   "destino": "expense",
+   "amountNative": -0.567861
+  },
+  {
+   "label": "Avskrivning varige driftsmidler",
+   "page": 6,
+   "native": 1.445907,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.445907,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.445907
+  },
+  {
+   "label": "Annen driftskostnad",
+   "page": 6,
+   "native": 29.646338,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 29.646338,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -29.646338
+  },
+  {
+   "label": "Inntekt på investering i datterselskap",
+   "page": null,
+   "native": 0.221485,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "page": null,
+   "native": 0.604107,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "page": null,
+   "native": 0.925471,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Nedskrivning av finansielle anleggsmidler",
+   "page": null,
+   "native": -0.54583,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "page": null,
+   "native": -0.115885,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Lønnskostnad\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 41.591465,
+  "expSum": -41.479064,
+  "officialTotalRevenue": 41.591465,
+  "officialTotalExpenses": 41.479064,
+  "officialPAT": 1.201748,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1.201748,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 41.591465
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 41.479064
+  }
+ },
+ "liga": {
+  "valor": "no-1divisjon",
+  "fuente": "roster cacheado de \"2018 Norwegian First Division\" (tools/club-league-reference/no.json), coincidencia exacta \"Aalesund\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2018,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2018-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (3 de 3 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "NOK",
+   "fuente": "moneda de curso legal de Noruega (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "NOK@2018-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene NOK@2018-12-31 = 8.6885 (Tipo medio de referencia de Norges Bank al 2018-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "aalesund-no-aarsregnskap-aalesund-fotball-as-2018",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "no-1divisjon",
+   "fuente": "roster cacheado de \"2018 Norwegian First Division\" (tools/club-league-reference/no.json), coincidencia exacta \"Aalesund\"",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 7,
+  "metaFilas": 6,
+  "excluidas": 0
+ }
 }

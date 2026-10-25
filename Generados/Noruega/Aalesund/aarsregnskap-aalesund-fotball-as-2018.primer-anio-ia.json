@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
+ "clave": "e7b9ea0db99b767ebb57395ffee4863cef9f775c",
+ "generado": "2026-10-25T21:36:43.219Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "La carga es correcta. Las cuatro filas de nota (L822-L825) suman 7,197700 y reemplazan a Lønnskostnad (L347). Los financieros tienen el signo correcto, y el resultado da 1,201748, igual al Årsresultat impreso. Los subtotales y la línea de disposición (L364) no se cargaron, como corresponde."
+ }
+}

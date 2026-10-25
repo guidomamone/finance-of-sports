@@ -83,6 +83,45 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-19): no-1divisjon, verificado contra roster cacheado de "2025 Norwegian First Division" (tools/club-league-reference/no.json), coincidencia exacta "Aalesund".
 ```
 
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Driftsinntekter | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Varekostnad | pág. 6, precedente |
+| 2 | Lønninger | pág. 18, precedente |
+| 3 | Arbeidsgiveravgift | pág. 18, precedente |
+| 4 | Pensjonskostnader | pág. 18, precedente |
+| 5 | Andre ytelser | pág. 18, precedente |
+| 6 | Avskrivning varige driftsmidler | pág. 6, Jev 1 |
+| 7 | Annen driftskostnad | pág. 6, precedente |
+
+### Meta
+
+```text
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-18): perimetro = individual. perimetro-senales.mjs: el ejercicio 2018-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 16 ejercicio(s) con un solo perímetro (individual); 34 documento(s) mirados
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): no-1divisjon, verificado contra roster cacheado de "2018 Norwegian First Division" (tools/club-league-reference/no.json), coincidencia exacta "Aalesund".
+```
+
 ## Fuentes
 
 ### aalesund-no-aarsregnskap-aalesund-fotball-as-2025
@@ -91,4 +130,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aalesund-no-aarsregnskap-aalesund-fotball-as-2018
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
