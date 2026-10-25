@@ -228,10 +228,6 @@ export function faseEjercicio(ctx) {
       if (N && N.anterior.cierra && N.anterior.ingresos > 0) P.ancla = { club: clubId, anio: ant, ingreso: r6(N.anterior.ingresos / 1e6), moneda: m.currency, fuente: `${pdf}: columna del ejercicio anterior del estado de resultados`, nota: 'el informe del año anterior imprime solo el margen bruto; este trae el ingreso completo de ese ejercicio' };
     }
   } catch { /* sin estado NBB: no hay ancla */ }
-  if (P.ancla && process.argv.includes('--escribir')) {
-    const f = resolve(ROOT, 'Admin/registros/ingresos-ancla.jsonl');
-    if (!(existsSync(f) ? readFileSync(f, 'utf8') : '').split('\n').some((l) => l && JSON.parse(l).club === P.ancla.club && JSON.parse(l).anio === P.ancla.anio)) appendFileSync(f, JSON.stringify(P.ancla) + '\n');
-  }
   const bi = baseDeIngreso({ lineas: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative })), sinDesglose, documento: pdf, totalRevenue: T.officialTotalRevenue, sourceId });
   if (bi && bi.base === 'gross_margin') P.avisos.push('ingresos: el documento imprime solo el margen bruto (ya neto de costos), no los ingresos; se marca gross_margin. Si el documento imprime también compras y servicios (60, 61 o 60/61), el ingreso se reconstruye como margen + compras y servicios');
   P.ejercicio = {

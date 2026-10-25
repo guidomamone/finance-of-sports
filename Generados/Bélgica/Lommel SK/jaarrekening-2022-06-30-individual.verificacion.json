@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
- "generado": "2026-10-19T14:54:29.038Z",
+ "generado": "2026-10-25T17:23:03.878Z",
+ "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "lommelsk-be",
  "year": 2022,
@@ -36,6 +37,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 2.26023; el sitio tiene 2.26023"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2022: 1.906439 en este documento y 1.906439 en jaarrekening-2023-06-30-individual.pdf (columna del año anterior)"
@@ -44,16 +50,6 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 2.26023 en jaarrekening-2021-06-30-individual-correction.pdf y 2.26023 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
@@ -95,6 +91,14 @@
    "origen": "estado"
   },
   {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 4.523697,
+   "pagina": 7,
+   "linea": 244,
+   "origen": "estado"
+  },
+  {
    "etiqueta": "Andere bedrijfskosten",
    "lado": "gasto",
    "M": 0.007836,
@@ -108,22 +112,6 @@
    "M": 0.019352,
    "pagina": 7,
    "linea": 249,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
-   "lado": "gasto",
-   "M": 4.390472,
-   "pagina": 7,
-   "linea": 314,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Afschrijvingen materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.133225,
-   "pagina": 7,
-   "linea": 346,
    "origen": "estado"
   }
  ],

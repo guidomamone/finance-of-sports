@@ -30,3 +30,9 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.pdf` (sourceId `lommelsk-be-jaarrekening-2023-06-30-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf` (sourceId `lommelsk-be-jaarrekening-2024-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2024 desde `Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf` (sourceId `lommelsk-be-jaarrekening-2024-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2024 desde `Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf` (sourceId `lommelsk-be-jaarrekening-2024-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2024 desde `Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf` (sourceId `lommelsk-be-jaarrekening-2024-06-30-individual`).

@@ -141,7 +141,8 @@ export function escribir(P) {
   // la evidencia de carga (cabecera del año, nota de cada fila, ajustes, liga) va a Admin/carga-clubes/<clubId>.md: entra en
   // el snapshot para que un P0/P1 de la auditoría también lo revierta (y lo borre si lo creó esta carga).
   const evRel = EV.rutaRel(id);
-  const extraRev = [...extra, evRel];
+  const ANCLAS = 'Admin/registros/ingresos-ancla.jsonl';
+  const extraRev = [...extra, evRel, ...(P.ancla ? [ANCLAS] : [])];
   const snap = snapshot(extraRev); const escritos = [];
   try {
     let ev = EV.leer(id);
@@ -270,6 +271,12 @@ export function escribir(P) {
     // "POSIBLEMENTE DENTRO DE OTRO RUBRO": la misma escalera de tools/dentro-de-otro.mjs, sobre el club
     // entero y con el año recién escrito: el año nuevo nace con sus marcas y un año viejo gana o pierde las suyas si este año le cambia el
     // precedente. Antes de publicar, así un P0/P1 lo revierte todo junto.
+    // EL INGRESO REAL DEL AÑO ANTERIOR DE MARGEN BRUTO (`P.ancla`, de cargar-ejercicio.mjs): una línea por club-año, sin repetir; la usa estimar.mjs al publicar. Va acá y no en la propuesta
+    // porque cargar.mjs le pasa un argv limpio a las fases (un `--escribir` leído allá nunca llega) y porque así un P0/P1 de la auditoría también la revierte.
+    if (P.ancla) {
+      const fa = resolve(ROOT, ANCLAS); const previas = existsSync(fa) ? readFileSync(fa, 'utf8').split('\n').filter(Boolean) : [];
+      if (!previas.some((l) => { const a = JSON.parse(l); return a.club === P.ancla.club && a.anio === P.ancla.anio; })) { appendFileSync(fa, JSON.stringify(P.ancla) + '\n'); escritos.push(ANCLAS); console.log(`Ancla del ingreso de ${P.ancla.club} ${P.ancla.anio} anotada en ${ANCLAS}.`); }
+    }
     const marcas = marcarClub(id);
     if (marcas.cambio) for (const r of [rutaJson(id), dataRel]) if (!escritos.includes(r)) escritos.push(r);
     if (marcas.antes || marcas.despues) console.log(`"Posiblemente dentro de otro rubro" (tools/dentro-de-otro.mjs): marcas del club ${marcas.antes} → ${marcas.despues}${marcas.lineas.length ? `\n  ${marcas.lineas.join('\n  ')}` : ''}`);

@@ -1,70 +1,55 @@
 {
-  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
-  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.pdf",
-  "club": "lommelsk-be",
-  "year": 2022,
-  "generatedAt": "2026-10-19T14:16:59.122Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Brutomarge (+)/(-)",
-      "lado": "revenue",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        1.906439
-      ],
-      "glosa": "Margen bruto (+)/(-)"
-    },
-    {
-      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        8.4832
-      ],
-      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
-    },
-    {
-      "label": "Andere bedrijfskosten",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.007836
-      ],
-      "glosa": "Otros gastos de explotación"
-    },
-    {
-      "label": "Niet-recurrente bedrijfskosten",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.019352
-      ],
-      "glosa": "Gastos de explotación no recurrentes"
-    },
-    {
-      "label": "Afschrijvingen immateriële vaste activa (spelers)",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        4.390472
-      ],
-      "glosa": "Amortización del inmovilizado intangible (jugadores)"
-    },
-    {
-      "label": "Afschrijvingen materiële vaste activa",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.133225
-      ],
-      "glosa": "Amortización del inmovilizado material"
-    }
-  ]
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.pdf",
+ "club": "lommelsk-be",
+ "year": 2022,
+ "generatedAt": "2026-10-25T17:23:03.878Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    1.906439
+   ]
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    8.4832
+   ]
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    4.523697
+   ]
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    0.007836
+   ]
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "values": [
+    0.019352
+   ]
+  }
+ ]
 }

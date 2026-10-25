@@ -107,7 +107,7 @@ alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (
 ### Ingresos
 
 ```text
-2024: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2024: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -137,14 +137,8 @@ Generados/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.categorias.json 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): be-challengerproleague, verificado contra roster cacheado de "2023–24 Challenger Pro League" (tools/club-league-reference/be.json), coincidencia única por palabras "Lommel" = "Lommel SK".
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
 ## 2023

@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-19T14:16:59.715Z",
+ "generado": "2026-10-25T17:23:03.888Z",
+ "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "rwdm-be",
  "year": 2023,
@@ -36,6 +37,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 1.08213; el sitio tiene 1.08213"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2023: 1.628714 en este documento y 1.628714 en jaarrekening-2024-06-30-individual.pdf (columna del año anterior)"
@@ -44,16 +50,6 @@
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 1.08213 en jaarrekening-2022-06-30-individual.pdf y 1.08213 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [

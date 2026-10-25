@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1101 — cargar-escribir.mjs, cargar-ejercicio.mjs: la ancla del ingreso del año anterior de margen bruto se anota al escribir [455 · cargar-escribir.mjs, cargar-ejercicio.mjs]
+- La ancla (`Admin/registros/ingresos-ancla.jsonl`) se proponía pero nunca se anotaba: `cargar.mjs` le pasa un argv limpio a las fases y la condición `--escribir` de `cargar-ejercicio.mjs` no se cumplía. Ahora la anota `escribir()` (una línea por club-año, sin repetir, y la revierte un P0/P1 de la auditoría).
+- Probado con Lommel 2024: la línea se anota una sola vez y una segunda carga no la duplica. Recarga de Dender 2024 (margen bruto, sin ancla posible), RWDM 2023 (idéntico) y Lommel 2022 (mismos totales; la amortización queda entera porque la regla del 630 por la nota no parte un año ya publicado).
+- Medición: 1 diferencia, explicada (lote completo: idéntico).
+
 ## Versión 1100 — alta-club-analisis.mjs, alta-club.mjs, cargar-inicio.mjs, cargar-escribir.mjs, audit.js, audit-chequeos-2.js: moneda legado sin preguntar, Wikipedia local en la compuerta y chequeo de estimados repetidos [455 · alta-club-analisis.mjs, cargar-inicio.mjs, cargar-escribir.mjs, audit.js]
 - Un ejercicio anterior al cambio de moneda cuyo documento habla sobre todo en la moneda vieja se carga en ella (kunas, liras…), con su tipo de cambio a USD del cierre y sin preguntar ni frenar (decisión de Guido); `HRK` entra a `CURRENCY_META` con su paridad fija al euro. La compuerta de estadio y sponsor de `cargar` usa también la Wikipedia del idioma del club (`--local`); regla en `Admin/PIPELINE.md`.
 - `audit.js` suma `estimado-repetido` (P1): un club con dos estimaciones en la misma liga-año, aunque la tool misma lo repita. Dato nuevo: lista de Tottenham 2019 corregida a mano; listas de la 1ª División danesa 2018 y 2021 a 2025.

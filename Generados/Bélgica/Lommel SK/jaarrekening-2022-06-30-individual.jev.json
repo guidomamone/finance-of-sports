@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
- "generatedAt": "2026-10-19T14:23:33.832Z",
- "rubrosHuella": "ffe278777d75fa5e29bf4f52c5fdaefd5e1475a2",
+ "generatedAt": "2026-10-25T17:23:04.377Z",
+ "rubrosHuella": "5f0cb47ae5f2bbc6335a43df1622a029be6dde3b",
  "rubros": [
   {
    "label": "Brutomarge (+)/(-)",
@@ -22,6 +22,15 @@
    "desdeCache": true
   },
   {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
    "label": "Andere bedrijfskosten",
    "lado": "expense",
    "page": 7,
@@ -37,24 +46,6 @@
    "section": "estado",
    "choice": "exceptional_items",
    "confidence": 0.92,
-   "desdeCache": true
-  },
-  {
-   "label": "Afschrijvingen immateriële vaste activa (spelers)",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "choice": "player_amortisation",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Afschrijvingen materiële vaste activa",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "choice": "depreciation",
-   "confidence": 1,
    "desdeCache": true
   }
  ]
