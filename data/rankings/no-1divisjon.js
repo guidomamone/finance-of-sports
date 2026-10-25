@@ -11,7 +11,9 @@ window.RANKINGS["no-1divisjon"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 16,
+    sinDato: ["aalesund-no"],
+    wiki: {"t":"2024 Norwegian First Division","lang":"en","at":"2026-10-25","n":16},
     clubs: [
       { id:"valerenga-no", revenue:6.925, reportType:"official_balance_sheet",
         sourceId:"valerenga-no-aarsregnskap-valerenga-fotball-as-2024",

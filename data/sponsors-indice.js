@@ -1278,6 +1278,7 @@ window.SPONSORS_INDICE = [
   ["indesit","Indesit",["c"]],
   ["indigo-residential","Indigo Residential",["c"]],
   ["indigo-residential-star-platforms-ryebridge","Indigo Residential Star Platforms Ryebridge",["c"]],
+  ["induform","Induform",["c"]],
   ["industria-lavorazione-carni-ovine","Industria Lavorazione Carni Ovine",["c"]],
   ["iner-energia","Iner Energía",["c"]],
   ["infinite-athlete","Infinite Athlete",["c"]],

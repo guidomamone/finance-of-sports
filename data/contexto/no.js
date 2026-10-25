@@ -5,6 +5,7 @@ window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'aalesund-no': {
     2018: {"estadio":"Color Line Stadion","capacidad":10778,"temporada":"2018 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356915016"},
+    2024: {"estadio":"Color Line Stadion","capacidad":10778,"sponsor":"Sparebanken Møre","marca":"Umbro","temporada":"2024 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1348023331"},
     2025: {"estadio":"Color Line Stadion","capacidad":10778,"sponsor":"Sparebanken Møre","marca":"Umbro","temporada":"2025 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378434342"},
   },
   'fredrikstad-no': {

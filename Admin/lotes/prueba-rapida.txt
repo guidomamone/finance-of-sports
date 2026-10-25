@@ -97,10 +97,12 @@ Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf
 Clubes/Suiza/Basel/geschaeftsbericht-2017.pdf
 Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf
 # === AUTOMÁTICO: casos raros (un ajuste manual, un freno o una respuesta de la cola que no fue «aceptar»; el más viejo y el más nuevo de cada clase; no se edita) ===
+# clase: ajuste:anio
+Clubes/Italia/Lazio/Lazio-bilancio-1999-00.pdf
+Clubes/Portugal/Paços de Ferreira/contas_2425.pdf
 # clase: ajuste:categoria
 Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf
 # clase: ajuste:cierre
-Clubes/Italia/Lazio/Lazio-bilancio-1999-00.pdf
 Clubes/Brasil/Goias/demonstracoes-contabeis-2020.pdf
 # clase: ajuste:fila
 Clubes/Italia/Lazio/Lazio-bilancio-2000-01.pdf
@@ -142,8 +144,6 @@ Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.pdf
 Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.pdf
 # clase: freno:un importe entre paréntesis con un espacio antes del cierre, «(4,892,287 )», se lee en unidades y no en miles
 Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.pdf
-# clase: ajuste:anio
-Clubes/Portugal/Paços de Ferreira/contas_2425.pdf
 # clase: ajuste:estado
 Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.pdf
 # clase: ajuste:suma-con

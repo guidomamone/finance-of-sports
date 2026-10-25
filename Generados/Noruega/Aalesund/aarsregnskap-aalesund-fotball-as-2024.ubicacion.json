@@ -1,0 +1,285 @@
+{
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.pdf",
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.md",
+ "mdSha1": "9051111247bc244a94add7e6198f75c9ea22e56b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T23:18:14.683Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    100,
+    130
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    145,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    186,
+    214
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    320,
+    345
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    356,
+    380
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    391,
+    413
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    424,
+    425
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    480,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    492,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    500,
+    502
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    511,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    524,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    543,
+    549
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    551,
+    555
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    557,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    573,
+    578
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    588,
+    600
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    610,
+    620
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    626,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    649,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    657,
+    660
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    664,
+    668
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    670,
+    674
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 17,
+   "lineas": [
+    678,
+    685
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    697,
+    703
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 18,
+   "lineas": [
+    707,
+    715
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 18,
+   "lineas": [
+    719,
+    722
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 20,
+   "lineas": [
+    768,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 20,
+   "lineas": [
+    772,
+    780
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b8"
+ ],
+ "notas_gastos": [
+  "b9"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, misma cuenta que b4; importes en coronas enteras, p.ej. SUM EIENDELER 34 474 912)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el resultatregnskap de las páginas 8 (b4, versión firmada del informe anual) y se deja afuera el de la página 2 (b1, copia de Brønnøysund)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 y b4 parecen ser el mismo estado de resultados de Ålesund Fotball AS impreso dos veces.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Overførsel iht. avtale' (b11, transferencia a AaFK según acuerdo) por no desglosar un renglón del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Overførsel iht. avtale",
+   "texto": "Es un importe de la nota de partes relacionadas que podría estar incluido en otros gastos operativos, pero no abre un renglón explícitamente.",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo hay estados individuales de Ålesund Fotball AS (incluye fusión con AaFK Sponsorservice AS en 2024). b4 es la cuenta de resultados; b1 duplicado. Nota 1 (b8) desglosa ingresos por ventas; Nota 3 (b9) los gastos de personal. Ganancia de 4.138.653 por venta de Tango 2012 mencionada en texto (pág. 17)."
+}

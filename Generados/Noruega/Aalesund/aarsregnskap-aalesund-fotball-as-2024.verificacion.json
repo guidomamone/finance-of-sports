@@ -1,0 +1,245 @@
+{
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.pdf",
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.md",
+ "generado": "2026-10-25T23:21:26.808Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "aalesund-no",
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2024-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 16 ejercicio(s) con un solo perímetro (individual); 34 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.pdf",
+   "campo": "fila",
+   "valor": "-969.490",
+   "linea": 336,
+   "etiqueta": "Nedskrivning av andre finansielle omløpsmidler",
+   "lado": "financiero",
+   "reemplaza": "Nedskrivning av andre finansielle omløpsmidler",
+   "motivo": "gasto financiero impreso bajo Sum finanskostnader (997.259): resta del financiero; con él y Annen rentekostnad el neto es 4.809.395 y cierra con el resultado 455.038",
+   "evidencia": ".md L120-123",
+   "causa": "regla-escrita",
+   "autor": "Claude",
+   "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.pdf",
+   "campo": "fila",
+   "valor": "-27.769",
+   "linea": 337,
+   "etiqueta": "Annen rentekostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen rentekostnad",
+   "motivo": "gasto financiero impreso bajo Sum finanskostnader (997.259): resta del financiero; cierra con el resultado 455.038",
+   "evidencia": ".md L121",
+   "causa": "regla-escrita",
+   "autor": "Claude",
+   "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.pdf",
+   "campo": "anio",
+   "valor": "2024",
+   "linea": null,
+   "motivo": "el período del documento es 01.01.2024 a 31.12.2024 (L43); las fechas de 2025 son la del depósito (28.02.2025 y 08.07.2025)",
+   "evidencia": ".md L43,L71",
+   "causa": "lectura-del-documento",
+   "autor": "Claude",
+   "fecha": "2026-10-25"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "62.129059 = 62.129059",
+   "suma": 62.12905899999999,
+   "impreso": 62.129059
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "66.284155 = 66.284155",
+   "suma": 66.284155,
+   "impreso": 66.284155
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 8.049116928532385e-15
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 62.129059 en este documento y 62.129059 en aarsregnskap-aalesund-fotball-as-2025.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Salgsinntekter\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Nedskrivning av andre finansielle omløpsmidler\" (financiero) -969.490, en lugar de \"Nedskrivning av andre finansielle omløpsmidler\" (2026-10-25, gasto financiero impreso bajo Sum finanskostnader (997.259): resta del financiero; con él y Annen rentekostnad el neto es 4.809.395 y cierra con el resultado 455.038)",
+  "ajuste manual: fila \"Annen rentekostnad\" (financiero) -27.769, en lugar de \"Annen rentekostnad\" (2026-10-25, gasto financiero impreso bajo Sum finanskostnader (997.259): resta del financiero; cierra con el resultado 455.038)",
+  "duda de localizar que no afecta la carga: b1 y b4 parecen ser el mismo estado de resultados de Ålesund Fotball AS impreso dos veces.",
+  "duda de localizar que no afecta la carga: Es un importe de la nota de partes relacionadas que podría estar incluido en otros gastos operativos, pero no abre un renglón explícitamente.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 62.129059,
+  "gastos": 66.284155,
+  "financiero": 4.809395,
+  "impuesto": 0.199261,
+  "resultadoImpreso": 0.455038,
+  "resultadoParaCargar": 0.455038,
+  "resultadoFinal": null,
+  "lecturaSignos": "impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Salgsinntekter",
+   "lado": "ingreso",
+   "M": 58.461725,
+   "pagina": 8,
+   "linea": 322,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre driftsinntekter",
+   "lado": "ingreso",
+   "M": 3.667334,
+   "pagina": 8,
+   "linea": 323,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 5.103577,
+   "pagina": 8,
+   "linea": 325,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 5.87314,
+   "pagina": 13,
+   "linea": 494,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 0.990694,
+   "pagina": 13,
+   "linea": 495,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 0.164773,
+   "pagina": 13,
+   "linea": 496,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre ytelser",
+   "lado": "gasto",
+   "M": 0.510002,
+   "pagina": 13,
+   "linea": 497,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning varige driftsmidler og immatrielle eiendeler",
+   "lado": "gasto",
+   "M": 4.478254,
+   "pagina": 8,
+   "linea": 327,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 49.163715,
+   "pagina": 8,
+   "linea": 328,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Inntekt på investering i datterselskap",
+   "M": 0,
+   "linea": 331
+  },
+  {
+   "etiqueta": "Renteinntekt fra foretak i samme konsern",
+   "M": 0.45,
+   "linea": 332
+  },
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.171575,
+   "linea": 333
+  },
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 5.185079,
+   "linea": 334
+  },
+  {
+   "etiqueta": "Nedskrivning av andre finansielle omløpsmidler",
+   "M": -0.96949,
+   "linea": 336
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": -0.027769,
+   "linea": 337
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skattekostnad på ordinært resultat",
+   "M": -0.199261,
+   "linea": 341
+  }
+ ]
+}
