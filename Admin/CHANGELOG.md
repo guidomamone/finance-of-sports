@@ -22,6 +22,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Versión 1112 — Aalesund 2024 cargado (hueco ejercicio-sin-rastro) [aalesund-no]
 - Aalesund 2024 (lote 154): dos ajustes de signo en el financiero (gastos «Nedskrivning» y «Annen rentekostnad» restan; cierra con el resultado 455.038 NOK) y el año 2024 (el documento es de 01.01 a 31.12.2024; 2025 es el depósito). Liga no-1divisjon 2024 con dos fuentes (Wikipedia y RSSSF) y su línea del auditor (Contabile AS, sin salvedades).
+- Ross County: Roy MacGregor, chairman desde 2010-06-30 (Companies House, dato de Guido) en `data/gestiones/gb.js`; el caso de la cola pasa de `preguntar-club` a `aceptar`.
 - Medición: sin cambio de tools.
 
 ## Versión 1111 — Excelsior 2020 cargado (hueco ejercicio-sin-rastro) y calibración de la cola: ocho segundas revisiones de cierre-por-pais alta [excelsior-nl]

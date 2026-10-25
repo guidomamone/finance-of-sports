@@ -193,4 +193,8 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Mark Palios', corto:'Palios', cargo:'Chairman', desde:'2014-08-11', hasta:null,
       fuente:'https://en.wikipedia.org/wiki/Mark_Palios', confirmada:true },
   ],
+  'rosscounty-gb': [
+    { nombre:'Roy MacGregor', corto:'MacGregor', cargo:'Chairman', desde:'2010-06-30', hasta:null,
+      fuente:'https://find-and-update.company-information.service.gov.uk/', confirmada:true },
+  ],
 });
