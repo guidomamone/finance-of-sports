@@ -40,6 +40,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync, unlinkSync } from
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
+import { tipoSinDesglose } from './tipo-sin-desglose.js';
 import * as EV from './evidencia-club.mjs';
 import { rutaData } from './data-clubes.js';
 
@@ -155,7 +156,7 @@ function proponer({ carpeta, anio, A, clubId, club, alta }) {
   if (Math.abs(tax) > 1e-6) extraRows.push({ label: `Налог на прибыль и прочее (2300 − 2400)`, value: tax });
   const presentes = new Set([...rev, ...exp].map((l) => l.normalizedCategory)); const enLump = (en) => presentes.has(en);
   const incluidoEn = Object.fromEntries(Object.entries(INCLUIDO).filter(([k, en]) => !presentes.has(k) && enLump(en)).map(([k, en]) => [k, { en, posible: true }]));
-  const sinDesglose = [...rev, ...exp].filter((l) => /^lump_football_operations/.test(l.normalizedCategory)).map((l) => ({ renglon: l.rawLabel, lado: l.amountNative < 0 ? 'gasto' : 'ingreso', importe: Math.abs(l.amountNative), motivo: 'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)' }));
+  const sinDesglose = [...rev, ...exp].filter((l) => /^lump_football_operations/.test(l.normalizedCategory)).map((l) => ({ renglon: l.rawLabel, lado: l.amountNative < 0 ? 'gasto' : 'ingreso', importe: Math.abs(l.amountNative), motivo: 'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)', tipo: tipoSinDesglose(l.rawLabel, l.amountNative < 0 ? 'expenses' : 'revenue') }));
   const md = `${carpeta}/bfo-${anio}-datos.md`;
   return {
     pdf: `${carpeta}/bfo-${anio}-datos.json`, md, reemplaza: false, ajustes: [], escalon2: [...Object.keys(T), ...(F6 ? ['formulario 6'] : [])],

@@ -47,7 +47,7 @@ const diccionario = [
   ...Object.entries(C.FINANCIERO).map(([a, b]) => D(`years[].financial.${b}`, 'number|null', { net_interest: 'Resultado financiero neto.', tax: 'Impuesto a las ganancias.', profit_on_player_sales: 'Resultado por venta de jugadores.', asset_sales: 'Resultado por venta de activos.', gross_debt: 'Deuda financiera bruta.', cash: 'Caja y equivalentes.', staff_cost: 'Costo de personal (cuando la fuente lo separa).' }[b], a)),
   ...Object.entries(C.TOTALES).map(([a, b]) => D(`years[].official_totals.${b}`, 'number|null', { revenue: 'Total de ingresos impreso en el documento.', expenses: 'Total de gastos impreso en el documento.', net_result: 'Resultado del ejercicio impreso en el documento.' }[b], a)),
   D('years[].adjustments.extra_rows[]', 'object', 'Filas que el documento imprime y no entran en las líneas: {label, amount|null}.', 'extraRows'),
-  D('years[].adjustments.no_breakdown[]', 'object', 'Renglones que el documento no abre, con el motivo: {line, side, amount, reason}.', 'sinDesglose'),
+  D('years[].adjustments.no_breakdown[]', 'object', 'Renglones que el documento no abre, con el motivo: {line, side, amount, reason, kind?}; kind (opcional) dice qué es la línea: gross_margin (margen bruto, ya neto de costos), net_sales (ventas totales), cost_of_sales o other.', 'sinDesglose'),
   D('years[].adjustments.included_in', 'object', 'Categorías cuyo importe va incluido en otra, por categoría: texto o {in, possible, by}.', 'incluidoEn'),
   D('budget_overlay.<año>', 'object', 'Presupuesto del año (cuando existe), con el mismo esquema de líneas.', 'presupuestoOverlayByYear'),
 ];

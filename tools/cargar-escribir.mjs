@@ -195,7 +195,7 @@ export function escribir(P) {
     const ajTxt = (P.ajustes || []).map((a) => `${y}: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, ${a.autor} ${a.fecha}): ${a.campo}${a.valor ? ` = ${a.valor}` : ''}. ${String(a.motivo).replace(/\n/g, ' ')}`);
     ev = EV.agregarTexto(ev, y, 'Meta', [...ajTxt, `tools/cargar.mjs (${HOY}). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.`,
       ...(M.incluidoEn ? ['incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.'] : []),
-      ...(M.sinDesglose ? ['sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.'] : [])]);
+      ...(M.sinDesglose ? ['sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».'] : [])]);
     const metaJ = {
       // tramo corto de transición (menos de 12 meses, ver «TRAMO CORTO» en proponer): sus meses, para sacarlo del ranking, la mediana y los Δ
       ...(P.transicion && P.transicion.meses < 12 ? { periodMonths: P.transicion.meses } : {}),
@@ -204,7 +204,7 @@ export function escribir(P) {
       profitOnPlayerSales: r6(M.profitOnPlayerSales || 0), assetSales: 0, netInterest: r6(M.netInterest ?? null), tax: r6(M.tax ?? null),
       ...(M.extraRows ? { extraRows: M.extraRows.map((x) => ({ label: x.label, value: r6(x.value ?? null) })) } : {}),
       ...(M.incluidoEn ? { incluidoEn: M.incluidoEn } : {}),
-      ...(M.sinDesglose ? { sinDesglose: M.sinDesglose.map((x) => ({ renglon: x.renglon, lado: x.lado, importe: r6(x.importe), motivo: x.motivo })) } : {}),
+      ...(M.sinDesglose ? { sinDesglose: M.sinDesglose.map((x) => ({ renglon: x.renglon, lado: x.lado, importe: r6(x.importe), motivo: x.motivo, ...(x.tipo ? { tipo: x.tipo } : {}) })) } : {}),
       grossDebt: r6(M.grossDebt ?? null), cash: r6(M.cash ?? null), ...(M.staffCost != null ? { staffCost: r6(M.staffCost) } : {}),
       officialTotalRevenue: r6(M.officialTotalRevenue ?? null), officialTotalExpenses: r6(M.officialTotalExpenses ?? null), officialPAT: r6(M.officialPAT ?? null),
     };

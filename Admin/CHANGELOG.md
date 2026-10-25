@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1085 — marca s/d y notas sobre el club (base de 447, 454 y 452) [447 · 454 · 452 · bfo-rusia.mjs, cargar-ejercicio.mjs, cargar-escribir.mjs, json-datos.mjs, tipo-sin-desglose.js]
+
+- Las celdas que el documento no abre se ven `s/d` (inglés `n/d`) con bocadillo y asterisco a «Notas sobre este club», armado por ejercicio con plantillas es/en desde `sinDesglose`. `no_breakdown` suma `kind` (opcional; schema, `json-datos.mjs`, paquete exportable) y `fos sin-desglose-tipo` lo completó en 136 clubes (76 líneas agregadas, 494 tipos). `cargar-ejercicio.mjs` y `bfo-rusia.mjs` lo escriben al cargar; `cargar-escribir.mjs` ya no lo descarta. Los puntos 447, 454 y 452 siguen abiertos (Guido los cierra).
+- Medición: lote completo, `cargar` idéntico; `audit`, `escribir` y el schema cambian como se espera (las versiones viejas de las tools rechazaban el campo nuevo); 10 diferencias, todas explicadas.
+
 ## Versión 1084 — i18n: textos de la pantalla que se veían en castellano en inglés; audit.js texto-sin-traducir [audit-chequeos-5.js, audit.js]
 
 - Se traducen: Resultado neto, Intereses netos, Impuestos, Ganancia por venta de jugadores, Venta de activos, Deuda bruta, Caja, Deuda neta, Salarios / Ingresos (`data/site-labels.js`), los títulos de los gráficos, «% del total», los rótulos de Comparar, el texto de Resultados, el selector de tipo del formulario y las salvedades de las fuentes. Quedan en castellano a propósito los rótulos textuales del presupuesto de un club (cards de torneos) y los nombres de gestión que vienen de los datos.

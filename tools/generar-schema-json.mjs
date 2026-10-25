@@ -78,7 +78,7 @@ const schema = {
       financial: objeto(solo(C.FINANCIERO, numONull)), official_totals: objeto(solo(C.TOTALES, numONull)),
       adjustments: objeto({
         extra_rows: { type: 'array', items: objeto({ label: texto, amount: numONull }, ['label', 'amount']) }, // amount null = la fuente no lo informa (103 filas)
-        no_breakdown: { type: 'array', items: objeto({ line: texto, side: texto, amount: num, reason: texto }, ['line', 'side', 'amount', 'reason']) },
+        no_breakdown: { type: 'array', items: objeto({ line: texto, side: texto, amount: num, reason: texto, kind: { type: 'string', enum: ['gross_margin', 'net_sales', 'cost_of_sales', 'other'] } }, ['line', 'side', 'amount', 'reason']) },
         included_in: { type: 'object', additionalProperties: { oneOf: [texto, objeto({ in: texto, possible: { type: 'boolean' }, by: texto }, ['in'])] } },
       }),
     }, ['fiscal_year', 'period_end']),

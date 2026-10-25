@@ -39,7 +39,8 @@ export const DISCLOSURE = ['aggregate', 'aggregated', 'aggregated_residual', 'de
 const LINEA = { rawLabel: 'label', normalizedCategory: 'subcategory', amountNative: 'amount', disclosureLevel: 'disclosure', items: 'items' };
 const FUENTE = { id: 'id', clubId: 'club_id', title: 'title', type: 'type', reliability: 'reliability', url: 'url', publicNote: 'public_note', documento: 'document' };
 const GESTION = { nombre: 'name', firstYear: 'first_year', lastYear: 'last_year' };
-const SIN_DESGLOSE = { renglon: 'line', lado: 'side', importe: 'amount', motivo: 'reason' };
+const SIN_DESGLOSE = { renglon: 'line', lado: 'side', importe: 'amount', motivo: 'reason', tipo: 'kind' }; // `tipo`/`kind` es opcional: qué es la línea (tools/tipo-sin-desglose.js)
+export const TIPOS_SIN_DESGLOSE = ['gross_margin', 'net_sales', 'cost_of_sales', 'other'];
 const INCLUIDO = { en: 'in', posible: 'possible', por: 'by' };
 const FINANCIERO = { profitOnPlayerSales: 'profit_on_player_sales', assetSales: 'asset_sales', netInterest: 'net_interest', tax: 'tax', grossDebt: 'gross_debt', cash: 'cash', staffCost: 'staff_cost' };
 const TOTALES = { officialTotalRevenue: 'revenue', officialTotalExpenses: 'expenses', officialPAT: 'net_result' };
@@ -317,7 +318,7 @@ export function validar(j, { categorias = null, externos = null } = {}) {
     if (has(y, 'adjustments') && claves(y.adjustments, Object.values(META_ADJ), `${r}.adjustments`)) {
       const a = y.adjustments;
       if (has(a, 'extra_rows')) (Array.isArray(a.extra_rows) ? a.extra_rows : (err(`${r}.adjustments.extra_rows`, 'tiene que ser una lista'), [])).forEach((x, i) => { const rr = `${r}.adjustments.extra_rows[${i}]`; if (claves(x, ['label', 'amount'], rr, ['label', 'amount'])) { if (typeof x.label !== 'string') err(rr, 'label tiene que ser un texto'); if (x.amount !== null && !ES_NUM(x.amount)) err(rr, 'amount número o null'); } });
-      if (has(a, 'no_breakdown')) (Array.isArray(a.no_breakdown) ? a.no_breakdown : (err(`${r}.adjustments.no_breakdown`, 'tiene que ser una lista'), [])).forEach((x, i) => { const rr = `${r}.adjustments.no_breakdown[${i}]`; if (claves(x, Object.values(SIN_DESGLOSE), rr, Object.values(SIN_DESGLOSE))) { for (const k of ['line', 'side', 'reason']) if (typeof x[k] !== 'string') err(rr, `${k} tiene que ser un texto`); if (!ES_NUM(x.amount)) err(rr, 'amount tiene que ser un número finito'); } });
+      if (has(a, 'no_breakdown')) (Array.isArray(a.no_breakdown) ? a.no_breakdown : (err(`${r}.adjustments.no_breakdown`, 'tiene que ser una lista'), [])).forEach((x, i) => { const rr = `${r}.adjustments.no_breakdown[${i}]`; if (claves(x, Object.values(SIN_DESGLOSE), rr, ['line', 'side', 'amount', 'reason'])) { if (has(x, 'kind') && !TIPOS_SIN_DESGLOSE.includes(x.kind)) err(rr, `kind tiene que ser uno de ${TIPOS_SIN_DESGLOSE.join(', ')}`); for (const k of ['line', 'side', 'reason']) if (typeof x[k] !== 'string') err(rr, `${k} tiene que ser un texto`); if (!ES_NUM(x.amount)) err(rr, 'amount tiene que ser un número finito'); } });
       if (has(a, 'included_in') && claves(a.included_in, Object.keys(a.included_in), `${r}.adjustments.included_in`)) for (const [cat, v] of Object.entries(a.included_in)) { const rr = `${r}.adjustments.included_in.${cat}`; if (typeof v === 'string') continue; if (claves(v, Object.values(INCLUIDO), rr, ['in'])) { if (typeof v.in !== 'string') err(rr, 'in tiene que ser un texto'); if (has(v, 'possible') && typeof v.possible !== 'boolean') err(rr, 'possible tiene que ser true o false'); if (has(v, 'by') && typeof v.by !== 'string') err(rr, 'by tiene que ser un texto'); } }
     }
   });

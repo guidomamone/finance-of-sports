@@ -5,6 +5,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve, basename, dirname } from 'node:path';
 import { cambioDeFormato, anioAnterior, textoSugerido } from './cambio-formato.js';
+import { tipoSinDesglose } from './tipo-sin-desglose.js';
 import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs';
 import { respuestaPorDetalle, ajusteDe, bolsonDeDeporte, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, FINANCIERO_RE, HOY, norm, r6 } from './cargar.mjs';
 
@@ -192,7 +193,7 @@ export function faseEjercicio(ctx) {
   // el motivo (la nota de Guido en la cola, si la hay). Hoy la página no lee este campo: es la marca para que otra sesión muestre "No
   // declarado" en las categorías que esa línea esconde (UC 2025: los sueldos del plantel están adentro del costo de ventas). Las sumas no
   // cambian: el importe está una sola vez, en la línea.
-  const sinDesglose = [...rev, ...exp].filter((f) => { const b = bolsonDeDeporte(club.sport); return b && (f.cat === b.revenue || f.cat === b.expense); }).map((f) => ({ renglon: f.label, lado: f.destino, importe: r6(Math.abs(f.amountNative ?? f.native ?? 0)), motivo: f.notaGuido || 'el documento no desglosa este renglón' }));
+  const sinDesglose = [...rev, ...exp].filter((f) => { const b = bolsonDeDeporte(club.sport); return b && (f.cat === b.revenue || f.cat === b.expense); }).map((f) => ({ renglon: f.label, lado: f.destino, importe: r6(Math.abs(f.amountNative ?? f.native ?? 0)), motivo: f.notaGuido || 'el documento no desglosa este renglón', tipo: tipoSinDesglose(f.label, /gasto|expense/.test(f.destino || '') ? 'expenses' : 'revenue') }));
   // DE DÓNDE SALIÓ CADA DATO DE LAS ESCALERAS CHICAS: el texto que ya arma
   // alta-club.mjs para cada campo (año, cierre, perímetro, moneda, tipo de cambio, liga), más lo que cargar.mjs decidió encima (perímetro
   // por ajuste, heredado o por la cola). Solo registro: no cambia ninguna decisión. Lo junta `node tools/estado.mjs --escalones`.
