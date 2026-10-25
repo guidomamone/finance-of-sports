@@ -346,6 +346,8 @@ function checkMoneda(api) {
   // Un error de escala (×1.000 por "en miles") salta contra los otros años del club; un club chico, no. COMPUERTA: otro ejercicio del club a
   // 2 años o menos está DENTRO de la banda y a menos de 20 veces de este -> P3 (aviso); si no, P0 como siempre.
   for (const x of fueraDeBanda) {
+    // Un año de margen bruto (`revenue_basis: gross_margin`) no es un ingreso: su cifra es chica por naturaleza (un margen de 0,09 M USD en un club que factura 100 veces más) y no dice nada de la escala.
+    if (((api.generic[x.clubId] || {}).fiscalYearMeta || {})[x.year]?.baseIngreso === 'gross_margin') continue;
     const vecino = (serie[x.clubId] || []).find((o) => o.year !== x.year && Math.abs(Number(o.year) - Number(x.year)) <= 2 && o.usd >= 0.2 && o.usd <= 2000 && Math.max(o.usd, x.usd) / Math.min(o.usd, x.usd) < 20);
     // Con año vecino ya no se avisa: el club chico y real no pide nada y repetía el aviso en cada corrida (Auditora 5, sacada la rama P3).
     if (!vecino) add('P0', 'escala-implausible', `${ref(x.clubId, x.year)}: revenue = ${x.usd.toFixed(2)} M USD, fuera de toda banda plausible — sospechar error de escala (documento en miles) o fx equivocado`);

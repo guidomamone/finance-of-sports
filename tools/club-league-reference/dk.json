@@ -205,6 +205,32 @@
           "OB",
           "SønderjyskE",
           "Vejle"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Danish_Superliga"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tablesd/den2022.html",
+            "tabla": "Superligaen",
+            "fetchedAt": "2026-10-25T05:49:00.006Z",
+            "equipos": [
+              "FC København",
+              "FC Midtjylland",
+              "Brøndby IF",
+              "AaB",
+              "Randers FC",
+              "Silkeborg IF",
+              "Viborg FF",
+              "AGF",
+              "OB",
+              "FC Nordsjælland",
+              "Vejle Boldklub",
+              "SønderjyskE"
+            ]
+          }
         ]
       },
       "2023": {

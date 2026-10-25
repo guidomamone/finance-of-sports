@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1095 — audit-chequeos-1.js: la banda de escala no cuenta los ejercicios de margen bruto [455 · audit-chequeos-1.js]
+- `escala-implausible` (P0) marcaba como error de escala un año de margen bruto (`revenue_basis: gross_margin`) de cifra chica por naturaleza (un margen de 0,09 M USD en un club que factura unos 100 veces más), y revertía su carga; ahora ese año no entra a la banda. Lo encontró la carga de prueba de un año belga con margen sin año vecino parecido.
+- Medición: 5 diferencias, todas explicadas (medidor de auditoría, lote chico): se va `escala-implausible` para ese año con los datos de HEAD; el resto de la auditoría idéntico.
+
 ## Versión 1094 — cargar-escribir.mjs, nbb.mjs, ingreso-derivado.js, audit-chequeos-3.js: la escritura persiste la marca de ingreso, el reconstruido lleva su rótulo y el margen reconstruible frena [455 · cargar-escribir.mjs, cargar-ejercicio.mjs, nbb.mjs, ingreso-derivado.js, ingreso-base.mjs, audit-chequeos-3.js, prueba-escribir.mjs]
 - `cargar-escribir.mjs`: el escritor copiaba una lista fija de campos y descartaba `baseIngreso`/`derivacionIngreso`: un año cargado por el pipeline quedaba sin marca (lo atrapó `prueba-escribir.mjs` al subir `ingreso-sin-base` a P1; ahora muestra el detalle del revert). `nbb.mjs`: la hoja reconstruida 70/74 lleva su rótulo (antes «Brutomarge», el de la fila a la que apunta).
 - `ingreso-derivado.js`: la identidad margen + compras y servicios se reconoce también por línea (un año con extraordinarios aparte, Patro Eisden 2015 y 2017, Dender 2017); `ingreso-base.mjs` agrega la derivación a un año ya marcado.
