@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1087 — se saca del sitio el texto interno de Resultados; estado de 447, 454 y 452 en el TODO [447 · 454 · 452]
+
+- `index.html` y `en.js`: «Fuentes: Wikipedia…» ya no dice «buscada y verificada en agosto de 2026. A cruzar contra el sitio oficial de cada club antes de publicar» (nota interna que el visitante veía). Los puntos 447, 454 y 452 siguen abiertos (Guido los cierra); cada uno lleva en su cuerpo lo hecho y lo que queda.
+- Medición: solo documentos y textos.
+
 ## Versión 1086 — medir-pipeline.mjs: cada nivel corre solo su tramo; fos progreso [medir-pipeline.mjs, progreso-medicion.mjs]
 
 - Las listas chico, mediano y completo están anidadas y cada nivel corría la suya entera: 126 + 548 + 1004 = 1678 documentos en vez de 1004. Ahora cada nivel corre los documentos que no estaban en uno menor (126, 422, 456): el corte temprano en el chico sigue y el total baja 40 %. Un medidor que no usa lista corre y se compara una sola vez, en el primer nivel.
