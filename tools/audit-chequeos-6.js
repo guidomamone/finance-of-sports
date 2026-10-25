@@ -4,17 +4,19 @@ const { ROOT, add, fs, path } = require('./audit-base.js');
 
 // LIGAS QUE EL SITIO NO TIENE: un club-año en `liga-no-catalogada` (data/club-leagues/) dice en Admin/registros/ligas-no-catalogadas.jsonl qué liga es (id y nombre). Cuando 3 o más club-años
 // son de la misma liga que no está en data/leagues.js, esa liga se abre (skill auditoria-finance-of-sports, sección 9): P3 `liga-por-abrir`, con el comando. Una fila sin registro: P3 `liga-no-catalogada-sin-registro`.
+// `sin-competencia` (el club no jugó ninguna competencia oficial de mayores ese ejercicio, p. ej. su año de fundación) pide el mismo registro, pero no es una liga: nunca se «abre».
 const UMBRAL_LIGA_POR_ABRIR = 3;
+const SIN_COMPETENCIA = 'sin-competencia';
 function checkLigasNoCatalogadas(api) {
   const f = path.join(ROOT, 'Admin', 'registros', 'ligas-no-catalogadas.jsonl');
   const reg = fs.existsSync(f) ? fs.readFileSync(f, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
   const registrados = new Set(reg.map((r) => `${r.club}|${r.anio}`));
   const sinRegistro = [];
-  for (const [club, ys] of Object.entries(api.CLUB_LEAGUE_BY_YEAR || {})) for (const [y, liga] of Object.entries(ys)) if (liga === 'liga-no-catalogada' && !registrados.has(`${club}|${y}`)) sinRegistro.push(`${club} ${y}`);
-  if (sinRegistro.length) add('P3', 'liga-no-catalogada-sin-registro', `${sinRegistro.length} club-año(s) en liga-no-catalogada sin decir qué liga es (${sinRegistro.slice(0, 5).join(', ')}): una línea por club-año en Admin/registros/ligas-no-catalogadas.jsonl, con el id y el nombre de la liga y su fuente`);
+  for (const [club, ys] of Object.entries(api.CLUB_LEAGUE_BY_YEAR || {})) for (const [y, liga] of Object.entries(ys)) if ((liga === 'liga-no-catalogada' || liga === SIN_COMPETENCIA) && !registrados.has(`${club}|${y}`)) sinRegistro.push(`${club} ${y}`);
+  if (sinRegistro.length) add('P3', 'liga-no-catalogada-sin-registro', `${sinRegistro.length} club-año(s) en liga-no-catalogada o sin-competencia sin decir qué liga es o por qué no compitió (${sinRegistro.slice(0, 5).join(', ')}): una línea por club-año en Admin/registros/ligas-no-catalogadas.jsonl, con el id y el nombre de la liga (o «sin-competencia») y su fuente`);
   let catalogo = ''; try { catalogo = fs.readFileSync(path.join(ROOT, 'data', 'leagues.js'), 'utf8'); } catch { /* sin catálogo: no se cuenta */ }
   const porLiga = {};
-  for (const r of reg) if (r.liga && !new RegExp(`['"]${r.liga}['"]\\s*:`).test(catalogo)) (porLiga[r.liga] = porLiga[r.liga] || []).push(`${r.club} ${r.anio}`);
+  for (const r of reg) if (r.liga && r.liga !== SIN_COMPETENCIA && !new RegExp(`['"]${r.liga}['"]\\s*:`).test(catalogo)) (porLiga[r.liga] = porLiga[r.liga] || []).push(`${r.club} ${r.anio}`);
   for (const [liga, cs] of Object.entries(porLiga)) if (cs.length >= UMBRAL_LIGA_POR_ABRIR) add('P3', 'liga-por-abrir', `${liga}: ${cs.length} club-años en una liga que el sitio no tiene (${cs.slice(0, 5).join(', ')}): abrirla con node tools/catalogo-liga.mjs --liga ${liga} y asignarles la liga`);
 }
 

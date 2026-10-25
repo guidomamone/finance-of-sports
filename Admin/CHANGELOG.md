@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1115 — Marcador `sin-competencia` en `data/club-leagues/` [audit-chequeos-6.js]
+- Un ejercicio en el que el club no jugó ninguna competencia oficial de mayores (Novorizontino 2010, año de fundación) lleva `'sin-competencia'`: cuenta como verificado, no agrupa bajo ninguna liga, pide su línea en `ligas-no-catalogadas.jsonl` y `audit-chequeos-6.js` nunca lo «abre» como liga. El card «en otra liga» ya no ofrece como liga a quien no está en el catálogo (`liga-no-catalogada` incluida). Documentado en `ARQUITECTURA.md` y `PIPELINE.md`.
+- Condición nueva en una tool, sin revisión independiente de la Auditora.
+- Medición: idéntico (lote chico del medidor `audit`); con el dato nuevo el audit no suma avisos.
+
 ## Versión 1114 — `fos informe-en-pdf`: ¿el PDF trae el informe del auditor que falta en su .md? [informe-en-pdf.mjs, fos-comandos.json]
 - Mira gratis, con `pdftotext`, si el PDF menciona el informe del auditor más veces que su transcripción, y detecta el escaneado. De los 34 `falta_transcripcion` que podían ser de transcripción, en 32 el PDF no trae más: re-transcribir con Mistral no ayuda; los otros dos (Sarpsborg 2021 y Telstar 2025) son escaneos.
 - Medición: no es una tool del pipeline (no escribe nada ni llama a ninguna API).

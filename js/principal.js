@@ -138,7 +138,7 @@
     Object.entries(window.CLUB_INDEX || {}).forEach(([id, c]) => {
       if(id === club || !(c.yrs || []).some(p => p[0] === year)) return;
       const lid = leagueAt(id, year);
-      if(lid && lid !== propia) cuenta[lid] = (cuenta[lid] || 0) + 1;
+      if(lid && lid !== propia && LEAGUES[lid]) cuenta[lid] = (cuenta[lid] || 0) + 1; // 'liga-no-catalogada' y 'sin-competencia' no son ligas para elegir
     });
     const ligas = Object.keys(cuenta).sort((a, b) => (cuenta[b] - cuenta[a]) || ((LEAGUES[a] || {}).name || a).localeCompare((LEAGUES[b] || {}).name || b));
     if(!ligas.length){ res.hidden = true; btnViejo.hidden = false; return; }

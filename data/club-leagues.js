@@ -1,5 +1,5 @@
 // En qué liga jugó cada club en cada ejercicio (las filas, en data/club-leagues/<iso2>.js). Las reglas (`null` = nadie lo verificó,
-// 'liga-no-catalogada', la categoría al cierre, nunca una arista club→liga sin año): Admin/ARQUITECTURA.md, "Ligas por ejercicio".
+// 'liga-no-catalogada', 'sin-competencia', la categoría al cierre, nunca una arista club→liga sin año): Admin/ARQUITECTURA.md, "Ligas por ejercicio".
 
 // La tabla nace VACÍA: la llenan los data/club-leagues/<iso2>.js al llamar a loadClubLeagues().
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};

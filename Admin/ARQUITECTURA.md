@@ -706,6 +706,9 @@ se leen como "nunca jugó en ninguna liga").
   temporada (Wikipedia o la fuente que corresponda). `leagueAt()` devuelve null y no "la liga de hoy". `audit.js` cuenta los null.
 - **`'liga-no-catalogada'`**: SÍ se verificó, pero esa liga no está en el catálogo (ej. un único club-ejercicio de 2da división de un
   país). Cuenta como verificada pero no agrupa bajo ninguna liga; si la liga se agrega al catálogo, el string se reemplaza por su id.
+- **`'sin-competencia'`**: SÍ se verificó, y el club no jugó ninguna competencia oficial de mayores ese ejercicio (su año de fundación,
+  una inactividad). No es una liga: no agrupa bajo ninguna ni se abre nunca en el catálogo. Pide, como `liga-no-catalogada`, su línea
+  en `Admin/registros/ligas-no-catalogadas.jsonl` (`liga: "sin-competencia"`, con la fuente de dos lados). Caso: Novorizontino 2010.
 - **La categoría al cierre del ejercicio**: un ejercicio que cruza dos torneos (Argentina: cierre 30/6, temporada feb-dic) lleva la
   división en la que estaba el club el día del cierre. Es la misma regla que atribuye la gestión al presidente del cierre.
 - **El tamaño de la liga (`LEAGUE_SIZE_BY_YEAR`, `leagueSizeAt(liga, año)`)**: cuántos equipos jugaron esa liga ese ejercicio, siempre
