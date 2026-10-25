@@ -180,6 +180,10 @@ tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por pr
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2023 cacheada).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2022–23 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2023). Antes: sin fila.
+```
+
 ## 2022
 
 ### Ingresos
@@ -232,6 +236,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2022 cacheada).
+```
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2021–22 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2022). Antes: sin fila.
 ```
 
 ## 2021
@@ -288,6 +296,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2021 cacheada).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2020–21 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2021). Antes: sin fila.
+```
+
 ## 2020
 
 ### Ingresos
@@ -341,6 +353,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2020 cacheada).
+```
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2019–20 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2020). Antes: sin fila.
 ```
 
 ## 2019
@@ -451,6 +467,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2018 cacheada).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2017–18 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2018). Antes: sin fila.
+```
+
 ## 2017
 
 ### Ingresos
@@ -503,6 +523,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2017 cacheada).
+```
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2016–17 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2017). Antes: sin fila.
 ```
 
 ## 2016
@@ -559,6 +583,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2016 cacheada).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2015–16 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2016). Antes: sin fila.
+```
+
 ## 2015
 
 ### Ingresos
@@ -611,6 +639,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2015 cacheada).
+```
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2014–15 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2015). Antes: sin fila.
 ```
 
 ## 2014
@@ -719,6 +751,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2013 cacheada).
+```
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2012–13 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2013). Antes: sin fila.
 ```
 
 ## Fuentes

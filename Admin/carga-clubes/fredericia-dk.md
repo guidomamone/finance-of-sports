@@ -402,6 +402,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-25): null, SIN VERIFICAR (no hay ninguna liga-temporada de dk 2018 cacheada).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): dk-1division, verificado contra la lista de equipos de "2018–19 Danish 1st Division" (Wikipedia; tools/club-league-reference/dk.json, dk-1division 2019). Antes: sin fila.
+```
+
 ## 2017
 
 ### Ingresos
@@ -513,3 +517,5 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+- Liga de 2018 (2018–19, dk-1division) confirmada también por la Wikipedia en danés (https://da.wikipedia.org/wiki/Fodbold_i_Danmark_2018-19: FC Fredericia 6.º de la 1. division), 2026-10-26.

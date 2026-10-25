@@ -59,6 +59,15 @@ window.RANKINGS["dk-1division"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.073]] },
     ],
   },
+  2018: {
+    leagueSize: 12,
+    wiki: {"t":"2017–18 Danish 1st Division","lang":"en","at":"2026-10-25","n":12},
+    clubs: [
+      { id:"fredericia-dk", revenue:2.283, reportType:"official_balance_sheet",
+        sourceId:"fredericia-dk-aarsrapport-2018-12-31",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.283]] },
+    ],
+  },
   2017: {
     leagueSize: null,
     clubs: [

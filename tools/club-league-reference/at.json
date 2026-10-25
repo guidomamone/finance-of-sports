@@ -1,6 +1,186 @@
 {
   "leagues": {
     "at-bundesliga": {
+      "2013": {
+        "wikipediaPage": "2012–13 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T20:46:55.446Z",
+        "clubs": [
+          "Admira",
+          "Austria Wien",
+          "SV Mattersburg",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "SV Ried",
+          "Sturm Graz",
+          "Wacker Innsbruck",
+          "Wiener Neustadt",
+          "Wolfsberger AC"
+        ],
+        "posiciones": [
+          "Austria Wien",
+          "Red Bull Salzburg",
+          "Rapid Wien",
+          "Sturm Graz",
+          "Wolfsberger AC",
+          "SV Ried",
+          "Wiener Neustadt",
+          "Wacker Innsbruck",
+          "Admira Wacker Mödling",
+          "Mattersburg"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2012%E2%80%9313_Austrian_Football_Bundesliga"
+          }
+        ]
+      },
+      "2015": {
+        "wikipediaPage": "2014–15 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T20:46:55.129Z",
+        "clubs": [
+          "Admira",
+          "Austria Vienna",
+          "Grödig",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "Rheindorf Altach",
+          "SV Ried",
+          "Sturm Graz",
+          "SC Wiener Neustadt",
+          "Wolfsberger AC"
+        ],
+        "posiciones": [
+          "Red Bull Salzburg",
+          "Rapid Wien",
+          "SCR Altach",
+          "Sturm Graz",
+          "Wolfsberger AC",
+          "Ried",
+          "Austria Wien",
+          "Grödig",
+          "Admira Wacker",
+          "Wiener Neustadt"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2014%E2%80%9315_Austrian_Football_Bundesliga"
+          }
+        ]
+      },
+      "2016": {
+        "wikipediaPage": "2015–16 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T20:46:54.826Z",
+        "clubs": [
+          "Admira Wacker Mödling",
+          "Austria Wien",
+          "Grödig",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "Rheindorf Altach",
+          "SV Ried",
+          "Sturm Graz",
+          "SV Mattersburg",
+          "Wolfsberger AC"
+        ],
+        "posiciones": [
+          "Red Bull Salzburg",
+          "Rapid Wien",
+          "Austria Wien",
+          "Admira Wacker Mödling",
+          "Sturm Graz",
+          "Wolfsberger AC",
+          "Ried",
+          "Rheindorf Altach",
+          "Mattersburg",
+          "Grödig"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2015%E2%80%9316_Austrian_Football_Bundesliga"
+          }
+        ]
+      },
+      "2017": {
+        "wikipediaPage": "2016–17 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T20:46:54.527Z",
+        "clubs": [
+          "Admira Wacker Mödling",
+          "Austria Wien",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "Rheindorf Altach",
+          "SV Ried",
+          "St. Pölten",
+          "Sturm Graz",
+          "SV Mattersburg",
+          "Wolfsberger AC"
+        ],
+        "posiciones": [
+          "Red Bull Salzburg",
+          "Austria Wien",
+          "Sturm Graz",
+          "Rheindorf Altach",
+          "Rapid Wien",
+          "Admira Wacker Mödling",
+          "Mattersburg",
+          "Wolfsberger AC",
+          "St. Pölten",
+          "Ried"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2016%E2%80%9317_Austrian_Football_Bundesliga"
+          }
+        ]
+      },
+      "2018": {
+        "wikipediaPage": "2017–18 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T20:46:54.128Z",
+        "clubs": [
+          "Admira Wacker Mödling",
+          "Austria Wien",
+          "LASK",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "Rheindorf Altach",
+          "St. Pölten",
+          "Sturm Graz",
+          "SV Mattersburg",
+          "Wolfsberger AC"
+        ],
+        "posiciones": [
+          "Red Bull Salzburg",
+          "Sturm Graz",
+          "Rapid Wien",
+          "LASK",
+          "Admira Wacker Mödling",
+          "Mattersburg",
+          "Austria Wien",
+          "Rheindorf Altach",
+          "Wolfsberger AC",
+          "St. Pölten"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2017%E2%80%9318_Austrian_Football_Bundesliga"
+          }
+        ]
+      },
       "2019": {
         "wikipediaPage": "2018–19 Austrian Football Bundesliga",
         "lang": "en",
@@ -33,6 +213,166 @@
           "Admira Wacker Mödling",
           "Rheindorf Altach",
           "Wacker Innsbruck"
+        ]
+      },
+      "2020": {
+        "wikipediaPage": "2019–20 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T20:46:53.753Z",
+        "clubs": [
+          "Admira Wacker Mödling",
+          "Austria Wien",
+          "LASK",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "Rheindorf Altach",
+          "St. Pölten",
+          "Sturm Graz",
+          "SV Mattersburg",
+          "TSV Hartberg",
+          "Wolfsberger AC",
+          "WSG Tirol"
+        ],
+        "posiciones": [
+          "Red Bull Salzburg",
+          "LASK",
+          "Rapid Wien",
+          "Wolfsberger AC",
+          "Sturm Graz",
+          "Hartberg",
+          "Austria Wien",
+          "Rheindorf Altach",
+          "Admira Wacker Mödling",
+          "WSG Tirol",
+          "Mattersburg",
+          "St. Pölten"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Austrian_Football_Bundesliga"
+          }
+        ]
+      },
+      "2021": {
+        "wikipediaPage": "2020–21 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T20:46:53.191Z",
+        "clubs": [
+          "Admira Wacker Mödling",
+          "Austria Wien",
+          "LASK",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "Rheindorf Altach",
+          "St. Pölten",
+          "Sturm Graz",
+          "SV Ried",
+          "TSV Hartberg",
+          "Wolfsberger AC",
+          "WSG Tirol"
+        ],
+        "posiciones": [
+          "Red Bull Salzburg",
+          "Admira Wacker Mödling",
+          "Rapid Wien",
+          "Austria Wien",
+          "LASK",
+          "Rheindorf Altach",
+          "Sturm Graz",
+          "Hartberg",
+          "Wolfsberger AC",
+          "WSG Tirol",
+          "St. Pölten",
+          "Ried"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Austrian_Football_Bundesliga"
+          }
+        ]
+      },
+      "2022": {
+        "wikipediaPage": "2021–22 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T20:46:52.900Z",
+        "clubs": [
+          "Admira Wacker Mödling",
+          "SK Austria Klagenfurt",
+          "Austria Wien",
+          "LASK",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "Rheindorf Altach",
+          "Sturm Graz",
+          "SV Ried",
+          "TSV Hartberg",
+          "Wolfsberger AC",
+          "WSG Tirol"
+        ],
+        "posiciones": [
+          "Red Bull Salzburg",
+          "Admira Wacker Mödling",
+          "Sturm Graz",
+          "Austria Klagenfurt",
+          "Wolfsberger AC",
+          "Austria Wien",
+          "Rheindorf Altach",
+          "Rapid Wien",
+          "Hartberg",
+          "LASK",
+          "Ried",
+          "WSG Tirol"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Austrian_Football_Bundesliga"
+          }
+        ]
+      },
+      "2023": {
+        "wikipediaPage": "2022–23 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T20:46:52.504Z",
+        "clubs": [
+          "Austria Klagenfurt",
+          "Austria Lustenau",
+          "Austria Wien",
+          "LASK",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "Rheindorf Altach",
+          "Sturm Graz",
+          "SV Ried",
+          "TSV Hartberg",
+          "Wolfsberger AC",
+          "WSG Tirol"
+        ],
+        "posiciones": [
+          "Red Bull Salzburg",
+          "Austria Klagenfurt",
+          "Sturm Graz",
+          "Austria Lustenau",
+          "LASK",
+          "Austria Wien",
+          "Rapid Wien",
+          "Rheindorf Altach",
+          "Hartberg",
+          "WSG Tirol",
+          "Wolfsberger AC",
+          "SV Ried"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Austrian_Football_Bundesliga"
+          }
         ]
       },
       "2024": {

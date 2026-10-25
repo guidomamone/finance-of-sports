@@ -106,7 +106,8 @@
      }
     ]
    ],
-   "kits": []
+   "kits": [],
+   "local": null
   },
   "2012": {
    "pagina": "2012 Campeonato Nacional Primera División",
@@ -206,7 +207,8 @@
      }
     ]
    ],
-   "kits": []
+   "kits": [],
+   "local": null
   },
   "2014": {
    "pagina": "2013–14 Campeonato Nacional Primera División",
@@ -306,7 +308,179 @@
      }
     ]
    ],
-   "kits": []
+   "kits": [],
+   "local": {
+    "pagina": "Copa Chile 2013-14",
+    "lang": "es",
+    "revid": 175519031,
+    "estadios": [
+     [
+      {
+       "club": "[[Audax Italiano La Florida|Audax Italiano]]",
+       "estadio": "Bicentenario de La Florida",
+       "capacidad": 12000
+      },
+      {
+       "club": "[[Club de Deportes Cobreloa|Cobreloa]]",
+       "estadio": "Luis Becerra Constanzo",
+       "capacidad": 4000
+      },
+      {
+       "club": "[[Club de Deportes Cobresal|Cobresal]]",
+       "estadio": "El Cobre de El Salvador",
+       "capacidad": 20752
+      },
+      {
+       "club": "[[Club Social y Deportivo Colo-Colo|Colo-Colo]]",
+       "estadio": "Monumental",
+       "capacidad": 47017
+      },
+      {
+       "club": "Deportes Antofagasta",
+       "estadio": "Calvo y Bascuñán",
+       "capacidad": 21178
+      },
+      {
+       "club": "[[Club de Deportes Iquique|Deportes Iquique]]",
+       "estadio": "Tierra de Campeones",
+       "capacidad": 14000
+      },
+      {
+       "club": "[[Everton de Viña del Mar|Everton]]",
+       "estadio": "Bicentenario Lucio Fariña",
+       "capacidad": 7680
+      },
+      {
+       "club": "[[Club Deportivo Huachipato|Huachipato]]",
+       "estadio": "CAP",
+       "capacidad": 10500
+      },
+      {
+       "club": "[[Deportivo Ñublense|Ñublense]]",
+       "estadio": "Bicentenario Nelson Oyarzún",
+       "capacidad": 12000
+      },
+      {
+       "club": "O'Higgins",
+       "estadio": "El Teniente",
+       "capacidad": 47017
+      },
+      {
+       "club": "[[Club Deportivo Palestino|Palestino]]",
+       "estadio": "Municipal",
+       "capacidad": 6000
+      },
+      {
+       "club": "[[Club Social de Deportes Rangers|Rangers]]",
+       "estadio": "Fiscal de Talca",
+       "capacidad": 8000
+      },
+      {
+       "club": "[[Club de Deportes Santiago Wanderers|Santiago Wanderers]]",
+       "estadio": "Bicentenario Lucio Fariña",
+       "capacidad": 7680
+      },
+      {
+       "club": "[[Club Unión Española|Unión Española]]",
+       "estadio": "Santa Laura-Universidad SEK",
+       "capacidad": 22000
+      },
+      {
+       "club": "[[Deportes Unión La Calera|Unión La Calera]]",
+       "estadio": "Bicentenario Lucio Fariña",
+       "capacidad": 7680
+      },
+      {
+       "club": "[[Club Deportivo Universidad Católica (fútbol)|Universidad Católica]]",
+       "estadio": "San Carlos de Apoquindo",
+       "capacidad": 20000
+      },
+      {
+       "club": "[[Club Universidad de Chile|Universidad de Chile]]",
+       "estadio": "Nacional Julio Martínez",
+       "capacidad": 48700
+      },
+      {
+       "club": "[[Club Deportivo Universidad de Concepción (fútbol)|Universidad de Concepción]]",
+       "estadio": "Alcaldesa Ester Roa Rebolledo",
+       "capacidad": 29000
+      }
+     ],
+     [
+      {
+       "club": "[[Barnechea Fútbol Club|Barnechea]]",
+       "estadio": "Municipal de Lo Barnechea",
+       "capacidad": 5000
+      },
+      {
+       "club": "[[Coquimbo Unido]]",
+       "estadio": "Francisco Sánchez Rumoroso",
+       "capacidad": 18750
+      },
+      {
+       "club": "[[Club de Deportes Provincial Curicó Unido|Curicó Unido]]",
+       "estadio": "La Granja",
+       "capacidad": 8000
+      },
+      {
+       "club": "[[Club Deportes Concepción|Deportes Concepción]]",
+       "estadio": "Collao",
+       "capacidad": 35000
+      },
+      {
+       "club": "[[Club de Deportes Copiapó|Deportes Copiapó]]",
+       "estadio": "Luis Valenzuela Hermosilla",
+       "capacidad": 8000
+      },
+      {
+       "club": "[[Club de Deportes La Serena|Deportes La Serena]]",
+       "estadio": "La Portada",
+       "capacidad": 12500
+      },
+      {
+       "club": "[[Club de Deportes Temuco|Deportes Temuco]]",
+       "estadio": "Germán Becker",
+       "capacidad": 18500
+      },
+      {
+       "club": "[[Club de Deportes Lota Schwager|Lota Schwager]]",
+       "estadio": "Federico Schwager",
+       "capacidad": 5700
+      },
+      {
+       "club": "[[Deportes Magallanes|Magallanes]]",
+       "estadio": "Santiago Bueras",
+       "capacidad": 8000
+      },
+      {
+       "club": "[[Club de Deportes Naval de Talcahuano|Naval]]",
+       "estadio": "Ramón Unzaga",
+       "capacidad": 7000
+      },
+      {
+       "club": "[[San Luis de Quillota|San Luis]]",
+       "estadio": "Lucio Fariña",
+       "capacidad": 7500
+      },
+      {
+       "club": "[[Club Deportivo San Marcos de Arica|San Marcos de Arica]]",
+       "estadio": "Carlos Dittborn",
+       "capacidad": 14373
+      },
+      {
+       "club": "[[Club de Deportes Santiago Morning|Santiago Morning]]",
+       "estadio": "Municipal La Pintana",
+       "capacidad": 6000
+      },
+      {
+       "club": "[[Club Deportivo Unión San Felipe|Unión San Felipe]]",
+       "estadio": "Municipal de San Felipe",
+       "capacidad": 10000
+      }
+     ]
+    ],
+    "kits": []
+   }
   },
   "2015": {
    "pagina": "2014–15 Campeonato Nacional Primera División",
