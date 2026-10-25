@@ -1,0 +1,21 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Belastingen":{"es":"Impuestos","en":"Taxes"},
+"Financiële baten en lasten":{"es":"Resultado financiero","en":"Financial income and expenses"},
+"Food & beverage":{"es":"Alimentos y bebidas","en":"Food & beverage"},
+"Immateriële vaste activa":{"es":"Activos intangibles","en":"Intangible fixed assets"},
+"Lonen en salarissen":{"es":"Sueldos y salarios","en":"Wages and salaries"},
+"Materiële vaste activa":{"es":"Inmovilizado material","en":"Property, plant and equipment"},
+"Media gerelateerde baten":{"es":"Ingresos relacionados con medios","en":"Media-related income"},
+"Merchandising & Business to consumeractiviteiten":{"es":"Merchandising y actividades business to consumer","en":"Merchandising and business-to-consumer activities"},
+"Overige bedrijfskosten":{"es":"Otros gastos operativos","en":"Other operating expenses"},
+"Overige omzet":{"es":"Otros ingresos","en":"Other revenue"},
+"Overige personeelskosten":{"es":"Otros gastos de personal","en":"Other personnel expenses"},
+"Pensioenlasten":{"es":"Cargas de pensiones","en":"Pension costs"},
+"Prijzengeld":{"es":"Premios en metálico","en":"Prize money"},
+"Sociale lasten":{"es":"Cargas sociales","en":"Social security costs"},
+"Solidariteit- en opleidingsvergoedingen":{"es":"Compensaciones de solidaridad y formación","en":"Solidarity and training compensation"},
+"Sponsoring":{"es":"Patrocinio","en":"Sponsoring"},
+"Subsidies en giften":{"es":"Subvenciones y donaciones","en":"Subsidies and donations"},
+"Vergoedingssommen spelers":{"es":"Derechos de traspaso de jugadores","en":"Player transfer fees"},
+"Wedstrijdbaten":{"es":"Ingresos de partidos","en":"Matchday income"}
+});

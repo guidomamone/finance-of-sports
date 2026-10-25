@@ -1,7 +1,21 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
-"Comissão técnica":{"es":"Cuerpo técnico"},
-"Despesas gerais e administrativas":{"es":"Gastos generales y administrativos"},
-"Gastos com jogos e bonificações":{"es":"Gastos de partidos y bonificaciones"},
-"Outras receitas e Despesas operacionais":{"es":"Otros ingresos y gastos operativos"},
-"Receita de patrocínio e publicidade":{"es":"Ingresos por patrocinio y publicidad"}
+"( - ) Encargos sobre receitas":{"es":"(-) Cargas sobre ingresos","en":"(-) Charges on revenue"},
+"Bilheteria":{"es":"Taquilla","en":"Ticket sales"},
+"Campeonato Brasileiro":{"es":"Campeonato Brasileño","en":"Brazilian Championship"},
+"Campeonato Paulista":{"es":"Campeonato Paulista","en":"Campeonato Paulista"},
+"Comissão técnica":{"es":"Cuerpo técnico","en":"Coaching staff"},
+"Copa do Brasil":{"es":"Copa do Brasil","en":"Copa do Brasil"},
+"Custo com departamento amador":{"es":"Costo del departamento amateur","en":"Amateur department cost"},
+"Custo do departamento de futebol":{"es":"Costo del departamento de fútbol","en":"Football department cost"},
+"Despesas financeiras":{"es":"Gastos financieros","en":"Financial expenses"},
+"Despesas gerais e administrativas":{"es":"Gastos generales y administrativos","en":"General and administrative expenses"},
+"Gastos com jogos e bonificações":{"es":"Gastos de partidos y bonificaciones","en":"Match expenses and bonuses"},
+"Imposto de renda e contribuição social":{"es":"Impuesto a la renta y contribución social","en":"Income Tax and Social Contribution"},
+"Outras Receitas":{"es":"Otros ingresos","en":"Other income"},
+"Outras receitas e Despesas operacionais":{"es":"Otros ingresos y gastos operativos","en":"Other operating income and expenses"},
+"Outras receitas e despesas operacionais":{"es":"Otros ingresos y gastos operativos","en":"Other operating income and expenses"},
+"Receita Líquida":{"es":"Ingresos netos","en":"Net revenue"},
+"Receita de patrocínio e publicidade":{"es":"Ingresos por patrocinio y publicidad","en":"Sponsorship and advertising revenue"},
+"Receitas com repasses de direitos federativo":{"es":"Ingresos por transferencias de derechos federativos","en":"Revenue from transfers of federative rights"},
+"Receitas financeiras":{"es":"Ingresos financieros","en":"Financial income"}
 });

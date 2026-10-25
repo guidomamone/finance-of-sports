@@ -1,0 +1,21 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Administrative expenses":{"es":"Gastos de administración"},
+"CVC income":{"es":"Ingresos CVC"},
+"Central income":{"es":"Ingresos centrales"},
+"Commercial activities":{"es":"Actividades comerciales"},
+"Cost of sales":{"es":"Coste de ventas"},
+"Cost of sales (sin el costo de personal)":{"es":"Costo de ventas (sin costo de personal)"},
+"Diferencia en el documento":{"es":"Diferencia en el documento"},
+"Fair value movements":{"es":"Variaciones de valor razonable"},
+"Gate receipts":{"es":"Recaudación de taquilla"},
+"Interest payable and similar expenses":{"es":"Intereses y gastos asimilados a pagar"},
+"Interest receivable and similar income":{"es":"Intereses e ingresos asimilados a cobrar"},
+"Miscellaneous other operating income":{"es":"Otros ingresos operativos varios"},
+"Other income":{"es":"Otros ingresos"},
+"Other interest receivable and similar income":{"es":"Otros intereses a cobrar e ingresos similares"},
+"Other operating income":{"es":"Otros ingresos de explotación"},
+"Other revenue":{"es":"Otros ingresos"},
+"Staff costs (total de la nota de personal)":{"es":"Costos de personal (total de la nota de personal)"},
+"Tax on loss":{"es":"Impuesto sobre la pérdida"},
+"Turnover":{"es":"Ingresos por ventas"}
+});

@@ -1,12 +1,26 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Amortisation of intangible assets":{"es":"Amortización de activos intangibles"},
 "Commercial / sponsorship":{"es":"Comercial / patrocinio"},
+"Exceptional operating (expense)/income":{"es":"(Gasto)/ingreso operativo excepcional"},
 "Exceptional operating Income/(expenses)":{"es":"Ingresos / (gastos) de explotación excepcionales"},
 "Exceptional operating expenses":{"es":"Gastos de explotación excepcionales"},
+"Finance expense":{"es":"Gastos financieros"},
+"Finance income":{"es":"Ingresos financieros"},
 "Impairment of intangible assets and other prepaid costs":{"es":"Deterioro de valor de activos intangibles y otros gastos anticipados"},
+"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)":{"es":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)"},
+"Media rights":{"es":"Derechos de medios"},
 "Merchandise vouchers for season ticket holders":{"es":"Vales de merchandising para abonados"},
+"Operating expenses (before intangible asset transactions and exceptional items)":{"es":"Gastos operativos (antes de transacciones de intangibles y partidas excepcionales)"},
+"Other":{"es":"Otros"},
+"Other income":{"es":"Otros ingresos"},
 "Profit on disposal of Intangible assets":{"es":"Beneficio por enajenación de activos intangibles"},
 "Profit on disposal of intangible assets":{"es":"Beneficio por enajenación de activos intangibles"},
+"Retail outlets and E-commerce":{"es":"Tiendas minoristas y comercio electrónico"},
 "Retail outlets and e-commerce":{"es":"Puntos de venta y comercio electrónico"},
+"Revenue":{"es":"Ingresos"},
 "Reversal of prior period impairment charges":{"es":"Reversión de pérdidas por deterioro de ejercicios anteriores"},
-"Settlement agreements on contract termination":{"es":"Acuerdos de liquidación por rescisión de contratos"}
+"Settlement agreements on contract termination":{"es":"Acuerdos de liquidación por rescisión de contratos"},
+"Stadium operations":{"es":"Operaciones del estadio"},
+"Tax expense":{"es":"Gasto por impuestos"},
+"Ticketing":{"es":"Venta de entradas"}
 });

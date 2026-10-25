@@ -1,0 +1,18 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Andre driftsinntekter":{"es":"Otros ingresos de explotación","en":"Other operating income"},
+"Andre ytelser":{"es":"Otras prestaciones","en":"Other benefits"},
+"Annen driftskostnad":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
+"Annen finansinntekt":{"es":"Otros ingresos financieros","en":"Other financial income"},
+"Annen finanskostnad":{"es":"Otros gastos financieros","en":"Other financial expenses"},
+"Annen renteinntekt":{"es":"Otros ingresos por intereses","en":"Other interest income"},
+"Annen rentekostnad":{"es":"Otros gastos por intereses","en":"Other interest expenses"},
+"Arbeidsgiveravgift":{"es":"Cotización patronal a la seguridad social","en":"Employer's social security contributions"},
+"Avskrivning varige driftsmidler og immaterielle eiendeler":{"es":"Amortización de inmovilizado material e inmaterial","en":"Depreciation of tangible and intangible fixed assets"},
+"Lønninger":{"es":"Sueldos y salarios","en":"Wages and salaries"},
+"Nedskrivning av andre finansielle omløpsmidler":{"es":"Deterioro de otros activos financieros corrientes","en":"Write-down of other current financial assets"},
+"Pensjonskostnader":{"es":"Gastos de pensiones","en":"Pension costs"},
+"Renteinntekt fra foretak i samme konsern":{"es":"Ingresos por intereses de empresas del mismo grupo","en":"Interest income from group companies"},
+"Salgsinntekter":{"es":"Ingresos por ventas","en":"Sales revenue"},
+"Skattekostnad på ordinært resultat":{"es":"Gasto por impuesto sobre el resultado ordinario","en":"Tax expense on ordinary result"},
+"Varekostnad":{"es":"Coste de mercaderías","en":"Cost of goods sold"}
+});

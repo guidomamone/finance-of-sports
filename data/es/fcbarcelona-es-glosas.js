@@ -1,0 +1,21 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Amortización de los derechos de adquisición de jugadores (Nota 5)":{"en":"Amortization of player registration rights (Note 5)"},
+"Aprovisionamientos (consumos y material deportivo)":{"en":"Supplies (consumption and sports equipment)"},
+"Desplazamientos":{"en":"Travel"},
+"Dotación y aplicación de provisiones y otros (neto)":{"en":"Provisions charged and released and other (net)"},
+"Exceso de provisiones":{"en":"Excess provisions"},
+"Gastos de personal (deportivo, no deportivo, cargas sociales, provisiones)":{"en":"Personnel expenses (sports, non-sports, social charges, provisions)"},
+"Gastos por adquisición de jugadores":{"en":"Player acquisition expenses"},
+"Ingresos por abonados y socios":{"en":"Season ticket holder and member revenue"},
+"Ingresos por comercialización y publicidad":{"en":"Marketing and advertising revenue"},
+"Ingresos por competiciones":{"en":"Competition revenue"},
+"Ingresos por prestación de servicios":{"en":"Service revenue"},
+"Ingresos por retransmisiones y derechos televisivos":{"en":"Broadcasting and television rights revenue"},
+"Otras amortizaciones (Notas 6 y 7)":{"en":"Other amortization and depreciation (Notes 6 and 7)"},
+"Otros gastos de gestión corriente":{"en":"Other current operating expenses"},
+"Otros ingresos de explotación":{"en":"Other operating income"},
+"Pérdidas, deterioro y variación de provisiones por operaciones comerciales":{"en":"Losses, impairment and change in provisions for trade transactions"},
+"Servicios exteriores":{"en":"External services"},
+"Trabajos realizados por la empresa para su activo":{"en":"Work performed by the company for its own assets"},
+"Tributos":{"en":"Taxes"}
+});

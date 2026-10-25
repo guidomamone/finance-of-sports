@@ -1,9 +1,26 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Administrative expenses":{"es":"Gastos de administración"},
+"Administrative expenses (resto sin desglosar)":{"es":"Gastos administrativos (resto sin desglosar)"},
+"Central Distributions":{"es":"Distribuciones centrales"},
+"Central distributions":{"es":"Distribuciones centrales"},
+"Commercial":{"es":"Comercial"},
+"Depreciation - owned assets":{"es":"Depreciación - activos propios"},
+"Employees and directors (wages, cargas sociales, pensión)":{"es":"Empleados y directores (sueldos, cargas sociales, pensión)"},
 "Gain on disposal of players' registrations":{"es":"Beneficio por enajenación de derechos federativos"},
 "Grant income":{"es":"Ingresos por subvenciones"},
+"Intangible assets amortisation":{"es":"Amortización de activos intangibles"},
+"Interest payable and similar expenses":{"es":"Intereses y gastos asimilados a pagar"},
+"Interest receivable and similar income":{"es":"Intereses e ingresos asimilados a cobrar"},
+"Loan player revenue":{"es":"Ingresos por préstamo de jugadores"},
 "Loss on disposal of tangible fixed assets":{"es":"Pérdidas por enajenación de inmovilizado material"},
 "Loss on sale of tangible fixed assets":{"es":"Pérdida por venta de inmovilizado material"},
 "Matchday":{"es":"Día de partido"},
-"Rents received":{"es":"Ingresos por arrendamientos"}
+"Other":{"es":"Otros"},
+"Other (turnover, mismo criterio que 2024)":{"es":"Otros (ingresos por ventas, mismo criterio que 2024)"},
+"Other (turnover, primariamente ingreso por préstamo de jugadores)":{"es":"Otros (ingresos por ventas, principalmente préstamo de jugadores)"},
+"Other Income":{"es":"Otros ingresos"},
+"Other operating income":{"es":"Otros ingresos de explotación"},
+"Rents received":{"es":"Ingresos por arrendamientos"},
+"Tax (charge) / credit on profit / (loss)":{"es":"Impuesto (cargo)/crédito sobre ganancia/(pérdida)"},
+"Tax credit / (charge) on profit":{"es":"Crédito/(cargo) de impuesto sobre la ganancia"}
 });

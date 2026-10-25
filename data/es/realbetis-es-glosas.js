@@ -1,0 +1,23 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Amortización de derechos federativos de jugadores (Nota 4/5)":{"en":"Amortization of player registration rights (Note 4/5)"},
+"Cargas sociales":{"en":"Social security contributions"},
+"Consumo de material deportivo":{"en":"Sports equipment consumption"},
+"Desplazamientos":{"en":"Travel"},
+"Gastos cesión de jugadores":{"en":"Player loan expenses"},
+"Ingresos de comercialización y publicidad":{"en":"Merchandising and advertising revenue"},
+"Ingresos por abonados y socios":{"en":"Season ticket holder and member revenue"},
+"Ingresos por competiciones europeas":{"en":"European competition income"},
+"Ingresos por competiciones nacionales":{"en":"Domestic competition income"},
+"Ingresos por retransmisión":{"en":"Broadcasting revenue"},
+"Otras amortizaciones (propiedad industrial, aplicaciones informáticas, material)":{"en":"Other amortization (industrial property, software, equipment)"},
+"Otros consumos y gastos externos":{"en":"Other consumption and external expenses"},
+"Otros gastos de gestión corriente":{"en":"Other current operating expenses"},
+"Otros ingresos de explotación":{"en":"Other operating income"},
+"Otros resultados (Nota 15.8, principalmente traspasos de jugadores de Cantera)":{"en":"Other results (Note 15.8, mainly transfers of youth academy players)"},
+"Otros sueldos, salarios y asimilados":{"en":"Other wages, salaries and similar"},
+"Pérdidas, deterioro y variación de provisiones por operaciones comerciales":{"en":"Losses, impairment and change in provisions for trade transactions"},
+"Servicios exteriores":{"en":"External services"},
+"Sueldos y salarios de plantilla deportiva":{"en":"Wages and salaries of sports squad"},
+"Trabajos realizados por la empresa para su activo":{"en":"Work performed by the company for its own assets"},
+"Tributos":{"en":"Taxes"}
+});

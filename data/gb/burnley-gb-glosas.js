@@ -1,9 +1,24 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Administrative expenses":{"es":"Gastos de administración"},
 "Amortisation of player registrations":{"es":"Amortización de derechos federativos"},
+"Catering sales":{"es":"Ventas de catering"},
 "Cost of defined contribution scheme":{"es":"Coste de planes de pensiones de aportación definida"},
 "Depreciation":{"es":"Amortización del inmovilizado material"},
+"Interest payable and similar expenses":{"es":"Intereses y gastos asimilados a pagar"},
+"Interest receivable and similar income":{"es":"Intereses e ingresos asimilados a cobrar"},
 "Match income":{"es":"Ingresos por días de partido"},
+"Other commercial activities":{"es":"Otras actividades comerciales"},
 "Other operating expenses":{"es":"Otros gastos de explotación"},
+"Other operating income":{"es":"Otros ingresos de explotación"},
+"Other operating income (excluding player trading)":{"es":"Otros ingresos operativos (excluyendo transacciones de jugadores)"},
+"Other operating income (player trading — loan fees receivable)":{"es":"Otros ingresos operativos (transacciones de jugadores: cuotas de préstamo a cobrar)"},
 "Profit on disposal of player registrations":{"es":"Beneficio por enajenación de derechos federativos"},
-"Retail sales":{"es":"Ventas al por menor"}
+"Profit on disposal of player/staff registrations":{"es":"Ganancia por baja de registros de jugadores/personal"},
+"Retail sales":{"es":"Ventas al por menor"},
+"Social security costs":{"es":"Cargas sociales"},
+"Staff costs":{"es":"Gastos de personal"},
+"Tax on (loss)/profit":{"es":"Impuesto sobre (pérdida)/beneficio"},
+"Tax on profit/(loss)":{"es":"Impuesto sobre la ganancia/(pérdida)"},
+"Television rights":{"es":"Derechos de televisión"},
+"Wages and salaries":{"es":"Sueldos y salarios"}
 });

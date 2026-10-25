@@ -1,0 +1,22 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Afschrijvingen op vaste activa":{"es":"Amortización del inmovilizado","en":"Depreciation of fixed assets"},
+"Afschrijvingen vergoedingssommen":{"es":"Amortización de derechos de traspaso","en":"Amortization of transfer fees"},
+"Beheer- en administratiekosten":{"es":"Gastos de gestión y administración","en":"Management and administration costs"},
+"Business-seats en skybox-plaatsen":{"es":"Asientos business y palcos","en":"Business seats and skyboxes"},
+"Huisvestingskosten":{"es":"Gastos de alojamiento e instalaciones","en":"Housing and premises costs"},
+"Indirecte wedstrijdbaten":{"es":"Ingresos indirectos de partidos","en":"Indirect matchday income"},
+"Inkoopwaarde omzet":{"es":"Costo de ventas","en":"Cost of sales"},
+"Lonen, salarissen en sociale lasten — Overige":{"es":"Sueldos, salarios y cargas sociales — Otros","en":"Wages, salaries and social security — Other"},
+"Lonen, salarissen en sociale lasten — Overige + Overige personeelskosten + Huisvestingskosten + Beheer- en administratiekosten":{"es":"Sueldos, salarios y cargas sociales — Otros + Otros gastos de personal + Gastos de alojamiento + Gastos de gestión y administración","en":"Wages, salaries and social security — Other + Other personnel costs + Housing costs + Management and administration costs"},
+"Lonen, salarissen en sociale lasten — Voetbal":{"es":"Sueldos, salarios y cargas sociales — Fútbol","en":"Wages, salaries and social security — Football"},
+"Merchandising":{"es":"Merchandising","en":"Merchandising"},
+"Overige baten":{"es":"Otros ingresos","en":"Other income"},
+"Overige personeelskosten":{"es":"Otros gastos de personal","en":"Other personnel expenses"},
+"Partnerships":{"es":"Alianzas comerciales","en":"Partnerships"},
+"Premies Europese competities":{"es":"Primas de competiciones europeas","en":"European competition bonuses"},
+"Recettes Europese competities":{"es":"Ingresos de competiciones europeas","en":"European competition revenue"},
+"Recettes competitie, nationale beker en vriendschappelijke wedstrijden":{"es":"Ingresos de liga, copa nacional y partidos amistosos","en":"League, national cup and friendly match revenue"},
+"Seizoenkaarten":{"es":"Abonos de temporada","en":"Season tickets"},
+"Televisie":{"es":"Televisión","en":"Television"},
+"Wedstrijdkosten":{"es":"Gastos de partidos","en":"Match costs"}
+});

@@ -1,11 +1,26 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Amortisation of player registrations":{"es":"Amortización de derechos federativos"},
+"Broadcasting":{"es":"Ingresos por retransmisión"},
+"Commercial":{"es":"Comercial"},
 "Cost of property sales":{"es":"Coste de venta de inmuebles"},
 "Depreciation and impairment charges (less amortisation of grants)":{"es":"Gastos de amortización y deterioro (menos imputación de subvenciones)"},
+"Gate and other match day revenues":{"es":"Ingresos de taquilla y otros ingresos de día de partido"},
 "Impairment of player registrations":{"es":"Deterioro de valor de derechos federativos"},
 "Impairment of player registrations (see note 2)":{"es":"Deterioro de valor de derechos federativos de jugadores (ver nota 2)"},
+"Net finance charges":{"es":"Gastos financieros netos"},
+"Other operating charges":{"es":"Otros gastos de explotación"},
+"Other pension costs":{"es":"Otros costes de pensiones"},
+"Player trading":{"es":"Compraventa de jugadores"},
 "Profit on disposal of player registrations":{"es":"Beneficio por enajenación de derechos federativos"},
+"Property":{"es":"Inmuebles"},
+"Property development":{"es":"Desarrollo inmobiliario"},
 "Share of joint venture operating (loss)":{"es":"Participación en las pérdidas de explotación de negocios conjuntos"},
+"Share of joint venture operating loss":{"es":"Participación en la pérdida de explotación de negocio conjunto"},
 "Share of turnover of joint venture":{"es":"Participación en la cifra de negocios de negocios conjuntos"},
-"Turnover of the Group including its share of joint ventures":{"es":"Cifra de negocios del Grupo incluida su participación en negocios conjuntos"}
+"Social security costs":{"es":"Cargas sociales"},
+"Staff costs":{"es":"Gastos de personal"},
+"Tax (charge)/credit on loss":{"es":"Impuesto (cargo)/crédito sobre la pérdida"},
+"Tax on loss":{"es":"Impuesto sobre la pérdida"},
+"Turnover of the Group including its share of joint ventures":{"es":"Cifra de negocios del Grupo incluida su participación en negocios conjuntos"},
+"Wages and salaries":{"es":"Sueldos y salarios"}
 });

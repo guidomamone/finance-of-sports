@@ -1,5 +1,23 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Administrative expenses (sin el costo de personal)":{"es":"Gastos administrativos (sin el costo de personal)"},
+"Amortisation of intangible fixed assets":{"es":"Amortización de activos intangibles"},
+"Broadcast and central sponsorship distributions":{"es":"Distribuciones de transmisión y patrocinio central"},
+"Commercial activities":{"es":"Actividades comerciales"},
+"Depreciation on tangible fixed assets":{"es":"Depreciación de activos fijos tangibles"},
+"Employment costs":{"es":"Costos de personal"},
+"Income from loan of players":{"es":"Ingresos por cesión de jugadores"},
+"Interest payable and similar expenses":{"es":"Intereses y gastos asimilados a pagar"},
+"Interest receivable and similar income":{"es":"Intereses e ingresos asimilados a cobrar"},
 "Match receipts and related football activities":{"es":"Ingresos por partidos y actividades futbolísticas relacionadas"},
+"Operating costs":{"es":"Costos operativos"},
+"Other operating income":{"es":"Otros ingresos de explotación"},
+"Otros costos operativos (Operating costs no desglosados por naturaleza, neto de employment costs/depreciación)":{"es":"Otros costos operativos (costos operativos no desglosados por naturaleza, netos de costos de personal y depreciación)"},
 "Profit on disposal of players":{"es":"Beneficio por traspaso de jugadores"},
-"Retail and merchandising":{"es":"Venta al por menor y merchandising"}
+"Profit on sale of players":{"es":"Beneficio por venta de jugadores"},
+"Retail and merchandising":{"es":"Venta al por menor y merchandising"},
+"Staff costs (total de la nota de personal)":{"es":"Costos de personal (total de la nota de personal)"},
+"Tax (charge)/credit on profit/(loss)":{"es":"Impuesto (cargo)/crédito sobre beneficio/(pérdida)"},
+"Tax on (loss)/profit":{"es":"Impuesto sobre (pérdida)/beneficio"},
+"Tax on Loss":{"es":"Impuesto sobre la pérdida"},
+"Tax on profit/(loss)":{"es":"Impuesto sobre la ganancia/(pérdida)"}
 });

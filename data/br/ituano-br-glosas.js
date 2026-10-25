@@ -1,0 +1,23 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"(-) Impostos Incidentes s/ Vendas e Serviços":{"es":"(-) Impuestos sobre ventas y servicios","en":"(-) Taxes on sales and services"},
+"Arrecadação de Jogos":{"es":"Recaudación de partidos","en":"Matchday revenue"},
+"Cessão Temp. Direitos Federativos de Atletas (Empréstimo)":{"es":"Cesión temporal de derechos federativos de atletas (préstamo)","en":"Temporary assignment of athletes' registration rights (loan)"},
+"Despesas com Pessoal, administrativo (Salários e encargos)":{"es":"Gastos de personal, administrativo (sueldos y cargas sociales)","en":"Personnel expenses, administrative (salaries and social charges)"},
+"Despesas com Pessoal, futebol profissional e de base (Salários e Encargos)":{"es":"Gastos de personal, fútbol profesional y juvenil (sueldos y cargas sociales)","en":"Personnel expenses, professional and youth football (salaries and social charges)"},
+"Direito de Transmissão de TV (FPF/CBF)":{"es":"Derechos de transmisión de TV (FPF/CBF)","en":"TV broadcasting rights (FPF/CBF)"},
+"Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)":{"es":"Gastos con atletas (viajes, uniformes, tasas CBF-FPF)","en":"Athlete expenses (travel, uniforms, CBF-FPF fees)"},
+"Gastos c/ Bens de terceiros (Acomodações, Estádio, Energia, Água e Telefone)":{"es":"Gastos con bienes de terceros (alojamiento, estadio, energía, agua y teléfono)","en":"Third-party property expenses (accommodation, stadium, energy, water and telephone)"},
+"Impostos e Taxas diversas":{"es":"Impuestos y tasas diversas","en":"Taxes and sundry fees"},
+"Outras Despesas (Eventos e Partidas - Estádio e Alojamento)":{"es":"Otros gastos (eventos y partidos - estadio y alojamiento)","en":"Other expenses (events and matches - stadium and accommodation)"},
+"Outras Despesas Administrativas":{"es":"Otros gastos administrativos","en":"Other administrative expenses"},
+"Outras Receitas":{"es":"Otros ingresos","en":"Other income"},
+"Patrocínio e Publicidades":{"es":"Patrocinio y publicidad","en":"Sponsorship and advertising"},
+"Premiações em Campeonatos (FPF)":{"es":"Premios en campeonatos (FPF)","en":"Championship prize money (FPF)"},
+"Receita com Repasses de Direitos Federativos":{"es":"Ingresos por transferencias de derechos federativos","en":"Revenue from transfers of registration rights"},
+"Receita de Incentivos, Doações e Loterias":{"es":"Ingresos por incentivos, donaciones y loterías","en":"Revenue from incentives, donations and lotteries"},
+"Serviços de Terceiros (Prêmios, Mídia, Serviços de PJ e PF)":{"es":"Servicios de terceros (premios, medios, servicios de personas jurídicas y físicas)","en":"Third-party services (prizes, media, corporate and individual services)"},
+"Serviços de Terceiros - Advogado, Contador, Assessores":{"es":"Servicios de terceros - abogado, contador, asesores","en":"Third-party services - lawyer, accountant, advisors"},
+"Sócio Torcedor":{"es":"Socio hincha","en":"Fan membership program"},
+"Sócio Torcedor (custo do programa)":{"es":"Socio hincha (costo del programa)","en":"Fan membership program (program cost)"},
+"Água, Luz, Telefone e Internet (sede do Clube)":{"es":"Agua, luz, teléfono e internet (sede del club)","en":"Water, electricity, telephone and internet (club headquarters)"}
+});

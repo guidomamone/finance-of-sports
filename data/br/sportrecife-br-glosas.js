@@ -1,4 +1,23 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
-"Despesas gerais":{"es":"Gastos generales"},
-"Despesas tributárias":{"es":"Gastos tributarios"}
+"Cessão de direitos contratuais (negociação de atletas, empréstimos e solidariedade)":{"es":"Cesión de derechos contractuales (negociación de atletas, préstamos y solidaridad)","en":"Assignment of contractual rights (athlete trading, loans and solidarity)"},
+"Comerciais, marketing e publicidade":{"es":"Comerciales, marketing y publicidad","en":"Commercial, marketing and advertising"},
+"Competição e viagens":{"es":"Competencia y viajes","en":"Competition and travel"},
+"Contribuições de associados":{"es":"Contribuciones de asociados","en":"Member contributions"},
+"Deduções de receita (INSS Patronal, 5%)":{"es":"Deducciones de ingresos (INSS patronal, 5%)","en":"Revenue deductions (employer INSS, 5%)"},
+"Depreciação":{"es":"Depreciación","en":"Depreciation"},
+"Despesas c/alugueis":{"es":"Gastos de alquileres","en":"Rent expenses"},
+"Despesas com alimentação":{"es":"Gastos de alimentación","en":"Food expenses"},
+"Despesas com formação de atleta e amortização de despesas de anos anteriores":{"es":"Gastos de formación de atletas y amortización de gastos de años anteriores","en":"Athlete development expenses and amortization of prior-year expenses"},
+"Despesas com manutenção":{"es":"Gastos de mantenimiento","en":"Maintenance expenses"},
+"Despesas gerais":{"es":"Gastos generales","en":"General expenses"},
+"Despesas tributárias":{"es":"Gastos tributarios","en":"Tax expenses"},
+"Direitos televisivos e premiações":{"es":"Derechos televisivos y premios","en":"Television rights and prizes"},
+"Gastos com pessoal (administrativo)":{"es":"Gastos de personal (administrativo)","en":"Personnel expenses (administrative)"},
+"Gastos com pessoal do futebol":{"es":"Gastos de personal del fútbol","en":"Football personnel expenses"},
+"Outras (despesas) receitas operacionais líquidas (Liga Forte União, provisão para contingências e outras)":{"es":"Otros (gastos) ingresos operativos netos (Liga Forte União, provisión para contingencias y otros)","en":"Other operating (expenses) income, net (Liga Forte União, provision for contingencies and other)"},
+"Outras receitas":{"es":"Otros ingresos","en":"Other income"},
+"Outros custos":{"es":"Otros costos","en":"Other costs"},
+"Patrimoniais":{"es":"Patrimoniales","en":"Equity-related"},
+"Receitas em jogos":{"es":"Ingresos por partidos","en":"Matchday revenue"},
+"Serviços de terceiros":{"es":"Servicios de terceros","en":"Third-party services"}
 });

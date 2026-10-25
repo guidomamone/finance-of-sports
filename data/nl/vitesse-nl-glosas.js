@@ -1,0 +1,23 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Algemene kosten":{"es":"Gastos generales","en":"General expenses"},
+"Bedrijfsgebouwen en -terreinen":{"es":"Edificios y terrenos de explotación","en":"Commercial buildings and land"},
+"Horeca":{"es":"Hostelería","en":"Catering"},
+"Huisvestingskosten":{"es":"Gastos de alojamiento e instalaciones","en":"Housing and premises costs"},
+"Inventarissen":{"es":"Mobiliario y equipamiento","en":"Fixtures and equipment"},
+"Lonen":{"es":"Salarios","en":"Wages"},
+"Media gerelateerde baten":{"es":"Ingresos relacionados con medios","en":"Media-related income"},
+"Merchandise":{"es":"Merchandising","en":"Merchandise"},
+"Overige baten":{"es":"Otros ingresos","en":"Other income"},
+"Overige personeelskosten":{"es":"Otros gastos de personal","en":"Other personnel expenses"},
+"Overige rentebaten en soortgelijke opbrengsten":{"es":"Otros ingresos por intereses y similares","en":"Other interest income and similar income"},
+"Pensioenlasten":{"es":"Cargas de pensiones","en":"Pension costs"},
+"Prijzengeld":{"es":"Premios en metálico","en":"Prize money"},
+"Rentelasten en soortgelijke kosten":{"es":"Gastos por intereses y similares","en":"Interest expenses and similar costs"},
+"Resultaat vergoedingssommen":{"es":"Resultado por derechos de traspaso","en":"Result on transfer fees"},
+"Sociale lasten":{"es":"Cargas sociales","en":"Social security costs"},
+"Sponsoring":{"es":"Patrocinio","en":"Sponsoring"},
+"Subsidies en giften":{"es":"Subvenciones y donaciones","en":"Subsidies and donations"},
+"Verkoopkosten":{"es":"Gastos de venta","en":"Selling expenses"},
+"Wedstrijd- en trainingskosten":{"es":"Gastos de partidos y entrenamientos","en":"Match and training costs"},
+"Wedstrijdbaten":{"es":"Ingresos de partidos","en":"Matchday income"}
+});

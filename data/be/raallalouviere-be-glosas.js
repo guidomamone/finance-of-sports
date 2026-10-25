@@ -1,3 +1,22 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
-"Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles":{"es":"Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"}
+"Achats":{"es":"Compras","en":"Purchases"},
+"Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles":{"es":"Amortizaciones y deterioros de gastos de establecimiento, inmovilizado intangible y material","en":"Depreciation, amortization and impairment of formation expenses, intangible and tangible fixed assets"},
+"Autres charges d'exploitation":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
+"Autres charges financières":{"es":"Otros gastos financieros","en":"Other financial expenses"},
+"Autres produits d'exploitation":{"es":"Otros ingresos de explotación","en":"Other operating income"},
+"Autres produits financiers":{"es":"Otros ingresos financieros","en":"Other financial income"},
+"Charges d'exploitation non récurrentes":{"es":"Gastos de explotación no recurrentes","en":"Non-recurring operating expenses"},
+"Charges financières récurrentes":{"es":"Gastos financieros recurrentes","en":"Recurring financial expenses"},
+"Chiffre d'affaires":{"es":"Ingresos por ventas (cifra de negocios)","en":"Revenue"},
+"Impôts":{"es":"Impuestos","en":"Taxes"},
+"Impôts sur le résultat":{"es":"Impuestos sobre el resultado","en":"Income taxes"},
+"Marge brute":{"es":"Margen bruto","en":"Gross margin"},
+"Marge brute d'exploitation":{"es":"Margen bruto de explotación","en":"Operating gross margin"},
+"Produits d'exploitation non récurrents":{"es":"Ingresos de explotación no recurrentes","en":"Non-recurring operating income"},
+"Produits financiers récurrents":{"es":"Ingresos financieros recurrentes","en":"Recurring financial income"},
+"Provisions pour risques et charges: dotations (utilisations et reprises)":{"es":"Provisiones para riesgos y gastos: dotaciones (utilizaciones y reversiones)","en":"Provisions for risks and charges: additions (utilizations and reversals)"},
+"Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)":{"es":"Deterioro de existencias, pedidos en curso y cuentas comerciales a cobrar: dotaciones (reversiones)","en":"Impairment of inventories, contracts in progress and trade receivables: additions (reversals)"},
+"Rémunérations, charges sociales et pensions":{"es":"Remuneraciones, cargas sociales y pensiones","en":"Remuneration, social security and pensions"},
+"Services et biens divers":{"es":"Servicios y bienes diversos","en":"Services and other goods"},
+"Stocks: réduction (augmentation)":{"es":"Existencias: disminución (aumento)","en":"Inventories: decrease (increase)"}
 });

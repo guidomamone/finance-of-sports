@@ -1,0 +1,23 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Afschrijvingen op materiële vaste activa":{"es":"Amortización del inmovilizado material","en":"Depreciation of tangible fixed assets"},
+"Afschrijvingskosten vergoedingssommen":{"es":"Gastos de amortización de derechos de traspaso","en":"Amortization of transfer fees"},
+"Afwaardering boekwaarde vertrokken spelers":{"es":"Baja de valor contable de jugadores salidos","en":"Write-down of book value of departed players"},
+"Doorberekende personeelskosten":{"es":"Gastos de personal repercutidos","en":"Recharged personnel costs"},
+"Food & Beverage":{"es":"Alimentos y bebidas","en":"Food & Beverage"},
+"Kostprijs":{"es":"Coste de ventas","en":"Cost of sales"},
+"Mediagelden":{"es":"Ingresos por derechos mediáticos","en":"Media rights income"},
+"Merchandise":{"es":"Merchandising","en":"Merchandise"},
+"Netto-opbrengst vergoedingssommen":{"es":"Ingresos netos por traspasos","en":"Net transfer fee income"},
+"Overige bedrijfskosten":{"es":"Otros gastos operativos","en":"Other operating expenses"},
+"Overige kosten":{"es":"Otros gastos","en":"Other expenses"},
+"Overige opbrengsten":{"es":"Otros ingresos","en":"Other income"},
+"Pensioenlasten":{"es":"Cargas de pensiones","en":"Pension costs"},
+"Rentebaten en soortgelijke opbrengsten":{"es":"Ingresos por intereses e ingresos similares","en":"Interest income and similar income"},
+"Rentelasten en soortgelijke kosten":{"es":"Gastos por intereses y similares","en":"Interest expenses and similar costs"},
+"Resultaat deelnemingen":{"es":"Resultado de participadas","en":"Result from investments"},
+"Salariskosten":{"es":"Gastos de sueldos y salarios","en":"Salary costs"},
+"Sociale lasten":{"es":"Cargas sociales","en":"Social security costs"},
+"Sponsoring":{"es":"Patrocinio","en":"Sponsoring"},
+"Vennootschapsbelasting":{"es":"Impuesto sobre sociedades","en":"Corporate income tax"},
+"Wedstrijdbaten":{"es":"Ingresos de partidos","en":"Matchday income"}
+});

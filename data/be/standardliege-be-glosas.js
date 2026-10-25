@@ -1,5 +1,22 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
-"Approvisionnements et marchandises":{"es":"Aprovisionamientos y mercancías"},
-"Autres produits d'exploitation":{"es":"Otros ingresos de explotación"},
-"Produits d'exploitation non récurrents":{"es":"Ingresos de explotación no recurrentes"}
+"Amortissements — droits sur joueurs (immobilisations incorporelles)":{"es":"Amortizaciones: derechos sobre jugadores (activos intangibles)","en":"Amortization: player rights (intangible assets)"},
+"Amortissements — frais de constitution":{"es":"Amortización — gastos de constitución","en":"Amortization — formation expenses"},
+"Amortissements — immobilisations corporelles":{"es":"Amortizaciones: inmovilizado material","en":"Depreciation: tangible fixed assets"},
+"Approvisionnements et marchandises":{"es":"Aprovisionamientos y mercaderías","en":"Supplies and goods"},
+"Autres charges d'exploitation":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
+"Autres frais de personnel":{"es":"Otros gastos de personal","en":"Other personnel expenses"},
+"Autres produits d'exploitation":{"es":"Otros ingresos de explotación","en":"Other operating income"},
+"Charges d'exploitation non récurrentes":{"es":"Gastos de explotación no recurrentes","en":"Non-recurring operating expenses"},
+"Chiffre d'affaires":{"es":"Ingresos por ventas (cifra de negocios)","en":"Revenue"},
+"Cotisations patronales d’assurances sociales":{"es":"Cotizaciones sociales a cargo del empleador","en":"Employer social security contributions"},
+"En-cours de fabrication, produits finis et commandes en cours d'exécution":{"es":"Productos en curso, productos terminados y pedidos en curso de ejecución","en":"Work in progress, finished goods and contracts in progress"},
+"Impôts et taxes relatifs à l'exploitation":{"es":"Impuestos y tasas de explotación","en":"Operating taxes and levies"},
+"Produits d'exploitation non récurrents":{"es":"Ingresos de explotación no recurrentes","en":"Non-recurring operating income"},
+"Provisions pour risques et charges (reprise nette)":{"es":"Provisiones para riesgos y gastos (reversión neta)","en":"Provisions for risks and charges (net reversal)"},
+"Reste sans détail disponible":{"es":"Resto sin detalle disponible","en":"Remainder with no detail available"},
+"Réductions de valeur sur stocks et créances commerciales":{"es":"Deterioro de existencias y créditos comerciales","en":"Write-downs on inventories and trade receivables"},
+"Rémunérations et avantages sociaux directs":{"es":"Remuneraciones y beneficios sociales directos","en":"Remuneration and direct social benefits"},
+"Rémunérations, charges sociales et pensions":{"es":"Remuneraciones, cargas sociales y pensiones","en":"Remuneration, social security and pensions"},
+"Services et biens divers":{"es":"Servicios y bienes diversos","en":"Services and other goods"},
+"Subsides d’exploitation et montants compensatoires obtenus des pouvoirs publics (Nota 6.10)":{"es":"Subvenciones de explotación e importes compensatorios recibidos de las administraciones públicas (Nota 6.10)","en":"Operating grants and compensatory amounts received from public authorities (Note 6.10)"}
 });

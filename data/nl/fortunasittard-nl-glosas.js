@@ -1,0 +1,22 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Afschrijving en resultaat vergoedingssommen":{"es":"Amortización y resultado de derechos de traspaso","en":"Amortization and result on transfer fees"},
+"Afschrijvingen":{"es":"Amortizaciones","en":"Depreciation and amortization"},
+"Algemene kosten":{"es":"Gastos generales","en":"General expenses"},
+"Belastingen":{"es":"Impuestos","en":"Taxes"},
+"Financië le baten en lasten":{"es":"Resultado financiero","en":"Net financial income and expenses"},
+"Horeca":{"es":"Hostelería","en":"Catering"},
+"Huisvestingskosten":{"es":"Gastos de alojamiento e instalaciones","en":"Housing and premises costs"},
+"Lonen en salarissen":{"es":"Sueldos y salarios","en":"Wages and salaries"},
+"Media gerelateerde baten":{"es":"Ingresos relacionados con medios","en":"Media-related income"},
+"Merchandise":{"es":"Merchandising","en":"Merchandise"},
+"Overige baten":{"es":"Otros ingresos","en":"Other income"},
+"Overige personeelslasten":{"es":"Otros gastos de personal","en":"Other personnel expenses"},
+"Pensioenlasten":{"es":"Cargas de pensiones","en":"Pension costs"},
+"Prijzengeld":{"es":"Premios en metálico","en":"Prize money"},
+"Sociale lasten":{"es":"Cargas sociales","en":"Social security costs"},
+"Sponsoring":{"es":"Patrocinio","en":"Sponsoring"},
+"Subsidies en giften":{"es":"Subvenciones y donaciones","en":"Subsidies and donations"},
+"Verkoopkosten":{"es":"Gastos de venta","en":"Selling expenses"},
+"Wedstrijd- en trainingskosten":{"es":"Gastos de partidos y entrenamientos","en":"Match and training costs"},
+"Wedstrijdbaten":{"es":"Ingresos de partidos","en":"Matchday income"}
+});

@@ -1,4 +1,25 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Amortisation of players' registrations":{"es":"Amortización de registros de jugadores"},
+"Amounts payable to former employees":{"es":"Importes a pagar a ex empleados"},
+"Amounts payable to former employees in relation to the change in coaching staff":{"es":"Importes a pagar a ex empleados por el cambio en el cuerpo técnico"},
+"Broadcasting":{"es":"Ingresos por retransmisión"},
+"Depreciation":{"es":"Amortización del inmovilizado material"},
+"Gate Receipts":{"es":"Recaudación de taquilla"},
+"Gate receipts":{"es":"Recaudación de taquilla"},
+"Interest payable and similar charges":{"es":"Intereses a pagar y cargos similares"},
+"Interest receivable and similar income":{"es":"Intereses e ingresos asimilados a cobrar"},
 "Operating expenses - exceptional costs":{"es":"Gastos de explotación - costes excepcionales"},
-"Profit on disposal of tangible fixed assets":{"es":"Beneficio por enajenación de inmovilizado material"}
+"Other commercial activities":{"es":"Otras actividades comerciales"},
+"Other operating costs":{"es":"Otros costos operativos"},
+"Other pension costs":{"es":"Otros costes de pensiones"},
+"Profit on disposal of players' registrations":{"es":"Beneficio por enajenación de derechos federativos"},
+"Profit on disposal of tangible fixed assets":{"es":"Beneficio por enajenación de inmovilizado material"},
+"Profit on player trading":{"es":"Ganancia por transacciones de jugadores"},
+"Refinancing and legal costs":{"es":"Costos de refinanciación y legales"},
+"Revaluation of Football League Pension Scheme":{"es":"Revalorización del plan de pensiones de la Football League"},
+"Social security costs":{"es":"Cargas sociales"},
+"Sponsorship, advertising and merchandising":{"es":"Patrocinio, publicidad y merchandising"},
+"Staff costs":{"es":"Gastos de personal"},
+"Tax on loss":{"es":"Impuesto sobre la pérdida"},
+"Wages and salaries":{"es":"Sueldos y salarios"}
 });

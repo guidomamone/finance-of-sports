@@ -1,0 +1,21 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Afschrijvingen en bijzondere waardeverminderingen vergoedingssommen":{"es":"Amortización y deterioro de derechos de traspaso","en":"Amortization and impairment of transfer fees"},
+"Afschrijvingen goodwill":{"es":"Amortización del fondo de comercio","en":"Goodwill amortization"},
+"Afschrijvingen materiële vaste activa":{"es":"Amortización de inmovilizado material","en":"Depreciation of tangible fixed assets"},
+"Beheer- en administratiekosten":{"es":"Gastos de gestión y administración","en":"Management and administration costs"},
+"Huisvestingskosten":{"es":"Gastos de alojamiento e instalaciones","en":"Housing and premises costs"},
+"Kostprijs van de omzet":{"es":"Coste de ventas","en":"Cost of sales"},
+"Lonen en salarissen":{"es":"Sueldos y salarios","en":"Wages and salaries"},
+"Lonen, salarissen en sociale lasten":{"es":"Sueldos, salarios y cargas sociales","en":"Wages, salaries and social security charges"},
+"Mediabaten":{"es":"Ingresos de medios","en":"Media revenue"},
+"Merchandising & Business to Consumer activiteiten":{"es":"Merchandising y actividades de negocio a consumidor","en":"Merchandising and business-to-consumer activities"},
+"Overige baten":{"es":"Otros ingresos","en":"Other income"},
+"Overige personeelskosten":{"es":"Otros gastos de personal","en":"Other personnel expenses"},
+"Overige personeelskosten + Huisvestingskosten + Beheer- en administratiekosten":{"es":"Otros gastos de personal, alojamiento, gestión y administración","en":"Other personnel, housing, management and administration expenses"},
+"Partnerships, business seats, units en boarding":{"es":"Alianzas, asientos de empresa, palcos y vallas publicitarias","en":"Partnerships, business seats, units and boarding"},
+"Pensioenen":{"es":"Pensiones","en":"Pensions"},
+"Resultaat vergoedingssommen (transferopbrengsten)":{"es":"Resultado de derechos de traspaso (ingresos por traspasos)","en":"Result on transfer fees (transfer income)"},
+"Sociale lasten":{"es":"Cargas sociales","en":"Social security costs"},
+"Wedstrijdkosten":{"es":"Gastos de partidos","en":"Match costs"},
+"Wedstrijdopbrengsten":{"es":"Ingresos por partidos","en":"Matchday revenue"}
+});

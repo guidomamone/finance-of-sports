@@ -1,4 +1,23 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Amortisation of other intangible assets":{"es":"Amortización de otros activos intangibles"},
+"Amortisation of player's registrations":{"es":"Amortización de registros de jugadores"},
+"Broadcasting rights":{"es":"Derechos de transmisión"},
+"Commercial":{"es":"Comercial"},
+"Depreciation of assets":{"es":"Depreciación de activos"},
+"Gate receipts":{"es":"Recaudación de taquilla"},
+"Interest payable and similar charges":{"es":"Intereses a pagar y cargos similares"},
+"Interest receivable and similar income":{"es":"Intereses e ingresos asimilados a cobrar"},
+"League distributions":{"es":"Distribuciones de la liga"},
 "Operating expenses":{"es":"Gastos de explotación"},
-"Profit on disposal of player registrations":{"es":"Beneficio por enajenación de derechos federativos"}
+"Other operating income":{"es":"Otros ingresos de explotación"},
+"Other operating income (incl. seguros)":{"es":"Otros ingresos operativos (incl. seguros)"},
+"Other turnover":{"es":"Otros ingresos ordinarios"},
+"Otros costos operativos (Operating expenses no desglosados por naturaleza, neto de staff/amortización/impairment/depreciación)":{"es":"Otros costos operativos (gastos operativos no desglosados por naturaleza, netos de personal/amortización/deterioro/depreciación)"},
+"Profit on disposal of player registrations":{"es":"Beneficio por enajenación de derechos federativos"},
+"Provision for impairment of intangible assets":{"es":"Provisión por deterioro de activos intangibles"},
+"Sponsorship and advertising":{"es":"Patrocinio y publicidad"},
+"Staff costs":{"es":"Gastos de personal"},
+"Tax on (loss)/profit":{"es":"Impuesto sobre (pérdida)/beneficio"},
+"Tax on (loss)/profit)":{"es":"Impuesto sobre (pérdida)/beneficio"},
+"Tax on Profit/(loss)":{"es":"Impuesto sobre beneficio/(pérdida)"}
 });

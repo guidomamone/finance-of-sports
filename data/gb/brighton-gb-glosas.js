@@ -1,7 +1,27 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "(Loss)/profit on player trading":{"es":"(Pérdida)/beneficio por traspaso de jugadores"},
+"Amortisation of players' registrations":{"es":"Amortización de registros de jugadores"},
+"Broadcasting":{"es":"Ingresos por retransmisión"},
+"Commercial":{"es":"Comercial"},
 "Compensation received":{"es":"Indemnizaciones recibidas"},
+"Cost of sales":{"es":"Coste de ventas"},
+"Depreciation of tangible fixed assets":{"es":"Amortización del inmovilizado material"},
+"Impairment of players' registrations":{"es":"Deterioro de registros de jugadores"},
+"Interest payable and similar charges":{"es":"Intereses a pagar y cargos similares"},
+"Interest receivable and similar income":{"es":"Intereses e ingresos asimilados a cobrar"},
 "Matchday":{"es":"Día de partido"},
 "Operating expenses":{"es":"Gastos de explotación"},
-"Profit/(loss) on player trading":{"es":"Beneficio/(pérdida) por traspaso de jugadores"}
+"Other":{"es":"Otros"},
+"Other (Turnover)":{"es":"Otros (ingresos por ventas)"},
+"Other operating income":{"es":"Otros ingresos de explotación"},
+"Otros costos operativos (Cost of sales + Operating expenses no desglosados por naturaleza, neto de staff/amortización/depreciación)":{"es":"Otros costos operativos (costo de ventas + gastos operativos no desglosados por naturaleza, neto de personal/amortización/depreciación)"},
+"Otros costos operativos (Cost of sales + Operating expenses no desglosados por naturaleza, neto de staff/amortización/impairment/depreciación)":{"es":"Otros costos operativos (costo de ventas + gastos operativos no desglosados por naturaleza, neto de personal/amortización/deterioro/depreciación)"},
+"Proceeds from insurance claim":{"es":"Cobro de reclamo de seguro"},
+"Profit on disposal of players' registrations":{"es":"Beneficio por enajenación de derechos federativos"},
+"Profit on player trading":{"es":"Ganancia por transacciones de jugadores"},
+"Profit/(loss) on player trading":{"es":"Beneficio/(pérdida) por traspaso de jugadores"},
+"Staff costs":{"es":"Gastos de personal"},
+"Tax on loss":{"es":"Impuesto sobre la pérdida"},
+"Tax on profit":{"es":"Impuesto sobre la ganancia"},
+"Tax on profit/(loss)":{"es":"Impuesto sobre la ganancia/(pérdida)"}
 });

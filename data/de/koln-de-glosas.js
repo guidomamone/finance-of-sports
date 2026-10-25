@@ -1,0 +1,21 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — I. Immaterielle Vermögensgegenstände (entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten; überwiegend Spielervermögen), laut Anlagenspiegel":{"es":"Amortizaciones del inmovilizado intangible y material — I. Inmovilizado intangible (concesiones adquiridas onerosamente, derechos de propiedad industrial y similares, y licencias; principalmente derechos de jugadores), según cuadro de inmovilizado","en":"Amortization of intangible and tangible fixed assets — I. Intangible assets (concessions acquired for consideration, industrial property rights and similar rights and licenses; mainly player registrations), per fixed asset schedule"},
+"Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — II. Sachanlagen, laut Anlagenspiegel":{"es":"Amortizaciones del inmovilizado intangible y material — II. Inmovilizado material, según cuadro de inmovilizado","en":"Amortization of intangible and tangible fixed assets — II. Property, plant and equipment, per fixed asset schedule"},
+"Catering":{"es":"Catering","en":"Catering"},
+"Fernseh- u. Hörfunkverwertung":{"es":"Explotación de derechos de televisión y radio","en":"Television and radio rights revenue"},
+"Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken":{"es":"Terrenos, derechos equivalentes y construcciones, incluidas construcciones en terrenos ajenos","en":"Land, land rights and buildings, including buildings on third-party land"},
+"Löhne und Gehälter":{"es":"Sueldos y salarios","en":"Wages and salaries"},
+"Materialaufwand":{"es":"Gastos de materiales","en":"Cost of materials"},
+"Merchandising":{"es":"Merchandising","en":"Merchandising"},
+"Personalaufwand":{"es":"Gastos de personal","en":"Personnel expenses"},
+"Sonstige":{"es":"Otros","en":"Other"},
+"Spielbetrieb":{"es":"Actividad de día de partido","en":"Match operations"},
+"Transfer":{"es":"Traspasos","en":"Transfers"},
+"Werbung":{"es":"Publicidad","en":"Advertising"},
+"andere Anlagen, Betriebs- und Geschäftsausstattung":{"es":"Otras instalaciones, mobiliario y equipamiento","en":"Other equipment, furniture and fixtures"},
+"geleistete Anzahlungen und Anlagen im Bau":{"es":"Anticipos y inmovilizado en curso","en":"Prepayments and assets under construction"},
+"sonstige betriebliche Aufwendungen":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
+"sonstige betriebliche Erträge":{"es":"Otros ingresos de explotación","en":"Other operating income"},
+"soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung":{"es":"Cargas sociales y gastos de pensiones y asistencia","en":"Social security contributions and pension and support expenses"},
+"technische Anlagen und Maschinen":{"es":"Instalaciones técnicas y maquinaria","en":"Technical equipment and machinery"}
+});

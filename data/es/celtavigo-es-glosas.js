@@ -1,0 +1,23 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Amortización derechos adquisición de jugadores":{"en":"Amortization of player registration rights"},
+"Cargas sociales":{"en":"Social security contributions"},
+"Desplazamientos":{"en":"Travel"},
+"Deterioro de mercaderías, materias primas y otros":{"en":"Impairment of goods, raw materials and other"},
+"Gastos de adquisición de jugadores":{"en":"Player acquisition costs"},
+"Imputación de subvenciones de inmovilizado no financiero y otras":{"en":"Allocation of grants related to non-financial fixed assets and other"},
+"Ingresos por abonados y socios":{"en":"Season ticket holder and member revenue"},
+"Ingresos por comercialización y otros":{"en":"Merchandising and other revenue"},
+"Ingresos por competiciones":{"en":"Competition revenue"},
+"Ingresos por publicidad":{"en":"Advertising income"},
+"Ingresos por retransmisión":{"en":"Broadcasting revenue"},
+"Otras amortizaciones":{"en":"Other amortization"},
+"Otros consumos y gastos externos":{"en":"Other consumption and external expenses"},
+"Otros gastos de gestión corriente":{"en":"Other current operating expenses"},
+"Otros ingresos de explotación":{"en":"Other operating income"},
+"Otros resultados (negativo este ejercicio)":{"en":"Other results (negative this year)"},
+"Pérdidas, deterioro y variación de provisiones por operaciones comerciales":{"en":"Losses, impairment and change in provisions for trade transactions"},
+"Servicios exteriores":{"en":"External services"},
+"Sueldos y salarios personal no deportivo":{"en":"Wages and salaries of non-sports staff"},
+"Sueldos y salarios plantilla deportiva":{"en":"Wages and salaries of sports squad"},
+"Tributos":{"en":"Taxes"}
+});

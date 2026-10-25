@@ -1,10 +1,26 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Amortisation and impairment of players' registrations":{"es":"Amortización y deterioro de derechos federativos de jugadores"},
+"Amortisation of intangible assets":{"es":"Amortización de activos intangibles"},
+"Amortisation of players' registrations":{"es":"Amortización de registros de jugadores"},
+"Commercial":{"es":"Comercial"},
+"Depreciation":{"es":"Amortización del inmovilizado material"},
 "Impairment of intangible assets":{"es":"Deterioro de activos intangibles"},
+"Impairment of players' registrations":{"es":"Deterioro de registros de jugadores"},
+"Interest payable and expenses":{"es":"Intereses y gastos a pagar"},
+"Interest payable and similar expenses":{"es":"Intereses y gastos asimilados a pagar"},
+"Interest receivable and similar income":{"es":"Intereses e ingresos asimilados a cobrar"},
 "Matchday":{"es":"Día de partido"},
+"Media":{"es":"Medios"},
 "Operating expenses":{"es":"Gastos de explotación"},
 "Operating expenses before amortisation and impairment":{"es":"Gastos de explotación antes de amortización y deterioro"},
+"Other income":{"es":"Otros ingresos"},
+"Other operating expenses (residuo exacto, sin línea propia impresa)":{"es":"Otros gastos operativos (residuo exacto, sin línea propia impresa)"},
 "Profit on disposal of players' and staff registrations":{"es":"Beneficio por enajenación de derechos federativos de jugadores y cuerpo técnico"},
-"Profit on disposal of players' registrations":{"es":"Beneficio por enajenación de derechos federativos de jugadores"},
-"Profit on disposal of tangible fixed assets":{"es":"Beneficio por enajenación de inmovilizado material"}
+"Profit on disposal of players' registrations":{"es":"Beneficio por enajenación de derechos federativos"},
+"Profit on disposal of tangible fixed assets":{"es":"Beneficio por enajenación de inmovilizado material"},
+"Staff costs":{"es":"Gastos de personal"},
+"Tax on (loss)/profit":{"es":"Impuesto sobre (pérdida)/beneficio"},
+"Tax on profit":{"es":"Impuesto sobre la ganancia"},
+"Taxation":{"es":"Impuestos"},
+"UEFA":{"es":"UEFA"}
 });

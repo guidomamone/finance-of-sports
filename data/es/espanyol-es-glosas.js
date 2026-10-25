@@ -1,0 +1,22 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Amortización del inmovilizado (sin separar jugadores del resto)":{"en":"Depreciation and amortization of fixed assets (players not separated)"},
+"Aprovisionamientos":{"en":"Supplies"},
+"Cargas sociales":{"en":"Social security contributions"},
+"Consumo de materias primas y otras materias consumibles":{"en":"Consumption of raw materials and other consumables"},
+"Consumo de mercaderías":{"en":"Consumption of goods"},
+"Deterioro de mercaderías, materias primas y otros aprovisionamientos":{"en":"Impairment of goods, raw materials and other supplies"},
+"Exceso de provisiones":{"en":"Excess provisions"},
+"Gastos de personal (sin separar plantel deportivo/no deportivo)":{"en":"Personnel expenses (sports/non-sports staff not separated)"},
+"Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)":{"en":"Net revenue (sales + services, not broken down by item)"},
+"Ingresos accesorios y otros de gestión corriente":{"en":"Ancillary and other current operating income"},
+"Otros gastos de gestión corriente":{"en":"Other current operating expenses"},
+"Otros ingresos de explotación (ingresos accesorios y de gestión corriente, subvenciones)":{"en":"Other operating income (ancillary and current operating income, grants)"},
+"Otros resultados":{"en":"Other results"},
+"Prestaciones de servicios":{"en":"Services rendered"},
+"Pérdidas, deterioro y variación de provisiones por operaciones comerciales":{"en":"Losses, impairment and change in provisions for trade transactions"},
+"Servicios exteriores":{"en":"External services"},
+"Subvenciones de explotación incorporadas al resultado del ejercicio":{"en":"Operating grants recognized in profit or loss for the year"},
+"Sueldos, salarios y asimilados":{"en":"Wages, salaries and similar"},
+"Tributos":{"en":"Taxes"},
+"Ventas":{"en":"Sales"}
+});

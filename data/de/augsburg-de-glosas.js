@@ -1,0 +1,20 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Abschreibungen auf Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte":{"es":"Amortización de concesiones, derechos de propiedad industrial y derechos y valores similares","en":"Amortisation of concessions, industrial property rights and similar rights and assets"},
+"Abschreibungen auf Sachanlagen":{"es":"Depreciación de propiedades, planta y equipo","en":"Depreciation of property, plant and equipment"},
+"Abschreibungen auf Spielerwerte":{"es":"Amortización de derechos de jugadores","en":"Amortisation of player registrations"},
+"Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung":{"es":"Reversión de diferencia de consolidación de capital","en":"Release of difference from capital consolidation"},
+"Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und für bezogene Waren":{"es":"Gastos de materias primas, auxiliares y suministros y de mercaderías adquiridas","en":"Cost of raw materials, consumables and supplies and purchased goods"},
+"Aufwendungen für bezogene Leistungen":{"es":"Gastos por servicios contratados","en":"Expenses for purchased services"},
+"Erlöse aus dem Spielbetrieb":{"es":"Ingresos por actividad deportiva (día de partido)","en":"Matchday revenue"},
+"Handel":{"es":"Comercio","en":"Trading"},
+"Löhne und Gehälter":{"es":"Sueldos y salarios","en":"Wages and salaries"},
+"Personalaufwand":{"es":"Gastos de personal","en":"Personnel expenses"},
+"Sonstige Steuern":{"es":"Otros impuestos","en":"Other taxes"},
+"Sonstige betriebliche Aufwendungen":{"es":"Otros gastos operativos","en":"Other operating expenses"},
+"Sonstige betriebliche Erträge":{"es":"Otros ingresos de explotación","en":"Other operating income"},
+"Sonstiges":{"es":"Otros","en":"Other"},
+"TV-Einnahmen":{"es":"Ingresos de televisión","en":"TV revenue"},
+"Transfers":{"es":"Traspasos","en":"Transfers"},
+"Werbung":{"es":"Publicidad","en":"Advertising"},
+"soziale Abgaben":{"es":"Cargas sociales","en":"Social security contributions"}
+});

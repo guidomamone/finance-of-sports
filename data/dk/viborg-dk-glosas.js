@@ -1,7 +1,7 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Afskrivning på andre anlæg, driftsmateriel og inventar":{"es":"Depreciación de otras instalaciones, utilaje y mobiliario","en":"Depreciation of other fixtures and fittings, tools and equipment"},
 "Afskrivning på grunde og bygninger":{"es":"Depreciación de terrenos y construcciones","en":"Depreciation of land and buildings"},
-"Afskrivning på indretning af lejede lokaler":{"es":"Depreciación de mejoras en locales arrendados","en":"Depreciation of leasehold improvements"},
+"Afskrivning på indretning af lejede lokaler":{"es":"Amortización de acondicionamiento de locales arrendados","en":"Depreciation of leasehold improvements"},
 "Afskrivninger af erhvervede rettigheder (amortización de pases, Note 5)":{"es":"Amortización de derechos adquiridos","en":"Amortisation of acquired rights"},
 "Afskrivninger på materielle anlægsaktiver (bienes de uso: terrenos/edificios, mejoras a locales alquilados, equipamiento, Note 6)":{"es":"Depreciación de inmovilizado material","en":"Depreciation of property, plant and equipment"},
 "Amortisation during the year (player registrations)":{"es":"Amortización del ejercicio (derechos de inscripción de jugadores)","en":"Amortisation during the year (player registrations)"},

@@ -1,10 +1,26 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Amortisation of players contracts":{"es":"Amortización de contratos de jugadores"},
+"Conference and banqueting":{"es":"Conferencias y banquetes"},
+"Cost of sales":{"es":"Coste de ventas"},
+"Depreciation - owned assets":{"es":"Depreciación - activos propios"},
 "Exceptional operating expense":{"es":"Gasto de explotación excepcional"},
+"Gate receipts":{"es":"Recaudación de taquilla"},
+"Income tax relating to other comprehensive income":{"es":"Impuesto sobre la renta relativo a otro resultado integral"},
+"Interest payable and similar expenses":{"es":"Intereses y gastos asimilados a pagar"},
+"Interest receivable and similar income":{"es":"Intereses e ingresos asimilados a cobrar"},
 "Net operating expenses":{"es":"Gastos de explotación netos"},
+"Net operating expenses before exceptional items":{"es":"Gastos operativos netos antes de partidas excepcionales"},
 "Operating expenses":{"es":"Gastos de explotación"},
+"Other":{"es":"Otros"},
+"Other operating income":{"es":"Otros ingresos de explotación"},
+"Otros costos operativos (Cost of sales + Operating expenses no desglosados por naturaleza, neto de staff/amortización/depreciación)":{"es":"Otros costos operativos (costo de ventas + gastos operativos no desglosados por naturaleza, neto de personal/amortización/depreciación)"},
 "Profit of disposal of players contracts":{"es":"Beneficio por enajenación de contratos de jugadores"},
 "Profit on disposal of player contracts":{"es":"Beneficio por enajenación de contratos de jugadores"},
-"Profit on disposal of players":{"es":"Beneficio por enajenación de jugadores"},
-"Sponsorship and royalties":{"es":"Patrocinio y regalías"}
+"Profit on disposal of players":{"es":"Beneficio por traspaso de jugadores"},
+"Retail and merchandising":{"es":"Venta al por menor y merchandising"},
+"Sponsorship and royalties":{"es":"Patrocinio y regalías"},
+"Staff costs":{"es":"Gastos de personal"},
+"TV, Media and FL distribution":{"es":"Distribución de TV, medios y FL"},
+"Tax on loss":{"es":"Impuesto sobre la pérdida"},
+"Television and media":{"es":"Televisión y medios"}
 });

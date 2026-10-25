@@ -1,14 +1,21 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "- Owned fixed assets":{"es":"- Inmovilizado material en propiedad"},
-"Amortisation of player registrations":{"es":"Amortización de derechos federativos de jugadores"},
+"Amortisation of player registrations":{"es":"Amortización de derechos federativos"},
 "Broadcasting":{"es":"Ingresos por retransmisión"},
 "Central Awards":{"es":"Premios de competiciones"},
 "Compensation":{"es":"Indemnizaciones"},
 "Depreciation of fixed assets":{"es":"Amortización del inmovilizado material"},
+"Gate Receipts":{"es":"Recaudación de taquilla"},
+"Gate Receipts (forzado por el total — ver duda de OCR en el comentario de cabecera)":{"es":"Ingresos por taquilla (forzado por el total — ver duda de OCR en el comentario de cabecera)"},
 "Impairment":{"es":"Deterioro del valor"},
 "Loss on disposal of other assets":{"es":"Pérdidas por enajenación de otros activos"},
+"Net interest receivable":{"es":"Intereses netos a cobrar"},
 "Operating expenses before depreciation, amortisation & impairment":{"es":"Gastos de explotación antes de amortizaciones y deterioro"},
+"Other income (R&D tax credits)":{"es":"Otros ingresos (créditos fiscales de I+D)"},
+"Otros gastos operativos (residual, sin desglose propio en la fuente)":{"es":"Otros gastos operativos (residual, sin desglose propio en la fuente)"},
 "Profit on disposal of other assets":{"es":"Beneficio por enajenación de otros activos"},
-"Profit on disposal of players' registrations":{"es":"Beneficio por enajenación de derechos federativos de jugadores"},
-"Sponsorship and other Commercial Activities":{"es":"Patrocinios y otras actividades comerciales"}
+"Profit on disposal of players' registrations":{"es":"Beneficio por enajenación de derechos federativos"},
+"Sponsorship and other Commercial Activities":{"es":"Patrocinios y otras actividades comerciales"},
+"Staff costs":{"es":"Gastos de personal"},
+"Taxation on loss":{"es":"Impuestos sobre la pérdida"}
 });

@@ -1,5 +1,24 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Amortisation":{"es":"Amortización"},
+"Amortisation of player registrations":{"es":"Amortización de derechos federativos"},
 "Broadcasting":{"es":"Ingresos por retransmisión"},
+"Depreciation":{"es":"Amortización del inmovilizado material"},
+"Depreciation of tangible fixed assets":{"es":"Amortización del inmovilizado material"},
+"Foreign exchange losses":{"es":"Pérdidas por diferencias de cambio"},
+"Gate receipts":{"es":"Recaudación de taquilla"},
+"Interest payable and similar charges":{"es":"Intereses a pagar y cargos similares"},
+"Interest receivable":{"es":"Intereses a cobrar"},
+"Other commercial activities":{"es":"Otras actividades comerciales"},
+"Other income":{"es":"Otros ingresos"},
+"Other income (incluye £4,4m de prize money FA Cup, sin línea propia)":{"es":"Otros ingresos (incluye £4,4m de premios FA Cup, sin línea propia)"},
+"Other operating charges":{"es":"Otros gastos de explotación"},
+"Other pension costs":{"es":"Otros costes de pensiones"},
 "Profit on disposal of plant & machinery":{"es":"Beneficio por enajenación de instalaciones y maquinaria"},
-"Profit on disposal of players":{"es":"Beneficio por traspaso de jugadores"}
+"Profit on disposal of players":{"es":"Beneficio por traspaso de jugadores"},
+"Profit on disposal of players' registrations":{"es":"Beneficio por enajenación de derechos federativos"},
+"Social security costs":{"es":"Cargas sociales"},
+"Sponsorship and advertising":{"es":"Patrocinio y publicidad"},
+"Staff costs":{"es":"Gastos de personal"},
+"Taxation":{"es":"Impuestos"},
+"Wages and salaries":{"es":"Sueldos y salarios"}
 });

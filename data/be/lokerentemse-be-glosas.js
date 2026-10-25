@@ -1,8 +1,20 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
-"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa":{"es":"Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado inmaterial y material"},
-"Afschrijvingen immateriële vaste activa (spelers)":{"es":"Amortización de inmovilizado intangible (jugadores)"},
-"Andere bedrijfskosten":{"es":"Otros gastos de explotación"},
-"Niet-recurrente bedrijfskosten":{"es":"Gastos de explotación no recurrentes"},
-"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)":{"es":"Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (+)/(-) (reversiones)"},
-"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)":{"es":"Deterioros de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"}
+"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa":{"es":"Amortizaciones y deterioros de gastos de establecimiento, activos intangibles e inmovilizado material","en":"Depreciation, amortization and impairment of formation expenses, intangible and tangible fixed assets"},
+"Afschrijvingen immateriële vaste activa (spelers)":{"es":"Amortización de activos intangibles (jugadores)","en":"Amortization of intangible assets (players)"},
+"Afschrijvingen materiële vaste activa":{"es":"Amortización de inmovilizado material","en":"Depreciation of tangible fixed assets"},
+"Andere bedrijfskosten":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
+"Belastingen op het resultaat (+)/(-)":{"es":"Impuestos sobre el resultado (+)/(-)","en":"Income taxes (+)/(-)"},
+"Bezoldigingen, sociale lasten en pensioenen (+)/(-)":{"es":"Remuneraciones, cargas sociales y pensiones (+)/(-)","en":"Remuneration, social security costs and pensions (+)/(-)"},
+"Brutomarge (+)/(-)":{"es":"Margen bruto (+)/(-)","en":"Gross margin (+)/(-)"},
+"Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen":{"es":"Mercaderías, materias primas y auxiliares, servicios y bienes diversos","en":"Goods for resale, raw materials and consumables, services and other goods"},
+"Niet-recurrente bedrijfskosten":{"es":"Gastos de explotación no recurrentes","en":"Non-recurring operating expenses"},
+"Niet-recurrente financiële kosten":{"es":"Gastos financieros no recurrentes","en":"Non-recurring financial expenses"},
+"Niet-recurrente financiële opbrengsten":{"es":"Ingresos financieros no recurrentes","en":"Non-recurring financial income"},
+"Omzet":{"es":"Ingresos por ventas (cifra de negocios)","en":"Revenue"},
+"Overige bedrijfsopbrengsten (implícito en la Brutomarge)":{"es":"Otros ingresos de explotación (implícitos en el margen bruto)","en":"Other operating income (implicit in gross margin)"},
+"Recurrente financiële kosten":{"es":"Gastos financieros recurrentes","en":"Recurring financial expenses"},
+"Recurrente financiële opbrengsten":{"es":"Ingresos financieros recurrentes","en":"Recurring financial income"},
+"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)":{"es":"Deterioro de existencias, pedidos en curso y cuentas comerciales a cobrar: dotaciones (+)/(-) (reversiones)","en":"Impairment of inventories, contracts in progress and trade receivables: additions (+)/(-) (reversals)"},
+"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)":{"es":"Deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)","en":"Write-downs on inventories, contracts in progress and trade receivables: additions (reversals) (+)/(-)"},
+"Waarvan: niet-recurrente bedrijfsopbrengsten":{"es":"De los cuales: ingresos de explotación no recurrentes","en":"Of which: non-recurring operating income"}
 });

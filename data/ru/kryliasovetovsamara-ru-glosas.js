@@ -1,0 +1,9 @@
+window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Выручка (2110)":{"es":"Ingresos por ventas (2110)","en":"Revenue (2110)"},
+"Налог на прибыль и прочее (2300 − 2400)":{"es":"Impuesto sobre la renta y otros (2300 − 2400)","en":"Income tax and other (2300 − 2400)"},
+"Проценты к уплате (2330)":{"es":"Intereses a pagar (2330)","en":"Interest payable (2330)"},
+"Прочие доходы (2340)":{"es":"Otros ingresos (2340)","en":"Other income (2340)"},
+"Прочие расходы (2350)":{"es":"Otros gastos (2350)","en":"Other expenses (2350)"},
+"Себестоимость продаж (2120)":{"es":"Costo de ventas (2120)","en":"Cost of sales (2120)"},
+"Управленческие расходы (2220)":{"es":"Gastos de administración (2220)","en":"Administrative expenses (2220)"}
+});
