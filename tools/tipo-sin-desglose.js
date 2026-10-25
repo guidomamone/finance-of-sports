@@ -14,7 +14,7 @@ const OTRO_INGRESO = /otros ingresos|other (operating )?income|annen driftsinnte
 const VENTAS = /omzet|umsatz|nettoomsætning|salgsinntekt|salgsinntekter|chiffre d.affaires|receita|vendas|prestaç|turnover|revenue|net sales|importe neto de la cifra|ingresos del segmento|bedrijfsopbrengsten|выручка|κύκλος εργασιών|πωλήσεις|tulu|müügist|ricavi|rendas de jogos|prestação/i;
 const COSTO_VENTAS = /cost of sales|vareforbrug|κόστος πωλήσεων|себестоимость|satılan|custo das|custos das|costo de ventas|direkte kosten|kostprijs|coste de ventas|custo dos/i;
 
-const normal = (s) => String(s || '').toLowerCase().replace(/\s+/g, ' ').trim();
+const normal = (s) => String(s || '').toLowerCase().replace(/\s+/g, ' ').replace(/[\s:;,.·]+$/, '').trim(); // sin la puntuación final: «Ingresos operativos:» y «Ingresos operativos» son el mismo rótulo
 const ladoDe = (lado) => (lado === 'expenses' || lado === 'gasto' || lado === 'expense' ? 'expenses' : 'revenue');
 let _aprendidos = null;
 function aprendidos() {

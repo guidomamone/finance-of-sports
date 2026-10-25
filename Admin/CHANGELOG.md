@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1108 — tipo-sin-desglose.js, audit.js, audit-chequeos-2.js: la puntuación final no cambia un rótulo aprendido y claves repetidas en los JSON de configuración [tipo-sin-desglose.js, audit.js]
+- `tipo-sin-desglose.js`: la tabla de rótulos aprendidos ignora la puntuación final («Ingresos operativos:» = «Ingresos operativos»), que había vuelto a mandar a la cola un rótulo ya contestado (Once Caldas 2018).
+- `audit.js` suma `json-clave-duplicada` (P2): una clave repetida en un mismo objeto de un `.json` de `tools/` o de `tools/club-league-reference/` (JSON.parse se queda con la última). Primer hallazgo real: `tools/contexto-manual.json` tenía a Fredericia dos veces y la entrada de 2017 no valía; se juntaron. Contexto y sponsors regenerados.
+- Medición: 3 diferencias, todas explicadas (lote completo: idéntico).
+
 ## Versión 1107 — Rijeka 2023, Once Caldas 2018 y Viborg FF 2019 y 2020 por el pipeline; los años de margen sin estimado se resuelven solos [455]
 - Rijeka 2023 (euros; el informe reexpresa 2022 en euros: 69.154 M HRK / 7,5345 = 9.178 M EUR) y Once Caldas 2018 (sin estado de resultados: sale de las notas 20, 24, 25 y 26 y cierra con el impuesto diferido NIIF como fila de impuesto y la nómina de «gastos de ventas» como sueldos del plantel, `ajustes.mjs`) cargados. `contexto-manual.json` tenía a Once Caldas dos veces: la clave repetida pisaba la entrada nueva; se juntaron.
 - Prueba con Viborg FF 2019 y 2020 (dos ejercicios reales de la 1ª División danesa, lista 2018-19 bajada): Fredericia 2022 a 2024 pasó de sin estimado a estimado sin tocar nada más (el modelo pide 2 clubes reales en la liga o en su nivel); los años de margen sin estimado bajaron de 15 a 5 en la sesión. El resto espera ejercicios reales de la Superliga y de la 1ª 2024.

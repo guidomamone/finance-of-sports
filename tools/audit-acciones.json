@@ -1,5 +1,10 @@
 {
  "_comentario": "Cuando pasa X, se hace Y. Una entrada por código de audit.js que dispara: `hacer` (la acción concreta, con el comando si lo hay), `quien` (script: lo hace una tool sola o con un comando; sesion: lo hace la sesión mirando un documento; guido: espera una decisión suya; nada: es informativo) y `donde` (el punto del TODO, la skill o el documento que lo cubre). `node tools/audit.js --acciones` lista los códigos que disparan hoy con su acción; un código que dispara sin entrada acá da `codigo-sin-accion` (P3). Sirve para que el proceso no dependa de que una sesión se acuerde qué hacer.",
+ "json-clave-duplicada": {
+  "hacer": "Juntar las dos entradas con la misma clave en una (la última pisa a la anterior al leer el JSON): mirar el archivo y la línea que dice el aviso y pasar lo de la primera a la segunda.",
+  "quien": "sesion",
+  "donde": "tools/audit-chequeos-2.js (checkJsonClavesRepetidas)"
+ },
  "liga-por-abrir": {
   "hacer": "Abrir la liga: node tools/catalogo-liga.mjs --liga <id> (propone nombre, país, deporte y nivel desde Wikipedia; la aprueba la Auditora), después asignarles esa liga a los club-años de Admin/registros/ligas-no-catalogadas.jsonl y sacar sus líneas del registro.",
   "quien": "sesion",

@@ -561,6 +561,41 @@ function checkLigasNoCatalogadas(api) {
   for (const [liga, cs] of Object.entries(porLiga)) if (cs.length >= UMBRAL_LIGA_POR_ABRIR) add('P3', 'liga-por-abrir', `${liga}: ${cs.length} club-años en una liga que el sitio no tiene (${cs.slice(0, 5).join(', ')}): abrirla con node tools/catalogo-liga.mjs --liga ${liga} y asignarles la liga`);
 }
 
+// CLAVES REPETIDAS EN UN JSON DE CONFIGURACIÓN: JSON.parse se queda con la ÚLTIMA y la anterior se pierde sin aviso (un club cargado dos veces en tools/contexto-manual.json dejó sin efecto la entrada nueva). P2
+// `json-clave-duplicada`, con la clave y la línea. Se miran los .json de tools/ y de tools/club-league-reference/ (los que se editan a mano; los de cada club los escribe una tool).
+function clavesRepetidas(txt) {
+  const dup = []; const pila = []; const n = txt.length; let i = 0; let linea = 1;
+  while (i < n) {
+    const c = txt[i];
+    if (c === '\n') { linea++; i++; continue; }
+    if (c === '"') {
+      let j = i + 1; let s = '';
+      while (j < n && txt[j] !== '"') { if (txt[j] === '\\') { s += txt[j] + txt[j + 1]; j += 2; } else { if (txt[j] === '\n') linea++; s += txt[j++]; } }
+      i = j + 1;
+      const top = pila[pila.length - 1];
+      if (top && top.tipo === 'o' && top.esperaClave) { if (top.claves.has(s)) dup.push({ clave: s, linea }); top.claves.add(s); top.esperaClave = false; }
+      continue;
+    }
+    if (c === '{') pila.push({ tipo: 'o', claves: new Set(), esperaClave: true });
+    else if (c === '[') pila.push({ tipo: 'a' });
+    else if (c === '}' || c === ']') pila.pop();
+    else if (c === ',') { const top = pila[pila.length - 1]; if (top && top.tipo === 'o') top.esperaClave = true; }
+    i++;
+  }
+  return dup;
+}
+function checkJsonClavesRepetidas() {
+  const dirs = [path.join(ROOT, 'tools'), path.join(ROOT, 'tools', 'club-league-reference')];
+  const hallados = [];
+  for (const d of dirs) {
+    if (!fs.existsSync(d)) continue;
+    for (const f of fs.readdirSync(d).filter((x) => x.endsWith('.json'))) {
+      for (const r of clavesRepetidas(fs.readFileSync(path.join(d, f), 'utf8'))) hallados.push(`${path.relative(ROOT, path.join(d, f))} línea ${r.linea}: «${r.clave.slice(0, 40)}»`);
+    }
+  }
+  if (hallados.length) add('P2', 'json-clave-duplicada', `${hallados.length} clave(s) repetida(s) en un mismo objeto (JSON.parse se queda con la última y pierde la anterior): ${hallados.slice(0, 5).join('; ')}${hallados.length > 5 ? ` y ${hallados.length - 5} más` : ''}`);
+}
+
 // UN CLUB-AÑO, UNA ESTIMACIÓN: data/estimados/<liga>.js no repite un club en el mismo año de una liga. Es independiente de estimar.mjs: si la tool misma repite (una lista con el nombre
 // dos veces, dos temporadas que caen en el mismo ejercicio), su --check regenera igual y no lo ve. P1: Ligas mostraría al club dos veces y la liga sumaría de más.
 function checkEstimadoRepetido() {
@@ -580,4 +615,4 @@ function checkEstimadoRepetido() {
   if (repetidos.length) add('P1', 'estimado-repetido', `un club con más de una estimación en la misma liga-año: ${repetidos.slice(0, 8).join('; ')}${repetidos.length > 8 ? ` y ${repetidos.length - 8} más` : ''}`);
 }
 
-module.exports = { checkLigasNoCatalogadas, checkEstimadoRepetido, checkLigasPorEjercicio, checkDeployInterno, checkIndexFileRoto, checkSponsorBusqueda, checkComentariosPublicados, checkParrafoNetlifyDuplicado, checkRutasMuertas, checkComentarioHistoricoEnTools, checkCabeceraLargaEnTools, checkToolGrande, checkHistoriaEnDocs, checkParrafosRepetidos, checkRayaLarga, checkGenerados };
+module.exports = { checkJsonClavesRepetidas, checkLigasNoCatalogadas, checkEstimadoRepetido, checkLigasPorEjercicio, checkDeployInterno, checkIndexFileRoto, checkSponsorBusqueda, checkComentariosPublicados, checkParrafoNetlifyDuplicado, checkRutasMuertas, checkComentarioHistoricoEnTools, checkCabeceraLargaEnTools, checkToolGrande, checkHistoriaEnDocs, checkParrafosRepetidos, checkRayaLarga, checkGenerados };
