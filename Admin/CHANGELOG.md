@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1112 — Aalesund 2024 cargado (hueco ejercicio-sin-rastro) [aalesund-no]
+- Aalesund 2024 (lote 154): dos ajustes de signo en el financiero (gastos «Nedskrivning» y «Annen rentekostnad» restan; cierra con el resultado 455.038 NOK) y el año 2024 (el documento es de 01.01 a 31.12.2024; 2025 es el depósito). Liga no-1divisjon 2024 con dos fuentes (Wikipedia y RSSSF) y su línea del auditor (Contabile AS, sin salvedades).
+- Medición: sin cambio de tools.
+
 ## Versión 1111 — Excelsior 2020 cargado (hueco ejercicio-sin-rastro) y calibración de la cola: ocho segundas revisiones de cierre-por-pais alta [excelsior-nl]
 - Excelsior 2020 cargado (lote 153, US$ 0,06): «Resultaat deelneming» (−43.569) va al financiero por ajuste, como en 2024, y cierra con el resultado impreso. Calibración de la cola: 8 segundas revisiones de cierre-por-pais alta, las 8 coinciden (21 de 131).
 - Ligas con dos fuentes: Rapid Wien 2014 (Bundesliga 2013–14), Dynamo Majachkala 2021 (Segunda Liga rusa), Novorizontino 2012 (Segunda Divisão paulista) y 2010 (sin competencia oficial, año de fundación), estos tres como liga-no-catalogada con su línea de registro. Mockup 148 del card «en otra liga» para margen bruto, sin implementar.

@@ -14,6 +14,18 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 957
    }
   },
+  "2024": {
+   "auditor": {
+    "nombre": "Contabile AS",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.md",
+    "linea": 954
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Contabile AS",
