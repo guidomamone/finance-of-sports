@@ -1,0 +1,188 @@
+{
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
+ "generado": "2026-10-25T05:40:39.336Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "cola",
+ "clubId": "aalesund-no",
+ "year": 2018,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2018-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 16 ejercicio(s) con un solo perímetro (individual); 34 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "8a13a4d",
+  "062e8d6",
+  "d324525",
+  "d029f70",
+  "33a73c3"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Sum driftsinntekter\" 41.591465 cierra; además se suman 1 línea(s) fuera de ese total (41.591465)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "41.479064 = 41.479064",
+   "suma": 41.479064,
+   "impreso": 41.479064
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 83.18293 - gastos 41.479064 ± financiero 2.412778 ± impuesto 0 no da el impreso 1.201748",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Driftsinntekter\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar que no afecta la carga: b1 (pág. 2, formato formulario Brønnøysund) y b3 (pág. 6, estado del informe) parecen el mismo resultatregnskap de Ålesund Fotball AS.",
+  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; los importes con todos los dígitos sugieren unidades."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 83.18293,
+  "gastos": 41.479064,
+  "financiero": 2.412778,
+  "impuesto": 0,
+  "resultadoImpreso": 1.201748,
+  "resultadoParaCargar": 1.201748,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Driftsinntekter",
+   "lado": "ingreso",
+   "M": 41.591465,
+   "pagina": 6,
+   "linea": 344,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sum driftsinntekter",
+   "lado": "ingreso",
+   "M": 41.591465,
+   "pagina": 6,
+   "linea": 345,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 3.189119,
+   "pagina": 6,
+   "linea": 346,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 5.690818,
+   "pagina": 18,
+   "linea": 822,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 0.843734,
+   "pagina": 18,
+   "linea": 823,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 0.095287,
+   "pagina": 18,
+   "linea": 824,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre ytelser",
+   "lado": "gasto",
+   "M": 0.567861,
+   "pagina": 18,
+   "linea": 825,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning varige driftsmidler",
+   "lado": "gasto",
+   "M": 1.445907,
+   "pagina": 6,
+   "linea": 348,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 29.646338,
+   "pagina": 6,
+   "linea": 349,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Inntekt på investering i datterselskap",
+   "M": 0.221485,
+   "linea": 352
+  },
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.604107,
+   "linea": 353
+  },
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 0.925471,
+   "linea": 354
+  },
+  {
+   "etiqueta": "Nedskrivning av finansielle anleggsmidler",
+   "M": 0.54583,
+   "linea": 356
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": 0.115885,
+   "linea": 357
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": 0,
+   "linea": 358
+  }
+ ],
+ "impuesto": []
+}

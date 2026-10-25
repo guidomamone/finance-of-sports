@@ -1,0 +1,304 @@
+{
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
+ "mdSha1": "2f71afaaf0678c5b388cee5d0943e3e8e1d19f56",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T05:28:35.565Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    104,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    149,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    342,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    375,
+    402
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    412,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    587,
+    599
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    603,
+    613
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    625,
+    628
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    632,
+    638
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    650,
+    654
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    658,
+    661
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    665,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    671,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    677,
+    683
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    693,
+    699
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    703,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    711,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    732,
+    746
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    750,
+    752
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    770,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    787,
+    803
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    813,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 18,
+   "lineas": [
+    820,
+    827
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    829,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    837,
+    843
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 19,
+   "lineas": [
+    855,
+    860
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 19,
+   "lineas": [
+    868,
+    870
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 19,
+   "lineas": [
+    878,
+    880
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 20,
+   "lineas": [
+    894,
+    896
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 20,
+   "lineas": [
+    904,
+    909
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 20,
+   "lineas": [
+    915,
+    921
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b22"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b28",
+  "b29"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, mismo estado presentado en b3 sin indicación de miles)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2018",
+ "columna_anterior": "2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados de la pág. 6 (b3) y se deja afuera la versión de la pág. 2 (b1) por ser el mismo estado duplicado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 (pág. 2, formato formulario Brønnøysund) y b3 (pág. 6, estado del informe) parecen el mismo resultatregnskap de Ålesund Fotball AS.",
+   "bloques": [
+    "b1",
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Las notas 15 y 16 (b28, b29) desglosan renglones de gastos/ingresos del estado de resultados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Overførsel iht. avtale",
+   "texto": "Son transferencias contractuales con AaFK y AaFK Sponsorservice; no está claro en qué renglón del estado están incluidas.",
+   "bloques": [
+    "b28",
+    "b29"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento solo de Ålesund Fotball AS (individual). La filial AaFK Sponsorservice AS se valora al costo, no hay consolidado. b1 y b3 son el mismo estado de resultados en dos formatos; se elige b3. Notas: 12 Driftsinntekter (b22), 13 Lønnskostnader (b23), 15/16 transferencias por acuerdos (b28, b29)."
+}

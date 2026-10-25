@@ -1,0 +1,393 @@
+{
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
+ "mdSha1": "2f71afaaf0678c5b388cee5d0943e3e8e1d19f56",
+ "ubicacionSha1": "8187ccdd2b9b8a682fcce8612f1c57eefe50ade7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T05:29:53.786Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b22"
+  ],
+  "notas_gastos": [
+   "b23",
+   "b28",
+   "b29"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; los importes se imprimen con todos los dígitos (ej. 41 591 465), lo que indica coronas."
+  },
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; Sum 41 591 465 coincide con el estado."
+  },
+  {
+   "bloque": "b23",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; Sum 7 197 700 coincide con Lønnskostnad del estado."
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; importe con todos los dígitos (14 120 965)."
+  },
+  {
+   "bloque": "b29",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; importe con todos los dígitos (19 109 812)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 344,
+   "etiqueta": "Driftsinntekter",
+   "actual": "41 591 465",
+   "anterior": "56 664 817",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 345,
+   "etiqueta": "Sum driftsinntekter",
+   "actual": "41 591 465",
+   "anterior": "56 664 817",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 346,
+   "etiqueta": "Varekostnad",
+   "actual": "3 189 119",
+   "anterior": "4 468 910",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 347,
+   "etiqueta": "Lønnskostnad",
+   "actual": "7 197 700",
+   "anterior": "7 573 112",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 348,
+   "etiqueta": "Avskrivning varige driftsmidler",
+   "actual": "1 445 907",
+   "anterior": "1 022 093",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 349,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "29 646 338",
+   "anterior": "45 275 303",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 350,
+   "etiqueta": "Sum driftskostnad",
+   "actual": "41 479 064",
+   "anterior": "58 339 419",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 351,
+   "etiqueta": "Driftsresultat",
+   "actual": "112 400",
+   "anterior": "-1 674 602",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 352,
+   "etiqueta": "Inntekt på investering i datterselskap",
+   "actual": "221 485",
+   "anterior": "126 895",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 353,
+   "etiqueta": "Annen renteinntekt",
+   "actual": "604 107",
+   "anterior": "619 872",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 354,
+   "etiqueta": "Annen finansinntekt",
+   "actual": "925 471",
+   "anterior": "55 756",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 355,
+   "etiqueta": "Sum finansinntekter",
+   "actual": "1 751 063",
+   "anterior": "802 523",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 356,
+   "etiqueta": "Nedskrivning av finansielle anleggsmidler",
+   "actual": "545 830",
+   "anterior": "550 801",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 357,
+   "etiqueta": "Annen rentekostnad",
+   "actual": "115 885",
+   "anterior": "123 813",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 358,
+   "etiqueta": "Annen finanskostnad",
+   "actual": "0",
+   "anterior": "68 656",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 359,
+   "etiqueta": "Sum finanskostnader",
+   "actual": "661 715",
+   "anterior": "743 270",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 360,
+   "etiqueta": "Sum netto finansposter",
+   "actual": "1 089 348",
+   "anterior": "59 253",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 361,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "1 201 748",
+   "anterior": "-1 615 349",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 362,
+   "etiqueta": "Ordinært resultat",
+   "actual": "1 201 748",
+   "anterior": "-1 615 349",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 363,
+   "etiqueta": "Årsresultat",
+   "actual": "1 201 748",
+   "anterior": "-1 615 349",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 364,
+   "etiqueta": "Overført til udekket tap",
+   "actual": "1 201 748",
+   "anterior": "-1 615 349",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 365,
+   "etiqueta": "Sum disponert",
+   "actual": "1 201 748",
+   "anterior": "-1 615 349",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 815,
+   "etiqueta": "Salgsinntekter",
+   "actual": "41 591 465",
+   "anterior": "56 664 817",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Driftsinntekter"
+  },
+  {
+   "bloque": "b22",
+   "linea": 816,
+   "etiqueta": "Sum",
+   "actual": "41 591 465",
+   "anterior": "56 664 817",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Driftsinntekter"
+  },
+  {
+   "bloque": "b23",
+   "linea": 822,
+   "etiqueta": "Lønninger",
+   "actual": "5 690 818",
+   "anterior": "6 068 860",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b23",
+   "linea": 823,
+   "etiqueta": "Arbeidsgiveravgift",
+   "actual": "843 734",
+   "anterior": "1 031 174",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b23",
+   "linea": 824,
+   "etiqueta": "Pensjonskostnader",
+   "actual": "95 287",
+   "anterior": "125 358",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b23",
+   "linea": 825,
+   "etiqueta": "Andre ytelser",
+   "actual": "567 861",
+   "anterior": "347 720",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b23",
+   "linea": 826,
+   "etiqueta": "Sum",
+   "actual": "7 197 700",
+   "anterior": "7 573 112",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 345,
+  "actual": "41 591 465"
+ },
+ "total_gastos": {
+  "linea": 350,
+  "actual": "41 479 064"
+ },
+ "resultado": {
+  "linea": 363,
+  "actual": "1 201 748",
+  "anterior": "-1 615 349"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Overførsel iht. avtale' 14 120 965 (L880) como gasto que desglosa 'Annen driftskostnad'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Annen driftskostnad",
+   "texto": "L876 describe que Ålesund Fotball AS cubre el fútbol de élite de AaFK, pero la nota no dice en qué renglón del estado está incluida.",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera 'Overførsel iht. avtale' 19 109 812 (L896) por no poder asignarlo a un renglón del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "L892 indica que es 99% del resultado de AaFK Sponsorservice AS; sumado a L880 supera Annen driftskostnad (29 646 338), así que no está claro si es ingreso o gasto.",
+   "bloques": [
+    "b29"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Los importes están en coronas (unidades) aunque el documento no lo diga?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque imprime la escala; los importes con todos los dígitos sugieren unidades.",
+   "bloques": [
+    "b3",
+    "b22",
+    "b23",
+    "b28",
+    "b29"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Sin impuesto a las ganancias impreso. L827 (årsverk, cantidad de empleados) no es importe y se excluyó. b28 y b29 no se cargaron por falta de vínculo claro con el estado."
+}
