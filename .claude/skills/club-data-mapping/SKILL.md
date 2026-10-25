@@ -37,7 +37,7 @@ está resumida en la sección 5 y el detalle en `referencia/fx.md`.
   (`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS`, en `js/finanzas-calc.js`) no leen `category-map.js` en vivo, tienen su
   propia lista: si tocás uno, sincronizá el otro a mano (dónde vive cada archivo: `Admin/ARQUITECTURA.md`, la lista de archivos del principio, donde figuran `data/category-map.js` y `data/currency-map.js`).
 - `normalizedCategory` es una clave INTERNA: la usan `computeYearGeneric()` y `sumCat()` para los KPIs de Finanzas, los gráficos y
-  `wagesToTurnover`. NUNCA se muestra. Lo que ve el usuario es `rawLabel`, tal cual lo escribe el club: no lo traduzcas ni lo prolijes.
+  `wagesToTurnover`. NUNCA se muestra. `rawLabel` es la evidencia: en el JSON y en `fuentes/` queda tal cual lo escribe el club, no lo traduzcas ni lo prolijes. La pantalla muestra, en cambio, su glosa en el idioma del visitante (`data/<país>/<club>-glosas.js`, con el original en el title de la celda); la glosa la escribe `tools/glosas-etiquetas.mjs` sola al escribir un año, no a mano.
 - El motor genérico (`computeYearGeneric`, para todos los clubes) espera `revenueLines`/`expenseLines`: arrays de
   `{ rawLabel, normalizedCategory, amountNative, disclosureLevel, items? }`. En el JSON del club los campos se llaman
   `{ label, category, subcategory, amount, disclosure, items? }`: `subcategory` es la `normalizedCategory` (la que se elige con este
