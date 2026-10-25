@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1093 — cargar-ejercicio.mjs, nbb.mjs, tipo-sin-desglose.js, ingreso-derivado.js, audit-chequeos-3.js: la carga marca el ingreso (revenue_basis, revenue_derivation) y reconstruye el belga con margen + compras y servicios [455 · cargar-ejercicio.mjs, nbb.mjs, tipo-sin-desglose.js, ingreso-derivado.js, ingreso-base.mjs, audit-chequeos-3.js]
+- `cargar-ejercicio.mjs`: cada año cargado lleva `baseIngreso` (completo, ventas totales o margen bruto) y `derivacionIngreso` si se reconstruyó; un año de margen sin reconstrucción posible avisa. La regla es una sola, `baseDeIngreso` de `ingreso-derivado.js`, compartida con `fos ingreso-base`.
+- `nbb.mjs`: con 9900 y 60/61 impresos y un residuo negativo (las partes de ingreso impresas no cuadran) el ingreso es una línea, 70/74 = 9900 + 60/61, en vez del margen; no cambia ningún año cargado salvo Patro Eisden 2020 (ya corregido en el dato); 4 columnas de 302 documentos belgas usan la rama.
+- `tipo-sin-desglose.js`: reconoce margen bruto en más idiomas; `audit-chequeos-3.js`: `ingreso-sin-base` sube a P2.
+- Medición: idéntico (lote completo); la rama nueva de nbb no está en los lotes de prueba, por eso se probó a mano sobre los 302 documentos belgas con estado NBB.
+
 ## Versión 1092 — Patro Eisden 2019/20: el ingreso se reconstruye con margen bruto + compras y servicios [455 · patroeisden-be]
 - El documento corregido imprime el margen bruto (277.991) y compras y servicios (423.072): el ingreso es 701.063 EUR (70/74 = 9900 + 60/61), y el sitio mostraba solo el margen. Ahora: una línea «Bedrijfsopbrengsten» de 0,701 M (como Patro Eisden 2019) y 0,423 M de compras y servicios en los gastos; el resultado (-0,708 M) no cambia. No se abre en ventas y otros: las partes que el documento imprime (70 y 73) no cuadran con el margen.
 - Marcado `revenue_basis: sales_total` y `revenue_derivation` (12 reconstruidos); `audit.js` P0 0, P1 0 y comparado en pantalla (0,8 M USD en 2019/20).

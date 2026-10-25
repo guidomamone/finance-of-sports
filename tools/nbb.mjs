@@ -115,6 +115,14 @@ function columna(R, col) {
       if (Math.abs(residuo) > 0.5) hojas.push({ codigo: '9900', lado: 'ingreso', valor: residuo, linea: R['9900'].linea, etiqueta: ETIQUETA_RESIDUO, residuo: true });
       hoja('60/61', 'gasto');
       ingOp = ingComp + residuo; gasOp = g('60/61'); nOp = comps.length + 2;
+    } else if (conOmzet && has('9900') && has('60/61')) {
+      // el documento imprime el margen y las compras y servicios, pero las partes de ingreso que imprime no cuadran con ellos (residuo negativo: p. ej. una
+      // corrección que agrega 73 y deja 70 sin ajustar): el ingreso del año se recupera igual de la identidad 70/74 = 9900 + 60/61 (tools/ingreso-derivado.js), en una
+      // sola línea, sin inventar una composición.
+      const total = g('9900') + g('60/61');
+      hojas.push({ codigo: '70/74', lado: 'ingreso', valor: total, linea: R['9900'].linea, etiqueta: ROTULO['70/74'], reconstruido: true });
+      hoja('60/61', 'gasto');
+      ingOp = total; gasOp = g('60/61'); nOp = 2;
     } else if (has('9900')) {
       if (g('9900') >= 0) { hoja('9900', 'ingreso'); ingOp = g('9900'); } else { hoja('9900', 'gasto', -1); gasOp = -g('9900'); }
       nOp = 1;

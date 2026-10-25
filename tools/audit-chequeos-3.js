@@ -405,8 +405,8 @@ function checkCambioDeFormatoSinNota(api) {
 }
 
 // Los ejercicios con `revenue_derivation` no imprimen sus ingresos: se reconstruyeron como margen bruto + compras y servicios del propio documento (tools/ingreso-derivado.js).
-// P1 si uno ya no cierra (se recargó y perdió la reconstrucción: el visitante vería el margen como si fuera ingreso). P3 si un ejercicio con ingresos no tiene
-// `revenue_basis` (fos ingreso-base lo completa; cargar-ejercicio.mjs debe escribirlo al cargar). Punto 455.
+// P1 si uno ya no cierra (se recargó y perdió la reconstrucción: el visitante vería el margen como si fuera ingreso). P2 si un ejercicio con ingresos no tiene
+// `revenue_basis` (cargar-ejercicio.mjs lo escribe al cargar; fos ingreso-base lo completa en lo ya cargado). Punto 455.
 function checkIngresoBase(api) {
   const { cierraConDocumento, RENGLON_IMPLICITO } = require('./ingreso-derivado.js');
   const noCierra = [], sinBase = [];
@@ -422,7 +422,7 @@ function checkIngresoBase(api) {
     }
   }
   if (noCierra.length) add('P1', 'ingreso-reconstruido-no-cierra', `${noCierra.length} ejercicio(s) con revenue_derivation cuyo ingreso ya no es margen bruto + compras y servicios del documento: ${noCierra.slice(0, 6).join(', ')}${noCierra.length > 6 ? ', …' : ''}. Se recargó y perdió la reconstrucción (Admin/mediciones/455-ingresos-con-margen-bruto.md)`);
-  if (sinBase.length) add('P3', 'ingreso-sin-base', `${sinBase.length} ejercicio(s) con ingresos y sin revenue_basis: ${sinBase.slice(0, 6).join(', ')}${sinBase.length > 6 ? ', …' : ''}. node tools/fos.mjs ingreso-base --escribir`);
+  if (sinBase.length) add('P2', 'ingreso-sin-base', `${sinBase.length} ejercicio(s) con ingresos y sin revenue_basis: ${sinBase.slice(0, 6).join(', ')}${sinBase.length > 6 ? ', …' : ''}. node tools/fos.mjs ingreso-base --escribir`);
 }
 
 function checkFuentesPublicas(api) {

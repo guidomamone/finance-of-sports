@@ -43,4 +43,18 @@ function cierraConDocumento(rutaPdf, total) {
   return Math.abs(total - (d.margen + d.costos) / 1e6) <= TOL;
 }
 
-module.exports = { margenYCostos, cierraConDocumento, RENGLON_IMPLICITO, TOL };
+// Qué son los ingresos cargados de un ejercicio (`revenue_basis`) y, si el documento no los imprime y se reconstruyeron, cómo (`revenue_derivation`). Lo usan
+// tools/ingreso-base.mjs (años ya cargados) y tools/cargar-ejercicio.mjs (al cargar un año): una sola regla.
+//   lineas: las líneas de ingresos {rawLabel, normalizedCategory}; sinDesglose: el `sinDesglose` del año ({lado, tipo}); documento: ruta del PDF; totalRevenue: el total
+//   de ingresos cargado (millones); sourceId: el id de la fuente del año. Devuelve {base, derivacion?} o null si el año no tiene ingresos.
+function baseDeIngreso({ lineas, sinDesglose, documento, totalRevenue, sourceId }) {
+  if (!lineas || !lineas.length) return null;
+  const sd = (sinDesglose || []).find((e) => /^(revenue|ingreso)$/.test(e.lado));
+  const reconstruido = (documento && cierraConDocumento(documento, totalRevenue) === true) || lineas.some((l) => RENGLON_IMPLICITO.test(l.rawLabel || ''));
+  if (reconstruido) return { base: lineas.length === 1 ? 'sales_total' : 'full', derivacion: { method: 'margin_plus_costs', sources: [sourceId] } };
+  if (sd && sd.tipo === 'gross_margin') return { base: 'gross_margin' };
+  if (lineas.length === 1 && /^lump_/.test(lineas[0].normalizedCategory || '')) return { base: 'sales_total' };
+  return { base: 'full' };
+}
+
+module.exports = { margenYCostos, cierraConDocumento, baseDeIngreso, RENGLON_IMPLICITO, TOL };

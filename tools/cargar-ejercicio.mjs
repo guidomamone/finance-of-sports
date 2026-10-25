@@ -6,6 +6,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { resolve, basename, dirname } from 'node:path';
 import { cambioDeFormato, anioAnterior, textoSugerido } from './cambio-formato.js';
 import { tipoSinDesglose } from './tipo-sin-desglose.js';
+import { baseDeIngreso } from './ingreso-derivado.js';
 import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs';
 import { respuestaPorDetalle, ajusteDe, bolsonDeDeporte, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, FINANCIERO_RE, HOY, norm, r6 } from './cargar.mjs';
 
@@ -201,11 +202,16 @@ export function faseEjercicio(ctx) {
   { const avPer = P.avisos.find((x) => /^perímetro(:| heredado)/.test(x));
     if (ajPer) P.procedencia.perimetro = { valor: perimetro, fuente: `ajuste manual (${ajPer.fecha})`, estado: 'ok' };
     else if (avPer) P.procedencia.perimetro = { valor: perimetro, fuente: /heredado/.test(avPer) ? 'heredado del año cargado más cercano' : 'respuesta de Guido en la cola', estado: 'ok' }; }
+  // QUÉ SON LOS INGRESOS DEL AÑO (`baseIngreso`: completo, ventas totales o margen bruto) y, si el documento no los imprime y se reconstruyeron con margen + compras y
+  // servicios, `derivacionIngreso` (tools/ingreso-derivado.js, la misma regla que `fos ingreso-base`). Un año de margen bruto sin reconstrucción posible avisa: el ingreso
+  // real no se conoce y Ligas lo trata como hueco (punto 455).
+  const bi = baseDeIngreso({ lineas: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat })), sinDesglose, documento: pdf, totalRevenue: T.officialTotalRevenue, sourceId });
+  if (bi && bi.base === 'gross_margin') P.avisos.push('ingresos: el documento imprime solo el margen bruto (ya neto de costos), no los ingresos; se marca gross_margin. Si el documento imprime también compras y servicios (60, 61 o 60/61), el ingreso se reconstruye como margen + compras y servicios');
   P.ejercicio = {
     clubId, year, cierre: alta.ejercicio.cierre, perimetro,
     revenueLines: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf, _fuenteCat: f.fuenteCat || null })),
     expenseLines: exp.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf, _fuenteCat: f.fuenteCat || null })),
-    fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: meta.profitOnPlayerSales || 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(Object.keys(incluidoEn).length ? { incluidoEn } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
+    fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: meta.profitOnPlayerSales || 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(Object.keys(incluidoEn).length ? { incluidoEn } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), ...(bi ? { baseIngreso: bi.base, ...(bi.derivacion ? { derivacionIngreso: bi.derivacion } : {}) } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
     source: sourceId ? { id: sourceId, clubId, title: `${club.name || club.displayName} — ${basename(pdf, '.pdf')} (ejercicio ${year})`, type: campo('reportType').valor || 'official_balance_sheet', reliability: 'primary', documento: pdf, note: `Cargado por tools/cargar.mjs (${HOY}) desde la transcripción ${e.md}; categorías del pipeline (${cj.modelo || 'Jev/Claude'}). Perímetro: ${perimetro || '?'}.` } : null,
   };
   // CAMBIO DE FORMATO del balance (resumido: ingresos en una sola línea sin desglosar; completo: desglosados) contra el año anterior cargado: la nota pública

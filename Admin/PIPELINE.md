@@ -310,8 +310,11 @@ Mitigaciones:
   Escalón "códigos NBB": un estado belga con los códigos legales del
   esquema NBB (de 70/76A, 70/74 o 9900 hasta 9904; en tabla o en texto suelto) se lee por sus códigos: se cargan las hojas del esquema
   con el signo de su código (las reversiones "(+)/(-)" negativas restan; el detalle 600/8 + 609 o 650/652/9 si suma su renglón, nunca
-  los dos; la Brutomarge abreviada se abre en Omzet/60/61 + el residuo implícito solo si el residuo no es negativo, y si no queda sin
-  abrir: negativa, como gasto). Compuerta: cierran EXACTO (media unidad por fila) todos los totales impresos de la columna del año; si
+  los dos; la Brutomarge abreviada se abre en Omzet/60/61 + el residuo implícito solo si el residuo no es negativo; con residuo
+  negativo y 60/61 impreso el ingreso es una sola línea, 70/74 = 9900 + 60/61 (las partes impresas no cuadran: no se inventa una
+  composición); sin 60/61 queda sin abrir: el margen, o como gasto si es negativa). Cada año cargado lleva `revenue_basis` (completo,
+  ventas totales o margen bruto) y, si se reconstruyó con 60/61, `revenue_derivation` (`tools/ingreso-derivado.js`; `node tools/fos.mjs
+  ingreso-base` lo completa en lo ya cargado; `audit.js`: `ingreso-reconstruido-no-cierra` e `ingreso-sin-base`). Compuerta: cierran EXACTO (media unidad por fila) todos los totales impresos de la columna del año; si
   no, la escalera de siempre. No corre si el documento tiene ajustes `fila` (manda el ajuste). Con esas filas la escalera prueba primero
   la lectura 4. Dos escalones más, con la misma lectura: el chequeo del año vecino compara los códigos 9904 y 9901 impresos de las dos
   columnas cuando los ingresos se presentan distinto (Brutomarge abierta en un año y no en el otro, reclasificaciones, esquema abreviado

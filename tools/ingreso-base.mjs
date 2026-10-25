@@ -18,25 +18,18 @@ import { resolve } from 'node:path';
 import { modificarClub, leerJsonClub } from './club-json.mjs';
 import { deJson } from './json-datos.mjs';
 
-const { cierraConDocumento, RENGLON_IMPLICITO } = createRequire(import.meta.url)('./ingreso-derivado.js');
+const { baseDeIngreso } = createRequire(import.meta.url)('./ingreso-derivado.js');
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const pais = A.includes('--pais') ? A[A.indexOf('--pais') + 1] : null;
 const escribir = A.includes('--escribir');
-const esIngreso = (lado) => /^(revenue|ingreso)$/.test(lado);
 
 // La base de un ejercicio y, si corresponde, su derivación. `c` es el club en el formato del sitio (deJson).
 export function baseDelEjercicio(c, y) {
   const meta = (c.datos.fiscalYearMeta || {})[y]; if (!meta) return null;
   const lineas = (c.datos.revenueLinesByYear || {})[y] || []; if (!lineas.length) return null;
-  const sd = (meta.sinDesglose || []).find((e) => esIngreso(e.lado));
   const fuente = c.sources[meta.sourceId];
-  const reconstruido = (fuente && fuente.documento && cierraConDocumento(fuente.documento, meta.officialTotalRevenue) === true)
-    || lineas.some((l) => RENGLON_IMPLICITO.test(l.rawLabel || ''));
-  if (reconstruido) return { base: lineas.length === 1 ? 'sales_total' : 'full', derivacion: { method: 'margin_plus_costs', sources: [meta.sourceId] } };
-  if (sd && sd.tipo === 'gross_margin') return { base: 'gross_margin' };
-  if (lineas.length === 1 && /^lump_/.test(lineas[0].normalizedCategory || '')) return { base: 'sales_total' };
-  return { base: 'full' };
+  return baseDeIngreso({ lineas, sinDesglose: meta.sinDesglose, documento: fuente && fuente.documento, totalRevenue: meta.officialTotalRevenue, sourceId: meta.sourceId });
 }
 
 function completar(c, aplicar) {
