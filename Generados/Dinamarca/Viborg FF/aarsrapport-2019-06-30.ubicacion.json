@@ -1,0 +1,155 @@
+{
+ "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.pdf",
+ "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.md",
+ "mdSha1": "41ea216c2617c8350464a54b669f91e4525df9b3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T18:55:29.794Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    40,
+    48
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    382,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    402,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    435,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    470,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    501,
+    512
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    536,
+    544
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    548,
+    550
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    565,
+    575
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    579,
+    589
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    604,
+    611
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    615,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    625,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    645,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    656,
+    659
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    791,
+    796
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b7"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la Resultatopgørelse: '2018/19 DKK | 2017/18 DKK' (importes en coronas, sin 't.')",
+ "moneda": "DKK",
+ "columna_ejercicio": "2018/19 DKK",
+ "columna_anterior": "2017/18 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Viborg F.F. Prof. Fodbold A/S en b3 (pág. 13). b7 es la nota 2 Personaleomkostninger, que desglosa los gastos de personal. El resto de los bloques son balance, patrimonio, activo fijo, acciones propias y deudas, y quedan excluidos."
+}

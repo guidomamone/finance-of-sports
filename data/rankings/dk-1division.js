@@ -45,8 +45,12 @@ window.RANKINGS["dk-1division"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 12,
+    wiki: {"t":"2018–19 Danish 1st Division","lang":"en","at":"2026-10-25","n":12},
     clubs: [
+      { id:"viborg-dk", revenue:4.269, reportType:"official_balance_sheet",
+        sourceId:"viborg-dk-aarsrapport-2019-06-30",
+        mix:[["Venta de Jugadores",0.15],["Fútbol profesional (sin desglosar por la fuente)",4.119]] },
       { id:"fredericia-dk", revenue:2.073, reportType:"official_balance_sheet",
         sourceId:"fredericia-dk-aarsrapport-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.073]] },

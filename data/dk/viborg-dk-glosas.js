@@ -1,6 +1,8 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)":{"es":"Amortizaciones y deterioros de activos fijos intangibles y tangibles — derechos de jugadores (según dos notas)","en":"Amortization, depreciation and impairment of intangible and tangible fixed assets — player registrations (per two notes)"},
 "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)":{"es":"Amortizaciones y deterioros de activos fijos intangibles y tangibles — resto: bienes de uso y licencias (según dos notas)","en":"Amortization, depreciation and impairment of intangible and tangible fixed assets — other: property, plant and equipment and licenses (per two notes)"},
+"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver — derechos de jugadores (según dos notas)":{"es":"Amortización y deterioro de activos fijos intangibles y tangibles — derechos de jugadores (según dos notas)","en":"Amortization, depreciation and impairment of intangible and tangible fixed assets — player rights (according to two notes)"},
+"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver — resto: bienes de uso y licencias (según dos notas)":{"es":"Amortización y deterioro de activos fijos intangibles y tangibles — resto: bienes de uso y licencias (según dos notas)","en":"Amortization, depreciation and impairment of intangible and tangible fixed assets — other: property, plant and equipment and licenses (according to two notes)"},
 "Afskrivning på andre anlæg, driftsmateriel og inventar":{"es":"Depreciación de otras instalaciones, utilaje y mobiliario","en":"Depreciation of other fixtures and fittings, tools and equipment"},
 "Afskrivning på grunde og bygninger":{"es":"Depreciación de terrenos y construcciones","en":"Depreciation of land and buildings"},
 "Afskrivning på indretning af lejede lokaler":{"es":"Amortización de acondicionamiento de locales arrendados","en":"Depreciation of leasehold improvements"},
@@ -29,6 +31,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Nettoomsætning Revenue":{"es":"Importe neto de la cifra de negocios","en":"Revenue"},
 "Pensioner":{"es":"Pensiones y prestaciones sociales","en":"Pensions"},
 "Personaleomkostninger":{"es":"Gastos de personal","en":"Staff costs"},
+"Skat af årets resultat":{"es":"Impuesto sobre el beneficio","en":"Tax on profit/loss for the year"},
 "Skat af årets resultat Tax on profit or loss for the year":{"es":"Impuesto sobre el resultado del ejercicio","en":"Tax on profit or loss for the year"},
 "Vareforbrug":{"es":"Consumo de mercaderías","en":"Cost of sales"},
 "Vareforbrug (costo de mercadería + costos de cesión/préstamo de jugadores, mezclados sin separar)":{"es":"Consumo de mercaderías","en":"Cost of sales"},

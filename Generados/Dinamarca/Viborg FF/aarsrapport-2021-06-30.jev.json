@@ -1,111 +1,120 @@
 {
  "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.md",
- "generatedAt": "2026-09-30T22:49:06.065Z",
- "rubrosHuella": "42e2a188d48b918b2a8759afc2b6026b731c64fd",
+ "generatedAt": "2026-10-25T18:55:08.180Z",
+ "rubrosHuella": "6b2fdc82151a1e715ffd62f89951e5c64b33f6b4",
  "rubros": [
   {
-   "label": "Salg af egne kapitalandele 0",
-   "lado": "expense",
-   "page": 20,
-   "section": "Kapitalforhøjelse 21.240.000 21.240.000 0 / Omkostninger ved kapitalændringer 0 -224.353 0",
-   "choice": "other_expenses",
-   "confidence": 0.77,
-   "desdeCache": true
-  },
-  {
-   "label": "Overførsler til/fra andre reserver",
-   "lado": "expense",
-   "page": 20,
-   "section": "Kapitalforhøjelse 21.240.000 21.240.000 0 / Omkostninger ved kapitalændringer 0 -224.353 0",
-   "choice": "other_expenses",
-   "confidence": 0.92,
-   "desdeCache": true
-  },
-  {
-   "label": "Saldo pr. 30.06.21 30.288.500",
-   "lado": "expense",
-   "page": 20,
-   "section": "Kapitalforhøjelse 21.240.000 21.240.000 0 / Omkostninger ved kapitalændringer 0 -224.353 0",
-   "choice": "other_expenses",
-   "confidence": 0.87,
-   "desdeCache": true
-  },
-  {
-   "label": "Afdrag på langfristede gældsforpligtelser i øvrigt",
-   "lado": "expense",
-   "page": 21,
-   "section": "Omkostninger forbundet med ændringer i aktiekapital -224.353 0",
-   "choice": "other_expenses",
-   "confidence": 0.87,
-   "desdeCache": true
-  },
-  {
-   "label": "Pengestrømme fra finansiering",
-   "lado": "expense",
-   "page": 21,
-   "section": "Omkostninger forbundet med ændringer i aktiekapital -224.353 0",
-   "choice": "other_expenses",
-   "confidence": 0.92,
-   "desdeCache": true
-  },
-  {
-   "label": "Årets samlede pengestrømme",
-   "lado": "expense",
-   "page": 21,
-   "section": "Omkostninger forbundet med ændringer i aktiekapital -224.353 0",
-   "choice": "other_expenses",
-   "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
-   "label": "Likvide beholdninger ved årets begyndelse",
-   "lado": "expense",
-   "page": 21,
-   "section": "Omkostninger forbundet med ændringer i aktiekapital -224.353 0",
-   "choice": "other_expenses",
-   "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
-   "label": "Pengestrømme fra driften",
+   "label": "Nettoomsætning",
    "lado": "revenue",
-   "page": 21,
-   "section": "Modtagne renteindtægter og lignende indtægter 436 0",
+   "page": 17,
+   "section": "estado",
    "choice": "lump_football_operations",
-   "confidence": 0.69,
+   "confidence": 1,
    "desdeCache": true
   },
   {
-   "label": "Køb af immaterielle anlægsaktiver",
+   "label": "Andre driftsindtægter",
    "lado": "revenue",
-   "page": 21,
-   "section": "Modtagne renteindtægter og lignende indtægter 436 0",
+   "page": 17,
+   "section": "estado",
    "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Vareforbrug",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre eksterne omkostninger",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+   "lado": "expense",
+   "page": null,
+   "section": "ajuste manual",
+   "choice": "player_amortisation",
    "confidence": 0.89,
    "desdeCache": true
   },
   {
-   "label": "Betalte renteomkostninger og lignende omkostninger",
+   "label": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
    "lado": "expense",
-   "page": 21,
-   "section": "Modtagne renteindtægter og lignende indtægter 436 0",
+   "page": 17,
+   "section": "ajuste manual",
+   "choice": "depreciation",
+   "confidence": 0.3,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre driftsomkostninger",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
    "choice": "other_expenses",
-   "confidence": 0.84,
+   "confidence": 0.92,
    "top3": [
     [
      "other_expenses",
-     0.86
-    ],
-    [
-     "admin_general_expense",
-     0.14
+     0.93
     ],
     [
      "lump_football_operations_expense",
-     0
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.02
     ]
    ],
-   "tokens": 1025
+   "tokens": 1029
   }
  ]
 }

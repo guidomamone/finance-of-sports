@@ -1,32 +1,110 @@
 {
- "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.md",
- "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.pdf",
- "club": "viborg-dk",
- "year": 2019,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:00:16.470Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": true,
-  "filas": 1,
-  "notasUsadas": []
- },
- "ladoConocido": 1,
- "rubros": [
-  {
-   "label": "Finansielle omkostninger",
-   "lado": "expense",
-   "page": 13,
-   "section": "Finansielle indtægter 241 100",
-   "values": [
-    -27.646
-   ],
-   "origen": "estado 3"
-  }
- ]
+  "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.md",
+  "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.pdf",
+  "club": "viborg-dk",
+  "year": 2019,
+  "generatedAt": "2026-10-25T18:55:44.229Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Nettoomsætning",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        27.01449
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Andre driftsindtægter",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.986599
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Vareforbrug",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        10.526932
+      ],
+      "glosa": "Consumo de mercaderías"
+    },
+    {
+      "label": "Andre eksterne omkostninger",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        1.810075
+      ],
+      "glosa": "Otros gastos externos"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        14.4085
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        1.159554
+      ],
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.136621
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Andre personaleomkostninger",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        1.544716
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver — derechos de jugadores (según dos notas)",
+      "lado": "expense",
+      "page": null,
+      "section": "ajuste manual",
+      "values": [
+        2.013092
+      ],
+      "glosa": "Amortizaciones y pérdidas por deterioro del inmovilizado material e intangible — derechos de jugadores (según dos notas)"
+    },
+    {
+      "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver — resto: bienes de uso y licencias (según dos notas)",
+      "lado": "expense",
+      "page": 13,
+      "section": "ajuste manual",
+      "values": [
+        0.647484
+      ],
+      "glosa": "Amortizaciones y pérdidas por deterioro del inmovilizado material e intangible — resto: bienes de uso y licencias (según dos notas)"
+    }
+  ]
 }

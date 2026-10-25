@@ -1,28 +1,184 @@
 {
  "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
- "generado": "2026-10-25T18:53:48.737Z",
+ "generado": "2026-10-25T18:56:18.553Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "el .categorias.json NO está al día con su .rubros.json / .jev.json (huellas, tools/huellas.mjs): hay que volver a correr la etapa 5"
-  },
   {
    "etapa": "alta:cierre",
    "motivo": "El nombre del archivo dice cierre 2021-06-30, pero el contenido cierra en el mes 9. ¿Cuál es el cierre de este ejercicio?"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
   "el documento cierra 2021-09-30 (ejercicio desde el 10-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "viborg-dk",
+  "year": 2021,
+  "cierre": "2021-09-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Nettoomsætning",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 25.046243,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre driftsindtægter",
+    "normalizedCategory": "player_sales",
+    "amountNative": 13.36242,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Vareforbrug",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -10.281021,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre eksterne omkostninger",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.986439,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lønninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -17.373091,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioner",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.368779,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre omkostninger til social sikring",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.150208,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre personaleomkostninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.454869,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Andre driftsomkostninger",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.056,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.24314,
+    "disclosureLevel": "aggregated",
+    "_pag": null,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-25): partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)"
+   },
+   {
+    "rawLabel": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.330117,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-25): partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2021-09-30",
+   "sourceId": "viborg-dk-aarsrapport-2021-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.043214,
+   "tax": -2.036,
+   "extraRows": [
+    {
+     "label": "Finansielle indtægter",
+     "value": 0.000436
+    },
+    {
+     "label": "Finansielle omkostninger",
+     "value": -0.04365
+    },
+    {
+     "label": "Skat af årets resultat",
+     "value": -2.036
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Nettoomsætning",
+     "lado": "revenue",
+     "importe": 25.046243,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 38.408663,
+   "officialTotalExpenses": 35.243664,
+   "officialPAT": 1.085785
+  },
+  "source": {
+   "id": "viborg-dk-aarsrapport-2021-06-30",
+   "clubId": "viborg-dk",
+   "title": "Viborg F.F. Prof. Fodbold A/S — aarsrapport-2021-06-30 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.md",
  "reemplaza": false,
  "periodo": {
@@ -36,5 +192,366 @@
  },
  "clubId": "viborg-dk",
  "year": 2021,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "campo": "fila",
+   "valor": "1.243.140,00",
+   "linea": null,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 560,
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "evidencia": "L832 (jugadores) y L846 (bienes de uso)",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "campo": "fila",
+   "valor": "330.117,00",
+   "linea": 560,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "evidencia": "L832 (jugadores) y L846 (bienes de uso)",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "evidencia": "L832 (jugadores) y L846 (bienes de uso)",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "evidencia": "L832 (jugadores) y L846 (bienes de uso)",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-25"
+  }
+ ],
+ "seleccion": {
+  "filas": 14,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Nettoomsætning",
+   "page": 17,
+   "native": 25.046243,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 25.046243,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 25.046243
+  },
+  {
+   "label": "Andre driftsindtægter",
+   "page": 17,
+   "native": 13.36242,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 13.36242,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.36242
+  },
+  {
+   "label": "Vareforbrug",
+   "page": 17,
+   "native": 10.281021,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 10.281021,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.281021
+  },
+  {
+   "label": "Andre eksterne omkostninger",
+   "page": 17,
+   "native": 2.986439,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.986439,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.986439
+  },
+  {
+   "label": "Lønninger",
+   "page": 24,
+   "native": 17.373091,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 17.373091,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -17.373091
+  },
+  {
+   "label": "Pensioner",
+   "page": 24,
+   "native": 1.368779,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 1.368779,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.368779
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "page": 24,
+   "native": 0.150208,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.150208,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.150208
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "page": 24,
+   "native": 1.454869,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 1.454869,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): Es un componente de los costos de personal sin desglose por sector; 'Andre personaleomkostninger' son otros costos del personal (3,56M) y, igual que sueldos/pensiones/cargas, no se separan del plantel. Mantener los 4 componentes en wages_squad para que sumen los 54.042.010 del estado y sea consistente con las cargas (regla: cargas con el sueldo). [1. Personaleomkostninger: Lønninger 46.236.951; Pensioner 3.886.859; Andre omkos]",
+   "destino": "expense",
+   "amountNative": -1.454869
+  },
+  {
+   "label": "Andre driftsomkostninger",
+   "page": 17,
+   "native": 0.056,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.056,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.056
+  },
+  {
+   "label": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+   "page": null,
+   "native": 1.24314,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.24314,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-25): partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -1.24314
+  },
+  {
+   "label": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
+   "page": 17,
+   "native": 0.330117,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.330117,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-25): partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.330117
+  },
+  {
+   "label": "Finansielle indtægter",
+   "page": null,
+   "native": 0.000436,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Finansielle omkostninger",
+   "page": null,
+   "native": -0.04365,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skat af årets resultat",
+   "page": null,
+   "native": -2.036,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Personaleomkostninger\")": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 38.408663,
+  "expSum": -35.243664,
+  "officialTotalRevenue": 38.408663,
+  "officialTotalExpenses": 35.243664,
+  "officialPAT": 1.085785,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1.085785,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 38.408663
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 35.243664
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "DKK@2021-09-30",
+  "fx": 6.422,
+  "source": "market_close",
+  "label": "Tipo oficial de Danmarks Nationalbank al 2021-09-30"
+ },
+ "liga": {
+  "valor": "dk-superliga",
+  "fuente": "roster cacheado de \"2021–22 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Viborg FF\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-09-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (2 de 2 fechas de fin de mes caen en el mes 9))",
+   "estado": "pregunta"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "DKK@2021-09-30",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 6.422. --escribir agrega 'DKK@2021-09-30' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "viborg-dk-aarsrapport-2021-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "dk-superliga",
+   "fuente": "roster cacheado de \"2021–22 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Viborg FF\"",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 2,
+  "lineasGasto": 9,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

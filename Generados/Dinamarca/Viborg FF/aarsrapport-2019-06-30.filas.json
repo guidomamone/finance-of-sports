@@ -1,0 +1,230 @@
+{
+ "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.pdf",
+ "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.md",
+ "mdSha1": "41ea216c2617c8350464a54b669f91e4525df9b3",
+ "ubicacionSha1": "8d2f226b78e018edb0406e02275851d7db2282e8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T18:55:43.792Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b7"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2018/19 DKK' (L402), importes en coronas sin indicación de miles"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2018/19 DKK' (L536); el total de L543 coincide con L409"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 404,
+   "etiqueta": "Nettoomsætning",
+   "actual": "27.014.490",
+   "anterior": "22.943.009",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 405,
+   "etiqueta": "Andre driftsindtægter",
+   "actual": "986.599",
+   "anterior": "3.633.869",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 406,
+   "etiqueta": "Vareforbrug",
+   "actual": "-10.526.932",
+   "anterior": "-9.679.819",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 407,
+   "etiqueta": "Andre eksterne omkostninger",
+   "actual": "-1.810.075",
+   "anterior": "-1.434.229",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 408,
+   "etiqueta": "Bruttofortjeneste",
+   "actual": "15.664.082",
+   "anterior": "15.462.830",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 409,
+   "etiqueta": "Personaleomkostninger",
+   "actual": "-17.249.391",
+   "anterior": "-16.539.492",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 410,
+   "etiqueta": "Resultat før af- og nedskrivninger",
+   "actual": "-1.585.309",
+   "anterior": "-1.076.662",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 411,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "actual": "-2.660.576",
+   "anterior": "-3.084.068",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 412,
+   "etiqueta": "Resultat før finansielle poster",
+   "actual": "-4.245.885",
+   "anterior": "-4.160.730",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 413,
+   "etiqueta": "Finansielle indtægter",
+   "actual": "241",
+   "anterior": "100",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 414,
+   "etiqueta": "Finansielle omkostninger",
+   "actual": "-27.646",
+   "anterior": "-25.995",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 415,
+   "etiqueta": "Resultat før skat",
+   "actual": "-4.273.290",
+   "anterior": "-4.186.625",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 416,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "0",
+   "anterior": "-48.000",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 417,
+   "etiqueta": "Årets resultat",
+   "actual": "-4.273.290",
+   "anterior": "-4.234.625",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 539,
+   "etiqueta": "Lønninger",
+   "actual": "14.408.500",
+   "anterior": "13.563.333",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b7",
+   "linea": 540,
+   "etiqueta": "Pensioner",
+   "actual": "1.159.554",
+   "anterior": "1.373.317",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b7",
+   "linea": 541,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "136.621",
+   "anterior": "132.137",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b7",
+   "linea": 542,
+   "etiqueta": "Andre personaleomkostninger",
+   "actual": "1.544.716",
+   "anterior": "1.470.705",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b7",
+   "linea": 543,
+   "etiqueta": "I alt",
+   "actual": "17.249.391",
+   "anterior": "16.539.492",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 417,
+  "actual": "-4.273.290",
+  "anterior": "-4.234.625"
+ },
+ "dudas": [],
+ "observaciones": "Se omitió la distribución del resultado (L418-L420), que repite el resultado del ejercicio, y el número medio de empleados (L544), que no es un importe. El estado no imprime totales de ingresos ni de gastos. En L409 y L416 el número de nota ('2', '3') se quitó de la etiqueta."
+}

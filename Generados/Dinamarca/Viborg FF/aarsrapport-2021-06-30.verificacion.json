@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
  "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.md",
- "generado": "2026-10-25T18:53:20.567Z",
+ "generado": "2026-10-25T18:56:16.964Z",
  "scriptHuella": "f1d4dee41de6",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "viborg-dk",
  "year": 2021,
  "escala": {
@@ -67,10 +67,7 @@
    "fecha": "2026-10-25"
   }
  ],
- "cola": [
-  "2377996",
-  "861426b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -89,14 +86,14 @@
    "dif": 8.881784197001252e-15
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 31.401157; el sitio tiene 31.401157"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 31.401157 en aarsrapport-2020-06-30.pdf y 31.401157 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [
