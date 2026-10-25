@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1098 — cargar-ejercicio.mjs, tipo-sin-desglose.js: el rótulo de una línea única desconocido se aprende por la cola, y el ingreso del año anterior de margen bruto se anota como ancla [455 · cargar-ejercicio.mjs, tipo-sin-desglose.js]
+- `tipo-sin-desglose.js`: mira primero lo aprendido (`Admin/registros/tipos-sin-desglose.jsonl`) y después las palabras; `tipoConocido` da null si nada reconoce el rótulo. `cargar-ejercicio.mjs` manda esa línea de ingresos a la cola (motivo `tipo-linea`, no frena) y aprende la respuesta: no se pregunta dos veces.
+- `cargar-ejercicio.mjs`: si el año anterior del club es de margen bruto y el documento (esquema belga) imprime el ingreso de ese año en su columna anterior, `--escribir` lo agrega a `Admin/registros/ingresos-ancla.jsonl` (Lommel 2024 propone los 5,806012 M EUR de 2022/23).
+- Medición: idéntico (lote completo); ni la cola nueva ni el ancla aparecen en los lotes de prueba, y se probaron a mano.
+
 ## Versión 1097 — estimar.mjs: tope de error por país y caso, automático [455 · estimar.mjs]
 - `ERROR_MAXIMO` = 60 % (decisión de Guido): un estimado no se publica si el error mediano medido de su país y su caso (club nuevo, entre dos reales, antes o después; con menos de 8 club-años medidos vale el error global del caso) lo pasa. Se recalcula en cada `--escribir` y `--check` (la auditoría, `estimados-desfasado`). Regla escrita en `Admin/CONVENCIONES-DATOS.md`.
 - Efecto: 1.528 estimados de club nuevo dejan de publicarse (Portugal 781, Colombia 512, Grecia 233, Croacia 2); Bélgica, Dinamarca y los de club con otros años siguen.

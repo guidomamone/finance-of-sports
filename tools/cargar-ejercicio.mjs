@@ -2,10 +2,11 @@
 // tools/cargar-ejercicio.mjs — las últimas fases de proponer(): totales y tie-out, la segunda lectura iXBRL, tipo de cambio, liga y el ejercicio que se escribiría
 // Mudado de tools/cargar.mjs sin cambiar una línea (salvo `export`); tools/cargar.mjs lo importa y re-exporta lo que ya exportaba.
 // ============================================================================
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { resolve, basename, dirname } from 'node:path';
 import { cambioDeFormato, anioAnterior, textoSugerido } from './cambio-formato.js';
-import { tipoSinDesglose } from './tipo-sin-desglose.js';
+import { tipoSinDesglose, tipoConocido, aprender } from './tipo-sin-desglose.js';
+import { leerEstadoNBB } from './nbb.mjs';
 import { baseDeIngreso } from './ingreso-derivado.js';
 import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs';
 import { respuestaPorDetalle, ajusteDe, bolsonDeDeporte, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, FINANCIERO_RE, HOY, norm, r6 } from './cargar.mjs';
@@ -205,6 +206,32 @@ export function faseEjercicio(ctx) {
   // QUÉ SON LOS INGRESOS DEL AÑO (`baseIngreso`: completo, ventas totales o margen bruto) y, si el documento no los imprime y se reconstruyeron con margen + compras y
   // servicios, `derivacionIngreso` (tools/ingreso-derivado.js, la misma regla que `fos ingreso-base`). Un año de margen bruto sin reconstrucción posible avisa: el ingreso
   // real no se conoce y Ligas lo trata como hueco (punto 455).
+  // UNA LÍNEA ÚNICA DE INGRESOS CUYO RÓTULO NADIE RECONOCE (ni lo aprendido ni las palabras de tipo-sin-desglose.js): va a la cola («¿margen bruto, ventas totales u otra?»); la respuesta se
+  // aprende (Admin/registros/tipos-sin-desglose.jsonl) y no se vuelve a preguntar. Mientras no se contesta queda `other` y la carga sigue.
+  for (const s of sinDesglose) {
+    if (!/^(revenue|ingreso)$/.test(s.lado) || tipoConocido(s.renglon, 'revenue')) continue;
+    const det = `${clubId}|${s.renglon}`; const r = respuestaPorDetalle('cargar', 'tipo-linea', det)?.resp;
+    const valor = r?.decision === 'corregir' ? r.valor : r?.decision === 'aceptar' ? 'other' : null;
+    if (['gross_margin', 'net_sales', 'other'].includes(valor)) { s.tipo = valor; aprender(s.renglon, 'revenue', valor, `cola (${clubId} ${year})`); }
+    else {
+      agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'tipo-linea', detalle: det, que: `El documento trae los ingresos de ${year} en una sola línea, «${s.renglon}» (${s.importe} millones de la moneda del documento), y ninguna regla reconoce ese rótulo. ¿Es el margen bruto (ya neto de costos, no un ingreso), las ventas totales o otra cosa? Mirá el estado de resultados en el .md (${e.md}). Responder: node tools/cola.mjs --responder <id> corregir --valor gross_margin | net_sales | other (aceptar = other).`, propuesta: 'other' });
+      P.avisos.push(`ingresos: el rótulo «${s.renglon}» no se reconoce; pregunta en la cola (tipo-linea, no frena): queda como other hasta que se conteste`);
+    }
+  }
+  // INGRESO REAL DEL AÑO ANTERIOR: si el año anterior cargado es de margen bruto y este documento (esquema belga) imprime el ingreso de ese año en su columna anterior, se guarda como
+  // ancla (Admin/registros/ingresos-ancla.jsonl; la usa Ligas, tools/estimar.mjs) y no reescribe el año publicado.
+  P.ancla = null;
+  try {
+    const g = (sitio.generic || {})[clubId] || {}; const ant = anioAnterior(g.revenueLinesByYear, year);
+    if (ant != null && (g.fiscalYearMeta || {})[ant]?.baseIngreso === 'gross_margin' && e.md) {
+      const N = leerEstadoNBB(readFileSync(resolve(ROOT, e.md), 'utf8'));
+      if (N && N.anterior.cierra && N.anterior.ingresos > 0) P.ancla = { club: clubId, anio: ant, ingreso: r6(N.anterior.ingresos / 1e6), moneda: m.currency, fuente: `${pdf}: columna del ejercicio anterior del estado de resultados`, nota: 'el informe del año anterior imprime solo el margen bruto; este trae el ingreso completo de ese ejercicio' };
+    }
+  } catch { /* sin estado NBB: no hay ancla */ }
+  if (P.ancla && process.argv.includes('--escribir')) {
+    const f = resolve(ROOT, 'Admin/registros/ingresos-ancla.jsonl');
+    if (!(existsSync(f) ? readFileSync(f, 'utf8') : '').split('\n').some((l) => l && JSON.parse(l).club === P.ancla.club && JSON.parse(l).anio === P.ancla.anio)) appendFileSync(f, JSON.stringify(P.ancla) + '\n');
+  }
   const bi = baseDeIngreso({ lineas: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative })), sinDesglose, documento: pdf, totalRevenue: T.officialTotalRevenue, sourceId });
   if (bi && bi.base === 'gross_margin') P.avisos.push('ingresos: el documento imprime solo el margen bruto (ya neto de costos), no los ingresos; se marca gross_margin. Si el documento imprime también compras y servicios (60, 61 o 60/61), el ingreso se reconstruye como margen + compras y servicios');
   P.ejercicio = {
