@@ -293,7 +293,7 @@ window.I18N.strings.en = {
   "fb.tipo.dato": "Data / correction",
   "fb.tipo.otro": "Other",
   "res.note1": "Only titles won are listed.",
-  "res.src": "Sources: Wikipedia (lists of each club's presidents), coverage by Infobae, La Nación and ESPN of each term, searched and checked in August 2026. To be cross-checked against each club's official site before publishing.",
+  "res.src": "Sources: Wikipedia (lists of each club's presidents), coverage by Infobae, La Nación and ESPN of each term.",
   "cmp.note": "Financial: latest year of each term. Sporting: cumulative over the term. Placeholder data.",
   "torneo.diff": "DIFFERENCE (Revenue − Organisation costs)",
   "debt.gross": "Gross debt",
