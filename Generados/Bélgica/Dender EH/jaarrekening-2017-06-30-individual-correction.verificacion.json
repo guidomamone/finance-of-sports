@@ -1,0 +1,159 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.md",
+ "generado": "2026-10-25T04:56:16.719Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "dender-be",
+ "year": 2017,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000010000000000085895
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
+  }
+ ],
+ "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L304-L321, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer que no afecta la carga: Ningún bloque indica la escala; en las cuentas anuales BNB es habitual que estén en euros."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.066277,
+  "gastos": 1.030139,
+  "financiero": -0.034388,
+  "impuesto": 0,
+  "resultadoImpreso": 0.001749,
+  "resultadoParaCargar": 0.001749,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.339587,
+   "pagina": 6,
+   "linea": 304,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Uitzonderlijke opbrengsten",
+   "lado": "ingreso",
+   "M": 0.72669,
+   "pagina": 6,
+   "linea": 319,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 0.230627,
+   "pagina": 6,
+   "linea": 308,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "620",
+   "lado": "gasto",
+   "M": 0.461799,
+   "pagina": 13,
+   "linea": 639,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "621",
+   "lado": "gasto",
+   "M": 0.074188,
+   "pagina": 13,
+   "linea": 640,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "623",
+   "lado": "gasto",
+   "M": 0.026402,
+   "pagina": 13,
+   "linea": 642,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.027102,
+   "pagina": 6,
+   "linea": 313,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Uitzonderlijke kosten",
+   "lado": "gasto",
+   "M": 0.066989,
+   "pagina": 6,
+   "linea": 320,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.143032,
+   "pagina": 6,
+   "linea": 373,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële opbrengsten",
+   "M": 0.000195,
+   "linea": 316
+  },
+  {
+   "etiqueta": "Financiële kosten",
+   "M": -0.034583,
+   "linea": 317
+  }
+ ],
+ "impuesto": []
+}

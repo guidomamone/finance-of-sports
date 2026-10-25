@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md",
+  "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.pdf",
+  "club": "vejle-dk",
+  "year": 2022,
+  "generatedAt": "2026-10-25T04:49:07.614Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bruttofortjeneste",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        41.571
+      ],
+      "glosa": "Margen bruto"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        42.159
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        2.254
+      ],
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.631
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        3.603
+      ],
+      "glosa": "Amortizaciones y correcciones por deterioro del inmovilizado intangible y material"
+    }
+  ]
+}

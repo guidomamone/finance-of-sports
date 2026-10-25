@@ -1,0 +1,151 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.md",
+ "generado": "2026-10-25T04:55:19.394Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "dender-be",
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
+  }
+ ],
+ "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L287-L304, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer que no afecta la carga: L302 tiene vacío el Boekjaar y 656.206 en Vorig boekjaar."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.694683,
+  "gastos": 1.248902,
+  "financiero": -0.044639,
+  "impuesto": 0,
+  "resultadoImpreso": -0.598858,
+  "resultadoParaCargar": -0.598858,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.694683,
+   "pagina": 7,
+   "linea": 288,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 0.521234,
+   "pagina": 7,
+   "linea": 291,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "620",
+   "lado": "gasto",
+   "M": 0.531002,
+   "pagina": 13,
+   "linea": 636,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
+  },
+  {
+   "etiqueta": "621",
+   "lado": "gasto",
+   "M": 0.10323,
+   "pagina": 13,
+   "linea": 637,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
+  },
+  {
+   "etiqueta": "623",
+   "lado": "gasto",
+   "M": 0.151798,
+   "pagina": 13,
+   "linea": 639,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.141929,
+   "pagina": 7,
+   "linea": 293,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
+   "lado": "gasto",
+   "M": -0.226557,
+   "pagina": 7,
+   "linea": 295,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.026266,
+   "pagina": 7,
+   "linea": 296,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële opbrengsten",
+   "M": 0.00001,
+   "linea": 299
+  },
+  {
+   "etiqueta": "Financiële kosten",
+   "M": -0.044649,
+   "linea": 300
+  }
+ ],
+ "impuesto": []
+}

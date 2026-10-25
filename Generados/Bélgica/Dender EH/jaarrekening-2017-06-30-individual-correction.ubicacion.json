@@ -1,0 +1,176 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.md",
+ "mdSha1": "5239d6a60e3dc5466de31378ea6f84e9e8b7fcca",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T04:48:08.053Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    200,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    247,
+    289
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    301,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    333,
+    342
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    355,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    435,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    508,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    568,
+    596
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    634,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    694,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    753,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    770,
+    772
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    798,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    850,
+    870
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    890,
+    893
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    918,
+    931
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Esquema VKT-vzw del NBB: importes en euros (unidades); en b10 los costes de personal figuran como 461.799, 74.188 y 26.402.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro b10 (códigos 620, 621, 623: remuneraciones, cargas sociales y otros gastos de personal) como desglose del renglón de costes de personal de la resultatenrekening b4?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bezoldigingen, sociale lasten en pensioenen",
+   "texto": "El cuadro b10 trae solo códigos sin etiquetas; según el esquema VKT, 620/621/623 abren los gastos de personal.",
+   "bloques": [
+    "b10",
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de la VZW según el esquema abreviado VKT-vzw. El estado de resultados es b4 (pág. 6). En b10, las filas 9086-9088 corresponden a datos de personal (número de trabajadores y horas), no a importes de resultado. Las filas 620, 621 y 623 desglosan los gastos de personal: 461.799 + 74.188 + 26.402 = 562.389 en el ejercicio."
+}

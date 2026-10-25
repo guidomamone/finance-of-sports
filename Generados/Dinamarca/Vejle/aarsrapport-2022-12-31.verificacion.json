@@ -1,0 +1,146 @@
+{
+ "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.pdf",
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md",
+ "generado": "2026-10-25T04:55:19.451Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "vejle-dk",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "duda de extraer ya contestada para el club (perimetro, \"Årets resultat\"): aceptar, en aarsrapport-2022-12-31.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 41.571,
+  "gastos": 48.647,
+  "financiero": 0.275,
+  "impuesto": 0.181,
+  "resultadoImpreso": -6.62,
+  "resultadoParaCargar": -6.62,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Bruttofortjeneste",
+   "lado": "ingreso",
+   "M": 41.571,
+   "pagina": 11,
+   "linea": 299,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 42.159,
+   "pagina": 20,
+   "linea": 649,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Pensioner",
+   "lado": "gasto",
+   "M": 2.254,
+   "pagina": 20,
+   "linea": 650,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre omkostninger til social sikring",
+   "lado": "gasto",
+   "M": 0.631,
+   "pagina": 20,
+   "linea": 651,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "lado": "gasto",
+   "M": 3.603,
+   "pagina": 11,
+   "linea": 301,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Indtægter af kapitalandele i tilknyttede virksomheder",
+   "M": 0.545,
+   "linea": 303
+  },
+  {
+   "etiqueta": "Finansielle omkostninger",
+   "M": -0.27,
+   "linea": 304
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skat af årets resultat",
+   "M": 0.181,
+   "linea": 306
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "baea4806893005e1bbc4bc7163c0fc85a71d6afc",
+  "rango": [
+   296,
+   310
+  ],
+  "lineasCargadas": [
+   299,
+   649,
+   650,
+   651,
+   301,
+   303,
+   304,
+   306
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 296 a 310 del .md):\nL297: |  Note | t.kr. | 2022 | 2021  |\nL298: | --- | --- | --- | --- |\nL299: |   | **Bruttofortjeneste** | 41.571 | 58.168  |\nL300: |  2 | Personaleomkostninger | -45.044 | -47.667  |\nL301: |   | Af- og nedskrivninger af immaterielle og materielle anlægsaktiver | -3.603 | -2.727  |\nL302: |   | **Resultat før finansielle poster** | -7.076 | 7.774  |\nL303: |   | Indtægter af kapitalandele i tilknyttede virksomheder | 545 | 433  |\nL304: |   | Finansielle omkostninger | -270 | -207  |\nL305: |   | **Resultat før skat** | -6.801 | 8.000  |\nL306: |   | Skat af årets resultat | 181 | 192  |\nL307: |   | **Årets resultat** | -6.620 | 8.192  |\nL308: |   | **Forslag til resultatdisponering** |  |   |\nL309: |   | Reserve for nettoopskrivning efter indre værdis metode | 0 | 2  |\nL310: |   | Overført resultat | -6.620 | 8.190  |\n\nLO QUE SE CARGA:\n- ingreso · \"Bruttofortjeneste\" · 41.571 · L299\n- gasto · \"Lønninger\" · 42.159 · L649 (de una nota)\n- gasto · \"Pensioner\" · 2.254 · L650 (de una nota)\n- gasto · \"Andre omkostninger til social sikring\" · 0.631 · L651 (de una nota)\n- gasto · \"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver\" · 3.603 · L301\n- financiero · \"Indtægter af kapitalandele i tilknyttede virksomheder\" · 0.545 · L303\n- financiero · \"Finansielle omkostninger\" · -0.27 · L304\n- impuesto · \"Skat af årets resultat\" · 0.181 · L306"
+ }
+}

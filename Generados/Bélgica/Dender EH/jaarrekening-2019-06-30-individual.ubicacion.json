@@ -1,0 +1,283 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.md",
+ "mdSha1": "5386297275aca0aa3c3477e0730a32d86ce176d6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T04:47:40.162Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    160,
+    161
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    180,
+    181
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    185,
+    222
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    228,
+    229
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    231,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 7,
+   "lineas": [
+    279,
+    280
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 7,
+   "lineas": [
+    284,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 8,
+   "lineas": [
+    310,
+    311
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 8,
+   "lineas": [
+    315,
+    324
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 9,
+   "lineas": [
+    330,
+    331
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 9,
+   "lineas": [
+    375,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 10,
+   "lineas": [
+    402,
+    403
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 10,
+   "lineas": [
+    411,
+    415
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 10,
+   "lineas": [
+    423,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 10,
+   "lineas": [
+    435,
+    440
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 10,
+   "lineas": [
+    452,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 11,
+   "lineas": [
+    482,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 11,
+   "lineas": [
+    489,
+    491
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 12,
+   "lineas": [
+    497,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 12,
+   "lineas": [
+    566,
+    594
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 13,
+   "lineas": [
+    600,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 13,
+   "lineas": [
+    631,
+    643
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 14,
+   "lineas": [
+    649,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 14,
+   "lineas": [
+    690,
+    703
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 15,
+   "lineas": [
+    719,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 15,
+   "lineas": [
+    734,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 15,
+   "lineas": [
+    771,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 16,
+   "lineas": [
+    797,
+    798
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 16,
+   "lineas": [
+    810,
+    813
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 16,
+   "lineas": [
+    838,
+    851
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 17,
+   "lineas": [
+    857,
+    858
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b23"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Jaarrekening NBB en EUR (encabezado b1 'EUR'); los importes del modelo se expresan en euros sin decimales",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Jaarrekening individual de la VZW (modelo NBB). Estado de resultados en b8 (Resultatenrekening). b23 es la nota de resultados de explotación con desglose de personeelskosten (620 bezoldigingen 531.002, 621 sociale bijdragen 103.230, 623 andere personeelskosten 151.798). Excluidos balance (b4, b6), resultaatverwerking (b10), activos fijos (b12, b17) y cuadros de personal en cantidades (b27, b28, b31)."
+}

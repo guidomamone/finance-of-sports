@@ -1,0 +1,182 @@
+{
+ "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.pdf",
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md",
+ "mdSha1": "570495178b01640754dc3b918ff487ed126ddbf9",
+ "ubicacionSha1": "13e68f88c67067356918905b2b21260ccdda6cca",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T04:49:07.123Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b9"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L297: encabezado 't.kr.'"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "L646: encabezado 't.kr.'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 299,
+   "etiqueta": "Bruttofortjeneste",
+   "actual": "41.571",
+   "anterior": "58.168",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 300,
+   "etiqueta": "Personaleomkostninger",
+   "actual": "-45.044",
+   "anterior": "-47.667",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 301,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "actual": "-3.603",
+   "anterior": "-2.727",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 302,
+   "etiqueta": "Resultat før finansielle poster",
+   "actual": "-7.076",
+   "anterior": "7.774",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 303,
+   "etiqueta": "Indtægter af kapitalandele i tilknyttede virksomheder",
+   "actual": "545",
+   "anterior": "433",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 304,
+   "etiqueta": "Finansielle omkostninger",
+   "actual": "-270",
+   "anterior": "-207",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 305,
+   "etiqueta": "Resultat før skat",
+   "actual": "-6.801",
+   "anterior": "8.000",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 306,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "181",
+   "anterior": "192",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 307,
+   "etiqueta": "Årets resultat",
+   "actual": "-6.620",
+   "anterior": "8.192",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 649,
+   "etiqueta": "Lønninger",
+   "actual": "42.159",
+   "anterior": "43.704",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b9",
+   "linea": 650,
+   "etiqueta": "Pensioner",
+   "actual": "2.254",
+   "anterior": "3.372",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b9",
+   "linea": 651,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "631",
+   "anterior": "591",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b9",
+   "linea": 652,
+   "etiqueta": "",
+   "actual": "45.044",
+   "anterior": "47.667",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 307,
+  "actual": "-6.620",
+  "anterior": "8.192"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de distribución del resultado 'Forslag til resultatdisponering' (L308-L311)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Årets resultat",
+   "texto": "L308-L311 es la aplicación del resultado, no partidas de ingresos o gastos.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Formato danés: el estado parte de Bruttofortjeneste (ingresos netos de gastos externos), sin total de ingresos ni de gastos impresos. L653 (cantidad de empleados) no es importe y se omitió."
+}

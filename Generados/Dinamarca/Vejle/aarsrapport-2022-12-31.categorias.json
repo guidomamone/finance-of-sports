@@ -1,0 +1,81 @@
+{
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md",
+ "club": "vejle-dk",
+ "year": 2022,
+ "generatedAt": "2026-10-25T04:51:45.047Z",
+ "rubrosHuella": "f2bf7c7452d647888c867c23606798264a2bec90",
+ "jevHuella": "057e788b7c0f5ba6930005879a262fd36285c48b",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Bruttofortjeneste",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto",
+   "page": 11,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Sueldos y salarios",
+   "page": 20,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Pensiones",
+   "page": 20,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Otros gastos de seguridad social",
+   "page": 20,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones por deterioro del inmovilizado intangible y material",
+   "page": 11,
+   "pendiente": false,
+   "ya": "player_amortisation",
+   "escalon": 2,
+   "confCache": 0.6,
+   "motivo": "Línea conjunta intangible+material sin partición visible; regla: va entera a player_amortisation",
+   "jev": "player_amortisation",
+   "jevConf": 0.69,
+   "desdeCache": true,
+   "categoria": "player_amortisation",
+   "confianza": 0.6
+  }
+ ]
+}

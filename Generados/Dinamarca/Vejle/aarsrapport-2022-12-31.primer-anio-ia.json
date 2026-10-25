@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md",
+ "clave": "baea4806893005e1bbc4bc7163c0fc85a71d6afc",
+ "generado": "2026-10-25T04:49:11.435Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas. La línea L300 (Personaleomkostninger, 45.044) se reemplaza por sus partes, tomadas de la nota en L649-L651: 42.159 + 2.254 + 0.631 = 45.044. Los subtotales (L302, L305, L307) y la distribución del resultado no se cargan. El resultado del ejercicio da -6.620."
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.pdf",
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md",
+ "mdSha1": "570495178b01640754dc3b918ff487ed126ddbf9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T04:48:55.865Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    11
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    22,
+    30
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    152,
+    162
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    297,
+    311
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    324,
+    352
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    365,
+    386
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    402,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    483,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    646,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    657,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    682,
+    692
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    696,
+    709
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b9"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado de la Resultatopgørelse: 't.kr.'",
+ "moneda": "DKK",
+ "columna_ejercicio": "2022",
+ "columna_anterior": "2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Årsrapport de VB Alliancen A/S, solo estados individuales (la sociedad tiene una filial, VB Plus ApS, pero no se presenta un consolidado). b4 es la Resultatopgørelse; b9 es la nota 2 Personaleomkostninger (gastos de personal). b5/b6 son el balance, b7 la evolución del patrimonio y b10-b12 los cuadros de activo fijo: se excluyen."
+}

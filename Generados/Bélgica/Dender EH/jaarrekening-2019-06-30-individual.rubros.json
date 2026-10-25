@@ -1,20 +1,90 @@
 {
- "md": "Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.md",
- "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.pdf",
- "club": "dender-be",
- "year": 2019,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:54:57.222Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": false,
-  "motivo": "sin estado de resultados"
- },
- "ladoConocido": 0,
- "rubros": []
+  "md": "Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.pdf",
+  "club": "dender-be",
+  "year": 2019,
+  "generatedAt": "2026-10-25T04:49:07.449Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.694683
+      ],
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.521234
+      ],
+      "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos"
+    },
+    {
+      "label": "620",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+      "values": [
+        0.531002
+      ],
+      "glosa": "620"
+    },
+    {
+      "label": "621",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+      "values": [
+        0.10323
+      ],
+      "glosa": "621"
+    },
+    {
+      "label": "623",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+      "values": [
+        0.151798
+      ],
+      "glosa": "623"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.141929
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.226557
+      ],
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.026266
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
 }

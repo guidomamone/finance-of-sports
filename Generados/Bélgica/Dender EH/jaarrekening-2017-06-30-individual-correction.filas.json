@@ -1,0 +1,239 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.md",
+ "mdSha1": "5239d6a60e3dc5466de31378ea6f84e9e8b7fcca",
+ "ubicacionSha1": "ef9217381e2e2dee1449f129386353a77edad6c2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T04:48:25.856Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b10"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; en las cuentas anuales belgas (modelo BNB) los importes suelen estar en euros (unidades)."
+  },
+  {
+   "bloque": "b10",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala ni muestra etiquetas; los códigos 620-623 son de la nota 5.5 (modelo BNB), habitualmente en euros."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 304,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "108.960",
+   "anterior": "286.378",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 305,
+   "etiqueta": "Bedrijfsopbrengsten",
+   "actual": "497.472",
+   "anterior": "690.914",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 308,
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "actual": "230.627",
+   "anterior": "404.536",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 309,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "562.388",
+   "anterior": "528.467",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 310,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "143.032",
+   "anterior": "142.744",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 313,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "27.102",
+   "anterior": "15.225",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 315,
+   "etiqueta": "Positief (Negatief) bedrijfsresultaat (+)/(-)",
+   "actual": "-623.563",
+   "anterior": "-400.058",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 316,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "195",
+   "anterior": "320",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 317,
+   "etiqueta": "Financiële kosten",
+   "actual": "34.583",
+   "anterior": "42.969",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 318,
+   "etiqueta": "Positief (Negatief) resultaat uit de gewone bedrijfsuitoefening (+)/(-)",
+   "actual": "-657.952",
+   "anterior": "-442.707",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 319,
+   "etiqueta": "Uitzonderlijke opbrengsten",
+   "actual": "726.690",
+   "anterior": "149.775",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 320,
+   "etiqueta": "Uitzonderlijke kosten",
+   "actual": "66.989",
+   "anterior": "23.271",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 321,
+   "etiqueta": "Positief (Negatief) resultaat van het boekjaar (+)/(-)",
+   "actual": "1.749",
+   "anterior": "-335.782",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 639,
+   "etiqueta": "620",
+   "actual": "461.799",
+   "anterior": "401.221",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b10",
+   "linea": 640,
+   "etiqueta": "621",
+   "actual": "74.188",
+   "anterior": "108.669",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b10",
+   "linea": 642,
+   "etiqueta": "623",
+   "actual": "26.402",
+   "anterior": "18.577",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 305,
+  "actual": "497.472"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 321,
+  "actual": "1.749",
+  "anterior": "-335.782"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas de códigos 9086, 9087 y 9088 (L636-L638) por ser datos de personal (cantidad de empleados, ETP y horas) y no importes?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "texto": "En el modelo BNB, 9086/9087/9088 son número de trabajadores, promedio ETP y horas trabajadas, no euros (L636-L638).",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan las filas 620, 621 y 623 de b10 (L639-L642) como desglose de 'Bezoldigingen, sociale lasten en pensioenen' aunque no tengan etiqueta textual?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "texto": "Las filas solo muestran el código: 620 remuneraciones, 621 cargas sociales patronales, 623 otros gastos de personal; su suma 562.389 coincide con L309 (562.388) salvo redondeo.",
+   "bloques": [
+    "b10",
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que los importes de b4 y b10 están en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque indica la escala; en las cuentas anuales BNB es habitual que estén en euros.",
+   "bloques": [
+    "b4",
+    "b10"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Esquema abreviado BNB: no se informa Omzet; Bedrijfsopbrengsten (70/74) es el total de ingresos operativos. No hay un total de gastos impreso. La Brutomarge se carga como subtotal informativo. No hay impuesto a las ganancias en el estado."
+}

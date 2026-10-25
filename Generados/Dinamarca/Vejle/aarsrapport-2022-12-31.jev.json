@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md",
+ "generatedAt": "2026-10-25T04:51:40.446Z",
+ "rubrosHuella": "f2bf7c7452d647888c867c23606798264a2bec90",
+ "rubros": [
+  {
+   "label": "Bruttofortjeneste",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.69,
+   "desdeCache": true
+  }
+ ]
+}
