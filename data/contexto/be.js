@@ -19,6 +19,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Olympisch Stadion","capacidad":12771,"sponsor":"Star Casino, Wolf Lubricants","marca":"Erreà","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'cerclebrugge-be': {
+    2019: {"estadio":"Jan Breydel Stadium","capacidad":29042,"sponsor":"ADMB","marca":"Erima","temporada":"2018–19 Belgian First Division A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374929230"},
     2025: {"estadio":"Jan Breydel Stadium","capacidad":29042,"sponsor":"Golden Palace Casino Sports, Volvo Automobilia","marca":"Kappa","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'charleroi-be': {
@@ -30,7 +31,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'dender-be': {
     2017: {"estadio":"Florent Beeckmanstadion (Van Roystadion)","capacidad":6429,"sponsor":"sin sponsor","marca":"Jartazi","temporada":"2016–17 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353492624","fuenteManual":"estadio y capacidad: https://en.wikipedia.org/w/index.php?title=F.C.V._Dender_E.H.&oldid=1353430954 (la página da el estadio actual, 6.429; https://en.wikipedia.org/wiki/Van_Roystadion: el mismo estadio abierto en 1997 como Florent Beeckman Stadion); marca y sin sponsor de camiseta 2009-2019: Football Kit Archive https://www.footballkitarchive.com/fcv-dender-eh-kits-t9285/ (base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403)","manual":["estadio","capacidad","sponsor","marca"]},
     2019: {"estadio":"Florent Beeckmanstadion (Van Roystadion)","capacidad":6429,"sponsor":"sin sponsor","marca":"Jartazi","temporada":"2018–19 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170241","fuenteManual":"estadio y capacidad: https://en.wikipedia.org/w/index.php?title=F.C.V._Dender_E.H.&oldid=1353430954 (la página da el estadio actual, 6.429; https://en.wikipedia.org/wiki/Van_Roystadion: el mismo estadio abierto en 1997 como Florent Beeckman Stadion); marca y sin sponsor de camiseta 2009-2019: Football Kit Archive https://www.footballkitarchive.com/fcv-dender-eh-kits-t9285/ (base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403)","manual":["estadio","capacidad","sponsor","marca"]},
-    2023: {"sponsor":"Drankendiscount Stravbier","marca":"Nike","temporada":"2022–23 Challenger Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380217514"},
+    2023: {"estadio":"Van Roystadion","capacidad":6429,"sponsor":"Drankendiscount Stravbier","marca":"Nike","temporada":"2022–23 Challenger Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380217514","fuenteManual":"https://en.wikipedia.org/w/index.php?title=2022%E2%80%9323_Challenger_Pro_League&oldid=1380217514","manual":["estadio","capacidad","sponsor","marca","temporada"]},
     2025: {"estadio":"Van Roystadion","capacidad":6429,"sponsor":"Star Casino, Valckenier","marca":"Jako","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'genk-be': {

@@ -94,6 +94,15 @@ window.RANKINGS["be-proleague"] = {
         mix:[["Comercial / Sponsors",2.78],["Estadio",1.929],["Televisión",2.42],["Otros ingresos",3.953]] },
     ],
   },
+  2019: {
+    leagueSize: 16,
+    wiki: {"t":"2018–19 Belgian First Division A","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"cerclebrugge-be", revenue:23.359, reportType:"official_balance_sheet",
+        sourceId:"cerclebrugge-be-jaarrekening-2019-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",8.411],["Otros ingresos",14.949]] },
+    ],
+  },
   2016: {
     leagueSize: 16,
     wiki: {"t":"2015–16 Belgian Pro League","lang":"en","at":"2026-10-19","n":16},

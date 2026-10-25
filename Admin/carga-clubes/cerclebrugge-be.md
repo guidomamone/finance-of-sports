@@ -168,6 +168,50 @@ Sin dueño persona (AS Monaco compró la mayoría de la cvba el 5/5/2017). Presi
 Goemaere ya figura como voorzitter el 22/4/2020 (Sporza), antes del cierre del 30/6/2020. Tousseyn: la fuente da solo 2023; el ejercicio 2023 depende de ese año.
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Omzet | pág. 7, precedente |
+| 2 | Andere bedrijfsopbrengsten | pág. 7, Jev 0.94 |
+| 3 | Niet-recurrente bedrijfsopbrengsten | pág. 7, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 7, Claude 0.85 |
+| 2 | Voorraad: afname (toename) (+)/(-) | pág. 7, Jev 1 |
+| 3 | Diensten en diverse goederen | pág. 7, precedente |
+| 4 | 620 | pág. 20, Jev 0.96 |
+| 5 | 621 | pág. 20, Jev 0.97 |
+| 6 | 623 | pág. 20, Jev 0.95 |
+| 7 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 7, precedente |
+| 8 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | pág. 7, Jev 0.99 |
+| 9 | Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-) | pág. 7, Jev 0.99 |
+| 10 | 640 | pág. 20, Claude 0.85 |
+| 11 | 641/8 | pág. 20, Jev 0.96 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): be-proleague, verificado contra roster cacheado de "2018–19 Belgian First Division A" (tools/club-league-reference/be.json), coincidencia exacta "Cercle Brugge".
+```
+
 ## Fuentes
 
 ### cerclebrugge-be-jaarrekening-2025
@@ -176,4 +220,12 @@ _note (data/):_
 
 ```text
 Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB), esquema estatutario VOL-inb. PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Cercle Brugge/jaarrekening-2025-06-30-individual.md. Propiedad de AS Monaco FC SAM. "Andere bedrijfsopbrengsten" (24,4 M EUR, 56% del revenue) casi no tiene desglose disponible en el documento; ver comentario de cabecera del archivo de datos y Admin/dudas-por-club.md. Nota 6.14 revela una condonación de deuda condicional de 52,8 M EUR de AS Monaco (fuera de balance) y plusvalías de transferencias de 6,6 M EUR del mercado de pases de verano 2025 (hecho posterior al cierre), ninguna de las dos cargadas en este ejercicio.
+```
+
+### cerclebrugge-be-jaarrekening-2019-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

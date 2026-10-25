@@ -19,10 +19,87 @@
       "title": "Jaarrekening van Cercle Brugge KSV BV voor het boekjaar van 1/7/2024 tot 30/6/2025",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "cerclebrugge-be-jaarrekening-2019-06-30-individual",
+      "club_id": "cerclebrugge-be",
+      "title": "Cercle Brugge KSV — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.pdf"
     }
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "cerclebrugge-be-jaarrekening-2019-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":7.390851,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"other_revenue","subcategory":"other_income","amount":3.398891,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfsopbrengsten","category":"other_revenue","subcategory":"other_income","amount":9.736952,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aankopen","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.372407,"disclosure":"aggregated"},
+        {
+          "label": "Voorraad: afname (toename) (+)/(-)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.001875,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Diensten en diverse goederen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -5.254442,
+          "disclosure": "aggregated"
+        },
+        {"label":"620","category":"first_team_staff","subcategory":"wages_squad","amount":-10.193559,"disclosure":"aggregated"},
+        {"label":"621","category":"first_team_staff","subcategory":"wages_squad","amount":-0.849578,"disclosure":"aggregated"},
+        {"label":"623","category":"first_team_staff","subcategory":"wages_squad","amount":-1.397966,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -1.240809,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.80669,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": 0.016413,
+          "disclosure": "aggregated"
+        },
+        {"label":"640","category":"admin_general","subcategory":"admin_general_expense","amount":-0.060585,"disclosure":"aggregated"},
+        {"label":"641/8","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.04168,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.403388,"tax":-0.005969,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":20.526694,"expenses":20.219591,"net_result":-0.085842},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andere financiële opbrengsten","amount":0.025558},
+          {"label":"Kosten van schulden","amount":-0.428416},
+          {"label":"Andere financiële kosten","amount":-0.00053},
+          {"label":"Belastingen","amount":-0.005969}
+        ],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":7.390851,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
+      }
+    },
     {
       "fiscal_year": 2025,
       "period_end": "2025-06-30",

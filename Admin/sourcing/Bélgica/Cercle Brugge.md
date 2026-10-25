@@ -30,3 +30,5 @@ Brugge" en el nombre — no está claro si el club operaba bajo otra razón soci
 investigó más a fondo por tiempo.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2019 desde `Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.pdf` (sourceId `cerclebrugge-be-jaarrekening-2019-06-30-individual`).

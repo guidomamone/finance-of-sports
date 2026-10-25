@@ -1,0 +1,216 @@
+{
+ "pdf": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.md",
+ "generado": "2026-10-25T05:36:40.921Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "cerclebrugge-be",
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "20.526694 = 20.526694",
+   "suma": 20.526694,
+   "impreso": 20.526694
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "20.203178 = 20.203179",
+   "suma": 20.203177999999998,
+   "impreso": 20.203179
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000010000000015553123
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L308-L345, esquema completo); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar que no afecta la carga: b72 repite en forma resumida la cuenta de resultados ya presente en b10.",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Andere financiële opbrengsten\"): aceptar, en jaarrekening-2019-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2019-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 20.526694,
+  "gastos": 20.203178,
+  "financiero": -0.403388,
+  "impuesto": -0.005969,
+  "resultadoImpreso": -0.085842,
+  "resultadoParaCargar": -0.085842,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Omzet",
+   "lado": "ingreso",
+   "M": 7.390851,
+   "pagina": 7,
+   "linea": 309,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 3.398891,
+   "pagina": 7,
+   "linea": 312,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 9.736952,
+   "pagina": 7,
+   "linea": 313,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aankopen",
+   "lado": "gasto",
+   "M": 0.372407,
+   "pagina": 7,
+   "linea": 316,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorraad: afname (toename) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.001875,
+   "pagina": 7,
+   "linea": 317,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 5.254442,
+   "pagina": 7,
+   "linea": 318,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "620",
+   "lado": "gasto",
+   "M": 10.193559,
+   "pagina": 20,
+   "linea": 1392,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "621",
+   "lado": "gasto",
+   "M": 0.849578,
+   "pagina": 20,
+   "linea": 1393,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "623",
+   "lado": "gasto",
+   "M": 1.397966,
+   "pagina": 20,
+   "linea": 1395,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 1.240809,
+   "pagina": 7,
+   "linea": 320,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.80669,
+   "pagina": 7,
+   "linea": 321,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": -0.016413,
+   "pagina": 7,
+   "linea": 322,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "640",
+   "lado": "gasto",
+   "M": 0.060585,
+   "pagina": 20,
+   "linea": 1404,
+   "origen": "nota que desglosa \"Andere bedrijfskosten\""
+  },
+  {
+   "etiqueta": "641/8",
+   "lado": "gasto",
+   "M": 0.04168,
+   "pagina": 20,
+   "linea": 1405,
+   "origen": "nota que desglosa \"Andere bedrijfskosten\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Andere financiële opbrengsten",
+   "M": 0.025558,
+   "linea": 331
+  },
+  {
+   "etiqueta": "Kosten van schulden",
+   "M": -0.428416,
+   "linea": 335
+  },
+  {
+   "etiqueta": "Andere financiële kosten",
+   "M": -0.00053,
+   "linea": 337
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": -0.005969,
+   "linea": 343
+  }
+ ]
+}

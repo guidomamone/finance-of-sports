@@ -1,0 +1,150 @@
+{
+  "md": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.pdf",
+  "club": "cerclebrugge-be",
+  "year": 2019,
+  "generatedAt": "2026-10-25T05:29:54.467Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        7.390851
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        3.398891
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        9.736952
+      ],
+      "glosa": "Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Aankopen",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.372407
+      ],
+      "glosa": "Compras"
+    },
+    {
+      "label": "Voorraad: afname (toename) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.001875
+      ],
+      "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
+    },
+    {
+      "label": "Diensten en diverse goederen",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        5.254442
+      ],
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "620",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        10.193559
+      ],
+      "glosa": "620"
+    },
+    {
+      "label": "621",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.849578
+      ],
+      "glosa": "621"
+    },
+    {
+      "label": "623",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        1.397966
+      ],
+      "glosa": "623"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.240809
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.80669
+      ],
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.016413
+      ],
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (utilizaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "640",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Andere bedrijfskosten\"",
+      "values": [
+        0.060585
+      ],
+      "glosa": "640"
+    },
+    {
+      "label": "641/8",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Andere bedrijfskosten\"",
+      "values": [
+        0.04168
+      ],
+      "glosa": "641/8"
+    }
+  ]
+}

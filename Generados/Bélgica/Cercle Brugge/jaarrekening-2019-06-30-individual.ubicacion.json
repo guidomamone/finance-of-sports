@@ -1,0 +1,706 @@
+{
+ "pdf": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.md",
+ "mdSha1": "5ee1a252227b36e9403c9bb949ad2c59766d2d12",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T05:27:01.598Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    73,
+    74
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    134,
+    135
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    159,
+    160
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    181,
+    182
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    188,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    238,
+    239
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 6,
+   "lineas": [
+    241,
+    295
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 7,
+   "lineas": [
+    301,
+    302
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 7,
+   "lineas": [
+    306,
+    348
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 8,
+   "lineas": [
+    354,
+    355
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 8,
+   "lineas": [
+    393,
+    411
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 9,
+   "lineas": [
+    417,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 9,
+   "lineas": [
+    430,
+    435
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 9,
+   "lineas": [
+    443,
+    452
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 9,
+   "lineas": [
+    458,
+    472
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 10,
+   "lineas": [
+    478,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 10,
+   "lineas": [
+    513,
+    527
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 11,
+   "lineas": [
+    533,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 11,
+   "lineas": [
+    544,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 11,
+   "lineas": [
+    556,
+    561
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 11,
+   "lineas": [
+    569,
+    575
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 11,
+   "lineas": [
+    581,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 12,
+   "lineas": [
+    607,
+    608
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 12,
+   "lineas": [
+    616,
+    621
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 12,
+   "lineas": [
+    629,
+    634
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 12,
+   "lineas": [
+    642,
+    649
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 12,
+   "lineas": [
+    655,
+    675
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 13,
+   "lineas": [
+    681,
+    682
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 13,
+   "lineas": [
+    721,
+    741
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 14,
+   "lineas": [
+    747,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 14,
+   "lineas": [
+    793,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 15,
+   "lineas": [
+    822,
+    823
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 15,
+   "lineas": [
+    833,
+    836
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 15,
+   "lineas": [
+    844,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 15,
+   "lineas": [
+    856,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 15,
+   "lineas": [
+    879,
+    885
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 15,
+   "lineas": [
+    893,
+    925
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 16,
+   "lineas": [
+    931,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 16,
+   "lineas": [
+    957,
+    969
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 16,
+   "lineas": [
+    978,
+    981
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 17,
+   "lineas": [
+    987,
+    988
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 17,
+   "lineas": [
+    999,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 17,
+   "lineas": [
+    1009,
+    1018
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 17,
+   "lineas": [
+    1031,
+    1034
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 17,
+   "lineas": [
+    1064,
+    1076
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 17,
+   "lineas": [
+    1087,
+    1092
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 18,
+   "lineas": [
+    1098,
+    1099
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 18,
+   "lineas": [
+    1170,
+    1207
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 18,
+   "lineas": [
+    1209,
+    1222
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 19,
+   "lineas": [
+    1228,
+    1229
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 19,
+   "lineas": [
+    1251,
+    1268
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 19,
+   "lineas": [
+    1283,
+    1289
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 19,
+   "lineas": [
+    1298,
+    1301
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 20,
+   "lineas": [
+    1307,
+    1308
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 20,
+   "lineas": [
+    1386,
+    1409
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 21,
+   "lineas": [
+    1415,
+    1416
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 21,
+   "lineas": [
+    1476,
+    1496
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 22,
+   "lineas": [
+    1502,
+    1503
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 22,
+   "lineas": [
+    1541,
+    1566
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 23,
+   "lineas": [
+    1572,
+    1573
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 23,
+   "lineas": [
+    1592,
+    1600
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 23,
+   "lineas": [
+    1604,
+    1606
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 23,
+   "lineas": [
+    1617,
+    1621
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 23,
+   "lineas": [
+    1635,
+    1640
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 24,
+   "lineas": [
+    1646,
+    1647
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 24,
+   "lineas": [
+    1667,
+    1673
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 24,
+   "lineas": [
+    1695,
+    1703
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 25,
+   "lineas": [
+    1711,
+    1712
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 26,
+   "lineas": [
+    1818,
+    1830
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 26,
+   "lineas": [
+    1832,
+    1844
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 27,
+   "lineas": [
+    1854,
+    1871
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 35,
+   "lineas": [
+    2162,
+    2163
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 35,
+   "lineas": [
+    2197,
+    2208
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 35,
+   "lineas": [
+    2217,
+    2222
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 36,
+   "lineas": [
+    2228,
+    2229
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 36,
+   "lineas": [
+    2264,
+    2284
+   ],
+   "tipo": "tabla"
+  },
+  "b78": {
+   "pagina": 36,
+   "lineas": [
+    2294,
+    2298
+   ],
+   "tipo": "tabla"
+  },
+  "b79": {
+   "pagina": 37,
+   "lineas": [
+    2304,
+    2305
+   ],
+   "tipo": "tabla"
+  },
+  "b80": {
+   "pagina": 37,
+   "lineas": [
+    2320,
+    2326
+   ],
+   "tipo": "tabla"
+  },
+  "b81": {
+   "pagina": 37,
+   "lineas": [
+    2348,
+    2359
+   ],
+   "tipo": "tabla"
+  },
+  "b82": {
+   "pagina": 38,
+   "lineas": [
+    2365,
+    2366
+   ],
+   "tipo": "tabla"
+  },
+  "b83": {
+   "pagina": 38,
+   "lineas": [
+    2391,
+    2404
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b10"
+ ],
+ "notas_ingresos": [
+  "b60"
+ ],
+ "notas_gastos": [
+  "b56",
+  "b58"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Modelo normalizado BNB en EUR; importes impresos con decimales completos (ej. 9.736.952, -11.637.523) y encabezado 'EUR' en b1.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro resumido de la resultatenrekening del jaarverslag (b72, pág. 27)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b72 repite en forma resumida la cuenta de resultados ya presente en b10.",
+   "bloques": [
+    "b72"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales (modelo BNB) de Cercle Brugge KSV, ejercicio 01/07/2018-30/06/2019. Estado de resultados en b10; b12 es la distribución del resultado (no se carga). b60 desglosa resultados no recurrentes (ingresos no recurrentes 9.736.952). b56 detalla personal y gastos de personal; b58 detalla resultados financieros. b72 es un resumen duplicado en el informe de gestión."
+}
