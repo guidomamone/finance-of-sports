@@ -37,3 +37,5 @@
 
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.pdf` (sourceId `udechile-cl-estados-financieros-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2013 desde `Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.pdf` (sourceId `udechile-cl-estados-financieros-2013`).

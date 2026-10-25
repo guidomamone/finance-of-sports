@@ -1,5 +1,14 @@
 // GENERADO desde data/cl/udechile-cl.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const udechileClRevenueLinesByYear = {
+  2013: [
+    {"rawLabel":"Borderó","normalizedCategory":"matchday_competition","amountNative":3887.891,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Publicidad","normalizedCategory":"sponsorship_commercial","amountNative":4800.936,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Derechos de T.V.","normalizedCategory":"broadcasting","amountNative":2203.257,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Cesión definitiva de derechos federativos y económicos (ventas de pases)","normalizedCategory":"player_sales","amountNative":3351.882,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Cesión temporal de derechos federativos (Préstamos)","normalizedCategory":"player_sales","amountNative":510.204,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros (Derechos de Formación, Solidaridad, etc.)","normalizedCategory":"player_sales","amountNative":117.078,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ingresos varios","normalizedCategory":"other_income","amountNative":556.393,"disclosureLevel":"aggregated"},
+  ],
   2022: [
     {"rawLabel":"Borderó","normalizedCategory":"matchday_competition","amountNative":2575.833,"disclosureLevel":"detailed"},
     {"rawLabel":"Publicidad","normalizedCategory":"sponsorship_commercial","amountNative":6052.638,"disclosureLevel":"detailed"},
@@ -38,6 +47,17 @@ const udechileClRevenueLinesByYear = {
 };
 
 const udechileClExpenseLinesByYear = {
+  2013: [
+    {"rawLabel":"Borderó (costos directos)","normalizedCategory":"match_organisation_expense","amountNative":-1214.95,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Remuneraciones","normalizedCategory":"wages_squad","amountNative":-5237.414,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Amortización de pases","normalizedCategory":"player_amortisation","amountNative":-2566.129,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Costo no amortizado","normalizedCategory":"player_amortisation","amountNative":-925.907,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Indemnización por término anticipado de contrato","normalizedCategory":"player_amortisation","amountNative":-305.487,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros costos","normalizedCategory":"other_expenses","amountNative":-494.711,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos de operación","normalizedCategory":"other_expenses","amountNative":-1662.187,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gasto de administración","normalizedCategory":"admin_general_expense","amountNative":-2790.763,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otras ganancias o pérdidas","normalizedCategory":"other_expenses","amountNative":-6.939,"disclosureLevel":"aggregated"},
+  ],
   2022: [
     {"rawLabel":"Costo de Ventas: Borderó (costos directos)","normalizedCategory":"match_organisation_expense","amountNative":-961.223,"disclosureLevel":"detailed"},
     {"rawLabel":"Costo de Ventas: Remuneraciones","normalizedCategory":"wages_squad","amountNative":-7144.464,"disclosureLevel":"detailed"},
@@ -102,6 +122,7 @@ const udechileClExpenseLinesByYear = {
 };
 
 const udechileClFiscalYearMeta = {
+  2013: {"currency":"CLP","sourceId":"udechile-cl-estados-financieros-2013","reportType":"official_balance_sheet","gestionId":null,"fxRef":"CLP@2013-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-18.02,"tax":-80.761,"grossDebt":null,"cash":null,"officialTotalRevenue":15427.641,"officialTotalExpenses":15204.487,"officialPAT":124.373,"extraRows":[{"label":"Ingresos financieros","value":103.291},{"label":"Costos financieros","value":-162.523},{"label":"Resultados por unidades de reajuste","value":41.212},{"label":"Gasto por impuestos a las ganancias","value":-80.761}],"baseIngreso":"full"},
   2022: {"currency":"CLP","sourceId":"udechile-cl-estados-financieros-2022","reportType":"official_balance_sheet","gestionId":"actual","fx":859.51,"fxSource":"market_approx","profitOnPlayerSales":0,"assetSales":0,"netInterest":-448.92,"tax":669.533,"grossDebt":14307.914,"cash":1665.904,"officialTotalRevenue":14515.925,"officialTotalExpenses":16432.67,"officialPAT":-1696.132,"baseIngreso":"full"},
   2023: {"currency":"CLP","sourceId":"udechile-cl-estados-financieros-2023","reportType":"official_balance_sheet","gestionId":"actual","fx":884.59,"fxSource":"market_approx","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1391.54,"tax":1162.475,"grossDebt":14497.179,"cash":812.088,"officialTotalRevenue":18684.003,"officialTotalExpenses":16918.563,"officialPAT":1536.375,"baseIngreso":"full"},
   2024: {"currency":"CLP","sourceId":"udechile-cl-estados-financieros-2024","reportType":"official_balance_sheet","gestionId":"actual","fx":992.12,"fxSource":"market_approx","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1473.596,"tax":920.675,"grossDebt":13716.241,"cash":2024.494,"officialTotalRevenue":24057.808,"officialTotalExpenses":22260.627,"officialPAT":1244.26,"baseIngreso":"full"},
@@ -122,7 +143,7 @@ window.CLUB_GENERIC_DATA["udechile-cl"] = {
   presupuestoOverlayByYear: udechileClPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"udechile-cl-estados-financieros-2024":{"id":"udechile-cl-estados-financieros-2024","clubId":"udechile-cl","title":"Estados Financieros Consolidados bajo IFRS al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary"},"udechile-cl-estados-financieros-2023":{"id":"udechile-cl-estados-financieros-2023","clubId":"udechile-cl","title":"Estados Financieros Consolidados bajo IFRS al 31 de diciembre de 2023 y 2022","type":"official_balance_sheet","reliability":"primary"},"udechile-cl-estados-financieros-2022":{"id":"udechile-cl-estados-financieros-2022","clubId":"udechile-cl","title":"Estados Financieros Consolidados bajo IFRS al 31 de diciembre de 2022 y 2021","type":"official_balance_sheet","reliability":"primary"},"udechile-cl-estados-financieros-2025":{"id":"udechile-cl-estados-financieros-2025","clubId":"udechile-cl","title":"Azul Azul S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"udechile-cl-estados-financieros-2024":{"id":"udechile-cl-estados-financieros-2024","clubId":"udechile-cl","title":"Estados Financieros Consolidados bajo IFRS al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary"},"udechile-cl-estados-financieros-2023":{"id":"udechile-cl-estados-financieros-2023","clubId":"udechile-cl","title":"Estados Financieros Consolidados bajo IFRS al 31 de diciembre de 2023 y 2022","type":"official_balance_sheet","reliability":"primary"},"udechile-cl-estados-financieros-2022":{"id":"udechile-cl-estados-financieros-2022","clubId":"udechile-cl","title":"Estados Financieros Consolidados bajo IFRS al 31 de diciembre de 2022 y 2021","type":"official_balance_sheet","reliability":"primary"},"udechile-cl-estados-financieros-2025":{"id":"udechile-cl-estados-financieros-2025","clubId":"udechile-cl","title":"Azul Azul S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"},"udechile-cl-estados-financieros-2013":{"id":"udechile-cl-estados-financieros-2013","clubId":"udechile-cl","title":"Azul Azul S.A. — estados-financieros-2013 (ejercicio 2013)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.pdf"}});
 
 gestionesByClub["udechile-cl"] = {"actual":{"nombre":"Gestión actual","firstYear":2022,"lastYear":2024}};
 

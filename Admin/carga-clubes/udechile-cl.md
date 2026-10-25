@@ -270,6 +270,51 @@ Michael Clark Varela (2021-09-30 a 2026-04-23): Elegido por el directorio de Azu
 Duda: Discrepancia 30/9 vs 1/10/2021 (y un 21/10/2021 en el cuerpo de Wikipedia) para el inicio; no afecta ningún cierre.
 ```
 
+## 2013
+
+### Ingresos
+
+```text
+2013: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Borderó | pág. 65, precedente |
+| 2 | Publicidad | pág. 65, precedente |
+| 3 | Derechos de T.V. | pág. 65, precedente |
+| 4 | Cesión definitiva de derechos federativos y económicos (ventas de pases) | pág. 65, Jev 1 |
+| 5 | Cesión temporal de derechos federativos (Préstamos) | pág. 65, precedente |
+| 6 | Otros (Derechos de Formación, Solidaridad, etc.) | pág. 65, precedente |
+| 7 | Ingresos varios | pág. 65, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Borderó (costos directos) | pág. 66, precedente |
+| 2 | Remuneraciones | pág. 66, precedente |
+| 3 | Amortización de pases | pág. 66, precedente |
+| 4 | Costo no amortizado | pág. 66, Claude 0.88 |
+| 5 | Indemnización por término anticipado de contrato | pág. 66, Claude 0.85 |
+| 6 | Otros costos | pág. 66, Jev 0.96 |
+| 7 | Otros gastos de operación | pág. 66, precedente |
+| 8 | Gasto de administración | pág. 7, Jev 0.91 |
+| 9 | Otras ganancias o pérdidas | pág. 7, Jev 0.9 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): cl-primera, verificado contra roster cacheado de "2013–14 Campeonato Nacional Primera División" (tools/club-league-reference/cl.json), coincidencia exacta "Universidad de Chile".
+```
+
 ## Fuentes
 
 ### udechile-cl-estados-financieros-2024
@@ -302,6 +347,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### udechile-cl-estados-financieros-2013
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

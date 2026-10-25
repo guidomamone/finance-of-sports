@@ -40,11 +40,107 @@
       "title": "Azul Azul S.A. — estados-financieros-2025 (ejercicio 2025)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "udechile-cl-estados-financieros-2013",
+      "club_id": "udechile-cl",
+      "title": "Azul Azul S.A. — estados-financieros-2013 (ejercicio 2013)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2022,"last_year":2024}],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2013,
+      "period_end": "2013-12-31",
+      "currency": "CLP",
+      "source_id": "udechile-cl-estados-financieros-2013",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"CLP@2013-12-31"},
+      "revenue": [
+        {"label":"Borderó","category":"matchday","subcategory":"matchday_competition","amount":3887.891,"disclosure":"aggregated"},
+        {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":4800.936,"disclosure":"aggregated"},
+        {"label":"Derechos de T.V.","category":"media_rights","subcategory":"broadcasting","amount":2203.257,"disclosure":"aggregated"},
+        {
+          "label": "Cesión definitiva de derechos federativos y económicos (ventas de pases)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 3351.882,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Cesión temporal de derechos federativos (Préstamos)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 510.204,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Otros (Derechos de Formación, Solidaridad, etc.)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 117.078,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos varios","category":"other_revenue","subcategory":"other_income","amount":556.393,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Borderó (costos directos)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1214.95,
+          "disclosure": "aggregated"
+        },
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-5237.414,"disclosure":"aggregated"},
+        {
+          "label": "Amortización de pases",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2566.129,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costo no amortizado",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -925.907,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Indemnización por término anticipado de contrato",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -305.487,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros costos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-494.711,"disclosure":"aggregated"},
+        {
+          "label": "Otros gastos de operación",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1662.187,
+          "disclosure": "aggregated"
+        },
+        {"label":"Gasto de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2790.763,"disclosure":"aggregated"},
+        {"label":"Otras ganancias o pérdidas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-6.939,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.02,"tax":-80.761,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":15427.641,"expenses":15204.487,"net_result":124.373},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":103.291},
+          {"label":"Costos financieros","amount":-162.523},
+          {"label":"Resultados por unidades de reajuste","amount":41.212},
+          {"label":"Gasto por impuestos a las ganancias","amount":-80.761}
+        ],
+        "revenue_basis": "full"
+      }
+    },
     {
       "fiscal_year": 2022,
       "period_end": "2022-12-31",

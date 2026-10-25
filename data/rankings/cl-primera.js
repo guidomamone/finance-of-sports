@@ -137,6 +137,9 @@ window.RANKINGS["cl-primera"] = {
     leagueSize: 18,
     wiki: {"t":"2013 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
+      { id:"udechile-cl", revenue:29.408, reportType:"official_balance_sheet",
+        sourceId:"udechile-cl-estados-financieros-2013",
+        mix:[["Comercial / Sponsors",9.151],["Estadio",7.411],["Televisión",4.2],["Venta de Jugadores",7.585],["Otros ingresos",1.061]] },
       { id:"colocolo-cl", revenue:17.725, reportType:"official_balance_sheet",
         sourceId:"colocolo-cl-estados-financieros-2013",
         mix:[["Comercial / Sponsors",10.749],["Estadio",4.011],["Venta de Jugadores",2.65],["Otros ingresos",0.315]] },
