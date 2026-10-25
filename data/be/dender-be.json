@@ -51,6 +51,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.pdf"
+    },
+    {
+      "id": "dender-be-jaarrekening-2022-06-30-individual",
+      "club_id": "dender-be",
+      "title": "Football Club Verbroedering Dender EH VZW — jaarrekening-2022-06-30-individual (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.pdf"
     }
   ],
   "members": null,
@@ -171,6 +179,48 @@
         "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.512748,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "revenue_basis": "sales_total",
         "revenue_derivation": {"method":"margin_plus_costs","sources":["dender-be-jaarrekening-2020-06-30-individual"]}
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "dender-be-jaarrekening-2022-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [],
+      "expenses": [
+        {"label":"Brutomarge","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-0.069811,"disclosure":"aggregated"},
+        {
+          "label": "Bezoldigingen, sociale lasten en pensioenen",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -1.368294,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.158979,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.020427,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.087843,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0,"expenses":1.617511,"net_result":-1.705354},
+      "adjustments": {
+        "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.000002},{"label":"Recurrente financiële kosten","amount":-0.087845}],
+        "no_breakdown": [
+          {
+            "line": "Brutomarge",
+            "side": "expense",
+            "amount": 0.069811,
+            "reason": "Claude 2026-10-25 (sesion): miré la linea 353: la Brutomarge es negativa (-69.811) y va como gasto sin desglose; mismo criterio que los 3 casos belgas contestados",
+            "kind": "gross_margin"
+          }
+        ]
       }
     },
     {

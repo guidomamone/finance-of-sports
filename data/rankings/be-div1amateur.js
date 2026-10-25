@@ -22,6 +22,7 @@ window.RANKINGS["be-div1amateur"] = {
   },
   2022: {
     leagueSize: 15,
+    sinDato: ["dender-be"],
     wiki: {"t":"2021–22 Belgian National Division 1","lang":"en","at":"2026-10-19","n":15},
     clubs: [
       { id:"patroeisden-be", revenue:0.798, reportType:"official_balance_sheet",

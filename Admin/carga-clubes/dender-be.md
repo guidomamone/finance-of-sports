@@ -163,6 +163,37 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-25): be-challengerproleague, verificado contra roster cacheado de "2022–23 Challenger Pro League" (tools/club-league-reference/be.json), coincidencia exacta "Dender EH".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Brutomarge | pág. 6, precedente |
+| 2 | Bezoldigingen, sociale lasten en pensioenen | pág. 6, precedente |
+| 3 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 6, precedente |
+| 4 | Andere bedrijfskosten | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): be-div1amateur, verificado contra roster cacheado de "2021–22 Belgian National Division 1" (tools/club-league-reference/be.json), coincidencia exacta "Dender EH".
+```
+
 ## 2020
 
 ### Ingresos
@@ -317,4 +348,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### dender-be-jaarrekening-2022-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

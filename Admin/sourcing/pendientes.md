@@ -621,7 +621,7 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-25): no editar 
 
 - Šibenik — sin-buscar: 2025 (hr-hnl), 2023 (hr-hnl)
 
-## Dinamarca (11 clubes, 12 club-años)
+## Dinamarca (13 clubes, 16 club-años)
 
 - FC Copenhagen — sin-buscar: 2019 (dk-superliga), 2017 (dk-superliga)
 - Odense BK — sin-buscar: 2019 (dk-superliga)
@@ -629,8 +629,10 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-25): no editar 
 - F.C. Copenhagen — sin-buscar: 2014 (dk-superliga)
 - FC Vestsjælland — sin-buscar: 2014 (dk-superliga)
 - BK Fremad Amager — sin-buscar: 2020 (dk-1division)
-- FC Roskilde — sin-buscar: 2020 (dk-1division)
-- Nykøbing FC — sin-buscar: 2020 (dk-1division)
+- FC Roskilde — sin-buscar: 2020 (dk-1division), 2018 (dk-1division)
+- Nykøbing FC — sin-buscar: 2020 (dk-1division), 2018 (dk-1division)
+- Brabrand IF — sin-buscar: 2018 (dk-1division)
+- Fremad Amager — sin-buscar: 2018 (dk-1division)
 - AB Gladsaxe — sin-buscar: 2014 (dk-1division)
 - BK Marienlyst — sin-buscar: 2014 (dk-1division)
 - Brønshøj BK — sin-buscar: 2014 (dk-1division)
