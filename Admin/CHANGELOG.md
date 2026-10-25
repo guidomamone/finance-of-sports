@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1080 — auditoria.mjs: un informe del auditor descartado como fuente de carga sigue siendo fuente de la auditoría [auditoria.mjs]
+
+- Guido: cada club deja su informe del auditor. Pero `auditoria.mjs` sacaba de sus fuentes todo lo que está en `documentos-descartados.txt`, y ahí hay unos 300 dictámenes (226 «dictamen del revisor fiscal», el resto «informe del auditor…»): descartar un dictamen suelto lo dejaba sin con qué citar la línea del club-año. Ahora un descartado cuyo motivo empieza por dictamen o informe del auditor/revisor no se excluye de la auditoría. Hoy no cambia ningún resultado (`--pendientes` 359 antes y después, `--check` al día): evita que pase cuando se cargue el balance de uno de esos años.
+- Medición: PARCIAL, con el ok de Guido (cortó el resto): lote chico (126 documentos), `cargar` y `audit` idénticos; el mediano y el completo no se corrieron. Commit con `[sin-medicion]`.
+
 ## Versión 1079 — 444: los 38 frenados eran 13 balances; 25 descartados y 13 ajustes cierre; frenan 0 [444 · cierre-sin-fecha.mjs, probar-cierre.mjs]
 
 - Guido abrió `River/memoria-2018-2019` y era narración sin cifras. Se revisaron los 38 por filas con números y palabras de estados: 25 no eran balances (memorias, certificaciones, dictámenes) y entraron a `documentos-descartados.txt` con su motivo; `fos cierre-sin-fecha` ya no cuenta los descartados (el total sin cierre bajó de 457 a 302).

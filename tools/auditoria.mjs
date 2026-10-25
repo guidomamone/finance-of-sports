@@ -49,8 +49,11 @@ const errores = [];
 const err = (n, m) => errores.push(`${REGISTRO}:${n}: ${m}`);
 
 // --- los .md de cada club-año con balance ---------------------------------------------------------------------------------------------
+// Un documento descartado como FUENTE DE CARGA sigue siendo fuente de la auditoría si es un informe del auditor (Guido: cada club deja su informe del auditor):
+// descartar un dictamen suelto no lo saca de acá, o el club-año quedaría sin con qué citar la línea.
+const ES_INFORME_DEL_AUDITOR = /^(solo el )?(dictamen|informe del auditor|informe del revisor)/i; // el motivo de documentos-descartados.txt empieza por lo que el documento es
 const desc = new Set(readFileSync(join(ROOT, 'Admin/registros/documentos-descartados.txt'), 'utf8').split('\n')
-  .filter(l => l.startsWith('Clubes/')).map(l => l.split(' # ')[0].trim().normalize('NFC')));
+  .filter(l => l.startsWith('Clubes/') && !ES_INFORME_DEL_AUDITOR.test(l.split(' # ').slice(1).join(' # '))).map(l => l.split(' # ')[0].trim().normalize('NFC')));
 const parciales = readFileSync(join(ROOT, 'Admin/registros/documentos-parciales.txt'), 'utf8').normalize('NFC');
 const tracked = execSync('git -c core.quotepath=off ls-files -z "Clubes/*.md"', { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26 })
   .split('\0').filter(f => f && !/\/(_|README)/.test(f));
