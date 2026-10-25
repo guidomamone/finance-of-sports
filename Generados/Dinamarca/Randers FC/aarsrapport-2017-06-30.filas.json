@@ -1,0 +1,483 @@
+{
+ "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.pdf",
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md",
+ "mdSha1": "0e8a2469312898cf5940eb1a030b6e80e4e7e9a3",
+ "ubicacionSha1": "3b9a5b3b91545363219565a95f105bb0fa1e2c42",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:36:03.112Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b10"
+  ],
+  "notas_gastos": [
+   "b9",
+   "b11",
+   "b12"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "L418: columna '2016/17 DKK' (la columna 2015/16 está en '1.000 DKK', o sea miles)"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "L651: 'Noter DKK 1.000 DKK' (actual en DKK; anterior en miles)"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "Misma página que L651 'DKK 1.000 DKK'; 186.003 coincide con L445 en DKK"
+  },
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "Misma página que L651 'DKK 1.000 DKK'; 909.622 coincide con L446 en DKK"
+  },
+  {
+   "bloque": "b12",
+   "escala": "unidades",
+   "evidencia": "Misma página que L651 'DKK 1.000 DKK'; 1.333.114 coincide con L449 en DKK"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 422,
+   "etiqueta": "Sponsorindtægter",
+   "actual": "29.350.146",
+   "anterior": "29.897",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 423,
+   "etiqueta": "TV-indtægter",
+   "actual": "19.083.597",
+   "anterior": "19.201",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 424,
+   "etiqueta": "Entré og kampindtægter",
+   "actual": "5.964.431",
+   "anterior": "8.840",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 425,
+   "etiqueta": "Øvrige indtægter",
+   "actual": "11.092.966",
+   "anterior": "15.706",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 426,
+   "etiqueta": "Indtægter i alt",
+   "actual": "65.491.140",
+   "anterior": "73.644",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 428,
+   "etiqueta": "Sponsorudgifter",
+   "actual": "-5.583.897",
+   "anterior": "-4.976",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 429,
+   "etiqueta": "Kampafvikling",
+   "actual": "-8.772.690",
+   "anterior": "-8.148",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 430,
+   "etiqueta": "Sportslige udgifter i øvrigt",
+   "actual": "-3.864.448",
+   "anterior": "-4.374",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 431,
+   "etiqueta": "Talentudvikling",
+   "actual": "-3.435.689",
+   "anterior": "-5.112",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 432,
+   "etiqueta": "Transferudgifter og leje af spillere",
+   "actual": "-478.185",
+   "anterior": "-583",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 433,
+   "etiqueta": "Løn- og personaleomkostninger",
+   "actual": "-28.641.254",
+   "anterior": "-30.624",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 434,
+   "etiqueta": "Øvrige udgifter",
+   "actual": "-137.186",
+   "anterior": "-159",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 435,
+   "etiqueta": "Udgifter Lounge og Skybokse",
+   "actual": "-3.813.358",
+   "anterior": "-4.851",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 436,
+   "etiqueta": "Løn- og personaleomkostninger, administration",
+   "actual": "-8.232.858",
+   "anterior": "-7.425",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 437,
+   "etiqueta": "Administrationsomkostninger",
+   "actual": "-2.482.747",
+   "anterior": "-2.553",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 438,
+   "etiqueta": "Afskrivninger, anlægsaktiver",
+   "actual": "-5.665.981",
+   "anterior": "-5.420",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 439,
+   "etiqueta": "Omkostninger i alt",
+   "actual": "-71.108.293",
+   "anterior": "-74.225",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 441,
+   "etiqueta": "Resultat før finansielle poster",
+   "actual": "-5.617.153",
+   "anterior": "-581",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 443,
+   "etiqueta": "Resultat af kapitalandele i tilknyttede virksomheder",
+   "actual": "2.167.513",
+   "anterior": "1.579",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 444,
+   "etiqueta": "Resultat af kapitalandele i associerede virksomheder",
+   "actual": "0",
+   "anterior": "449",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 445,
+   "etiqueta": "Finansielle indtægter",
+   "actual": "186.003",
+   "anterior": "28",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 446,
+   "etiqueta": "Finansielle omkostninger",
+   "actual": "-909.622",
+   "anterior": "-166",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 447,
+   "etiqueta": "Resultat før skat",
+   "actual": "-4.173.259",
+   "anterior": "1.310",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 449,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "1.333.114",
+   "anterior": "-14",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 450,
+   "etiqueta": "Årets resultat",
+   "actual": "-2.840.145",
+   "anterior": "1.296",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 654,
+   "etiqueta": "Løn og gager",
+   "actual": "30.559.090",
+   "anterior": "33.354",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Løn- og personaleomkostninger"
+  },
+  {
+   "bloque": "b9",
+   "linea": 656,
+   "etiqueta": "Pensioner",
+   "actual": "3.555.697",
+   "anterior": "2.123",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Løn- og personaleomkostninger"
+  },
+  {
+   "bloque": "b9",
+   "linea": 658,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "1.259.569",
+   "anterior": "1.151",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Løn- og personaleomkostninger"
+  },
+  {
+   "bloque": "b9",
+   "linea": 660,
+   "etiqueta": "Øvrige personaleomkostninger",
+   "actual": "1.499.756",
+   "anterior": "1.421",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Løn- og personaleomkostninger"
+  },
+  {
+   "bloque": "b9",
+   "linea": 662,
+   "etiqueta": "Personaleomkostninger i alt",
+   "actual": "36.874.112",
+   "anterior": "38.049",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Løn- og personaleomkostninger"
+  },
+  {
+   "bloque": "b10",
+   "linea": 669,
+   "etiqueta": "Renteindtægter, mellemregning koncernselskaber",
+   "actual": "180.214",
+   "anterior": "25",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle indtægter"
+  },
+  {
+   "bloque": "b10",
+   "linea": 670,
+   "etiqueta": "Øvrige finansielle indtægter",
+   "actual": "5.789",
+   "anterior": "3",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle indtægter"
+  },
+  {
+   "bloque": "b10",
+   "linea": 671,
+   "etiqueta": "Finansielle indtægter i alt",
+   "actual": "186.003",
+   "anterior": "28",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansielle indtægter"
+  },
+  {
+   "bloque": "b11",
+   "linea": 673,
+   "etiqueta": "Renteudgifter, mellemregning koncernselskaber",
+   "actual": "249.812",
+   "anterior": "106",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "bloque": "b11",
+   "linea": 674,
+   "etiqueta": "Øvrige finansielle udgifter",
+   "actual": "659.810",
+   "anterior": "60",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "bloque": "b11",
+   "linea": 675,
+   "etiqueta": "Finansielle omkostninger i alt",
+   "actual": "909.622",
+   "anterior": "166",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "bloque": "b12",
+   "linea": 677,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "-1.163.619",
+   "anterior": "127",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  },
+  {
+   "bloque": "b12",
+   "linea": 678,
+   "etiqueta": "Regulering af udskudt skat",
+   "actual": "-169.495",
+   "anterior": "-113",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  },
+  {
+   "bloque": "b12",
+   "linea": 679,
+   "etiqueta": "Skat af årets resultat i alt",
+   "actual": "-1.333.114",
+   "anterior": "14",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 426,
+  "actual": "65.491.140"
+ },
+ "total_gastos": {
+  "linea": 439,
+  "actual": "-71.108.293"
+ },
+ "resultado": {
+  "linea": 450,
+  "actual": "-2.840.145",
+  "anterior": "1.296"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la nota 1 (L654-L662) como desglose solo de 'Løn- og personaleomkostninger' (L433), aunque su total 36.874.112 es la suma de L433 y L436?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Løn- og personaleomkostninger",
+   "texto": "La nota 1 (L662) desglosa conjuntamente L433 (-28.641.254) y L436 (-8.232.858), sin separar por renglón.",
+   "bloques": [
+    "b9",
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se trata la columna del año anterior (2015/16) como expresada en miles de DKK mientras la actual está en DKK unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "L418 y L651 indican 'DKK' para 2016/17 y '1.000 DKK' para 2015/16; escalas distintas entre columnas.",
+   "bloques": [
+    "b4",
+    "b9",
+    "b10",
+    "b11",
+    "b12"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Escala distinta por columna: actual en DKK, anterior en miles. Líneas L670-L671 y L674-L675 aparecen repetidas en b10/b11/b12 por solapamiento; se extrajeron una sola vez en el bloque de su nota. La nota 4 (L677-L679) tiene signo opuesto al estado (L449). Las financieras de las notas van en positivo mientras el estado las muestra con signo."
+}

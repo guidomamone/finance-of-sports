@@ -1,193 +1,31 @@
 {
  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.md",
- "generatedAt": "2026-09-30T22:48:46.821Z",
- "rubrosHuella": "5b186982dc2060e2c841ce8db44a1aa7aa78ef2e",
+ "generatedAt": "2026-10-25T16:41:21.355Z",
+ "rubrosHuella": "ba399fc47511b0c818a12c0b065c207c9336d9a8",
  "rubros": [
   {
-   "label": "Servicios básicos",
-   "lado": null,
-   "page": 79,
-   "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-   "choice": "admin_general_expense",
-   "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
-   "label": "Asesorías",
-   "lado": null,
-   "page": 79,
-   "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-   "choice": "admin_general_expense",
-   "confidence": 0.99,
-   "desdeCache": true
-  },
-  {
-   "label": "Depreciaciones",
-   "lado": null,
-   "page": 79,
-   "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-   "choice": "depreciation",
-   "confidence": 0.99,
-   "desdeCache": true
-  },
-  {
-   "label": "Gastos Legales",
-   "lado": "expense",
-   "page": 79,
-   "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-   "choice": "admin_general_expense",
-   "confidence": 0.99,
-   "desdeCache": true
-  },
-  {
-   "label": "Mantenciones",
-   "lado": null,
-   "page": 79,
-   "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-   "choice": "admin_general_expense",
-   "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
-   "label": "Remuneración administración",
-   "lado": null,
-   "page": 79,
-   "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-   "choice": "admin_general_expense",
-   "confidence": 0.99,
-   "desdeCache": true
-  },
-  {
-   "label": "Otros gastos de administración",
-   "lado": "expense",
-   "page": 79,
-   "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-   "choice": "admin_general_expense",
-   "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
-   "label": "Costo de venta jugadores",
-   "lado": "expense",
-   "page": 79,
-   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-   "choice": "player_amortisation",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Remuneración plantel profesional y cuerpo técnico",
-   "lado": null,
-   "page": 79,
-   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-   "choice": "wages_squad",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Amortización Activos en concesión",
-   "lado": null,
-   "page": 79,
-   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-   "choice": "other_amortisation",
-   "confidence": 0.95,
-   "desdeCache": true
-  },
-  {
-   "label": "Amortización pases jugadores profesionales",
-   "lado": null,
-   "page": 79,
-   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-   "choice": "player_amortisation",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Costos de concentración traslados y otros",
-   "lado": "expense",
-   "page": 79,
-   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-   "choice": "match_organisation_expense",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Otros costos",
-   "lado": "expense",
-   "page": 79,
-   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-   "choice": "other_expenses",
-   "confidence": 0.99,
-   "desdeCache": true
-  },
-  {
-   "label": "Larraín Vial",
-   "lado": null,
-   "page": 80,
-   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS",
-   "choice": "other_income",
-   "confidence": 0.76,
-   "desdeCache": true
-  },
-  {
-   "label": "Intereses Inversión UBS",
-   "lado": null,
-   "page": 80,
-   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS",
-   "choice": "other_income",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
-   "label": "Celfin",
-   "lado": null,
-   "page": 80,
-   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS",
-   "choice": "other_income",
-   "confidence": 0.73,
-   "desdeCache": true
-  },
-  {
-   "label": "Otros activos financieros corrientes",
-   "lado": null,
-   "page": 80,
-   "section": "26. DIFERENCIA DE CAMBIO",
-   "choice": "other_income",
-   "confidence": 0.92,
-   "desdeCache": true
-  },
-  {
-   "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
-   "lado": null,
-   "page": 80,
-   "section": "26. DIFERENCIA DE CAMBIO",
-   "choice": "other_expenses",
-   "confidence": 0.53,
-   "desdeCache": true
-  },
-  {
-   "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
-   "lado": null,
-   "page": 80,
-   "section": "26. DIFERENCIA DE CAMBIO",
-   "choice": "other_expenses",
-   "confidence": 0.7,
-   "desdeCache": true
-  },
-  {
-   "label": "Club(**)",
+   "label": "Ingresos por recaudaciones",
    "lado": "revenue",
    "page": 78,
-   "section": "Ingresos por venta de jugadores formados por el",
-   "choice": "other_income",
-   "confidence": 0.45,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "matchday_competition",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por venta de jugadores comprado a terceros(*)",
+   "lado": "revenue",
+   "page": 78,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "player_sales",
+   "confidence": 1,
    "desdeCache": true
   },
   {
    "label": "Ingresos por publicidad",
    "lado": "revenue",
    "page": 78,
-   "section": "Ingresos por venta de jugadores formados por el",
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
    "choice": "sponsorship_commercial",
    "confidence": 1,
    "desdeCache": true
@@ -196,10 +34,168 @@
    "label": "Otros",
    "lado": "revenue",
    "page": 78,
-   "section": "Ingresos por venta de jugadores formados por el",
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
    "choice": "other_income",
    "confidence": 1,
    "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos, por función",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de venta jugadores",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración plantel profesional y cuerpo técnico",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Activos en concesión",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización pases jugadores profesionales",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de concentración traslados y otros",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios básicos",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenciones",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración administración",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de administración",
+   "lado": "expense",
+   "page": 79,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos, por función",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por venta de jugadores formados por el Club(**)",
+   "lado": "revenue",
+   "page": 78,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "youth_football",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1151
   }
  ]
 }

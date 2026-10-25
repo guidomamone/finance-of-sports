@@ -1,0 +1,211 @@
+{
+ "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.pdf",
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md",
+ "mdSha1": "0e8a2469312898cf5940eb1a030b6e80e4e7e9a3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:35:09.855Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    12,
+    15
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    21,
+    27
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    390,
+    410
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    418,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    463,
+    507
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    526,
+    543
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    568,
+    582
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    606,
+    633
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    654,
+    662
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    669,
+    671
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    673,
+    675
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    677,
+    679
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    681,
+    684
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    695,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    700,
+    712
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    716,
+    726
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    730,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 18,
+   "lineas": [
+    750,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 18,
+   "lineas": [
+    755,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    778,
+    782
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 18,
+   "lineas": [
+    790,
+    794
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b9",
+  "b11",
+  "b12"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado 'Note | Resultatopgørelse | 2016/17 DKK | 2015/16 1.000 DKK': la columna del ejercicio está en DKK (unidades) y la del año anterior en 1.000 DKK",
+ "moneda": "DKK",
+ "columna_ejercicio": "2016/17 DKK",
+ "columna_anterior": "2015/16 1.000 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de la columna 2016/17 del estado de resultados (b4) como unidades de DKK, mientras la columna 2015/16 está en miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado de b4 indica 'DKK' para 2016/17 y '1.000 DKK' para 2015/16; las escalas de las dos columnas son distintas.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de Randers FC A/S, sin consolidado. b4 es la resultatopgørelse; las notas 1 a 4 se reparten así: b9 (personale), b10 (finansielle indtægter), b11 (finansielle omkostninger) y b12 (skat). b13 es la distribución del resultado y queda excluido. b3 corresponde a hoved- og nøgletal y también queda excluido."
+}

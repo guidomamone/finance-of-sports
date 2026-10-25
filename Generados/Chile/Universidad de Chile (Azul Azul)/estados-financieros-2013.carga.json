@@ -1,0 +1,630 @@
+{
+ "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.pdf",
+ "generado": "2026-10-25T16:44:57.355Z",
+ "frena": [],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2022, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
+  "perfil de \"Otras secciones deportivas\": se usa el chequeo de 2025 (no), fuera de la ventana de 4 años",
+  "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
+ ],
+ "ejercicio": {
+  "clubId": "udechile-cl",
+  "year": 2013,
+  "cierre": "2013-12-31",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Borderó",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 3887.891,
+    "disclosureLevel": "aggregated",
+    "_pag": 65,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidad",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 4800.936,
+    "disclosureLevel": "aggregated",
+    "_pag": 65,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Derechos de T.V.",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 2203.257,
+    "disclosureLevel": "aggregated",
+    "_pag": 65,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cesión definitiva de derechos federativos y económicos (ventas de pases)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 3351.882,
+    "disclosureLevel": "aggregated",
+    "_pag": 65,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cesión temporal de derechos federativos (Préstamos)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 510.204,
+    "disclosureLevel": "aggregated",
+    "_pag": 65,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros (Derechos de Formación, Solidaridad, etc.)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 117.078,
+    "disclosureLevel": "aggregated",
+    "_pag": 65,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Ingresos varios",
+    "normalizedCategory": "other_income",
+    "amountNative": 556.393,
+    "disclosureLevel": "aggregated",
+    "_pag": 65,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Borderó (costos directos)",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1214.95,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remuneraciones",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -5237.414,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortización de pases",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -2566.129,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costo no amortizado",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -925.907,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Indemnización por término anticipado de contrato",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -305.487,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros costos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -494.711,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos de operación",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1662.187,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gasto de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2790.763,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otras ganancias o pérdidas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -6.939,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "CLP",
+   "fxRef": "CLP@2013-12-31",
+   "sourceId": "udechile-cl-estados-financieros-2013",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -18.02,
+   "tax": -80.761,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 103.291
+    },
+    {
+     "label": "Costos financieros",
+     "value": -162.523
+    },
+    {
+     "label": "Resultados por unidades de reajuste",
+     "value": 41.212
+    },
+    {
+     "label": "Gasto por impuestos a las ganancias",
+     "value": -80.761
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 15427.641,
+   "officialTotalExpenses": 15204.487,
+   "officialPAT": 124.373
+  },
+  "source": {
+   "id": "udechile-cl-estados-financieros-2013",
+   "clubId": "udechile-cl",
+   "title": "Azul Azul S.A. — estados-financieros-2013 (ejercicio 2013)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2013.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2013-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "udechile-cl",
+ "year": 2013,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 20,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Borderó",
+   "page": 65,
+   "native": 3887.891,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 3887.891,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3887.891
+  },
+  {
+   "label": "Publicidad",
+   "page": 65,
+   "native": 4800.936,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 4800.936,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4800.936
+  },
+  {
+   "label": "Derechos de T.V.",
+   "page": 65,
+   "native": 2203.257,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 2203.257,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2203.257
+  },
+  {
+   "label": "Cesión definitiva de derechos federativos y económicos (ventas de pases)",
+   "page": 65,
+   "native": 3351.882,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\")",
+   "signoFijo": 3351.882,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3351.882
+  },
+  {
+   "label": "Cesión temporal de derechos federativos (Préstamos)",
+   "page": 65,
+   "native": 510.204,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\")",
+   "signoFijo": 510.204,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 510.204
+  },
+  {
+   "label": "Otros (Derechos de Formación, Solidaridad, etc.)",
+   "page": 65,
+   "native": 117.078,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\")",
+   "signoFijo": 117.078,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): Es un sub-renglon del desglose de la linea 'Ingresos por transferencias de pases'; el monto real es 1.000 M$ (el '1' de la cola es la cantidad de pases). Derechos de formacion/solidaridad cobrados por transferencias van con player_sales, como el precedente de Alianza Lima (derechos de formacion y transferencias). Si se carga como linea aparte podria ir a youth_football, pero qu [Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md L3280 ]",
+   "destino": "revenue",
+   "amountNative": 117.078
+  },
+  {
+   "label": "Ingresos varios",
+   "page": 65,
+   "native": 556.393,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 556.393,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 556.393
+  },
+  {
+   "label": "Borderó (costos directos)",
+   "page": 66,
+   "native": 1214.95,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 1214.95,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1214.95
+  },
+  {
+   "label": "Remuneraciones",
+   "page": 66,
+   "native": 5237.414,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 5237.414,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5237.414
+  },
+  {
+   "label": "Amortización de pases",
+   "page": 66,
+   "native": 2566.129,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 2566.129,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2566.129
+  },
+  {
+   "label": "Costo no amortizado",
+   "page": 66,
+   "native": 925.907,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\" > desglose de \"Costo de venta pases de jugadores\")",
+   "signoFijo": 925.907,
+   "cat": "player_amortisation",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -925.907
+  },
+  {
+   "label": "Indemnización por término anticipado de contrato",
+   "page": 66,
+   "native": 305.487,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\" > desglose de \"Costo de venta pases de jugadores\")",
+   "signoFijo": 305.487,
+   "cat": "player_amortisation",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -305.487
+  },
+  {
+   "label": "Otros costos",
+   "page": 66,
+   "native": 494.711,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\" > desglose de \"Costo de venta pases de jugadores\")",
+   "signoFijo": 494.711,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -494.711
+  },
+  {
+   "label": "Otros gastos de operación",
+   "page": 66,
+   "native": 1662.187,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 1662.187,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1662.187
+  },
+  {
+   "label": "Gasto de administración",
+   "page": 7,
+   "native": 2790.763,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2790.763,
+   "cat": "admin_general_expense",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2790.763
+  },
+  {
+   "label": "Otras ganancias o pérdidas",
+   "page": 7,
+   "native": 6.939,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))",
+   "signoFijo": 6.939,
+   "cat": "other_expenses",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.939
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 103.291,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -162.523,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Resultados por unidades de reajuste",
+   "page": null,
+   "native": 41.212,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Gasto por impuestos a las ganancias",
+   "page": null,
+   "native": -80.761,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Costo de ventas\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Costo de ventas\" > desglose de \"Costo de venta pases de jugadores\")": "gastos sin signo (se invierten)",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 15427.641,
+  "expSum": -15204.487,
+  "officialTotalRevenue": 15427.641,
+  "officialTotalExpenses": 15204.487,
+  "officialPAT": 124.373,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 124.373,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 15427.641
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 15204.487
+  }
+ },
+ "liga": {
+  "valor": "cl-primera",
+  "fuente": "roster cacheado de \"2013–14 Campeonato Nacional Primera División\" (tools/club-league-reference/cl.json), coincidencia exacta \"Universidad de Chile\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2013,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2013-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (216 de 216 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CLP",
+   "fuente": "moneda de curso legal de Chile (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 5 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "CLP@2013-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene CLP@2013-12-31 = 524.61 (Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2014-01-02, 2013-12-31 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "udechile-cl-estados-financieros-2013",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "cl-primera",
+   "fuente": "roster cacheado de \"2013–14 Campeonato Nacional Primera División\" (tools/club-league-reference/cl.json), coincidencia exacta \"Universidad de Chile\"",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 7,
+  "lineasGasto": 9,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

@@ -1,20 +1,90 @@
 {
- "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.md",
- "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.pdf",
- "club": "fredericia-dk",
- "year": 2017,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:59:50.469Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": false,
-  "motivo": "sin estado de resultados"
- },
- "ladoConocido": 0,
- "rubros": []
+  "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.md",
+  "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.pdf",
+  "club": "fredericia-dk",
+  "year": 2017,
+  "generatedAt": "2026-10-25T16:38:41.715Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Nettoomsætning",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        13.444776
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Omkostninger til råvarer og hjælpematerialer",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.319398
+      ],
+      "glosa": "Coste de materias primas y consumibles"
+    },
+    {
+      "label": "Andre eksterne omkostninger",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        4.076087
+      ],
+      "glosa": "Otros gastos externos"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        7.307705
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.341923
+      ],
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.191747
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Andre personaleomkostninger",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.933485
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.109598
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado material"
+    }
+  ]
 }

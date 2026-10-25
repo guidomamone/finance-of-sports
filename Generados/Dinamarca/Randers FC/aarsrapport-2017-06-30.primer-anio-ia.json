@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md",
+ "clave": "b22c5ad82b2e01172ce57a116f63d6a5cb42d241",
+ "generado": "2026-10-25T16:38:45.381Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todos los renglones del ejercicio están cargados una sola vez y del lado correcto. No se cargaron subtotales (L426, L439, L441, L447, L450). L444 vale 0 en el ejercicio, así que no falta. La suma de lo cargado da -2,840145, igual al resultado impreso."
+ }
+}

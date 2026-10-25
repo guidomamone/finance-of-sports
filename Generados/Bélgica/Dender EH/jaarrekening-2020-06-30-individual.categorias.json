@@ -1,0 +1,103 @@
+{
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.md",
+ "club": "dender-be",
+ "year": 2020,
+ "generatedAt": "2026-10-25T16:41:22.252Z",
+ "rubrosHuella": "d8904b0d8bc4b83b4d2c8be0437c45e67b79521c",
+ "jevHuella": "f3723edd4edabab5871561c6d534a08629678da3",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de explotación",
+   "page": 6,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos",
+   "page": 6,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "620",
+   "lado": "expense",
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+   "glosa": "620",
+   "page": 13,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "621",
+   "lado": "expense",
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+   "glosa": "621",
+   "page": 13,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "623",
+   "lado": "expense",
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+   "glosa": "623",
+   "page": 13,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material",
+   "page": 6,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 6,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

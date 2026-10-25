@@ -205,6 +205,8 @@ function guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion })
   const cachePath = resolve(refDir, `${pais}.json`);
   const cache = existsSync(cachePath) ? JSON.parse(readFileSync(cachePath, 'utf8')) : { leagues: {} };
   cache.leagues[leagueId] = cache.leagues[leagueId] || {};
+  // UNA LISTA CORREGIDA A MANO (`manualFix`, con su `note`) no se pisa al volver a bajar la página: el parser repetiría el error que se corrigió. Con --forzar se reemplaza.
+  if (cache.leagues[leagueId][year]?.manualFix && !process.argv.includes('--forzar')) { console.log(`\n${leagueId} ${year} tiene una corrección a mano (manualFix: ${cache.leagues[leagueId][year].note || 'sin nota'}): no se escribe. Usá --forzar para reemplazarla.`); return; }
   // `fuentes` (regla «la liga de un año necesita dos fuentes»): esta página es la de Wikipedia; las otras (tools/segunda-fuente-liga.mjs) se conservan
   const otras = (cache.leagues[leagueId][year]?.fuentes || []).filter((f) => f.tipo !== 'wikipedia');
   cache.leagues[leagueId][year] = {

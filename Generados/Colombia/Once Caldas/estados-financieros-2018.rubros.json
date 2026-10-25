@@ -1,260 +1,400 @@
 {
   "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
   "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
-  "club": "oncecaldas",
+  "club": "oncecaldas-co",
   "year": 2018,
-  "numberFormat": "us (coma miles, punto decimal)",
-  "generatedAt": "2026-09-30T21:59:30.162Z",
-  "tieOuts": {
-    "cierran": 15,
-    "noCierran": 20
-  },
-  "warnings": [
-    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
-    "18 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
-    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
-  ],
-  "estadoDeResultados": false,
-  "seleccion": {
-    "ok": true,
-    "filas": 25,
-    "notasUsadas": [
-      "7",
-      "6"
-    ]
-  },
-  "ladoConocido": 21,
+  "generatedAt": "2026-10-25T16:47:15.497Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "FINANCIEROS",
+      "label": "INGRESOS OPERATIVOS",
       "lado": "revenue",
-      "page": 19,
-      "section": "",
+      "page": 17,
+      "section": "estado",
       "values": [
-        1.106432
+        21.438202
       ],
-      "origen": "estado 28 (su nota queda consumida sin abrir)",
-      "glosa": "FINANCIEROS"
+      "glosa": "INGRESOS OPERATIVOS"
     },
     {
       "label": "INTERESES",
       "lado": "revenue",
       "page": 19,
-      "section": "",
+      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\"",
       "values": [
         0.010768
       ],
-      "origen": "estado 28 (su nota queda consumida sin abrir)",
       "glosa": "INTERESES"
     },
     {
       "label": "DIFERENCIA EN CAMBIO",
       "lado": "revenue",
       "page": 19,
-      "section": "",
+      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\"",
       "values": [
         1.094307
       ],
-      "origen": "estado 28",
       "glosa": "DIFERENCIA EN CAMBIO"
     },
     {
       "label": "DESC COMERCIALES CONDICIONADOS",
       "lado": "revenue",
       "page": 19,
-      "section": "",
+      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\"",
       "values": [
         0.001357
       ],
-      "origen": "estado 28",
       "glosa": "DESC COMERCIALES CONDICIONADOS"
     },
     {
       "label": "RECUPERACIONES",
       "lado": "revenue",
       "page": 19,
-      "section": "",
+      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\"",
       "values": [
         1.357782
       ],
-      "origen": "estado 28",
       "glosa": "RECUPERACIONES"
-    },
-    {
-      "label": "REINTE DE OTROS COSTOS Y GASTO",
-      "lado": "expense",
-      "page": 19,
-      "section": "",
-      "values": [
-        0.004861
-      ],
-      "origen": "estado 28",
-      "glosa": "REINTE DE OTROS COSTOS Y GASTO"
-    },
-    {
-      "label": "RECUPERACION PROVISIONES",
-      "lado": "revenue",
-      "page": 19,
-      "section": "",
-      "values": [
-        0.217867
-      ],
-      "origen": "estado 28",
-      "glosa": "RECUPERACION PROVISIONES"
-    },
-    {
-      "label": "REINTEGROS NIIF",
-      "lado": "revenue",
-      "page": 19,
-      "section": "",
-      "values": [
-        0.930534
-      ],
-      "origen": "estado 28",
-      "glosa": "REINTEGROS NIIF"
-    },
-    {
-      "label": "REINTEGRO DE GTOS ANOS ANTERIO",
-      "lado": "revenue",
-      "page": 19,
-      "section": "",
-      "values": [
-        0.19417
-      ],
-      "origen": "estado 28",
-      "glosa": "REINTEGRO DE GTOS ANOS ANTERIO"
     },
     {
       "label": "INDEMNIZACIONES",
       "lado": "revenue",
       "page": 19,
-      "section": "",
+      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\"",
       "values": [
         0.011916
       ],
-      "origen": "estado 28",
       "glosa": "INDEMNIZACIONES"
-    },
-    {
-      "label": "POR INCAPACIDADES DEL ISS",
-      "lado": "revenue",
-      "page": 20,
-      "section": "",
-      "values": [
-        11.916
-      ],
-      "origen": "estado 29",
-      "glosa": "POR INCAPACIDADES DEL ISS"
     },
     {
       "label": "INGRESOS DE EJERCICIOS ANTERIORES",
       "lado": "revenue",
       "page": 20,
-      "section": "",
+      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\"",
       "values": [
-        0.09
+        0.00009
       ],
-      "origen": "estado 29",
       "glosa": "INGRESOS DE EJERCICIOS ANTERIORES"
-    },
-    {
-      "label": "DIVERSOS",
-      "lado": "revenue",
-      "page": 20,
-      "section": "",
-      "values": [
-        688.841
-      ],
-      "origen": "estado 29",
-      "glosa": "DIVERSOS"
     },
     {
       "label": "APROVECHAMIENTOS",
       "lado": "revenue",
       "page": 20,
-      "section": "",
+      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\"",
       "values": [
-        11.886
+        0.011886
       ],
-      "origen": "estado 29",
       "glosa": "APROVECHAMIENTOS"
     },
     {
       "label": "SUBVENCIONES",
       "lado": "revenue",
       "page": 20,
-      "section": "",
+      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\"",
       "values": [
-        676.945
+        0.676945
       ],
-      "origen": "estado 29",
       "glosa": "SUBVENCIONES"
     },
     {
       "label": "AJUSTE AL PESO",
       "lado": "revenue",
       "page": 20,
-      "section": "",
+      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\"",
       "values": [
-        0.01
+        0.00001
       ],
-      "origen": "estado 29",
       "glosa": "AJUSTE AL PESO"
     },
     {
-      "label": "GASTOS NO OPERACIONALES",
+      "label": "COSTO DE VENTAS",
       "lado": "expense",
-      "page": 20,
-      "section": "",
+      "page": 18,
+      "section": "estado",
       "values": [
-        1723.822
+        0.508765
       ],
-      "origen": "estado 30",
-      "glosa": "GASTOS NO OPERACIONALES"
+      "glosa": "COSTO DE VENTAS"
+    },
+    {
+      "label": "GASTOS DE PERSONAL",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.678948
+      ],
+      "glosa": "GASTOS DE PERSONAL"
+    },
+    {
+      "label": "HONORARIOS",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.039776
+      ],
+      "glosa": "HONORARIOS"
+    },
+    {
+      "label": "ARRENDAMIENTOS",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.016413
+      ],
+      "glosa": "ARRENDAMIENTOS"
+    },
+    {
+      "label": "SERVICIOS",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.032827
+      ],
+      "glosa": "SERVICIOS"
+    },
+    {
+      "label": "GASTOS LEGALES",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.002208
+      ],
+      "glosa": "GASTOS LEGALES"
+    },
+    {
+      "label": "MANTENIMIENTO Y REPARACIONES",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.00033
+      ],
+      "glosa": "MANTENIMIENTO Y REPARACIONES"
+    },
+    {
+      "label": "ADECUACION E INSTALACION",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.000035
+      ],
+      "glosa": "ADECUACION E INSTALACION"
+    },
+    {
+      "label": "GASTOS DE VIAJE",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.02206
+      ],
+      "glosa": "GASTOS DE VIAJE"
+    },
+    {
+      "label": "DEPRECIACIONES",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.001164
+      ],
+      "glosa": "DEPRECIACIONES"
+    },
+    {
+      "label": "DIVERSOS",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "values": [
+        0.014584
+      ],
+      "glosa": "DIVERSOS"
+    },
+    {
+      "label": "GASTOS DE PERSONAL",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        6.866963
+      ],
+      "glosa": "GASTOS DE PERSONAL"
+    },
+    {
+      "label": "HONORARIOS",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.049825
+      ],
+      "glosa": "HONORARIOS"
+    },
+    {
+      "label": "IMPUESTOS",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.492496
+      ],
+      "glosa": "IMPUESTOS"
+    },
+    {
+      "label": "ARRENDAMIENTOS",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.605806
+      ],
+      "glosa": "ARRENDAMIENTOS"
+    },
+    {
+      "label": "CONTRIBUCIONES Y AFILIACIONES",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.002321
+      ],
+      "glosa": "CONTRIBUCIONES Y AFILIACIONES"
+    },
+    {
+      "label": "SEGUROS",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.007143
+      ],
+      "glosa": "SEGUROS"
+    },
+    {
+      "label": "SERVICIOS",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.191179
+      ],
+      "glosa": "SERVICIOS"
+    },
+    {
+      "label": "GASTOS LEGALES",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.000514
+      ],
+      "glosa": "GASTOS LEGALES"
+    },
+    {
+      "label": "MANTENIMIENTO Y REPARACIONES",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.06663
+      ],
+      "glosa": "MANTENIMIENTO Y REPARACIONES"
+    },
+    {
+      "label": "ADECUACION E INSTALACION",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.000976
+      ],
+      "glosa": "ADECUACION E INSTALACION"
+    },
+    {
+      "label": "GASTOS DE VIAJE",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.454227
+      ],
+      "glosa": "GASTOS DE VIAJE"
+    },
+    {
+      "label": "DEPRECIACIONES",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.086994
+      ],
+      "glosa": "DEPRECIACIONES"
+    },
+    {
+      "label": "DERECHOS DEPORTIVOS",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        3.649049
+      ],
+      "glosa": "DERECHOS DEPORTIVOS"
+    },
+    {
+      "label": "DIVERSOS",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        1.075825
+      ],
+      "glosa": "DIVERSOS"
+    },
+    {
+      "label": "PROVISIONES",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "values": [
+        0.026242
+      ],
+      "glosa": "PROVISIONES"
     },
     {
       "label": "GASTOS FINANCIEROS",
       "lado": "expense",
       "page": 20,
-      "section": "",
+      "section": "nota que desglosa \"GASTOS NO OPERACIONALES\"",
       "values": [
-        820.054
+        0.820054
       ],
-      "origen": "estado 30",
       "glosa": "GASTOS FINANCIEROS"
     },
     {
       "label": "GASTOS EXTRAORDINARIOS",
       "lado": "expense",
       "page": 20,
-      "section": "",
+      "section": "nota que desglosa \"GASTOS NO OPERACIONALES\"",
       "values": [
-        713.284
+        0.713284
       ],
-      "origen": "estado 30",
       "glosa": "GASTOS EXTRAORDINARIOS"
     },
     {
       "label": "GASTOS DIVERSOS",
       "lado": "expense",
       "page": 20,
-      "section": "",
+      "section": "nota que desglosa \"GASTOS NO OPERACIONALES\"",
       "values": [
-        190.484
+        0.190484
       ],
-      "origen": "estado 30",
       "glosa": "GASTOS DIVERSOS"
-    },
-    {
-      "label": "IMTPO DIFERIDO NIIF",
-      "lado": "expense",
-      "page": 20,
-      "section": "",
-      "values": [
-        1744.104
-      ],
-      "origen": "estado 30",
-      "glosa": "IMTPO DIFERIDO NIIF"
     }
   ]
 }

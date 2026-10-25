@@ -1,0 +1,296 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.pdf",
+ "generado": "2026-10-25T16:44:56.522Z",
+ "frena": [],
+ "avisos": [
+  "ingresos: el documento (esquema abreviado, códigos NBB) no informa ingresos: el resultado cierra con la Brutomarge negativa como gasto; officialTotalRevenue 0"
+ ],
+ "ejercicio": {
+  "clubId": "dender-be",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "individual",
+  "revenueLines": [],
+  "expenseLines": [
+   {
+    "rawLabel": "Brutomarge",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -0.069811,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Bezoldigingen, sociale lasten en pensioenen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.368294,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.158979,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.020427,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2022-06-30",
+   "sourceId": "dender-be-jaarrekening-2022-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.087843,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Recurrente financiële opbrengsten",
+     "value": 0.000002
+    },
+    {
+     "label": "Recurrente financiële kosten",
+     "value": -0.087845
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Brutomarge",
+     "lado": "expense",
+     "importe": 0.069811,
+     "motivo": "Claude 2026-10-25 (sesion): miré la linea 353: la Brutomarge es negativa (-69.811) y va como gasto sin desglose; mismo criterio que los 3 casos belgas contestados",
+     "tipo": "gross_margin"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0,
+   "officialTotalExpenses": 1.617511,
+   "officialPAT": -1.705354
+  },
+  "source": {
+   "id": "dender-be-jaarrekening-2022-06-30-individual",
+   "clubId": "dender-be",
+   "title": "Football Club Verbroedering Dender EH VZW — jaarrekening-2022-06-30-individual (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "inicio": "2021-07-01",
+  "cierre": "2022-06-30",
+  "cierreDe": "período del formulario (to-do 298 f)",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "met betrekking tot het boekjaar dat de periode dekt van 01-07-2021 tot 30-06-2022"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "dender-be",
+ "year": 2022,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 6,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Brutomarge",
+   "page": 6,
+   "native": 0.069811,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.069811,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-25 (sesion): miré la linea 353: la Brutomarge es negativa (-69.811) y va como gasto sin desglose; mismo criterio que los 3 casos belgas contestados",
+   "destino": "expense",
+   "amountNative": -0.069811
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen",
+   "page": 6,
+   "native": 1.368294,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.368294,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.368294
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 6,
+   "native": 0.158979,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.158979,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.158979
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 6,
+   "native": 0.020427,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.020427,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.020427
+  },
+  {
+   "label": "Recurrente financiële opbrengsten",
+   "page": null,
+   "native": 0.000002,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "page": null,
+   "native": -0.087845,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0,
+  "expSum": -1.617511,
+  "officialTotalRevenue": 0,
+  "officialTotalExpenses": 1.617511,
+  "officialPAT": -1.705354,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "por-resultado",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -1.705354,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 1.617511
+  }
+ },
+ "liga": {
+  "valor": "be-div1amateur",
+  "fuente": "roster cacheado de \"2021–22 Belgian National Division 1\" (tools/club-league-reference/be.json), coincidencia exacta \"Dender EH\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2022-06-30) y contenido del .md (2 de 3 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2022-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2022-06-30 = 0.9627 (Cierre BCE al 30/6/2022 (1 EUR = 1,0387 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "dender-be-jaarrekening-2022-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "be-div1amateur",
+   "fuente": "roster cacheado de \"2021–22 Belgian National Division 1\" (tools/club-league-reference/be.json), coincidencia exacta \"Dender EH\"",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 0,
+  "lineasGasto": 4,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,286 @@
+{
+ "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.pdf",
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.md",
+ "generado": "2026-10-25T16:47:15.280Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "colocolo-cl",
+ "year": 2013,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.2737367544323206e-12
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2012: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Otros ingresos, por función\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Otros gastos, por función\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar que no afecta la carga: Sus ingresos por segmento repiten los de la nota 23 (b88): publicidad 5.639.076, otros 165.492, y recaudaciones = recaudaciones + venta de jugadores; no abre Televisión ni Otras secciones deportivas.",
+  "duda de localizar que no afecta la carga: La nota 23 (b88) sólo abre recaudaciones, venta de jugadores, publicidad y Otros (165.492); la TV podría estar dentro de publicidad u Otros sin desglose.",
+  "duda de extraer que no afecta la carga: L2450-L2451 repiten L2441-L2442 de b88 con cantidad de jugadores; L2452 es su suma.",
+  "duda de extraer que no afecta la carga: La nota de ingresos ordinarios (L2440-L2444) solo trae recaudaciones, venta de jugadores, publicidad y otros; no hay filas de esos conceptos."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 9298.914,
+  "gastos": 12271.157,
+  "financiero": -21.186,
+  "impuesto": 666.198,
+  "resultadoImpreso": -2327.231,
+  "resultadoParaCargar": -2327.231,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos por recaudaciones",
+   "lado": "ingreso",
+   "M": 2104.281,
+   "pagina": 78,
+   "linea": 2440,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por venta de jugadores comprado a terceros(*)",
+   "lado": "ingreso",
+   "M": 1339.283,
+   "pagina": 78,
+   "linea": 2441,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por venta de jugadores formados por el Club(**)",
+   "lado": "ingreso",
+   "M": 50.782,
+   "pagina": 78,
+   "linea": 2442,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por publicidad",
+   "lado": "ingreso",
+   "M": 5639.076,
+   "pagina": 78,
+   "linea": 2443,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Otros",
+   "lado": "ingreso",
+   "M": 165.492,
+   "pagina": 78,
+   "linea": 2444,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Otros ingresos, por función",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 8,
+   "linea": 208,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costo de venta jugadores",
+   "lado": "gasto",
+   "M": 41.66,
+   "pagina": 79,
+   "linea": 2481,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Remuneración plantel profesional y cuerpo técnico",
+   "lado": "gasto",
+   "M": 2855.799,
+   "pagina": 79,
+   "linea": 2482,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Amortización Activos en concesión",
+   "lado": "gasto",
+   "M": 701.048,
+   "pagina": 79,
+   "linea": 2483,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Amortización pases jugadores profesionales",
+   "lado": "gasto",
+   "M": 2715.242,
+   "pagina": 79,
+   "linea": 2484,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Costos de concentración traslados y otros",
+   "lado": "gasto",
+   "M": 2077.72,
+   "pagina": 79,
+   "linea": 2485,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Otros costos",
+   "lado": "gasto",
+   "M": 337.084,
+   "pagina": 79,
+   "linea": 2486,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Servicios básicos",
+   "lado": "gasto",
+   "M": 155.467,
+   "pagina": 79,
+   "linea": 2489,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Asesorías",
+   "lado": "gasto",
+   "M": 490.556,
+   "pagina": 79,
+   "linea": 2490,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 345.964,
+   "pagina": 79,
+   "linea": 2491,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Gastos Legales",
+   "lado": "gasto",
+   "M": 238.245,
+   "pagina": 79,
+   "linea": 2492,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Mantenciones",
+   "lado": "gasto",
+   "M": 20.113,
+   "pagina": 79,
+   "linea": 2493,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Remuneración administración",
+   "lado": "gasto",
+   "M": 1208.535,
+   "pagina": 79,
+   "linea": 2494,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Otros gastos de administración",
+   "lado": "gasto",
+   "M": 671.222,
+   "pagina": 79,
+   "linea": 2495,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Otros gastos, por función",
+   "lado": "gasto",
+   "M": 412.502,
+   "pagina": 8,
+   "linea": 210,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 31.76,
+   "linea": 211
+  },
+  {
+   "etiqueta": "Diferencias de cambio",
+   "M": -52.946,
+   "linea": 212
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Gasto (Ingreso) por Impuesto a las Ganancias",
+   "M": 666.198,
+   "linea": 214
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "7a38928b6da7217027dcbe134466c1fccc28cab4",
+  "rango": [
+   202,
+   223
+  ],
+  "lineasCargadas": [
+   2440,
+   2441,
+   2442,
+   2443,
+   2444,
+   208,
+   2481,
+   2482,
+   2483,
+   2484,
+   2485,
+   2486,
+   2489,
+   2490,
+   2491,
+   2492,
+   2493,
+   2494,
+   2495,
+   210,
+   211,
+   212,
+   214
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 202 a 223 del .md):\nL203: | Estado de Resultados | Nota | Acumulado 01.01.2013 – 31.12.2013 M$ | Acumulado 01.01.2012 – 31.12.2012 M$ |\nL204: |---|---|---|---|\nL205: | Ingresos de actividades ordinarias | 23 | 9.298.914 | 8.009.829 |\nL206: | Costo de ventas | 24 | (8.728.553) | (8.047.125) |\nL207: | **Ganancia bruta** | | 570.361 | (37.296) |\nL208: | Otros ingresos, por función | 23 | 0 | 13.323 |\nL209: | Gasto de administración | 24 | (3.130.102) | (2.638.132) |\nL210: | Otros gastos, por función | 24 | (412.502) | (365.589) |\nL211: | Ingresos financieros | 25 | 31.760 | 133.515 |\nL212: | Diferencias de cambio | 26 | (52.946) | (465.431) |\nL213: | **Ganancia (pérdida), antes de impuestos** | | (2.993.429) | (3.359.610) |\nL214: | Gasto (Ingreso) por Impuesto a las Ganancias | 15 | 666.198 | 646.776 |\nL215: | **Ganancia (Pérdida) de Actividades Continuadas después de Impuesto** | | (2.327.231) | (2.712.834) |\nL216: | Ganancia (Pérdida) de Operaciones Discontinuadas, Neta de Impuesto | | - | - |\nL217: | **Ganancia (pérdida)** | | (2.327.231) | (2.712.834) |\nL218: | Ganancia (pérdida), atribuible a los propietarios de la controladora | | (2.316.857) | (2.656.963) |\nL219: | Ganancia (pérdida), atribuible a participaciones no controladoras | | (10.374) | (55.871) |\nL220: | **Ganancia (Pérdida)** | | (2.327.231) | (2.712.834) |\nL222: | Ganancia por acción básica | 2013 | 2012 |\nL223: |---|---|---|\n\nLO QUE SE CARGA:\n- ingreso · \"Ingresos por recaudaciones\" · 2104.281 · L2440 (de una nota)\n- ingreso · \"Ingresos por venta de jugadores comprado a terceros(*)\" · 1339.283 · L2441 (de una nota)\n- ingreso · \"Ingresos por venta de jugadores formados por el Club(**)\" · 50.782 · L2442 (de una nota)\n- ingreso · \"Ingresos por publicidad\" · 5639.076 · L2443 (de una nota)\n- ingreso · \"Otros\" · 165.492 · L2444 (de una nota)\n- ingreso · \"Otros ingresos, por función\" · 0 · L208\n- gasto · \"Costo de venta jugadores\" · 41.66 · L2481 (de una nota)\n- gasto · \"Remuneración plantel profesional y cuerpo técnico\" · 2855.799 · L2482 (de una nota)\n- gasto · \"Amortización Activos en concesión\" · 701.048 · L2483 (de una nota)\n- gasto · \"Amortización pases jugadores profesionales\" · 2715.242 · L2484 (de una nota)\n- gasto · \"Costos de concentración traslados y otros\" · 2077.72 · L2485 (de una nota)\n- gasto · \"Otros costos\" · 337.084 · L2486 (de una nota)\n- gasto · \"Servicios básicos\" · 155.467 · L2489 (de una nota)\n- gasto · \"Asesorías\" · 490.556 · L2490 (de una nota)\n- gasto · \"Depreciaciones\" · 345.964 · L2491 (de una nota)\n- gasto · \"Gastos Legales\" · 238.245 · L2492 (de una nota)\n- gasto · \"Mantenciones\" · 20.113 · L2493 (de una nota)\n- gasto · \"Remuneración administración\" · 1208.535 · L2494 (de una nota)\n- gasto · \"Otros gastos de administración\" · 671.222 · L2495 (de una nota)\n- gasto · \"Otros gastos, por función\" · 412.502 · L210\n- financiero · \"Ingresos financieros\" · 31.76 · L211\n- financiero · \"Diferencias de cambio\" · -52.946 · L212\n- impuesto · \"Gasto (Ingreso) por Impuesto a las Ganancias\" · 666.198 · L214"
+ }
+}

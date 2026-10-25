@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1099 — estimar.mjs, fetch-club-league-reference.mjs: un ejercicio estima en una sola temporada; una lista de Wikipedia corregida a mano no se pisa [455 · estimar.mjs, fetch-club-league-reference.mjs]
+- `estimar.mjs`: un club del sitio se estima solo en la temporada que le da la regla de lo real (la categoría al cierre del ejercicio, `faltantes-liga.mjs`). Chile 2013 caía en dos temporadas que se pisan por el cambio de calendario (la de 2013 y la de 2013–14) y Colo-Colo y Universidad de Chile salían dos veces, con +68 % y +115 % la segunda.
+- `fetch-club-league-reference.mjs`: una lista con `manualFix` no se vuelve a escribir sin `--forzar`. Tottenham 2019 (lista de Wikipedia con «Tottenham» dos veces: 21 equipos para 20) corregida a mano y marcada.
+- Medición: 3 diferencias, todas explicadas (lote completo: ensayo idéntico; `audit` suma `estimados-desfasado`, que se corrige al regenerar); `data/estimados/` con y sin `estimar.mjs` difiere solo en Chile 2013 (las dos filas repetidas).
+
 ## Versión 1098 — cargar-ejercicio.mjs, tipo-sin-desglose.js: el rótulo de una línea única desconocido se aprende por la cola, y el ingreso del año anterior de margen bruto se anota como ancla [455 · cargar-ejercicio.mjs, tipo-sin-desglose.js]
 - `tipo-sin-desglose.js`: mira primero lo aprendido (`Admin/registros/tipos-sin-desglose.jsonl`) y después las palabras; `tipoConocido` da null si nada reconoce el rótulo. `cargar-ejercicio.mjs` manda esa línea de ingresos a la cola (motivo `tipo-linea`, no frena) y aprende la respuesta: no se pregunta dos veces.
 - `cargar-ejercicio.mjs`: si el año anterior del club es de margen bruto y el documento (esquema belga) imprime el ingreso de ese año en su columna anterior, `--escribir` lo agrega a `Admin/registros/ingresos-ancla.jsonl` (Lommel 2024 propone los 5,806012 M EUR de 2022/23).

@@ -280,8 +280,8 @@ window.RANKINGS["gb-premierleague"] = {
     ],
   },
   2019: {
-    leagueSize: 21,
-    wiki: {"t":"2018–19 Premier League","lang":"en","at":"2026-10-19","n":21},
+    leagueSize: 20,
+    wiki: {"t":"2018–19 Premier League","lang":"en","at":"2026-10-19","n":20},
     clubs: [
       { id:"newcastle-gb", revenue:255.872, reportType:"official_balance_sheet",
         sourceId:"newcastle-gb-group-accounts-2018-19",

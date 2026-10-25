@@ -1,0 +1,273 @@
+{
+ "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.md",
+ "mdSha1": "a7b6ef938743c9e87301130a5e3203296a8f45a1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:33:53.058Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    220,
+    246
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    256,
+    305
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    317,
+    346
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    389,
+    405
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    444,
+    458
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    509,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    583,
+    607
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    659,
+    685
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    721,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    778,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    803,
+    808
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    822,
+    824
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    830,
+    832
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    838,
+    839
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    841,
+    842
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    844,
+    846
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    848,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    882,
+    888
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    896,
+    899
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    915,
+    917
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    1011,
+    1012
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    1014,
+    1015
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    1039,
+    1043
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 19,
+   "lineas": [
+    1057,
+    1061
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 24,
+   "lineas": [
+    1201,
+    1205
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    1253,
+    1273
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 25,
+   "lineas": [
+    1293,
+    1296
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    1321,
+    1334
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Formulario normalizado BNB (VKT) en EUR; importes impresos sin indicación de miles (ej. -1.249.398), en euros.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el bloque b10 (pág. 12, códigos 76/76A y 66/66A/66B) como desglose de los ingresos y gastos no recurrentes del estado b4?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Niet-recurrente bedrijfsopbrengsten",
+   "texto": "b10 abre 76 (921.981, 76A) y 66 (22.947 / 31.157), que en b4 aparecen como renglones no recurrentes; solo cambia el detalle cargado.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales (modelo abreviado VKT) de KVC Westerlo, BE 0436.473.670. b4 es la resultatenrekening; b5 es la resultaatverwerking (destino del resultado), excluida. b2/b3 son el balance y b6-b8 el activo fijo, excluidos. b26-b29 son el sociaal balans (datos de personal), excluidos."
+}

@@ -2,6 +2,7 @@
 window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["hr-hnl"] = {
+  2023: {"size":10,"cargados":0,"faltan":[{"n":"Dinamo Zagreb","id":"dinamozagreb-hr","e":"en-mano"},{"n":"Gorica","id":"gorica-hr","e":"en-mano"},{"n":"Hajduk Split","id":"hajduksplit-hr","e":"en-mano"},{"n":"Istra 1961","id":"istra-hr","e":"en-mano"},{"n":"Lokomotiva","e":"buscado"},{"n":"Osijek","id":"osijek-hr","e":"en-mano"},{"n":"Rijeka","id":"rijeka-hr","e":"en-mano"},{"n":"Slaven Belupo","id":"slavenbelupo-hr","e":"en-mano"},{"n":"Šibenik","e":"sin-buscar"},{"n":"Varaždin","id":"varazdin-hr","e":"en-mano"}]},
   2025: {"size":10,"cargados":3,"faltan":[{"n":"Varaždin","id":"varazdin-hr","e":"en-mano"},{"n":"Istra 1961","id":"istra-hr","e":"en-mano"},{"n":"Slaven Belupo","id":"slavenbelupo-hr","e":"en-mano"},{"n":"Osijek","id":"osijek-hr","e":"en-mano"},{"n":"Gorica","id":"gorica-hr","e":"en-mano"},{"n":"Lokomotiva","e":"buscado"},{"n":"Šibenik","e":"sin-buscar"}]},
   2026: {"size":10,"cargados":8,"reciente":true,"faltan":[{"n":"Lokomotiva","e":"buscado"},{"n":"Vukovar 1991","e":"buscado"}]},
 };

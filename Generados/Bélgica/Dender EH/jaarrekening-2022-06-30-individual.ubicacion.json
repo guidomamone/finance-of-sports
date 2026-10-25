@@ -1,0 +1,261 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "32ac9d5503837d40d50eaf19a94db90d3b2863e4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:34:16.819Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    4
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    181,
+    182
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    197,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    265,
+    291
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    297,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    300,
+    340
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    350,
+    379
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 7,
+   "lineas": [
+    385,
+    386
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 7,
+   "lineas": [
+    402,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 8,
+   "lineas": [
+    415,
+    416
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 8,
+   "lineas": [
+    454,
+    468
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 9,
+   "lineas": [
+    474,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 9,
+   "lineas": [
+    527,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 10,
+   "lineas": [
+    554,
+    555
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 10,
+   "lineas": [
+    611,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 11,
+   "lineas": [
+    641,
+    642
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    704,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    736,
+    737
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 12,
+   "lineas": [
+    765,
+    774
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 13,
+   "lineas": [
+    780,
+    781
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 13,
+   "lineas": [
+    801,
+    807
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 13,
+   "lineas": [
+    815,
+    818
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 13,
+   "lineas": [
+    824,
+    826
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 14,
+   "lineas": [
+    846,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 14,
+   "lineas": [
+    883,
+    903
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 15,
+   "lineas": [
+    909,
+    910
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 15,
+   "lineas": [
+    922,
+    925
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 15,
+   "lineas": [
+    950,
+    963
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Las cuentas anuales belgas (modelo VKT-VZW) se presentan en euros; el índice no muestra ninguna frase de escala",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la resultatenrekening (b7) están en euros enteros, sin miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra ninguna línea que indique la unidad de los importes.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Modelo abreviado VKT-VZW: la resultatenrekening (b7) parte de la Brutomarge. b19 corresponde a resultados financieros (intereses activados) y b24/b25 a la sociedad social de personal; no desglosan ingresos ni gastos de forma útil. b9 es el destino del resultado; b4/b6 son el balance; b11/b13/b15 son cuadros de activo fijo."
+}

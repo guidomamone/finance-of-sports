@@ -1,0 +1,713 @@
+{
+ "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.pdf",
+ "generado": "2026-10-25T16:47:32.599Z",
+ "frena": [],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2022, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
+  "perfil de \"Otras secciones deportivas\": se usa el chequeo de 2019 (sí), fuera de la ventana de 4 años",
+  "categorías en 0 aun después del reintento (se carga así): Televisión, Otras secciones deportivas",
+  "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
+ ],
+ "ejercicio": {
+  "clubId": "colocolo-cl",
+  "year": 2013,
+  "cierre": "2013-12-31",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos por recaudaciones",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 2104.281,
+    "disclosureLevel": "aggregated",
+    "_pag": 78,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ingresos por venta de jugadores comprado a terceros(*)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1339.283,
+    "disclosureLevel": "aggregated",
+    "_pag": 78,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ingresos por venta de jugadores formados por el Club(**)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 50.782,
+    "disclosureLevel": "aggregated",
+    "_pag": 78,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ingresos por publicidad",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 5639.076,
+    "disclosureLevel": "aggregated",
+    "_pag": 78,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros",
+    "normalizedCategory": "other_income",
+    "amountNative": 165.492,
+    "disclosureLevel": "aggregated",
+    "_pag": 78,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros ingresos, por función",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costo de venta jugadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -41.66,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remuneración plantel profesional y cuerpo técnico",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2855.799,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortización Activos en concesión",
+    "normalizedCategory": "depreciation",
+    "amountNative": -701.048,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortización pases jugadores profesionales",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -2715.242,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costos de concentración traslados y otros",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2077.72,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros costos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -337.084,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Servicios básicos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -155.467,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Asesorías",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -490.556,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Depreciaciones",
+    "normalizedCategory": "depreciation",
+    "amountNative": -345.964,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos Legales",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -238.245,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mantenciones",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -20.113,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remuneración administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1208.535,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -671.222,
+    "disclosureLevel": "aggregated",
+    "_pag": 79,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos, por función",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -412.502,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "CLP",
+   "fxRef": "CLP@2013-12-31",
+   "sourceId": "colocolo-cl-estados-financieros-2013",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -21.186,
+   "tax": 666.198,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 31.76
+    },
+    {
+     "label": "Diferencias de cambio",
+     "value": -52.946
+    },
+    {
+     "label": "Gasto (Ingreso) por Impuesto a las Ganancias",
+     "value": 666.198
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 9298.914,
+   "officialTotalExpenses": 12271.157,
+   "officialPAT": -2327.231
+  },
+  "source": {
+   "id": "colocolo-cl-estados-financieros-2013",
+   "clubId": "colocolo-cl",
+   "title": "Blanco y Negro S.A. — estados-financieros-2013 (ejercicio 2013)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2013-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "colocolo-cl",
+ "year": 2013,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 23,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos por recaudaciones",
+   "page": 78,
+   "native": 2104.281,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 2104.281,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2104.281
+  },
+  {
+   "label": "Ingresos por venta de jugadores comprado a terceros(*)",
+   "page": 78,
+   "native": 1339.283,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 1339.283,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1339.283
+  },
+  {
+   "label": "Ingresos por venta de jugadores formados por el Club(**)",
+   "page": 78,
+   "native": 50.782,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 50.782,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 50.782
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "page": 78,
+   "native": 5639.076,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 5639.076,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5639.076
+  },
+  {
+   "label": "Otros",
+   "page": 78,
+   "native": 165.492,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 165.492,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 165.492
+  },
+  {
+   "label": "Otros ingresos, por función",
+   "page": 8,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Costo de venta jugadores",
+   "page": 79,
+   "native": 41.66,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 41.66,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -41.66
+  },
+  {
+   "label": "Remuneración plantel profesional y cuerpo técnico",
+   "page": 79,
+   "native": 2855.799,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 2855.799,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2855.799
+  },
+  {
+   "label": "Amortización Activos en concesión",
+   "page": 79,
+   "native": 701.048,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 701.048,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -701.048
+  },
+  {
+   "label": "Amortización pases jugadores profesionales",
+   "page": 79,
+   "native": 2715.242,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 2715.242,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2715.242
+  },
+  {
+   "label": "Costos de concentración traslados y otros",
+   "page": 79,
+   "native": 2077.72,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 2077.72,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2077.72
+  },
+  {
+   "label": "Otros costos",
+   "page": 79,
+   "native": 337.084,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 337.084,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -337.084
+  },
+  {
+   "label": "Servicios básicos",
+   "page": 79,
+   "native": 155.467,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 155.467,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -155.467
+  },
+  {
+   "label": "Asesorías",
+   "page": 79,
+   "native": 490.556,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 490.556,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -490.556
+  },
+  {
+   "label": "Depreciaciones",
+   "page": 79,
+   "native": 345.964,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 345.964,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -345.964
+  },
+  {
+   "label": "Gastos Legales",
+   "page": 79,
+   "native": 238.245,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 238.245,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -238.245
+  },
+  {
+   "label": "Mantenciones",
+   "page": 79,
+   "native": 20.113,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 20.113,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -20.113
+  },
+  {
+   "label": "Remuneración administración",
+   "page": 79,
+   "native": 1208.535,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 1208.535,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1208.535
+  },
+  {
+   "label": "Otros gastos de administración",
+   "page": 79,
+   "native": 671.222,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 671.222,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -671.222
+  },
+  {
+   "label": "Otros gastos, por función",
+   "page": 8,
+   "native": 412.502,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 412.502,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -412.502
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 31.76,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Diferencias de cambio",
+   "page": null,
+   "native": -52.946,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Gasto (Ingreso) por Impuesto a las Ganancias",
+   "page": null,
+   "native": 666.198,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Costo de ventas\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gasto de administración\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 9298.914,
+  "expSum": -12271.157,
+  "officialTotalRevenue": 9298.914,
+  "officialTotalExpenses": 12271.157,
+  "officialPAT": -2327.231,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -2327.231,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 9298.914
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 12271.157
+  }
+ },
+ "liga": {
+  "valor": "cl-primera",
+  "fuente": "roster cacheado de \"2013–14 Campeonato Nacional Primera División\" (tools/club-league-reference/cl.json), coincidencia exacta \"Colo-Colo\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2013,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2013-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (254 de 262 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CLP",
+   "fuente": "moneda de curso legal de Chile (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 7 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "CLP@2013-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene CLP@2013-12-31 = 524.61 (Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2014-01-02, 2013-12-31 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "colocolo-cl-estados-financieros-2013",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "cl-primera",
+   "fuente": "roster cacheado de \"2013–14 Campeonato Nacional Primera División\" (tools/club-league-reference/cl.json), coincidencia exacta \"Colo-Colo\"",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 6,
+  "lineasGasto": 14,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

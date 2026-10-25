@@ -24,11 +24,12 @@
           "Newcastle United",
           "Southampton",
           "Tottenham Hotspur",
-          "Tottenham",
           "Watford",
           "West Ham United",
           "Wolverhampton Wanderers"
-        ]
+        ],
+        "note": "se sacó \"Tottenham\" (el parser tomó el nombre del estadio o de la ciudad como un club más: la Premier League 2018–19 tuvo 20 equipos y la lista traía 21 con el mismo club dos veces)",
+        "manualFix": "corregido a mano desde el wikitext de la pagina (el parser de fetch-club-league-reference.mjs tomo una columna equivocada o la tabla equivocada)"
       },
       "2020": {
         "wikipediaPage": "2019–20 Premier League",

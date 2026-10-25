@@ -1,6 +1,42 @@
 {
   "leagues": {
     "hr-hnl": {
+      "2023": {
+        "wikipediaPage": "2022–23 Croatian Football League",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-25T16:41:43.745Z",
+        "clubs": [
+          "Dinamo Zagreb",
+          "Gorica",
+          "Hajduk Split",
+          "Istra 1961",
+          "Lokomotiva",
+          "Osijek",
+          "Rijeka",
+          "Slaven Belupo",
+          "Šibenik",
+          "Varaždin"
+        ],
+        "posiciones": [
+          "Dinamo Zagreb",
+          "Hajduk Split",
+          "Gorica",
+          "Osijek",
+          "Rijeka",
+          "Istra 1961",
+          "Lokomotiva",
+          "Varaždin",
+          "Slaven Belupo",
+          "Šibenik"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Croatian_Football_League"
+          }
+        ]
+      },
       "2025": {
         "wikipediaPage": "2024–25 Croatian Football League",
         "lang": "en",

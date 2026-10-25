@@ -1,0 +1,115 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2017-12-31.md",
+ "mdSha1": "9e7ab19c9299b47229227530096f9cabef76b6f7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:36:08.331Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    24,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    278,
+    292
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    298,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    312,
+    326
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    338,
+    352
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    362,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    410,
+    417
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    429,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    440,
+    444
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    450,
+    455
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    465,
+    485
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b7"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la Resultatopgørelse: '2017 DKK | 2016 DKK' (importes en coronas, sin indicación de miles)",
+ "moneda": "DKK",
+ "columna_ejercicio": "2017 DKK",
+ "columna_anterior": "2016 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Årsrapport individual de la sociedad (selskab, anparter). El estado de resultados es b2 (Resultatopgørelse 1/1-31/12). La nota 2 Personaleomkostninger (b7) desglosa los gastos de personal; su última fila (número medio de empleados) no es importe monetario. No se eligen: b3 (destino del resultado), b4/b5 (balance), b6 (flujo de efectivo), b8 (activo fijo), b9/b10 (patrimonio y capital) ni b11 (impuesto diferido y ajustes del flujo)."
+}

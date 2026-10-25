@@ -34,7 +34,7 @@ import { readFileSync, readdirSync, existsSync, mkdirSync, writeFileSync, unlink
 import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { createRequire } from 'node:module';
-import { calcular as faltantes } from './faltantes-liga.mjs';
+import { calcular as faltantes, temporada } from './faltantes-liga.mjs';
 const { cierreDelClub } = createRequire(import.meta.url)('./cierre-ejercicio.js');
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -225,6 +225,14 @@ function estimaciones() {
       const enSitio = !!(f.id && CLUBS[f.id]);
       const mes = enSitio ? Number((CLUBS[f.id].fiscalYearStart || '07-01').slice(0, 2)) : 7; const cierreMes = mes === 1 ? 12 : mes - 1;
       const anio = partida && cierreMes >= 9 ? +S - 1 : +S; // la temporada que termina en S -> el ejercicio (inverso de faltantes-liga)
+      // UN EJERCICIO, UNA TEMPORADA: cuando el calendario de una liga cambia (dos temporadas seguidas que se pisan en un mismo año), el ejercicio de un club del sitio cae en las dos listas y se
+      // estimaba dos veces. Vale la temporada que le da la misma regla que a lo real (faltantes-liga.mjs, `aliasFaltan`: la categoría al cierre del ejercicio).
+      if (enSitio) {
+        const partidaDe = (a) => { const p = paginas[`${liga}|${a}`]; return p ? /[–-]\d{2,4}\b/.test(p) : null; };
+        const ciA = CI[f.id]?.ci?.[anio];
+        const delEjercicio = partidaDe(anio + 1) && temporada(CLUBS[f.id], anio, true, ciA) === anio + 1 ? anio + 1 : temporada(CLUBS[f.id], anio, partidaDe(anio) === true, ciA);
+        if (delEjercicio !== +S) continue;
+      }
       if (enSitio && (CI[f.id]?.yrs || []).some(([y]) => y === anio) && !(CI[f.id].gm || []).includes(anio)) continue; // lo real gana (un año de margen bruto no es real: se estima)
       // Un año de margen bruto (`gm` del índice; generate-rankings.js lo saca del ranking real): [margen en USD, ingreso real en USD si un informe posterior lo trae]. El real pisa
       // al estimado; el margen positivo es su piso (el ingreso nunca es menor).

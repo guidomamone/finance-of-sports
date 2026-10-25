@@ -1,0 +1,265 @@
+{
+ "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.pdf",
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md",
+ "generado": "2026-10-25T16:44:57.844Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "randers-dk",
+ "year": 2017,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.687538997430238e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Løn- og personaleomkostninger\" no suma el renglón (36.874112 contra 28.641254, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en aarsrapport-2022-06-30.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsrapport-2022-06-30.pdf"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Løn- og personaleomkostninger",
+   "suma": 36.874112,
+   "objetivo": 28.641254
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Løn- og personaleomkostninger",
+   "suma": 36.874112,
+   "objetivo": 28.641254
+  }
+ ],
+ "totales": {
+  "ingresos": 67.658653,
+  "gastos": 71.108293,
+  "financiero": -0.723619,
+  "impuesto": 1.333114,
+  "resultadoImpreso": -2.840145,
+  "resultadoParaCargar": -2.840145,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Sponsorindtægter",
+   "lado": "ingreso",
+   "M": 29.350146,
+   "pagina": 11,
+   "linea": 422,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "TV-indtægter",
+   "lado": "ingreso",
+   "M": 19.083597,
+   "pagina": 11,
+   "linea": 423,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Entré og kampindtægter",
+   "lado": "ingreso",
+   "M": 5.964431,
+   "pagina": 11,
+   "linea": 424,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Øvrige indtægter",
+   "lado": "ingreso",
+   "M": 11.092966,
+   "pagina": 11,
+   "linea": 425,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Resultat af kapitalandele i tilknyttede virksomheder",
+   "lado": "ingreso",
+   "M": 2.167513,
+   "pagina": 11,
+   "linea": 443,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "Sponsorudgifter",
+   "lado": "gasto",
+   "M": 5.583897,
+   "pagina": 11,
+   "linea": 428,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Kampafvikling",
+   "lado": "gasto",
+   "M": 8.77269,
+   "pagina": 11,
+   "linea": 429,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sportslige udgifter i øvrigt",
+   "lado": "gasto",
+   "M": 3.864448,
+   "pagina": 11,
+   "linea": 430,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Talentudvikling",
+   "lado": "gasto",
+   "M": 3.435689,
+   "pagina": 11,
+   "linea": 431,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Transferudgifter og leje af spillere",
+   "lado": "gasto",
+   "M": 0.478185,
+   "pagina": 11,
+   "linea": 432,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Løn- og personaleomkostninger",
+   "lado": "gasto",
+   "M": 28.641254,
+   "pagina": 11,
+   "linea": 433,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Øvrige udgifter",
+   "lado": "gasto",
+   "M": 0.137186,
+   "pagina": 11,
+   "linea": 434,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Udgifter Lounge og Skybokse",
+   "lado": "gasto",
+   "M": 3.813358,
+   "pagina": 11,
+   "linea": 435,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Løn- og personaleomkostninger, administration",
+   "lado": "gasto",
+   "M": 8.232858,
+   "pagina": 11,
+   "linea": 436,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Administrationsomkostninger",
+   "lado": "gasto",
+   "M": 2.482747,
+   "pagina": 11,
+   "linea": 437,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Afskrivninger, anlægsaktiver",
+   "lado": "gasto",
+   "M": 5.665981,
+   "pagina": 11,
+   "linea": 438,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finansielle indtægter",
+   "M": 0.186003,
+   "linea": 445
+  },
+  {
+   "etiqueta": "Finansielle omkostninger",
+   "M": -0.909622,
+   "linea": 446
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skat af årets resultat",
+   "M": 1.333114,
+   "linea": 449
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "b22c5ad82b2e01172ce57a116f63d6a5cb42d241",
+  "rango": [
+   419,
+   453
+  ],
+  "lineasCargadas": [
+   422,
+   423,
+   424,
+   425,
+   443,
+   428,
+   429,
+   430,
+   431,
+   432,
+   433,
+   434,
+   435,
+   436,
+   437,
+   438,
+   445,
+   446,
+   449
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 419 a 453 del .md):\nL419: |---|---|---|---|\nL420: | | **Perioden 1. juli - 30. juni** | | |\nL421: | | | | |\nL422: | | Sponsorindtægter | 29.350.146 | 29.897 |\nL423: | | TV-indtægter | 19.083.597 | 19.201 |\nL424: | | Entré og kampindtægter | 5.964.431 | 8.840 |\nL425: | | Øvrige indtægter | 11.092.966 | 15.706 |\nL426: | | **Indtægter i alt** | **65.491.140** | **73.644** |\nL427: | | | | |\nL428: | | Sponsorudgifter | -5.583.897 | -4.976 |\nL429: | | Kampafvikling | -8.772.690 | -8.148 |\nL430: | | Sportslige udgifter i øvrigt | -3.864.448 | -4.374 |\nL431: | | Talentudvikling | -3.435.689 | -5.112 |\nL432: | | Transferudgifter og leje af spillere | -478.185 | -583 |\nL433: | 1 | Løn- og personaleomkostninger | -28.641.254 | -30.624 |\nL434: | | Øvrige udgifter | -137.186 | -159 |\nL435: | | Udgifter Lounge og Skybokse | -3.813.358 | -4.851 |\nL436: | 1 | Løn- og personaleomkostninger, administration | -8.232.858 | -7.425 |\nL437: | | Administrationsomkostninger | -2.482.747 | -2.553 |\nL438: | | Afskrivninger, anlægsaktiver | -5.665.981 | -5.420 |\nL439: | | **Omkostninger i alt** | **-71.108.293** | **-74.225** |\nL440: | | | | |\nL441: | | **Resultat før finansielle poster** | **-5.617.153** | **-581** |\nL442: | | | | |\nL443: | | Resultat af kapitalandele i tilknyttede virksomheder | 2.167.513 | 1.579 |\nL444: | | Resultat af kapitalandele i associerede virksomheder | 0 | 449 |\nL445: | 2 | Finansielle indtægter | 186.003 | 28 |\nL446: | 3 | Finansielle omkostninger | -909.622 | -166 |\nL447: | | **Resultat før skat** | **-4.173.259** | **1.310** |\nL448: | | | | |\nL449: | 4 | Skat af årets resultat | 1.333.114 | -14 |\nL450: | 5 | **Årets resultat** | **-2.840.145** | **1.296** |\nL452: Dansk Revision | 10 | GGi INDEPENDENT MEMBER\n\nLO QUE SE CARGA:\n- ingreso · \"Sponsorindtægter\" · 29.350146 · L422\n- ingreso · \"TV-indtægter\" · 19.083597 · L423\n- ingreso · \"Entré og kampindtægter\" · 5.964431 · L424\n- ingreso · \"Øvrige indtægter\" · 11.092966 · L425\n- ingreso · \"Resultat af kapitalandele i tilknyttede virksomheder\" · 2.167513 · L443\n- gasto · \"Sponsorudgifter\" · 5.583897 · L428\n- gasto · \"Kampafvikling\" · 8.77269 · L429\n- gasto · \"Sportslige udgifter i øvrigt\" · 3.864448 · L430\n- gasto · \"Talentudvikling\" · 3.435689 · L431\n- gasto · \"Transferudgifter og leje af spillere\" · 0.478185 · L432\n- gasto · \"Løn- og personaleomkostninger\" · 28.641254 · L433\n- gasto · \"Øvrige udgifter\" · 0.137186 · L434\n- gasto · \"Udgifter Lounge og Skybokse\" · 3.813358 · L435\n- gasto · \"Løn- og personaleomkostninger, administration\" · 8.232858 · L436\n- gasto · \"Administrationsomkostninger\" · 2.482747 · L437\n- gasto · \"Afskrivninger, anlægsaktiver\" · 5.665981 · L438\n- financiero · \"Finansielle indtægter\" · 0.186003 · L445\n- financiero · \"Finansielle omkostninger\" · -0.909622 · L446\n- impuesto · \"Skat af årets resultat\" · 1.333114 · L449"
+ }
+}

@@ -1,0 +1,340 @@
+{
+ "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2022.md",
+ "generatedAt": "2026-10-25T16:41:21.513Z",
+ "rubrosHuella": "6bee65a868bec1aaf1abac1739d609bb5fed8bde",
+ "rubros": [
+  {
+   "label": "Dobit od prodaje igrača",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Prihodi od prodaje\"",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od sponzorstava",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Prihodi od prodaje\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od prodaje ulaznica",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Prihodi od prodaje\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od TV prava",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Prihodi od prodaje\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Najam poslovnog prostora",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Prihodi od prodaje\"",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali prihodi od prodaje",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Prihodi od prodaje\"",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "UEFA nagrade i solidarne uplate",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Ostali poslovni prihodi\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Donacije u zemlji",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Ostali poslovni prihodi\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od članarina",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Ostali poslovni prihodi\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nespomenuti prihodi",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Ostali poslovni prihodi\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sportska oprema",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Troškovi materijala\"",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Roba za ambulantu",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Troškovi materijala\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Utrošene sirovine i materijal",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Troškovi materijala\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostalo",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Ostali troškovi\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi prodane robe",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\"",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Naknade igračima i trenerima",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Najam",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Intelektualne usluge",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Trošak održavanja utakmica",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Vanjske usluge",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Pripreme igrača",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Marketinški troškovi",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prijevozne usluge",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostale usluge",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Neto plaće i nadnice",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Troškovi osoblja\"",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi poreza i doprinosa iz plaća",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Troškovi osoblja\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Doprinosi na plaće",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Troškovi osoblja\"",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Nematerijalne imovine",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Amortizacija\"",
+   "choice": "other_amortisation",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Materijalne imovine",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Amortizacija\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Naknade za transfere igrača",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Ostali troškovi\"",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Reprezentacija",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Ostali troškovi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Naknade i kazne savezima",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Ostali troškovi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Porezi i doprinosi koji ne ovise o rezultatu",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Ostali troškovi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Dnevnice i putni troškovi",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Ostali troškovi\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Besplatne ulaznice",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Ostali troškovi\"",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Vrijednosno usklađenje potraživanja",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali poslovni rashodi",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  }
+ ]
+}

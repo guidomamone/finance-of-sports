@@ -1,72 +1,57 @@
 {
  "md": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.md",
- "generatedAt": "2026-09-30T01:11:42.044Z",
+ "generatedAt": "2026-10-25T16:41:21.251Z",
+ "rubrosHuella": "3f3c70ab0be8a0b56cfc8f2af75e79ccbf4152fc",
  "rubros": [
   {
-   "label": "54/58",
-   "page": 4,
-   "section": "ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "label": "Bezoldigingen, sociale lasten en pensioenen",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
    "choice": "other_expenses",
-   "confidence": 0.39,
-   "top3": [
-    [
-     "other_expenses",
-     0.42
-    ],
-    [
-     "other_income",
-     0.25
-    ],
-    [
-     "other_amortisation",
-     0.12
-    ]
-   ],
-   "tokens": 1282
+   "confidence": 0.78,
+   "desdeCache": true
   },
   {
-   "label": "20/58",
-   "page": 4,
-   "section": "ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
-   "choice": "other_income",
-   "confidence": 0.28,
+   "label": "Brutomarge",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.59,
    "top3": [
     [
-     "other_income",
-     0.32
+     "lump_football_operations_expense",
+     0.62
     ],
     [
      "other_expenses",
-     0.29000000000000004
-    ],
-    [
-     "other_amortisation",
-     0.16
-    ]
-   ],
-   "tokens": 1282
-  },
-  {
-   "label": "490/1",
-   "page": 4,
-   "section": "ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
-   "choice": "other_income",
-   "confidence": 0.3,
-   "top3": [
-    [
-     "other_income",
      0.34
     ],
     [
-     "other_expenses",
-     0.33
-    ],
-    [
-     "other_amortisation",
-     0.11
+     "match_organisation_expense",
+     0.02
     ]
    ],
-   "tokens": 1282
+   "tokens": 886
   }
  ]
 }

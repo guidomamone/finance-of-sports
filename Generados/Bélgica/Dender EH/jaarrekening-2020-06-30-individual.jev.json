@@ -1,0 +1,70 @@
+{
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.md",
+ "generatedAt": "2026-10-25T16:41:21.035Z",
+ "rubrosHuella": "d8904b0d8bc4b83b4d2c8be0437c45e67b79521c",
+ "rubros": [
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "620",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "621",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "623",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "desdeCache": true
+  }
+ ]
+}

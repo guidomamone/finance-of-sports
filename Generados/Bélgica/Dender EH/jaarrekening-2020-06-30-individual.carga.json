@@ -1,0 +1,360 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.pdf",
+ "generado": "2026-10-25T16:44:56.852Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "dender-be",
+  "year": 2020,
+  "cierre": "2020-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Bedrijfsopbrengsten",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.512748,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.483589,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "620",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.509108,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "621",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.084018,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "623",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.128927,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.150507,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.027548,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2020-06-30",
+   "sourceId": "dender-be-jaarrekening-2020-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.058643,
+   "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "Bedrijfsopbrengsten",
+     "lado": "revenue",
+     "importe": 0.512748,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    }
+   ],
+   "baseIngreso": "sales_total",
+   "derivacionIngreso": {
+    "method": "margin_plus_costs",
+    "sources": [
+     "dender-be-jaarrekening-2020-06-30-individual"
+    ]
+   },
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.512748,
+   "officialTotalExpenses": 1.383697,
+   "officialPAT": -0.929592
+  },
+  "source": {
+   "id": "dender-be-jaarrekening-2020-06-30-individual",
+   "clubId": "dender-be",
+   "title": "Football Club Verbroedering Dender EH VZW — jaarrekening-2020-06-30-individual (ejercicio 2020)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "inicio": "2019-07-01",
+  "cierre": "2020-06-30",
+  "cierreDe": "período del formulario (to-do 298 f)",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "met betrekking tot het boekjaar dat de periode dekt van 01-07-2019 tot 30-06-2020"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "dender-be",
+ "year": 2020,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 8,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Bedrijfsopbrengsten",
+   "page": 6,
+   "native": 0.512748,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.512748,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.512748
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "page": 6,
+   "native": 0.483589,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.483589,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.483589
+  },
+  {
+   "label": "620",
+   "page": 13,
+   "native": 0.509108,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\")",
+   "signoFijo": 0.509108,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.509108
+  },
+  {
+   "label": "621",
+   "page": 13,
+   "native": 0.084018,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\")",
+   "signoFijo": 0.084018,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.084018
+  },
+  {
+   "label": "623",
+   "page": 13,
+   "native": 0.128927,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\")",
+   "signoFijo": 0.128927,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.128927
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 6,
+   "native": 0.150507,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.150507,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.150507
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 6,
+   "native": 0.027548,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.027548,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.027548
+  },
+  {
+   "label": "Financiële kosten",
+   "page": null,
+   "native": -0.058643,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.512748,
+  "expSum": -1.383697,
+  "officialTotalRevenue": 0.512748,
+  "officialTotalExpenses": 1.383697,
+  "officialPAT": -0.929592,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.929592,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.512748
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 1.383697
+  }
+ },
+ "liga": {
+  "valor": "be-div1amateur",
+  "fuente": "roster cacheado de \"2019–20 Belgian First Amateur Division\" (tools/club-league-reference/be.json), coincidencia exacta \"Dender EH\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2020,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2020-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2020-06-30) y contenido del .md (2 de 2 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2020-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2020-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2020-06-30 = 0.893 (Cierre BCE al 30/6/2020 (1 EUR = 1,1198 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "dender-be-jaarrekening-2020-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "be-div1amateur",
+   "fuente": "roster cacheado de \"2019–20 Belgian First Amateur Division\" (tools/club-league-reference/be.json), coincidencia exacta \"Dender EH\"",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 6,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

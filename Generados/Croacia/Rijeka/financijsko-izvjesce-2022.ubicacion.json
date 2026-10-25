@@ -1,0 +1,300 @@
+{
+ "pdf": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2022.pdf",
+ "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2022.md",
+ "mdSha1": "821fded68138259345f4c6b8902b878b036a1974",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:37:39.979Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    14,
+    18
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    78,
+    84
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    90,
+    96
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    232,
+    250
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    264,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    300,
+    318
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    332,
+    359
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    373,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    485,
+    490
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    672,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    710,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    744,
+    747
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    755,
+    758
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    760,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    783,
+    786
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    790,
+    795
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    799,
+    803
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    805,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    827,
+    830
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    836,
+    841
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 26,
+   "lineas": [
+    847,
+    851
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    867,
+    872
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 27,
+   "lineas": [
+    876,
+    881
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 27,
+   "lineas": [
+    887,
+    895
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 28,
+   "lineas": [
+    909,
+    916
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 28,
+   "lineas": [
+    920,
+    938
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 29,
+   "lineas": [
+    954,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 29,
+   "lineas": [
+    965,
+    969
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 29,
+   "lineas": [
+    973,
+    982
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 29,
+   "lineas": [
+    986,
+    989
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 30,
+   "lineas": [
+    1003,
+    1008
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 30,
+   "lineas": [
+    1012,
+    1016
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 30,
+   "lineas": [
+    1020,
+    1027
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b24",
+  "b25",
+  "b31"
+ ],
+ "notas_gastos": [
+  "b26",
+  "b27",
+  "b28",
+  "b29",
+  "b30",
+  "b32"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del Račun dobiti i gubitka: '2022. 000'kn | 2021. 000'kn'",
+ "moneda": "HRK",
+ "columna_ejercicio": "2022. 000'kn",
+ "columna_anterior": "2021. 000'kn",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado individual de HNK Rijeka s.d.d. (b6). Notas 17-25 desglosan ingresos y gastos. Se excluye la conciliación del impuesto (b33)."
+}

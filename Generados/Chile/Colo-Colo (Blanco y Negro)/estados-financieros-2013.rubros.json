@@ -3,265 +3,208 @@
   "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.pdf",
   "club": "colocolo-cl",
   "year": 2013,
-  "numberFormat": "eu (punto miles, coma decimal)",
-  "generatedAt": "2026-09-30T21:56:22.547Z",
-  "tieOuts": {
-    "cierran": 13,
-    "noCierran": 17
-  },
-  "warnings": [
-    "17 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
-    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
-  ],
-  "estadoDeResultados": true,
-  "seleccion": {
-    "ok": true,
-    "filas": 22,
-    "notasUsadas": []
-  },
-  "ladoConocido": 8,
+  "generatedAt": "2026-10-25T16:38:41.769Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "Servicios básicos",
-      "lado": null,
-      "page": 79,
-      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-      "values": [
-        0.155467
-      ],
-      "origen": "estado 58",
-      "glosa": "Servicios básicos"
-    },
-    {
-      "label": "Asesorías",
-      "lado": null,
-      "page": 79,
-      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-      "values": [
-        0.490556
-      ],
-      "origen": "estado 58",
-      "glosa": "Asesorías"
-    },
-    {
-      "label": "Depreciaciones",
-      "lado": null,
-      "page": 79,
-      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-      "values": [
-        0.345964
-      ],
-      "origen": "estado 58",
-      "glosa": "Depreciaciones"
-    },
-    {
-      "label": "Gastos Legales",
-      "lado": "expense",
-      "page": 79,
-      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-      "values": [
-        0.238245
-      ],
-      "origen": "estado 58",
-      "glosa": "Gastos Legales"
-    },
-    {
-      "label": "Mantenciones",
-      "lado": null,
-      "page": 79,
-      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-      "values": [
-        0.020113
-      ],
-      "origen": "estado 58",
-      "glosa": "Mantenciones"
-    },
-    {
-      "label": "Remuneración administración",
-      "lado": null,
-      "page": 79,
-      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-      "values": [
-        1.208535
-      ],
-      "origen": "estado 58",
-      "glosa": "Remuneración administración"
-    },
-    {
-      "label": "Otros gastos de administración",
-      "lado": "expense",
-      "page": 79,
-      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
-      "values": [
-        0.671222
-      ],
-      "origen": "estado 58",
-      "glosa": "Otros gastos de administración"
-    },
-    {
-      "label": "Costo de venta jugadores",
-      "lado": "expense",
-      "page": 79,
-      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-      "values": [
-        0.04166
-      ],
-      "origen": "estado 57",
-      "glosa": "Costo de venta jugadores"
-    },
-    {
-      "label": "Remuneración plantel profesional y cuerpo técnico",
-      "lado": null,
-      "page": 79,
-      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-      "values": [
-        2.855799
-      ],
-      "origen": "estado 57",
-      "glosa": "Remuneración plantel profesional y cuerpo técnico"
-    },
-    {
-      "label": "Amortización Activos en concesión",
-      "lado": null,
-      "page": 79,
-      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-      "values": [
-        0.701048
-      ],
-      "origen": "estado 57",
-      "glosa": "Amortización Activos en concesión"
-    },
-    {
-      "label": "Amortización pases jugadores profesionales",
-      "lado": null,
-      "page": 79,
-      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-      "values": [
-        2.715242
-      ],
-      "origen": "estado 57",
-      "glosa": "Amortización pases jugadores profesionales"
-    },
-    {
-      "label": "Costos de concentración traslados y otros",
-      "lado": "expense",
-      "page": 79,
-      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-      "values": [
-        2.07772
-      ],
-      "origen": "estado 57",
-      "glosa": "Costos de concentración traslados y otros"
-    },
-    {
-      "label": "Otros costos",
-      "lado": "expense",
-      "page": 79,
-      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
-      "values": [
-        0.337084
-      ],
-      "origen": "estado 57",
-      "glosa": "Otros costos"
-    },
-    {
-      "label": "Larraín Vial",
-      "lado": null,
-      "page": 80,
-      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS",
-      "values": [
-        15937
-      ],
-      "origen": "estado 59",
-      "glosa": "Larraín Vial"
-    },
-    {
-      "label": "Intereses Inversión UBS",
-      "lado": null,
-      "page": 80,
-      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS",
-      "values": [
-        12332
-      ],
-      "origen": "estado 59",
-      "glosa": "Intereses Inversión UBS"
-    },
-    {
-      "label": "Celfin",
-      "lado": null,
-      "page": 80,
-      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS",
-      "values": [
-        1051
-      ],
-      "origen": "estado 59",
-      "glosa": "Celfin"
-    },
-    {
-      "label": "Otros activos financieros corrientes",
-      "lado": null,
-      "page": 80,
-      "section": "26. DIFERENCIA DE CAMBIO",
-      "values": [
-        96289
-      ],
-      "origen": "estado 60",
-      "glosa": "Otros activos financieros corrientes"
-    },
-    {
-      "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
-      "lado": null,
-      "page": 80,
-      "section": "26. DIFERENCIA DE CAMBIO",
-      "values": [
-        -12308
-      ],
-      "origen": "estado 60",
-      "glosa": "Deudores comerciales y otras cuentas por cobrar corrientes"
-    },
-    {
-      "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
-      "lado": null,
-      "page": 80,
-      "section": "26. DIFERENCIA DE CAMBIO",
-      "values": [
-        -136927
-      ],
-      "origen": "estado 60",
-      "glosa": "Cuentas por pagar comerciales y otras cuentas por pagar"
-    },
-    {
-      "label": "Club(**)",
+      "label": "Ingresos por recaudaciones",
       "lado": "revenue",
       "page": 78,
-      "section": "Ingresos por venta de jugadores formados por el",
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        2104.281
+      ],
+      "glosa": "Ingresos por recaudaciones"
+    },
+    {
+      "label": "Ingresos por venta de jugadores comprado a terceros(*)",
+      "lado": "revenue",
+      "page": 78,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        1339.283
+      ],
+      "glosa": "Ingresos por venta de jugadores comprado a terceros(*)"
+    },
+    {
+      "label": "Ingresos por venta de jugadores formados por el Club(**)",
+      "lado": "revenue",
+      "page": 78,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
       "values": [
         50.782
       ],
-      "origen": "estado 55",
-      "glosa": "Club(**)"
+      "glosa": "Ingresos por venta de jugadores formados por el Club(**)"
     },
     {
       "label": "Ingresos por publicidad",
       "lado": "revenue",
       "page": 78,
-      "section": "Ingresos por venta de jugadores formados por el",
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
       "values": [
         5639.076
       ],
-      "origen": "estado 55",
       "glosa": "Ingresos por publicidad"
     },
     {
       "label": "Otros",
       "lado": "revenue",
       "page": 78,
-      "section": "Ingresos por venta de jugadores formados por el",
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
       "values": [
         165.492
       ],
-      "origen": "estado 55",
       "glosa": "Otros"
+    },
+    {
+      "label": "Otros ingresos, por función",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos, por función"
+    },
+    {
+      "label": "Costo de venta jugadores",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        41.66
+      ],
+      "glosa": "Costo de venta jugadores"
+    },
+    {
+      "label": "Remuneración plantel profesional y cuerpo técnico",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        2855.799
+      ],
+      "glosa": "Remuneración plantel profesional y cuerpo técnico"
+    },
+    {
+      "label": "Amortización Activos en concesión",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        701.048
+      ],
+      "glosa": "Amortización Activos en concesión"
+    },
+    {
+      "label": "Amortización pases jugadores profesionales",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        2715.242
+      ],
+      "glosa": "Amortización pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentración traslados y otros",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        2077.72
+      ],
+      "glosa": "Costos de concentración traslados y otros"
+    },
+    {
+      "label": "Otros costos",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        337.084
+      ],
+      "glosa": "Otros costos"
+    },
+    {
+      "label": "Servicios básicos",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        155.467
+      ],
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        490.556
+      ],
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        345.964
+      ],
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        238.245
+      ],
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        20.113
+      ],
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneración administración",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        1208.535
+      ],
+      "glosa": "Remuneración administración"
+    },
+    {
+      "label": "Otros gastos de administración",
+      "lado": "expense",
+      "page": 79,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        671.222
+      ],
+      "glosa": "Otros gastos de administración"
+    },
+    {
+      "label": "Otros gastos, por función",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        412.502
+      ],
+      "glosa": "Otros gastos, por función"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+ "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
+ "generado": "2026-10-25T16:47:33.008Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del documento, 2026-10-25: El club carga individual (2022 a 2025); el .md de 2018 solo menciona los consolidados de pasada. Claude 2026-10-25 (sesion), prueba del 455)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2018-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "oncecaldas-co",
+ "year": 2018,
+ "cortadoEn": "filas"
+}

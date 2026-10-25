@@ -1,0 +1,186 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "32ac9d5503837d40d50eaf19a94db90d3b2863e4",
+ "ubicacionSha1": "1782a4951336edc7774e32901ebe6bc0a30f8c08",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:34:30.463Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "no se sabe",
+   "evidencia": "El bloque b7 no indica escala; en las cuentas anuales belgas (modelo NBB) los importes suelen ir en euros (unidades), pero no está impreso en este bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 353,
+   "etiqueta": "Brutomarge",
+   "actual": "-69.811",
+   "anterior": "-123.123",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 358,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen",
+   "actual": "1.368.294",
+   "anterior": "412.654",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 359,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "158.979",
+   "anterior": "156.260",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 360,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+   "actual": "0",
+   "anterior": "1.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 362,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "20.427",
+   "anterior": "18.639",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 365,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies)",
+   "actual": "-1.617.511",
+   "anterior": "-711.677",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 366,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "2",
+   "anterior": "1.113",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 367,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "2",
+   "anterior": "1.113",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 369,
+   "etiqueta": "Financiële kosten",
+   "actual": "87.845",
+   "anterior": "70.273",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 370,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "87.845",
+   "anterior": "70.273",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 372,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting",
+   "actual": "-1.705.354",
+   "anterior": "-780.837",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 376,
+   "etiqueta": "Winst (Verlies) van het boekjaar",
+   "actual": "-1.705.354",
+   "anterior": "-780.837",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 379,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar",
+   "actual": "-1.705.354",
+   "anterior": "-780.837",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 376,
+  "actual": "-1.705.354",
+  "anterior": "-780.837"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b7 como euros (unidades), ya que el bloque no imprime la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado (L350) no indica escala; en el modelo NBB suele estar en euros.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la 'Brutomarge' (L353, -69.811) como único dato de ingresos, sin desglose de Omzet ni de los costos de L357, por ser un modelo abreviado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge",
+   "texto": "El modelo abreviado compensa Omzet (70), subsidios (73) y compras/servicios (60/61), que están vacíos (L355-L357); no hay total de ingresos ni de gastos impreso.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados en modelo abreviado belga: los ingresos operativos solo aparecen netos en la Brutomarge negativa. No hay impuestos registrados (L375 vacía). Tampoco hay notas de desglose."
+}

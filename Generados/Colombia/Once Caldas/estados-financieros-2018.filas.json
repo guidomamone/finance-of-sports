@@ -1,0 +1,1090 @@
+{
+ "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
+ "mdSha1": "ca23d3856a3fccdffb2b2f552016911a05c47ade",
+ "ubicacionSha1": "9f52126a1e5243940c77d1ba1666465ce5ffcd66",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:47:15.017Z",
+ "ubicacion": {
+  "estado": [
+   "b39",
+   "b41",
+   "b43",
+   "b45",
+   "b46",
+   "b48",
+   "b49",
+   "b51",
+   "b52",
+   "b37"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b39",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque"
+  },
+  {
+   "bloque": "b41",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala"
+  },
+  {
+   "bloque": "b43",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala"
+  },
+  {
+   "bloque": "b45",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala"
+  },
+  {
+   "bloque": "b46",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala"
+  },
+  {
+   "bloque": "b48",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala"
+  },
+  {
+   "bloque": "b49",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala"
+  },
+  {
+   "bloque": "b51",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala"
+  },
+  {
+   "bloque": "b52",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala"
+  },
+  {
+   "bloque": "b37",
+   "escala": "miles",
+   "evidencia": "L517 capital de 15 millones de acciones a $1000 = 15,000,000 en L521 (miles de pesos)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b39",
+   "linea": 545,
+   "etiqueta": "INGRESOS OPERATIVOS",
+   "actual": "21,438,202",
+   "anterior": "16,672,414",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b39",
+   "linea": 546,
+   "etiqueta": "TAQUILLA-VENTA DE BOLETERIA",
+   "actual": "4,238,680",
+   "anterior": "2,007,540",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 547,
+   "etiqueta": "PARTIDOS OFICIALES",
+   "actual": "1,076,086",
+   "anterior": "1,059,138",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TAQUILLA-VENTA DE BOLETERIA"
+  },
+  {
+   "bloque": "b39",
+   "linea": 549,
+   "etiqueta": "BOLETERIA COPA COLOMBIA",
+   "actual": "1,970,844",
+   "anterior": "830",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TAQUILLA-VENTA DE BOLETERIA"
+  },
+  {
+   "bloque": "b39",
+   "linea": 550,
+   "etiqueta": "VENTA DE ABONOS",
+   "actual": "1,130,317",
+   "anterior": "936,996",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TAQUILLA-VENTA DE BOLETERIA"
+  },
+  {
+   "bloque": "b39",
+   "linea": 551,
+   "etiqueta": "VENTA DERECHOS DTIVOS-JUGADORE",
+   "actual": "7,817,700",
+   "anterior": "7,665,080",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 552,
+   "etiqueta": "INGRESOS POR SOLIDARIDAD",
+   "actual": "61,629",
+   "anterior": "137,100",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 553,
+   "etiqueta": "PRESTAMO DERECHOS DTIVOS-JUGAD",
+   "actual": "0",
+   "anterior": "250,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 554,
+   "etiqueta": "PUBLICIDAD Y PROPAGANDA",
+   "actual": "602,568",
+   "anterior": "288,353",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 555,
+   "etiqueta": "VALLAS PUBLICITARIAS",
+   "actual": "602,568",
+   "anterior": "288,353",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "PUBLICIDAD Y PROPAGANDA"
+  },
+  {
+   "bloque": "b39",
+   "linea": 556,
+   "etiqueta": "DIMAYOR",
+   "actual": "4,999,450",
+   "anterior": "4,479,937",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 557,
+   "etiqueta": "PARTICIPACIONES DIMAYOR",
+   "actual": "450,000",
+   "anterior": "1,047,670",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIMAYOR"
+  },
+  {
+   "bloque": "b39",
+   "linea": 558,
+   "etiqueta": "DERECHOS TV ABIERTA 161231",
+   "actual": "763,384",
+   "anterior": "743,223",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIMAYOR"
+  },
+  {
+   "bloque": "b39",
+   "linea": 559,
+   "etiqueta": "DERECHOS TV CERRADA 161231",
+   "actual": "1,477,935",
+   "anterior": "1,826,265",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIMAYOR"
+  },
+  {
+   "bloque": "b39",
+   "linea": 560,
+   "etiqueta": "DERECHOS TV INTERNACIONA 161210",
+   "actual": "155,736",
+   "anterior": "154,500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIMAYOR"
+  },
+  {
+   "bloque": "b39",
+   "linea": 561,
+   "etiqueta": "FONDO EQUIPOS X NO CLASI 161130",
+   "actual": "0",
+   "anterior": "139,678",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIMAYOR"
+  },
+  {
+   "bloque": "b39",
+   "linea": 562,
+   "etiqueta": "TELEVISION VARIABLE 160506",
+   "actual": "885,166",
+   "anterior": "501,151",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIMAYOR"
+  },
+  {
+   "bloque": "b39",
+   "linea": 563,
+   "etiqueta": "PARTICIPACION TRANSPORTE 161130",
+   "actual": "38,206",
+   "anterior": "67,450",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIMAYOR"
+  },
+  {
+   "bloque": "b39",
+   "linea": 564,
+   "etiqueta": "PARTICIPACION HOSPEDAJE",
+   "actual": "1,229,022",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIMAYOR"
+  },
+  {
+   "bloque": "b39",
+   "linea": 565,
+   "etiqueta": "FEDERACION COLOMBIANA DE FUTBO",
+   "actual": "25,025",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIMAYOR"
+  },
+  {
+   "bloque": "b39",
+   "linea": 566,
+   "etiqueta": "PARTICIPACIONES NACIONALES -INTERNACIONALES",
+   "actual": "942,045",
+   "anterior": "58,800",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 567,
+   "etiqueta": "PATROCINIO",
+   "actual": "3,225,751",
+   "anterior": "1,856,120",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 568,
+   "etiqueta": "VTA DE ARTICULOS DTIVOS-MISCEL",
+   "actual": "656,513",
+   "anterior": "406,011",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 569,
+   "etiqueta": "ACTIVIDADES CONEXAS",
+   "actual": "16,929",
+   "anterior": "225,591",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 570,
+   "etiqueta": "CONCESIONES PUESTOS DE VTAS",
+   "actual": "0",
+   "anterior": "19,037",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "ACTIVIDADES CONEXAS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 571,
+   "etiqueta": "VENTAS",
+   "actual": "0",
+   "anterior": "10,042",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "ACTIVIDADES CONEXAS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 572,
+   "etiqueta": "ARRENDAMIENTO CABINAS",
+   "actual": "16,929",
+   "anterior": "50",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "ACTIVIDADES CONEXAS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 573,
+   "etiqueta": "ARRENDAMIENTO ESPACIO PUBLICIT",
+   "actual": "0",
+   "anterior": "196,462",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "ACTIVIDADES CONEXAS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 574,
+   "etiqueta": "DEVOLUCION VTAS ALMACEN",
+   "actual": "-7,958",
+   "anterior": "-614",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 575,
+   "etiqueta": "DEVOLUCIONES EN VENTAS",
+   "actual": "0",
+   "anterior": "-25,210",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 576,
+   "etiqueta": "DEVOL PUBLICIDAD-ARREND",
+   "actual": "-1,140,130",
+   "anterior": "-27,500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 577,
+   "etiqueta": "DEV VTA DERECHOS DTIVOS",
+   "actual": "0",
+   "anterior": "-456,750",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 578,
+   "etiqueta": "DEV PRESTAMOS DEREC DTI",
+   "actual": "0",
+   "anterior": "-50,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b39",
+   "linea": 579,
+   "etiqueta": "DEV PATROCINADOR",
+   "actual": "0",
+   "anterior": "-142,045",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS OPERATIVOS"
+  },
+  {
+   "bloque": "b41",
+   "linea": 591,
+   "etiqueta": "COSTO DE VENTAS",
+   "actual": "508,765",
+   "anterior": "1,273,292",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b41",
+   "linea": 589,
+   "etiqueta": "Venta de artículos deportivos-misceláneos",
+   "actual": "508,765",
+   "anterior": "384,092",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS"
+  },
+  {
+   "bloque": "b41",
+   "linea": 590,
+   "etiqueta": "De derechos deportivos: Costo de los derechos de Oscar Estupiñan",
+   "actual": "0",
+   "anterior": "889,200",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS"
+  },
+  {
+   "bloque": "b43",
+   "linea": 599,
+   "etiqueta": "GASTOS DE ADMINISTRACION",
+   "actual": "808,345",
+   "anterior": "943,140",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b43",
+   "linea": 600,
+   "etiqueta": "GASTOS DE PERSONAL",
+   "actual": "678,948",
+   "anterior": "754,574",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 601,
+   "etiqueta": "HONORARIOS",
+   "actual": "39,776",
+   "anterior": "64,422",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 602,
+   "etiqueta": "IMPUESTOS",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 603,
+   "etiqueta": "ARRENDAMIENTOS",
+   "actual": "16,413",
+   "anterior": "10,814",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 604,
+   "etiqueta": "SEGUROS",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 605,
+   "etiqueta": "SERVICIOS",
+   "actual": "32,827",
+   "anterior": "44,885",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 606,
+   "etiqueta": "GASTOS LEGALES",
+   "actual": "2,208",
+   "anterior": "2,286",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 607,
+   "etiqueta": "MANTENIMIENTO Y REPARACIONES",
+   "actual": "330",
+   "anterior": "873",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 608,
+   "etiqueta": "ADECUACION E INSTALACION",
+   "actual": "35",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 609,
+   "etiqueta": "GASTOS DE VIAJE",
+   "actual": "22,060",
+   "anterior": "30,524",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 610,
+   "etiqueta": "DEPRECIACIONES",
+   "actual": "1,164",
+   "anterior": "2,806",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b43",
+   "linea": 611,
+   "etiqueta": "DIVERSOS",
+   "actual": "14,584",
+   "anterior": "31,955",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE ADMINISTRACION"
+  },
+  {
+   "bloque": "b45",
+   "linea": 619,
+   "etiqueta": "GASTOS DE VENTAS",
+   "actual": "13,576,188",
+   "anterior": "13,931,288",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b45",
+   "linea": 620,
+   "etiqueta": "GASTOS DE PERSONAL",
+   "actual": "6,866,963",
+   "anterior": "7,168,507",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b45",
+   "linea": 621,
+   "etiqueta": "HONORARIOS",
+   "actual": "49,825",
+   "anterior": "163,339",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b45",
+   "linea": 622,
+   "etiqueta": "IMPUESTOS",
+   "actual": "492,496",
+   "anterior": "319,124",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b45",
+   "linea": 623,
+   "etiqueta": "ARRENDAMIENTOS",
+   "actual": "605,806",
+   "anterior": "536,150",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b45",
+   "linea": 624,
+   "etiqueta": "CONTRIBUCIONES Y AFILIACIONES",
+   "actual": "2,321",
+   "anterior": "3,586",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b45",
+   "linea": 625,
+   "etiqueta": "SEGUROS",
+   "actual": "7,143",
+   "anterior": "50,605",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 631,
+   "etiqueta": "SERVICIOS",
+   "actual": "191,179",
+   "anterior": "173,314",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 632,
+   "etiqueta": "GASTOS LEGALES",
+   "actual": "514",
+   "anterior": "1,852",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 633,
+   "etiqueta": "MANTENIMIENTO Y REPARACIONES",
+   "actual": "66,630",
+   "anterior": "68,112",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 634,
+   "etiqueta": "ADECUACION E INSTALACION",
+   "actual": "976",
+   "anterior": "3,953",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 635,
+   "etiqueta": "GASTOS DE VIAJE",
+   "actual": "454,227",
+   "anterior": "363,668",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 636,
+   "etiqueta": "DEPRECIACIONES",
+   "actual": "86,994",
+   "anterior": "90,713",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 637,
+   "etiqueta": "DERECHOS DEPORTIVOS",
+   "actual": "3,649,049",
+   "anterior": "4,163,162",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 638,
+   "etiqueta": "DIVERSOS",
+   "actual": "1,075,825",
+   "anterior": "792,562",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 639,
+   "etiqueta": "PROVISIONES",
+   "actual": "26,242",
+   "anterior": "32,639",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE VENTAS"
+  },
+  {
+   "bloque": "b48",
+   "linea": 688,
+   "etiqueta": "INGRESOS NO OPERACIONALES",
+   "actual": "3,165,062",
+   "anterior": "988,046",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b48",
+   "linea": 661,
+   "etiqueta": "FINANCIEROS",
+   "actual": "1,106,432",
+   "anterior": "56,982",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "INGRESOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b48",
+   "linea": 662,
+   "etiqueta": "INTERESES",
+   "actual": "10,768",
+   "anterior": "12,977",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "FINANCIEROS"
+  },
+  {
+   "bloque": "b48",
+   "linea": 663,
+   "etiqueta": "DIFERENCIA EN CAMBIO",
+   "actual": "1,094,307",
+   "anterior": "40,923",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "FINANCIEROS"
+  },
+  {
+   "bloque": "b48",
+   "linea": 664,
+   "etiqueta": "DESC COMERCIALES CONDICIONADOS",
+   "actual": "1,357",
+   "anterior": "3,082",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "FINANCIEROS"
+  },
+  {
+   "bloque": "b48",
+   "linea": 665,
+   "etiqueta": "UTILIDAD VTA PROPIEDAD PLANTA Y EQUIPO",
+   "actual": "0",
+   "anterior": "26,875",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b48",
+   "linea": 666,
+   "etiqueta": "FLOTA Y EQUIPO DE TRANSPORTE",
+   "actual": "0",
+   "anterior": "26,875",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "UTILIDAD VTA PROPIEDAD PLANTA Y EQUIPO"
+  },
+  {
+   "bloque": "b48",
+   "linea": 667,
+   "etiqueta": "RECUPERACIONES",
+   "actual": "1,357,782",
+   "anterior": "212,029",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b48",
+   "linea": 668,
+   "etiqueta": "DEUDAS MALAS",
+   "actual": "0",
+   "anterior": "54",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECUPERACIONES"
+  },
+  {
+   "bloque": "b48",
+   "linea": 669,
+   "etiqueta": "REINTE DE OTROS COSTOS Y GASTO",
+   "actual": "4,861",
+   "anterior": "19,869",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECUPERACIONES"
+  },
+  {
+   "bloque": "b48",
+   "linea": 670,
+   "etiqueta": "RECUPERACION PROVISIONES",
+   "actual": "217,867",
+   "anterior": "103,949",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECUPERACIONES"
+  },
+  {
+   "bloque": "b48",
+   "linea": 671,
+   "etiqueta": "REINTEGROS NIIF",
+   "actual": "930,534",
+   "anterior": "12,427",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECUPERACIONES"
+  },
+  {
+   "bloque": "b48",
+   "linea": 672,
+   "etiqueta": "REINTEGRO DE GTOS ANOS ANTERIO",
+   "actual": "194,170",
+   "anterior": "42,527",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECUPERACIONES"
+  },
+  {
+   "bloque": "b48",
+   "linea": 673,
+   "etiqueta": "INDEMNIZACIONES",
+   "actual": "11,916",
+   "anterior": "57,945",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b49",
+   "linea": 679,
+   "etiqueta": "POR INCAPACIDADES DEL ISS",
+   "actual": "11,916",
+   "anterior": "57,945",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INDEMNIZACIONES"
+  },
+  {
+   "bloque": "b49",
+   "linea": 680,
+   "etiqueta": "INGRESOS DE EJERCICIOS ANTERIORES",
+   "actual": "90",
+   "anterior": "2,828",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b49",
+   "linea": 682,
+   "etiqueta": "DIVERSOS",
+   "actual": "688,841",
+   "anterior": "631,387",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "INGRESOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b49",
+   "linea": 683,
+   "etiqueta": "APROVECHAMIENTOS",
+   "actual": "11,886",
+   "anterior": "8,184",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b49",
+   "linea": 684,
+   "etiqueta": "SUBVENCIONES",
+   "actual": "676,945",
+   "anterior": "604,187",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b49",
+   "linea": 685,
+   "etiqueta": "REGALIAS",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b49",
+   "linea": 686,
+   "etiqueta": "PREMIOS-GANANCIA OCASIONAL",
+   "actual": "0",
+   "anterior": "19,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b49",
+   "linea": 687,
+   "etiqueta": "AJUSTE AL PESO",
+   "actual": "10",
+   "anterior": "16",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b51",
+   "linea": 696,
+   "etiqueta": "GASTOS NO OPERACIONALES",
+   "actual": "1,723,822",
+   "anterior": "2,430,280",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b51",
+   "linea": 697,
+   "etiqueta": "GASTOS FINANCIEROS",
+   "actual": "820,054",
+   "anterior": "485,927",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "GASTOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b51",
+   "linea": 698,
+   "etiqueta": "PERDIDA-VTA RETIRO DE BIENES",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b51",
+   "linea": 699,
+   "etiqueta": "GASTOS EXTRAORDINARIOS",
+   "actual": "713,284",
+   "anterior": "1,942,153",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b51",
+   "linea": 700,
+   "etiqueta": "GASTOS DIVERSOS",
+   "actual": "190,484",
+   "anterior": "2,200",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS NO OPERACIONALES"
+  },
+  {
+   "bloque": "b52",
+   "linea": 706,
+   "etiqueta": "IMPUESTO DE RENTQ Y COMPLEMENTARIO",
+   "actual": "895,818",
+   "anterior": "37,289",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b52",
+   "linea": 707,
+   "etiqueta": "IMPUESTO DE RENTA Y COMPLEMENTARIOS",
+   "actual": "895,818",
+   "anterior": "37,289",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "IMPUESTO DE RENTQ Y COMPLEMENTARIO"
+  },
+  {
+   "bloque": "b37",
+   "linea": 534,
+   "etiqueta": "UTILIDAD O PERDIDA DEL EJERCICIO",
+   "actual": "5,346,221",
+   "anterior": "789,275",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 534,
+  "actual": "5,346,221",
+  "anterior": "789,275"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el desglose 'DIVERSOS : Registramos los siguientes conceptos' (L640-L653), cuyo total 1,075,528 no coincide con DIVERSOS 1,075,825 de L638?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "DIVERSOS",
+   "texto": "El subdetalle de L640 imprime 1,075,528 frente a 1,075,825 en L638 (diferencia mayor al redondeo).",
+   "bloques": [
+    "b46"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera la fila 'IMTPO DIFERIDO NIIF' 1,744,104 (L702), que está fuera del total de GASTOS NO OPERACIONALES?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "GASTOS NO OPERACIONALES",
+   "texto": "L702 aparece debajo de la tabla sin integrar el total de L696 y sin año anterior; no se sabe dónde va.",
+   "bloques": [
+    "b51",
+    "b52"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que los importes están en miles de pesos?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque imprime la escala; se infiere miles por el capital de L521.",
+   "bloques": [
+    "b39",
+    "b41",
+    "b43",
+    "b45",
+    "b46",
+    "b48",
+    "b49",
+    "b51",
+    "b52"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Los títulos de las notas se usaron como etiquetas del estado (encabezado del total o título de la tabla). El resultado del ejercicio se toma de la nota de patrimonio (L534). Los totales de L545 y L688 se usaron como renglones del estado; no hay total general de ingresos ni de gastos impreso."
+}

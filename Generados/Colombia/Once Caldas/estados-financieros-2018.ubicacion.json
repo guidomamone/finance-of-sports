@@ -1,0 +1,503 @@
+{
+ "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
+ "mdSha1": "ca23d3856a3fccdffb2b2f552016911a05c47ade",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:46:08.422Z",
+ "perimetroClub": "individual",
+ "intentoNotasComoEstado": true,
+ "estadoDesdeNotas": true,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    65,
+    70
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    234,
+    236
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    242,
+    249
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    251,
+    253
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    255,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    266,
+    280
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    284,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    288,
+    292
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    294,
+    296
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    298,
+    309
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    313,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    317,
+    325
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    329,
+    340
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    342,
+    344
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    346,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    355,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 12,
+   "lineas": [
+    367,
+    370
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    372,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    382,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 13,
+   "lineas": [
+    386,
+    388
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 13,
+   "lineas": [
+    390,
+    394
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 13,
+   "lineas": [
+    396,
+    398
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 13,
+   "lineas": [
+    400,
+    424
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 14,
+   "lineas": [
+    428,
+    433
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 14,
+   "lineas": [
+    435,
+    437
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 14,
+   "lineas": [
+    439,
+    446
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 14,
+   "lineas": [
+    448,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 14,
+   "lineas": [
+    452,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 14,
+   "lineas": [
+    461,
+    463
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 14,
+   "lineas": [
+    465,
+    469
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 15,
+   "lineas": [
+    473,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 15,
+   "lineas": [
+    477,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 15,
+   "lineas": [
+    486,
+    488
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 15,
+   "lineas": [
+    490,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 16,
+   "lineas": [
+    505,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 16,
+   "lineas": [
+    515,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 16,
+   "lineas": [
+    519,
+    535
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 17,
+   "lineas": [
+    539,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 17,
+   "lineas": [
+    543,
+    579
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 17,
+   "lineas": [
+    581,
+    582
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 18,
+   "lineas": [
+    586,
+    591
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 18,
+   "lineas": [
+    593,
+    595
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 18,
+   "lineas": [
+    597,
+    611
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 18,
+   "lineas": [
+    613,
+    615
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 18,
+   "lineas": [
+    617,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 19,
+   "lineas": [
+    629,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 19,
+   "lineas": [
+    655,
+    657
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 19,
+   "lineas": [
+    659,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 20,
+   "lineas": [
+    677,
+    688
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 20,
+   "lineas": [
+    690,
+    692
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 20,
+   "lineas": [
+    694,
+    702
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 20,
+   "lineas": [
+    704,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 20,
+   "lineas": [
+    709,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 20,
+   "lineas": [
+    713,
+    715
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b39",
+  "b41",
+  "b43",
+  "b45",
+  "b46",
+  "b48",
+  "b49",
+  "b51",
+  "b52",
+  "b37"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "No se ve frase de escala en los bloques; importes como 508,765 sugieren miles de pesos pero no está impreso en lo visto.",
+ "moneda": "COP",
+ "columna_ejercicio": "Diciembre 31 de 2018",
+ "columna_anterior": "Diciembre 31 de 2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de las notas (ej. Total costo de venta 508,765) están expresados en miles de pesos colombianos?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "TOTAL COSTO DE VENTA",
+   "texto": "No se ve en el índice ninguna frase 'en miles de pesos'; la nota de deudores menciona 'solo han abonado 25 millones', compatible con miles.",
+   "bloques": [
+    "b41",
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma la fila 'UTILIDAD O PERDIDA DEL EJERCICIO' del cuadro de patrimonio (b37) como resultado del ejercicio 2018?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "UTILIDAD O PERDIDA DEL EJERCICIO",
+   "texto": "No hay estado de resultados; el único resultado impreso visible está en la composición del patrimonio (b37).",
+   "bloques": [
+    "b37"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El bloque b39 (ingresos operativos, 35 filas) incluye el total de ingresos operacionales y las devoluciones como un solo renglón del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "INGRESOS OPERATIVOS",
+   "texto": "b39 termina en devoluciones (DEV PATROCINADOR) sin total visible en el índice.",
+   "bloques": [
+    "b39"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento no trae estado de resultados; solo notas de la entidad Once Caldas S.A. En Reorganización (individual). Se usan como estado las notas de ingresos operativos (b39), costo de ventas (b41, nota 21), gastos de administración (b43), gastos de ventas (b45-b46), ingresos no operacionales (b48-b49), gastos no operacionales (b51), impuesto de renta (b52, nota 26) y el resultado del ejercicio impreso en la composición del patrimonio (b37)."
+}

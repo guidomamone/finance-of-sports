@@ -1,0 +1,30 @@
+{
+ "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.pdf",
+ "generado": "2026-10-25T16:44:56.953Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-25: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 11 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2017-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "1. juli 2016 - 30. juni 2017"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "randers-dk",
+ "year": 2017,
+ "cortadoEn": "filas"
+}

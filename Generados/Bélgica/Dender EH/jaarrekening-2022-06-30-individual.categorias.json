@@ -1,0 +1,65 @@
+{
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.md",
+ "club": "dender-be",
+ "year": 2022,
+ "generatedAt": "2026-10-25T16:41:24.611Z",
+ "rubrosHuella": "3f3c70ab0be8a0b56cfc8f2af75e79ccbf4152fc",
+ "jevHuella": "2726b9381a23ba6e6845fb61b018d1a505c2ca35",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.029073,
+ "rubros": [
+  {
+   "label": "Brutomarge",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Margen bruto",
+   "page": 6,
+   "pendiente": true,
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.59,
+   "escalon": 2,
+   "categoria": "lump_football_operations",
+   "confianza": 0.7,
+   "motivo": "Igual a 'Brutomarge' del club, cargado como lump_football_operations; el lado gasto es por signo negativo."
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones",
+   "page": 6,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material",
+   "page": 6,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 6,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

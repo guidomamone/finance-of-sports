@@ -1,0 +1,439 @@
+{
+ "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
+ "generado": "2026-10-25T16:47:15.497Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "cola",
+ "clubId": "oncecaldas-co",
+ "year": 2018,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "El club carga individual (2022 a 2025); el .md de 2018 solo menciona los consolidados de pasada. Claude 2026-10-25 (sesion), prueba del 455",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-25"
+  }
+ ],
+ "cola": [
+  "b5d8694",
+  "65d6da1",
+  "08dbf17",
+  "10fea0c",
+  "e764f33",
+  "d3cdca3"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 24.603263 - gastos 16.617122 ± financiero 0 ± impuesto 0.895818 no da el impreso 5.346221",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "la nota de \"INGRESOS OPERATIVOS\" no suma el renglón (23.709353 contra 21.438202, sumando sus renglones): quedó el renglón del estado",
+  "el desglose de \"RECUPERACIONES\" (5 filas) no suma la fila: quedó la fila",
+  "la nota de \"COSTO DE VENTAS\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "el desglose de \"DIVERSOS\" (5 filas) no suma la fila: quedó la fila",
+  "duda de localizar que no afecta la carga: b39 termina en devoluciones (DEV PATROCINADOR) sin total visible en el índice.",
+  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; se infiere miles por el capital de L521."
+ ],
+ "reintentar": [
+  {
+   "renglon": "INGRESOS OPERATIVOS",
+   "suma": 23.709353,
+   "objetivo": 21.438202
+  },
+  {
+   "renglon": "RECUPERACIONES",
+   "suma": 1.347432,
+   "objetivo": 1.357782
+  },
+  {
+   "renglon": "DIVERSOS",
+   "suma": 0.688841,
+   "objetivo": 0.014584
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "INGRESOS OPERATIVOS",
+   "suma": 23.709353,
+   "objetivo": 21.438202
+  },
+  {
+   "renglon": "RECUPERACIONES",
+   "suma": 1.347432,
+   "objetivo": 1.357782
+  },
+  {
+   "renglon": "DIVERSOS",
+   "suma": 0.688841,
+   "objetivo": 0.014584
+  }
+ ],
+ "totales": {
+  "ingresos": 24.603263,
+  "gastos": 16.617122,
+  "financiero": 0,
+  "impuesto": 0.895818,
+  "resultadoImpreso": 5.346221,
+  "resultadoParaCargar": 5.346221,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "INGRESOS OPERATIVOS",
+   "lado": "ingreso",
+   "M": 21.438202,
+   "pagina": 17,
+   "linea": 545,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "INTERESES",
+   "lado": "ingreso",
+   "M": 0.010768,
+   "pagina": 19,
+   "linea": 662,
+   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\""
+  },
+  {
+   "etiqueta": "DIFERENCIA EN CAMBIO",
+   "lado": "ingreso",
+   "M": 1.094307,
+   "pagina": 19,
+   "linea": 663,
+   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\""
+  },
+  {
+   "etiqueta": "DESC COMERCIALES CONDICIONADOS",
+   "lado": "ingreso",
+   "M": 0.001357,
+   "pagina": 19,
+   "linea": 664,
+   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\""
+  },
+  {
+   "etiqueta": "RECUPERACIONES",
+   "lado": "ingreso",
+   "M": 1.357782,
+   "pagina": 19,
+   "linea": 667,
+   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\""
+  },
+  {
+   "etiqueta": "INDEMNIZACIONES",
+   "lado": "ingreso",
+   "M": 0.011916,
+   "pagina": 19,
+   "linea": 673,
+   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\""
+  },
+  {
+   "etiqueta": "INGRESOS DE EJERCICIOS ANTERIORES",
+   "lado": "ingreso",
+   "M": 0.00009,
+   "pagina": 20,
+   "linea": 680,
+   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\""
+  },
+  {
+   "etiqueta": "APROVECHAMIENTOS",
+   "lado": "ingreso",
+   "M": 0.011886,
+   "pagina": 20,
+   "linea": 683,
+   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\""
+  },
+  {
+   "etiqueta": "SUBVENCIONES",
+   "lado": "ingreso",
+   "M": 0.676945,
+   "pagina": 20,
+   "linea": 684,
+   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\""
+  },
+  {
+   "etiqueta": "AJUSTE AL PESO",
+   "lado": "ingreso",
+   "M": 0.00001,
+   "pagina": 20,
+   "linea": 687,
+   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\""
+  },
+  {
+   "etiqueta": "COSTO DE VENTAS",
+   "lado": "gasto",
+   "M": 0.508765,
+   "pagina": 18,
+   "linea": 591,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "GASTOS DE PERSONAL",
+   "lado": "gasto",
+   "M": 0.678948,
+   "pagina": 18,
+   "linea": 600,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "HONORARIOS",
+   "lado": "gasto",
+   "M": 0.039776,
+   "pagina": 18,
+   "linea": 601,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "ARRENDAMIENTOS",
+   "lado": "gasto",
+   "M": 0.016413,
+   "pagina": 18,
+   "linea": 603,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "SERVICIOS",
+   "lado": "gasto",
+   "M": 0.032827,
+   "pagina": 18,
+   "linea": 605,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "GASTOS LEGALES",
+   "lado": "gasto",
+   "M": 0.002208,
+   "pagina": 18,
+   "linea": 606,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "MANTENIMIENTO Y REPARACIONES",
+   "lado": "gasto",
+   "M": 0.00033,
+   "pagina": 18,
+   "linea": 607,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "ADECUACION E INSTALACION",
+   "lado": "gasto",
+   "M": 0.000035,
+   "pagina": 18,
+   "linea": 608,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "GASTOS DE VIAJE",
+   "lado": "gasto",
+   "M": 0.02206,
+   "pagina": 18,
+   "linea": 609,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "DEPRECIACIONES",
+   "lado": "gasto",
+   "M": 0.001164,
+   "pagina": 18,
+   "linea": 610,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "DIVERSOS",
+   "lado": "gasto",
+   "M": 0.014584,
+   "pagina": 18,
+   "linea": 611,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+  },
+  {
+   "etiqueta": "GASTOS DE PERSONAL",
+   "lado": "gasto",
+   "M": 6.866963,
+   "pagina": 18,
+   "linea": 620,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "HONORARIOS",
+   "lado": "gasto",
+   "M": 0.049825,
+   "pagina": 18,
+   "linea": 621,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "IMPUESTOS",
+   "lado": "gasto",
+   "M": 0.492496,
+   "pagina": 18,
+   "linea": 622,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "ARRENDAMIENTOS",
+   "lado": "gasto",
+   "M": 0.605806,
+   "pagina": 18,
+   "linea": 623,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "CONTRIBUCIONES Y AFILIACIONES",
+   "lado": "gasto",
+   "M": 0.002321,
+   "pagina": 18,
+   "linea": 624,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "SEGUROS",
+   "lado": "gasto",
+   "M": 0.007143,
+   "pagina": 18,
+   "linea": 625,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "SERVICIOS",
+   "lado": "gasto",
+   "M": 0.191179,
+   "pagina": 19,
+   "linea": 631,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "GASTOS LEGALES",
+   "lado": "gasto",
+   "M": 0.000514,
+   "pagina": 19,
+   "linea": 632,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "MANTENIMIENTO Y REPARACIONES",
+   "lado": "gasto",
+   "M": 0.06663,
+   "pagina": 19,
+   "linea": 633,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "ADECUACION E INSTALACION",
+   "lado": "gasto",
+   "M": 0.000976,
+   "pagina": 19,
+   "linea": 634,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "GASTOS DE VIAJE",
+   "lado": "gasto",
+   "M": 0.454227,
+   "pagina": 19,
+   "linea": 635,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "DEPRECIACIONES",
+   "lado": "gasto",
+   "M": 0.086994,
+   "pagina": 19,
+   "linea": 636,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "DERECHOS DEPORTIVOS",
+   "lado": "gasto",
+   "M": 3.649049,
+   "pagina": 19,
+   "linea": 637,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "DIVERSOS",
+   "lado": "gasto",
+   "M": 1.075825,
+   "pagina": 19,
+   "linea": 638,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "PROVISIONES",
+   "lado": "gasto",
+   "M": 0.026242,
+   "pagina": 19,
+   "linea": 639,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "GASTOS FINANCIEROS",
+   "lado": "gasto",
+   "M": 0.820054,
+   "pagina": 20,
+   "linea": 697,
+   "origen": "nota que desglosa \"GASTOS NO OPERACIONALES\""
+  },
+  {
+   "etiqueta": "GASTOS EXTRAORDINARIOS",
+   "lado": "gasto",
+   "M": 0.713284,
+   "pagina": 20,
+   "linea": 699,
+   "origen": "nota que desglosa \"GASTOS NO OPERACIONALES\""
+  },
+  {
+   "etiqueta": "GASTOS DIVERSOS",
+   "lado": "gasto",
+   "M": 0.190484,
+   "pagina": 20,
+   "linea": 700,
+   "origen": "nota que desglosa \"GASTOS NO OPERACIONALES\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": [
+  {
+   "etiqueta": "IMPUESTO DE RENTQ Y COMPLEMENTARIO",
+   "M": 0.895818,
+   "linea": 706
+  }
+ ]
+}

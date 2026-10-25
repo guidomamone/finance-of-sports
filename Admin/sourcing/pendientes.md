@@ -617,14 +617,15 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-25): no editar 
 - Chungju Hummel — sin-buscar: 2016 (kr-kleague2)
 - Goyang Zaicro — sin-buscar: 2016 (kr-kleague2)
 
-## Croacia (1 clubes, 1 club-años)
+## Croacia (1 clubes, 2 club-años)
 
-- Šibenik — sin-buscar: 2025 (hr-hnl)
+- Šibenik — sin-buscar: 2025 (hr-hnl), 2023 (hr-hnl)
 
-## Dinamarca (10 clubes, 10 club-años)
+## Dinamarca (11 clubes, 12 club-años)
 
-- FC Copenhagen — sin-buscar: 2019 (dk-superliga)
+- FC Copenhagen — sin-buscar: 2019 (dk-superliga), 2017 (dk-superliga)
 - Odense BK — sin-buscar: 2019 (dk-superliga)
+- FCK — sin-buscar: 2018 (dk-superliga)
 - F.C. Copenhagen — sin-buscar: 2014 (dk-superliga)
 - FC Vestsjælland — sin-buscar: 2014 (dk-superliga)
 - BK Fremad Amager — sin-buscar: 2020 (dk-1division)

@@ -1,0 +1,605 @@
+{
+ "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.pdf",
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.md",
+ "mdSha1": "2f3e770d28b94e1bbe55460c61feb75a1037bee7",
+ "ubicacionSha1": "3b907f91e49ec2205cb97c280d961873a2087df4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T16:45:50.074Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b88",
+   "b89",
+   "b90",
+   "b92"
+  ],
+  "notas_gastos": [
+   "b91",
+   "b93"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L201: (Cifras en miles de pesos - M$)"
+  },
+  {
+   "bloque": "b88",
+   "escala": "miles",
+   "evidencia": "L2437: columnas en M$"
+  },
+  {
+   "bloque": "b89",
+   "escala": "miles",
+   "evidencia": "L2449: M$"
+  },
+  {
+   "bloque": "b90",
+   "escala": "miles",
+   "evidencia": "L2462: columnas en M$"
+  },
+  {
+   "bloque": "b92",
+   "escala": "miles",
+   "evidencia": "L2512: columnas en M$"
+  },
+  {
+   "bloque": "b91",
+   "escala": "miles",
+   "evidencia": "L2479: columnas en M$"
+  },
+  {
+   "bloque": "b93",
+   "escala": "miles",
+   "evidencia": "L2525: columnas en M$"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 205,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "9.298.914",
+   "anterior": "8.009.829",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 206,
+   "etiqueta": "Costo de ventas",
+   "actual": "(8.728.553)",
+   "anterior": "(8.047.125)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 207,
+   "etiqueta": "Ganancia bruta",
+   "actual": "570.361",
+   "anterior": "(37.296)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 208,
+   "etiqueta": "Otros ingresos, por función",
+   "actual": "0",
+   "anterior": "13.323",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 209,
+   "etiqueta": "Gasto de administración",
+   "actual": "(3.130.102)",
+   "anterior": "(2.638.132)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 210,
+   "etiqueta": "Otros gastos, por función",
+   "actual": "(412.502)",
+   "anterior": "(365.589)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 211,
+   "etiqueta": "Ingresos financieros",
+   "actual": "31.760",
+   "anterior": "133.515",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 212,
+   "etiqueta": "Diferencias de cambio",
+   "actual": "(52.946)",
+   "anterior": "(465.431)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 213,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "(2.993.429)",
+   "anterior": "(3.359.610)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 214,
+   "etiqueta": "Gasto (Ingreso) por Impuesto a las Ganancias",
+   "actual": "666.198",
+   "anterior": "646.776",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 215,
+   "etiqueta": "Ganancia (Pérdida) de Actividades Continuadas después de Impuesto",
+   "actual": "(2.327.231)",
+   "anterior": "(2.712.834)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 216,
+   "etiqueta": "Ganancia (Pérdida) de Operaciones Discontinuadas, Neta de Impuesto",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 217,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "(2.327.231)",
+   "anterior": "(2.712.834)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 218,
+   "etiqueta": "Ganancia (pérdida), atribuible a los propietarios de la controladora",
+   "actual": "(2.316.857)",
+   "anterior": "(2.656.963)",
+   "tipo": "renglon",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 219,
+   "etiqueta": "Ganancia (pérdida), atribuible a participaciones no controladoras",
+   "actual": "(10.374)",
+   "anterior": "(55.871)",
+   "tipo": "renglon",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 220,
+   "etiqueta": "Ganancia (Pérdida)",
+   "actual": "(2.327.231)",
+   "anterior": "(2.712.834)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b88",
+   "linea": 2440,
+   "etiqueta": "Ingresos por recaudaciones",
+   "actual": "2.104.281",
+   "anterior": "2.694.350",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2441,
+   "etiqueta": "Ingresos por venta de jugadores comprado a terceros(*)",
+   "actual": "1.339.283",
+   "anterior": "71.206",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2442,
+   "etiqueta": "Ingresos por venta de jugadores formados por el Club(**)",
+   "actual": "50.782",
+   "anterior": "425.294",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2443,
+   "etiqueta": "Ingresos por publicidad",
+   "actual": "5.639.076",
+   "anterior": "4.664.845",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2444,
+   "etiqueta": "Otros",
+   "actual": "165.492",
+   "anterior": "154.134",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b88",
+   "linea": 2445,
+   "etiqueta": "Totales",
+   "actual": "9.298.914",
+   "anterior": "8.009.829",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2465,
+   "etiqueta": "Ingresos financieros",
+   "actual": "-",
+   "anterior": "13.323",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos, por función"
+  },
+  {
+   "bloque": "b90",
+   "linea": 2466,
+   "etiqueta": "Totales",
+   "actual": "-",
+   "anterior": "13.323",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos, por función"
+  },
+  {
+   "bloque": "b92",
+   "linea": 2515,
+   "etiqueta": "Larrain Vial",
+   "actual": "15.937",
+   "anterior": "105.456",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "bloque": "b92",
+   "linea": 2516,
+   "etiqueta": "Intereses Inversión UBS",
+   "actual": "12.332",
+   "anterior": "27.008",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "bloque": "b92",
+   "linea": 2517,
+   "etiqueta": "Celfin",
+   "actual": "649",
+   "anterior": "1.051",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "bloque": "b92",
+   "linea": 2518,
+   "etiqueta": "Otros",
+   "actual": "2.842",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "bloque": "b92",
+   "linea": 2519,
+   "etiqueta": "Totales",
+   "actual": "31.760",
+   "anterior": "133.515",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2481,
+   "etiqueta": "Costo de venta jugadores",
+   "actual": "41.660",
+   "anterior": "35.287",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2482,
+   "etiqueta": "Remuneración plantel profesional y cuerpo técnico",
+   "actual": "2.855.799",
+   "anterior": "2.352.045",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2483,
+   "etiqueta": "Amortización Activos en concesión",
+   "actual": "701.048",
+   "anterior": "701.048",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2484,
+   "etiqueta": "Amortización pases jugadores profesionales",
+   "actual": "2.715.242",
+   "anterior": "3.210.823",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2485,
+   "etiqueta": "Costos de concentración traslados y otros",
+   "actual": "2.077.720",
+   "anterior": "1.082.906",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2486,
+   "etiqueta": "Otros costos",
+   "actual": "337.084",
+   "anterior": "665.016",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2487,
+   "etiqueta": "Costo de ventas",
+   "actual": "8.728.553",
+   "anterior": "8.047.125",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2489,
+   "etiqueta": "Servicios básicos",
+   "actual": "155.467",
+   "anterior": "143.615",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2490,
+   "etiqueta": "Asesorías",
+   "actual": "490.556",
+   "anterior": "444.307",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2491,
+   "etiqueta": "Depreciaciones",
+   "actual": "345.964",
+   "anterior": "416.112",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2492,
+   "etiqueta": "Gastos Legales",
+   "actual": "238.245",
+   "anterior": "190.242",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2493,
+   "etiqueta": "Mantenciones",
+   "actual": "20.113",
+   "anterior": "14.672",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2494,
+   "etiqueta": "Remuneración administración",
+   "actual": "1.208.535",
+   "anterior": "1.022.495",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2495,
+   "etiqueta": "Otros gastos de administración",
+   "actual": "671.222",
+   "anterior": "406.689",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2496,
+   "etiqueta": "Gastos de administración",
+   "actual": "3.130.102",
+   "anterior": "2.638.132",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2497,
+   "etiqueta": "Gastos financieros",
+   "actual": "412.502",
+   "anterior": "365.589",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos, por función"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2498,
+   "etiqueta": "Otros",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos, por función"
+  },
+  {
+   "bloque": "b91",
+   "linea": 2499,
+   "etiqueta": "Otros gastos, por función",
+   "actual": "412.502",
+   "anterior": "365.589",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos, por función"
+  },
+  {
+   "bloque": "b93",
+   "linea": 2528,
+   "etiqueta": "Otros activos financieros corrientes",
+   "actual": "96.289",
+   "anterior": "(121.979)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diferencias de cambio"
+  },
+  {
+   "bloque": "b93",
+   "linea": 2529,
+   "etiqueta": "Deudores comerciales y otras cuentas por cobrar corrientes",
+   "actual": "(12.308)",
+   "anterior": "(123.222)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diferencias de cambio"
+  },
+  {
+   "bloque": "b93",
+   "linea": 2530,
+   "etiqueta": "Cuentas por pagar comerciales y otras cuentas por pagar",
+   "actual": "(136.927)",
+   "anterior": "(220.230)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diferencias de cambio"
+  },
+  {
+   "bloque": "b93",
+   "linea": 2531,
+   "etiqueta": "Totales",
+   "actual": "(52.946)",
+   "anterior": "(465.431)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Diferencias de cambio"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 217,
+  "actual": "(2.327.231)",
+  "anterior": "(2.712.834)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de venta de jugadores de b89 (L2450-L2452) por repetir filas ya cargadas de b88?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Ingresos de actividades ordinarias",
+   "texto": "L2450-L2451 repiten L2441-L2442 de b88 con cantidad de jugadores; L2452 es su suma.",
+   "bloques": [
+    "b89",
+    "b88"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se confirma que en el documento no existen renglones de 'Televisión' ni de 'Otras secciones deportivas' en las notas de ingresos de 2013?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Ingresos de actividades ordinarias",
+   "texto": "La nota de ingresos ordinarios (L2440-L2444) solo trae recaudaciones, venta de jugadores, publicidad y otros; no hay filas de esos conceptos.",
+   "bloques": [
+    "b88"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Todos los bloques en M$ (miles de pesos chilenos). No se imprime total de ingresos ni de gastos. El impuesto L214 figura positivo (ingreso por impuesto). Gastos financieros se clasifican dentro de 'Otros gastos, por función' según b91. No hay cuadros por segmento ni filas de Televisión u Otras secciones deportivas en los bloques recibidos."
+}
